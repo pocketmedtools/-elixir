@@ -1,5 +1,6 @@
 import {
   Activity,
+  GraduationCap,
   Baby,
   Bookmark,
   Droplet,
@@ -26,6 +27,7 @@ const ICONS: Record<MenuTarget, LucideIcon> = {
   icu: Activity,
   insulin: Droplet,
   ob: Baby,
+  study: GraduationCap,
   saved: Bookmark,
   report: Flag,
 };
@@ -42,6 +44,7 @@ export const TOOL_BG: Record<MenuTarget, string> = {
   icu: "bg-orange-900",
   insulin: "bg-indigo-900",
   ob: "bg-fuchsia-900",
+  study: "bg-amber-800",
   saved: "bg-slate-800",
   report: "bg-amber-900",
 };
@@ -58,6 +61,7 @@ export const TOOL_SOFT: Record<MenuTarget, string> = {
   icu: "border-orange-200 bg-orange-50",
   insulin: "border-indigo-200 bg-indigo-50",
   ob: "border-fuchsia-200 bg-fuchsia-50",
+  study: "border-amber-200 bg-amber-50",
   saved: "border-slate-200 bg-slate-50",
   report: "border-amber-200 bg-amber-50",
 };
@@ -73,6 +77,7 @@ export const TOOL_TEXT: Record<MenuTarget, string> = {
   icu: "text-orange-900",
   insulin: "text-indigo-900",
   ob: "text-fuchsia-900",
+  study: "text-amber-900",
   saved: "text-slate-700",
   report: "text-amber-900",
 };
@@ -88,6 +93,7 @@ export const TOOL_HEX: Record<MenuTarget, string> = {
   icu: "#7c2d12",
   insulin: "#312e81",
   ob: "#701a75",
+  study: "#92400e",
   saved: "#1e293b",
   report: "#78350f",
 };

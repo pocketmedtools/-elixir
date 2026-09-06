@@ -1,4 +1,4 @@
-import { useEffect, useState, useSyncExternalStore } from "react";
+import { Suspense, lazy, useEffect, useState, useSyncExternalStore } from "react";
 import HomeScreen from "./components/HomeScreen";
 import SavedScreen from "./components/SavedScreen";
 import SideMenu, { type MenuTarget } from "./components/SideMenu";
@@ -15,6 +15,11 @@ import ReportIssue from "./components/ReportIssue";
 import ToolIcon, { TOOL_HEX } from "./components/ToolIcon";
 import AuthScreen from "./components/AuthScreen";
 import { getCurrentProfile, getVersion, subscribe } from "./lib/accounts";
+
+// The study module carries the whole Family Medicine library, so it is split
+// into its own chunk: the clinical tools open instantly, and the chunk is
+// cached by the service worker the first time the Study tab is opened.
+const StudyModule = lazy(() => import("./study/components/StudyModule"));
 
 type AppTab = MenuTarget;
 
@@ -120,6 +125,13 @@ export default function App() {
       active: "bg-fuchsia-900 text-white shadow-sm",
       idle: "bg-slate-100 text-slate-800 hover:bg-slate-200",
     },
+    {
+      id: "study",
+      label: "FM Study",
+      shortLabel: "Study",
+      active: "bg-amber-800 text-white shadow-sm",
+      idle: "bg-slate-100 text-slate-800 hover:bg-slate-200",
+    },
   ];
 
   const showAuth = !profile && !guest;
@@ -214,6 +226,17 @@ export default function App() {
         {tab === "icu" && <IcuTitration />}
         {tab === "insulin" && <InsulinTool />}
         {tab === "ob" && <ObCalculator />}
+        {tab === "study" && (
+          <Suspense
+            fallback={
+              <p className="mx-auto max-w-3xl px-3 py-10 text-center text-sm text-slate-600">
+                Opening the study library…
+              </p>
+            }
+          >
+            <StudyModule />
+          </Suspense>
+        )}
         {tab === "report" && <ReportIssue />}
       </main>
 

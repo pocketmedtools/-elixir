@@ -1,0 +1,956 @@
+/**
+ * How a case is presented and marked in the DNB / MD Family Medicine
+ * practical examination in India.
+ *
+ * This file is the "how to present" manual, not disease content. Nothing here
+ * is a diagnosis; everything here is a running order, a sentence to say, or a
+ * tool to draw. Disease content lives under study/content.
+ *
+ * Where a detail is examiner lore rather than published regulation it is
+ * marked in the text itself as "commonly reported practice".
+ */
+import type { PresentationGuide } from "./lib/frameTypes";
+
+const guide: PresentationGuide = {
+  title: "Case presentation for the DNB / MD Family Medicine practical",
+
+  overview: [
+    "The practical is not a test of whether you can find the diagnosis. It is a test of whether you can be trusted alone in a consulting room. Examiners are listening for a candidate who is safe, organised, and audible.",
+    "NBEMS has, in recent sessions, run the DNB final practical over 300 marks: 20 OSCE stations of 5 marks (4 minutes each) = 100, two clinical cases of 50 marks = 100, four ward rounds of 10 marks = 40, and four viva stations of 15 marks = 60. The pass mark is 150 out of 300, i.e. 50 percent aggregate. The exact split has varied by session and by specialty - always re-read the current NBEMS Information Bulletin and the exam-day instruction sheet rather than trusting any coaching note, this one included.",
+    "MD Family Medicine practicals sit with the university, not NBEMS, so the shape differs: most universities keep one long case, one or two short cases, and a table viva, with an OSCE circuit in the newer competency-based curricula. The presentation craft below is identical either way.",
+    "Three things decide the grade more than knowledge: the summary statement, the safety net (red flags and what you would do if the patient deteriorated), and whether you sounded like a family physician or like a downgraded internist.",
+    "Rehearse out loud. Reading a presentation silently and saying it are different motor skills. Time yourself with a phone on the table until 10 minutes feels like 10 minutes.",
+  ],
+
+  templates: [
+    /* ------------------------------------------------------------------ */
+    {
+      id: "long-case-medicine",
+      title: "Long case - adult medicine (45-60 min work-up, 10-15 min presentation)",
+      kind: "long",
+      minutes: 60,
+      steps: [
+        {
+          heading: "Before the clock starts - the 60 seconds that save you",
+          points: [
+            "Greet the patient and the attendant, sit at the same level, and say: \"Namaste. I am Dr [name], I am a candidate in today's examination. I have about forty-five minutes with you. May I take your history and examine you? Anything you do not wish to answer, please just say so.\"",
+            "Write the skeleton of your presentation on the first page BEFORE you start asking: the seven headings (identification, presenting complaint, HPI, past, personal/family, treatment, examination). You will fill boxes rather than write prose, and prose is what makes candidates run out of time.",
+            "Note the time you started in the margin. Set an internal checkpoint: history done by minute 25, examination done by minute 45, summary written by minute 52.",
+            "Look at what is at the bedside before you touch the patient - oxygen, catheter, insulin pen, walking frame, nebuliser, a pile of old prescriptions. Free marks, and it tells you the case.",
+          ],
+        },
+        {
+          heading: "Minutes 0-25: taking the history against the clock",
+          points: [
+            "Open completely: \"Tell me what brought you to hospital.\" Do not interrupt for the first sixty to ninety seconds. Candidates who interrupt at eight seconds miss the diagnosis and the examiner has usually seen the patient tell the story properly to someone else.",
+            "Then screen: \"Is there anything else troubling you?\" repeated until the answer is no. This gives you the complete complaint list before you commit to one.",
+            "Order the complaints chronologically and record duration for each in the patient's own units - \"breathlessness for two months, swelling of feet for twenty days\", not \"CCF for 2/12\".",
+            "For the main complaint use a fixed frame so you never freeze: site, onset, character, radiation, associated features, timing, exacerbating and relieving factors, severity - and for every chronic disease add the four Cs: control, complications, comorbidity, compliance.",
+            "Ask negatives deliberately and remember them - the relevant negatives are worth as much as the positives and you will be asked for them.",
+            "Past history: previous admissions, surgeries, TB, diabetes, hypertension, blood transfusion, and in India always ask about ATT and about a completed course.",
+            "Drug history from the strips and prescriptions, not from memory - dose, frequency, duration, who prescribed it, and what the patient actually takes as opposed to what is written.",
+            "Personal history: diet, appetite, sleep, bowel and bladder, tobacco in all its forms including gutkha and khaini, alcohol in units and duration, and in the appropriate patient a sexual history taken with permission.",
+            "Family history and a three-generation genogram sketch even in a medicine long case - it takes three minutes and no Medicine candidate does it.",
+            "Socio-economic status by modified Kuppuswamy, occupation, type of house, water source, sanitation, and who earns. Say the class out loud in the presentation.",
+            "Close the history: \"Before I examine you - what do you think is causing this? What worries you most about it? What were you hoping we would do today?\" Write the answers verbatim. This is your ICE and it is the single easiest distinguishing mark in a Family Medicine exam.",
+          ],
+        },
+        {
+          heading: "Minutes 25-45: the examination",
+          points: [
+            "Ask permission again and ask for a chaperone where relevant: \"May I examine you now? I will explain what I am doing as I go. Please tell me if anything hurts.\"",
+            "General examination in a fixed order every time so nothing is dropped: consciousness and orientation, build and nutrition, pallor, icterus, cyanosis, clubbing, lymphadenopathy, oedema, JVP, then vitals with the actual numbers.",
+            "Record vitals as numbers with the position and limb - \"blood pressure 150 over 96 in the right arm, sitting\" - and repeat it yourself if the recorded value looks wrong.",
+            "Systemic examination: lead with the system the history points to, then screen the other three. Inspection, palpation, percussion, auscultation in that order, out loud in your head, so the sequence survives the nerves.",
+            "Anthropometry and a bedside functional assessment where they matter - weight, height, BMI, waist circumference, and can the patient walk to the toilet unaided.",
+            "Do the bedside tests you are allowed to do and quote them: capillary glucose, urine dipstick, peak flow, pulse oximetry, a six-minute walk if the setting allows.",
+            "Do not undress the patient more than necessary and cover them again immediately. Examiners mark this.",
+          ],
+        },
+        {
+          heading: "Minutes 45-55: writing the presentation, not the case",
+          points: [
+            "Write the summary statement first, in full, and read it back to yourself. Everything else in your presentation is arranged to make that sentence inevitable.",
+            "Write the differential as three named diagnoses with one supporting and one opposing point each. Three is the right number - two looks thin, five looks indecisive.",
+            "Write the investigation list in tiers, each with a one-line justification, and stop when you reach tests you cannot justify.",
+            "Write the management plan under the five headings: immediate, definitive, preventive, follow-up, family and social.",
+            "Leave the last three minutes to sit quietly and rehearse the opening two sentences silently. Those two sentences set the examiner's expectation for the next fifteen minutes.",
+          ],
+        },
+        {
+          heading: "The presentation - running order and the words to use",
+          points: [
+            "Stand, face the examiner not the notes, and open: \"Good morning sir. With your permission I will present the case.\" Wait for the nod.",
+            "1. Identification and source: \"Mr Ramesh Kumar, 54 years, a bus driver from Perambur, married with three children, admitted three days ago. The history was taken from the patient himself and is reliable, corroborated by his wife.\"",
+            "2. Presenting complaints in chronological order with durations only: \"He presents with breathlessness on exertion for two months, swelling of both feet for twenty days, and orthopnoea for one week.\"",
+            "3. History of presenting illness as a narrative, not a list, ending with relevant negatives: \"There is no history of chest pain, palpitations, syncope, fever, or haemoptysis.\"",
+            "4. Past, treatment, personal, family and socio-economic history, kept short - about ninety seconds in total. Say the Kuppuswamy class: \"He belongs to the upper lower class, class IV, on the modified Kuppuswamy scale for 2026.\"",
+            "5. Examination findings: general first with numbers, then the involved system in full, then a single sentence on the other systems: \"Examination of the respiratory, gastrointestinal and nervous systems was unremarkable.\"",
+            "6. Summary statement. Pause before it. This is the sentence the examiner writes down.",
+            "7. Provisional diagnosis in the form of a full anatomical, aetiological and functional statement.",
+            "8. Differential diagnosis with reasons for and against.",
+            "9. Investigations, justified test by test.",
+            "10. Management under the five headings.",
+            "11. Close: \"That is my presentation, sir.\" Then stop talking. Silence after your closing line is confidence; filling it is anxiety.",
+          ],
+        },
+        {
+          heading: "The summary statement - how to build it",
+          points: [
+            "Formula: [age and sex] + [the two or three defining risk factors or comorbidities] + [the syndrome in problem terms] + [duration] + [the key positive findings] + [the key negatives] + [functional or social consequence].",
+            "Worked example: \"To summarise, this is a 54-year-old male, a bus driver, a smoker of thirty pack-years with hypertension for eight years on irregular treatment, who presents with a two-month history of progressive exertional dyspnoea now at NYHA class III, with orthopnoea and bilateral pedal oedema, and who on examination has a raised JVP, a displaced apex beat, a third heart sound and bilateral basal crepitations, with no fever and no murmur - a picture of decompensated left ventricular failure, most likely hypertensive and ischaemic in origin, which has stopped him working for six weeks and has left the family without an income.\"",
+            "It should be one sentence, take about thirty to forty seconds, and be sayable without looking down. If you cannot say it without reading, it is too long.",
+            "The last clause - the functional or social consequence - is what makes it a Family Medicine summary. Include it every time.",
+            "Never put a diagnosis in the summary that you have not already earned with a finding you stated.",
+          ],
+        },
+        {
+          heading: "Provisional diagnosis and differential - with reasons",
+          points: [
+            "State the provisional diagnosis in three dimensions: \"My provisional diagnosis is decompensated heart failure with reduced ejection fraction, hypertensive and ischaemic in aetiology, currently NYHA class III, with a precipitating factor of drug non-adherence.\"",
+            "Then: \"The differentials I considered are as follows.\" Give exactly three, each in the same shape.",
+            "Shape for each differential: name it, then \"In favour of this are ...\", then \"Against it are ...\", then \"I would separate the two with ...\".",
+            "Example: \"First, chronic obstructive pulmonary disease with cor pulmonale. In favour are his thirty pack-year smoking history, the chronic dyspnoea and the pedal oedema. Against it are the orthopnoea, the displaced apex beat and the S3, and the absence of a chronic productive cough or wheeze. I would separate the two with spirometry and an echocardiogram.\"",
+            "Do not offer a differential you cannot defend. One well-argued differential beats four names read off a list, and the examiner will pick the weakest one you say.",
+            "If you are certain, say so and say why: \"I do not think this is X, and my reason is Y.\" Confidence with a stated reason is rewarded; confidence without one is punished.",
+          ],
+        },
+        {
+          heading: "Investigation plan - justified test by test",
+          points: [
+            "Open with the principle, which earns marks on its own: \"I would investigate to confirm the diagnosis, to look for the aetiology, to assess complications and severity, to look for precipitating factors, and to establish a baseline before treatment.\"",
+            "Then give the tests in tiers - bedside, first line, second line, specialised - and give one clause of justification for each. Never read a list.",
+            "\"At the bedside, capillary blood glucose and a urine dipstick for protein, because diabetic nephropathy would change both my fluid management and my choice of drug.\"",
+            "\"To confirm the diagnosis, a transthoracic echocardiogram for ejection fraction, chamber size, valve lesions and regional wall motion abnormality - this is the single test that will most change my management.\"",
+            "\"To look for the precipitant, a full blood count and CRP for infection, thyroid function, renal function with electrolytes, and an ECG for ischaemia or new atrial fibrillation.\"",
+            "\"To assess severity and prognosis, NT-proBNP where available, and a chest radiograph for cardiomegaly and pulmonary congestion.\"",
+            "Say what you expect the result to be. \"I would expect the echocardiogram to show a dilated left ventricle with an ejection fraction below forty percent.\" A predicted result shows you understand the test; an unpredicted one shows you memorised a list.",
+            "Add the family physician's line about cost and access: \"In my setting, echocardiography would require referral to the district hospital and would cost the family about a week's income, so I would arrange it at the same visit as the specialist review rather than as a separate journey.\"",
+            "Know when to stop. If you cannot say what you would do differently on the basis of a test, do not order it - and say that: \"I would not order a routine D-dimer here, because the pre-test probability of pulmonary embolism is low and a positive result would only generate further imaging.\"",
+          ],
+        },
+        {
+          heading: "Management plan - the five headings",
+          points: [
+            "Say the headings out loud before you use them: \"I will present my management under five headings - immediate, definitive, preventive, follow-up, and family and social.\" The examiner now knows you have a structure and stops hunting for one.",
+            "IMMEDIATE: what you do in the first hour. Position, oxygen with a target saturation, intravenous access, monitoring, the first drug with dose and route, and the observations you will repeat and at what interval. \"I would sit him up, give oxygen to keep saturation between ninety-two and ninety-six percent, secure intravenous access, and give intravenous furosemide forty milligrams stat, with strict input-output charting and daily weights.\"",
+            "DEFINITIVE: the disease-modifying treatment, by drug class with a named example, a dose and a monitoring plan. Say why each is indicated in THIS patient. \"An ACE inhibitor titrated to the maximum tolerated dose, with renal function and potassium checked at one to two weeks after each increase.\"",
+            "PREVENTIVE: primary, secondary and tertiary. Immunisation, smoking cessation with the actual words you would use, salt and fluid restriction with the number, exercise prescription, and screening of at-risk family members. Name the vaccines: influenza annually, pneumococcal as per schedule.",
+            "FOLLOW-UP: when, where, with whom, and with what. \"I would review him in one week in my clinic with a repeat renal panel, then monthly for three months, then three-monthly. I would give him a written card with his weight, his target weight, and the three symptoms that should bring him back immediately.\"",
+            "FAMILY AND SOCIAL: who else is affected, who will supervise the drugs, what the illness costs the household, what the patient's job requires, and what welfare scheme applies. \"He is a bus driver; his fitness to drive needs review. He is the sole earner of a family of five. I would discuss Ayushman Bharat PM-JAY eligibility and would involve his wife in the drug and diet counselling because she cooks for the household.\"",
+            "Finish with the safety net, always: \"I would tell him and his wife to return immediately or attend the emergency department if he develops breathlessness at rest, chest pain, a weight gain of more than two kilograms in three days, or if he faints.\"",
+          ],
+        },
+        {
+          heading: "Handling the viva that follows the long case",
+          points: [
+            "The examiner will start where you were weakest. Predict the three questions you least want to be asked and prepare those three answers while you are writing your notes.",
+            "Standard sequence: why this diagnosis, what else could it be, how would you confirm it, how would you treat it, what if the patient could not afford it, what would you do differently in a village clinic with no laboratory.",
+            "The resource-limited version of every plan is a favourite in Family Medicine. Have a one-line answer for \"and if you had none of that available?\" for every investigation you name.",
+          ],
+        },
+      ],
+      phrases: [
+        "\"Good morning sir. With your permission I will present the case.\"",
+        "\"The history was taken from the patient, who is a reliable historian, and corroborated by his wife.\"",
+        "\"To summarise, this is a fifty-four-year-old male ...\"",
+        "\"My provisional diagnosis is ..., and the differentials I considered are as follows.\"",
+        "\"In favour of this are ... Against it are ... I would distinguish them with ...\"",
+        "\"I would investigate to confirm the diagnosis, look for the aetiology, assess severity and complications, identify the precipitant, and establish a baseline.\"",
+        "\"I will present my management under five headings - immediate, definitive, preventive, follow-up, and family and social.\"",
+        "\"The single test that would most change my management is ...\"",
+        "\"I would counsel him and his wife together, because she prepares the food and supervises the medicines.\"",
+        "\"My safety-netting advice would be to return immediately if ...\"",
+        "\"This is beyond what I can manage in the clinic, so I would refer him to the physician at the district hospital, and I would send a written referral note stating the working diagnosis, the drugs given, and the specific question I want answered.\"",
+        "\"That is my presentation, sir.\"",
+      ],
+      pitfalls: [
+        "Reading the case sheet aloud instead of presenting. Look up. If your eyes never leave the paper you have already lost the impression marks.",
+        "A summary statement that is a second full history. Thirty to forty seconds, one sentence.",
+        "Announcing a diagnosis in the first sentence and then presenting the history backwards to justify it.",
+        "Giving vitals as \"stable\" or \"normal\" instead of the numbers. Examiners treat this as not having measured them.",
+        "A differential list with no reasoning. Naming five diagnoses invites the examiner to ask about the one you know least.",
+        "An investigation list read out as a shopping list, including tests you cannot justify or interpret.",
+        "A management plan that stops at drugs - no counselling, no follow-up date, no safety net, no mention of cost.",
+        "Forgetting to mention what you did NOT do and why - e.g. \"I did not do a per rectal examination as the patient declined; I would like to complete it with consent.\"",
+        "Overrunning. If told you have ten minutes and you are still in the past history at minute six, you have lost the marks that live in management.",
+        "Arguing with the examiner. Say \"I take your point, sir; on reflection ...\" and move on.",
+        "Presenting the patient as a disease. \"The mitral stenosis in bed four\" is a phrase that ends well for nobody.",
+      ],
+    },
+
+    /* ------------------------------------------------------------------ */
+    {
+      id: "short-case",
+      title: "Short case (5-10 minutes) - examine first, name last",
+      kind: "short",
+      minutes: 10,
+      steps: [
+        {
+          heading: "What a short case actually tests",
+          points: [
+            "A short case tests examination technique and the discipline of description. You will usually be given a system or a region - \"examine this patient's abdomen\", \"look at this patient's hands\" - and almost no history.",
+            "You are being marked on: whether you asked permission, whether your sequence was correct, whether you were gentle, whether you described before you interpreted, and whether you knew what you had not yet done.",
+            "Typically two to four short cases in a university MD practical; in the NBEMS pattern the clinical cases and ward rounds occupy this ground.",
+            "You will be interrupted. Being interrupted is not failure - it usually means the examiner has what he needs and is moving you on.",
+          ],
+        },
+        {
+          heading: "Opening - the first thirty seconds",
+          points: [
+            "Wash or sanitise your hands where the examiner can see you do it. This is a scored item in most OSCE-style marking sheets and is commonly reported as a scored item in short cases too.",
+            "Introduce and consent in one breath: \"Namaste, I am Dr [name]. I have been asked to examine your abdomen. May I do that? Please tell me if anything is uncomfortable.\"",
+            "Expose adequately and position properly, and say what you are doing: \"I would like to expose from the nipples to the mid-thigh, keeping the genitalia covered, with the patient lying flat with one pillow and arms by the side.\"",
+            "Ask the two questions you are allowed: \"Are you in any pain at the moment? Where is the pain?\" Then examine that area last.",
+            "Stand at the foot of the bed for five seconds and actually look. Describe out loud what a general inspection shows before you touch.",
+          ],
+        },
+        {
+          heading: "Taking a targeted history in ninety seconds when allowed",
+          points: [
+            "If the examiner permits any history, do not attempt a long case. Ask four questions only: the main symptom and its duration, one severity question, one red-flag screen, and one functional question.",
+            "\"How long have you had the swelling? Has it changed in size? Have you had any fever, weight loss, or blood in the stool? Does it stop you doing your work?\"",
+            "If no history is allowed, say so at the end rather than inventing one: \"I was not able to take a history; the findings I have described would need to be interpreted alongside a history of ...\"",
+          ],
+        },
+        {
+          heading: "The examination itself",
+          points: [
+            "Keep the classical sequence and narrate it in a low steady voice - inspection, palpation, percussion, auscultation; and for a joint, look, feel, move, measure, and test function.",
+            "Watch the patient's face, not your hands, while you palpate. Examiners notice this more than any other single manoeuvre.",
+            "Be gentle and warm your hands. Causing pain is the fastest way to lose a short case.",
+            "If you find something, confirm it a second way before you commit - a mass that you can get above and that moves with respiration is a different animal from one you cannot.",
+            "Do not repeat manoeuvres endlessly hoping the finding will change. Decide, describe, move on.",
+          ],
+        },
+        {
+          heading: "Describing before naming - the core discipline",
+          points: [
+            "Present findings as observations, then group them into a syndrome, and only then offer a diagnosis. The examiner is entitled to disagree with your diagnosis but cannot disagree with an accurate description.",
+            "Wrong: \"This is a case of hepatosplenomegaly due to cirrhosis.\"",
+            "Right: \"On inspection the abdomen is distended with fullness in the flanks and dilated veins over the anterior abdominal wall with flow away from the umbilicus. On palpation there is a firm, non-tender liver palpable four centimetres below the right costal margin with a sharp irregular edge, and a spleen palpable three centimetres below the left costal margin. There is shifting dullness. There are five spider naevi on the upper chest and the testes are small. To summarise, this patient has chronic liver disease with portal hypertension and ascites, and my first thought as to aetiology is alcohol.\"",
+            "For a lump, describe in a fixed order: site, size, shape, surface, edge, consistency, fluctuation, transillumination, fixity to skin and to deep structures, pulsatility, temperature, tenderness, and the regional nodes.",
+            "Give measurements in centimetres, not in fruit. \"Six by four centimetres\", not \"the size of a lemon\".",
+            "Use negatives that matter: \"There is no flapping tremor, and he is fully oriented, so there is no clinical encephalopathy today.\"",
+          ],
+        },
+        {
+          heading: "\"I would like to complete my examination by ...\" - the closing discipline",
+          points: [
+            "Never say you have finished. Say what remains. This single habit recovers marks for everything you were not able to do at the bedside.",
+            "\"I would like to complete my examination by examining the external genitalia and performing a per rectal examination, with consent and a chaperone.\"",
+            "\"I would like to complete my examination by checking the blood pressure lying and standing, examining the fundi, and testing the urine with a dipstick.\"",
+            "\"I would like to complete my examination by examining the other joints, the spine, and the skin and nails for psoriasis.\"",
+            "\"I would like to complete my examination by taking a full history, which I was not able to do, particularly regarding alcohol intake and previous jaundice.\"",
+            "Then offer the summary and stop: \"To summarise, this patient has ...\"",
+            "Have a ready list of the completing statements for the six common short-case regions - abdomen, chest, cardiovascular, neurology of the limbs, thyroid and neck lumps, and hands and joints - and memorise them. They are free marks and they are identical every time.",
+          ],
+        },
+      ],
+      phrases: [
+        "\"May I wash my hands, sir?\"",
+        "\"Namaste, I am Dr [name]. I have been asked to examine your [region]. May I do that?\"",
+        "\"Are you in any pain at the moment? Please tell me if anything I do hurts.\"",
+        "\"I would like to expose from ... to ..., with the patient positioned ...\"",
+        "\"On inspection ... On palpation ... On percussion ... On auscultation ...\"",
+        "\"To summarise, this patient has [the syndrome], and my first thought as to aetiology is ...\"",
+        "\"I would like to complete my examination by ...\"",
+        "\"I did not elicit that sign, sir. May I look again?\"",
+        "\"May I have a chaperone before I examine this area?\"",
+        "\"Thank you, that is all I need to do. Let me help you cover up.\"",
+      ],
+      pitfalls: [
+        "Naming the diagnosis in the first sentence and then being unable to produce the findings that support it.",
+        "Not asking permission, not washing hands, not exposing adequately, or leaving the patient exposed at the end.",
+        "Hurting the patient by palpating the painful area first.",
+        "Describing a mass without measurements, or in fruit.",
+        "Saying \"I have finished\" instead of \"I would like to complete my examination by ...\"",
+        "Inventing a history you were never allowed to take.",
+        "Freezing when the examiner interrupts. Interruption is normal; answer the question asked and return to your sequence.",
+        "Fiddling with the stethoscope, standing on the wrong side, or examining over clothes.",
+        "Reporting a sign you did not actually elicit. Examiners re-test signs and this is unrecoverable.",
+      ],
+    },
+
+    /* ------------------------------------------------------------------ */
+    {
+      id: "osce-stations",
+      title: "OSCE stations - communication, procedure, data interpretation",
+      kind: "osce",
+      minutes: 4,
+      steps: [
+        {
+          heading: "How an OSCE circuit works and how to be marked well in it",
+          points: [
+            "In the recent NBEMS pattern there are 20 stations of 4 minutes and 5 marks each, totalling 100 marks; some sessions have been run virtually. The number, duration and mode have varied by session, so confirm against the current bulletin.",
+            "Each station has a checklist. Marks are awarded for observable behaviours, not for elegance. The examiner cannot give you a mark for something you thought but did not say.",
+            "Read the stem outside the door and use the whole reading time. Underline the verb: is it \"counsel\", \"explain\", \"take consent\", \"demonstrate\", or \"interpret\"? Doing the wrong verb well scores zero.",
+            "Say the checklist items out loud even when they feel obvious - introduce yourself, confirm identity, wash hands, check understanding, summarise, and offer a leaflet or a follow-up.",
+            "Keep a spare thirty seconds for the summary. Almost every checklist has a closing item and candidates run out of time before reaching it.",
+          ],
+        },
+        {
+          heading: "Communication station: breaking bad news with SPIKES",
+          points: [
+            "S - Setting. Private room, sit down, phone silenced, tissues available, ask if they want anyone with them. Say it: \"Would you like your son to be with you for this conversation?\"",
+            "P - Perception. Find out what they already know: \"Before I tell you the results, can you tell me what you have understood so far about why we did the biopsy?\"",
+            "I - Invitation. Ask permission to give information and how much: \"Some people want every detail, others want the broad picture. Which would you prefer?\"",
+            "K - Knowledge. Fire a warning shot, then deliver in one short sentence in plain language, then STOP. \"I am afraid I have some difficult news. The biopsy has shown that this is a cancer.\" Then silence for at least ten seconds. Do not fill the silence.",
+            "E - Emotions. Respond to the emotion before the facts, and name it: \"I can see this is a shock. Take your time.\" Offer a tissue. Do not say \"I understand how you feel\".",
+            "S - Strategy and summary. Give the plan and the next concrete step, check understanding, and arrange the next contact: \"The next step is a scan on Tuesday, and I will see you with the result on Friday. Can you tell me what you will say to your family about what we discussed?\"",
+            "Never say: \"there is nothing more we can do\", \"you have six months\", or \"it is God's will\". Say instead: \"There is a great deal we can do to keep you comfortable and in control.\"",
+          ],
+        },
+        {
+          heading: "Communication station: counselling for a chronic disease",
+          points: [
+            "Frame the four minutes as: elicit, explain, negotiate, safety-net.",
+            "Elicit with ICE: \"What do you already know about diabetes? What worries you most? What were you hoping I could do today?\"",
+            "Explain in the patient's language with one analogy and no more than three facts. Use chunk-and-check: give a chunk, then \"Does that make sense so far?\"",
+            "Negotiate rather than instruct: \"Of the three things we have talked about - the tablets, the walking, and cutting down the sugar in tea - which one feels most possible to start this week?\" Then set a specific, measurable goal.",
+            "Address the specific Indian barriers explicitly: cost of drugs, fear of insulin, belief that treatment can be stopped when sugars normalise, use of alternative systems of medicine alongside, fasting during festivals and religious observance.",
+            "Close with teach-back and a written plan: \"So that I know I have explained it well - can you tell me how you will take the tablets tomorrow?\"",
+            "Safety net with three named symptoms and a route: \"If you feel shaky, sweaty and confused, eat sugar immediately and come in. This is my clinic number.\"",
+          ],
+        },
+        {
+          heading: "Communication station: informed consent",
+          points: [
+            "Confirm identity and that you are the right person to be taking consent: \"Are you Mrs Lakshmi? I am Dr [name]. I am going to explain the procedure and take your consent. Is that all right?\"",
+            "Cover, in this order and out loud: the diagnosis; the name and nature of the procedure in plain words; the intended benefit; the material risks including the common ones and the serious ones with rough frequencies; the alternatives including doing nothing; who will perform it; anaesthesia; and what recovery looks like.",
+            "Check capacity in one sentence and say you are doing it: \"She is able to understand, retain, weigh up and communicate her decision, so she has capacity to consent.\"",
+            "State that consent is voluntary and revocable: \"You can change your mind at any time, even after you have signed, and it will not affect your care.\"",
+            "Invite questions, use teach-back, then document: \"I will record in the notes what we discussed, including the risks I mentioned.\"",
+            "Know the Indian specifics and say them if relevant: consent for a minor from the parent or guardian, the age of majority being eighteen, separate written consent for procedures such as sterilisation and for medical termination of pregnancy under the MTP Act, and the fact that the PCPNDT Act forbids disclosure of fetal sex.",
+          ],
+        },
+        {
+          heading: "Communication station: telephone triage",
+          points: [
+            "The risk in a telephone station is that you cannot see the patient. Say that you know it: \"I cannot examine you over the phone, so I will ask more questions than usual, and if I am at all unsure I will ask you to come in.\"",
+            "Fixed opening: confirm who you are speaking to, their relationship to the patient, a call-back number in case the line drops, and the location. Take the call-back number first - lines do drop.",
+            "Screen for the emergency in the first thirty seconds with closed questions: chest pain, breathlessness at rest, altered consciousness, active bleeding, seizure, inability to speak in full sentences, a limp or blue child, sudden severe headache.",
+            "Then take the story, then repeat it back for accuracy: \"Let me make sure I have this right ...\"",
+            "Give a disposition in one of four categories and say which: call an ambulance now, come to the emergency department now, be seen in clinic today or tomorrow, or self-care with a review point.",
+            "Always end with an explicit worsening rule and a documented plan: \"If he becomes drowsy, or the breathing gets faster, or he stops passing urine, call an ambulance immediately - do not wait to call me back. I will record this call in his notes.\"",
+          ],
+        },
+        {
+          heading: "Procedure stations",
+          points: [
+            "The examiner is marking a sequence, so narrate the sequence. Silent competence scores less than commentated competence.",
+            "Universal skeleton for any procedure station: indication and contraindication stated; consent taken; equipment assembled and checked including the sharps bin; hand hygiene and gloves; patient positioned; asepsis; the procedure itself with landmarks named; sharps disposed of; specimen labelled at the bedside; patient made comfortable; documentation; and complications you would watch for.",
+            "Say the indication before you touch anything: \"The indication here is ..., and I have checked there is no ... which would be a contraindication.\"",
+            "Common Family Medicine procedure stations reported by candidates: intramuscular and intradermal injection, intravenous cannulation, suturing and wound toilet, urinary catheterisation, nebulisation and inhaler or spacer technique, ECG lead placement, peak flow, glucometer use, blood pressure measurement, basic life support and bag-mask ventilation, oxygen delivery devices, normal delivery mannequin and partograph, IUCD insertion on a model, Pap smear on a model, and neonatal resuscitation.",
+            "Inhaler technique is asked so often that it deserves rehearsal as a set piece: check the device, shake, exhale fully away from the device, seal the lips, actuate at the start of a slow deep inhalation, hold breath ten seconds, wait thirty seconds before a second dose, rinse the mouth for a steroid inhaler, and then ask the patient to demonstrate it back to you.",
+            "Finish every procedure station with: \"I would document the procedure, the batch number where relevant, and advise the patient about ...\"",
+          ],
+        },
+        {
+          heading: "Data interpretation stations",
+          points: [
+            "Use a fixed reading order and say it out loud so that partial marks are earned even if you miss the answer.",
+            "ECG: name and date, rate, rhythm, axis, P wave, PR interval, QRS width, ST segment, T wave, QT, then the clinical interpretation and what you would do now.",
+            "Chest radiograph: patient details and date, projection, rotation, inspiration, penetration, then airway, breathing, circulation, diaphragm, everything else - bones, soft tissue, tubes and lines.",
+            "Laboratory report: comment on what is abnormal, by how much, in which direction, whether it fits the clinical picture, what you would repeat, and what you would do next.",
+            "Growth chart: plot it, name the centile, comment on the trend rather than the single point, and state the action.",
+            "Partograph, spirometry, audiogram and a family genogram also appear as data stations in Family Medicine.",
+            "Always finish an interpretation station with the management sentence. \"This ECG shows an acute inferior ST-elevation myocardial infarction. I would give aspirin and clopidogrel, obtain intravenous access, and activate the reperfusion pathway immediately, and I would also record a right-sided ECG to look for right ventricular involvement before giving nitrates.\"",
+          ],
+        },
+      ],
+      phrases: [
+        "\"Before I begin - is it all right if I take a few notes while we talk?\"",
+        "\"Before I tell you the results, can you tell me what you already understand about the situation?\"",
+        "\"I am afraid I have some difficult news.\" (then stop and wait)",
+        "\"I can see that this has come as a shock. Take all the time you need.\"",
+        "\"Some people want every detail; others prefer the broad picture. Which would you prefer?\"",
+        "\"So that I know I have explained this well, could you tell me in your own words what you will do when you get home?\"",
+        "\"You can change your mind at any time, even after signing, and it will not affect your care in any way.\"",
+        "\"I cannot examine you over the telephone, so if I am at all uncertain I will ask you to come in.\"",
+        "\"The indication for this procedure is ..., and I have confirmed there is no contraindication.\"",
+        "\"This ECG shows ... and the immediate action I would take is ...\"",
+        "\"Is there anything I have said that you would like me to go over again?\"",
+      ],
+      pitfalls: [
+        "Doing the wrong verb - counselling when the stem said take consent, or examining when it said explain.",
+        "Medical jargon in a communication station. \"Malignancy\", \"biopsy positive\", \"metastasis\" without translation costs marks.",
+        "Filling the silence after breaking bad news. The silence is the item on the checklist.",
+        "Promising a prognosis in months, or saying \"nothing more can be done\".",
+        "Running out of time before the closing summary and safety net, which are almost always scored.",
+        "Ignoring the simulated patient's cues. If they cry, or ask \"am I going to die\", the checklist has a line for how you respond.",
+        "Forgetting hand hygiene, patient identity, or sharps disposal in a procedure station.",
+        "Interpreting an ECG or film without first stating name, date and technical adequacy.",
+        "Not stating what you would do next after interpreting the data.",
+        "Talking to the examiner instead of to the simulated patient. Address the patient throughout.",
+      ],
+    },
+
+    /* ------------------------------------------------------------------ */
+    {
+      id: "table-viva",
+      title: "Viva voce / table viva - specimens, drugs, instruments, films",
+      kind: "viva",
+      minutes: 15,
+      steps: [
+        {
+          heading: "How a viva station is run",
+          points: [
+            "In the recent NBEMS pattern there have been four viva stations of 15 marks each, one per examiner, totalling 60 marks. University MD vivas are usually less formally weighted but cover the same ground.",
+            "Each examiner has a table with objects on it - drug strips and ampoules, instruments, X-rays and ECGs, charts, sometimes specimens or models - and works through them. Vivas in Family Medicine also cover public health programmes, ethics and practice management.",
+            "The examiner is calibrating you, not trapping you. Questions get harder until you fail one. Reaching a question you cannot answer is the expected end point, not a disaster.",
+          ],
+        },
+        {
+          heading: "Structuring a one-minute answer",
+          points: [
+            "The shape is: definition, classification, the answer, an example, and a caveat. Roughly ten seconds, fifteen seconds, twenty seconds, ten seconds, five seconds.",
+            "Start with the direct answer, then expand. \"The commonest cause is X. To classify the causes, I would divide them into ...\"",
+            "Classify before you list, always. \"I would classify the causes as infective, inflammatory, neoplastic, metabolic and drug-induced\" is worth more than twelve unsorted names.",
+            "Use numbers where you have them and say where they come from: \"Under the current national guidance, the target is ...\" Naming the source is worth a mark.",
+            "Stop when you have answered. Talking on after the answer invites the follow-up question you cannot handle.",
+            "If the question is broad, ask which part they want: \"Would you like me to cover the diagnosis or the management, sir?\" This is not evasion; it is triage and it is rewarded.",
+          ],
+        },
+        {
+          heading: "How to answer when you do not know",
+          points: [
+            "Say so, quickly and without drama, and then offer the nearest thing you do know. \"I am not certain of the exact figure, sir. What I do know is that ... and I would look it up in the standard treatment guidelines before prescribing.\"",
+            "Never bluff a number, a dose, or a guideline. A wrong dose is a patient-safety failure in the examiner's mind and is far more expensive than an admitted gap.",
+            "Reason aloud from first principles when you can: \"I have not come across that condition, sir, but from the name I would expect it to involve ..., and I would approach it by ...\"",
+            "Offer a safe default: \"In practice I would discuss this with a physician before starting treatment, and I would not initiate it in my clinic.\" Recognising your own limits is a scored professional attribute.",
+            "Do not apologise repeatedly, do not go silent, and do not laugh nervously. One clean sentence and eye contact.",
+            "If you realise mid-answer that you are wrong, correct yourself out loud: \"May I correct myself, sir - I said ..., I should have said ...\" This is rewarded, not penalised.",
+            "If the examiner keeps pushing on the same point, he is usually telling you that you are close. Rethink rather than repeat.",
+          ],
+        },
+        {
+          heading: "Drugs commonly on the Family Medicine viva table",
+          points: [
+            "Expect to be handed a strip or ampoule and asked: name the drug, class, mechanism, indications, dose and route, contraindications, adverse effects, interactions, monitoring, and cost or availability in the public system.",
+            "Cardiovascular: aspirin, clopidogrel, atorvastatin, enalapril or ramipril, telmisartan, amlodipine, metoprolol, furosemide, spironolactone, digoxin, warfarin, low-molecular-weight heparin, sublingual nitroglycerine, streptokinase or tenecteplase.",
+            "Endocrine: metformin, glimepiride, human insulin regular and NPH with the vial and the pen, glucagon, levothyroxine, carbimazole, oral rehydration salts.",
+            "Respiratory and allergy: salbutamol inhaler and respules, ipratropium, budesonide and formoterol inhalers, a spacer, prednisolone, montelukast, adrenaline ampoule with the anaphylaxis dose, chlorpheniramine, cetirizine.",
+            "Infection: amoxicillin and amoxicillin-clavulanate, azithromycin, doxycycline, ciprofloxacin, cotrimoxazole, ceftriaxone, metronidazole, the four-drug anti-tubercular fixed-dose combination and the paediatric dispersible strip, artesunate and chloroquine, acyclovir, fluconazole, albendazole, tetanus toxoid and tetanus immunoglobulin, anti-rabies vaccine and rabies immunoglobulin.",
+            "Analgesia and neurology and psychiatry: paracetamol, ibuprofen, diclofenac, tramadol, oral morphine, phenytoin, sodium valproate, carbamazepine, levetiracetam, diazepam and lorazepam, amitriptyline, fluoxetine, sertraline, haloperidol, risperidone.",
+            "Obstetric and women's health: iron and folic acid tablets, calcium, oxytocin, misoprostol, magnesium sulphate, the combined oral contraceptive pill, the progestogen-only pill, emergency contraception, injectable DMPA, the copper IUCD, mifepristone and misoprostol combipack.",
+            "Have three things ready for every drug: the adult dose, the one contraindication that matters, and the one monitoring test. Those three carry most of the marks.",
+            "Be ready for \"is this drug in the National List of Essential Medicines?\" and \"what does a month of this cost the patient?\"",
+          ],
+        },
+        {
+          heading: "Instruments commonly on the table",
+          points: [
+            "For every instrument the frame is: name it, its parts, the material, how it is sterilised, its uses, and its complications.",
+            "Diagnostic: sphygmomanometer with different cuff sizes, stethoscope, thermometer, glucometer and strips, pulse oximeter, peak flow meter, spacer, otoscope, ophthalmoscope, tuning forks of 128 and 512 hertz, knee hammer, Snellen chart, measuring tape and infantometer, MUAC tape, Salter weighing scale, monofilament and biothesiometer for the diabetic foot, vaginal speculum, tongue depressor.",
+            "Therapeutic and procedural: intravenous cannulae in different gauges and their colour codes, scalp vein set, three-way stopcock, syringes and needles, autodisable syringe, Foley catheter with the balloon volume, Ryle's tube, oropharyngeal and nasopharyngeal airways, endotracheal tube, laryngoscope, ambu bag with mask, oxygen mask and nasal prongs and the non-rebreathing mask, nebuliser, suction catheter, needle holder and suture materials with absorbable and non-absorbable examples, scalpel and blade, artery forceps, dressing set, tourniquet, IUCD insertion set, Sim's speculum, disposable delivery kit, cord clamp, mucus extractor, radiant warmer.",
+            "Public health items appear too: the cold chain box and the vaccine carrier, ice packs, the vaccine vial monitor and how to read its four stages, the auto-disable syringe and the hub cutter, chlorine tablets, the ORS packet, insecticide-treated bed net.",
+            "For sterilisation know the actual conditions: autoclave at 121 degrees Celsius and 15 pounds per square inch for 15 to 20 minutes; hot air oven at 160 degrees Celsius for two hours; and for chemical disinfection the one percent sodium hypochlorite used for spills and for the ten-minute soak before disposal.",
+            "Biomedical waste colour coding is a near-certain question: yellow, red, white translucent sharps container, and blue. Know one example for each.",
+          ],
+        },
+        {
+          heading: "X-rays, ECGs and charts on the table",
+          points: [
+            "Films kept for Family Medicine vivas: normal chest radiograph, lobar consolidation, pleural effusion, pneumothorax, upper-lobe cavitatory and miliary tuberculosis, cardiomegaly with pulmonary oedema, chronic obstructive lung disease with hyperinflation, gas under the diaphragm, dilated bowel loops with air-fluid levels, a Colles fracture, a fracture of the neck of femur, osteoarthritis of the knee, a rickets wrist, and a plain abdominal film with a renal calculus.",
+            "ECGs kept: normal, atrial fibrillation, ST-elevation myocardial infarction inferior and anterior, complete heart block, ventricular tachycardia, hyperkalaemia, left ventricular hypertrophy.",
+            "Charts and forms: growth chart and the WHO growth standards, the mother and child protection card, the partograph, the immunisation schedule under the Universal Immunisation Programme, a temperature chart, the referral slip, and the DOTS or NIKSHAY treatment card.",
+            "Say the technical assessment out loud before the finding, every time, and end with what you would do next for the patient.",
+          ],
+        },
+        {
+          heading: "Family Medicine viva topics beyond the table",
+          points: [
+            "National health programmes and their current names, targets and drug regimens - tuberculosis, non-communicable diseases, maternal and child health, immunisation, vector-borne disease, blindness, mental health, and the Ayushman Bharat health and wellness centres.",
+            "Ethics and law: consent, confidentiality and its limits, the Consumer Protection Act as applied to medical practice, the PCPNDT Act, the MTP Act, the POCSO Act and mandatory reporting, the Mental Healthcare Act, notifiable diseases, and medical certification of cause of death.",
+            "Practice management: medical records and how long to keep them, prescription writing, referral letters, clinical audit, infection control in a small clinic, and the economics of running a family practice.",
+            "Research and evidence: study designs, sensitivity and specificity, positive and negative predictive value in a low-prevalence setting, number needed to treat, and how to read a guideline critically. The thesis is fair game - know your own methodology and its limitations.",
+          ],
+        },
+      ],
+      phrases: [
+        "\"May I take a moment to think about that, sir?\"",
+        "\"I would classify the causes as ...\"",
+        "\"The direct answer is ... and to expand on that ...\"",
+        "\"I am not certain of that, sir. What I do know is ..., and I would confirm the dose from the standard treatment guidelines before prescribing.\"",
+        "\"I have not come across that, sir, but reasoning from first principles I would expect ...\"",
+        "\"May I correct myself, sir - I said ..., I should have said ...\"",
+        "\"Would you like me to take the diagnosis or the management first, sir?\"",
+        "\"In my practice I would not start this drug myself; I would discuss it with a physician first.\"",
+        "\"This instrument is a ..., made of ..., sterilised by autoclaving at 121 degrees and 15 pounds per square inch for 15 minutes, and it is used for ...\"",
+        "\"I take your point, sir. On reflection, ...\"",
+      ],
+      pitfalls: [
+        "Bluffing a dose or a guideline figure. The single most expensive error in the viva.",
+        "Listing without classifying.",
+        "Continuing to talk after you have answered, which hands the examiner your weak flank.",
+        "Going silent when stuck. Say something honest and offer the safe default.",
+        "Arguing. Concede gracefully; the examiner has the marks.",
+        "Not knowing your own thesis, logbook cases, or the drugs you have actually prescribed in residency.",
+        "Failing to say what you would do NEXT for the patient after identifying a film or ECG.",
+        "Handling a sharp, a specimen or an instrument carelessly on the table.",
+        "Treating public health and ethics as secondary. In Family Medicine they carry real marks.",
+      ],
+    },
+
+    /* ------------------------------------------------------------------ */
+    {
+      id: "family-medicine-long-case",
+      title: "The Family Medicine long case - the same patient, presented as a family physician",
+      kind: "long",
+      minutes: 60,
+      steps: [
+        {
+          heading: "Why this template exists",
+          points: [
+            "A Medicine candidate presents a disease in a person. A Family Medicine candidate presents a person with a disease, in a family, in a community, over time. Examiners in this specialty are explicitly looking for the second, and it is commonly reported that this is where the discipline-specific marks are won or lost.",
+            "You still present the whole biomedical case - nothing below replaces the history, examination, differential, investigations or management. The family material is added, and it is added at defined points so it does not sound bolted on.",
+            "Four additions, in four defined places: (1) the illness experience and ICE after the history of presenting illness; (2) the family assessment - genogram, APGAR, SCREEM, life-cycle stage - after the family history; (3) a biopsychosocial problem list instead of a single diagnosis; (4) a continuity and care plan as the sixth heading of management.",
+            "The whole addition costs about three extra minutes of presentation and about eight extra minutes of work-up. It is the best return on time in the whole examination.",
+          ],
+        },
+        {
+          heading: "Addition 1 - the illness experience and ICE",
+          points: [
+            "Disease is the pathology. Illness is what the patient is living through. Present both, in that order, and label them.",
+            "Ask, and write down verbatim: \"What do you think is causing this?\" (ideas), \"What worries you most about it?\" (concerns), \"What were you hoping we would do?\" (expectations), and \"How has it changed what you can do in a day?\" (effect on function).",
+            "Add the fifth question that Indian patients often answer freely and that nobody asks: \"What have you been taking for it apart from what the doctor gave?\" - home remedies, ayurvedic and siddha preparations, homeopathy, a local practitioner's injection, steroids in an unlabelled strip.",
+            "Present it as its own paragraph: \"Turning to his illness experience. His idea is that the swelling is because of the water he drinks, and so he has been restricting fluids severely. His main concern is not the breathlessness but that he will lose his driving licence and with it the family's only income. His expectation today was to be given an injection that would take the swelling away in a day. Functionally he has been unable to work for six weeks and cannot climb the stairs to his own room. He has also been taking a herbal preparation from a local practitioner, which he did not mention to the ward team.\"",
+            "Then say what you would do with it: \"His idea about fluids is directly harmful to his renal function, so correcting it is my first counselling priority, ahead of any drug change.\"",
+          ],
+        },
+        {
+          heading: "Addition 2 - the family assessment",
+          points: [
+            "Draw the genogram on the sheet you hand over, or on the board if one is offered, and refer to it while presenting. A drawn genogram is a physical artefact of your work and examiners respond to it.",
+            "Present it in four sentences, not by reading every person: \"This is a three-generation nuclear family in the stage of launching children, with five members and one earner. The index patient is the 54-year-old male shown by the square with an arrow. His father died of a myocardial infarction at fifty-eight and his elder brother has diabetes and hypertension, so there is a strong first-degree family history of premature cardiovascular disease. His wife is fifty and untested for diabetes, and I would screen her opportunistically.\"",
+            "Give the Family APGAR score and interpret it: \"Family APGAR score is six out of ten, indicating moderate family dysfunction, mainly in the resolve and partnership domains, which fits with his wife carrying the entire caregiving load without support.\"",
+            "Give the SCREEM assessment as resources and deficits, not as a list: \"On SCREEM, his social and religious resources are strong - the extended family and the temple group both help. The significant deficits are economic and medical: the family has lost its only income and the nearest facility able to do an echocardiogram is thirty kilometres away with no direct bus.\"",
+            "Name the family life-cycle stage and the task that goes with it: \"The family is in Duvall's stage of launching young adults, and the developmental task of releasing the children into independence is being obstructed by the eldest son having left college to work.\"",
+            "Add the family life-line if there is anything to say: \"On the family life-line, the illness began three months after the father's death, and the wife dates his drinking to that event.\"",
+            "State the socio-economic class explicitly with the scale, the year and the caution: \"By the modified Kuppuswamy scale updated for 2026 the family scores nineteen, which is upper middle class, class II. I would note that the income slabs are revised annually with the consumer price index, so the class depends on which year's version is used.\"",
+          ],
+        },
+        {
+          heading: "Addition 3 - the biopsychosocial problem list",
+          points: [
+            "Instead of a single provisional diagnosis, present a numbered problem list under three headings. This is the most visible marker of a family physician's thinking.",
+            "\"My problem list is as follows. Biological: one, decompensated heart failure with reduced ejection fraction; two, uncontrolled hypertension with drug non-adherence; three, thirty pack-years of continuing tobacco use; four, undiagnosed possible diabetes with a random glucose of 190.\"",
+            "\"Psychological: five, low mood and poor sleep since he stopped working, with a PHQ-2 that is positive and needs a full PHQ-9; six, a health belief about fluid restriction that is actively harmful.\"",
+            "\"Social: seven, complete loss of household income with the eldest son leaving education; eight, caregiver strain on his wife; nine, a fitness-to-drive question that has occupational and legal implications; ten, distance and cost barriers to the investigations he needs.\"",
+            "Then rank them: \"Of these, the two that will change his outcome most in the next month are the heart failure treatment and the harmful fluid restriction, and the two that will change it most over the next year are the tobacco and the household income.\"",
+            "This structure also protects you. Every problem you name is a topic you have chosen, so the viva goes where you are strong.",
+          ],
+        },
+        {
+          heading: "Addition 4 - the continuity and care plan (the sixth heading)",
+          points: [
+            "Present management under the usual five headings, then add: \"and sixth, my continuity plan.\"",
+            "Name the person who will provide continuity: \"I would be his named doctor. Continuity of care means he sees me, or a colleague with access to the same record, at every visit.\"",
+            "Give the actual schedule with dates and what happens at each: \"Review at one week with renal function; at one month with weight, blood pressure and adherence check; three-monthly thereafter with HbA1c and an annual comprehensive review including foot, fundus, renal and vaccination status.\"",
+            "Say who else in the family you will act on: \"At the same visits I would opportunistically screen his wife and his brother for diabetes and hypertension, and I would offer the whole household tobacco-cessation advice because his son has started smoking.\"",
+            "Include the home visit: \"I would make one home visit in the first fortnight to see the actual living conditions, check the drug box, see how the food is cooked and salted, assess the stairs he cannot climb, and meet the family members who never come to the clinic.\"",
+            "Include the referral with its return path: \"I would refer for echocardiography and a cardiology opinion with a written note stating my working diagnosis, the drugs given and the specific question I want answered - and I would state that I remain his primary physician and would ask for the report to come back to me.\"",
+            "Include the systems and welfare layer: \"I would check Ayushman Bharat PM-JAY eligibility, register him at the health and wellness centre for the NCD programme so his drugs are free, and involve the ASHA worker for adherence follow-up.\"",
+            "Include documentation and communication: \"I would give him a written care plan card in Tamil with his weight, his target weight, his drugs, his next appointment and the three symptoms that mean he must return.\"",
+            "Close with prevention across the family: \"For the family, this is an opportunity for cardiovascular risk assessment of the two first-degree relatives, influenza and pneumococcal vaccination for the index patient, and a conversation with the son about staying in education.\"",
+          ],
+        },
+        {
+          heading: "The words that mark you out as a family physician",
+          points: [
+            "Use the vocabulary deliberately: illness experience, ideas concerns and expectations, biopsychosocial, problem list, continuity, comprehensiveness, coordination, first contact care, gatekeeping, patient-centred method, shared decision making, family life cycle, caregiver burden, safety netting, opportunistic screening, and the therapeutic use of time.",
+            "\"The therapeutic use of time\" is a genuinely useful phrase and examiners like it: \"In an undifferentiated presentation like this, one legitimate strategy in primary care is the therapeutic use of time - to safety-net carefully and review in seventy-two hours rather than to investigate everything at first contact.\"",
+            "Explicitly name the family physician's role at the end: \"My role here is to be the constant point of contact - to coordinate the cardiology input, to keep the whole problem list in view rather than one organ, and to look after the family as well as the patient.\"",
+            "Where you differ from a Medicine answer, say why: \"A hospital physician might admit him for intravenous diuresis. In my setting, with a reliable family, a working phone and daily weights, I would treat him at home with oral diuretics and review in forty-eight hours - and my criteria for changing that decision would be ...\"",
+          ],
+        },
+      ],
+      phrases: [
+        "\"With your permission, I will present this case as a family physician would - the biomedical case first, and then the illness experience and the family context.\"",
+        "\"Turning to his illness experience. His idea about the cause is ..., his main concern is ..., and his expectation today was ...\"",
+        "\"I have drawn a three-generation genogram, which I would like to refer to.\"",
+        "\"The Family APGAR score is six out of ten, suggesting moderate family dysfunction, chiefly in the resolve domain.\"",
+        "\"On SCREEM, the strengths are ... and the significant deficits are economic and medical.\"",
+        "\"By the modified Kuppuswamy scale for the current year, the family is class ... - and I note that the income slabs are revised annually.\"",
+        "\"My problem list is biological, psychological and social, as follows ...\"",
+        "\"Of these problems, the two that will change his outcome in the next month are ...\"",
+        "\"And sixth, my continuity plan.\"",
+        "\"I would make one home visit in the first fortnight, to see the drug box, the kitchen and the stairs.\"",
+        "\"I would remain his primary physician and I would ask for the specialist's report to come back to me.\"",
+        "\"This visit is also an opportunity to screen his wife and brother, who have never been tested.\"",
+      ],
+      pitfalls: [
+        "Bolting the family material on at the end as an afterthought. Insert it at the four defined points so it sounds native.",
+        "Presenting a genogram you have not drawn, or drawing one with the wrong symbols - square for male, circle for female, and the deceased crossed out.",
+        "Quoting a Family APGAR score without saying what it means or which domains were low.",
+        "Reciting SCREEM as six words with nothing attached to them.",
+        "Sacrificing the biomedical case for the psychosocial one. A family physician who cannot manage heart failure fails regardless of how good the genogram is.",
+        "Quoting a socio-economic class without naming the scale or the year of the income slabs.",
+        "Claiming a home visit you would not actually make, or a follow-up interval you cannot justify.",
+        "Using the vocabulary without the substance. \"Biopsychosocial\" with no psychological or social problem in the list is worse than not saying it.",
+        "Forgetting that continuity has to name a person, a date and a record - otherwise it is a slogan.",
+      ],
+    },
+  ],
+
+  /* -------------------------------------------------------------------- */
+  familyTools: [
+    {
+      heading: "The genogram - symbols and how to draw one in three minutes",
+      points: [
+        "A genogram is a family tree annotated with medical, relational and social information across at least three generations. It is the single most recognisable family-medicine artefact in an examination and it is quick.",
+        "Minute one - the skeleton. Draw the index generation in the middle of the page. Square for male, circle for female, a diamond if sex is unknown. Put the index patient's symbol with an arrow pointing to it. Draw the spouse to the right, joined by a horizontal marriage line.",
+        "Minute two - the other two generations. Parents above joined by their own marriage line, with a vertical line down to the sibship. Children below, hung from the marriage line in birth order, eldest on the left. Grandparents above the parents if known.",
+        "Minute three - the annotations. Cross out the deceased with a diagonal or an X and write the age and cause of death. Write the current age inside or beside each symbol. Write the diagnoses beside each affected member. Shade or hatch the members with the condition of interest. Draw a dotted line around the people who live in the same household. Write the date the genogram was drawn and who gave the information.",
+        "Line conventions: a solid horizontal line is marriage with the year if known; two slashes across it is divorce and one slash is separation; a dashed horizontal line is cohabitation or a live-in relationship; a double horizontal line between two symbols joined at the top is a consanguineous marriage, which matters a great deal in parts of India and is a frequently rewarded observation.",
+        "Children conventions: a triangle for a pregnancy, a small filled circle for an abortion or miscarriage, an X inside a small symbol for a stillbirth, a dashed vertical line for an adopted child, and twins as two lines from the same point on the sibship line - joined by a horizontal bar if monozygotic.",
+        "Relationship lines are optional and are drawn between two individuals: a double or triple line for close or fused, a jagged or zigzag line for conflicted, a dashed line for distant, and a line with a break for cut-off. Draw these only where they are clinically relevant - a conflicted line between the patient and his son when the son's leaving college is a problem on your list.",
+        "A legend is not optional. Draw a small box in a corner of the page defining your shading and any non-standard symbol. Candidates lose marks for an unlabelled shading far more often than for a wrong symbol.",
+        "Present it, do not read it. Four sentences: family type and size, the index patient, the inherited or clustered disease pattern, and the one relational or structural fact that matters clinically.",
+        "Say the family type: nuclear, joint, extended, three-generation, nuclear with a dependent, single-parent, or blended. In India this classification is itself a marked item.",
+      ],
+    },
+    {
+      heading: "Family APGAR - the five items, the wording and the scoring",
+      points: [
+        "The Family APGAR is Gabriel Smilkstein's five-item screening questionnaire (1978) for a family member's satisfaction with family function. It is a screening instrument, not a diagnosis of family pathology, and you should say so.",
+        "Ask each of the five as a statement the patient rates. Preface it: \"I am going to read five statements about your family. For each one, tell me whether it is almost always true, some of the time, or hardly ever.\"",
+        "A - Adaptation: \"I am satisfied that I can turn to my family for help when something is troubling me.\" (Use of family resources in a crisis.)",
+        "P - Partnership: \"I am satisfied with the way my family talks over things with me and shares problems with me.\" (Sharing of decision making and communication.)",
+        "G - Growth: \"I am satisfied that my family accepts and supports my wishes to take on new activities or make changes in my life.\" (Maturation and freedom to change.)",
+        "A - Affection: \"I am satisfied with the way my family expresses affection and responds to my emotions such as anger, sorrow and love.\" (Emotional interaction.)",
+        "R - Resolve: \"I am satisfied with the way my family and I share time together.\" (Sharing of time, space and money.)",
+        "Scoring: almost always = 2, some of the time = 1, hardly ever = 0. Maximum total 10.",
+        "Interpretation: 8-10 highly functional family; 4-7 moderately dysfunctional; 0-3 severely dysfunctional.",
+        "Say the caveats in the viva - it measures ONE member's perception, not the family's reality; the score can differ sharply between the patient and the spouse; it is validated as a screen and should be followed by a fuller family interview if low; and it is best used serially, so a falling score over visits is more informative than a single number.",
+        "The useful clinical move is to name which domain was low and act on it: \"Resolve and Partnership scored zero, so the deficit is in shared time and shared decision making, which is what I would address in a family conference rather than with a drug.\"",
+      ],
+    },
+    {
+      heading: "SCREEM - assessing the family's resources and pathologies",
+      points: [
+        "SCREEM is a checklist of the six domains in which a family holds resources - or lacks them - for coping with a crisis. Present each domain as either a resource or a deficit, never as a bare list.",
+        "S - Social: the family's network of relationships, the extended family, neighbours, friends, and whether the family is isolated or embedded. Ask: \"Who would come if you needed help at two in the morning?\"",
+        "C - Cultural: the family's cultural identity, language, food practices, gender roles, and health beliefs including recourse to traditional systems of medicine. Ask: \"Is there anything about your family's customs I should know so my advice fits?\"",
+        "R - Religious: religious affiliation and its practical effects - fasting, dietary restriction, community support from the place of worship, and beliefs about illness and death. Ask: \"Does your faith affect how you take your medicines or what you eat?\"",
+        "E - Economic: income, earners and dependants, savings, debt, insurance, catastrophic health expenditure, and whether the family is one illness away from destitution. Ask: \"If a test cost a thousand rupees today, how would you manage?\"",
+        "E - Educational: the education of the family members, health literacy, and whether written instructions are usable. Ask: \"Who in the house can read the label on a medicine strip?\"",
+        "M - Medical: access to health care - the distance, the transport, the cost, the usual provider, existing entitlements such as PM-JAY or ESI or CGHS, and the quality of previous care. Ask: \"Where do you usually go when someone is ill, and how do you get there?\"",
+        "Present it in two lines: the strengths you will use, and the deficits you will work around. \"Social and religious are resources I can mobilise for supervision of medicines; economic and medical are deficits, so my plan must be low-cost and must minimise the number of separate journeys.\"",
+        "Some authors extend it to SCREEMS by adding a Service or Support domain covering formal services and welfare schemes. If you use the extended version, say which version you are using.",
+      ],
+    },
+    {
+      heading: "Family life cycle - Duvall's eight stages and the tasks",
+      points: [
+        "Evelyn Duvall's eight-stage family life cycle is the version most commonly taught and examined in India. Its value in the exam is that each stage carries predictable developmental tasks and predictable health risks - name the stage, then name the task, then name the risk.",
+        "Stage 1 - Married couple without children (beginning family). Tasks: establishing the marriage, fitting into the kin network, planning family. Health issues: contraception, preconception care, folic acid, sexual health, and in India the pressures of a new joint-family household.",
+        "Stage 2 - Childbearing family (oldest child birth to 30 months). Tasks: adjusting to the infant, supporting the mother. Health issues: postnatal depression, breastfeeding, immunisation, growth monitoring, sleep deprivation, and marital strain.",
+        "Stage 3 - Family with preschool children (oldest child 2.5 to 6 years). Tasks: adapting to preschool needs, coping with energy depletion and loss of privacy. Health issues: injuries, diarrhoea and respiratory infection, developmental surveillance, nutrition.",
+        "Stage 4 - Family with schoolchildren (oldest 6 to 13). Tasks: fitting into the school community, encouraging achievement. Health issues: vision and hearing screening, anaemia, learning difficulty, dental caries, obesity, examination stress.",
+        "Stage 5 - Family with teenagers (oldest 13 to 20). Tasks: balancing freedom with responsibility, building post-parental interests. Health issues: risk behaviour, tobacco and alcohol initiation, mental health, adolescent sexual health, road traffic injury, and the classic parent-adolescent conflict presenting as a somatic symptom.",
+        "Stage 6 - Launching centre (first child gone to last child leaving home). Tasks: releasing young adults with appropriate ritual and assistance, maintaining a supportive home base. Health issues: parental cardiovascular risk emerging, marital re-negotiation, and the economics of education and marriage costs.",
+        "Stage 7 - Middle-aged parents (empty nest to retirement). Tasks: rebuilding the marriage, maintaining kin ties across generations. Health issues: menopause, non-communicable disease diagnosis, cancer screening, caring for elderly parents, mid-life depression.",
+        "Stage 8 - Ageing family members (retirement to the death of both spouses). Tasks: adjusting to retirement, bereavement, and living alone. Health issues: frailty, falls, polypharmacy, dementia, sensory impairment, elder abuse and neglect, financial dependence, and end-of-life care.",
+        "In the exam, say the stage and then use it: \"They are in the launching stage, so the predictable issues are the cost of the daughter's education and the parents' own emerging cardiovascular risk - both of which are on my problem list.\"",
+        "Mention that Carter and McGoldrick's six-stage cycle is an alternative that includes divorce and remarriage, and that both models fit Indian joint families imperfectly because launching is often partial and multigenerational households persist. Saying this is a mark, not a hedge.",
+      ],
+    },
+    {
+      heading: "The family life-line",
+      points: [
+        "A family life-line is a horizontal timeline on which you plot the family's significant life events and its illness events on the same axis, so that the relationship between them becomes visible.",
+        "How to draw it in two minutes: a horizontal line with years marked. Above the line plot life events - births, marriages, deaths, migration, job loss, retirement, a child leaving home, a court case, a house move, a natural disaster. Below the line plot health events - diagnoses, admissions, surgeries, relapses, and the start of a symptom.",
+        "Read it aloud for the pattern: \"His drinking increased in the year his father died, his first admission followed three months later, and his second relapse coincides with the son leaving college.\"",
+        "It is the tool that makes stress-illness links concrete and it is easy to score with because the picture argues for itself.",
+        "Related tools worth naming if asked: the family circle (the patient draws circles for family members, sized by importance and placed by closeness); the eco-map, which places the family in a circle in the middle and draws lines out to external systems - work, school, place of worship, health services - with the line thickness showing the strength of the connection and arrows showing the direction of energy flow.",
+      ],
+    },
+    {
+      heading: "Modified Kuppuswamy scale - the current version and how to score it",
+      points: [
+        "The modified Kuppuswamy scale is the standard socio-economic classification for urban and peri-urban Indian families. It has three components - education of the head of the family, occupation of the head of the family, and total monthly family income - which are scored and added. Range 3 to 29.",
+        "CAUTION, and say this in the viva: only the income component is revised. The revision is annual and follows the All India Consumer Price Index for Industrial Workers (CPI-IW), so the slabs differ between published updates and between years. Always state which year's version you have used, and expect a different figure in a paper published a year later.",
+        "Education of the head of the family: Professional degree 7; Graduate 6; Intermediate or post-high-school diploma 5; High school certificate 4; Middle school certificate 3; Primary school certificate 2; Illiterate 1.",
+        "Occupation of the head of the family (the gender-neutral revision, based on the National Classification of Occupations): Legislators, senior officials and managers 10; Professionals 9; Technicians and associate professionals 8; Clerks 7; Skilled workers and shop and market sales workers 6; Skilled agricultural and fishery workers 5; Craft and related trade workers 4; Plant and machine operators and assemblers 3; Elementary occupation 2; Unemployed 1.",
+        "Income, 2026 update: the published 2026 revision, based on the All India CPI-IW for January 2026 of 148.2 on the 2016=100 base with the standard linking factors, sets the top income slab (score 12) at a total monthly family income of Rs. 1,65,420 and above. That is the figure to quote if asked for the current top slab.",
+        "The remaining 2026 slabs follow from the same published multiplier applied to Kuppuswamy's original 1976 bands, giving approximately: score 12, Rs. 1,65,420 and above; score 10, Rs. 82,710 to 1,65,419; score 6, Rs. 62,033 to 82,709; score 4, Rs. 41,355 to 62,032; score 3, Rs. 24,813 to 41,354; score 2, Rs. 8,354 to 24,812; score 1, below Rs. 8,354. These derived intermediate figures are reported with small variations between published updates because different authors apply the linking factors and rounding differently - quote them as approximate and name your source.",
+        "Total score to class: 26-29 Upper, class I; 16-25 Upper middle, class II; 11-15 Lower middle, class III; 5-10 Upper lower, class IV; less than 5 Lower, class V.",
+        "Limitations to have ready: it uses only the head of the family's education and occupation, so a graduate wife's contribution is invisible; income is self-reported and usually under-reported; it performs poorly in rural settings; it does not capture assets, debt or land; and because the slabs move every year, longitudinal comparison between studies is unsafe.",
+        "In the exam, say the class in words and numerals and name the year: \"Upper lower class, class IV, on the modified Kuppuswamy scale as updated for 2026.\"",
+      ],
+    },
+    {
+      heading: "BG Prasad scale - the rural and general-purpose alternative",
+      points: [
+        "The BG Prasad classification (1961, modified) uses a single variable - per capita monthly income - and is usable in both rural and urban settings. Per capita income means total monthly family income divided by the number of family members, so compute it and say it.",
+        "It is updated by multiplying the original 1961 limits by the current CPI-IW with the appropriate linking factors, so like Kuppuswamy it changes every year and the year must be quoted.",
+        "The 2026 updates published in Indian community medicine journals do not fully agree with one another. One January 2026 update, using CPI-IW 148.6 and a multiplication constant of 97.69, gives: Class I, Rs. 9,769 and above; Class II, Rs. 4,885 to 9,768; Class III, Rs. 2,931 to 4,884; Class IV, Rs. 1,465 to 2,930; Class V, below Rs. 1,465. Another 2026 update gives Class I, Rs. 8,916 and above; Class II, Rs. 4,458 to 8,915; Class III, Rs. 2,674 to 4,457; Class IV, Rs. 1,337 to 2,673; Class V, Rs. 1,336 and below. The difference arises from different linking-factor and rounding conventions.",
+        "That disagreement is itself a good viva answer: quote one set, name the source and the CPI-IW value you used, and state that published updates differ by a few hundred rupees because of the linking-factor convention.",
+        "Class I is upper, II upper middle, III middle, IV lower middle, and V is lower or poor. Some texts label them upper, upper middle, middle, lower middle and lower - use the labels consistently within your presentation.",
+        "Advantages over Kuppuswamy: applicable in rural areas, simple, needs one number. Disadvantages: income alone ignores education, occupation, assets and social capital, and per capita income penalises large families in a way that may not reflect real deprivation.",
+        "Other scales worth naming if asked: the Udai Pareek scale and the Trivedi-Pareek scale for rural families, the standard of living index used in the National Family Health Survey, and the wealth index used in the more recent NFHS rounds.",
+      ],
+    },
+    {
+      heading: "Home visit and home-based care assessment",
+      points: [
+        "The home visit is the family physician's diagnostic and therapeutic instrument that no other specialty uses routinely. Know the indications, the bag, the structure and the assessment.",
+        "Indications: the housebound or bed-bound patient; palliative and end-of-life care; a newly discharged patient in the first fortnight; postnatal and newborn care; assessment of a fall or of repeated admissions; non-adherence that is not explained in the clinic; an unexplained failure to thrive; suspected abuse or neglect; a death certification and bereavement visit; and the assessment of the environment when the diagnosis depends on it, such as occupational or indoor-air-pollution-related respiratory disease.",
+        "Before you go: confirm the appointment and the address, review the record and the drug list, agree the purpose of the visit, tell someone where you are going, and take the bag.",
+        "The doctor's bag: sphygmomanometer, stethoscope, thermometer, pulse oximeter, glucometer with strips, torch, otoscope and ophthalmoscope if available, tongue depressors, gloves, hand sanitiser, sharps container, syringes and needles, dressing material, urine dipsticks, a small emergency drug set - adrenaline, hydrocortisone, chlorpheniramine, glucose, salbutamol inhaler and spacer, sublingual nitroglycerine, oral rehydration salts, paracetamol - and prescription pads, referral forms and a phone.",
+        "Structure of the visit - the mnemonic INHOMESSS is widely taught and is a safe answer: Immobility, Nutrition, Housing and environment, Other people and caregivers, Medications, Examination, Safety, Spiritual health, Services. Walk through it out loud.",
+        "What to actually look at in the house: the stairs and the thresholds, the lighting, the floor and any loose mats, the bathroom and whether there is a grab rail and a raised seat, where the patient sleeps and whether it is reachable, the kitchen and the cooking fuel and the ventilation, the water source and its storage, the toilet, and the presence of vector breeding sites.",
+        "Open the drug box and count. Comparing what is prescribed with what is present and what is being taken resolves more non-adherence than any counselling session, and expired drugs, duplicated brands, borrowed drugs and unlabelled steroid strips all turn up.",
+        "Assess the caregiver, not only the patient: who does the lifting, the feeding, the toileting and the night work; whether they have any relief; and whether they are themselves ill. Say the phrase \"caregiver burden\" and offer something concrete for it.",
+        "Home-based care planning: agree what the family can safely do at home, who does it, what equipment is needed - an air mattress, a commode, a walking frame, suction, oxygen concentrator - what the danger signs are, who to call and on what number, and when you will next come.",
+        "Document the visit in the same record as the clinic notes, and end with the review date. An undocumented home visit earns nothing.",
+        "Say what a home visit costs: it is time-expensive, so state the criteria by which you select patients for it rather than claiming you would visit everyone.",
+      ],
+    },
+    {
+      heading: "Consultation frameworks - ICE and BATHE (and where they fit)",
+      points: [
+        "ICE - Ideas, Concerns, Expectations - is the minimum patient-centred enquiry and it belongs at the end of the history, before the examination. Add Effect on function and you have ICE-E, which is the version worth using.",
+        "Ideas: \"What do you think might be causing this?\" or, less confrontingly, \"Have you had any thoughts of your own about what this might be?\"",
+        "Concerns: \"Is there anything in particular you are worried it might be?\" and the direct version when the cue is there: \"Was there something specific you were afraid of?\"",
+        "Expectations: \"What were you hoping we might be able to do for you today?\"",
+        "Effect: \"How has this affected what you can do in a normal day?\" and \"How has it affected the people at home?\"",
+        "Never ask the three as an interrogation in a row. Attach them to a cue the patient has already given, and reflect the answer back: \"You mentioned your uncle had the same pain - is that what has been on your mind?\"",
+        "BATHE is a four-to-five minute psychosocial screen usable inside an ordinary consultation, and it is the right tool when the presentation is somatic and the cause is not.",
+        "B - Background: \"What is going on in your life at the moment?\"",
+        "A - Affect: \"How does that make you feel?\" or \"How is your mood?\"",
+        "T - Trouble: \"What about it troubles you the most?\"",
+        "H - Handling: \"How are you handling that?\"",
+        "E - Empathy: a statement, not a question - \"That must be very difficult for you.\"",
+        "BATHE is a screen and a therapeutic intervention in itself; the acknowledgment in the E step is what the patient came for more often than a prescription. Say that in the viva.",
+        "Other frameworks worth naming and being able to sketch: the Calgary-Cambridge guide (initiating, gathering information, physical examination, explanation and planning, closing - with providing structure and building the relationship running throughout); Stewart's patient-centred clinical method (exploring both the disease and the illness experience, understanding the whole person, finding common ground, incorporating prevention and health promotion, enhancing the relationship, being realistic); Pendleton's seven tasks; Neighbour's five checkpoints - connecting, summarising, handing over, safety-netting, housekeeping; and the RCGP-derived phrase safety-netting, which you should use by name every time you finish a plan.",
+        "Behaviour change tools that pair with these: the transtheoretical stages of change - precontemplation, contemplation, preparation, action, maintenance, relapse - and the 5 A's for tobacco: Ask, Advise, Assess, Assist, Arrange. Naming the stage before you counsel is a mark: \"He is in contemplation, so the useful intervention is motivational rather than instructional.\"",
+      ],
+    },
+  ],
+
+  /* -------------------------------------------------------------------- */
+  marking: [
+    {
+      heading: "What is officially published, and what is not",
+      points: [
+        "OFFICIAL: NBEMS publishes the practical examination scheme in the Information Bulletin for each session. In recent sessions the DNB final practical has been 300 marks - 20 OSCE stations of 5 marks each at 4 minutes per station (100), two clinical cases of 50 marks each (100), four ward rounds of 10 marks each (40), and four viva voce stations of 15 marks each (60) - with 150 out of 300 required to qualify. The split has changed between sessions and specialties, so verify it for your own session.",
+        "OFFICIAL: the practical is conducted by a board of examiners, candidates are examined at an accredited centre other than their own where possible, and the result is declared as pass or fail without marks disclosure to the candidate.",
+        "OFFICIAL for MD: the practical pattern is set by the university under the NMC competency-based postgraduate curriculum, which specifies a clinical examination and a viva covering the syllabus, and typically requires 50 percent separately in theory and practical. Read your own university's regulations - they differ.",
+        "NOT PUBLISHED: NBEMS does not release the internal marking rubric for the clinical cases or the viva. Everything below about how individual marks are distributed within a case is COMMONLY REPORTED PRACTICE, collated from candidate accounts and from examiner-authored teaching material, not from an official document. Treat it as a guide to emphasis, not as a scoring sheet.",
+      ],
+    },
+    {
+      heading: "What earns marks in a long case (commonly reported practice)",
+      points: [
+        "A complete, chronological, relevant history with the negatives stated - candidates are commonly reported to be marked on the relevant negatives as much as the positives.",
+        "Accurate examination findings that the examiner can reproduce. Examiners routinely go back to the patient. A sign you claimed and cannot show is a heavier penalty than a sign you missed.",
+        "A summary statement that is one sentence, contains the defining features, and commits to a syndrome. This is the most consistently reported single high-value item.",
+        "A differential that is argued rather than listed.",
+        "An investigation plan in tiers, each item justified, with the expected result and an awareness of cost and availability.",
+        "A management plan that reaches beyond drugs to counselling, prevention, follow-up, and the family.",
+        "Explicit safety-netting and explicit red-flag recognition. Examiners are looking for a safe doctor before a clever one.",
+        "For Family Medicine specifically: the illness experience and ICE, the genogram, the family assessment, the biopsychosocial problem list, and a continuity plan naming a person and a date. These are what distinguish the candidate from a Medicine candidate and are commonly reported to carry discipline-specific weight.",
+        "Professional behaviour that is visible: consent, hand hygiene, chaperone, draping, gentleness, and courtesy to the patient and the attendant.",
+        "Honest self-limitation: knowing what you would refer, to whom, and with what question.",
+      ],
+    },
+    {
+      heading: "What loses marks (commonly reported practice)",
+      points: [
+        "Any patient-safety error - a wrong drug dose, a missed red flag, failure to recognise an emergency, or a plan that would harm. These are commonly reported as effectively disqualifying regardless of the rest of the performance.",
+        "Fabricating a finding, a history point, or an investigation result. This is treated as a probity issue rather than a knowledge gap.",
+        "Bluffing in the viva rather than admitting ignorance.",
+        "Discourtesy to the patient - not asking permission, not covering, causing avoidable pain, discussing the patient in the third person in front of them, or speaking about a poor patient dismissively.",
+        "Presenting from the paper without looking up, or an inaudible presentation.",
+        "Poor time management - not finishing, or spending the allotted time on the history and having nothing left for management.",
+        "Disorganisation: jumping between systems, going back to add history you forgot, or a management plan with no structure.",
+        "Arguing with the examiner, or defending an answer after being corrected.",
+        "For Family Medicine: presenting a purely hospital-medicine answer with no family, no community, no cost, no continuity and no prevention.",
+        "Untidy or absent documentation of the work-up sheet you hand over.",
+      ],
+    },
+    {
+      heading: "The examiner's implicit questions",
+      points: [
+        "Behind every viva question there are four implicit ones. Answer them and the marks follow.",
+        "\"Is this candidate safe?\" - shown by red flags, referral thresholds, safety-netting and admitted limits.",
+        "\"Is this candidate organised?\" - shown by structure announced before content, and by finishing on time.",
+        "\"Does this candidate actually see patients?\" - shown by real doses, real costs, real drug availability, and by what you would do when the test is not available.",
+        "\"Is this candidate a family physician?\" - shown by the family, the continuity, the prevention, and the patient as a person.",
+      ],
+    },
+    {
+      heading: "Practical rehearsal plan for the last eight weeks",
+      points: [
+        "Weeks 8 to 5: one full long case daily with a colleague timing you, presenting out loud. Not reading - presenting.",
+        "Weeks 8 to 5: write your six standard \"I would like to complete my examination by ...\" statements and learn them.",
+        "Weeks 4 to 3: short cases in bursts - six regions in one afternoon, ten minutes each, describing before naming.",
+        "Weeks 4 to 3: OSCE drill - four-minute stations against a timer, with a colleague holding the checklist. Breaking bad news, chronic disease counselling, consent, telephone triage, inhaler technique, and three data stations.",
+        "Weeks 2 to 1: viva drill on the table items - drugs, instruments, films, charts - twenty items a day, thirty seconds each.",
+        "Weeks 2 to 1: rehearse the family tools until the genogram takes three minutes and the APGAR wording is verbatim.",
+        "Last week: no new material. Rehearse the five opening sentences, the summary formula, the five management headings, and the continuity plan.",
+        "Throughout: keep a single sheet with your summary-statement formula, the five management headings, and the family additions. Read it before you walk in.",
+      ],
+    },
+  ],
+
+  /* -------------------------------------------------------------------- */
+  tables: [
+    {
+      heading: "Long case - time allocation for a 60-minute work-up and a 12-minute presentation",
+      columns: ["Clock", "Task", "Output on paper", "Failure mode if you overrun"],
+      rows: [
+        ["0-2 min", "Greet, consent, write the seven headings as boxes, scan the bedside", "Skeleton page", "You write prose later and run out of time"],
+        ["2-12 min", "Open question, then complete complaint list, then HPI of the main complaint", "Complaints with durations", "Interrupting early and missing the diagnosis"],
+        ["12-20 min", "Past, drug, personal, family, socio-economic history", "Kuppuswamy score, drug list from strips", "A twenty-minute past history"],
+        ["20-25 min", "ICE, illness experience, genogram sketch", "Verbatim ICE quotes, three-generation genogram", "Skipping this, which costs the discipline marks"],
+        ["25-45 min", "General examination with numbers, then systems", "Vitals as figures, findings as descriptions", "Repeating manoeuvres hoping a sign appears"],
+        ["45-52 min", "Write summary statement, differential, investigations, management", "The sentence, three differentials, tiered tests, five headings", "Writing the whole case out again"],
+        ["52-58 min", "Rehearse silently, predict the three worst viva questions", "Three prepared answers", "Nothing rehearsed, so the opening is shaky"],
+        ["Present 0-1 min", "Identification, source and reliability, complaints", "-", "Starting with the diagnosis"],
+        ["Present 1-4 min", "HPI with relevant negatives", "-", "Reading, not presenting"],
+        ["Present 4-5.5 min", "Past, personal, family, socio-economic, ICE", "-", "Letting this run to four minutes"],
+        ["Present 5.5-8 min", "Examination findings", "-", "Saying vitals are stable instead of the numbers"],
+        ["Present 8-8.5 min", "Summary statement - pause before it", "-", "A second full history"],
+        ["Present 8.5-10 min", "Provisional diagnosis and argued differential", "-", "A list of five names"],
+        ["Present 10-12 min", "Investigations and management under the five (or six) headings", "-", "Running out of time before management"],
+      ],
+    },
+    {
+      heading: "Genogram symbols - what to draw and what it means",
+      columns: ["Element", "Symbol to draw", "Annotation to add", "Why it earns a mark"],
+      rows: [
+        ["Male", "Square", "Age inside or beside", "Basic accuracy; wrong shape is noticed"],
+        ["Female", "Circle", "Age inside or beside", "Basic accuracy"],
+        ["Sex unknown / pregnancy", "Diamond / triangle", "Gestation in weeks for a pregnancy", "Shows completeness of the reproductive history"],
+        ["Index patient", "Arrow pointing to the symbol", "\"Index\"", "Orients the examiner instantly"],
+        ["Deceased", "Diagonal line or X through the symbol", "Age at death and cause", "Cause of death in first-degree relatives is risk data"],
+        ["Marriage", "Solid horizontal line joining two symbols", "Year of marriage", "Anchors the timeline"],
+        ["Separation / divorce", "One slash / two slashes across the marriage line", "Year", "Explains household composition and support"],
+        ["Cohabitation", "Dashed horizontal line", "Year began", "Accuracy about who actually lives there"],
+        ["Consanguineous marriage", "Double horizontal line", "Degree of relationship", "Highly relevant to genetic risk in Indian families"],
+        ["Children", "Vertical lines down from the marriage line, eldest on the left", "Age of each", "Birth order matters for life-cycle stage"],
+        ["Twins", "Two lines from a single point; add a bar between them if monozygotic", "Zygosity if known", "Precision"],
+        ["Miscarriage / abortion", "Small filled circle", "Gestation and year", "Completeness of obstetric history"],
+        ["Stillbirth", "Small symbol with an X inside", "Gestation", "Completeness"],
+        ["Adoption", "Dashed vertical line to the child", "Year", "Corrects apparent genetic links"],
+        ["Household", "Dotted line drawn around the members who live together", "Number in household", "Distinguishes family from household - a family medicine distinction"],
+        ["Affected member", "Shading or hatching of the symbol", "Diagnosis written beside", "Makes the disease cluster visible at a glance"],
+        ["Close relationship", "Double or triple line between two individuals", "-", "Identifies who to recruit as the supervising carer"],
+        ["Conflicted relationship", "Zigzag or jagged line", "-", "Explains non-adherence and stress-linked presentations"],
+        ["Distant / cut-off", "Dashed line / line with a break", "-", "Identifies missing support"],
+        ["Legend and date", "Small boxed key in a corner", "Date drawn, informant, who drew it", "Unlabelled shading loses marks more often than a wrong symbol"],
+      ],
+    },
+    {
+      heading: "Family APGAR - items, wording and scoring (Smilkstein, 1978)",
+      columns: ["Letter", "Domain", "The statement to read out", "Almost always", "Some of the time", "Hardly ever"],
+      rows: [
+        ["A", "Adaptation - use of family resources in a crisis", "\"I am satisfied that I can turn to my family for help when something is troubling me.\"", "2", "1", "0"],
+        ["P", "Partnership - sharing of decision making and communication", "\"I am satisfied with the way my family talks over things with me and shares problems with me.\"", "2", "1", "0"],
+        ["G", "Growth - freedom to change and mature", "\"I am satisfied that my family accepts and supports my wishes to take on new activities or make changes.\"", "2", "1", "0"],
+        ["A", "Affection - emotional interaction", "\"I am satisfied with the way my family expresses affection and responds to my emotions such as anger, sorrow and love.\"", "2", "1", "0"],
+        ["R", "Resolve - sharing of time, space and money", "\"I am satisfied with the way my family and I share time together.\"", "2", "1", "0"],
+        ["Total", "Maximum 10", "8-10 highly functional; 4-7 moderately dysfunctional; 0-3 severely dysfunctional", "-", "-", "-"],
+        ["Caveat", "Say this out loud", "It measures one member's perception, is a screen and not a diagnosis, and is most useful repeated over visits", "-", "-", "-"],
+      ],
+    },
+    {
+      heading: "DNB final practical - marks weighting and where to spend preparation time",
+      columns: ["Component", "Number", "Marks each", "Total", "Time each", "Preparation share"],
+      rows: [
+        ["OSCE stations", "20", "5", "100", "4 min", "One third - the largest single block and the most drillable"],
+        ["Clinical cases", "2", "50", "100", "Long-case length", "One third - the highest variance component"],
+        ["Viva voce stations", "4", "15", "60", "Examiner-led", "One fifth - drugs, instruments, films, public health, ethics"],
+        ["Ward rounds", "4", "10", "40", "Bedside", "One eighth - focused bedside assessment and case discussion"],
+        ["Total", "-", "-", "300", "-", "Pass mark 150 of 300 (50 percent)"],
+        ["Source note", "-", "-", "-", "-", "This scheme is as reported for recent NBEMS sessions and has varied by session and specialty; confirm against the current Information Bulletin. MD practicals follow university regulations instead."],
+      ],
+    },
+  ],
+
+  /* -------------------------------------------------------------------- */
+  references: [
+    {
+      label: "NBEMS official website - Information Bulletins, DNB final examination scheme and practical exam notices (the authoritative source; re-check every session)",
+      url: "https://natboard.edu.in/",
+    },
+    {
+      label: "National Medical Commission - Postgraduate Medical Education Regulations and competency-based curriculum for MD Family Medicine",
+      url: "https://www.nmc.org.in/",
+    },
+    {
+      label: "Careers360 - NBEMS DNB final practical exam scheme with OSCE component: 20 OSCE stations, 2 clinical cases, 4 ward rounds, 4 viva stations, 300 marks, pass 150",
+      url: "https://news.careers360.com/nbems-dnb-final-practical-exam-dates-for-october-2024-having-osce-component-out-begins-on-january-21",
+    },
+    {
+      label: "Doctutorials - DNB practical exam pattern and structure (secondary summary of the NBEMS scheme)",
+      url: "https://www.doctutorials.com/pg-residency/dnb-practical-exam",
+    },
+    {
+      label: "Updated Kuppuswamy Socioeconomic Status Scale for the Year 2026 - Indian Journal of Community Medicine (PubMed record)",
+      url: "https://pubmed.ncbi.nlm.nih.gov/42639284/",
+    },
+    {
+      label: "Revised Kuppuswamy and Prasad scale 2026: new income categories - International Journal of Community Medicine and Public Health",
+      url: "https://www.ijcmph.com/index.php/ijcmph/article/view/15458",
+    },
+    {
+      label: "Revamping socioeconomic assessment: 2026 updates to the B. G. Prasad and modified Kuppuswamy scales - IJCMPH",
+      url: "https://www.ijcmph.com/index.php/ijcmph/article/view/15544",
+    },
+    {
+      label: "Ensuring Contemporary Socio-economic Classification: Updated Modified BG Prasad Scale for 2026 - Indian Journal of Community Health",
+      url: "https://www.iapsmupuk.org/journal/index.php/IJCH/article/view/3569",
+    },
+    {
+      label: "Labour Bureau, Government of India - All India Consumer Price Index for Industrial Workers (the CPI-IW figure that drives both scales; check the current month before quoting a slab)",
+      url: "https://labourbureau.gov.in/",
+    },
+    {
+      label: "Smilkstein G. The Family APGAR: a proposal for a family function test and its use by physicians. Journal of Family Practice 1978;6:1231-9 (PubMed record)",
+      url: "https://pubmed.ncbi.nlm.nih.gov/660126/",
+    },
+    {
+      label: "Baile WF et al. SPIKES - a six-step protocol for delivering bad news. The Oncologist 2000;5:302-11",
+      url: "https://theoncologist.onlinelibrary.wiley.com/doi/10.1634/theoncologist.5-4-302",
+    },
+    {
+      label: "Stuart MR, Lieberman JA. The Fifteen Minute Hour - the origin and use of the BATHE technique",
+      url: "https://www.routledge.com/The-Fifteen-Minute-Hour-Efficient-and-Effective-Patient-Centered-Consultation-Skills/Stuart-Lieberman/p/book/9781138739123",
+    },
+    {
+      label: "Calgary-Cambridge guide to the medical interview - Kurtz, Silverman and Draper, summarised by GP Training",
+      url: "https://www.gp-training.net/training/communication_skills/calgary/guide.htm",
+    },
+    {
+      label: "McGoldrick M, Gerson R, Petry S. Genograms: Assessment and Intervention - standard reference for genogram symbols and conventions",
+      url: "https://wwnorton.com/books/9780393705096",
+    },
+    {
+      label: "Duvall EM. Marriage and Family Development - the eight-stage family life cycle (standard reference; summarised in Park's Textbook of Preventive and Social Medicine)",
+    },
+    {
+      label: "Park K. Park's Textbook of Preventive and Social Medicine, current edition - socio-economic scales, family health, national health programmes",
+    },
+    {
+      label: "Rakel RE, Rakel DP. Textbook of Family Medicine, current edition - family assessment tools, home visits, the family physician's role",
+    },
+    {
+      label: "Stewart M et al. Patient-Centered Medicine: Transforming the Clinical Method, current edition - the illness experience and finding common ground",
+    },
+    {
+      label: "Academy of Family Physicians of India - postgraduate training resources and Journal of Family Medicine and Primary Care",
+      url: "https://www.afpionline.com/",
+    },
+    {
+      label: "Journal of Family Medicine and Primary Care (official journal of the Academy of Family Physicians of India)",
+      url: "https://journals.lww.com/jfmpc/pages/default.aspx",
+    },
+  ],
+};
+
+export default guide;

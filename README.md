@@ -12,6 +12,8 @@ npm run dev -- --host 127.0.0.1 --port 5173
 
 Open http://127.0.0.1:5173/
 
+**Family Medicine exam module:** [`NEW_SMART_ELIXIR/FM_STUDY.md`](./NEW_SMART_ELIXIR/FM_STUDY.md) — notes, model answers, cases, questions and your own documents, under the **FM Study** tab.
+
 Deploy the new UI with **Netlify** (Chrome install) or **Vercel** — root directory `web`.  
 **One-page setup:** [`FINAL_SETUP.md`](./NEW_SMART_ELIXIR/FINAL_SETUP.md)  
 **Netlify + Chrome install:** [`NEW_SMART_ELIXIR/NETLIFY_INSTALL_GUIDE.md`](./NEW_SMART_ELIXIR/NETLIFY_INSTALL_GUIDE.md)

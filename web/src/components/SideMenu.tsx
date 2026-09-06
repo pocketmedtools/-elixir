@@ -10,7 +10,7 @@ import {
 import ToolIcon, { TOOL_TEXT } from "./ToolIcon";
 
 export type MenuTarget =
-  | "home" | "pedDose" | "growth" | "bp" | "bmi" | "crCl" | "regimen" | "icu" | "insulin" | "ob" | "saved" | "report";
+  | "home" | "pedDose" | "growth" | "bp" | "bmi" | "crCl" | "regimen" | "icu" | "insulin" | "ob" | "study" | "saved" | "report";
 
 const LINK_GROUPS: {
   heading: string | null;
@@ -36,6 +36,10 @@ const LINK_GROUPS: {
     ],
   },
   { heading: "OBG", links: [{ id: "ob", label: "OB / EDD" }] },
+  {
+    heading: "Exam preparation",
+    links: [{ id: "study", label: "FM Study" }],
+  },
   {
     heading: null,
     links: [
