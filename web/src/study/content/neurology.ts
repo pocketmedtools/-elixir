@@ -1541,3 +1541,494 @@ topics.push({
     "Indian Academy of Neurology guidelines on secondary prevention of stroke, 2022",
   ],
 });
+
+const cases: ClinicalCase[] = [
+  {
+    id: "neurology-case-1",
+    title: "Left hemiparesis of 2 days in a 62-year-old hypertensive diabetic - right middle cerebral artery territory ischaemic stroke",
+    kind: "long",
+    subjectId: "neurology",
+    opening:
+      "A 62-year-old retired schoolteacher from a taluk town, a known hypertensive for 12 years and type 2 diabetic for 9 years on irregular treatment, and a smoker of 20 beedis a day for 40 years, presents with weakness of the left arm and leg noticed on waking 2 days ago, with deviation of the angle of the mouth to the right and slurring of speech, without headache, vomiting, seizure or loss of consciousness.",
+    minutes: 30,
+    frequency: "core",
+    sections: [
+      {
+        heading: "How to open the presentation",
+        points: [
+          "Give the identifying data, the risk factors and the presenting complaint with its exact timing in one breath, because in stroke the time of onset and the time last known to be well are the two facts on which the whole management turns.",
+          "Say: 'Mr X, a 62-year-old retired schoolteacher, a known hypertensive for 12 years and type 2 diabetic for 9 years on irregular treatment, and a current beedi smoker, was last seen well at 10 pm two nights ago and woke at 6 am the next morning unable to lift his left arm or stand on his left leg, with deviation of the mouth to the right and slurred speech.'",
+          "State the relevant negatives immediately after the complaint: no headache, no vomiting, no seizure, no loss of consciousness, no neck pain, no fever, no recent head injury, no chest pain or palpitations, and no previous transient episodes of weakness, numbness or visual loss.",
+          "Mention in the opening what happened between onset and arrival - that he was carried to a private nursing home 8 hours after waking, had a CT scan reported as normal, was given aspirin and antihypertensives, and was referred here on day 2 - because the examiner will judge the delay and every decision made in it.",
+          "Close the opening with the functional state now: he cannot walk without two people supporting him, needs help to eat and dress, has not choked on food or water since the onset, and has passed urine normally.",
+        ],
+      },
+      {
+        heading: "History of the presenting illness - onset, course and the negatives that matter",
+        points: [
+          "Establish the tempo precisely: the deficit was maximal on waking and has neither worsened nor improved over 48 hours, which fits a completed ischaemic stroke and argues against the progressive course of a tumour, subdural haematoma or an expanding haemorrhage.",
+          "Characterise the weakness limb by limb: the left arm is weaker than the leg, the hand is worse than the shoulder, the face is involved on the same side as the limbs, and the patient noticed that the left hand feels heavy and numb - a cortical or capsular pattern rather than a spinal one.",
+          "Ask directly for cortical symptoms that localise the lesion: does he ignore the left side of his body or bump into things on the left, is there loss of the left half of the visual field, is his speech slurred (dysarthria) or is he unable to find words (aphasia, which would be unexpected in a right-hemisphere lesion in a right-handed man)?",
+          "Search for the warning events the family has not thought worth mentioning: transient weakness or numbness of a limb, a curtain coming down over one eye, brief slurring of speech or a fall in the preceding months, any of which would have been a transient ischaemic attack that was missed.",
+          "Ask about symptoms of the alternative mechanisms: palpitations or a known irregular heartbeat pointing to atrial fibrillation, chest pain or breathlessness pointing to a recent infarction, neck pain or a recent neck manipulation pointing to dissection, and drenching sweats or missed meals pointing to hypoglycaemia in a man on a sulfonylurea.",
+          "Document swallowing, speech intelligibility, bladder and bowel function, and whether he has had any fall, choking episode or breathlessness since the onset, since aspiration pneumonia, urinary retention and venous thrombosis are the complications that kill in the first fortnight.",
+        ],
+      },
+      {
+        heading: "Risk-factor work-up presented as a table",
+        points: [
+          "Present the vascular risk factors as a table with four columns - factor, duration, control and evidence of end-organ damage - because the examiner is marking the completeness of the work-up as much as the diagnosis, and a table makes the gaps impossible to hide.",
+          "Hypertension: 12 years, diagnosed at a camp, treated with amlodipine 5 mg taken on most days, no home readings, last clinic reading a month ago 170/100 mmHg; enquire about previous nosebleeds, breathlessness, ankle swelling and any earlier stroke or TIA, and record the fundus and the ECG as the end-organ markers.",
+          "Diabetes: 9 years, on metformin 500 mg twice daily and glimepiride 2 mg once daily, no HbA1c ever done, fasting sugars of 180-220 mg/dL when checked, with burning feet for a year and a healed foot ulcer 2 years ago; the end-organ markers are the retinopathy on fundoscopy, the monofilament and vibration sense in the feet, and the urine albumin.",
+          "Tobacco: 20 beedis a day for 40 years, which is 40 pack-year equivalents; alcohol as 90 mL of arrack most evenings; no physical activity beyond walking to the market; diet with rice thrice a day, pickle at every meal and salt added at the table.",
+          "Lipids and the vascular bed elsewhere: no lipid profile has ever been done; no history of angina, claudication or erectile dysfunction, all of which are surrogates for atherosclerosis at other sites; the carotid bruit and the peripheral pulses on examination belong in this row of the table.",
+          "Cardiac sources of embolism and the family: no known rheumatic heart disease, no palpitations, no previous myocardial infarction; father died of a stroke at 65, one brother has diabetes and hypertension - a family history that makes screening of the children part of the management.",
+        ],
+      },
+      {
+        heading: "Past, drug, personal and socio-economic history",
+        points: [
+          "List every drug with its dose, frequency, who prescribed it and how regularly it is actually taken; a difference between the prescription and the intake is usually the single most important precipitant and is found only by asking the wife to bring the strips.",
+          "Ask about drugs that matter for stroke: any antiplatelet or anticoagulant, NSAIDs for joint pain bought over the counter, steroids in indigenous preparations that raise blood pressure and sugar, and any recent stoppage of antihypertensives.",
+          "Record previous hospital admissions, any surgery, any transfusion, and any history of tuberculosis or jaundice, and specifically any previous head injury or fall in the last 3 months that would raise the possibility of a chronic subdural haematoma.",
+          "Socio-economic details decide what is possible: a pension of a fixed amount, a wife who is herself hypertensive, a son in the city, a two-storey house with the bedroom upstairs, a squat toilet, and 40 km to the nearest physiotherapist - each of these becomes an item in the rehabilitation plan.",
+          "Ask what the family believes caused the stroke, what they expect from treatment and whether they have already consulted a traditional healer or started an oil massage, because the counselling that follows must start from where they are.",
+        ],
+      },
+      {
+        heading: "General and neurological examination to demonstrate",
+        points: [
+          "General survey: conscious and oriented, a right-handed man with a BMI of 27 kg/m2 and a waist of 98 cm, pulse 84 per minute and regular in rate and rhythm with all peripheral pulses palpable, blood pressure 168/96 mmHg in the right arm and 164/94 in the left, afebrile, no pallor, no carotid bruit on either side, no xanthelasma and no neck stiffness.",
+          "Higher functions: alert, attentive, oriented in time, place and person, with fluent speech, intact comprehension, naming and repetition, and a mild flaccid dysarthria; test specifically for left-sided neglect by double simultaneous stimulation, line bisection and asking him to draw a clock, and for anosognosia by asking what is wrong with his left hand.",
+          "Cranial nerves: visual acuity and fields by confrontation normal in all quadrants, pupils equal and reacting, full extra-ocular movements with no gaze preference, a left upper motor neuron facial weakness sparing the forehead, tongue midline, and a normal gag - and say that you tested the gag but rely on a formal swallow screen.",
+          "Motor system: normal bulk, tone reduced in the left arm and increasing in the left leg on day 2, power 2/5 at the left shoulder and elbow, 1/5 in the left hand grip, 3/5 at the left hip and knee and 2/5 at the ankle, with 5/5 on the right; left pronator drift and a positive left arm and leg drift.",
+          "Reflexes: left biceps, triceps, supinator, knee and ankle jerks brisker than the right, left plantar extensor with a positive Hoffmann sign, right plantar flexor, and no clonus yet; sensation reduced to pin-prick and light touch over the left face, arm and leg with impaired joint position sense in the left fingers and toes.",
+          "Cerebellar signs cannot be assessed on the weak side and are normal on the right; gait cannot be tested safely; complete the examination with the fundus (grade 2 hypertensive changes and scattered dot haemorrhages of non-proliferative diabetic retinopathy), the feet (loss of monofilament sensation at three sites bilaterally) and the cardiovascular system (normal heart sounds, no murmur, no signs of failure).",
+        ],
+      },
+      {
+        heading: "Localising the lesion and grading the deficit before the summary",
+        points: [
+          "Put the findings together aloud: a left upper motor neuron facial weakness with left arm-predominant hemiparesis, left hemisensory loss including cortical modalities, and visual and spatial neglect, all without aphasia in a right-handed man, localise to the right cerebral hemisphere in the territory of the right middle cerebral artery, involving the cortex and not merely the internal capsule.",
+          "Explain why it is not lacunar: a pure motor hemiparesis affecting face, arm and leg equally with no sensory or cortical signs would be a capsular lacune; the presence of cortical sensory loss and neglect makes a larger cortical or subcortical infarct from a branch or trunk occlusion more likely.",
+          "Grade the deficit with the NIH Stroke Scale and give the number - for this patient about 11 (facial palsy 2, left arm 3, left leg 2, sensory 1, dysarthria 1, extinction and inattention 2) - and give the pre-stroke and current modified Rankin Scale (0 and 4 respectively).",
+          "State the mechanism you favour and why: in a hypertensive, diabetic smoker with no atrial fibrillation on examination and no cardiac history, large-artery atherosclerosis of the carotid or intracranial middle cerebral artery is the likeliest cause, with a cardioembolic source to be excluded by rhythm monitoring and echocardiography.",
+          "Only then give the summary statement, in one sentence, so that the examiner hears a diagnosis that has been reasoned to rather than announced.",
+        ],
+      },
+    ],
+    summaryStatement:
+      "This is a 62-year-old right-handed retired schoolteacher, a poorly controlled hypertensive for 12 years and type 2 diabetic for 9 years with retinopathy and peripheral neuropathy, and a heavy beedi smoker, who presents with a sudden-onset, non-progressive left upper motor neuron facial weakness and left arm-predominant hemiparesis with hemisensory loss, cortical sensory impairment and left-sided neglect, noticed on waking 2 days ago, without headache, vomiting, seizure or altered consciousness, and with a normal CT on day 1, a regular pulse and no carotid bruit - a clinical picture of an acute ischaemic stroke in the territory of the right middle cerebral artery, most probably due to large-artery atherosclerosis, with an NIHSS of about 11 and a current modified Rankin Scale of 4, outside the window for reperfusion therapy and now in the phase of secondary prevention and rehabilitation.",
+    differential: [
+      {
+        diagnosis: "Acute ischaemic stroke in the right middle cerebral artery territory from large-artery atherosclerosis",
+        forIt:
+          "Sudden onset with a deficit maximal at onset, a cortical pattern of left hemiparesis with neglect and cortical sensory loss, a normal early CT, and every major risk factor for atherosclerosis in a man of 62.",
+        againstIt:
+          "Nothing clinically, but the mechanism cannot be confirmed at the bedside; a cardioembolic source is found in about a fifth of such patients on monitoring and echocardiography, and the infarct and the vessel must be shown on imaging.",
+      },
+      {
+        diagnosis: "Hypertensive intracerebral haemorrhage in the right putamen or internal capsule",
+        forIt:
+          "A poorly controlled hypertensive with a blood pressure of 168/96 on day 2; a deep haemorrhage produces exactly this hemiparesis with hemisensory loss.",
+        againstIt:
+          "No headache, vomiting or depression of consciousness at onset, no progression over hours, and a CT on day 1 reported as normal - haemorrhage is never missed by CT in the first 24 hours, so this is excluded provided the film is seen and confirmed.",
+      },
+      {
+        diagnosis: "Chronic subdural haematoma or an intracranial tumour",
+        forIt:
+          "Age over 60, and the deficit was noticed on waking so its true onset is uncertain; both can present with a hemiparesis that the family perceives as sudden.",
+        againstIt:
+          "No head injury, no anticoagulant use, no headache or drowsiness, no fluctuation of the deficit and no progression over 48 hours, and the CT was normal; a subdural or a tumour would have been seen, though a small isodense subdural can be missed and an MRI settles any doubt.",
+      },
+      {
+        diagnosis: "Stroke mimic - hypoglycaemia, Todd's paresis or hemiplegic migraine",
+        forIt:
+          "A diabetic on glimepiride who woke with a deficit, and a seizure in sleep with a post-ictal paresis could have gone unwitnessed.",
+        againstIt:
+          "The deficit has persisted unchanged for 48 hours with a normal capillary glucose, there is no tongue bite, incontinence or history of seizures, no headache, and cortical sensory loss with neglect is not a feature of hypoglycaemia or Todd's paresis.",
+      },
+    ],
+    investigations: [
+      {
+        test: "Capillary blood glucose at first contact, then fasting and post-prandial glucose and HbA1c",
+        why: "Hypoglycaemia is the commonest treatable stroke mimic and must be excluded before anything else; HbA1c defines the diabetes control that the secondary prevention plan must correct.",
+        expected:
+          "Capillary glucose 210 mg/dL at presentation; HbA1c around 9.5%, confirming long-standing poor control rather than stress hyperglycaemia.",
+      },
+      {
+        test: "Non-contrast CT scan of the head, reviewed personally, and repeated or replaced by MRI with diffusion-weighted imaging if the first film was normal",
+        why: "CT excludes haemorrhage and a mass lesion at once but is normal in up to half of ischaemic strokes in the first 24 hours; diffusion-weighted MRI shows the infarct within minutes of onset and defines its size and territory.",
+        expected:
+          "CT on day 2 showing a hypodense area in the right insular cortex and frontoparietal operculum with loss of grey-white differentiation and no haemorrhagic transformation; MRI diffusion restriction in the right middle cerebral artery territory, sparing the basal ganglia.",
+      },
+      {
+        test: "12-lead ECG at admission and continuous or Holter rhythm monitoring for at least 24-72 hours",
+        why: "To look for atrial fibrillation, which changes the antithrombotic from an antiplatelet to an anticoagulant, and for a recent or old myocardial infarction and left ventricular hypertrophy as markers of end-organ damage.",
+        expected:
+          "Sinus rhythm with left ventricular hypertrophy by voltage criteria and a strain pattern; no paroxysmal atrial fibrillation on 24 hours of monitoring, which does not exclude it and justifies longer monitoring if the stroke is cortical and no other cause is found.",
+      },
+      {
+        test: "Fasting lipid profile, complete blood count, renal function with electrolytes, liver function tests, urine albumin-to-creatinine ratio and ESR",
+        why: "The lipid profile sets the statin baseline, the creatinine and potassium decide the choice and dose of antihypertensive and of metformin, the albuminuria stages the diabetic kidney, the blood count excludes polycythaemia and thrombocytosis, and the ESR screens for vasculitis and endocarditis.",
+        expected:
+          "LDL cholesterol 140 mg/dL, triglycerides 210 mg/dL, HDL 34 mg/dL; haemoglobin 13.5 g/dL, creatinine 1.1 mg/dL with an eGFR of about 70 mL/min, potassium 4.2 mmol/L, urine albumin-to-creatinine ratio 80 mg/g (moderately increased), ESR 18 mm in the first hour.",
+      },
+      {
+        test: "Carotid and vertebral duplex ultrasonography, followed by CT or MR angiography of the neck and intracranial vessels if a stenosis is found",
+        why: "A symptomatic internal carotid stenosis of 70-99% on the side of the stroke is an indication for endarterectomy within 2 weeks, and intracranial atherosclerosis, common in Indian patients, changes the intensity of medical treatment.",
+        expected:
+          "Right internal carotid stenosis of 50-60% with a heterogeneous plaque and a peak systolic velocity of 150-200 cm/s, left carotid with intimal thickening only; angiography confirming the degree of stenosis and showing a patent right middle cerebral artery.",
+      },
+      {
+        test: "Transthoracic echocardiography, with transoesophageal echocardiography reserved for a cortical infarct with no cause found",
+        why: "To look for a cardiac source of embolism - a dilated left atrium, mitral stenosis, a left ventricular thrombus or an akinetic segment, valvular vegetations - and to document the left ventricular hypertrophy and function that stage the hypertension.",
+        expected:
+          "Concentric left ventricular hypertrophy with an ejection fraction of 58%, grade 1 diastolic dysfunction, a normal-sized left atrium, no thrombus, no valvular lesion and no regional wall motion abnormality.",
+      },
+      {
+        test: "Bedside swallow screen at admission, chest radiograph, and a fundus and foot examination recorded as part of the diabetic assessment",
+        why: "Dysphagia is present in about half of hemispheric strokes and aspiration pneumonia is the commonest cause of death in the first week; the radiograph looks for aspiration and for the cardiomegaly of hypertension; the retinopathy and neuropathy define the diabetic complications that the examiner marks separately.",
+        expected:
+          "A passed water swallow test with no cough or wet voice, a chest film with a cardiothoracic ratio of 0.52 and clear lung fields, non-proliferative diabetic retinopathy with grade 2 hypertensive changes, and loss of protective sensation in both feet.",
+      },
+    ],
+    management: [
+      {
+        heading: "The acute phase on day 2 - what the family physician does now",
+        points: [
+          "He is outside the 4.5-hour window for intravenous thrombolysis and the 6-24 hour window for thrombectomy, so treatment is **aspirin 300 mg at once (once haemorrhage is excluded on CT) and then 75-150 mg daily**, with clopidogrel 75 mg substituted if aspirin is not tolerated; in a minor stroke (NIHSS 3 or less) presenting within 24 hours, dual therapy with clopidogrel for 21 days would have been given, but neither the severity nor the timing allows it here.",
+          "**Do not lower the blood pressure in the first 48-72 hours unless it exceeds 220/120 mmHg** (or 185/110 if reperfusion were planned) or there is heart failure, aortic dissection or hypertensive encephalopathy; the penumbra depends on perfusion pressure, and the antihypertensives given at the nursing home should be held and reintroduced after 72 hours.",
+          "Keep the blood glucose between 140 and 180 mg/dL with subcutaneous insulin if needed, avoid hypoglycaemia, keep the temperature below 37.5 C with paracetamol and treat any infection, and give oxygen only if saturation falls below 94% - the three physiological targets that protect the penumbra.",
+          "Nil by mouth until a bedside swallow screen is passed, then a soft diet with supervised feeding sitting upright; nasogastric feeding within 24 hours if the screen fails, with a speech-language reassessment before it is removed.",
+          "Prevent the complications that kill: 30 degrees head-up positioning, 2-hourly turning and a pressure-relieving mattress, intermittent pneumatic compression or, if unavailable, early mobilisation and hydration for venous thromboembolism (low-dose heparin from day 2 if immobile), a bladder scan rather than a routine catheter, and physiotherapy starting within 24-48 hours with the family taught the positioning of the affected shoulder.",
+          "Admit or refer to a centre with CT, monitoring and a physiotherapist under the district stroke pathway; the family physician's role before transfer is the glucose, the airway, the position, the swallow screen, the aspirin and the accurate documentation of the time of onset.",
+        ],
+      },
+      {
+        heading: "Secondary prevention - antithrombotic, statin and blood pressure",
+        points: [
+          "**Antiplatelet for life:** aspirin 75 mg daily or clopidogrel 75 mg daily; switch to a **DOAC or warfarin (INR 2-3)** only if atrial fibrillation or another cardioembolic source is found, starting about 4-14 days after a moderate stroke once haemorrhagic transformation has been excluded, and never combine long-term aspirin with an anticoagulant without a specific indication.",
+          "**High-intensity statin:** atorvastatin 40-80 mg at night regardless of the baseline LDL, targeting an **LDL below 70 mg/dL** (SPARCL reduced recurrent stroke by 16%, and the Treat Stroke to Target trial showed fewer events with a target below 70 than below 100), with ezetimibe 10 mg added if the target is not reached in 8-12 weeks; repeat the lipid profile at 3 months and liver enzymes only if symptomatic.",
+          "**Blood pressure:** reintroduce drugs after 72 hours aiming at **below 130/80 mmHg**, using a thiazide-like diuretic with an ACE inhibitor or ARB as the base (PROGRESS: perindopril with indapamide cut recurrent stroke by 43%), which also suits his albuminuria; amlodipine is added as the third agent, and a home monitor and a reading diary are prescribed like a drug.",
+          "**Carotid revascularisation:** a symptomatic stenosis of 70-99% needs endarterectomy within 2 weeks of the event, and 50-69% is considered case by case; at 50-60% on the symptomatic side he is referred to a vascular surgeon for a decision on the angiogram, and intensive medical therapy is continued whatever is decided.",
+          "Write the antithrombotic, the statin and the blood pressure drugs on one card in the local language with the reason for each, because at one year fewer than half of Indian stroke patients are still on all three, and adherence is the intervention with the largest effect size.",
+        ],
+      },
+      {
+        heading: "Diabetes, tobacco and lifestyle",
+        points: [
+          "Aim for an **HbA1c of about 7%** without hypoglycaemia: continue metformin (eGFR above 45), stop glimepiride while intake is uncertain and restart cautiously, and prefer an SGLT2 inhibitor or a GLP-1 receptor agonist as the add-on for their cardiovascular and renal benefit; pioglitazone reduces recurrent stroke in insulin-resistant patients (IRIS trial) but is avoided here because of weight gain and fluid retention with left ventricular hypertrophy.",
+          "**Complete cessation of beedis** is the single most effective lifestyle intervention, halving recurrent stroke risk within 2-5 years; offer brief advice at every visit, nicotine replacement or bupropion, and enrol him with the tobacco cessation service; the wife and son are asked to keep the house tobacco-free.",
+          "Salt to **under 5 g a day** - no pickle, papad or added salt at the table, the advice given to the person who cooks; a diet built on the family's own rice, vegetables, pulses and fish, with alcohol stopped for 3 months and then limited to nil or one drink, and a target weight loss of 5-7%.",
+          "Physical activity is prescribed as part of rehabilitation: assisted walking from the first week progressing to 30 minutes of walking on most days as recovery allows, with the physiotherapist setting the programme.",
+          "Screen the wife and the children for hypertension, diabetes and tobacco use at the same visit, because the family history and the shared diet make them the next patients.",
+        ],
+      },
+      {
+        heading: "Rehabilitation, complications and the family",
+        points: [
+          "Rehabilitation starts on day 1 and is task-oriented: correct positioning of the paralysed shoulder to prevent subluxation and pain, passive then active-assisted range of motion, sitting balance, transfers, standing and gait training with a quadripod stick and an ankle-foot orthosis if the foot drops, and hand function work with constraint-induced movement therapy once some extension returns.",
+          "Anticipate and treat the specific complications: spasticity (stretching, positioning, oral baclofen or botulinum toxin for a focal problem), shoulder pain, post-stroke depression in a third of patients (screen at 4-6 weeks with the PHQ-9 and treat with an SSRI), urinary incontinence, constipation, falls and pressure sores.",
+          "Dysphagia review and a speech-language therapist for the dysarthria; a home programme is written for the wife, who becomes the primary therapist, with pictures rather than text.",
+          "Counsel the family about the expected course: most motor recovery occurs in the first 3 months and continues to 6 months, the leg recovers more than the arm, and neglect tends to improve; set concrete goals such as walking indoors with a stick by 3 months and independent toileting.",
+          "Practical matters the family will not ask about: moving the bed downstairs, a commode chair, a rail in the bathroom, the disability certificate, a caregiver allowance if available, and a discussion about driving, which is not permitted for at least a month and not until a formal assessment.",
+        ],
+      },
+      {
+        heading: "Follow-up and the family physician's register",
+        points: [
+          "Review at 1 week after discharge, then monthly for 3 months and 3-monthly thereafter, each visit checking blood pressure, capillary glucose, adherence to the three drug classes, tobacco, mood, swallowing, the skin and the shoulder, and the functional goal set at the last visit.",
+          "Laboratory follow-up: lipid profile and liver enzymes at 3 months, HbA1c 3-monthly until stable then 6-monthly, creatinine and potassium 2 weeks after starting or increasing the ACE inhibitor and then annually, and an annual fundus, foot and urine albumin check.",
+          "Enter him in the practice non-communicable disease register and on the NP-NCD platform so that free drugs from the Health and Wellness Centre are not interrupted, and check that the PM-JAY card covers the carotid surgery if it is advised.",
+          "Teach the family the FAST message for recurrence and the address of the nearest thrombolysis-capable hospital, because the next event, if it comes, should reach a CT within the window that this one missed.",
+        ],
+      },
+    ],
+    viva: [
+      {
+        q: "Why was this patient not thrombolysed, and could anything have been done differently?",
+        a: "He woke with the deficit, so the time last known well was 10 pm, 8 hours before he was found and 16 hours before he reached a hospital - outside the 4.5-hour window for alteplase or tenecteplase. Wake-up stroke can be treated within 4.5 hours of waking if MRI shows a diffusion-FLAIR mismatch (WAKE-UP trial), and thrombectomy can be offered up to 24 hours with a large-vessel occlusion and a favourable perfusion study (DAWN and DEFUSE-3), but neither was available and he arrived too late for both. The lesson is that the family did not recognise the signs and went to a centre without a stroke pathway; the FAST message and knowing where the nearest CT is are the two things that would have changed the outcome.",
+      },
+      {
+        q: "How do you decide clinically whether this is a cortical or a lacunar stroke, and why does it matter?",
+        a: "A lacunar syndrome is a pure motor hemiparesis, a pure sensory stroke, a sensorimotor stroke, ataxic hemiparesis or dysarthria-clumsy hand, with no cortical signs. The presence of neglect, cortical sensory loss, a visual field defect, aphasia or a gaze preference indicates cortical involvement. It matters because a lacune is small-vessel disease and needs only medical treatment, whereas a cortical infarct points to large-artery atherosclerosis or embolism from the heart, so the carotids and the heart must be studied and the treatment may include endarterectomy or anticoagulation.",
+      },
+      {
+        q: "What is your blood pressure target after a stroke and when do you start treating?",
+        a: "In the first 48-72 hours, permissive hypertension: treat only above 220/120 mmHg, or above 185/110 if reperfusion therapy is planned, and lower gently by not more than 15% in 24 hours. After 72 hours, or at discharge in a stable patient, start long-term treatment aiming for below 130/80 mmHg. The preferred regimen is a thiazide-like diuretic with an ACE inhibitor or ARB, from the PROGRESS trial, adding a calcium channel blocker as needed; the lower target applies unless the patient has a bilateral severe carotid stenosis, where 140/90 is safer until the carotid is treated.",
+      },
+      {
+        q: "Which antiplatelet, at what dose, and is there a role for dual antiplatelet therapy here?",
+        a: "Aspirin 300 mg as a loading dose within 48 hours once haemorrhage is excluded, then aspirin 75-150 mg daily or clopidogrel 75 mg daily indefinitely. Dual antiplatelet therapy with aspirin and clopidogrel for 21 days reduces early recurrence after a minor stroke (NIHSS 3 or less) or a high-risk TIA when started within 24 hours (CHANCE and POINT), and for 90 days after a stroke due to a symptomatic intracranial stenosis of 70-99% (SAMMPRIS). This patient has an NIHSS of 11 and presented at 48 hours, so dual therapy would add bleeding without benefit and he gets a single agent.",
+      },
+      {
+        q: "What statin dose will you use and what target will you aim for?",
+        a: "Atorvastatin 40-80 mg, or rosuvastatin 20 mg, started during the admission irrespective of the baseline LDL. The SPARCL trial showed that atorvastatin 80 mg reduced recurrent stroke by 16% and major cardiovascular events by 20%, and the Treat Stroke to Target trial showed that an LDL target below 70 mg/dL prevents more events than a target of 90-110. So the target is LDL below 70 mg/dL, with ezetimibe added if a maximal statin does not reach it. Statins are continued for life; the only reason to stop is intolerance, and a raised transaminase below three times normal is not one.",
+      },
+      {
+        q: "How would you screen this patient for dysphagia, and why does it matter so much?",
+        a: "Before anything is given by mouth, a bedside screen: the patient sits upright and alert, and is given a teaspoon of water three times and then a small glass of water while the examiner watches for coughing, choking, drooling, a wet or gurgling voice, or a fall in saturation. Any of these fails the screen and the patient stays nil by mouth with a nasogastric tube until a speech-language therapist assesses him. It matters because dysphagia occurs in about half of hemispheric strokes and aspiration pneumonia is the leading cause of death in the first week, and because the family will otherwise start feeding him as an act of care.",
+      },
+      {
+        q: "When is carotid endarterectomy indicated after a stroke and how soon should it be done?",
+        a: "For a symptomatic internal carotid stenosis of 70-99% on the side of a non-disabling stroke or TIA, endarterectomy reduces the 5-year risk of ipsilateral stroke by about 16% absolute (NASCET and ECST), and the benefit is greatest if surgery is done within 2 weeks of the event and falls sharply after 12 weeks. For 50-69% stenosis the benefit is smaller and is considered in men, in those with hemispheric rather than retinal symptoms, and with a low perioperative risk; below 50% there is no benefit. Near-occlusion and a disabling stroke are not operated on. Stenting is an alternative in younger patients or where the neck is hostile.",
+      },
+      {
+        q: "What will you tell the family about the prognosis and the chance of another stroke?",
+        a: "About 20-25% of patients with a stroke of this severity die within a year, mostly from complications in the first month, and of the survivors about half regain independence for basic activities. Recovery is fastest in the first 3 months and most of what will return has returned by 6 months; the leg recovers better than the hand. The risk of another stroke is highest in the first weeks - around 10% in the first year without treatment - and is more than halved by taking the antiplatelet, the statin and the blood pressure drugs every day, stopping beedis and controlling the diabetes. The family should know the FAST signs and the nearest hospital with CT, and should reach it within an hour of any new symptom.",
+      },
+    ],
+    pitfalls: [
+      "Presenting the deficit without checking and stating the capillary glucose, which is the first act in any patient with a focal deficit and is asked about in almost every stroke viva.",
+      "Lowering the blood pressure aggressively in the first 72 hours because the reading looks alarming; permissive hypertension protects the penumbra and the examiner will ask for the threshold and the target by number.",
+      "Giving aspirin, or an injection into the muscle, before haemorrhage has been excluded on CT, or accepting a report of a normal CT without asking to see the film and its timing.",
+      "Allowing feeding before a swallow screen, and forgetting the pressure areas, the bladder and the paralysed shoulder in the management plan - the complications that decide survival in the first fortnight.",
+      "Describing the weakness without localising it - the examiner wants to hear cortical versus lacunar and right middle cerebral artery territory, with the NIHSS and modified Rankin Scale as numbers.",
+      "Leaving the risk-factor work-up incomplete: no lipid profile, no carotid Doppler, no rhythm monitoring or echocardiogram, so that the secondary prevention plan has no evidence base and the carotid that needs surgery is never found.",
+    ],
+    references: [
+      "AHA/ASA Guidelines for the Early Management of Patients with Acute Ischemic Stroke, 2019 update",
+      "AHA/ASA Guideline for the Prevention of Stroke in Patients with Stroke and Transient Ischemic Attack, 2021",
+      "NICE Guideline NG128, Stroke and transient ischaemic attack in over 16s: diagnosis and initial management, updated 2022",
+      "Indian Academy of Neurology guidelines on secondary prevention of stroke, 2022",
+      "SPARCL trial (atorvastatin after stroke or TIA), NEJM 2006; Treat Stroke to Target trial, NEJM 2020",
+      "PROGRESS Collaborative Group, perindopril-based blood pressure lowering after stroke, Lancet 2001",
+      "CHANCE and POINT trials of dual antiplatelet therapy after minor stroke and high-risk TIA, NEJM 2013 and 2018",
+      "Harrison's Principles of Internal Medicine, 21st edition, 2022 - cerebrovascular diseases",
+      "Hutchison's Clinical Methods, 24th edition, 2018 - the nervous system",
+    ],
+  },
+  {
+    id: "neurology-case-2",
+    title: "Short case: acute unilateral facial weakness - examining and presenting a lower motor neuron facial palsy",
+    kind: "short",
+    subjectId: "neurology",
+    opening:
+      "A 34-year-old woman, a tailor with no known illness, presents with drooping of the right side of the face noticed on waking 3 days ago, inability to close the right eye, water dribbling from the right angle of the mouth when she drinks, and a dull ache behind the right ear that began the day before the weakness, with no limb weakness, no change in hearing, no rash and no fever.",
+    minutes: 15,
+    frequency: "core",
+    sections: [
+      {
+        heading: "The instruction and the first ten seconds - inspection at rest",
+        points: [
+          "The examiner will say 'examine this patient's face' or 'examine the cranial nerves'; before touching the patient, stand at the foot of the bed and describe what is seen at rest, because facial asymmetry is a diagnosis made by inspection and the marks for it are given in the first half minute.",
+          "At rest the right side of the face is smooth: the right forehead has lost its horizontal creases, the right palpebral fissure is wider than the left, the right nasolabial fold is flattened and the right angle of the mouth droops, and saliva has collected at the right corner.",
+          "Look for the clues to the cause while still inspecting: a vesicular rash on the pinna or in the external auditory meatus, a swelling over the parotid, a scar behind the ear, a hypopigmented anaesthetic patch on the face or arm that would suggest leprosy, and whether the eye is red or watering.",
+          "Ask the patient to speak and note that the labial consonants are slurred and that she covers her mouth with her hand - the functional consequences are part of the findings.",
+          "State the handedness and ask her to smile, and describe the asymmetry that appears: the left angle of the mouth is drawn up and the right does not move, so that the face deviates to the left.",
+        ],
+      },
+      {
+        heading: "Testing the muscles of facial expression in order, from above down",
+        points: [
+          "Ask her to look up and wrinkle the forehead: the left forehead furrows and the right stays smooth, and the right eyebrow cannot be raised - this is the finding that separates a lower motor neuron from an upper motor neuron lesion and it must be tested and stated first.",
+          "Ask her to close both eyes tightly against resistance: the left closes with the lashes buried, the right does not close fully, a 4 mm band of sclera remains visible, and as she tries the right eyeball rolls upwards and outwards - Bell's phenomenon, which is a normal synkinesis made visible by the failure of lid closure.",
+          "Ask her to show her teeth, blow out the cheeks against resistance and whistle: the right cheek cannot be puffed and air escapes from the right corner, the right side of the mouth does not retract, and she cannot purse the lips.",
+          "Ask her to tense the neck as if grimacing: the right platysma does not stand out; and demonstrate that emotional and volitional movements are equally lost, since a purely volitional weakness with preserved emotional smiling would point to a cortical lesion.",
+          "Grade the weakness on the House-Brackmann scale and give the number - here grade IV, moderately severe dysfunction with incomplete eye closure and obvious asymmetry at rest - so that recovery can be measured at the next visit.",
+        ],
+      },
+      {
+        heading: "Localising the lesion along the course of the nerve",
+        points: [
+          "Test taste on the anterior two-thirds of the tongue with salt and sugar on each side with the tongue protruded and held: loss on the right indicates that the lesion is proximal to the point where the chorda tympani leaves the nerve in the facial canal.",
+          "Ask about hyperacusis - whether ordinary sounds are unpleasantly loud in the right ear - which indicates involvement of the nerve to stapedius, proximal to its branch in the vertical part of the canal.",
+          "Ask about dryness of the right eye or, conversely, tearing; reduced lacrimation places the lesion at or proximal to the geniculate ganglion where the greater petrosal nerve leaves, whereas tearing is more often from lid failure and exposure.",
+          "Examine the external auditory canal and tympanic membrane with an otoscope, and the palate and pinna, for the vesicles of herpes zoster; palpate the parotid gland and the mastoid, and look behind the ear for the scar of mastoid surgery.",
+          "Present the conclusion of this step as a location, not a disease: an infranuclear lesion of the right facial nerve, proximal to the chorda tympani and the nerve to stapedius but with lacrimation preserved, placing it in the facial canal distal to the geniculate ganglion.",
+        ],
+      },
+      {
+        heading: "Excluding an upper motor neuron lesion and the neighbouring nerves",
+        points: [
+          "Say explicitly why this is not an upper motor neuron lesion: the forehead is involved, the weakness is equal for emotional and volitional movement, and there is no accompanying weakness of the arm or leg on the same side, no dysarthria beyond the labial slurring, and no hyperreflexia or extensor plantar on the right.",
+          "Examine the fifth nerve - facial sensation in the three divisions, the corneal reflex on both sides, and the masseters and pterygoids - because a lesion at the cerebellopontine angle involves the fifth nerve early and a lost corneal reflex on the affected side is the sign that changes the diagnosis.",
+          "Examine the sixth nerve for lateral rectus weakness and the eighth nerve with a whispered voice, Rinne and Weber tests: a pontine lesion involves the sixth nerve with the seventh, and an acoustic neuroma produces sensorineural deafness before facial weakness.",
+          "Test cerebellar function on the right - finger-nose, heel-shin, rapid alternating movements and gait - and examine the other side of the face carefully, since bilateral facial palsy is a different differential altogether: Guillain-Barre syndrome, sarcoidosis, Lyme disease, leprosy and HIV seroconversion.",
+          "Complete the screen with the limbs for weakness and reflexes, palpation of the ulnar and greater auricular nerves for thickening, and a general look for the lymphadenopathy, parotid enlargement or skin lesions that would point to a systemic cause.",
+        ],
+      },
+      {
+        heading: "The eye and the complications - what happens if this is neglected",
+        points: [
+          "Examine the right eye closely: the cornea should be clear and the conjunctiva white; a red eye, photophobia, a dull corneal reflection or a fluorescein-staining defect means exposure keratopathy, which is the one complication of a facial palsy that costs sight and the one the examiner expects the candidate to have thought of.",
+          "Ask about and look for the late sequelae that appear after 3-4 months in incompletely recovered palsies: synkinesis (the eye closes when she smiles or the mouth twitches when she blinks), tearing while eating (crocodile tears from misdirected regeneration), and hemifacial spasm or contracture that makes the affected side look tighter at rest.",
+          "Check that she can drink from a cup and retain food in the mouth, and ask about weight loss and embarrassment at work, since the functional and psychological burden is real and is part of the presentation.",
+          "Note the blood pressure and ask about polyuria and polydipsia, because diabetes and hypertension are associated with facial palsy and are found for the first time in a proportion of adults presenting with it.",
+        ],
+      },
+      {
+        heading: "Presenting the findings, then the diagnosis",
+        points: [
+          "Present the positive findings in the order they were found: 'On inspection there is asymmetry of the face at rest with loss of the right forehead creases, widening of the right palpebral fissure, flattening of the right nasolabial fold and drooping of the right angle of the mouth; on testing there is weakness of frontalis, orbicularis oculi with incomplete closure and a Bell's phenomenon, buccinator, orbicularis oris and platysma on the right, with loss of taste on the anterior two-thirds of the right side of the tongue and hyperacusis, and preserved lacrimation.'",
+          "Then give the significant negatives: 'The corneal reflex is present bilaterally, the fifth, sixth and eighth nerves are normal, there are no cerebellar signs, no long-tract signs, no vesicles in the ear or on the palate, no parotid swelling, no thickened nerves and no skin lesions, and the cornea is clear.'",
+          "Only now name the localisation and the diagnosis: 'These findings indicate a right lower motor neuron facial nerve palsy of infranuclear type, localised to the facial canal distal to the geniculate ganglion, House-Brackmann grade IV, and in the absence of any cause on examination the most likely diagnosis is idiopathic facial palsy - Bell's palsy - presenting on day 3.'",
+          "Offer, unasked, the two things you would do before she leaves: confirm that the eye is protected and check a capillary glucose, and say that the diagnosis is one of exclusion that will be revisited if recovery has not begun by 3 weeks.",
+        ],
+      },
+    ],
+    summaryStatement:
+      "This is a 34-year-old right-handed woman with no known illness who presents with a 3-day history of acute right-sided facial weakness preceded by retro-auricular pain, with on examination a right lower motor neuron facial palsy involving the forehead, incomplete eye closure with a Bell's phenomenon, loss of taste on the anterior two-thirds of the right tongue and hyperacusis with preserved lacrimation, House-Brackmann grade IV, with intact fifth, sixth and eighth cranial nerves, no cerebellar or long-tract signs, no vesicles, no parotid mass and a clear cornea - an infranuclear right facial nerve palsy most probably idiopathic in origin, presenting within the window in which corticosteroids improve the chance of complete recovery.",
+    differential: [
+      {
+        diagnosis: "Bell's palsy (idiopathic acute lower motor neuron facial palsy)",
+        forIt:
+          "Onset over 24-48 hours, preceding retro-auricular pain, an isolated unilateral lower motor neuron facial weakness with involvement of taste and stapedius, and a normal examination otherwise - the pattern that accounts for about 70% of all acute facial palsies.",
+        againstIt:
+          "It remains a diagnosis of exclusion; a progressive course over more than 3 weeks, no recovery by 3-4 months, recurrence on the same side, or any other cranial nerve sign would mean the label was wrong and imaging is required.",
+      },
+      {
+        diagnosis: "Ramsay Hunt syndrome (herpes zoster oticus)",
+        forIt:
+          "Ear pain preceding the palsy is typical, and the palsy in zoster is more severe and recovers less well, so it must be looked for in every case.",
+        againstIt:
+          "No vesicles on the pinna, in the external auditory canal or on the ipsilateral palate, no vertigo, tinnitus or hearing loss, and pain that is dull rather than burning; the rash can appear after the palsy, so the ear is re-examined at the next visit.",
+      },
+      {
+        diagnosis: "Suppurative otitis media, cholesteatoma or a parotid tumour",
+        forIt:
+          "Ear pain and facial weakness together in a country where chronic suppurative otitis media is common, and a malignant parotid tumour presents with facial weakness before a mass is obvious.",
+        againstIt:
+          "A normal tympanic membrane and canal with no discharge, no previous ear disease, no parotid mass or lymphadenopathy, and an acute rather than slowly progressive onset.",
+      },
+      {
+        diagnosis: "Cerebellopontine angle lesion, or a pontine stroke or demyelinating plaque",
+        forIt:
+          "Any lower motor neuron facial weakness can arise from the nucleus or from the nerve at the angle, and a young woman with a cranial nerve palsy raises multiple sclerosis.",
+        againstIt:
+          "No involvement of the fifth, sixth or eighth nerves, an intact corneal reflex, normal hearing, no cerebellar signs and no long-tract signs, and an acute complete onset rather than a progressive one; a pontine lesion would be expected to involve the sixth nerve or the corticospinal tract.",
+      },
+    ],
+    investigations: [
+      {
+        test: "Capillary blood glucose, fasting glucose and HbA1c, and blood pressure recorded at the first visit",
+        why: "Diabetes and hypertension are associated with facial palsy and are often undiagnosed; the result also decides how safely a course of prednisolone can be given and how closely the sugar must be watched during it.",
+        expected: "Normal in most patients; a fasting glucose above 126 mg/dL or an HbA1c of 6.5% or more diagnoses diabetes, which is then managed alongside the steroid course.",
+      },
+      {
+        test: "Complete blood count and ESR",
+        why: "To screen for the systemic causes when the presentation is atypical - sarcoidosis, lymphoma, HIV and other infections - and as a baseline before steroids.",
+        expected: "Normal in Bell's palsy; a markedly raised ESR, lymphopenia or an abnormal film shifts the diagnosis away from an idiopathic palsy.",
+      },
+      {
+        test: "Otoscopy and, where hearing or ear symptoms are present, pure-tone audiometry with tympanometry",
+        why: "To exclude middle ear disease and cholesteatoma and to document sensorineural loss, which would point to the cerebellopontine angle rather than the facial canal.",
+        expected: "A normal canal and tympanic membrane and normal hearing thresholds in Bell's palsy; a conductive loss suggests middle ear disease and a sensorineural loss suggests an acoustic neuroma.",
+      },
+      {
+        test: "Serology guided by the setting - HIV, and VZV or Lyme serology where the history or endemicity suggests them; slit-skin smear if leprosy is suspected",
+        why: "Facial palsy can be the presenting feature of HIV seroconversion and of neurological Lyme disease in endemic areas, and in India leprosy remains a cause of facial palsy, classically with lagophthalmos from a zygomatic branch lesion.",
+        expected: "Negative in Bell's palsy; a positive result changes the treatment entirely and the palsy is then managed as part of the systemic disease.",
+      },
+      {
+        test: "MRI of the brain and internal auditory meatus with gadolinium, reserved for atypical cases",
+        why: "Indicated if the palsy progresses beyond 3 weeks, fails to show any recovery by 3-4 months, recurs on the same side, is accompanied by other cranial nerve or cerebellar signs, or if a parotid mass is felt; routine imaging of a typical Bell's palsy is not required and shows only non-specific enhancement of the nerve.",
+        expected: "Normal or showing enhancement of the labyrinthine and geniculate segments in Bell's palsy; a cerebellopontine angle mass, a pontine lesion or a parotid tumour in the alternatives.",
+      },
+      {
+        test: "Electroneurography or nerve conduction study of the facial nerve at 10-14 days in a complete palsy",
+        why: "In a complete (House-Brackmann VI) palsy, a compound muscle action potential reduced by more than 90% compared with the normal side by day 14 predicts poor recovery and identifies the few patients in whom surgical decompression is debated.",
+        expected: "Amplitude preserved above 10% of the normal side in an incomplete palsy, indicating a good prognosis; not needed at all in a grade IV palsy that is already recovering.",
+      },
+    ],
+    management: [
+      {
+        heading: "Corticosteroids - the treatment that changes the outcome, given early",
+        points: [
+          "**Prednisolone 60 mg daily (1 mg/kg, maximum 60-80 mg) for 5 days, then tapered over the next 5 days**, or 25 mg twice daily for 10 days, started **within 72 hours of onset**; the Scottish and Scandinavian trials showed complete recovery in about 94% with prednisolone against 82% without, and the benefit is lost if treatment starts late.",
+          "Steroids are given even in diabetes and hypertension, with capillary glucose checked daily and the antihypertensive continued; in pregnancy prednisolone is safe and is used because the palsy is more severe in the third trimester; avoid in active peptic ulcer, uncontrolled infection and untreated tuberculosis.",
+          "Explain that steroids increase the chance of a full recovery but that most patients begin to improve within 3 weeks with or without them, so that the family neither expects an overnight cure nor blames the tablets for a slow course.",
+          "There is no place for vitamin B12 injections, physiotherapy with electrical stimulation, or the indigenous oil massages commonly used; they cost money and delay the eye care.",
+        ],
+      },
+      {
+        heading: "Antivirals - a limited, defined role",
+        points: [
+          "Aciclovir or valaciclovir alone is no better than placebo; **added to prednisolone, valaciclovir 1 g three times daily for 7 days** gives a small additional benefit in severe or complete palsies (House-Brackmann V-VI) and may be offered in those, but not routinely in a grade IV palsy.",
+          "In Ramsay Hunt syndrome antivirals are mandatory: **aciclovir 800 mg five times daily (or valaciclovir 1 g three times daily) for 7 days with prednisolone**, started as early as possible, because recovery is poorer than in Bell's palsy and the risk of postherpetic neuralgia is real.",
+          "Antivirals are also given if vesicles appear after treatment has started, which is why the ear and palate are re-examined at every visit in the first week.",
+        ],
+      },
+      {
+        heading: "Protecting the eye - the complication that must be prevented",
+        points: [
+          "**Artificial tears (carboxymethylcellulose or hypromellose) every 1-2 hours during the day and a lubricating ointment at night**, with the eyelid taped closed horizontally or an eye pad used during sleep, and sunglasses or protective glasses outdoors and while riding a two-wheeler.",
+          "Teach the patient to close the lid manually with a finger several times a day, to avoid dust and smoke, and to report a red or painful eye, photophobia or blurred vision the same day; any of these means exposure keratitis and needs fluorescein staining and an ophthalmologist.",
+          "In a complete palsy that is slow to recover, refer for a temporary tarsorrhaphy or an upper-lid gold weight before the cornea is damaged, not after.",
+        ],
+      },
+      {
+        heading: "Rehabilitation, follow-up and when to refer",
+        points: [
+          "Facial exercises in front of a mirror - raising the brow, closing the eye, smiling, puffing the cheeks - for 10 minutes three times a day once movement begins to return, with massage of the cheek; formal facial neuromuscular retraining helps synkinesis in slow recoveries, while electrical stimulation has no benefit and may worsen synkinesis.",
+          "Review at 1 week for the eye and the ear, at 3 weeks to confirm that recovery has begun, and at 3 months to grade the outcome; about 70-85% of all Bell's palsies and over 90% of incomplete palsies recover completely, most beginning to improve within 3 weeks and complete by 3-6 months.",
+          "Refer to neurology or ENT if there is no improvement by 3 weeks, if the palsy is complete and the electroneurography is unfavourable, if it recurs, or if any atypical feature appears; refer to ophthalmology for any corneal sign; late synkinesis and hemifacial spasm respond to botulinum toxin.",
+          "Advise on eating and drinking through the unaffected side with a straw, on returning to work at once with the eye protected, and reassure about the 7-10% chance of recurrence, which is higher in diabetes and in pregnancy and does not itself mean a sinister cause.",
+        ],
+      },
+    ],
+    viva: [
+      {
+        q: "How do you distinguish an upper from a lower motor neuron facial weakness, and why is the forehead spared in the former?",
+        a: "In a lower motor neuron lesion all the muscles on one side are weak, including frontalis and orbicularis oculi, so the forehead cannot be wrinkled and the eye cannot be closed. In an upper motor neuron lesion the lower face is weak but the forehead and eye closure are relatively spared, because the part of the facial nucleus supplying the upper face receives corticobulbar fibres from both hemispheres, whereas the lower face is supplied only from the opposite hemisphere. In addition, an upper motor neuron weakness is often worse for volitional than for emotional movement, and is usually accompanied by weakness of the arm or leg on the same side.",
+      },
+      {
+        q: "How do you localise a lower motor neuron facial palsy along the course of the nerve?",
+        a: "By the branches given off in sequence. Loss of lacrimation implies a lesion at or proximal to the geniculate ganglion, where the greater petrosal nerve leaves. Hyperacusis implies a lesion proximal to the nerve to stapedius in the vertical part of the facial canal. Loss of taste on the anterior two-thirds of the tongue implies a lesion proximal to the chorda tympani, which leaves 5-6 mm above the stylomastoid foramen. A lesion at or beyond the stylomastoid foramen, for example in the parotid, gives motor weakness alone with taste, hearing and lacrimation intact. Associated fifth, sixth or eighth nerve signs place the lesion in the pons or at the cerebellopontine angle.",
+      },
+      {
+        q: "What is Bell's phenomenon and what is its significance?",
+        a: "On attempted eye closure the eyeball rolls upwards and outwards so that the cornea disappears under the upper lid. It is a normal protective synkinesis present in most people, which becomes visible only when orbicularis oculi is too weak to close the lid. Its presence in a facial palsy is reassuring for the cornea, because the cornea is tucked under the lid during sleep; its absence, in the few people who lack it, means a higher risk of exposure keratopathy and calls for more aggressive eye protection.",
+      },
+      {
+        q: "What is the House-Brackmann grading and why record it?",
+        a: "A six-grade scale of facial nerve function: grade I is normal; II mild dysfunction with slight weakness on close inspection and complete eye closure; III moderate, with obvious but not disfiguring asymmetry, complete eye closure with effort and some synkinesis; IV moderately severe, with disfiguring asymmetry and incomplete eye closure; V severe, with barely perceptible movement and asymmetry at rest; and VI total paralysis. It is recorded at presentation and at each visit because it defines who needs an antiviral added, who needs electroneurography, and whether recovery is on course.",
+      },
+      {
+        q: "What are the causes of bilateral facial palsy?",
+        a: "Guillain-Barre syndrome is the commonest acute cause and must be sought by testing the limbs and reflexes; then sarcoidosis (Heerfordt syndrome with uveitis and parotitis), Lyme disease in endemic areas, HIV seroconversion, leprosy, diphtheria, bilateral Bell's palsy, Melkersson-Rosenthal syndrome, brainstem lesions, leukaemic or carcinomatous meningeal infiltration and basal skull fracture. Bilateral palsy is therefore never called idiopathic without investigation.",
+      },
+      {
+        q: "What is the evidence for steroids and antivirals in Bell's palsy?",
+        a: "Two large randomised trials - the Scottish Bell's Palsy trial (Sullivan, NEJM 2007) with prednisolone 25 mg twice daily for 10 days and the Scandinavian trial (Engstrom, Lancet Neurology 2008) with prednisolone 60 mg for 5 days tapering - showed that prednisolone started within 72 hours raised complete recovery at 9-12 months from about 82% to about 94%, with a number needed to treat of about 8. Aciclovir or valaciclovir alone had no benefit, and added to prednisolone gave no significant benefit overall, with a possible small gain in complete palsies. The American Academy of Neurology and the AAO-HNS guidelines therefore recommend steroids for all, and antivirals only as an addition in severe palsy.",
+      },
+      {
+        q: "Which patients with a facial palsy need imaging?",
+        a: "Those in whom the diagnosis of Bell's palsy cannot be sustained: a weakness that progresses beyond 3 weeks or is slowly progressive from the start, no sign of recovery by 3-4 months, recurrence on the same side, involvement of other cranial nerves or cerebellar or long-tract signs, a parotid mass, chronic ear disease, a history of malignancy, or a palsy confined to a single branch. MRI of the brain and internal auditory meatus with contrast is the study; a CT of the temporal bone is added if middle ear disease or a fracture is suspected.",
+      },
+      {
+        q: "What is the prognosis of Bell's palsy and what are the late complications?",
+        a: "About 70-85% recover completely; incomplete palsies recover completely in more than 90%, complete palsies in about 60%. Improvement usually begins within 3 weeks, and a palsy that has not started to improve by then has a worse outlook. Poor prognostic factors are a complete palsy, age over 60, diabetes, hypertension, severe pain, and a loss of more than 90% of the compound muscle action potential by day 14. Late complications of aberrant regeneration are synkinesis, crocodile tears, hemifacial spasm and contracture; recurrence occurs in about 7-10%.",
+      },
+    ],
+    pitfalls: [
+      "Naming Bell's palsy before the ear, the palate, the parotid and the other cranial nerves have been examined - it is a diagnosis of exclusion and the examiner is watching for the otoscope, the corneal reflex and the palpation of the parotid.",
+      "Calling forehead involvement an upper motor neuron sign, or the reverse; the forehead is the discriminating finding and it must be tested against resistance and stated first.",
+      "Testing the eye without looking at the cornea and without asking about redness and pain, and leaving the eye protection out of the management - the one complication that costs sight.",
+      "Starting steroids after the 72-hour window has passed without saying so, or prescribing an antiviral alone, or adding electrical stimulation, vitamins and massage as if they were treatment.",
+      "Testing taste and hearing carelessly - taste with the tongue withdrawn into the mouth, or hearing without the Rinne and Weber tests - so that the localisation offered is guesswork.",
+      "Forgetting the Indian differentials - leprosy, chronic suppurative otitis media and diabetes - and forgetting to examine the other side of the face, because a bilateral palsy is a different disease.",
+    ],
+    references: [
+      "American Academy of Neurology evidence-based guideline update: steroids and antivirals for Bell palsy, Neurology 2012",
+      "American Academy of Otolaryngology-Head and Neck Surgery Clinical Practice Guideline: Bell's Palsy, 2013",
+      "Sullivan FM et al., Early treatment with prednisolone or acyclovir in Bell's palsy, NEJM 2007",
+      "Engstrom M et al., Prednisolone and valaciclovir in Bell's palsy: a randomised, double-blind, placebo-controlled, multicentre trial, Lancet Neurology 2008",
+      "Hutchison's Clinical Methods, 24th edition, 2018 - the nervous system and the cranial nerves",
+      "Harrison's Principles of Internal Medicine, 21st edition, 2022 - trigeminal neuralgia, Bell's palsy and other cranial nerve disorders",
+    ],
+  },
+];
+
+const subject: Subject = {
+  id: "neurology",
+  title: "Neurology",
+  blurb: "Headache, stroke, seizures, vertigo, neuropathy, dementia and central nervous system infection.",
+  icon: "Brain",
+  papers: ["II"],
+  topics,
+  cases,
+};
+
+export default subject;

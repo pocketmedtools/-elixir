@@ -527,3 +527,493 @@ topics.push({
     "Standard Treatment Guidelines, Ophthalmology, Ministry of Health and Family Welfare, Government of India",
   ],
 });
+
+const cases: ClinicalCase[] = [
+  {
+    id: "eye-ent-case-1",
+    title: "Painful red eye in a 60-year-old woman with a hazy cornea and a mid-dilated pupil",
+    kind: "short",
+    subjectId: "eye-ent",
+    opening:
+      "This 60-year-old woman, whom I was asked to examine for a painful red right eye of one night's duration, has a visual acuity of counting fingers at 1 metre in the right eye and 6/9 in the left, a mixed congestion that is deepest at the limbus, a hazy steamy cornea through which iris detail is lost, a very shallow anterior chamber on oblique torch light, a vertically oval mid-dilated pupil that does not react to light, and a globe that is stony hard on digital tonometry compared with the left - findings which, with her headache, coloured haloes and vomiting, are those of acute angle-closure glaucoma of the right eye.",
+    minutes: 15,
+    frequency: "core",
+    sections: [
+      {
+        heading: "How to open the presentation",
+        points: [
+          "Give the identifying data, the single complaint with its duration, and the visual acuity of both eyes in the first sentence, because a short case on the red eye is marked on whether the candidate measured vision before touching the eye.",
+          "Say: 'This 60-year-old woman, a housewife who uses plus 3 dioptre reading glasses, developed severe pain in the right eye with headache on the same side, blurred vision with coloured rings around the lamp, and two episodes of vomiting, beginning at about 9 pm last night while she was watching television in a dark room.'",
+          "Add the relevant negatives in the same breath: no discharge, no grittiness, no injury, no contact lens, no previous eye surgery, no steroid or other eye drop used, and no similar but milder episodes that settled with sleep.",
+          "Then describe the eye finding by finding in the order you examined it, and name the diagnosis only after the last finding, so the examiner hears the differentiation being done rather than a label being announced.",
+          "Close the opening with the state of the fellow eye - vision 6/9, a white eye, a clear cornea, a normal round reacting pupil, but a shallow anterior chamber on oblique illumination - because the fellow eye is the evidence that the angle closure is primary.",
+        ],
+      },
+      {
+        heading: "The history to elicit in two minutes",
+        points: [
+          "Ask about the onset and the setting: a dark room, an evening cinema, prolonged reading or sewing under poor light, emotional upset, or a drug taken that day such as an antihistamine, a tricyclic antidepressant, an antispasmodic, nebulised ipratropium, or a dilating drop used at an eye camp.",
+          "Ask for the three symptoms that separate raised pressure from the other painful red eyes: coloured haloes around lights from corneal oedema, a headache that is felt in the brow and temple rather than in the eye alone, and nausea or vomiting from trigeminal-vagal stimulation.",
+          "Ask about earlier warning attacks - intermittent evening blurring with haloes and aching that cleared after sleeping, because sleep produces miosis and breaks a subacute attack - which the family often recalls only when asked.",
+          "Establish that she is hypermetropic: early or strong reading glasses, thick plus lenses, and small eyes on inspection; the short axial length and the enlarging lens of the seventh decade are the anatomy behind the attack.",
+          "Record the systemic history that will decide the first-aid drugs: asthma or chronic obstructive pulmonary disease and heart block for timolol, sulpha allergy and renal disease for acetazolamide, and cardiac failure for mannitol, and ask whether she is diabetic before glycerol is considered.",
+          "Ask whether any relative has had 'eye pressure' or a laser to the iris, because primary angle closure runs in families and the daughters will need a check.",
+        ],
+      },
+      {
+        heading: "The examination sequence to demonstrate",
+        points: [
+          "Measure and state the visual acuity in each eye with a Snellen chart or a near card, with pinhole, before any drop is instilled; counting fingers that does not improve with pinhole tells the examiner that the cornea or the nerve, not refraction, is at fault.",
+          "Inspect with a torch from the side and from the front: lid oedema and a watering eye, a mixed conjunctival and ciliary congestion with dilated episcleral veins, and a cornea that has lost its bright surface reflex and looks steamy or ground-glass, with the iris pattern blurred behind it.",
+          "Judge the depth of the anterior chamber with the oblique torch test - a light shone from the temporal side parallel to the iris throws the nasal half of the iris into shadow when the chamber is shallow - and then compare it with the fellow eye, which is the finding that makes the diagnosis primary.",
+          "Describe the pupil in three words - mid-dilated, vertically oval, fixed - and explain that the sphincter is ischaemic at pressures above 60 mmHg, so it neither constricts to light nor to the consensual reflex.",
+          "Perform digital tonometry with both index fingers through the closed upper lid while the patient looks down, comparing the two eyes, and say 'stony hard' only if the globe does not indent; then say that Schiotz or applanation tonometry would be done to record the actual pressure.",
+          "Stain with fluorescein to show that there is no ulcer or dendrite under the haze, look for a hypopyon and keratic precipitates with a magnifying loupe, and finish by testing the fellow eye in the same sequence and by checking the red reflex, which is dull on the affected side.",
+        ],
+      },
+      {
+        heading: "Describing the findings before naming the diagnosis",
+        points: [
+          "The examiner wants to hear four findings in order - reduced vision, ciliary congestion, a hazy cornea with a shallow chamber, and a mid-dilated fixed pupil with a hard globe - and then the sentence 'these findings together are those of acute angle-closure glaucoma'.",
+          "Reduced vision removes conjunctivitis, episcleritis and subconjunctival haemorrhage from consideration; ciliary congestion places the disease in the cornea, iris or ciliary body; the hazy cornea without a focal infiltrate or staining defect is epithelial oedema from pressure rather than an ulcer.",
+          "The shallow anterior chamber is the anatomical clue that the angle is closed, and it is the finding that separates this eye from an anterior uveitis, where the chamber is of normal depth and full of cells.",
+          "The mid-dilated pupil that does not react is the opposite of the small irregular synechial pupil of uveitis, and the stony hard globe is the opposite of the normal or soft eye of uveitis and keratitis.",
+          "Headache, vomiting and haloes are the systemic and symptomatic corroboration; say them last, because they are what mislead the emergency room into admitting the patient for gastritis or migraine.",
+          "State the diagnosis in full - acute primary angle-closure glaucoma of the right eye, pupillary-block type, with an occludable angle in the left eye - and immediately add that treatment must begin before referral, which is the point at which the case is won.",
+        ],
+      },
+      {
+        heading: "The bedside differentiation of the red eye",
+        points: [
+          "Against conjunctivitis: there is true pain rather than grittiness, no discharge, the vision is reduced, the congestion is deepest at the limbus rather than in the fornices, and the cornea and pupil are abnormal; conjunctivitis never produces any of these.",
+          "Against microbial keratitis: keratitis produces a focal white infiltrate with an overlying fluorescein-staining defect, a normal or small pupil and a normal tension, whereas here the haze is diffuse, nothing stains, the pupil is mid-dilated and the eye is hard.",
+          "Against acute anterior uveitis: uveitis gives marked photophobia with a small irregular pupil that is stuck to the lens, keratic precipitates and cells in a deep chamber, and a normal or low pressure; the vision is usually only mildly reduced and vomiting is absent.",
+          "Against scleritis: scleritis gives a deep violaceous tenderness that does not blanch with phenylephrine and wakes the patient, but the cornea, chamber, pupil and tension are normal unless it is complicated.",
+          "Against secondary angle closure: a swollen intumescent cataract with a deep fellow-eye chamber points to phacomorphic glaucoma; new vessels on the iris in a diabetic or after a retinal vein occlusion point to neovascular glaucoma; and recent topiramate use points to a drug-induced ciliochoroidal effusion, which is treated with cycloplegics and not with pilocarpine.",
+        ],
+      },
+      {
+        heading: "Immediate first aid before referral",
+        points: [
+          "Lay the patient supine, so that the lens falls back and the angle may open a little, and give an analgesic and an antiemetic at once, because straining and vomiting push the pressure higher and delay everything else.",
+          "Give acetazolamide 500 mg orally, or intravenously if she is vomiting, provided there is no sulpha allergy, sickle cell disease or significant renal impairment, and continue 250 mg six-hourly until the pressure is controlled.",
+          "Instil timolol 0.5% one drop, omitted in asthma, chronic obstructive pulmonary disease, bradycardia and heart block, brimonidine 0.2% one drop, and prednisolone acetate 1% every 15 to 30 minutes for four doses and then hourly to settle the iris inflammation.",
+          "Give pilocarpine 2% one drop every 15 minutes for two doses only when the pressure has begun to fall, because the ischaemic sphincter does not respond above about 40 to 50 mmHg and early pilocarpine can thicken the iris and worsen the block.",
+          "If the pressure is still very high after an hour, give mannitol 20% intravenously 1 to 2 g/kg over 30 to 45 minutes, or oral glycerol 50% 1 to 1.5 g/kg in a non-diabetic, with care in cardiac failure and renal disease.",
+          "Telephone the ophthalmologist and send her within hours, with a note of the drugs and times, for pressure confirmation, corneal indentation or paracentesis if needed, and laser peripheral iridotomy to the affected eye once the cornea clears and to the fellow eye prophylactically.",
+        ],
+      },
+      {
+        heading: "What to say about the fellow eye, prognosis and follow-up",
+        points: [
+          "The fellow eye has the same anatomy and carries a 40 to 80% risk of an attack within five to ten years, so prophylactic laser peripheral iridotomy is part of the treatment of this attack and not an optional extra.",
+          "Visual prognosis depends on the duration of the attack: sustained pressure above 50 mmHg for more than a day or two damages the optic nerve irreversibly, so the family is told plainly that the eye is being saved, not restored, if the presentation has been delayed.",
+          "After the attack, look for the signs the examiner may ask you to demonstrate later - glaukomflecken, which are grey-white anterior subcapsular lens opacities, sector iris atrophy with a spiral appearance, and a permanently semi-dilated pupil from sphincter damage.",
+          "Long-term follow-up is for chronic angle closure and peripheral anterior synechiae: pressure, disc and field checks at each visit, and lens extraction where cataract coexists, which deepens the chamber and is increasingly the definitive treatment.",
+          "Give the patient a written card stating that she has narrow angles, that mydriatic drops and anticholinergic, antihistamine and antidepressant drugs must be prescribed with care, and that first-degree relatives over 40 should have their anterior chambers examined.",
+        ],
+      },
+    ],
+    summaryStatement:
+      "This 60-year-old hypermetropic woman has an acute painful red right eye of one night's duration with vision reduced to counting fingers, a mixed congestion deepest at the limbus, a hazy oedematous cornea, a very shallow anterior chamber, a vertically oval mid-dilated pupil fixed to light and a stony hard globe, accompanied by ipsilateral headache, coloured haloes and vomiting, with a shallow chamber in the quiet fellow eye - the clinical picture of acute primary angle-closure glaucoma of the right eye with an occludable angle on the left, requiring pressure lowering in the clinic now and referral within hours for laser peripheral iridotomy to both eyes.",
+    differential: [
+      {
+        diagnosis: "Acute anterior uveitis",
+        forIt: "Unilateral painful red eye with ciliary congestion, photophobia and reduced vision in a patient of this age.",
+        againstIt: "The pupil in uveitis is small, irregular and sluggish from posterior synechiae, the cornea is clear apart from keratic precipitates, the chamber is deep and full of cells, and the tension is normal or low; haloes, vomiting and a stony hard globe do not occur.",
+      },
+      {
+        diagnosis: "Microbial keratitis",
+        forIt: "Severe pain, watering, ciliary congestion, corneal haze and reduced vision.",
+        againstIt: "There is no focal white infiltrate, nothing stains with fluorescein, there is no history of vegetable trauma, contact lens wear or steroid drops, the pupil is mid-dilated rather than normal, and the intraocular pressure is high rather than normal.",
+      },
+      {
+        diagnosis: "Phacomorphic or neovascular secondary angle closure",
+        forIt: "Raised pressure with a hazy cornea, a shallow chamber and a fixed pupil in an elderly patient.",
+        againstIt: "There is no intumescent white cataract, no new vessels on the iris, no diabetic retinopathy or previous retinal vein occlusion, and the fellow eye also has a shallow anterior chamber, which points to primary pupillary-block angle closure.",
+      },
+      {
+        diagnosis: "Migraine or cluster headache with a red watering eye",
+        forIt: "Unilateral headache with nausea, vomiting and a red watering eye of sudden onset in the evening.",
+        againstIt: "In migraine and cluster headache the vision is normal, the cornea is clear, the pupil is normal or small with a partial ptosis, and the globe is of normal tension; this patient has counting fingers vision, a hazy cornea, a mid-dilated fixed pupil and a hard eye.",
+      },
+    ],
+    investigations: [
+      {
+        test: "Visual acuity with pinhole in both eyes, recorded before any drop",
+        why: "It is the baseline against which recovery is judged and the single finding that separates the sight-threatening red eye from the benign one.",
+        expected: "Counting fingers at 1 metre in the right eye without pinhole improvement; 6/9 in the left improving to 6/6 with pinhole.",
+      },
+      {
+        test: "Tonometry - Schiotz in the clinic, Goldmann applanation at the referral centre",
+        why: "To confirm and quantify the pressure that digital tonometry has estimated, and to document the response to each drug.",
+        expected: "Intraocular pressure of 50 to 80 mmHg in the right eye and 12 to 20 mmHg in the left, falling below 30 mmHg within one to two hours of treatment.",
+      },
+      {
+        test: "Fluorescein staining under a blue light",
+        why: "To prove that the corneal haze is epithelial oedema and not an ulcer or a dendrite, which would change the whole treatment.",
+        expected: "No focal defect; at most a fine diffuse punctate uptake from oedematous epithelium.",
+      },
+      {
+        test: "Slit lamp examination with gonioscopy of both eyes once the cornea clears, with topical glycerine if needed",
+        why: "Gonioscopy is the definitive test for a closed angle and for peripheral anterior synechiae, and the fellow eye's angle decides whether its iridotomy is prophylactic or already overdue.",
+        expected: "A closed angle in the right eye with early peripheral anterior synechiae, corneal oedema, flare, a mid-dilated pupil and glaukomflecken; a narrow occludable angle (Shaffer grade 0 to 1, Van Herick grade 1) in the left.",
+      },
+      {
+        test: "Fundus and optic disc examination through a dilated pupil only after the attack has been broken",
+        why: "To document optic nerve damage and to exclude a retinal vein occlusion or diabetic retinopathy that would make the angle closure neovascular.",
+        expected: "A hyperaemic or oedematous disc in the acute phase; later pallor and cupping proportional to the duration of the attack; no venous occlusion or new vessels.",
+      },
+      {
+        test: "Blood glucose, serum electrolytes, urea and creatinine",
+        why: "Acetazolamide causes hypokalaemia and acidosis and accumulates in renal failure, mannitol is dangerous in renal and cardiac disease, and glycerol is unsafe in diabetes.",
+        expected: "Normal; potassium is rechecked if acetazolamide is continued beyond a day.",
+      },
+      {
+        test: "Anterior segment optical coherence tomography or ultrasound biomicroscopy where available",
+        why: "To measure the anterior chamber depth and to detect plateau iris or a forward-shifted lens, which change the choice between iridotomy and lens extraction.",
+        expected: "Central anterior chamber depth below 2 mm with iridotrabecular contact; a thick, anteriorly positioned lens.",
+      },
+    ],
+    management: [
+      {
+        heading: "Lowering the pressure in the clinic - the first hour",
+        points: [
+          "Supine position, oral or intramuscular analgesia and an antiemetic such as ondansetron; do not wait for any investigation before starting drugs.",
+          "**Acetazolamide 500 mg stat** orally or intravenously, then 250 mg six-hourly, unless sulpha allergy, sickle cell disease or renal failure forbids it.",
+          "**Timolol 0.5% one drop** (avoid in asthma, chronic obstructive pulmonary disease, bradycardia and heart block) and **brimonidine 0.2% one drop** to reduce aqueous production.",
+          "**Prednisolone acetate 1%** every 15 to 30 minutes for four doses then hourly to reduce iris inflammation and synechiae.",
+          "**Pilocarpine 2% one drop every 15 minutes for two doses, only once the pressure has begun to fall**; never as the first or the only drug.",
+          "**Mannitol 20% 1 to 2 g/kg intravenously over 30 to 45 minutes** if the pressure remains very high after an hour; oral glycerol 50% 1 to 1.5 g/kg is an alternative in a non-diabetic.",
+        ],
+      },
+      {
+        heading: "What not to do",
+        points: [
+          "No mydriatic or cycloplegic drop in either eye - atropine or tropicamide will deepen the block.",
+          "No topical anaesthetic for the journey home and no eye pad; the eye must be visible to the receiving doctor.",
+          "No delay for a CT of the head to explain the headache and vomiting once the pupil and the tension have been examined.",
+          "No pilocarpine in a suspected phacomorphic, malignant (aqueous misdirection) or topiramate-induced angle closure, where a miotic worsens the forward shift of the lens-iris diaphragm.",
+        ],
+      },
+      {
+        heading: "Referral and definitive treatment",
+        points: [
+          "Telephone referral to an ophthalmologist within hours, with a written note of every drug, dose and time, and the acuity and digital tension recorded.",
+          "At the centre: applanation tonometry, corneal indentation with a four-mirror gonioscopy lens or a cotton bud to force aqueous through the angle, and anterior chamber paracentesis if drugs fail.",
+          "**Nd:YAG laser peripheral iridotomy** to the affected eye once the cornea clears, usually within 24 to 48 hours, which bypasses the pupillary block and is the cure; surgical iridectomy if laser is impossible.",
+          "**Prophylactic laser peripheral iridotomy to the fellow eye** at the same sitting or within days.",
+          "Lens extraction where cataract coexists or the attack has been prolonged; trabeculectomy if extensive peripheral anterior synechiae leave the pressure uncontrolled.",
+        ],
+      },
+      {
+        heading: "Follow-up, counselling and the family",
+        points: [
+          "Pressure, disc and visual field at every visit for life, because chronic angle-closure glaucoma follows in a substantial minority even after iridotomy.",
+          "A written card: 'narrow angles - avoid mydriatics, anticholinergics, antihistamines, tricyclics and topiramate unless the iridotomy is patent', shown to every prescriber.",
+          "Warn that pain, haloes or blurring in either eye means returning the same day, and that the fellow-eye iridotomy must not be postponed.",
+          "Examine first-degree relatives over 40 for a shallow anterior chamber, and register the patient under the National Programme for Control of Blindness and Visual Impairment for free follow-up and surgery.",
+        ],
+      },
+    ],
+    viva: [
+      {
+        q: "Why is the pupil mid-dilated rather than fully dilated?",
+        a: "Pupillary block is greatest when the pupil is 4 to 5 mm - the iris is in maximal contact with the lens and its periphery is lax enough to bow forward and close the angle - and once the pressure exceeds about 60 mmHg the sphincter becomes ischaemic and freezes in that position, so the pupil is fixed in mid-dilatation and often vertically oval from sector ischaemia.",
+      },
+      {
+        q: "Why does she see coloured haloes and why does she vomit?",
+        a: "Raised pressure drives fluid into the corneal epithelium, and the oedematous cornea acts as a diffraction grating that splits light into rainbow rings - blue inside and red outside. The pain is carried by the ophthalmic division of the trigeminal nerve and its brainstem connections stimulate the vagus, producing nausea and vomiting, which is why the patient is often sent to a physician.",
+      },
+      {
+        q: "How do you assess the anterior chamber depth without a slit lamp?",
+        a: "By the oblique torch or eclipse test: a torch held at the temporal limbus and shone across the iris illuminates the whole iris when the chamber is deep, but throws the nasal iris into shadow when the iris is bowed forward. On a slit lamp the Van Herick method compares the peripheral chamber depth with corneal thickness, and grade 1 (less than a quarter of the corneal thickness) means an occludable angle.",
+      },
+      {
+        q: "Why is pilocarpine not the first drug, and when is it contraindicated altogether?",
+        a: "At very high pressures the iris sphincter is ischaemic and does not respond, and pilocarpine also shifts the lens-iris diaphragm forward and thickens the iris, so it is given only once acetazolamide and the aqueous suppressants have brought the pressure down to about 40 mmHg. It is contraindicated in phacomorphic glaucoma, malignant glaucoma and topiramate-induced angle closure, where cycloplegics are used instead.",
+      },
+      {
+        q: "What are the contraindications and adverse effects of acetazolamide and mannitol?",
+        a: "Acetazolamide is avoided in sulpha allergy, sickle cell disease, significant renal failure and hepatic cirrhosis, and causes paraesthesiae, hypokalaemia, metabolic acidosis, renal stones and rarely aplastic anaemia or Stevens-Johnson syndrome. Mannitol is avoided in cardiac failure, pulmonary oedema and renal failure, because the osmotic load expands the plasma volume before it diureses.",
+      },
+      {
+        q: "What is the definitive treatment and why must the other eye be treated?",
+        a: "Laser peripheral iridotomy, which creates a bypass for aqueous between the posterior and anterior chambers and abolishes the pupillary block. The fellow eye has the same short, crowded anatomy and a 40 to 80% chance of an attack in the next five to ten years, so a prophylactic iridotomy to it is part of the treatment of the first attack.",
+      },
+      {
+        q: "What signs would tell you months later that this eye has had an attack?",
+        a: "Glaukomflecken - grey-white anterior subcapsular lens opacities from lens epithelial necrosis, sector or spiral atrophy of the iris, a permanently semi-dilated pupil that reacts poorly, peripheral anterior synechiae on gonioscopy, and a pale cupped disc with a field defect if the attack was prolonged.",
+      },
+      {
+        q: "Which drugs used in family practice can precipitate an attack in a susceptible eye?",
+        a: "Anything that dilates the pupil or thickens the ciliary body: anticholinergics such as atropine, hyoscine and tricyclic antidepressants, antihistamines and decongestants, nebulised ipratropium and salbutamol in a leaking mask, sympathomimetics, mydriatic drops used at eye camps, and topiramate, which causes a ciliochoroidal effusion and a non-pupillary-block angle closure in both eyes.",
+      },
+    ],
+    pitfalls: [
+      "Naming the diagnosis before describing the vision, the congestion, the cornea, the chamber, the pupil and the tension in that order - the examiner marks the differentiation, not the label.",
+      "Examining the eye before recording the visual acuity, or instilling a drop before the acuity is written down.",
+      "Treating the headache and vomiting as gastritis or migraine and admitting the patient to a medical ward, which is how this diagnosis is missed and how the eye is lost.",
+      "Giving pilocarpine as the first or only drug and reviewing in the morning, or giving a mydriatic to examine the fundus of a hard hazy eye.",
+      "Forgetting the fellow eye - both its examination in the case and its prophylactic iridotomy in the management.",
+      "Not asking the drug contraindication questions before prescribing timolol, acetazolamide, mannitol or glycerol, which is what converts an eye emergency into a medical one.",
+    ],
+    references: [
+      "AK Khurana, Comprehensive Ophthalmology, 8th edition, 2022 - glaucoma and the red eye",
+      "Kanski's Clinical Ophthalmology, 9th edition, 2020 - primary angle-closure glaucoma",
+      "American Academy of Ophthalmology Preferred Practice Pattern, Primary Angle-Closure Disease, 2020",
+      "European Glaucoma Society Terminology and Guidelines for Glaucoma, 5th edition, 2020",
+      "Standard Treatment Guidelines, Ophthalmology, Ministry of Health and Family Welfare, Government of India",
+      "National Programme for Control of Blindness and Visual Impairment (NPCBVI) operational guidelines, MoHFW",
+    ],
+  },
+  {
+    id: "eye-ent-case-2",
+    title: "Viva on the ear: the discharging ear, the tuning forks and the deafness programme",
+    kind: "viva",
+    subjectId: "eye-ent",
+    opening:
+      "A 7-year-old boy is brought with a painless, profuse, odourless discharge from the left ear that has come and gone for three months since an episode of fever and earache a year ago that was treated with two days of syrup; his mother says he turns the television up and his teacher has moved him to the front bench. The examiner hands over an otoscope and a 512 Hz tuning fork and asks for the ear to be examined and then for a discussion of acute and chronic otitis media, the tuning fork tests, the discharging ear that is dangerous, and what the national programme offers this child.",
+    minutes: 10,
+    frequency: "core",
+    sections: [
+      {
+        heading: "The history to take before the otoscope is picked up",
+        points: [
+          "Characterise the discharge, because it classifies the disease before the drum is seen: profuse, mucoid or mucopurulent, odourless and worse with every cold or after a bath means tubotympanic disease, whereas scanty, foul-smelling and sometimes blood-stained means bone-eroding atticoantral disease.",
+          "Ask whether the ear hurts now - chronic suppurative otitis media is painless, so pain in a chronically discharging ear is a complication until proved otherwise - and ask for headache, fever, vomiting, giddiness, facial weakness and swelling behind the ear in the same breath.",
+          "Ask about the hearing in daily life: turning up the television, not responding when called from behind, the teacher's complaint, and speech that is loud or unclear, and ask which ear the mother thinks is worse.",
+          "Reconstruct the first episode: the fever and earache of acute otitis media, whether the ear discharged and for how long, what antibiotic was given and for how many days, and how many similar episodes have followed, because recurrent acute otitis media and an incompletely treated perforation are the road to chronic disease.",
+          "Ask the predisposing questions that also form the counselling: bottle feeding lying flat, a smoker in the house, recurrent colds and mouth breathing from adenoids, swimming in a pond, oil or home remedies poured into the ear, and whether immunisation including pneumococcal and Haemophilus influenzae type b vaccine is complete.",
+        ],
+      },
+      {
+        heading: "Otoscopy technique and the drum in acute otitis media",
+        points: [
+          "Sit the child on the mother's lap with one of her arms around his arms and the other holding his head against her chest, pull the pinna upwards and backwards in a child over three and downwards and backwards in an infant, and use the largest speculum that enters the canal comfortably, holding the otoscope like a pen with the little finger braced on the cheek.",
+          "Describe the normal drum first so that abnormality has a reference: a pearly grey translucent pars tensa, the handle and lateral process of the malleus, a cone of light running anteroinferiorly from the umbo, and the pars flaccida above the lateral process.",
+          "Acute otitis media runs through recognisable stages on the drum: tubal occlusion gives a retracted drum with a lost light reflex and a prominent foreshortened malleus; presuppuration gives a cartwheel of radial vessels along the malleus handle and then diffuse congestion; suppuration gives a bulging red or yellow drum with the landmarks lost and a tender mastoid.",
+          "If it perforates, the acute perforation is small and central, usually in the anteroinferior quadrant, with a pulsating 'lighthouse' discharge, and pain and fever settle at once; if it does not perforate and does not resolve, the stage of complication has begun.",
+          "Otitis media with effusion, the commonest cause of hearing loss in a school child, is a dull retracted amber or yellow drum with an air-fluid level or bubbles that does not move with pneumatic otoscopy, and it produces a 20 to 40 dB conductive loss without pain or discharge.",
+        ],
+      },
+      {
+        heading: "The drum in chronic suppurative otitis media - safe versus unsafe",
+        points: [
+          "In this child the drum shows a medium-sized central perforation of the pars tensa with a rim of drum all round it, a pale pink slightly oedematous middle ear mucosa seen through it, mucopurulent discharge that can be mopped away, and an intact malleus handle - the tubotympanic or safe type.",
+          "Describe a perforation by its site (central, attic or marginal), its size (small, medium, large or subtotal), its margins (smooth or with granulation), and what lies behind it (healthy mucosa, polyp, granulation or cholesteatoma), and always state whether the pars flaccida and the posterosuperior margin are intact.",
+          "Atticoantral or unsafe disease shows an attic perforation or a posterosuperior marginal perforation that reaches the annulus, with pearly white flakes of cholesteatoma, granulation tissue or a polyp, and a scanty foul discharge from bone destruction by anaerobes; it cannot be cured with drops and needs mastoid surgery.",
+          "The safe ear gives a conductive loss of 30 to 50 dB that is worse with larger and posterior perforations and with ossicular necrosis; the unsafe ear may hear paradoxically well while cholesteatoma bridges an eroded incus, so good hearing does not mean a safe ear.",
+          "Say what else is examined: the fellow ear, the nose and postnasal space for adenoids and a deviated septum, the throat and tonsils, the mastoid for tenderness and swelling, the facial nerve, the fistula test if there is giddiness, and the fundi if there is headache.",
+        ],
+      },
+      {
+        heading: "Rinne and Weber at the bedside, with the interpretation table",
+        points: [
+          "Use a 512 Hz fork struck against the elbow or a rubber pad, not a table: a 256 Hz fork is felt as vibration and overestimates bone conduction, and a 1024 Hz fork decays too fast to compare.",
+          "Rinne: hold the stem on the mastoid until the sound fades, then bring the prongs 2 cm from the canal; air conduction louder or longer than bone conduction is Rinne positive (normal or sensorineural loss), and bone louder than air is Rinne negative, which means a conductive loss of at least 15 to 20 dB - roughly 15 dB for a 256 Hz fork, 30 dB for 512 Hz and 45 dB for 1024 Hz.",
+          "Weber: place the stem on the vertex, forehead or upper incisors and ask where it is heard; it lateralises to the ear with a conductive loss, because that ear is spared ambient masking and has an occlusion effect, and away from an ear with a sensorineural loss towards the better cochlea.",
+          "The interpretation table to draw: normal - Rinne positive both, Weber central; left conductive loss - Rinne negative left, positive right, Weber to the left; left sensorineural loss - Rinne positive both, Weber to the right; left severe or dead ear - Rinne falsely negative on the left (the bone-conducted sound is heard by the right cochlea), Weber to the right, so the right ear must be masked with a Barany noise box; bilateral conductive loss - Rinne negative both, Weber central or to the worse ear.",
+          "Complete the set with the absolute bone conduction test, comparing the patient's bone conduction with the examiner's after occluding the tragus (reduced in sensorineural loss, normal in conductive), and Schwabach's test, which is lengthened in conductive and shortened in sensorineural loss.",
+          "In this child Rinne is negative on the left and positive on the right and Weber lateralises to the left, which is a left conductive hearing loss consistent with the perforation, and a pure tone audiogram is then requested to quantify it and to check the cochlear reserve before any surgery.",
+        ],
+      },
+      {
+        heading: "When a discharging ear is dangerous",
+        points: [
+          "A chronically discharging ear becomes dangerous when the discharge is scanty and foul-smelling with an attic or marginal perforation, cholesteatoma or a polyp, because the disease is eroding bone towards the facial nerve, the labyrinth and the dura.",
+          "The symptoms that demand same-day referral are pain in an ear that was painless, headache that persists or wakes the patient, fever with rigors, vomiting, vertigo or unsteadiness, facial weakness, diplopia, drowsiness or irritability, neck stiffness and fits.",
+          "The signs are tenderness and swelling behind the ear with the pinna pushed down and forwards, sagging of the posterosuperior canal wall, a positive fistula test, nystagmus, a lower motor neurone facial palsy, a sixth nerve palsy with deep retro-orbital pain and persistent discharge (Gradenigo's triad of petrositis), papilloedema, and sudden cessation of a long-standing discharge with rising fever, which means the drainage is blocked.",
+          "The intratemporal complications are acute mastoiditis with subperiosteal abscess, facial paralysis, labyrinthitis and petrositis; the intracranial ones are extradural abscess, subdural empyema, meningitis (the commonest in children), temporal lobe or cerebellar brain abscess, lateral sinus thrombophlebitis with its picket-fence fever, and otitic hydrocephalus.",
+          "In an elderly diabetic, granulation tissue at the floor of the canal with severe pain out of proportion to the otoscopic finding is malignant (necrotising) otitis externa from Pseudomonas, which is a skull base osteomyelitis and needs admission for intravenous antipseudomonal antibiotics for six weeks.",
+          "A dangerous ear gets no drops and no waiting: a high-resolution CT of the temporal bone, intravenous antibiotics that cross into the brain, and an ENT surgeon the same day for mastoid exploration, with a neurosurgeon if an abscess is present.",
+        ],
+      },
+      {
+        heading: "The National Programme for Prevention and Control of Deafness",
+        points: [
+          "NPPCD was launched as a pilot in 2006-07 in 25 districts of 10 states and one union territory, in response to an estimated 6.3% of the Indian population with significant hearing impairment (about 63 million people) and the NSSO finding of 291 persons per lakh with severe to profound loss; it was expanded in the 11th Five Year Plan and is now implemented under the National Health Mission in most districts of the country.",
+          "Its objectives are to prevent avoidable hearing loss from disease or injury, to identify, diagnose and treat ear disease early, to rehabilitate people of all ages with deafness medically, to strengthen inter-sectoral linkages for continued rehabilitation, and to build institutional capacity for ear care through equipment, materials and training.",
+          "Its components are manpower training (ENT surgeons, audiologists, audiometric assistants, medical officers, ASHAs, anganwadi workers and ANMs), capacity building of the district hospital, community health centre and primary health centre, service provision through screening camps, treatment and free hearing aids at the district hospital, awareness generation through IEC, and monitoring and evaluation.",
+          "For this child the programme means a referral pathway: the ASHA and the school health team of Rashtriya Bal Swasthya Karyakram screen and refer, the primary health centre medical officer does otoscopy and aural toilet and gives drops, the community health centre holds an ENT camp, and the district hospital has an audiometry room, an ENT surgeon for tympanoplasty and a hearing aid dispensed free of cost.",
+          "The newborn and childhood side of the programme follows the 1-3-6 rule: otoacoustic emission screening at birth or by one month, brainstem evoked response audiometry to confirm by three months, and a hearing aid or intervention by six months, with cochlear implantation for eligible children under five under the ADIP scheme of the Ministry of Social Justice and Empowerment.",
+          "Prevention messages the family physician delivers are exclusive breastfeeding and no bottle in the supine position, complete immunisation including pneumococcal, Haemophilus influenzae type b and measles-rubella vaccines, no smoking in the house, full treatment of every acute otitis media, no oil or home remedies in a discharging ear, avoidance of ototoxic drugs and loud noise, and screening of every child before school entry; World Hearing Day is 3 March.",
+        ],
+      },
+    ],
+    summaryStatement:
+      "A 7-year-old boy with a three-month history of painless, profuse, odourless mucopurulent discharge from the left ear following an incompletely treated acute otitis media a year ago, a medium central perforation of the pars tensa with healthy middle ear mucosa on otoscopy, a Rinne negative on the left with Weber lateralising to the left, and no pain, fever, headache, vertigo, facial weakness or postaural swelling - tubotympanic (safe) chronic suppurative otitis media with a left conductive hearing loss, needing aural toilet, topical ciprofloxacin, dry ear precautions, audiometry and referral for tympanoplasty, and enrolment through the school health team for hearing assessment and follow-up under the National Programme for Prevention and Control of Deafness.",
+    differential: [
+      {
+        diagnosis: "Atticoantral (unsafe) chronic suppurative otitis media with cholesteatoma",
+        forIt: "Chronic ear discharge with hearing loss in a child after an untreated acute otitis media.",
+        againstIt: "The discharge is profuse and odourless rather than scanty and foul, the perforation is central with an intact annulus and pars flaccida, and there are no pearly white flakes, granulations, polyp, pain, vertigo or facial weakness.",
+      },
+      {
+        diagnosis: "Otitis externa",
+        forIt: "A discharging ear in a child who bathes in a pond.",
+        againstIt: "There is no itching, the canal is not oedematous and tragal pressure and pinna traction are painless, the discharge pulsates through a visible drum perforation, and hearing is reduced by a conductive loss rather than by canal debris.",
+      },
+      {
+        diagnosis: "Otitis media with effusion",
+        forIt: "A school child with hearing loss and a teacher's complaint, with a history of recurrent colds.",
+        againstIt: "Glue ear has an intact dull retracted drum with an air-fluid level and no discharge, whereas this ear has a perforation with active mucopurulent discharge.",
+      },
+      {
+        diagnosis: "Tuberculous otitis media",
+        forIt: "A painless chronic discharge in a child in a tuberculosis-endemic area.",
+        againstIt: "Tuberculous disease gives multiple perforations that coalesce, pale granulations, a hearing loss and facial palsy out of proportion to the drum, and a contact history or pulmonary disease; none is present, but it is reconsidered if the ear fails to dry on standard treatment.",
+      },
+    ],
+    investigations: [
+      {
+        test: "Ear swab for Gram stain, aerobic and fungal culture and sensitivity",
+        why: "To identify the organism if the discharge does not settle with first-line drops and to detect fungal superinfection after prolonged antibiotic drops.",
+        expected: "Pseudomonas aeruginosa, Proteus or Staphylococcus aureus in chronic disease; a mixed anaerobic growth suggests bone disease.",
+      },
+      {
+        test: "Pure tone audiometry with air and bone conduction",
+        why: "To quantify and type the hearing loss, to document the cochlear reserve before surgery, and to provide the baseline for a hearing aid or for school placement.",
+        expected: "A left conductive loss of 30 to 45 dB with an air-bone gap and normal bone conduction; normal thresholds on the right.",
+      },
+      {
+        test: "Tympanometry",
+        why: "To confirm a perforation objectively and to assess the fellow ear for effusion.",
+        expected: "A flat type B trace with a large ear canal volume on the left, indicating a perforation; a normal type A trace, or type B with normal volume if there is glue, on the right.",
+      },
+      {
+        test: "Examination under the microscope with suction clearance",
+        why: "To clear the discharge and see the margins of the perforation, the attic and the posterosuperior quadrant, which the otoscope cannot show reliably in a child.",
+        expected: "A central perforation with healthy mucosa and an intact ossicular chain; no cholesteatoma, granulation or polyp.",
+      },
+      {
+        test: "X-ray mastoids, Schuller's view, where CT is not available",
+        why: "To show the pneumatisation of the mastoid and to detect a cavity from cholesteatoma or clouding from mastoiditis.",
+        expected: "A sclerotic, poorly pneumatised mastoid typical of long-standing tubotympanic disease; no cavity.",
+      },
+      {
+        test: "High-resolution CT of the temporal bone",
+        why: "Requested only for unsafe disease, suspected complications or before mastoid surgery, to map bone erosion of the scutum, ossicles, tegmen, facial canal and lateral semicircular canal.",
+        expected: "Not required in this safe ear; in an unsafe ear a soft-tissue mass in the attic and antrum with erosion of the scutum and ossicles.",
+      },
+      {
+        test: "Otoacoustic emissions or brainstem evoked response audiometry",
+        why: "For infants and children too young or too unwell to do pure tone audiometry, and as the screening tools of the newborn hearing programme.",
+        expected: "Absent otoacoustic emissions on the left because of the middle ear disease, with normal brainstem thresholds by bone conduction, confirming a conductive loss.",
+      },
+    ],
+    management: [
+      {
+        heading: "Acute otitis media in the clinic",
+        points: [
+          "Analgesia first - paracetamol 15 mg/kg or ibuprofen 10 mg/kg - because pain, not the antibiotic, is what brings the child; no decongestants or antihistamines, which do not help and sedate.",
+          "**Antibiotic at once** if under 6 months, if severe (otalgia over 48 hours, temperature 39 degrees C or more, toxic), if bilateral under 2 years, or if there is otorrhoea; otherwise a 48 to 72 hour period of observation with analgesia and a safety net is acceptable for a mild unilateral case.",
+          "**Amoxicillin 80 to 90 mg/kg/day in two divided doses** for 10 days under 2 years or in severe disease, 7 days at 2 to 5 years, and 5 to 7 days above 5 years; amoxicillin-clavulanate if amoxicillin was given in the last 30 days, if there is purulent conjunctivitis, or if there is no improvement at 48 to 72 hours.",
+          "Review at 48 to 72 hours; a perforated acute ear is kept dry and treated for the full course, and a drum that has not healed at 6 weeks or hearing that has not recovered at 3 months is referred.",
+          "Recurrent acute otitis media - 3 episodes in 6 months or 4 in a year - is referred for consideration of grommets and adenoidectomy after the predisposing factors have been corrected.",
+        ],
+      },
+      {
+        heading: "The safe ear: aural toilet, drops and dry-ear precautions",
+        points: [
+          "**Aural toilet** by dry mopping with a cotton-tipped wick or suction under vision before every instillation, because drops cannot reach an infected mucosa through a pool of pus; the mother is taught to dry-mop at home.",
+          "**Topical ciprofloxacin 0.3% or ofloxacin 0.3%, 3 drops three times a day for 2 weeks**, instilled with the ear uppermost and the tragus pumped so the drop enters the middle ear; systemic antibiotics are added only for an acute exacerbation or a febrile child.",
+          "**No aminoglycoside, neomycin-polymyxin or chloramphenicol drops through a perforation** - they are ototoxic - and no steroid-antifungal combinations from the chemist; suspect fungal otitis if the ear itches and wet-newspaper debris appears after weeks of drops.",
+          "Keep the ear dry: no swimming, a cotton wool plug coated with petroleum jelly during bathing, and no oil or home remedies; treat the nose, sinuses, tonsils and adenoids that reinfect the ear.",
+          "Once the ear has been dry for at least 6 weeks to 3 months, refer for **tympanoplasty (myringoplasty with or without ossiculoplasty)** after audiometry; explain that the surgery closes the hole, protects the ear and usually improves hearing, and that a hearing aid is offered in the meantime if the loss affects school.",
+        ],
+      },
+      {
+        heading: "The unsafe ear and complications: what leaves the clinic",
+        points: [
+          "Attic or marginal perforation, cholesteatoma, granulation or polyp - referral to an ENT surgeon within days for **mastoid exploration** (modified radical or canal-wall-up mastoidectomy); drops are only a bridge and a polyp is never avulsed in the clinic.",
+          "Any danger symptom or sign - admission the same day, blood cultures, a high-resolution CT of the temporal bone and a contrast CT or MRI of the brain, and intravenous ceftriaxone plus metronidazole (with vancomycin if meningitis is suspected) while the surgeon is called.",
+          "A facial palsy in a discharging ear is an emergency for urgent mastoid exploration, not for steroids alone; a positive fistula test or vertigo means labyrinthine involvement and bed rest with urgent surgery.",
+          "The diabetic with a painful granulating canal is admitted for six weeks of intravenous or oral antipseudomonal therapy with strict glycaemic control and a bone scan or CT to monitor the skull base.",
+        ],
+      },
+      {
+        heading: "Hearing rehabilitation and the programme link",
+        points: [
+          "Pure tone audiometry and a hearing aid from the district hospital under NPPCD if the loss is disabling while the ear is being treated, with the class teacher told to seat the child in front and to face him when speaking.",
+          "School health screening under Rashtriya Bal Swasthya Karyakram, the newborn 1-3-6 pathway for his younger siblings, and referral for cochlear implantation under ADIP for any child under five with profound sensorineural loss.",
+          "Disability certification under the Rights of Persons with Disabilities Act 2016, which defines 'hard of hearing' as 60 to 70 dB and 'deaf' as 70 dB or more in the speech frequencies in both ears, opens educational and financial support.",
+          "Follow-up until the drum has healed or been repaired, with re-testing of the hearing after surgery and at every school year.",
+        ],
+      },
+      {
+        heading: "Prevention and family counselling",
+        points: [
+          "Exclusive breastfeeding for 6 months and no bottle feeding in the lying position; feed infants propped up.",
+          "Complete immunisation - pneumococcal conjugate, Haemophilus influenzae type b, measles-rubella and influenza where available - and no tobacco smoke in the house.",
+          "Every acute otitis media treated for the full course and reviewed; nose blown one nostril at a time; no oil, no matchsticks and no cotton buds in the ear.",
+          "Tell the family the four words that bring the child back the same day: pain, fever, giddiness, face weakness, and add swelling behind the ear and a discharge that suddenly stops.",
+        ],
+      },
+    ],
+    viva: [
+      {
+        q: "What is a false negative Rinne test and how do you avoid being caught by it?",
+        a: "In a severe unilateral sensorineural loss or a dead ear, the bone-conducted sound from the mastoid crosses the skull and is heard by the opposite cochlea while air conduction on the deaf side is not heard at all, so Rinne appears negative and a dead ear is mislabelled as conductive. Weber lateralising away from that ear is the clue, and the test is repeated with the good ear masked by a Barany noise box.",
+      },
+      {
+        q: "Why does Weber lateralise towards the ear with a conductive loss?",
+        a: "The conductive block shuts out ambient noise so the cochlea on that side is not masked, and the occlusion effect reflects bone-conducted sound back into the middle ear instead of letting it escape through the canal, so the same vibration is heard louder in the blocked ear. In sensorineural loss the sound simply goes to the better cochlea.",
+      },
+      {
+        q: "Why is a central perforation called safe and an attic or marginal one unsafe?",
+        a: "A central perforation is surrounded by a rim of drum, so the migrating squamous epithelium of the canal cannot climb into the middle ear, and the disease is mucosal, causing discharge and a conductive loss without bone destruction. An attic or marginal perforation has no rim, so skin grows in to form a cholesteatoma that erodes bone by pressure and enzymes towards the facial nerve, the labyrinth and the dura, which is why it is unsafe and needs surgery.",
+      },
+      {
+        q: "Which drops are given in a perforated ear and which are forbidden, and why?",
+        a: "Topical fluoroquinolones - ciprofloxacin or ofloxacin - are effective against Pseudomonas and are not ototoxic. Aminoglycosides such as gentamicin, neomycin and framycetin, and chloramphenicol, cross the round window membrane and destroy the hair cells, so they are avoided through a perforation and are never given to a child.",
+      },
+      {
+        q: "What organisms cause acute and chronic otitis media, and which antibiotic is first line in each?",
+        a: "Acute otitis media is caused by Streptococcus pneumoniae, non-typeable Haemophilus influenzae and Moraxella catarrhalis, often after a viral upper respiratory infection, and high-dose amoxicillin is the first-line drug. Chronic suppurative otitis media grows Pseudomonas aeruginosa, Proteus, Staphylococcus aureus and anaerobes, and topical quinolone drops after aural toilet are the first-line treatment.",
+      },
+      {
+        q: "A child with a long-standing discharging ear stops discharging and two days later develops fever, headache and vomiting - what has happened and what do you do?",
+        a: "The perforation or the aditus has been blocked by oedema or a polyp, pus is trapped under pressure, and a complication - acute mastoiditis, meningitis or a brain abscess - is developing; the cessation of discharge is a danger sign, not a cure. The child is admitted the same day for a CT of the temporal bone and brain, intravenous ceftriaxone and metronidazole, and urgent mastoid exploration.",
+      },
+      {
+        q: "What are the objectives and components of NPPCD, and how does a poor family get a hearing aid?",
+        a: "The objectives are to prevent avoidable hearing loss, to identify and treat ear disease early, to rehabilitate people of all ages with deafness, to strengthen inter-sectoral linkages, and to build institutional capacity; the components are manpower training, capacity building of the district hospital, community health centre and primary health centre, service provision including camps and hearing aids, IEC, and monitoring. A hearing aid is fitted free at the district hospital after audiometry, and children under five with profound loss may get a cochlear implant under the ADIP scheme.",
+      },
+      {
+        q: "What is the 1-3-6 rule and which tests are used at each step?",
+        a: "Screen every newborn with otoacoustic emissions at birth or by one month, confirm any failed screen with brainstem evoked response audiometry by three months, and start intervention - a hearing aid and auditory-verbal therapy, with referral for cochlear implantation where indicated - by six months, because language outcome depends on amplification in the first year of life.",
+      },
+    ],
+    pitfalls: [
+      "Calling a painful chronically discharging ear 'just CSOM' - chronic suppurative otitis media is painless, and pain, headache, fever, vertigo or facial weakness means a complication that needs admission the same day.",
+      "Using a 256 Hz or 1024 Hz fork, striking it on a table, or reporting a Rinne negative as conductive without doing Weber and masking - the dead ear is then labelled conductive.",
+      "Prescribing gentamicin, neomycin or chloramphenicol drops, or a steroid-antibiotic-antifungal combination from the chemist, through a perforation.",
+      "Instilling drops into a canal full of pus without aural toilet, or syringing a discharging or perforated ear.",
+      "Giving decongestants, antihistamines or a two-day antibiotic syrup for acute otitis media and never reviewing the drum or the hearing.",
+      "Treating the ear and forgetting the child: no audiogram, no hearing aid, no word to the teacher, and no link to the school health team or the district hospital under NPPCD.",
+    ],
+    references: [
+      "PL Dhingra and Shruti Dhingra, Diseases of Ear, Nose and Throat and Head and Neck Surgery, 8th edition, 2022",
+      "Scott-Brown's Otorhinolaryngology and Head and Neck Surgery, 8th edition, 2018",
+      "American Academy of Pediatrics Clinical Practice Guideline, The Diagnosis and Management of Acute Otitis Media, 2013",
+      "WHO, Chronic suppurative otitis media: burden of illness and management options, 2004",
+      "WHO World Report on Hearing, 2021",
+      "National Programme for Prevention and Control of Deafness, operational guidelines, Ministry of Health and Family Welfare, Government of India",
+      "Rashtriya Bal Swasthya Karyakram operational guidelines, MoHFW, 2013",
+      "Park's Textbook of Preventive and Social Medicine, 27th edition, 2023 - NPPCD",
+    ],
+  },
+];
+
+const subject: Subject = {
+  id: "eye-ent",
+  title: "Eye & ENT",
+  blurb: "The red eye, vision screening, otitis, hearing loss, epistaxis, sore throat and oral cancer screening.",
+  icon: "Eye",
+  papers: ["III"],
+  topics,
+  cases,
+};
+
+export default subject;

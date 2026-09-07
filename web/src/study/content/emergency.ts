@@ -1456,3 +1456,512 @@ topics.push({
     "SOAP II trial - De Backer D et al., Comparison of Dopamine and Norepinephrine in the Treatment of Shock, NEJM 2010",
   ],
 });
+
+const cases: ClinicalCase[] = [
+  {
+    id: "emergency-case-1",
+    title: "Organophosphate poisoning: a farmer carried into the clinic after drinking pesticide",
+    kind: "long",
+    subjectId: "emergency",
+    opening:
+      "A 30-year-old farmer from a village 35 km from the district hospital is carried into the clinic by his brothers at 7 in the evening, drowsy, drenched in sweat and vomit, with froth at the mouth and noisy wet breathing, about 45 minutes after he was found beside an empty 100 mL bottle of chlorpyrifos 20% EC in the field, following a quarrel at home over a crop loan.",
+    minutes: 30,
+    frequency: "core",
+    sections: [
+      {
+        heading: "How to open a resuscitation long case",
+        points: [
+          "Open with the identifying data, the poison and the clock in one breath, because in a poisoning case the examiner wants the compound and the time before anything else: 'Mr X, a 30-year-old farmer, brought 45 minutes after ingesting an estimated 100 mL of chlorpyrifos 20% emulsifiable concentrate, drowsy, with a florid cholinergic toxidrome.'",
+          "State at once that this is a resuscitation case and that the history was taken from the relatives while treatment had already started, because the examiner marks the sequence of actions, and a candidate who describes twenty minutes of history-taking before the first dose of atropine has failed the case.",
+          "Give the findings in the order the drugs were needed: the wet chest and the vomiting first, because they were treated with atropine, then the level of consciousness and the breathing effort, because they decided the airway plan.",
+          "Name the grade and the diagnosis in the same sentence: this is severe organophosphate poisoning, Peradeniya score 8 of 11, needing atropine now, an airway plan and transfer to a ventilator bed.",
+          "Close the opening by declaring what the clinic did and when: first atropine at minute 3 after arrival, atropinised by minute 20 on a cumulative 18 mg, pralidoxime loaded at minute 25, and the ambulance called at minute 5.",
+        ],
+      },
+      {
+        heading: "History from the relatives while treatment runs",
+        points: [
+          "Ask the brothers for the bottle and read the label yourself: the active ingredient (chlorpyrifos, a diethyl organophosphate of WHO class II), the concentration (20% EC is 200 mg/mL, so 100 mL holds 20 g), and the solvent, since the aromatic hydrocarbon in the formulation explains the kerosene-like smell and the risk of chemical pneumonitis if he aspirates.",
+          "Fix the timeline: when he was last seen well, when he was found, whether he vomited in the field or on the way, and what was done before arrival, because a village practitioner may already have given atropine or made him drink salt water to induce vomiting.",
+          "Estimate the amount from the bottle and the family in mouthfuls (one mouthful is about 20-30 mL), knowing that the family's estimate is unreliable and that any deliberate ingestion of a class II organophosphate is treated as potentially fatal.",
+          "Take the intent history with the family present but without judgement: the quarrel, the crop loan, previous attempts, alcohol taken with the poison (common, and it worsens aspiration), and what he said before he drank it; this is needed for the medico-legal record and the psychiatric referral, not for a lecture.",
+          "Past history changes the drugs you are about to give: asthma or chronic lung disease (bronchorrhoea is worse), heart disease (atropine tachycardia and pralidoxime hypertension), epilepsy, kidney disease (pralidoxime is renally cleared), and whether he sprays pesticide for a living, which lowers his baseline cholinesterase.",
+          "Ask about co-ingestants that change the picture: a pyrethroid or carbamate mixed in the same bottle, paracetamol, sleeping tablets missing from the house, and country liquor.",
+        ],
+      },
+      {
+        heading: "Examination: reading the toxidrome and grading it",
+        points: [
+          "The muscarinic picture fills the room: profuse salivation, lacrimation, sweating, vomiting, diarrhoea and urinary incontinence, pinpoint pupils, a pulse of 48 per minute, and a chest full of coarse crackles and wheeze from bronchorrhoea and bronchospasm; remember it as DUMBELS (diarrhoea, urination, miosis, bradycardia with bronchorrhoea and bronchospasm, emesis, lacrimation, salivation and sweating).",
+          "The nicotinic picture is the one that kills quietly: fasciculations over the chest, thighs and tongue, and weakness of the neck flexors and limbs from depolarising block at the neuromuscular junction, progressing to paralysis of the respiratory muscles; tachycardia, hypertension and even dilated pupils appear when nicotinic effects dominate, so a fast pulse or a normal pupil does not exclude poisoning.",
+          "The central picture is drowsiness, agitation or confusion, a GCS recorded as its three components, seizures and central respiratory depression; a GCS below 8, a respiratory rate below 8 or above 30, or an SpO2 below 90% on oxygen means the airway is the next problem.",
+          "Grade severity with the Peradeniya Organophosphorus Poisoning scale, which scores pupil size, respiratory rate, heart rate, fasciculations, level of consciousness and seizures from 0 to 11 (0-3 mild, 4-7 moderate, 8-11 severe): this patient, with pinpoint pupils (2), a respiratory rate of 28 with central cyanosis (2), a heart rate of 48 (1), generalised fasciculations (2), impaired response to command (1) and no seizure (0), scores 8 and is severe.",
+          "Examine the skin and clothes for pesticide, the mouth for the smell and for chemical burns, the chest for aspiration and the abdomen for the tenderness of pancreatitis, and record the temperature, because a rising temperature with dry skin later is atropine toxicity rather than infection.",
+          "Present the examination as timed observations rather than a snapshot - pulse, blood pressure, respiratory rate, SpO2, pupils, chest sounds and GCS every 5 minutes for the first hour - because the examiner will ask what changed with each dose of atropine.",
+        ],
+      },
+      {
+        heading: "Atropine: the loading, the end-points and the infusion",
+        points: [
+          "Atropine is the most urgent action in the clinic and is given before the oxygen is connected, before the line is dressed and before any decontamination; the Indian ampoule is 0.6 mg in 1 mL, so the starting adult dose of 1.2 mg is two ampoules intravenously (intramuscularly for the first dose if the line is not yet in).",
+          "Use the doubling regimen from the Sri Lankan and Bangladeshi trials: 1.2 mg IV, and if the chest has not cleared after 5 minutes give 2.4 mg, then 4.8 mg, then 9.6 mg, then 19.2 mg at 5-minute intervals until the end-points are reached; most patients are atropinised within 20-30 minutes on a cumulative 10-40 mg, and a few need more than 100 mg in the first day.",
+          "In a child the starting dose is 0.02 mg/kg IV (0.05 mg/kg if the child is already in respiratory distress), doubled every 5 minutes on the same end-points; in an adult the same doubling applies whatever the weight, because the dose is titrated to the chest and not to the kilogram.",
+          "The end-points of atropinisation are a chest clear of crackles and wheeze on auscultation, a heart rate above 80 per minute, a systolic blood pressure above 80 mmHg, dry axillae and pupils that are no longer pinpoint; the chest and the heart rate are the ones that matter, and because the pupils dilate late and stay dilated, a candidate who titrates atropine to pupil size will overdose the patient.",
+          "Once atropinised, start an infusion at 10-20% of the total loading dose per hour - here 18 mg were needed, so 1.8-3.6 mg per hour, prepared as 30 mg (50 ampoules) in 500 mL of 0.9% saline at 30-60 mL per hour - and review every 15 minutes in the first hour and hourly after that for returning secretions (too little) or for delirium, a heart rate above 120, absent bowel sounds, urinary retention and hyperthermia (too much).",
+          "If atropine toxicity appears, stop the infusion, wait 30-60 minutes for the signs to fade, and restart at 70-80% of the previous rate; where no pump or drip counter exists, 20% of the loading dose as an intravenous bolus every hour is the acceptable substitute, and the clinic must hold at least 50 ampoules to do any of this.",
+        ],
+      },
+      {
+        heading: "Airway, breathing, decontamination and pralidoxime",
+        points: [
+          "Suction the mouth and pharynx repeatedly, keep him in the left lateral position with the head down until atropine has dried the secretions, and give oxygen 15 L/min by a mask with a reservoir bag; atropine, not suction, is what finally clears the airway.",
+          "Ventilate with a bag-valve-mask the moment the respiratory rate falls, the chest movement weakens or the SpO2 stays below 90% on oxygen, and intubate if a doctor able to do it is present: induce with ketamine 1-2 mg/kg IV (the same in a child) and paralyse with rocuronium 1.2 mg/kg IV, never suxamethonium, which is broken down by the same plasma cholinesterase and will paralyse him for hours.",
+          "Decontaminate without contaminating yourself: gloves, apron and eye protection for everyone, remove and bag his clothes, wash the skin and hair with soap and water, and take the vomit-soaked cloth out of the room; two staff members feeling faint from the fumes is a familiar clinic story.",
+          "Gastric lavage is not routine: it is considered only within one hour of a large ingestion, only with the airway protected by a cuffed tube or a fully conscious cooperative patient, and only after atropinisation, in aliquots of 200-300 mL of water; activated charcoal (50 g in an adult, 1 g/kg in a child) showed no benefit in organophosphate poisoning in the largest trial, and emesis is never induced.",
+          "Pralidoxime reactivates the phosphorylated enzyme before it ages, so it is given as early as possible and only after atropine has begun: pralidoxime chloride 30 mg/kg (2 g for a 65 kg adult) IV in 100 mL of 0.9% saline over 20-30 minutes, then 8 mg/kg per hour (about 500 mg per hour) by infusion until atropine has not been needed for 12-24 hours; a child receives the same 30 mg/kg (maximum 2 g) over 30 minutes and then 8 mg/kg per hour, and where an infusion is impossible the adult alternative is 1 g IV over 30 minutes every 4-6 hours.",
+          "Rapid injection of pralidoxime causes vomiting, hypertension, laryngospasm and cardiac arrest, so it is never pushed; check the vial, because Indian preparations exist as both the chloride and the iodide salt, and 1 g of the iodide carries only about two-thirds as much active oxime as 1 g of the chloride.",
+        ],
+      },
+      {
+        heading: "Transfer, the complications to expect and the aftercare",
+        points: [
+          "Every symptomatic organophosphate ingestion goes to a hospital with a ventilator, because respiratory failure can occur at any time in the first 96 hours; phone the receiving casualty officer yourself, name the compound, the doses given and the current atropine rate, and pass on the number of the National Poisons Information Centre at AIIMS, New Delhi (toll-free 1800 116 117) if the receiving team is unsure.",
+          "Transfer with the atropine infusion running, at least 30 spare ampoules, oxygen, suction, a bag-valve-mask and an escort who can bag the patient; the commonest death on the road is a patient sent 'stable' after a single 0.6 mg dose of atropine with no one watching the chest.",
+          "Warn the receiving team and the family about the intermediate syndrome, which appears 24-96 hours after ingestion in 10-40% of moderate and severe cases, more often after dimethyl compounds and inadequate oxime therapy: weakness of neck flexion so that the patient cannot lift his head off the pillow, proximal limb and cranial nerve weakness and then respiratory muscle failure, lasting 1-3 weeks and treated with ventilation alone.",
+          "The late complication is organophosphate-induced delayed polyneuropathy, a distal motor neuropathy with foot drop 2-3 weeks after exposure, described after chlorpyrifos among others, with no specific treatment; the family physician is the one who notices it at follow-up.",
+          "Register the case as a medico-legal case, intimate the police, preserve the bottle, the vomitus and the first gastric aspirate in sealed labelled containers for forensic analysis, and record everything with times; under Section 115 of the Mental Healthcare Act 2017 a person who attempts suicide is presumed to be under severe stress and is to be treated and rehabilitated, not prosecuted.",
+          "Before discharge from hospital and again at the first clinic visit, assess suicide risk, refer to psychiatry, treat alcohol dependence, and counsel the family on locking pesticides away; Sri Lanka's bans on its most toxic pesticides cut its suicide rate by about 70% between 1995 and 2015, and India has banned methyl parathion, phorate, dichlorvos and triazophos and restricts monocrotophos for the same reason.",
+        ],
+      },
+    ],
+    summaryStatement:
+      "This is a 30-year-old farmer, brought 45 minutes after the deliberate ingestion of an estimated 100 mL of chlorpyrifos 20% EC following a domestic quarrel, who presented drowsy with a florid cholinergic toxidrome - salivation, sweating, vomiting, pinpoint pupils, a pulse of 48 per minute, generalised fasciculations, a chest full of crackles and wheeze and an SpO2 of 86% on air - a Peradeniya score of 8 out of 11, which is severe organophosphate poisoning; he was atropinised within 20 minutes on a cumulative 18 mg of atropine, loaded with 2 g of pralidoxime, ventilated by bag and mask while the secretions cleared, and transferred with an atropine infusion running to a centre with a ventilator, where the intermediate syndrome, the psychiatric assessment and the medico-legal formalities remain to be addressed.",
+    differential: [
+      {
+        diagnosis: "Carbamate poisoning (carbofuran, methomyl, carbaryl, propoxur)",
+        forIt:
+          "An identical muscarinic and nicotinic picture, and carbofuran and methomyl are sold in the same shops and kept in the same shed; the label is the only reliable way to tell them apart.",
+        againstIt:
+          "The bottle says chlorpyrifos, and carbamate poisoning is usually milder, resolves within 24-48 hours because carbamylation of the enzyme is spontaneously reversible, and penetrates the brain less; the practical difference is that atropine is given identically, pralidoxime is unnecessary, and the intermediate syndrome is rare.",
+      },
+      {
+        diagnosis: "Aluminium phosphide (Celphos) poisoning",
+        forIt:
+          "Also a farmer's poison from the same shops, with vomiting, a garlic-like odour and collapse within an hour of ingestion.",
+        againstIt:
+          "It causes refractory hypotension, severe metabolic acidosis and arrhythmias without miosis, bronchorrhoea or fasciculations, atropine does nothing for it and there is no antidote; the wet chest and pinpoint pupils here exclude it.",
+      },
+      {
+        diagnosis: "Yellow oleander (Cascabela thevetia) seed poisoning",
+        forIt:
+          "A common self-harm agent in rural South India and Sri Lanka, producing vomiting, bradycardia and drowsiness within hours.",
+        againstIt:
+          "Cardiac glycoside poisoning gives heart block and hyperkalaemia with dry skin, normal pupils and no secretions or fasciculations; atropine treats only the bradycardia, and the definitive treatment is digoxin-specific antibody fragments.",
+      },
+      {
+        diagnosis: "Opioid overdose or a pontine lesion",
+        forIt:
+          "Pinpoint pupils with a depressed level of consciousness and slow breathing are shared with opioid poisoning and with a pontine haemorrhage.",
+        againstIt:
+          "Neither produces sweating, bronchorrhoea, bradycardia with wet lungs or fasciculations, naloxone changes nothing, and a pontine stroke at 30 without hypertension beside an empty pesticide bottle is not the diagnosis.",
+      },
+    ],
+    investigations: [
+      {
+        test: "Continuous SpO2 monitoring, and an arterial blood gas where available",
+        why: "Hypoxaemia from bronchorrhoea, bronchospasm and muscle weakness is what kills; the gas separates the hypoxaemia that atropine will fix from the hypoventilation that needs a tube.",
+        expected: "SpO2 below 90% on air at arrival; a PaCO2 above 50 mmHg or a rising lactate means ventilatory failure and the need for intubation.",
+      },
+      {
+        test: "Capillary blood glucose",
+        why: "Every patient with altered consciousness has a glucose checked; organophosphates cause hyperglycaemia in adults and hypoglycaemia in children.",
+        expected: "Often 150-250 mg/dL from catecholamine release; below 70 mg/dL is treated with 100 mL of 25% dextrose in an adult and 2 mL/kg of 10% dextrose in a child.",
+      },
+      {
+        test: "12-lead ECG and continuous cardiac monitoring",
+        why: "Cholinergic bradycardia, conduction block and QT prolongation predict torsades and sudden death, and atropine and pralidoxime both act on the rhythm.",
+        expected: "Sinus bradycardia, a QTc above 450 ms in about a third of patients, ST-T changes and occasionally complete heart block; QT prolongation correlates with mortality.",
+      },
+      {
+        test: "Plasma butyrylcholinesterase (pseudocholinesterase) and, where available, red cell acetylcholinesterase",
+        why: "Confirms exposure when the history is doubtful or the patient is found unconscious, and the red cell enzyme tracks the effect of the oxime; it is never needed before treatment and is not available in the clinic.",
+        expected: "Plasma enzyme below 50% of the laboratory's lower limit confirms poisoning and below 10% suggests severe poisoning, but the level correlates poorly with the clinical grade; red cell enzyme rises with effective oxime therapy.",
+      },
+      {
+        test: "Chest X-ray after stabilisation",
+        why: "Aspiration of vomit and hydrocarbon solvent, pulmonary oedema from bronchorrhoea, and tube position after intubation.",
+        expected: "Bilateral patchy infiltrates or right lower lobe consolidation of aspiration in 10-20%; a normal early film does not exclude later chemical pneumonitis.",
+      },
+      {
+        test: "Serum electrolytes, urea and creatinine, and serum amylase",
+        why: "Hypokalaemia and hypomagnesaemia from vomiting and secretions worsen arrhythmias, pralidoxime is renally excreted, and pancreatitis complicates about 10% of moderate to severe cases.",
+        expected: "Potassium often 2.8-3.5 mmol/L; amylase raised threefold or more when there is epigastric pain; creatinine normal unless there has been prolonged hypotension.",
+      },
+      {
+        test: "Forensic samples: the bottle, 50 mL of the first gastric aspirate or vomitus, 10 mL of blood and the stained clothes, sealed and labelled",
+        why: "Poisoning is a medico-legal case and the compound identified by the forensic laboratory is what the court and the insurer rely on.",
+        expected: "Chlorpyrifos confirmed and a co-ingested carbamate or pyrethroid excluded; the chain of custody is recorded in the case sheet.",
+      },
+    ],
+    management: [
+      {
+        heading: "The first fifteen minutes in the clinic",
+        points: [
+          "**Call the diagnosis aloud, put on gloves, and give atropine 1.2 mg IV (two 0.6 mg ampoules) within 3 minutes of arrival - before oxygen, before decontamination and before the history is complete; child 0.02-0.05 mg/kg IV.**",
+          "Left lateral position with the head down, repeated pharyngeal suction, oxygen 15 L/min through a reservoir mask, and a bag-valve-mask at the head end with one person assigned to breathing alone.",
+          "Two intravenous lines; 500 mL of 0.9% saline over 15-20 minutes if the systolic BP is below 90 mmHg (child 10-20 mL/kg), because hypotension in severe poisoning is a marker of death.",
+          "One person owns the clock and the record: the time of each atropine dose, pulse, chest findings and SpO2 every 5 minutes, the time of pralidoxime, and the time the ambulance was called.",
+          "Call the ambulance (108) at minute 5, not after stabilisation, and phone the receiving hospital so that a ventilator bed is kept.",
+        ],
+      },
+      {
+        heading: "Atropine: loading, end-points, infusion and toxicity",
+        points: [
+          "**Doubling regimen: 1.2 mg, 2.4 mg, 4.8 mg, 9.6 mg, 19.2 mg IV at 5-minute intervals until the chest is clear, the heart rate is above 80/min, the systolic BP is above 80 mmHg and the axillae are dry; pupil size is not an end-point.**",
+          "Total the loading dose and infuse 10-20% of it per hour (here 1.8-3.6 mg/h, as 30 mg in 500 mL of 0.9% saline at 30-60 mL/h); without a pump, give 20% of the loading dose as an IV bolus every hour.",
+          "Review every 15 minutes for the first hour and hourly thereafter; returning crackles, sweating or bradycardia mean a repeat bolus and a higher rate.",
+          "**Atropine toxicity - delirium, heart rate above 120/min, absent bowel sounds, urinary retention, hot dry skin and fever - means stop the infusion for 30-60 minutes and restart at 70-80% of the rate**; the confused patient on day 2 is usually over-atropinised, not septic.",
+          "Atropine is usually needed for 2-5 days after a diethyl compound such as chlorpyrifos and is weaned against the same end-points; secretions that return mean the wean was too fast.",
+        ],
+      },
+      {
+        heading: "Pralidoxime, decontamination and adjuncts",
+        points: [
+          "**Pralidoxime chloride 30 mg/kg (2 g in an adult) IV over 20-30 minutes once atropine has started, then 8 mg/kg/h (about 500 mg/h) until atropine has not been needed for 12-24 hours; child 30 mg/kg (maximum 2 g) then 8 mg/kg/h; never as a rapid bolus.**",
+          "Give it early: dimethyl compounds (dimethoate, monocrotophos, methyl parathion, malathion) age the enzyme with a half-life of about 4 hours and diethyl compounds (chlorpyrifos, quinalphos, diazinon) in about 30 hours, so the window is hours for the first group and about a day for the second; it is not needed for carbamates.",
+          "Remove the clothes and wash the skin with soap and water; gastric lavage only within 1 hour of a large ingestion with a protected airway and after atropinisation; no charcoal, no ipecac, no salt water.",
+          "**Diazepam 5-10 mg IV (child 0.1-0.3 mg/kg, maximum 10 mg) for seizures or severe agitation**; no aminophylline, and no drug hydrolysed by plasma cholinesterase.",
+          "Check the vial (chloride versus iodide), reduce the pralidoxime dose in renal failure, and expect transient hypertension, dizziness and blurred vision as side effects.",
+        ],
+      },
+      {
+        heading: "Airway, ventilation and the transfer",
+        points: [
+          "**Bag and then intubate for a GCS below 8, a respiratory rate below 8 or above 30 with fatigue, an SpO2 below 90% on 15 L/min oxygen, or a weak cough with copious secretions despite atropine.**",
+          "Induction: ketamine 1-2 mg/kg IV with rocuronium 1.2 mg/kg IV (a larger dose may be needed); **suxamethonium is contraindicated** because its hydrolysis by plasma cholinesterase is blocked.",
+          "Ventilate with 100% oxygen initially and then target SpO2 94-98%; mechanical ventilation may be needed for days to weeks if the intermediate syndrome develops.",
+          "Transfer with the infusion running, 30 spare ampoules of atropine, oxygen, suction, a bag-valve-mask and a trained escort; hand over the compound, the time of ingestion, the cumulative atropine dose, the infusion rate and the pralidoxime given.",
+        ],
+      },
+      {
+        heading: "After the acute phase: complications, psychiatry, law and prevention",
+        points: [
+          "Watch daily for the **intermediate syndrome (24-96 hours: neck flexion weakness, proximal weakness, cranial nerve palsies, respiratory failure)** and at 2-3 weeks for **delayed polyneuropathy (foot drop)**.",
+          "Medico-legal case registration, police intimation, preserved samples and a contemporaneous record with times; consent for treatment is implied in the emergency.",
+          "Psychiatric assessment before discharge, treatment of depression and alcohol dependence, means restriction at home (locked storage, buying only what the season needs) and a clinic review within a week; Section 115 of the Mental Healthcare Act 2017 protects him from prosecution.",
+          "Report the case for district pesticide-poisoning surveillance and use it for a community conversation on safe storage and on protective equipment during spraying.",
+        ],
+      },
+    ],
+    viva: [
+      {
+        q: "What are the end-points of atropinisation, and why is pupil size not one of them?",
+        a: "A chest clear of crackles and wheeze, a heart rate above 80 per minute, a systolic blood pressure above 80 mmHg, dry axillae and pupils that are no longer pinpoint. The chest is the end-point that matters because bronchorrhoea is what kills; the pupils dilate late, can stay pinpoint for hours after the chest has cleared and stay dilated for days after atropine is stopped, so titrating to the pupil produces atropine toxicity.",
+      },
+      {
+        q: "Why is suxamethonium avoided for intubation, and what do you use instead?",
+        a: "Suxamethonium is hydrolysed by plasma butyrylcholinesterase, which the organophosphate has inhibited, so a single dose can paralyse the patient for hours. Use a non-depolarising agent such as rocuronium 1.2 mg/kg after ketamine 1-2 mg/kg; a larger dose of the non-depolariser may be needed because the excess acetylcholine competes with it at the receptor.",
+      },
+      {
+        q: "What is the intermediate syndrome?",
+        a: "A syndrome of weakness beginning 24-96 hours after exposure, after the cholinergic crisis has been controlled: weakness of neck flexion so that the patient cannot lift the head off the pillow, of the proximal limb muscles, of the muscles supplied by the motor cranial nerves and of the respiratory muscles, with depressed tendon reflexes. It affects 10-40% of moderate to severe cases, is commoner with dimethyl compounds and inadequate oxime treatment, does not respond to atropine or more pralidoxime, and needs ventilation for 1-3 weeks; missing it means a patient is discharged on day 2 and dies at home on day 3.",
+      },
+      {
+        q: "How do organophosphates and carbamates differ in management?",
+        a: "Both inhibit acetylcholinesterase and produce the same toxidrome, and atropine is given identically. Carbamylation is reversible within about 24 hours, so carbamate poisoning is shorter and pralidoxime is unnecessary; if the compound is unknown, treat as an organophosphate and give pralidoxime, because the old belief that oximes worsen carbaryl poisoning has not held up in clinical practice.",
+      },
+      {
+        q: "What is the evidence for pralidoxime?",
+        a: "Conflicting. Pawar's Indian trial in 2006 found that a high-dose regimen (2 g then 1 g per hour for 48 hours) reduced ventilation and mortality compared with intermittent 1 g boluses; Eddleston's Sri Lankan trial in 2009 (2 g then 0.5 g per hour) found no benefit and a trend to harm, and the Cochrane review of 2011 could not recommend for or against. The WHO still recommends 30 mg/kg then 8 mg/kg per hour, given early and slowly, because the drug is logical, the enzyme ages quickly with dimethyl compounds, and the trials differed in compounds, timing and severity.",
+      },
+      {
+        q: "What is aging, and why does it decide the timing of the oxime?",
+        a: "Aging is the loss of an alkyl group from the phosphorylated enzyme, after which the bond is permanent and no oxime can reactivate it. Dimethyl compounds (dimethoate, monocrotophos, methyl parathion, malathion) age with a half-life of about 4 hours and diethyl compounds (chlorpyrifos, quinalphos, diazinon, parathion) in about 30 hours, so pralidoxime must be started within hours for the first group and remains useful for a day or more for the second.",
+      },
+      {
+        q: "What is the place of gastric lavage and activated charcoal?",
+        a: "Neither has shown benefit in organophosphate poisoning. Lavage is considered only within one hour of a large ingestion, with the airway protected and after atropinisation, in small aliquots, and is never forced on a struggling patient or done before atropine. The largest trial of multiple-dose activated charcoal (Eddleston, Lancet 2008, more than 4,600 patients) showed no reduction in mortality, and induced emesis is harmful.",
+      },
+      {
+        q: "What are your legal and psychiatric obligations?",
+        a: "Treat first; consent is implied in an emergency. Register a medico-legal case and intimate the police, preserve the bottle, vomitus, gastric aspirate and clothes with a chain of custody, and record everything with times. Under Section 115 of the Mental Healthcare Act 2017 a person who attempts suicide is presumed to be under severe stress and is not to be prosecuted, and the government has a duty to provide care; arrange a psychiatric assessment before discharge, treat depression and alcohol use, counsel the family on locked storage, and follow him up in the clinic.",
+      },
+    ],
+    pitfalls: [
+      "Timid atropine - 0.6 mg every 10-15 minutes - is the commonest cause of death in the first hour; the dose is doubled every 5 minutes until the chest is dry.",
+      "Waiting for oxygen, a line, a cholinesterase result or the ambulance before the first dose of atropine.",
+      "Titrating atropine to pupil size or heart rate alone, producing a delirious, hyperthermic patient with an ileus who is then treated for sepsis.",
+      "Pralidoxime pushed as a rapid bolus, given before atropine, or omitted because the clinic does not stock it and no one asked the receiving hospital to give it on arrival.",
+      "Suxamethonium for intubation, and gastric lavage forced on an unprotected airway.",
+      "Discharging a patient who looks well on day 2, before the window of the intermediate syndrome has closed, and sending him home without a psychiatric assessment or a word about locking the pesticide away.",
+    ],
+    references: [
+      "Eddleston M, Buckley NA, Eyer P, Dawson AH. Management of acute organophosphorus pesticide poisoning, Lancet 2008;371:597-607",
+      "World Health Organization. Clinical management of acute pesticide intoxication: prevention of suicidal behaviours, 2008",
+      "Abedin MJ et al. Open-label randomized clinical trial of atropine bolus injection versus incremental boluses plus infusion for organophosphate poisoning in Bangladesh, Journal of Medical Toxicology 2012",
+      "Pawar KS et al. Continuous pralidoxime infusion versus repeated bolus injection to treat organophosphorus pesticide poisoning: a randomised controlled trial, Lancet 2006",
+      "Eddleston M et al. Pralidoxime in acute organophosphorus insecticide poisoning: a randomised controlled trial, PLoS Medicine 2009",
+      "Buckley NA, Eddleston M, Li Y, Bevan M, Robertson J. Oximes for acute organophosphate pesticide poisoning, Cochrane Database of Systematic Reviews 2011",
+      "Eddleston M et al. Multiple-dose activated charcoal in acute self-poisoning: a randomised controlled trial, Lancet 2008",
+      "Senanayake N, de Silva HJ, Karalliedde L. A scale to assess severity in organophosphorus intoxication: POP scale, Human and Experimental Toxicology 1993",
+      "Mental Healthcare Act 2017, Government of India - Section 115",
+      "Pillay VV. Modern Medical Toxicology, 4th edition, Jaypee, 2013 - organophosphates and carbamates",
+    ],
+  },
+  {
+    id: "emergency-case-2",
+    title: "OSCE: anaphylaxis after an intramuscular injection in the clinic",
+    kind: "osce",
+    subjectId: "emergency",
+    opening:
+      "A 35-year-old man who received 75 mg of intramuscular diclofenac in the gluteal region for acute low back pain 5 minutes ago calls out from the injection room that he is itching all over; the nurse reports a flushed face with hives, swollen lips, an audible wheeze, a pulse of 124 per minute and a blood pressure of 84/50 mmHg. The station provides a manikin, an emergency tray and a monitor, and asks you to manage him and then answer the examiner's questions.",
+    minutes: 10,
+    frequency: "core",
+    sections: [
+      {
+        heading: "Reading the station and the first ten seconds",
+        points: [
+          "Read the whole task card before touching anything, because OSCE marks sit on a checklist and the card usually tells you what is on it: recognise, call for help, adrenaline, position, oxygen, fluids, reassess, observe, document.",
+          "Say what you see and what it means in one sentence: 'Urticaria, lip swelling, wheeze and hypotension within minutes of an intramuscular injection - this is anaphylaxis, and I am giving intramuscular adrenaline now.' Naming the diagnosis aloud earns the recognition mark and fixes the sequence.",
+          "Delegate by name and task - 'Sister, please call 108 and bring the oxygen cylinder; brother, please stay at his head and keep talking to him' - because the examiner watches whether your instructions can actually be carried out.",
+          "Put on gloves and check the ampoule aloud - adrenaline, 1 mg in 1 mL (1:1000), in date - because drawing up the wrong concentration is the error the station is built to catch.",
+          "Do not stop to take a history, examine the back or hunt for the drug chart; everything else waits for the first dose of adrenaline, which must be in within 60 seconds of the diagnosis.",
+        ],
+      },
+      {
+        heading: "Recognise and assess: ABCDE spoken aloud",
+        points: [
+          "Airway: ask him to speak and listen for hoarseness or stridor, and look at the tongue and lips - 'his voice is hoarse and the lips are swollen, so the airway is threatened.'",
+          "Breathing: count the respiratory rate, look for accessory muscle use and cyanosis, listen for wheeze and read the SpO2 - 'respiratory rate 28, wheeze on both sides, SpO2 91% on air.'",
+          "Circulation: pulse rate and volume, blood pressure, capillary refill and skin colour - 'pulse 124 and thready, BP 84/50, capillary refill 4 seconds, so he is in shock.'",
+          "Disability and exposure: level of consciousness on AVPU, a capillary glucose, and a look at the whole skin for urticaria and angioedema, remembering that skin signs are absent in up to 20% of fatal reactions and that hypotension after a known trigger is enough for the diagnosis.",
+          "State the two diagnostic patterns you are applying - sudden onset of skin or mucosal changes with airway, breathing or circulation compromise, or sudden hypotension after exposure to a known allergen - and that he fulfils the first.",
+        ],
+      },
+      {
+        heading: "Adrenaline: dose, concentration, route, site and repeat",
+        points: [
+          "Adult: adrenaline 0.5 mg, which is 0.5 mL of 1:1000 (1 mg/mL), intramuscularly into the anterolateral aspect of the middle third of the thigh with a 25 mm needle (38 mm in an obese patient), through clothing if necessary; say the dose, the concentration and the site aloud as you inject.",
+          "Write the time of the dose on the whiteboard or the case sheet, and say that you will repeat the same dose at 5 minutes if the airway, breathing or circulation signs have not improved, and again at 5-minute intervals thereafter.",
+          "The paediatric doses, which the examiner will ask for: over 12 years 0.5 mg (0.5 mL); 6-12 years 0.3 mg (0.3 mL); 6 months to 6 years 0.15 mg (0.15 mL); under 6 months 0.1-0.15 mg; or 0.01 mg/kg of 1:1000 to a maximum of 0.5 mg, measured in a 1 mL syringe.",
+          "Explain why the thigh: peak plasma levels are higher and earlier than from the deltoid, and the subcutaneous, inhaled and deltoid routes deliver too little in a shocked patient whose skin and arm muscles are poorly perfused.",
+          "Say clearly that 1:1000 adrenaline is never given intravenously as a bolus; intravenous adrenaline is 1:10,000 in 50 microgram (0.5 mL) boluses or a low-dose infusion, given only by someone trained, with continuous monitoring, for refractory anaphylaxis.",
+          "If the tray holds an auto-injector, it delivers 0.3 mg (over 30 kg) or 0.15 mg (7.5-25 kg) into the outer thigh and is held in place for 3-10 seconds according to the device; it is an acceptable first dose, and the ampoule is used for the repeat.",
+        ],
+      },
+      {
+        heading: "Positioning, oxygen and fluids",
+        points: [
+          "Lay him flat on the couch or the floor and raise the legs, because circulation is the dominant problem; if breathing were the dominant problem he could sit up with the legs raised, a pregnant woman goes into the left lateral position, and nobody is stood up or walked to a bed, because the empty-ventricle syndrome kills.",
+          "High-flow oxygen 15 L/min through a non-rebreathing mask with the reservoir bag inflated, aiming for an SpO2 of 94-98%.",
+          "Two wide-bore cannulae (18 G or larger) and a rapid bolus of 500-1000 mL of a balanced crystalloid or 0.9% saline over 5-10 minutes for the hypotension, repeated according to the blood pressure; a child gets 10 mL/kg, repeated, and large volumes may be needed because a third of the plasma volume can leak out in 10 minutes.",
+          "Attach the monitor - SpO2, non-invasive blood pressure every 2-3 minutes at first, and a three-lead ECG - because adrenaline can cause tachyarrhythmia and ischaemia and the monitor is how you see the response.",
+          "Keep the diclofenac ampoule and the drug chart, give no further dose of anything from the same class, and if the trigger had been an infusion, stop the infusion and leave the cannula in place.",
+        ],
+      },
+      {
+        heading: "Adjuncts and what not to reach for",
+        points: [
+          "For persistent wheeze after adrenaline: nebulised salbutamol 5 mg (2.5 mg under 5 years) driven by oxygen; for stridor from laryngeal oedema: nebulised adrenaline 5 mL of 1:1000 (child 0.5 mL/kg to a maximum of 5 mL) as a bridge while intramuscular adrenaline is repeated.",
+          "If he were on a beta-blocker and did not respond: glucagon 1-2 mg IV over 5 minutes, repeatable (child 20-30 microgram/kg, maximum 1 mg), because the beta-2 response to adrenaline is blocked.",
+          "After stabilisation, for skin symptoms only: chlorphenamine 10 mg IM or slow IV (child 6-12 years 5 mg, 6 months to 6 years 2.5 mg, under 6 months 250 microgram/kg) and hydrocortisone 200 mg IV (child 6-12 years 100 mg, 6 months to 6 years 50 mg, under 6 months 25 mg), saying aloud that these are third-line, that they do nothing for airway, breathing or circulation, and that the 2021 Resuscitation Council UK algorithm removed them from the initial treatment.",
+          "If the airway is closing, call for an anaesthetist or the most experienced airway operator at once and prepare for early intubation, because a delayed airway in anaphylaxis is often an impossible one; the surgical airway plan is stated, not improvised.",
+          "Refractory anaphylaxis - airway, breathing or circulation problems persisting after two intramuscular doses - needs an adrenaline infusion (1 mg in 100 mL of 0.9% saline, that is 10 microgram/mL, started at 0.5-1 mL/kg per hour and titrated) with monitoring, further fluid and transfer to critical care; in the clinic, keep giving intramuscular doses every 5 minutes until the ambulance arrives.",
+        ],
+      },
+      {
+        heading: "Reassessment, observation and transfer",
+        points: [
+          "Reassess ABCDE after every intervention and say the findings aloud - at 5 minutes, 'the wheeze is less, BP 98/60, SpO2 96% on oxygen, the lips are still swollen, so I am giving a second 0.5 mg intramuscular dose because the airway signs persist.'",
+          "Every patient with anaphylaxis is transferred to hospital for observation, even if he looks well: a minimum of 6 hours after full resolution for a reaction that responded to a single dose, and 12 hours or overnight admission if it was severe, needed more than one dose, involved asthma, came late in the evening, or if he lives far from care.",
+          "Biphasic reactions - a recurrence without re-exposure - occur in about 3-5%, usually within 4-12 hours, and are the reason a clinic must not send a recovered patient home.",
+          "Where the facility exists, ask for serum mast cell tryptase as soon as possible after treatment, at 1-2 hours, and a baseline at 24 hours; it confirms the mechanism retrospectively and never delays treatment.",
+          "Hand over to the ambulance crew with times - the drug and dose injected, the time of onset, each adrenaline dose with time and route, the fluid given, the observations and the trend - and send the used ampoule and a copy of the record with him.",
+        ],
+      },
+      {
+        heading: "Documentation, disclosure and prevention",
+        points: [
+          "Write a contemporaneous, timed note: the drug, dose, batch number, route and site of the injection and who gave it; the time of onset and the features; each set of observations; each dose of adrenaline with time, dose, concentration, route and site; other drugs and fluids; the response; the time of transfer; and the advice given.",
+          "Label the record in red - 'Anaphylaxis to diclofenac (NSAID)' - put the same label on every prescription and a wallet card, and tell him and his family in plain words what happened and what to avoid, including other NSAIDs (ibuprofen, naproxen, aceclofenac, aspirin), because NSAID hypersensitivity often cross-reacts within the class.",
+          "Report the reaction to the Pharmacovigilance Programme of India on the suspected ADR form, or to the district immunisation officer within 24 hours as an AEFI if the trigger had been a vaccine, and record the ampoule and batch number.",
+          "At discharge from hospital he needs a written anaphylaxis action plan, two adrenaline auto-injectors (0.3 mg for over 30 kg; 0.15 mg for 7.5-25 kg) or, where they are unavailable, adrenaline ampoules with a labelled 1 mL syringe and hands-on training for the family, and referral to an allergist for confirmation and advice on safe analgesics such as paracetamol.",
+          "Audit the clinic afterwards: an anaphylaxis tray with adrenaline 1:1000 ampoules checked monthly, 1 mL syringes and 25 mm needles, oxygen with a reservoir mask, cannulae and saline, a nebuliser and a wall algorithm; every patient asked about drug allergy before every injection and kept for 20-30 minutes after injectable antibiotics, NSAIDs, iron and vaccines; and adrenaline drawn up before anti-snake venom or an iron infusion.",
+        ],
+      },
+    ],
+    summaryStatement:
+      "This is a 35-year-old man who developed generalised urticaria, lip angioedema with hoarseness, bilateral wheeze with an SpO2 of 91% and hypotension of 84/50 mmHg within 5 minutes of 75 mg of intramuscular diclofenac, fulfilling the clinical criteria for anaphylaxis with airway, breathing and circulation compromise; he was given adrenaline 0.5 mg of 1:1000 intramuscularly into the anterolateral thigh at 0 and 5 minutes, laid flat with the legs raised, given oxygen at 15 L/min and a 1 L crystalloid bolus, with nebulised salbutamol for persistent wheeze, and is being transferred for a minimum of 12 hours of observation with a timed record, a red allergy label and an adverse drug reaction report.",
+    differential: [
+      {
+        diagnosis: "Vasovagal syncope after the injection",
+        forIt:
+          "Faintness, pallor, sweating and hypotension within minutes of an injection are common and benign, especially in a young man who stands up straight after an intramuscular injection.",
+        againstIt:
+          "A vasovagal reaction produces bradycardia, not a pulse of 124, and never urticaria, angioedema or wheeze, and it recovers within a minute or two of lying flat; when in doubt adrenaline is given, because the cost of a missed anaphylaxis is death and the cost of an unnecessary intramuscular dose is a fast pulse.",
+      },
+      {
+        diagnosis: "Acute severe asthma",
+        forIt:
+          "Wheeze, tachycardia, tachypnoea and hypoxaemia in a man who may have undiagnosed asthma, and NSAIDs precipitate bronchospasm in aspirin-exacerbated respiratory disease.",
+        againstIt:
+          "Asthma does not cause urticaria, lip swelling or hypotension, and the link to the injection is too tight; NSAID-induced bronchospasm with any airway or circulation compromise is treated as anaphylaxis, so salbutamol is an adjunct here and not the answer.",
+      },
+      {
+        diagnosis: "Isolated urticaria or angioedema without anaphylaxis",
+        forIt:
+          "A drug can cause hives and lip swelling alone, and an anxious, itching patient may hyperventilate and feel faint.",
+        againstIt:
+          "Wheeze, hoarseness, an SpO2 of 91% and a blood pressure of 84/50 mmHg are breathing and circulation compromise, which converts a skin reaction into anaphylaxis; a rash alone with normal observations would be watched and given an antihistamine, but the moment any airway, breathing or circulation sign appears adrenaline is given.",
+      },
+      {
+        diagnosis: "Panic attack with hyperventilation",
+        forIt:
+          "Fear after a painful injection, tingling of the hands, a sense of throat tightness and a fast pulse can look alarming.",
+        againstIt:
+          "The blood pressure is normal or high in panic, there is no urticaria, angioedema, wheeze or hypoxaemia, and carpopedal spasm with perioral tingling is the clue; none of that fits a man with hives and a blood pressure of 84/50 mmHg.",
+      },
+    ],
+    investigations: [
+      {
+        test: "Continuous pulse oximetry, blood pressure every 2-3 minutes and a cardiac monitor",
+        why: "Anaphylaxis is a clinical diagnosis and no test precedes adrenaline; the monitor shows whether the treatment is working and whether adrenaline is causing an arrhythmia.",
+        expected: "SpO2 rising above 94% on oxygen and systolic BP above 100 mmHg within 5-10 minutes of adrenaline and fluid; persistent compromise after two doses defines refractory anaphylaxis.",
+      },
+      {
+        test: "Capillary blood glucose",
+        why: "Every collapsed patient has a glucose checked, because hypoglycaemia mimics and complicates shock.",
+        expected: "Normal; adrenaline may raise it transiently.",
+      },
+      {
+        test: "12-lead ECG once stable",
+        why: "The reaction itself and adrenaline can cause myocardial ischaemia (Kounis syndrome) and arrhythmias, particularly in older patients or after an accidental intravenous bolus.",
+        expected: "Sinus tachycardia; ST changes or a new arrhythmia mean a medical assessment before discharge.",
+      },
+      {
+        test: "Serum mast cell tryptase at 1-2 hours after onset and a baseline sample at 24 hours or at follow-up",
+        why: "Confirms mast cell degranulation retrospectively and helps the allergist separate anaphylaxis from its mimics; it is drawn only after treatment has started.",
+        expected: "A peak above 11.4 microgram/L, or a rise of more than 20% plus 2 microgram/L above baseline, supports anaphylaxis; a normal level does not exclude it, especially in food-triggered reactions.",
+      },
+      {
+        test: "Peak expiratory flow once he can perform it, and a chest X-ray only if wheeze or hypoxaemia persists",
+        why: "Documents residual bronchospasm and excludes aspiration or pneumothorax in a patient who stays breathless after the reaction.",
+        expected: "Peak flow returning towards predicted within hours; the film is usually normal.",
+      },
+      {
+        test: "Allergy work-up at 4-6 weeks: skin prick and intradermal testing where validated, specific IgE, and a supervised challenge with an alternative analgesic",
+        why: "Confirms the culprit, separates a single-NSAID IgE-mediated reaction from cross-reactive COX-1 hypersensitivity, and tells him which painkillers he can safely use.",
+        expected: "Diclofenac positive with tolerance of paracetamol and, often, of a selective COX-2 inhibitor such as etoricoxib under supervision; the result is written on the allergy card.",
+      },
+    ],
+    management: [
+      {
+        heading: "First minute: recognise and give adrenaline",
+        points: [
+          "**Adult: adrenaline 0.5 mg = 0.5 mL of 1:1000 (1 mg/mL) IM into the anterolateral mid-thigh; repeat every 5 minutes while airway, breathing or circulation signs persist.**",
+          "**Child: over 12 years 0.5 mg; 6-12 years 0.3 mg; 6 months to 6 years 0.15 mg; under 6 months 0.1-0.15 mg; or 0.01 mg/kg to a maximum of 0.5 mg**, same route and repeat interval.",
+          "Never 1:1000 intravenously; there is no absolute contraindication to intramuscular adrenaline in anaphylaxis, including ischaemic heart disease and pregnancy.",
+          "Call for help and the ambulance (108) as the first dose goes in; remove or stop the trigger without delaying adrenaline.",
+        ],
+      },
+      {
+        heading: "Position, oxygen and fluids",
+        points: [
+          "Flat with the legs raised (sitting up with the legs raised if breathing is the dominant problem; left lateral in pregnancy); never stand the patient up.",
+          "Oxygen 15 L/min by non-rebreathing mask; SpO2 target 94-98%.",
+          "**Crystalloid 500-1000 mL rapidly in an adult, 10 mL/kg in a child, repeated against the blood pressure**, through two wide-bore cannulae.",
+          "Monitor SpO2, BP and ECG continuously; one person records the times.",
+        ],
+      },
+      {
+        heading: "Adjuncts, refractory anaphylaxis and the airway",
+        points: [
+          "Nebulised salbutamol 5 mg (2.5 mg under 5 years) for wheeze; nebulised adrenaline 5 mL of 1:1000 (child 0.5 mL/kg, maximum 5 mL) for stridor - adjuncts, never substitutes.",
+          "Glucagon 1-2 mg IV over 5 minutes (child 20-30 microgram/kg, maximum 1 mg) if on a beta-blocker and not responding.",
+          "**Refractory (no improvement after two IM doses): adrenaline infusion of 1 mg in 100 mL of 0.9% saline (10 microgram/mL) at 0.5-1 mL/kg/h titrated, with monitoring, plus further fluid and critical care transfer**; in the clinic, continue IM doses every 5 minutes until help arrives.",
+          "Chlorphenamine 10 mg IM or slow IV and hydrocortisone 200 mg IV (child 6-12 years 5 mg and 100 mg; 6 months to 6 years 2.5 mg and 50 mg; under 6 months 250 microgram/kg and 25 mg) only after stabilisation and only for skin symptoms or asthma.",
+          "Call for airway expertise at the first sign of stridor, hoarseness or tongue swelling.",
+        ],
+      },
+      {
+        heading: "Observation, transfer and discharge",
+        points: [
+          "Transfer every case; observe at least 6 hours after resolution, and 12 hours or overnight if the reaction was severe, needed repeat adrenaline, involved asthma, came in the evening or the home is remote; biphasic reactions occur in 3-5% within 4-12 hours.",
+          "Tryptase at 1-2 hours and 24 hours where available.",
+          "Discharge with a written action plan, two auto-injectors (0.3 mg over 30 kg, 0.15 mg for 7.5-25 kg) or ampoules with a 1 mL syringe and training, an allergy card and an allergy clinic referral.",
+        ],
+      },
+      {
+        heading: "Documentation, reporting and prevention",
+        points: [
+          "Timed record: the injection (drug, dose, batch, route, site, by whom), onset, features, observations, each adrenaline dose (time, dose, concentration, route, site), other drugs and fluids, response, transfer time, advice given, and open disclosure to the patient and family.",
+          "Red allergy label on the record and every prescription; ADR report to the Pharmacovigilance Programme of India (AEFI report within 24 hours if a vaccine).",
+          "Clinic prevention: ask about allergy before every injection, keep patients 20-30 minutes after injectable antibiotics, NSAIDs, iron and vaccines, keep a checked anaphylaxis tray and a wall algorithm, and draw up adrenaline before anti-snake venom or an iron infusion.",
+        ],
+      },
+    ],
+    viva: [
+      {
+        q: "Suppose this had been a 4-year-old weighing 16 kg after the MMR vaccine - what changes?",
+        a: "Adrenaline 0.15 mg, which is 0.15 mL of 1:1000, intramuscularly into the anterolateral thigh, drawn up in a 1 mL syringe and repeated every 5 minutes; the weight-based dose of 0.01 mg/kg gives 0.16 mg, the same. Oxygen, lie the child flat, a fluid bolus of 10 mL/kg (160 mL) of crystalloid repeated to response, nebulised salbutamol 2.5 mg for wheeze, and the same observation rules. Report it as an AEFI to the district immunisation officer within 24 hours; other vaccines can continue, but this one needs specialist advice before any further dose.",
+      },
+      {
+        q: "Why the thigh and not the deltoid, and why not subcutaneous?",
+        a: "The vastus lateralis is large and stays well perfused in shock, so peak plasma adrenaline is reached in about 8 minutes after an intramuscular thigh injection compared with about 34 minutes after a subcutaneous one, and the deltoid gives lower levels; in a shocked patient with peripheral vasoconstriction the subcutaneous route may deliver nothing at all.",
+      },
+      {
+        q: "What is the intravenous dose of adrenaline, and when would you use it?",
+        a: "Only for refractory anaphylaxis, under continuous monitoring, by someone trained: boluses of 50 microgram, which is 0.5 mL of 1:10,000, titrated, or an infusion of 1 mg in 100 mL of saline started at 0.5-1 mL/kg per hour. In the clinic the answer is repeated intramuscular doses every 5 minutes, because an intravenous bolus of 1:1000 causes hypertensive crisis, ventricular arrhythmia and myocardial infarction and is the classic fatal error.",
+      },
+      {
+        q: "How long do you observe, and why?",
+        a: "At least 6 hours after complete resolution for a reaction that responded to a single dose of adrenaline; 12 hours or overnight admission if the reaction was severe, needed more than one dose, involved asthma or a previous biphasic reaction, occurred in the evening, or the patient lives far from care. Biphasic reactions occur in 3-5%, typically within 4-12 hours, and can be fatal.",
+      },
+      {
+        q: "What must be written in the record?",
+        a: "The drug, dose, batch number, route, site and the person who injected; the time of onset and the features on ABCDE; each set of observations with time; each adrenaline dose with time, dose, concentration, route and site; other drugs and fluids; the response and the time of transfer; the allergy label; the advice given and the ADR report. A record without times is indefensible.",
+      },
+      {
+        q: "He asks whether he can take ibuprofen for his back in future.",
+        a: "Not until an allergist has tested him. NSAID reactions can be IgE-mediated to a single drug or cross-reactive across all COX-1 inhibitors, and the history cannot tell them apart; he uses paracetamol for now, and a selective COX-2 inhibitor may be tolerated after a supervised challenge. The label 'NSAID anaphylaxis' stays on the record until then.",
+      },
+      {
+        q: "What if he is on propranolol for migraine and does not respond?",
+        a: "Glucagon 1-2 mg IV over 5 minutes, repeated, because it raises cyclic AMP in the heart independently of the blocked beta receptors; continue intramuscular adrenaline, expect a prolonged course and give large fluid volumes. In a child the dose is 20-30 microgram/kg to a maximum of 1 mg.",
+      },
+      {
+        q: "What should the clinic have done to prevent this, and what does the tray hold?",
+        a: "Ask about previous reactions to any painkiller before the injection, prefer oral analgesia where the injection is not needed, keep every patient 20-30 minutes after an intramuscular NSAID, antibiotic, iron or vaccine, and have the tray ready: at least 5 ampoules of adrenaline 1:1000 checked monthly for expiry, 1 mL syringes and 25 mm needles, an oxygen cylinder with a non-rebreathing mask, cannulae and 0.9% saline, a nebuliser with salbutamol, chlorphenamine and hydrocortisone as second-line, a bag-valve-mask, an oropharyngeal airway, a pulse oximeter and a printed algorithm.",
+      },
+    ],
+    pitfalls: [
+      "Giving chlorphenamine or hydrocortisone first and adrenaline last; antihistamines and steroids do not treat airway, breathing or circulation.",
+      "Drawing up the wrong concentration or giving 1:1000 intravenously; say the concentration aloud and never give it into a vein.",
+      "Injecting the deltoid or subcutaneously, or halving the dose because the patient 'looks alright'; the dose is 0.5 mg into the thigh.",
+      "Sitting or standing the patient up, or walking him to a bed, in the middle of the hypotension.",
+      "Letting him leave once he improves, without transfer and observation and without a timed record; a biphasic reaction at home at midnight is the outcome.",
+      "Failing to label the allergy and to report the reaction, so that the next doctor injects the same drug.",
+    ],
+    references: [
+      "Resuscitation Council UK. Emergency treatment of anaphylaxis: guidelines for healthcare providers, 2021",
+      "Cardona V et al. World Allergy Organization Anaphylaxis Guidance 2020, World Allergy Organization Journal 2020",
+      "Muraro A et al. EAACI guidelines: Anaphylaxis (2021 update), Allergy 2022",
+      "Shaker MS et al. Anaphylaxis - a 2020 practice parameter update, systematic review and GRADE analysis, Journal of Allergy and Clinical Immunology 2020",
+      "Simons FER, Roberts JR, Gu X, Simons KJ. Epinephrine absorption in children with a history of anaphylaxis, Journal of Allergy and Clinical Immunology 1998",
+      "Ministry of Health and Family Welfare, Government of India. AEFI Surveillance and Response Operational Guidelines, 2015 - management of anaphylaxis",
+      "Pharmacovigilance Programme of India, Indian Pharmacopoeia Commission - suspected adverse drug reaction reporting form",
+    ],
+  },
+];
+
+const subject: Subject = {
+  id: "emergency",
+  title: "Emergency & Acute Care",
+  blurb: "Resuscitation, anaphylaxis, shock, poisoning, burns, trauma and what the clinic tray must hold.",
+  icon: "Activity",
+  papers: ["III"],
+  topics,
+  cases,
+};
+
+export default subject;

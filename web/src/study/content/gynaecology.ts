@@ -1535,3 +1535,493 @@ topics.push({
     "Shaw's Textbook of Gynaecology, 18th edition, 2024 - polycystic ovarian syndrome",
   ],
 });
+
+const cases: ClinicalCase[] = [
+  {
+    id: "gynaecology-case-1",
+    title: "Woman of 42 with heavy menstrual bleeding and iron deficiency anaemia",
+    kind: "long",
+    subjectId: "gynaecology",
+    opening:
+      "A 42-year-old para 2 live 2 homemaker, with a minilaparotomy tubectomy 12 years ago, presents with heavy regular periods for 8 months - bleeding for 8 days with flooding, clots and 8-10 soaked pads a day on the first three days - together with easy fatiguability and breathlessness on climbing stairs for 3 months; her haemoglobin is 7.6 g/dL, her BMI is 31, and the uterus is enlarged to about 10 weeks' size.",
+    minutes: 30,
+    frequency: "core",
+    sections: [
+      {
+        heading: "How to open the presentation",
+        points: [
+          "Give the identifying data, the parity with the sterilisation status, the presenting complaints in the woman's own order with the duration of each, and the two numbers that define the case - the haemoglobin and the uterine size - before any detail; the examiner decides in the first thirty seconds whether you have understood the case.",
+          "Say: 'Mrs X, a 42-year-old homemaker from a peri-urban area, para 2 live 2 with both deliveries vaginal and a minilaparotomy tubectomy 12 years ago, presents with heavy regular menstrual bleeding for 8 months and easy fatiguability with breathlessness on exertion for 3 months, and has been found to have a haemoglobin of 7.6 g/dL and a uterus enlarged to about 10 weeks' size.'",
+          "Add the negatives that shape the differential at once: no intermenstrual or postcoital bleeding, no offensive discharge, no weight loss, no bruising or epistaxis, no drug or device that could cause the bleeding, and no orthopnoea, palpitations at rest or chest pain.",
+          "State the treatment so far honestly, because it decides the next step: two courses of an unnamed haemostatic tablet from a chemist during the heaviest days, a course of oral iron stopped after 2 weeks for constipation, and no ultrasound or biopsy to date.",
+          "Use FIGO vocabulary from the first sentence - heavy menstrual bleeding, not menorrhagia - and describe the bleeding as chronic AUB, present for most of the last 6 months, so that the classification marks are earned before the history is even complete.",
+        ],
+      },
+      {
+        heading: "History of the presenting complaint: quantify the bleeding",
+        points: [
+          "Describe each cycle against the four FIGO parameters: a frequency of 26-28 days (normal 24-38), regular to within 3 days (normal variation 7-9 days or less), a duration of 8 days (normal 8 or less), and a volume she herself finds excessive - which is the whole of the modern definition of heavy menstrual bleeding.",
+          "Turn the volume into countable events: 8-10 fully soaked pads a day for the first three days, doubling of pads at night, flooding through to clothing on two occasions, clots larger than a rupee coin, and 3 days of housework lost each month; a pictorial blood loss assessment chart score above 100 corresponds to a loss above 80 mL.",
+          "Date the change: periods were 4-5 days with 3-4 pads a day until about 8 months ago, when they lengthened and became heavier without any change in regularity - a heavy but regular pattern points to a structural cause (AUB-L, AUB-A) or to AUB-E rather than to ovulatory dysfunction.",
+          "Ask about pain: secondary dysmenorrhoea beginning a day before the flow and lasting through it, deep dyspareunia, and chronic pelvic pain - the combination of heavy painful periods with a bulky tender uterus is the clinical picture of adenomyosis.",
+          "Ask about the bulk and pressure symptoms of a fibroid - a sense of a lump low in the abdomen, urinary frequency, incomplete bladder emptying, constipation - and about intermenstrual and postcoital bleeding, whose absence is stated deliberately because their presence would move the cervix to the top of the list.",
+        ],
+      },
+      {
+        heading: "History that works through PALM-COEIN",
+        points: [
+          "Structural causes: pressure symptoms and a self-noticed abdominal swelling (AUB-L), heavy painful periods after two deliveries (AUB-A), intermenstrual bleeding (AUB-P), and the risk factors for hyperplasia and carcinoma (AUB-M) - obesity, diabetes, chronic anovulation, tamoxifen and a family history of endometrial, colon or ovarian cancer.",
+          "Coagulopathy screen (AUB-C) in the four-question form: heavy bleeding since menarche, or one of postpartum haemorrhage, surgery-related bleeding or dental extraction bleeding, or two of bruising, epistaxis, gum bleeding and a family history of a bleeding disorder - here every answer is no, and the bleeding after both deliveries and after the tubectomy was unremarkable.",
+          "Ovulatory dysfunction (AUB-O): the cycles are regular and predictable, so anovulation is unlikely, but weight gain, cold intolerance, constipation and hair loss are asked for hypothyroidism, and galactorrhoea and headache for hyperprolactinaemia, because both can present in the forties.",
+          "Iatrogenic causes (AUB-I): no copper device, no anticoagulant or antiplatelet drug, no hormonal preparation, no tamoxifen, no antipsychotic, and no herbal or over-the-counter preparation - each named and denied rather than summarised as 'no drug history'.",
+          "The perimenopausal transition: any hot flushes, night sweats or skipped cycles, because a 42-year-old is close enough to the menopause for AUB-O to become the driver in the next few years, and the plan must anticipate it.",
+        ],
+      },
+      {
+        heading: "History directed at the anaemia",
+        points: [
+          "Characterise the functional impact in the woman's own activities: breathlessness on one flight of stairs but not at rest, fatigue by the afternoon, palpitations on exertion, giddiness on standing on the heaviest days, and no orthopnoea, paroxysmal nocturnal dyspnoea or ankle swelling that would signal decompensation.",
+          "Establish that the anaemia is a consequence of the bleeding and not a parallel disease: a mixed diet with pulses but little green leafy vegetable, tea taken with meals, no pica, no black stools or haematemesis, no altered bowel habit or rectal bleeding, no chronic cough or fever, and no jaundice.",
+          "Record the iron history as it happened: ferrous sulphate from a chemist stopped after 2 weeks for constipation and black stools, no injectable iron, no transfusion, and no deworming in the last year.",
+          "Ask about the symptoms of iron deficiency beyond anaemia - restless legs, hair loss, brittle nails, a sore tongue and a craving for ice - which help when the haemoglobin has been partly corrected by intermittent iron.",
+          "Ask about diabetes, hypertension and thyroid disease, and record the weight history, because a BMI of 31 raises the endometrial risk, lowers the biopsy threshold and affects the choice of hormonal therapy.",
+        ],
+      },
+      {
+        heading: "Menstrual, obstetric, contraceptive, past, family and social history",
+        points: [
+          "Menstrual history: menarche at 13, cycles of 26-28 days lasting 4-5 days for most of her life, the change 8 months ago, the last menstrual period 12 days ago, and no bleeding between periods or after intercourse.",
+          "Obstetric history: two term vaginal deliveries 16 and 14 years ago without postpartum haemorrhage or transfusion, and a minilaparotomy tubectomy 12 years ago at the district hospital; state explicitly that sterilisation does not remove the need for a pregnancy test.",
+          "Past history of tuberculosis, diabetes, hypertension, thyroid disease, jaundice, a bleeding disorder, previous surgery or transfusion, and any earlier pelvic ultrasound or gynaecological treatment.",
+          "Family history of endometrial, colon, breast or ovarian cancer, of fibroids in the mother or sisters, of diabetes, and of a bleeding disorder - a family history of endometrial or colon cancer under 50 raises Lynch syndrome and changes the biopsy rule.",
+          "Socio-economic history in usable terms: the family income and any insurance, the distance to a facility with ultrasound and a gynaecologist, who decides about treatment at home, and her own view of hysterectomy, which in many Indian families is either demanded or refused before the doctor has spoken.",
+        ],
+      },
+      {
+        heading: "General and systemic examination",
+        points: [
+          "General survey: height, weight and a BMI of 31 with the waist circumference, pallor graded in the lower palpebral conjunctiva, tongue and nail beds, koilonychia, angular stomatitis, glossitis, no icterus, no petechiae or ecchymoses, no thyroid enlargement, no acanthosis nigricans, and no lymphadenopathy.",
+          "Vitals with the technique stated: pulse 96 per minute, regular and of good volume, blood pressure 124/80 mmHg sitting with the correct cuff, respiratory rate 18 per minute, afebrile, and no postural fall in blood pressure.",
+          "Cardiovascular examination for the hyperdynamic circulation of anaemia and for decompensation: the jugular venous pressure, a forceful but undisplaced apex, a soft ejection systolic flow murmur at the pulmonary area, no third heart sound, and clear lung bases.",
+          "Look for the systemic causes of bleeding you cannot afford to miss: hepatomegaly or splenomegaly, the stigmata of chronic liver disease, and the signs of hypothyroidism - dry skin, periorbital puffiness and a delayed relaxation of the ankle reflex.",
+          "Breast examination is part of a complete gynaecological long case in a woman over 40 and is done and reported, with a note that the thyroid, breasts, abdomen and pelvis were examined with a chaperone present.",
+        ],
+      },
+      {
+        heading: "Abdominal, speculum and pelvic examination",
+        points: [
+          "Abdomen: no visible mass, no scar apart from the tubectomy scar, a firm, non-tender, mobile suprapubic mass reaching about 2 cm above the symphysis pubis whose lower border cannot be reached - a mass arising from the pelvis - with no free fluid and no hepatosplenomegaly.",
+          "Speculum examination with a good light: a healthy-looking multiparous cervix without growth, erosion, polyp or contact bleeding, no discharge, and healthy vaginal walls - the sentence 'the cervix was seen and is healthy' must be said, because a cervical cause is excluded by looking, not by the history.",
+          "Bimanual examination: the uterus enlarged to about 10 weeks' size, firm, with an irregular contour on the posterior surface, mobile, not tender, anteverted, with the fornices free and no adnexal mass or tenderness; the cervix moves with the uterine mass, confirming that the mass is uterine.",
+          "Interpret the findings aloud: an irregular firm uterus favours a fibroid, a uniformly enlarged, globular and tender uterus favours adenomyosis, and a fixed uterus with nodularity in the pouch of Douglas would raise endometriosis or malignancy.",
+          "Close by stating that a per-rectal examination is added if a posterior mass or rectal symptoms are present, and that cervical screening by VIA or a Pap smear is offered at this visit because she has never been screened.",
+        ],
+      },
+    ],
+    summaryStatement:
+      "This is a 42-year-old para 2 live 2 with a tubectomy 12 years ago, presenting with chronic heavy menstrual bleeding of 8 months with regular cycles, flooding and clots, and symptomatic iron deficiency anaemia with a haemoglobin of 7.6 g/dL without cardiac decompensation, in whom examination shows a firm, irregularly enlarged uterus of about 10 weeks' size, free fornices and a healthy cervix; the most probable diagnosis is AUB-L due to a uterine leiomyoma, with adenomyosis and endometrial hyperplasia to be excluded, and because she is obese with persistent bleeding the endometrium must be sampled before hormonal treatment, the plan being iron replacement, tranexamic acid and mefenamic acid for the current cycle, transvaginal ultrasound and endometrial biopsy, and then a levonorgestrel intrauterine system as first-line treatment if the cavity is not distorted and the histology is benign, with referral for hysteroscopic or definitive surgery only if medical treatment fails.",
+    differential: [
+      {
+        diagnosis: "AUB-L: uterine leiomyoma, most likely intramural, possibly with a submucosal component",
+        forIt:
+          "Heavy regular periods with clots and flooding, a firm irregularly enlarged uterus of 10 weeks' size that moves with the cervix, mild pressure symptoms, and an age of 42, which is the peak decade for symptomatic fibroids; fibroids are found in 20-40% of women over 35.",
+        againstIt:
+          "Only a submucosal or cavity-distorting fibroid reliably causes heavy bleeding, so an intramural or subserosal fibroid on ultrasound may be an innocent bystander, and the uterus is not tender or globular; the FIGO type on transvaginal ultrasound, and if needed saline sonohysterography, settles it.",
+      },
+      {
+        diagnosis: "AUB-A: adenomyosis",
+        forIt:
+          "Two vaginal deliveries, uterine enlargement of about 10 weeks, heavy menstrual bleeding, and an age of 42 - adenomyosis presents most often in parous women in their forties and coexists with fibroids in about a third of hysterectomy specimens.",
+        againstIt:
+          "The uterus is irregular rather than uniformly globular and is not tender on examination, and the secondary dysmenorrhoea is mild; a junctional zone of 12 mm or more on MRI, or myometrial cysts, asymmetrical wall thickening and a poorly defined junctional zone on transvaginal ultrasound, would support it.",
+      },
+      {
+        diagnosis: "AUB-M: endometrial hyperplasia with or without atypia, or endometrial carcinoma",
+        forIt:
+          "Obesity with a BMI of 31 is a state of unopposed peripheral oestrogen, she is over 40, the bleeding has persisted for 8 months, and hyperplasia is found in a few per cent of women with AUB in this age group with carcinoma in about 1%; anaemia does not distinguish benign from malignant bleeding.",
+        againstIt:
+          "The cycles are regular and ovulatory, there is no intermenstrual bleeding, no diabetes, no family history of Lynch-associated cancers and no tamoxifen exposure; none of these excludes hyperplasia, and only an endometrial biopsy does, which is why it is done before any hormonal treatment.",
+      },
+      {
+        diagnosis: "AUB-C: an inherited bleeding disorder such as von Willebrand disease, or an acquired coagulopathy from liver disease or thrombocytopenia",
+        forIt:
+          "Heavy bleeding with anaemia, and an inherited bleeding disorder is found in about 13% of women with heavy menstrual bleeding, most often von Willebrand disease.",
+        againstIt:
+          "The bleeding began at 41 and not at menarche, both deliveries and the tubectomy passed without excess bleeding, there is no epistaxis, gum bleeding, bruising or family history, and the four-question screen is negative, so von Willebrand testing is not indicated; a platelet count and a prothrombin time are still obtained before any biopsy or surgery.",
+      },
+    ],
+    investigations: [
+      {
+        test: "Urine pregnancy test",
+        why: "Every woman of reproductive age with abnormal bleeding has pregnancy excluded first, and sterilisation does not exempt her - tubectomy fails in about 0.5 per 100 women in the first year, failures keep accumulating over the following decade, and about a third of them are ectopic.",
+        expected: "Negative; a positive result with pain or a mass converts the case into an ectopic pregnancy until proved otherwise and needs a serum beta-hCG and a transvaginal ultrasound the same day.",
+      },
+      {
+        test: "Complete blood count with red cell indices, red cell distribution width, reticulocyte count, platelet count and peripheral smear",
+        why: "To grade the anaemia, characterise it as microcytic hypochromic, obtain the platelet count that the bleeding work-up needs, and set the baseline for judging the response to iron.",
+        expected: "Haemoglobin 7.6 g/dL, MCV below 80 fL, MCH below 27 pg, RDW above 15%, a low reticulocyte count, normal platelets, and a smear showing microcytosis, hypochromia, anisocytosis and pencil cells; a Mentzer index above 13 favours iron deficiency over thalassaemia trait.",
+      },
+      {
+        test: "Serum ferritin with C-reactive protein",
+        why: "Ferritin is the most specific test of iron stores and settles both the diagnosis and the choice between oral and intravenous iron; haemoglobin alone underestimates iron deficiency in Indian women, and a normal ferritin in the presence of inflammation must be read with the CRP.",
+        expected: "Ferritin below 30 microgram/L, and usually below 15 microgram/L, with a normal CRP; a ferritin above 100 microgram/L with a microcytic picture points to thalassaemia trait or anaemia of chronic disease and calls for HbA2 electrophoresis.",
+      },
+      {
+        test: "Serum TSH",
+        why: "Fatigue, weight gain and heavy bleeding overlap with hypothyroidism, which is common in Indian women in their forties and is a correctable cause of AUB-O; prolactin is not needed with regular cycles and no galactorrhoea.",
+        expected: "Normal, 0.4-4.0 mIU/L; a raised TSH with heavy bleeding is treated with levothyroxine and the bleeding reassessed after 3 months before any further hormonal step.",
+      },
+      {
+        test: "Prothrombin time, activated partial thromboplastin time and platelet count, with von Willebrand factor antigen, ristocetin cofactor activity and factor VIII only if the coagulopathy screen is positive",
+        why: "A baseline coagulation profile is needed before endometrial biopsy or surgery, and in the 13% of women with heavy menstrual bleeding who have an inherited bleeding disorder the specific tests change management to tranexamic acid, desmopressin and a haematology referral.",
+        expected: "Normal prothrombin time, aPTT and platelet count in this woman, whose four-question screen is negative; von Willebrand studies are deferred unless the screen becomes positive or the bleeding fails to respond to treatment.",
+      },
+      {
+        test: "Transvaginal ultrasound in the first half of the cycle, with transabdominal views of the whole uterus",
+        why: "It is the first-line imaging for AUB: it maps fibroids by number, size and FIGO type, measures endometrial thickness, looks for the features of adenomyosis and examines the ovaries, and it decides whether an LNG-IUS can be placed in an undistorted cavity.",
+        expected: "A 4 cm posterior wall intramural fibroid (FIGO type 4) not indenting the cavity, an endometrial thickness of 9 mm on day 8, a normal junctional zone and normal ovaries; a type 0-2 submucosal fibroid or an indistinct cavity would call for saline sonohysterography or hysteroscopy.",
+      },
+      {
+        test: "Endometrial sampling by office pipelle biopsy, or hysteroscopy with directed biopsy if the sample is inadequate or a focal lesion is suspected",
+        why: "She is under 45 but obese, with heavy bleeding persisting for 8 months, and she is about to start hormonal therapy - each of these is an indication in NICE NG88 and the FOGSI recommendations, and no ultrasound appearance replaces tissue in this setting.",
+        expected: "Proliferative or secretory endometrium without hyperplasia; hyperplasia without atypia would be treated with an LNG-IUS and rebiopsied at 6 months, while atypical hyperplasia or carcinoma means referral for hysterectomy at a centre with gynaecological oncology.",
+      },
+      {
+        test: "Cervical screening by VIA or Pap smear, with HPV testing where available",
+        why: "She is 42 and has never been screened, so this visit is the screening opportunity; the test is not for the bleeding, and a visibly abnormal cervix would need a punch biopsy rather than cytology.",
+        expected: "VIA negative or cytology negative for an intraepithelial lesion; a positive VIA or an abnormal smear leads to colposcopy and biopsy, and does not alter the treatment of the heavy bleeding unless a lesion is found.",
+      },
+    ],
+    management: [
+      {
+        heading: "Treat the anaemia as part of the treatment, not as an afterthought",
+        points: [
+          "**Oral iron first if she can tolerate it:** ferrous ascorbate or ferrous sulphate giving 100 mg of elemental iron once daily or on alternate days, on an empty stomach or with a source of vitamin C, away from tea and calcium, continued for 3 months after the haemoglobin has normalised to rebuild ferritin; warn about black stools and manage constipation rather than allowing her to stop.",
+          "**Intravenous iron is indicated here** because the haemoglobin is below 8 g/dL with continuing heavy loss and oral iron has already failed on tolerance: ferric carboxymaltose 1000 mg (up to 20 mg/kg by infusion, not more than 1000 mg a week) over 15 minutes with a second dose after a week if the calculated deficit demands it, or iron sucrose 200 mg on alternate days to the calculated total dose.",
+          "**Transfusion is reserved** for haemodynamic instability, active heavy bleeding with a haemoglobin under 7 g/dL, or symptomatic cardiac decompensation; it does not treat iron deficiency, and each unit raises the haemoglobin by only about 1 g/dL.",
+          "Single-dose albendazole 400 mg, dietary counselling on pulses, green leafy vegetables and citrus with meals, and a haemoglobin check at 4 weeks (an expected rise of 1-2 g/dL) and at 3 months, with ferritin at 3 months.",
+        ],
+      },
+      {
+        heading: "Control the bleeding and choose the medical option",
+        points: [
+          "**For the current cycle, while the investigations are completed:** tranexamic acid 1 g orally three times a day for the first 3-5 days of bleeding, with mefenamic acid 500 mg three times a day from the day before the expected period through the heavy days - together they reduce loss by about half, are non-hormonal, and do not interfere with the biopsy.",
+          "**If bleeding is heavy while awaiting the biopsy**, cyclical norethisterone 5 mg three times a day from day 5 to day 26 for 2-3 cycles will control it; the luteal-phase-only regimen (day 19-26) does not work for ovulatory heavy bleeding and must not be prescribed.",
+          "**Once the cavity is shown to be undistorted and the histology benign, the LNG-IUS 52 mg is first-line:** it reduces menstrual loss by 70-95%, lasts 5-8 years, is the only medical option that competes with hysterectomy on satisfaction in trials, and works with an intramural fibroid of this size; counsel that irregular spotting for the first 3-6 months is expected and is not failure.",
+          "**Combined oral contraceptive pills are acceptable but second choice:** at 42 as a non-smoker she is WHO MEC Category 2 for age 40 or more and Category 2 for a BMI of 30 or more, so a pill may be used with blood pressure monitoring, but she does not need contraception and the venous thromboembolism risk is higher than with the LNG-IUS.",
+          "**Injectable DMPA** 150 mg every 3 months produces amenorrhoea in about half by one year and is an option if the device is refused; a **GnRH agonist** (leuprolide 3.75 mg monthly for 3-6 months, with add-back) is reserved for correcting anaemia and shrinking the fibroid before planned surgery because of bone loss.",
+        ],
+      },
+      {
+        heading: "When to refer to the gynaecologist and what to ask for",
+        points: [
+          "**Refer the same day** for haemodynamic instability, a haemoglobin under 7 g/dL with continuing heavy bleeding, or a positive pregnancy test with pain; **refer within 2 weeks** for postmenopausal bleeding, a suspicious cervix, or a biopsy showing atypical hyperplasia or carcinoma, which needs a gynaecological oncology centre.",
+          "**Refer for hysteroscopic surgery** when the ultrasound shows an endometrial polyp or a FIGO type 0-2 submucosal fibroid, because hysteroscopic polypectomy or myomectomy often cures the bleeding outright and preserves the uterus.",
+          "**Refer for a surgical opinion** after a genuine trial of medical treatment - usually 3-6 months of the LNG-IUS or of two medical options - has failed, when a fibroid is over 5 cm or growing, when there are pressure symptoms on the bladder or bowel, when adenomyosis has failed hormonal control, or when the woman has made an informed choice for definitive surgery.",
+          "Ask for the right operation, in the order of increasing invasiveness that the examiner expects: hysteroscopic resection, endometrial ablation for a completed family with a normal cavity, myomectomy for a woman who wishes to keep her uterus, and hysterectomy only after an LNG-IUS trial and a benign biopsy have been documented.",
+          "Write a referral letter that carries the haemoglobin trend, the iron given with dates, the ultrasound report with the FIGO fibroid type, the biopsy result, the medical treatments tried with doses and duration, and her own stated preference about surgery.",
+        ],
+      },
+      {
+        heading: "Follow-up in family practice",
+        points: [
+          "Give her a menstrual diary or a pictorial blood loss assessment chart and review at 4 weeks for the haemoglobin and the tolerance of iron, at the first period on treatment, and at 3 months to decide whether the chosen option is working - a fall to 3-4 pads a day and a haemoglobin above 10 g/dL is success.",
+          "After LNG-IUS insertion review at 6 weeks to check the threads and to counsel through the spotting phase; the device is replaced at 5 years when used for heavy bleeding (8 years for contraception alone), and the ultrasound is repeated only if the symptoms change.",
+          "Reassess the endometrium if the bleeding changes character or persists despite treatment, and remember that a fibroid that grows after the menopause or a uterus that enlarges rapidly needs referral for suspected leiomyosarcoma.",
+          "Use the contact for the rest of preventive care: weight management and a fasting glucose or HbA1c given the BMI of 31, blood pressure and lipids, cervical screening on schedule and clinical breast examination, and anticipate the perimenopausal transition with its own pattern of AUB-O in the next few years.",
+        ],
+      },
+    ],
+    viva: [
+      {
+        q: "The rule says biopsy at 45 and above. Why are you doing a biopsy in a 42-year-old?",
+        a: "Because the age threshold is only one of the triggers. Below 45 the endometrium is sampled when there is persistent AUB with unopposed oestrogen exposure - obesity, PCOS or chronic anovulation - when medical treatment has failed, when there is a risk factor such as Lynch syndrome, or before hormonal treatment when the risk is raised; she is obese, has bled for 8 months and is about to start hormonal therapy, so three of those apply.",
+      },
+      {
+        q: "What is the difference between menorrhagia and heavy menstrual bleeding, and which term should I write?",
+        a: "Menorrhagia was defined by a measured loss above 80 mL per cycle, which no clinic ever measured; heavy menstrual bleeding under FIGO 2018 is excessive menstrual blood loss that interferes with the woman's physical, emotional, social or material quality of life. FIGO asks us to abandon menorrhagia, metrorrhagia and dysfunctional uterine bleeding, so the answer book should say heavy menstrual bleeding and classify it by PALM-COEIN.",
+      },
+      {
+        q: "Would you put a levonorgestrel intrauterine system into a uterus with a fibroid?",
+        a: "Yes, provided the cavity is not distorted - a FIGO type 3 to 8 fibroid does not prevent it, and trials show good control of bleeding with intramural fibroids. A type 0, 1 or 2 submucosal fibroid distorts the cavity, raises the expulsion rate and is better resected hysteroscopically first; expulsion is also somewhat higher when the uterus is much enlarged, so I would counsel her and check the threads at 6 weeks.",
+      },
+      {
+        q: "How do you prescribe norethisterone for heavy menstrual bleeding, and why does the luteal-phase course fail?",
+        a: "Norethisterone 5 mg three times a day from day 5 to day 26 of the cycle, for 2 to 3 cycles, reduces loss by about 80% in the short term because it converts the endometrium into a thin, stable lining for the whole cycle. Giving it only from day 19 to day 26 in ovulatory women adds progestogen to an endometrium that already has its own luteal progesterone and does nothing to the loss, which is why the trials show no benefit.",
+      },
+      {
+        q: "When do you give intravenous iron, and how do you dose it?",
+        a: "When the haemoglobin is below 8 g/dL, when oral iron is not tolerated or has failed after 4 weeks, when the loss is continuing faster than oral iron can replace it, or when surgery is planned within a few weeks. Ferric carboxymaltose is given as 1000 mg in a single 15-minute infusion, not exceeding 20 mg/kg or 1000 mg in a week, with a second dose a week later if the calculated deficit demands it; iron sucrose is given as 200 mg on alternate days to the calculated total, and the haemoglobin is expected to rise by about 2 g/dL in 3-4 weeks.",
+      },
+      {
+        q: "She has had a tubectomy. Why waste a pregnancy test?",
+        a: "Because tubectomy fails in about 0.5 per 100 women in the first year and failures continue to accumulate for a decade, a third of them ectopic, which is the diagnosis that kills in a woman with bleeding; a urine pregnancy test costs a few rupees and takes 3 minutes. It is also the first mark on the examiner's sheet for any woman of reproductive age with abnormal bleeding.",
+      },
+      {
+        q: "Give me the FIGO classification of fibroids and tell me which types cause bleeding.",
+        a: "Type 0 is a pedunculated intracavitary fibroid, type 1 is submucosal with less than 50% intramural, type 2 submucosal with 50% or more intramural, type 3 is intramural but in contact with the endometrium, type 4 is purely intramural, type 5 subserosal with 50% or more intramural, type 6 subserosal with less than 50% intramural, type 7 pedunculated subserosal, and type 8 covers other sites such as cervical or parasitic fibroids; hybrid types are written with both numbers, for example 2-5. Types 0 to 2, and to a lesser degree type 3, are the ones that reliably cause heavy bleeding.",
+      },
+      {
+        q: "Which of your patients would you send for hysterectomy?",
+        a: "The woman with atypical hyperplasia or carcinoma on biopsy; the woman whose bleeding has failed a proper trial of the LNG-IUS or of two medical options; the woman with a large or symptomatic fibroid or adenomyosis not amenable to hysteroscopic surgery or ablation who has completed her family; and the woman who, having been genuinely offered the alternatives, makes an informed choice for it. I would document the LNG-IUS trial and the benign biopsy in the referral, because a hysterectomy done for heavy bleeding without both is the commonest criticism of Indian practice.",
+      },
+    ],
+    pitfalls: [
+      "Presenting the anaemia as the diagnosis and the bleeding as its cause: the examiner wants the bleeding classified by PALM-COEIN, with the anaemia as the complication that sets the urgency.",
+      "Skipping the urine pregnancy test because she is sterilised, or skipping the speculum examination because the history 'was typical of fibroids' - a cervical growth presents with exactly this story.",
+      "Starting a combined pill, a progestogen or an LNG-IUS in an obese woman over 40 with 8 months of bleeding without first sampling the endometrium.",
+      "Prescribing norethisterone only in the luteal phase, or tranexamic acid throughout the cycle instead of on the bleeding days.",
+      "Treating the iron deficiency with a 2-week course of tablets and no ferritin, no deworming and no follow-up haemoglobin, so that the anaemia is still there when she comes back for surgery.",
+      "Advising hysterectomy at the first visit, or agreeing to it on the family's demand, without an LNG-IUS trial, a benign biopsy and a written record that the alternatives were offered.",
+    ],
+    references: [
+      "FIGO Systems 1 and 2 for abnormal uterine bleeding in the reproductive years, Munro et al, International Journal of Gynecology and Obstetrics, 2018 revision",
+      "NICE NG88 Heavy Menstrual Bleeding: Assessment and Management, 2018 (updated 2021)",
+      "FOGSI Good Clinical Practice Recommendations on Abnormal Uterine Bleeding, 2017",
+      "ACOG Practice Bulletin 128: Diagnosis of Abnormal Uterine Bleeding in Reproductive-Aged Women, 2012",
+      "Anaemia Mukt Bharat operational guidelines, MoHFW, Government of India, 2018",
+      "Shaw's Textbook of Gynaecology, 18th edition, 2024 - abnormal uterine bleeding and fibroids",
+      "Jeffcoate's Principles of Gynaecology, 9th edition, 2020 - clinical examination in gynaecology",
+    ],
+  },
+  {
+    id: "gynaecology-case-2",
+    title: "OSCE: contraceptive counselling for a breastfeeding woman 8 weeks after delivery",
+    kind: "osce",
+    subjectId: "gynaecology",
+    opening:
+      "Station instruction: 'Mrs R, a 26-year-old para 2 live 2, delivered a healthy boy by an uncomplicated vaginal delivery 8 weeks ago, is exclusively breastfeeding and has not menstruated since the delivery. She has come to the primary health centre with the baby for the 10-week immunisation and says she does not want another child for at least 3 years. Counsel her on contraception. You have 8 minutes, and the examiner will ask questions in the last 2.'",
+    minutes: 8,
+    frequency: "core",
+    sections: [
+      {
+        heading: "Reading the station and the first minute",
+        points: [
+          "Read the stem twice and extract the four facts that fix the eligibility categories before you speak: 8 weeks postpartum, exclusively breastfeeding, amenorrhoeic, and a wish to space for 3 years - together they mean that combined hormonal methods are WHO MEC Category 3, that every progestogen-only method and both intrauterine devices are Category 1, and that sterilisation is not what she is asking for.",
+          "Greet her by name, introduce yourself with your role, confirm who is with her and whether she wants them present, and ask permission to discuss her family planning - the GATHER sequence (greet, ask, tell, help, explain, return) is what the mark sheet is built on.",
+          "Open with her plan rather than with a method: 'You said you would like a gap of about 3 years before the next child - tell me what you have thought about, and what you or your friends have used before.' Her prior experience and her fears about a method are worth more than any brochure.",
+          "Congratulate her on exclusive breastfeeding and say at once that it matters for contraception too, because it is protecting her now and it shapes which methods are best for her; this earns the LAM mark early and reassures her that breastfeeding will not be interrupted.",
+          "Say aloud that no blood test, no pelvic examination and no smear is needed before she can start most methods, so that the examiner hears that you know the WHO position on unnecessary barriers.",
+        ],
+      },
+      {
+        heading: "The history that decides eligibility: the WHO MEC checklist",
+        points: [
+          "Breastfeeding in detail: whether the baby is fed only on breast milk, day and night, with no water or top feeds, whether any bleeding has occurred since the lochia stopped, and when she expects to go back to work or to start top feeds - the three conditions of the lactational amenorrhoea method are being checked one at a time.",
+          "The delivery: vaginal, uncomplicated, no fever or offensive discharge in the puerperium (puerperal sepsis makes an IUCD Category 4), no postpartum haemorrhage or transfusion, and the date of the 6-week check with the blood pressure recorded there.",
+          "The checklist for hormonal methods, asked as plain questions: headaches with flashing lights or one-sided weakness (migraine with aura), high blood pressure in or outside pregnancy, a clot in the leg or lung in her or a first-degree relative, jaundice or liver disease, a breast lump, diabetes, smoking, and tablets for tuberculosis or epilepsy; each is asked and each answer is stated.",
+          "The checklist for an IUCD: unexplained vaginal bleeding, pelvic pain, abnormal discharge, a partner with urethral discharge or other symptoms, more than one partner for either of them, and any previous IUCD and what happened with it.",
+          "Whether intercourse has resumed, whether any method has been used since delivery, her weight and a recorded blood pressure, and finally her own preferences - a method she controls, one that needs no daily action, one that keeps her periods, or one that stops them - because the counselling has to end in her choice, not yours.",
+        ],
+      },
+      {
+        heading: "Excluding pregnancy and explaining the lactational amenorrhoea method",
+        points: [
+          "Apply the WHO criteria for being reasonably certain that a woman is not pregnant: she is within 6 months of delivery, fully breastfeeding and amenorrhoeic, so she meets one criterion outright and a pregnancy test is not required to start any method today; the other criteria are no intercourse since delivery or the last period, within 4 weeks postpartum, within 7 days of the start of a period, within 7 days of an abortion, or correct and consistent use of a reliable method.",
+          "Explain LAM in her language: as long as the baby is under 6 months, she has had no period, and the baby is fed only breast milk day and night with no long gaps, her chance of pregnancy is about 2 per 100 women; the moment any one of the three changes she needs another method the same day, and the safest plan is to start the next method before that happens.",
+          "Give the practical triggers that end LAM in Indian households - the first period, top feeds or water at 4 months, returning to farm or factory work, the baby sleeping through the night, or the baby falling ill and feeding less - so that she knows what to watch for rather than a rule she cannot apply.",
+          "Say that fertility can return before the first period, because ovulation precedes menstruation, and that the woman who waits for a period to start contraception is the woman who presents with an unplanned pregnancy at 5 months postpartum.",
+          "Explain dual protection in one sentence: none of the methods you are about to describe protects against sexually transmitted infection, so a condom is added whenever either partner may be at risk, and condoms are free from the ASHA and the health centre.",
+        ],
+      },
+      {
+        heading: "Presenting the methods with their MEC categories",
+        points: [
+          "Order the options by effectiveness and say the category for each: the copper IUCD 380A - Category 1 at 4 weeks or more after delivery, 10 years, no hormone, no effect on milk, failure under 1 per 100; the LNG-IUS - Category 1, 5-8 years, lighter periods, available privately; injectable DMPA (Antara) - Category 1 at 6 weeks or more while breastfeeding, every 3 months, failure 4 per 100 in typical use.",
+          "The progestogen-only pill - Category 1 from 6 weeks, taken every day at the same time with a 3-hour window, though not part of the national basket; Chhaya (centchroman 30 mg) - the programme's non-hormonal weekly pill, safe in breastfeeding after 6 weeks, twice a week for 12 weeks and then once a week; the etonogestrel implant - Category 1, 3 years, private sector only.",
+          "The combined pill Mala-N is the one she must not be started on today: breastfeeding between 6 weeks and 6 months is Category 3, because oestrogen may reduce milk volume and the clotting risk of the puerperium has not fully settled; from 6 months it becomes Category 2 and can be considered if she prefers a pill she has used before.",
+          "Condoms - Category 1, the only method with STI protection, 13 per 100 typical-use failure, and best used alongside another method rather than alone for a 3-year gap; sterilisation is not offered, because it is permanent and she wants to space and not to limit.",
+          "Give effectiveness in a form she can picture: with an IUCD fewer than 1 in 100 and with an injectable about 4 in 100 women become pregnant in a year; with pills about 7 in 100 because of missed tablets; with condoms alone about 13 in 100; and with nothing about 85 in 100.",
+          "Check understanding after the list, not after each method: 'Of these, which two would you like me to tell you more about?' - the mark sheet rewards a shared decision, and a candidate who describes eight methods and never lets her speak loses it.",
+        ],
+      },
+      {
+        heading: "Helping her choose and counselling on the copper IUCD she picks",
+        points: [
+          "When she chooses the copper IUCD, say why it fits: it needs nothing from her for 10 years, does not touch her milk or her hormones, can be removed on the day she wants to conceive with immediate return of fertility, and can be inserted today because she is more than 4 weeks postpartum and reasonably not pregnant.",
+          "Explain how it is put in: a speculum and bimanual examination first, a few minutes of cramping, a trained provider using a no-touch technique, and then a check of the threads; explain that it works mainly by preventing the sperm from reaching and fertilising the egg, not by causing abortion, because that belief is the commonest reason for refusal.",
+          "Counsel on the expected side effects and their time course: heavier and more painful periods for the first 3-6 months once her periods return, spotting between periods early on, and a 3-5% chance of expulsion in the first year, highest in the first 3 months and often noticed as the threads being longer or absent.",
+          "Teach the warning signs with the PAINS mnemonic - Period late or missed, Abdominal pain especially with fever, Infection or unusual discharge, Not feeling well with fever or chills, String missing or shorter - and tell her that any of these means coming in the same day rather than waiting for the ASHA.",
+          "Fix the follow-up: a visit after her first period or at 6 weeks, whichever comes first, to check the threads and the bleeding pattern, then only if there are problems; write the type of device and the dates of insertion and expiry on her card.",
+        ],
+      },
+      {
+        heading: "Closing the station",
+        points: [
+          "Ask her to repeat back the three things that matter - what she is protected by today, when she must come in, and what happens if she wants a baby sooner - because teach-back is a marked item and it is how you find the misunderstanding you missed.",
+          "Offer a condom supply for dual protection, tell her where the ASHA and the sub-centre fit in for resupply and doorstep delivery, and link the next contact with the 14-week immunisation visit.",
+          "Document the counselling: the methods discussed, the MEC category assigned, that pregnancy was reasonably excluded on the WHO criteria, her choice, the consent for insertion, and the follow-up date.",
+          "Thank her, invite questions from the husband or mother-in-law if she wants them included, and close with the sentence that shows the examiner the station's point: 'You are well protected now by breastfeeding, and the IUCD will take over from today so that nothing depends on the day the first period comes.'",
+          "If time is short, the items that must not be dropped are the MEC category for the combined pill, the three LAM conditions, the choice being hers, the warning signs and the follow-up date.",
+        ],
+      },
+    ],
+    summaryStatement:
+      "This is a 26-year-old para 2 live 2, 8 weeks after an uncomplicated vaginal delivery, exclusively breastfeeding and amenorrhoeic, with no condition of concern on the WHO Medical Eligibility Criteria checklist and a wish to delay the next pregnancy by at least 3 years; she is currently protected by the lactational amenorrhoea method and is reasonably certain not to be pregnant, combined hormonal contraception is Category 3 for her until 6 months postpartum, every progestogen-only method and both intrauterine devices are Category 1, and after counselling on the full range she has chosen a copper IUCD 380A for insertion today, with condoms for dual protection and a review after her first period.",
+    differential: [
+      {
+        diagnosis: "Copper IUCD 380A inserted today as an interval device (WHO MEC Category 1 at 4 weeks or more postpartum)",
+        forIt:
+          "The most effective reversible method in the national basket, 10 years of cover for a 3-year plan with immediate return of fertility on removal, no hormone and no effect on breast milk, free at the health centre, and insertable today because she is beyond 4 weeks and reasonably not pregnant.",
+        againstIt:
+          "Needs a trained provider and a pelvic examination, periods when they return may be heavier and more painful for 3-6 months, expulsion is 3-5% in the first year, and she must be able to recognise missing threads and infection; it is Category 3 to insert between 48 hours and 4 weeks postpartum and Category 4 with puerperal sepsis, neither of which applies here.",
+      },
+      {
+        diagnosis: "Injectable DMPA 150 mg (Antara) every 3 months (Category 1 at 6 weeks or more while breastfeeding)",
+        forIt:
+          "Highly effective, private, needs no daily action, has no effect on milk, can be started today at 8 weeks under the programme schedule, and the amenorrhoea it produces in half of users by a year suits many breastfeeding women.",
+        againstIt:
+          "Irregular spotting early and a return of fertility delayed by 9-12 months after the last injection, which is acceptable for a 3-year gap but must be said; weight gain of 1-2 kg a year, a reversible fall in bone density, and the need to return every 3 months with a grace period of only 4 weeks late.",
+      },
+      {
+        diagnosis: "A pill she takes herself: the progestogen-only pill daily (Category 1 from 6 weeks) or Chhaya (centchroman) weekly",
+        forIt:
+          "Under her own control, stopped the day she wants to conceive with no delay in fertility, no effect on milk, and Chhaya is free in the programme and needs only a weekly tablet after the first 12 weeks.",
+        againstIt:
+          "The progestogen-only pill has a 3-hour window and a typical-use failure of 7 per 100, and is not part of the national programme basket; Chhaya causes delayed or absent periods in some users and is avoided in polycystic ovary syndrome and chronic liver or kidney disease; both depend on remembering tablets with a new baby in the house.",
+      },
+      {
+        diagnosis: "Combined oral pill Mala-N (Category 3 now, Category 2 from 6 months postpartum) - deferred, not refused",
+        forIt:
+          "Familiar, free, gives regular predictable cycles and can be started from 6 months postpartum if she then prefers a daily pill; from 6 months while breastfeeding it is Category 2.",
+        againstIt:
+          "Between 6 weeks and 6 months in a breastfeeding woman it is Category 3 - the risks usually outweigh the benefits because oestrogen may reduce milk volume and the puerperal thrombosis risk has not fully settled - so it must not be started today, and a candidate who prescribes it fails the station's key item.",
+      },
+    ],
+    investigations: [
+      {
+        test: "Blood pressure measurement",
+        why: "The only examination WHO requires before a hormonal method; hypertension of 160/100 mmHg or more makes combined methods Category 4 and DMPA Category 3, and 140-159/90-99 mmHg makes combined methods Category 3 and DMPA Category 2.",
+        expected: "Normal, below 140/90 mmHg; a raised reading in the puerperium is rechecked and, if persistent, moves her to a progestogen-only or intrauterine method and to evaluation for hypertension.",
+      },
+      {
+        test: "Urine pregnancy test - only if the WHO criteria for being reasonably certain she is not pregnant are not met",
+        why: "A fully breastfeeding amenorrhoeic woman under 6 months postpartum meets the criteria and needs no test; if she has started top feeds, had bleeding, or had unprotected intercourse more than 2 weeks ago outside LAM, a test is done before an IUCD or an injectable.",
+        expected: "Negative; a test cannot exclude a conception within the last 2 weeks, so a woman who does not meet the criteria starts a hormonal method with condoms for 7 days (2 days for the progestogen-only pill) and repeats the test in 2 weeks, while IUCD insertion waits.",
+      },
+      {
+        test: "Speculum and bimanual pelvic examination, immediately before IUCD insertion only",
+        why: "Required to confirm uterine involution, size and position and to exclude purulent cervicitis, pelvic tenderness or an undiagnosed mass before the device is placed; it is not required before pills, injectables or condoms, and demanding it is a barrier.",
+        expected: "A normally involuted, anteverted, mobile, non-tender uterus with a healthy cervix and no discharge; purulent cervicitis or pelvic tenderness makes insertion Category 4 until treated, and a distorted cavity makes it Category 4 permanently.",
+      },
+      {
+        test: "Haemoglobin",
+        why: "Not an eligibility test for any method, but a postnatal anaemia check is part of the 6-week visit, and iron deficiency anaemia makes the copper IUCD Category 2 because it may increase menstrual loss, while hormonal methods remain Category 1 and may help.",
+        expected: "11 g/dL or more; an anaemic woman is treated with iron, the finding is discussed rather than used to refuse the copper device, and an LNG-IUS or DMPA is offered as an alternative that reduces bleeding.",
+      },
+      {
+        test: "Assessment of sexually transmitted infection risk by history, with syndromic examination for discharge if indicated",
+        why: "Current purulent cervicitis or gonococcal or chlamydial infection makes IUCD insertion Category 4, a very high individual likelihood of exposure is Category 3, and the general increased risk of STI is only Category 2; laboratory screening is not required in a low-risk mutually monogamous woman.",
+        expected: "No discharge, no cervical motion tenderness and no partner symptoms in this woman; where infection is found it is treated syndromically with the partner and the IUCD is inserted 3 months later, with condoms and DMPA bridging the gap.",
+      },
+      {
+        test: "Cervical screening by VIA or Pap smear, offered opportunistically",
+        why: "She is not yet in the national screening age band, which begins at 30, so it is mentioned only as a future opportunity; screening is never a precondition for any method, and refusal does not delay the IUCD.",
+        expected: "Not done at this visit; when it is due, cervical intraepithelial neoplasia is Category 1 for the copper device and Category 2 for the LNG-IUS, whereas cervical cancer awaiting treatment is Category 4 for insertion.",
+      },
+    ],
+    management: [
+      {
+        heading: "The structure the examiner is marking",
+        points: [
+          "**GATHER:** Greet her and ensure privacy; Ask about her plans, breastfeeding, health and preferences; Tell her about the methods with their effectiveness and categories; Help her choose; Explain the chosen method in full; Return - fix the follow-up. REDI (rapport, exploration, decision-making, implementing the decision) is the equivalent used in Indian training material and either may be quoted.",
+          "**Apply the MEC as you go, aloud:** 'Because you are breastfeeding and it is 8 weeks, the pill with oestrogen is a Category 3 for you until 6 months - not advised - while the injection, the progestogen pill and both devices are Category 1, no restriction.' The examiner is listening for the categories used correctly, not recited.",
+          "**The two-category rule for peripheral workers:** 1 and 2 mean use the method, 3 and 4 mean do not use it; say it once, because it is how the ANM at the sub-centre will apply what you decide.",
+          "Keep the decision hers: present the range, answer the two she asks about, and never lead with the method the programme or a target favours; a woman who chooses her own method continues it, and the station rewards the candidate who asks 'what would suit you' before 'I would suggest'.",
+        ],
+      },
+      {
+        heading: "Insertion of the copper IUCD and the instructions that go with it",
+        points: [
+          "**Timing:** she is 8 weeks postpartum, beyond the 48-hour postpartum window and past the Category 3 interval from 48 hours to 4 weeks, so an interval insertion is done today under Category 1 without waiting for a period, since pregnancy is reasonably excluded by LAM.",
+          "**Pre-insertion:** consent, a bimanual examination for size and position, a speculum examination for discharge, sounding the uterus (6-8 cm is expected at 8 weeks), and insertion of the Cu-T 380A by the withdrawal technique with a no-touch load, followed by trimming the threads to 3-4 cm and showing her how to feel them after each period.",
+          "**Post-insertion:** paracetamol or ibuprofen for cramps, expected spotting for a few days, no restriction on intercourse or breastfeeding, the PAINS warning signs, and a card recording the device type, the date of insertion and the year of expiry (10 years for the 380A, 5 years for the 375).",
+          "**Follow-up:** after the first period or at 6 weeks to check the threads, then only as needed; missing threads mean a pregnancy test, an ultrasound to locate the device and an abdominal radiograph if it is not seen, and pelvic infection is treated with the device in place unless there is no improvement at 48-72 hours.",
+          "**If she wants to conceive** the device is removed at any time with immediate return of fertility; if a pregnancy occurs with the device in place and the threads are visible, it is removed to reduce miscarriage and preterm birth, after an ectopic pregnancy has been excluded.",
+        ],
+      },
+      {
+        heading: "If she chooses a hormonal or a pill method instead",
+        points: [
+          "**DMPA (Antara):** the first injection today, 150 mg deep intramuscular, with no back-up needed because she is fully breastfeeding and amenorrhoeic under 6 months; the next dose in 3 months with a grace of 2 weeks early to 4 weeks late, and pre-injection counselling on spotting, later amenorrhoea, weight gain and the 9-12 month delay in return of fertility.",
+          "**Progestogen-only pill:** one tablet every day at the same time with no break, started today with no back-up in her situation; a tablet more than 3 hours late (12 hours for desogestrel) means take it at once and use condoms for 48 hours, and vomiting within 2 hours counts as a missed pill.",
+          "**Chhaya (centchroman 30 mg):** twice a week on fixed days for 12 weeks, then once a week on the same day; safe in breastfeeding beyond 6 weeks; warn about delayed periods, and check for polycystic ovary syndrome, cervical hyperplasia, recent jaundice or tuberculosis before prescribing.",
+          "**Mala-N (combined pill):** not before 6 months while breastfeeding; from 6 months it is Category 2 and can be started on day 1-5 of a period without back-up, or at any time with 7 days of condoms once pregnancy is excluded, and the ACHES warning symptoms are taught at that visit.",
+          "**Switching rule:** if she moves from LAM to any method after top feeds have begun or a period has returned, the start is treated as in a non-breastfeeding woman - within 7 days of the start of a period no back-up, otherwise condoms for 7 days (2 days for the progestogen-only pill) after pregnancy is reasonably excluded.",
+        ],
+      },
+      {
+        heading: "Dual protection, the programme, and the postnatal contacts that must not be wasted",
+        points: [
+          "Give condoms (Nirodh) alongside whichever method she chooses, for STI protection and as a bridge for any gap; a woman with a partner at risk of infection is counselled about that separately and privately, and a copper IUCD is still only Category 2 for a general increased risk of STI.",
+          "Use the home-based newborn care visits (days 3, 7, 14, 21, 28 and 42) and the immunisation contacts at 6, 10 and 14 weeks as the fixed points at which the ASHA re-checks LAM, resupplies condoms or Chhaya and reminds her of the DMPA date; the postpartum period is where the Indian method mix is most often lost.",
+          "Under Mission Parivar Vikas the ASHA can deliver contraceptives to the door and the sub-centre stocks Antara and Chhaya; the postpartum IUCD within 48 hours of delivery was the missed opportunity in this case, and should be counselled antenatally in the next pregnancy.",
+          "Record the counselling in the MCP card and the family planning register with the method, the MEC category and the follow-up date, so that whoever sees her next continues the plan rather than starting again.",
+        ],
+      },
+    ],
+    viva: [
+      {
+        q: "Define the four WHO MEC categories and tell me how they are used at a sub-centre.",
+        a: "Category 1 - no restriction on use; Category 2 - the advantages generally outweigh the theoretical or proven risks; Category 3 - the risks usually outweigh the advantages, so the method is not usually recommended unless nothing more appropriate is available or acceptable, and it then needs clinical judgement and close follow-up; Category 4 - an unacceptable health risk, the method must not be used. Where clinical judgement is limited the categories collapse to two: 1 and 2 mean use, 3 and 4 mean do not use.",
+      },
+      {
+        q: "Why is the combined pill Category 3 for this woman, and when does it change?",
+        a: "In a breastfeeding woman combined hormonal contraception is Category 4 under 6 weeks postpartum because the risk of venous thromboembolism is highest then and oestrogen can affect milk, Category 3 from 6 weeks to under 6 months because of the possible effect on milk volume and infant growth, and Category 2 from 6 months. In a woman who is not breastfeeding it is Category 3 under 21 days, or 4 if she also has thrombosis risk factors, Category 2 from 21 to 42 days, or 3 with risk factors, and Category 1 after 42 days.",
+      },
+      {
+        q: "What are the three conditions of the lactational amenorrhoea method, and how effective is it?",
+        a: "The woman is amenorrhoeic, the infant is fully or nearly fully breastfed day and night with no long intervals and no regular supplements, and the infant is under 6 months old; when all three hold the pregnancy rate is about 2 per 100 women over 6 months. When any one fails, and in practice by 6 months for everyone, another method is needed at once, and the best practice is to start it before the conditions break.",
+      },
+      {
+        q: "How can you be reasonably sure a woman is not pregnant without a test?",
+        a: "WHO lists six criteria, of which any one is enough: no intercourse since the last normal period or the delivery; correct and consistent use of a reliable method; within 7 days of the start of a normal period; within 4 weeks postpartum; fully or nearly fully breastfeeding, amenorrhoeic and under 6 months postpartum; or within 7 days of an abortion or miscarriage. If none applies a pregnancy test is done, remembering that it cannot detect a conception within the last 2 weeks.",
+      },
+      {
+        q: "When can an IUCD be inserted after delivery, and what are the categories at each point?",
+        a: "Within 10 minutes of delivery of the placenta, or at any time up to 48 hours postpartum including at caesarean section, both Category 1 for the copper device - the postpartum IUCD; between 48 hours and 4 weeks it is Category 3 because of the higher expulsion and perforation risk in an involuting uterus; from 4 weeks it is Category 1 again as an interval insertion. Puerperal sepsis is Category 4 at any time. The LNG-IUS follows the same timing, except that it is Category 2 in the first 48 hours in a breastfeeding woman.",
+      },
+      {
+        q: "Suppose she had told you she gets migraine with visual aura. What changes?",
+        a: "Migraine with aura is Category 4 for combined hormonal contraception at any age because of the ischaemic stroke risk, so Mala-N would be off the table permanently and not merely deferred. The progestogen-only pill, DMPA, the implant and the LNG-IUS are Category 2 to start, becoming Category 3 if aura develops while on them, and the copper IUCD is Category 1 - so her choice today is unchanged.",
+      },
+      {
+        q: "What must a woman be told before her first injection of DMPA?",
+        a: "That the bleeding pattern will change - irregular spotting in the first months and no periods at all in about half of users by one year - and that this is expected and not harmful; that she may gain 1-2 kg a year; that fertility returns after a delay of up to 9-12 months from the last injection; that she must return every 3 months, with a window of 2 weeks early to 4 weeks late; that it does not protect against STIs; and that it is Category 2 under 18 and over 45 because of a reversible fall in bone density.",
+      },
+      {
+        q: "Her mother-in-law asks why you are not simply doing the operation. What do you say?",
+        a: "That sterilisation is a permanent method for a couple that has decided to have no more children, and this couple wants a gap and not an end; that the Government standards require the woman to be between 22 and 49 with at least one child over 1 year, and her own written consent, not her husband's or her mother-in-law's; and that when they do decide to limit, no-scalpel vasectomy for the husband is the safer and simpler operation, with a semen analysis at 3 months to confirm that it has worked.",
+      },
+    ],
+    pitfalls: [
+      "Prescribing Mala-N at 8 weeks 'because the 6-week check is over' - in a breastfeeding woman it is Category 3 until 6 months, and this is the single item most stations are built around.",
+      "Demanding a pregnancy test, a pelvic examination or a smear before an injectable or a pill in a woman who meets the WHO criteria for being reasonably certain she is not pregnant.",
+      "Counselling the method you or the programme prefer, describing eight methods without a pause, and never asking what she wants or what she has understood.",
+      "Dismissing LAM as unreliable, or the opposite error - letting her rely on it after top feeds have begun, after a period, or beyond 6 months.",
+      "Forgetting dual protection with condoms, and forgetting to say that the IUCD prevents fertilisation rather than causing abortion when the family raises the objection.",
+      "Reciting MEC categories without the timing that qualifies them - the copper IUCD is Category 1 at 8 weeks but Category 3 at 2 weeks, and the combined pill is Category 3 now but Category 2 at 6 months - the category always comes with its condition.",
+    ],
+    references: [
+      "WHO Medical Eligibility Criteria for Contraceptive Use, 5th edition, 2015, with 2024 update",
+      "WHO Selected Practice Recommendations for Contraceptive Use, 3rd edition, 2016",
+      "Family Planning: A Global Handbook for Providers, WHO and Johns Hopkins Bloomberg School of Public Health, 2022 edition",
+      "Reference Manual for IUCD Services and PPIUCD Reference Manual, MoHFW, Government of India, 2018",
+      "Reference Manual for Injectable Contraceptive MPA (Antara programme), Family Planning Division, MoHFW, Government of India, 2016",
+      "Standards for Female and Male Sterilisation Services, Family Planning Division, MoHFW, Government of India, 2006",
+      "Shaw's Textbook of Gynaecology, 18th edition, 2024 - contraception",
+    ],
+  },
+];
+
+const subject: Subject = {
+  id: "gynaecology",
+  title: "Gynaecology",
+  blurb: "Abnormal bleeding, contraception, PCOS, infertility, discharge, menopause and cancer screening.",
+  icon: "HeartPulse",
+  papers: ["IV"],
+  topics,
+  cases,
+};
+
+export default subject;

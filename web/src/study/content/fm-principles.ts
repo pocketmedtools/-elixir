@@ -1970,3 +1970,515 @@ topics.push({
     "Kumar R, Kumar Y (eds). Textbook of Family Medicine, AFPI / Jaypee, 2022",
   ],
 });
+
+const cases: ClinicalCase[] = [
+  {
+    id: "fm-principles-case-1",
+    title: "OSCE communication station: explaining a new diagnosis of type 2 diabetes",
+    kind: "osce",
+    subjectId: "fm-principles",
+    opening:
+      "A 46-year-old bank clerk who came for a routine health check because his father died of a stroke 'from sugar', and who has no symptoms other than tiredness, has a fasting plasma glucose of 162 mg/dL and 168 mg/dL on two mornings a week apart and an HbA1c of 8.1%; his BMI is 27 kg/m2 and his blood pressure 138/86 mmHg. The candidate instruction reads: explain the diagnosis to him, explore his perspective and agree an initial plan in 10 minutes; the examiner marks from a Calgary-Cambridge checklist and a global rating.",
+    minutes: 10,
+    frequency: "core",
+    sections: [
+      {
+        heading: "Reading the station and the first minute",
+        points: [
+          "Read the candidate instruction twice and pick out the three tasks it names - explain the diagnosis, explore his perspective, agree a plan - because the checklist is written from the same sentence and marks are lost for a task that was never attempted.",
+          "Confirm to yourself that the diagnosis is secure before you walk in: two fasting values above 126 mg/dL on separate days and an HbA1c of 8.1% satisfy the ADA criteria, so this is a diagnosis to be delivered, not a possibility to be hedged.",
+          "Greet him by name, introduce yourself with your name and role, confirm who he is, sit at the same level with the notes closed and no desk between you, and ask whether he is comfortable and whether he would like anyone else present.",
+          "Set the agenda in one sentence - 'your blood test results are back and I would like to go through them with you and then plan together what we do next' - and then ask what he already understands about why the tests were done and what he thinks they might show.",
+          "Let him speak without interruption for that first minute; the words he uses about his father, sugar and injections are the vocabulary the whole explanation must be built from.",
+        ],
+      },
+      {
+        heading: "Eliciting ideas, concerns, expectations and effects",
+        points: [
+          "Ideas: ask 'what do you think might be going on?' and listen for the folk model - he believes sugar disease comes from eating sweets and that his father brought it on himself - because a wrong causal idea left unaddressed will surface later as guilt or as non-adherence.",
+          "Concerns: ask 'is there anything in particular that has been worrying you?' and expect the real fear to be his father's stroke and paralysis, followed by the fear of daily insulin injections, and, on gentle probing, whether his employer will find out and whether his daughter's marriage prospects will suffer.",
+          "Expectations: ask 'what were you hoping we could do today?' - he is hoping for a course of tablets that will cure the condition, and this expectation must be named now so that the word 'lifelong' later does not land as a betrayal.",
+          "Effects: ask how his days run - a desk job with a canteen lunch, a two-wheeler commute, no exercise, tea with sugar six times a day and dinner at 10 pm - because the plan will be negotiated inside this timetable, not around an ideal one.",
+          "Ask about feelings directly ('how are you feeling about all this?') and respond to the emotion before the facts; naming it - 'it sounds as if your father's illness is very much on your mind' - is the empathic statement the checklist rewards.",
+          "Screen the rest of the agenda with 'is there anything else you wanted to raise today?' before moving on, so that the door-handle question about erectile difficulty or a numb foot is not dropped into the last thirty seconds.",
+        ],
+      },
+      {
+        heading: "Giving the diagnosis in chunks and checking each one",
+        points: [
+          "Fire a warning shot - 'the results do show something important' - pause, and then say the word plainly: 'the tests show that you have diabetes'; a euphemism such as 'your sugar is a little high' is marked as a failure to disclose.",
+          "Stop and let the silence sit; watch his face, and respond to what you see before going on, because the next chunk cannot be heard until the first has been absorbed.",
+          "Explain the disease in his language and in one picture: the body needs insulin as a key to let sugar out of the blood and into the muscles, in type 2 diabetes the key has become rusty and the body cannot make enough to compensate, so sugar collects in the blood and, over years, damages the blood vessels of the eyes, kidneys, nerves, heart and brain.",
+          "Relate the numbers to the picture - a fasting value above 126 on two mornings and an HbA1c of 8.1%, which is the average of the past three months - and explain that this means the condition has been present quietly for some time, which is why he feels well.",
+          "Check understanding after each chunk with a genuine question ('what does that mean to you so far?', 'would you tell me in your own words what you will tell your wife tonight?') and adjust the pace to the answer rather than to the clock.",
+          "Use no unexplained jargon: HbA1c, insulin resistance, microvascular and glycaemic control are all words that must either be translated or left out.",
+        ],
+      },
+      {
+        heading: "Correcting the ideas and answering the concerns he raised",
+        points: [
+          "Sweets did not cause it: type 2 diabetes comes from a combination of family tendency, weight around the middle, inactivity and age, and Indians develop it about a decade earlier and at a lower body weight than Europeans; he can stop blaming himself and his father.",
+          "It is lifelong but controllable, and the damage his father suffered is what treatment prevents: keeping the sugar, blood pressure and cholesterol in range cuts the risk of stroke, heart attack, kidney failure and blindness by well over half.",
+          "Insulin is not inevitable and not a punishment: most people are managed for years on tablets and lifestyle, some achieve remission with substantial weight loss, and if insulin is ever needed it is because the pancreas has tired, not because he failed.",
+          "Rice is not banned; the portion is - half the plate vegetables, a quarter protein, a quarter rice or millet, no sugar in tea and dinner earlier; the wife who cooks should hear this from you with his permission, since the family is the unit of care.",
+          "He may drive, work and keep the diagnosis to himself; nothing is disclosed to an employer or a marriage broker, and only a doctor treating him needs to know.",
+          "Answer what he asked and not what you would like to lecture on - the complication talk, the drug list and the vaccination schedule belong to later visits unless he asks.",
+        ],
+      },
+      {
+        heading: "Shared decision making on the first plan",
+        points: [
+          "Use the three-talk structure: team talk ('there is more than one reasonable way to start, and I would like us to choose together'), option talk and decision talk.",
+          "Lay out the two reasonable options at an HbA1c of 8.1%: lifestyle change alone for three months and then re-test, or lifestyle change with metformin from today; give the benefit, the side effects, the cost and what each would mean for him, and say honestly that most guidelines and you yourself would favour starting metformin now.",
+          "Elicit his preference and the reasons behind it; if he chooses to try lifestyle alone first, agree a firm three-month re-test with a threshold at which metformin starts, and if he chooses metformin, explain the dose, the stomach upset that settles, taking it with food and that it does not cause low sugar on its own.",
+          "Convert the lifestyle plan into one or two behaviours he names himself - a thirty-minute walk after dinner five days a week and sugarless tea - because a goal the patient sets is kept, and a list the doctor dictates is not.",
+          "Agree what will be checked today and at the next visit - blood pressure, weight, waist, urine albumin, kidney function, lipids, eyes and feet - so that the baseline screening is a shared plan rather than a surprise bill.",
+          "Use teach-back to close the decision: ask him to tell you the plan as he will carry it out, and correct gently until it comes back right.",
+        ],
+      },
+      {
+        heading: "Closing the station: summary, safety net, follow-up and the family",
+        points: [
+          "Summarise in three sentences what has been found, what it means and what has been agreed, and ask whether that matches his understanding.",
+          "Safety-net specifically: return sooner if he passes much more urine, becomes very thirsty, loses weight, vomits, cannot keep food down, notices any wound on the foot that is not healing or any change in vision, and state where to come and by when.",
+          "Give a written plan in the language he reads, with the drug, the dose, the walk, the tea, the review date and the phone number of the clinic; a plan that exists only in the room is forgotten by the bus stop.",
+          "Offer the next appointment in two weeks, ideally with his wife, and ask permission to speak with her about cooking; note that his brother and children should have a fasting sugar and blood pressure checked, because the family history now runs on both sides.",
+          "Finish with 'is there anything else you would like to ask me today?', thank him, and, in the examiner's sight, record the ICE, the decision and the safety net in two lines - the record is part of the station.",
+        ],
+      },
+      {
+        heading: "What the examiner's checklist actually rewards",
+        points: [
+          "Marks sit under process headings, not knowledge headings: initiating the session, gathering the patient's perspective, explanation in chunks with checking, shared planning, closing with a safety net, and the two continuous threads of structure and rapport.",
+          "The global rating rewards flexibility - a candidate who responds to the emotional cue about the father and comes back to the plan afterwards outscores one who covers every fact in the right order and never looks up.",
+          "Time is a marked skill: about a minute for opening and agenda, three for perspective, four for explanation and plan, and a full minute for closing - a station that ends without a safety net or a follow-up loses a whole domain.",
+          "The role-player has a scripted hidden concern (the insulin fear) and a scripted question ('can it be cured?'); both must be elicited and answered honestly, and the answer to the cure question is 'controllable, and sometimes reversible with weight loss, but not cured by a course of medicine'.",
+          "Evidence is quoted lightly and only in service of the patient: the DiRECT remission data and the UKPDS metformin benefit are worth one sentence each if he asks, and no sentence at all if he does not.",
+        ],
+      },
+    ],
+    summaryStatement:
+      "Mr X, a 46-year-old overweight bank clerk with a first-degree family history of diabetes and stroke, has newly diagnosed, asymptomatic type 2 diabetes established on two fasting plasma glucose values of 162 and 168 mg/dL and an HbA1c of 8.1%; his ideas centred on sweets as the cause, his concerns on his father's stroke and on insulin, and his expectation on a curative course of tablets, and after a jargon-free explanation given in chunks we agreed by shared decision on a walking and diet plan he set himself, metformin 500 mg with dinner, baseline complication screening, a written plan, a safety net and review in two weeks with his wife.",
+    differential: [
+      {
+        diagnosis: "Type 2 diabetes mellitus",
+        forIt:
+          "Age 46, central adiposity with a BMI of 27 (obese by the Asian-Indian cut-off), a first-degree relative with diabetes, an insidious asymptomatic course, no weight loss or ketosis, and two fasting values above 126 mg/dL with an HbA1c of 8.1% - the criteria are met and the phenotype is typical.",
+        againstIt:
+          "Nothing substantive; the only work left is to exclude the mimics below by history and a few questions, not to doubt the diagnosis in front of the patient.",
+      },
+      {
+        diagnosis: "Latent autoimmune diabetes in adults or classical type 1 diabetes",
+        forIt:
+          "Any adult can present with autoimmune diabetes, and it is suspected when the patient is lean, has lost weight, has ketonuria, has a personal or family history of thyroid or other autoimmune disease, or fails oral drugs within a year or two.",
+        againstIt:
+          "He is overweight, asymptomatic, without weight loss or ketosis and with a type 2 family history; GAD antibodies and C-peptide are reserved for the lean or rapidly failing patient, not ordered routinely.",
+      },
+      {
+        diagnosis: "Secondary diabetes - glucocorticoid-induced, pancreatic or endocrine",
+        forIt:
+          "Steroids hidden in bone-setter and herbal preparations, chronic pancreatitis from alcohol, haemochromatosis, Cushing's syndrome and acromegaly all present as new hyperglycaemia and are missed unless asked about.",
+        againstIt:
+          "No steroid exposure on direct questioning, alcohol within limits, no abdominal pain, steatorrhoea or weight loss, and no cushingoid or acromegalic features on inspection.",
+      },
+      {
+        diagnosis: "Laboratory misclassification - a spurious single value or an unreliable HbA1c",
+        forIt:
+          "HbA1c reads falsely high in iron deficiency and falsely low in haemoglobinopathies, haemolysis and recent transfusion, and a single glucose value can be a non-fasting or a mislabelled sample.",
+        againstIt:
+          "Two separate fasting samples and an HbA1c all exceed the threshold, the haemoglobin is normal, and the ADA criteria for diagnosis without unequivocal symptoms are satisfied.",
+      },
+    ],
+    investigations: [
+      {
+        test: "Confirmation that the diagnosis rests on two abnormal tests",
+        why: "A diagnosis of diabetes must never be delivered on a single value; the ADA requires a second abnormal result from a separate sample, or two different abnormal tests from the same sample, unless there is unequivocal hyperglycaemia with symptoms.",
+        expected: "Fasting plasma glucose 162 and 168 mg/dL a week apart plus HbA1c 8.1% - criteria met, so the station is about disclosure, not doubt.",
+      },
+      {
+        test: "Blood pressure, weight, BMI and waist circumference",
+        why: "Cardiovascular disease is what actually kills in type 2 diabetes, and these are the numbers the plan negotiates - the walk, the plate and the 5-7% weight loss target.",
+        expected: "BP 138/86 mmHg, BMI 27 kg/m2 (obese by the Asian-Indian cut-off of 25), waist above 90 cm; target BP below 130/80 mmHg over the coming months.",
+      },
+      {
+        test: "Serum creatinine with eGFR and urine albumin-creatinine ratio",
+        why: "Type 2 diabetes has usually been present for years at diagnosis, so nephropathy is screened at the first visit, and the eGFR decides whether metformin can be started at full dose.",
+        expected: "eGFR above 60 mL/min and UACR below 30 mg/g; an eGFR of 30-45 means metformin is not started or is halved, and below 30 it is contraindicated; a UACR of 30 or more adds an ACE inhibitor or ARB.",
+      },
+      {
+        test: "Fasting lipid profile",
+        why: "A moderate-intensity statin is recommended for every person with diabetes aged 40 and above regardless of the baseline LDL, and the profile sets the target and detects the high triglycerides that Indian patients often carry.",
+        expected: "LDL cholesterol to be brought below 100 mg/dL, or below 70 if he has established vascular disease; triglycerides below 150 mg/dL.",
+      },
+      {
+        test: "Dilated fundus examination or retinal photography",
+        why: "About one in five patients has retinopathy at the moment of diagnosis of type 2 diabetes, and sight-threatening disease is treatable if found.",
+        expected: "No retinopathy on this first examination; if any is found, an ophthalmology referral, and in either case a repeat every year.",
+      },
+      {
+        test: "Foot examination with a 10 g monofilament, a 128 Hz tuning fork and the peripheral pulses",
+        why: "Neuropathy and peripheral arterial disease are present at diagnosis in a minority and are the beginning of the pathway to amputation; the examination also opens the conversation about footwear and daily inspection.",
+        expected: "Intact sensation and palpable pulses, recorded as a baseline; loss of protective sensation moves him into the high-risk foot pathway with 3-6 monthly review.",
+      },
+    ],
+    management: [
+      {
+        heading: "The lifestyle prescription, written so it can be followed",
+        points: [
+          "**Plate method:** half vegetables, a quarter dal, egg, fish or chicken, a quarter rice, roti or millet; no second helping of rice, and dinner by 8 pm.",
+          "**Sugar:** none in tea or coffee, no sweetened drinks, fruit whole and not as juice; sweets only at festivals and in a set portion.",
+          "**Activity:** 150 minutes a week of brisk walking in bouts of at least 10 minutes, plus two sessions of resistance work; break up sitting every 30 minutes at the desk.",
+          "**Weight:** a 5-7% loss (about 4-5 kg for him) over six months is the evidence-based target, and 10-15 kg with a structured programme is what produced remission in the DiRECT trial.",
+          "**Tobacco and alcohol:** stop tobacco in every form; alcohol within two standard drinks and never on an empty stomach once on a sulfonylurea or insulin.",
+          "**Sleep and stress:** seven hours with a fixed bedtime; screen for obstructive sleep apnoea if he snores and is sleepy by day.",
+        ],
+      },
+      {
+        heading: "Starting metformin and what to tell him about it",
+        points: [
+          "Metformin 500 mg with dinner for one week, then 500 mg twice daily with meals, titrated over 4-8 weeks to 1000 mg twice daily or the highest tolerated dose; the extended-release form once daily if the immediate-release form upsets his stomach.",
+          "Warn about nausea, loose stools and a metallic taste in the first weeks, which settle; no hypoglycaemia when used alone, no weight gain, and a proven reduction in myocardial infarction and death in overweight patients in the UKPDS.",
+          "Contraindicated if eGFR is below 30, in decompensated liver disease, in acute illness with hypoxia or sepsis and for 48 hours around iodinated contrast; check vitamin B12 every 2-3 years or sooner if neuropathy or anaemia appears.",
+          "If HbA1c remains above target at three months, add a second agent chosen by comorbidity and cost: an SGLT2 inhibitor if there is heart failure, kidney disease or albuminuria, a GLP-1 receptor agonist if weight is the problem and money allows, and otherwise a DPP-4 inhibitor or a sulfonylurea with hypoglycaemia education.",
+          "Start insulin at diagnosis only if he is symptomatic with weight loss, HbA1c above 10%, glucose above 300 mg/dL, ketosis or a serious intercurrent illness - none of which apply, and saying so is what dissolves his fear.",
+        ],
+      },
+      {
+        heading: "Targets, monitoring and protection of the vessels",
+        points: [
+          "**Glycaemia:** HbA1c below 7% for a 46-year-old with no complications, checked every three months until at target and then six-monthly; home glucose monitoring is not essential on metformin alone.",
+          "**Blood pressure:** below 130/80 mmHg; if lifestyle does not achieve it in three months, an ACE inhibitor or ARB first, especially once the UACR is 30 mg/g or more.",
+          "**Lipids:** atorvastatin 10-20 mg at night from the age of 40 irrespective of baseline LDL; aspirin is not routinely used for primary prevention.",
+          "**Annual screening:** UACR and eGFR, dilated fundus, foot examination, dental check, and weight and BMI at every visit.",
+          "**Vaccination:** influenza every year, pneumococcal once, and hepatitis B if not already immune; COVID-19 as per current national advice.",
+        ],
+      },
+      {
+        heading: "Education, the family and the follow-up plan",
+        points: [
+          "A written plan in the language he reads, with the drug, dose and timing, the walk, the tea, the review date and the clinic number; teach-back before he leaves.",
+          "With his permission, the wife who cooks attends the next visit; family-based diabetes education improves HbA1c more than education of the patient alone.",
+          "First-degree relatives - his brother and his adult children - are screened with a fasting glucose and blood pressure, and the children are taught that their risk is modifiable.",
+          "Sick-day rules, foot care rules (daily inspection, no barefoot walking, correct footwear) and the symptoms that should bring him back sooner, all stated and written.",
+          "Register him under the National Programme for NCDs at the Health and Wellness Centre for free metformin and follow-up by the community health officer; review in two weeks, then monthly until targets are met, then every three months.",
+        ],
+      },
+    ],
+    viva: [
+      {
+        q: "What are the diagnostic criteria for diabetes mellitus and how many abnormal tests are needed?",
+        a: "Fasting plasma glucose 126 mg/dL or more, 2-hour plasma glucose 200 mg/dL or more after a 75 g oral glucose load, HbA1c 6.5% or more, or a random plasma glucose of 200 mg/dL or more with classical symptoms or a hyperglycaemic crisis. In the absence of unequivocal hyperglycaemia the diagnosis requires two abnormal results, either from the same sample or from two separate samples; a single abnormal value is not a diagnosis until confirmed.",
+      },
+      {
+        q: "Why elicit the patient's ideas, concerns and expectations before you explain anything?",
+        a: "Because the explanation has to be built on the patient's existing framework or it will not be retained or acted upon; ICE is Pendleton's first task and the patient's-perspective element of Calgary-Cambridge, it reveals the hidden agenda, it shortens the consultation by answering the question the patient actually has, and unexplored wrong ideas reappear later as guilt, non-adherence or a return to an alternative practitioner.",
+      },
+      {
+        q: "What is meant by chunking and checking?",
+        a: "A Calgary-Cambridge explanation skill: information is given in small assimilable pieces, understanding is checked after each piece with a genuine question or a request for teach-back, and the patient's response determines what the next chunk contains and how fast it comes; it replaces the monologue of which patients remember less than half.",
+      },
+      {
+        q: "Define shared decision making and say when it is appropriate.",
+        a: "A process in which clinician and patient share the best available evidence and the patient is supported to consider the options and reach an informed preference, described by Elwyn as team talk, option talk and decision talk. It is appropriate for preference-sensitive decisions where more than one reasonable option exists - starting metformin now or after a lifestyle trial, adding a second drug, statin therapy - and it is not abandonment of the patient to choose alone; the doctor states a recommendation when asked.",
+      },
+      {
+        q: "The patient asks whether diabetes can be cured. What do you say?",
+        a: "That it cannot be cured by a course of medicine and is a lifelong tendency, but that it is controllable, and that in the DiRECT trial nearly half of the people with recent-onset type 2 diabetes who followed a structured weight-loss programme were in remission at one year and about a third at two years, so substantial weight loss can put it into remission without drugs; the honest answer avoids both false hope and nihilism.",
+      },
+      {
+        q: "When would you start insulin at diagnosis in type 2 diabetes?",
+        a: "Symptomatic hyperglycaemia with weight loss or other catabolic features, HbA1c above 10% or plasma glucose above 300 mg/dL, ketonuria or ketoacidosis, pregnancy, a serious intercurrent illness or surgery, and whenever type 1 diabetes cannot be excluded; in each case insulin may later be withdrawn as oral drugs and lifestyle take effect.",
+      },
+      {
+        q: "Is involving the wife a breach of confidentiality?",
+        a: "Not if the patient consents and the reason is explained: the family is the unit of care, she buys and cooks the food, and family involvement improves adherence and HbA1c; the doctor asks the patient first, invites rather than instructs, and shares only what the patient agrees to. Without consent nothing is disclosed to the family, the employer or anyone else.",
+      },
+      {
+        q: "What is safety netting and what would you say in this consultation?",
+        a: "Safety netting is the explicit statement of what is expected to happen, what would be unexpected, what specifically to watch for, what to do and by when - the medico-legal core of a family practice consultation. Here: increasing thirst and urine, weight loss, vomiting, a foot wound, a change in vision, or a low-sugar episode if a sulfonylurea is later added, with the clinic number and a review date of two weeks, said aloud and written on the plan.",
+      },
+    ],
+    pitfalls: [
+      "Delivering a lecture on diabetes before asking what he knows, what he fears and what he expects - the commonest way to fail a communication station.",
+      "Softening the diagnosis into 'a bit of sugar' or 'borderline' when the criteria are met; the patient leaves without knowing he has diabetes and the disclosure mark is lost.",
+      "Unexplained jargon - HbA1c, insulin resistance, microvascular complications - and reciting ideas, concerns and expectations as three consecutive questions without listening to the answers.",
+      "Ignoring the emotional cue about the father's stroke and pressing on with the plan; the global rating falls even if every checklist item is ticked.",
+      "Deciding the treatment for him, or the opposite error of listing options and refusing to recommend when he asks what you would do.",
+      "Running out of time with no summary, no safety net, no follow-up date and no written plan - the closing domain is a whole block of marks.",
+    ],
+    references: [
+      "American Diabetes Association. Standards of Care in Diabetes 2025 - Section 2 (diagnosis and classification), Section 5 (facilitating positive health behaviours) and Section 9 (pharmacologic approaches to glycemic treatment)",
+      "RSSDI Clinical Practice Recommendations for the Management of Type 2 Diabetes Mellitus 2022, International Journal of Diabetes in Developing Countries",
+      "ICMR Guidelines for Management of Type 2 Diabetes, 2018",
+      "Silverman J, Kurtz S, Draper J. Skills for Communicating with Patients, 3rd edition, CRC Press, 2013",
+      "Elwyn G et al. A three-talk model for shared decision making: multistage consultation process. BMJ 2017;359:j4891",
+      "Lean MEJ et al. Primary care-led weight management for remission of type 2 diabetes (DiRECT): an open-label, cluster-randomised trial. Lancet 2018;391:541-551, and the 2-year results, Lancet Diabetes and Endocrinology 2019",
+      "Pendleton D, Schofield T, Tate P, Havelock P. The New Consultation, Oxford University Press, 2003",
+    ],
+  },
+  {
+    id: "fm-principles-case-2",
+    title: "Family assessment long case: uncontrolled diabetes in the wife of a stroke survivor",
+    kind: "long",
+    subjectId: "fm-principles",
+    opening:
+      "A 54-year-old home-maker from a small town, a known type 2 diabetic and hypertensive for 9 years who was well controlled until this year, presents with tiredness, poor sleep, headaches and a rise in HbA1c from 7.2% to 9.4% over the 3 months since her 58-year-old husband, who ran the family's provision shop, was left with a right hemiparesis and expressive aphasia by a left middle cerebral artery infarct; she is his sole caregiver in a four-member three-generation household that also holds her 80-year-old mother-in-law and her unmarried 26-year-old daughter, while the only son lives in another city with his wife and child.",
+    minutes: 40,
+    frequency: "core",
+    sections: [
+      {
+        heading: "How to open the presentation",
+        points: [
+          "Give the identifying data, the presenting complaints in her order with their durations, and then the problem statement in one sentence that already contains the family: 'Mrs X, a 54-year-old home-maker with type 2 diabetes and hypertension for 9 years, presents with three months of fatigue, poor sleep and loss of glycaemic and blood pressure control, coinciding with her husband's disabling stroke, for which she is the sole caregiver.'",
+          "State the household in the second sentence - four members under one roof, three generations, the earning son away - because the examiner in a family case wants the structure before the sugar values.",
+          "Add the relevant negatives early: no osmotic symptoms, no chest pain, no visual loss, no foot ulcer, no intercurrent infection, no new drug such as a steroid, and no thoughts of self-harm on direct questioning.",
+          "Name the instruments you used in the next sentence - a three-generation genogram, a family life line, the family APGAR from three members, SCREEM, the PHQ-9 and the Zarit burden interview - so the examiner knows the assessment is complete before the detail begins.",
+          "Close the opening with the functional statement: she runs the house, bathes, dresses and feeds her husband, cooks for four and sleeps four hours a night.",
+        ],
+      },
+      {
+        heading: "History of the presenting problem and the family life line",
+        points: [
+          "Her control was good until this year: HbA1c 7.2% in January on metformin 1000 mg twice daily and telmisartan 40 mg, with clinic attendance every three months and the drugs bought from a private pharmacy for about 900 rupees a month.",
+          "The stroke three months ago changed everything at once: the shop closed, the hospital bill of 1.8 lakh rupees was met by a moneylender at 3% a month, her own drugs were bought irregularly to save money, meals became whatever could be cooked between his needs, and she stopped her evening walk because he cannot be left alone.",
+          "Ask about mood systematically: she has low mood most days, has lost interest in the television serials and the temple group she loved, sleeps four hours because he needs turning, has lost 3 kg, cries alone, feels guilty about her daughter and denies suicidal thoughts; the PHQ-9 is 14.",
+          "Draw the family life line as a horizontal time axis and plot: the father-in-law's death from stroke 12 years ago; the son's marriage 4 years ago and migration for work 2 years ago; the grandson's birth 2 years ago; the property dispute with the husband's brother 18 months ago; the husband's stroke 3 months ago; the daughter's marriage proposal deferred 2 months ago - and then plot her HbA1c and blood pressure values along the same axis.",
+          "The life line shows the temporal association the case turns on: every measure of her health deteriorates after the stroke, and the pile-up of events in the preceding two years explains why the family had no reserve left when it came.",
+        ],
+      },
+      {
+        heading: "Examination findings to demonstrate",
+        points: [
+          "General: a tired, tearful woman with psychomotor slowing, BMI 29 kg/m2, waist 96 cm, no pallor, no pedal oedema; blood pressure 160/96 mmHg sitting in both arms and 156/94 standing, pulse 88 regular.",
+          "Fundus: mild non-proliferative diabetic retinopathy with a few microaneurysms in the right eye and arteriovenous nipping; feet: intact monofilament sensation at all sites, palpable dorsalis pedis and posterior tibial pulses, dry skin, no deformity or ulcer.",
+          "Cardiovascular and respiratory systems normal; no thyroid enlargement; neurological examination normal apart from slowed responses.",
+          "The husband, examined in the same room with consent: right hemiparesis with power 3/5 in the arm and 4/5 in the leg, spastic tone, expressive aphasia with preserved comprehension, walks with a stick, Barthel index 60 of 100 and modified Rankin scale 3; blood pressure 150/90 mmHg on amlodipine, and on aspirin and atorvastatin.",
+          "The mother-in-law: 80 years, blood pressure 148/84 mmHg on amlodipine, bilateral knee osteoarthritis, walks with a stick, cognitively intact, keen to help but unable to lift.",
+          "Finish the examination section by stating what was looked for and not found - no signs of injury on the wife or the husband, no evidence of neglect of the elderly woman - because a family case examiner asks.",
+        ],
+      },
+      {
+        heading: "Drawing the genogram",
+        points: [
+          "Draw three generations with the index patient marked by a double circle and an arrow: generation one holds the husband's parents (father dead at 62 of stroke, a cross through the square; mother 80, alive, hypertension and osteoarthritis) and the wife's parents (father dead at 70 of myocardial infarction; mother 76, alive, diabetic, living with the wife's brother in another town).",
+          "Generation two is the index couple joined by a horizontal marriage line dated 32 years ago, with the husband's brother (54, diabetic, in the same town) and the wife's brother (50) hanging from their respective parents' lines with their spouses.",
+          "Generation three hangs from the couple's marriage line, eldest on the left: the son (30, married 4 years, migrated 2 years ago) with his wife (27) and their son (2) as generation four, and the daughter (26, unmarried, school teacher).",
+          "Write the age inside every symbol and the significant diagnosis beside it - stroke at 58, type 2 diabetes and hypertension for 9 years, diabetes, hypertension, osteoarthritis - with the age at onset, so that patterns can be read across the page.",
+          "Draw a dotted line around the household of four - husband, wife, daughter and mother-in-law - leaving the son's nuclear family outside it, and then add the relationship lines: a double line between the couple, a triple fused line between mother and daughter, a jagged line between the wife and her mother-in-law, a broken line between the son and his father since the migration, and a broken line with a bar for the cut-off between the husband and his brother.",
+          "Date the genogram, name the informant (the wife, confirmed with the daughter) and draw the ecomap beside it: thick lines to the temple group and the neighbours, a thin line to the Health and Wellness Centre 3 km away, and a thick arrow from the family to the moneylender.",
+        ],
+      },
+      {
+        heading: "Reading the genogram aloud",
+        points: [
+          "Structure: a three-generation household with no earning male member present, a woman of 54 sandwiched between a dependent husband and a dependent mother-in-law, and the only son geographically removed - the genogram shows the caregiver load before a word is spoken.",
+          "Patterns across generations: premature stroke in the husband's paternal line and diabetes in the wife's maternal line converge on the children, so the son and the daughter carry a double vascular and metabolic inheritance and need screening now; diabetes in the husband's brother makes the shop-keeping generation a cluster of one disease.",
+          "Relationships: the cut-off with the husband's brother removes the nearest able-bodied relative from the pool of helpers; the fused line between mother and daughter shows who is silently carrying the household and whose launching has stalled; the jagged line to the mother-in-law is a resource wasted, because she wants to help and is not allowed to.",
+          "Roles: the wife is caregiver, cook, nurse, treasurer and now debtor; the daughter is earner and secondary caregiver; the son is the absent earner; the husband has lost the role of provider and head of household, which is his own loss to address.",
+          "The genogram also shows who can be recruited: the son with money and the son's wife with time, the mother-in-law with companionship and supervision, the temple group with respite - which is what turns a diagram into a plan.",
+        ],
+      },
+      {
+        heading: "The family APGAR and SCREEM",
+        points: [
+          "Family APGAR from the wife: adaptation 1, partnership 0, growth 0, affection 1, resolve 1 - a total of 3 of 10, in the severely dysfunctional band; from the husband, answering by pointing: 7; from the daughter: 5. The discrepancy is the finding - the husband is satisfied with the care he receives and the woman providing it is not.",
+          "State the caveat aloud: the APGAR measures satisfaction with family function as perceived by each member, not function itself, and a score of 3 identifies a member in distress who must be interviewed, not a family to be labelled.",
+          "SCREEM - social: the neighbours and the temple group are a resource, the son's migration and the cut-off brother a pathology; cultural: the shared expectation that a wife nurses her husband alone and that a daughter waits is the central pathology; religious: the temple group offers food, transport and company, a resource she has withdrawn from.",
+          "Economic: pathology - income has stopped, a moneylender loan at 3% a month, no PM-JAY card, no disability certificate, drugs bought irregularly, and the daughter's 18,000 rupees a month with irregular remittances the only inflow; educational: resource - the daughter is a graduate who can read instructions, manage the drugs and run the physiotherapy programme.",
+          "Medical: mixed - the Health and Wellness Centre 3 km away has free metformin, telmisartan and amlodipine that the family has never accessed, no physiotherapist is available locally, and the family's trust in the clinic is high after the hospital experience.",
+          "Summarise the family's resources and pathologies in two sentences, because the plan is built from the resources and aimed at the pathologies.",
+        ],
+      },
+      {
+        heading: "Family life cycle stage, the stressors and the family diagnosis",
+        points: [
+          "Stage: in Carter and McGoldrick's scheme the family is at the launching stage - the son launched, the daughter's launching blocked - overlapping with the family in later life, with an 80-year-old dependent and a couple who should be renegotiating their marriage as a dyad; in Duvall's terms a launching-centre family superimposed on an ageing family, which is the usual overlap of the Indian three-generation household.",
+          "The developmental tasks of this stage - releasing the daughter with appropriate rituals, rebuilding the marital relationship, caring for the older generation - have all been suspended by the stroke, and suspended tasks are what present as symptoms.",
+          "Horizontal stressor: an off-time, unpredictable disabling stroke in the breadwinner at 58; vertical stressors: the family's rule that care is one woman's duty, the paternal legacy of stroke, and the property dispute that severed the nearest source of help; the crisis sits where they cross.",
+          "In Hill's ABCX terms: A, the stroke and its debt; B, resources that exist but are unused - the son's income, the daughter's education, the mother-in-law's willingness, the temple group, free drugs and a disability pension; C, the wife's perception that she must manage alone and cannot ask; X, a caregiver crisis presenting as uncontrolled diabetes and depression.",
+          "Family diagnosis, stated as one sentence: a caregiver crisis in a launching-stage three-generation family after an off-time stroke, with unused resources, an overburdened wife with a depressive episode, a daughter whose launching has stalled, and a debt that threatens catastrophic expenditure.",
+        ],
+      },
+    ],
+    summaryStatement:
+      "Mrs X, a 54-year-old home-maker in a four-member three-generation household, with type 2 diabetes and hypertension for 9 years, has lost glycaemic and blood pressure control (HbA1c 9.4%, BP 160/96 mmHg, new microalbuminuria and mild retinopathy) over the 3 months in which she became the sole caregiver of her husband after a disabling left middle cerebral artery stroke; she has a moderate depressive episode (PHQ-9 14) and high caregiver burden, scores the family APGAR at 3 of 10 against her husband's 7, shows economic, social and cultural pathology on SCREEM with unused educational, religious and medical resources, and the family - at the launching and later-life stages - is in a caregiver crisis where the horizontal stressor of an off-time stroke has crossed the vertical stressor of care resting on one woman.",
+    differential: [
+      {
+        diagnosis: "A caregiver crisis - a horizontal stressor crossing a vertical one - presenting through the caregiver's own chronic disease",
+        forIt:
+          "The family life line ties every deterioration to the stroke; the wife's APGAR of 3 against the husband's 7 locates the distress in the caregiver; she does every act of care alone, sleeps four hours and has stopped the walk, the diet and the drugs that kept her controlled; the resources that would relieve her exist and are unused.",
+        againstIt:
+          "The conflict with the mother-in-law and the cut-off with the brother predate the stroke, so part of the dysfunction is old, and treating the crisis alone will not repair those lines.",
+      },
+      {
+        diagnosis: "A depressive episode in the wife as the primary problem, with the family findings secondary to it",
+        forIt:
+          "A PHQ-9 of 14 with low mood, anhedonia, insomnia, weight loss, guilt and psychomotor slowing meets the criteria for a moderate depressive episode, which itself worsens adherence, appetite and glycaemic control, and which will need treatment in its own right whatever the family does.",
+        againstIt:
+          "No previous episode, no family history of depression, the symptoms began with the caregiving load and track it, and she attributes them to exhaustion; the depression is real but is the consequence of the family situation, not its cause.",
+      },
+      {
+        diagnosis: "An economic crisis from catastrophic health expenditure driving the whole picture",
+        forIt:
+          "Income stopped when the shop closed, a moneylender loan at 3% a month is compounding, drugs were rationed to save money, and the daughter's salary is the only steady income; the missed doses alone could explain the HbA1c.",
+        againstIt:
+          "Food and rent are covered by the daughter's salary and the remittances, free drugs and a disability pension were available and never sought, and in her own words the wife's distress is that she is alone, not that she is poor; money is a modifiable pathology, not the formulation.",
+      },
+      {
+        diagnosis: "A blocked launching-stage task - the daughter's deferred marriage and the unspoken expectation that she stays - as the central family problem",
+        forIt:
+          "The daughter is 26, a proposal has been put on hold, her APGAR is 5, her line to her mother is fused, and the mother's guilt about her is a recurring theme in the interview.",
+        againstIt:
+          "The daughter frames the deferral as temporary and her own choice, the deferral followed the stroke rather than preceding it, and it is a consequence of the crisis that will resolve when the care is redistributed - it belongs in the plan, not at the head of the formulation.",
+      },
+    ],
+    investigations: [
+      {
+        test: "HbA1c and fasting plasma glucose",
+        why: "To quantify the loss of control, establish the baseline against which the family plan is judged, and separate rationed drugs from a true escalation of the disease.",
+        expected: "HbA1c 9.4% and fasting plasma glucose 190 mg/dL, against 7.2% in January; the aim is below 8% at three months and below 7% at six.",
+      },
+      {
+        test: "Serum creatinine with eGFR and urine albumin-creatinine ratio",
+        why: "Nine years of diabetes with hypertension and a period of poor control; the results decide whether the ARB is uptitrated and whether an SGLT2 inhibitor is the second drug.",
+        expected: "eGFR 78 mL/min and UACR 45 mg/g - new microalbuminuria - so telmisartan goes to 80 mg and dapagliflozin is the preferred addition.",
+      },
+      {
+        test: "Fasting lipid profile",
+        why: "A moderate-intensity statin is due for any diabetic over 40 and the family's diet has changed; her husband's stroke makes vascular protection the family's shared goal.",
+        expected: "LDL 132 mg/dL and triglycerides 210 mg/dL; atorvastatin 20 mg at night, target LDL below 100 mg/dL.",
+      },
+      {
+        test: "PHQ-9 with item 9 checked separately, and GAD-7",
+        why: "To convert distress into a treatable diagnosis with a severity band and a number to follow, and to screen for suicidal ideation before the patient is sent home to the same load.",
+        expected: "PHQ-9 of 14 (moderate) with item 9 scored zero, GAD-7 of 9; repeat at every visit and expect a fall of 5 or more points by six weeks.",
+      },
+      {
+        test: "Zarit Burden Interview, 12-item short form",
+        why: "Caregiver burden is measured, not assumed; the score names the problem to the family, tracks the effect of redistributing care, and predicts caregiver depression and physical illness.",
+        expected: "27 of 48 - high burden (17 or more); a fall below 17 after the care roster is in place is the measure of success.",
+      },
+      {
+        test: "Barthel index and modified Rankin scale for the husband, and a fall-risk assessment for the mother-in-law",
+        why: "The care load is proportional to the dependence of those cared for, the scores set rehabilitation targets, and a Barthel of 60 with a modified Rankin scale of 3 supports the disability certificate that opens the pension.",
+        expected: "Barthel 60 of 100 and modified Rankin 3, with realistic targets of independent toileting and dressing at three months; the mother-in-law at moderate fall risk, needing a grab rail and a raised toilet seat.",
+      },
+    ],
+    management: [
+      {
+        heading: "Treat the index patient's own disease properly",
+        points: [
+          "**Glycaemia:** continue metformin 1000 mg twice daily and add dapagliflozin 10 mg daily for the microalbuminuria and the weight; a sulfonylurea is avoided in a woman who skips meals while nursing; HbA1c at three months.",
+          "**Blood pressure:** telmisartan increased to 80 mg and amlodipine 5 mg added, target below 130/80 mmHg; home readings by the daughter twice a week.",
+          "**Lipids and eyes:** atorvastatin 20 mg at night; ophthalmology review for the retinopathy within a month and yearly thereafter.",
+          "**Supply:** enrol her, her husband and her mother-in-law under the National Programme for NCDs at the Health and Wellness Centre so that metformin, telmisartan, amlodipine and atorvastatin are free and the community health officer follows the household.",
+          "**Adherence made possible:** a fixed-dose combination where available, a weekly pill organiser filled by the daughter on Sunday, and drug timings tied to the husband's care routine.",
+        ],
+      },
+      {
+        heading: "Treat the depression and the caregiver strain in their own right",
+        points: [
+          "Explain the diagnosis without blame: exhaustion has become a depressive illness, it is common in caregivers, it is treatable, and treating it is part of caring for her husband.",
+          "Offer sertraline 50 mg daily or escitalopram 10 mg daily as a shared decision alongside brief problem-solving counselling; review at two weeks, expect benefit by six, and continue for at least six months after recovery.",
+          "Sleep: an attendant or the daughter takes the night turning on alternate nights; no benzodiazepine beyond a week, if at all.",
+          "Respite is prescribed like a drug - two afternoons a week back at the temple group, with the mother-in-law and a neighbour sitting with the husband.",
+          "Safety: item 9 asked at every visit, the daughter told what to watch for, and the helpline number given.",
+        ],
+      },
+      {
+        heading: "The family conference and the redistribution of care",
+        points: [
+          "Convene, with the wife's consent, a family conference within two weeks: the couple, the daughter, the mother-in-law, and the son and his wife by video call; set the agenda - his recovery, her health, the money, the daughter's future - and let each member speak first.",
+          "Name the problem as the family's, not hers: one person cannot provide 24-hour care and stay well; the goal is a roster with names and times.",
+          "Allocate tasks by name: the son funds a trained attendant for morning bathing and physiotherapy (about 6,000 rupees a month) and takes leave for a fortnight every quarter; the son's wife handles the calls to the bank and the pension office; the mother-in-law supervises the exercises and keeps the husband company; the daughter does the evenings and the Sunday pill box.",
+          "Reframe the mother-in-law from opponent to ally in front of the family, and give the husband a role - deciding the shop's future, supervising the accounts - so that he is a participant in the household rather than only its patient.",
+          "Do not attempt to resolve the property dispute; note it as a cut-off resource and, if the family wishes, offer a separate mediated conversation later; set the review date and write the roster into the family folder.",
+        ],
+      },
+      {
+        heading: "Rehabilitation, money, the daughter and the wider system",
+        points: [
+          "Home-based rehabilitation: a physiotherapist assesses once and trains the daughter and the attendant in a daily programme; a commode chair, a grab rail in the bathroom, a raised toilet seat and removal of the doorstep protect both the husband and the mother-in-law from falls.",
+          "Money: apply for the disability certificate (40% or more) and the UDID card for the husband, which unlock the disability pension and travel concessions; enrol the family in PM-JAY before the next admission; restructure the moneylender loan through the daughter's self-help group or a bank so that the interest stops compounding.",
+          "The daughter: give her and her mother an explicit conversation about the deferred proposal, with the message that a roster that frees her is part of the treatment plan and that her launching is a family task, not a betrayal.",
+          "Screening: fasting glucose, HbA1c and blood pressure for the daughter and the son now and every three years, given diabetes and stroke on both parental lines; the son's wife and child are added to the family folder.",
+          "Link the household to the ASHA for home visits, to a stroke support group if one exists, and to the district palliative or home-care team where available; record every linkage in the family folder with the genogram on its first page.",
+        ],
+      },
+      {
+        heading: "Follow-up and what counts as success",
+        points: [
+          "Review in two weeks (mood, blood pressure, adherence, the roster), then monthly for three months, then every three months; a home visit within the first month to see the care as it is actually given.",
+          "Targets at three months: HbA1c below 8%, blood pressure below 140/90 mmHg, PHQ-9 below 10, Zarit score below 17, the husband's Barthel above 75, and the wife back at the temple group twice a week.",
+          "Repeat the family APGAR from all three members at three months; convergence of the scores is the family-level outcome.",
+          "Update the genogram and the life line at each major event; a family folder that is not updated is a photograph, not a record.",
+          "Define failure in advance: a worsening PHQ-9, any item 9 response, a fall, a pressure sore or a missed review triggers a same-week home visit and a second family conference.",
+        ],
+      },
+    ],
+    viva: [
+      {
+        q: "The husband had the stroke; why is the wife the index patient of this family case?",
+        a: "Because the index patient is whoever presents, and the family diagnosis can be made from any member; she is the hidden patient of the stroke - the caregiver whose own chronic disease and mood have deteriorated - and the caregiver is a patient too, with a measurable burden, a treatable depression and a diabetes that will produce its own complications if the family is not reorganised.",
+      },
+      {
+        q: "How is the family APGAR scored and what does her score of 3 mean?",
+        a: "Five items - adaptation, partnership, growth, affection and resolve - each scored 2 for almost always, 1 for some of the time and 0 for hardly ever, giving 0 to 10; 7-10 is highly functional, 4-6 moderately dysfunctional and 0-3 severely dysfunctional. Her 3 means severe dissatisfaction with family function as she perceives it; set against her husband's 7 the discrepancy shows that the family works for the person receiving care and not for the person giving it, which is the finding to act on.",
+      },
+      {
+        q: "What is SCREEM and how is it scored?",
+        a: "Smilkstein's inventory of family resources and pathology in six domains - social, cultural, religious, economic, educational and medical - and it is not scored numerically; each domain is judged a resource or a pathology for the family's capacity to cope with the present problem. Here the economic, social and cultural domains are pathology and the educational, religious and medical domains are under-used resources, which is exactly the shape of the plan.",
+      },
+      {
+        q: "Which family life cycle stage is this family in, and why does it matter?",
+        a: "The launching stage in Carter and McGoldrick's scheme - the son launched, the daughter's launching blocked - overlapping with the family in later life because of the dependent 80-year-old, or Duvall's launching-centre family superimposed on an ageing family; the overlap is typical of the Indian three-generation household. It matters because each stage has developmental tasks, and the stroke has suspended all of them - releasing the daughter, rebuilding the marital dyad, caring for the elder - and suspended tasks are what present as symptoms.",
+      },
+      {
+        q: "Explain horizontal and vertical stressors in this family.",
+        a: "Horizontal stressors are events moving through time - predictable transitions such as marriage and retirement, and unpredictable ones such as this off-time stroke and its debt; vertical stressors are patterns transmitted down the generations - here the rule that care is one woman's duty, the paternal legacy of stroke, and the property dispute that cut off the brother. A crisis occurs where a horizontal stressor crosses a vertical one, which is why an event the family might otherwise have absorbed has broken it.",
+      },
+      {
+        q: "What is caregiver burden, who is at risk, and how is it measured?",
+        a: "The multidimensional strain - physical, emotional, social and financial - experienced by a person caring for a dependent relative; risk is highest in female spouses who live with the patient, give more hours of care, have their own illness, lack respite and care for a patient with behavioural or communication problems. It is measured with the Zarit Burden Interview, in full or in the 12-item short form where 17 or more indicates high burden, and it predicts caregiver depression, physical illness, institutionalisation of the patient and, at the extreme, abuse.",
+      },
+      {
+        q: "How would you run a family conference here?",
+        a: "Obtain the patient's consent, decide who attends, set a private time and place, state the purpose and an explicit agenda, let each member describe the problem from their side, identify shared goals, name the resources, allocate tasks to named people with times, summarise, write it down and fix a review date; the doctor facilitates, keeps the meeting from becoming a trial of anyone, and never convenes a joint meeting where violence or abuse is suspected.",
+      },
+      {
+        q: "When would you insist on seeing a family member alone rather than with the family?",
+        a: "Whenever intimate partner violence, elder abuse or child abuse is suspected, when an adolescent's confidentiality is at stake, when a member discloses suicidal ideation or a secret such as an HIV diagnosis, or when one member keeps answering for another; joint counselling in the presence of an abuser increases danger, and under the PWDVA 2005 and the Maintenance and Welfare of Parents and Senior Citizens Act 2007 the doctor's duty is to the safety of the individual first.",
+      },
+    ],
+    pitfalls: [
+      "Presenting the genogram as a list of relatives rather than a drawn, dated, three-generation diagram with ages inside the symbols, the household enclosed and the relationship lines marked.",
+      "Reporting a single family APGAR as if it belonged to the family, and calling 3 of 10 'a dysfunctional family' rather than severe dissatisfaction in one member; the discrepancy between members is the finding.",
+      "Scoring SCREEM as a number, or listing the six domains without saying for each whether it is a resource or a pathology for this problem.",
+      "Naming the life cycle stage from the index patient's age instead of from the tasks the family is facing, and missing the overlap of stages that a three-generation household always shows.",
+      "Producing an elegant family diagnosis and forgetting to treat her diabetes, her blood pressure, her retinopathy and her depression - or the reverse, treating the numbers and sending her back to the same load.",
+      "A plan that says 'counsel the family' without a named task, a named person, a cost and a review date; in a family case the plan is the roster.",
+    ],
+    references: [
+      "McGoldrick M, Gerson R, Petry S. Genograms: Assessment and Intervention, 4th edition, WW Norton, 2020",
+      "Smilkstein G. The family APGAR: a proposal for a family function test and its use by physicians. Journal of Family Practice 1978;6:1231-1239",
+      "Smilkstein G. The cycle of family function: a conceptual model for family medicine. Journal of Family Practice 1980;11:223-232 (SCREEM)",
+      "Carter B, McGoldrick M. The Expanded Family Life Cycle: Individual, Family and Social Perspectives, 4th edition, Pearson, 2011",
+      "McCubbin HI, Patterson JM. The family stress process: the double ABCX model of adjustment and adaptation. Marriage and Family Review 1983;6:7-37",
+      "Bedard M et al. The Zarit Burden Interview: a new short version and screening version. The Gerontologist 2001;41:652-657",
+      "Kroenke K, Spitzer RL, Williams JBW. The PHQ-9: validity of a brief depression severity measure. Journal of General Internal Medicine 2001;16:606-613",
+      "Kumar R, Kumar Y (eds). Textbook of Family Medicine, AFPI / Jaypee, 2022 - family assessment tools and the family case",
+    ],
+  },
+];
+
+const subject: Subject = {
+  id: "fm-principles",
+  title: "Principles of Family Medicine & Research",
+  blurb: "The consultation models, the family as the unit of care, audit, evidence-based medicine and research methods.",
+  icon: "Users",
+  papers: ["I"],
+  topics,
+  cases,
+};
+
+export default subject;

@@ -3244,3 +3244,80 @@ topics.push({
     "API Textbook of Medicine, 11th edition, 2019 - pleural diseases",
   ],
 });
+
+const cases: ClinicalCase[] = [
+  {
+    id: "respiratory-case-1",
+    title: "Long case: acute exacerbation in a bidi smoker with COPD",
+    kind: "long",
+    subjectId: "respiratory",
+    opening:
+      "A 58-year-old farmer who has smoked bidis for 35 years presents with 4 days of worsening breathlessness, increased sputum that has turned yellow-green, and low-grade fever, on a background of 5 years of exertional breathlessness and morning cough treated with salbutamol tablets and an occasional inhaler.",
+    minutes: 30,
+    frequency: "core",
+    sections: [
+      {
+        heading: "How to open the presentation",
+        points: [
+          "Give the identifying data, the presenting complaints in the patient's own order with duration, and then a one-line problem statement before any detail, because the examiner decides in the first thirty seconds whether you have understood the case.",
+          "Say: 'Mr X, a 58-year-old farmer from a village 40 km from the district hospital, a bidi smoker of 35 years, a known case of chronic obstructive pulmonary disease for 5 years, presents with increased breathlessness for 4 days, increased volume and purulence of sputum for 4 days, and low-grade fever for 3 days.'",
+          "Add the negatives that matter early: no chest pain, no haemoptysis, no orthopnoea or paroxysmal nocturnal dyspnoea, no calf swelling, no drowsiness, and no recent travel or immobilisation.",
+          "State the current treatment honestly as the patient takes it - salbutamol 4 mg tablets twice daily bought from a chemist, a salbutamol inhaler used two or three times a week, and a theophylline syrup - because the therapeutic gap is the heart of the management discussion.",
+          "Close the opening with the current status: he walked into the ward breathless on the flat, is speaking in short phrases, and has an oxygen saturation of 88% on room air.",
+        ],
+      },
+      {
+        heading: "History of the present exacerbation and of the chronic disease",
+        points: [
+          "Describe the exacerbation by the three Anthonisen cardinal symptoms - increased dyspnoea, increased sputum volume and increased sputum purulence - and say explicitly that all three are present, which makes this a type 1 exacerbation and predicts benefit from antibiotics.",
+          "Take the chronic course from the beginning: cough with white morning sputum for 8 years, breathlessness on climbing a slope for 5 years, now breathless after walking about 100 metres on level ground, which is mMRC grade 3.",
+          "Count the exacerbations in the past year: two courses of antibiotics and prednisolone from the local practitioner, one of which required 5 days of admission with oxygen, which places him in GOLD Group E regardless of the symptom score.",
+          "Ask about the symptoms of the mimics: pleuritic chest pain and rigors for pneumonia, sudden onset with unilateral pain for pneumothorax, a swollen calf or long immobility for embolism, and orthopnoea or oedema for left heart failure.",
+          "Ask the four tuberculosis screening questions - cough for 2 weeks or more, fever, night sweats and weight loss - because a chronic cougher who becomes 'different' may have tuberculosis, and every such patient in India needs a sputum NAAT at some point.",
+          "Document weight loss, appetite, sleep and mood, since undernutrition and depression are the commonest untreated comorbidities in COPD and both change the prognosis.",
+        ],
+      },
+      {
+        heading: "Exposure, occupational and comorbidity history",
+        points: [
+          "Quantify the tobacco: 20 bidis a day for 35 years is roughly 17 pack-years by the conventional calculation, but say that bidi smoke delivers more tar and carbon monoxide per stick than a cigarette so the biological dose is higher than the number suggests.",
+          "Ask whether he has tried to stop, what happened when he did, the time to the first bidi after waking, and whether anyone else in the house smokes - these decide the cessation plan.",
+          "Ask about biomass exposure: the household cooked on a wood and dung-cake chulha until 6 years ago when an LPG connection arrived under the Ujjwala scheme, and his wife has cooked on it for 30 years, which puts her at risk of the same disease.",
+          "Occupational exposure as a farmer includes grain dust, pesticide spraying without a mask, and burning of crop residue, all of which aggravate airway disease.",
+          "Record comorbidities that alter treatment: hypertension on amlodipine, no known diabetes, no ischaemic heart disease, no glaucoma or prostatic symptoms that would matter for an antimuscarinic, and no peptic ulcer that would matter for steroids.",
+          "Ask about previous chest radiographs, any spirometry ever done, and any previous treatment for tuberculosis, and bring the documents to the examiner if they exist.",
+        ],
+      },
+      {
+        heading: "Family, social and functional history",
+        points: [
+          "He is the main earner for a family of five with two acres of land; a season lost to breathlessness means borrowed money, so the cost of every inhaler you propose matters.",
+          "Describe the house: two rooms, LPG cylinder refilled irregularly with a return to the chulha when money is short, no electricity supply for a concentrator for hours each day, and a bus journey of an hour to the hospital.",
+          "Ask what he can no longer do - ploughing, walking to the field, climbing the temple steps - and what he wants to be able to do again, because that is the outcome measure that will keep him on treatment.",
+          "Ask who will supervise the inhaler at home, whether he can read the counter on a device, and whether his son can be taught alongside him.",
+          "Check enrolment for Ayushman Bharat PM-JAY and whether the family collects free drugs from the Ayushman Arogya Mandir, and screen the wife for chronic cough and breathlessness from her own biomass exposure.",
+        ],
+      },
+      {
+        heading: "Examination to demonstrate",
+        points: [
+          "General survey: thin man with a BMI of 18, sitting forward with hands on his knees, pursed-lip breathing, using the sternomastoids and alae nasi, respiratory rate 28 per minute, pulse 108 regular, blood pressure 140/90 mmHg, temperature 37.8 degrees Celsius, SpO2 88% on room air, no cyanosis and no clubbing.",
+          "Look for the signs of carbon dioxide retention and demonstrate their absence: warm peripheries, bounding pulse, flapping tremor on holding the wrists dorsiflexed for 30 seconds, drowsiness and papilloedema - a candidate who does not look for the flap will be asked why.",
+          "Chest: barrel-shaped with increased anteroposterior diameter, tracheal tug with a shortened cricosternal distance of two finger-breadths, reduced chest expansion of 2 cm, hyperresonant percussion note with obliterated cardiac and liver dullness, and on auscultation diminished vesicular breath sounds with prolonged expiration, polyphonic expiratory wheeze and scattered coarse crepitations at both bases that alter on coughing.",
+          "Say what you did not find, because it excludes the mimics: no area of dullness with bronchial breathing to suggest consolidation, no unilateral silence with hyperresonance to suggest pneumothorax, no stony dullness to suggest effusion, and no pleural rub.",
+          "Cardiovascular: raised jugular venous pressure of 6 cm with a prominent a wave, a left parasternal heave, a loud pulmonary component of the second heart sound, and pitting oedema to the mid-shin, which together are the clinical picture of cor pulmonale; the apex is impalpable because of hyperinflation.",
+          "Complete with the abdomen for a tender pulsatile liver of right heart failure, the calves for asymmetry, a nutritional assessment with mid-arm circumference, and a mention that you looked at the sputum pot and found thick yellow-green sputum.",
+        ],
+      },
+      {
+        heading: "Presenting the assessment",
+        points: [
+          "State the diagnosis in layers: the disease, its severity grade if spirometry exists, its GOLD group, the acute problem, its severity, and the complications and comorbidities - not simply 'a case of COPD'.",
+          "Grade the exacerbation as severe on clinical grounds: speaking in phrases, respiratory rate over 25, pulse over 100, accessory muscle use, SpO2 under 90%, in a patient with a previous admission - and say that an arterial blood gas is needed within the hour to decide on non-invasive ventilation.",
+          "Offer the differential diagnosis for the acute deterioration before it is asked for, and say which single investigation excludes each.",
+          "Finish with the two questions that decide the maintenance plan: what he is on now, and why it failed - a short-acting bronchodilator alone in a Group E patient is a treatment failure waiting to happen.",
+        ],
+      },
+    ],
+    summaryStatement:
+      "This is a 58-year-old undernourished farmer and bidi smoker of about 17 pack-years with additional biomass and agricultural dust exposure, a known case of chronic obstructive pulmonary disease for 5 years in GOLD Group E on the basis of two exacerbations in the past year including one admission, with mMRC grade 3 breathlessness, presenting with a severe type 1 Anthonisen exacerbation of 4 days with all three cardinal symptoms, hypoxaemia with SpO2 of 88% on room air without clinical evidence of carbon dioxide narcosis, clinical cor pulmonale, and no clinical features of pneumonia, pneumothorax, effusion or pulmonary embolism, in a patient treated so far with a short-acting bronchodilator and oral theophylline alone.",

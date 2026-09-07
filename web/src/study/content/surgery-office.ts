@@ -528,3 +528,470 @@ topics.push({
     "CDC Guideline for the Prevention of Surgical Site Infection, 2017",
   ],
 });
+
+const cases: ClinicalCase[] = [
+  {
+    id: "surgery-office-case-1",
+    title: "A 46-year-old woman with a 4 cm lump in the right breast",
+    kind: "short",
+    subjectId: "surgery-office",
+    opening:
+      "A 46-year-old premenopausal homemaker presents with a painless lump in the right breast that she noticed 2 months ago while bathing and which she feels has grown; there is no nipple discharge, she has noticed no skin change, and her mother was treated for breast cancer at the age of 58.",
+    minutes: 15,
+    frequency: "core",
+    sections: [
+      {
+        heading: "History: the questions that have to be asked before the breast is touched",
+        points: [
+          "Establish the **duration, how the lump was noticed, whether it has grown, whether it is painful and whether it changes with the menstrual cycle**; a lump that is painless, progressive and unchanged by the cycle is the pattern of a carcinoma, while cyclical pain and fluctuation suggest fibrocystic change.",
+          "Ask specifically about **nipple discharge** (spontaneous or expressed, single duct or multiple ducts, blood-stained, serous or milky), nipple retraction or eczema, skin dimpling, and any lump in the axilla or the opposite breast.",
+          "Take the **risk-factor history in one sweep**: age at menarche, parity and age at first full-term pregnancy, breastfeeding, menopausal status and the date of the last menstrual period, use of oral contraceptives or hormone replacement, previous breast lumps or biopsies, previous chest irradiation, alcohol, obesity, and the family history of breast and ovarian cancer in first-degree relatives with the age at diagnosis.",
+          "Screen for **symptoms of spread**: bone pain or backache, breathlessness or cough, right hypochondrial pain or jaundice, abdominal distension, headache or vomiting, and loss of weight or appetite.",
+          "Record the comorbidities and drugs that will matter to the surgeon and the anaesthetist - diabetes, hypertension, cardiac disease, anticoagulants - and note her occupation, the support at home and what she herself believes the lump to be, because the second half of this consultation is going to be about breaking news.",
+        ],
+      },
+      {
+        heading: "Inspection and palpation: the sequence the examiner is watching for",
+        points: [
+          "Explain, obtain consent, provide a **chaperone**, expose the patient to the waist and examine her first **sitting upright**, inspecting both breasts with the arms by the side, the arms raised above the head, the hands pressed on the hips to contract pectoralis major, and finally leaning forward.",
+          "On inspection describe **asymmetry, a visible lump, skin dimpling or tethering, peau d'orange, dilated veins, ulceration, and the nipples** - level, retraction, deviation, destruction or eczema - and remember that dimpling that appears only on raising the arms is the earliest sign of skin tethering.",
+          "Palpate the **normal breast first**, then the affected side, with the patient supine and the arm behind the head so the breast flattens over the chest wall, using the flat of the fingers in all four quadrants, beneath the nipple and areola, and in the axillary tail.",
+          "Describe the lump in the fixed order: **site** (right breast, upper outer quadrant, 3 cm from the nipple at the 10 o'clock position), **size** (4 x 3 cm), **shape and surface** (irregular, nodular), **margins** (ill defined), **consistency** (hard), **tenderness** (none), and **temperature** (normal).",
+          "Press the areola gently towards the nipple to look for discharge and note its colour and the duct of origin; then compare the two nipples for recent retraction.",
+        ],
+      },
+      {
+        heading: "Fixity, the axilla and completing the examination",
+        points: [
+          "Test **fixity to the skin** by pinching the skin over the lump - free movement of the skin means no attachment, puckering means tethering by the ligaments of Cooper, and inability to pinch the skin at all means the lump is fixed to skin.",
+          "Test **fixity to pectoralis major** by moving the lump in two planes with the muscle relaxed and again with the patient pressing her hands on her hips: mobility that is lost on contraction means the lump is fixed to the muscle, and a lump immobile even with the muscle relaxed is fixed to the chest wall.",
+          "Examine the **axilla with the arm supported** by your other hand so the muscles relax, and feel all five groups - anterior (pectoral), posterior (subscapular), lateral (brachial), central and apical - then the supraclavicular fossa; describe nodes by number, size, consistency, and whether they are mobile, fixed or matted.",
+          "Complete the examination with the **opposite breast and axilla**, the liver for hepatomegaly, the spine for percussion tenderness, the chest for a pleural effusion, and the arm for lymphoedema.",
+          "Finish by covering the patient, thanking her and summarising the findings aloud in the same order, ending with a diagram showing the site and size of the lump relative to the nipple.",
+        ],
+      },
+      {
+        heading: "Triple assessment: the phrase that earns the mark",
+        points: [
+          "**Every discrete breast lump in a woman over 35 is evaluated by triple assessment - clinical examination, imaging and pathology** - irrespective of how benign it feels, because clinical examination alone misses about a tenth of cancers.",
+          "Imaging is **bilateral mammography** (craniocaudal and mediolateral oblique views) over the age of 35-40, with **ultrasound** of both breasts and axillae to separate solid from cystic, to characterise the lump and the nodes, and to guide the biopsy; under 35 the dense breast makes ultrasound the first-line study.",
+          "Pathology is **ultrasound-guided core needle biopsy with a 14 G needle**, which gives histology, distinguishes in-situ from invasive disease, and provides the grade and the oestrogen receptor, progesterone receptor, HER2 and Ki-67 status; fine needle aspiration cytology is quicker and cheaper but cannot make that distinction, and is now reserved for cystic lesions and for the axillary node.",
+          "Mammographic features of malignancy are an **irregular spiculated dense mass, clustered pleomorphic microcalcification and architectural distortion**, reported on the BI-RADS scale: BI-RADS 1 and 2 are normal or benign, 3 is probably benign with short-interval follow-up, and **4 and 5 need biopsy**.",
+          "When all three components agree the accuracy is over 99%; **discordance between any two mandates a further biopsy**, usually an excision biopsy, never reassurance.",
+        ],
+      },
+      {
+        heading: "What the family physician arranges and how the referral is made",
+        points: [
+          "In the clinic today the family physician does **not** aspirate the lump blind, does not excise it, and does not prescribe antibiotics and review in a month; a hard irregular lump at 46 is cancer until proved otherwise.",
+          "Arrange and, where possible, obtain **bilateral mammography with ultrasound of both breasts and axillae** before the surgical appointment so that the first specialist visit is not wasted, together with a complete blood count, liver function tests with alkaline phosphatase, serum calcium, creatinine, random blood sugar and a chest radiograph.",
+          "Make an **urgent referral to a breast surgeon or surgical oncologist to be seen within 2 weeks**, by telephone as well as by letter, choosing a centre that can complete the core biopsy and offer surgery, chemotherapy and radiotherapy under one roof.",
+          "The **referral letter** is structured: identifiers and date, the presenting complaint with duration, the examination findings in the standard description with a diagram and the clinical stage, the risk factors and family history, comorbidities and drugs, the investigations done with the reports attached, exactly what the patient and family have been told, and the specific question - urgent triple assessment and definitive management of a suspected right breast carcinoma.",
+          "Check her eligibility for a **state or national health-insurance scheme** for cancer care, give her a written plan with the date of the appointment, and fix a date for her to come back to you with the reports so that the loop closes even if the hospital does not write back.",
+        ],
+      },
+      {
+        heading: "Breaking the news in the same consultation",
+        points: [
+          "Tell her in plain words that **the lump needs urgent tests to find out whether it is cancer**; neither say that it is cancer before a biopsy nor say there is nothing to worry about, because both destroy trust when the report arrives.",
+          "Use the **SPIKES** frame: a private setting, find out what she already suspects, ask how much she wants to know, give the information in small pieces without jargon, respond to the emotion, and end with a written summary and plan.",
+          "Anticipate the questions she will ask: whether the breast will be removed (breast conservation is possible for many 4 cm tumours, especially after neoadjuvant chemotherapy), what it will cost, whether her daughters are at risk, and how long treatment takes.",
+          "Offer to involve a relative if she wishes, arrange for a nurse or counsellor if one exists, and give her a telephone number for questions before the appointment.",
+        ],
+      },
+      {
+        heading: "Staging at the bedside: what the description translates into",
+        points: [
+          "By **TNM**, T1 is 2 cm or less, **T2 is more than 2 cm up to 5 cm**, T3 is more than 5 cm, and T4 is any size fixed to the chest wall (T4a), involving the skin with ulceration, satellite nodules or peau d'orange (T4b), both (T4c), or inflammatory carcinoma (T4d).",
+          "N1 is mobile ipsilateral level I or II axillary nodes, N2 is fixed or matted axillary nodes or clinically apparent internal mammary nodes, and N3 is infraclavicular, supraclavicular or combined internal mammary and axillary nodes.",
+          "A 4 cm lump with a single mobile axillary node is therefore **T2 N1 M0, stage IIB**, which is early, operable breast cancer; by the older Manchester classification it is stage II.",
+          "Early breast cancer means stage I and II; locally advanced disease means stage III (T3-T4 or N2-N3), which is treated with neoadjuvant chemotherapy first; stage IV is metastatic and is palliated.",
+          "A bone scan, CT of the chest and abdomen or a PET-CT is **not** routine for stage II disease and is reserved for stage III, for symptoms of spread, or for a raised alkaline phosphatase or calcium.",
+        ],
+      },
+    ],
+    summaryStatement:
+      "A 46-year-old premenopausal woman with a first-degree family history of breast cancer presents with a 2-month history of a painless, progressively enlarging 4 x 3 cm hard, irregular, ill-defined, non-tender lump in the upper outer quadrant of the right breast that is neither tethered to the skin nor fixed to pectoralis major, with a single 1.5 cm mobile node in the right anterior axillary group, no nipple discharge, a normal left breast and no clinical evidence of distant spread; the working diagnosis is carcinoma of the right breast, clinically T2 N1 M0 (stage IIB), and she needs urgent triple assessment and referral to a breast surgeon within 2 weeks.",
+    differential: [
+      {
+        diagnosis: "Carcinoma of the breast",
+        forIt: "Age 46, a painless hard irregular ill-defined lump that has grown over 2 months, a palpable axillary node and a first-degree family history.",
+        againstIt: "Nothing on clinical grounds reliably excludes it; the absence of skin or nipple change only means it is early, which is exactly why triple assessment is mandatory.",
+      },
+      {
+        diagnosis: "Fibroadenoma",
+        forIt: "A discrete, painless lump that moves within the breast.",
+        againstIt: "Fibroadenoma is a tumour of the 15-30 age group, is firm and rubbery with a smooth lobulated surface and slips away from the fingers, rarely reaches 4 cm, and is not accompanied by an axillary node; a new one at 46 is unusual.",
+      },
+      {
+        diagnosis: "Fibrocystic change or a breast cyst",
+        forIt: "The commonest cause of a breast lump between 40 and 50, and a large tense cyst can feel firm.",
+        againstIt: "Cysts are smooth, tense, often tender, may vary with the cycle and are usually multiple or bilateral, and they do not produce an axillary node; ultrasound settles the question in a minute and aspiration collapses the cyst.",
+      },
+      {
+        diagnosis: "Phyllodes tumour",
+        forIt: "A rapidly enlarging large lump in a woman in her forties.",
+        againstIt: "Phyllodes tumours are typically smooth, bosselated and mobile with stretched shiny skin over them rather than hard and ill defined, and they seldom involve the axillary nodes; only the core biopsy separates the two.",
+      },
+    ],
+    investigations: [
+      {
+        test: "Bilateral mammography (craniocaudal and mediolateral oblique views)",
+        why: "First-line imaging over the age of 40 for the lump, for occult disease in the same breast and for the contralateral breast, and the baseline for future follow-up.",
+        expected: "An irregular, spiculated, dense mass with clustered pleomorphic microcalcification in the upper outer quadrant, reported as BI-RADS 4 or 5.",
+      },
+      {
+        test: "Ultrasound of both breasts and both axillae",
+        why: "Separates solid from cystic, characterises the lump, examines the axillary nodes and guides the core biopsy.",
+        expected: "A hypoechoic, irregular, taller-than-wide solid mass with posterior acoustic shadowing; a node with cortical thickening over 3 mm or loss of the fatty hilum is suspicious.",
+      },
+      {
+        test: "Ultrasound-guided core needle biopsy (14 G, three to five cores)",
+        why: "Gives the histological diagnosis, distinguishes in-situ from invasive carcinoma, and provides the grade and the ER, PR, HER2 and Ki-67 status on which the whole treatment plan is built.",
+        expected: "Invasive carcinoma of no special type (ductal), grade 2, with the receptor status reported.",
+      },
+      {
+        test: "Fine needle aspiration cytology of the suspicious axillary node",
+        why: "Cytological proof of nodal metastasis changes the axillary surgery from a sentinel node biopsy to an axillary dissection and may prompt neoadjuvant therapy.",
+        expected: "Malignant epithelial cells if the node is involved.",
+      },
+      {
+        test: "Complete blood count, liver function tests with alkaline phosphatase, serum calcium and creatinine",
+        why: "Baseline before surgery and chemotherapy; a raised alkaline phosphatase or calcium points to bone or liver metastases and triggers further staging.",
+        expected: "Normal in operable stage II disease.",
+      },
+      {
+        test: "Chest radiograph",
+        why: "Screens for pulmonary metastases and a pleural effusion, and serves as the pre-anaesthetic film.",
+        expected: "Normal.",
+      },
+      {
+        test: "Bone scan, contrast CT of chest, abdomen and pelvis, or PET-CT",
+        why: "Only if the disease is stage III, if there are symptoms of spread, or if the alkaline phosphatase or calcium is raised.",
+        expected: "Not required in an asymptomatic stage IIB patient with normal biochemistry.",
+      },
+      {
+        test: "Random blood sugar, HbA1c and ECG",
+        why: "Pre-anaesthetic assessment and to identify diabetes, which affects wound healing and the timing of chemotherapy.",
+        expected: "Normal; a raised value is managed before surgery, not after.",
+      },
+    ],
+    management: [
+      {
+        heading: "In the clinic today",
+        points: [
+          "Explain that the lump needs urgent investigation, obtain her agreement to referral and document what she was told.",
+          "Order bilateral mammography with ultrasound of both breasts and axillae, and the baseline blood tests and chest radiograph.",
+          "Make an urgent referral to a breast surgeon to be seen within 2 weeks, with a structured letter, a telephone call and a written plan for the patient.",
+          "Do not aspirate, do not excise, do not give antibiotics, and do not wait to see whether it changes with the next period.",
+        ],
+      },
+      {
+        heading: "What the surgical team will do, so that you can counsel and follow up",
+        points: [
+          "Stage II disease is treated with **surgery first**: either breast-conserving surgery (wide local excision with whole-breast radiotherapy) or a modified radical mastectomy, according to the tumour-to-breast ratio, multicentricity and the patient's choice.",
+          "The axilla is staged by **sentinel lymph node biopsy** if the nodes are clinically and cytologically negative, and by **axillary dissection** (levels I and II) if a node is proven positive.",
+          "**Neoadjuvant chemotherapy** is offered for a large tumour to downstage it and allow breast conservation, and for triple-negative and HER2-positive disease.",
+          "Adjuvant therapy follows the receptor status: chemotherapy (anthracycline and taxane based) for node-positive, high-grade, triple-negative or HER2-positive tumours; **trastuzumab** for a year if HER2-positive; **tamoxifen 20 mg daily for 5-10 years** for hormone-receptor-positive premenopausal disease, with ovarian suppression in the high-risk; radiotherapy to the breast after conservation and to the chest wall after mastectomy for T3 or N2 disease.",
+        ],
+      },
+      {
+        heading: "The family physician's continuing role",
+        points: [
+          "Follow-up is a clinical review every 3-6 months for 3 years, then every 6-12 months to 5 years and yearly thereafter, with **annual mammography** of the conserved and the contralateral breast; routine tumour markers and scans in the asymptomatic patient are not recommended.",
+          "Watch for the effects of **tamoxifen** - hot flushes, vaginal discharge, venous thromboembolism, and endometrial carcinoma, so that any postmenopausal or irregular bleeding is investigated - and for the cardiotoxicity of trastuzumab.",
+          "Teach **lymphoedema prevention** after axillary surgery: no blood pressure cuff, venepuncture or cannula in that arm, skin care, prompt treatment of cellulitis, and early referral for compression if the arm swells.",
+          "Provide psychological support, screen for depression, and advise on breast awareness and screening for her sisters and daughters; refer for **genetic counselling** if there is breast cancer under 40, bilateral disease, male breast cancer, ovarian cancer or two or more affected relatives.",
+        ],
+      },
+      {
+        heading: "Prevention and screening for the community",
+        points: [
+          "Under the national programme, clinical breast examination is offered to women aged 30 and above at 5-yearly intervals and the family physician is the person expected to do it.",
+          "Teach breast awareness rather than a rigid monthly self-examination, and advise women with a first-degree relative to start mammography at 40, or 10 years before the age at which the relative was diagnosed.",
+          "Modifiable risks are worth stating: breastfeeding, avoiding alcohol, maintaining a normal weight, regular physical activity and using hormone replacement only for the shortest necessary time.",
+        ],
+      },
+    ],
+    viva: [
+      {
+        q: "What is triple assessment and why is it compulsory?",
+        a: "Clinical examination, imaging (mammography over 35-40, ultrasound below 35 and as an adjunct at any age) and pathology (core needle biopsy, or FNAC where a core is not possible). Each alone misses cancers; together they are more than 99% accurate, and any discordance mandates excision biopsy.",
+      },
+      {
+        q: "Why is core needle biopsy preferred to FNAC?",
+        a: "Core biopsy gives tissue architecture, so it distinguishes in-situ from invasive carcinoma, gives the grade and the ER, PR, HER2 and Ki-67 status needed to plan neoadjuvant or adjuvant therapy, and has a lower inadequate-sample rate. FNAC is retained for cysts and for the axillary node.",
+      },
+      {
+        q: "How do you test fixity to pectoralis major?",
+        a: "Assess the mobility of the lump in two planes at right angles with the muscle relaxed, then ask the patient to press her hands on her hips to contract pectoralis major and test again; reduced mobility on contraction means the lump is fixed to the muscle, and immobility even when relaxed means fixity to the chest wall.",
+      },
+      {
+        q: "Name the groups and levels of axillary lymph nodes.",
+        a: "Five groups: anterior or pectoral along the lateral thoracic vessels, posterior or subscapular along the subscapular vessels, lateral or brachial along the axillary vein, central in the axillary fat, and apical behind the clavicle. Surgical levels are defined by pectoralis minor: level I lateral to it, level II behind it, level III medial to it.",
+      },
+      {
+        q: "What is peau d'orange and what stage does it make the tumour?",
+        a: "Cutaneous lymphoedema caused by lymphatic obstruction by tumour, in which the skin swells but the openings of the sweat ducts and hair follicles remain tethered and appear as pits, like orange peel. It is a T4b sign and places the tumour in stage III, locally advanced disease, unless there is metastatic spread.",
+      },
+      {
+        q: "What is the TNM stage of a 4 cm tumour with a mobile axillary node, and what does it imply for treatment?",
+        a: "T2 (more than 2 up to 5 cm), N1 (mobile ipsilateral axillary nodes), M0 - stage IIB, early breast cancer. It is operable, treated with surgery followed by adjuvant therapy according to receptor status, or with neoadjuvant chemotherapy first when breast conservation is wanted.",
+      },
+      {
+        q: "What must a good referral letter for this patient contain?",
+        a: "Identifiers and date, the complaint and its duration, the examination in the standard description with a diagram and clinical stage, risk factors and family history, comorbidities and drugs, the investigations done with reports, what the patient has been told, the urgency requested and the specific question, and the referring doctor's name and contact number.",
+      },
+      {
+        q: "List the major risk factors for breast cancer.",
+        a: "Female sex and increasing age; early menarche and late menopause; nulliparity or first childbirth after 30; not breastfeeding; hormone replacement therapy and prolonged oral contraceptive use; obesity and alcohol; previous breast cancer or atypical hyperplasia; chest irradiation in youth; and a family history, especially BRCA1 and BRCA2 mutations.",
+      },
+    ],
+    pitfalls: [
+      "Palpating the lump straight away and skipping inspection in the four positions and the examination of the normal breast first.",
+      "Describing the lump without its site by quadrant and clock position relative to the nipple, and without two dimensions in centimetres.",
+      "Forgetting the axilla and the supraclavicular fossa, or examining the axilla without supporting the arm so the muscles stay tense.",
+      "Reassuring and reviewing in a month, or attempting a blind aspiration or excision in the clinic, in a woman over 35 with a discrete lump.",
+      "Saying 'cancer' as a diagnosis before biopsy, or saying 'nothing to worry about' - both destroy trust when the report arrives.",
+      "Leaving out the last menstrual period, hormone use, previous breast disease and the ages of affected relatives in the history.",
+    ],
+    references: [
+      "Bailey and Love Short Practice of Surgery, 28th edition, 2023 - the breast",
+      "SRB Manual of Surgery, 6th edition, 2019 - breast",
+      "S Das, A Manual on Clinical Surgery, 13th edition, 2018 - examination of a breast lump",
+      "NICE Guideline NG12, Suspected cancer: recognition and referral, 2015 (updated 2023) - breast cancer",
+      "ICMR Consensus Document for Management of Breast Cancer, Indian Council of Medical Research, 2016",
+      "American College of Radiology BI-RADS Atlas, 5th edition, 2013",
+      "Operational Framework for Management of Common Cancers, MoHFW, Government of India, 2016",
+    ],
+  },
+  {
+    id: "surgery-office-case-2",
+    title: "Viva at the table: suturing a 5 cm clean laceration of the forearm",
+    kind: "viva",
+    subjectId: "surgery-office",
+    opening:
+      "A 25-year-old right-handed student weighing 60 kg presents 2 hours after cutting the volar aspect of his left forearm on a broken glass tumbler; there is a 5 cm clean, linear, incised wound, the bleeding has stopped with pressure, and the examiner hands you a suture tray and asks you to talk through exactly what you will do, in order, with the doses.",
+    minutes: 10,
+    frequency: "core",
+    sections: [
+      {
+        heading: "Before the tray is opened: assessment and the decision to close",
+        points: [
+          "State the three questions first - **how long ago, how dirty, and is anything under the skin divided** - and answer them: 2 hours, a clean glass edge in a domestic setting, and a volar forearm wound that overlies the flexor tendons and the median and ulnar nerves.",
+          "Ask about hand dominance and occupation, tetanus immunisation, allergy to local anaesthetic, iodine or latex, bleeding disorders or anticoagulants, and diabetes.",
+          "**Examine the hand before any anaesthetic is given** and document it: radial and ulnar pulses and capillary refill; median nerve by sensation over the index pulp and abduction of the thumb against resistance; ulnar nerve by sensation over the little finger and abduction of the fingers; radial nerve by sensation over the first web space and wrist extension.",
+          "Test the **flexor tendons individually** - flexor digitorum profundus by flexing the distal interphalangeal joint with the finger held straight, flexor digitorum superficialis by flexing the proximal interphalangeal joint with the other fingers held extended, and flexor pollicis longus - and note that pain on resisted movement with a full range may still mean a partial tendon cut.",
+          "Explore the wound to its full depth in good light after anaesthesia, moving the wrist and fingers through their range, and look for retained glass; **glass is radio-opaque**, so a radiograph is ordered if a fragment is suspected.",
+          "Conclude: a clean incised wound under 6 hours old with no deep injury is suitable for **primary closure**; a divided tendon, nerve or artery, or tissue loss, means dress and refer to a hand or plastic surgeon the same day rather than close.",
+        ],
+      },
+      {
+        heading: "Consent, positioning and asepsis",
+        points: [
+          "Explain in plain words what will be done, that the anaesthetic stings for a few seconds, that there will be a scar, the risks of infection, wound breakdown and stitch marks, the need to return for suture removal, and the alternatives (adhesive strips and tissue glue are unsuitable for a 5 cm forearm wound under tension); take and document consent.",
+          "Lie the patient **supine on a couch with the arm on an arm board** and a good light - never seated on a stool, because a vasovagal faint onto the floor during suturing is a real injury - and have an assistant.",
+          "Perform hand hygiene, wear a mask and sterile gloves, and lay out the tray: needle holder, toothed dissecting forceps, artery forceps, suture scissors, sterile gauze, a 20 mL syringe with an 18 G cannula for irrigation, a bowl of normal saline, a 10 mL syringe with a 25-27 G needle for the anaesthetic, and **4-0 monofilament nylon on a reverse cutting needle**.",
+          "Paint the **intact skin around the wound** with povidone-iodine or 2% chlorhexidine in 70% alcohol, working outwards from the wound edge, keep the antiseptic out of the wound itself, allow it to dry, and drape with a fenestrated sheet.",
+        ],
+      },
+      {
+        heading: "Local anaesthetic: choice, calculation and injection",
+        points: [
+          "Choose **1% lignocaine**, plain or with adrenaline 1:200,000; the forearm is not an end-artery territory, so adrenaline is permissible here and gives a drier field, although the classical rule still forbids it in the digits, penis, ear lobe, nose tip and flaps.",
+          "Calculate the ceiling aloud: **plain lignocaine 3 mg/kg = 180 mg for 60 kg = 18 mL of 1% (9 mL of 2%)**; **with adrenaline 7 mg/kg = 420 mg = 42 mL of 1% (21 mL of 2%)**; a 5 cm wound needs only 5-10 mL, and the dose actually used is recorded in milligrams.",
+          "Inject **through the cut wound edges into the subcutaneous plane** along both sides rather than through intact skin, with the smallest needle and warmed and, if possible, buffered solution, aspirating before each injection and injecting slowly; then **wait 3-5 minutes and test the block** with a forceps pinch before starting.",
+          "Talk to the patient throughout and ask about perioral tingling, a metallic taste, tinnitus or light-headedness - the early signs of systemic toxicity - and keep oxygen, a benzodiazepine and 20% lipid emulsion in the room.",
+          "If the block is inadequate, top up within the calculated maximum or convert to a field block around the wound; do not simply keep injecting until it works.",
+        ],
+      },
+      {
+        heading: "Irrigation, debridement and the closure itself",
+        points: [
+          "Irrigate with **50-100 mL of normal saline per centimetre - 250-500 mL for this wound** - delivered under pressure through the 18 G cannula, remove clot, re-inspect the depths for glass, and excise only truly ragged or devitalised edges, which an incised glass wound rarely has.",
+          "Secure haemostasis with pressure; ligate a visible small bleeder with fine absorbable suture but never clamp blindly in the depths of a forearm wound, where the nerves run with the vessels.",
+          "If the wound gapes into fat, close the **subcutaneous layer with interrupted 3-0 polyglactin buried knots** to eliminate dead space; a 5 cm skin laceration usually needs a single layer.",
+          "Close the skin with **simple interrupted 4-0 nylon**: hold the needle at the junction of its middle and posterior thirds, enter at 90 degrees, take bites 5 mm from the edge and 5-10 mm apart, of equal depth on both sides and **wider at the base than at the surface** so that the edges evert; place the first suture at the midpoint to halve the wound and then bisect each half.",
+          "Tie an **instrument tie with a surgeon's knot** - a double first throw, then two or three square throws, four throws in all for nylon - lay the knots to one side of the wound, and **approximate without strangulating**, because the tissues swell over the next 24 hours; cut the tails to 5 mm.",
+        ],
+      },
+      {
+        heading: "Dressing, prophylaxis and the instructions given",
+        points: [
+          "Clean the blood off the skin, apply a **non-adherent paraffin gauze**, dry gauze and a light crepe bandage, and put the arm in a sling for 24-48 hours with advice to elevate; no splint is needed unless the wound crosses a joint.",
+          "**Tetanus:** this is a clean minor wound, so a patient with a complete primary course whose last dose was within 10 years needs nothing; otherwise give a Td booster 0.5 mL intramuscularly, and immunoglobulin is not indicated.",
+          "**No antibiotic is prescribed for a clean, irrigated, primarily closed wound**; give paracetamol 500-1000 mg up to four times a day for pain and avoid aspirin in the first days.",
+          "Advise the patient to keep the dressing dry for 48 hours and then wash gently and pat dry, not to soak it, and to return at once for increasing pain, redness spreading beyond the edge, discharge, fever or gaping; warn that the scar will be red for 3-6 months and advise sun protection.",
+          "Fix the **wound check at 48 hours** and **suture removal at 10 days** for the forearm (7-10 days for the upper limb in general, 10-14 if the wound crosses the elbow or wrist), with adhesive strip support for a few days after the sutures come out.",
+        ],
+      },
+      {
+        heading: "Documentation: what goes in the notes",
+        points: [
+          "Record the date and time of injury and of the procedure, the mechanism, and the wound as site, length in centimetres, shape, depth, contamination and the absence of a foreign body, with a diagram.",
+          "Record the **pre-anaesthetic neurovascular and tendon examination as normal**, the consent, the skin preparation, and the anaesthetic as agent, concentration, whether adrenaline was used, the volume in millilitres and the **total dose in milligrams** (for example 8 mL of 1% plain lignocaine = 80 mg).",
+          "Record the irrigation volume, the number, size and material of the sutures (for example six interrupted 4-0 nylon), the dressing, the tetanus vaccine with its batch number, the analgesic prescribed and the advice given.",
+          "Write the review date and the date of suture removal, sign with name and registration number, and if the injury was an assault or a road traffic accident register it as a medicolegal case, photograph the wound with consent and issue the wound certificate.",
+        ],
+      },
+    ],
+    summaryStatement:
+      "A 60 kg, 25-year-old right-handed man presents 2 hours after an accidental glass injury with a 5 cm clean, linear, incised laceration on the volar aspect of the non-dominant left forearm, with intact radial and ulnar pulses, intact median, ulnar and radial nerve function, intact flexor tendon function and no retained foreign body; this is a CDC class I clean wound within the golden period, suitable for primary closure with simple interrupted 4-0 nylon under infiltration anaesthesia with 1% lignocaine calculated at a maximum of 3 mg/kg plain or 7 mg/kg with adrenaline, followed by tetanus prophylaxis according to his immunisation status, no antibiotic, a wound check at 48 hours and suture removal at 10 days.",
+    differential: [
+      {
+        diagnosis: "Simple incised laceration of skin and subcutaneous tissue only",
+        forIt: "A clean sharp mechanism, full active flexion of every finger against resistance, normal sensation, and a wound whose floor is seen to be intact on exploration.",
+        againstIt: "Nothing clinically, but a wound that has not been explored through its full depth in a bloodless field cannot be called superficial.",
+      },
+      {
+        diagnosis: "Laceration with flexor tendon injury (zone V of the flexor system)",
+        forIt: "The volar forearm is where the tendons of flexor digitorum superficialis and profundus, flexor carpi radialis and palmaris longus lie just under the skin, and glass cuts deep.",
+        againstIt: "Each tendon tested individually has a full range against resistance; a partial cut can still preserve movement, which is why pain on resisted movement or a visible tendon in the wound mandates referral.",
+      },
+      {
+        diagnosis: "Laceration with median or ulnar nerve injury",
+        forIt: "A mid-forearm volar wound overlies the median nerve, and the ulnar neurovascular bundle lies on the ulnar side.",
+        againstIt: "Two-point discrimination is normal over the index and little finger pulps, thumb abduction and finger abduction are strong, and sweating on the pulps is preserved.",
+      },
+      {
+        diagnosis: "Retained glass fragment",
+        forIt: "Glass is the commonest retained foreign body in a laceration and a fragment is easy to miss in a bleeding wound.",
+        againstIt: "The wound has been explored to its depth after irrigation and nothing is seen or felt; glass is radio-opaque, so a radiograph settles any doubt.",
+      },
+    ],
+    investigations: [
+      {
+        test: "Plain radiograph of the forearm, anteroposterior and lateral views",
+        why: "Glass, metal and stone are radio-opaque; a film is ordered whenever a fragment is suspected or the wound was caused by shattering glass.",
+        expected: "No radio-opaque foreign body and no fracture.",
+      },
+      {
+        test: "Ultrasound of the wound",
+        why: "Detects radiolucent foreign bodies such as wood or thorn that a radiograph misses; not needed for glass unless the radiograph is negative and suspicion persists.",
+        expected: "No foreign body.",
+      },
+      {
+        test: "Capillary blood glucose",
+        why: "Undiagnosed diabetes impairs healing and raises the infection rate; checked if there is any risk factor or the history suggests it.",
+        expected: "Normal.",
+      },
+      {
+        test: "Platelet count and coagulation profile",
+        why: "Only if there is a history of a bleeding disorder, anticoagulant use or bleeding that will not stop with pressure.",
+        expected: "Not required routinely; normal if sent.",
+      },
+      {
+        test: "Wound swab for culture",
+        why: "Not indicated in a fresh clean wound; it is sent only if the wound later shows signs of infection, before antibiotics are started.",
+        expected: "Not sent at presentation.",
+      },
+      {
+        test: "Tetanus immunisation record",
+        why: "Decides whether a Td booster is needed; it is the one piece of paper that changes management in a clean wound.",
+        expected: "A completed primary course with a booster within 10 years means nothing further is required.",
+      },
+    ],
+    management: [
+      {
+        heading: "The procedure in the order the examiner wants to hear it",
+        points: [
+          "History and pre-anaesthetic examination of pulses, nerves and tendons; consent; supine position with the arm on a board.",
+          "Hand hygiene, sterile gloves, skin preparation outward from the wound, drape.",
+          "1% lignocaine calculated at 3 mg/kg plain (18 mL for 60 kg) or 7 mg/kg with adrenaline (42 mL), infiltrated through the wound edges, aspirating first; wait 3-5 minutes and test.",
+          "Irrigate with 250-500 mL of saline under pressure, explore to the depth, remove any glass, minimal debridement, haemostasis by pressure.",
+          "Simple interrupted 4-0 nylon, bites 5 mm from the edge and 5-10 mm apart, everted edges, surgeon's knot with four throws, approximated not strangulated.",
+          "Non-adherent dressing, sling and elevation; tetanus prophylaxis by status; no antibiotic; analgesia; written advice; review at 48 hours; sutures out at 10 days; document everything including the anaesthetic dose in milligrams.",
+        ],
+      },
+      {
+        heading: "The doses to state without hesitation",
+        points: [
+          "**Lignocaine plain 3 mg/kg** (adult ceiling 200 mg): 60 kg = 180 mg = 18 mL of 1% or 9 mL of 2%.",
+          "**Lignocaine with adrenaline 1:200,000, 7 mg/kg** (adult ceiling 500 mg): 60 kg = 420 mg = 42 mL of 1% or 21 mL of 2%.",
+          "Bupivacaine 2 mg/kg (ceiling 150 mg) if a long-acting block is wanted; 1% = 10 mg/mL and 2% = 20 mg/mL.",
+          "Td 0.5 mL intramuscularly if the last dose was more than 10 years ago or the course is incomplete; human tetanus immunoglobulin 250 IU is reserved for tetanus-prone wounds with fewer than three doses and is not needed here.",
+          "Paracetamol 500-1000 mg up to four times a day; amoxicillin-clavulanate 625 mg three times a day for 5 days only if the wound becomes infected, not prophylactically.",
+        ],
+      },
+      {
+        heading: "Aftercare and follow-up",
+        points: [
+          "Wound check at 48 hours: look for redness beyond 1 cm of the edge, discharge, tenderness and fever; a suspected collection is treated by removing one or two sutures to let it drain, a swab, daily dressings and an antibiotic.",
+          "Suture removal at 10 days for the forearm, with adhesive strips for support for a further 5-7 days; the wound has only about 10% of its final strength at that stage, so heavy lifting is avoided for 3 weeks.",
+          "Scar care: sun protection for 6 months, gentle massage from the third week, and silicone gel sheeting if the scar thickens; warn that hypertrophy is commoner over the flexor surface and in darker skin.",
+          "Return to college or work the next day for a non-dominant forearm wound, with the arm kept clean and dry.",
+        ],
+      },
+      {
+        heading: "When to refer instead of suturing",
+        points: [
+          "A divided or partially divided tendon, a nerve deficit, an arterial bleed or an expanding haematoma - dress, elevate and send to a hand or plastic surgeon the same day.",
+          "A wound with tissue loss, a distally based flap, a crush component, gross contamination or presentation beyond 6 hours - wound toilet and delayed primary closure rather than immediate suture.",
+          "A wound that crosses a joint with suspected joint penetration, an open fracture, or a retained fragment that cannot be removed.",
+          "A child or an anxious adult who cannot tolerate the procedure under local anaesthetic, or a wound too large for the safe local anaesthetic dose.",
+        ],
+      },
+    ],
+    viva: [
+      {
+        q: "What is the maximum dose of lignocaine you may give this 60 kg patient?",
+        a: "Plain lignocaine 3 mg/kg, so 180 mg, which is 18 mL of 1% or 9 mL of 2%; with adrenaline 7 mg/kg, so 420 mg, which is 42 mL of 1% or 21 mL of 2%. Adult ceilings are 200 mg plain and 500 mg with adrenaline, and the dose is reduced in the elderly, in hepatic or cardiac failure and in the very young.",
+      },
+      {
+        q: "Why may adrenaline be used on the forearm but classically not on a finger?",
+        a: "The forearm has a rich collateral supply, so vasoconstriction only reduces bleeding and slows absorption, which prolongs the block and raises the safe dose. The digits, penis, ear lobe, nose tip and skin flaps are end-artery territories where vasoconstriction can cause ischaemic necrosis; that remains the safe examination answer even though modern series show commercial lignocaine with adrenaline to be safe in normal digits.",
+      },
+      {
+        q: "Which wounds would you not close primarily?",
+        a: "Wounds more than 6 hours old on the limbs or trunk, mammalian bites, puncture and stab wounds, grossly contaminated or crush wounds, wounds with a retained foreign body or already infected, wounds with tissue loss, and wounds with an untreated tendon, nerve or vessel injury; these are cleaned, packed open and closed by delayed primary closure at day 3 to 5, or referred.",
+      },
+      {
+        q: "Why nylon rather than silk for the skin, and which needle?",
+        a: "Nylon is a monofilament: it slides without sawing, has no capillarity to wick bacteria, causes minimal tissue reaction and leaves fewer marks, whereas braided silk harbours bacteria and provokes inflammation. Skin is closed with a reverse cutting needle, whose cutting edge is on the outer convex surface so the suture does not cut out through the skin; round-bodied needles are for bowel, vessels and fascia.",
+      },
+      {
+        q: "How do you decide the bite size and spacing, and why must the edges evert?",
+        a: "On the limbs, 5 mm from the edge and 5-10 mm apart, with equal bites of equal depth; on the face 2-3 mm from the edge and 3-5 mm apart. Taking a bite wider at the base than at the surface everts the edges so that dermis meets dermis; inverted edges heal with a depressed scar, whereas an everted closure flattens to a level scar as it contracts.",
+      },
+      {
+        q: "When do you remove the sutures, and what if the wound looks infected at the 48-hour check?",
+        a: "Face 4-5 days, scalp and trunk 7-10, upper limb 10, lower limb 10-14, palm and sole 12-14 days; for this forearm wound, 10 days. If it is infected, remove one or two sutures over the most inflamed part to let pus drain, send a swab, start an antibiotic such as amoxicillin-clavulanate, dress daily and let it heal by secondary intention or close it later.",
+      },
+      {
+        q: "What is the tetanus prophylaxis for this patient?",
+        a: "This is a clean minor wound. If he has had three or more doses of tetanus toxoid and the last within 10 years, nothing is needed; if the last was more than 10 years ago, or the course is incomplete or unknown, give Td 0.5 mL intramuscularly and complete the course. Immunoglobulin is not indicated for a clean minor wound.",
+      },
+      {
+        q: "Name the phases of wound healing and the factors that delay it.",
+        a: "Haemostasis, inflammation (days 0-4), proliferation with fibroplasia, angiogenesis and epithelialisation (days 4-21), and remodelling of collagen (3 weeks to a year). Local factors that delay healing are infection, foreign body, haematoma, ischaemia, tension, oedema and repeated trauma; systemic factors are diabetes, malnutrition with protein, vitamin C and zinc deficiency, steroids and immunosuppression, smoking, anaemia, uraemia, jaundice, old age and irradiation.",
+      },
+    ],
+    pitfalls: [
+      "Injecting the anaesthetic before the distal pulses, nerves and tendons have been examined and written down.",
+      "Quoting the dose in millilitres without the concentration, or forgetting that 2% lignocaine carries twice the drug of 1%.",
+      "Pouring povidone-iodine or hydrogen peroxide into the wound and calling it cleaning, instead of irrigating with saline under pressure.",
+      "Tying too tight and taking unequal bites, which invert the edges and leave a railway-track scar.",
+      "Prescribing an antibiotic reflexively for a clean wound while forgetting to ask about the tetanus status.",
+      "Sending the patient away without a written review date, the date for suture removal and the warning signs of infection.",
+    ],
+    references: [
+      "Bailey and Love Short Practice of Surgery, 28th edition, 2023 - wounds, tissue repair and scars; basic surgical skills",
+      "SRB Manual of Surgery, 6th edition, 2019 - wounds, sutures and suture materials",
+      "Association of Anaesthetists (AAGBI) Safety Guideline: Management of Severe Local Anaesthetic Toxicity, 2010",
+      "CDC Guideline for the Prevention of Surgical Site Infection, 2017",
+      "ACIP Updated Recommendations on Td and Tdap Vaccines, including tetanus prophylaxis in wound management, MMWR 2020",
+    ],
+  },
+];
+
+const subject: Subject = {
+  id: "surgery-office",
+  title: "Surgery & Office Procedures",
+  blurb: "Wounds and suturing, abscesses, lumps, hernia, diabetic foot and the procedures done in the clinic.",
+  icon: "Scissors",
+  papers: ["III"],
+  topics,
+  cases,
+};
+
+export default subject;
