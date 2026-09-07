@@ -2826,6 +2826,393 @@ topics.push({
   ],
 });
 
+topics.push({
+  id: "renal-urology-proteinuria-nephrotic-nephritic",
+  title: "Proteinuria, and the nephrotic and nephritic syndromes",
+  oneLiner:
+    "Proteinuria is quantified by the urine albumin-creatinine ratio or protein-creatinine ratio rather than by dipstick, and it separates into the nephrotic syndrome - proteinuria above 3.5 g/day with hypoalbuminaemia below 3.0 g/dL, oedema and hyperlipidaemia, from a podocyte lesion with a bland sediment - and the nephritic syndrome - haematuria with dysmorphic red cells and red cell casts, hypertension, oliguria and a rising creatinine, from an inflammatory glomerular lesion.",
+  frequency: "less-common",
+  keywords: [
+    "proteinuria",
+    "nephrotic syndrome",
+    "nephritic syndrome",
+    "urine protein-creatinine ratio",
+    "minimal change disease",
+    "focal segmental glomerulosclerosis",
+    "membranous nephropathy",
+    "PLA2R antibody",
+    "IgA nephropathy",
+    "post-streptococcal glomerulonephritis",
+    "rapidly progressive glomerulonephritis",
+    "orthostatic proteinuria",
+    "renal biopsy",
+    "ANCA vasculitis",
+    "anti-GBM",
+    "complement C3",
+  ],
+  sections: [
+    {
+      heading: "Detecting and quantifying proteinuria properly",
+      points: [
+        "**The dipstick detects albumin only, and only above about 300 mg/L**, so it **misses category A2 albuminuria entirely** - precisely the stage at which treatment changes outcome - and it misses **Bence Jones light chains in myeloma**, which is why a patient with unexplained renal failure and a negative dipstick still needs serum and urine electrophoresis with free light chains.",
+        "**False positives** occur with concentrated urine, alkaline urine above pH 8, gross haematuria, pyuria, semen, vaginal secretions and antiseptics such as chlorhexidine; **false negatives** with dilute urine and with non-albumin proteins.",
+        "**Quantify with a spot first-morning sample:** the **urine albumin-creatinine ratio (ACR) in mg/g** for screening and staging, and the **urine protein-creatinine ratio (PCR) in mg/g** when proteinuria is heavy or non-albumin protein is suspected. **A PCR of 1000 mg/g approximates 1 g of protein per day**, because an adult excretes roughly 1 g of creatinine daily; this makes the 24-hour collection largely unnecessary.",
+        "**KDIGO albuminuria categories: A1 under 30 mg/g, A2 30-300 mg/g, A3 above 300 mg/g.** **Nephrotic-range proteinuria is a PCR above 3000 mg/g, equivalent to more than 3.5 g of protein per day.**",
+        "**Confirm before labelling:** proteinuria is transient after **fever, vigorous exercise, heart failure, seizures and urinary infection**, so repeat an abnormal result on **2 of 3 first-morning specimens over 3-6 months**, having treated any infection.",
+        "**Orthostatic (postural) proteinuria** is a benign condition of adolescents and young adults: protein is present in the daytime upright sample and **absent in the first-morning recumbent sample**. It needs no treatment and no biopsy, only reassurance and a check every year or two.",
+      ],
+    },
+    {
+      heading: "Nephrotic syndrome: definition, causes and complications",
+      points: [
+        "**The tetrad:** **proteinuria above 3.5 g/1.73 m2/day (PCR above 3000 mg/g)**, **serum albumin below 3.0 g/dL**, **oedema** and **hyperlipidaemia** with lipiduria (oval fat bodies and Maltese cross appearance under polarised light). The sediment is otherwise **bland - no red cell casts**.",
+        "**Primary causes by age:** **minimal change disease is the commonest cause in children (about 90% under 10 years)** and responds dramatically to steroids; **focal segmental glomerulosclerosis is the commonest primary cause in Indian adults and in adults of African ancestry**; **membranous nephropathy is the classic primary cause in older adults, with an anti-PLA2R antibody positive in about 70-80%**, which can make a biopsy unnecessary; and **membranoproliferative glomerulonephritis, now reclassified as immune-complex-mediated or complement-mediated (C3 glomerulopathy)**.",
+        "**Secondary causes to look for in Indian practice:** **diabetes mellitus (by far the commonest cause overall)**, **amyloidosis (AA amyloid from chronic tuberculosis, bronchiectasis, leprosy, osteomyelitis and rheumatoid arthritis; AL amyloid from plasma cell dyscrasia)**, systemic lupus erythematosus, **hepatitis B and C and HIV**, malaria (quartan nephropathy from Plasmodium malariae), leprosy, drugs (**NSAIDs, gold, penicillamine, captopril**), and malignancy - **solid tumours with membranous nephropathy, Hodgkin lymphoma with minimal change disease**.",
+        "**Complications that must be listed:** **infection - spontaneous bacterial peritonitis and cellulitis from urinary loss of immunoglobulin and complement factor B**, particularly pneumococcal in children; **venous thromboembolism including renal vein thrombosis** from loss of antithrombin III, especially with **membranous nephropathy and albumin below 2.0-2.5 g/dL**; **acute kidney injury** from intravascular depletion, overdiuresis or interstitial nephritis; **accelerated atherosclerosis** from hyperlipidaemia; **protein-energy malnutrition**; and **vitamin D deficiency with hypocalcaemia and anaemia** from urinary loss of binding proteins.",
+        "**Suspect renal vein thrombosis** with sudden flank pain, macroscopic haematuria, a sudden increase in proteinuria or a sudden fall in kidney function in a patient with membranous nephropathy - confirm by CT or MR venography.",
+        "**Oedema is periorbital and facial on waking in children, and dependent and pitting in adults**; ascites, pleural effusion and genital oedema occur with severe hypoalbuminaemia. Weigh the patient at every visit - it is the most reliable measure of response.",
+      ],
+    },
+    {
+      heading: "Nephritic syndrome and rapidly progressive glomerulonephritis",
+      points: [
+        "**The nephritic syndrome:** **haematuria with dysmorphic red cells and red cell casts**, **hypertension**, **oliguria**, **oedema (typically periorbital)**, a **rising creatinine** and **proteinuria that is usually sub-nephrotic**. The red cell cast is the single most specific finding in nephrology and its presence changes the entire approach.",
+        "**Post-infectious (post-streptococcal) glomerulonephritis** is the classic Indian paediatric cause: **1-3 weeks after a streptococcal throat infection or 3-6 weeks after pyoderma** (pyoderma being the commoner antecedent in India), with **smoky or cola-coloured urine, periorbital puffiness, hypertension**, a **raised ASO titre or anti-DNase B**, and **a low C3 that returns to normal within 6-8 weeks - failure of C3 to normalise by 8-12 weeks demands a biopsy**. Treatment is supportive: salt and fluid restriction, a loop diuretic, antihypertensives, and penicillin to clear the organism; the prognosis in children is excellent.",
+        "**IgA nephropathy (Berger disease) is the commonest primary glomerulonephritis worldwide**: **synpharyngitic haematuria - visible haematuria within 1-3 days of an upper respiratory infection, in contrast to the 1-3 week latency of post-streptococcal disease**, often with persistent microscopic haematuria between episodes and a normal C3. Management is supportive with maximal RAS blockade, blood pressure control and an SGLT2 inhibitor, with immunosuppression reserved for high-risk disease.",
+        "**Rapidly progressive glomerulonephritis** is a nephritic presentation with a **fall in GFR of 50% or more within days to 3 months**, and **crescents in more than 50% of glomeruli** on biopsy. **It is a medical emergency** and is classified into three types: **type 1 anti-GBM disease (linear IgG, Goodpasture syndrome with pulmonary haemorrhage)**; **type 2 immune-complex disease (lupus nephritis, post-infectious, IgA and Henoch-Schonlein purpura, cryoglobulinaemia)**; and **type 3 pauci-immune (ANCA-associated - granulomatosis with polyangiitis with c-ANCA/PR3, and microscopic polyangiitis with p-ANCA/MPO)**.",
+        "**The pulmonary-renal syndrome - haemoptysis with haematuria and a rapidly rising creatinine - is a same-day emergency** requiring anti-GBM antibody, ANCA, ANA and anti-dsDNA, complement, chest imaging and an urgent renal biopsy, with treatment by **high-dose methylprednisolone, cyclophosphamide or rituximab, and plasma exchange in anti-GBM disease or severe pulmonary haemorrhage**.",
+        "**Complement is the free diagnostic tool:** **low C3 with normal C4 suggests post-infectious glomerulonephritis or C3 glomerulopathy; low C3 with low C4 suggests lupus nephritis, cryoglobulinaemia or shunt nephritis; normal complement suggests IgA nephropathy, ANCA vasculitis, anti-GBM disease or Henoch-Schonlein purpura.**",
+      ],
+    },
+    {
+      heading: "Investigation and when to biopsy",
+      points: [
+        "**First tier in every case:** urine routine and microscopy examined personally for dysmorphic red cells and casts, urine PCR or ACR, serum creatinine with eGFR, serum albumin and total protein, fasting lipids, blood glucose or HbA1c, complete blood count, and ultrasound of the kidneys, ureters and bladder.",
+        "**Second tier, directed by the picture:** **complement C3 and C4**, ANA with anti-dsDNA, **ANCA (PR3 and MPO)**, **anti-GBM antibody**, **anti-PLA2R antibody in adult membranous nephropathy**, ASO titre and anti-DNase B, hepatitis B surface antigen, anti-HCV and HIV serology, **serum and urine protein electrophoresis with serum free light chains in anyone over 40**, and cryoglobulins where the picture fits.",
+        "**Indications for renal biopsy:** nephrotic syndrome in an adult (except when the diabetes is clearly the cause and the picture is typical); **steroid-resistant or frequently relapsing nephrotic syndrome in a child, or nephrotic syndrome in a child under 1 year or over 12 years, or with haematuria, hypertension or a low C3**; nephritic syndrome that does not resolve; **any suspected rapidly progressive glomerulonephritis, urgently**; unexplained acute kidney injury with an active sediment; systemic disease with renal involvement such as lupus; and unexplained CKD with normal-sized kidneys.",
+        "**Biopsy is contraindicated** in a solitary kidney (relative), uncontrolled hypertension, uncorrected bleeding diathesis or thrombocytopenia, active urinary infection, small echogenic kidneys, and a hydronephrotic or grossly cystic kidney. Stop antiplatelets and anticoagulants beforehand and check platelets, prothrombin time and blood group.",
+        "**Do not biopsy the typical diabetic:** long-standing diabetes, retinopathy, a slow rise in albuminuria and a bland sediment. **Do biopsy the diabetic who has no retinopathy, an active sediment, a very rapid rise in proteinuria, a short duration of diabetes, or a sudden nephrotic presentation** - because non-diabetic kidney disease is common in Indian biopsy series.",
+        "**In a child with typical nephrotic syndrome aged 1-12 years, no haematuria, no hypertension, normal complement and normal renal function, treat with steroids without biopsy** - the diagnosis is minimal change disease until proven otherwise, and it responds.",
+      ],
+    },
+    {
+      heading: "Managing the nephrotic patient in family practice",
+      points: [
+        "**Oedema:** **salt restriction to under 2 g of sodium a day, fluid restriction to about 1-1.5 litres if hyponatraemic, and a loop diuretic - furosemide 40-80 mg PO OD or BD, increased as needed, or given intravenously when gut wall oedema prevents absorption**; add **metolazone 2.5-5 mg or hydrochlorothiazide** for sequential nephron blockade in resistant oedema, always with close monitoring of potassium and volume. **Aim for a weight loss of 0.5-1 kg per day at most** - faster diuresis causes intravascular depletion and acute kidney injury.",
+        "**Proteinuria reduction:** an **ACE inhibitor or ARB titrated to the maximum tolerated dose (telmisartan 40-80 mg OD, enalapril 5-20 mg BD, ramipril 2.5-10 mg OD)**, with blood pressure targeted below 130/80 mmHg, plus **an SGLT2 inhibitor such as dapagliflozin 10 mg OD, which now has evidence in proteinuric non-diabetic CKD from DAPA-CKD and EMPA-KIDNEY**. Recheck creatinine and potassium at 2-4 weeks and accept a creatinine rise of up to 30%.",
+        "**Hyperlipidaemia:** a statin such as **atorvastatin 10-40 mg OD** for persistent nephrotic syndrome, particularly in adults with cardiovascular risk; the lipid abnormality is corrected if the syndrome remits.",
+        "**Thromboprophylaxis:** consider **prophylactic anticoagulation when serum albumin is below 2.0-2.5 g/dL, especially in membranous nephropathy**, and treat any established thrombosis with full anticoagulation for at least as long as the nephrotic state persists. Encourage mobility and avoid unnecessary bed rest.",
+        "**Infection prevention:** a high index of suspicion for **spontaneous bacterial peritonitis in a nephrotic child with abdominal pain and fever - tap the ascites**; **pneumococcal vaccine (PCV followed by PPSV23), annual influenza and hepatitis B vaccination**; **varicella vaccine before starting long-term steroids** where possible, and varicella-zoster immunoglobulin after significant exposure in a child on steroids.",
+        "**Diet and supportive care:** protein intake of about **0.8-1.0 g/kg/day - protein loading does not raise serum albumin and accelerates the disease**; adequate calories; vitamin D supplementation where deficiency is documented; and calcium with vitamin D plus bone protection for anyone on prolonged steroids.",
+      ],
+    },
+    {
+      heading: "Specific treatment, referral and follow-up",
+      points: [
+        "**Childhood minimal change disease:** **prednisolone 60 mg/m2/day (maximum 60 mg) for 6 weeks, then 40 mg/m2 on alternate days for 6 weeks, then taper** (the ISPN and IPNA regimens). About **80-90% remit within 4 weeks**; relapses are treated with 60 mg/m2/day until remission then alternate-day therapy. **Steroid-dependent or frequently relapsing disease** is managed with levamisole, cyclophosphamide, mycophenolate mofetil, a calcineurin inhibitor or rituximab under a nephrologist.",
+        "**Adult membranous nephropathy:** about a third remit spontaneously, so **supportive therapy for 6 months** is appropriate in low-risk disease; immunosuppression (rituximab, or cyclophosphamide with steroids, or a calcineurin inhibitor) is reserved for high-risk disease defined by persistent heavy proteinuria, declining eGFR or a high anti-PLA2R titre. **Always exclude an underlying malignancy, hepatitis B and lupus.**",
+        "**Focal segmental glomerulosclerosis:** distinguish **primary FSGS (abrupt nephrotic syndrome, diffuse foot process effacement, treated with steroids)** from **secondary and adaptive FSGS (obesity, reflux nephropathy, reduced nephron mass, sickle cell disease, HIV, treated supportively without steroids)**. Treating adaptive FSGS with immunosuppression is harmful and is a favourite examination distinction.",
+        "**IgA nephropathy:** supportive care with maximal RAS blockade, blood pressure control, an SGLT2 inhibitor and lifestyle measures for at least 90 days before considering immunosuppression, which is reserved for proteinuria persisting above 0.75-1 g/day at high risk of progression.",
+        "**Refer to nephrology:** all adult nephrotic syndrome; all nephritic syndrome; any suspected rapidly progressive glomerulonephritis the same day; a child who is steroid resistant, frequently relapsing, under 1 year or over 12 years, or has atypical features; proteinuria above 1 g/day; declining eGFR; and any pulmonary-renal syndrome.",
+        "**Follow-up in family practice:** home urine dipstick diary for relapse detection in children (parents are taught to test the first-morning urine and report 3 consecutive days of 3+ protein), weight and blood pressure at every visit, creatinine and albumin at each review, growth monitoring in children on steroids, and vigilance for steroid adverse effects - hypertension, cataract, hyperglycaemia, growth failure, osteoporosis and infection.",
+      ],
+    },
+  ],
+  tables: [
+    {
+      heading: "Nephrotic versus nephritic syndrome",
+      columns: ["Feature", "Nephrotic syndrome", "Nephritic syndrome"],
+      rows: [
+        ["Proteinuria", "Above 3.5 g/day, PCR above 3000 mg/g", "Usually below 3.5 g/day"],
+        ["Haematuria", "Absent or minimal; bland sediment", "Present, with dysmorphic red cells and red cell casts"],
+        ["Serum albumin", "Below 3.0 g/dL", "Normal or mildly reduced"],
+        ["Oedema", "Marked, generalised, may progress to anasarca", "Mild, typically periorbital"],
+        ["Blood pressure", "Often normal", "Raised"],
+        ["Urine output", "Usually preserved", "Oliguria common"],
+        ["Renal function", "Often preserved initially", "Rising creatinine"],
+        ["Underlying lesion", "Podocyte injury without inflammation", "Glomerular inflammation with proliferation"],
+        ["Typical causes", "Minimal change, FSGS, membranous, diabetes, amyloidosis", "Post-infectious, IgA nephropathy, lupus, ANCA vasculitis, anti-GBM"],
+      ],
+    },
+    {
+      heading: "Using complement and serology to name the glomerulonephritis",
+      columns: ["Serology pattern", "Diagnoses to consider", "Confirmatory test"],
+      rows: [
+        ["Low C3, normal C4", "Post-infectious glomerulonephritis, C3 glomerulopathy, dense deposit disease", "ASO or anti-DNase B; repeat C3 at 8 weeks; biopsy if still low"],
+        ["Low C3 and low C4", "Lupus nephritis, cryoglobulinaemia, shunt nephritis, hepatitis C associated", "ANA, anti-dsDNA, cryoglobulins, anti-HCV, blood cultures"],
+        ["Normal complement, positive ANCA", "Granulomatosis with polyangiitis, microscopic polyangiitis", "PR3 and MPO ANCA; urgent renal biopsy"],
+        ["Normal complement, positive anti-GBM", "Anti-GBM disease, Goodpasture syndrome", "Anti-GBM antibody; urgent biopsy; start plasma exchange"],
+        ["Normal complement, no autoantibody", "IgA nephropathy, Henoch-Schonlein purpura, thin basement membrane disease", "Biopsy with immunofluorescence for mesangial IgA"],
+        ["Nephrotic, adult, anti-PLA2R positive", "Primary membranous nephropathy", "Anti-PLA2R titre may avoid biopsy; screen for malignancy and hepatitis B"],
+      ],
+    },
+  ],
+  redFlags: [
+    "Haemoptysis with haematuria and a creatinine rising over days - pulmonary-renal syndrome from anti-GBM disease or ANCA vasculitis; admit today for antibody tests, biopsy and plasma exchange.",
+    "A fall in eGFR of 50% or more within days to weeks with an active urinary sediment - rapidly progressive glomerulonephritis; urgent nephrology referral for biopsy and immunosuppression.",
+    "Nephrotic child with abdominal pain, fever and guarding - spontaneous bacterial peritonitis; tap the ascites and start antibiotics without waiting.",
+    "Sudden flank pain, visible haematuria or a sudden rise in proteinuria in membranous nephropathy - renal vein thrombosis; image with CT or MR venography and anticoagulate.",
+    "Nephritic syndrome with hypertensive encephalopathy, seizures or pulmonary oedema in a child - admit for controlled blood pressure reduction and diuresis.",
+    "Nephrotic syndrome with a serum albumin below 2.0 g/dL and immobility - high risk of venous thromboembolism; consider prophylactic anticoagulation.",
+    "Post-streptococcal glomerulonephritis in which C3 has not returned to normal by 8-12 weeks - this is not post-infectious disease; arrange a biopsy.",
+  ],
+  pearls: [
+    "The dipstick misses A2 albuminuria and misses Bence Jones light chains; quantify with a first-morning ACR or PCR instead.",
+    "A urine protein-creatinine ratio of 1000 mg/g is roughly 1 g of protein a day, which makes the 24-hour collection unnecessary in almost every case.",
+    "Orthostatic proteinuria is diagnosed by a normal first-morning recumbent sample with protein in the daytime upright sample; it needs reassurance, not a biopsy.",
+    "A red cell cast is the most specific finding in nephrology and moves the patient instantly from the nephrotic to the nephritic pathway.",
+    "Post-streptococcal glomerulonephritis follows the infection by 1-3 weeks (throat) or 3-6 weeks (skin); IgA nephropathy is synpharyngitic, within 1-3 days.",
+    "Low C3 with normal C4 means post-infectious disease or C3 glomerulopathy; low C3 with low C4 means lupus or cryoglobulinaemia; normal complement means IgA, ANCA or anti-GBM disease.",
+    "Anti-PLA2R is positive in 70-80% of primary membranous nephropathy and may spare the patient a biopsy - but never spares them a malignancy screen.",
+    "In a child aged 1-12 years with typical nephrotic syndrome, normal complement, no haematuria and no hypertension, give steroids without a biopsy.",
+  ],
+  theory: [
+    {
+      id: "renal-urology-proteinuria-nephrotic-nephritic-t1",
+      paper: "II",
+      kind: "long",
+      marks: 10,
+      minutes: 20,
+      frequency: "less-common",
+      question:
+        "A 6-year-old boy is brought with 5 days of puffiness of the face on waking and swelling of the feet. Urine dipstick shows 4+ protein, blood pressure is normal and there is no haematuria. Define nephrotic syndrome, discuss its evaluation and management in a child, and list the complications.",
+      openingLines: [
+        "Nephrotic syndrome is defined by the tetrad of proteinuria above 3.5 g per 1.73 m2 per day (in children, a urine protein-creatinine ratio above 2000-3000 mg/g or 3+ to 4+ protein on dipstick for 3 consecutive days), serum albumin below 3.0 g/dL, oedema, and hyperlipidaemia with lipiduria.",
+        "In a child of 6 years with normal blood pressure, no haematuria and normal renal function, the overwhelmingly likely diagnosis is minimal change disease, which is treated with corticosteroids without a renal biopsy.",
+      ],
+      answer: [
+        {
+          heading: "1. Definition and confirmation",
+          points: [
+            "The tetrad: heavy proteinuria, hypoalbuminaemia below 3.0 g/dL (often below 2.5 g/dL in children), oedema, and hyperlipidaemia with lipiduria showing oval fat bodies.",
+            "Confirm with a first-morning urine protein-creatinine ratio rather than a 24-hour collection; a PCR of 1000 mg/g corresponds to about 1 g of protein a day.",
+            "Remission is defined as urine protein nil or trace for 3 consecutive days; relapse as 3+ or 4+ for 3 consecutive days after remission.",
+            "The sediment is bland; the presence of dysmorphic red cells or red cell casts would move the diagnosis to a nephritic picture and change everything.",
+          ],
+        },
+        {
+          heading: "2. Evaluation",
+          points: [
+            "History: onset and progression of oedema, urine output and colour, preceding infection, drugs, family history, and previous episodes.",
+            "Examination: weight and height, blood pressure with an appropriate cuff, degree and distribution of oedema, ascites, pleural effusion, and a search for infection including cellulitis and peritonitis.",
+            "Investigations: urine routine and microscopy, urine PCR, serum albumin and total protein, serum creatinine and electrolytes, fasting lipids, complete blood count, and complement C3 and C4.",
+            "Additional tests when features are atypical: ANA and anti-dsDNA, hepatitis B and C and HIV serology, ASO titre, and ultrasound of the kidneys.",
+            "Biopsy is not indicated in this typical child; it is required if aged under 1 year or over 12 years, with haematuria, hypertension, a low C3, impaired renal function, or steroid resistance.",
+          ],
+        },
+        {
+          heading: "3. Specific treatment",
+          points: [
+            "Prednisolone 60 mg/m2/day (maximum 60 mg) as a single daily dose for 6 weeks, then 40 mg/m2 on alternate days for 6 weeks, then taper - the standard initial regimen.",
+            "About 80-90% of children achieve remission within 4 weeks; steroid resistance is defined as failure to remit after 4-6 weeks of daily steroids and requires biopsy and nephrology referral.",
+            "Relapses: prednisolone 60 mg/m2/day until remission for 3 consecutive days, then 40 mg/m2 on alternate days for 4 weeks.",
+            "Frequently relapsing or steroid-dependent disease: levamisole, cyclophosphamide, mycophenolate mofetil, a calcineurin inhibitor or rituximab, under a nephrologist.",
+          ],
+        },
+        {
+          heading: "4. Supportive management",
+          points: [
+            "Salt restriction to under 2 g of sodium a day during oedema; normal protein intake of about 1.0 g/kg/day, since protein loading does not raise serum albumin.",
+            "Furosemide 1-2 mg/kg/day only for symptomatic oedema, with caution because of the risk of intravascular depletion and thrombosis; intravenous albumin with furosemide is reserved for severe symptomatic oedema under supervision.",
+            "Daily home urine dipstick diary maintained by the parents to detect relapse early, with clear instructions on when to attend.",
+            "Calcium and vitamin D supplementation during prolonged steroid therapy, growth monitoring, and screening for steroid adverse effects including hypertension, cataract and hyperglycaemia.",
+            "Immunisation: pneumococcal conjugate followed by polysaccharide vaccine, annual influenza, hepatitis B, and varicella vaccine before long-term steroids; live vaccines are deferred during high-dose steroid therapy.",
+          ],
+        },
+        {
+          heading: "5. Complications",
+          points: [
+            "Infection: spontaneous bacterial peritonitis (classically pneumococcal), cellulitis and pneumonia, from urinary loss of immunoglobulin and complement factor B - a nephrotic child with abdominal pain and fever needs an ascitic tap.",
+            "Venous thromboembolism including renal vein thrombosis, from loss of antithrombin III and haemoconcentration; avoid unnecessary bed rest and aggressive diuresis.",
+            "Acute kidney injury from intravascular volume depletion, overdiuresis, sepsis or interstitial nephritis.",
+            "Hyperlipidaemia with accelerated atherosclerosis in persistent disease; protein-energy malnutrition and growth failure; hypocalcaemia and vitamin D deficiency; and anaemia from urinary loss of transferrin.",
+            "Steroid toxicity: growth suppression, obesity, hypertension, hyperglycaemia, cataract, osteoporosis and behavioural change.",
+          ],
+        },
+      ],
+      mustDraw: [
+        "A table contrasting nephrotic and nephritic syndrome across proteinuria, haematuria, blood pressure, urine output and renal function.",
+        "The steroid regimen written as a timeline: 60 mg/m2/day for 6 weeks, then 40 mg/m2 alternate days for 6 weeks, then taper.",
+      ],
+      markSplit: [
+        { part: "Definition and confirmation with PCR", marks: 2 },
+        { part: "Evaluation and indications for biopsy", marks: 2 },
+        { part: "Steroid regimen with doses and definitions of remission and resistance", marks: 3 },
+        { part: "Supportive management including vaccination", marks: 1 },
+        { part: "Complications", marks: 2 },
+      ],
+      keywords: ["nephrotic syndrome", "minimal change disease", "prednisolone 60 mg/m2", "spontaneous bacterial peritonitis", "renal vein thrombosis"],
+    },
+    {
+      id: "renal-urology-proteinuria-nephrotic-nephritic-t2",
+      paper: "III",
+      kind: "differentiate",
+      marks: 5,
+      minutes: 10,
+      frequency: "less-common",
+      question: "Differentiate between nephrotic and nephritic syndrome, and outline the approach to rapidly progressive glomerulonephritis.",
+      openingLines: [
+        "Nephrotic syndrome results from non-inflammatory podocyte injury with massive protein loss and a bland urinary sediment, whereas nephritic syndrome results from glomerular inflammation with haematuria, red cell casts, hypertension and a falling GFR.",
+        "Rapidly progressive glomerulonephritis is a nephritic presentation in which the GFR falls by 50% or more within days to 3 months, with crescents in more than half the glomeruli on biopsy, and it is a medical emergency.",
+      ],
+      answer: [
+        {
+          heading: "Differentiating features",
+          points: [
+            "Proteinuria: above 3.5 g/day in nephrotic syndrome, usually below that in nephritic syndrome.",
+            "Sediment: bland with oval fat bodies in nephrotic syndrome; dysmorphic red cells and red cell casts in nephritic syndrome.",
+            "Serum albumin below 3.0 g/dL with marked generalised oedema in nephrotic syndrome; normal or mildly reduced albumin with mild periorbital oedema in nephritic syndrome.",
+            "Blood pressure usually normal in nephrotic syndrome and raised in nephritic syndrome; urine output preserved versus oliguric; renal function often preserved initially versus a rising creatinine.",
+            "Causes: minimal change disease, FSGS, membranous nephropathy, diabetes and amyloidosis for nephrotic; post-infectious glomerulonephritis, IgA nephropathy, lupus nephritis, ANCA vasculitis and anti-GBM disease for nephritic.",
+          ],
+        },
+        {
+          heading: "Rapidly progressive glomerulonephritis - classification",
+          points: [
+            "Type 1, anti-GBM disease: linear IgG deposition; Goodpasture syndrome when there is associated pulmonary haemorrhage.",
+            "Type 2, immune-complex mediated: lupus nephritis, post-infectious glomerulonephritis, IgA nephropathy and Henoch-Schonlein purpura, cryoglobulinaemia; granular immunofluorescence.",
+            "Type 3, pauci-immune: ANCA-associated - granulomatosis with polyangiitis (c-ANCA, PR3) and microscopic polyangiitis (p-ANCA, MPO); scanty immune deposits.",
+          ],
+        },
+        {
+          heading: "Approach and treatment",
+          points: [
+            "Recognise it early: a fall in eGFR of 50% or more in days to weeks with an active sediment; admit the same day.",
+            "Investigations: urine microscopy, urine PCR, creatinine, complement C3 and C4, ANCA, anti-GBM antibody, ANA and anti-dsDNA, hepatitis and HIV serology, chest imaging for pulmonary haemorrhage, and an urgent renal biopsy.",
+            "Treatment: pulse methylprednisolone 500-1000 mg intravenously daily for 3 days followed by oral prednisolone, plus cyclophosphamide or rituximab; plasma exchange in anti-GBM disease and in severe pulmonary haemorrhage.",
+            "Supportive care: blood pressure control, dialysis where indicated, prophylaxis against Pneumocystis with co-trimoxazole, and gastric and bone protection.",
+            "Prognosis depends on how quickly treatment starts; a patient who is already dialysis dependent with widespread fibrous crescents rarely recovers, which is why same-day referral matters.",
+          ],
+        },
+      ],
+      mustDraw: ["A two-column comparison table of nephrotic versus nephritic syndrome, and a three-type classification box for RPGN."],
+      markSplit: [
+        { part: "Differentiating table", marks: 2 },
+        { part: "RPGN classification into three types", marks: 2 },
+        { part: "Investigation and emergency treatment", marks: 1 },
+      ],
+      keywords: ["nephritic", "crescentic glomerulonephritis", "ANCA", "anti-GBM", "plasma exchange"],
+    },
+  ],
+  mcqs: [
+    {
+      id: "renal-urology-proteinuria-nephrotic-nephritic-m1",
+      stem: "A 17-year-old boy is found to have 2+ proteinuria on a routine daytime urine sample. He is asymptomatic, normotensive, with normal creatinine and no haematuria. A first-morning sample collected immediately on waking shows no protein. What is the diagnosis and the correct action?",
+      options: [
+        "Early diabetic nephropathy; start an ACE inhibitor",
+        "Orthostatic proteinuria; reassure and review periodically",
+        "Minimal change disease; start prednisolone",
+        "IgA nephropathy; arrange a renal biopsy",
+      ],
+      answer: 1,
+      explanation:
+        "Protein present in an upright daytime sample but absent in the first-morning recumbent sample defines orthostatic proteinuria, a benign condition of adolescents and young adults that needs only reassurance and occasional review, with no treatment and no biopsy. Diabetic nephropathy would not appear in a normoglycaemic adolescent and does not disappear when recumbent. Minimal change disease produces nephrotic-range proteinuria with hypoalbuminaemia and oedema at all times of day, none of which he has. IgA nephropathy characteristically presents with haematuria, often visible and synpharyngitic, and a biopsy would be an unjustified invasive test in a boy whose first-morning urine is normal.",
+      difficulty: "easy",
+    },
+    {
+      id: "renal-urology-proteinuria-nephrotic-nephritic-m2",
+      stem: "A 9-year-old girl develops cola-coloured urine, periorbital puffiness and a blood pressure of 136/90 mmHg, three weeks after an impetiginous skin infection. Urine shows red cell casts, C3 is low and C4 is normal. What is the most likely diagnosis and the expected course of the C3?",
+      options: [
+        "IgA nephropathy; C3 remains persistently low",
+        "Post-streptococcal glomerulonephritis; C3 returns to normal within 6-8 weeks",
+        "Lupus nephritis; both C3 and C4 fall further",
+        "Membranoproliferative glomerulonephritis; C3 is normal by 2 weeks",
+      ],
+      answer: 1,
+      explanation:
+        "A nephritic presentation 3-6 weeks after pyoderma, with red cell casts and a low C3 with a normal C4, is classical post-streptococcal glomerulonephritis, in which C3 returns to normal within 6-8 weeks - and failure of C3 to normalise by 8-12 weeks is precisely the trigger for a biopsy to look for C3 glomerulopathy or membranoproliferative disease. IgA nephropathy characteristically has a normal complement and follows the infection within 1-3 days rather than weeks, which is the synpharyngitic pattern. Lupus nephritis lowers both C3 and C4 and would be expected to have systemic features and positive ANA. Membranoproliferative glomerulonephritis has a persistently low C3 rather than one normalising within 2 weeks.",
+      difficulty: "moderate",
+    },
+    {
+      id: "renal-urology-proteinuria-nephrotic-nephritic-m3",
+      stem: "A 58-year-old man with nephrotic syndrome, a serum albumin of 1.9 g/dL and biopsy-proven membranous nephropathy develops sudden left flank pain and visible haematuria with a further rise in proteinuria. What is the most likely complication?",
+      options: ["Renal vein thrombosis", "Ureteric calculus", "Acute pyelonephritis", "Papillary necrosis"],
+      answer: 0,
+      explanation:
+        "Nephrotic syndrome causes urinary loss of antithrombin III and a hypercoagulable state, and the risk is highest in membranous nephropathy with a serum albumin below 2.0-2.5 g/dL; sudden flank pain with visible haematuria and a jump in proteinuria is the classic presentation of renal vein thrombosis, confirmed by CT or MR venography and treated with anticoagulation. A ureteric calculus would produce colicky loin-to-groin pain without an increase in proteinuria and is not linked to hypoalbuminaemia. Acute pyelonephritis would present with fever, rigors, pyuria and costovertebral tenderness rather than isolated flank pain with rising proteinuria. Papillary necrosis occurs in diabetes, sickle cell disease and analgesic nephropathy, and typically produces sloughed papillae with obstruction rather than this picture.",
+      difficulty: "moderate",
+    },
+    {
+      id: "renal-urology-proteinuria-nephrotic-nephritic-m4",
+      stem: "A 61-year-old man presents with haemoptysis and breathlessness for 3 days. Creatinine has risen from 1.1 to 4.6 mg/dL over 10 days, urine shows dysmorphic red cells and red cell casts, and chest X-ray shows bilateral alveolar shadowing. What is the immediate priority?",
+      options: [
+        "Start empirical antitubercular therapy and review in 2 weeks",
+        "Admit today for anti-GBM antibody and ANCA testing, urgent renal biopsy, high-dose methylprednisolone and consideration of plasma exchange",
+        "Arrange an outpatient nephrology appointment within 4 weeks",
+        "Start furosemide and an ACE inhibitor and repeat the creatinine in a week",
+      ],
+      answer: 1,
+      explanation:
+        "Haemoptysis with an active nephritic sediment and a creatinine quadrupling in 10 days is a pulmonary-renal syndrome from anti-GBM disease or ANCA-associated vasculitis, and it is a same-day emergency in which outcome depends entirely on how quickly immunosuppression and, in anti-GBM disease or severe pulmonary haemorrhage, plasma exchange are started. Empirical antitubercular therapy for haemoptysis ignores the renal findings and wastes the only window in which the kidney can be saved. An outpatient appointment in 4 weeks would see the patient arrive dialysis dependent with fibrous crescents that no longer respond. Furosemide and an ACE inhibitor treat neither the vasculitis nor the alveolar haemorrhage and would worsen the acute kidney injury.",
+      difficulty: "easy",
+    },
+    {
+      id: "renal-urology-proteinuria-nephrotic-nephritic-m5",
+      stem: "A 52-year-old woman with type 2 diabetes of 4 years' duration, no retinopathy, and a normal creatinine 6 months ago now has a serum creatinine of 2.2 mg/dL, urine PCR 4200 mg/g and 15-20 dysmorphic red cells per high power field. What is the correct next step?",
+      options: [
+        "Diagnose diabetic nephropathy and intensify glycaemic control",
+        "Refer for renal biopsy, as the picture is atypical for diabetic kidney disease",
+        "Start an SGLT2 inhibitor and review in 6 months",
+        "Repeat the urine test after treating a presumed urinary infection",
+      ],
+      answer: 1,
+      explanation:
+        "Short duration of diabetes, absent retinopathy, a rapid rise in creatinine and an active sediment with dysmorphic red cells are the classic features arguing against diabetic kidney disease and in favour of a non-diabetic glomerular lesion, which is common in Indian biopsy series - so a renal biopsy is required to make the diagnosis before committing her to lifelong management. Labelling it diabetic nephropathy on the basis of the diabetes alone misses a potentially treatable lesion such as lupus nephritis, membranous nephropathy or a vasculitis. Starting an SGLT2 inhibitor and reviewing in 6 months is reasonable supportive therapy but would delay a diagnosis in a patient whose function is falling fast. Presuming an infection ignores that dysmorphic red cells with heavy proteinuria indicate a glomerular rather than an infective source.",
+      difficulty: "moderate",
+    },
+  ],
+  cards: [
+    {
+      id: "renal-urology-proteinuria-nephrotic-nephritic-c1",
+      front: "Define nephrotic syndrome.",
+      back: "Proteinuria above 3.5 g/1.73 m2/day (PCR above 3000 mg/g), serum albumin below 3.0 g/dL, oedema, and hyperlipidaemia with lipiduria, on a bland urinary sediment.",
+    },
+    {
+      id: "renal-urology-proteinuria-nephrotic-nephritic-c2",
+      front: "How does a urine protein-creatinine ratio translate into daily protein excretion?",
+      back: "A PCR of 1000 mg/g corresponds to about 1 g of protein a day, because an adult excretes roughly 1 g of creatinine daily. This makes 24-hour collections largely unnecessary.",
+    },
+    {
+      id: "renal-urology-proteinuria-nephrotic-nephritic-c3",
+      front: "Two things the urine dipstick misses.",
+      back: "Category A2 albuminuria (30-300 mg/g), because it detects albumin only above about 300 mg/L; and Bence Jones light chains in myeloma.",
+    },
+    {
+      id: "renal-urology-proteinuria-nephrotic-nephritic-c4",
+      front: "Post-streptococcal glomerulonephritis versus IgA nephropathy - the timing.",
+      back: "Post-streptococcal: 1-3 weeks after throat infection, 3-6 weeks after pyoderma, with a low C3 that normalises by 6-8 weeks. IgA nephropathy: synpharyngitic, within 1-3 days of the infection, with normal complement.",
+    },
+    {
+      id: "renal-urology-proteinuria-nephrotic-nephritic-c5",
+      front: "Interpreting complement in glomerulonephritis.",
+      back: "Low C3 with normal C4: post-infectious GN or C3 glomerulopathy. Low C3 and low C4: lupus nephritis, cryoglobulinaemia, shunt nephritis. Normal complement: IgA nephropathy, ANCA vasculitis, anti-GBM disease.",
+    },
+    {
+      id: "renal-urology-proteinuria-nephrotic-nephritic-c6",
+      front: "The three types of rapidly progressive glomerulonephritis.",
+      back: "Type 1 anti-GBM (linear IgG, Goodpasture); type 2 immune-complex (lupus, post-infectious, IgA, Henoch-Schonlein, cryoglobulinaemia); type 3 pauci-immune ANCA-associated (GPA with PR3, MPA with MPO).",
+    },
+    {
+      id: "renal-urology-proteinuria-nephrotic-nephritic-c7",
+      front: "Steroid regimen for childhood nephrotic syndrome.",
+      back: "Prednisolone 60 mg/m2/day (maximum 60 mg) for 6 weeks, then 40 mg/m2 on alternate days for 6 weeks, then taper. 80-90% remit within 4 weeks; no remission after 4-6 weeks of daily steroids is steroid resistance and needs a biopsy.",
+    },
+    {
+      id: "renal-urology-proteinuria-nephrotic-nephritic-c8",
+      front: "When should a diabetic patient with proteinuria be biopsied?",
+      back: "When the picture is atypical: no retinopathy, an active sediment with dysmorphic red cells or casts, rapid rise in proteinuria or creatinine, short duration of diabetes, or a sudden nephrotic presentation.",
+    },
+  ],
+  references: [
+    "KDIGO 2021 Clinical Practice Guideline for the Management of Glomerular Diseases",
+    "KDIGO 2024 Clinical Practice Guideline for the Evaluation and Management of Chronic Kidney Disease - albuminuria measurement",
+    "Indian Society of Pediatric Nephrology revised guidelines for management of idiopathic nephrotic syndrome, Indian Pediatrics, 2021",
+    "Indian Pediatric Nephrology Group consensus on steroid-resistant nephrotic syndrome",
+    "Harrison's Principles of Internal Medicine, 21st edition, 2022 - glomerular diseases",
+    "Brenner and Rector's The Kidney, 11th edition, 2019 - primary glomerular disease",
+  ],
+});
+
 const cases: ClinicalCase[] = [
   {
     id: "renal-urology-case-1",
