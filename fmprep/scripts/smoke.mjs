@@ -151,7 +151,7 @@ await page.getByRole("button", { name: /^←/ }).first().click();
 await page.waitForTimeout(700);
 await page.setInputFiles('input[type="file"]', NOTE);
 await page.waitForTimeout(2000);
-check("importing your own file still works", (await page.getByText(/my-note/i).count()) > 0);
+check("importing your own file still works", (await page.getByText(/fmprep-smoke-note/i).count()) > 0);
 
 // Search spans library, papers and documents
 await goHome(page);

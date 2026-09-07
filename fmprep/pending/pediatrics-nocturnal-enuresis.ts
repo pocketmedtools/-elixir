@@ -172,8 +172,6 @@ topics.push({
     "**The whole safety of desmopressin is one sentence: no more than about 240 mL of fluid from one hour before the dose to eight hours after, and skip the dose on any day with vomiting, diarrhoea, fever or heavy exertion.** Hyponatraemic seizures in this condition are always avoidable.",
     "**The alarm is the only treatment that cures rather than masks**, with the lowest relapse rate of any option - but it needs 6-8 weeks before it can be called a failure, nightly use without exception, and a family that is not already angry and exhausted.",
     "**Where the guidelines genuinely differ, say so:** NICE puts the alarm first and desmopressin second (reserving desmopressin for when speed matters or an alarm is unsuitable, and generally from 7 years), while the ICCS treats alarm and desmopressin as equal first-line choices decided by the mechanism on the diary and the family's circumstances. Both are defensible in an answer if the reasoning is stated.",
-    "**Imipramine is not a family-practice drug.** It works in 40-50%, relapses in up to 90%, and is cardiotoxic in overdose - specialist decision, small quantities, safe storage away from siblings, 3-monthly review with a drug-free interval.",
-    "**Snoring plus bedwetting is an ENT referral, not an alarm.** Adenotonsillar hypertrophy with obstructive sleep apnoea causes enuresis, and adenotonsillectomy treats the cause.",
   ],
   theory: [
     {
