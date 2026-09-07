@@ -25,6 +25,38 @@ const STOP = new Set([
   "pain", "acute", "chronic", "care", "risk", "disease", "syndrome",
 ]);
 
+/**
+ * Papers write in shorthand — "Vit.D", "K/C/O", "c/o", "&" — while the library
+ * spells things out. Normalising both sides is what lets a question about
+ * "Vit.D deficiency" find the vitamin D topic.
+ */
+const SHORTHAND: [RegExp, string][] = [
+  [/\bvit\.?\s*/gi, "vitamin "],
+  [/\bk\/c\/o\b/gi, "known case of"],
+  [/\bc\/o\b/gi, "complains of"],
+  [/\bh\/o\b/gi, "history of"],
+  [/\bo\/e\b/gi, "on examination"],
+  [/\bd\/d\b/gi, "differential diagnosis"],
+  [/\bt2dm\b/gi, "type 2 diabetes"],
+  [/\bt1dm\b/gi, "type 1 diabetes"],
+  [/\bhtn\b/gi, "hypertension"],
+  [/\bdm\b/gi, "diabetes"],
+  [/\bckd\b/gi, "chronic kidney disease"],
+  [/\bcopd\b/gi, "chronic obstructive pulmonary disease"],
+  [/\bpid\b/gi, "pelvic inflammatory disease"],
+  [/\baub\b/gi, "abnormal uterine bleeding"],
+  [/\bpcos\b/gi, "polycystic ovary syndrome"],
+  [/\buti\b/gi, "urinary tract infection"],
+  [/\btb\b/gi, "tuberculosis"],
+  [/&/g, " and "],
+];
+
+export function normalise(text: string): string {
+  let out = ` ${text.toLowerCase()} `;
+  for (const [re, replacement] of SHORTHAND) out = out.replace(re, replacement);
+  return out.replace(/\s+/g, " ");
+}
+
 function escapeRegex(text: string): string {
   return text.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
 }
@@ -49,6 +81,12 @@ function scoreTopic(haystack: string, entry: IndexedTopic): number {
   const shortTitle = topic.title.split(/[:(]/)[0].trim().toLowerCase();
   if (shortTitle.length > 6 && haystack.includes(shortTitle)) score += 25;
 
+  // The one-line definition often carries the same words as the question.
+  for (const word of topic.oneLiner.toLowerCase().split(/[^a-z0-9]+/)) {
+    if (word.length < 6 || STOP.has(word)) continue;
+    if (hits(haystack, word) > 0) score += 1;
+  }
+
   for (const keyword of topic.keywords) {
     const n = hits(haystack, keyword);
     if (n === 0) continue;
@@ -63,11 +101,11 @@ function scoreTopic(haystack: string, entry: IndexedTopic): number {
  * rather than a weak guess when the question is not clearly about any of them.
  */
 export function linkTopics(questionText: string, limit = 3): TopicLink[] {
-  const haystack = ` ${questionText.toLowerCase()} `;
+  const haystack = normalise(questionText);
   const scored: TopicLink[] = [];
   for (const entry of allTopics()) {
     const score = scoreTopic(haystack, entry);
-    if (score >= 12) {
+    if (score >= 10) {
       scored.push({
         topicId: entry.topic.id,
         topicTitle: entry.topic.title,

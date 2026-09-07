@@ -31,7 +31,9 @@ export default function App() {
         </div>
       )}
 
-      <header className="app-header sticky top-0 z-30 border-b border-[var(--line)] bg-white">
+      {/* Not sticky: each screen has its own sticky back bar, and two stacked
+          sticky rows would cover it. */}
+      <header className="app-header border-b border-[var(--line)] bg-white">
         <div className="mx-auto flex max-w-4xl items-center gap-2 px-3 py-2.5 md:px-6">
           <GraduationCap className="h-6 w-6 shrink-0 text-[var(--accent)]" aria-hidden />
           <div className="min-w-0">
