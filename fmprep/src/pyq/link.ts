@@ -7,7 +7,8 @@
  * count for more, so "MI" does not fire on "family" and "diabetic ketoacidosis"
  * outweighs "fever".
  */
-import { allTopics, type IndexedTopic } from "../content/index";
+import { allTopics, topicIndex, type IndexedTopic } from "../content/index";
+import { manualTopicIds } from "./links";
 
 export type TopicLink = {
   topicId: string;
@@ -125,4 +126,31 @@ export function linkSubjects(questionText: string): { id: string; title: string 
     if (!seen.has(link.subjectId)) seen.set(link.subjectId, link.subjectTitle);
   }
   return [...seen.entries()].map(([id, title]) => ({ id, title }));
+}
+
+/**
+ * The topics for a question: the hand-made mapping when there is one, and the
+ * keyword match otherwise. A question that was deliberately left unmapped falls
+ * through to the keyword pass, which usually also returns nothing — which is
+ * the honest answer.
+ */
+export function linksFor(questionId: string, questionText: string, limit = 3): TopicLink[] {
+  const mapped = manualTopicIds(questionId);
+  if (mapped.length > 0) {
+    const index = topicIndex();
+    const out: TopicLink[] = [];
+    for (const id of mapped.slice(0, limit)) {
+      const found = index.get(id);
+      if (!found) continue;
+      out.push({
+        topicId: found.topic.id,
+        topicTitle: found.topic.title,
+        subjectId: found.subjectId,
+        subjectTitle: found.subjectTitle,
+        score: 100,
+      });
+    }
+    if (out.length > 0) return out;
+  }
+  return linkTopics(questionText, limit);
 }

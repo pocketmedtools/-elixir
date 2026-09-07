@@ -22,7 +22,7 @@ import {
   type SourceQuestion,
   type TopicwiseQuestion,
 } from "../pyq/index";
-import { linkTopics } from "../pyq/link";
+import { linksFor } from "../pyq/link";
 import type { PaperId } from "../lib/types";
 import { BackBar, Chip, Empty } from "./ui";
 
@@ -50,7 +50,7 @@ function QuestionCard({
   onOpenTopic: (topicId: string) => void;
 }) {
   const [open, setOpen] = useState(false);
-  const links = useMemo(() => (open ? linkTopics(question) : []), [open, question]);
+  const links = useMemo(() => (open ? linksFor(id, question) : []), [open, id, question]);
 
   return (
     <div className="rounded-xl border border-slate-200 bg-white shadow-sm">
