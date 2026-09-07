@@ -2033,3 +2033,1650 @@ topics.push({
     "Williams Obstetrics, 26th edition, 2022 - diabetes mellitus",
   ],
 });
+
+topics.push({
+  id: "obstetrics-labour-partograph",
+  title: "Recognition of labour, the partograph and when to refer",
+  oneLiner:
+    "Labour is the onset of regular, painful uterine contractions producing progressive cervical effacement and dilatation, and the partograph is the single-page graphic record of the active first stage on which cervical dilatation plotted against time, with its alert and action lines, tells a medical officer at a primary health centre whether progress is normal, whether the woman must be referred, and how much time there is to move her.",
+  frequency: "core",
+  keywords: [
+    "partograph",
+    "partogram",
+    "alert line",
+    "action line",
+    "true labour",
+    "false labour",
+    "stages of labour",
+    "AMTSL",
+    "active management of third stage",
+    "referral in labour",
+    "BEmOC",
+    "CEmOC",
+    "FRU",
+    "cord prolapse",
+    "preterm labour",
+    "antenatal corticosteroids",
+    "skilled birth attendant",
+    "WHO Labour Care Guide",
+  ],
+  sections: [
+    {
+      heading: "Diagnosing labour and separating it from false labour",
+      points: [
+        "**True labour is diagnosed by regular painful contractions that increase in frequency, duration and intensity, accompanied by progressive cervical effacement and dilatation;** the show (blood-stained mucus from the cervical plug) and rupture of membranes support the diagnosis but neither is required for it.",
+        "False labour (Braxton Hicks activity) produces irregular contractions of unchanging intensity that are felt in the lower abdomen rather than radiating from the back, are relieved by walking, sedation or an analgesic, and **produce no cervical change on two examinations four hours apart** - this cervical criterion is the only one that settles the argument.",
+        "The **latent phase of the first stage** runs from the onset of regular contractions to 4 cm of dilatation (5 cm in the 2018 WHO intrapartum recommendations) and can normally last up to 20 hours in a primigravida and 14 hours in a multipara; it is not plotted on the partograph and a woman in the latent phase should not be admitted to a labour bed, augmented or referred for slow progress.",
+        "The **active phase** runs from 4 cm to full dilatation and is expected to progress at not less than 1 cm per hour; WHO 2018 accepts that the active phase usually does not exceed 12 hours in a first labour and 10 hours in subsequent labours.",
+        "**Rupture of membranes is confirmed by a sterile speculum examination showing pooling of liquor in the posterior fornix;** nitrazine paper turning blue (pH above 6.5), ferning on a dried slide and placental alpha-microglobulin-1 tests support it, and a digital examination is avoided in prelabour rupture because it introduces infection without adding information.",
+        "The admission assessment covers the onset and pattern of pains, membranes, fetal movements, bleeding, previous labours and any high-risk marking on the MCP card, then pulse, blood pressure, temperature, pallor, fundal height, lie, presentation, fifths of head palpable per abdomen, contractions in 10 minutes, and the fetal heart rate counted for a full minute immediately after a contraction.",
+      ],
+    },
+    {
+      heading: "The stages of labour and what the attendant does in each",
+      points: [
+        "**First stage** extends from the onset of true labour to full dilatation of the cervix (10 cm); the woman is encouraged to walk and take oral fluids, the bladder is emptied every two hours, and **vaginal examinations are done every four hours in the active phase** unless there is a specific indication, because frequent examinations raise the risk of sepsis without improving outcome.",
+        "**Second stage** runs from full dilatation to delivery of the baby and is allowed up to 3 hours in a primigravida and 2 hours in a multipara (WHO 2018), provided the fetal heart is normal and descent is occurring; the woman pushes only with contractions, in the position she prefers, and **routine episiotomy is not recommended** - it is reserved for instrumental delivery, fetal distress or a rigid perineum.",
+        "**Third stage** is from delivery of the baby to delivery of the placenta and membranes and should be complete within 30 minutes; it is managed actively (see below) because active management cuts postpartum haemorrhage by about 60%.",
+        "**Fourth stage** is the first two hours after the placenta, when most primary postpartum haemorrhage occurs: pulse, blood pressure, uterine tone, bleeding and bladder are checked every 15 minutes for the first hour and every 30 minutes for the second, and the mother is not left alone.",
+        "**Immediate newborn care runs in parallel:** dry and stimulate, assess breathing within the first minute (the Golden Minute), skin-to-skin contact, delayed cord clamping at 1-3 minutes in a baby who is breathing, initiation of breastfeeding within one hour, vitamin K 1 mg IM (0.5 mg if under 1500 g), and no bathing for at least 24 hours.",
+      ],
+    },
+    {
+      heading: "Active management of the third stage (AMTSL)",
+      points: [
+        "**Oxytocin 10 units IM within one minute of delivery of the baby, after ruling out a second twin,** is the single most effective component of AMTSL and is the uterotonic of choice; where oxytocin cannot be given, misoprostol 600 microgram orally is the alternative for prevention.",
+        "**Controlled cord traction** is applied only by a skilled attendant, only once the uterus has contracted, with counter-traction above the pubic symphysis to prevent inversion; it is an optional component in the WHO 2012 recommendations and is omitted by an unskilled attendant.",
+        "**Delayed cord clamping at 1-3 minutes** is now part of the package for every baby not needing resuscitation; it raises the neonatal iron store and reduces anaemia in infancy without increasing maternal bleeding.",
+        "Uterine massage after delivery of the placenta is done to confirm a contracted uterus and to expel clots; **the placenta and membranes are inspected for completeness** and the perineum, vagina and cervix for tears before the mother is moved.",
+        "**Ergometrine 0.2 mg IM is an alternative uterotonic but is contraindicated in hypertension, pre-eclampsia and heart disease,** so oxytocin is preferred in every woman in whom the blood pressure is not known to be normal.",
+      ],
+    },
+    {
+      heading: "The WHO modified partograph: what is recorded and how",
+      points: [
+        "**The modified partograph starts when the woman enters the active phase at 4 cm** (the earlier composite partograph began in the latent phase and was abandoned because it was too complex to use); the WHO Labour Care Guide of 2020 begins at 5 cm and adds a time-based alert per centimetre, but the modified partograph remains the tool taught to skilled birth attendants in India.",
+        "**The alert line** starts at 4 cm and rises at 1 cm per hour to reach 10 cm at six hours; **the action line** is drawn parallel to it, four hours to the right. Cervical dilatation is plotted as an X every four hours and the first X is always placed on the alert line.",
+        "**Fetal condition** is recorded at the top: fetal heart rate every 30 minutes (normal 110-160 per minute), liquor at each vaginal examination (I intact, C clear, M meconium, B blood-stained, A absent) and moulding (0, +, ++, +++, with +++ meaning the skull bones overlap and cannot be separated by finger pressure - a sign of cephalopelvic disproportion).",
+        "**Progress of labour** is the middle section: cervical dilatation (X), descent of the head in fifths palpable per abdomen (O, from 5/5 to 0/5, where 2/5 or less means engaged), and contractions every 30 minutes as the number in ten minutes with duration coded by shading - dots for under 20 seconds, hatching for 20-40 seconds, solid for over 40 seconds.",
+        "**Drugs** are recorded in the third section: oxytocin as units per litre and drops per minute, and any other drugs or intravenous fluids given with the time.",
+        "**Maternal condition** is the lowest section: pulse every 30 minutes, blood pressure every four hours, temperature every two hours, and urine volume with protein and acetone whenever passed; a rising pulse with a falling blood pressure is the earliest sign of concealed bleeding or sepsis and is easily missed if these rows are left blank.",
+      ],
+    },
+    {
+      heading: "Reading the partograph and deciding when to refer",
+      points: [
+        "**Progress to the left of the alert line is normal;** a plot that moves onto or to the right of the alert line means the active phase is slower than 1 cm per hour, and at a primary health centre or any facility without caesarean capacity **crossing the alert line is the signal to refer**, because the four-hour gap before the action line is the time it takes to reach a first referral unit.",
+        "**Crossing the action line demands a decision by a doctor able to intervene:** rupture of membranes with oxytocin augmentation if there is no cephalopelvic disproportion, or caesarean section if there is; augmentation is never started at a facility that cannot perform a caesarean, since it converts slow labour into obstructed labour and uterine rupture.",
+        "Descent that fails while dilatation continues, moulding of ++ or more, and contractions that are strong yet unproductive point to **obstruction**, and the physical signs - a rising retraction (Bandl's) ring, oedematous vulva, haematuria, a tender lower segment and maternal exhaustion with fever and tachycardia - mean the woman must be transferred with a catheter in place and without further augmentation.",
+        "**Fetal indications for referral from a primary health centre** are a fetal heart rate persistently below 110 or above 160 per minute, thick meconium with a fetal heart abnormality, cord prolapse, and absent liquor with poor progress.",
+        "**Maternal indications** are any antepartum haemorrhage, hypertension of 140/90 mmHg or more or a convulsion, fever above 38 degrees C, membranes ruptured for more than 18 hours, a previous caesarean or uterine surgery, malpresentation or a non-engaged head in a primigravida at term, multiple pregnancy, preterm labour before 37 weeks, severe anaemia, and a third stage exceeding 30 minutes.",
+        "**The referral itself has a checklist:** intravenous line running, oxygen if needed, left lateral position, the partograph and a written referral slip with the reason and the findings, magnesium sulphate or antibiotics or corticosteroids already given where indicated, a relative as escort, the 108 or 102 ambulance under JSSK, and a phone call ahead to the receiving unit.",
+      ],
+    },
+    {
+      heading: "Emergencies the family physician must handle before transfer",
+      points: [
+        "**Cord prolapse:** put the woman in the knee-chest or exaggerated Sims position, push the presenting part off the cord with two fingers in the vagina and keep them there during transfer, fill the bladder with 500 mL of saline through a catheter if the journey is long, do not handle the cord, and send her for immediate caesarean section.",
+        "**Preterm labour between 24 and 34 weeks:** give the first dose of antenatal corticosteroid before transfer - **dexamethasone 6 mg IM every 12 hours for four doses, or betamethasone 12 mg IM two doses 24 hours apart** - because a single dose given at the primary health centre still reduces neonatal respiratory distress and intraventricular haemorrhage.",
+        "Tocolysis to gain the 48 hours the steroid needs is with **nifedipine 20 mg orally, then 10-20 mg every 6-8 hours for up to 48 hours,** never in the presence of bleeding, chorioamnionitis or fetal compromise; magnesium sulphate 4 g IV is given for fetal neuroprotection when delivery before 32 weeks is imminent.",
+        "**Prelabour rupture of membranes at term:** speculum only, record the colour of the liquor and the fetal heart, start ampicillin or amoxicillin if rupture exceeds 18 hours, and refer; **preterm prelabour rupture** additionally receives erythromycin 250 mg four times daily for ten days and corticosteroids.",
+        "**Shoulder dystocia** is signalled by the turtle sign after delivery of the head: call for help, McRoberts manoeuvre (hyperflexion of the thighs on the abdomen), suprapubic pressure, then internal rotation manoeuvres or delivery of the posterior arm; fundal pressure is never applied.",
+        "**Retained placenta beyond 30 minutes** with bleeding is managed with oxytocin infusion, bladder emptying and controlled cord traction, then referral for manual removal under anaesthesia; a placenta that is not bleeding still needs transfer within the hour because bleeding starts without warning.",
+      ],
+    },
+  ],
+  tables: [
+    {
+      heading: "Observations on the WHO modified partograph and their frequency",
+      columns: ["Section", "Observation", "Frequency", "Abnormal finding that changes management"],
+      rows: [
+        ["Fetal condition", "Fetal heart rate", "Every 30 minutes", "Below 110 or above 160 per minute, or late decelerations after a contraction"],
+        ["Fetal condition", "Liquor and moulding", "Every vaginal examination", "Thick meconium, absent liquor, moulding ++ or more"],
+        ["Progress", "Cervical dilatation (X)", "Every 4 hours", "Plot on or right of the alert line: refer; right of the action line: intervene"],
+        ["Progress", "Descent of head (O)", "Every 4 hours", "No descent despite good contractions - obstruction"],
+        ["Progress", "Contractions per 10 minutes", "Every 30 minutes", "Fewer than 3 in 10 minutes each under 40 seconds in the active phase - inadequate"],
+        ["Drugs", "Oxytocin, drugs, IV fluids", "As given", "Oxytocin in a facility without caesarean capacity is itself a management error"],
+        ["Maternal condition", "Pulse", "Every 30 minutes", "Above 100 per minute - dehydration, bleeding, sepsis"],
+        ["Maternal condition", "Blood pressure", "Every 4 hours", "140/90 mmHg or above, or a fall below 90 systolic"],
+        ["Maternal condition", "Temperature", "Every 2 hours", "38 degrees C or above - chorioamnionitis"],
+        ["Maternal condition", "Urine volume, protein, acetone", "Every void", "Oliguria, proteinuria, ketonuria"],
+      ],
+    },
+    {
+      heading: "Signal functions of emergency obstetric care",
+      columns: ["Level", "Signal functions", "Typical Indian facility"],
+      rows: [
+        ["Basic emergency obstetric care (BEmOC, 7 functions)", "Parenteral antibiotics, parenteral uterotonics, parenteral anticonvulsants (magnesium sulphate), manual removal of placenta, removal of retained products (MVA), assisted vaginal delivery (vacuum), basic neonatal resuscitation", "24x7 primary health centre, some community health centres"],
+        ["Comprehensive emergency obstetric care (CEmOC, 9 functions)", "All seven BEmOC functions plus caesarean section and blood transfusion", "First referral unit: community health centre, sub-district and district hospitals"],
+      ],
+    },
+  ],
+  redFlags: [
+    "Cervical dilatation plotted on or to the right of the alert line at any facility without caesarean capacity - refer now, the action line is four hours away and so is the hospital.",
+    "Fetal heart rate persistently below 110 or above 160 per minute, or thick meconium with a slow fetal heart - fetal compromise; left lateral, oxygen, stop oxytocin, refer.",
+    "Cord felt in the vagina or seen at the vulva - cord prolapse; knee-chest position, elevate the presenting part, immediate transfer for caesarean.",
+    "Bandl's ring, haematuria, vulval oedema or a tender lower segment - obstructed labour with impending rupture; catheterise, no augmentation, transfer.",
+    "Bleeding per vaginum in labour with a tense tender uterus or a change in the fetal heart - abruption; two wide-bore lines, crystalloid, refer to a unit with blood.",
+    "Contractions before 37 weeks - preterm labour; give the first dose of dexamethasone 6 mg IM and nifedipine 20 mg before the ambulance leaves.",
+    "Third stage exceeding 30 minutes, or any bleeding with the placenta undelivered - retained placenta; oxytocin, empty bladder, refer for manual removal.",
+  ],
+  pearls: [
+    "The one criterion that separates true from false labour is cervical change - nothing else in the history settles it.",
+    "Plot the first X on the alert line; the partograph is a decision tool, not a record, and a partograph filled in after delivery has served no purpose.",
+    "Alert line means refer from a primary health centre; action line means act in a hospital. The four hours between them is the transfer time the tool was designed around.",
+    "Oxytocin augmentation in a facility that cannot do a caesarean section converts slow labour into a ruptured uterus - the drug is only as safe as the theatre behind it.",
+    "Oxytocin 10 units IM within one minute of birth is the most effective single act in the labour room; it prevents more deaths than everything else in the third stage combined.",
+    "A single dose of dexamethasone 6 mg IM before transfer in preterm labour is not wasted - most of the benefit accrues within 24 hours and the second dose can be given at the referral unit.",
+    "A referral is complete when the IV line is running, the partograph travels with her, the receiving unit has been phoned, and a relative is in the ambulance.",
+  ],
+  theory: [
+    {
+      id: "obstetrics-labour-partograph-t1",
+      paper: "IV",
+      kind: "long",
+      marks: 10,
+      minutes: 20,
+      frequency: "core",
+      question:
+        "Describe the WHO modified partograph. How does it help the medical officer at a primary health centre decide when to refer a woman in labour? Add a note on the preparation of the woman for referral.",
+      openingLines: [
+        "The partograph is a single-page graphic record of the progress of labour, plotting cervical dilatation against time alongside the fetal and maternal condition, designed by Philpott and Castle and modified by WHO in 2000 to begin at the active phase of 4 cm.",
+        "Its purpose is early recognition of abnormal progress so that a woman can be referred or delivered before obstructed labour, uterine rupture, sepsis or fetal death occur, and its use has been shown to reduce prolonged labour, augmentation, caesarean section and intrapartum stillbirth.",
+      ],
+      answer: [
+        {
+          heading: "1. Structure of the modified partograph",
+          points: [
+            "Identification: name, gravida, para, hospital number, date and time of admission, time of rupture of membranes.",
+            "Fetal condition (top): fetal heart rate every 30 minutes, liquor (I, C, M, B, A) and moulding (0 to +++) at every vaginal examination.",
+            "Progress of labour (middle): cervical dilatation as X every 4 hours, descent of the head in fifths as O, and contractions per 10 minutes every 30 minutes with duration shown by shading.",
+            "The alert line runs from 4 cm at a slope of 1 cm per hour to 10 cm at 6 hours; the action line is parallel and 4 hours to the right.",
+            "Drugs and fluids: oxytocin as units per litre and drops per minute, and all other drugs with the time.",
+            "Maternal condition (bottom): pulse every 30 minutes, blood pressure every 4 hours, temperature every 2 hours, urine volume, protein and acetone at every void.",
+          ],
+        },
+        {
+          heading: "2. Rules of plotting",
+          points: [
+            "Plotting begins only when the woman is in the active phase at 4 cm with at least two contractions in 10 minutes; the first X is placed on the alert line at the time of the examination.",
+            "Latent-phase labour is recorded on the admission notes, not the graph, and is reassessed every 4 hours; the woman is transferred to the graph when she reaches 4 cm.",
+            "Vaginal examination is repeated every 4 hours, or earlier if membranes rupture, the fetal heart becomes abnormal, or the woman feels the urge to push.",
+          ],
+        },
+        {
+          heading: "3. Interpretation and the referral decision",
+          points: [
+            "Plot to the left of the alert line: normal progress - continue supportive care, no intervention.",
+            "Plot on or to the right of the alert line: progress is slower than 1 cm per hour - at a primary health centre this is the indication to refer, because the four hours to the action line correspond to the transfer time to a first referral unit.",
+            "Plot at or beyond the action line: the woman must be at a facility with caesarean capacity where a doctor decides between amniotomy with oxytocin augmentation and caesarean section after excluding cephalopelvic disproportion.",
+            "Other partograph findings that mandate referral regardless of the dilatation line: fetal heart below 110 or above 160, thick meconium, moulding ++ or more, absent descent with good contractions, pulse above 100, blood pressure 140/90 or above, temperature 38 degrees C or above, and membranes ruptured beyond 18 hours.",
+            "Conditions that prevent a woman from being managed on a partograph at a primary health centre at all: previous caesarean, malpresentation, multiple pregnancy, antepartum haemorrhage, preterm labour, severe anaemia and hypertensive disease - these are referred at admission.",
+          ],
+        },
+        {
+          heading: "4. Preparing the woman for referral",
+          points: [
+            "Secure an intravenous line with Ringer lactate running, give oxygen if the fetal heart is abnormal, and place the woman in the left lateral position.",
+            "Give whatever the condition demands before departure: magnesium sulphate loading dose for pre-eclampsia, antibiotics for prolonged rupture of membranes or fever, dexamethasone 6 mg IM for preterm labour, and elevation of the presenting part for cord prolapse.",
+            "Catheterise the bladder in obstructed labour and stop any oxytocin.",
+            "Send the partograph and a written referral slip stating the reason, the findings and the time; phone the receiving unit; arrange the 108 ambulance under JSSK; send a relative and a health worker as escort.",
+          ],
+        },
+        {
+          heading: "5. Limitations",
+          points: [
+            "The 1 cm per hour rule overestimates the pace of normal labour in many women, which led WHO in 2018 to define the active phase from 5 cm and in 2020 to publish the Labour Care Guide; the modified partograph nonetheless remains the tool in use in Indian skilled birth attendant training.",
+            "The partograph fails when it is filled in retrospectively, when the latent phase is plotted, or when the alert line is crossed and no one is empowered to act.",
+          ],
+        },
+      ],
+      mustDraw: [
+        "A labelled diagram of the modified partograph showing the three sections, the alert line from 4 cm at 0 hours to 10 cm at 6 hours, and the action line 4 hours to the right.",
+        "A table of observations with their frequency.",
+      ],
+      markSplit: [
+        { part: "Definition and purpose", marks: 1 },
+        { part: "Structure with diagram", marks: 3 },
+        { part: "Rules of plotting", marks: 1 },
+        { part: "Interpretation and referral criteria", marks: 3 },
+        { part: "Preparation for referral", marks: 1.5 },
+        { part: "Limitations", marks: 0.5 },
+      ],
+      keywords: ["partograph", "alert line", "action line", "referral", "active phase", "obstructed labour"],
+    },
+    {
+      id: "obstetrics-labour-partograph-t2",
+      paper: "IV",
+      kind: "short-note",
+      marks: 5,
+      minutes: 10,
+      frequency: "core",
+      question: "Write a short note on active management of the third stage of labour.",
+      openingLines: [
+        "Active management of the third stage of labour (AMTSL) is a package of interventions applied immediately after the birth of the baby to hasten separation and delivery of the placenta and to prevent atonic postpartum haemorrhage, the leading direct cause of maternal death in India.",
+        "Compared with expectant (physiological) management it reduces postpartum haemorrhage of 1000 mL or more by about 60% and the need for transfusion and additional uterotonics.",
+      ],
+      answer: [
+        {
+          heading: "Components",
+          points: [
+            "Uterotonic: oxytocin 10 units IM within one minute of the birth of the baby, after palpating the abdomen to exclude a second twin; oxytocin is the drug of choice for its speed, safety in hypertension and low cost.",
+            "Alternatives where oxytocin is unavailable: misoprostol 600 microgram orally, or ergometrine 0.2 mg IM (contraindicated in hypertension and heart disease), or carbetocin 100 microgram IM where cold-chain storage is unreliable.",
+            "Delayed cord clamping at 1-3 minutes after birth in every baby who does not need immediate resuscitation.",
+            "Controlled cord traction by a skilled attendant only: wait for the uterus to contract, apply steady downward traction on the cord while the other hand pushes the uterus upward above the symphysis (Brandt-Andrews), and stop if the placenta does not descend within 30-40 seconds, waiting for the next contraction.",
+            "Uterine massage after delivery of the placenta until the uterus is contracted, then palpation of the uterus every 15 minutes for two hours.",
+          ],
+        },
+        {
+          heading: "After the placenta",
+          points: [
+            "Examine the placenta and membranes for completeness and the cord for the number of vessels.",
+            "Inspect the perineum, vagina and cervix for tears and repair them; estimate blood loss with a calibrated drape rather than by eye, since visual estimation underestimates by half.",
+            "Record the time of placental delivery, the drug given and the blood loss on the partograph and case sheet.",
+          ],
+        },
+        {
+          heading: "Precautions and complications",
+          points: [
+            "Traction on the cord without counter-traction, or before the uterus has contracted, risks uterine inversion and cord snapping.",
+            "Oxytocin is given IM, never as an IV bolus, because a rapid intravenous bolus causes hypotension.",
+            "A placenta undelivered at 30 minutes is a retained placenta: give an oxytocin infusion, empty the bladder, repeat controlled cord traction once, and refer for manual removal if it fails.",
+          ],
+        },
+      ],
+      mustDraw: ["A flow chart: birth of baby - exclude second twin - oxytocin 10 units IM within 1 minute - clamp cord at 1-3 minutes - controlled cord traction with counter-traction - uterine massage - examine placenta and perineum."],
+      markSplit: [
+        { part: "Definition and rationale", marks: 1 },
+        { part: "Components with doses", marks: 2.5 },
+        { part: "Care after the placenta and precautions", marks: 1.5 },
+      ],
+      keywords: ["AMTSL", "oxytocin 10 units IM", "controlled cord traction", "delayed cord clamping", "postpartum haemorrhage prevention"],
+    },
+  ],
+  mcqs: [
+    {
+      id: "obstetrics-labour-partograph-q1",
+      stem: "A 23-year-old primigravida at term is in labour at a 24x7 primary health centre. Her cervix was 4 cm at 10:00 and 6 cm at 14:00, plotted on the modified partograph. Contractions are 3 in 10 minutes lasting 30-40 seconds and the fetal heart is 140 per minute. What is the most appropriate action?",
+      options: [
+        "Start an oxytocin infusion to augment labour",
+        "Perform amniotomy and reassess in 2 hours",
+        "Refer to the first referral unit now with the partograph",
+        "Continue supportive care and reassess at 18:00",
+        "Give pethidine and repeat the examination in 4 hours",
+      ],
+      answer: 2,
+      explanation:
+        "Dilatation of 2 cm in 4 hours is slower than the 1 cm per hour of the alert line, so the plot has crossed to the right of the alert line; at a facility without caesarean capacity this is the referral signal, because the four hours to the action line are the transfer time to a first referral unit. Oxytocin and amniotomy are action-line interventions that belong only in a hospital with a theatre, since augmentation at a primary health centre converts slow labour into obstructed labour and rupture. Waiting until 18:00 wastes the window the alert line exists to protect, and pethidine does nothing for progress.",
+      difficulty: "moderate",
+    },
+    {
+      id: "obstetrics-labour-partograph-q2",
+      stem: "On the WHO modified partograph, at what cervical dilatation is the first plot made and where is it placed?",
+      options: [
+        "At 3 cm, on the latent phase line",
+        "At 4 cm, on the alert line",
+        "At 4 cm, on the action line",
+        "At 5 cm, at the time of admission wherever it falls",
+        "At full dilatation, on the second-stage line",
+      ],
+      answer: 1,
+      explanation:
+        "The modified partograph is begun when the woman enters the active phase at 4 cm, and the first X is always placed on the alert line so that progress is judged against the 1 cm per hour slope from the moment plotting begins. The old composite partograph plotted the latent phase and was abandoned as too complex, so option one describes a discarded tool. Placing the first plot on the action line would remove the four-hour buffer the design depends on. The 2020 WHO Labour Care Guide begins at 5 cm, but it is a different instrument with its own time-based alerts, and there is no second-stage line on the partograph.",
+      difficulty: "easy",
+    },
+    {
+      id: "obstetrics-labour-partograph-q3",
+      stem: "Which of the following is the correct uterotonic component of active management of the third stage of labour?",
+      options: [
+        "Oxytocin 10 units IM within one minute of delivery of the baby",
+        "Oxytocin 10 units as a rapid IV bolus after delivery of the placenta",
+        "Ergometrine 0.2 mg IM to every woman irrespective of blood pressure",
+        "Misoprostol 800 microgram sublingual as the first choice",
+        "Carboprost 250 microgram IM immediately after birth",
+      ],
+      answer: 0,
+      explanation:
+        "Oxytocin 10 units IM within one minute of the birth, after excluding a second twin, is the WHO and MoHFW uterotonic of choice for prevention of postpartum haemorrhage. A rapid IV bolus of oxytocin causes hypotension and the drug is given before, not after, the placenta. Ergometrine is contraindicated in hypertensive and cardiac women, so it cannot be given to every woman blindly. Misoprostol 600 microgram orally is the prophylactic alternative when oxytocin is unavailable; the 800 microgram sublingual dose is a treatment dose. Carboprost is a second-line treatment for atonic haemorrhage, not a prophylactic.",
+      difficulty: "easy",
+    },
+    {
+      id: "obstetrics-labour-partograph-q4",
+      stem: "A multipara at 38 weeks has spontaneous rupture of membranes at a primary health centre and the nurse feels a pulsating loop of cord in the vagina. The cervix is 5 cm and the fetal heart is 90 per minute. What should be done first?",
+      options: [
+        "Replace the cord into the uterus and wait for vaginal delivery",
+        "Knee-chest position, push the presenting part up with fingers in the vagina, and transfer for immediate caesarean",
+        "Start oxytocin to expedite vaginal delivery",
+        "Apply a vacuum extractor at 5 cm",
+        "Give tocolysis and observe for one hour",
+      ],
+      answer: 1,
+      explanation:
+        "Cord prolapse with a live fetus at 5 cm is a surgical emergency: the woman is placed in the knee-chest or exaggerated Sims position, the presenting part is pushed off the cord and held there during transfer, the bladder may be filled with 500 mL of saline for a long journey, and she goes for caesarean section. Attempting to replace the cord causes spasm of the cord vessels and is ineffective. Oxytocin would worsen compression with each contraction, and vacuum extraction is impossible before full dilatation. Tocolysis is an adjunct to reduce contractions during transfer, not a substitute for delivery, and observation for an hour would result in fetal death.",
+      difficulty: "easy",
+    },
+    {
+      id: "obstetrics-labour-partograph-q5",
+      stem: "A woman at 31 weeks presents to a primary health centre with regular painful contractions and a cervix of 3 cm. Which drug should be given before transfer, and in what dose?",
+      options: [
+        "Dexamethasone 6 mg IM, first of four doses 12 hours apart",
+        "Betamethasone 12 mg orally, single dose",
+        "Dexamethasone 24 mg IV as a single bolus",
+        "Hydrocortisone 100 mg IV every 6 hours",
+        "Prednisolone 40 mg orally daily for 3 days",
+      ],
+      answer: 0,
+      explanation:
+        "Antenatal corticosteroids between 24 and 34 weeks reduce neonatal respiratory distress syndrome, intraventricular haemorrhage and death, and the MoHFW guideline authorises the medical officer or ANM at the primary health centre to give dexamethasone 6 mg IM 12-hourly for four doses, starting the first before referral. Betamethasone is given as 12 mg IM twice 24 hours apart, not orally. A single 24 mg bolus does not provide the sustained exposure that matures the fetal lung and is not a recommended schedule. Hydrocortisone and prednisolone are largely inactivated by placental 11-beta-hydroxysteroid dehydrogenase and do not reach the fetus in useful amounts.",
+      difficulty: "easy",
+    },
+    {
+      id: "obstetrics-labour-partograph-q6",
+      stem: "A woman reports painful abdominal tightenings every 10-15 minutes for six hours. On examination the cervix is closed, uneffaced and posterior, and a repeat examination four hours later is unchanged. What is the diagnosis?",
+      options: [
+        "Latent phase of the first stage of labour",
+        "False labour",
+        "Prolonged latent phase",
+        "Active phase with secondary arrest",
+        "Prelabour rupture of membranes",
+      ],
+      answer: 1,
+      explanation:
+        "Contractions without any cervical effacement or dilatation on two examinations four hours apart define false labour, whatever their frequency or discomfort. The latent phase requires cervical change, however slow, in addition to contractions, so neither the latent phase nor a prolonged latent phase can be diagnosed with a closed, uneffaced cervix. Secondary arrest is an active-phase diagnosis at 4 cm or more. Nothing in the vignette suggests rupture of membranes.",
+      difficulty: "easy",
+    },
+  ],
+  cards: [
+    {
+      id: "obstetrics-labour-partograph-c1",
+      front: "Definition of true labour and the single criterion that separates it from false labour.",
+      back: "Regular painful contractions increasing in frequency, duration and intensity with progressive cervical effacement and dilatation; cervical change on serial examination is the deciding criterion.",
+    },
+    {
+      id: "obstetrics-labour-partograph-c2",
+      front: "Where do the alert and action lines of the modified partograph start and how are they drawn?",
+      back: "Alert line from 4 cm at 0 hours rising 1 cm per hour to 10 cm at 6 hours; action line parallel, 4 hours to the right. The first X is placed on the alert line.",
+    },
+    {
+      id: "obstetrics-labour-partograph-c3",
+      front: "Frequency of observations on the partograph: fetal heart, contractions, pulse, vaginal examination, blood pressure, temperature.",
+      back: "Fetal heart every 30 min, contractions every 30 min, pulse every 30 min, vaginal examination and blood pressure every 4 hours, temperature every 2 hours.",
+    },
+    {
+      id: "obstetrics-labour-partograph-c4",
+      front: "Meaning of crossing the alert line and crossing the action line.",
+      back: "Alert line crossed: progress slower than 1 cm/hour - refer from a facility without caesarean capacity. Action line crossed: a doctor at a CEmOC facility must decide between augmentation and caesarean.",
+    },
+    {
+      id: "obstetrics-labour-partograph-c5",
+      front: "Components of active management of the third stage of labour.",
+      back: "Oxytocin 10 units IM within 1 minute of birth after excluding a second twin, delayed cord clamping at 1-3 minutes, controlled cord traction with counter-traction by a skilled attendant, uterine massage after the placenta.",
+    },
+    {
+      id: "obstetrics-labour-partograph-c6",
+      front: "Seven signal functions of basic emergency obstetric care, and the two that make it comprehensive.",
+      back: "Parenteral antibiotics, uterotonics and anticonvulsants, manual removal of placenta, removal of retained products, assisted vaginal delivery, neonatal resuscitation; plus caesarean section and blood transfusion for CEmOC.",
+    },
+    {
+      id: "obstetrics-labour-partograph-c7",
+      front: "Antenatal corticosteroid regimens and gestational window.",
+      back: "24 to 34 weeks: dexamethasone 6 mg IM every 12 hours for 4 doses, or betamethasone 12 mg IM twice 24 hours apart; the first dose is given before referral.",
+    },
+    {
+      id: "obstetrics-labour-partograph-c8",
+      front: "Duration limits of the stages of labour (WHO 2018).",
+      back: "Active first stage usually not beyond 12 hours in a first labour and 10 hours in later labours; second stage up to 3 hours in a primigravida and 2 hours in a multipara; third stage within 30 minutes.",
+    },
+    {
+      id: "obstetrics-labour-partograph-c9",
+      front: "First aid for cord prolapse at a primary health centre.",
+      back: "Knee-chest or exaggerated Sims position, elevate the presenting part with two fingers in the vagina and keep them there, fill the bladder with 500 mL saline for a long transfer, do not handle the cord, immediate transfer for caesarean.",
+    },
+  ],
+  references: [
+    "Guidelines for Antenatal Care and Skilled Attendance at Birth by ANMs, LHVs and Staff Nurses, MoHFW, Government of India, 2010",
+    "Dakshata and LaQshya Labour Room Quality Improvement Initiative guidelines, MoHFW, 2015 and 2017",
+    "WHO Recommendations: Intrapartum Care for a Positive Childbirth Experience, 2018",
+    "WHO Labour Care Guide: User's Manual, 2020",
+    "WHO Recommendations for the Prevention and Treatment of Postpartum Haemorrhage, 2012, and update on uterotonics, 2018",
+    "Williams Obstetrics, 26th edition, 2022 - normal labour and abnormal labour",
+    "DC Dutta's Textbook of Obstetrics, 9th edition, 2018 - normal labour and the partograph",
+  ],
+});
+
+topics.push({
+  id: "obstetrics-pph",
+  title: "Postpartum haemorrhage: first response, uterotonics and transfer",
+  oneLiner:
+    "Postpartum haemorrhage is blood loss of 500 mL or more after vaginal birth or 1000 mL or more after caesarean section within 24 hours of delivery, or any loss that makes the woman haemodynamically unstable, and it is the leading direct cause of maternal death in India; its first response is simultaneous resuscitation, uterine massage, oxytocin infusion, tranexamic acid and a search for the cause using the four Ts, with transfer arranged the moment bleeding does not stop.",
+  frequency: "core",
+  keywords: [
+    "PPH",
+    "postpartum haemorrhage",
+    "atonic PPH",
+    "traumatic PPH",
+    "four Ts",
+    "oxytocin infusion",
+    "misoprostol",
+    "carboprost",
+    "methylergometrine",
+    "tranexamic acid",
+    "WOMAN trial",
+    "bimanual compression",
+    "aortic compression",
+    "condom tamponade",
+    "balloon tamponade",
+    "NASG",
+    "non-pneumatic anti-shock garment",
+    "shock index",
+    "E-MOTIVE",
+    "secondary PPH",
+  ],
+  sections: [
+    {
+      heading: "Definition, burden and classification",
+      points: [
+        "**Postpartum haemorrhage is defined as blood loss of 500 mL or more after a vaginal birth, or 1000 mL or more after a caesarean section, within 24 hours of delivery; severe PPH is loss of 1000 mL or more by any route,** and any loss that causes signs of hypovolaemia is treated as PPH regardless of the measured volume, because an anaemic Indian woman with a haemoglobin of 8 g/dL tolerates far less than the textbook 500 mL.",
+        "**Primary PPH occurs within 24 hours of birth; secondary PPH occurs from 24 hours to 12 weeks postpartum** and is usually due to retained products of conception or endometritis, occasionally to a subinvoluted placental site or gestational trophoblastic disease.",
+        "PPH causes about a quarter of maternal deaths in India and is the commonest direct cause; **most deaths occur within two to four hours of the onset of bleeding,** which is why the first response at the place of delivery, not the referral hospital, decides survival.",
+        "**Visual estimation underestimates blood loss by 30-50%;** a calibrated under-buttock drape, weighing of soaked pads (1 g equals 1 mL) and the shock index (heart rate divided by systolic blood pressure, normally below 0.9 after delivery) are the tools that catch bleeding early.",
+        "The E-MOTIVE bundle recommended by WHO in 2023 is the present standard of first response: **Early detection with a calibrated drape, Massage of the uterus, Oxytocic drugs, Tranexamic acid, IV fluids, and Examination with Escalation,** delivered as a bundle within 15 minutes rather than one step at a time.",
+      ],
+    },
+    {
+      heading: "Causes: the four Ts, and who is at risk",
+      points: [
+        "**Tone (about 70%):** uterine atony from an overdistended uterus (twins, polyhydramnios, macrosomia), prolonged or precipitate labour, oxytocin augmentation, grand multiparity, chorioamnionitis, a full bladder, retained placental fragments, uterine-relaxing drugs (magnesium sulphate, nifedipine, halogenated anaesthetics), and previous PPH.",
+        "**Trauma (about 20%):** tears of the perineum, vagina and cervix, extension of a caesarean incision, uterine rupture, and uterine inversion; **a well-contracted uterus with continuing bright red bleeding means trauma until the tract has been examined.**",
+        "**Tissue (about 10%):** retained placenta or membranes, a succenturiate lobe, and the morbidly adherent placenta (accreta spectrum) that is rising with the caesarean rate.",
+        "**Thrombin (about 1%):** pre-existing coagulopathy (von Willebrand disease, thrombocytopenia) or acquired disseminated intravascular coagulation from abruption, amniotic fluid embolism, severe pre-eclampsia, HELLP syndrome, intrauterine fetal death or sepsis; **dilutional coagulopathy after massive transfusion belongs here too.**",
+        "**Risk factors identified antenatally should change the place of delivery:** previous PPH, anaemia below 9 g/dL, multiple pregnancy, grand multiparity, placenta praevia or accreta, large fibroids, and bleeding disorders; yet **two-thirds of PPH occurs in women with no risk factor,** so every birth attendant must be ready for it.",
+      ],
+    },
+    {
+      heading: "The first fifteen minutes: resuscitation and uterotonics together",
+      points: [
+        "**Call for help and start everything at once:** one person massages the uterus and gives drugs, one secures access and fluids, one records and calls the ambulance; time of onset and every intervention are written on the case sheet as they happen.",
+        "**Airway, breathing, circulation:** lie the woman flat with legs elevated, oxygen at 10-15 L per minute by mask, **two wide-bore (16 or 18 gauge) intravenous cannulae** with blood drawn for haemoglobin, grouping and cross-matching, and coagulation, and warmed Ringer lactate or normal saline run fast - up to 2 L in the first 30 minutes, then reassess; **avoid more than 3.5 L of clear fluid before blood arrives** because of dilutional coagulopathy.",
+        "**Massage the uterus firmly through the abdominal wall until it contracts, empty the bladder with a catheter, and give oxytocin 20 units in 500 mL of Ringer lactate or normal saline at 40-60 drops per minute,** continuing at 20-40 drops per minute once bleeding is controlled; **no more than 3 L of intravenous fluid containing oxytocin** is given, because oxytocin is antidiuretic and causes water intoxication.",
+        "**Tranexamic acid 1 g IV over 10 minutes is given within three hours of birth as soon as PPH is diagnosed, repeated once after 30 minutes if bleeding continues** - the WOMAN trial showed it cuts death from bleeding by about one-third when given early, and it works whatever the cause.",
+        "**If the uterus stays soft despite oxytocin: methylergometrine 0.2 mg IM or slow IV, repeated after 15 minutes to a maximum of five doses (1 mg), never in hypertension, pre-eclampsia or heart disease; carboprost (15-methyl prostaglandin F2-alpha) 250 microgram IM every 15 minutes to a maximum of 8 doses (2 mg), never in asthma; misoprostol 800 microgram sublingual as a single dose** where injectable drugs are unavailable or in addition to them.",
+        "**Check the placenta and membranes, and examine the perineum, vagina and cervix with good light** while the drugs are working: a contracted uterus with bleeding means a tear or a retained fragment, and the treatment is a suture or a manual removal, not a fifth uterotonic.",
+      ],
+    },
+    {
+      heading: "Mechanical measures that buy time for transfer",
+      points: [
+        "**Bimanual compression:** a gloved fist in the anterior fornix pressing against the anterior uterine wall while the abdominal hand pulls the fundus forward and compresses the uterus between the two; it controls atonic bleeding almost immediately and is held until uterotonics act or transport arrives.",
+        "**External aortic compression:** a closed fist pressed just above and slightly to the left of the umbilicus against the vertebral column until the femoral pulse disappears; used when the bleeding is torrential, during transfer, or when bimanual compression is not possible.",
+        "**Uterine balloon (condom) tamponade:** a condom tied over a Foley catheter is inserted into the uterine cavity and filled with 300-500 mL of saline until bleeding stops, the vagina is packed to keep it in place, oxytocin infusion is continued, antibiotics are given, and the balloon is left for 12-24 hours; success in atonic PPH exceeds 85% and it is the single most useful device at a first referral unit.",
+        "**The non-pneumatic anti-shock garment (NASG)** is a neoprene compression suit applied from ankles to abdomen that shunts blood to the vital organs, halves mortality in referral settings, and is removed only at the receiving hospital, one segment at a time, when the woman is stable and blood is available.",
+        "**Uterine inversion** - a mass at the introitus with shock out of proportion to blood loss and no palpable fundus - is replaced immediately by pushing the fundus up through the cervix with the flat of the hand before the cervical ring contracts; uterotonics are given only after replacement, and the placenta is not removed before the uterus is back.",
+      ],
+    },
+    {
+      heading: "Referral, hospital management and secondary PPH",
+      points: [
+        "**Refer when bleeding continues after massage, one uterotonic and bladder emptying, or when the woman is in shock, or when the placenta is retained beyond 30 minutes with bleeding;** she travels with two lines running, oxytocin infusing, bimanual or aortic compression if needed, the NASG on, a catheter in, a referral note stating the estimated loss and drugs given, and a relative who can donate blood.",
+        "**At the first referral unit:** blood transfusion (O-negative or group-specific uncross-matched if the loss is massive), fresh frozen plasma and platelets in a 1:1:1 pattern in massive haemorrhage, manual removal of the placenta or evacuation of retained products under anaesthesia, repair of tears, and balloon tamponade if not already placed.",
+        "**Surgical steps in order of increasing radicality:** uterine compression sutures (B-Lynch), stepwise uterine devascularisation (uterine and utero-ovarian artery ligation), internal iliac artery ligation, and hysterectomy, which is life-saving and should not be delayed while the woman exsanguinates; interventional radiology embolisation is an option where it exists.",
+        "**Secondary PPH** presents from day 2 to week 12 with fresh bleeding, a subinvoluted bulky tender uterus, fever and foul lochia; the family physician gives broad-spectrum antibiotics (amoxicillin-clavulanate with metronidazole, or ampicillin with gentamicin and metronidazole if admitted), an oxytocic, arranges an ultrasound for retained products, and refers for evacuation if products are seen or bleeding is heavy; a beta-hCG is sent because choriocarcinoma presents this way.",
+        "**After the event:** correct the anaemia with parenteral iron, discuss the cause and the recurrence risk (about 10-15% for atonic PPH), counsel that the next delivery must be in a hospital with blood, and watch for Sheehan syndrome (failure of lactation, amenorrhoea, hypothyroidism and adrenal insufficiency) in the months after severe haemorrhage with hypotension.",
+      ],
+    },
+  ],
+  tables: [
+    {
+      heading: "Uterotonic and haemostatic drugs in postpartum haemorrhage with exact doses",
+      columns: ["Drug", "Prevention dose", "Treatment dose", "Contraindication or caution"],
+      rows: [
+        ["Oxytocin", "10 units IM within 1 minute of birth", "20 units in 500 mL Ringer lactate at 40-60 drops per minute; not more than 3 L of oxytocin-containing fluid", "Never as a rapid IV bolus (hypotension); antidiuretic effect"],
+        ["Misoprostol", "600 microgram orally when oxytocin unavailable", "800 microgram sublingual single dose", "Shivering and fever; no absolute contraindication"],
+        ["Methylergometrine", "0.2 mg IM after delivery of the anterior shoulder (not preferred)", "0.2 mg IM or slow IV, repeat every 15 minutes up to 5 doses (1 mg)", "Hypertension, pre-eclampsia, heart disease, retained placenta"],
+        ["Carboprost (15-methyl PGF2-alpha)", "Not used for prevention", "250 microgram IM every 15 minutes up to 8 doses (2 mg)", "Asthma; caution in cardiac, renal and hepatic disease"],
+        ["Carbetocin", "100 microgram IM or slow IV, single dose", "Not licensed for treatment", "Heat-stable formulation useful where cold chain fails"],
+        ["Tranexamic acid", "Not routine for prevention after vaginal birth", "1 g IV over 10 minutes within 3 hours of birth, repeat 1 g after 30 minutes if bleeding continues", "Active thromboembolic disease"],
+      ],
+    },
+    {
+      heading: "Estimating blood loss from the woman's response",
+      columns: ["Blood loss", "Percentage of volume", "Signs", "Shock index (HR / SBP)"],
+      rows: [
+        ["500-1000 mL", "10-15%", "Usually none; palpitations, mild tachycardia", "Below 0.9"],
+        ["1000-1500 mL", "15-25%", "Tachycardia above 100, narrow pulse pressure, delayed capillary refill, weakness", "0.9-1.2"],
+        ["1500-2000 mL", "25-35%", "Systolic 70-80 mmHg, restlessness, pallor, oliguria", "1.2-1.5"],
+        ["Above 2000 mL", "Above 35%", "Systolic below 70 mmHg, collapse, air hunger, anuria", "Above 1.5"],
+      ],
+    },
+  ],
+  redFlags: [
+    "Bleeding that soaks a pad in under five minutes, or a steady trickle that has not stopped after fifteen minutes of massage and oxytocin - this is PPH, escalate now.",
+    "Shock index above 0.9, pulse above 100 or systolic below 90 mmHg after delivery - concealed or underestimated loss; two lines, fluids, tranexamic acid and prepare to transfer.",
+    "A well-contracted uterus with continuing bright red bleeding - genital tract trauma or a retained fragment; examine with a good light, do not keep adding uterotonics.",
+    "Mass at the introitus with sudden shock and no palpable fundus - uterine inversion; replace at once, before the cervical ring closes.",
+    "Placenta undelivered at 30 minutes with bleeding - retained placenta; oxytocin infusion, catheterise, one further attempt at controlled cord traction, refer for manual removal.",
+    "Bleeding from puncture sites, oozing from tears despite suturing, or blood that does not clot in the tube - coagulopathy; needs fresh frozen plasma and platelets, not more oxytocin.",
+    "Fresh bleeding with fever and foul lochia after the second day - secondary PPH; antibiotics, oxytocic, ultrasound and referral for evacuation, and send a beta-hCG.",
+  ],
+  pearls: [
+    "500 mL vaginal, 1000 mL caesarean, or any loss that makes her unstable - the definition has three arms and the third one matters most in an anaemic woman.",
+    "Tone, trauma, tissue, thrombin - and the proportions 70, 20, 10, 1. Say them in that order and examine in that order.",
+    "Oxytocin 10 units IM to prevent, 20 units in 500 mL at 40-60 drops per minute to treat, never a bolus, never more than 3 litres with oxytocin in it.",
+    "Tranexamic acid 1 g IV within three hours, repeat once after 30 minutes - it is the one drug that works irrespective of the cause, and every hour of delay costs a tenth of its benefit.",
+    "Carboprost and asthma, ergometrine and hypertension - two contraindications, two marks, and two deaths if forgotten.",
+    "A contracted uterus that still bleeds is a tear until you have looked; a soft uterus that will not contract is a full bladder until you have catheterised.",
+    "Bimanual compression, aortic compression and a condom catheter cost nothing and stop bleeding on the road - the referral hospital cannot help a woman who arrives dead.",
+  ],
+  theory: [
+    {
+      id: "obstetrics-pph-t1",
+      paper: "IV",
+      kind: "long",
+      marks: 10,
+      minutes: 20,
+      frequency: "core",
+      question:
+        "Define postpartum haemorrhage and enumerate its causes. A woman delivered at your primary health centre thirty minutes ago and is bleeding heavily; the placenta was delivered complete. Describe your management step by step until she is handed over at the first referral unit.",
+      openingLines: [
+        "Postpartum haemorrhage is blood loss of 500 mL or more after vaginal birth or 1000 mL or more after caesarean section within 24 hours of delivery, or any blood loss sufficient to cause haemodynamic instability; primary PPH occurs within 24 hours and secondary PPH from 24 hours to 12 weeks.",
+        "It is the leading direct cause of maternal death in India, most deaths occurring within two to four hours of onset, so the outcome is decided by the first response at the place of delivery.",
+      ],
+      answer: [
+        {
+          heading: "1. Causes - the four Ts",
+          points: [
+            "Tone (70%): atony from overdistension, prolonged or precipitate labour, grand multiparity, chorioamnionitis, full bladder, retained fragments, uterine relaxants, previous PPH.",
+            "Trauma (20%): perineal, vaginal and cervical tears, uterine rupture, uterine inversion.",
+            "Tissue (10%): retained placenta or membranes, succenturiate lobe, placenta accreta spectrum.",
+            "Thrombin (1%): inherited bleeding disorders and acquired coagulopathy from abruption, pre-eclampsia, HELLP, sepsis, amniotic fluid embolism or massive transfusion.",
+          ],
+        },
+        {
+          heading: "2. Immediate response - all at once, within the first 15 minutes",
+          points: [
+            "Call for help; assign one person to the uterus and drugs, one to access and fluids, one to record and call the 108 ambulance.",
+            "Assess airway and breathing; lie flat with legs raised; oxygen 10-15 L per minute by mask; pulse, blood pressure, shock index every 5 minutes.",
+            "Two 16-18 gauge cannulae; blood for haemoglobin, grouping and cross-match, and clotting; warmed Ringer lactate 1-2 L fast.",
+            "Massage the uterus until firm; catheterise the bladder.",
+            "Oxytocin 20 units in 500 mL Ringer lactate at 40-60 drops per minute.",
+            "Tranexamic acid 1 g IV over 10 minutes, repeated after 30 minutes if bleeding continues.",
+          ],
+        },
+        {
+          heading: "3. Find the cause while the drugs act",
+          points: [
+            "Uterus soft: atony - continue massage and oxytocin; add methylergometrine 0.2 mg IM if blood pressure is normal, or carboprost 250 microgram IM if not asthmatic, repeating every 15 minutes; misoprostol 800 microgram sublingual if injectables are unavailable.",
+            "Uterus firm and bleeding continues: examine the perineum, vagina and cervix in good light with a speculum; suture tears; pack a bleeding cervical tear that cannot be sutured and refer.",
+            "Re-examine the placenta for a missing cotyledon or a vessel running to the edge of the membranes; explore the uterus if a fragment is suspected.",
+            "Bleeding from puncture sites or non-clotting blood: coagulopathy - she needs blood products, not more uterotonics; expedite transfer.",
+          ],
+        },
+        {
+          heading: "4. If bleeding persists - mechanical control and transfer",
+          points: [
+            "Bimanual compression, or external aortic compression if torrential.",
+            "Condom balloon tamponade with 300-500 mL saline, vaginal pack, continued oxytocin, antibiotics.",
+            "Apply the non-pneumatic anti-shock garment if available.",
+            "Transfer with two lines running, oxytocin infusing, catheter in, compression maintained, a referral note with times, estimated loss and every drug given, a phone call ahead, and relatives who can donate blood.",
+          ],
+        },
+        {
+          heading: "5. At the first referral unit and afterwards",
+          points: [
+            "Blood transfusion, fresh frozen plasma and platelets in massive haemorrhage; examination under anaesthesia; balloon tamponade; B-Lynch suture, uterine artery ligation, internal iliac ligation, and hysterectomy without delay if these fail.",
+            "Antibiotic prophylaxis after manual procedures; thromboprophylaxis once bleeding has stopped.",
+            "Afterwards: parenteral iron, counselling about the cause and recurrence, a plan for hospital delivery next time, and vigilance for Sheehan syndrome.",
+          ],
+        },
+      ],
+      mustDraw: [
+        "A flow chart: PPH recognised - call for help - ABC and two lines - massage and catheter - oxytocin infusion and tranexamic acid - four Ts examination - second-line uterotonics - bimanual compression and balloon tamponade - transfer.",
+        "A table of uterotonics with dose, route, maximum and contraindication.",
+      ],
+      markSplit: [
+        { part: "Definition and classification", marks: 1.5 },
+        { part: "Causes - four Ts", marks: 1.5 },
+        { part: "Immediate resuscitation and first-line drugs with doses", marks: 3 },
+        { part: "Finding and treating the cause; second-line drugs", marks: 2 },
+        { part: "Mechanical measures and safe transfer", marks: 1.5 },
+        { part: "Hospital care and follow-up", marks: 0.5 },
+      ],
+      keywords: ["PPH", "four Ts", "oxytocin 20 units in 500 mL", "tranexamic acid 1 g", "bimanual compression", "balloon tamponade", "referral"],
+    },
+    {
+      id: "obstetrics-pph-t2",
+      paper: "IV",
+      kind: "short-note",
+      marks: 5,
+      minutes: 10,
+      frequency: "common",
+      question: "Write a short note on the prevention of postpartum haemorrhage at the primary care level.",
+      openingLines: [
+        "Prevention of postpartum haemorrhage begins in the antenatal clinic with correction of anaemia and identification of risk, continues in labour with avoidance of prolonged labour and active management of the third stage, and ends with vigilant observation for two hours after the placenta.",
+        "Active management of the third stage alone reduces severe PPH by about 60%, and every birth attendant in India is trained and authorised to deliver it.",
+      ],
+      answer: [
+        {
+          heading: "Antenatal measures",
+          points: [
+            "Screen for and treat anaemia so that the haemoglobin exceeds 10-11 g/dL at term; a woman with a haemoglobin under 9 g/dL cannot afford a normal blood loss.",
+            "Identify risk: previous PPH, multiple pregnancy, grand multiparity, polyhydramnios, large baby, placenta praevia or previous caesarean (accreta risk), fibroids and bleeding disorders; plan delivery at a facility with blood and an operating theatre.",
+            "Blood group and Rh typing recorded on the MCP card; two identified donors as part of the birth plan; registration for JSSK entitlements including free blood.",
+          ],
+        },
+        {
+          heading: "Intrapartum measures",
+          points: [
+            "Use the partograph to prevent prolonged labour; avoid unsupervised oxytocin and precipitate delivery; keep the bladder empty.",
+            "Active management of the third stage: oxytocin 10 units IM within one minute of birth after excluding a second twin, delayed cord clamping, controlled cord traction by a skilled attendant, uterine massage after the placenta.",
+            "Misoprostol 600 microgram orally where oxytocin is unavailable; in home deliveries the ASHA may give it under the programme.",
+            "Examine the placenta and membranes for completeness and the genital tract for tears; repair tears promptly.",
+          ],
+        },
+        {
+          heading: "Postpartum measures",
+          points: [
+            "Observe for two hours: pulse, blood pressure, uterine tone, lochia and bladder every 15 minutes for the first hour and every 30 minutes for the second.",
+            "Measure blood loss with a calibrated drape rather than by estimation; treat a shock index above 0.9 as bleeding.",
+            "Ensure the labour room has an emergency tray: oxytocin, methylergometrine, carboprost or misoprostol, tranexamic acid, wide-bore cannulae, Ringer lactate, a condom catheter kit and the referral transport number.",
+          ],
+        },
+      ],
+      mustDraw: ["A three-column table: antenatal, intrapartum, postpartum preventive measures."],
+      markSplit: [
+        { part: "Antenatal measures", marks: 1.5 },
+        { part: "Intrapartum measures including AMTSL with doses", marks: 2 },
+        { part: "Postpartum observation and preparedness", marks: 1.5 },
+      ],
+      keywords: ["PPH prevention", "AMTSL", "anaemia correction", "calibrated drape", "birth preparedness"],
+    },
+  ],
+  mcqs: [
+    {
+      id: "obstetrics-pph-q1",
+      stem: "A 30-year-old woman delivers vaginally at a community health centre and bleeds 700 mL within twenty minutes despite oxytocin 10 units IM given at birth. Her blood pressure is 150/100 mmHg and she has no history of asthma. The uterus is soft. Which second-line uterotonic is most appropriate?",
+      options: [
+        "Methylergometrine 0.2 mg IM",
+        "Carboprost 250 microgram IM",
+        "Oxytocin 10 units as an IV bolus",
+        "Misoprostol 25 microgram vaginally",
+        "Carbetocin 100 microgram IM repeated every 15 minutes",
+      ],
+      answer: 1,
+      explanation:
+        "With a blood pressure of 150/100 mmHg methylergometrine is contraindicated because its alpha-adrenergic vasoconstriction can precipitate a hypertensive crisis or stroke; carboprost 250 microgram IM, repeatable every 15 minutes to a maximum of 8 doses, is the correct choice in a non-asthmatic woman. A rapid intravenous bolus of oxytocin causes hypotension and is never given; the treatment route is an infusion of 20 units in 500 mL. Misoprostol 25 microgram is an induction dose, not a haemorrhage dose - the treatment dose is 800 microgram sublingual. Carbetocin is a single-dose prophylactic agent, not a repeated treatment drug.",
+      difficulty: "moderate",
+    },
+    {
+      id: "obstetrics-pph-q2",
+      stem: "In the WOMAN trial, tranexamic acid reduced death from bleeding in postpartum haemorrhage. What is the correct dose and timing for its use?",
+      options: [
+        "1 g IV over 10 minutes within 3 hours of birth, repeated once after 30 minutes if bleeding continues",
+        "500 mg orally every 8 hours for 5 days",
+        "2 g IV bolus at the time of delivery in every woman",
+        "1 g IV only after uterotonics have failed and at least 3 hours have elapsed",
+        "10 mg/kg IV infusion over 24 hours",
+      ],
+      answer: 0,
+      explanation:
+        "Tranexamic acid 1 g IV over 10 minutes given as soon as PPH is recognised, within three hours of birth, with a second 1 g dose if bleeding continues after 30 minutes or restarts within 24 hours, is the WHO 2017 recommendation derived from the WOMAN trial; its benefit falls by about 10% for every 15 minutes of delay and is lost beyond three hours. Oral dosing is far too slow for an emergency. A routine 2 g bolus at every delivery is not recommended for prevention after vaginal birth. Waiting until three hours have elapsed reverses the trial's central finding, and a 24-hour infusion regimen is an orthopaedic or trauma protocol, not the obstetric one.",
+      difficulty: "easy",
+    },
+    {
+      id: "obstetrics-pph-q3",
+      stem: "A woman is bleeding after delivery. The uterus is well contracted and the placenta and membranes are complete. Bright red blood continues to flow. What is the most likely cause and the most appropriate next step?",
+      options: [
+        "Uterine atony; give carboprost",
+        "Genital tract trauma; examine the cervix, vagina and perineum with a speculum and good light",
+        "Coagulopathy; transfuse fresh frozen plasma",
+        "Retained placenta; perform manual removal",
+        "Uterine inversion; replace the uterus",
+      ],
+      answer: 1,
+      explanation:
+        "Persistent bright red bleeding from a firmly contracted uterus with a complete placenta is genital tract trauma - a cervical, vaginal or perineal tear - until the tract has been inspected under good light with a speculum, and the treatment is suture, not another uterotonic. Atony is excluded by the firm uterus. Coagulopathy is a diagnosis of exclusion suggested by oozing from puncture sites and non-clotting blood, not by a single site of bright bleeding. The placenta is documented complete, so retained tissue is unlikely, and inversion presents with a mass at the introitus and an absent fundus, not a well-contracted uterus.",
+      difficulty: "easy",
+    },
+    {
+      id: "obstetrics-pph-q4",
+      stem: "What is the correct oxytocin regimen for the treatment of atonic postpartum haemorrhage?",
+      options: [
+        "10 units IM once, repeated after 1 hour",
+        "20 units in 500 mL of Ringer lactate at 40-60 drops per minute, not exceeding 3 L of oxytocin-containing fluid",
+        "5 units IV bolus every 5 minutes until bleeding stops",
+        "40 units in 100 mL normal saline as a rapid bolus",
+        "2.5 units in 500 mL at 10 drops per minute",
+      ],
+      answer: 1,
+      explanation:
+        "The treatment regimen is 20 units of oxytocin in 500 mL of Ringer lactate or normal saline run at 40-60 drops per minute until the uterus contracts and then slowed, with a ceiling of 3 L of oxytocin-containing fluid because of its antidiuretic effect and the risk of water intoxication. A single IM dose repeated hourly is a prophylactic dose and far too slow for active haemorrhage. Rapid intravenous boluses of oxytocin cause hypotension and are never given. The 2.5 units in 500 mL at 10 drops per minute regimen is the starting dose for augmentation of labour, not for haemorrhage.",
+      difficulty: "easy",
+    },
+    {
+      id: "obstetrics-pph-q5",
+      stem: "A woman presents to a family physician nine days after a home delivery with fresh vaginal bleeding, fever of 38.5 degrees C, foul-smelling lochia and a bulky tender uterus. Which of the following is the best initial management?",
+      options: [
+        "Reassure that lochia rubra can persist for two weeks",
+        "Oral iron and review in one week",
+        "Broad-spectrum antibiotics with metronidazole, an oxytocic, ultrasound for retained products, and referral for evacuation if products are present",
+        "Immediate hysterectomy",
+        "Methotrexate for presumed choriocarcinoma",
+      ],
+      answer: 2,
+      explanation:
+        "Fresh bleeding with fever, foul lochia and a subinvoluted tender uterus after the first 24 hours is secondary postpartum haemorrhage from endometritis with retained products, and the correct response is antibiotics covering anaerobes (amoxicillin-clavulanate with metronidazole, or ampicillin, gentamicin and metronidazole if admitted), an oxytocic, an ultrasound, and evacuation under antibiotic cover if products are seen or bleeding is heavy; a beta-hCG is sent to exclude trophoblastic disease. Reassurance and iron ignore sepsis that can progress to septic shock. Hysterectomy is a last resort for uncontrollable bleeding or uterine necrosis, not an initial step, and choriocarcinoma is diagnosed by a persistently raised hCG, not treated empirically.",
+      difficulty: "easy",
+    },
+    {
+      id: "obstetrics-pph-q6",
+      stem: "Which of the following mechanical measures is applied by pressing a closed fist just above and to the left of the umbilicus against the vertebral column until the femoral pulse disappears?",
+      options: [
+        "Bimanual uterine compression",
+        "External aortic compression",
+        "Controlled cord traction",
+        "Uterine balloon tamponade",
+        "Credé's manoeuvre",
+      ],
+      answer: 1,
+      explanation:
+        "External aortic compression occludes the aorta below the renal arteries against the lumbar spine and is used for torrential bleeding, during transfer, or when bimanual compression is impossible; disappearance of the femoral pulse confirms adequate pressure. Bimanual compression uses a fist in the anterior vaginal fornix against the abdominal hand. Controlled cord traction delivers the placenta and Credé's manoeuvre is an obsolete fundal expression that risks inversion. Balloon tamponade is intrauterine, not external.",
+      difficulty: "easy",
+    },
+  ],
+  cards: [
+    {
+      id: "obstetrics-pph-c1",
+      front: "Definition of postpartum haemorrhage, primary and secondary.",
+      back: "Blood loss of 500 mL or more after vaginal birth or 1000 mL or more after caesarean within 24 hours, or any loss causing instability. Primary: within 24 hours. Secondary: 24 hours to 12 weeks.",
+    },
+    {
+      id: "obstetrics-pph-c2",
+      front: "The four Ts of PPH with their approximate share.",
+      back: "Tone 70% (atony), Trauma 20% (tears, rupture, inversion), Tissue 10% (retained placenta, accreta), Thrombin 1% (coagulopathy).",
+    },
+    {
+      id: "obstetrics-pph-c3",
+      front: "Oxytocin dose for prevention and for treatment of PPH.",
+      back: "Prevention: 10 units IM within one minute of birth. Treatment: 20 units in 500 mL Ringer lactate at 40-60 drops per minute, maximum 3 L of oxytocin-containing fluid, never an IV bolus.",
+    },
+    {
+      id: "obstetrics-pph-c4",
+      front: "Tranexamic acid in PPH: dose, timing, evidence.",
+      back: "1 g IV over 10 minutes within 3 hours of birth, repeat 1 g after 30 minutes if bleeding continues; WOMAN trial 2017 - one-third reduction in death from bleeding.",
+    },
+    {
+      id: "obstetrics-pph-c5",
+      front: "Doses, maximums and contraindications of methylergometrine and carboprost.",
+      back: "Methylergometrine 0.2 mg IM or slow IV every 15 minutes up to 5 doses (1 mg) - contraindicated in hypertension and heart disease. Carboprost 250 microgram IM every 15 minutes up to 8 doses (2 mg) - contraindicated in asthma.",
+    },
+    {
+      id: "obstetrics-pph-c6",
+      front: "Misoprostol doses in PPH.",
+      back: "Prevention 600 microgram orally where oxytocin is unavailable; treatment 800 microgram sublingual as a single dose.",
+    },
+    {
+      id: "obstetrics-pph-c7",
+      front: "Shock index: formula and threshold after delivery.",
+      back: "Heart rate divided by systolic blood pressure; above 0.9 after delivery indicates significant haemorrhage, above 1.5 severe.",
+    },
+    {
+      id: "obstetrics-pph-c8",
+      front: "Condom balloon tamponade: how much fluid and how long is it left?",
+      back: "A condom over a Foley catheter filled with 300-500 mL saline until bleeding stops, vagina packed, oxytocin infusion and antibiotics continued, removed after 12-24 hours.",
+    },
+    {
+      id: "obstetrics-pph-c9",
+      front: "Components of the WHO E-MOTIVE bundle for PPH (2023).",
+      back: "Early detection with a calibrated drape, Massage, Oxytocic drugs, Tranexamic acid, IV fluids, Examination and Escalation - delivered together within 15 minutes.",
+    },
+  ],
+  references: [
+    "WHO Recommendations for the Prevention and Treatment of Postpartum Haemorrhage, 2012; uterotonic update 2018; tranexamic acid recommendation 2017; E-MOTIVE bundle recommendation 2023",
+    "Guidance Note on Prevention and Management of Postpartum Haemorrhage, Maternal Health Division, MoHFW, Government of India, 2015",
+    "WOMAN Trial Collaborators. Effect of early tranexamic acid administration on mortality in women with post-partum haemorrhage. Lancet 2017",
+    "FOGSI Good Clinical Practice Recommendations on Postpartum Haemorrhage, 2022",
+    "Williams Obstetrics, 26th edition, 2022 - obstetrical haemorrhage",
+    "DC Dutta's Textbook of Obstetrics, 9th edition, 2018 - complications of the third stage of labour",
+  ],
+});
+
+topics.push({
+  id: "obstetrics-early-pregnancy-bleeding",
+  title: "Early pregnancy bleeding, ectopic pregnancy and abortion care under the MTP Act 2021",
+  oneLiner:
+    "Bleeding before 20 weeks is a miscarriage, an ectopic pregnancy or a molar pregnancy until proven otherwise; the family physician's task is to confirm the pregnancy with a urine test, recognise shock, avoid a rough pelvic examination, arrange a transvaginal ultrasound with serum beta-hCG, give anti-D to the Rh-negative woman, and know both the drug regimens for miscarriage and medical abortion and the legal framework of the Medical Termination of Pregnancy (Amendment) Act 2021.",
+  frequency: "common",
+  keywords: [
+    "miscarriage",
+    "abortion",
+    "threatened abortion",
+    "incomplete abortion",
+    "missed abortion",
+    "septic abortion",
+    "ectopic pregnancy",
+    "tubal pregnancy",
+    "methotrexate",
+    "discriminatory zone",
+    "beta-hCG",
+    "molar pregnancy",
+    "hydatidiform mole",
+    "gestational trophoblastic disease",
+    "MTP Act 2021",
+    "medical termination of pregnancy",
+    "mifepristone",
+    "misoprostol",
+    "manual vacuum aspiration",
+    "MVA",
+    "comprehensive abortion care",
+    "anti-D",
+  ],
+  sections: [
+    {
+      heading: "The approach to bleeding in early pregnancy",
+      points: [
+        "**Every woman of reproductive age with lower abdominal pain, vaginal bleeding, fainting or shoulder-tip pain has a urine pregnancy test before anything else,** because a ruptured ectopic pregnancy presenting as 'gastroenteritis' or 'urinary infection' is still a cause of avoidable death in India, and the woman may deny the possibility of pregnancy.",
+        "The three diagnoses that matter are **miscarriage (10-20% of clinical pregnancies), ectopic pregnancy (1-2%) and molar pregnancy (about 1 in 1000);** cervical ectropion, polyps, vaginitis and implantation bleeding are the benign remainder and are diagnoses of exclusion.",
+        "**Assess for shock first:** pulse, blood pressure, pallor, cold peripheries and the shock index; a woman with a pulse over 100, systolic under 90 or a tender rigid abdomen is resuscitated with two wide-bore cannulae and referred to a facility with an operating theatre and blood before any imaging.",
+        "A gentle speculum examination shows whether blood is coming from the os and whether products are visible in the cervix - **products in the os are removed with sponge forceps, which stops the bleeding and the vasovagal bradycardia they cause;** a bimanual examination is done gently and is avoided altogether if an ectopic pregnancy is suspected and ultrasound is available.",
+        "**Transvaginal ultrasound with a quantitative serum beta-hCG** is the investigation pair: an intrauterine gestational sac should be visible on transvaginal scan when hCG exceeds the discriminatory level of 1500-2000 mIU/mL (about 3500 mIU/mL on a transabdominal scan); an empty uterus above this level is an ectopic pregnancy or a completed miscarriage until proven otherwise.",
+        "**Rh-negative women receive anti-D after any bleeding episode, miscarriage, ectopic pregnancy or termination:** 50 microgram (250 IU) IM before 12 weeks and 300 microgram (1500 IU) IM after 12 weeks, within 72 hours; this is the item most often forgotten in the emergency room.",
+      ],
+    },
+    {
+      heading: "Miscarriage: types and management the family physician can deliver",
+      points: [
+        "**Threatened miscarriage:** bleeding with a closed os and a viable pregnancy on scan; about 85% continue. There is no evidence for bed rest, and **vaginal micronised progesterone 400 mg twice daily until 16 weeks helps only the woman who has bleeding and one or more previous miscarriages** (PRISM trial, 2019); the woman is warned of the danger signs and rescanned in 7-14 days if there is doubt.",
+        "**Inevitable and incomplete miscarriage:** open os with products partly passed; the options are expectant management for up to two weeks in a stable woman with a small residual, **misoprostol 600 microgram orally as a single dose (or 400 microgram sublingually)**, or manual vacuum aspiration if bleeding is heavy, sepsis is present or the uterus is over 12 weeks size.",
+        "**Missed miscarriage (early fetal demise):** a closed os with a crown-rump length of 7 mm or more without cardiac activity, or a mean sac diameter of 25 mm or more without an embryo, confirmed on two scans a week apart or by a second observer; **mifepristone 200 mg orally followed 24-48 hours later by misoprostol 800 microgram vaginally** (MifeMiso trial, 2020) completes the process in over 80%, with MVA as the surgical alternative.",
+        "**Complete miscarriage:** bleeding has settled, the os is closed and the uterus is empty on scan; a serum hCG that falls by more than 50% in 48 hours confirms it, and a woman without a scan-documented prior intrauterine pregnancy is followed with hCG because an ectopic pregnancy can mimic this picture.",
+        "**Septic abortion** - fever, foul discharge, a tender uterus and often a history of an unsafe procedure - receives intravenous ampicillin 2 g, gentamicin 5 mg/kg and metronidazole 500 mg, tetanus toxoid with immunoglobulin if the procedure was unsafe, fluid resuscitation, and evacuation of the uterus within hours of starting antibiotics; bowel injury, a foreign body and gas gangrene must be considered, and the woman is referred to a unit with a surgeon.",
+        "**Manual vacuum aspiration (MVA) is the surgical method of choice under 12 weeks** because it is done under paracervical block and oral analgesia, at a primary or community health centre by a trained provider, with a fraction of the perforation and infection risk of sharp curettage; WHO recommends that dilatation and curettage be abandoned where MVA is available.",
+      ],
+    },
+    {
+      heading: "Ectopic pregnancy: recognition, methotrexate and surgery",
+      points: [
+        "**Risk factors** are previous ectopic pregnancy, tubal surgery or sterilisation, pelvic inflammatory disease, an intrauterine device in place, assisted reproduction, smoking and a history of infertility; 95% are tubal and 70% of those are ampullary, but **half of ectopic pregnancies occur in women with no risk factor.**",
+        "The classical triad is **amenorrhoea, lower abdominal pain and irregular dark bleeding;** rupture adds syncope, shoulder-tip pain from diaphragmatic irritation, abdominal distension, guarding and shock disproportionate to the visible blood loss, and the cervical excitation and adnexal tenderness on examination that must not be repeated once elicited.",
+        "**Serial hCG:** a normal intrauterine pregnancy roughly doubles the hCG every 48 hours; a rise of less than 50% in 48 hours with an empty uterus indicates a failing pregnancy of uncertain location, and a plateau or slow rise is an ectopic until located; a single hCG value cannot make or exclude the diagnosis.",
+        "**Methotrexate 50 mg per square metre IM as a single dose** is offered when the woman is haemodynamically stable, the ectopic is unruptured with a mass under 3.5 cm, there is no fetal cardiac activity, the hCG is under 5000 mIU/mL (best results under 1500-3000), liver, renal and blood counts are normal, she is not breastfeeding and she can return for follow-up; **hCG is repeated on days 4 and 7 and a fall of at least 15% between them predicts success,** with a second dose if it fails.",
+        "**After methotrexate** she avoids folic acid, NSAIDs, alcohol and intercourse until hCG is undetectable, is warned that separation pain on days 2-7 is common but that worsening pain or faintness means rupture, and is told to avoid conception for three months.",
+        "**Surgery** - laparoscopic salpingectomy, or salpingotomy when the other tube is diseased - is the treatment for a ruptured ectopic, haemodynamic instability, a mass over 3.5 cm, fetal cardiac activity, or hCG above 5000; a ruptured ectopic in a primary care setting is resuscitated with crystalloid, two lines and oxygen and transferred with a relative who can give blood, not kept for a scan.",
+      ],
+    },
+    {
+      heading: "Molar pregnancy and gestational trophoblastic disease",
+      points: [
+        "**A complete hydatidiform mole (46,XX, entirely paternal, no fetal tissue) presents with bleeding, a uterus larger than dates, hyperemesis, early pre-eclampsia before 20 weeks, theca-lutein cysts and an hCG above 100,000 mIU/mL,** with the snowstorm or bunch-of-grapes appearance on ultrasound; a partial mole (69,XXY, triploid) has fetal parts and lower hCG and is often diagnosed only on histology of a missed miscarriage.",
+        "**Treatment is suction evacuation under oxytocin cover with histology of all tissue,** anti-D for the Rh-negative woman, a chest radiograph, and baseline thyroid function because hCG stimulates the thyroid receptor.",
+        "**Follow-up is serum hCG weekly until three consecutive negative values, then monthly for six months after a complete mole** (and until negative for a partial mole); the woman uses reliable contraception - combined pills are acceptable once hCG is falling - and defers the next pregnancy for six to twelve months, with an early scan and a postnatal hCG in that pregnancy.",
+        "**Gestational trophoblastic neoplasia** (15-20% after a complete mole, 1-5% after a partial) is diagnosed by an hCG plateau over three weeks, a rise over two weeks, or persistence at six months, and by choriocarcinoma presenting with secondary PPH, haemoptysis or a brain metastasis; low-risk disease is cured with methotrexate and folinic acid in over 95%.",
+      ],
+    },
+    {
+      heading: "Medical termination of pregnancy: the MTP (Amendment) Act 2021 and the Rules",
+      points: [
+        "**The Medical Termination of Pregnancy Act 1971, amended in 2021, permits termination by a registered medical practitioner on the opinion of one RMP up to 20 weeks and of two RMPs from 20 to 24 weeks,** the latter only for categories specified in Rule 3B: survivors of rape, sexual assault or incest; minors; women whose marital status changed during the pregnancy through widowhood or divorce; women with physical disabilities; mentally ill women; pregnancies with fetal malformation carrying a substantial risk of incompatibility with life or serious handicap; and pregnancies in humanitarian settings, disasters or emergencies declared by government.",
+        "**The grounds** are risk to the woman's life or grave injury to her physical or mental health, substantial risk of serious fetal handicap, pregnancy from rape (presumed to constitute grave injury to mental health), and **failure of a contraceptive used by any woman or her partner** - the 2021 amendment replaced 'married woman or her husband' with 'any woman or her partner', extending the contraceptive-failure ground to unmarried women.",
+        "**Beyond 24 weeks a state-level Medical Board** (a gynaecologist, a paediatrician, a radiologist or sonologist and any other member the government notifies) may permit termination for substantial fetal abnormality, giving its opinion within three days and the procedure within five; in an emergency to save the woman's life, any RMP may terminate at any gestation at any place without the opinion requirements (Section 5).",
+        "**Consent is the woman's own if she is 18 years or older and of sound mind;** for a minor or a mentally ill woman the consent of a guardian is required, and the husband's consent is never required. A pregnant minor is reported under the POCSO Act, but the 2021 amendment and the Rules protect her identity, and the Supreme Court (2022) has held that the RMP need not disclose the minor's identity when the minor and guardian request confidentiality and the termination is consensual.",
+        "**Confidentiality is statutory:** the name and particulars of a woman who has undergone termination are not revealed except to a person authorised by law, and breach is punishable with imprisonment up to one year and a fine. The place must be a government hospital or a place approved by the District Level Committee, records are kept in the admission register (Form III) for five years, the opinion is recorded on Form I and the monthly report goes to the Chief Medical Officer on Form II; the woman signs consent on Form C.",
+        "**The MTP Rules 2021 raised the outpatient medical-abortion window from 7 to 9 weeks (63 days):** mifepristone 200 mg orally, then 24-48 hours later misoprostol 800 microgram buccally, vaginally or sublingually, prescribed by an RMP with access to an approved place; the woman is reviewed at two weeks with a urine test or scan, and 12-20 week terminations use mifepristone 200 mg followed by misoprostol 400 microgram vaginally or sublingually every three hours to a maximum of five doses. **Sex-selective termination is a separate offence under the PCPNDT Act** and is never a lawful ground.",
+      ],
+    },
+    {
+      heading: "Post-abortion care and counselling",
+      points: [
+        "**Comprehensive abortion care under the MoHFW 2018 guidelines** means the procedure, post-abortion contraception, treatment of complications and counselling delivered at the same visit; a woman who leaves without a contraceptive method returns pregnant within the year in a substantial minority.",
+        "**Fertility returns within two weeks of a first-trimester abortion,** so every method except the diaphragm can be started the same day: a copper IUCD or levonorgestrel intrauterine system immediately after a surgical abortion or once the medical abortion is confirmed complete, DMPA, the combined pill, the progestogen-only pill, centchroman, or an implant.",
+        "**Warning signs after any abortion or miscarriage** are bleeding soaking more than two pads an hour for two hours, fever, foul discharge, severe or increasing pain, and fainting; a woman who has had a medical abortion is told that bleeding is heavier than a period for a day or two and lighter for up to two weeks, and that she must return if the pregnancy test is still positive at two weeks.",
+        "Grief after miscarriage is real and often unacknowledged in the family; **the family physician names it, says that nothing she did caused it, gives the recurrence figure honestly (about 15-20% after one loss, 25-30% after two) and investigates only after three consecutive losses** (antiphospholipid antibodies, parental karyotype, uterine cavity assessment, thyroid function).",
+        "Folic acid is restarted before the next attempt, chronic conditions are optimised, and the interpregnancy interval after a miscarriage need not exceed the time the couple needs - the WHO six-month recommendation after miscarriage is not supported by later data.",
+      ],
+    },
+  ],
+  tables: [
+    {
+      heading: "Types of miscarriage: findings and management",
+      columns: ["Type", "Bleeding and pain", "Cervical os", "Ultrasound", "Management"],
+      rows: [
+        ["Threatened", "Slight bleeding, mild or no pain", "Closed", "Viable intrauterine pregnancy", "Reassure, warn of danger signs; vaginal progesterone 400 mg BD only if previous miscarriage"],
+        ["Inevitable", "Heavy bleeding, cramping", "Open", "Sac low or in the cervix", "Misoprostol 600 microgram oral or MVA; anti-D if Rh negative"],
+        ["Incomplete", "Heavy, continues", "Open, products may be seen", "Retained products, thick endometrium", "Remove products from the os; misoprostol 600 microgram oral or MVA; antibiotics if infected"],
+        ["Complete", "Settled after passage of products", "Closed", "Empty uterus", "Confirm with scan or falling hCG; no further treatment"],
+        ["Missed", "Minimal or none; loss of symptoms", "Closed", "CRL 7 mm or more without cardiac activity, or MSD 25 mm or more without embryo", "Mifepristone 200 mg then misoprostol 800 microgram vaginal at 24-48 h, or MVA; expectant if she prefers"],
+        ["Septic", "Bleeding with fever, foul discharge", "Open, tender", "Retained products, gas or collection", "IV ampicillin, gentamicin, metronidazole; tetanus prophylaxis; evacuate; refer"],
+      ],
+    },
+    {
+      heading: "MTP Act 1971 as amended in 2021: the provisions that are examined",
+      columns: ["Provision", "1971 Act", "2021 Amendment and Rules"],
+      rows: [
+        ["Gestation with one RMP opinion", "Up to 12 weeks", "Up to 20 weeks"],
+        ["Gestation with two RMP opinions", "12 to 20 weeks", "20 to 24 weeks, only for the seven Rule 3B categories"],
+        ["Beyond 24 weeks", "Not permitted except to save life", "Medical Board may permit for substantial fetal abnormality; Section 5 emergency provision unchanged"],
+        ["Contraceptive failure ground", "Married woman or her husband", "Any woman or her partner"],
+        ["Confidentiality", "Register confidential", "Explicit statutory protection; disclosure punishable with imprisonment up to one year and fine"],
+        ["Outpatient medical abortion window", "Up to 7 weeks (2003 Rules)", "Up to 9 weeks (63 days) with mifepristone and misoprostol"],
+        ["Consent", "Woman if 18 or older; guardian for minor or mentally ill", "Unchanged; the husband's consent is not required"],
+      ],
+    },
+  ],
+  redFlags: [
+    "Pain, fainting or shoulder-tip pain with a positive pregnancy test - ruptured ectopic pregnancy; two lines, crystalloid, oxygen, transfer to a theatre with blood, no delay for a scan.",
+    "Bleeding with pulse above 100 or systolic below 90 mmHg - resuscitate and refer; remove any products visible in the os on the way.",
+    "Fever, foul discharge and a tender uterus after a miscarriage or a procedure - septic abortion; antibiotics within the hour, tetanus prophylaxis, evacuation and referral.",
+    "Uterus larger than dates with hyperemesis, bleeding or blood pressure above 140/90 before 20 weeks - molar pregnancy; hCG and ultrasound, refer for suction evacuation.",
+    "Empty uterus on transvaginal scan with hCG above 1500-2000 mIU/mL - pregnancy of unknown location that is an ectopic until proven otherwise; serial hCG under specialist care.",
+    "Worsening pain, faintness or a falling haemoglobin after methotrexate for an ectopic pregnancy - tubal rupture; do not attribute it to separation pain, refer for surgery.",
+    "Fresh bleeding, haemoptysis or neurological symptoms in the months after a molar pregnancy or any pregnancy - choriocarcinoma; send an hCG.",
+  ],
+  pearls: [
+    "A urine pregnancy test costs less than the cheapest analgesic; do it in every woman of reproductive age with abdominal pain before you write a diagnosis.",
+    "Discriminatory zone: an intrauterine sac should be seen on transvaginal scan once hCG exceeds 1500-2000 mIU/mL; an empty uterus above that is an ectopic until located.",
+    "Methotrexate 50 mg per square metre IM once; hCG on days 4 and 7; a 15% fall between them means it is working.",
+    "Misoprostol 600 microgram orally for an incomplete miscarriage; mifepristone 200 mg then misoprostol 800 microgram vaginally for a missed miscarriage; MVA, not curettage, if surgery is needed.",
+    "One RMP to 20 weeks, two RMPs to 24 weeks for the seven categories, a Medical Board beyond - and the contraceptive-failure ground now covers any woman or her partner.",
+    "The husband's consent is never required for an MTP; the woman's is, and a guardian's for a minor or a mentally ill woman.",
+    "Anti-D after every bleed, miscarriage, ectopic or termination in the Rh-negative woman: 50 microgram before 12 weeks, 300 microgram after, within 72 hours.",
+    "Products in the os cause bleeding and bradycardia - a sponge holder removes both problems in ten seconds.",
+  ],
+  theory: [
+    {
+      id: "obstetrics-early-pregnancy-bleeding-t1",
+      paper: "IV",
+      kind: "long",
+      marks: 10,
+      minutes: 20,
+      frequency: "common",
+      question:
+        "A 26-year-old woman with eight weeks of amenorrhoea presents to your clinic with lower abdominal pain and vaginal spotting for one day. Discuss the differential diagnosis, your evaluation, and the management of each of the important possibilities at the level of a family physician.",
+      openingLines: [
+        "Bleeding in early pregnancy affects about one in four pregnancies and has three diagnoses that determine survival and future fertility: miscarriage, ectopic pregnancy and gestational trophoblastic disease.",
+        "The family physician's role is to recognise the emergency, confirm the pregnancy and its location with a urine test, transvaginal ultrasound and serum beta-hCG, treat what can be treated at the primary level, give anti-D to the Rh-negative woman, and refer the rest with resuscitation already begun.",
+      ],
+      answer: [
+        {
+          heading: "1. Differential diagnosis",
+          points: [
+            "Miscarriage - threatened, inevitable, incomplete, complete, missed or septic; the commonest cause, 10-20% of clinical pregnancies.",
+            "Ectopic pregnancy - 1-2% of pregnancies; the dangerous cause, with pain preceding bleeding, dark scanty loss, and syncope or shoulder-tip pain on rupture.",
+            "Hydatidiform mole - uterus larger than dates, hyperemesis, very high hCG, snowstorm on scan.",
+            "Non-obstetric causes - cervical ectropion or polyp, cervicitis, vaginal trauma, and rarely cervical carcinoma; implantation bleeding is a diagnosis of exclusion.",
+          ],
+        },
+        {
+          heading: "2. Evaluation",
+          points: [
+            "History: amount and colour of bleeding, passage of tissue, character and side of pain, syncope, shoulder-tip pain, risk factors for ectopic pregnancy (previous ectopic, tubal surgery, PID, IUCD, ART), and any attempt at termination.",
+            "Examination: pulse, blood pressure, shock index, pallor, abdominal tenderness and guarding; a gentle speculum to see the source of bleeding and any products in the os, which are removed; a gentle bimanual for uterine size, os and adnexal tenderness, omitted if ectopic is suspected and ultrasound is available.",
+            "Investigations: urine pregnancy test, haemoglobin, blood group and Rh, serum quantitative beta-hCG, transvaginal ultrasound; an intrauterine sac should be seen when hCG exceeds 1500-2000 mIU/mL.",
+            "Serial hCG at 48 hours when no intrauterine pregnancy is seen: a rise below 50% or a plateau indicates a failing or ectopic pregnancy.",
+          ],
+        },
+        {
+          heading: "3. Management of miscarriage",
+          points: [
+            "Threatened with a viable pregnancy: reassurance, danger signs, no bed rest; vaginal progesterone 400 mg twice daily to 16 weeks only if she has had a previous miscarriage.",
+            "Incomplete or inevitable: remove products from the os; misoprostol 600 microgram orally single dose; manual vacuum aspiration if bleeding is heavy, sepsis is present or size exceeds 12 weeks.",
+            "Missed: mifepristone 200 mg then misoprostol 800 microgram vaginally at 24-48 hours, or MVA, or expectant management by choice.",
+            "Septic: IV ampicillin, gentamicin and metronidazole, tetanus prophylaxis, fluid resuscitation, evacuation and referral.",
+            "Anti-D 50 microgram IM within 72 hours for the Rh-negative woman before 12 weeks (300 microgram after 12 weeks).",
+          ],
+        },
+        {
+          heading: "4. Management of ectopic pregnancy",
+          points: [
+            "Ruptured or unstable: two wide-bore lines, crystalloid, oxygen, cross-match, immediate transfer for laparotomy or laparoscopy; the woman is not kept for a scan.",
+            "Stable, unruptured, mass under 3.5 cm, no cardiac activity, hCG under 5000 mIU/mL, normal blood counts and liver and renal function, reliable follow-up: methotrexate 50 mg per square metre IM single dose with hCG on days 4 and 7 (fall of at least 15% between them), and a second dose if not.",
+            "Advice after methotrexate: avoid folic acid, NSAIDs, alcohol and intercourse until hCG is undetectable; return for worsening pain; avoid conception for three months.",
+            "Surgery for failed medical treatment, hCG above 5000, cardiac activity, or a mass over 3.5 cm; salpingectomy is standard, salpingotomy if the other tube is damaged.",
+          ],
+        },
+        {
+          heading: "5. Management of molar pregnancy and follow-up counselling",
+          points: [
+            "Refer for suction evacuation with histology; hCG weekly until three negatives then monthly for six months; reliable contraception; defer pregnancy six to twelve months; treat persistent or rising hCG as gestational trophoblastic neoplasia.",
+            "For all: post-abortion contraception the same day, warning signs, grief acknowledged, recurrence risk stated honestly, folic acid before the next pregnancy, and investigation after three consecutive losses.",
+          ],
+        },
+      ],
+      mustDraw: [
+        "A flow chart: positive pregnancy test with bleeding - shock? resuscitate and refer - stable: transvaginal scan and hCG - intrauterine pregnancy (viable, missed, incomplete) versus empty uterus (hCG above discriminatory zone: ectopic; below: repeat at 48 hours).",
+        "A table of the types of miscarriage with os, scan and management.",
+      ],
+      markSplit: [
+        { part: "Differential diagnosis", marks: 1.5 },
+        { part: "Evaluation including hCG and ultrasound logic", marks: 2.5 },
+        { part: "Management of miscarriage with drug doses", marks: 2.5 },
+        { part: "Management of ectopic pregnancy including methotrexate criteria", marks: 2.5 },
+        { part: "Molar pregnancy and counselling", marks: 1 },
+      ],
+      keywords: ["early pregnancy bleeding", "miscarriage", "ectopic pregnancy", "methotrexate", "misoprostol", "discriminatory zone", "anti-D"],
+    },
+    {
+      id: "obstetrics-early-pregnancy-bleeding-t2",
+      paper: "IV",
+      kind: "short-note",
+      marks: 5,
+      minutes: 10,
+      frequency: "common",
+      question: "Write a short note on the salient features of the Medical Termination of Pregnancy (Amendment) Act 2021.",
+      openingLines: [
+        "The Medical Termination of Pregnancy Act 1971 legalised abortion in India on defined grounds by registered medical practitioners at approved places; the Amendment Act of 2021, with the Rules notified in October 2021, widened the gestational limits, extended the contraceptive-failure ground to unmarried women, created Medical Boards for terminations beyond 24 weeks and made confidentiality a statutory duty.",
+        "The Act remains a provider-protection law rather than a rights-based one: it defines when a doctor may lawfully terminate, and every termination outside it is an offence under the Indian Penal Code or the Bharatiya Nyaya Sanhita.",
+      ],
+      answer: [
+        {
+          heading: "Gestational limits and opinions",
+          points: [
+            "Up to 20 weeks: the opinion of one registered medical practitioner formed in good faith (previously 12 weeks).",
+            "20 to 24 weeks: the opinion of two RMPs, only for the categories in Rule 3B - survivors of rape, sexual assault or incest; minors; change of marital status during pregnancy (widowhood, divorce); women with physical disabilities; mentally ill women; substantial fetal abnormality; and pregnancies in humanitarian settings, disasters or emergencies.",
+            "Beyond 24 weeks: a state Medical Board (gynaecologist, paediatrician, radiologist or sonologist, and any other member notified) may permit termination for substantial fetal abnormality, deciding within three days.",
+            "Section 5: to save the woman's life, any RMP may terminate at any gestation at any place without the opinion and place requirements.",
+          ],
+        },
+        {
+          heading: "Grounds and consent",
+          points: [
+            "Grounds: risk to life or grave injury to physical or mental health; substantial risk of serious physical or mental handicap in the child; pregnancy from rape (presumed grave mental injury); failure of any contraceptive used by any woman or her partner - the phrase 'married woman or her husband' was deleted.",
+            "Consent: the woman's own written consent if 18 or older and of sound mind; a guardian's for a minor or a mentally ill woman; the spouse's consent is not required.",
+          ],
+        },
+        {
+          heading: "Confidentiality, place, provider and records",
+          points: [
+            "Identity and particulars are disclosed only to a person authorised by law; breach is punishable with imprisonment up to one year and a fine.",
+            "Place: government hospitals without separate approval; private places approved by the District Level Committee.",
+            "Provider: an RMP with the training or experience prescribed in the Rules; the Rules 2021 permit outpatient medical abortion with mifepristone and misoprostol up to 9 weeks by an RMP with access to an approved place.",
+            "Records: Form C (consent), Form I (RMP opinion), Form II (monthly report to the Chief Medical Officer), Form III (admission register kept for five years).",
+          ],
+        },
+        {
+          heading: "Limitations",
+          points: [
+            "Sex-selective termination remains an offence under the PCPNDT Act; the woman's request alone is still not a ground; access beyond 20 weeks depends on category rather than need; and the mandatory-reporting duty under POCSO for minors deters adolescents, partly mitigated by the Supreme Court's 2022 ruling protecting identity.",
+          ],
+        },
+      ],
+      mustDraw: ["A two-column table comparing the 1971 Act and the 2021 Amendment on gestational limits, opinions, the contraceptive-failure clause and confidentiality."],
+      markSplit: [
+        { part: "Gestational limits, opinions and Medical Board", marks: 2 },
+        { part: "Grounds and consent", marks: 1.5 },
+        { part: "Confidentiality, place, provider and records", marks: 1 },
+        { part: "Limitations", marks: 0.5 },
+      ],
+      keywords: ["MTP Act 2021", "20 weeks", "24 weeks", "Medical Board", "Rule 3B", "contraceptive failure", "confidentiality"],
+    },
+  ],
+  mcqs: [
+    {
+      id: "obstetrics-early-pregnancy-bleeding-q1",
+      stem: "A 28-year-old woman with seven weeks of amenorrhoea has mild pelvic pain and spotting. Serum beta-hCG is 2400 mIU/mL and a transvaginal ultrasound shows an empty uterus with a 2 cm right adnexal mass and no free fluid. She is haemodynamically stable. What is the most likely diagnosis?",
+      options: [
+        "Complete miscarriage",
+        "Threatened miscarriage with a corpus luteum",
+        "Ectopic pregnancy",
+        "Normal early intrauterine pregnancy too small to see",
+        "Molar pregnancy",
+      ],
+      answer: 2,
+      explanation:
+        "An hCG above the transvaginal discriminatory zone of 1500-2000 mIU/mL with no intrauterine sac and an adnexal mass is an ectopic pregnancy until proven otherwise. A normal intrauterine pregnancy at this hCG level would be visible on transvaginal scan, so the fourth option is excluded by the discriminatory principle. Threatened miscarriage requires a visible intrauterine pregnancy. Complete miscarriage cannot be assumed without a documented prior intrauterine pregnancy or a rapidly falling hCG, because the ectopic mimics it exactly. A mole produces a very high hCG with an intrauterine snowstorm, not an empty uterus.",
+      difficulty: "moderate",
+    },
+    {
+      id: "obstetrics-early-pregnancy-bleeding-q2",
+      stem: "Which of the following makes a woman with an ectopic pregnancy unsuitable for single-dose methotrexate?",
+      options: [
+        "Serum hCG of 1800 mIU/mL",
+        "Adnexal mass of 2.5 cm",
+        "Fetal cardiac activity in the adnexal mass",
+        "Absence of free fluid in the pelvis",
+        "Haemoglobin of 11.5 g/dL",
+      ],
+      answer: 2,
+      explanation:
+        "Fetal cardiac activity is a contraindication to medical management because failure and rupture rates rise sharply; the other absolute exclusions are haemodynamic instability, rupture, a mass over 3.5 cm, hCG above 5000 mIU/mL, abnormal liver, renal or blood counts, breastfeeding and inability to follow up. An hCG of 1800 and a mass of 2.5 cm both fall within the favourable range. Absence of free fluid argues against rupture and favours methotrexate rather than excluding it, and a normal haemoglobin is reassuring.",
+      difficulty: "easy",
+    },
+    {
+      id: "obstetrics-early-pregnancy-bleeding-q3",
+      stem: "A 22-year-old unmarried woman requests termination of a 19-week pregnancy that resulted from failure of the condom she and her partner used. Under the MTP Act as amended in 2021, which statement is correct?",
+      options: [
+        "Termination is not permitted because she is unmarried",
+        "Termination requires the opinion of two registered medical practitioners",
+        "Termination is permitted on the opinion of one registered medical practitioner on the ground of contraceptive failure",
+        "Termination requires the permission of a Medical Board",
+        "Termination requires the consent of her parents",
+      ],
+      answer: 2,
+      explanation:
+        "The 2021 amendment replaced 'married woman or her husband' with 'any woman or her partner' in the contraceptive-failure explanation, so an unmarried woman qualifies, and at 19 weeks only one RMP's opinion is needed since the single-opinion limit was raised from 12 to 20 weeks. Two opinions apply from 20 to 24 weeks for the Rule 3B categories, and a Medical Board only beyond 24 weeks for fetal abnormality. An adult of sound mind gives her own consent; parental or spousal consent is not required.",
+      difficulty: "moderate",
+    },
+    {
+      id: "obstetrics-early-pregnancy-bleeding-q4",
+      stem: "A woman at nine weeks has an incomplete miscarriage with moderate bleeding and is haemodynamically stable. No products are visible in the os. Which is the most appropriate medical management?",
+      options: [
+        "Misoprostol 600 microgram orally as a single dose",
+        "Misoprostol 25 microgram vaginally every 6 hours",
+        "Mifepristone 200 mg alone",
+        "Oxytocin 10 units IM",
+        "Methotrexate 50 mg per square metre IM",
+      ],
+      answer: 0,
+      explanation:
+        "WHO recommends misoprostol 600 microgram orally (or 400 microgram sublingually) as a single dose for incomplete miscarriage under 13 weeks, with manual vacuum aspiration reserved for heavy bleeding, infection or larger uteri. The 25 microgram vaginal dose is a labour-induction regimen for a term uterus. Mifepristone alone is inadequate; it is used before misoprostol for missed miscarriage and for termination. Oxytocin is ineffective on the first-trimester uterus, which has few oxytocin receptors, and methotrexate is a treatment for ectopic pregnancy and trophoblastic neoplasia, not miscarriage.",
+      difficulty: "easy",
+    },
+    {
+      id: "obstetrics-early-pregnancy-bleeding-q5",
+      stem: "An Rh-negative woman undergoes medical abortion at eight weeks of gestation. What anti-D immunoglobulin prophylaxis is appropriate?",
+      options: [
+        "None, because sensitisation does not occur before 12 weeks",
+        "50 microgram (250 IU) IM within 72 hours",
+        "300 microgram (1500 IU) IM within 72 hours",
+        "300 microgram IM at 28 weeks only",
+        "50 microgram IM only if the partner is Rh-positive and a Kleihauer test is positive",
+      ],
+      answer: 1,
+      explanation:
+        "Sensitisation can occur from about 6 weeks onward, so every Rh-negative woman receives anti-D after a termination, miscarriage or ectopic pregnancy; the dose is 50 microgram (250 IU) before 12 weeks and 300 microgram (1500 IU) at or after 12 weeks, given within 72 hours. The 300 microgram dose at 28 weeks is routine antenatal prophylaxis in an ongoing pregnancy, not the response to a sensitising event. The Kleihauer test quantifies large fetomaternal haemorrhage after 20 weeks and is not needed before a first-trimester dose, and waiting for the partner's group only delays a cheap intervention.",
+      difficulty: "easy",
+    },
+    {
+      id: "obstetrics-early-pregnancy-bleeding-q6",
+      stem: "After suction evacuation of a complete hydatidiform mole, which follow-up schedule of serum hCG is recommended?",
+      options: [
+        "A single hCG at six weeks",
+        "Weekly until three consecutive negative values, then monthly for six months",
+        "Monthly for one year regardless of values",
+        "Every 48 hours for two weeks",
+        "No follow-up is needed if the histology is benign",
+      ],
+      answer: 1,
+      explanation:
+        "Weekly hCG until three consecutive normal values and then monthly for six months detects the 15-20% of complete moles that progress to gestational trophoblastic neoplasia, defined by a plateau over three weeks, a rise over two weeks or persistence at six months. A single value at six weeks misses late rises, and monthly-only testing from the outset misses the early plateau. Forty-eight-hourly testing is the interval for a pregnancy of unknown location, not for mole surveillance. Benign histology does not exclude neoplasia because the diagnosis of neoplasia is biochemical, not histological.",
+      difficulty: "easy",
+    },
+  ],
+  cards: [
+    {
+      id: "obstetrics-early-pregnancy-bleeding-c1",
+      front: "Discriminatory zone for beta-hCG on transvaginal and transabdominal ultrasound.",
+      back: "An intrauterine sac should be visible above 1500-2000 mIU/mL on transvaginal scan and above about 3500 mIU/mL on transabdominal scan; an empty uterus above this level is an ectopic until proven otherwise.",
+    },
+    {
+      id: "obstetrics-early-pregnancy-bleeding-c2",
+      front: "Criteria for single-dose methotrexate in ectopic pregnancy, and the dose.",
+      back: "Stable, unruptured, mass under 3.5 cm, no fetal cardiac activity, hCG under 5000 mIU/mL, normal counts and liver and renal function, not breastfeeding, able to follow up; 50 mg per square metre IM; hCG on days 4 and 7 with a 15% fall.",
+    },
+    {
+      id: "obstetrics-early-pregnancy-bleeding-c3",
+      front: "Ultrasound criteria for a missed miscarriage.",
+      back: "Crown-rump length 7 mm or more with no cardiac activity, or mean sac diameter 25 mm or more with no embryo, confirmed on a repeat scan a week later or by a second observer.",
+    },
+    {
+      id: "obstetrics-early-pregnancy-bleeding-c4",
+      front: "Drug regimens for incomplete and missed miscarriage.",
+      back: "Incomplete: misoprostol 600 microgram orally (or 400 microgram sublingually) single dose. Missed: mifepristone 200 mg orally then misoprostol 800 microgram vaginally 24-48 hours later; MVA is the surgical alternative.",
+    },
+    {
+      id: "obstetrics-early-pregnancy-bleeding-c5",
+      front: "Gestational limits and opinions under the MTP Act as amended in 2021.",
+      back: "Up to 20 weeks one RMP; 20-24 weeks two RMPs for the seven Rule 3B categories; beyond 24 weeks a Medical Board for substantial fetal abnormality; any gestation to save life under Section 5.",
+    },
+    {
+      id: "obstetrics-early-pregnancy-bleeding-c6",
+      front: "The seven Rule 3B categories eligible for termination between 20 and 24 weeks.",
+      back: "Survivors of rape, sexual assault or incest; minors; change of marital status during pregnancy (widowhood or divorce); physical disability; mental illness; substantial fetal abnormality; humanitarian settings, disasters or emergencies.",
+    },
+    {
+      id: "obstetrics-early-pregnancy-bleeding-c7",
+      front: "Outpatient medical abortion regimen and the gestational window under the MTP Rules 2021.",
+      back: "Up to 9 weeks (63 days): mifepristone 200 mg orally, then misoprostol 800 microgram buccally, vaginally or sublingually 24-48 hours later; review at two weeks.",
+    },
+    {
+      id: "obstetrics-early-pregnancy-bleeding-c8",
+      front: "Anti-D doses after a sensitising event in an Rh-negative woman.",
+      back: "50 microgram (250 IU) IM before 12 weeks; 300 microgram (1500 IU) IM at or after 12 weeks; within 72 hours of the event.",
+    },
+    {
+      id: "obstetrics-early-pregnancy-bleeding-c9",
+      front: "hCG surveillance after evacuation of a complete mole, and the definition of gestational trophoblastic neoplasia.",
+      back: "Weekly until three consecutive negatives, then monthly for six months. Neoplasia: plateau over three weeks, rise over two weeks, or persistence at six months.",
+    },
+  ],
+  references: [
+    "The Medical Termination of Pregnancy (Amendment) Act, 2021, and the Medical Termination of Pregnancy (Amendment) Rules, 2021, Government of India",
+    "Comprehensive Abortion Care: Training and Service Delivery Guidelines, Maternal Health Division, MoHFW, 2nd edition, 2018",
+    "WHO Abortion Care Guideline, 2022",
+    "NICE Guideline NG126: Ectopic Pregnancy and Miscarriage - Diagnosis and Initial Management, 2019, updated 2023",
+    "ACOG Practice Bulletin 193: Tubal Ectopic Pregnancy, 2018",
+    "Coomarasamy A et al. PRISM trial: progesterone in women with bleeding in early pregnancy. NEJM 2019; Chu JJ et al. MifeMiso trial. Lancet 2020",
+    "FOGSI Good Clinical Practice Recommendations on Rh-negative Pregnancy and Anti-D Prophylaxis, 2017",
+    "Williams Obstetrics, 26th edition, 2022 - abortion, ectopic pregnancy and gestational trophoblastic disease",
+  ],
+});
+
+topics.push({
+  id: "obstetrics-postnatal-care",
+  title: "Postnatal care, breastfeeding and postpartum contraception",
+  oneLiner:
+    "The puerperium is the six weeks after delivery in which the reproductive organs return to the non-pregnant state, and postnatal care is the scheduled supervision of mother and newborn in that period - a 48-hour facility stay, home-based newborn care visits by the ASHA on days 3, 7, 14, 21, 28 and 42, examination for bleeding, sepsis, hypertension, thromboembolism and depression, support for exclusive breastfeeding, and a contraceptive method chosen before the six-week check.",
+  frequency: "common",
+  keywords: [
+    "puerperium",
+    "postnatal care",
+    "PNC",
+    "HBNC",
+    "home-based newborn care",
+    "lochia",
+    "involution",
+    "puerperal sepsis",
+    "postpartum depression",
+    "EPDS",
+    "postpartum blues",
+    "postpartum psychosis",
+    "breastfeeding",
+    "exclusive breastfeeding",
+    "attachment",
+    "mastitis",
+    "engorgement",
+    "MAA programme",
+    "IMS Act",
+    "LAM",
+    "lactational amenorrhoea",
+    "PPIUCD",
+    "Antara",
+    "Chhaya",
+    "postpartum contraception",
+  ],
+  sections: [
+    {
+      heading: "Normal puerperium and the schedule of postnatal contacts",
+      points: [
+        "**The uterus is at the umbilicus immediately after delivery, involutes at about one finger-breadth (1 cm) a day, is no longer palpable abdominally by day 10-14 and returns to its non-pregnant size by six weeks;** a uterus that stays bulky and tender, or lochia that stays red beyond a week, is subinvolution from retained products or infection.",
+        "**Lochia** is rubra (red, days 1-4), serosa (pink-brown, days 5-10) and alba (yellow-white, up to three to six weeks); foul-smelling lochia is endometritis until proven otherwise, and a return of fresh bleeding after day 7 is secondary postpartum haemorrhage.",
+        "**After an institutional delivery the mother and baby stay 48 hours under JSSK** (the period in which most primary haemorrhage, eclampsia and neonatal collapse occur), with pulse, blood pressure, temperature, fundal tone, lochia, bladder and breastfeeding checked every 15 minutes for two hours and then at least four times a day.",
+        "**Home-based newborn care (HBNC) visits by the ASHA follow on days 3, 7, 14, 21, 28 and 42 after an institutional delivery, with an additional visit on day 1 after a home delivery;** the ASHA weighs the baby, checks temperature and feeding, looks for the newborn danger signs and refers to the medical officer or the special newborn care unit, and is paid for the completed schedule.",
+        "**The facility postnatal contacts are within 24 hours, at day 3, at day 7 and at six weeks** (WHO 2022 recommends the first 24 hours, 48-72 hours, days 7-14 and six weeks); the six-week visit is the one at which contraception, the haemoglobin, the blood pressure in a woman who had pre-eclampsia, and the post-GDM glucose tolerance test are all due.",
+        "**Routine prescriptions continue:** iron-folic acid for 180 days postpartum, calcium for six months, analgesia for perineal pain, and **anti-D 300 microgram IM within 72 hours to the Rh-negative mother of an Rh-positive baby**; rubella (MR) vaccine is given postpartum to the seronegative woman, with the advice to avoid pregnancy for one month.",
+      ],
+    },
+    {
+      heading: "The postnatal examination and the mother's danger signs",
+      points: [
+        "**Examine at every contact:** temperature, pulse, blood pressure, pallor, breasts and nipples, the fundal height and tenderness, the lochia, the perineal or caesarean wound, the calves for tenderness and swelling, the bladder for retention, and the mother's mood and sleep; ask about feeding, pain, bleeding and how she is coping, and speak to her alone at least once.",
+        "**Puerperal sepsis** - temperature of 38 degrees C or more on any two of the first ten days excluding the first 24 hours, with foul lochia, a tender uterus and tachycardia - is usually endometritis from anaerobes, streptococci and Escherichia coli; the family physician takes a high vaginal swab and blood culture where possible, starts **amoxicillin-clavulanate 625 mg three times daily with metronidazole 400 mg three times daily** for mild cases, and admits for intravenous ampicillin, gentamicin and metronidazole if she is unwell, because group A streptococcal sepsis kills within hours.",
+        "**Postpartum hypertension:** blood pressure above 140/90 mmHg in the first week is checked daily in a woman who had pre-eclampsia, because **eclampsia occurs after delivery in up to 40% of cases, most within 48 hours but some up to a week;** headache, visual disturbance or epigastric pain postpartum is treated as impending eclampsia and referred, and antihypertensives (nifedipine or labetalol) are continued and tapered over weeks, not stopped at discharge.",
+        "**Venous thromboembolism** is at its highest incidence in the first three weeks postpartum; unilateral calf pain or swelling, or breathlessness with chest pain, is referred the same day for compression ultrasound or CT pulmonary angiography, and low-molecular-weight heparin is started before the result if the suspicion is high, since it is safe in breastfeeding.",
+        "**Urinary problems:** retention after a long labour or an epidural is catheterised before the bladder is overdistended; stress incontinence and a feeling of prolapse are treated with pelvic floor exercises from the first days and reviewed at six weeks; dysuria with fever is a urinary infection until cultured.",
+        "**The mother's danger signs, taught before discharge:** heavy bleeding or large clots, fever, foul discharge, severe headache or blurred vision or a fit, breathlessness or chest pain, calf pain, a red painful breast, a wound that is red or discharging, inability to pass urine, and feeling unable to cope or thoughts of harming herself or the baby.",
+      ],
+    },
+    {
+      heading: "Mood after delivery: blues, depression and psychosis",
+      points: [
+        "**Postpartum blues affect 50-80% of women, begin on day 3-5, consist of tearfulness, lability and anxiety without loss of function, and resolve within two weeks;** they need reassurance, sleep and support, not drugs, but a woman whose blues have not settled by two weeks is screened for depression.",
+        "**Postpartum depression affects 10-20% of Indian women** and is screened for with the Edinburgh Postnatal Depression Scale at the six-week visit and whenever there is concern; **a score of 13 or more, or any positive answer to item 10 on self-harm, needs assessment the same day.** Risk factors are a previous depression, a difficult birth, a female child in a family that wanted a son, domestic violence, poverty and lack of support.",
+        "Mild depression is treated with structured psychosocial support (the Thinking Healthy Programme delivered by community health workers is the evidence base from South Asia), sleep protection and involvement of the family; **moderate and severe depression receive sertraline 50-100 mg daily, which is the antidepressant with the lowest milk transfer, and breastfeeding is continued.**",
+        "**Postpartum psychosis affects 1-2 per 1000 births, begins within the first two weeks, presents with confusion, insomnia, delusions about the baby, hallucinations and rapid mood swings, and is a psychiatric emergency** because of the risk of suicide and infanticide; the woman is never left alone with the baby and is admitted the same day, ideally to a mother-baby unit, and half have underlying bipolar disorder.",
+        "Ask every father too; paternal depression is common, and a mother whose husband and mother-in-law understand what depression is has a far better chance of recovery than one told she is ungrateful.",
+      ],
+    },
+    {
+      heading: "Breastfeeding: initiation, technique and the national framework",
+      points: [
+        "**Breastfeeding is initiated within one hour of birth, is exclusive for six months (no water, honey, ghutti or formula), complementary feeds start at six months, and breastfeeding continues to two years and beyond;** colostrum in the first three days is rich in secretory IgA and is never discarded. Exclusive breastfeeding prevents about 13% of under-five deaths and is the single most effective child survival intervention.",
+        "**Good positioning** has four signs - the baby's head and body in a straight line, the face turned to the breast with the nose opposite the nipple, the body held close to the mother, and the whole body supported; **good attachment** has four - the chin touching the breast, the mouth wide open, the lower lip turned outward, and more areola visible above the upper lip than below.",
+        "Feed on demand, at least eight to twelve times in 24 hours including at night, letting the baby finish the first breast to get the fat-rich hindmilk before offering the second; **adequacy is judged by six or more wet nappies a day after day 4, regaining the birth weight by two weeks, and a gain of at least 500 g a month,** not by the mother's perception of her supply.",
+        "**Expressed breast milk** by hand or pump is the answer to separation, work and the sick or preterm baby; it keeps for up to six hours at room temperature, 24 hours in a refrigerator and three months in a deep freezer, and is fed by cup or spoon, never by bottle.",
+        "**The framework:** the Infant Milk Substitutes, Feeding Bottles and Infant Foods Act 1992, amended 2003, bans promotion of formula, bottles and infant foods for children under two and forbids health workers from accepting gifts from manufacturers; the Baby-Friendly Hospital Initiative (1991, Ten Steps revised 2018); and the **Mothers' Absolute Affection (MAA) programme of 2016,** which trains ASHAs and facility staff in counselling and supports breastfeeding at the facility and in the community.",
+        "**Contraindications are few:** classic galactosaemia in the infant (absolute), maternal chemotherapy, radioactive iodine, amiodarone and ergot derivatives; HIV is not a contraindication in India - the mother on antiretroviral therapy breastfeeds exclusively for six months; hepatitis B and C are not contraindications; active tuberculosis continues breastfeeding with a mask, the mother's treatment and isoniazid prophylaxis for the baby; a herpes lesion on the breast rules out that breast only.",
+      ],
+    },
+    {
+      heading: "Breastfeeding problems the family physician treats",
+      points: [
+        "**Sore or cracked nipples are almost always poor attachment,** not a weak nipple; correct the latch, break suction with a finger before removing the baby, apply hindmilk to the nipple after feeds, avoid soap, and check for infant tongue-tie and candida if the pain persists.",
+        "**Engorgement on days 3-5** - both breasts hot, heavy and shiny with a low-grade fever - is treated by feeding more often, expressing a little before the feed to soften the areola, warm compresses before and cold after, and paracetamol or ibuprofen; it is not a reason to stop feeding.",
+        "**A blocked duct** is a tender wedge-shaped lump without systemic illness, relieved by continued feeding from that breast with the baby's chin pointing at the lump, massage toward the nipple, and correction of a tight brassiere or a missed feed.",
+        "**Mastitis** - a red, hot, tender segment with fever above 38.5 degrees C and malaise, usually Staphylococcus aureus - is treated by continuing to feed from the affected breast (the milk is not harmful to the baby), **flucloxacillin or dicloxacillin 500 mg every 6 hours, or cephalexin 500 mg every 6 hours, for 10-14 days**, an NSAID, and review in 48 hours; failure to improve or a fluctuant mass means an abscess, drained by ultrasound-guided aspiration or incision, with feeding continued from the other breast.",
+        "**Perceived insufficient milk is the commonest reason for stopping;** confirm adequacy by weight and wet nappies, increase the frequency of feeds and skin-to-skin contact, address the mother's rest and fluids, remove any formula top-ups, and reserve domperidone 10 mg three times daily as a galactagogue for a genuine deficit after these measures.",
+        "**Inverted nipples** are managed antenatally with reassurance and postnatally with attachment help, a syringe technique to draw the nipple out before feeds, or a breast shell; most babies attach to the breast, not the nipple, and succeed.",
+      ],
+    },
+    {
+      heading: "Postpartum contraception: timing and choice of method",
+      points: [
+        "**Ovulation can return as early as day 25 in a woman who is not breastfeeding, so contraception must be in place by three weeks;** in the fully breastfeeding woman the lactational amenorrhoea method (LAM) is 98% effective while all three criteria hold - **amenorrhoea, exclusive or nearly exclusive breastfeeding day and night, and a baby under six months** - and the woman is told that the failure of any one criterion ends the method.",
+        "**Birth spacing of at least 24 months from delivery to the next conception** (three years in the Indian programme message) halves the risk of preterm birth, low birth weight and maternal anaemia; the method is chosen during the antenatal period, not at the six-week visit, so that it is available at the delivery.",
+        "**The postpartum intrauterine device (PPIUCD, copper 380A)** is inserted within 10 minutes of placental delivery, during caesarean section, or within 48 hours of delivery; **it is not inserted between 48 hours and four to six weeks** because of the higher expulsion and perforation risk, and an interval IUCD is placed thereafter; expulsion is about 5-10% higher than for interval insertion, so a follow-up at six weeks checks the threads.",
+        "**Postpartum sterilisation** by minilaparotomy is done within seven days of delivery or after six weeks, and at caesarean section; the woman must be over 22 and under 49 with at least one living child, and consent is taken from her alone, never from the husband or a family member.",
+        "**Progestogen-only methods are safe from delivery in the breastfeeding woman:** injectable DMPA 150 mg IM every three months (Antara), the progestogen-only pill, and the etonogestrel implant now entering the national programme; **centchroman (ormeloxifene, Chhaya) 30 mg twice weekly for three months then weekly** is non-hormonal and does not affect lactation. **Combined pills are contraindicated (WHO MEC category 4) before six weeks in the breastfeeding woman, category 3 from six weeks to six months, and category 3 before 21 days in the non-breastfeeding woman** because of thromboembolism.",
+        "**Condoms** are offered to every couple from the resumption of intercourse and are the bridge between LAM and a long-acting method; **emergency contraception with levonorgestrel 1.5 mg within 72 hours** is safe during breastfeeding.",
+      ],
+    },
+  ],
+  tables: [
+    {
+      heading: "Postnatal contact schedule in the Indian programme",
+      columns: ["Contact", "Timing", "By whom", "What is done"],
+      rows: [
+        ["Facility stay", "First 48 hours", "Staff nurse, medical officer", "Vitals every 15 min for 2 h then 4-hourly, bleeding, breastfeeding initiation, BCG, OPV-0, hepatitis B birth dose, vitamin K, danger signs taught"],
+        ["HBNC visit 1", "Day 3 (day 1 also for home deliveries)", "ASHA", "Weight, temperature, feeding, cord, jaundice, mother's bleeding and fever, referral if danger sign"],
+        ["HBNC visits 2-6", "Days 7, 14, 21, 28 and 42", "ASHA", "Same checks; weight trend; exclusive breastfeeding reinforced; contraception counselling"],
+        ["Facility postnatal check", "Within 24 h, day 3, day 7, 6 weeks", "ANM or medical officer", "Full examination of mother, EPDS screening, haemoglobin, blood pressure if hypertensive, OGTT if GDM, contraception, immunisation at 6 weeks"],
+        ["Young child visits (HBYC)", "3, 6, 9, 12 and 15 months", "ASHA", "Growth, complementary feeding, immunisation, development"],
+      ],
+    },
+    {
+      heading: "Postpartum contraception: when each method may be started",
+      columns: ["Method", "Breastfeeding woman", "Non-breastfeeding woman", "Note"],
+      rows: [
+        ["LAM", "From birth to 6 months while amenorrhoeic and exclusively feeding", "Not applicable", "98% effective; ends when any criterion fails"],
+        ["PPIUCD (Cu 380A)", "Within 10 min of placenta, at caesarean, or within 48 h; else after 4-6 weeks", "Same", "Avoid 48 h to 4-6 weeks; check threads at 6 weeks"],
+        ["Postpartum sterilisation", "Within 7 days or after 6 weeks; at caesarean", "Same", "Woman's own consent; age 22-49; one living child"],
+        ["DMPA 150 mg IM 3-monthly (Antara)", "From delivery (WHO MEC 2 before 6 weeks; permitted in India)", "From delivery", "Delayed return of fertility 6-12 months"],
+        ["Progestogen-only pill", "From delivery (MEC 2 before 6 weeks)", "From delivery", "Same time daily"],
+        ["Centchroman 30 mg (Chhaya)", "From delivery", "From delivery", "Twice weekly 3 months then weekly; non-hormonal"],
+        ["Combined oral contraceptive", "Not before 6 weeks (MEC 4); MEC 3 to 6 months", "After 21 days (42 days if VTE risk factors)", "Oestrogen reduces milk supply"],
+        ["Condom", "From resumption of intercourse", "Same", "Bridge method; protects against STI"],
+        ["Emergency pill (LNG 1.5 mg)", "Any time within 72 h of unprotected sex", "Same", "Safe in lactation"],
+      ],
+    },
+  ],
+  redFlags: [
+    "Bleeding soaking a pad in under an hour, or fresh bleeding returning after day 7 - secondary postpartum haemorrhage; uterotonic, antibiotics, refer for evacuation.",
+    "Temperature 38 degrees C or more with foul lochia and a tender uterus, or any postpartum fever with hypotension - puerperal sepsis; antibiotics within the hour, admit if unwell.",
+    "Headache, visual disturbance, epigastric pain or a fit in the first week after delivery - postpartum eclampsia; magnesium sulphate loading dose and transfer.",
+    "Unilateral calf swelling or pain, or breathlessness with pleuritic chest pain - venous thromboembolism; same-day imaging, start low-molecular-weight heparin if suspicion is high.",
+    "Confusion, insomnia for several nights, delusions about the baby or hallucinations in the first two weeks - postpartum psychosis; never leave her alone with the baby, admit the same day.",
+    "Any thought of self-harm or of harming the baby, or an EPDS score of 13 or more - same-day psychiatric assessment.",
+    "Newborn not feeding, fast breathing above 60 per minute, chest indrawing, fever or hypothermia, lethargy, convulsions, jaundice of palms and soles, or umbilical pus - refer to the special newborn care unit.",
+  ],
+  pearls: [
+    "Days 3, 7, 14, 21, 28 and 42 - six ASHA visits after an institutional delivery, seven after a home delivery with day 1 added.",
+    "Four signs of attachment: chin touching the breast, mouth wide open, lower lip turned out, more areola above than below. Every sore nipple is a latch problem first.",
+    "Mastitis is treated by feeding from the affected breast, not by stopping - flucloxacillin or cephalexin 500 mg 6-hourly for 10-14 days, review at 48 hours.",
+    "LAM has three conditions - amenorrhoea, exclusive feeding, baby under six months - and the method ends the day any one of them ends.",
+    "PPIUCD within 48 hours or after six weeks, never in between; combined pills never before six weeks in a breastfeeding woman.",
+    "Blues peak on day 3-5 and are gone by two weeks; depression is an EPDS of 13 or more at six weeks; psychosis is confusion and delusions in the first fortnight and is an emergency.",
+    "Sertraline is the antidepressant for a breastfeeding mother; low-molecular-weight heparin is her anticoagulant; both are compatible with continued feeding.",
+    "Anti-D 300 microgram within 72 hours of delivering an Rh-positive baby is a postnatal task - it is missed most often when the baby's blood group result arrives after discharge.",
+  ],
+  theory: [
+    {
+      id: "obstetrics-postnatal-care-t1",
+      paper: "IV",
+      kind: "long",
+      marks: 10,
+      minutes: 20,
+      frequency: "common",
+      question:
+        "Describe the postnatal care of the mother and the newborn during the first six weeks after a normal delivery at the primary care level, including the schedule of contacts, the examination, the danger signs, support for breastfeeding and counselling for contraception.",
+      openingLines: [
+        "The puerperium is the period of about six weeks after delivery during which the genital organs and the maternal physiology return to the non-pregnant state and lactation is established; over half of maternal deaths and two-thirds of neonatal deaths occur in this period, most in the first week.",
+        "Postnatal care in India is delivered as a 48-hour facility stay under JSSK, home-based newborn care visits by the ASHA on days 3, 7, 14, 21, 28 and 42, and facility contacts within 24 hours, at day 3, day 7 and six weeks.",
+      ],
+      answer: [
+        {
+          heading: "1. Care in the first 48 hours at the facility",
+          points: [
+            "Mother: pulse, blood pressure, temperature, fundal tone, lochia and bladder every 15 minutes for two hours and four-hourly thereafter; early ambulation; perineal care; analgesia; iron-folic acid and calcium continued; anti-D 300 microgram within 72 hours if Rh-negative with an Rh-positive baby.",
+            "Newborn: skin-to-skin contact, breastfeeding within one hour, vitamin K 1 mg IM, BCG, OPV-0 and hepatitis B birth dose, cord left dry, no bath for 24 hours, weight recorded, examination for anomalies and danger signs.",
+            "Before discharge: danger signs for mother and baby taught and repeated back; MCP card completed; JSY payment; the ASHA informed of the discharge date.",
+          ],
+        },
+        {
+          heading: "2. Schedule of postnatal contacts",
+          points: [
+            "HBNC visits by the ASHA on days 3, 7, 14, 21, 28 and 42 (day 1 added after a home delivery): weight, temperature, feeding, cord and skin, jaundice, mother's bleeding, fever and mood, referral of any danger sign.",
+            "Facility contacts at 24 hours, day 3, day 7 and six weeks by the ANM or medical officer.",
+            "At six weeks: full examination, haemoglobin, blood pressure if there was hypertension, 75 g OGTT if there was gestational diabetes, EPDS screening, contraception, and the six-week immunisations for the baby.",
+          ],
+        },
+        {
+          heading: "3. Examination of the mother and the danger signs",
+          points: [
+            "Temperature, pulse, blood pressure, pallor, breasts, fundal height and tenderness, lochia, perineum, calves, bladder and mood at every contact.",
+            "Danger signs: heavy bleeding, fever or foul lochia, severe headache or visual disturbance or fits, breathlessness or chest pain, calf pain, red painful breast, wound infection, urinary retention, and low mood or thoughts of self-harm.",
+            "Specific conditions: puerperal sepsis (fever 38 degrees C or more on two of the first ten days) - antibiotics and admission if unwell; postpartum eclampsia (up to 40% of eclampsia is postpartum) - magnesium sulphate and transfer; venous thromboembolism - same-day imaging and heparin.",
+            "Mood: blues (50-80%, days 3-5, resolves in two weeks), depression (10-20%, EPDS 13 or more, sertraline if moderate or severe), psychosis (1-2 per 1000, first two weeks, emergency admission).",
+          ],
+        },
+        {
+          heading: "4. Support for breastfeeding",
+          points: [
+            "Initiation within one hour, exclusive breastfeeding for six months, complementary feeding from six months, breastfeeding to two years.",
+            "Teach positioning (head and body in line, facing the breast, held close, whole body supported) and attachment (chin touching the breast, mouth wide open, lower lip everted, more areola above than below); feed on demand at least 8-12 times in 24 hours.",
+            "Judge adequacy by six or more wet nappies a day, regain of birth weight by two weeks and gain of 500 g a month.",
+            "Manage sore nipples by correcting the latch, engorgement by frequent feeding and expression, mastitis by continued feeding with flucloxacillin or cephalexin 500 mg 6-hourly for 10-14 days; explain the IMS Act and the MAA programme; teach expression and cup feeding for the working mother.",
+          ],
+        },
+        {
+          heading: "5. Newborn care at home and contraception",
+          points: [
+            "Newborn: exclusive breastfeeding, warmth and kangaroo care for the low-birth-weight baby, dry cord care, hand hygiene, immunisation on schedule, and the danger signs - not feeding, fast breathing, chest indrawing, fever or cold to touch, lethargy, convulsions, jaundice of palms and soles, umbilical pus.",
+            "Contraception counselled antenatally and confirmed at six weeks: LAM while its three criteria hold; PPIUCD within 48 hours or an interval IUCD after six weeks; postpartum sterilisation within seven days or after six weeks; DMPA, progestogen-only pill or centchroman from delivery; combined pills not before six weeks in the breastfeeding woman; condoms from resumption of intercourse; birth spacing of at least two years.",
+          ],
+        },
+      ],
+      mustDraw: [
+        "A table of the postnatal contact schedule with who provides each contact and what is done.",
+        "A box listing the maternal danger signs and the newborn danger signs side by side.",
+      ],
+      markSplit: [
+        { part: "Definition and the first 48 hours", marks: 2 },
+        { part: "Schedule of contacts", marks: 1.5 },
+        { part: "Examination, danger signs and complications", marks: 2.5 },
+        { part: "Breastfeeding support", marks: 2 },
+        { part: "Newborn home care and contraception", marks: 2 },
+      ],
+      keywords: ["postnatal care", "HBNC", "puerperal sepsis", "postpartum depression", "breastfeeding", "attachment", "PPIUCD", "LAM"],
+    },
+    {
+      id: "obstetrics-postnatal-care-t2",
+      paper: "IV",
+      kind: "enumerate",
+      marks: 5,
+      minutes: 8,
+      frequency: "common",
+      question: "Enumerate the contraceptive options available to a breastfeeding woman in the postpartum period, stating when each may be started and one important caution for each.",
+      openingLines: [
+        "Postpartum contraception aims to achieve a birth-to-conception interval of at least 24 months; in the breastfeeding woman the method must not reduce milk supply or reach the infant in harmful amounts, and it must be in place before ovulation returns, which the lactational amenorrhoea method delays only while its criteria hold.",
+        "The WHO Medical Eligibility Criteria (2015) and the Indian Reference Manual for Postpartum Family Planning govern the timing below.",
+      ],
+      answer: [
+        {
+          heading: "Non-hormonal methods",
+          points: [
+            "Lactational amenorrhoea method: from birth to six months, 98% effective only while she is amenorrhoeic, feeding exclusively day and night, and the baby is under six months - caution: any supplementary feed, a period, or the sixth month ends it.",
+            "Postpartum IUCD (copper 380A): within 10 minutes of the placenta, at caesarean, or within 48 hours; otherwise after four to six weeks - caution: not between 48 hours and four to six weeks; expulsion 5-10% higher than interval insertion, so threads are checked at six weeks.",
+            "Female sterilisation by minilaparotomy: within seven days of delivery, at caesarean, or after six weeks - caution: permanent; the woman's own written consent, age 22-49, at least one living child.",
+            "Condoms: from the resumption of intercourse - caution: user-dependent, so pair with LAM and bridge to a long-acting method.",
+            "Centchroman (ormeloxifene, Chhaya) 30 mg: from delivery, twice weekly for three months then weekly - caution: delayed or prolonged cycles; no effect on lactation.",
+          ],
+        },
+        {
+          heading: "Progestogen-only methods",
+          points: [
+            "DMPA 150 mg IM every three months (Antara): from delivery in the Indian programme (WHO MEC category 2 before six weeks) - caution: delayed return of fertility for 6-12 months and irregular bleeding.",
+            "Progestogen-only pill: from delivery - caution: must be taken at the same time daily.",
+            "Etonogestrel implant: from delivery where available - caution: irregular bleeding; requires a trained provider for removal.",
+            "Levonorgestrel intrauterine system: within 48 hours or after four weeks - caution: cost and availability.",
+          ],
+        },
+        {
+          heading: "Combined hormonal methods and emergency contraception",
+          points: [
+            "Combined oral contraceptive: not before six weeks (MEC 4) and preferably not before six months (MEC 3) in the breastfeeding woman - caution: oestrogen reduces milk volume and raises thromboembolic risk in the early puerperium.",
+            "Emergency contraception with levonorgestrel 1.5 mg within 72 hours (up to 120 hours) or a copper IUCD within five days: any time - caution: not a regular method.",
+          ],
+        },
+      ],
+      markSplit: [
+        { part: "Non-hormonal methods with timing and caution", marks: 2.5 },
+        { part: "Progestogen-only methods", marks: 1.5 },
+        { part: "Combined methods and emergency contraception", marks: 1 },
+      ],
+      keywords: ["postpartum contraception", "LAM", "PPIUCD", "DMPA", "Chhaya", "WHO MEC", "birth spacing"],
+    },
+  ],
+  mcqs: [
+    {
+      id: "obstetrics-postnatal-care-q1",
+      stem: "Under the Home-Based Newborn Care scheme, on which days does the ASHA visit a mother and baby after an institutional delivery?",
+      options: [
+        "Days 1, 3, 7, 14, 21, 28 and 42",
+        "Days 3, 7, 14, 21, 28 and 42",
+        "Days 1, 2, 3 and 7",
+        "Days 7, 14, 28 and 42",
+        "Weekly for six weeks",
+      ],
+      answer: 1,
+      explanation:
+        "After an institutional delivery, where the first 48 hours are spent in the facility, the ASHA makes six HBNC visits on days 3, 7, 14, 21, 28 and 42; the day 1 visit is added only after a home delivery, making seven visits in that case, which is why the first option applies to home births and not to this question. The other schedules do not correspond to the programme, which was designed so that the visits cluster in the first week when most neonatal deaths occur and continue to the six-week postnatal check.",
+      difficulty: "easy",
+    },
+    {
+      id: "obstetrics-postnatal-care-q2",
+      stem: "A woman who delivered five weeks ago is exclusively breastfeeding, is amenorrhoeic and wants to rely on the lactational amenorrhoea method. Which of the following would end the protection of LAM?",
+      options: [
+        "The baby sleeping for four hours at night",
+        "Starting the baby on water and diluted cow's milk at three months",
+        "The mother returning to work but expressing milk every three hours",
+        "The mother developing mastitis and continuing to feed",
+        "The mother taking paracetamol for perineal pain",
+      ],
+      answer: 1,
+      explanation:
+        "LAM requires exclusive or nearly exclusive breastfeeding, amenorrhoea and an infant under six months; introducing water and cow's milk breaks exclusivity, reduces suckling, and allows ovulation to return, so protection ends. A single four-hour night interval is compatible with the method as long as feeding is otherwise frequent day and night. Expressing every three hours maintains near-exclusive lactation, and neither mastitis with continued feeding nor paracetamol affects the criteria. The method also ends at six months or with the first menstrual bleed.",
+      difficulty: "easy",
+    },
+    {
+      id: "obstetrics-postnatal-care-q3",
+      stem: "A breastfeeding mother four weeks after delivery asks for the combined oral contraceptive pill. According to the WHO Medical Eligibility Criteria, what category applies?",
+      options: [
+        "Category 1 - no restriction",
+        "Category 2 - advantages outweigh risks",
+        "Category 3 - risks usually outweigh advantages",
+        "Category 4 - unacceptable health risk",
+        "The pill may be used if she doubles the dose to maintain lactation",
+      ],
+      answer: 3,
+      explanation:
+        "Combined hormonal contraception is WHO MEC category 4 in the breastfeeding woman before six weeks postpartum because of the thromboembolic risk of the early puerperium and the effect of oestrogen on milk supply; it becomes category 3 from six weeks to six months and category 2 after six months. Categories 1 and 2 do not apply at four weeks, and category 3 applies only after six weeks. Doubling the dose is nonsensical and would worsen both risks. She should be offered a progestogen-only or non-hormonal method now.",
+      difficulty: "easy",
+    },
+    {
+      id: "obstetrics-postnatal-care-q4",
+      stem: "A woman three weeks postpartum has a red, hot, tender wedge of the right breast, fever of 38.8 degrees C and body ache. There is no fluctuant swelling. What is the most appropriate management?",
+      options: [
+        "Stop breastfeeding from the right breast and bind it firmly",
+        "Continue breastfeeding from both breasts, give flucloxacillin 500 mg 6-hourly for 10-14 days and an NSAID, review in 48 hours",
+        "Incision and drainage under general anaesthesia",
+        "Bromocriptine to suppress lactation",
+        "Topical antifungal cream and review in a week",
+      ],
+      answer: 1,
+      explanation:
+        "Lactational mastitis is treated by keeping the breast drained through continued feeding or expression from the affected side (the milk is safe for the baby), an anti-staphylococcal antibiotic such as flucloxacillin, dicloxacillin or cephalexin 500 mg 6-hourly for 10-14 days, analgesia, and review at 48 hours for a developing abscess. Stopping feeding and binding the breast causes stasis, worsens the infection and precipitates abscess formation. Incision is reserved for a fluctuant abscess, and even then ultrasound-guided aspiration is preferred. Bromocriptine is not indicated and has cardiovascular risks, and candida causes nipple pain without fever or a hot erythematous wedge.",
+      difficulty: "easy",
+    },
+    {
+      id: "obstetrics-postnatal-care-q5",
+      stem: "A woman is seen 12 days after delivery. She has not slept for three nights, is confused, believes the baby has been replaced by an evil spirit, and hears voices commanding her. What is the most appropriate action?",
+      options: [
+        "Reassure the family that postpartum blues resolve by two weeks",
+        "Start sertraline and review in two weeks",
+        "Admit the same day to a psychiatric facility, ideally with the baby under supervision, and do not leave her alone with the infant",
+        "Advise the family to arrange a religious ritual and review in a week",
+        "Give diazepam at night and continue breastfeeding at home",
+      ],
+      answer: 2,
+      explanation:
+        "Confusion, insomnia, delusions about the baby and command hallucinations in the first two weeks are postpartum psychosis, a psychiatric emergency with a real risk of suicide and infanticide, requiring same-day admission and continuous supervision of mother and baby; antipsychotic treatment and assessment for bipolar disorder follow. Blues never include psychotic features and are already past their usual window. Sertraline with a two-week review treats depression, not psychosis, and leaves her unsupervised. Deferring to a ritual delays care during the period of maximum danger, and a sedative at home addresses none of the risk.",
+      difficulty: "easy",
+    },
+    {
+      id: "obstetrics-postnatal-care-q6",
+      stem: "A woman who delivered vaginally 5 days ago requests an intrauterine device before she goes home to her village. What is the correct advice?",
+      options: [
+        "Insert a copper IUCD now, since she is within the first week",
+        "Insertion is deferred until 6 weeks because the risk of expulsion and perforation is higher between 48 hours and 4-6 weeks; offer an interim method",
+        "An IUCD is contraindicated in breastfeeding women",
+        "Insert the IUCD only after her first menstrual period",
+        "Give DMPA now and never insert an IUCD after a vaginal delivery",
+      ],
+      answer: 1,
+      explanation:
+        "The post-placental and immediate postpartum windows for IUCD insertion close at 48 hours; between 48 hours and four to six weeks the involuting uterus carries a higher risk of expulsion and perforation (WHO MEC category 3), so insertion is deferred to the six-week visit and a bridge method such as condoms, progestogen-only pill or DMPA is provided. Breastfeeding is not a contraindication to a copper IUCD - it is in fact an ideal method for the lactating woman. Waiting for menstruation is unnecessary and risks a pregnancy before the first period, and the IUCD is entirely appropriate after vaginal delivery once the window is right.",
+      difficulty: "moderate",
+    },
+  ],
+  cards: [
+    {
+      id: "obstetrics-postnatal-care-c1",
+      front: "HBNC visit schedule after institutional and home delivery.",
+      back: "Institutional: days 3, 7, 14, 21, 28 and 42 (six visits). Home delivery: day 1 added (seven visits). HBYC follows at 3, 6, 9, 12 and 15 months.",
+    },
+    {
+      id: "obstetrics-postnatal-care-c2",
+      front: "Definition of puerperal sepsis.",
+      back: "Temperature of 38 degrees C or more on any two of the first ten days after delivery, excluding the first 24 hours, usually with foul lochia and a tender uterus.",
+    },
+    {
+      id: "obstetrics-postnatal-care-c3",
+      front: "Four signs of good attachment at the breast.",
+      back: "Chin touching the breast, mouth wide open, lower lip turned outward, more areola visible above the upper lip than below.",
+    },
+    {
+      id: "obstetrics-postnatal-care-c4",
+      front: "How is adequacy of breastfeeding judged?",
+      back: "Six or more wet nappies a day after day 4, regaining birth weight by two weeks, and gaining at least 500 g a month in the first six months.",
+    },
+    {
+      id: "obstetrics-postnatal-care-c5",
+      front: "Treatment of lactational mastitis.",
+      back: "Continue feeding from the affected breast; flucloxacillin, dicloxacillin or cephalexin 500 mg every 6 hours for 10-14 days; NSAID; review at 48 hours; aspirate or drain if an abscess forms.",
+    },
+    {
+      id: "obstetrics-postnatal-care-c6",
+      front: "The three criteria of the lactational amenorrhoea method and its efficacy.",
+      back: "Amenorrhoea, exclusive or nearly exclusive breastfeeding day and night, infant under six months; 98% effective while all three hold.",
+    },
+    {
+      id: "obstetrics-postnatal-care-c7",
+      front: "Timing windows for PPIUCD insertion.",
+      back: "Within 10 minutes of placental delivery, during caesarean, or within 48 hours of birth; not between 48 hours and 4-6 weeks; interval insertion thereafter.",
+    },
+    {
+      id: "obstetrics-postnatal-care-c8",
+      front: "Blues, depression and psychosis after delivery: frequency, onset and key feature.",
+      back: "Blues 50-80%, day 3-5, resolve by 2 weeks. Depression 10-20%, EPDS 13 or more, sertraline if moderate or severe. Psychosis 1-2 per 1000, first 2 weeks, confusion and delusions - emergency admission.",
+    },
+    {
+      id: "obstetrics-postnatal-care-c9",
+      front: "Combined oral contraceptive in the postpartum period by WHO MEC.",
+      back: "Breastfeeding: category 4 before 6 weeks, 3 from 6 weeks to 6 months, 2 thereafter. Not breastfeeding: category 3 before 21 days (4 with VTE risk factors), then 2.",
+    },
+    {
+      id: "obstetrics-postnatal-care-c10",
+      front: "Dose schedule of centchroman (Chhaya) and DMPA (Antara).",
+      back: "Centchroman 30 mg twice weekly for 3 months then once weekly, non-hormonal, safe in lactation. DMPA 150 mg IM every 3 months, can start from delivery.",
+    },
+  ],
+  references: [
+    "Guidelines for Antenatal Care and Skilled Attendance at Birth by ANMs, LHVs and Staff Nurses - postnatal care section, MoHFW, Government of India",
+    "Home Based Newborn Care Operational Guidelines, MoHFW, revised 2014, and Home Based Care for Young Child guidelines, 2018",
+    "Reference Manual for Postpartum Family Planning, Family Planning Division, MoHFW, 2016",
+    "WHO Medical Eligibility Criteria for Contraceptive Use, 5th edition, 2015",
+    "WHO Recommendations on Maternal and Newborn Care for a Positive Postnatal Experience, 2022",
+    "Mothers' Absolute Affection (MAA) Programme operational guidelines, MoHFW, 2016; Infant Milk Substitutes, Feeding Bottles and Infant Foods Act 1992, amended 2003",
+    "Williams Obstetrics, 26th edition, 2022 - the puerperium and contraception",
+    "DC Dutta's Textbook of Obstetrics, 9th edition, 2018 - normal and abnormal puerperium",
+  ],
+});

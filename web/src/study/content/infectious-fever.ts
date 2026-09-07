@@ -1926,3 +1926,1488 @@ topics.push({
     "API Textbook of Medicine, 11th edition, 2019 - enteric fever",
   ],
 });
+
+topics.push({
+  id: "infectious-fever-scrub-typhus",
+  title: "Scrub typhus and the rickettsial fevers",
+  oneLiner:
+    "Scrub typhus is an acute febrile illness caused by Orientia tsutsugamushi, transmitted by the bite of larval trombiculid mites (chiggers), recognised by an eschar with leucocytosis, thrombocytopenia and raised transaminases, and cured by doxycycline within 48 hours if it is thought of.",
+  frequency: "common",
+  keywords: [
+    "scrub typhus",
+    "Orientia tsutsugamushi",
+    "eschar",
+    "chigger",
+    "Leptotrombidium",
+    "rickettsia",
+    "Weil-Felix",
+    "OX-K",
+    "spotted fever",
+    "Indian tick typhus",
+    "murine typhus",
+    "doxycycline",
+    "azithromycin",
+    "INTREST trial",
+    "DHR-ICMR guidelines",
+    "ARDS",
+    "meningoencephalitis",
+  ],
+  sections: [
+    {
+      heading: "Organism, vector and epidemiology",
+      points: [
+        "**Orientia tsutsugamushi is an obligate intracellular gram-negative bacterium**, separated from the genus Rickettsia in 1995, with several antigenic strains (Karp, Kato, Gilliam) that explain why one infection gives little protection against the next.",
+        "It is transmitted by the **bite of the larval stage (chigger) of trombiculid mites, principally Leptotrombidium deliense in India**; the mite is both vector and reservoir because the organism passes transovarially, and rodents are only maintenance hosts. The chigger is 0.2 mm, feeds once, and the bite is painless and usually unnoticed.",
+        "The disease occurs across the **tsutsugamushi triangle** from Japan and Korea through south-east Asia to India, Pakistan and northern Australia; within India it is reported from Tamil Nadu, Puducherry, Kerala, Karnataka, Himachal Pradesh, Uttarakhand, Sikkim, Meghalaya, Rajasthan and Maharashtra, and is now the commonest identified cause of acute undifferentiated fever in several tertiary series.",
+        "Transmission peaks in the **cooler months after the monsoon, from August to January**, and follows exposure to scrub vegetation, grassland, plantations, paddy fields and the edges of forests; farmers, plantation workers, soldiers and children who play in long grass are at highest risk.",
+        "Incubation is **6-21 days, usually about 10 days**, which is why a history of a picnic, harvest or forest trek two weeks earlier matters more than exposure in the last few days.",
+        "Reporting is through the **Integrated Disease Surveillance Programme (IDSP)**; scrub typhus is not a vector-borne disease under the NVBDCP and there is no separate national control programme, so recognition and treatment rest entirely on the clinician.",
+      ],
+    },
+    {
+      heading: "Clinical features and the eschar",
+      points: [
+        "The illness begins abruptly with **high fever, severe headache, myalgia, conjunctival injection and generalised lymphadenopathy**, often with cough, abdominal pain, vomiting and loose stools that misdirect the clinician towards a respiratory or gastrointestinal diagnosis.",
+        "**The eschar is the pathognomonic sign**: a painless 5-20 mm black necrotic crust with an erythematous halo at the site of the chigger bite, most often in the axilla, groin, genitalia, perineum, under the breast, on the neck or behind the ear, and typically with tender regional lymph nodes. It is found in 10-50% of Indian series, and the rate is higher the more carefully the patient is undressed and examined.",
+        "A maculopapular rash on the trunk spreading to the limbs appears in a minority of Indian patients around day 5-7 and is less prominent than in the spotted fevers; **hepatosplenomegaly** is present in a third to a half.",
+        "The laboratory pattern is a **normal or raised leucocyte count with neutrophilia, thrombocytopenia, transaminases raised two to five times with a disproportionately raised alkaline phosphatase, hypoalbuminaemia and hyponatraemia**; this combination in a febrile patient with a negative malaria test should prompt a search for the eschar and an empirical dose of doxycycline.",
+        "Differentials are dengue (leucopenia rather than leucocytosis, no eschar), leptospirosis (calf tenderness, jaundice out of proportion, same neutrophilia), enteric fever (relative bradycardia, blood culture), malaria (smear), and in the patient with fever and lymphadenopathy, infectious mononucleosis, HIV seroconversion and lymphoma.",
+        "**Defervescence within 48 hours of doxycycline is itself diagnostic**; fever that persists beyond 72 hours on adequate doxycycline should make the clinician doubt the diagnosis, suspect a complication, or consider a second infection.",
+      ],
+    },
+    {
+      heading: "Complications and severity",
+      points: [
+        "Complications appear in **10-30% of untreated or late-treated patients, usually in the second week**, and are caused by disseminated vasculitis of small vessels affecting lung, brain, kidney, heart and liver.",
+        "**Acute respiratory distress syndrome and interstitial pneumonitis are the leading cause of death**; breathlessness, bilateral crepitations and a falling saturation in a patient with scrub typhus need oxygen, referral and intravenous therapy the same day.",
+        "**Meningoencephalitis** presents with headache, altered sensorium, neck stiffness and seizures; the cerebrospinal fluid shows a lymphocytic pleocytosis with mildly raised protein and normal or slightly low glucose, so it is mistaken for tuberculous or viral meningitis unless an eschar is found or the transaminases are noticed.",
+        "**Acute kidney injury** from pre-renal loss, tubular injury and vasculitis, **myocarditis** with arrhythmia and hypotension, **hepatitis**, disseminated intravascular coagulation, haemophagocytic lymphohistiocytosis and multi-organ dysfunction complete the list; in pregnancy scrub typhus causes miscarriage, preterm delivery and stillbirth.",
+        "Untreated mortality is **6-35% depending on strain and delay; with early doxycycline it is under 2%**, which makes the time from first visit to first dose the single measure that decides outcome.",
+        "Markers of severity that mandate admission are hypotension, hypoxia, altered sensorium, oliguria or creatinine above 2 mg/dL, jaundice, bleeding, platelets below 50,000 per cubic millimetre, and any patient who cannot take oral medication.",
+      ],
+    },
+    {
+      heading: "Diagnosis",
+      points: [
+        "**The diagnosis is clinical and treatment must not wait for serology**; the DHR-ICMR guidelines define a probable case as acute fever with an eschar or with suggestive features in an endemic area, and a confirmed case by IgM ELISA, IFA or PCR.",
+        "**IgM ELISA on serum from day 5-7 onwards is the recommended test in India**, with an optical density cut-off of about 0.5 used by most laboratories; it is positive in 85-90% by the second week, and a fourfold rise in paired sera is confirmatory. It cannot distinguish recent past infection in a highly endemic area.",
+        "**Indirect immunofluorescence assay (IFA) is the reference standard** but needs a fluorescence microscope and trained staff and is available only at reference laboratories.",
+        "**Polymerase chain reaction for the 56 kDa type-specific antigen gene** on blood, buffy coat or, best of all, a swab or biopsy of the eschar is positive in the first week before antibodies appear, and is the test of choice in the early or doxycycline-pretreated patient where available.",
+        "**The Weil-Felix test** exploits cross-reacting Proteus antigens: OX-K agglutination at a titre of 1 in 80 or higher suggests scrub typhus, OX-2 and OX-19 the spotted fever group, and OX-19 the typhus group. It is cheap and widely available but has a sensitivity of only 30-50% and poor specificity, so a negative result never excludes the disease and a positive one should be confirmed.",
+        "Supporting investigations: complete blood count, liver and renal function, electrolytes for hyponatraemia, chest radiograph for interstitial infiltrates or effusion, and lumbar puncture, ECG and echocardiography as the clinical picture demands; always run a malaria test and dengue serology alongside because co-infections occur.",
+      ],
+    },
+    {
+      heading: "Treatment: the DHR-ICMR regimens",
+      points: [
+        "**Doxycycline 100 mg orally twice daily for 7 days is the treatment of choice in adults**; it is cheap, safe and produces defervescence within 24-48 hours. In children the dose is 4.5 mg/kg/day in two divided doses, and short courses under 21 days do not stain teeth, so doxycycline is permitted in children by both the DHR-ICMR guidelines and the American Academy of Pediatrics.",
+        "**Azithromycin 500 mg once daily for 5 days is the alternative for pregnant women** and for those intolerant of tetracyclines; the paediatric dose is 10 mg/kg/day for 5 days. Chloramphenicol 500 mg four times daily for 7 days is a third option where neither is available.",
+        "**Severe scrub typhus is treated with intravenous doxycycline 100 mg twice daily or intravenous azithromycin 500 mg daily until the patient can swallow**, then oral therapy to complete 7 days; the **INTREST trial from Vellore (NEJM 2023) showed that the combination of intravenous doxycycline plus azithromycin for 7 days was superior to either drug alone in severe disease**, and combination therapy is now widely used in the intensive care setting.",
+        "Supportive care is what saves the complicated patient: oxygen and early ventilation for ARDS, cautious crystalloids with vasopressors for shock, dialysis for acute kidney injury, control of seizures, and correction of hyponatraemia; steroids have no proven role except possibly in haemophagocytosis.",
+        "**Empirical doxycycline is justified in any acute undifferentiated fever in an endemic area with neutrophilia, thrombocytopenia and raised transaminases** while serology is awaited, because it also treats leptospirosis and the spotted fevers, and the cost of a missed case is far greater than the cost of a week of doxycycline.",
+        "Doxycycline counselling: take with a full glass of water and food, do not lie down for 30 minutes, avoid antacids, iron and milk within two hours of the dose, and use sun protection; rifampicin is reserved for the rare doxycycline-unresponsive strain reported from Thailand and is not first line in India.",
+      ],
+    },
+    {
+      heading: "Other rickettsial fevers and prevention",
+      points: [
+        "**Indian tick typhus (Rickettsia conorii subspecies indica)** belongs to the spotted fever group, is transmitted by dog and cattle ticks, and produces fever with a maculopapular or petechial **rash that involves the palms and soles**, sometimes with a tache noire at the bite site; it is reported from Himachal Pradesh, Jammu, Maharashtra, Karnataka and Tamil Nadu and responds to doxycycline.",
+        "**Murine (endemic) typhus (Rickettsia typhi)** is transmitted by the rat flea and causes a milder fever with headache and rash, reported from Tamil Nadu, Karnataka and Kashmir; **epidemic typhus (Rickettsia prowazekii)** is louse-borne, follows overcrowding and war, and can recrudesce decades later as Brill-Zinsser disease.",
+        "The Weil-Felix pattern helps group them: OX-K for scrub typhus, OX-2 with OX-19 for spotted fevers, and OX-19 alone for the typhus group; doxycycline is the treatment for every one of them, with azithromycin as the alternative in pregnancy.",
+        "**There is no vaccine for scrub typhus.** Prevention is personal protection: long sleeves and trousers tucked into socks, permethrin-treated clothing, DEET repellent on exposed skin, avoiding sitting or lying on grass, bathing and changing clothes after field work, and clearing scrub vegetation and rodent harbourage around houses.",
+        "**Chemoprophylaxis with doxycycline 200 mg orally once weekly**, started before entering a high-risk area and continued for up to 6 weeks after leaving, prevents disease in soldiers and expedition workers and is reserved for short intense exposures rather than for endemic residents.",
+        "Notify cases through IDSP, alert the district surveillance officer to a cluster, and use the diagnosis in one patient to lower the threshold for empirical doxycycline in the next febrile patient from the same village.",
+      ],
+    },
+  ],
+  tables: [
+    {
+      heading: "Rickettsial diseases seen in India",
+      columns: ["Disease", "Organism", "Vector", "Clinical clue", "Weil-Felix pattern"],
+      rows: [
+        ["Scrub typhus", "Orientia tsutsugamushi", "Larval trombiculid mite (chigger)", "Eschar in axilla or groin, lymphadenopathy, ARDS", "OX-K"],
+        ["Indian tick typhus", "Rickettsia conorii subsp. indica", "Ixodid tick (dog, cattle)", "Rash on palms and soles, tache noire", "OX-2 and OX-19"],
+        ["Murine typhus", "Rickettsia typhi", "Rat flea (Xenopsylla cheopis)", "Milder fever, rash, urban rat contact", "OX-19"],
+        ["Epidemic typhus", "Rickettsia prowazekii", "Human body louse", "Overcrowding, severe illness, Brill-Zinsser recrudescence", "OX-19"],
+      ],
+    },
+    {
+      heading: "DHR-ICMR treatment regimens for scrub typhus",
+      columns: ["Patient group", "First choice", "Alternative", "Duration"],
+      rows: [
+        ["Adult, uncomplicated", "Doxycycline 100 mg PO twice daily", "Azithromycin 500 mg PO once daily for 5 days", "7 days"],
+        ["Child, uncomplicated", "Doxycycline 4.5 mg/kg/day in two divided doses", "Azithromycin 10 mg/kg/day for 5 days", "7 days"],
+        ["Pregnancy", "Azithromycin 500 mg PO once daily", "Doxycycline only if azithromycin unavailable", "5 days"],
+        ["Severe or unable to swallow", "IV doxycycline 100 mg twice daily plus IV azithromycin 500 mg daily (INTREST)", "IV doxycycline or IV azithromycin alone; chloramphenicol", "7 days total, switch to oral when able"],
+      ],
+    },
+  ],
+  redFlags: [
+    "Breathlessness, respiratory rate above 24 per minute, bilateral crepitations or saturation below 94% - evolving ARDS, admit for oxygen and intravenous therapy.",
+    "Altered sensorium, seizures or neck stiffness - meningoencephalitis, needs lumbar puncture after imaging and intravenous doxycycline.",
+    "Systolic BP below 90 mmHg or cold peripheries - vasculitic shock or myocarditis; fluids, vasopressors and ECG.",
+    "Oliguria or creatinine above 2 mg/dL - acute kidney injury that may need dialysis.",
+    "Jaundice, bleeding, platelets below 50,000 per cubic millimetre or a rising ferritin - hepatitis, DIC or haemophagocytosis.",
+    "Fever persisting beyond 72 hours on doxycycline - wrong diagnosis, co-infection or a complication; re-evaluate rather than continue.",
+  ],
+  pearls: [
+    "Fever with neutrophil leucocytosis, thrombocytopenia and transaminases in the hundreds in an endemic area is scrub typhus until proved otherwise - give doxycycline and then send the serology.",
+    "The eschar is painless, so the patient never mentions it; you find it only by undressing the patient and looking in the axilla, groin, perineum and under the breast.",
+    "Doxycycline defervescence within 48 hours is a therapeutic test; a fever that ignores doxycycline is not scrub typhus.",
+    "Weil-Felix OX-K 1 in 80 supports the diagnosis but a negative test excludes nothing - sensitivity is 30-50%.",
+    "Short courses of doxycycline are safe in children; azithromycin is the drug for pregnancy.",
+    "Severe scrub typhus in intensive care is treated with intravenous doxycycline plus azithromycin - the INTREST trial from Vellore.",
+    "One drug, doxycycline, treats scrub typhus, spotted fever, murine typhus and leptospirosis - which is why it is the empirical drug of Indian tropical fever.",
+  ],
+  theory: [
+    {
+      id: "infectious-fever-scrub-typhus-t1",
+      paper: "II",
+      kind: "long",
+      marks: 10,
+      minutes: 20,
+      frequency: "common",
+      question:
+        "A 40-year-old woman from a plantation area presents in October with fever, headache and myalgia for 7 days and a black crusted lesion in the groin. Discuss the aetiology, clinical features, complications, diagnosis and management of scrub typhus.",
+      openingLines: [
+        "Scrub typhus is an acute febrile illness caused by Orientia tsutsugamushi, an obligate intracellular bacterium transmitted by the bite of the larval trombiculid mite, and is now the commonest identified cause of acute undifferentiated fever in many parts of India.",
+        "The painless eschar at the bite site, the combination of leucocytosis, thrombocytopenia and raised transaminases, and defervescence within 48 hours of doxycycline are the three features that make the diagnosis.",
+      ],
+      answer: [
+        {
+          heading: "1. Aetiology and epidemiology",
+          points: [
+            "Orientia tsutsugamushi, with antigenic strains Karp, Kato and Gilliam; chigger of Leptotrombidium deliense is vector and reservoir with transovarial transmission, rodents are maintenance hosts.",
+            "Post-monsoon and winter transmission, August to January; exposure to scrub, grassland, plantations and paddy; incubation 6-21 days.",
+            "Endemic in Tamil Nadu, Kerala, Karnataka, Himachal Pradesh, Uttarakhand, the North-East, Rajasthan and Maharashtra; reported through IDSP.",
+          ],
+        },
+        {
+          heading: "2. Clinical features",
+          points: [
+            "Abrupt fever, severe headache, myalgia, conjunctival injection, generalised lymphadenopathy, cough, abdominal pain and vomiting; hepatosplenomegaly in a third to a half.",
+            "Eschar: painless black necrotic crust with erythematous halo in axilla, groin, perineum, under the breast or behind the ear, with tender regional nodes; found in 10-50% when searched for.",
+            "Maculopapular truncal rash in a minority around day 5-7.",
+            "Laboratory pattern: neutrophil leucocytosis, thrombocytopenia, transaminases two to five times normal, raised alkaline phosphatase, hypoalbuminaemia, hyponatraemia.",
+          ],
+        },
+        {
+          heading: "3. Complications",
+          points: [
+            "Second-week vasculitic complications in 10-30% of untreated patients: ARDS and pneumonitis (leading cause of death), meningoencephalitis with lymphocytic CSF, acute kidney injury, myocarditis, hepatitis, DIC, haemophagocytosis and multi-organ failure.",
+            "Pregnancy loss, preterm birth and stillbirth; untreated mortality 6-35%, under 2% with early treatment.",
+          ],
+        },
+        {
+          heading: "4. Diagnosis",
+          points: [
+            "Clinical diagnosis with immediate treatment; probable case per DHR-ICMR is fever with eschar or suggestive features in an endemic area.",
+            "IgM ELISA from day 5-7 (recommended test in India); IFA reference standard; PCR for the 56 kDa gene on blood or eschar in the first week.",
+            "Weil-Felix OX-K 1 in 80 or more is supportive but insensitive; malaria test and dengue serology in parallel; chest radiograph, liver and renal function, electrolytes.",
+          ],
+        },
+        {
+          heading: "5. Management",
+          points: [
+            "Doxycycline 100 mg twice daily for 7 days (children 4.5 mg/kg/day in two divided doses); azithromycin 500 mg daily for 5 days in pregnancy; chloramphenicol as third option.",
+            "Severe disease: intravenous doxycycline plus intravenous azithromycin for 7 days (INTREST trial), oxygen, ventilation, cautious fluids, vasopressors, dialysis as needed.",
+            "Expect defervescence in 48 hours; re-evaluate if fever persists beyond 72 hours.",
+            "Prevention: protective clothing, permethrin, DEET, avoiding grass, weekly doxycycline 200 mg chemoprophylaxis for short high-risk exposures; no vaccine; notify through IDSP.",
+          ],
+        },
+      ],
+      mustDraw: [
+        "A labelled sketch of an eschar with its erythematous halo and the sites to search (axilla, groin, perineum, under breast, behind ear).",
+        "A table of treatment regimens by patient group: adult, child, pregnancy, severe disease.",
+      ],
+      markSplit: [
+        { part: "Aetiology, vector and epidemiology", marks: 2 },
+        { part: "Clinical features including eschar and laboratory pattern", marks: 2.5 },
+        { part: "Complications", marks: 1.5 },
+        { part: "Diagnosis", marks: 2 },
+        { part: "Treatment and prevention", marks: 2 },
+      ],
+      keywords: ["scrub typhus", "eschar", "Orientia tsutsugamushi", "doxycycline", "IgM ELISA", "INTREST"],
+    },
+    {
+      id: "infectious-fever-scrub-typhus-t2",
+      paper: "II",
+      kind: "short-note",
+      marks: 5,
+      minutes: 10,
+      frequency: "common",
+      question: "Write a short note on the Weil-Felix test and the laboratory diagnosis of rickettsial infections.",
+      openingLines: [
+        "The Weil-Felix test is a heterophile agglutination test that detects antibodies against rickettsiae by their cross-reaction with the O antigens of Proteus vulgaris OX-19 and OX-2 and Proteus mirabilis OX-K.",
+        "It is cheap and widely available in India but has low sensitivity and specificity, so it supports rather than makes the diagnosis, and treatment should never wait for it.",
+      ],
+      answer: [
+        {
+          heading: "Principle and interpretation",
+          points: [
+            "Serum is tested for agglutination of the three Proteus strains; a single titre of 1 in 80 or more, or a fourfold rise in paired sera 7-10 days apart, is considered significant.",
+            "OX-K agglutination suggests scrub typhus; OX-2 and OX-19 suggest the spotted fever group (Indian tick typhus); OX-19 alone suggests the typhus group (epidemic and murine typhus).",
+            "Antibodies appear at the end of the first week, so the test is negative early; false positives occur in Proteus urinary infection, leptospirosis, brucellosis and liver disease.",
+          ],
+        },
+        {
+          heading: "Limitations",
+          points: [
+            "Sensitivity 30-50% and specificity poor; a negative test never excludes rickettsial disease, and a positive one should be confirmed by a specific test where possible.",
+            "Rickettsialpox and Q fever do not produce Weil-Felix agglutinins at all.",
+          ],
+        },
+        {
+          heading: "Better tests",
+          points: [
+            "IgM ELISA from day 5-7 is the recommended test in India for scrub typhus and spotted fever; indirect immunofluorescence is the reference standard; PCR on blood or eschar detects infection in the first week.",
+            "Supportive haematology: neutrophil leucocytosis, thrombocytopenia, raised transaminases and alkaline phosphatase, hyponatraemia.",
+            "Therapeutic test: defervescence within 48 hours of doxycycline is the most useful confirmation in a district hospital.",
+          ],
+        },
+      ],
+      mustDraw: ["A table of Weil-Felix agglutination patterns (OX-K, OX-2, OX-19) against scrub typhus, spotted fever group and typhus group."],
+      markSplit: [
+        { part: "Principle and interpretation with titres", marks: 2 },
+        { part: "Limitations", marks: 1 },
+        { part: "Specific tests and therapeutic test", marks: 2 },
+      ],
+      keywords: ["Weil-Felix", "OX-K", "OX-19", "IgM ELISA", "IFA", "rickettsia"],
+    },
+  ],
+  mcqs: [
+    {
+      id: "infectious-fever-scrub-typhus-q1",
+      stem: "A 28-year-old woman at 24 weeks of gestation from Himachal Pradesh has fever for 6 days with headache and a 1 cm painless black crusted lesion with a red rim under the left breast. Platelets are 90,000 per cubic millimetre and ALT is 180 U/L. Which is the most appropriate treatment?",
+      options: [
+        "Doxycycline 100 mg twice daily for 7 days",
+        "Azithromycin 500 mg once daily for 5 days",
+        "Ceftriaxone 2 g intravenously once daily for 7 days",
+        "Chloroquine 25 mg/kg over 3 days",
+        "Ciprofloxacin 500 mg twice daily for 7 days",
+      ],
+      answer: 1,
+      explanation:
+        "This is scrub typhus with an eschar in a pregnant woman, and azithromycin 500 mg daily for 5 days is the DHR-ICMR recommended regimen in pregnancy. Doxycycline is the drug of choice outside pregnancy but is avoided in the second and third trimesters because of fetal bone and tooth effects. Ceftriaxone has no activity against Orientia and is the commonest wrong reflex. Chloroquine treats vivax malaria, which does not produce an eschar, and ciprofloxacin is both unreliable against Orientia and avoided in pregnancy.",
+      difficulty: "easy",
+    },
+    {
+      id: "infectious-fever-scrub-typhus-q2",
+      stem: "A 35-year-old farmer from Tamil Nadu presents on day 4 of fever with headache, myalgia and tender inguinal nodes. No eschar is seen. Total leucocyte count is 13,500 with 80% neutrophils, platelets 110,000, ALT 160 U/L. Malaria rapid test and dengue NS1 are negative. Which is the most appropriate next step?",
+      options: [
+        "Send scrub typhus IgM ELISA and wait for the result before treating",
+        "Send a Weil-Felix test and treat only if OX-K is 1 in 80 or more",
+        "Start doxycycline 100 mg twice daily now and send IgM ELISA on day 5-7",
+        "Start cefixime 200 mg twice daily for 7 days",
+        "Start artesunate because the malaria test may be falsely negative",
+      ],
+      answer: 2,
+      explanation:
+        "Fever with neutrophil leucocytosis, thrombocytopenia and raised transaminases in an endemic area with negative malaria and dengue tests is scrub typhus or leptospirosis until proved otherwise, and both are treated by doxycycline, so empirical doxycycline is started now while serology is sent at the appropriate time. IgM ELISA on day 4 is likely to be falsely negative and waiting delays a drug that changes mortality. The Weil-Felix test is too insensitive to gate treatment. Cefixime treats neither organism, and artesunate without any evidence of malaria is unjustified.",
+      difficulty: "moderate",
+    },
+    {
+      id: "infectious-fever-scrub-typhus-q3",
+      stem: "A 50-year-old man with scrub typhus confirmed by IgM ELISA has been on oral doxycycline for 2 days. He now has a respiratory rate of 32 per minute, saturation 86% on room air, BP 84/50 mmHg, and bilateral infiltrates on chest radiograph. Which is the most appropriate antimicrobial plan?",
+      options: [
+        "Continue oral doxycycline and add oxygen",
+        "Change to oral azithromycin 500 mg daily",
+        "Intravenous doxycycline plus intravenous azithromycin for 7 days with intensive care support",
+        "Intravenous meropenem and vancomycin",
+        "Add rifampicin 600 mg daily to oral doxycycline",
+      ],
+      answer: 2,
+      explanation:
+        "This patient has severe scrub typhus with ARDS and shock, and the INTREST trial showed that intravenous doxycycline combined with intravenous azithromycin for 7 days produced better outcomes than either drug alone in severe disease; intensive care support with oxygen, ventilation and vasopressors runs in parallel. Continuing oral therapy in a shocked patient with poor absorption is inadequate, and switching to oral azithromycin alone is a step down. Meropenem and vancomycin treat no rickettsia. Rifampicin is reserved for doxycycline-resistant strains from Thailand and is not indicated here.",
+      difficulty: "moderate",
+    },
+    {
+      id: "infectious-fever-scrub-typhus-q4",
+      stem: "A 7-year-old boy has fever for 5 days, lymphadenopathy and an eschar on the neck. His father is worried about tooth staining if doxycycline is given. Which statement is correct?",
+      options: [
+        "Doxycycline is absolutely contraindicated under 8 years and azithromycin must be used",
+        "Doxycycline 4.5 mg/kg/day in two divided doses for 7 days is recommended and short courses do not stain teeth",
+        "Chloramphenicol is the drug of choice in children",
+        "No treatment is needed because scrub typhus is self-limiting in children",
+        "Ciprofloxacin 10 mg/kg twice daily is the preferred paediatric drug",
+      ],
+      answer: 1,
+      explanation:
+        "The DHR-ICMR guidelines recommend doxycycline 4.5 mg/kg/day in two divided doses for 7 days in children with scrub typhus, and the American Academy of Pediatrics states that courses under 21 days do not cause dental staining, so the old absolute contraindication under 8 years no longer applies. Azithromycin 10 mg/kg/day for 5 days is an acceptable alternative but not mandatory. Chloramphenicol is a third-line option with marrow toxicity. Untreated scrub typhus carries significant mortality in children, and fluoroquinolones are unreliable against Orientia.",
+      difficulty: "moderate",
+    },
+    {
+      id: "infectious-fever-scrub-typhus-q5",
+      stem: "A 45-year-old man from Karnataka has fever for 5 days with a maculopapular rash that involves the palms and soles, a small black lesion on the leg where a tick was removed, and a dog at home. Weil-Felix shows OX-2 1 in 160 and OX-19 1 in 160 with OX-K negative. Which is the most likely diagnosis?",
+      options: [
+        "Scrub typhus",
+        "Indian tick typhus (spotted fever group)",
+        "Murine typhus",
+        "Secondary syphilis",
+        "Dengue fever",
+      ],
+      answer: 1,
+      explanation:
+        "A tick exposure, a rash involving the palms and soles and Weil-Felix agglutination of OX-2 and OX-19 with negative OX-K is the pattern of the spotted fever group, in India most often Indian tick typhus caused by Rickettsia conorii subspecies indica. Scrub typhus would agglutinate OX-K and its rash spares the palms and soles. Murine typhus agglutinates OX-19 alone and follows rat flea exposure. Secondary syphilis also involves palms and soles but is afebrile or mildly febrile and has no tick eschar. Dengue rash does not favour palms and soles and does not produce Weil-Felix agglutinins.",
+      difficulty: "moderate",
+    },
+  ],
+  cards: [
+    {
+      id: "infectious-fever-scrub-typhus-c1",
+      front: "Organism, vector and reservoir of scrub typhus.",
+      back: "Orientia tsutsugamushi; larval trombiculid mite (chigger) of Leptotrombidium deliense, which is both vector and reservoir via transovarial transmission. Rodents are maintenance hosts.",
+    },
+    {
+      id: "infectious-fever-scrub-typhus-c2",
+      front: "Describe the eschar and where to look.",
+      back: "Painless 5-20 mm black necrotic crust with an erythematous halo and tender regional nodes. Look in axilla, groin, perineum, genitalia, under the breast, neck and behind the ear.",
+    },
+    {
+      id: "infectious-fever-scrub-typhus-c3",
+      front: "Laboratory pattern that suggests scrub typhus over dengue.",
+      back: "Neutrophil leucocytosis (dengue has leucopenia), thrombocytopenia, transaminases 2-5 times normal, raised alkaline phosphatase, hyponatraemia, hypoalbuminaemia.",
+    },
+    {
+      id: "infectious-fever-scrub-typhus-c4",
+      front: "Weil-Felix patterns for scrub typhus, spotted fever group and typhus group.",
+      back: "OX-K: scrub typhus. OX-2 plus OX-19: spotted fever group. OX-19 alone: typhus group. Significant titre 1 in 80; sensitivity only 30-50%.",
+    },
+    {
+      id: "infectious-fever-scrub-typhus-c5",
+      front: "Treatment of scrub typhus in an adult, a child and a pregnant woman.",
+      back: "Adult: doxycycline 100 mg BD 7 days. Child: doxycycline 4.5 mg/kg/day in two divided doses 7 days (or azithromycin 10 mg/kg/day 5 days). Pregnancy: azithromycin 500 mg OD 5 days.",
+    },
+    {
+      id: "infectious-fever-scrub-typhus-c6",
+      front: "Treatment of severe scrub typhus and the trial behind it.",
+      back: "Intravenous doxycycline 100 mg BD plus intravenous azithromycin 500 mg OD for 7 days - INTREST trial, Vellore, NEJM 2023 - with oxygen, ventilation and organ support.",
+    },
+    {
+      id: "infectious-fever-scrub-typhus-c7",
+      front: "Leading cause of death in scrub typhus and the timing.",
+      back: "ARDS and interstitial pneumonitis, appearing in the second week of untreated illness; untreated mortality 6-35%, under 2% with early doxycycline.",
+    },
+    {
+      id: "infectious-fever-scrub-typhus-c8",
+      front: "Chemoprophylaxis and vaccine for scrub typhus.",
+      back: "Doxycycline 200 mg once weekly before, during and up to 6 weeks after a short high-risk exposure. There is no vaccine; prevention is protective clothing, permethrin and DEET.",
+    },
+  ],
+  references: [
+    "DHR-ICMR Guidelines for Diagnosis and Management of Rickettsial Diseases in India, 2015",
+    "Varghese GM et al., Intravenous Doxycycline, Azithromycin, or Both for Severe Scrub Typhus (INTREST trial), New England Journal of Medicine, 2023",
+    "ICMR Treatment Guidelines for Antimicrobial Use in Common Syndromes, 3rd edition, 2022 - rickettsial infections",
+    "Integrated Disease Surveillance Programme, NCDC, MoHFW - reporting of scrub typhus",
+    "Harrison's Principles of Internal Medicine, 21st edition, 2022 - rickettsial diseases",
+  ],
+});
+
+topics.push({
+  id: "infectious-fever-urinary-tract-infection",
+  title: "Urinary tract infection: cystitis, pyelonephritis and the special groups",
+  oneLiner:
+    "Urinary tract infection is symptomatic bacterial invasion of the urinary tract, classified as uncomplicated cystitis in the healthy non-pregnant woman and complicated in everyone else, and in India it is treated with nitrofurantoin or fosfomycin rather than a fluoroquinolone because Escherichia coli resistance exceeds 70%.",
+  frequency: "common",
+  keywords: [
+    "UTI",
+    "cystitis",
+    "pyelonephritis",
+    "dysuria",
+    "nitrofurantoin",
+    "fosfomycin",
+    "ESBL",
+    "E. coli",
+    "asymptomatic bacteriuria",
+    "UTI in pregnancy",
+    "recurrent UTI",
+    "catheter-associated UTI",
+    "sterile pyuria",
+    "urine culture",
+    "dipstick nitrite",
+    "vesicoureteric reflux",
+    "emphysematous pyelonephritis",
+  ],
+  sections: [
+    {
+      heading: "Definitions, classification and organisms",
+      points: [
+        "**Uncomplicated UTI is acute cystitis or pyelonephritis in a non-pregnant, pre-menopausal woman with a structurally and functionally normal urinary tract and no comorbidity**; every other UTI - in men, children, pregnant women, diabetics, the catheterised, the immunosuppressed, the transplanted, or in the presence of stones, obstruction, reflux or a neurogenic bladder - is complicated, because the risk of treatment failure, resistant organisms and renal damage is higher.",
+        "**Asymptomatic bacteriuria** is 100,000 colony-forming units per mL of a single organism in two consecutive midstream samples in a woman, or one sample in a man, without symptoms; it is common in the elderly, diabetics and the catheterised and **is treated only in pregnancy and before urological procedures that breach the mucosa** (IDSA 2019).",
+        "**Recurrent UTI is two or more episodes in 6 months or three or more in 12 months**; relapse is recurrence with the same organism within 2 weeks of finishing treatment and suggests a persistent focus, whereas reinfection is a new organism after an interval and reflects host susceptibility.",
+        "**Escherichia coli causes 70-80% of community infections**, followed by Klebsiella, Proteus (urease-producing, alkaline urine, struvite stones), Enterococcus, Staphylococcus saprophyticus in sexually active young women, and Pseudomonas and Candida in the catheterised or hospitalised.",
+        "**Extended-spectrum beta-lactamase production is present in over 60% of E. coli isolates from Indian centres** in ICMR surveillance, and fluoroquinolone resistance exceeds 70%, which means that ciprofloxacin, cefixime and cotrimoxazole are unreliable empirical choices in India even for a simple cystitis.",
+        "Women are affected far more often because of the short urethra and its proximity to the anus; sexual intercourse, spermicide use, a new partner, post-menopausal oestrogen loss, incomplete emptying and constipation are the principal modifiable risk factors.",
+      ],
+    },
+    {
+      heading: "Clinical features: cystitis, pyelonephritis and the mimics",
+      points: [
+        "**Cystitis** presents with dysuria, frequency, urgency, suprapubic pain and sometimes haematuria, with no fever or only a low-grade one; in a woman with dysuria and frequency but without vaginal discharge or irritation the probability of UTI is over 90% and treatment is empirical.",
+        "**Acute pyelonephritis** adds fever with rigors, flank pain, renal angle tenderness, nausea and vomiting, and may present with sepsis; in the elderly it can present as confusion or a fall without any urinary symptom, and in infants as fever without a focus, poor feeding, vomiting or jaundice.",
+        "Ask about vaginal discharge and pruritus (vaginitis and cervicitis cause dysuria without frequency), pelvic pain and dyspareunia (pelvic inflammatory disease), urethral discharge in men (urethritis), and perineal pain with a tender prostate (prostatitis), because each is a different diagnosis with a different drug.",
+        "**Sterile pyuria** - pus cells with a negative routine culture - should raise genitourinary tuberculosis, partially treated UTI, chlamydial urethritis, stones, interstitial nephritis, papillary necrosis and an adjacent appendix or diverticular abscess; send three early-morning urine samples for AFB and CBNAAT.",
+        "In diabetics look for the dangerous variants: **emphysematous pyelonephritis** with gas in the renal parenchyma on ultrasound or CT, papillary necrosis with sloughed papillae causing obstruction, perinephric abscess, and fungal infection; a diabetic with pyelonephritis who does not improve in 48 hours needs imaging that day.",
+        "**Infection above an obstructed system (pyonephrosis) is a urological emergency**: fever with a hydronephrotic kidney needs percutaneous nephrostomy or a ureteric stent as well as antibiotics, because antibiotics alone do not sterilise an obstructed collecting system.",
+      ],
+    },
+    {
+      heading: "Investigations and how to interpret them",
+      points: [
+        "**Uncomplicated cystitis in a non-pregnant woman needs no culture**; a dipstick is enough, and a positive nitrite (specific, about 95%, but insensitive because Enterococcus, Pseudomonas and Acinetobacter do not reduce nitrate) or leucocyte esterase (sensitive but less specific) supports empirical treatment.",
+        "**Send a urine culture before antibiotics in every complicated UTI, pyelonephritis, pregnancy, men, children, recurrence, treatment failure and recent antibiotic use.** A midstream clean-catch sample transported within 2 hours or refrigerated; catheter specimens from a fresh catheter, and suprapubic aspiration or catheter sampling in infants because bag specimens are contaminated.",
+        "Microscopy: **more than 10 leucocytes per cubic millimetre of uncentrifuged urine or more than 5 per high-power field in the spun deposit is pyuria**; bacteriuria on Gram stain of uncentrifuged urine correlates with 100,000 CFU/mL; white cell casts localise the infection to the kidney.",
+        "Culture thresholds: 100,000 CFU/mL of a single organism is the classical Kass criterion; 1,000 CFU/mL in a symptomatic woman and 10,000 CFU/mL in pyelonephritis or a catheter sample are accepted as significant; mixed growth of three organisms is contamination.",
+        "In pyelonephritis add a complete blood count, creatinine and electrolytes, blood culture in the febrile or septic patient, and a **renal ultrasound in every man, child, pregnant woman, diabetic, patient with stones or obstruction, and anyone not improving at 48-72 hours**; CT with contrast is the test for abscess, emphysematous infection and small stones.",
+        "Children: ultrasound of the kidneys and bladder after the first febrile UTI in every child; micturating cystourethrogram if the ultrasound is abnormal, the infection is atypical or recurrent, or the child is under 2 years with a febrile UTI according to Indian Society of Pediatric Nephrology guidance; DMSA scan 4-6 months later for scarring where reflux is found.",
+      ],
+    },
+    {
+      heading: "Treatment of cystitis and pyelonephritis in India",
+      points: [
+        "**Uncomplicated cystitis: nitrofurantoin 100 mg orally twice daily for 5 days or fosfomycin trometamol 3 g as a single oral dose** are the ICMR first-line choices because both retain over 90% activity against Indian E. coli including ESBL producers. Nitrofurantoin needs a creatinine clearance above 30 mL/min and does not reach the kidney, so it is for cystitis only.",
+        "**Do not use ciprofloxacin, levofloxacin, cefixime or cotrimoxazole empirically for cystitis in India**; resistance exceeds the 20% threshold at which empirical use fails, fluoroquinolones carry tendon, neuropathy and aortic warnings, and every course selects for resistant gut flora. Amoxicillin-clavulanate 625 mg three times daily for 5-7 days is a second-line option guided by culture.",
+        "**Mild to moderate pyelonephritis in a patient who can take oral drugs** is started on a single intravenous or intramuscular dose of ceftriaxone 1-2 g or amikacin 15 mg/kg, then oral therapy according to culture for 7-10 days; oral fluoroquinolone for 7 days is used only when the isolate is proven susceptible.",
+        "**Severe pyelonephritis, sepsis, vomiting, pregnancy, obstruction or a known ESBL organism needs admission and intravenous therapy**: piperacillin-tazobactam 4.5 g 6-hourly or amikacin 15 mg/kg once daily for a mild ESBL infection, and meropenem 1 g 8-hourly or ertapenem 1 g daily for severe ESBL infection, for 7-14 days total with an oral switch once afebrile for 48 hours.",
+        "Supportive: paracetamol, 2-3 litres of fluid a day, phenazopyridine 200 mg three times daily for 2 days for severe dysuria; review at 48-72 hours, and **image any patient still febrile at 72 hours** for obstruction or abscess rather than adding a second antibiotic.",
+        "Men are treated for 7-14 days with a drug that penetrates the prostate once culture is known (a fluoroquinolone or cotrimoxazole if susceptible), and 4-6 weeks if prostatitis is present; investigate every man with a first UTI for obstruction, stones or prostatic disease.",
+      ],
+    },
+    {
+      heading: "Pregnancy, children and the catheterised patient",
+      points: [
+        "**Screen every pregnant woman with a urine culture at the first antenatal visit or at 12-16 weeks**, because untreated asymptomatic bacteriuria progresses to pyelonephritis in 20-40% and is associated with preterm labour and low birth weight; treat asymptomatic bacteriuria and cystitis for 7 days and repeat the culture after treatment as a test of cure.",
+        "**Safe drugs in pregnancy: nitrofurantoin 100 mg twice daily (avoid after 36 weeks because of neonatal haemolysis), cephalexin 500 mg four times daily, amoxicillin-clavulanate 625 mg three times daily, and fosfomycin 3 g single dose.** Avoid fluoroquinolones throughout, cotrimoxazole in the first trimester (folate antagonist) and near term (kernicterus), and tetracyclines.",
+        "**Pyelonephritis in pregnancy is admitted** for intravenous ceftriaxone 1-2 g daily or cefotaxime until afebrile for 48 hours, then oral therapy to complete 10-14 days, followed by nightly nitrofurantoin 50-100 mg or cephalexin 250 mg prophylaxis until delivery because recurrence is common.",
+        "**Febrile infants under 3 months and any toxic child are admitted for intravenous ceftriaxone or cefotaxime**; older well children receive oral cefixime 8 mg/kg/day or amoxicillin-clavulanate for 7-10 days, and cystitis in older girls 3-5 days. Fever without a focus in a child under 2 years carries a 5-7% probability of UTI, so a properly collected urine sample is mandatory.",
+        "**Catheter-associated UTI is diagnosed by symptoms plus a culture from a freshly placed catheter, not by pyuria or a smell, which are universal in long-term catheters**; remove or replace the catheter, treat symptomatic infection for 7 days if the response is prompt and 10-14 days if delayed, and never treat asymptomatic catheter bacteriuria.",
+        "In the elderly, a positive dipstick in a confused patient without urinary symptoms or fever is far more often asymptomatic bacteriuria than the cause of the confusion; look for the real cause before writing an antibiotic.",
+      ],
+    },
+    {
+      heading: "Recurrent UTI and prevention",
+      points: [
+        "Confirm recurrence by culture and exclude a cause: post-void residual on ultrasound, stones, atrophic vaginitis, diabetes, and in men prostatic disease; cystoscopy is needed only for haematuria, relapse with the same organism, or a suspected fistula.",
+        "**Behavioural advice with evidence: fluid intake of at least 1.5 litres extra a day (halves recurrences), voiding after intercourse, avoiding spermicides and diaphragms, and treating constipation**; cranberry products and D-mannose have weak evidence and are optional.",
+        "**Topical vaginal oestrogen cream in post-menopausal women restores lactobacilli and reduces recurrences** and is the first pharmacological step in that group.",
+        "**Antibiotic prophylaxis for 6-12 months - nitrofurantoin 50-100 mg at night or post-coital - reduces recurrences by 85%** but selects resistance; methenamine hippurate 1 g twice daily is a non-antibiotic alternative shown non-inferior to prophylaxis in the ALTAR trial (BMJ 2022) in women with a normal tract.",
+        "Self-start therapy: a reliable woman with proven recurrent cystitis can be given a standby course of nitrofurantoin or fosfomycin to begin at symptom onset, with a culture bottle to fill first.",
+        "Vaccination against UTI is not available in India; long-term low-dose antibiotic in children is reserved for high-grade reflux under paediatric nephrology supervision, and circumcision reduces UTI in boys with reflux.",
+      ],
+    },
+  ],
+  tables: [
+    {
+      heading: "Uncomplicated versus complicated urinary tract infection",
+      columns: ["Feature", "Uncomplicated", "Complicated"],
+      rows: [
+        ["Patient", "Non-pregnant pre-menopausal woman, normal tract", "Men, children, pregnancy, diabetes, elderly, catheter, transplant, immunosuppression"],
+        ["Anatomy", "Normal", "Stones, obstruction, reflux, neurogenic bladder, recent instrumentation"],
+        ["Culture before treatment", "Not needed for cystitis", "Always"],
+        ["Empirical drug", "Nitrofurantoin 5 days or fosfomycin single dose", "Ceftriaxone or amikacin then culture-guided; piperacillin-tazobactam or carbapenem if severe or ESBL"],
+        ["Duration", "3-5 days cystitis, 7 days pyelonephritis", "7-14 days; 4-6 weeks if prostatitis"],
+        ["Imaging", "Not needed", "Ultrasound in all; CT if not improving at 72 hours"],
+      ],
+    },
+    {
+      heading: "Antibiotic regimens for UTI following ICMR guidance",
+      columns: ["Situation", "Drug and dose", "Duration", "Comment"],
+      rows: [
+        ["Uncomplicated cystitis", "Nitrofurantoin 100 mg PO BD", "5 days", "Needs creatinine clearance above 30; not for pyelonephritis"],
+        ["Uncomplicated cystitis", "Fosfomycin trometamol 3 g PO", "Single dose", "Active against most ESBL E. coli"],
+        ["Cystitis in pregnancy", "Nitrofurantoin 100 mg BD or cephalexin 500 mg QID", "7 days", "Avoid nitrofurantoin after 36 weeks; test of cure culture"],
+        ["Mild pyelonephritis, outpatient", "Ceftriaxone 1-2 g IV/IM stat, then oral by culture", "7-10 days", "Fluoroquinolone only if isolate susceptible"],
+        ["Severe pyelonephritis or ESBL", "Piperacillin-tazobactam 4.5 g IV 6-hourly or meropenem 1 g IV 8-hourly", "7-14 days", "Amikacin 15 mg/kg OD is an option for mild ESBL infection"],
+        ["Febrile UTI in infant under 3 months", "Ceftriaxone 50-75 mg/kg IV OD or cefotaxime", "7-10 days", "Admit; ultrasound after first febrile UTI"],
+        ["Prophylaxis for recurrent UTI", "Nitrofurantoin 50-100 mg HS or post-coital", "6-12 months", "Methenamine hippurate 1 g BD is the non-antibiotic alternative"],
+      ],
+    },
+  ],
+  redFlags: [
+    "Fever with rigors, hypotension, tachycardia or altered sensorium - urosepsis; blood and urine cultures, intravenous antibiotics and admission.",
+    "Fever with a hydronephrotic kidney on ultrasound - pyonephrosis; urgent nephrostomy or stent, not antibiotics alone.",
+    "Pyelonephritis in pregnancy - admit for intravenous therapy; risk of preterm labour and ARDS.",
+    "Diabetic with pyelonephritis not improving in 48 hours - image for emphysematous pyelonephritis, papillary necrosis or abscess.",
+    "Febrile infant under 3 months with a positive urine - admit for intravenous antibiotics and imaging.",
+    "Persistent fever at 72 hours on appropriate antibiotic, or relapse with the same organism - obstruction, abscess, stone or prostatitis.",
+  ],
+  pearls: [
+    "Nitrofurantoin or fosfomycin for cystitis in India; ciprofloxacin and cefixime fail in most E. coli isolates.",
+    "Nitrofurantoin never treats pyelonephritis - it does not reach the renal parenchyma.",
+    "Asymptomatic bacteriuria is treated in only two situations: pregnancy and before an instrumentation that breaches the mucosa.",
+    "Screen every pregnancy with a urine culture at the first visit; untreated bacteriuria becomes pyelonephritis in a fifth to two-fifths.",
+    "Sterile pyuria in India is genitourinary tuberculosis until three early-morning urines say otherwise.",
+    "Fever plus hydronephrosis is a drainage problem, not an antibiotic problem.",
+    "A confused elderly patient with a positive dipstick usually has asymptomatic bacteriuria and a different cause for the confusion.",
+  ],
+  theory: [
+    {
+      id: "infectious-fever-urinary-tract-infection-t1",
+      paper: "II",
+      kind: "long",
+      marks: 10,
+      minutes: 20,
+      frequency: "common",
+      question:
+        "A 32-year-old woman presents with dysuria, frequency and fever with rigors for 2 days. Discuss the classification, aetiology, investigations and management of urinary tract infection in adults, with special reference to antimicrobial resistance in India.",
+      openingLines: [
+        "Urinary tract infection is symptomatic bacterial invasion of the urinary tract, classified as uncomplicated when it occurs in a non-pregnant pre-menopausal woman with a normal tract, and complicated in all other patients or in the presence of structural or functional abnormality.",
+        "Escherichia coli causes 70-80% of cases, and in India over 60% of isolates produce extended-spectrum beta-lactamases with fluoroquinolone resistance above 70%, which dictates the empirical choices.",
+      ],
+      answer: [
+        {
+          heading: "1. Classification and aetiology",
+          points: [
+            "Uncomplicated cystitis and pyelonephritis versus complicated UTI (men, pregnancy, children, diabetes, catheter, stones, obstruction, reflux, immunosuppression); asymptomatic bacteriuria; recurrent UTI (2 in 6 months or 3 in 12).",
+            "Organisms: E. coli, Klebsiella, Proteus, Enterococcus, S. saprophyticus, Pseudomonas and Candida in the catheterised; risk factors of intercourse, spermicide, menopause, incomplete emptying, diabetes.",
+          ],
+        },
+        {
+          heading: "2. Clinical features",
+          points: [
+            "Cystitis: dysuria, frequency, urgency, suprapubic pain, haematuria without fever; pyelonephritis: fever with rigors, flank pain, renal angle tenderness, vomiting, sepsis.",
+            "Mimics: vaginitis and cervicitis, urethritis, pelvic inflammatory disease, prostatitis; atypical presentations in the elderly and infants.",
+          ],
+        },
+        {
+          heading: "3. Investigations",
+          points: [
+            "Dipstick nitrite and leucocyte esterase; microscopy for pyuria (more than 10 leucocytes per cubic millimetre) and white cell casts; urine culture with 100,000 CFU/mL (1,000 in symptomatic women) before antibiotics in every complicated case and pyelonephritis.",
+            "Blood count, creatinine, blood culture in the febrile patient; ultrasound in men, children, pregnancy, diabetes, stones and non-responders; CT for abscess and emphysematous infection; three early-morning urines for AFB in sterile pyuria.",
+          ],
+        },
+        {
+          heading: "4. Management",
+          points: [
+            "Cystitis: nitrofurantoin 100 mg twice daily for 5 days or fosfomycin 3 g single dose; avoid fluoroquinolones, cefixime and cotrimoxazole empirically because of resistance; amoxicillin-clavulanate by culture.",
+            "Pyelonephritis, mild: ceftriaxone 1-2 g IV or amikacin 15 mg/kg as initial dose then oral by culture for 7-10 days; severe, septic, pregnant, vomiting or ESBL: admit for piperacillin-tazobactam 4.5 g 6-hourly or meropenem 1 g 8-hourly for 7-14 days with oral switch after 48 hours afebrile.",
+            "Drain an obstructed infected kidney; supportive fluids, paracetamol, phenazopyridine; review at 48-72 hours and image if still febrile.",
+            "Special groups: pregnancy screening and 7-day treatment with nitrofurantoin or cephalexin, admission for pyelonephritis; children with ultrasound after the first febrile UTI; men 7-14 days with prostate-penetrating drug; catheterised patients treated only when symptomatic after catheter change.",
+          ],
+        },
+        {
+          heading: "5. Prevention of recurrence and stewardship",
+          points: [
+            "Fluids, post-coital voiding, avoid spermicide, vaginal oestrogen after menopause, nitrofurantoin prophylaxis or methenamine hippurate for 6-12 months, self-start therapy.",
+            "Culture-guided therapy, shortest effective course, no treatment of asymptomatic bacteriuria outside pregnancy and instrumentation, and avoidance of fluoroquinolones preserve the remaining oral options.",
+          ],
+        },
+      ],
+      mustDraw: [
+        "A table of uncomplicated versus complicated UTI with the empirical drug and duration for each.",
+        "A flow chart from dysuria through dipstick and culture decisions to cystitis and pyelonephritis pathways.",
+      ],
+      markSplit: [
+        { part: "Classification and aetiology with resistance data", marks: 2 },
+        { part: "Clinical features and mimics", marks: 1.5 },
+        { part: "Investigations and interpretation", marks: 2 },
+        { part: "Management of cystitis and pyelonephritis", marks: 3 },
+        { part: "Special groups and prevention", marks: 1.5 },
+      ],
+      keywords: ["urinary tract infection", "nitrofurantoin", "fosfomycin", "ESBL", "pyelonephritis", "asymptomatic bacteriuria"],
+    },
+    {
+      id: "infectious-fever-urinary-tract-infection-t2",
+      paper: "II",
+      kind: "short-note",
+      marks: 5,
+      minutes: 10,
+      frequency: "common",
+      question: "Write a short note on urinary tract infection in pregnancy.",
+      openingLines: [
+        "Pregnancy predisposes to urinary infection through progesterone-induced ureteric dilatation, mechanical compression by the uterus, glycosuria and reduced bladder tone, so that asymptomatic bacteriuria in 2-10% of pregnant women progresses to pyelonephritis in 20-40% if untreated.",
+        "Because bacteriuria is associated with preterm labour, low birth weight and maternal sepsis, it is the one setting where asymptomatic bacteriuria is always screened for and treated.",
+      ],
+      answer: [
+        {
+          heading: "Screening and diagnosis",
+          points: [
+            "Urine culture at the first antenatal visit or 12-16 weeks; 100,000 CFU/mL of a single organism is significant; dipstick alone is insufficient for screening.",
+            "Symptomatic cystitis with dysuria and frequency; pyelonephritis with fever, rigors, flank pain and vomiting, commonest in the second and third trimesters, right side more often.",
+          ],
+        },
+        {
+          heading: "Treatment",
+          points: [
+            "Asymptomatic bacteriuria and cystitis: nitrofurantoin 100 mg twice daily (not after 36 weeks), cephalexin 500 mg four times daily, or amoxicillin-clavulanate 625 mg three times daily for 7 days, or fosfomycin 3 g single dose; repeat culture after treatment as a test of cure.",
+            "Avoid fluoroquinolones, tetracyclines, cotrimoxazole in the first trimester and near term, and aminoglycosides unless essential.",
+            "Pyelonephritis: admit, intravenous ceftriaxone 1-2 g daily or cefotaxime, fluids, monitor for preterm labour and ARDS, switch to oral after 48 hours afebrile to complete 10-14 days.",
+          ],
+        },
+        {
+          heading: "Follow-up and prophylaxis",
+          points: [
+            "Monthly urine culture for the rest of pregnancy after any infection; nightly nitrofurantoin 50-100 mg or cephalexin 250 mg prophylaxis until delivery after pyelonephritis or recurrent bacteriuria.",
+            "Ultrasound of the renal tract for recurrent infection or failure to respond; group B streptococcal bacteriuria also mandates intrapartum penicillin prophylaxis.",
+          ],
+        },
+      ],
+      mustDraw: ["A table of drugs safe and unsafe in pregnancy for UTI with the trimester restrictions."],
+      markSplit: [
+        { part: "Physiology, screening and consequences", marks: 1.5 },
+        { part: "Treatment with safe and unsafe drugs", marks: 2.5 },
+        { part: "Follow-up and prophylaxis", marks: 1 },
+      ],
+      keywords: ["asymptomatic bacteriuria", "pregnancy", "nitrofurantoin", "cephalexin", "pyelonephritis"],
+    },
+  ],
+  mcqs: [
+    {
+      id: "infectious-fever-urinary-tract-infection-q1",
+      stem: "A 25-year-old non-pregnant woman has dysuria, frequency and suprapubic discomfort for 2 days with no fever, flank pain or vaginal discharge. Dipstick shows nitrite and leucocyte esterase positive. Which is the most appropriate management in India?",
+      options: [
+        "Ciprofloxacin 500 mg twice daily for 3 days",
+        "Cefixime 200 mg twice daily for 5 days",
+        "Nitrofurantoin 100 mg twice daily for 5 days without a culture",
+        "Send urine culture and withhold antibiotics until the report",
+        "Cotrimoxazole double strength twice daily for 3 days",
+      ],
+      answer: 2,
+      explanation:
+        "This is uncomplicated cystitis, which is treated empirically without a culture, and nitrofurantoin 100 mg twice daily for 5 days is the ICMR first-line choice because Indian E. coli remains over 90% susceptible. Ciprofloxacin and cefixime face resistance rates above 70% and 50% respectively and fluoroquinolones carry safety warnings, and cotrimoxazole is only appropriate where local resistance is under 20%, which is not the case in India. Withholding treatment for a culture in an uncomplicated cystitis prolongs symptoms without benefit.",
+      difficulty: "easy",
+    },
+    {
+      id: "infectious-fever-urinary-tract-infection-q2",
+      stem: "A 30-year-old woman at 14 weeks of gestation has a routine antenatal urine culture showing E. coli 100,000 CFU/mL. She has no symptoms. Which is the most appropriate action?",
+      options: [
+        "No treatment because she is asymptomatic",
+        "Repeat culture at 28 weeks and treat only if symptomatic",
+        "Nitrofurantoin 100 mg twice daily for 7 days and a test-of-cure culture",
+        "Ciprofloxacin 500 mg twice daily for 7 days",
+        "Cotrimoxazole double strength twice daily for 3 days",
+      ],
+      answer: 2,
+      explanation:
+        "Asymptomatic bacteriuria in pregnancy is always treated because 20-40% progress to pyelonephritis and it is associated with preterm birth; nitrofurantoin for 7 days with a follow-up culture is the standard approach before 36 weeks. Leaving it untreated or deferring to a later culture ignores the risk. Ciprofloxacin is avoided throughout pregnancy, and cotrimoxazole is a folate antagonist contraindicated in the first trimester and again near term because of kernicterus.",
+      difficulty: "easy",
+    },
+    {
+      id: "infectious-fever-urinary-tract-infection-q3",
+      stem: "A 58-year-old man with type 2 diabetes has fever with rigors, right flank pain and vomiting for 3 days. He was given oral cefixime by a pharmacist. Pulse 118, BP 96/60 mmHg, creatinine 2.1 mg/dL. Urine shows plenty of pus cells. Which is the most appropriate management?",
+      options: [
+        "Oral levofloxacin 750 mg daily and review in 3 days",
+        "Oral nitrofurantoin 100 mg twice daily for 7 days",
+        "Admit, blood and urine cultures, intravenous piperacillin-tazobactam or meropenem, and an urgent ultrasound of the kidneys",
+        "Intramuscular ceftriaxone 1 g single dose and oral cefixime for 10 days",
+        "Oral amoxicillin-clavulanate 625 mg three times daily for 14 days",
+      ],
+      answer: 2,
+      explanation:
+        "A diabetic man with pyelonephritis, hypotension, acute kidney injury and prior oral cephalosporin failure has complicated UTI with sepsis and a high likelihood of an ESBL organism, and needs admission, cultures, an intravenous beta-lactam-beta-lactamase inhibitor or carbapenem, and same-day ultrasound to exclude obstruction, emphysematous pyelonephritis or abscess. Oral levofloxacin or amoxicillin-clavulanate are inadequate for a septic patient with probable resistant organisms. Nitrofurantoin does not reach the kidney and is contraindicated with a reduced creatinine clearance. A single ceftriaxone dose followed by the cefixime that already failed is not rational.",
+      difficulty: "moderate",
+    },
+    {
+      id: "infectious-fever-urinary-tract-infection-q4",
+      stem: "An 82-year-old woman in a care home is brought with confusion for one day. She is afebrile, haemodynamically normal, with no dysuria or flank pain. A dipstick shows leucocyte esterase positive and nitrite negative. Which is the most appropriate next step?",
+      options: [
+        "Start nitrofurantoin for a urinary tract infection causing delirium",
+        "Start ciprofloxacin and send a urine culture",
+        "Look for another cause of delirium - medication review, glucose, electrolytes, hypoxia, constipation, stroke - and do not treat the bacteriuria",
+        "Insert a urinary catheter to obtain a sterile sample",
+        "Give a single dose of fosfomycin as a precaution",
+      ],
+      answer: 2,
+      explanation:
+        "Asymptomatic bacteriuria and pyuria are present in up to half of elderly women in institutions, and a positive dipstick in a confused patient without fever or urinary symptoms is far more likely to be incidental than causal; guidelines advise against treatment and instead a search for the real precipitant of delirium. Treating with nitrofurantoin, ciprofloxacin or fosfomycin exposes her to adverse effects and resistance without benefit, and inserting a catheter to obtain a sample introduces infection rather than clarifying the diagnosis.",
+      difficulty: "moderate",
+    },
+    {
+      id: "infectious-fever-urinary-tract-infection-q5",
+      stem: "A 40-year-old man has had dysuria and frequency for 3 months with two courses of antibiotics. Repeated urine routine shows 30-40 pus cells per high-power field but routine cultures are sterile. Urine pH is 5.0 and ultrasound shows a mildly dilated left ureter. Which is the most appropriate next investigation?",
+      options: [
+        "Cystoscopy",
+        "Three early-morning urine samples for acid-fast bacilli and CBNAAT",
+        "Prostate-specific antigen",
+        "Urine cytology",
+        "Serum uric acid",
+      ],
+      answer: 1,
+      explanation:
+        "Persistent sterile pyuria with acid urine, chronic irritative symptoms and a dilated ureter in an Indian adult is genitourinary tuberculosis until proved otherwise, and the first test is three early-morning urine samples for AFB smear, culture and CBNAAT. Cystoscopy and cytology may follow to assess a contracted bladder or exclude malignancy but are not the first step. PSA and uric acid do not address sterile pyuria.",
+      difficulty: "moderate",
+    },
+  ],
+  cards: [
+    {
+      id: "infectious-fever-urinary-tract-infection-c1",
+      front: "Define uncomplicated UTI.",
+      back: "Cystitis or pyelonephritis in a non-pregnant, pre-menopausal woman with a structurally and functionally normal urinary tract and no comorbidity. Everyone else is complicated.",
+    },
+    {
+      id: "infectious-fever-urinary-tract-infection-c2",
+      front: "First-line drugs for uncomplicated cystitis in India and why not ciprofloxacin.",
+      back: "Nitrofurantoin 100 mg BD 5 days or fosfomycin 3 g single dose. E. coli fluoroquinolone resistance exceeds 70% and over 60% of isolates are ESBL producers.",
+    },
+    {
+      id: "infectious-fever-urinary-tract-infection-c3",
+      front: "When is asymptomatic bacteriuria treated?",
+      back: "Only in pregnancy and before urological procedures that breach the mucosa. Not in the elderly, diabetics, or catheterised patients.",
+    },
+    {
+      id: "infectious-fever-urinary-tract-infection-c4",
+      front: "Safe and unsafe UTI drugs in pregnancy.",
+      back: "Safe: nitrofurantoin (not after 36 weeks), cephalexin, amoxicillin-clavulanate, fosfomycin. Unsafe: fluoroquinolones, tetracyclines, cotrimoxazole in first trimester and near term.",
+    },
+    {
+      id: "infectious-fever-urinary-tract-infection-c5",
+      front: "Definition of recurrent UTI and the prophylaxis options.",
+      back: "Two or more in 6 months or three or more in 12 months. Nitrofurantoin 50-100 mg at night or post-coital for 6-12 months; methenamine hippurate 1 g BD (ALTAR trial); vaginal oestrogen after menopause.",
+    },
+    {
+      id: "infectious-fever-urinary-tract-infection-c6",
+      front: "Causes of sterile pyuria.",
+      back: "Genitourinary tuberculosis, partially treated UTI, chlamydial urethritis, stones, interstitial nephritis, papillary necrosis, adjacent appendicitis or diverticulitis.",
+    },
+    {
+      id: "infectious-fever-urinary-tract-infection-c7",
+      front: "Which patient with pyelonephritis needs imaging, and when?",
+      back: "Every man, child, pregnant woman, diabetic and patient with stones or obstruction - ultrasound at presentation; and anyone still febrile at 72 hours on appropriate antibiotics.",
+    },
+    {
+      id: "infectious-fever-urinary-tract-infection-c8",
+      front: "Imaging after a first febrile UTI in a child.",
+      back: "Ultrasound of kidneys and bladder in all; MCUG if ultrasound abnormal, atypical or recurrent infection, or under 2 years per ISPN; DMSA 4-6 months later for scarring when reflux is found.",
+    },
+  ],
+  references: [
+    "ICMR Treatment Guidelines for Antimicrobial Use in Common Syndromes, 3rd edition, 2022 - urinary tract infections",
+    "ICMR Antimicrobial Resistance Surveillance Network annual report, 2022 - Enterobacterales resistance data",
+    "IDSA Clinical Practice Guideline for the Management of Asymptomatic Bacteriuria, 2019",
+    "Indian Society of Pediatric Nephrology, Revised Statement on Management of Urinary Tract Infections, Indian Pediatrics 2011 and 2023 update",
+    "Harding C et al., Alternative to prophylactic antibiotics for the treatment of recurrent urinary tract infection in women (ALTAR trial), BMJ 2022",
+  ],
+});
+
+topics.push({
+  id: "infectious-fever-skin-soft-tissue-infection",
+  title: "Skin and soft tissue infection: impetigo to necrotising fasciitis",
+  oneLiner:
+    "Skin and soft tissue infections range from superficial impetigo and folliculitis through cellulitis and abscess to necrotising fasciitis, are caused mainly by Staphylococcus aureus and Streptococcus pyogenes, and are managed by deciding whether the lesion needs drainage, whether MRSA cover is needed, and whether pain out of proportion means the surgeon is needed tonight.",
+  frequency: "common",
+  keywords: [
+    "SSTI",
+    "cellulitis",
+    "erysipelas",
+    "impetigo",
+    "abscess",
+    "furuncle",
+    "carbuncle",
+    "necrotising fasciitis",
+    "LRINEC",
+    "MRSA",
+    "cloxacillin",
+    "cephalexin",
+    "clindamycin",
+    "diabetic foot infection",
+    "Fournier gangrene",
+    "ADLA",
+    "incision and drainage",
+  ],
+  sections: [
+    {
+      heading: "Classification and organisms",
+      points: [
+        "**Skin and soft tissue infections are classified by depth and by whether pus is present: superficial (impetigo, ecthyma, folliculitis), dermal and subcutaneous (erysipelas, cellulitis), purulent collections (furuncle, carbuncle, abscess) and deep necrotising infections (necrotising fasciitis, myonecrosis).** The IDSA 2014 guideline separates purulent from non-purulent infection and grades each as mild, moderate (systemic signs) or severe (SIRS with hypotension, immunocompromise, or failed initial therapy).",
+        "**Staphylococcus aureus causes almost all purulent infections and Streptococcus pyogenes almost all non-purulent cellulitis and erysipelas**; this single distinction drives the choice between an anti-staphylococcal penicillin and a simple penicillin or amoxicillin.",
+        "**About 40% of S. aureus isolates in ICMR surveillance are methicillin-resistant**, and community-acquired MRSA carrying the Panton-Valentine leucocidin gene produces recurrent furunculosis and abscesses in otherwise healthy people; MRSA cover is therefore added for purulent infection that is severe, recurrent, in a household cluster, or failing beta-lactam therapy.",
+        "Special exposures change the organism: Pasteurella multocida in dog and cat bites, Eikenella corrodens in human bites, Aeromonas in fresh-water wounds, Vibrio vulnificus in sea-water wounds and raw shellfish in the cirrhotic, Pseudomonas in the diabetic foot and in hot-tub folliculitis, and Clostridium perfringens in contaminated crush wounds.",
+        "Risk factors for cellulitis are lymphoedema, venous insufficiency, obesity, tinea pedis and fissured web spaces, previous cellulitis, diabetes, injection drug use and immunosuppression; in filarial lymphoedema the recurrent streptococcal cellulitis is called **acute dermatolymphangioadenitis (ADLA)** and its prevention is the core of morbidity management under the NVBDCP filariasis programme.",
+        "Diagnosis is clinical: cultures are taken from pus, bullae, debrided tissue and blood in the severe or immunocompromised patient, but swabs of intact cellulitic skin are not helpful, and imaging is reserved for suspected abscess (ultrasound), osteomyelitis (radiograph, MRI) and necrotising infection (CT for gas, though it must never delay surgery).",
+      ],
+    },
+    {
+      heading: "Superficial infections: impetigo, folliculitis, furuncle, carbuncle and abscess",
+      points: [
+        "**Impetigo** in children presents as honey-coloured crusted erosions on the face and limbs (non-bullous, S. aureus or S. pyogenes) or flaccid bullae (bullous, staphylococcal exfoliative toxin); limited disease is treated with **topical mupirocin 2% or fusidic acid three times daily for 5-7 days**, and extensive disease with oral cephalexin 25-50 mg/kg/day or cloxacillin for 7 days. Post-streptococcal glomerulonephritis can follow skin infection and is not prevented by antibiotic treatment, so warn the family about oedema and dark urine.",
+        "**Folliculitis** needs hygiene, antiseptic washes and topical mupirocin; a **furuncle** (boil) is a deep follicular abscess treated with warm compresses and drainage when fluctuant, and a **carbuncle** is a coalescing cluster of furuncles with multiple sinuses on the nape or back of a diabetic, needing drainage, an anti-staphylococcal antibiotic and glucose control.",
+        "**Incision and drainage is the primary treatment of any cutaneous abscess**, with a culture of the pus; adjunctive antibiotics for 5-7 days (cotrimoxazole or clindamycin in the American trials) improve cure and reduce recurrence and are given when the abscess is over 2 cm, multiple, surrounded by cellulitis, on the face or hand, in a diabetic or immunocompromised patient, or with systemic signs.",
+        "Furuncles in the **danger area of the face - nose, upper lip and medial cheek - must never be squeezed** because the valveless facial veins drain to the cavernous sinus; treat with oral or intravenous anti-staphylococcal antibiotic and warm compresses only.",
+        "**Recurrent furunculosis** is managed by decolonisation: intranasal mupirocin twice daily for 5 days, chlorhexidine body wash, hot washing of linen, treatment of household carriers, and a check for diabetes, HIV, iron deficiency and neutrophil disorders.",
+        "Scabies with secondary impetigo is common in Indian children and hostels: treat both, with permethrin 5% for the whole household and an antibiotic for the pyoderma, or the pyoderma recurs.",
+      ],
+    },
+    {
+      heading: "Cellulitis and erysipelas",
+      points: [
+        "**Cellulitis is a spreading infection of the dermis and subcutaneous tissue** presenting as a warm, red, tender, oedematous area with indistinct margins, commonly on the leg, often with fever, lymphangitic streaking and tender regional nodes; **erysipelas is the superficial variant with a raised, sharply demarcated, bright-red edge**, typically on the face or leg and almost always streptococcal.",
+        "Mark the margin with a pen and the date, elevate the limb, treat pain, and look for the portal of entry - tinea pedis, a fissure, an ulcer, an insect bite, an injection site - because treating the portal prevents the next episode.",
+        "**Non-purulent mild cellulitis: oral amoxicillin 500 mg three times daily or cephalexin 500 mg four times daily for 5 days**, extended only if not resolving; **purulent cellulitis or a suspected staphylococcal source: cloxacillin 500 mg four times daily or cephalexin**, and if MRSA is likely add or substitute cotrimoxazole double strength twice daily, doxycycline 100 mg twice daily or clindamycin 300-450 mg three times daily.",
+        "**Moderate infection with fever needs intravenous therapy: cefazolin 1-2 g 8-hourly or cloxacillin 1-2 g 4-6 hourly**, and severe infection with sepsis, immunocompromise or failed oral therapy needs vancomycin or linezolid for MRSA plus piperacillin-tazobactam until cultures return; switch to oral once afebrile for 48 hours and the erythema is receding.",
+        "The important differentials of a red hot leg are deep vein thrombosis (unilateral swelling without well-defined erythema, risk factors), venous eczema (bilateral, itchy, chronic), gout (joint-centred), contact dermatitis, and necrotising fasciitis; bilateral cellulitis is rare and is usually stasis dermatitis or lipodermatosclerosis.",
+        "**Recurrent cellulitis (two or more episodes a year) is prevented by treating tinea pedis and lymphoedema, compression stockings, skin care, and penicillin V 250 mg twice daily prophylaxis for 12 months (PATCH I trial)**; in filarial ADLA the NVBDCP advises daily foot washing with soap and water, drying between the toes, antiseptic for entry lesions, limb elevation and exercise, with penicillin for each acute attack.",
+      ],
+    },
+    {
+      heading: "Necrotising soft tissue infection: recognising the emergency",
+      points: [
+        "**Necrotising fasciitis is a rapidly spreading infection along the deep fascia with thrombosis of perforating vessels and necrosis of overlying skin**; type I is polymicrobial (aerobes and anaerobes) in diabetics, the perineum (Fournier gangrene) and after surgery, type II is monomicrobial S. pyogenes or S. aureus in healthy people after minor trauma, and type III includes clostridial myonecrosis and Vibrio vulnificus.",
+        "**The clinical clue is pain out of proportion to the visible signs**, followed by tense oedema extending beyond the erythema, skin that becomes dusky or anaesthetic, haemorrhagic bullae, crepitus, grey dishwater discharge, and systemic toxicity with tachycardia, confusion and hypotension; progression is measured in hours, and the mortality is 20-30% even with treatment.",
+        "**The LRINEC score (CRP, leucocyte count, haemoglobin, sodium, creatinine, glucose) helps: 6 or more is intermediate risk and 8 or more is high risk**, but a low score never excludes the diagnosis; a bedside finger test through a small incision showing lack of bleeding, murky fluid and easy separation of fascia confirms it, and CT showing gas or fascial thickening supports it but must never delay surgery.",
+        "**Immediate surgical debridement is the only treatment that alters survival**, repeated every 24-48 hours until the tissue is clean; antibiotics alone fail because the thrombosed vessels cannot deliver them.",
+        "**Empirical antibiotics: piperacillin-tazobactam 4.5 g 6-hourly or meropenem 1 g 8-hourly, plus clindamycin 600-900 mg 8-hourly to suppress toxin production, plus vancomycin or linezolid until MRSA is excluded**; for proven streptococcal disease penicillin G 4 million units 4-hourly with clindamycin; intravenous immunoglobulin is used in streptococcal toxic shock with weak evidence.",
+        "In the family clinic the task is recognition and immediate transfer: intravenous access, fluids, blood cultures, the first dose of antibiotic, and a phone call to the surgeon - not observation overnight to see whether the antibiotic works.",
+      ],
+    },
+    {
+      heading: "Diabetic foot infection and bite wounds",
+      points: [
+        "**Diabetic foot infection is diagnosed clinically by two or more of purulence, erythema, warmth, tenderness, induration or swelling in a foot wound**, and graded by the IWGDF/IDSA 2023 system as mild (skin and subcutaneous tissue only, erythema under 2 cm), moderate (deeper structures or erythema over 2 cm, no systemic signs) and severe (systemic inflammatory response).",
+        "**Probe the wound with a sterile blunt probe: contact with bone (positive probe-to-bone test) means osteomyelitis until proved otherwise**, supported by an ESR above 70 mm in the first hour, a plain radiograph (changes lag 2-3 weeks) and MRI; a sausage toe and a wound over 2 cm square or present for over 6 weeks also predict bone involvement.",
+        "Mild infection is treated for 1-2 weeks with oral cephalexin, cloxacillin or amoxicillin-clavulanate covering staphylococci and streptococci; moderate and severe infections need admission, tissue culture from the debrided base rather than a surface swab, and intravenous piperacillin-tazobactam or amoxicillin-clavulanate with MRSA cover for 2-3 weeks, extended to 6 weeks for osteomyelitis without resection.",
+        "**Antibiotics are one quarter of diabetic foot care: debridement of dead tissue, complete off-loading of the ulcer, assessment of arterial supply with pulses and ankle-brachial index, and glycaemic control are the other three**, and an ischaemic infected foot needs a vascular opinion before any hope of healing.",
+        "**Dog, cat and human bites need thorough irrigation, debridement, tetanus prophylaxis, rabies post-exposure prophylaxis for animal bites, and no primary closure of punctures or hand wounds**; give amoxicillin-clavulanate 625 mg three times daily for 3-5 days as prophylaxis for hand, face, deep puncture, cat and immunocompromised bites, and for 7-14 days if infected, because it covers Pasteurella, Eikenella and anaerobes that cephalexin and cloxacillin miss.",
+        "Hand infections deserve special respect: a swollen finger held in flexion with pain on passive extension and tenderness along the tendon sheath (Kanavel signs) is flexor tenosynovitis needing surgical drainage within 24 hours, and a bite over the knuckle from a punch to the mouth is a joint injury until proven otherwise.",
+      ],
+    },
+  ],
+  tables: [
+    {
+      heading: "Skin and soft tissue infections: organism and first-line treatment",
+      columns: ["Condition", "Usual organism", "First-line treatment", "Duration"],
+      rows: [
+        ["Impetigo, limited", "S. aureus, S. pyogenes", "Topical mupirocin 2% or fusidic acid TDS", "5-7 days"],
+        ["Impetigo, extensive", "S. aureus, S. pyogenes", "Oral cephalexin or cloxacillin", "7 days"],
+        ["Abscess, furuncle, carbuncle", "S. aureus (40% MRSA)", "Incision and drainage; cotrimoxazole or clindamycin if adjunct indicated", "5-7 days"],
+        ["Non-purulent cellulitis, erysipelas", "Beta-haemolytic streptococci", "Amoxicillin 500 mg TDS or cephalexin 500 mg QID", "5 days, extend if not improving"],
+        ["Purulent cellulitis", "S. aureus", "Cloxacillin 500 mg QID; add cotrimoxazole, doxycycline or clindamycin for MRSA", "5-7 days"],
+        ["Severe cellulitis with sepsis", "Streptococci, S. aureus including MRSA", "IV vancomycin or linezolid plus piperacillin-tazobactam", "7-14 days, oral switch when afebrile 48 hours"],
+        ["Necrotising fasciitis", "Polymicrobial or S. pyogenes", "Urgent debridement; piperacillin-tazobactam or meropenem plus clindamycin plus vancomycin", "Until source controlled, usually 2-3 weeks"],
+        ["Animal or human bite", "Pasteurella, Eikenella, anaerobes, staphylococci", "Amoxicillin-clavulanate 625 mg TDS", "3-5 days prophylaxis; 7-14 days if infected"],
+        ["Diabetic foot, mild", "S. aureus, streptococci", "Oral cephalexin, cloxacillin or amoxicillin-clavulanate", "1-2 weeks"],
+        ["Diabetic foot, moderate to severe", "Polymicrobial including Pseudomonas, anaerobes, MRSA", "IV piperacillin-tazobactam plus MRSA cover; debridement and off-loading", "2-3 weeks; 6 weeks for osteomyelitis"],
+      ],
+    },
+    {
+      heading: "LRINEC score for necrotising fasciitis",
+      columns: ["Parameter", "Value", "Points"],
+      rows: [
+        ["C-reactive protein", "150 mg/L or more", "4"],
+        ["Total leucocyte count", "15,000-25,000 per cubic millimetre", "1"],
+        ["Total leucocyte count", "More than 25,000 per cubic millimetre", "2"],
+        ["Haemoglobin", "11-13.5 g/dL", "1"],
+        ["Haemoglobin", "Less than 11 g/dL", "2"],
+        ["Serum sodium", "Less than 135 mmol/L", "2"],
+        ["Serum creatinine", "More than 1.6 mg/dL", "2"],
+        ["Blood glucose", "More than 180 mg/dL", "1"],
+        ["Interpretation", "6-7 intermediate risk; 8 or more high risk", "Maximum 13"],
+      ],
+    },
+  ],
+  redFlags: [
+    "Pain out of proportion to the visible signs, tense oedema beyond the erythema, dusky or anaesthetic skin, bullae or crepitus - necrotising fasciitis; surgeon tonight.",
+    "Cellulitis with hypotension, tachycardia, confusion or rapidly spreading margins over hours - sepsis; intravenous antibiotics and admission.",
+    "Periorbital swelling with proptosis, painful eye movements or reduced vision - orbital cellulitis; CT and intravenous therapy.",
+    "Furuncle in the nasal and upper lip danger area with headache, fever or eye signs - cavernous sinus thrombosis risk.",
+    "Finger held in flexion with pain on passive extension and tenderness along the tendon sheath - flexor tenosynovitis needing drainage within 24 hours.",
+    "Diabetic foot infection with systemic signs, a positive probe-to-bone test or absent pulses - admission, imaging and surgical and vascular review.",
+  ],
+  pearls: [
+    "Purulent means staphylococcus, non-purulent means streptococcus - that one distinction chooses the antibiotic.",
+    "An abscess is cured by a scalpel; the antibiotic is the adjunct.",
+    "Five days of amoxicillin or cephalexin is enough for uncomplicated cellulitis that is improving; longer courses add resistance, not cure.",
+    "Pain out of proportion is the single most important sign in soft tissue infection - it means necrotising fasciitis until the surgeon says otherwise.",
+    "Never squeeze a boil on the nose or upper lip.",
+    "Probe every diabetic foot ulcer: touching bone means osteomyelitis.",
+    "Bites get amoxicillin-clavulanate because cloxacillin and cephalexin do not cover Pasteurella.",
+    "Treat the tinea pedis and the lymphoedema, or the cellulitis comes back next year.",
+  ],
+  theory: [
+    {
+      id: "infectious-fever-skin-soft-tissue-infection-t1",
+      paper: "II",
+      kind: "long",
+      marks: 10,
+      minutes: 20,
+      frequency: "common",
+      question:
+        "Classify skin and soft tissue infections. Discuss the clinical features, diagnosis and management of cellulitis, and describe how you would recognise and manage necrotising fasciitis in a district hospital.",
+      openingLines: [
+        "Skin and soft tissue infections are classified by depth and by the presence of pus into superficial (impetigo, folliculitis), dermal and subcutaneous (erysipelas, cellulitis), purulent collections (furuncle, carbuncle, abscess) and deep necrotising infections (necrotising fasciitis, myonecrosis), and graded as mild, moderate or severe by systemic signs.",
+        "Staphylococcus aureus, of which about 40% of Indian isolates are methicillin-resistant, causes most purulent infections, and Streptococcus pyogenes causes most cellulitis and erysipelas.",
+      ],
+      answer: [
+        {
+          heading: "1. Classification",
+          points: [
+            "Superficial: impetigo, ecthyma, folliculitis. Dermal-subcutaneous: erysipelas, cellulitis. Purulent: furuncle, carbuncle, abscess. Necrotising: necrotising fasciitis types I to III, gas gangrene, Fournier gangrene. Special: diabetic foot, bite wounds, surgical site infection.",
+            "Severity grading (IDSA 2014): mild - no systemic signs; moderate - systemic signs; severe - SIRS with hypotension, immunocompromise or failure of initial therapy.",
+          ],
+        },
+        {
+          heading: "2. Cellulitis: clinical features and diagnosis",
+          points: [
+            "Warm, red, tender, oedematous area with indistinct margins, usually on the leg, with fever, lymphangitis and regional nodes; erysipelas has a raised sharply demarcated edge.",
+            "Portal of entry: tinea pedis, fissures, ulcers, bites, injections; risk factors of lymphoedema, venous disease, obesity, diabetes, previous cellulitis.",
+            "Differentials: deep vein thrombosis, venous eczema, gout, contact dermatitis, necrotising fasciitis; bilateral cellulitis is rare.",
+            "Diagnosis is clinical; blood cultures and pus cultures in severe or purulent disease; ultrasound for occult abscess; mark the margin.",
+          ],
+        },
+        {
+          heading: "3. Management of cellulitis",
+          points: [
+            "Mild non-purulent: amoxicillin 500 mg TDS or cephalexin 500 mg QID for 5 days; purulent or staphylococcal: cloxacillin 500 mg QID, with cotrimoxazole, doxycycline or clindamycin for MRSA risk.",
+            "Moderate: intravenous cefazolin or cloxacillin; severe: vancomycin or linezolid plus piperacillin-tazobactam; oral switch after 48 hours afebrile.",
+            "Elevation, analgesia, treatment of portal of entry, drainage of any collection; prevention of recurrence with foot care, compression, treatment of tinea, and penicillin V 250 mg BD for a year after two or more episodes; ADLA care in filarial lymphoedema.",
+          ],
+        },
+        {
+          heading: "4. Necrotising fasciitis",
+          points: [
+            "Recognition: pain out of proportion, oedema beyond erythema, dusky anaesthetic skin, haemorrhagic bullae, crepitus, dishwater discharge, rapid progression, systemic toxicity; LRINEC 6 or more supports, low score does not exclude; finger test at the bedside.",
+            "Management: resuscitation with fluids, blood cultures, first dose of piperacillin-tazobactam or meropenem plus clindamycin plus vancomycin, and immediate surgical debridement repeated until clean; transfer to a surgical centre without delay; tetanus prophylaxis; intensive care support.",
+            "Mortality 20-30%; every hour of delay to the theatre increases it.",
+          ],
+        },
+      ],
+      mustDraw: [
+        "A classification table of skin and soft tissue infections by depth with organism and first-line drug.",
+        "A list or table of the LRINEC score parameters and interpretation.",
+      ],
+      markSplit: [
+        { part: "Classification and organisms", marks: 2 },
+        { part: "Cellulitis clinical features, differentials and diagnosis", marks: 2.5 },
+        { part: "Cellulitis management and prevention of recurrence", marks: 2.5 },
+        { part: "Necrotising fasciitis recognition and management", marks: 3 },
+      ],
+      keywords: ["cellulitis", "necrotising fasciitis", "LRINEC", "MRSA", "cloxacillin", "clindamycin"],
+    },
+    {
+      id: "infectious-fever-skin-soft-tissue-infection-t2",
+      paper: "II",
+      kind: "short-note",
+      marks: 5,
+      minutes: 10,
+      frequency: "common",
+      question: "Write a short note on the classification and management of diabetic foot infection.",
+      openingLines: [
+        "Diabetic foot infection is infection of any tissue below the malleoli in a person with diabetes, diagnosed clinically by two or more of purulence, erythema, warmth, tenderness, induration or swelling, and it is the commonest cause of non-traumatic lower limb amputation in India.",
+        "Neuropathy, ischaemia and immune dysfunction combine so that a trivial wound becomes a limb-threatening infection, and management rests on antibiotics, debridement, off-loading and revascularisation together.",
+      ],
+      answer: [
+        {
+          heading: "Classification (IWGDF/IDSA 2023)",
+          points: [
+            "Uninfected: no signs. Mild: skin and subcutaneous tissue only, erythema 0.5-2 cm. Moderate: erythema over 2 cm or deeper structures (abscess, osteomyelitis, tendon, joint), no systemic signs. Severe: any infection with systemic inflammatory response.",
+            "Osteomyelitis suspected by positive probe-to-bone test, ESR above 70, ulcer over 2 cm square or lasting over 6 weeks, sausage toe; confirmed by radiograph, MRI or bone biopsy.",
+          ],
+        },
+        {
+          heading: "Assessment",
+          points: [
+            "Wound depth and probe, peripheral pulses and ankle-brachial index, neuropathy testing with monofilament, glycaemic status, renal function, and tissue culture from the debrided base rather than a surface swab.",
+          ],
+        },
+        {
+          heading: "Management",
+          points: [
+            "Mild: oral cephalexin, cloxacillin or amoxicillin-clavulanate for 1-2 weeks. Moderate and severe: admission, intravenous piperacillin-tazobactam or amoxicillin-clavulanate plus MRSA cover with vancomycin or linezolid, 2-3 weeks for soft tissue, 6 weeks for osteomyelitis without resection.",
+            "Surgical debridement of necrotic tissue and drainage of abscess, off-loading with total contact cast or removable walker, revascularisation if ischaemic, glycaemic control, and dressing care.",
+            "Prevention: daily foot inspection, appropriate footwear, callus care, smoking cessation, annual foot risk screening, and education of the patient and family.",
+          ],
+        },
+      ],
+      mustDraw: ["A table of the mild, moderate and severe grades with the treatment setting, drug and duration for each."],
+      markSplit: [
+        { part: "Definition and classification with osteomyelitis clues", marks: 2 },
+        { part: "Assessment", marks: 1 },
+        { part: "Management and prevention", marks: 2 },
+      ],
+      keywords: ["diabetic foot infection", "probe-to-bone", "IWGDF", "off-loading", "osteomyelitis"],
+    },
+  ],
+  mcqs: [
+    {
+      id: "infectious-fever-skin-soft-tissue-infection-q1",
+      stem: "A 45-year-old man with diabetes presents with a painful, swollen left thigh 2 days after a minor scratch. Temperature 39.5 C, pulse 128, BP 88/56 mmHg. The thigh is tense and exquisitely tender well beyond a 10 cm area of dusky erythema, with two haemorrhagic bullae and crepitus. Which is the most appropriate immediate management?",
+      options: [
+        "Oral amoxicillin-clavulanate and review in 24 hours",
+        "Intravenous cefazolin, elevation and observation overnight to assess the response",
+        "Intravenous fluids, blood cultures, intravenous piperacillin-tazobactam plus clindamycin, and immediate surgical debridement",
+        "MRI of the thigh before any intervention",
+        "Intravenous vancomycin alone and CT of the thigh",
+      ],
+      answer: 2,
+      explanation:
+        "Pain out of proportion, tense oedema beyond the erythema, dusky skin, haemorrhagic bullae, crepitus and shock in a diabetic is necrotising fasciitis, and survival depends on immediate surgical debridement with resuscitation and broad-spectrum antibiotics plus clindamycin for toxin suppression. Oral therapy or overnight observation on cefazolin allows the infection to spread along the fascia. MRI or CT can support the diagnosis but must never delay surgery in a patient with this clinical picture, and vancomycin alone does not cover the polymicrobial flora of type I necrotising infection.",
+      difficulty: "easy",
+    },
+    {
+      id: "infectious-fever-skin-soft-tissue-infection-q2",
+      stem: "A 30-year-old woman has a 3 cm fluctuant, tender abscess on the thigh for 4 days with 1 cm of surrounding erythema, no fever and no comorbidity. Which is the most appropriate management?",
+      options: [
+        "Oral cloxacillin for 7 days and review",
+        "Incision and drainage with culture of the pus; consider a short course of cotrimoxazole",
+        "Intravenous vancomycin for 5 days",
+        "Warm compresses only",
+        "Needle aspiration and oral ciprofloxacin",
+      ],
+      answer: 1,
+      explanation:
+        "Incision and drainage is the definitive treatment of a fluctuant abscess, with the pus sent for culture because 40% of Indian S. aureus is MRSA; a short adjunctive course of cotrimoxazole or clindamycin improves cure modestly for an abscess over 2 cm. Antibiotics alone, whether oral cloxacillin or intravenous vancomycin, do not sterilise a collection with no blood supply, and vancomycin is disproportionate for a well patient. Warm compresses suit an early non-fluctuant furuncle, not a 3 cm collection. Needle aspiration has inferior cure rates and ciprofloxacin is a poor anti-staphylococcal agent.",
+      difficulty: "easy",
+    },
+    {
+      id: "infectious-fever-skin-soft-tissue-infection-q3",
+      stem: "A 55-year-old woman has a warm, red, tender area with indistinct margins on the right shin, fever of 38.2 C and fissured toe webs. She is otherwise well with normal vital signs. Which is the most appropriate treatment?",
+      options: [
+        "Oral amoxicillin 500 mg three times daily or cephalexin 500 mg four times daily for 5 days, topical antifungal for the toe webs, and elevation",
+        "Oral clindamycin for 14 days",
+        "Intravenous vancomycin because MRSA is common in India",
+        "Oral azithromycin 500 mg daily for 3 days",
+        "Topical mupirocin alone",
+      ],
+      answer: 0,
+      explanation:
+        "Non-purulent cellulitis is streptococcal in the great majority and is treated with amoxicillin or cephalexin for 5 days, extended only if not improving, with treatment of the tinea pedis that served as the portal of entry and elevation of the limb. Clindamycin or vancomycin for MRSA are reserved for purulent infection, severe disease or failed beta-lactam therapy, and a 14-day course is unnecessarily long. Azithromycin has unreliable streptococcal activity because of macrolide resistance. Topical mupirocin does not treat dermal and subcutaneous infection.",
+      difficulty: "moderate",
+    },
+    {
+      id: "infectious-fever-skin-soft-tissue-infection-q4",
+      stem: "A 62-year-old man with type 2 diabetes for 15 years has a 2.5 cm plantar ulcer under the first metatarsal head for 2 months with purulent discharge and 3 cm of surrounding erythema, no fever. A sterile probe passed into the ulcer touches bone. ESR is 88 mm in the first hour. Which statement is correct?",
+      options: [
+        "The infection is mild and oral cephalexin for 7 days is sufficient",
+        "Osteomyelitis is likely; obtain a radiograph and bone or deep tissue culture, and plan antibiotics for about 6 weeks with debridement and off-loading",
+        "A surface swab of the ulcer should guide antibiotic choice",
+        "Antibiotics can be stopped once the surrounding erythema resolves",
+        "Immediate below-knee amputation is indicated",
+      ],
+      answer: 1,
+      explanation:
+        "A positive probe-to-bone test with an ESR above 70 and a chronic ulcer over 2 cm square makes osteomyelitis highly likely, so a radiograph (and MRI if unclear), deep tissue or bone culture, surgical debridement, complete off-loading and 6 weeks of antibiotics without resection are the plan. Erythema over 2 cm with deep involvement makes this moderate, not mild. Surface swabs grow colonisers and mislead. Stopping antibiotics on resolution of erythema undertreats bone infection, and amputation is not the first step in a foot with no sepsis and unknown vascular status.",
+      difficulty: "moderate",
+    },
+    {
+      id: "infectious-fever-skin-soft-tissue-infection-q5",
+      stem: "A 24-year-old man was bitten on the hand by a stray dog 6 hours ago. There are two deep puncture wounds over the dorsum with mild bleeding. Which of the following is the correct management of the wound infection risk?",
+      options: [
+        "Primary suturing after cleaning to reduce infection",
+        "Cloxacillin 500 mg four times daily for 5 days",
+        "Wound irrigation, no primary closure, tetanus prophylaxis, rabies post-exposure prophylaxis, and amoxicillin-clavulanate 625 mg three times daily for 3-5 days",
+        "Topical mupirocin and review in a week",
+        "Cephalexin 500 mg four times daily for 7 days",
+      ],
+      answer: 2,
+      explanation:
+        "Deep puncture bites on the hand carry a high infection risk from Pasteurella multocida, anaerobes and staphylococci, and amoxicillin-clavulanate is the drug that covers all of them; the wound is irrigated and left open, tetanus toxoid is given, and a category III exposure needs rabies vaccine and immunoglobulin. Primary closure of hand punctures seals in infection. Cloxacillin and cephalexin miss Pasteurella, which is the organism most likely to cause rapid cellulitis after a bite. Topical therapy alone is inadequate for a deep puncture.",
+      difficulty: "easy",
+    },
+  ],
+  cards: [
+    {
+      id: "infectious-fever-skin-soft-tissue-infection-c1",
+      front: "Organism rule for skin and soft tissue infection.",
+      back: "Purulent (abscess, furuncle, carbuncle) - Staphylococcus aureus. Non-purulent (cellulitis, erysipelas) - Streptococcus pyogenes.",
+    },
+    {
+      id: "infectious-fever-skin-soft-tissue-infection-c2",
+      front: "Treatment of limited and extensive impetigo.",
+      back: "Limited: topical mupirocin 2% or fusidic acid TDS for 5-7 days. Extensive: oral cephalexin or cloxacillin for 7 days. Warn about post-streptococcal glomerulonephritis.",
+    },
+    {
+      id: "infectious-fever-skin-soft-tissue-infection-c3",
+      front: "Oral drugs that cover community MRSA in India.",
+      back: "Cotrimoxazole double strength BD, doxycycline 100 mg BD, clindamycin 300-450 mg TDS; linezolid 600 mg BD for severe infection.",
+    },
+    {
+      id: "infectious-fever-skin-soft-tissue-infection-c4",
+      front: "Duration of antibiotics for uncomplicated cellulitis.",
+      back: "Five days if improving (Hepburn trial); extend only if the infection has not improved.",
+    },
+    {
+      id: "infectious-fever-skin-soft-tissue-infection-c5",
+      front: "Clinical clues to necrotising fasciitis.",
+      back: "Pain out of proportion, oedema beyond erythema, dusky or anaesthetic skin, haemorrhagic bullae, crepitus, dishwater discharge, systemic toxicity, progression over hours.",
+    },
+    {
+      id: "infectious-fever-skin-soft-tissue-infection-c6",
+      front: "LRINEC score components and cut-offs.",
+      back: "CRP, leucocyte count, haemoglobin, sodium, creatinine, glucose. Score 6-7 intermediate, 8 or more high risk. A low score does not exclude the diagnosis.",
+    },
+    {
+      id: "infectious-fever-skin-soft-tissue-infection-c7",
+      front: "Antibiotic regimen for necrotising fasciitis and why clindamycin.",
+      back: "Piperacillin-tazobactam or meropenem plus clindamycin plus vancomycin, with immediate debridement. Clindamycin suppresses toxin production and works in the stationary phase (Eagle effect).",
+    },
+    {
+      id: "infectious-fever-skin-soft-tissue-infection-c8",
+      front: "Prevention of recurrent cellulitis.",
+      back: "Treat tinea pedis and lymphoedema, compression, skin care, and penicillin V 250 mg BD for 12 months after two or more episodes (PATCH I). Foot hygiene for filarial ADLA under NVBDCP.",
+    },
+  ],
+  references: [
+    "Stevens DL et al., IDSA Practice Guidelines for the Diagnosis and Management of Skin and Soft Tissue Infections, 2014 update",
+    "ICMR Treatment Guidelines for Antimicrobial Use in Common Syndromes, 3rd edition, 2022 - skin and soft tissue infections",
+    "IWGDF/IDSA Guidelines on the Diagnosis and Treatment of Diabetes-related Foot Infections, 2023",
+    "Wong CH et al., The LRINEC score: a tool for distinguishing necrotizing fasciitis from other soft tissue infections, Critical Care Medicine 2004",
+    "Thomas KS et al., Penicillin to prevent recurrent leg cellulitis (PATCH I), New England Journal of Medicine 2013",
+    "NVBDCP Guidelines on Morbidity Management and Disability Prevention for lymphatic filariasis, MoHFW",
+  ],
+});
+
+topics.push({
+  id: "infectious-fever-rabies-animal-bite",
+  title: "Animal bite and rabies post-exposure prophylaxis",
+  oneLiner:
+    "Rabies is a uniformly fatal Lyssavirus encephalitis transmitted by the saliva of a rabid animal, almost always a dog in India, and it is completely preventable by immediate wound washing for 15 minutes, a cell culture vaccine by the intradermal or intramuscular schedule, and rabies immunoglobulin infiltrated into every category III wound.",
+  frequency: "common",
+  keywords: [
+    "rabies",
+    "dog bite",
+    "animal bite",
+    "post-exposure prophylaxis",
+    "PEP",
+    "PrEP",
+    "WHO category",
+    "rabies immunoglobulin",
+    "RIG",
+    "ERIG",
+    "HRIG",
+    "rabies monoclonal antibody",
+    "Essen regimen",
+    "Zagreb regimen",
+    "Thai Red Cross intradermal",
+    "National Rabies Control Programme",
+    "NAPRE",
+    "hydrophobia",
+    "Negri bodies",
+  ],
+  sections: [
+    {
+      heading: "Virus, burden and the disease",
+      points: [
+        "**Rabies virus is a bullet-shaped, single-stranded negative-sense RNA virus of the genus Lyssavirus, family Rhabdoviridae**; it enters through a bite, scratch or lick on broken skin or mucosa, replicates in muscle, travels centripetally along peripheral nerves at 50-100 mm a day, multiplies in the brain, and then spreads centrifugally to the salivary glands.",
+        "**India accounts for about 36% of the world's rabies deaths, an estimated 18,000-20,000 a year**, with 96-97% transmitted by dogs, the rest by cats, monkeys, mongooses, jackals and cattle; children under 15 years are 40% of victims because they are bitten on the face and head and often do not report the bite.",
+        "**Incubation is usually 20-90 days but ranges from 4 days to several years**, shorter with bites on the face, head and neck, multiple or deep bites, and in children, because the distance the virus must travel to the brain is shorter and the inoculum larger.",
+        "**Furious rabies (80%)** begins with fever and paraesthesia or itching at the healed bite site, then agitation, hydrophobia (painful pharyngeal spasm on attempting to drink or even on seeing water), aerophobia, hypersalivation and autonomic instability, with death within a week; **paralytic (dumb) rabies (20%)** presents as an ascending flaccid paralysis that mimics Guillain-Barre syndrome and is missed unless the bite history is sought.",
+        "**Once symptoms begin rabies is virtually 100% fatal**; the Milwaukee protocol has not reproduced its single success, and treatment is palliative sedation with barrier precautions for saliva. Ante-mortem diagnosis uses nuchal skin biopsy for viral antigen by direct fluorescent antibody, saliva RT-PCR and CSF antibody; post-mortem diagnosis is by fluorescent antibody testing of brain and the Negri bodies in hippocampal and Purkinje neurons.",
+        "**Rabies is a notifiable disease in India (2021), reported through IDSP**, and the **National Rabies Control Programme (NRCP)** under NCDC, launched in the 12th Five Year Plan, together with the **National Action Plan for Dog Mediated Rabies Elimination (NAPRE, 2021)** aims at zero dog-mediated human rabies deaths by 2030 through PEP availability, dog vaccination, animal birth control and surveillance; the Semple nerve tissue vaccine was discontinued in 2004.",
+      ],
+    },
+    {
+      heading: "Categorising the exposure",
+      points: [
+        "**Category I: touching or feeding an animal, or licks on intact skin - no exposure; wash the skin, no prophylaxis** if the history is reliable.",
+        "**Category II: nibbling of uncovered skin, minor scratches or abrasions without bleeding - wound washing and vaccine**; rabies immunoglobulin is added for the immunocompromised.",
+        "**Category III: single or multiple transdermal bites or scratches, licks on broken skin, contamination of mucous membranes with saliva, and any direct contact with a bat - wound washing, vaccine and rabies immunoglobulin.** A bite through clothing that has broken the skin is category III, and a scratch that bleeds is category III.",
+        "Do not downgrade because the bite was provoked, because the dog was a pet, because the dog was vaccinated, or because the wound looks clean: **a provoked bite from a rabid animal transmits rabies just as well**, and vaccine failure in dogs is well documented. Bites from rats, squirrels, hares and birds essentially never transmit rabies and do not need PEP.",
+        "**If a dog or cat is healthy and available for observation, it is observed for 10 days**; if it remains healthy the vaccine course may be stopped after the doses already given, but PEP is always started on day 0 and never delayed for the observation, because a dog shedding virus in saliva will show signs within 10 days.",
+        "**There is no time limit for starting PEP**: a patient who presents weeks or months after a bite still receives the full course, because the incubation period may not yet have ended; pregnancy, lactation, infancy and old age are never contraindications.",
+      ],
+    },
+    {
+      heading: "Wound management: the step that halves the risk",
+      points: [
+        "**Wash the wound immediately with soap and running water for 15 minutes**, flushing every puncture; this removes and inactivates virus at the site and alone reduces the risk of rabies by about half. Then apply a virucidal agent such as povidone iodine or 70% alcohol.",
+        "**Do not apply chilli, turmeric, lime, oil, plant juice, cow dung or any traditional irritant**, and do not cauterise; these delay healing and do nothing to the virus.",
+        "**Do not suture the wound.** If closure is unavoidable for cosmetic or haemostatic reasons, infiltrate rabies immunoglobulin into the wound first, wait several hours, and then place loose sutures; primary closure without RIG drives virus into the tissue.",
+        "Give **tetanus toxoid or Td according to immunisation status**, and antibiotics (amoxicillin-clavulanate for 3-5 days) for deep punctures, hand, face and genital bites, cat bites, crush injuries and the immunocompromised; assess for tendon, nerve, joint and vascular injury and refer when present.",
+        "Explore and irrigate deep wounds under local anaesthesia, remove foreign material and devitalised tissue, and leave the wound open with a light dressing; review at 48 hours for infection.",
+        "Record the animal, the circumstances, the category, the sites of wounds and the doses given, in the patient's card and in the clinic register, because the schedule spans a month and the patient will be seen by others.",
+      ],
+    },
+    {
+      heading: "Vaccination schedules: intramuscular and intradermal",
+      points: [
+        "**Only cell culture or embryonated egg vaccines are used - purified chick embryo cell (PCECV), purified Vero cell (PVRV) and human diploid cell vaccine - each with a potency of at least 2.5 IU per intramuscular dose**; the whole vial (0.5 mL or 1 mL depending on the brand) is one intramuscular dose regardless of age or weight.",
+        "**Intramuscular Essen regimen: one dose on days 0, 3, 7, 14 and 28 (five doses, five visits)** into the **deltoid in adults and the anterolateral thigh in children under 2 years - never the gluteal region**, where fat delays absorption and lowers the antibody response.",
+        "**Intramuscular Zagreb regimen (2-1-1): two doses on day 0, one in each deltoid, then one dose on day 7 and one on day 21 (four doses, three visits)**, which improves completion because there are fewer visits.",
+        "**Intradermal updated Thai Red Cross regimen (2-2-2-0-2): 0.1 mL at each of two sites (both deltoids) on days 0, 3, 7 and 28 - eight doses in four visits**, raising a papule at each site; a reconstituted vial must be used within 6-8 hours and shared between patients, which is why the intradermal route is used at anti-rabies clinics with adequate throughput and cuts vaccine cost by 60-80%. WHO 2018 also endorses a 1-week 2-site intradermal schedule (days 0, 3, 7) and a 4-dose intramuscular schedule (days 0, 3, 7 and 14-28) as abbreviated options.",
+        "**Previously fully vaccinated patients (complete PEP or PrEP with a cell culture vaccine) need only two doses on days 0 and 3, intramuscular or intradermal, with no immunoglobulin, whatever the interval since the last dose**; WHO 2018 also allows a single-visit 4-site intradermal dose on day 0. Those who received nerve tissue vaccine or an incomplete course are treated as unvaccinated.",
+        "**Pre-exposure prophylaxis (PrEP)** for veterinarians, animal handlers, laboratory workers, wildlife staff, and children in high-risk settings: intradermal or intramuscular doses on days 0 and 7 (WHO 2018), or days 0, 7 and 21 or 28 in the Indian schedule; a booster is given only on exposure or when the titre falls below 0.5 IU/mL in those tested. Intercurrent illness, chloroquine and steroids reduce the response, and the immunocompromised should have a rapid fluorescent focus inhibition test titre of 0.5 IU/mL or more checked after the course.",
+      ],
+    },
+    {
+      heading: "Rabies immunoglobulin and monoclonal antibodies",
+      points: [
+        "**Rabies immunoglobulin provides passive antibody at the wound for the 7-10 days before the vaccine produces active immunity, and it is indicated for every category III exposure and for category II exposure in the immunocompromised**; it is given once, on day 0, or as late as day 7 after the first vaccine dose, and never after that because it would suppress the vaccine response.",
+        "**Equine RIG: 40 IU/kg, maximum 3000 IU; human RIG: 20 IU/kg, maximum 1500 IU; rabies monoclonal antibody: 3.33 IU/kg for the single-antibody product (docaravimab, Rabishield) or 40 IU/kg for the two-antibody cocktail (Twinrab)**; the monoclonal products are Indian-manufactured, free of serum sickness and now widely used in government anti-rabies clinics.",
+        "**Infiltrate as much of the calculated dose as anatomically possible into and around every wound**, including the fingertip and face wounds, using a fine needle; if the volume is too small for multiple or large wounds, dilute two- to three-fold with normal saline so that every wound is infiltrated. The remaining volume, if any, may be injected intramuscularly at a site distant from the vaccine, though WHO 2018 states this adds nothing.",
+        "**Never exceed the calculated dose**, never give RIG in the same syringe or the same site as the vaccine, and never give RIG to a patient who has previously completed a full vaccine course, because the pre-existing memory response is faster than passive antibody and RIG would blunt it.",
+        "**Skin sensitivity testing before equine RIG is no longer recommended** (Indian guidelines 2019), because it does not predict anaphylaxis; instead give ERIG with adrenaline, antihistamine and resuscitation equipment at hand, observe for 30 minutes, and warn about serum sickness at 7-14 days, which is treated with antihistamines and a short course of steroids.",
+        "Where RIG is unavailable the vaccine must still be started immediately and the patient referred to the nearest centre that stocks RIG within 7 days; a category III bite on the face with no RIG is an emergency referral, not a note in the file.",
+      ],
+    },
+  ],
+  tables: [
+    {
+      heading: "WHO categories of exposure and the prophylaxis for each",
+      columns: ["Category", "Type of contact with a suspect rabid animal", "Recommended prophylaxis"],
+      rows: [
+        ["I", "Touching or feeding the animal; licks on intact skin", "None if the history is reliable; wash the skin"],
+        ["II", "Nibbling of uncovered skin; minor scratches or abrasions without bleeding", "Wound washing and vaccine; add RIG if immunocompromised"],
+        ["III", "Single or multiple transdermal bites or scratches; licks on broken skin; saliva on mucous membranes; any contact with a bat", "Wound washing, vaccine and rabies immunoglobulin infiltrated into all wounds"],
+      ],
+    },
+    {
+      heading: "Vaccine regimens and immunoglobulin products used in India",
+      columns: ["Regimen or product", "Route and dose", "Schedule", "Notes"],
+      rows: [
+        ["Essen (IM)", "One vial (0.5 or 1 mL) IM in deltoid or anterolateral thigh", "Days 0, 3, 7, 14, 28", "Five doses, five visits; never gluteal"],
+        ["Zagreb 2-1-1 (IM)", "One vial IM per site", "Two doses day 0 (one each deltoid), then days 7 and 21", "Four doses, three visits"],
+        ["Updated Thai Red Cross (ID)", "0.1 mL at each of two sites", "Days 0, 3, 7, 28", "Eight doses, four visits; vial shared, use within 6-8 hours"],
+        ["Re-exposure after complete prior course", "One dose IM or ID per visit", "Days 0 and 3", "No RIG; any interval since prior course; WHO also allows 4-site ID on day 0"],
+        ["Pre-exposure prophylaxis", "IM or ID", "Days 0 and 7 (WHO 2018) or 0, 7, 21/28 (India)", "For occupational risk; booster only on exposure or low titre"],
+        ["Equine RIG", "40 IU/kg, maximum 3000 IU", "Day 0, up to day 7", "No skin test; adrenaline ready; serum sickness possible"],
+        ["Human RIG", "20 IU/kg, maximum 1500 IU", "Day 0, up to day 7", "Costly; no serum sickness"],
+        ["Rabies monoclonal antibody", "3.33 IU/kg (single mAb) or 40 IU/kg (two-mAb cocktail)", "Day 0, up to day 7", "Indian products; infiltrate into wounds like RIG"],
+      ],
+    },
+  ],
+  redFlags: [
+    "Category III bite on the face, head, neck or fingers, or multiple deep bites - shortest incubation; RIG and vaccine today, not tomorrow.",
+    "Any bite in a child, an immunocompromised patient or a patient who reports a bite from an unprovoked, sick or dead animal - full PEP without debate.",
+    "Bite from a wild animal (mongoose, jackal, fox, monkey) or any contact with a bat - category III.",
+    "Paraesthesia or itching at a healed bite site with fever, anxiety or difficulty swallowing - prodrome of rabies; palliative care and protection of contacts.",
+    "Ascending flaccid paralysis with a bite history in the preceding months - paralytic rabies, not Guillain-Barre syndrome.",
+    "Category III wound in a clinic with no rabies immunoglobulin - start vaccine and refer the same day; RIG must be given within 7 days of the first vaccine dose.",
+  ],
+  pearls: [
+    "Fifteen minutes of soap and running water halves the risk of rabies before any vaccine is opened.",
+    "Blood at the site of a scratch or bite makes it category III: vaccine plus immunoglobulin.",
+    "The whole vial is one intramuscular dose whatever the age or weight; in the deltoid or thigh, never the buttock.",
+    "Essen 0-3-7-14-28 intramuscular; Zagreb 2-1-1 on days 0-7-21; Thai Red Cross intradermal 0.1 mL at two sites on days 0-3-7-28.",
+    "ERIG 40 IU/kg, HRIG 20 IU/kg, infiltrated into every wound, up to day 7 - and never for a previously fully vaccinated patient.",
+    "A previously fully vaccinated patient needs two doses on days 0 and 3 and no immunoglobulin, however many years ago the course was.",
+    "Observe the dog for 10 days but start the vaccine on day 0; the observation may shorten the course, never delay its start.",
+    "No time limit for PEP and no contraindication - pregnancy, infancy and a bite three months old all get the full course.",
+  ],
+  theory: [
+    {
+      id: "infectious-fever-rabies-animal-bite-t1",
+      paper: "II",
+      kind: "long",
+      marks: 10,
+      minutes: 20,
+      frequency: "core",
+      question:
+        "A 6-year-old boy is brought to your clinic one hour after being bitten on the cheek and hand by a stray dog. Describe the categorisation of the exposure and the complete post-exposure prophylaxis you would give, including wound management, vaccine schedules and rabies immunoglobulin. Add a note on the National Rabies Control Programme.",
+      openingLines: [
+        "Rabies is a fatal Lyssavirus encephalitis transmitted through the saliva of a rabid animal, causing an estimated 18,000-20,000 deaths a year in India, 96% from dog bites, with children under 15 forming 40% of victims.",
+        "Transdermal bites on the face and hand with bleeding constitute a WHO category III exposure requiring immediate wound washing, a cell culture vaccine and rabies immunoglobulin, and the short incubation of facial bites in a child makes the first hour decisive.",
+      ],
+      answer: [
+        {
+          heading: "1. Categorisation and assessment",
+          points: [
+            "Category III: transdermal bites with bleeding on the face and hand; also assess for tendon, nerve, joint and vascular injury on the hand and cosmetic injury on the face.",
+            "History of the dog (stray, provoked or not, available for observation), the child's tetanus immunisation status, previous rabies vaccination, and any immunosuppression.",
+            "Provoked bite, pet dog or vaccinated dog does not downgrade the category; there is no contraindication and no time limit to PEP.",
+          ],
+        },
+        {
+          heading: "2. Wound management",
+          points: [
+            "Immediate washing with soap and running water for 15 minutes, flushing each puncture; then povidone iodine or 70% alcohol; no irritants, no cautery.",
+            "No suturing; if facial closure is unavoidable, infiltrate RIG first and place loose sutures after several hours; tetanus toxoid according to status; amoxicillin-clavulanate for 3-5 days for hand and face bites; wound review at 48 hours.",
+          ],
+        },
+        {
+          heading: "3. Rabies immunoglobulin",
+          points: [
+            "Given on day 0 (up to day 7 of the first vaccine dose): equine RIG 40 IU/kg (maximum 3000 IU), human RIG 20 IU/kg (maximum 1500 IU), or rabies monoclonal antibody 3.33 IU/kg or 40 IU/kg according to product.",
+            "Infiltrate the full calculated dose into and around all wounds, diluting with saline if volume is insufficient; any remainder IM distant from the vaccine site; no skin test before ERIG but adrenaline ready; never exceed the dose, never in the same syringe as vaccine.",
+          ],
+        },
+        {
+          heading: "4. Vaccination",
+          points: [
+            "Cell culture vaccine (PCECV, PVRV or HDCV, potency at least 2.5 IU per dose); intramuscular in the deltoid (anterolateral thigh under 2 years), never gluteal.",
+            "Essen IM: days 0, 3, 7, 14, 28; or Zagreb IM 2-1-1: two doses day 0, then days 7 and 21; or intradermal updated Thai Red Cross: 0.1 mL at two sites on days 0, 3, 7, 28.",
+            "If the dog is available, observe for 10 days; the course may be stopped if the dog remains healthy, but is never delayed for the observation. Re-exposure in a fully vaccinated person: two doses on days 0 and 3, no RIG.",
+            "Counsel the family on completing every dose, record on the card, and report the bite in the clinic register and to IDSP.",
+          ],
+        },
+        {
+          heading: "5. National Rabies Control Programme",
+          points: [
+            "NRCP under NCDC (launched in the 12th Five Year Plan): human health component - training, availability of vaccine and RIG at anti-rabies clinics, intradermal vaccination, surveillance and IEC; animal health component - dog vaccination and animal birth control.",
+            "National Action Plan for Dog Mediated Rabies Elimination (NAPRE, 2021) with a One Health approach targeting zero human deaths from dog-mediated rabies by 2030; rabies made notifiable in 2021; nerve tissue vaccine discontinued 2004; World Rabies Day 28 September.",
+          ],
+        },
+      ],
+      mustDraw: [
+        "A table of WHO categories I, II and III with the prophylaxis for each.",
+        "A table of the Essen, Zagreb and updated Thai Red Cross schedules with days and doses, and the RIG doses.",
+      ],
+      markSplit: [
+        { part: "Categorisation and assessment", marks: 1.5 },
+        { part: "Wound management", marks: 2 },
+        { part: "Rabies immunoglobulin with doses and technique", marks: 2.5 },
+        { part: "Vaccine schedules and observation of the animal", marks: 2.5 },
+        { part: "National Rabies Control Programme", marks: 1.5 },
+      ],
+      keywords: ["rabies", "post-exposure prophylaxis", "category III", "rabies immunoglobulin", "Essen", "intradermal", "NRCP"],
+    },
+    {
+      id: "infectious-fever-rabies-animal-bite-t2",
+      paper: "II",
+      kind: "short-note",
+      marks: 5,
+      minutes: 10,
+      frequency: "core",
+      question: "Write a short note on rabies immunoglobulin: indications, preparations, dose and method of administration.",
+      openingLines: [
+        "Rabies immunoglobulin provides immediate passive neutralising antibody at the site of inoculation during the 7-10 days before the vaccine generates an active response, and it is the component of post-exposure prophylaxis most often omitted in practice and most often responsible for vaccine failure deaths.",
+        "It is indicated for every WHO category III exposure and for category II exposure in the immunocompromised, given once, on day 0 or at the latest within 7 days of the first vaccine dose.",
+      ],
+      answer: [
+        {
+          heading: "Preparations and dose",
+          points: [
+            "Equine RIG 40 IU/kg body weight, maximum 3000 IU; human RIG 20 IU/kg, maximum 1500 IU; rabies monoclonal antibodies manufactured in India: single antibody 3.33 IU/kg, two-antibody cocktail 40 IU/kg.",
+            "Skin sensitivity testing before ERIG is no longer recommended; administer with adrenaline and resuscitation facilities available and observe for 30 minutes; serum sickness at 7-14 days in 1-6%, treated with antihistamines and steroids.",
+          ],
+        },
+        {
+          heading: "Administration",
+          points: [
+            "Infiltrate the maximum anatomically feasible volume into and around every wound, including fingers and face, with a fine needle; dilute two- to three-fold with normal saline if the volume is insufficient for multiple wounds.",
+            "Any remainder may be given intramuscularly at a site distant from the vaccine; never the same syringe, site or limb as the vaccine.",
+            "Never exceed the calculated dose, because excess suppresses the active response; if wounds are sutured, RIG must be infiltrated first.",
+          ],
+        },
+        {
+          heading: "When not to give",
+          points: [
+            "Not after day 7 of the first vaccine dose; not to a patient who has completed a previous full course of cell culture vaccine or PrEP (two vaccine doses on days 0 and 3 suffice); not for category I or immunocompetent category II exposures.",
+            "If RIG is unavailable, start the vaccine immediately and refer for RIG within 7 days.",
+          ],
+        },
+      ],
+      mustDraw: ["A table of ERIG, HRIG and monoclonal antibody with dose per kg, maximum dose and key precautions."],
+      markSplit: [
+        { part: "Indications and timing", marks: 1.5 },
+        { part: "Preparations and dose", marks: 1.5 },
+        { part: "Method of administration and contraindications", marks: 2 },
+      ],
+      keywords: ["rabies immunoglobulin", "ERIG", "HRIG", "monoclonal antibody", "category III", "infiltration"],
+    },
+  ],
+  mcqs: [
+    {
+      id: "infectious-fever-rabies-animal-bite-q1",
+      stem: "A 35-year-old woman was scratched on the forearm by a stray cat 2 hours ago. There are three linear scratches, one of which is oozing blood. She has never received rabies vaccine. Which is the correct post-exposure prophylaxis?",
+      options: [
+        "Wound washing only, because cat scratches do not transmit rabies",
+        "Wound washing and vaccine on days 0, 3, 7, 14 and 28 without immunoglobulin",
+        "Wound washing, rabies immunoglobulin infiltrated into the scratches, and a full vaccine course",
+        "Vaccine on days 0 and 3 only",
+        "Observe the cat for 10 days and vaccinate only if it dies",
+      ],
+      answer: 2,
+      explanation:
+        "A scratch that bleeds is a transdermal injury and therefore a WHO category III exposure, which requires washing, rabies immunoglobulin into the wounds and a full vaccine course; cats are the second commonest source of human rabies in India. Vaccine alone would be correct for category II, where there is no bleeding. Two doses on days 0 and 3 are for patients who have previously completed a full course. Delaying prophylaxis until the animal is observed is never acceptable, though the course may be stopped if a healthy cat remains well for 10 days.",
+      difficulty: "easy",
+    },
+    {
+      id: "infectious-fever-rabies-animal-bite-q2",
+      stem: "A 40-year-old veterinary worker who completed a three-dose pre-exposure prophylaxis course 4 years ago is bitten on the hand by a dog that later dies. Which is the correct management?",
+      options: [
+        "Full five-dose Essen course with rabies immunoglobulin",
+        "Wound washing and two doses of vaccine on days 0 and 3 without immunoglobulin",
+        "Rabies immunoglobulin alone",
+        "No prophylaxis because pre-exposure prophylaxis gives lifelong protection",
+        "Full course of vaccine without immunoglobulin",
+      ],
+      answer: 1,
+      explanation:
+        "A previously fully immunised person needs only two booster doses on days 0 and 3, and immunoglobulin is not given because the memory response is faster than passive antibody and RIG would blunt it; this applies regardless of the interval since the prior course. A full course with or without RIG is unnecessary and wasteful. RIG alone provides no lasting immunity. Pre-exposure prophylaxis primes but does not remove the need for boosters after an exposure.",
+      difficulty: "easy",
+    },
+    {
+      id: "infectious-fever-rabies-animal-bite-q3",
+      stem: "A 20 kg child with multiple deep bites on the face and both hands from a stray dog is to receive equine rabies immunoglobulin. Which statement about the immunoglobulin is correct?",
+      options: [
+        "The dose is 20 IU/kg, so 400 IU are given intramuscularly in the gluteal region",
+        "The dose is 40 IU/kg, so 800 IU are infiltrated into and around all wounds, diluted with saline if the volume is insufficient",
+        "A skin sensitivity test is mandatory and the dose is withheld if positive",
+        "The dose may be doubled because there are multiple wounds",
+        "It should be given on day 3 together with the second vaccine dose",
+      ],
+      answer: 1,
+      explanation:
+        "Equine RIG is dosed at 40 IU/kg, which for a 20 kg child is 800 IU, and the whole dose is infiltrated into and around every wound, diluting two- to three-fold with normal saline when many wounds must be covered. Human RIG, not equine, is dosed at 20 IU/kg, and the gluteal region is never used. Skin testing before ERIG has been abandoned in the Indian guidelines because it does not predict anaphylaxis. The calculated dose must never be exceeded because excess antibody suppresses the vaccine response. RIG is given on day 0, or at the latest by day 7, not scheduled for day 3.",
+      difficulty: "moderate",
+    },
+    {
+      id: "infectious-fever-rabies-animal-bite-q4",
+      stem: "A busy anti-rabies clinic uses the intradermal regimen for category II exposures. Which of the following correctly describes the updated Thai Red Cross intradermal schedule?",
+      options: [
+        "0.1 mL at one site on days 0, 3, 7, 14 and 28",
+        "0.1 mL at two sites on days 0, 3, 7 and 28",
+        "0.5 mL at two sites on days 0, 7 and 21",
+        "1 mL intradermally on days 0, 3 and 7",
+        "0.1 mL at four sites on day 0 only",
+      ],
+      answer: 1,
+      explanation:
+        "The updated Thai Red Cross regimen (2-2-2-0-2) gives 0.1 mL intradermally at two sites, one over each deltoid, on days 0, 3, 7 and 28, which is eight doses in four visits and uses a fraction of the vaccine of the intramuscular course. The 0-3-7-14-28 schedule with one full vial is the intramuscular Essen regimen, and 0-7-21 with two doses on day 0 is the intramuscular Zagreb regimen. One millilitre cannot be given intradermally. Four-site intradermal on day 0 alone is a WHO 2018 option only for the previously vaccinated.",
+      difficulty: "moderate",
+    },
+    {
+      id: "infectious-fever-rabies-animal-bite-q5",
+      stem: "A 28-year-old man presents with 3 days of fever, anxiety, difficulty swallowing and spasms of the throat when offered water, and severe agitation. He was bitten by a dog on the leg 6 weeks ago and did not seek treatment. Which is the correct statement about his management?",
+      options: [
+        "Immediate full post-exposure prophylaxis with vaccine and immunoglobulin will still prevent death",
+        "The disease is almost invariably fatal; treatment is palliative, with barrier precautions against saliva and PEP for contacts with mucosal or wound exposure",
+        "High-dose intravenous acyclovir is the treatment of choice",
+        "The Milwaukee protocol of induced coma has a survival rate of over 50%",
+        "Isolation is unnecessary because rabies is not transmitted from humans",
+      ],
+      answer: 1,
+      explanation:
+        "Hydrophobia with agitation after an untreated dog bite is furious rabies, which is virtually always fatal once symptoms begin; management is palliative sedation and analgesia, with gloves and eye protection against saliva, and post-exposure prophylaxis for anyone with mucosal or broken-skin contact with his saliva. Vaccine and immunoglobulin do not alter the course after onset. Acyclovir has no activity against rabies virus. The Milwaukee protocol has failed in almost every subsequent attempt. Human-to-human transmission is theoretically possible through saliva and has occurred through transplanted organs, so barrier precautions are appropriate even though airborne isolation is not needed.",
+      difficulty: "moderate",
+    },
+  ],
+  cards: [
+    {
+      id: "infectious-fever-rabies-animal-bite-c1",
+      front: "WHO category II versus category III exposure.",
+      back: "II: nibbling of uncovered skin, minor scratches without bleeding - wash plus vaccine. III: transdermal bites or scratches, licks on broken skin, saliva on mucosa, bat contact - wash plus vaccine plus RIG.",
+    },
+    {
+      id: "infectious-fever-rabies-animal-bite-c2",
+      front: "First step in every animal bite and how long.",
+      back: "Wash with soap and running water for 15 minutes, then povidone iodine or 70% alcohol. No irritants, no cautery, no suturing.",
+    },
+    {
+      id: "infectious-fever-rabies-animal-bite-c3",
+      front: "Essen and Zagreb intramuscular schedules.",
+      back: "Essen: days 0, 3, 7, 14, 28 (five doses). Zagreb 2-1-1: two doses day 0 (one in each deltoid), then days 7 and 21 (four doses, three visits). Deltoid or thigh, never gluteal.",
+    },
+    {
+      id: "infectious-fever-rabies-animal-bite-c4",
+      front: "Updated Thai Red Cross intradermal schedule.",
+      back: "0.1 mL at two sites on days 0, 3, 7 and 28 (2-2-2-0-2), eight doses in four visits; reconstituted vial used within 6-8 hours.",
+    },
+    {
+      id: "infectious-fever-rabies-animal-bite-c5",
+      front: "Doses of ERIG, HRIG and monoclonal antibody.",
+      back: "ERIG 40 IU/kg (max 3000 IU); HRIG 20 IU/kg (max 1500 IU); rabies mAb 3.33 IU/kg (single) or 40 IU/kg (cocktail). Infiltrate into all wounds; day 0, up to day 7.",
+    },
+    {
+      id: "infectious-fever-rabies-animal-bite-c6",
+      front: "PEP for a previously fully vaccinated person.",
+      back: "Two doses on days 0 and 3 (IM or ID), no RIG, regardless of the interval since the prior course. Nerve tissue vaccine or incomplete course counts as unvaccinated.",
+    },
+    {
+      id: "infectious-fever-rabies-animal-bite-c7",
+      front: "Rule on observing the biting dog.",
+      back: "Start PEP on day 0; observe a healthy available dog or cat for 10 days; stop the course if it remains healthy. Observation never delays the first dose.",
+    },
+    {
+      id: "infectious-fever-rabies-animal-bite-c8",
+      front: "National programme facts for rabies in India.",
+      back: "National Rabies Control Programme under NCDC (12th Plan); NAPRE 2021 targets zero dog-mediated deaths by 2030; rabies notifiable since 2021; nerve tissue vaccine stopped 2004; World Rabies Day 28 September.",
+    },
+  ],
+  references: [
+    "National Guidelines for Rabies Prophylaxis, National Rabies Control Programme, NCDC, MoHFW, 2019",
+    "WHO Expert Consultation on Rabies, Third Report, WHO Technical Report Series 1012, 2018",
+    "WHO Rabies Vaccines: WHO Position Paper, April 2018",
+    "National Action Plan for Dog Mediated Rabies Elimination from India by 2030 (NAPRE), MoHFW and Ministry of Fisheries, Animal Husbandry and Dairying, 2021",
+    "Park's Textbook of Preventive and Social Medicine, 27th edition, 2023 - rabies",
+  ],
+});

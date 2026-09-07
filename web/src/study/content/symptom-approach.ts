@@ -2504,3 +2504,1644 @@ topics.push({
     "Murtagh's General Practice, 8th edition, 2018 - dyspnoea",
   ],
 });
+
+topics.push({
+  id: "symptom-approach-fever-without-focus",
+  title: "Fever without a focus and the acute undifferentiated febrile illness",
+  oneLiner:
+    "Fever without a focus is a documented temperature of 38 C or more in a patient in whom the history and examination find no localising source, and in Indian family practice it is approached by the day of fever, the season and the exposure history, a deliberate search for the six signs that name a cause, and a small first-line set - complete blood count with platelets, a malaria smear with rapid test, dengue NS1 and a urine routine - with paracetamol, fluids and a dated review rather than an antibiotic on the first day.",
+  frequency: "common",
+  keywords: [
+    "bukhar",
+    "acute undifferentiated febrile illness",
+    "AUFI",
+    "pyrexia of unknown origin",
+    "PUO",
+    "FUO",
+    "dengue",
+    "malaria",
+    "enteric fever",
+    "typhoid",
+    "scrub typhus",
+    "leptospirosis",
+    "chikungunya",
+    "NS1 antigen",
+    "Widal test",
+    "eschar",
+    "tourniquet test",
+    "warning signs",
+    "doxycycline",
+    "paracetamol",
+    "viral fever",
+    "IDSP notification",
+    "Petersdorf criteria",
+  ],
+  sections: [
+    {
+      heading: "What the complaint means and how it is distributed in an Indian clinic",
+      points: [
+        "**Fever is a documented oral temperature of 38 C (100.4 F) or more,** and fever without a focus means that a careful history and a full examination have found no localising symptom or sign - no cough, dysuria, sore throat, ear pain, skin lesion, joint or meningeal sign - to name the source.",
+        "The programme term is **acute undifferentiated febrile illness (AUFI): fever of less than 14 days without an evident focus,** and in India its named causes are malaria, dengue, scrub typhus, enteric fever, leptospirosis and chikungunya, sitting on top of a much larger base of self-limiting viral fevers.",
+        "**Most fever of under three days with a normal examination is viral and self-limiting,** and the family physician's skill is to treat it symptomatically while catching the minority that is dengue on day 2, malaria on day 3, or scrub typhus on day 6.",
+        "**Season and geography are part of the history:** dengue and chikungunya peak after the monsoon from August to November, malaria follows the rains, scrub typhus rises in the cooler post-monsoon months in the sub-Himalayan belt and the south, leptospirosis follows flooding and paddy work, and enteric fever runs through the year with a summer peak.",
+        "The consultation is organised around **the day of fever rather than the pattern of fever:** the classical patterns - step-ladder, tertian, saddle-back - are neither sensitive nor specific, but the day of illness decides which test is positive and which complication is due.",
+        "**Pyrexia of unknown origin is a different problem:** fever of more than three weeks, above 38.3 C on several occasions, undiagnosed after a defined work-up; it is not a diagnosis to make on day 5 and its differential, led by tuberculosis in India, is dealt with separately below.",
+      ],
+    },
+    {
+      heading: "The history that sorts the fever",
+      points: [
+        "**Establish the day of fever precisely** by counting from the first day the patient felt feverish, and record the maximum temperature measured at home; the NS1 antigen is positive from day 1 to 5, the dengue IgM only from day 5, the blood culture is most sensitive in week 1, and the Widal is worthless before day 7.",
+        "**Ask for the accompaniments that localise without being a focus:** retro-orbital pain, severe myalgia and a rash suggest dengue; a bursting headache with calf tenderness and red eyes suggests leptospirosis; chills with rigors and sweating suggest malaria; a coated tongue, constipation or diarrhoea and abdominal discomfort suggest enteric fever; a symmetrical small-joint arthralgia suggests chikungunya; a headache with a cough and lymph nodes in a rural patient suggests scrub typhus.",
+        "**Take the exposure history like an epidemiologist:** rural residence or travel, paddy or forest work, walking through flood water, sleeping outdoors or without a net, mosquito breeding at home, drinking untreated water and eating outside, animal contact, a similar illness in the household or the street, and any recent hospital admission or injection.",
+        "**Ask what has already been given** - a course of amoxicillin or ciprofloxacin from a chemist blunts the blood culture and the Widal, an NSAID or aspirin raises the bleeding risk in dengue, and a steroid injection masks the fever and the signs.",
+        "**Screen for the hosts in whom fever cannot be watched:** pregnancy, an infant under three months, diabetes, chronic kidney or liver disease, HIV, splenectomy, immunosuppressive drugs, chemotherapy, and the frail elderly - these patients get earlier testing and a lower threshold for admission.",
+        "**Ask about the sequence of the illness:** in dengue the dangerous period begins when the fever falls between days 3 and 7, so a patient who returns on day 5 saying the fever has settled but there is abdominal pain and vomiting is not improving, he is entering the critical phase.",
+      ],
+    },
+    {
+      heading: "Examination: the six signs that name the cause",
+      points: [
+        "Record the **temperature, pulse, blood pressure with pulse pressure, respiratory rate, oxygen saturation, capillary refill and hydration** at every visit - a pulse pressure of 20 mmHg or less is dengue shock until proven otherwise, and a relative bradycardia (pulse lower than expected for the temperature) is a classical if inconstant sign of enteric fever.",
+        "**Hunt for the eschar** of scrub typhus in the axilla, groin, under the breast, at the waistband, behind the ear and in the perineum - a painless black crusted ulcer with a red rim, present in roughly a third of Indian cases and diagnostic when found.",
+        "**Look at the eyes and the skin:** conjunctival suffusion without discharge points to leptospirosis, a blanching macular rash with islands of white in a sea of red points to dengue, rose spots on the trunk to enteric fever, and a maculopapular rash with joint swelling to chikungunya.",
+        "**Perform the tourniquet test** when dengue is suspected and platelets are not yet available: inflate the cuff midway between systolic and diastolic pressure for five minutes and count petechiae in a 2.5 cm square below the cuff - 10 or more is positive, though a negative test does not exclude dengue.",
+        "**Palpate for the spleen and the liver:** splenomegaly favours malaria, enteric fever or kala-azar, a tender enlarged liver of more than 2 cm in dengue is a warning sign, and jaundice with a tender liver in a febrile rural patient raises leptospirosis, complicated malaria and hepatitis.",
+        "**Never omit the meningeal signs, the ears, the throat, the chest, the abdomen for renal angle tenderness, the joints and the skin folds** - a proportion of fevers without a focus have a focus that was not looked for, and urinary infection, pneumonia and an abscess are the ones most often missed.",
+      ],
+    },
+    {
+      heading: "Investigations by the day of fever",
+      points: [
+        "**Every fever in India gets a malaria test,** a peripheral smear with a rapid antigen test for both species, on the first visit and repeated if negative and the fever continues - this is the one non-negotiable test under the National Vector Borne Disease Control Programme, whatever the day of illness.",
+        "**On days 1 to 3 the first-line set is small:** complete blood count with platelets and haematocrit, malaria smear and rapid test, dengue NS1 antigen, and a urine routine; a leucopenia with a falling platelet count and a rising haematocrit is the dengue signature, a neutrophil leucocytosis points away from viral illness, and a positive urine finds the occult focus.",
+        "**On days 4 to 7 the second set is added when fever persists:** dengue IgM (from day 5), scrub typhus IgM ELISA, leptospira IgM ELISA, a blood culture drawn before any antibiotic, liver function tests, and a C-reactive protein; the Weil-Felix test and a single Widal titre are too insensitive and too non-specific to guide treatment.",
+        "**The blood culture is the test for enteric fever, not the Widal:** it is positive in 40-60% in the first week and falls after antibiotics, so it is drawn at the first visit at which enteric fever is plausible; a Widal is interpretable only as a rising titre on paired sera after day 7 and in a patient not previously vaccinated or treated.",
+        "**Beyond two weeks the work-up changes shape:** a chest radiograph, sputum for CBNAAT if there is any cough, an HIV test with consent, ESR, ultrasound of the abdomen for an abscess, lymph nodes or splenomegaly, three sets of blood cultures, and an rK39 rapid test in kala-azar endemic districts of Bihar, Jharkhand, West Bengal and eastern Uttar Pradesh.",
+        "**Order what changes management on that day:** a panel of NS1, IgM, Widal, scrub and lepto serology on day 2 wastes money and returns false positives; the same tests on day 6 in a patient still febrile with negative malaria tests are exactly right.",
+      ],
+    },
+    {
+      heading: "Management: what to give, what to withhold and whom to treat empirically",
+      points: [
+        "**Paracetamol 500-650 mg (15 mg/kg in a child) every six hours, not exceeding 4 g a day in an adult and 3 g in the elderly or in liver disease,** with tepid sponging for comfort, oral fluids of 2-3 litres a day and rest is the whole treatment of most fevers - **NSAIDs and aspirin are avoided until dengue is excluded** because of bleeding and gastritis, and aspirin is never given to a febrile child.",
+        "**No antibiotic is given for fever of under three days without a focus** - a self-limiting viral illness does not need one, enteric fever cannot be diagnosed that early, and the prescription blunts the culture and drives resistance; explain this to the family as a decision rather than a delay.",
+        "**Empirical doxycycline 100 mg twice daily for seven days is started when scrub typhus or leptospirosis is suspected** - an eschar, a rural or flood exposure, or fever beyond five days with negative malaria and dengue tests in an endemic area - because the untreated case dies of pneumonitis, meningoencephalitis or renal failure while the serology is awaited; azithromycin 500 mg once daily for five days is the alternative in pregnancy and in children under eight.",
+        "**Malaria is treated by species:** Plasmodium vivax with chloroquine 25 mg/kg over three days plus primaquine 0.25 mg/kg daily for 14 days after a G6PD check; Plasmodium falciparum with artesunate plus sulfadoxine-pyrimethamine for three days plus a single dose of primaquine 0.75 mg/kg on day two (artemether-lumefantrine in the north-eastern states); mixed infection with the ACT plus 14 days of primaquine; primaquine is withheld in pregnancy and in infants, and any sign of severity means parenteral artesunate and admission.",
+        "**Enteric fever is treated with cefixime 20 mg/kg/day in two divided doses for 14 days or azithromycin 20 mg/kg (maximum 1 g) once daily for seven days,** with ceftriaxone 2 g intravenously daily for the admitted patient; fluoroquinolones are no longer first line in India because most Salmonella Typhi isolates show decreased susceptibility, and the fever takes 4-6 days to settle on correct treatment, which the family must be told in advance.",
+        "**Dengue has no drug:** the treatment is fluids guided by haematocrit and urine output, avoidance of NSAIDs and intramuscular injections, a daily platelet count and haematocrit from day 3, and admission for any warning sign; platelet transfusion is reserved for active bleeding and is not triggered by a number alone.",
+      ],
+    },
+    {
+      heading: "Safety netting, admission, notification and the review",
+      points: [
+        "**Write the dengue warning signs on the prescription for every fever in the season:** abdominal pain, persistent vomiting, bleeding from any site, drowsiness or restlessness, cold hands and feet, reduced urine, and any breathlessness - and tell the patient that these matter most when the fever comes down.",
+        "**Fix the review date rather than leaving it open:** day 3 for a repeat examination and, in the season, a platelet count and haematocrit; day 5 to 7 with the second-line serology if the fever has not settled; and any day for a warning sign; a fever that has crossed seven days is re-examined from the beginning rather than given a third antibiotic.",
+        "**Admit for:** any warning sign or shock, a platelet count below 20,000 or below 50,000 with bleeding, a haematocrit rise of 20% or more, jaundice with reduced urine output, altered sensorium or a seizure, oxygen saturation below 94%, inability to take oral fluids, pregnancy with dengue or malaria, an infant under three months, and any febrile patient with diabetes, immunosuppression or a chronic organ disease who looks unwell.",
+        "**Malaria and dengue are notifiable diseases in most Indian states and every confirmed case goes to the Integrated Disease Surveillance Programme weekly report;** a cluster of fever in a street or a hostel is reported to the district surveillance unit the same day, because the vector control response protects the neighbours.",
+        "**Prevention belongs in the consultation:** a weekly dry day for water containers, full-sleeved clothing and repellents, bed nets, chlorination or boiling of drinking water, hand washing, typhoid conjugate vaccine for children and food handlers, and covering the legs during paddy work in the scrub and leptospirosis season.",
+        "**Document the day of fever, the tests sent with their day, the safety-net advice given and the date of review** - the second doctor who sees the patient on day 6 must be able to see that the malaria test was negative on day 2 and that the NS1 was never sent.",
+      ],
+    },
+  ],
+  tables: [
+    {
+      heading: "Acute undifferentiated fever in India: the clue, the test and the drug by cause",
+      columns: ["Cause", "Clinical clue", "Best test and its timing", "First-line treatment"],
+      rows: [
+        ["Self-limiting viral fever", "Under 3 days, coryza or myalgia, normal examination, household cases", "None on day 1-2 beyond a malaria test; CBC if persisting", "Paracetamol, fluids, review on day 3"],
+        ["Dengue", "Post-monsoon, retro-orbital pain, myalgia, rash, leucopenia, falling platelets, rising haematocrit", "NS1 antigen day 1-5; IgM from day 5; daily platelets and haematocrit from day 3", "Fluids, paracetamol only, no NSAIDs, admit for warning signs"],
+        ["Malaria", "Rigors, sweating, splenomegaly, rural or forest exposure, any season after rain", "Peripheral smear plus rapid antigen test at first visit, repeated if negative", "Vivax: chloroquine plus primaquine 14 days; falciparum: ACT plus single-dose primaquine"],
+        ["Scrub typhus", "Rural, post-monsoon, headache, lymphadenopathy, eschar in a skin fold, fever beyond 5 days", "IgM ELISA from day 5-7; eschar is diagnostic", "Doxycycline 100 mg twice daily 7 days; azithromycin in pregnancy and children"],
+        ["Enteric fever", "Fever beyond 5-7 days, coated tongue, abdominal discomfort, relative bradycardia, no rash", "Blood culture before antibiotics in week 1; Widal only paired and after day 7", "Cefixime 20 mg/kg/day 14 days or azithromycin 20 mg/kg 7 days; ceftriaxone if admitted"],
+        ["Leptospirosis", "Flood or paddy exposure, conjunctival suffusion, calf tenderness, jaundice with renal impairment", "IgM ELISA from day 5; MAT in reference laboratory", "Doxycycline 100 mg twice daily 7 days; ceftriaxone or penicillin if severe"],
+        ["Chikungunya", "Post-monsoon, symmetrical small-joint arthralgia that outlasts the fever, rash", "IgM ELISA from day 5; RT-PCR in the first week", "Paracetamol, then NSAIDs once dengue excluded; physiotherapy"],
+        ["Occult bacterial focus", "Dysuria, loin pain, chest signs, ear or throat findings found only on re-examination", "Urine routine and culture, chest radiograph, examination repeated", "Antibiotic directed at the focus found"],
+      ],
+    },
+    {
+      heading: "Tests by the day of fever in a patient without a focus",
+      columns: ["Day of fever", "Order now", "Do not order yet", "Why"],
+      rows: [
+        ["Day 1-3", "Malaria smear and rapid test, CBC with platelets and haematocrit, dengue NS1, urine routine", "Widal, dengue IgM, scrub and lepto IgM, blood culture unless toxic", "Serology is negative this early; most illness is viral; NS1 and the malaria test are the ones that pay"],
+        ["Day 4-7", "Repeat CBC with platelets and haematocrit, dengue IgM, scrub typhus IgM, leptospira IgM, blood culture before antibiotics, LFT, CRP", "CT scan, bone marrow, autoimmune panel", "This is the window in which the named AUFI causes become serologically positive and the dengue critical phase occurs"],
+        ["Day 8-14", "Repeat blood culture, chest radiograph, urine culture, ultrasound abdomen, HIV with consent, ESR", "Empirical anti-tuberculosis treatment", "Enteric fever, an abscess and an occult focus dominate; malaria and dengue are now unlikely"],
+        ["Beyond 2-3 weeks", "PUO work-up: three blood cultures, sputum CBNAAT, Mantoux, rK39 in endemic districts, peripheral smear review, protein electrophoresis, echocardiography, CT if indicated", "Repeated courses of antibiotics or steroids", "Tuberculosis, abscess, endocarditis, lymphoma and connective tissue disease need a diagnosis, not a trial"],
+      ],
+    },
+  ],
+  redFlags: [
+    "Cold extremities, capillary refill over two seconds, a pulse pressure of 20 mmHg or less, or a systolic pressure below 90 mmHg in a febrile patient - dengue shock, septic shock or severe malaria; intravenous fluids, admission and transfer today.",
+    "Any dengue warning sign - abdominal pain, persistent vomiting, bleeding, lethargy or restlessness, a liver of more than 2 cm, reduced urine, or a rising haematocrit with a falling platelet count - particularly on the day the fever settles.",
+    "Altered sensorium, a seizure, neck stiffness or a new focal deficit with fever - cerebral malaria, meningoencephalitis, scrub typhus or enteric encephalopathy; lumbar puncture and admission, not a review tomorrow.",
+    "Jaundice with reduced urine output, breathlessness or bleeding - complicated malaria, leptospirosis (Weil disease) or scrub typhus with organ failure; admit for parenteral treatment.",
+    "Fever in pregnancy, in an infant under three months, or in a patient with diabetes, chronic kidney disease, HIV, splenectomy or immunosuppression who looks unwell - low threshold for admission and empirical treatment.",
+    "Fever beyond seven days with weight loss, night sweats, lymphadenopathy or splenomegaly - tuberculosis, lymphoma, endocarditis or kala-azar; begin the PUO work-up rather than a fourth antibiotic.",
+  ],
+  pearls: [
+    "Every fever in India gets a malaria smear and rapid test at the first visit - not because malaria is likely but because missing it is unforgivable and the test costs nothing.",
+    "Count the day of fever and let it choose the test: NS1 on day 2, blood culture and the IgM serologies on day 6, the chest radiograph and ultrasound on day 10.",
+    "In dengue the fall of fever is the beginning of the danger, not the end of the illness - the warning signs are written for the day the temperature comes down.",
+    "A single Widal titre in a patient who has had two courses of antibiotics from the chemist tells you nothing; a blood culture drawn before the first tablet tells you everything.",
+    "Undress the patient and look in the folds: an eschar in the axilla or the groin converts a fever without a focus into scrub typhus and a serology into a formality.",
+    "Fever of under three days with a normal examination and a normal count is viral; review it on day 3 rather than treating it on day 1.",
+    "Doxycycline given empirically to a rural patient with fever beyond five days and negative malaria and dengue tests treats scrub typhus and leptospirosis together and saves lives while the ELISA is awaited.",
+  ],
+  theory: [
+    {
+      id: "symptom-approach-fever-without-focus-t1",
+      paper: "I",
+      kind: "long",
+      marks: 10,
+      minutes: 20,
+      frequency: "core",
+      question:
+        "A 30-year-old farmer presents in September with fever for five days and no localising symptoms. Discuss the approach to acute undifferentiated febrile illness in Indian family practice.",
+      openingLines: [
+        "Acute undifferentiated febrile illness is fever of less than 14 days duration in which history and examination reveal no localising source; in India its treatable causes are malaria, dengue, scrub typhus, enteric fever, leptospirosis and chikungunya, superimposed on a large base of self-limiting viral fever.",
+        "The family physician's approach is organised by the day of fever, the season and the exposure, uses a small set of tests whose timing matches the illness, withholds antibiotics from early fever, and treats scrub typhus and malaria empirically or on a rapid test because delay kills.",
+      ],
+      answer: [
+        {
+          heading: "1. History",
+          points: [
+            "Fix the day of fever, the maximum temperature and the sequence of symptoms; ask about rigors (malaria), retro-orbital pain and rash (dengue), headache and lymph nodes (scrub typhus), calf pain and red eyes (leptospirosis), constipation and abdominal discomfort (enteric fever), and joint pain (chikungunya).",
+            "Take the exposure history: paddy and forest work, flood water, mosquito exposure, water source, household cases, travel, and any previous antibiotic, NSAID or steroid taken.",
+            "Identify the vulnerable host: pregnancy, extremes of age, diabetes, renal or liver disease, HIV and immunosuppression.",
+            "Ask directly for the dengue warning signs and for reduced urine output, bleeding, breathlessness and altered behaviour.",
+          ],
+        },
+        {
+          heading: "2. Examination",
+          points: [
+            "Vital signs including pulse pressure, capillary refill, oxygen saturation and hydration; relative bradycardia for enteric fever.",
+            "The six signs: eschar in the skin folds, conjunctival suffusion, rash and tourniquet test, rose spots, hepatosplenomegaly, and lymphadenopathy; jaundice and meningeal signs as markers of severity.",
+            "Systematic re-examination for an occult focus - throat, ears, chest, renal angles, abdomen, joints, skin and perineum.",
+          ],
+        },
+        {
+          heading: "3. Investigations by day of fever",
+          points: [
+            "Day 1-3: peripheral smear with rapid malaria antigen test (mandatory at every fever), CBC with platelets and haematocrit, dengue NS1 antigen, urine routine.",
+            "Day 4-7 (this patient): repeat CBC, dengue IgM, scrub typhus IgM ELISA, leptospira IgM, blood culture before antibiotics, liver function tests, CRP; Widal only as paired sera after day 7.",
+            "Beyond 7-14 days: chest radiograph, sputum CBNAAT, urine culture, ultrasound abdomen, HIV, ESR and repeat cultures; beyond 3 weeks, the pyrexia of unknown origin work-up.",
+          ],
+        },
+        {
+          heading: "4. Management",
+          points: [
+            "Symptomatic: paracetamol 500-650 mg six-hourly up to 4 g a day, oral fluids 2-3 litres, rest; no NSAIDs or aspirin until dengue is excluded; no antibiotic for fever under three days without a focus.",
+            "Species-specific antimalarials on a positive test: chloroquine plus 14 days of primaquine for vivax, ACT plus single-dose primaquine for falciparum, parenteral artesunate for severe disease.",
+            "Empirical doxycycline 100 mg twice daily for 7 days in this farmer with fever beyond five days and negative malaria and dengue tests, covering scrub typhus and leptospirosis; azithromycin if pregnant or a child.",
+            "Cefixime or azithromycin for culture-supported or strongly suspected enteric fever; fluids by haematocrit and urine output for dengue with admission for warning signs.",
+          ],
+        },
+        {
+          heading: "5. Safety netting, admission, notification and prevention",
+          points: [
+            "Written warning signs, a review date at day 7 and earlier if unwell, admission criteria (shock, warning signs, platelets below 20,000 or bleeding, jaundice with oliguria, altered sensorium, pregnancy, vulnerable host).",
+            "Notification of malaria and dengue through IDSP and reporting of clusters; vector control advice, safe water, bed nets, covering the legs in the field, typhoid conjugate vaccine for children.",
+            "Documentation of the day of fever, tests with their day, advice given and the review date.",
+          ],
+        },
+      ],
+      mustDraw: [
+        "A table of the six named causes of AUFI with clinical clue, best test with timing, and first-line drug.",
+        "A flow chart: fever without focus - malaria test at every visit - day 1-3 (NS1, CBC, urine) - day 4-7 (serologies, blood culture, empirical doxycycline) - beyond 7 days (chest radiograph, cultures, ultrasound) - beyond 3 weeks (PUO work-up).",
+      ],
+      markSplit: [
+        { part: "Definition, causes and the day-of-fever principle", marks: 2 },
+        { part: "History including exposure and vulnerable host", marks: 2 },
+        { part: "Examination with the named signs", marks: 2 },
+        { part: "Investigations timed by day of fever", marks: 2 },
+        { part: "Management, empirical doxycycline, admission criteria, notification and safety net", marks: 2 },
+      ],
+      keywords: ["AUFI", "day of fever", "NS1", "eschar", "doxycycline", "warning signs", "IDSP"],
+    },
+    {
+      id: "symptom-approach-fever-without-focus-t2",
+      paper: "II",
+      kind: "short-note",
+      marks: 5,
+      minutes: 10,
+      frequency: "common",
+      question: "Write short notes on pyrexia of unknown origin: definition, classification, common causes in India and the approach in family practice.",
+      openingLines: [
+        "Pyrexia of unknown origin (Petersdorf and Beeson, 1961) is a temperature above 38.3 C on several occasions, lasting more than three weeks, with no diagnosis after one week of inpatient investigation; the revised definition (Durack and Street, 1991) accepts three outpatient visits or three days in hospital as the qualifying work-up.",
+        "It is a category, not a diagnosis, and in India its commonest answer is tuberculosis, usually extrapulmonary or disseminated, followed by abscesses, enteric fever, lymphoma and the connective tissue diseases.",
+      ],
+      answer: [
+        {
+          heading: "Classification (Durack and Street)",
+          points: [
+            "Classic PUO - the community patient described above.",
+            "Nosocomial PUO - fever arising after admission: line infection, Clostridioides difficile, drug fever, venous thrombosis, sinusitis in the intubated patient.",
+            "Neutropenic PUO - absolute neutrophil count below 500 per microlitre: bacterial and fungal infection, treated empirically within one hour.",
+            "HIV-associated PUO - fever over four weeks in a person living with HIV: tuberculosis, Mycobacterium avium complex, cryptococcosis, cytomegalovirus, lymphoma, drug fever.",
+          ],
+        },
+        {
+          heading: "Common causes in India",
+          points: [
+            "Infections (40-50%): tuberculosis (lymph node, abdominal, miliary, spinal), liver and intra-abdominal abscess, enteric fever, brucellosis, infective endocarditis, kala-azar in endemic districts, chronic malaria, HIV and its opportunistic infections, melioidosis in the south and east.",
+            "Malignancy (15-20%): lymphoma, leukaemia, renal cell and hepatocellular carcinoma, metastatic disease.",
+            "Non-infectious inflammatory disease (15-20%): adult-onset Still disease, systemic lupus erythematosus, vasculitis including Takayasu arteritis and giant cell arteritis, sarcoidosis.",
+            "Miscellaneous: drug fever (beta-lactams, phenytoin, allopurinol, antituberculous drugs), factitious fever, thyroiditis, familial periodic fevers; 10-20% remain undiagnosed and most of these resolve.",
+          ],
+        },
+        {
+          heading: "Approach in family practice",
+          points: [
+            "Verify the fever with a charted temperature, retake the whole history including drugs, travel, animal contact, occupation, sexual history and previous tuberculosis, and re-examine repeatedly - the temporal arteries, lymph nodes, spleen, heart murmurs, skin, fundi, genitalia and rectum.",
+            "Stop every non-essential drug for 72 hours before further testing.",
+            "First tier: CBC with smear, ESR and CRP, liver and renal function, urine routine and culture, three blood cultures, HIV with consent, chest radiograph, Mantoux or IGRA, sputum or other sample for CBNAAT, ultrasound abdomen, and rK39 in kala-azar districts.",
+            "Second tier by clue: ANA and rheumatoid factor, serum ferritin, protein electrophoresis, echocardiography, contrast CT of chest and abdomen, lymph node or bone marrow biopsy, and referral to a physician for PET-CT or liver biopsy when the first tiers are silent.",
+            "Do not give empirical antibiotics or steroids; a supervised therapeutic trial of antituberculous treatment is justified only in a deteriorating patient with a compatible picture after tissue sampling has been attempted, with a defined end point at 2-3 weeks.",
+          ],
+        },
+      ],
+      mustDraw: ["A table of the four categories of PUO with the defining feature and the leading causes of each."],
+      markSplit: [
+        { part: "Classical and revised definitions", marks: 1 },
+        { part: "Four categories", marks: 1 },
+        { part: "Causes in India by group", marks: 1.5 },
+        { part: "Tiered approach and the place of the therapeutic trial", marks: 1.5 },
+      ],
+      keywords: ["PUO", "Petersdorf", "Durack and Street", "extrapulmonary tuberculosis", "drug fever", "therapeutic trial"],
+    },
+  ],
+  mcqs: [
+    {
+      id: "symptom-approach-fever-without-focus-q1",
+      stem: "A 26-year-old software engineer presents in October with fever of 39 C for two days, headache and body ache. Examination is normal apart from a temperature of 38.8 C. He wants an antibiotic so he can return to work. What is the most appropriate management?",
+      options: [
+        "Amoxicillin-clavulanate 625 mg three times daily for five days",
+        "Malaria smear with rapid test and complete blood count, paracetamol, fluids and review on day 3 with written warning signs",
+        "Ciprofloxacin 500 mg twice daily for enteric fever pending a Widal test",
+        "Diclofenac 50 mg twice daily with paracetamol for the body ache",
+        "Dengue IgM, scrub typhus IgM and Widal today to reach a diagnosis before treating",
+      ],
+      answer: 1,
+      explanation:
+        "Fever of two days without a focus and with a normal examination is almost always a self-limiting viral illness, and the correct action is symptomatic treatment, the mandatory malaria test, a baseline count in the dengue season and a dated review with safety-net advice. An antibiotic on day 2 treats nothing, blunts a later blood culture and fuels resistance. Ciprofloxacin is no longer first line for enteric fever in India and enteric fever cannot be diagnosed on day 2 - a Widal at this stage is uninterpretable. Diclofenac is withheld until dengue is excluded because of bleeding and gastritis. The IgM serologies are negative before day 5 and ordering them on day 2 wastes money and produces false reassurance.",
+      difficulty: "easy",
+    },
+    {
+      id: "symptom-approach-fever-without-focus-q2",
+      stem: "A 19-year-old student had fever for four days with a positive dengue NS1 on day 2. On day 5 she returns saying the fever has gone, but she has vomited four times, has abdominal pain and feels weak. Pulse is 112/min, blood pressure 100/84 mmHg, platelets 48,000/microlitre and haematocrit has risen from 38% to 47%. What is the most appropriate next step?",
+      options: [
+        "Reassure her that defervescence means recovery and review in three days",
+        "Prescribe ondansetron and oral rehydration solution at home with a platelet count tomorrow",
+        "Admit immediately for intravenous crystalloid guided by haematocrit and urine output",
+        "Transfuse platelets because the count has fallen below 50,000/microlitre",
+        "Start intravenous ceftriaxone for possible secondary bacterial sepsis",
+      ],
+      answer: 2,
+      explanation:
+        "This is the dengue critical phase: defervescence with persistent vomiting, abdominal pain, a narrow pulse pressure of 16 mmHg, tachycardia and a haematocrit rise of over 20% - she has plasma leakage and compensated shock and needs admission for intravenous crystalloid titrated to haematocrit and urine output. Treating the fall in fever as recovery is the classical fatal error. Home management with an antiemetic ignores the shock. Platelet transfusion is indicated for active bleeding, not for a count of 48,000, and it does not treat plasma leakage. There is nothing to suggest bacterial sepsis and antibiotics have no role in dengue.",
+      difficulty: "moderate",
+    },
+    {
+      id: "symptom-approach-fever-without-focus-q3",
+      stem: "A 40-year-old woman from a village in Himachal Pradesh presents in November with fever for seven days, headache and a cough. Malaria smear, rapid test and dengue NS1 and IgM are negative. Examination shows cervical lymphadenopathy and a 6 mm black crusted ulcer with a red rim in the left axilla. What is the most appropriate treatment?",
+      options: [
+        "Doxycycline 100 mg twice daily for seven days",
+        "Ceftriaxone 2 g intravenously daily for enteric fever",
+        "Chloroquine 25 mg/kg over three days for smear-negative malaria",
+        "Amoxicillin 500 mg three times daily for the ulcer and the cough",
+        "Send scrub typhus IgM ELISA and await the result before treating",
+      ],
+      answer: 0,
+      explanation:
+        "An eschar in a skin fold in a rural post-monsoon patient with fever, headache and lymphadenopathy is diagnostic of scrub typhus, and doxycycline is the drug of choice; the fever should settle within 48 hours, which itself confirms the diagnosis. Ceftriaxone does not treat rickettsiae and enteric fever does not cause an eschar. Empirical chloroquine has no place once the malaria tests are negative and the picture points elsewhere. Amoxicillin treats neither scrub typhus nor the pneumonitis it causes. Waiting for the IgM result, which may take days and may still be negative in the first week, risks the pneumonitis, meningoencephalitis and multi-organ failure that make untreated scrub typhus fatal in a proportion of cases.",
+      difficulty: "easy",
+    },
+    {
+      id: "symptom-approach-fever-without-focus-q4",
+      stem: "A 22-year-old hostel resident has had fever for nine days, rising through the day, with anorexia, a coated tongue, mild abdominal discomfort and constipation. Pulse is 76/min at a temperature of 39.4 C. Malaria and dengue tests are negative. He has taken no antibiotics. What is the most appropriate management?",
+      options: [
+        "Send a Widal test and start treatment only if the O titre is 1 in 160 or more",
+        "Draw a blood culture, then start cefixime 20 mg/kg/day in two divided doses for 14 days",
+        "Start ciprofloxacin 500 mg twice daily for 10 days as the standard regimen",
+        "Start doxycycline 100 mg twice daily for probable scrub typhus",
+        "Give artesunate-based combination therapy for smear-negative falciparum malaria",
+      ],
+      answer: 1,
+      explanation:
+        "A fever of over a week with a coated tongue, abdominal symptoms and relative bradycardia in a hostel resident is enteric fever until proven otherwise, and the correct sequence is a blood culture drawn before the first dose followed immediately by an oral third-generation cephalosporin or azithromycin, with the family warned that the fever takes 4-6 days to settle. A single Widal titre is neither sensitive nor specific enough to decide treatment and waiting for it delays therapy. Ciprofloxacin fails in most Indian isolates because of decreased fluoroquinolone susceptibility. Doxycycline would be reasonable in a rural patient with an exposure history but this urban picture with a hostel water and food source is enteric fever. Treating smear-negative malaria empirically after two negative tests and with no rigors is not justified.",
+      difficulty: "moderate",
+    },
+    {
+      id: "symptom-approach-fever-without-focus-q5",
+      stem: "A 48-year-old man has had fever for four weeks with 5 kg weight loss and night sweats. Two courses of antibiotics have not helped. Examination shows no lymphadenopathy and a spleen 3 cm below the costal margin. Haemoglobin is 9.8 g/dL, ESR 86 mm in the first hour, chest radiograph normal, malaria and dengue tests negative, three blood cultures sterile, and ultrasound shows enlarged retroperitoneal lymph nodes. What is the most appropriate next step?",
+      options: [
+        "Start a therapeutic trial of four-drug antituberculous treatment and review in four weeks",
+        "Start prednisolone 40 mg daily for probable lymphoma pending referral",
+        "Refer for contrast CT of the abdomen with image-guided biopsy or excision of a node for histopathology, CBNAAT and culture",
+        "Prescribe a third, broader antibiotic such as piperacillin-tazobactam for occult sepsis",
+        "Request a Widal test and a Weil-Felix test to complete the fever work-up",
+      ],
+      answer: 2,
+      explanation:
+        "This is classical pyrexia of unknown origin with a raised ESR, anaemia, splenomegaly and retroperitoneal nodes, and the next step is tissue: a targeted CT with sampling of the abnormal node for histopathology, CBNAAT and culture, which distinguishes abdominal tuberculosis from lymphoma. An empirical antituberculous trial before any attempt at tissue diagnosis is poor practice - it delays a lymphoma diagnosis, may partially treat it, and produces ambiguous responses. Steroids before biopsy destroy lymphoma histology and mask tuberculosis. A third antibiotic after sterile cultures and a month of fever has no rationale. Widal and Weil-Felix tests add nothing at four weeks after negative cultures and a picture that has moved beyond acute undifferentiated fever.",
+      difficulty: "hard",
+    },
+  ],
+  cards: [
+    {
+      id: "symptom-approach-fever-without-focus-c1",
+      front: "Definition of acute undifferentiated febrile illness.",
+      back: "Fever of less than 14 days with no localising source on history and examination; in India think malaria, dengue, scrub typhus, enteric fever, leptospirosis and chikungunya on top of self-limiting viral fever.",
+    },
+    {
+      id: "symptom-approach-fever-without-focus-c2",
+      front: "The one test every fever in India gets at the first visit.",
+      back: "A peripheral smear with a rapid antigen test for malaria, repeated if negative and the fever continues.",
+    },
+    {
+      id: "symptom-approach-fever-without-focus-c3",
+      front: "Dengue tests by day of fever.",
+      back: "NS1 antigen day 1-5; IgM from day 5; daily platelet count and haematocrit from day 3; the critical phase begins with defervescence between days 3 and 7.",
+    },
+    {
+      id: "symptom-approach-fever-without-focus-c4",
+      front: "Dengue warning signs (WHO 2009).",
+      back: "Abdominal pain, persistent vomiting, clinical fluid accumulation, mucosal bleeding, lethargy or restlessness, liver more than 2 cm, and a rising haematocrit with a rapidly falling platelet count.",
+    },
+    {
+      id: "symptom-approach-fever-without-focus-c5",
+      front: "Where to look for the eschar of scrub typhus.",
+      back: "Axilla, groin, under the breast, at the waistband, behind the ear and in the perineum - a painless black crusted ulcer with a red rim, found in about a third of Indian cases.",
+    },
+    {
+      id: "symptom-approach-fever-without-focus-c6",
+      front: "Treatment of Plasmodium vivax and Plasmodium falciparum malaria in India.",
+      back: "Vivax: chloroquine 25 mg/kg over 3 days plus primaquine 0.25 mg/kg daily for 14 days after G6PD check. Falciparum: artesunate plus sulfadoxine-pyrimethamine for 3 days plus single-dose primaquine 0.75 mg/kg on day 2; artemether-lumefantrine in the north-east.",
+    },
+    {
+      id: "symptom-approach-fever-without-focus-c7",
+      front: "First-line treatment of uncomplicated enteric fever in India.",
+      back: "Cefixime 20 mg/kg/day in two doses for 14 days or azithromycin 20 mg/kg (max 1 g) daily for 7 days after a blood culture; ceftriaxone if admitted; fluoroquinolones are no longer first line.",
+    },
+    {
+      id: "symptom-approach-fever-without-focus-c8",
+      front: "Classical definition of pyrexia of unknown origin.",
+      back: "Petersdorf and Beeson 1961: temperature above 38.3 C on several occasions, more than 3 weeks, undiagnosed after 1 week of inpatient work-up; Durack and Street 1991 accept 3 outpatient visits or 3 hospital days.",
+    },
+    {
+      id: "symptom-approach-fever-without-focus-c9",
+      front: "When is empirical doxycycline justified in a fever without focus?",
+      back: "An eschar, a rural, paddy or flood exposure, or fever beyond 5 days with negative malaria and dengue tests in an endemic area - 100 mg twice daily for 7 days, azithromycin in pregnancy and young children.",
+    },
+    {
+      id: "symptom-approach-fever-without-focus-c10",
+      front: "Admission criteria in dengue.",
+      back: "Any warning sign or shock, platelets below 20,000 or bleeding, haematocrit rise of 20% or more, inability to take fluids, pregnancy, infancy, comorbidity, or living alone without transport.",
+    },
+  ],
+  references: [
+    "National Guidelines for Clinical Management of Dengue Fever, National Vector Borne Disease Control Programme (NCVBDC), Ministry of Health and Family Welfare, 2023 edition",
+    "Guidelines for Diagnosis and Treatment of Malaria in India, NVBDCP and National Institute of Malaria Research, 2014 with subsequent NCVBDC updates",
+    "DHR-ICMR Guidelines for Diagnosis and Management of Rickettsial Diseases in India, Indian Journal of Medical Research, 2015",
+    "ICMR Treatment Guidelines for Antimicrobial Use in Common Syndromes, 2nd edition, 2019 - acute undifferentiated febrile illness and enteric fever",
+    "WHO Dengue: Guidelines for Diagnosis, Treatment, Prevention and Control, 2009 and the 2011 SEARO regional handbook",
+    "Harrison's Principles of Internal Medicine, 21st edition, 2022 - fever of unknown origin",
+    "Murtagh's General Practice, 8th edition, 2018 - fever and chills, pyrexia of unknown origin",
+  ],
+});
+
+topics.push({
+  id: "symptom-approach-headache",
+  title: "Headache: naming the primary headache and catching the secondary one",
+  oneLiner:
+    "Headache is the commonest neurological complaint in general practice and more than nine in ten headaches seen there are primary - migraine, tension-type or medication-overuse headache - so the consultation's work is to screen for the few secondary causes with the SNOOP red flags, to name the primary headache from the history using ICHD-3 criteria without imaging, and to treat it with a written plan that limits acute drugs to fewer than 10-15 days a month.",
+  frequency: "common",
+  keywords: [
+    "sir dard",
+    "migraine",
+    "migraine with aura",
+    "tension-type headache",
+    "cluster headache",
+    "medication overuse headache",
+    "chronic daily headache",
+    "SNOOP red flags",
+    "thunderclap headache",
+    "subarachnoid haemorrhage",
+    "raised intracranial pressure",
+    "papilloedema",
+    "idiopathic intracranial hypertension",
+    "giant cell arteritis",
+    "temporal arteritis",
+    "ICHD-3",
+    "headache diary",
+    "sumatriptan",
+    "propranolol",
+    "amitriptyline",
+    "flunarizine",
+    "topiramate",
+    "sinus headache",
+    "CT head",
+  ],
+  sections: [
+    {
+      heading: "What the complaint means and the shape of headache in general practice",
+      points: [
+        "**Headache is either primary - the headache is the disease - or secondary - the headache is a symptom of something else,** and the International Classification of Headache Disorders, 3rd edition (ICHD-3, 2018) provides the criteria for both; in a general clinic the primary headaches account for over 90% of attendances and a serious secondary cause is found in fewer than 1-2%.",
+        "**Migraine and tension-type headache are the two great primary headaches:** the Karnataka population study found a one-year prevalence of migraine of about 25% and of tension-type headache of about 35% in adults, with migraine causing most of the disability and most of the consultations.",
+        "**Medication-overuse headache is the third common primary headache and the one the clinic creates:** a patient with migraine or tension-type headache who takes acute drugs on 10-15 or more days a month for three months develops a daily or near-daily headache that is sustained by the very tablets taken for it.",
+        "**Three widely held beliefs are mostly wrong:** hypertension does not cause headache except in hypertensive emergencies, refractive error is a rare cause of chronic headache, and most self-diagnosed sinus headache with facial pressure, nasal stuffiness and weather triggers meets criteria for migraine.",
+        "**The secondary headaches that matter are few and specific:** subarachnoid haemorrhage, meningitis and encephalitis, a space-occupying lesion, idiopathic intracranial hypertension, giant cell arteritis after 50, cerebral venous thrombosis in pregnancy and the puerperium, carbon monoxide exposure, and the headache of pre-eclampsia.",
+        "**The diagnosis of headache is made in the history in over 90% of patients;** the examination confirms that there is nothing to find, and investigation is reserved for the patient with a red flag rather than for the anxious patient or the anxious doctor.",
+      ],
+    },
+    {
+      heading: "The history that names the headache",
+      points: [
+        "**Ask how many different headaches the patient has and take each separately** - most migraineurs also have a tension-type headache, and a patient who says the headache is always there usually has an episodic headache with a daily background; ask for the headache-free days in a month rather than for the headache days.",
+        "**Time-to-peak is the single most important item:** a headache that reaches its maximum within one minute is a thunderclap headache and is subarachnoid haemorrhage until proven otherwise; migraine builds over 30 minutes to two hours; tension-type headache builds over hours; cluster headache reaches its peak within 5-10 minutes and recurs at the same time of day.",
+        "**Migraine without aura (ICHD-3) needs at least five attacks lasting 4-72 hours, with two of four pain features (unilateral, pulsating, moderate or severe, aggravated by routine activity) and one of two accompaniments (nausea or vomiting; photophobia and phonophobia),** with no better explanation; the three-question ID Migraine screen - nausea, light sensitivity, and interference with activity - is positive when two of three are present and has a positive predictive value above 90%.",
+        "**Tension-type headache is bilateral, pressing or tightening, mild to moderate, not aggravated by activity, with no nausea and at most one of photophobia or phonophobia;** chronic tension-type headache occurs on 15 or more days a month for over three months and is almost always mixed with medication overuse, poor sleep and anxiety.",
+        "**Cluster headache is strictly unilateral, orbital or temporal, excruciating, lasts 15-180 minutes, occurs from once every other day to eight times a day in bouts of weeks, and is accompanied by ipsilateral lacrimation, nasal congestion, ptosis or miosis and by restlessness** - the migraineur lies still in a dark room, the cluster patient paces and bangs the head.",
+        "**Count the days of acute drug use over the last month by name** - paracetamol, combination tablets with caffeine, NSAIDs, triptans, ergots, opioid combinations - and ask about sleep, caffeine, skipped meals, menstrual relation, screen time, mood with the PHQ-2, neck posture, snoring, and the family history that is present in 60-70% of migraine.",
+      ],
+    },
+    {
+      heading: "SNOOP: the red flags and the examination",
+      points: [
+        "**S - Systemic:** fever, neck stiffness, rash, weight loss, a known cancer, HIV or immunosuppression, pregnancy or the puerperium, and anticoagulant use - each converts a headache into a possible meningitis, metastasis, cerebral venous thrombosis or bleed.",
+        "**N - Neurological:** any focal deficit, altered consciousness, a seizure, papilloedema, a visual field defect, diplopia, or a personality or cognitive change; a typical migraine aura is fully reversible, spreads over 5-20 minutes and lasts under an hour, and anything else is a deficit.",
+        "**O - Onset:** thunderclap onset, first or worst headache, or onset with exertion, coughing, straining or sexual activity - subarachnoid haemorrhage, reversible cerebral vasoconstriction, dissection, or a posterior fossa lesion.",
+        "**O - Older:** a new headache after 50, especially with scalp tenderness, jaw claudication, visual symptoms or polymyalgic stiffness - giant cell arteritis, which blinds if the ESR is not sent and the prednisolone not started today; a new headache after 50 is imaged.",
+        "**P - Pattern and Positional:** a progressive headache over weeks, a change in an established headache, a headache that wakes the patient or is worst on waking and on lying, one that is worse on standing after a lumbar puncture, morning headache with obesity and visual obscurations (idiopathic intracranial hypertension), and post-traumatic headache in an older patient or one on anticoagulants.",
+        "**The examination is short and specific:** temperature, blood pressure, fundoscopy for papilloedema, neck stiffness and Kernig sign, temporal artery tenderness and pulse after 50, visual acuity and fields, pupils and eye movements, facial and limb power and reflexes, gait and tandem walking, and palpation of the sinuses, temporomandibular joints and neck muscles - a normal examination in a patient with a typical history and no red flag ends the search for a secondary cause.",
+      ],
+    },
+    {
+      heading: "Investigations: who needs imaging and who does not",
+      points: [
+        "**A patient with a headache that meets criteria for migraine or tension-type headache, no red flag and a normal examination needs no investigation** - the yield of neuroimaging in this group is below 1% and incidental findings cause more harm than the disease they are looking for.",
+        "**Thunderclap headache is a non-contrast CT of the head within six hours of onset, when its sensitivity for subarachnoid haemorrhage approaches 100%;** if the patient presents later or the CT is negative after six hours, a lumbar puncture at 12 hours for xanthochromia or a CT angiogram follows, and the patient is not sent home from a clinic on a diagnosis of exertional migraine.",
+        "**MRI of the brain, with venography where indicated, is the test for a progressive headache, papilloedema, a focal deficit, a new headache after 50, a headache in pregnancy with a deficit, or a change in an established pattern;** CT is used where MRI is unavailable, and neither is ordered to reassure.",
+        "**Send the ESR and CRP in every new headache after 50** - an ESR above 50 mm in the first hour with a compatible picture starts prednisolone before the temporal artery biopsy, which stays positive for at least a fortnight after steroids are started.",
+        "**Lumbar puncture is done for suspected meningitis, for the negative CT in thunderclap headache, and for idiopathic intracranial hypertension with an opening pressure above 25 cm of water after imaging has excluded a mass** - always after fundoscopy and imaging when there is any focal sign.",
+        "**Tests that are ordered and should not be:** an EEG for headache, a radiograph of the sinuses or of the cervical spine, a routine refraction, and a CT in a child or a young woman for a headache that is clearly migraine - each carries cost or radiation and none changes management.",
+      ],
+    },
+    {
+      heading: "Treating the primary headaches",
+      points: [
+        "**Acute migraine is treated early and adequately:** paracetamol 1 g, or naproxen 500-550 mg, or ibuprofen 400-600 mg, or aspirin 900 mg, taken at the first sign of the attack with domperidone 10 mg or metoclopramide 10 mg for nausea and absorption; the tablet taken at the height of the attack has half the effect of the same tablet taken at its start.",
+        "**A triptan is added when simple analgesia fails on two attacks:** sumatriptan 50-100 mg orally (repeatable once after two hours), or rizatriptan 10 mg, or the nasal or subcutaneous route for vomiting; triptans are contraindicated in ischaemic heart disease, uncontrolled hypertension, previous stroke, hemiplegic migraine and pregnancy, and are limited to fewer than 10 days a month.",
+        "**Preventive treatment is offered when there are four or more migraine days a month, or fewer disabling ones, or when acute drugs are failing or being overused:** propranolol 40-160 mg a day, amitriptyline 10-50 mg at night, flunarizine 10 mg at night (widely used in India; watch for weight gain, sedation, depression and parkinsonism in the elderly), topiramate 50-100 mg a day (paraesthesiae, weight loss, kidney stones, teratogenic), or sodium valproate 500-1000 mg a day (not in women who could become pregnant); each is started low, built up over 4 weeks, judged at 8-12 weeks, and continued for 6-12 months before a slow withdrawal.",
+        "**Tension-type headache is treated with simple analgesia on fewer than 15 days a month, and with amitriptyline 10-25 mg at night when it is frequent, together with sleep regularisation, treatment of anxiety and depression, exercise, and attention to neck posture and screen use;** muscle relaxants and combination analgesics have no place.",
+        "**Cluster headache is treated acutely with 100% oxygen at 12-15 litres a minute by non-rebreathing mask for 15-20 minutes or subcutaneous sumatriptan 6 mg, and the bout is prevented with verapamil 240-480 mg a day under ECG monitoring with a short prednisolone bridge;** oral analgesics are useless because the attack is over before they are absorbed.",
+        "**Medication-overuse headache is treated by explaining the mechanism and stopping the overused drug,** abruptly for simple analgesics and triptans and by taper for opioids and barbiturate combinations, with a warning that the headache worsens for 2-10 days before it improves, a bridge of naproxen or a short course of prednisolone, an immediate preventive such as topiramate or amitriptyline, a diary, and a review at four weeks; two-thirds of patients revert to their original episodic headache within two months.",
+      ],
+    },
+    {
+      heading: "The diary, lifestyle, the written plan and referral",
+      points: [
+        "**Start a headache diary at the first visit** - date, duration, severity out of 10, triggers, drugs taken and their effect, menstrual days - and read it at every review; it is the instrument that makes the diagnosis, exposes medication overuse, and shows whether the preventive is working.",
+        "**Regularity is the treatment of migraine:** a fixed sleep and waking time, no skipped meals, 2-3 litres of water, a steady caffeine intake of not more than two cups a day, regular aerobic exercise, and the recognition of personal triggers - fasting, heat, travel, strong smells, menstrual days, certain foods - without an obsessive elimination diet.",
+        "**Write the plan on the prescription:** the name of the headache, the acute drug and when to take it, the maximum days a month it may be used, the preventive and how it will be built up, the diary, and the date of review; the patient with a written diagnosis stops searching for a scan.",
+        "**Address the fear that drives the consultation:** most patients with migraine want to know it is not a tumour; saying that the story is typical of migraine, that the examination is normal and that a scan is not needed is more reassuring than an unnecessary scan, and the specific word migraine is itself therapeutic.",
+        "**Refer** any red-flag headache today, a diagnosis that remains uncertain after two visits, migraine that fails two preventives at adequate dose and duration, cluster headache, headache in pregnancy that is not clearly migraine, and suspected idiopathic intracranial hypertension or giant cell arteritis.",
+        "**Review at 4-8 weeks after any new plan, then every 3-6 months while on a preventive** - the review is where the diary is read, the acute drug days are counted, the blood pressure and weight on flunarizine or valproate are recorded, and the decision to continue or withdraw is made.",
+      ],
+    },
+  ],
+  tables: [
+    {
+      heading: "The three primary headaches at a glance (ICHD-3)",
+      columns: ["Feature", "Migraine", "Tension-type headache", "Cluster headache"],
+      rows: [
+        ["Site", "Unilateral in 60%, may alternate sides", "Bilateral, band-like", "Strictly unilateral, orbital or temporal, same side"],
+        ["Character and severity", "Pulsating, moderate to severe", "Pressing or tightening, mild to moderate", "Boring or stabbing, excruciating"],
+        ["Duration of attack", "4-72 hours", "30 minutes to 7 days", "15-180 minutes"],
+        ["Frequency", "Episodic; chronic if 15 or more days a month", "Episodic or chronic", "1 every other day to 8 a day, in bouts of weeks; often at night"],
+        ["Accompaniments", "Nausea, vomiting, photophobia and phonophobia, aura in a third", "None, or one of photophobia or phonophobia", "Ipsilateral lacrimation, rhinorrhoea, ptosis, miosis, restlessness"],
+        ["Behaviour", "Lies still in the dark", "Carries on", "Paces, rocks, may strike the head"],
+        ["Acute treatment", "NSAID or paracetamol with domperidone early; triptan", "Simple analgesic on fewer than 15 days a month", "100% oxygen 12-15 L/min; subcutaneous sumatriptan 6 mg"],
+        ["Preventive", "Propranolol, amitriptyline, flunarizine, topiramate, valproate", "Amitriptyline; sleep, stress and posture", "Verapamil with ECG; prednisolone bridge"],
+      ],
+    },
+    {
+      heading: "SNOOP red flags and the action each demands",
+      columns: ["Letter", "Feature", "What it suggests", "Action in the clinic"],
+      rows: [
+        ["S - Systemic", "Fever, neck stiffness, rash, weight loss, cancer, HIV, pregnancy, anticoagulants", "Meningitis, metastasis, cerebral venous thrombosis, subdural haematoma", "Same-day referral; lumbar puncture after imaging when meningitis is suspected; antibiotics before transfer if meningococcal"],
+        ["N - Neurological", "Focal deficit, papilloedema, altered consciousness, seizure, visual field loss", "Space-occupying lesion, raised intracranial pressure, stroke", "Urgent MRI or CT and referral"],
+        ["O - Onset", "Thunderclap - peak within one minute; onset with exertion, cough or sex", "Subarachnoid haemorrhage, reversible cerebral vasoconstriction, dissection", "Non-contrast CT within 6 hours; lumbar puncture at 12 hours if CT negative; never discharged as migraine"],
+        ["O - Older", "New headache after 50, scalp tenderness, jaw claudication, visual symptoms", "Giant cell arteritis, tumour, subdural haematoma", "ESR and CRP today; prednisolone 40-60 mg at once if arteritis suspected; imaging"],
+        ["P - Pattern, Positional, Papilloedema, Pregnancy", "Progressive or changed headache, worse lying or on waking, worse standing, obesity with visual obscurations, headache in pregnancy with hypertension", "Raised intracranial pressure, low-pressure headache, idiopathic intracranial hypertension, pre-eclampsia, venous thrombosis", "MRI with venography; fundoscopy; blood pressure and urine protein in pregnancy; referral"],
+        ["P - Painkillers", "Acute drugs on 10-15 or more days a month for 3 months", "Medication-overuse headache", "Explain, withdraw, bridge, start a preventive, diary, review at 4 weeks"],
+      ],
+    },
+  ],
+  redFlags: [
+    "Thunderclap headache - maximal within one minute, the first or the worst headache of the patient's life - subarachnoid haemorrhage until a CT within six hours and, if needed, a lumbar puncture say otherwise.",
+    "Headache with fever and neck stiffness, a purpuric rash or altered consciousness - meningitis or encephalitis; give the first antibiotic dose before transfer if there is a delay.",
+    "Any focal neurological deficit, papilloedema, a seizure, or a progressive headache that wakes the patient, is worst on waking or on lying, or worsens with straining - raised intracranial pressure or a mass; same-day imaging.",
+    "A new headache after 50 with scalp tenderness, jaw claudication, transient visual loss or a raised ESR - giant cell arteritis; start prednisolone 40-60 mg today and arrange biopsy, because delay costs the sight.",
+    "Headache in the second half of pregnancy or the puerperium with a blood pressure of 140/90 mmHg or more, proteinuria, visual symptoms or epigastric pain - pre-eclampsia; and any postpartum headache with a deficit or seizure - cerebral venous thrombosis.",
+    "Headache after head injury in an older patient, an alcohol user or a patient on anticoagulants or antiplatelets - subdural haematoma; CT even when the injury seemed trivial.",
+  ],
+  pearls: [
+    "The diagnosis of a headache is in the history: time-to-peak, the days a month, the accompaniments, the behaviour during the attack, and the count of tablets.",
+    "Sinus headache is migraine until proven otherwise, hypertension does not cause headache until it is malignant, and spectacles cure very few headaches.",
+    "Ask how many days a month the head is completely free of pain - it exposes chronic daily headache and medication overuse in one question.",
+    "Naming the headache migraine, out loud and on paper, does more for the patient's fear than a normal CT scan.",
+    "The acute drug taken at the start of the attack works twice as well as the same drug taken at its height; teach the patient to treat early and to add domperidone.",
+    "Count acute drug days by name and write the limit on the prescription: fewer than 10 days a month for triptans and combinations, fewer than 15 for simple analgesics.",
+    "A normal CT after six hours does not exclude subarachnoid haemorrhage; a thunderclap headache is not sent home from the clinic on a diagnosis of exertional migraine.",
+  ],
+  theory: [
+    {
+      id: "symptom-approach-headache-t1",
+      paper: "I",
+      kind: "long",
+      marks: 10,
+      minutes: 20,
+      frequency: "core",
+      question:
+        "A 28-year-old woman presents with recurrent headaches for two years. Discuss the diagnosis and management of migraine in family practice, including the red flags that would make you suspect a secondary headache.",
+      openingLines: [
+        "Migraine is a primary headache disorder defined by ICHD-3 as at least five attacks of headache lasting 4-72 hours with two of four pain features (unilateral, pulsating, moderate to severe, aggravated by routine activity) and one of two accompaniments (nausea or vomiting; photophobia and phonophobia), with a one-year prevalence of about 25% in Indian adults and a strong female preponderance.",
+        "The family physician makes the diagnosis from the history, screens for the secondary headaches with the SNOOP red flags and a focused examination, avoids imaging in the typical case, and treats with early adequate acute therapy, a preventive when attacks are frequent, and a written plan that prevents medication overuse.",
+      ],
+      answer: [
+        {
+          heading: "1. History and diagnosis",
+          points: [
+            "Characterise each headache separately: onset and time-to-peak, site, quality, severity, duration, frequency in days per month and headache-free days, accompaniments including aura (visual scintillations or scotoma spreading over 5-20 minutes and lasting under an hour), behaviour during the attack, triggers, and menstrual relation.",
+            "Apply the ICHD-3 criteria and the three-item ID Migraine screen (nausea, photophobia, disability); distinguish from tension-type headache (bilateral, pressing, no nausea) and cluster headache (strictly unilateral, 15-180 minutes, autonomic features, restlessness).",
+            "Count acute drug days by name over the last month, and ask about sleep, caffeine, skipped meals, screen use, mood (PHQ-2), contraceptive use, and family history.",
+          ],
+        },
+        {
+          heading: "2. Red flags for a secondary headache (SNOOP)",
+          points: [
+            "Systemic features - fever, neck stiffness, rash, weight loss, cancer, HIV, pregnancy, anticoagulants.",
+            "Neurological signs - focal deficit, papilloedema, altered consciousness, seizure, visual field loss.",
+            "Onset thunderclap, or with exertion, cough or sexual activity.",
+            "Older - new headache after 50, scalp tenderness, jaw claudication.",
+            "Pattern change, positional or progressive headache, papilloedema, pregnancy, painkiller overuse.",
+          ],
+        },
+        {
+          heading: "3. Examination and investigation",
+          points: [
+            "Blood pressure, temperature, fundoscopy, neck stiffness, visual acuity and fields, pupils and eye movements, limb power and reflexes, gait; palpation of temporal arteries after 50, sinuses, temporomandibular joints and neck.",
+            "No investigation for typical migraine with a normal examination; non-contrast CT within 6 hours for thunderclap headache with lumbar puncture if negative; MRI for progressive, positional or focal presentations and for new headache after 50; ESR and CRP after 50; no EEG, sinus radiograph or routine refraction.",
+          ],
+        },
+        {
+          heading: "4. Acute treatment",
+          points: [
+            "Early: paracetamol 1 g, naproxen 500-550 mg, ibuprofen 400-600 mg or aspirin 900 mg at onset, with domperidone or metoclopramide 10 mg.",
+            "Triptan if simple analgesia fails on two attacks: sumatriptan 50-100 mg orally, repeat once after 2 hours; nasal or subcutaneous route for vomiting; contraindicated in ischaemic heart disease, uncontrolled hypertension, stroke, hemiplegic migraine and pregnancy.",
+            "Limit triptans and combinations to fewer than 10 days a month and simple analgesics to fewer than 15; no opioids, no ergotamine-caffeine combinations.",
+          ],
+        },
+        {
+          heading: "5. Preventive treatment",
+          points: [
+            "Indicated for four or more migraine days a month, disabling attacks, failure or overuse of acute drugs, or patient preference.",
+            "Propranolol 40-160 mg a day (avoid in asthma), amitriptyline 10-50 mg at night (useful with tension-type overlap, insomnia or depression), flunarizine 10 mg at night (weight gain, depression, parkinsonism), topiramate 50-100 mg a day (paraesthesiae, cognitive slowing, teratogenic), sodium valproate 500-1000 mg a day (not in women of childbearing potential).",
+            "Start low and titrate over 4 weeks, assess at 8-12 weeks on the diary, continue 6-12 months, then withdraw slowly; a 50% reduction in headache days is success.",
+          ],
+        },
+        {
+          heading: "6. Non-drug measures, safety net and referral",
+          points: [
+            "Headache diary, regular sleep and meals, hydration, caffeine limit, aerobic exercise, trigger recognition, relaxation and cognitive behavioural approaches; in this woman, menstrual migraine may be treated with a perimenstrual NSAID or triptan and combined oral contraceptives are avoided if she has aura.",
+            "Written plan with the diagnosis, drugs, the monthly limit, and the review date at 4-8 weeks; explicit reassurance that the story is migraine and a scan is not needed.",
+            "Refer for red flags, diagnostic doubt after two visits, failure of two preventives, cluster headache, or headache in pregnancy that is not clearly migraine.",
+          ],
+        },
+      ],
+      mustDraw: [
+        "A three-column table comparing migraine, tension-type and cluster headache across site, character, duration, accompaniments, behaviour and treatment.",
+        "The SNOOP mnemonic laid out as a table with the secondary cause each letter points to and the action it demands.",
+      ],
+      markSplit: [
+        { part: "Definition, ICHD-3 criteria and epidemiology", marks: 2 },
+        { part: "History, differentiation from other primary headaches and drug-day count", marks: 2 },
+        { part: "Red flags, examination and rational investigation", marks: 2 },
+        { part: "Acute and preventive drug treatment with limits and cautions", marks: 3 },
+        { part: "Diary, lifestyle, written plan and referral", marks: 1 },
+      ],
+      keywords: ["migraine", "ICHD-3", "SNOOP", "triptan", "propranolol", "flunarizine", "headache diary", "medication overuse"],
+    },
+    {
+      id: "symptom-approach-headache-t2",
+      paper: "II",
+      kind: "short-note",
+      marks: 5,
+      minutes: 10,
+      frequency: "common",
+      question: "Write short notes on medication-overuse headache.",
+      openingLines: [
+        "Medication-overuse headache (ICHD-3) is a headache occurring on 15 or more days a month in a patient with a pre-existing primary headache disorder, as a consequence of regular overuse of acute headache medication for more than three months - simple analgesics on 15 or more days a month, or triptans, ergots, opioids or combination analgesics on 10 or more days a month.",
+        "It affects 1-2% of the population, is three times commoner in women, and in India is sustained by over-the-counter combination tablets containing paracetamol, caffeine and an NSAID bought by the strip.",
+      ],
+      answer: [
+        {
+          heading: "Recognition",
+          points: [
+            "A migraineur or tension-type headache patient whose headache has become daily or near-daily, dull and present on waking, with superimposed attacks, and who reports that the tablets no longer work but cannot go a day without them.",
+            "The diary is the diagnostic instrument: count the days of each drug by name over the preceding month; ask specifically about chemist-bought combinations, ergotamine preparations and codeine or tramadol combinations.",
+            "Exclude a new secondary cause when the pattern has changed - fundoscopy, examination, and imaging if any red flag.",
+          ],
+        },
+        {
+          heading: "Management",
+          points: [
+            "Explain the mechanism in plain words: the tablets have become the cause; the headache will worsen for 2-10 days after stopping and then improve over 4-8 weeks; two-thirds of patients return to their original episodic headache.",
+            "Withdraw the overused drug - abruptly for simple analgesics, NSAIDs and triptans; by taper for opioids, barbiturates and benzodiazepine combinations, which may need supervised or inpatient withdrawal.",
+            "Bridge the withdrawal period with naproxen 500 mg twice daily for up to two weeks (if naproxen was not the overused drug), or a short course of prednisolone, with domperidone for nausea.",
+            "Start a preventive at the same time - topiramate 50-100 mg a day or amitriptyline 10-50 mg at night for migraine background, amitriptyline for tension-type background - and treat depression, anxiety and insomnia.",
+            "Set a written limit for future acute use: no more than two days a week and fewer than 10 days a month; keep the diary; review at 4 weeks and 3 months; relapse occurs in about 30% and is addressed by repeating the same programme.",
+          ],
+        },
+        {
+          heading: "Prevention",
+          points: [
+            "Every prescription for an acute headache drug carries the monthly limit in writing; combination analgesics and codeine-containing preparations are not prescribed for headache; the patient is taught that treating early with a single adequate dose reduces the total tablets taken.",
+          ],
+        },
+      ],
+      mustDraw: ["A box listing the ICHD-3 drug-day thresholds: 15 or more days for simple analgesics; 10 or more days for triptans, ergots, opioids and combinations, for more than 3 months."],
+      markSplit: [
+        { part: "Definition with drug-day thresholds and epidemiology", marks: 1.5 },
+        { part: "Recognition and the diary", marks: 1 },
+        { part: "Withdrawal, bridging and preventive", marks: 2 },
+        { part: "Prevention of recurrence", marks: 0.5 },
+      ],
+      keywords: ["medication overuse headache", "ICHD-3", "withdrawal", "bridge therapy", "topiramate", "headache diary"],
+    },
+  ],
+  mcqs: [
+    {
+      id: "symptom-approach-headache-q1",
+      stem: "A 24-year-old woman describes two years of headaches occurring twice a month, right-sided and throbbing, lasting about eight hours, with nausea and a need to lie in a dark room. Each is preceded by 20 minutes of shimmering zigzag lines. Examination including fundoscopy is normal. What is the most appropriate management?",
+      options: [
+        "Non-contrast CT of the head to exclude a structural lesion before treatment",
+        "Naproxen 500 mg with domperidone 10 mg at the onset of the attack, a headache diary and review in eight weeks",
+        "Start propranolol 40 mg twice daily as first-line preventive treatment",
+        "Prescribe a combined oral contraceptive pill to regularise the hormonal trigger",
+        "Amoxicillin-clavulanate and a sinus radiograph for probable sinus headache",
+      ],
+      answer: 1,
+      explanation:
+        "The story meets ICHD-3 criteria for migraine with aura, the examination is normal and there is no red flag, so no imaging is needed and treatment begins with early adequate acute therapy plus a diary. A CT has a yield below 1% here and only feeds the fear of a tumour. A preventive is indicated at four or more migraine days a month or with disability or overuse, not at two attacks a month on no treatment. A combined oral contraceptive is contraindicated in migraine with aura because of the increased ischaemic stroke risk. There is nothing to suggest sinusitis, and self-labelled sinus headache is usually migraine.",
+      difficulty: "easy",
+    },
+    {
+      id: "symptom-approach-headache-q2",
+      stem: "A 46-year-old man developed a severe occipital headache while lifting a gas cylinder three hours ago; it reached its maximum within seconds and has persisted with vomiting. He has never had such a headache. Blood pressure is 160/96 mmHg and neurological examination is normal. What is the most appropriate next step?",
+      options: [
+        "Reassure him that this is a benign exertional headache and prescribe indomethacin",
+        "Give sumatriptan 50 mg and review if the headache has not settled by evening",
+        "Refer immediately for a non-contrast CT of the head, with lumbar puncture if the CT is negative",
+        "Start amlodipine 5 mg for hypertensive headache and review in one week",
+        "Arrange an MRI of the brain as an outpatient within the next two weeks",
+      ],
+      answer: 2,
+      explanation:
+        "A first-ever headache that peaked within seconds during exertion is a thunderclap headache, and subarachnoid haemorrhage must be excluded by a non-contrast CT, which approaches 100% sensitivity within six hours, followed by a lumbar puncture for xanthochromia if the CT is negative. A normal neurological examination does not exclude a sentinel bleed. Labelling it exertional headache and prescribing indomethacin is the error that kills the patient at the rebleed. A triptan constricts cerebral vessels and is contraindicated when a vascular cause is possible. The raised blood pressure is a response to pain and to the bleed, not its cause. An outpatient MRI in two weeks is far too slow for a diagnosis that carries a high early rebleed risk.",
+      difficulty: "easy",
+    },
+    {
+      id: "symptom-approach-headache-q3",
+      stem: "A 68-year-old woman reports a new persistent right temporal headache for three weeks, pain in the jaw on chewing, and two brief episodes of blurring in the right eye. The right temporal artery is tender and pulseless. Vision is 6/9 in both eyes. What is the most appropriate immediate management?",
+      options: [
+        "Send ESR and CRP and start prednisolone 40-60 mg daily today, then arrange temporal artery biopsy within two weeks",
+        "Arrange temporal artery biopsy and start steroids only if the histology confirms arteritis",
+        "Start amitriptyline 10 mg at night for chronic tension-type headache",
+        "Prescribe carbamazepine 200 mg twice daily for trigeminal neuralgia",
+        "Refer for a dental opinion on the jaw pain and review in one month",
+      ],
+      answer: 0,
+      explanation:
+        "A new headache after 50 with jaw claudication, scalp artery tenderness and amaurosis fugax is giant cell arteritis until proven otherwise, and high-dose prednisolone is started the same day on clinical grounds after drawing the ESR and CRP, because the next event may be permanent blindness. The biopsy remains positive for two weeks or more after steroids and must never delay treatment. Tension-type headache does not begin at 68 with a pulseless artery. Trigeminal neuralgia produces electric shocks in a nerve territory, not a persistent temporal ache with visual loss. Jaw claudication is ischaemic pain on chewing and is a classical feature of arteritis, not a dental problem.",
+      difficulty: "moderate",
+    },
+    {
+      id: "symptom-approach-headache-q4",
+      stem: "A 38-year-old bank clerk with a ten-year history of migraine now has a dull headache on about 22 days a month, present on waking. For the past year she has taken a paracetamol-caffeine-diclofenac combination tablet on most days, bought from the chemist. Examination is normal. What is the most appropriate management?",
+      options: [
+        "Increase the combination tablet to twice daily and add pantoprazole for gastric protection",
+        "Add tramadol 50 mg for the days the combination tablet fails",
+        "Explain medication-overuse headache, stop the combination tablet, bridge with a short course of naproxen or prednisolone, and start topiramate or amitriptyline as a preventive",
+        "Arrange a CT of the head and paranasal sinuses before any change in treatment",
+        "Continue the combination tablet and add flunarizine 10 mg at night until the headaches reduce",
+      ],
+      answer: 2,
+      explanation:
+        "A migraineur whose headache has become near-daily on a background of acute drugs taken on more than 15 days a month for over three months has medication-overuse headache, and the treatment is withdrawal of the overused drug with an explanation, a bridge for the withdrawal period, a preventive started at the same time and a diary. Increasing the dose deepens the overuse. Adding an opioid converts it into a harder-to-treat opioid-overuse headache. A CT is not indicated in a normal examination with a clear mechanism, and sinus imaging is irrelevant. A preventive given while the overuse continues does not work - withdrawal is the condition for the preventive to act.",
+      difficulty: "moderate",
+    },
+    {
+      id: "symptom-approach-headache-q5",
+      stem: "A 32-year-old man has had, for three weeks, one to two attacks a day of excruciating pain behind the left eye lasting 45 minutes, often waking him at 2 am, with tearing and blocking of the left nostril. During attacks he paces and presses his fist to the eye. He had a similar six-week spell last year. Examination between attacks is normal. What is the most appropriate acute treatment?",
+      options: [
+        "Carbamazepine 200 mg twice daily",
+        "Amoxicillin-clavulanate for acute sinusitis with a nasal decongestant",
+        "100% oxygen at 12-15 litres a minute by non-rebreathing mask, or subcutaneous sumatriptan 6 mg",
+        "Amitriptyline 25 mg at night with paracetamol during attacks",
+        "Oral paracetamol 1 g with domperidone 10 mg at the onset of each attack",
+      ],
+      answer: 2,
+      explanation:
+        "Strictly unilateral orbital pain of 15-180 minutes with ipsilateral autonomic features, nocturnal timing, restlessness and a bout pattern is cluster headache, and the two acute treatments with evidence are high-flow oxygen and subcutaneous sumatriptan, followed by verapamil to prevent the bout. Carbamazepine treats trigeminal neuralgia, whose pain is a brief electric shock in a nerve territory, not a 45-minute boring pain. Unilateral nasal blockage with tearing is a cranial autonomic feature, not sinusitis, and antibiotics do nothing. Amitriptyline has no role in cluster headache. Oral analgesics are useless because the attack ends before the tablet is absorbed.",
+      difficulty: "moderate",
+    },
+  ],
+  cards: [
+    {
+      id: "symptom-approach-headache-c1",
+      front: "ICHD-3 criteria for migraine without aura.",
+      back: "At least 5 attacks lasting 4-72 hours; 2 of 4 pain features (unilateral, pulsating, moderate to severe, aggravated by activity); 1 of 2 accompaniments (nausea or vomiting; photophobia and phonophobia); not better explained.",
+    },
+    {
+      id: "symptom-approach-headache-c2",
+      front: "SNOOP mnemonic for secondary headache.",
+      back: "Systemic symptoms or disease; Neurological signs; Onset thunderclap or with exertion; Older than 50; Pattern change, Positional, Papilloedema, Pregnancy, Painkiller overuse.",
+    },
+    {
+      id: "symptom-approach-headache-c3",
+      front: "Work-up of a thunderclap headache.",
+      back: "Non-contrast CT head within 6 hours (sensitivity near 100%); if negative or beyond 6 hours, lumbar puncture at 12 hours for xanthochromia or CT angiography; never discharged as exertional migraine.",
+    },
+    {
+      id: "symptom-approach-headache-c4",
+      front: "Definition of medication-overuse headache.",
+      back: "Headache on 15 or more days a month in a patient with a primary headache, with simple analgesics on 15 or more days or triptans, ergots, opioids or combinations on 10 or more days a month, for more than 3 months.",
+    },
+    {
+      id: "symptom-approach-headache-c5",
+      front: "Indications and choices for migraine prevention.",
+      back: "Four or more migraine days a month, disabling attacks, or failing or overused acute drugs; propranolol, amitriptyline, flunarizine, topiramate or valproate, titrated over 4 weeks and judged at 8-12 weeks on the diary.",
+    },
+    {
+      id: "symptom-approach-headache-c6",
+      front: "Contraindications to triptans.",
+      back: "Ischaemic heart disease, uncontrolled hypertension, previous stroke or TIA, peripheral vascular disease, hemiplegic or basilar migraine, pregnancy, and use within 24 hours of an ergot.",
+    },
+    {
+      id: "symptom-approach-headache-c7",
+      front: "Acute and preventive treatment of cluster headache.",
+      back: "Acute: 100% oxygen 12-15 L/min for 15-20 minutes or subcutaneous sumatriptan 6 mg. Preventive: verapamil 240-480 mg a day with ECG monitoring, with a short prednisolone bridge.",
+    },
+    {
+      id: "symptom-approach-headache-c8",
+      front: "Giant cell arteritis in the clinic - the three actions.",
+      back: "New headache after 50 with jaw claudication, scalp tenderness or visual symptoms: send ESR and CRP, start prednisolone 40-60 mg the same day, and arrange temporal artery biopsy within two weeks.",
+    },
+    {
+      id: "symptom-approach-headache-c9",
+      front: "Three headache myths to correct in the consultation.",
+      back: "Hypertension causes headache only in an emergency; refractive error rarely causes chronic headache; self-diagnosed sinus headache is usually migraine.",
+    },
+    {
+      id: "symptom-approach-headache-c10",
+      front: "Cautions with flunarizine.",
+      back: "Weight gain, sedation, depression and drug-induced parkinsonism, particularly in the elderly; avoid in depression and in Parkinson disease; review weight and mood at each visit.",
+    },
+  ],
+  references: [
+    "Headache Classification Committee of the International Headache Society, The International Classification of Headache Disorders, 3rd edition (ICHD-3), Cephalalgia 2018",
+    "NICE Clinical Guideline CG150, Headaches in over 12s: diagnosis and management, 2012, updated 2021",
+    "American Headache Society consensus statement on the update of integrating new migraine treatments into clinical practice, Headache 2021",
+    "Kulkarni GB, Rao GN, Gururaj G, Stovner LJ, Steiner TJ. Headache disorders and public ill-health in India: prevalence estimates in Karnataka State. Journal of Headache and Pain, 2015",
+    "Harrison's Principles of Internal Medicine, 21st edition, 2022 - headache and migraine",
+    "Murtagh's General Practice, 8th edition, 2018 - headache",
+  ],
+});
+
+topics.push({
+  id: "symptom-approach-chronic-cough",
+  title: "Cough for more than two weeks",
+  oneLiner:
+    "A cough lasting two weeks or more in India is, by the definition of the National Tuberculosis Elimination Programme, presumptive pulmonary tuberculosis until a sputum nucleic acid amplification test and a chest radiograph say otherwise, and once tuberculosis is excluded the family physician works through the post-infectious cough, asthma and COPD, upper airway cough syndrome, reflux, ACE inhibitors and smoke exposure with a spirometry and a structured sequence of empirical trials rather than a succession of cough syrups.",
+  frequency: "common",
+  keywords: [
+    "khansi",
+    "chronic cough",
+    "subacute cough",
+    "presumptive tuberculosis",
+    "NTEP",
+    "RNTCP",
+    "CBNAAT",
+    "Xpert MTB/RIF",
+    "Truenat",
+    "Nikshay",
+    "upper airway cough syndrome",
+    "postnasal drip",
+    "cough variant asthma",
+    "gastro-oesophageal reflux",
+    "ACE inhibitor cough",
+    "pertussis",
+    "post-infectious cough",
+    "bronchiectasis",
+    "lung cancer",
+    "haemoptysis",
+    "cough syrup",
+    "codeine",
+    "spirometry",
+    "chest radiograph",
+    "biomass smoke",
+  ],
+  sections: [
+    {
+      heading: "Definitions and the Indian frame",
+      points: [
+        "**Cough is classified by duration: acute under three weeks, subacute three to eight weeks, and chronic beyond eight weeks** (American College of Chest Physicians), and the differential changes at each boundary - acute cough is nearly always a viral infection, subacute cough is mostly post-infectious, and chronic cough is airway disease, reflux or drugs.",
+        "**India overrides this with a two-week rule:** under the National Tuberculosis Elimination Programme, a cough of two weeks or more - or fever of two weeks, significant weight loss, haemoptysis of any duration, or any abnormality on a chest radiograph - defines presumptive pulmonary tuberculosis and mandates a sputum test, because India carries about a quarter of the world's tuberculosis with an estimated 2.8 million cases a year.",
+        "**In a person living with HIV, a household contact of a tuberculosis patient, or a patient with diabetes, silicosis or immunosuppression, a cough of any duration is presumptive tuberculosis** and the threshold for testing is lower still.",
+        "**Most cough beyond two weeks in a family clinic is not tuberculosis** - it is post-infectious cough, asthma, upper airway cough syndrome or reflux - but the test is cheap, the result is available in two hours, and a missed case infects ten to fifteen contacts a year, so the test is done before the trial of anything else.",
+        "**The cough syrup is the wrong first response:** it treats no cause, most combination preparations sold in India are irrational and several have been prohibited by Gazette notification, codeine-containing syrups are diverted and abused, and a month of syrup is a month of delay in a tuberculosis diagnosis.",
+        "**The consultation ends with a sputum container in the patient's hand, a chest radiograph requested, and a dated review** - not with a bottle.",
+      ],
+    },
+    {
+      heading: "The history that sorts the cough",
+      points: [
+        "**Ask first for the tuberculosis cluster:** evening rise of temperature, night sweats, loss of appetite and weight, haemoptysis, chest pain, a household or workplace contact, previous tuberculosis and whether the treatment was completed, diabetes, HIV risk, alcohol, tobacco, silica exposure, and time spent in a prison, a hostel or a slum.",
+        "**Then characterise the cough:** dry or productive, the colour and quantity of sputum, blood, timing (nocturnal and early-morning cough suggests asthma; after meals and on lying suggests reflux; on waking with sputum suggests bronchiectasis or COPD), a throat-clearing or postnasal sensation, paroxysms with a whoop or post-tussive vomiting (pertussis, which causes the hundred-day cough in adults too), and a cough that began within weeks of starting a tablet.",
+        "**Ask for the drug and the smoke:** ACE inhibitors cause a dry cough in 5-20% of users, sometimes months after starting, that settles within one to four weeks of stopping; sitagliptin and nitrofurantoin are occasional culprits; and biomass cooking smoke, bidi or cigarette smoking, and occupational dusts (stone, cotton, cement, grain) are as important as any drug.",
+        "**Search for the big three of chronic cough in a non-smoker with a normal radiograph who is not on an ACE inhibitor:** upper airway cough syndrome (rhinitis, postnasal drip, throat clearing, nasal blockage), asthma including cough-variant asthma (nocturnal, exercise or cold-air trigger, wheeze, atopy, family history), and gastro-oesophageal reflux (heartburn, regurgitation, hoarseness, cough after meals); together these explain over 90% of such patients, and about a quarter have more than one.",
+        "**Ask what the patient fears and what has been tried:** a week of amoxicillin, two cough syrups and a steroid injection is a common history, and each affects the interpretation of the sputum and radiograph; the fear is usually tuberculosis or cancer and is addressed directly.",
+        "**In a child, ask separately** for a foreign body inhalation episode, recurrent wheeze, feeding difficulty, contact with an adult with a cough, and immunisation status - the differential and the programme algorithm both differ.",
+      ],
+    },
+    {
+      heading: "Examination and the first-line tests",
+      points: [
+        "**General examination looks for the systemic marks of tuberculosis and malignancy:** weight and BMI against any earlier record, temperature, pallor, clubbing, cervical and supraclavicular lymph nodes, and the nasal mucosa, throat and posterior pharynx for the cobblestoning and mucus of upper airway cough syndrome.",
+        "**Chest examination is often normal in a chronic cough and abnormal findings direct the next test:** localised crackles or bronchial breathing at an apex, a wheeze on forced expiration, coarse basal crackles that shift with coughing (bronchiectasis), a hyperinflated silent chest (COPD), a pleural rub or dullness, and a fixed monophonic wheeze that means an obstructing lesion.",
+        "**Every presumptive tuberculosis patient gives sputum for a nucleic acid amplification test - CBNAAT (Xpert MTB/RIF or Ultra) or Truenat - as the first test, not a smear:** it detects Mycobacterium tuberculosis and rifampicin resistance in two hours with a sensitivity around 85-90% in adults, far above the 50-60% of smear microscopy, and it is free under the programme in the public system and through designated private laboratories.",
+        "**A chest radiograph is ordered at the same visit** - it is sensitive for pulmonary tuberculosis but not specific, so a suggestive film with a negative NAAT still goes to the medical officer for a decision on a repeat sample, liquid culture or a clinically diagnosed case; a normal film with a negative NAAT effectively closes the tuberculosis question in an immunocompetent adult.",
+        "**Spirometry with bronchodilator reversibility is the test for asthma and COPD:** a rise in FEV1 of 12% and 200 mL after salbutamol supports asthma, a post-bronchodilator FEV1/FVC below 0.70 defines COPD, and a peak flow diary showing diurnal variability above 10-20% over two weeks is the cheaper alternative where spirometry is not available; a normal spirometry does not exclude cough-variant asthma.",
+        "**Add on indication:** a complete blood count with eosinophils, sputum for eosinophils where available, an HIV test with consent in every tuberculosis patient, a blood sugar in every tuberculosis patient (and a tuberculosis screen in every diabetic with a cough), a pertussis PCR or serology in a paroxysmal cough, and a high-resolution CT for suspected bronchiectasis, interstitial disease or a mass.",
+      ],
+    },
+    {
+      heading: "The sequential empirical approach once tuberculosis is excluded",
+      points: [
+        "**Stop the ACE inhibitor and change it for an angiotensin receptor blocker** as the first step in any patient taking one, and review at four weeks before doing anything else; stop smoking and reduce biomass exposure at the same visit, because a smoker's cough will not settle while the smoke continues.",
+        "**Treat upper airway cough syndrome first when there are nasal symptoms:** a first-generation antihistamine such as chlorpheniramine 4 mg at night with or without a short course of decongestant, or an intranasal corticosteroid such as fluticasone or mometasone, for two to four weeks; response confirms the diagnosis.",
+        "**Treat asthma or cough-variant asthma with an inhaled corticosteroid, ideally as ICS-formoterol, for four to eight weeks with a peak flow diary;** cough-variant asthma responds to the same treatment as classical asthma, and a course of oral prednisolone is not used as a diagnostic trial in family practice.",
+        "**Treat reflux when there is heartburn or regurgitation with a proton pump inhibitor twice daily before meals for eight weeks with head-of-bed elevation, weight loss, a three-hour gap between dinner and bed, and avoidance of late meals, alcohol and smoking;** empirical proton pump inhibitor therapy for cough without reflux symptoms has weak evidence and is not first line.",
+        "**Treat post-infectious cough with explanation and time:** it follows a respiratory infection, peaks at three to eight weeks, is worst at night and on talking, and settles without antibiotics; ipratropium inhaler or a short course of inhaled corticosteroid may help the persistent case, and pertussis is treated with azithromycin to reduce transmission even though the cough itself is not shortened.",
+        "**Give each trial its full duration, keep what works and add the next,** because a quarter of patients have two causes; if the cough persists after the three trials, the ACE inhibitor stop, smoking cessation, a normal radiograph and a normal spirometry, refer for CT, bronchoscopy and an assessment for refractory chronic cough, which is treated with gabapentin, pregabalin or speech-therapy cough control techniques.",
+      ],
+    },
+    {
+      heading: "Treating the cough itself: what works and what does not",
+      points: [
+        "**Honey in a warm drink, steam inhalation and adequate fluids are as effective as most over-the-counter preparations for the symptom of cough** and are what the family physician recommends while the cause is sought; honey is not given to a child under one year.",
+        "**Dextromethorphan has a modest antitussive effect in adults and is the only over-the-counter cough suppressant worth using;** codeine is not recommended for chronic cough because of dependence, constipation, sedation and diversion, and it is not given to children.",
+        "**Combination cough syrups containing an antihistamine, a decongestant, an expectorant, a bronchodilator and a suppressant together are irrational** - the components work against each other, several such fixed-dose combinations have been prohibited in India, contaminated syrups have caused deaths in children, and cough and cold preparations are not recommended in children under four years at all.",
+        "**Antibiotics treat a cause, not a cough:** they are given for pneumonia, for an exacerbation of COPD with increased sputum purulence, for pertussis, for bacterial sinusitis beyond ten days, and for a tuberculosis diagnosis - and a fluoroquinolone is never used as a trial in a patient who might have tuberculosis, because it partially treats the disease, delays the diagnosis and breeds resistance.",
+        "**Oral corticosteroids are not a treatment for undiagnosed cough,** and injectable steroids and dexamethasone-containing combinations given at the bedside for a fortnight of cough mask tuberculosis and unmask diabetes.",
+        "**Bronchodilators help only when there is airflow obstruction:** salbutamol given for every cough in a syrup or an inhaler produces tremor and palpitations without benefit in the patient whose cough is reflux or postnasal drip.",
+      ],
+    },
+    {
+      heading: "Notification, treatment initiation, contacts and follow-up",
+      points: [
+        "**Every case of tuberculosis, diagnosed in the public or the private sector, must be notified on the Nikshay portal** - notification has been mandatory since 2012, and it unlocks free drugs, free follow-up testing, the monthly nutritional support of the Nikshay Poshan Yojana, and the contact screening that protects the household.",
+        "**A patient whose sputum shows Mycobacterium tuberculosis without rifampicin resistance is started on the daily fixed-dose combination regimen of two months of isoniazid, rifampicin, pyrazinamide and ethambutol followed by four months of isoniazid, rifampicin and ethambutol (2HRZE/4HRE) by weight band,** with an HIV test, a blood sugar, a baseline liver function test where indicated, and a treatment supporter; rifampicin resistance is referred to the district drug-resistant tuberculosis centre for the shorter all-oral regimen under the programmatic management guidelines.",
+        "**Screen every household contact for symptoms and with a chest radiograph where available, and offer tuberculosis preventive treatment to contacts of all ages once active disease is excluded** - three months of weekly isoniazid and rifapentine (3HP) or six months of daily isoniazid; the child under five in the household is the priority.",
+        "**Review at two weeks in every cough beyond two weeks,** to read the sputum and radiograph results, to check adherence to the empirical trial, and to re-examine; then at four to eight weeks to judge the trial and decide the next step; a cough that has crossed eight weeks with a normal radiograph and negative sputum is chronic cough and follows the sequential approach.",
+        "**Safety-net for the specific:** return immediately for blood in the sputum, breathlessness, chest pain, fever or weight loss; and tell the smoker over 40 that a cough that changes character, a hoarse voice or blood-streaked sputum needs a CT and a bronchoscopy even when the radiograph is normal, because a tenth of lung cancers have a normal film.",
+        "**Document the day the two-week threshold was crossed, the sputum test with its result and the Nikshay identification number, the radiograph report, the drugs stopped and started, and the review date** - the tuberculosis programme audits the private sector on exactly this record.",
+      ],
+    },
+  ],
+  tables: [
+    {
+      heading: "Causes of cough beyond two weeks in Indian family practice",
+      columns: ["Cause", "Clue in the history", "Confirming test or trial", "Treatment"],
+      rows: [
+        ["Pulmonary tuberculosis", "Evening fever, night sweats, weight loss, haemoptysis, contact, diabetes, HIV", "Sputum CBNAAT or Truenat, chest radiograph", "2HRZE/4HRE daily by weight band, notify on Nikshay, screen contacts, offer TPT"],
+        ["Post-infectious cough", "Began with a cold, 3-8 weeks, worse at night and on talking, otherwise well", "Normal radiograph and negative sputum; resolves with time", "Explanation, honey, dextromethorphan; ipratropium or ICS if persistent"],
+        ["Upper airway cough syndrome", "Nasal blockage, postnasal drip, throat clearing, cobblestone pharynx", "Response to a 2-4 week trial", "First-generation antihistamine at night or intranasal steroid; treat rhinitis"],
+        ["Asthma and cough-variant asthma", "Nocturnal, exercise or cold trigger, wheeze, atopy, family history", "Spirometry reversibility, PEF diary variability, response to ICS trial", "ICS or ICS-formoterol 4-8 weeks then maintenance; written action plan"],
+        ["Gastro-oesophageal reflux", "Heartburn, regurgitation, cough after meals and on lying, hoarseness", "Response to 8-week PPI trial with lifestyle measures", "PPI twice daily before meals, bed-head elevation, meal timing, weight loss"],
+        ["ACE inhibitor", "Dry tickly cough starting weeks to months after enalapril, ramipril or lisinopril", "Resolution within 1-4 weeks of stopping", "Switch to an angiotensin receptor blocker"],
+        ["COPD and smoker's cough", "Bidi, cigarette or biomass exposure, morning sputum, exertional breathlessness", "Post-bronchodilator FEV1/FVC below 0.70", "Smoking cessation, LAMA or LABA inhaler, vaccination, pulmonary rehabilitation"],
+        ["Pertussis", "Paroxysms, whoop, post-tussive vomiting, contact with a coughing child, cough beyond a month", "PCR in the first 3 weeks; serology later", "Azithromycin to reduce transmission; vaccinate contacts and pregnant women with Tdap"],
+        ["Bronchiectasis", "Daily purulent sputum, previous tuberculosis, recurrent chest infections, clubbing", "High-resolution CT chest", "Airway clearance, targeted antibiotics for exacerbations, referral"],
+        ["Lung cancer", "Smoker over 40, changed cough, haemoptysis, weight loss, hoarseness, fixed wheeze", "CT chest and bronchoscopy even when the radiograph is normal", "Urgent referral to a thoracic centre"],
+      ],
+    },
+    {
+      heading: "The NTEP frame for a cough of two weeks: terms the examiner expects",
+      columns: ["Term", "Definition", "Action in the clinic"],
+      rows: [
+        ["Presumptive pulmonary tuberculosis", "Cough of 2 weeks or more, or fever of 2 weeks, significant weight loss, haemoptysis, or any radiographic abnormality; any duration of symptoms in PLHIV, contacts, diabetics and the immunosuppressed", "Sputum for NAAT the same day, chest radiograph, HIV and blood sugar testing"],
+        ["Microbiologically confirmed tuberculosis", "A biological specimen positive by smear, culture or a validated NAAT", "Notify, start treatment, screen contacts"],
+        ["Clinically diagnosed tuberculosis", "Not microbiologically confirmed but diagnosed by a medical officer on clinical, radiological or histological grounds", "Notify and treat as for confirmed disease; keep looking for microbiological confirmation"],
+        ["New case", "Never treated, or treated for less than one month", "Daily 2HRZE/4HRE by weight band with fixed-dose combinations"],
+        ["Previously treated case", "Treated for one month or more in the past; includes relapse, treatment after failure and treatment after loss to follow-up", "NAAT with rifampicin resistance testing and liquid culture with drug susceptibility before the regimen is chosen"],
+        ["Rifampicin-resistant or MDR tuberculosis", "Resistance to rifampicin by NAAT or culture, with or without isoniazid resistance", "Refer to the district DR-TB centre for the shorter all-oral regimen under PMDT guidelines"],
+        ["Tuberculosis preventive treatment", "Treatment offered to contacts and high-risk persons in whom active disease has been excluded", "3HP weekly for 12 weeks or 6H daily for 6 months; priority for children under 5 and PLHIV"],
+      ],
+    },
+  ],
+  redFlags: [
+    "Haemoptysis of any amount - tuberculosis, bronchiectasis, lung cancer or a pulmonary embolus; sputum NAAT and a radiograph the same day, and CT with bronchoscopy if the radiograph is normal in a smoker over 40.",
+    "Cough with fever beyond two weeks, drenching night sweats, loss of weight or appetite, or a known tuberculosis contact - presumptive tuberculosis; test before any trial and never give a fluoroquinolone.",
+    "Cough with breathlessness at rest, a respiratory rate above 24, an oxygen saturation below 94%, or chest pain - pneumonia, an exacerbation, a pneumothorax or a pulmonary embolus; assess today.",
+    "A changed cough, a hoarse voice beyond three weeks, a fixed unilateral wheeze, supraclavicular lymph nodes or clubbing in a smoker over 40 - lung cancer until CT and bronchoscopy say otherwise.",
+    "Cough in a person living with HIV, a patient on immunosuppressive drugs or chemotherapy, or a poorly controlled diabetic - tuberculosis and opportunistic infection at any duration; lower threshold for testing, admission and referral.",
+    "Sudden cough with choking in a child or a stridor at any age - inhaled foreign body or upper airway obstruction; do not give a cough syrup, refer for bronchoscopy.",
+  ],
+  pearls: [
+    "Two weeks, not three: the Indian threshold for testing a cough for tuberculosis is set by the programme, and a sputum container costs less than a syrup.",
+    "Sputum, not syrup: the consultation for a cough beyond two weeks ends with a sample and a radiograph, not a bottle.",
+    "Order a nucleic acid amplification test, not a smear - it finds twice as many cases and tells you about rifampicin on the same afternoon.",
+    "Never give a fluoroquinolone as a trial to a patient who might have tuberculosis; it partly treats the disease, delays the diagnosis and manufactures resistance.",
+    "In a non-smoker with a normal radiograph who is not on an ACE inhibitor, chronic cough is postnasal drip, asthma or reflux until each has had its trial - and a quarter of patients have two of them.",
+    "Every tuberculosis patient is tested for HIV and diabetes, and every diabetic with a cough is tested for tuberculosis.",
+    "A smoker over 40 with a new cough and a normal chest radiograph has not been cleared of lung cancer - a tenth of cancers have a normal film.",
+  ],
+  theory: [
+    {
+      id: "symptom-approach-chronic-cough-t1",
+      paper: "I",
+      kind: "long",
+      marks: 10,
+      minutes: 20,
+      frequency: "core",
+      question:
+        "A 40-year-old non-smoking woman presents with cough for six weeks. Discuss the approach to a cough of more than two weeks in family practice, including the evaluation for tuberculosis under the National Tuberculosis Elimination Programme.",
+      openingLines: [
+        "Cough is classified as acute (under 3 weeks), subacute (3-8 weeks) and chronic (over 8 weeks); in India a cough of two weeks or more defines presumptive pulmonary tuberculosis under NTEP and mandates a sputum nucleic acid amplification test and a chest radiograph before any empirical treatment.",
+        "Once tuberculosis is excluded, a subacute or chronic cough in a non-smoker with a normal radiograph who is not on an ACE inhibitor is explained by upper airway cough syndrome, asthma or gastro-oesophageal reflux in over 90% of patients, and is managed by sequential empirical trials with a defined duration and review.",
+      ],
+      answer: [
+        {
+          heading: "1. History",
+          points: [
+            "Tuberculosis cluster: evening fever, night sweats, weight and appetite loss, haemoptysis, contact, previous treatment, diabetes, HIV risk, alcohol, silica, crowding.",
+            "Character and timing of cough: dry or productive, nocturnal (asthma), after meals or on lying (reflux), throat clearing and nasal symptoms (upper airway cough syndrome), paroxysms with whoop or vomiting (pertussis), onset after a respiratory infection (post-infectious).",
+            "Drugs and exposures: ACE inhibitors, sitagliptin, biomass cooking smoke, passive smoking, occupational dust; treatments already taken including antibiotics, steroids and syrups; the patient's fear.",
+          ],
+        },
+        {
+          heading: "2. Examination",
+          points: [
+            "Weight and BMI, temperature, pallor, clubbing, cervical and supraclavicular nodes, nasal mucosa and posterior pharynx.",
+            "Chest: apical crackles or bronchial breathing, wheeze on forced expiration, coarse basal crackles, hyperinflation, fixed monophonic wheeze; oxygen saturation.",
+          ],
+        },
+        {
+          heading: "3. Evaluation for tuberculosis under NTEP",
+          points: [
+            "She is presumptive pulmonary tuberculosis by the two-week rule: sputum for CBNAAT or Truenat as the upfront test (sensitivity 85-90%, rifampicin resistance in two hours), chest radiograph at the same visit, HIV test with consent and a blood sugar.",
+            "MTB detected, rifampicin sensitive: notify on Nikshay, start daily 2HRZE/4HRE by weight band, arrange a treatment supporter, nutritional support and household contact screening with preventive treatment for contacts.",
+            "MTB detected, rifampicin resistant: refer to the district DR-TB centre for the all-oral shorter regimen. MTB not detected with a suggestive radiograph: repeat sample, liquid culture, medical officer decision on clinically diagnosed tuberculosis. MTB not detected with a normal radiograph: tuberculosis excluded, proceed to the sequential approach. No fluoroquinolone trial at any stage.",
+          ],
+        },
+        {
+          heading: "4. Investigations beyond tuberculosis",
+          points: [
+            "Spirometry with reversibility or a two-week peak flow diary; complete blood count with eosinophils; pertussis PCR or serology in a paroxysmal cough; high-resolution CT for suspected bronchiectasis or a mass; bronchoscopy on referral for haemoptysis with a normal film.",
+          ],
+        },
+        {
+          heading: "5. Sequential empirical management",
+          points: [
+            "Stop any ACE inhibitor and switch to an ARB; remove smoke exposure.",
+            "Upper airway cough syndrome: first-generation antihistamine at night or intranasal steroid for 2-4 weeks.",
+            "Asthma or cough-variant asthma: inhaled corticosteroid or ICS-formoterol for 4-8 weeks with a peak flow diary and a written action plan.",
+            "Reflux with symptoms: proton pump inhibitor twice daily before meals for 8 weeks with lifestyle measures.",
+            "Post-infectious cough: explanation, honey, dextromethorphan, time; azithromycin for pertussis to limit transmission.",
+            "Symptomatic: honey and steam; dextromethorphan for adults; no codeine, no combination syrups, no steroids, no antibiotics without a bacterial indication.",
+          ],
+        },
+        {
+          heading: "6. Review, safety net and referral",
+          points: [
+            "Review at 2 weeks with results, then at 4-8 weeks to judge each trial; keep what works and add the next because a quarter have two causes.",
+            "Return immediately for haemoptysis, breathlessness, fever or weight loss; refer for red flags, persistence after the three trials with normal radiograph and spirometry, suspected bronchiectasis, interstitial disease or malignancy.",
+            "Documentation: date the threshold was crossed, sputum result and Nikshay number, radiograph report, drugs stopped and started, review date.",
+          ],
+        },
+      ],
+      mustDraw: [
+        "The NTEP diagnostic algorithm for presumptive pulmonary tuberculosis as a flow chart: presumptive TB - upfront NAAT plus chest radiograph - MTB detected (rifampicin sensitive: notify and treat; resistant: DR-TB centre) - MTB not detected (radiograph suggestive: repeat NAAT, culture, medical officer decision; not suggestive: alternative diagnosis and review).",
+        "A table of the causes of chronic cough with clue, confirming test or trial, and treatment.",
+      ],
+      markSplit: [
+        { part: "Definitions and the NTEP two-week rule", marks: 1.5 },
+        { part: "History and examination", marks: 2 },
+        { part: "Tuberculosis evaluation: NAAT, radiograph, notification, regimen, contacts", marks: 3 },
+        { part: "Sequential empirical management of the big three and drugs", marks: 2.5 },
+        { part: "Review, safety net, referral and documentation", marks: 1 },
+      ],
+      keywords: ["presumptive TB", "CBNAAT", "Nikshay", "2HRZE/4HRE", "upper airway cough syndrome", "cough-variant asthma", "ACE inhibitor cough", "sequential empirical trial"],
+    },
+    {
+      id: "symptom-approach-chronic-cough-t2",
+      paper: "II",
+      kind: "chart-flow",
+      marks: 5,
+      minutes: 10,
+      frequency: "common",
+      question: "Draw a flow chart of the diagnostic algorithm for an adult with presumptive pulmonary tuberculosis under the National Tuberculosis Elimination Programme, and indicate the action at each end point.",
+      openingLines: [
+        "Presumptive pulmonary tuberculosis is defined under NTEP as cough of two weeks or more, or fever of two weeks, significant weight loss, haemoptysis, or any chest radiograph abnormality - and any duration of symptoms in people living with HIV, household contacts, diabetics and the immunosuppressed.",
+        "The programme algorithm places a nucleic acid amplification test (CBNAAT or Truenat) upfront for every presumptive case, with the chest radiograph as the parallel test that decides the path when the sputum is negative.",
+      ],
+      answer: [
+        {
+          heading: "Box 1 - Entry",
+          points: [
+            "Presumptive pulmonary tuberculosis identified in the clinic, at a health and wellness centre, or on active case finding; screen for HIV and diabetes; collect at least one good-quality sputum sample (spot, and early morning where possible) and request a chest radiograph.",
+          ],
+        },
+        {
+          heading: "Box 2 - Upfront NAAT (CBNAAT or Truenat)",
+          points: [
+            "Arrow A - MTB detected, rifampicin resistance not detected: microbiologically confirmed drug-sensitive tuberculosis. Action: notify on Nikshay, start daily 2HRZE/4HRE by weight band, HIV and blood sugar, treatment supporter, Nikshay Poshan Yojana, household contact screening and TPT, follow-up sputum at the end of the intensive phase and at the end of treatment.",
+            "Arrow B - MTB detected, rifampicin resistance detected: refer to the district DR-TB centre with the sample for liquid culture and second-line drug susceptibility; treatment with the shorter all-oral regimen under PMDT guidelines; notify; screen contacts.",
+            "Arrow C - MTB detected, rifampicin result indeterminate: repeat NAAT on a fresh sample; if still indeterminate, liquid culture with DST, start first-line treatment meanwhile if the patient is unwell.",
+            "Arrow D - MTB not detected: go to Box 3.",
+            "Arrow E - Test invalid or error: repeat on a fresh sample.",
+          ],
+        },
+        {
+          heading: "Box 3 - MTB not detected: read the chest radiograph",
+          points: [
+            "Radiograph suggestive of tuberculosis: repeat NAAT on a second sample and send liquid culture; the medical officer may diagnose clinically diagnosed tuberculosis if the clinical and radiological picture is convincing and other causes are excluded - notify and treat, and continue to seek microbiological confirmation; in a person living with HIV, use urine LAM and a lower threshold.",
+            "Radiograph not suggestive: tuberculosis unlikely - look for an alternative diagnosis (post-infectious cough, asthma, upper airway cough syndrome, reflux, COPD, bronchiectasis, malignancy); a course of a non-fluoroquinolone antibiotic only if a bacterial infection is suspected; review at two weeks and re-enter the algorithm if symptoms persist or the film changes.",
+          ],
+        },
+        {
+          heading: "Box 4 - At every end point",
+          points: [
+            "Document the Nikshay identification number, counsel on cough hygiene and adherence, screen contacts, and never prescribe a fluoroquinolone or a second empirical antibiotic course in place of the test.",
+          ],
+        },
+      ],
+      mustDraw: [
+        "The flow chart itself: Presumptive TB - Upfront NAAT - branches for MTB detected rifampicin sensitive, rifampicin resistant, indeterminate, and MTB not detected - chest radiograph branch into suggestive and not suggestive - end-point actions in each box.",
+      ],
+      markSplit: [
+        { part: "Definition of presumptive TB and entry actions", marks: 1 },
+        { part: "Correct branches from the NAAT with actions", marks: 2.5 },
+        { part: "Radiograph branch, clinically diagnosed TB and the alternative-diagnosis path", marks: 1.5 },
+      ],
+      keywords: ["NTEP algorithm", "upfront NAAT", "CBNAAT", "Truenat", "rifampicin resistance", "clinically diagnosed TB", "Nikshay"],
+    },
+  ],
+  mcqs: [
+    {
+      id: "symptom-approach-chronic-cough-q1",
+      stem: "A 35-year-old auto-rickshaw driver presents with cough for three weeks, low-grade evening fever and a loss of 3 kg. He has taken a week of amoxicillin and two cough syrups from a chemist. Chest examination reveals a few crackles at the right apex. What is the most appropriate next step?",
+      options: [
+        "Amoxicillin-clavulanate for seven more days and review",
+        "Sputum for CBNAAT and a chest radiograph today, with HIV and blood sugar testing",
+        "A codeine-containing cough syrup at night for symptom relief",
+        "Levofloxacin 750 mg daily for ten days for community-acquired pneumonia",
+        "Sputum smear microscopy on two samples and review after a week",
+      ],
+      answer: 1,
+      explanation:
+        "Cough beyond two weeks with fever and weight loss and apical crackles is presumptive pulmonary tuberculosis, and the programme's upfront test is a nucleic acid amplification test on sputum with a chest radiograph at the same visit, plus the HIV and blood sugar tests every tuberculosis suspect receives. A second antibiotic course delays the diagnosis and the previous course already shows the pattern. A codeine syrup suppresses the symptom, encourages dependence and treats nothing. Levofloxacin is the single worst choice - it partially treats tuberculosis, delays the diagnosis and generates fluoroquinolone resistance that compromises later drug-resistant regimens. Smear microscopy has half the sensitivity of NAAT and gives no rifampicin result; it is no longer the first test.",
+      difficulty: "easy",
+    },
+    {
+      id: "symptom-approach-chronic-cough-q2",
+      stem: "A 58-year-old hypertensive woman on ramipril 5 mg for eight months has had a dry, tickly cough for ten weeks. She does not smoke, has no fever or weight loss, and no nasal or reflux symptoms. Chest radiograph is normal and sputum CBNAAT is negative. What is the most appropriate next step?",
+      options: [
+        "Start pantoprazole 40 mg twice daily for eight weeks",
+        "Start an inhaled corticosteroid trial for cough-variant asthma",
+        "Stop ramipril, substitute telmisartan and review in four weeks",
+        "Add chlorpheniramine at night for upper airway cough syndrome",
+        "Arrange a high-resolution CT of the chest",
+      ],
+      answer: 2,
+      explanation:
+        "A dry cough beginning months after an ACE inhibitor was started, with tuberculosis excluded and no clue to the big three, is ACE inhibitor cough until the drug has been stopped, and switching to an angiotensin receptor blocker with a four-week review is both the diagnostic test and the treatment. A proton pump inhibitor is a reasonable later trial but she has no reflux symptoms and the drug cause has not been removed. An inhaled corticosteroid trial belongs after the ACE inhibitor stop, not before, and there is no nocturnal or exertional pattern. An antihistamine treats postnasal drip, of which she has no features. A CT is not indicated with a normal radiograph, negative sputum and an obvious reversible cause.",
+      difficulty: "easy",
+    },
+    {
+      id: "symptom-approach-chronic-cough-q3",
+      stem: "A 30-year-old teacher has had a dry cough for ten weeks, worst at night and after running, with occasional chest tightness. Her mother has asthma. Chest radiograph and sputum CBNAAT are negative, spirometry is normal, and her peak flow diary shows a diurnal variability of 22% over two weeks. What is the most appropriate management?",
+      options: [
+        "Reassure her that normal spirometry excludes asthma and treat as post-infectious cough",
+        "A trial of inhaled corticosteroid-formoterol for four to eight weeks with continued peak flow monitoring",
+        "Oral prednisolone 30 mg daily for two weeks as a diagnostic trial",
+        "Azithromycin 500 mg daily for five days for atypical infection",
+        "Referral for bronchoscopy to exclude an endobronchial lesion",
+      ],
+      answer: 1,
+      explanation:
+        "Nocturnal and exercise-provoked cough with chest tightness, a family history and a peak flow variability above 10-20% is cough-variant asthma, which responds to the same inhaled corticosteroid-based treatment as classical asthma; normal spirometry between attacks does not exclude it. Reassurance based on one normal spirometry misreads the test and ignores the positive diary. Oral corticosteroids are not used as a diagnostic trial in family practice when inhaled treatment answers the same question more safely. Ten weeks of cough with an asthma pattern is not an atypical infection, and macrolides have no role. Bronchoscopy is reserved for haemoptysis, a fixed wheeze or a suspicious radiograph, none of which is present.",
+      difficulty: "moderate",
+    },
+    {
+      id: "symptom-approach-chronic-cough-q4",
+      stem: "A 45-year-old man with cough for four weeks has a sputum CBNAAT result of MTB detected, rifampicin resistance not detected. He weighs 52 kg and has never been treated for tuberculosis. What is the most appropriate management?",
+      options: [
+        "Await liquid culture and drug susceptibility results before starting treatment",
+        "Notify on Nikshay, test for HIV and blood sugar, start daily 2HRZE/4HRE fixed-dose combinations by weight band and screen household contacts",
+        "Refer to the district DR-TB centre for a second-line regimen",
+        "Start 2HRZE followed by 4HR thrice weekly under directly observed treatment",
+        "Start isoniazid and rifampicin alone for six months because the disease is drug-sensitive",
+      ],
+      answer: 1,
+      explanation:
+        "A new case with rifampicin-sensitive tuberculosis on NAAT is started the same day on the daily four-drug intensive phase followed by the three-drug continuation phase using weight-band fixed-dose combinations, after notification, HIV and diabetes testing, and with household contact screening and preventive treatment for contacts. Waiting for culture delays treatment by weeks in a confirmed infectious case. The DR-TB centre is for rifampicin resistance, which has been excluded. Thrice-weekly regimens and the older 4HR continuation phase have been replaced by daily 2HRZE/4HRE since 2017 under NTEP. A two-drug regimen invites relapse and resistance and has no place in initial treatment.",
+      difficulty: "moderate",
+    },
+    {
+      id: "symptom-approach-chronic-cough-q5",
+      stem: "A 52-year-old man with a 30 pack-year smoking history reports a cough that has changed character over six weeks, with blood-streaked sputum on three mornings and a hoarse voice. Chest radiograph is reported normal and sputum CBNAAT is negative. What is the most appropriate next step?",
+      options: [
+        "Reassure him that a normal radiograph and negative sputum exclude serious disease",
+        "Repeat the chest radiograph after three months of smoking cessation",
+        "Amoxicillin-clavulanate for ten days for bronchitis with review",
+        "Refer urgently for a contrast CT of the chest and bronchoscopy",
+        "Start a trial of antituberculous treatment for smear-negative tuberculosis",
+      ],
+      answer: 3,
+      explanation:
+        "A heavy smoker over 40 with a changed cough, haemoptysis and hoarseness has lung cancer until a CT and a bronchoscopy say otherwise; about a tenth of lung cancers have a normal chest radiograph, and hoarseness suggests recurrent laryngeal nerve involvement. Reassurance on the strength of a normal film misreads its sensitivity. A three-month wait converts an operable tumour into an inoperable one. Antibiotics treat a bronchitis that this history does not describe. An antituberculous trial with a negative NAAT, a normal film and a malignancy picture is the wrong empirical trial in the wrong patient.",
+      difficulty: "moderate",
+    },
+  ],
+  cards: [
+    {
+      id: "symptom-approach-chronic-cough-c1",
+      front: "NTEP definition of presumptive pulmonary tuberculosis.",
+      back: "Cough of 2 weeks or more, or fever of 2 weeks, significant weight loss, haemoptysis, or any chest radiograph abnormality; any duration of symptoms in PLHIV, household contacts, diabetics and the immunosuppressed.",
+    },
+    {
+      id: "symptom-approach-chronic-cough-c2",
+      front: "First test for a presumptive tuberculosis patient under NTEP.",
+      back: "An upfront nucleic acid amplification test on sputum - CBNAAT (Xpert MTB/RIF) or Truenat - with a chest radiograph at the same visit; not smear microscopy.",
+    },
+    {
+      id: "symptom-approach-chronic-cough-c3",
+      front: "Daily regimen for new drug-sensitive tuberculosis in India.",
+      back: "2HRZE followed by 4HRE, daily, as fixed-dose combinations by weight band; notify on Nikshay, test HIV and blood sugar, screen contacts.",
+    },
+    {
+      id: "symptom-approach-chronic-cough-c4",
+      front: "The big three causes of chronic cough in a non-smoker with a normal radiograph not on an ACE inhibitor.",
+      back: "Upper airway cough syndrome, asthma including cough-variant asthma, and gastro-oesophageal reflux - over 90% of cases, and about a quarter have two of them.",
+    },
+    {
+      id: "symptom-approach-chronic-cough-c5",
+      front: "Duration classification of cough (ACCP).",
+      back: "Acute under 3 weeks; subacute 3-8 weeks; chronic beyond 8 weeks - but India tests for tuberculosis at 2 weeks.",
+    },
+    {
+      id: "symptom-approach-chronic-cough-c6",
+      front: "ACE inhibitor cough - frequency and management.",
+      back: "Dry cough in 5-20% of users, may begin months after starting; stop and switch to an ARB; resolves within 1-4 weeks, occasionally up to 3 months.",
+    },
+    {
+      id: "symptom-approach-chronic-cough-c7",
+      front: "Why is a fluoroquinolone never given as a trial for a cough of two weeks?",
+      back: "It partially treats tuberculosis, delays the diagnosis by masking symptoms, and generates fluoroquinolone resistance that compromises drug-resistant regimens.",
+    },
+    {
+      id: "symptom-approach-chronic-cough-c8",
+      front: "Tuberculosis preventive treatment options for household contacts.",
+      back: "3HP: isoniazid plus rifapentine weekly for 12 weeks; or 6H: daily isoniazid for 6 months - offered to contacts of all ages after active disease is excluded, with priority for children under 5 and PLHIV.",
+    },
+    {
+      id: "symptom-approach-chronic-cough-c9",
+      front: "Spirometry thresholds for asthma and COPD.",
+      back: "Asthma: FEV1 rise of 12% and 200 mL after bronchodilator, or PEF diurnal variability above 10-20%. COPD: post-bronchodilator FEV1/FVC below 0.70.",
+    },
+    {
+      id: "symptom-approach-chronic-cough-c10",
+      front: "What is worth giving for the symptom of cough?",
+      back: "Honey in a warm drink (not under 1 year), steam and fluids; dextromethorphan in adults; no codeine for chronic cough, no combination syrups, no cough preparations in children under 4.",
+    },
+  ],
+  references: [
+    "Central TB Division, Ministry of Health and Family Welfare, Training Modules for Programme Managers and Medical Officers under NTEP, 2020",
+    "Central TB Division, Guidelines for Programmatic Management of Drug-Resistant Tuberculosis in India, 2021, with the 2024 update on shorter all-oral regimens",
+    "Central TB Division, Guidelines for Programmatic Management of Tuberculosis Preventive Treatment in India, 2021",
+    "Standards for TB Care in India, WHO Country Office for India and Central TB Division, 2014",
+    "WHO Global Tuberculosis Report, 2024",
+    "Irwin RS et al., Classification of cough as a symptom in adults and management algorithms: CHEST Guideline and Expert Panel Report, Chest 2018",
+    "Global Initiative for Asthma (GINA) Main Report, 2024",
+    "Murtagh's General Practice, 8th edition, 2018 - cough",
+  ],
+});
+
+topics.push({
+  id: "symptom-approach-weight-loss",
+  title: "Unintentional weight loss",
+  oneLiner:
+    "Unintentional weight loss is a documented loss of 5% or more of usual body weight over six to twelve months without trying, and because its causes divide roughly into thirds - malignancy, non-malignant organic disease (in India above all tuberculosis, diabetes, thyrotoxicosis and HIV) and psychiatric or social causes - the family physician first confirms the loss on a scale, takes a history aimed at those three groups and at the appetite, and orders a tiered work-up in which a normal examination and a normal first tier justify three to six months of watchful waiting with monthly weights rather than whole-body imaging.",
+  frequency: "less-common",
+  keywords: [
+    "wazan kam hona",
+    "involuntary weight loss",
+    "unexplained weight loss",
+    "cachexia",
+    "anorexia",
+    "loss of appetite",
+    "malignancy",
+    "tuberculosis",
+    "HIV",
+    "hyperthyroidism",
+    "diabetes mellitus",
+    "depression",
+    "dementia",
+    "elderly",
+    "MEALS ON WHEELS",
+    "nine Ds",
+    "anorexia nervosa",
+    "SCOFF",
+    "malabsorption",
+    "coeliac disease",
+    "sarcopenia",
+    "Mini Nutritional Assessment",
+    "mid-upper arm circumference",
+    "watchful waiting",
+    "tumour markers",
+  ],
+  sections: [
+    {
+      heading: "Definition, confirmation and the one-third rule",
+      points: [
+        "**Clinically significant unintentional weight loss is a loss of 5% or more of usual body weight over six to twelve months (or 10% at any time) that the patient did not set out to achieve** - a 60 kg adult who has lost 3 kg without dieting, fasting or a new exercise programme qualifies.",
+        "**Confirm the loss before investigating it:** weigh the patient on the clinic scale, compare with any earlier recorded weight from a prescription, a hospital card or an antenatal record, and where none exists use loosened clothes, a belt taken in by two notches, a ring that slips, or a family member's observation; about half of self-reported weight loss is not confirmed when a previous weight is found.",
+        "**The causes fall into three roughly equal groups:** malignancy in 15-35% (gastrointestinal, lung, lymphoma, pancreatic, prostate and ovarian), non-malignant organic disease in 30-40% (in India tuberculosis, diabetes, thyrotoxicosis, HIV, COPD, heart failure, chronic kidney and liver disease, malabsorption and chronic infection), and psychiatric or social causes in 10-25% (depression, dementia, anorexia nervosa, alcohol and substance use, poverty and isolation); in 10-25% no cause is found and this group has a good prognosis.",
+        "**Weight loss is a symptom with prognostic weight of its own:** in the older adult it predicts hospital admission, functional decline and death independently of the cause, and in a patient with cancer it marks cachexia that changes the treatment intent.",
+        "**In a child the equivalent complaint is growth faltering or weight loss on the growth chart,** and it follows the IMNCI and severe acute malnutrition pathway with a mid-upper arm circumference below 11.5 cm or a weight-for-height below minus three standard deviations defining severe acute malnutrition - a different problem with a different algorithm.",
+        "**The clinic's task is to sort the three groups with a history, an examination and one tier of tests, and to resist the whole-body scan** - the history and examination alone point to the diagnosis in most patients in whom a cause is eventually found.",
+      ],
+    },
+    {
+      heading: "The history: appetite, the three groups and the social frame",
+      points: [
+        "**Ask about appetite first, because it splits the differential:** weight loss with a preserved or increased appetite means calories are being lost or burned - diabetes, thyrotoxicosis, malabsorption, a phaeochromocytoma or worm infestation; weight loss with a poor appetite means malignancy, chronic infection, depression, uraemia, chronic disease or a drug.",
+        "**Screen for the malignancy cluster:** dysphagia, early satiety, epigastric pain radiating to the back, a change in bowel habit, blood in the stool or black stools, haemoptysis or a changed cough, haematuria, postmenopausal bleeding, a breast or testicular lump, bone pain, jaundice, and the family history of cancer; ask about tobacco in every form and alcohol in every measure.",
+        "**Screen for the infection and endocrine cluster:** fever, night sweats, cough of two weeks, tuberculosis contact, recurrent diarrhoea, oral thrush, sexual risk, injection drug use and a partner's illness for HIV; polyuria, polydipsia and nocturia for diabetes; palpitations, heat intolerance, tremor, sweating and irritability for thyrotoxicosis; steatorrhoea and bloating for malabsorption.",
+        "**Screen for the psychiatric cluster:** low mood, anhedonia, sleep change, hopelessness and the PHQ-2; memory loss and a change in the ability to shop, cook and manage money in an older adult; in an adolescent girl, a fear of fatness, body image distortion, amenorrhoea, excessive exercise and the SCOFF questions; alcohol with the AUDIT-C, tobacco, cannabis, opioids and stimulant use.",
+        "**Take the drug history against the list of weight-losing drugs:** metformin, SGLT2 inhibitors, GLP-1 agonists, topiramate, levodopa, digoxin, SSRIs in the elderly, antituberculous drugs, chemotherapy, antiretrovirals, thyroxine over-replacement, laxative and diuretic misuse, and the anorexia and dysgeusia of polypharmacy in an older patient on eight tablets.",
+        "**Take the social history as seriously as the drug history:** who cooks, who buys the food, whether money runs out before the month does, whether the patient eats alone, the state of the teeth and dentures, whether swallowing or chewing hurts, and whether a bereavement, a move to a child's house or an admission to a home preceded the loss.",
+      ],
+    },
+    {
+      heading: "Examination: the measurements and the search",
+      points: [
+        "**Measure, do not estimate:** weight, height, BMI, mid-upper arm circumference in the elderly and the bedbound, and in the older adult the Mini Nutritional Assessment short form or a grip strength; record them so the next visit has a comparison.",
+        "**General examination looks for the systemic signs:** pallor, jaundice, temporal wasting, glossitis and angular stomatitis, oral candidiasis and dentition, a goitre with eye signs and a fine tremor, lymphadenopathy including the supraclavicular (Virchow) node, clubbing, skin changes including acanthosis nigricans, dermatitis herpetiformis and the hyperpigmentation of Addison disease.",
+        "**Systematic examination is complete and includes the parts usually skipped:** chest for effusion and consolidation, abdomen for a mass, hepatomegaly, splenomegaly, ascites and an enlarged gallbladder, breasts, testes, a digital rectal examination for a rectal mass or a hard prostate, and a pelvic examination where symptoms point there.",
+        "**Neurological and cognitive examination in the older adult:** the rigidity and bradykinesia of Parkinson disease, the cognitive screen (Mini-Cog or MMSE) for dementia, the gait and the ability to feed oneself, and the mood and affect during the interview.",
+        "**In the adolescent with suspected anorexia nervosa, the examination is a medical stability check:** BMI, pulse, postural blood pressure, temperature, capillary refill, muscle strength on the sit-up and squat tests, lanugo hair, parotid swelling and the callus of induced vomiting on the knuckles.",
+        "**A normal examination with normal first-tier tests carries real information:** in prospective series the great majority of organic causes declare themselves in the history, examination or first tier, and an entirely negative screen makes an occult malignancy unlikely enough that a period of observation is safe.",
+      ],
+    },
+    {
+      heading: "Investigations in tiers",
+      points: [
+        "**Tier one is ordered together at the first visit:** complete blood count with smear, ESR and CRP, fasting glucose or HbA1c, TSH, serum creatinine and electrolytes, liver function tests with albumin, calcium, urine routine, stool for occult blood and for ova and cysts, an HIV test with consent, and a chest radiograph; add sputum for CBNAAT if there is any cough, a pregnancy test where relevant, and an ultrasound of the abdomen, which is cheap and available in India and finds the liver, pancreatic, renal, ovarian and nodal lesions that a physical examination misses.",
+        "**Tier two follows a clue, not a schedule:** upper gastrointestinal endoscopy for dysphagia, early satiety, epigastric pain, iron deficiency or age over 50; colonoscopy for altered bowel habit, a positive occult blood test, iron deficiency or age over 50; contrast CT of the chest and abdomen for an abnormal ultrasound, a raised ESR without explanation or a smoker's cough; mammography, PSA, and gynaecological ultrasound by sex and symptoms; serum protein electrophoresis for anaemia with a high ESR and bone pain; anti-tissue transglutaminase antibodies and faecal elastase for steatorrhoea and iron or folate deficiency; echocardiography for suspected heart failure or endocarditis.",
+        "**Tumour markers are not a screening test for weight loss:** CA-125, CEA, CA 19-9 and alpha-fetoprotein are raised in many benign conditions and normal in early cancers; they are ordered to follow a cancer already found, not to look for one.",
+        "**Whole-body CT or PET-CT in a patient with a normal examination and normal first tier has a low yield and a high rate of incidental findings,** and in family practice it is reserved for the patient with an abnormal tier one or a clinical clue, on referral.",
+        "**When tier one and the examination are normal, the plan is watchful waiting for three to six months** - monthly weights, a repeat history at each visit, a nutritional prescription, treatment of any mood disorder found, and a second tier if the weight continues to fall or a new symptom appears; most patients in this group stabilise or regain weight.",
+        "**In the older adult with weight loss, add the specific geriatric tier:** a medication review against the Beers criteria, a dental examination, a swallowing assessment, a depression scale, a cognitive screen, a functional assessment of shopping and cooking, and a vitamin B12 and vitamin D level.",
+      ],
+    },
+    {
+      heading: "Management: the cause, the calories and the drugs",
+      points: [
+        "**Treat the cause found:** antituberculous treatment with notification, glycaemic control for the newly diagnosed diabetic, antithyroid drugs for thyrotoxicosis, antiretroviral therapy for HIV, an antidepressant with behavioural activation for depression, a gluten-free diet for coeliac disease, and urgent referral for a cancer - weight usually returns as the disease is controlled.",
+        "**Feed the patient in parallel with the work-up:** food first - energy-dense familiar foods in small frequent meals, added ghee, oil, dal, eggs, milk, nuts and jaggery, protein of 1.0-1.2 g/kg a day in the elderly, and a fortified oral nutritional supplement between meals rather than in place of them; a dietitian referral where available, and the Anganwadi or community kitchen for the family that cannot afford the diet.",
+        "**Remove what is taking the weight away:** stop or substitute the weight-losing drug, treat the painful mouth or the ill-fitting denture, treat constipation and nausea, and simplify the polypharmacy of the older patient.",
+        "**Appetite stimulants have a narrow place:** mirtazapine 7.5-15 mg at night helps the depressed older adult with poor sleep and appetite; megestrol acetate is used only in cancer or HIV-associated cachexia under specialist care because of thromboembolism, adrenal suppression and oedema; cyproheptadine, steroids and the tonics sold for weight gain have no place in undiagnosed weight loss.",
+        "**Refeeding is dangerous in the severely malnourished** - a BMI below 16, a loss of over 15% in three months, or little intake for over ten days - and phosphate, potassium and magnesium are checked and replaced with thiamine before calories are increased, ideally in hospital.",
+        "**In the patient in whom the cause is an advanced incurable disease, the conversation changes from investigation to goals of care,** and the weight loss of cancer cachexia is managed with symptom control, food for pleasure rather than calories, and support for the family who feel they are failing to feed the patient.",
+      ],
+    },
+    {
+      heading: "Special situations and the safety net",
+      points: [
+        "**The older adult:** use the MEALS ON WHEELS mnemonic - Medications, Emotional problems, Anorexia or alcoholism, Late-life paranoia, Swallowing disorders, Oral factors, No money, Wandering and dementia, Hyperthyroidism or hyperparathyroidism, Enteric problems, Eating problems, Low-salt or low-cholesterol diets, Shopping and social problems - and the nine Ds of dentition, dysgeusia, dysphagia, diarrhoea, disease, depression, dementia, dysfunction and drugs; involve the family and a home visit.",
+        "**The adolescent:** anorexia nervosa is diagnosed when there is a restriction of intake with a significantly low weight, an intense fear of gaining weight and a disturbance of body image; medical instability - a pulse below 50 by day or 45 at night, a postural fall of 20 mmHg systolic, a temperature below 35.5 C, a BMI below 15, an electrolyte derangement or syncope - means admission, and the treatment is family-based with a specialist team, not reassurance and a tonic.",
+        "**The person living with HIV:** weight loss of over 10% with diarrhoea or fever for a month was the definition of HIV wasting syndrome and remains a marker of advanced disease; look for tuberculosis, opportunistic infection, and adherence failure, and refer to the ART centre.",
+        "**The new-onset diabetic over 50 with weight loss and abdominal or back pain:** pancreatic carcinoma presents this way in a proportion of cases, and an ultrasound with a contrast CT if the pancreas is not seen is justified before the weight loss is attributed to the diabetes.",
+        "**Safety-net explicitly:** return before the review for dysphagia, blood in stool or sputum, jaundice, a lump, fever, or a further loss of 2 kg; weigh the patient at every contact and write the weight in the record; reassess the whole story if the second tier is normal and the weight still falls.",
+        "**Refer** any patient with a mass, a positive occult blood test, dysphagia, iron deficiency anaemia, a suspicious radiograph or ultrasound, an adolescent with medical instability, a severe malnutrition needing refeeding, and any patient in whom two tiers are normal and the weight continues to fall.",
+      ],
+    },
+  ],
+  tables: [
+    {
+      heading: "Weight loss sorted by appetite",
+      columns: ["Appetite", "Mechanism", "Typical causes", "First tests"],
+      rows: [
+        ["Increased or preserved", "Calories lost in urine or stool, or burned by a raised metabolic rate", "Uncontrolled diabetes, thyrotoxicosis, malabsorption (coeliac disease, chronic pancreatitis, giardiasis), phaeochromocytoma, worm infestation", "HbA1c or fasting glucose, TSH and free T4, stool for ova and cysts and fat, anti-tTG, faecal elastase"],
+        ["Reduced", "Anorexia from cytokines, pain, nausea, dysphagia, mood or a drug", "Malignancy, tuberculosis and chronic infection, HIV, depression, dementia, chronic kidney and liver disease, heart failure, COPD, drugs, poverty", "CBC, ESR, creatinine, LFT with albumin, chest radiograph, HIV, ultrasound abdomen, stool occult blood, PHQ-9, medication review"],
+        ["Reduced with deliberate restriction", "Restriction driven by fear of weight gain or body image disturbance", "Anorexia nervosa, bulimia with restriction, orthorexia, misuse of laxatives or diuretics", "SCOFF questions, medical stability check, electrolytes, ECG, phosphate"],
+      ],
+    },
+    {
+      heading: "Tiered investigation of unintentional weight loss",
+      columns: ["Tier", "Tests", "When", "What it does"],
+      rows: [
+        ["Tier one - at the first visit", "CBC with smear, ESR and CRP, HbA1c, TSH, creatinine and electrolytes, LFT with albumin, calcium, urine routine, stool occult blood and ova, HIV with consent, chest radiograph, ultrasound abdomen; sputum CBNAAT if any cough", "Every confirmed unintentional weight loss", "Finds tuberculosis, diabetes, thyroid disease, HIV, renal and liver disease, anaemia and most abdominal masses; a normal tier one with a normal examination licenses watchful waiting"],
+        ["Tier two - by clue", "Upper GI endoscopy, colonoscopy, contrast CT chest and abdomen, mammography, PSA, gynaecological ultrasound, protein electrophoresis, anti-tTG, faecal elastase, echocardiography", "An abnormal tier one, a symptom, iron deficiency, age over 50 with GI symptoms, or continued loss on observation", "Targets the organ the clue points to; endoscopy of both ends of the gut is the commonest second-tier test"],
+        ["Geriatric tier", "Medication review, dental examination, swallowing assessment, PHQ-9 or GDS, Mini-Cog, functional assessment, vitamin B12 and D, MNA-SF", "Every older adult with weight loss, alongside tier one", "Finds the social, pharmacological, dental and mood causes that no blood test shows"],
+        ["Watchful waiting", "Monthly weight, repeat history, nutritional prescription, mood treatment", "Normal examination and normal tier one", "3-6 months; most patients stabilise; a further fall or a new symptom triggers tier two"],
+        ["Not indicated", "Tumour markers as a screen, whole-body CT or PET-CT without a clue, tonics and appetite stimulants before a diagnosis", "Never as a first step in family practice", "False positives, incidental findings, cost and delay"],
+      ],
+    },
+  ],
+  redFlags: [
+    "Weight loss of more than 10% of body weight, or a loss that continues through a period of observation - second-tier investigation and referral rather than continued watching.",
+    "Dysphagia, early satiety, black or bloody stools, a change in bowel habit, or iron deficiency anaemia in a man or a postmenopausal woman - endoscopy of both ends of the gut within two weeks.",
+    "A palpable mass, a supraclavicular node, hepatomegaly, ascites, jaundice or a hard prostate - malignancy until a CT and a tissue diagnosis say otherwise.",
+    "Weight loss with fever beyond two weeks, night sweats or a cough of two weeks - tuberculosis, HIV or lymphoma; sputum CBNAAT, chest radiograph and an HIV test before anything else.",
+    "An adolescent with restriction and a BMI below 15, a pulse below 50, a postural fall of 20 mmHg, a temperature below 35.5 C, syncope or an electrolyte derangement - admit for medical stabilisation.",
+    "An older adult with weight loss and confusion, falls, inability to feed themselves or a carer who cannot cope - admit or arrange same-week geriatric and social assessment.",
+  ],
+  pearls: [
+    "Weigh before you investigate: half of reported weight loss disappears when the old weight is found, and the other half becomes a number you can follow.",
+    "Ask about appetite first - weight loss with a good appetite is diabetes, thyroid or malabsorption; weight loss with a poor appetite is cancer, infection, depression or a drug.",
+    "The causes come in thirds - cancer, non-cancer organic disease, and psychiatric or social - and in India tuberculosis, diabetes and HIV sit at the top of the middle third.",
+    "A normal examination and a normal first tier are a result, not a failure: they license three to six months of monthly weights instead of a whole-body scan.",
+    "Tumour markers look for the recurrence of a cancer you know about, not for a cancer you are guessing at.",
+    "In the older adult, check the teeth, the tablets, the mood and the money before you check the pancreas.",
+    "New diabetes after 50 with weight loss and back pain is pancreatic carcinoma until the pancreas has been imaged.",
+  ],
+  theory: [
+    {
+      id: "symptom-approach-weight-loss-t1",
+      paper: "I",
+      kind: "long",
+      marks: 10,
+      minutes: 20,
+      frequency: "common",
+      question:
+        "A 58-year-old man reports losing 8 kg over five months without trying. Discuss the causes of unintentional weight loss and outline your approach to its evaluation and management in family practice.",
+      openingLines: [
+        "Unintentional weight loss is a loss of 5% or more of usual body weight over 6-12 months not attributable to deliberate dieting, exercise or fasting; it is a marker of serious disease in about two-thirds of patients and carries an independent risk of morbidity and mortality.",
+        "The causes fall into three groups - malignancy, non-malignant organic disease (tuberculosis, diabetes, thyrotoxicosis, HIV, chronic organ disease, malabsorption) and psychiatric or social causes - and the family physician's approach is to confirm the loss, sort the group by history and examination, order a first tier of investigations together, and reserve imaging and endoscopy for the clue that the first tier provides.",
+      ],
+      answer: [
+        {
+          heading: "1. Causes",
+          points: [
+            "Malignancy (15-35%): gastrointestinal (stomach, colon, pancreas, oesophagus), lung, lymphoma and leukaemia, prostate, hepatocellular carcinoma.",
+            "Non-malignant organic (30-40%): tuberculosis, HIV, chronic infection and abscess, diabetes, thyrotoxicosis, Addison disease, COPD, heart failure, chronic kidney and liver disease, malabsorption (coeliac disease, chronic pancreatitis, giardiasis), peptic ulcer and mesenteric ischaemia, Parkinson disease, stroke.",
+            "Psychiatric and social (10-25%): depression, dementia, anorexia nervosa, alcohol and substance use, poverty, isolation, poor dentition, and drugs (metformin, SGLT2 inhibitors, topiramate, levodopa, digoxin, SSRIs in the elderly, antituberculous drugs, chemotherapy).",
+            "Unexplained (10-25%) with a good prognosis.",
+          ],
+        },
+        {
+          heading: "2. Confirmation and history",
+          points: [
+            "Weigh and compare with an earlier record; corroborate with clothes, belt, family.",
+            "Appetite: preserved (diabetes, thyroid, malabsorption) versus reduced (malignancy, infection, depression, drugs).",
+            "Cluster questions: dysphagia, early satiety, bowel change, bleeding, cough, fever, night sweats, contact, sexual risk, polyuria, heat intolerance, tremor, steatorrhoea, mood (PHQ-2), memory, alcohol (AUDIT-C), tobacco, drugs, and the social frame - food, money, teeth, isolation.",
+          ],
+        },
+        {
+          heading: "3. Examination",
+          points: [
+            "Weight, height, BMI, MUAC, temperature; pallor, jaundice, temporal wasting, oral cavity and dentition, thyroid and eye signs, lymph nodes including Virchow, clubbing, skin.",
+            "Chest, abdomen for mass, organomegaly and ascites, breasts and testes, digital rectal examination, cognitive and mood assessment, neurological screen.",
+          ],
+        },
+        {
+          heading: "4. Investigations",
+          points: [
+            "Tier one together: CBC with smear, ESR and CRP, HbA1c, TSH, creatinine and electrolytes, LFT with albumin, calcium, urine routine, stool occult blood and ova, HIV with consent, chest radiograph, ultrasound abdomen; sputum CBNAAT if any cough.",
+            "Tier two by clue: upper GI endoscopy and colonoscopy (this man is over 50 and would need both if tier one shows anaemia, a positive occult blood or any GI symptom), contrast CT chest and abdomen, PSA, protein electrophoresis, anti-tTG, echocardiography.",
+            "Not indicated: tumour markers as a screen, whole-body CT or PET-CT without a clue.",
+            "Normal examination and tier one: watchful waiting 3-6 months with monthly weights and a low threshold for tier two.",
+          ],
+        },
+        {
+          heading: "5. Management",
+          points: [
+            "Treat the cause: antituberculous treatment with notification, glycaemic control, antithyroid drugs, antiretroviral therapy, antidepressant with behavioural activation, urgent cancer referral.",
+            "Nutrition in parallel: energy-dense small frequent meals, protein 1-1.2 g/kg, oral nutritional supplements between meals, dietitian; treat the mouth, stop the offending drug, simplify polypharmacy.",
+            "Appetite stimulants only in defined settings - mirtazapine for the depressed elderly, megestrol under specialist care in cancer or HIV cachexia; refeeding precautions in severe malnutrition.",
+          ],
+        },
+        {
+          heading: "6. Safety net, review and referral",
+          points: [
+            "Weigh at every visit and record it; return early for dysphagia, bleeding, jaundice, a lump, fever or a further 2 kg loss.",
+            "Refer for any mass, positive occult blood, dysphagia, iron deficiency, suspicious imaging, or continued loss after two normal tiers.",
+          ],
+        },
+      ],
+      mustDraw: [
+        "A table dividing causes into malignant, non-malignant organic and psychosocial with the Indian priorities marked.",
+        "A flow chart: confirm loss - appetite and cluster history - examination - tier one - abnormal (targeted tier two and referral) or normal (watchful waiting 3-6 months with monthly weights; tier two if loss continues).",
+      ],
+      markSplit: [
+        { part: "Definition and classification of causes with Indian priorities", marks: 2 },
+        { part: "Confirmation, appetite and cluster history including social frame", marks: 2 },
+        { part: "Examination", marks: 1.5 },
+        { part: "Tiered investigation and the place of watchful waiting", marks: 2.5 },
+        { part: "Management, nutrition, safety net and referral", marks: 2 },
+      ],
+      keywords: ["unintentional weight loss", "one-third rule", "appetite", "tier one", "watchful waiting", "endoscopy", "tumour markers"],
+    },
+    {
+      id: "symptom-approach-weight-loss-t2",
+      paper: "II",
+      kind: "short-note",
+      marks: 5,
+      minutes: 10,
+      frequency: "less-common",
+      question: "Write short notes on unintentional weight loss in the older adult.",
+      openingLines: [
+        "Unintentional weight loss of 5% or more over 6-12 months affects up to a fifth of community-dwelling adults over 65 and is an independent predictor of hospital admission, functional decline, institutionalisation and death.",
+        "In the older adult the causes are more often multiple and more often social, pharmacological, dental and psychiatric than in the younger patient, and the evaluation adds a geriatric tier to the standard work-up.",
+      ],
+      answer: [
+        {
+          heading: "Causes - MEALS ON WHEELS",
+          points: [
+            "Medications (digoxin, metformin, SSRIs, levodopa, opioids, polypharmacy), Emotional problems (depression, bereavement), Anorexia of ageing or Alcoholism, Late-life paranoia, Swallowing disorders (stroke, Parkinson disease), Oral factors (dentures, xerostomia, candidiasis), No money, Wandering and dementia, Hyperthyroidism, hyperparathyroidism and hypoadrenalism, Enteric problems (malabsorption, mesenteric ischaemia), Eating problems (inability to feed self), Low-salt and low-cholesterol restrictive diets, Shopping and social problems.",
+            "Organic disease still matters: malignancy (gastrointestinal, lung, prostate), tuberculosis, COPD, heart failure, chronic kidney disease, diabetes.",
+          ],
+        },
+        {
+          heading: "Evaluation",
+          points: [
+            "Confirm on a scale; MUAC and MNA-SF; a home visit or a family interview about food, money, cooking and company.",
+            "Nine Ds screen: dentition, dysgeusia, dysphagia, diarrhoea, disease, depression (GDS or PHQ-9), dementia (Mini-Cog), dysfunction (ADL and IADL), drugs (review against Beers criteria).",
+            "Examination including the mouth, thyroid, lymph nodes, abdomen, rectum, prostate, neurological and cognitive state.",
+            "Tier one investigations as for any adult with vitamin B12 and D; targeted tier two by clue; avoid unfocused imaging.",
+          ],
+        },
+        {
+          heading: "Management",
+          points: [
+            "Treat the found cause; deprescribe; dental referral; swallowing assessment and texture-modified diet if needed; treat depression (mirtazapine helps appetite and sleep); liberalise restrictive diets.",
+            "Nutrition: energy-dense familiar foods, small frequent meals, protein 1-1.2 g/kg, oral nutritional supplements between meals, eating in company, help with shopping and cooking, community meal or Anganwadi support, home-based care for the frail.",
+            "Megestrol and cyproheptadine are not recommended in the elderly; monthly weights, carer involvement and a low threshold for referral to a geriatric service.",
+          ],
+        },
+      ],
+      mustDraw: ["The MEALS ON WHEELS mnemonic written out as a two-column table of letter and cause."],
+      markSplit: [
+        { part: "Definition and prognostic importance", marks: 1 },
+        { part: "Causes with the mnemonic", marks: 1.5 },
+        { part: "Evaluation including the geriatric tier", marks: 1.5 },
+        { part: "Management", marks: 1 },
+      ],
+      keywords: ["elderly weight loss", "MEALS ON WHEELS", "nine Ds", "MNA-SF", "deprescribing", "oral nutritional supplement"],
+    },
+  ],
+  mcqs: [
+    {
+      id: "symptom-approach-weight-loss-q1",
+      stem: "A 64-year-old retired clerk has lost 7 kg over four months, confirmed by a weight recorded at a hypertension visit. He has no fever, cough, bowel change or dysphagia, eats less because nothing tastes good, and has no depressive symptoms. Examination including rectal examination is normal. What is the most appropriate first step?",
+      options: [
+        "Whole-body PET-CT to exclude occult malignancy",
+        "Serum CEA, CA 19-9, PSA and alpha-fetoprotein as a cancer screen",
+        "A first-tier panel ordered together: CBC, ESR, HbA1c, TSH, renal and liver function, urine, stool occult blood, HIV with consent, chest radiograph and ultrasound abdomen",
+        "Reassure him that a normal examination excludes serious disease and review in six months",
+        "Prescribe megestrol acetate 160 mg daily to restore appetite",
+      ],
+      answer: 2,
+      explanation:
+        "Confirmed weight loss of over 10% with a normal examination is worked up with a first tier of inexpensive tests ordered together, which detects most organic causes and, if normal, licenses a period of watchful waiting with monthly weights. A PET-CT without a clue has a low yield and a high rate of incidental findings and is not a first step in family practice. Tumour markers are neither sensitive nor specific enough to screen and generate false alarms. Reassurance with a six-month review ignores a loss of over 10% and misses tuberculosis, diabetes and cancer that a simple panel would find. Megestrol is reserved for cancer and HIV cachexia under specialist care and would mask the process being investigated.",
+      difficulty: "easy",
+    },
+    {
+      id: "symptom-approach-weight-loss-q2",
+      stem: "A 26-year-old woman has lost 6 kg in three months despite eating more than usual. She reports palpitations, heat intolerance, tremor and irritability, and her periods have become lighter. Pulse is 108/min and regular, and there is a fine tremor with a smooth diffuse goitre. What is the most likely diagnosis and the confirming test?",
+      options: [
+        "Anorexia nervosa - apply the SCOFF questionnaire",
+        "Type 1 diabetes mellitus - fasting glucose and ketones",
+        "Graves disease - suppressed TSH with raised free T4",
+        "Generalised anxiety disorder - GAD-7 score",
+        "Pulmonary tuberculosis - sputum CBNAAT",
+      ],
+      answer: 2,
+      explanation:
+        "Weight loss with an increased appetite, heat intolerance, tremor, tachycardia, oligomenorrhoea and a diffuse goitre in a young woman is thyrotoxicosis, and Graves disease is its commonest cause; a suppressed TSH with a raised free T4 confirms it. Anorexia nervosa restricts intake and does not produce a goitre or tachycardia. Type 1 diabetes also causes weight loss with hyperphagia but presents with polyuria and polydipsia rather than heat intolerance and a goitre. Anxiety may mimic the palpitations and tremor but does not cause weight loss with hyperphagia or a goitre. Tuberculosis causes weight loss with anorexia, fever and cough, none of which is present.",
+      difficulty: "easy",
+    },
+    {
+      id: "symptom-approach-weight-loss-q3",
+      stem: "A 78-year-old widow living alone has lost 6 kg in six months. She takes digoxin, furosemide, sertraline, metformin, amlodipine, pantoprazole, a statin and an antihistamine. Her dentures no longer fit, and she scores 8 on the PHQ-9. First-tier investigations including chest radiograph and ultrasound abdomen are normal. What is the most appropriate management?",
+      options: [
+        "Arrange a contrast CT of the chest, abdomen and pelvis",
+        "Start megestrol acetate to stimulate appetite",
+        "A structured medication review with deprescribing, dental referral, treatment of low mood, a nutritional prescription with social support, and monthly weights",
+        "Insert a nasogastric feeding tube for supplemental feeding",
+        "Refer for upper gastrointestinal endoscopy and colonoscopy",
+      ],
+      answer: 2,
+      explanation:
+        "This is the older adult in whom weight loss is multifactorial - polypharmacy including digoxin, sertraline and metformin, ill-fitting dentures, depressive symptoms and social isolation - and with a normal examination and normal first tier the geriatric tier is the next step: deprescribe, fix the teeth, treat the mood, prescribe food and company, and weigh her monthly. Whole-body CT without a clue produces incidental findings and no diagnosis. Megestrol is not recommended in the elderly because of thromboembolism and oedema and does not address the causes. A feeding tube is not indicated in a patient who can eat once the barriers are removed. Endoscopy of both ends of the gut would follow anaemia, a positive occult blood, dysphagia or a bowel change, none of which she has.",
+      difficulty: "moderate",
+    },
+    {
+      id: "symptom-approach-weight-loss-q4",
+      stem: "A 16-year-old girl is brought by her mother for a weight of 38 kg at a height of 160 cm, having lost 9 kg in five months. She says she is fine and eats enough, exercises for two hours daily and has had no period for four months. Pulse is 42/min, blood pressure falls from 96/60 to 76/50 mmHg on standing, and temperature is 35.3 C. What is the most appropriate management?",
+      options: [
+        "Outpatient dietary counselling and review in one month",
+        "Admit for medical stabilisation with monitoring of electrolytes, phosphate and ECG, and involve a specialist eating disorder or adolescent team",
+        "Start olanzapine 5 mg at night to increase appetite",
+        "Order TSH and a coeliac screen and reassure the mother meanwhile",
+        "Prescribe a high-protein supplement and a multivitamin",
+      ],
+      answer: 1,
+      explanation:
+        "A BMI of 14.8, denial of illness, excessive exercise, amenorrhoea and, above all, bradycardia below 50, a postural drop of 20 mmHg and hypothermia mark anorexia nervosa with medical instability, and the correct action is admission for monitored refeeding with electrolyte and ECG surveillance and specialist involvement. Outpatient counselling with a month's delay risks arrhythmia and death. Olanzapine has no place in the unstable patient and does not address refeeding risk. Thyroid and coeliac tests are part of the work-up but do not change the immediate need for admission, and reassurance is wrong. An unsupervised high-protein supplement in a severely malnourished patient can precipitate refeeding syndrome.",
+      difficulty: "moderate",
+    },
+    {
+      id: "symptom-approach-weight-loss-q5",
+      stem: "A 61-year-old man with 8 kg of weight loss over four months has been found to have a new HbA1c of 8.4%. He also reports a dull epigastric pain radiating to the back and pale stools. Examination shows mild scleral icterus. Alkaline phosphatase is raised. What is the most appropriate next step?",
+      options: [
+        "Start metformin and review the weight after three months of glycaemic control",
+        "Ultrasound of the abdomen, and a contrast CT of the pancreas with referral to a surgical gastroenterology unit",
+        "Serum CA 19-9 alone to decide whether imaging is needed",
+        "Endoscopic retrograde cholangiopancreatography as the first investigation",
+        "A trial of antituberculous treatment for abdominal tuberculosis",
+      ],
+      answer: 1,
+      explanation:
+        "New-onset diabetes after 50 with weight loss, epigastric pain radiating to the back, pale stools and obstructive jaundice is carcinoma of the head of the pancreas until imaging says otherwise, and the pathway is ultrasound followed by a pancreatic-protocol contrast CT and surgical referral for staging. Attributing the weight loss to diabetes and waiting three months hands an operable tumour the time to become inoperable. CA 19-9 is raised in cholestasis of any cause and is normal in a proportion of cancers; it does not decide imaging. ERCP is a therapeutic procedure for biliary drainage after imaging, not a first-line diagnostic test, and carries a pancreatitis risk. An antituberculous trial in a picture of painless-to-dull obstructive jaundice with a new diabetes is the wrong empirical decision.",
+      difficulty: "hard",
+    },
+  ],
+  cards: [
+    {
+      id: "symptom-approach-weight-loss-c1",
+      front: "Definition of clinically significant unintentional weight loss.",
+      back: "Loss of 5% or more of usual body weight over 6-12 months, or 10% at any time, without dieting, fasting or a new exercise programme.",
+    },
+    {
+      id: "symptom-approach-weight-loss-c2",
+      front: "The three groups of causes and their approximate share.",
+      back: "Malignancy 15-35%; non-malignant organic disease 30-40% (tuberculosis, diabetes, thyrotoxicosis, HIV, organ failure, malabsorption); psychiatric and social 10-25%; unexplained 10-25% with a good prognosis.",
+    },
+    {
+      id: "symptom-approach-weight-loss-c3",
+      front: "What does the appetite tell you?",
+      back: "Preserved or increased appetite: diabetes, thyrotoxicosis, malabsorption, phaeochromocytoma, worms. Reduced appetite: malignancy, chronic infection, depression, chronic organ disease, drugs.",
+    },
+    {
+      id: "symptom-approach-weight-loss-c4",
+      front: "Tier-one tests for unintentional weight loss.",
+      back: "CBC with smear, ESR and CRP, HbA1c, TSH, creatinine and electrolytes, LFT with albumin, calcium, urine routine, stool occult blood and ova, HIV with consent, chest radiograph, ultrasound abdomen; sputum CBNAAT if any cough.",
+    },
+    {
+      id: "symptom-approach-weight-loss-c5",
+      front: "When is watchful waiting appropriate and what does it consist of?",
+      back: "Normal examination and normal tier one: 3-6 months of monthly weights, repeat history, a nutritional prescription and treatment of mood, with tier two if the loss continues or a symptom appears.",
+    },
+    {
+      id: "symptom-approach-weight-loss-c6",
+      front: "MEALS ON WHEELS.",
+      back: "Medications, Emotional problems, Anorexia or Alcoholism, Late-life paranoia, Swallowing disorders, Oral factors, No money, Wandering and dementia, Hyperthyroidism and hyperparathyroidism, Enteric problems, Eating problems, Low-salt and low-cholesterol diets, Shopping and social problems.",
+    },
+    {
+      id: "symptom-approach-weight-loss-c7",
+      front: "Markers of medical instability in anorexia nervosa that mean admission.",
+      back: "Pulse below 50 by day or 45 at night, postural systolic fall of 20 mmHg, temperature below 35.5 C, BMI below 15, electrolyte derangement, syncope, or ECG abnormality.",
+    },
+    {
+      id: "symptom-approach-weight-loss-c8",
+      front: "Refeeding syndrome - who is at risk and what to check.",
+      back: "BMI below 16, loss of over 15% in 3 months, little intake for over 10 days: check and replace phosphate, potassium and magnesium, give thiamine before calories, and increase intake slowly, ideally in hospital.",
+    },
+    {
+      id: "symptom-approach-weight-loss-c9",
+      front: "Drugs that cause weight loss.",
+      back: "Metformin, SGLT2 inhibitors, GLP-1 agonists, topiramate, levodopa, digoxin, SSRIs in the elderly, antituberculous drugs, chemotherapy, thyroxine over-replacement, laxative and diuretic misuse.",
+    },
+    {
+      id: "symptom-approach-weight-loss-c10",
+      front: "Role of tumour markers in weight loss.",
+      back: "None as a screen: CA-125, CEA, CA 19-9 and AFP are raised in benign disease and normal in early cancer; they follow a cancer already diagnosed.",
+    },
+  ],
+  references: [
+    "Harrison's Principles of Internal Medicine, 21st edition, 2022 - involuntary weight loss",
+    "Gaddey HL, Holder K. Unintentional weight loss in older adults. American Family Physician, 2014, and the 2021 update",
+    "Bosch X et al., Unintentional weight loss: clinical characteristics and outcomes in a prospective cohort of 2677 patients, PLoS One 2017",
+    "NICE NG69, Eating disorders: recognition and treatment, 2017 updated 2020",
+    "Indian Academy of Pediatrics and Ministry of Health, Operational Guidelines on Facility Based Management of Children with Severe Acute Malnutrition, 2011 and the 2021 Poshan Abhiyaan protocol",
+    "Murtagh's General Practice, 8th edition, 2018 - weight loss",
+    "Oxford Handbook of General Practice, 5th edition, 2020 - weight loss",
+  ],
+});

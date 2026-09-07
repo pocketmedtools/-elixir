@@ -1902,3 +1902,1551 @@ topics.push({
     "CONSORT 2010 Statement and STROBE Statement (2007) for reporting trials and observational studies",
   ],
 });
+
+topics.push({
+  id: "preventive-study-designs",
+  title: "Epidemiological study designs and measures of disease frequency",
+  oneLiner:
+    "Descriptive studies measure the burden of disease in terms of time, place and person and generate hypotheses; analytical studies (case-control and cohort) test them by measuring association as odds ratio or relative risk; and experimental studies (randomised controlled, field and community trials) prove causation by allocating the exposure under the investigator's control.",
+  frequency: "core",
+  keywords: [
+    "incidence",
+    "prevalence",
+    "attack rate",
+    "secondary attack rate",
+    "case fatality rate",
+    "person-time",
+    "cross-sectional study",
+    "ecological study",
+    "ecological fallacy",
+    "case-control study",
+    "cohort study",
+    "odds ratio",
+    "relative risk",
+    "randomised controlled trial",
+    "field trial",
+    "community trial",
+    "blinding",
+    "allocation concealment",
+    "intention to treat",
+    "phases of clinical trials",
+    "Berkson bias",
+    "recall bias",
+    "confounding",
+    "hierarchy of evidence",
+    "STROBE",
+    "CONSORT",
+    "CTRI",
+  ],
+  sections: [
+    {
+      heading: "Measures of disease frequency: incidence, prevalence and their relation",
+      points: [
+        "**Incidence** is the number of new cases of a disease occurring in a defined population during a specified period, divided by the population at risk during that period, usually expressed per 1000 per year. It measures the rate at which healthy people become sick and is the measure needed for aetiological research and for judging a preventive programme.",
+        "**Prevalence** is the number of all cases, old and new, existing at a given point in time (point prevalence) or over a period (period prevalence), divided by the population at that time. It is a proportion rather than a rate, is what a cross-sectional survey measures, and is the measure needed for planning services - beds, drugs, staff.",
+        "For a stable disease **prevalence = incidence x mean duration (P = I x D)**, so prevalence rises when incidence rises or when patients live longer without cure, and falls when the disease is rapidly fatal, rapidly cured, or when cases migrate out. Insulin raised the prevalence of diabetes without changing its incidence; a fatal epidemic of Ebola has a high incidence and a low prevalence.",
+        "**Cumulative incidence (risk)** uses the number of persons at risk at the start as denominator and is a proportion; **incidence density (rate)** uses **person-time** of follow-up as denominator and copes with people entering and leaving a cohort at different times - 25 new cases in 2500 person-years is an incidence density of 10 per 1000 person-years.",
+        "In an outbreak, incidence expressed as a percentage of those exposed is the **attack rate**, and the **secondary attack rate** is the number of exposed susceptible contacts who fall ill within the incubation period divided by the total number of exposed susceptible contacts, with the primary case excluded from both numerator and denominator - it measures infectiousness of the agent and is highest for measles and varicella.",
+        "The **case fatality rate** (deaths from the disease divided by cases of the disease, as a percentage) measures the killing power of the agent and is the measure that changed the world's view of cholera (50% untreated, under 1% with ORS); the **proportional mortality rate** (deaths from one cause divided by all deaths) says how important the disease is as a cause of death but nothing about risk.",
+      ],
+    },
+    {
+      heading: "Descriptive epidemiology: time, place and person",
+      points: [
+        "Descriptive studies answer **who, where and when** and end in a hypothesis; the classical steps are defining the population, defining the disease, describing it by time, place and person, measuring it, comparing with known indices and formulating an aetiological hypothesis.",
+        "Time distribution takes three forms: a **secular (long-term) trend** such as the fall of tuberculosis mortality over decades, **cyclic or periodic** variation such as the 2-3 yearly measles peaks before vaccination, and **seasonal** variation such as diarrhoea in summer, dengue after the monsoon and respiratory infection in winter.",
+        "Place distribution is described internationally, nationally, rural against urban, and locally with a **spot map** - John Snow's Broad Street pump map of 1854 remains the model - and a migrant study tells whether a place difference is genetic or environmental.",
+        "Person distribution covers age, sex, marital status, occupation, social class, religion, habits, and is where the family physician's own registers are most useful: an age-sex pyramid of clinic attendance shows at a glance who is not coming.",
+        "A **cross-sectional (prevalence) study** examines exposure and disease at one point in time; it is quick, cheap, gives prevalence and is the basis of NFHS-5 (2019-21) and the ICMR-INDIAB survey (2023: diabetes 11.4%, prediabetes 15.3%, hypertension 35.5%), but it cannot establish that the exposure preceded the disease.",
+        "An **ecological study** correlates exposure and disease using populations rather than individuals as the unit - salt sales against stroke mortality across states - and is prone to the **ecological fallacy**, in which an association true of the group is assumed to hold for each individual within it.",
+      ],
+    },
+    {
+      heading: "Case-control studies",
+      points: [
+        "A case-control study starts with the **outcome**: a group with the disease (cases) and a comparable group without it (controls) are compared for the frequency of past exposure, so it is retrospective by direction of inquiry and is the design of choice for a **rare disease** with a long latent period.",
+        "The measure of association is the **odds ratio (OR) = ad/bc** from the 2 x 2 table, which approximates the relative risk when the disease is rare (under about 10%) and when cases and controls are representative of their source populations. Incidence, and therefore relative and attributable risk, cannot be calculated because the investigator fixed the number of cases.",
+        "Selection of controls is the difficulty: hospital controls introduce **Berkson's bias** (differential admission rates for the exposure and the disease), and cases that are prevalent rather than incident introduce **Neyman's bias** (survivors differ from those who died quickly). Population controls, neighbourhood controls and more than one control group defend against these.",
+        "**Recall bias** is the characteristic information bias: mothers of a child with a malformation search their memory for exposures more thoroughly than mothers of a healthy child; blinding the interviewer and using recorded rather than remembered exposures reduce it.",
+        "**Matching** on known confounders such as age and sex makes the groups comparable but a matched variable can no longer be studied, and over-matching on a variable in the causal pathway destroys the association altogether; matched pairs need the matched analysis (McNemar's test).",
+        "The landmark is Doll and Hill's 1950 case-control study of smoking and lung cancer in London hospitals; the advantages are speed, low cost, small numbers, many exposures examined at once and no risk to participants, which is why nearly every hospital-based postgraduate thesis in India is a case-control study.",
+      ],
+    },
+    {
+      heading: "Cohort studies",
+      points: [
+        "A cohort study starts with the **exposure**: a group of exposed and a group of non-exposed persons, both free of the disease at entry, are followed forward in time and the incidence of the outcome is compared, giving **relative risk, attributable risk and population attributable risk** directly.",
+        "It may be **prospective** (Framingham Heart Study, 1948 onwards; Doll and Hill's British Doctors Study, 1951-2001), **retrospective or historical** (exposure and outcome both already recorded, as in occupational cohorts assembled from factory records), or **ambidirectional**.",
+        "Advantages: temporality is secure, incidence is measured, several outcomes of one exposure are studied together, and bias in assessing exposure is minimal because exposure is recorded before the disease appears. Disadvantages: large numbers, long duration, cost, loss to follow-up, changes in exposure over time, and unsuitability for rare disease.",
+        "**Loss to follow-up (attrition)** is the specific threat; if more than about 20% of a cohort is lost the result is doubtful, and losses that differ by exposure status produce bias rather than mere imprecision.",
+        "The **healthy worker effect** is a selection bias peculiar to occupational cohorts - employed people are healthier than the general population, so comparison with general mortality rates understates the hazard; the correct comparison is an internal one with unexposed workers.",
+        "Relative risk from a cohort is the effect size for the individual, whereas the **population attributable fraction** - which depends on the prevalence of the exposure as well as its relative risk - tells the health planner how much disease would disappear if the exposure were removed, and is the number that justifies a tobacco or salt programme.",
+      ],
+    },
+    {
+      heading: "Experimental studies: randomised controlled, field and community trials",
+      points: [
+        "In an experimental study the **investigator allocates the exposure**; when allocation is random the groups are alike in every known and unknown confounder, which is why the **randomised controlled trial (RCT)** is the only design that proves causation for a single intervention.",
+        "The steps are: a written protocol, a reference population to which results will be generalised, an experimental population that consents, **randomisation** (computer-generated sequence with **allocation concealment** - sealed opaque envelopes or central allocation - so that the recruiting doctor cannot foresee the next assignment), intervention, follow-up and assessment of outcome.",
+        "**Blinding** is separate from concealment: single blind (participant), double blind (participant and observer), triple blind (also the analyst). Concealment prevents selection bias at entry; blinding prevents performance and detection bias afterwards; a surgical trial can conceal allocation even when it cannot blind the surgeon.",
+        "Analysis by **intention to treat** keeps every participant in the group to which they were randomised whatever they actually received, preserving the benefit of randomisation and mimicking real-world effectiveness; **per-protocol** analysis measures efficacy under ideal adherence and is biased in favour of the treatment.",
+        "A **field trial** enrols healthy people in the community (the 1954 Salk inactivated polio vaccine trial with 1.8 million children), while a **community trial** allocates whole communities (the Newburgh-Kingston water fluoridation study, 1945-1955); non-randomised designs include natural experiments (Snow's two water companies, 1854) and before-and-after comparisons.",
+        "Drug trials run in **phases**: phase I (20-80 healthy volunteers, safety and dose), phase II (100-300 patients, efficacy and side effects), phase III (1000-3000, randomised against standard treatment before licensing) and phase IV (post-marketing surveillance for rare adverse effects). In India every trial must be registered prospectively with the **Clinical Trials Registry - India (CTRI, mandatory since June 2009)** and run under the New Drugs and Clinical Trials Rules, 2019.",
+      ],
+    },
+    {
+      heading: "Bias, confounding and the hierarchy of evidence",
+      points: [
+        "**Bias** is any systematic error that produces a result different from the truth; it is not reduced by increasing sample size. **Selection bias** arises in who enters the study (Berkson, Neyman, healthy worker, volunteer), **information bias** in how data are gathered (recall, interviewer, misclassification, detection).",
+        "A **confounder** is associated with the exposure, is an independent risk factor for the outcome, and is not on the causal pathway between them: age confounds the association between grey hair and myocardial infarction. It is controlled at the design stage by randomisation, restriction or matching, and at the analysis stage by stratification (Mantel-Haenszel adjusted estimate) or multivariable regression.",
+        "**Effect modification** is different - the strength of the association truly differs between strata, as the risk of asbestos differs between smokers and non-smokers - and is reported as separate stratum-specific estimates, not adjusted away.",
+        "The **hierarchy of evidence** runs from systematic reviews and meta-analyses of RCTs, through individual RCTs, cohort studies, case-control studies, cross-sectional studies and case series, down to expert opinion; a well-conducted cohort study can outrank a badly conducted RCT, so grade the study, not just the design.",
+        "Reporting standards are examinable: **CONSORT** (2010, updated 2025) for RCTs, **STROBE** (2007) for observational studies, **PRISMA** (2020) for systematic reviews and **STARD** (2015) for diagnostic accuracy studies; a CONSORT flow diagram of enrolment, allocation, follow-up and analysis is expected in any RCT answer.",
+        "For a thesis viva the safest phrasing is: the design chosen was the one that answered the question with the least bias at an affordable cost; state the measure of association it yields, the main bias it is prone to and how the protocol dealt with that bias.",
+      ],
+    },
+  ],
+  tables: [
+    {
+      heading: "Case-control against cohort against RCT",
+      columns: ["Feature", "Case-control", "Cohort", "Randomised controlled trial"],
+      rows: [
+        ["Starting point", "Disease (outcome)", "Exposure", "Investigator allocates the intervention"],
+        ["Direction", "Backward from outcome to exposure", "Forward from exposure to outcome", "Forward"],
+        ["Measure of association", "Odds ratio", "Relative risk, attributable risk, PAR", "Relative risk, absolute risk reduction, NNT"],
+        ["Incidence measured", "No", "Yes", "Yes"],
+        ["Best suited for", "Rare disease, long latency, many exposures", "Rare exposure, many outcomes", "Proving efficacy of a single intervention"],
+        ["Main biases", "Recall, Berkson, Neyman", "Loss to follow-up, healthy worker effect", "Performance and detection bias if unblinded"],
+        ["Cost and time", "Low, quick", "High, long", "Highest, moderate duration"],
+        ["Classical example", "Doll and Hill 1950, smoking and lung cancer", "Framingham 1948; British Doctors Study 1951", "Salk vaccine field trial 1954"],
+      ],
+    },
+    {
+      heading: "Measures of frequency in one place",
+      columns: ["Measure", "Numerator", "Denominator", "Use"],
+      rows: [
+        ["Incidence rate", "New cases in a period", "Population at risk in that period, x 1000", "Aetiology, evaluation of prevention"],
+        ["Point prevalence", "All cases at one moment", "Population at that moment, x 1000", "Planning services, cross-sectional surveys"],
+        ["Incidence density", "New cases", "Person-time at risk", "Cohorts with variable follow-up"],
+        ["Attack rate", "Cases during an outbreak", "Population exposed, x 100", "Outbreak investigation"],
+        ["Secondary attack rate", "Secondary cases within one incubation period", "Exposed susceptible contacts excluding primary case, x 100", "Infectiousness of agent, vaccine efficacy in households"],
+        ["Case fatality rate", "Deaths from the disease", "Cases of the disease, x 100", "Virulence, quality of care"],
+        ["Proportional mortality", "Deaths from one cause", "All deaths, x 100", "Ranking causes of death"],
+      ],
+    },
+  ],
+  redFlags: [
+    "A single case of a disease that is eliminated or eradicated in India - wild poliovirus, guinea worm, yaws, neonatal tetanus in a district certified free - is an outbreak by definition and must be reported the same day.",
+    "A rise in weekly incidence above the endemic threshold on the IDSP chart (more than two standard deviations above the mean of the previous years) is an epidemic until proved otherwise.",
+    "A secondary attack rate in a household far above that expected for the disease suggests a new or more transmissible strain and warrants laboratory characterisation.",
+    "A case fatality rate that is rising during an outbreak signals either a change in the agent or a collapse in case management and needs a rapid response team, not further data collection.",
+    "A trial without prospective CTRI registration, ethics committee approval and written informed consent cannot be defended in any forum and must not be joined as an investigator.",
+    "Serious adverse events in a trial must be reported to the ethics committee, the sponsor and the Central Drugs Standard Control Organisation within 24 hours under the New Drugs and Clinical Trials Rules, 2019.",
+  ],
+  pearls: [
+    "Incidence is for aetiology, prevalence is for planning, and prevalence = incidence x duration - three sentences that open any measures-of-frequency answer.",
+    "Case-control begins with disease and gives an odds ratio; cohort begins with exposure and gives a relative risk; only a trial allocates the exposure.",
+    "The odds ratio approximates relative risk only when the disease is rare and the cases and controls are representative - say both conditions.",
+    "Randomisation controls known and unknown confounders; matching and stratification control only the known ones.",
+    "Allocation concealment prevents selection bias at entry; blinding prevents bias after entry - they are different and both must be described.",
+    "Bias is not cured by a larger sample; confounding can be adjusted for only if it was measured.",
+  ],
+  theory: [
+    {
+      id: "preventive-study-designs-t1",
+      paper: "I",
+      kind: "differentiate",
+      marks: 10,
+      minutes: 20,
+      frequency: "core",
+      question:
+        "Compare case-control and cohort studies with regard to design, measures of association, biases, advantages and disadvantages. Give one classical example of each.",
+      openingLines: [
+        "Analytical epidemiological studies test the hypothesis generated by descriptive studies by comparing groups; the two observational analytical designs are the case-control study, which begins with the outcome and looks back at exposure, and the cohort study, which begins with the exposure and looks forward to the outcome.",
+        "Both are observational - the investigator does not allocate the exposure - and both are therefore open to confounding, which only randomisation removes.",
+      ],
+      answer: [
+        {
+          heading: "1. Design",
+          points: [
+            "Case-control: cases with the disease and controls without it are selected, and the frequency of past exposure is compared; direction of inquiry is retrospective; the number of cases is fixed by the investigator.",
+            "Cohort: exposed and non-exposed groups free of disease are assembled and followed for the occurrence of the outcome; may be prospective, retrospective (historical) or ambidirectional; the number of cases is determined by nature.",
+            "Draw the 2 x 2 table (a, b, c, d) and mark that a case-control study fixes the column totals (cases, controls) while a cohort study fixes the row totals (exposed, non-exposed).",
+          ],
+        },
+        {
+          heading: "2. Measures of association",
+          points: [
+            "Case-control: odds ratio = ad/bc; approximates relative risk when the disease is rare and cases and controls are representative; incidence cannot be calculated.",
+            "Cohort: incidence in exposed (Ie) and non-exposed (Iu); relative risk = Ie/Iu; attributable risk = Ie - Iu; attributable risk per cent = (Ie - Iu)/Ie x 100; population attributable risk depends on the prevalence of exposure.",
+          ],
+        },
+        {
+          heading: "3. Biases",
+          points: [
+            "Case-control: recall bias, interviewer bias, Berkson's bias from hospital controls, Neyman's bias from prevalent cases; controlled by incident cases, population controls, blinded interviewers and documented exposures.",
+            "Cohort: loss to follow-up, healthy worker effect, changes in exposure status and in diagnostic criteria over time; controlled by intensive tracing, internal comparison groups and fixed outcome definitions.",
+          ],
+        },
+        {
+          heading: "4. Advantages and disadvantages",
+          points: [
+            "Case-control: quick, cheap, small numbers, suited to rare diseases and long latent periods, many exposures examined, no risk to subjects; but cannot give incidence or relative risk directly, prone to recall and selection bias, and studies one disease at a time.",
+            "Cohort: temporality secure, incidence and relative risk measured, several outcomes studied, less bias in exposure assessment; but expensive, prolonged, large samples, attrition, unsuited to rare disease, and ethically limited to exposures that cannot be randomised.",
+          ],
+        },
+        {
+          heading: "5. Examples",
+          points: [
+            "Case-control: Doll and Hill, 1950 - lung cancer patients in London hospitals compared with controls for smoking history.",
+            "Cohort: Doll and Hill's British Doctors Study, 1951-2001, following 40,000 doctors by smoking status; the Framingham Heart Study from 1948 for cardiovascular risk factors.",
+          ],
+        },
+      ],
+      mustDraw: [
+        "A 2 x 2 table labelled exposed/non-exposed against disease/no disease with the formulae for odds ratio and relative risk written beside it.",
+        "A schematic arrow diagram: case-control looking backward from outcome to exposure, cohort looking forward from exposure to outcome, with the time axis marked.",
+      ],
+      markSplit: [
+        { part: "Definitions and design with 2 x 2 table", marks: 3 },
+        { part: "Measures of association with formulae", marks: 2 },
+        { part: "Biases specific to each", marks: 2 },
+        { part: "Advantages and disadvantages", marks: 2 },
+        { part: "Examples", marks: 1 },
+      ],
+      keywords: ["case-control", "cohort", "odds ratio", "relative risk", "Berkson", "recall bias", "Doll and Hill", "Framingham"],
+    },
+    {
+      id: "preventive-study-designs-t2",
+      paper: "I",
+      kind: "chart-flow",
+      marks: 5,
+      minutes: 10,
+      frequency: "common",
+      question:
+        "Draw a flow chart of the steps of a randomised controlled trial. Explain allocation concealment, blinding and intention-to-treat analysis.",
+      openingLines: [
+        "A randomised controlled trial is an experimental study in which participants drawn from a defined population are allocated by a chance process to receive the intervention or the comparison, and are followed identically for a pre-specified outcome.",
+        "Random allocation makes the groups comparable in known and unknown confounders, so that any difference in outcome can be attributed to the intervention within the limits of chance.",
+      ],
+      answer: [
+        {
+          heading: "Flow of a trial (draw as boxes with arrows)",
+          points: [
+            "Protocol with hypothesis, sample size and outcome fixed in advance; ethics committee approval; prospective registration with CTRI.",
+            "Reference population - to which results will apply - narrowed to the experimental population by inclusion and exclusion criteria; informed consent.",
+            "Randomisation using a computer-generated sequence into intervention and control groups.",
+            "Intervention delivered; both groups followed identically for the same duration with the same schedule of assessment.",
+            "Outcome assessed; participants lost or withdrawn accounted for; analysis by intention to treat; reporting by CONSORT with the flow diagram of numbers enrolled, allocated, followed up and analysed.",
+          ],
+        },
+        {
+          heading: "Allocation concealment",
+          points: [
+            "The person recruiting cannot know which group the next participant will enter - achieved by central telephone or web randomisation or sequentially numbered opaque sealed envelopes.",
+            "Prevents selection bias at entry; possible in every trial, including surgical trials that cannot be blinded.",
+          ],
+        },
+        {
+          heading: "Blinding",
+          points: [
+            "Single blind - participant unaware; double blind - participant and observer unaware; triple blind - the analyst also unaware; achieved by identical placebo or sham procedure.",
+            "Prevents performance bias (differential care), detection bias (differential outcome assessment) and the placebo effect from distorting the comparison.",
+          ],
+        },
+        {
+          heading: "Intention-to-treat analysis",
+          points: [
+            "Every participant is analysed in the group to which they were randomised, whether or not they received or completed the intervention.",
+            "Preserves the balance created by randomisation, guards against bias from differential drop-out and estimates real-world effectiveness; per-protocol analysis estimates efficacy under ideal adherence and is reported alongside, never instead.",
+          ],
+        },
+      ],
+      mustDraw: [
+        "A vertical flow chart: reference population, experimental population, consent, randomisation splitting into two arms, intervention and control, follow-up, outcome assessment, analysis.",
+      ],
+      markSplit: [
+        { part: "Flow chart with all steps in order", marks: 2 },
+        { part: "Allocation concealment", marks: 1 },
+        { part: "Blinding with levels", marks: 1 },
+        { part: "Intention to treat", marks: 1 },
+      ],
+      keywords: ["randomised controlled trial", "allocation concealment", "blinding", "intention to treat", "CONSORT", "CTRI"],
+    },
+  ],
+  mcqs: [
+    {
+      id: "preventive-study-designs-q1",
+      stem: "In a case-control study of oral cancer, 40 of 100 cases and 20 of 100 controls reported chewing areca nut with tobacco. What is the odds ratio for the association between the habit and oral cancer?",
+      options: ["1.5", "2.0", "2.67", "4.0", "6.0"],
+      difficulty: "moderate",
+      answer: 2,
+      explanation:
+        "Lay out the 2 x 2 table: a = 40 (cases exposed), b = 20 (controls exposed), c = 60 (cases unexposed), d = 80 (controls unexposed). OR = ad/bc = (40 x 80)/(20 x 60) = 3200/1200 = 2.67. The value 2.0 is the ratio of exposure proportions (40%/20%), which is a relative risk-like calculation that is not valid because the investigator fixed the number of cases and controls; 4.0 comes from mistakenly dividing 40 by 20 only in the exposed cells. An odds ratio is the only legitimate measure from this design, and it approximates the relative risk here because oral cancer is rare in the population.",
+    },
+    {
+      id: "preventive-study-designs-q2",
+      stem: "In a cohort study, 2000 tobacco users and 4000 non-users were followed for 10 years; 100 users and 50 non-users developed the disease. What is the attributable risk per cent among the exposed?",
+      options: ["25%", "50%", "75%", "80%", "400%"],
+      difficulty: "moderate",
+      answer: 2,
+      explanation:
+        "Incidence in the exposed Ie = 100/2000 = 5%; incidence in the non-exposed Iu = 50/4000 = 1.25%. Relative risk = 5/1.25 = 4. Attributable risk = 5 - 1.25 = 3.75%. Attributable risk per cent = (Ie - Iu)/Ie x 100 = 3.75/5 x 100 = 75%, which can also be obtained as (RR - 1)/RR x 100 = 3/4 x 100. The figure means that three-quarters of the disease among tobacco users is attributable to tobacco and would be prevented if they stopped. The option 400% is the relative risk misread as a percentage, and 80% is a rounding error from using 4/5 with the wrong numerator.",
+    },
+    {
+      id: "preventive-study-designs-q3",
+      stem: "The incidence of a chronic disease in a district is 5 per 1000 per year and the average duration of the disease from diagnosis to death or cure is 4 years. Assuming a steady state, what is the expected point prevalence?",
+      options: ["1.25 per 1000", "5 per 1000", "9 per 1000", "20 per 1000", "45 per 1000"],
+      difficulty: "easy",
+      answer: 3,
+      explanation:
+        "Under steady-state conditions prevalence = incidence x mean duration = 5 per 1000 per year x 4 years = 20 per 1000, or 2%. The relation explains why treatments that prolong life without cure - insulin, antiretroviral therapy - raise prevalence while incidence is unchanged, and why an effective cure (or a rapidly fatal illness) lowers prevalence. Dividing rather than multiplying gives 1.25 per 1000, and adding the two numbers gives 9 - both are errors of formula. Prevalence is the figure the district needs to plan drug stock; incidence is the figure that tells whether prevention is working.",
+    },
+    {
+      id: "preventive-study-designs-q4",
+      stem: "A child with measles lives in a household of 7. Two other members are known to be immune from previous measles. Within the next 3 weeks 2 of the remaining household members develop measles. What is the secondary attack rate?",
+      options: ["28.6%", "33.3%", "40%", "50%", "66.7%"],
+      difficulty: "moderate",
+      answer: 3,
+      explanation:
+        "The secondary attack rate is calculated among exposed susceptible contacts only. Household of 7 minus the index case leaves 6 contacts; minus the 2 immune members leaves 4 susceptible contacts. Two of the 4 developed measles within one incubation period, so the secondary attack rate = 2/4 x 100 = 50%. Using all 7 as denominator gives 28.6% and using all 6 contacts gives 33.3% - both wrong because the index case and the immune persons were never at risk. The secondary attack rate measures the infectiousness of the agent and, when compared between vaccinated and unvaccinated contacts, gives a field estimate of vaccine efficacy.",
+    },
+    {
+      id: "preventive-study-designs-q5",
+      stem: "A hospital-based case-control study finds that patients admitted with pancreatic cancer drink less coffee than control patients admitted with peptic ulcer disease, suggesting coffee protects against pancreatic cancer. The most likely explanation for this spurious result is:",
+      options: [
+        "Recall bias among the cases",
+        "Berkson's bias from the choice of hospital controls",
+        "Ecological fallacy",
+        "Lead time bias",
+        "Random error from a small sample",
+      ],
+      difficulty: "moderate",
+      answer: 1,
+      explanation:
+        "Patients with peptic ulcer disease have been told to avoid coffee, so a control group drawn from them has an artificially low coffee intake and any exposure appears protective. This is a selection bias arising from differential admission and the characteristics of hospital controls - Berkson's bias - and it was the explanation for the famous 1981 coffee-pancreatic cancer finding. Recall bias would usually make cases over-report exposure, not under-report it. Ecological fallacy applies to studies using populations as units, and lead time bias to screening. Random error would not produce a consistent direction of association. The remedy is population or neighbourhood controls, or a second control group with a disease unrelated to the exposure.",
+    },
+    {
+      id: "preventive-study-designs-q6",
+      stem: "A cohort of 1000 adults is followed for hypertension; because people joined and left at different times the total follow-up is 2500 person-years, during which 25 new cases occur. The incidence density is:",
+      options: ["1 per 1000 person-years", "2.5 per 1000 person-years", "25 per 1000 persons", "10 per 1000 person-years", "40 per 1000 person-years"],
+      difficulty: "easy",
+      answer: 3,
+      explanation:
+        "Incidence density uses person-time as denominator: 25 cases / 2500 person-years = 0.01 per person-year = 10 per 1000 person-years. The option 1 per 1000 person-years is a decimal-place slip, and 2.5 per 1000 comes from dividing 25 by 10 instead of by 2.5. The option 25 per 1000 persons is the cumulative incidence using persons as denominator, which ignores that not everyone was followed for the same period and is not a rate at all. Person-time methods are used precisely because they accommodate variable entry and exit in a dynamic cohort.",
+    },
+  ],
+  cards: [
+    {
+      id: "preventive-study-designs-c1",
+      front: "Relation between incidence, prevalence and duration.",
+      back: "Prevalence = incidence x mean duration (steady state). Treatments that prolong life without cure raise prevalence; rapid cure or rapid death lower it.",
+    },
+    {
+      id: "preventive-study-designs-c2",
+      front: "Secondary attack rate - formula and exclusions.",
+      back: "Secondary cases within one incubation period / exposed susceptible contacts x 100. Exclude the primary case and immune persons from the denominator.",
+    },
+    {
+      id: "preventive-study-designs-c3",
+      front: "Odds ratio: formula and when it approximates RR.",
+      back: "OR = ad/bc. Approximates relative risk when the disease is rare (under about 10%) and cases and controls are representative of their populations.",
+    },
+    {
+      id: "preventive-study-designs-c4",
+      front: "Berkson's bias versus Neyman's bias.",
+      back: "Berkson - selection bias from hospital controls with differential admission rates. Neyman - prevalence-incidence bias from using surviving prevalent cases rather than incident cases.",
+    },
+    {
+      id: "preventive-study-designs-c5",
+      front: "Three conditions for a confounder.",
+      back: "Associated with the exposure; an independent risk factor for the outcome; not on the causal pathway between them. Controlled by randomisation, restriction, matching, stratification or regression.",
+    },
+    {
+      id: "preventive-study-designs-c6",
+      front: "Allocation concealment versus blinding.",
+      back: "Concealment - recruiter cannot foresee the next allocation (central randomisation, opaque sealed envelopes); prevents selection bias at entry. Blinding - participant/observer/analyst unaware after entry; prevents performance and detection bias.",
+    },
+    {
+      id: "preventive-study-designs-c7",
+      front: "Phases of a clinical trial with numbers.",
+      back: "Phase I: 20-80 healthy volunteers, safety and dose. Phase II: 100-300 patients, efficacy. Phase III: 1000-3000, RCT against standard, pre-licensure. Phase IV: post-marketing surveillance.",
+    },
+    {
+      id: "preventive-study-designs-c8",
+      front: "Field trial versus community trial - one example each.",
+      back: "Field trial: healthy individuals as the unit - Salk polio vaccine trial, 1954. Community trial: whole communities as the unit - Newburgh-Kingston water fluoridation study, 1945-55.",
+    },
+  ],
+  references: [
+    "Park's Textbook of Preventive and Social Medicine, 27th edition, 2023 - principles of epidemiology and epidemiological methods",
+    "Gordis Epidemiology, 6th edition, 2019 - study designs, bias and confounding",
+    "Rothman KJ, Lash TL. Modern Epidemiology, 4th edition, 2021",
+    "STROBE Statement (2007), CONSORT Statement (2010, updated 2025) and PRISMA 2020 reporting guidelines",
+    "ICMR National Ethical Guidelines for Biomedical and Health Research Involving Human Participants, 2017; New Drugs and Clinical Trials Rules, 2019",
+    "ICMR-INDIAB study, Lancet Diabetes and Endocrinology, 2023; National Family Health Survey-5 (2019-21) national report",
+  ],
+});
+
+topics.push({
+  id: "preventive-outbreak-investigation",
+  title: "Outbreak investigation step by step and the IDSP",
+  oneLiner:
+    "An epidemic is the occurrence of disease clearly in excess of what is expected for that place and time, and its investigation follows a fixed sequence - verify the diagnosis, confirm the epidemic, define and count cases, describe them by time, place and person, form and test a hypothesis, look at the environment and write the report - while control measures run in parallel from the first day and every step is reported through the Integrated Disease Surveillance Programme.",
+  frequency: "common",
+  keywords: [
+    "epidemic",
+    "outbreak",
+    "endemic",
+    "pandemic",
+    "point source epidemic",
+    "propagated epidemic",
+    "epidemic curve",
+    "case definition",
+    "line list",
+    "attack rate table",
+    "food-specific attack rate",
+    "incubation period",
+    "food poisoning",
+    "cholera outbreak",
+    "IDSP",
+    "S P L forms",
+    "IHIP",
+    "rapid response team",
+    "trigger events",
+    "IHR 2005",
+    "Epidemic Diseases Act 1897",
+    "notifiable disease",
+    "ring vaccination",
+    "measles outbreak definition",
+  ],
+  sections: [
+    {
+      heading: "Definitions and the types of epidemics",
+      points: [
+        "**Epidemic:** the unusual occurrence in a community or region of disease, specific health-related behaviour or other health-related events clearly in excess of expected occurrence; **outbreak** is the same idea applied to a localised area, and **pandemic** is an epidemic that crosses international boundaries and affects a large number of people.",
+        "**Endemic** means the constant presence of a disease within a given area (hyperendemic when intense, holoendemic when every child is infected early, as with malaria in parts of Africa), **sporadic** means scattered cases without an obvious link, and **exotic** means imported into an area where it does not normally occur.",
+        "A **common source epidemic** arises from a single vehicle: a **point source** exposure (one meal, one contaminated batch, the Bhopal gas leak of 1984) produces an explosive rise, all cases within one incubation period range and a rapid fall, whereas a **continuous or repeated exposure** (a contaminated well, the Delhi hepatitis E epidemic of 1955-56 with 29,300 cases) produces a prolonged plateau.",
+        "A **propagated epidemic** spreads from person to person (or by arthropod or animal reservoir) - hepatitis A, polio, measles, COVID-19 - and its curve rises slowly with successive peaks roughly one incubation period apart until the supply of susceptibles is exhausted; a **mixed epidemic** starts as common source and then propagates, as when a water-borne shigella outbreak is followed by household spread.",
+        "The **epidemic curve** is a histogram of cases by date (or hour) of onset; its shape identifies the type of epidemic, its start and duration, and in a point source outbreak it gives the incubation period: the time from the exposure to the median case is the median incubation period, and the earliest and latest cases give its range.",
+        "**Modern (slow) epidemics** of non-communicable disease - diabetes, coronary disease, road traffic injury - follow the same logic over decades, and the tobacco-lung cancer story is the textbook example that the methods of outbreak investigation apply to them as well.",
+      ],
+    },
+    {
+      heading: "Steps 1-4: verify, confirm, define the population, count the cases",
+      points: [
+        "**Verify the diagnosis** first, by examining a sample of cases and sending specimens - stool for hang-drop and culture in suspected cholera, throat swabs and serum in fever with rash, water and food samples where relevant - because a rumour of cholera and a cluster of rotavirus need different responses; this is the first step, before the existence of the epidemic is confirmed.",
+        "**Confirm the existence of an epidemic** by comparing the number of cases with the expected number for that place, population and season - the previous 3-5 years' figures for the same weeks, an **endemic threshold** of the mean plus two standard deviations on the IDSP chart, or a national definition such as five or more suspected measles cases in a block within four weeks.",
+        "**Define the population at risk** with a map of the area, the census or ASHA household register and the location of water sources, schools, hostels and eating places, so that denominators exist for every rate that follows.",
+        "**Write a case definition** with clinical criteria plus restrictions of person, place and time, in tiers - **suspected** (clinical), **probable** (clinical with epidemiological link) and **confirmed** (laboratory) - keeping it sensitive at the start to find every case and tightening it later for analysis.",
+        "**Search actively for cases** house to house with the ASHA and ANM, in schools and in private clinics, and record every case on a **line list**: name, age, sex, address, date of onset, symptoms, exposures, specimens sent, outcome; the line list is the single document from which the whole analysis is built.",
+        "Search for cases in adjacent villages and among people who left the area, because the cases that reached the PHC are only those who were sick enough and near enough to come, and because the geographical limit of the outbreak is itself evidence about the source.",
+      ],
+    },
+    {
+      heading: "Steps 5-7: describe, hypothesise, test",
+      points: [
+        "**Analyse by time** with the epidemic curve, **by place** with a spot map (cases clustered around one hand pump, one street, one school) and **by person** with attack rates by age, sex, occupation, religion, attendance at a function or use of a water source - the group with the highest attack rate points to the exposure.",
+        "**Formulate a hypothesis** stating the agent, the source, the mode of transmission and the population at risk - for instance, Vibrio cholerae from the western hand pump contaminated by a leaking sewer, spread by drinking water, affecting the households that draw from it.",
+        "**Test the hypothesis** with a **retrospective cohort study** when the exposed population is well defined (a wedding feast, a hostel, a school), calculating **food-specific attack rates** among those who ate and those who did not eat each item; the vehicle is the item with a high attack rate among eaters, a low rate among non-eaters, and the largest difference or ratio between them.",
+        "When the population at risk is not enumerable - cases scattered across a town - use a **case-control study**, comparing exposures of cases with those of neighbourhood or age-matched controls and calculating odds ratios.",
+        "A food that everyone ate cannot be incriminated by attack rates alone; a food eaten by nobody who fell ill is excluded; and when two foods both look guilty, cross-tabulate them (attack rate for A among those who did and did not eat B) to separate the true vehicle from the one merely served alongside it.",
+        "Laboratory confirmation closes the loop - the same organism from patients, from the food or water, and ideally from the food handler or the source - and molecular typing where available distinguishes one outbreak from coincidental sporadic cases.",
+      ],
+    },
+    {
+      heading: "Steps 8-10 and the control measures that run alongside",
+      points: [
+        "**Evaluate the ecological factors:** inspect the water supply, its chlorination and residual chlorine, the sewerage, the kitchen, refrigeration and food handlers, the vector breeding sites, and recent events - a fair, a flood, a pipeline repair, a migrant camp - that may explain why the outbreak happened now.",
+        "**Investigate the population at risk further** where indicated - a serological survey, a search for carriers, an immunisation coverage survey after a measles outbreak - and **write a report** to the district surveillance unit and Chief Medical Officer with the findings, the action taken and the recommendations, within 24 hours preliminarily and in full at the end.",
+        "Control does not wait for the analysis: from day one, treat cases (ORS corners for diarrhoea, referral of severe dehydration), **isolate** where transmission is person to person, give **chemoprophylaxis** to defined close contacts only (doxycycline for household contacts of cholera, rifampicin for meningococcal contacts), and provide **post-exposure vaccination** - measles within 72 hours of exposure for contacts, ring vaccination of the surrounding area.",
+        "**Interrupt transmission:** superchlorinate or close the implicated water source and distribute chlorine tablets, stop the sale of implicated food, supervise safe disposal of excreta and vomitus, intensify vector control with fogging and source reduction, and enforce hand hygiene with soap in every household.",
+        "**Communicate:** a single trained spokesperson, daily situation reports, simple messages through ASHAs, panchayats, schools and local media, and correction of rumours - risk communication is graded in the modern outbreak and in the modern exam.",
+        "**Continue surveillance** for at least two incubation periods after the last case before declaring the outbreak over (10 days for cholera, 42 days for Ebola, 2 incubation periods of 21 days for measles) and conduct an after-action review that feeds into the district preparedness plan.",
+      ],
+    },
+    {
+      heading: "Integrated Disease Surveillance Programme (IDSP) and the legal framework",
+      points: [
+        "**IDSP** was launched in November 2004 with World Bank assistance and now runs under the National Centre for Disease Control as part of the National Health Mission; it has surveillance units at central (CSU), state (SSU) and district (DSU) level, each district with an epidemiologist, a microbiologist and an entomologist where sanctioned.",
+        "Data flow on three forms: the **S (syndromic) form** filled weekly by health workers and ASHAs, the **P (presumptive) form** by medical officers using clinical diagnoses, and the **L (laboratory) form** by laboratories; since April 2021 reporting is case-based and near real-time on the **Integrated Health Information Platform (IHIP)**.",
+        "The reporting week runs Monday to Sunday and a nil report is compulsory; **trigger events** that demand immediate telephonic reporting include a cluster of similar illness, a single case of cholera, plague, wild polio or a disease not previously seen in the area, two or more unexplained deaths, and unusual deaths among animals or birds (rat fall before plague, poultry deaths before avian influenza).",
+        "The district **Rapid Response Team** - epidemiologist, microbiologist, clinician or paediatrician, entomologist and public health nurse - reaches the site within 24 hours; a **Media Scanning and Verification Cell** at NCDC picks up event-based signals from the press and social media that the indicator-based system would miss.",
+        "The **Epidemic Diseases Act, 1897** (amended in 2020 to protect healthcare workers) lets governments make regulations to control epidemics, and the **Disaster Management Act, 2005** was the basis of the COVID-19 lockdown; notification of specified diseases is a state matter, and the medical officer is legally obliged to report notifiable diseases to the district health authority.",
+        "Under the **International Health Regulations (2005)** a state must notify WHO within 24 hours of assessing a potential public health emergency of international concern; smallpox, wild poliovirus, SARS and human influenza of a new subtype are always notifiable, while cholera, pneumonic plague, yellow fever, viral haemorrhagic fevers and West Nile fever are assessed against the four-question decision instrument.",
+      ],
+    },
+    {
+      heading: "Outbreak definitions and thresholds the family physician must know",
+      points: [
+        "**Cholera:** a single culture-confirmed case is an outbreak; report the same day, set up an ORS corner and treatment centre, give doxycycline 300 mg single dose to adult household contacts (azithromycin in children and pregnancy), chlorinate all water sources to a **residual chlorine of 0.5 mg/L** and search for cases for 10 days after the last one.",
+        "**Measles:** five or more suspected cases (fever with maculopapular rash) in a block within four weeks is a suspected outbreak, confirmed when at least two are IgM positive; response is vaccination of all children 6 months to 5 years within 72 hours, vitamin A to every case, and a coverage survey.",
+        "**Acute flaccid paralysis:** every AFP in a child under 15 is reported within 24 hours and two stool samples collected 24-48 hours apart within 14 days of onset; an adequate surveillance system finds at least 2 non-polio AFP cases per 100,000 children under 15 per year, and a single wild poliovirus isolate is a public health emergency.",
+        "**Dengue:** a cluster of fever cases with a positive NS1 or IgM, or a **Breteau index above 5** (containers positive for Aedes larvae per 100 houses) or house index above 10, is the signal for source reduction, temephos larviciding and fogging within 24 hours.",
+        "**Acute encephalitis syndrome / JE:** two or more cases in a village within a fortnight trigger investigation; **malaria:** monthly cases exceeding twice the mean of the same month in the previous three years, or any death, declares an epidemic; **plague:** rat fall or a single case of pneumonic plague is a national emergency with quarantine and doxycycline prophylaxis for contacts.",
+        "**Food poisoning:** two or more linked cases of gastroenteritis after a common meal is an outbreak; the incubation period sorts the cause - one to six hours with vomiting is staphylococcal or Bacillus cereus preformed toxin, eight to sixteen hours with diarrhoea is Clostridium perfringens or B. cereus diarrhoeal toxin, twelve to seventy-two hours with fever is Salmonella, and minutes to an hour with neurological or cholinergic features is chemical.",
+      ],
+    },
+  ],
+  tables: [
+    {
+      heading: "Incubation periods that identify the cause of a food or water-borne outbreak",
+      columns: ["Agent", "Usual incubation", "Dominant symptom", "Typical vehicle"],
+      rows: [
+        ["Chemical (organophosphate, metals, argemone)", "Minutes to 1 hour", "Cholinergic or neurological, vomiting", "Contaminated grain, oil, stored food"],
+        ["Staphylococcus aureus enterotoxin", "1-6 hours", "Vomiting, no fever", "Milk sweets, cream, cooked rice handled by carrier"],
+        ["Bacillus cereus emetic toxin", "1-6 hours", "Vomiting", "Fried or reheated rice"],
+        ["Clostridium perfringens", "8-16 hours", "Watery diarrhoea, cramps", "Meat cooked in bulk, held warm"],
+        ["Salmonella (non-typhoidal)", "12-72 hours", "Fever, diarrhoea, cramps", "Eggs, poultry, meat"],
+        ["Vibrio cholerae", "Few hours to 5 days, usually 1-2 days", "Profuse painless watery diarrhoea", "Water, food washed in water"],
+        ["Norovirus", "24-48 hours", "Vomiting and diarrhoea, short course", "Water, salads, shellfish, food handlers"],
+        ["Shigella", "1-3 days", "Dysentery with fever", "Water, hands, flies"],
+        ["Hepatitis A and E", "15-50 days (mean 28) / 15-60 days (mean 40)", "Jaundice", "Water, uncooked food"],
+        ["Typhoid", "10-14 days (3-60)", "Sustained fever", "Water, milk, food from carrier"],
+      ],
+    },
+    {
+      heading: "IDSP reporting: who fills what",
+      columns: ["Form", "Filled by", "Content", "Frequency"],
+      rows: [
+        ["S - syndromic", "ASHA, ANM, health worker", "Syndromes: fever, fever with rash, diarrhoea, jaundice, AFP, unusual events", "Weekly (Monday-Sunday), nil report compulsory"],
+        ["P - presumptive", "Medical officer at PHC/CHC/hospital", "Clinically diagnosed epidemic-prone diseases", "Weekly, plus immediate telephonic report of trigger events"],
+        ["L - laboratory", "Laboratory technician or microbiologist", "Laboratory-confirmed cases", "Weekly and on confirmation"],
+        ["Event-based", "Anyone, Media Scanning and Verification Cell", "Rumours, media reports, unusual deaths in animals", "Immediate"],
+      ],
+    },
+  ],
+  redFlags: [
+    "A single case of cholera, plague, wild poliovirus, diphtheria in a previously free district, or any disease new to the area must be reported by telephone to the district surveillance unit the same day and never held for the weekly form.",
+    "Two or more unexplained deaths from a similar illness in one locality within a week is a trigger event demanding a Rapid Response Team, whatever the presumed diagnosis.",
+    "Acute encephalitis with a cluster in a village, or encephalitis with a history of contact with bats, sick pigs or date-palm sap, is Nipah or JE until proved otherwise and needs isolation and immediate notification.",
+    "Rat fall, unusual deaths of poultry or crows, or illness in animal handlers precedes plague and avian influenza; report to the district health and veterinary authorities before human cases appear.",
+    "A food poisoning outbreak with neurological features - descending paralysis, blurred vision, dysphagia - is botulism or chemical poisoning and needs urgent referral and antitoxin, not observation.",
+    "Any acute flaccid paralysis in a child under 15 is reportable within 24 hours with two stool samples; missing this is a surveillance failure that is audited nationally.",
+  ],
+  pearls: [
+    "The first step is to verify the diagnosis, the second to confirm that an epidemic exists - the order is examined every year.",
+    "A case definition has clinical criteria plus person, place and time, in suspected, probable and confirmed tiers; write it before counting anything.",
+    "Explosive rise, all cases within one incubation period range and a rapid fall means point source; successive peaks one incubation period apart means propagated.",
+    "The vehicle in a feast outbreak has the highest attack rate among those who ate it, the lowest among those who did not, and the largest difference between the two.",
+    "Control measures start on day one in parallel with the investigation; nobody waits for the culture report to chlorinate a well.",
+    "IDSP: S form by the health worker, P form by the medical officer, L form by the laboratory, all on IHIP, week Monday to Sunday, nil reports compulsory.",
+  ],
+  theory: [
+    {
+      id: "preventive-outbreak-investigation-t1",
+      paper: "I",
+      kind: "long",
+      marks: 10,
+      minutes: 20,
+      frequency: "core",
+      question:
+        "Twenty cases of acute watery diarrhoea are reported from one village in three days. As the medical officer of the PHC, describe how you would investigate this outbreak and the control measures you would institute.",
+      openingLines: [
+        "An outbreak is the occurrence of cases of a disease clearly in excess of expectancy in a defined area and time; twenty cases of acute watery diarrhoea in three days in one village exceeds the endemic level and, until proved otherwise, is cholera.",
+        "Investigation and control run in parallel from the first day: the investigation follows the standard steps, and the control measures - case management, safe water, sanitation and reporting - begin before the laboratory results are back.",
+      ],
+      answer: [
+        {
+          heading: "1. Immediate actions on day one",
+          points: [
+            "Telephone the district surveillance unit and Chief Medical Officer; a cluster of acute watery diarrhoea is a trigger event under IDSP and a single confirmed cholera case is an outbreak.",
+            "Set up an ORS corner and a treatment centre in the village with the ASHA and ANM; assess dehydration by the IMNCI/WHO plan A, B, C, start intravenous Ringer's lactate for severe dehydration and refer those who cannot be managed.",
+            "Collect stool samples (or rectal swabs in Cary-Blair medium) from 5-10 fresh cases before antibiotics for hang-drop, culture and sensitivity, and water samples from every source in use for residual chlorine and bacteriology.",
+          ],
+        },
+        {
+          heading: "2. Verify the diagnosis and confirm the outbreak",
+          points: [
+            "Examine a sample of cases: painless rice-water stools with rapid dehydration and no fever suggest cholera; blood and fever suggest shigella; predominant vomiting within hours of a meal suggests toxin.",
+            "Compare with the PHC's own records for the same weeks in the previous three years and with the IDSP endemic threshold; twenty cases in three days from one village is clearly in excess.",
+          ],
+        },
+        {
+          heading: "3. Define the population and count the cases",
+          points: [
+            "Obtain the village map and household register; note water sources, the school, the anganwadi, recent functions and any influx of visitors.",
+            "Case definition: any resident of the village with three or more loose watery stools in 24 hours with onset on or after the index date (suspected); with an epidemiological link (probable); with Vibrio cholerae isolated (confirmed).",
+            "House-to-house search by ASHA and ANM with a line list: name, age, sex, house, water source, date and time of onset, treatment, outcome; include cases treated by private practitioners and those who have left the village.",
+          ],
+        },
+        {
+          heading: "4. Descriptive analysis and hypothesis",
+          points: [
+            "Time: draw the epidemic curve by date of onset - an explosive rise within one incubation period suggests a point source such as one contaminated well or one feast; a plateau suggests continued exposure to contaminated supply.",
+            "Place: a spot map of cases against water sources; clustering around one hand pump or one pipeline branch is the usual finding.",
+            "Person: attack rates by age, sex, household, water source and attendance at any function; a higher rate among users of one source is the hypothesis.",
+          ],
+        },
+        {
+          heading: "5. Test the hypothesis and examine the environment",
+          points: [
+            "Retrospective cohort study across households: attack rate among users and non-users of each water source (or each food at a function), calculating the relative risk; a case-control study if the exposed population is not enumerable.",
+            "Sanitary survey of the implicated source: proximity to latrines or drains, cracked platform, pipeline leaks, intermittent supply with negative pressure, residual chlorine below 0.5 mg/L, presence of E. coli.",
+            "Laboratory: Vibrio cholerae O1 or O139 from stools and from the water source confirms the chain.",
+          ],
+        },
+        {
+          heading: "6. Control measures",
+          points: [
+            "Water: close or superchlorinate the implicated source (bleaching powder to a residual of 0.5 mg/L after 30 minutes' contact), supply tankers, distribute chlorine tablets and teach boiling and safe storage in narrow-mouthed covered containers.",
+            "Cases and contacts: continued treatment, doxycycline 300 mg single dose to adults with severe dehydration and to household contacts, azithromycin for children and pregnant women, disinfection of stools and vomitus with bleaching powder, hand washing with soap.",
+            "Sanitation and food: safe disposal of excreta, fly control, ban on cut fruit and street food, supervision of food handlers, hygiene messaging through ASHAs, school and panchayat.",
+            "Surveillance: daily reporting on IHIP, continued active search for 10 days after the last case, and a written report with recommendations for the water supply to the district authorities.",
+          ],
+        },
+      ],
+      mustDraw: [
+        "A flow chart of the ten steps of outbreak investigation with control measures shown as a parallel column.",
+        "A sketch epidemic curve with point source and propagated shapes labelled.",
+        "A 2 x 2 attack rate table of users against non-users of the implicated water source with the relative risk.",
+      ],
+      markSplit: [
+        { part: "Immediate reporting and case management", marks: 2 },
+        { part: "Verification, confirmation, case definition and line listing", marks: 2 },
+        { part: "Descriptive analysis with epidemic curve and spot map", marks: 2 },
+        { part: "Hypothesis testing and environmental investigation", marks: 2 },
+        { part: "Control measures and continued surveillance", marks: 2 },
+      ],
+      keywords: ["outbreak investigation", "cholera", "epidemic curve", "case definition", "line list", "attack rate", "residual chlorine", "IDSP"],
+    },
+    {
+      id: "preventive-outbreak-investigation-t2",
+      paper: "I",
+      kind: "short-note",
+      marks: 5,
+      minutes: 8,
+      frequency: "common",
+      question: "Write a short note on the Integrated Disease Surveillance Programme (IDSP).",
+      openingLines: [
+        "IDSP is a decentralised, state-based surveillance programme launched in November 2004 with World Bank assistance, now run by the National Centre for Disease Control under the National Health Mission, to detect and respond to outbreaks of epidemic-prone diseases early.",
+        "Its objective is to strengthen data collection, analysis and response at district level so that an outbreak is detected within a week of its start and controlled before it spreads.",
+      ],
+      answer: [
+        {
+          heading: "Structure",
+          points: [
+            "Central Surveillance Unit at NCDC, State Surveillance Units and District Surveillance Units, each with an epidemiologist, microbiologist and entomologist where sanctioned, and a Rapid Response Team at every district.",
+            "Reporting units: sub-centres, PHCs, CHCs, district and medical college hospitals, private practitioners and laboratories; a network of district priority labs and reference labs.",
+          ],
+        },
+        {
+          heading: "Data flow",
+          points: [
+            "S form (syndromic) by health workers and ASHAs; P form (presumptive) by medical officers; L form (laboratory) by laboratories - weekly, Monday to Sunday, with compulsory nil reporting.",
+            "Since April 2021 case-based, geo-tagged, near real-time reporting on the Integrated Health Information Platform (IHIP), with automated alerts when cases cross the threshold.",
+            "Event-based surveillance through the Media Scanning and Verification Cell and telephonic reporting of trigger events.",
+          ],
+        },
+        {
+          heading: "Response",
+          points: [
+            "Trigger events - a cluster of similar illness, a single case of cholera or plague, unexplained deaths, unusual animal deaths - bring the Rapid Response Team to the site within 24 hours to investigate and institute control.",
+            "Outputs: weekly outbreak reports, seasonal trend analysis, training of medical officers in outbreak investigation and links to programmes such as NCVBDC and the measles-rubella surveillance network.",
+          ],
+        },
+        {
+          heading: "Role of the family physician",
+          points: [
+            "Report notifiable and epidemic-prone diseases on the P form, telephone trigger events at once, keep an outbreak-ready stock of ORS, chlorine tablets and rectal swab kits, and join the district RRT when called.",
+          ],
+        },
+      ],
+      mustDraw: ["A three-tier diagram of CSU, SSU and DSU with S, P and L forms feeding the district unit and the RRT responding downward."],
+      markSplit: [
+        { part: "Origin, objective and structure", marks: 2 },
+        { part: "S, P, L forms and IHIP", marks: 2 },
+        { part: "Trigger events, RRT and the physician's role", marks: 1 },
+      ],
+      keywords: ["IDSP", "S P L forms", "IHIP", "rapid response team", "trigger events", "NCDC"],
+    },
+  ],
+  mcqs: [
+    {
+      id: "preventive-outbreak-investigation-q1",
+      stem: "After a wedding feast, 100 guests ate the kheer and 60 of them fell ill; 50 guests did not eat the kheer and 5 of them fell ill. What is the relative risk of illness associated with eating the kheer?",
+      options: ["1.2", "2.0", "5.0", "6.0", "12.0"],
+      difficulty: "moderate",
+      answer: 3,
+      explanation:
+        "Attack rate among those who ate the kheer = 60/100 = 60%; among those who did not = 5/50 = 10%. Relative risk = 60/10 = 6.0, and the attack rate difference is 50 percentage points. This is a retrospective cohort analysis, appropriate because the population exposed (the guests) is enumerable, and the kheer is incriminated because it has a high rate among eaters, a low rate among non-eaters and a large ratio between them. The option 12 divides 60 by 5 without using the denominators, and 2.0 is a guess from the ratio of group sizes. The five people ill without eating kheer are explained by cross-contamination, a second vehicle or errors in recall.",
+    },
+    {
+      id: "preventive-outbreak-investigation-q2",
+      stem: "Guests at a function ate at 8 pm. Between 10 pm and 1 am, 40 of them developed severe vomiting with abdominal cramps but no fever; all recovered within 24 hours. The most likely agent is:",
+      options: ["Salmonella typhimurium", "Vibrio cholerae", "Staphylococcus aureus enterotoxin", "Clostridium perfringens", "Norovirus"],
+      difficulty: "easy",
+      answer: 2,
+      explanation:
+        "An incubation of two to five hours with vomiting as the dominant symptom, no fever and rapid recovery is the picture of a preformed toxin - staphylococcal enterotoxin from milk-based sweets or handled food kept at room temperature (Bacillus cereus emetic toxin from fried rice behaves identically). Salmonella needs 12-72 hours and causes fever and diarrhoea; Clostridium perfringens needs 8-16 hours and causes diarrhoea rather than vomiting; cholera is painless watery diarrhoea after one to two days; norovirus takes 24-48 hours. The incubation period is the single most discriminating piece of information in a food poisoning outbreak and should be calculated from the epidemic curve before any laboratory result.",
+    },
+    {
+      id: "preventive-outbreak-investigation-q3",
+      stem: "An epidemic curve of hepatitis A in a hostel shows a first peak in week 1, a larger second peak in week 5 and a third in week 9, with cases between the peaks. This pattern indicates:",
+      options: ["A point source epidemic", "A continuous common source epidemic", "A propagated epidemic", "A mixed epidemic that began as point source", "Seasonal variation"],
+      difficulty: "moderate",
+      answer: 2,
+      explanation:
+        "Successive peaks separated by roughly one incubation period (about four weeks for hepatitis A) are the signature of person-to-person spread - a propagated epidemic - as each generation of cases infects the next. A point source would produce a single explosive peak with all cases within one incubation range (15-50 days), and a continuous common source produces a plateau without discrete generations. A mixed epidemic would show an explosive first peak much larger than the later ones; here the second peak is larger, which is the propagated pattern. The control implication is hygiene and hand-washing plus vaccination of contacts, not merely closing a water source.",
+    },
+    {
+      id: "preventive-outbreak-investigation-q4",
+      stem: "Under the International Health Regulations (2005), which of the following must always be notified to WHO regardless of the circumstances?",
+      options: ["Cholera", "Pneumonic plague", "Yellow fever", "Wild poliovirus", "Dengue haemorrhagic fever"],
+      difficulty: "moderate",
+      answer: 3,
+      explanation:
+        "Annex 2 of the IHR (2005) lists four diseases that are always notifiable because a single case is unusual and serious: smallpox, poliomyelitis due to wild-type poliovirus, SARS and human influenza caused by a new subtype. Cholera, pneumonic plague, yellow fever, viral haemorrhagic fevers and West Nile fever are in the second group, to be assessed with the decision instrument (is the impact serious, is it unusual, is there risk of international spread, is there risk of travel or trade restriction) and notified if two of the four criteria are met. Dengue is in the third group of diseases of national or regional concern. Notification must reach WHO within 24 hours of the assessment.",
+    },
+    {
+      id: "preventive-outbreak-investigation-q5",
+      stem: "The mean number of acute diarrhoeal disease cases reported from a block in the 20th week of the year over the previous five years is 10, with a standard deviation of 3. This year 18 cases are reported in the 20th week. The correct interpretation is:",
+      options: [
+        "Within normal variation; no action needed",
+        "Exceeds the endemic threshold (mean plus 2 SD); investigate as an outbreak",
+        "An outbreak only if 20 or more cases are reported",
+        "Cannot be interpreted without laboratory confirmation",
+        "An epidemic only if deaths have occurred",
+      ],
+      difficulty: "moderate",
+      answer: 1,
+      explanation:
+        "The endemic (alert) threshold on an IDSP control chart is usually set at the mean plus two standard deviations of the same week in previous years: 10 + 2 x 3 = 16. Eighteen cases exceed it, so the existence of an outbreak is confirmed statistically and the medical officer verifies the diagnosis and investigates. Laboratory confirmation of the cause is a separate step and is not needed to declare that cases are in excess; deaths are not part of the definition of an epidemic. The specific number 20 has no basis - thresholds are computed from the local baseline, which is why every PHC must keep its own weekly records.",
+    },
+    {
+      id: "preventive-outbreak-investigation-q6",
+      stem: "The first step in the investigation of a suspected epidemic is:",
+      options: [
+        "Confirmation of the existence of an epidemic",
+        "Verification of the diagnosis",
+        "Defining the population at risk",
+        "Formulation of a hypothesis",
+        "Institution of control measures",
+      ],
+      difficulty: "easy",
+      answer: 1,
+      explanation:
+        "Verification of the diagnosis comes first: a cluster of reported cholera may be rotavirus, food poisoning or a rumour, and the entire response depends on knowing what the disease actually is. Confirmation of the existence of the epidemic - showing the cases are in excess of expectation - is the second step. Defining the population at risk, searching for cases, descriptive analysis, hypothesis, testing, environmental evaluation and the report follow. Control measures are not a numbered step because they run in parallel from day one, but they still need at least a working diagnosis to be rational.",
+    },
+  ],
+  cards: [
+    {
+      id: "preventive-outbreak-investigation-c1",
+      front: "Define epidemic, endemic and pandemic.",
+      back: "Epidemic - occurrence clearly in excess of expected for the place and time. Endemic - constant presence in an area. Pandemic - epidemic crossing international boundaries affecting large numbers.",
+    },
+    {
+      id: "preventive-outbreak-investigation-c2",
+      front: "Ten steps of epidemic investigation, in order.",
+      back: "Verify diagnosis; confirm epidemic exists; define population at risk; search for cases (case definition, line list); analyse by time, place, person; hypothesis; test hypothesis; evaluate ecological factors; further investigation of the population; report.",
+    },
+    {
+      id: "preventive-outbreak-investigation-c3",
+      front: "Point source versus propagated epidemic curve.",
+      back: "Point source - explosive rise, all cases within one incubation period range, rapid fall. Propagated - slow rise with successive peaks one incubation period apart.",
+    },
+    {
+      id: "preventive-outbreak-investigation-c4",
+      front: "How to read a food-specific attack rate table.",
+      back: "The vehicle has the highest attack rate among eaters, the lowest among non-eaters and the largest difference (or ratio) between them; a food eaten by nobody who fell ill is excluded.",
+    },
+    {
+      id: "preventive-outbreak-investigation-c5",
+      front: "IDSP forms and who fills them.",
+      back: "S (syndromic) - health worker/ASHA; P (presumptive) - medical officer; L (laboratory) - lab. Weekly, Monday to Sunday, nil reports compulsory, on IHIP since April 2021.",
+    },
+    {
+      id: "preventive-outbreak-investigation-c6",
+      front: "Always-notifiable diseases under IHR 2005.",
+      back: "Smallpox, wild poliovirus, SARS, human influenza of a new subtype - notify WHO within 24 hours. Cholera, plague, yellow fever, VHF, West Nile are assessed by the decision instrument.",
+    },
+    {
+      id: "preventive-outbreak-investigation-c7",
+      front: "Measles outbreak definition and response.",
+      back: "Five or more suspected cases in a block within four weeks (confirmed if two or more IgM positive). Vaccinate 6 months to 5 years within 72 hours, vitamin A to cases, coverage survey.",
+    },
+    {
+      id: "preventive-outbreak-investigation-c8",
+      front: "Cholera outbreak: chemoprophylaxis and water target.",
+      back: "Doxycycline 300 mg single dose for adult household contacts (azithromycin for children and pregnancy); residual chlorine 0.5 mg/L after 30 minutes' contact; search for cases 10 days after the last one.",
+    },
+  ],
+  references: [
+    "Park's Textbook of Preventive and Social Medicine, 27th edition, 2023 - investigation of an epidemic, IDSP",
+    "IDSP Training Manual for Medical Officers for Hospital Based Disease Surveillance, NCDC; IDSP operational guidelines and IHIP user manual, 2021",
+    "CDC Field Epidemiology Manual (The CDC Field Epidemiology Manual, 2019) - steps of an outbreak investigation",
+    "WHO International Health Regulations (2005), 3rd edition, 2016 - Annex 2 decision instrument",
+    "NCDC Operational Guidelines for Measles and Rubella Surveillance and Outbreak Investigation in India, 2023",
+    "Epidemic Diseases Act, 1897 with the 2020 amendment; Disaster Management Act, 2005",
+  ],
+});
+
+topics.push({
+  id: "preventive-nutrition-programmes",
+  title: "Nutritional assessment, deficiency diseases and the national nutrition programmes",
+  oneLiner:
+    "India carries a double burden of undernutrition - stunting in a third of children under five and anaemia in more than half of women - alongside rising overweight, and the family physician's tools are anthropometry against the WHO 2006 standards, the ICMR-NIN 2020 requirements, and the programmes that deliver food, iron, vitamin A, deworming and iodised salt: Poshan 2.0 through the anganwadi, PM POSHAN in schools, Anaemia Mukt Bharat and NIDDCP.",
+  frequency: "common",
+  keywords: [
+    "malnutrition",
+    "stunting",
+    "wasting",
+    "underweight",
+    "severe acute malnutrition",
+    "SAM",
+    "MAM",
+    "MUAC",
+    "Z score",
+    "WHO growth standards",
+    "kwashiorkor",
+    "marasmus",
+    "F-75",
+    "F-100",
+    "RUTF",
+    "nutrition rehabilitation centre",
+    "ICDS",
+    "anganwadi",
+    "Poshan Abhiyaan",
+    "Poshan 2.0",
+    "PM POSHAN",
+    "mid-day meal",
+    "Anaemia Mukt Bharat",
+    "IFA",
+    "National Deworming Day",
+    "vitamin A prophylaxis",
+    "NIDDCP",
+    "iodised salt",
+    "RDA",
+    "BMI",
+    "lathyrism",
+    "epidemic dropsy",
+    "fluorosis",
+    "food fortification",
+    "NFHS-5",
+  ],
+  sections: [
+    {
+      heading: "The burden: what NFHS-5 (2019-21) says",
+      points: [
+        "Among children under five, **35.5% are stunted** (height-for-age below -2 SD), **19.3% wasted** (weight-for-height below -2 SD), 7.7% severely wasted and **32.1% underweight**; the improvement since NFHS-4 (2015-16) was small for stunting and nil for wasting, which is why wasting is treated as the emergency indicator.",
+        "**Anaemia** (haemoglobin below the WHO cut-off) affects **67.1% of children aged 6-59 months, 57.0% of women aged 15-49, 52.2% of pregnant women** and 25% of men - all worse than in NFHS-4 - and low birth weight (under 2500 g) is recorded in about 18% of births.",
+        "The other half of the double burden: **24% of women and 22.9% of men are overweight or obese** by the WHO cut-off of BMI 25, and the ICMR-INDIAB survey (2023) found generalised obesity in 28.6% and abdominal obesity in 39.5% of adults using Asian-Indian cut-offs.",
+        "Infant feeding remains the root: only 41.8% of newborns are put to the breast within an hour, **63.7% are exclusively breastfed to six months**, and just **11.3% of children aged 6-23 months receive a minimum acceptable diet** - the figure that explains why stunting begins at six months.",
+        "Micronutrient coverage is uneven: 94.3% of households use adequately iodised salt, but only about a quarter of pregnant women take IFA for the full 180 days, and vitamin A and deworming coverage lag behind immunisation in the same children.",
+        "For the paper, date every figure (NFHS-5, 2019-21), name the survey, and state whether it is a prevalence (cross-sectional) or programme (HMIS) figure - examiners reward the source more than the decimal.",
+      ],
+    },
+    {
+      heading: "Anthropometric assessment and the classifications",
+      points: [
+        "Children are measured against the **WHO Growth Standards (2006)** and expressed as **Z-scores** (observed minus median, divided by the standard deviation of the reference): **weight-for-age** below -2 SD is underweight (a composite index), **height-for-age** below -2 SD is stunting (chronic), and **weight-for-height** below -2 SD is wasting (acute); below -3 SD is severe.",
+        "**Severe acute malnutrition (SAM)** in a child aged 6-59 months is any one of: weight-for-height below **-3 SD**, **mid-upper arm circumference below 11.5 cm**, or **bilateral pitting oedema**; **moderate acute malnutrition (MAM)** is weight-for-height between -3 and -2 SD or MUAC 11.5 to 12.4 cm without oedema.",
+        "MUAC is age-independent between 6 and 59 months, needs a coloured tape (red below 11.5, yellow 11.5-12.4, green 12.5 and above) and is the screening tool of the ASHA and anganwadi worker; weight-for-height on the MCP card growth chart is the confirmatory measure at the facility.",
+        "The older Indian classifications still appear: **Gomez** (weight-for-age as a percentage of reference - 75-89% grade I, 60-74% grade II, under 60% grade III), **IAP** (over 80% normal, 71-80 grade I, 61-70 II, 51-60 III, 50 or less IV, with a K suffix for kwashiorkor), **Waterlow** (wasting by weight-for-height, stunting by height-for-age) and **Wellcome** (weight-for-age 60-80% with oedema is kwashiorkor, without is undernutrition; under 60% with oedema is marasmic kwashiorkor, without is marasmus).",
+        "In adults **BMI** is weight in kilograms divided by height in metres squared: WHO calls under 18.5 underweight (chronic energy deficiency grades I 17-18.49, II 16-16.99, III under 16), 25-29.9 overweight and 30 or more obese; the **Asian-Indian cut-offs (consensus 2009) are 23 for overweight and 25 for obesity**, with a waist circumference of 90 cm in men and 80 cm in women defining abdominal obesity.",
+        "Growth monitoring is the programme's core act: every child is weighed monthly at the anganwadi, plotted on the MCP card, and entered in the **Poshan Tracker** (2021); a flattening or falling curve is acted upon before the child crosses a Z-score line.",
+      ],
+    },
+    {
+      heading: "Requirements, the balanced diet and the ICMR-NIN 2020 numbers",
+      points: [
+        "The **ICMR-NIN Nutrient Requirements for Indians (2020)** define the reference man as 65 kg and the reference woman as 55 kg (aged 19-39), and give both an Estimated Average Requirement and a Recommended Dietary Allowance; energy for a sedentary man is **2110 kcal** and a sedentary woman **1660 kcal**, rising to 2710 and 2130 kcal for moderate work.",
+        "**Pregnancy adds 350 kcal** per day in the second and third trimesters and lactation adds **600 kcal** for the first six months and 520 kcal thereafter; protein RDA is 0.83 g/kg (54 g for the reference man, 46 g for the reference woman) with an extra 9.5-22 g in pregnancy by trimester.",
+        "Iron RDA is **19 mg for men, 29 mg for women, 27 mg in pregnancy** and 23 mg in lactation; calcium 1000 mg for adults and 1200 mg in lactation; folate 300 mcg in men, 220 mcg in women and 570 mcg in pregnancy; iodine 140 mcg in adults and 220 mcg in pregnancy; vitamin A about 1000 mcg RAE for men and 840 mcg for women.",
+        "The **ICMR-NIN Dietary Guidelines for Indians (2024)** give 17 guidelines and the My Plate model for 2000 kcal: cereals and millets no more than 45% of energy, pulses and eggs 14-15%, at least 400 g of vegetables and fruit, visible fat 27 g, **salt under 5 g** and free sugars under 5% of energy, with a warning against ultra-processed food and protein supplements.",
+        "A **balanced diet** provides all nutrients in adequate amounts and proportion, with a small safety margin, and the Indian answer describes it in terms of cereal-pulse combinations (the amino acid complementation of dal and rice), green leafy vegetables, milk or curd, and fruit, adjusted for region and income.",
+        "Nutritional anaemia cut-offs (WHO 2011, used by AMB): haemoglobin below 11 g/dL in children 6-59 months and in pregnancy, below 11.5 in children 5-11, below 12 in adolescents 12-14 and non-pregnant women, below 13 in men; **severe anaemia is below 7 g/dL** in pregnancy and children and below 8 in other adults.",
+      ],
+    },
+    {
+      heading: "Managing the malnourished child: facility and community",
+      points: [
+        "Every child with SAM is examined for **complications** - bilateral oedema, failed appetite test, danger signs (lethargy, convulsions, inability to feed), pneumonia, severe dehydration, hypothermia, hypoglycaemia, severe anaemia - and any one of these means admission to a **Nutrition Rehabilitation Centre (NRC)** under the MoHFW facility-based care guidelines (2011).",
+        "The WHO **ten steps** in the stabilisation phase: treat or prevent hypoglycaemia, hypothermia and dehydration (ReSoMal, not standard ORS), correct electrolyte imbalance, treat infection with antibiotics for all (amoxicillin if uncomplicated; ampicillin and gentamicin if admitted), give micronutrients (vitamin A, zinc, folic acid, but **iron only after the child is gaining weight**), start cautious feeding with **F-75** (75 kcal/100 mL), then in the rehabilitation phase catch-up growth with **F-100** (100 kcal/100 mL, 150-220 kcal/kg/day), sensory stimulation and preparation for follow-up.",
+        "The **Protocol for Management of Malnutrition in Children (MoWCD, October 2023)** brings community management into the programme: a child with SAM who passes the appetite test and has no complications is managed at the anganwadi with **energy-dense nutritious food** or RUTF-equivalent, weekly follow-up by the ASHA and AWW, amoxicillin, deworming and counselling, and referred if weight is static for two consecutive visits.",
+        "Discharge from the NRC requires 15% weight gain or a weight-for-height above -2 SD, absence of oedema for two weeks, a good appetite and a mother trained in feeding, followed by four fortnightly visits; **refeeding syndrome** - hypophosphataemia, cardiac failure and death in the first week of over-enthusiastic feeding - is why F-75 starts at 100 kcal/kg/day and rises gradually.",
+        "Kwashiorkor presents with oedema, a flaky-paint dermatosis, sparse depigmented hair, hepatomegaly and apathy at a weight that may look normal; marasmus with severe wasting, an old-man face and no oedema; both are the same disease of inadequate food and repeated infection, and the presence of oedema, not the weight, decides the diagnosis of SAM.",
+        "Prevention is infant and young child feeding: initiation within one hour, **exclusive breastfeeding for six months**, complementary feeding from six months with continued breastfeeding to two years (the MAA programme, 2016), full immunisation, and the growth-monitoring visit where the anganwadi worker actually looks at the curve.",
+      ],
+    },
+    {
+      heading: "The nutrition programmes and their doses",
+      points: [
+        "**ICDS**, launched on 2 October 1975 and now delivered as **Saksham Anganwadi and Poshan 2.0** (2021-22 onwards, merging Anganwadi Services, the Scheme for Adolescent Girls and POSHAN Abhiyaan), provides six services through one anganwadi per 400-800 population: **supplementary nutrition, immunisation, health check-up, referral, pre-school non-formal education and nutrition and health education**, for children under six, pregnant and lactating women, and adolescent girls in aspirational districts.",
+        "Supplementary nutrition norms (revised 2017) are **500 kcal and 12-15 g protein for children 6-72 months, 800 kcal and 20-25 g protein for severely malnourished children, and 600 kcal and 18-20 g protein for pregnant and lactating women**, for 300 days a year; POSHAN Abhiyaan (8 March 2018) set targets of a 2 percentage point fall per year in stunting, underweight and low birth weight and 3 points in anaemia, with Poshan Maah every September.",
+        "**PM POSHAN** (September 2021, formerly the Mid-Day Meal Scheme of 1995) provides a hot cooked meal to children in Bal Vatika and classes I to VIII in government and aided schools: **450 kcal and 12 g protein at primary level, 700 kcal and 20 g protein at upper primary**, with fortified rice, school nutrition gardens and Tithi Bhojan.",
+        "**Anaemia Mukt Bharat (2018)** uses the **6 x 6 x 6 strategy**: six beneficiaries (children 6-59 months, 5-9 years, adolescents 10-19, women 20-49, pregnant and lactating women), six interventions (prophylactic IFA, deworming, year-round communication including delayed cord clamping, digital testing and treatment, mandatory fortification of salt with iron and rice with iron, and addressing malaria, haemoglobinopathies and fluorosis in endemic areas) and six institutional mechanisms including the AMB dashboard.",
+        "AMB doses: **6-59 months, 1 mL IFA syrup (20 mg elemental iron and 100 mcg folic acid) twice a week; 5-9 years, one pink tablet (45 mg and 400 mcg) weekly; 10-19 years, one blue tablet (60 mg and 500 mcg) weekly; women 20-49, one red tablet (60 mg and 500 mcg) weekly; pregnant women, one red tablet daily from the fourth month for 180 days and 180 days after delivery**; treatment of mild and moderate anaemia in pregnancy is two tablets daily, and severe anaemia gets intravenous iron or transfusion.",
+        "**National Deworming Day** (10 February and 10 August) gives albendazole to everyone aged 1-19 - **200 mg (half a tablet, crushed) at 1-2 years and 400 mg from 2 to 19 years** - and pregnant women receive 400 mg once in the second trimester; **vitamin A prophylaxis** is 1 lakh IU at 9 months with MR-1, then **2 lakh IU every six months from 16 months to 5 years - nine doses in all**; **NIDDCP** (1992, from the National Goitre Control Programme of 1962) mandates universal salt iodisation at **30 ppm at production and 15 ppm at the consumer**, with goitre in more than 5% of 6-12 year olds or a median urinary iodine below 100 mcg/L defining a deficient district.",
+      ],
+    },
+    {
+      heading: "Deficiency diseases and food toxins that appear in the paper",
+      points: [
+        "**Xerophthalmia** is a public health problem when night blindness exceeds 1% or Bitot's spots 0.5% in children aged 24-71 months; treat any case, and every child with measles or SAM, with **2 lakh IU vitamin A on day 1, day 2 and after 2-4 weeks** (1 lakh IU at 6-12 months, 50,000 IU under 6 months) - corneal xerosis or ulceration is an emergency because the cornea can melt in days.",
+        "Rickets (calcium and vitamin D; craniotabes, rachitic rosary, wrist widening), scurvy (vitamin C; bleeding gums, perifollicular haemorrhage), beriberi (thiamine; polished rice, neuropathy and cardiac failure), pellagra (niacin; maize and jowar diets, dermatitis-diarrhoea-dementia) and megaloblastic anaemia (folate and B12; vegetarian diets, pregnancy) are answered as cause, three signs, and the programme or food that prevents them.",
+        "**Lathyrism** - spastic paraplegia from **beta-oxalyl-amino-alanine (BOAA)** in Lathyrus sativus (khesari dal) eaten as more than a third of the diet for months - is prevented by the ban on khesari under the Food Safety and Standards Act, detoxification by parboiling or steeping in hot water, and vitamin C.",
+        "**Epidemic dropsy** - bilateral pitting oedema, diarrhoea, glaucoma and cardiac failure from **sanguinarine in Argemone mexicana oil** adulterating mustard oil - is detected by the nitric acid test and is an outbreak to be reported; **endemic ascites** follows pyrrolizidine alkaloids from Crotalaria seeds in millet; **aflatoxin** from Aspergillus flavus on stored groundnuts causes hepatitis and hepatocellular carcinoma; ergot on bajra causes ergotism.",
+        "**Fluorosis** occurs where drinking water contains more than 1.5 mg/L fluoride (dental mottling, then skeletal fluorosis with a stiff spine and genu valgum) and is addressed by the National Programme for Prevention and Control of Fluorosis (2008), alternative water sources and defluoridation by the Nalgonda technique.",
+        "**Food fortification** under the FSSAI standards (2018, the +F logo) covers wheat flour and rice with iron, folic acid and B12, edible oil and milk with vitamins A and D, and double fortified salt with iodine and iron; fortified rice is now supplied through PDS, ICDS and PM POSHAN as the AMB mandatory fortification arm.",
+      ],
+    },
+  ],
+  tables: [
+    {
+      heading: "Anthropometric definitions in the child under five (WHO 2006 standards)",
+      columns: ["Index", "Cut-off", "Term", "What it reflects"],
+      rows: [
+        ["Weight-for-height", "Below -2 SD / below -3 SD", "Wasting / severe wasting", "Acute undernutrition, current"],
+        ["Height-for-age", "Below -2 SD / below -3 SD", "Stunting / severe stunting", "Chronic undernutrition, first 1000 days"],
+        ["Weight-for-age", "Below -2 SD / below -3 SD", "Underweight / severe underweight", "Composite of acute and chronic"],
+        ["MUAC (6-59 months)", "Below 11.5 cm / 11.5-12.4 cm", "SAM / MAM", "Screening tool, age independent"],
+        ["Bilateral pitting oedema", "Present", "SAM (oedematous)", "Kwashiorkor regardless of weight"],
+        ["BMI-for-age (5-19 years)", "Above +1 SD / above +2 SD", "Overweight / obesity", "Adolescent overnutrition"],
+      ],
+    },
+    {
+      heading: "Anaemia Mukt Bharat prophylactic doses",
+      columns: ["Beneficiary", "Preparation", "Dose and frequency"],
+      rows: [
+        ["6-59 months", "IFA syrup, 20 mg iron + 100 mcg folic acid per mL", "1 mL twice a week"],
+        ["5-9 years", "Pink tablet, 45 mg iron + 400 mcg folic acid", "One tablet weekly"],
+        ["10-19 years", "Blue tablet, 60 mg iron + 500 mcg folic acid", "One tablet weekly"],
+        ["Women 20-49 years", "Red tablet, 60 mg iron + 500 mcg folic acid", "One tablet weekly"],
+        ["Pregnant women", "Red tablet, 60 mg iron + 500 mcg folic acid", "One tablet daily from 4th month for 180 days"],
+        ["Lactating women", "Red tablet, 60 mg iron + 500 mcg folic acid", "One tablet daily for 180 days after delivery"],
+        ["Deworming, 1-19 years", "Albendazole", "200 mg at 1-2 years, 400 mg from 2 years, twice a year"],
+      ],
+    },
+  ],
+  redFlags: [
+    "A child with SAM who has oedema, fails the appetite test, or has any danger sign, pneumonia, severe dehydration, hypothermia or hypoglycaemia needs admission to the NRC the same day, not community management.",
+    "Night blindness, Bitot's spots or any corneal haziness in a child is a vitamin A emergency: give 2 lakh IU immediately and refer, because corneal ulceration can perforate within days.",
+    "Haemoglobin below 7 g/dL in a pregnant woman, or any anaemia with breathlessness at rest or after 34 weeks, needs referral for intravenous iron or transfusion, not another month of oral tablets.",
+    "Bilateral pitting oedema with diarrhoea in several members of a family using a new batch of cooking oil is epidemic dropsy until proved otherwise - stop the oil and notify.",
+    "Weight loss or a falling growth curve in a child on supplementary feeding demands a search for tuberculosis, HIV and coeliac disease, not a larger ration.",
+    "Rapid refeeding of a severely malnourished child with breathlessness, oedema and a falling phosphate in the first week is refeeding syndrome - slow the feeds and refer.",
+  ],
+  pearls: [
+    "SAM is any one of weight-for-height below -3 SD, MUAC below 11.5 cm or bilateral pitting oedema; oedema alone makes the diagnosis whatever the weight.",
+    "Stunting is chronic, wasting is acute, underweight is both - and the first 1000 days decide the first.",
+    "Iron is withheld in the stabilisation phase of SAM and started only once the child is gaining weight on F-100.",
+    "AMB syrup twice a week for under-fives, pink weekly for 5-9, blue weekly for adolescents, red weekly for women and red daily in pregnancy.",
+    "Nine doses of vitamin A: 1 lakh IU at 9 months, then 2 lakh IU every six months to 5 years.",
+    "Salt must carry 30 ppm iodine at production and 15 ppm at the consumer; goitre in more than 5% of schoolchildren defines an endemic district.",
+  ],
+  theory: [
+    {
+      id: "preventive-nutrition-programmes-t1",
+      paper: "I",
+      kind: "long",
+      marks: 10,
+      minutes: 20,
+      frequency: "common",
+      question:
+        "Describe the major nutritional problems of India with their current magnitude, and discuss the national programmes that address them, including the role of the family physician.",
+      openingLines: [
+        "India's nutritional problems are a double burden: protein-energy malnutrition and micronutrient deficiencies - iron, vitamin A and iodine - in children and women, alongside rising overweight and diet-related non-communicable disease in adults.",
+        "NFHS-5 (2019-21) puts stunting at 35.5%, wasting at 19.3% and underweight at 32.1% in children under five, anaemia at 67.1% in children and 57% in women, and overweight or obesity at about 23-24% of adults.",
+      ],
+      answer: [
+        {
+          heading: "1. Protein-energy malnutrition",
+          points: [
+            "Magnitude: stunting 35.5%, wasting 19.3%, severe wasting 7.7%, underweight 32.1%, low birth weight about 18% (NFHS-5); only 11.3% of children 6-23 months get a minimum acceptable diet.",
+            "Causes: inadequate complementary feeding, repeated infection, maternal undernutrition and anaemia, poor sanitation, poverty and low maternal education.",
+            "Programmes: Saksham Anganwadi and Poshan 2.0 (ICDS six services, supplementary nutrition 500 kcal/12-15 g protein, 800 kcal/20-25 g for the severely malnourished), PM POSHAN in schools (450/700 kcal), MAA for breastfeeding, NRCs for complicated SAM and the 2023 community management protocol.",
+          ],
+        },
+        {
+          heading: "2. Nutritional anaemia",
+          points: [
+            "Magnitude: 67.1% of children 6-59 months, 57% of women 15-49, 52.2% of pregnant women (NFHS-5, 2019-21).",
+            "Programme: Anaemia Mukt Bharat (2018) with the 6 x 6 x 6 strategy - prophylactic IFA by age group, biannual deworming, fortification, digital haemoglobin testing and treatment, and control of malaria and haemoglobinopathies.",
+          ],
+        },
+        {
+          heading: "3. Vitamin A deficiency",
+          points: [
+            "Xerophthalmia is now uncommon clinically but subclinical deficiency persists; a public health problem if night blindness exceeds 1% in 24-71 month olds.",
+            "Programme: nine prophylactic doses under the UIP (1 lakh IU at 9 months, 2 lakh IU six-monthly to 5 years), treatment doses for measles, SAM and xerophthalmia, and fortification of oil and milk.",
+          ],
+        },
+        {
+          heading: "4. Iodine deficiency disorders",
+          points: [
+            "Goitre, cretinism, and loss of IQ; over 200 districts were endemic historically.",
+            "Programme: NIDDCP (1992) - universal salt iodisation (30 ppm production, 15 ppm consumer), ban on non-iodised salt for edible use, monitoring with salt testing kits and urinary iodine surveys; 94.3% of households now use iodised salt.",
+          ],
+        },
+        {
+          heading: "5. Overnutrition and other problems",
+          points: [
+            "Overweight in 24% of women and 22.9% of men; addressed through NP-NCD screening at 30 years, the Eat Right India movement, the 2024 NIN Dietary Guidelines, and taxation and labelling of ultra-processed food.",
+            "Fluorosis (NPPCF, 2008), lathyrism and epidemic dropsy (food safety enforcement under FSSAI), and food adulteration.",
+          ],
+        },
+        {
+          heading: "6. Role of the family physician",
+          points: [
+            "Growth monitoring and MUAC at every child contact, MCP card review, correction of feeding practices, IFA and deworming, vitamin A with vaccination, screening of pregnant women for anaemia and gestational diabetes, and referral of complicated SAM to the NRC.",
+            "Community: supporting the anganwadi worker, school health under RBSK, Poshan Maah activities, salt testing, and reporting of clusters of oedema or blindness as outbreaks.",
+          ],
+        },
+      ],
+      mustDraw: [
+        "A table of problem against magnitude (dated) against programme against key intervention.",
+        "The UNICEF conceptual framework of malnutrition: immediate (diet, disease), underlying (food, care, health environment) and basic causes.",
+      ],
+      markSplit: [
+        { part: "Magnitude of each problem with dated sources", marks: 3 },
+        { part: "Protein-energy malnutrition and its programmes", marks: 2 },
+        { part: "Anaemia, vitamin A and iodine programmes with doses", marks: 3 },
+        { part: "Overnutrition and other problems", marks: 1 },
+        { part: "Role of the family physician", marks: 1 },
+      ],
+      keywords: ["NFHS-5", "stunting", "wasting", "Anaemia Mukt Bharat", "Poshan 2.0", "PM POSHAN", "NIDDCP", "vitamin A"],
+    },
+    {
+      id: "preventive-nutrition-programmes-t2",
+      paper: "IV",
+      kind: "short-note",
+      marks: 5,
+      minutes: 8,
+      frequency: "common",
+      question: "Write a short note on Anaemia Mukt Bharat.",
+      openingLines: [
+        "Anaemia Mukt Bharat, launched in 2018 under the POSHAN Abhiyaan, is the national strategy to reduce anaemia by three percentage points a year among children, adolescents and women of reproductive age through a life-cycle approach.",
+        "It rests on the 6 x 6 x 6 strategy - six beneficiary groups, six interventions and six institutional mechanisms - and is monitored on a dedicated dashboard.",
+      ],
+      answer: [
+        {
+          heading: "Six beneficiaries",
+          points: ["Children 6-59 months; children 5-9 years; adolescents 10-19 years; women of reproductive age 20-49 years; pregnant women; lactating women."],
+        },
+        {
+          heading: "Six interventions",
+          points: [
+            "Prophylactic iron-folic acid: syrup 1 mL twice weekly at 6-59 months; pink tablet weekly at 5-9 years; blue tablet weekly at 10-19 years; red tablet weekly for women 20-49 and daily for 180 days in pregnancy and 180 days after delivery.",
+            "Deworming: albendazole twice a year on National Deworming Day for 1-19 years and once in the second trimester of pregnancy.",
+            "Intensified year-round communication including delayed cord clamping, dietary diversity and compliance.",
+            "Testing with digital haemoglobinometers and treatment - two IFA tablets daily for mild and moderate anaemia in pregnancy, intravenous iron or transfusion for severe anaemia.",
+            "Mandatory fortification: double fortified salt, fortified rice and wheat flour through PDS, ICDS and PM POSHAN.",
+            "Addressing non-nutritional causes in endemic pockets: malaria, haemoglobinopathies, fluorosis.",
+          ],
+        },
+        {
+          heading: "Six institutional mechanisms",
+          points: [
+            "Intra-ministerial coordination, a National Anaemia Mukt Bharat Unit, a National Centre of Excellence and Advanced Research on Anaemia Control, convergence with other ministries, strengthened supply chain, and the AMB dashboard and digital portal.",
+          ],
+        },
+        {
+          heading: "Cut-offs and monitoring",
+          points: [
+            "Anaemia: haemoglobin below 11 g/dL in under-fives and pregnancy, below 12 in non-pregnant women, below 13 in men; severe below 7 in pregnancy.",
+            "Coverage indicators reported on HMIS; NFHS-5 (2019-21) showed anaemia in 57% of women and 67.1% of children, the baseline against which the programme is judged.",
+          ],
+        },
+      ],
+      mustDraw: ["A 6 x 6 x 6 grid: beneficiaries, interventions and institutional mechanisms, with the IFA dose beside each beneficiary."],
+      markSplit: [
+        { part: "Launch, aim and the 6 x 6 x 6 frame", marks: 1 },
+        { part: "Beneficiaries with correct IFA doses", marks: 2 },
+        { part: "Other interventions and mechanisms", marks: 1 },
+        { part: "Cut-offs and current magnitude", marks: 1 },
+      ],
+      keywords: ["Anaemia Mukt Bharat", "IFA", "6x6x6", "deworming", "fortification", "haemoglobin cut-off"],
+    },
+  ],
+  mcqs: [
+    {
+      id: "preventive-nutrition-programmes-q1",
+      stem: "A 30-month-old girl weighs 8.0 kg and is 82 cm tall. The WHO median weight for a girl of 82 cm is 10.2 kg with a standard deviation of 1.0 kg. Her MUAC is 12.0 cm and she has no oedema. How is she classified?",
+      options: ["Normal nutrition", "Moderate acute malnutrition", "Severe acute malnutrition", "Severe stunting", "Underweight only"],
+      difficulty: "moderate",
+      answer: 1,
+      explanation:
+        "Weight-for-height Z-score = (observed - median)/SD = (8.0 - 10.2)/1.0 = -2.2, which lies between -3 and -2 SD, and her MUAC of 12.0 cm lies in the 11.5-12.4 cm band; with no oedema, both criteria place her in moderate acute malnutrition. SAM would require a Z-score below -3, MUAC below 11.5 cm or oedema, none of which she has. Stunting cannot be judged because height-for-age has not been given, and weight-for-age alone is not asked. She is managed at the anganwadi with supplementary nutrition, deworming, IFA, feeding counselling and fortnightly weight checks, with referral if she fails to gain.",
+    },
+    {
+      id: "preventive-nutrition-programmes-q2",
+      stem: "A 34-year-old man weighs 62 kg and is 160 cm tall. According to the Asian-Indian consensus cut-offs his BMI category is:",
+      options: ["Underweight", "Normal", "Overweight", "Obese", "Cannot be classified without waist circumference"],
+      difficulty: "easy",
+      answer: 2,
+      explanation:
+        "BMI = 62 / (1.6 x 1.6) = 62 / 2.56 = 24.2 kg/m2. By the WHO international classification this is normal (18.5-24.9), but the Asian-Indian consensus (2009), which the NP-NCD guidelines follow, sets overweight at 23-24.9 and obesity at 25 or more because Indians develop diabetes and coronary disease at lower BMI and higher body fat. He is therefore overweight and qualifies for lifestyle counselling and glucose testing. Waist circumference (abdominal obesity at 90 cm or more in men) adds risk information but is not needed to classify BMI.",
+    },
+    {
+      id: "preventive-nutrition-programmes-q3",
+      stem: "Under the Universal Immunisation Programme and the vitamin A prophylaxis schedule, the total number of vitamin A doses a child should receive by the age of 5 years is:",
+      options: ["5", "7", "9", "10", "12"],
+      difficulty: "easy",
+      answer: 2,
+      explanation:
+        "The first dose of 1 lakh IU is given at 9 months with the first measles-rubella vaccine; the second dose of 2 lakh IU is given at 16-18 months with MR-2 and the DPT booster, and thereafter 2 lakh IU every six months up to 5 years - doses 3 to 9 at 24, 30, 36, 42, 48, 54 and 60 months. That makes nine doses in all, of which the first eight fall before the fifth birthday and the ninth at it. The total prophylactic amount is 17 lakh IU. Therapeutic dosing for xerophthalmia, measles and SAM is separate: 2 lakh IU on day 1, day 2 and 2-4 weeks later, halved between 6 and 12 months.",
+    },
+    {
+      id: "preventive-nutrition-programmes-q4",
+      stem: "An 18-month-old child is brought to the anganwadi on National Deworming Day. The correct dose of albendazole is:",
+      options: ["100 mg suspension", "200 mg (half tablet, crushed)", "400 mg (one tablet, crushed)", "400 mg twice daily for 3 days", "Deworming is not given below 2 years"],
+      difficulty: "easy",
+      answer: 1,
+      explanation:
+        "National Deworming Day (10 February and 10 August) covers all children and adolescents aged 1-19 years. Children aged 1-2 years receive 200 mg of albendazole - half of the 400 mg chewable tablet, crushed and mixed with water - and those aged 2-19 years receive the full 400 mg tablet, chewed. Deworming below one year is not part of the programme. The three-day regimen is for neurocysticercosis or hydatid disease, not intestinal helminths. Pregnant women receive a single 400 mg dose in the second trimester under Anaemia Mukt Bharat.",
+    },
+    {
+      id: "preventive-nutrition-programmes-q5",
+      stem: "A pregnant woman at 22 weeks has a haemoglobin of 9.2 g/dL on a digital haemoglobinometer at the sub-centre. Under Anaemia Mukt Bharat the correct management is:",
+      options: [
+        "One IFA tablet (60 mg iron) daily for 180 days",
+        "Two IFA tablets (120 mg iron) daily, recheck haemoglobin after a month, then continue prophylaxis",
+        "Intravenous iron sucrose",
+        "Blood transfusion",
+        "Weekly IFA as for non-pregnant women",
+      ],
+      difficulty: "moderate",
+      answer: 1,
+      explanation:
+        "A haemoglobin of 9.2 g/dL in pregnancy is moderate anaemia (7-9.9 g/dL; mild is 10-10.9). AMB directs two IFA tablets a day, each 60 mg elemental iron and 500 mcg folic acid, with deworming, dietary advice and a repeat haemoglobin after four weeks; once the haemoglobin normalises she continues one tablet daily to complete the 180-day prophylaxis and another 180 days after delivery. One tablet daily is the prophylactic dose for a non-anaemic woman. Intravenous iron is used for severe anaemia (below 7 g/dL), for intolerance or non-response to oral iron, or when there is too little time before delivery; transfusion is reserved for haemoglobin below 5 g/dL, or below 7 near term or with cardiac failure.",
+    },
+    {
+      id: "preventive-nutrition-programmes-q6",
+      stem: "Several members of a household develop bilateral pitting oedema of the legs, diarrhoea and breathlessness two weeks after buying mustard oil from a new vendor; one has raised intraocular pressure. The toxin responsible is:",
+      options: ["Beta-oxalyl-amino-alanine", "Sanguinarine", "Aflatoxin", "Pyrrolizidine alkaloids", "Ergotamine"],
+      difficulty: "easy",
+      answer: 1,
+      explanation:
+        "This is epidemic dropsy, caused by sanguinarine in the seed oil of Argemone mexicana used to adulterate mustard oil; it produces capillary dilatation and leak with oedema, diarrhoea, glaucoma and high-output cardiac failure, and clusters in households sharing the oil. Beta-oxalyl-amino-alanine in khesari dal causes lathyrism (spastic paraplegia), aflatoxin from mouldy groundnuts causes hepatitis and hepatocellular carcinoma, pyrrolizidine alkaloids from Crotalaria cause endemic ascites through hepatic veno-occlusive disease, and ergot on bajra causes ergotism with gangrene and convulsions. The oil is tested with the nitric acid test, withdrawn and the outbreak notified to the food safety officer.",
+    },
+  ],
+  cards: [
+    {
+      id: "preventive-nutrition-programmes-c1",
+      front: "Criteria for severe acute malnutrition, 6-59 months.",
+      back: "Any one of: weight-for-height below -3 SD; MUAC below 11.5 cm; bilateral pitting oedema. MAM: -3 to -2 SD or MUAC 11.5-12.4 cm without oedema.",
+    },
+    {
+      id: "preventive-nutrition-programmes-c2",
+      front: "NFHS-5 (2019-21) child undernutrition figures.",
+      back: "Stunting 35.5%, wasting 19.3%, severe wasting 7.7%, underweight 32.1%; anaemia 67.1% in 6-59 months, 57% in women 15-49, 52.2% in pregnancy.",
+    },
+    {
+      id: "preventive-nutrition-programmes-c3",
+      front: "Six services of ICDS and the supplementary nutrition norms.",
+      back: "Supplementary nutrition, immunisation, health check-up, referral, pre-school education, nutrition and health education. 500 kcal/12-15 g protein for 6-72 months; 800 kcal/20-25 g for severely malnourished; 600 kcal/18-20 g for pregnant and lactating women.",
+    },
+    {
+      id: "preventive-nutrition-programmes-c4",
+      front: "PM POSHAN energy and protein norms.",
+      back: "Primary (Bal Vatika to class V): 450 kcal, 12 g protein. Upper primary (VI-VIII): 700 kcal, 20 g protein. Replaced the Mid-Day Meal Scheme in September 2021.",
+    },
+    {
+      id: "preventive-nutrition-programmes-c5",
+      front: "Ten steps of SAM management - the two feeding formulas.",
+      back: "Stabilisation: F-75 (75 kcal/100 mL) at 100 kcal/kg/day; rehabilitation: F-100 (100 kcal/100 mL) at 150-220 kcal/kg/day. Iron only after weight gain begins; ReSoMal not standard ORS for dehydration.",
+    },
+    {
+      id: "preventive-nutrition-programmes-c6",
+      front: "ICMR-NIN 2020: reference adult and energy for sedentary work.",
+      back: "Reference man 65 kg, woman 55 kg. Sedentary man 2110 kcal, woman 1660 kcal. Pregnancy +350 kcal (2nd and 3rd trimester); lactation +600 kcal (0-6 months), +520 (6-12 months). Protein 0.83 g/kg.",
+    },
+    {
+      id: "preventive-nutrition-programmes-c7",
+      front: "Vitamin A: prophylactic schedule and treatment dose.",
+      back: "1 lakh IU at 9 months, then 2 lakh IU six-monthly from 16 months to 5 years (nine doses). Treatment: 2 lakh IU day 1, day 2 and 2-4 weeks later; half at 6-12 months; quarter under 6 months.",
+    },
+    {
+      id: "preventive-nutrition-programmes-c8",
+      front: "Iodised salt standards and the definition of an endemic district.",
+      back: "30 ppm iodine at production, 15 ppm at the consumer level. Endemic: goitre in more than 5% of children aged 6-12 years or median urinary iodine below 100 mcg/L.",
+    },
+  ],
+  references: [
+    "Park's Textbook of Preventive and Social Medicine, 27th edition, 2023 - nutrition and health",
+    "ICMR-NIN Nutrient Requirements for Indians: Recommended Dietary Allowances and Estimated Average Requirements, 2020; ICMR-NIN Dietary Guidelines for Indians, 2024",
+    "National Family Health Survey-5 (2019-21), India report, IIPS and MoHFW, 2022",
+    "Anaemia Mukt Bharat Operational Guidelines, MoHFW, 2018",
+    "Protocol for Management of Malnutrition in Children, Ministry of Women and Child Development, October 2023; Operational Guidelines on Facility Based Management of Children with Severe Acute Malnutrition, MoHFW, 2011",
+    "Mission Saksham Anganwadi and Poshan 2.0 Guidelines, Ministry of Women and Child Development, 2022; PM POSHAN Scheme Guidelines, Ministry of Education, 2021",
+    "WHO Guideline on the prevention and management of wasting and nutritional oedema in infants and children, 2023",
+  ],
+});
+
+topics.push({
+  id: "preventive-water-sanitation-vector",
+  title: "Water, sanitation, waste and vector control",
+  oneLiner:
+    "Safe water is water free of pathogens and harmful chemicals - achieved on a large scale by storage, filtration and chlorination to a free residual of 0.5 mg/L after one hour, and in the home by boiling, chlorine tablets or filters - and the same environmental logic runs through sanitary latrines, biomedical waste segregation and the integrated control of the mosquitoes, flies and sandflies that carry malaria, dengue, JE, filaria and kala-azar.",
+  frequency: "common",
+  keywords: [
+    "safe water",
+    "wholesome water",
+    "chlorination",
+    "residual chlorine",
+    "break point chlorination",
+    "Horrock's apparatus",
+    "bleaching powder",
+    "slow sand filter",
+    "rapid sand filter",
+    "orthotolidine test",
+    "IS 10500",
+    "fluoride",
+    "arsenic",
+    "Jal Jeevan Mission",
+    "Swachh Bharat Mission",
+    "sanitary latrine",
+    "twin pit latrine",
+    "septic tank",
+    "biomedical waste",
+    "colour coding",
+    "Aedes aegypti",
+    "Anopheles culicifacies",
+    "Breteau index",
+    "house index",
+    "temephos",
+    "indoor residual spray",
+    "LLIN",
+    "API",
+    "ABER",
+    "NCVBDC",
+    "integrated vector management",
+    "kala-azar elimination",
+    "lymphatic filariasis MDA",
+  ],
+  sections: [
+    {
+      heading: "Safe water: standards and the burden",
+      points: [
+        "**Safe and wholesome water** is free from pathogenic organisms and harmful chemicals, pleasant to taste, free from colour and odour, and usable for domestic purposes; the microbiological standard is **zero E. coli or thermotolerant coliforms in any 100 mL sample** (WHO Guidelines for Drinking-water Quality, 4th edition, 2011, updated 2022; BIS IS 10500:2012).",
+        "Key Indian chemical limits (IS 10500:2012, acceptable and permissible): **fluoride 1.0 and 1.5 mg/L**, **nitrate 45 mg/L with no relaxation**, **arsenic 0.01 mg/L**, iron 0.3 mg/L, total dissolved solids 500 and 2000 mg/L, hardness 200 and 600 mg/L as calcium carbonate, pH 6.5-8.5, turbidity 1 and 5 NTU, and **residual chlorine at least 0.2 mg/L at the consumer's tap**.",
+        "Water-borne infections are viral (hepatitis A and E, rotavirus, polio), bacterial (typhoid, cholera, shigella, E. coli), protozoal (giardia, amoebiasis, cryptosporidium) and helminthic (guinea worm - India certified free in February 2000); chemical hazards are **fluorosis** across Rajasthan, Telangana and Andhra Pradesh, **arsenicosis** in the Gangetic belt (raindrop pigmentation, keratosis, skin and bladder cancer) and infant methaemoglobinaemia from nitrate.",
+        "The **Jal Jeevan Mission** (August 2019) aims at a functional household tap connection delivering **55 litres per capita per day** to every rural home; coverage rose from 17% of rural households in 2019 to about 80% by early 2025, and the family physician's contribution is to ask about the source and storage of water in every diarrhoea and jaundice consultation.",
+        "**Hardness** - temporary from bicarbonates (removed by boiling) and permanent from sulphates and chlorides of calcium and magnesium (removed by ion exchange) - matters for soap consumption and scale, not health; the epidemiological interest is the inverse association between water hardness and cardiovascular mortality.",
+        "A **sanitary well** is at least 15 m from any latrine or drain, lined to 3 m, with a parapet 70-75 cm high, a concrete platform 1 m wide sloping to a drain, a cover and a hand pump; the sanitary survey of the source is the first step in any water-borne outbreak.",
+      ],
+    },
+    {
+      heading: "Purification on a large scale",
+      points: [
+        "**Storage** in reservoirs allows sedimentation and natural purification - about 90% of bacteria die within 5-7 days - but storage beyond 10-14 days encourages algal growth, so the optimum is short.",
+        "The **slow sand filter** is a bed of fine sand (effective size 0.2-0.3 mm) about 1 m deep under 1-1.5 m of supernatant water, filtering at **0.1-0.4 m3/m2/hour**; its purifying power is the **vital layer (Schmutzdecke)**, a slimy zoogleal film of algae, bacteria and diatoms that forms over 2-3 weeks and removes 99.9-99.99% of bacteria, and it is cleaned by scraping the top 1-2 cm when the loss of head rises.",
+        "The **rapid sand filter** first coagulates the water with alum (5-40 mg/L) by rapid mixing, then flocculates it for about 30 minutes and settles it for 2-6 hours before filtering through coarser sand (effective size 0.4-0.7 mm) at **5-15 m3/m2/hour**; it is cleaned by back-washing, occupies a fraction of the land and is the filter of every Indian city, but it removes fewer bacteria and depends on chlorination that follows.",
+        "**Chlorination** kills bacteria and most viruses but not spores, cysts or helminth ova; chlorine dissolves to hypochlorous acid (the active form, best below pH 7), the **chlorine demand** is the difference between the amount applied and the free residual after the contact period, and the standard is a **free residual chlorine of 0.5 mg/L after one hour of contact** (1 mg/L when viral disease such as hepatitis is feared).",
+        "**Break point chlorination** is the dose at which all combined chlorine (chloramines) has been oxidised and free chlorine begins to appear; **superchlorination followed by dechlorination** (with sodium thiosulphate) is used in epidemics and for badly polluted water; residual chlorine is measured with the **orthotolidine (OT) test**, and the orthotolidine-arsenite (OTA) test separates free from combined chlorine.",
+        "Other large-scale methods are ozonation, ultraviolet irradiation and, for high-TDS, fluoride and arsenic problems, reverse osmosis, activated alumina and the Nalgonda technique (alum and lime) for defluoridation; none leaves a residual, which is why chlorine remains the disinfectant of the distribution system.",
+      ],
+    },
+    {
+      heading: "Purification in the home and disinfection of a well",
+      points: [
+        "**Boiling** at a rolling boil kills all bacteria, spores, cysts and ova and removes temporary hardness, and is the safest household method; the water must be stored in the vessel it was boiled in, covered, and drawn with a ladle or tap, because recontamination in storage is the commonest failure.",
+        "**Chemical disinfection:** bleaching powder (calcium hypochlorite, **about 33% available chlorine when fresh**, deteriorating in light and moisture), a 5% stock chlorine solution, **sodium dichloroisocyanurate (NaDCC) tablets - one 0.5 g tablet for 20 litres**, or 2% tincture of iodine at two drops per litre for 20-30 minutes; potassium permanganate is no longer recommended because it is a poor disinfectant that changes colour and taste.",
+        "**Filtration** in the home uses ceramic candle filters (Pasteur-Chamberland, Berkefeld, Katadyn silver-impregnated), which remove bacteria but not viruses and need scrubbing and boiling of the candle weekly; **SODIS** (six hours of full sunlight in a clear PET bottle) and ultraviolet units are effective for small volumes; reverse osmosis units remove chemicals but waste water and strip minerals.",
+        "**Disinfection of a well** uses **Horrock's apparatus** - six white cups, one black cup, two pipettes, starch-iodide indicator and a 2 g bleaching powder measure: a stock solution is made from 2 g of bleaching powder in the black cup, and the first white cup showing a distinct blue colour after 30 minutes gives the chlorine demand; **each cup number means 2.5 g of bleaching powder per 455 litres** of well water.",
+        "The volume of a circular well is **pi x radius squared x depth of water** (in metres, giving cubic metres; multiply by 1000 for litres); the calculated bleaching powder is made into a paste, dissolved in a bucket, the lime allowed to settle, the supernatant poured into the well, the water agitated, and the well left for **one hour of contact** before use, preferably at night, aiming at a free residual of 0.5 mg/L.",
+        "In an epidemic, chlorinate every source in the area, repeat well disinfection daily, distribute chlorine tablets and the message that water must be drawn with a long-handled ladle and stored in a narrow-mouthed covered vessel; a chlorinated well and a dirty storage pot still gives cholera.",
+      ],
+    },
+    {
+      heading: "Sanitation: latrines, sewage and solid waste",
+      points: [
+        "The **sanitation barrier** interrupts the faeco-oral routes - water, fingers, flies, food, soil - and a **sanitary latrine** is one in which excreta does not contaminate surface or ground water, is not accessible to flies or animals, is not handled fresh, and causes no nuisance from odour or unsightliness.",
+        "The **twin-pit pour-flush latrine** (the Sulabh design) is the rural standard: a squatting pan with a 20 mm water seal and 25-30 degree slope, a Y-junction to two leach pits used alternately, each filling in about three years and resting for two, after which the contents are safe compost; the pit is at least 15 m from a well and the design needs 1-2 litres of water per flush.",
+        "The **septic tank** serves the individual urban house: 20-30 litres capacity per person, retention time 24 hours, anaerobic digestion in the tank and aerobic purification of the effluent in a soak pit or drain field; disinfectants must never be poured in, and desludging is needed every one to three years.",
+        "Municipal **sewage treatment** runs through primary (screening, grit chamber, primary sedimentation), secondary (trickling filter or activated sludge, then secondary sedimentation) and sludge digestion stages; treated effluent should have a **biochemical oxygen demand below 20 mg/L and suspended solids below 30 mg/L** (the Royal Commission standard) before discharge to a river; oxidation ponds are the low-cost alternative for small towns.",
+        "**Swachh Bharat Mission** (2 October 2014) declared all villages open-defecation free on 2 October 2019, and **SBM-Grameen Phase II (2020-21 to 2024-25)** targets ODF Plus - solid and liquid waste management, greywater, faecal sludge and plastic; NFHS-5 (2019-21) still found about 19% of households with no toilet facility, so the physician asks.",
+        "**Solid waste** under the Solid Waste Management Rules, 2016 is segregated at source into wet (biodegradable), dry (recyclable) and domestic hazardous streams, with composting, sanitary landfill (controlled tipping) and incineration as the disposal options; composting of refuse with night soil by the Bangalore (anaerobic) or Indore (aerobic) method is the classical rural answer.",
+      ],
+    },
+    {
+      heading: "Biomedical waste in the clinic",
+      points: [
+        "The **Bio-Medical Waste Management Rules, 2016** (amended 2018 and 2019) apply to every generator including single-doctor clinics and vaccination camps, require segregation at the point of generation into **four colour-coded streams**, storage for no more than **48 hours**, bar-coded bags, authorisation from the State Pollution Control Board, an annual report by 30 June, and transport to a Common Bio-medical Waste Treatment Facility within 75 km.",
+        "**Yellow:** human and animal anatomical waste, soiled dressings and cotton, expired and discarded medicines, chemical waste and liquid, discarded linen and pre-treated microbiology waste - for incineration, plasma pyrolysis or deep burial; **red:** contaminated recyclable plastics - IV sets, tubing, catheters, syringes without needles, gloves - for autoclaving or microwaving and recycling.",
+        "**White (translucent, puncture-proof):** all sharps including needles, needles with fixed syringes, scalpels and blades - autoclave or dry heat sterilisation, then shredding and recycling of the metal; **blue (cardboard box):** glassware, vials, ampoules and metallic implants - disinfection and recycling; general non-infectious waste goes to the municipal green or black bin under the solid waste rules.",
+        "Needles are cut with a hub cutter or needle destroyer at the point of use and never recapped; every health worker is immunised against **hepatitis B and tetanus**, and a **needle-stick injury** is washed, reported and managed with hepatitis B immunoglobulin or vaccine and HIV post-exposure prophylaxis within 72 hours according to the source.",
+        "The 2018 amendment set a phase-out of chlorinated plastic bags and gloves, mandatory pre-treatment of laboratory and blood waste on site, and bar-coding; the 2019 amendment extended the rules explicitly to all healthcare activity whatever the bed strength.",
+        "For the paper, the four colours with two examples and the treatment for each is a reliable five-mark answer; the examiner's follow-up is always where the placenta goes (yellow), where the vaccine vial goes (blue if glass, red if plastic, and the vaccine itself after inactivation is yellow) and how long waste may be stored (48 hours).",
+      ],
+    },
+    {
+      heading: "Vectors and their control under NCVBDC",
+      points: [
+        "The **National Center for Vector Borne Diseases Control (NCVBDC, renamed from NVBDCP in 2023)** covers malaria, dengue, chikungunya, Japanese encephalitis, kala-azar and lymphatic filariasis; the vectors are **Anopheles culicifacies** (rural malaria, breeding in clean still water, resting on cattle-shed walls) and **Anopheles stephensi** (urban malaria, wells and tanks), **Aedes aegypti** (dengue, chikungunya, Zika - a day-biting container breeder whose eggs resist desiccation for a year and which flies no more than 100-400 m), **Culex tritaeniorhynchus** (JE, rice fields, pig amplifier) and **Culex quinquefasciatus** (filaria, polluted water), and **Phlebotomus argentipes** (kala-azar, damp cracks in mud walls).",
+        "**Integrated vector management** (WHO, 2004) combines **environmental** control (source reduction, drainage, filling, weekly dry day, covering containers), **biological** control (larvivorous fish Gambusia affinis and Poecilia reticulata, Bacillus thuringiensis israelensis), **chemical** control (larvicides and adulticides), **personal protection** (nets, repellents, screening) and **legislation** (building by-laws that penalise Aedes breeding).",
+        "Anti-larval chemicals: **temephos (Abate) at 1 mg/L (1 ppm)** is the only larvicide safe for drinking-water containers, with mineral oil and Paris green for non-potable collections; anti-adult measures are **indoor residual spraying - DDT 50% wettable powder at 1 g/m2 for two rounds a year, malathion 25% at 2 g/m2 for three rounds, alphacypermethrin 5% at 25 mg/m2 for two rounds** - each round protecting for 10-12 weeks, **long-lasting insecticidal nets** at one net per two persons, and **space spraying** (pyrethrum 0.1% indoors, malathion fogging outdoors) reserved for outbreaks.",
+        "Malaria surveillance uses the **annual blood examination rate (target at least 10% of the population)**, the **annual parasite incidence (API, cases per 1000 per year)** and the slide positivity rate; **API below 1** defines a district in the elimination phase, India's National Framework for Malaria Elimination (2016) and Strategic Plan 2023-27 aim at zero indigenous cases by 2027 and certification by 2030, and reported cases fell to about 2.3 lakh in 2023.",
+        "**Dengue entomological indices**: the **house index** (percentage of houses with Aedes larvae), the **container index** (percentage of water-holding containers positive) and the **Breteau index** (positive containers per 100 houses); a house index above 10 or a **Breteau index above 5** signals transmission risk and triggers source reduction, temephos and fogging within 24 hours, and 2.9 lakh dengue cases were reported in 2023.",
+        "**Kala-azar** elimination (below 1 case per 10,000 population at block level) was reached across all blocks in 2023 with single-dose liposomal amphotericin B and pyrethroid IRS; **lymphatic filariasis** uses annual mass drug administration with DEC 6 mg/kg plus albendazole 400 mg, or triple-drug IDA (ivermectin, DEC, albendazole) in selected districts since 2018, with night blood surveys between 8.30 pm and midnight, a microfilaria rate below 1% as the target and elimination by 2027; **JE** is prevented by two doses of vaccine at 9 and 16-24 months in endemic districts and adult campaigns in the highest-burden districts.",
+      ],
+    },
+  ],
+  tables: [
+    {
+      heading: "Slow against rapid sand filtration",
+      columns: ["Feature", "Slow sand filter", "Rapid sand filter"],
+      rows: [
+        ["Pre-treatment", "None (plain sedimentation)", "Coagulation with alum, flocculation, sedimentation"],
+        ["Sand effective size", "0.2-0.3 mm", "0.4-0.7 mm"],
+        ["Rate of filtration", "0.1-0.4 m3/m2/hour", "5-15 m3/m2/hour"],
+        ["Purifying mechanism", "Vital layer (Schmutzdecke) - biological", "Mechanical straining and adsorption on floc"],
+        ["Bacterial removal", "99.9-99.99%", "98-99%; relies on post-chlorination"],
+        ["Cleaning", "Scraping top 1-2 cm of sand every 1-2 months", "Back-washing daily"],
+        ["Land, cost, skill", "Large area, low cost, low skill", "Small area, high cost, skilled operation"],
+      ],
+    },
+    {
+      heading: "Biomedical Waste Management Rules, 2016: colour coding",
+      columns: ["Colour and container", "Contents", "Treatment and disposal"],
+      rows: [
+        ["Yellow bag", "Anatomical waste, soiled dressings, expired medicines, chemical waste, discarded linen, pre-treated lab waste", "Incineration, plasma pyrolysis or deep burial"],
+        ["Red bag", "Contaminated recyclable plastics - IV sets, tubing, catheters, gloves, syringes without needles", "Autoclave or microwave, then shredding and recycling"],
+        ["White translucent puncture-proof container", "Sharps - needles, fixed-needle syringes, scalpels, blades", "Autoclave or dry heat, then shredding and metal recycling"],
+        ["Blue cardboard box", "Glassware, vials, ampoules, metallic implants", "Disinfection (autoclave or hypochlorite) and recycling"],
+      ],
+    },
+    {
+      heading: "Malaria and dengue indicators the paper asks for",
+      columns: ["Indicator", "Formula", "Target or threshold"],
+      rows: [
+        ["Annual blood examination rate (ABER)", "Blood slides examined / population x 100", "At least 10%"],
+        ["Annual parasite incidence (API)", "Confirmed malaria cases / population x 1000", "Below 1 = elimination phase"],
+        ["Slide positivity rate (SPR)", "Positive slides / slides examined x 100", "Falling trend"],
+        ["House index", "Houses with Aedes larvae / houses inspected x 100", "Below 1 low risk, above 10 high risk"],
+        ["Container index", "Positive containers / containers inspected x 100", "Falling trend"],
+        ["Breteau index", "Positive containers / houses inspected x 100", "Above 5 = transmission risk"],
+      ],
+    },
+  ],
+  redFlags: [
+    "E. coli detected in a public water source, or free residual chlorine below 0.2 mg/L at the tap during a diarrhoea cluster, means the supply is unsafe now - issue a boil-water advisory and superchlorinate the same day.",
+    "A cluster of jaundice cases in one locality is hepatitis A or E from sewage-contaminated water until proved otherwise; test the source and report under IDSP before the second week of cases.",
+    "Infant methaemoglobinaemia (a blue baby on well water) is nitrate poisoning from a contaminated shallow well - stop the water and refer for methylene blue.",
+    "A Breteau index above 5 or a dengue case with warning signs in the area is the trigger for house-to-house source reduction within 24 hours, not the end of the season.",
+    "Fever with encephalopathy in a child in a rice-growing district with pigs nearby is JE until proved otherwise and is reportable as acute encephalitis syndrome within 24 hours.",
+    "A needle-stick injury in the clinic must be washed, reported and assessed for HIV post-exposure prophylaxis within 2 hours and never later than 72 hours, and for hepatitis B immunoglobulin within 24 hours.",
+  ],
+  pearls: [
+    "Free residual chlorine of 0.5 mg/L after one hour of contact is the standard; 1 mg/L when viral disease is feared; at least 0.2 mg/L at the consumer's tap.",
+    "Each Horrock's cup equals 2.5 g of bleaching powder per 455 litres; well volume is pi x r squared x depth in cubic metres, times 1000 for litres.",
+    "The vital layer belongs to the slow sand filter; coagulation and back-washing belong to the rapid sand filter.",
+    "Temephos at 1 ppm is the only larvicide for drinking-water containers; DDT is 1 g/m2 for two rounds, malathion 2 g/m2 for three.",
+    "API below 1 per 1000 means elimination phase; Breteau above 5 means dengue risk; microfilaria rate below 1% is the filaria target.",
+    "Yellow burns, red is recycled plastic, white is sharps, blue is glass - and nothing is stored beyond 48 hours.",
+  ],
+  theory: [
+    {
+      id: "preventive-water-sanitation-vector-t1",
+      paper: "I",
+      kind: "long",
+      marks: 10,
+      minutes: 20,
+      frequency: "common",
+      question:
+        "Describe the methods of purification of water on a small scale. How would you disinfect a village well with bleaching powder, and how would you confirm that the water is safe?",
+      openingLines: [
+        "Safe and wholesome water is free from pathogenic organisms and harmful chemicals, pleasant to taste and usable for domestic purposes, with zero E. coli in any 100 mL sample and a free residual chlorine of 0.5 mg/L after one hour of contact.",
+        "Small-scale purification means the methods available to a household, a school, a camp or a village well: boiling, chemical disinfection, filtration and, for a well, chlorination with bleaching powder after measuring the chlorine demand.",
+      ],
+      answer: [
+        {
+          heading: "1. Household methods",
+          points: [
+            "Boiling: a rolling boil kills bacteria, spores, cysts and ova and removes temporary hardness; store in the same covered vessel and draw with a ladle or tap.",
+            "Chemical disinfection: bleaching powder (33% available chlorine) as a stock solution; sodium dichloroisocyanurate tablets, 0.5 g per 20 litres; 2% tincture of iodine, two drops per litre with 20-30 minutes' contact; potassium permanganate is not recommended.",
+            "Filtration: ceramic candle filters (Pasteur-Chamberland, Berkefeld, Katadyn) remove bacteria but not viruses and need weekly cleaning and boiling of the candle; SODIS in a clear PET bottle for six hours of full sun; ultraviolet units; reverse osmosis where fluoride, arsenic or salinity is the problem.",
+            "Safe storage is part of purification: narrow-mouthed covered containers, a long-handled ladle, no dipping of hands or cups.",
+          ],
+        },
+        {
+          heading: "2. Disinfection of a well - step by step",
+          points: [
+            "Calculate the volume: pi x radius squared x depth of water (metres), giving cubic metres; multiply by 1000 for litres.",
+            "Measure the chlorine demand with Horrock's apparatus: dissolve 2 g bleaching powder in the black cup, add one, two, three and so on drops of the stock solution to the six white cups filled with well water, wait 30 minutes, add starch-iodide; the first cup with a distinct blue colour gives the number.",
+            "Calculate the dose: 2.5 g bleaching powder per 455 litres for each cup number - so if the third cup is the first to turn blue, 7.5 g per 455 litres.",
+            "Prepare the dose as a paste, dilute in a bucket, allow the lime to settle for 5-10 minutes, pour the supernatant into the well, mix by drawing and returning water, and allow one hour of contact, ideally at night.",
+            "Confirm a free residual chlorine of 0.5 mg/L by the orthotolidine test after one hour; repeat the disinfection daily during an epidemic.",
+          ],
+        },
+        {
+          heading: "3. Confirming that the water is safe",
+          points: [
+            "Sanitary survey of the well: distance from latrine and drains (at least 15 m), lining, parapet, platform, cover and hand pump.",
+            "Residual chlorine by orthotolidine at one hour and at the point of use; the H2S strip test as a field screen for faecal contamination; presumptive coliform count by multiple-tube (MPN) or membrane filtration - zero E. coli per 100 mL.",
+            "Chemical testing where relevant: fluoride (1.0-1.5 mg/L), nitrate (45 mg/L), arsenic (0.01 mg/L), iron and TDS against IS 10500:2012.",
+          ],
+        },
+      ],
+      mustDraw: [
+        "A labelled diagram of a sanitary well showing distance from latrine, lining depth, parapet, platform and hand pump.",
+        "Horrock's apparatus with the six white cups and one black cup, and the worked dose calculation for a 4 m diameter well with 5 m of water.",
+      ],
+      markSplit: [
+        { part: "Definition of safe water and the standards", marks: 1 },
+        { part: "Boiling, chemical disinfection, filtration and storage", marks: 4 },
+        { part: "Well disinfection with volume, Horrock's test and dose", marks: 3 },
+        { part: "Confirmation of safety", marks: 2 },
+      ],
+      keywords: ["water purification", "chlorination", "Horrock's apparatus", "bleaching powder", "residual chlorine", "sanitary well", "orthotolidine"],
+    },
+    {
+      id: "preventive-water-sanitation-vector-t2",
+      paper: "I",
+      kind: "enumerate",
+      marks: 5,
+      minutes: 8,
+      frequency: "common",
+      question: "Enumerate the methods of mosquito control under integrated vector management, with the insecticide, dose and example for each.",
+      openingLines: [
+        "Integrated vector management (WHO, 2004) is the rational use of a combination of environmental, biological, chemical, personal-protective and legislative measures, selected on local entomological evidence, to reduce vector density below the level that sustains transmission.",
+        "Measures are grouped as anti-larval (attacking the aquatic stage) and anti-adult (attacking the flying mosquito), with personal protection and legislation supporting both.",
+      ],
+      answer: [
+        {
+          heading: "Anti-larval measures",
+          points: [
+            "Environmental: source reduction - filling, draining and levelling; weekly emptying and scrubbing of coolers, tanks and flower pots (dry day); intermittent irrigation of rice fields; covering water containers; management of tyres and scrap.",
+            "Chemical larvicides: temephos 1 ppm in drinking-water containers; mineral oil or Paris green on non-potable collections; insect growth regulators.",
+            "Biological: larvivorous fish (Gambusia affinis, Poecilia reticulata) in wells, tanks and ponds; Bacillus thuringiensis israelensis.",
+          ],
+        },
+        {
+          heading: "Anti-adult measures",
+          points: [
+            "Indoor residual spraying: DDT 50% WP at 1 g/m2, two rounds a year; malathion 25% WP at 2 g/m2, three rounds; alphacypermethrin 5% WP at 25 mg/m2, two rounds; each round protects 10-12 weeks and coverage must exceed 80% of rooms.",
+            "Space spraying for outbreaks: pyrethrum 0.1% indoors; malathion thermal fogging or ultra-low-volume spraying outdoors in the early morning or evening.",
+            "Long-lasting insecticidal nets (deltamethrin or alphacypermethrin) at one net per two persons; screening of houses; genetic and Wolbachia methods under trial.",
+          ],
+        },
+        {
+          heading: "Personal protection and legislation",
+          points: [
+            "Repellents (DEET, picaridin), full-sleeved clothing, mosquito coils and vaporisers, and avoiding exposure at biting time - dusk for Anopheles and Culex, daytime for Aedes.",
+            "Building by-laws and municipal acts that make Aedes breeding on premises punishable; entomological surveillance with house, container and Breteau indices to direct the response.",
+          ],
+        },
+      ],
+      mustDraw: ["A two-column table of anti-larval against anti-adult measures with the agent and dose for each."],
+      markSplit: [
+        { part: "Definition of IVM", marks: 1 },
+        { part: "Anti-larval measures with temephos dose and fish species", marks: 2 },
+        { part: "Anti-adult measures with IRS doses and LLIN", marks: 2 },
+      ],
+      keywords: ["integrated vector management", "temephos", "Gambusia", "indoor residual spray", "DDT", "LLIN", "Breteau index"],
+    },
+  ],
+  mcqs: [
+    {
+      id: "preventive-water-sanitation-vector-q1",
+      stem: "A circular village well has a diameter of 4 m and the depth of water is 5 m. With Horrock's apparatus the second cup is the first to show a distinct blue colour. Approximately how much bleaching powder is needed to disinfect the well?",
+      options: ["345 g", "690 g", "1380 g", "3450 g", "6900 g"],
+      difficulty: "hard",
+      answer: 1,
+      explanation:
+        "Volume = pi x r squared x depth = 3.14 x 2 x 2 x 5 = 62.8 m3 = 62,800 litres. Each Horrock's cup number requires 2.5 g of bleaching powder per 455 litres, so the second cup means 5 g per 455 litres. Number of 455-litre units = 62,800 / 455 = about 138; 138 x 5 g = 690 g, roughly 0.7 kg. Taking only one cup gives 345 g (too little to leave a residual), and using the diameter instead of the radius in the formula quadruples the volume and gives the 2.7 kg-scale answers. The powder is made into a paste, diluted in a bucket, the lime allowed to settle, the supernatant poured in, and the well left for one hour before the residual chlorine is checked with orthotolidine.",
+    },
+    {
+      id: "preventive-water-sanitation-vector-q2",
+      stem: "During an entomological survey of a colony, 200 houses were inspected; Aedes larvae were found in 30 houses and in 45 water-holding containers in all. What is the Breteau index?",
+      options: ["15", "22.5", "30", "45", "66.7"],
+      difficulty: "moderate",
+      answer: 1,
+      explanation:
+        "The Breteau index is the number of positive containers per 100 houses inspected = 45 / 200 x 100 = 22.5. The house index is the percentage of houses positive = 30 / 200 x 100 = 15%, and 66.7 is the number of positive containers per 100 positive houses, which is not a standard index. A Breteau index above 5, or a house index above 10, indicates a risk of dengue transmission and calls for source reduction, temephos larviciding and fogging within 24 hours. The Breteau index is preferred because it combines houses and containers and correlates best with the risk of an outbreak.",
+    },
+    {
+      id: "preventive-water-sanitation-vector-q3",
+      stem: "The vital layer, or Schmutzdecke, which is responsible for most of the purification, is a feature of:",
+      options: ["Rapid sand filter", "Slow sand filter", "Ceramic candle filter", "Reverse osmosis unit", "Sedimentation tank"],
+      difficulty: "easy",
+      answer: 1,
+      explanation:
+        "The slow sand filter purifies biologically through the vital layer - a slimy zoogleal film of algae, plankton, diatoms and bacteria that forms on the sand surface over two to three weeks and removes organic matter, holds back bacteria and oxidises ammonia. It is why the slow sand filter removes 99.9-99.99% of bacteria without chemicals, and why it is cleaned by scraping only the top 1-2 cm. The rapid sand filter has no vital layer; it depends on alum coagulation, mechanical straining and post-chlorination, and is cleaned by back-washing. Candle filters strain mechanically and RO uses a semi-permeable membrane.",
+    },
+    {
+      id: "preventive-water-sanitation-vector-q4",
+      stem: "A PHC serving a population of 50,000 examined 6000 blood slides in a year, of which 25 were positive for malaria parasites. Which statement is correct?",
+      options: [
+        "ABER is 8.3% and the area is not in the elimination phase",
+        "API is 0.5 per 1000 and the area is in the elimination phase",
+        "API is 4.2 per 1000 and intensified control is needed",
+        "Slide positivity rate is 5%",
+        "API cannot be calculated without the number of deaths",
+      ],
+      difficulty: "moderate",
+      answer: 1,
+      explanation:
+        "Annual parasite incidence = confirmed cases / population x 1000 = 25 / 50,000 x 1000 = 0.5 per 1000, which is below 1 and places the area in the elimination phase under the National Framework for Malaria Elimination. Annual blood examination rate = 6000 / 50,000 x 100 = 12%, which meets the 10% target, so surveillance is adequate and the low API is credible. Slide positivity rate = 25 / 6000 x 100 = 0.42%, not 5%. The 4.2 per 1000 figure comes from dividing cases by slides instead of by population. Deaths are not part of the API formula.",
+    },
+    {
+      id: "preventive-water-sanitation-vector-q5",
+      stem: "In a family physician's clinic, used intravenous sets, contaminated gloves and syringes from which the needles have been removed should be discarded in the:",
+      options: ["Yellow bag", "Red bag", "White translucent container", "Blue cardboard box", "Black bag"],
+      difficulty: "easy",
+      answer: 1,
+      explanation:
+        "Under the Bio-Medical Waste Management Rules, 2016, contaminated recyclable plastic - IV sets, tubing, catheters, gloves, syringes without needles, blood bags - goes into the red bag for autoclaving or microwaving followed by shredding and recycling. The yellow bag is for anatomical and soiled waste, expired medicines and chemical waste destined for incineration; the white translucent puncture-proof container is for sharps including needles and fixed-needle syringes; the blue box is for glass vials and ampoules; and the black or green bin is general municipal waste, which must never receive infectious material. Storage must not exceed 48 hours.",
+    },
+    {
+      id: "preventive-water-sanitation-vector-q6",
+      stem: "The larvicide recommended for use in drinking-water storage containers to control Aedes breeding is:",
+      options: ["Paris green", "Mineral oil", "Temephos 1 ppm", "Malathion 5%", "DDT 1 g/m2"],
+      difficulty: "easy",
+      answer: 2,
+      explanation:
+        "Temephos (Abate), an organophosphate of very low mammalian toxicity, is the only larvicide approved for potable water at 1 mg/L (1 ppm), and it is the standard anti-larval measure for Aedes in overhead tanks, drums and coolers under NCVBDC. Paris green (copper aceto-arsenite) and mineral oil are for non-potable collections and are toxic or spoil the water. Malathion 5% is used as an adult fog or a residual spray at 2 g/m2, and DDT at 1 g/m2 is an indoor residual spray against resting adult Anopheles - neither is a larvicide for drinking water. Biological alternatives for containers are Bacillus thuringiensis israelensis and larvivorous fish in large tanks.",
+    },
+  ],
+  cards: [
+    {
+      id: "preventive-water-sanitation-vector-c1",
+      front: "Residual chlorine standards.",
+      back: "Free residual 0.5 mg/L after one hour of contact (1 mg/L when viral disease is feared); at least 0.2 mg/L at the consumer's tap (IS 10500:2012). Measured by orthotolidine; OTA separates free from combined.",
+    },
+    {
+      id: "preventive-water-sanitation-vector-c2",
+      front: "Horrock's apparatus: components and the dose rule.",
+      back: "Six white cups, one black cup, two pipettes, starch-iodide indicator, 2 g measure. First cup showing blue at 30 minutes gives the cup number; each cup = 2.5 g bleaching powder per 455 litres.",
+    },
+    {
+      id: "preventive-water-sanitation-vector-c3",
+      front: "Slow sand filter numbers.",
+      back: "Sand 0.2-0.3 mm effective size, bed about 1 m, supernatant 1-1.5 m, rate 0.1-0.4 m3/m2/h, vital layer forms in 2-3 weeks, removes 99.9-99.99% bacteria, cleaned by scraping 1-2 cm.",
+    },
+    {
+      id: "preventive-water-sanitation-vector-c4",
+      front: "Key chemical limits in drinking water (IS 10500:2012).",
+      back: "Fluoride 1.0 (permissible 1.5) mg/L; nitrate 45 mg/L no relaxation; arsenic 0.01 mg/L; TDS 500 (2000); hardness 200 (600); pH 6.5-8.5; E. coli 0 per 100 mL.",
+    },
+    {
+      id: "preventive-water-sanitation-vector-c5",
+      front: "Sanitary latrine - the four criteria.",
+      back: "Excreta must not contaminate surface or ground water; must not be accessible to flies or animals; must not be handled fresh; must cause no nuisance from odour or unsightliness. Twin-pit pour-flush: 20 mm water seal, pits used alternately for about 3 years each.",
+    },
+    {
+      id: "preventive-water-sanitation-vector-c6",
+      front: "Biomedical waste colours in one line.",
+      back: "Yellow - anatomical, soiled, expired drugs, chemical (incinerate). Red - contaminated plastics (autoclave, recycle). White - sharps (autoclave, shred). Blue - glass and implants (disinfect, recycle). Store no longer than 48 hours.",
+    },
+    {
+      id: "preventive-water-sanitation-vector-c7",
+      front: "Indoor residual spray doses and rounds.",
+      back: "DDT 50% WP 1 g/m2, two rounds; malathion 25% WP 2 g/m2, three rounds; alphacypermethrin 5% WP 25 mg/m2, two rounds. Each round protects 10-12 weeks; needs over 80% room coverage.",
+    },
+    {
+      id: "preventive-water-sanitation-vector-c8",
+      front: "Elimination targets: malaria, kala-azar, filaria.",
+      back: "Malaria: API below 1 per 1000, zero indigenous cases by 2027, certification by 2030. Kala-azar: below 1 per 10,000 at block level (reached 2023). Filaria: microfilaria rate below 1% after MDA, elimination by 2027.",
+    },
+  ],
+  references: [
+    "Park's Textbook of Preventive and Social Medicine, 27th edition, 2023 - environment and health, arthropod-borne diseases",
+    "WHO Guidelines for Drinking-water Quality, 4th edition incorporating the first and second addenda, 2022; Bureau of Indian Standards IS 10500:2012 Drinking Water Specification",
+    "Bio-Medical Waste Management Rules, 2016, with amendments of 2018 and 2019, Ministry of Environment, Forest and Climate Change",
+    "NCVBDC Operational Manual for Malaria Elimination in India, 2016; National Strategic Plan for Malaria Elimination 2023-2027",
+    "NCVBDC National Guidelines for Prevention and Control of Dengue, 2023; Accelerated Plan for Elimination of Lymphatic Filariasis, 2018",
+    "Jal Jeevan Mission Operational Guidelines, Ministry of Jal Shakti, 2019; Swachh Bharat Mission (Grameen) Phase II Guidelines, 2020",
+  ],
+});

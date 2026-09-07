@@ -1920,3 +1920,1454 @@ topics.push({
     "Ghai Essential Pediatrics, 10th edition, 2022 - integrated management of childhood illness",
   ],
 });
+
+topics.push({
+  id: "pediatrics-diarrhoea-dehydration",
+  title: "Acute diarrhoea, assessment of dehydration and Plans A, B and C",
+  oneLiner:
+    "Acute diarrhoea is three or more loose or watery stools in 24 hours; the whole of its management is to classify dehydration by four signs, replace fluid by Plan A, B or C, give zinc for 14 days, keep feeding, and reserve antibiotics for dysentery and cholera.",
+  frequency: "core",
+  keywords: [
+    "acute gastroenteritis",
+    "ORS",
+    "low osmolarity ORS",
+    "zinc",
+    "Plan A",
+    "Plan B",
+    "Plan C",
+    "some dehydration",
+    "severe dehydration",
+    "Ringer lactate",
+    "dysentery",
+    "Shigella",
+    "cholera",
+    "rotavirus",
+    "persistent diarrhoea",
+    "IDCF",
+    "STOP diarrhoea campaign",
+    "ciprofloxacin",
+  ],
+  sections: [
+    {
+      heading: "Definitions, causes and why it still kills",
+      points: [
+        "**Diarrhoea is the passage of three or more loose or watery stools in 24 hours, or more frequent than is normal for that child**; frequent pasty stools in an exclusively breastfed baby are not diarrhoea. Acute watery diarrhoea lasts under 14 days, persistent diarrhoea lasts 14 days or more, and dysentery is diarrhoea with visible blood in the stool.",
+        "**Rotavirus is the commonest cause of severe dehydrating diarrhoea under 2 years**, which is why the vaccine sits in the national schedule at 6, 10 and 14 weeks; enterotoxigenic Escherichia coli, Cryptosporidium, Giardia and Vibrio cholerae cause the rest of the watery episodes, and **Shigella is the commonest cause of dysentery**.",
+        "Diarrhoea causes about 8-9% of under-five deaths in India, almost all of them from dehydration, and almost all preventable with ORS and zinc. **NFHS-5 found 7.3% of under-fives had diarrhoea in the preceding 2 weeks; only about six in ten received ORS and fewer than a third received zinc.**",
+        "The child dies of water and salt loss, not of the organism: an infant loses 100-200 mL/kg/day in cholera-like stools, and the low-osmolarity ORS solution replaces that in the same proportion that the gut lost it, because coupled sodium-glucose absorption survives even in secretory diarrhoea.",
+        "Risk factors for death are age under 1 year, no breastfeeding, malnutrition, measles in the last 3 months, no ORS or zinc, and a mother who was never told when to return; the counselling in Plan A is therefore treatment, not an afterthought.",
+      ],
+    },
+    {
+      heading: "Assessing dehydration: the four signs and three classes",
+      points: [
+        "Look at four things in every child with diarrhoea: **general condition (well and alert, restless and irritable, or lethargic and unconscious), the eyes (sunken or not), thirst (drinks normally, drinks eagerly, or unable to drink or drinking poorly), and the skin pinch on the abdomen (goes back immediately, slowly, or very slowly at over 2 seconds).**",
+        "**Severe dehydration is any two of: lethargic or unconscious, sunken eyes, not able to drink or drinking poorly, skin pinch going back very slowly.** It means about 10% or more of body weight lost and is treated by Plan C.",
+        "**Some dehydration is any two of: restless or irritable, sunken eyes, drinks eagerly or thirsty, skin pinch going back slowly.** It means 5-10% loss and is treated by Plan B at the facility.",
+        "**No dehydration is when there are not enough signs to classify as some or severe dehydration**; it is treated at home by Plan A. The classification deliberately does not use pulse volume, capillary refill or urine output alone, because a health worker without a stethoscope must be able to apply it.",
+        "Weigh the child at every visit - the acute weight, compared with the last recorded weight, is the best measure of fluid lost and of fluid regained, and a child with severe acute malnutrition needs a different assessment because sunken eyes and a slow skin pinch are already present in the wasted child.",
+        "Ask three more questions before choosing a plan: how long has the diarrhoea lasted (14 days or more changes the plan), is there blood in the stool, and is there a general danger sign or severe malnutrition that makes referral the answer regardless.",
+      ],
+    },
+    {
+      heading: "Plan A: treating diarrhoea at home",
+      points: [
+        "**Plan A has four rules: give extra fluid, give zinc, continue feeding, and know when to return.** It applies to every child with no dehydration and to every child once Plans B and C have corrected the deficit.",
+        "**Extra fluid means ORS after every loose stool - 50-100 mL for a child under 2 years and 100-200 mL for a child aged 2 years or more** - plus continued breastfeeding, and home fluids such as rice kanji, dal water, buttermilk, coconut water and plain clean water. Sugary soft drinks, packaged fruit juice, tea and coffee worsen osmotic diarrhoea and are not to be given.",
+        "**Send the mother home with two packets of ORS**, show her how to mix one full packet in one litre of clean water (or the 200 mL pack in a glass), use it within 24 hours, and give it slowly by cup and spoon; if the child vomits, wait 10 minutes and then continue more slowly.",
+        "**Zinc for 14 days: 10 mg (half a 20 mg dispersible tablet) daily for infants aged 2-6 months, and 20 mg daily for children from 6 months to 5 years**, dissolved in breast milk, ORS or clean water. Zinc shortens the episode by about a quarter, reduces stool volume, and lowers the incidence of diarrhoea for the next 2-3 months - which is why the full 14 days matters even after the stools have settled.",
+        "Continue feeding: breastfeed more often and for longer, give the usual family foods in small frequent meals, and add an extra meal a day for 2 weeks after recovery; withholding food to 'rest the gut' converts an episode of diarrhoea into malnutrition.",
+        "**Return immediately if the child cannot drink or breastfeed, becomes sicker, develops fever, passes blood in the stool, or drinks poorly**; otherwise follow up in 5 days if not improving. Write these on the MCP card.",
+      ],
+    },
+    {
+      heading: "Plan B: ORS at the facility for some dehydration",
+      points: [
+        "**Give approximately 75 mL/kg of ORS over the first 4 hours at the health facility**, by cup and spoon in small sips; the age bands used when the weight is unknown are 200-400 mL under 4 months, 400-700 mL at 4-12 months, 700-900 mL at 12 months to 2 years, and 900-1400 mL at 2-5 years.",
+        "The mother gives the ORS herself under supervision, continues breastfeeding whenever the child wants, and for a child under 6 months not being breastfed also gives 100-200 mL of clean water during the 4 hours. Other foods are withheld only for these 4 hours.",
+        "**If the child vomits, wait 10 minutes and restart more slowly; if the eyelids become puffy, stop ORS, give breast milk or plain water, and restart ORS by Plan A when the puffiness has gone** - puffy eyelids are the sign of overhydration.",
+        "**Reassess after 4 hours and reclassify**: no dehydration - move to Plan A; still some dehydration - repeat Plan B and start offering food; severe dehydration - move to Plan C. Give zinc as soon as the child can take it.",
+        "A single dose of oral ondansetron 0.15 mg/kg may be used when persistent vomiting is stopping oral rehydration; **loperamide, diphenoxylate, kaolin-pectin, probiotics as a substitute for ORS, and empirical antibiotics for watery diarrhoea have no place**, and the first three are dangerous in children.",
+        "If the mother must leave before the 4 hours are complete, show her how to give the rest of the volume at home, give enough ORS packets for 2 more days, and explain the four rules of Plan A.",
+      ],
+    },
+    {
+      heading: "Plan C: intravenous fluid for severe dehydration",
+      points: [
+        "**Start an intravenous line immediately and give 100 mL/kg of Ringer's lactate (normal saline if Ringer's lactate is unavailable)**: for infants under 12 months, 30 mL/kg in the first 1 hour followed by 70 mL/kg over the next 5 hours; **for children aged 12 months to 5 years, 30 mL/kg in 30 minutes followed by 70 mL/kg over 2.5 hours.**",
+        "**If the radial pulse is still very weak or undetectable after the first 30 mL/kg, repeat it once.** Reassess every 15-30 minutes during the bolus and every 1-2 hours after it; if hydration is not improving, run the drip faster.",
+        "Give ORS about 5 mL/kg/hour by mouth as soon as the child can drink - usually after 3-4 hours in infants and 1-2 hours in older children - so that potassium and base are replaced alongside the intravenous fluid, and give zinc once oral intake is established.",
+        "**Reassess at the end of the infusion (6 hours in infants, 3 hours in children) and reclassify; most children then move to Plan B or A.** A child who remains in severe dehydration after 100 mL/kg has ongoing losses of cholera proportions and needs a second course and a search for cholera.",
+        "**If no intravenous access is possible and referral is more than 30 minutes away, give ORS by nasogastric tube (or by mouth if the child can drink) at 20 mL/kg/hour for 6 hours - 120 mL/kg in total**, reassessing every 1-2 hours; slow the rate for repeated vomiting or abdominal distension, and refer for intravenous therapy if there is no improvement after 3 hours.",
+        "Throughout Plan C check the blood glucose or give sugar, keep the child warm, and remember that **a child with severe acute malnutrition and diarrhoea does not receive Plan C unless in shock - ReSoMal by mouth or nasogastric tube is the fluid, because standard boluses overload the malnourished heart.**",
+      ],
+    },
+    {
+      heading: "Dysentery, cholera, persistent diarrhoea and the complications",
+      points: [
+        "**Dysentery (blood in the stool) is treated as shigellosis with oral ciprofloxacin 15 mg/kg/dose twice daily for 3 days**, with zinc, feeding and fluids as for any diarrhoea; review in 2 days, and if there is no improvement, look for amoebiasis (trophozoites with ingested red cells on a fresh stool smear - metronidazole 10 mg/kg three times daily for 5-10 days) or refer. Antimotility drugs can precipitate toxic megacolon and are forbidden.",
+        "**Suspect cholera in a child over 2 years with acute profuse watery ('rice water') diarrhoea and severe dehydration, particularly during a known outbreak**; rehydrate by Plan C with repeated reassessment, and give a single dose of azithromycin 20 mg/kg (maximum 1 g) - doxycycline 300 mg once for adults - to shorten purging. Notify the case the same day.",
+        "**Persistent diarrhoea lasting 14 days or more with dehydration is 'severe persistent diarrhoea' and is referred after rehydration**; without dehydration it is managed with feeding advice (six small meals a day, replace half the animal milk with cereal or give curd, avoid fruit juice), zinc for 14 days, a multivitamin-mineral supplement for 2 weeks, and follow-up in 5 days. Look for HIV, urinary infection and lactose intolerance if it recurs.",
+        "Hypokalaemia presents as abdominal distension, ileus and hypotonia and is prevented by giving ORS rather than plain water and by potassium-rich foods such as banana and coconut water; hypernatraemia comes from home-made salt solutions of the wrong strength and presents with a doughy skin, irritability and convulsions.",
+        "Convulsions in a child with diarrhoea are due to fever, hypoglycaemia, sodium disturbance or Shigella neurotoxin; pallor and falling urine output a week after bloody diarrhoea suggest haemolytic uraemic syndrome, which needs referral for dialysis.",
+        "**Prevention is rotavirus and measles vaccination, exclusive breastfeeding for 6 months, handwashing with soap at the five critical times, safe water and a toilet.** The Intensified Diarrhoea Control Fortnight (2014-2023) has become the two-month STOP Diarrhoea Campaign (1 July to 31 August), in which the ASHA pre-positions ORS in every household with an under-five and every facility runs an ORS-zinc corner.",
+      ],
+    },
+  ],
+  tables: [
+    {
+      heading: "Classification of dehydration (IMNCI) and the plan it selects",
+      columns: ["Classification", "Signs (any two)", "Fluid deficit", "Plan"],
+      rows: [
+        ["Severe dehydration", "Lethargic or unconscious; sunken eyes; not able to drink or drinking poorly; skin pinch goes back very slowly (over 2 seconds)", "10% or more of body weight", "Plan C: IV Ringer's lactate 100 mL/kg; NG ORS 120 mL/kg over 6 hours if no IV"],
+        ["Some dehydration", "Restless or irritable; sunken eyes; drinks eagerly or thirsty; skin pinch goes back slowly", "5-10% of body weight", "Plan B: ORS 75 mL/kg over 4 hours at the facility, then reassess"],
+        ["No dehydration", "Not enough signs to classify as some or severe dehydration", "Under 5%", "Plan A: ORS after each stool, zinc 14 days, feeding, when to return"],
+      ],
+    },
+    {
+      heading: "The doses that must be right",
+      columns: ["Item", "Dose", "Note"],
+      rows: [
+        ["Low-osmolarity ORS composition", "Sodium 75, glucose 75, chloride 65, potassium 20, citrate 10 mmol/L; 245 mOsm/L", "One sachet in 1 litre of clean water; discard after 24 hours"],
+        ["Plan A ORS after each loose stool", "Under 2 years 50-100 mL; 2 years and above 100-200 mL", "Give 2 packets to take home"],
+        ["Plan B ORS", "75 mL/kg over 4 hours", "Under 4 months 200-400 mL; 4-12 months 400-700 mL; 1-2 years 700-900 mL; 2-5 years 900-1400 mL"],
+        ["Plan C Ringer's lactate, under 12 months", "30 mL/kg in 1 hour, then 70 mL/kg over 5 hours", "Repeat the first 30 mL/kg once if the radial pulse is still very weak"],
+        ["Plan C Ringer's lactate, 12 months to 5 years", "30 mL/kg in 30 minutes, then 70 mL/kg over 2.5 hours", "ORS 5 mL/kg/hour as soon as the child can drink"],
+        ["Zinc", "10 mg daily at 2-6 months; 20 mg daily at 6 months to 5 years", "For 14 days, even after the stools settle"],
+        ["Ciprofloxacin for dysentery", "15 mg/kg/dose twice daily for 3 days", "Review in 2 days; consider amoebiasis if not improving"],
+        ["Azithromycin for cholera (child)", "20 mg/kg single dose, maximum 1 g", "Adults: doxycycline 300 mg single dose"],
+        ["Ondansetron for vomiting that blocks ORS", "0.15 mg/kg orally, single dose", "Never loperamide or diphenoxylate in a child"],
+      ],
+    },
+  ],
+  redFlags: [
+    "Lethargy, inability to drink, or a skin pinch returning over 2 seconds - severe dehydration; start Plan C now and do not wait for a referral vehicle to begin fluid.",
+    "Diarrhoea in a child with severe acute malnutrition, or in an infant under 2 months - both need referral, and the malnourished child must not receive a standard intravenous bolus unless in shock.",
+    "Blood in the stool with high fever, a toxic appearance or a convulsion - severe shigellosis; give the first dose of ciprofloxacin and refer.",
+    "Abdominal distension with absent bowel sounds, or bilious vomiting - ileus from hypokalaemia or a surgical cause; stop oral fluids and refer.",
+    "Pallor, puffiness and falling urine output a week after bloody diarrhoea - haemolytic uraemic syndrome, which needs a centre with paediatric dialysis.",
+    "Profuse rice-water stools with a rapidly collapsing older child, or several cases from the same locality - cholera; notify the same day and start the outbreak response.",
+  ],
+  pearls: [
+    "Diarrhoea kills by dehydration, so the classification uses four signs anyone can elicit - general condition, eyes, thirst and skin pinch - and two of them in either column decide the plan.",
+    "Plan B is 75 mL/kg over 4 hours; Plan C is 100 mL/kg of Ringer's lactate, given as 30 then 70 mL/kg, fast in the older child (30 minutes plus 2.5 hours) and slower in the infant (1 hour plus 5 hours).",
+    "Zinc 20 mg (10 mg under 6 months) for 14 days is the second drug of every diarrhoea prescription, and the ORS packet is the first; nothing else is routinely needed.",
+    "Antibiotics are for blood in the stool (ciprofloxacin for 3 days) and for suspected cholera (single-dose azithromycin) - never for watery diarrhoea in a child with a fever alone.",
+    "Puffy eyelids during ORS mean overhydration: stop, give breast milk or water, and restart by Plan A.",
+    "Continue feeding through the episode and add an extra meal a day for 2 weeks afterwards; the child who is starved to rest the gut returns with persistent diarrhoea and malnutrition.",
+  ],
+  theory: [
+    {
+      id: "pediatrics-diarrhoea-dehydration-t1",
+      paper: "IV",
+      kind: "long",
+      marks: 10,
+      minutes: 20,
+      frequency: "core",
+      question:
+        "A 9-month-old breastfed infant weighing 7 kg is brought to the primary health centre with 8 watery stools and 2 vomits over the last 24 hours. She is irritable, her eyes are sunken, she drinks eagerly and the skin pinch goes back slowly. Classify her dehydration and describe the management, including the advice to the mother.",
+      openingLines: [
+        "This infant has restlessness or irritability, sunken eyes, eager drinking and a slow skin pinch - four signs in the 'some dehydration' column - and is therefore classified as SOME DEHYDRATION under IMNCI, corresponding to a fluid deficit of 5-10% of body weight (about 350-700 mL).",
+        "She is treated with Plan B - oral rehydration with low-osmolarity ORS at the facility over 4 hours - followed by zinc, continued breastfeeding and the four rules of home care, because there is no general danger sign, no blood in the stool, no severe malnutrition and the diarrhoea is under 14 days old.",
+      ],
+      answer: [
+        {
+          heading: "1. Complete the assessment before treating",
+          points: [
+            "Check the general danger signs (unable to drink or breastfeed, vomits everything, convulsions, lethargic or unconscious) - any one converts this into a pink classification.",
+            "Confirm the duration (under 14 days here) and ask about blood in the stool; ask about fever, cough, ear discharge and measles in the last 3 months.",
+            "Weigh her (7 kg), measure the mid-upper arm circumference and look for oedema and visible severe wasting - a child with severe acute malnutrition needs ReSoMal, not Plan B.",
+            "Check immunisation (rotavirus and measles status) and whether she has already been given ORS, zinc or any drugs at home.",
+          ],
+        },
+        {
+          heading: "2. Plan B: oral rehydration at the facility",
+          points: [
+            "**Give approximately 75 mL/kg, that is about 525 mL (in the 400-700 mL age band for 4-12 months), of low-osmolarity ORS over 4 hours**, by cup and spoon in small frequent sips, given by the mother under the supervision of the health worker.",
+            "Continue breastfeeding whenever the infant wants throughout the 4 hours; withhold other foods only for these 4 hours.",
+            "If she vomits, wait 10 minutes and continue more slowly; if her eyelids become puffy, stop ORS, give breast milk and restart by Plan A once the puffiness has gone.",
+            "Give a single dose of oral ondansetron 0.15 mg/kg (about 1 mg) only if repeated vomiting is preventing rehydration.",
+          ],
+        },
+        {
+          heading: "3. Reassess at 4 hours and reclassify",
+          points: [
+            "Repeat the four-sign assessment: **no dehydration - move to Plan A; still some dehydration - repeat Plan B and start offering food; severe dehydration - move to Plan C** with intravenous Ringer's lactate 30 mL/kg in 1 hour and 70 mL/kg over 5 hours.",
+            "Reweigh her - the weight regained is the objective proof that the deficit has been replaced.",
+          ],
+        },
+        {
+          heading: "4. Zinc and feeding",
+          points: [
+            "**Zinc 20 mg dispersible tablet once daily for 14 days** (she is over 6 months), dissolved in breast milk or ORS, started as soon as she can take it, and continued even after the stools normalise.",
+            "Continue breastfeeding on demand and, as she is 9 months old, resume her complementary feeds - soft khichdi, mashed dal and rice, curd, banana - in small frequent amounts, with an extra meal a day for 2 weeks after recovery.",
+            "No antibiotic (watery stool, no blood, no cholera suspicion), no antimotility drug, no antiemetic beyond the single ondansetron dose.",
+          ],
+        },
+        {
+          heading: "5. Counselling: Plan A for home",
+          points: [
+            "Show the mother how to prepare ORS - one full packet in one litre of clean water, discarded after 24 hours - and give her two packets.",
+            "**Give 50-100 mL of ORS after every loose stool** (she is under 2 years), plus breast milk and home fluids such as rice kanji, dal water and buttermilk; no soft drinks or packaged juice.",
+            "**Return immediately if she cannot drink or breastfeed, becomes sicker, develops fever, or passes blood in the stool; otherwise return in 5 days if not improving.**",
+            "Reinforce handwashing with soap before feeding and after cleaning the child, safe water, and completion of the rotavirus and measles-rubella vaccines.",
+          ],
+        },
+        {
+          heading: "6. When to refer instead",
+          points: [
+            "Any general danger sign, severe dehydration not responding to Plan C, severe acute malnutrition, persistent diarrhoea with dehydration, or dysentery with a toxic child.",
+            "Give ORS by sips or nasogastric tube on the way, keep her warm, and send a note with the fluid already given.",
+          ],
+        },
+      ],
+      mustDraw: [
+        "The dehydration classification table: the four signs against severe, some and no dehydration, with the plan for each.",
+        "A flow chart for Plan B: 75 mL/kg over 4 hours, reassess, and the three exits to Plan A, repeat Plan B or Plan C.",
+      ],
+      markSplit: [
+        { part: "Correct classification with the signs quoted", marks: 2 },
+        { part: "Plan B volume, method and handling of vomiting and overhydration", marks: 3 },
+        { part: "Reassessment and the exits including Plan C rates", marks: 2 },
+        { part: "Zinc dose and duration, feeding advice", marks: 1.5 },
+        { part: "Plan A counselling, when to return, prevention", marks: 1.5 },
+      ],
+      keywords: ["some dehydration", "Plan B", "75 mL/kg", "zinc 20 mg", "ORS", "when to return"],
+    },
+    {
+      id: "pediatrics-diarrhoea-dehydration-t2",
+      paper: "IV",
+      kind: "short-note",
+      marks: 5,
+      minutes: 10,
+      frequency: "core",
+      question: "Write short notes on low-osmolarity ORS and zinc in the management of childhood diarrhoea.",
+      openingLines: [
+        "Oral rehydration solution works because sodium-coupled glucose absorption in the small intestine remains intact in secretory diarrhoea; the 2004 WHO-UNICEF low-osmolarity formulation reduced the sodium and glucose of the 1978 solution to 75 mmol/L each and the total osmolarity to 245 mOsm/L.",
+        "Zinc supplementation for 14 days was added in the same year as the second universal intervention, and together they form the ORS-zinc package that every national diarrhoea programme is built around.",
+      ],
+      answer: [
+        {
+          heading: "Composition and preparation of low-osmolarity ORS",
+          points: [
+            "**Per litre: sodium chloride 2.6 g, glucose 13.5 g, potassium chloride 1.5 g, trisodium citrate 2.9 g - giving sodium 75, chloride 65, glucose 75, potassium 20 and citrate 10 mmol/L, total osmolarity 245 mOsm/L.**",
+            "One sachet is dissolved in one litre of clean drinking water (boiled and cooled if the source is unsafe), never in less water, and the solution is discarded after 24 hours.",
+            "It is given by cup and spoon in small frequent sips; a vomiting child is rested for 10 minutes and then given the solution more slowly.",
+          ],
+        },
+        {
+          heading: "Advantages over the older formula",
+          points: [
+            "Compared with the 311 mOsm/L solution it reduces stool output by about 20%, vomiting by about 30% and the need for unscheduled intravenous fluid by about a third, without clinically important hyponatraemia even in cholera.",
+            "The same single formulation is used for all ages and for all causes, including cholera, which simplifies supply and training.",
+          ],
+        },
+        {
+          heading: "How it is used in the three plans",
+          points: [
+            "**Plan A: 50-100 mL after each loose stool under 2 years, 100-200 mL from 2 years; Plan B: 75 mL/kg over 4 hours at the facility; Plan C: 5 mL/kg/hour by mouth alongside the intravenous fluid as soon as the child can drink, or 20 mL/kg/hour by nasogastric tube for 6 hours when no intravenous line is possible.**",
+            "Home-available fluids - rice kanji, dal water, buttermilk, coconut water - supplement but do not replace ORS in a child with dehydration.",
+          ],
+        },
+        {
+          heading: "Zinc",
+          points: [
+            "**Dose: 20 mg of elemental zinc once daily for 14 days for children 6 months to 5 years, and 10 mg (half a dispersible tablet) daily for infants 2-6 months**, dissolved in breast milk, ORS or water.",
+            "Benefits: shortens the duration of the episode by about 25%, reduces stool volume by about 30%, lowers treatment failure and death in persistent diarrhoea, and reduces the incidence of diarrhoea and pneumonia over the following 2-3 months.",
+            "It works by restoring the zinc lost in stool, which is needed for intestinal epithelial repair, brush-border enzyme activity and immune function; the mother is told that a transient vomit after the first dose is common and not a reason to stop.",
+          ],
+        },
+        {
+          heading: "Programme",
+          points: [
+            "ORS and zinc are distributed free by the ASHA, who pre-positions ORS in every household with an under-five during the STOP Diarrhoea Campaign (1 July to 31 August), the successor of the Intensified Diarrhoea Control Fortnight, and every facility maintains an ORS-zinc corner.",
+          ],
+        },
+      ],
+      mustDraw: ["A table of the low-osmolarity ORS composition in grams per litre and mmol/L, alongside the zinc dose by age."],
+      markSplit: [
+        { part: "Composition, preparation and osmolarity", marks: 1.5 },
+        { part: "Advantages and use in Plans A, B and C", marks: 1.5 },
+        { part: "Zinc dose, duration and benefits", marks: 1.5 },
+        { part: "Programme context", marks: 0.5 },
+      ],
+      keywords: ["low osmolarity ORS", "245 mOsm/L", "sodium 75", "zinc 20 mg 14 days", "IDCF"],
+    },
+  ],
+  mcqs: [
+    {
+      id: "pediatrics-diarrhoea-dehydration-q1",
+      stem: "A 14-month-old child weighing 9 kg has had watery diarrhoea for 2 days. He is irritable, his eyes are sunken, he drinks eagerly and the skin pinch goes back slowly. There is no blood in the stool and no danger sign. What is the correct plan and volume of ORS?",
+      options: [
+        "Plan A: 100 mL of ORS after each loose stool at home",
+        "Plan B: about 675 mL of ORS over 4 hours at the facility, then reassess",
+        "Plan C: Ringer's lactate 270 mL over 30 minutes then 630 mL over 2.5 hours",
+        "Plan B: 450 mL of ORS over 2 hours followed by ciprofloxacin",
+        "Intravenous normal saline 20 mL/kg bolus and oral ondansetron",
+      ],
+      answer: 1,
+      explanation:
+        "Two or more signs from the 'some dehydration' column - irritability, sunken eyes, eager drinking and a slow skin pinch - classify this child as some dehydration, which is treated with Plan B: approximately 75 mL/kg, that is about 675 mL, of ORS over 4 hours with reassessment at the end. Plan A is for a child with no dehydration and would under-treat him. Plan C is for severe dehydration, which needs lethargy, inability to drink or a very slow skin pinch, none of which is present. Halving the volume and time is not Plan B, and there is no blood in the stool to justify ciprofloxacin. An intravenous bolus is not indicated in a child who is drinking eagerly.",
+      difficulty: "easy",
+    },
+    {
+      id: "pediatrics-diarrhoea-dehydration-q2",
+      stem: "An 8-month-old infant weighing 6 kg is brought lethargic with sunken eyes, unable to drink, and a skin pinch that returns in more than 2 seconds after 3 days of watery stools. An intravenous line is secured. What is the correct fluid prescription?",
+      options: [
+        "Ringer's lactate 180 mL over 30 minutes, then 420 mL over 2.5 hours",
+        "Ringer's lactate 180 mL over 1 hour, then 420 mL over 5 hours, with ORS 30 mL/hour once he can drink",
+        "5% dextrose 600 mL over 6 hours",
+        "Normal saline 120 mL bolus, then maintenance fluid at 24 mL/hour",
+        "ORS by nasogastric tube 120 mL/hour for 6 hours",
+      ],
+      answer: 1,
+      explanation:
+        "Lethargy, inability to drink and a very slow skin pinch mean severe dehydration, so this infant needs Plan C: 100 mL/kg of Ringer's lactate, and because he is under 12 months the schedule is 30 mL/kg (180 mL) in the first hour and 70 mL/kg (420 mL) over the next 5 hours, with ORS at about 5 mL/kg/hour (30 mL/hour) as soon as he can drink. The faster 30-minute plus 2.5-hour schedule is for children aged 12 months to 5 years. Five percent dextrose contains no sodium and would cause hyponatraemia. A 20 mL/kg bolus followed by maintenance does not replace a 10% deficit. Nasogastric ORS at 20 mL/kg/hour is the alternative only when intravenous access is impossible.",
+      difficulty: "moderate",
+    },
+    {
+      id: "pediatrics-diarrhoea-dehydration-q3",
+      stem: "A 3-year-old child weighing 13 kg has passed 6 stools with visible blood and mucus in the last day, with fever and abdominal cramps. She has no dehydration and no danger sign. Along with ORS and zinc, what is the correct treatment?",
+      options: [
+        "Oral ciprofloxacin 15 mg/kg per dose twice daily for 3 days, review in 2 days",
+        "Oral metronidazole 10 mg/kg three times daily for 5 days as first line",
+        "Loperamide 2 mg after each loose stool to reduce blood loss",
+        "Oral amoxicillin 25 mg/kg twice daily for 5 days",
+        "No antibiotic; dysentery is viral and self-limiting",
+      ],
+      answer: 0,
+      explanation:
+        "Visible blood in the stool is dysentery, treated as shigellosis with ciprofloxacin 15 mg/kg per dose twice daily for 3 days, with follow-up in 2 days. Metronidazole is for amoebiasis, which is diagnosed on a fresh stool smear showing trophozoites with ingested red cells and is considered when ciprofloxacin fails, not first. Loperamide is contraindicated in children with dysentery because it can precipitate toxic megacolon and prolong Shigella carriage. Amoxicillin has poor activity against Shigella in India. Dysentery is bacterial in the great majority and untreated shigellosis in a young child carries a real risk of complications, so withholding antibiotics is wrong.",
+      difficulty: "easy",
+    },
+    {
+      id: "pediatrics-diarrhoea-dehydration-q4",
+      stem: "A 4-month-old exclusively breastfed infant with acute watery diarrhoea and no dehydration is being sent home on Plan A. What is the correct zinc prescription?",
+      options: [
+        "Zinc 20 mg once daily for 14 days",
+        "Zinc 10 mg once daily for 14 days",
+        "Zinc 10 mg once daily until the stools normalise",
+        "Zinc 20 mg once daily for 5 days",
+        "No zinc, because she is exclusively breastfed",
+      ],
+      answer: 1,
+      explanation:
+        "For infants aged 2-6 months the zinc dose is 10 mg daily, half of the 20 mg dispersible tablet, and it is always given for the full 14 days because the benefit in preventing further episodes over the next 2-3 months depends on completing the course. The 20 mg dose is for children from 6 months to 5 years. Stopping when the stools settle forfeits the preventive effect, and a 5-day course is not a recommended regimen. Exclusive breastfeeding is continued but does not replace zinc, which is given dissolved in expressed breast milk.",
+      difficulty: "easy",
+    },
+    {
+      id: "pediatrics-diarrhoea-dehydration-q5",
+      stem: "During Plan B rehydration, a 10-month-old infant who has taken 300 mL of ORS in 2 hours develops puffiness of both eyelids. He is alert and drinking well. What should be done?",
+      options: [
+        "Continue ORS at the same rate; puffiness is expected",
+        "Stop ORS, give breast milk and plain water, and restart ORS by Plan A when the puffiness resolves",
+        "Give intravenous frusemide 1 mg/kg",
+        "Switch to intravenous Ringer's lactate at 30 mL/kg",
+        "Give 5% dextrose orally instead of ORS",
+      ],
+      answer: 1,
+      explanation:
+        "Puffy eyelids during oral rehydration are the sign of overhydration, and the correct response is to stop ORS, offer breast milk or plain water, and resume ORS at the Plan A rate after each stool once the puffiness has gone. Continuing at the same rate risks pulmonary oedema and hypernatraemia. Frusemide is not needed in an alert infant with intact kidneys who simply needs the intake reduced. Intravenous fluid would add to the overload, and glucose water contains no electrolytes and would not treat the ongoing losses when they resume.",
+      difficulty: "moderate",
+    },
+  ],
+  cards: [
+    { id: "pediatrics-diarrhoea-dehydration-c1", front: "Signs of severe dehydration (any two)", back: "Lethargic or unconscious; sunken eyes; not able to drink or drinking poorly; skin pinch goes back very slowly (over 2 seconds). Plan C." },
+    { id: "pediatrics-diarrhoea-dehydration-c2", front: "Signs of some dehydration (any two)", back: "Restless or irritable; sunken eyes; drinks eagerly or thirsty; skin pinch goes back slowly. Plan B: ORS 75 mL/kg over 4 hours." },
+    { id: "pediatrics-diarrhoea-dehydration-c3", front: "Plan C intravenous schedule", back: "Ringer's lactate 100 mL/kg. Under 12 months: 30 mL/kg in 1 hour then 70 mL/kg over 5 hours. 12 months to 5 years: 30 mL/kg in 30 minutes then 70 mL/kg over 2.5 hours. Repeat the first bolus once if the pulse is still very weak." },
+    { id: "pediatrics-diarrhoea-dehydration-c4", front: "Plan C when no IV access is possible", back: "ORS by nasogastric tube (or mouth) 20 mL/kg/hour for 6 hours = 120 mL/kg; reassess every 1-2 hours; refer if no improvement after 3 hours." },
+    { id: "pediatrics-diarrhoea-dehydration-c5", front: "Low-osmolarity ORS composition", back: "Sodium 75, glucose 75, chloride 65, potassium 20, citrate 10 mmol/L; 245 mOsm/L. NaCl 2.6 g, glucose 13.5 g, KCl 1.5 g, trisodium citrate 2.9 g per litre." },
+    { id: "pediatrics-diarrhoea-dehydration-c6", front: "Zinc dose in diarrhoea", back: "2-6 months: 10 mg daily; 6 months to 5 years: 20 mg daily; for 14 days regardless of when the stools settle." },
+    { id: "pediatrics-diarrhoea-dehydration-c7", front: "Plan A: ORS after each loose stool", back: "Under 2 years: 50-100 mL. 2 years and above: 100-200 mL. Send 2 packets home; return immediately if unable to drink, sicker, fever or blood in stool." },
+    { id: "pediatrics-diarrhoea-dehydration-c8", front: "Antibiotics in childhood diarrhoea", back: "Only for dysentery (ciprofloxacin 15 mg/kg twice daily for 3 days) and suspected cholera (azithromycin 20 mg/kg single dose, max 1 g). Amoebiasis: metronidazole 10 mg/kg three times daily for 5-10 days after a positive fresh smear." },
+  ],
+  references: [
+    "IMNCI Chart Booklet and Physicians' Chart Booklet, Ministry of Health and Family Welfare, Government of India (revised edition)",
+    "WHO, The Treatment of Diarrhoea: A Manual for Physicians and Other Senior Health Workers, 4th revision, 2005",
+    "WHO/UNICEF Joint Statement on Clinical Management of Acute Diarrhoea, 2004 (low-osmolarity ORS and zinc)",
+    "STOP Diarrhoea Campaign Operational Guidelines, MoHFW, 2024; Intensified Diarrhoea Control Fortnight Guidelines, MoHFW, 2014",
+    "IAP Guidelines on Management of Acute Diarrhoea in Children, Indian Pediatrics, revised 2016 (Bhatnagar et al.)",
+    "Ghai Essential Pediatrics, 10th edition, 2022 - diseases of the gastrointestinal system",
+  ],
+});
+
+topics.push({
+  id: "pediatrics-severe-acute-malnutrition",
+  title: "Severe acute malnutrition: identification, the ten steps and community management",
+  oneLiner:
+    "Severe acute malnutrition in a child of 6-59 months is a weight-for-height below -3 SD, a mid-upper arm circumference under 11.5 cm, or bilateral pitting oedema; the child with complications or a failed appetite test goes to the Nutritional Rehabilitation Centre for the WHO ten steps, and the uncomplicated child is treated at home with energy-dense food, antibiotics and weekly follow-up.",
+  frequency: "core",
+  keywords: [
+    "SAM",
+    "MUAC",
+    "weight for height",
+    "bilateral pitting oedema",
+    "kwashiorkor",
+    "marasmus",
+    "F-75",
+    "F-100",
+    "ReSoMal",
+    "NRC",
+    "nutritional rehabilitation centre",
+    "appetite test",
+    "RUTF",
+    "CMAM",
+    "ten steps",
+    "refeeding",
+    "Poshan Abhiyaan",
+    "moderate acute malnutrition",
+  ],
+  sections: [
+    {
+      heading: "Definitions and the burden",
+      points: [
+        "**Severe acute malnutrition (SAM) in a child aged 6-59 months is any one of: weight-for-height or length below -3 SD of the WHO growth standard, mid-upper arm circumference (MUAC) below 11.5 cm, or bilateral pitting oedema.** Moderate acute malnutrition is weight-for-height between -3 and -2 SD or MUAC 11.5 to under 12.5 cm without oedema.",
+        "**In an infant under 6 months, SAM is weight-for-length below -3 SD, visible severe wasting, or bilateral pitting oedema** - MUAC cut-offs are not validated at this age, and every such infant is admitted because feeding has failed at the breast.",
+        "Marasmus is severe wasting without oedema - the old-man face, loss of buccal fat, baggy skin over the buttocks, a visible rib cage and an alert but irritable child. **Kwashiorkor is oedematous malnutrition** with a moon face, apathy, flaky-paint dermatosis, sparse pale easily pluckable hair with a flag sign, and a fatty enlarged liver; the child's weight may look deceptively normal because of the oedema.",
+        "**NFHS-5 (2019-21) found 19.3% of Indian under-fives wasted, 7.7% severely wasted, 35.5% stunted and 32.1% underweight**; the case fatality of untreated SAM is 5-20 times that of a well-nourished child, and around half of under-five deaths have undernutrition as an underlying cause.",
+        "The child is not simply thin: every system has adapted to starvation - a small weak heart, reduced renal capacity for sodium and water, an atrophic gut with low lactase, depleted potassium and magnesium, impaired thermoregulation and a silent immune system. **This 'reductive adaptation' is why fast feeding, intravenous boluses, diuretics and early iron kill.**",
+      ],
+    },
+    {
+      heading: "Assessment: appetite test, complications and the sorting decision",
+      points: [
+        "Measure weight, length or height, MUAC with the tape at the mid-point between the acromion and the olecranon of the left arm, and press both feet for 3 seconds to grade oedema: **+ feet only, ++ feet and lower legs or hands, +++ generalised including the face.**",
+        "**The appetite test: offer ready-to-use therapeutic food (RUTF) or the facility's therapeutic feed in a quiet place with the mother, and the child passes if he eats at least the minimum quantity for his weight within 30 minutes** (roughly a third of a 92 g sachet for a child under 7 kg). Refusal is a medical complication in itself, because anorexia signals infection or metabolic derangement.",
+        "**Medical complications that mandate admission are: any IMNCI general danger sign, oedema +++, severe pneumonia, severe dehydration, hypothermia (axillary below 35 degrees C), fever of 38.5 degrees C or more, hypoglycaemia, severe anaemia, extensive skin lesions, and any condition needing intravenous treatment**, together with age under 6 months and failure of the appetite test.",
+        "**Uncomplicated SAM - alert, passes the appetite test, no medical complication, oedema no more than ++ - is managed in the community**; this is at least three quarters of all SAM and the child does far better at home than on a ward.",
+        "Look for the underlying cause and the coexisting disease in every child: tuberculosis (contact history, gastric aspirate or induced sputum, chest film), HIV (test every SAM child), urinary tract infection, malaria, measles in the last 3 months, congenital heart disease, cerebral palsy and cleft palate with feeding difficulty.",
+        "Screen with the RBSK teams and at the Anganwadi with monthly MUAC and weight; the Poshan Tracker flags the red-zone child, and the ASHA or Anganwadi worker refers her to the PHC for the appetite test and complication check.",
+      ],
+    },
+    {
+      heading: "The ten steps: stabilisation phase (days 1-7)",
+      points: [
+        "**Step 1, hypoglycaemia (blood glucose under 54 mg/dL): give 50 mL of 10% glucose or sugar water orally or by nasogastric tube, then start F-75 within 30 minutes and feed 2-hourly day and night; an unconscious child gets 10% dextrose 5 mL/kg intravenously, followed by the oral glucose.** Recheck in 30 minutes and start antibiotics, since hypoglycaemia and hypothermia both mean infection.",
+        "**Step 2, hypothermia (axillary below 35 degrees C): rewarm by skin-to-skin contact, cover including the head, keep the room at 25-30 degrees C, feed immediately and 2-hourly, and check the temperature 2-hourly**; never use a hot water bottle against the skin.",
+        "**Step 3, dehydration: assume it in every child with watery diarrhoea, do not rely on the skin pinch or sunken eyes, and rehydrate with ReSoMal by mouth or nasogastric tube - 5 mL/kg every 30 minutes for 2 hours, then 5-10 mL/kg/hour for the next 4-10 hours, alternating with F-75.** Monitor pulse, respiratory rate and urine output every 30 minutes; a rise of 15 in pulse and 5 in respiratory rate, or puffy eyelids, means stop. **Intravenous fluid is only for shock: Ringer's lactate with 5% dextrose (or half-strength Darrow's with 5% dextrose) 15 mL/kg over 1 hour, repeated once if improving.**",
+        "**Step 4, electrolytes: every child is potassium and magnesium depleted and sodium overloaded whatever the serum shows, so give potassium 3-4 mmol/kg/day and magnesium 0.4-0.6 mmol/kg/day through the mineral mix in the feeds, keep the diet low in sodium, and never treat the oedema with diuretics.**",
+        "**Step 5, infection: give antibiotics to every child, because fever and leucocytosis are absent - oral amoxicillin 15 mg/kg 8-hourly for 5 days when there is no complication; with complications, injection ampicillin 50 mg/kg 6-hourly for 2 days followed by oral amoxicillin for 5 days, plus gentamicin 7.5 mg/kg once daily for 7 days**, adding a third-generation cephalosporin if there is no improvement in 48 hours. Treat malaria on a positive test, and give measles vaccine on admission to an unimmunised child over 6 months.",
+        "**Step 6, micronutrients: vitamin A on day 1 (50,000 IU under 6 months, 100,000 IU at 6-12 months, 200,000 IU over 12 months, repeated on days 2 and 14 if there are eye signs or measles), folic acid 5 mg on day 1 then 1 mg daily, zinc 2 mg/kg/day, copper 0.3 mg/kg/day and a multivitamin - but NO iron in the stabilisation phase**, because free iron feeds bacteria and generates oxidative damage in a child who cannot yet bind it.",
+      ],
+    },
+    {
+      heading: "Steps 7-10: cautious feeding, catch-up growth, stimulation and follow-up",
+      points: [
+        "**Step 7, cautious feeding with F-75 (75 kcal and 0.9 g protein per 100 mL) at 130 mL/kg/day - 100 mL/kg/day if there is severe oedema - giving about 100 kcal/kg/day and 1-1.5 g protein/kg/day**, as 12 two-hourly feeds on days 1-2, 8 three-hourly feeds on days 3-5, and 6 four-hourly feeds from day 6, by cup and spoon; pass a nasogastric tube if the child takes under 80% of the target. Locally prepared F-75 is dried skimmed milk 25 g, sugar 70 g, cereal flour 35 g, oil 27 g and mineral mix 20 mL made up to 1 litre.",
+        "**Transition (usually days 3-7, when appetite returns and the oedema is going): replace F-75 with the same volume of F-100 (100 kcal and 2.9 g protein per 100 mL) for 2 days, then increase each feed by 10 mL until some is left over.** Watch for the pulse rising by 25 and respirations by 5 per minute - the early sign of the refeeding heart failure that the slow transition exists to prevent.",
+        "**Step 8, catch-up growth in the rehabilitation phase (weeks 2-6): F-100 or RUTF freely, aiming for 150-220 kcal/kg/day and 4-6 g protein/kg/day, and start elemental iron 3 mg/kg/day now that the child is gaining.** A weight gain of more than 10 g/kg/day is good, 5-10 g/kg/day moderate, and under 5 g/kg/day poor - poor gain means an untreated infection, a missed tuberculosis, or a feeding problem on the ward.",
+        "Move the child from therapeutic feeds to family foods through the phase - dal, rice, khichdi with added oil, egg, curd, banana - because the food the mother goes home with is what will keep the child alive; teach her the calorie-dense recipes, and the Anganwadi supplementary ration bridges the gap.",
+        "**Step 9, sensory stimulation and emotional support: structured play for 15-30 minutes a day, the mother present and involved in every feed, a cheerful ward** - the child with SAM is developmentally delayed and this is the part of treatment that restores the brain.",
+        "**Step 10, prepare for discharge and follow-up: discharge from the NRC when the child has gained at least 15% over the admission weight (or reached weight-for-height of -2 SD or MUAC 12.5 cm), the oedema has cleared, the appetite is good, the infections are treated, immunisation is updated and the mother can feed the child at home**; follow up fortnightly for 2 months and then monthly, with weight and MUAC at each visit, and readmit for weight loss or oedema. Every mother receives wage-loss compensation for the days at the NRC.",
+      ],
+    },
+    {
+      heading: "Community management of uncomplicated SAM and the programme",
+      points: [
+        "**Community-based management of acute malnutrition (CMAM) is the treatment of uncomplicated SAM at home with a ready-to-use therapeutic food or an energy-dense home-prepared food, routine oral amoxicillin, deworming and micronutrients, and weekly follow-up at the Anganwadi or health centre.** Recovery rates of over 75% are the programme standard.",
+        "The child receives about 175-200 kcal/kg/day - for RUTF (about 500 kcal per 92 g sachet) this is roughly 2 sachets a day at 5-7 kg and 3 sachets at 7-10 kg - given in small portions with water to drink, breastfeeding continued first, and the home diet added as appetite recovers. **The mother is told that the therapeutic food is medicine for this child only, not for sharing.**",
+        "**The 2023 national Protocol for Management of Malnutrition in Children (Ministry of Women and Child Development, under Poshan 2.0) places the Anganwadi worker, ASHA and medical officer at the centre**: growth monitoring at the Anganwadi, the appetite test and medical screening at the health facility, an energy-dense nutritious food (or an approved buffer stock) and a medical kit with amoxicillin, albendazole and micronutrients for the uncomplicated child, and referral to the NRC only for complications.",
+        "Weekly review measures weight and MUAC, checks for oedema and new complications, and refers if there is weight loss for 2 consecutive weeks, no gain for 3 weeks, or any complication; the child exits when weight-for-height reaches -2 SD or MUAC 12.5 cm without oedema for 2 weeks, and enters the moderate malnutrition and supplementary feeding stream.",
+        "Moderate acute malnutrition is managed with counselling on complementary feeding, the ICDS supplementary nutrition (take-home ration and hot cooked meals), deworming, iron-folic acid and monthly weighing; it converts to SAM readily with an episode of diarrhoea or measles, so it is the group to watch.",
+        "**Prevention is the whole of child nutrition: early and exclusive breastfeeding, timely complementary feeding, immunisation including measles, vitamin A and deworming, ORS and zinc for diarrhoea, sanitation, and the intergenerational work of adolescent and maternal nutrition** - stunting starts in the womb.",
+      ],
+    },
+    {
+      heading: "What kills the child in the ward, and the exam traps",
+      points: [
+        "**The four killers in the first 48 hours are hypoglycaemia, hypothermia, over-hydration and unrecognised infection**; the answer to all four is 2-hourly feeding day and night, warmth, ReSoMal in place of standard boluses, and routine antibiotics.",
+        "**Refeeding syndrome - hypophosphataemia, hypokalaemia and hypomagnesaemia with heart failure and arrhythmia when carbohydrate is reintroduced too fast** - is prevented by starting at 100 kcal/kg/day, the mineral mix, and the two-day F-100 transition.",
+        "**Severe anaemia (haemoglobin under 4 g/dL, or under 6 g/dL with respiratory distress) is transfused with whole blood 10 mL/kg slowly over 3 hours with frusemide 1 mg/kg at the start**, in the first 24 hours only; after day 2 a transfusion is more dangerous than the anaemia.",
+        "The vitamin A-deficient eye - night blindness, conjunctival xerosis, Bitot spots, corneal xerosis and ulceration - is a medical emergency: vitamin A on days 1, 2 and 14, chloramphenicol or tetracycline eye drops, atropine drops, and a pad for the ulcerated eye; never let the child rub it.",
+        "Do not give intravenous fluids for dehydration, diuretics for oedema, iron before catch-up growth, high-protein feeds in the first week, or a low-calorie 'dilute' diet in the second; and do not discharge a child whose mother has not herself been observed to feed him.",
+        "The child with SAM and tuberculosis, HIV or cerebral palsy fails to gain on the standard protocol and is the case that comes to the exam: look for the cause when the weight gain is under 5 g/kg/day.",
+      ],
+    },
+  ],
+  tables: [
+    {
+      heading: "The WHO ten steps by phase",
+      columns: ["Step", "Stabilisation (days 1-7)", "Transition (days 3-7 onwards)", "Rehabilitation (weeks 2-6)"],
+      rows: [
+        ["1. Hypoglycaemia", "Treat and prevent: 2-hourly feeds", "Prevent", "Prevent"],
+        ["2. Hypothermia", "Treat and prevent: skin-to-skin, warm room", "Prevent", "Prevent"],
+        ["3. Dehydration", "ReSoMal; IV only for shock", "-", "-"],
+        ["4. Electrolytes", "Potassium, magnesium; no diuretics", "Continue", "Continue"],
+        ["5. Infection", "Routine antibiotics; treat specific infections", "Complete course", "Deworm with albendazole"],
+        ["6. Micronutrients", "Vitamin A, folate, zinc, copper, multivitamin; NO iron", "No iron", "Iron 3 mg/kg/day from catch-up"],
+        ["7. Cautious feeding", "F-75 at 130 mL/kg/day, 100 kcal/kg/day", "F-100 same volume 2 days, then increase", "-"],
+        ["8. Catch-up growth", "-", "-", "F-100 or RUTF 150-220 kcal/kg/day; target over 10 g/kg/day"],
+        ["9. Sensory stimulation", "Mother present, tender care", "Structured play begins", "Play 15-30 minutes daily"],
+        ["10. Follow-up", "-", "-", "Discharge at 15% gain; fortnightly then monthly review"],
+      ],
+    },
+    {
+      heading: "Feeds, fluids and drugs in SAM: the numbers",
+      columns: ["Item", "Specification", "Dose or rate"],
+      rows: [
+        ["F-75", "75 kcal and 0.9 g protein per 100 mL", "130 mL/kg/day (100 mL/kg/day with severe oedema); 2-hourly, then 3-hourly, then 4-hourly"],
+        ["F-100", "100 kcal and 2.9 g protein per 100 mL", "Same volume as F-75 for 2 days, then increase by 10 mL per feed; 150-220 kcal/kg/day in rehabilitation"],
+        ["ReSoMal", "Sodium about 45, potassium 40 mmol/L: 1 sachet ORS in 2 litres water with 50 g sugar and 40 mL mineral mix", "5 mL/kg every 30 minutes for 2 hours, then 5-10 mL/kg/hour for 4-10 hours"],
+        ["Shock fluid", "Ringer's lactate with 5% dextrose or half-strength Darrow's with 5% dextrose", "15 mL/kg IV over 1 hour, repeat once if improving; then ReSoMal 10 mL/kg/hour"],
+        ["Hypoglycaemia", "Glucose under 54 mg/dL", "50 mL of 10% glucose orally or NG; 10% dextrose 5 mL/kg IV if unconscious"],
+        ["Amoxicillin (no complication)", "Oral", "15 mg/kg 8-hourly for 5 days"],
+        ["Ampicillin plus gentamicin (complicated)", "IV or IM", "Ampicillin 50 mg/kg 6-hourly for 2 days then oral amoxicillin 5 days; gentamicin 7.5 mg/kg once daily for 7 days"],
+        ["Vitamin A day 1", "By age", "50,000 IU under 6 months; 100,000 IU at 6-12 months; 200,000 IU over 12 months; repeat days 2 and 14 for eye signs or measles"],
+        ["Folic acid", "Oral", "5 mg on day 1, then 1 mg daily"],
+        ["Iron", "Elemental, oral", "3 mg/kg/day only once catch-up growth begins"],
+        ["Blood transfusion", "Haemoglobin under 4 g/dL, or under 6 g/dL with distress", "Whole blood 10 mL/kg over 3 hours with frusemide 1 mg/kg, in the first 24 hours"],
+      ],
+    },
+  ],
+  redFlags: [
+    "A child with SAM who is lethargic, has cold hands and a capillary refill over 3 seconds with a weak fast pulse - shock; this is the only indication for intravenous fluid, and even then 15 mL/kg over an hour, not a 20 mL/kg bolus.",
+    "Axillary temperature below 35 degrees C or blood glucose below 54 mg/dL in a malnourished child - both mean sepsis; feed, warm and start antibiotics within the hour.",
+    "Refusal of feeds or failure of the appetite test - anorexia is a complication, not a preference; admit.",
+    "Rising pulse (by 25/min) and respiratory rate (by 5/min), puffy eyelids or a new gallop during rehydration or transition - fluid overload and refeeding heart failure; stop the fluid or feed and reassess.",
+    "Corneal clouding or ulceration in a child with SAM - vitamin A deficiency about to cause blindness; give vitamin A, pad the eye and refer the same day.",
+    "Weight loss on two consecutive weekly visits, or no gain on three, in a child on community management - a missed complication, tuberculosis or HIV; refer to the NRC.",
+  ],
+  pearls: [
+    "Three criteria, any one is enough: weight-for-height below -3 SD, MUAC under 11.5 cm, or bilateral pitting oedema. MUAC alone, measured by an Anganwadi worker with a coloured tape, finds most of the children who will die.",
+    "The appetite test is the sorting hat: a child who eats goes home with therapeutic food and amoxicillin; a child who will not eat has a complication and is admitted.",
+    "F-75 is for stabilising, F-100 is for growing: 100 kcal/kg/day until the appetite returns and the oedema goes, then 150-220 kcal/kg/day with iron.",
+    "In SAM the skin pinch and sunken eyes cannot be trusted, so dehydration is assumed from a history of watery diarrhoea and treated with ReSoMal by mouth; intravenous fluid is for shock only.",
+    "No iron in the first week, no diuretics for the oedema, no intravenous bolus for the sunken eyes - the three prohibitions that the examiner wants stated.",
+    "Weight gain under 5 g/kg/day is a diagnosis, not a disappointment: look for tuberculosis, HIV, urinary infection and a feeding problem on the ward.",
+  ],
+  theory: [
+    {
+      id: "pediatrics-severe-acute-malnutrition-t1",
+      paper: "IV",
+      kind: "long",
+      marks: 10,
+      minutes: 20,
+      frequency: "core",
+      question:
+        "Define severe acute malnutrition. A 2-year-old girl weighing 6.8 kg with a mid-upper arm circumference of 10.6 cm and oedema of both feet is brought with diarrhoea for 4 days and refusal to eat. Describe her management at the Nutritional Rehabilitation Centre.",
+      openingLines: [
+        "Severe acute malnutrition in a child aged 6-59 months is defined by WHO and the national guidelines as weight-for-height below -3 SD of the WHO standard, or a mid-upper arm circumference below 11.5 cm, or bilateral pitting oedema - any one criterion suffices.",
+        "This girl has SAM by MUAC (10.6 cm) and by oedema, and she has two admission criteria - a medical complication (diarrhoea with probable dehydration) and anorexia, which is a failed appetite test - so she is complicated SAM and is admitted for the WHO ten-step protocol in three phases: stabilisation, transition and rehabilitation.",
+      ],
+      answer: [
+        {
+          heading: "1. Admission assessment",
+          points: [
+            "Weight, height, MUAC, grade the oedema (+ feet, ++ legs or hands, +++ face), and record the admission weight as the baseline for the 15% target.",
+            "Look for the killers: blood glucose, axillary temperature, signs of shock (lethargy, cold hands, capillary refill over 3 seconds, weak fast pulse), pneumonia, severe anaemia, eye signs of vitamin A deficiency, skin lesions and mouth ulcers.",
+            "Screen for cause and comorbidity: tuberculosis contact and chest film, HIV test, urine for infection, malaria test, measles in the last 3 months, and a feeding history including the household food.",
+          ],
+        },
+        {
+          heading: "2. Stabilisation: steps 1-7",
+          points: [
+            "**Hypoglycaemia: if glucose is under 54 mg/dL give 50 mL of 10% glucose orally or by nasogastric tube (5 mL/kg of 10% dextrose IV if unconscious), then F-75 within 30 minutes and 2-hourly feeds day and night.**",
+            "**Hypothermia: if axillary temperature is under 35 degrees C, skin-to-skin contact with the mother, cover the head, room at 25-30 degrees C, feed now and 2-hourly.**",
+            "**Dehydration: assume it from the diarrhoea; give ReSoMal 5 mL/kg every 30 minutes for 2 hours (34 mL), then 5-10 mL/kg/hour for 4-10 hours alternating with F-75, monitoring pulse, respiratory rate and urine every 30 minutes; stop if pulse rises by 15 and respirations by 5 or the eyelids puff.** Intravenous fluid only if she is in shock: Ringer's lactate with 5% dextrose 15 mL/kg over 1 hour, repeated once if improving.",
+            "**Electrolytes: potassium 3-4 mmol/kg/day and magnesium 0.4-0.6 mmol/kg/day through the mineral mix; low-sodium feeds; no diuretics for the oedema.**",
+            "**Infection: injection ampicillin 50 mg/kg 6-hourly for 2 days then oral amoxicillin 15 mg/kg 8-hourly to complete 7 days, plus gentamicin 7.5 mg/kg once daily for 7 days**; add cefotaxime if no improvement at 48 hours. Measles vaccine if not immunised; treat malaria on a positive test.",
+            "**Micronutrients: vitamin A 200,000 IU on day 1 (days 2 and 14 also if eye signs), folic acid 5 mg then 1 mg daily, zinc 2 mg/kg/day, copper 0.3 mg/kg/day, multivitamin; no iron yet.**",
+            "**Cautious feeding: F-75 at 100 mL/kg/day because of the oedema (about 680 mL/day, roughly 57 mL 2-hourly), giving 100 kcal/kg/day and 1-1.5 g protein/kg/day**, by cup and spoon, nasogastric tube if intake is under 80% of target; breastfeeding continues before each feed if she is still fed.",
+          ],
+        },
+        {
+          heading: "3. Transition",
+          points: [
+            "When the appetite returns and the oedema is resolving (usually day 3-7), give F-100 at the same volume for 2 days, then increase each feed by 10 mL until some is left.",
+            "Monitor for refeeding heart failure - pulse up 25/min, respirations up 5/min, a gallop or crepitations - and slow down if it appears.",
+          ],
+        },
+        {
+          heading: "4. Rehabilitation: steps 8-10",
+          points: [
+            "**F-100 or RUTF freely to 150-220 kcal/kg/day and 4-6 g protein/kg/day; start elemental iron 3 mg/kg/day; albendazole 400 mg once.** Target weight gain over 10 g/kg/day; under 5 g/kg/day means look for tuberculosis, HIV or a ward feeding problem.",
+            "Introduce calorie-dense family foods and teach the mother to prepare them; structured play 15-30 minutes a day with the mother involved.",
+            "**Discharge when she has gained 15% over admission weight (about 7.8 kg, or MUAC 12.5 cm), the oedema is gone, she eats well, infections are treated, immunisation is updated and the mother has been observed feeding her.**",
+          ],
+        },
+        {
+          heading: "5. Follow-up and prevention",
+          points: [
+            "Fortnightly follow-up for 2 months then monthly, with weight, MUAC and oedema check; readmit for weight loss or new oedema; enrol in ICDS supplementary nutrition and continue iron-folic acid.",
+            "Counsel on complementary feeding, hygiene, ORS and zinc for the next diarrhoea, and screen the siblings; the mother is paid wage-loss compensation for the admission.",
+          ],
+        },
+      ],
+      mustDraw: [
+        "A table of the ten steps against the three phases, marking where iron starts and where ReSoMal and antibiotics sit.",
+        "The F-75 to F-100 feeding schedule with volumes per kg and feed frequency by day.",
+      ],
+      markSplit: [
+        { part: "Definition with the three criteria and the admission decision", marks: 2 },
+        { part: "Stabilisation: hypoglycaemia, hypothermia, ReSoMal, electrolytes, antibiotics with doses", marks: 3 },
+        { part: "Micronutrients and F-75 feeding with correct volumes", marks: 2 },
+        { part: "Transition, F-100, iron, catch-up targets", marks: 1.5 },
+        { part: "Discharge criteria, follow-up, prevention", marks: 1.5 },
+      ],
+      keywords: ["severe acute malnutrition", "ten steps", "F-75", "ReSoMal", "NRC", "MUAC 11.5"],
+    },
+    {
+      id: "pediatrics-severe-acute-malnutrition-t2",
+      paper: "IV",
+      kind: "short-note",
+      marks: 5,
+      minutes: 10,
+      frequency: "common",
+      question: "Write short notes on community-based management of uncomplicated severe acute malnutrition.",
+      openingLines: [
+        "Community-based management of acute malnutrition (CMAM) treats the child with severe acute malnutrition who is alert, has a good appetite and no medical complication at home, with an energy-dense therapeutic food, routine antibiotics and weekly follow-up, reserving admission for the complicated child.",
+        "It rests on the evidence that three quarters of children with SAM have no complications and recover as well or better at home, at a fraction of the cost, without the exposure to hospital infection and the loss of the mother's wages.",
+      ],
+      answer: [
+        {
+          heading: "Who qualifies",
+          points: [
+            "Age 6-59 months with SAM by MUAC under 11.5 cm, weight-for-height below -3 SD, or oedema of grade + or ++.",
+            "**Passes the appetite test** - eats the minimum quantity of therapeutic food for weight within 30 minutes - and has no IMNCI danger sign, no severe pneumonia, dehydration, hypothermia, high fever, severe anaemia or extensive skin lesions.",
+            "Infants under 6 months, oedema +++ and any failed appetite test are admitted instead.",
+          ],
+        },
+        {
+          heading: "The treatment package",
+          points: [
+            "**Therapeutic food providing 175-200 kcal/kg/day** - ready-to-use therapeutic food (about 500 kcal per 92 g sachet, roughly 2 sachets daily at 5-7 kg and 3 at 7-10 kg) or the energy-dense nutritious food supplied under the national protocol, with breastfeeding continued and clean water offered; the food is medicine for this child and is not shared.",
+            "**Oral amoxicillin 15 mg/kg 8-hourly for 5 days**, albendazole 400 mg (200 mg at 12-23 months) at the second visit, vitamin A if not given in the last month, measles vaccine if due, and folic acid; iron is supplied by the therapeutic food.",
+            "Counselling on hygiene, feeding, ORS and zinc for diarrhoea, and completing immunisation.",
+          ],
+        },
+        {
+          heading: "Follow-up and exit",
+          points: [
+            "Weekly at the Anganwadi or health centre: weight, MUAC, oedema, temperature, appetite, new illness; refer to the NRC for any complication, weight loss on 2 consecutive visits, or no gain over 3 weeks.",
+            "**Discharge when MUAC is 12.5 cm or more or weight-for-height reaches -2 SD, with no oedema for 2 weeks**, into the moderate malnutrition stream with supplementary nutrition and monthly growth monitoring for at least 4 months.",
+          ],
+        },
+        {
+          heading: "Programme in India",
+          points: [
+            "The 2023 Protocol for Management of Malnutrition in Children under Poshan 2.0 formalises this pathway: Anganwadi growth monitoring, the Poshan Tracker, medical screening and appetite test by the medical officer, an energy-dense food and medical kit for home treatment, and NRC referral only for complications.",
+            "Programme standards: recovery over 75%, death under 10%, default under 15%.",
+          ],
+        },
+      ],
+      mustDraw: ["A flow chart from screening (MUAC, weight-for-height, oedema) through the appetite test and complication check to home treatment or NRC admission, with the weekly follow-up loop and exit criteria."],
+      markSplit: [
+        { part: "Eligibility and the appetite test", marks: 1.5 },
+        { part: "Food, antibiotics and micronutrients with doses", marks: 1.5 },
+        { part: "Follow-up, referral triggers and exit criteria", marks: 1 },
+        { part: "Programme and standards", marks: 1 },
+      ],
+      keywords: ["CMAM", "appetite test", "RUTF", "uncomplicated SAM", "Poshan 2.0"],
+    },
+  ],
+  mcqs: [
+    {
+      id: "pediatrics-severe-acute-malnutrition-q1",
+      stem: "An 18-month-old boy has a MUAC of 11.0 cm, weight-for-height of -3.4 SD and no oedema. He is alert, afebrile, has no danger sign, and eats the offered RUTF eagerly. What is the correct management?",
+      options: [
+        "Admit to the Nutritional Rehabilitation Centre for F-75 feeding",
+        "Manage at home with therapeutic food, oral amoxicillin for 5 days and weekly follow-up",
+        "Prescribe iron 3 mg/kg/day and a multivitamin and review in a month",
+        "Admit for intravenous fluids and blood transfusion",
+        "Counsel on complementary feeding only, as he has moderate malnutrition",
+      ],
+      answer: 1,
+      explanation:
+        "MUAC below 11.5 cm and weight-for-height below -3 SD both make this severe acute malnutrition, but the child is alert, has no complication and passes the appetite test, so he is uncomplicated SAM and is managed in the community with a therapeutic or energy-dense food, routine amoxicillin, micronutrients and weekly review. Admission for F-75 is reserved for complicated SAM or a failed appetite test. Iron and a multivitamin alone with a month's gap ignore the energy deficit and the infection risk, and iron is not started until catch-up growth begins. There is no indication for intravenous fluid or blood. Calling this moderate malnutrition misreads the cut-offs.",
+      difficulty: "easy",
+    },
+    {
+      id: "pediatrics-severe-acute-malnutrition-q2",
+      stem: "A 3-year-old with kwashiorkor admitted to the NRC develops watery diarrhoea. He is alert, has sunken eyes and a slow skin pinch, warm hands and a capillary refill of 2 seconds. What is the correct fluid management?",
+      options: [
+        "Ringer's lactate 30 mL/kg intravenously over 30 minutes, then 70 mL/kg over 2.5 hours",
+        "Standard low-osmolarity ORS 75 mL/kg over 4 hours",
+        "ReSoMal 5 mL/kg every 30 minutes for 2 hours by mouth or nasogastric tube, then 5-10 mL/kg/hour, alternating with F-75, with half-hourly monitoring",
+        "Normal saline 20 mL/kg bolus and frusemide for the oedema",
+        "Restrict all fluids because he is oedematous",
+      ],
+      answer: 2,
+      explanation:
+        "In severe acute malnutrition, sunken eyes and a slow skin pinch are unreliable and intravenous fluid is reserved for shock, which this warm, alert child with a normal capillary refill does not have; dehydration is treated with ReSoMal, the low-sodium high-potassium solution, by mouth or nasogastric tube at 5 mL/kg every 30 minutes for 2 hours and then 5-10 mL/kg/hour with close monitoring for overload. Plan C intravenous rehydration would precipitate heart failure in the adapted circulation. Standard ORS carries too much sodium and too little potassium for the malnourished child. Saline boluses and diuretics are both specifically prohibited, and withholding fluid from a child losing it in stool is not an option.",
+      difficulty: "moderate",
+    },
+    {
+      id: "pediatrics-severe-acute-malnutrition-q3",
+      stem: "A 14-month-old girl with severe acute malnutrition is on day 2 of F-75 in the NRC. Her haemoglobin is 8 g/dL. When should oral iron be started?",
+      options: [
+        "Immediately, at 3 mg/kg/day, because she is anaemic",
+        "Only after a blood transfusion",
+        "In the rehabilitation phase, once she is on F-100 and gaining weight, at 3 mg/kg/day",
+        "Never; iron is contraindicated in kwashiorkor",
+        "On day 1 as a single intramuscular dose",
+      ],
+      answer: 2,
+      explanation:
+        "Iron is deliberately withheld in the stabilisation phase because the malnourished child cannot bind free iron, which promotes bacterial growth and oxidative injury, and it is introduced at 3 mg/kg/day only after catch-up growth has begun on F-100, usually in the second week. Starting it immediately is the classic error. A haemoglobin of 8 g/dL does not need transfusion, which is reserved for under 4 g/dL or under 6 g/dL with respiratory distress. Iron is not contraindicated in kwashiorkor, only delayed. Intramuscular iron has no place in this protocol.",
+      difficulty: "easy",
+    },
+    {
+      id: "pediatrics-severe-acute-malnutrition-q4",
+      stem: "A 10 kg child with severe acute malnutrition and mild oedema is admitted. Which is the correct initial F-75 prescription?",
+      options: [
+        "1300 mL/day as 12 two-hourly feeds of about 108 mL, giving about 100 kcal/kg/day",
+        "2000 mL/day as 6 four-hourly feeds, giving 150 kcal/kg/day",
+        "1000 mL/day of F-100 as 8 feeds",
+        "Full-strength cow's milk 150 mL/kg/day",
+        "Intravenous 10% dextrose at maintenance for 48 hours before starting feeds",
+      ],
+      answer: 0,
+      explanation:
+        "F-75 provides 75 kcal per 100 mL and is given at 130 mL/kg/day - 1300 mL for a 10 kg child - as 12 two-hourly feeds on days 1-2, which delivers about 100 kcal/kg/day and 1-1.5 g protein/kg/day, the cautious intake that prevents refeeding syndrome; severe (+++) oedema would reduce this to 100 mL/kg/day. Two litres at 150 kcal/kg/day in 4-hourly feeds is a rehabilitation-phase intake given far too early, with long gaps that invite hypoglycaemia. F-100 is not started until the transition. Undiluted cow's milk has too much protein and sodium and too little energy. Withholding feeds for 48 hours on dextrose alone guarantees hypoglycaemia between infusions and delays recovery.",
+      difficulty: "moderate",
+    },
+    {
+      id: "pediatrics-severe-acute-malnutrition-q5",
+      stem: "On the first night in the NRC, a 2-year-old with marasmus is found drowsy with cold peripheries and an axillary temperature of 34.6 degrees C. Blood glucose is 40 mg/dL. What is the immediate management?",
+      options: [
+        "Warm bath and oral paracetamol",
+        "50 mL of 10% glucose by mouth or nasogastric tube, skin-to-skin warming, start antibiotics and feed F-75 2-hourly",
+        "Intravenous normal saline 20 mL/kg and observation until morning",
+        "Hot water bottle against the abdomen and glucose recheck in 4 hours",
+        "Intramuscular hydrocortisone and oxygen",
+      ],
+      answer: 1,
+      explanation:
+        "Hypoglycaemia (under 54 mg/dL) and hypothermia (under 35 degrees C) together mean sepsis until proved otherwise, and the protocol is immediate sugar - 50 mL of 10% glucose orally or by nasogastric tube, or 5 mL/kg of 10% dextrose intravenously if unconscious - with skin-to-skin rewarming, parenteral antibiotics and 2-hourly F-75 feeds, rechecking glucose in 30 minutes. A bath cools the child further and paracetamol is irrelevant. A saline bolus does not treat hypoglycaemia and risks overload. A hot water bottle burns the skin of a malnourished child, and a 4-hour wait allows brain injury. Hydrocortisone and oxygen do not address either problem.",
+      difficulty: "easy",
+    },
+  ],
+  cards: [
+    { id: "pediatrics-severe-acute-malnutrition-c1", front: "Criteria for SAM in a child aged 6-59 months", back: "Any one: weight-for-height below -3 SD; MUAC below 11.5 cm; bilateral pitting oedema. Moderate acute malnutrition: -3 to -2 SD, or MUAC 11.5 to under 12.5 cm." },
+    { id: "pediatrics-severe-acute-malnutrition-c2", front: "Admission criteria for the NRC", back: "SAM with a failed appetite test, any medical complication (danger sign, oedema +++, severe pneumonia, dehydration, hypothermia, fever 38.5 C or more, hypoglycaemia, severe anaemia, extensive skin lesions), or age under 6 months." },
+    { id: "pediatrics-severe-acute-malnutrition-c3", front: "F-75: composition and initial volume", back: "75 kcal and 0.9 g protein per 100 mL. 130 mL/kg/day (100 mL/kg/day if severe oedema), 2-hourly on days 1-2, 3-hourly days 3-5, 4-hourly from day 6. About 100 kcal/kg/day." },
+    { id: "pediatrics-severe-acute-malnutrition-c4", front: "ReSoMal: what and how much", back: "Low-sodium (about 45 mmol/L), high-potassium (40 mmol/L) rehydration solution. 5 mL/kg every 30 minutes for 2 hours, then 5-10 mL/kg/hour for 4-10 hours, alternating with F-75. Stop if pulse rises by 15 and RR by 5, or eyelids puff." },
+    { id: "pediatrics-severe-acute-malnutrition-c5", front: "Antibiotics in complicated SAM", back: "Ampicillin 50 mg/kg IV/IM 6-hourly for 2 days, then oral amoxicillin 15 mg/kg 8-hourly for 5 days; plus gentamicin 7.5 mg/kg once daily for 7 days. Uncomplicated: oral amoxicillin 15 mg/kg 8-hourly for 5 days." },
+    { id: "pediatrics-severe-acute-malnutrition-c6", front: "Hypoglycaemia and hypothermia thresholds in SAM", back: "Glucose under 54 mg/dL: 50 mL of 10% glucose orally/NG, or 5 mL/kg 10% dextrose IV if unconscious. Axillary temperature under 35 C: skin-to-skin, cover head, feed 2-hourly. Both mean start antibiotics." },
+    { id: "pediatrics-severe-acute-malnutrition-c7", front: "When does iron start, and at what dose?", back: "Only in the rehabilitation phase once catch-up growth has begun on F-100 (usually week 2): elemental iron 3 mg/kg/day. Never in stabilisation." },
+    { id: "pediatrics-severe-acute-malnutrition-c8", front: "Weight gain targets and discharge from the NRC", back: "Over 10 g/kg/day good; 5-10 moderate; under 5 poor. Discharge at 15% gain over admission weight (or WHZ -2 SD or MUAC 12.5 cm), no oedema, good appetite, mother trained; follow-up fortnightly for 2 months then monthly." },
+  ],
+  references: [
+    "Operational Guidelines on Facility Based Management of Children with Severe Acute Malnutrition, Ministry of Health and Family Welfare, Government of India, 2011",
+    "WHO Guideline: Updates on the Management of Severe Acute Malnutrition in Infants and Children, 2013; WHO Guideline on the Prevention and Management of Wasting and Nutritional Oedema, 2023",
+    "Protocol for Management of Malnutrition in Children, Ministry of Women and Child Development, Government of India, 2023 (Poshan 2.0)",
+    "National Family Health Survey-5 (2019-21), India Fact Sheet, IIPS and MoHFW",
+    "IAP Guidelines 2006 on Hospital Based Management of Severely Malnourished Children (Indian Pediatrics), and F-IMNCI Participants Manual, MoHFW",
+    "Ghai Essential Pediatrics, 10th edition, 2022 - nutrition and severe acute malnutrition",
+  ],
+});
+
+topics.push({
+  id: "pediatrics-fever-febrile-seizure",
+  title: "Fever in the under-five and febrile seizures",
+  oneLiner:
+    "Fever in a child under five is an axillary temperature of 37.5 degrees C or more; the IMNCI pathway sorts it into very severe febrile disease, malaria, measles and fever with or without a focus, paracetamol 15 mg/kg is the only routine drug, and a brief generalised seizure with fever in a child of 6 months to 5 years without meningitis is a simple febrile seizure that needs counselling, not investigation.",
+  frequency: "common",
+  keywords: [
+    "fever without focus",
+    "very severe febrile disease",
+    "malaria",
+    "artesunate",
+    "chloroquine",
+    "primaquine",
+    "enteric fever",
+    "dengue",
+    "scrub typhus",
+    "measles",
+    "Kawasaki disease",
+    "urinary tract infection",
+    "paracetamol",
+    "ibuprofen",
+    "nimesulide",
+    "febrile seizure",
+    "febrile convulsion",
+    "clobazam",
+    "midazolam",
+    "lumbar puncture",
+  ],
+  sections: [
+    {
+      heading: "Definitions and the IMNCI fever pathway",
+      points: [
+        "**Fever for IMNCI is a history of fever, a child who feels hot, or an axillary temperature of 37.5 degrees C or more** (rectal 38 degrees C). The temperature itself is a poor guide to seriousness; the general danger signs, the respiratory rate, the skin, the neck and the child's behaviour are what decide the classification.",
+        "**Very severe febrile disease is fever with any general danger sign or a stiff neck**: give the first dose of injection ampicillin 50 mg/kg and gentamicin 7.5 mg/kg, prevent hypoglycaemia, give one dose of paracetamol if the temperature is 38.5 degrees C or more, and in a high malaria risk area add the first dose of injection artesunate before urgent referral.",
+        "**In a high or low malaria risk area, every fever is tested by rapid diagnostic test or microscopy the same day**; a positive test is malaria and is treated by species, and a negative test with no runny nose, no measles and no other obvious cause is still reviewed in 2 days. **Fever persisting every day for more than 7 days is referred for assessment** - enteric fever, tuberculosis, urinary infection and Kawasaki disease live in that group.",
+        "**Measles is fever with a generalised maculopapular rash and one of cough, runny nose or red eyes**; every child gets vitamin A (100,000 IU at 6-12 months, 200,000 IU above 12 months, on days 1 and 2), the child with clouding of the cornea, deep mouth ulcers or a danger sign is referred as severe complicated measles, and pus from the eye or mouth ulcers are treated with tetracycline eye ointment and gentian violet.",
+        "**Any fever in an infant under 2 months is a danger sign in its own right (possible serious bacterial infection)** and follows the young infant chart: first dose of antibiotics and referral, because the febrile neonate has bacteraemia, meningitis or a urinary infection in about one in ten cases and looks well in most of them.",
+        "Ask the questions that find the focus - cough, ear pain, diarrhoea, dysuria, rash, joint swelling, a limp, a recent injection - and examine the ears, throat, chest, abdomen, skin, fontanelle, neck and joints of every febrile child undressed; **the commonest missed foci are the ear, the urine and the bone.**",
+      ],
+    },
+    {
+      heading: "Fever without a focus, the urine and the specific fevers to know",
+      points: [
+        "**In a well-looking child of 3-36 months with fever and no focus after a proper examination, the commonest occult bacterial infection is a urinary tract infection - in girls, uncircumcised boys, and any child with fever over 39 degrees C for more than 2 days - so a clean-catch urine for dipstick, microscopy and culture is the one investigation that must be done.** Occult bacteraemia has become rare where Hib and pneumococcal vaccines are given.",
+        "A confirmed urinary infection is treated for 7-10 days with oral cefixime 8 mg/kg/day or amoxicillin-clavulanate 30-40 mg/kg/day of amoxicillin, or parenterally with ceftriaxone 75 mg/kg once daily if the child is under 3 months, vomiting or toxic; **every child with a first febrile urinary infection has a renal ultrasound, and a micturating cystourethrogram is added for an abnormal scan, an atypical organism or recurrence** to find vesicoureteric reflux.",
+        "**Malaria: Plasmodium vivax is treated with chloroquine 25 mg/kg base over 3 days (10, 10 and 5 mg/kg) plus primaquine 0.25 mg/kg daily for 14 days; P. falciparum with artemisinin combination therapy for 3 days (artesunate 4 mg/kg daily with sulfadoxine-pyrimethamine on day 1, or artemether-lumefantrine where the state policy specifies it) plus a single dose of primaquine 0.75 mg/kg on day 2.** Primaquine is not given under 1 year of age or in G6PD deficiency. **Severe malaria is injection artesunate 3 mg/kg (2.4 mg/kg above 20 kg) at 0, 12 and 24 hours and then daily**, followed by a full oral course; pre-referral rectal artesunate 10 mg/kg is licensed for children under 6 years.",
+        "**Enteric fever is fever without a focus in the second week, with a coated tongue, relative bradycardia, splenomegaly and often constipation or diarrhoea; take a blood culture before antibiotics, do not rely on the Widal test in the first week, and treat with oral azithromycin 20 mg/kg once daily for 7 days or cefixime 20 mg/kg/day in two doses for 14 days**, with ceftriaxone 75-100 mg/kg/day for the toxic child. The typhoid conjugate vaccine at 9-12 months is the prevention.",
+        "**Dengue in a child is fever with flushing, retro-orbital pain, myalgia and a positive tourniquet test; paracetamol is the only antipyretic, and the warning signs - abdominal pain, persistent vomiting, mucosal bleeding, lethargy, hepatomegaly, a rising haematocrit with a falling platelet count - mark the start of the critical phase on days 3-6 when the fever falls.** Scrub typhus - fever, an eschar, lymphadenopathy, hepatosplenomegaly, from a rural scrub area - is treated with doxycycline 2.2 mg/kg twice daily for 7 days at any age, or azithromycin 10 mg/kg daily for 5 days.",
+        "**Kawasaki disease is fever for 5 days or more with four of five: bilateral non-purulent conjunctival injection, red cracked lips or strawberry tongue, oedema or erythema of the hands and feet with later peeling, a polymorphous rash, and a cervical node of 1.5 cm or more**; it is the commonest cause of acquired heart disease in children, needs an echocardiogram, and intravenous immunoglobulin 2 g/kg with aspirin within 10 days prevents coronary aneurysms. Petechiae or purpura with fever is meningococcaemia until proved otherwise - ceftriaxone now, then refer.",
+      ],
+    },
+    {
+      heading: "Antipyretics, home care and what not to give",
+      points: [
+        "**Paracetamol 15 mg/kg per dose every 4-6 hours, not more than 5 doses (75 mg/kg) in 24 hours, is the antipyretic of choice for a child who is uncomfortable, not for a number on the thermometer**; 125 mg/5 mL and 250 mg/5 mL syrups and 100 mg/mL drops coexist in the market, so write the volume in millilitres and check the concentration on the bottle the family already has.",
+        "**Ibuprofen 10 mg/kg per dose every 6-8 hours is the alternative above 6 months in a well-hydrated child, but it is avoided in dengue, varicella, dehydration, asthma with aspirin sensitivity and any bleeding tendency.** Routine alternation of paracetamol and ibuprofen adds dosing errors without benefit.",
+        "**Nimesulide is banned in India below 12 years because of hepatotoxicity, aspirin is avoided in febrile children because of Reye syndrome, and mefenamic acid has no advantage** and causes renal injury in the dehydrated child; intramuscular antipyretic injections are never justified for fever alone.",
+        "Tepid sponging with lukewarm water is used only after the antipyretic and only to comfort a very hot child; cold water, ice and alcohol rubs cause shivering and vasoconstriction and raise the core temperature.",
+        "Home care is extra fluids, breastfeeding, light clothing, a ventilated room and food as tolerated; **the mother is told to return immediately for a convulsion, inability to drink, drowsiness, fast breathing, a rash, blood in the stool or fever beyond 2 days**, and the follow-up visit is written on the card.",
+        "Antibiotics are for a bacterial focus, not for fever; the child with a red throat and a runny nose has a viral illness, and the single most common inappropriate prescription in Indian primary care is an antibiotic for a viral fever of 2 days.",
+      ],
+    },
+    {
+      heading: "Febrile seizures: definition, types and who gets them",
+      points: [
+        "**A febrile seizure is a seizure occurring in a child aged 6 to 60 months with a temperature of 38 degrees C or higher, which is not the result of central nervous system infection or any metabolic disturbance, in a child with no history of previous afebrile seizures.** It is the commonest seizure disorder of childhood, affecting 2-5% of children, with a peak at 12-18 months and a family history in about a third.",
+        "**A simple febrile seizure is generalised, lasts under 15 minutes, does not recur within 24 hours and leaves no focal deficit; a complex febrile seizure has any of a focal onset, a duration of 15 minutes or more, or recurrence within the same illness within 24 hours.** Febrile status epilepticus is a febrile seizure lasting 30 minutes or more.",
+        "Most occur in the first day of the illness, often as the first sign that the child is febrile, and the usual triggers are the viral fevers of early childhood - roseola (human herpesvirus 6), influenza and upper respiratory infections - and, less often, shigellosis, urinary infection and the post-vaccine fevers after DPT or measles-containing vaccine, which are not a contraindication to further doses.",
+        "**The seizure itself does no harm: simple febrile seizures do not cause brain damage, intellectual disability, behavioural problems or death**, and the parents' fear that the child will 'become epileptic' is the main thing the consultation must address.",
+        "**Recurrence occurs in about one third overall, and in half of those whose first seizure was before 12 months; the risk factors are age under 18 months, a family history of febrile seizures, a relatively low temperature at the time of the seizure, and a short interval (under an hour) between the onset of fever and the seizure.**",
+        "**The risk of later epilepsy is about 1-2% after a simple febrile seizure, barely above the population rate; it rises to 5-10% with complex features, a pre-existing neurodevelopmental abnormality, or a family history of epilepsy.**",
+      ],
+    },
+    {
+      heading: "Febrile seizures: assessment and what not to investigate",
+      points: [
+        "**The first task is to find the cause of the fever and to exclude meningitis**: a bulging fontanelle, neck stiffness, Kernig or Brudzinski signs, a petechial rash, irritability that persists after the post-ictal period, a focal deficit or a seizure lasting more than 15 minutes all demand a lumbar puncture.",
+        "**Lumbar puncture is mandatory with meningeal signs at any age, and is strongly considered in an infant of 6-12 months who is not fully immunised against Haemophilus influenzae type b and pneumococcus, and in any child already on antibiotics, in whom the signs of meningitis are masked.** A well, alert child over 18 months with a simple febrile seizure and no meningeal signs does not need one.",
+        "**Routine blood counts, electrolytes, calcium, glucose, EEG and neuroimaging are not indicated after a simple febrile seizure**; a blood glucose is checked at the bedside during a prolonged seizure, and electrolytes are sent if there has been vomiting or diarrhoea. EEG after a simple febrile seizure neither predicts recurrence nor epilepsy.",
+        "A complex febrile seizure, especially focal or prolonged, or a child with an abnormal examination between seizures, is referred to a paediatrician; imaging and EEG are decided there, and the differential includes meningitis, encephalitis, a structural lesion and the epilepsy syndromes that begin with fever, such as Dravet syndrome.",
+        "The history should distinguish a seizure from a rigor, a breath-holding spell, a syncope and febrile delirium - rigors are not accompanied by loss of consciousness, tongue biting, incontinence or a post-ictal phase.",
+        "Examine the child fully for the source of the fever - ears, throat, chest, urine - because the seizure has taken the attention, and the febrile illness still needs its own diagnosis and its own treatment.",
+      ],
+    },
+    {
+      heading: "Febrile seizures: acute management, prophylaxis and counselling",
+      points: [
+        "**A child who is still convulsing on arrival is placed on the side, the airway is cleared, oxygen given, the blood glucose checked, and if the seizure has lasted more than 5 minutes a benzodiazepine is given: buccal midazolam 0.3 mg/kg or intranasal midazolam 0.2 mg/kg (maximum 10 mg), intravenous lorazepam 0.1 mg/kg, or rectal diazepam 0.5 mg/kg through a needleless syringe** - repeated once after 5-10 minutes if the seizure continues, and then referred as status epilepticus with the airway protected.",
+        "Treat the fever with paracetamol 15 mg/kg once the child can swallow, undress the child, and treat the underlying infection on its merits; a child who has stopped seizing, is alert and has a clear cause for the fever can go home from the primary care clinic after observation and counselling.",
+        "**Antipyretics do not prevent febrile seizures and are given for comfort, not prophylaxis; continuous anticonvulsant prophylaxis with phenobarbitone or valproate is not recommended, because the side effects outweigh the benefit for a benign condition.**",
+        "**Intermittent prophylaxis during febrile illnesses - oral clobazam 0.75-1 mg/kg/day in two divided doses for the first 2-3 days of every fever (or oral diazepam 0.33 mg/kg 8-hourly for 48 hours) - is an option for the child with frequent or prolonged recurrences, or when parental anxiety is disabling**, after the sedation and ataxia it causes have been explained.",
+        "**Counselling is the treatment: explain that febrile seizures are common, frightening and harmless, that about one in three children will have another, that the risk of epilepsy is close to that of any child, and that the seizure does not damage the brain.** Teach the recovery position, not to restrain the child or put anything in the mouth, to note the time, and to give buccal midazolam if prescribed and the seizure passes 5 minutes.",
+        "Return immediately for a seizure lasting more than 5 minutes, repeated seizures, failure to wake fully within 30 minutes, a rash, neck stiffness, persistent vomiting or a very drowsy child; vaccinations continue on schedule with paracetamol available at home.",
+      ],
+    },
+  ],
+  tables: [
+    {
+      heading: "IMNCI classification of fever (2 months to 5 years)",
+      columns: ["Classification", "Signs", "Treatment"],
+      rows: [
+        ["Very severe febrile disease (pink)", "Any general danger sign, or stiff neck", "First dose injection ampicillin and gentamicin; prevent hypoglycaemia; paracetamol if 38.5 C or more; first dose injection artesunate in high malaria risk; refer urgently"],
+        ["Malaria (yellow)", "Fever with a positive RDT or smear (test all fevers where malaria occurs)", "Species-specific treatment: chloroquine plus primaquine for vivax; ACT plus single-dose primaquine for falciparum; paracetamol; follow up in 2 days if fever persists"],
+        ["Fever - malaria unlikely, or no malaria (yellow or green)", "Fever with negative test, or a clear other cause", "Paracetamol for 38.5 C or more; treat the cause; return in 2 days if fever persists; refer if fever every day for more than 7 days"],
+        ["Severe complicated measles (pink)", "Measles with any danger sign, corneal clouding or deep extensive mouth ulcers", "Vitamin A; first dose antibiotics; tetracycline eye ointment for corneal clouding; refer urgently"],
+        ["Measles with eye or mouth complications (yellow)", "Pus draining from the eye, or mouth ulcers", "Vitamin A; tetracycline eye ointment; gentian violet to mouth ulcers; follow up in 2 days"],
+        ["Measles (green)", "Fever, generalised rash and cough, runny nose or red eyes; no complications", "Vitamin A on days 1 and 2; home care advice"],
+      ],
+    },
+    {
+      heading: "Simple versus complex febrile seizure",
+      columns: ["Feature", "Simple", "Complex"],
+      rows: [
+        ["Type", "Generalised tonic-clonic", "Focal onset or focal features"],
+        ["Duration", "Under 15 minutes", "15 minutes or more (status if 30 minutes or more)"],
+        ["Recurrence within 24 hours", "None", "Recurs within the same illness"],
+        ["Post-ictal deficit", "None", "Todd paresis or persistent drowsiness possible"],
+        ["Share of all febrile seizures", "About 70-75%", "About 25-30%"],
+        ["Risk of later epilepsy", "1-2%", "5-10%, higher with neurodevelopmental abnormality or family history of epilepsy"],
+        ["Investigations", "None routinely; lumbar puncture only if meningitis suspected or under 12 months and unimmunised", "Paediatric referral; lumbar puncture, EEG and imaging as decided by the specialist"],
+      ],
+    },
+  ],
+  redFlags: [
+    "Fever with any general danger sign or a stiff neck - very severe febrile disease; ampicillin, gentamicin, sugar and urgent referral, with artesunate where malaria is possible.",
+    "Fever in an infant under 2 months - possible serious bacterial infection regardless of how well the baby looks; first dose of antibiotics and refer.",
+    "Fever with petechiae or purpura, or a child who is mottled with cold extremities - meningococcal or other septicaemia; ceftriaxone before the ambulance arrives.",
+    "A febrile seizure lasting over 5 minutes, recurring in the same illness, with focal features, or in a child who does not wake within 30 minutes - status, complex seizure or meningitis; benzodiazepine and referral.",
+    "Fever with abdominal pain, persistent vomiting, bleeding, lethargy or a rising haematocrit in dengue season - warning signs of the critical phase; admit for monitored fluid.",
+    "Fever for 5 days or more with red eyes, cracked lips, a rash and swollen hands - Kawasaki disease; the 10-day window for immunoglobulin is closing.",
+  ],
+  pearls: [
+    "The temperature does not decide the classification; the danger signs, the neck, the skin and the behaviour do. A 40 degree fever in a playful child is less worrying than 38 in a lethargic one.",
+    "In a well child of 3-36 months with fever and no focus, the investigation is the urine - a urinary tract infection is the occult bacterial infection you will actually find.",
+    "Paracetamol 15 mg/kg per dose, up to 5 doses a day, for comfort; ibuprofen 10 mg/kg above 6 months if well hydrated and not dengue; nimesulide never under 12, aspirin never in fever.",
+    "A febrile seizure is 6-60 months, 38 degrees or more, no meningitis, no prior afebrile seizure. Simple if generalised, under 15 minutes, once in 24 hours - and a simple one needs no test.",
+    "Lumbar puncture when there are meningeal signs at any age, and think hard about it under 12 months, when unimmunised, or when antibiotics have already been given.",
+    "Recurrence is one in three, epilepsy risk 1-2%, brain damage nil - say these three numbers to the parents and you have treated the febrile seizure.",
+  ],
+  theory: [
+    {
+      id: "pediatrics-fever-febrile-seizure-t1",
+      paper: "IV",
+      kind: "long",
+      marks: 10,
+      minutes: 20,
+      frequency: "common",
+      question:
+        "A 2-year-old boy is rushed to your clinic after a generalised convulsion lasting 3 minutes at home, on the first day of a fever. He is now drowsy but rousable, with a temperature of 39.6 degrees C. Discuss your assessment, immediate management, and the advice you would give the parents.",
+      openingLines: [
+        "A generalised seizure lasting under 15 minutes on the first day of a febrile illness in a child aged 6-60 months, with no prior afebrile seizure, is most likely a simple febrile seizure - the commonest seizure disorder of childhood, affecting 2-5% of children - but that label can be applied only after meningitis, encephalitis and a metabolic cause have been excluded clinically.",
+        "The management has three parts: stabilise the child and stop any ongoing seizure, find and treat the cause of the fever while deciding whether a lumbar puncture is needed, and counsel the parents about recurrence, epilepsy risk and what to do at home.",
+      ],
+      answer: [
+        {
+          heading: "1. Immediate assessment and stabilisation",
+          points: [
+            "Airway, breathing, circulation: recovery position, suction if needed, oxygen by mask, pulse, capillary refill and saturation; check the blood glucose at the bedside.",
+            "**If he starts seizing again and it lasts over 5 minutes: buccal midazolam 0.3 mg/kg (about 3.6 mg for 12 kg) or intranasal midazolam 0.2 mg/kg, intravenous lorazepam 0.1 mg/kg if a line is in, or rectal diazepam 0.5 mg/kg**; repeat once after 5-10 minutes and refer as status epilepticus if it continues.",
+            "Undress him, give paracetamol 15 mg/kg (about 180 mg) once he can swallow, and observe until he is fully awake - a simple febrile seizure is followed by a brief post-ictal drowsiness that clears within 30 minutes.",
+          ],
+        },
+        {
+          heading: "2. History",
+          points: [
+            "Describe the seizure: onset generalised or one-sided, duration, incontinence, eye deviation, whether the parents timed it, how long until he responded, and whether there has been more than one.",
+            "The fever: onset in relation to the seizure (a seizure within the first hour of fever raises recurrence risk), cough, coryza, ear pain, diarrhoea, dysuria, rash, recent vaccination, and drugs given at home.",
+            "Past history: previous febrile or afebrile seizures, developmental milestones, birth history; family history of febrile seizures or epilepsy; immunisation status, particularly Hib and pneumococcal vaccines.",
+          ],
+        },
+        {
+          heading: "3. Examination to exclude meningitis and find the focus",
+          points: [
+            "**Fontanelle (closed at this age, so neck stiffness matters more), neck stiffness, Kernig and Brudzinski signs, level of consciousness once post-ictal, pupils, tone, focal weakness, and a petechial or purpuric rash.**",
+            "Ears, throat, chest, abdomen, skin and joints for the source of fever; roseola, tonsillitis, otitis media and viral upper respiratory infection are the usual causes.",
+            "Weight and nutrition, and a note of the general danger signs under IMNCI.",
+          ],
+        },
+        {
+          heading: "4. Investigations - and the decision about lumbar puncture",
+          points: [
+            "**Lumbar puncture is indicated if there are meningeal signs, if he remains irritable or drowsy after the post-ictal period, if the seizure was complex, or if he has been on antibiotics; it is not needed in an alert, fully immunised 2-year-old with a simple febrile seizure and a normal examination.**",
+            "No routine blood count, electrolytes, calcium, EEG or neuroimaging after a simple febrile seizure; a malaria test if the area is endemic, a urine examination if no focus is found, and electrolytes only if there has been vomiting or diarrhoea.",
+            "Refer to a paediatrician for a complex seizure (focal, over 15 minutes, or repeated within 24 hours), an abnormal neurological examination, or developmental delay.",
+          ],
+        },
+        {
+          heading: "5. Treatment of the illness and disposition",
+          points: [
+            "Treat the cause of fever on its merits: paracetamol 15 mg/kg every 4-6 hours as needed, extra fluids, and antibiotics only for a bacterial focus such as otitis media or a urinary infection.",
+            "Discharge home once fully alert, feeding and with a diagnosis for the fever; admit or refer if any doubt about meningitis, if the seizure was complex, or if the parents cannot manage a recurrence at home.",
+          ],
+        },
+        {
+          heading: "6. Counselling the parents",
+          points: [
+            "**Febrile seizures are common, frightening and benign: they do not damage the brain or intelligence; about one in three children has another, usually within a year; and the chance of epilepsy is 1-2%, almost the same as for any child.**",
+            "During a seizure: lay him on his side on a safe surface, do not restrain him, put nothing in the mouth, note the time, and come to hospital if it lasts more than 5 minutes or recurs; teach buccal midazolam if it is prescribed.",
+            "Antipyretics are for comfort and do not prevent seizures; continuous anticonvulsants are not used; **intermittent clobazam 0.75-1 mg/kg/day for the first 2-3 days of any fever may be offered if seizures recur frequently or are prolonged.**",
+            "Continue vaccinations on schedule, with paracetamol available on the day; return for any seizure over 5 minutes, repeated seizures, failure to wake, rash, neck stiffness or persistent vomiting.",
+          ],
+        },
+      ],
+      mustDraw: [
+        "A table of simple versus complex febrile seizure with the criteria and prognosis.",
+        "A flow chart from arrival: ABC and glucose, seizing over 5 minutes - benzodiazepine; meningeal signs or under 12 months unimmunised - lumbar puncture; otherwise treat the fever and counsel.",
+      ],
+      markSplit: [
+        { part: "Definition and classification with criteria", marks: 2 },
+        { part: "Stabilisation and benzodiazepine doses", marks: 2 },
+        { part: "History and examination directed at meningitis and the focus", marks: 2 },
+        { part: "Lumbar puncture decision and what not to investigate", marks: 2 },
+        { part: "Counselling: recurrence, epilepsy risk, home management, prophylaxis", marks: 2 },
+      ],
+      keywords: ["febrile seizure", "simple febrile seizure", "lumbar puncture", "midazolam", "clobazam", "recurrence"],
+    },
+    {
+      id: "pediatrics-fever-febrile-seizure-t2",
+      paper: "IV",
+      kind: "short-note",
+      marks: 5,
+      minutes: 10,
+      frequency: "common",
+      question: "Write short notes on the approach to fever without a focus in a child aged 3 to 36 months.",
+      openingLines: [
+        "Fever without a focus is an acute febrile illness in which a careful history and complete examination do not reveal the source; in a child aged 3-36 months most such fevers are viral and self-limiting, but a small proportion hide a serious bacterial infection - most often a urinary tract infection, less often bacteraemia, pneumonia or early meningitis.",
+        "The approach is to identify the toxic child who needs immediate treatment and referral, to examine the urine of the well child with high or persistent fever, and to avoid empirical antibiotics in the rest.",
+      ],
+      answer: [
+        {
+          heading: "First: is the child toxic?",
+          points: [
+            "Look for the IMNCI danger signs (unable to drink, vomits everything, convulsions, lethargic or unconscious), a stiff neck, a petechial rash, grunting, fast breathing, poor perfusion or a bulging fontanelle.",
+            "**Any of these is very severe febrile disease: first dose of injection ampicillin 50 mg/kg and gentamicin 7.5 mg/kg, prevent hypoglycaemia, paracetamol, artesunate if malaria is possible, and urgent referral for cultures, lumbar puncture and admission.**",
+          ],
+        },
+        {
+          heading: "Second: the well-looking child",
+          points: [
+            "Re-examine fully undressed - ears, throat, chest, abdomen, skin, joints, bones and the perineum - because the ear and the bone are the foci most often missed.",
+            "Test for malaria wherever it occurs; do a clean-catch urine dipstick and microscopy with culture if the fever is 39 degrees C or more, has lasted over 2 days, or the child is a girl or an uncircumcised boy - **urinary tract infection is the commonest occult bacterial infection at this age.**",
+            "A total leucocyte count over 15,000/microlitre or a raised C-reactive protein raises the probability of bacterial infection and justifies a chest film and blood culture in a child with fever over 39 degrees C, but the widespread use of Hib and pneumococcal vaccines has made occult bacteraemia uncommon.",
+            "Do not give empirical antibiotics to the well child with a normal urine; treat with paracetamol 15 mg/kg as needed, fluids and feeding.",
+          ],
+        },
+        {
+          heading: "Third: follow-up and the prolonged fever",
+          points: [
+            "Review in 48 hours, earlier if worse; most viral fevers declare themselves by then with a rash (roseola, after 3 days of fever), coryza or diarrhoea.",
+            "**Fever every day for more than 7 days is referred: enteric fever, urinary infection, tuberculosis, malaria, Kawasaki disease, juvenile arthritis and leukaemia are the causes to look for**, with a blood culture, complete blood count, urine culture, chest film and Mantoux test as the first tier.",
+            "Teach the parents the return signs: convulsion, inability to drink, drowsiness, fast breathing, rash, or fever beyond 2 days.",
+          ],
+        },
+      ],
+      mustDraw: ["A flow chart: fever without focus - toxic (danger signs, stiff neck, petechiae) versus well - malaria test and urine - antibiotics only for a proven focus - review at 48 hours - refer at 7 days."],
+      markSplit: [
+        { part: "Definition and identification of the toxic child with pre-referral treatment", marks: 1.5 },
+        { part: "Investigation of the well child, especially urine and malaria", marks: 2 },
+        { part: "Avoiding empirical antibiotics, follow-up and prolonged fever", marks: 1.5 },
+      ],
+      keywords: ["fever without focus", "urinary tract infection", "occult bacteraemia", "very severe febrile disease", "prolonged fever"],
+    },
+  ],
+  mcqs: [
+    {
+      id: "pediatrics-fever-febrile-seizure-q1",
+      stem: "An 18-month-old fully immunised girl had a generalised tonic-clonic seizure lasting 2 minutes at the onset of a fever of 39.4 degrees C. Thirty minutes later she is playful, has a runny nose, and there is no neck stiffness or rash. What is the appropriate next step?",
+      options: [
+        "Lumbar puncture to exclude meningitis",
+        "EEG and CT scan of the brain",
+        "Start phenobarbitone prophylaxis for 2 years",
+        "Treat the fever, counsel the parents about febrile seizures and review in 2 days",
+        "Admit for 48 hours of intravenous ceftriaxone",
+      ],
+      answer: 3,
+      explanation:
+        "A brief generalised seizure once in 24 hours in a child of 6-60 months with fever, who is now alert with a viral focus and no meningeal signs, is a simple febrile seizure, and the correct management is treatment of the fever, counselling about recurrence and home management, and a planned review. Lumbar puncture is for meningeal signs, an unimmunised infant under 12 months, or a child pretreated with antibiotics. EEG and imaging are not indicated after a simple febrile seizure and change nothing. Continuous phenobarbitone is not recommended because its cognitive and behavioural side effects outweigh the benefit in a benign condition. There is no indication for parenteral antibiotics in a well child with a viral illness.",
+      difficulty: "easy",
+    },
+    {
+      id: "pediatrics-fever-febrile-seizure-q2",
+      stem: "Which of the following children with a first simple febrile seizure has the highest risk of a recurrent febrile seizure?",
+      options: [
+        "A 4-year-old with a temperature of 40.5 degrees C on the third day of fever",
+        "A 9-month-old whose seizure occurred within an hour of the fever starting, at 38.3 degrees C, whose mother had febrile seizures",
+        "A 3-year-old with otitis media and a temperature of 39.8 degrees C",
+        "A 2-year-old with roseola and no family history",
+        "A 5-year-old with a seizure after 2 days of dengue fever",
+      ],
+      answer: 1,
+      explanation:
+        "The recognised risk factors for recurrence are age under 18 months at the first seizure, a family history of febrile seizures, a relatively low temperature at the time of the seizure, and a short interval between the onset of fever and the seizure; the 9-month-old has all four and faces a recurrence risk of about 50%. The others are older, seized at high temperatures after the fever was established, and lack a family history, which places them nearer the baseline one-in-three risk or below. Note that the height of the fever is inversely, not directly, related to recurrence.",
+      difficulty: "moderate",
+    },
+    {
+      id: "pediatrics-fever-febrile-seizure-q3",
+      stem: "A 3-year-old weighing 14 kg is brought to the primary health centre still convulsing 8 minutes after a febrile seizure began at home. No intravenous line is in place. What is the correct immediate drug?",
+      options: [
+        "Oral paracetamol 210 mg",
+        "Intramuscular phenobarbitone 20 mg/kg",
+        "Buccal midazolam 0.3 mg/kg (about 4 mg), or rectal diazepam 0.5 mg/kg (7 mg)",
+        "Intravenous phenytoin 20 mg/kg after securing a line",
+        "Tepid sponging and observation for another 5 minutes",
+      ],
+      answer: 2,
+      explanation:
+        "A seizure lasting more than 5 minutes is treated at once with a benzodiazepine by a route that does not need venous access - buccal or intranasal midazolam, or rectal diazepam 0.5 mg/kg through a needleless syringe - repeated once after 5-10 minutes if needed. Paracetamol does not stop a seizure and cannot be swallowed by a convulsing child. Intramuscular phenobarbitone is slow in onset and is a second-line agent after benzodiazepines have failed. Phenytoin is a second-line intravenous drug for established status, not the first step in a child without a line. Waiting and sponging allows the seizure to become status epilepticus.",
+      difficulty: "easy",
+    },
+    {
+      id: "pediatrics-fever-febrile-seizure-q4",
+      stem: "A mother asks for a fever medicine for her 10 kg 2-year-old, who has a viral fever of 39 degrees C and is irritable. Which prescription is correct?",
+      options: [
+        "Paracetamol 150 mg (6 mL of 125 mg/5 mL syrup) every 4-6 hours as needed, not more than 5 doses in 24 hours",
+        "Nimesulide 50 mg twice daily for 3 days",
+        "Aspirin 100 mg 6-hourly",
+        "Paracetamol 5 mg/kg alternating with ibuprofen 20 mg/kg every 2 hours",
+        "Intramuscular diclofenac 1 mg/kg once now",
+      ],
+      answer: 0,
+      explanation:
+        "Paracetamol 15 mg/kg per dose - 150 mg for a 10 kg child, which is 6 mL of the 125 mg/5 mL syrup - every 4-6 hours as needed, with a ceiling of 5 doses a day, is the standard and safe prescription, written in millilitres against the stated concentration. Nimesulide is banned in India below 12 years for hepatotoxicity. Aspirin is avoided in febrile children because of Reye syndrome and would be dangerous if this were dengue or varicella. The alternating regimen uses a subtherapeutic paracetamol dose, a double ibuprofen dose and a dangerous frequency. Intramuscular NSAID injections have no place in the management of fever.",
+      difficulty: "easy",
+    },
+    {
+      id: "pediatrics-fever-febrile-seizure-q5",
+      stem: "An 8-month-old girl has had fever of 39.2 degrees C for 2 days. She is alert, feeding, has no cough, ear discharge, rash or diarrhoea, and the examination is normal. The malaria test is negative. What is the most useful next investigation?",
+      options: [
+        "Widal test",
+        "Chest radiograph",
+        "Clean-catch urine for dipstick, microscopy and culture",
+        "Lumbar puncture",
+        "Serum ferritin and C-reactive protein",
+      ],
+      answer: 2,
+      explanation:
+        "In a well-appearing child of 3-36 months with fever of 39 degrees C or more for over 2 days and no focus, the commonest occult bacterial infection is a urinary tract infection - particularly in a girl - so a properly collected urine is the investigation that changes management. The Widal test is unreliable in the first week and enteric fever is unlikely at this age with only 2 days of fever. A chest film in a child with no respiratory signs has a low yield. Lumbar puncture is not indicated in an alert child with no meningeal signs and no seizure. Ferritin and CRP do not identify the source.",
+      difficulty: "moderate",
+    },
+  ],
+  cards: [
+    { id: "pediatrics-fever-febrile-seizure-c1", front: "IMNCI: very severe febrile disease", back: "Fever with any general danger sign or a stiff neck. First dose ampicillin 50 mg/kg and gentamicin 7.5 mg/kg, prevent hypoglycaemia, paracetamol if 38.5 C or more, artesunate if high malaria risk, refer urgently." },
+    { id: "pediatrics-fever-febrile-seizure-c2", front: "Paracetamol and ibuprofen doses in children", back: "Paracetamol 15 mg/kg per dose every 4-6 hours, maximum 5 doses (75 mg/kg) in 24 hours. Ibuprofen 10 mg/kg per dose 6-8 hourly above 6 months, avoided in dengue, dehydration and varicella. Nimesulide banned under 12 years; no aspirin." },
+    { id: "pediatrics-fever-febrile-seizure-c3", front: "Definition of a febrile seizure", back: "A seizure in a child aged 6-60 months with a temperature of 38 C or more, not due to CNS infection or a metabolic disturbance, in a child with no previous afebrile seizure." },
+    { id: "pediatrics-fever-febrile-seizure-c4", front: "Simple versus complex febrile seizure", back: "Simple: generalised, under 15 minutes, once in 24 hours, no focal deficit. Complex: focal, or 15 minutes or more, or recurs within 24 hours. Status: 30 minutes or more." },
+    { id: "pediatrics-fever-febrile-seizure-c5", front: "Recurrence and epilepsy risk after a febrile seizure", back: "Recurrence about 1 in 3 (1 in 2 if first seizure under 12 months); risk factors: age under 18 months, family history, low temperature at seizure, seizure within an hour of fever onset. Epilepsy 1-2% after simple, 5-10% after complex with neurodevelopmental abnormality or family history of epilepsy." },
+    { id: "pediatrics-fever-febrile-seizure-c6", front: "When is lumbar puncture indicated after a febrile seizure?", back: "Meningeal signs at any age; strongly consider at 6-12 months if unimmunised against Hib and pneumococcus; consider if already on antibiotics; complex seizure or persistent drowsiness. Not for a simple seizure in an alert child." },
+    { id: "pediatrics-fever-febrile-seizure-c7", front: "Drugs to stop a seizure lasting over 5 minutes without IV access", back: "Buccal midazolam 0.3 mg/kg or intranasal midazolam 0.2 mg/kg (max 10 mg); rectal diazepam 0.5 mg/kg; IM midazolam 0.2 mg/kg. IV lorazepam 0.1 mg/kg if a line is in. Repeat once after 5-10 minutes." },
+    { id: "pediatrics-fever-febrile-seizure-c8", front: "Prophylaxis of febrile seizures", back: "No continuous anticonvulsant. Antipyretics do not prevent recurrence. Intermittent oral clobazam 0.75-1 mg/kg/day in two doses for the first 2-3 days of a febrile illness (or diazepam 0.33 mg/kg 8-hourly for 48 hours) for frequent or prolonged recurrences." },
+  ],
+  references: [
+    "IMNCI Physicians' Chart Booklet, Ministry of Health and Family Welfare, Government of India (revised edition)",
+    "National Guidelines for Diagnosis and Treatment of Malaria, National Center for Vector Borne Diseases Control, MoHFW, current edition; WHO Guidelines for Malaria, 2023",
+    "American Academy of Pediatrics, Clinical Practice Guideline: Febrile Seizures - Neurodiagnostic Evaluation of the Child with a Simple Febrile Seizure, Pediatrics 2011, and Long-term Management, Pediatrics 2008",
+    "IAP Guidelines on Febrile Seizures (Indian Pediatrics), and IAP Standard Treatment Guidelines 2022 - fever without focus, enteric fever, dengue, scrub typhus",
+    "National Guidelines for Clinical Management of Dengue Fever, NCVBDC, MoHFW, 2023",
+    "Ghai Essential Pediatrics, 10th edition, 2022 - infections and central nervous system; Nelson Textbook of Pediatrics, 22nd edition, 2024 - febrile seizures",
+  ],
+});
+
+topics.push({
+  id: "pediatrics-anaemia-deworming",
+  title: "Childhood anaemia, Anemia Mukt Bharat and deworming",
+  oneLiner:
+    "Anaemia in a child of 6-59 months is a haemoglobin under 11 g/dL, is iron deficiency in most Indian children, is treated with elemental iron 3 mg/kg/day for 2-3 months beyond normalisation, and is prevented by the Anemia Mukt Bharat 6x6x6 package of prophylactic iron-folic acid, biannual albendazole, fortified food and testing.",
+  frequency: "common",
+  keywords: [
+    "iron deficiency anaemia",
+    "Anemia Mukt Bharat",
+    "AMB",
+    "6x6x6",
+    "IFA syrup",
+    "WIFS",
+    "National Deworming Day",
+    "albendazole",
+    "hookworm",
+    "soil transmitted helminths",
+    "Mentzer index",
+    "thalassaemia trait",
+    "ferritin",
+    "infantile tremor syndrome",
+    "vitamin B12",
+    "cow's milk anaemia",
+    "double fortified salt",
+    "haemoglobinometer",
+  ],
+  sections: [
+    {
+      heading: "Definitions, cut-offs and the burden",
+      points: [
+        "**Anaemia is a haemoglobin below 11 g/dL at 6-59 months, below 11.5 g/dL at 5-11 years, and below 12 g/dL at 12-14 years and in non-pregnant girls and women from 15 years** (below 13 g/dL in boys and men from 15 years, below 11 g/dL in pregnancy). Severity at 6-59 months: mild 10-10.9, moderate 7-9.9, severe under 7 g/dL; at 5-14 years, mild is 11-11.4 or 11-11.9, moderate 8-10.9, severe under 8.",
+        "**NFHS-5 (2019-21) found 67.1% of children aged 6-59 months anaemic, up from 58.6% in NFHS-4**, with 59.1% of adolescent girls and 57% of all women of reproductive age affected; India has one of the highest childhood anaemia prevalences in the world despite four decades of programmes.",
+        "**Iron deficiency accounts for about half to two thirds of childhood anaemia in India**; the rest is vitamin B12 and folate deficiency, haemoglobinopathies (beta thalassaemia trait carried by 3-4% of the population, sickle cell in the tribal belts), malaria, chronic infection and inflammation, and fluorosis in endemic pockets.",
+        "The peak is at 6-24 months, when the iron stores laid down in the third trimester are exhausted, breast milk alone no longer meets the requirement, and complementary feeding is late, cereal-based and poor in iron; low birth weight, prematurity, early cord clamping, maternal anaemia and cow's milk feeding all bring the peak forward.",
+        "The cost is not only pallor: iron deficiency in infancy impairs psychomotor development and cognition in ways that are only partly reversible, and anaemia lowers school performance, physical work capacity and immunity, which is why the programme starts at 6 months rather than at school.",
+        "WHO revised its cut-offs in 2024, lowering the threshold at 6-23 months to 10.5 g/dL; the national programme continues to use 11 g/dL for the whole 6-59 month band, and that is the figure to quote in an Indian examination.",
+      ],
+    },
+    {
+      heading: "Clinical assessment and the diagnosis of iron deficiency",
+      points: [
+        "Ask about the diet in detail - age at starting complementary foods, what they consist of, how much cow's milk or packet milk a day (over 500 mL/day causes occult gut blood loss and displaces iron-rich food), tea with meals, a vegetarian household - and about pica, worms in the stool, walking barefoot, recurrent infections, prematurity and maternal anaemia.",
+        "Examine for pallor of the palms, conjunctiva, tongue and nail beds, koilonychia, angular stomatitis, a smooth atrophic tongue, splenomegaly (thalassaemia, malaria, kala-azar), jaundice (haemolysis), knuckle hyperpigmentation and tremors (vitamin B12 deficiency), a flow murmur, and the tachycardia, hepatomegaly and oedema of the child in heart failure from severe anaemia.",
+        "**Measure the haemoglobin with a digital haemoglobinometer at the point of care - the programme standard - and send a complete blood count with red cell indices and a peripheral smear**: iron deficiency shows a low mean corpuscular volume and mean corpuscular haemoglobin, a raised red cell distribution width, and a microcytic hypochromic smear with anisopoikilocytosis and pencil cells.",
+        "**The Mentzer index (mean corpuscular volume divided by the red cell count in millions) separates the two commonest microcytic anaemias: above 13 suggests iron deficiency, below 13 suggests beta thalassaemia trait**, which has a high red cell count, target cells, a normal red cell distribution width and a haemoglobin A2 above 3.5% on HPLC.",
+        "**Serum ferritin below 12 micrograms/L (below 30 in the presence of infection or inflammation) confirms depleted iron stores**; transferrin saturation under 16% and a raised total iron binding capacity support it. A reticulocyte count, stool examination for hookworm ova and a malaria test complete the first line, and the diagnosis is proved by a haemoglobin rise of at least 1 g/dL after 4 weeks of iron.",
+        "Macrocytosis with hypersegmented neutrophils means vitamin B12 or folate deficiency; **infantile tremor syndrome - a pale, plump, apathetic breastfed infant of 6-24 months from a vegetarian mother, with hyperpigmented knuckles, sparse light hair, regression of milestones and coarse tremors - is vitamin B12 deficiency** and is treated with parenteral B12, with propranolol for the tremors.",
+      ],
+    },
+    {
+      heading: "Treatment of iron deficiency anaemia",
+      points: [
+        "**Elemental iron 3 mg/kg/day (up to 6 mg/kg/day in severe deficiency), in one or two doses between meals with a vitamin C source, continued for 2-3 months after the haemoglobin has normalised to replenish stores** - a total of 3-6 months. Ferrous sulphate is 20% elemental iron, ferrous fumarate 33% and the national IFA syrup contains 20 mg elemental iron per mL.",
+        "**Expect a reticulocytosis by day 5-7 and a haemoglobin rise of about 1 g/dL in 2-4 weeks**; recheck the haemoglobin at 4 weeks and at the end of treatment. Failure to respond means non-adherence, the wrong diagnosis (thalassaemia trait, chronic disease), continuing blood loss (hookworm, cow's milk), malabsorption (coeliac disease, Helicobacter pylori) or persistent infection.",
+        "Warn the family about dark stools and staining of the teeth (give the syrup by dropper to the back of the tongue and brush afterwards), give it in small frequent doses if it causes vomiting or abdominal pain, and **keep the bottle out of reach - accidental iron ingestion is a leading cause of fatal poisoning in toddlers.**",
+        "**Under Anemia Mukt Bharat, mild and moderate anaemia at 6-59 months and 5-9 years is treated at the health centre with oral iron 3 mg/kg/day for 2 months and retested; adolescents receive 60 mg of elemental iron daily for mild and 120 mg daily for moderate anaemia for 2 months; severe anaemia at any age is referred to the first referral unit or district hospital** for investigation, intravenous iron sucrose in older children and adolescents, or transfusion.",
+        "**Transfuse only for a haemoglobin under 4 g/dL, or under 6 g/dL with heart failure, respiratory distress, severe infection or an urgent operation - packed red cells 5-10 mL/kg over 3-4 hours with frusemide 1 mg/kg** if there is cardiac compromise; the chronically anaemic child is compensated and rapid correction kills.",
+        "Treat the cause alongside the iron: deworm, stop or limit cow's milk to under 500 mL/day, start iron-rich complementary foods, treat malaria, and refer a child with a haemoglobinopathy for genetic counselling of the family and, in thalassaemia major, for regular transfusion and chelation.",
+      ],
+    },
+    {
+      heading: "Anemia Mukt Bharat: the 6x6x6 strategy",
+      points: [
+        "**Anemia Mukt Bharat (2018) is built on six target groups, six interventions and six institutional mechanisms - the 6x6x6 strategy - with the aim of reducing anaemia prevalence by 3 percentage points a year across the life cycle.** The six beneficiaries are children 6-59 months, children 5-9 years, adolescents 10-19 years, women of reproductive age 20-49 years, pregnant women and lactating women.",
+        "**Intervention 1 is prophylactic iron-folic acid: 1 mL of IFA syrup (20 mg elemental iron and 100 micrograms folic acid) twice a week from 6 to 59 months, given by the ASHA; one pink tablet (45 mg iron and 400 micrograms folic acid) weekly at 5-9 years; one blue tablet (60 mg iron and 500 micrograms folic acid) weekly at 10-19 years under the Weekly Iron and Folic Acid Supplementation (WIFS) scheme; one red tablet (60 mg and 500 micrograms) weekly for non-pregnant women 20-49 years; and 60 mg iron with 500 micrograms folic acid daily for 180 days in pregnancy from the second trimester and for 180 days after delivery.**",
+        "**Intervention 2 is deworming: albendazole 400 mg twice a year for children from 1 to 19 years (200 mg at 12-23 months), and a single dose in the second trimester of pregnancy.** Interventions 3-6 are intensified year-round behaviour change communication (the 'Solid Body, Smart Mind' campaign, delayed cord clamping, exclusive breastfeeding, iron-rich complementary feeding, dietary diversity), testing with digital haemoglobinometers and point-of-care treatment, mandatory provision of iron-fortified foods in public programmes (double fortified salt, fortified rice and wheat flour in the PDS, ICDS and PM POSHAN school meals), and addressing the non-nutritional causes in endemic pockets - malaria, haemoglobinopathies and fluorosis.",
+        "The six institutional mechanisms are intra-ministerial coordination, a National Anaemia Mukt Bharat Unit, a National Centre of Excellence and Advanced Research on Anaemia Control at AIIMS, convergence with other ministries, strengthening of the supply chain, and the AMB dashboard and digital portal that ranks districts on coverage.",
+        "The IFA syrup is delivered at the Anganwadi and by the ASHA during home visits, recorded on the MCP card and the Poshan Tracker; the school teacher gives the weekly tablet after the mid-day meal on a fixed day, and the ANM screens haemoglobin at the Village Health and Nutrition Day. A child on treatment doses does not also receive the prophylactic dose.",
+        "**Dietary counselling is the intervention that outlasts the programme: iron-rich foods (ragi, green leafy vegetables, jaggery, dal, sprouts, egg, liver and meat where eaten) with vitamin C (amla, guava, lemon, tomato) at the same meal, no tea or coffee with meals, cooking in iron vessels, and no cow's milk before 1 year and not more than 500 mL a day after it.**",
+      ],
+    },
+    {
+      heading: "Soil-transmitted helminths and National Deworming Day",
+      points: [
+        "**The three soil-transmitted helminths are the roundworm Ascaris lumbricoides, the whipworm Trichuris trichiura and the hookworms Ancylostoma duodenale and Necator americanus**; the WHO estimated over 240 million Indian children aged 1-14 years at risk when the programme began, and hookworm is the worm that causes iron deficiency, each adult worm bleeding the host 0.03-0.2 mL a day.",
+        "Ascaris causes abdominal pain, malnutrition, occasional intestinal obstruction in the heavily infected toddler and biliary migration; Trichuris causes chronic dysentery and rectal prolapse; hookworm causes anaemia, hypoproteinaemia and growth failure, and enters through bare feet.",
+        "**National Deworming Day is observed twice a year, on 10 February and 10 August, with a mop-up day within the following week; every child aged 1-19 years is given albendazole at the school or Anganwadi - a half tablet (200 mg) crushed between two spoons and given with water at 12-23 months, and one full 400 mg chewable tablet from 2 to 19 years** - by the teacher or Anganwadi worker in the presence of a health worker, with out-of-school children reached by the ASHA.",
+        "A child who is sick on the day, or already on other medicines, is deferred to the mop-up day; albendazole is not given under 1 year or in the first trimester of pregnancy. **Side effects are mild and transient - nausea, abdominal pain, vomiting, diarrhoea, fatigue, and the passage of worms in a heavily infected child - and are managed with rest and fluids; every session has a health worker and a referral plan in case of an adverse event.**",
+        "Deworming alone does not prevent reinfection within months, so the day is paired with WASH education - handwashing with soap before eating and after defecation, footwear, cutting nails, using a toilet, safe water and washing vegetables - and with the school and Anganwadi iron programmes.",
+        "Outside the campaign, a child with a proved or suspected worm infection is treated with a single dose of albendazole 400 mg (200 mg at 1-2 years) or mebendazole 100 mg twice daily for 3 days; **in Ascaris intestinal obstruction the anthelmintic is given only after the obstruction has settled**, because paralysed worms can complete the block.",
+      ],
+    },
+    {
+      heading: "Prevention across the life cycle and the child at special risk",
+      points: [
+        "**Delayed cord clamping for 1-3 minutes, exclusive breastfeeding for 6 months, and iron-rich complementary foods from 6 months are the three infant interventions**; low birth weight and preterm babies receive elemental iron 2 mg/kg/day from 2 weeks of age until 1 year, and term breastfed infants whose complementary feeding is delayed benefit from 1 mg/kg/day from 4-6 months.",
+        "The mother's anaemia is the child's: iron stores at birth mirror maternal status, so antenatal IFA, deworming in the second trimester and treatment of maternal anaemia are paediatric prevention.",
+        "Fortification reaches the child who never comes to the clinic - double fortified salt with iron and iodine, fortified rice through the PDS and school meals, and fortified wheat flour - and the FSSAI +F logo identifies them.",
+        "Screen and counsel families with thalassaemia trait, offer partner testing before marriage and prenatal diagnosis in pregnancy, and register sickle cell disease under the National Sickle Cell Anaemia Elimination Mission (2023) in the tribal districts, which screens everyone up to 40 years and issues a card.",
+        "The child with chronic kidney disease, tuberculosis, HIV, juvenile arthritis or malabsorption has anaemia of inflammation that does not respond to iron alone; a low haemoglobin with a normal or high ferritin in such a child means treat the disease, not the iron.",
+        "Record every haemoglobin on the MCP card and the Poshan Tracker, retest 2 months after treatment, and hand the child back to the prophylactic schedule - the programme's weakness is the treated child who is lost between the treatment and the prophylaxis.",
+      ],
+    },
+  ],
+  tables: [
+    {
+      heading: "WHO haemoglobin cut-offs (g/dL) used by Anemia Mukt Bharat",
+      columns: ["Group", "No anaemia", "Mild", "Moderate", "Severe"],
+      rows: [
+        ["6-59 months", "11 or more", "10-10.9", "7-9.9", "Under 7"],
+        ["5-11 years", "11.5 or more", "11-11.4", "8-10.9", "Under 8"],
+        ["12-14 years", "12 or more", "11-11.9", "8-10.9", "Under 8"],
+        ["Non-pregnant women 15 years and above", "12 or more", "11-11.9", "8-10.9", "Under 8"],
+        ["Pregnant women", "11 or more", "10-10.9", "7-9.9", "Under 7"],
+        ["Men 15 years and above", "13 or more", "11-12.9", "8-10.9", "Under 8"],
+      ],
+    },
+    {
+      heading: "Anemia Mukt Bharat: prophylaxis and deworming by beneficiary",
+      columns: ["Beneficiary", "Prophylactic IFA", "Deworming", "Delivered by"],
+      rows: [
+        ["Children 6-59 months", "1 mL IFA syrup (20 mg iron + 100 mcg folic acid) twice a week", "Albendazole 200 mg at 12-23 months, 400 mg at 2-5 years, twice a year", "ASHA at home visits; Anganwadi"],
+        ["Children 5-9 years", "1 pink tablet (45 mg iron + 400 mcg folic acid) weekly", "Albendazole 400 mg twice a year", "School teacher; Anganwadi for out-of-school"],
+        ["Adolescents 10-19 years", "1 blue tablet (60 mg iron + 500 mcg folic acid) weekly (WIFS)", "Albendazole 400 mg twice a year", "School teacher; ASHA for out-of-school"],
+        ["Women 20-49 years, non-pregnant", "1 red tablet (60 mg iron + 500 mcg folic acid) weekly", "-", "ASHA and ANM"],
+        ["Pregnant women", "60 mg iron + 500 mcg folic acid daily for 180 days from the second trimester", "Albendazole 400 mg once in the second trimester", "ANM at antenatal visits"],
+        ["Lactating women", "60 mg iron + 500 mcg folic acid daily for 180 days after delivery", "-", "ANM and ASHA"],
+      ],
+    },
+  ],
+  redFlags: [
+    "Haemoglobin under 7 g/dL at 6-59 months (under 8 g/dL in older children) - severe anaemia; refer to the first referral unit rather than start iron and wait.",
+    "Pallor with tachycardia, hepatomegaly, oedema, breathlessness or a gallop - anaemic heart failure; slow packed cell transfusion 5 mL/kg with frusemide, not a bolus of blood or saline.",
+    "Pallor with jaundice, dark urine or splenomegaly, particularly after a drug or infection - haemolysis, G6PD deficiency or a haemoglobinopathy; investigate before iron.",
+    "Anaemia with petechiae, bruising, bone pain, fever or lymphadenopathy - marrow failure or leukaemia; complete blood count and smear the same day.",
+    "A vegetarian mother's breastfed infant with pallor, tremors, knuckle pigmentation and lost milestones - infantile tremor syndrome; parenteral vitamin B12 without delay, as the delay costs development.",
+    "A toddler who has swallowed iron tablets - potentially fatal poisoning; refer for serum iron and desferrioxamine even if the child looks well.",
+  ],
+  pearls: [
+    "Under 11 g/dL at 6-59 months; under 11.5 at 5-11 years; under 12 at 12-14 years. Two thirds of Indian under-fives are below the first line.",
+    "Iron 3 mg/kg/day of elemental iron, reticulocytes at a week, a gram of haemoglobin a month, and continue for 2-3 months after normal - that is a complete prescription.",
+    "Mentzer index below 13 in a microcytic child is thalassaemia trait until HPLC says otherwise; iron will not help and the family needs counselling.",
+    "6x6x6: six beneficiaries, six interventions, six institutional mechanisms. The dose to memorise is 1 mL of IFA syrup twice a week from 6 to 59 months.",
+    "National Deworming Day is 10 February and 10 August: half a tablet (200 mg) at 1-2 years, a whole 400 mg tablet at 2-19 years, chewed, with a mop-up within the week.",
+    "Cow's milk before 1 year, or more than 500 mL a day after it, is the commonest dietary cause of iron deficiency in a well-fed-looking toddler.",
+  ],
+  theory: [
+    {
+      id: "pediatrics-anaemia-deworming-t1",
+      paper: "IV",
+      kind: "long",
+      marks: 10,
+      minutes: 20,
+      frequency: "common",
+      question:
+        "A 2-year-old boy weighing 10 kg is brought with pallor noticed by his mother. He drinks about 800 mL of buffalo milk a day, eats little else, and his haemoglobin by digital haemoglobinometer is 6.5 g/dL. Discuss the assessment, management and the relevant national programme.",
+      openingLines: [
+        "A haemoglobin of 6.5 g/dL at 2 years is severe anaemia by the WHO and Anemia Mukt Bharat cut-off for 6-59 months (under 7 g/dL), and the history of a diet of 800 mL of animal milk a day with little complementary food makes dietary iron deficiency - the commonest cause of childhood anaemia in India - the probable diagnosis.",
+        "Severe anaemia at this age is a referral criterion under the programme, and the plan is to confirm iron deficiency, exclude a haemoglobinopathy and hookworm, treat with oral iron at 3 mg/kg/day for 3-6 months, correct the diet, deworm, and return the child to the prophylactic schedule.",
+      ],
+      answer: [
+        {
+          heading: "1. History",
+          points: [
+            "Diet: age at starting complementary foods, what he eats, the volume of milk, tea or coffee, and a vegetarian household; pica for mud or ice.",
+            "Birth weight and gestation, cord clamping, maternal anaemia in pregnancy, exclusive breastfeeding duration; worms seen in the stool, barefoot walking, recurrent fever, malaria, bleeding, jaundice, family history of anaemia or transfusion (thalassaemia, sickle cell).",
+            "Symptoms of decompensation - breathlessness on feeding, oedema, lethargy - and developmental milestones.",
+          ],
+        },
+        {
+          heading: "2. Examination",
+          points: [
+            "Pallor of palms, conjunctiva and tongue, koilonychia, angular stomatitis, glossitis; knuckle pigmentation and tremors (B12 deficiency); jaundice and splenomegaly (haemolysis, thalassaemia, malaria).",
+            "Weight, height and MUAC for coexisting malnutrition; pulse, respiratory rate, hepatomegaly, gallop and oedema for heart failure - a child in failure is transfused slowly before anything else.",
+          ],
+        },
+        {
+          heading: "3. Investigations",
+          points: [
+            "**Complete blood count with indices and a peripheral smear: a low MCV and MCH with a raised RDW and pencil cells favours iron deficiency; calculate the Mentzer index (MCV divided by red cell count), above 13 for iron deficiency and below 13 for thalassaemia trait, and send HPLC if it is low.**",
+            "Serum ferritin (under 12 micrograms/L confirms depleted stores), reticulocyte count, stool for hookworm ova, malaria test; a therapeutic response of 1 g/dL in 4 weeks confirms the diagnosis where ferritin is unavailable.",
+          ],
+        },
+        {
+          heading: "4. Treatment",
+          points: [
+            "**Refer to the first referral unit as severe anaemia; in a stable child the treatment is oral elemental iron 3 mg/kg/day, that is 30 mg daily (1.5 mL of the 20 mg/mL IFA syrup), between meals with a vitamin C source, continued for 2-3 months after the haemoglobin normalises, for a total of 3-6 months.**",
+            "Recheck haemoglobin at 4 weeks (expect a rise of at least 1 g/dL) and at completion; non-response prompts a review of adherence, the diagnosis and continuing blood loss.",
+            "**Transfusion only if the haemoglobin is under 4 g/dL or there is heart failure: packed cells 5-10 mL/kg over 3-4 hours with frusemide 1 mg/kg.**",
+            "**Deworm with albendazole 400 mg as a single dose**, treat malaria if positive, and warn about dark stools, tooth staining and keeping the bottle out of reach.",
+          ],
+        },
+        {
+          heading: "5. Dietary correction",
+          points: [
+            "**Reduce animal milk to under 500 mL a day** and replace the calories with iron-rich family food: ragi, dal, green leafy vegetables, jaggery, sprouts, egg and meat where eaten, three meals and two snacks a day, with amla, guava or lemon at the meal, and no tea.",
+            "Cook in iron vessels, use double fortified salt and fortified rice, and enrol him in the Anganwadi supplementary nutrition; counsel the mother, who is probably anaemic herself, to be tested and treated.",
+          ],
+        },
+        {
+          heading: "6. The programme: Anemia Mukt Bharat",
+          points: [
+            "**The 6x6x6 strategy: six beneficiaries (6-59 months, 5-9 years, 10-19 years, women 20-49, pregnant, lactating), six interventions (prophylactic IFA, deworming, behaviour change communication, digital testing and point-of-care treatment, fortified foods, non-nutritional causes) and six institutional mechanisms.**",
+            "After treatment this child returns to the prophylactic schedule: 1 mL of IFA syrup twice a week until 59 months from the ASHA, albendazole 400 mg on National Deworming Day twice a year, haemoglobin screening at the Village Health and Nutrition Day, and a record on the MCP card and Poshan Tracker.",
+          ],
+        },
+      ],
+      mustDraw: [
+        "A table of the WHO haemoglobin cut-offs by age with the severity bands.",
+        "A table of the Anemia Mukt Bharat prophylactic doses for the six beneficiary groups.",
+      ],
+      markSplit: [
+        { part: "Classification of severity and the likely cause from the history", marks: 1.5 },
+        { part: "History and examination including decompensation and haemoglobinopathy", marks: 2 },
+        { part: "Investigations with the Mentzer index and ferritin", marks: 1.5 },
+        { part: "Iron dose, duration, monitoring, transfusion threshold, deworming", marks: 2.5 },
+        { part: "Diet correction and Anemia Mukt Bharat", marks: 2.5 },
+      ],
+      keywords: ["iron deficiency anaemia", "3 mg/kg/day", "Mentzer index", "Anemia Mukt Bharat", "cow's milk", "albendazole"],
+    },
+    {
+      id: "pediatrics-anaemia-deworming-t2",
+      paper: "IV",
+      kind: "short-note",
+      marks: 5,
+      minutes: 10,
+      frequency: "common",
+      question: "Write short notes on National Deworming Day.",
+      openingLines: [
+        "National Deworming Day, launched by the Ministry of Health and Family Welfare in February 2015, is a biannual fixed-day mass drug administration of albendazole to every child and adolescent aged 1-19 years through schools and Anganwadi centres, to reduce the burden of soil-transmitted helminth infection and its consequences - anaemia, malnutrition and impaired learning.",
+        "It is one of the two pillars of Anemia Mukt Bharat alongside iron-folic acid supplementation, because hookworm is the single most important infectious cause of iron deficiency in Indian children.",
+      ],
+      answer: [
+        {
+          heading: "Rationale",
+          points: [
+            "Ascaris lumbricoides, Trichuris trichiura and the hookworms Ancylostoma duodenale and Necator americanus infect through contaminated soil, food and bare feet; WHO estimated over 240 million Indian children aged 1-14 years at risk when the programme began.",
+            "Hookworm bleeds the gut and causes iron deficiency and hypoproteinaemia; Ascaris and Trichuris cause malnutrition, abdominal pain, obstruction and dysentery; all impair growth, cognition and school attendance.",
+            "WHO recommends mass treatment without individual diagnosis wherever prevalence exceeds 20%, twice a year where it exceeds 50%.",
+          ],
+        },
+        {
+          heading: "Implementation",
+          points: [
+            "**Dates: 10 February and 10 August, with a mop-up day within the following week for children missed; target: all children 1-19 years, enrolled or not, in every state.**",
+            "**Drug and dose: albendazole 400 mg chewable tablet - half a tablet (200 mg) crushed between two spoons and given with water at 12-23 months; one full tablet, chewed, from 2 to 19 years.**",
+            "Given by the teacher in school and the Anganwadi worker for 1-5 year olds and out-of-school children, with the ASHA mobilising the community and a health worker available at each site; a sick child or one on other medicines is deferred to the mop-up day. Not given under 1 year.",
+            "Adverse events are mild - nausea, abdominal pain, vomiting, diarrhoea, fatigue, passage of worms - and settle with rest and fluids; each site has a referral plan and adverse events are reported.",
+          ],
+        },
+        {
+          heading: "Supporting measures",
+          points: [
+            "WASH education at every session: handwashing with soap, footwear, nail cutting, toilet use, safe water and washed vegetables - because reinfection follows within months without it.",
+            "Linkage with the weekly iron-folic acid programme, school health and Rashtriya Bal Swasthya Karyakram screening, and the Swachh Bharat sanitation programme.",
+            "Coverage is monitored on the programme dashboard, and periodic prevalence surveys guide whether a state continues twice-yearly or moves to annual rounds.",
+          ],
+        },
+      ],
+      mustDraw: ["A table of the albendazole dose by age with the delivery point and the person who administers it."],
+      markSplit: [
+        { part: "Rationale and the worms involved", marks: 1.5 },
+        { part: "Dates, target, dose and administration", marks: 2 },
+        { part: "Adverse events, WASH and programme linkages", marks: 1.5 },
+      ],
+      keywords: ["National Deworming Day", "albendazole 400 mg", "soil transmitted helminths", "hookworm", "10 February 10 August"],
+    },
+  ],
+  mcqs: [
+    {
+      id: "pediatrics-anaemia-deworming-q1",
+      stem: "A 3-year-old with pallor has a haemoglobin of 8.2 g/dL, MCV 62 fL, red cell count 5.8 million/microlitre, RDW 13% and target cells on the smear. He has taken iron for 3 months without improvement. What is the most likely diagnosis and the next test?",
+      options: [
+        "Iron deficiency anaemia; increase the iron dose to 6 mg/kg/day",
+        "Beta thalassaemia trait; haemoglobin HPLC for haemoglobin A2",
+        "Anaemia of chronic disease; serum ferritin",
+        "Vitamin B12 deficiency; serum B12 level",
+        "Lead poisoning; blood lead level",
+      ],
+      answer: 1,
+      explanation:
+        "A microcytic anaemia with a high red cell count gives a Mentzer index of about 10.7 (62 divided by 5.8), and with a normal RDW, target cells and no response to 3 months of iron, this is beta thalassaemia trait, confirmed by a haemoglobin A2 above 3.5% on HPLC. Iron deficiency would have a low red cell count, a high RDW and a Mentzer index above 13, and would have responded. Anaemia of chronic disease is usually normocytic with a normal or raised ferritin and needs an underlying disease. B12 deficiency causes macrocytosis. Lead poisoning can cause microcytosis with basophilic stippling but is far less likely than the commonest haemoglobinopathy in India.",
+      difficulty: "moderate",
+    },
+    {
+      id: "pediatrics-anaemia-deworming-q2",
+      stem: "Under Anemia Mukt Bharat, what is the correct prophylactic iron-folic acid regimen for a healthy 9-month-old infant?",
+      options: [
+        "1 mL of IFA syrup (20 mg elemental iron and 100 micrograms folic acid) twice a week",
+        "1 mL of IFA syrup daily for 100 days",
+        "One pink tablet (45 mg iron) once a week",
+        "Iron 3 mg/kg/day for 2 months",
+        "No iron until 1 year of age",
+      ],
+      answer: 0,
+      explanation:
+        "The Anemia Mukt Bharat prophylactic dose for children aged 6-59 months is 1 mL of IFA syrup containing 20 mg of elemental iron and 100 micrograms of folic acid, given twice a week by the ASHA. The old 100-day daily regimen was replaced by the biweekly schedule. The pink 45 mg tablet is the weekly dose for 5-9 year olds. Iron 3 mg/kg/day for 2 months is the treatment dose for a child found to be anaemic, not prophylaxis. Waiting until 1 year misses the window when stores are exhausted and the prevalence peaks.",
+      difficulty: "easy",
+    },
+    {
+      id: "pediatrics-anaemia-deworming-q3",
+      stem: "On National Deworming Day, an Anganwadi worker asks how to give albendazole to an 18-month-old child. What is the correct instruction?",
+      options: [
+        "One 400 mg tablet, swallowed whole with water",
+        "Half a 400 mg tablet (200 mg), crushed between two spoons and given with water",
+        "Mebendazole 100 mg twice daily for 3 days instead",
+        "Defer deworming until 2 years of age",
+        "One 400 mg tablet chewed, repeated after 2 weeks",
+      ],
+      answer: 1,
+      explanation:
+        "Children aged 12-23 months receive half a 400 mg albendazole tablet, that is 200 mg, crushed between two spoons and mixed with water so that a toddler can swallow it safely; from 2 to 19 years the full tablet is chewed. A whole tablet swallowed intact by a toddler is a choking risk and double the programme dose. Mebendazole for 3 days is an alternative in clinical practice but is not the programme drug. Deworming starts at 1 year, not 2. The dose is single and is repeated six months later on the next deworming day, not after 2 weeks.",
+      difficulty: "easy",
+    },
+    {
+      id: "pediatrics-anaemia-deworming-q4",
+      stem: "A 14-month-old who was switched from breast milk to 900 mL of packet cow's milk a day at 8 months, and eats little solid food, has a haemoglobin of 7.4 g/dL with MCV 58 fL and RDW 19%. Which is the correct management?",
+      options: [
+        "Blood transfusion followed by continuation of the present diet",
+        "Oral elemental iron 3 mg/kg/day for 3-6 months, restrict milk to under 500 mL/day, start iron-rich complementary foods, and deworm",
+        "Intravenous iron sucrose as a single dose",
+        "Change from cow's milk to buffalo milk and review in 3 months",
+        "Vitamin B12 injections weekly for 4 weeks",
+      ],
+      answer: 1,
+      explanation:
+        "Excess cow's milk in the second year - low in iron, high in calcium, and a cause of occult intestinal blood loss - displacing complementary food is the classic cause of microcytic iron deficiency anaemia, and the treatment is oral iron at 3 mg/kg/day continued for 2-3 months beyond normalisation, with the milk limited to under 500 mL a day and iron-rich foods introduced, plus deworming. A haemoglobin of 7.4 g/dL in a stable child does not need transfusion, and continuing the diet guarantees relapse. Intravenous iron is not the first line in a young child who can take oral iron. Buffalo milk is no better in iron. B12 deficiency causes macrocytosis, not an MCV of 58.",
+      difficulty: "easy",
+    },
+    {
+      id: "pediatrics-anaemia-deworming-q5",
+      stem: "A 10-month-old exclusively breastfed infant of a strict vegetarian mother is brought with pallor, coarse tremors of the limbs, hyperpigmentation over the knuckles, sparse light-brown hair and loss of the ability to sit that he had achieved at 7 months. Haemoglobin is 7 g/dL with an MCV of 104 fL. What is the diagnosis and treatment?",
+      options: [
+        "Iron deficiency anaemia; oral iron 3 mg/kg/day",
+        "Cerebral palsy; physiotherapy",
+        "Infantile tremor syndrome from vitamin B12 deficiency; parenteral vitamin B12, with propranolol for the tremors",
+        "Kwashiorkor; F-75 feeds",
+        "Hypothyroidism; levothyroxine",
+      ],
+      answer: 2,
+      explanation:
+        "Pallor with macrocytosis, tremors, knuckle hyperpigmentation, sparse depigmented hair and developmental regression in a breastfed infant of a vegetarian mother is infantile tremor syndrome, the Indian presentation of infantile vitamin B12 deficiency, and it responds dramatically to parenteral B12, with propranolol used for the tremors while they last. Iron deficiency causes microcytosis and does not cause tremors or regression. Cerebral palsy is non-progressive and does not cause regression of an achieved milestone. Kwashiorkor causes oedema, not tremors, and F-75 would not correct the deficiency. Hypothyroidism causes delay and macrocytosis but not tremors or pigmentation.",
+      difficulty: "moderate",
+    },
+  ],
+  cards: [
+    { id: "pediatrics-anaemia-deworming-c1", front: "Haemoglobin cut-offs for anaemia by age", back: "6-59 months: under 11 g/dL (severe under 7). 5-11 years: under 11.5 (severe under 8). 12-14 years and non-pregnant women: under 12 (severe under 8). Pregnancy: under 11. Men: under 13." },
+    { id: "pediatrics-anaemia-deworming-c2", front: "Treatment dose of iron in a child, and for how long", back: "Elemental iron 3 mg/kg/day (up to 6 mg/kg/day), between meals with vitamin C; reticulocytes by day 5-7, haemoglobin up 1 g/dL in 2-4 weeks; continue 2-3 months after normalisation (3-6 months total)." },
+    { id: "pediatrics-anaemia-deworming-c3", front: "Mentzer index", back: "MCV divided by red cell count (millions/microlitre). Above 13: iron deficiency. Below 13: beta thalassaemia trait (confirm with HbA2 above 3.5% on HPLC)." },
+    { id: "pediatrics-anaemia-deworming-c4", front: "Anemia Mukt Bharat: the 6x6x6 strategy", back: "Six beneficiaries (6-59 months, 5-9 years, 10-19 years, women 20-49, pregnant, lactating); six interventions (prophylactic IFA, deworming, BCC, digital testing and point-of-care treatment, fortified foods, non-nutritional causes); six institutional mechanisms." },
+    { id: "pediatrics-anaemia-deworming-c5", front: "Prophylactic IFA doses under Anemia Mukt Bharat", back: "6-59 months: 1 mL syrup (20 mg iron + 100 mcg folic acid) twice a week. 5-9 years: pink tablet 45 mg + 400 mcg weekly. 10-19 years: blue tablet 60 mg + 500 mcg weekly. Pregnancy and lactation: 60 mg + 500 mcg daily for 180 days each." },
+    { id: "pediatrics-anaemia-deworming-c6", front: "National Deworming Day: dates and dose", back: "10 February and 10 August, mop-up within a week; all children 1-19 years. Albendazole 200 mg (half tablet, crushed) at 12-23 months; 400 mg chewed at 2-19 years." },
+    { id: "pediatrics-anaemia-deworming-c7", front: "When to transfuse an anaemic child", back: "Haemoglobin under 4 g/dL, or under 6 g/dL with heart failure, respiratory distress, severe infection or urgent surgery. Packed cells 5-10 mL/kg over 3-4 hours with frusemide 1 mg/kg if in failure." },
+    { id: "pediatrics-anaemia-deworming-c8", front: "Infantile tremor syndrome", back: "Vitamin B12 deficiency in a breastfed infant (6-24 months) of a vegetarian mother: pallor, macrocytic anaemia, knuckle hyperpigmentation, sparse light hair, apathy, regression, coarse tremors. Treat with parenteral B12; propranolol for tremors." },
+  ],
+  references: [
+    "Anemia Mukt Bharat: Intensified National Iron Plus Initiative Operational Guidelines, MoHFW, Government of India, 2018",
+    "National Deworming Day Operational Guidelines, MoHFW, Government of India, 2015 (updated)",
+    "WHO Haemoglobin Concentrations for the Diagnosis of Anaemia and Assessment of Severity, 2011; WHO Guideline on Haemoglobin Cutoffs to Define Anaemia, 2024",
+    "National Family Health Survey-5 (2019-21), India Fact Sheet, IIPS and MoHFW",
+    "IAP Guidelines on Iron Deficiency Anaemia in Children (Indian Pediatrics), and IAP Standard Treatment Guidelines 2022 - nutritional anaemia",
+    "Ghai Essential Pediatrics, 10th edition, 2022 - diseases of the blood; Nelson Textbook of Pediatrics, 22nd edition, 2024 - iron deficiency anaemia",
+  ],
+});

@@ -1974,3 +1974,1273 @@ topics.push({
     "API Textbook of Medicine, 11th edition, 2019 - respiratory infections",
   ],
 });
+
+topics.push({
+  id: "respiratory-acute-cough-influenza-covid",
+  title: "Acute cough, acute bronchitis, influenza-like illness and COVID-19 in the clinic",
+  oneLiner:
+    "An acute cough is one lasting under three weeks, is viral in more than nine of ten adults and needs no antibiotic; the family physician's job is to pick out the pneumonia, the influenza patient who needs oseltamivir today, the COVID-19 patient with silent hypoxaemia, and the cough that reaches fourteen days and becomes presumptive tuberculosis under NTEP.",
+  frequency: "common",
+  keywords: [
+    "acute bronchitis",
+    "influenza",
+    "H1N1",
+    "swine flu",
+    "H3N2",
+    "oseltamivir",
+    "influenza-like illness",
+    "ILI",
+    "SARI",
+    "COVID-19",
+    "SARS-CoV-2",
+    "pertussis",
+    "whooping cough",
+    "antibiotic stewardship",
+    "cough syrup",
+    "IDSP",
+    "Category B",
+    "influenza vaccine",
+    "post-infectious cough",
+    "silent hypoxia",
+    "remdesivir",
+    "dexamethasone",
+  ],
+  sections: [
+    {
+      heading: "The time axis of cough and the definitions to quote",
+      points: [
+        "**Acute cough lasts less than 3 weeks, subacute cough 3-8 weeks, and chronic cough more than 8 weeks** (CHEST classification). In India this Western time axis is overridden by the NTEP rule: **any cough of 2 weeks or more makes the patient presumptive tuberculosis** and earns a sputum nucleic acid amplification test, whatever else you think is going on.",
+        "**Influenza-like illness (WHO 2014 surveillance definition):** an acute respiratory infection with **measured fever of 38 degrees Celsius or higher and cough, with onset within the last 10 days**. **Severe acute respiratory infection (SARI)** is the same illness in a patient who needs hospital admission. These two definitions drive the Integrated Disease Surveillance Programme and the WHO influenza network run through NIV Pune and the Viral Research and Diagnostic Laboratories.",
+        "The causes of an acute cough in an Indian outpatient department, in order: the common cold and viral upper respiratory infection (rhinovirus, seasonal coronaviruses, adenovirus, parainfluenza, respiratory syncytial virus), **acute bronchitis, influenza, COVID-19**, community-acquired pneumonia, exacerbations of asthma or COPD, pertussis, allergic rhinitis with post-nasal drip and irritant exposure to smoke or dust; the uncommon but dangerous ones are heart failure, pulmonary embolism, aspiration and an inhaled foreign body in a child.",
+        "**Post-infectious cough** follows a viral infection and persists for 3-8 weeks because of airway hyper-responsiveness, epithelial damage and post-nasal drip; it is self-limiting, needs no antibiotic, and in India must be separated from tuberculosis by asking about fever, night sweats, weight loss and haemoptysis and by a sputum test if any of them is present.",
+        "**Burden:** acute respiratory infection is the single commonest reason for an outpatient visit and for an antibiotic prescription in India; audits show that **60-80% of acute bronchitis consultations end with an antibiotic**, which is the main driver of the country's ranking among the highest antibiotic consumers in the world.",
+      ],
+    },
+    {
+      heading: "Acute bronchitis: the diagnosis that should not earn an antibiotic",
+      points: [
+        "**Definition:** a self-limited inflammation of the trachea and large bronchi presenting with cough, with or without sputum, lasting 1-3 weeks in a patient without pneumonia and without chronic lung disease. **Viruses cause more than 90%** (influenza, parainfluenza, RSV, rhinovirus, coronaviruses, adenovirus); Mycoplasma, Chlamydophila and Bordetella pertussis account for under 10%.",
+        "The cough is often productive, and **purulent sputum reflects neutrophils and shed epithelium, not bacterial infection** - yellow or green phlegm is not an indication for an antibiotic. Wheeze, retrosternal soreness and low-grade fever are common. The **median duration of cough is about 18 days and half the patients are still coughing at 3 weeks**; telling the patient this at the first visit prevents the second visit that ends in an antibiotic.",
+        "**Pneumonia discriminators** that force a chest radiograph: pulse over 100/min, respiratory rate over 24/min, temperature over 38 degrees Celsius, focal crackles or bronchial breathing, and SpO2 under 94%. In their absence pneumonia is unlikely enough that no radiograph is needed.",
+        "**Point-of-care CRP**, where available, is the best single tool for stewardship: under 20 mg/L no antibiotic, 20-100 mg/L a delayed prescription to be filled only if worse at 3-5 days, over 100 mg/L treat as pneumonia. Procalcitonin does the same job in hospital.",
+        "**The evidence:** a Cochrane review found antibiotics shorten the cough of acute bronchitis by about half a day at the cost of more adverse effects; the ICMR Treatment Guidelines for Antimicrobial Use (2019, updated 2022) and the NCDC National Treatment Guidelines therefore state that **acute bronchitis, the common cold, acute pharyngitis without Centor criteria and influenza-like illness need no antibiotic**. The exceptions are pertussis, a clinical suspicion of pneumonia, an exacerbation of COPD meeting antibiotic criteria, and the immunocompromised or very frail patient.",
+        "**Symptomatic treatment that is defensible:** paracetamol for fever and aches, warm fluids, and honey (not under 1 year of age) which outperforms placebo for night cough. Dextromethorphan has a small effect in adults; **codeine is not to be used under 12 years or in breastfeeding women**. Salbutamol by inhaler helps only if there is wheeze; inhaled or oral steroids have no place.",
+        "**Cough syrups in children:** the DCGI restricted the chlorpheniramine-phenylephrine combination to children over 4 years in 2023, and after the diethylene glycol contamination deaths (Gambia and Uzbekistan in 2022, and Indian children in Madhya Pradesh in 2025 from a contaminated syrup) the MoHFW advised in October 2025 that **cough and cold syrups should not be prescribed to children under 2 years and are generally not recommended under 5**. The safer answer for a small child is fluids, honey after 1 year, saline nasal drops and a review date.",
+      ],
+    },
+    {
+      heading: "Pertussis and the cough that lasts a hundred days",
+      points: [
+        "Pertussis is returning in adolescents and adults because vaccine immunity wanes after 5-10 years, and these coughing adults are the source of infant deaths; **think of it in any paroxysmal cough of over 2 weeks with post-tussive vomiting**, especially in a household with a baby.",
+        "Three stages: **catarrhal** (1-2 weeks, indistinguishable from a cold and most infectious), **paroxysmal** (2-6 weeks of paroxysms, an inspiratory whoop, post-tussive vomiting, subconjunctival haemorrhage and cyanosis; infants under 6 months present with apnoea and cyanosis without a whoop), and **convalescent** (weeks to months). A **lymphocytosis of 20,000/microlitre or more** in an afebrile coughing child is a strong clue.",
+        "Diagnosis: nasopharyngeal swab for PCR or culture within the first 3 weeks; serology later. Under IDSP a suspected case is reported on the weekly P form.",
+        "**Treatment: azithromycin 10 mg/kg on day 1 then 5 mg/kg daily on days 2-5** (adults 500 mg then 250 mg) or clarithromycin for 7 days; antibiotics given after the third week of cough do not shorten the illness but do stop transmission. The patient stays away from school or work until 5 days of antibiotic are complete, and **all household contacts, whatever their vaccination status, receive the same course** if there is an infant, a pregnant woman or an immunocompromised person at home.",
+        "Prevention under the Universal Immunisation Programme: pentavalent vaccine at 6, 10 and 14 weeks, DPT boosters at 16-24 months and at 5-6 years; **Tdap in every pregnancy between 27 and 36 weeks** (FOGSI recommendation) protects the newborn through transplacental antibody until its own primary doses.",
+      ],
+    },
+    {
+      heading: "Influenza: seasonality, categories and oseltamivir",
+      points: [
+        "**Viruses:** influenza A subtypes H1N1pdm09 and H3N2, and influenza B (Victoria lineage; the Yamagata lineage has not been detected since 2020, so the **WHO moved the vaccine to a trivalent composition from 2024-25**). Antigenic drift explains yearly epidemics; antigenic shift produced the 2009 pandemic. Incubation is 1-4 days and the patient is infectious from a day before symptoms to 5-7 days after, longer in children.",
+        "**Indian seasonality has two peaks:** a monsoon peak from July to September over most of the country and a winter peak from January to March in the north. The 2015 H1N1 wave caused about 42,000 confirmed cases and 3,000 deaths, and 2023 saw a nationwide H3N2 surge; both are worth quoting.",
+        "**Clinical features:** abrupt fever, headache, myalgia, prostration, sore throat and dry cough; vomiting and diarrhoea in children. **Complications:** primary viral pneumonia with ARDS, **secondary bacterial pneumonia** (Streptococcus pneumoniae, Staphylococcus aureus including MRSA, Haemophilus influenzae), exacerbation of asthma and COPD, myocarditis, encephalopathy, febrile seizures, rhabdomyolysis and **Reye syndrome when a child with influenza is given aspirin** - which is why aspirin is never an antipyretic in children.",
+        "**High-risk groups (MoHFW):** pregnant women (highest in the second and third trimester and 2 weeks post-partum), children under 5 and especially under 2, adults 65 and over, chronic lung, heart, liver, kidney or neurological disease, diabetes, cancer, HIV, long-term steroid use, morbid obesity, and children on long-term aspirin.",
+        "**The MoHFW categorisation used since 2009:** **Category A** - mild fever, cough, sore throat, body ache with no high-risk feature: no test, no oseltamivir, home rest and hygiene. **Category B(i)** - Category A plus high-grade fever and severe sore throat: oseltamivir and home isolation, no test. **Category B(ii)** - Category A in any high-risk group: **oseltamivir without waiting for a test**. **Category C** - breathlessness, chest pain, drowsiness, hypotension, haemoptysis, cyanosis, worsening of a chronic disease, or in a child irritability, refusal to feed or fast breathing: **test, admit and treat immediately**. Only Category C is tested, and an unavailable result never delays treatment.",
+        "**Oseltamivir:** adults 75 mg twice daily for 5 days, ideally started **within 48 hours** of onset, but given at any stage in severe illness, hospitalised patients and the high-risk groups because the benefit on mortality persists. Children are dosed by weight (30 mg twice daily under 15 kg, 45 mg for 15-23 kg, 60 mg for 24-40 kg, 75 mg over 40 kg; infants under 1 year 3 mg/kg twice daily). **Post-exposure prophylaxis is 75 mg once daily for 10 days** for high-risk contacts. Take it with food to limit nausea; it has been in Schedule H1 since 2017, so any pharmacist can dispense it against a prescription.",
+        "Testing is by RT-PCR on a nasopharyngeal and throat swab in viral transport medium sent to the nearest VRDL; rapid antigen tests miss half the cases and a negative rapid test never rules influenza out. **Infection control:** home isolation for 7 days or until 24 hours after the fever settles, a triple-layer mask on the patient, hand hygiene, and N95 masks for staff performing nebulisation or suction.",
+      ],
+    },
+    {
+      heading: "Influenza vaccination for the practice",
+      points: [
+        "Inactivated influenza vaccine, 0.5 mL intramuscular, is given **every year because the strains and the antibody both change**; India uses the **Southern Hemisphere formulation given ideally in April-May before the monsoon peak**, while the north may use the Northern Hemisphere formulation before winter. Effectiveness is 40-60% in a well-matched year and the main benefit is fewer hospital admissions and deaths in the high-risk groups.",
+        "**Who:** every high-risk group listed above, health-care workers, **pregnant women in any trimester** (WHO and FOGSI; protects the infant for 6 months), children from 6 months to 5 years and every adult of 65 and over. Children aged 6 months to 8 years receiving it for the first time need **two doses 4 weeks apart**.",
+        "Contraindication is only anaphylaxis to a previous dose; **egg allergy is not a contraindication** to the inactivated vaccine, and Guillain-Barre syndrome within 6 weeks of a previous dose is a precaution. Live attenuated intranasal vaccine is licensed for 2-49 years and is avoided in pregnancy and immunosuppression.",
+        "Pair it with the pneumococcal vaccine in the elderly and the chronically ill, and with COVID-19 boosters where national policy recommends them - the vaccination consultation is the family physician's most cost-effective act in respiratory medicine.",
+      ],
+    },
+    {
+      heading: "COVID-19: what still matters in general practice",
+      points: [
+        "SARS-CoV-2 now circulates as endemic Omicron-lineage variants with periodic waves; testing is by **rapid antigen test (specific, but 60-80% sensitive in the first symptomatic week) with RT-PCR as the reference** and ICMR advises testing symptomatic patients, high-risk contacts and those needing admission rather than screening the well.",
+        "**Severity (AIIMS-ICMR National Task Force):** mild - upper respiratory symptoms without breathlessness and **SpO2 94% or more on room air**; moderate - respiratory rate 24-30/min or **SpO2 90-93%**; severe - respiratory rate over 30/min, **SpO2 under 90%**, ARDS or shock. The danger is **silent hypoxaemia**: the patient looks comfortable while desaturating, so every home-isolated patient needs a pulse oximeter reading twice daily and a **6-minute walk test - a fall of 3% or more, or an SpO2 under 93% after walking, means hospital**.",
+        "**Home isolation** is for mild disease with a separate ventilated room, a caregiver and daily telephone follow-up; it ends 7 days after symptom onset provided there has been no fever for 3 days. Elderly patients and those with uncontrolled comorbidity or immunosuppression are managed with a lower threshold for admission.",
+        "**Mild disease:** paracetamol, fluids, rest and monitoring. **No steroids** - dexamethasone in patients not needing oxygen increased harm in RECOVERY and drove the 2021 mucormycosis epidemic; **no antibiotics** because bacterial co-infection is under 5%; no ivermectin, hydroxychloroquine, doxycycline or zinc, all of which were dropped from national guidance. Oral antivirals (nirmatrelvir-ritonavir) are used within 5 days of onset in high-risk patients where available, remembering the ritonavir drug interactions; molnupiravir was approved by the DCGI but never entered the ICMR guideline because of safety concerns.",
+        "**Moderate and severe disease:** oxygen titrated to SpO2 92-96%, awake proning, **dexamethasone 6 mg daily (or methylprednisolone 32 mg) for up to 10 days only in patients needing oxygen**, prophylactic enoxaparin 40 mg subcutaneously daily, remdesivir 200 mg then 100 mg daily for 4 days within 10 days of onset in patients on oxygen but not yet ventilated, and tocilizumab or baricitinib for rapidly worsening disease with rising CRP once bacterial infection is excluded. Monitor glucose on steroids and watch for **mucormycosis** in every diabetic given steroids: facial pain, nasal crusting, black eschar, periorbital swelling or visual change is an emergency.",
+        "**Post-COVID condition** is symptoms persisting beyond 12 weeks - fatigue, breathlessness, cognitive slowing, palpitations; patients who had pneumonia need a chest radiograph and spirometry at 6-12 weeks, pulmonary rehabilitation if breathless, and screening for depression and anxiety. Vaccination remains recommended for high-risk groups as per the current national schedule.",
+      ],
+    },
+    {
+      heading: "The public-health duties that come with the prescription",
+      points: [
+        "**IDSP reporting:** the health worker's weekly **S form** (syndromic), the medical officer's **P form** (presumptive) and the laboratory's **L form** now flow in real time through the Integrated Health Information Platform; a cluster of ILI or SARI in a village, school or hostel is reported the same day, and H1N1 influenza and COVID-19 are notifiable in most states.",
+        "**Antibiotic stewardship** is a duty under the National Action Plan on Antimicrobial Resistance and Kerala's state plan: no antibiotic for the common cold, acute bronchitis, ILI or viral pharyngitis, amoxicillin as the first drug for pneumonia in the outpatient, and no dispensing of Schedule H1 drugs without a prescription (the red-line campaign).",
+        "Teach cough etiquette, masks for the symptomatic, hand hygiene and ventilation; advise time off school or work; and use every ILI consultation to check the vaccination status of the whole household, because the high-risk person is often the grandparent sitting quietly in the corner of the room.",
+      ],
+    },
+  ],
+  tables: [
+    {
+      heading: "MoHFW categorisation of influenza-like illness (seasonal influenza A H1N1 protocol)",
+      columns: ["Category", "Clinical picture", "Test", "Oseltamivir", "Where managed"],
+      rows: [
+        ["A", "Mild fever, cough, sore throat, body ache; no high-risk feature", "No", "No", "Home, rest, hygiene, review if worse"],
+        ["B (i)", "Category A plus high-grade fever and severe sore throat", "No", "Yes", "Home isolation"],
+        ["B (ii)", "Category A in a high-risk group: pregnancy, under 5, over 65, chronic disease, immunosuppression", "No", "Yes, without waiting", "Home isolation with close follow-up"],
+        ["C", "Breathlessness, chest pain, drowsiness, hypotension, haemoptysis, cyanosis, worsening chronic disease; child irritable, not feeding, fast breathing", "Yes", "Yes, immediately", "Admit"],
+      ],
+    },
+    {
+      heading: "Oseltamivir dosing (treatment twice daily for 5 days; prophylaxis once daily for 10 days)",
+      columns: ["Age or weight", "Treatment dose", "Prophylaxis dose"],
+      rows: [
+        ["Under 1 year", "3 mg/kg twice daily", "3 mg/kg once daily (from 3 months)"],
+        ["Under 15 kg", "30 mg twice daily", "30 mg once daily"],
+        ["15-23 kg", "45 mg twice daily", "45 mg once daily"],
+        ["24-40 kg", "60 mg twice daily", "60 mg once daily"],
+        ["Over 40 kg and adults", "75 mg twice daily", "75 mg once daily"],
+      ],
+    },
+    {
+      heading: "COVID-19 severity and its consequences",
+      columns: ["Severity", "Criteria", "Setting", "Key treatment"],
+      rows: [
+        ["Mild", "No breathlessness, SpO2 94% or more on air", "Home isolation with oximeter", "Symptomatic; antiviral within 5 days if high risk; no steroid, no antibiotic"],
+        ["Moderate", "Respiratory rate 24-30/min or SpO2 90-93%", "Ward with oxygen", "Oxygen, proning, dexamethasone 6 mg, enoxaparin, remdesivir within 10 days"],
+        ["Severe", "Respiratory rate over 30/min, SpO2 under 90%, ARDS, shock", "High-dependency or intensive care", "High-flow oxygen or ventilation, steroid, anticoagulation, tocilizumab or baricitinib if worsening"],
+      ],
+    },
+  ],
+  redFlags: [
+    "SpO2 under 94%, respiratory rate over 24/min, pulse over 100/min or focal chest signs in a patient with an acute cough - this is pneumonia until a chest radiograph says otherwise.",
+    "Any Category C feature in influenza-like illness - breathlessness, chest pain, drowsiness, hypotension, cyanosis or haemoptysis - admit and start oseltamivir before the test result.",
+    "A child with fast breathing, chest indrawing, inability to drink, stridor at rest or lethargy - severe pneumonia or croup, refer under IMNCI the same day.",
+    "A pregnant woman with fever and cough during the monsoon - start oseltamivir the same day; influenza in the third trimester kills mothers and fetuses.",
+    "Cough reaching 2 weeks, or cough of any duration with fever, night sweats, weight loss or haemoptysis - presumptive tuberculosis, send sputum for NAAT.",
+    "An infant under 6 months with paroxysmal cough, apnoea or cyanotic spells - pertussis, admit; and a diabetic recovering from COVID-19 on steroids with facial pain, nasal crusting or visual change - mucormycosis, refer today.",
+  ],
+  pearls: [
+    "Acute cough is under 3 weeks, subacute 3-8 weeks, chronic over 8 weeks - but in India 2 weeks is the number that matters, because that is when a cough becomes presumptive tuberculosis.",
+    "Purulent sputum is neutrophils, not bacteria; the colour of the phlegm is never an indication for an antibiotic in acute bronchitis.",
+    "Tell every acute bronchitis patient that the cough lasts a median of 18 days - the patient who expects three weeks of cough does not come back for an antibiotic in week two.",
+    "Category B(ii) is the one to remember: a pregnant woman, a small child or an elderly diabetic with influenza-like illness gets oseltamivir without a test and without waiting for 48 hours to pass.",
+    "Only Category C is tested for H1N1, and a pending or negative result never withholds oseltamivir from a sick patient.",
+    "In COVID-19 the steroid is for the patient on oxygen, never for the patient at home; dexamethasone given to a mild case buys mucormycosis, not recovery.",
+    "The influenza vaccine in India is the Southern Hemisphere formulation given before the monsoon, repeated every year, and given in any trimester of pregnancy.",
+  ],
+  theory: [
+    {
+      id: "respiratory-acute-cough-influenza-covid-t1",
+      paper: "II",
+      kind: "long",
+      marks: 10,
+      minutes: 20,
+      frequency: "common",
+      question:
+        "A 30-year-old woman who is 32 weeks pregnant presents in August with two days of high fever, sore throat, myalgia and dry cough. Discuss the assessment, categorisation and management of influenza-like illness in the community, and the public health measures you would take.",
+      openingLines: [
+        "Influenza-like illness is an acute respiratory infection with measured fever of 38 degrees Celsius or more and cough, with onset within the last 10 days; during the monsoon in India the likeliest causes are influenza A (H1N1pdm09 or H3N2), influenza B and SARS-CoV-2.",
+        "A pregnant woman in the third trimester belongs to the highest-risk group for influenza complications, so under the MoHFW protocol she is Category B(ii) and is started on oseltamivir immediately, without waiting for any laboratory confirmation.",
+      ],
+      answer: [
+        {
+          heading: "1. Assessment",
+          points: [
+            "History: onset and duration, fever pattern, cough, sore throat, breathlessness, chest pain, contact with similar illness, travel, vaccination status, and the obstetric history including fetal movements.",
+            "Examination: temperature, pulse, respiratory rate, blood pressure, **SpO2 on room air**, hydration, throat, chest for crackles or bronchial breathing, and fundal height with fetal heart rate.",
+            "Look actively for Category C features: breathlessness, respiratory rate over 24/min, SpO2 under 94%, chest pain, drowsiness, hypotension, cyanosis, haemoptysis or reduced fetal movements.",
+            "Differential diagnosis in the monsoon: influenza, COVID-19, dengue (test if myalgia is severe or platelets fall), malaria, scrub typhus, leptospirosis, and community-acquired pneumonia; a rapid antigen test for COVID-19 and a complete blood count are reasonable at the first visit.",
+          ],
+        },
+        {
+          heading: "2. Categorisation under the MoHFW protocol",
+          points: [
+            "**Category A:** mild symptoms without risk factors - no test, no antiviral, home care.",
+            "**Category B(i):** high-grade fever and severe sore throat - oseltamivir and home isolation, no test.",
+            "**Category B(ii):** Category A symptoms in a high-risk group (pregnancy, age under 5 or over 65, chronic lung, heart, kidney or liver disease, diabetes, immunosuppression, long-term steroids) - **oseltamivir immediately without testing**.",
+            "**Category C:** any severe feature - admission, RT-PCR on nasopharyngeal and throat swab through the VRDL network, and oseltamivir started before the result.",
+            "This patient is Category B(ii); if she has any breathlessness, hypoxaemia or obstetric concern she becomes Category C and is admitted to a facility with obstetric and intensive care.",
+          ],
+        },
+        {
+          heading: "3. Treatment",
+          points: [
+            "**Oseltamivir 75 mg twice daily for 5 days**, started today; the drug is safe in pregnancy and the benefit persists even beyond 48 hours in a high-risk patient.",
+            "Paracetamol for fever (fever itself is harmful to the fetus), oral fluids, rest, and no aspirin or NSAIDs in the third trimester.",
+            "No antibiotic unless secondary bacterial pneumonia develops - recurrence of fever, purulent sputum or new focal signs after initial improvement, in which case amoxicillin-clavulanate is added and the patient is reviewed for admission.",
+            "Home isolation in a separate ventilated room for 7 days or until 24 hours after the fever settles, a triple-layer mask, hand hygiene, and a daily telephone check on breathing, SpO2 if a pulse oximeter is available, and fetal movements.",
+            "Written instructions to return immediately for breathlessness, chest pain, drowsiness, bleeding, reduced fetal movements or persistence of fever beyond 3 days of treatment.",
+          ],
+        },
+        {
+          heading: "4. Public health and preventive measures",
+          points: [
+            "Report the case under IDSP on the P form and notify H1N1 if it is confirmed, because it is notifiable in most states; look for other cases in the household and the neighbourhood and report any cluster the same day.",
+            "**Post-exposure prophylaxis with oseltamivir 75 mg once daily for 10 days** for high-risk household contacts, such as an elderly diabetic parent or a child under 5.",
+            "Vaccinate the household: annual influenza vaccine for high-risk members and the pregnant woman herself once she has recovered, and Tdap for her between 27 and 36 weeks if not already given.",
+            "Counsel on cough etiquette, masks and ventilation, and advise the family that antibiotics have no role in influenza-like illness.",
+          ],
+        },
+      ],
+      mustDraw: [
+        "A table of MoHFW Categories A, B(i), B(ii) and C with the action for each.",
+        "A box of high-risk groups for influenza complications.",
+      ],
+      markSplit: [
+        { part: "Definition and clinical assessment", marks: 2 },
+        { part: "Categorisation with the high-risk groups", marks: 3 },
+        { part: "Oseltamivir with dose, supportive care and isolation", marks: 3 },
+        { part: "Public health measures and vaccination", marks: 2 },
+      ],
+      keywords: ["influenza-like illness", "Category B(ii)", "oseltamivir", "pregnancy", "IDSP"],
+    },
+    {
+      id: "respiratory-acute-cough-influenza-covid-t2",
+      paper: "II",
+      kind: "short-note",
+      marks: 5,
+      minutes: 10,
+      frequency: "common",
+      question: "Write short notes on acute bronchitis, with emphasis on the rational use of antibiotics.",
+      openingLines: [
+        "Acute bronchitis is a self-limited inflammation of the trachea and large bronchi presenting as cough, with or without sputum, lasting up to 3 weeks, in a patient without pneumonia or chronic lung disease.",
+        "More than 90% of cases are viral, and the central management decision is to withhold the antibiotic that the patient expects while identifying the minority with pneumonia, pertussis or an exacerbation of chronic lung disease who need one.",
+      ],
+      answer: [
+        {
+          heading: "Aetiology and clinical features",
+          points: [
+            "Viruses: influenza A and B, parainfluenza, RSV, rhinovirus, coronaviruses including SARS-CoV-2, adenovirus; bacteria (Mycoplasma pneumoniae, Chlamydophila pneumoniae, Bordetella pertussis) in under 10%.",
+            "Cough, often productive, lasting a median of 18 days; wheeze, retrosternal soreness, low-grade fever and coryza; the chest is clear or has scattered rhonchi.",
+            "Purulent sputum reflects neutrophils, not bacterial infection.",
+          ],
+        },
+        {
+          heading: "Diagnosis and the search for the exceptions",
+          points: [
+            "A clinical diagnosis; a chest radiograph is needed only for pneumonia discriminators - **pulse over 100/min, respiratory rate over 24/min, temperature over 38 degrees Celsius, focal signs or SpO2 under 94%**.",
+            "Point-of-care CRP: under 20 mg/L no antibiotic; 20-100 mg/L delayed prescription; over 100 mg/L treat as pneumonia.",
+            "In India, any cough reaching 2 weeks is presumptive tuberculosis and needs a sputum NAAT; paroxysmal cough with post-tussive vomiting and lymphocytosis suggests pertussis.",
+          ],
+        },
+        {
+          heading: "Management",
+          points: [
+            "**No antibiotic** for uncomplicated acute bronchitis (ICMR and NCDC guidelines): antibiotics shorten cough by half a day and add adverse effects and resistance.",
+            "Antibiotics are indicated only for pertussis (azithromycin 5 days), suspected pneumonia, an exacerbation of COPD with increased sputum purulence, and the immunocompromised or very frail.",
+            "Symptomatic care: paracetamol, fluids, honey after 1 year of age, salbutamol inhaler only if wheezing; no codeine under 12 years, no cough-cold syrups under 2 years and generally not under 5.",
+            "Explain the expected 3-week course, use a delayed prescription where the patient insists, and give a written safety net of symptoms that need review.",
+          ],
+        },
+      ],
+      mustDraw: ["A three-tier CRP box (under 20, 20-100, over 100 mg/L) with the antibiotic decision for each."],
+      markSplit: [
+        { part: "Definition and aetiology", marks: 1 },
+        { part: "Clinical features and pneumonia discriminators", marks: 1.5 },
+        { part: "Antibiotic decision with the exceptions", marks: 1.5 },
+        { part: "Symptomatic care and counselling", marks: 1 },
+      ],
+      keywords: ["acute bronchitis", "antibiotic stewardship", "CRP", "pneumonia discriminators", "delayed prescription"],
+    },
+  ],
+  mcqs: [
+    {
+      id: "respiratory-acute-cough-influenza-covid-q1",
+      stem: "A 26-year-old woman at 28 weeks of pregnancy presents in September with fever of 39 degrees Celsius, sore throat, myalgia and dry cough for 36 hours. Respiratory rate 20/min, SpO2 98% on air, chest clear. Which is the correct management?",
+      options: [
+        "Send an RT-PCR for H1N1 and start oseltamivir only if it is positive",
+        "Start oseltamivir 75 mg twice daily for 5 days today without testing, with home isolation and paracetamol",
+        "Start amoxicillin-clavulanate for 7 days because pregnancy increases the risk of bacterial pneumonia",
+        "Give paracetamol alone and review in 48 hours, since she is not breathless",
+        "Admit to intensive care for observation because of the pregnancy",
+      ],
+      answer: 1,
+      explanation:
+        "Pregnancy places her in the MoHFW high-risk group, making this Category B(ii) influenza-like illness, for which oseltamivir is started immediately without a test; the 48-hour window is a reason for urgency, not a reason to wait. Testing is reserved for Category C, and a result must never delay treatment in a high-risk patient. Antibiotics have no role in uncomplicated influenza-like illness. Paracetamol alone with a 48-hour review wastes the window in which the antiviral works best, and intensive care admission is for Category C features, which she does not have.",
+      difficulty: "easy",
+    },
+    {
+      id: "respiratory-acute-cough-influenza-covid-q2",
+      stem: "A 45-year-old non-smoking man has had a cough with yellow sputum for 6 days after a cold. Temperature 37.5 degrees Celsius, pulse 84/min, respiratory rate 16/min, SpO2 98% on air, chest clear, point-of-care CRP 8 mg/L. What is the best plan?",
+      options: [
+        "Amoxicillin-clavulanate for 5 days because the sputum is purulent",
+        "Azithromycin for 3 days to cover atypical organisms",
+        "No antibiotic; explain that the cough may last 3 weeks, treat symptoms and give a written safety net",
+        "Chest radiograph today and antibiotics if any shadow is seen",
+        "Oral prednisolone for 5 days to shorten the cough",
+      ],
+      answer: 2,
+      explanation:
+        "This is uncomplicated acute bronchitis: no pneumonia discriminator is present (pulse under 100, respiratory rate under 24, afebrile, normal saturation, clear chest) and the CRP is under 20 mg/L, so the ICMR and NCDC guidance is no antibiotic, symptomatic care and an explanation of the expected 18-day median duration. Purulent sputum reflects neutrophils and is not a bacterial marker, so neither amoxicillin-clavulanate nor a macrolide is justified. A chest radiograph is not needed without discriminators, and oral steroids have no benefit in acute bronchitis without asthma.",
+      difficulty: "easy",
+    },
+    {
+      id: "respiratory-acute-cough-influenza-covid-q3",
+      stem: "A 62-year-old man with type 2 diabetes is in home isolation on day 4 of mild COVID-19. He has no breathlessness. His resting SpO2 is 96%, but after a 6-minute walk it falls to 91%. What should be done?",
+      options: [
+        "Continue home isolation and start oral dexamethasone 6 mg daily",
+        "Refer him to hospital today for oxygen assessment and inpatient management",
+        "Start ivermectin and doxycycline and review in 48 hours",
+        "Reassure him, because the resting saturation is above 94%",
+        "Start oral amoxicillin for presumed secondary bacterial pneumonia",
+      ],
+      answer: 1,
+      explanation:
+        "A fall of 3% or more, or an SpO2 under 93%, on the 6-minute walk test identifies exertional desaturation, the earliest marker of the silent hypoxaemia of COVID-19 pneumonia, and mandates hospital assessment where oxygen, steroid, anticoagulation and remdesivir can be given under monitoring. Dexamethasone at home without oxygen monitoring is exactly the pattern that produced harm and mucormycosis in diabetics. Ivermectin and doxycycline were dropped from national guidance for lack of benefit. Reassurance ignores the purpose of the walk test, and antibiotics do not treat viral pneumonia.",
+      difficulty: "moderate",
+    },
+    {
+      id: "respiratory-acute-cough-influenza-covid-q4",
+      stem: "A 14-year-old boy has had a cough for 2 weeks that comes in paroxysms ending in vomiting; he is afebrile between bouts and his mother describes a whooping sound. His total leucocyte count is 24,000/microlitre with 80% lymphocytes. He has a 3-month-old sister at home. What is the most appropriate management?",
+      options: [
+        "Sputum NAAT for tuberculosis and no treatment until the result",
+        "Amoxicillin for 7 days and a salbutamol inhaler",
+        "Azithromycin for 5 days for him, the same course for all household contacts, notification, and exclusion from school for 5 days",
+        "Inhaled budesonide for 4 weeks for post-infectious cough",
+        "Reassurance, because he is beyond the infectious period",
+      ],
+      answer: 2,
+      explanation:
+        "Paroxysmal cough with post-tussive vomiting, a whoop and marked lymphocytosis in an afebrile adolescent is pertussis; a macrolide within 3 weeks of cough onset stops transmission, and because there is an infant at home every household contact receives prophylaxis regardless of vaccination status while the case is notified and kept from school for 5 days of antibiotic. Tuberculosis should be excluded in any 2-week cough but does not produce this picture, and waiting would leave the infant exposed. Amoxicillin does not cover Bordetella. Inhaled steroid is for post-infectious cough after the infection has been dealt with, and he remains infectious well into the paroxysmal stage.",
+      difficulty: "moderate",
+    },
+    {
+      id: "respiratory-acute-cough-influenza-covid-q5",
+      stem: "A 6-year-old girl weighing 20 kg with cerebral palsy presents with fever, cough and sore throat for one day during an H1N1 outbreak. She is Category B(ii). What is the correct oseltamivir prescription?",
+      options: [
+        "30 mg twice daily for 5 days",
+        "45 mg twice daily for 5 days",
+        "60 mg twice daily for 5 days",
+        "75 mg twice daily for 5 days",
+        "75 mg once daily for 10 days",
+      ],
+      answer: 1,
+      explanation:
+        "Children are dosed by weight: 30 mg twice daily under 15 kg, 45 mg twice daily for 15-23 kg, 60 mg twice daily for 24-40 kg and the adult 75 mg twice daily above 40 kg, each for 5 days, so a 20 kg child receives 45 mg twice daily. The 30 mg dose under-treats her, the 60 mg and 75 mg doses belong to heavier children and adults, and a once-daily course for 10 days is the prophylaxis schedule for contacts, not the treatment of a symptomatic high-risk child.",
+      difficulty: "easy",
+    },
+    {
+      id: "respiratory-acute-cough-influenza-covid-q6",
+      stem: "A 70-year-old man with COPD asks in March when he should receive his influenza vaccine in Mumbai. Which advice is correct?",
+      options: [
+        "The vaccine is given once in a lifetime after 65, so he needs no further dose",
+        "Give the Southern Hemisphere formulation in April-May before the monsoon peak, and repeat it every year",
+        "Defer the vaccine because egg-based vaccines are contraindicated in COPD",
+        "Give two doses one month apart because he is over 65",
+        "Give the live attenuated intranasal vaccine because it is more effective in the elderly",
+      ],
+      answer: 1,
+      explanation:
+        "Influenza in most of India peaks in the monsoon months of July to September, so the Southern Hemisphere formulation given in April-May protects through the peak, and because both the strains and the antibody titre change it is repeated every year. It is not a once-in-a-lifetime vaccine. COPD is an indication, not a contraindication, and egg allergy short of anaphylaxis is not a contraindication either. Two doses are needed only for children under 9 receiving the vaccine for the first time. The live attenuated vaccine is licensed for ages 2-49 and is not used in the elderly.",
+      difficulty: "moderate",
+    },
+  ],
+  cards: [
+    {
+      id: "respiratory-acute-cough-influenza-covid-c1",
+      front: "WHO surveillance definitions of ILI and SARI.",
+      back: "ILI: acute respiratory infection with measured fever of 38 degrees Celsius or more and cough, onset within the last 10 days. SARI: the same illness requiring hospital admission.",
+    },
+    {
+      id: "respiratory-acute-cough-influenza-covid-c2",
+      front: "Time axis of cough, and the Indian exception.",
+      back: "Acute under 3 weeks, subacute 3-8 weeks, chronic over 8 weeks; but any cough of 2 weeks or more is presumptive tuberculosis under NTEP and needs sputum NAAT.",
+    },
+    {
+      id: "respiratory-acute-cough-influenza-covid-c3",
+      front: "MoHFW influenza Category B(ii) - who and what.",
+      back: "Influenza-like illness in a high-risk group (pregnancy, under 5, over 65, chronic disease, immunosuppression): oseltamivir immediately, home isolation, no test needed.",
+    },
+    {
+      id: "respiratory-acute-cough-influenza-covid-c4",
+      front: "Which influenza patients are tested, and what test?",
+      back: "Only Category C (severe or hospitalised) - RT-PCR on nasopharyngeal and throat swab sent to a VRDL; treatment is never delayed for the result.",
+    },
+    {
+      id: "respiratory-acute-cough-influenza-covid-c5",
+      front: "Oseltamivir adult treatment and prophylaxis doses.",
+      back: "Treatment 75 mg twice daily for 5 days, ideally within 48 hours but at any time in severe or high-risk illness; prophylaxis 75 mg once daily for 10 days.",
+    },
+    {
+      id: "respiratory-acute-cough-influenza-covid-c6",
+      front: "Pneumonia discriminators in a patient with acute cough.",
+      back: "Pulse over 100/min, respiratory rate over 24/min, temperature over 38 degrees Celsius, focal crackles or bronchial breathing, SpO2 under 94% - any one earns a chest radiograph.",
+    },
+    {
+      id: "respiratory-acute-cough-influenza-covid-c7",
+      front: "Point-of-care CRP thresholds for antibiotics in acute cough.",
+      back: "Under 20 mg/L: no antibiotic. 20-100 mg/L: delayed prescription. Over 100 mg/L: treat as pneumonia.",
+    },
+    {
+      id: "respiratory-acute-cough-influenza-covid-c8",
+      front: "COVID-19 severity bands (AIIMS-ICMR).",
+      back: "Mild: no breathlessness, SpO2 94% or more. Moderate: respiratory rate 24-30 or SpO2 90-93%. Severe: rate over 30, SpO2 under 90%, ARDS or shock.",
+    },
+    {
+      id: "respiratory-acute-cough-influenza-covid-c9",
+      front: "The 6-minute walk test in home-isolated COVID-19.",
+      back: "A fall in SpO2 of 3% or more, or a reading under 93% after walking, unmasks silent hypoxaemia and means hospital referral.",
+    },
+    {
+      id: "respiratory-acute-cough-influenza-covid-c10",
+      front: "Pertussis treatment and contact management.",
+      back: "Azithromycin 10 mg/kg day 1 then 5 mg/kg days 2-5 (adult 500 then 250 mg); same course for all household contacts if an infant, pregnant woman or immunocompromised person is at home; exclude from school for 5 days; notify.",
+    },
+    {
+      id: "respiratory-acute-cough-influenza-covid-c11",
+      front: "Influenza vaccine in India: which formulation, when, how often.",
+      back: "Inactivated Southern Hemisphere formulation (trivalent from 2024-25), given in April-May before the monsoon, every year; two doses 4 weeks apart for first-time recipients aged 6 months to 8 years; any trimester of pregnancy.",
+    },
+    {
+      id: "respiratory-acute-cough-influenza-covid-c12",
+      front: "Cough syrups in children - the 2025 MoHFW advice.",
+      back: "Not to be prescribed under 2 years and generally not recommended under 5; use fluids, honey after 1 year, saline nasal drops and a review date instead.",
+    },
+  ],
+  references: [
+    "MoHFW Guidelines on categorisation of seasonal influenza A H1N1 cases during screening for home isolation, testing, treatment and hospitalisation, 2009, with subsequent revisions",
+    "ICMR Treatment Guidelines for Antimicrobial Use in Common Syndromes, 2nd edition, 2019, and National Treatment Guidelines for Antimicrobial Use, NCDC, MoHFW",
+    "AIIMS/ICMR-COVID-19 National Task Force Clinical Guidance for Management of Adult COVID-19 Patients, revised January 2023",
+    "WHO Global Epidemiological Surveillance Standards for Influenza, 2014",
+    "CHEST Expert Cough Panel guidelines on the management of cough, 2018-2020",
+    "NICE NG120 Cough (acute): antimicrobial prescribing, 2019",
+    "Association of Physicians of India Expert Group recommendations on adult immunisation, 2020",
+    "MoHFW advisory on the use of cough syrups in children, October 2025",
+    "Harrison's Principles of Internal Medicine, 21st edition, 2022 - influenza and COVID-19",
+  ],
+});
+
+topics.push({
+  id: "respiratory-tb-infection-contacts-tpt",
+  title: "TB infection, contact investigation and TB preventive treatment under NTEP",
+  oneLiner:
+    "TB infection is a state of persistent immune response to Mycobacterium tuberculosis antigens without clinical or radiological evidence of active disease; under NTEP every household contact of a pulmonary tuberculosis patient is screened, active disease is excluded, and eligible contacts and all people living with HIV are offered TB preventive treatment with 6H or 3HP, recorded on Ni-kshay.",
+  frequency: "common",
+  keywords: [
+    "latent tuberculosis",
+    "LTBI",
+    "TB infection",
+    "TB preventive treatment",
+    "TPT",
+    "isoniazid preventive therapy",
+    "IPT",
+    "3HP",
+    "6H",
+    "rifapentine",
+    "Mantoux",
+    "tuberculin skin test",
+    "IGRA",
+    "QuantiFERON",
+    "Cy-Tb",
+    "household contact",
+    "contact tracing",
+    "index case",
+    "NTEP",
+    "Ni-kshay",
+    "levofloxacin prophylaxis",
+    "TB Mukt Bharat",
+  ],
+  sections: [
+    {
+      heading: "Definitions, the size of the reservoir and why prevention decides elimination",
+      points: [
+        "**TB infection (WHO, replacing the older term latent TB infection):** a state of persistent immune response to stimulation by Mycobacterium tuberculosis antigens without evidence of clinically manifest active tuberculosis. The infected person has no symptoms, is not infectious, has a normal chest radiograph, and is identified only by a positive test of immune memory.",
+        "About a **quarter of the world's population** and an estimated **30-40% of Indian adults - over 35 crore people - carry TB infection**; this reservoir, not new transmission alone, produces a large share of the roughly 27 lakh incident cases India records every year, which is why the National Strategic Plan 2017-25 and the End TB targets cannot be reached by treating disease alone.",
+        "**Lifetime risk of progression is 5-10%, half of it within the first 2 years** of infection. The risk multipliers you must be able to list: **HIV (about 10% per year)**, age under 5 (40-50% in infants under 1 year, 25% at 1-2 years), recent infection, **undernutrition** (the single largest population-attributable factor in India), diabetes (three-fold), silicosis (30-fold), anti-TNF and other immunosuppressive therapy, dialysis and transplantation, smoking, alcohol use disorder, and fibrotic lesions on chest radiograph.",
+        "**TB preventive treatment (TPT)** reduces progression to disease by 60-90% in those who complete it. The 2021 Guidelines for Programmatic Management of TB Preventive Treatment in India expanded TPT from children under 6 and PLHIV to **all household contacts of pulmonary TB patients of any age and to other high-risk groups**, and made TPT a recorded outcome on Ni-kshay.",
+        "The **TB Mukt Bharat Abhiyaan** and the **100-day intensified campaign (December 2024 to March 2025) in 347 high-burden districts** took this further with active case finding among the vulnerable using hand-held digital radiography with artificial-intelligence reading, upfront NAAT, nutrition support and TPT for contacts; a family physician who notifies a case is expected to help the programme complete this cascade for the household.",
+      ],
+    },
+    {
+      heading: "Contact investigation: who is a contact and how the household is screened",
+      points: [
+        "**Household contact (NTEP definition):** a person who shared the same enclosed living space as the index patient for **one or more nights, or for frequent or extended periods during the day, in the 3 months before the start of the current treatment**. A **close contact** shares an enclosed space outside the household - workplace, hostel, classroom, prison cell - for extended periods.",
+        "**Every pulmonary tuberculosis patient, bacteriologically confirmed or clinically diagnosed, is an index case** whose household is investigated; and for **every child diagnosed with tuberculosis the process is reversed** to find the adult source case at home. Extrapulmonary index cases do not need household screening unless there is also a pulmonary component.",
+        "**The screening cascade for each contact:** the four-symptom screen (cough of any duration, fever, weight loss, night sweats - remember that in contacts a cough of any duration counts), **a chest radiograph for every household contact irrespective of symptoms**, and a sputum NAAT (CBNAAT or Truenat) for anyone with a symptom or an abnormal radiograph. In children the screen adds poor weight gain, reduced playfulness and lethargy, with gastric aspirate or induced sputum when a sample is needed.",
+        "The purpose of the cascade is twofold: to find the **5-10% of household contacts who already have active disease** (co-prevalent cases), and to identify the remainder as eligible for TPT once active disease has been excluded, because giving isoniazid alone to a person with unrecognised active disease breeds resistance.",
+        "Contacts of **drug-resistant tuberculosis** are screened the same way and then followed with a symptom screen every 6 months for 2 years, because progression must be caught early and treated with a regimen built on the index patient's resistance pattern.",
+        "The health worker or ASHA line-lists the contacts on Ni-kshay at notification, the screening and TPT are recorded against the index patient's ID, and the family physician who diagnosed the index case should confirm at the first follow-up visit that the household has actually been visited - the commonest gap in the cascade is a contact who was listed and never screened.",
+      ],
+    },
+    {
+      heading: "Tests of TB infection: tuberculin skin test, IGRA and Cy-Tb",
+      points: [
+        "**Tuberculin skin test (Mantoux):** 0.1 mL of purified protein derivative - **5 tuberculin units of PPD-S or 2 TU of PPD RT23** - injected intradermally on the volar aspect of the forearm to raise a 6-10 mm wheal, and **read at 48-72 hours by measuring the transverse diameter of induration, not erythema**, in millimetres with the ballpoint method. Record the millimetres, never just 'positive'.",
+        "**Interpretation under NTEP:** **induration of 5 mm or more is positive in PLHIV, severely malnourished children and the immunosuppressed; 10 mm or more is positive in everybody else**, including household contacts and health workers. A 15 mm cut-off for persons with no risk factors is an American convention that is not used in India.",
+        "**False negatives** (anergy): HIV with low CD4, severe undernutrition, measles or other recent viral infection, live vaccines within the previous 6 weeks, miliary or meningeal tuberculosis, corticosteroids and immunosuppressants, infants under 6 months, sarcoidosis, and technical faults - subcutaneous injection, light-exposed or outdated tuberculin, reading erythema. **False positives:** BCG (mainly within 10 years of vaccination and more so when BCG was given after infancy) and non-tuberculous mycobacteria. The **booster phenomenon** means a second test within 1-4 weeks of the first can be larger without new infection, which is why health workers get a two-step baseline.",
+        "**Interferon-gamma release assays** (QuantiFERON-TB Gold Plus, an ELISA on whole blood, and T-SPOT.TB, an ELISPOT on lymphocytes) measure the interferon-gamma response to **ESAT-6 and CFP-10**, antigens absent from BCG and from most non-tuberculous mycobacteria, so they are **not confounded by BCG**, need a single visit and have no booster effect; their disadvantages are cost (about Rs 2,000-3,500), the need for a laboratory within 16 hours, indeterminate results in immunosuppression and reduced reliability under 2 years of age.",
+        "**Cy-Tb** is an Indian-manufactured skin test using recombinant ESAT-6 and CFP-10 in place of PPD, approved by the DCGI in 2022 and being rolled out under NTEP; it is given and read exactly like the Mantoux test, with **5 mm or more of induration taken as positive**, and combines the specificity of IGRA with the cost and logistics of a skin test.",
+        "**What no test can do:** none distinguishes infection from disease, none predicts who will progress (the positive predictive value for disease within 2 years is only 2-5%), and a negative test does not exclude infection in a recently exposed or immunosuppressed person. **Testing is therefore never a prerequisite for TPT in the two highest-risk groups** - children under 5 who are household contacts and people living with HIV - and, where a test is unavailable, contacts aged 5 and above may still receive TPT after active disease is excluded.",
+      ],
+    },
+    {
+      heading: "TB preventive treatment: who is eligible and how active disease is excluded first",
+      points: [
+        "**Eligible groups under the 2021 Indian guidelines:** (1) **all people living with HIV** - adults, adolescents and children over 12 months regardless of contact history, and infants under 12 months only if they are contacts; (2) **all household contacts of pulmonary TB patients** - children under 5 years without any test of infection, and contacts aged 5 and above after a test of infection where available; (3) **other clinical risk groups after a positive test** - patients starting anti-TNF or other biologic therapy, patients on dialysis or preparing for organ or haematological transplantation, and patients with silicosis; and (4) groups where TPT **may be considered on clinical judgement** - prisoners, health workers, migrants, the homeless, people who use drugs, and patients with diabetes, undernutrition, smoking or alcohol use disorder.",
+        "**Excluding active disease is the non-negotiable first step:** a negative four-symptom screen plus a normal chest radiograph. Anyone with a symptom or a radiographic abnormality gets a NAAT and, if that is negative and doubt persists, a clinician's review - **TPT is deferred until active tuberculosis has been excluded**. In PLHIV the WHO adds C-reactive protein (over 5 mg/L) as a screening trigger.",
+        "**Contraindications and reasons to defer:** active tuberculosis; active hepatitis or ALT more than three times normal; a history of severe hypersensitivity to isoniazid or rifamycins; and, for the rifapentine regimens, pregnancy, age under 2 years and antiretroviral regimens containing protease inhibitors or nevirapine. Previous completed treatment for tuberculosis is not a contraindication if there has been a new exposure.",
+        "Contacts of **MDR/RR-TB** patients are the special case: the index strain is isoniazid-resistant, so 6H and 3HP are useless; **6 months of daily levofloxacin** (750-1000 mg in adults, 15-20 mg/kg in children) is the regimen recommended by the WHO in 2024 on the strength of the V-QUIN and TB-CHAMP trials, and is being adopted under NTEP alongside 6-monthly clinical follow-up for 2 years. Contacts of a fluoroquinolone-resistant index case get follow-up alone.",
+      ],
+    },
+    {
+      heading: "The regimens, their doses and how completion is defined",
+      points: [
+        "**6H:** isoniazid daily for 6 months - **10 mg/kg (range 7-15, maximum 300 mg) in children and 5 mg/kg to a maximum of 300 mg in adults**, with pyridoxine 10-25 mg daily for PLHIV, pregnant and lactating women, diabetics, the undernourished and alcohol users. It is the regimen for children under 2, pregnant women and PLHIV on protease inhibitor or nevirapine-based ART, and is usable at any age.",
+        "**3HP:** **12 once-weekly doses of isoniazid plus rifapentine over 3 months**, for contacts and PLHIV **aged 2 years and above**. Adults and adolescents receive isoniazid 15 mg/kg (maximum 900 mg) and rifapentine by weight band - 300 mg for 10-15.9 kg, 450 mg for 16-23.9 kg, 600 mg for 24-30.9 kg, 750 mg for 31-49.9 kg and **900 mg at 50 kg or more**; children of 2-14 years get isoniazid 25 mg/kg weekly. Completion in 12 doses rather than 180 makes it the programme's preferred adult regimen, and it is compatible with efavirenz and dolutegravir without dose adjustment.",
+        "**3HR:** isoniazid plus rifampicin daily for 3 months using the paediatric dispersible fixed-dose combination, the regimen for children under 2 years; **1HP** (daily isoniazid plus rifapentine for 1 month) is an option for those aged 13 and above; **4R** (rifampicin daily for 4 months) is used when isoniazid is contraindicated or the index strain is isoniazid-monoresistant.",
+        "**Adverse effects to warn about and monitor monthly:** hepatotoxicity from isoniazid (stop if ALT is over three times normal with symptoms or over five times without, and do not restart the same regimen without specialist advice), peripheral neuropathy prevented by pyridoxine, rash and hypersensitivity, a **flu-like reaction with weekly rifapentine**, orange discolouration of urine and secretions, and **failure of oral contraceptives with any rifamycin** - advise a barrier or depot method. Baseline liver tests are needed only for those with liver disease, heavy alcohol use, HIV, pregnancy or the puerperium.",
+        "**Completion:** a course is complete when at least 80% of the doses have been taken within 133% of the intended duration - in practice **180 doses of 6H within 9 months, or 12 doses of 3HP within 16 weeks**; missed doses are added to the end rather than restarting. The outcome (completed, lost to follow-up, stopped for adverse effects, developed TB, died) is recorded on Ni-kshay, and the drugs are free at every DMC and health and wellness centre.",
+        "A person who develops symptoms during TPT is evaluated for active disease immediately and, if disease is confirmed, is switched to full four-drug treatment; a person who is re-exposed to a new infectious index case after completing TPT may be offered a second course.",
+      ],
+    },
+    {
+      heading: "Counselling, infection control at home and the family physician's role",
+      points: [
+        "Explain the difference between infection and disease in plain words: the germ is asleep in the body, it cannot spread to others, and a short course of one or two medicines kills it before it can wake up. Families that understand this complete TPT; families told only that 'the child must take tablets for 6 months' do not.",
+        "**Airborne infection control at home** for the first 2 weeks of the index patient's treatment: sleep in a separate, well-ventilated room where possible, keep windows open, let sunlight in, cover the mouth when coughing, never spit in the open, and keep the infant and the elderly out of the sick room. A patient on effective treatment becomes non-infectious within about 2 weeks.",
+        "Watch the whole household for the next 2 years: the ASHA screens the contacts at each visit to the index patient, and the family physician repeats the four-symptom screen at every consultation for any member of that household, because a co-prevalent or incident case is commonest in the first year.",
+        "Special groups the examiner likes: a **pregnant contact** gets 6H (rifapentine regimens are deferred to after delivery); a **health worker** gets a two-step baseline tuberculin test and annual symptom screening, with TPT after a conversion; a **diabetic contact** is screened with the same cascade and is a reasonable candidate for TPT on clinical judgement; and a **child under 5 at home with a sputum-positive parent gets TPT the same week, with no test**.",
+        "India has also begun an **adult BCG vaccination programmatic study in high-risk adults** (household contacts, previously treated patients, diabetics, smokers, the undernourished and the elderly) in several states since 2024; it is given only with consent within the study framework and is not yet routine policy.",
+      ],
+    },
+  ],
+  tables: [
+    {
+      heading: "TB preventive treatment regimens under NTEP (Indian guidelines 2021, with WHO 2024 additions)",
+      columns: ["Regimen", "Composition and duration", "Adult dose", "Who", "Completion"],
+      rows: [
+        ["6H", "Isoniazid daily for 6 months", "5 mg/kg, maximum 300 mg daily, with pyridoxine in those at risk", "Any age; children under 2, pregnancy, PLHIV on protease inhibitor or nevirapine", "180 doses within 9 months"],
+        ["3HP", "Isoniazid plus rifapentine once weekly, 12 doses", "Isoniazid 15 mg/kg (maximum 900 mg) plus rifapentine 900 mg at 50 kg or more, weight-banded below", "Age 2 years and above, including PLHIV on efavirenz or dolutegravir; not in pregnancy", "12 doses within 16 weeks"],
+        ["3HR", "Isoniazid plus rifampicin daily for 3 months", "Paediatric dispersible fixed-dose combination by weight band", "Children under 2 years", "About 90 doses within 4 months"],
+        ["1HP", "Isoniazid plus rifapentine daily for 1 month", "Isoniazid 300 mg plus rifapentine 600 mg daily", "Age 13 years and above; not in pregnancy", "28 doses within 6 weeks"],
+        ["4R", "Rifampicin daily for 4 months", "10 mg/kg, maximum 600 mg daily", "Isoniazid intolerance or isoniazid-monoresistant index case", "120 doses within 6 months"],
+        ["6Lfx", "Levofloxacin daily for 6 months", "750 mg under 50 kg, 1000 mg at 50 kg or more; children 15-20 mg/kg", "Household contacts of MDR/RR-TB (WHO 2024; being adopted under NTEP)", "180 doses within 9 months"],
+      ],
+    },
+    {
+      heading: "Reading and acting on the tuberculin skin test under NTEP",
+      columns: ["Induration at 48-72 hours", "Population", "Interpretation"],
+      rows: [
+        ["5 mm or more", "PLHIV, severely malnourished children, immunosuppressed patients", "Positive"],
+        ["10 mm or more", "Everyone else, including household contacts and health workers", "Positive"],
+        ["Under the cut-off", "Recently exposed contact, immunosuppressed, infant under 6 months", "Does not exclude infection; treat children under 5 and PLHIV regardless"],
+        ["Any size", "Person with symptoms or an abnormal chest radiograph", "Irrelevant to the decision - exclude active disease with NAAT first"],
+      ],
+    },
+  ],
+  redFlags: [
+    "A household contact with cough of any duration, fever, weight loss or night sweats - this is presumptive tuberculosis, not a TPT candidate; send a sputum NAAT before any isoniazid is dispensed.",
+    "A child under 5 living with a sputum-positive adult who has not been screened within a week of the index diagnosis - the risk of disseminated or meningeal tuberculosis is highest in this group and the delay is the programme's commonest failure.",
+    "Jaundice, persistent vomiting, dark urine or right upper quadrant pain in anyone on TPT - stop the drugs and measure ALT and bilirubin the same day.",
+    "Fever, chills and myalgia within hours of a weekly rifapentine dose - a flu-like or hypersensitivity reaction; stop the regimen and review, and do not simply repeat the dose the following week.",
+    "A household contact of an MDR-TB patient who develops any symptom in the 2-year follow-up period - needs immediate NAAT and treatment tailored to the index patient's resistance pattern, never first-line drugs.",
+  ],
+  pearls: [
+    "TB infection is asymptomatic, non-infectious and radiologically silent; 5-10% of the infected progress in a lifetime, half of them within 2 years, and PLHIV progress at 10% a year.",
+    "The Mantoux test is read at 48-72 hours by measuring induration, not erythema, in millimetres; 5 mm is positive in PLHIV and the severely malnourished child, 10 mm in everyone else.",
+    "A test of infection is never required before TPT in a child under 5 who is a household contact or in a person living with HIV; excluding active disease is what is required.",
+    "Every household contact of a pulmonary TB patient gets the four-symptom screen and a chest radiograph, and a NAAT if either is abnormal - the cascade finds the 5-10% who already have disease.",
+    "3HP is 12 weekly doses of isoniazid 900 mg plus rifapentine 900 mg for an adult of 50 kg or more, allowed from 2 years of age, compatible with dolutegravir, and not used in pregnancy.",
+    "Contacts of MDR-TB never get isoniazid-based TPT; the answer is 6 months of levofloxacin with 6-monthly screening for 2 years.",
+    "Any rifamycin, including rifapentine, defeats the oral contraceptive pill - the barrier or depot advice is part of the prescription.",
+  ],
+  theory: [
+    {
+      id: "respiratory-tb-infection-contacts-tpt-t1",
+      paper: "II",
+      kind: "long",
+      marks: 10,
+      minutes: 20,
+      frequency: "common",
+      question:
+        "A 35-year-old man is diagnosed with sputum-positive pulmonary tuberculosis. He lives with his wife, a 3-year-old son, a 7-year-old daughter and his 68-year-old mother who has diabetes. Describe the contact investigation and TB preventive treatment you would organise for this household under NTEP.",
+      openingLines: [
+        "Under NTEP every household contact - a person who shared the same enclosed living space as the index patient for one or more nights or for extended daytime periods in the 3 months before treatment began - is screened for active tuberculosis, and those without disease are offered TB preventive treatment, because household contacts carry a 5-10% risk of co-prevalent disease and a high risk of progression, greatest in the child under 5.",
+        "All four members of this household are contacts; the 3-year-old is eligible for preventive treatment without any test of infection, the wife and the 7-year-old after a test of infection where available, and the diabetic mother on the same basis with clinical judgement favouring treatment.",
+      ],
+      answer: [
+        {
+          heading: "1. Notification and line-listing",
+          points: [
+            "Notify the index patient on Ni-kshay, which generates the contact line-list; the ASHA or TB health visitor visits the home within a week.",
+            "Record every contact's age, symptoms, HIV status where known, and comorbidity; the diabetic mother and the 3-year-old are flagged as high risk.",
+            "Counsel the family on infection control for the first 2 weeks: separate ventilated sleeping space, cough hygiene, no spitting, sunlight, and keeping the child and the grandmother out of the sick room.",
+          ],
+        },
+        {
+          heading: "2. Screening every contact for active disease",
+          points: [
+            "**Four-symptom screen** for each: cough of any duration, fever, weight loss and night sweats; in the children add poor weight gain, lethargy and reduced playfulness.",
+            "**Chest radiograph for all four contacts irrespective of symptoms**; the diabetic mother additionally has her glycaemic control assessed because diabetes trebles her risk.",
+            "**NAAT (CBNAAT or Truenat)** on sputum for any contact with a symptom or an abnormal radiograph; in the children, gastric aspirate or induced sputum if a specimen is needed.",
+            "Anyone found to have disease is notified, started on daily fixed-dose 2HRZE/4HRE by weight band, and becomes a new index case; nobody with symptoms receives preventive treatment until active disease is excluded.",
+          ],
+        },
+        {
+          heading: "3. Tests of infection and the decision for each member",
+          points: [
+            "**3-year-old son:** no test needed; after a negative symptom screen and normal radiograph, start TPT within the week.",
+            "**7-year-old daughter and the wife:** tuberculin skin test (read at 48-72 hours, 10 mm or more positive), IGRA or Cy-Tb where available; if positive, TPT. If no test is available, TPT may still be offered after excluding disease, because the household exposure itself carries high risk.",
+            "**68-year-old diabetic mother:** same test and screen; diabetes plus household exposure makes TPT the favoured decision on clinical judgement, with liver function checked at baseline because of age.",
+            "Offer HIV testing to the adults; a positive result would make TPT unconditional.",
+          ],
+        },
+        {
+          heading: "4. Regimen, doses and monitoring",
+          points: [
+            "**3-year-old:** 6H at 10 mg/kg daily (about 150 mg using dispersible 100 mg tablets) for 6 months with pyridoxine, or 3HP with weight-banded rifapentine since he is over 2 years; 6H is the simpler option where rifapentine paediatric supply is uncertain.",
+            "**7-year-old:** 3HP with isoniazid 25 mg/kg weekly and rifapentine 450-600 mg by weight band for 12 doses, or 6H.",
+            "**Wife (if not pregnant) and mother:** **3HP - isoniazid 900 mg plus rifapentine 900 mg once weekly for 12 doses** (750 mg rifapentine if under 50 kg); if the wife is pregnant, 6H at 300 mg daily with pyridoxine and rifapentine deferred; advise the wife on contraception because rifapentine defeats the oral pill.",
+            "Monthly review for adherence, hepatotoxicity (jaundice, vomiting, dark urine), neuropathy, rash and a flu-like reaction with rifapentine; ALT if symptoms appear, stopping for ALT over three times normal with symptoms or over five times without.",
+            "Record each contact's TPT start and outcome on Ni-kshay; completion is 180 doses of 6H within 9 months or 12 doses of 3HP within 16 weeks.",
+          ],
+        },
+        {
+          heading: "5. Follow-up of the household",
+          points: [
+            "Repeat the four-symptom screen for every member at each visit of the index patient during his 6 months of treatment and at any consultation for 2 years.",
+            "Ensure the index patient's sputum follow-up is done at the end of the intensive phase and at the end of treatment, and confirm that he receives Ni-kshay Poshan Yojana support of Rs 1,000 per month, because a well-nourished, adherent index patient is the household's best protection.",
+            "Any contact who develops symptoms during or after TPT is evaluated immediately with NAAT and never simply continued on isoniazid.",
+          ],
+        },
+      ],
+      mustDraw: [
+        "A flow chart: household contact -> four-symptom screen plus chest radiograph -> NAAT if abnormal -> active TB treated as a new index case OR TPT after exclusion.",
+        "A table of TPT regimens (6H, 3HP, 3HR, 6Lfx) with doses, eligible ages and completion criteria.",
+      ],
+      markSplit: [
+        { part: "Definition of contact and notification", marks: 1.5 },
+        { part: "Screening cascade for active disease", marks: 2.5 },
+        { part: "Tests of infection and decision for each member", marks: 2 },
+        { part: "Regimens with doses and monitoring", marks: 3 },
+        { part: "Household follow-up", marks: 1 },
+      ],
+      keywords: ["household contact", "TB preventive treatment", "3HP", "6H", "Ni-kshay"],
+    },
+    {
+      id: "respiratory-tb-infection-contacts-tpt-t2",
+      paper: "II",
+      kind: "short-note",
+      marks: 5,
+      minutes: 10,
+      frequency: "common",
+      question: "Write short notes on the tuberculin skin test: technique, interpretation and limitations.",
+      openingLines: [
+        "The tuberculin skin test (Mantoux test) is a delayed-type hypersensitivity test in which purified protein derivative of Mycobacterium tuberculosis is injected intradermally and the resulting induration at 48-72 hours is measured as evidence of prior sensitisation to mycobacterial antigens.",
+        "It identifies TB infection, not disease, and its reading is interpreted against cut-offs that depend on the person's risk of infection and of progression.",
+      ],
+      answer: [
+        {
+          heading: "Technique",
+          points: [
+            "0.1 mL of PPD - **5 TU of PPD-S or 2 TU of PPD RT23** - drawn into a tuberculin syringe from a vial protected from light and heat.",
+            "Intradermal injection on the volar aspect of the forearm with the bevel up, raising a 6-10 mm pale wheal; a failed intradermal injection is repeated at a site 5 cm away.",
+            "**Read at 48-72 hours**: palpate the edges of induration, mark them with a ballpoint pen drawn towards the centre, and measure the transverse diameter in millimetres; erythema is ignored.",
+            "Record the result in millimetres with the date, not as 'positive' or 'negative'.",
+          ],
+        },
+        {
+          heading: "Interpretation",
+          points: [
+            "**5 mm or more is positive** in PLHIV, severely malnourished children and other immunosuppressed persons; **10 mm or more is positive** in all others, including household contacts and health workers (NTEP).",
+            "A positive test means infection at some time; it cannot distinguish infection from disease, cannot time the infection and cannot predict progression (positive predictive value for disease within 2 years only 2-5%).",
+            "A negative test does not exclude infection in a recently exposed, immunosuppressed or very young person, and is never a reason to withhold TPT from a child under 5 who is a contact or from a person living with HIV.",
+            "Uses: eligibility for TPT in contacts aged 5 and above and in clinical risk groups, supporting evidence in childhood tuberculosis, and baseline and conversion testing in health workers.",
+          ],
+        },
+        {
+          heading: "Limitations",
+          points: [
+            "**False negatives:** HIV, undernutrition, measles and other viral infections, live vaccines within 6 weeks, miliary or meningeal tuberculosis, steroids and immunosuppressants, infants under 6 months, sarcoidosis, and technical error including subcutaneous injection and light-damaged tuberculin.",
+            "**False positives:** BCG vaccination (mainly within 10 years, more when given after infancy) and non-tuberculous mycobacteria.",
+            "The **booster phenomenon**: a repeat test within 1-4 weeks may enlarge without new infection, so health workers receive a two-step baseline.",
+            "Requires two visits, trained reading and cold-chain tuberculin; IGRA (QuantiFERON, T-SPOT) and the Indian Cy-Tb skin test using ESAT-6 and CFP-10 avoid the BCG cross-reaction, and Cy-Tb keeps the cost and logistics of a skin test with a 5 mm cut-off.",
+          ],
+        },
+      ],
+      mustDraw: ["A two-row cut-off table: 5 mm (PLHIV, severely malnourished, immunosuppressed) and 10 mm (all others)."],
+      markSplit: [
+        { part: "Technique and reading", marks: 1.5 },
+        { part: "Cut-offs and meaning of a positive or negative result", marks: 2 },
+        { part: "False negatives, false positives, booster effect and alternatives", marks: 1.5 },
+      ],
+      keywords: ["Mantoux", "PPD", "induration", "booster phenomenon", "Cy-Tb"],
+    },
+  ],
+  mcqs: [
+    {
+      id: "respiratory-tb-infection-contacts-tpt-q1",
+      stem: "A 3-year-old boy is a household contact of his father, who was notified last week with sputum-positive pulmonary tuberculosis. The child is asymptomatic, gaining weight, and his chest radiograph is normal. Tuberculin is not available at the centre. What should be done?",
+      options: [
+        "Defer any treatment until a tuberculin test or IGRA can be arranged",
+        "Start TB preventive treatment now, because a test of infection is not required in a household contact under 5 years",
+        "Give a repeat BCG vaccination and review in 3 months",
+        "Start full four-drug anti-tuberculosis treatment because contacts under 5 are assumed to have disease",
+        "Repeat the chest radiograph every 3 months for 2 years without any drug",
+      ],
+      answer: 1,
+      explanation:
+        "A household contact under 5 years is at the highest risk of progression to disseminated disease, so once active tuberculosis has been excluded by a negative symptom screen and a normal radiograph the Indian guidelines start TPT without any test of infection; 6H at 10 mg/kg is the simplest choice and 3HP is permitted above 2 years. Waiting for a test delays protection during the highest-risk window and is not required. BCG revaccination has no role in a contact. Four-drug treatment is for disease, which has been excluded, and radiographic surveillance alone abandons a child who can be protected with one drug.",
+      difficulty: "easy",
+    },
+    {
+      id: "respiratory-tb-infection-contacts-tpt-q2",
+      stem: "The 32-year-old wife of a newly diagnosed pulmonary tuberculosis patient weighs 55 kg, is asymptomatic, is not pregnant, has a normal chest radiograph and a tuberculin induration of 14 mm at 72 hours. She asks for the shortest effective preventive regimen. What do you prescribe?",
+      options: [
+        "Isoniazid 300 mg daily for 6 months, because rifapentine regimens are not used in adults",
+        "Isoniazid 900 mg plus rifapentine 900 mg once weekly for 12 doses",
+        "Standard 2HRZE/4HRE, since a positive tuberculin test in a contact indicates disease",
+        "No treatment, because BCG in childhood explains the induration",
+        "Repeat the tuberculin test after 8 weeks and treat only if it enlarges",
+      ],
+      answer: 1,
+      explanation:
+        "An asymptomatic adult contact with a normal radiograph and a positive test of infection is the ideal 3HP candidate: 12 weekly doses of isoniazid 15 mg/kg (900 mg) plus rifapentine 900 mg at 50 kg or more, completed within 16 weeks, with advice that rifapentine defeats the oral contraceptive pill. 3HP is the programme's preferred adult regimen, so the first option is wrong in its reasoning even though 6H would also work. A positive tuberculin test signifies infection, not disease, so four-drug treatment is not indicated. BCG given at birth does not produce a 14 mm induration three decades later in a fresh household contact, and repeating the test wastes the 2-year window in which progression is most likely.",
+      difficulty: "moderate",
+    },
+    {
+      id: "respiratory-tb-infection-contacts-tpt-q3",
+      stem: "A 40-year-old man newly diagnosed with HIV has a CD4 count of 220/microlitre, no cough, fever, weight loss or night sweats, and a normal chest radiograph. He is being started on tenofovir-lamivudine-dolutegravir. Regarding TB preventive treatment, which statement is correct?",
+      options: [
+        "TPT must wait until a tuberculin test or IGRA is positive",
+        "TPT should be deferred until he has completed 6 months of antiretroviral therapy",
+        "TPT is started now without a test of infection, and 3HP may be used with dolutegravir without dose adjustment",
+        "TPT is contraindicated because his CD4 count is below 250/microlitre",
+        "Only 6H may be used because rifapentine cannot be combined with any antiretroviral drug",
+      ],
+      answer: 2,
+      explanation:
+        "Every person living with HIV who screens negative on the four-symptom screen and has a normal radiograph receives TPT regardless of any test of infection and regardless of CD4 count, and it is started alongside ART rather than after it. 3HP is compatible with efavirenz and with dolutegravir without dose change; the rifapentine restriction applies to protease inhibitor and nevirapine-based regimens, not to all antiretrovirals. A low CD4 count increases the need for TPT rather than contraindicating it, and waiting for a test or for 6 months of ART leaves him unprotected during his highest-risk period.",
+      difficulty: "moderate",
+    },
+    {
+      id: "respiratory-tb-infection-contacts-tpt-q4",
+      stem: "A healthy 26-year-old nurse has a tuberculin test read at 48 hours: erythema 22 mm in diameter with induration measuring 6 mm. She has no symptoms and no known contact. How should the result be recorded and interpreted?",
+      options: [
+        "Positive, because the erythema exceeds 10 mm",
+        "Positive, because 5 mm of induration is the cut-off for health workers",
+        "Induration 6 mm - negative for her category, since the cut-off in an immunocompetent adult is 10 mm",
+        "Uninterpretable, because the test can only be read at exactly 72 hours",
+        "Positive, and she should start 3HP immediately",
+      ],
+      answer: 2,
+      explanation:
+        "Only induration is measured, recorded in millimetres, and under NTEP the 5 mm cut-off is reserved for PLHIV, the severely malnourished child and the immunosuppressed; for everyone else, including health workers, 10 mm or more is positive, so 6 mm is negative in this nurse. Erythema is ignored regardless of its size. Readings are valid anywhere between 48 and 72 hours. Starting 3HP on a negative test with no symptoms and no exposure would be treatment without indication; what she needs is a two-step baseline and annual symptom screening as a health worker.",
+      difficulty: "easy",
+    },
+    {
+      id: "respiratory-tb-infection-contacts-tpt-q5",
+      stem: "A 4-year-old girl is the household contact of her uncle, whose sputum shows rifampicin resistance on CBNAAT and who has been started on an all-oral MDR-TB regimen. She is asymptomatic with a normal chest radiograph. What is the most appropriate preventive management?",
+      options: [
+        "Isoniazid 10 mg/kg daily for 6 months",
+        "3HP with weight-banded rifapentine",
+        "Daily levofloxacin 15-20 mg/kg for 6 months with symptom screening every 6 months for 2 years",
+        "No preventive drug; observe only, because no regimen is recommended for MDR contacts",
+        "Full MDR-TB treatment with bedaquiline and linezolid",
+      ],
+      answer: 2,
+      explanation:
+        "The index strain is resistant to rifampicin and almost always to isoniazid, so the isoniazid-based 6H and the rifapentine-based 3HP are ineffective. The WHO's 2024 recommendation, adopted under NTEP, is 6 months of daily levofloxacin for household contacts of MDR/RR-TB on the basis of the TB-CHAMP and V-QUIN trials, together with clinical follow-up every 6 months for 2 years. Observation alone was the older approach and leaves a high-risk child unprotected. Full second-line treatment is reserved for confirmed disease, not for an asymptomatic contact with a normal radiograph.",
+      difficulty: "hard",
+    },
+    {
+      id: "respiratory-tb-infection-contacts-tpt-q6",
+      stem: "A 45-year-old diabetic household contact of a pulmonary tuberculosis patient has an IGRA that is positive. On direct questioning he admits to a cough for 10 days and 2 kg of weight loss. What is the next step?",
+      options: [
+        "Start 3HP today, because the IGRA confirms infection",
+        "Start 6H and review the cough in a month",
+        "Send sputum for CBNAAT and withhold preventive treatment until active tuberculosis is excluded",
+        "Start 2HRZE/4HRE empirically on the strength of the IGRA and symptoms",
+        "Repeat the IGRA to confirm the result before deciding",
+      ],
+      answer: 2,
+      explanation:
+        "A positive symptom screen in a contact makes him presumptive tuberculosis, and giving isoniazid alone or with rifapentine to a person with unrecognised active disease is monotherapy that breeds resistance; the correct sequence is a sputum NAAT, a chest radiograph and clinical review, with TPT only after disease is excluded. Starting 3HP or 6H on the IGRA alone ignores the symptoms. Empirical four-drug treatment without a specimen throws away the chance of bacteriological confirmation and rifampicin susceptibility testing, both of which NTEP demands up front. Repeating the IGRA answers a question that is no longer relevant.",
+      difficulty: "moderate",
+    },
+  ],
+  cards: [
+    {
+      id: "respiratory-tb-infection-contacts-tpt-c1",
+      front: "Definition of TB infection.",
+      back: "A state of persistent immune response to M. tuberculosis antigens without evidence of clinically manifest active tuberculosis - asymptomatic, non-infectious, normal chest radiograph.",
+    },
+    {
+      id: "respiratory-tb-infection-contacts-tpt-c2",
+      front: "Lifetime risk of progression from infection, and the groups where it is highest.",
+      back: "5-10%, half within the first 2 years; PLHIV about 10% per year; infants under 1 year 40-50%; also undernutrition, diabetes, silicosis, anti-TNF therapy, dialysis and recent infection.",
+    },
+    {
+      id: "respiratory-tb-infection-contacts-tpt-c3",
+      front: "NTEP definition of a household contact.",
+      back: "A person who shared the same enclosed living space as the index patient for one or more nights, or for frequent or extended daytime periods, in the 3 months before the current treatment began.",
+    },
+    {
+      id: "respiratory-tb-infection-contacts-tpt-c4",
+      front: "Screening cascade for every household contact.",
+      back: "Four-symptom screen (cough of any duration, fever, weight loss, night sweats) plus a chest radiograph for all; NAAT for any symptom or radiographic abnormality; TPT only after disease is excluded.",
+    },
+    {
+      id: "respiratory-tb-infection-contacts-tpt-c5",
+      front: "Mantoux technique and reading.",
+      back: "0.1 mL of 5 TU PPD-S or 2 TU PPD RT23 intradermally on the volar forearm; read induration (not erythema) transversely in millimetres at 48-72 hours.",
+    },
+    {
+      id: "respiratory-tb-infection-contacts-tpt-c6",
+      front: "Tuberculin cut-offs under NTEP.",
+      back: "5 mm or more: PLHIV, severely malnourished children, immunosuppressed. 10 mm or more: everyone else including contacts and health workers. Cy-Tb: 5 mm or more.",
+    },
+    {
+      id: "respiratory-tb-infection-contacts-tpt-c7",
+      front: "Who gets TPT without any test of infection?",
+      back: "Household contacts under 5 years of age and all people living with HIV - once active disease has been excluded.",
+    },
+    {
+      id: "respiratory-tb-infection-contacts-tpt-c8",
+      front: "3HP: composition, dose and eligibility.",
+      back: "12 once-weekly doses of isoniazid 15 mg/kg (maximum 900 mg) plus rifapentine 900 mg at 50 kg or more (weight-banded below), age 2 years and above, not in pregnancy, compatible with efavirenz and dolutegravir; complete within 16 weeks.",
+    },
+    {
+      id: "respiratory-tb-infection-contacts-tpt-c9",
+      front: "6H dosing and who it is chosen for.",
+      back: "Isoniazid 10 mg/kg (maximum 300 mg) in children and 5 mg/kg (maximum 300 mg) in adults daily for 6 months with pyridoxine; regimen for children under 2, pregnant women and PLHIV on protease inhibitor or nevirapine ART; 180 doses within 9 months.",
+    },
+    {
+      id: "respiratory-tb-infection-contacts-tpt-c10",
+      front: "Preventive management for a household contact of MDR-TB.",
+      back: "Daily levofloxacin for 6 months (750-1000 mg adult; 15-20 mg/kg child) per WHO 2024, plus symptom screening every 6 months for 2 years; never isoniazid-based regimens.",
+    },
+    {
+      id: "respiratory-tb-infection-contacts-tpt-c11",
+      front: "When to stop TPT for hepatotoxicity.",
+      back: "ALT more than three times the upper limit with symptoms, or more than five times without; stop the drugs, check bilirubin, and do not restart without specialist advice.",
+    },
+    {
+      id: "respiratory-tb-infection-contacts-tpt-c12",
+      front: "Three causes each of a false-negative and a false-positive tuberculin test.",
+      back: "False negative: HIV, severe undernutrition, measles or live vaccine within 6 weeks, miliary TB, steroids, infants under 6 months. False positive: recent BCG (mainly within 10 years) and non-tuberculous mycobacteria.",
+    },
+  ],
+  references: [
+    "Guidelines for Programmatic Management of Tuberculosis Preventive Treatment in India, Central TB Division, MoHFW, 2021",
+    "WHO consolidated guidelines on tuberculosis, Module 1: Prevention - tuberculosis preventive treatment, 2nd edition, 2024",
+    "National TB Elimination Programme Training Modules for Programme Managers and Medical Officers, 2020, and Guidance for TB Mukt Bharat Abhiyaan, 2024-25",
+    "India TB Report 2024, Central TB Division, MoHFW",
+    "National Strategic Plan for Tuberculosis Elimination 2017-2025, MoHFW",
+    "Park's Textbook of Preventive and Social Medicine, 27th edition, 2023 - tuberculosis",
+    "Harrison's Principles of Internal Medicine, 21st edition, 2022 - tuberculosis",
+  ],
+});
+
+topics.push({
+  id: "respiratory-pleural-effusion",
+  title: "Pleural effusion: Light's criteria, the tubercular effusion and the parapneumonic one that needs a tube",
+  oneLiner:
+    "A pleural effusion is an abnormal collection of fluid in the pleural space that is classified as a transudate or an exudate by Light's criteria on a diagnostic thoracentesis; in India a lymphocyte-predominant exudate with adenosine deaminase above 40 U/L in a young adult is tubercular until proven otherwise, and a parapneumonic effusion with a pH under 7.20 needs a chest drain.",
+  frequency: "common",
+  keywords: [
+    "pleural effusion",
+    "Light's criteria",
+    "thoracentesis",
+    "pleural tap",
+    "exudate",
+    "transudate",
+    "adenosine deaminase",
+    "ADA",
+    "tubercular pleural effusion",
+    "parapneumonic effusion",
+    "empyema",
+    "malignant pleural effusion",
+    "pleurodesis",
+    "chest tube",
+    "intercostal drain",
+    "pleural biopsy",
+    "chylothorax",
+    "re-expansion pulmonary oedema",
+  ],
+  sections: [
+    {
+      heading: "Physiology, mechanisms and the causes that matter in India",
+      points: [
+        "The pleural space normally holds about **0.1-0.2 mL/kg of fluid** (10-20 mL), formed from the parietal pleural capillaries and absorbed by parietal pleural lymphatics whose capacity can rise twenty-fold. An effusion forms when formation outstrips absorption through **five mechanisms: raised hydrostatic pressure, reduced oncotic pressure, increased capillary permeability, obstructed lymphatic drainage, and passage of fluid from the peritoneum across the diaphragm**.",
+        "**Transudates** arise from altered pressures with an intact pleura: heart failure (bilateral, right larger than left), cirrhosis with hepatic hydrothorax (right-sided in 85%), nephrotic syndrome, hypoalbuminaemia, peritoneal dialysis, hypothyroidism, urinothorax, constrictive pericarditis and atelectasis.",
+        "**Exudates** arise from pleural disease: **tuberculosis, parapneumonic effusion and empyema, malignancy** (lung, breast, lymphoma, ovary, mesothelioma), pulmonary embolism (exudative in three-quarters), rheumatoid arthritis and lupus, pancreatitis (left-sided, high amylase), oesophageal rupture (salivary amylase, pH under 7.0), subphrenic abscess, drugs (nitrofurantoin, methotrexate, amiodarone), post-cardiac injury syndrome, benign asbestos effusion, chylothorax and haemothorax.",
+        "In an Indian outpatient the ranking is simple: **a unilateral exudate in a young adult is tuberculosis** (pleural disease is the second commonest extrapulmonary form after lymph node), **a unilateral exudate in a smoker over 50 is malignancy** until cytology or biopsy says otherwise, an effusion with pneumonia is parapneumonic, and **a bilateral effusion with cardiomegaly is heart failure** and does not need a needle.",
+        "**Massive effusion** (opacifying the hemithorax) is most often malignant, then tubercular, then empyema or hepatic hydrothorax; a massive effusion **without contralateral mediastinal shift** means the lung underneath has collapsed - endobronchial carcinoma or a fixed mediastinum from mesothelioma - and is a bronchoscopy and CT question, not a tap-and-forget.",
+      ],
+    },
+    {
+      heading: "Clinical assessment and imaging",
+      points: [
+        "Symptoms: breathlessness proportional to size and speed of accumulation, **pleuritic pain that fades as the fluid separates the pleural surfaces**, and a dry cough; ask for fever and night sweats, weight loss, smoking, occupational asbestos exposure, previous tuberculosis, orthopnoea and oedema, joint disease, and drugs.",
+        "**Signs need at least 300-500 mL**: reduced movement on the affected side, **stony dull percussion**, absent or diminished breath sounds, and **reduced vocal fremitus and vocal resonance** - the combination that separates effusion from consolidation, where fremitus and resonance are increased. Bronchial breathing and aegophony may be heard just above the fluid level, the trachea and apex beat shift away in a large effusion, and Traube's space is obliterated by a left effusion.",
+        "**Chest radiograph:** the posteroanterior film shows costophrenic blunting once **about 200 mL** has collected, the lateral film at 50 mL, and a **meniscus** curving up laterally; a supine film shows only a homogeneous haze. A **subpulmonic effusion** mimics a raised hemidiaphragm with a laterally placed dome, and a lateral decubitus film layers free fluid - a layer over 1 cm is safe to tap.",
+        "**Thoracic ultrasound** detects as little as 5-20 mL, shows septations, loculation and pleural thickening that predict a complicated effusion, distinguishes fluid from consolidation and a raised diaphragm, and is now the **standard of care for guiding every pleural aspiration and drain** (BTS 2023), cutting the pneumothorax rate from 10-20% to under 5%.",
+        "**Contrast CT of the thorax** is for the unexplained exudate: nodular or circumferential pleural thickening, thickening over 1 cm and involvement of the mediastinal pleura point to malignancy, and CT also shows the underlying lung, lymph nodes and any endobronchial lesion.",
+      ],
+    },
+    {
+      heading: "Diagnostic thoracentesis and Light's criteria",
+      points: [
+        "**Tap every new effusion of more than 1 cm on ultrasound or decubitus film**, except a bilateral effusion in obvious heart failure - and tap even that if it is unilateral or unequal, febrile, painful, without cardiomegaly, or fails to clear after 3 days of diuretics.",
+        "Technique: patient sitting and leaning forward, site chosen by ultrasound one to two spaces below the top of dullness in the posterior axillary or mid-scapular line, local anaesthetic, needle passed **over the upper border of the rib** to avoid the neurovascular bundle below the rib, and 50-60 mL withdrawn for analysis. Relative contraindications are an INR over 1.5-2, platelets under 50,000/microlitre, uncorrected anticoagulation and skin infection at the site.",
+        "**Light's criteria: the fluid is an exudate if any one is met - pleural fluid protein to serum protein ratio over 0.5, pleural fluid LDH to serum LDH ratio over 0.6, or pleural fluid LDH more than two-thirds of the upper limit of the laboratory's normal serum LDH.** Sensitivity for exudate is about 98%, but about a quarter of transudates in patients on diuretics are misclassified; when the clinical picture is heart failure and only one criterion is marginally met, a **serum-to-pleural protein gradient over 3.1 g/dL or albumin gradient over 1.2 g/dL** identifies the transudate.",
+        "Send in order of value: appearance, **protein, LDH and glucose** with paired serum values, **pH in a heparinised blood-gas syringe** (never from a lidocaine-contaminated sample), total and differential cell count, Gram stain and culture in blood-culture bottles, **AFB smear, NAAT (Xpert Ultra) and mycobacterial culture, adenosine deaminase, and cytology** (at least 50 mL, a second sample adds 10-15% to the 60% yield of the first). Add triglycerides for milky fluid, amylase for suspected pancreatitis or oesophageal rupture, and haematocrit for bloody fluid.",
+        "**Cell pattern:** neutrophils in acute processes (parapneumonic, embolism, pancreatitis, the first days of tuberculosis); **lymphocytes over 50%, and usually over 80%, in tuberculosis**, lymphoma and carcinoma; eosinophils over 10% after air or blood in the pleural space, with drugs, parasites and asbestos; and **fewer than 5% mesothelial cells is a clue to tuberculosis**. **Glucose under 60 mg/dL and pH under 7.30** occur in complicated parapneumonic effusion and empyema, tuberculosis, malignancy, rheumatoid effusion (glucose often under 30) and oesophageal rupture.",
+        "A **therapeutic tap** removes no more than **1-1.5 L at one sitting** and stops at once for chest pain, persistent cough or lightheadedness, because **re-expansion pulmonary oedema** follows the rapid emptying of a large or long-standing effusion.",
+      ],
+    },
+    {
+      heading: "Tubercular pleural effusion: diagnosis and treatment under NTEP",
+      points: [
+        "Tubercular effusion is usually a delayed hypersensitivity reaction to a few bacilli that reach the pleura from a subpleural focus 3-6 months after infection, which is why it is **paucibacillary, occurs in young adults, and is often unilateral with little parenchymal disease** on the radiograph; fever, pleuritic pain and dry cough evolve over 1-3 weeks.",
+        "**The fluid:** straw-coloured lymphocyte-predominant exudate with protein usually over 5 g/dL, glucose modestly low, **ADA over 40 U/L** (over 70 U/L is highly specific; empyema, lymphoma and rheumatoid effusion are the false positives), a lymphocyte-to-neutrophil ratio over 0.75, and mesothelial cells under 5%. Interferon-gamma over 140 pg/mL performs even better but is rarely available.",
+        "**Bacteriology is weak:** AFB smear under 10%, **Xpert Ultra about 50%** (though a positive result is specific and reports rifampicin susceptibility), and liquid culture 25-50%. **Closed pleural biopsy with an Abrams or Cope needle shows granulomas in about 80%** and, combined with biopsy culture, confirms over 90%; thoracoscopic biopsy approaches 100%. Send sputum for NAAT too, because even a normal-looking lung is positive in 10-20%.",
+        "In practice, NTEP allows a **clinically diagnosed extrapulmonary tuberculosis** label for a lymphocytic exudate with a high ADA in a patient with a compatible picture once malignancy and empyema are unlikely, so treatment is not held for a culture that takes 6 weeks. Notify on Ni-kshay and treat with **daily fixed-dose 2HRZE/4HRE for 6 months by weight band**, the same regimen as pulmonary disease; the continuation phase is extended only for neurological, skeletal and disseminated disease, not for the pleura.",
+        "**Steroids are not routinely recommended**: they hasten fluid resolution but do not reduce residual thickening or improve outcome. Do a therapeutic tap for breathlessness, encourage breathing exercises, and expect the fluid to clear over 6-12 weeks; **paradoxical enlargement in the first weeks of treatment is recognised and is not failure**. Residual pleural thickening remains in up to half of patients and needs no extension of treatment.",
+      ],
+    },
+    {
+      heading: "Parapneumonic effusion, empyema and the chest drain",
+      points: [
+        "About 40% of pneumonias produce an effusion. **An uncomplicated parapneumonic effusion** is small, free-flowing, with pH over 7.20, glucose over 60 mg/dL and negative Gram stain and culture, and resolves with the antibiotic alone. **A complicated parapneumonic effusion** has any of **pH under 7.20, glucose under 40-60 mg/dL, LDH over 1,000 IU/L, a positive Gram stain or culture, or loculation on ultrasound**, and **empyema is frank pus** - both need drainage, because antibiotics cannot sterilise a loculated, acidic collection.",
+        "Drain with an **ultrasound-guided small-bore (12-14 French) intercostal tube** inserted in the **safe triangle** (bounded by the anterior border of latissimus dorsi, the lateral border of pectoralis major and a line above the nipple, with its apex below the axilla) in the fifth intercostal space, connected to an underwater seal; flush regularly to keep it patent.",
+        "Antibiotics must cover anaerobes as well as streptococci and staphylococci: **amoxicillin-clavulanate, or ceftriaxone plus metronidazole**, for 2-6 weeks depending on response, with clindamycin or vancomycin where MRSA or penicillin allergy is an issue. In India, keep tuberculosis in the differential of any chronic empyema and send the pus for NAAT and culture.",
+        "Failure of drainage at 5-7 days with persisting sepsis or loculation calls for **intrapleural tissue plasminogen activator with DNase** (MIST2 protocol) or **surgical decortication by video-assisted thoracoscopy**; delay is what converts a treatable empyema into a trapped lung. The RAPID score (renal function, age, purulence, infection source and dietary factors as albumin) stratifies mortality at presentation.",
+        "In children, empyema is commonest after staphylococcal or pneumococcal pneumonia and needs paediatric surgical referral; in adults, poor dentition, alcohol use and aspiration point to anaerobic empyema and a lung abscess.",
+      ],
+    },
+    {
+      heading: "Malignant effusion, other exudates and the transudates",
+      points: [
+        "**Malignant effusion** is an exudate, bloody in half, with lymphocyte predominance; **cytology confirms about 60% on the first sample**, and when it is negative the next step is CT and thoracoscopic (or image-guided) pleural biopsy, not a third tap. Median survival is 4-6 months, so management is palliative: **therapeutic aspiration for symptoms, and for recurrence either an indwelling pleural catheter or talc pleurodesis if the lung re-expands** - a trapped lung that does not re-expand after drainage cannot be pleurodesed.",
+        "**Chylothorax** is milky fluid with **triglycerides over 110 mg/dL** or chylomicrons; lymphoma is the commonest non-traumatic cause, then thoracic duct injury at surgery and, in women of reproductive age, lymphangioleiomyomatosis. **Haemothorax** is a pleural haematocrit over 50% of the blood haematocrit and needs a large-bore drain and a surgeon.",
+        "**Rheumatoid effusion** has the lowest glucose of all (often under 30 mg/dL), a low pH, high LDH and rheumatoid factor; **lupus effusion** has a positive ANA in fluid and responds to steroids; **post-cardiac injury (Dressler) effusion** follows infarction or cardiac surgery with fever and pericarditis and responds to NSAIDs or colchicine.",
+        "**Transudates are treated by treating the cause**: diuretics for heart failure, salt restriction with diuretics for hepatic hydrothorax (a chest tube is contraindicated because it drains litres of protein-rich fluid and precipitates renal failure), and albumin replacement only where indicated; a transudate that fails to resolve or is painful or febrile is re-tapped because a second process may have supervened.",
+        "**Refer** every unexplained exudate after a first analysis, every effusion needing a drain, every malignant effusion, and every effusion with a mediastinal shift towards the fluid or with haemoptysis; the family physician's task is the first tap, the notification of tuberculosis, and the follow-up radiograph at the end of treatment.",
+      ],
+    },
+  ],
+  tables: [
+    {
+      heading: "Light's criteria and the adjuncts that correct its errors",
+      columns: ["Test", "Exudate if", "Note"],
+      rows: [
+        ["Pleural fluid protein / serum protein", "Over 0.5", "Any one criterion makes it an exudate"],
+        ["Pleural fluid LDH / serum LDH", "Over 0.6", "LDH reflects pleural inflammation"],
+        ["Pleural fluid LDH", "Over two-thirds of the upper limit of normal serum LDH", "About 200 U/L in most laboratories"],
+        ["Serum minus pleural protein", "Under 3.1 g/dL supports exudate", "Over 3.1 g/dL reclassifies a diuretic-treated heart failure effusion as transudate"],
+        ["Serum minus pleural albumin", "Under 1.2 g/dL supports exudate", "Over 1.2 g/dL reclassifies as transudate"],
+        ["Pleural NT-proBNP", "Not applicable", "Over 1,500 pg/mL points to heart failure even when Light's criteria say exudate"],
+      ],
+    },
+    {
+      heading: "Pleural fluid patterns by cause",
+      columns: ["Cause", "Appearance", "Predominant cells", "Glucose", "The deciding test"],
+      rows: [
+        ["Tuberculosis", "Straw-coloured", "Lymphocytes over 80%, mesothelial cells under 5%", "Mildly low", "ADA over 40 U/L; pleural biopsy granulomas; Xpert Ultra positive in about half"],
+        ["Complicated parapneumonic / empyema", "Turbid or frank pus", "Neutrophils", "Under 40-60 mg/dL", "pH under 7.20, LDH over 1,000, positive Gram stain or culture; loculation on ultrasound"],
+        ["Malignancy", "Bloody in half", "Lymphocytes; malignant cells", "Normal or low", "Cytology 60% first sample; thoracoscopic biopsy"],
+        ["Heart failure", "Clear, bilateral", "Few mononuclear cells", "Normal", "Transudate; protein gradient over 3.1 g/dL; NT-proBNP"],
+        ["Rheumatoid arthritis", "Turbid, yellow-green", "Lymphocytes", "Under 30 mg/dL", "Rheumatoid factor in fluid, very low pH, high LDH"],
+        ["Pancreatitis or oesophageal rupture", "Serous or turbid, left-sided", "Neutrophils", "Low in rupture", "Amylase high (salivary isoenzyme and pH under 7.0 in rupture)"],
+        ["Chylothorax", "Milky", "Lymphocytes", "Normal", "Triglycerides over 110 mg/dL or chylomicrons"],
+        ["Haemothorax", "Frank blood", "Red cells", "Normal", "Pleural haematocrit over 50% of blood haematocrit"],
+      ],
+    },
+  ],
+  redFlags: [
+    "A massive effusion with the trachea central or pulled towards the fluid - the underlying lung is collapsed; think endobronchial carcinoma or mesothelioma, arrange CT and bronchoscopy rather than repeated taps.",
+    "Pleural fluid pH under 7.20, glucose under 40 mg/dL, frank pus or loculation on ultrasound in a patient with pneumonia - this needs a chest drain today, not another course of antibiotics.",
+    "Chest pain, unrelenting cough or falling saturation during a therapeutic tap, or after more than 1.5 L has been removed - stop; re-expansion pulmonary oedema is developing.",
+    "Sudden breathlessness after a pleural procedure - pneumothorax or haemothorax until a radiograph or ultrasound says otherwise.",
+    "Bloody effusion in a smoker over 50, or an effusion with weight loss, clubbing or hoarseness - malignancy; cytology and CT before any empirical anti-tuberculosis treatment.",
+    "An effusion that enlarges or fails to improve after 2 months of anti-tuberculosis treatment with good adherence - wrong diagnosis (lymphoma, carcinoma, empyema) or drug resistance; re-tap, biopsy and send for culture and susceptibility.",
+  ],
+  pearls: [
+    "Light's criteria: protein ratio over 0.5, LDH ratio over 0.6, or pleural LDH over two-thirds of the upper normal serum LDH - any one makes an exudate; quote all three with the numbers.",
+    "Effusion versus consolidation at the bedside: both are dull with reduced breath sounds, but vocal fremitus and vocal resonance are reduced in effusion and increased in consolidation.",
+    "About 200 mL is needed to blunt the costophrenic angle on a PA film, 50 mL on a lateral film, and 5-20 mL is visible on ultrasound - which is why every tap is now ultrasound-guided.",
+    "A lymphocyte-predominant exudate with ADA over 40 U/L and under 5% mesothelial cells in a young Indian adult is tubercular; treat with 2HRZE/4HRE for 6 months, notify, and do not give steroids routinely.",
+    "The parapneumonic effusion that needs a tube: pH under 7.20, glucose under 40-60 mg/dL, LDH over 1,000 IU/L, positive Gram stain or culture, loculation, or frank pus.",
+    "Never remove more than 1-1.5 L at one sitting, and never put a chest tube into a hepatic hydrothorax.",
+    "The needle goes over the upper border of the rib below the space, because the neurovascular bundle runs under the lower border of the rib above.",
+  ],
+  theory: [
+    {
+      id: "respiratory-pleural-effusion-t1",
+      paper: "II",
+      kind: "long",
+      marks: 10,
+      minutes: 20,
+      frequency: "common",
+      question:
+        "A 24-year-old student presents with low-grade fever, dry cough and right-sided chest pain for three weeks, and examination reveals a right-sided pleural effusion. Discuss the differential diagnosis, investigations and management.",
+      openingLines: [
+        "A pleural effusion is an abnormal accumulation of fluid in the pleural space, classified as a transudate or an exudate by Light's criteria on diagnostic thoracentesis; in a young adult in India a unilateral effusion with fever of three weeks' duration is an exudate and is tubercular until proved otherwise.",
+        "My approach is to confirm and size the effusion with a radiograph and ultrasound, aspirate it under ultrasound guidance for analysis that discriminates tuberculosis from parapneumonic effusion, malignancy and the rarer exudates, and then treat under NTEP with notification and follow-up.",
+      ],
+      answer: [
+        {
+          heading: "1. Differential diagnosis",
+          points: [
+            "**Tubercular pleural effusion** - the first diagnosis: subacute fever, dry cough, pleuritic pain, a young adult, often a contact history; a hypersensitivity effusion that is paucibacillary.",
+            "**Parapneumonic effusion or empyema** - preceded by an acute febrile pneumonia with purulent sputum and leucocytosis.",
+            "**Malignant effusion** - lymphoma in this age group; look for lymphadenopathy, night sweats and weight loss, and mediastinal widening.",
+            "Others: pulmonary embolism (sudden pain, tachycardia, risk factors), connective tissue disease (lupus in a young woman, rheumatoid effusion), subphrenic abscess or pancreatitis, and post-viral or drug-induced effusion.",
+            "A transudate is unlikely in a febrile 24-year-old, but heart failure, nephrotic syndrome and cirrhosis are excluded on examination.",
+          ],
+        },
+        {
+          heading: "2. Clinical examination",
+          points: [
+            "Fever, pallor, clubbing, lymph nodes, BCG scar, weight and BMI.",
+            "Reduced chest movement, stony dull percussion, absent breath sounds with reduced vocal fremitus and resonance on the right, tracheal and apical shift to the left in a large effusion, and bronchial breathing above the fluid.",
+            "Abdomen for hepatosplenomegaly and ascites; joints and skin for connective tissue disease.",
+          ],
+        },
+        {
+          heading: "3. Investigations",
+          points: [
+            "Chest radiograph (blunted costophrenic angle with a meniscus; parenchymal lesion) and **thoracic ultrasound** to confirm, size and mark the tap site.",
+            "Complete blood count, ESR, HIV test, blood glucose, and sputum NAAT for tuberculosis even though the lung looks clear.",
+            "**Ultrasound-guided diagnostic thoracentesis** for protein, LDH and glucose with paired serum values, pH, cell count and differential, Gram stain and culture, AFB smear, Xpert Ultra and mycobacterial culture, **ADA**, and cytology.",
+            "**Expected in tuberculosis:** straw-coloured exudate by Light's criteria, protein over 5 g/dL, lymphocytes over 80%, mesothelial cells under 5%, ADA over 40 U/L; Xpert positive in about half.",
+            "If the picture is atypical or the fluid analysis is not diagnostic: contrast CT of the thorax and closed or thoracoscopic pleural biopsy for histology and culture.",
+          ],
+        },
+        {
+          heading: "4. Management",
+          points: [
+            "Notify on Ni-kshay as clinically diagnosed or bacteriologically confirmed extrapulmonary tuberculosis and start **daily fixed-dose 2HRZE/4HRE by weight band for 6 months**, with pyridoxine if at risk of neuropathy and baseline liver tests.",
+            "Therapeutic aspiration of up to 1-1.5 L for breathlessness; no routine steroids; breathing exercises; paracetamol for pleuritic pain.",
+            "Counsel about adherence, adverse effects (jaundice, visual change), the possibility of paradoxical enlargement in the first weeks, and Ni-kshay Poshan Yojana nutritional support.",
+            "Household contact screening with symptom screen and chest radiograph, and TB preventive treatment for eligible contacts.",
+            "Follow-up clinically and with a radiograph at 2 months and at the end of treatment; residual pleural thickening needs no extension. Re-evaluate with repeat tap, biopsy and culture if the effusion enlarges after 8 weeks of adherent treatment.",
+            "If the fluid is instead purulent or has pH under 7.20, insert an ultrasound-guided intercostal drain and give amoxicillin-clavulanate or ceftriaxone with metronidazole for 2-6 weeks; if cytology shows lymphoma, refer for staging and chemotherapy.",
+          ],
+        },
+      ],
+      mustDraw: [
+        "A table of Light's criteria with the three thresholds.",
+        "A comparison table of pleural fluid in tuberculosis, parapneumonic effusion and malignancy (cells, glucose, ADA, pH, deciding test).",
+      ],
+      markSplit: [
+        { part: "Differential diagnosis with reasoning", marks: 2 },
+        { part: "Clinical signs of effusion", marks: 1 },
+        { part: "Investigations including Light's criteria and fluid analysis", marks: 4 },
+        { part: "Treatment under NTEP, follow-up and contacts", marks: 3 },
+      ],
+      keywords: ["pleural effusion", "Light's criteria", "ADA", "tubercular effusion", "2HRZE/4HRE"],
+    },
+    {
+      id: "respiratory-pleural-effusion-t2",
+      paper: "II",
+      kind: "short-note",
+      marks: 5,
+      minutes: 10,
+      frequency: "common",
+      question: "Write short notes on Light's criteria and the analysis of pleural fluid.",
+      openingLines: [
+        "Light's criteria classify a pleural effusion as an exudate if any one of three is met: a pleural fluid to serum protein ratio over 0.5, a pleural fluid to serum LDH ratio over 0.6, or a pleural fluid LDH more than two-thirds of the upper limit of normal for serum LDH; an effusion meeting none is a transudate.",
+        "The distinction directs the entire work-up, because a transudate is treated by treating heart, liver or kidney disease, whereas an exudate demands a search for pleural disease - tuberculosis, infection or malignancy.",
+      ],
+      answer: [
+        {
+          heading: "Light's criteria and their limitations",
+          points: [
+            "Sensitivity for exudate about 98%; specificity limited because about 25% of transudates in patients on diuretics are misclassified as exudates.",
+            "Correction when heart failure is likely and the criteria are marginal: serum minus pleural protein over 3.1 g/dL, or serum minus pleural albumin over 1.2 g/dL, indicates a transudate; pleural NT-proBNP over 1,500 pg/mL supports heart failure.",
+            "Transudates: heart failure, cirrhosis, nephrotic syndrome, hypoalbuminaemia, peritoneal dialysis, hypothyroidism, urinothorax. Exudates: tuberculosis, parapneumonic effusion and empyema, malignancy, pulmonary embolism, connective tissue disease, pancreatitis, oesophageal rupture, drugs, chylothorax.",
+          ],
+        },
+        {
+          heading: "The routine analysis",
+          points: [
+            "Appearance: straw-coloured (tuberculosis), turbid or pus (empyema), bloody (malignancy, embolism, trauma; haematocrit over 50% of blood is haemothorax), milky (chylothorax, triglycerides over 110 mg/dL).",
+            "Protein and LDH with paired serum values for Light's criteria; **glucose under 60 mg/dL and pH under 7.30** in complicated parapneumonic effusion, empyema, tuberculosis, malignancy and rheumatoid effusion; pH under 7.20 in a parapneumonic effusion mandates drainage.",
+            "Cell count and differential: neutrophils in acute infection and embolism; lymphocytes over 80% with mesothelial cells under 5% in tuberculosis; eosinophils after air or blood in the pleural space, drugs and parasites.",
+            "Microbiology: Gram stain and culture in blood-culture bottles, AFB smear, Xpert Ultra and mycobacterial culture; cytology on at least 50 mL, 60% yield on the first sample.",
+          ],
+        },
+        {
+          heading: "Special tests",
+          points: [
+            "**ADA over 40 U/L** with lymphocyte predominance is the practical marker of tubercular effusion in India (false positives in empyema, lymphoma and rheumatoid effusion).",
+            "Amylase for pancreatitis and oesophageal rupture; rheumatoid factor and ANA for connective tissue disease; triglycerides for chylothorax.",
+            "Pleural biopsy (closed needle or thoracoscopic) when fluid analysis fails - granulomas in 80% of tubercular effusions.",
+          ],
+        },
+      ],
+      mustDraw: ["The three-line Light's criteria table with the two correction gradients beneath it."],
+      markSplit: [
+        { part: "Light's criteria stated with numbers and their limitation", marks: 2 },
+        { part: "Routine fluid analysis and what each finding means", marks: 2 },
+        { part: "Special tests including ADA and biopsy", marks: 1 },
+      ],
+      keywords: ["Light's criteria", "exudate", "transudate", "ADA", "pleural fluid pH"],
+    },
+  ],
+  mcqs: [
+    {
+      id: "respiratory-pleural-effusion-q1",
+      stem: "A 58-year-old man with a right pleural effusion has pleural fluid protein 3.9 g/dL, serum protein 6.5 g/dL, pleural fluid LDH 310 U/L and serum LDH 420 U/L; the laboratory's upper limit of normal serum LDH is 250 U/L. How is the effusion classified?",
+      options: [
+        "Transudate, because the LDH ratio is below 0.6",
+        "Transudate, because the protein ratio is exactly 0.6 and the threshold must be exceeded by more",
+        "Exudate, because the protein ratio is 0.6 and the pleural LDH exceeds two-thirds of the upper normal serum LDH",
+        "Indeterminate until pleural fluid pH is measured",
+        "Exudate only if the pleural glucose is below 60 mg/dL",
+      ],
+      answer: 2,
+      explanation:
+        "The protein ratio is 3.9/6.5 = 0.60, which exceeds 0.5, and the pleural LDH of 310 U/L exceeds two-thirds of 250 (167 U/L), so two of the three Light's criteria are met and the effusion is an exudate; any single criterion would have sufficed. The LDH ratio of 0.74 in fact also exceeds 0.6, so the first option miscalculates. Light's criteria do not require pH or glucose, which are used afterwards to characterise the exudate, not to define it.",
+      difficulty: "easy",
+    },
+    {
+      id: "respiratory-pleural-effusion-q2",
+      stem: "A 22-year-old woman has a 3-week history of fever and left pleuritic pain with a moderate left effusion. Pleural fluid: protein 5.4 g/dL, LDH 480 U/L, glucose 55 mg/dL, lymphocytes 92%, mesothelial cells 2%, ADA 72 U/L, Xpert Ultra negative, cytology negative for malignant cells. What is the most appropriate management?",
+      options: [
+        "Wait 6 weeks for mycobacterial culture before starting any treatment",
+        "Notify as clinically diagnosed extrapulmonary tuberculosis and start daily 2HRZE/4HRE, with therapeutic aspiration if breathless",
+        "Start amoxicillin-clavulanate for a parapneumonic effusion and review in one week",
+        "Give prednisolone 40 mg daily alone to resolve a hypersensitivity effusion",
+        "Insert an intercostal drain because the glucose is below 60 mg/dL",
+      ],
+      answer: 1,
+      explanation:
+        "A lymphocyte-predominant exudate with an ADA above 40 U/L (here 72), scanty mesothelial cells and no malignant cells in a young adult with a subacute febrile illness is tubercular pleural effusion; Xpert is negative in about half of these paucibacillary effusions, and NTEP permits treatment as clinically diagnosed extrapulmonary tuberculosis with the standard 6-month daily regimen while culture is awaited. Waiting 6 weeks abandons the patient. A parapneumonic effusion would be neutrophilic after an acute pneumonia. Steroids alone treat nothing and are not routinely recommended even as an adjunct. A drain is for pH under 7.20, pus or loculation in a parapneumonic effusion, not for a modestly low glucose in a tubercular one.",
+      difficulty: "moderate",
+    },
+    {
+      id: "respiratory-pleural-effusion-q3",
+      stem: "A 50-year-old alcoholic man with right lower lobe pneumonia on intravenous ceftriaxone for 4 days remains febrile. Ultrasound shows a septated right effusion; aspirated fluid is turbid with pH 7.10, glucose 32 mg/dL and LDH 1,800 U/L, Gram stain negative. What is the correct next step?",
+      options: [
+        "Continue ceftriaxone for another week and repeat the aspiration",
+        "Insert an ultrasound-guided intercostal drain and add metronidazole to cover anaerobes",
+        "Add oral prednisolone to reduce pleural inflammation",
+        "Perform talc pleurodesis to prevent recurrence",
+        "Start anti-tuberculosis treatment because the glucose is low",
+      ],
+      answer: 1,
+      explanation:
+        "Septation on ultrasound, pH under 7.20, glucose under 40 mg/dL and LDH over 1,000 IU/L define a complicated parapneumonic effusion that antibiotics alone cannot sterilise; it needs tube drainage, and in an alcoholic with probable aspiration the antibiotic must cover anaerobes, hence metronidazole with the ceftriaxone (or amoxicillin-clavulanate). A negative Gram stain does not exclude infection. Continuing antibiotics alone allows organisation into a trapped lung. Steroids have no role, pleurodesis is for recurrent malignant effusions with an expanded lung, and a neutrophilic acidic effusion after acute pneumonia is not the picture of tuberculosis, although the fluid should still be sent for NAAT and culture.",
+      difficulty: "moderate",
+    },
+    {
+      id: "respiratory-pleural-effusion-q4",
+      stem: "A 68-year-old woman with known heart failure on furosemide has bilateral effusions, larger on the right. Fluid analysis: pleural protein 3.5 g/dL, serum protein 6.6 g/dL, pleural LDH 150 U/L, serum LDH 300 U/L (upper limit of normal 250), pleural albumin 1.9 g/dL, serum albumin 3.4 g/dL. How should this be interpreted?",
+      options: [
+        "Exudate - proceed to CT and pleural biopsy",
+        "Exudate - start empirical anti-tuberculosis treatment",
+        "Transudate misclassified by the protein ratio; the albumin gradient of 1.5 g/dL confirms heart failure, so optimise diuretics",
+        "Indeterminate - repeat the tap after stopping furosemide for a week",
+        "Chylothorax - measure triglycerides",
+      ],
+      answer: 2,
+      explanation:
+        "The protein ratio is 0.53, marginally over 0.5, but the LDH ratio (0.5) and the absolute LDH (150, below 167) are transudative; in a diuretic-treated heart failure patient this is the classical misclassification, and a serum-to-pleural albumin gradient over 1.2 g/dL (here 1.5) or a protein gradient over 3.1 g/dL restores the transudate label, so the effusion is managed by treating the heart failure. There is no indication for CT, biopsy or anti-tuberculosis treatment. Stopping diuretics in heart failure to repeat a tap is harmful and unnecessary, and clear bilateral fluid is not chylothorax.",
+      difficulty: "hard",
+    },
+    {
+      id: "respiratory-pleural-effusion-q5",
+      stem: "A 62-year-old smoker has a complete opacification of the left hemithorax on a chest radiograph, with the trachea deviated to the left. What is the most likely explanation?",
+      options: [
+        "A massive tubercular effusion pushing the mediastinum",
+        "A massive effusion with underlying lung collapse from an obstructing endobronchial carcinoma",
+        "Tension hydrothorax requiring immediate needle decompression",
+        "A large empyema that has fixed the mediastinum in the midline",
+        "A left pneumothorax with fluid level",
+      ],
+      answer: 1,
+      explanation:
+        "A massive effusion normally pushes the trachea and mediastinum away from the fluid; deviation towards the opaque side means volume loss under the fluid, which in a smoker of this age means collapse from an endobronchial tumour (or, less often, a mesothelioma encasing the lung), so the next steps are contrast CT and bronchoscopy rather than repeated aspiration. A tubercular effusion would shift the trachea to the right. Tension physiology also pushes the mediastinum away. A fixed midline mediastinum in mesothelioma is possible but does not explain a shift towards the lesion, and a pneumothorax is lucent, not opaque.",
+      difficulty: "moderate",
+    },
+    {
+      id: "respiratory-pleural-effusion-q6",
+      stem: "During a therapeutic aspiration of a large 3-week-old right effusion, a 45-year-old woman develops chest tightness and an irritating cough after 1.2 L has been removed. What is the correct action?",
+      options: [
+        "Continue until the effusion is completely drained to avoid a second procedure",
+        "Stop the procedure immediately; the symptoms herald re-expansion pulmonary oedema",
+        "Give intravenous furosemide and continue draining",
+        "Change to a chest tube and drain the remainder over the next hour",
+        "Inject lidocaine into the pleural space and continue",
+      ],
+      answer: 1,
+      explanation:
+        "Chest tightness and a persistent cough during large-volume aspiration are the warning signs of re-expansion pulmonary oedema, which follows rapid removal of more than about 1-1.5 L or the re-inflation of a lung that has been collapsed for days, and the only correct response is to stop and reassess with saturation, a radiograph and, if needed, oxygen. Complete drainage in one sitting is exactly what causes the complication. Furosemide does not prevent it. A chest tube draining the remainder in the next hour reproduces the same rapid re-expansion, and intrapleural lidocaine treats neither the symptom nor the cause.",
+      difficulty: "easy",
+    },
+  ],
+  cards: [
+    {
+      id: "respiratory-pleural-effusion-c1",
+      front: "Light's criteria for an exudate.",
+      back: "Any one of: pleural/serum protein over 0.5; pleural/serum LDH over 0.6; pleural LDH over two-thirds of the upper limit of normal serum LDH.",
+    },
+    {
+      id: "respiratory-pleural-effusion-c2",
+      front: "How to rescue a diuretic-treated heart failure effusion misclassified as exudate.",
+      back: "Serum minus pleural protein over 3.1 g/dL, or serum minus pleural albumin over 1.2 g/dL, indicates a transudate; pleural NT-proBNP over 1,500 pg/mL supports heart failure.",
+    },
+    {
+      id: "respiratory-pleural-effusion-c3",
+      front: "Bedside signs that separate effusion from consolidation.",
+      back: "Both are dull with reduced breath sounds; effusion is stony dull with reduced vocal fremitus and resonance and shift away; consolidation has bronchial breathing with increased fremitus and resonance and no shift.",
+    },
+    {
+      id: "respiratory-pleural-effusion-c4",
+      front: "Volumes of fluid needed to show on each imaging method.",
+      back: "About 200 mL to blunt the costophrenic angle on a PA film, 50 mL on a lateral film, 5-20 mL on ultrasound; a decubitus layer over 1 cm is safe to tap.",
+    },
+    {
+      id: "respiratory-pleural-effusion-c5",
+      front: "Pleural fluid profile of tubercular effusion.",
+      back: "Straw-coloured exudate, protein often over 5 g/dL, lymphocytes over 80%, mesothelial cells under 5%, ADA over 40 U/L (over 70 highly specific), Xpert Ultra positive in about half, closed biopsy granulomas in 80%.",
+    },
+    {
+      id: "respiratory-pleural-effusion-c6",
+      front: "Treatment of tubercular pleural effusion under NTEP.",
+      back: "Notify; daily fixed-dose 2HRZE/4HRE for 6 months by weight band; therapeutic tap for breathlessness; no routine steroids; paradoxical enlargement early is not failure; residual thickening needs no extension.",
+    },
+    {
+      id: "respiratory-pleural-effusion-c7",
+      front: "Criteria for draining a parapneumonic effusion.",
+      back: "pH under 7.20, glucose under 40-60 mg/dL, LDH over 1,000 IU/L, positive Gram stain or culture, loculation on ultrasound, or frank pus (empyema).",
+    },
+    {
+      id: "respiratory-pleural-effusion-c8",
+      front: "Boundaries of the safe triangle for a chest drain.",
+      back: "Anterior border of latissimus dorsi, lateral border of pectoralis major, a horizontal line at the level of the nipple, with the apex below the axilla; fifth intercostal space, over the upper border of the rib.",
+    },
+    {
+      id: "respiratory-pleural-effusion-c9",
+      front: "Maximum volume to remove at one therapeutic tap, and why.",
+      back: "1-1.5 L; stop for chest pain, cough or lightheadedness - re-expansion pulmonary oedema follows rapid emptying of a large or long-standing effusion.",
+    },
+    {
+      id: "respiratory-pleural-effusion-c10",
+      front: "Fluid clues: very low glucose, milky fluid, bloody fluid, high amylase.",
+      back: "Glucose under 30 mg/dL - rheumatoid effusion (also empyema, TB, malignancy); milky - chylothorax with triglycerides over 110 mg/dL; bloody - malignancy, embolism, trauma (haemothorax if haematocrit over 50% of blood); amylase - pancreatitis or oesophageal rupture.",
+    },
+    {
+      id: "respiratory-pleural-effusion-c11",
+      front: "Massive effusion without contralateral mediastinal shift - what does it mean?",
+      back: "The lung beneath has collapsed: endobronchial carcinoma or a mesothelioma fixing the mediastinum; needs CT and bronchoscopy, not repeated aspiration.",
+    },
+    {
+      id: "respiratory-pleural-effusion-c12",
+      front: "Management options for a recurrent malignant pleural effusion.",
+      back: "Therapeutic aspiration for symptoms; for recurrence an indwelling pleural catheter, or talc pleurodesis if the lung re-expands (impossible in trapped lung); palliative care with a median survival of 4-6 months.",
+    },
+  ],
+  references: [
+    "British Thoracic Society Guideline for Pleural Disease, 2023",
+    "Light RW. Pleural Diseases, 6th edition, 2013, and the original Light's criteria, Annals of Internal Medicine 1972",
+    "Index-TB Guidelines: Guidelines on extrapulmonary tuberculosis for India, MoHFW and WHO Country Office, 2016",
+    "National TB Elimination Programme Training Modules for Medical Officers, 2020 - extrapulmonary tuberculosis",
+    "Harrison's Principles of Internal Medicine, 21st edition, 2022 - disorders of the pleura",
+    "API Textbook of Medicine, 11th edition, 2019 - pleural diseases",
+  ],
+});
