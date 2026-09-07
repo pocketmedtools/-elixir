@@ -3371,3 +3371,480 @@ topics.push({
     "Ghai Essential Pediatrics, 10th edition, 2022 - diseases of the blood; Nelson Textbook of Pediatrics, 22nd edition, 2024 - iron deficiency anaemia",
   ],
 });
+
+const cases: ClinicalCase[] = [
+  {
+    id: "pediatrics-case-1",
+    title: "Severe acute malnutrition with acute diarrhoea in a 14-month-old",
+    kind: "long",
+    subjectId: "pediatrics",
+    opening:
+      "A 14-month-old boy from a tribal block, third of three children, is brought with watery diarrhoea for 6 days, refusal of feeds for 2 days and swelling of both feet for a week; he weighs 5.8 kg, is 71 cm long, has a mid-upper arm circumference of 10.4 cm, and is irritable, cold to touch and sunken-eyed.",
+    minutes: 30,
+    frequency: "core",
+    sections: [
+      {
+        heading: "How to open the presentation",
+        points: [
+          "Give the age, sex, birth order, place and the three complaints in the mother's sequence with duration, then the anthropometry in one breath, because in a malnutrition case the numbers are the diagnosis and the examiner wants them in the first thirty seconds.",
+          "Say: 'Baby of Sunita, a 14-month-old boy from a tribal block, third child of a daily-wage family, presents with watery diarrhoea for 6 days, refusal of feeds for 2 days and swelling of both feet for 7 days; he weighs 5.8 kg, measures 71 cm and has a MUAC of 10.4 cm with bilateral pitting pedal oedema.'",
+          "Add the negatives that shape the plan immediately: no blood in the stool, no convulsion, no fast breathing or chest indrawing, no known contact with tuberculosis, not on any medication, and no previous admission.",
+          "State the informant and the reliability of the history, and mention the MCP card if the mother has brought it, because birth weight, immunisation and serial weights come from it and the examiner will ask for them.",
+        ],
+      },
+      {
+        heading: "History of the presenting illness",
+        points: [
+          "Diarrhoea: onset, number and volume of stools a day, watery or with blood and mucus, associated vomiting, whether the child is passing urine and when he last did, and what has been given so far - ORS, zinc, home fluids, antibiotics or a remedy from a local practitioner.",
+          "Feeding before and during the illness: whether he is still breastfed and how often, what else he eats and how many times a day, and whether feeds were reduced or stopped because of the diarrhoea, which is the usual precipitant of the final decline.",
+          "Oedema: where it started, whether the face is puffy in the mornings, and whether it preceded or followed the diarrhoea; ask about frothy urine and a reduced urine volume to separate nutritional oedema from a renal cause.",
+          "Fever, cough, ear discharge, skin lesions and a measles-like rash in the last three months, because infection is the commonest precipitant of kwashiorkor and recent measles is a specific trigger.",
+          "The activity level: whether he is playful, whether he cries when handled, and whether he has become quiet and uninterested, since apathy and an irritable cry are part of the syndrome and lethargy is a danger sign.",
+        ],
+      },
+      {
+        heading: "Nutritional, developmental, immunisation and social history - the marks are here",
+        points: [
+          "Take a dietary history by 24-hour recall in household measures: what he ate yesterday from waking to sleeping, how much, and how it was prepared, and then convert it to approximate calories and protein - a healthy 14-month-old needs roughly 900-1100 kcal and 11-13 g of protein a day.",
+          "Trace the feeding timeline: breastfed within an hour of birth or not, exclusive breastfeeding for how long, when and why top feeds were introduced, what was used (diluted animal milk in a bottle is the usual answer), when complementary feeding began and with what - dal water and rice gruel fill the stomach without the energy density a child needs.",
+          "Birth history: place of birth, birth weight from the card, gestation and any neonatal admission; low birth weight followed by early cessation of breastfeeding is the commonest road to SAM in India.",
+          "Immunisation and vitamin A: BCG scar, pentavalent, OPV, rotavirus, PCV, measles-rubella and the first vitamin A dose at 9 months, and deworming; a missed measles-rubella vaccine leaves a malnourished child exposed to the disease most likely to kill him.",
+          "Developmental history: head control, sitting, standing, first words, and whether milestones regressed with the illness, plus the mother's age, education, parity and birth interval, family income, ration card, ICDS enrolment and what the Anganwadi actually supplied.",
+          "Ask who decides in the family about food and about going to hospital, and whether an earlier child died - the answers explain why a child arrives this late and decide what will happen after discharge.",
+        ],
+      },
+      {
+        heading: "Examination to demonstrate",
+        points: [
+          "Anthropometry first, with the technique described: weight to the nearest 10 g on a calibrated infant scale with the child naked; recumbent length on an infantometer with two people, head against the fixed board and knees pressed down; MUAC on the left arm at the midpoint between acromion and olecranon with a non-stretch tape, arm hanging loose; head circumference; and each value plotted on the WHO chart for a boy.",
+          "Interpret: 5.8 kg at 71 cm is below -3 SD weight-for-length even with the oedema inflating the weight; 71 cm at 14 months is below -2 SD length-for-age, so he is both wasted and stunted; MUAC 10.4 cm is below the 11.5 cm cut-off; and the oedema is graded + when confined to the feet, ++ when the lower legs, hands or forearms are involved, and +++ when generalised with facial puffiness.",
+          "General survey: the old-man face, prominent ribs, loss of buccal and gluteal fat with the baggy-pants sign, sparse, thin, depigmented and easily pluckable hair, flaky-paint dermatosis over the buttocks and thighs, angular stomatitis, glossitis, Bitot spots or corneal dryness, and the axillary temperature, which at 35.4 degrees C is hypothermia.",
+          "Signs of dehydration, remembering that sunken eyes and a slow skin pinch are unreliable in SAM: look instead at thirst, pulse volume, coolness of the extremities, capillary refill and urine output, and record the level of consciousness.",
+          "Look for the complications that decide admission: fast breathing and chest indrawing, ear discharge, oral thrush, skin sepsis and raw weeping areas, severe palmar pallor, hepatomegaly, lymphadenopathy, and pus in the ears or umbilicus.",
+          "Complete the systemic examination - heart for gallop and murmur, chest for crackles, abdomen for distension and liver size, and a developmental screen - and finish by observing a breastfeed and the mother's handling of the child.",
+        ],
+      },
+      {
+        heading: "Classify and decide where he is treated",
+        points: [
+          "Severe acute malnutrition in a child of 6-59 months is any one of weight-for-height or length below -3 SD of the WHO standard, MUAC below 11.5 cm, or bilateral pitting oedema of nutritional origin; this child meets all three.",
+          "He is complicated SAM because he has diarrhoea with dehydration, hypothermia, refusal of feeds - a failed appetite test - and oedema, and complicated SAM is admitted to a facility, in India a Nutritional Rehabilitation Centre or a paediatric ward, not treated at home.",
+          "Uncomplicated SAM - a child with a good appetite and no medical complication - is treated in the community with a ready-to-use or locally prepared energy-dense therapeutic food giving about 175-200 kcal/kg/day, a course of oral amoxicillin and weekly review, which is the model in the 2023 national protocol.",
+          "Tell the examiner the two-phase structure before the details: stabilisation in the first week, when the metabolism is fragile and feeding is cautious, then transition and rehabilitation from about the second week, when the aim is catch-up growth.",
+        ],
+      },
+      {
+        heading: "The ten steps, put in order",
+        points: [
+          "The stabilisation phase treats and prevents hypoglycaemia, hypothermia, dehydration, electrolyte imbalance and infection in the first two days, and continues micronutrient correction and cautious feeding through the first week.",
+          "The rehabilitation phase, once oedema is resolving and appetite is back, aims at catch-up growth on F-100 or RUTF, starts iron, provides sensory stimulation and play, and prepares the family for follow-up.",
+          "The steps are not sequential events but simultaneous priorities: the first feed, the first antibiotic dose and the first rewarming happen in the same hour, and the numbering is the order in which each will kill the child if it is missed.",
+          "Say clearly which are done in the first 2 hours - blood glucose, warmth, ReSoMal, first antibiotic, first F-75 feed - and which wait until the second week - iron and high-energy feeds - because the examiner is listening for exactly that division.",
+        ],
+      },
+      {
+        heading: "Prognosis and the conversation with the mother",
+        points: [
+          "Case fatality in complicated SAM is 10-20% where the protocol is not followed and under 5% where it is, and most deaths occur in the first 48 hours from hypoglycaemia, hypothermia, sepsis and fluid overload, which is why the mother stays with the child day and night and feeds him every 2 hours.",
+          "Explain in plain words that the swelling is from lack of food and not from too much water, that the child will lose weight first as the oedema goes and gain it later, and that he must be fed every 2 hours even at night.",
+          "Relapse after discharge is common where nothing has changed at home; the discharge plan is a feeding plan, a follow-up date, a link to the Anganwadi for supplementary nutrition, and a plan for the mother's own nutrition and contraception.",
+        ],
+      },
+    ],
+    summaryStatement:
+      "This is a 14-month-old boy with severe acute malnutrition of the oedematous type - marasmic kwashiorkor - with weight-for-length below -3 SD, MUAC 10.4 cm and bilateral pedal oedema grade +, coexisting stunting, hypothermia, and acute watery diarrhoea with some dehydration and refusal of feeds, that is, complicated SAM requiring facility-based management under the ten-step protocol, arising from early cessation of breastfeeding, inadequate complementary feeding and repeated infection in a poor family with three children under five.",
+    differential: [
+      {
+        diagnosis: "Oedematous severe acute malnutrition (marasmic kwashiorkor) with acute watery diarrhoea and some dehydration",
+        forIt:
+          "Weight-for-length below -3 SD, MUAC 10.4 cm, bilateral pitting oedema, flaky-paint dermatosis and hair changes, a feeding history that explains it and diarrhoea as the precipitant.",
+        againstIt:
+          "Nothing against the diagnosis itself; the work is to exclude an underlying infection and the other causes of oedema before labelling all of it nutritional.",
+      },
+      {
+        diagnosis: "Tuberculosis, pulmonary or abdominal, underlying the failure to thrive",
+        forIt:
+          "Chronic weight loss with diarrhoea and a poor response to feeding is exactly how childhood tuberculosis presents in a malnourished household, and this child has no BCG scar.",
+        againstIt:
+          "No known household contact, no cough beyond 2 weeks, no lymphadenopathy or abdominal mass; but SAM and tuberculosis coexist so often that a Mantoux test, chest radiograph and gastric aspirate for CBNAAT are done in every admitted child.",
+      },
+      {
+        diagnosis: "HIV infection",
+        forIt:
+          "Persistent or recurrent diarrhoea, oral thrush, failure to thrive and recurrent infections are the paediatric presentation, and the mother's antenatal test may never have been done.",
+        againstIt:
+          "No chronic ear discharge, no generalised lymphadenopathy, no parotid swelling and no history of maternal illness; testing is still done with consent because the management differs.",
+      },
+      {
+        diagnosis: "Nephrotic syndrome or protein-losing enteropathy as the cause of the oedema",
+        forIt:
+          "Bilateral pitting oedema with a low serum albumin can be renal or intestinal in origin, and hypoalbuminaemia is common to all three.",
+        againstIt:
+          "Nutritional oedema starts at the feet and not the face, the urine dipstick shows no or trace albumin, and there is no massive proteinuria or hypercholesterolaemia; a dipstick on admission settles it in a minute.",
+      },
+    ],
+    investigations: [
+      {
+        test: "Blood glucose at the bedside on arrival and 2-hourly until stable",
+        why: "Hypoglycaemia is silent in SAM - no sweating or tremor - and is the commonest cause of death in the first night.",
+        expected: "Below 54 mg/dL (3 mmol/L) defines hypoglycaemia and is treated on the spot; it is present in about a fifth of admissions.",
+      },
+      {
+        test: "Haemoglobin, packed cell volume and peripheral smear",
+        why: "To detect severe anaemia that needs a transfusion and to type the anaemia, which in SAM is usually dimorphic with iron and folate deficiency.",
+        expected: "Haemoglobin 6-9 g/dL is typical; below 4 g/dL, or below 6 g/dL with respiratory distress, is the transfusion threshold.",
+      },
+      {
+        test: "Serum sodium, potassium, calcium and magnesium where available",
+        why: "Total body potassium and magnesium are depleted whatever the serum values say, and a low serum sodium reflects excess body water rather than sodium loss, which is why sodium is not replaced.",
+        expected: "Serum potassium below 3.5 mmol/L and a mildly low sodium; calcium and magnesium are often low and are corrected through the feeds.",
+      },
+      {
+        test: "Blood culture, urine routine microscopy and culture, and a chest radiograph",
+        why: "Infection in SAM is afebrile and signless; urinary tract infection and pneumonia are the two commonest hidden foci and both change the antibiotic plan.",
+        expected: "A positive urine culture in 10-15% of admissions; the chest film may show pneumonia, a primary complex or miliary shadows without any auscultatory sign.",
+      },
+      {
+        test: "Stool routine microscopy, with a hanging drop if the stool is rice-water",
+        why: "To find Giardia, Cryptosporidium or trophozoites of Entamoeba that need specific treatment, and to identify cholera, in which ReSoMal is replaced by standard low-osmolarity ORS.",
+        expected: "Usually no pus cells; Giardia cysts are common and are treated with metronidazole 7.5 mg/kg 8-hourly for 7 days.",
+      },
+      {
+        test: "Mantoux test, gastric aspirate or induced sputum for CBNAAT, and HIV serology with consent",
+        why: "SAM is the commonest presentation of both diseases in a young child in India and neither can be excluded clinically; a positive result changes the drugs, the duration of care and the family's screening.",
+        expected: "Mantoux may be falsely negative in SAM, so a negative test does not exclude tuberculosis; HIV is expected to be negative but is tested in every admission.",
+      },
+      {
+        test: "Urine dipstick for albumin and serum albumin",
+        why: "To separate nutritional oedema from nephrotic syndrome at the bedside, and to gauge the degree of protein depletion.",
+        expected: "Dipstick nil or trace; serum albumin 2-2.5 g/dL in kwashiorkor, but a normal albumin does not exclude the diagnosis.",
+      },
+    ],
+    management: [
+      {
+        heading: "The first two hours - the emergency steps",
+        points: [
+          "Blood glucose: if 54 mg/dL or below, or if it cannot be measured, give 50 mL of 10% glucose or sugar water (a rounded teaspoon of sugar in 3 tablespoons of water) orally or by nasogastric tube and start F-75 within 30 minutes; if unconscious give 10% dextrose 5 mL/kg IV - 29 mL - followed by the 50 mL by tube.",
+          "Hypothermia (axillary below 35 degrees C): skin-to-skin contact with the mother under a blanket, cap on the head, room at 25-30 degrees C, no bath, no cold examination couch, temperature every 30 minutes until above 36.5 degrees C, and feed straight away; hypothermia and hypoglycaemia are two faces of the same problem and both mean sepsis until proved otherwise.",
+          "Dehydration: no intravenous fluids unless in shock. ReSoMal 5 mL/kg - 29 mL - every 30 minutes for the first 2 hours, then 5-10 mL/kg/hour - 29-58 mL - alternating hourly with F-75 for the next 4-10 hours, by mouth or nasogastric tube, with 50-100 mL after each watery stool; stop when the pulse slows, the child passes urine and the skin is warm.",
+          "ReSoMal contains about 45 mmol/L sodium and 40 mmol/L potassium and is made from one WHO low-osmolarity ORS sachet in 2 litres of water with 50 g sugar and 40 mL of mineral mix; in cholera or profuse watery diarrhoea use standard low-osmolarity ORS instead.",
+          "Check every 30 minutes for the signs of overhydration - respiratory rate rising by 5 per minute and pulse by 25 per minute, engorged neck veins, puffy eyelids, an enlarging liver - and stop the fluid if any appears.",
+          "Shock (lethargic or unconscious with cold hands and capillary refill over 3 seconds or a weak fast pulse): oxygen, 10% dextrose 5 mL/kg IV, then Ringer lactate with 5% dextrose (or half-normal saline with 5% dextrose) 15 mL/kg - 87 mL - over 1 hour, repeated once if the pulse and respiratory rate fall, then ReSoMal by tube at 10 mL/kg/hour; no improvement after the first hour is septic shock, treated with maintenance IV fluid 4 mL/kg/hour and fresh whole blood 10 mL/kg over 3 hours.",
+        ],
+      },
+      {
+        heading: "Stabilisation, days 1-7: steps 4 to 7",
+        points: [
+          "Antibiotics to every child: with complications like this one, injection ampicillin 50 mg/kg - 290 mg - IV or IM 6-hourly for 2 days followed by oral amoxicillin 15 mg/kg - 87 mg - 8-hourly for 5 days, plus gentamicin 7.5 mg/kg - 43 mg - IV or IM once daily for 7 days; an uncomplicated child gets amoxicillin alone for 5 days, and failure to improve by 48 hours adds a third-generation cephalosporin such as ceftriaxone 50-80 mg/kg once daily and a search for tuberculosis, urinary infection and HIV.",
+          "Electrolytes: potassium 3-4 mmol/kg/day - 17-23 mmol a day - and magnesium 0.4-0.6 mmol/kg/day, given through the combined mineral-vitamin mix added to every feed for at least 2 weeks, with no added salt to anything; the oedema goes with the potassium and not with a diuretic, and diuretics are contraindicated.",
+          "Micronutrients from day 1: vitamin A 200,000 IU orally on day 1 for a child over 12 months (100,000 IU at 6-12 months, 50,000 IU under 6 months) under the national guideline, repeated on days 2 and 14 only if there are eye signs or recent measles - WHO 2013 gives only 5000 IU daily through the feeds when there are no eye signs; folic acid 5 mg on day 1 then 1 mg daily; zinc 2 mg/kg/day; copper 0.3 mg/kg/day; a multivitamin; and iron withheld until the second week.",
+          "Zinc for the diarrhoea is 20 mg once daily for 14 days as in any child over 6 months, but it must not be given on top of the zinc already in the mineral mix and therapeutic food; give one or the other and say which.",
+          "Feeding: F-75 (75 kcal and 0.9 g protein per 100 mL, low lactose, low sodium) at 130 mL/kg/day - 754 mL, or 63 mL 2-hourly in 12 feeds day and night - giving 100 kcal/kg/day and 1-1.5 g protein/kg/day; 100 mL/kg/day if the oedema is +++; by nasogastric tube if intake is below 80% of the target; 3-hourly and then 4-hourly feeds as they are tolerated; breastfeeding continues between feeds.",
+          "Persistent diarrhoea on F-75 is managed by switching to the cereal-based, lower-lactose F-75 recipe and checking the stool for Giardia, never by stopping feeds; a smaller volume more often is better than a rest.",
+        ],
+      },
+      {
+        heading: "Transition and rehabilitation: from the second week",
+        points: [
+          "Transition begins when appetite returns, oedema is reducing and the child is free of complications, usually by day 3-7: F-100 (100 kcal and 2.9 g protein per 100 mL) replaces F-75 at the same volume for 2 days, or RUTF is introduced with F-75 topping up whatever is not eaten, while the respiratory rate and pulse are watched for the heart failure a sudden increase in feed can provoke.",
+          "In rehabilitation the volume is increased by 10 mL per feed until some is left over, aiming at 150-220 kcal/kg/day and 4-6 g protein/kg/day - about 1000-1250 mL of F-100 a day at his admission weight - with locally acceptable family foods introduced alongside from the second week.",
+          "Start elemental iron 3 mg/kg/day - 17 mg a day - only now, once he is gaining weight, and continue for 3 months; iron in the stabilisation phase feeds bacteria and generates free radicals while transferrin is low.",
+          "Weigh daily and calculate the gain in g/kg/day: more than 10 is good, 5-10 moderate and below 5 poor; poor gain means an unrecognised infection, a wrong feed volume, an unhappy child, or tuberculosis or HIV, in that order of likelihood.",
+          "Structured play and loving stimulation for 15-30 minutes a day, the mother taught to feed, bathe and play, and a warm, colourful ward are part of the treatment and not decoration; SAM at this age damages development, and the stimulation is what recovers it.",
+        ],
+      },
+      {
+        heading: "Discharge, follow-up and prevention",
+        points: [
+          "Discharge from the facility when the child has completed the antibiotics, has lost the oedema, has a good appetite and has gained 15% of the admission weight - or, by the WHO 2013 criteria, weight-for-length of -2 SD or better or MUAC 12.5 cm or more with no oedema for 2 weeks - and the mother can demonstrate the feeding plan; in an NRC this is a stay of at least 14 days.",
+          "Follow-up at fortnightly intervals for 2 months and then monthly through the Anganwadi and Health and Wellness Centre until 6 months of recovery, weighing at every visit, with continued energy-dense feeding, completion of iron and micronutrients, and the missed vaccines including measles-rubella given before he leaves.",
+          "Link the family to the ICDS supplementary nutrition, the public distribution system and any state scheme for wages lost during the admission, and screen the two siblings with MUAC on the same day.",
+          "Counsel on the feeding of the next year: continued breastfeeding, 3 meals and 2 snacks of energy-dense family food with oil and a protein source, handwashing with soap, safe water, and ORS and zinc at the first loose stool - and fix the return appointment in writing on the MCP card.",
+        ],
+      },
+    ],
+    viva: [
+      {
+        q: "Why do you avoid intravenous fluids in a severely malnourished child with dehydration?",
+        a: "The malnourished heart is small and its output limited, total body sodium is already high while potassium is low, and the kidneys handle a sodium and water load poorly; a bolus of normal saline precipitates pulmonary oedema and heart failure. WHO therefore reserves intravenous fluid for shock alone and rehydrates everyone else slowly by mouth or nasogastric tube with the low-sodium, high-potassium ReSoMal.",
+      },
+      {
+        q: "Why is iron withheld in the first week?",
+        a: "In the stabilisation phase transferrin is low, so free iron circulates and both promotes bacterial growth - many of these children are bacteraemic - and generates free radicals that the depleted antioxidant system cannot handle. Iron is started at 3 mg/kg/day once the child is on F-100 and gaining weight, usually from the second week.",
+      },
+      {
+        q: "What is the difference between F-75 and F-100, and why do you not start with F-100?",
+        a: "F-75 gives 75 kcal and 0.9 g protein per 100 mL with low sodium and low lactose and is designed to meet basic needs without loading the fragile circulation and liver; F-100 gives 100 kcal and 2.9 g protein per 100 mL and is the catch-up feed. Starting with a high-energy, high-protein feed causes refeeding syndrome - a fall in phosphate, potassium and magnesium as cells take them up, fluid retention and heart failure.",
+      },
+      {
+        q: "What is the appetite test and what does it decide?",
+        a: "The child is offered ready-to-use therapeutic food in a quiet corner and watched for 15-30 minutes; eating at least the amount expected for his weight - a quarter to a third of a 92 g sachet at 4-7 kg - is a pass. A child with SAM who passes and has no medical complication is managed in the community; failing it, or any complication, means admission.",
+      },
+      {
+        q: "How would you assess dehydration when the classical signs are unreliable?",
+        a: "Rely on the history of watery diarrhoea and a recent change in the eyes, on thirst, a weak or fast pulse, cold extremities, prolonged capillary refill and reduced urine output, and treat with ReSoMal while monitoring the response rather than trying to grade the deficit; lethargy with cold hands and a weak pulse is shock. In SAM sunken eyes and a slow skin pinch are present without dehydration because of the loss of orbital and subcutaneous fat.",
+      },
+      {
+        q: "What are the criteria for discharge and what follow-up does the national NRC programme require?",
+        a: "No oedema, good appetite, infections treated, immunisation updated, and a weight gain of 15% from the admission or post-oedema weight - or the WHO 2013 criteria of weight-for-length above -2 SD or MUAC 12.5 cm or more with no oedema for 2 weeks - after a minimum stay of 14 days; then four fortnightly follow-up visits over 2 months at the NRC with monthly Anganwadi weighing to 6 months, and readmission if weight falls or oedema returns.",
+      },
+      {
+        q: "Which vaccines and vitamin A doses would this child need before discharge?",
+        a: "Whatever is missing from the card: measles-rubella first dose if not given at 9-12 months is the priority because measles kills malnourished children; the pentavalent, OPV, rotavirus and PCV series completed; and the second vitamin A dose of 200,000 IU due at 16 months is given at follow-up, counting any therapeutic dose already given.",
+      },
+      {
+        q: "What is the community management of SAM in India?",
+        a: "Under the 2023 national protocol a child of 6-59 months with SAM who has an appetite and no complication is treated at home through the Anganwadi and the Health and Wellness Centre with an energy-dense therapeutic food giving about 175-200 kcal/kg/day, oral amoxicillin 15 mg/kg 8-hourly for 5 days, deworming, vitamin A and immunisation catch-up, weekly weight and MUAC checks, and referral to the NRC if he fails to gain weight in 2 weeks or develops a complication.",
+      },
+    ],
+    pitfalls: [
+      "Diagnosing dehydration on sunken eyes and a slow skin pinch and starting an intravenous drip - the classical signs are present in every child with SAM and the drip is what kills him.",
+      "Giving iron, a high-protein diet or full-strength milk on the first day; the first week is about survival and not growth, and refeeding syndrome and heart failure follow the enthusiastic feed.",
+      "Leaving the child uncovered on an examination couch and unfed through the night - hypothermia and hypoglycaemia are the two deaths that happen between rounds, and both are prevented by 2-hourly feeds and skin-to-skin warmth.",
+      "Presenting the anthropometry without the plots and the SD scores, or forgetting to grade the oedema; the examiner wants MUAC, weight-for-length, length-for-age and the oedema grade in one sentence.",
+      "Forgetting the hidden infections - urine culture, chest film, Mantoux and gastric aspirate for tuberculosis, and HIV testing - and then presenting a child who failed to gain weight despite good feeding.",
+      "Discharging on the weight alone, without the mother demonstrating the feeding plan, without the missed vaccines and without a written follow-up date; the relapse rate in the first 6 months is the measure of a good discharge.",
+    ],
+    references: [
+      "WHO Guideline: Updates on the Management of Severe Acute Malnutrition in Infants and Children, 2013",
+      "WHO Guideline on the Prevention and Management of Wasting and Nutritional Oedema (Acute Malnutrition) in Infants and Children under 5 Years, 2023",
+      "Operational Guidelines on Facility Based Management of Children with Severe Acute Malnutrition, MoHFW, Government of India, 2011; Protocol for Management of Malnutrition in Children, Ministry of Women and Child Development with MoHFW, 2023",
+      "WHO Pocket Book of Hospital Care for Children, 2nd edition, 2013 - chapter 7, severe acute malnutrition",
+      "IAP Standard Treatment Guidelines 2022 - severe acute malnutrition; Ghai Essential Pediatrics, 10th edition, 2022 - nutrition; Nelson Textbook of Pediatrics, 22nd edition, 2024 - malnutrition",
+    ],
+  },
+  {
+    id: "pediatrics-case-2",
+    title: "IMNCI assessment and classification of a sick 18-month-old",
+    kind: "osce",
+    subjectId: "pediatrics",
+    opening:
+      "An 18-month-old girl weighing 8.4 kg is brought to the primary health centre with cough for 4 days, fever for 3 days and loose stools for 3 days; the station asks you to assess her with the IMNCI chart booklet, write the classifications in colour, and state the treatment and follow-up, in 15 minutes.",
+    minutes: 15,
+    frequency: "core",
+    sections: [
+      {
+        heading: "How to run the station",
+        points: [
+          "Greet the mother, confirm the child's name and age, and say aloud that this is a child of 2 months to 5 years so the sick-child chart applies and not the young-infant chart; then ask the three opening questions of IMNCI - what are the child's problems, is this an initial or a follow-up visit, and what are the child's weight and temperature.",
+          "Follow the chart in order and say so: general danger signs, the four main symptoms in sequence (cough or difficult breathing, diarrhoea, fever, ear problem), then malnutrition and anaemia, immunisation and vitamin A status, and other problems - the marks are for the order as much as for the findings.",
+          "Examine the child in the mother's lap, undressed to the waist and calm, and record every finding on the case-recording form as you go rather than from memory at the end.",
+          "State each classification in its colour as you reach it - pink means urgent referral after pre-referral treatment, yellow means specific treatment at the facility with a follow-up date, green means home care and advice - and only then move to the next symptom.",
+        ],
+      },
+      {
+        heading: "Check for general danger signs before anything else",
+        points: [
+          "Ask whether the child is able to drink or breastfeed, whether she vomits everything, and whether she has had convulsions during this illness; then look at her - is she lethargic or unconscious, and is she convulsing now.",
+          "Any single danger sign makes the child a pink classification regardless of what follows: complete the assessment quickly, give the pre-referral treatments and refer urgently.",
+          "This child drinks, has vomited twice but keeps most feeds, has had no convulsion and looks at you when spoken to, so there is no general danger sign; say so explicitly before moving on.",
+          "Lethargy is judged against the mother's account of her usual state, and a sleepy child who wakes and stays awake when handled is not lethargic.",
+        ],
+      },
+      {
+        heading: "Assess and classify the main symptoms",
+        points: [
+          "Cough: 4 days, so under 14 days. Count breaths for one full minute with the child calm - 46 per minute at 18 months is fast breathing because the cut-off from 12 months to 5 years is 40 (it is 50 from 2 to 12 months) - look for lower chest indrawing with the child lying quietly, listen for stridor in a calm child, and listen for wheeze; if there is wheeze, give salbutamol by MDI with spacer or nebuliser up to three times 15-20 minutes apart and count again before classifying.",
+          "No danger sign, no chest indrawing, no stridor, fast breathing present: this is pneumonia, a yellow classification - oral amoxicillin, a safe remedy to soothe the throat, the signs to return immediately, and follow-up in 2 days; chest indrawing or stridor in a calm child is severe pneumonia or very severe disease in the Indian chart booklet and is pink.",
+          "Diarrhoea: 3 days, so acute, and no blood. Assess the four signs - she is restless and irritable, her eyes are sunken, she drinks eagerly and is thirsty, and the skin pinch goes back slowly - and with two or more signs from the middle column this is some dehydration, yellow: Plan B at the facility, zinc, and continued feeding.",
+          "Fever: 38.2 degrees C axillary for 3 days, so under 7 days. Decide the malaria risk of the area, do a rapid diagnostic test and a smear for every fever in a risk area, look for stiff neck, a runny nose, a measles rash with cough, red eyes or coryza, and any other obvious cause; no stiff neck and no danger sign excludes very severe febrile disease, and a negative test with a runny nose and pneumonia as the cause makes this fever - malaria unlikely, with paracetamol for 38.5 degrees C or more and review in 2 days if the fever persists.",
+          "Ear problem: ask about ear pain and discharge and feel behind the ears; no pain, no discharge and no tender swelling over the mastoid is no ear infection, and you should still say that you asked.",
+        ],
+      },
+      {
+        heading: "Check nutritional status, anaemia, immunisation and vitamin A",
+        points: [
+          "Look for visible severe wasting and bilateral pitting oedema of the feet, measure MUAC on the left arm, and read weight-for-length off the WHO chart in the booklet: MUAC 12.0 cm and weight-for-length between -3 and -2 SD with no oedema is moderate acute malnutrition, yellow - a feeding assessment and counselling, referral to the Anganwadi for growth monitoring and supplementary nutrition, and a follow-up in 30 days with MUAC repeated at every contact.",
+          "MUAC below 11.5 cm, weight-for-length below -3 SD or oedema of both feet would be severe acute malnutrition; with a medical complication or no appetite it is complicated and pink, and with an appetite and no complication it is uncomplicated and yellow, managed with therapeutic food in the community.",
+          "Look for palmar pallor by comparing the child's palm with the mother's: some pallor is anaemia, yellow - iron, deworming if she is 1 year or older and has not had albendazole in the last 6 months, and follow-up in 14 days; severe palmar pallor is severe anaemia, pink.",
+          "Check the immunisation card: at 18 months she should have had BCG, three doses of OPV and pentavalent, rotavirus and fractional IPV, PCV, measles-rubella dose 1 with the first vitamin A dose at 9-12 months, and is due the DPT and OPV boosters with measles-rubella dose 2 and vitamin A dose 2 at 16-24 months; give any due vaccine today, because a sick child without a pink classification is not a contraindication.",
+          "Ask about deworming, and assess feeding in every child under 2 years or with a nutrition classification - breastfeeding, what else is given and how often, who feeds her and whether her intake changed with the illness.",
+        ],
+      },
+      {
+        heading: "Write the treatment plan for the classifications you made",
+        points: [
+          "Pneumonia: amoxicillin 40 mg/kg/dose twice daily for 5 days - about 340 mg per dose at 8.4 kg, given as dispersible tablets by the chart booklet's weight band - with the first dose given in the clinic and the mother watched dissolving and giving it.",
+          "Some dehydration: Plan B in the facility with ORS 75 mL/kg over 4 hours - about 630 mL - by cup and spoon in frequent small sips, waiting 10 minutes and restarting more slowly if she vomits, breastfeeding whenever she wants, and reassessment after 4 hours to move her to Plan A, repeat Plan B or, if two signs of severe dehydration appear, go to Plan C.",
+          "Zinc 20 mg once daily for 14 days (10 mg if under 6 months), begun today, and ORS after each loose stool at home with the mother sent home with two sachets, plus continued feeding and the four rules of home treatment.",
+          "Anaemia: elemental iron 3 mg/kg/day - 25 mg a day, as iron-folic acid syrup - for 14 days and then reviewed, continued for 2-3 months if she responds; albendazole 200 mg as a single dose since she is between 12 and 23 months; and for the moderate acute malnutrition, feeding counselling from the age-specific box in the chart booklet, an Anganwadi referral for supplementary nutrition, and MUAC and weight rechecked in 30 days.",
+          "Fever: paracetamol 15 mg/kg per dose - 125 mg - every 4-6 hours only for a temperature of 38.5 degrees C or more, with advice on tepid sponging and fluids; if the fever lasts beyond 7 days she is referred for assessment.",
+        ],
+      },
+      {
+        heading: "Counsel the mother and fix the follow-up",
+        points: [
+          "Teach and then check with open questions: how many times a day and for how many days the amoxicillin is given, how to prepare ORS (one full sachet in one litre of clean water, used within 24 hours), how to give zinc, and what to feed during and after the illness - more frequent breastfeeds and an extra meal a day for 2 weeks after recovery.",
+          "State the signs for immediate return in the mother's words: not able to drink or breastfeed, becomes sicker, develops fever, fast or difficult breathing, blood in the stool, or drinking poorly - and write them on the card.",
+          "Give the follow-up dates: 2 days for the pneumonia and the fever, 5 days for the diarrhoea if it is not improving, 14 days for the anaemia and 30 days for the feeding problem - and the earliest date is the one written on the card.",
+          "If she had had any pink classification, the pre-referral steps would be the first dose of intramuscular ampicillin 50 mg/kg and gentamicin 7.5 mg/kg, intramuscular artesunate (2.4 mg/kg by the national programme, 3 mg/kg for a child under 20 kg by WHO 2015) in a malaria-risk area with very severe febrile disease, treatment of hypoglycaemia with sugar water or 10% dextrose, keeping the child warm, sips of ORS on the way, a referral note and, where possible, the 108 ambulance rather than telling the family to go.",
+        ],
+      },
+    ],
+    summaryStatement:
+      "An 18-month-old girl weighing 8.4 kg with no general danger sign, classified as pneumonia (fast breathing at 46 per minute without chest indrawing), some dehydration (restless, sunken eyes, thirsty, slow skin pinch), fever - malaria unlikely (rapid test negative with an obvious cause), no ear infection, moderate acute malnutrition (MUAC 12.0 cm, weight-for-length between -3 and -2 SD, no oedema) and anaemia (some palmar pallor), immunised to 9 months but due the 16-24 month boosters - all yellow classifications, managed at the facility with oral amoxicillin, Plan B rehydration with zinc, iron and albendazole, feeding counselling and vaccination today, and follow-up in 2 days.",
+    differential: [
+      {
+        diagnosis: "Pneumonia (yellow) rather than severe pneumonia or very severe disease (pink)",
+        forIt: "Cough for 4 days with fast breathing at 46 per minute, above the cut-off of 40 for a child of 12 months to 5 years.",
+        againstIt:
+          "No general danger sign, no chest indrawing, no stridor in a calm child and, where a pulse oximeter is available, an oxygen saturation of 90% or more; any one of these would make her pink.",
+      },
+      {
+        diagnosis: "Bronchiolitis or wheeze-associated lower respiratory illness",
+        forIt: "Age under 2 years with coryza, cough and fast breathing in the viral season, when most fast breathing at this age is viral.",
+        againstIt:
+          "No audible wheeze and no hyperinflated chest; had wheeze been present, the salbutamol trial and a repeat count would have decided the classification, and IMNCI still treats fast breathing that persists as pneumonia.",
+      },
+      {
+        diagnosis: "Some dehydration rather than severe dehydration",
+        forIt: "Two or more signs from the middle column - restless and irritable, sunken eyes, thirsty and drinking eagerly, skin pinch going back slowly.",
+        againstIt:
+          "She is not lethargic or unconscious, drinks eagerly rather than poorly, and the skin pinch returns in under 2 seconds; two signs from the severe column would mean Plan C and referral.",
+      },
+      {
+        diagnosis: "Malaria as the cause of the fever",
+        forIt: "Fever for 3 days in a child from a district with malaria transmission, where every fever is tested.",
+        againstIt:
+          "Negative rapid diagnostic test and smear, and an obvious other cause in pneumonia with a runny nose; the test is repeated if the fever persists at the 2-day follow-up.",
+      },
+    ],
+    investigations: [
+      {
+        test: "Respiratory rate counted for 60 seconds, repeated if the first count is near the cut-off",
+        why: "Fast breathing is the single sign that separates pneumonia from a cough or cold, and it is unreliable if counted for less than a minute or in a crying child.",
+        expected: "46 per minute in a calm child - fast breathing for 12 months to 5 years, where the cut-off is 40.",
+      },
+      {
+        test: "Pulse oximetry where available",
+        why: "The 2014 WHO revision added an oxygen saturation below 90% as a criterion for severe pneumonia needing oxygen and referral.",
+        expected: "94% on room air; below 90% would upgrade her to pink.",
+      },
+      {
+        test: "Malaria rapid diagnostic test with thick and thin smears",
+        why: "Every fever in a malaria-risk area is tested, and the classification of malaria now requires a positive test rather than the absence of another cause.",
+        expected: "Negative; a positive test would mean malaria treated with the age-appropriate artemisinin-based combination under the national programme.",
+      },
+      {
+        test: "MUAC with a non-stretch tape and weight-for-length on the WHO chart in the booklet",
+        why: "To detect the acute malnutrition that a child presenting with cough hides; MUAC alone misses some wasted children and the chart alone misses some with a low MUAC.",
+        expected: "MUAC 12.0 cm and weight-for-length between -3 and -2 SD - moderate acute malnutrition.",
+      },
+      {
+        test: "Haemoglobin by a digital haemoglobinometer if the facility has one",
+        why: "Palmar pallor is a screening sign, and Anemia Mukt Bharat expects a point-of-care haemoglobin to confirm anaemia and grade it.",
+        expected: "7-9.9 g/dL is moderate anaemia at 6-59 months; below 7 g/dL is severe and is referred.",
+      },
+      {
+        test: "Axillary temperature and weight on a calibrated scale",
+        why: "The chart booklet needs the weight for every dose and the temperature for the fever classification; IMNCI defines fever as 37.5 degrees C axillary or more, feeling hot, or a history of fever.",
+        expected: "8.4 kg and 38.2 degrees C.",
+      },
+      {
+        test: "Chest radiograph and blood counts",
+        why: "Not needed for the IMNCI classification and not available at the primary health centre; they belong to the referred child or the one who fails to improve at follow-up.",
+        expected: "Not done at this level; say so if asked rather than inventing results.",
+      },
+    ],
+    management: [
+      {
+        heading: "Treat at the facility today",
+        points: [
+          "Amoxicillin 40 mg/kg/dose twice daily for 5 days - about 340 mg per dose at 8.4 kg - with the first dose given in the clinic, and the throat soothed with breast milk or warm water with honey, never with a cough syrup.",
+          "Plan B: ORS 75 mL/kg - about 630 mL - over 4 hours by cup and spoon, breastfeeding continued, a 10-minute pause and slower sips after any vomit, and reassessment of the four signs at 4 hours; the first dose of zinc 20 mg dissolved in breast milk or ORS is given now.",
+          "Iron 3 mg/kg/day of elemental iron - 25 mg a day - for 14 days and albendazole 200 mg as a single dose today, with the first iron dose given in the clinic.",
+          "Paracetamol 15 mg/kg per dose - 125 mg - only if the temperature is 38.5 degrees C or more, and the vaccines due at 16-24 months given today before she leaves.",
+        ],
+      },
+      {
+        heading: "Home treatment and counselling",
+        points: [
+          "The four rules of home treatment of diarrhoea: extra fluids including ORS after every loose stool, zinc for 14 days, continued feeding with breast milk and an extra meal a day for 2 weeks, and the signs for returning immediately.",
+          "Feeding counselling for an 18-month-old with moderate acute malnutrition: continued breastfeeding, three meals of thick family food with added oil or ghee and a protein source, two nutritious snacks, active feeding with her own katori, and no bottle, no diluted milk and no packaged snacks in place of a meal.",
+          "Show the mother how to prepare and measure ORS, watch her give it, and give her the amoxicillin dispersible tablets with the dose marked in a way she can read - a picture chart if she cannot.",
+          "Explain the three follow-up dates and that the earliest is the one that matters, and note them on the MCP card together with today's classifications.",
+        ],
+      },
+      {
+        heading: "Follow-up visits and what to do at each",
+        points: [
+          "Pneumonia at 2 days: a danger sign, chest indrawing or stridor means urgent referral with the first dose of injectable antibiotics; fast breathing that is unchanged means changing to the second-line antibiotic or referring, and referral in any child who has had measles in the last 3 months; slower breathing, less fever and better eating means completing the 5 days.",
+          "Fever at 2 days if it persists: repeat the malaria test, reassess for a stiff neck and a new cause, and refer if it has lasted 7 days.",
+          "Anaemia at 14 days: continue iron for 2-3 months if the pallor is improving, and refer if pallor persists after 2 months of iron or worsens at any visit.",
+          "Feeding and moderate acute malnutrition at 30 days: reweigh and remeasure MUAC, repeat the feeding assessment, and refer for severe acute malnutrition or if she has lost weight; the Anganwadi weighs her monthly in between.",
+        ],
+      },
+      {
+        heading: "If any classification had been pink",
+        points: [
+          "Severe pneumonia or very severe disease: the first dose of intramuscular ampicillin 50 mg/kg and gentamicin 7.5 mg/kg, oxygen if available, and referral with the mother keeping the child warm and breastfeeding on the way.",
+          "Very severe febrile disease in a malaria-risk area: intramuscular artesunate in addition, paracetamol for a temperature of 38.5 degrees C or more, and treatment of hypoglycaemia with sugar water by mouth or 10% dextrose 5 mL/kg intravenously.",
+          "Severe dehydration: Plan C - Ringer lactate 30 mL/kg over 30 minutes then 70 mL/kg over 2.5 hours for a child over 12 months - if intravenous fluids can be given at the facility; otherwise ORS by nasogastric tube at 20 mL/kg/hour for 6 hours on the way to a facility that can, with reassessment every 1-2 hours.",
+          "Write the referral note with the classifications, treatments given with times, and the reason for referral; call ahead where you can, and send the child by ambulance with the mother rather than telling the family to find their own way.",
+        ],
+      },
+    ],
+    viva: [
+      {
+        q: "What are the general danger signs in a child aged 2 months to 5 years?",
+        a: "Not able to drink or breastfeed, vomits everything, convulsions during this illness or convulsing now, and lethargic or unconscious. Any one of them makes the child pink, needs the assessment to be completed quickly, and means urgent referral after pre-referral treatment.",
+      },
+      {
+        q: "Give the cut-offs for fast breathing.",
+        a: "50 breaths per minute or more from 2 months up to 12 months, and 40 or more from 12 months up to 5 years; the young infant under 2 months is fast at 60 or more, counted twice. The count is for a full minute in a calm child, and repeated if it is close to the cut-off.",
+      },
+      {
+        q: "How does the 2014 WHO chart differ from the older Indian chart on chest indrawing?",
+        a: "The 2014 WHO revision classifies chest indrawing without a danger sign as pneumonia treated with oral amoxicillin at home, reserving severe pneumonia for a danger sign, stridor or saturation below 90%; the Indian chart booklet keeps chest indrawing in the pink severe pneumonia or very severe disease box needing referral. In the exam, name the chart you are following and apply it consistently.",
+      },
+      {
+        q: "What is in low-osmolarity ORS and why is zinc given?",
+        a: "Sodium 75 mmol/L, glucose 75 mmol/L, potassium 20, chloride 65 and citrate 10 mmol/L, total osmolarity 245 mOsm/L, which reduces stool output, vomiting and the need for intravenous fluids compared with the old formula. Zinc 20 mg daily for 14 days (10 mg under 6 months) shortens the episode, reduces its severity and lowers the incidence of diarrhoea in the following 2-3 months.",
+      },
+      {
+        q: "What do you do at the 2-day follow-up of pneumonia?",
+        a: "Reassess for danger signs, count the breaths, and look for chest indrawing and stridor. Worse - a danger sign, indrawing or stridor - is referred urgently after the first injectable dose; the same - fast breathing persisting - is changed to the second-line antibiotic or referred, and referred if there was measles in the last 3 months; better is completing the 5 days of amoxicillin.",
+      },
+      {
+        q: "How does the assessment differ for a young infant under 2 months?",
+        a: "The young-infant chart looks first for possible serious bacterial infection - not feeding well, convulsions, fast breathing at 60 or more, severe chest indrawing, movement only on stimulation or none, temperature 37.5 degrees C or more or below 35.5, and pus or redness of the umbilicus or skin pustules - then jaundice, diarrhoea, and a feeding problem or low weight for age. There is no separate fever or anaemia section, and the pre-referral antibiotics are ampicillin and gentamicin.",
+      },
+      {
+        q: "How are diarrhoea of 14 days or more and diarrhoea with blood classified and treated?",
+        a: "Diarrhoea of 14 days or more with dehydration is severe persistent diarrhoea, pink, referred after treating the dehydration; without dehydration it is persistent diarrhoea, yellow, managed with feeding advice, a multivitamin and mineral supplement, zinc, and follow-up in 5 days. Blood in the stool is dysentery, yellow, treated with ciprofloxacin 15 mg/kg twice daily for 3 days, zinc and follow-up in 2 days.",
+      },
+      {
+        q: "What are the MUAC and weight-for-height cut-offs and the nutrition classifications?",
+        a: "MUAC below 11.5 cm, weight-for-height or length below -3 SD, or oedema of both feet is severe acute malnutrition - complicated and pink with any medical complication or a failed appetite test, uncomplicated and yellow otherwise; MUAC 11.5 to under 12.5 cm or weight-for-height between -3 and -2 SD is moderate acute malnutrition, yellow; and above those is no acute malnutrition, green.",
+      },
+    ],
+    pitfalls: [
+      "Counting the respiratory rate for 15 seconds and multiplying, or counting in a crying child, and then classifying pneumonia on a number that was never fast.",
+      "Going straight to the cough because that is the complaint, and never asking about convulsions, vomiting everything and the ability to drink - the danger signs come first and the marks for them are lost in the first minute.",
+      "Classifying dehydration on one sign, or forgetting that two or more signs from the same column are needed; a thirsty child with normal eyes and a normal skin pinch has no dehydration.",
+      "Missing the MUAC, the feet, the palms and the immunisation card because the child came with a cough; IMNCI is integrated precisely because the sick child is also the malnourished and unvaccinated one.",
+      "Sending the mother home with a prescription instead of giving the first dose in the clinic, watching her give the ORS, and checking what she understood with open questions.",
+      "Writing a diagnosis such as bronchopneumonia or acute gastroenteritis instead of the chart's classification in its colour, and leaving the follow-up date off the card.",
+    ],
+    references: [
+      "Integrated Management of Neonatal and Childhood Illness: Physician Chart Booklet, MoHFW, Government of India, 2019 revision",
+      "WHO and UNICEF Integrated Management of Childhood Illness Chart Booklet, 2014 revision",
+      "Revised WHO Classification and Treatment of Childhood Pneumonia at Health Facilities, 2014",
+      "WHO Pocket Book of Hospital Care for Children, 2nd edition, 2013",
+      "National Guidelines for Diagnosis and Treatment of Malaria, NCVBDC (formerly NVBDCP), Government of India; Anemia Mukt Bharat Operational Guidelines, MoHFW, 2018",
+      "Ghai Essential Pediatrics, 10th edition, 2022 - IMNCI and acute diarrhoea",
+    ],
+  },
+];
+
+const subject: Subject = {
+  id: "pediatrics",
+  title: "Paediatrics",
+  blurb: "Newborn care, growth, immunisation, IMNCI, diarrhoea, malnutrition and the sick child under five.",
+  icon: "Baby",
+  papers: ["IV"],
+  topics,
+  cases,
+};
+
+export default subject;
