@@ -3411,3 +3411,476 @@ topics.push({
     "Park's Textbook of Preventive and Social Medicine, 27th edition, 2023 - rabies",
   ],
 });
+
+const cases: ClinicalCase[] = [
+  {
+    id: "infectious-fever-case-1",
+    title: "Acute febrile illness with thrombocytopenia in a young adult",
+    kind: "long",
+    subjectId: "infectious-fever",
+    opening:
+      "A 28-year-old farm labourer from a peri-urban village presents in September with high-grade fever for 5 days, severe body ache and retro-orbital pain, two episodes of vomiting today and one episode of gum bleeding this morning, carrying a report from a local laboratory that shows a platelet count of 48,000 per cubic millimetre.",
+    minutes: 30,
+    frequency: "core",
+    sections: [
+      {
+        heading: "How to open the presentation",
+        points: [
+          "Give the identifying data, the season, the day of illness and the presenting complaints in the patient's own order before any detail, because the examiner is already placing the case among the monsoon fevers in the first thirty seconds.",
+          "Say: 'Mr X, a 28-year-old farm labourer from a village on the edge of the town, presents on day 5 of a continuous high-grade fever with severe backache and pain behind the eyes, with vomiting twice today and bleeding from the gums once this morning; a report from outside shows a platelet count of 48,000.'",
+          "Add the negatives that matter at once: no breathlessness, no abdominal pain, no altered sensorium, no reduction in urine output, no jaundice, no black stools, no rash noticed and no bleeding from any other site.",
+          "State what has already been given, with doses and dates - here paracetamol from a chemist, an intramuscular diclofenac injection at a local clinic on day 3 and two days of an oral cephalosporin - because these alter both the picture and the risk.",
+        ],
+      },
+      {
+        heading: "History of the present illness by the day of illness",
+        points: [
+          "Record the fever day by day: abrupt onset on day 1 with chills but no rigors, continuous rather than intermittent, a maximum of 103 degrees F, and a partial fall this morning, which is exactly the moment the dengue critical phase begins and is the reason the examiner chose day 5.",
+          "Characterise the pain: severe myalgia and backache, headache with retro-orbital pain worse on eye movement, and no crippling small-joint pain, which shifts probability away from chikungunya and towards dengue.",
+          "Trace the bleeding and the gut symptoms carefully: gum bleeding on brushing this morning, two vomits in the last 12 hours with no blood, no abdominal pain, and a normal oral intake until yesterday; persistent vomiting and mucosal bleeding are two of the seven WHO warning signs and each must be dated.",
+          "Ask about urine output in real terms - the last time he passed urine, its colour and quantity - and about lethargy or restlessness noticed by the family, because a patient who has become quiet on day 5 is leaking plasma, not recovering.",
+          "Document the absence of localising symptoms system by system: no cough or sore throat, no dysuria or loin pain, no diarrhoea, no ear or dental pain and no neck stiffness, which is what earns the label of undifferentiated fever.",
+        ],
+      },
+      {
+        heading: "Exposure, past, personal and family history",
+        points: [
+          "Take the exposure history in one breath: works in paddy fields and waded through knee-deep flood water two weeks ago, sleeps without a net, has water stored in open drums at home, no travel outside the district, no forest visit, no known rodent contact and no animal bite.",
+          "Ask about fever in the household and the neighbourhood, because a cluster of fever with body ache in the same lane in September is dengue until proved otherwise, and a cluster after floods raises leptospirosis.",
+          "Past history: no previous dengue, no known G6PD deficiency, no peptic ulcer or bleeding disorder, no diabetes, no chronic liver or kidney disease and no previous transfusion; a previous dengue infection raises the risk of severe disease in this one.",
+          "Personal history: alcohol two or three evenings a week, tobacco chewing, no injectable drug use and no high-risk sexual exposure, and a mixed diet; alcohol matters for the liver enzymes and for the bleeding risk.",
+          "Social history: lives 15 km from the nearest hospital with no vehicle, the sole earner for a family of four, and his wife is 6 months pregnant, which matters for the admission decision and for screening the household for fever.",
+        ],
+      },
+      {
+        heading: "Examination to demonstrate",
+        points: [
+          "Vitals first and stated in full: temperature 100.4 degrees F, pulse 112 per minute and regular, blood pressure 100/84 mmHg giving a pulse pressure of 16 mmHg, respiratory rate 22 per minute, capillary refill 3 seconds with cool hands, and oxygen saturation 97% on room air.",
+          "General survey: flushed face, no pallor, no icterus, no oedema, no lymphadenopathy, petechiae over the shins and forearms, a positive tourniquet test with more than 10 petechiae per square inch, no conjunctival suffusion and no eschar after a full search of the axillae, groin, perineum, natal cleft and behind the ears.",
+          "Abdomen: liver palpable 3 cm below the costal margin and tender, no splenomegaly, mild right hypochondrial tenderness, no free fluid clinically, and normal bowel sounds; a tender enlarged liver on day 5 is a warning sign and a clue against enteric fever.",
+          "Chest: reduced breath sounds and dullness at the right base suggesting a small effusion, no crackles, and no added sounds; effusion on the right base is the commonest clinical evidence of plasma leakage and should be confirmed by ultrasound.",
+          "Nervous system and the rest: alert and oriented, no neck stiffness, no focal deficit, no calf tenderness on squeezing, no arthritis, and a normal cardiovascular examination with no murmur.",
+          "Repeat and record the pulse, blood pressure with pulse pressure, capillary refill and urine output at the bedside in front of the examiner, because in this case the diagnosis is made by trend and not by a single reading.",
+        ],
+      },
+      {
+        heading: "Bedside triage: is this dengue with warning signs?",
+        points: [
+          "Run through the seven WHO warning signs aloud and say which are present: persistent vomiting, mucosal bleeding, a tender liver more than 2 cm and clinical fluid accumulation are present; abdominal pain, lethargy and a documented haematocrit rise are not yet established.",
+          "A narrow pulse pressure of 16 mmHg with tachycardia and cool peripheries on day 5 means compensated shock is beginning, which moves this patient from Group B towards Group C and makes intravenous crystalloid an emergency, not a ward order.",
+          "State that the platelet count of 48,000 is not the reason for admission and not an indication for platelets; the reasons for admission are the warning signs, the narrow pulse pressure, the distance from hospital and the absence of a bystander who can watch him overnight.",
+          "Commit to the plan in one sentence: admit now, secure an intravenous line, send a haematocrit and repeat it in 2 hours, start isotonic crystalloid on the Group B schedule and escalate to the shock schedule if the pulse pressure narrows further.",
+        ],
+      },
+      {
+        heading: "Putting it together for the examiner",
+        points: [
+          "Argue the diagnosis from the pattern: an abrupt continuous fever with retro-orbital pain and myalgia, a positive tourniquet test, leucopenia with thrombocytopenia, and warning signs appearing as the fever falls on day 5 is the natural history of dengue entering its critical phase.",
+          "Keep the three competitors alive until the tests return: falciparum malaria is excluded by a negative smear and rapid test, scrub typhus by the absence of an eschar and a negative IgM after day 5, and leptospirosis by the absence of conjunctival suffusion, calf tenderness and jaundice despite a flood-water exposure.",
+          "Mention the two things that make this patient higher risk than the average dengue case - the intramuscular diclofenac injection, which can cause a muscle haematoma in a thrombocytopenic patient, and the alcohol history, which worsens hepatic involvement.",
+          "End by stating the outcome you expect: with titrated fluid and 4-6 hourly monitoring the leakage phase will end within 48 hours, the haematocrit will fall and the platelets rise by day 7-8, and the danger then changes to fluid overload from a drip that nobody stopped.",
+        ],
+      },
+    ],
+    summaryStatement:
+      "This is a 28-year-old farm labourer on day 5 of an acute undifferentiated febrile illness in the post-monsoon season, with severe myalgia and retro-orbital pain, thrombocytopenia of 48,000 per cubic millimetre, a positive tourniquet test, and warning signs of persistent vomiting, mucosal bleeding, a tender enlarged liver and a right pleural effusion, now with a narrowing pulse pressure of 16 mmHg indicating early compensated shock - most consistent with dengue entering its critical phase, with falciparum malaria, scrub typhus and leptospirosis to be excluded by the day-appropriate tests, in a patient made higher risk by an intramuscular NSAID injection, alcohol use and distance from hospital.",
+    differential: [
+      {
+        diagnosis: "Dengue with warning signs entering the critical phase",
+        forIt:
+          "Abrupt continuous fever with retro-orbital pain and myalgia in September, a positive tourniquet test with petechiae, leucopenia and a platelet count of 48,000, and warning signs - persistent vomiting, gum bleeding, a tender liver and a basal effusion - appearing exactly as the fever falls on day 5, with a pulse pressure of 16 mmHg.",
+        againstIt:
+          "Very little; the absence of a rash and the flood-water exposure are the only features that keep the alternatives alive, and a negative NS1 on day 5 would not exclude it because the antigen is often gone by then.",
+      },
+      {
+        diagnosis: "Falciparum malaria",
+        forIt:
+          "Fever with chills, thrombocytopenia, vomiting and a tender liver in a labourer exposed to mosquitoes in a field setting, and the fact that thrombocytopenia is as common in malaria as in dengue.",
+        againstIt:
+          "No rigors or periodicity, no splenomegaly, no anaemia or jaundice, a positive tourniquet test and plasma leakage, and it will be settled within the hour by a thick and thin smear and a bivalent rapid test, which must be sent before any antimalarial is written.",
+      },
+      {
+        diagnosis: "Scrub typhus",
+        forIt:
+          "Fever with severe myalgia and headache in a farm worker with grass and bush exposure, thrombocytopenia, a tender liver, an effusion and vomiting are all seen in scrub typhus, which is now the commonest rickettsial fever in most Indian states.",
+        againstIt:
+          "No eschar after a complete search, no lymphadenopathy, no cough or breathlessness, and a positive tourniquet test with a narrow pulse pressure favours plasma leakage rather than vasculitis; a scrub typhus IgM ELISA is meaningful only from day 5-7 onward, so a single negative today does not close it.",
+      },
+      {
+        diagnosis: "Leptospirosis",
+        forIt:
+          "Wading through flood water two weeks ago, which is within the incubation period, with fever, severe myalgia, thrombocytopenia, vomiting and a tender liver.",
+        againstIt:
+          "No conjunctival suffusion, no calf tenderness, no jaundice, no oliguria and no proteinuria on dipstick, and the platelet-leakage pattern with a narrow pulse pressure is not the leptospiral picture; a leptospira IgM ELISA after day 5-7 and a repeat creatinine settle it, and doxycycline is started if either the clinical picture or the geography tilts towards it.",
+      },
+    ],
+    investigations: [
+      {
+        test: "Complete blood count with haematocrit and platelet count now, repeated every 4-6 hours",
+        why: "The trend of the haematocrit against the platelet count is the monitoring tool for plasma leakage and the guide to every change in the fluid rate; a single outside count says nothing about direction.",
+        expected: "Leucopenia of 2,500-4,000 per cubic millimetre, platelets 40,000-60,000 and falling, and a haematocrit of 48-52% rising towards 20% above his baseline as leakage progresses.",
+      },
+      {
+        test: "Dengue NS1 antigen and IgM ELISA, sent together because it is day 5",
+        why: "NS1 is positive from day 1 to about day 5 and IgM appears from day 4-5, so on day 5 either may be positive and a negative NS1 alone must never be used to exclude dengue.",
+        expected: "NS1 weakly positive or negative and IgM positive; a positive IgG with IgM would suggest secondary dengue and a higher risk of severe disease.",
+      },
+      {
+        test: "Thick and thin peripheral smear for malaria with a bivalent rapid diagnostic test (HRP2 and pLDH)",
+        why: "Falciparum malaria kills within days and is the one diagnosis in this list that must be excluded before any other treatment decision; the smear also gives the species and parasite density.",
+        expected: "Negative in this case; a positive falciparum result would change the entire plan to artemisinin combination therapy or intravenous artesunate.",
+      },
+      {
+        test: "Scrub typhus IgM ELISA and leptospira IgM ELISA, with a Weil-Felix test only where ELISA is unavailable",
+        why: "Both are meaningful from day 5-7 of illness, both are treatable with doxycycline, and both are common enough in a farm labourer with bush and flood-water exposure that they must be tested rather than assumed away.",
+        expected: "Negative; a scrub typhus IgM optical density above the laboratory cut-off or a leptospira IgM positive would prompt doxycycline the same day.",
+      },
+      {
+        test: "Liver function tests, serum albumin, urea, creatinine and electrolytes",
+        why: "AST and ALT rise in dengue and are markedly raised in severe hepatic involvement, low albumin reflects the leak, and the creatinine and potassium decide the safety of the fluid plan and screen for the leptospiral and malarial kidney.",
+        expected: "AST 200-400 U/L higher than the ALT, bilirubin normal, albumin 2.8-3.2 g/dL, and a normal creatinine; a creatinine rise with jaundice would swing the diagnosis towards leptospirosis.",
+      },
+      {
+        test: "Blood grouping and cross-matching, with a coagulation profile only if bleeding becomes significant",
+        why: "A patient with mucosal bleeding and thrombocytopenia entering shock may need blood at short notice, and a falling haematocrit in shock means occult bleeding; a coagulation profile changes management only when there is bleeding.",
+        expected: "Cross-matched blood kept available; prothrombin time mildly prolonged and fibrinogen normal in uncomplicated dengue.",
+      },
+      {
+        test: "Bedside ultrasound of the chest and abdomen and a chest radiograph",
+        why: "Ultrasound detects pleural effusion, ascites and gall bladder wall thickening before they are clinical, confirming plasma leakage and objectively staging the critical phase.",
+        expected: "Small right pleural effusion, thickened oedematous gall bladder wall and a trace of free fluid in the pelvis.",
+      },
+      {
+        test: "Urine routine and microscopy, and a random blood glucose",
+        why: "Proteinuria and pus cells point to leptospirosis or a urinary focus, haematuria to bleeding, and the glucose excludes stress or unrecognised diabetes that alters the fluid and the prognosis.",
+        expected: "Normal urine and a normal glucose in dengue; protein and red cells would raise leptospirosis.",
+      },
+    ],
+    management: [
+      {
+        heading: "Triage and the decision to admit",
+        points: [
+          "Admit as Group B moving to Group C: warning signs are present, the pulse pressure is 16 mmHg, he lives 15 km away without transport and he has already received an intramuscular NSAID; none of these can be managed at home with a review tomorrow.",
+          "Secure two intravenous lines, send the baseline haematocrit and the full panel before the first bag of fluid, and write the monitoring chart at the bedside: pulse, blood pressure with pulse pressure, capillary refill, respiratory rate and urine output hourly, and haematocrit with platelets every 4-6 hours.",
+          "Stop every NSAID and intramuscular injection, give paracetamol 500-650 mg up to 6 hourly and not more than 3 g in the day because the liver is involved, and use tepid sponging for comfort.",
+          "Inform the family in plain words that the next 48 hours are the dangerous part, that the fever falling does not mean recovery, and that the drip is the treatment - not a platelet transfusion.",
+        ],
+      },
+      {
+        heading: "The fluid plan for the critical phase",
+        points: [
+          "Use isotonic crystalloid only - 0.9% saline or Ringer lactate - and calculate on ideal body weight; for this 55 kg man maintenance by the Holliday-Segar rule is about 2,200 mL a day, and the total intravenous volume over the 48-hour critical phase should not exceed maintenance plus a 5% deficit.",
+          "Compensated shock, which this narrow pulse pressure represents: give 5-10 mL/kg over 1 hour, that is 275-550 mL, then reassess pulse pressure, capillary refill, urine output and haematocrit; if he improves step down through 5-7 mL/kg/hour for 1-2 hours, 3-5 mL/kg/hour for 2-4 hours and 2-3 mL/kg/hour, with the aim of stopping the drip within 24-48 hours.",
+          "If the blood pressure becomes unrecordable at any point give a 20 mL/kg bolus of crystalloid over 15-30 minutes, then 10 mL/kg/hour if he improves and step down; if there is no improvement repeat the haematocrit - a rising haematocrit means more fluid or a colloid, a falling haematocrit in a patient still in shock means occult bleeding and the need for fresh whole blood.",
+          "Target a urine output of at least 0.5 mL/kg/hour, a pulse pressure above 20 mmHg, warm peripheries and a haematocrit drifting back towards baseline, and reduce the rate at every reassessment at which these targets are met rather than continuing the written rate.",
+          "Watch for the recovery phase from day 7 - falling haematocrit, rising platelets, bradycardia, itchy confluent rash and returning appetite - and stop intravenous fluid at once, because a drip continued into reabsorption produces pulmonary oedema and is the commonest cause of death in a patient who survived the leak.",
+        ],
+      },
+      {
+        heading: "Covering the alternatives while the tests are pending",
+        points: [
+          "Stop the oral cephalosporin: it treats none of the four diagnoses in play, and a fever with no focus is not an indication for an antibiotic.",
+          "Malaria is treated only on a positive smear or rapid test: for falciparum, artesunate 4 mg/kg daily for 3 days with sulfadoxine-pyrimethamine on day 1 and single-dose primaquine 0.75 mg/kg on day 2 (artemether-lumefantrine in the North-East), and intravenous artesunate 2.4 mg/kg at 0, 12 and 24 hours then daily for severe disease; for vivax, chloroquine 25 mg/kg over 3 days with primaquine 0.25 mg/kg daily for 14 days after a G6PD check.",
+          "Start doxycycline 100 mg twice daily for 7 days without waiting for serology if an eschar is found on a repeat search, if the scrub or leptospira IgM returns positive, or if he fails to improve by day 7 with a negative dengue serology, because both scrub typhus and leptospirosis kill when doxycycline is delayed and the drug is safe alongside the dengue fluid plan.",
+          "Do not give steroids, intravenous immunoglobulin, carica papaya leaf preparations, platelet-raising tonics or prophylactic antibiotics; none has evidence of benefit and the papaya preparations delay the treatment that works.",
+        ],
+      },
+      {
+        heading: "Bleeding, transfusion thresholds and organ support",
+        points: [
+          "Platelets are transfused only for clinically significant bleeding or prophylactically below 10,000 per cubic millimetre (below 20,000 with an added risk such as a peptic ulcer or a needed procedure); his count of 48,000 with gum ooze needs observation, not platelets.",
+          "Fresh whole blood or packed cells are given for significant bleeding with haemodynamic compromise, guided by the falling haematocrit; fresh frozen plasma and cryoprecipitate are reserved for documented coagulopathy with bleeding.",
+          "Examine the site of the diclofenac injection daily for a gluteal haematoma, and avoid all further intramuscular injections, arterial punctures and nasogastric tubes while the count is low.",
+          "Refer to a centre with high-dependency care if shock does not respond to two boluses, if there is significant bleeding, if AST or ALT exceed 1,000 U/L, if the creatinine rises, or if there is any alteration in sensorium or breathlessness, and transfer with a running line and a written fluid chart.",
+        ],
+      },
+      {
+        heading: "Discharge, notification and the family",
+        points: [
+          "Discharge when he has been afebrile for 48 hours without antipyretic, has a returning appetite, a stable haematocrit off intravenous fluids for 24 hours, good urine output, no respiratory distress and a platelet count rising above 50,000 per cubic millimetre; review in the clinic after 3 days with a repeat count.",
+          "Notify the case to the Integrated Disease Surveillance Programme through the block health office the same day so that the vector control team fogs the lane and checks the household water storage.",
+          "Teach the family source reduction that they can do themselves: empty and scrub the drums weekly, cover stored water, dispose of tyres and coconut shells, and use repellents and full sleeves in the day, because Aedes bites in daylight.",
+          "Screen the pregnant wife and the children for fever now and for the next fortnight, and tell them to come the same day for any fever with warning signs; dengue in pregnancy is an admission even without warning signs.",
+        ],
+      },
+    ],
+    viva: [
+      {
+        q: "Why is the platelet count of 48,000 not your reason for admitting this man?",
+        a: "Because death in dengue comes from plasma leakage and shock, not from the platelet number. The reasons to admit are the warning signs - persistent vomiting, mucosal bleeding, a tender liver and clinical fluid accumulation - and the narrow pulse pressure of 16 mmHg, together with the social reasons of distance and no one to watch him. A count of 48,000 with no warning signs in a patient who can drink and pass urine 6-hourly could be managed at home with daily review.",
+      },
+      {
+        q: "List the seven WHO warning signs and name the ones present here.",
+        a: "Abdominal pain or tenderness, persistent vomiting, clinical fluid accumulation, mucosal bleeding, lethargy or restlessness, liver enlargement of more than 2 cm, and a rise in haematocrit with a rapid fall in platelets. Present here are persistent vomiting, gum bleeding, a tender liver 3 cm below the margin and a right pleural effusion; the haematocrit trend is not yet established and is the reason the count is repeated in 2 hours.",
+      },
+      {
+        q: "Which dengue test do you send on day 5, and what does a negative NS1 mean?",
+        a: "On day 5 I send both NS1 antigen and IgM ELISA. NS1 is positive from day 1 to about day 5 and then disappears, while IgM appears from day 4-5, so on day 5 either can be positive. A negative NS1 on day 5 does not exclude dengue - the antigen may already have cleared - and a negative pair on day 5 should be repeated after day 7 before the diagnosis is abandoned.",
+      },
+      {
+        q: "What does the pulse pressure tell you and how does it change your fluid plan?",
+        a: "A pulse pressure of 20 mmHg or less with tachycardia and cool peripheries is compensated shock - the systolic pressure is held by vasoconstriction while the stroke volume falls. It moves the patient from the Group B schedule of 5-7 mL/kg/hour to the Group C schedule of 5-10 mL/kg over 1 hour with reassessment, and it is the reason the haematocrit is sent before the first bag, because the direction of the haematocrit is what decides whether the next step is more crystalloid, a colloid or blood.",
+      },
+      {
+        q: "The patient is in shock and the haematocrit has fallen from 52% to 40%. What has happened and what do you do?",
+        a: "A falling haematocrit in a patient who is still in shock means occult bleeding, usually gastrointestinal or into the muscle at an injection site, not resolution of the leak. I would stop escalating crystalloid, cross-match and transfuse fresh whole blood or packed cells 5-10 mL/kg, look for the source, and consider platelets only if there is ongoing bleeding with a count below 20,000; giving more crystalloid to a bleeding patient dilutes him and worsens the outcome.",
+      },
+      {
+        q: "When would you start doxycycline in this patient, and why not on day 1?",
+        a: "I would start doxycycline 100 mg twice daily for 7 days if an eschar is found, if the scrub typhus or leptospira IgM is positive, or if he remains febrile beyond day 7 with negative dengue serology. I would not start it on day 1 of admission because the picture is classical for dengue, doxycycline treats neither dengue nor malaria, and a positive malaria test would need artesunate instead. In a region where scrub typhus dominates, or in a patient with an eschar, doxycycline would be started at the first visit.",
+      },
+      {
+        q: "How would you recognise fluid overload, and what would you do?",
+        a: "Breathlessness, a rising respiratory rate, basal crackles, a wide pulse pressure, puffy eyelids, a falling haematocrit and a rising platelet count in a patient who is now afebrile - the signs of the recovery phase with a drip that has not been stopped. I would stop intravenous fluid, sit him up, give oxygen, and give intravenous furosemide 20-40 mg once he is out of shock and the haematocrit is falling; in a patient still in shock with fluid overload, I would switch to a colloid and refer for high-dependency care.",
+      },
+      {
+        q: "Why is intramuscular diclofenac dangerous here, and what should be used for fever?",
+        a: "Diclofenac inhibits platelet function on top of an already low count and irritates the gastric mucosa, and an intramuscular injection into a thrombocytopenic patient can produce a large gluteal haematoma that itself causes shock. Aspirin is dangerous for the same reasons. The only antipyretic in dengue is oral paracetamol, 500-650 mg up to 6 hourly, kept below 3 g a day when the liver is involved, with tepid sponging for comfort.",
+      },
+    ],
+    pitfalls: [
+      "Admitting, transfusing or discharging on the platelet count instead of on the warning signs, pulse pressure and haematocrit trend.",
+      "Treating a negative NS1 on day 5 as excluding dengue, and a negative scrub typhus IgM on day 3 as excluding scrub typhus - both tests have a day of illness on which they work.",
+      "Writing a third-generation cephalosporin for a fever with no focus: it treats neither dengue, malaria, scrub typhus nor leptospirosis and delays the doxycycline or artesunate that would.",
+      "Giving an NSAID, aspirin or any intramuscular injection to a thrombocytopenic febrile patient.",
+      "Continuing the written fluid rate into the recovery phase because nobody re-examined the patient; fluid overload from day 7 kills the patient who survived the leak.",
+      "Not undressing the patient completely, and so missing the eschar in the axilla or groin that would have changed the diagnosis to scrub typhus and the treatment to doxycycline.",
+    ],
+    references: [
+      "National Guidelines for Clinical Management of Dengue Fever, NVBDCP / NCVBDC, MoHFW, 2015 (revised)",
+      "WHO Dengue: Guidelines for Diagnosis, Treatment, Prevention and Control, new edition 2009",
+      "ICMR Treatment Guidelines for Antimicrobial Use in Common Syndromes, 3rd edition, 2022 - acute febrile illness",
+      "Guidelines for Diagnosis and Treatment of Malaria in India, NIMR-ICMR, 2014",
+      "DHR-ICMR Guidelines for Diagnosis and Management of Rickettsial Diseases in India, 2015",
+      "API Textbook of Medicine, 11th edition, 2019 - approach to fever and tropical infections",
+    ],
+  },
+  {
+    id: "infectious-fever-case-2",
+    title: "Viva: dog bite and rabies post-exposure prophylaxis",
+    kind: "viva",
+    subjectId: "infectious-fever",
+    opening:
+      "A 9-year-old boy weighing 25 kg is brought 2 hours after a stray dog bit him on the right calf while he was playing outside his house; there are two deep puncture wounds that bled, the dog ran away and cannot be traced, and the mother has applied turmeric and chilli paste to the wounds before coming.",
+    minutes: 10,
+    frequency: "core",
+    sections: [
+      {
+        heading: "How the viva opens: categorise before anything else",
+        points: [
+          "The examiner wants the WHO category in the first sentence: two transdermal bites that bled are a category III exposure, and category III means wound washing, rabies immunoglobulin and a full course of vaccine, starting today.",
+          "State why nothing downgrades it: the dog being a stray, the bite being unprovoked or provoked, the wounds looking small, and the possibility that the dog was vaccinated in a municipal drive are all irrelevant, because vaccine failure in dogs is documented and a provoked bite from a rabid dog transmits rabies just as well.",
+          "State the two facts that make this child higher risk than most: the dog is unavailable for observation, so the course cannot be shortened, and the child is 9 years old, an age at which bites are commoner, deeper and more often on the limbs and face than in adults.",
+          "Say aloud that the calf is a distal site with a longer incubation than the face, but that this changes the urgency of nothing - rabies immunoglobulin and the first vaccine dose are given today whatever the site.",
+        ],
+      },
+      {
+        heading: "Wound management in the first fifteen minutes",
+        points: [
+          "Wash both wounds immediately under running tap water with soap for a full 15 minutes by the clock, flushing into the depth of the punctures, because thorough washing alone reduces the risk of rabies substantially and is the step most often done for 30 seconds.",
+          "Remove the turmeric and chilli paste completely during the wash, and tell the mother without blame that irritants, oil, lime, plant juice and cauterisation delay healing and do nothing to the virus.",
+          "After washing apply povidone-iodine or 70% alcohol to the wounds; do not scrub with a brush, do not probe the puncture tracks, and do not apply any dressing that will occlude the wound before the immunoglobulin is given.",
+          "Do not suture the wounds; if closure were unavoidable for haemostasis or on the face, rabies immunoglobulin would be infiltrated first, several hours would be allowed to pass, and only loose sutures placed - primary closure without immunoglobulin drives virus into the tissue.",
+        ],
+      },
+      {
+        heading: "Rabies immunoglobulin: the step most often omitted",
+        points: [
+          "Immunoglobulin provides passive antibody at the wound for the 7-10 days before the vaccine produces active immunity, and it is indicated for every category III exposure; omitting it in a category III bite is the commonest fatal error in Indian anti-rabies practice.",
+          "Calculate the dose aloud for 25 kg: equine rabies immunoglobulin 40 IU/kg gives 1000 IU, human rabies immunoglobulin 20 IU/kg gives 500 IU, and the single monoclonal antibody at 3.33 IU/kg gives about 83 IU, with the two-antibody cocktail at 40 IU/kg giving 1000 IU.",
+          "Infiltrate as much of the calculated dose as anatomically possible into and around both puncture wounds using a fine needle, diluting two- to threefold with normal saline if the volume is too small to reach every wound, so that no wound is left un-infiltrated.",
+          "Equine immunoglobulin needs no skin test but adrenaline must be drawn up and the child observed for 30 minutes to an hour; serum sickness a week later is possible and is treated symptomatically. It is given on day 0 and may be given up to day 7 after the first vaccine dose, never later, and never to a previously fully vaccinated patient.",
+        ],
+      },
+      {
+        heading: "Vaccine schedule and the sites that count",
+        points: [
+          "Give a cell culture or embryonated egg vaccine today, day 0, and complete either the intramuscular Essen schedule of one dose on days 0, 3, 7, 14 and 28 into the deltoid, or the intradermal updated Thai Red Cross schedule of 0.1 mL at two sites, one in each deltoid, on days 0, 3, 7 and 28, at an anti-rabies clinic with enough throughput to share a vial within 6-8 hours of reconstitution.",
+          "Never the gluteal region: fat delays absorption and lowers the antibody response, and a gluteal injection is counted as a dose not given. The anterolateral thigh is used only in children under 2 years; this 9-year-old receives the deltoid.",
+          "Give the vaccine in a limb away from the immunoglobulin, use a different syringe, and record the batch number, site and date on the card; the intradermal dose must raise a papule, and a dose that runs subcutaneously is repeated.",
+          "Because the dog cannot be observed, the full course must be completed; had the dog been healthy and available, it would have been observed for 10 days and the course stopped only if it remained well - the observation never delays the first dose.",
+        ],
+      },
+      {
+        heading: "Tetanus, antibiotics and analgesia",
+        points: [
+          "Check the immunisation card: a fully immunised 9-year-old who received the DPT booster at 5-6 years needs no tetanus dose for a wound within 5 years of the last dose, but a child with an unknown or incomplete record receives Td today and tetanus immunoglobulin 250 IU for a deep contaminated wound.",
+          "Give a short course of amoxicillin-clavulanate, 20-25 mg/kg of the amoxicillin component twice daily for 3-5 days, because deep puncture wounds from a dog carry Pasteurella, Capnocytophaga, staphylococci and anaerobes and are at high risk of infection, as are bites on the hand or face, delayed presentation beyond 8 hours and any immunocompromised child.",
+          "Prescribe paracetamol 15 mg/kg 6 hourly for pain, keep the leg elevated for 48 hours, and review the wound at the day 3 vaccine visit for cellulitis, discharge or a collection.",
+          "Do not give an intramuscular injection into the bitten limb and do not give steroids or chloroquine during the course, because both blunt the antibody response.",
+        ],
+      },
+      {
+        heading: "Documentation, follow-up and what to tell the family",
+        points: [
+          "Record in the card and the clinic register the animal, the circumstances, the category, the site and number of wounds, the immunoglobulin product with dose and lot, the vaccine with batch and site, and the five dates; the child will be seen by other hands over the month.",
+          "Write the dates in the mother's language on the card, explain that missing day 3 or day 7 matters most, and that a delayed dose is given as soon as possible without restarting the course.",
+          "Tell the family that rabies, once symptomatic, is uniformly fatal, that the prophylaxis is close to completely protective when it is completed, and that any fever, pain or tingling at the bite site, difficulty swallowing or fear of water in the coming months needs immediate attendance.",
+          "Rabies is a notifiable disease since 2021: report the exposure to the block health office, inform the municipal animal birth control programme about a stray dog biting in the lane, and ask about other children bitten or licked by the same dog, who need the same prophylaxis.",
+        ],
+      },
+    ],
+    summaryStatement:
+      "A 9-year-old, 25 kg boy with a WHO category III rabies exposure - two bleeding transdermal puncture wounds on the calf from an untraceable stray dog in a rabies-endemic area, with the wounds contaminated by turmeric and chilli paste - who needs a 15-minute soap-and-water wash now, rabies immunoglobulin infiltrated into both wounds today, a complete cell culture vaccine course by the Essen or intradermal Thai Red Cross schedule, tetanus prophylaxis according to his card, a short course of amoxicillin-clavulanate, no suturing, and a card with five dates that the family understands.",
+    differential: [
+      {
+        diagnosis: "WHO category III exposure needing vaccine and immunoglobulin",
+        forIt:
+          "Two transdermal puncture wounds that bled, from a dog that cannot be observed, in a country where dogs cause almost all human rabies.",
+        againstIt:
+          "Nothing; even a single bleeding scratch is category III, and a stray, a provoked bite or a supposedly vaccinated dog does not downgrade it.",
+      },
+      {
+        diagnosis: "Category II exposure needing vaccine alone",
+        forIt:
+          "The examiner will test whether a small wound tempts you to call it a nibble or an abrasion, because the only difference in management is the immunoglobulin.",
+        againstIt:
+          "Blood at the site of a bite or scratch makes it category III; category II is nibbling of uncovered skin or a scratch without bleeding, and immunoglobulin is added even then if the child is immunocompromised.",
+      },
+      {
+        diagnosis: "Bacterial wound infection or tetanus-prone wound as a co-problem",
+        forIt:
+          "Deep puncture wounds from a dog, contaminated by soil and an irritant paste, in a child whose tetanus status is on a card the mother may not have.",
+        againstIt:
+          "Not an alternative to rabies prophylaxis but an addition to it: amoxicillin-clavulanate and tetanus prophylaxis are given alongside, never instead of, immunoglobulin and vaccine.",
+      },
+      {
+        diagnosis: "An exposure that does not need prophylaxis",
+        forIt:
+          "Bites from rats, squirrels, hares and birds essentially never transmit rabies, and a lick on intact skin is category I with washing only.",
+        againstIt:
+          "This was a dog, the skin was broken and it bled; the only way this child would not need the full course is if a healthy dog had been available and remained well for 10 days of observation, and this one cannot be found.",
+      },
+    ],
+    investigations: [
+      {
+        test: "No laboratory test before starting prophylaxis",
+        why: "Rabies prophylaxis is a clinical decision made on the category of exposure and the animal; there is no test on the patient that can be waited for, and every hour of delay is an hour of viral replication at the wound.",
+        expected: "Immunoglobulin and the first vaccine dose given within the first visit, with the washing done before either.",
+      },
+      {
+        test: "Immunisation card review for tetanus and any previous rabies vaccination",
+        why: "The DPT booster date decides whether Td and tetanus immunoglobulin are needed, and a documented complete prior rabies course would change the schedule to two doses on days 0 and 3 with no immunoglobulin.",
+        expected: "A complete primary series with boosters at 16-24 months and 5-6 years needs no tetanus dose today; no prior rabies vaccination means the full course.",
+      },
+      {
+        test: "Ten-day observation of the biting dog where it is available",
+        why: "A dog excreting virus in its saliva shows signs of illness within 10 days, so a dog that remains healthy allows the course to be stopped after the doses already given; it never delays the first dose.",
+        expected: "Not possible here because the dog cannot be traced, so the full course is completed.",
+      },
+      {
+        test: "Brain of the animal for direct fluorescent antibody or direct rapid immunohistochemical testing if it dies or is killed",
+        why: "Laboratory confirmation in the animal establishes the exposure for public health action and identifies other people exposed; a negative result in a competent laboratory allows the course to be stopped.",
+        expected: "Rarely available in practice; prophylaxis is never held for the result.",
+      },
+      {
+        test: "Wound swab for culture only if the wound becomes clinically infected",
+        why: "Routine swabs of a fresh bite grow skin flora and change nothing; a swab from an infected wound at the day 3 or day 7 visit guides the antibiotic if empirical amoxicillin-clavulanate has failed.",
+        expected: "Pasteurella multocida, Staphylococcus aureus, streptococci and anaerobes from an infected dog bite.",
+      },
+      {
+        test: "Rabies virus neutralising antibody titre by RFFIT, only in special situations",
+        why: "A titre of 0.5 IU/mL or more indicates an adequate response; it is checked 2-4 weeks after the course in an immunocompromised child, and in occupational pre-exposure programmes, never as part of routine post-exposure prophylaxis.",
+        expected: "Above 0.5 IU/mL in an immunocompetent child; a lower titre in an immunocompromised child prompts additional doses.",
+      },
+    ],
+    management: [
+      {
+        heading: "Today, in this order",
+        points: [
+          "Wash both wounds under running water with soap for 15 minutes, removing every trace of the paste, then apply povidone-iodine; this is done before any paperwork.",
+          "Infiltrate equine rabies immunoglobulin 1000 IU (40 IU/kg for 25 kg), or human rabies immunoglobulin 500 IU, or the monoclonal antibody at its labelled dose, into and around both punctures, diluting with saline if needed to reach every wound, with adrenaline drawn up and the child observed afterwards.",
+          "Give the first dose of cell culture vaccine into the left deltoid, intramuscular Essen or intradermal Thai Red Cross by the clinic's practice, and write the day 3, 7, 14 and 28 (or 3, 7 and 28) dates on the card.",
+          "Give Td and tetanus immunoglobulin if the record is incomplete or unknown, and start amoxicillin-clavulanate for the deep punctures; leave the wounds open with a light non-occlusive dressing.",
+        ],
+      },
+      {
+        heading: "The vaccine course and where it goes wrong",
+        points: [
+          "Essen intramuscular: one full vial on days 0, 3, 7, 14 and 28 into the deltoid, five visits; Zagreb 2-1-1: two doses on day 0, one in each deltoid, then one dose on day 7 and day 21, three visits; intradermal updated Thai Red Cross: 0.1 mL at two sites on days 0, 3, 7 and 28, four visits and about a fifth of the vaccine cost.",
+          "A missed dose is given as soon as possible and the remaining doses shifted by the same interval; the course is never restarted from day 0, and a change from intramuscular to intradermal mid-course is avoided.",
+          "Immunoglobulin can still be given up to day 7 after the first vaccine dose if it was unavailable today - so a clinic without immunoglobulin starts the vaccine and refers the same day to a centre that stocks it rather than writing a note in the file.",
+          "If this child is bitten again in future after completing this course, he needs only two doses on days 0 and 3 with no immunoglobulin, whatever the interval; an incomplete course or a nerve tissue vaccine course would count as unvaccinated.",
+        ],
+      },
+      {
+        heading: "Wound care, antibiotics and analgesia",
+        points: [
+          "No suturing of the punctures; a bleeding wound is controlled by pressure, and if closure on the face were unavoidable it would be loose, after immunoglobulin infiltration and a delay of several hours.",
+          "Amoxicillin-clavulanate 20-25 mg/kg of amoxicillin twice daily for 3-5 days for these deep punctures, with clindamycin plus cotrimoxazole for the penicillin-allergic child; review the wound at every vaccine visit.",
+          "Paracetamol 15 mg/kg 6 hourly for pain, elevation of the limb, and a return visit for spreading redness, discharge, fever or increasing pain, which would mean wound infection needing drainage or a change of antibiotic.",
+        ],
+      },
+      {
+        heading: "Family, community and the record",
+        points: [
+          "Explain to the mother that the treatment is life-saving and free at the government anti-rabies clinic, that the five dates matter, and that fear of water, difficulty swallowing, tingling at the wound or unusual behaviour in the coming weeks or months needs the child brought in immediately.",
+          "Ask who else was near the dog: any other child bitten, scratched or licked on broken skin needs the same assessment today, and the school and the lane should be told to report the dog if it is seen, sick or dead.",
+          "Report the case as a notifiable disease exposure to the block health office and inform the municipal animal birth control and vaccination programme, which is how the National Action Plan for dog-mediated Rabies Elimination reaches its target of zero deaths by 2030.",
+          "Enter the exposure, category, products with lots, doses, sites and dates in the anti-rabies clinic register, and give the mother a card that any other clinic can read if the family travels during the month.",
+        ],
+      },
+    ],
+    viva: [
+      {
+        q: "What category of exposure is this and what does that category mean for treatment?",
+        a: "Category III: transdermal bites that bled. Category III means immediate 15-minute wound washing, rabies immunoglobulin infiltrated into every wound on day 0, and a complete course of cell culture vaccine. Category II - nibbling of uncovered skin or a scratch without bleeding - needs washing and vaccine only, with immunoglobulin added if the patient is immunocompromised, and category I - touching, feeding or a lick on intact skin - needs washing only.",
+      },
+      {
+        q: "The mother has applied turmeric and chilli paste. What do you do with the wound?",
+        a: "Wash it off completely under running water with soap for a full 15 minutes, flushing into the punctures, then apply povidone-iodine or 70% alcohol. I would explain, without blaming her, that traditional applications and cauterisation delay healing and do nothing to the virus. I would not scrub, probe or suture, and I would apply only a light non-occlusive dressing after the immunoglobulin has been infiltrated.",
+      },
+      {
+        q: "Calculate the dose of equine rabies immunoglobulin for this child, and do you skin-test first?",
+        a: "40 IU/kg for 25 kg is 1000 IU, well under the maximum of 3000 IU; human immunoglobulin would be 20 IU/kg, that is 500 IU. A skin test is no longer recommended for equine immunoglobulin because it neither predicts nor prevents anaphylaxis, but adrenaline must be drawn up and the child observed for at least 30 minutes. The whole calculated dose is infiltrated into and around the wounds, diluted with saline if the volume cannot reach every wound.",
+      },
+      {
+        q: "The wound is deep and bleeding. Will you suture it?",
+        a: "No. Dog bite puncture wounds are left open because suturing drives virus into the tissue and seals in bacteria. Bleeding is controlled with pressure. If closure were unavoidable - a large facial laceration, for example - I would infiltrate rabies immunoglobulin first, wait several hours, and then place loose sutures, and I would give amoxicillin-clavulanate in any case.",
+      },
+      {
+        q: "Suppose the dog had been the neighbour's pet, vaccinated last year and available. Would that change anything today?",
+        a: "Nothing today: the wound is washed, immunoglobulin is given and the first vaccine dose is given on day 0 exactly as for a stray, because vaccine failure in dogs is documented. What changes is that a healthy available dog is observed for 10 days, and if it remains well the vaccine course may be stopped after the doses already given. The observation can shorten the course; it never delays its start.",
+      },
+      {
+        q: "Two years later the same boy is bitten by another dog. What is the schedule?",
+        a: "Because he completed a full course of cell culture vaccine, he needs only two doses on days 0 and 3, intramuscular or intradermal, with no immunoglobulin, whatever the interval since the last course; WHO 2018 also allows a single-visit four-site intradermal dose on day 0. The wound is still washed for 15 minutes. If the earlier course had been incomplete or with a nerve tissue vaccine, he would be treated as unvaccinated.",
+      },
+      {
+        q: "Your primary health centre has vaccine but no immunoglobulin. What do you do?",
+        a: "Wash the wound, give the first vaccine dose now, and refer the child the same day to the nearest centre that stocks immunoglobulin or monoclonal antibody, because immunoglobulin can be given up to day 7 after the first vaccine dose but never after that. A category III bite with no immunoglobulin is an emergency referral, not a note in the file; a facial bite would be referred within hours.",
+      },
+      {
+        q: "Why is the gluteal region never used for rabies vaccine, and which site do you use in this child?",
+        a: "The gluteal region has a thick fat layer that delays absorption and lowers the antibody response, so a gluteal dose is counted as not given. Intramuscular vaccine goes into the deltoid in anyone over 2 years and into the anterolateral thigh in infants under 2; intradermal doses go into the skin over both deltoids and must raise a papule. This 9-year-old receives the deltoid, in the limb away from the immunoglobulin.",
+      },
+    ],
+    pitfalls: [
+      "Waiting to observe the dog, or asking whether the dog was vaccinated or the bite provoked, before starting prophylaxis; the first dose and the immunoglobulin are given on day 0 regardless.",
+      "Omitting rabies immunoglobulin in a category III bite, or giving it all intramuscularly at a distant site instead of infiltrating it into the wounds.",
+      "Washing the wound for 30 seconds instead of 15 minutes, or suturing a bite before immunoglobulin has been infiltrated.",
+      "Injecting the vaccine into the gluteal region, or into the anterolateral thigh in a child over 2 years.",
+      "Restarting the course from day 0 after a missed dose, or giving immunoglobulin to a patient who has previously completed a full cell culture vaccine course.",
+      "Forgetting tetanus prophylaxis, the antibiotic for a deep puncture, and the other children who were near the same dog.",
+    ],
+    references: [
+      "National Guidelines for Rabies Prophylaxis, National Rabies Control Programme, NCDC, MoHFW, 2019",
+      "WHO Expert Consultation on Rabies, Third Report, WHO Technical Report Series 1012, 2018",
+      "WHO Rabies Vaccines: WHO Position Paper, April 2018",
+      "National Action Plan for Dog Mediated Rabies Elimination from India by 2030 (NAPRE), MoHFW and Ministry of Fisheries, Animal Husbandry and Dairying, 2021",
+      "Park's Textbook of Preventive and Social Medicine, 27th edition, 2023 - rabies",
+    ],
+  },
+];
+
+const subject: Subject = {
+  id: "infectious-fever",
+  title: "Fever & Infectious Disease",
+  blurb: "Acute undifferentiated fever, dengue, malaria, typhoid, scrub typhus, HIV, rabies and snake bite.",
+  icon: "Thermometer",
+  papers: ["II"],
+  topics,
+  cases,
+};
+
+export default subject;

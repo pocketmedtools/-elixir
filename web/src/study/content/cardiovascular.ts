@@ -2891,3 +2891,487 @@ topics.push({
     "API Textbook of Medicine, 11th edition, 2019 - cardiac arrhythmias",
   ],
 });
+
+const cases: ClinicalCase[] = [
+  {
+    id: "cardiovascular-case-1",
+    title: "Chronic heart failure with reduced ejection fraction after an old anterior infarction",
+    kind: "long",
+    subjectId: "cardiovascular",
+    opening:
+      "A 58-year-old farmer from a village in Karnataka, a known hypertensive and type 2 diabetic and a former beedi smoker, who had an anterior wall myocardial infarction 2 years ago that was thrombolysed but never revascularised, presents with progressive breathlessness on exertion for 6 months, now on climbing one flight of stairs, with orthopnoea, paroxysmal nocturnal dyspnoea and swelling of both feet for 3 weeks.",
+    minutes: 30,
+    frequency: "core",
+    sections: [
+      {
+        heading: "How to open the presentation",
+        points: [
+          "Give the identifying data, the presenting complaints in the patient's own order with their durations, and then the one-line problem statement before any detail, because the examiner forms a judgement in the first thirty seconds.",
+          "Say: 'Mr X, a 58-year-old farmer from a village 40 km from the district hospital, a known hypertensive for 10 years and type 2 diabetic for 8 years, who had an anterior wall myocardial infarction 2 years ago, presents with breathlessness on exertion for 6 months, orthopnoea and paroxysmal nocturnal dyspnoea for 1 month, and swelling of both feet for 3 weeks.'",
+          "Add the relevant negatives early: no chest pain at rest or on exertion in the last month, no palpitations, no syncope, no fever, no cough with purulent sputum, no haemoptysis and no reduction in urine output.",
+          "State the current drugs with doses and the actual adherence, and mention in the same breath that he stopped his tablets for 6 weeks before this illness because the local pharmacy had no stock - the precipitant belongs in the opening.",
+          "Close the opening with the functional class: he is in NYHA class III, breathless on less than ordinary activity but comfortable at rest.",
+        ],
+      },
+      {
+        heading: "History of the presenting illness",
+        points: [
+          "Characterise the breathlessness by what he can no longer do: walking to the field 500 m away, carrying a sack of paddy, climbing the stairs to the terrace, and how this has changed month by month, which converts the complaint into NYHA class and a trend.",
+          "Ask about orthopnoea in pillows, paroxysmal nocturnal dyspnoea with its timing after lying down and relief on sitting at the window, nocturnal cough, and whether he now sleeps in a chair.",
+          "Document the oedema from the feet upwards, its diurnal variation, abdominal distension and early satiety from hepatic congestion, and the weight gain if he has been weighed anywhere.",
+          "Look for the precipitant systematically: interruption of drugs, dietary salt and pickle, NSAIDs for knee pain from the local chemist, fever or cough suggesting infection, palpitations suggesting atrial fibrillation, uncontrolled blood pressure, anaemia, thyroid symptoms and any recent chest pain suggesting a new ischaemic event.",
+          "Ask about the symptoms of low output that the examiner will want excluded - dizziness on standing, cold extremities, confusion and a fall in urine volume - because they change the profile from warm-and-wet to cold-and-wet and change the urgency.",
+        ],
+      },
+      {
+        heading: "Past, treatment and risk-factor history",
+        points: [
+          "Reconstruct the infarction: the date, the hospital, the delay to arrival, whether streptokinase or tenecteplase was given, whether angiography was advised and why it was not done, and the discharge ejection fraction if a report exists.",
+          "List every drug with dose, frequency and duration - aspirin 75 mg, atorvastatin 40 mg, metoprolol, ramipril, furosemide, metformin, glimepiride - and separately note what he actually takes, since the discharge prescription and the current intake usually differ.",
+          "Hypertension: duration, previous highest readings, drugs used, and any target organ damage already documented; diabetes: duration, last HbA1c, hypoglycaemia, foot problems, and the last eye examination.",
+          "Tobacco in its actual form - beedi, cigarettes, gutkha or khaini - with the number per day and the year he stopped, alcohol as arrack or country liquor with quantity, and any history of tuberculosis or chronic cough.",
+          "Ask specifically about rheumatic fever in childhood, a heart murmur ever mentioned, and a family history of premature coronary disease, sudden death or cardiomyopathy, since these are the alternative aetiologies the examiner will raise.",
+        ],
+      },
+      {
+        heading: "Family, personal and socio-economic history",
+        points: [
+          "Occupation in real terms - how many hours of field work, whether he can still do it, and who does it now - because the illness has already changed the family's income.",
+          "Who pays for the drugs, the distance and cost of travel to the clinic, whether he is enrolled for free drugs under NP-NCD at the Health and Wellness Centre, and whether the family holds a PM-JAY card, which decides whether angiography and a device are realistic.",
+          "Diet as eaten: rice and ragi quantities, pickle and papad with every meal, salt added at the table, and whether the wife cooks separately for him - the family is the unit of care and the salt advice is given to the cook.",
+          "Health beliefs: what he thinks caused the illness, whether he believes the tablets are for life, and any traditional or alternative remedies, including those containing steroids or salt.",
+          "The support available at home, the number of dependants, and whether anyone in the household has ever been screened for hypertension or diabetes.",
+        ],
+      },
+      {
+        heading: "General and cardiovascular examination to demonstrate",
+        points: [
+          "General survey: dyspnoea at rest, propped-up posture, pallor, cyanosis, cold or warm periphery, pedal and sacral oedema, weight and BMI by Asian-Indian cut-offs, and the absence of clubbing and lymphadenopathy.",
+          "Pulse rate, rhythm, volume and character, with a specific search for pulsus alternans; blood pressure in both arms with the pulse pressure stated, because a narrow pulse pressure with cool extremities means low output.",
+          "Jugular venous pressure measured at 45 degrees in centimetres above the sternal angle, its waveform, and a demonstrated hepatojugular reflux - the sign most often faked rather than shown.",
+          "Precordium: apex beat displaced to the sixth intercostal space lateral to the mid-clavicular line, diffuse and hypodynamic, with a left parasternal heave if pulmonary hypertension has developed.",
+          "Auscultation: a third heart sound at the apex, a soft grade 2 apical pansystolic murmur of functional mitral regurgitation radiating to the axilla, and a loud pulmonary second sound; bibasal fine end-inspiratory crepitations and any pleural effusion complete the picture of congestion.",
+          "Abdomen: tender smooth hepatomegaly with a rounded edge, ascites by shifting dullness, and the absence of splenomegaly.",
+        ],
+      },
+      {
+        heading: "Completing the examination and the functional assessment",
+        points: [
+          "Respiratory system in full, to exclude the wheeze and prolonged expiration of chronic obstructive pulmonary disease in a former beedi smoker, and to describe any effusion by percussion note and breath sounds.",
+          "Fundus for hypertensive and diabetic retinopathy, and both feet for neuropathy with the 10 g monofilament, pulses, callus and ulcers, because the diabetic complications are marked separately.",
+          "A neurological screen for a previous embolic stroke, and thyroid examination for a goitre.",
+          "State the haemodynamic profile explicitly - warm and wet - and the NYHA class, and if he has been walked, the distance covered in 6 minutes.",
+          "Finish by summarising the positive findings and the significant negatives in two sentences before the summary statement, so that the examiner hears the diagnosis being built rather than announced.",
+        ],
+      },
+    ],
+    summaryStatement:
+      "This is a 58-year-old farmer, a known hypertensive and type 2 diabetic and a former beedi smoker, with an anterior wall myocardial infarction 2 years ago that was thrombolysed but not revascularised, who presents with 6 months of progressive exertional breathlessness with orthopnoea, paroxysmal nocturnal dyspnoea and pedal oedema, currently in NYHA class III, with a displaced diffuse apex, a third heart sound, a raised jugular venous pressure with hepatojugular reflux, bibasal crepitations and tender hepatomegaly - a clinical picture of chronic biventricular heart failure with reduced ejection fraction of ischaemic aetiology, in a warm and wet haemodynamic profile, precipitated by interruption of drugs and dietary salt, with no clinical evidence of an acute coronary event.",
+    differential: [
+      {
+        diagnosis: "Ischaemic cardiomyopathy with heart failure with reduced ejection fraction",
+        forIt:
+          "A documented anterior infarction that was never revascularised, a displaced diffuse apex with a third heart sound, and the expected Q waves in the anterior leads with poor R wave progression.",
+        againstIt:
+          "Nothing clinically, but the diagnosis must be confirmed by echocardiography showing a regional wall motion abnormality in the left anterior descending territory, and other causes can coexist.",
+      },
+      {
+        diagnosis: "Hypertensive heart disease with heart failure with preserved ejection fraction",
+        forIt:
+          "Ten years of hypertension with probable left ventricular hypertrophy can produce identical symptoms of congestion in a man of this age.",
+        againstIt:
+          "A previous infarction, a displaced hypodynamic apex and a third heart sound all point to systolic dysfunction; a forceful undisplaced apex with a fourth heart sound would have favoured preserved ejection fraction, and the echocardiogram settles it.",
+      },
+      {
+        diagnosis: "Rheumatic mitral regurgitation with secondary left ventricular failure",
+        forIt:
+          "An apical pansystolic murmur radiating to the axilla in an Indian adult always raises rheumatic heart disease, which still causes 10-15% of heart failure in Indian registries.",
+        againstIt:
+          "There is no history of rheumatic fever or a murmur before the infarction, the murmur is soft and appeared with the dilatation, and there is no loud first sound, opening snap or diastolic murmur; functional regurgitation from annular dilatation is far more likely, and leaflet morphology on echocardiography decides.",
+      },
+      {
+        diagnosis: "Chronic obstructive pulmonary disease with cor pulmonale",
+        forIt: "A former beedi smoker with exertional breathlessness, oedema and a raised jugular venous pressure.",
+        againstIt:
+          "Orthopnoea and paroxysmal nocturnal dyspnoea, a displaced left ventricular apex and a third heart sound favour left heart failure, and there is no wheeze, prolonged expiration or hyperinflation; spirometry can be done once he is euvolaemic because the two commonly coexist.",
+      },
+    ],
+    investigations: [
+      {
+        test: "12-lead electrocardiogram",
+        why: "To document the old infarction, the rhythm, the QRS duration and any left ventricular hypertrophy, and to exclude a new ischaemic event or atrial fibrillation as the precipitant.",
+        expected:
+          "Q waves in V1-V4 with poor R wave progression, sinus tachycardia, possible left bundle branch block, and no new ST elevation; a QRS of 150 ms or more with left bundle branch block flags him for resynchronisation therapy later.",
+      },
+      {
+        test: "Chest radiograph, postero-anterior view",
+        why: "To confirm cardiomegaly and pulmonary venous congestion and to exclude pneumonia or a large effusion as the precipitant or the alternative.",
+        expected:
+          "Cardiothoracic ratio above 0.5, upper lobe venous diversion, Kerley B lines at the costophrenic angles, and a small right-sided pleural effusion.",
+      },
+      {
+        test: "Transthoracic echocardiography",
+        why: "The single test that confirms the diagnosis, gives the ejection fraction on which every drug and device decision rests, and defines the aetiology.",
+        expected:
+          "Left ventricular ejection fraction of 30-35% with a dilated ventricle, akinesia of the anterior wall and apex in the left anterior descending territory, functional mitral regurgitation, a dilated left atrium, an estimated pulmonary artery systolic pressure of 40-50 mmHg, and no apical thrombus or aneurysm.",
+      },
+      {
+        test: "NT-proBNP",
+        why: "To support the diagnosis if the clinical picture were doubtful and to give a baseline for prognosis; it is a rule-out test rather than a rule-in test.",
+        expected: "Well above 1000 pg/mL in this degree of congestion; a value under 125 pg/mL in a non-acute presentation would have made heart failure very unlikely.",
+      },
+      {
+        test: "Haemoglobin, serum creatinine with eGFR, sodium and potassium",
+        why: "Anaemia is a treatable precipitant, renal function and potassium decide the safety and dose of the renin-angiotensin blocker, the mineralocorticoid antagonist and the SGLT2 inhibitor, and hyponatraemia marks severity.",
+        expected: "Haemoglobin 10-11 g/dL from iron deficiency, creatinine 1.2-1.5 mg/dL with an eGFR of 50-60 mL/min/1.73 m2, potassium 4.0-4.8 mmol/L, and mild hyponatraemia if the failure is advanced.",
+      },
+      {
+        test: "HbA1c, fasting lipid profile, thyroid stimulating hormone and liver function tests",
+        why: "To grade the diabetes and the statin response, to exclude thyroid disease as a precipitant, and to detect congestive hepatopathy before drugs are dosed.",
+        expected: "HbA1c 8-9% after the interruption of treatment, LDL cholesterol above the secondary prevention target of 55 mg/dL, normal TSH, and a mildly raised bilirubin and transaminases from hepatic congestion.",
+      },
+      {
+        test: "Urine albumin-creatinine ratio and iron studies",
+        why: "Albuminuria stages the diabetic kidney disease that shares the renin-angiotensin blocker, and a ferritin under 100 ng/mL or a transferrin saturation under 20% identifies iron deficiency, which responds to intravenous iron with fewer heart failure admissions.",
+        expected: "Moderately increased albuminuria of 30-300 mg/g, ferritin under 100 ng/mL and transferrin saturation under 20%.",
+      },
+      {
+        test: "Coronary angiography, by referral once euvolaemic",
+        why: "To define the extent of coronary disease and, with viability assessment, to decide whether revascularisation would improve survival in a man whose infarction was never studied.",
+        expected: "An occluded proximal left anterior descending artery with possible disease in other vessels; the finding decides between bypass grafting, angioplasty and medical therapy alone.",
+      },
+    ],
+    management: [
+      {
+        heading: "Immediate priorities at this visit",
+        points: [
+          "He is congested but not in extremis - no resting dyspnoea, hypotension, hypoxia or new ischaemia - so he can be treated as an outpatient with review within a week; admit if any of those appear.",
+          "Relieve congestion with furosemide 40 mg PO twice daily titrated to a target weight, or torsemide 10-20 mg once daily for its more reliable absorption in gut oedema; if oral diuretic fails, give 40 mg intravenously.",
+          "Salt under 5 g a day with pickle, papad and namkeen named specifically, fluid 1.5-2 L a day, daily weights on the same scale, and stop the NSAIDs from the chemist.",
+          "Check potassium and creatinine within a week of starting or restarting the renin-angiotensin blocker and again at 4 weeks.",
+        ],
+      },
+      {
+        heading: "The four pillars of guideline-directed medical therapy",
+        points: [
+          "Pillar 1: sacubitril/valsartan 49/51 mg PO twice daily up-titrated to 97/103 mg twice daily, with a 36-hour washout after his ramipril to avoid angioedema; where cost prevents the ARNI, restart enalapril 2.5 mg twice daily and titrate to 10-20 mg twice daily.",
+          "Pillar 2: carvedilol 3.125 mg PO twice daily, started only once he is euvolaemic and doubled every 2 weeks to 25 mg twice daily, or bisoprolol 1.25 mg up to 10 mg once daily; his old metoprolol tartrate is not an evidence-based heart failure beta-blocker.",
+          "Pillar 3: spironolactone 25 mg PO once daily with potassium and creatinine at 1 and 4 weeks and then 3-monthly, stopping it if potassium exceeds 5.5 mmol/L or the eGFR falls below 30 mL/min/1.73 m2.",
+          "Pillar 4: dapagliflozin 10 mg PO once daily from the first week, which also counts towards his diabetes treatment, with counselling on genital hygiene and sick-day rules.",
+          "Continue aspirin 75 mg and increase atorvastatin to 80 mg for secondary prevention, and remember that diuretics make him feel better while the four pillars make him live longer - he must never go home on furosemide alone.",
+        ],
+      },
+      {
+        heading: "Treating the comorbidities and the precipitant",
+        points: [
+          "Diabetes: continue metformin while the eGFR is above 30 mL/min/1.73 m2, keep the SGLT2 inhibitor, and avoid pioglitazone and saxagliptin, which worsen heart failure; aim for an HbA1c around 7-7.5% without hypoglycaemia in a man who works in the field.",
+          "Iron deficiency: intravenous ferric carboxymaltose 500-1000 mg improves symptoms and reduces heart failure admissions; oral iron does not work in heart failure.",
+          "Blood pressure is controlled by the pillars themselves to below 130/80 mmHg; if a further agent is needed, amlodipine is the only calcium channel blocker that is safe.",
+          "Confirm he has stopped tobacco, advise complete abstinence from alcohol, and give the influenza vaccine annually and the pneumococcal vaccine once.",
+        ],
+      },
+      {
+        heading: "Referral, revascularisation and devices",
+        points: [
+          "Refer to a cardiologist for coronary angiography under PM-JAY, since revascularisation of viable myocardium in ischaemic cardiomyopathy improves survival in the long term.",
+          "Reassess the ejection fraction after 3 months of optimised therapy: if it remains 35% or less in NYHA class II-III, more than 40 days after the infarction and with an expected survival of over a year, he qualifies for an implantable cardioverter-defibrillator.",
+          "If the ECG shows left bundle branch block with a QRS of 150 ms or more, cardiac resynchronisation therapy is added; both devices are expensive and their availability under insurance is variable, which must be discussed honestly.",
+          "Advanced therapies are unrealistic here, so a candid conversation about prognosis begins early rather than at the first NYHA class IV admission.",
+        ],
+      },
+      {
+        heading: "Self-management, follow-up and the family",
+        points: [
+          "A written action plan: weigh daily, and if the weight rises by 2 kg in 3 days or breathlessness returns, take an extra dose of furosemide and come to the clinic the same day.",
+          "Register him at the NP-NCD clinic for free drugs and a fixed follow-up date, and give a drug card listing each tablet by colour and time, checked by the wife.",
+          "Review every 2 weeks during up-titration with pulse, blood pressure, weight, potassium and creatinine, then 3-monthly with an annual echocardiogram, HbA1c, lipid profile, urine albumin, fundus and foot examination.",
+          "Screen the household for hypertension and diabetes, counsel the wife about cooking with less salt for the whole family, and involve the ASHA for adherence visits.",
+          "Encourage graded walking to 30 minutes a day once euvolaemic, and advise against heavy field work in the heat until the beta-blocker dose is settled.",
+        ],
+      },
+    ],
+    viva: [
+      {
+        q: "How is heart failure classified by ejection fraction and why does the classification matter?",
+        a: "Heart failure with reduced ejection fraction is 40% or less, mildly reduced is 41-49%, and preserved is 50% or more. It matters because the mortality benefit of the ARNI or ACE inhibitor, the beta-blocker and the mineralocorticoid antagonist is proven only in reduced ejection fraction, whereas SGLT2 inhibitors reduce hospitalisation across the whole range.",
+      },
+      {
+        q: "Which drugs reduce mortality in this patient and which only relieve symptoms?",
+        a: "Sacubitril/valsartan or an ACE inhibitor, one of the three proven beta-blockers, spironolactone or eplerenone, and dapagliflozin or empagliflozin all reduce mortality. Loop diuretics and digoxin relieve congestion and reduce admissions but do not reduce mortality, which is why the pillars must be added even when the diuretic has made him comfortable.",
+      },
+      {
+        q: "When would you start the beta-blocker and which would you choose?",
+        a: "Only when he is euvolaemic, never during decompensation, because the negative inotropy worsens congestion. Carvedilol 3.125 mg twice daily, bisoprolol 1.25 mg daily or metoprolol succinate 12.5-25 mg daily are the three with trial evidence; the dose is doubled every 2 weeks as tolerated, starting low and going slow, accepting a resting heart rate of 55-60 per minute.",
+      },
+      {
+        q: "The potassium is 5.8 mmol/L two weeks after starting spironolactone. What do you do?",
+        a: "Stop the spironolactone, since a potassium above 5.5 mmol/L is the threshold for withdrawal, look for contributors such as NSAIDs, potassium supplements, salt substitutes, dehydration and a rise in creatinine, keep the ARNI unless the potassium is 6 or more, and recheck in 3-5 days. Once the potassium is below 5.0 mmol/L it can be restarted at 12.5 mg daily with closer monitoring, because the mortality benefit is worth recovering.",
+      },
+      {
+        q: "Why is a 36-hour gap required between the last dose of ramipril and the first dose of sacubitril/valsartan?",
+        a: "Neprilysin degrades bradykinin, and so does angiotensin-converting enzyme; inhibiting both at once causes bradykinin accumulation and angioedema, which the OCTAVE and PARADIGM-HF programmes showed. Valsartan alone does not raise bradykinin, so the washout is only needed after an ACE inhibitor, not after an ARB.",
+      },
+      {
+        q: "State the Framingham criteria and how the diagnosis is made.",
+        a: "Major criteria are paroxysmal nocturnal dyspnoea, orthopnoea, raised jugular venous pressure, hepatojugular reflux, a third heart sound, crepitations, cardiomegaly on the radiograph, acute pulmonary oedema and weight loss of 4.5 kg or more in 5 days on treatment. Minor criteria are bilateral ankle oedema, nocturnal cough, dyspnoea on ordinary exertion, hepatomegaly, pleural effusion, a heart rate of 120 or more, and a fall in vital capacity by a third. Two major, or one major and two minor criteria, make the diagnosis.",
+      },
+      {
+        q: "Which commonly prescribed drugs must this man avoid?",
+        a: "NSAIDs and COX-2 inhibitors, which cause sodium retention and renal impairment; verapamil and diltiazem, which are negatively inotropic; pioglitazone, which causes fluid retention; saxagliptin, which increased heart failure admissions in SAVOR-TIMI; class I antiarrhythmics, dronedarone, corticosteroids, tricyclic antidepressants and cilostazol. Amlodipine is the only calcium channel blocker considered safe.",
+      },
+      {
+        q: "When would he need an implantable defibrillator, and what would you tell him about it?",
+        a: "If the ejection fraction remains 35% or less after at least 3 months of optimised medical therapy, in NYHA class II or III, more than 40 days after the infarction and with an expected survival of over a year in good functional status, a primary prevention defibrillator reduces sudden death. I would explain that it does not improve his breathlessness, that it may deliver shocks, that it costs several lakhs and may or may not be covered by his insurance, and that the medical therapy remains the foundation whether or not he receives it.",
+      },
+    ],
+    pitfalls: [
+      "Presenting the drug list without doses, and without separating what was prescribed from what he actually takes, so the precipitant is never identified.",
+      "Announcing a raised jugular venous pressure without measuring it in centimetres from the sternal angle or demonstrating the hepatojugular reflux when asked.",
+      "Calling the apical pansystolic murmur rheumatic without describing its grade, character and the absence of a loud first sound and diastolic murmur.",
+      "Planning to start carvedilol at this visit while he is still congested, or discharging him on furosemide alone with a review in 3 months.",
+      "Forgetting the diabetic foot and fundus in the examination and the urine albumin in the investigations, which are marked as part of the case.",
+      "Recommending an ARNI, a device and angiography without asking who will pay, which distance he must travel, and whether the family holds a PM-JAY card.",
+    ],
+    references: [
+      "ESC Guidelines for the diagnosis and treatment of acute and chronic heart failure, 2021, with the 2023 focused update",
+      "AHA/ACC/HFSA Guideline for the Management of Heart Failure, 2022",
+      "Cardiological Society of India position statement on the management of heart failure in India, Indian Heart Journal 2018",
+      "Trivandrum Heart Failure Registry, European Journal of Heart Failure 2015",
+      "Hutchison's Clinical Methods, 24th edition, 2018 - the cardiovascular system",
+      "API Textbook of Medicine, 11th edition, 2019 - heart failure",
+    ],
+  },
+  {
+    id: "cardiovascular-case-2",
+    title: "Short case: a mid-diastolic murmur at the apex in a young woman",
+    kind: "short",
+    subjectId: "cardiovascular",
+    opening:
+      "This 32-year-old woman, whom I was asked to examine for the cardiovascular system, has a regular pulse of 84 per minute of small volume, a normal jugular venous pressure, a tapping apex beat in the fifth left intercostal space within the mid-clavicular line, a loud first heart sound, an opening snap and a grade 3 low-pitched rumbling mid-diastolic murmur localised to the apex with presystolic accentuation, best heard with the bell in the left lateral position in expiration - findings of rheumatic mitral stenosis in sinus rhythm.",
+    minutes: 15,
+    frequency: "core",
+    sections: [
+      {
+        heading: "The general survey before touching the chest",
+        points: [
+          "Introduce yourself, take permission, expose the chest to the waist with a female attendant present, position the patient at 45 degrees, and use the first thirty seconds to look rather than to touch.",
+          "Note the build, dyspnoea at rest, the malar flush of mitral facies, pallor, central cyanosis, clubbing, and pedal oedema, each of which the examiner may ask you to comment on.",
+          "Look for scars that rewrite the case: a left thoracotomy scar of closed mitral valvotomy, a median sternotomy of valve replacement, and a groin puncture mark of a recent balloon valvotomy.",
+          "Observe the precordium from the foot of the bed for a visible apex, a visible left parasternal impulse and any pulsation in the second left space from a dilated pulmonary artery.",
+        ],
+      },
+      {
+        heading: "Pulse, blood pressure and jugular venous pressure",
+        points: [
+          "Count the radial pulse for a full minute and state the rhythm first, because an irregularly irregular pulse with a pulse deficit means atrial fibrillation, which abolishes presystolic accentuation and mandates anticoagulation.",
+          "Describe the volume, which is small in significant stenosis, and the character, and feel the femoral pulse for radio-femoral delay and all peripheral pulses for a previous embolus.",
+          "Record the blood pressure, which is usually normal or low, and note that a wide pulse pressure would raise the possibility of coexisting aortic regurgitation and an Austin Flint murmur.",
+          "Measure the jugular venous pressure at 45 degrees and describe the waveform: a prominent a wave indicates pulmonary hypertension in sinus rhythm, an absent a wave indicates atrial fibrillation, and a large v wave indicates tricuspid regurgitation.",
+        ],
+      },
+      {
+        heading: "Inspection and palpation of the precordium",
+        points: [
+          "Locate the apex beat by its position and character: in pure mitral stenosis it is not displaced, because the left ventricle is protected, and it is tapping, which is the palpable loud first heart sound.",
+          "Place the heel of the hand on the left sternal edge for a parasternal heave, which indicates right ventricular hypertrophy from pulmonary hypertension, and the fingertips over the second left space for a palpable pulmonary second sound.",
+          "Turn the patient to the left lateral position and palpate the apex with the flat of the fingers in expiration for a diastolic thrill, which is present in a minority but makes the murmur grade 4 when found.",
+          "A displaced, heaving apex means the lesion is not pure mitral stenosis - look for coexisting mitral or aortic regurgitation before proceeding.",
+        ],
+      },
+      {
+        heading: "Auscultation - describing the murmur in full",
+        points: [
+          "Time every sound and murmur against the carotid pulse, listen at all four areas with the diaphragm and then the bell, and finally listen at the apex with the bell in the left lateral position in held expiration, after a few sit-ups if the murmur is faint.",
+          "Describe the first heart sound as loud, the second as normally split with a loud pulmonary component if pulmonary hypertension is present, and the opening snap as a high-pitched sound after the second sound, best heard with the diaphragm medial to the apex.",
+          "Describe the murmur by its timing, site, radiation, character, grade, pitch and the manoeuvres that bring it out: a mid-diastolic, low-pitched rumbling murmur, localised to the apex without radiation, grade 3 on the diastolic scale of four, with presystolic accentuation from atrial systole that is present only in sinus rhythm.",
+          "Listen deliberately for the murmurs that accompany the diagnosis: a pansystolic murmur of tricuspid regurgitation at the lower left sternal edge that increases in inspiration, the early diastolic Graham Steell murmur of pulmonary regurgitation, and an apical pansystolic murmur that would indicate coexisting mitral regurgitation.",
+          "Finish at the lung bases for crepitations of pulmonary venous congestion and at the sacrum and ankles for oedema, and say that you would complete the examination with the abdomen for a pulsatile liver and the fundus.",
+        ],
+      },
+      {
+        heading: "Assessing severity and complications at the bedside",
+        points: [
+          "Severity is judged by the length of the murmur, which fills diastole when the stenosis is tight; by the interval between the second sound and the opening snap, which shortens to 0.04-0.06 seconds as the left atrial pressure rises; and by the signs of pulmonary hypertension - a loud pulmonary second sound, a parasternal heave and a prominent a wave.",
+          "A first heart sound that has become soft and an opening snap that has disappeared suggest a calcified immobile valve, which changes the choice from balloon valvotomy to valve replacement.",
+          "Look for the complications that decide management: atrial fibrillation, a previous embolic stroke with hemiparesis, the signs of right heart failure with a raised venous pressure, hepatomegaly and oedema, and hoarseness from left recurrent laryngeal nerve compression by the enlarged left atrium.",
+          "Ask, if permitted, three questions that change the plan: exertional breathlessness and its class, any haemoptysis, and whether she is pregnant or planning a pregnancy.",
+        ],
+      },
+      {
+        heading: "Presenting the findings and the diagnosis",
+        points: [
+          "Present in the order of examination: the general survey, the pulse and venous pressure, the apex and parasternal findings, the heart sounds, the murmur in full, and the relevant negatives, without repeating anything.",
+          "State the diagnosis as a lesion with its aetiology, severity, rhythm, complications and functional class: 'moderate to severe rheumatic mitral stenosis in sinus rhythm, with early pulmonary hypertension, without heart failure or embolic complications, in NYHA class II.'",
+          "Give the aetiology as rheumatic with confidence, because in India over 95% of mitral stenosis is rheumatic, and mention the alternatives you have excluded in one sentence.",
+          "Offer the next step unprompted - a 12-lead ECG and a transthoracic echocardiogram to confirm the lesion, measure the valve area and score the valve for balloon valvotomy - because a short case is marked on the plan as much as on the signs.",
+        ],
+      },
+    ],
+    summaryStatement:
+      "This 32-year-old woman has the clinical features of isolated mitral stenosis of rheumatic aetiology - a tapping undisplaced apex, a loud first heart sound, an opening snap and a long low-pitched mid-diastolic murmur with presystolic accentuation - in sinus rhythm, with a short second sound-to-opening snap interval and a loud pulmonary second sound suggesting moderate-to-severe stenosis with early pulmonary hypertension, without atrial fibrillation, heart failure or evidence of embolism, in NYHA class II.",
+    differential: [
+      {
+        diagnosis: "Rheumatic mitral stenosis",
+        forIt:
+          "A young Indian woman with a loud first heart sound, an opening snap and a localised rumbling mid-diastolic murmur with presystolic accentuation at an undisplaced tapping apex.",
+        againstIt:
+          "Nothing at the bedside; echocardiography confirms the diagnosis by showing commissural fusion and doming of the anterior leaflet, and excludes the mimics below.",
+      },
+      {
+        diagnosis: "Left atrial myxoma",
+        forIt:
+          "A myxoma prolapsing through the mitral valve produces an apical mid-diastolic murmur with a loud first sound, and can present with breathlessness, embolism and constitutional symptoms in a young woman.",
+        againstIt:
+          "The murmur of a myxoma varies with posture and there is a tumour plop rather than an opening snap, often with fever, weight loss and a raised ESR; her murmur is constant and the echocardiogram would show a mobile mass rather than a stenosed valve.",
+      },
+      {
+        diagnosis: "Austin Flint murmur of severe aortic regurgitation",
+        forIt: "An apical low-pitched mid-diastolic murmur in a patient who may also have rheumatic aortic valve disease.",
+        againstIt:
+          "There is no early diastolic murmur at the left sternal edge, the pulse pressure is not wide, the apex is not displaced, the first heart sound is loud rather than soft, and an opening snap is present, none of which occur with an Austin Flint murmur.",
+      },
+      {
+        diagnosis: "Flow murmur across a normal mitral valve in severe mitral regurgitation or a large left-to-right shunt",
+        forIt: "A short apical mid-diastolic rumble follows a large diastolic flow across the valve in severe mitral regurgitation, a ventricular septal defect or a patent ductus.",
+        againstIt:
+          "A flow murmur is short, follows a third heart sound rather than an opening snap, accompanies a pansystolic or continuous murmur and a soft first sound, and comes with a displaced hyperdynamic apex, all of which are absent.",
+      },
+    ],
+    investigations: [
+      {
+        test: "12-lead electrocardiogram",
+        why: "To confirm sinus rhythm or detect atrial fibrillation, and to show left atrial enlargement and right ventricular strain from pulmonary hypertension.",
+        expected:
+          "P mitrale - a broad, notched P wave of 0.12 seconds or more in lead II with a deep terminal negative component in V1 - with right axis deviation and right ventricular hypertrophy if pulmonary hypertension has developed.",
+      },
+      {
+        test: "Chest radiograph, postero-anterior view",
+        why: "To show the enlarged left atrium and the pulmonary venous and arterial changes that grade the haemodynamic burden, and to exclude pulmonary oedema.",
+        expected:
+          "Straightening of the left heart border from the enlarged left atrial appendage, a double contour behind the right heart border, splaying of the carina, prominent upper lobe veins, Kerley B lines, a prominent pulmonary conus and a normal-sized left ventricle.",
+      },
+      {
+        test: "Transthoracic echocardiography with Doppler",
+        why: "The definitive investigation: it confirms the rheumatic morphology, measures the valve area and gradient, estimates pulmonary pressure, scores the valve for balloon valvotomy and looks for coexisting lesions.",
+        expected:
+          "Thickened leaflets with commissural fusion and diastolic doming of the anterior leaflet, a valve area of 1.0-1.5 cm2 by planimetry and pressure half-time, a mean gradient above 10 mmHg, a Wilkins score of 8 or less if the valve is pliable, a dilated left atrium, and an estimated pulmonary artery systolic pressure of 40-50 mmHg.",
+      },
+      {
+        test: "Transoesophageal echocardiography, before any intervention",
+        why: "To exclude a left atrial appendage thrombus, which is a contraindication to balloon valvotomy, and to grade any mitral regurgitation more accurately than the transthoracic study.",
+        expected: "No appendage thrombus and no more than mild mitral regurgitation in a patient suitable for balloon valvotomy.",
+      },
+      {
+        test: "Complete blood count, ESR, C-reactive protein and anti-streptolysin O titre",
+        why: "Anaemia worsens the symptoms of a fixed cardiac output and must be corrected; the inflammatory markers and ASO titre are relevant only if fever or joint symptoms raise the possibility of recurrent rheumatic activity.",
+        expected: "Normal or mildly reduced haemoglobin, and normal ESR, CRP and ASO titre in chronic inactive rheumatic heart disease.",
+      },
+      {
+        test: "Serum creatinine, liver function tests and baseline INR",
+        why: "Needed before warfarin if atrial fibrillation, a thrombus or a previous embolus makes anticoagulation necessary, and before contrast studies at intervention.",
+        expected: "Normal renal and liver function and an INR of 1.0 before treatment.",
+      },
+    ],
+    management: [
+      {
+        heading: "Secondary prophylaxis - the intervention that changes the natural history",
+        points: [
+          "Benzathine penicillin G 1.2 million units by deep intramuscular injection every 3 weeks, the interval recommended in India where the risk of recurrence is high, with 600,000 units for a patient under 27 kg.",
+          "For established rheumatic heart disease with residual valve disease, continue until the age of 40 years or for 10 years after the last attack, whichever is longer, and for life after valve surgery or in a patient with severe disease.",
+          "Penicillin V 250 mg orally twice daily is the alternative when injections are refused, and erythromycin 250 mg twice daily in genuine penicillin allergy, but adherence with tablets is far poorer.",
+          "Register her in the RHD registry of the district, give a card with the injection dates, and keep adrenaline at the injection site; a skin test is not required.",
+        ],
+      },
+      {
+        heading: "Medical treatment of symptoms and complications",
+        points: [
+          "A loop diuretic such as furosemide 20-40 mg daily relieves pulmonary congestion and oedema, with salt restriction.",
+          "A beta-blocker such as metoprolol 25-50 mg daily lengthens diastole and improves filling in symptomatic patients, particularly with exertional symptoms or a fast ventricular rate.",
+          "If atrial fibrillation develops, control the rate with a beta-blocker or digoxin and anticoagulate with warfarin to an INR of 2-3 irrespective of the CHA2DS2-VASc score; warfarin is also indicated in sinus rhythm if there is a left atrial thrombus or a previous embolus, and direct oral anticoagulants are contraindicated in moderate-to-severe rheumatic mitral stenosis.",
+          "Maintain dental hygiene and treat streptococcal pharyngitis promptly; routine antibiotic prophylaxis for dental procedures is no longer recommended for native rheumatic valves, and anaemia and thyrotoxicosis must be corrected because a fixed output tolerates neither.",
+        ],
+      },
+      {
+        heading: "Timing of intervention and referral",
+        points: [
+          "Refer for percutaneous transvenous mitral commissurotomy when the valve area is 1.5 cm2 or less and she is symptomatic, provided the Wilkins score is 8 or less, there is no left atrial thrombus and no more than mild mitral regurgitation.",
+          "Asymptomatic severe stenosis is also referred when there is pulmonary hypertension, new atrial fibrillation or a planned pregnancy, since these predict deterioration.",
+          "A calcified or heavily deformed valve, significant mitral regurgitation or an appendage thrombus that persists despite anticoagulation directs her to surgical valvotomy or mitral valve replacement instead.",
+          "Both the balloon procedure and valve surgery are covered under PM-JAY in empanelled hospitals, and the choice of a mechanical or bioprosthetic valve in a woman of childbearing age must be discussed with her before referral.",
+        ],
+      },
+      {
+        heading: "Pregnancy, contraception and the family",
+        points: [
+          "Counsel before conception: mitral stenosis worsens in the second trimester and at delivery as the heart rate and blood volume rise, and a valve area under 1.5 cm2 should ideally be relieved by balloon valvotomy before pregnancy.",
+          "Offer effective contraception until the valve is treated, avoiding oestrogen-containing methods if she has atrial fibrillation or a history of embolism, and warn that warfarin is teratogenic in the first trimester.",
+          "Ask about sore throats in the children at home, treat streptococcal pharyngitis in the household with a full course of penicillin, and reduce overcrowding where it can be influenced.",
+          "Explain in her own language that the injections prevent the valve from getting worse, involve the husband and the mother-in-law, and link her to the ASHA for injection reminders and to the nearest centre that stocks benzathine penicillin.",
+        ],
+      },
+    ],
+    viva: [
+      {
+        q: "Why is the first heart sound loud in mitral stenosis, and when does it become soft?",
+        a: "The raised left atrial pressure holds the leaflets wide open until the end of diastole, so ventricular contraction closes a mobile valve from a wide excursion with a loud snap. The sound becomes soft when the valve is heavily calcified and immobile or when there is significant coexisting mitral regurgitation, and both findings argue against balloon valvotomy.",
+      },
+      {
+        q: "What is the opening snap, and what does its timing tell you?",
+        a: "It is the sudden tensing of the stenosed but still pliable valve as it opens in early diastole, heard as a high-pitched sound after the second heart sound, best medial to the apex with the diaphragm. The interval from the aortic second sound to the snap shortens as left atrial pressure rises: 0.04-0.06 seconds indicates severe stenosis and over 0.1 seconds mild stenosis, and its disappearance suggests a calcified valve.",
+      },
+      {
+        q: "Why does presystolic accentuation disappear in atrial fibrillation?",
+        a: "Presystolic accentuation is produced by atrial contraction driving blood across the narrowed valve at the end of diastole. In atrial fibrillation there is no coordinated atrial systole, so the accentuation is lost, the murmur becomes shorter and more variable with the changing cycle lengths, and the a wave disappears from the venous pulse.",
+      },
+      {
+        q: "How do you grade the severity of mitral stenosis at the bedside and on echocardiography?",
+        a: "Clinically by the length of the murmur, the shortness of the second sound-to-opening snap interval and the signs of pulmonary hypertension. On echocardiography the normal valve area is 4-6 cm2; a valve area of 1.5 cm2 or less is severe and 1.0 cm2 or less very severe, with a mean gradient above 10 mmHg and a pressure half-time of 150 ms or more, and a pulmonary artery systolic pressure above 50 mmHg marks pulmonary hypertension.",
+      },
+      {
+        q: "State the revised Jones criteria as they apply to India.",
+        a: "India is a high-risk population. Major criteria are carditis including subclinical echocardiographic carditis, arthritis including monoarthritis or polyarthralgia, chorea, erythema marginatum and subcutaneous nodules. Minor criteria are fever of 38 degrees or more, ESR of 30 mm or more or CRP of 3 mg/dL or more, a prolonged PR interval and monoarthralgia. A first episode needs two major or one major and two minor criteria with evidence of a preceding streptococcal infection, and a recurrence can also be diagnosed with three minor criteria.",
+      },
+      {
+        q: "List the complications of mitral stenosis.",
+        a: "Atrial fibrillation, systemic embolism especially stroke, pulmonary hypertension with right heart failure and tricuspid regurgitation, pulmonary oedema, haemoptysis from ruptured bronchial veins, pulmonary oedema, bronchitis or pulmonary infarction, recurrent chest infection, infective endocarditis, hoarseness from left recurrent laryngeal nerve compression by the enlarged left atrium, dysphagia, and deterioration in pregnancy.",
+      },
+      {
+        q: "If she develops atrial fibrillation, which anticoagulant would you use and why not a direct oral anticoagulant?",
+        a: "Warfarin 2.5-5 mg daily titrated to an INR of 2-3, irrespective of her CHA2DS2-VASc score, because moderate-to-severe rheumatic mitral stenosis carries a very high embolic risk. Direct oral anticoagulants are contraindicated: the INVICTUS trial found more thromboembolic events and higher mortality with rivaroxaban than with a vitamin K antagonist in rheumatic heart disease with atrial fibrillation.",
+      },
+      {
+        q: "What are the indications for and contraindications to balloon mitral valvotomy?",
+        a: "It is indicated in symptomatic patients with a valve area of 1.5 cm2 or less and a pliable, non-calcified valve with a Wilkins score of 8 or less, and in asymptomatic severe stenosis with pulmonary hypertension, new atrial fibrillation or planned pregnancy. It is contraindicated by a left atrial thrombus, moderate or severe mitral regurgitation, heavy calcification particularly of both commissures, and coexisting severe aortic or tricuspid disease that needs surgery anyway.",
+      },
+    ],
+    pitfalls: [
+      "Auscultating only in the supine position with the diaphragm, and missing a murmur that is audible only with the bell in the left lateral position in expiration or after exercise.",
+      "Failing to time the murmur against the carotid pulse and calling a diastolic murmur systolic, which changes the entire diagnosis.",
+      "Labelling every apical mid-diastolic murmur as mitral stenosis without commenting on the first heart sound and the opening snap, and so missing an Austin Flint murmur or a flow murmur.",
+      "Not stating the rhythm, when atrial fibrillation decides the anticoagulation and explains the loss of presystolic accentuation.",
+      "Omitting the parasternal heave and the pulmonary second sound, and so presenting the lesion without any assessment of severity or pulmonary hypertension.",
+      "Recommending a direct oral anticoagulant, or forgetting secondary penicillin prophylaxis altogether in the management plan.",
+    ],
+    references: [
+      "WHO guideline on prevention and diagnosis of rheumatic fever and rheumatic heart disease, 2024",
+      "Revised Jones Criteria for the diagnosis of acute rheumatic fever, AHA Scientific Statement, Circulation 2015",
+      "ACC/AHA Guideline for the Management of Patients with Valvular Heart Disease, 2020",
+      "ESC/EACTS Guidelines for the management of valvular heart disease, 2021",
+      "Indian consensus guidelines on rheumatic fever and rheumatic heart disease (Saxena et al.), Indian Pediatrics 2008",
+      "INVICTUS trial (rivaroxaban versus vitamin K antagonist in rheumatic heart disease with AF), NEJM 2022",
+      "Hutchison's Clinical Methods, 24th edition, 2018 - the cardiovascular system",
+    ],
+  },
+];
+
+const subject: Subject = {
+  id: "cardiovascular",
+  title: "Cardiovascular",
+  blurb: "Hypertension, coronary disease, heart failure, atrial fibrillation, rheumatic heart disease and lipids.",
+  icon: "Heart",
+  papers: ["II"],
+  topics,
+  cases,
+};
+
+export default subject;

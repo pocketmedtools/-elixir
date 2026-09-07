@@ -3680,3 +3680,513 @@ topics.push({
     "DC Dutta's Textbook of Obstetrics, 9th edition, 2018 - normal and abnormal puerperium",
   ],
 });
+
+const cases: ClinicalCase[] = [
+  {
+    id: "obstetrics-case-1",
+    title: "Antenatal woman at 33 weeks with moderate anaemia and pre-eclampsia",
+    kind: "long",
+    subjectId: "obstetrics",
+    opening:
+      "A 24-year-old primigravida at 33 weeks and 2 days by a first-trimester scan, registered at 22 weeks, presents to the antenatal clinic with easy fatiguability and breathlessness on climbing one flight of stairs for 6 weeks and swelling of both feet for 2 weeks; her haemoglobin is 8.2 g/dL and her blood pressure 150/96 mmHg with 2+ proteinuria on dipstick.",
+    minutes: 30,
+    frequency: "core",
+    sections: [
+      {
+        heading: "How to open the presentation",
+        points: [
+          "Give the identifying data, the gestational age with the method of dating, the gravidity and parity, and the presenting complaints in the order the woman gave them, each with its duration, before any detail - the first thirty seconds tell the examiner whether you have a picture of the case or a pile of facts.",
+          "Say: 'Mrs X, a 24-year-old homemaker from a village 30 km from the district hospital, primigravida at 33 weeks and 2 days by a 9-week scan, registered late at 22 weeks, presents with easy fatiguability and breathlessness on moderate exertion for 6 weeks and bilateral pedal swelling for 2 weeks, and was found at this visit to have a haemoglobin of 8.2 g/dL and a blood pressure of 150/96 mmHg with 2+ proteinuria.'",
+          "Add the negatives that matter at once: no headache, no blurring of vision, no epigastric pain, no vomiting, no reduced fetal movements, no bleeding or leaking per vaginum, no orthopnoea, no palpitations and no fever.",
+          "State the current treatment honestly, because it changes the plan: one iron-folic acid tablet daily since 22 weeks taken on perhaps half the days because of nausea, calcium 500 mg twice daily, two doses of Td, and no antihypertensive.",
+        ],
+      },
+      {
+        heading: "History of the present pregnancy",
+        points: [
+          "Date the pregnancy properly: the first day of the last menstrual period, the regularity of cycles, contraceptive use before conception, and the crown-rump length on the first scan, stating that the scan date is used when it differs from the menstrual date by more than 7 days.",
+          "Describe the antenatal care she has actually received - the number of visits, whether the MCP card has weights and blood pressures at each, what investigations were done at registration and their results, and whether she was seen on a PMSMA day by a specialist.",
+          "Take the trimester-wise history: hyperemesis, bleeding or fever in the first trimester, the timing of quickening, the anomaly scan at 18-20 weeks, the DIPSI glucose test at 24-28 weeks and its value, and the pattern of weight gain.",
+          "Ask when the blood pressure was last known to be normal, because a normal reading recorded at 22 weeks is what separates pre-eclampsia from chronic hypertension when there is no pre-pregnancy record.",
+          "Cover fetal wellbeing in the mother's own terms: the daily pattern of fetal movements, any day on which movements seemed fewer, and whether she has been taught to count them.",
+        ],
+      },
+      {
+        heading: "History directed at the anaemia",
+        points: [
+          "Characterise the symptoms and their functional impact: fatigue, breathlessness graded by the activity that provokes it, palpitations, giddiness on standing, and whether she can still do her household work - decompensation is a clinical diagnosis and this is where it begins.",
+          "Look for the cause of iron deficiency: a diet of rice or chapati with little pulses or green leafy vegetables, tea with meals, pica for mud or raw rice, heavy menstrual bleeding before conception, previous anaemia, hookworm exposure from walking barefoot, and any history of malaria.",
+          "Ask about iron intake as it really happened: the number of tablets in the strip that are actually gone, gastric upset or black stools, the reason for stopping, and whether any injectable iron or transfusion has ever been given.",
+          "Enquire about features that point away from simple iron deficiency - jaundice, a family history of anaemia or thalassaemia, consanguinity, a previous child with anaemia, bleeding gums, glossitis or paraesthesiae suggesting folate or B12 deficiency, and chronic cough or fever suggesting tuberculosis.",
+          "Ask about the previous obstetric outcome, or in a primigravida the reproductive plans, because the interval to the next pregnancy is the main determinant of whether iron stores will ever be rebuilt.",
+        ],
+      },
+      {
+        heading: "History directed at the hypertension",
+        points: [
+          "Ask specifically for the symptoms of severe pre-eclampsia in the order they are dangerous: persistent frontal or occipital headache not relieved by rest, blurring of vision or flashes of light, epigastric or right hypochondrial pain, vomiting, breathlessness at rest, and a fall in urine output.",
+          "Establish the onset and progression of the oedema - feet only, or also the face and fingers on waking, and whether rings have become tight - while stating that oedema itself is no longer a diagnostic criterion.",
+          "Search for risk factors: first pregnancy, family history of pre-eclampsia in the mother or sister, chronic hypertension, renal disease, diabetes, obesity, a pregnancy interval over 10 years, multiple pregnancy, and an autoimmune disorder.",
+          "Ask about renal or urinary symptoms - dysuria, frequency, flank pain and previous urinary infection - because a urinary tract infection is the commonest reason for a false-positive proteinuria in the clinic.",
+          "Record any drugs taken for the swelling from a chemist, especially diuretics or non-steroidal analgesics, and whether she was ever advised aspirin or additional calcium.",
+        ],
+      },
+      {
+        heading: "Past, menstrual, family and socio-economic history",
+        points: [
+          "Past history of hypertension, renal disease, diabetes, tuberculosis, rheumatic fever, blood transfusion and any surgery, and the menstrual history with the age at menarche and the cycle before conception.",
+          "Family history of hypertension, pre-eclampsia, diabetes, thalassaemia and twins, and whether the parents or siblings are known to have early cardiovascular disease.",
+          "Socio-economic history in usable terms: the husband's occupation and income, the family's food security, the distance and transport to the nearest facility with blood and an operating theatre, and who will decide about admission when it is advised.",
+          "Ask what she and the family believe about the swelling and the tiredness, and whether they expect a home delivery, because the birth plan you propose has to fit the family that will carry it out.",
+        ],
+      },
+      {
+        heading: "General and systemic examination to demonstrate",
+        points: [
+          "General survey: build and nutrition with height, pre-pregnancy and present weight, pallor graded in the lower palpebral conjunctiva, tongue and nail beds, koilonychia, glossitis, angular stomatitis, icterus, pedal and sacral oedema, and facial puffiness.",
+          "Vitals with the technique stated: pulse rate and volume, blood pressure in the sitting position with the arm at heart level using an appropriately sized cuff and Korotkoff V for the diastolic, repeated after 4 hours to satisfy the definition, respiratory rate and temperature.",
+          "Cardiovascular examination for the signs of decompensated anaemia and the signs that exclude it: the jugular venous pressure, a hyperdynamic apex, a soft ejection systolic flow murmur, a third heart sound, basal crepitations and tender hepatomegaly.",
+          "Fundus examination for the retinal arteriolar narrowing, haemorrhages and papilloedema of severe hypertension, and for the silver wiring and arteriovenous nipping that would point to chronic disease.",
+          "Deep tendon reflexes at the knee and the ankle for hyperreflexia and clonus, and a check for epigastric and right hypochondrial tenderness, stating that these are the signs of imminent eclampsia.",
+          "Urine examination at the bedside: a dipstick for protein on a clean-catch midstream sample, repeated on a second sample, with the result reported as the number of pluses and the specific gravity.",
+        ],
+      },
+      {
+        heading: "Obstetric examination and fetal assessment",
+        points: [
+          "Inspect the abdomen for the shape of the uterus, striae, the linea nigra, scars and fetal movements, then measure the symphysis-fundal height with the tape reversed - here 30 cm at 33 weeks, a lag of 3 cm that must be reported and interpreted.",
+          "Perform the Leopold manoeuvres in order - fundal grip, lateral grips, Pawlik's grip and the pelvic grip - and report a singleton fetus in longitudinal lie, cephalic presentation with the back on the left, head not engaged, with an estimated fetal weight and a clinically normal or reduced liquor volume.",
+          "Auscultate the fetal heart with a fetoscope or Doppler for a full minute at the anterior shoulder and report the rate and regularity, stating the normal range of 110-160 per minute.",
+          "State that a vaginal examination is not indicated at this visit in a woman who is not in labour and has no bleeding, and that a speculum examination would only be needed if she reported leaking.",
+          "Close the examination with the assessment of the pelvis deferred to term, the breasts examined for inverted nipples with antenatal breastfeeding counselling in mind, and the plan for a growth scan with Doppler stated before the examiner asks for it.",
+        ],
+      },
+    ],
+    summaryStatement:
+      "This is a 24-year-old primigravida at 33 weeks and 2 days of gestation, registered late, with a singleton live fetus in cephalic presentation, who has moderate anaemia of pregnancy with a haemoglobin of 8.2 g/dL, most probably from iron deficiency, on irregular oral iron and without cardiac decompensation, together with new-onset hypertension after 20 weeks with significant proteinuria consistent with pre-eclampsia without severe features at present, and a symphysis-fundal height lagging by 3 cm that raises the possibility of fetal growth restriction; she is a high-risk pregnancy needing admission, intravenous iron, oral antihypertensive therapy, antenatal corticosteroids, fetal surveillance and a planned delivery at a first referral unit with blood available.",
+    differential: [
+      {
+        diagnosis: "Pre-eclampsia without severe features complicating moderate iron deficiency anaemia",
+        forIt:
+          "Primigravida, blood pressure of 150/96 mmHg first recorded after 20 weeks with a normal reading at 22 weeks, 2+ proteinuria on two samples, fresh oedema of feet and face, and a microcytic hypochromic anaemia with a low ferritin in a woman on erratic oral iron.",
+        againstIt:
+          "Nothing clinically against it; severe features are absent only until the platelet count, transaminases and creatinine are seen, and the diagnosis must be reviewed at every visit because it progresses.",
+      },
+      {
+        diagnosis: "Chronic hypertension with superimposed pre-eclampsia",
+        forIt:
+          "Late registration means there is no first-trimester blood pressure, and chronic hypertension is frequently unmasked for the first time in pregnancy.",
+        againstIt:
+          "A documented blood pressure of 110/70 mmHg at 22 weeks, no family history of early hypertension, no retinal changes of chronic disease and no left ventricular hypertrophy on examination; a persistently raised blood pressure beyond 12 weeks postpartum would reopen the question.",
+      },
+      {
+        diagnosis: "Anaemia from a cause other than iron deficiency - dimorphic anaemia, thalassaemia trait or hookworm and malaria in an endemic area",
+        forIt:
+          "A predominantly cereal diet with little animal protein and green vegetables can produce combined iron and folate deficiency, and a microcytic anaemia that does not respond to iron in an Indian woman is thalassaemia trait until proved otherwise.",
+        againstIt:
+          "No jaundice, no splenomegaly, no family history of anaemia or consanguinity, a red cell distribution width above 15% and a Mentzer index above 13 favour iron deficiency; a ferritin below 30 microgram/L confirms it, and HbA2 electrophoresis is reserved for the woman whose indices do not fit.",
+      },
+      {
+        diagnosis: "Heart disease in pregnancy - rheumatic mitral stenosis or peripartum cardiomyopathy - as the cause of the breathlessness and oedema",
+        forIt:
+          "Exertional breathlessness and bilateral pedal oedema in the third trimester, and rheumatic heart disease remains a leading cause of maternal death from indirect causes in India.",
+        againstIt:
+          "No orthopnoea or paroxysmal nocturnal dyspnoea, a normal jugular venous pressure, a soft ejection systolic flow murmur without a diastolic murmur or a loud first heart sound, no third heart sound and clear lung bases; an echocardiogram is warranted only if any of these appear.",
+      },
+    ],
+    investigations: [
+      {
+        test: "Haemoglobin, complete blood count with red cell indices, red cell distribution width, reticulocyte count and peripheral smear",
+        why: "To grade the anaemia, to characterise it as microcytic hypochromic and to obtain the platelet count that the pre-eclampsia work-up also needs in the same sample.",
+        expected: "Haemoglobin 8.2 g/dL, MCV below 80 fL, MCH below 27 pg, RDW above 15%, a smear with microcytosis, hypochromia and pencil cells, and a platelet count above 150,000/microlitre.",
+      },
+      {
+        test: "Serum ferritin, with HbA2 electrophoresis if the Mentzer index is below 13",
+        why: "Ferritin is the most specific single test of iron stores and settles the choice of intravenous iron; electrophoresis is needed only when the indices suggest thalassaemia trait, because iron given to a thalassaemic woman with full stores does harm.",
+        expected: "Ferritin below 30 microgram/L, and below 15 microgram/L in most such women; the value is falsely raised by infection or inflammation, so interpret it with the C-reactive protein.",
+      },
+      {
+        test: "Urine protein-creatinine ratio on a spot sample or a 24-hour urinary protein, with urine microscopy and culture",
+        why: "To convert the dipstick into a quantified proteinuria that satisfies the definition of pre-eclampsia, and to exclude a urinary infection as the cause of the protein.",
+        expected: "A protein-creatinine ratio of 0.3 or more, equivalent to 300 mg or more of protein in 24 hours, with a sterile culture and no pus cells.",
+      },
+      {
+        test: "Platelet count, AST and ALT, serum creatinine, serum uric acid, LDH and serum bilirubin",
+        why: "To look for the laboratory severe features and for HELLP syndrome, which may be present before any symptom, and to obtain a baseline for the twice-weekly monitoring that follows.",
+        expected: "Platelets above 100,000/microlitre, transaminases below twice the upper limit, creatinine below 1.1 mg/dL and a uric acid that is often raised above 5.5 mg/dL; any severe value changes the diagnosis and the timing of delivery.",
+      },
+      {
+        test: "Obstetric ultrasound with fetal biometry, estimated fetal weight, amniotic fluid index, placental localisation and umbilical artery Doppler",
+        why: "The 3 cm lag in fundal height in a woman with pre-eclampsia demands an objective assessment for fetal growth restriction and placental insufficiency.",
+        expected: "An estimated fetal weight below the 10th centile with a raised umbilical artery pulsatility index or absent end-diastolic flow would establish growth restriction and bring delivery forward; normal biometry and a normal Doppler allow expectant management to 37 weeks.",
+      },
+      {
+        test: "Non-stress test by cardiotocography, repeated twice weekly",
+        why: "To document fetal wellbeing now and to follow it during expectant management, with a daily fetal movement count between tests.",
+        expected: "A reactive trace - a baseline of 110-160 per minute with at least two accelerations of 15 beats lasting 15 seconds in 20 minutes - and no decelerations.",
+      },
+      {
+        test: "Blood grouping and Rh typing, cross-matching of two units of packed red cells, and the HIV, HBsAg and VDRL tests if not already recorded on the MCP card",
+        why: "A woman with anaemia and pre-eclampsia is at high risk of abruption and postpartum haemorrhage and tolerates blood loss badly; blood must be arranged before delivery, not after it starts.",
+        expected: "Group and cross-match ready at the facility of planned delivery; the infection screen is usually negative but a positive result changes the delivery plan and the newborn's care.",
+      },
+      {
+        test: "Stool examination for hookworm ova, a malaria rapid test where endemic, and the DIPSI 75 g glucose test if it was not done at 24-28 weeks",
+        why: "To find the treatable causes of blood loss and haemolysis behind the anaemia, and to complete the screening that late registration may have missed.",
+        expected: "Hookworm ova in a barefoot rural woman, a negative malaria test, and a 2-hour plasma glucose below 140 mg/dL; a value of 140 mg/dL or more would add gestational diabetes to the problem list.",
+      },
+    ],
+    management: [
+      {
+        heading: "Immediate decisions at the table",
+        points: [
+          "**Admit her** - moderate anaemia beyond 12 weeks and pre-eclampsia at 33 weeks are each an indication for care at a first referral unit or district hospital, and together they place her firmly in the high-risk register on the MCP card.",
+          "Four-hourly blood pressure, daily weight and urine protein, a symptom check for headache, visual disturbance and epigastric pain at every round, a daily fetal movement count, and twice-weekly platelets, transaminases and creatinine.",
+          "Give **antenatal corticosteroids now** - betamethasone 12 mg intramuscularly, two doses 24 hours apart, or dexamethasone 6 mg intramuscularly 12-hourly for four doses - because she is between 24 and 34 weeks and may need delivery within days.",
+          "Explain to the woman and her husband in plain words that the pregnancy is now high-risk, that delivery will be planned in hospital at or before 37 weeks, and that she should report a headache, blurring of vision, pain under the ribs or reduced fetal movements immediately, at any hour.",
+        ],
+      },
+      {
+        heading: "Controlling the blood pressure",
+        points: [
+          "Treat because the blood pressure is 140/90 mmHg or more, aiming for 135/85 mmHg: **oral labetalol 100 mg twice daily**, increased every 2-3 days to a maximum of 800 mg three times daily, or **nifedipine retard 10-20 mg twice or three times daily** to a maximum of 120 mg per day; methyldopa 250 mg three times daily is the third option and is stopped after delivery.",
+          "If the blood pressure reaches **160/110 mmHg or more, treat within 30-60 minutes**: nifedipine immediate-release 10 mg orally, repeated every 20-30 minutes for up to 3-5 doses, or labetalol 20 mg intravenously over 2 minutes, then 40 mg after 10 minutes, then 80 mg every 10 minutes to a cumulative maximum of 300 mg, or hydralazine 5 mg intravenously over 5 minutes repeated every 20 minutes to 20-30 mg.",
+          "Severe hypertension, or any severe feature, is also the indication for **magnesium sulphate by the Pritchard regimen** - 4 g of 20% solution intravenously over 5 minutes plus 10 g of 50% solution deep intramuscularly, then 5 g intramuscularly 4-hourly - with calcium gluconate 1 g at the bedside.",
+          "**Never give nifedipine sublingually** and never give ergometrine to this woman at delivery; angiotensin-converting enzyme inhibitors, angiotensin receptor blockers, atenolol and diuretics have no place in her treatment.",
+          "Aspirin is not started now - its role is prevention from 12-16 weeks - but it is written into the plan for her next pregnancy; calcium 500 mg twice daily continues, taken at a different time from the iron.",
+        ],
+      },
+      {
+        heading: "Correcting the anaemia",
+        points: [
+          "Moderate anaemia at 33 weeks is an indication for **intravenous iron, not another prescription of tablets**: there are not enough weeks left for oral iron to rebuild the haemoglobin before delivery.",
+          "Calculate the deficit: iron deficit (mg) = 2.4 x body weight (kg) x (target haemoglobin - actual haemoglobin) + 500 mg for stores; for her 52 kg and a target of 11 g/dL this is 2.4 x 52 x 2.8 + 500, about 850 mg, rounded to 1000 mg.",
+          "Give **iron sucrose 200 mg in 100 mL normal saline over 15-30 minutes on alternate days, five infusions, not exceeding 600 mg in a week**, with the woman observed for 30 minutes after each dose and adrenaline 0.5 mg intramuscular available; or **ferric carboxymaltose 1000 mg in 250 mL normal saline over 15-30 minutes as a single infusion** if she cannot come back repeatedly.",
+          "Give albendazole 400 mg as a single dose if it has not been given this pregnancy, treat malaria if the test is positive, and continue folic acid; once the intravenous course is complete, restart one IFA tablet daily and continue it for 180 days after delivery.",
+          "Recheck the haemoglobin 2 weeks after the last infusion expecting a rise of at least 1 g/dL; transfusion of packed cells is reserved for a haemoglobin below 7 g/dL after 34 weeks, below 5 g/dL at any gestation, or any decompensation, given slowly with furosemide 20 mg intravenously between units.",
+        ],
+      },
+      {
+        heading: "Fetal surveillance and the timing of delivery",
+        points: [
+          "Daily fetal movement counting, a non-stress test twice weekly, and a growth scan with umbilical artery Doppler every 2 weeks, or weekly if the estimated fetal weight is below the 10th centile.",
+          "**Deliver at 37 weeks if she remains without severe features**; deliver at 34 weeks or immediately, after stabilisation, if severe features develop, if there is growth restriction with absent or reversed end-diastolic flow, eclampsia, HELLP, abruption or a non-reassuring fetal status.",
+          "Plan an induced vaginal delivery with cervical ripening; caesarean section is for obstetric indications only, and a woman with a haemoglobin under 10 g/dL who needs surgery should have blood cross-matched and available in the theatre.",
+          "In labour: continuous or half-hourly fetal heart monitoring, blood pressure hourly, magnesium sulphate if severe features are present, restricted intravenous fluids at 80 mL per hour to avoid pulmonary oedema, a shortened second stage if the pressure is uncontrolled, and **active management of the third stage with oxytocin 10 units intramuscularly - not ergometrine.**",
+          "Keep two units of packed cells ready, treat the third stage as the moment of highest risk in an anaemic heart, and manage any postpartum haemorrhage aggressively and early because she has no reserve.",
+        ],
+      },
+      {
+        heading: "Postpartum care, contraception and the next pregnancy",
+        points: [
+          "Continue magnesium sulphate for 24 hours after delivery if it was started, check the blood pressure 4-hourly for 72 hours and again at day 7-10, and continue labetalol or nifedipine, both compatible with breastfeeding, tapering as the pressure settles over the following weeks.",
+          "Continue one IFA tablet daily for 180 days postpartum, recheck the haemoglobin at 6 weeks, and treat the whole household under Anemia Mukt Bharat, screening the adolescent sisters and the mother-in-law who cooks.",
+          "Contraception must respect the hypertension: a postpartum intrauterine device within 48 hours or at 6 weeks, or a progestogen-only method, with the combined pill avoided while the blood pressure remains raised (WHO MEC category 3 or 4) and delayed anyway until 6 months in a breastfeeding woman.",
+          "Counsel on the 15-20% recurrence risk of pre-eclampsia, the need for aspirin 75-150 mg at night from 12-16 weeks in the next pregnancy, a birth interval of at least 2 years with iron stores rebuilt first, and the lifelong doubling of cardiovascular risk that warrants an annual blood pressure, glucose and lipid check.",
+          "Complete the MCP card, the discharge summary and the ASHA's home visit schedule, and fix the date of the 6-week postnatal visit before she leaves.",
+        ],
+      },
+    ],
+    viva: [
+      {
+        q: "Why do you call this a high-risk pregnancy, and where should she deliver?",
+        a: "She has two conditions that each raise maternal mortality - pre-eclampsia and moderate anaemia - and they compound each other: anaemia leaves no reserve for the haemorrhage that hypertensive disease and abruption make more likely, and a stiff hypertensive circulation tolerates transfusion poorly. She must deliver at a first referral unit with blood, a caesarean facility and magnesium sulphate, and the referral must be made now, while she is stable, under JSSK transport.",
+      },
+      {
+        q: "Why intravenous iron rather than oral tablets, and how do you calculate the dose?",
+        a: "Oral iron raises haemoglobin by about 1 g/dL every 2-3 weeks at best, and she has taken it unreliably; at 33 weeks with a haemoglobin of 8.2 g/dL there is not enough time before delivery. Iron deficit in mg = 2.4 x weight in kg x (target Hb - actual Hb) + 500 mg for stores, which for 52 kg and a target of 11 g/dL is about 850 mg, given as 1000 mg of iron sucrose in five infusions of 200 mg on alternate days, or as a single 1000 mg ferric carboxymaltose infusion.",
+      },
+      {
+        q: "What are the severe features of pre-eclampsia, and what changes if she develops one?",
+        a: "Systolic 160 mmHg or more or diastolic 110 mmHg or more, platelets below 100,000/microlitre, transaminases twice normal, creatinine above 1.1 mg/dL, pulmonary oedema, or new cerebral or visual symptoms. Any one of them means magnesium sulphate for seizure prophylaxis, urgent control of blood pressure within 30-60 minutes, and delivery at 34 weeks or immediately after stabilisation instead of waiting for 37 weeks.",
+      },
+      {
+        q: "Which antihypertensives are safe in pregnancy, and which are contraindicated?",
+        a: "Labetalol, nifedipine and methyldopa are the oral drugs, with intravenous labetalol and hydralazine for severe hypertension. Angiotensin-converting enzyme inhibitors and angiotensin receptor blockers are contraindicated because of fetal renal failure, oligohydramnios and skull hypoplasia; atenolol causes growth restriction, and diuretics deplete an already contracted plasma volume and are reserved for pulmonary oedema.",
+      },
+      {
+        q: "Why must ergometrine be avoided in the third stage for this woman?",
+        a: "Ergometrine is an alpha-agonist that causes intense vasoconstriction and a sudden rise in blood pressure, which in a pre-eclamptic woman can precipitate a hypertensive crisis, eclampsia, stroke or pulmonary oedema. Oxytocin 10 units intramuscularly is the uterotonic of choice, with misoprostol 600 microgram orally as the alternative where oxytocin is unavailable.",
+      },
+      {
+        q: "When will you deliver her and why not now?",
+        a: "At 37 weeks if she remains without severe features, because the fetus gains lung maturity and weight for every week beyond 33, while the risk to the mother is controllable with surveillance. Delivery is brought forward to 34 weeks or immediately for severe features, uncontrolled hypertension, HELLP, eclampsia, abruption, growth restriction with abnormal Doppler, or a non-reassuring fetal heart; the corticosteroids given today are the insurance for that possibility.",
+      },
+      {
+        q: "At which moments is an anaemic woman in greatest danger, and why?",
+        a: "The second stage, the third stage and the first postpartum day. Each contraction and the emptying of the uterus after delivery return 300-500 mL of blood into a circulation whose heart is already working at high output to compensate for low oxygen carriage, so a woman who has coped for months can go into failure within minutes of delivery; hence the shortened second stage, restricted fluids, slow transfusion with a diuretic and close observation for 24 hours.",
+      },
+      {
+        q: "What will you tell her about the next pregnancy and about her own future health?",
+        a: "Pre-eclampsia recurs in 15-20% of subsequent pregnancies, so she needs early registration, aspirin 75-150 mg at night from 12-16 weeks until 36 weeks, calcium, and a haemoglobin corrected before conception with a birth interval of at least 2 years. Her own risk of hypertension, ischaemic heart disease and stroke is doubled for life, so she should have her blood pressure, glucose and lipids checked every year - a task the family physician, not the obstetrician, will carry out.",
+      },
+    ],
+    pitfalls: [
+      "Writing another prescription of IFA tablets for a haemoglobin of 8.2 g/dL at 33 weeks: moderate anaemia beyond 12 weeks, and any anaemia after 30 weeks, is an indication for intravenous iron.",
+      "Calling the dipstick proteinuria 'significant' without quantifying it or excluding urinary infection, or in the other direction dismissing the case as gestational hypertension without checking the urine at all.",
+      "Attributing the breathlessness and oedema to pregnancy without examining the jugular venous pressure, the lung bases and the heart sounds - the examiner is waiting to hear that decompensation has been excluded.",
+      "Ignoring the 3 cm fundal height lag; a pre-eclamptic placenta produces growth restriction, and a growth scan with Doppler is part of the initial work-up, not an afterthought.",
+      "Giving nifedipine sublingually for a high reading, or allowing ergometrine to be given in the third stage because the delivery room routine uses it.",
+      "Forgetting antenatal corticosteroids at 33 weeks, or conversely delaying an indicated delivery to complete the steroid course in a woman who is deteriorating.",
+    ],
+    references: [
+      "Anemia Mukt Bharat Operational Guidelines, MoHFW, Government of India, 2018",
+      "FOGSI General Clinical Practice Recommendations on Management of Iron Deficiency Anaemia in Pregnancy, 2016",
+      "FOGSI-ICOG Good Clinical Practice Recommendations on Pre-eclampsia and Eclampsia, 2019",
+      "ACOG Practice Bulletin 222: Gestational Hypertension and Preeclampsia, 2020",
+      "Maternal Health Division, MoHFW - Guidelines for Management of Pregnancy Induced Hypertension including Eclampsia",
+      "Guidelines for Antenatal Care and Skilled Attendance at Birth by ANMs, LHVs and Staff Nurses, MoHFW, Government of India",
+      "Williams Obstetrics, 26th edition, 2022 - hypertensive disorders and haematological disorders",
+      "DC Dutta's Textbook of Obstetrics, 9th edition, 2018 - anaemia in pregnancy and hypertensive disorders",
+    ],
+  },
+  {
+    id: "obstetrics-case-2",
+    title: "OSCE: magnesium sulphate for severe pre-eclampsia - regimen, monitoring and antidote",
+    kind: "osce",
+    subjectId: "obstetrics",
+    opening:
+      "A 28-year-old G2P1 at 35 weeks is brought to a primary health centre with a blood pressure of 170/112 mmHg, a severe headache and blurring of vision for 3 hours; the station asks you to prescribe and prepare magnesium sulphate, state what you will monitor, and tell the nurse when to withhold a dose and what to give if toxicity occurs.",
+    minutes: 10,
+    frequency: "core",
+    sections: [
+      {
+        heading: "Reading the station and the first sixty seconds",
+        points: [
+          "State the diagnosis aloud before touching a vial: a blood pressure of 170/112 mmHg with headache and visual symptoms after 20 weeks is pre-eclampsia with severe features - imminent eclampsia - and the indication for magnesium sulphate is seizure prophylaxis, not treatment of a fit that has already happened.",
+          "Call for help, place the woman in the left lateral position on a bed with raised sides, secure an 18-gauge intravenous line, send blood for platelets, transaminases and creatinine, catheterise the bladder for an hourly urine chart, and dipstick the first urine for protein.",
+          "Tell the examiner that severe hypertension must be treated within 30-60 minutes alongside the magnesium, that a fetal heart rate is recorded, and that the referral ambulance is called at this point, because the loading dose is given here and the delivery happens at the first referral unit.",
+          "Check the vial: in India magnesium sulphate is supplied as a 50% solution, 1 g in 2 mL, in 2 mL ampoules or 10 mL vials, and say so - the whole station turns on converting grams to millilitres correctly.",
+        ],
+      },
+      {
+        heading: "Preparing and giving the Pritchard loading dose",
+        points: [
+          "The intravenous part: 4 g of a 20% solution over 5 minutes - draw 8 mL of the 50% solution (4 g) and add 12 mL of sterile water or normal saline to make 20 mL of 20%, and inject it slowly over not less than 5 minutes while talking to the woman and watching her breathing.",
+          "The intramuscular part: 10 g of the 50% solution - 20 mL - given as 5 g (10 mL) deep into the upper outer quadrant of each buttock with 1 mL of 2% lignocaine drawn into the same syringe, using a long 21-gauge needle, after aspirating to avoid a vessel.",
+          "State the total loading dose as 14 g - 4 g intravenous plus 10 g intramuscular - and record the time of each injection on the case sheet, because the first maintenance dose is due 4 hours from the intramuscular loading dose.",
+          "Explain the alternative in one sentence: the Zuspan regimen is 4 g of 20% intravenously over 15-20 minutes followed by an infusion of 1 g per hour, which needs an infusion pump and is therefore the hospital regimen, not the primary health centre one.",
+        ],
+      },
+      {
+        heading: "The maintenance dose and the three-point check before every dose",
+        points: [
+          "Maintenance is 5 g of the 50% solution - 10 mL - deep intramuscularly into alternate buttocks every 4 hours, continued for 24 hours after delivery or after the last convulsion, whichever is later.",
+          "Before each dose three things must be present: a respiratory rate of at least 16 per minute, a urine output of at least 30 mL per hour or 100 mL in the previous 4 hours, and a patellar reflex that can be elicited; if any one is absent the dose is withheld and the doctor is called.",
+          "Between doses the nurse records the blood pressure every 15 minutes until it is below 160/110 mmHg and then every 30 minutes, the respiratory rate and oxygen saturation hourly, the urine output hourly on the catheter chart, the patellar reflex 4-hourly, and the fetal heart every 30 minutes.",
+          "Say that magnesium is excreted by the kidney, so in a woman with oliguria or a creatinine above 1.1 mg/dL the maintenance dose is halved or omitted and a serum magnesium level is sent where the laboratory can do it.",
+        ],
+      },
+      {
+        heading: "Recognising toxicity and giving the antidote",
+        points: [
+          "Toxicity follows the serum level in order: the therapeutic range is 4-7 mEq/L, the patellar reflex disappears at 8-10 mEq/L, respiratory depression appears at about 12 mEq/L and cardiac arrest occurs above 25-30 mEq/L - which is why the reflex is checked before each dose and not after it.",
+          "Loss of the patellar reflex is the earliest sign and is the reason to withhold the next dose; a respiratory rate below 16, slurred speech, drowsiness, flushing, double vision or a falling oxygen saturation mean the antidote is given at once.",
+          "The antidote is calcium gluconate 1 g - 10 mL of a 10% solution - intravenously over 10 minutes, repeated if needed, with the airway supported and the woman ventilated with a bag and mask until she breathes adequately.",
+          "Show the examiner that the ampoule of calcium gluconate, a 10 mL syringe and a bag-valve-mask are kept at the bedside from the moment the first dose is drawn up; a prescription for magnesium sulphate without calcium gluconate beside it is an incomplete prescription.",
+        ],
+      },
+      {
+        heading: "Controlling the blood pressure alongside",
+        points: [
+          "Give nifedipine 10 mg immediate-release orally, swallowed and not placed under the tongue, and repeat every 20-30 minutes for up to 3-5 doses until the pressure is below 160/110 mmHg, or labetalol 20 mg intravenously over 2 minutes, then 40 mg after 10 minutes, then 80 mg every 10 minutes to a cumulative 300 mg, avoiding labetalol in asthma and heart block.",
+          "Hydralazine 5 mg intravenously over 5 minutes, repeated at 5-10 mg every 20 minutes to a maximum of 20-30 mg, is the third option and needs 250-500 mL of crystalloid beforehand to blunt the reflex tachycardia and hypotension.",
+          "The target is 140-150/90-100 mmHg, not normal - a fall below 130/80 mmHg reduces placental perfusion and the fetal heart must be listened to after every dose.",
+          "Nifedipine and magnesium given together can occasionally produce profound hypotension or neuromuscular weakness; it is still the standard combination at the primary level, and the answer to the examiner is closer monitoring, not withholding either drug.",
+        ],
+      },
+      {
+        heading: "If she convulses at the station",
+        points: [
+          "Call for help, turn her fully to the left lateral position, protect her from injury, give oxygen by mask at 8-10 L per minute, do not restrain the limbs and do not force anything into the mouth; most fits stop within 60-90 seconds and the airway is suctioned once they do.",
+          "If magnesium has not yet been given, give the full Pritchard loading dose now; if she convulses despite the loading dose, give a further 2 g of 20% solution - 4 mL of 50% diluted to 10 mL - intravenously over 5 minutes, and only if fits continue consider intubation and an alternative anticonvulsant with brain imaging at the referral hospital.",
+          "Recheck the blood pressure and treat it, confirm the catheter is draining, note the time and duration of the fit and the fetal heart when it has stopped, and repeat the three-point check before the next maintenance dose.",
+          "Stabilise first and deliver second: the decision to deliver is made at the first referral unit once the fits are controlled and the pressure is down, and a caesarean section performed during a fit kills the mother.",
+        ],
+      },
+      {
+        heading: "Referral and documentation",
+        points: [
+          "Refer to a first referral unit after the loading dose, with the intravenous line running slowly at 80 mL per hour, oxygen, the left lateral position in the ambulance, a nurse escort and the 108 ambulance under JSSK, and telephone the receiving unit before she leaves.",
+          "The referral note carries the diagnosis, the blood pressure readings, the exact dose, route and time of every magnesium and antihypertensive dose, the time the next maintenance dose is due, the urine output, the fetal heart and whether calcium gluconate travels with her.",
+          "She is 35 weeks, beyond the 24-34 week window in which the national guideline gives antenatal corticosteroids, so steroids are not a reason to delay transfer; had she been 33 weeks the first dose of betamethasone 12 mg intramuscularly would be given before she leaves.",
+          "Close by telling the examiner that the magnesium continues for 24 hours after delivery, that 44% of eclampsia occurs postpartum, and that the woman and her husband have been told, in their own language, why she is being moved.",
+        ],
+      },
+    ],
+    summaryStatement:
+      "A 28-year-old G2P1 at 35 weeks with pre-eclampsia with severe features - blood pressure 170/112 mmHg with headache and visual symptoms - who needs seizure prophylaxis with magnesium sulphate by the Pritchard regimen, urgent oral or intravenous antihypertensive treatment within 30-60 minutes, hourly monitoring of respiratory rate, urine output and patellar reflexes with calcium gluconate at the bedside, and transfer to a first referral unit for delivery once she is stable.",
+    differential: [
+      {
+        diagnosis: "Pre-eclampsia with severe features (imminent eclampsia)",
+        forIt:
+          "Hypertension of 160/110 mmHg or more with new cerebral and visual symptoms after 20 weeks satisfies the definition on its own, before any laboratory result.",
+        againstIt:
+          "Nothing against it; the only question is whether HELLP syndrome or eclampsia has already supervened, which the platelet count, transaminases and the next few minutes will answer.",
+      },
+      {
+        diagnosis: "Eclampsia",
+        forIt:
+          "The same severe features with the highest risk of a convulsion in the next hours; a fit witnessed at home may not have been reported.",
+        againstIt:
+          "No convulsion has been observed and there is no tongue bite, incontinence or post-ictal confusion; the management differs only in that a fit makes delivery immediate after stabilisation.",
+      },
+      {
+        diagnosis: "Chronic hypertension with superimposed pre-eclampsia",
+        forIt:
+          "A multiparous woman may have had hypertension between pregnancies that was never recorded, and superimposed disease is often earlier and more severe.",
+        againstIt:
+          "A normal blood pressure recorded at the first-trimester visit on the MCP card and a normal pressure between pregnancies exclude it; the acute management today is identical either way.",
+      },
+      {
+        diagnosis: "Another cause of headache and visual symptoms - migraine, posterior reversible encephalopathy, cerebral venous thrombosis or intracranial haemorrhage",
+        forIt:
+          "Headache and visual disturbance can be primary neurological events, and pregnancy itself raises the risk of venous thrombosis.",
+        againstIt:
+          "The severe hypertension with proteinuria explains the symptoms and they should ease as the pressure is controlled; focal deficits, neck stiffness, fever, a reduced conscious level between fits or symptoms persisting after control demand imaging at the referral hospital.",
+      },
+    ],
+    investigations: [
+      {
+        test: "Urine dipstick for protein now, with a spot protein-creatinine ratio at the referral unit",
+        why: "Proteinuria supports the diagnosis and its absence does not exclude it once severe features are present; the dipstick is done because it takes a minute, and quantification follows.",
+        expected: "2+ or more on the dipstick and a protein-creatinine ratio of 0.3 or more.",
+      },
+      {
+        test: "Complete blood count with platelet count and a peripheral smear",
+        why: "Thrombocytopenia below 100,000/microlitre is a severe feature and, with schistocytes, points to HELLP syndrome or disseminated intravascular coagulation.",
+        expected: "Platelets above 100,000/microlitre in uncomplicated disease; a falling count or fragmented red cells change the urgency and the route of delivery.",
+      },
+      {
+        test: "AST, ALT, LDH and serum bilirubin",
+        why: "Transaminases twice the upper limit define a severe feature and, with haemolysis and low platelets, complete the diagnosis of HELLP syndrome.",
+        expected: "Normal in most women at this stage; AST or ALT above 70 IU/L with LDH above 600 IU/L means HELLP and immediate delivery after stabilisation.",
+      },
+      {
+        test: "Serum creatinine and uric acid",
+        why: "A creatinine above 1.1 mg/dL is a severe feature and, because magnesium is renally excreted, decides whether the maintenance dose is reduced.",
+        expected: "Creatinine below 1.1 mg/dL and uric acid often raised above 5.5 mg/dL.",
+      },
+      {
+        test: "Coagulation profile - prothrombin time, APTT and fibrinogen - if the platelets are low or there is bleeding",
+        why: "To detect disseminated intravascular coagulation, which alters anaesthetic choice and the need for blood products before delivery.",
+        expected: "Normal unless HELLP or abruption has developed; a fibrinogen below 200 mg/dL is the earliest coagulation abnormality of abruption.",
+      },
+      {
+        test: "Blood grouping and Rh typing with cross-matching of two units of packed red cells",
+        why: "Abruption, HELLP and postpartum haemorrhage are all more likely, and the referral unit should have blood ready before she arrives.",
+        expected: "Group and cross-match available at the receiving facility, sent with the referral note.",
+      },
+      {
+        test: "Fetal heart rate now, and a non-stress test with ultrasound biometry and umbilical artery Doppler at the referral unit",
+        why: "To document fetal wellbeing before transfer and to detect growth restriction or placental insufficiency that would influence the mode and timing of delivery.",
+        expected: "A fetal heart of 110-160 per minute; a non-reactive trace or absent end-diastolic flow brings delivery forward and favours caesarean section.",
+      },
+      {
+        test: "Serum magnesium where available",
+        why: "It is not needed for routine monitoring, which is clinical, but is useful when reflexes are lost, when renal function is impaired, or when a dose has been withheld.",
+        expected: "Therapeutic 4-7 mEq/L; loss of patellar reflex at 8-10 mEq/L and respiratory depression at about 12 mEq/L.",
+      },
+    ],
+    management: [
+      {
+        heading: "The prescription to write, exactly",
+        points: [
+          "**Pritchard loading:** magnesium sulphate 4 g as 20% solution intravenously over 5 minutes (8 mL of 50% diluted to 20 mL) plus 10 g of 50% solution deep intramuscularly, 5 g (10 mL) in each buttock with 1 mL of 2% lignocaine.",
+          "**Pritchard maintenance:** 5 g of 50% solution (10 mL) deep intramuscularly into alternate buttocks every 4 hours, for 24 hours after delivery or the last fit, whichever is later.",
+          "**Recurrent fit on magnesium:** a further 2 g of 20% solution intravenously over 5 minutes.",
+          "**Zuspan alternative where a pump exists:** 4 g of 20% intravenously over 15-20 minutes, then 1 g per hour by infusion for 24 hours after delivery or the last fit.",
+          "**Antidote, written on the same sheet:** calcium gluconate 1 g (10 mL of 10%) intravenously over 10 minutes, kept at the bedside.",
+        ],
+      },
+      {
+        heading: "The monitoring chart the nurse keeps",
+        points: [
+          "Before every maintenance dose: respiratory rate at least 16 per minute, urine output at least 30 mL per hour (100 mL in 4 hours), patellar reflex present - **withhold the dose if any one fails and call the doctor.**",
+          "Blood pressure every 15 minutes until below 160/110 mmHg and then every 30 minutes; pulse, respiratory rate and oxygen saturation hourly; hourly urine output on the catheter chart; patellar reflex 4-hourly; conscious level and symptoms at every round.",
+          "Fetal heart every 30 minutes and after every antihypertensive dose; intravenous fluids limited to 80 mL per hour with the chest auscultated for crepitations, because pulmonary oedema is the commonest cause of death in these women after the fit itself.",
+          "Every dose with its time and route, every blood pressure and every check written on one sheet that travels with the woman.",
+        ],
+      },
+      {
+        heading: "Antihypertensive treatment within 30-60 minutes",
+        points: [
+          "Nifedipine 10 mg immediate-release orally, repeated every 20-30 minutes up to 3-5 doses, never sublingually; or labetalol 20 mg intravenously over 2 minutes, then 40 mg, then 80 mg every 10 minutes to a cumulative 300 mg; or hydralazine 5 mg intravenously over 5 minutes, repeated 5-10 mg every 20 minutes to 20-30 mg.",
+          "Target 140-150/90-100 mmHg; then start or continue oral maintenance with labetalol 100 mg twice daily titrated to 800 mg three times daily, or nifedipine retard 10-20 mg twice or three times daily to 120 mg per day.",
+          "No ergometrine at delivery, no diuretics except for pulmonary oedema, no angiotensin-converting enzyme inhibitors or angiotensin receptor blockers.",
+        ],
+      },
+      {
+        heading: "Delivery and the postpartum day",
+        points: [
+          "At 35 weeks with severe features the answer is delivery once she is stable, at the first referral unit, by induction if the cervix and the fetal status allow and by caesarean section for obstetric indications; magnesium continues through labour and for 24 hours after delivery.",
+          "Active management of the third stage with oxytocin 10 units intramuscularly, strict fluid balance, blood pressure 4-hourly for 72 hours and again at day 7-10, and antihypertensives continued at discharge with labetalol or nifedipine rather than methyldopa.",
+          "Counsel at discharge on the 15-20% recurrence risk, aspirin from 12-16 weeks in the next pregnancy, contraception that avoids the combined pill while the pressure is raised, and lifelong annual cardiovascular risk checks.",
+        ],
+      },
+    ],
+    viva: [
+      {
+        q: "Why magnesium sulphate rather than diazepam or phenytoin?",
+        a: "The Collaborative Eclampsia Trial showed magnesium sulphate more than halves the recurrence of fits compared with diazepam or phenytoin, with fewer maternal and neonatal complications, and the Magpie trial showed it halves the risk of a first fit in pre-eclampsia. It also does not sedate the mother or depress the newborn the way diazepam does.",
+      },
+      {
+        q: "How does magnesium sulphate prevent convulsions?",
+        a: "It is a central N-methyl-D-aspartate receptor antagonist that raises the seizure threshold, it dilates cerebral vessels and relieves the vasospasm that underlies the encephalopathy, it stabilises neuronal membranes, and at the neuromuscular junction it competes with calcium to reduce acetylcholine release - which is also why the reflexes go first when the level is too high.",
+      },
+      {
+        q: "Why is the patellar reflex lost before breathing is affected?",
+        a: "Because the effects are dose-dependent in a fixed order: neuromuscular blockade at the junction abolishes the tendon reflex at 8-10 mEq/L, respiratory muscle weakness follows at about 12 mEq/L, and cardiac conduction fails above 25-30 mEq/L; the reflex therefore serves as a built-in early warning that costs nothing to check.",
+      },
+      {
+        q: "The woman has passed only 60 mL of urine in the last 4 hours. What do you do?",
+        a: "Withhold the maintenance dose, because magnesium is excreted entirely by the kidney and will accumulate; check the catheter is not blocked, give a measured fluid bolus of 250-500 mL only if she is clinically dry and the chest is clear, send a creatinine and a serum magnesium, examine the reflexes and respiratory rate, and resume at half the dose or as an infusion once the output recovers.",
+      },
+      {
+        q: "When would you prefer the Zuspan regimen?",
+        a: "Where an infusion pump and continuous nursing observation are available, because the intravenous regimen avoids the painful and occasionally abscess-forming intramuscular injections and allows the rate to be adjusted to renal function; at a primary health centre without a pump the Pritchard regimen is safer because a bolus cannot run in uncontrolled.",
+      },
+      {
+        q: "She has a second fit 30 minutes after the loading dose. What next?",
+        a: "Left lateral, airway, oxygen, then a further 2 g of 20% magnesium sulphate intravenously over 5 minutes; if fits still continue she needs intubation, an alternative anticonvulsant such as intravenous lorazepam or levetiracetam under anaesthetic supervision, and imaging of the brain at the referral hospital to exclude haemorrhage or venous thrombosis, with delivery as soon as she is stable.",
+      },
+      {
+        q: "How long does magnesium continue after delivery and why?",
+        a: "For 24 hours after delivery or after the last convulsion, whichever is later, because 44% of eclampsia occurs postpartum and the risk persists into the first days; the blood pressure is likewise monitored for 72 hours and again at day 7-10.",
+      },
+      {
+        q: "What is the exact dose of calcium gluconate, and how is it given?",
+        a: "1 g, which is 10 mL of a 10% solution, intravenously over 10 minutes, repeated if the respiratory depression persists, while the airway is supported with bag and mask ventilation and the magnesium is stopped; it must be at the bedside before the first dose of magnesium is drawn up.",
+      },
+    ],
+    pitfalls: [
+      "Pushing the intravenous loading dose fast - 4 g over 5 minutes in the Pritchard regimen and over 15-20 minutes in the Zuspan regimen; a rapid bolus causes flushing, hypotension and respiratory arrest.",
+      "Injecting the 50% solution intravenously undiluted, or miscalculating the volume - 1 g is 2 mL of 50%, so 4 g is 8 mL diluted to 20 mL for the intravenous dose and 10 g is 20 mL for the intramuscular dose.",
+      "Withholding magnesium because the woman 'has not fitted yet' - severe features are the indication for prophylaxis, and waiting for the first convulsion is the error the Magpie trial was designed to end.",
+      "Giving a maintenance dose without the three-point check, or checking the reflexes after the dose instead of before it.",
+      "Giving nifedipine under the tongue, or dropping the blood pressure below 130/80 mmHg and compromising the placenta.",
+      "Delaying transfer to 'complete the investigations', delivering during a fit, or sending the woman without the time and dose of magnesium written on the referral note so that the receiving unit repeats the loading dose.",
+    ],
+    references: [
+      "FOGSI-ICOG Good Clinical Practice Recommendations on Pre-eclampsia and Eclampsia, 2019",
+      "Maternal Health Division, MoHFW - Guidelines for Management of Pregnancy Induced Hypertension including Eclampsia",
+      "Managing Complications in Pregnancy and Childbirth: A Guide for Midwives and Doctors, WHO, 2nd edition, 2017",
+      "WHO Recommendations for Prevention and Treatment of Pre-eclampsia and Eclampsia, 2011",
+      "ACOG Practice Bulletin 222: Gestational Hypertension and Preeclampsia, 2020",
+      "Williams Obstetrics, 26th edition, 2022 - hypertensive disorders",
+      "DC Dutta's Textbook of Obstetrics, 9th edition, 2018 - hypertensive disorders in pregnancy",
+    ],
+  },
+];
+
+const subject: Subject = {
+  id: "obstetrics",
+  title: "Obstetrics",
+  blurb: "Antenatal care, anaemia, hypertensive disease, gestational diabetes, labour and postpartum haemorrhage.",
+  icon: "Baby",
+  papers: ["IV"],
+  topics,
+  cases,
+};
+
+export default subject;
