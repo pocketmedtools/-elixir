@@ -119,6 +119,41 @@ All green: `npx tsc -b`, `npm run verify` (zero warnings), `npm run lint`
 smoke test passes 15/15, including importing a 10,800-word document and reading
 it to its last word.
 
+## Phase 2 — closing the library gaps found by the past papers (in progress)
+
+Every question in `src/pyq/` is matched against the library. 32 of them still
+have no honest answer, and `npx tsx scripts/gaps.ts` prints them. They ask for
+20 topics the library has never carried. Each is written the normal way —
+appended immediately before the `const cases: ClinicalCase[]` line of its
+subject file, one topic per edit — and each one written removes its questions
+from the gaps list, so `scripts/gaps.ts` is the progress bar.
+
+| # | Topic id | Subject file | Answers |
+|---|---|---|---|
+| 1 | `neurology-parkinsonism` | neurology.ts | Oct 2024 P1 Q10 |
+| 2 | `neurology-seizures-epilepsy` | neurology.ts | absence seizures (Jun 2021) |
+| 3 | `surgery-office-spinal-anaesthesia` | surgery-office.ts | Dec 2022 P2 Q1, Jun 2025 P2 Q6 |
+| 4 | `surgery-office-procedural-sedation-ketamine` | surgery-office.ts | Dec 2019 |
+| 5 | `surgery-office-tracheostomy` | surgery-office.ts | Dec 2011 |
+| 6 | `surgery-office-blood-transfusion` | surgery-office.ts | Apr 2016, Dec 2011 |
+| 7 | `emergency-ards` | emergency.ts | Jun 2014 |
+| 8 | `infectious-fever-hiv-art` | infectious-fever.ts | Apr 2023 P3 Q2, Dec 2012 |
+| 9 | `pediatrics-congenital-heart-disease` | pediatrics.ts | Apr 2023 P3 Q6, Jun 2021 |
+| 10 | `pediatrics-nocturnal-enuresis` | pediatrics.ts | Jun 2017, Dec 2014 |
+| 11 | `pediatrics-oral-thrush` | pediatrics.ts | Dec 2013 |
+| 12 | `gynaecology-uterine-prolapse` | gynaecology.ts | Dec 2012 |
+| 13 | `preventive-disaster-management` | preventive.ts | Jun 2022, Dec 2020, Jun 2019 |
+| 14 | `preventive-climate-change-health` | preventive.ts | Jun 2021 |
+| 15 | `preventive-iec-social-marketing` | preventive.ts | Dec 2011, Dec 2020, Dec 2013 |
+| 16 | `preventive-health-planning-management` | preventive.ts | Jun 2013, Dec 2020 (SWOT) |
+| 17 | `preventive-health-information-gis` | preventive.ts | Dec 2020 |
+| 18 | `preventive-sex-ratio-pcpndt` | preventive.ts | Dec 2013 |
+| 19 | `preventive-child-women-legislation` | preventive.ts | Apr 2016 (JJ Act, NPEW) |
+| 20 | `preventive-occupational-health` | preventive.ts | Jun 2014 (chemical carcinogens) |
+
+Two agents must never edit the same subject file at once — `preventive.ts`
+alone carries eight of these, so its topics are written one after another.
+
 ## If you want to take it further
 
 1. **Clinical review pass.** One adversarial reviewer per subject, checking
