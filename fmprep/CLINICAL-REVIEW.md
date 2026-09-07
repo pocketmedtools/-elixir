@@ -189,3 +189,53 @@ not a list of known errors.
 - **The oedema-fluid to plasma protein ratio** (above 0.75 against below 0.65) is
   physiologically correct and examiner-friendly but essentially never measured;
   flagged as such in the table and the theory answer.
+
+## pediatrics-oral-thrush
+
+- **Miconazole oral gel in young infants.** UK and EU guidance contraindicates it
+  under four months and in impaired swallowing (pharyngeal obstruction and
+  choking); Indian and much other practice still uses small applied amounts
+  below that age. Both positions are stated, with nystatin recommended under
+  four months as the safe course. Doses are the BNF for Children figures
+  (1.25 mL four times daily from 1 month to 1 year, 2.5 mL four times daily from
+  2 years) — which leaves a gap at 12–23 months in the BNF banding that was not
+  filled with an invented dose.
+- **Gentian violet.** Still a WHO option in resource-limited settings but
+  withdrawn for oral use by several regulators over mucosal necrosis and animal
+  carcinogenicity. Marked as contested, specified at 0.5–1% for a maximum of
+  about three days.
+- **Routinely treating the mother's nipples.** Simultaneous treatment is
+  recommended when the infant genuinely has thrush, with the Academy of
+  Breastfeeding Medicine position flagged — nipple candidiasis is over-diagnosed,
+  and most sore nipples are latch, tongue-tie, vasospasm or bacterial, so latch
+  assessment comes first. The maternal oral fluconazole regimen (150–400 mg
+  loading then 100 mg daily for 10–14 days) is widely used but off-label and is
+  not labelled as licensed.
+- **Malignant transformation in chronic hyperplastic candidiasis** is reported
+  over a very wide range, so it is written qualitatively rather than as a
+  percentage.
+- **Neonatal fluconazole** is given as 6 mg/kg at extended intervals (every 72
+  hours in weeks 0–2, every 48 hours in weeks 2–4) — the standard
+  renal-immaturity schedule, rarely needed for uncomplicated oral thrush where
+  nystatin is first line.
+
+## pediatrics-nocturnal-enuresis
+
+- **NICE CG111's currency.** From October 2010 and retained on surveillance
+  review; whether a further formal review has happened since could not be
+  verified, so the reference is worded conservatively. Worth checking against
+  the live NICE page.
+- **The IAP reference is the softest of the five.** No dedicated IAP or ISPN
+  standalone guideline on enuresis could be confirmed, so the IAP Textbook of
+  Pediatrics 7e (2019), ISPN guidance on lower urinary tract dysfunction and
+  Ghai 10e are cited rather than an invented document title.
+- **Urinalysis in every child against NICE's selective policy.** Both are stated,
+  with a dipstick in all children recommended for Indian practice and NICE's
+  narrower indication flagged explicitly.
+- **Desmopressin from age 5 or 7.** NICE offers it generally from 7, and from 5
+  to 7 only when treatment is needed and an alarm is unsuitable. Written that
+  way, but this is a place guidance genuinely varies.
+- **Post-void residual threshold** simplified to "above about 20 mL, or above
+  10% of expected bladder capacity, after repeated voiding". ICCS uses age-banded
+  cut-offs (roughly above 20 mL or 10% at 4–6 years, above 10 mL or 6% at
+  7–12 years).
