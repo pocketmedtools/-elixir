@@ -3450,3 +3450,380 @@ topics.push({
     "Jal Jeevan Mission Operational Guidelines, Ministry of Jal Shakti, 2019; Swachh Bharat Mission (Grameen) Phase II Guidelines, 2020",
   ],
 });
+
+const cases: ClinicalCase[] = [
+  {
+    id: "preventive-case-1",
+    title: "OSCE community station: an outbreak of acute diarrhoeal disease in a village",
+    kind: "osce",
+    subjectId: "preventive",
+    opening:
+      "The PHC medical officer reports that 38 people from one hamlet of a village of 1,200 have developed watery diarrhoea and vomiting over the last three days, with two deaths in elderly people; you are asked to investigate and control the outbreak.",
+    minutes: 15,
+    frequency: "core",
+    sections: [
+      {
+        heading: "Confirm the outbreak and the diagnosis",
+        points: [
+          "First establish that this is a true outbreak: compare the current count against the expected number of acute diarrhoeal disease cases for that hamlet and week from the IDSP weekly S and P forms, and check that the rise is not an artefact of a new reporting sub-centre or a health camp.",
+          "Confirm the diagnosis clinically in a handful of cases by examining them yourself, noting the character of the stool, the presence of fever and blood, the degree of dehydration and the age distribution.",
+          "Send stool samples from five to ten early untreated cases in Cary-Blair medium to the district public health laboratory for culture, and hang a rectal swab in alkaline peptone water if cholera is suspected.",
+          "While waiting for the laboratory, treat every case on the spot: ORS, zinc for children, intravenous Ringer lactate for severe dehydration, and doxycycline or azithromycin only if the picture is cholera-like.",
+        ],
+      },
+      {
+        heading: "Case definition and line list",
+        points: [
+          "Write a working case definition with person, place and time: any resident of the hamlet who developed three or more loose stools in 24 hours, with or without vomiting, on or after the first date of onset, is a suspected case; a culture-positive case is confirmed.",
+          "Keep the definition sensitive at first so that no cases are missed, then tighten it once the laboratory result is back, and describe probable and confirmed categories separately.",
+          "Open a line list on the same day with one row per case and columns for serial number, name, age, sex, house number, date and time of onset, symptoms, dehydration grade, water source, treatment given and outcome.",
+          "Search actively for cases house to house with the ASHA and ANM rather than relying on those who came to the sub-centre, because the mild cases who stayed home are the ones who reveal the true size and spread of the outbreak.",
+        ],
+      },
+      {
+        heading: "Describe by time, place and person",
+        points: [
+          "Draw an epidemic curve of cases by date of onset; a sharp single peak with cases clustered within one incubation period suggests a point-source exposure, whereas a plateau or successive waves suggests a continuing source or person-to-person spread.",
+          "Prepare a spot map of the hamlet marking every affected house and every water source, hand pump, open well, pipeline break and overflowing drain, and look for clustering of cases around one source.",
+          "Calculate the overall attack rate as cases divided by the population at risk, and then attack rates by age, sex and water source; here 38 of 1,200 gives an overall attack rate of 3.2 percent, and the rate among users of one particular hand pump was far higher than among those who used the other sources.",
+          "Compare the attack rate in the exposed and unexposed groups and express it as a relative risk; a relative risk of 8 for those drinking from the suspect pump against those who did not points strongly to that pump as the vehicle.",
+        ],
+      },
+      {
+        heading: "Environmental investigation and water sampling",
+        points: [
+          "Inspect the suspect pump: look for a broken platform, a leaking sewer line or a soak pit within 15 metres, recent flooding or repair work, and any storage tank that has not been cleaned.",
+          "Collect water samples aseptically in sterile bottles with sodium thiosulphate from the suspect source, the alternative sources and a few household storage vessels, keep them cold and send them within six hours for coliform counts and, where available, culture for Vibrio cholerae.",
+          "Test residual chlorine on the spot with orthotolidine or a chloroscope; free residual chlorine below 0.5 mg per litre at the point of use in an outbreak setting means the water is not safe.",
+          "Look also at food: a recent feast, a common eating place or a milk vendor, because the water may be the obvious suspect while the actual vehicle was food prepared with that water.",
+        ],
+      },
+      {
+        heading: "Control measures",
+        points: [
+          "Act on the working hypothesis without waiting for laboratory confirmation: close or seal the suspect pump, super-chlorinate all wells and tanks, distribute chlorine tablets or halogen tablets with instructions, and advise boiling for drinking water.",
+          "Set up an ORS corner and a temporary treatment centre at the sub-centre with ORS, zinc, Ringer lactate and antibiotics, and arrange referral transport for severe dehydration so that no more deaths occur.",
+          "Run hygiene education through the ASHA and school: hand washing with soap after defecation and before food, safe disposal of children's stools, use of latrines, and covering stored water.",
+          "Consider chemoprophylaxis only for close household contacts in a confirmed cholera outbreak, and remember that mass chemoprophylaxis and vaccination are not recommended for controlling an ongoing outbreak.",
+        ],
+      },
+      {
+        heading: "Reporting and closure under IDSP",
+        points: [
+          "Report the outbreak to the district surveillance officer on the same day by telephone and then in the IDSP early warning signal and outbreak report format, and continue daily reporting until the outbreak is declared over.",
+          "Two consecutive incubation periods without a new case, roughly 10 days for cholera, is the usual criterion for declaring the outbreak over.",
+          "Write a final outbreak report with the epidemic curve, spot map, attack rate tables, laboratory results, the actions taken and the recommendations for preventing a recurrence, such as relocating the pump and repairing the drain.",
+          "Feed back the findings to the panchayat and the community, because the sustainable control measure is the one the village owns.",
+        ],
+      },
+    ],
+    summaryStatement:
+      "This is a point-source outbreak of acute watery diarrhoea, probably cholera, in one hamlet of a village, with an overall attack rate of 3.2 percent, two deaths, and a strong association with a single contaminated hand pump; the outbreak is being managed by case treatment, closure of the source, chlorination, hygiene education and daily reporting to the district surveillance unit under IDSP.",
+    differential: [
+      {
+        diagnosis: "Cholera from a contaminated hand pump",
+        forIt: "Profuse rice-water stools without fever, rapid dehydration and deaths in the elderly, explosive rise in cases within days, high attack rate among users of one pump with a broken platform near a drain.",
+        againstIt: "Not confirmed until Vibrio cholerae O1 or O139 is cultured; similar pictures occur with enterotoxigenic E. coli.",
+      },
+      {
+        diagnosis: "Food-borne outbreak such as staphylococcal toxin or Salmonella from a village feast",
+        forIt: "A recent common meal shared by the affected households, very short incubation with vomiting predominating, or fever and bloody stools with a longer incubation.",
+        againstIt: "Cases spread over three days rather than a few hours, no single meal identified, and clustering is by water source rather than by attendance at the feast.",
+      },
+      {
+        diagnosis: "Viral gastroenteritis such as rotavirus or norovirus spreading person to person",
+        forIt: "Predominance of young children, low-grade fever, propagated curve with successive household waves.",
+        againstIt: "Adults and elderly heavily affected, deaths from rapid dehydration, and a sharp single-peak curve suggesting a common source.",
+      },
+    ],
+    investigations: [
+      {
+        test: "Stool culture in Cary-Blair transport medium from five to ten early cases",
+        why: "To confirm the aetiological agent and its antibiotic sensitivity before mass treatment decisions.",
+        expected: "Vibrio cholerae O1 El Tor, Ogawa serotype, sensitive to doxycycline and azithromycin.",
+      },
+      {
+        test: "Hanging drop preparation of fresh stool",
+        why: "A rapid bedside test at the PHC that gives a provisional answer within minutes.",
+        expected: "Darting motility that is inhibited by specific antiserum.",
+      },
+      {
+        test: "Water samples from the suspect pump, alternative sources and household vessels",
+        why: "To identify the vehicle and to document faecal contamination.",
+        expected: "Thermotolerant coliform count above 10 per 100 ml from the suspect pump, with zero residual chlorine; alternative sources acceptable.",
+      },
+      {
+        test: "Residual chlorine testing at source and point of use",
+        why: "A field test of whether disinfection is adequate, repeated daily during the outbreak.",
+        expected: "Free residual chlorine of at least 0.5 mg per litre after super-chlorination.",
+      },
+      {
+        test: "Sanitary survey of the suspect source",
+        why: "To find the route of contamination that laboratory results cannot show.",
+        expected: "Cracked platform, soak pit within 15 metres, drain overflow during recent rain.",
+      },
+      {
+        test: "Epidemic curve, spot map and attack rate tables",
+        why: "The descriptive epidemiology that generates and tests the hypothesis about the source.",
+        expected: "Single peak within one incubation period, clustering around one pump, relative risk well above 1 for users of that pump.",
+      },
+    ],
+    management: [
+      {
+        heading: "Treat the cases",
+        points: [
+          "Assess dehydration in every case using the IMNCI or WHO classification and treat with plan A, B or C accordingly.",
+          "ORS for all, zinc 20 mg daily for 14 days for children above six months and 10 mg for those below six months.",
+          "Intravenous Ringer lactate 100 ml per kg over three to six hours for severe dehydration, then reassess.",
+          "Single dose doxycycline 300 mg for adults or azithromycin 20 mg per kg single dose for children with suspected cholera to shorten shedding.",
+        ],
+      },
+      {
+        heading: "Interrupt transmission",
+        points: [
+          "Seal the suspect hand pump and provide chlorinated water from a tanker or an alternative safe source.",
+          "Super-chlorinate wells with bleaching powder using the Horrock's apparatus to calculate the dose, and distribute chlorine tablets for household use.",
+          "Hand washing with soap, safe disposal of excreta, fly control and covering of stored water and food.",
+          "Disinfect the stools and vomitus of patients with bleaching powder or cresol before disposal.",
+        ],
+      },
+      {
+        heading: "Surveillance and reporting",
+        points: [
+          "Daily house-to-house search by ASHA and ANM with the line list updated each evening.",
+          "Report the outbreak the same day to the district surveillance officer and file IDSP outbreak forms daily until closure.",
+          "Declare the outbreak over after two incubation periods without a new case and submit the final report.",
+        ],
+      },
+      {
+        heading: "Prevent recurrence",
+        points: [
+          "Relocate or rebuild the pump with an intact platform and drainage, and shift the soak pit beyond 15 metres.",
+          "Regular residual chlorine monitoring by the village water and sanitation committee.",
+          "Strengthen weekly IDSP reporting so that the next rise is caught at five cases rather than thirty-eight.",
+        ],
+      },
+    ],
+    viva: [
+      {
+        q: "Define an epidemic and an outbreak.",
+        a: "An epidemic is the occurrence in a community of cases of an illness clearly in excess of normal expectancy; an outbreak is the same phenomenon limited to a localised area or institution. A single case of cholera or plague is treated as an outbreak in India.",
+      },
+      {
+        q: "List the ten steps of an outbreak investigation.",
+        a: "Verify the diagnosis, confirm the existence of an epidemic, define a case, count cases and construct a line list, describe by time, place and person, formulate a hypothesis, test the hypothesis with analytic studies, carry out environmental and laboratory investigation, implement control measures, and write and disseminate the report.",
+      },
+      {
+        q: "What is the difference between an attack rate and a secondary attack rate?",
+        a: "The attack rate is the number of new cases divided by the population at risk during the epidemic period. The secondary attack rate is the number of cases among contacts of primary cases divided by the number of susceptible contacts, and it measures the infectivity of the agent.",
+      },
+      {
+        q: "How would you differentiate a common-source from a propagated epidemic from the curve?",
+        a: "A common-source point epidemic rises and falls sharply with all cases within one incubation period, whereas a propagated epidemic rises gradually with successive peaks one incubation period apart as the disease spreads from person to person.",
+      },
+      {
+        q: "What is the IDSP and which forms does it use?",
+        a: "The Integrated Disease Surveillance Programme, launched in 2004, collects weekly data on epidemic-prone diseases through the S form filled by health workers for syndromes, the P form by medical officers for probable cases and the L form by laboratories for confirmed cases, with an early warning signal triggering a rapid response team.",
+      },
+      {
+        q: "How do you chlorinate a well and what is the target residual chlorine?",
+        a: "Estimate the volume of water, use the Horrock's apparatus to find the amount of bleaching powder giving a residual of 0.5 mg per litre after one hour of contact, dissolve the calculated powder in water, add the supernatant to the well and wait one hour before use. In an outbreak the target is raised to about 1 mg per litre.",
+      },
+    ],
+    pitfalls: [
+      "Waiting for the culture report before starting control measures; control starts on the working hypothesis and the laboratory only confirms it.",
+      "Counting only the cases who came to the health facility and missing the mild cases at home, which underestimates the size and hides the source.",
+      "Forgetting to define the population at risk correctly, so that attack rates by source are calculated with the wrong denominator.",
+      "Announcing mass antibiotic prophylaxis or vaccination, which are not recommended for outbreak control and waste the team's time.",
+    ],
+    references: [
+      "Park K. Park's Textbook of Preventive and Social Medicine, 27th edition, 2023: Principles of epidemiology, investigation of an epidemic; cholera and acute diarrhoeal diseases",
+      "Integrated Disease Surveillance Programme, NCDC: Training manual for medical officers and Outbreak investigation guidelines, 2021",
+      "National Guidelines on Management of Cholera and Acute Diarrhoeal Diseases, NCDC, 2017; WHO Cholera outbreak response field manual, 2019",
+    ],
+  },
+  {
+    id: "preventive-case-2",
+    title: "Viva: a 14-month-old who has missed immunisation doses",
+    kind: "viva",
+    subjectId: "preventive",
+    opening:
+      "A 14-month-old girl is brought to the PHC for a cough; the immunisation card shows BCG, OPV zero, hepatitis B birth dose and the six-week doses of pentavalent, OPV, rotavirus, fIPV and PCV, after which the family migrated and nothing further was given; the examiner asks how you would bring her up to date.",
+    minutes: 10,
+    frequency: "core",
+    sections: [
+      {
+        heading: "Confirm the immunisation status",
+        points: [
+          "Verify what has actually been given from the Mother and Child Protection card or the U-WIN record rather than from memory, note the BCG scar and the dates of the doses, and record the child's weight and any current illness.",
+          "Ask about contraindications only in the true sense: a previous anaphylaxis to a vaccine or its component, or a severe immunodeficiency for live vaccines; a mild cough, low-grade fever, malnutrition or a family history of convulsions are not reasons to postpone.",
+          "This child has received the birth doses and the first primary dose only, so she is due the second and third pentavalent, OPV and fIPV doses, the second rotavirus and PCV doses, and the nine-month vaccines MR1, JE1 where endemic, PCV booster and vitamin A.",
+        ],
+      },
+      {
+        heading: "The UIP schedule to measure against",
+        points: [
+          "At birth: BCG, OPV zero dose and hepatitis B birth dose within 24 hours. At 6, 10 and 14 weeks: pentavalent, OPV, rotavirus at all three, fIPV at 6 and 14 weeks, and PCV at 6 and 14 weeks with a booster at 9 months.",
+          "At 9 to 12 months: measles-rubella first dose, JE first dose in endemic districts, and the first dose of vitamin A. At 16 to 24 months: DPT first booster, OPV booster, MR second dose, JE second dose, and vitamin A doses continuing every six months until five years.",
+          "At 5 to 6 years the DPT second booster, and Td at 10 and 16 years; pregnant women receive Td1 and Td2 or a Td booster.",
+        ],
+      },
+      {
+        heading: "Catch-up rules",
+        points: [
+          "Vaccination should never be restarted from the beginning; every dose given counts, and the schedule is resumed from where it stopped with the minimum interval of four weeks between primary doses.",
+          "Multiple vaccines can be given at the same visit at different sites; the only restriction is that two live parenteral vaccines given on separate days must be at least four weeks apart.",
+          "Age limits matter: rotavirus vaccine is not started after 12 months and the series is not completed after 24 months; pentavalent and fIPV are given up to 1 year in UIP, after which DPT and OPV or IPV are used; BCG can be given up to one year; MR can be given up to five years.",
+          "For this 14-month-old, today give DPT or pentavalent per the local policy, OPV, fIPV, PCV2, MR1, JE1 and vitamin A; rotavirus is skipped because she is past 12 months; four weeks later give the third primary doses and PCV booster, and the second-year boosters follow at 16 to 24 months keeping the interval from MR1.",
+        ],
+      },
+      {
+        heading: "Cold chain",
+        points: [
+          "All UIP vaccines are stored at 2 to 8 degrees Celsius at the PHC in an ice-lined refrigerator, with the freezer used only for ice packs; OPV is the most heat-sensitive and hepatitis B, pentavalent, IPV, PCV and Td are freeze-sensitive and must never be frozen.",
+          "Check the vaccine vial monitor on every vial: the inner square lighter than the outer circle means the vaccine is usable, and a square matching or darker than the circle means it must be discarded; the VVM does not warn about freezing, so the shake test is used for suspected frozen adsorbed vaccines.",
+          "At the session site vaccines are carried in a vaccine carrier with four conditioned ice packs and the diluents are chilled to the same temperature so that reconstituted BCG, MR and JE are not warmed.",
+          "Temperature is logged twice daily on the temperature chart and the alarm on the ILR or the data logger is acted on rather than ignored.",
+        ],
+      },
+      {
+        heading: "Open vial policy",
+        points: [
+          "Open vials of OPV, DPT, pentavalent, Td, hepatitis B, IPV, PCV and rotavirus liquid vaccine can be used up to 28 days if the expiry date has not passed, the VVM is usable, the vial has been kept in the cold chain and the septum has not been submerged in water.",
+          "The policy does not apply to reconstituted vaccines: BCG, MR and JE must be discarded four hours after reconstitution, and the reconstitution time is written on the vial.",
+          "The open vial policy reduces wastage and lets the vaccinator open a vial for a single child instead of sending the family away to wait for a group.",
+        ],
+      },
+      {
+        heading: "AEFI classification and reporting",
+        points: [
+          "An adverse event following immunisation is any untoward medical occurrence after immunisation, whether or not caused by the vaccine; the cause-specific categories are vaccine product-related, vaccine quality defect-related, immunisation error-related, immunisation anxiety-related and coincidental.",
+          "Operationally, minor events such as fever, local pain and irritability are managed and recorded; severe events that need hospitalisation and serious events that cause death, disability or a cluster are reported within 24 hours to the medical officer and the district immunisation officer.",
+          "The first information report is filed by the MO within 24 hours, the preliminary case investigation form within 10 days by the district AEFI committee, and the detailed investigation report within 50 days; the state and national committees then do causality assessment.",
+          "Counsel the mother before she leaves about expected fever and local tenderness, give paracetamol for fever, and observe the child for 30 minutes after vaccination with an emergency tray and adrenaline at hand.",
+        ],
+      },
+    ],
+    summaryStatement:
+      "A 14-month-old girl who received only her birth and six-week vaccines is a partially immunised child who should be caught up today without restarting the schedule, given every due vaccine that is within its age window at the same visit, skipping rotavirus, and returned in four weeks to complete the primary series and boosters, with the doses recorded on her card and on U-WIN.",
+    differential: [
+      {
+        diagnosis: "Resume the UIP schedule from where it stopped, giving all due vaccines today",
+        forIt: "Recommended by the UIP and WHO; every dose counts, multiple vaccines at one visit are safe, and the child is protected fastest with the fewest visits.",
+        againstIt: "Requires several injections at once, which some parents refuse; needs counselling and a firm return date.",
+      },
+      {
+        diagnosis: "Restart the entire primary series from the beginning",
+        forIt: "Some parents and even some staff believe a long gap wipes out prior protection.",
+        againstIt: "Wrong: immunological memory persists, extra doses add reactogenicity and cost without benefit, and the practice is explicitly discouraged.",
+      },
+      {
+        diagnosis: "Follow the IAP schedule with additional vaccines such as hepatitis A, varicella, typhoid conjugate and MMR",
+        forIt: "Offers broader protection for families who can afford it, and IAP allows catch-up of these vaccines up to older ages.",
+        againstIt: "Not provided free in the UIP at the PHC; the core UIP vaccines must be completed first and the optional vaccines discussed as a separate decision.",
+      },
+    ],
+    investigations: [
+      {
+        test: "Mother and Child Protection card and U-WIN record review",
+        why: "The only reliable way to know which doses were given and when; parental recall is inaccurate.",
+        expected: "Birth doses and one six-week set recorded with dates, nothing after that.",
+      },
+      {
+        test: "Clinical assessment of the child including weight, temperature and BCG scar",
+        why: "To rule out a true contraindication and to identify moderate or severe acute illness that would justify a short deferral.",
+        expected: "Mild cough without fever or respiratory distress, normal weight for age, BCG scar present.",
+      },
+      {
+        test: "Vaccine vial monitor and expiry check on every vial to be used",
+        why: "To make sure that a heat-exposed or expired vial is not given to a child who has already waited too long.",
+        expected: "VVM in stage 1 or 2, expiry date not passed, open vial date within 28 days for liquid vaccines.",
+      },
+      {
+        test: "Ice-lined refrigerator temperature log and shake test for adsorbed vaccines if freezing is suspected",
+        why: "Freeze-damaged pentavalent or hepatitis B vaccine is ineffective and appears normal on the VVM.",
+        expected: "Temperature between 2 and 8 degrees on all readings; shake test shows uniform suspension without rapid sediment.",
+      },
+      {
+        test: "Post-vaccination observation for 30 minutes",
+        why: "Anaphylaxis, though rare, occurs within minutes and is treatable only if the child is still at the site.",
+        expected: "No reaction; mother counselled about fever and local swelling before leaving.",
+      },
+    ],
+    management: [
+      {
+        heading: "Today's catch-up visit",
+        points: [
+          "Pentavalent or DPT as per local policy for a child above one year, OPV, fIPV second dose, PCV second dose, MR first dose, JE first dose in an endemic district and vitamin A 1 lakh IU.",
+          "Different sites for each injection: anterolateral thigh for pentavalent and PCV on opposite legs, fIPV intradermal in the right upper arm, MR subcutaneous in the right upper arm at a different site, JE subcutaneous in the left upper arm.",
+          "Record every dose with date and batch number on the card and in U-WIN, and give a written return date.",
+        ],
+      },
+      {
+        heading: "Subsequent visits",
+        points: [
+          "After four weeks: third dose of pentavalent or DPT, OPV third dose, PCV booster and completion of any dose missed today.",
+          "At 16 to 24 months and at least four weeks after MR1: DPT first booster, OPV booster, MR second dose, JE second dose and the next vitamin A dose.",
+          "Vitamin A every six months until five years; DPT second booster at 5 to 6 years; Td at 10 and 16 years.",
+        ],
+      },
+      {
+        heading: "Counselling and safety",
+        points: [
+          "Explain that missed doses do not require restarting and that several injections in one visit are safe.",
+          "Warn about fever and local pain for one to two days and give paracetamol dosing by weight.",
+          "Observe for 30 minutes with adrenaline 1:1000 available; report any severe or serious AEFI within 24 hours.",
+        ],
+      },
+    ],
+    viva: [
+      {
+        q: "What are the vaccines under the UIP today?",
+        a: "BCG, OPV, hepatitis B, pentavalent (DPT, hepatitis B, Hib), rotavirus, fIPV, PCV, measles-rubella, JE in endemic districts, DPT boosters and Td, with vitamin A supplementation given alongside.",
+      },
+      {
+        q: "What is the minimum interval between two doses of the same vaccine and between two live vaccines?",
+        a: "Four weeks between primary doses of the same vaccine; two live parenteral vaccines can be given on the same day or, if not, at least four weeks apart. OPV and rotavirus are oral live vaccines and have no such restriction.",
+      },
+      {
+        q: "Which vaccines are freeze-sensitive and which are heat-sensitive?",
+        a: "Freeze-sensitive: hepatitis B, pentavalent, DPT, Td, IPV, PCV and rotavirus liquid vaccine. Most heat-sensitive: OPV, followed by BCG, measles-rubella and JE; freeze-dried vaccines tolerate freezing but reconstituted vaccines do not.",
+      },
+      {
+        q: "Explain the vaccine vial monitor.",
+        a: "A heat-sensitive label on the vial with an inner square inside a reference circle; cumulative heat exposure darkens the square. Stages 1 and 2 with the square lighter than the circle mean use the vaccine; stages 3 and 4 with the square matching or darker than the circle mean discard. It does not detect freezing.",
+      },
+      {
+        q: "What is the open vial policy and which vaccines does it exclude?",
+        a: "Open multi-dose vials of OPV, DPT, pentavalent, Td, hepatitis B, IPV, PCV and liquid rotavirus can be used for up to 28 days if the expiry date is not passed, the VVM is usable, the cold chain was maintained and the septum was not submerged. Reconstituted BCG, MR and JE are excluded and are discarded after four hours.",
+      },
+      {
+        q: "How are AEFIs classified and reported?",
+        a: "By cause: vaccine product-related, quality defect-related, immunisation error-related, immunisation anxiety-related and coincidental. By severity: minor, severe and serious. Serious and severe events are reported within 24 hours on the first information report, investigated with a preliminary report in 10 days and a detailed report in 50 days, and causality is assessed by the state and national AEFI committees.",
+      },
+    ],
+    pitfalls: [
+      "Restarting the whole schedule because of the gap, which wastes vaccine and delays protection.",
+      "Postponing vaccination for a mild cough, low-grade fever or malnutrition, none of which is a contraindication.",
+      "Giving rotavirus vaccine after 12 months of age, or forgetting that MR is due at nine months and is overdue in this child.",
+      "Skipping the 30-minute observation and the AEFI counselling, so that a serious reaction happens at home unrecognised.",
+    ],
+    references: [
+      "Park K. Park's Textbook of Preventive and Social Medicine, 27th edition, 2023: Immunisation, cold chain and the Universal Immunisation Programme",
+      "Immunization Handbook for Medical Officers, Ministry of Health and Family Welfare, Government of India, 2017; National Immunization Schedule update including PCV and fIPV, MoHFW, 2021",
+      "AEFI Surveillance and Response Operational Guidelines, MoHFW, 2015; Open Vial Policy guidelines, MoHFW, 2015; IAP Advisory Committee on Vaccines and Immunization Practices recommended immunization schedule, 2023",
+    ],
+  },
+];
+
+const subject: Subject = {
+  id: "preventive",
+  title: "Preventive & Community Medicine",
+  blurb: "Screening principles, the national programmes, immunisation, biostatistics and outbreak investigation.",
+  icon: "ShieldPlus",
+  papers: ["I", "IV"],
+  topics,
+  cases,
+};
+
+export default subject;
