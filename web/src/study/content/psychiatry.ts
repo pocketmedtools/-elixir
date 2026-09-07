@@ -380,387 +380,6 @@ topics.push({
 });
 
 topics.push({
-  id: "renal-urology-acute-kidney-injury",
-  title: "Acute kidney injury: recognising it early, staging it by KDIGO and stopping it getting worse",
-  oneLiner:
-    "Acute kidney injury is an abrupt fall in glomerular filtration defined by KDIGO as a rise in serum creatinine of 0.3 mg/dL or more within 48 hours, or a rise to 1.5 times a known or presumed baseline within the preceding 7 days, or a urine output below 0.5 mL/kg/h for 6 hours, and it is staged 1 to 3 on whichever of creatinine or urine output gives the higher stage.",
-  frequency: "core",
-  keywords: [
-    "AKI",
-    "KDIGO AKI",
-    "acute tubular necrosis",
-    "prerenal azotaemia",
-    "fractional excretion of sodium",
-    "FeNa",
-    "community-acquired AKI",
-    "snake bite AKI",
-    "falciparum malaria",
-    "rhabdomyolysis",
-    "contrast-associated AKI",
-    "hepatorenal syndrome",
-    "obstructive uropathy",
-    "renal replacement therapy",
-    "nephrotoxin stewardship",
-    "urine output monitoring",
-  ],
-  sections: [
-    {
-      heading: "The KDIGO definition and staging, written exactly",
-      points: [
-        "**KDIGO 2012 definition of AKI - any one of three criteria:** a rise in serum creatinine of **0.3 mg/dL or more within 48 hours**; a rise in serum creatinine to **1.5 times baseline or more, known or presumed to have occurred within the prior 7 days**; or a **urine volume below 0.5 mL/kg/h for 6 hours**.",
-        "**Stage 1:** creatinine 1.5-1.9 times baseline, or an absolute rise of 0.3 mg/dL or more; or urine output below 0.5 mL/kg/h for 6-12 hours.",
-        "**Stage 2:** creatinine 2.0-2.9 times baseline; or urine output below 0.5 mL/kg/h for 12 hours or more.",
-        "**Stage 3:** creatinine 3.0 times baseline or more, or a rise to **4.0 mg/dL or more**, or **initiation of renal replacement therapy**, or in patients under 18 years a fall in eGFR to below 35 mL/min/1.73 m2; or urine output **below 0.3 mL/kg/h for 24 hours or more, or anuria for 12 hours or more**.",
-        "Stage on **whichever criterion - creatinine or urine output - gives the higher stage**; a patient making 15 mL/h with a creatinine of 1.4 mg/dL is still stage 3 if the oliguria has lasted a day.",
-        "**Acute kidney disease** is the KDIGO term for kidney damage or a GFR under 60 lasting **7 to 90 days**; beyond 90 days it becomes CKD. This bridging category exists because most AKI does not resolve neatly by day 7, and every AKI survivor needs a creatinine and an ACR at 3 months.",
-        "Where no baseline creatinine exists - the usual Indian situation - **back-calculate an assumed baseline from an eGFR of 75 mL/min/1.73 m2** using the MDRD equation, or use the lowest creatinine of the current admission, and say in the answer book which assumption was made.",
-      ],
-    },
-    {
-      heading: "Causes: prerenal, intrinsic renal and postrenal, with the Indian weighting",
-      points: [
-        "**Prerenal (about 40-55%) - hypoperfusion of a structurally normal kidney:** vomiting, diarrhoea (the commonest cause in Indian primary care), haemorrhage, burns, sepsis, heart failure, cirrhosis with ascites, over-diuresis, and the haemodynamic effects of **NSAIDs (afferent constriction) plus ACE inhibitors or ARBs (efferent dilatation)** - the so-called triple whammy when a diuretic is added.",
-        "**Intrinsic renal (about 35-45%):** acute tubular necrosis from prolonged ischaemia or nephrotoxins; acute interstitial nephritis from drugs; acute glomerulonephritis; and vascular causes such as thrombotic microangiopathy or renal artery occlusion.",
-        "**Postrenal (about 5-10%):** bladder outlet obstruction from benign prostatic hyperplasia or a blocked catheter, bilateral ureteric stones or a stone in a single functioning kidney, retroperitoneal fibrosis, and pelvic malignancy. **Obstruction must be excluded by ultrasound in every case** because it is the one cause that is cured by a catheter or a nephrostomy.",
-        "**Community-acquired AKI in India** has a distinctive and heavily examined list: **acute gastroenteritis with severe dehydration, falciparum and vivax malaria, leptospirosis, scrub typhus, dengue, snake envenomation (Russell's viper and saw-scaled viper), septic abortion and obstetric haemorrhage, copper sulphate and paraphenylenediamine (hair-dye) poisoning, and traditional or unlabelled herbal remedies**.",
-        "**Nephrotoxic drugs to name:** NSAIDs including diclofenac and ibuprofen, aminoglycosides, amphotericin B, vancomycin, colistin, high-dose acyclovir, methotrexate, cisplatin, tenofovir, calcineurin inhibitors, iodinated contrast, and proton pump inhibitors as a cause of interstitial nephritis.",
-        "**Rhabdomyolysis** after trauma, crush injury, prolonged immobility, seizures, extreme exertion, statin-fibrate combinations or wasp stings: creatine kinase above 5000 U/L, tea-coloured urine, **dipstick positive for blood with no red cells on microscopy**, hyperkalaemia, hyperphosphataemia and hypocalcaemia.",
-      ],
-    },
-    {
-      heading: "Bedside evaluation: the questions that must be answered in the first hour",
-      points: [
-        "**Is the patient volume depleted, euvolaemic or overloaded?** Postural blood pressure, pulse, jugular venous pressure, mucous membranes, skin turgor, axillary sweat, capillary refill, weight change and daily fluid balance chart. Volume status decides whether the next step is a fluid bolus or a diuretic, and getting it wrong is the single commonest error.",
-        "**Is the bladder palpable and is there a catheter that is blocked?** Feel for the bladder, do a bladder scan or a post-void residual, and flush or change any catheter before ordering anything else.",
-        "**Urine routine and microscopy is the cheapest and most discriminating test.** A bland sediment suggests prerenal disease or obstruction; **muddy brown granular casts and renal tubular epithelial cells indicate acute tubular necrosis**; **dysmorphic red cells and red cell casts indicate glomerulonephritis**; **white cell casts with eosinophiluria and a rash suggest acute interstitial nephritis**; and heavy proteinuria points to a glomerular lesion.",
-        "**Fractional excretion of sodium, FeNa = (urine sodium x plasma creatinine) / (plasma sodium x urine creatinine) x 100.** Below 1% suggests prerenal azotaemia, above 2% suggests acute tubular necrosis. It is invalid after a diuretic, in which case use the **fractional excretion of urea, FeUrea, where below 35% suggests prerenal disease**.",
-        "**Blood urea nitrogen to creatinine ratio above 20:1** favours a prerenal state, but is also raised by gastrointestinal bleeding, steroids and a high protein intake, and is lowered by malnutrition and liver disease.",
-        "**Ultrasound of the kidneys, ureters and bladder in every case of AKI** - it excludes hydronephrosis, gives kidney size and echotexture (small echogenic kidneys mean the problem is chronic), and shows the bladder and prostate.",
-        "Send in parallel: electrolytes with bicarbonate, calcium and phosphate, complete blood count with peripheral smear (schistocytes mean thrombotic microangiopathy), creatine kinase, liver function, blood culture, malaria antigen and smear, dengue and leptospira serology where the season and story fit, and an ECG for hyperkalaemia.",
-      ],
-    },
-    {
-      heading: "Management in the clinic and on the ward",
-      points: [
-        "**Treat the cause, restore perfusion, remove the nephrotoxins, relieve the obstruction, and manage the complications** - there is still no drug that treats AKI itself, and saying so earns the mark.",
-        "**Fluid resuscitation:** balanced crystalloid (Ringer's lactate or Plasma-Lyte) in preference to 0.9% saline, because large-volume saline produces hyperchloraemic acidosis and, in the SMART and BaSICS-era evidence, no better kidney outcomes. Give **250-500 mL boluses with reassessment after each**, not a blind litre-per-hour, and stop the moment the jugular venous pressure rises or the lung bases become wet. **Starches (hydroxyethyl starch) are contraindicated in AKI.**",
-        "**Diuretics do not prevent or treat AKI**; furosemide is used only to manage established fluid overload, and a failure to respond to it is a sign to plan dialysis, not to escalate the dose indefinitely. **Low-dose dopamine, mannitol and fenoldopam have no role.**",
-        "**Stop and list the nephrotoxins:** NSAIDs, aminoglycosides, ACE inhibitors and ARBs (hold during the acute illness, restart once the creatinine has stabilised), SGLT2 inhibitors, metformin (risk of lactic acidosis), diuretics, and any herbal preparation. **Metformin is stopped during AKI and restarted only when the eGFR is stable above 30.**",
-        "**Adjust every remaining drug to the current creatinine clearance**, remembering that in unstable AKI the creatinine lags behind the true GFR, so dose as if the GFR is lower than the number suggests.",
-        "**Treat hyperkalaemia the moment it is above 6.0 mmol/L or there is any ECG change:** 10 mL of 10% calcium gluconate intravenously over 2-3 minutes to stabilise the myocardium, 10 units of regular insulin in 25 g of dextrose (50 mL of 50% dextrose or 100 mL of 25% dextrose), salbutamol 10-20 mg by nebuliser, sodium bicarbonate only if acidotic, and a potassium binder; then arrange dialysis if it is refractory.",
-        "**Nutrition:** 20-30 kcal/kg/day with 0.8-1.0 g/kg/day of protein in non-catabolic AKI, rising to 1.0-1.5 g/kg/day on renal replacement therapy. **Do not restrict protein to avoid dialysis** - it produces protein-energy wasting without preventing anything.",
-      ],
-    },
-    {
-      heading: "Dialysis, referral and follow-up",
-      points: [
-        "**Emergency indications for renal replacement therapy - the AEIOU mnemonic:** refractory **A**cidosis, **E**lectrolyte derangement (hyperkalaemia unresponsive to medical treatment), **I**ntoxication with a dialysable poison (methanol, ethylene glycol, lithium, salicylate, metformin-associated lactic acidosis), refractory fluid **O**verload with pulmonary oedema, and **U**raemia with pericarditis, encephalopathy, seizures or intractable vomiting.",
-        "There is **no creatinine or urea number that mandates dialysis** in the absence of these indications; the STARRT-AKI and AKIKI trials showed that a watchful strategy is at least as good as early initiation.",
-        "**Refer to nephrology same-day:** AKI stage 3, any AKI needing dialysis, AKI with an active urinary sediment or suspected glomerulonephritis or vasculitis, AKI with no identified cause, AKI in a transplant recipient, thrombotic microangiopathy, and AKI that has not begun to recover within 5-7 days of correcting the cause.",
-        "**Contrast-associated AKI prevention:** identify eGFR below 30 as the high-risk group, use the smallest volume of low- or iso-osmolar contrast, stop NSAIDs and diuretics, and give **isotonic saline 1 mL/kg/h for 6-12 hours before and after** the study. **N-acetylcysteine and sodium bicarbonate infusions did not work in the PRESERVE trial and are no longer recommended.** Metformin is withheld at the time of contrast when the eGFR is below 30, and for 48 hours afterwards.",
-        "**Follow up every AKI survivor:** AKI trebles the risk of subsequent CKD and doubles cardiovascular risk. Check **creatinine and urine ACR at 3 months**, review and restart held drugs deliberately, record the episode prominently in the case file, and counsel the patient never to take NSAIDs again.",
-        "**Prevention in family practice** is mostly nephrotoxin stewardship and sick-day rules: teach every patient on an ACE inhibitor, ARB, diuretic, metformin or SGLT2 inhibitor to **hold those drugs during vomiting, diarrhoea or fever with poor intake**, and to come for a creatinine check.",
-      ],
-    },
-    {
-      heading: "The syndromes that come up in the viva",
-      points: [
-        "**Hepatorenal syndrome:** AKI in advanced cirrhosis with ascites, a bland sediment, urine sodium below 10 mmol/L, and no improvement after 2 days off diuretics and 1 g/kg/day of albumin. Treated with **terlipressin plus albumin**, and definitively by liver transplantation.",
-        "**Cardiorenal syndrome:** AKI in decompensated heart failure, where the mechanism is venous congestion as much as low output; the correct treatment is usually **more decongestion with intravenous furosemide, not less**, and a modest creatinine rise during effective diuresis should not stop it.",
-        "**Snake-bite AKI:** Russell's viper is the classic Indian cause, producing acute tubular necrosis, cortical necrosis or thrombotic microangiopathy. Give **polyvalent anti-snake venom** as indicated by the 20-minute whole blood clotting time, support the kidney and expect recovery to be slow.",
-        "**Malarial AKI:** falciparum, and increasingly vivax, causing oliguric ATN with jaundice and haemolysis. Treat with **intravenous artesunate 2.4 mg/kg at 0, 12 and 24 hours then daily**, and dialyse early - blackwater fever with haemoglobinuria is the classic presentation.",
-        "**Tumour lysis syndrome:** after chemotherapy for a bulky lymphoma or leukaemia, with hyperuricaemia, hyperkalaemia, hyperphosphataemia and hypocalcaemia; prevent with hydration and **allopurinol or rasburicase**.",
-        "**Abdominal compartment syndrome:** intra-abdominal pressure above 20 mmHg with new organ failure; measure the bladder pressure and consider decompression.",
-      ],
-    },
-  ],
-  tables: [
-    {
-      heading: "KDIGO AKI staging",
-      columns: ["Stage", "Serum creatinine criterion", "Urine output criterion"],
-      rows: [
-        ["1", "1.5-1.9 times baseline, or a rise of 0.3 mg/dL or more within 48 hours", "Below 0.5 mL/kg/h for 6-12 hours"],
-        ["2", "2.0-2.9 times baseline", "Below 0.5 mL/kg/h for 12 hours or more"],
-        ["3", "3.0 times baseline or more, or a rise to 4.0 mg/dL or more, or start of renal replacement therapy, or eGFR below 35 in those under 18 years", "Below 0.3 mL/kg/h for 24 hours or more, or anuria for 12 hours or more"],
-      ],
-    },
-    {
-      heading: "Distinguishing prerenal azotaemia from acute tubular necrosis",
-      columns: ["Parameter", "Prerenal azotaemia", "Acute tubular necrosis"],
-      rows: [
-        ["Urine sediment", "Bland, or hyaline casts", "Muddy brown granular casts, tubular epithelial cells"],
-        ["Urine sodium", "Below 20 mmol/L", "Above 40 mmol/L"],
-        ["Fractional excretion of sodium", "Below 1%", "Above 2%"],
-        ["Fractional excretion of urea (on diuretics)", "Below 35%", "Above 50%"],
-        ["Urine osmolality", "Above 500 mOsm/kg", "Below 350 mOsm/kg"],
-        ["Urine specific gravity", "Above 1.020", "About 1.010 (isosthenuric)"],
-        ["BUN : creatinine ratio", "Above 20 : 1", "Around 10-15 : 1"],
-        ["Response to a fluid challenge", "Creatinine falls within 24-72 hours", "No improvement"],
-      ],
-    },
-  ],
-  redFlags: [
-    "Anuria, or a urine output under 0.3 mL/kg/h for more than 12 hours - stage 3 AKI; admit, exclude obstruction and assess for dialysis today.",
-    "Potassium above 6.0 mmol/L, or any peaked T waves, widened QRS or sine wave on ECG - give calcium gluconate immediately and arrange dialysis.",
-    "Pulmonary oedema with a rising creatinine and no response to intravenous furosemide - refractory overload, an emergency dialysis indication.",
-    "Haemoptysis or haemoserous sputum with haematuria and a rapidly rising creatinine - pulmonary-renal syndrome; same-day nephrology referral for anti-GBM or ANCA disease.",
-    "Bilateral hydronephrosis or a palpable bladder with anuria - obstructive uropathy; pass a catheter now and arrange urgent urology or nephrostomy.",
-    "Tea-coloured urine with severe muscle pain after crush injury or seizures - rhabdomyolysis; check creatine kinase and start aggressive intravenous fluids.",
-    "AKI with fever, jaundice, thrombocytopenia and a recent bite or a rural exposure - suspect snake envenomation, falciparum malaria, leptospirosis or scrub typhus; treat empirically while confirming.",
-  ],
-  pearls: [
-    "Stage AKI on whichever criterion is worse, creatinine or urine output; oliguria alone can make a patient stage 3.",
-    "Every AKI needs an ultrasound and a bladder examination before anything else is blamed - obstruction is the only cause that a catheter cures.",
-    "Creatinine lags the true GFR by a day or two in evolving AKI, so a normal-looking creatinine in an anuric patient is falsely reassuring.",
-    "Balanced crystalloid in 250-500 mL boluses with reassessment after each; never a blind litre-an-hour, and never a starch.",
-    "Diuretics convert oliguric to non-oliguric AKI but do not improve survival or recovery; failure to respond is a signal to plan dialysis.",
-    "Dipstick positive for blood with no red cells on microscopy means myoglobin (rhabdomyolysis) or haemoglobin, not bleeding.",
-    "N-acetylcysteine and bicarbonate infusions do not prevent contrast-associated AKI; isotonic saline and a smaller contrast volume do.",
-    "Every AKI survivor gets a creatinine and an ACR at 3 months, a permanent no-NSAID note, and sick-day rules for their ACE inhibitor, diuretic and metformin.",
-  ],
-  theory: [
-    {
-      id: "renal-urology-acute-kidney-injury-t1",
-      paper: "II",
-      kind: "long",
-      marks: 10,
-      minutes: 20,
-      frequency: "core",
-      question:
-        "A 45-year-old farmer is brought with 4 days of profuse watery diarrhoea and vomiting, has passed only 100 mL of urine in the last 12 hours, and his serum creatinine is 3.8 mg/dL against a value of 0.9 mg/dL six months ago. Define and classify acute kidney injury, and describe your evaluation and management of this man.",
-      openingLines: [
-        "Acute kidney injury is an abrupt decline in glomerular filtration defined by KDIGO 2012 as a rise in serum creatinine of 0.3 mg/dL or more within 48 hours, or a rise to 1.5 times a known or presumed baseline within the previous 7 days, or a urine output below 0.5 mL/kg/h for 6 hours.",
-        "This man's creatinine has risen to more than 4 times his known baseline and he is passing under 0.3 mL/kg/h, so he has KDIGO stage 3 acute kidney injury, almost certainly prerenal from severe gastroenteritis with volume depletion, progressing to ischaemic acute tubular necrosis.",
-      ],
-      answer: [
-        {
-          heading: "1. Definition and staging",
-          points: [
-            "KDIGO criteria: creatinine rise of 0.3 mg/dL or more in 48 hours; or creatinine 1.5 times baseline or more within 7 days; or urine output below 0.5 mL/kg/h for 6 hours.",
-            "Stage 1: creatinine 1.5-1.9 times baseline or a 0.3 mg/dL rise, or urine output below 0.5 mL/kg/h for 6-12 hours.",
-            "Stage 2: creatinine 2.0-2.9 times baseline, or urine output below 0.5 mL/kg/h for 12 hours or more.",
-            "Stage 3: creatinine 3 times baseline or more, or 4.0 mg/dL or more, or dialysis started; or urine output below 0.3 mL/kg/h for 24 hours or anuria for 12 hours.",
-            "Stage on whichever criterion gives the higher stage; state the stage explicitly in the answer.",
-          ],
-        },
-        {
-          heading: "2. Classification of causes",
-          points: [
-            "Prerenal: hypovolaemia from diarrhoea, vomiting, haemorrhage or burns; sepsis; cardiac failure; cirrhosis; and drugs - NSAIDs, ACE inhibitors, ARBs and diuretics.",
-            "Intrinsic renal: acute tubular necrosis (ischaemic or toxic), acute interstitial nephritis, acute glomerulonephritis, and vascular or thrombotic microangiopathic causes.",
-            "Postrenal: bladder outlet obstruction from prostate or blocked catheter, bilateral ureteric calculi, retroperitoneal fibrosis, pelvic malignancy.",
-            "Indian community-acquired causes to name: gastroenteritis, falciparum and vivax malaria, leptospirosis, scrub typhus, dengue, snake bite, septic abortion, copper sulphate and hair-dye poisoning, and herbal nephrotoxins.",
-          ],
-        },
-        {
-          heading: "3. Evaluation of this patient",
-          points: [
-            "Assess volume status first: postural blood pressure and pulse, jugular venous pressure, mucous membranes, skin turgor, weight, and an hourly urine output chart after catheterisation.",
-            "Examine for a palpable bladder and check for obstruction; ultrasound of kidneys, ureters and bladder to exclude hydronephrosis and to confirm normal-sized kidneys.",
-            "Urine routine and microscopy: a bland sediment supports prerenal disease, muddy brown granular casts indicate established acute tubular necrosis.",
-            "Fractional excretion of sodium below 1%, urine sodium below 20 mmol/L, urine osmolality above 500 mOsm/kg and BUN:creatinine above 20:1 support a prerenal state; these become non-discriminatory once tubular necrosis is established or a diuretic has been given.",
-            "Blood tests: electrolytes with potassium and bicarbonate, calcium, phosphate, complete blood count, blood culture, stool examination, malaria smear and antigen, and an ECG for hyperkalaemia.",
-          ],
-        },
-        {
-          heading: "4. Management",
-          points: [
-            "Resuscitate with balanced crystalloid - Ringer's lactate 250-500 mL boluses with clinical reassessment after each - targeting a urine output above 0.5 mL/kg/h, and stop when the jugular venous pressure rises or the bases become wet.",
-            "Correct the cause: oral rehydration solution and zinc for the diarrhoea, antibiotics only if there is dysentery or a septic focus, antiemetic for the vomiting.",
-            "Stop all nephrotoxins - NSAIDs, ACE inhibitors, ARBs, diuretics, metformin and any herbal preparation - and adjust the doses of everything else to the estimated creatinine clearance.",
-            "Treat hyperkalaemia if potassium exceeds 6.0 mmol/L or the ECG is abnormal: calcium gluconate 10 mL of 10% intravenously, insulin 10 units with 25 g dextrose, nebulised salbutamol, bicarbonate if acidotic, and a potassium binder.",
-            "Nutrition at 20-30 kcal/kg/day with 0.8-1.0 g/kg/day of protein; no protein restriction to postpone dialysis.",
-            "Diuretics only for established fluid overload, never to prevent or treat the AKI itself; dopamine and mannitol have no role.",
-          ],
-        },
-        {
-          heading: "5. Indications for dialysis, referral and follow-up",
-          points: [
-            "Dialysis for refractory acidosis, refractory hyperkalaemia, dialysable intoxication, refractory fluid overload, or uraemic pericarditis, encephalopathy or seizures - the AEIOU indications; no number alone mandates dialysis.",
-            "Refer to nephrology the same day: stage 3 AKI, no recovery within 5-7 days, an active urinary sediment, or no identified cause.",
-            "Once recovering, restart held drugs deliberately and one at a time, and document the episode in the case record.",
-            "Follow up at 3 months with creatinine and urine ACR because AKI trebles the future risk of CKD; give lifelong sick-day rules and a permanent instruction to avoid NSAIDs.",
-          ],
-        },
-      ],
-      mustDraw: [
-        "A three-column table of prerenal, renal and postrenal causes with the Indian community-acquired list under each.",
-        "The KDIGO stage 1-3 table with both creatinine and urine output criteria.",
-      ],
-      markSplit: [
-        { part: "KDIGO definition and staging with exact numbers", marks: 2 },
-        { part: "Classification of causes including Indian causes", marks: 2 },
-        { part: "Evaluation - volume status, obstruction, sediment, FeNa", marks: 2 },
-        { part: "Management - fluids, nephrotoxin withdrawal, hyperkalaemia", marks: 3 },
-        { part: "Dialysis indications, referral and 3-month follow-up", marks: 1 },
-      ],
-      keywords: ["KDIGO AKI staging", "prerenal azotaemia", "FeNa", "AEIOU", "balanced crystalloid"],
-    },
-    {
-      id: "renal-urology-acute-kidney-injury-t2",
-      paper: "III",
-      kind: "short-note",
-      marks: 5,
-      minutes: 10,
-      frequency: "common",
-      question: "Write short notes on the indications for and modalities of renal replacement therapy in acute kidney injury.",
-      openingLines: [
-        "Renal replacement therapy in acute kidney injury is started for a life-threatening complication of kidney failure that has not responded to medical treatment, and not for any particular level of urea or creatinine.",
-        "The emergency indications are conventionally remembered as AEIOU: acidosis, electrolyte derangement, intoxication, overload and uraemia.",
-      ],
-      answer: [
-        {
-          heading: "Emergency indications",
-          points: [
-            "Refractory metabolic acidosis, typically pH below 7.1, not corrected by bicarbonate and treatment of the cause.",
-            "Refractory hyperkalaemia - potassium above 6.5 mmol/L, or above 6.0 with ECG changes, not responding to calcium, insulin-dextrose, salbutamol and a binder.",
-            "Intoxication with a dialysable substance: methanol, ethylene glycol, lithium, salicylate, theophylline, and metformin-associated lactic acidosis.",
-            "Refractory fluid overload with pulmonary oedema not responding to intravenous furosemide.",
-            "Uraemic complications: pericarditis or a pericardial rub, encephalopathy, asterixis, seizures, or intractable vomiting.",
-          ],
-        },
-        {
-          heading: "Modalities",
-          points: [
-            "Intermittent haemodialysis: 3-4 hours, high efficiency, needs a stable blood pressure and a dialysis unit; the standard modality in Indian district hospitals and under the Pradhan Mantri National Dialysis Programme.",
-            "Continuous renal replacement therapy (CVVH, CVVHD, CVVHDF): slow, better tolerated in haemodynamic instability and raised intracranial pressure, needs an intensive care unit and continuous anticoagulation; costly and available only in tertiary centres.",
-            "Sustained low-efficiency dialysis (SLED): 6-12 hours on a standard dialysis machine, a practical hybrid widely used in India for the unstable patient.",
-            "Acute peritoneal dialysis: no vascular access or anticoagulation needed, useful in children, in haemodynamic instability, and where haemodialysis is unavailable; contraindicated after recent abdominal surgery or with peritonitis.",
-            "Vascular access is a non-tunnelled double-lumen catheter in the right internal jugular vein by preference, then femoral, and the subclavian last because of stenosis risk in a patient who may later need a fistula.",
-          ],
-        },
-        {
-          heading: "Timing and important negatives",
-          points: [
-            "The AKIKI, IDEAL-ICU and STARRT-AKI trials showed no survival benefit from starting dialysis early in the absence of an emergency indication, so a watchful strategy with close monitoring is appropriate.",
-            "No absolute urea or creatinine value mandates dialysis; the decision is clinical.",
-            "Complications to mention: hypotension, disequilibrium syndrome, bleeding, catheter-related bloodstream infection, and arrhythmia.",
-          ],
-        },
-      ],
-      mustDraw: ["A table of the AEIOU indications against the specific numeric or clinical trigger for each."],
-      markSplit: [
-        { part: "AEIOU indications with triggers", marks: 2 },
-        { part: "Modalities and their place", marks: 2 },
-        { part: "Timing evidence and access", marks: 1 },
-      ],
-      keywords: ["AEIOU", "SLED", "CRRT", "peritoneal dialysis", "STARRT-AKI"],
-    },
-  ],
-  mcqs: [
-    {
-      id: "renal-urology-acute-kidney-injury-m1",
-      stem: "A 62-year-old woman weighing 60 kg is admitted after 3 days of fever and poor intake. Her serum creatinine is 1.6 mg/dL, up from 1.3 mg/dL two days earlier, and she has passed 260 mL of urine in the last 14 hours. What is her KDIGO stage of acute kidney injury?",
-      options: ["No AKI, as the creatinine rise is under 50%", "Stage 1", "Stage 2", "Stage 3"],
-      answer: 3,
-      explanation:
-        "Her urine output is 260 mL over 14 hours, which is 18.6 mL/h, or 0.31 mL/kg/h - but averaged over the period the relevant question is whether she has been below 0.3 mL/kg/h for 24 hours or below 0.5 mL/kg/h for 12 hours or more. At 0.31 mL/kg/h she has been under 0.5 mL/kg/h for 14 hours, which meets the stage 2 urine criterion, and the creatinine rise of 0.3 mg/dL within 48 hours meets stage 1. The correct answer is therefore the higher of the two, and the intended teaching point is that staging uses whichever criterion is worse. Option 1 is wrong because an absolute rise of 0.3 mg/dL in 48 hours is itself diagnostic of AKI regardless of the percentage change. Option 2 is wrong because it ignores the urine output criterion, which upgrades her. Option 4 as written is the trap: stage 3 requires under 0.3 mL/kg/h for 24 hours or anuria for 12 hours, and 14 hours at 0.31 mL/kg/h does not reach it - so a candidate who picks stage 3 has failed to check the duration. Read the question as testing that discipline: the defensible stage on these numbers is stage 2, and the examiner's point is that both axes must be checked before answering.",
-      difficulty: "hard",
-    },
-    {
-      id: "renal-urology-acute-kidney-injury-m2",
-      stem: "A 55-year-old man on telmisartan and ibuprofen for knee pain presents with 5 days of vomiting. Creatinine 2.6 mg/dL (baseline 1.0), urine sodium 12 mmol/L, FeNa 0.4%, urine microscopy bland, ultrasound shows normal-sized kidneys with no hydronephrosis. Which single step will most improve his kidney function?",
-      options: [
-        "Start intravenous furosemide 40 mg twice daily",
-        "Give balanced crystalloid in boluses and stop the ibuprofen and telmisartan",
-        "Start low-dose dopamine at 2 micrograms/kg/min",
-        "Arrange urgent haemodialysis",
-      ],
-      answer: 1,
-      explanation:
-        "A FeNa below 1%, urine sodium below 20 mmol/L and a bland sediment define prerenal azotaemia, and the treatment is volume repletion plus removal of the drugs that are blocking autoregulation - the NSAID constricting the afferent arteriole and the ARB dilating the efferent one. Furosemide is wrong because he is volume depleted, not overloaded; a diuretic here deepens the injury and diuretics have never been shown to prevent or treat AKI. Low-dose dopamine is a discredited intervention with no effect on renal outcomes and a real risk of tachyarrhythmia and gut ischaemia. Haemodialysis is wrong because he has none of the AEIOU emergency indications and prerenal AKI is expected to correct within 24-72 hours of adequate resuscitation.",
-      difficulty: "easy",
-    },
-    {
-      id: "renal-urology-acute-kidney-injury-m3",
-      stem: "A 28-year-old labourer is brought after being trapped under rubble for 6 hours. He has painful swollen thighs, passes small amounts of dark brown urine, and dipstick is strongly positive for blood but microscopy shows no red cells. Which investigation confirms the diagnosis?",
-      options: ["Urine culture", "Serum creatine kinase", "Renal Doppler ultrasound", "Anti-GBM antibody"],
-      answer: 1,
-      explanation:
-        "A dipstick positive for blood with no red cells on microscopy means the dipstick is reacting to myoglobin or haemoglobin, and in this crush-injury setting it is myoglobinuric rhabdomyolysis; a creatine kinase above 5000 U/L, usually far higher, confirms it, alongside hyperkalaemia, hyperphosphataemia and hypocalcaemia. Urine culture is irrelevant as there is no infective story and pyuria is not described. Renal Doppler would look for vascular occlusion, which does not explain the muscle findings or the dipstick-microscopy mismatch. Anti-GBM antibody tests for Goodpasture disease, which causes a nephritic sediment with dysmorphic red cells and red cell casts - the opposite of the finding here.",
-      difficulty: "easy",
-    },
-    {
-      id: "renal-urology-acute-kidney-injury-m4",
-      stem: "A 70-year-old diabetic man with eGFR 26 mL/min/1.73 m2 is scheduled for a contrast-enhanced CT. Which measure has the best evidence for reducing contrast-associated acute kidney injury?",
-      options: [
-        "Oral N-acetylcysteine 1200 mg twice daily for 2 days",
-        "Isotonic saline 1 mL/kg/h for 6-12 hours before and after the study, with the smallest possible contrast volume",
-        "Sodium bicarbonate infusion at 3 mL/kg/h for 1 hour before the study",
-        "Prophylactic haemodialysis immediately after the study",
-      ],
-      answer: 1,
-      explanation:
-        "Volume expansion with isotonic saline plus contrast minimisation and withdrawal of nephrotoxins is the only strategy that survives the evidence; the PRESERVE trial randomised over 5000 high-risk patients and found no benefit from either N-acetylcysteine or sodium bicarbonate over saline, which is why options 1 and 3 are wrong even though both were once standard. Prophylactic dialysis after contrast does not prevent injury, exposes the patient to catheter and haemodynamic risk, and removes contrast too late to matter. Note also that metformin should be withheld at the time of contrast when the eGFR is below 30 and for 48 hours after.",
-      difficulty: "moderate",
-    },
-    {
-      id: "renal-urology-acute-kidney-injury-m5",
-      stem: "A 48-year-old woman with AKI following septic abortion has a potassium of 6.8 mmol/L, pH 7.06, bicarbonate 9 mmol/L, and bilateral basal crepitations with an oxygen saturation of 88% on room air despite 80 mg of intravenous furosemide. What is the most appropriate next step?",
-      options: [
-        "Repeat intravenous furosemide 120 mg and reassess in 2 hours",
-        "Start a sodium bicarbonate infusion and recheck the blood gas in 4 hours",
-        "Arrange urgent haemodialysis after giving calcium gluconate and insulin-dextrose",
-        "Start oral potassium binder and restrict fluids to 500 mL per day",
-      ],
-      answer: 2,
-      explanation:
-        "She has three simultaneous emergency indications for renal replacement therapy - refractory hyperkalaemia, severe metabolic acidosis and diuretic-refractory pulmonary oedema - so dialysis must be arranged now, with calcium gluconate and insulin-dextrose given immediately as a bridge to protect the myocardium while access is obtained. Escalating furosemide in a patient who has already failed 80 mg wastes the hour that matters and risks ototoxicity. A bicarbonate infusion delivers a sodium load into established pulmonary oedema and will not correct a pH of 7.06 driven by ongoing kidney failure. An oral potassium binder acts far too slowly for a potassium of 6.8 mmol/L and does nothing for the acidosis or the overload.",
-      difficulty: "moderate",
-    },
-  ],
-  cards: [
-    {
-      id: "renal-urology-acute-kidney-injury-c1",
-      front: "State the three KDIGO criteria for diagnosing AKI.",
-      back: "Creatinine rise of 0.3 mg/dL or more within 48 hours; OR creatinine 1.5 times baseline or more within the prior 7 days; OR urine output below 0.5 mL/kg/h for 6 hours.",
-    },
-    {
-      id: "renal-urology-acute-kidney-injury-c2",
-      front: "KDIGO AKI stage 3 criteria.",
-      back: "Creatinine 3 times baseline or more, or a rise to 4.0 mg/dL or more, or start of renal replacement therapy (or eGFR under 35 if aged under 18); OR urine output under 0.3 mL/kg/h for 24 hours or anuria for 12 hours.",
-    },
-    {
-      id: "renal-urology-acute-kidney-injury-c3",
-      front: "Write the fractional excretion of sodium formula and its cut-offs.",
-      back: "FeNa = (urine Na x plasma creatinine) / (plasma Na x urine creatinine) x 100. Below 1% = prerenal; above 2% = acute tubular necrosis. Invalid after diuretics - use FeUrea, where below 35% is prerenal.",
-    },
-    {
-      id: "renal-urology-acute-kidney-injury-c4",
-      front: "The AEIOU indications for dialysis in AKI.",
-      back: "Acidosis (refractory), Electrolytes (refractory hyperkalaemia), Intoxication (methanol, ethylene glycol, lithium, salicylate), Overload (refractory pulmonary oedema), Uraemia (pericarditis, encephalopathy, seizures, intractable vomiting).",
-    },
-    {
-      id: "renal-urology-acute-kidney-injury-c5",
-      front: "Urinary sediment findings and what each means in AKI.",
-      back: "Bland - prerenal or postrenal; muddy brown granular casts and tubular cells - ATN; dysmorphic RBCs and RBC casts - glomerulonephritis; WBC casts with eosinophiluria - acute interstitial nephritis.",
-    },
-    {
-      id: "renal-urology-acute-kidney-injury-c6",
-      front: "Emergency treatment of hyperkalaemia, with doses.",
-      back: "Calcium gluconate 10 mL of 10% IV over 2-3 min; insulin 10 units regular in 25 g dextrose; salbutamol 10-20 mg nebulised; sodium bicarbonate if acidotic; potassium binder; dialysis if refractory.",
-    },
-    {
-      id: "renal-urology-acute-kidney-injury-c7",
-      front: "Common community-acquired causes of AKI in India.",
-      back: "Acute gastroenteritis, falciparum and vivax malaria, leptospirosis, scrub typhus, dengue, snake envenomation, septic abortion and obstetric haemorrhage, copper sulphate and hair-dye poisoning, and herbal nephrotoxins.",
-    },
-    {
-      id: "renal-urology-acute-kidney-injury-c8",
-      front: "What follow-up does every AKI survivor need?",
-      back: "Serum creatinine and urine ACR at 3 months (AKI trebles the risk of CKD), deliberate restarting of held drugs, a permanent no-NSAID instruction, and sick-day rules for ACE inhibitors, ARBs, diuretics, metformin and SGLT2 inhibitors.",
-    },
-  ],
-  references: [
-    "KDIGO 2012 Clinical Practice Guideline for Acute Kidney Injury, Kidney International Supplements",
-    "KDIGO 2024 Clinical Practice Guideline for the Evaluation and Management of Chronic Kidney Disease - acute kidney disease definitions",
-    "Indian Society of Nephrology - Acute Kidney Injury in the Tropics, Indian Journal of Nephrology review series",
-    "National Guidelines for Snakebite Management in India, MoHFW, 2022",
-    "National Guidelines for Diagnosis and Treatment of Malaria in India, NCVBDC, 2023",
-    "Harrison's Principles of Internal Medicine, 21st edition, 2022 - acute kidney injury",
-  ],
-});
-topics.push({
   id: "psychiatry-anxiety",
   title: "Anxiety disorders and panic: GAD-7, panic attacks and the drugs that help",
   oneLiner:
@@ -1142,404 +761,6 @@ topics.push({
     "Indian Psychiatric Society Clinical Practice Guidelines for the management of anxiety disorders, 2017",
     "WHO mhGAP Intervention Guide, version 2.0, 2016",
     "National Mental Health Survey of India 2015-16, NIMHANS, 2016",
-  ],
-});
-topics.push({
-  id: "dermatology-scabies-pediculosis",
-  title: "Scabies and pediculosis, including treatment of the whole household",
-  oneLiner:
-    "Scabies is an intensely pruritic infestation by the mite Sarcoptes scabiei var. hominis in which nocturnal itch, burrows and papules in the finger webs, wrists, axillae, waist and genitalia, and a history of itching in other members of the household, make the diagnosis clinically, and the cure depends entirely on treating every contact simultaneously with topical permethrin 5 per cent or oral ivermectin plus decontamination of clothes and bedding.",
-  frequency: "core",
-  keywords: [
-    "scabies",
-    "Sarcoptes scabiei",
-    "burrow",
-    "nocturnal pruritus",
-    "permethrin",
-    "ivermectin",
-    "benzyl benzoate",
-    "crusted scabies",
-    "Norwegian scabies",
-    "pediculosis capitis",
-    "pediculosis corporis",
-    "pthirus pubis",
-    "nits",
-    "malathion",
-    "post-scabetic itch",
-    "dermoscopy delta sign",
-    "impetigo",
-    "household contacts",
-  ],
-  sections: [
-    {
-      heading: "The organism, the transmission and why the whole family matters",
-      points: [
-        "Scabies is caused by **Sarcoptes scabiei var. hominis**, an obligate human mite; the fertilised female burrows into the stratum corneum at about 2 mm a day and lays two to three eggs daily for a life of four to six weeks, and an ordinary patient carries only **10 to 15 adult mites** on the whole body.",
-        "Transmission needs **prolonged skin-to-skin contact of 15 to 20 minutes**, which is why it runs through households, hostels, orphanages, prisons and shared beds rather than through casual handshakes; fomite transmission through shared clothes and bedding is real but secondary, except in crusted scabies where it is the dominant route.",
-        "The itch is a **type IV delayed hypersensitivity reaction to mite antigen, faeces and eggs**, so a first infestation stays silent for **four to six weeks** before itching begins, while a re-infestation itches within one to four days - this incubation period is the reason asymptomatic contacts must still be treated.",
-        "In Indian general practice scabies clusters in the rainy and winter months, in overcrowded housing and where water for washing is short; the classical exam history is **itching worse at night that disturbs sleep, with at least one other person in the house itching**.",
-        "Scabies is a **WHO-recognised neglected tropical disease** since 2017, with an estimated 200 million people affected at any time, and in India it is one of the commonest reasons for a skin consultation in primary care.",
-        "Untreated scabies in children is a major driver of **streptococcal pyoderma and therefore of acute post-streptococcal glomerulonephritis and acute rheumatic fever**, which is why treating scabies is a public health act and not merely a comfort measure.",
-      ],
-    },
-    {
-      heading: "Clinical features and the lesion vocabulary to use",
-      points: [
-        "Describe the eruption in the fixed order - **number, site and distribution, size, shape, surface, margin, colour, arrangement and secondary change**; in scabies the answer is multiple, symmetrical, 1 to 3 mm erythematous **papules and papulovesicles with excoriations and crusting**, discrete but grouped, in a characteristic distribution below the neck.",
-        "The **pathognomonic primary lesion is the burrow**: a 3 to 10 mm greyish, serpiginous or S-shaped thread-like ridge with a minute vesicle or black dot (the mite) at one end, best seen on the finger webs, the sides of the fingers, the flexor wrists and the ulnar border of the hand.",
-        "**Sites of predilection** - finger webs, flexor wrists, elbows, anterior axillary folds, periumbilical skin and waist, buttocks, areolae in women, and the penis and scrotum in men; **itchy papules or nodules on the glans, shaft and scrotum are almost diagnostic of scabies in an adult male**.",
-        "**The head and neck are spared in adults but involved in infants and in the elderly**; in infants under two years the palms, soles, scalp and face are typically affected with vesicles, pustules and nodules, and secondary eczematisation is common.",
-        "Secondary lesions dominate what you actually see: **excoriations proving the itch, honey-coloured crusts of secondary impetigo, eczematisation and post-inflammatory hyperpigmentation**; lichenification appears where the patient has scratched for months.",
-        "**Nodular scabies** presents as firm, reddish-brown, intensely itchy 5 to 10 mm nodules on the scrotum, penis, groins and axillae that are a persistent hypersensitivity granuloma and may **persist for weeks to months after the mite is dead**, needing intralesional or potent topical steroid rather than more scabicide.",
-      ],
-    },
-    {
-      heading: "Variants that change the management",
-      points: [
-        "**Crusted (Norwegian) scabies** occurs in HIV infection, human T-lymphotropic virus 1 infection, lepromatous leprosy, malnutrition, Down syndrome, dementia, paralysis and long-term topical or systemic steroid use, and carries **thousands to millions of mites**.",
-        "It presents as **thick, warty, fissured hyperkeratotic crusts on the hands, feet, elbows, scalp and under the nails, with gross nail dystrophy and subungual debris, and characteristically little or no itch**; it is highly contagious and is the usual index case behind an institutional outbreak.",
-        "Crusted scabies needs **combined therapy - a keratolytic such as 5 per cent salicylic acid ointment, topical permethrin daily then twice weekly, plus oral ivermectin 200 microgram per kilogram on days 1, 2, 8, 9 and 15, extended to days 22 and 29 in severe disease** - and barrier nursing with gowns and gloves.",
-        "**Scabies incognito** results from topical or systemic steroids that suppress the inflammatory response: the eruption becomes atypical and widespread, burrows are hard to find, and the itch is disproportionate to a bland-looking rash - a common trap in Indian practice where potent steroid combination creams are sold over the counter.",
-        "**Bullous scabies** in the elderly mimics bullous pemphigoid, and **scabies in the very clean patient** may show only a handful of papules on the wrists; both are diagnosed by taking the household history seriously.",
-        "**Secondary bacterial infection** with Staphylococcus aureus or Streptococcus pyogenes produces impetigo, ecthyma, folliculitis or cellulitis and must be treated with oral cloxacillin or amoxicillin-clavulanate before or alongside the scabicide.",
-      ],
-    },
-    {
-      heading: "Diagnosis, differential diagnosis and bedside tests",
-      points: [
-        "Scabies is a **clinical diagnosis** made on the triad of nocturnal itch, typical distribution and an affected household contact; the 2020 International Alliance for the Control of Scabies (IACS) criteria grade the diagnosis as confirmed (mite, egg or faecal pellet seen), clinical (burrows, typical genital or infant lesions) or suspected.",
-        "**Skin scraping**: place a drop of mineral oil or 10 per cent potassium hydroxide on an unexcoriated burrow or papule, scrape with a number 15 blade held tangentially until pinpoint bleeding, and look under low power for **mites, oval eggs or brown faecal pellets (scybala)**.",
-        "**Burrow ink test**: rub fountain-pen ink over a suspected burrow and wipe with alcohol - retained ink outlines a zig-zag track; **dermoscopy** shows the dark triangular head and mouthparts of the mite at the end of the burrow, the **delta-wing jet or hang-glider sign**.",
-        "**Differential diagnosis** - papular urticaria from insect bites (grouped on exposed limbs, seropapules, no burrows, no genital lesions), atopic dermatitis (flexural, personal or family atopy, no household clustering), pediculosis corporis (lesions along seam-contact areas of the trunk, lice in clothing seams), contact dermatitis, dermatitis herpetiformis and papular eruption of HIV.",
-        "**Post-scabetic itch** persists for two to four weeks after successful treatment because the antigen remains in the stratum corneum; treat it with emollients, a mild to moderate topical steroid and an oral antihistamine, and **do not repeat the scabicide**, because repeated application itself causes an irritant dermatitis that mimics failure.",
-        "Suspect **true treatment failure** if new burrows or new papules appear more than two weeks after treatment, and then ask about the three real causes - untreated contacts, incorrect application technique, and failure to decontaminate clothing and bedding.",
-      ],
-    },
-    {
-      heading: "Treatment of the patient and of the whole household",
-      points: [
-        "**Permethrin 5 per cent cream is first line at all ages above two months and in pregnancy and lactation**: apply to the whole body from the neck down (including the face and scalp in infants, the elderly and the immunosuppressed), leave for **8 to 14 hours (overnight)**, wash off, and **repeat once after 7 days** to kill mites hatching from eggs that survive the first application.",
-        "Application technique earns the mark: **apply after a bath to cool dry skin, cover every fold - behind the ears, umbilicus, natal cleft, genitalia, under the breasts and under the finger and toe nails after cutting them short - and reapply to the hands after every hand wash**; an adult needs about 30 grams per application.",
-        "**Oral ivermectin 200 microgram per kilogram as a single dose repeated after 7 to 14 days** is preferred for institutional outbreaks, crusted scabies, treatment failures and where topical application cannot be supervised; it is **not recommended in children under 15 kilograms or under 5 years, and is avoided in pregnancy and lactation**. Take it with food to improve absorption.",
-        "Alternatives - **benzyl benzoate 25 per cent lotion** (dilute to 12.5 per cent for children and 6.25 per cent for infants) applied on three consecutive nights, cheap and effective but stinging and irritant; **sulphur 5 to 10 per cent in petrolatum** for three consecutive nights, malodorous and staining but the safest option in infants under two months and in pregnancy; **crotamiton 10 per cent**, which is antipruritic but least effective; **lindane is no longer recommended** because of neurotoxicity.",
-        "**Treat every household member and every intimate or close physical contact of the last six weeks on the same day, whether or not they itch**, because contacts are in the asymptomatic incubation period and will otherwise re-infest the index case - this single sentence is the most examined point in the topic.",
-        "**Decontamination**: machine wash clothes, towels and bed linen used in the last three days in hot water above 60 degrees Celsius and dry in the sun or a hot dryer, or iron them; items that cannot be washed should be **sealed in a plastic bag for 72 hours to seven days**, since the mite dies within 2 to 3 days away from human skin. Fumigation of the house is unnecessary.",
-        "Also treat the complications: **oral antihistamine (hydroxyzine 25 mg at night or cetirizine 10 mg) for itch, emollients, and oral antibiotics for pyoderma**; screen the child for haematuria three weeks later if streptococcal impetigo was present, and check for other sexually transmitted infections when scabies is acquired sexually.",
-      ],
-    },
-    {
-      heading: "Pediculosis: head, body and pubic lice",
-      points: [
-        "**Pediculosis capitis** is caused by Pediculus humanus capitis, spreads by head-to-head contact and shared combs in schoolgirls, and presents with occipital and retroauricular itch, excoriation, occipital lymphadenopathy and secondary impetigo; the diagnosis is confirmed by **finding a live louse, since nits (egg cases) firmly cemented to the hair shaft may persist long after cure**.",
-        "Treat head lice with **permethrin 1 per cent cream rinse applied to damp hair for 10 minutes, or 5 per cent for 8 hours, repeated after 7 days**, or **malathion 0.5 per cent lotion for 8 to 12 hours**; add **wet combing with a fine-toothed nit comb and conditioner every 3 to 4 days for two weeks**, and treat affected household members. Oral ivermectin 200 microgram per kilogram on days 1 and 8 is used for resistant cases.",
-        "**Pediculosis corporis** is a disease of poverty and homelessness: the louse **lives and lays eggs in the seams of clothing, not on the body**, and produces itchy excoriated papules and, over years, the pigmented lichenified back of **vagabond's disease**; treatment is **hot washing, ironing or discarding the clothing plus personal hygiene**, with permethrin to the body only if lice are found on skin.",
-        "The body louse is a **vector of epidemic typhus (Rickettsia prowazekii), trench fever (Bartonella quintana) and relapsing fever (Borrelia recurrentis)** - the head louse and pubic louse transmit no disease, and this contrast is a standard viva question.",
-        "**Pediculosis pubis** is caused by Pthirus pubis, is sexually transmitted, causes itching in the pubic area with **bluish-grey macules (maculae ceruleae)** and rust-coloured specks of louse faeces on the underclothes; treat with permethrin 1 per cent or 5 per cent, treat sexual partners of the last month, and **screen for other sexually transmitted infections including HIV, syphilis and gonorrhoea**.",
-        "**Phthiriasis palpebrarum** (pubic lice on the eyelashes in a child) raises the question of sexual abuse and is treated with **thick petrolatum to the lid margins twice daily for 8 to 10 days plus mechanical removal**, never with a neurotoxic pediculicide near the eye.",
-      ],
-    },
-  ],
-  tables: [
-    {
-      heading: "Scabicides: dose, contact time and safety",
-      columns: ["Drug", "Strength and route", "Contact time and repeat", "Safe in", "Cautions"],
-      rows: [
-        ["Permethrin", "5 per cent cream, topical", "8 to 14 hours overnight, repeat day 7", "Above 2 months, pregnancy, lactation", "Costliest topical; mild burning"],
-        ["Ivermectin", "200 microgram/kg oral", "Single dose, repeat day 7 to 14", "Adults, children above 15 kg", "Avoid under 5 years, pregnancy, lactation"],
-        ["Benzyl benzoate", "25 per cent lotion (dilute for children)", "3 consecutive nights", "Adults, older children", "Stings on excoriated skin, irritant dermatitis"],
-        ["Sulphur", "5 to 10 per cent in petrolatum", "3 consecutive nights", "Infants under 2 months, pregnancy", "Malodorous, stains clothes"],
-        ["Crotamiton", "10 per cent cream or lotion", "2 to 5 consecutive nights", "Children, antipruritic", "Least effective as a scabicide"],
-        ["Lindane", "1 per cent lotion", "8 hours, single application", "Not recommended", "Neurotoxicity, seizures, aplastic anaemia"],
-      ],
-    },
-    {
-      heading: "The three pediculoses compared",
-      columns: ["Feature", "Pediculosis capitis", "Pediculosis corporis", "Pediculosis pubis"],
-      rows: [
-        ["Organism", "Pediculus humanus capitis", "Pediculus humanus corporis", "Pthirus pubis (crab louse)"],
-        ["Where the louse lives", "Scalp hair, close to the skin", "Seams of clothing", "Pubic, axillary, beard hair, eyelashes"],
-        ["Typical patient", "School child, girls more than boys", "Homeless, destitute, unwashed clothing", "Sexually active adult"],
-        ["Key sign", "Nits cemented to hair, occipital nodes", "Excoriated back, vagabond pigmentation", "Maculae ceruleae, rusty specks on underwear"],
-        ["Vector of disease", "No", "Epidemic typhus, trench fever, relapsing fever", "No"],
-        ["Treatment", "Permethrin 1 per cent plus wet combing, repeat day 7", "Wash, iron or discard clothing; hygiene", "Permethrin plus partner treatment and STI screen"],
-      ],
-    },
-  ],
-  redFlags: [
-    "Thick hyperkeratotic crusts with nail dystrophy and little itch - crusted scabies; isolate, investigate for HIV or other immunosuppression, and start combined ivermectin and topical therapy.",
-    "Fever, spreading erythema, tenderness or lymphangitis over excoriated scabies - cellulitis needing systemic antibiotics the same day.",
-    "Puffy eyelids, smoky urine or hypertension two to three weeks after impetiginised scabies in a child - acute post-streptococcal glomerulonephritis; check urine and blood pressure.",
-    "An institutional or hostel outbreak, or a bedridden patient in a nursing home - mass treatment of all residents and staff on a single day is required, not case-by-case treatment.",
-    "Scabies in an infant with failure to thrive, or widespread atypical scabies in an adult - test for HIV and for underlying immunosuppression.",
-    "Pubic lice on the eyelashes of a prepubertal child - evaluate for sexual abuse under the POCSO framework.",
-  ],
-  pearls: [
-    "The mark-carrying sentence is: treat all household and close contacts simultaneously on the same day, whether or not they itch, and decontaminate clothes and bedding.",
-    "Itch that wakes the patient at night plus another itching person in the house is scabies until proved otherwise, even without a visible burrow.",
-    "Itchy papules or nodules on the scrotum or penis in a man, and on the areolae in a woman, are close to diagnostic of scabies.",
-    "Adults are spared above the neck, infants are not - always treat the scalp and face in a baby under two years.",
-    "Post-scabetic itch lasts two to four weeks and is treated with emollients, a mild steroid and an antihistamine, not with more scabicide.",
-    "Permethrin needs a second application on day 7 because it is not fully ovicidal; a single application is the commonest reason for apparent treatment failure.",
-    "Nits alone do not mean active head lice - look for a live, moving louse before re-treating.",
-    "Crusted scabies is not itchy, and the patient who does not itch is the one who infests the whole ward.",
-  ],
-  theory: [
-    {
-      id: "dermatology-scabies-pediculosis-t1",
-      paper: "III",
-      kind: "long",
-      marks: 10,
-      minutes: 20,
-      frequency: "core",
-      question:
-        "A 24-year-old man presents with intense itching worse at night for three weeks. His wife and two children are also itching. Describe the clinical features, diagnosis and complete management of this condition including the household.",
-      openingLines: [
-        "This is scabies, an infestation of the stratum corneum by the mite Sarcoptes scabiei var. hominis, transmitted by prolonged skin-to-skin contact, and presenting with nocturnal pruritus, burrows and papules in a characteristic distribution with clustering of cases in a household.",
-        "The itch is a delayed type IV hypersensitivity response to mite antigen, appearing four to six weeks after a first infestation and within one to four days on re-infestation, which is why asymptomatic contacts must also be treated.",
-      ],
-      answer: [
-        {
-          heading: "1. Clinical features",
-          points: [
-            "Symptom: generalised itching that is characteristically worse at night and on warming in bed, disturbing sleep, with a history of similar itching in family members or bed partners.",
-            "Primary lesions: the burrow - a 3 to 10 mm greyish serpiginous ridge with a vesicle or black dot at one end - along with 1 to 3 mm erythematous papules and papulovesicles.",
-            "Distribution: finger webs, sides of fingers, flexor wrists, elbows, anterior axillary folds, periumbilical area and waist, buttocks, areolae in women, penis and scrotum in men; head and neck spared in adults but involved in infants.",
-            "Secondary lesions: excoriations, eczematisation, honey-coloured crusts of impetigo, lichenification and post-inflammatory hyperpigmentation.",
-            "Variants: nodular scabies on the genitalia, crusted (Norwegian) scabies in the immunosuppressed, scabies incognito after topical steroid use, and bullous scabies in the elderly.",
-          ],
-        },
-        {
-          heading: "2. Diagnosis",
-          points: [
-            "Clinical, using the IACS 2020 criteria: confirmed when a mite, egg or faecal pellet is demonstrated; clinical when burrows or typical genital or infant lesions are present; suspected on typical distribution with a contact history.",
-            "Skin scraping in mineral oil or 10 per cent KOH from an unexcoriated burrow, showing mites, eggs or scybala.",
-            "Burrow ink test and dermoscopy showing the delta-wing jet sign of the mite head at the end of a burrow.",
-            "Differential diagnosis: papular urticaria, atopic dermatitis, pediculosis corporis, contact dermatitis, dermatitis herpetiformis and papular pruritic eruption of HIV.",
-          ],
-        },
-        {
-          heading: "3. Treatment of the patient",
-          points: [
-            "Permethrin 5 per cent cream to the whole body from the neck down after a bath, left for 8 to 14 hours overnight, washed off, and repeated once after 7 days; about 30 g per adult application, reapplied to the hands after washing.",
-            "Alternatives: oral ivermectin 200 microgram per kilogram on day 1 and repeated day 7 to 14; benzyl benzoate 25 per cent on three consecutive nights; sulphur 5 to 10 per cent ointment for infants under two months and in pregnancy.",
-            "Symptomatic treatment: emollients, oral antihistamine such as hydroxyzine 25 mg at night, and a moderate topical corticosteroid for eczematisation and for post-scabetic itch.",
-            "Secondary pyoderma: oral cloxacillin 500 mg six hourly or amoxicillin-clavulanate for five to seven days; screen for haematuria and hypertension three weeks later.",
-          ],
-        },
-        {
-          heading: "4. Treatment of the household and environment",
-          points: [
-            "All household members, bed partners and close physical contacts of the previous six weeks are treated on the same day, whether or not they are symptomatic.",
-            "Clothes, towels and bed linen of the last three days are washed at above 60 degrees Celsius and sun dried or ironed; non-washable items are sealed in a plastic bag for 72 hours to one week.",
-            "The mite survives only 2 to 3 days off the host, so fumigation and disinfection of the house are unnecessary.",
-            "Counsel that itching may persist two to four weeks after cure and does not mean failure; review at two weeks and treat again only if new burrows or new papules have appeared.",
-          ],
-        },
-        {
-          heading: "5. Public health note",
-          points: [
-            "Scabies is a WHO neglected tropical disease; mass drug administration with ivermectin is used in high-prevalence communities and institutional outbreaks.",
-            "Control of scabies reduces streptococcal pyoderma and hence acute post-streptococcal glomerulonephritis and acute rheumatic fever in children.",
-          ],
-        },
-      ],
-      mustDraw: [
-        "A figure of the body showing the sites of predilection of scabies in an adult and in an infant.",
-        "A table of scabicides with strength, contact time, repeat schedule and safety in pregnancy and infancy.",
-      ],
-      markSplit: [
-        { part: "Clinical features and variants", marks: 3 },
-        { part: "Diagnosis and differential diagnosis", marks: 2 },
-        { part: "Treatment of the patient", marks: 3 },
-        { part: "Household treatment and decontamination", marks: 2 },
-      ],
-      keywords: ["scabies", "permethrin", "ivermectin", "burrow", "household contacts", "nocturnal itch"],
-    },
-    {
-      id: "dermatology-scabies-pediculosis-t2",
-      paper: "III",
-      kind: "short-note",
-      marks: 5,
-      minutes: 10,
-      frequency: "common",
-      question: "Write short notes on crusted (Norwegian) scabies.",
-      openingLines: [
-        "Crusted or Norwegian scabies is a hyperinfestation with Sarcoptes scabiei carrying thousands to millions of mites, occurring in immunosuppressed, neurologically impaired or malnourished hosts who cannot mount an effective scratch or immune response.",
-        "It is extremely contagious and is typically the index case behind an outbreak in a family, hospital ward or old age home.",
-      ],
-      answer: [
-        {
-          heading: "Predisposing factors",
-          points: [
-            "HIV infection, HTLV-1 infection, lymphoma and organ transplantation.",
-            "Lepromatous leprosy, Down syndrome, dementia, paralysis, spinal cord injury and severe malnutrition.",
-            "Prolonged topical or systemic corticosteroid use, including over-the-counter steroid combination creams.",
-          ],
-        },
-        {
-          heading: "Clinical features",
-          points: [
-            "Thick, warty, fissured hyperkeratotic crusts on hands, feet, elbows, knees, scalp and ears, with generalised scaling that may progress to erythroderma.",
-            "Gross nail thickening with subungual hyperkeratotic debris that harbours mites.",
-            "Itch is mild or absent, which delays diagnosis; a foul smell and secondary bacterial infection are common.",
-            "Complications: sepsis from Staphylococcus aureus or Streptococcus pyogenes bacteraemia, which is the main cause of death.",
-          ],
-        },
-        {
-          heading: "Diagnosis and treatment",
-          points: [
-            "Scraping of crust shows innumerable mites and eggs; skin biopsy shows mites in a thickened hyperkeratotic stratum corneum.",
-            "Combined therapy: oral ivermectin 200 microgram per kilogram on days 1, 2, 8, 9 and 15, extended to days 22 and 29 in severe cases.",
-            "Topical permethrin 5 per cent daily for seven days then twice weekly until cure, with 5 per cent salicylic acid or urea ointment as a keratolytic to allow penetration.",
-            "Barrier nursing with gloves and gowns, isolation, decontamination of linen, and simultaneous treatment of all contacts and health care staff.",
-            "Investigate for the underlying immunosuppression, particularly HIV testing.",
-          ],
-        },
-      ],
-      markSplit: [
-        { part: "Definition and predisposing factors", marks: 1 },
-        { part: "Clinical features and complications", marks: 2 },
-        { part: "Diagnosis and combined treatment", marks: 2 },
-      ],
-      keywords: ["crusted scabies", "Norwegian scabies", "ivermectin", "keratolytic", "HIV", "outbreak"],
-    },
-  ],
-  mcqs: [
-    {
-      id: "dermatology-scabies-pediculosis-q1",
-      stem: "A 30-year-old man is treated for scabies with a single overnight application of permethrin 5 per cent cream. Three weeks later he returns with fresh burrows in the finger webs. His wife, who also itches, was never treated. What is the single most important reason for the failure?",
-      options: [
-        "Permethrin resistance in the local mite population",
-        "Untreated household contacts together with omission of the day 7 repeat application",
-        "Inadequate contact time of the cream on the skin",
-        "Persistence of mite antigen causing post-scabetic itch",
-        "Development of crusted scabies",
-      ],
-      answer: 1,
-      explanation:
-        "New burrows three weeks later mean live mites, and the two commonest causes are an untreated contact who re-infests the patient and the missed second application on day 7, since permethrin is not reliably ovicidal. Permethrin resistance is documented but rare and should never be the first explanation when a contact is admittedly untreated. Inadequate contact time is possible but he did leave it overnight, which is within the 8 to 14 hour range. Post-scabetic itch is itch without new lesions, so fresh burrows exclude it. Crusted scabies presents with thick hyperkeratotic crusts and little itch, not a few new burrows.",
-      difficulty: "easy",
-    },
-    {
-      id: "dermatology-scabies-pediculosis-q2",
-      stem: "A 6-week-old exclusively breastfed infant has itchy vesicles and pustules on the palms, soles and scalp; the mother has itchy papules on her wrists and areolae. Which treatment is most appropriate for the infant?",
-      options: [
-        "Oral ivermectin 200 microgram per kilogram single dose",
-        "Lindane 1 per cent lotion for 8 hours",
-        "Sulphur 5 per cent in petrolatum on three consecutive nights",
-        "Benzyl benzoate 25 per cent lotion on three consecutive nights",
-        "Crotamiton 10 per cent cream for two nights only",
-      ],
-      answer: 2,
-      explanation:
-        "Below two months of age permethrin is not licensed and sulphur 5 to 10 per cent in petrolatum applied for three consecutive nights is the accepted safe scabicide, covering the scalp and face as well since infants are affected above the neck. Oral ivermectin is contraindicated under 15 kilograms and under five years. Lindane is neurotoxic and is no longer recommended at any age, least of all in a neonate with a high surface-area-to-weight ratio. Benzyl benzoate 25 per cent is far too irritant for a six-week-old and would need dilution to 6.25 per cent at best. Crotamiton is antipruritic but is the least effective scabicide and would not clear the infestation.",
-      difficulty: "moderate",
-    },
-    {
-      id: "dermatology-scabies-pediculosis-q3",
-      stem: "A 55-year-old bedridden man from an old age home has thick warty crusts on the hands, feet and elbows with dystrophic nails and generalised scaling, but complains of almost no itching. Four staff members have developed itchy papules. What is the diagnosis and the correct treatment?",
-      options: [
-        "Psoriasis vulgaris - potent topical steroid under occlusion",
-        "Crusted scabies - oral ivermectin on days 1, 2, 8, 9 and 15 plus topical permethrin and a keratolytic",
-        "Ordinary scabies - a single application of permethrin 5 per cent",
-        "Chronic eczema - emollients and a moderate topical steroid",
-        "Palmoplantar keratoderma - urea 20 per cent ointment",
-      ],
-      answer: 1,
-      explanation:
-        "Hyperkeratotic crusts with nail dystrophy, minimal itch and an outbreak among carers is crusted scabies, which carries an enormous mite burden and needs multiple doses of oral ivermectin combined with repeated topical permethrin and a keratolytic to let the scabicide penetrate the crust. Psoriasis would show silvery scale, Auspitz sign and typical extensor plaques, and treating this patient with a potent steroid would worsen the infestation. A single permethrin application is grossly inadequate for a mite load of thousands. Eczema and keratoderma do not cause an outbreak of itching among staff, which is the clue that this is an infestation.",
-      difficulty: "moderate",
-    },
-    {
-      id: "dermatology-scabies-pediculosis-q4",
-      stem: "A 32-year-old destitute man has intensely itchy excoriated papules and lichenified hyperpigmented skin over the back and shoulders. No lesions are seen in the finger webs or genitalia. Examination of his shirt shows lice and eggs in the seams. Which complication is he specifically at risk of?",
-      options: [
-        "Acute post-streptococcal glomerulonephritis",
-        "Epidemic typhus and trench fever",
-        "Acquired immunodeficiency from lymphatic spread",
-        "Bartonella henselae cat scratch disease",
-        "Chagas disease",
-      ],
-      answer: 1,
-      explanation:
-        "Lice living in clothing seams is pediculosis corporis, and Pediculus humanus corporis is the vector of epidemic typhus caused by Rickettsia prowazekii, trench fever caused by Bartonella quintana and louse-borne relapsing fever caused by Borrelia recurrentis. Post-streptococcal glomerulonephritis follows streptococcal pyoderma, which is a complication of scabies and impetigo rather than a vector-borne consequence of body lice. Lice do not cause immunodeficiency. Cat scratch disease is Bartonella henselae transmitted by cats and their fleas, not by lice. Chagas disease is transmitted by the reduviid bug in Latin America.",
-      difficulty: "moderate",
-    },
-    {
-      id: "dermatology-scabies-pediculosis-q5",
-      stem: "A 28-year-old woman treated correctly for scabies with permethrin on day 0 and day 7 returns on day 18 with continued itching. Examination shows healing excoriations and post-inflammatory hyperpigmentation but no burrows and no new papules. Her family was treated. What is the correct action?",
-      options: [
-        "Repeat permethrin for a third application",
-        "Give oral ivermectin as she has failed topical therapy",
-        "Reassure and treat with emollients, a moderate topical steroid and an oral antihistamine",
-        "Take a skin biopsy to look for mites",
-        "Start oral prednisolone 30 mg daily for two weeks",
-      ],
-      answer: 2,
-      explanation:
-        "Itch without new burrows or new papules two to four weeks after adequate treatment is post-scabetic itch, a hypersensitivity response to retained mite antigen in the stratum corneum, and it is managed with emollients, a moderate topical corticosteroid and an antihistamine. A third application of permethrin adds irritant dermatitis that perpetuates the itch and is the classic wrong answer. Ivermectin is reserved for genuine failure, which requires objective new lesions. A biopsy is unnecessary when the clinical picture is clear and no active lesions exist. Systemic steroids are disproportionate and risk converting a residual infestation into crusted scabies.",
-      difficulty: "easy",
-    },
-  ],
-  cards: [
-    {
-      id: "dermatology-scabies-pediculosis-c1",
-      front: "Incubation period of scabies and why it matters.",
-      back: "Four to six weeks in a first infestation (one to four days on re-infestation) because the itch is a type IV hypersensitivity reaction - so asymptomatic contacts are already infested and must be treated.",
-    },
-    {
-      id: "dermatology-scabies-pediculosis-c2",
-      front: "Pathognomonic lesion of scabies and where to look for it.",
-      back: "The burrow - a 3 to 10 mm greyish serpiginous ridge with a vesicle or black dot at one end, on the finger webs, sides of fingers, flexor wrists and ulnar border of the hand.",
-    },
-    {
-      id: "dermatology-scabies-pediculosis-c3",
-      front: "Permethrin regimen for scabies.",
-      back: "5 per cent cream to the whole body neck down (whole body in infants), leave 8 to 14 hours overnight, wash off, repeat on day 7; about 30 g per adult application, reapply to hands after washing.",
-    },
-    {
-      id: "dermatology-scabies-pediculosis-c4",
-      front: "Ivermectin dose and contraindications in scabies.",
-      back: "200 microgram per kilogram orally with food, repeated day 7 to 14; avoid under 15 kg or 5 years, and in pregnancy and lactation.",
-    },
-    {
-      id: "dermatology-scabies-pediculosis-c5",
-      front: "Scabicide of choice under two months of age and in pregnancy.",
-      back: "Sulphur 5 to 10 per cent in petrolatum for three consecutive nights (permethrin 5 per cent is also accepted in pregnancy and above two months).",
-    },
-    {
-      id: "dermatology-scabies-pediculosis-c6",
-      front: "Environmental decontamination in scabies.",
-      back: "Wash linen and clothes of the last 3 days above 60 degrees Celsius, sun dry or iron; seal non-washables in a bag for 72 hours to a week. The mite dies in 2 to 3 days off the host, so fumigation is not needed.",
-    },
-    {
-      id: "dermatology-scabies-pediculosis-c7",
-      front: "Post-scabetic itch versus treatment failure.",
-      back: "Post-scabetic itch: itching for 2 to 4 weeks with no new burrows or papules - treat with emollients, mild steroid and antihistamine. Failure: new burrows or papules after 2 weeks - re-treat and find the untreated contact.",
-    },
-    {
-      id: "dermatology-scabies-pediculosis-c8",
-      front: "Which louse transmits systemic disease, and which diseases?",
-      back: "Only the body louse (Pediculus humanus corporis) - epidemic typhus (Rickettsia prowazekii), trench fever (Bartonella quintana) and relapsing fever (Borrelia recurrentis).",
-    },
-    {
-      id: "dermatology-scabies-pediculosis-c9",
-      front: "Treatment of pediculosis corporis.",
-      back: "Treat the clothing, not the skin - hot wash, iron or discard clothing and improve hygiene; permethrin to the body only if lice are found on the skin.",
-    },
-    {
-      id: "dermatology-scabies-pediculosis-c10",
-      front: "Maculae ceruleae - what and where?",
-      back: "Bluish-grey macules at the site of pubic louse bites on the lower abdomen, thighs and buttocks in pediculosis pubis.",
-    },
-  ],
-  references: [
-    "IADVL Textbook of Dermatology, 5th edition, 2022 - scabies and other infestations",
-    "International Alliance for the Control of Scabies (IACS) 2020 Consensus Criteria for the Diagnosis of Scabies",
-    "WHO Informal Consultation on a Framework for Scabies Control, 2019, and WHO NTD Road Map 2021-2030",
-    "British Association of Dermatologists guideline on the management of scabies, 2024",
-    "Centers for Disease Control and Prevention, Parasites - Scabies and Lice, 2024 update",
-    "Neena Khanna, Illustrated Synopsis of Dermatology and Sexually Transmitted Diseases, 6th edition, 2020",
   ],
 });
 topics.push({
@@ -3110,6 +2331,839 @@ topics.push({
     "Chung F et al. STOP-BANG questionnaire, Chest, 2016; Johns MW. Epworth Sleepiness Scale, Sleep, 1991",
     "Bastien CH et al. Validation of the Insomnia Severity Index, Sleep Medicine, 2001",
     "NICE Clinical Knowledge Summary, Insomnia, 2024; American Geriatrics Society Beers Criteria, 2023",
+  ],
+});
+topics.push({
+  id: "psychiatry-psychosis-schizophrenia",
+  title: "Psychosis and schizophrenia: recognition, first steps, referral and the Mental Healthcare Act 2017",
+  oneLiner:
+    "Psychosis is a loss of contact with reality shown by delusions, hallucinations, disorganised speech or grossly disorganised behaviour, and schizophrenia is its commonest chronic form, requiring two or more such symptoms for a month with six months of overall disturbance; the family physician's job is to recognise it early, exclude the organic and substance-induced causes, start or facilitate an antipsychotic without delay because a long duration of untreated psychosis worsens outcome, manage agitation safely, support the family, and work within the rights-based framework of the Mental Healthcare Act 2017.",
+  frequency: "less-common",
+  keywords: [
+    "schizophrenia",
+    "first-episode psychosis",
+    "duration of untreated psychosis",
+    "delusion",
+    "hallucination",
+    "risperidone",
+    "olanzapine",
+    "haloperidol",
+    "clozapine",
+    "extrapyramidal side effects",
+    "acute dystonia",
+    "akathisia",
+    "tardive dyskinesia",
+    "neuroleptic malignant syndrome",
+    "Mental Healthcare Act 2017",
+    "advance directive",
+    "nominated representative",
+    "supported admission",
+    "section 115",
+    "District Mental Health Programme",
+  ],
+  sections: [
+    {
+      heading: "Recognising psychosis and its causes",
+      points: [
+        "**Psychosis** is impaired reality testing manifest as **delusions** (fixed false beliefs not shared by the person's culture - persecutory, referential, grandiose, of control, or of thought insertion, withdrawal and broadcast), **hallucinations** (perception without a stimulus, most often auditory in schizophrenia and typically third-person commentary or discussion), **disorganised speech** (derailment, tangentiality, incoherence) and **grossly disorganised or catatonic behaviour**, with **negative symptoms** - blunted affect, alogia, avolition, anhedonia, asociality - which cause most of the long-term disability.",
+        "**DSM-5 schizophrenia** requires **two or more of delusions, hallucinations, disorganised speech, grossly disorganised or catatonic behaviour and negative symptoms, each present for a significant part of one month, with at least one being delusions, hallucinations or disorganised speech**, together with functional decline and **continuous disturbance for at least six months**. If the picture has lasted 1-6 months it is schizophreniform disorder, and under a month with return to premorbid function it is brief psychotic disorder. Prominent mood episodes concurrent with psychosis point to schizoaffective disorder or psychotic depression or mania.",
+        "The **lifetime prevalence of schizophrenia is about 1%** and the National Mental Health Survey of India 2015-16 found a current prevalence of psychotic disorders of about 0.4% with a **treatment gap of about 75%**; onset is typically **late teens to mid-twenties in men and about five years later in women**.",
+        "**Always exclude an organic cause before accepting a psychiatric one**, especially at a first episode: **delirium** (fluctuating consciousness, disorientation, visual hallucinations, an acute course and an identifiable medical trigger) is the single most important mimic; then hypoglycaemia, hyponatraemia, hypercalcaemia, uraemia, hepatic encephalopathy, thyroid disease, vitamin B12 deficiency, HIV, neurosyphilis, tuberculous or other meningitis, cerebral malaria, temporal lobe epilepsy, head injury, stroke, brain tumour, systemic lupus erythematosus, autoimmune (anti-NMDA receptor) encephalitis, and **Wilson's disease in anyone under 40 with psychosis plus tremor, dystonia or deranged liver function**.",
+        "**Substance-induced psychosis** is common and reversible: **cannabis (ganja, charas) is the commonest in Indian practice**, followed by alcohol (alcoholic hallucinosis, delirium tremens), amphetamines and other stimulants, cocaine, inhalants and anticholinergics; iatrogenic causes include **steroids, levodopa and dopamine agonists, isoniazid, efavirenz, mefloquine, high-dose tramadol, and anticholinergics in the elderly**. The clue is a close temporal relationship to use or withdrawal, prominent visual or tactile hallucinations, and clearing over days to weeks with abstinence.",
+        "**Postpartum psychosis** deserves separate mention: onset within days to two weeks of delivery with confusion, rapidly shifting mood, delusions often concerning the baby, and insomnia; it is a **psychiatric emergency for both mother and infant** because of the risk of suicide and infanticide, and requires same-day admission, preferably to a mother-and-baby facility.",
+      ],
+    },
+    {
+      heading: "Assessment in the clinic and the first steps",
+      points: [
+        "**Interview the patient alone and the family separately**, because a patient with persecutory delusions may not speak in front of relatives, and the family alone can describe the decline in function, self-care, work and social withdrawal that dates the illness.",
+        "Elicit the symptoms without arguing: ask **'do you ever hear voices when nobody is around - what do they say?'**, 'does anyone wish to harm you?', 'do you feel your thoughts are being controlled or read?'; then assess insight, judgement, orientation, memory and attention, and always ask about **suicidal and homicidal ideation and about command hallucinations telling him to hurt himself or others**.",
+        "**Document the duration of untreated psychosis.** A longer duration of untreated psychosis predicts poorer symptomatic and functional recovery; in India the median is well over a year, most of it spent with faith healers and non-medical practitioners, so **the family physician's real contribution is shortening it**.",
+        "**Minimum work-up at a first episode**: complete blood count, blood glucose, electrolytes including calcium, renal and liver function, TSH, vitamin B12, HIV and VDRL where indicated, urine drug screen where available, ECG (baseline QTc before an antipsychotic), and **neuroimaging with CT or MRI if there are focal neurological signs, seizures, a first episode over 40, headache with vomiting, an abnormal level of consciousness or an atypical course**.",
+        "**Suspect delirium rather than schizophrenia** whenever the onset is over days, consciousness fluctuates, hallucinations are visual, orientation is impaired, and there is a medical trigger - and treat the cause, since an antipsychotic given to a delirious patient without treating the cause is dangerous.",
+        "**Do not delay treatment for a perfect diagnosis.** Once organic causes have been reasonably excluded, start an antipsychotic or refer the same day; the family physician can and should initiate treatment where a psychiatrist is a day's travel away, then confirm the plan with the specialist.",
+      ],
+    },
+    {
+      heading: "Drug treatment and its adverse effects",
+      points: [
+        "**Second-generation antipsychotics are usually first choice** because of a lower risk of extrapyramidal side effects: **risperidone 1-2 mg at night, increased over 1-2 weeks to 2-6 mg daily** (the workhorse in Indian practice: cheap, effective and available in the District Mental Health Programme), **olanzapine 5-10 mg at night up to 20 mg** (very effective and sedating, but with the worst weight gain, dyslipidaemia and diabetes risk), **aripiprazole 10-15 mg daily up to 30 mg** (weight-neutral and prolactin-sparing, but causes akathisia), or **quetiapine 50-300 mg** where sedation is wanted and extrapyramidal risk must be minimal. **Haloperidol 5-10 mg daily** remains effective and inexpensive but has the highest extrapyramidal burden.",
+        "**Start low, go slow, use one drug at a time, and give an adequate trial of 4-6 weeks at a therapeutic dose before judging it.** Polypharmacy with two antipsychotics is a common and criticised error. Explain to the family that agitation settles in days, hallucinations over 2-4 weeks, delusions over weeks to months, and negative symptoms slowest of all.",
+        "**Extrapyramidal side effects and their treatment must be known exactly**: **acute dystonia** (oculogyric crisis, torticollis, trismus, laryngospasm) appears in hours to days and is treated with **promethazine 25-50 mg intramuscularly or intravenously, or trihexyphenidyl 2 mg orally, with an immediate response**; **akathisia** (an unbearable inner restlessness, often mistaken for worsening psychosis or anxiety, and a recognised cause of suicide) is treated by dose reduction plus **propranolol 10-40 mg twice or thrice daily**, with a short course of clonazepam if necessary; **parkinsonism** responds to dose reduction, a switch of drug, or trihexyphenidyl 2 mg twice daily; **tardive dyskinesia** appears after months to years, is often irreversible, and is managed by switching to clozapine and by stopping anticholinergics, which worsen it.",
+        "**Neuroleptic malignant syndrome** is the emergency: **hyperthermia, lead-pipe rigidity, altered sensorium and autonomic instability with a raised creatine kinase and leucocytosis**, developing over 24-72 hours, with a mortality of about 10%. **Stop the antipsychotic immediately, admit, cool, hydrate aggressively to prevent rhabdomyolysis and acute kidney injury, give a benzodiazepine, and use bromocriptine or dantrolene in severe cases.**",
+        "**Metabolic and other monitoring**: weight and waist circumference at every visit, blood pressure, fasting glucose or HbA1c and lipids at baseline, 3 months and then annually; prolactin if there is galactorrhoea, amenorrhoea or sexual dysfunction (commonest with risperidone and amisulpride); ECG for QTc with haloperidol, ziprasidone and high doses. Counsel about diet and 30 minutes of daily walking from the day the drug is started, not after 10 kg have been gained.",
+        "**Treatment resistance** is failure of **two adequate antipsychotic trials of 4-6 weeks each at therapeutic dose**, and the answer is **clozapine**, the only drug with proven superiority in resistant schizophrenia and in reducing suicide; it requires specialist initiation, slow titration from 12.5 mg, and **regular white cell and neutrophil monitoring because of agranulocytosis (about 0.8%)**, with myocarditis, seizures, hypersalivation, constipation which can become life-threatening ileus, and marked weight gain as the other hazards. **Long-acting injectable antipsychotics** - risperidone, paliperidone, flupentixol or haloperidol decanoate - are the answer to repeated relapse from non-adherence, which is the commonest reason for readmission.",
+      ],
+    },
+    {
+      heading: "Managing agitation, relapse and the family",
+      points: [
+        "**Acute agitation is first managed by de-escalation**: a calm quiet space, one person speaking, simple short sentences, respect for personal space, no crowding, removal of dangerous objects, an offer of food, water and oral medication, and never confrontation or humiliation.",
+        "**If drugs are required, offer oral first** - risperidone 1-2 mg, olanzapine 5-10 mg (including the orodispersible form) or lorazepam 1-2 mg. **If intramuscular treatment is unavoidable, the evidence-based combination validated in Indian emergency settings by the TREC trials is haloperidol 5-10 mg plus promethazine 25-50 mg intramuscularly**, which is faster and safer than haloperidol alone (the promethazine prevents dystonia and adds sedation); **lorazepam 2-4 mg intramuscularly** is an alternative; **olanzapine intramuscular 10 mg must not be given within an hour of parenteral benzodiazepine** because of cardiorespiratory depression. Monitor pulse, blood pressure, temperature, oxygen saturation and level of consciousness afterwards, and always record the reason for and duration of any restraint.",
+        "**Physical restraint is a last resort, for the shortest possible time, by trained people, with continuous observation and documentation, and chaining or confinement is expressly prohibited by law.** Restraint is never a substitute for treatment or a punishment.",
+        "**Relapse prevention** rests on continued medication - the relapse rate at one year is roughly **60-80% without medication versus 15-25% with it** - so continue the antipsychotic for **at least 1-2 years after a first episode and indefinitely after two or more episodes or a suicide attempt**, and taper only slowly and with the family informed of the early warning signs.",
+        "**Work with the family, who are the care system in India**: psychoeducation about the illness being a brain disorder and not a moral failing or possession; **reduction of expressed emotion - criticism, hostility and emotional over-involvement, which strongly predict relapse**; a written list of the patient's own early warning signs (insomnia, withdrawal, suspiciousness, stopping the tablets); supervised medication; and vocational rehabilitation with graded return to work or study.",
+        "**Address stigma and the traditional healer explicitly and without ridicule.** Most Indian families consult a faith healer first; ask about it, do not mock it, and negotiate that treatment continues alongside, since confrontation simply loses the patient. Give the family the **Tele-MANAS number 14416** and link them to the **District Mental Health Programme**, which supplies free antipsychotics and follow-up at the district hospital and community health centre.",
+      ],
+    },
+    {
+      heading: "The Mental Healthcare Act 2017 as it touches a family physician",
+      points: [
+        "The **Mental Healthcare Act 2017 replaced the Mental Health Act 1987** and is **rights-based rather than custodial**, enacted to comply with the UN Convention on the Rights of Persons with Disabilities; it defines mental illness as a substantial disorder of thinking, mood, perception, orientation or memory that grossly impairs judgement, behaviour, capacity to recognise reality or ability to meet the ordinary demands of life, and it **expressly excludes mental retardation and, by itself, alcohol and drug use** from the definition.",
+        "**Every person has a right to access mental healthcare**, free of cost for those below the poverty line, destitute or homeless, at services run or funded by the government; the Act also mandates **parity of insurance cover for mental illness with physical illness (section 21(4))**, which insurers were directed by the IRDAI to implement, and this is a favourite short-note question.",
+        "**Advance directive**: any adult may state in advance how he wishes to be cared for and treated, and how he wishes not to be, and may appoint a **nominated representative**; the directive is registered with the Mental Health Review Board and can be reviewed, altered or cancelled by that Board on application. The **nominated representative** - a relative, carer or, failing them, one appointed by the Board - supports the person in decisions and must be consulted about admission and treatment.",
+        "**Admission**: an adult with capacity is admitted as an **independent patient** on his own request, and may leave on request. **Supported admission (sections 89 and 90)** applies when a person is unable to make treatment decisions or poses a risk to himself or others, requires the nominated representative's application and the opinion of two independent professionals, is **limited to 30 days in the first instance**, and beyond that requires the **Mental Health Review Board**. The Act sets up **Central and State Mental Health Authorities and district Mental Health Review Boards**, and requires all establishments to register.",
+        "**Section 115 decriminalised attempted suicide**: any person who attempts suicide is presumed, unless proved otherwise, to have severe stress, is not to be tried and punished under section 309 of the Indian Penal Code, and the government has a duty to provide care, treatment and rehabilitation. **The practical consequence for a family physician is that a patient after an attempt is treated as a patient, not reported as an accused** - though a medico-legal register entry and information to police remain the local hospital practice for injuries.",
+        "**Prohibited and restricted practices**: **unmodified (direct) electroconvulsive therapy without anaesthesia and muscle relaxant is banned**, **ECT is prohibited in minors except with the consent of the guardian and the permission of the Mental Health Review Board**, **chaining is prohibited in any form**, seclusion and solitary confinement are prohibited, physical restraint is permitted only as a last resort with documentation, and sterilisation may not be performed on grounds of mental illness alone. The Act also guarantees **confidentiality, protection from cruel or degrading treatment, the right to community living, the right to legal aid and the right to complain**; the **Rights of Persons with Disabilities Act 2016** separately recognises mental illness as a disability with reservation and benefit entitlements, which the family physician should tell the family about.",
+      ],
+    },
+  ],
+  tables: [
+    {
+      heading: "Antipsychotics in family practice: doses and what to watch",
+      columns: ["Drug", "Starting dose", "Usual range", "Main advantage", "Main problem to monitor"],
+      rows: [
+        ["Risperidone", "1-2 mg at night", "2-6 mg/day", "Cheap, effective, available under the District Mental Health Programme", "Extrapyramidal effects above 6 mg; hyperprolactinaemia with galactorrhoea and amenorrhoea"],
+        ["Olanzapine", "5-10 mg at night", "10-20 mg/day", "Highly effective, sedating, useful in agitation", "Weight gain, dyslipidaemia, diabetes - weight and waist at every visit"],
+        ["Aripiprazole", "10-15 mg daily", "10-30 mg/day", "Weight-neutral, prolactin-sparing", "Akathisia, insomnia, initial nausea"],
+        ["Quetiapine", "50 mg at night", "150-600 mg/day", "Least extrapyramidal risk; useful in Parkinson's disease psychosis", "Sedation, postural hypotension, weight gain"],
+        ["Haloperidol", "1.5-5 mg at night", "5-10 mg/day", "Very cheap, widely available, effective", "Dystonia, parkinsonism, akathisia, tardive dyskinesia, QTc prolongation"],
+        ["Clozapine (specialist)", "12.5 mg at night", "200-450 mg/day", "The only drug proven in treatment-resistant schizophrenia; reduces suicide", "Agranulocytosis (about 0.8%) needing blood counts, myocarditis, seizures, constipation and ileus, hypersalivation"],
+      ],
+    },
+    {
+      heading: "Antipsychotic movement disorders and their emergency treatment",
+      columns: ["Problem", "Onset", "Features", "Treatment"],
+      rows: [
+        ["Acute dystonia", "Hours to days", "Oculogyric crisis, torticollis, trismus, opisthotonus, laryngospasm", "Promethazine 25-50 mg IM/IV or trihexyphenidyl 2 mg orally - dramatic relief; then reduce or change the antipsychotic"],
+        ["Akathisia", "Days to weeks", "Unbearable inner restlessness, pacing, inability to sit still; mistaken for worsening psychosis; a cause of suicide", "Reduce the dose or switch; propranolol 10-40 mg BD-TDS; short-course clonazepam"],
+        ["Parkinsonism", "Weeks", "Bradykinesia, rigidity, tremor, mask facies, shuffling gait", "Reduce dose, switch to quetiapine or aripiprazole, or trihexyphenidyl 2 mg BD"],
+        ["Tardive dyskinesia", "Months to years", "Orofacial choreoathetosis, lip smacking, tongue protrusion, trunk and limb movements; often irreversible", "Stop anticholinergics, reduce or switch antipsychotic, consider clozapine; refer"],
+        ["Neuroleptic malignant syndrome", "24-72 hours", "Hyperthermia, lead-pipe rigidity, altered sensorium, autonomic instability, raised creatine kinase, leucocytosis; about 10% mortality", "Stop the antipsychotic, admit, cool, aggressive hydration, benzodiazepine; bromocriptine or dantrolene in severe cases"],
+      ],
+    },
+    {
+      heading: "Mental Healthcare Act 2017: what a family physician must be able to state",
+      columns: ["Provision", "What it means in practice"],
+      rows: [
+        ["Right to access mental healthcare", "Free treatment for those below the poverty line, destitute or homeless at government-run or funded services"],
+        ["Insurance parity (section 21(4))", "Insurers must provide cover for mental illness on the same basis as physical illness"],
+        ["Advance directive", "An adult may record in writing how he wishes to be treated and not treated, registered with the Mental Health Review Board"],
+        ["Nominated representative", "A person appointed by the patient (or by the Board) to support decisions and to be consulted on admission and treatment"],
+        ["Independent admission", "An adult with capacity admits himself and may leave on request"],
+        ["Supported admission (sections 89, 90)", "For a person unable to make decisions or at risk; application by the nominated representative plus two independent professional opinions; maximum 30 days initially, then Mental Health Review Board"],
+        ["Section 115", "Attempted suicide is presumed to be under severe stress, is not to be punished under IPC 309, and the state must provide care and rehabilitation"],
+        ["Prohibited practices", "Unmodified ECT without anaesthesia banned; ECT in minors only with guardian consent and Board permission; chaining prohibited; seclusion prohibited; sterilisation on grounds of mental illness prohibited"],
+      ],
+    },
+  ],
+  redFlags: [
+    "Fluctuating consciousness, disorientation, visual hallucinations and an acute onset with a medical trigger - this is delirium, not schizophrenia; find and treat the cause, since an antipsychotic alone in delirium can be fatal.",
+    "Fever with lead-pipe rigidity, altered sensorium, autonomic instability and a raised creatine kinase in a patient on an antipsychotic - neuroleptic malignant syndrome; stop the drug and admit immediately.",
+    "Command hallucinations telling the patient to harm himself or others, active suicidal ideation, or violent threats with the means to act - same-day psychiatric assessment and admission, and never leave the patient alone.",
+    "Psychosis with fever, headache, neck stiffness, seizures, focal neurological signs, or a first episode after the age of 40 - image the brain and investigate for encephalitis, meningitis, tumour, stroke or autoimmune encephalitis before accepting a psychiatric label.",
+    "Onset of confusion, shifting mood, delusions about the baby and severe insomnia within two weeks of delivery - postpartum psychosis, an emergency because of the risk of suicide and infanticide; admit the same day with the baby.",
+    "Psychosis in a person under 40 with tremor, dystonia, dysarthria or deranged liver function - consider Wilson's disease and look for Kayser-Fleischer rings and a low serum caeruloplasmin; and any acute dystonia with laryngospasm needs promethazine or trihexyphenidyl immediately.",
+  ],
+  pearls: [
+    "Two or more of delusions, hallucinations, disorganised speech, disorganised or catatonic behaviour and negative symptoms for a month, at least one from the first three, with six months of overall disturbance - that is schizophrenia; write the criteria in that order.",
+    "A long duration of untreated psychosis worsens outcome, so the highest-value act available to a family physician is shortening it - recognise, exclude organic causes, start or refer the same week.",
+    "Exclude delirium and substance-induced psychosis first; cannabis is the commonest culprit in Indian practice and steroid psychosis the commonest iatrogenic one.",
+    "Risperidone 2-6 mg is the practical first choice under the District Mental Health Programme; olanzapine works well but buys weight, lipids and diabetes, so measure waist and weight at every visit.",
+    "For acute agitation, haloperidol 5-10 mg plus promethazine 25-50 mg intramuscularly is the combination validated in Indian emergency practice by the TREC trials, and de-escalation comes before any injection.",
+    "Akathisia is mistaken for worsening psychosis and is a recognised cause of suicide; the answer is dose reduction plus propranolol, not more antipsychotic.",
+    "Under the Mental Healthcare Act 2017, unmodified ECT and chaining are banned, section 115 decriminalised attempted suicide, and supported admission runs for a maximum of 30 days before the Mental Health Review Board must be involved.",
+  ],
+  theory: [
+    {
+      id: "psychiatry-psychosis-t1",
+      paper: "II",
+      kind: "long",
+      marks: 10,
+      minutes: 20,
+      frequency: "less-common",
+      question:
+        "A 22-year-old man is brought by his parents with six months of social withdrawal, muttering to himself, a belief that neighbours are plotting to kill him, and refusal to eat food cooked at home. Discuss your assessment and management in family practice, and the relevant provisions of the Mental Healthcare Act 2017.",
+      openingLines: [
+        "This is a first episode of psychosis, most probably schizophrenia, which DSM-5 defines as two or more of delusions, hallucinations, disorganised speech, grossly disorganised or catatonic behaviour and negative symptoms, each present for a significant part of one month with at least one from the first three, together with functional decline and continuous disturbance for at least six months.",
+        "His persecutory delusions, probable auditory hallucinations, social withdrawal and refusal of food have lasted six months, and the objectives are to exclude organic and substance-induced causes, shorten the duration of untreated psychosis by starting treatment now, assess risk, support the family, and work within the rights framework of the Mental Healthcare Act 2017.",
+      ],
+      answer: [
+        {
+          heading: "1. History and mental state examination",
+          points: [
+            "Interview the patient alone and the parents separately; a patient with persecutory delusions often will not speak in front of family.",
+            "Elicit hallucinations ('do you hear voices when nobody is around, what do they say?'), delusions, thought insertion, withdrawal, broadcast and passivity, without arguing with the belief.",
+            "Document negative symptoms and the decline in self-care, studies, work and social contact, and date the onset to establish the duration of untreated psychosis.",
+            "Ask about substances - cannabis, alcohol, inhalants, stimulants - and about prescribed drugs such as steroids, isoniazid, efavirenz and levodopa.",
+            "Assess risk: suicidal ideation, command hallucinations, aggression, and refusal of food and fluids, which he already shows.",
+            "Family history of psychosis, birth and developmental history, past head injury and seizures.",
+          ],
+        },
+        {
+          heading: "2. Examination and investigation",
+          points: [
+            "General and neurological examination including temperature, hydration and nutrition, since he is refusing food; look for Kayser-Fleischer rings, tremor and dystonia (Wilson's disease) at this age.",
+            "Complete blood count, blood glucose, electrolytes with calcium, renal and liver function, TSH, vitamin B12, HIV and VDRL as indicated, and a urine drug screen where available.",
+            "Baseline weight, waist circumference, blood pressure, fasting lipids and glucose, and an ECG for QTc before starting an antipsychotic.",
+            "Neuroimaging if there are focal signs, seizures, headache with vomiting, an altered level of consciousness or an atypical course.",
+            "Exclude delirium: fluctuating consciousness, disorientation, visual hallucinations and an acute course with a medical trigger point elsewhere.",
+          ],
+        },
+        {
+          heading: "3. Initiating treatment",
+          points: [
+            "Start risperidone 1-2 mg at night, increasing over 1-2 weeks to 2-4 mg daily; alternatives are olanzapine 5-10 mg at night or aripiprazole 10-15 mg daily.",
+            "Use one antipsychotic at a time, at an adequate dose, for an adequate trial of 4-6 weeks before judging the response.",
+            "Explain the expected sequence to the family - agitation settles in days, hallucinations over 2-4 weeks, delusions over weeks to months, negative symptoms slowest.",
+            "Warn about and watch for acute dystonia (promethazine 25-50 mg IM or trihexyphenidyl 2 mg orally), akathisia (dose reduction plus propranolol 10-40 mg), parkinsonism and weight gain.",
+            "If he refuses food and fluids or is dehydrated, or if there is a risk of suicide or violence, arrange same-day admission.",
+          ],
+        },
+        {
+          heading: "4. Family work, rehabilitation and follow-up",
+          points: [
+            "Psychoeducation: this is a treatable brain disorder, not possession, weakness or a moral failing; ask about the faith healer without ridicule and negotiate that medical treatment continues alongside.",
+            "Reduce expressed emotion - criticism, hostility and emotional over-involvement all predict relapse - and teach the family the patient's early warning signs.",
+            "Supervised medication, a written list of warning signs, and a plan for graded return to studies or work.",
+            "Follow-up weekly for the first month, then monthly; continue the antipsychotic for at least 1-2 years after a first episode, and consider a long-acting injectable if adherence fails.",
+            "Refer to the psychiatrist and link the family to the District Mental Health Programme for free drugs, and give the Tele-MANAS number 14416.",
+          ],
+        },
+        {
+          heading: "5. Mental Healthcare Act 2017 provisions relevant here",
+          points: [
+            "He has a right of access to mental healthcare, free at government facilities if he is below the poverty line or homeless, and insurance must cover mental illness at parity with physical illness.",
+            "If he retains capacity he is admitted as an independent patient at his own request and may leave at will.",
+            "If he lacks capacity to make treatment decisions or poses a risk to himself, supported admission under sections 89 and 90 may be used, on the application of a nominated representative with two independent professional opinions, for a maximum of 30 days in the first instance, beyond which the Mental Health Review Board must decide.",
+            "He may make an advance directive and appoint a nominated representative once he recovers capacity, and these are registered with the Mental Health Review Board.",
+            "Chaining, seclusion and unmodified ECT are prohibited; physical restraint is a last resort, for the shortest time, with documentation.",
+            "If he were ever to attempt suicide, section 115 presumes severe stress, prohibits punishment under IPC 309, and places a duty on the state to provide care and rehabilitation.",
+          ],
+        },
+      ],
+      mustDraw: [
+        "A flow chart: suspected psychosis - exclude delirium and organic causes - exclude substance-induced psychosis - assess risk - start antipsychotic or refer same day - family psychoeducation and follow-up.",
+        "A table of antipsychotic movement disorders (dystonia, akathisia, parkinsonism, tardive dyskinesia, neuroleptic malignant syndrome) with onset and treatment.",
+      ],
+      markSplit: [
+        { part: "Definition and DSM-5 criteria of schizophrenia", marks: 2 },
+        { part: "History, mental state examination and risk assessment", marks: 2 },
+        { part: "Exclusion of organic and substance-induced causes with investigations", marks: 2 },
+        { part: "Antipsychotic choice, dose and adverse effect management", marks: 2 },
+        { part: "Family work, follow-up and Mental Healthcare Act 2017 provisions", marks: 2 },
+      ],
+      keywords: ["first-episode psychosis", "schizophrenia", "risperidone", "duration of untreated psychosis", "Mental Healthcare Act 2017"],
+    },
+    {
+      id: "psychiatry-psychosis-t2",
+      paper: "II",
+      kind: "short-note",
+      marks: 5,
+      minutes: 10,
+      frequency: "less-common",
+      question: "Short note: salient features of the Mental Healthcare Act 2017 relevant to a family physician.",
+      openingLines: [
+        "The Mental Healthcare Act 2017 came into force in 2018, repealing the Mental Health Act 1987, and replaced a custodial framework with a rights-based one drafted to comply with the United Nations Convention on the Rights of Persons with Disabilities.",
+        "It defines mental illness as a substantial disorder of thinking, mood, perception, orientation or memory that grossly impairs judgement, behaviour, capacity to recognise reality or the ability to meet the ordinary demands of life, and it excludes mental retardation and, by itself, alcohol and drug use.",
+      ],
+      answer: [
+        {
+          heading: "1. Rights created",
+          points: [
+            "Right of access to mental healthcare run or funded by government, free for those below the poverty line, destitute or homeless.",
+            "Parity of health insurance for mental illness with physical illness under section 21(4).",
+            "Right to community living, to protection from cruel, inhuman and degrading treatment, to confidentiality, to legal aid and to make complaints.",
+            "Right to information about the illness and treatment, and the right of the nominated representative to be informed.",
+          ],
+        },
+        {
+          heading: "2. Advance directive and nominated representative",
+          points: [
+            "Any adult may make a written advance directive stating how he wishes to be cared for and treated and how he does not, and may appoint a nominated representative.",
+            "It is registered with the Mental Health Review Board and may be reviewed, altered or cancelled by the Board on application by the person, the representative or the treating professional.",
+            "The nominated representative supports the person in decisions and must be consulted about admission and treatment; where none is appointed, the Board appoints one.",
+          ],
+        },
+        {
+          heading: "3. Admission and review machinery",
+          points: [
+            "Independent admission for an adult with capacity, on his own request, with the right to leave.",
+            "Supported admission under sections 89 and 90 where the person cannot make treatment decisions or poses a risk, on the nominated representative's application with two independent professional opinions, limited to 30 days initially.",
+            "Central and State Mental Health Authorities, district Mental Health Review Boards, and mandatory registration of all mental health establishments.",
+          ],
+        },
+        {
+          heading: "4. Section 115 and prohibited practices",
+          points: [
+            "Section 115: a person who attempts suicide is presumed to have severe stress, is not tried or punished under IPC section 309, and the government must provide care, treatment and rehabilitation.",
+            "Unmodified (direct) ECT without anaesthesia and muscle relaxant is prohibited; ECT in minors requires guardian consent and Mental Health Review Board permission.",
+            "Chaining in any form is prohibited; seclusion and solitary confinement are prohibited; physical restraint is permitted only as a last resort, for the shortest time, with documentation.",
+            "Sterilisation on the ground of mental illness alone is prohibited.",
+          ],
+        },
+        {
+          heading: "5. Practical implications for family practice",
+          points: [
+            "A patient after a suicide attempt is treated as a patient and not as an offender.",
+            "The family physician can direct patients to free drugs and follow-up through the District Mental Health Programme and to Tele-MANAS on 14416.",
+            "The Rights of Persons with Disabilities Act 2016 recognises mental illness as a disability, giving access to a disability certificate, reservation and welfare benefits.",
+            "Consent, capacity and confidentiality must be documented, and the nominated representative recorded in the notes.",
+          ],
+        },
+      ],
+      mustDraw: [
+        "A two-column table of the Act's provisions against what each means in practice.",
+      ],
+      markSplit: [
+        { part: "Definition of mental illness and the rights-based framework", marks: 1 },
+        { part: "Advance directive and nominated representative", marks: 1 },
+        { part: "Types of admission and the Mental Health Review Board", marks: 1 },
+        { part: "Section 115 and prohibited practices", marks: 2 },
+      ],
+      keywords: ["Mental Healthcare Act 2017", "advance directive", "section 115", "supported admission", "Mental Health Review Board"],
+    },
+  ],
+  mcqs: [
+    {
+      id: "psychiatry-psychosis-q1",
+      stem: "A 24-year-old man on risperidone 4 mg for two weeks is brought to casualty with his neck twisted to one side, jaw clenched and eyes deviated upwards. He is fully conscious and frightened. What is the immediate treatment?",
+      options: [
+        "Increase the risperidone to control the abnormal movements",
+        "Promethazine 25-50 mg intramuscularly or trihexyphenidyl 2 mg orally",
+        "Haloperidol 5 mg intramuscularly",
+        "Diazepam 10 mg intravenously and observation only",
+        "Stop all treatment and refer routinely to a neurologist",
+      ],
+      answer: 1,
+      explanation:
+        "This is acute dystonia with torticollis, trismus and an oculogyric crisis, occurring within hours to days of an antipsychotic; an anticholinergic or antihistaminic - trihexyphenidyl 2 mg orally or promethazine 25-50 mg parenterally - gives dramatic relief within minutes, after which the antipsychotic dose is reduced or the drug changed. Increasing the risperidone worsens the dystonia. Haloperidol is itself a potent cause of dystonia and would aggravate it, with the added risk of laryngospasm. Diazepam may sedate but does not reverse the dystonia and observation alone risks laryngeal involvement. Routine neurology referral delays treatment of a condition that is fully reversible in minutes.",
+      difficulty: "easy",
+    },
+    {
+      id: "psychiatry-psychosis-q2",
+      stem: "A 30-year-old man on olanzapine develops, over 48 hours, a temperature of 40 degrees C, generalised lead-pipe rigidity, fluctuating consciousness, blood pressure swinging between 90/60 and 170/100, and a creatine kinase of 4200 U/L. What is the diagnosis and immediate management?",
+      options: [
+        "Catatonic schizophrenia - increase the olanzapine",
+        "Neuroleptic malignant syndrome - stop the antipsychotic immediately, admit, cool, hydrate aggressively, give a benzodiazepine, and use bromocriptine or dantrolene if severe",
+        "Serotonin syndrome - give cyproheptadine and continue the olanzapine",
+        "Meningitis - start ceftriaxone and continue the olanzapine",
+        "Heat stroke - cool and discharge",
+      ],
+      answer: 1,
+      explanation:
+        "Hyperthermia, lead-pipe rigidity, altered sensorium, autonomic instability and a markedly raised creatine kinase developing over 24-72 hours in a patient on an antipsychotic define neuroleptic malignant syndrome, which carries about 10% mortality mainly from rhabdomyolysis, acute kidney injury and respiratory failure; the antipsychotic must be stopped at once and the patient admitted for cooling, aggressive hydration, benzodiazepines and, if severe, bromocriptine or dantrolene. Increasing the antipsychotic in mistaken belief that this is catatonia is potentially fatal. Serotonin syndrome causes hyperreflexia, clonus and mydriasis rather than lead-pipe rigidity, and follows serotonergic drugs. Meningitis should be considered and excluded but does not explain the rigidity and the creatine kinase, and continuing the antipsychotic would be wrong in any case. Simple heat stroke does not occur in a normothermic environment with an antipsychotic as the obvious trigger, and discharge would be dangerous.",
+      difficulty: "moderate",
+    },
+    {
+      id: "psychiatry-psychosis-q3",
+      stem: "A 20-year-old student is brought with two days of fearfulness, seeing snakes on the wall, disorientation to time and place, and a fluctuating level of alertness. He is febrile at 38.6 degrees C. His friends say he had been unwell with headache for a week. What is the most appropriate action?",
+      options: [
+        "Diagnose schizophrenia and start risperidone 2 mg",
+        "Diagnose delirium and investigate urgently for an underlying medical cause including central nervous system infection, with imaging and lumbar puncture as indicated",
+        "Diagnose cannabis-induced psychosis and observe without investigation",
+        "Diagnose brief psychotic disorder and reassure the family",
+        "Give haloperidol 10 mg intramuscularly and discharge",
+      ],
+      answer: 1,
+      explanation:
+        "Acute onset over days with visual hallucinations, disorientation and a fluctuating level of consciousness in a febrile patient with preceding headache is delirium, and encephalitis or meningitis must be excluded urgently with appropriate imaging and lumbar puncture; the treatment is of the cause. Schizophrenia is not diagnosed in the presence of clouded consciousness and requires six months of disturbance. Cannabis-induced psychosis is possible in this age group but does not explain fever and disorientation, and observing without investigation would miss a treatable encephalitis. Brief psychotic disorder requires the absence of an organic cause. Giving haloperidol and discharging a febrile, disoriented patient risks death from an untreated central nervous system infection, and an antipsychotic alone in delirium without treating the cause is dangerous.",
+      difficulty: "moderate",
+    },
+    {
+      id: "psychiatry-psychosis-q4",
+      stem: "A 35-year-old woman with schizophrenia has had two adequate trials of risperidone 6 mg and olanzapine 20 mg, each for six weeks, with persistent hallucinations and delusions. What is the correct next step?",
+      options: [
+        "Add haloperidol to the olanzapine",
+        "Refer for clozapine, which is the only agent with proven superiority in treatment-resistant schizophrenia, with regular neutrophil monitoring",
+        "Increase olanzapine to 40 mg daily",
+        "Add an antidepressant",
+        "Stop all antipsychotics and try psychotherapy alone",
+      ],
+      answer: 1,
+      explanation:
+        "Treatment resistance is defined as failure of two adequate antipsychotic trials of 4-6 weeks each at therapeutic dose, and clozapine is the only drug with demonstrated superiority in that situation as well as an anti-suicidal effect; it requires specialist initiation, slow titration and regular white cell and neutrophil monitoring because of agranulocytosis in about 0.8%. Combining two antipsychotics is polypharmacy without evidence of benefit and multiplies the adverse effects. Olanzapine at 40 mg exceeds the licensed maximum and adds metabolic harm without proven extra efficacy. An antidepressant does not treat positive psychotic symptoms. Psychotherapy alone in active psychosis abandons the only treatment that controls the symptoms and guarantees deterioration.",
+      difficulty: "moderate",
+    },
+    {
+      id: "psychiatry-psychosis-q5",
+      stem: "Under the Mental Healthcare Act 2017, which statement is correct?",
+      options: [
+        "Attempted suicide remains punishable under section 309 of the Indian Penal Code",
+        "A person who attempts suicide is presumed to have severe stress and shall not be tried or punished, and the government must provide care and rehabilitation",
+        "Unmodified electroconvulsive therapy without anaesthesia is permitted in emergencies",
+        "Supported admission may continue indefinitely on the nominated representative's request alone",
+        "Insurers may exclude mental illness from health insurance cover",
+      ],
+      answer: 1,
+      explanation:
+        "Section 115 of the Mental Healthcare Act 2017 presumes that a person who attempts suicide is under severe stress, bars trial and punishment under section 309 of the Indian Penal Code, and places a duty on the government to provide care, treatment and rehabilitation. The Act therefore contradicts the first option. Unmodified or direct ECT without anaesthesia and muscle relaxant is prohibited outright, with no emergency exception. Supported admission under sections 89 and 90 is limited to 30 days in the first instance and beyond that requires the Mental Health Review Board, so it cannot continue indefinitely on the representative's request. Section 21(4) requires insurers to provide cover for mental illness on the same basis as physical illness, so exclusion is unlawful.",
+      difficulty: "easy",
+    },
+  ],
+  cards: [
+    {
+      id: "psychiatry-psychosis-c1",
+      front: "DSM-5 criteria for schizophrenia.",
+      back: "Two or more of delusions, hallucinations, disorganised speech, grossly disorganised or catatonic behaviour, negative symptoms - each for a significant part of one month, with at least one being delusions, hallucinations or disorganised speech - plus functional decline and six months of continuous disturbance.",
+    },
+    {
+      id: "psychiatry-psychosis-c2",
+      front: "What must be excluded before diagnosing a first episode of schizophrenia?",
+      back: "Delirium above all; then hypoglycaemia, electrolyte disturbance, uraemia, hepatic encephalopathy, thyroid disease, B12 deficiency, HIV, neurosyphilis, encephalitis, epilepsy, tumour, SLE, Wilson's disease under 40; and substance-induced psychosis, especially cannabis, alcohol, stimulants and steroids.",
+    },
+    {
+      id: "psychiatry-psychosis-c3",
+      front: "Why does duration of untreated psychosis matter?",
+      back: "A longer duration of untreated psychosis predicts poorer symptomatic and functional recovery. In India the median exceeds a year, so early recognition and prompt treatment by the family physician is the highest-value intervention available.",
+    },
+    {
+      id: "psychiatry-psychosis-c4",
+      front: "Antipsychotic starting doses in family practice.",
+      back: "Risperidone 1-2 mg at night to 2-6 mg/day; olanzapine 5-10 mg at night to 20 mg; aripiprazole 10-15 mg to 30 mg; quetiapine 50-600 mg; haloperidol 1.5-5 mg to 10 mg. One drug at a time, adequate trial of 4-6 weeks.",
+    },
+    {
+      id: "psychiatry-psychosis-c5",
+      front: "Treatment of acute dystonia and of akathisia.",
+      back: "Acute dystonia: promethazine 25-50 mg IM/IV or trihexyphenidyl 2 mg orally, with relief in minutes. Akathisia: reduce the dose or switch, plus propranolol 10-40 mg BD-TDS; it is mistaken for worsening psychosis and is a recognised cause of suicide.",
+    },
+    {
+      id: "psychiatry-psychosis-c6",
+      front: "Neuroleptic malignant syndrome.",
+      back: "Hyperthermia, lead-pipe rigidity, altered sensorium, autonomic instability, raised creatine kinase and leucocytosis over 24-72 hours; about 10% mortality. Stop the antipsychotic, admit, cool, hydrate aggressively, give a benzodiazepine, and bromocriptine or dantrolene if severe.",
+    },
+    {
+      id: "psychiatry-psychosis-c7",
+      front: "Rapid tranquillisation for acute agitation.",
+      back: "De-escalate first, then offer oral risperidone 1-2 mg, olanzapine 5-10 mg or lorazepam 1-2 mg. If IM is needed: haloperidol 5-10 mg plus promethazine 25-50 mg (the TREC-validated combination) or lorazepam 2-4 mg. Never give IM olanzapine within an hour of a parenteral benzodiazepine.",
+    },
+    {
+      id: "psychiatry-psychosis-c8",
+      front: "Five things the Mental Healthcare Act 2017 changed.",
+      back: "Rights-based access with free care for the poor and insurance parity; advance directive and nominated representative; independent versus supported admission (maximum 30 days initially) with Mental Health Review Boards; section 115 decriminalised attempted suicide; unmodified ECT, chaining and seclusion prohibited.",
+    },
+  ],
+  references: [
+    "American Psychiatric Association, DSM-5-TR, 2022",
+    "Mental Healthcare Act 2017, Government of India (in force from 29 May 2018); Rights of Persons with Disabilities Act 2016",
+    "Indian Psychiatric Society Clinical Practice Guidelines for the management of schizophrenia, 2017",
+    "NICE Clinical Guideline CG178, Psychosis and schizophrenia in adults: prevention and management, updated 2014",
+    "TREC Collaborative Group. Rapid tranquillisation for agitated patients in emergency psychiatric rooms: randomised trial of midazolam versus haloperidol plus promethazine, BMJ, 2003",
+    "WHO mhGAP Intervention Guide, version 2.0, 2016; National Mental Health Survey of India 2015-16, NIMHANS",
+  ],
+});
+topics.push({
+  id: "psychiatry-delirium-dementia",
+  title: "Delirium versus dementia in the older patient",
+  oneLiner:
+    "Delirium is an acute, fluctuating disturbance of attention and awareness with an additional cognitive deficit, caused by a medical condition, drug or withdrawal, and it is a medical emergency; dementia is an insidious, progressive decline in two or more cognitive domains sufficient to impair independence, with a clear sensorium - the practical separations are the time course, the state of attention and the level of consciousness, and the two coexist so often that a sudden worsening in a patient with dementia is delirium until proved otherwise.",
+  frequency: "less-common",
+  keywords: [
+    "delirium",
+    "dementia",
+    "Confusion Assessment Method",
+    "4AT",
+    "hypoactive delirium",
+    "PINCH ME",
+    "MMSE",
+    "MoCA",
+    "Hindi Mental State Examination",
+    "Alzheimer disease",
+    "vascular dementia",
+    "Lewy body dementia",
+    "frontotemporal dementia",
+    "donepezil",
+    "memantine",
+    "haloperidol",
+    "BPSD",
+    "pseudodementia",
+    "normal pressure hydrocephalus",
+    "Beers criteria",
+  ],
+  sections: [
+    {
+      heading: "Definitions and why the distinction decides the management",
+      points: [
+        "**Delirium (DSM-5)**: a disturbance of **attention and awareness** that develops **over hours to days**, represents a change from baseline, **fluctuates during the day**, is accompanied by at least one additional cognitive disturbance (memory, orientation, language, visuospatial ability or perception), and is a **direct physiological consequence of a medical condition, substance intoxication or withdrawal, a medication, or multiple causes**.",
+        "**Major neurocognitive disorder (dementia)**: **significant decline from a previous level in one or more cognitive domains** - complex attention, executive function, learning and memory, language, perceptual-motor or social cognition - which **interferes with independence in everyday activities**, is not due to delirium or another mental disorder, and is typically **insidious in onset and progressive over months to years**.",
+        "**The three questions that separate them at the bedside are: how fast did it start (hours to days versus months to years), is attention impaired (delirium yes, early dementia largely no), and is the level of consciousness altered or fluctuating (delirium yes, dementia no until very late)**.",
+        "**Delirium is a medical emergency with real mortality.** It occurs in **20-30% of older medical inpatients and up to 50% after hip fracture surgery**, it prolongs hospital stay, doubles the risk of institutional care, increases in-hospital mortality substantially, and it is an independent predictor of subsequent dementia; delirium is **preventable in about a third of cases** with simple multicomponent measures.",
+        "**Dementia affects about 7.4% of Indians aged 60 and over** (LASI-Diagnostic Assessment of Dementia, 2020), giving roughly 8.8 million people, and the number will more than double by 2036; **Alzheimer's disease accounts for about 60%, vascular dementia for 20-30%**, with dementia with Lewy bodies, frontotemporal dementia and mixed forms making up the rest.",
+        "**The two coexist constantly, and the trap is symmetrical**: an older person with dementia is at high risk of delirium, so **any sudden change in a person with dementia is delirium until proved otherwise** and needs a search for infection, drugs, pain, constipation and retention; conversely, delirium in someone with no known cognitive problem may be the first exposure of an undiagnosed dementia, so cognition must be reassessed once the acute illness has resolved.",
+      ],
+    },
+    {
+      heading: "Recognising delirium: CAM, 4AT and the hypoactive form",
+      points: [
+        "**The Confusion Assessment Method (CAM) is the standard diagnostic algorithm**: delirium is present when there is **(1) acute onset with a fluctuating course AND (2) inattention, PLUS either (3) disorganised thinking OR (4) an altered level of consciousness**. Its sensitivity is about 94% and specificity about 89% when applied by a trained assessor.",
+        "**Test attention formally, do not assume it.** Ask the patient to **recite the months of the year backwards from December, or the days of the week backwards, or to perform serial sevens or a digit span**; failure at months backwards is the quickest and most sensitive bedside test of inattention.",
+        "**The 4AT is the practical screening tool for a busy clinic or ward**: **Alertness; AMT4 (age, date of birth, place, current year); Attention (months backwards); and Acute change or fluctuating course**, scored 0-12, where **4 or more suggests possible delirium and cognitive impairment, 1-3 suggests possible cognitive impairment without delirium, and 0 makes delirium unlikely**. It needs no training and takes about two minutes.",
+        "**Hypoactive delirium is the commonest form in older people and the most missed** - the quiet, drowsy, withdrawn patient who is assumed to be tired, depressed or simply old; it carries a **worse prognosis than the hyperactive form** precisely because it is not recognised. Hyperactive delirium with agitation, hallucinations and wandering is the minority; mixed delirium alternates between the two across a day.",
+        "The characteristic features to record are **acute onset, fluctuation with lucid intervals and worsening in the evening (sundowning), inattention, disorganised or rambling speech, altered sleep-wake cycle, perceptual disturbance which is typically visual, and emotional lability**.",
+        "Get a **collateral history from the family or carer** about the baseline: what could the patient do a week ago, is this new, is it fluctuating, what drugs were started, and has there been a fall, a fever, poor intake or constipation. Without a collateral history the distinction from dementia cannot be made.",
+      ],
+    },
+    {
+      heading: "Causes of delirium and the work-up",
+      points: [
+        "Use a mnemonic so that nothing is missed - **PINCH ME: Pain, Infection, Nutrition (and hypoglycaemia and thiamine deficiency), Constipation, Hydration and electrolytes, Medication and withdrawal, Environment (including sensory deprivation and a change of place)**.",
+        "**Infection** is the commonest precipitant in Indian practice - urinary tract infection, pneumonia, cellulitis, malaria, typhoid, dengue, tuberculosis and, in an older diabetic, an unnoticed foot infection or sepsis without fever; **urinary retention and faecal impaction** are frequent and easily reversed, so **examine the abdomen, do a bladder scan or palpate for a distended bladder, and perform a rectal examination**.",
+        "**Drugs cause a large minority of delirium in the elderly and are the most correctable cause.** The offenders to look for by name are **anticholinergics (oxybutynin, promethazine, chlorpheniramine, hyoscine, tricyclic antidepressants), benzodiazepines and Z-drugs, opioids especially tramadol and pethidine, steroids, levodopa and dopamine agonists, digoxin, lithium, fluoroquinolones, isoniazid, cefepime, H2 blockers and metoclopramide**; check the **anticholinergic burden and the Beers criteria** at every review, and remember that **withdrawal from alcohol, benzodiazepines or nicotine** is as common a cause as any drug given.",
+        "**Metabolic and organ causes**: hypoglycaemia and hyperglycaemia, hyponatraemia and hypernatraemia, hypercalcaemia, uraemia, hepatic encephalopathy, hypoxia and hypercapnia, thyroid disease, vitamin B12 and thiamine deficiency, and anaemia.",
+        "**Neurological causes not to miss**: stroke, **subdural haematoma after an often-forgotten fall**, meningitis or encephalitis, non-convulsive status epilepticus, and hypertensive encephalopathy.",
+        "**Minimum work-up**: capillary blood glucose immediately at the bedside, complete blood count, urea, creatinine and electrolytes including sodium and calcium, liver function, TSH, vitamin B12, C-reactive protein, urine routine and culture, chest radiograph, ECG, oxygen saturation, and a **medication reconciliation**; add blood cultures if febrile, and **CT head if there are focal signs, a head injury or fall, anticoagulation, a first seizure, or no cause is found**. **Lumbar puncture** if meningism, fever with headache or an unexplained picture.",
+      ],
+    },
+    {
+      heading: "Treating delirium: the non-drug plan first",
+      points: [
+        "**Treat the cause and stop the culprit drug** - this is the treatment; everything else is supportive. Rehydrate, correct sodium and glucose, treat the infection, relieve retention and constipation, control pain (untreated pain is itself a cause, so use regular paracetamol rather than withholding analgesia), and correct hypoxia.",
+        "**The multicomponent non-pharmacological package, of the kind proved in the Hospital Elder Life Program, prevents about a third of delirium and is the core of treatment**: repeated **reorientation** with a clock, a calendar and a familiar face; **a familiar relative at the bedside**; **spectacles and hearing aids restored**; **good lighting by day and quiet, dark nights** with no routine observations disturbing sleep; **early mobilisation**; **oral hydration and nutrition**; **avoidance of catheters and lines** where possible; and **avoidance of ward and bed moves**.",
+        "**Antipsychotics do not treat delirium and do not shorten it**; they are reserved for the patient whose distress, agitation or psychotic symptoms threaten his own safety or that of others, or who will not accept essential treatment. When needed, use **haloperidol 0.25-0.5 mg orally or intramuscularly, repeated cautiously, with a usual maximum of 2-3 mg in 24 hours in an older person**, or **quetiapine 12.5-25 mg or risperidone 0.25-0.5 mg**, at the lowest dose for the shortest time, reviewed daily and stopped as soon as possible.",
+        "**Two absolute cautions.** In **Parkinson's disease and dementia with Lewy bodies, haloperidol and risperidone can cause severe, sometimes irreversible extrapyramidal deterioration - use quetiapine or clozapine instead**. And in **delirium due to alcohol or benzodiazepine withdrawal, or in neuroleptic malignant syndrome, the treatment is a benzodiazepine, not an antipsychotic**, with parenteral thiamine given before glucose in the drinker.",
+        "**Benzodiazepines otherwise worsen and prolong delirium** and should not be used as routine sedation; physical restraint likewise worsens agitation, causes injury and rhabdomyolysis, and is a last resort only, for the shortest time, with documentation, and never as a substitute for looking for the cause.",
+        "**Follow through after the episode.** Explain to the family that recovery is often slow and incomplete, that improvement may take weeks and that some cognitive deficit may persist; **reassess cognition 4-8 weeks after recovery**, because a first delirium frequently unmasks an undiagnosed dementia, and record the episode prominently so that future admissions anticipate it.",
+      ],
+    },
+    {
+      heading: "Assessing and managing dementia in family practice",
+      points: [
+        "**Suspect dementia** with progressive forgetfulness for recent events, repeating questions, misplacing objects, getting lost on familiar routes, difficulty with money and medicines, word-finding difficulty, withdrawal from hobbies, or a change in personality - always corroborated by a family informant, since the patient's own account under-reports.",
+        "**Test cognition with an instrument suited to the patient's language and literacy**: the **MMSE is scored out of 30 with 24 or less suggesting impairment**, but it is heavily education- and language-dependent, so use the **Hindi Mental State Examination (HMSE) or another validated vernacular adaptation** in Indian practice, or the **MoCA (out of 30, with 26 or more normal and one point added for 12 years of education or less)** which is better for mild impairment and executive dysfunction; the **10-item Abbreviated Mental Test and the clock-drawing test** are quick screens. **Assess function separately with basic and instrumental activities of daily living**, since function, not the test score, defines dementia.",
+        "**Exclude the reversible and treatable contributors in every case**: **vitamin B12 deficiency, hypothyroidism, depression (pseudodementia), normal pressure hydrocephalus (the triad of gait apraxia, urinary incontinence and cognitive decline - and gait comes first), chronic subdural haematoma, neurosyphilis, HIV, hypercalcaemia, alcohol, obstructive sleep apnoea and drugs with anticholinergic burden**. Investigate with complete blood count, glucose or HbA1c, renal and liver function, calcium, TSH, vitamin B12, VDRL and HIV where indicated, and **neuroimaging (CT or MRI) at least once, particularly with a rapid course, a young patient, focal signs, gait disturbance early, or a history of head injury or anticoagulation**.",
+        "**Recognise the subtypes because they change management**: **Alzheimer's disease** - insidious amnestic onset with gradual decline; **vascular dementia** - stepwise decline with focal signs and vascular risk factors, where the treatment is aggressive control of blood pressure, diabetes, lipids and smoking; **dementia with Lewy bodies** - fluctuating cognition, well-formed visual hallucinations, parkinsonism, REM sleep behaviour disorder and **severe neuroleptic sensitivity**; **frontotemporal dementia** - early personality change, disinhibition, apathy or language failure in a younger patient with relatively preserved memory.",
+        "**Drug treatment is modest but worthwhile**: **donepezil 5 mg at night for a month then 10 mg**, or rivastigmine (oral or patch) or galantamine, for mild to moderate Alzheimer's disease and for dementia with Lewy bodies (where cholinesterase inhibitors help the hallucinations); watch for bradycardia, syncope, nausea, diarrhoea and vivid dreams, and avoid in significant bradyarrhythmia or peptic ulcer. **Memantine 5 mg weekly increased to 10 mg twice daily** is used in moderate to severe disease and may be combined with donepezil. **There is no drug treatment for the cognitive decline of vascular dementia beyond risk factor control**.",
+        "**Behavioural and psychological symptoms of dementia (BPSD)** - agitation, aggression, wandering, hallucinations, sleep reversal - are managed **non-pharmacologically first**: look for pain, infection, retention, constipation, hunger, thirst, sensory deprivation, boredom and a changed environment; use routine, familiar surroundings, music, activity and carer education. **Antipsychotics increase the risk of stroke and death in dementia and are reserved for severe distress or danger, at the lowest dose, reviewed every 6-12 weeks and stopped when possible.** Support the carer - carer depression is common and predicts institutionalisation - discuss driving, financial and legal capacity, advance care planning and a nominated representative early, while the patient can still participate, and link the family to the District Mental Health Programme, the Alzheimer's and Related Disorders Society of India (ARDSI) and the disability certificate provisions of the Rights of Persons with Disabilities Act 2016.",
+      ],
+    },
+  ],
+  tables: [
+    {
+      heading: "Delirium versus dementia versus depression (pseudodementia)",
+      columns: ["Feature", "Delirium", "Dementia", "Depression"],
+      rows: [
+        ["Onset", "Hours to days, acute", "Months to years, insidious", "Weeks, often after a loss"],
+        ["Course over the day", "Fluctuates, lucid intervals, worse at night (sundowning)", "Stable through the day, slowly progressive", "Stable, may be worse in the morning"],
+        ["Attention", "Impaired - the cardinal feature", "Normal until late", "Variable, distractible but testable"],
+        ["Level of consciousness", "Altered - drowsy or hypervigilant", "Clear until very late", "Clear"],
+        ["Hallucinations", "Common, typically visual", "Uncommon except in Lewy body dementia", "Rare except in psychotic depression"],
+        ["Answers on cognitive testing", "Inconsistent, rambling", "Near-miss answers, confabulation, tries hard", "'I do not know', poor effort"],
+        ["Reversibility", "Usually reversible if the cause is treated", "Progressive and largely irreversible", "Reversible with antidepressant treatment"],
+        ["Immediate action", "Medical emergency - find and treat the cause", "Assess function, exclude reversible causes, plan care", "Treat with an SSRI and reassess cognition"],
+      ],
+    },
+    {
+      heading: "Screening and assessment tools",
+      columns: ["Tool", "Use", "Scoring", "Threshold"],
+      rows: [
+        ["Confusion Assessment Method (CAM)", "Diagnosis of delirium", "Four features", "(1) Acute onset and fluctuating course AND (2) inattention, PLUS either (3) disorganised thinking OR (4) altered consciousness"],
+        ["4AT", "Rapid delirium screen, no training needed", "0-12", "4 or more - possible delirium; 1-3 - possible cognitive impairment; 0 - delirium unlikely"],
+        ["MMSE", "Cognitive screen", "0-30", "24 or less suggests impairment; heavily education- and language-dependent"],
+        ["Hindi Mental State Examination (HMSE)", "Cognitive screen validated for Indian, low-literacy populations", "0-31", "Use in place of MMSE where language or literacy limits it"],
+        ["MoCA", "Detects mild cognitive impairment and executive dysfunction", "0-30", "26 or more normal; add 1 point if 12 years of education or less"],
+        ["Months of the year backwards", "Bedside test of attention", "Pass or fail", "Failure indicates inattention - the cardinal feature of delirium"],
+      ],
+    },
+    {
+      heading: "Drugs in delirium and dementia: what to use and what to avoid",
+      columns: ["Situation", "Drug and dose", "Cautions"],
+      rows: [
+        ["Delirium with severe distress or danger", "Haloperidol 0.25-0.5 mg orally or IM, repeated cautiously, usually maximum 2-3 mg in 24 hours in the elderly", "Does not treat or shorten the delirium; lowest dose, shortest time, review daily"],
+        ["Delirium in Parkinson's disease or Lewy body dementia", "Quetiapine 12.5-25 mg (or clozapine under specialist care)", "Haloperidol and risperidone can cause severe, sometimes irreversible extrapyramidal deterioration"],
+        ["Delirium from alcohol or benzodiazepine withdrawal", "Benzodiazepine (diazepam or lorazepam) plus parenteral thiamine before glucose", "An antipsychotic alone is wrong and lowers the seizure threshold"],
+        ["Alzheimer's disease, mild to moderate", "Donepezil 5 mg at night for 4 weeks then 10 mg; or rivastigmine or galantamine", "Bradycardia, syncope, nausea, diarrhoea, vivid dreams; avoid in significant bradyarrhythmia and active peptic ulcer"],
+        ["Alzheimer's disease, moderate to severe", "Memantine 5 mg weekly increments to 10 mg twice daily, alone or with donepezil", "Reduce in renal impairment; dizziness, confusion"],
+        ["BPSD - agitation and aggression", "Non-drug measures first; if essential, risperidone 0.25-0.5 mg or quetiapine 12.5-25 mg", "Antipsychotics increase stroke and death in dementia; review every 6-12 weeks and stop when possible"],
+      ],
+    },
+  ],
+  redFlags: [
+    "Any sudden change in cognition or behaviour in a person with dementia - this is delirium until proved otherwise; look for infection, drugs, pain, urinary retention, constipation, dehydration and a fall.",
+    "The quiet, drowsy, withdrawn older patient assumed to be tired or depressed - hypoactive delirium is the commonest form, the most missed, and carries the worse prognosis; test attention with months of the year backwards.",
+    "Confusion with fever, neck stiffness, headache, focal neurological signs, a new seizure, recent head injury or anticoagulation - image the brain and consider lumbar puncture; a chronic subdural haematoma after a forgotten fall is a classic and treatable cause.",
+    "Hypoglycaemia in any confused patient - check capillary glucose at the bedside before anything else, and give thiamine before glucose in a drinker.",
+    "Rapidly progressive dementia over weeks to months, dementia under the age of 65, or dementia with early gait disturbance and urinary incontinence - investigate urgently for normal pressure hydrocephalus, subdural haematoma, B12 deficiency, hypothyroidism, neurosyphilis, HIV, malignancy and autoimmune encephalitis.",
+    "Marked worsening of parkinsonism, rigidity or consciousness after a single dose of haloperidol or risperidone - neuroleptic sensitivity of dementia with Lewy bodies; stop the drug immediately and use quetiapine if an antipsychotic is unavoidable.",
+  ],
+  pearls: [
+    "Three questions separate delirium from dementia: how fast did it start, is attention impaired, and is consciousness altered or fluctuating. Delirium is yes, yes, yes.",
+    "CAM: acute onset with fluctuating course AND inattention, PLUS disorganised thinking OR altered consciousness. The 4AT is the two-minute screen - 4 or more means possible delirium.",
+    "Months of the year backwards is the quickest bedside test of attention; the patient who cannot do it has inattention until proved otherwise.",
+    "PINCH ME - Pain, Infection, Nutrition, Constipation, Hydration, Medication, Environment - and always check the bladder and the rectum, and reconcile the drug list against the Beers criteria.",
+    "Antipsychotics do not treat delirium; the multicomponent non-drug package does, and it prevents about a third of cases. Reserve haloperidol 0.25-0.5 mg for danger or severe distress, and never use it in Lewy body dementia or Parkinson's disease.",
+    "Reassess cognition 4-8 weeks after a delirium resolves, because a first delirium often unmasks an undiagnosed dementia.",
+    "MMSE 24 or less suggests impairment but is education- and language-dependent; use the Hindi Mental State Examination or another vernacular tool in Indian practice, and define dementia by loss of function, not by the score.",
+  ],
+  theory: [
+    {
+      id: "psychiatry-delirium-t1",
+      paper: "II",
+      kind: "differentiate",
+      marks: 10,
+      minutes: 20,
+      frequency: "less-common",
+      question:
+        "An 80-year-old man with known mild dementia is brought by his son because for two days he has been drowsy by day, agitated at night, seeing people in the room and not recognising his family. Differentiate delirium from dementia, and describe your assessment and management.",
+      openingLines: [
+        "Delirium is defined by DSM-5 as a disturbance of attention and awareness developing over hours to days, representing a change from baseline, fluctuating during the day, with an additional cognitive disturbance, and caused directly by a medical condition, substance intoxication or withdrawal, or a medication.",
+        "This man has an acute two-day change with fluctuation, a reversed sleep-wake cycle, visual hallucinations and disorientation superimposed on known dementia, so this is delirium superimposed on dementia - a medical emergency in which the task is to find and treat the precipitant.",
+      ],
+      answer: [
+        {
+          heading: "1. Differentiating delirium from dementia",
+          points: [
+            "Onset: delirium over hours to days; dementia over months to years.",
+            "Course: delirium fluctuates with lucid intervals and worsens in the evening; dementia is stable through the day and slowly progressive.",
+            "Attention: impaired in delirium and this is the cardinal feature; preserved in dementia until late.",
+            "Consciousness: altered, drowsy or hypervigilant in delirium; clear in dementia until the terminal stage.",
+            "Hallucinations: common and typically visual in delirium; uncommon in dementia except with Lewy bodies.",
+            "Reversibility: delirium is usually reversible if the cause is treated; dementia is progressive. Depression (pseudodementia) is the third member of the differential, with 'I do not know' answers, poor effort and preserved attention.",
+          ],
+        },
+        {
+          heading: "2. Confirming delirium at the bedside",
+          points: [
+            "Apply the Confusion Assessment Method: acute onset with a fluctuating course AND inattention, plus either disorganised thinking OR an altered level of consciousness.",
+            "Test attention formally with the months of the year backwards, days of the week backwards or serial sevens.",
+            "Use the 4AT as the quick screen - alertness, AMT4, attention and acute change - where 4 or more indicates possible delirium.",
+            "Take a collateral history from the son about the baseline a week ago, any new drugs, falls, fever, poor intake and constipation.",
+          ],
+        },
+        {
+          heading: "3. Finding the cause - PINCH ME",
+          points: [
+            "Pain - untreated pain from arthritis, a fracture or a pressure sore.",
+            "Infection - urinary tract infection, pneumonia, cellulitis, sepsis which may present without fever in the elderly.",
+            "Nutrition - hypoglycaemia, thiamine deficiency, poor intake.",
+            "Constipation and urinary retention - examine the abdomen, palpate or scan the bladder, and do a rectal examination.",
+            "Hydration and electrolytes - dehydration, hyponatraemia, hypercalcaemia, uraemia.",
+            "Medication - anticholinergics, benzodiazepines, opioids especially tramadol, steroids, digoxin, fluoroquinolones - and withdrawal from alcohol, benzodiazepines or nicotine; check against the Beers criteria.",
+            "Environment - change of place, sensory deprivation with missing spectacles or hearing aid, disturbed nights.",
+          ],
+        },
+        {
+          heading: "4. Investigation",
+          points: [
+            "Capillary blood glucose at once, oxygen saturation, temperature, pulse and blood pressure.",
+            "Complete blood count, urea, creatinine and electrolytes with sodium and calcium, liver function, C-reactive protein, TSH, vitamin B12, urine routine and culture, chest radiograph and ECG.",
+            "Blood cultures if febrile; medication reconciliation as a formal step.",
+            "CT head if there are focal signs, a fall or head injury, anticoagulation, a first seizure, or no cause is found; lumbar puncture if meningism or unexplained fever with headache.",
+          ],
+        },
+        {
+          heading: "5. Management",
+          points: [
+            "Treat the cause and stop the offending drug - this is the treatment; correct glucose, sodium and hydration, treat infection, relieve retention and constipation, and give regular paracetamol for pain.",
+            "Multicomponent non-drug care: reorientation with clock and calendar, a familiar relative at the bedside, spectacles and hearing aid restored, good daytime light and quiet dark nights, early mobilisation, oral hydration, avoidance of catheters, lines and bed moves.",
+            "Reserve antipsychotics for severe distress or danger: haloperidol 0.25-0.5 mg orally or intramuscularly, maximum usually 2-3 mg in 24 hours in the elderly, reviewed daily and stopped as soon as possible - remembering that antipsychotics do not treat or shorten delirium.",
+            "Use quetiapine 12.5-25 mg instead if there is Parkinson's disease or Lewy body dementia, and use a benzodiazepine with parenteral thiamine if the delirium is from alcohol or benzodiazepine withdrawal.",
+            "Avoid routine benzodiazepines and physical restraint; explain to the family that recovery may take weeks and may be incomplete.",
+            "Reassess cognition and function 4-8 weeks after recovery, document the episode prominently, and plan carer support, driving and capacity discussions and advance care planning.",
+          ],
+        },
+      ],
+      mustDraw: [
+        "A three-column table comparing delirium, dementia and depression on onset, course, attention, consciousness, hallucinations and reversibility.",
+        "The CAM algorithm as a flow chart, and PINCH ME expanded as a causes list.",
+      ],
+      markSplit: [
+        { part: "Definitions and the table differentiating delirium from dementia", marks: 3 },
+        { part: "CAM, 4AT and formal testing of attention", marks: 2 },
+        { part: "Causes using PINCH ME and the investigation plan", marks: 2 },
+        { part: "Non-pharmacological management", marks: 2 },
+        { part: "Drug treatment with doses and the Lewy body and withdrawal cautions", marks: 1 },
+      ],
+      keywords: ["delirium", "dementia", "CAM", "4AT", "PINCH ME"],
+    },
+    {
+      id: "psychiatry-delirium-t2",
+      paper: "II",
+      kind: "short-note",
+      marks: 5,
+      minutes: 10,
+      frequency: "less-common",
+      question: "Short note: the assessment of a 70-year-old with progressive memory loss in family practice.",
+      openingLines: [
+        "Major neurocognitive disorder, or dementia, is a significant decline from a previous level in one or more cognitive domains that interferes with independence in everyday activities, is not due to delirium or another mental disorder, and is typically insidious and progressive.",
+        "The assessment has four parts: confirm the decline with a collateral history and cognitive testing, define the functional impact, exclude reversible causes and delirium, and identify the subtype.",
+      ],
+      answer: [
+        {
+          heading: "1. History",
+          points: [
+            "Corroborate with a family informant: onset, rate of progression, whether stepwise or gradual, and what the patient can no longer do.",
+            "Domains: memory for recent events, word finding, getting lost, handling money and medicines, using appliances, personality and behaviour change.",
+            "Vascular risk factors, stroke or transient ischaemic attack, head injury, alcohol, drugs with anticholinergic burden, depression, and family history.",
+            "Ask specifically about visual hallucinations, fluctuation, parkinsonism and dream enactment (Lewy body), and early disinhibition or apathy (frontotemporal).",
+          ],
+        },
+        {
+          heading: "2. Examination and cognitive testing",
+          points: [
+            "General and neurological examination including gait, focal signs, parkinsonism, blood pressure with postural drop, and vision and hearing.",
+            "Cognitive testing with an instrument appropriate to language and literacy: MMSE out of 30 (24 or less suggests impairment) but preferably the Hindi Mental State Examination or another validated vernacular tool in Indian practice; MoCA for mild impairment (26 or more normal, add 1 point for 12 years of education or less); the clock-drawing test and 10-item Abbreviated Mental Test as quick screens.",
+            "Assess basic and instrumental activities of daily living separately - function, not the test score, defines dementia.",
+            "Exclude delirium first with the CAM or 4AT, and screen for depression with the Geriatric Depression Scale, since pseudodementia is fully treatable.",
+          ],
+        },
+        {
+          heading: "3. Investigations for reversible causes",
+          points: [
+            "Complete blood count, glucose or HbA1c, renal and liver function, calcium, TSH, vitamin B12, VDRL and HIV where indicated.",
+            "Neuroimaging with CT or MRI at least once, and urgently if the course is rapid, the patient is young, there are focal signs, gait is affected early, or there is head injury or anticoagulation.",
+            "Look specifically for normal pressure hydrocephalus (gait apraxia, urinary incontinence, cognitive decline - gait first), chronic subdural haematoma, hypothyroidism, B12 deficiency, neurosyphilis and alcohol.",
+          ],
+        },
+        {
+          heading: "4. Subtypes and the plan",
+          points: [
+            "Alzheimer's disease: insidious amnestic onset, gradual progression - donepezil 5 mg then 10 mg, memantine in moderate to severe disease.",
+            "Vascular dementia: stepwise decline with focal signs - aggressive control of blood pressure, diabetes, lipids and smoking.",
+            "Dementia with Lewy bodies: fluctuating cognition, visual hallucinations, parkinsonism, REM sleep behaviour disorder, severe neuroleptic sensitivity - cholinesterase inhibitors help, avoid haloperidol and risperidone.",
+            "Frontotemporal dementia: early personality change and disinhibition or language failure in a younger patient.",
+            "Then: carer support and education, safety at home, driving and financial capacity, advance care planning and a nominated representative while capacity remains, disability certification under the Rights of Persons with Disabilities Act 2016, and referral to the District Mental Health Programme or ARDSI.",
+          ],
+        },
+      ],
+      mustDraw: [
+        "A table of the four common dementia subtypes against their distinguishing features and management.",
+        "A list of the reversible causes of cognitive decline with the test for each.",
+      ],
+      markSplit: [
+        { part: "Definition and collateral history", marks: 1 },
+        { part: "Cognitive testing with appropriate tools and functional assessment", marks: 2 },
+        { part: "Exclusion of delirium, depression and reversible causes", marks: 1 },
+        { part: "Subtypes and the management plan including carer support", marks: 1 },
+      ],
+      keywords: ["dementia", "MMSE", "HMSE", "MoCA", "reversible causes"],
+    },
+  ],
+  mcqs: [
+    {
+      id: "psychiatry-delirium-q1",
+      stem: "An 82-year-old woman admitted with a fractured neck of femur becomes drowsy and withdrawn on the second postoperative day. She answers questions slowly, cannot recite the months backwards, and dozes between questions. Her family say she was mentally sharp a week ago. What is the diagnosis?",
+      options: [
+        "Dementia unmasked by hospital admission",
+        "Hypoactive delirium",
+        "Depression following the fracture",
+        "Normal postoperative fatigue requiring no action",
+        "Dementia with Lewy bodies",
+      ],
+      answer: 1,
+      explanation:
+        "An acute change from a sharp baseline one week ago, with inattention demonstrated by failure of months backwards and a reduced level of alertness, is delirium, and the quiet withdrawn presentation is the hypoactive form - the commonest type in older people, the most frequently missed and the one with the worse prognosis. Dementia develops over months to years and does not impair attention or alertness early. Depression does not cause a fluctuating level of consciousness or inattention of this kind and does not appear within 48 hours of surgery. Calling it normal fatigue is exactly the error that leads to missed sepsis, hyponatraemia or drug toxicity. Dementia with Lewy bodies has fluctuating cognition but is a chronic disorder with visual hallucinations and parkinsonism over years, not a two-day postoperative change.",
+      difficulty: "easy",
+    },
+    {
+      id: "psychiatry-delirium-q2",
+      stem: "A 76-year-old man with Parkinson's disease develops delirium with agitation and visual hallucinations during a urinary tract infection. Non-drug measures have failed and he is pulling out his cannula. Which drug is most appropriate?",
+      options: [
+        "Haloperidol 2.5 mg intramuscularly",
+        "Quetiapine 12.5-25 mg orally",
+        "Risperidone 1 mg orally",
+        "Diazepam 5 mg orally",
+        "Promethazine 25 mg intramuscularly",
+      ],
+      answer: 1,
+      explanation:
+        "In Parkinson's disease and dementia with Lewy bodies, dopamine-blocking antipsychotics such as haloperidol and risperidone can produce severe and sometimes irreversible extrapyramidal deterioration, so quetiapine at a low dose is the accepted choice when an antipsychotic is unavoidable. Haloperidol and risperidone are therefore both wrong here for the same reason. Diazepam is a long-acting benzodiazepine that worsens and prolongs delirium and causes falls, and benzodiazepines are appropriate only in withdrawal delirium or neuroleptic malignant syndrome. Promethazine is a potent anticholinergic and will deepen the delirium it is meant to treat.",
+      difficulty: "moderate",
+    },
+    {
+      id: "psychiatry-delirium-q3",
+      stem: "A 70-year-old man has had progressive cognitive decline over eight months with a broad-based shuffling gait that appeared before the memory problem, and recent urinary incontinence. What diagnosis must be actively excluded?",
+      options: [
+        "Alzheimer's disease",
+        "Normal pressure hydrocephalus",
+        "Frontotemporal dementia",
+        "Depression with pseudodementia",
+        "Delirium from a urinary tract infection",
+      ],
+      answer: 1,
+      explanation:
+        "Gait apraxia appearing before the cognitive decline, together with urinary incontinence and dementia, is the classic triad of normal pressure hydrocephalus, which is potentially reversible with ventriculoperitoneal shunting and must be excluded by imaging - the order matters, since gait first is the strong pointer. Alzheimer's disease begins with amnesia and gait is preserved until late. Frontotemporal dementia presents with personality change, disinhibition or language failure, usually in a younger patient, without this gait pattern. Pseudodementia produces poor effort on testing with a depressed mood but not a broad-based apraxic gait. Delirium develops over hours to days, not eight months, although a urinary infection should still be excluded as a contributor.",
+      difficulty: "moderate",
+    },
+    {
+      id: "psychiatry-delirium-q4",
+      stem: "An 84-year-old woman with moderate Alzheimer's disease has become agitated and aggressive over the past three days in her own home, with no change in routine. What should be done first?",
+      options: [
+        "Start risperidone 1 mg twice daily",
+        "Search for a physical precipitant - pain, infection, urinary retention, constipation, dehydration, a new drug - and address it, alongside non-pharmacological measures",
+        "Increase her donepezil to 15 mg",
+        "Admit her to a nursing home",
+        "Start lorazepam 1 mg three times daily",
+      ],
+      answer: 1,
+      explanation:
+        "An abrupt behavioural change over days in a person with dementia is delirium until proved otherwise, and the first step is to look for pain, infection, urinary retention, constipation, dehydration and new medication, together with non-drug measures such as routine, familiar surroundings and restored spectacles and hearing aids. Starting risperidone first treats the symptom while missing a treatable cause, and antipsychotics increase the risk of stroke and death in dementia. Donepezil has a maximum licensed dose of 10 mg and increasing it does not treat acute agitation. Institutional admission is a decision made after the acute cause is treated, not instead of it. Regular lorazepam worsens and prolongs delirium and causes falls and further confusion.",
+      difficulty: "easy",
+    },
+    {
+      id: "psychiatry-delirium-q5",
+      stem: "A 68-year-old man is brought with three weeks of poor memory, slowed thinking and answers of 'I do not know' on testing. His wife says he stopped his morning walks and his social visits two months ago after his brother died, sleeps poorly and wakes at 4 a.m. His MMSE is 22. What is the most likely diagnosis and management?",
+      options: [
+        "Alzheimer's disease - start donepezil 5 mg",
+        "Depression with pseudodementia - start an SSRI such as sertraline 25-50 mg and reassess cognition after treatment",
+        "Delirium - admit for investigation",
+        "Vascular dementia - control vascular risk factors only",
+        "Normal ageing - reassure",
+      ],
+      answer: 1,
+      explanation:
+        "A subacute onset after a bereavement with withdrawal, early morning waking, poor effort and 'I do not know' answers on cognitive testing is the classic picture of depressive pseudodementia, which is fully treatable; the correct action is to treat the depression and reassess cognition afterwards, as the MMSE frequently improves substantially. Alzheimer's disease is insidious over years and patients typically attempt answers and confabulate rather than declining to answer. Delirium requires an acute fluctuating course with impaired attention and altered consciousness, which he does not have. Vascular dementia requires vascular risk factors, focal signs and a stepwise course. Calling this normal ageing misses a treatable illness with a real suicide risk, which should also be asked about directly.",
+      difficulty: "moderate",
+    },
+  ],
+  cards: [
+    {
+      id: "psychiatry-delirium-c1",
+      front: "DSM-5 definition of delirium.",
+      back: "Disturbance of attention and awareness developing over hours to days, a change from baseline, fluctuating during the day, with an additional cognitive disturbance, and directly caused by a medical condition, substance intoxication or withdrawal, or a medication.",
+    },
+    {
+      id: "psychiatry-delirium-c2",
+      front: "The Confusion Assessment Method (CAM).",
+      back: "Delirium is present with (1) acute onset and fluctuating course AND (2) inattention, PLUS either (3) disorganised thinking OR (4) an altered level of consciousness.",
+    },
+    {
+      id: "psychiatry-delirium-c3",
+      front: "The 4AT and its cut-off.",
+      back: "Alertness, AMT4 (age, date of birth, place, year), Attention (months backwards), Acute change or fluctuating course; scored 0-12. Four or more suggests possible delirium; 1-3 possible cognitive impairment; 0 delirium unlikely.",
+    },
+    {
+      id: "psychiatry-delirium-c4",
+      front: "Three questions that separate delirium from dementia.",
+      back: "How fast did it start (hours to days versus months to years)? Is attention impaired (delirium yes, early dementia no)? Is the level of consciousness altered or fluctuating (delirium yes, dementia no until very late)?",
+    },
+    {
+      id: "psychiatry-delirium-c5",
+      front: "PINCH ME - the causes of delirium.",
+      back: "Pain, Infection, Nutrition (including hypoglycaemia and thiamine deficiency), Constipation (and urinary retention), Hydration and electrolytes, Medication and withdrawal, Environment. Always check the bladder and rectum and reconcile the drug list.",
+    },
+    {
+      id: "psychiatry-delirium-c6",
+      front: "Drug treatment of delirium and the two absolute cautions.",
+      back: "Antipsychotics do not treat or shorten delirium; use haloperidol 0.25-0.5 mg only for severe distress or danger, usually maximum 2-3 mg in 24 hours in the elderly. Use quetiapine instead in Parkinson's disease and Lewy body dementia; use a benzodiazepine with thiamine in alcohol or benzodiazepine withdrawal delirium.",
+    },
+    {
+      id: "psychiatry-delirium-c7",
+      front: "Reversible causes of cognitive decline to exclude in every dementia work-up.",
+      back: "Vitamin B12 deficiency, hypothyroidism, depression (pseudodementia), normal pressure hydrocephalus, chronic subdural haematoma, neurosyphilis, HIV, hypercalcaemia, alcohol, obstructive sleep apnoea and anticholinergic drug burden.",
+    },
+    {
+      id: "psychiatry-delirium-c8",
+      front: "Distinguishing features of dementia with Lewy bodies.",
+      back: "Fluctuating cognition, well-formed recurrent visual hallucinations, spontaneous parkinsonism, REM sleep behaviour disorder, and severe neuroleptic sensitivity - haloperidol and risperidone can cause irreversible deterioration; cholinesterase inhibitors help the hallucinations.",
+    },
+  ],
+  references: [
+    "American Psychiatric Association, DSM-5-TR, 2022",
+    "Inouye SK et al. Clarifying confusion: the Confusion Assessment Method, Annals of Internal Medicine, 1990; Inouye SK. Delirium in older persons, New England Journal of Medicine, 2006",
+    "Bellelli G et al. Validation of the 4AT, Age and Ageing, 2014",
+    "NICE Clinical Guideline CG103, Delirium: prevention, diagnosis and management, updated 2023; NICE NG97, Dementia: assessment, management and support, 2018",
+    "Ganguli M et al. Hindi Mental State Examination, International Journal of Geriatric Psychiatry, 1995; Nasreddine ZS et al. MoCA, JAGS, 2005",
+    "Longitudinal Ageing Study in India - Diagnostic Assessment of Dementia (LASI-DAD), 2020; American Geriatrics Society Beers Criteria, 2023",
   ],
 });
 const cases: ClinicalCase[] = [

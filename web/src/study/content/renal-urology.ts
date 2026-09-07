@@ -2436,6 +2436,396 @@ topics.push({
   ],
 });
 
+topics.push({
+  id: "renal-urology-drug-dosing-renal-impairment",
+  title: "Drug dosing in renal impairment: the prescription that protects the kidney",
+  oneLiner:
+    "Safe prescribing in renal impairment means estimating clearance with the equation the drug label was written against - Cockcroft-Gault creatinine clearance in mL/min, not the reported eGFR in mL/min/1.73 m2 - then deciding for each drug whether to reduce the dose, lengthen the interval, avoid it altogether or monitor its level, while stopping the nephrotoxins and issuing sick-day rules.",
+  frequency: "common",
+  keywords: [
+    "Cockcroft-Gault",
+    "creatinine clearance",
+    "eGFR de-indexing",
+    "loading dose",
+    "maintenance dose",
+    "metformin eGFR",
+    "nitrofurantoin eGFR",
+    "aminoglycoside monitoring",
+    "vancomycin trough",
+    "sick day rules",
+    "NSAID avoidance",
+    "renally cleared drugs",
+    "dialysis dosing",
+    "contrast media",
+    "drug-induced AKI",
+    "deprescribing",
+  ],
+  sections: [
+    {
+      heading: "Which number to use: eGFR, creatinine clearance and de-indexing",
+      points: [
+        "**The reported eGFR from CKD-EPI 2021 is in mL/min/1.73 m2 and is normalised to a standard body surface area; it is for staging CKD.** Almost every drug label and every classical dosing table was derived from **Cockcroft-Gault creatinine clearance, which is in mL/min and is not normalised** - so for dosing, that is the number to use.",
+        "**Cockcroft-Gault: CrCl (mL/min) = [(140 - age in years) x weight in kg] / (72 x serum creatinine in mg/dL), multiplied by 0.85 if female.** Use **ideal or adjusted body weight in obesity** (actual weight overestimates clearance badly) and **actual body weight in the underweight**.",
+        "**De-indexing when only an eGFR is available: individual clearance = eGFR x body surface area / 1.73.** For a 45 kg woman with a body surface area of about 1.40 m2 and an eGFR of 40, the individualised clearance is only about 32 mL/min - which can change the dose band. **This matters most at the extremes of body size and for narrow therapeutic index drugs.**",
+        "**Creatinine is a poor filtration marker in specific patients** - the malnourished, the elderly with low muscle mass, the amputee, the paraplegic, the cirrhotic and the bodybuilder - where it **overestimates function in the wasted and underestimates it in the muscular**. Use **cystatin C-based CKD-EPI** where the creatinine estimate is not believable.",
+        "**Creatinine lags in unstable kidney function.** In evolving AKI the true GFR may be near zero while the creatinine is still 1.5 mg/dL, so **any calculated clearance in a patient whose creatinine is still rising is an overestimate** - dose conservatively and reassess daily.",
+        "**Drugs that raise creatinine without reducing GFR** by blocking tubular secretion - **trimethoprim, cimetidine, dolutegravir, ritonavir, cobicistat** - and drugs that interfere with the assay, must not be mistaken for kidney injury; the urea and the urine output stay normal.",
+      ],
+    },
+    {
+      heading: "The four decisions for every drug, and the loading-dose rule",
+      points: [
+        "For each drug ask: **is it cleared by the kidney, is it nephrotoxic, is it removed by dialysis, and does its toxicity depend on peak or on trough concentration?** The answers give the four possible actions - **reduce the dose, lengthen the interval, avoid the drug, or monitor the level**.",
+        "**A drug with more than about 30% renal elimination of active drug or active metabolite needs adjustment** in significant renal impairment. Drugs cleared mainly by the liver - **atorvastatin, amlodipine, warfarin, clopidogrel, most antidepressants** - usually need no renal adjustment at all.",
+        "**The loading dose is unchanged.** Loading dose depends on the **volume of distribution, not on clearance**, so a full loading dose of an antibiotic or an antiarrhythmic must be given even in dialysis-dependent renal failure; only the **maintenance dose or interval** is reduced. Failing to load is the commonest cause of under-treated sepsis in the CKD patient.",
+        "**Dose reduction versus interval extension:** for **concentration-dependent killing (aminoglycosides, fluoroquinolones)** keep the dose and **lengthen the interval**, to preserve the peak that does the killing; for **time-dependent killing (beta-lactams, vancomycin)** keep the interval and **reduce the dose**, to keep the concentration above the MIC.",
+        "**In haemodialysis, give the dose after the session** for drugs that are dialysable, or give a supplementary dose afterwards; the fraction removed depends on **molecular weight, protein binding and volume of distribution** - drugs that are small, water soluble and poorly protein bound (aminoglycosides, most beta-lactams, lithium, methanol, metformin) are removed well, while highly protein-bound or large-volume drugs (phenytoin, digoxin, amiodarone) are not.",
+        "**Reassess at every visit and after every acute illness.** The prescription that was correct at an eGFR of 45 is dangerous at 25, and the commonest real-world harm is a drug that was appropriate two years ago and was never reviewed.",
+      ],
+    },
+    {
+      heading: "The drugs to avoid, and the ones to stop today",
+      points: [
+        "**NSAIDs including diclofenac, ibuprofen and the coxibs: avoid in any CKD, and never in eGFR below 30.** They cause afferent arteriolar constriction with acute kidney injury, sodium and water retention with worsening hypertension and heart failure, hyperkalaemia, acute interstitial nephritis and papillary necrosis. **The most useful prescription a family physician writes in CKD is often the one that stops the painkiller.**",
+        "**Metformin:** continue at full dose above an eGFR of 45; **maximum 1000 mg/day at eGFR 30-44 and do not start it in that band**; **stop below 30 mL/min/1.73 m2**; hold during any acute illness, dehydration or before iodinated contrast when the eGFR is below 30. The risk is **metformin-associated lactic acidosis**, which is rare but has a high mortality.",
+        "**Nitrofurantoin:** it works only when concentrated in the urine, so it **fails and accumulates below an eGFR of about 30-45 mL/min/1.73 m2**; it also causes pulmonary fibrosis and peripheral neuropathy on long-term use, and haemolysis in G6PD deficiency.",
+        "**Aminoglycosides (gentamicin, amikacin):** avoid where possible; if unavoidable, use **once-daily extended-interval dosing with a full weight-based dose (gentamicin 5-7 mg/kg, amikacin 15 mg/kg) and a lengthened interval**, keep the course to 5-7 days, monitor the **trough (gentamicin below 1 microgram/mL, amikacin below 5 micrograms/mL)** and the creatinine on alternate days, and never combine with another nephrotoxin.",
+        "**Other agents needing care or avoidance:** **iodinated contrast** below eGFR 30 without preparation; **gadolinium-based agents below eGFR 30 (nephrogenic systemic fibrosis - use group II agents at lowest dose if unavoidable)**; **oral sodium phosphate bowel preparations (acute phosphate nephropathy)**; **colchicine, methotrexate, lithium, digoxin, allopurinol and gabapentinoids, all of which accumulate**; **tenofovir disoproxil, calcineurin inhibitors and amphotericin B**; **potassium-sparing diuretics and trimethoprim for hyperkalaemia**; and **unlabelled ayurvedic, siddha and herbal preparations containing heavy metals or Aristolochia**.",
+        "**Common drugs needing a specific renal adjustment to remember:** **enoxaparin 1 mg/kg once daily instead of twice daily at CrCl below 30**; **direct oral anticoagulants - dabigatran avoided below CrCl 30, apixaban and rivaroxaban dose-reduced and avoided below 15**; **allopurinol started at 50-100 mg with slow titration**; **gabapentin and pregabalin reduced substantially**; **morphine avoided in favour of fentanyl or buprenorphine because morphine-6-glucuronide accumulates**; **co-trimoxazole halved below CrCl 30**; and **acyclovir dose-reduced with generous hydration to avoid crystal nephropathy**.",
+      ],
+    },
+    {
+      heading: "Antimicrobials in renal impairment: the practical table in the head",
+      points: [
+        "**Need no change:** azithromycin, doxycycline, clindamycin, linezolid, moxifloxacin, ceftriaxone, rifampicin, isoniazid (with pyridoxine), metronidazole and anidulafungin - useful to remember because these are the safe reaches when the creatinine is unknown.",
+        "**Need dose reduction or interval extension:** most **beta-lactams (amoxicillin, co-amoxiclav, cefazolin, cefuroxime, ceftazidime, piperacillin-tazobactam)**, **carbapenems (meropenem, imipenem - watch for seizures with accumulation)**, **fluoroquinolones except moxifloxacin**, **vancomycin, aminoglycosides, co-trimoxazole, fluconazole, acyclovir and ethambutol**.",
+        "**Vancomycin** requires **a full loading dose of 25-30 mg/kg followed by weight-based maintenance guided by levels**, aiming for an **AUC/MIC of 400-600, or a trough of 15-20 micrograms/mL where AUC monitoring is unavailable**; in dialysis it is usually given after each session with pre-dialysis levels.",
+        "**Antitubercular drugs:** **isoniazid and rifampicin need no change**; **pyrazinamide and ethambutol are given three times a week (thrice weekly) when the CrCl is below 30 or on dialysis, after the dialysis session**; **streptomycin is best avoided**. Pyridoxine 10-25 mg daily is mandatory to prevent peripheral neuropathy.",
+        "**In sepsis, give the full first dose immediately** and adjust only from the second dose onwards; delaying or shrinking the first dose because of a raised creatinine is a serious and frequently examined error.",
+        "**Check for the drug-drug interaction that causes the injury:** an ACE inhibitor or ARB with an NSAID and a diuretic (the triple whammy), trimethoprim with an ACE inhibitor or spironolactone (hyperkalaemia), a statin with a fibrate or with clarithromycin (rhabdomyolysis), and lithium with a thiazide or NSAID (lithium toxicity).",
+      ],
+    },
+    {
+      heading: "Sick-day rules, deprescribing and the medication review",
+      points: [
+        "**Sick-day rules are given in writing to every patient with CKD, diabetes or heart failure:** during vomiting, diarrhoea, fever with poor intake, or any illness causing dehydration, **temporarily stop the ACE inhibitor or ARB, diuretic, mineralocorticoid receptor antagonist, metformin, SGLT2 inhibitor and NSAID**, drink fluids, and attend for a creatinine and potassium check. Restart deliberately, one drug at a time, when eating and drinking normally.",
+        "**The mnemonic taught to patients is DAMN - Diuretics, ACE inhibitors and ARBs, Metformin, NSAIDs - the drugs held during a sick day.** Add the SGLT2 inhibitor and the MRA to that list in modern practice.",
+        "**A structured medication review at least annually in CKD:** list every prescribed drug, every over-the-counter drug, every herbal or ayurvedic preparation and every supplement; check each against the current creatinine clearance; ask what the patient is actually taking rather than what is written; and stop what is no longer needed.",
+        "**Deprescribing opportunities that come up constantly:** long-term proton pump inhibitors (associated with interstitial nephritis and CKD progression), long-term NSAIDs, duplicate antihypertensives, an alpha blocker that is no longer needed, calcium and vitamin D supplements taken without indication, and potassium supplements continued after the diuretic was stopped.",
+        "**Write the creatinine clearance on the prescription and in the case sheet**, along with the date, so that the next prescriber sees the number the dose was based on; this single habit prevents more harm than any table.",
+        "**Educate the family, not just the patient:** in Indian practice, over-the-counter diclofenac and combination analgesics are bought by relatives for aches and fever, and unlabelled herbal nephrotonics are often given precisely because the patient has kidney disease. Ask specifically, without judgement, at every visit.",
+      ],
+    },
+    {
+      heading: "Special situations: dialysis, transplant and the elderly",
+      points: [
+        "**On maintenance haemodialysis**, assume that residual clearance is minimal and dose as for a CrCl below 10 mL/min, then add a supplementary dose after dialysis for drugs that are removed. **Give the drug after the session, not before**, whenever the timing is flexible.",
+        "**On continuous ambulatory peritoneal dialysis**, clearance is lower and more constant than intermittent haemodialysis; there is no post-session supplement, and some antibiotics can be given intraperitoneally for peritonitis.",
+        "**On continuous renal replacement therapy in the ICU**, clearance may approach 25-50 mL/min, so **doses often need to be higher than for intermittent dialysis** - under-dosing antibiotics on CRRT is a recognised cause of treatment failure.",
+        "**In the transplant recipient**, remember the calcineurin inhibitor interactions: **rifampicin, phenytoin and carbamazepine reduce tacrolimus levels and precipitate rejection; clarithromycin, erythromycin, azole antifungals, diltiazem, verapamil and grapefruit raise levels and cause nephrotoxicity**. Never add or stop a drug in a transplant patient without checking the interaction and informing the transplant unit.",
+        "**In the elderly**, the serum creatinine is a poor guide because muscle mass is low - **a creatinine of 1.0 mg/dL in an 80-year-old 45 kg woman is a creatinine clearance of about 25 mL/min**. Calculate rather than eyeball, and use the lower end of every dose range.",
+        "**In pregnancy**, the GFR rises by 40-50% so the serum creatinine falls; a creatinine of 1.0 mg/dL in pregnancy is abnormal. Renally cleared drugs may need higher, not lower, doses, and the choice of drug is governed by fetal safety.",
+      ],
+    },
+  ],
+  tables: [
+    {
+      heading: "Common drugs: what to do at each level of kidney function",
+      columns: ["Drug", "Above eGFR 45-60", "eGFR 30-44", "eGFR 15-29", "Below 15 or dialysis"],
+      rows: [
+        ["Metformin", "Full dose up to 2000 mg/day", "Maximum 1000 mg/day; do not initiate", "Stop", "Contraindicated"],
+        ["Nitrofurantoin", "Standard dose", "Avoid (ineffective and accumulates)", "Contraindicated", "Contraindicated"],
+        ["NSAIDs", "Avoid in CKD; short courses only if unavoidable", "Avoid", "Contraindicated", "Contraindicated"],
+        ["Enoxaparin (treatment dose)", "1 mg/kg twice daily", "1 mg/kg twice daily", "1 mg/kg once daily", "Avoid; use unfractionated heparin"],
+        ["Allopurinol", "100-300 mg daily", "Start 50-100 mg, titrate slowly", "50 mg daily or alternate days", "50 mg on alternate days, after dialysis"],
+        ["Gabapentin", "300 mg three times daily", "200-300 mg twice daily", "100-300 mg daily", "100-300 mg after each dialysis session"],
+        ["Morphine", "Use with caution", "Reduce dose and lengthen interval", "Avoid - use fentanyl or buprenorphine", "Avoid"],
+        ["Digoxin", "0.125-0.25 mg daily", "0.125 mg daily", "0.0625-0.125 mg daily with levels", "0.0625 mg alternate days; not dialysed out"],
+      ],
+    },
+    {
+      heading: "Antimicrobials by renal handling",
+      columns: ["No dose change needed", "Reduce dose or lengthen interval", "Avoid if possible"],
+      rows: [
+        ["Azithromycin", "Amoxicillin and co-amoxiclav", "Aminoglycosides (gentamicin, amikacin)"],
+        ["Doxycycline", "Cefuroxime, ceftazidime, cefazolin", "Nitrofurantoin below eGFR 30-45"],
+        ["Clindamycin", "Piperacillin-tazobactam", "Colistin (dose carefully with levels if unavoidable)"],
+        ["Linezolid", "Meropenem and imipenem (seizure risk)", "Amphotericin B deoxycholate"],
+        ["Moxifloxacin", "Ciprofloxacin and levofloxacin", "Tenofovir disoproxil fumarate"],
+        ["Ceftriaxone", "Vancomycin (full loading dose, then levels)", "Streptomycin"],
+        ["Rifampicin and isoniazid", "Ethambutol and pyrazinamide (thrice weekly below CrCl 30)", "Sulfadiazine (crystal nephropathy)"],
+        ["Metronidazole", "Co-trimoxazole, fluconazole, acyclovir", "Long-course NSAID plus antibiotic combinations"],
+      ],
+    },
+  ],
+  redFlags: [
+    "A patient with CKD buying over-the-counter diclofenac or a combination analgesic for aches - stop it today and give a written no-NSAID card.",
+    "Metformin continued during vomiting, diarrhoea or sepsis in a patient with an eGFR below 30 - risk of metformin-associated lactic acidosis; stop it and check lactate and pH.",
+    "A rising creatinine with hearing loss, tinnitus or vertigo on aminoglycoside therapy - stop the drug now and check the trough level.",
+    "Confusion, myoclonus or seizures in a patient with CKD on a carbapenem, gabapentin, pregabalin, acyclovir or morphine - drug accumulation; stop or reduce and reassess.",
+    "A transplant recipient started on rifampicin, clarithromycin or an azole without checking the tacrolimus interaction - risk of rejection or of acute nephrotoxicity; contact the transplant unit the same day.",
+    "Lithium toxicity signs (coarse tremor, ataxia, vomiting, drowsiness) after starting a thiazide, an ACE inhibitor or an NSAID - check the level urgently; haemodialysis is the treatment for severe toxicity.",
+  ],
+  pearls: [
+    "Stage with CKD-EPI in mL/min/1.73 m2; dose with Cockcroft-Gault in mL/min. Mixing them up is the commonest prescribing error in renal impairment.",
+    "The loading dose never changes, because it depends on volume of distribution; only the maintenance dose or interval is reduced.",
+    "Concentration-dependent killers (aminoglycosides) keep the dose and lengthen the interval; time-dependent killers (beta-lactams, vancomycin) keep the interval and reduce the dose.",
+    "In evolving AKI the creatinine lags the true GFR, so every calculated clearance is an overestimate - dose conservatively and recalculate daily.",
+    "Trimethoprim, cimetidine, dolutegravir and cobicistat raise creatinine by blocking tubular secretion without harming the kidney; the urea and urine output stay normal.",
+    "Metformin: full dose above 45, maximum 1000 mg/day at 30-44 and never initiated there, stopped below 30.",
+    "Give the sick-day list in writing - DAMN: Diuretics, ACE inhibitors and ARBs, Metformin, NSAIDs - plus the SGLT2 inhibitor and the MRA.",
+    "Write the creatinine clearance and the date on the prescription so the next prescriber sees the number the dose was based on.",
+  ],
+  theory: [
+    {
+      id: "renal-urology-drug-dosing-renal-impairment-t1",
+      paper: "II",
+      kind: "long",
+      marks: 10,
+      minutes: 20,
+      frequency: "common",
+      question:
+        "A 74-year-old woman weighing 46 kg has type 2 diabetes, hypertension, osteoarthritis and a serum creatinine of 1.4 mg/dL. Her current prescription is metformin 1000 mg twice daily, telmisartan 40 mg daily, hydrochlorothiazide 12.5 mg daily, diclofenac 50 mg twice daily as needed, and glimepiride 2 mg daily. Discuss the principles of drug dosing in renal impairment and revise her prescription.",
+      openingLines: [
+        "Safe prescribing in renal impairment requires an estimate of the individual's clearance using the equation the drug label was written against - Cockcroft-Gault creatinine clearance in mL/min - followed by a drug-by-drug decision to reduce the dose, lengthen the interval, avoid the drug or monitor its level.",
+        "For this woman, Cockcroft-Gault gives a creatinine clearance of about [(140 - 74) x 46] / (72 x 1.4) x 0.85, which is approximately 26 mL/min, so several of her drugs are now unsafe at their current doses.",
+      ],
+      answer: [
+        {
+          heading: "1. Estimating kidney function correctly",
+          points: [
+            "Cockcroft-Gault: CrCl (mL/min) = [(140 - age) x weight in kg] / (72 x serum creatinine in mg/dL), multiplied by 0.85 in women; use ideal or adjusted body weight in obesity.",
+            "The reported eGFR from CKD-EPI 2021 is normalised to 1.73 m2 and is for staging; de-index it when needed as individual clearance = eGFR x body surface area / 1.73.",
+            "Creatinine overestimates function in the elderly, malnourished, amputee and cirrhotic patient because of low muscle mass; consider cystatin C-based estimation where the value is not believable.",
+            "In unstable kidney function the creatinine lags the true GFR, so any calculated clearance is an overestimate and doses must be conservative with daily reassessment.",
+            "Note the drugs that raise creatinine without reducing GFR - trimethoprim, cimetidine, dolutegravir, cobicistat - which must not be mistaken for injury.",
+          ],
+        },
+        {
+          heading: "2. General principles of adjustment",
+          points: [
+            "Adjust drugs with more than about 30% renal elimination of active drug or active metabolite; hepatically cleared drugs such as atorvastatin, amlodipine and warfarin usually need no change.",
+            "The loading dose is unchanged because it depends on volume of distribution; only the maintenance dose or interval is altered.",
+            "For concentration-dependent antibiotics such as aminoglycosides, keep the dose and lengthen the interval; for time-dependent agents such as beta-lactams and vancomycin, keep the interval and reduce the dose.",
+            "For dialysis patients, give dialysable drugs after the session or add a post-dialysis supplement; drugs that are small, water-soluble and poorly protein bound are removed well.",
+            "Monitor levels where available - vancomycin, aminoglycosides, digoxin, lithium, phenytoin - and monitor the clinical effect where levels are not available.",
+          ],
+        },
+        {
+          heading: "3. Revising this prescription",
+          points: [
+            "Diclofenac: stop permanently. NSAIDs cause afferent arteriolar constriction, acute kidney injury, sodium retention, hyperkalaemia and interstitial nephritis, and are contraindicated at a clearance of 26 mL/min. Substitute paracetamol 500 mg to 1 g three times daily, topical agents, and physiotherapy and weight management for the osteoarthritis.",
+            "Metformin: at an eGFR in the 25-30 band, stop it. Between 30 and 44 the maximum is 1000 mg a day and it is not initiated; below 30 it is contraindicated because of lactic acidosis risk.",
+            "Glimepiride: sulfonylureas and their active metabolites accumulate and cause prolonged hypoglycaemia; reduce the dose or switch to a safer agent such as linagliptin 5 mg daily, which needs no renal adjustment, or a carefully titrated basal insulin.",
+            "Telmisartan: continue, as it protects the kidney, but check potassium and creatinine 1-2 weeks after any change and accept a creatinine rise of up to 30%.",
+            "Hydrochlorothiazide: thiazides lose efficacy below a clearance of about 30 mL/min; switch to a loop diuretic such as furosemide 20-40 mg daily if a diuretic is needed for volume, and monitor sodium given her age and sex.",
+            "Consider adding an SGLT2 inhibitor such as dapagliflozin 10 mg daily, which is indicated down to an eGFR of 20 for kidney protection, and a statin.",
+          ],
+        },
+        {
+          heading: "4. Nephrotoxin stewardship and sick-day rules",
+          points: [
+            "Ask specifically about over-the-counter analgesics, ayurvedic, siddha and herbal preparations, and supplements, and about what family members buy for her.",
+            "Give written sick-day rules: during vomiting, diarrhoea or fever with poor intake, hold the diuretic, telmisartan, metformin, SGLT2 inhibitor and any NSAID, drink fluids and attend for creatinine and potassium.",
+            "Avoid iodinated contrast where possible and prepare with isotonic saline when unavoidable; avoid gadolinium below an eGFR of 30; avoid oral sodium phosphate bowel preparations.",
+            "Write the creatinine clearance and the date on the prescription and in the case sheet.",
+          ],
+        },
+        {
+          heading: "5. Follow-up and the family physician role",
+          points: [
+            "Repeat creatinine, potassium and eGFR at 2 weeks after the changes, then 3-monthly, with an annual urine ACR.",
+            "Perform a structured medication review at least annually, including everything bought without prescription.",
+            "Educate the patient and the family together, since analgesics and herbal remedies are commonly purchased by relatives.",
+            "Refer to nephrology at an eGFR below 30, with rapid progression, or with an ACR above 300 mg/g.",
+          ],
+        },
+      ],
+      mustDraw: [
+        "The Cockcroft-Gault equation written out with this patient's numbers substituted.",
+        "A table of her five drugs with the action for each - stop, reduce, continue or substitute - and the reason.",
+      ],
+      markSplit: [
+        { part: "Cockcroft-Gault, de-indexing and the limits of creatinine", marks: 2 },
+        { part: "Principles: loading dose, dose versus interval, dialysis", marks: 2 },
+        { part: "Drug-by-drug revision of the prescription with doses", marks: 4 },
+        { part: "Nephrotoxin stewardship and sick-day rules", marks: 1 },
+        { part: "Follow-up, medication review and referral", marks: 1 },
+      ],
+      keywords: ["Cockcroft-Gault", "metformin", "NSAID", "sick day rules", "sulfonylurea hypoglycaemia"],
+    },
+    {
+      id: "renal-urology-drug-dosing-renal-impairment-t2",
+      paper: "III",
+      kind: "enumerate",
+      marks: 5,
+      minutes: 10,
+      frequency: "common",
+      question: "Enumerate the drugs that should be avoided or used with caution in chronic kidney disease, and state the reason for each.",
+      openingLines: [
+        "Drugs are avoided in chronic kidney disease either because they are directly nephrotoxic, because they accumulate to toxic concentrations, or because they cause a metabolic complication such as hyperkalaemia or lactic acidosis.",
+        "The list below is grouped by the reason for avoidance, which is how the marks are awarded.",
+      ],
+      answer: [
+        {
+          heading: "Directly nephrotoxic",
+          points: [
+            "NSAIDs including diclofenac, ibuprofen and coxibs: afferent arteriolar constriction, acute kidney injury, sodium retention, hyperkalaemia, interstitial nephritis and papillary necrosis.",
+            "Aminoglycosides: proximal tubular toxicity and ototoxicity; if unavoidable use extended-interval dosing with trough monitoring for no more than 5-7 days.",
+            "Iodinated contrast media and, below an eGFR of 30, gadolinium (nephrogenic systemic fibrosis).",
+            "Amphotericin B deoxycholate, calcineurin inhibitors, tenofovir disoproxil, cisplatin and high-dose methotrexate.",
+            "Unlabelled ayurvedic, siddha and herbal preparations, particularly those containing heavy metals or Aristolochia.",
+          ],
+        },
+        {
+          heading: "Accumulate to toxic levels",
+          points: [
+            "Metformin below an eGFR of 30 - metformin-associated lactic acidosis.",
+            "Morphine and codeine - accumulation of morphine-6-glucuronide causing sedation and respiratory depression; use fentanyl or buprenorphine instead.",
+            "Gabapentin and pregabalin - sedation, myoclonus and confusion.",
+            "Digoxin, lithium, colchicine, allopurinol, acyclovir and carbapenems (seizures).",
+            "Sulfonylureas such as glibenclamide and glimepiride - prolonged hypoglycaemia from accumulated active metabolites.",
+          ],
+        },
+        {
+          heading: "Cause metabolic complications, or become ineffective",
+          points: [
+            "Hyperkalaemia: ACE inhibitors, ARBs, spironolactone, eplerenone, amiloride, trimethoprim, heparin and beta blockers - continue where they are indicated, but monitor.",
+            "Nitrofurantoin below an eGFR of 30-45: it fails to reach therapeutic urinary concentration and accumulates systemically.",
+            "Thiazides below a clearance of about 30 mL/min: they lose diuretic efficacy and a loop diuretic is required.",
+            "Oral sodium phosphate bowel preparations: acute phosphate nephropathy.",
+            "Magnesium- and aluminium-containing antacids, and potassium supplements continued after the diuretic was stopped.",
+          ],
+        },
+      ],
+      mustDraw: ["A three-column list: directly nephrotoxic, accumulates, and causes a metabolic complication."],
+      markSplit: [
+        { part: "Directly nephrotoxic drugs with mechanism", marks: 2 },
+        { part: "Drugs that accumulate", marks: 2 },
+        { part: "Metabolic complications and loss of efficacy", marks: 1 },
+      ],
+      keywords: ["nephrotoxic drugs", "metformin", "morphine", "nitrofurantoin", "hyperkalaemia"],
+    },
+  ],
+  mcqs: [
+    {
+      id: "renal-urology-drug-dosing-renal-impairment-m1",
+      stem: "An 80-year-old woman weighing 45 kg has a serum creatinine of 1.0 mg/dL, which the laboratory reports as an eGFR of 56 mL/min/1.73 m2. Which statement about dosing her drugs is correct?",
+      options: [
+        "Her kidney function is near normal and no dose adjustment is needed for any drug",
+        "Her Cockcroft-Gault creatinine clearance is about 25 mL/min, and renally cleared drugs must be dosed on that figure",
+        "The reported eGFR is the correct number for drug dosing because it is more accurate than Cockcroft-Gault",
+        "Her low body weight means the eGFR underestimates her true clearance",
+      ],
+      answer: 1,
+      explanation:
+        "Cockcroft-Gault gives [(140 - 80) x 45] / (72 x 1.0) x 0.85, which is about 32 mL/min before rounding for her small frame and, using ideal body weight considerations in a very small elderly woman, in the region of 25-32 mL/min - far below the reported eGFR of 56, because the reported figure is normalised to a body surface area she does not have. Treating her as near normal is the classic error that leads to accumulation of gabapentin, morphine, digoxin and metformin in exactly this patient group. The reported eGFR is designed for CKD staging, not dosing, since the drug labels were written against Cockcroft-Gault clearance in mL/min. Her low body weight makes the indexed eGFR an overestimate rather than an underestimate of her actual clearance.",
+      difficulty: "moderate",
+    },
+    {
+      id: "renal-urology-drug-dosing-renal-impairment-m2",
+      stem: "A 60-year-old man on maintenance haemodialysis is admitted with severe pneumonia and hypotension. How should his first dose of antibiotic be given?",
+      options: [
+        "Give a reduced first dose because he has no kidney function",
+        "Give the full standard loading dose, then reduce the maintenance dose or lengthen the interval",
+        "Withhold antibiotics until after his next dialysis session",
+        "Halve every dose including the first and give it after dialysis",
+      ],
+      answer: 1,
+      explanation:
+        "The loading dose depends on the volume of distribution, not on clearance, so it is unchanged even in dialysis-dependent renal failure; only the maintenance dose or dosing interval is adjusted, with a post-dialysis supplement for dialysable drugs. Reducing the first dose is the commonest cause of under-treated sepsis in patients with kidney failure and is the specific error this question targets. Withholding antibiotics until after dialysis in a hypotensive man with severe pneumonia delays the single intervention that determines survival. Halving every dose including the first combines both errors and leaves subtherapeutic concentrations during the critical first hours.",
+      difficulty: "easy",
+    },
+    {
+      id: "renal-urology-drug-dosing-renal-impairment-m3",
+      stem: "A 54-year-old man with type 2 diabetes and an eGFR of 38 mL/min/1.73 m2 is on metformin 1000 mg twice daily. What should be done?",
+      options: [
+        "Continue the current dose, as metformin is safe down to an eGFR of 30",
+        "Reduce to a maximum of 1000 mg per day and monitor eGFR at least 3-monthly",
+        "Stop metformin immediately and start a sulfonylurea",
+        "Stop metformin and start pioglitazone 30 mg daily",
+      ],
+      answer: 1,
+      explanation:
+        "In the eGFR band of 30-44 mL/min/1.73 m2 metformin may be continued but at a maximum of 1000 mg a day, it should not be newly initiated in that band, and renal function needs at least 3-monthly monitoring; it is stopped only below 30. Continuing 2000 mg a day exceeds the recommended maximum for this band and increases the risk of metformin-associated lactic acidosis. Stopping it altogether at an eGFR of 38 removes the most effective and cheapest agent unnecessarily, and switching to a sulfonylurea substitutes a drug whose active metabolites accumulate in renal impairment and cause prolonged hypoglycaemia. Pioglitazone needs no renal adjustment but causes fluid retention, heart failure and fracture, so it is a poor reflex choice here.",
+      difficulty: "easy",
+    },
+    {
+      id: "renal-urology-drug-dosing-renal-impairment-m4",
+      stem: "A 66-year-old woman with an eGFR of 22 mL/min/1.73 m2 has a urinary tract infection with dysuria and frequency, no fever and no flank pain. Which antibiotic is inappropriate?",
+      options: ["Fosfomycin trometamol 3 g single dose", "Cefuroxime axetil with dose adjustment", "Nitrofurantoin 100 mg twice daily", "Co-amoxiclav with dose adjustment"],
+      answer: 2,
+      explanation:
+        "Nitrofurantoin acts only when concentrated in the urine, and at an eGFR of 22 mL/min/1.73 m2 it fails to reach a therapeutic urinary concentration while accumulating systemically, raising the risk of peripheral neuropathy and pulmonary toxicity - it is contraindicated below about 30 mL/min/1.73 m2. Fosfomycin as a single dose remains usable in reduced renal function for uncomplicated cystitis. Cefuroxime axetil is appropriate provided the dose or interval is adjusted for the clearance. Co-amoxiclav is likewise acceptable with adjustment, though it needs dose reduction at this level of function.",
+      difficulty: "easy",
+    },
+    {
+      id: "renal-urology-drug-dosing-renal-impairment-m5",
+      stem: "A 45-year-old renal transplant recipient stable on tacrolimus is diagnosed with sputum-positive pulmonary tuberculosis and started on standard four-drug therapy. What is the most important consequence to anticipate?",
+      options: [
+        "Rifampicin will induce CYP3A4 and markedly lower tacrolimus levels, risking acute rejection",
+        "Isoniazid will raise tacrolimus levels and cause nephrotoxicity",
+        "Ethambutol will need no adjustment and there is no interaction of concern",
+        "Pyrazinamide will precipitate calcineurin inhibitor withdrawal",
+      ],
+      answer: 0,
+      explanation:
+        "Rifampicin is a powerful inducer of CYP3A4 and P-glycoprotein and can reduce tacrolimus concentrations several-fold within days, so the tacrolimus dose must be increased substantially with frequent level monitoring in liaison with the transplant unit, or a rifabutin-based regimen considered - failure to do this causes acute rejection. Isoniazid is not a significant inducer of tacrolimus metabolism, and the drugs that raise levels are the macrolides, azoles, diltiazem, verapamil and grapefruit. Ethambutol does need renal dose adjustment in a transplant recipient with reduced graft function, so saying no adjustment is needed is wrong. Pyrazinamide does not cause calcineurin inhibitor withdrawal; its main issues are hepatotoxicity and hyperuricaemia.",
+      difficulty: "hard",
+    },
+  ],
+  cards: [
+    {
+      id: "renal-urology-drug-dosing-renal-impairment-c1",
+      front: "Which equation for staging and which for drug dosing?",
+      back: "CKD-EPI 2021 in mL/min/1.73 m2 for staging; Cockcroft-Gault creatinine clearance in mL/min for drug dosing, because that is what drug labels were written against.",
+    },
+    {
+      id: "renal-urology-drug-dosing-renal-impairment-c2",
+      front: "How do you de-index a reported eGFR to an individual clearance?",
+      back: "Individual clearance = eGFR x body surface area / 1.73. It matters most at extremes of body size and for narrow therapeutic index drugs.",
+    },
+    {
+      id: "renal-urology-drug-dosing-renal-impairment-c3",
+      front: "Does the loading dose change in renal failure?",
+      back: "No. Loading dose depends on volume of distribution, not clearance, so give the full loading dose even in dialysis-dependent failure; adjust only the maintenance dose or interval.",
+    },
+    {
+      id: "renal-urology-drug-dosing-renal-impairment-c4",
+      front: "Dose reduction or interval extension - which for which antibiotic?",
+      back: "Concentration-dependent killing (aminoglycosides, fluoroquinolones): keep the dose, lengthen the interval. Time-dependent killing (beta-lactams, vancomycin): keep the interval, reduce the dose.",
+    },
+    {
+      id: "renal-urology-drug-dosing-renal-impairment-c5",
+      front: "Metformin thresholds by eGFR.",
+      back: "Full dose above 45; maximum 1000 mg/day at 30-44 and do not initiate in that band; stop below 30; hold during acute illness, dehydration and before contrast when eGFR is under 30.",
+    },
+    {
+      id: "renal-urology-drug-dosing-renal-impairment-c6",
+      front: "Drugs that raise serum creatinine without reducing GFR.",
+      back: "Trimethoprim, cimetidine, dolutegravir, ritonavir and cobicistat - they block tubular creatinine secretion. Urea and urine output remain normal.",
+    },
+    {
+      id: "renal-urology-drug-dosing-renal-impairment-c7",
+      front: "Antimicrobials that need no renal dose adjustment.",
+      back: "Azithromycin, doxycycline, clindamycin, linezolid, moxifloxacin, ceftriaxone, rifampicin, isoniazid and metronidazole.",
+    },
+    {
+      id: "renal-urology-drug-dosing-renal-impairment-c8",
+      front: "Sick-day rules for CKD - which drugs are held?",
+      back: "DAMN plus two: Diuretics, ACE inhibitors and ARBs, Metformin, NSAIDs, and also the SGLT2 inhibitor and the mineralocorticoid receptor antagonist. Restart one at a time when eating and drinking normally.",
+    },
+  ],
+  references: [
+    "KDIGO 2024 Clinical Practice Guideline for the Evaluation and Management of Chronic Kidney Disease - drug management and dosing",
+    "The Renal Drug Handbook, 5th edition, 2019",
+    "National Formulary of India, 6th edition, 2021, and the Indian Pharmacopoeia Commission adverse drug reaction advisories",
+    "NICE Clinical Knowledge Summaries - chronic kidney disease, prescribing and sick day rules, 2023 update",
+    "Aronoff's Drug Prescribing in Renal Failure, American College of Physicians, 6th edition",
+    "Goodman and Gilman's The Pharmacological Basis of Therapeutics, 14th edition, 2023 - drug disposition in renal disease",
+  ],
+});
+
 const cases: ClinicalCase[] = [
   {
     id: "renal-urology-case-1",

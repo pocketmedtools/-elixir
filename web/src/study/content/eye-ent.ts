@@ -2737,6 +2737,893 @@ topics.push({
 });
 
 
+topics.push({
+  id: "eye-ent-hearing-loss",
+  title: "Hearing loss across ages, tuning fork tests and the deafness programme",
+  oneLiner:
+    "Hearing loss is separated at the bedside into conductive and sensorineural by tuning fork tests with a 512 Hz fork - Rinne, Weber and Absolute Bone Conduction - then placed in an age-specific differential running from congenital deafness and glue ear in children to presbycusis, noise-induced loss and ototoxicity in adults, with sudden sensorineural hearing loss treated as an emergency and universal newborn screening and the National Programme for Prevention and Control of Deafness providing the public health frame.",
+  frequency: "common",
+  keywords: [
+    "hearing loss",
+    "conductive deafness",
+    "sensorineural deafness",
+    "Rinne test",
+    "Weber test",
+    "tuning fork",
+    "presbycusis",
+    "noise induced hearing loss",
+    "ototoxicity",
+    "sudden sensorineural hearing loss",
+    "otosclerosis",
+    "newborn hearing screening",
+    "OAE",
+    "BERA",
+    "NPPCD",
+    "cochlear implant",
+  ],
+  sections: [
+    {
+      heading: "Types of hearing loss and how they are defined",
+      points: [
+        "**Conductive hearing loss** arises from any obstruction between the pinna and the footplate of the stapes: wax, foreign body, otitis externa, tympanic membrane perforation, middle ear effusion, ossicular discontinuity or fixation, and otosclerosis. **The maximum conductive loss possible is about 60 dB**, because sound eventually reaches the cochlea by bone conduction.",
+        "**Sensorineural hearing loss** arises in the cochlea (sensory) or the cochlear nerve and central pathways (neural): presbycusis, noise exposure, ototoxic drugs, infection, Meniere disease, acoustic neuroma and congenital causes. **It can be profound and is usually irreversible**, so prevention and early detection matter more than treatment.",
+        "**Mixed hearing loss** combines both, typically in long-standing chronic suppurative otitis media, advanced otosclerosis with cochlear involvement, or presbycusis with impacted wax.",
+        "**Grading by pure tone average of thresholds at 500, 1000, 2000 and 4000 Hz (WHO 2021): normal under 20 dB; mild 20 to under 35 dB; moderate 35 to under 50 dB; moderately severe 50 to under 65 dB; severe 65 to under 80 dB; profound 80 to under 95 dB; complete or total deafness 95 dB or more.**",
+        "**Disabling hearing loss** is defined by WHO as a loss greater than **35 dB in the better hearing ear** in adults, and greater than **30 dB in children**, and this is the figure used for disability certification and for programme targets.",
+        "The functional consequences differ by age: in an infant, hearing loss causes **failure to develop speech and language**; in a school child it causes **inattention, poor school performance and behavioural difficulty**; in an adult it causes **social withdrawal, occupational loss, depression and, in the elderly, an independent association with cognitive decline and falls**.",
+      ],
+    },
+    {
+      heading: "Tuning fork tests - how they are done and what they mean",
+      points: [
+        "**Use a 512 Hz tuning fork** - 256 Hz produces too much tactile vibration and 1024 Hz decays too fast. Strike it on a firm but elastic surface such as the elbow or knee, at the junction of the upper two-thirds and lower one-third of the prong, never on a hard table, which produces overtones.",
+        "**Rinne test compares air conduction with bone conduction in the same ear.** The vibrating fork is held about 2 cm from the external auditory meatus (air conduction), then the base is placed firmly on the mastoid process (bone conduction), and the patient says which is louder. **Rinne positive means air conduction is better than bone conduction, which is normal or indicates sensorineural loss; Rinne negative means bone conduction is better, which indicates a conductive loss of at least 15 to 20 dB.**",
+        "**The false negative Rinne is the classic trap**: in severe unilateral sensorineural loss the fork placed on the mastoid of the dead ear is heard by the opposite cochlea through the skull, so the patient reports bone conduction as louder and the test appears negative. **This is excluded by masking the good ear with a Barany noise box, and by the absolute bone conduction test.**",
+        "**Weber test lateralises**: the fork base is placed in the midline on the vertex or forehead and the patient says where the sound is heard. **In conductive loss it lateralises to the affected (worse) ear** - because masking noise from the environment is excluded and bone conduction is enhanced - **and in sensorineural loss it lateralises to the better ear**. In a normal person or in symmetrical disease it is heard in the midline.",
+        "**Absolute bone conduction (ABC) test compares the patient's bone conduction with the examiner's**, with the patient's canal occluded by the examiner's finger (tragus pressed in) to exclude ambient sound. **A reduced ABC means the cochlea is at fault - sensorineural loss; a normal ABC with a negative Rinne confirms a true conductive loss.**",
+        "**Interpretation of the three together** is the standard examination question: Rinne negative with Weber to the same ear and normal ABC is conductive loss; Rinne positive with Weber to the opposite ear and reduced ABC is sensorineural loss; a false negative Rinne with Weber to the opposite ear and reduced ABC is severe unilateral sensorineural loss (dead ear).",
+        "Two more forks tests worth naming: the **Schwabach test** (bone conduction compared with the examiner's, without occlusion - shortened in sensorineural loss, lengthened in conductive) and the **Gelle test** (loudness change with pressure on the tympanic membrane via a Siegle speculum, negative in otosclerosis because the stapes is fixed).",
+      ],
+    },
+    {
+      heading: "Hearing loss in infants and children",
+      points: [
+        "**Congenital hearing loss affects roughly 1 to 2 per 1000 live births in India**, higher in high-risk newborns; **more than half are genetic (most commonly non-syndromic autosomal recessive GJB2 connexin 26 mutations)**, and the rest are acquired.",
+        "Acquired causes to list: **TORCH infections, particularly congenital rubella and cytomegalovirus; prematurity and very low birth weight; severe neonatal hyperbilirubinaemia requiring exchange transfusion; birth asphyxia; neonatal sepsis and meningitis; and aminoglycoside exposure**.",
+        "**Universal newborn hearing screening uses otoacoustic emissions (OAE) as the first-stage test, with automated auditory brainstem response (AABR) for those who refer and for all high-risk babies** (NICU stay over 5 days, family history, craniofacial anomalies, TORCH infection, hyperbilirubinaemia, meningitis).",
+        "**The 1-3-6 rule must be quoted: screening by 1 month of age, diagnostic confirmation by 3 months, and intervention including hearing aid fitting by 6 months** - the developmental window for spoken language depends on it.",
+        "**Otitis media with effusion (glue ear) is the commonest cause of acquired conductive hearing loss in children**: a retracted or amber drum with fluid, mild to moderate conductive loss, no pain and no fever. It follows upper respiratory infection, adenoid hypertrophy and allergic rhinitis, and most resolve spontaneously within 3 months.",
+        "**Refer glue ear for grommets when bilateral effusion persists beyond 3 months with a hearing loss of 25 to 30 dB or more, or earlier if there is speech delay, educational difficulty or Down syndrome or cleft palate**; adenoidectomy is added when there is nasal obstruction.",
+        "**Any parental report that a child does not hear must be believed and tested**, not reassured away; the parent detects hearing loss earlier than any screening test. Age-appropriate tests are **behavioural observation audiometry under 6 months, visual reinforcement audiometry from 6 months to 2 years, play audiometry from 2 to 5 years, and conventional pure tone audiometry after 5 years**.",
+      ],
+    },
+    {
+      heading: "Hearing loss in adults and the elderly",
+      points: [
+        "**Presbycusis is bilateral, symmetrical, gradual, high-frequency sensorineural loss of ageing**, with the characteristic complaint of hearing speech but not understanding it, particularly **in noisy surroundings and against a background of several speakers - the cocktail party effect**, and it is worsened by loss of speech discrimination out of proportion to the pure tone threshold.",
+        "**Noise-induced hearing loss** is bilateral sensorineural loss with the **characteristic notch at 4000 Hz** on the audiogram, caused by chronic exposure above 85 dB(A) for 8 hours a day - industry, generators, mills, band music, firecrackers and personal audio devices. **It is entirely preventable and legally compensable in India under the Factories Act**, so occupational history and hearing protection advice are marks in an answer.",
+        "**Ototoxic drugs:** **aminoglycosides (gentamicin, amikacin, streptomycin, kanamycin), cisplatin and carboplatin, loop diuretics in high dose, vancomycin, erythromycin in renal failure, quinine and chloroquine, and salicylates in overdose**. Aminoglycoside and cisplatin damage is cochlear, permanent and starts at high frequencies; **salicylate and loop diuretic effects are usually reversible**. Cochlear damage is potentiated by renal impairment and by concurrent loop diuretics.",
+        "**Otosclerosis** is a disease of young adults, commoner in women, worsened by pregnancy, presenting with **bilateral progressive conductive loss, paracusis willisii (hearing better in noisy surroundings), tinnitus and a normal-looking drum with occasionally a pink flamingo blush (Schwartze sign)**; treatment is a hearing aid or **stapedectomy with a prosthesis**.",
+        "**Meniere disease** gives episodic vertigo lasting 20 minutes to 12 hours with **fluctuating low-frequency sensorineural loss, aural fullness and tinnitus**; management is salt restriction, betahistine 16 to 24 mg three times daily, diuretics, and intratympanic therapy in resistant cases.",
+        "**Acoustic neuroma (vestibular schwannoma)** must be suspected in **unilateral or asymmetrical sensorineural loss, unilateral tinnitus, or unilateral poor speech discrimination** - the investigation is **MRI with gadolinium of the internal auditory meatus**, and this referral rule is the single most examinable point about adult hearing loss.",
+        "**Sudden sensorineural hearing loss - a loss of 30 dB or more over at least three contiguous frequencies developing within 72 hours - is an otological emergency.** Treat with **oral prednisolone 1 mg/kg/day (maximum 60 mg) for 7 to 14 days with a taper, ideally started within 72 hours and certainly within 2 weeks**, with intratympanic steroid as salvage, plus urgent audiometry and MRI to exclude a retrocochlear lesion.",
+      ],
+    },
+    {
+      heading: "Assessment, audiometry and rehabilitation",
+      points: [
+        "History: **onset (sudden or gradual), laterality, progression, tinnitus, vertigo, otorrhoea, otalgia, noise exposure, ototoxic drugs, head injury, family history, and the functional impact on conversation, telephone and television volume**.",
+        "Examination: **otoscopy after wax removal, tuning fork tests, facial nerve, nose and postnasal space (a unilateral effusion in an adult demands nasopharyngeal examination for carcinoma), cranial nerves and cerebellar signs**.",
+        "**Pure tone audiometry** is the standard test, plotting air and bone conduction thresholds; **an air-bone gap means conductive loss**. **Tympanometry** gives the middle ear compliance curve: **type A normal, type B flat (effusion or perforation), type C negative middle ear pressure (Eustachian dysfunction), and As shallow (otosclerosis or ossicular fixation)**.",
+        "**Objective tests: otoacoustic emissions test outer hair cell function (screening in newborns), and brainstem evoked response audiometry (BERA) gives threshold and site of lesion information in infants, malingerers and suspected retrocochlear disease.**",
+        "**Hearing aids** are the mainstay of rehabilitation for most adults: behind-the-ear, in-the-ear and receiver-in-canal types; **counsel that the aid amplifies all sound including background noise, that a period of acclimatisation of several weeks is needed, and that a poorly fitting or unserviced aid ends up in a drawer**. Bone-anchored aids serve chronically discharging ears and single-sided deafness.",
+        "**Cochlear implantation** is indicated in **severe to profound bilateral sensorineural hearing loss with inadequate benefit from hearing aids**; in children the outcome is best when implantation is done **before 2 to 3 years of age**, and the **ADIP scheme and NPPCD fund implants for eligible children in India**.",
+        "**Communication advice for the family** earns easy marks: face the person, ensure good lighting on the speaker's face, reduce background noise, speak clearly at normal volume rather than shouting, rephrase rather than repeat, and use written cues. Deafness is treated in the household, not only in the clinic.",
+      ],
+    },
+    {
+      heading: "The National Programme for Prevention and Control of Deafness",
+      points: [
+        "**The National Programme for Prevention and Control of Deafness (NPPCD) was launched in 2006-07 as a pilot and scaled nationally**, and is implemented through the district health system with the district hospital ENT unit as the hub.",
+        "**Objectives:** to prevent avoidable hearing loss from disease and injury; to identify and treat ear problems early; to medically rehabilitate people of all ages with deafness; to strengthen existing inter-sectoral linkages; and to develop institutional capacity for ear care services by providing support for manpower and equipment.",
+        "**Components:** manpower training from medical officers to multipurpose workers, **service delivery including screening camps and provision of hearing aids**, awareness through IEC activities, and monitoring and evaluation. **World Hearing Day is observed on 3 March.**",
+        "**WHO estimates that over 60% of childhood hearing loss is preventable** - by immunisation against measles, mumps, rubella and meningitis, by good antenatal and perinatal care, by avoiding consanguinity-related risk where relevant, by rational antibiotic use avoiding aminoglycosides, and by treating otitis media promptly.",
+        "**Related schemes to name:** ADIP (Assistance to Disabled Persons for Purchase/Fitting of Aids and Appliances) providing free hearing aids and cochlear implants, **Rashtriya Bal Swasthya Karyakram (RBSK)** which screens children 0 to 18 years for deficiencies and disabilities including hearing, and the **Rights of Persons with Disabilities Act 2016**, under which hearing impairment is a specified disability and benchmark disability of 40% or more entitles the person to reservations and concessions.",
+        "**The family physician's role:** examine the ear at every child health visit, remove wax and treat otitis media properly, ask about hearing in every elderly patient, record noise exposure and advise protection, avoid ototoxic prescribing and monitor when unavoidable, refer sudden and asymmetrical loss urgently, and complete disability certification so entitlements actually reach the patient.",
+      ],
+    },
+  ],
+  tables: [
+    {
+      heading: "Tuning fork test interpretation (512 Hz fork)",
+      columns: ["Condition", "Rinne (affected ear)", "Weber", "Absolute bone conduction"],
+      rows: [
+        ["Normal hearing", "Positive (AC greater than BC)", "Central, heard in the midline", "Normal (equal to examiner)"],
+        ["Conductive hearing loss", "Negative (BC greater than AC)", "Lateralised to the affected (worse) ear", "Normal"],
+        ["Sensorineural hearing loss", "Positive, but both AC and BC reduced", "Lateralised to the better ear", "Reduced (shortened compared with examiner)"],
+        ["Severe unilateral sensorineural loss (dead ear)", "False negative on the dead ear (sound crosses to the opposite cochlea)", "Lateralised to the better (opposite) ear", "Reduced in the dead ear"],
+        ["Mixed hearing loss", "Negative", "Variable, usually to the ear with the larger conductive component", "Reduced"],
+      ],
+    },
+    {
+      heading: "WHO grades of hearing impairment (pure tone average, better ear)",
+      columns: ["Grade", "Threshold", "Practical consequence"],
+      rows: [
+        ["Normal", "Under 20 dB", "No difficulty with speech"],
+        ["Mild", "20 to under 35 dB", "Difficulty with soft speech and in noise"],
+        ["Moderate", "35 to under 50 dB", "Difficulty with normal conversation; hearing aid usually needed"],
+        ["Moderately severe", "50 to under 65 dB", "Difficulty even with loud speech"],
+        ["Severe", "65 to under 80 dB", "Hears only very loud speech; aid essential"],
+        ["Profound", "80 to under 95 dB", "Little or no speech perception; consider cochlear implant"],
+        ["Complete or total deafness", "95 dB or more", "No useful hearing; cochlear implant or sign language"],
+      ],
+    },
+    {
+      heading: "Causes of hearing loss by age",
+      columns: ["Age group", "Conductive causes", "Sensorineural causes"],
+      rows: [
+        ["Newborn and infant", "Congenital atresia or stenosis of the canal, ossicular malformation", "Genetic (GJB2 connexin 26), TORCH infection, prematurity, kernicterus, birth asphyxia, meningitis, aminoglycosides"],
+        ["Child", "Wax, foreign body, otitis media with effusion, acute and chronic otitis media, perforation", "Mumps, measles, meningitis, ototoxic drugs, head injury, late-onset genetic loss"],
+        ["Young adult", "Otosclerosis, chronic suppurative otitis media, traumatic perforation", "Noise-induced loss, Meniere disease, sudden sensorineural loss, acoustic neuroma"],
+        ["Elderly", "Wax impaction, chronic otitis media, ossicular fixation", "Presbycusis, noise-induced loss, ototoxicity, vascular and metabolic causes"],
+      ],
+    },
+    {
+      heading: "Tympanometry curves",
+      columns: ["Type", "Appearance", "Meaning"],
+      rows: [
+        ["A", "Normal peak at 0 daPa with normal compliance", "Normal middle ear"],
+        ["As", "Peak present but shallow", "Reduced compliance - otosclerosis, ossicular fixation, tympanosclerosis"],
+        ["Ad", "Peak present but very deep", "Hypermobile drum - ossicular discontinuity, flaccid or healed drum"],
+        ["B", "Flat, no peak", "Middle ear effusion, or a perforation or patent grommet if canal volume is high"],
+        ["C", "Peak shifted to negative pressure", "Eustachian tube dysfunction with retracted drum"],
+      ],
+    },
+  ],
+  redFlags: [
+    "Sudden sensorineural hearing loss of 30 dB or more over three contiguous frequencies within 72 hours - an emergency; start prednisolone 1 mg/kg/day and refer for same-week audiometry and MRI.",
+    "Unilateral or asymmetrical sensorineural hearing loss, unilateral tinnitus, or unilateral poor speech discrimination - acoustic neuroma until MRI of the internal auditory meatus proves otherwise.",
+    "Unilateral middle ear effusion in an adult, especially with epistaxis, nasal obstruction or a neck node - nasopharyngeal carcinoma; examine the postnasal space and biopsy.",
+    "Hearing loss with vertigo, facial weakness or ataxia - labyrinthine, cerebellopontine angle or brainstem disease; urgent referral.",
+    "Hearing loss after head injury with blood or CSF in the canal - temporal bone fracture; do not syringe or instil drops, image and refer.",
+    "A parent who says the child does not hear, or a child failing newborn screening - diagnostic testing by 3 months, never watchful waiting; language development is time-limited.",
+    "Hearing loss developing during aminoglycoside, cisplatin or high-dose loop diuretic therapy - stop or change the drug and get audiometry before the loss becomes profound.",
+  ],
+  pearls: [
+    "Use a 512 Hz fork - 256 Hz gives tactile vibration and 1024 Hz decays too quickly.",
+    "Rinne negative means bone conduction is better than air conduction and indicates a conductive loss of at least 15-20 dB; Weber lateralises to the worse ear in conductive loss and the better ear in sensorineural loss.",
+    "A false negative Rinne is the sign of a dead ear - the fork is being heard by the opposite cochlea; mask the good ear and check the absolute bone conduction.",
+    "The 1-3-6 rule: newborn hearing screening by 1 month, diagnosis by 3 months, intervention by 6 months.",
+    "A 4000 Hz notch on the audiogram is noise-induced hearing loss until proved otherwise - ask about the workplace and the generator.",
+    "Any asymmetrical sensorineural loss in an adult needs an MRI of the internal auditory meatus, not just a hearing aid.",
+    "A unilateral middle ear effusion in an adult is nasopharyngeal carcinoma until the postnasal space has been examined.",
+    "Sudden sensorineural hearing loss is treated like a stroke of the ear - steroids within 72 hours, because the window closes at about two weeks.",
+  ],
+  theory: [
+    {
+      id: "eye-ent-hearing-loss-t1",
+      paper: "III",
+      kind: "long",
+      marks: 10,
+      minutes: 20,
+      frequency: "common",
+      question:
+        "Describe the tuning fork tests used to evaluate hearing loss, their interpretation, and the approach to a patient presenting with hearing loss in family practice, including causes by age and indications for referral.",
+      openingLines: [
+        "Hearing loss is classified as conductive, sensorineural or mixed, and the bedside separation of the first two is made with tuning fork tests using a 512 Hz fork, which remain valid and free even where audiometry is unavailable.",
+        "WHO defines disabling hearing loss as more than 35 dB in the better ear in adults and more than 30 dB in children, and over 60% of childhood hearing loss is preventable, which is why detection in primary care matters.",
+      ],
+      answer: [
+        {
+          heading: "1. Technique of tuning fork tests",
+          points: [
+            "Use a 512 Hz fork; 256 Hz produces tactile vibration and 1024 Hz decays too rapidly. Strike at the junction of the upper two-thirds and lower one-third of the prong on the elbow or knee, not on a hard surface.",
+            "Rinne: hold the vibrating fork 2 cm from the external auditory meatus for air conduction, then place the base firmly on the mastoid for bone conduction, and ask which is louder.",
+            "Weber: place the base in the midline on the vertex or forehead and ask where the sound is heard.",
+            "Absolute bone conduction: occlude the patient's canal by pressing the tragus, place the fork on the mastoid, and compare the duration heard with the examiner's own bone conduction.",
+          ],
+        },
+        {
+          heading: "2. Interpretation",
+          points: [
+            "Normal: Rinne positive (air better than bone), Weber central, absolute bone conduction normal.",
+            "Conductive loss: Rinne negative (bone better than air) indicating a gap of at least 15-20 dB, Weber lateralised to the affected ear, absolute bone conduction normal.",
+            "Sensorineural loss: Rinne positive but both conductions reduced, Weber lateralised to the better ear, absolute bone conduction reduced.",
+            "False negative Rinne: in a dead ear, the fork on the mastoid is heard by the opposite cochlea; Weber lateralises away from the dead ear and absolute bone conduction is reduced. Mask the good ear with a Barany box to expose it.",
+            "Supplementary: Schwabach test (bone conduction against the examiner's without occlusion) and Gelle test (negative in otosclerosis because the stapes is fixed).",
+          ],
+        },
+        {
+          heading: "3. Clinical approach",
+          points: [
+            "History: onset sudden or gradual, laterality, progression, tinnitus, vertigo, discharge, pain, noise exposure, ototoxic drugs, head injury, family history, and functional impact.",
+            "Examination: otoscopy after wax removal, tuning fork tests, facial nerve, nose and postnasal space, and cranial nerve and cerebellar assessment.",
+            "Investigations: pure tone audiometry with air and bone thresholds, tympanometry (type A normal, B flat with effusion, C negative pressure, As shallow in otosclerosis), otoacoustic emissions and BERA where objective testing is needed, and MRI of the internal auditory meatus for asymmetrical sensorineural loss.",
+          ],
+        },
+        {
+          heading: "4. Causes by age",
+          points: [
+            "Newborn and infant: genetic (GJB2 connexin 26), TORCH infections, prematurity, hyperbilirubinaemia, birth asphyxia, meningitis, aminoglycoside exposure, congenital canal atresia.",
+            "Child: wax and foreign body, otitis media with effusion (commonest acquired conductive cause), acute and chronic otitis media, mumps, measles, meningitis.",
+            "Young adult: otosclerosis, chronic suppurative otitis media, noise-induced loss, Meniere disease, sudden sensorineural loss, acoustic neuroma.",
+            "Elderly: presbycusis, wax impaction, noise-induced loss, ototoxicity, and hearing loss contributing to social isolation, depression, falls and cognitive decline.",
+          ],
+        },
+        {
+          heading: "5. Management and referral",
+          points: [
+            "Treat the treatable in the clinic: syringe or remove wax, treat otitis externa and media, and stop or substitute ototoxic drugs.",
+            "Urgent referral: sudden sensorineural hearing loss (start prednisolone 1 mg/kg/day up to 60 mg for 7-14 days with taper within 72 hours), asymmetrical sensorineural loss for MRI, unilateral adult middle ear effusion for nasopharyngeal examination, hearing loss with vertigo or facial palsy, and hearing loss after head trauma.",
+            "Routine referral: glue ear persisting beyond 3 months with 25-30 dB loss or speech delay, otosclerosis for stapedectomy, and any child failing newborn screening under the 1-3-6 rule.",
+            "Rehabilitation: hearing aids with counselling on acclimatisation, cochlear implantation for severe to profound loss (best before 2-3 years in children), assistive listening devices, speech therapy, and family communication training.",
+          ],
+        },
+        {
+          heading: "6. Prevention and the national programme",
+          points: [
+            "National Programme for Prevention and Control of Deafness, launched 2006-07, with objectives of preventing avoidable hearing loss, early identification and treatment, medical rehabilitation, inter-sectoral linkage and capacity building.",
+            "Immunisation against measles, mumps, rubella and meningitis; safe antenatal and perinatal care; rational antibiotic use; prompt treatment of otitis media; and noise control with hearing protection at work.",
+            "ADIP scheme for free hearing aids and cochlear implants, RBSK screening for children, and disability certification under the Rights of Persons with Disabilities Act 2016.",
+          ],
+        },
+      ],
+      mustDraw: [
+        "The tuning fork interpretation table with rows for normal, conductive, sensorineural and dead ear against columns for Rinne, Weber and absolute bone conduction.",
+        "A pure tone audiogram showing a conductive loss with an air-bone gap alongside a sensorineural loss with a 4000 Hz noise notch.",
+      ],
+      markSplit: [
+        { part: "Technique of Rinne, Weber and absolute bone conduction", marks: 2 },
+        { part: "Interpretation table including false negative Rinne", marks: 3 },
+        { part: "History, examination and investigations", marks: 2 },
+        { part: "Causes by age", marks: 1.5 },
+        { part: "Referral, rehabilitation and prevention", marks: 1.5 },
+      ],
+      keywords: ["Rinne", "Weber", "absolute bone conduction", "presbycusis", "NPPCD"],
+    },
+    {
+      id: "eye-ent-hearing-loss-t2",
+      paper: "III",
+      kind: "short-note",
+      marks: 5,
+      minutes: 10,
+      frequency: "common",
+      question: "Write short notes on the National Programme for Prevention and Control of Deafness, including newborn hearing screening and the role of the family physician.",
+      openingLines: [
+        "The National Programme for Prevention and Control of Deafness was launched as a pilot in 2006-07 and scaled nationally, and is delivered through the district health system with the district hospital ENT unit as the hub.",
+        "It exists because hearing loss is common, disabling and largely preventable - WHO estimates that more than 60% of childhood hearing loss is avoidable through immunisation, safe perinatal care, rational antibiotic use and prompt treatment of otitis media.",
+      ],
+      answer: [
+        {
+          heading: "Objectives",
+          points: [
+            "To prevent avoidable hearing loss caused by disease or injury.",
+            "To identify, diagnose and treat ear problems responsible for hearing loss and deafness at an early stage.",
+            "To medically rehabilitate persons of all ages with deafness.",
+            "To strengthen existing inter-sectoral linkages for the continued care of persons with deafness.",
+            "To develop institutional capacity for ear care services by providing support for equipment, material and trained manpower.",
+          ],
+        },
+        {
+          heading: "Components and activities",
+          points: [
+            "Manpower training from ENT specialists and audiologists down to medical officers, health workers and anganwadi workers.",
+            "Service delivery: screening camps, outpatient ear care, surgical services at district level, and provision of hearing aids.",
+            "Awareness generation through IEC, including World Hearing Day on 3 March.",
+            "Monitoring and evaluation through district and state programme cells.",
+          ],
+        },
+        {
+          heading: "Newborn and child hearing screening",
+          points: [
+            "Otoacoustic emissions as the first-stage screen, with automated auditory brainstem response for those who refer and for all high-risk babies - NICU stay over 5 days, family history, craniofacial anomalies, TORCH infection, hyperbilirubinaemia requiring exchange transfusion, and meningitis.",
+            "The 1-3-6 rule: screening by 1 month, diagnostic confirmation by 3 months, and intervention including hearing aid fitting by 6 months.",
+            "Rashtriya Bal Swasthya Karyakram screens children 0-18 years for the 4Ds, including hearing, through mobile health teams.",
+            "Cochlear implantation for severe to profound loss, funded under the ADIP scheme, with best outcomes when done before 2-3 years of age.",
+          ],
+        },
+        {
+          heading: "Role of the family physician",
+          points: [
+            "Examine the ear and ask about hearing at every child health and elderly visit; believe a parent who reports that a child does not hear.",
+            "Remove wax, treat otitis externa and otitis media adequately, and prevent chronic suppurative otitis media.",
+            "Prescribe rationally: avoid aminoglycosides where alternatives exist, monitor hearing when they are unavoidable, and never use aminoglycoside ear drops through a perforation.",
+            "Record occupational noise exposure and advise hearing protection; refer sudden or asymmetrical sensorineural loss urgently.",
+            "Facilitate hearing aids and cochlear implants through ADIP, complete disability certification under the Rights of Persons with Disabilities Act 2016, and counsel families on communication strategies.",
+          ],
+        },
+      ],
+      mustDraw: [
+        "A flow chart of newborn hearing screening: OAE at birth - refer - repeat OAE or AABR - diagnostic BERA by 3 months - hearing aid by 6 months - cochlear implant assessment if inadequate benefit.",
+      ],
+      markSplit: [
+        { part: "Launch, structure and objectives", marks: 2 },
+        { part: "Components and activities", marks: 1 },
+        { part: "Newborn screening and the 1-3-6 rule", marks: 1 },
+        { part: "Role of the family physician and related schemes", marks: 1 },
+      ],
+      keywords: ["NPPCD", "newborn hearing screening", "OAE", "BERA", "ADIP"],
+    },
+  ],
+  mcqs: [
+    {
+      id: "eye-ent-hearing-loss-q1",
+      stem: "In a patient with a left-sided hearing loss, the Rinne test is negative on the left and positive on the right, and the Weber test lateralises to the left. Absolute bone conduction on the left is normal. What is the diagnosis?",
+      options: [
+        "Left sensorineural hearing loss",
+        "Left conductive hearing loss",
+        "Right sensorineural hearing loss",
+        "A dead left ear with a false negative Rinne",
+        "Bilateral mixed hearing loss",
+      ],
+      answer: 1,
+      explanation:
+        "Bone conduction better than air conduction on the left (Rinne negative), Weber lateralising to that same ear, and a normal absolute bone conduction together define a true conductive loss on the left, since a normal absolute bone conduction proves the cochlea is working. A left sensorineural loss would give a positive Rinne with Weber lateralising away to the right and reduced absolute bone conduction. A right sensorineural loss would also lateralise the Weber to the left, but the left Rinne would be positive, not negative. A dead left ear produces a false negative Rinne, but there the absolute bone conduction is reduced and the Weber lateralises to the opposite side. Bilateral mixed disease would not give this clean unilateral pattern.",
+      difficulty: "moderate",
+    },
+    {
+      id: "eye-ent-hearing-loss-q2",
+      stem: "A 46-year-old man wakes with profound hearing loss in the right ear and tinnitus, developing over a few hours the previous evening. There is no vertigo, no discharge, and otoscopy is normal. What is the most appropriate immediate management?",
+      options: [
+        "Reassure and review in a month, since most cases recover spontaneously",
+        "Start oral prednisolone 1 mg/kg/day for 7-14 days with a taper and arrange urgent audiometry and MRI",
+        "Prescribe betahistine 16 mg three times daily and a vestibular sedative",
+        "Syringe both ears and review",
+        "Start amoxicillin-clavulanate for presumed viral labyrinthitis",
+      ],
+      answer: 1,
+      explanation:
+        "Rapid onset of sensorineural hearing loss over less than 72 hours with a normal drum is sudden sensorineural hearing loss, an otological emergency in which high-dose oral corticosteroid started within 72 hours gives the best chance of recovery, alongside urgent audiometry to document the loss and MRI to exclude a vestibular schwannoma. Waiting a month forfeits the treatment window, which is largely closed by two weeks. Betahistine treats Meniere disease, which is episodic with vertigo and aural fullness rather than a single sudden profound loss. Syringing addresses wax, which otoscopy has already excluded. Antibiotics have no role in a non-infective sudden loss with a normal ear.",
+      difficulty: "easy",
+    },
+    {
+      id: "eye-ent-hearing-loss-q3",
+      stem: "A 40-year-old man working in a textile mill has bilateral hearing difficulty. His audiogram shows a sensorineural dip maximal at 4000 Hz with partial recovery at 8000 Hz. What is the diagnosis and the key intervention?",
+      options: [
+        "Presbycusis - fit hearing aids",
+        "Noise-induced hearing loss - hearing protection and removal from further exposure",
+        "Otosclerosis - stapedectomy",
+        "Meniere disease - salt restriction and betahistine",
+        "Acoustic neuroma - MRI of the internal auditory meatus",
+      ],
+      answer: 1,
+      explanation:
+        "A sensorineural notch at 4000 Hz with recovery at 8000 Hz in a person with chronic occupational noise exposure is the classic audiometric signature of noise-induced hearing loss, and the essential intervention is prevention of further damage through hearing protection, engineering controls and periodic audiometry, since existing loss is irreversible. Presbycusis produces a sloping high-frequency loss without a discrete notch and occurs later in life. Otosclerosis causes a conductive loss with an air-bone gap and often a Carhart notch at 2000 Hz in bone conduction. Meniere disease produces a fluctuating low-frequency loss with episodic vertigo. An acoustic neuroma is suspected with asymmetrical loss and disproportionately poor speech discrimination, not a symmetrical occupational notch.",
+      difficulty: "easy",
+    },
+    {
+      id: "eye-ent-hearing-loss-q4",
+      stem: "A newborn fails the otoacoustic emission screen in both ears at discharge. By what age should the diagnosis be confirmed and intervention started, according to the accepted rule?",
+      options: [
+        "Diagnosis by 6 months, intervention by 12 months",
+        "Diagnosis by 3 months, intervention by 6 months",
+        "Diagnosis by 12 months, intervention by 18 months",
+        "Diagnosis at 2 years when behavioural testing becomes reliable",
+        "No further action unless the parents report a problem",
+      ],
+      answer: 1,
+      explanation:
+        "The 1-3-6 rule requires screening by 1 month, diagnostic confirmation by 3 months and intervention, including hearing aid fitting, by 6 months, because the critical period for spoken language acquisition is early and outcomes deteriorate sharply with delay. Confirming at 6 months and intervening at 12 loses half a year of language exposure. Waiting for 12 or 18 months, or until behavioural testing at 2 years, allows irreversible language delay and worsens cochlear implant outcomes, which are best before 2-3 years. Waiting for parental report abandons the entire rationale of universal screening.",
+      difficulty: "easy",
+    },
+    {
+      id: "eye-ent-hearing-loss-q5",
+      stem: "A 52-year-old man has a persistent right-sided middle ear effusion with conductive hearing loss for two months. He has no history of upper respiratory infection and reports occasional blood-stained nasal discharge. What must be excluded?",
+      options: [
+        "Otosclerosis",
+        "Nasopharyngeal carcinoma",
+        "Presbycusis",
+        "Cholesteatoma of the attic",
+        "Barotrauma",
+      ],
+      answer: 1,
+      explanation:
+        "A unilateral middle ear effusion in an adult, particularly with blood-stained nasal discharge, is nasopharyngeal carcinoma obstructing the Eustachian tube until endoscopy and biopsy of the postnasal space prove otherwise. Otosclerosis produces a conductive loss with a normal drum and no effusion, and it is bilateral and progressive in young adults. Presbycusis is a symmetrical high-frequency sensorineural loss and does not cause an effusion. Attic cholesteatoma presents with a foul scanty discharge and an attic perforation, not an intact drum with fluid behind it. Barotrauma follows a clear pressure event such as flying or diving and settles rather than persisting for months with nasal bleeding.",
+      difficulty: "moderate",
+    },
+  ],
+  cards: [
+    {
+      id: "eye-ent-hearing-loss-c1",
+      front: "Which tuning fork is used and why?",
+      back: "512 Hz - 256 Hz produces tactile vibration that is felt rather than heard, and 1024 Hz decays too quickly to complete the test.",
+    },
+    {
+      id: "eye-ent-hearing-loss-c2",
+      front: "Rinne and Weber in conductive hearing loss.",
+      back: "Rinne negative in the affected ear (bone better than air, implying a gap of at least 15-20 dB) and Weber lateralised to the affected (worse) ear; absolute bone conduction is normal.",
+    },
+    {
+      id: "eye-ent-hearing-loss-c3",
+      front: "Rinne and Weber in sensorineural hearing loss.",
+      back: "Rinne positive but both conductions reduced, Weber lateralised to the better ear, and absolute bone conduction reduced compared with the examiner.",
+    },
+    {
+      id: "eye-ent-hearing-loss-c4",
+      front: "What is a false negative Rinne?",
+      back: "In a dead ear the fork on the mastoid is heard by the opposite cochlea, so bone conduction seems better; mask the good ear with a Barany box and check absolute bone conduction, which is reduced.",
+    },
+    {
+      id: "eye-ent-hearing-loss-c5",
+      front: "The 1-3-6 rule of newborn hearing screening.",
+      back: "Screening by 1 month of age, diagnostic confirmation by 3 months, and intervention including hearing aid fitting by 6 months.",
+    },
+    {
+      id: "eye-ent-hearing-loss-c6",
+      front: "WHO definition of disabling hearing loss.",
+      back: "More than 35 dB in the better hearing ear in adults, and more than 30 dB in children.",
+    },
+    {
+      id: "eye-ent-hearing-loss-c7",
+      front: "Audiogram sign of noise-induced hearing loss.",
+      back: "A sensorineural notch maximal at 4000 Hz with partial recovery at 8000 Hz, from exposure above 85 dB(A) for 8 hours a day.",
+    },
+    {
+      id: "eye-ent-hearing-loss-c8",
+      front: "Definition and treatment of sudden sensorineural hearing loss.",
+      back: "A loss of 30 dB or more across three contiguous frequencies within 72 hours; treat with prednisolone 1 mg/kg/day (max 60 mg) for 7-14 days with taper started within 72 hours, plus audiometry and MRI.",
+    },
+    {
+      id: "eye-ent-hearing-loss-c9",
+      front: "Tympanometry types.",
+      back: "A normal; As shallow (otosclerosis, ossicular fixation); Ad deep (ossicular discontinuity, flaccid drum); B flat (effusion, or perforation if canal volume is high); C negative pressure (Eustachian dysfunction).",
+    },
+    {
+      id: "eye-ent-hearing-loss-c10",
+      front: "Objectives of the National Programme for Prevention and Control of Deafness.",
+      back: "Prevent avoidable hearing loss; identify and treat ear disease early; medically rehabilitate people with deafness; strengthen inter-sectoral linkages; and build institutional capacity for ear care - launched 2006-07.",
+    },
+  ],
+  references: [
+    "PL Dhingra and Shruti Dhingra, Diseases of Ear, Nose and Throat and Head and Neck Surgery, 8th edition, 2021",
+    "Scott-Brown's Otorhinolaryngology, Head and Neck Surgery, 8th edition, 2018",
+    "WHO World Report on Hearing, 2021",
+    "National Programme for Prevention and Control of Deafness, operational guidelines, MoHFW, Government of India",
+    "American Academy of Otolaryngology-Head and Neck Surgery, Clinical Practice Guideline: Sudden Hearing Loss (Update), 2019",
+    "Joint Committee on Infant Hearing, Year 2019 Position Statement",
+    "Park's Textbook of Preventive and Social Medicine, 27th edition, 2023 - NPPCD and disability",
+    "Rights of Persons with Disabilities Act, 2016, Government of India",
+  ],
+});
+
+
+topics.push({
+  id: "eye-ent-epistaxis-foreign-bodies",
+  title: "Epistaxis and foreign bodies in ear, nose and throat",
+  oneLiner:
+    "Most epistaxis is anterior, from Little's area on the septum, and stops with correct first aid and cautery, while posterior bleeding in an elderly or anticoagulated patient can be life-threatening and needs packing, resuscitation and admission; foreign bodies are removed at the first attempt with the right instrument, with button batteries in the nose or oesophagus, organic bodies in the ear and any airway foreign body treated as emergencies.",
+  frequency: "common",
+  keywords: [
+    "epistaxis",
+    "Little's area",
+    "Kiesselbach plexus",
+    "anterior nasal packing",
+    "posterior epistaxis",
+    "silver nitrate cautery",
+    "tranexamic acid",
+    "sphenopalatine artery",
+    "nasal foreign body",
+    "button battery",
+    "aural foreign body",
+    "oesophageal foreign body",
+    "airway foreign body",
+    "Heimlich manoeuvre",
+    "juvenile nasopharyngeal angiofibroma",
+    "tracheostomy",
+  ],
+  sections: [
+    {
+      heading: "Epistaxis: the anatomy that determines the management",
+      points: [
+        "**About 90 to 95% of nosebleeds are anterior, arising from Little's area on the anterior-inferior nasal septum, where the Kiesselbach plexus is formed by anastomosis of the anterior ethmoidal artery, the sphenopalatine artery, the greater palatine artery and the superior labial branch of the facial artery.**",
+        "**Posterior epistaxis arises mainly from the sphenopalatine artery and its branches, and from Woodruff's plexus in the posterior inferior meatus**; it is commoner in the elderly, in hypertensives and in patients on anticoagulants, bleeds into the pharynx, and cannot be controlled with anterior pressure alone.",
+        "Local causes: **digital trauma (nose picking - the commonest cause in children), dry air and deviated septum with a spur, acute and chronic rhinitis and sinusitis, foreign body (unilateral offensive discharge with blood), nasal steroid spray aimed at the septum, trauma and fractures, and tumours - inverted papilloma, carcinoma and juvenile nasopharyngeal angiofibroma**.",
+        "**Juvenile nasopharyngeal angiofibroma must be remembered in an adolescent boy with recurrent profuse unilateral epistaxis and nasal obstruction**: it is a highly vascular benign tumour, and **biopsy in the clinic is contraindicated** because it can bleed catastrophically - refer for contrast imaging.",
+        "General causes: **hypertension (which aggravates and prolongs rather than initiates bleeding), anticoagulants and antiplatelets, aspirin and NSAIDs, liver disease, chronic kidney disease, thrombocytopenia including dengue, leukaemia and aplastic anaemia, haemophilia and von Willebrand disease, and hereditary haemorrhagic telangiectasia (Osler-Weber-Rendu)**.",
+        "**In India, dengue, enteric fever and vitamin K deficiency must be part of the differential in a febrile patient with epistaxis**, and a platelet count is mandatory in that setting rather than simply packing the nose.",
+      ],
+    },
+    {
+      heading: "Managing epistaxis step by step",
+      points: [
+        "**Assess and resuscitate first in a heavy bleed**: pulse, blood pressure, capillary refill, pallor, and an estimate of blood loss; secure intravenous access, send haemoglobin, platelet count, prothrombin time with INR and group and save, and start fluids in the shocked patient. **Airway comes before the nose** - a patient who is swallowing large amounts of blood may vomit and aspirate.",
+        "**First aid (the Trotter method, which must be described accurately):** sit the patient **upright and leaning forward**, ask them to **breathe through the mouth and spit out blood rather than swallow it**, and **pinch the soft cartilaginous part of the nose - not the bony bridge - firmly and continuously for 10 to 15 minutes without releasing to check**. Apply an ice pack to the bridge or let the patient suck ice.",
+        "**If bleeding persists**, insert a pledget soaked in a **topical vasoconstrictor and anaesthetic - 4% lidocaine with 1:1000 adrenaline, or oxymetazoline** - for 5 to 10 minutes, then examine with a headlight and Thudichum speculum after clearing clots.",
+        "**Chemical cautery of a visible anterior bleeding point with a silver nitrate stick for 5 to 10 seconds** is the definitive treatment for most anterior bleeds. **Never cauterise both sides of the septum at the same sitting** - the risk is septal perforation; wait 4 to 6 weeks.",
+        "**Anterior nasal packing** where cautery fails or no bleeding point is seen: ribbon gauze soaked in liquid paraffin or bismuth iodoform paraffin paste laid in horizontal layers from the floor upward, or a **nasal tampon (Merocel) or inflatable balloon**. Leave for **24 to 48 hours**; give **prophylactic co-amoxiclav or another antistaphylococcal antibiotic if the pack stays beyond 48 hours** because of the risk of sinusitis and, rarely, toxic shock syndrome.",
+        "**Posterior packing** with a Foley catheter (inflate the balloon with 5 to 10 mL saline in the nasopharynx, withdraw until it engages the choana, then pack anteriorly and secure without pressure necrosis of the nasal ala) or a purpose-made postnasal pack. **A posteriorly packed patient is admitted and monitored** - there is a real risk of hypoxia, arrhythmia and vasovagal events.",
+        "**Tranexamic acid** is useful: topically on a soaked pledget, or **500 mg to 1 g intravenously eight-hourly (oral 1 g three times daily)**, particularly in patients on antiplatelets or with a bleeding tendency, provided there is no active thrombotic contraindication.",
+        "**Definitive treatment for refractory bleeding is endoscopic sphenopalatine artery ligation or cautery, or embolisation**; anterior ethmoidal artery ligation is added for a high septal bleed. **Do not stop a therapeutic anticoagulant reflexively** - correct an over-range INR with vitamin K or prothrombin complex concentrate according to the situation, and weigh thrombotic risk in a metallic valve or recent stent.",
+      ],
+    },
+    {
+      heading: "Foreign bodies in the ear",
+      points: [
+        "The commonest are **beads, seeds, paper, cotton wool tips, pencil erasers and insects in adults**; children present with a history from a witness, or with unilateral discharge, pain or hearing loss.",
+        "**Vegetable and organic foreign bodies (peas, beans, seeds) swell with water and must never be syringed**; they are removed with instruments under vision. **Syringing is also contraindicated with a known or suspected perforation, a grommet in place, and with a button battery.**",
+        "**A live insect must be killed first** with 2% lidocaine, mineral oil, glycerine or spirit instilled into the canal, then removed by syringing or forceps - a moving insect causes severe distress and can perforate the drum.",
+        "**Technique matters more than the instrument:** good headlight illumination, the largest speculum that fits, an assistant to hold a child still (or removal under general anaesthesia if the child will not cooperate), a **wax hook or right-angled hook passed beyond a smooth round object and then withdrawn** rather than grasping forceps that push it deeper, and crocodile forceps for compressible objects such as paper or cotton.",
+        "**The first attempt is the best attempt.** Repeated blind attempts cause canal laceration, bleeding, oedema and tympanic membrane perforation, and convert a clinic procedure into a general anaesthetic. **Refer after one or two failed attempts, for an impacted or sharp object, for a foreign body medial to the isthmus, and whenever the child cannot be adequately restrained.**",
+        "**Wax impaction** is managed with softening drops - **liquid paraffin, olive oil or 5% sodium bicarbonate for 3 to 5 days** - then syringing with water at body temperature aimed along the posterosuperior canal wall, **provided the drum is intact and there is no history of previous ear surgery or perforation**; cold or hot water causes caloric vertigo.",
+      ],
+    },
+    {
+      heading: "Foreign bodies in the nose, throat and airway",
+      points: [
+        "**A unilateral foul-smelling, blood-stained nasal discharge in a child is a nasal foreign body until proved otherwise** - the parent usually did not witness the insertion, and the child has often been treated for weeks with antibiotics for sinusitis.",
+        "**A button (disc) battery in the nose is an emergency: it causes liquefactive necrosis and septal perforation within hours** through local current and alkali generation. It must be removed immediately, not on the next available list. **A magnet swallowed with a second magnet, or paired magnets in the nose, is equally urgent** because they attract across tissue and cause pressure necrosis.",
+        "**Removal technique for a nasal foreign body:** topical vasoconstrictor and anaesthetic, good light, and either a **hook passed above and behind the object then withdrawn**, or the **positive pressure ('parent's kiss' or 'mother's kiss') technique - occlude the unaffected nostril and have the parent blow into the child's mouth**, which is safe and often effective. **Never push the object backwards**, because it may be inhaled.",
+        "**Rhinolith** is a calcified mass around a long-retained foreign body, presenting with unilateral obstruction and offensive discharge in an adult; it needs removal under anaesthesia.",
+        "**Oesophageal foreign bodies** lodge at the three physiological narrowings - **cricopharynx (the commonest, about 15 cm from the incisors), the level of the aortic arch and left main bronchus crossing, and the diaphragmatic hiatus**. Coins in children and meat bolus or bone in adults are typical. **A button battery in the oesophagus must be removed within 2 hours** - it can perforate into the aorta.",
+        "**Airway foreign body:** sudden choking with coughing, wheeze and stridor, most often in a child under 3 years with a peanut or a seed, and **more commonly in the right main bronchus because it is wider, shorter and more vertical**. Signs may be a unilateral wheeze with reduced air entry, and the **chest radiograph in expiration may show obstructive emphysema of the affected side with mediastinal shift away** - a normal radiograph never excludes it.",
+        "**Choking first aid:** if the patient can cough effectively, encourage coughing; if the cough becomes ineffective and the patient is conscious, give **5 back blows between the scapulae followed by 5 abdominal thrusts (Heimlich) in adults and children over 1 year**, and **5 back blows with 5 chest thrusts in infants under 1 year - abdominal thrusts are not used in infants**. If the patient becomes unconscious, begin CPR and look in the mouth at each cycle; **blind finger sweeps are forbidden**.",
+        "**Definitive removal is by rigid bronchoscopy or oesophagoscopy under general anaesthesia**; a suspected airway foreign body goes to hospital with the child kept calm and upright, and **the history alone justifies bronchoscopy even when examination and radiographs are normal**.",
+      ],
+    },
+    {
+      heading: "Prevention, documentation and follow-up",
+      points: [
+        "Prevention advice for parents: **no peanuts, whole grapes, hard sweets, popcorn or raw carrot for children under 4 to 5 years; no small toy parts or button-battery devices within reach; and no eating while running, laughing or lying down**.",
+        "**Button battery safety** deserves its own counselling: keep remote controls, hearing aids, watches and toys with battery compartments secured, and **treat any suspected ingestion or insertion as an emergency requiring immediate radiography and removal**.",
+        "For recurrent epistaxis: **teach the correct first aid to the patient and family, apply petroleum jelly or an antiseptic cream to Little's area twice daily for 2 weeks, humidify dry indoor air, discourage nose picking with nails cut short in children, and review antiplatelet and anticoagulant indications**.",
+        "**Investigate the recurrent or unexplained bleeder** rather than repeatedly cauterising: full blood count, prothrombin time and INR, and where suggested by history, liver and renal function, and referral for nasal endoscopy to exclude a tumour - **every adult with recurrent unilateral epistaxis needs the postnasal space examined**.",
+        "**Document precisely** in every foreign body case: what the object was, when it went in, which side, how many removal attempts were made and by whom, the state of the drum or septum afterwards, and the safety advice given. Documentation matters medicolegally and determines whether the next clinician attempts removal or refers.",
+        "**Safety-net every discharge**: return immediately for further heavy bleeding, for fever or foul discharge after packing or removal, for breathlessness or persistent cough after a choking episode, and for any hearing loss or discharge after aural instrumentation.",
+      ],
+    },
+  ],
+  tables: [
+    {
+      heading: "Anterior versus posterior epistaxis",
+      columns: ["Feature", "Anterior", "Posterior"],
+      rows: [
+        ["Proportion of cases", "About 90-95%", "About 5-10%"],
+        ["Usual source", "Little's area (Kiesselbach plexus) on the septum", "Sphenopalatine artery branches, Woodruff's plexus"],
+        ["Typical patient", "Children and young adults; digital trauma, dry air", "Elderly, hypertensive, atherosclerotic, anticoagulated"],
+        ["Direction of bleeding", "Out of the nostril, usually one side", "Into the pharynx, often both nostrils, with swallowed blood"],
+        ["Control by pinching the nose", "Usually effective", "Ineffective"],
+        ["Management", "Pressure, vasoconstrictor pledget, silver nitrate cautery, anterior pack", "Posterior pack or balloon, admission, endoscopic sphenopalatine artery ligation or embolisation"],
+        ["Risk", "Usually minor", "Hypovolaemia, aspiration, hypoxia, arrhythmia; can be fatal"],
+      ],
+    },
+    {
+      heading: "Stepwise management of epistaxis",
+      columns: ["Step", "Action", "Notes"],
+      rows: [
+        ["1. Assess", "Pulse, blood pressure, pallor; intravenous access, haemoglobin, platelets, INR, group and save", "Airway first; a patient swallowing blood may aspirate"],
+        ["2. First aid", "Sit up leaning forward, mouth breathing, pinch the soft part of the nose for 10-15 minutes continuously, ice pack", "Do not tilt the head back; do not release early to check"],
+        ["3. Topical", "Pledget with 4% lidocaine and 1:1000 adrenaline or oxymetazoline for 5-10 minutes; topical tranexamic acid", "Clear clots and examine with a headlight and Thudichum speculum"],
+        ["4. Cautery", "Silver nitrate to the visible bleeding point for 5-10 seconds", "Never cauterise both sides of the septum at one sitting - perforation risk"],
+        ["5. Anterior pack", "Ribbon gauze in horizontal layers, or a nasal tampon or balloon, for 24-48 hours", "Antibiotic cover if the pack stays beyond 48 hours"],
+        ["6. Posterior pack", "Foley catheter balloon in the nasopharynx with anterior packing, or postnasal pack", "Admit and monitor - hypoxia, arrhythmia and vasovagal risk"],
+        ["7. Definitive", "Endoscopic sphenopalatine artery ligation or cautery, embolisation, anterior ethmoidal ligation", "Correct coagulopathy; weigh thrombotic risk before stopping anticoagulants"],
+      ],
+    },
+    {
+      heading: "Foreign bodies - site, presentation and rule",
+      columns: ["Site", "Typical presentation", "Rule to remember"],
+      rows: [
+        ["External ear canal", "Pain, blocked feeling, hearing loss, discharge; a witnessed insertion in a child", "Never syringe a vegetable foreign body, a suspected perforation, a grommet or a battery; kill a live insect first"],
+        ["Nose", "Unilateral foul, blood-stained discharge, often after weeks of antibiotics", "Unilateral discharge in a child is a foreign body until proved otherwise; try positive pressure ('mother's kiss')"],
+        ["Nose or oesophagus - button battery", "May be minimal symptoms initially", "Emergency: nasal septal necrosis within hours; oesophageal removal within 2 hours"],
+        ["Oesophagus", "Drooling, dysphagia, pain, refusal of feeds; coin in children, bolus or bone in adults", "Lodges at cricopharynx (commonest), aortic arch level, or diaphragmatic hiatus; rigid oesophagoscopy"],
+        ["Larynx and trachea", "Sudden choking, stridor, aphonia, cyanosis", "Back blows and abdominal thrusts (chest thrusts in infants); never a blind finger sweep"],
+        ["Bronchus", "Choking then a quiet interval, later cough, unilateral wheeze, recurrent pneumonia", "Right main bronchus is commoner; a normal chest radiograph does not exclude it - bronchoscopy on history"],
+      ],
+    },
+    {
+      heading: "Choking first aid by age",
+      columns: ["Age", "Effective cough", "Ineffective cough, conscious", "Unconscious"],
+      rows: [
+        ["Infant under 1 year", "Encourage coughing, do not intervene", "5 back blows then 5 chest thrusts, repeated; no abdominal thrusts", "Start CPR, inspect the mouth at each cycle, remove only a visible object"],
+        ["Child over 1 year", "Encourage coughing", "5 back blows then 5 abdominal thrusts, repeated", "Start CPR, inspect the mouth at each cycle"],
+        ["Adult", "Encourage coughing", "5 back blows then 5 abdominal thrusts (Heimlich), repeated", "Start CPR, inspect the mouth at each cycle; call for help early"],
+      ],
+    },
+  ],
+  redFlags: [
+    "Epistaxis with tachycardia, hypotension, pallor or blood streaming into the pharynx - posterior bleed with significant blood loss; resuscitate, pack posteriorly and admit.",
+    "Recurrent profuse unilateral epistaxis with nasal obstruction in an adolescent boy - juvenile nasopharyngeal angiofibroma; do not biopsy in the clinic, refer for contrast imaging.",
+    "Epistaxis with fever, petechiae or bruising - dengue, leukaemia, aplastic anaemia or another coagulopathy; check the platelet count before packing.",
+    "Button battery in the nose or oesophagus - liquefactive necrosis within hours and perforation; remove immediately, and within 2 hours for the oesophagus.",
+    "Sudden choking with stridor, aphonia or cyanosis - airway foreign body; back blows and thrusts, and urgent rigid bronchoscopy.",
+    "A convincing history of choking with a normal examination and normal chest radiograph - still bronchoscope; the radiograph is normal in a large minority of inhaled foreign bodies.",
+    "Drooling with dysphagia and inability to swallow saliva after ingestion - impacted oesophageal foreign body; keep nil by mouth and arrange urgent endoscopy.",
+    "Recurrent unilateral epistaxis or unilateral nasal obstruction in an adult - sinonasal or nasopharyngeal malignancy; nasal endoscopy is mandatory.",
+  ],
+  pearls: [
+    "Pinch the soft part of the nose, not the bony bridge, sit forward not back, and hold continuously for 10-15 minutes without peeping.",
+    "Ninety per cent of epistaxis comes from Little's area, where four arteries anastomose - name them in the answer.",
+    "Never cauterise both sides of the septum in the same sitting; the septum can perforate.",
+    "Hypertension aggravates and prolongs epistaxis but rarely initiates it - treat the bleeding first, then the blood pressure.",
+    "In an adolescent boy with recurrent unilateral epistaxis, think angiofibroma and never biopsy it in the clinic.",
+    "Never syringe an ear containing a vegetable foreign body, a battery, a grommet or a suspected perforation - the pea swells and the water does harm.",
+    "The first attempt at foreign body removal is the best one; after two failures, refer rather than turn a clinic procedure into a general anaesthetic.",
+    "A button battery is a chemical burn with a timer attached - minutes matter in the nose and hours are already too many in the oesophagus.",
+    "A unilateral foul nasal discharge in a child is a foreign body until the nose has been examined properly, whatever the previous antibiotic courses suggested.",
+  ],
+  theory: [
+    {
+      id: "eye-ent-epistaxis-foreign-bodies-t1",
+      paper: "III",
+      kind: "long",
+      marks: 10,
+      minutes: 20,
+      frequency: "common",
+      question:
+        "A 65-year-old hypertensive man on aspirin presents with profuse bleeding from both nostrils and is spitting out blood. Discuss the causes of epistaxis and describe its stepwise management in a primary care setting, including indications for referral.",
+      openingLines: [
+        "Epistaxis is bleeding from the nasal cavity and is classified as anterior, arising in about 90-95% of cases from Little's area on the anterior nasal septum, or posterior, arising from branches of the sphenopalatine artery and Woodruff's plexus.",
+        "Bleeding into the pharynx from both nostrils in an elderly hypertensive man on an antiplatelet drug suggests a posterior bleed, which can cause significant blood loss and requires resuscitation, packing and admission rather than simple first aid.",
+      ],
+      answer: [
+        {
+          heading: "1. Applied anatomy",
+          points: [
+            "Little's area on the anterior-inferior septum carries the Kiesselbach plexus, formed by the anterior ethmoidal artery (from the ophthalmic), the sphenopalatine and greater palatine arteries (from the maxillary), and the septal branch of the superior labial artery (from the facial).",
+            "Posterior bleeding arises from the sphenopalatine artery and its branches and from Woodruff's plexus in the posterior part of the inferior meatus.",
+          ],
+        },
+        {
+          heading: "2. Causes",
+          points: [
+            "Local: digital trauma, dry air, deviated septum with spur, rhinitis and sinusitis, foreign body, nasal steroid spray misdirected at the septum, trauma and fracture, and tumours including inverted papilloma, carcinoma and juvenile nasopharyngeal angiofibroma.",
+            "General: hypertension and atherosclerosis, anticoagulants, antiplatelets and NSAIDs, liver disease, chronic kidney disease, thrombocytopenia including dengue, leukaemia, aplastic anaemia, haemophilia and von Willebrand disease, and hereditary haemorrhagic telangiectasia.",
+            "Environmental and iatrogenic: high altitude, occupational irritants, and recent nasal surgery.",
+          ],
+        },
+        {
+          heading: "3. Immediate assessment and resuscitation",
+          points: [
+            "Airway first - blood in the pharynx risks aspiration; suction and position the patient upright and forward.",
+            "Assess pulse, blood pressure, capillary refill, pallor and estimated blood loss; establish intravenous access and start fluids if shocked.",
+            "Investigations: haemoglobin, platelet count, prothrombin time with INR, group and save or cross-match, and renal and liver function where indicated.",
+          ],
+        },
+        {
+          heading: "4. Stepwise control of bleeding",
+          points: [
+            "First aid (Trotter method): sit upright leaning forward, mouth breathing, spit out blood, pinch the soft cartilaginous part of the nose continuously for 10-15 minutes, with an ice pack to the bridge.",
+            "Topical: pledget with 4% lidocaine and 1:1000 adrenaline, or oxymetazoline, for 5-10 minutes; topical or intravenous tranexamic acid 500 mg to 1 g eight-hourly.",
+            "Cautery: silver nitrate applied to a visible anterior bleeding point for 5-10 seconds after clot clearance; never cauterise both sides of the septum at one sitting.",
+            "Anterior packing: ribbon gauze soaked in liquid paraffin or bismuth iodoform paraffin paste in horizontal layers from the floor upward, or a nasal tampon or balloon, left for 24-48 hours with antibiotic cover if retained beyond 48 hours.",
+            "Posterior packing: Foley catheter balloon inflated with 5-10 mL saline in the nasopharynx and withdrawn to engage the choana, with anterior packing and secure fixation avoiding alar necrosis; admit and monitor oxygenation.",
+            "Definitive: endoscopic sphenopalatine artery ligation or cautery, anterior ethmoidal artery ligation for high septal bleeds, or embolisation.",
+          ],
+        },
+        {
+          heading: "5. Treating the underlying cause",
+          points: [
+            "Control blood pressure once bleeding is controlled; hypertension prolongs rather than initiates the bleed.",
+            "Review antiplatelet and anticoagulant therapy - do not stop a therapeutic anticoagulant reflexively in a patient with a metallic valve or recent stent; correct an over-range INR with vitamin K or prothrombin complex concentrate as appropriate.",
+            "Correct thrombocytopenia and coagulopathy; treat dengue, liver disease or renal failure on their merits.",
+            "Nasal endoscopy in every adult with recurrent unilateral epistaxis to exclude a tumour, and imaging without biopsy for a suspected angiofibroma in an adolescent boy.",
+          ],
+        },
+        {
+          heading: "6. Referral and prevention",
+          points: [
+            "Refer or admit for posterior bleeding, haemodynamic instability, failure of anterior packing, bleeding with a coagulopathy or thrombocytopenia, suspected tumour, and epistaxis after facial trauma.",
+            "Prevention: petroleum jelly or antiseptic cream to Little's area twice daily for 2 weeks, humidification, nails cut short in children, avoidance of nose picking, correct nasal spray technique aiming away from the septum, and review of NSAID use.",
+          ],
+        },
+      ],
+      mustDraw: [
+        "A diagram of the nasal septum showing Little's area with the four contributing arteries labelled - anterior ethmoidal, sphenopalatine, greater palatine and septal branch of the superior labial artery.",
+        "A flow chart of stepwise management from first aid through cautery and anterior packing to posterior packing and arterial ligation.",
+      ],
+      markSplit: [
+        { part: "Anatomy of Little's area and posterior sources", marks: 2 },
+        { part: "Local and general causes", marks: 2 },
+        { part: "Resuscitation and stepwise control with technique", marks: 4 },
+        { part: "Treating the underlying cause, referral and prevention", marks: 2 },
+      ],
+      keywords: ["epistaxis", "Little's area", "anterior nasal packing", "sphenopalatine artery", "tranexamic acid"],
+    },
+    {
+      id: "eye-ent-epistaxis-foreign-bodies-t2",
+      paper: "III",
+      kind: "short-note",
+      marks: 5,
+      minutes: 10,
+      frequency: "common",
+      question: "Write short notes on foreign bodies in the ear, nose and air passages: presentation, principles of removal and complications.",
+      openingLines: [
+        "Foreign bodies in the ear, nose and air passages are commonest in children under 5 years, and in adults in the ear and oesophagus; the presentation is often a witnessed insertion, but many present late with unilateral discharge or with respiratory symptoms.",
+        "The principles are the same at every site: correct identification, one well-prepared removal attempt with the right instrument and adequate immobilisation, and prompt referral rather than repeated blind attempts.",
+      ],
+      answer: [
+        {
+          heading: "Ear",
+          points: [
+            "Presentation: pain, blockage, hearing loss, discharge, or a distressing sensation of movement with a live insect.",
+            "Removal: good headlight, largest speculum, a hook passed beyond a smooth round object and withdrawn, or crocodile forceps for compressible objects; kill a live insect first with 2% lidocaine, oil or spirit.",
+            "Contraindications to syringing: vegetable or organic foreign bodies (which swell), known or suspected tympanic membrane perforation, a grommet in situ, previous ear surgery, and any battery.",
+            "Complications: canal laceration and bleeding, oedema making later removal harder, tympanic membrane perforation, ossicular injury, secondary otitis externa, and the need for general anaesthesia after failed attempts.",
+          ],
+        },
+        {
+          heading: "Nose",
+          points: [
+            "Presentation: unilateral foul, often blood-stained nasal discharge, which in a child is a foreign body until proved otherwise; obstruction and epistaxis also occur.",
+            "Removal: topical vasoconstrictor and anaesthetic, then a hook passed above and behind the object and withdrawn, or the positive pressure 'mother's kiss' technique; never push the object backwards because of the risk of inhalation.",
+            "Button batteries and paired magnets are emergencies - liquefactive necrosis and septal perforation occur within hours.",
+            "Complications: septal perforation, synechiae, rhinolith formation around a long-retained object, sinusitis, and aspiration during removal.",
+          ],
+        },
+        {
+          heading: "Oesophagus",
+          points: [
+            "Lodges at the cricopharynx (commonest, about 15 cm from the incisors), at the level of the aortic arch and left main bronchus, and at the diaphragmatic hiatus.",
+            "Presentation: drooling, dysphagia, odynophagia, retrosternal pain, refusal of feeds in children.",
+            "Radiography of the neck and chest including a lateral view; a button battery shows a double ring or halo sign and must be removed within 2 hours.",
+            "Removal by rigid oesophagoscopy under general anaesthesia; complications include perforation, mediastinitis, retropharyngeal abscess and aorto-oesophageal fistula.",
+          ],
+        },
+        {
+          heading: "Air passages",
+          points: [
+            "Presentation: sudden choking and coughing, then often a symptom-free interval, followed by cough, unilateral wheeze, reduced air entry or recurrent pneumonia; laryngeal foreign bodies cause stridor, aphonia and cyanosis.",
+            "Right main bronchus is the commoner site because it is wider, shorter and more vertical.",
+            "Chest radiograph in expiration may show obstructive emphysema with mediastinal shift away from the affected side; a normal film does not exclude the diagnosis and bronchoscopy is justified on history alone.",
+            "First aid: encourage coughing while effective; otherwise 5 back blows and 5 abdominal thrusts in adults and children over 1 year, and 5 back blows with 5 chest thrusts in infants; never a blind finger sweep. Definitive removal is by rigid bronchoscopy.",
+            "Complications: asphyxia, atelectasis, obstructive emphysema, pneumonia, lung abscess and bronchiectasis with prolonged retention.",
+          ],
+        },
+      ],
+      mustDraw: [
+        "A diagram of the oesophagus marking the three physiological narrowings with their distances from the incisors, and the tracheobronchial tree showing the wider, shorter, more vertical right main bronchus.",
+      ],
+      markSplit: [
+        { part: "Ear - presentation, removal and contraindications to syringing", marks: 1.5 },
+        { part: "Nose including button battery emergency", marks: 1.5 },
+        { part: "Oesophagus - sites and management", marks: 1 },
+        { part: "Air passages - presentation, first aid and bronchoscopy", marks: 1 },
+      ],
+      keywords: ["foreign body", "button battery", "bronchoscopy", "mother's kiss", "cricopharynx"],
+    },
+  ],
+  mcqs: [
+    {
+      id: "eye-ent-epistaxis-foreign-bodies-q1",
+      stem: "A 12-year-old boy has a nosebleed from the right nostril. Which is the correct first aid instruction?",
+      options: [
+        "Lie flat with the head tilted back and pinch the bony bridge of the nose",
+        "Sit upright leaning forward, breathe through the mouth, and pinch the soft part of the nose continuously for 10-15 minutes",
+        "Sit upright with the head tilted back and swallow the blood to protect the airway",
+        "Pack the nostril immediately with cotton wool and send home",
+        "Apply ice to the nape of the neck and release the nose every 2 minutes to check",
+      ],
+      answer: 1,
+      explanation:
+        "Sitting upright and leaning forward keeps blood out of the pharynx, mouth breathing avoids dislodging clot, and continuous firm pressure on the soft cartilaginous part compresses Little's area, which is the source in about 90% of cases. Lying flat with the head tilted back sends blood into the pharynx, causing swallowing, vomiting and aspiration risk, and pinching the bony bridge applies pressure where there is no bleeding vessel. Swallowing blood conceals the volume lost and provokes vomiting. Blind cotton wool packing without vasoconstriction or a view rarely controls bleeding and traumatises the mucosa further when removed. Releasing pressure every two minutes prevents clot formation, and ice to the neck has no useful effect compared with sustained pressure.",
+      difficulty: "easy",
+    },
+    {
+      id: "eye-ent-epistaxis-foreign-bodies-q2",
+      stem: "A 15-year-old boy has had repeated profuse right-sided nosebleeds with progressive nasal obstruction over six months. Examination shows a pink mass filling the right nasal cavity. What must be avoided?",
+      options: [
+        "Contrast-enhanced CT of the paranasal sinuses",
+        "Biopsy of the mass in the outpatient clinic",
+        "Referral to an ENT surgeon",
+        "Full blood count and coagulation screen",
+        "Anterior nasal packing to control acute bleeding",
+      ],
+      answer: 1,
+      explanation:
+        "The picture is of juvenile nasopharyngeal angiofibroma, an extremely vascular benign tumour of adolescent boys, and an outpatient biopsy can cause torrential, occasionally fatal haemorrhage - the diagnosis is made by contrast imaging, which shows the characteristic widening of the pterygopalatine fossa and intense enhancement. CT with contrast is precisely the correct investigation, not something to avoid. ENT referral is essential. A blood count and coagulation screen are reasonable baseline tests in any patient with repeated bleeding. Anterior packing is a legitimate temporary measure to control active bleeding while definitive care is arranged.",
+      difficulty: "moderate",
+    },
+    {
+      id: "eye-ent-epistaxis-foreign-bodies-q3",
+      stem: "A 4-year-old is brought with a bead in the right external auditory canal, seen clearly on otoscopy, with an intact tympanic membrane. Which approach is most appropriate?",
+      options: [
+        "Syringe the ear with warm water",
+        "Grasp the bead with crocodile forceps",
+        "Pass a fine right-angled hook beyond the bead and withdraw it under direct vision",
+        "Instil olive oil for three days and review",
+        "Refer immediately for removal under general anaesthesia without any attempt",
+      ],
+      answer: 2,
+      explanation:
+        "A smooth, round, non-graspable object such as a bead is best removed by passing a fine hook beyond it under direct vision and drawing it out, since the hook engages behind the object rather than sliding off it. Syringing is possible for some inorganic objects but risks pushing a spherical object medially and is contraindicated with organic bodies, perforations, grommets and batteries. Crocodile forceps slip on a smooth hard sphere and typically push it deeper against the drum. Olive oil softens wax but does nothing to a bead and wastes time. Immediate general anaesthesia without any attempt is disproportionate when the object is clearly visible and the child can be held still, though referral is right after one or two failed attempts.",
+      difficulty: "easy",
+    },
+    {
+      id: "eye-ent-epistaxis-foreign-bodies-q4",
+      stem: "A 2-year-old is suspected of having inserted a button battery into the left nostril about an hour ago. What is the correct management?",
+      options: [
+        "Reassure and arrange removal on the next elective list",
+        "Instil saline drops and review in 24 hours",
+        "Immediate removal, treating it as an emergency because of liquefactive necrosis",
+        "Prescribe antibiotics and remove in 48 hours if symptoms persist",
+        "Advise the parents to attempt the mother's kiss technique at home over the next few days",
+      ],
+      answer: 2,
+      explanation:
+        "A button battery generates an electrical current and hydroxide at the negative pole, producing liquefactive necrosis of the nasal mucosa and septal perforation within hours, so removal must be immediate rather than scheduled. Elective listing, 24-hour review and a 48-hour antibiotic trial all allow irreversible septal destruction and possible saddle deformity. Saline drops keep the tissue moist and accelerate the electrochemical reaction. Positive pressure techniques may be useful for inert objects performed under supervision, but delegating a battery to parents over several days is unsafe.",
+      difficulty: "easy",
+    },
+    {
+      id: "eye-ent-epistaxis-foreign-bodies-q5",
+      stem: "A 2-year-old choked while eating peanuts three days ago, coughed violently, and then seemed well. He now has a persistent cough and a wheeze heard only over the right chest. The chest radiograph is reported as normal. What is the correct action?",
+      options: [
+        "Treat as asthma with a bronchodilator and review in a week",
+        "Treat as bronchiolitis with supportive care",
+        "Refer for rigid bronchoscopy on the strength of the history and unilateral signs",
+        "Repeat the chest radiograph in one month",
+        "Prescribe a course of antibiotics for aspiration pneumonia and reassess afterwards",
+      ],
+      answer: 2,
+      explanation:
+        "A witnessed choking episode followed by a symptom-free interval and then persistent cough with a unilateral wheeze is the classic sequence of an inhaled foreign body, usually in the right main bronchus, and a normal radiograph is common because most organic foreign bodies are radiolucent - bronchoscopy is therefore justified on history and signs alone. Treating as asthma delays diagnosis and does not explain strictly unilateral findings. Bronchiolitis affects younger infants, is bilateral and follows a viral prodrome. Repeating the film in a month allows granulation, atelectasis, bronchiectasis and abscess formation. Antibiotics may treat a secondary pneumonia but leave the peanut in place, and the pneumonia recurs.",
+      difficulty: "moderate",
+    },
+  ],
+  cards: [
+    {
+      id: "eye-ent-epistaxis-foreign-bodies-c1",
+      front: "Which arteries form the Kiesselbach plexus in Little's area?",
+      back: "Anterior ethmoidal (from ophthalmic), sphenopalatine and greater palatine (from maxillary), and the septal branch of the superior labial artery (from facial) - the source of about 90-95% of nosebleeds.",
+    },
+    {
+      id: "eye-ent-epistaxis-foreign-bodies-c2",
+      front: "Correct first aid for epistaxis (Trotter method).",
+      back: "Sit upright leaning forward, breathe through the mouth and spit out blood, pinch the soft cartilaginous part of the nose continuously for 10-15 minutes, with an ice pack to the bridge.",
+    },
+    {
+      id: "eye-ent-epistaxis-foreign-bodies-c3",
+      front: "Why must both sides of the septum never be cauterised at the same sitting?",
+      back: "Bilateral cautery devascularises the septal cartilage and can cause septal perforation; wait 4-6 weeks between sides.",
+    },
+    {
+      id: "eye-ent-epistaxis-foreign-bodies-c4",
+      front: "How long is an anterior nasal pack left, and when are antibiotics added?",
+      back: "24-48 hours; give antistaphylococcal cover such as co-amoxiclav if the pack remains beyond 48 hours, because of sinusitis and rare toxic shock syndrome.",
+    },
+    {
+      id: "eye-ent-epistaxis-foreign-bodies-c5",
+      front: "Recurrent profuse unilateral epistaxis with obstruction in an adolescent boy.",
+      back: "Juvenile nasopharyngeal angiofibroma - diagnose with contrast CT or MRI; never biopsy in the clinic because of the risk of torrential bleeding.",
+    },
+    {
+      id: "eye-ent-epistaxis-foreign-bodies-c6",
+      front: "When is ear syringing contraindicated?",
+      back: "Vegetable or organic foreign bodies (they swell), known or suspected perforation, grommet in situ, previous ear surgery, and any battery; also use body-temperature water to avoid caloric vertigo.",
+    },
+    {
+      id: "eye-ent-epistaxis-foreign-bodies-c7",
+      front: "Unilateral foul blood-stained nasal discharge in a child.",
+      back: "A retained nasal foreign body until the nose is examined properly - not sinusitis, whatever the previous antibiotic courses suggested.",
+    },
+    {
+      id: "eye-ent-epistaxis-foreign-bodies-c8",
+      front: "Three sites where oesophageal foreign bodies lodge.",
+      back: "Cricopharynx (commonest, about 15 cm from the incisors), the level of the aortic arch and left main bronchus, and the diaphragmatic hiatus; a button battery here must be removed within 2 hours.",
+    },
+    {
+      id: "eye-ent-epistaxis-foreign-bodies-c9",
+      front: "Choking first aid in an infant under 1 year versus an older child.",
+      back: "Infant: 5 back blows then 5 chest thrusts, no abdominal thrusts. Over 1 year and adults: 5 back blows then 5 abdominal thrusts. Never a blind finger sweep; start CPR if unconscious.",
+    },
+    {
+      id: "eye-ent-epistaxis-foreign-bodies-c10",
+      front: "Why does a normal chest radiograph not exclude an inhaled foreign body?",
+      back: "Most organic foreign bodies such as peanuts are radiolucent; expiratory films may show obstructive emphysema with mediastinal shift away, but a convincing history with unilateral signs justifies bronchoscopy regardless.",
+    },
+  ],
+  references: [
+    "PL Dhingra and Shruti Dhingra, Diseases of Ear, Nose and Throat and Head and Neck Surgery, 8th edition, 2021",
+    "Scott-Brown's Otorhinolaryngology, Head and Neck Surgery, 8th edition, 2018",
+    "American Academy of Otolaryngology-Head and Neck Surgery, Clinical Practice Guideline: Nosebleed (Epistaxis), 2020",
+    "European Resuscitation Council Guidelines 2021 - Basic Life Support, foreign body airway obstruction",
+    "National Capital Poison Center and NASPGHAN button battery ingestion guidelines, 2023",
+    "ESPGHAN and NASPGHAN Guideline, Management of Foreign Body Ingestion in Children, 2021",
+    "Standard Treatment Guidelines, Otorhinolaryngology, Ministry of Health and Family Welfare, Government of India",
+  ],
+});
+
+
 const cases: ClinicalCase[] = [
   {
     id: "eye-ent-case-1",

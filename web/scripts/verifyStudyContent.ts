@@ -54,7 +54,12 @@ section("Subjects and topics");
     for (const topic of subject.topics) {
       if (topicIds.has(topic.id)) fail(`duplicate topic id: ${topic.id}`);
       topicIds.add(topic.id);
-      if (!topic.id.startsWith(subject.id)) warn(`${topic.id}: id is not prefixed with "${subject.id}"`);
+      // A topic whose id belongs to another subject means a block was written
+      // into the wrong file — this has happened when several authoring agents
+      // edited neighbouring files at once, so it fails the build rather than
+      // warning.
+      if (!topic.id.startsWith(subject.id))
+        fail(`${subject.id}.ts contains topic "${topic.id}", which belongs to another subject`);
       if (!FREQS.has(topic.frequency)) fail(`${topic.id}: bad frequency "${topic.frequency}"`);
       if (topic.oneLiner.trim().length < 40) fail(`${topic.id}: oneLiner is too short to be an answer`);
       if (topic.sections.length < 3) warn(`${topic.id}: only ${topic.sections.length} sections`);
