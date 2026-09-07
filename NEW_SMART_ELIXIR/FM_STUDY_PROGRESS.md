@@ -58,9 +58,14 @@ Existing topics are never rewritten or shortened.
    git add web/src/study/content && git commit -m "WIP: FM Study content checkpoint" && git push origin claude/fm-study-material-app-y84obf
    ```
    (During a session an autosave loop does this every few minutes.)
-4. **Rate limits.** Run at most 6 authoring agents at once. When a 429
-   "session limit" appears, stop launching, checkpoint, and resume after the
-   reset time it names. Nothing on disk is lost by an interruption.
+4. **Rate limits.** Run at most 6 authoring agents at once, and tell every
+   agent NOT to read whole content files (they are 100-450 KB each; one full
+   read costs most of an agent's budget). Agents should use `grep -n '^  id:'`,
+   `head`, `tail`, and `sed -n '/^const cases/,/^export default/p'` on a
+   finished sibling for the closing-block shape. When a 429 "session limit"
+   appears, stop launching, checkpoint, and resume after the reset time it
+   names. Nothing on disk is lost by an interruption; if a file no longer
+   parses, delete everything from its `const cases` line onward and re-close.
 5. **Finish line.** When every subject prints OK with ≥ 8 topics and 2 cases:
    ```bash
    cd web && npx tsc -b && npm run verify:study && npm run lint && npm run build
@@ -97,9 +102,22 @@ original agent briefs; in short:
 
 ## Next steps (update this list as work lands)
 
-1. Close every PARTIAL file (cases + subject + export) so the whole app builds.
-2. Deepen the thin subjects to ≥ 8 topics by inserting before `const cases`.
-3. Author psychiatry (currently a stub).
-4. `tsc -b`, `verify:study`, `lint`, `build`, smoke test, final commit, push.
+State at last update (2026-09-07, after the third rate-limit reset): closed and
+compiling — cardiovascular 6, endocrine 10, infectious-fever 8, obstetrics 8,
+pediatrics 8, symptom-approach 9, emergency 3, eye-ent 1, fm-principles 4,
+geriatrics-ethics 1, gynaecology 3, neurology 3, surgery-office 1. Closers
+running for dermatology 1, musculoskeletal 2, preventive 8, renal-urology 1,
+gastro-hepatology 4, respiratory 7; psychiatry being authored from the stub.
+
+1. Confirm every file prints OK in `bash scripts/studyStatus.sh`; re-close any
+   that were cut off (truncate at `const cases` first if it no longer parses).
+2. First full build: `cd web && npx tsc -b && npm run verify:study && npm run build`.
+   Fix whatever the checker reports, commit, push.
+3. Deepen thin subjects to ≥ 8 topics (insert before `const cases`, one topic
+   per edit, verify after each), thinnest first: eye-ent, geriatrics-ethics,
+   surgery-office, dermatology, renal-urology, musculoskeletal, emergency,
+   neurology, gynaecology, fm-principles, gastro-hepatology, cardiovascular,
+   psychiatry, respiratory.
+4. Smoke test in a browser, final (non-WIP) commit, push.
 5. Optional clinical review pass: one adversarial reviewer per subject
    checking doses, cut-offs and MCQ keys; apply confirmed fixes.
