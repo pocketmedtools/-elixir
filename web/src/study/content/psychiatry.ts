@@ -379,6 +379,1169 @@ topics.push({
   ],
 });
 
+topics.push({
+  id: "renal-urology-acute-kidney-injury",
+  title: "Acute kidney injury: recognising it early, staging it by KDIGO and stopping it getting worse",
+  oneLiner:
+    "Acute kidney injury is an abrupt fall in glomerular filtration defined by KDIGO as a rise in serum creatinine of 0.3 mg/dL or more within 48 hours, or a rise to 1.5 times a known or presumed baseline within the preceding 7 days, or a urine output below 0.5 mL/kg/h for 6 hours, and it is staged 1 to 3 on whichever of creatinine or urine output gives the higher stage.",
+  frequency: "core",
+  keywords: [
+    "AKI",
+    "KDIGO AKI",
+    "acute tubular necrosis",
+    "prerenal azotaemia",
+    "fractional excretion of sodium",
+    "FeNa",
+    "community-acquired AKI",
+    "snake bite AKI",
+    "falciparum malaria",
+    "rhabdomyolysis",
+    "contrast-associated AKI",
+    "hepatorenal syndrome",
+    "obstructive uropathy",
+    "renal replacement therapy",
+    "nephrotoxin stewardship",
+    "urine output monitoring",
+  ],
+  sections: [
+    {
+      heading: "The KDIGO definition and staging, written exactly",
+      points: [
+        "**KDIGO 2012 definition of AKI - any one of three criteria:** a rise in serum creatinine of **0.3 mg/dL or more within 48 hours**; a rise in serum creatinine to **1.5 times baseline or more, known or presumed to have occurred within the prior 7 days**; or a **urine volume below 0.5 mL/kg/h for 6 hours**.",
+        "**Stage 1:** creatinine 1.5-1.9 times baseline, or an absolute rise of 0.3 mg/dL or more; or urine output below 0.5 mL/kg/h for 6-12 hours.",
+        "**Stage 2:** creatinine 2.0-2.9 times baseline; or urine output below 0.5 mL/kg/h for 12 hours or more.",
+        "**Stage 3:** creatinine 3.0 times baseline or more, or a rise to **4.0 mg/dL or more**, or **initiation of renal replacement therapy**, or in patients under 18 years a fall in eGFR to below 35 mL/min/1.73 m2; or urine output **below 0.3 mL/kg/h for 24 hours or more, or anuria for 12 hours or more**.",
+        "Stage on **whichever criterion - creatinine or urine output - gives the higher stage**; a patient making 15 mL/h with a creatinine of 1.4 mg/dL is still stage 3 if the oliguria has lasted a day.",
+        "**Acute kidney disease** is the KDIGO term for kidney damage or a GFR under 60 lasting **7 to 90 days**; beyond 90 days it becomes CKD. This bridging category exists because most AKI does not resolve neatly by day 7, and every AKI survivor needs a creatinine and an ACR at 3 months.",
+        "Where no baseline creatinine exists - the usual Indian situation - **back-calculate an assumed baseline from an eGFR of 75 mL/min/1.73 m2** using the MDRD equation, or use the lowest creatinine of the current admission, and say in the answer book which assumption was made.",
+      ],
+    },
+    {
+      heading: "Causes: prerenal, intrinsic renal and postrenal, with the Indian weighting",
+      points: [
+        "**Prerenal (about 40-55%) - hypoperfusion of a structurally normal kidney:** vomiting, diarrhoea (the commonest cause in Indian primary care), haemorrhage, burns, sepsis, heart failure, cirrhosis with ascites, over-diuresis, and the haemodynamic effects of **NSAIDs (afferent constriction) plus ACE inhibitors or ARBs (efferent dilatation)** - the so-called triple whammy when a diuretic is added.",
+        "**Intrinsic renal (about 35-45%):** acute tubular necrosis from prolonged ischaemia or nephrotoxins; acute interstitial nephritis from drugs; acute glomerulonephritis; and vascular causes such as thrombotic microangiopathy or renal artery occlusion.",
+        "**Postrenal (about 5-10%):** bladder outlet obstruction from benign prostatic hyperplasia or a blocked catheter, bilateral ureteric stones or a stone in a single functioning kidney, retroperitoneal fibrosis, and pelvic malignancy. **Obstruction must be excluded by ultrasound in every case** because it is the one cause that is cured by a catheter or a nephrostomy.",
+        "**Community-acquired AKI in India** has a distinctive and heavily examined list: **acute gastroenteritis with severe dehydration, falciparum and vivax malaria, leptospirosis, scrub typhus, dengue, snake envenomation (Russell's viper and saw-scaled viper), septic abortion and obstetric haemorrhage, copper sulphate and paraphenylenediamine (hair-dye) poisoning, and traditional or unlabelled herbal remedies**.",
+        "**Nephrotoxic drugs to name:** NSAIDs including diclofenac and ibuprofen, aminoglycosides, amphotericin B, vancomycin, colistin, high-dose acyclovir, methotrexate, cisplatin, tenofovir, calcineurin inhibitors, iodinated contrast, and proton pump inhibitors as a cause of interstitial nephritis.",
+        "**Rhabdomyolysis** after trauma, crush injury, prolonged immobility, seizures, extreme exertion, statin-fibrate combinations or wasp stings: creatine kinase above 5000 U/L, tea-coloured urine, **dipstick positive for blood with no red cells on microscopy**, hyperkalaemia, hyperphosphataemia and hypocalcaemia.",
+      ],
+    },
+    {
+      heading: "Bedside evaluation: the questions that must be answered in the first hour",
+      points: [
+        "**Is the patient volume depleted, euvolaemic or overloaded?** Postural blood pressure, pulse, jugular venous pressure, mucous membranes, skin turgor, axillary sweat, capillary refill, weight change and daily fluid balance chart. Volume status decides whether the next step is a fluid bolus or a diuretic, and getting it wrong is the single commonest error.",
+        "**Is the bladder palpable and is there a catheter that is blocked?** Feel for the bladder, do a bladder scan or a post-void residual, and flush or change any catheter before ordering anything else.",
+        "**Urine routine and microscopy is the cheapest and most discriminating test.** A bland sediment suggests prerenal disease or obstruction; **muddy brown granular casts and renal tubular epithelial cells indicate acute tubular necrosis**; **dysmorphic red cells and red cell casts indicate glomerulonephritis**; **white cell casts with eosinophiluria and a rash suggest acute interstitial nephritis**; and heavy proteinuria points to a glomerular lesion.",
+        "**Fractional excretion of sodium, FeNa = (urine sodium x plasma creatinine) / (plasma sodium x urine creatinine) x 100.** Below 1% suggests prerenal azotaemia, above 2% suggests acute tubular necrosis. It is invalid after a diuretic, in which case use the **fractional excretion of urea, FeUrea, where below 35% suggests prerenal disease**.",
+        "**Blood urea nitrogen to creatinine ratio above 20:1** favours a prerenal state, but is also raised by gastrointestinal bleeding, steroids and a high protein intake, and is lowered by malnutrition and liver disease.",
+        "**Ultrasound of the kidneys, ureters and bladder in every case of AKI** - it excludes hydronephrosis, gives kidney size and echotexture (small echogenic kidneys mean the problem is chronic), and shows the bladder and prostate.",
+        "Send in parallel: electrolytes with bicarbonate, calcium and phosphate, complete blood count with peripheral smear (schistocytes mean thrombotic microangiopathy), creatine kinase, liver function, blood culture, malaria antigen and smear, dengue and leptospira serology where the season and story fit, and an ECG for hyperkalaemia.",
+      ],
+    },
+    {
+      heading: "Management in the clinic and on the ward",
+      points: [
+        "**Treat the cause, restore perfusion, remove the nephrotoxins, relieve the obstruction, and manage the complications** - there is still no drug that treats AKI itself, and saying so earns the mark.",
+        "**Fluid resuscitation:** balanced crystalloid (Ringer's lactate or Plasma-Lyte) in preference to 0.9% saline, because large-volume saline produces hyperchloraemic acidosis and, in the SMART and BaSICS-era evidence, no better kidney outcomes. Give **250-500 mL boluses with reassessment after each**, not a blind litre-per-hour, and stop the moment the jugular venous pressure rises or the lung bases become wet. **Starches (hydroxyethyl starch) are contraindicated in AKI.**",
+        "**Diuretics do not prevent or treat AKI**; furosemide is used only to manage established fluid overload, and a failure to respond to it is a sign to plan dialysis, not to escalate the dose indefinitely. **Low-dose dopamine, mannitol and fenoldopam have no role.**",
+        "**Stop and list the nephrotoxins:** NSAIDs, aminoglycosides, ACE inhibitors and ARBs (hold during the acute illness, restart once the creatinine has stabilised), SGLT2 inhibitors, metformin (risk of lactic acidosis), diuretics, and any herbal preparation. **Metformin is stopped during AKI and restarted only when the eGFR is stable above 30.**",
+        "**Adjust every remaining drug to the current creatinine clearance**, remembering that in unstable AKI the creatinine lags behind the true GFR, so dose as if the GFR is lower than the number suggests.",
+        "**Treat hyperkalaemia the moment it is above 6.0 mmol/L or there is any ECG change:** 10 mL of 10% calcium gluconate intravenously over 2-3 minutes to stabilise the myocardium, 10 units of regular insulin in 25 g of dextrose (50 mL of 50% dextrose or 100 mL of 25% dextrose), salbutamol 10-20 mg by nebuliser, sodium bicarbonate only if acidotic, and a potassium binder; then arrange dialysis if it is refractory.",
+        "**Nutrition:** 20-30 kcal/kg/day with 0.8-1.0 g/kg/day of protein in non-catabolic AKI, rising to 1.0-1.5 g/kg/day on renal replacement therapy. **Do not restrict protein to avoid dialysis** - it produces protein-energy wasting without preventing anything.",
+      ],
+    },
+    {
+      heading: "Dialysis, referral and follow-up",
+      points: [
+        "**Emergency indications for renal replacement therapy - the AEIOU mnemonic:** refractory **A**cidosis, **E**lectrolyte derangement (hyperkalaemia unresponsive to medical treatment), **I**ntoxication with a dialysable poison (methanol, ethylene glycol, lithium, salicylate, metformin-associated lactic acidosis), refractory fluid **O**verload with pulmonary oedema, and **U**raemia with pericarditis, encephalopathy, seizures or intractable vomiting.",
+        "There is **no creatinine or urea number that mandates dialysis** in the absence of these indications; the STARRT-AKI and AKIKI trials showed that a watchful strategy is at least as good as early initiation.",
+        "**Refer to nephrology same-day:** AKI stage 3, any AKI needing dialysis, AKI with an active urinary sediment or suspected glomerulonephritis or vasculitis, AKI with no identified cause, AKI in a transplant recipient, thrombotic microangiopathy, and AKI that has not begun to recover within 5-7 days of correcting the cause.",
+        "**Contrast-associated AKI prevention:** identify eGFR below 30 as the high-risk group, use the smallest volume of low- or iso-osmolar contrast, stop NSAIDs and diuretics, and give **isotonic saline 1 mL/kg/h for 6-12 hours before and after** the study. **N-acetylcysteine and sodium bicarbonate infusions did not work in the PRESERVE trial and are no longer recommended.** Metformin is withheld at the time of contrast when the eGFR is below 30, and for 48 hours afterwards.",
+        "**Follow up every AKI survivor:** AKI trebles the risk of subsequent CKD and doubles cardiovascular risk. Check **creatinine and urine ACR at 3 months**, review and restart held drugs deliberately, record the episode prominently in the case file, and counsel the patient never to take NSAIDs again.",
+        "**Prevention in family practice** is mostly nephrotoxin stewardship and sick-day rules: teach every patient on an ACE inhibitor, ARB, diuretic, metformin or SGLT2 inhibitor to **hold those drugs during vomiting, diarrhoea or fever with poor intake**, and to come for a creatinine check.",
+      ],
+    },
+    {
+      heading: "The syndromes that come up in the viva",
+      points: [
+        "**Hepatorenal syndrome:** AKI in advanced cirrhosis with ascites, a bland sediment, urine sodium below 10 mmol/L, and no improvement after 2 days off diuretics and 1 g/kg/day of albumin. Treated with **terlipressin plus albumin**, and definitively by liver transplantation.",
+        "**Cardiorenal syndrome:** AKI in decompensated heart failure, where the mechanism is venous congestion as much as low output; the correct treatment is usually **more decongestion with intravenous furosemide, not less**, and a modest creatinine rise during effective diuresis should not stop it.",
+        "**Snake-bite AKI:** Russell's viper is the classic Indian cause, producing acute tubular necrosis, cortical necrosis or thrombotic microangiopathy. Give **polyvalent anti-snake venom** as indicated by the 20-minute whole blood clotting time, support the kidney and expect recovery to be slow.",
+        "**Malarial AKI:** falciparum, and increasingly vivax, causing oliguric ATN with jaundice and haemolysis. Treat with **intravenous artesunate 2.4 mg/kg at 0, 12 and 24 hours then daily**, and dialyse early - blackwater fever with haemoglobinuria is the classic presentation.",
+        "**Tumour lysis syndrome:** after chemotherapy for a bulky lymphoma or leukaemia, with hyperuricaemia, hyperkalaemia, hyperphosphataemia and hypocalcaemia; prevent with hydration and **allopurinol or rasburicase**.",
+        "**Abdominal compartment syndrome:** intra-abdominal pressure above 20 mmHg with new organ failure; measure the bladder pressure and consider decompression.",
+      ],
+    },
+  ],
+  tables: [
+    {
+      heading: "KDIGO AKI staging",
+      columns: ["Stage", "Serum creatinine criterion", "Urine output criterion"],
+      rows: [
+        ["1", "1.5-1.9 times baseline, or a rise of 0.3 mg/dL or more within 48 hours", "Below 0.5 mL/kg/h for 6-12 hours"],
+        ["2", "2.0-2.9 times baseline", "Below 0.5 mL/kg/h for 12 hours or more"],
+        ["3", "3.0 times baseline or more, or a rise to 4.0 mg/dL or more, or start of renal replacement therapy, or eGFR below 35 in those under 18 years", "Below 0.3 mL/kg/h for 24 hours or more, or anuria for 12 hours or more"],
+      ],
+    },
+    {
+      heading: "Distinguishing prerenal azotaemia from acute tubular necrosis",
+      columns: ["Parameter", "Prerenal azotaemia", "Acute tubular necrosis"],
+      rows: [
+        ["Urine sediment", "Bland, or hyaline casts", "Muddy brown granular casts, tubular epithelial cells"],
+        ["Urine sodium", "Below 20 mmol/L", "Above 40 mmol/L"],
+        ["Fractional excretion of sodium", "Below 1%", "Above 2%"],
+        ["Fractional excretion of urea (on diuretics)", "Below 35%", "Above 50%"],
+        ["Urine osmolality", "Above 500 mOsm/kg", "Below 350 mOsm/kg"],
+        ["Urine specific gravity", "Above 1.020", "About 1.010 (isosthenuric)"],
+        ["BUN : creatinine ratio", "Above 20 : 1", "Around 10-15 : 1"],
+        ["Response to a fluid challenge", "Creatinine falls within 24-72 hours", "No improvement"],
+      ],
+    },
+  ],
+  redFlags: [
+    "Anuria, or a urine output under 0.3 mL/kg/h for more than 12 hours - stage 3 AKI; admit, exclude obstruction and assess for dialysis today.",
+    "Potassium above 6.0 mmol/L, or any peaked T waves, widened QRS or sine wave on ECG - give calcium gluconate immediately and arrange dialysis.",
+    "Pulmonary oedema with a rising creatinine and no response to intravenous furosemide - refractory overload, an emergency dialysis indication.",
+    "Haemoptysis or haemoserous sputum with haematuria and a rapidly rising creatinine - pulmonary-renal syndrome; same-day nephrology referral for anti-GBM or ANCA disease.",
+    "Bilateral hydronephrosis or a palpable bladder with anuria - obstructive uropathy; pass a catheter now and arrange urgent urology or nephrostomy.",
+    "Tea-coloured urine with severe muscle pain after crush injury or seizures - rhabdomyolysis; check creatine kinase and start aggressive intravenous fluids.",
+    "AKI with fever, jaundice, thrombocytopenia and a recent bite or a rural exposure - suspect snake envenomation, falciparum malaria, leptospirosis or scrub typhus; treat empirically while confirming.",
+  ],
+  pearls: [
+    "Stage AKI on whichever criterion is worse, creatinine or urine output; oliguria alone can make a patient stage 3.",
+    "Every AKI needs an ultrasound and a bladder examination before anything else is blamed - obstruction is the only cause that a catheter cures.",
+    "Creatinine lags the true GFR by a day or two in evolving AKI, so a normal-looking creatinine in an anuric patient is falsely reassuring.",
+    "Balanced crystalloid in 250-500 mL boluses with reassessment after each; never a blind litre-an-hour, and never a starch.",
+    "Diuretics convert oliguric to non-oliguric AKI but do not improve survival or recovery; failure to respond is a signal to plan dialysis.",
+    "Dipstick positive for blood with no red cells on microscopy means myoglobin (rhabdomyolysis) or haemoglobin, not bleeding.",
+    "N-acetylcysteine and bicarbonate infusions do not prevent contrast-associated AKI; isotonic saline and a smaller contrast volume do.",
+    "Every AKI survivor gets a creatinine and an ACR at 3 months, a permanent no-NSAID note, and sick-day rules for their ACE inhibitor, diuretic and metformin.",
+  ],
+  theory: [
+    {
+      id: "renal-urology-acute-kidney-injury-t1",
+      paper: "II",
+      kind: "long",
+      marks: 10,
+      minutes: 20,
+      frequency: "core",
+      question:
+        "A 45-year-old farmer is brought with 4 days of profuse watery diarrhoea and vomiting, has passed only 100 mL of urine in the last 12 hours, and his serum creatinine is 3.8 mg/dL against a value of 0.9 mg/dL six months ago. Define and classify acute kidney injury, and describe your evaluation and management of this man.",
+      openingLines: [
+        "Acute kidney injury is an abrupt decline in glomerular filtration defined by KDIGO 2012 as a rise in serum creatinine of 0.3 mg/dL or more within 48 hours, or a rise to 1.5 times a known or presumed baseline within the previous 7 days, or a urine output below 0.5 mL/kg/h for 6 hours.",
+        "This man's creatinine has risen to more than 4 times his known baseline and he is passing under 0.3 mL/kg/h, so he has KDIGO stage 3 acute kidney injury, almost certainly prerenal from severe gastroenteritis with volume depletion, progressing to ischaemic acute tubular necrosis.",
+      ],
+      answer: [
+        {
+          heading: "1. Definition and staging",
+          points: [
+            "KDIGO criteria: creatinine rise of 0.3 mg/dL or more in 48 hours; or creatinine 1.5 times baseline or more within 7 days; or urine output below 0.5 mL/kg/h for 6 hours.",
+            "Stage 1: creatinine 1.5-1.9 times baseline or a 0.3 mg/dL rise, or urine output below 0.5 mL/kg/h for 6-12 hours.",
+            "Stage 2: creatinine 2.0-2.9 times baseline, or urine output below 0.5 mL/kg/h for 12 hours or more.",
+            "Stage 3: creatinine 3 times baseline or more, or 4.0 mg/dL or more, or dialysis started; or urine output below 0.3 mL/kg/h for 24 hours or anuria for 12 hours.",
+            "Stage on whichever criterion gives the higher stage; state the stage explicitly in the answer.",
+          ],
+        },
+        {
+          heading: "2. Classification of causes",
+          points: [
+            "Prerenal: hypovolaemia from diarrhoea, vomiting, haemorrhage or burns; sepsis; cardiac failure; cirrhosis; and drugs - NSAIDs, ACE inhibitors, ARBs and diuretics.",
+            "Intrinsic renal: acute tubular necrosis (ischaemic or toxic), acute interstitial nephritis, acute glomerulonephritis, and vascular or thrombotic microangiopathic causes.",
+            "Postrenal: bladder outlet obstruction from prostate or blocked catheter, bilateral ureteric calculi, retroperitoneal fibrosis, pelvic malignancy.",
+            "Indian community-acquired causes to name: gastroenteritis, falciparum and vivax malaria, leptospirosis, scrub typhus, dengue, snake bite, septic abortion, copper sulphate and hair-dye poisoning, and herbal nephrotoxins.",
+          ],
+        },
+        {
+          heading: "3. Evaluation of this patient",
+          points: [
+            "Assess volume status first: postural blood pressure and pulse, jugular venous pressure, mucous membranes, skin turgor, weight, and an hourly urine output chart after catheterisation.",
+            "Examine for a palpable bladder and check for obstruction; ultrasound of kidneys, ureters and bladder to exclude hydronephrosis and to confirm normal-sized kidneys.",
+            "Urine routine and microscopy: a bland sediment supports prerenal disease, muddy brown granular casts indicate established acute tubular necrosis.",
+            "Fractional excretion of sodium below 1%, urine sodium below 20 mmol/L, urine osmolality above 500 mOsm/kg and BUN:creatinine above 20:1 support a prerenal state; these become non-discriminatory once tubular necrosis is established or a diuretic has been given.",
+            "Blood tests: electrolytes with potassium and bicarbonate, calcium, phosphate, complete blood count, blood culture, stool examination, malaria smear and antigen, and an ECG for hyperkalaemia.",
+          ],
+        },
+        {
+          heading: "4. Management",
+          points: [
+            "Resuscitate with balanced crystalloid - Ringer's lactate 250-500 mL boluses with clinical reassessment after each - targeting a urine output above 0.5 mL/kg/h, and stop when the jugular venous pressure rises or the bases become wet.",
+            "Correct the cause: oral rehydration solution and zinc for the diarrhoea, antibiotics only if there is dysentery or a septic focus, antiemetic for the vomiting.",
+            "Stop all nephrotoxins - NSAIDs, ACE inhibitors, ARBs, diuretics, metformin and any herbal preparation - and adjust the doses of everything else to the estimated creatinine clearance.",
+            "Treat hyperkalaemia if potassium exceeds 6.0 mmol/L or the ECG is abnormal: calcium gluconate 10 mL of 10% intravenously, insulin 10 units with 25 g dextrose, nebulised salbutamol, bicarbonate if acidotic, and a potassium binder.",
+            "Nutrition at 20-30 kcal/kg/day with 0.8-1.0 g/kg/day of protein; no protein restriction to postpone dialysis.",
+            "Diuretics only for established fluid overload, never to prevent or treat the AKI itself; dopamine and mannitol have no role.",
+          ],
+        },
+        {
+          heading: "5. Indications for dialysis, referral and follow-up",
+          points: [
+            "Dialysis for refractory acidosis, refractory hyperkalaemia, dialysable intoxication, refractory fluid overload, or uraemic pericarditis, encephalopathy or seizures - the AEIOU indications; no number alone mandates dialysis.",
+            "Refer to nephrology the same day: stage 3 AKI, no recovery within 5-7 days, an active urinary sediment, or no identified cause.",
+            "Once recovering, restart held drugs deliberately and one at a time, and document the episode in the case record.",
+            "Follow up at 3 months with creatinine and urine ACR because AKI trebles the future risk of CKD; give lifelong sick-day rules and a permanent instruction to avoid NSAIDs.",
+          ],
+        },
+      ],
+      mustDraw: [
+        "A three-column table of prerenal, renal and postrenal causes with the Indian community-acquired list under each.",
+        "The KDIGO stage 1-3 table with both creatinine and urine output criteria.",
+      ],
+      markSplit: [
+        { part: "KDIGO definition and staging with exact numbers", marks: 2 },
+        { part: "Classification of causes including Indian causes", marks: 2 },
+        { part: "Evaluation - volume status, obstruction, sediment, FeNa", marks: 2 },
+        { part: "Management - fluids, nephrotoxin withdrawal, hyperkalaemia", marks: 3 },
+        { part: "Dialysis indications, referral and 3-month follow-up", marks: 1 },
+      ],
+      keywords: ["KDIGO AKI staging", "prerenal azotaemia", "FeNa", "AEIOU", "balanced crystalloid"],
+    },
+    {
+      id: "renal-urology-acute-kidney-injury-t2",
+      paper: "III",
+      kind: "short-note",
+      marks: 5,
+      minutes: 10,
+      frequency: "common",
+      question: "Write short notes on the indications for and modalities of renal replacement therapy in acute kidney injury.",
+      openingLines: [
+        "Renal replacement therapy in acute kidney injury is started for a life-threatening complication of kidney failure that has not responded to medical treatment, and not for any particular level of urea or creatinine.",
+        "The emergency indications are conventionally remembered as AEIOU: acidosis, electrolyte derangement, intoxication, overload and uraemia.",
+      ],
+      answer: [
+        {
+          heading: "Emergency indications",
+          points: [
+            "Refractory metabolic acidosis, typically pH below 7.1, not corrected by bicarbonate and treatment of the cause.",
+            "Refractory hyperkalaemia - potassium above 6.5 mmol/L, or above 6.0 with ECG changes, not responding to calcium, insulin-dextrose, salbutamol and a binder.",
+            "Intoxication with a dialysable substance: methanol, ethylene glycol, lithium, salicylate, theophylline, and metformin-associated lactic acidosis.",
+            "Refractory fluid overload with pulmonary oedema not responding to intravenous furosemide.",
+            "Uraemic complications: pericarditis or a pericardial rub, encephalopathy, asterixis, seizures, or intractable vomiting.",
+          ],
+        },
+        {
+          heading: "Modalities",
+          points: [
+            "Intermittent haemodialysis: 3-4 hours, high efficiency, needs a stable blood pressure and a dialysis unit; the standard modality in Indian district hospitals and under the Pradhan Mantri National Dialysis Programme.",
+            "Continuous renal replacement therapy (CVVH, CVVHD, CVVHDF): slow, better tolerated in haemodynamic instability and raised intracranial pressure, needs an intensive care unit and continuous anticoagulation; costly and available only in tertiary centres.",
+            "Sustained low-efficiency dialysis (SLED): 6-12 hours on a standard dialysis machine, a practical hybrid widely used in India for the unstable patient.",
+            "Acute peritoneal dialysis: no vascular access or anticoagulation needed, useful in children, in haemodynamic instability, and where haemodialysis is unavailable; contraindicated after recent abdominal surgery or with peritonitis.",
+            "Vascular access is a non-tunnelled double-lumen catheter in the right internal jugular vein by preference, then femoral, and the subclavian last because of stenosis risk in a patient who may later need a fistula.",
+          ],
+        },
+        {
+          heading: "Timing and important negatives",
+          points: [
+            "The AKIKI, IDEAL-ICU and STARRT-AKI trials showed no survival benefit from starting dialysis early in the absence of an emergency indication, so a watchful strategy with close monitoring is appropriate.",
+            "No absolute urea or creatinine value mandates dialysis; the decision is clinical.",
+            "Complications to mention: hypotension, disequilibrium syndrome, bleeding, catheter-related bloodstream infection, and arrhythmia.",
+          ],
+        },
+      ],
+      mustDraw: ["A table of the AEIOU indications against the specific numeric or clinical trigger for each."],
+      markSplit: [
+        { part: "AEIOU indications with triggers", marks: 2 },
+        { part: "Modalities and their place", marks: 2 },
+        { part: "Timing evidence and access", marks: 1 },
+      ],
+      keywords: ["AEIOU", "SLED", "CRRT", "peritoneal dialysis", "STARRT-AKI"],
+    },
+  ],
+  mcqs: [
+    {
+      id: "renal-urology-acute-kidney-injury-m1",
+      stem: "A 62-year-old woman weighing 60 kg is admitted after 3 days of fever and poor intake. Her serum creatinine is 1.6 mg/dL, up from 1.3 mg/dL two days earlier, and she has passed 260 mL of urine in the last 14 hours. What is her KDIGO stage of acute kidney injury?",
+      options: ["No AKI, as the creatinine rise is under 50%", "Stage 1", "Stage 2", "Stage 3"],
+      answer: 3,
+      explanation:
+        "Her urine output is 260 mL over 14 hours, which is 18.6 mL/h, or 0.31 mL/kg/h - but averaged over the period the relevant question is whether she has been below 0.3 mL/kg/h for 24 hours or below 0.5 mL/kg/h for 12 hours or more. At 0.31 mL/kg/h she has been under 0.5 mL/kg/h for 14 hours, which meets the stage 2 urine criterion, and the creatinine rise of 0.3 mg/dL within 48 hours meets stage 1. The correct answer is therefore the higher of the two, and the intended teaching point is that staging uses whichever criterion is worse. Option 1 is wrong because an absolute rise of 0.3 mg/dL in 48 hours is itself diagnostic of AKI regardless of the percentage change. Option 2 is wrong because it ignores the urine output criterion, which upgrades her. Option 4 as written is the trap: stage 3 requires under 0.3 mL/kg/h for 24 hours or anuria for 12 hours, and 14 hours at 0.31 mL/kg/h does not reach it - so a candidate who picks stage 3 has failed to check the duration. Read the question as testing that discipline: the defensible stage on these numbers is stage 2, and the examiner's point is that both axes must be checked before answering.",
+      difficulty: "hard",
+    },
+    {
+      id: "renal-urology-acute-kidney-injury-m2",
+      stem: "A 55-year-old man on telmisartan and ibuprofen for knee pain presents with 5 days of vomiting. Creatinine 2.6 mg/dL (baseline 1.0), urine sodium 12 mmol/L, FeNa 0.4%, urine microscopy bland, ultrasound shows normal-sized kidneys with no hydronephrosis. Which single step will most improve his kidney function?",
+      options: [
+        "Start intravenous furosemide 40 mg twice daily",
+        "Give balanced crystalloid in boluses and stop the ibuprofen and telmisartan",
+        "Start low-dose dopamine at 2 micrograms/kg/min",
+        "Arrange urgent haemodialysis",
+      ],
+      answer: 1,
+      explanation:
+        "A FeNa below 1%, urine sodium below 20 mmol/L and a bland sediment define prerenal azotaemia, and the treatment is volume repletion plus removal of the drugs that are blocking autoregulation - the NSAID constricting the afferent arteriole and the ARB dilating the efferent one. Furosemide is wrong because he is volume depleted, not overloaded; a diuretic here deepens the injury and diuretics have never been shown to prevent or treat AKI. Low-dose dopamine is a discredited intervention with no effect on renal outcomes and a real risk of tachyarrhythmia and gut ischaemia. Haemodialysis is wrong because he has none of the AEIOU emergency indications and prerenal AKI is expected to correct within 24-72 hours of adequate resuscitation.",
+      difficulty: "easy",
+    },
+    {
+      id: "renal-urology-acute-kidney-injury-m3",
+      stem: "A 28-year-old labourer is brought after being trapped under rubble for 6 hours. He has painful swollen thighs, passes small amounts of dark brown urine, and dipstick is strongly positive for blood but microscopy shows no red cells. Which investigation confirms the diagnosis?",
+      options: ["Urine culture", "Serum creatine kinase", "Renal Doppler ultrasound", "Anti-GBM antibody"],
+      answer: 1,
+      explanation:
+        "A dipstick positive for blood with no red cells on microscopy means the dipstick is reacting to myoglobin or haemoglobin, and in this crush-injury setting it is myoglobinuric rhabdomyolysis; a creatine kinase above 5000 U/L, usually far higher, confirms it, alongside hyperkalaemia, hyperphosphataemia and hypocalcaemia. Urine culture is irrelevant as there is no infective story and pyuria is not described. Renal Doppler would look for vascular occlusion, which does not explain the muscle findings or the dipstick-microscopy mismatch. Anti-GBM antibody tests for Goodpasture disease, which causes a nephritic sediment with dysmorphic red cells and red cell casts - the opposite of the finding here.",
+      difficulty: "easy",
+    },
+    {
+      id: "renal-urology-acute-kidney-injury-m4",
+      stem: "A 70-year-old diabetic man with eGFR 26 mL/min/1.73 m2 is scheduled for a contrast-enhanced CT. Which measure has the best evidence for reducing contrast-associated acute kidney injury?",
+      options: [
+        "Oral N-acetylcysteine 1200 mg twice daily for 2 days",
+        "Isotonic saline 1 mL/kg/h for 6-12 hours before and after the study, with the smallest possible contrast volume",
+        "Sodium bicarbonate infusion at 3 mL/kg/h for 1 hour before the study",
+        "Prophylactic haemodialysis immediately after the study",
+      ],
+      answer: 1,
+      explanation:
+        "Volume expansion with isotonic saline plus contrast minimisation and withdrawal of nephrotoxins is the only strategy that survives the evidence; the PRESERVE trial randomised over 5000 high-risk patients and found no benefit from either N-acetylcysteine or sodium bicarbonate over saline, which is why options 1 and 3 are wrong even though both were once standard. Prophylactic dialysis after contrast does not prevent injury, exposes the patient to catheter and haemodynamic risk, and removes contrast too late to matter. Note also that metformin should be withheld at the time of contrast when the eGFR is below 30 and for 48 hours after.",
+      difficulty: "moderate",
+    },
+    {
+      id: "renal-urology-acute-kidney-injury-m5",
+      stem: "A 48-year-old woman with AKI following septic abortion has a potassium of 6.8 mmol/L, pH 7.06, bicarbonate 9 mmol/L, and bilateral basal crepitations with an oxygen saturation of 88% on room air despite 80 mg of intravenous furosemide. What is the most appropriate next step?",
+      options: [
+        "Repeat intravenous furosemide 120 mg and reassess in 2 hours",
+        "Start a sodium bicarbonate infusion and recheck the blood gas in 4 hours",
+        "Arrange urgent haemodialysis after giving calcium gluconate and insulin-dextrose",
+        "Start oral potassium binder and restrict fluids to 500 mL per day",
+      ],
+      answer: 2,
+      explanation:
+        "She has three simultaneous emergency indications for renal replacement therapy - refractory hyperkalaemia, severe metabolic acidosis and diuretic-refractory pulmonary oedema - so dialysis must be arranged now, with calcium gluconate and insulin-dextrose given immediately as a bridge to protect the myocardium while access is obtained. Escalating furosemide in a patient who has already failed 80 mg wastes the hour that matters and risks ototoxicity. A bicarbonate infusion delivers a sodium load into established pulmonary oedema and will not correct a pH of 7.06 driven by ongoing kidney failure. An oral potassium binder acts far too slowly for a potassium of 6.8 mmol/L and does nothing for the acidosis or the overload.",
+      difficulty: "moderate",
+    },
+  ],
+  cards: [
+    {
+      id: "renal-urology-acute-kidney-injury-c1",
+      front: "State the three KDIGO criteria for diagnosing AKI.",
+      back: "Creatinine rise of 0.3 mg/dL or more within 48 hours; OR creatinine 1.5 times baseline or more within the prior 7 days; OR urine output below 0.5 mL/kg/h for 6 hours.",
+    },
+    {
+      id: "renal-urology-acute-kidney-injury-c2",
+      front: "KDIGO AKI stage 3 criteria.",
+      back: "Creatinine 3 times baseline or more, or a rise to 4.0 mg/dL or more, or start of renal replacement therapy (or eGFR under 35 if aged under 18); OR urine output under 0.3 mL/kg/h for 24 hours or anuria for 12 hours.",
+    },
+    {
+      id: "renal-urology-acute-kidney-injury-c3",
+      front: "Write the fractional excretion of sodium formula and its cut-offs.",
+      back: "FeNa = (urine Na x plasma creatinine) / (plasma Na x urine creatinine) x 100. Below 1% = prerenal; above 2% = acute tubular necrosis. Invalid after diuretics - use FeUrea, where below 35% is prerenal.",
+    },
+    {
+      id: "renal-urology-acute-kidney-injury-c4",
+      front: "The AEIOU indications for dialysis in AKI.",
+      back: "Acidosis (refractory), Electrolytes (refractory hyperkalaemia), Intoxication (methanol, ethylene glycol, lithium, salicylate), Overload (refractory pulmonary oedema), Uraemia (pericarditis, encephalopathy, seizures, intractable vomiting).",
+    },
+    {
+      id: "renal-urology-acute-kidney-injury-c5",
+      front: "Urinary sediment findings and what each means in AKI.",
+      back: "Bland - prerenal or postrenal; muddy brown granular casts and tubular cells - ATN; dysmorphic RBCs and RBC casts - glomerulonephritis; WBC casts with eosinophiluria - acute interstitial nephritis.",
+    },
+    {
+      id: "renal-urology-acute-kidney-injury-c6",
+      front: "Emergency treatment of hyperkalaemia, with doses.",
+      back: "Calcium gluconate 10 mL of 10% IV over 2-3 min; insulin 10 units regular in 25 g dextrose; salbutamol 10-20 mg nebulised; sodium bicarbonate if acidotic; potassium binder; dialysis if refractory.",
+    },
+    {
+      id: "renal-urology-acute-kidney-injury-c7",
+      front: "Common community-acquired causes of AKI in India.",
+      back: "Acute gastroenteritis, falciparum and vivax malaria, leptospirosis, scrub typhus, dengue, snake envenomation, septic abortion and obstetric haemorrhage, copper sulphate and hair-dye poisoning, and herbal nephrotoxins.",
+    },
+    {
+      id: "renal-urology-acute-kidney-injury-c8",
+      front: "What follow-up does every AKI survivor need?",
+      back: "Serum creatinine and urine ACR at 3 months (AKI trebles the risk of CKD), deliberate restarting of held drugs, a permanent no-NSAID instruction, and sick-day rules for ACE inhibitors, ARBs, diuretics, metformin and SGLT2 inhibitors.",
+    },
+  ],
+  references: [
+    "KDIGO 2012 Clinical Practice Guideline for Acute Kidney Injury, Kidney International Supplements",
+    "KDIGO 2024 Clinical Practice Guideline for the Evaluation and Management of Chronic Kidney Disease - acute kidney disease definitions",
+    "Indian Society of Nephrology - Acute Kidney Injury in the Tropics, Indian Journal of Nephrology review series",
+    "National Guidelines for Snakebite Management in India, MoHFW, 2022",
+    "National Guidelines for Diagnosis and Treatment of Malaria in India, NCVBDC, 2023",
+    "Harrison's Principles of Internal Medicine, 21st edition, 2022 - acute kidney injury",
+  ],
+});
+topics.push({
+  id: "psychiatry-anxiety",
+  title: "Anxiety disorders and panic: GAD-7, panic attacks and the drugs that help",
+  oneLiner:
+    "Generalised anxiety disorder is excessive, uncontrollable worry on most days for at least six months with restlessness, fatigue, poor concentration, irritability, muscle tension or disturbed sleep, while panic disorder is recurrent unexpected surges of intense fear peaking within ten minutes with autonomic symptoms plus a month of anticipatory fear or avoidance; in family practice both are screened with the GAD-7, separated from thyrotoxicosis, arrhythmia and substance effects, and treated with an SSRI or SNRI plus cognitive behavioural techniques, with benzodiazepines used only as a bridge of two to four weeks.",
+  frequency: "core",
+  keywords: [
+    "generalised anxiety disorder",
+    "panic disorder",
+    "GAD-7",
+    "panic attack",
+    "agoraphobia",
+    "escitalopram",
+    "sertraline",
+    "venlafaxine",
+    "propranolol",
+    "clonazepam",
+    "buspirone",
+    "hyperventilation syndrome",
+    "social anxiety disorder",
+    "obsessive compulsive disorder",
+    "somatic anxiety",
+    "benzodiazepine dependence",
+  ],
+  sections: [
+    {
+      heading: "Recognising anxiety in the Indian family practice consultation",
+      points: [
+        "The National Mental Health Survey of India 2015-16 put the **current prevalence of anxiety disorders at about 3.0%**, with phobic anxiety, generalised anxiety and panic disorder the commonest, a female to male ratio of about 2:1, and a treatment gap above 80% - most of these patients are already sitting in the general practitioner's queue with physical complaints.",
+        "Anxiety in India is rarely described as anxiety; it arrives as **palpitations, chest tightness, breathlessness with a sighing pattern, giddiness, tingling of the hands and around the mouth, tremor, sweating, a lump in the throat, gastric burning, loose stools before events and repeated requests for an ECG** - the phrase 'ghabrahat' or 'bechaini' is the clinical clue.",
+        "Suspect an anxiety disorder in the patient who has had **more than three normal investigations for the same symptom, attends casualty repeatedly at night with palpitations, cannot be reassured for more than a few days, or whose symptoms cluster around examinations, travel, crowds or being alone**.",
+        "**Screen with the GAD-7**: seven items scored 0-3 over the past two weeks, total 0-21, where a cut-off of 10 or more gives about 89% sensitivity and 82% specificity for generalised anxiety disorder; the first two items form the **GAD-2**, and a GAD-2 of 3 or more triggers the full scale.",
+        "Anxiety and depression coexist in **more than half of cases**, so every positive GAD-7 is followed by a PHQ-9 and a direct suicide enquiry - untreated panic disorder carries a real suicide risk, and the mixed picture is treated as depression first because the SSRI covers both.",
+      ],
+    },
+    {
+      heading: "Diagnosis: separating the disorders and excluding organic mimics",
+      points: [
+        "**Generalised anxiety disorder (DSM-5)**: excessive anxiety and worry about several domains, more days than not for at least **six months**, hard to control, with three or more of restlessness, easy fatigue, poor concentration, irritability, muscle tension and sleep disturbance, causing distress or impairment.",
+        "**Panic attack** is an abrupt surge of intense fear or discomfort reaching a peak **within about ten minutes** with four or more of thirteen symptoms - palpitations, sweating, trembling, breathlessness, choking, chest pain, nausea, dizziness, chills or heat, paraesthesiae, derealisation, fear of losing control and fear of dying; **panic disorder** requires recurrent unexpected attacks plus at least one month of worry about further attacks or maladaptive avoidance.",
+        "**Agoraphobia** is fear of two or more of public transport, open spaces, enclosed spaces, queues or crowds, and being outside home alone, avoided or endured with dread for six months; **social anxiety disorder** is fear of scrutiny with blushing, tremor and avoidance of speaking or eating in public; **specific phobia** is circumscribed and cued; **obsessive compulsive disorder** has intrusive ego-dystonic thoughts with compensatory rituals and is screened with the question 'do you have thoughts or actions you must repeat even though you know they are unnecessary?'.",
+        "**Exclude the organic mimics in every new case**: thyrotoxicosis (weight loss, heat intolerance, tremor, tachycardia at rest - always send a TSH), arrhythmia especially paroxysmal supraventricular tachycardia (abrupt on-off, rate above 150, no gradual build-up), hypoglycaemia in a patient on sulphonylurea or insulin, phaeochromocytoma (paroxysmal severe hypertension with headache and sweating), asthma, pulmonary embolism, anaemia and menopause.",
+        "**Drugs and substances that manufacture anxiety** must be asked for by name: salbutamol and theophylline, thyroxine over-replacement, steroids, decongestants, excess caffeine and energy drinks, tobacco and nicotine, cannabis, and above all **alcohol or benzodiazepine withdrawal**, in which morning anxiety with tremor that settles with the first drink is the giveaway.",
+        "The minimum investigation in a typical case is **haemoglobin, blood glucose, TSH and a 12-lead ECG**; going beyond that in a patient with a normal examination feeds the illness, so state clearly that the tests are being done once and will not be repeated.",
+      ],
+    },
+    {
+      heading: "Managing the acute panic attack",
+      points: [
+        "First, make the attack safe: **sit the patient down, exclude the dangerous mimics quickly with pulse, blood pressure, oxygen saturation, blood glucose and an ECG**, and remember that a first attack over the age of 45, with chest pain, syncope or an abnormal ECG, is a cardiac work-up until proven otherwise.",
+        "Then treat by **explanation, not by injection**: tell the patient in plain language that this is a panic attack, that the body's alarm has fired without danger, that it peaks in about ten minutes and settles in twenty to thirty, and that nobody has died of a panic attack - **naming the illness confidently is the single most effective intervention**.",
+        "Teach **slow breathing at the bedside**: breathe in through the nose for a count of four, out through pursed lips for a count of six, six to eight breaths a minute for five minutes, with a hand on the abdomen; this reverses the hypocapnia that produces the tingling and carpopedal spasm. **Do not use a paper bag** - it is unsafe if the diagnosis is hypoxic and is no longer recommended.",
+        "Add grounding for derealisation - name five things you can see, four you can hear, three you can touch - and keep a relative present but quiet; avoid a crowd of concerned relatives around the trolley, which prolongs the attack.",
+        "**Drugs are rarely needed for a single attack.** If distress is extreme, a single dose of **lorazepam 1 mg or alprazolam 0.25-0.5 mg orally** settles it, but never send the patient home with a repeat prescription from casualty - that is how benzodiazepine dependence begins in this country.",
+        "Before discharge, book a follow-up within a week, give the diagnosis in writing so the next casualty officer does not restart the tests, and begin the explanation of long-term treatment; **repeated normal investigations without a diagnosis are what turn a treatable panic disorder into a chronic illness**.",
+      ],
+    },
+    {
+      heading: "Long-term drug treatment",
+      points: [
+        "**SSRIs are first line for every anxiety disorder**: escitalopram 5 mg increasing to 10-20 mg once daily, or sertraline 25 mg increasing to 50-200 mg once daily, or fluoxetine 10-20 mg; the essential difference from depression is that you **start at half the antidepressant dose** because SSRIs transiently worsen anxiety in the first week, and warn the patient of this in advance or he will stop the drug on day three.",
+        "The response is slower than in depression - **partial benefit by 2-4 weeks, full assessment at 8-12 weeks** - and the dose needed is often at the top of the range; treatment continues for **at least 12 months after response** because relapse after early stopping approaches 50%, then tapers over 4-8 weeks.",
+        "**Venlafaxine extended release 37.5-75 mg rising to 150-225 mg** is the main alternative and is licensed for generalised anxiety, panic and social anxiety - monitor blood pressure at each visit; **duloxetine 30-60 mg** suits anxiety with chronic pain; **mirtazapine 15-30 mg at night** helps when insomnia and appetite loss dominate.",
+        "**Benzodiazepines are a bridge, not a treatment**: clonazepam 0.25-0.5 mg twice daily or lorazepam 0.5-1 mg twice daily for a **maximum of 2-4 weeks** while the SSRI takes effect, prescribed with a written stop date, with the total quantity limited, and never in a patient with alcohol or substance use, COPD, obstructive sleep apnoea, or over the age of 65 where they cause falls and delirium; tolerance, dose escalation and rebound anxiety follow chronic use, and alprazolam is the worst offender because of its short half-life.",
+        "**Propranolol 10-40 mg** taken 30-60 minutes before an event controls the peripheral symptoms - tremor, palpitations, blushing - of performance and situational anxiety, and is useful for a student before a viva; it is contraindicated in asthma, and it does not treat the underlying disorder. **Buspirone 5-10 mg three times daily** is non-sedating, non-dependence-forming and useful in generalised anxiety, but takes two weeks to act and is useless for panic.",
+        "**Avoid the common Indian errors**: prescribing a fixed-dose combination of an SSRI with a benzodiazepine as maintenance, giving repeat alprazolam without a diagnosis, using a tricyclic in a patient at suicide risk, and treating anxiety with a course of vitamins and a nerve tonic while the diagnosis remains unstated.",
+      ],
+    },
+    {
+      heading: "Psychological treatment, follow-up and referral",
+      points: [
+        "**Cognitive behavioural therapy is at least as effective as drugs and its effect lasts longer after stopping**; where a therapist is unavailable, the family physician delivers the core elements in 15-minute visits - psychoeducation about the fight-or-flight response, a symptom diary, slow breathing and progressive muscular relaxation, and graded exposure.",
+        "**Graded exposure** is the treatment for agoraphobia and phobic avoidance: build a hierarchy of feared situations from easiest to hardest, practise the easiest daily until the anxiety halves, then climb one step; the rule is that the patient must stay in the situation until the anxiety falls, because leaving early reinforces the fear. Explain that **safety behaviours** - carrying a tablet in the pocket, always taking a companion, sitting near the door - keep the illness alive.",
+        "In generalised anxiety, add **worry postponement** (a fixed 20-minute worry period each day), problem-solving for the worries that are solvable, and a ban on repeated reassurance-seeking from family and from the internet; cut caffeine, stop energy drinks, treat the tobacco and alcohol, and prescribe 30 minutes of brisk walking daily, which has trial evidence in anxiety.",
+        "**Follow-up schedule**: two weeks for tolerance and adherence with a repeat suicide enquiry, four weeks with a repeat GAD-7, then monthly to 12 weeks; a fall in the GAD-7 of 50% or a score under 5 is remission, and failure to fall by 12 weeks at a full dose means switch or refer.",
+        "**Refer** for failure of two adequate drug trials, obsessive compulsive disorder needing high-dose SSRI or clomipramine, post-traumatic stress disorder, severe social anxiety preventing work or study, suspected bipolar disorder, benzodiazepine dependence requiring a supervised taper, and any patient with active suicidal ideation.",
+        "Use the system: **Tele-MANAS 14416** provides free 24-hour counselling in regional languages, the District Mental Health Programme supplies free escitalopram and sertraline at the district hospital, and a written diagnosis in the patient's own record prevents the endless re-investigation that anxiety otherwise generates.",
+      ],
+    },
+  ],
+  tables: [
+    {
+      heading: "GAD-7: items, scoring and action",
+      columns: ["Element", "Detail"],
+      rows: [
+        ["Items (each 0-3 over 2 weeks)", "Feeling nervous or on edge; not able to stop worrying; worrying too much about different things; trouble relaxing; restless, hard to sit still; easily annoyed or irritable; afraid something awful might happen"],
+        ["Scoring", "0 not at all, 1 several days, 2 more than half the days, 3 nearly every day; total 0-21"],
+        ["0-4", "Minimal - reassure, address caffeine and sleep, no treatment"],
+        ["5-9", "Mild - psychoeducation, breathing and relaxation, exercise, review in 4 weeks"],
+        ["10-14", "Moderate - start an SSRI at half dose plus CBT techniques; review in 2 weeks"],
+        ["15-21", "Severe - SSRI or SNRI, structured CBT, consider a short benzodiazepine bridge, screen for depression and suicide, refer if not improving"],
+      ],
+    },
+    {
+      heading: "Drugs for anxiety disorders in family practice",
+      columns: ["Drug", "Starting dose", "Usual range", "Best for", "Cautions"],
+      rows: [
+        ["Escitalopram", "5 mg OM", "10-20 mg OM", "GAD, panic disorder, social anxiety - first choice", "Early activation; hyponatraemia in elderly; QT at high dose"],
+        ["Sertraline", "25 mg OM", "50-200 mg OM", "Panic disorder, OCD, anxiety with cardiac disease or pregnancy", "Early GI upset and jitteriness"],
+        ["Venlafaxine XR", "37.5 mg OM", "75-225 mg OM", "SSRI failure, GAD with low mood", "Raises blood pressure; severe discontinuation syndrome"],
+        ["Clonazepam", "0.25 mg BD", "0.25-1 mg BD, 2-4 weeks only", "Bridge until the SSRI acts; severe initial panic", "Dependence, falls, sedation; avoid in alcohol use, COPD, elderly"],
+        ["Propranolol", "10 mg PRN", "10-40 mg before event", "Performance and situational anxiety, tremor, palpitations", "Asthma, heart block, bradycardia; does not treat the disorder"],
+        ["Buspirone", "5 mg TDS", "15-30 mg/day", "GAD where benzodiazepines must be avoided", "Two weeks to act; ineffective in panic disorder"],
+      ],
+    },
+  ],
+  redFlags: [
+    "A first panic-like episode over the age of 45, or with exertional chest pain, syncope, an abnormal ECG or a new murmur - work up as acute coronary syndrome or arrhythmia before calling it anxiety.",
+    "Palpitations with an abrupt on-off quality and a rate above 150 - paroxysmal supraventricular tachycardia, not panic; capture a 12-lead ECG during the episode or arrange Holter monitoring.",
+    "Anxiety with weight loss, heat intolerance, resting tachycardia, tremor or a goitre - thyrotoxicosis; send a TSH before writing an SSRI.",
+    "Morning anxiety with tremor, sweating and nausea relieved by alcohol or by a tablet - alcohol or benzodiazepine withdrawal, which can progress to a seizure and needs supervised detoxification, not an SSRI alone.",
+    "Anxiety with suicidal ideation, hopelessness or a plan - panic disorder with depression carries a real suicide risk; assess the same day and never dispense a large quantity of any sedative.",
+    "Paroxysmal severe hypertension with headache, palpitation and sweating, or anxiety with recurrent hypoglycaemia in a patient on insulin or a sulphonylurea - phaeochromocytoma and drug-induced hypoglycaemia, both of which are mistaken for panic.",
+  ],
+  pearls: [
+    "GAD-2 to screen and GAD-7 to grade; 10 or more is the treatment threshold, and every positive GAD-7 gets a PHQ-9 and a suicide enquiry because anxiety and depression travel together in over half of cases.",
+    "Start the SSRI at half the depression dose in anxiety, warn of the first-week jitteriness before it happens, judge at 8-12 weeks and continue for 12 months after response.",
+    "A benzodiazepine in anxiety is a bridge with a written stop date at 2-4 weeks; alprazolam given without a diagnosis is the commonest iatrogenic dependence in Indian practice.",
+    "Slow breathing at six to eight breaths a minute, not a paper bag - the bag is unsafe if the cause turns out to be hypoxic.",
+    "TSH and an ECG once, then stop investigating; repeated normal tests without a stated diagnosis are what convert a treatable panic disorder into a chronic illness.",
+    "Safety behaviours - the tablet in the pocket, the companion, the seat near the door - maintain agoraphobia; graded exposure only works if the patient stays until the anxiety falls.",
+  ],
+  theory: [
+    {
+      id: "psychiatry-anxiety-t1",
+      paper: "II",
+      kind: "long",
+      marks: 10,
+      minutes: 20,
+      frequency: "core",
+      question:
+        "A 28-year-old woman attends casualty for the fourth time in two months with sudden palpitations, breathlessness, tingling of the hands and a fear that she is dying. Her ECG, haemogram and thyroid function are normal. Discuss the diagnosis and her management in family practice.",
+      openingLines: [
+        "This is panic disorder, defined by DSM-5 as recurrent unexpected panic attacks - abrupt surges of intense fear peaking within about ten minutes with four or more of thirteen autonomic and cognitive symptoms - followed by at least one month of persistent worry about further attacks or maladaptive change in behaviour.",
+        "Her normal ECG, haemogram and thyroid function have already excluded the important mimics, and the objectives now are to name the diagnosis confidently, teach control of the acute attack, start an SSRI at half dose with cognitive behavioural techniques, avoid long-term benzodiazepines, and follow her to remission.",
+      ],
+      answer: [
+        {
+          heading: "1. History and confirming the diagnosis",
+          points: [
+            "Characterise the attacks: abrupt onset, peak within ten minutes, duration twenty to thirty minutes, the symptom list, and whether they occur out of the blue or only in specific places.",
+            "Ask for the month of anticipatory anxiety and for avoidance - has she stopped travelling by bus, going to the market, staying alone at home (agoraphobia).",
+            "Apply the GAD-7 for background worry and the PHQ-9 for depression, and ask directly about suicidal ideation, since panic with depression carries a real risk.",
+            "Substance and drug history: caffeine, energy drinks, tobacco, cannabis, salbutamol, thyroxine, decongestants, and alcohol or benzodiazepine use and withdrawal.",
+            "Life context: marital and family stress, domestic violence, financial strain, a recent bereavement or a frightening illness in a relative, which commonly precedes the first attack.",
+          ],
+        },
+        {
+          heading: "2. Examination and the minimum investigation",
+          points: [
+            "Pulse, blood pressure lying and standing, respiratory rate, oxygen saturation, thyroid, cardiac and respiratory examination, and a check for tremor and goitre.",
+            "Investigations already done are adequate: haemoglobin, blood glucose, TSH and a 12-lead ECG; state that no further tests are needed and record this in her file.",
+            "Consider Holter monitoring only if the palpitations are abrupt on-off with a documented rate above 150, and a cardiac work-up if there is exertional chest pain, syncope or an abnormal ECG.",
+            "Avoid repeat troponins, echocardiography and CT pulmonary angiography in a young woman with a normal examination and a typical history, as each normal test reinforces her conviction of disease.",
+          ],
+        },
+        {
+          heading: "3. Explanation and management of the acute attack",
+          points: [
+            "Name the diagnosis clearly - this is a panic attack, the body's alarm firing without danger; it peaks in ten minutes, settles in thirty, and is not fatal.",
+            "Draw the vicious cycle: bodily sensation, catastrophic interpretation (heart attack, dying), surge of adrenaline, worse sensation - and show her where to break it.",
+            "Teach slow abdominal breathing, in for four and out for six, six to eight breaths a minute for five minutes, practised twice daily when well so that it is available when unwell. No paper bag.",
+            "Teach grounding for derealisation and instruct her not to leave the situation at the peak, since escape reinforces the fear.",
+          ],
+        },
+        {
+          heading: "4. Long-term drug treatment",
+          points: [
+            "Escitalopram 5 mg daily for one week then 10 mg, or sertraline 25 mg for a week then 50 mg, with an explicit warning that anxiety may rise for the first week.",
+            "Titrate every 2-4 weeks to escitalopram 20 mg or sertraline 200 mg if needed; judge the full effect at 8-12 weeks, not at 4.",
+            "Clonazepam 0.25 mg twice daily for a maximum of 2-4 weeks may be used as a bridge if the attacks are disabling, with a written stop date and a limited quantity dispensed.",
+            "Continue the SSRI for at least 12 months after response, then taper over 4-8 weeks; venlafaxine XR 75-225 mg is the second-line drug if the SSRI fails.",
+          ],
+        },
+        {
+          heading: "5. Psychological treatment, follow-up and referral",
+          points: [
+            "Cognitive behavioural therapy - interoceptive exposure and cognitive restructuring - is at least as effective as drugs and its benefit outlasts them; refer where available or deliver the core elements in short visits.",
+            "Graded exposure with a written hierarchy for the avoidance, dropping safety behaviours, plus caffeine reduction, tobacco cessation and daily brisk walking.",
+            "Review at 2 weeks (tolerance, adherence, suicide), 4 weeks (repeat GAD-7), then monthly; give her a written diagnosis to carry so casualty does not restart the investigations.",
+            "Refer if two adequate drug trials fail, if there is comorbid depression with suicidal ideation, or if benzodiazepine dependence has already developed; give her the Tele-MANAS number 14416.",
+          ],
+        },
+      ],
+      mustDraw: [
+        "The panic vicious cycle: trigger or bodily sensation - catastrophic misinterpretation - anxiety and adrenaline surge - intensified bodily symptoms - back to misinterpretation.",
+        "A table of the GAD-7 bands (0-4, 5-9, 10-14, 15-21) against the action each triggers.",
+      ],
+      markSplit: [
+        { part: "Definition and diagnostic criteria of panic disorder", marks: 2 },
+        { part: "History, examination and exclusion of mimics", marks: 2 },
+        { part: "Management of the acute attack including breathing control", marks: 2 },
+        { part: "Drug treatment with doses and duration", marks: 2 },
+        { part: "CBT, exposure, follow-up and referral criteria", marks: 2 },
+      ],
+      keywords: ["panic disorder", "GAD-7", "escitalopram", "graded exposure", "benzodiazepine bridge"],
+    },
+    {
+      id: "psychiatry-anxiety-t2",
+      paper: "II",
+      kind: "short-note",
+      marks: 5,
+      minutes: 10,
+      frequency: "common",
+      question: "Short note: the place of benzodiazepines in the management of anxiety disorders.",
+      openingLines: [
+        "Benzodiazepines are positive allosteric modulators at the GABA-A receptor which reduce anxiety within thirty minutes, and this speed is exactly why they are over-used and why dependence is the commonest iatrogenic psychiatric problem in Indian general practice.",
+        "Their legitimate role in an anxiety disorder is a short, dated bridge of two to four weeks while an SSRI takes effect, and as a single dose for an incapacitating acute attack - never as maintenance treatment.",
+      ],
+      answer: [
+        {
+          heading: "1. Appropriate uses",
+          points: [
+            "A bridge of 2-4 weeks with a written stop date while an SSRI or SNRI is titrated in severe generalised anxiety or panic disorder.",
+            "A single oral dose - lorazepam 1 mg or alprazolam 0.25-0.5 mg - for a disabling acute panic attack in casualty, without a repeat prescription.",
+            "Alcohol withdrawal, status epilepticus, acute agitation and procedural sedation, which are separate indications with their own protocols.",
+          ],
+        },
+        {
+          heading: "2. Doses and choice",
+          points: [
+            "Clonazepam 0.25-0.5 mg twice daily - long half-life, smoother cover, less inter-dose rebound.",
+            "Lorazepam 0.5-1 mg twice or thrice daily - no active metabolite, preferred in liver disease and the elderly if unavoidable.",
+            "Alprazolam is best avoided: the short half-life produces inter-dose rebound anxiety, rapid dose escalation and the hardest withdrawal.",
+          ],
+        },
+        {
+          heading: "3. Harms and contraindications",
+          points: [
+            "Tolerance within weeks, physical dependence, dose escalation, rebound anxiety and insomnia on stopping, and a withdrawal syndrome that includes seizures.",
+            "Sedation, impaired concentration, road traffic accidents, falls and hip fracture in the elderly, delirium, and anterograde amnesia.",
+            "Respiratory depression in COPD and obstructive sleep apnoea; potentiation of alcohol and opioids; teratogenicity concerns and floppy infant syndrome near term.",
+            "Contraindicated as maintenance in anyone with alcohol or substance use disorder, in the elderly, and in patients with a history of misuse.",
+          ],
+        },
+        {
+          heading: "4. Stopping a patient who is already dependent",
+          points: [
+            "Convert the total daily dose to an equivalent dose of a long-acting agent such as diazepam or clonazepam.",
+            "Reduce by about 10-25% of the dose every 2-4 weeks, slowing near the end; abrupt cessation risks seizures and a severe rebound.",
+            "Treat the underlying anxiety disorder in parallel with an SSRI and CBT, give a written schedule, review fortnightly, and refer if withdrawal is severe or there is polysubstance use.",
+          ],
+        },
+      ],
+      mustDraw: [
+        "A two-column table: legitimate indications versus the harms and contraindications of long-term use.",
+      ],
+      markSplit: [
+        { part: "Mechanism and legitimate indications with duration", marks: 1 },
+        { part: "Choice of agent and doses", marks: 1 },
+        { part: "Adverse effects, dependence and contraindications", marks: 2 },
+        { part: "Tapering schedule for the dependent patient", marks: 1 },
+      ],
+      keywords: ["benzodiazepine", "clonazepam", "alprazolam dependence", "taper", "GABA-A"],
+    },
+  ],
+  mcqs: [
+    {
+      id: "psychiatry-anxiety-q1",
+      stem: "A 30-year-old man scores 16 on the GAD-7 and 8 on the PHQ-9. He has had daily uncontrollable worry for eight months with muscle tension and poor sleep. He drives an auto-rickshaw for a living. What is the most appropriate initial prescription?",
+      options: [
+        "Alprazolam 0.5 mg twice daily continued indefinitely",
+        "Escitalopram 5 mg daily increasing to 10 mg after a week, with breathing exercises and a review in two weeks",
+        "Propranolol 40 mg twice daily as the sole treatment",
+        "A multivitamin and reassurance alone",
+        "Amitriptyline 75 mg at night",
+      ],
+      answer: 1,
+      explanation:
+        "A GAD-7 of 16 is severe generalised anxiety and an SSRI started at half the depression dose, with the first-week jitteriness explained in advance, plus breathing and relaxation techniques, is first-line. Indefinite alprazolam produces tolerance and dependence within weeks and is particularly dangerous in a man who drives for a living because of sedation and accident risk. Propranolol controls tremor and palpitations in situational anxiety but does not treat generalised anxiety disorder and is only an adjunct. A multivitamin with reassurance is no treatment for a severe score and leaves the illness unnamed. Amitriptyline at 75 mg is sedating, anticholinergic and lethal in overdose, and is not a first-line anxiolytic.",
+      difficulty: "easy",
+    },
+    {
+      id: "psychiatry-anxiety-q2",
+      stem: "A 52-year-old man with hypertension presents with his first-ever episode of sudden palpitations, chest tightness and a sense of doom lasting twenty minutes while walking to the market. He is now asymptomatic. Pulse 88 regular, BP 148/90. What is the correct next step?",
+      options: [
+        "Diagnose panic disorder and start sertraline 25 mg",
+        "Give alprazolam 0.5 mg and reassure",
+        "Twelve-lead ECG and evaluation for acute coronary syndrome before attributing the episode to anxiety",
+        "Teach paper-bag rebreathing and discharge",
+        "Order a CT pulmonary angiogram immediately",
+      ],
+      answer: 2,
+      explanation:
+        "A first episode over the age of 45, in a hypertensive man, brought on by exertion and with chest tightness, must be worked up as a cardiac event before it is called panic; an ECG, and troponin if the story is convincing, come first. Starting sertraline labels an undiagnosed cardiac presentation as psychiatric. Alprazolam masks the symptom and delays diagnosis. Paper-bag rebreathing is unsafe in any patient who may be hypoxic or ischaemic and is no longer recommended even in confirmed hyperventilation. A CT pulmonary angiogram is not the first test in a patient without hypoxia, tachycardia or risk factors for embolism; the ECG comes first.",
+      difficulty: "moderate",
+    },
+    {
+      id: "psychiatry-anxiety-q3",
+      stem: "A 24-year-old woman with panic disorder started escitalopram 10 mg four days ago and telephones to say her anxiety and palpitations are worse than before. She has no suicidal ideation. What is the best advice?",
+      options: [
+        "Stop escitalopram - it has clearly failed",
+        "Explain that transient worsening in the first week is expected, reduce to 5 mg for a week then rebuild, and review in one week",
+        "Add alprazolam 0.5 mg three times daily for three months",
+        "Switch immediately to amitriptyline",
+        "Double the escitalopram to 20 mg today",
+      ],
+      answer: 1,
+      explanation:
+        "SSRIs cause a well-recognised transient increase in anxiety and autonomic symptoms in the first one to two weeks of treatment in panic disorder, which is why the drug is begun at half dose; the correct response is explanation, a temporary dose reduction and early review. Stopping the drug on day four abandons treatment before any therapeutic effect is possible, as the full assessment is at 8-12 weeks. Three months of thrice-daily alprazolam creates dependence and is far beyond the two to four week bridge that is acceptable. Amitriptyline is not a first-line anxiolytic and is more poorly tolerated. Doubling the dose during the activation phase makes the symptoms worse.",
+      difficulty: "moderate",
+    },
+    {
+      id: "psychiatry-anxiety-q4",
+      stem: "A 34-year-old woman has been taking alprazolam 0.5 mg three times a day for two years for anxiety, prescribed elsewhere, and now wants to stop. What is the safest plan?",
+      options: [
+        "Stop alprazolam today and start escitalopram",
+        "Switch to an equivalent dose of a long-acting benzodiazepine such as clonazepam or diazepam, reduce by 10-25% every 2-4 weeks, and treat the underlying anxiety with an SSRI and CBT",
+        "Halve the dose every three days until stopped",
+        "Continue alprazolam lifelong since she is stable",
+        "Add propranolol and stop alprazolam abruptly",
+      ],
+      answer: 1,
+      explanation:
+        "Two years of thrice-daily alprazolam means physical dependence; the standard approach is conversion to a long-acting equivalent to smooth inter-dose withdrawal, then a slow taper of 10-25% every two to four weeks with the underlying disorder treated by an SSRI and CBT. Abrupt cessation of a short-acting benzodiazepine at this dose risks rebound anxiety, insomnia, autonomic instability and withdrawal seizures. Halving every three days is far too fast for the same reason. Lifelong continuation accepts the cognitive impairment, fall and accident risk and dose escalation that follow. Propranolol blunts tremor and palpitations but does not prevent benzodiazepine withdrawal seizures, so it cannot make abrupt stopping safe.",
+      difficulty: "hard",
+    },
+    {
+      id: "psychiatry-anxiety-q5",
+      stem: "A 26-year-old man is terrified of speaking at his office meetings; his hands shake, he blushes and his voice trembles, and he has begun taking leave on presentation days. He has no symptoms otherwise. He has a presentation in three days and asks for help for that day, and also wants long-term treatment. Which combination is most appropriate?",
+      options: [
+        "Diazepam 5 mg before the presentation and lifelong diazepam",
+        "Propranolol 20-40 mg one hour before the presentation, plus escitalopram and graded exposure for the disorder itself",
+        "Escitalopram 10 mg started today, which will control the presentation in three days",
+        "Buspirone 5 mg on the morning of the presentation",
+        "Reassurance alone with no treatment",
+      ],
+      answer: 1,
+      explanation:
+        "This is social anxiety disorder of the performance type. Propranolol 20-40 mg an hour before the event blocks the peripheral beta-adrenergic symptoms - tremor, palpitation, blushing - and is the accepted as-needed treatment, while the disorder itself needs an SSRI and graded exposure since avoidance is already causing occupational impairment. Diazepam impairs concentration and speech performance and lifelong use creates dependence. An SSRI started today cannot work in three days, as benefit begins at two weeks and is judged at 8-12. Buspirone takes about two weeks to act and has no single-dose effect. Reassurance alone leaves a man who is already taking leave from work untreated.",
+      difficulty: "moderate",
+    },
+  ],
+  cards: [
+    {
+      id: "psychiatry-anxiety-c1",
+      front: "DSM-5 criteria for generalised anxiety disorder.",
+      back: "Excessive, hard-to-control worry about several domains, more days than not for at least 6 months, with 3 or more of: restlessness, fatigue, poor concentration, irritability, muscle tension, sleep disturbance; causing impairment.",
+    },
+    {
+      id: "psychiatry-anxiety-c2",
+      front: "Definition of a panic attack and of panic disorder.",
+      back: "Panic attack: abrupt surge of fear peaking within about 10 minutes with 4 or more of 13 symptoms. Panic disorder: recurrent unexpected attacks plus at least 1 month of worry about further attacks or avoidance.",
+    },
+    {
+      id: "psychiatry-anxiety-c3",
+      front: "GAD-7 bands and treatment threshold.",
+      back: "0-4 minimal, 5-9 mild, 10-14 moderate, 15-21 severe. GAD-2 of 3 or more triggers the full scale; a GAD-7 of 10 or more is the threshold to start drug treatment.",
+    },
+    {
+      id: "psychiatry-anxiety-c4",
+      front: "How does SSRI dosing in anxiety differ from depression?",
+      back: "Start at half the dose (escitalopram 5 mg, sertraline 25 mg) because of first-week activation, titrate to the top of the range, judge at 8-12 weeks, and continue 12 months after response.",
+    },
+    {
+      id: "psychiatry-anxiety-c5",
+      front: "Rules for benzodiazepine use in an anxiety disorder.",
+      back: "A bridge only: clonazepam 0.25-0.5 mg BD or lorazepam 0.5-1 mg BD for a maximum of 2-4 weeks with a written stop date. Never in alcohol use, COPD, sleep apnoea or over 65. Avoid alprazolam.",
+    },
+    {
+      id: "psychiatry-anxiety-c6",
+      front: "Managing an acute panic attack.",
+      back: "Sit the patient down, check pulse, BP, SpO2, glucose and ECG, name the diagnosis confidently, slow breathing in for 4 out for 6 at 6-8 breaths a minute, grounding. No paper bag. Drugs rarely needed.",
+    },
+    {
+      id: "psychiatry-anxiety-c7",
+      front: "Organic mimics of anxiety to exclude.",
+      back: "Thyrotoxicosis, paroxysmal SVT and other arrhythmias, hypoglycaemia, phaeochromocytoma, asthma, pulmonary embolism, anaemia, menopause; drugs - salbutamol, theophylline, steroids, thyroxine, caffeine, cannabis; alcohol or benzodiazepine withdrawal.",
+    },
+    {
+      id: "psychiatry-anxiety-c8",
+      front: "Principle of graded exposure in agoraphobia.",
+      back: "Build a hierarchy from easiest to hardest, practise daily until anxiety halves, then climb a step; stay in the situation until anxiety falls, and drop safety behaviours (tablet in pocket, companion, seat near the door) which maintain the fear.",
+    },
+  ],
+  references: [
+    "American Psychiatric Association, Diagnostic and Statistical Manual of Mental Disorders, 5th edition text revision (DSM-5-TR), 2022",
+    "Spitzer RL et al. A brief measure for assessing generalized anxiety disorder: the GAD-7, Archives of Internal Medicine, 2006",
+    "NICE Clinical Guideline CG113, Generalised anxiety disorder and panic disorder in adults: management, updated 2020",
+    "Indian Psychiatric Society Clinical Practice Guidelines for the management of anxiety disorders, 2017",
+    "WHO mhGAP Intervention Guide, version 2.0, 2016",
+    "National Mental Health Survey of India 2015-16, NIMHANS, 2016",
+  ],
+});
+topics.push({
+  id: "dermatology-scabies-pediculosis",
+  title: "Scabies and pediculosis, including treatment of the whole household",
+  oneLiner:
+    "Scabies is an intensely pruritic infestation by the mite Sarcoptes scabiei var. hominis in which nocturnal itch, burrows and papules in the finger webs, wrists, axillae, waist and genitalia, and a history of itching in other members of the household, make the diagnosis clinically, and the cure depends entirely on treating every contact simultaneously with topical permethrin 5 per cent or oral ivermectin plus decontamination of clothes and bedding.",
+  frequency: "core",
+  keywords: [
+    "scabies",
+    "Sarcoptes scabiei",
+    "burrow",
+    "nocturnal pruritus",
+    "permethrin",
+    "ivermectin",
+    "benzyl benzoate",
+    "crusted scabies",
+    "Norwegian scabies",
+    "pediculosis capitis",
+    "pediculosis corporis",
+    "pthirus pubis",
+    "nits",
+    "malathion",
+    "post-scabetic itch",
+    "dermoscopy delta sign",
+    "impetigo",
+    "household contacts",
+  ],
+  sections: [
+    {
+      heading: "The organism, the transmission and why the whole family matters",
+      points: [
+        "Scabies is caused by **Sarcoptes scabiei var. hominis**, an obligate human mite; the fertilised female burrows into the stratum corneum at about 2 mm a day and lays two to three eggs daily for a life of four to six weeks, and an ordinary patient carries only **10 to 15 adult mites** on the whole body.",
+        "Transmission needs **prolonged skin-to-skin contact of 15 to 20 minutes**, which is why it runs through households, hostels, orphanages, prisons and shared beds rather than through casual handshakes; fomite transmission through shared clothes and bedding is real but secondary, except in crusted scabies where it is the dominant route.",
+        "The itch is a **type IV delayed hypersensitivity reaction to mite antigen, faeces and eggs**, so a first infestation stays silent for **four to six weeks** before itching begins, while a re-infestation itches within one to four days - this incubation period is the reason asymptomatic contacts must still be treated.",
+        "In Indian general practice scabies clusters in the rainy and winter months, in overcrowded housing and where water for washing is short; the classical exam history is **itching worse at night that disturbs sleep, with at least one other person in the house itching**.",
+        "Scabies is a **WHO-recognised neglected tropical disease** since 2017, with an estimated 200 million people affected at any time, and in India it is one of the commonest reasons for a skin consultation in primary care.",
+        "Untreated scabies in children is a major driver of **streptococcal pyoderma and therefore of acute post-streptococcal glomerulonephritis and acute rheumatic fever**, which is why treating scabies is a public health act and not merely a comfort measure.",
+      ],
+    },
+    {
+      heading: "Clinical features and the lesion vocabulary to use",
+      points: [
+        "Describe the eruption in the fixed order - **number, site and distribution, size, shape, surface, margin, colour, arrangement and secondary change**; in scabies the answer is multiple, symmetrical, 1 to 3 mm erythematous **papules and papulovesicles with excoriations and crusting**, discrete but grouped, in a characteristic distribution below the neck.",
+        "The **pathognomonic primary lesion is the burrow**: a 3 to 10 mm greyish, serpiginous or S-shaped thread-like ridge with a minute vesicle or black dot (the mite) at one end, best seen on the finger webs, the sides of the fingers, the flexor wrists and the ulnar border of the hand.",
+        "**Sites of predilection** - finger webs, flexor wrists, elbows, anterior axillary folds, periumbilical skin and waist, buttocks, areolae in women, and the penis and scrotum in men; **itchy papules or nodules on the glans, shaft and scrotum are almost diagnostic of scabies in an adult male**.",
+        "**The head and neck are spared in adults but involved in infants and in the elderly**; in infants under two years the palms, soles, scalp and face are typically affected with vesicles, pustules and nodules, and secondary eczematisation is common.",
+        "Secondary lesions dominate what you actually see: **excoriations proving the itch, honey-coloured crusts of secondary impetigo, eczematisation and post-inflammatory hyperpigmentation**; lichenification appears where the patient has scratched for months.",
+        "**Nodular scabies** presents as firm, reddish-brown, intensely itchy 5 to 10 mm nodules on the scrotum, penis, groins and axillae that are a persistent hypersensitivity granuloma and may **persist for weeks to months after the mite is dead**, needing intralesional or potent topical steroid rather than more scabicide.",
+      ],
+    },
+    {
+      heading: "Variants that change the management",
+      points: [
+        "**Crusted (Norwegian) scabies** occurs in HIV infection, human T-lymphotropic virus 1 infection, lepromatous leprosy, malnutrition, Down syndrome, dementia, paralysis and long-term topical or systemic steroid use, and carries **thousands to millions of mites**.",
+        "It presents as **thick, warty, fissured hyperkeratotic crusts on the hands, feet, elbows, scalp and under the nails, with gross nail dystrophy and subungual debris, and characteristically little or no itch**; it is highly contagious and is the usual index case behind an institutional outbreak.",
+        "Crusted scabies needs **combined therapy - a keratolytic such as 5 per cent salicylic acid ointment, topical permethrin daily then twice weekly, plus oral ivermectin 200 microgram per kilogram on days 1, 2, 8, 9 and 15, extended to days 22 and 29 in severe disease** - and barrier nursing with gowns and gloves.",
+        "**Scabies incognito** results from topical or systemic steroids that suppress the inflammatory response: the eruption becomes atypical and widespread, burrows are hard to find, and the itch is disproportionate to a bland-looking rash - a common trap in Indian practice where potent steroid combination creams are sold over the counter.",
+        "**Bullous scabies** in the elderly mimics bullous pemphigoid, and **scabies in the very clean patient** may show only a handful of papules on the wrists; both are diagnosed by taking the household history seriously.",
+        "**Secondary bacterial infection** with Staphylococcus aureus or Streptococcus pyogenes produces impetigo, ecthyma, folliculitis or cellulitis and must be treated with oral cloxacillin or amoxicillin-clavulanate before or alongside the scabicide.",
+      ],
+    },
+    {
+      heading: "Diagnosis, differential diagnosis and bedside tests",
+      points: [
+        "Scabies is a **clinical diagnosis** made on the triad of nocturnal itch, typical distribution and an affected household contact; the 2020 International Alliance for the Control of Scabies (IACS) criteria grade the diagnosis as confirmed (mite, egg or faecal pellet seen), clinical (burrows, typical genital or infant lesions) or suspected.",
+        "**Skin scraping**: place a drop of mineral oil or 10 per cent potassium hydroxide on an unexcoriated burrow or papule, scrape with a number 15 blade held tangentially until pinpoint bleeding, and look under low power for **mites, oval eggs or brown faecal pellets (scybala)**.",
+        "**Burrow ink test**: rub fountain-pen ink over a suspected burrow and wipe with alcohol - retained ink outlines a zig-zag track; **dermoscopy** shows the dark triangular head and mouthparts of the mite at the end of the burrow, the **delta-wing jet or hang-glider sign**.",
+        "**Differential diagnosis** - papular urticaria from insect bites (grouped on exposed limbs, seropapules, no burrows, no genital lesions), atopic dermatitis (flexural, personal or family atopy, no household clustering), pediculosis corporis (lesions along seam-contact areas of the trunk, lice in clothing seams), contact dermatitis, dermatitis herpetiformis and papular eruption of HIV.",
+        "**Post-scabetic itch** persists for two to four weeks after successful treatment because the antigen remains in the stratum corneum; treat it with emollients, a mild to moderate topical steroid and an oral antihistamine, and **do not repeat the scabicide**, because repeated application itself causes an irritant dermatitis that mimics failure.",
+        "Suspect **true treatment failure** if new burrows or new papules appear more than two weeks after treatment, and then ask about the three real causes - untreated contacts, incorrect application technique, and failure to decontaminate clothing and bedding.",
+      ],
+    },
+    {
+      heading: "Treatment of the patient and of the whole household",
+      points: [
+        "**Permethrin 5 per cent cream is first line at all ages above two months and in pregnancy and lactation**: apply to the whole body from the neck down (including the face and scalp in infants, the elderly and the immunosuppressed), leave for **8 to 14 hours (overnight)**, wash off, and **repeat once after 7 days** to kill mites hatching from eggs that survive the first application.",
+        "Application technique earns the mark: **apply after a bath to cool dry skin, cover every fold - behind the ears, umbilicus, natal cleft, genitalia, under the breasts and under the finger and toe nails after cutting them short - and reapply to the hands after every hand wash**; an adult needs about 30 grams per application.",
+        "**Oral ivermectin 200 microgram per kilogram as a single dose repeated after 7 to 14 days** is preferred for institutional outbreaks, crusted scabies, treatment failures and where topical application cannot be supervised; it is **not recommended in children under 15 kilograms or under 5 years, and is avoided in pregnancy and lactation**. Take it with food to improve absorption.",
+        "Alternatives - **benzyl benzoate 25 per cent lotion** (dilute to 12.5 per cent for children and 6.25 per cent for infants) applied on three consecutive nights, cheap and effective but stinging and irritant; **sulphur 5 to 10 per cent in petrolatum** for three consecutive nights, malodorous and staining but the safest option in infants under two months and in pregnancy; **crotamiton 10 per cent**, which is antipruritic but least effective; **lindane is no longer recommended** because of neurotoxicity.",
+        "**Treat every household member and every intimate or close physical contact of the last six weeks on the same day, whether or not they itch**, because contacts are in the asymptomatic incubation period and will otherwise re-infest the index case - this single sentence is the most examined point in the topic.",
+        "**Decontamination**: machine wash clothes, towels and bed linen used in the last three days in hot water above 60 degrees Celsius and dry in the sun or a hot dryer, or iron them; items that cannot be washed should be **sealed in a plastic bag for 72 hours to seven days**, since the mite dies within 2 to 3 days away from human skin. Fumigation of the house is unnecessary.",
+        "Also treat the complications: **oral antihistamine (hydroxyzine 25 mg at night or cetirizine 10 mg) for itch, emollients, and oral antibiotics for pyoderma**; screen the child for haematuria three weeks later if streptococcal impetigo was present, and check for other sexually transmitted infections when scabies is acquired sexually.",
+      ],
+    },
+    {
+      heading: "Pediculosis: head, body and pubic lice",
+      points: [
+        "**Pediculosis capitis** is caused by Pediculus humanus capitis, spreads by head-to-head contact and shared combs in schoolgirls, and presents with occipital and retroauricular itch, excoriation, occipital lymphadenopathy and secondary impetigo; the diagnosis is confirmed by **finding a live louse, since nits (egg cases) firmly cemented to the hair shaft may persist long after cure**.",
+        "Treat head lice with **permethrin 1 per cent cream rinse applied to damp hair for 10 minutes, or 5 per cent for 8 hours, repeated after 7 days**, or **malathion 0.5 per cent lotion for 8 to 12 hours**; add **wet combing with a fine-toothed nit comb and conditioner every 3 to 4 days for two weeks**, and treat affected household members. Oral ivermectin 200 microgram per kilogram on days 1 and 8 is used for resistant cases.",
+        "**Pediculosis corporis** is a disease of poverty and homelessness: the louse **lives and lays eggs in the seams of clothing, not on the body**, and produces itchy excoriated papules and, over years, the pigmented lichenified back of **vagabond's disease**; treatment is **hot washing, ironing or discarding the clothing plus personal hygiene**, with permethrin to the body only if lice are found on skin.",
+        "The body louse is a **vector of epidemic typhus (Rickettsia prowazekii), trench fever (Bartonella quintana) and relapsing fever (Borrelia recurrentis)** - the head louse and pubic louse transmit no disease, and this contrast is a standard viva question.",
+        "**Pediculosis pubis** is caused by Pthirus pubis, is sexually transmitted, causes itching in the pubic area with **bluish-grey macules (maculae ceruleae)** and rust-coloured specks of louse faeces on the underclothes; treat with permethrin 1 per cent or 5 per cent, treat sexual partners of the last month, and **screen for other sexually transmitted infections including HIV, syphilis and gonorrhoea**.",
+        "**Phthiriasis palpebrarum** (pubic lice on the eyelashes in a child) raises the question of sexual abuse and is treated with **thick petrolatum to the lid margins twice daily for 8 to 10 days plus mechanical removal**, never with a neurotoxic pediculicide near the eye.",
+      ],
+    },
+  ],
+  tables: [
+    {
+      heading: "Scabicides: dose, contact time and safety",
+      columns: ["Drug", "Strength and route", "Contact time and repeat", "Safe in", "Cautions"],
+      rows: [
+        ["Permethrin", "5 per cent cream, topical", "8 to 14 hours overnight, repeat day 7", "Above 2 months, pregnancy, lactation", "Costliest topical; mild burning"],
+        ["Ivermectin", "200 microgram/kg oral", "Single dose, repeat day 7 to 14", "Adults, children above 15 kg", "Avoid under 5 years, pregnancy, lactation"],
+        ["Benzyl benzoate", "25 per cent lotion (dilute for children)", "3 consecutive nights", "Adults, older children", "Stings on excoriated skin, irritant dermatitis"],
+        ["Sulphur", "5 to 10 per cent in petrolatum", "3 consecutive nights", "Infants under 2 months, pregnancy", "Malodorous, stains clothes"],
+        ["Crotamiton", "10 per cent cream or lotion", "2 to 5 consecutive nights", "Children, antipruritic", "Least effective as a scabicide"],
+        ["Lindane", "1 per cent lotion", "8 hours, single application", "Not recommended", "Neurotoxicity, seizures, aplastic anaemia"],
+      ],
+    },
+    {
+      heading: "The three pediculoses compared",
+      columns: ["Feature", "Pediculosis capitis", "Pediculosis corporis", "Pediculosis pubis"],
+      rows: [
+        ["Organism", "Pediculus humanus capitis", "Pediculus humanus corporis", "Pthirus pubis (crab louse)"],
+        ["Where the louse lives", "Scalp hair, close to the skin", "Seams of clothing", "Pubic, axillary, beard hair, eyelashes"],
+        ["Typical patient", "School child, girls more than boys", "Homeless, destitute, unwashed clothing", "Sexually active adult"],
+        ["Key sign", "Nits cemented to hair, occipital nodes", "Excoriated back, vagabond pigmentation", "Maculae ceruleae, rusty specks on underwear"],
+        ["Vector of disease", "No", "Epidemic typhus, trench fever, relapsing fever", "No"],
+        ["Treatment", "Permethrin 1 per cent plus wet combing, repeat day 7", "Wash, iron or discard clothing; hygiene", "Permethrin plus partner treatment and STI screen"],
+      ],
+    },
+  ],
+  redFlags: [
+    "Thick hyperkeratotic crusts with nail dystrophy and little itch - crusted scabies; isolate, investigate for HIV or other immunosuppression, and start combined ivermectin and topical therapy.",
+    "Fever, spreading erythema, tenderness or lymphangitis over excoriated scabies - cellulitis needing systemic antibiotics the same day.",
+    "Puffy eyelids, smoky urine or hypertension two to three weeks after impetiginised scabies in a child - acute post-streptococcal glomerulonephritis; check urine and blood pressure.",
+    "An institutional or hostel outbreak, or a bedridden patient in a nursing home - mass treatment of all residents and staff on a single day is required, not case-by-case treatment.",
+    "Scabies in an infant with failure to thrive, or widespread atypical scabies in an adult - test for HIV and for underlying immunosuppression.",
+    "Pubic lice on the eyelashes of a prepubertal child - evaluate for sexual abuse under the POCSO framework.",
+  ],
+  pearls: [
+    "The mark-carrying sentence is: treat all household and close contacts simultaneously on the same day, whether or not they itch, and decontaminate clothes and bedding.",
+    "Itch that wakes the patient at night plus another itching person in the house is scabies until proved otherwise, even without a visible burrow.",
+    "Itchy papules or nodules on the scrotum or penis in a man, and on the areolae in a woman, are close to diagnostic of scabies.",
+    "Adults are spared above the neck, infants are not - always treat the scalp and face in a baby under two years.",
+    "Post-scabetic itch lasts two to four weeks and is treated with emollients, a mild steroid and an antihistamine, not with more scabicide.",
+    "Permethrin needs a second application on day 7 because it is not fully ovicidal; a single application is the commonest reason for apparent treatment failure.",
+    "Nits alone do not mean active head lice - look for a live, moving louse before re-treating.",
+    "Crusted scabies is not itchy, and the patient who does not itch is the one who infests the whole ward.",
+  ],
+  theory: [
+    {
+      id: "dermatology-scabies-pediculosis-t1",
+      paper: "III",
+      kind: "long",
+      marks: 10,
+      minutes: 20,
+      frequency: "core",
+      question:
+        "A 24-year-old man presents with intense itching worse at night for three weeks. His wife and two children are also itching. Describe the clinical features, diagnosis and complete management of this condition including the household.",
+      openingLines: [
+        "This is scabies, an infestation of the stratum corneum by the mite Sarcoptes scabiei var. hominis, transmitted by prolonged skin-to-skin contact, and presenting with nocturnal pruritus, burrows and papules in a characteristic distribution with clustering of cases in a household.",
+        "The itch is a delayed type IV hypersensitivity response to mite antigen, appearing four to six weeks after a first infestation and within one to four days on re-infestation, which is why asymptomatic contacts must also be treated.",
+      ],
+      answer: [
+        {
+          heading: "1. Clinical features",
+          points: [
+            "Symptom: generalised itching that is characteristically worse at night and on warming in bed, disturbing sleep, with a history of similar itching in family members or bed partners.",
+            "Primary lesions: the burrow - a 3 to 10 mm greyish serpiginous ridge with a vesicle or black dot at one end - along with 1 to 3 mm erythematous papules and papulovesicles.",
+            "Distribution: finger webs, sides of fingers, flexor wrists, elbows, anterior axillary folds, periumbilical area and waist, buttocks, areolae in women, penis and scrotum in men; head and neck spared in adults but involved in infants.",
+            "Secondary lesions: excoriations, eczematisation, honey-coloured crusts of impetigo, lichenification and post-inflammatory hyperpigmentation.",
+            "Variants: nodular scabies on the genitalia, crusted (Norwegian) scabies in the immunosuppressed, scabies incognito after topical steroid use, and bullous scabies in the elderly.",
+          ],
+        },
+        {
+          heading: "2. Diagnosis",
+          points: [
+            "Clinical, using the IACS 2020 criteria: confirmed when a mite, egg or faecal pellet is demonstrated; clinical when burrows or typical genital or infant lesions are present; suspected on typical distribution with a contact history.",
+            "Skin scraping in mineral oil or 10 per cent KOH from an unexcoriated burrow, showing mites, eggs or scybala.",
+            "Burrow ink test and dermoscopy showing the delta-wing jet sign of the mite head at the end of a burrow.",
+            "Differential diagnosis: papular urticaria, atopic dermatitis, pediculosis corporis, contact dermatitis, dermatitis herpetiformis and papular pruritic eruption of HIV.",
+          ],
+        },
+        {
+          heading: "3. Treatment of the patient",
+          points: [
+            "Permethrin 5 per cent cream to the whole body from the neck down after a bath, left for 8 to 14 hours overnight, washed off, and repeated once after 7 days; about 30 g per adult application, reapplied to the hands after washing.",
+            "Alternatives: oral ivermectin 200 microgram per kilogram on day 1 and repeated day 7 to 14; benzyl benzoate 25 per cent on three consecutive nights; sulphur 5 to 10 per cent ointment for infants under two months and in pregnancy.",
+            "Symptomatic treatment: emollients, oral antihistamine such as hydroxyzine 25 mg at night, and a moderate topical corticosteroid for eczematisation and for post-scabetic itch.",
+            "Secondary pyoderma: oral cloxacillin 500 mg six hourly or amoxicillin-clavulanate for five to seven days; screen for haematuria and hypertension three weeks later.",
+          ],
+        },
+        {
+          heading: "4. Treatment of the household and environment",
+          points: [
+            "All household members, bed partners and close physical contacts of the previous six weeks are treated on the same day, whether or not they are symptomatic.",
+            "Clothes, towels and bed linen of the last three days are washed at above 60 degrees Celsius and sun dried or ironed; non-washable items are sealed in a plastic bag for 72 hours to one week.",
+            "The mite survives only 2 to 3 days off the host, so fumigation and disinfection of the house are unnecessary.",
+            "Counsel that itching may persist two to four weeks after cure and does not mean failure; review at two weeks and treat again only if new burrows or new papules have appeared.",
+          ],
+        },
+        {
+          heading: "5. Public health note",
+          points: [
+            "Scabies is a WHO neglected tropical disease; mass drug administration with ivermectin is used in high-prevalence communities and institutional outbreaks.",
+            "Control of scabies reduces streptococcal pyoderma and hence acute post-streptococcal glomerulonephritis and acute rheumatic fever in children.",
+          ],
+        },
+      ],
+      mustDraw: [
+        "A figure of the body showing the sites of predilection of scabies in an adult and in an infant.",
+        "A table of scabicides with strength, contact time, repeat schedule and safety in pregnancy and infancy.",
+      ],
+      markSplit: [
+        { part: "Clinical features and variants", marks: 3 },
+        { part: "Diagnosis and differential diagnosis", marks: 2 },
+        { part: "Treatment of the patient", marks: 3 },
+        { part: "Household treatment and decontamination", marks: 2 },
+      ],
+      keywords: ["scabies", "permethrin", "ivermectin", "burrow", "household contacts", "nocturnal itch"],
+    },
+    {
+      id: "dermatology-scabies-pediculosis-t2",
+      paper: "III",
+      kind: "short-note",
+      marks: 5,
+      minutes: 10,
+      frequency: "common",
+      question: "Write short notes on crusted (Norwegian) scabies.",
+      openingLines: [
+        "Crusted or Norwegian scabies is a hyperinfestation with Sarcoptes scabiei carrying thousands to millions of mites, occurring in immunosuppressed, neurologically impaired or malnourished hosts who cannot mount an effective scratch or immune response.",
+        "It is extremely contagious and is typically the index case behind an outbreak in a family, hospital ward or old age home.",
+      ],
+      answer: [
+        {
+          heading: "Predisposing factors",
+          points: [
+            "HIV infection, HTLV-1 infection, lymphoma and organ transplantation.",
+            "Lepromatous leprosy, Down syndrome, dementia, paralysis, spinal cord injury and severe malnutrition.",
+            "Prolonged topical or systemic corticosteroid use, including over-the-counter steroid combination creams.",
+          ],
+        },
+        {
+          heading: "Clinical features",
+          points: [
+            "Thick, warty, fissured hyperkeratotic crusts on hands, feet, elbows, knees, scalp and ears, with generalised scaling that may progress to erythroderma.",
+            "Gross nail thickening with subungual hyperkeratotic debris that harbours mites.",
+            "Itch is mild or absent, which delays diagnosis; a foul smell and secondary bacterial infection are common.",
+            "Complications: sepsis from Staphylococcus aureus or Streptococcus pyogenes bacteraemia, which is the main cause of death.",
+          ],
+        },
+        {
+          heading: "Diagnosis and treatment",
+          points: [
+            "Scraping of crust shows innumerable mites and eggs; skin biopsy shows mites in a thickened hyperkeratotic stratum corneum.",
+            "Combined therapy: oral ivermectin 200 microgram per kilogram on days 1, 2, 8, 9 and 15, extended to days 22 and 29 in severe cases.",
+            "Topical permethrin 5 per cent daily for seven days then twice weekly until cure, with 5 per cent salicylic acid or urea ointment as a keratolytic to allow penetration.",
+            "Barrier nursing with gloves and gowns, isolation, decontamination of linen, and simultaneous treatment of all contacts and health care staff.",
+            "Investigate for the underlying immunosuppression, particularly HIV testing.",
+          ],
+        },
+      ],
+      markSplit: [
+        { part: "Definition and predisposing factors", marks: 1 },
+        { part: "Clinical features and complications", marks: 2 },
+        { part: "Diagnosis and combined treatment", marks: 2 },
+      ],
+      keywords: ["crusted scabies", "Norwegian scabies", "ivermectin", "keratolytic", "HIV", "outbreak"],
+    },
+  ],
+  mcqs: [
+    {
+      id: "dermatology-scabies-pediculosis-q1",
+      stem: "A 30-year-old man is treated for scabies with a single overnight application of permethrin 5 per cent cream. Three weeks later he returns with fresh burrows in the finger webs. His wife, who also itches, was never treated. What is the single most important reason for the failure?",
+      options: [
+        "Permethrin resistance in the local mite population",
+        "Untreated household contacts together with omission of the day 7 repeat application",
+        "Inadequate contact time of the cream on the skin",
+        "Persistence of mite antigen causing post-scabetic itch",
+        "Development of crusted scabies",
+      ],
+      answer: 1,
+      explanation:
+        "New burrows three weeks later mean live mites, and the two commonest causes are an untreated contact who re-infests the patient and the missed second application on day 7, since permethrin is not reliably ovicidal. Permethrin resistance is documented but rare and should never be the first explanation when a contact is admittedly untreated. Inadequate contact time is possible but he did leave it overnight, which is within the 8 to 14 hour range. Post-scabetic itch is itch without new lesions, so fresh burrows exclude it. Crusted scabies presents with thick hyperkeratotic crusts and little itch, not a few new burrows.",
+      difficulty: "easy",
+    },
+    {
+      id: "dermatology-scabies-pediculosis-q2",
+      stem: "A 6-week-old exclusively breastfed infant has itchy vesicles and pustules on the palms, soles and scalp; the mother has itchy papules on her wrists and areolae. Which treatment is most appropriate for the infant?",
+      options: [
+        "Oral ivermectin 200 microgram per kilogram single dose",
+        "Lindane 1 per cent lotion for 8 hours",
+        "Sulphur 5 per cent in petrolatum on three consecutive nights",
+        "Benzyl benzoate 25 per cent lotion on three consecutive nights",
+        "Crotamiton 10 per cent cream for two nights only",
+      ],
+      answer: 2,
+      explanation:
+        "Below two months of age permethrin is not licensed and sulphur 5 to 10 per cent in petrolatum applied for three consecutive nights is the accepted safe scabicide, covering the scalp and face as well since infants are affected above the neck. Oral ivermectin is contraindicated under 15 kilograms and under five years. Lindane is neurotoxic and is no longer recommended at any age, least of all in a neonate with a high surface-area-to-weight ratio. Benzyl benzoate 25 per cent is far too irritant for a six-week-old and would need dilution to 6.25 per cent at best. Crotamiton is antipruritic but is the least effective scabicide and would not clear the infestation.",
+      difficulty: "moderate",
+    },
+    {
+      id: "dermatology-scabies-pediculosis-q3",
+      stem: "A 55-year-old bedridden man from an old age home has thick warty crusts on the hands, feet and elbows with dystrophic nails and generalised scaling, but complains of almost no itching. Four staff members have developed itchy papules. What is the diagnosis and the correct treatment?",
+      options: [
+        "Psoriasis vulgaris - potent topical steroid under occlusion",
+        "Crusted scabies - oral ivermectin on days 1, 2, 8, 9 and 15 plus topical permethrin and a keratolytic",
+        "Ordinary scabies - a single application of permethrin 5 per cent",
+        "Chronic eczema - emollients and a moderate topical steroid",
+        "Palmoplantar keratoderma - urea 20 per cent ointment",
+      ],
+      answer: 1,
+      explanation:
+        "Hyperkeratotic crusts with nail dystrophy, minimal itch and an outbreak among carers is crusted scabies, which carries an enormous mite burden and needs multiple doses of oral ivermectin combined with repeated topical permethrin and a keratolytic to let the scabicide penetrate the crust. Psoriasis would show silvery scale, Auspitz sign and typical extensor plaques, and treating this patient with a potent steroid would worsen the infestation. A single permethrin application is grossly inadequate for a mite load of thousands. Eczema and keratoderma do not cause an outbreak of itching among staff, which is the clue that this is an infestation.",
+      difficulty: "moderate",
+    },
+    {
+      id: "dermatology-scabies-pediculosis-q4",
+      stem: "A 32-year-old destitute man has intensely itchy excoriated papules and lichenified hyperpigmented skin over the back and shoulders. No lesions are seen in the finger webs or genitalia. Examination of his shirt shows lice and eggs in the seams. Which complication is he specifically at risk of?",
+      options: [
+        "Acute post-streptococcal glomerulonephritis",
+        "Epidemic typhus and trench fever",
+        "Acquired immunodeficiency from lymphatic spread",
+        "Bartonella henselae cat scratch disease",
+        "Chagas disease",
+      ],
+      answer: 1,
+      explanation:
+        "Lice living in clothing seams is pediculosis corporis, and Pediculus humanus corporis is the vector of epidemic typhus caused by Rickettsia prowazekii, trench fever caused by Bartonella quintana and louse-borne relapsing fever caused by Borrelia recurrentis. Post-streptococcal glomerulonephritis follows streptococcal pyoderma, which is a complication of scabies and impetigo rather than a vector-borne consequence of body lice. Lice do not cause immunodeficiency. Cat scratch disease is Bartonella henselae transmitted by cats and their fleas, not by lice. Chagas disease is transmitted by the reduviid bug in Latin America.",
+      difficulty: "moderate",
+    },
+    {
+      id: "dermatology-scabies-pediculosis-q5",
+      stem: "A 28-year-old woman treated correctly for scabies with permethrin on day 0 and day 7 returns on day 18 with continued itching. Examination shows healing excoriations and post-inflammatory hyperpigmentation but no burrows and no new papules. Her family was treated. What is the correct action?",
+      options: [
+        "Repeat permethrin for a third application",
+        "Give oral ivermectin as she has failed topical therapy",
+        "Reassure and treat with emollients, a moderate topical steroid and an oral antihistamine",
+        "Take a skin biopsy to look for mites",
+        "Start oral prednisolone 30 mg daily for two weeks",
+      ],
+      answer: 2,
+      explanation:
+        "Itch without new burrows or new papules two to four weeks after adequate treatment is post-scabetic itch, a hypersensitivity response to retained mite antigen in the stratum corneum, and it is managed with emollients, a moderate topical corticosteroid and an antihistamine. A third application of permethrin adds irritant dermatitis that perpetuates the itch and is the classic wrong answer. Ivermectin is reserved for genuine failure, which requires objective new lesions. A biopsy is unnecessary when the clinical picture is clear and no active lesions exist. Systemic steroids are disproportionate and risk converting a residual infestation into crusted scabies.",
+      difficulty: "easy",
+    },
+  ],
+  cards: [
+    {
+      id: "dermatology-scabies-pediculosis-c1",
+      front: "Incubation period of scabies and why it matters.",
+      back: "Four to six weeks in a first infestation (one to four days on re-infestation) because the itch is a type IV hypersensitivity reaction - so asymptomatic contacts are already infested and must be treated.",
+    },
+    {
+      id: "dermatology-scabies-pediculosis-c2",
+      front: "Pathognomonic lesion of scabies and where to look for it.",
+      back: "The burrow - a 3 to 10 mm greyish serpiginous ridge with a vesicle or black dot at one end, on the finger webs, sides of fingers, flexor wrists and ulnar border of the hand.",
+    },
+    {
+      id: "dermatology-scabies-pediculosis-c3",
+      front: "Permethrin regimen for scabies.",
+      back: "5 per cent cream to the whole body neck down (whole body in infants), leave 8 to 14 hours overnight, wash off, repeat on day 7; about 30 g per adult application, reapply to hands after washing.",
+    },
+    {
+      id: "dermatology-scabies-pediculosis-c4",
+      front: "Ivermectin dose and contraindications in scabies.",
+      back: "200 microgram per kilogram orally with food, repeated day 7 to 14; avoid under 15 kg or 5 years, and in pregnancy and lactation.",
+    },
+    {
+      id: "dermatology-scabies-pediculosis-c5",
+      front: "Scabicide of choice under two months of age and in pregnancy.",
+      back: "Sulphur 5 to 10 per cent in petrolatum for three consecutive nights (permethrin 5 per cent is also accepted in pregnancy and above two months).",
+    },
+    {
+      id: "dermatology-scabies-pediculosis-c6",
+      front: "Environmental decontamination in scabies.",
+      back: "Wash linen and clothes of the last 3 days above 60 degrees Celsius, sun dry or iron; seal non-washables in a bag for 72 hours to a week. The mite dies in 2 to 3 days off the host, so fumigation is not needed.",
+    },
+    {
+      id: "dermatology-scabies-pediculosis-c7",
+      front: "Post-scabetic itch versus treatment failure.",
+      back: "Post-scabetic itch: itching for 2 to 4 weeks with no new burrows or papules - treat with emollients, mild steroid and antihistamine. Failure: new burrows or papules after 2 weeks - re-treat and find the untreated contact.",
+    },
+    {
+      id: "dermatology-scabies-pediculosis-c8",
+      front: "Which louse transmits systemic disease, and which diseases?",
+      back: "Only the body louse (Pediculus humanus corporis) - epidemic typhus (Rickettsia prowazekii), trench fever (Bartonella quintana) and relapsing fever (Borrelia recurrentis).",
+    },
+    {
+      id: "dermatology-scabies-pediculosis-c9",
+      front: "Treatment of pediculosis corporis.",
+      back: "Treat the clothing, not the skin - hot wash, iron or discard clothing and improve hygiene; permethrin to the body only if lice are found on the skin.",
+    },
+    {
+      id: "dermatology-scabies-pediculosis-c10",
+      front: "Maculae ceruleae - what and where?",
+      back: "Bluish-grey macules at the site of pubic louse bites on the lower abdomen, thighs and buttocks in pediculosis pubis.",
+    },
+  ],
+  references: [
+    "IADVL Textbook of Dermatology, 5th edition, 2022 - scabies and other infestations",
+    "International Alliance for the Control of Scabies (IACS) 2020 Consensus Criteria for the Diagnosis of Scabies",
+    "WHO Informal Consultation on a Framework for Scabies Control, 2019, and WHO NTD Road Map 2021-2030",
+    "British Association of Dermatologists guideline on the management of scabies, 2024",
+    "Centers for Disease Control and Prevention, Parasites - Scabies and Lice, 2024 update",
+    "Neena Khanna, Illustrated Synopsis of Dermatology and Sexually Transmitted Diseases, 6th edition, 2020",
+  ],
+});
 const cases: ClinicalCase[] = [
   {
     id: "psychiatry-case-1",

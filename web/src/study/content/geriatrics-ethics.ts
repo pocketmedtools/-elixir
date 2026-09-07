@@ -481,6 +481,2081 @@ topics.push({
   ],
 });
 
+topics.push({
+  id: "dermatology-scabies-pediculosis",
+  title: "Scabies and pediculosis, including treatment of the whole household",
+  oneLiner:
+    "Scabies is an intensely pruritic infestation by the mite Sarcoptes scabiei var. hominis in which nocturnal itch, burrows and papules in the finger webs, wrists, axillae, waist and genitalia, and a history of itching in other members of the household, make the diagnosis clinically, and the cure depends entirely on treating every contact simultaneously with topical permethrin 5 per cent or oral ivermectin plus decontamination of clothes and bedding.",
+  frequency: "core",
+  keywords: [
+    "scabies",
+    "Sarcoptes scabiei",
+    "burrow",
+    "nocturnal pruritus",
+    "permethrin",
+    "ivermectin",
+    "benzyl benzoate",
+    "crusted scabies",
+    "Norwegian scabies",
+    "pediculosis capitis",
+    "pediculosis corporis",
+    "pthirus pubis",
+    "nits",
+    "malathion",
+    "post-scabetic itch",
+    "dermoscopy delta sign",
+    "impetigo",
+    "household contacts",
+  ],
+  sections: [
+    {
+      heading: "The organism, the transmission and why the whole family matters",
+      points: [
+        "Scabies is caused by **Sarcoptes scabiei var. hominis**, an obligate human mite; the fertilised female burrows into the stratum corneum at about 2 mm a day and lays two to three eggs daily for a life of four to six weeks, and an ordinary patient carries only **10 to 15 adult mites** on the whole body.",
+        "Transmission needs **prolonged skin-to-skin contact of 15 to 20 minutes**, which is why it runs through households, hostels, orphanages, prisons and shared beds rather than through casual handshakes; fomite transmission through shared clothes and bedding is real but secondary, except in crusted scabies where it is the dominant route.",
+        "The itch is a **type IV delayed hypersensitivity reaction to mite antigen, faeces and eggs**, so a first infestation stays silent for **four to six weeks** before itching begins, while a re-infestation itches within one to four days - this incubation period is the reason asymptomatic contacts must still be treated.",
+        "In Indian general practice scabies clusters in the rainy and winter months, in overcrowded housing and where water for washing is short; the classical exam history is **itching worse at night that disturbs sleep, with at least one other person in the house itching**.",
+        "Scabies is a **WHO-recognised neglected tropical disease** since 2017, with an estimated 200 million people affected at any time, and in India it is one of the commonest reasons for a skin consultation in primary care.",
+        "Untreated scabies in children is a major driver of **streptococcal pyoderma and therefore of acute post-streptococcal glomerulonephritis and acute rheumatic fever**, which is why treating scabies is a public health act and not merely a comfort measure.",
+      ],
+    },
+    {
+      heading: "Clinical features and the lesion vocabulary to use",
+      points: [
+        "Describe the eruption in the fixed order - **number, site and distribution, size, shape, surface, margin, colour, arrangement and secondary change**; in scabies the answer is multiple, symmetrical, 1 to 3 mm erythematous **papules and papulovesicles with excoriations and crusting**, discrete but grouped, in a characteristic distribution below the neck.",
+        "The **pathognomonic primary lesion is the burrow**: a 3 to 10 mm greyish, serpiginous or S-shaped thread-like ridge with a minute vesicle or black dot (the mite) at one end, best seen on the finger webs, the sides of the fingers, the flexor wrists and the ulnar border of the hand.",
+        "**Sites of predilection** - finger webs, flexor wrists, elbows, anterior axillary folds, periumbilical skin and waist, buttocks, areolae in women, and the penis and scrotum in men; **itchy papules or nodules on the glans, shaft and scrotum are almost diagnostic of scabies in an adult male**.",
+        "**The head and neck are spared in adults but involved in infants and in the elderly**; in infants under two years the palms, soles, scalp and face are typically affected with vesicles, pustules and nodules, and secondary eczematisation is common.",
+        "Secondary lesions dominate what you actually see: **excoriations proving the itch, honey-coloured crusts of secondary impetigo, eczematisation and post-inflammatory hyperpigmentation**; lichenification appears where the patient has scratched for months.",
+        "**Nodular scabies** presents as firm, reddish-brown, intensely itchy 5 to 10 mm nodules on the scrotum, penis, groins and axillae that are a persistent hypersensitivity granuloma and may **persist for weeks to months after the mite is dead**, needing intralesional or potent topical steroid rather than more scabicide.",
+      ],
+    },
+    {
+      heading: "Variants that change the management",
+      points: [
+        "**Crusted (Norwegian) scabies** occurs in HIV infection, human T-lymphotropic virus 1 infection, lepromatous leprosy, malnutrition, Down syndrome, dementia, paralysis and long-term topical or systemic steroid use, and carries **thousands to millions of mites**.",
+        "It presents as **thick, warty, fissured hyperkeratotic crusts on the hands, feet, elbows, scalp and under the nails, with gross nail dystrophy and subungual debris, and characteristically little or no itch**; it is highly contagious and is the usual index case behind an institutional outbreak.",
+        "Crusted scabies needs **combined therapy - a keratolytic such as 5 per cent salicylic acid ointment, topical permethrin daily then twice weekly, plus oral ivermectin 200 microgram per kilogram on days 1, 2, 8, 9 and 15, extended to days 22 and 29 in severe disease** - and barrier nursing with gowns and gloves.",
+        "**Scabies incognito** results from topical or systemic steroids that suppress the inflammatory response: the eruption becomes atypical and widespread, burrows are hard to find, and the itch is disproportionate to a bland-looking rash - a common trap in Indian practice where potent steroid combination creams are sold over the counter.",
+        "**Bullous scabies** in the elderly mimics bullous pemphigoid, and **scabies in the very clean patient** may show only a handful of papules on the wrists; both are diagnosed by taking the household history seriously.",
+        "**Secondary bacterial infection** with Staphylococcus aureus or Streptococcus pyogenes produces impetigo, ecthyma, folliculitis or cellulitis and must be treated with oral cloxacillin or amoxicillin-clavulanate before or alongside the scabicide.",
+      ],
+    },
+    {
+      heading: "Diagnosis, differential diagnosis and bedside tests",
+      points: [
+        "Scabies is a **clinical diagnosis** made on the triad of nocturnal itch, typical distribution and an affected household contact; the 2020 International Alliance for the Control of Scabies (IACS) criteria grade the diagnosis as confirmed (mite, egg or faecal pellet seen), clinical (burrows, typical genital or infant lesions) or suspected.",
+        "**Skin scraping**: place a drop of mineral oil or 10 per cent potassium hydroxide on an unexcoriated burrow or papule, scrape with a number 15 blade held tangentially until pinpoint bleeding, and look under low power for **mites, oval eggs or brown faecal pellets (scybala)**.",
+        "**Burrow ink test**: rub fountain-pen ink over a suspected burrow and wipe with alcohol - retained ink outlines a zig-zag track; **dermoscopy** shows the dark triangular head and mouthparts of the mite at the end of the burrow, the **delta-wing jet or hang-glider sign**.",
+        "**Differential diagnosis** - papular urticaria from insect bites (grouped on exposed limbs, seropapules, no burrows, no genital lesions), atopic dermatitis (flexural, personal or family atopy, no household clustering), pediculosis corporis (lesions along seam-contact areas of the trunk, lice in clothing seams), contact dermatitis, dermatitis herpetiformis and papular eruption of HIV.",
+        "**Post-scabetic itch** persists for two to four weeks after successful treatment because the antigen remains in the stratum corneum; treat it with emollients, a mild to moderate topical steroid and an oral antihistamine, and **do not repeat the scabicide**, because repeated application itself causes an irritant dermatitis that mimics failure.",
+        "Suspect **true treatment failure** if new burrows or new papules appear more than two weeks after treatment, and then ask about the three real causes - untreated contacts, incorrect application technique, and failure to decontaminate clothing and bedding.",
+      ],
+    },
+    {
+      heading: "Treatment of the patient and of the whole household",
+      points: [
+        "**Permethrin 5 per cent cream is first line at all ages above two months and in pregnancy and lactation**: apply to the whole body from the neck down (including the face and scalp in infants, the elderly and the immunosuppressed), leave for **8 to 14 hours (overnight)**, wash off, and **repeat once after 7 days** to kill mites hatching from eggs that survive the first application.",
+        "Application technique earns the mark: **apply after a bath to cool dry skin, cover every fold - behind the ears, umbilicus, natal cleft, genitalia, under the breasts and under the finger and toe nails after cutting them short - and reapply to the hands after every hand wash**; an adult needs about 30 grams per application.",
+        "**Oral ivermectin 200 microgram per kilogram as a single dose repeated after 7 to 14 days** is preferred for institutional outbreaks, crusted scabies, treatment failures and where topical application cannot be supervised; it is **not recommended in children under 15 kilograms or under 5 years, and is avoided in pregnancy and lactation**. Take it with food to improve absorption.",
+        "Alternatives - **benzyl benzoate 25 per cent lotion** (dilute to 12.5 per cent for children and 6.25 per cent for infants) applied on three consecutive nights, cheap and effective but stinging and irritant; **sulphur 5 to 10 per cent in petrolatum** for three consecutive nights, malodorous and staining but the safest option in infants under two months and in pregnancy; **crotamiton 10 per cent**, which is antipruritic but least effective; **lindane is no longer recommended** because of neurotoxicity.",
+        "**Treat every household member and every intimate or close physical contact of the last six weeks on the same day, whether or not they itch**, because contacts are in the asymptomatic incubation period and will otherwise re-infest the index case - this single sentence is the most examined point in the topic.",
+        "**Decontamination**: machine wash clothes, towels and bed linen used in the last three days in hot water above 60 degrees Celsius and dry in the sun or a hot dryer, or iron them; items that cannot be washed should be **sealed in a plastic bag for 72 hours to seven days**, since the mite dies within 2 to 3 days away from human skin. Fumigation of the house is unnecessary.",
+        "Also treat the complications: **oral antihistamine (hydroxyzine 25 mg at night or cetirizine 10 mg) for itch, emollients, and oral antibiotics for pyoderma**; screen the child for haematuria three weeks later if streptococcal impetigo was present, and check for other sexually transmitted infections when scabies is acquired sexually.",
+      ],
+    },
+    {
+      heading: "Pediculosis: head, body and pubic lice",
+      points: [
+        "**Pediculosis capitis** is caused by Pediculus humanus capitis, spreads by head-to-head contact and shared combs in schoolgirls, and presents with occipital and retroauricular itch, excoriation, occipital lymphadenopathy and secondary impetigo; the diagnosis is confirmed by **finding a live louse, since nits (egg cases) firmly cemented to the hair shaft may persist long after cure**.",
+        "Treat head lice with **permethrin 1 per cent cream rinse applied to damp hair for 10 minutes, or 5 per cent for 8 hours, repeated after 7 days**, or **malathion 0.5 per cent lotion for 8 to 12 hours**; add **wet combing with a fine-toothed nit comb and conditioner every 3 to 4 days for two weeks**, and treat affected household members. Oral ivermectin 200 microgram per kilogram on days 1 and 8 is used for resistant cases.",
+        "**Pediculosis corporis** is a disease of poverty and homelessness: the louse **lives and lays eggs in the seams of clothing, not on the body**, and produces itchy excoriated papules and, over years, the pigmented lichenified back of **vagabond's disease**; treatment is **hot washing, ironing or discarding the clothing plus personal hygiene**, with permethrin to the body only if lice are found on skin.",
+        "The body louse is a **vector of epidemic typhus (Rickettsia prowazekii), trench fever (Bartonella quintana) and relapsing fever (Borrelia recurrentis)** - the head louse and pubic louse transmit no disease, and this contrast is a standard viva question.",
+        "**Pediculosis pubis** is caused by Pthirus pubis, is sexually transmitted, causes itching in the pubic area with **bluish-grey macules (maculae ceruleae)** and rust-coloured specks of louse faeces on the underclothes; treat with permethrin 1 per cent or 5 per cent, treat sexual partners of the last month, and **screen for other sexually transmitted infections including HIV, syphilis and gonorrhoea**.",
+        "**Phthiriasis palpebrarum** (pubic lice on the eyelashes in a child) raises the question of sexual abuse and is treated with **thick petrolatum to the lid margins twice daily for 8 to 10 days plus mechanical removal**, never with a neurotoxic pediculicide near the eye.",
+      ],
+    },
+  ],
+  tables: [
+    {
+      heading: "Scabicides: dose, contact time and safety",
+      columns: ["Drug", "Strength and route", "Contact time and repeat", "Safe in", "Cautions"],
+      rows: [
+        ["Permethrin", "5 per cent cream, topical", "8 to 14 hours overnight, repeat day 7", "Above 2 months, pregnancy, lactation", "Costliest topical; mild burning"],
+        ["Ivermectin", "200 microgram/kg oral", "Single dose, repeat day 7 to 14", "Adults, children above 15 kg", "Avoid under 5 years, pregnancy, lactation"],
+        ["Benzyl benzoate", "25 per cent lotion (dilute for children)", "3 consecutive nights", "Adults, older children", "Stings on excoriated skin, irritant dermatitis"],
+        ["Sulphur", "5 to 10 per cent in petrolatum", "3 consecutive nights", "Infants under 2 months, pregnancy", "Malodorous, stains clothes"],
+        ["Crotamiton", "10 per cent cream or lotion", "2 to 5 consecutive nights", "Children, antipruritic", "Least effective as a scabicide"],
+        ["Lindane", "1 per cent lotion", "8 hours, single application", "Not recommended", "Neurotoxicity, seizures, aplastic anaemia"],
+      ],
+    },
+    {
+      heading: "The three pediculoses compared",
+      columns: ["Feature", "Pediculosis capitis", "Pediculosis corporis", "Pediculosis pubis"],
+      rows: [
+        ["Organism", "Pediculus humanus capitis", "Pediculus humanus corporis", "Pthirus pubis (crab louse)"],
+        ["Where the louse lives", "Scalp hair, close to the skin", "Seams of clothing", "Pubic, axillary, beard hair, eyelashes"],
+        ["Typical patient", "School child, girls more than boys", "Homeless, destitute, unwashed clothing", "Sexually active adult"],
+        ["Key sign", "Nits cemented to hair, occipital nodes", "Excoriated back, vagabond pigmentation", "Maculae ceruleae, rusty specks on underwear"],
+        ["Vector of disease", "No", "Epidemic typhus, trench fever, relapsing fever", "No"],
+        ["Treatment", "Permethrin 1 per cent plus wet combing, repeat day 7", "Wash, iron or discard clothing; hygiene", "Permethrin plus partner treatment and STI screen"],
+      ],
+    },
+  ],
+  redFlags: [
+    "Thick hyperkeratotic crusts with nail dystrophy and little itch - crusted scabies; isolate, investigate for HIV or other immunosuppression, and start combined ivermectin and topical therapy.",
+    "Fever, spreading erythema, tenderness or lymphangitis over excoriated scabies - cellulitis needing systemic antibiotics the same day.",
+    "Puffy eyelids, smoky urine or hypertension two to three weeks after impetiginised scabies in a child - acute post-streptococcal glomerulonephritis; check urine and blood pressure.",
+    "An institutional or hostel outbreak, or a bedridden patient in a nursing home - mass treatment of all residents and staff on a single day is required, not case-by-case treatment.",
+    "Scabies in an infant with failure to thrive, or widespread atypical scabies in an adult - test for HIV and for underlying immunosuppression.",
+    "Pubic lice on the eyelashes of a prepubertal child - evaluate for sexual abuse under the POCSO framework.",
+  ],
+  pearls: [
+    "The mark-carrying sentence is: treat all household and close contacts simultaneously on the same day, whether or not they itch, and decontaminate clothes and bedding.",
+    "Itch that wakes the patient at night plus another itching person in the house is scabies until proved otherwise, even without a visible burrow.",
+    "Itchy papules or nodules on the scrotum or penis in a man, and on the areolae in a woman, are close to diagnostic of scabies.",
+    "Adults are spared above the neck, infants are not - always treat the scalp and face in a baby under two years.",
+    "Post-scabetic itch lasts two to four weeks and is treated with emollients, a mild steroid and an antihistamine, not with more scabicide.",
+    "Permethrin needs a second application on day 7 because it is not fully ovicidal; a single application is the commonest reason for apparent treatment failure.",
+    "Nits alone do not mean active head lice - look for a live, moving louse before re-treating.",
+    "Crusted scabies is not itchy, and the patient who does not itch is the one who infests the whole ward.",
+  ],
+  theory: [
+    {
+      id: "dermatology-scabies-pediculosis-t1",
+      paper: "III",
+      kind: "long",
+      marks: 10,
+      minutes: 20,
+      frequency: "core",
+      question:
+        "A 24-year-old man presents with intense itching worse at night for three weeks. His wife and two children are also itching. Describe the clinical features, diagnosis and complete management of this condition including the household.",
+      openingLines: [
+        "This is scabies, an infestation of the stratum corneum by the mite Sarcoptes scabiei var. hominis, transmitted by prolonged skin-to-skin contact, and presenting with nocturnal pruritus, burrows and papules in a characteristic distribution with clustering of cases in a household.",
+        "The itch is a delayed type IV hypersensitivity response to mite antigen, appearing four to six weeks after a first infestation and within one to four days on re-infestation, which is why asymptomatic contacts must also be treated.",
+      ],
+      answer: [
+        {
+          heading: "1. Clinical features",
+          points: [
+            "Symptom: generalised itching that is characteristically worse at night and on warming in bed, disturbing sleep, with a history of similar itching in family members or bed partners.",
+            "Primary lesions: the burrow - a 3 to 10 mm greyish serpiginous ridge with a vesicle or black dot at one end - along with 1 to 3 mm erythematous papules and papulovesicles.",
+            "Distribution: finger webs, sides of fingers, flexor wrists, elbows, anterior axillary folds, periumbilical area and waist, buttocks, areolae in women, penis and scrotum in men; head and neck spared in adults but involved in infants.",
+            "Secondary lesions: excoriations, eczematisation, honey-coloured crusts of impetigo, lichenification and post-inflammatory hyperpigmentation.",
+            "Variants: nodular scabies on the genitalia, crusted (Norwegian) scabies in the immunosuppressed, scabies incognito after topical steroid use, and bullous scabies in the elderly.",
+          ],
+        },
+        {
+          heading: "2. Diagnosis",
+          points: [
+            "Clinical, using the IACS 2020 criteria: confirmed when a mite, egg or faecal pellet is demonstrated; clinical when burrows or typical genital or infant lesions are present; suspected on typical distribution with a contact history.",
+            "Skin scraping in mineral oil or 10 per cent KOH from an unexcoriated burrow, showing mites, eggs or scybala.",
+            "Burrow ink test and dermoscopy showing the delta-wing jet sign of the mite head at the end of a burrow.",
+            "Differential diagnosis: papular urticaria, atopic dermatitis, pediculosis corporis, contact dermatitis, dermatitis herpetiformis and papular pruritic eruption of HIV.",
+          ],
+        },
+        {
+          heading: "3. Treatment of the patient",
+          points: [
+            "Permethrin 5 per cent cream to the whole body from the neck down after a bath, left for 8 to 14 hours overnight, washed off, and repeated once after 7 days; about 30 g per adult application, reapplied to the hands after washing.",
+            "Alternatives: oral ivermectin 200 microgram per kilogram on day 1 and repeated day 7 to 14; benzyl benzoate 25 per cent on three consecutive nights; sulphur 5 to 10 per cent ointment for infants under two months and in pregnancy.",
+            "Symptomatic treatment: emollients, oral antihistamine such as hydroxyzine 25 mg at night, and a moderate topical corticosteroid for eczematisation and for post-scabetic itch.",
+            "Secondary pyoderma: oral cloxacillin 500 mg six hourly or amoxicillin-clavulanate for five to seven days; screen for haematuria and hypertension three weeks later.",
+          ],
+        },
+        {
+          heading: "4. Treatment of the household and environment",
+          points: [
+            "All household members, bed partners and close physical contacts of the previous six weeks are treated on the same day, whether or not they are symptomatic.",
+            "Clothes, towels and bed linen of the last three days are washed at above 60 degrees Celsius and sun dried or ironed; non-washable items are sealed in a plastic bag for 72 hours to one week.",
+            "The mite survives only 2 to 3 days off the host, so fumigation and disinfection of the house are unnecessary.",
+            "Counsel that itching may persist two to four weeks after cure and does not mean failure; review at two weeks and treat again only if new burrows or new papules have appeared.",
+          ],
+        },
+        {
+          heading: "5. Public health note",
+          points: [
+            "Scabies is a WHO neglected tropical disease; mass drug administration with ivermectin is used in high-prevalence communities and institutional outbreaks.",
+            "Control of scabies reduces streptococcal pyoderma and hence acute post-streptococcal glomerulonephritis and acute rheumatic fever in children.",
+          ],
+        },
+      ],
+      mustDraw: [
+        "A figure of the body showing the sites of predilection of scabies in an adult and in an infant.",
+        "A table of scabicides with strength, contact time, repeat schedule and safety in pregnancy and infancy.",
+      ],
+      markSplit: [
+        { part: "Clinical features and variants", marks: 3 },
+        { part: "Diagnosis and differential diagnosis", marks: 2 },
+        { part: "Treatment of the patient", marks: 3 },
+        { part: "Household treatment and decontamination", marks: 2 },
+      ],
+      keywords: ["scabies", "permethrin", "ivermectin", "burrow", "household contacts", "nocturnal itch"],
+    },
+    {
+      id: "dermatology-scabies-pediculosis-t2",
+      paper: "III",
+      kind: "short-note",
+      marks: 5,
+      minutes: 10,
+      frequency: "common",
+      question: "Write short notes on crusted (Norwegian) scabies.",
+      openingLines: [
+        "Crusted or Norwegian scabies is a hyperinfestation with Sarcoptes scabiei carrying thousands to millions of mites, occurring in immunosuppressed, neurologically impaired or malnourished hosts who cannot mount an effective scratch or immune response.",
+        "It is extremely contagious and is typically the index case behind an outbreak in a family, hospital ward or old age home.",
+      ],
+      answer: [
+        {
+          heading: "Predisposing factors",
+          points: [
+            "HIV infection, HTLV-1 infection, lymphoma and organ transplantation.",
+            "Lepromatous leprosy, Down syndrome, dementia, paralysis, spinal cord injury and severe malnutrition.",
+            "Prolonged topical or systemic corticosteroid use, including over-the-counter steroid combination creams.",
+          ],
+        },
+        {
+          heading: "Clinical features",
+          points: [
+            "Thick, warty, fissured hyperkeratotic crusts on hands, feet, elbows, knees, scalp and ears, with generalised scaling that may progress to erythroderma.",
+            "Gross nail thickening with subungual hyperkeratotic debris that harbours mites.",
+            "Itch is mild or absent, which delays diagnosis; a foul smell and secondary bacterial infection are common.",
+            "Complications: sepsis from Staphylococcus aureus or Streptococcus pyogenes bacteraemia, which is the main cause of death.",
+          ],
+        },
+        {
+          heading: "Diagnosis and treatment",
+          points: [
+            "Scraping of crust shows innumerable mites and eggs; skin biopsy shows mites in a thickened hyperkeratotic stratum corneum.",
+            "Combined therapy: oral ivermectin 200 microgram per kilogram on days 1, 2, 8, 9 and 15, extended to days 22 and 29 in severe cases.",
+            "Topical permethrin 5 per cent daily for seven days then twice weekly until cure, with 5 per cent salicylic acid or urea ointment as a keratolytic to allow penetration.",
+            "Barrier nursing with gloves and gowns, isolation, decontamination of linen, and simultaneous treatment of all contacts and health care staff.",
+            "Investigate for the underlying immunosuppression, particularly HIV testing.",
+          ],
+        },
+      ],
+      markSplit: [
+        { part: "Definition and predisposing factors", marks: 1 },
+        { part: "Clinical features and complications", marks: 2 },
+        { part: "Diagnosis and combined treatment", marks: 2 },
+      ],
+      keywords: ["crusted scabies", "Norwegian scabies", "ivermectin", "keratolytic", "HIV", "outbreak"],
+    },
+  ],
+  mcqs: [
+    {
+      id: "dermatology-scabies-pediculosis-q1",
+      stem: "A 30-year-old man is treated for scabies with a single overnight application of permethrin 5 per cent cream. Three weeks later he returns with fresh burrows in the finger webs. His wife, who also itches, was never treated. What is the single most important reason for the failure?",
+      options: [
+        "Permethrin resistance in the local mite population",
+        "Untreated household contacts together with omission of the day 7 repeat application",
+        "Inadequate contact time of the cream on the skin",
+        "Persistence of mite antigen causing post-scabetic itch",
+        "Development of crusted scabies",
+      ],
+      answer: 1,
+      explanation:
+        "New burrows three weeks later mean live mites, and the two commonest causes are an untreated contact who re-infests the patient and the missed second application on day 7, since permethrin is not reliably ovicidal. Permethrin resistance is documented but rare and should never be the first explanation when a contact is admittedly untreated. Inadequate contact time is possible but he did leave it overnight, which is within the 8 to 14 hour range. Post-scabetic itch is itch without new lesions, so fresh burrows exclude it. Crusted scabies presents with thick hyperkeratotic crusts and little itch, not a few new burrows.",
+      difficulty: "easy",
+    },
+    {
+      id: "dermatology-scabies-pediculosis-q2",
+      stem: "A 6-week-old exclusively breastfed infant has itchy vesicles and pustules on the palms, soles and scalp; the mother has itchy papules on her wrists and areolae. Which treatment is most appropriate for the infant?",
+      options: [
+        "Oral ivermectin 200 microgram per kilogram single dose",
+        "Lindane 1 per cent lotion for 8 hours",
+        "Sulphur 5 per cent in petrolatum on three consecutive nights",
+        "Benzyl benzoate 25 per cent lotion on three consecutive nights",
+        "Crotamiton 10 per cent cream for two nights only",
+      ],
+      answer: 2,
+      explanation:
+        "Below two months of age permethrin is not licensed and sulphur 5 to 10 per cent in petrolatum applied for three consecutive nights is the accepted safe scabicide, covering the scalp and face as well since infants are affected above the neck. Oral ivermectin is contraindicated under 15 kilograms and under five years. Lindane is neurotoxic and is no longer recommended at any age, least of all in a neonate with a high surface-area-to-weight ratio. Benzyl benzoate 25 per cent is far too irritant for a six-week-old and would need dilution to 6.25 per cent at best. Crotamiton is antipruritic but is the least effective scabicide and would not clear the infestation.",
+      difficulty: "moderate",
+    },
+    {
+      id: "dermatology-scabies-pediculosis-q3",
+      stem: "A 55-year-old bedridden man from an old age home has thick warty crusts on the hands, feet and elbows with dystrophic nails and generalised scaling, but complains of almost no itching. Four staff members have developed itchy papules. What is the diagnosis and the correct treatment?",
+      options: [
+        "Psoriasis vulgaris - potent topical steroid under occlusion",
+        "Crusted scabies - oral ivermectin on days 1, 2, 8, 9 and 15 plus topical permethrin and a keratolytic",
+        "Ordinary scabies - a single application of permethrin 5 per cent",
+        "Chronic eczema - emollients and a moderate topical steroid",
+        "Palmoplantar keratoderma - urea 20 per cent ointment",
+      ],
+      answer: 1,
+      explanation:
+        "Hyperkeratotic crusts with nail dystrophy, minimal itch and an outbreak among carers is crusted scabies, which carries an enormous mite burden and needs multiple doses of oral ivermectin combined with repeated topical permethrin and a keratolytic to let the scabicide penetrate the crust. Psoriasis would show silvery scale, Auspitz sign and typical extensor plaques, and treating this patient with a potent steroid would worsen the infestation. A single permethrin application is grossly inadequate for a mite load of thousands. Eczema and keratoderma do not cause an outbreak of itching among staff, which is the clue that this is an infestation.",
+      difficulty: "moderate",
+    },
+    {
+      id: "dermatology-scabies-pediculosis-q4",
+      stem: "A 32-year-old destitute man has intensely itchy excoriated papules and lichenified hyperpigmented skin over the back and shoulders. No lesions are seen in the finger webs or genitalia. Examination of his shirt shows lice and eggs in the seams. Which complication is he specifically at risk of?",
+      options: [
+        "Acute post-streptococcal glomerulonephritis",
+        "Epidemic typhus and trench fever",
+        "Acquired immunodeficiency from lymphatic spread",
+        "Bartonella henselae cat scratch disease",
+        "Chagas disease",
+      ],
+      answer: 1,
+      explanation:
+        "Lice living in clothing seams is pediculosis corporis, and Pediculus humanus corporis is the vector of epidemic typhus caused by Rickettsia prowazekii, trench fever caused by Bartonella quintana and louse-borne relapsing fever caused by Borrelia recurrentis. Post-streptococcal glomerulonephritis follows streptococcal pyoderma, which is a complication of scabies and impetigo rather than a vector-borne consequence of body lice. Lice do not cause immunodeficiency. Cat scratch disease is Bartonella henselae transmitted by cats and their fleas, not by lice. Chagas disease is transmitted by the reduviid bug in Latin America.",
+      difficulty: "moderate",
+    },
+    {
+      id: "dermatology-scabies-pediculosis-q5",
+      stem: "A 28-year-old woman treated correctly for scabies with permethrin on day 0 and day 7 returns on day 18 with continued itching. Examination shows healing excoriations and post-inflammatory hyperpigmentation but no burrows and no new papules. Her family was treated. What is the correct action?",
+      options: [
+        "Repeat permethrin for a third application",
+        "Give oral ivermectin as she has failed topical therapy",
+        "Reassure and treat with emollients, a moderate topical steroid and an oral antihistamine",
+        "Take a skin biopsy to look for mites",
+        "Start oral prednisolone 30 mg daily for two weeks",
+      ],
+      answer: 2,
+      explanation:
+        "Itch without new burrows or new papules two to four weeks after adequate treatment is post-scabetic itch, a hypersensitivity response to retained mite antigen in the stratum corneum, and it is managed with emollients, a moderate topical corticosteroid and an antihistamine. A third application of permethrin adds irritant dermatitis that perpetuates the itch and is the classic wrong answer. Ivermectin is reserved for genuine failure, which requires objective new lesions. A biopsy is unnecessary when the clinical picture is clear and no active lesions exist. Systemic steroids are disproportionate and risk converting a residual infestation into crusted scabies.",
+      difficulty: "easy",
+    },
+  ],
+  cards: [
+    {
+      id: "dermatology-scabies-pediculosis-c1",
+      front: "Incubation period of scabies and why it matters.",
+      back: "Four to six weeks in a first infestation (one to four days on re-infestation) because the itch is a type IV hypersensitivity reaction - so asymptomatic contacts are already infested and must be treated.",
+    },
+    {
+      id: "dermatology-scabies-pediculosis-c2",
+      front: "Pathognomonic lesion of scabies and where to look for it.",
+      back: "The burrow - a 3 to 10 mm greyish serpiginous ridge with a vesicle or black dot at one end, on the finger webs, sides of fingers, flexor wrists and ulnar border of the hand.",
+    },
+    {
+      id: "dermatology-scabies-pediculosis-c3",
+      front: "Permethrin regimen for scabies.",
+      back: "5 per cent cream to the whole body neck down (whole body in infants), leave 8 to 14 hours overnight, wash off, repeat on day 7; about 30 g per adult application, reapply to hands after washing.",
+    },
+    {
+      id: "dermatology-scabies-pediculosis-c4",
+      front: "Ivermectin dose and contraindications in scabies.",
+      back: "200 microgram per kilogram orally with food, repeated day 7 to 14; avoid under 15 kg or 5 years, and in pregnancy and lactation.",
+    },
+    {
+      id: "dermatology-scabies-pediculosis-c5",
+      front: "Scabicide of choice under two months of age and in pregnancy.",
+      back: "Sulphur 5 to 10 per cent in petrolatum for three consecutive nights (permethrin 5 per cent is also accepted in pregnancy and above two months).",
+    },
+    {
+      id: "dermatology-scabies-pediculosis-c6",
+      front: "Environmental decontamination in scabies.",
+      back: "Wash linen and clothes of the last 3 days above 60 degrees Celsius, sun dry or iron; seal non-washables in a bag for 72 hours to a week. The mite dies in 2 to 3 days off the host, so fumigation is not needed.",
+    },
+    {
+      id: "dermatology-scabies-pediculosis-c7",
+      front: "Post-scabetic itch versus treatment failure.",
+      back: "Post-scabetic itch: itching for 2 to 4 weeks with no new burrows or papules - treat with emollients, mild steroid and antihistamine. Failure: new burrows or papules after 2 weeks - re-treat and find the untreated contact.",
+    },
+    {
+      id: "dermatology-scabies-pediculosis-c8",
+      front: "Which louse transmits systemic disease, and which diseases?",
+      back: "Only the body louse (Pediculus humanus corporis) - epidemic typhus (Rickettsia prowazekii), trench fever (Bartonella quintana) and relapsing fever (Borrelia recurrentis).",
+    },
+    {
+      id: "dermatology-scabies-pediculosis-c9",
+      front: "Treatment of pediculosis corporis.",
+      back: "Treat the clothing, not the skin - hot wash, iron or discard clothing and improve hygiene; permethrin to the body only if lice are found on the skin.",
+    },
+    {
+      id: "dermatology-scabies-pediculosis-c10",
+      front: "Maculae ceruleae - what and where?",
+      back: "Bluish-grey macules at the site of pubic louse bites on the lower abdomen, thighs and buttocks in pediculosis pubis.",
+    },
+  ],
+  references: [
+    "IADVL Textbook of Dermatology, 5th edition, 2022 - scabies and other infestations",
+    "International Alliance for the Control of Scabies (IACS) 2020 Consensus Criteria for the Diagnosis of Scabies",
+    "WHO Informal Consultation on a Framework for Scabies Control, 2019, and WHO NTD Road Map 2021-2030",
+    "British Association of Dermatologists guideline on the management of scabies, 2024",
+    "Centers for Disease Control and Prevention, Parasites - Scabies and Lice, 2024 update",
+    "Neena Khanna, Illustrated Synopsis of Dermatology and Sexually Transmitted Diseases, 6th edition, 2020",
+  ],
+});
+
+topics.push({
+  id: "dermatology-scabies-pediculosis",
+  title: "Scabies and pediculosis, including treatment of the whole household",
+  oneLiner:
+    "Scabies is an intensely pruritic infestation by the mite Sarcoptes scabiei var. hominis in which nocturnal itch, burrows and papules in the finger webs, wrists, axillae, waist and genitalia, and a history of itching in other members of the household, make the diagnosis clinically, and the cure depends entirely on treating every contact simultaneously with topical permethrin 5 per cent or oral ivermectin plus decontamination of clothes and bedding.",
+  frequency: "core",
+  keywords: [
+    "scabies",
+    "Sarcoptes scabiei",
+    "burrow",
+    "nocturnal pruritus",
+    "permethrin",
+    "ivermectin",
+    "benzyl benzoate",
+    "crusted scabies",
+    "Norwegian scabies",
+    "pediculosis capitis",
+    "pediculosis corporis",
+    "pthirus pubis",
+    "nits",
+    "malathion",
+    "post-scabetic itch",
+    "dermoscopy delta sign",
+    "impetigo",
+    "household contacts",
+  ],
+  sections: [
+    {
+      heading: "The organism, the transmission and why the whole family matters",
+      points: [
+        "Scabies is caused by **Sarcoptes scabiei var. hominis**, an obligate human mite; the fertilised female burrows into the stratum corneum at about 2 mm a day and lays two to three eggs daily for a life of four to six weeks, and an ordinary patient carries only **10 to 15 adult mites** on the whole body.",
+        "Transmission needs **prolonged skin-to-skin contact of 15 to 20 minutes**, which is why it runs through households, hostels, orphanages, prisons and shared beds rather than through casual handshakes; fomite transmission through shared clothes and bedding is real but secondary, except in crusted scabies where it is the dominant route.",
+        "The itch is a **type IV delayed hypersensitivity reaction to mite antigen, faeces and eggs**, so a first infestation stays silent for **four to six weeks** before itching begins, while a re-infestation itches within one to four days - this incubation period is the reason asymptomatic contacts must still be treated.",
+        "In Indian general practice scabies clusters in the rainy and winter months, in overcrowded housing and where water for washing is short; the classical exam history is **itching worse at night that disturbs sleep, with at least one other person in the house itching**.",
+        "Scabies is a **WHO-recognised neglected tropical disease** since 2017, with an estimated 200 million people affected at any time, and in India it is one of the commonest reasons for a skin consultation in primary care.",
+        "Untreated scabies in children is a major driver of **streptococcal pyoderma and therefore of acute post-streptococcal glomerulonephritis and acute rheumatic fever**, which is why treating scabies is a public health act and not merely a comfort measure.",
+      ],
+    },
+    {
+      heading: "Clinical features and the lesion vocabulary to use",
+      points: [
+        "Describe the eruption in the fixed order - **number, site and distribution, size, shape, surface, margin, colour, arrangement and secondary change**; in scabies the answer is multiple, symmetrical, 1 to 3 mm erythematous **papules and papulovesicles with excoriations and crusting**, discrete but grouped, in a characteristic distribution below the neck.",
+        "The **pathognomonic primary lesion is the burrow**: a 3 to 10 mm greyish, serpiginous or S-shaped thread-like ridge with a minute vesicle or black dot (the mite) at one end, best seen on the finger webs, the sides of the fingers, the flexor wrists and the ulnar border of the hand.",
+        "**Sites of predilection** - finger webs, flexor wrists, elbows, anterior axillary folds, periumbilical skin and waist, buttocks, areolae in women, and the penis and scrotum in men; **itchy papules or nodules on the glans, shaft and scrotum are almost diagnostic of scabies in an adult male**.",
+        "**The head and neck are spared in adults but involved in infants and in the elderly**; in infants under two years the palms, soles, scalp and face are typically affected with vesicles, pustules and nodules, and secondary eczematisation is common.",
+        "Secondary lesions dominate what you actually see: **excoriations proving the itch, honey-coloured crusts of secondary impetigo, eczematisation and post-inflammatory hyperpigmentation**; lichenification appears where the patient has scratched for months.",
+        "**Nodular scabies** presents as firm, reddish-brown, intensely itchy 5 to 10 mm nodules on the scrotum, penis, groins and axillae that are a persistent hypersensitivity granuloma and may **persist for weeks to months after the mite is dead**, needing intralesional or potent topical steroid rather than more scabicide.",
+      ],
+    },
+    {
+      heading: "Variants that change the management",
+      points: [
+        "**Crusted (Norwegian) scabies** occurs in HIV infection, human T-lymphotropic virus 1 infection, lepromatous leprosy, malnutrition, Down syndrome, dementia, paralysis and long-term topical or systemic steroid use, and carries **thousands to millions of mites**.",
+        "It presents as **thick, warty, fissured hyperkeratotic crusts on the hands, feet, elbows, scalp and under the nails, with gross nail dystrophy and subungual debris, and characteristically little or no itch**; it is highly contagious and is the usual index case behind an institutional outbreak.",
+        "Crusted scabies needs **combined therapy - a keratolytic such as 5 per cent salicylic acid ointment, topical permethrin daily then twice weekly, plus oral ivermectin 200 microgram per kilogram on days 1, 2, 8, 9 and 15, extended to days 22 and 29 in severe disease** - and barrier nursing with gowns and gloves.",
+        "**Scabies incognito** results from topical or systemic steroids that suppress the inflammatory response: the eruption becomes atypical and widespread, burrows are hard to find, and the itch is disproportionate to a bland-looking rash - a common trap in Indian practice where potent steroid combination creams are sold over the counter.",
+        "**Bullous scabies** in the elderly mimics bullous pemphigoid, and **scabies in the very clean patient** may show only a handful of papules on the wrists; both are diagnosed by taking the household history seriously.",
+        "**Secondary bacterial infection** with Staphylococcus aureus or Streptococcus pyogenes produces impetigo, ecthyma, folliculitis or cellulitis and must be treated with oral cloxacillin or amoxicillin-clavulanate before or alongside the scabicide.",
+      ],
+    },
+    {
+      heading: "Diagnosis, differential diagnosis and bedside tests",
+      points: [
+        "Scabies is a **clinical diagnosis** made on the triad of nocturnal itch, typical distribution and an affected household contact; the 2020 International Alliance for the Control of Scabies (IACS) criteria grade the diagnosis as confirmed (mite, egg or faecal pellet seen), clinical (burrows, typical genital or infant lesions) or suspected.",
+        "**Skin scraping**: place a drop of mineral oil or 10 per cent potassium hydroxide on an unexcoriated burrow or papule, scrape with a number 15 blade held tangentially until pinpoint bleeding, and look under low power for **mites, oval eggs or brown faecal pellets (scybala)**.",
+        "**Burrow ink test**: rub fountain-pen ink over a suspected burrow and wipe with alcohol - retained ink outlines a zig-zag track; **dermoscopy** shows the dark triangular head and mouthparts of the mite at the end of the burrow, the **delta-wing jet or hang-glider sign**.",
+        "**Differential diagnosis** - papular urticaria from insect bites (grouped on exposed limbs, seropapules, no burrows, no genital lesions), atopic dermatitis (flexural, personal or family atopy, no household clustering), pediculosis corporis (lesions along seam-contact areas of the trunk, lice in clothing seams), contact dermatitis, dermatitis herpetiformis and papular eruption of HIV.",
+        "**Post-scabetic itch** persists for two to four weeks after successful treatment because the antigen remains in the stratum corneum; treat it with emollients, a mild to moderate topical steroid and an oral antihistamine, and **do not repeat the scabicide**, because repeated application itself causes an irritant dermatitis that mimics failure.",
+        "Suspect **true treatment failure** if new burrows or new papules appear more than two weeks after treatment, and then ask about the three real causes - untreated contacts, incorrect application technique, and failure to decontaminate clothing and bedding.",
+      ],
+    },
+    {
+      heading: "Treatment of the patient and of the whole household",
+      points: [
+        "**Permethrin 5 per cent cream is first line at all ages above two months and in pregnancy and lactation**: apply to the whole body from the neck down (including the face and scalp in infants, the elderly and the immunosuppressed), leave for **8 to 14 hours (overnight)**, wash off, and **repeat once after 7 days** to kill mites hatching from eggs that survive the first application.",
+        "Application technique earns the mark: **apply after a bath to cool dry skin, cover every fold - behind the ears, umbilicus, natal cleft, genitalia, under the breasts and under the finger and toe nails after cutting them short - and reapply to the hands after every hand wash**; an adult needs about 30 grams per application.",
+        "**Oral ivermectin 200 microgram per kilogram as a single dose repeated after 7 to 14 days** is preferred for institutional outbreaks, crusted scabies, treatment failures and where topical application cannot be supervised; it is **not recommended in children under 15 kilograms or under 5 years, and is avoided in pregnancy and lactation**. Take it with food to improve absorption.",
+        "Alternatives - **benzyl benzoate 25 per cent lotion** (dilute to 12.5 per cent for children and 6.25 per cent for infants) applied on three consecutive nights, cheap and effective but stinging and irritant; **sulphur 5 to 10 per cent in petrolatum** for three consecutive nights, malodorous and staining but the safest option in infants under two months and in pregnancy; **crotamiton 10 per cent**, which is antipruritic but least effective; **lindane is no longer recommended** because of neurotoxicity.",
+        "**Treat every household member and every intimate or close physical contact of the last six weeks on the same day, whether or not they itch**, because contacts are in the asymptomatic incubation period and will otherwise re-infest the index case - this single sentence is the most examined point in the topic.",
+        "**Decontamination**: machine wash clothes, towels and bed linen used in the last three days in hot water above 60 degrees Celsius and dry in the sun or a hot dryer, or iron them; items that cannot be washed should be **sealed in a plastic bag for 72 hours to seven days**, since the mite dies within 2 to 3 days away from human skin. Fumigation of the house is unnecessary.",
+        "Also treat the complications: **oral antihistamine (hydroxyzine 25 mg at night or cetirizine 10 mg) for itch, emollients, and oral antibiotics for pyoderma**; screen the child for haematuria three weeks later if streptococcal impetigo was present, and check for other sexually transmitted infections when scabies is acquired sexually.",
+      ],
+    },
+    {
+      heading: "Pediculosis: head, body and pubic lice",
+      points: [
+        "**Pediculosis capitis** is caused by Pediculus humanus capitis, spreads by head-to-head contact and shared combs in schoolgirls, and presents with occipital and retroauricular itch, excoriation, occipital lymphadenopathy and secondary impetigo; the diagnosis is confirmed by **finding a live louse, since nits (egg cases) firmly cemented to the hair shaft may persist long after cure**.",
+        "Treat head lice with **permethrin 1 per cent cream rinse applied to damp hair for 10 minutes, or 5 per cent for 8 hours, repeated after 7 days**, or **malathion 0.5 per cent lotion for 8 to 12 hours**; add **wet combing with a fine-toothed nit comb and conditioner every 3 to 4 days for two weeks**, and treat affected household members. Oral ivermectin 200 microgram per kilogram on days 1 and 8 is used for resistant cases.",
+        "**Pediculosis corporis** is a disease of poverty and homelessness: the louse **lives and lays eggs in the seams of clothing, not on the body**, and produces itchy excoriated papules and, over years, the pigmented lichenified back of **vagabond's disease**; treatment is **hot washing, ironing or discarding the clothing plus personal hygiene**, with permethrin to the body only if lice are found on skin.",
+        "The body louse is a **vector of epidemic typhus (Rickettsia prowazekii), trench fever (Bartonella quintana) and relapsing fever (Borrelia recurrentis)** - the head louse and pubic louse transmit no disease, and this contrast is a standard viva question.",
+        "**Pediculosis pubis** is caused by Pthirus pubis, is sexually transmitted, causes itching in the pubic area with **bluish-grey macules (maculae ceruleae)** and rust-coloured specks of louse faeces on the underclothes; treat with permethrin 1 per cent or 5 per cent, treat sexual partners of the last month, and **screen for other sexually transmitted infections including HIV, syphilis and gonorrhoea**.",
+        "**Phthiriasis palpebrarum** (pubic lice on the eyelashes in a child) raises the question of sexual abuse and is treated with **thick petrolatum to the lid margins twice daily for 8 to 10 days plus mechanical removal**, never with a neurotoxic pediculicide near the eye.",
+      ],
+    },
+  ],
+  tables: [
+    {
+      heading: "Scabicides: dose, contact time and safety",
+      columns: ["Drug", "Strength and route", "Contact time and repeat", "Safe in", "Cautions"],
+      rows: [
+        ["Permethrin", "5 per cent cream, topical", "8 to 14 hours overnight, repeat day 7", "Above 2 months, pregnancy, lactation", "Costliest topical; mild burning"],
+        ["Ivermectin", "200 microgram/kg oral", "Single dose, repeat day 7 to 14", "Adults, children above 15 kg", "Avoid under 5 years, pregnancy, lactation"],
+        ["Benzyl benzoate", "25 per cent lotion (dilute for children)", "3 consecutive nights", "Adults, older children", "Stings on excoriated skin, irritant dermatitis"],
+        ["Sulphur", "5 to 10 per cent in petrolatum", "3 consecutive nights", "Infants under 2 months, pregnancy", "Malodorous, stains clothes"],
+        ["Crotamiton", "10 per cent cream or lotion", "2 to 5 consecutive nights", "Children, antipruritic", "Least effective as a scabicide"],
+        ["Lindane", "1 per cent lotion", "8 hours, single application", "Not recommended", "Neurotoxicity, seizures, aplastic anaemia"],
+      ],
+    },
+    {
+      heading: "The three pediculoses compared",
+      columns: ["Feature", "Pediculosis capitis", "Pediculosis corporis", "Pediculosis pubis"],
+      rows: [
+        ["Organism", "Pediculus humanus capitis", "Pediculus humanus corporis", "Pthirus pubis (crab louse)"],
+        ["Where the louse lives", "Scalp hair, close to the skin", "Seams of clothing", "Pubic, axillary, beard hair, eyelashes"],
+        ["Typical patient", "School child, girls more than boys", "Homeless, destitute, unwashed clothing", "Sexually active adult"],
+        ["Key sign", "Nits cemented to hair, occipital nodes", "Excoriated back, vagabond pigmentation", "Maculae ceruleae, rusty specks on underwear"],
+        ["Vector of disease", "No", "Epidemic typhus, trench fever, relapsing fever", "No"],
+        ["Treatment", "Permethrin 1 per cent plus wet combing, repeat day 7", "Wash, iron or discard clothing; hygiene", "Permethrin plus partner treatment and STI screen"],
+      ],
+    },
+  ],
+  redFlags: [
+    "Thick hyperkeratotic crusts with nail dystrophy and little itch - crusted scabies; isolate, investigate for HIV or other immunosuppression, and start combined ivermectin and topical therapy.",
+    "Fever, spreading erythema, tenderness or lymphangitis over excoriated scabies - cellulitis needing systemic antibiotics the same day.",
+    "Puffy eyelids, smoky urine or hypertension two to three weeks after impetiginised scabies in a child - acute post-streptococcal glomerulonephritis; check urine and blood pressure.",
+    "An institutional or hostel outbreak, or a bedridden patient in a nursing home - mass treatment of all residents and staff on a single day is required, not case-by-case treatment.",
+    "Scabies in an infant with failure to thrive, or widespread atypical scabies in an adult - test for HIV and for underlying immunosuppression.",
+    "Pubic lice on the eyelashes of a prepubertal child - evaluate for sexual abuse under the POCSO framework.",
+  ],
+  pearls: [
+    "The mark-carrying sentence is: treat all household and close contacts simultaneously on the same day, whether or not they itch, and decontaminate clothes and bedding.",
+    "Itch that wakes the patient at night plus another itching person in the house is scabies until proved otherwise, even without a visible burrow.",
+    "Itchy papules or nodules on the scrotum or penis in a man, and on the areolae in a woman, are close to diagnostic of scabies.",
+    "Adults are spared above the neck, infants are not - always treat the scalp and face in a baby under two years.",
+    "Post-scabetic itch lasts two to four weeks and is treated with emollients, a mild steroid and an antihistamine, not with more scabicide.",
+    "Permethrin needs a second application on day 7 because it is not fully ovicidal; a single application is the commonest reason for apparent treatment failure.",
+    "Nits alone do not mean active head lice - look for a live, moving louse before re-treating.",
+    "Crusted scabies is not itchy, and the patient who does not itch is the one who infests the whole ward.",
+  ],
+  theory: [
+    {
+      id: "dermatology-scabies-pediculosis-t1",
+      paper: "III",
+      kind: "long",
+      marks: 10,
+      minutes: 20,
+      frequency: "core",
+      question:
+        "A 24-year-old man presents with intense itching worse at night for three weeks. His wife and two children are also itching. Describe the clinical features, diagnosis and complete management of this condition including the household.",
+      openingLines: [
+        "This is scabies, an infestation of the stratum corneum by the mite Sarcoptes scabiei var. hominis, transmitted by prolonged skin-to-skin contact, and presenting with nocturnal pruritus, burrows and papules in a characteristic distribution with clustering of cases in a household.",
+        "The itch is a delayed type IV hypersensitivity response to mite antigen, appearing four to six weeks after a first infestation and within one to four days on re-infestation, which is why asymptomatic contacts must also be treated.",
+      ],
+      answer: [
+        {
+          heading: "1. Clinical features",
+          points: [
+            "Symptom: generalised itching that is characteristically worse at night and on warming in bed, disturbing sleep, with a history of similar itching in family members or bed partners.",
+            "Primary lesions: the burrow - a 3 to 10 mm greyish serpiginous ridge with a vesicle or black dot at one end - along with 1 to 3 mm erythematous papules and papulovesicles.",
+            "Distribution: finger webs, sides of fingers, flexor wrists, elbows, anterior axillary folds, periumbilical area and waist, buttocks, areolae in women, penis and scrotum in men; head and neck spared in adults but involved in infants.",
+            "Secondary lesions: excoriations, eczematisation, honey-coloured crusts of impetigo, lichenification and post-inflammatory hyperpigmentation.",
+            "Variants: nodular scabies on the genitalia, crusted (Norwegian) scabies in the immunosuppressed, scabies incognito after topical steroid use, and bullous scabies in the elderly.",
+          ],
+        },
+        {
+          heading: "2. Diagnosis",
+          points: [
+            "Clinical, using the IACS 2020 criteria: confirmed when a mite, egg or faecal pellet is demonstrated; clinical when burrows or typical genital or infant lesions are present; suspected on typical distribution with a contact history.",
+            "Skin scraping in mineral oil or 10 per cent KOH from an unexcoriated burrow, showing mites, eggs or scybala.",
+            "Burrow ink test and dermoscopy showing the delta-wing jet sign of the mite head at the end of a burrow.",
+            "Differential diagnosis: papular urticaria, atopic dermatitis, pediculosis corporis, contact dermatitis, dermatitis herpetiformis and papular pruritic eruption of HIV.",
+          ],
+        },
+        {
+          heading: "3. Treatment of the patient",
+          points: [
+            "Permethrin 5 per cent cream to the whole body from the neck down after a bath, left for 8 to 14 hours overnight, washed off, and repeated once after 7 days; about 30 g per adult application, reapplied to the hands after washing.",
+            "Alternatives: oral ivermectin 200 microgram per kilogram on day 1 and repeated day 7 to 14; benzyl benzoate 25 per cent on three consecutive nights; sulphur 5 to 10 per cent ointment for infants under two months and in pregnancy.",
+            "Symptomatic treatment: emollients, oral antihistamine such as hydroxyzine 25 mg at night, and a moderate topical corticosteroid for eczematisation and for post-scabetic itch.",
+            "Secondary pyoderma: oral cloxacillin 500 mg six hourly or amoxicillin-clavulanate for five to seven days; screen for haematuria and hypertension three weeks later.",
+          ],
+        },
+        {
+          heading: "4. Treatment of the household and environment",
+          points: [
+            "All household members, bed partners and close physical contacts of the previous six weeks are treated on the same day, whether or not they are symptomatic.",
+            "Clothes, towels and bed linen of the last three days are washed at above 60 degrees Celsius and sun dried or ironed; non-washable items are sealed in a plastic bag for 72 hours to one week.",
+            "The mite survives only 2 to 3 days off the host, so fumigation and disinfection of the house are unnecessary.",
+            "Counsel that itching may persist two to four weeks after cure and does not mean failure; review at two weeks and treat again only if new burrows or new papules have appeared.",
+          ],
+        },
+        {
+          heading: "5. Public health note",
+          points: [
+            "Scabies is a WHO neglected tropical disease; mass drug administration with ivermectin is used in high-prevalence communities and institutional outbreaks.",
+            "Control of scabies reduces streptococcal pyoderma and hence acute post-streptococcal glomerulonephritis and acute rheumatic fever in children.",
+          ],
+        },
+      ],
+      mustDraw: [
+        "A figure of the body showing the sites of predilection of scabies in an adult and in an infant.",
+        "A table of scabicides with strength, contact time, repeat schedule and safety in pregnancy and infancy.",
+      ],
+      markSplit: [
+        { part: "Clinical features and variants", marks: 3 },
+        { part: "Diagnosis and differential diagnosis", marks: 2 },
+        { part: "Treatment of the patient", marks: 3 },
+        { part: "Household treatment and decontamination", marks: 2 },
+      ],
+      keywords: ["scabies", "permethrin", "ivermectin", "burrow", "household contacts", "nocturnal itch"],
+    },
+    {
+      id: "dermatology-scabies-pediculosis-t2",
+      paper: "III",
+      kind: "short-note",
+      marks: 5,
+      minutes: 10,
+      frequency: "common",
+      question: "Write short notes on crusted (Norwegian) scabies.",
+      openingLines: [
+        "Crusted or Norwegian scabies is a hyperinfestation with Sarcoptes scabiei carrying thousands to millions of mites, occurring in immunosuppressed, neurologically impaired or malnourished hosts who cannot mount an effective scratch or immune response.",
+        "It is extremely contagious and is typically the index case behind an outbreak in a family, hospital ward or old age home.",
+      ],
+      answer: [
+        {
+          heading: "Predisposing factors",
+          points: [
+            "HIV infection, HTLV-1 infection, lymphoma and organ transplantation.",
+            "Lepromatous leprosy, Down syndrome, dementia, paralysis, spinal cord injury and severe malnutrition.",
+            "Prolonged topical or systemic corticosteroid use, including over-the-counter steroid combination creams.",
+          ],
+        },
+        {
+          heading: "Clinical features",
+          points: [
+            "Thick, warty, fissured hyperkeratotic crusts on hands, feet, elbows, knees, scalp and ears, with generalised scaling that may progress to erythroderma.",
+            "Gross nail thickening with subungual hyperkeratotic debris that harbours mites.",
+            "Itch is mild or absent, which delays diagnosis; a foul smell and secondary bacterial infection are common.",
+            "Complications: sepsis from Staphylococcus aureus or Streptococcus pyogenes bacteraemia, which is the main cause of death.",
+          ],
+        },
+        {
+          heading: "Diagnosis and treatment",
+          points: [
+            "Scraping of crust shows innumerable mites and eggs; skin biopsy shows mites in a thickened hyperkeratotic stratum corneum.",
+            "Combined therapy: oral ivermectin 200 microgram per kilogram on days 1, 2, 8, 9 and 15, extended to days 22 and 29 in severe cases.",
+            "Topical permethrin 5 per cent daily for seven days then twice weekly until cure, with 5 per cent salicylic acid or urea ointment as a keratolytic to allow penetration.",
+            "Barrier nursing with gloves and gowns, isolation, decontamination of linen, and simultaneous treatment of all contacts and health care staff.",
+            "Investigate for the underlying immunosuppression, particularly HIV testing.",
+          ],
+        },
+      ],
+      markSplit: [
+        { part: "Definition and predisposing factors", marks: 1 },
+        { part: "Clinical features and complications", marks: 2 },
+        { part: "Diagnosis and combined treatment", marks: 2 },
+      ],
+      keywords: ["crusted scabies", "Norwegian scabies", "ivermectin", "keratolytic", "HIV", "outbreak"],
+    },
+  ],
+  mcqs: [
+    {
+      id: "dermatology-scabies-pediculosis-q1",
+      stem: "A 30-year-old man is treated for scabies with a single overnight application of permethrin 5 per cent cream. Three weeks later he returns with fresh burrows in the finger webs. His wife, who also itches, was never treated. What is the single most important reason for the failure?",
+      options: [
+        "Permethrin resistance in the local mite population",
+        "Untreated household contacts together with omission of the day 7 repeat application",
+        "Inadequate contact time of the cream on the skin",
+        "Persistence of mite antigen causing post-scabetic itch",
+        "Development of crusted scabies",
+      ],
+      answer: 1,
+      explanation:
+        "New burrows three weeks later mean live mites, and the two commonest causes are an untreated contact who re-infests the patient and the missed second application on day 7, since permethrin is not reliably ovicidal. Permethrin resistance is documented but rare and should never be the first explanation when a contact is admittedly untreated. Inadequate contact time is possible but he did leave it overnight, which is within the 8 to 14 hour range. Post-scabetic itch is itch without new lesions, so fresh burrows exclude it. Crusted scabies presents with thick hyperkeratotic crusts and little itch, not a few new burrows.",
+      difficulty: "easy",
+    },
+    {
+      id: "dermatology-scabies-pediculosis-q2",
+      stem: "A 6-week-old exclusively breastfed infant has itchy vesicles and pustules on the palms, soles and scalp; the mother has itchy papules on her wrists and areolae. Which treatment is most appropriate for the infant?",
+      options: [
+        "Oral ivermectin 200 microgram per kilogram single dose",
+        "Lindane 1 per cent lotion for 8 hours",
+        "Sulphur 5 per cent in petrolatum on three consecutive nights",
+        "Benzyl benzoate 25 per cent lotion on three consecutive nights",
+        "Crotamiton 10 per cent cream for two nights only",
+      ],
+      answer: 2,
+      explanation:
+        "Below two months of age permethrin is not licensed and sulphur 5 to 10 per cent in petrolatum applied for three consecutive nights is the accepted safe scabicide, covering the scalp and face as well since infants are affected above the neck. Oral ivermectin is contraindicated under 15 kilograms and under five years. Lindane is neurotoxic and is no longer recommended at any age, least of all in a neonate with a high surface-area-to-weight ratio. Benzyl benzoate 25 per cent is far too irritant for a six-week-old and would need dilution to 6.25 per cent at best. Crotamiton is antipruritic but is the least effective scabicide and would not clear the infestation.",
+      difficulty: "moderate",
+    },
+    {
+      id: "dermatology-scabies-pediculosis-q3",
+      stem: "A 55-year-old bedridden man from an old age home has thick warty crusts on the hands, feet and elbows with dystrophic nails and generalised scaling, but complains of almost no itching. Four staff members have developed itchy papules. What is the diagnosis and the correct treatment?",
+      options: [
+        "Psoriasis vulgaris - potent topical steroid under occlusion",
+        "Crusted scabies - oral ivermectin on days 1, 2, 8, 9 and 15 plus topical permethrin and a keratolytic",
+        "Ordinary scabies - a single application of permethrin 5 per cent",
+        "Chronic eczema - emollients and a moderate topical steroid",
+        "Palmoplantar keratoderma - urea 20 per cent ointment",
+      ],
+      answer: 1,
+      explanation:
+        "Hyperkeratotic crusts with nail dystrophy, minimal itch and an outbreak among carers is crusted scabies, which carries an enormous mite burden and needs multiple doses of oral ivermectin combined with repeated topical permethrin and a keratolytic to let the scabicide penetrate the crust. Psoriasis would show silvery scale, Auspitz sign and typical extensor plaques, and treating this patient with a potent steroid would worsen the infestation. A single permethrin application is grossly inadequate for a mite load of thousands. Eczema and keratoderma do not cause an outbreak of itching among staff, which is the clue that this is an infestation.",
+      difficulty: "moderate",
+    },
+    {
+      id: "dermatology-scabies-pediculosis-q4",
+      stem: "A 32-year-old destitute man has intensely itchy excoriated papules and lichenified hyperpigmented skin over the back and shoulders. No lesions are seen in the finger webs or genitalia. Examination of his shirt shows lice and eggs in the seams. Which complication is he specifically at risk of?",
+      options: [
+        "Acute post-streptococcal glomerulonephritis",
+        "Epidemic typhus and trench fever",
+        "Acquired immunodeficiency from lymphatic spread",
+        "Bartonella henselae cat scratch disease",
+        "Chagas disease",
+      ],
+      answer: 1,
+      explanation:
+        "Lice living in clothing seams is pediculosis corporis, and Pediculus humanus corporis is the vector of epidemic typhus caused by Rickettsia prowazekii, trench fever caused by Bartonella quintana and louse-borne relapsing fever caused by Borrelia recurrentis. Post-streptococcal glomerulonephritis follows streptococcal pyoderma, which is a complication of scabies and impetigo rather than a vector-borne consequence of body lice. Lice do not cause immunodeficiency. Cat scratch disease is Bartonella henselae transmitted by cats and their fleas, not by lice. Chagas disease is transmitted by the reduviid bug in Latin America.",
+      difficulty: "moderate",
+    },
+    {
+      id: "dermatology-scabies-pediculosis-q5",
+      stem: "A 28-year-old woman treated correctly for scabies with permethrin on day 0 and day 7 returns on day 18 with continued itching. Examination shows healing excoriations and post-inflammatory hyperpigmentation but no burrows and no new papules. Her family was treated. What is the correct action?",
+      options: [
+        "Repeat permethrin for a third application",
+        "Give oral ivermectin as she has failed topical therapy",
+        "Reassure and treat with emollients, a moderate topical steroid and an oral antihistamine",
+        "Take a skin biopsy to look for mites",
+        "Start oral prednisolone 30 mg daily for two weeks",
+      ],
+      answer: 2,
+      explanation:
+        "Itch without new burrows or new papules two to four weeks after adequate treatment is post-scabetic itch, a hypersensitivity response to retained mite antigen in the stratum corneum, and it is managed with emollients, a moderate topical corticosteroid and an antihistamine. A third application of permethrin adds irritant dermatitis that perpetuates the itch and is the classic wrong answer. Ivermectin is reserved for genuine failure, which requires objective new lesions. A biopsy is unnecessary when the clinical picture is clear and no active lesions exist. Systemic steroids are disproportionate and risk converting a residual infestation into crusted scabies.",
+      difficulty: "easy",
+    },
+  ],
+  cards: [
+    {
+      id: "dermatology-scabies-pediculosis-c1",
+      front: "Incubation period of scabies and why it matters.",
+      back: "Four to six weeks in a first infestation (one to four days on re-infestation) because the itch is a type IV hypersensitivity reaction - so asymptomatic contacts are already infested and must be treated.",
+    },
+    {
+      id: "dermatology-scabies-pediculosis-c2",
+      front: "Pathognomonic lesion of scabies and where to look for it.",
+      back: "The burrow - a 3 to 10 mm greyish serpiginous ridge with a vesicle or black dot at one end, on the finger webs, sides of fingers, flexor wrists and ulnar border of the hand.",
+    },
+    {
+      id: "dermatology-scabies-pediculosis-c3",
+      front: "Permethrin regimen for scabies.",
+      back: "5 per cent cream to the whole body neck down (whole body in infants), leave 8 to 14 hours overnight, wash off, repeat on day 7; about 30 g per adult application, reapply to hands after washing.",
+    },
+    {
+      id: "dermatology-scabies-pediculosis-c4",
+      front: "Ivermectin dose and contraindications in scabies.",
+      back: "200 microgram per kilogram orally with food, repeated day 7 to 14; avoid under 15 kg or 5 years, and in pregnancy and lactation.",
+    },
+    {
+      id: "dermatology-scabies-pediculosis-c5",
+      front: "Scabicide of choice under two months of age and in pregnancy.",
+      back: "Sulphur 5 to 10 per cent in petrolatum for three consecutive nights (permethrin 5 per cent is also accepted in pregnancy and above two months).",
+    },
+    {
+      id: "dermatology-scabies-pediculosis-c6",
+      front: "Environmental decontamination in scabies.",
+      back: "Wash linen and clothes of the last 3 days above 60 degrees Celsius, sun dry or iron; seal non-washables in a bag for 72 hours to a week. The mite dies in 2 to 3 days off the host, so fumigation is not needed.",
+    },
+    {
+      id: "dermatology-scabies-pediculosis-c7",
+      front: "Post-scabetic itch versus treatment failure.",
+      back: "Post-scabetic itch: itching for 2 to 4 weeks with no new burrows or papules - treat with emollients, mild steroid and antihistamine. Failure: new burrows or papules after 2 weeks - re-treat and find the untreated contact.",
+    },
+    {
+      id: "dermatology-scabies-pediculosis-c8",
+      front: "Which louse transmits systemic disease, and which diseases?",
+      back: "Only the body louse (Pediculus humanus corporis) - epidemic typhus (Rickettsia prowazekii), trench fever (Bartonella quintana) and relapsing fever (Borrelia recurrentis).",
+    },
+    {
+      id: "dermatology-scabies-pediculosis-c9",
+      front: "Treatment of pediculosis corporis.",
+      back: "Treat the clothing, not the skin - hot wash, iron or discard clothing and improve hygiene; permethrin to the body only if lice are found on the skin.",
+    },
+    {
+      id: "dermatology-scabies-pediculosis-c10",
+      front: "Maculae ceruleae - what and where?",
+      back: "Bluish-grey macules at the site of pubic louse bites on the lower abdomen, thighs and buttocks in pediculosis pubis.",
+    },
+  ],
+  references: [
+    "IADVL Textbook of Dermatology, 5th edition, 2022 - scabies and other infestations",
+    "International Alliance for the Control of Scabies (IACS) 2020 Consensus Criteria for the Diagnosis of Scabies",
+    "WHO Informal Consultation on a Framework for Scabies Control, 2019, and WHO NTD Road Map 2021-2030",
+    "British Association of Dermatologists guideline on the management of scabies, 2024",
+    "Centers for Disease Control and Prevention, Parasites - Scabies and Lice, 2024 update",
+    "Neena Khanna, Illustrated Synopsis of Dermatology and Sexually Transmitted Diseases, 6th edition, 2020",
+  ],
+});
+
+topics.push({
+  id: "geriatrics-ethics-falls",
+  title: "Falls in the older person - assessment, causes and prevention",
+  oneLiner:
+    "A fall is an event in which a person unintentionally comes to rest on the ground, floor or other lower level, not as a result of a major intrinsic event such as stroke or seizure or an overwhelming external force; in older people it is almost always multifactorial, and the number of risk factors present predicts the risk better than any single cause.",
+  frequency: "core",
+  keywords: [
+    "falls",
+    "STEADI",
+    "Timed Up and Go",
+    "orthostatic hypotension",
+    "postural hypotension",
+    "FRIDs",
+    "fall risk increasing drugs",
+    "Otago exercise programme",
+    "tai chi",
+    "gait speed",
+    "Berg balance scale",
+    "Tinetti POMA",
+    "hip fracture",
+    "fear of falling",
+    "home hazard modification",
+    "vitamin D",
+    "syncope",
+    "carotid sinus hypersensitivity",
+    "NICE CG161",
+    "World Guidelines for Falls Prevention 2022",
+  ],
+  sections: [
+    {
+      heading: "Definition, burden and why it matters",
+      points: [
+        "**WHO definition:** a fall is an event which results in a person coming to rest inadvertently on the ground or floor or other lower level. A **recurrent faller** is one with two or more falls in twelve months, and this group carries the highest risk of injury and institutionalisation.",
+        "**Epidemiology:** roughly **one in three community-dwelling people over 65 and one in two over 80 fall each year**; about 10% of falls cause serious injury and 1-2% cause a hip fracture. LASI wave 1 (2017-18) found a self-reported fall prevalence of around 13% in Indian adults aged 60 and above in the preceding two years, which is almost certainly an underestimate because falls are dismissed as normal ageing.",
+        "**Consequences beyond fracture:** the long lie (more than one hour on the floor) causes dehydration, rhabdomyolysis, pressure injury, hypothermia and pneumonia; **fear of falling** produces self-imposed activity restriction, deconditioning and further falls, and is itself an independent predictor of future falls.",
+        "Falls are the **commonest presentation of an acute illness in the frail elderly** - a urinary tract infection, pneumonia, silent myocardial infarction, new anaemia or a newly started drug may all first show themselves as a fall, so every new fall deserves a search for an acute precipitant.",
+        "**Never accept 'she is just old' as the explanation.** A fall is a symptom with a cause, and the aim of the assessment is to convert one non-specific event into a list of modifiable risk factors, each with an intervention against it.",
+        "The **World Guidelines for Falls Prevention and Management in Older Adults (2022)** stratify older adults into low, intermediate and high risk and route them to advice, exercise or full multifactorial assessment respectively; this three-tier model is now the standard framework to quote.",
+      ],
+    },
+    {
+      heading: "Risk factors - intrinsic, extrinsic and situational",
+      points: [
+        "**Intrinsic:** age over 80, previous fall, muscle weakness (especially hip abductors and quadriceps), gait and balance impairment, arthritis of hip or knee, visual impairment (cataract, macular degeneration, glaucoma, uncorrected refractive error, **new varifocal or bifocal lenses**), peripheral neuropathy, vestibular disease, parkinsonism, stroke, cognitive impairment, depression, incontinence and urgency, foot problems and deformity.",
+        "**Cardiovascular:** orthostatic hypotension, postprandial hypotension, arrhythmia (bradyarrhythmia, complete heart block, tachyarrhythmia), aortic stenosis, carotid sinus hypersensitivity and vasovagal syncope - these are the causes that produce a fall with no memory of hitting the ground.",
+        "**Drugs (fall-risk-increasing drugs, FRIDs):** benzodiazepines and Z-drugs, antipsychotics, tricyclic and other antidepressants, anticonvulsants, opioids, anticholinergics, antihypertensives (especially alpha-blockers such as prazosin and tamsulosin, and any recently intensified regimen), nitrates, diuretics, sulfonylureas and insulin (hypoglycaemia), and alcohol. **Risk rises steeply with four or more drugs of any kind.**",
+        "**Extrinsic and environmental, and these matter greatly in Indian homes:** wet bathroom floors with no drainage slope, **Indian-style squat toilets** and the need to rise from squatting, high thresholds between rooms, steep narrow staircases with no handrail, loose rugs and mats, trailing wires, sleeping on the floor or on a low mat, poor night lighting, no light switch by the bed, cattle sheds and uneven courtyards in rural homes, and open-heeled chappals and rubber slippers rather than fitted footwear.",
+        "**Situational:** getting up at night to pass urine (nocturia is one of the strongest situational triggers), rushing to answer the door or the telephone, carrying grandchildren, climbing on a stool to reach a high shelf, and travelling on a crowded bus or train.",
+        "**Vitamin D deficiency** is close to universal in housebound Indian elders and contributes to proximal myopathy, osteomalacia and falls; supplementation reduces falls chiefly in those who are actually deficient, and **high-dose intermittent bolus dosing (for example 500,000 IU annually) increases falls** and must not be used.",
+      ],
+    },
+    {
+      heading: "Assessment - history, examination and investigation",
+      points: [
+        "**Screen annually** with the three STEADI questions: have you fallen in the past year, do you feel unsteady when standing or walking, do you worry about falling. A yes to any one, or any single injurious fall, or two or more falls, triggers a **multifactorial falls assessment**.",
+        "**History of the fall itself:** exactly what the patient was doing, whether there was warning (dizziness, palpitation, chest pain, aura), whether consciousness was lost, whether a witness saw pallor or jerking, how the patient landed, whether they could get up unaided and how long they lay, and whether the same thing has happened before. **Loss of consciousness turns a fall into syncope and changes the work-up entirely.**",
+        "**Wider history:** every drug including over-the-counter, ayurvedic and herbal preparations and alcohol, recent dose changes, continence and nocturia, alcohol, footwear, walking aid and whether it is the right height, vision and when the eyes were last tested, home layout, and the fear of falling and what activities have been given up because of it.",
+        "**Examination:** **lying and standing blood pressure at 1 and 3 minutes** (a fall of 20 mmHg systolic or 10 mmHg diastolic within 3 minutes of standing defines orthostatic hypotension), pulse and rhythm, murmurs of aortic stenosis, cardiac and carotid auscultation; neurological examination for focal deficit, parkinsonism, proprioception, cerebellar signs and peripheral neuropathy; musculoskeletal examination of hips, knees and feet with inspection of footwear; visual acuity with a near card; and cognitive and mood screens.",
+        "**Performance tests:** observed gait, **Timed Up and Go (12 seconds or more is abnormal)**, 30-second chair stand, 4-stage balance test, usual gait speed (under 0.8 m/s is slow), and where a fuller measure is wanted the Berg Balance Scale (under 45 of 56) or the Tinetti Performance-Oriented Mobility Assessment (under 19 of 28 is high risk).",
+        "**Investigation is guided, not routine:** haemoglobin, glucose, urea, creatinine, **sodium and calcium**, thyroid function, vitamin B12 and vitamin D, urine analysis where infection is suspected, and an **ECG in every faller**. Add 24-hour or longer ambulatory ECG if arrhythmia is suspected, echocardiography for a murmur or exertional syncope, tilt table or carotid sinus massage for unexplained syncope, and CT head after a fall with head injury, on anticoagulation, or with new focal signs.",
+      ],
+    },
+    {
+      heading: "Multifactorial intervention - what actually works",
+      points: [
+        "**Exercise is the single most effective intervention.** Programmes must include **progressive strength and challenging balance training** for at least 3 hours a week, sustained long term. The **Otago Exercise Programme** (leg strengthening plus balance retraining plus a walking plan, home-based, five sessions supervised then continued) reduces falls by about 35% in the over-80s, and **tai chi** produces a similar effect in the fitter older adult. Walking alone, and brisk walking in someone with poor balance, does **not** reduce falls and may increase them.",
+        "**Medication review and deprescribing:** stop or taper benzodiazepines, Z-drugs and antipsychotics; reduce or withdraw antihypertensives where blood pressure is low or orthostatic drop is present; substitute alpha-blockers; avoid anticholinergics; relax glycaemic targets and stop sulfonylureas where hypoglycaemia is occurring. **This is the intervention most often written about and least often done.**",
+        "**Orthostatic hypotension:** review the drug list first, then rise in stages and sit on the edge of the bed before standing, increase salt and fluid where not contraindicated, avoid large carbohydrate meals and hot baths, use compression stockings or an abdominal binder, and elevate the head of the bed. Drug therapy (fludrocortisone or midodrine) is second line and used with care in heart failure and hypertension.",
+        "**Vision and feet:** arrange cataract surgery for the first eye promptly (this reduces falls; the evidence for expediting the second eye is weaker), correct refractive error, and **advise single-vision distance glasses for walking outdoors** rather than bifocals or varifocals. Treat corns, calluses, bunions and onychomycosis, and prescribe well-fitting shoes with a low broad heel, a firm sole and a fastening - not loose slippers or chappals.",
+        "**Home hazard assessment and modification** works, and works best in those at high risk and when it is done by an occupational therapist in the actual home: grab rails beside the toilet and in the bathroom, a **raised commode seat instead of a squat pan**, non-slip mats and floor drainage, removal of loose rugs and thresholds, handrails on both sides of the stairs, a bedside lamp or night light, a bedside urinal or commode to avoid the night walk, and moving daily items to waist height.",
+        "**Bone health and injury reduction:** assess fracture risk (FRAX with the Indian population where available), give **calcium 1000-1200 mg and vitamin D 800-1000 IU daily** where intake is inadequate, treat osteoporosis with bisphosphonates or denosumab where indicated, and review the need for anticoagulation - though in atrial fibrillation the fall risk almost never outweighs the stroke benefit (roughly 295 falls per year would be needed to offset it).",
+      ],
+    },
+    {
+      heading: "After the fall - injury, the long lie and the fear of falling",
+      points: [
+        "**Assess for injury first:** head injury and its delayed complications, fractures of the hip, wrist (Colles), humeral neck, pelvis and ribs, and vertebral compression fracture. **Inability to weight-bear, groin pain on log-roll, or a shortened externally rotated leg is a hip fracture until imaging says otherwise**, and a normal initial radiograph does not exclude it - repeat imaging or MRI if pain persists.",
+        "**Head injury on an anticoagulant or antiplatelet requires same-day CT even if the patient is fully alert**, because subdural and intracerebral bleeding may declare itself hours or weeks later; warn the family about the delayed presentation of chronic subdural haematoma with headache, drowsiness, confusion or a new focal deficit over weeks.",
+        "**The long lie** (more than one hour on the floor) is an independent marker of poor prognosis: look for dehydration, acute kidney injury, rhabdomyolysis with raised creatine kinase, hypothermia, pressure injury and aspiration pneumonia, and admit if any is present.",
+        "**Teach getting up from the floor** and arrange a means of calling for help - a mobile phone carried in a pocket rather than left on a table, a whistle, a neighbour with a key, or the **Elderline 14567** number written large by the telephone.",
+        "**Fear of falling** is treated, not ignored: address it with graded activity, supervised exercise that restores confidence, and cognitive behavioural approaches; the Falls Efficacy Scale-International can be used to measure it and track change.",
+        "**Post-fall syndrome** describes the cascade of fear, activity restriction, deconditioning, further weakness and further falls; breaking the cascade early with exercise is what preserves independence.",
+      ],
+    },
+    {
+      heading: "Special situations and organising falls care in Indian practice",
+      points: [
+        "**Falls in hospital and in care homes:** multifactorial interventions help, but **bed rails and physical restraints do not reduce falls and cause serious injury and strangulation** - avoid them. Low beds, floor mats, adequate lighting, a call bell within reach, toileting rounds and delirium prevention are the measures that work.",
+        "**Dementia:** falls risk is roughly doubled and the evidence for exercise programmes is weaker; concentrate on removing FRIDs (especially antipsychotics), treating pain, correcting vision, environment modification, supervision and hip protectors in selected care-home residents.",
+        "**Parkinson disease:** falls are usually backward, related to postural instability, freezing and orthostatic hypotension from the disease and its drugs; refer for physiotherapy with cueing strategies and review the drug regimen and timing rather than simply increasing levodopa.",
+        "**Syncope masquerading as a fall:** roughly a third of older people who faint have amnesia for the loss of consciousness and report a mechanical fall; if the fall was unexplained, unwitnessed or associated with injury to the face, think cardiac and do an ECG and rhythm monitoring.",
+        "**Practical Indian package:** teach the family to make the bathroom safe (dry floor, grab bar, plastic stool, western commode or a raised seat over the squat pan), light the passage to the toilet, keep a bedside water pot and urinal, remove door thresholds, replace slippers with fitted footwear, and register for a walking stick or walker under **Rashtriya Vayoshri Yojana** if the patient is eligible.",
+        "**Document and code the fall in the record**, set a review date, and re-screen after every hospital admission, every drug change and every new illness - falls prevention is a longitudinal process, not a one-off consultation.",
+      ],
+    },
+  ],
+  tables: [
+    {
+      heading: "Falls assessment tools and their cut-offs",
+      columns: ["Tool", "What it measures", "How it is done", "Abnormal / cut-off"],
+      rows: [
+        ["Timed Up and Go", "Functional mobility and dynamic balance", "Rise from a standard chair, walk 3 m, turn, walk back, sit", "12 seconds or more suggests fall risk; over 20 seconds indicates dependence"],
+        ["Usual gait speed", "Global function and frailty", "Time a marked 4 m walk at normal pace", "Under 0.8 m/s is slow; under 0.6 m/s marks high risk"],
+        ["30-second chair stand", "Lower limb strength", "Number of full sit-to-stand cycles in 30 seconds, arms folded", "Below the age and sex norm (for example under 8 in men aged 80-84)"],
+        ["4-stage balance test", "Static balance", "Feet together, semi-tandem, tandem, single leg, 10 seconds each", "Unable to hold the tandem stance for 10 seconds"],
+        ["Berg Balance Scale", "Balance across 14 tasks", "Scored 0-4 per task by an observer", "Under 45 of 56 indicates increased fall risk"],
+        ["Tinetti POMA", "Balance (16) plus gait (12)", "Observed structured tasks", "Under 19 of 28 high risk; 19-23 moderate risk"],
+        ["Orthostatic blood pressure", "Postural hypotension", "Supine 5 minutes, then standing at 1 and 3 minutes", "Fall of 20 mmHg systolic or 10 mmHg diastolic"],
+      ],
+    },
+    {
+      heading: "Fall-risk-increasing drugs and what to do about them",
+      columns: ["Drug class", "Mechanism of falls", "Action"],
+      rows: [
+        ["Benzodiazepines and Z-drugs", "Sedation, delayed reaction time, ataxia, next-day hangover", "Taper and withdraw; substitute sleep hygiene and CBT for insomnia"],
+        ["Antipsychotics", "Sedation, parkinsonism, orthostatic hypotension", "Avoid for behavioural symptoms of dementia; if used, lowest dose, shortest time, review every 12 weeks"],
+        ["Tricyclic antidepressants and SSRIs", "Orthostatic hypotension, hyponatraemia, sedation", "Avoid tricyclics; if an SSRI is needed check sodium at 2-4 weeks"],
+        ["Alpha-blockers (prazosin, tamsulosin, doxazosin)", "First-dose and postural hypotension", "Substitute; if needed for prostatism give at night and warn about rising"],
+        ["Loop and thiazide diuretics", "Volume depletion, hyponatraemia, urgency and nocturia", "Review indication, take in the morning, check sodium and standing blood pressure"],
+        ["Sulfonylureas and insulin", "Hypoglycaemia", "Relax HbA1c target to 7.5-8.5% in frailty; stop glibenclamide"],
+        ["Opioids and anticholinergics", "Sedation, confusion, blurred vision, constipation", "Lowest effective dose; compute anticholinergic burden and reduce it"],
+      ],
+    },
+  ],
+  redFlags: [
+    "Fall with loss of consciousness, or an unexplained and unwitnessed fall with facial injury - treat as syncope, do an ECG and consider arrhythmia, aortic stenosis and complete heart block the same day.",
+    "Head injury in a patient taking warfarin, a direct oral anticoagulant or an antiplatelet - CT head the same day even if the patient is alert and neurologically normal.",
+    "Inability to bear weight, groin pain on log-rolling, or a shortened and externally rotated leg - hip fracture until proved otherwise; a normal initial radiograph does not exclude it.",
+    "A long lie of more than one hour on the floor - look for rhabdomyolysis, acute kidney injury, dehydration, hypothermia, pressure injury and aspiration pneumonia.",
+    "New confusion, fever, dysuria or breathlessness with the fall - the fall is the presentation of an acute illness, so treat the illness rather than the fall.",
+    "Progressive backward falls with early postural instability, vertical gaze palsy or dysautonomia - suspect progressive supranuclear palsy or multiple system atrophy rather than idiopathic Parkinson disease.",
+    "Falls with headache, drowsiness or a new focal deficit developing days to weeks after a head injury - chronic subdural haematoma.",
+  ],
+  pearls: [
+    "Ask everyone over 65 the three STEADI questions once a year; two or more falls, one injurious fall, or unsteadiness earns a full multifactorial assessment.",
+    "Lying and standing blood pressure at 1 and 3 minutes is the single most rewarding measurement in a faller and the one most often skipped.",
+    "Exercise with progressive strength AND challenging balance, at least 3 hours a week and sustained, is the intervention with the strongest evidence; walking alone does not prevent falls.",
+    "The best-value prescription after a fall is often a subtraction: stopping a benzodiazepine, an antipsychotic or an alpha-blocker.",
+    "Advise single-vision distance glasses for walking outdoors; bifocals and varifocals blur the ground at the edge of a step.",
+    "Bed rails and restraints do not prevent falls and cause injury - use low beds, lighting, a call bell in reach and scheduled toileting instead.",
+    "In atrial fibrillation, do not stop anticoagulation because the patient falls; the stroke prevented outweighs the bleed, and the fall risk should instead be treated.",
+    "In an Indian home the two highest-yield modifications are a dry, grab-railed bathroom with a raised commode seat and a lit, unobstructed path from bed to toilet.",
+  ],
+  theory: [
+    {
+      id: "geriatrics-ethics-falls-t1",
+      paper: "I",
+      kind: "long",
+      marks: 10,
+      minutes: 20,
+      frequency: "core",
+      question:
+        "A 78-year-old woman with hypertension, type 2 diabetes and osteoarthritis of both knees has had three falls in six months. Enumerate the causes of falls in the elderly and describe your assessment and multifactorial management plan in family practice.",
+      openingLines: [
+        "A fall is an event in which a person unintentionally comes to rest on the ground, floor or other lower level, not as a result of a major intrinsic event such as stroke or seizure or an overwhelming external force; three falls in six months makes her a recurrent faller at high risk of injury and institutionalisation.",
+        "Falls in old age are almost always multifactorial - risk rises with the number of risk factors present rather than with any single cause - so the aim of assessment is to convert this one symptom into a list of modifiable factors, each with an intervention against it.",
+      ],
+      answer: [
+        {
+          heading: "1. Causes - intrinsic",
+          points: [
+            "Neuromuscular: muscle weakness, gait and balance disorder, stroke, parkinsonism, cerebellar disease, peripheral neuropathy, cervical myelopathy.",
+            "Cardiovascular: orthostatic and postprandial hypotension, arrhythmia, complete heart block, aortic stenosis, carotid sinus hypersensitivity, vasovagal syncope.",
+            "Sensory: visual impairment from cataract, glaucoma or macular degeneration, new bifocal or varifocal lenses, vestibular disease, hearing loss.",
+            "Musculoskeletal: osteoarthritis of hip and knee, foot deformity, corns and calluses, kyphosis.",
+            "Systemic and metabolic: anaemia, hyponatraemia, hypoglycaemia, hypothyroidism, vitamin D deficiency, infection, dehydration.",
+            "Cognitive and psychological: dementia, delirium, depression, fear of falling and consequent deconditioning.",
+          ],
+        },
+        {
+          heading: "2. Causes - drugs and environment",
+          points: [
+            "Fall-risk-increasing drugs: benzodiazepines and Z-drugs, antipsychotics, antidepressants, anticonvulsants, opioids, anticholinergics, antihypertensives especially alpha-blockers, diuretics, nitrates, sulfonylureas and insulin, alcohol; risk rises sharply with four or more drugs.",
+            "Environmental: wet bathroom floor, squat toilet, high thresholds, steep stairs without a handrail, loose mats, trailing wires, poor night lighting, sleeping on a floor mat, uneven courtyard.",
+            "Footwear: loose chappals, backless slippers, worn soles, walking barefoot on a wet floor.",
+            "Situational: nocturia and the night walk to the toilet, hurrying to the door or telephone, climbing on a stool, carrying a grandchild, crowded public transport.",
+          ],
+        },
+        {
+          heading: "3. Assessment",
+          points: [
+            "History of each fall: activity at the time, warning symptoms, loss of consciousness, witness account, how she landed, whether she could get up, how long she lay, and injuries sustained.",
+            "Complete drug review including over-the-counter and traditional preparations, recent dose changes, and alcohol; continence and nocturia; vision and last eye test; footwear; walking aid and its height; home layout; fear of falling and activities given up.",
+            "Examination: lying and standing blood pressure at 1 and 3 minutes, pulse and rhythm, murmurs, neurological examination for focal deficit, parkinsonism, neuropathy and proprioception, hips knees and feet, visual acuity, cognition and mood.",
+            "Performance tests: observed gait, Timed Up and Go (12 seconds or more abnormal), 30-second chair stand, 4-stage balance test, gait speed under 0.8 m/s.",
+            "Investigations: haemoglobin, glucose or HbA1c, urea, creatinine, sodium, calcium, thyroid function, vitamin B12 and D, urine analysis, and an ECG in every faller; ambulatory ECG, echocardiography or CT head as indicated.",
+          ],
+        },
+        {
+          heading: "4. Multifactorial management",
+          points: [
+            "Exercise: supervised progressive strength and challenging balance training, at least 3 hours a week, sustained - Otago programme or tai chi; refer to physiotherapy and give a written home programme.",
+            "Deprescribe fall-risk-increasing drugs; treat orthostatic hypotension with staged rising, salt and fluid, compression and drug review; relax the HbA1c target to 7.5-8.5% and stop sulfonylurea if hypoglycaemia is occurring.",
+            "Vision: refer for cataract surgery, correct refraction, advise single-vision distance glasses for walking outdoors.",
+            "Feet and footwear: treat corns and calluses, prescribe fitted shoes with a firm sole, low broad heel and a fastening.",
+            "Home hazards: grab rails and non-slip mat in the bathroom, raised commode seat, night light and a lit path to the toilet, removal of loose rugs and thresholds, stair handrails, bedside urinal.",
+            "Bone health: calcium 1000-1200 mg and vitamin D 800-1000 IU daily, fracture risk assessment and osteoporosis treatment where indicated.",
+            "Knee osteoarthritis: analgesia by the WHO-style ladder avoiding NSAIDs where possible, quadriceps strengthening, weight reduction, and a stick in the opposite hand.",
+          ],
+        },
+        {
+          heading: "5. Follow-up, safety net and family education",
+          points: [
+            "Teach her to get up from the floor and arrange a means of summoning help; write the Elderline 14567 number on the card.",
+            "Address fear of falling with graded activity rather than advising her to stay in bed.",
+            "Review at 4-6 weeks, after every drug change, and after any hospital admission; keep a falls diary.",
+            "Warn the family of the red flags: inability to weight-bear, head injury on an antithrombotic, confusion or fever with a fall, and a long lie.",
+          ],
+        },
+      ],
+      mustDraw: [
+        "A table of intrinsic, drug-related and extrinsic risk factors set against the specific intervention for each.",
+        "A flow chart: annual STEADI screen - risk stratification (low / intermediate / high) - advice, exercise or full multifactorial assessment - individualised intervention - review.",
+      ],
+      markSplit: [
+        { part: "Definition and multifactorial principle", marks: 1 },
+        { part: "Causes - intrinsic, drugs, environmental, situational", marks: 3 },
+        { part: "History, examination and performance tests", marks: 2 },
+        { part: "Investigations and what each changes", marks: 1 },
+        { part: "Multifactorial management and follow-up", marks: 3 },
+      ],
+      keywords: ["falls", "multifactorial assessment", "Timed Up and Go", "orthostatic hypotension", "Otago", "FRIDs", "home hazard"],
+    },
+    {
+      id: "geriatrics-ethics-falls-t2",
+      paper: "II",
+      kind: "short-note",
+      marks: 5,
+      minutes: 10,
+      frequency: "common",
+      question: "Write short notes on the prevention of falls in the elderly at community level.",
+      openingLines: [
+        "About one in three community-dwelling people over 65 falls each year, and falls are the leading cause of injury-related death and disability in this age group; prevention is effective and is delivered as a package rather than as a single measure.",
+        "The 2022 World Guidelines for Falls Prevention stratify older adults into low, intermediate and high risk, and match the intensity of intervention to the stratum.",
+      ],
+      answer: [
+        {
+          heading: "1. Case finding and risk stratification",
+          points: [
+            "Ask every person over 65 annually: have you fallen in the past year, do you feel unsteady, are you worried about falling.",
+            "Low risk (no falls, no unsteadiness): general advice, exercise promotion, vitamin D and bone health.",
+            "Intermediate risk (one non-injurious fall or unsteadiness with normal gait test): targeted strength and balance exercise plus a drug review.",
+            "High risk (two or more falls, injurious fall, frailty, abnormal gait test): full multifactorial assessment and individualised intervention.",
+          ],
+        },
+        {
+          heading: "2. Interventions with the best evidence",
+          points: [
+            "Progressive strength and challenging balance exercise for at least 3 hours a week, sustained long term - Otago programme, tai chi, or group exercise; walking alone is not effective.",
+            "Medication review and deprescribing of fall-risk-increasing drugs, particularly benzodiazepines, antipsychotics, antidepressants and alpha-blockers.",
+            "Home hazard assessment and modification by an occupational therapist, targeted at high-risk people and done in the actual home.",
+            "Vision correction, prompt first-eye cataract surgery, and single-vision distance glasses for outdoor walking.",
+            "Vitamin D 800-1000 IU daily where deficient, with calcium; avoid large intermittent bolus doses, which increase falls.",
+            "Footwear and foot care; treatment of orthostatic hypotension; cardiac pacing for documented bradyarrhythmia or carotid sinus hypersensitivity with syncope.",
+          ],
+        },
+        {
+          heading: "3. Community and public health measures in India",
+          points: [
+            "Falls screening built into geriatric clinics under the National Programme for Health Care of the Elderly and into health and wellness centre elderly care.",
+            "Training of ASHA and ANM workers to identify recurrent fallers and home hazards on domiciliary visits.",
+            "Assistive devices - sticks, walkers, wheelchairs, spectacles, hearing aids - through Rashtriya Vayoshri Yojana.",
+            "Community exercise and yoga groups, senior citizen associations and day-care centres to sustain exercise and reduce isolation.",
+            "Public education that falling is not a normal part of ageing and should be reported.",
+          ],
+        },
+      ],
+      mustDraw: ["A three-tier risk stratification flow chart from the annual screening questions to the matched intervention."],
+      markSplit: [
+        { part: "Burden and screening questions", marks: 1 },
+        { part: "Risk stratification", marks: 1 },
+        { part: "Evidence-based interventions", marks: 2 },
+        { part: "Indian community and programme measures", marks: 1 },
+      ],
+      keywords: ["falls prevention", "STEADI", "Otago", "vitamin D", "NPHCE", "Rashtriya Vayoshri Yojana"],
+    },
+  ],
+  mcqs: [
+    {
+      id: "geriatrics-ethics-falls-q1",
+      stem: "An 82-year-old man is assessed after two falls. He rises from a standard chair, walks three metres, turns and returns to sitting in 16 seconds. What does this result indicate?",
+      options: [
+        "A normal Timed Up and Go, so no further falls assessment is needed",
+        "An abnormal Timed Up and Go indicating increased falls risk",
+        "Severe functional dependence requiring a wheelchair",
+        "An abnormal 30-second chair stand test",
+        "A positive 4-stage balance test",
+      ],
+      answer: 1,
+      explanation:
+        "The Timed Up and Go is exactly this task, and a time of 12 seconds or more indicates increased falls risk, so 16 seconds is abnormal and a full multifactorial assessment is warranted. It is not normal, so the first option is wrong. Severe dependence is suggested only above about 20 seconds, so a wheelchair is not indicated. The 30-second chair stand counts sit-to-stand repetitions in a fixed time and the 4-stage balance test involves static stances of 10 seconds each, so neither describes the manoeuvre performed.",
+      difficulty: "easy",
+    },
+    {
+      id: "geriatrics-ethics-falls-q2",
+      stem: "A 76-year-old woman on amlodipine, prazosin, glibenclamide, alprazolam and diclofenac has had three falls at night on the way to the toilet. Which single change is most likely to reduce her falls?",
+      options: [
+        "Add fludrocortisone for postural hypotension",
+        "Stop alprazolam and prazosin",
+        "Prescribe hip protectors",
+        "Advise her to restrict fluids after 6 pm",
+        "Add a high-dose annual bolus of vitamin D",
+      ],
+      answer: 1,
+      explanation:
+        "Benzodiazepines and alpha-blockers are among the strongest fall-risk-increasing drugs - alprazolam through sedation and delayed reaction time, prazosin through postural hypotension - and withdrawing them addresses both the sedation and the orthostatic drop that occur precisely on rising at night. Fludrocortisone is second-line for orthostatic hypotension and should never precede a drug review, and it would worsen fluid overload and hypertension. Hip protectors may reduce fracture in selected care-home residents but do not prevent falls. Fluid restriction risks dehydration and worsens orthostatic hypotension. High-dose intermittent bolus vitamin D has been shown to increase falls and is contraindicated as a strategy.",
+      difficulty: "moderate",
+    },
+    {
+      id: "geriatrics-ethics-falls-q3",
+      stem: "Which exercise prescription has the strongest evidence for preventing falls in community-dwelling older adults?",
+      options: [
+        "Brisk walking for 30 minutes on most days",
+        "Progressive strength plus challenging balance training for at least 3 hours a week",
+        "Swimming three times a week",
+        "Seated upper limb resistance exercises daily",
+        "Stretching and flexibility routines twice a week",
+      ],
+      answer: 1,
+      explanation:
+        "Meta-analyses and the 2022 World Guidelines consistently show that programmes combining progressive strength with balance training that genuinely challenges balance, delivered for at least 3 hours a week and sustained, reduce falls by around a quarter to a third - the Otago programme and tai chi are the archetypes. Brisk walking alone has not been shown to reduce falls and in people with poor balance may increase them. Swimming and seated upper-limb work do not train standing balance or the lower limb in the weight-bearing position, and stretching alone has no fall-prevention effect.",
+      difficulty: "moderate",
+    },
+    {
+      id: "geriatrics-ethics-falls-q4",
+      stem: "An 80-year-old man on warfarin for atrial fibrillation falls at home and strikes his head on the door frame. He is fully alert, has no focal neurological signs and a GCS of 15. What is the correct next step?",
+      options: [
+        "Reassure and observe at home with head injury advice",
+        "Stop warfarin permanently because he is a faller",
+        "Arrange a non-contrast CT head the same day",
+        "Prescribe a cervical collar and repeat examination in 48 hours",
+        "Request a skull radiograph"
+      ],
+      answer: 2,
+      explanation:
+        "Head injury in a patient on an anticoagulant demands same-day non-contrast CT of the head regardless of GCS, because intracranial bleeding may be present without any clinical sign and may declare itself only after deterioration. Observation at home is unsafe for this reason. Stopping warfarin is wrong: in atrial fibrillation the stroke prevented far outweighs the bleeding risk from falls, and the fall risk should be treated rather than the anticoagulant withdrawn. A collar addresses cervical spine injury, which is not the issue here, and a skull radiograph does not exclude intracranial haemorrhage and has no role.",
+      difficulty: "moderate",
+    },
+    {
+      id: "geriatrics-ethics-falls-q5",
+      stem: "A 79-year-old woman is found to have a supine blood pressure of 148/84 mmHg, falling to 120/76 mmHg at 1 minute and 118/74 mmHg at 3 minutes of standing, with dizziness. Which statement is correct?",
+      options: [
+        "This does not meet the criteria for orthostatic hypotension",
+        "This meets the criteria for orthostatic hypotension and drug review is the first step",
+        "Fludrocortisone should be started immediately",
+        "The measurement is invalid because it was not repeated at 10 minutes",
+        "This pattern is diagnostic of carotid sinus hypersensitivity",
+      ],
+      answer: 1,
+      explanation:
+        "Orthostatic hypotension is defined as a fall of at least 20 mmHg systolic or at least 10 mmHg diastolic within 3 minutes of standing; the systolic drop here is 28 mmHg, so the criteria are met, and reviewing the drug list - antihypertensives, alpha-blockers, diuretics, nitrates, tricyclics - is always the first intervention. The first option therefore misapplies the definition. Fludrocortisone is second line, used only after non-pharmacological measures and drug withdrawal, and carries risks of fluid overload and supine hypertension. A 10-minute reading is used only when delayed orthostatic hypotension is suspected and its absence does not invalidate the test. Carotid sinus hypersensitivity is diagnosed by carotid sinus massage producing asystole of 3 seconds or more or a systolic fall of 50 mmHg, not by a standing test.",
+      difficulty: "hard",
+    },
+  ],
+  cards: [
+    {
+      id: "geriatrics-ethics-falls-c1",
+      front: "Define a fall (WHO) and define a recurrent faller.",
+      back: "A fall is an event in which a person unintentionally comes to rest on the ground, floor or other lower level, not because of a major intrinsic event such as stroke or seizure or an overwhelming external force. A recurrent faller has had two or more falls in twelve months.",
+    },
+    {
+      id: "geriatrics-ethics-falls-c2",
+      front: "The three STEADI screening questions.",
+      back: "Have you fallen in the past year? Do you feel unsteady when standing or walking? Do you worry about falling? A yes to any one triggers a fuller falls assessment.",
+    },
+    {
+      id: "geriatrics-ethics-falls-c3",
+      front: "Timed Up and Go: how is it done and what is abnormal?",
+      back: "Rise from a standard armchair, walk 3 metres, turn, walk back and sit down. Twelve seconds or more indicates increased falls risk; more than 20 seconds indicates functional dependence.",
+    },
+    {
+      id: "geriatrics-ethics-falls-c4",
+      front: "Definition of orthostatic hypotension.",
+      back: "A fall of 20 mmHg or more in systolic, or 10 mmHg or more in diastolic, blood pressure within 3 minutes of standing from a 5-minute supine rest.",
+    },
+    {
+      id: "geriatrics-ethics-falls-c5",
+      front: "Name six classes of fall-risk-increasing drugs.",
+      back: "Benzodiazepines and Z-drugs, antipsychotics, antidepressants (especially tricyclics), opioids and anticholinergics, antihypertensives including alpha-blockers and diuretics, and sulfonylureas or insulin causing hypoglycaemia.",
+    },
+    {
+      id: "geriatrics-ethics-falls-c6",
+      front: "What exercise prescription prevents falls?",
+      back: "Progressive strength training plus balance training that genuinely challenges balance, at least 3 hours a week, sustained long term - the Otago programme or tai chi. Walking alone does not prevent falls.",
+    },
+    {
+      id: "geriatrics-ethics-falls-c7",
+      front: "Why should bed rails not be used to prevent falls in hospital?",
+      back: "They do not reduce falls, and they convert a fall from bed height into a fall from a greater height, with risk of entrapment and strangulation. Use low beds, floor mats, lighting, a call bell in reach and scheduled toileting instead.",
+    },
+    {
+      id: "geriatrics-ethics-falls-c8",
+      front: "Should anticoagulation be stopped in an older person with atrial fibrillation who falls?",
+      back: "No. The stroke risk prevented outweighs the bleeding risk from falls - a patient would need to fall on the order of 295 times a year for the harm to outweigh the benefit. Treat the fall risk instead and continue anticoagulation.",
+    },
+  ],
+  references: [
+    "Montero-Odasso M et al. World Guidelines for Falls Prevention and Management in Older Adults: a global initiative. Age and Ageing, 2022",
+    "NICE Clinical Guideline CG161: Falls in older people - assessment after a fall and prevention of further falls, 2013 (updated)",
+    "CDC STEADI (Stopping Elderly Accidents, Deaths and Injuries) Algorithm and toolkit, 2019",
+    "Sherrington C et al. Exercise for preventing falls in older people living in the community. Cochrane Database of Systematic Reviews, 2019",
+    "Hazzard's Geriatric Medicine and Gerontology, 8th edition, 2022 - falls and gait disorders",
+    "Longitudinal Ageing Study in India (LASI) Wave 1 report, IIPS / MoHFW, 2020",
+    "Operational Guidelines, National Programme for Health Care of the Elderly (NPHCE), MoHFW",
+  ],
+});
+
+
+topics.push({
+  id: "eye-ent-otitis",
+  title: "Acute otitis media, otitis externa and chronic suppurative otitis media",
+  oneLiner:
+    "A discharging or painful ear is separated by otoscopy into acute otitis media (a bulging, red, immobile tympanic membrane with a middle ear effusion), otitis externa (a tender, oedematous canal with pain on tragal pressure and an intact drum) and chronic suppurative otitis media (a perforation with discharge for more than two weeks), the last of which must be further divided into safe mucosal disease and unsafe squamous disease with cholesteatoma.",
+  frequency: "core",
+  keywords: [
+    "acute otitis media",
+    "otitis externa",
+    "chronic suppurative otitis media",
+    "CSOM",
+    "cholesteatoma",
+    "otorrhoea",
+    "tympanic membrane perforation",
+    "attic perforation",
+    "amoxicillin",
+    "ciprofloxacin ear drops",
+    "myringotomy",
+    "mastoiditis",
+    "otitis media with effusion",
+    "glue ear",
+    "malignant otitis externa",
+    "tympanoplasty",
+  ],
+  sections: [
+    {
+      heading: "Definitions and the otoscopic decision at the bedside",
+      points: [
+        "**Acute otitis media (AOM)** is the rapid onset of signs and symptoms of middle ear inflammation with a middle ear effusion: otalgia, fever and irritability with a **bulging, opaque or red tympanic membrane that is immobile on pneumatic otoscopy**. Redness alone in a crying child is not enough - bulging or reduced mobility is the diagnostic sign.",
+        "**Otitis media with effusion (OME, glue ear)** is fluid behind an intact drum **without** acute inflammation: the drum is retracted or amber, an air-fluid level or bubbles may be visible, there is conductive hearing loss but no fever and no significant pain.",
+        "**Acute otitis externa** is diffuse inflammation of the external auditory canal: **pain on pulling the pinna or pressing the tragus**, canal oedema and debris, scanty discharge, and an intact but often unseen tympanic membrane. Hearing is normal or mildly reduced by canal occlusion.",
+        "**Chronic suppurative otitis media (CSOM)** is a **perforated tympanic membrane with persistent or recurrent discharge for more than two weeks** (WHO uses two weeks; many texts use six). It is divided into tubotympanic (safe, mucosal) disease and atticoantral (unsafe, squamous) disease with cholesteatoma.",
+        "The bedside sequence is fixed: inspect the pinna and mastoid, press the tragus, insert the largest speculum that fits, clear wax or debris under vision, then examine the **pars tensa quadrant by quadrant and the pars flaccida (attic) last** - the attic is where the dangerous perforation hides and where inexperienced examiners never look.",
+        "**Tuning fork tests and pneumatic otoscopy convert an opinion into a finding**: a conductive loss with a normal-looking drum suggests effusion or ossicular disease, while a mobile drum with a normal Rinne makes middle ear disease unlikely and points to referred otalgia from teeth, temporomandibular joint, tonsil or cervical spine.",
+      ],
+    },
+    {
+      heading: "Acute otitis media: who gets it, what causes it and how it behaves",
+      points: [
+        "AOM is a disease of early childhood: the peak is **6 to 24 months**, because the infant Eustachian tube is shorter, wider and more horizontal, and adenoid hypertrophy and viral upper respiratory infection obstruct it.",
+        "Risk factors worth listing in a paper are **bottle feeding in the supine position, absence of breastfeeding, day care attendance, passive smoking, biomass fuel smoke, cleft palate, Down syndrome, allergic rhinitis and winter season**.",
+        "The three classical bacteria are **Streptococcus pneumoniae, non-typeable Haemophilus influenzae and Moraxella catarrhalis**; Streptococcus pyogenes matters in older children and is more likely to perforate the drum. Viruses precede or accompany most episodes.",
+        "The natural history is favourable: **about 80% of episodes settle within 3 days without an antibiotic**, and roughly 15 children must be treated with antibiotics for one extra child to be pain-free at 2 to 7 days - this number needed to treat is a favourite viva figure.",
+        "Stages to recite: tubal occlusion, pre-suppuration (red drum, throbbing pain, fever), suppuration (bulging drum, severe pain), **resolution after spontaneous perforation with sudden relief of pain and mucopurulent discharge**, and either complete healing or progression to complication or chronic disease.",
+        "A key clinical rule: **the ear that stops hurting the moment it starts discharging has perforated**, and that child needs review to confirm the perforation heals - persistence beyond 6 weeks means the disease has become chronic.",
+      ],
+    },
+    {
+      heading: "Treating acute otitis media: analgesia first, antibiotics by rule",
+      points: [
+        "**Analgesia is the first prescription, not the antibiotic**: paracetamol 15 mg/kg six-hourly or ibuprofen 10 mg/kg eight-hourly, given regularly for 48 to 72 hours, treats the symptom that actually distresses the child.",
+        "**Give an antibiotic immediately** if the child is **under 6 months**, is 6 to 24 months with bilateral AOM, has **otorrhoea from a fresh perforation**, is systemically unwell or toxic, has severe otalgia, temperature above 39 degrees C, immunodeficiency, craniofacial anomaly or a cochlear implant.",
+        "Otherwise offer **delayed prescribing**: analgesia with a written prescription to be started if there is no improvement in 48 to 72 hours. This safety-net approach halves antibiotic use without increasing complications and should be named explicitly in the answer.",
+        "**First line is amoxicillin 80 to 90 mg/kg/day in two or three divided doses** (adults 500 mg to 1 g three times daily). Duration is **10 days under 2 years and in severe or perforated disease, and 5 to 7 days in children over 2 years** with mild disease.",
+        "**Amoxicillin-clavulanate 90/6.4 mg/kg/day** is used when there has been an antibiotic in the last 30 days, when there is concurrent purulent conjunctivitis (the otitis-conjunctivitis syndrome of Haemophilus), or when amoxicillin has failed after 48 to 72 hours. For penicillin allergy use **azithromycin 10 mg/kg on day 1 then 5 mg/kg for 4 days**, or cefuroxime axetil 30 mg/kg/day, remembering that macrolide resistance among pneumococci in India is high.",
+        "**Topical drops have no role in AOM with an intact drum**; if the drum has perforated, keep the ear dry, add **ciprofloxacin 0.3% ear drops five drops twice daily** and avoid aminoglycoside drops, which are potentially ototoxic through an open middle ear.",
+        "**Myringotomy** is indicated for a severely bulging drum with intractable pain, for AOM not settling on adequate antibiotics, in an immunocompromised or neonatal patient, and when a complication such as incipient mastoiditis or facial palsy is suspected.",
+      ],
+    },
+    {
+      heading: "Otitis externa, including the diabetic emergency",
+      points: [
+        "Otitis externa follows loss of the protective acid cerumen layer: **water in the ear (swimmer's ear), cotton bud or hairpin trauma, hearing aid or ear-plug occlusion, eczema and psoriasis, and diabetes**. Pseudomonas aeruginosa and Staphylococcus aureus dominate; Aspergillus niger and Candida cause otomycosis.",
+        "The clinical hallmark is **pain on tragal pressure or on pulling the pinna, which is absent in otitis media**, together with canal oedema, debris and scanty discharge; the tympanic membrane is intact when it can be seen.",
+        "**Aural toilet under vision is the single most effective treatment** - dry mopping, suction or gentle syringing only if the drum is known intact - because drops cannot reach an occluded canal. If the canal is closed, insert a **medicated wick (ribbon gauze with 8% aluminium acetate or an antibiotic-steroid preparation)** for 48 hours.",
+        "Topical treatment for 7 to 10 days: **ciprofloxacin 0.3% with dexamethasone, or neomycin-polymyxin-hydrocortisone drops three to four times daily**, plus regular oral analgesia. **Systemic antibiotics are not required in uncomplicated otitis externa** and this is a commonly marked point.",
+        "**Otomycosis** shows blotting-paper wet debris with black-headed conidiophores (Aspergillus niger) or white curd (Candida): treat with meticulous suction clearance plus **clotrimazole 1% solution twice daily for 2 to 3 weeks**; antibiotic drops alone make it worse.",
+        "**Furunculosis** of the outer cartilaginous canal is exquisitely tender staphylococcal folliculitis; treat with oral cloxacillin 500 mg six-hourly or amoxicillin-clavulanate, analgesia and local heat, and incise only when it points.",
+        "**Malignant (necrotising) otitis externa** is osteomyelitis of the temporal bone in an elderly diabetic or immunocompromised patient: **severe unremitting nocturnal otalgia out of proportion to the findings, granulation tissue at the bony-cartilaginous junction of the floor of the canal, a raised ESR, and cranial nerve palsies beginning with the facial nerve**. It needs admission, blood sugar control, contrast CT or MRI with a gallium or technetium scan, and **6 to 8 weeks of systemic anti-pseudomonal therapy such as ciprofloxacin 750 mg twice daily**.",
+      ],
+    },
+    {
+      heading: "Chronic suppurative otitis media: safe versus unsafe",
+      points: [
+        "**Tubotympanic (mucosal, safe) CSOM** has a **central perforation of the pars tensa** with a visible rim of annulus, profuse mucoid odourless discharge that is intermittent and worsens with upper respiratory infection or water entry, and a mild to moderate conductive hearing loss of 20 to 40 dB.",
+        "**Atticoantral (squamous, unsafe) CSOM** has an **attic or posterosuperior marginal perforation or a retraction pocket**, scanty **foul-smelling** discharge, granulation tissue or an aural polyp, and often cholesteatoma - keratinising squamous epithelium trapped in the middle ear that erodes bone by pressure, enzymes and osteoclast activation.",
+        "**Any foul smell, granulation, polyp, attic crust, vertigo, facial weakness or a sensorineural component demands imaging and an ENT referral**, because these features indicate bone erosion, not simply infection.",
+        "Medical treatment of active mucosal disease is **regular aural toilet plus ciprofloxacin 0.3% drops five drops twice daily for 7 to 10 days**, strict dry ear precautions (no swimming, cotton plug smeared with petroleum jelly for bathing, no oil instillation), and treatment of the nose - allergic rhinitis, sinusitis and adenoids all feed the middle ear through the Eustachian tube.",
+        "**Aminoglycoside-containing drops (neomycin, gentamicin, framycetin) should be avoided in an ear with a perforation** because of the ototoxic risk; fluoroquinolone drops are the safe choice, a point examiners look for.",
+        "Definitive management is surgical: **tympanoplasty (with or without cortical mastoidectomy) once the ear has been dry for 6 to 8 weeks** in mucosal disease, and **canal wall down modified radical mastoidectomy** in squamous disease, where the aim is a safe dry ear first and hearing second.",
+        "Untreated CSOM in India remains an important cause of **preventable hearing loss and of school failure, and rarely of death from intracranial complications**; the National Programme for Prevention and Control of Deafness targets it directly.",
+      ],
+    },
+    {
+      heading: "Complications, prevention and the family physician's follow-up",
+      points: [
+        "**Extracranial complications:** acute mastoiditis (postauricular swelling with the pinna pushed down, out and forward, tenderness over the mastoid antrum, sagging of the posterosuperior canal wall), subperiosteal abscess, **Bezold abscess** in the neck, facial nerve palsy, labyrinthitis, petrositis with the **Gradenigo triad of otorrhoea, retro-orbital pain and lateral rectus palsy**, and masked mastoiditis after partial antibiotic treatment.",
+        "**Intracranial complications:** meningitis (the commonest), extradural and subdural abscess, brain abscess of temporal lobe or cerebellum, lateral sinus thrombophlebitis with picket-fence fever and a positive Griesinger sign, and otitic hydrocephalus. **Fever, headache, vomiting, neck stiffness or altered sensorium in a discharging ear means admission today.**",
+        "Prevention: **exclusive breastfeeding for six months, feeding the infant propped up rather than supine, avoiding household tobacco and biomass smoke, and pneumococcal conjugate and influenza vaccination** - PCV is now in the Universal Immunisation Programme in India and reduces AOM episodes.",
+        "Follow-up after AOM: review at **6 to 12 weeks to confirm the effusion has cleared and hearing has returned**; persistent bilateral effusion beyond 3 months with a hearing loss above 25 to 30 dB, especially with speech delay or poor school performance, needs audiometry and ENT referral for grommets.",
+        "Every child with recurrent AOM (three episodes in 6 months or four in a year) needs the nose examined for **adenoid hypertrophy and allergic rhinitis**, a check on feeding position and smoke exposure, and consideration of grommets with or without adenoidectomy.",
+        "Document **hearing** at every visit in a child with ear disease: the family physician's contribution to the deafness programme is early detection, not surgery, and an undetected conductive loss in a school child is a preventable educational disability.",
+      ],
+    },
+  ],
+  tables: [
+    {
+      heading: "Separating the painful or discharging ear",
+      columns: ["Feature", "Acute otitis media", "Otitis externa", "CSOM mucosal (safe)", "CSOM squamous (unsafe)"],
+      rows: [
+        ["Pain", "Severe, throbbing, relieved by perforation", "Severe, worse on chewing and tragal pressure", "Usually painless", "Usually painless; pain suggests complication"],
+        ["Tragal tenderness", "Absent", "Present - the key sign", "Absent", "Absent"],
+        ["Discharge", "Absent until perforation, then mucopurulent", "Scanty, watery or purulent, no mucus", "Profuse, mucoid, odourless", "Scanty, purulent, foul-smelling"],
+        ["Tympanic membrane", "Bulging, red, immobile", "Intact but often obscured by oedema", "Central pars tensa perforation", "Attic or posterosuperior marginal perforation or retraction pocket"],
+        ["Hearing", "Mild conductive loss", "Normal or mild loss from occlusion", "Conductive loss 20-40 dB", "Conductive loss, may be mixed if labyrinth eroded"],
+        ["Fever", "Common in children", "Uncommon", "Only during exacerbation", "Uncommon"],
+        ["Treatment", "Analgesia, oral amoxicillin by rule", "Aural toilet plus topical drops; no oral antibiotic", "Aural toilet, quinolone drops, dry ear, elective tympanoplasty", "ENT referral for imaging and mastoid surgery"],
+      ],
+    },
+    {
+      heading: "Antibiotic choices with doses",
+      columns: ["Situation", "Drug and dose", "Duration"],
+      rows: [
+        ["AOM first line, child", "Amoxicillin 80-90 mg/kg/day orally in 2-3 divided doses", "10 days if under 2 years or perforated; 5-7 days if over 2 years and mild"],
+        ["AOM first line, adult", "Amoxicillin 500 mg to 1 g orally three times daily", "5-7 days"],
+        ["AOM failing at 48-72 hours, or antibiotic in last 30 days, or with purulent conjunctivitis", "Amoxicillin-clavulanate 90/6.4 mg/kg/day in 2 divided doses (adult 625 mg three times daily)", "10 days"],
+        ["Penicillin allergy", "Azithromycin 10 mg/kg on day 1 then 5 mg/kg daily, or cefuroxime axetil 30 mg/kg/day in 2 doses", "5 days azithromycin; 7-10 days cefuroxime"],
+        ["Acute otitis externa", "Ciprofloxacin 0.3% with dexamethasone ear drops, 3-4 drops three times daily after aural toilet", "7-10 days"],
+        ["Otomycosis", "Clotrimazole 1% solution 3 drops twice daily after suction clearance", "2-3 weeks"],
+        ["Discharging perforation or active CSOM", "Ciprofloxacin 0.3% ear drops 5 drops twice daily; avoid aminoglycoside drops", "7-10 days with aural toilet"],
+        ["Malignant otitis externa", "Ciprofloxacin 750 mg orally twice daily, or intravenous anti-pseudomonal beta-lactam, with glycaemic control", "6-8 weeks, guided by response and imaging"],
+      ],
+    },
+    {
+      heading: "When the ear leaves the clinic",
+      columns: ["Finding", "Urgency", "Reason"],
+      rows: [
+        ["Postauricular swelling, tenderness, pinna pushed forward", "Admit today", "Acute mastoiditis or subperiosteal abscess"],
+        ["Fever, headache, vomiting, neck stiffness or drowsiness with otorrhoea", "Admit today", "Intracranial complication - meningitis or brain abscess"],
+        ["Facial asymmetry with an ear discharge", "Same day ENT referral", "Facial nerve involvement by cholesteatoma or acute infection"],
+        ["Vertigo or nystagmus in a discharging ear", "Same day ENT referral", "Labyrinthine fistula from cholesteatoma"],
+        ["Attic perforation, crust, granulation tissue or aural polyp", "Refer within days", "Squamous (unsafe) CSOM until proved otherwise"],
+        ["Severe nocturnal otalgia in an elderly diabetic with canal granulations", "Admit", "Malignant otitis externa - skull base osteomyelitis"],
+        ["Bilateral effusion over 3 months with hearing loss or speech delay", "Routine ENT and audiology referral", "Glue ear needing audiometry and possible grommets"],
+      ],
+    },
+  ],
+  redFlags: [
+    "Postauricular swelling, redness or tenderness with the pinna pushed down, out and forward - acute mastoiditis; admit for intravenous antibiotics and possible cortical mastoidectomy.",
+    "Fever, severe headache, vomiting, neck stiffness, seizures or altered sensorium in a child with a discharging ear - meningitis or brain abscess; admit the same day.",
+    "Facial nerve palsy on the side of an ear discharge - cholesteatoma eroding the fallopian canal or acute suppurative facial neuritis; same-day ENT referral.",
+    "Vertigo, spontaneous nystagmus or a positive fistula test in a discharging ear - labyrinthine fistula; stop syringing and refer urgently.",
+    "Foul-smelling scanty discharge with an attic or marginal perforation, granulation tissue or an aural polyp - unsafe squamous CSOM with cholesteatoma; needs CT temporal bone and surgery.",
+    "Severe unremitting night otalgia with granulation at the floor of the canal in an elderly diabetic - malignant otitis externa; admit for imaging and prolonged anti-pseudomonal therapy.",
+    "Sudden sensorineural component (Rinne positive with Weber lateralising to the good ear) in an ear with chronic disease - labyrinthitis or ossicular and cochlear erosion; urgent referral.",
+  ],
+  pearls: [
+    "Redness of the drum in a screaming child proves nothing; bulging or an immobile drum on pneumatic otoscopy proves acute otitis media.",
+    "Pain on pressing the tragus is otitis externa; pain relieved by a sudden discharge is a perforated otitis media.",
+    "In acute otitis media the first prescription is regular analgesia; about 80% resolve in 3 days without an antibiotic, and 15 children must be treated for one extra child to be better at 2-7 days.",
+    "Central perforation with profuse odourless mucoid discharge is safe; attic or marginal perforation with scanty foul discharge is unsafe - the smell and the site, not the volume, decide.",
+    "Never use aminoglycoside ear drops through a perforation; use a fluoroquinolone drop instead.",
+    "Aural toilet is treatment, not preparation for treatment - drops cannot work through debris.",
+    "Any ear discharge with fever, headache, vertigo or facial weakness is a complication until proved otherwise and belongs in hospital, not on a repeat prescription.",
+  ],
+  theory: [
+    {
+      id: "eye-ent-otitis-t1",
+      paper: "III",
+      kind: "long",
+      marks: 10,
+      minutes: 20,
+      frequency: "core",
+      question:
+        "A 2-year-old child is brought with fever, irritability and pulling at the right ear for two days. Discuss the diagnosis, differential diagnosis and management of acute otitis media in family practice, including indications for antibiotics and for referral.",
+      openingLines: [
+        "Acute otitis media is the rapid onset of middle ear inflammation with an effusion, presenting with otalgia, fever and irritability, and confirmed by a bulging, opaque or red tympanic membrane that is immobile on pneumatic otoscopy.",
+        "It peaks between 6 and 24 months because the infant Eustachian tube is short, wide and horizontal, and it is the commonest reason for an antibiotic prescription in childhood, which makes accurate diagnosis and selective prescribing a core family practice skill.",
+      ],
+      answer: [
+        {
+          heading: "1. Aetiology and risk factors",
+          points: [
+            "Bacteria: Streptococcus pneumoniae, non-typeable Haemophilus influenzae, Moraxella catarrhalis, and Streptococcus pyogenes in older children; a viral upper respiratory infection usually precedes the episode.",
+            "Risk factors: age 6-24 months, day care, absence of breastfeeding, supine bottle feeding, passive tobacco and biomass smoke, adenoid hypertrophy, allergic rhinitis, cleft palate and Down syndrome.",
+          ],
+        },
+        {
+          heading: "2. Clinical features and diagnosis",
+          points: [
+            "Symptoms: otalgia or ear tugging, fever, irritability, disturbed sleep and feeding, and sudden relief of pain with discharge if the drum perforates.",
+            "Otoscopy: a bulging, opaque, yellow or red tympanic membrane with loss of the cone of light and reduced or absent mobility on pneumatic otoscopy; the mobility finding carries the diagnosis.",
+            "Stages: tubal occlusion, pre-suppuration, suppuration, resolution (often after perforation), and complication or chronicity.",
+            "Differential diagnosis: otitis externa (tragal tenderness, intact drum), otitis media with effusion (retracted amber drum, no fever), referred otalgia from dental caries, temporomandibular joint dysfunction, tonsillitis or cervical adenitis, teething, and a foreign body in the canal.",
+          ],
+        },
+        {
+          heading: "3. Management - symptomatic",
+          points: [
+            "Paracetamol 15 mg/kg six-hourly or ibuprofen 10 mg/kg eight-hourly, given regularly for 48-72 hours - analgesia is the first prescription.",
+            "Adequate fluids, upright feeding, and avoidance of smoke exposure; no evidence supports decongestants, antihistamines or oral steroids.",
+            "Safety-netting: return today if fever persists beyond 72 hours, if there is swelling behind the ear, if the child becomes drowsy or vomits, or if the face becomes asymmetrical.",
+          ],
+        },
+        {
+          heading: "4. Indications for immediate antibiotics and choice",
+          points: [
+            "Immediate antibiotics: age under 6 months; age 6-24 months with bilateral disease; otorrhoea from perforation; severe pain, temperature above 39 degrees C or systemic toxicity; immunodeficiency, craniofacial anomaly or cochlear implant.",
+            "Otherwise delayed prescribing with review or a back-up prescription at 48-72 hours.",
+            "First line: amoxicillin 80-90 mg/kg/day in 2-3 divided doses for 10 days under 2 years and 5-7 days over 2 years.",
+            "Second line: amoxicillin-clavulanate 90/6.4 mg/kg/day if there has been an antibiotic in the last 30 days, if there is purulent conjunctivitis, or if there is no response at 48-72 hours.",
+            "Penicillin allergy: azithromycin 10 mg/kg day 1 then 5 mg/kg for 4 days, or cefuroxime axetil 30 mg/kg/day.",
+            "If the drum has perforated add ciprofloxacin 0.3% ear drops and keep the ear dry; never use aminoglycoside drops through a perforation.",
+          ],
+        },
+        {
+          heading: "5. Indications for referral and for myringotomy",
+          points: [
+            "Refer or admit for mastoiditis, meningitis or other intracranial complication, facial palsy, labyrinthitis, or failure of two courses of appropriate antibiotics.",
+            "Myringotomy: severely bulging drum with intractable pain, no response to adequate antibiotics, neonate or immunocompromised child, and suspected incipient complication.",
+            "Grommet insertion with or without adenoidectomy for recurrent AOM (three episodes in 6 months or four in a year) or for persistent bilateral effusion beyond 3 months with hearing loss.",
+          ],
+        },
+        {
+          heading: "6. Prevention and follow-up",
+          points: [
+            "Exclusive breastfeeding for 6 months, upright feeding, avoidance of tobacco and biomass smoke, and pneumococcal conjugate and influenza vaccination.",
+            "Review at 6-12 weeks to confirm resolution of the effusion and normal hearing; refer for audiometry if the effusion persists beyond 3 months or there is speech delay.",
+          ],
+        },
+      ],
+      mustDraw: [
+        "A labelled diagram of the normal tympanic membrane showing pars tensa, pars flaccida, handle of malleus, lateral process, umbo, cone of light and the four quadrants, with the site of a safe posteroinferior myringotomy incision marked.",
+        "A flow chart: child with otalgia - otoscopy - bulging or immobile drum yes/no - immediate antibiotic criteria - delayed prescription - review at 48-72 hours - referral criteria.",
+      ],
+      markSplit: [
+        { part: "Definition, aetiology and risk factors", marks: 2 },
+        { part: "Clinical features, otoscopy and differential diagnosis", marks: 2 },
+        { part: "Symptomatic management and analgesia", marks: 1 },
+        { part: "Antibiotic indications, drug and dose", marks: 3 },
+        { part: "Referral, myringotomy and prevention", marks: 2 },
+      ],
+      keywords: ["acute otitis media", "amoxicillin", "pneumatic otoscopy", "delayed prescribing", "myringotomy"],
+    },
+    {
+      id: "eye-ent-otitis-t2",
+      paper: "III",
+      kind: "differentiate",
+      marks: 5,
+      minutes: 10,
+      frequency: "core",
+      question: "Differentiate safe (tubotympanic) from unsafe (atticoantral) chronic suppurative otitis media, and outline the management of each at primary care level.",
+      openingLines: [
+        "Chronic suppurative otitis media is a perforation of the tympanic membrane with persistent or recurrent otorrhoea for more than two weeks, and it is a leading preventable cause of hearing loss in India.",
+        "It is divided into tubotympanic (mucosal, safe) disease, which threatens hearing, and atticoantral (squamous, unsafe) disease with cholesteatoma, which threatens life through bone erosion and intracranial spread.",
+      ],
+      answer: [
+        {
+          heading: "1. Tubotympanic (safe, mucosal) disease",
+          points: [
+            "Perforation is central in the pars tensa with an intact rim of annulus; the middle ear mucosa is the site of disease.",
+            "Discharge is profuse, mucoid and odourless, intermittent, and provoked by upper respiratory infection or water entry.",
+            "Hearing loss is conductive and usually 20-40 dB; there is no granulation, no polyp and no bone erosion.",
+            "Complications are rare and are essentially limited to persistent hearing loss and tympanosclerosis.",
+          ],
+        },
+        {
+          heading: "2. Atticoantral (unsafe, squamous) disease",
+          points: [
+            "Perforation is in the attic (pars flaccida) or posterosuperior marginal, or there is a deep retraction pocket with keratin debris.",
+            "Discharge is scanty, purulent and foul-smelling because of osteitis and anaerobic infection; granulation tissue or an aural polyp is often present.",
+            "Cholesteatoma - keratinising squamous epithelium in the middle ear cleft - erodes ossicles, the fallopian canal, the lateral semicircular canal and the tegmen.",
+            "Complications: ossicular erosion with severe conductive loss, labyrinthine fistula with vertigo, facial palsy, mastoiditis, meningitis, extradural and brain abscess, and lateral sinus thrombosis.",
+          ],
+        },
+        {
+          heading: "3. Assessment",
+          points: [
+            "Otoscopy after aural toilet with attention to the attic, tuning fork tests, pure tone audiometry, and swab for culture if discharge is persistent.",
+            "High resolution CT of the temporal bones for any suspicion of squamous disease, complication or planned surgery; MRI with diffusion weighting for residual or recurrent cholesteatoma.",
+          ],
+        },
+        {
+          heading: "4. Management",
+          points: [
+            "Safe disease: aural toilet, ciprofloxacin 0.3% drops 5 drops twice daily for 7-10 days, strict dry ear precautions, treatment of rhinitis, sinusitis and adenoids, then elective tympanoplasty once the ear is dry for 6-8 weeks.",
+            "Unsafe disease: medical treatment is only temporising - definitive treatment is surgical removal of disease by canal wall down modified radical or atticotomy-based mastoidectomy, with hearing reconstruction as a secondary aim.",
+            "Never use aminoglycoside drops through a perforation; avoid syringing an ear with suspected fistula.",
+            "Counsel on dry ear precautions, hearing aid where surgery is not possible, and school hearing assessment in children.",
+          ],
+        },
+      ],
+      mustDraw: [
+        "Two tympanic membrane diagrams side by side: a central pars tensa perforation with an intact annular rim (safe), and an attic pars flaccida perforation with crust and a posterosuperior retraction pocket (unsafe).",
+      ],
+      markSplit: [
+        { part: "Definition and classification", marks: 1 },
+        { part: "Differentiating table of the two types", marks: 2 },
+        { part: "Complications of unsafe disease", marks: 1 },
+        { part: "Management including drops, dry ear advice and surgery", marks: 1 },
+      ],
+      keywords: ["CSOM", "cholesteatoma", "attic perforation", "tympanoplasty", "modified radical mastoidectomy"],
+    },
+  ],
+  mcqs: [
+    {
+      id: "eye-ent-otitis-q1",
+      stem: "A 14-month-old child has fever of 38.8 degrees C and has been pulling at both ears for 24 hours. Otoscopy shows bilateral bulging, opaque tympanic membranes with reduced mobility. There is no discharge. What is the most appropriate management?",
+      options: [
+        "Regular paracetamol alone with review in 72 hours",
+        "Oral amoxicillin 80-90 mg/kg/day for 10 days with regular analgesia",
+        "Ciprofloxacin ear drops with oral analgesia",
+        "Oral azithromycin for 3 days",
+        "Immediate myringotomy under general anaesthesia",
+      ],
+      answer: 1,
+      explanation:
+        "A child aged 6-24 months with bilateral acute otitis media meets the criterion for immediate antibiotics, and the first-line drug is high-dose amoxicillin 80-90 mg/kg/day for 10 days in a child under 2 years, with analgesia. Analgesia alone with a delayed prescription is appropriate for unilateral mild disease in an older child, not for bilateral disease under 2 years. Ear drops cannot reach the middle ear through an intact drum and have no role in acute otitis media. Azithromycin is a penicillin-allergy alternative and is compromised by high macrolide resistance among Indian pneumococci. Myringotomy is reserved for intractable pain, treatment failure or a suspected complication, not for first presentation.",
+      difficulty: "easy",
+    },
+    {
+      id: "eye-ent-otitis-q2",
+      stem: "A 24-year-old swimmer has three days of right ear pain and itching. Pulling the pinna and pressing the tragus reproduce severe pain; the canal is oedematous with scanty debris and the drum cannot be seen. He is afebrile. What is the best initial treatment?",
+      options: [
+        "Oral amoxicillin-clavulanate for 7 days",
+        "Aural toilet and topical ciprofloxacin with dexamethasone drops, with a wick if the canal is closed",
+        "Syringing with warm water followed by oral analgesia",
+        "Clotrimazole 1% solution twice daily for 3 weeks",
+        "Oral prednisolone with antihistamine",
+      ],
+      answer: 1,
+      explanation:
+        "This is uncomplicated acute otitis externa; the treatment is clearance of the canal under vision followed by a topical antibiotic-steroid drop, with a medicated wick when oedema prevents the drops from reaching the medial canal. Systemic antibiotics add nothing in uncomplicated otitis externa and are reserved for spreading cellulitis, diabetes with severe disease or immunosuppression. Syringing an ear whose drum has not been seen risks driving debris inward and perforating an already diseased drum. Clotrimazole treats otomycosis, which shows wet blotting-paper debris or black conidiophores rather than simple oedema. Oral steroids have no role.",
+      difficulty: "easy",
+    },
+    {
+      id: "eye-ent-otitis-q3",
+      stem: "A 30-year-old man has had scanty, foul-smelling discharge from the left ear for two years. Otoscopy after suction shows crusting in the pars flaccida with granulation tissue; hearing loss is conductive at 45 dB. What does this picture indicate?",
+      options: [
+        "Tubotympanic CSOM, which can be managed with drops and elective tympanoplasty",
+        "Atticoantral CSOM with cholesteatoma, needing CT temporal bone and mastoid surgery",
+        "Chronic otitis externa with keratosis obturans",
+        "Otitis media with effusion",
+        "Tympanosclerosis of the pars tensa",
+      ],
+      answer: 1,
+      explanation:
+        "Scanty foul-smelling discharge with attic crusting and granulation tissue is squamous (atticoantral, unsafe) CSOM with cholesteatoma, which erodes bone and requires imaging and mastoid surgery rather than drops alone. Tubotympanic disease produces profuse odourless mucoid discharge through a central pars tensa perforation and carries no bone erosion. Keratosis obturans is a canal disease with a keratin plug and an intact drum, and typically causes pain and conductive loss without a perforation. Otitis media with effusion has an intact drum and no discharge. Tympanosclerosis appears as chalky white plaques in the pars tensa and does not discharge.",
+      difficulty: "moderate",
+    },
+    {
+      id: "eye-ent-otitis-q4",
+      stem: "A 68-year-old man with poorly controlled type 2 diabetes has six weeks of severe right ear pain that keeps him awake, with scanty discharge. Granulation tissue is seen at the floor of the canal at the bony-cartilaginous junction and the ESR is 96 mm in the first hour. What is the diagnosis?",
+      options: [
+        "Furunculosis of the external auditory canal",
+        "Malignant (necrotising) otitis externa",
+        "Squamous cell carcinoma of the external canal",
+        "Acute mastoiditis",
+        "Otomycosis due to Aspergillus niger",
+      ],
+      answer: 1,
+      explanation:
+        "Unremitting nocturnal otalgia out of proportion to the findings, granulation tissue at the bony-cartilaginous junction of the canal floor, a very high ESR and poorly controlled diabetes define malignant otitis externa, a Pseudomonas osteomyelitis of the skull base needing 6-8 weeks of anti-pseudomonal therapy and glycaemic control. Furunculosis is an acutely tender staphylococcal swelling of the outer cartilaginous canal that settles within days. Carcinoma can look identical and is excluded by biopsy, but it is far less common in this exact diabetic setting and does not produce this systemic inflammatory picture as typically. Acute mastoiditis produces postauricular swelling with a pushed-forward pinna. Otomycosis is itchy rather than severely painful and shows fungal debris.",
+      difficulty: "moderate",
+    },
+    {
+      id: "eye-ent-otitis-q5",
+      stem: "A 5-year-old with a discharging left ear for three days now has fever, a tender boggy swelling behind the ear and a pinna that is displaced downward, outward and forward. What is the correct action?",
+      options: [
+        "Increase the dose of oral amoxicillin and review in 48 hours",
+        "Start topical ciprofloxacin drops and continue oral antibiotics at home",
+        "Admit for intravenous antibiotics, imaging and possible cortical mastoidectomy",
+        "Reassure that this is post-auricular lymphadenopathy from the ear infection",
+        "Arrange audiometry and an outpatient ENT appointment in two weeks",
+      ],
+      answer: 2,
+      explanation:
+        "A tender postauricular swelling with the pinna pushed down, out and forward in a child with otorrhoea is acute mastoiditis, which requires admission for intravenous antibiotics, imaging and drainage or cortical mastoidectomy if there is a subperiosteal abscess or no response. Escalating oral antibiotics at home risks masked mastoiditis and intracranial spread. Topical drops do not treat bone infection. Post-auricular lymph nodes lie behind and below the mastoid tip and do not displace the pinna forward. A two-week outpatient appointment misses the window in which a brain abscess or meningitis can develop.",
+      difficulty: "easy",
+    },
+  ],
+  cards: [
+    {
+      id: "eye-ent-otitis-c1",
+      front: "Diagnostic otoscopic sign of acute otitis media.",
+      back: "A bulging, opaque tympanic membrane with reduced or absent mobility on pneumatic otoscopy; redness alone in a crying child is not diagnostic.",
+    },
+    {
+      id: "eye-ent-otitis-c2",
+      front: "Which children with acute otitis media get an antibiotic immediately?",
+      back: "Under 6 months; 6-24 months with bilateral disease; otorrhoea from perforation; severe pain, fever above 39 degrees C or toxicity; immunodeficiency, craniofacial anomaly or cochlear implant.",
+    },
+    {
+      id: "eye-ent-otitis-c3",
+      front: "First-line antibiotic and dose for acute otitis media in a child.",
+      back: "Amoxicillin 80-90 mg/kg/day in 2-3 divided doses; 10 days if under 2 years or perforated, 5-7 days if over 2 years with mild disease.",
+    },
+    {
+      id: "eye-ent-otitis-c4",
+      front: "The one sign that says otitis externa rather than otitis media.",
+      back: "Pain on pressing the tragus or pulling the pinna, with an intact drum and no fever.",
+    },
+    {
+      id: "eye-ent-otitis-c5",
+      front: "Safe versus unsafe CSOM in one line.",
+      back: "Central pars tensa perforation with profuse odourless mucoid discharge is safe; attic or posterosuperior marginal perforation with scanty foul discharge, granulation or polyp is unsafe squamous disease with cholesteatoma.",
+    },
+    {
+      id: "eye-ent-otitis-c6",
+      front: "Which ear drops must never be used through a perforation, and what is used instead?",
+      back: "Avoid aminoglycosides (neomycin, gentamicin, framycetin) because of ototoxicity; use ciprofloxacin 0.3% drops instead.",
+    },
+    {
+      id: "eye-ent-otitis-c7",
+      front: "Signs of acute mastoiditis.",
+      back: "Postauricular swelling, redness and tenderness with the pinna pushed down, out and forward, sagging of the posterosuperior canal wall, fever and otorrhoea - admit.",
+    },
+    {
+      id: "eye-ent-otitis-c8",
+      front: "Gradenigo triad and what it means.",
+      back: "Otorrhoea, retro-orbital or deep facial pain (trigeminal) and lateral rectus palsy (sixth nerve) - petrous apicitis complicating middle ear suppuration.",
+    },
+    {
+      id: "eye-ent-otitis-c9",
+      front: "Malignant otitis externa - who, what and how long treated?",
+      back: "Elderly diabetic or immunocompromised patient, Pseudomonas skull base osteomyelitis with severe night otalgia and canal floor granulations; ciprofloxacin 750 mg twice daily or intravenous anti-pseudomonal therapy for 6-8 weeks with glycaemic control.",
+    },
+    {
+      id: "eye-ent-otitis-c10",
+      front: "When is glue ear referred for grommets?",
+      back: "Bilateral effusion persisting beyond 3 months with hearing loss above 25-30 dB, or with speech delay or educational difficulty.",
+    },
+  ],
+  references: [
+    "PL Dhingra and Shruti Dhingra, Diseases of Ear, Nose and Throat and Head and Neck Surgery, 8th edition, 2021",
+    "Scott-Brown's Otorhinolaryngology, Head and Neck Surgery, 8th edition, 2018",
+    "American Academy of Pediatrics clinical practice guideline, The Diagnosis and Management of Acute Otitis Media, 2013 (reaffirmed)",
+    "NICE guideline NG91, Otitis media (acute): antimicrobial prescribing, 2018, and NG98, Otitis media with effusion in under 12s, 2016",
+    "WHO, Chronic suppurative otitis media: burden of illness and management options, 2004",
+    "National Programme for Prevention and Control of Deafness, operational guidelines, MoHFW, Government of India",
+    "Indian Academy of Pediatrics, Standard Treatment Guidelines, Acute Otitis Media, 2022",
+  ],
+});
+
+
+topics.push({
+  id: "eye-ent-otitis",
+  title: "Acute otitis media, otitis externa and chronic suppurative otitis media",
+  oneLiner:
+    "A discharging or painful ear is separated by otoscopy into acute otitis media (a bulging, red, immobile tympanic membrane with a middle ear effusion), otitis externa (a tender, oedematous canal with pain on tragal pressure and an intact drum) and chronic suppurative otitis media (a perforation with discharge for more than two weeks), the last of which must be further divided into safe mucosal disease and unsafe squamous disease with cholesteatoma.",
+  frequency: "core",
+  keywords: [
+    "acute otitis media",
+    "otitis externa",
+    "chronic suppurative otitis media",
+    "CSOM",
+    "cholesteatoma",
+    "otorrhoea",
+    "tympanic membrane perforation",
+    "attic perforation",
+    "amoxicillin",
+    "ciprofloxacin ear drops",
+    "myringotomy",
+    "mastoiditis",
+    "otitis media with effusion",
+    "glue ear",
+    "malignant otitis externa",
+    "tympanoplasty",
+  ],
+  sections: [
+    {
+      heading: "Definitions and the otoscopic decision at the bedside",
+      points: [
+        "**Acute otitis media (AOM)** is the rapid onset of signs and symptoms of middle ear inflammation with a middle ear effusion: otalgia, fever and irritability with a **bulging, opaque or red tympanic membrane that is immobile on pneumatic otoscopy**. Redness alone in a crying child is not enough - bulging or reduced mobility is the diagnostic sign.",
+        "**Otitis media with effusion (OME, glue ear)** is fluid behind an intact drum **without** acute inflammation: the drum is retracted or amber, an air-fluid level or bubbles may be visible, there is conductive hearing loss but no fever and no significant pain.",
+        "**Acute otitis externa** is diffuse inflammation of the external auditory canal: **pain on pulling the pinna or pressing the tragus**, canal oedema and debris, scanty discharge, and an intact but often unseen tympanic membrane. Hearing is normal or mildly reduced by canal occlusion.",
+        "**Chronic suppurative otitis media (CSOM)** is a **perforated tympanic membrane with persistent or recurrent discharge for more than two weeks** (WHO uses two weeks; many texts use six). It is divided into tubotympanic (safe, mucosal) disease and atticoantral (unsafe, squamous) disease with cholesteatoma.",
+        "The bedside sequence is fixed: inspect the pinna and mastoid, press the tragus, insert the largest speculum that fits, clear wax or debris under vision, then examine the **pars tensa quadrant by quadrant and the pars flaccida (attic) last** - the attic is where the dangerous perforation hides and where inexperienced examiners never look.",
+        "**Tuning fork tests and pneumatic otoscopy convert an opinion into a finding**: a conductive loss with a normal-looking drum suggests effusion or ossicular disease, while a mobile drum with a normal Rinne makes middle ear disease unlikely and points to referred otalgia from teeth, temporomandibular joint, tonsil or cervical spine.",
+      ],
+    },
+    {
+      heading: "Acute otitis media: who gets it, what causes it and how it behaves",
+      points: [
+        "AOM is a disease of early childhood: the peak is **6 to 24 months**, because the infant Eustachian tube is shorter, wider and more horizontal, and adenoid hypertrophy and viral upper respiratory infection obstruct it.",
+        "Risk factors worth listing in a paper are **bottle feeding in the supine position, absence of breastfeeding, day care attendance, passive smoking, biomass fuel smoke, cleft palate, Down syndrome, allergic rhinitis and winter season**.",
+        "The three classical bacteria are **Streptococcus pneumoniae, non-typeable Haemophilus influenzae and Moraxella catarrhalis**; Streptococcus pyogenes matters in older children and is more likely to perforate the drum. Viruses precede or accompany most episodes.",
+        "The natural history is favourable: **about 80% of episodes settle within 3 days without an antibiotic**, and roughly 15 children must be treated with antibiotics for one extra child to be pain-free at 2 to 7 days - this number needed to treat is a favourite viva figure.",
+        "Stages to recite: tubal occlusion, pre-suppuration (red drum, throbbing pain, fever), suppuration (bulging drum, severe pain), **resolution after spontaneous perforation with sudden relief of pain and mucopurulent discharge**, and either complete healing or progression to complication or chronic disease.",
+        "A key clinical rule: **the ear that stops hurting the moment it starts discharging has perforated**, and that child needs review to confirm the perforation heals - persistence beyond 6 weeks means the disease has become chronic.",
+      ],
+    },
+    {
+      heading: "Treating acute otitis media: analgesia first, antibiotics by rule",
+      points: [
+        "**Analgesia is the first prescription, not the antibiotic**: paracetamol 15 mg/kg six-hourly or ibuprofen 10 mg/kg eight-hourly, given regularly for 48 to 72 hours, treats the symptom that actually distresses the child.",
+        "**Give an antibiotic immediately** if the child is **under 6 months**, is 6 to 24 months with bilateral AOM, has **otorrhoea from a fresh perforation**, is systemically unwell or toxic, has severe otalgia, temperature above 39 degrees C, immunodeficiency, craniofacial anomaly or a cochlear implant.",
+        "Otherwise offer **delayed prescribing**: analgesia with a written prescription to be started if there is no improvement in 48 to 72 hours. This safety-net approach halves antibiotic use without increasing complications and should be named explicitly in the answer.",
+        "**First line is amoxicillin 80 to 90 mg/kg/day in two or three divided doses** (adults 500 mg to 1 g three times daily). Duration is **10 days under 2 years and in severe or perforated disease, and 5 to 7 days in children over 2 years** with mild disease.",
+        "**Amoxicillin-clavulanate 90/6.4 mg/kg/day** is used when there has been an antibiotic in the last 30 days, when there is concurrent purulent conjunctivitis (the otitis-conjunctivitis syndrome of Haemophilus), or when amoxicillin has failed after 48 to 72 hours. For penicillin allergy use **azithromycin 10 mg/kg on day 1 then 5 mg/kg for 4 days**, or cefuroxime axetil 30 mg/kg/day, remembering that macrolide resistance among pneumococci in India is high.",
+        "**Topical drops have no role in AOM with an intact drum**; if the drum has perforated, keep the ear dry, add **ciprofloxacin 0.3% ear drops five drops twice daily** and avoid aminoglycoside drops, which are potentially ototoxic through an open middle ear.",
+        "**Myringotomy** is indicated for a severely bulging drum with intractable pain, for AOM not settling on adequate antibiotics, in an immunocompromised or neonatal patient, and when a complication such as incipient mastoiditis or facial palsy is suspected.",
+      ],
+    },
+    {
+      heading: "Otitis externa, including the diabetic emergency",
+      points: [
+        "Otitis externa follows loss of the protective acid cerumen layer: **water in the ear (swimmer's ear), cotton bud or hairpin trauma, hearing aid or ear-plug occlusion, eczema and psoriasis, and diabetes**. Pseudomonas aeruginosa and Staphylococcus aureus dominate; Aspergillus niger and Candida cause otomycosis.",
+        "The clinical hallmark is **pain on tragal pressure or on pulling the pinna, which is absent in otitis media**, together with canal oedema, debris and scanty discharge; the tympanic membrane is intact when it can be seen.",
+        "**Aural toilet under vision is the single most effective treatment** - dry mopping, suction or gentle syringing only if the drum is known intact - because drops cannot reach an occluded canal. If the canal is closed, insert a **medicated wick (ribbon gauze with 8% aluminium acetate or an antibiotic-steroid preparation)** for 48 hours.",
+        "Topical treatment for 7 to 10 days: **ciprofloxacin 0.3% with dexamethasone, or neomycin-polymyxin-hydrocortisone drops three to four times daily**, plus regular oral analgesia. **Systemic antibiotics are not required in uncomplicated otitis externa** and this is a commonly marked point.",
+        "**Otomycosis** shows blotting-paper wet debris with black-headed conidiophores (Aspergillus niger) or white curd (Candida): treat with meticulous suction clearance plus **clotrimazole 1% solution twice daily for 2 to 3 weeks**; antibiotic drops alone make it worse.",
+        "**Furunculosis** of the outer cartilaginous canal is exquisitely tender staphylococcal folliculitis; treat with oral cloxacillin 500 mg six-hourly or amoxicillin-clavulanate, analgesia and local heat, and incise only when it points.",
+        "**Malignant (necrotising) otitis externa** is osteomyelitis of the temporal bone in an elderly diabetic or immunocompromised patient: **severe unremitting nocturnal otalgia out of proportion to the findings, granulation tissue at the bony-cartilaginous junction of the floor of the canal, a raised ESR, and cranial nerve palsies beginning with the facial nerve**. It needs admission, blood sugar control, contrast CT or MRI with a gallium or technetium scan, and **6 to 8 weeks of systemic anti-pseudomonal therapy such as ciprofloxacin 750 mg twice daily**.",
+      ],
+    },
+    {
+      heading: "Chronic suppurative otitis media: safe versus unsafe",
+      points: [
+        "**Tubotympanic (mucosal, safe) CSOM** has a **central perforation of the pars tensa** with a visible rim of annulus, profuse mucoid odourless discharge that is intermittent and worsens with upper respiratory infection or water entry, and a mild to moderate conductive hearing loss of 20 to 40 dB.",
+        "**Atticoantral (squamous, unsafe) CSOM** has an **attic or posterosuperior marginal perforation or a retraction pocket**, scanty **foul-smelling** discharge, granulation tissue or an aural polyp, and often cholesteatoma - keratinising squamous epithelium trapped in the middle ear that erodes bone by pressure, enzymes and osteoclast activation.",
+        "**Any foul smell, granulation, polyp, attic crust, vertigo, facial weakness or a sensorineural component demands imaging and an ENT referral**, because these features indicate bone erosion, not simply infection.",
+        "Medical treatment of active mucosal disease is **regular aural toilet plus ciprofloxacin 0.3% drops five drops twice daily for 7 to 10 days**, strict dry ear precautions (no swimming, cotton plug smeared with petroleum jelly for bathing, no oil instillation), and treatment of the nose - allergic rhinitis, sinusitis and adenoids all feed the middle ear through the Eustachian tube.",
+        "**Aminoglycoside-containing drops (neomycin, gentamicin, framycetin) should be avoided in an ear with a perforation** because of the ototoxic risk; fluoroquinolone drops are the safe choice, a point examiners look for.",
+        "Definitive management is surgical: **tympanoplasty (with or without cortical mastoidectomy) once the ear has been dry for 6 to 8 weeks** in mucosal disease, and **canal wall down modified radical mastoidectomy** in squamous disease, where the aim is a safe dry ear first and hearing second.",
+        "Untreated CSOM in India remains an important cause of **preventable hearing loss and of school failure, and rarely of death from intracranial complications**; the National Programme for Prevention and Control of Deafness targets it directly.",
+      ],
+    },
+    {
+      heading: "Complications, prevention and the family physician's follow-up",
+      points: [
+        "**Extracranial complications:** acute mastoiditis (postauricular swelling with the pinna pushed down, out and forward, tenderness over the mastoid antrum, sagging of the posterosuperior canal wall), subperiosteal abscess, **Bezold abscess** in the neck, facial nerve palsy, labyrinthitis, petrositis with the **Gradenigo triad of otorrhoea, retro-orbital pain and lateral rectus palsy**, and masked mastoiditis after partial antibiotic treatment.",
+        "**Intracranial complications:** meningitis (the commonest), extradural and subdural abscess, brain abscess of temporal lobe or cerebellum, lateral sinus thrombophlebitis with picket-fence fever and a positive Griesinger sign, and otitic hydrocephalus. **Fever, headache, vomiting, neck stiffness or altered sensorium in a discharging ear means admission today.**",
+        "Prevention: **exclusive breastfeeding for six months, feeding the infant propped up rather than supine, avoiding household tobacco and biomass smoke, and pneumococcal conjugate and influenza vaccination** - PCV is now in the Universal Immunisation Programme in India and reduces AOM episodes.",
+        "Follow-up after AOM: review at **6 to 12 weeks to confirm the effusion has cleared and hearing has returned**; persistent bilateral effusion beyond 3 months with a hearing loss above 25 to 30 dB, especially with speech delay or poor school performance, needs audiometry and ENT referral for grommets.",
+        "Every child with recurrent AOM (three episodes in 6 months or four in a year) needs the nose examined for **adenoid hypertrophy and allergic rhinitis**, a check on feeding position and smoke exposure, and consideration of grommets with or without adenoidectomy.",
+        "Document **hearing** at every visit in a child with ear disease: the family physician's contribution to the deafness programme is early detection, not surgery, and an undetected conductive loss in a school child is a preventable educational disability.",
+      ],
+    },
+  ],
+  tables: [
+    {
+      heading: "Separating the painful or discharging ear",
+      columns: ["Feature", "Acute otitis media", "Otitis externa", "CSOM mucosal (safe)", "CSOM squamous (unsafe)"],
+      rows: [
+        ["Pain", "Severe, throbbing, relieved by perforation", "Severe, worse on chewing and tragal pressure", "Usually painless", "Usually painless; pain suggests complication"],
+        ["Tragal tenderness", "Absent", "Present - the key sign", "Absent", "Absent"],
+        ["Discharge", "Absent until perforation, then mucopurulent", "Scanty, watery or purulent, no mucus", "Profuse, mucoid, odourless", "Scanty, purulent, foul-smelling"],
+        ["Tympanic membrane", "Bulging, red, immobile", "Intact but often obscured by oedema", "Central pars tensa perforation", "Attic or posterosuperior marginal perforation or retraction pocket"],
+        ["Hearing", "Mild conductive loss", "Normal or mild loss from occlusion", "Conductive loss 20-40 dB", "Conductive loss, may be mixed if labyrinth eroded"],
+        ["Fever", "Common in children", "Uncommon", "Only during exacerbation", "Uncommon"],
+        ["Treatment", "Analgesia, oral amoxicillin by rule", "Aural toilet plus topical drops; no oral antibiotic", "Aural toilet, quinolone drops, dry ear, elective tympanoplasty", "ENT referral for imaging and mastoid surgery"],
+      ],
+    },
+    {
+      heading: "Antibiotic choices with doses",
+      columns: ["Situation", "Drug and dose", "Duration"],
+      rows: [
+        ["AOM first line, child", "Amoxicillin 80-90 mg/kg/day orally in 2-3 divided doses", "10 days if under 2 years or perforated; 5-7 days if over 2 years and mild"],
+        ["AOM first line, adult", "Amoxicillin 500 mg to 1 g orally three times daily", "5-7 days"],
+        ["AOM failing at 48-72 hours, or antibiotic in last 30 days, or with purulent conjunctivitis", "Amoxicillin-clavulanate 90/6.4 mg/kg/day in 2 divided doses (adult 625 mg three times daily)", "10 days"],
+        ["Penicillin allergy", "Azithromycin 10 mg/kg on day 1 then 5 mg/kg daily, or cefuroxime axetil 30 mg/kg/day in 2 doses", "5 days azithromycin; 7-10 days cefuroxime"],
+        ["Acute otitis externa", "Ciprofloxacin 0.3% with dexamethasone ear drops, 3-4 drops three times daily after aural toilet", "7-10 days"],
+        ["Otomycosis", "Clotrimazole 1% solution 3 drops twice daily after suction clearance", "2-3 weeks"],
+        ["Discharging perforation or active CSOM", "Ciprofloxacin 0.3% ear drops 5 drops twice daily; avoid aminoglycoside drops", "7-10 days with aural toilet"],
+        ["Malignant otitis externa", "Ciprofloxacin 750 mg orally twice daily, or intravenous anti-pseudomonal beta-lactam, with glycaemic control", "6-8 weeks, guided by response and imaging"],
+      ],
+    },
+    {
+      heading: "When the ear leaves the clinic",
+      columns: ["Finding", "Urgency", "Reason"],
+      rows: [
+        ["Postauricular swelling, tenderness, pinna pushed forward", "Admit today", "Acute mastoiditis or subperiosteal abscess"],
+        ["Fever, headache, vomiting, neck stiffness or drowsiness with otorrhoea", "Admit today", "Intracranial complication - meningitis or brain abscess"],
+        ["Facial asymmetry with an ear discharge", "Same day ENT referral", "Facial nerve involvement by cholesteatoma or acute infection"],
+        ["Vertigo or nystagmus in a discharging ear", "Same day ENT referral", "Labyrinthine fistula from cholesteatoma"],
+        ["Attic perforation, crust, granulation tissue or aural polyp", "Refer within days", "Squamous (unsafe) CSOM until proved otherwise"],
+        ["Severe nocturnal otalgia in an elderly diabetic with canal granulations", "Admit", "Malignant otitis externa - skull base osteomyelitis"],
+        ["Bilateral effusion over 3 months with hearing loss or speech delay", "Routine ENT and audiology referral", "Glue ear needing audiometry and possible grommets"],
+      ],
+    },
+  ],
+  redFlags: [
+    "Postauricular swelling, redness or tenderness with the pinna pushed down, out and forward - acute mastoiditis; admit for intravenous antibiotics and possible cortical mastoidectomy.",
+    "Fever, severe headache, vomiting, neck stiffness, seizures or altered sensorium in a child with a discharging ear - meningitis or brain abscess; admit the same day.",
+    "Facial nerve palsy on the side of an ear discharge - cholesteatoma eroding the fallopian canal or acute suppurative facial neuritis; same-day ENT referral.",
+    "Vertigo, spontaneous nystagmus or a positive fistula test in a discharging ear - labyrinthine fistula; stop syringing and refer urgently.",
+    "Foul-smelling scanty discharge with an attic or marginal perforation, granulation tissue or an aural polyp - unsafe squamous CSOM with cholesteatoma; needs CT temporal bone and surgery.",
+    "Severe unremitting night otalgia with granulation at the floor of the canal in an elderly diabetic - malignant otitis externa; admit for imaging and prolonged anti-pseudomonal therapy.",
+    "Sudden sensorineural component (Rinne positive with Weber lateralising to the good ear) in an ear with chronic disease - labyrinthitis or ossicular and cochlear erosion; urgent referral.",
+  ],
+  pearls: [
+    "Redness of the drum in a screaming child proves nothing; bulging or an immobile drum on pneumatic otoscopy proves acute otitis media.",
+    "Pain on pressing the tragus is otitis externa; pain relieved by a sudden discharge is a perforated otitis media.",
+    "In acute otitis media the first prescription is regular analgesia; about 80% resolve in 3 days without an antibiotic, and 15 children must be treated for one extra child to be better at 2-7 days.",
+    "Central perforation with profuse odourless mucoid discharge is safe; attic or marginal perforation with scanty foul discharge is unsafe - the smell and the site, not the volume, decide.",
+    "Never use aminoglycoside ear drops through a perforation; use a fluoroquinolone drop instead.",
+    "Aural toilet is treatment, not preparation for treatment - drops cannot work through debris.",
+    "Any ear discharge with fever, headache, vertigo or facial weakness is a complication until proved otherwise and belongs in hospital, not on a repeat prescription.",
+  ],
+  theory: [
+    {
+      id: "eye-ent-otitis-t1",
+      paper: "III",
+      kind: "long",
+      marks: 10,
+      minutes: 20,
+      frequency: "core",
+      question:
+        "A 2-year-old child is brought with fever, irritability and pulling at the right ear for two days. Discuss the diagnosis, differential diagnosis and management of acute otitis media in family practice, including indications for antibiotics and for referral.",
+      openingLines: [
+        "Acute otitis media is the rapid onset of middle ear inflammation with an effusion, presenting with otalgia, fever and irritability, and confirmed by a bulging, opaque or red tympanic membrane that is immobile on pneumatic otoscopy.",
+        "It peaks between 6 and 24 months because the infant Eustachian tube is short, wide and horizontal, and it is the commonest reason for an antibiotic prescription in childhood, which makes accurate diagnosis and selective prescribing a core family practice skill.",
+      ],
+      answer: [
+        {
+          heading: "1. Aetiology and risk factors",
+          points: [
+            "Bacteria: Streptococcus pneumoniae, non-typeable Haemophilus influenzae, Moraxella catarrhalis, and Streptococcus pyogenes in older children; a viral upper respiratory infection usually precedes the episode.",
+            "Risk factors: age 6-24 months, day care, absence of breastfeeding, supine bottle feeding, passive tobacco and biomass smoke, adenoid hypertrophy, allergic rhinitis, cleft palate and Down syndrome.",
+          ],
+        },
+        {
+          heading: "2. Clinical features and diagnosis",
+          points: [
+            "Symptoms: otalgia or ear tugging, fever, irritability, disturbed sleep and feeding, and sudden relief of pain with discharge if the drum perforates.",
+            "Otoscopy: a bulging, opaque, yellow or red tympanic membrane with loss of the cone of light and reduced or absent mobility on pneumatic otoscopy; the mobility finding carries the diagnosis.",
+            "Stages: tubal occlusion, pre-suppuration, suppuration, resolution (often after perforation), and complication or chronicity.",
+            "Differential diagnosis: otitis externa (tragal tenderness, intact drum), otitis media with effusion (retracted amber drum, no fever), referred otalgia from dental caries, temporomandibular joint dysfunction, tonsillitis or cervical adenitis, teething, and a foreign body in the canal.",
+          ],
+        },
+        {
+          heading: "3. Management - symptomatic",
+          points: [
+            "Paracetamol 15 mg/kg six-hourly or ibuprofen 10 mg/kg eight-hourly, given regularly for 48-72 hours - analgesia is the first prescription.",
+            "Adequate fluids, upright feeding, and avoidance of smoke exposure; no evidence supports decongestants, antihistamines or oral steroids.",
+            "Safety-netting: return today if fever persists beyond 72 hours, if there is swelling behind the ear, if the child becomes drowsy or vomits, or if the face becomes asymmetrical.",
+          ],
+        },
+        {
+          heading: "4. Indications for immediate antibiotics and choice",
+          points: [
+            "Immediate antibiotics: age under 6 months; age 6-24 months with bilateral disease; otorrhoea from perforation; severe pain, temperature above 39 degrees C or systemic toxicity; immunodeficiency, craniofacial anomaly or cochlear implant.",
+            "Otherwise delayed prescribing with review or a back-up prescription at 48-72 hours.",
+            "First line: amoxicillin 80-90 mg/kg/day in 2-3 divided doses for 10 days under 2 years and 5-7 days over 2 years.",
+            "Second line: amoxicillin-clavulanate 90/6.4 mg/kg/day if there has been an antibiotic in the last 30 days, if there is purulent conjunctivitis, or if there is no response at 48-72 hours.",
+            "Penicillin allergy: azithromycin 10 mg/kg day 1 then 5 mg/kg for 4 days, or cefuroxime axetil 30 mg/kg/day.",
+            "If the drum has perforated add ciprofloxacin 0.3% ear drops and keep the ear dry; never use aminoglycoside drops through a perforation.",
+          ],
+        },
+        {
+          heading: "5. Indications for referral and for myringotomy",
+          points: [
+            "Refer or admit for mastoiditis, meningitis or other intracranial complication, facial palsy, labyrinthitis, or failure of two courses of appropriate antibiotics.",
+            "Myringotomy: severely bulging drum with intractable pain, no response to adequate antibiotics, neonate or immunocompromised child, and suspected incipient complication.",
+            "Grommet insertion with or without adenoidectomy for recurrent AOM (three episodes in 6 months or four in a year) or for persistent bilateral effusion beyond 3 months with hearing loss.",
+          ],
+        },
+        {
+          heading: "6. Prevention and follow-up",
+          points: [
+            "Exclusive breastfeeding for 6 months, upright feeding, avoidance of tobacco and biomass smoke, and pneumococcal conjugate and influenza vaccination.",
+            "Review at 6-12 weeks to confirm resolution of the effusion and normal hearing; refer for audiometry if the effusion persists beyond 3 months or there is speech delay.",
+          ],
+        },
+      ],
+      mustDraw: [
+        "A labelled diagram of the normal tympanic membrane showing pars tensa, pars flaccida, handle of malleus, lateral process, umbo, cone of light and the four quadrants, with the site of a safe posteroinferior myringotomy incision marked.",
+        "A flow chart: child with otalgia - otoscopy - bulging or immobile drum yes/no - immediate antibiotic criteria - delayed prescription - review at 48-72 hours - referral criteria.",
+      ],
+      markSplit: [
+        { part: "Definition, aetiology and risk factors", marks: 2 },
+        { part: "Clinical features, otoscopy and differential diagnosis", marks: 2 },
+        { part: "Symptomatic management and analgesia", marks: 1 },
+        { part: "Antibiotic indications, drug and dose", marks: 3 },
+        { part: "Referral, myringotomy and prevention", marks: 2 },
+      ],
+      keywords: ["acute otitis media", "amoxicillin", "pneumatic otoscopy", "delayed prescribing", "myringotomy"],
+    },
+    {
+      id: "eye-ent-otitis-t2",
+      paper: "III",
+      kind: "differentiate",
+      marks: 5,
+      minutes: 10,
+      frequency: "core",
+      question: "Differentiate safe (tubotympanic) from unsafe (atticoantral) chronic suppurative otitis media, and outline the management of each at primary care level.",
+      openingLines: [
+        "Chronic suppurative otitis media is a perforation of the tympanic membrane with persistent or recurrent otorrhoea for more than two weeks, and it is a leading preventable cause of hearing loss in India.",
+        "It is divided into tubotympanic (mucosal, safe) disease, which threatens hearing, and atticoantral (squamous, unsafe) disease with cholesteatoma, which threatens life through bone erosion and intracranial spread.",
+      ],
+      answer: [
+        {
+          heading: "1. Tubotympanic (safe, mucosal) disease",
+          points: [
+            "Perforation is central in the pars tensa with an intact rim of annulus; the middle ear mucosa is the site of disease.",
+            "Discharge is profuse, mucoid and odourless, intermittent, and provoked by upper respiratory infection or water entry.",
+            "Hearing loss is conductive and usually 20-40 dB; there is no granulation, no polyp and no bone erosion.",
+            "Complications are rare and are essentially limited to persistent hearing loss and tympanosclerosis.",
+          ],
+        },
+        {
+          heading: "2. Atticoantral (unsafe, squamous) disease",
+          points: [
+            "Perforation is in the attic (pars flaccida) or posterosuperior marginal, or there is a deep retraction pocket with keratin debris.",
+            "Discharge is scanty, purulent and foul-smelling because of osteitis and anaerobic infection; granulation tissue or an aural polyp is often present.",
+            "Cholesteatoma - keratinising squamous epithelium in the middle ear cleft - erodes ossicles, the fallopian canal, the lateral semicircular canal and the tegmen.",
+            "Complications: ossicular erosion with severe conductive loss, labyrinthine fistula with vertigo, facial palsy, mastoiditis, meningitis, extradural and brain abscess, and lateral sinus thrombosis.",
+          ],
+        },
+        {
+          heading: "3. Assessment",
+          points: [
+            "Otoscopy after aural toilet with attention to the attic, tuning fork tests, pure tone audiometry, and swab for culture if discharge is persistent.",
+            "High resolution CT of the temporal bones for any suspicion of squamous disease, complication or planned surgery; MRI with diffusion weighting for residual or recurrent cholesteatoma.",
+          ],
+        },
+        {
+          heading: "4. Management",
+          points: [
+            "Safe disease: aural toilet, ciprofloxacin 0.3% drops 5 drops twice daily for 7-10 days, strict dry ear precautions, treatment of rhinitis, sinusitis and adenoids, then elective tympanoplasty once the ear is dry for 6-8 weeks.",
+            "Unsafe disease: medical treatment is only temporising - definitive treatment is surgical removal of disease by canal wall down modified radical or atticotomy-based mastoidectomy, with hearing reconstruction as a secondary aim.",
+            "Never use aminoglycoside drops through a perforation; avoid syringing an ear with suspected fistula.",
+            "Counsel on dry ear precautions, hearing aid where surgery is not possible, and school hearing assessment in children.",
+          ],
+        },
+      ],
+      mustDraw: [
+        "Two tympanic membrane diagrams side by side: a central pars tensa perforation with an intact annular rim (safe), and an attic pars flaccida perforation with crust and a posterosuperior retraction pocket (unsafe).",
+      ],
+      markSplit: [
+        { part: "Definition and classification", marks: 1 },
+        { part: "Differentiating table of the two types", marks: 2 },
+        { part: "Complications of unsafe disease", marks: 1 },
+        { part: "Management including drops, dry ear advice and surgery", marks: 1 },
+      ],
+      keywords: ["CSOM", "cholesteatoma", "attic perforation", "tympanoplasty", "modified radical mastoidectomy"],
+    },
+  ],
+  mcqs: [
+    {
+      id: "eye-ent-otitis-q1",
+      stem: "A 14-month-old child has fever of 38.8 degrees C and has been pulling at both ears for 24 hours. Otoscopy shows bilateral bulging, opaque tympanic membranes with reduced mobility. There is no discharge. What is the most appropriate management?",
+      options: [
+        "Regular paracetamol alone with review in 72 hours",
+        "Oral amoxicillin 80-90 mg/kg/day for 10 days with regular analgesia",
+        "Ciprofloxacin ear drops with oral analgesia",
+        "Oral azithromycin for 3 days",
+        "Immediate myringotomy under general anaesthesia",
+      ],
+      answer: 1,
+      explanation:
+        "A child aged 6-24 months with bilateral acute otitis media meets the criterion for immediate antibiotics, and the first-line drug is high-dose amoxicillin 80-90 mg/kg/day for 10 days in a child under 2 years, with analgesia. Analgesia alone with a delayed prescription is appropriate for unilateral mild disease in an older child, not for bilateral disease under 2 years. Ear drops cannot reach the middle ear through an intact drum and have no role in acute otitis media. Azithromycin is a penicillin-allergy alternative and is compromised by high macrolide resistance among Indian pneumococci. Myringotomy is reserved for intractable pain, treatment failure or a suspected complication, not for first presentation.",
+      difficulty: "easy",
+    },
+    {
+      id: "eye-ent-otitis-q2",
+      stem: "A 24-year-old swimmer has three days of right ear pain and itching. Pulling the pinna and pressing the tragus reproduce severe pain; the canal is oedematous with scanty debris and the drum cannot be seen. He is afebrile. What is the best initial treatment?",
+      options: [
+        "Oral amoxicillin-clavulanate for 7 days",
+        "Aural toilet and topical ciprofloxacin with dexamethasone drops, with a wick if the canal is closed",
+        "Syringing with warm water followed by oral analgesia",
+        "Clotrimazole 1% solution twice daily for 3 weeks",
+        "Oral prednisolone with antihistamine",
+      ],
+      answer: 1,
+      explanation:
+        "This is uncomplicated acute otitis externa; the treatment is clearance of the canal under vision followed by a topical antibiotic-steroid drop, with a medicated wick when oedema prevents the drops from reaching the medial canal. Systemic antibiotics add nothing in uncomplicated otitis externa and are reserved for spreading cellulitis, diabetes with severe disease or immunosuppression. Syringing an ear whose drum has not been seen risks driving debris inward and perforating an already diseased drum. Clotrimazole treats otomycosis, which shows wet blotting-paper debris or black conidiophores rather than simple oedema. Oral steroids have no role.",
+      difficulty: "easy",
+    },
+    {
+      id: "eye-ent-otitis-q3",
+      stem: "A 30-year-old man has had scanty, foul-smelling discharge from the left ear for two years. Otoscopy after suction shows crusting in the pars flaccida with granulation tissue; hearing loss is conductive at 45 dB. What does this picture indicate?",
+      options: [
+        "Tubotympanic CSOM, which can be managed with drops and elective tympanoplasty",
+        "Atticoantral CSOM with cholesteatoma, needing CT temporal bone and mastoid surgery",
+        "Chronic otitis externa with keratosis obturans",
+        "Otitis media with effusion",
+        "Tympanosclerosis of the pars tensa",
+      ],
+      answer: 1,
+      explanation:
+        "Scanty foul-smelling discharge with attic crusting and granulation tissue is squamous (atticoantral, unsafe) CSOM with cholesteatoma, which erodes bone and requires imaging and mastoid surgery rather than drops alone. Tubotympanic disease produces profuse odourless mucoid discharge through a central pars tensa perforation and carries no bone erosion. Keratosis obturans is a canal disease with a keratin plug and an intact drum, and typically causes pain and conductive loss without a perforation. Otitis media with effusion has an intact drum and no discharge. Tympanosclerosis appears as chalky white plaques in the pars tensa and does not discharge.",
+      difficulty: "moderate",
+    },
+    {
+      id: "eye-ent-otitis-q4",
+      stem: "A 68-year-old man with poorly controlled type 2 diabetes has six weeks of severe right ear pain that keeps him awake, with scanty discharge. Granulation tissue is seen at the floor of the canal at the bony-cartilaginous junction and the ESR is 96 mm in the first hour. What is the diagnosis?",
+      options: [
+        "Furunculosis of the external auditory canal",
+        "Malignant (necrotising) otitis externa",
+        "Squamous cell carcinoma of the external canal",
+        "Acute mastoiditis",
+        "Otomycosis due to Aspergillus niger",
+      ],
+      answer: 1,
+      explanation:
+        "Unremitting nocturnal otalgia out of proportion to the findings, granulation tissue at the bony-cartilaginous junction of the canal floor, a very high ESR and poorly controlled diabetes define malignant otitis externa, a Pseudomonas osteomyelitis of the skull base needing 6-8 weeks of anti-pseudomonal therapy and glycaemic control. Furunculosis is an acutely tender staphylococcal swelling of the outer cartilaginous canal that settles within days. Carcinoma can look identical and is excluded by biopsy, but it is far less common in this exact diabetic setting and does not produce this systemic inflammatory picture as typically. Acute mastoiditis produces postauricular swelling with a pushed-forward pinna. Otomycosis is itchy rather than severely painful and shows fungal debris.",
+      difficulty: "moderate",
+    },
+    {
+      id: "eye-ent-otitis-q5",
+      stem: "A 5-year-old with a discharging left ear for three days now has fever, a tender boggy swelling behind the ear and a pinna that is displaced downward, outward and forward. What is the correct action?",
+      options: [
+        "Increase the dose of oral amoxicillin and review in 48 hours",
+        "Start topical ciprofloxacin drops and continue oral antibiotics at home",
+        "Admit for intravenous antibiotics, imaging and possible cortical mastoidectomy",
+        "Reassure that this is post-auricular lymphadenopathy from the ear infection",
+        "Arrange audiometry and an outpatient ENT appointment in two weeks",
+      ],
+      answer: 2,
+      explanation:
+        "A tender postauricular swelling with the pinna pushed down, out and forward in a child with otorrhoea is acute mastoiditis, which requires admission for intravenous antibiotics, imaging and drainage or cortical mastoidectomy if there is a subperiosteal abscess or no response. Escalating oral antibiotics at home risks masked mastoiditis and intracranial spread. Topical drops do not treat bone infection. Post-auricular lymph nodes lie behind and below the mastoid tip and do not displace the pinna forward. A two-week outpatient appointment misses the window in which a brain abscess or meningitis can develop.",
+      difficulty: "easy",
+    },
+  ],
+  cards: [
+    {
+      id: "eye-ent-otitis-c1",
+      front: "Diagnostic otoscopic sign of acute otitis media.",
+      back: "A bulging, opaque tympanic membrane with reduced or absent mobility on pneumatic otoscopy; redness alone in a crying child is not diagnostic.",
+    },
+    {
+      id: "eye-ent-otitis-c2",
+      front: "Which children with acute otitis media get an antibiotic immediately?",
+      back: "Under 6 months; 6-24 months with bilateral disease; otorrhoea from perforation; severe pain, fever above 39 degrees C or toxicity; immunodeficiency, craniofacial anomaly or cochlear implant.",
+    },
+    {
+      id: "eye-ent-otitis-c3",
+      front: "First-line antibiotic and dose for acute otitis media in a child.",
+      back: "Amoxicillin 80-90 mg/kg/day in 2-3 divided doses; 10 days if under 2 years or perforated, 5-7 days if over 2 years with mild disease.",
+    },
+    {
+      id: "eye-ent-otitis-c4",
+      front: "The one sign that says otitis externa rather than otitis media.",
+      back: "Pain on pressing the tragus or pulling the pinna, with an intact drum and no fever.",
+    },
+    {
+      id: "eye-ent-otitis-c5",
+      front: "Safe versus unsafe CSOM in one line.",
+      back: "Central pars tensa perforation with profuse odourless mucoid discharge is safe; attic or posterosuperior marginal perforation with scanty foul discharge, granulation or polyp is unsafe squamous disease with cholesteatoma.",
+    },
+    {
+      id: "eye-ent-otitis-c6",
+      front: "Which ear drops must never be used through a perforation, and what is used instead?",
+      back: "Avoid aminoglycosides (neomycin, gentamicin, framycetin) because of ototoxicity; use ciprofloxacin 0.3% drops instead.",
+    },
+    {
+      id: "eye-ent-otitis-c7",
+      front: "Signs of acute mastoiditis.",
+      back: "Postauricular swelling, redness and tenderness with the pinna pushed down, out and forward, sagging of the posterosuperior canal wall, fever and otorrhoea - admit.",
+    },
+    {
+      id: "eye-ent-otitis-c8",
+      front: "Gradenigo triad and what it means.",
+      back: "Otorrhoea, retro-orbital or deep facial pain (trigeminal) and lateral rectus palsy (sixth nerve) - petrous apicitis complicating middle ear suppuration.",
+    },
+    {
+      id: "eye-ent-otitis-c9",
+      front: "Malignant otitis externa - who, what and how long treated?",
+      back: "Elderly diabetic or immunocompromised patient, Pseudomonas skull base osteomyelitis with severe night otalgia and canal floor granulations; ciprofloxacin 750 mg twice daily or intravenous anti-pseudomonal therapy for 6-8 weeks with glycaemic control.",
+    },
+    {
+      id: "eye-ent-otitis-c10",
+      front: "When is glue ear referred for grommets?",
+      back: "Bilateral effusion persisting beyond 3 months with hearing loss above 25-30 dB, or with speech delay or educational difficulty.",
+    },
+  ],
+  references: [
+    "PL Dhingra and Shruti Dhingra, Diseases of Ear, Nose and Throat and Head and Neck Surgery, 8th edition, 2021",
+    "Scott-Brown's Otorhinolaryngology, Head and Neck Surgery, 8th edition, 2018",
+    "American Academy of Pediatrics clinical practice guideline, The Diagnosis and Management of Acute Otitis Media, 2013 (reaffirmed)",
+    "NICE guideline NG91, Otitis media (acute): antimicrobial prescribing, 2018, and NG98, Otitis media with effusion in under 12s, 2016",
+    "WHO, Chronic suppurative otitis media: burden of illness and management options, 2004",
+    "National Programme for Prevention and Control of Deafness, operational guidelines, MoHFW, Government of India",
+    "Indian Academy of Pediatrics, Standard Treatment Guidelines, Acute Otitis Media, 2022",
+  ],
+});
+
 const cases: ClinicalCase[] = [
   {
     id: "geriatrics-ethics-case-1",
