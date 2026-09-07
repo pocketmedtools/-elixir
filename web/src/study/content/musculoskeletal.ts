@@ -1021,6 +1021,448 @@ topics.push({
   ],
 });
 
+topics.push({
+  id: "musculoskeletal-gout",
+  title: "Gout and hyperuricaemia",
+  oneLiner:
+    "Gout is an inflammatory arthritis caused by deposition of monosodium urate crystals in and around joints once serum urate exceeds its saturation point, presenting as recurrent acute attacks that are treated with anti-inflammatories and then prevented for life by urate-lowering therapy titrated to a serum urate below 6 mg/dL.",
+  frequency: "core",
+  keywords: [
+    "gouty arthritis",
+    "monosodium urate",
+    "MSU crystals",
+    "podagra",
+    "hyperuricaemia",
+    "tophus",
+    "tophi",
+    "allopurinol",
+    "febuxostat",
+    "colchicine",
+    "uric acid",
+    "negatively birefringent",
+    "pseudogout",
+    "calcium pyrophosphate",
+    "CPPD",
+    "urate-lowering therapy",
+    "HLA-B*5801",
+    "treat to target",
+  ],
+  sections: [
+    {
+      heading: "Definition, biochemistry and epidemiology",
+      points: [
+        "**Gout is a crystal deposition disease, not simply a high uric acid level:** monosodium urate crystals precipitate in joints, bursae and soft tissue once serum urate exceeds the physiological saturation point of about **6.8 mg/dL (405 micromol/L)**, and the resulting crystals are engulfed by macrophages, activate the NLRP3 inflammasome and release interleukin-1 beta, which produces the intense neutrophilic synovitis of an acute attack.",
+        "Uric acid is the end product of purine metabolism in humans because we lack uricase; **about two-thirds of the urate load is endogenous from cell turnover and one-third is dietary**, and roughly 70% is excreted renally and 30% through the gut.",
+        "**Over 90% of primary gout is due to under-excretion of urate by the kidney**, not overproduction, which is why a purely dietary approach almost never achieves target and why urate-lowering drugs are needed.",
+        "Prevalence is rising sharply in urban India with obesity, alcohol, fructose-sweetened beverages, diuretic use and chronic kidney disease; hospital series report gout in 1-2% of adult men, with a male to female ratio of about 4:1 before the menopause because oestrogen is uricosuric.",
+        "Hyperuricaemia is defined biochemically as serum urate above 7.0 mg/dL in men and 6.0 mg/dL in women, but **most hyperuricaemic people never develop gout** - the annual incidence at a urate of 7-8 mg/dL is under 1%, rising to about 5% above 9 mg/dL.",
+        "Gout is now understood as a marker of metabolic and vascular risk: hypertension, type 2 diabetes, dyslipidaemia, obesity, chronic kidney disease and coronary disease cluster with it, and the consultation must screen for all of them.",
+      ],
+    },
+    {
+      heading: "Clinical stages and the presentation of an acute attack",
+      points: [
+        "The disease passes through four stages: **asymptomatic hyperuricaemia, acute intermittent gout, the intercritical period, and chronic tophaceous gout**; naming these stages earns the structure marks in a written answer.",
+        "**The classic acute attack is monoarticular, nocturnal and explosive:** pain climbs from nothing to maximum within 6-12 hours, waking the patient in the early hours, and the joint becomes red, hot, swollen and so exquisitely tender that the weight of a bedsheet is intolerable.",
+        "**Podagra - the first metatarsophalangeal joint - is the first joint involved in 50-70% and is affected at some point in 90%.** The next commonest sites are the midfoot, ankle, heel, knee, wrist, fingers and olecranon bursa; the axial skeleton and hip are essentially spared.",
+        "Overlying skin desquamation as the attack settles is characteristic and helps in retrospective diagnosis; low-grade fever, leucocytosis and a raised CRP are common and do not exclude gout, which is exactly why the attack is so often mistaken for septic arthritis or cellulitis.",
+        "Attacks are provoked by **any abrupt shift in serum urate in either direction** - a heavy alcohol binge (especially beer, which is rich in guanosine), a purine-rich meal, dehydration, starting a diuretic, surgery, trauma, acute illness, and, importantly, starting or stopping allopurinol.",
+        "Untreated attacks resolve spontaneously over 7-14 days, leaving the patient completely well in the intercritical period; **crystals persist in the joint fluid even between attacks**, which is the pathological argument for lifelong urate lowering rather than episodic treatment.",
+        "**Chronic tophaceous gout** develops after years of uncontrolled disease: firm, chalky, non-tender nodules over the helix of the ear, olecranon, Achilles tendon, finger pulps and extensor surfaces, sometimes ulcerating to discharge white toothpaste-like material, with a destructive polyarticular arthritis that mimics rheumatoid disease.",
+      ],
+    },
+    {
+      heading: "Examination sequence for the acutely painful joint",
+      points: [
+        "**Begin with the general survey and vital signs:** temperature, pulse, blood pressure, and a look for the systemic sepsis that would change everything - rigors, tachycardia, hypotension, a portal of entry.",
+        "**Expose both limbs and compare sides.** Look for erythema, its extent and margin, swelling, deformity, previous surgical scars, tophi over the helix of the ear, the olecranon and the Achilles tendon, and any discharging chalky material.",
+        "**Palpate for temperature with the back of the hand, then define tenderness and effusion.** In the knee use the patellar tap for a large effusion and the bulge or cross-fluctuation test for a small one; in the first metatarsophalangeal joint note that the tenderness in gout extends beyond the joint line into the periarticular soft tissue.",
+        "**Test active then passive movement.** In gout and in septic arthritis all movement is resisted, whereas in cellulitis and bursitis a careful passive range is usually preserved through part of the arc - a useful bedside discriminator to state aloud.",
+        "**Examine the other joints and the spine** for a polyarticular pattern, tophi and chronic deformity, and examine the skin for psoriasis, which changes the differential entirely.",
+        "**Complete the examination with the systems that drive the disease:** body mass index and waist circumference, blood pressure, cardiovascular examination, examination for chronic kidney disease and for hepatomegaly or stigmata of alcohol use, and a fundus and peripheral vascular check in a diabetic.",
+        "**Say the sentence that earns the mark:** in any hot, swollen, single joint, joint aspiration is both the diagnostic test and the safety net, because septic arthritis and gout can look identical and can coexist.",
+      ],
+    },
+    {
+      heading: "Investigation and the certainty of diagnosis",
+      points: [
+        "**Synovial fluid aspiration with polarised light microscopy is the gold standard:** monosodium urate crystals are needle-shaped, **negatively birefringent** (yellow when parallel to the axis of the red compensator), and typically intracellular within neutrophils during an acute attack. Calcium pyrophosphate crystals of pseudogout are rhomboid and weakly positively birefringent.",
+        "**Always send the same aspirate for Gram stain, cell count and culture.** Inflammatory fluid in gout usually has 20,000-70,000 white cells per cubic millimetre with over 90% neutrophils, which overlaps with sepsis, so culture is not optional.",
+        "**Serum urate during an acute attack is unreliable and is normal or low in up to a third of attacks**, because acute inflammation is uricosuric; measure it at least 2 weeks after the attack settles to establish the true baseline and the treatment target.",
+        "Where aspiration is not feasible, the **2015 ACR/EULAR classification criteria** allow a confident clinical diagnosis using a scoring system built on the pattern of joint involvement (especially the first metatarsophalangeal joint), the typical episode characteristics, tophi, serum urate above 6 mg/dL, and imaging evidence.",
+        "Baseline workup at diagnosis: complete blood count, serum creatinine with eGFR, fasting glucose or HbA1c, lipid profile, liver function tests, urine routine for proteinuria, and blood pressure - and a 24-hour urinary uric acid only in young-onset gout or where a uricosuric is being considered.",
+        "Radiographs are normal early; late films show the classic **punched-out juxta-articular erosions with sclerotic overhanging edges and preserved joint space**. Ultrasound shows the double contour sign of urate on hyaline cartilage and dual-energy CT colour-codes urate deposits, both useful when aspiration fails.",
+        "**Do not anchor on a raised uric acid report.** Asymptomatic hyperuricaemia is not gout, and a normal urate in a hot joint does not exclude it - the crystal, not the number, makes the diagnosis.",
+      ],
+    },
+    {
+      heading: "Treating the acute attack",
+      points: [
+        "**Treat early and hard: the first 24 hours decide the length of the attack.** Any one of an NSAID, colchicine or a corticosteroid is acceptable first line, and the choice is made on the patient's comorbidities, not on any superiority of one drug.",
+        "**NSAIDs:** naproxen 750 mg PO stat then 250 mg PO TDS, or indomethacin 50 mg PO TDS, or etoricoxib 120 mg PO once daily, each continued for 5-7 days or until 48 hours after the attack settles, with a proton pump inhibitor. **Avoid NSAIDs in chronic kidney disease, heart failure, active peptic ulcer, anticoagulated patients and the frail elderly.**",
+        "**Colchicine, in the modern low-dose regimen:** 1.2 mg PO stat followed by 0.6 mg one hour later, then 0.6 mg once or twice daily from the next day - equally effective as, and far better tolerated than, the abandoned hourly-until-diarrhoea schedule. In India the 0.5 mg tablet is standard, so 1 mg stat then 0.5 mg after an hour is the practical equivalent.",
+        "**Colchicine cautions that are examined:** reduce the dose in renal impairment (avoid if eGFR is under 30 mL/min or use 0.5 mg on alternate days with specialist advice) and in liver disease, and remember the dangerous interactions with **clarithromycin, erythromycin, ketoconazole, cyclosporine, verapamil, diltiazem and statins** through CYP3A4 and P-glycoprotein, which can precipitate fatal marrow suppression and myopathy.",
+        "**Corticosteroids are the safest option in renal impairment and in the elderly:** prednisolone 30-40 mg PO daily for 5 days, either stopped abruptly or tapered over 7-10 days. In a single accessible joint, intra-articular methylprednisolone acetate 40 mg or triamcinolone gives excellent relief - **but only after the aspirate has excluded sepsis.**",
+        "**Never start, stop or change urate-lowering therapy during an acute attack** if the patient is not already on it; if he is already established on allopurinol, **continue it unchanged** and treat the attack around it.",
+        "Supportive care matters: rest and elevate the joint, apply ice packs for 20 minutes several times a day, keep the bedsheet off with a cradle, ensure good hydration, and stop any non-essential precipitant such as a thiazide where an alternative antihypertensive exists.",
+      ],
+    },
+    {
+      heading: "Urate-lowering therapy, prophylaxis and lifestyle",
+      points: [
+        "**Indications for lifelong urate-lowering therapy:** two or more attacks in a year, any tophus, radiographic joint damage from gout, gout with chronic kidney disease stage 3 or worse, gout with recurrent urate stones, and increasingly any patient after a first attack who wants to prevent recurrence.",
+        "**Treat to target, not to symptoms: the goal is a serum urate below 6 mg/dL (360 micromol/L), and below 5 mg/dL where there are tophi**, because dissolution of crystal deposits is a saturation phenomenon. Check urate every 2-4 weeks during titration and every 6 months once stable.",
+        "**Allopurinol is first line:** start low at 100 mg PO daily (50 mg daily if eGFR is under 30 mL/min) and increase by 100 mg every 2-4 weeks against the urate, to a usual effective dose of 300-600 mg and a licensed maximum of 800-900 mg daily. **Starting at 300 mg without titration is the commonest error** - it triggers attacks and raises hypersensitivity risk.",
+        "**Allopurinol hypersensitivity syndrome** is rare but carries up to 20-25% mortality: fever, rash progressing to Stevens-Johnson syndrome or toxic epidermal necrolysis, eosinophilia, hepatitis and acute kidney injury. Risk is highest in the first 8-12 weeks, with high starting doses, in renal impairment and in carriers of **HLA-B*5801**, which is common in Han Chinese, Thai and Korean populations; screening is advised in those groups. Warn every patient to stop the drug and return at once if a rash appears.",
+        "**Febuxostat 40 mg PO daily, increased to 80 mg**, is the alternative for allopurinol intolerance or failure and needs no dose reduction down to eGFR 30 mL/min, but the CARES trial signal of increased cardiovascular mortality means it should be used cautiously in established cardiovascular disease. Probenecid is a uricosuric option when eGFR is above 50 mL/min and there is no history of urolithiasis.",
+        "**Prophylaxis is mandatory when urate-lowering therapy is started**, because falling urate mobilises crystals and provokes attacks: colchicine 0.5 mg PO once or twice daily (dose-reduced in renal impairment) for at least 3-6 months, or low-dose NSAID with a PPI, or low-dose prednisolone 5 mg if both are contraindicated.",
+        "**Lifestyle advice supports but never replaces drugs** - it lowers urate by only about 1 mg/dL. Advise weight loss, restriction of alcohol especially beer and spirits, avoidance of sugar-sweetened and fructose-rich drinks, reduction of organ meats, red meat and shellfish, generous water intake, and reassure the patient that low-fat dairy, coffee, vitamin C and most vegetables including dal, spinach and tomato are safe or protective.",
+        "Review the drug list at every visit: **thiazides, loop diuretics, low-dose aspirin, ciclosporin, tacrolimus, pyrazinamide and ethambutol all raise urate**, while losartan, fenofibrate, atorvastatin and SGLT2 inhibitors lower it - which makes losartan the antihypertensive of choice in a hypertensive gout patient.",
+      ],
+    },
+  ],
+  tables: [
+    {
+      heading: "Differentiating the acute hot joint",
+      columns: ["Feature", "Gout", "Septic arthritis", "Pseudogout"],
+      rows: [
+        ["Typical patient", "Man over 40, alcohol, diuretic, CKD, metabolic syndrome", "Any age; diabetes, immunosuppression, prosthesis, skin breach, IV drug use", "Elderly, often over 65, after illness or surgery"],
+        ["Commonest joint", "First metatarsophalangeal joint, midfoot, ankle, knee", "Knee, then hip; any joint", "Knee, then wrist and shoulder"],
+        ["Onset to peak", "6-12 hours, often nocturnal", "Hours to 1-2 days, with systemic toxicity", "12-36 hours, less explosive"],
+        ["Fever and toxicity", "Low grade fever common, patient not toxic", "High fever, rigors, unwell, may be septic", "Low grade fever possible"],
+        ["Synovial fluid crystals", "Needle-shaped, negatively birefringent urate", "None; organisms on Gram stain or culture", "Rhomboid, weakly positively birefringent CPPD"],
+        ["Synovial white cell count", "20,000-70,000 per cubic mm, neutrophil predominant", "Usually over 50,000, often over 100,000", "10,000-50,000 per cubic mm"],
+        ["Radiograph clue", "Punched-out erosion with overhanging edge, late", "Normal early; joint destruction late", "Chondrocalcinosis of meniscus and triangular fibrocartilage"],
+      ],
+    },
+    {
+      heading: "Drugs for acute gout - choosing by comorbidity",
+      columns: ["Situation", "Preferred drug and dose", "Avoid", "Notes"],
+      rows: [
+        ["Healthy adult, normal renal function", "Naproxen 750 mg PO stat then 250 mg TDS for 5-7 days", "-", "Add a PPI; stop 48 hours after symptoms settle"],
+        ["Chronic kidney disease or heart failure", "Prednisolone 30-40 mg PO daily for 5 days", "NSAIDs; full-dose colchicine", "Monitor glucose in diabetes; steroids are the safest broad option"],
+        ["Peptic ulcer disease or on anticoagulation", "Prednisolone 30-40 mg PO daily, or intra-articular steroid", "NSAIDs", "Aspirate first to exclude sepsis before injecting"],
+        ["Presenting within 24 hours, no renal impairment", "Colchicine 1.2 mg PO stat then 0.6 mg after 1 hour", "High cumulative hourly dosing", "Far less effective if started after 36-48 hours"],
+        ["Diabetes with poor control", "Colchicine low dose, or NSAID if renal function allows", "Systemic steroids where avoidable", "Steroid course will need temporary insulin or dose adjustment"],
+        ["Single large accessible joint", "Intra-articular methylprednisolone 40 mg or triamcinolone", "Injecting before sepsis is excluded", "Fastest relief; always aspirate and send for Gram stain and culture"],
+      ],
+    },
+    {
+      heading: "Urate-lowering therapy at a glance",
+      columns: ["Drug", "Class and start dose", "Titration and target", "Key cautions"],
+      rows: [
+        ["Allopurinol", "Xanthine oxidase inhibitor; 100 mg PO daily (50 mg if eGFR under 30)", "Increase 100 mg every 2-4 weeks to urate under 6 mg/dL; usual 300-600 mg, max 800-900 mg", "Hypersensitivity syndrome, rash, hepatitis; HLA-B*5801 risk; interacts with azathioprine and 6-mercaptopurine (reduce those by 75%)"],
+        ["Febuxostat", "Xanthine oxidase inhibitor; 40 mg PO daily", "Increase to 80 mg daily if urate not at target in 2-4 weeks", "Cardiovascular mortality signal (CARES); monitor liver enzymes; costlier"],
+        ["Probenecid", "Uricosuric; 250 mg PO BD", "Increase to 500 mg BD-TDS", "Needs eGFR above 50; contraindicated with urolithiasis; ensure high fluid intake and urine alkalinisation"],
+        ["Colchicine (prophylaxis)", "Anti-inflammatory; 0.5 mg PO once or twice daily", "Continue 3-6 months from starting urate-lowering therapy", "Diarrhoea, myopathy, marrow suppression; halve dose in renal impairment; macrolide and statin interactions"],
+      ],
+    },
+  ],
+  redFlags: [
+    "A hot, swollen, exquisitely tender joint with fever, rigors or systemic toxicity - treat as septic arthritis until the aspirate proves otherwise; aspirate, culture and start empirical antibiotics the same day.",
+    "A hot joint in a patient with a prosthesis, recent joint injection, diabetes, immunosuppression or injecting drug use - urgent orthopaedic referral, never a trial of NSAIDs at home.",
+    "Rash, fever, mucosal ulceration or eosinophilia within 8-12 weeks of starting allopurinol - stop the drug immediately and admit; allopurinol hypersensitivity syndrome has a mortality of up to 25%.",
+    "Gout with acute kidney injury, oliguria or flank pain and haematuria - urate nephropathy or obstructing urate stones; check renal function, ultrasound the kidneys and hydrate.",
+    "A discharging or ulcerated tophus with surrounding cellulitis, or a rapidly enlarging olecranon swelling with fever - secondary infection needing swab, culture and antibiotics.",
+    "Polyarticular gout with fever in an elderly or immunosuppressed patient - overlapping sepsis is common and the presentation is easily mistaken for a flare.",
+    "Severe diarrhoea, myalgia, weakness or unexplained cytopenia in a patient on colchicine, especially with a macrolide, statin or ciclosporin - stop the colchicine and check creatine kinase and a blood count.",
+  ],
+  pearls: [
+    "The crystal makes the diagnosis, not the number: serum urate is normal or low in up to a third of acute attacks, and most people with a high urate never get gout.",
+    "Every hot single joint is septic arthritis until aspiration proves otherwise, and gout and sepsis can coexist in the same joint - always send the aspirate for Gram stain and culture.",
+    "Monosodium urate crystals are needle-shaped and negatively birefringent; calcium pyrophosphate crystals are rhomboid and weakly positively birefringent. Learn this pair verbatim.",
+    "Never start urate-lowering therapy during an attack in a drug-naive patient, but never stop it in a patient already established on it.",
+    "Start allopurinol low and titrate against the urate, not against the symptoms; treat to a target of under 6 mg/dL, or under 5 mg/dL when tophi are present.",
+    "Always cover the first 3-6 months of urate-lowering therapy with prophylactic colchicine 0.5 mg daily, otherwise falling urate mobilises crystals and the patient blames the drug and stops it.",
+    "Diet lowers urate by only about 1 mg/dL - it is an adjunct, and a patient told to fix gout by diet alone will keep having attacks.",
+    "Losartan is the antihypertensive of choice in gout because it is mildly uricosuric; a thiazide is the antihypertensive most likely to have caused the attack.",
+    "Allopurinol plus azathioprine is a classic lethal combination - xanthine oxidase inhibition blocks azathioprine catabolism and causes profound marrow suppression; reduce azathioprine to a quarter or avoid the pair.",
+    "Podagra plus tophi over the helix of the ear is a viva-level spot diagnosis; look at the ears in every chronic arthritis case.",
+  ],
+  theory: [
+    {
+      id: "musculoskeletal-gout-t1",
+      paper: "II",
+      kind: "long",
+      marks: 10,
+      minutes: 20,
+      frequency: "core",
+      question:
+        "A 52-year-old obese man on hydrochlorothiazide presents with an acutely painful, red, swollen right first metatarsophalangeal joint of 12 hours duration. Discuss the differential diagnosis, investigations and management, including long-term prevention.",
+      openingLines: [
+        "This is an acute monoarthritis of the first metatarsophalangeal joint - podagra - in a middle-aged obese man on a thiazide diuretic, and the working diagnosis is acute gout, with septic arthritis as the diagnosis that must be excluded first.",
+        "Gout is an inflammatory arthritis caused by monosodium urate crystal deposition once serum urate exceeds its saturation point of 6.8 mg/dL, and management has two entirely separate arms - abolishing the attack, and lowering urate for life to a target below 6 mg/dL.",
+      ],
+      answer: [
+        {
+          heading: "Differential diagnosis of the acute hot joint",
+          points: [
+            "**Acute gout** - explosive nocturnal onset, podagra, a thiazide and obesity as precipitants, and desquamation as it settles.",
+            "**Septic arthritis** - the emergency; suggested by fever, rigors, systemic toxicity, a portal of entry, diabetes or immunosuppression, and it may coexist with gout.",
+            "**Pseudogout (calcium pyrophosphate deposition)** - older patient, knee or wrist more often than toe, chondrocalcinosis on radiograph.",
+            "**Cellulitis or an infected bunion** - erythema spreading beyond the joint with a preserved passive range of movement.",
+            "**Trauma, stress fracture or an acute exacerbation of osteoarthritis of the first metatarsophalangeal joint (hallux rigidus)**.",
+            "**Reactive arthritis or psoriatic arthritis** - look for urethritis, diarrhoea, dactylitis, nail pitting and skin plaques.",
+          ],
+        },
+        {
+          heading: "Investigations",
+          points: [
+            "**Joint aspiration is the definitive investigation:** polarised light microscopy for needle-shaped, negatively birefringent intracellular monosodium urate crystals, plus Gram stain, cell count and culture in every case.",
+            "Complete blood count, ESR and CRP - raised in both gout and sepsis, so they discriminate poorly and must not be used to exclude infection.",
+            "**Serum uric acid, but repeated 2 weeks after the attack settles** because it is normal or low in up to a third of acute attacks.",
+            "Serum creatinine and eGFR, fasting glucose or HbA1c, lipid profile, liver function tests and urine routine, to define comorbidity and to choose the drug safely.",
+            "Radiograph of the foot for chondrocalcinosis, punched-out erosions with overhanging edges, and for a stress fracture; ultrasound for the double contour sign where aspiration is not possible.",
+          ],
+        },
+        {
+          heading: "Management of the acute attack",
+          points: [
+            "Rest and elevate the limb, apply ice, use a bed cradle, and ensure hydration.",
+            "**Start an anti-inflammatory within the first 24 hours:** naproxen 750 mg PO stat then 250 mg TDS with a PPI, or low-dose colchicine 1.2 mg stat then 0.6 mg after 1 hour then 0.6 mg once or twice daily, or prednisolone 30-40 mg PO daily for 5 days if there is renal impairment, ulcer disease or heart failure.",
+            "Intra-articular corticosteroid is an excellent single-joint option once the aspirate has excluded sepsis.",
+            "**Do not start allopurinol during the attack** in a drug-naive patient; if he were already on it, it would be continued unchanged.",
+            "Replace hydrochlorothiazide with **losartan**, which is mildly uricosuric, and address obesity, alcohol and sugar-sweetened drinks.",
+          ],
+        },
+        {
+          heading: "Long-term prevention - urate-lowering therapy",
+          points: [
+            "Indications: two or more attacks a year, tophi, erosive damage, CKD stage 3 or worse, or urate urolithiasis.",
+            "**Allopurinol 100 mg PO daily**, increased by 100 mg every 2-4 weeks against serum urate, to a **target below 6 mg/dL** (below 5 mg/dL with tophi); usual maintenance 300-600 mg daily.",
+            "**Cover the first 3-6 months with colchicine 0.5 mg PO daily** to prevent mobilisation flares, and warn the patient that early flares mean the drug is working, not failing.",
+            "Counsel on the rash warning: stop allopurinol and return immediately if a rash appears, because of the risk of allopurinol hypersensitivity syndrome.",
+            "Febuxostat 40-80 mg daily if allopurinol is not tolerated, used cautiously in established cardiovascular disease.",
+            "Manage the metabolic cluster - weight, blood pressure, glucose, lipids and alcohol - and review adherence and serum urate every 6 months once at target.",
+          ],
+        },
+      ],
+      mustDraw: [
+        "A table differentiating gout, septic arthritis and pseudogout on onset, joint, fever, synovial fluid crystals, cell count and radiograph.",
+        "A flow chart: acute hot joint -> aspirate -> Gram stain/culture and polarised microscopy -> crystals positive and culture negative = gout -> treat attack -> after 2 weeks measure urate -> start allopurinol with colchicine cover -> titrate to urate under 6 mg/dL.",
+      ],
+      markSplit: [
+        { part: "Differential diagnosis with septic arthritis named first", marks: 2 },
+        { part: "Investigations, with joint aspiration as the gold standard", marks: 2 },
+        { part: "Management of the acute attack with drugs and doses", marks: 3 },
+        { part: "Urate-lowering therapy, target and prophylaxis", marks: 2 },
+        { part: "Lifestyle, drug review and comorbidity management", marks: 1 },
+      ],
+      keywords: ["podagra", "monosodium urate", "joint aspiration", "allopurinol", "treat to target", "colchicine prophylaxis"],
+    },
+    {
+      id: "musculoskeletal-gout-t2",
+      paper: "III",
+      kind: "short-note",
+      marks: 5,
+      minutes: 10,
+      frequency: "common",
+      question: "Write short notes on urate-lowering therapy in gout - indications, drugs, targets and pitfalls.",
+      openingLines: [
+        "Urate-lowering therapy is the only treatment that alters the natural history of gout, because it dissolves the monosodium urate crystal burden by keeping serum urate below its saturation point.",
+        "It is a treat-to-target therapy, titrated against a serum urate below 6 mg/dL rather than against symptoms, and it is intended to be lifelong.",
+      ],
+      answer: [
+        {
+          heading: "Indications",
+          points: [
+            "Two or more acute attacks in a year.",
+            "Any tophus, clinical or radiological.",
+            "Radiographic joint damage attributable to gout.",
+            "Gout with chronic kidney disease stage 3 or worse.",
+            "Gout with recurrent uric acid urolithiasis.",
+            "Increasingly, after a first attack in a young patient or with a very high urate, on shared decision making. **Asymptomatic hyperuricaemia alone is not an indication.**",
+          ],
+        },
+        {
+          heading: "Drugs and doses",
+          points: [
+            "**Allopurinol, first line:** 100 mg PO daily (50 mg if eGFR under 30 mL/min), increased by 100 mg every 2-4 weeks; usual 300-600 mg, maximum 800-900 mg daily.",
+            "**Febuxostat:** 40 mg PO daily increased to 80 mg; for allopurinol intolerance or failure; no renal dose adjustment above eGFR 30; caution in established cardiovascular disease.",
+            "**Probenecid (uricosuric):** 250 mg BD up to 500 mg TDS; needs eGFR above 50 and no stone history; maintain high fluid intake.",
+            "Pegloticase and lesinurad exist for refractory tophaceous disease in specialist centres.",
+          ],
+        },
+        {
+          heading: "Target and monitoring",
+          points: [
+            "**Serum urate below 6 mg/dL (360 micromol/L); below 5 mg/dL where tophi are present**, until they dissolve.",
+            "Recheck urate every 2-4 weeks during titration, then every 6 months.",
+            "Monitor renal function and liver enzymes, and review adherence at each visit.",
+          ],
+        },
+        {
+          heading: "Pitfalls",
+          points: [
+            "**Starting during an acute attack** in a drug-naive patient, or stopping it during an attack in an established patient - both are wrong.",
+            "**Starting at 300 mg without titration** - provokes flares and increases hypersensitivity risk.",
+            "**Omitting colchicine 0.5 mg daily prophylaxis for 3-6 months** - the patient flares, blames the drug and stops it.",
+            "Failing to warn about rash and allopurinol hypersensitivity syndrome.",
+            "Co-prescribing allopurinol with **azathioprine or 6-mercaptopurine** without a 75% dose reduction - profound marrow suppression.",
+            "Treating to symptom relief rather than to a urate number, and relying on diet alone, which lowers urate by only about 1 mg/dL.",
+          ],
+        },
+      ],
+      mustDraw: ["A table of allopurinol, febuxostat and probenecid with start dose, titration, target and main caution."],
+      markSplit: [
+        { part: "Indications", marks: 1 },
+        { part: "Drugs with doses and titration", marks: 2 },
+        { part: "Target and monitoring", marks: 1 },
+        { part: "Pitfalls including prophylaxis and hypersensitivity", marks: 1 },
+      ],
+      keywords: ["allopurinol", "febuxostat", "treat to target", "colchicine prophylaxis", "HLA-B*5801", "azathioprine interaction"],
+    },
+  ],
+  mcqs: [
+    {
+      id: "musculoskeletal-gout-q1",
+      stem: "A 55-year-old man wakes at 3 am with an exquisitely painful, red, swollen right great toe. He is afebrile, has taken hydrochlorothiazide for two years, and serum uric acid measured today is 5.4 mg/dL. What is the most appropriate interpretation?",
+      options: [
+        "Gout is excluded because the serum urate is normal",
+        "Gout remains the most likely diagnosis; urate is often normal or low during an acute attack and should be rechecked after 2 weeks",
+        "The normal urate indicates pseudogout",
+        "A normal urate makes septic arthritis the most likely diagnosis",
+        "Urate should be repeated on the same day to confirm the result",
+      ],
+      answer: 1,
+      explanation:
+        "Acute inflammation is uricosuric and interleukin-6 driven renal urate excretion rises during an attack, so serum urate is normal or low in up to a third of acute gout episodes; the diagnosis rests on the clinical picture and on crystals in the aspirate, and the true baseline urate is measured at least 2 weeks after the attack settles. A normal level therefore does not exclude gout, which makes the first option wrong. Pseudogout is not diagnosed by a normal urate but by rhomboid, weakly positively birefringent calcium pyrophosphate crystals and chondrocalcinosis, and it favours the knee and wrist rather than the great toe. Septic arthritis is diagnosed by systemic toxicity and a positive Gram stain or culture, not by a urate value, and simply repeating the test the same day adds nothing because the level will still be suppressed by the ongoing attack.",
+      difficulty: "moderate",
+    },
+    {
+      id: "musculoskeletal-gout-q2",
+      stem: "A 68-year-old diabetic man with eGFR 26 mL/min and a past duodenal ulcer presents with an acutely inflamed left knee of 18 hours. Aspiration shows negatively birefringent needle-shaped crystals, 40,000 white cells per cubic mm, and a negative Gram stain. Which is the most appropriate treatment for the attack?",
+      options: [
+        "Indomethacin 50 mg PO three times daily for 7 days",
+        "Colchicine 0.5 mg PO every hour until pain settles or diarrhoea occurs",
+        "Prednisolone 35 mg PO daily for 5 days",
+        "Start allopurinol 300 mg PO daily immediately",
+        "Aspirin 650 mg PO four times daily",
+      ],
+      answer: 2,
+      explanation:
+        "He has advanced chronic kidney disease and a peptic ulcer history, so NSAIDs are contraindicated and full-dose colchicine is hazardous at this eGFR; a short course of oral prednisolone is the recommended and safest anti-inflammatory here, with temporary attention to his glucose. Indomethacin risks acute-on-chronic kidney injury and ulcer bleeding. The hourly colchicine-to-diarrhoea regimen has been abandoned worldwide as toxic and is especially dangerous in renal impairment, where colchicine accumulates and can cause myopathy and marrow suppression. Allopurinol must not be started during an acute attack in a drug-naive patient because falling urate mobilises crystals and prolongs the flare, and aspirin at analgesic doses actually raises serum urate and is not an appropriate anti-inflammatory for gout.",
+      difficulty: "moderate",
+    },
+    {
+      id: "musculoskeletal-gout-q3",
+      stem: "A 47-year-old man with three attacks of gout in the past year, a serum urate of 9.2 mg/dL and normal renal function is to be started on urate-lowering therapy two weeks after his last attack. Which regimen is most appropriate?",
+      options: [
+        "Allopurinol 300 mg PO daily started at once, with no other drug",
+        "Allopurinol 100 mg PO daily, titrated by 100 mg every 2-4 weeks to a urate below 6 mg/dL, with colchicine 0.5 mg daily for 6 months",
+        "Colchicine 0.5 mg daily alone, indefinitely",
+        "Dietary purine restriction alone for 6 months before considering drugs",
+        "Febuxostat 80 mg PO daily started during the next acute attack",
+      ],
+      answer: 1,
+      explanation:
+        "Recurrent attacks are a clear indication for lifelong urate-lowering therapy, and the correct method is a low starting dose of allopurinol titrated upward against serial serum urate levels to a target below 6 mg/dL, with anti-inflammatory prophylaxis for the first 3-6 months because falling urate mobilises crystals and provokes flares. Starting at 300 mg without titration and without prophylaxis is the classic error: it triggers early attacks, increases the risk of allopurinol hypersensitivity syndrome, and often leaves the patient still above target. Colchicine alone suppresses inflammation but does not lower urate, so the crystal burden and joint damage continue to accumulate. Diet lowers urate by only about 1 mg/dL and cannot bring a level of 9.2 mg/dL to target, and starting any urate-lowering drug during an acute attack in a drug-naive patient is precisely what should be avoided.",
+      difficulty: "easy",
+    },
+    {
+      id: "musculoskeletal-gout-q4",
+      stem: "A 60-year-old woman on azathioprine for autoimmune hepatitis is found to have gout. Her physician plans allopurinol. What is the single most important consideration?",
+      options: [
+        "Allopurinol will reduce the efficacy of azathioprine and its dose must be doubled",
+        "Allopurinol blocks xanthine oxidase and can cause profound bone marrow suppression, so azathioprine must be reduced to about a quarter of its dose or the combination avoided",
+        "The combination is safe and requires no change",
+        "Azathioprine must be replaced with methotrexate before allopurinol is started",
+        "Allopurinol should be given on alternate days to avoid interaction",
+      ],
+      answer: 1,
+      explanation:
+        "Azathioprine is metabolised to 6-mercaptopurine, which is inactivated largely by xanthine oxidase; allopurinol inhibits that enzyme, so active thiopurine metabolites accumulate and can produce life-threatening pancytopenia, making a dose reduction to roughly 25% with close blood count monitoring, or avoidance of the pair altogether (using febuxostat with the same caution, or a uricosuric), the essential step. The interaction increases rather than reduces thiopurine effect, so doubling the dose would be lethal, and calling the combination safe ignores one of the best-known drug interactions in medicine. Switching to methotrexate is not required and carries its own hepatotoxicity problem in autoimmune hepatitis, and alternate-day allopurinol does not abolish xanthine oxidase inhibition, which persists through the dosing interval.",
+      difficulty: "hard",
+    },
+    {
+      id: "musculoskeletal-gout-q5",
+      stem: "A 70-year-old diabetic man on insulin has a hot, swollen, tender right knee with a temperature of 38.9 C and rigors. He has a long history of tophaceous gout. What is the most appropriate immediate management?",
+      options: [
+        "Increase his colchicine and review in 48 hours",
+        "Start oral prednisolone 40 mg daily assuming a gout flare",
+        "Urgent joint aspiration for Gram stain, cell count and culture, with blood cultures and empirical intravenous antibiotics, and orthopaedic referral",
+        "Start naproxen and arrange an outpatient MRI of the knee",
+        "Intra-articular triamcinolone 40 mg for rapid relief",
+      ],
+      answer: 2,
+      explanation:
+        "Fever with rigors and a hot joint in a diabetic is septic arthritis until proved otherwise, and a known history of gout does not protect him - the two conditions frequently coexist in the same joint, so the mandatory steps are aspiration for Gram stain, cell count and culture, blood cultures, empirical intravenous antibiotics after sampling, and urgent orthopaedic referral for washout. Escalating colchicine or starting systemic steroids treats a presumed flare while an untreated infection destroys cartilage within days, and steroids additionally worsen his glycaemic control and blunt the fever that is the warning sign. An NSAID with a routine outpatient MRI delays the only test that answers the question, and injecting triamcinolone into a possibly infected joint converts a treatable arthritis into a catastrophic septic joint.",
+      difficulty: "easy",
+    },
+  ],
+  cards: [
+    {
+      id: "musculoskeletal-gout-c1",
+      front: "At what serum urate concentration does monosodium urate saturate physiological fluid?",
+      back: "About 6.8 mg/dL (405 micromol/L). Above this, crystals form - which is why the treatment target is set below 6 mg/dL, and below 5 mg/dL with tophi.",
+    },
+    {
+      id: "musculoskeletal-gout-c2",
+      front: "Describe gout and pseudogout crystals under polarised light.",
+      back: "Gout - monosodium urate, needle-shaped, strongly negatively birefringent, often intracellular in neutrophils. Pseudogout - calcium pyrophosphate, rhomboid or rod-shaped, weakly positively birefringent.",
+    },
+    {
+      id: "musculoskeletal-gout-c3",
+      front: "Why can serum urate be normal during an acute gout attack?",
+      back: "Acute inflammation increases renal urate excretion, so urate is normal or low in up to a third of attacks. Measure the true baseline at least 2 weeks after the attack settles.",
+    },
+    {
+      id: "musculoskeletal-gout-c4",
+      front: "Give the modern low-dose colchicine regimen for an acute attack.",
+      back: "1.2 mg PO stat then 0.6 mg one hour later, then 0.6 mg once or twice daily (in India, 1 mg then 0.5 mg after an hour). Equally effective as, and far safer than, hourly dosing to diarrhoea.",
+    },
+    {
+      id: "musculoskeletal-gout-c5",
+      front: "List the indications for starting urate-lowering therapy.",
+      back: "Two or more attacks per year, any tophus, radiographic gouty joint damage, CKD stage 3 or worse, and recurrent uric acid stones. Asymptomatic hyperuricaemia alone is not an indication.",
+    },
+    {
+      id: "musculoskeletal-gout-c6",
+      front: "How is allopurinol started and titrated?",
+      back: "Start 100 mg PO daily (50 mg if eGFR under 30), increase by 100 mg every 2-4 weeks against serum urate to a target under 6 mg/dL; usual 300-600 mg, maximum 800-900 mg daily.",
+    },
+    {
+      id: "musculoskeletal-gout-c7",
+      front: "What prophylaxis is given when urate-lowering therapy is started, and for how long?",
+      back: "Colchicine 0.5 mg PO once or twice daily for at least 3-6 months (or a low-dose NSAID with PPI, or prednisolone 5 mg), because falling urate mobilises crystals and provokes flares.",
+    },
+    {
+      id: "musculoskeletal-gout-c8",
+      front: "Name the drugs that raise serum urate and those that lower it.",
+      back: "Raise - thiazide and loop diuretics, low-dose aspirin, ciclosporin, tacrolimus, pyrazinamide, ethambutol, levodopa. Lower - losartan, fenofibrate, atorvastatin, SGLT2 inhibitors, high-dose aspirin.",
+    },
+    {
+      id: "musculoskeletal-gout-c9",
+      front: "What is allopurinol hypersensitivity syndrome and who is at risk?",
+      back: "Fever, rash progressing to SJS/TEN, eosinophilia, hepatitis and acute kidney injury, mortality up to 25%. Risk: first 8-12 weeks, high starting dose, renal impairment, and HLA-B*5801 carriage (Han Chinese, Thai, Korean).",
+    },
+    {
+      id: "musculoskeletal-gout-c10",
+      front: "Which drug combination with allopurinol causes profound marrow suppression?",
+      back: "Azathioprine or 6-mercaptopurine - allopurinol blocks xanthine oxidase, their main inactivating enzyme. Reduce the thiopurine to about 25% of dose or avoid the combination.",
+    },
+    {
+      id: "musculoskeletal-gout-c11",
+      front: "What are the classic radiographic features of chronic gout?",
+      back: "Punched-out juxta-articular erosions with sclerotic overhanging edges, preserved joint space until late, and soft tissue tophi. Ultrasound shows the double contour sign; dual-energy CT colour-codes urate.",
+    },
+    {
+      id: "musculoskeletal-gout-c12",
+      front: "How much does dietary modification lower serum urate?",
+      back: "About 1 mg/dL at best. Diet supports but never replaces urate-lowering drugs; low-fat dairy, coffee and vitamin C are protective, and pulses and most vegetables need not be restricted.",
+    },
+  ],
+  references: [
+    "American College of Rheumatology Guideline for the Management of Gout, 2020",
+    "EULAR evidence-based recommendations for the management of gout, updated 2016, and for diagnosis, 2018",
+    "2015 ACR/EULAR Gout Classification Criteria",
+    "British Society for Rheumatology Guideline for the Management of Gout, 2017",
+    "Indian Rheumatology Association consensus statements on gout and hyperuricaemia",
+    "Harrison's Principles of Internal Medicine, 21st edition, 2022 - disorders of purine metabolism",
+    "API Textbook of Medicine, 11th edition, 2019 - crystal arthropathies",
+  ],
+});
+
 const cases: ClinicalCase[] = [
   {
     id: "musculoskeletal-case-1",

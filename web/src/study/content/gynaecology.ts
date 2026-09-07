@@ -1536,6 +1536,435 @@ topics.push({
   ],
 });
 
+topics.push({
+  id: "gynaecology-vaginal-discharge-pid",
+  title: "Vaginal discharge and pelvic inflammatory disease: syndromic management",
+  oneLiner:
+    "Abnormal vaginal discharge in a family practice is sorted into vaginitis (bacterial vaginosis, vulvovaginal candidiasis, trichomoniasis) and cervicitis (Neisseria gonorrhoeae, Chlamydia trachomatis), and because laboratory confirmation is rarely available at the point of care the Indian national programme treats it by colour-coded syndromic kits, while any woman with lower abdominal pain plus cervical motion, uterine or adnexal tenderness is treated as pelvic inflammatory disease to protect her future fertility.",
+  frequency: "core",
+  keywords: [
+    "vaginal discharge",
+    "leucorrhoea",
+    "bacterial vaginosis",
+    "Amsel criteria",
+    "clue cells",
+    "Nugent score",
+    "vulvovaginal candidiasis",
+    "trichomoniasis",
+    "strawberry cervix",
+    "cervicitis",
+    "Chlamydia trachomatis",
+    "Neisseria gonorrhoeae",
+    "pelvic inflammatory disease",
+    "PID",
+    "cervical motion tenderness",
+    "tubo-ovarian abscess",
+    "Fitz-Hugh-Curtis syndrome",
+    "syndromic management",
+    "NACO STI RTI kits",
+    "metronidazole",
+    "doxycycline",
+    "ceftriaxone",
+    "partner notification",
+  ],
+  sections: [
+    {
+      heading: "Physiological versus pathological discharge",
+      points: [
+        "**Physiological discharge is white or clear, odourless, non-irritant, does not stain the underclothes yellow, and varies with the cycle** - it increases at mid-cycle under oestrogen, in pregnancy, on combined oral contraceptives and with sexual arousal, and it needs explanation and reassurance rather than an antibiotic.",
+        "Pathological discharge is suggested by a **change in colour, odour, volume or consistency, or by associated itching, soreness, dysuria, dyspareunia, intermenstrual or postcoital bleeding, and lower abdominal pain**; the last three point away from the vagina and towards the cervix and upper tract.",
+        "The single most useful clinical division is **vaginitis versus cervicitis**: vaginitis causes itching, soreness and odour with a normal cervix, whereas cervicitis causes mucopurulent discharge from the os, a friable cervix that bleeds on contact, and carries the risk of ascending infection.",
+        "In Indian practice a very large fraction of women presenting with **leucorrhoea have no infection at all** - the discharge is physiological, and the symptom is often a somatic expression of anxiety, marital stress, iron deficiency or a genuine but unrelated pelvic complaint. Treating every such woman with repeated antibiotic courses is a recognised programme failure.",
+        "Non-infective causes must not be forgotten: **atrophic vaginitis in the postmenopausal woman, a retained foreign body such as a forgotten tampon or a neglected pessary, chemical irritation from douching and vaginal preparations, an ectropion, a cervical or endometrial polyp, and cervical carcinoma**.",
+        "**Any blood-stained or foul offensive discharge in a woman over 35, or discharge with postcoital bleeding at any age, requires the cervix to be seen and any lesion biopsied** - carcinoma of the cervix presents as discharge more often than as bleeding in the Indian setting.",
+      ],
+    },
+    {
+      heading: "The three causes of vaginitis and how to separate them",
+      points: [
+        "**Bacterial vaginosis is the commonest cause of abnormal discharge worldwide.** It is not an infection but a change in the vaginal ecology - loss of hydrogen-peroxide-producing lactobacilli and overgrowth of Gardnerella vaginalis, Prevotella, Mobiluncus and Atopobium. The discharge is thin, homogeneous, grey-white and adherent to the vaginal walls, with a fishy odour that worsens after intercourse and after menstruation, and there is characteristically **no itching and no inflammation**.",
+        "**Amsel criteria diagnose bacterial vaginosis when three of four are present:** thin homogeneous discharge; vaginal pH above 4.5; a positive whiff or amine test (fishy odour on adding 10% potassium hydroxide); and **clue cells forming more than 20% of epithelial cells on saline wet mount**. The laboratory gold standard is the Nugent score on a Gram-stained smear, scored 0-10, where 7-10 is bacterial vaginosis.",
+        "**Vulvovaginal candidiasis** presents with intense pruritus, soreness, superficial dyspareunia and external dysuria, with a thick curdy white discharge adherent to an erythematous vaginal wall. The **vaginal pH stays normal at 4.0-4.5**, the whiff test is negative, and 10% potassium hydroxide microscopy shows budding yeasts and pseudohyphae. Recurrent candidiasis (four or more episodes a year) demands a search for **uncontrolled diabetes, recent antibiotics, corticosteroids, pregnancy and HIV**.",
+        "**Trichomoniasis is a sexually transmitted infection** caused by the flagellate protozoan Trichomonas vaginalis. The discharge is profuse, frothy, greenish-yellow and offensive, with vulval soreness and dysuria; the **vaginal pH is above 4.5**, the whiff test may be positive, and saline wet mount shows **motile flagellated trichomonads**. The classic strawberry cervix (colpitis macularis) is highly specific but seen in only about 2% of women on naked-eye examination.",
+        "The bedside kit that settles most cases is simple and cheap: **a speculum, narrow-range pH paper, a drop of normal saline and a drop of 10% potassium hydroxide on two slides, and a microscope**. Vaginal pH alone divides the field - a normal pH points to candidiasis or physiological discharge, a raised pH to bacterial vaginosis or trichomoniasis.",
+        "**Trichomoniasis and bacterial vaginosis in pregnancy** are associated with preterm labour, preterm prelabour rupture of membranes and low birth weight, and both are treated; **trichomoniasis also increases HIV acquisition and transmission**, which is why it is always managed as an STI with partner treatment.",
+      ],
+    },
+    {
+      heading: "Cervicitis, the sexually transmitted causes, and testing",
+      points: [
+        "**Mucopurulent cervicitis** - yellow or green endocervical exudate, a friable cervix bleeding on gentle swabbing, and 10 or more polymorphs per high-power field on an endocervical smear - is caused chiefly by **Chlamydia trachomatis and Neisseria gonorrhoeae**, and less often by Mycoplasma genitalium, herpes simplex virus and Trichomonas.",
+        "**Chlamydia is silent in about 70% of infected women** and is the leading preventable cause of tubal factor infertility; gonorrhoea is more often symptomatic and more acutely purulent. Neither can be reliably distinguished clinically, which is exactly why the syndromic approach covers both together.",
+        "The reference test is a **nucleic acid amplification test (NAAT) on a vulvovaginal or endocervical swab or a first-void urine sample**, and it should be used wherever it is available and affordable. Gram stain of endocervical discharge showing intracellular Gram-negative diplococci is specific but insensitive in women, and culture on Thayer-Martin medium is needed if antimicrobial resistance is being tracked.",
+        "**Every woman diagnosed with any sexually transmitted infection is offered the full panel**: HIV testing with counselling under the national programme, VDRL or RPR for syphilis with a confirmatory treponemal test, hepatitis B surface antigen, and cervical screening if she is due. This bundling is a mark in itself.",
+        "**Partner management is part of the treatment, not an optional extra.** Male partners of women with trichomoniasis, chlamydia, gonorrhoea and pelvic inflammatory disease are treated regardless of symptoms, and the woman is advised to abstain or use condoms until seven days after both she and her partner have completed treatment. Partners are **not** treated for bacterial vaginosis or candidiasis, since treating them does not reduce recurrence.",
+        "**A copper or hormonal intrauterine device must not be inserted in the presence of current purulent cervicitis, chlamydial infection, gonorrhoea or active pelvic inflammatory disease - WHO Medical Eligibility Criteria Category 4 for initiation.** If those conditions arise in a woman who already has a device in place, the device is Category 2 for continuation: treat the infection and leave the device in unless she does not improve within 48-72 hours.",
+      ],
+    },
+    {
+      heading: "Syndromic management: the Indian national programme",
+      points: [
+        "**Syndromic management treats a recognisable group of symptoms and signs with a combination that covers all the treatable organisms responsible for that syndrome**, using a flow chart, on the same visit, without waiting for laboratory confirmation. It was adopted because it treats on the first contact, requires no laboratory, prevents onward transmission and complications, and reaches the peripheral health facility where most Indian women present.",
+        "Under NACO the drugs are supplied as **pre-packed colour-coded kits, each containing the full course plus condoms and an information leaflet** - the seven kits are grey, green, white, blue, red, yellow and black, and knowing which kit goes with which syndrome is standard examination material.",
+        "**Vaginal discharge is managed by first deciding whether the cervix is involved.** Speculum examination showing a mucopurulent cervix, or a woman with risk factors (partner with urethral discharge, new or multiple partners), gets cervicitis cover with **Kit 1 (grey)**; a woman with vaginitis alone gets **Kit 2 (green)**; where the cervix cannot be visualised and risk is high, both kits are given.",
+        "**Kit 6 (yellow) is the pelvic inflammatory disease and lower abdominal pain kit** - cefixime 400 mg single dose, metronidazole 400 mg twice daily and doxycycline 100 mg twice daily, both for 14 days - and it is the single kit most often asked about in the examination.",
+        "The **limitations of the syndromic approach must be stated in any answer**: it over-treats women whose discharge is physiological or purely candidal, it cannot detect asymptomatic chlamydial infection (the very infection that causes infertility), it does not track antimicrobial resistance, and repeated unnecessary courses erode both the drug supply and the woman's trust.",
+        "**Doxycycline is contraindicated in pregnancy**; the pregnant woman with pelvic inflammatory disease or cervicitis is admitted and treated with a parenteral regimen, and **azithromycin 1 g orally replaces doxycycline** in outpatient syndromic packages where pregnancy is possible.",
+      ],
+    },
+    {
+      heading: "Pelvic inflammatory disease: recognition and diagnosis",
+      points: [
+        "**Pelvic inflammatory disease is infection ascending from the cervix to the endometrium, fallopian tubes, ovaries and pelvic peritoneum**, producing endometritis, salpingitis, oophoritis, tubo-ovarian abscess and pelvic peritonitis. It is usually polymicrobial - chlamydia and gonorrhoea initiate it, and anaerobes, Gram-negative rods, streptococci and genital mycoplasmas complete it.",
+        "**The threshold for treatment is deliberately low. Empirical treatment is started in any sexually active woman with pelvic or lower abdominal pain in whom no other cause is found, if she has any one of cervical motion tenderness, uterine tenderness or adnexal tenderness on bimanual examination** - these are the CDC minimum criteria, and waiting for certainty costs tubes.",
+        "**Additional criteria that raise specificity:** oral temperature above 38.3 degrees Celsius, abnormal mucopurulent cervical or vaginal discharge, abundant white cells on saline microscopy of vaginal fluid, raised ESR or C-reactive protein, and laboratory documentation of gonococcal or chlamydial infection.",
+        "**Definitive criteria** are endometrial biopsy showing endometritis, transvaginal ultrasound or MRI showing thickened fluid-filled tubes or a tubo-ovarian complex, and laparoscopic findings of tubal erythema, oedema and purulent exudate; laparoscopy remains the reference standard but is neither available nor justified for routine diagnosis.",
+        "**The essential differential diagnosis is the surgical and obstetric emergency**: ectopic pregnancy (a urine pregnancy test is mandatory in every case), acute appendicitis, ruptured or torted ovarian cyst, urinary tract infection and pyelonephritis, endometriosis, and inflammatory bowel disease. A negative pregnancy test is the first step, not an afterthought.",
+        "**Fitz-Hugh-Curtis syndrome** is perihepatitis complicating pelvic inflammatory disease, presenting with right upper quadrant pleuritic pain that can be mistaken for cholecystitis; the violin-string adhesions between the liver capsule and the anterior abdominal wall are seen at laparoscopy.",
+        "Risk factors worth listing: **age under 25, multiple or new sexual partners, a partner with urethral discharge, previous PID, recent instrumentation of the uterus (IUCD insertion within 3 weeks, dilatation and curettage, hysteroscopy, unsafe abortion), and bacterial vaginosis**.",
+      ],
+    },
+    {
+      heading: "Treatment of PID, complications and prevention",
+      points: [
+        "**Outpatient regimen (CDC 2021, and the one to write): ceftriaxone 500 mg intramuscularly as a single dose, plus doxycycline 100 mg orally twice daily for 14 days, plus metronidazole 500 mg orally twice daily for 14 days.** Cefixime 400 mg orally is the substitute where injection is not feasible, and this is exactly what NACO Kit 6 provides.",
+        "**Admit for parenteral therapy if:** pregnancy; a surgical emergency such as appendicitis cannot be excluded; tubo-ovarian abscess; severe illness with high fever, nausea and vomiting; inability to tolerate or follow an oral regimen; or failure to respond to outpatient treatment within 72 hours. The inpatient regimen is **ceftriaxone 1 g intravenously daily (or cefoxitin) with doxycycline 100 mg twice daily and metronidazole**, or clindamycin with gentamicin where the abscess is prominent.",
+        "**Review at 72 hours is compulsory.** Failure of the fever, pain and tenderness to improve means the diagnosis is wrong, the organism is resistant, or an abscess has formed - re-image and admit rather than repeat the same prescription.",
+        "**Tubo-ovarian abscess** is treated with antibiotics plus drainage - image-guided percutaneous or transvaginal aspiration where the abscess is over 5-7 cm or fails to respond in 48-72 hours; laparotomy is reserved for rupture, which presents as generalised peritonitis and shock and carries high mortality.",
+        "**The long-term cost of PID is the reason for aggressive treatment:** tubal factor infertility in roughly 12% after one episode, 25% after two and 50% after three; a six-fold to ten-fold rise in ectopic pregnancy; and chronic pelvic pain in about 30%, largely from adhesions and hydrosalpinx.",
+        "**Prevention and counselling close the answer:** condom use with every act, treatment of partners, screening young sexually active women for chlamydia where testing exists, avoiding unnecessary uterine instrumentation, ensuring aseptic technique and screening before IUCD insertion, and safe abortion services under the MTP Act rather than unsafe procedures.",
+        "**A woman with past PID who has since had a pregnancy is WHO Medical Eligibility Criteria Category 1 for a copper or levonorgestrel IUD; past PID without a subsequent pregnancy is Category 2 for initiation** - past infection is not by itself a reason to deny her the most effective long-acting method, and this nuance is worth a mark.",
+      ],
+    },
+  ],
+  tables: [
+    {
+      heading: "Separating the three causes of vaginitis at the bedside",
+      columns: ["Feature", "Bacterial vaginosis", "Vulvovaginal candidiasis", "Trichomoniasis"],
+      rows: [
+        ["Discharge", "Thin, homogeneous, grey-white, adherent", "Thick, curdy, white, adherent to red wall", "Profuse, frothy, greenish-yellow"],
+        ["Odour", "Fishy, worse after intercourse", "None", "Offensive"],
+        ["Itching and inflammation", "Absent", "Intense pruritus and soreness", "Soreness, dysuria, vulval erythema"],
+        ["Vaginal pH", "Above 4.5", "Normal, 4.0-4.5", "Above 4.5"],
+        ["Whiff test with 10% KOH", "Positive", "Negative", "May be positive"],
+        ["Microscopy", "Clue cells over 20% on saline mount", "Budding yeast and pseudohyphae on KOH", "Motile flagellated trichomonads on saline"],
+        ["Sexually transmitted", "No", "No", "Yes"],
+        ["Treat the partner", "No", "No", "Yes, always"],
+        ["First-line treatment", "Metronidazole 400 mg PO BD for 7 days", "Fluconazole 150 mg PO single dose", "Metronidazole 2 g PO single dose or 400 mg BD 7 days"],
+        ["In pregnancy", "Metronidazole 400 mg BD 7 days, treat symptomatic women", "Topical clotrimazole 7 days, avoid oral fluconazole", "Metronidazole, treat and treat the partner"],
+      ],
+    },
+    {
+      heading: "NACO colour-coded STI/RTI kits",
+      columns: ["Kit", "Colour", "Syndrome", "Contents"],
+      rows: [
+        ["Kit 1", "Grey", "Urethral discharge, cervicitis, anorectal discharge", "Azithromycin 1 g single dose plus cefixime 400 mg single dose"],
+        ["Kit 2", "Green", "Vaginitis (vaginal discharge without cervicitis)", "Secnidazole 2 g single dose plus fluconazole 150 mg single dose"],
+        ["Kit 3", "White", "Genital ulcer, non-herpetic (syphilis and chancroid)", "Benzathine penicillin 2.4 MU IM plus azithromycin 1 g"],
+        ["Kit 4", "Blue", "Genital ulcer, non-herpetic, penicillin-allergic", "Doxycycline 100 mg BD for 15 days plus azithromycin 1 g"],
+        ["Kit 5", "Red", "Genital ulcer, herpetic", "Acyclovir 400 mg TDS for 7 days"],
+        ["Kit 6", "Yellow", "Lower abdominal pain and pelvic inflammatory disease", "Cefixime 400 mg single dose, metronidazole 400 mg BD and doxycycline 100 mg BD, both for 14 days"],
+        ["Kit 7", "Black", "Inguinal bubo (lymphogranuloma venereum, chancroid)", "Doxycycline 100 mg BD for 21 days plus azithromycin 1 g"],
+      ],
+    },
+  ],
+  redFlags: [
+    "Lower abdominal pain with a positive urine pregnancy test - ectopic pregnancy until excluded; arrange urgent ultrasound and serum beta-hCG, do not label it pelvic inflammatory disease.",
+    "Pelvic pain with fever above 38.3 degrees Celsius, vomiting, guarding or a tender adnexal mass - suspected tubo-ovarian abscess or peritonitis; admit for parenteral antibiotics and imaging.",
+    "No improvement in fever, pain or tenderness after 72 hours of correct outpatient PID therapy - re-image and admit; the diagnosis or the organism is wrong.",
+    "Foul, blood-stained or watery discharge in a woman over 35, or discharge with postcoital or intermenstrual bleeding at any age - see the cervix and biopsy any lesion; cervical carcinoma presents this way.",
+    "Vaginal discharge in a prepubertal girl - consider a foreign body and consider sexual abuse; examine under the child protection pathway and never treat blindly.",
+    "Purulent cervicitis or active PID in a woman requesting an IUCD - WHO MEC Category 4 for insertion; treat the infection first and insert later.",
+    "Discharge with genital ulceration, inguinal lymphadenopathy, oral thrush or weight loss - test for HIV and syphilis the same visit.",
+  ],
+  pearls: [
+    "Vaginitis itches, cervicitis bleeds - itching and odour with a normal cervix is vaginitis, mucopurulent discharge from a friable os is cervicitis and needs gonorrhoea and chlamydia cover.",
+    "Three of the four Amsel criteria diagnose bacterial vaginosis: thin homogeneous discharge, pH above 4.5, positive whiff test, and clue cells over 20%.",
+    "Candidiasis is the only one of the three vaginitides with a normal vaginal pH - a pH strip at the bedside sorts most cases before microscopy.",
+    "Trichomoniasis is an STI, so the partner is treated; bacterial vaginosis and candidiasis are not, so the partner is not.",
+    "The CDC minimum criteria for PID are cervical motion, uterine or adnexal tenderness in a sexually active woman with pelvic pain - one is enough to start treatment, because the cost of waiting is her tubes.",
+    "Write the PID regimen in full: ceftriaxone 500 mg IM stat, doxycycline 100 mg BD for 14 days, metronidazole 500 mg BD for 14 days - and this is NACO Kit 6 (yellow).",
+    "Infertility follows PID in about 12% after one episode, 25% after two and 50% after three - quoting this sequence earns the complications mark.",
+    "Doxycycline is contraindicated in pregnancy; a pregnant woman with PID is admitted for parenteral treatment.",
+    "Say the limitations of syndromic management as well as its advantages - over-treatment, missed asymptomatic chlamydia and unmonitored resistance - that balance is what separates a pass from a good answer.",
+  ],
+  theory: [
+    {
+      id: "gynaecology-vaginal-discharge-pid-t1",
+      paper: "IV",
+      kind: "long",
+      marks: 10,
+      minutes: 20,
+      frequency: "core",
+      question:
+        "A 24-year-old married woman presents to your clinic with lower abdominal pain for five days, fever and offensive vaginal discharge. Discuss your approach, and describe the syndromic management of vaginal discharge in the Indian setting.",
+      openingLines: [
+        "This young sexually active woman with lower abdominal pain, fever and abnormal vaginal discharge has pelvic inflammatory disease until proved otherwise, and ectopic pregnancy must be excluded before anything else with a urine pregnancy test.",
+        "Pelvic inflammatory disease is polymicrobial infection ascending from the cervix to the endometrium, tubes, ovaries and pelvic peritoneum, and the threshold for empirical treatment is deliberately low because delay causes tubal infertility, ectopic pregnancy and chronic pelvic pain.",
+      ],
+      answer: [
+        {
+          heading: "1. History",
+          points: [
+            "Pain: onset, site, severity, relation to menses; character and odour of discharge; fever, nausea and vomiting; dysuria, dyspareunia, intermenstrual and postcoital bleeding.",
+            "Menstrual and obstetric history with the date of the last menstrual period, contraceptive method, and any recent instrumentation - IUCD insertion, curettage, abortion or delivery.",
+            "Sexual history taken privately and without judgement: new or multiple partners, partner with urethral discharge or genital ulcer, condom use.",
+            "Past history of similar episodes, treated STI, tuberculosis, diabetes; drug history including previous antibiotic courses and self-medication.",
+          ],
+        },
+        {
+          heading: "2. Examination",
+          points: [
+            "General: temperature, pulse, blood pressure, pallor, hydration, and signs of systemic sepsis.",
+            "Abdominal: lower abdominal tenderness, guarding, rebound, and any palpable mass; right upper quadrant tenderness suggests Fitz-Hugh-Curtis perihepatitis.",
+            "Speculum: character of discharge, mucopurulent cervical exudate, friability of the cervix, ulcers, foreign body, and any visible cervical growth.",
+            "Bimanual: cervical motion tenderness, uterine tenderness, adnexal tenderness or a mass, and the position and size of the uterus.",
+          ],
+        },
+        {
+          heading: "3. Investigations",
+          points: [
+            "Urine pregnancy test in every case, before any drug is prescribed.",
+            "Bedside tests: vaginal pH, saline wet mount for clue cells and trichomonads, 10% KOH whiff test and mount for pseudohyphae; endocervical Gram stain if available.",
+            "Complete blood count, ESR or C-reactive protein, and urine routine and microscopy to exclude urinary infection.",
+            "NAAT for Chlamydia trachomatis and Neisseria gonorrhoeae where available; HIV testing with counselling, VDRL or RPR, and HBsAg for every woman with a suspected STI.",
+            "Transvaginal or transabdominal ultrasound to look for a tubo-ovarian mass, free fluid, hydrosalpinx or an adnexal mass, and to exclude other causes of the pain.",
+          ],
+        },
+        {
+          heading: "4. Syndromic management of vaginal discharge",
+          points: [
+            "The principle: treat a defined symptom complex with a combination covering all the treatable organisms responsible, on the first visit, using a flow chart and pre-packed colour-coded kits, without waiting for laboratory results.",
+            "Decide whether the cervix is involved. Vaginitis alone - Kit 2 (green): secnidazole 2 g single dose plus fluconazole 150 mg single dose. Cervicitis, or a woman with risk factors, or where the cervix cannot be visualised - add Kit 1 (grey): azithromycin 1 g plus cefixime 400 mg.",
+            "Lower abdominal pain with tenderness, that is pelvic inflammatory disease - Kit 6 (yellow): cefixime 400 mg single dose, doxycycline 100 mg twice daily and metronidazole 400 mg twice daily, both for 14 days.",
+            "Advantages: treatment on first contact, no laboratory needed, feasible at the peripheral facility, interrupts transmission and prevents complications.",
+            "Limitations: over-treatment of physiological discharge, poor specificity for candidiasis, failure to detect asymptomatic chlamydia, no resistance surveillance, and cost of unnecessary drugs.",
+          ],
+        },
+        {
+          heading: "5. Treatment of this patient and follow-up",
+          points: [
+            "Outpatient regimen if she is stable, afebrile enough to tolerate oral drugs and able to follow up: ceftriaxone 500 mg IM stat, doxycycline 100 mg PO twice daily for 14 days, metronidazole 500 mg PO twice daily for 14 days, with analgesia and rest.",
+            "Admit for parenteral therapy if pregnant, severely ill, vomiting, if a surgical emergency cannot be excluded, if there is a tubo-ovarian abscess, or if outpatient treatment fails at 72 hours.",
+            "Partner treatment for all male partners of the past 60 days, abstinence or condoms until seven days after both complete treatment, and treatment of the partner even if he is asymptomatic.",
+            "Counsel on condom use, the risk to future fertility, completing the full 14 days, and the need to return immediately if pain or fever worsens.",
+            "Review at 72 hours to confirm improvement, and again at 2-4 weeks; screen for HIV and syphilis, offer cervical screening if due, and record the episode because it changes future contraceptive counselling.",
+          ],
+        },
+      ],
+      mustDraw: [
+        "The syndromic flow chart for vaginal discharge: history and speculum - cervix mucopurulent or risk factors present? - yes gives Kit 1 plus Kit 2, no gives Kit 2 alone - add Kit 6 if there is lower abdominal pain with tenderness.",
+        "A table of the three causes of vaginitis against pH, whiff test, microscopy and treatment.",
+      ],
+      markSplit: [
+        { part: "History and examination including the minimum criteria for PID", marks: 2 },
+        { part: "Investigations with pregnancy test and bedside tests", marks: 2 },
+        { part: "Principle of syndromic management with kits", marks: 3 },
+        { part: "Treatment regimen with doses and admission criteria", marks: 2 },
+        { part: "Partner management, counselling and follow-up", marks: 1 },
+      ],
+      keywords: ["syndromic management", "NACO kits", "pelvic inflammatory disease", "cervical motion tenderness", "doxycycline"],
+    },
+    {
+      id: "gynaecology-vaginal-discharge-pid-t2",
+      paper: "IV",
+      kind: "short-note",
+      marks: 5,
+      minutes: 10,
+      frequency: "common",
+      question: "Write short notes on bacterial vaginosis.",
+      openingLines: [
+        "Bacterial vaginosis is a polymicrobial clinical syndrome caused by replacement of the normal hydrogen-peroxide-producing lactobacilli of the vagina by high concentrations of anaerobic organisms - Gardnerella vaginalis, Prevotella, Mobiluncus and Atopobium vaginae.",
+        "It is the commonest cause of abnormal vaginal discharge in women of reproductive age, it is not a sexually transmitted infection, and it is characteristically an infection without inflammation.",
+      ],
+      answer: [
+        {
+          heading: "Clinical features",
+          points: [
+            "Thin, homogeneous, grey-white discharge coating the vaginal walls, with a fishy odour worse after intercourse and after menstruation.",
+            "Absence of itching, soreness, erythema or dyspareunia - the wall is not inflamed, which is the point of the name vaginosis rather than vaginitis.",
+            "Up to half of affected women are asymptomatic; risk factors include douching, new or multiple sexual partners, smoking and an intrauterine device.",
+          ],
+        },
+        {
+          heading: "Diagnosis - Amsel criteria (three of four)",
+          points: [
+            "Thin, homogeneous, adherent vaginal discharge.",
+            "Vaginal pH above 4.5 measured on narrow-range pH paper from the lateral vaginal wall.",
+            "Positive whiff or amine test - a fishy odour released on adding 10% potassium hydroxide.",
+            "Clue cells constituting more than 20% of epithelial cells on saline wet mount - vaginal epithelial cells with borders obscured by adherent coccobacilli.",
+            "The laboratory gold standard is the Nugent score on a Gram-stained vaginal smear, graded 0-10, with 7-10 diagnostic and 4-6 intermediate.",
+          ],
+        },
+        {
+          heading: "Complications",
+          points: [
+            "In pregnancy: preterm labour, preterm prelabour rupture of membranes, low birth weight, chorioamnionitis and postpartum endometritis.",
+            "Outside pregnancy: post-abortal and post-hysterectomy infection, increased susceptibility to pelvic inflammatory disease, and increased acquisition of HIV, herpes simplex virus type 2, gonorrhoea and chlamydia.",
+          ],
+        },
+        {
+          heading: "Treatment",
+          points: [
+            "Metronidazole 400 mg orally twice daily for 7 days is first line; metronidazole 2 g as a single dose is an alternative but has a higher relapse rate.",
+            "Alternatives: metronidazole 0.75% vaginal gel once daily for 5 days, or clindamycin 2% vaginal cream at night for 7 days; oral clindamycin 300 mg twice daily for 7 days where metronidazole is not tolerated.",
+            "Advise avoidance of alcohol during and for 24 hours after metronidazole because of the disulfiram-like reaction, and avoidance of douching.",
+            "Treat symptomatic pregnant women with oral metronidazole 400 mg twice daily for 7 days; routine partner treatment is not recommended because it does not reduce recurrence.",
+            "Recurrence occurs in up to 30% within three months; suppressive twice-weekly metronidazole gel for 4-6 months is used for frequent recurrence.",
+          ],
+        },
+      ],
+      mustDraw: [
+        "A labelled sketch of a clue cell - a vaginal epithelial cell with a granular, stippled surface and an obscured cell border - beside a normal epithelial cell for comparison.",
+      ],
+      markSplit: [
+        { part: "Definition and microbiology", marks: 1 },
+        { part: "Clinical features", marks: 1 },
+        { part: "Amsel criteria and Nugent score", marks: 1.5 },
+        { part: "Complications and treatment", marks: 1.5 },
+      ],
+      keywords: ["bacterial vaginosis", "Amsel criteria", "clue cells", "Nugent score", "metronidazole"],
+    },
+  ],
+  mcqs: [
+    {
+      id: "gynaecology-vaginal-discharge-pid-q1",
+      stem: "A 27-year-old woman complains of a thin grey-white vaginal discharge with a fishy odour, without itching. Vaginal pH is 5.2 and 10% potassium hydroxide releases a fishy smell. Which finding on saline wet mount would complete the diagnosis?",
+      options: [
+        "Budding yeasts with pseudohyphae",
+        "Motile flagellated organisms",
+        "Clue cells forming more than 20% of epithelial cells",
+        "More than 10 polymorphs per high-power field",
+        "Gram-negative intracellular diplococci",
+      ],
+      answer: 2,
+      explanation:
+        "Thin homogeneous discharge, pH above 4.5 and a positive whiff test are three of the four Amsel criteria; clue cells are the fourth and are the microscopic hallmark of bacterial vaginosis. Budding yeasts and pseudohyphae indicate candidiasis, which characteristically has a normal pH of 4.0-4.5 and causes intense itching, both absent here. Motile flagellates indicate trichomoniasis, which produces a frothy greenish offensive discharge with vulval soreness rather than an odour without inflammation. Polymorphs are non-specific and are in fact typically scanty in bacterial vaginosis, which is an infection without inflammation. Intracellular Gram-negative diplococci are seen on Gram stain of gonococcal cervicitis, not on a saline mount of vaginal fluid.",
+      difficulty: "easy",
+    },
+    {
+      id: "gynaecology-vaginal-discharge-pid-q2",
+      stem: "A 22-year-old sexually active woman has lower abdominal pain for four days. Temperature is 37.6 degrees Celsius, urine pregnancy test is negative, and bimanual examination shows cervical motion tenderness. Ultrasound is normal. What is the most appropriate next step?",
+      options: [
+        "Reassure and review in one week as she is afebrile and the scan is normal",
+        "Start ceftriaxone 500 mg IM stat with doxycycline and metronidazole for 14 days",
+        "Wait for the chlamydia NAAT result before starting any antibiotic",
+        "Perform diagnostic laparoscopy to confirm pelvic inflammatory disease",
+        "Give a single dose of fluconazole 150 mg and review",
+      ],
+      answer: 1,
+      explanation:
+        "Cervical motion tenderness in a sexually active woman with pelvic pain and no other explanation satisfies the CDC minimum criteria, and empirical treatment is started at once because delay causes tubal damage. Reassurance is wrong because a normal scan and a normal temperature do not exclude pelvic inflammatory disease - imaging is normal in most cases and fever is present in a minority. Waiting for the NAAT costs days of tubal inflammation and is explicitly discouraged; treatment is started and modified later if needed. Laparoscopy is the reference standard but is invasive and is reserved for diagnostic doubt or failed treatment, not for first-line confirmation. Fluconazole treats candidiasis, which causes itching and a normal vaginal pH and does not cause cervical motion tenderness.",
+      difficulty: "moderate",
+    },
+    {
+      id: "gynaecology-vaginal-discharge-pid-q3",
+      stem: "A woman diagnosed with pelvic inflammatory disease at a primary health centre is to be given the appropriate NACO colour-coded kit. Which kit and contents are correct?",
+      options: [
+        "Kit 1 (grey) - azithromycin 1 g plus cefixime 400 mg",
+        "Kit 2 (green) - secnidazole 2 g plus fluconazole 150 mg",
+        "Kit 6 (yellow) - cefixime 400 mg, metronidazole 400 mg BD and doxycycline 100 mg BD for 14 days",
+        "Kit 7 (black) - doxycycline 100 mg BD for 21 days plus azithromycin 1 g",
+        "Kit 5 (red) - acyclovir 400 mg TDS for 7 days",
+      ],
+      answer: 2,
+      explanation:
+        "Kit 6, the yellow kit, is the lower abdominal pain and pelvic inflammatory disease kit and contains a single dose of cefixime with 14 days of metronidazole and doxycycline, covering gonococci, chlamydia and anaerobes. Kit 1 (grey) covers urethral discharge and cervicitis only and lacks the anaerobic and 14-day chlamydial cover the upper tract needs. Kit 2 (green) is for vaginitis and contains no cephalosporin, so it would leave gonococcal and chlamydial upper-tract infection untreated. Kit 7 (black) is for inguinal bubo, treating lymphogranuloma venereum and chancroid. Kit 5 (red) is acyclovir for herpetic genital ulcer and has no antibacterial activity at all.",
+      difficulty: "moderate",
+    },
+    {
+      id: "gynaecology-vaginal-discharge-pid-q4",
+      stem: "A 26-year-old woman is being counselled for a copper intrauterine device. On examination she has a mucopurulent cervical discharge and a friable cervix. According to WHO Medical Eligibility Criteria, what is the correct action?",
+      options: [
+        "Insert the device now and give antibiotics at the same visit - Category 1",
+        "Insert the device and review in one week - Category 2",
+        "Do not insert now; treat the cervicitis and insert later - Category 4 for initiation",
+        "Do not offer an intrauterine device ever again - Category 4 permanently",
+        "Insert a levonorgestrel device instead, as it is Category 1 in cervicitis",
+      ],
+      answer: 2,
+      explanation:
+        "Current purulent cervicitis, chlamydial infection or gonorrhoea is Category 4 for initiation of either a copper or a levonorgestrel intrauterine device, because insertion through an infected cervix carries a high risk of ascending infection; the correct action is to treat the infection and insert once she is cured. Inserting with cover is not Category 1 and is not acceptable practice. Category 2 would mean the benefits generally outweigh the risks and insertion may proceed, which is not the case here. The Category 4 rating applies to initiation while the infection is current, not permanently - once treated she can have a device, and if the same infection arises with a device already in place it is only Category 2 for continuation. The levonorgestrel device carries the same Category 4 restriction, so switching device type changes nothing.",
+      difficulty: "hard",
+    },
+    {
+      id: "gynaecology-vaginal-discharge-pid-q5",
+      stem: "A 30-year-old woman with pelvic inflammatory disease has completed 72 hours of correct outpatient therapy but has worsening pain, a temperature of 39 degrees Celsius and a tender right adnexal mass of 7 cm on ultrasound. What is the most appropriate management?",
+      options: [
+        "Continue the same oral regimen for the full 14 days and review at completion",
+        "Change the oral cephalosporin to oral ciprofloxacin and continue at home",
+        "Admit for intravenous antibiotics with consideration of image-guided drainage",
+        "Arrange immediate total abdominal hysterectomy with bilateral salpingo-oophorectomy",
+        "Insert a levonorgestrel intrauterine system to control the infection",
+      ],
+      answer: 2,
+      explanation:
+        "Failure to respond within 72 hours and a 7 cm tubo-ovarian abscess are both admission criteria; she needs intravenous antibiotics and image-guided percutaneous or transvaginal drainage, since abscesses above about 5-7 cm respond poorly to antibiotics alone. Continuing the identical failed oral regimen ignores the defined 72-hour review point and risks rupture and generalised peritonitis. Substituting oral ciprofloxacin at home neither addresses the failure of the outpatient route nor drains the collection, and fluoroquinolone monotherapy has poor anaerobic cover and high gonococcal resistance in India. Hysterectomy with bilateral salpingo-oophorectomy in a 30-year-old is reserved for rupture with life-threatening sepsis, not for a first attempt at controlling an abscess. Inserting an intrauterine device during active pelvic infection is Category 4 and would worsen the infection.",
+      difficulty: "hard",
+    },
+  ],
+  cards: [
+    {
+      id: "gynaecology-vaginal-discharge-pid-c1",
+      front: "State the four Amsel criteria.",
+      back: "Thin homogeneous discharge; vaginal pH above 4.5; positive whiff test with 10% KOH; clue cells over 20% of epithelial cells. Three of four diagnose bacterial vaginosis.",
+    },
+    {
+      id: "gynaecology-vaginal-discharge-pid-c2",
+      front: "Which vaginitis has a normal vaginal pH?",
+      back: "Vulvovaginal candidiasis - pH stays 4.0-4.5. Bacterial vaginosis and trichomoniasis both raise the pH above 4.5.",
+    },
+    {
+      id: "gynaecology-vaginal-discharge-pid-c3",
+      front: "CDC minimum criteria for starting treatment for pelvic inflammatory disease.",
+      back: "Sexually active woman with pelvic or lower abdominal pain and no other cause, plus any one of cervical motion tenderness, uterine tenderness or adnexal tenderness.",
+    },
+    {
+      id: "gynaecology-vaginal-discharge-pid-c4",
+      front: "Outpatient regimen for pelvic inflammatory disease.",
+      back: "Ceftriaxone 500 mg IM stat, plus doxycycline 100 mg PO BD for 14 days, plus metronidazole 500 mg PO BD for 14 days.",
+    },
+    {
+      id: "gynaecology-vaginal-discharge-pid-c5",
+      front: "Which NACO kit is used for pelvic inflammatory disease, and what does it contain?",
+      back: "Kit 6, yellow - cefixime 400 mg single dose plus metronidazole 400 mg BD and doxycycline 100 mg BD for 14 days.",
+    },
+    {
+      id: "gynaecology-vaginal-discharge-pid-c6",
+      front: "Risk of infertility after pelvic inflammatory disease.",
+      back: "About 12% after one episode, 25% after two and 50% after three; ectopic pregnancy risk rises six-fold to ten-fold, and about 30% get chronic pelvic pain.",
+    },
+    {
+      id: "gynaecology-vaginal-discharge-pid-c7",
+      front: "What is Fitz-Hugh-Curtis syndrome?",
+      back: "Perihepatitis complicating pelvic inflammatory disease - right upper quadrant pleuritic pain with violin-string adhesions between the liver capsule and the anterior abdominal wall.",
+    },
+    {
+      id: "gynaecology-vaginal-discharge-pid-c8",
+      front: "Which causes of vaginal discharge require the partner to be treated?",
+      back: "Trichomoniasis, chlamydia, gonorrhoea and pelvic inflammatory disease. Not bacterial vaginosis and not candidiasis.",
+    },
+    {
+      id: "gynaecology-vaginal-discharge-pid-c9",
+      front: "WHO MEC category for IUD insertion in current purulent cervicitis or PID.",
+      back: "Category 4 for initiation - treat first, insert later. If it occurs with a device already in situ it is Category 2 for continuation.",
+    },
+    {
+      id: "gynaecology-vaginal-discharge-pid-c10",
+      front: "Name three limitations of syndromic management of vaginal discharge.",
+      back: "Over-treatment of physiological and candidal discharge; failure to detect asymptomatic chlamydial infection; no surveillance of antimicrobial resistance.",
+    },
+  ],
+  references: [
+    "National Guidelines on Prevention, Management and Control of Reproductive Tract Infections and Sexually Transmitted Infections, NACO, Ministry of Health and Family Welfare, Government of India, 2014 (reprinted 2022)",
+    "CDC Sexually Transmitted Infections Treatment Guidelines, 2021",
+    "WHO Guidelines for the Management of Symptomatic Sexually Transmitted Infections, 2021",
+    "WHO Medical Eligibility Criteria for Contraceptive Use, 5th edition, 2015, with 2024 update",
+    "FOGSI Good Clinical Practice Recommendations on Vaginal Discharge and Genital Infections, 2018",
+    "Shaw's Textbook of Gynaecology, 18th edition, 2024 - infections of the genital tract",
+  ],
+});
+
 const cases: ClinicalCase[] = [
   {
     id: "gynaecology-case-1",

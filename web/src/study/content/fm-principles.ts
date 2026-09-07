@@ -1971,6 +1971,437 @@ topics.push({
   ],
 });
 
+topics.push({
+  id: "fm-principles-records-audit",
+  title: "Medical records, practice management and the clinical audit cycle",
+  oneLiner:
+    "A family practice runs on its records: a structured problem-oriented record with SOAP progress notes, a coded morbidity register and a family folder make continuity possible, satisfy the medico-legal and regulatory requirement, and supply the denominator without which clinical audit - the systematic comparison of care against explicit criteria followed by change and re-measurement - cannot be done at all.",
+  frequency: "common",
+  keywords: [
+    "problem-oriented medical record",
+    "POMR",
+    "Lawrence Weed",
+    "SOAP notes",
+    "problem list",
+    "family folder",
+    "clinical audit",
+    "audit cycle",
+    "audit spiral",
+    "criteria and standards",
+    "quality indicators",
+    "Donabedian",
+    "ICPC-2",
+    "ICD-10",
+    "ICD-11",
+    "reason for encounter",
+    "episode of care",
+    "electronic health record",
+    "ABDM",
+    "medical records retention",
+    "significant event analysis",
+    "practice management",
+    "recall register",
+    "plan-do-study-act",
+  ],
+  sections: [
+    {
+      heading: "Why the record is a clinical instrument",
+      points: [
+        "The record is the **only vehicle by which continuity survives the absence of the doctor**; in a discipline defined by longitudinal care, an unreadable or absent note converts a fifteen-year relationship into a series of unrelated encounters.",
+        "It is the **primary medico-legal document**: under the NMC (formerly MCI) Code of Ethics Regulations 2002, clause 1.3, records of indoor patients must be maintained in the standard proforma and **retained for three years from the date of commencement of treatment**, and a copy must be supplied to the patient or an authorised attendant **within 72 hours of a request**.",
+        "Records are the evidence base of any complaint under the **Consumer Protection Act 2019**, where the burden of showing that reasonable care was taken falls on the doctor, and the courts consistently treat **absent documentation as evidence that the act was not performed**.",
+        "The record is the **denominator generator**: audit, recall, immunisation coverage, chronic disease registers and any research question about your own practice all begin with a retrievable list, which is why an unindexed pile of prescriptions is not a record system.",
+        "A good record is also a **communication device between team members** - the ANM, the community health officer, the pharmacist, the night duty doctor and the consultant to whom you refer all read it, so it must be legible, dated, timed and signed with a legible name and registration number.",
+        "In family practice the unit of filing is ideally the **family folder**, with an individual record for each member and a family page carrying the genogram, the household composition, the socio-economic classification and the shared risks such as a smear-positive index case or a shared water source.",
+      ],
+    },
+    {
+      heading: "The problem-oriented medical record",
+      points: [
+        "The **problem-oriented medical record (POMR) was described by Lawrence Weed in 1968** in the New England Journal of Medicine, replacing the source-oriented record (in which everything from the laboratory sits together and everything from the doctor sits elsewhere) with a record organised around the patient's problems.",
+        "It has **four components: the defined database, the complete problem list, the initial plans for each problem, and the progress notes**; the examiner expects these four in this order.",
+        "The **database** is the agreed minimum dataset - identification, presenting complaints, past and family history, drug and allergy list, immunisation, social and occupational history, examination and baseline investigations - collected once and updated, not repeated at every visit.",
+        "The **problem list is the index page of the record** and the single most useful page in family practice: each problem is numbered, dated at onset, and carried at the **highest level of certainty currently justified** - 'chest pain' becomes 'angina' becomes 'ischaemic heart disease' as evidence accrues, and problems are never erased but moved to an inactive column with a date of resolution.",
+        "A problem may legitimately be a **diagnosis, a symptom, a sign, an abnormal test result, a disability, or a social or psychological issue** such as unemployment, caregiver strain or domestic violence - which is exactly why the POMR suits family medicine.",
+        "**Initial plans are written under three headings for each problem - diagnostic, therapeutic and patient education**, and progress notes are written in SOAP format against the numbered problem, so that a reader can follow one problem through years of notes without reading every visit.",
+      ],
+    },
+    {
+      heading: "SOAP notes and coding the encounter",
+      points: [
+        "**S - Subjective:** the patient's own account, the symptoms, the duration and, in family practice, the **ideas, concerns and expectations** and the reason this visit is happening today rather than last week.",
+        "**O - Objective:** the measurable and observed - vital signs, weight, examination findings, point-of-care and laboratory results; a normal finding relevant to the differential should be recorded positively, because 'no neck stiffness' documented is worth more later than silence.",
+        "**A - Assessment:** the interpretation - the working diagnosis or the differential with the reasoning, the change since the last visit, the stage or control status of a chronic problem, and explicitly the **degree of diagnostic certainty**.",
+        "**P - Plan:** investigations, treatment with dose, route and duration, patient education given, **safety-netting instructions in the words used**, referral, and the review interval; many practices extend this to **SOAPE or SOAPIER** adding education, intervention, evaluation and revision.",
+        "**Coding turns notes into data.** ICD-10 (and now ICD-11, adopted by WHO in 2019 and in staged national implementation) codes diagnoses, but a large minority of primary care encounters never reach a diagnosis, so an ICD-only system silently discards them.",
+        "**ICPC-2 (International Classification of Primary Care, second edition, WONCA)** is biaxial: **17 chapters by body system coded with a letter, and 7 components common to every chapter coded 1-99** - complaints and symptoms, diagnostic and preventive procedures, medication and treatment, test results, administrative, referrals and follow-up, and diagnoses. It uniquely codes the **reason for encounter, the problem managed and the process of care** in a single episode structure, which is why it is the classification recommended for family practice.",
+        "In India the **Ayushman Bharat Digital Mission (ABDM, 2021)** with the ABHA number, the Health Facility and Healthcare Professional Registries and the **EHR Standards for India (2016, MoHFW)** - which specify SNOMED CT for clinical terms, LOINC for laboratory data and HL7 FHIR for exchange - are the framework any new practice software must follow.",
+      ],
+    },
+    {
+      heading: "The clinical audit cycle",
+      points: [
+        "**Clinical audit is a quality improvement process that seeks to improve patient care and outcomes through systematic review of care against explicit criteria and the implementation of change** (NICE, Principles for Best Practice in Clinical Audit, 2002) - this sentence is the definition mark.",
+        "The **five stages of the cycle**: 1. select a topic and set criteria and standards; 2. measure current performance against them; 3. compare and analyse the gap; 4. implement change; 5. **re-audit to close the loop** - an audit that stops at stage 3 is a survey, not an audit, and this is the commonest reason marks are lost.",
+        "Because each completed loop should reach a higher standard rather than return to the starting point, the process is drawn as an **audit spiral** rather than a closed circle.",
+        "A **criterion** is a measurable statement of what should happen ('every diabetic should have an HbA1c in the last 12 months'); a **standard** is the level of performance expected, expressed as a percentage with a timeframe ('90% within 12 months'), and standards may be set as **minimum, ideal or optimum**.",
+        "Criteria are classified by **Donabedian (1966) into structure, process and outcome**: structure (a working glucometer, a functioning cold chain), process (proportion of diabetics with a documented foot examination), and outcome (proportion with HbA1c below 7%). **Process criteria are preferred in audit** because they are under the practice's control, need smaller numbers and are less confounded than outcomes.",
+        "Topic selection should follow the **problem being high volume, high risk, high cost or known to be problematic**, and the audit must be feasible, with data that already exist or can be collected in a defined period; a **criterion-based audit** measures against explicit criteria while a **significant event analysis** examines a single case (a missed myocardial infarction, a drug error, a maternal death) in structured detail.",
+      ],
+    },
+    {
+      heading: "Doing an audit in a small practice, and quality indicators",
+      points: [
+        "A workable small-practice audit is deliberately narrow: one criterion, a defined population, a defined period and a sample of about **50-100 records**, taken consecutively or by systematic random sampling so the sample is not the memorable patients.",
+        "Write the audit up in a fixed structure - **title, reason for the audit, criteria and standards, method including the sample and the period, first-cycle results, discussion of the gap, changes agreed with names and dates, and second-cycle results** - which is also the structure the DNB thesis-style audit question expects.",
+        "Change must be **specific and owned**: a note on the wall changes nothing, whereas a template field that will not close without an HbA1c date, a monthly recall list printed by the receptionist, and a named person responsible do change behaviour.",
+        "**PDSA (Plan-Do-Study-Act) cycles** are the improvement engine within the audit: small, rapid, repeated tests of change on a few patients at a time, which is more effective in a small practice than one large annual effort.",
+        "**Quality indicators** are the routinely measured markers that keep the practice honest between audits - immunisation coverage of the under-fives on the list, proportion of hypertensives with BP under 140/90, antibiotic prescribing rate for upper respiratory infection, proportion of prescriptions by generic name, defaulter rate in the tuberculosis register, appointment waiting time and patient satisfaction.",
+        "**Audit is not research**: audit asks whether we are doing what we have already agreed is right and never requires the patient to be randomised or exposed to anything new, so it usually needs **service or institutional approval rather than an ethics committee review**, whereas research asks what the right thing to do is, requires a formal protocol, ethics committee approval and informed consent, and is intended to be generalised.",
+      ],
+    },
+    {
+      heading: "Practice management around the record",
+      points: [
+        "**Registration and the panel:** every practice should be able to state its denominator - the number of individuals and families registered - because coverage, recall and audit are all meaningless without it; in an Indian urban practice this is usually built from the family folder rather than from a formal list.",
+        "**Disease registers** (diabetes, hypertension, tuberculosis, pregnancy, the under-fives, the elderly, palliative care) are the practical output of coding and drive recall letters, phone reminders and the monthly defaulter list; the tuberculosis register must also be reconciled with **Nikshay notification**.",
+        "**Appointment and flow systems** matter clinically: a mixed system with booked slots plus a daily quota of same-day access preserves both continuity and first-contact care, and measuring the **third next available appointment** is a better access indicator than the mean waiting time.",
+        "**Drug and cold chain management** - a limited essential drug list based on the practice's own morbidity data, first-expiry-first-out stock rotation, temperature logs for vaccines and a documented biomedical waste segregation system under the **Bio-Medical Waste Management Rules 2016** - are examinable practice management items.",
+        "**Confidentiality and data protection:** records are the property of the practice but the **information belongs to the patient**; access is on a need-to-know basis, digital records need individual logins and audit trails, and the **Digital Personal Data Protection Act 2023** now applies to health data held by the practice.",
+        "**Team and training:** written job descriptions, a practice protocol folder, regular clinical meetings that include significant event analysis, and mandatory training in basic life support, injection safety and infection control turn a clinic into a practice.",
+      ],
+    },
+  ],
+  tables: [
+    {
+      heading: "The four components of the problem-oriented medical record",
+      columns: ["Component", "What it contains", "Family practice value"],
+      rows: [
+        ["Database", "Agreed minimum dataset: history, drugs, allergies, immunisation, social and occupational data, baseline examination", "Collected once, updated - avoids re-taking the same history every visit"],
+        ["Problem list", "Numbered, dated, active and inactive problems at the highest justified level of certainty", "The index page; makes a fifteen-year record readable in two minutes"],
+        ["Initial plans", "For each problem: diagnostic, therapeutic and patient education plans", "Forces explicit reasoning and records what the patient was told"],
+        ["Progress notes", "SOAP entries written against the numbered problem, plus flow sheets and a discharge or transfer note", "Allows one problem to be followed across years and across doctors"],
+      ],
+    },
+    {
+      heading: "Clinical audit compared with research",
+      columns: ["Feature", "Clinical audit", "Research"],
+      rows: [
+        ["Question asked", "Are we doing what we have agreed is right?", "What is the right thing to do?"],
+        ["Standard used", "Existing evidence-based criteria and standards", "Generates new knowledge; no pre-set standard"],
+        ["Design", "Measure, change, re-measure (the spiral)", "Protocol-driven; may randomise or allocate"],
+        ["Patient exposure", "No new intervention or randomisation", "Patients may receive a new or allocated intervention"],
+        ["Approval needed", "Service or institutional approval; ethics review usually not required", "Formal ethics committee approval and written informed consent"],
+        ["Generalisability", "Local; applies to the audited service", "Intended to be generalised and published"],
+        ["Who owns it", "The clinical team providing the care", "The investigator, often external to the service"],
+      ],
+    },
+    {
+      heading: "Donabedian criteria with worked examples from a diabetes audit",
+      columns: ["Type of criterion", "Example criterion", "Suggested standard"],
+      rows: [
+        ["Structure", "A calibrated glucometer with in-date strips is available in the clinic", "100% of clinic days"],
+        ["Process", "Every registered diabetic has an HbA1c recorded in the last 12 months", "90% within 12 months"],
+        ["Process", "Every registered diabetic has a documented annual foot examination", "80% within 12 months"],
+        ["Outcome", "Proportion of registered diabetics with HbA1c below 7%", "50% within 12 months"],
+        ["Outcome", "Proportion of diabetics with a new foot ulcer in the audit year", "Below 2% per year"],
+      ],
+    },
+  ],
+  redFlags: [
+    "A request for the medical record that comes from the police, a court, an insurer or an employer rather than from the patient - never hand over the original or a copy on your own; a summons or a written authorisation from the patient is required, and the original record is released only to a court, with a certified copy retained.",
+    "A record that names a person's HIV status, mental illness, termination of pregnancy or sexual assault - disclosure to a spouse, employer or family member without consent is a breach; under the HIV/AIDS (Prevention and Control) Act 2017 partner notification is permitted only after counselling and by a court order or the informed route the Act specifies, and it is never a routine clinic decision.",
+    "Any pressure - from a colleague, an employer or a family - to alter, backdate, overwrite or add to a note after the event; a genuine late entry is written as a dated and timed addendum with a reason, and tampering converts a defensible case into an indefensible one and is itself professional misconduct.",
+    "A significant event that caused or nearly caused harm - a maternal death, a missed myocardial infarction, an anaphylaxis after an injection, a wrong-drug or wrong-dose error, a missed tuberculosis diagnosis - must be escalated the same day, reported and analysed as a team with the senior clinician, never handled quietly by the individual involved.",
+    "A patient asking to see their own record who is a minor, lacks capacity, or is accompanied by a person who may be the source of harm - assess capacity, consider safeguarding under POCSO 2012 or the Protection of Women from Domestic Violence Act 2005, and involve a senior before any disclosure.",
+    "An audit or record review that begins to look like research - a new intervention, randomisation, an extra investigation, publication with identifiable data, or export of records to an external investigator - stop and take it to the institutional ethics committee before a single record is collected.",
+  ],
+  pearls: [
+    "The audit cycle has five stages and the mark is in the fifth: measure, compare, change, and re-audit to close the loop - an audit without a second cycle is a survey.",
+    "Weed's POMR has exactly four components - database, problem list, initial plans, progress notes - and the problem list is the page that makes the rest usable.",
+    "Prefer process criteria to outcome criteria in a small practice audit: they are under your control, need fewer patients and are less confounded.",
+    "A criterion is what should happen; a standard is the percentage of the time it should happen, with a timeframe. Examiners routinely ask candidates to differentiate the two.",
+    "ICPC-2 codes the reason for encounter, the problem managed and the process of care, so it captures the undifferentiated symptom that ICD-10 cannot; quote its biaxial structure of 17 chapters and 7 components.",
+    "NMC Regulation 1.3: indoor records in the standard proforma, retained three years, and released to the patient within 72 hours of a written request.",
+    "Audit needs institutional approval, not ethics approval; the moment patients are randomised or exposed to something new, it is research and needs the ethics committee.",
+  ],
+  theory: [
+    {
+      id: "fm-principles-records-audit-t1",
+      paper: "I",
+      kind: "long",
+      marks: 10,
+      minutes: 20,
+      frequency: "common",
+      question:
+        "Define clinical audit. Describe the stages of the audit cycle and, with a worked example from your practice, explain how you would audit the care of patients with type 2 diabetes. How does audit differ from research?",
+      openingLines: [
+        "Clinical audit is a quality improvement process that seeks to improve patient care and outcomes through the systematic review of care against explicit criteria and the implementation of change (NICE, 2002).",
+        "It is a cyclical activity - and because each completed loop should reach a higher standard than the last, it is better drawn as an audit spiral than as a closed circle.",
+      ],
+      answer: [
+        {
+          heading: "1. Definition and purpose",
+          points: [
+            "Quality improvement process reviewing care against explicit criteria, implementing change, and re-measuring to confirm improvement.",
+            "Purpose: to close the gap between the care that is given and the care that the available evidence says should be given.",
+            "It is a professional, local and continuous activity, owned by the clinical team that delivers the care.",
+          ],
+        },
+        {
+          heading: "2. Stages of the audit cycle",
+          points: [
+            "Stage 1 - select the topic (high volume, high risk, high cost or known problem) and set criteria and standards.",
+            "Stage 2 - measure current performance: define the population, the sample, the period and the data source.",
+            "Stage 3 - compare with the standard and analyse the reasons for the gap with the whole team.",
+            "Stage 4 - implement specific, owned change with a named person and a date.",
+            "Stage 5 - re-audit after an agreed interval to close the loop; without this the exercise is only a survey.",
+          ],
+        },
+        {
+          heading: "3. Criteria, standards and their classification",
+          points: [
+            "Criterion: a measurable statement of what should happen. Standard: the percentage of the time it should happen, with a timeframe.",
+            "Donabedian classification into structure, process and outcome criteria.",
+            "Process criteria are preferred in a small practice: controllable, less confounded, achievable with small numbers.",
+          ],
+        },
+        {
+          heading: "4. Worked example - audit of type 2 diabetes care",
+          points: [
+            "Population: all 150 patients on the practice diabetes register on 1 January.",
+            "Criterion: every registered diabetic should have an HbA1c recorded within the previous 12 months. Standard: 90%.",
+            "First cycle: 96 of 150 (64%) had a recorded HbA1c - a shortfall of 26 percentage points against the standard.",
+            "Reasons found: no recall system, cost of the test, no template prompt, and no ownership of the register.",
+            "Changes: a monthly recall list printed by the receptionist, a mandatory HbA1c date field in the consultation template, a negotiated laboratory rate, and a named nurse owning the register.",
+            "Second cycle at 6 months: 132 of 150 (88%), with the residual defaulters identified individually for home follow-up; the third cycle raises the standard to include HbA1c below 7%.",
+          ],
+        },
+        {
+          heading: "5. Audit compared with research",
+          points: [
+            "Audit asks whether we are doing what we have agreed is right; research asks what the right thing to do is.",
+            "Audit measures against existing standards; research generates new knowledge and has no pre-set standard.",
+            "Audit involves no new intervention and no randomisation; research may allocate patients to interventions.",
+            "Audit needs service or institutional approval; research needs ethics committee approval and written informed consent.",
+            "Audit is local; research is intended to be generalised.",
+          ],
+        },
+      ],
+      mustDraw: [
+        "The audit cycle as a five-stage circle, with an arrow showing it opening into a spiral at the re-audit.",
+        "A two-column table of audit versus research.",
+        "A small results table showing first cycle, standard and second cycle percentages.",
+      ],
+      markSplit: [
+        { part: "Definition of clinical audit", marks: 2 },
+        { part: "Stages of the cycle, including re-audit", marks: 3 },
+        { part: "Criteria, standards and Donabedian classification", marks: 2 },
+        { part: "Worked diabetes example with numbers", marks: 2 },
+        { part: "Audit versus research", marks: 1 },
+      ],
+      keywords: ["clinical audit", "audit cycle", "criteria and standards", "Donabedian", "re-audit"],
+    },
+    {
+      id: "fm-principles-records-audit-t2",
+      paper: "I",
+      kind: "short-note",
+      marks: 5,
+      minutes: 10,
+      frequency: "common",
+      question: "Short note: the problem-oriented medical record and SOAP notes in family practice.",
+      openingLines: [
+        "The problem-oriented medical record, described by Lawrence Weed in 1968, organises the record around the patient's problems rather than around the source of the information.",
+        "It has four components - the defined database, the complete problem list, the initial plans and the progress notes - and progress notes are written in SOAP format against the numbered problem.",
+      ],
+      answer: [
+        {
+          heading: "1. The four components",
+          points: [
+            "Database: agreed minimum dataset - history, drugs, allergies, immunisation, social and occupational data, baseline examination and investigations.",
+            "Problem list: numbered, dated, active and inactive, at the highest level of certainty currently justified; problems are never erased, only moved to inactive with a date.",
+            "Initial plans: written per problem under diagnostic, therapeutic and patient education headings.",
+            "Progress notes: SOAP entries linked to the problem number, with flow sheets for chronic disease parameters.",
+          ],
+        },
+        {
+          heading: "2. SOAP",
+          points: [
+            "Subjective: the patient's account, symptoms, duration, and ideas, concerns and expectations.",
+            "Objective: vital signs, examination findings, relevant negatives and results.",
+            "Assessment: working diagnosis or differential with reasoning, change since last visit, degree of certainty.",
+            "Plan: investigation, treatment with dose and duration, education, safety netting in the words used, referral and review interval.",
+            "Extensions: SOAPE and SOAPIER add education, intervention, evaluation and revision.",
+          ],
+        },
+        {
+          heading: "3. Value in family practice",
+          points: [
+            "A problem may be a diagnosis, a symptom, an abnormal result, a disability or a social problem - which suits undifferentiated primary care.",
+            "Makes continuity portable between doctors and across years, and generates the registers that drive recall and audit.",
+            "Family folder with a family page carrying the genogram, household composition and socio-economic classification.",
+            "Medico-legal value: NMC Regulation 1.3 requires records in a standard proforma, retained three years and released within 72 hours of a request.",
+          ],
+        },
+        {
+          heading: "4. Limitations",
+          points: [
+            "Time-consuming to set up; problem lists decay unless someone is responsible for pruning them.",
+            "Over-listing trivial problems makes the index page useless.",
+            "Needs coding (ICPC-2 or ICD-10) for the record to become analysable data.",
+          ],
+        },
+      ],
+      mustDraw: [
+        "A four-box diagram of the POMR components.",
+        "A sample problem list with numbers, dates of onset and active or inactive status.",
+        "A one-visit SOAP note written out in full.",
+      ],
+      markSplit: [
+        { part: "Four components of the POMR", marks: 2 },
+        { part: "SOAP expanded with content of each element", marks: 2 },
+        { part: "Value and limitations in family practice", marks: 1 },
+      ],
+      keywords: ["POMR", "Weed", "problem list", "SOAP", "family folder"],
+    },
+  ],
+  mcqs: [
+    {
+      id: "fm-principles-records-audit-q1",
+      stem: "An audit of the practice diabetes register found that 96 of 150 registered diabetics had an HbA1c recorded in the previous 12 months, against an agreed standard of 90%. What is the achieved performance and the correct next step?",
+      options: [
+        "64% achieved; the standard was unrealistic and should be lowered before proceeding",
+        "64% achieved; analyse the reasons for the gap, implement a specific change, and re-audit",
+        "72% achieved; the loop is closed and the audit is complete",
+        "64% achieved; the results should be submitted to the ethics committee before any change is made",
+      ],
+      answer: 1,
+      explanation:
+        "96 divided by 150 is 0.64, that is 64%, a shortfall of 26 percentage points against the 90% standard. The correct next step is stage 3 onwards of the audit cycle - analyse the gap, implement a specific and owned change, and re-audit to close the loop. Lowering the standard because it was not met defeats the purpose of the audit. 72% is arithmetically wrong. An audit of existing care against agreed criteria involves no new intervention and needs service or institutional approval, not ethics committee review.",
+      difficulty: "moderate",
+    },
+    {
+      id: "fm-principles-records-audit-q2",
+      stem: "Which of the following is NOT one of the four components of Weed's problem-oriented medical record?",
+      options: [
+        "The defined database",
+        "The complete problem list",
+        "The consent form",
+        "The progress notes",
+      ],
+      answer: 2,
+      explanation:
+        "Weed's POMR consists of the defined database, the complete problem list, the initial plans for each problem, and the progress notes written in SOAP format. The consent form is an essential medico-legal document but is not a structural component of the POMR. Candidates commonly omit the initial plans; remember that the plan for each problem is written under diagnostic, therapeutic and patient education headings.",
+      difficulty: "easy",
+    },
+    {
+      id: "fm-principles-records-audit-q3",
+      stem: "A practice audits the proportion of registered diabetics who have had a documented foot examination in the last year. In Donabedian's classification this criterion is:",
+      options: [
+        "A structure criterion",
+        "A process criterion",
+        "An outcome criterion",
+        "An impact criterion",
+      ],
+      answer: 1,
+      explanation:
+        "Donabedian classified quality criteria into structure (the resources available - staff, equipment, buildings), process (what is actually done to and for the patient) and outcome (the resulting change in health status). A documented foot examination is an act of care, hence a process criterion. Availability of a monofilament in the clinic would be structure, and the annual incidence of foot ulcers would be an outcome. Impact is a term from programme evaluation, not part of Donabedian's triad.",
+      difficulty: "easy",
+    },
+    {
+      id: "fm-principles-records-audit-q4",
+      stem: "Regarding ICPC-2, the classification recommended for primary care, which statement is correct?",
+      options: [
+        "It is a uniaxial list of diagnoses that replaces ICD-10 in hospitals",
+        "It is biaxial, with 17 body-system chapters and 7 components, and codes the reason for encounter, the problem managed and the process of care",
+        "It codes only confirmed diagnoses, and undifferentiated symptoms must be coded in ICD-10",
+        "It was developed by the World Bank for costing primary care services",
+      ],
+      answer: 1,
+      explanation:
+        "ICPC-2 is a WONCA classification with a biaxial structure: 17 chapters based on body systems, each coded with a letter, crossed with 7 components coded 1 to 99 - symptoms and complaints, diagnostic and preventive procedures, medication and treatment, test results, administrative, referrals and follow-up, and diagnoses. Its distinctive strength is coding the reason for encounter and the process of care within an episode, so undifferentiated symptoms are captured rather than discarded, which is precisely what a diagnosis-only system such as ICD-10 cannot do. It supplements rather than replaces ICD in hospital use, and it is a WONCA product, not a World Bank one.",
+      difficulty: "moderate",
+    },
+    {
+      id: "fm-principles-records-audit-q5",
+      stem: "Under the NMC (erstwhile MCI) Code of Ethics Regulations 2002, indoor patient records must be retained for at least how long, and supplied to the patient within what period of a request?",
+      options: [
+        "One year; within 7 days",
+        "Three years; within 72 hours",
+        "Five years; within 30 days",
+        "Ten years; within 48 hours",
+      ],
+      answer: 1,
+      explanation:
+        "Regulation 1.3 requires that records of indoor patients be maintained in the standard proforma for three years from the date of commencement of treatment, and that a copy be supplied to the patient or an authorised attendant within 72 hours of a request. The other options mix in retention periods used by hospitals for other purposes or by other jurisdictions. Note that medico-legal cases and records relevant to a pending claim should in practice be kept much longer, because limitation periods under consumer law may extend beyond three years.",
+      difficulty: "moderate",
+    },
+  ],
+  cards: [
+    {
+      id: "fm-principles-records-audit-c1",
+      front: "Define clinical audit in one sentence.",
+      back: "A quality improvement process that seeks to improve patient care and outcomes through the systematic review of care against explicit criteria and the implementation of change (NICE, 2002).",
+    },
+    {
+      id: "fm-principles-records-audit-c2",
+      front: "The five stages of the audit cycle.",
+      back: "1. Select topic, set criteria and standards. 2. Measure current performance. 3. Compare and analyse the gap. 4. Implement change. 5. Re-audit to close the loop - drawn as a spiral, not a circle.",
+    },
+    {
+      id: "fm-principles-records-audit-c3",
+      front: "Criterion versus standard.",
+      back: "A criterion is a measurable statement of what should happen; a standard is the level of performance expected, expressed as a percentage with a timeframe.",
+    },
+    {
+      id: "fm-principles-records-audit-c4",
+      front: "Donabedian's three types of quality criteria, with a diabetes example of each.",
+      back: "Structure - a calibrated glucometer available. Process - annual foot examination documented. Outcome - proportion with HbA1c below 7%. Process criteria are preferred in small-practice audit.",
+    },
+    {
+      id: "fm-principles-records-audit-c5",
+      front: "The four components of Weed's problem-oriented medical record.",
+      back: "Defined database; complete problem list; initial plans (diagnostic, therapeutic, patient education) for each problem; progress notes in SOAP format against the problem number.",
+    },
+    {
+      id: "fm-principles-records-audit-c6",
+      front: "Expand SOAP and SOAPIER.",
+      back: "Subjective, Objective, Assessment, Plan. SOAPIER adds Intervention, Evaluation and Revision; SOAPE adds Education.",
+    },
+    {
+      id: "fm-principles-records-audit-c7",
+      front: "Structure of ICPC-2.",
+      back: "Biaxial: 17 body-system chapters (letters) crossed with 7 components (1-99) - symptoms, diagnostic and preventive procedures, medication and treatment, test results, administrative, referral and follow-up, diagnoses. Codes reason for encounter, problem managed and process of care.",
+    },
+    {
+      id: "fm-principles-records-audit-c8",
+      front: "How does audit differ from research in terms of approval needed?",
+      back: "Audit measures existing care against agreed standards with no new intervention, so it needs service or institutional approval; research generates new knowledge, may allocate or randomise, and needs ethics committee approval with written informed consent.",
+    },
+    {
+      id: "fm-principles-records-audit-c9",
+      front: "NMC record-keeping rule to quote.",
+      back: "Regulation 1.3, Code of Ethics 2002: indoor records in the standard proforma, retained three years from commencement of treatment, copy supplied to the patient or authorised attendant within 72 hours of a request.",
+    },
+    {
+      id: "fm-principles-records-audit-c10",
+      front: "What is a significant event analysis?",
+      back: "A structured team review of a single important case - a missed myocardial infarction, a drug error, a maternal death, a near miss - covering what happened, why, what was learned and what will change; complementary to criterion-based audit.",
+    },
+  ],
+  references: [
+    "Weed LL. Medical records that guide and teach. New England Journal of Medicine 1968;278:593-600 and 652-657",
+    "NICE. Principles for Best Practice in Clinical Audit. Radcliffe Medical Press, 2002",
+    "Donabedian A. Evaluating the quality of medical care. Milbank Memorial Fund Quarterly 1966;44:166-206",
+    "WONCA International Classification Committee. ICPC-2: International Classification of Primary Care, 2nd edition, Oxford University Press, 1998 (ICPC-2-R revision 2005)",
+    "National Medical Commission (erstwhile MCI). Indian Medical Council (Professional Conduct, Etiquette and Ethics) Regulations, 2002 - clause 1.3 on maintenance of medical records",
+    "Ministry of Health and Family Welfare, Government of India. Electronic Health Record Standards for India, 2016",
+    "National Health Authority. Ayushman Bharat Digital Mission - ABHA and health data management policy, 2021",
+    "Rakel RE, Rakel DP. Textbook of Family Medicine, 9th edition, Elsevier, 2016 - chapter on practice management and information systems",
+    "Kumar R, Kumar Y (eds). Textbook of Family Medicine, AFPI / Jaypee, 2022 - records, audit and quality in family practice",
+  ],
+});
+
 const cases: ClinicalCase[] = [
   {
     id: "fm-principles-case-1",
