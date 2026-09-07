@@ -294,6 +294,51 @@ export async function addText(title: string, text: string, collection: string): 
   return strip(record);
 }
 
+/**
+ * Put the documents that ship with the app into the library, once.
+ *
+ * These are the learner's own source papers, carried word for word. They are
+ * inserted under fixed ids, so a second call is a no-op and a document the
+ * learner has renamed, moved or deleted is not resurrected or overwritten.
+ */
+export async function seedDocuments(
+  seeds: { id: string; title: string; fileName: string; note: string; text: string; originalPath: string }[],
+): Promise<void> {
+  const added: StudyDoc[] = [];
+  for (const seed of seeds) {
+    try {
+      const marker = `seeded:${seed.id}`;
+      // A tombstone remembers a seed the learner deleted, so it stays deleted.
+      if (localStorage.getItem(marker) === "done") continue;
+      const existing = await tx<DocRecord | undefined>("readonly", (store) => store.get(seed.id) as IDBRequest<DocRecord | undefined>);
+      if (!existing) {
+        const record: DocRecord = {
+          id: seed.id,
+          title: seed.title,
+          collection: "Question papers",
+          kind: "text",
+          fileName: seed.fileName,
+          mime: "text/plain",
+          bytes: new Blob([seed.text]).size,
+          addedAt: Date.now(),
+          text: seed.text,
+          extractNote: `${seed.note} The original file can be downloaded from ${seed.originalPath}.`,
+          blob: new Blob([seed.text], { type: "text/plain" }),
+        };
+        await tx("readwrite", (store) => store.put(record));
+        added.push(strip(record));
+      }
+      localStorage.setItem(marker, "done");
+    } catch {
+      // Storage unavailable: the app still works, the papers just are not seeded.
+    }
+  }
+  if (added.length) {
+    cache = [...added, ...cache].sort((a, b) => b.addedAt - a.addedAt);
+    emit();
+  }
+}
+
 export async function updateDoc(
   id: string,
   patch: Partial<Pick<StudyDoc, "title" | "collection" | "text">>,

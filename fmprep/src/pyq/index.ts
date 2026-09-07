@@ -1,51 +1,99 @@
 /**
  * The previous-year question bank.
  *
- * Two authored files, one per pair of papers, joined here with the indexes the
- * PYQ screen needs. Everything carries its provenance, because NBEMS does not
- * publish a complete public archive for this speciality and a good part of
- * what circulates is candidates' recall.
+ * Two sources, both the learner's own, imported verbatim by
+ * scripts/importPyq.mjs and never rewritten:
+ *
+ *   - the DNB Family Medicine papers as sat, June 2022 to June 2025;
+ *   - Dr Vishnu B S's topic-wise compilation, 2011 to 2022.
+ *
+ * This file only groups and counts them. The full text of both documents is
+ * carried through as well, so they can be read inside the app exactly as
+ * written, and the originals ship with the site for download.
  */
 import type { PaperId } from "../lib/types";
-import type { PastQuestion, PyqBank, RecurringTheme } from "../lib/pyqTypes";
-import { QUESTIONS_12, THEMES_12 } from "./papers12";
-import { QUESTIONS_34, THEMES_34 } from "./papers34";
+import { PAPER_QUESTIONS, type SourceQuestion } from "./papers.generated";
+import { TOPICWISE_QUESTIONS, type TopicwiseQuestion } from "./topicwise.generated";
 
-export const PYQ_BANK: PyqBank = {
-  sourceNote:
-    "Compiled from the NBEMS question-paper listings that are publicly reachable, from published DNB Family Medicine question compilations, and from candidates' recall posted after each sitting. Every question below says which of those it came from. A recalled question is a reliable guide to the theme and only an approximate guide to the exact words, so treat the wording as indicative. Your own question papers can be imported under My documents, where they are searched alongside these.",
-  questions: [...QUESTIONS_12, ...QUESTIONS_34],
-  themes: [...THEMES_12, ...THEMES_34],
-  references: [
-    { label: "NBEMS — official site and examination notices", url: "https://natboard.edu.in/" },
-  ],
+export type { SourceQuestion, TopicwiseQuestion };
+export { PAPER_QUESTIONS, TOPICWISE_QUESTIONS };
+// The full text of both source documents lives in ./sourceText.generated and is
+// imported only where it is needed, so it stays out of the first load.
+
+export const PYQ_SOURCE_NOTE =
+  "These are your own question papers, imported word for word: the sittings from June 2022 to June 2025, and Dr Vishnu B S's topic-wise compilation covering 2011 to 2022. Nothing has been reworded or summarised. Both source documents can be read in full inside the app and the originals can be downloaded.";
+
+export type Sitting = { session: string; year: number; papers: PaperId[]; count: number };
+
+/** The sittings in the paper set, newest first. */
+export function sittings(): Sitting[] {
+  const map = new Map<string, Sitting>();
+  for (const q of PAPER_QUESTIONS) {
+    const found = map.get(q.session);
+    if (found) {
+      found.count++;
+      if (!found.papers.includes(q.paper)) found.papers.push(q.paper);
+    } else {
+      map.set(q.session, { session: q.session, year: q.year, papers: [q.paper], count: 1 });
+    }
+  }
+  return [...map.values()]
+    .map((s) => ({ ...s, papers: s.papers.sort() }))
+    .sort((a, b) => b.year - a.year || b.session.localeCompare(a.session));
+}
+
+export function papersFor(session: string | "all", paper: PaperId | "all"): SourceQuestion[] {
+  return PAPER_QUESTIONS.filter(
+    (q) => (session === "all" || q.session === session) && (paper === "all" || q.paper === paper),
+  ).sort((a, b) => b.year - a.year || a.paper.localeCompare(b.paper) || a.number - b.number);
+}
+
+export type TopicGroup = {
+  topic: string;
+  questions: TopicwiseQuestion[];
+  /** Years it has been asked in, newest first. */
+  years: number[];
 };
 
-export function questionsByPaper(paper: PaperId | "all"): PastQuestion[] {
-  const list = paper === "all" ? PYQ_BANK.questions : PYQ_BANK.questions.filter((q) => q.paper === paper);
-  // Newest sitting first: a candidate revising works backwards from the last paper.
-  return [...list].sort((a, b) => b.year - a.year || a.paper.localeCompare(b.paper));
-}
-
-/** The sittings represented, newest first. */
-export function sessions(): { session: string; year: number; count: number }[] {
-  const map = new Map<string, { session: string; year: number; count: number }>();
-  for (const q of PYQ_BANK.questions) {
-    const found = map.get(q.session);
-    if (found) found.count++;
-    else map.set(q.session, { session: q.session, year: q.year, count: 1 });
+/** The topic-wise compilation, grouped as it groups itself, most-asked first. */
+export function topicGroups(): TopicGroup[] {
+  const map = new Map<string, TopicwiseQuestion[]>();
+  for (const q of TOPICWISE_QUESTIONS) {
+    const key = q.topicHeading || "Unfiled";
+    const list = map.get(key) ?? [];
+    list.push(q);
+    map.set(key, list);
   }
-  return [...map.values()].sort((a, b) => b.year - a.year || a.session.localeCompare(b.session));
+  return [...map.entries()]
+    .map(([topic, questions]) => ({
+      topic,
+      questions: [...questions].sort((a, b) => b.year - a.year),
+      years: [...new Set(questions.map((q) => q.year))].sort((a, b) => b - a),
+    }))
+    .sort((a, b) => b.questions.length - a.questions.length || a.topic.localeCompare(b.topic));
 }
 
-export function themesByPaper(paper: PaperId | "all"): RecurringTheme[] {
-  return paper === "all" ? PYQ_BANK.themes : PYQ_BANK.themes.filter((t) => t.paper === paper);
+/** Topics asked in three or more different years — the ones that keep coming back. */
+export function recurringTopics(minYears = 3): TopicGroup[] {
+  return topicGroups().filter((g) => g.years.length >= minYears);
 }
 
-export function pyqCounts(): { questions: number; themes: number; sessions: number } {
+export function pyqCounts(): {
+  paperQuestions: number;
+  sittings: number;
+  topicwiseQuestions: number;
+  topics: number;
+  years: number;
+} {
+  const years = new Set([
+    ...PAPER_QUESTIONS.map((q) => q.year),
+    ...TOPICWISE_QUESTIONS.map((q) => q.year),
+  ]);
   return {
-    questions: PYQ_BANK.questions.length,
-    themes: PYQ_BANK.themes.length,
-    sessions: sessions().length,
+    paperQuestions: PAPER_QUESTIONS.length,
+    sittings: sittings().length,
+    topicwiseQuestions: TOPICWISE_QUESTIONS.length,
+    topics: new Set(TOPICWISE_QUESTIONS.map((q) => q.topicHeading)).size,
+    years: years.size,
   };
 }

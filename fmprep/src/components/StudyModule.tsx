@@ -5,17 +5,16 @@
  * tab of the clinical app rather than in the browser's history. Every screen
  * is a plain component; this file only decides which one is showing.
  */
-import { useCallback, useEffect, useState } from "react";
+import { Suspense, lazy, useCallback, useEffect, useState } from "react";
 import { mcqIndex, subjectIdForTopic } from "../content/index";
 import ContentGate from "./ContentGate";
-import { load as loadDocs } from "../lib/docs";
+import { load as loadDocs, seedDocuments } from "../lib/docs";
 import type { SearchResult } from "../lib/search";
 import StudyHome from "./StudyHome";
 import LibraryScreen from "./LibraryScreen";
 import SubjectScreen from "./SubjectScreen";
 import TopicReader from "./TopicReader";
 import TheoryBank from "./TheoryBank";
-import PyqScreen from "./PyqScreen";
 import { CaseList, CaseReader } from "./CaseBank";
 import ExamPatternScreen from "./ExamPatternScreen";
 import PresentationScreen from "./PresentationScreen";
@@ -45,6 +44,10 @@ export type StudyView =
   | { name: "search"; query?: string }
   | { name: "progress" };
 
+// A thousand past questions and their text are worth their own chunk: the app
+// opens without them and fetches them the first time the bank is opened.
+const PyqScreen = lazy(() => import("./PyqScreen"));
+
 /** The subject a topic belongs to, or the whole library when it cannot be told. */
 function subjectsForTopic(topicId: string): string[] | "all" {
   const id = subjectIdForTopic(topicId);
@@ -56,9 +59,14 @@ export default function StudyModule() {
   const view = stack[stack.length - 1];
 
   // The document list is needed by search and by the home counts, so it is
-  // read once when the module first mounts rather than on each screen.
+  // read once when the module first mounts rather than on each screen. The
+  // source question papers that ship with the app are put in at the same time,
+  // from their own chunk so the first paint does not carry their text.
   useEffect(() => {
-    void loadDocs();
+    void loadDocs().then(async () => {
+      const { SOURCE_DOCUMENTS } = await import("../pyq/sourceText.generated");
+      await seedDocuments(SOURCE_DOCUMENTS);
+    });
   }, []);
 
   useEffect(() => {
@@ -137,7 +145,19 @@ export default function StudyModule() {
       // the library is pulled in behind it.
       return (
         <ContentGate need="all">
-          <PyqScreen onBack={back} onOpenTopic={(id) => go({ name: "topic", id })} />
+          <Suspense
+            fallback={
+              <p className="mx-auto max-w-3xl px-3 py-10 text-center text-sm text-slate-600">
+                Opening the question papers…
+              </p>
+            }
+          >
+            <PyqScreen
+              onBack={back}
+              onOpenTopic={(id) => go({ name: "topic", id })}
+              onOpenSources={() => go({ name: "docs" })}
+            />
+          </Suspense>
         </ContentGate>
       );
 
