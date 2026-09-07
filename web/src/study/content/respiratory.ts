@@ -3245,3 +3245,422 @@ topics.push({
   ],
 });
 
+
+const cases: ClinicalCase[] = [
+  {
+    id: "respiratory-case-1",
+    title: "Increasing breathlessness, cough and sputum for 4 days in a 58-year-old man with COPD - acute exacerbation of COPD in a biomass-and-tobacco-exposed patient",
+    kind: "long",
+    subjectId: "respiratory",
+    opening:
+      "A 58-year-old man, a farm labourer from a village 30 km from the district hospital, who has smoked 15 beedis a day for 35 years and cooked on a wood chulha in a one-room house through his childhood and youth, presents with breathlessness on walking a few steps, cough with increased and now yellowish sputum for 4 days, and wheezing that has not settled with the salbutamol inhaler he uses two or three times a day, without fever, chest pain, haemoptysis, swelling of the feet or drowsiness.",
+    minutes: 30,
+    frequency: "core",
+    sections: [
+      {
+        heading: "How to open the presentation",
+        points: [
+          "Give the identifying data, the exposures and the presenting complaint in one breath, because in COPD the exposure history is the diagnosis and the examiner wants to hear that you have quantified it before you say the word.",
+          "Say: 'Mr X, a 58-year-old farm labourer, a beedi smoker of 15 a day for 35 years with 30 years of biomass smoke exposure from a wood-burning chulha, and a known case of COPD for 4 years on an inhaled bronchodilator, presents with a 4-day history of worsening breathlessness, increased sputum volume and a change in sputum colour to yellow, on a background of breathlessness on exertion for 6 years.'",
+          "State the negatives immediately: no fever, no chest pain, no haemoptysis, no orthopnoea or paroxysmal nocturnal dyspnoea, no ankle swelling, no drowsiness, morning headache or confusion, and no weight loss or evening rise of temperature.",
+          "Mention what has happened since the onset: that he doubled his salbutamol inhaler, took a course of an unknown antibiotic from the village pharmacy for 2 days and came because he could no longer walk to the field, since the examiner is judging how this exacerbation was handled before you saw it.",
+          "Close the opening with the functional baseline: before this episode he could walk about 500 metres on the flat before stopping (mMRC grade 2), worked in the fields with rests, and had two similar episodes in the last year, one of which needed admission for 3 days.",
+        ],
+      },
+      {
+        heading: "History of the presenting illness and the chronic disease behind it",
+        points: [
+          "Define the exacerbation by the three cardinal symptoms of Anthonisen - increased breathlessness, increased sputum volume and increased sputum purulence - and say that all three are present, which makes this a type 1 exacerbation in which antibiotics are indicated.",
+          "Trace the chronic course backwards: a morning cough with mucoid sputum for 8 years dismissed as a smoker's cough, breathlessness on climbing the bund for 6 years, gradual progression so that he now walks slower than men of his age on the flat, and the diagnosis of COPD made 4 years ago at a taluk hospital on a spirometry he no longer has the report of.",
+          "Count the exacerbations in the last 12 months and grade each: two episodes, one treated with oral tablets at home (moderate) and one with a 3-day admission for nebulisation and injections (severe); this exacerbation history is what places him in GOLD group E.",
+          "Ask about the features that suggest a different or additional disease: no childhood asthma, no diurnal variation or nocturnal waking with wheeze, no atopy, no history of tuberculosis or its treatment, no haemoptysis, no pleuritic pain and no recent immobilisation to suggest pulmonary embolism as the cause of the acute worsening.",
+          "Ask about the complications of long-standing COPD: no ankle swelling or abdominal distension to suggest cor pulmonale, no morning headache or daytime somnolence to suggest hypercapnia, no loss of weight to suggest the cachexia of severe disease, and no falls or fractures on the oral steroids he has taken intermittently.",
+        ],
+      },
+      {
+        heading: "Exposure, treatment and inhaler history presented as a table",
+        points: [
+          "Quantify tobacco in pack-years even for beedis: 15 beedis a day for 35 years is about 26 pack-year equivalents if one beedi is taken as one cigarette, and say that beedi smoke delivers more tar and carbon monoxide per puff than a cigarette; ask about hookah, chewing tobacco and passive exposure at home.",
+          "Quantify biomass exposure in hour-years: cooking or sitting beside a wood chulha for about 4 hours a day for 30 years is 120 hour-years, well above the 60 hour-years at which the risk of COPD rises steeply; ask about the ventilation of the kitchen and whether the family still cooks on wood or has an LPG connection.",
+          "Add occupational exposure: 40 years of farming with exposure to grain dust, crop-residue burning every harvest and pesticide spraying without a mask; there is no history of work in a quarry, stone-cutting or a cotton mill.",
+          "Present the current treatment as a table with columns for drug, device, dose prescribed, dose actually taken and technique: salbutamol 100 mcg per puff pMDI, two puffs when breathless, taken 2-3 times a day; a formoterol-budesonide 6/200 mcg dry-powder inhaler prescribed a year ago but stopped after a month because of cost; deriphyllin tablets bought over the counter; prednisolone 10 mg for a few days at every episode from the village practitioner.",
+          "Ask about inhaler technique in the history and then demonstrate it in the examination: he does not shake the pMDI, actuates it after starting to breathe in, takes a rapid breath, does not hold his breath and has never used a spacer; whether he has had influenza or pneumococcal vaccination, and whether he has been screened for tuberculosis at any visit.",
+        ],
+      },
+      {
+        heading: "Past, personal, family and socio-economic history",
+        points: [
+          "Record the two admissions with their treatment, any oxygen given, any ICU stay or non-invasive ventilation, and whether an arterial blood gas or spirometry was done, because a previous admission with hypercapnia changes the oxygen target from the outset.",
+          "Ask about the comorbidities that travel with COPD and are usually untreated: hypertension, diabetes, ischaemic heart disease (any chest pain on exertion, any previous ECG), osteoporosis, anxiety and depression, and the weight loss and muscle wasting of the disease itself.",
+          "Alcohol as 100 mL of arrack most evenings, no drug allergy, no previous surgery, no history of tuberculosis in the family, and a father who died breathless in his sixties with a similar cough - which raises the possibility that the son grew up in the same chulha smoke.",
+          "Socio-economic history that decides the plan: daily-wage income that stops on the days he cannot work, a wife who also cooks on wood and coughs, a PMJAY card that has never been used, a PHC 8 km away with salbutamol but no inhalers, and a bus to the district hospital twice a day.",
+          "Ask what he believes about the illness and the inhaler: that the inhaler is habit-forming and to be used as little as possible, that tablets are stronger than puffs, and that the breathlessness is age - because each belief is an obstacle the counselling has to address by name.",
+        ],
+      },
+      {
+        heading: "General and respiratory examination to demonstrate",
+        points: [
+          "General survey: a thin man with a BMI of 18.5 kg/m2, sitting forward with his hands on his knees, speaking in phrases, respiratory rate 28 per minute with pursed-lip breathing and use of the sternocleidomastoids, pulse 104 per minute and regular, blood pressure 138/86 mmHg, afebrile, SpO2 88% on room air, no pallor, no cyanosis of the lips or tongue, no clubbing, no flapping tremor, no raised jugular venous pressure, no pedal oedema and no lymphadenopathy.",
+          "Inspection of the chest: barrel-shaped chest with an increased anteroposterior diameter, a wide subcostal angle, horizontal ribs, a tracheal tug and shortened cricosternal distance of less than 3 finger-breadths, indrawing of the lower intercostal spaces on inspiration (Hoover's sign), and symmetrical but reduced movement on both sides.",
+          "Palpation: trachea central, apex beat not palpable, chest expansion 2 cm at the level of the nipples, vocal fremitus equal and reduced on both sides, no tenderness; percussion: hyper-resonant note over both lung fields, obliteration of cardiac and liver dullness, and the liver edge palpable 3 cm below the costal margin because of a pushed-down diaphragm rather than hepatomegaly.",
+          "Auscultation: diminished vesicular breath sounds throughout with a prolonged expiratory phase, forced expiratory time more than 6 seconds, scattered polyphonic expiratory wheeze in both lung fields, a few coarse crackles at both bases that clear partly with coughing, and no bronchial breathing, no pleural rub and no signs of consolidation or effusion.",
+          "Cardiovascular system: heart sounds distant but normal, no loud P2 that can be heard, no parasternal heave, no tricuspid regurgitation murmur and no signs of right heart failure; abdomen soft with no ascites; and say that you have checked for the signs of hypercapnia - warm peripheries, bounding pulse, flapping tremor, drowsiness - and found none.",
+          "Demonstrate inhaler technique as part of the examination and comment on each error, and give a bedside estimate of severity: he can speak in phrases, is not confused, has a respiratory rate under 30 and a saturation of 88%, which makes this a moderate-to-severe exacerbation that needs hospital treatment but not, at present, ventilatory support.",
+        ],
+      },
+      {
+        heading: "Putting it together before the summary",
+        points: [
+          "State the chronic diagnosis and its basis: a man with 26 pack-years of beedi smoking and 120 hour-years of biomass exposure, a chronic productive cough and progressive exertional breathlessness, and signs of hyperinflation with airflow obstruction, has COPD; the previous spirometry, if it can be retrieved, or one repeated after recovery, is expected to show a post-bronchodilator FEV1/FVC below 0.70.",
+          "Place him in the GOLD framework: an mMRC of 2 and a CAT score you estimate at 18 put him in the more-symptomatic column, and two moderate exacerbations with one hospitalisation in the last year put him in group E, which mandates a LABA-LAMA combination as maintenance and consideration of an inhaled corticosteroid if the blood eosinophil count is 300 per microlitre or more.",
+          "Grade the current event: an exacerbation with all three Anthonisen criteria, a saturation of 88%, a respiratory rate of 28 and use of accessory muscles, with no confusion and no signs of hypercapnia - a severe exacerbation by the GOLD definition because it needs admission, and one in which the trigger is most probably a bacterial bronchitis.",
+          "Say what you have not excluded: pneumonia (needs a chest radiograph), pneumothorax in a hyperinflated chest (the same radiograph), pulmonary embolism (considered in every exacerbation without an obvious trigger), cardiac failure (an ECG and echocardiogram) and active tuberculosis (sputum for CBNAAT in a country of this prevalence).",
+          "Only then give the summary statement, so that the examiner hears a reasoned assessment rather than the label the patient walked in with.",
+        ],
+      },
+    ],
+    summaryStatement:
+      "This is a 58-year-old farm labourer, a beedi smoker of 26 pack-year equivalents with about 120 hour-years of biomass smoke exposure, with 8 years of chronic productive cough and 6 years of progressive exertional breathlessness at mMRC grade 2, a diagnosis of COPD made on spirometry 4 years ago, two exacerbations in the last year including one hospitalisation, poor inhaler technique and non-adherence to maintenance therapy, who presents with a 4-day history of increased breathlessness, sputum volume and sputum purulence, and on examination has a hyperinflated chest with diminished breath sounds, prolonged expiration and bilateral polyphonic wheeze, a respiratory rate of 28, an SpO2 of 88% on room air and no signs of hypercapnia, consolidation, pneumothorax or right heart failure - a picture of a severe acute exacerbation of COPD in a GOLD group E patient, most probably of bacterial origin, needing admission, controlled oxygen, bronchodilators, a short course of oral steroids and an antibiotic, followed by a rebuilt maintenance plan, inhaler education, smoking and chulha cessation and pulmonary rehabilitation.",
+    differential: [
+      {
+        diagnosis: "Acute exacerbation of COPD of infective origin",
+        forIt:
+          "A known COPD patient with a heavy smoking and biomass exposure history, all three Anthonisen criteria over 4 days, bilateral wheeze on a hyperinflated chest, and no focal signs, fever or pleuritic pain.",
+        againstIt:
+          "The diagnosis of an exacerbation is one of exclusion; pneumonia, pneumothorax, pulmonary embolism and left heart failure produce the same complaint in the same patient and must be looked for on the radiograph, ECG and, where indicated, a D-dimer or CT pulmonary angiogram.",
+      },
+      {
+        diagnosis: "Community-acquired pneumonia complicating COPD",
+        forIt:
+          "Purulent sputum, tachycardia, tachypnoea and bibasal crackles in a man whose chest signs are hard to interpret through hyperinflation; fever is often absent in the elderly and the malnourished.",
+        againstIt:
+          "No fever or rigors, no pleuritic pain, no bronchial breathing or increased vocal resonance in any zone, and crackles that clear with coughing; a chest radiograph without a new infiltrate settles it.",
+      },
+      {
+        diagnosis: "Post-tubercular obstructive airway disease or active pulmonary tuberculosis",
+        forIt:
+          "A thin, breathless man with chronic cough from a high-prevalence area, and biomass-exposed COPD and tuberculosis overlap heavily; tuberculosis can present as a change in sputum and breathlessness without fever.",
+        againstIt:
+          "No history of tuberculosis or its treatment, no haemoptysis, evening rise of temperature or night sweats, no weight loss over the last year, no upper-zone crackles or signs of fibrosis, and symmetrical signs of hyperinflation; sputum CBNAAT is still sent because the pre-test probability is never low enough to omit it.",
+      },
+    ],
+    investigations: [
+      {
+        test: "Chest radiograph, postero-anterior view",
+        why: "To exclude pneumonia, pneumothorax, effusion and a mass, and to show the hyperinflation and any bullae that make a pneumothorax likely; it is the one test that changes the diagnosis in an exacerbation.",
+        expected:
+          "Hyperinflated lungs with more than 10 posterior ribs visible, flattened hemidiaphragms, a narrow vertical heart and a large retrosternal air space, with prominent bronchovascular markings and no consolidation, pneumothorax, effusion or cavity.",
+      },
+      {
+        test: "Pulse oximetry now and an arterial blood gas on the presenting oxygen",
+        why: "Saturation alone cannot show hypercapnia or acidosis; the blood gas decides whether oxygen must be restricted, whether non-invasive ventilation is needed and whether the patient can be managed on the ward.",
+        expected:
+          "SpO2 88% on air; ABG on 2 L/min by nasal prongs showing pH 7.36, PaCO2 48 mmHg, PaO2 62 mmHg and bicarbonate 27 mmol/L - mild compensated hypercapnia without acidosis, so controlled oxygen and bronchodilators suffice and NIV is not yet indicated.",
+      },
+      {
+        test: "Complete blood count with differential, including the absolute eosinophil count",
+        why: "Leucocytosis supports infection; polycythaemia reflects chronic hypoxaemia; the blood eosinophil count decides whether an inhaled corticosteroid should be part of the maintenance regimen and predicts the response to systemic steroids.",
+        expected:
+          "Haemoglobin 15.8 g/dL with a haematocrit of 49%, total leucocyte count 12,400 per microlitre with 78% neutrophils, and an absolute eosinophil count of 180 per microlitre, below the threshold for adding an inhaled steroid on this basis.",
+      },
+      {
+        test: "Sputum for Gram stain and culture, and CBNAAT for Mycobacterium tuberculosis",
+        why: "Purulent sputum in a type 1 exacerbation identifies the organism in about half of cases and guides the antibiotic if the first fails; the CBNAAT is mandatory in this population because tuberculosis and COPD share the same patients and the same symptoms.",
+        expected:
+          "Gram stain showing many pus cells with Gram-negative coccobacilli, culture growing Haemophilus influenzae sensitive to amoxicillin-clavulanate; CBNAAT negative for M. tuberculosis.",
+      },
+      {
+        test: "ECG, and echocardiography once the acute phase settles",
+        why: "To detect the P pulmonale, right axis deviation and right ventricular hypertrophy of cor pulmonale, the atrial arrhythmias precipitated by hypoxia and bronchodilators, and the ischaemia that shares the same risk factors; the echocardiogram estimates pulmonary artery pressure and right ventricular function.",
+        expected:
+          "Sinus tachycardia at 104 per minute, P pulmonale in lead II, a rightward axis of +100 degrees and poor R-wave progression, with no ischaemic change; echocardiogram showing a mildly dilated right ventricle, an estimated pulmonary artery systolic pressure of 42 mmHg and normal left ventricular function.",
+      },
+      {
+        test: "Spirometry with post-bronchodilator values, 4-6 weeks after recovery",
+        why: "The diagnosis of COPD and its GOLD grade rest on a post-bronchodilator FEV1/FVC below 0.70, and spirometry during an exacerbation is neither safe nor interpretable; the reversibility test also screens for the asthma component.",
+        expected:
+          "Post-bronchodilator FEV1/FVC 0.56 with an FEV1 of 42% of predicted, an improvement of 8% and 120 mL after salbutamol - GOLD grade 3 (severe) airflow obstruction without significant reversibility.",
+      },
+    ],
+    management: [
+      {
+        heading: "Immediate treatment of the exacerbation in hospital",
+        points: [
+          "**Controlled oxygen** by nasal prongs at 1-2 L/min or a 24-28% Venturi mask, titrated to a target SpO2 of **88-92%**, with a repeat blood gas at 30-60 minutes; a saturation above 92% in a hypercapnic patient is a mistake, not a success.",
+          "**Salbutamol 2.5 mg with ipratropium 500 mcg** nebulised with air (not oxygen) every 20 minutes for three doses, then 4-6 hourly; the same drugs by pMDI through a spacer, 4-8 puffs each, are equally effective once the patient can coordinate.",
+          "**Prednisolone 40 mg orally once daily for 5 days**, no taper needed; use intravenous hydrocortisone 100 mg 6-hourly only if he cannot swallow, and monitor capillary glucose twice a day while on steroids.",
+          "**Amoxicillin-clavulanate 625 mg three times a day for 5-7 days** because all three cardinal symptoms are present; doxycycline 100 mg twice daily or azithromycin 500 mg once daily are the alternatives, and a respiratory fluoroquinolone is reserved for a previous Pseudomonas isolate or failure of the first line.",
+          "Reassess hourly for the first 4 hours: rising PaCO2 with a pH below 7.35 despite optimal medical therapy is the indication for **non-invasive ventilation**, and the district hospital's ability to provide it is the reason he was not managed at the PHC.",
+          "Subcutaneous enoxaparin 40 mg once daily for thromboprophylaxis while confined to bed, nebulised saline and chest physiotherapy for sputum clearance, no cough suppressants, no sedatives, and no methylxanthine loading dose in a man who has been taking deriphyllin of unknown dose.",
+        ],
+      },
+      {
+        heading: "Rebuilding the maintenance plan before discharge",
+        points: [
+          "Group E maintenance: a **LABA-LAMA fixed-dose combination** (for example, formoterol-glycopyrronium or indacaterol-glycopyrronium once daily by dry-powder inhaler, or the same drugs by pMDI with a spacer if his inspiratory flow is poor), chosen for the device he can actually use and the price he can actually pay.",
+          "Add an inhaled corticosteroid to make triple therapy only if the blood eosinophil count is 300 per microlitre or more, or if he has a second hospitalised exacerbation on LABA-LAMA; at 180 per microlitre it is not indicated now, and the budesonide-formoterol he abandoned should not simply be restarted.",
+          "**Salbutamol pMDI 100 mcg, 2 puffs through a spacer as needed** as the rescue inhaler, with the explicit instruction that using it more than twice a day is a signal to come in, not to use it more.",
+          "**Inhaler technique** taught, demonstrated back and corrected at the bedside, again at discharge and at every visit: shake, breathe out fully, seal the lips, actuate at the start of a slow deep breath, hold for 10 seconds, wait a minute between puffs, and rinse the mouth after any steroid; a spacer is given for the pMDI and its care explained.",
+          "Vaccination: **influenza vaccine every year** before the monsoon and a single dose of **pneumococcal vaccine** (PCV13 or PPSV23 as available), and COVID-19 vaccination per current national advice; a written action plan for the next exacerbation with a 5-day supply of prednisolone and amoxicillin-clavulanate kept at home.",
+        ],
+      },
+      {
+        heading: "Risk-factor removal, rehabilitation and the family",
+        points: [
+          "**Tobacco cessation** is the only intervention that slows the decline in FEV1: brief advice at every contact, a quit date, nicotine gum 2 mg or a patch from the tobacco cessation clinic, or bupropion or varenicline if affordable, with the wife enlisted and the beedi bundle handed over.",
+          "**Biomass exposure**: help the family obtain and refill an LPG connection under the Ujjwala scheme, and until then move the chulha outdoors or to a ventilated kitchen with a chimney; the wife's cough is assessed at the same visit because she has had the same exposure.",
+          "**Pulmonary rehabilitation** starting 2-4 weeks after discharge: supervised walking building to 30 minutes a day, upper-limb strengthening with a water bottle, pursed-lip and diaphragmatic breathing, energy conservation for field work, nutritional advice to reach a BMI above 21, and education, delivered through a hospital programme if one exists and through a home-based plan reviewed at each PHC visit if not.",
+          "Screen and treat the comorbidities: fasting glucose and lipids, an ECG, a bone-health assessment given intermittent oral steroids, a PHQ-2 for depression, and a formal swallow and nutrition review because a BMI of 18.5 is itself a predictor of death in COPD.",
+        ],
+      },
+      {
+        heading: "Follow-up, referral and long-term oxygen",
+        points: [
+          "Review at 2 weeks to check recovery and technique, at 6 weeks for spirometry, and then every 3 months, with the mMRC, CAT score, exacerbation count, weight, saturation and inhaler technique recorded at each visit and the PHC informed so that refills do not lapse.",
+          "Refer to a pulmonologist for: two or more exacerbations a year despite optimal inhaled therapy, an FEV1 below 30% of predicted, resting hypoxaemia or hypercapnia, suspected cor pulmonale, symptoms out of proportion to spirometry, onset under 40 years, or consideration of lung volume reduction or transplant.",
+          "Assess for **long-term oxygen therapy** at 6-8 weeks when stable: a resting PaO2 of 55 mmHg or less, or 56-59 mmHg with cor pulmonale or a haematocrit above 55%, is the indication for 15 or more hours a day; a concentrator can be obtained through the district hospital or a charitable source, and he must be told that oxygen and beedis do not share a room.",
+          "Discuss the trajectory honestly with the patient and his wife, agree who is the caregiver, and document a plan for the next crisis - including whether he would accept ventilation - well before the night on which someone has to decide.",
+        ],
+      },
+    ],
+    viva: [
+      {
+        q: "How is the diagnosis of COPD confirmed, and why do you not do spirometry today?",
+        a: "By a post-bronchodilator FEV1/FVC ratio below 0.70 in a patient with the right symptoms and exposures; spirometry during an exacerbation is unreliable, unsafe and can precipitate bronchospasm, so it is done 4-6 weeks after recovery.",
+      },
+      {
+        q: "What is the GOLD ABE grouping and where does this patient sit?",
+        a: "Group A is few symptoms (mMRC 0-1, CAT under 10) and no more than one moderate exacerbation; group B is more symptoms with the same low exacerbation risk; group E is anyone with two or more moderate exacerbations or one hospitalisation in the last year regardless of symptoms. This patient, with mMRC 2 and one hospitalisation, is group E and starts on LABA-LAMA.",
+      },
+      {
+        q: "Why is the oxygen target 88-92% and not 95%?",
+        a: "In chronic hypercapnia, high-flow oxygen worsens ventilation-perfusion matching, releases the Haldane effect and reduces the hypoxic drive, raising PaCO2 and causing acidosis and drowsiness; 88-92% relieves dangerous hypoxaemia without these effects, and the target is written on the chart at admission.",
+      },
+      {
+        q: "When would you start non-invasive ventilation in this patient?",
+        a: "If, despite controlled oxygen, bronchodilators and steroids, he has a respiratory acidosis with pH 7.35 or less and PaCO2 above 45 mmHg, or severe dyspnoea with fatigue and accessory-muscle use; NIV reduces intubation and mortality, and a falling conscious level, inability to protect the airway or failure to improve in 1-2 hours means intubation instead.",
+      },
+      {
+        q: "What does pulmonary rehabilitation include and what does it achieve?",
+        a: "A 6-8 week programme of supervised exercise training, breathing techniques, education, nutritional and psychological support and self-management training; it improves exercise capacity, breathlessness and quality of life and reduces readmission after an exacerbation, and it is the most effective non-drug treatment in COPD after stopping smoking.",
+      },
+      {
+        q: "How does biomass-exposed COPD differ from tobacco COPD?",
+        a: "It affects women and non-smokers more, has more airway disease and less emphysema on CT, a lower FEV1 decline but more chronic bronchitis and pulmonary hypertension, more overlap with post-tubercular lung disease, and it responds to the same bronchodilators; the treatment that matters most is removing the exposure with a clean cooking fuel.",
+      },
+    ],
+    pitfalls: [
+      "Giving 6-10 L/min of oxygen by face mask because the saturation is 88%, and then finding the patient drowsy an hour later with a PaCO2 of 80 mmHg.",
+      "Restarting the inhaled steroid combination that failed, without asking why it was stopped, without checking the eosinophil count and without teaching the device.",
+      "Presenting a smoker with wheeze as COPD without quantifying the beedis, the chulha years and the occupational dust, and without a single word about tuberculosis in a country where the two diseases share the same patients.",
+      "Sending him home on the fifth day with a prescription and no spacer, no action plan, no quit date, no LPG referral, no rehabilitation plan and no follow-up date - which is how he becomes the third admission of the year.",
+    ],
+    references: [
+      "Global Initiative for Chronic Obstructive Lung Disease (GOLD) - Global Strategy for the Diagnosis, Management and Prevention of COPD, 2025 report",
+      "National Tuberculosis Elimination Programme (NTEP) - Training Modules for Programme Managers and Medical Officers, 2020; India TB Report 2024, Central TB Division",
+      "Indian Chest Society and National College of Chest Physicians - Joint recommendations for the management of COPD in India, 2013 (with 2019 update)",
+      "Standard Treatment Guidelines, Ministry of Health and Family Welfare, Government of India - COPD, 2016",
+      "Harrison's Principles of Internal Medicine, 21st edition, 2022 - chronic obstructive pulmonary disease",
+    ],
+  },
+  {
+    id: "respiratory-case-2",
+    title: "Respiratory system short case - a 45-year-old man with fever, cough and dull note at the right base: consolidation versus effusion at the bedside",
+    kind: "short",
+    subjectId: "respiratory",
+    opening:
+      "A 45-year-old man, a lorry driver and smoker, presents with 5 days of high fever with rigors, cough with rusty sputum, right-sided chest pain worse on deep breathing and breathlessness on walking, and the examiner asks you to examine the respiratory system and present your findings.",
+    minutes: 15,
+    frequency: "core",
+    sections: [
+      {
+        heading: "How to approach the short case in the first minute",
+        points: [
+          "Introduce yourself, take consent, expose the chest fully to the waist, sit the patient at 45 degrees and then upright for the back, and ask for the temperature, the respiratory rate and the pulse oximeter reading before you touch the chest, because the short case is marked on method as much as on findings.",
+          "While the patient undresses, do the general survey aloud: a middle-aged man, febrile to touch, flushed, tachypnoeic at 28 per minute, splinting the right side of the chest and taking shallow breaths, with herpes labialis on the lower lip, no pallor, no central cyanosis, no clubbing, no lymphadenopathy and no pedal oedema.",
+          "Look at the hands and the neck in one pass: no nicotine staining, no clubbing, no flapping tremor, pulse 108 per minute regular, jugular venous pressure not raised, and the trachea checked with the finger in the suprasternal notch before the chest is inspected.",
+          "State your plan in one sentence so that the examiner can follow: 'I will inspect, palpate, percuss and auscultate the front and then the back, comparing the two sides at each level, and I will demonstrate the signs that differentiate consolidation from an effusion at the right base.'",
+        ],
+      },
+      {
+        heading: "Inspection and palpation - what you find and how you show it",
+        points: [
+          "Inspection: the chest is symmetrical in shape with no deformity, scars or dilated veins; movement is reduced over the lower right hemithorax on quiet and deep breathing, with the right lower ribs lagging behind the left; there is no intercostal fullness or bulging, and the respiratory movement is thoraco-abdominal with the abdomen participating normally.",
+          "Trachea: central by the finger method, with the cricosternal distance normal at 3-4 finger-breadths and no tracheal tug; apex beat palpable in the left fifth intercostal space just inside the mid-clavicular line - and say that a central trachea and undisplaced apex with signs at the right base argue against a large effusion, which would push both to the left.",
+          "Palpation: expansion measured with the hands at the level of the nipples and at the bases is 4 cm on the left and 2 cm on the right, with the right thumb moving less; there is localised tenderness over the right seventh to ninth ribs in the axillary line from pleurisy, and no crepitus or subcutaneous emphysema.",
+          "Vocal fremitus with the ulnar border of the hand, comparing the same point on each side from the apices to the bases: equal at the apices and mammary regions, and increased over the right infra-axillary and infra-scapular regions compared with the left - a finding that the candidate should say aloud is the first that separates consolidation from effusion, where fremitus is diminished or absent.",
+        ],
+      },
+      {
+        heading: "Percussion and auscultation - the signs that decide",
+        points: [
+          "Percussion, direct and comparative, from the clavicles down: resonant over both upper and middle zones, an impaired-to-dull note over the right infra-axillary and infra-scapular areas below the sixth rib in the axillary line and the eighth rib posteriorly, with the upper border of dullness horizontal and not rising into the axilla; the note is dull but not stony dull, and the left base is resonant.",
+          "Tidal percussion shows that the right dullness does not change with deep inspiration, and the liver dullness begins at the fifth intercostal space in the right mid-clavicular line, so the dullness above it is pulmonary; the cardiac dullness is normal and there is no shift of the mediastinal dullness.",
+          "Auscultation: breath sounds are vesicular with normal intensity over both upper zones and the left base; over the right infra-axillary and infra-scapular regions there is high-pitched tubular bronchial breathing with a pause between inspiration and expiration and the expiratory phase equal in length and louder, accompanied by end-inspiratory fine crackles that do not clear on coughing.",
+          "Vocal resonance is increased over the same area with bronchophony, whispering pectoriloquy is present (the whispered 'ninety-nine' is heard clearly through the stethoscope over the right base and not on the left), and there is a localised pleural rub in the right axilla in both phases of breathing that disappears when the breath is held; there is no aegophony because there is no fluid at the upper border.",
+          "Say what you have not found: no signs of a cavity (no amphoric breathing or post-tussive crackles), no wheeze, no signs of collapse (no shift of the trachea towards the lesion), no stony dullness, no absent breath sounds and no aegophony at an upper border - which is the negative evidence against an effusion.",
+        ],
+      },
+      {
+        heading: "Naming the diagnosis and demonstrating the differentiation",
+        points: [
+          "Only after the findings are presented, say: 'The findings of reduced movement, increased vocal fremitus, a dull but not stony-dull note, bronchial breathing, crackles, increased vocal resonance and whispering pectoriloquy at the right base with a central trachea are the signs of consolidation of the right lower lobe, and with 5 days of fever, rigors, rusty sputum and pleuritic pain, the clinical diagnosis is right lower lobe lobar pneumonia, most probably pneumococcal.'",
+          "Present the bedside differentiation of consolidation from a pleural effusion as a table that you can draw on the board if asked, with rows for mediastinal shift, movement, vocal fremitus, percussion note, breath sounds, added sounds, vocal resonance and the upper border.",
+          "Consolidation: trachea and apex central; movement reduced; fremitus increased; note dull; breath sounds bronchial; crackles present; vocal resonance increased with whispering pectoriloquy; no upper border sign. Effusion: trachea and apex shifted to the opposite side if large; movement reduced; fremitus diminished or absent; note stony dull; breath sounds diminished or absent; no crackles below the fluid; vocal resonance diminished, with aegophony and bronchial breathing only at the upper border of the fluid where the compressed lung lies; the upper border of dullness is higher in the axilla (Ellis S-shaped curve).",
+          "Add collapse as the third column because the examiner will ask: trachea and apex shifted to the same side, movement reduced, fremitus diminished, note dull, breath sounds diminished or absent (bronchial if the bronchus is patent), vocal resonance diminished, and often a flattened chest wall with crowded ribs.",
+          "Add the one practical rider: consolidation and effusion coexist in a parapneumonic effusion, so if the base is stony dull with diminished breath sounds below and bronchial breathing above, both are present and an ultrasound of the base with a diagnostic tap is the next step.",
+        ],
+      },
+      {
+        heading: "What the examiner expects you to say next",
+        points: [
+          "Say that you would complete the examination by examining the sputum pot, checking the pulse oximetry and the blood pressure, examining the cardiovascular system for a pericardial rub, the abdomen for a tender hepatomegaly and the legs for deep-vein thrombosis, and by assessing the CURB-65 score at the bedside.",
+          "Give the CURB-65 as you have it: no confusion, urea not yet available, respiratory rate 28 (under 30), blood pressure 118/76 mmHg, age under 65 - a score of 0 to 1 so far, which would allow outpatient treatment if the oxygen saturation is above 92% and he can take oral drugs, but a saturation of 91% on room air and the pleuritic pain make admission for observation reasonable.",
+          "State the two investigations that confirm the diagnosis and the two that must not be missed: a chest radiograph to show the lobar opacity with an air bronchogram and to detect an effusion, and a sputum Gram stain and culture; and, because this is India, a sputum CBNAAT for tuberculosis and an HIV test after counselling in any pneumonia that is severe, recurrent or slow to resolve.",
+          "Finish with the treatment in one line: amoxicillin 1 g three times a day, or amoxicillin-clavulanate 625 mg three times a day with a macrolide if atypical cover is needed, for 5-7 days, with antipyretics, fluids and a review at 48-72 hours and a repeat radiograph at 6 weeks in a smoker over 40 to be sure the shadow has cleared.",
+        ],
+      },
+    ],
+    summaryStatement:
+      "This is a 45-year-old male smoker with 5 days of high fever with rigors, cough with rusty sputum, right-sided pleuritic chest pain and exertional breathlessness, who on examination is febrile, tachypnoeic at 28 per minute with an SpO2 of 91% on room air and herpes labialis, and has reduced movement, increased vocal fremitus, a dull note, bronchial breathing with end-inspiratory crackles, increased vocal resonance, whispering pectoriloquy and a pleural rub over the right infra-axillary and infra-scapular regions with a central trachea and no stony dullness, aegophony or absent breath sounds - the signs of consolidation of the right lower lobe, giving a clinical diagnosis of right lower lobe community-acquired lobar pneumonia, most probably pneumococcal, with a CURB-65 of 0-1 pending the urea, and no clinical evidence of a significant parapneumonic effusion at present.",
+    differential: [
+      {
+        diagnosis: "Right lower lobe lobar pneumonia (consolidation), most probably pneumococcal",
+        forIt:
+          "An abrupt febrile illness with rigors, rusty sputum, pleuritic pain and herpes labialis, with the full set of consolidation signs - increased fremitus, dull note, bronchial breathing, crackles, increased vocal resonance and whispering pectoriloquy - and a central trachea.",
+        againstIt:
+          "The organism cannot be named at the bedside; Klebsiella, Staphylococcus, Legionella and even tuberculosis produce the same signs, and the radiograph and sputum studies are needed before the diagnosis is more than a probable one.",
+      },
+      {
+        diagnosis: "Right-sided pleural effusion - parapneumonic, tubercular or malignant",
+        forIt:
+          "Fever, pleuritic pain and dullness at a base in a smoker; a parapneumonic effusion accompanies up to 40% of pneumonias and a tubercular effusion is the commonest effusion in a young Indian adult.",
+        againstIt:
+          "The note is dull rather than stony dull, fremitus and vocal resonance are increased rather than reduced, breath sounds are bronchial and not absent, there is no aegophony at an upper border, the trachea is central and the dullness has a horizontal rather than a rising upper border; a small coexisting effusion is still possible and is excluded only by ultrasound.",
+      },
+      {
+        diagnosis: "Pulmonary tuberculosis with lower-lobe involvement, or a pneumonia behind an obstructing bronchial carcinoma",
+        forIt:
+          "A smoker of 45 in a high-prevalence country with cough and fever; lower-lobe tuberculosis is common in diabetics and the elderly, and post-obstructive pneumonia in a smoker is missed when the first course of antibiotics improves the fever.",
+        againstIt:
+          "A 5-day history with rigors and rusty sputum is acute, there is no weight loss, night sweats or haemoptysis, and no upper-zone signs or cavity; against a tumour, there is no monophonic wheeze, no clubbing, no signs of collapse and no lymphadenopathy - but the CBNAAT is sent and the 6-week radiograph is mandatory to exclude both.",
+      },
+    ],
+    investigations: [
+      {
+        test: "Chest radiograph, postero-anterior and right lateral views",
+        why: "To confirm the lobar consolidation and its lobe, to show an air bronchogram which proves the airway is patent, and to detect an effusion, cavity, mass or multilobar involvement that changes the severity and the differential.",
+        expected:
+          "A homogeneous opacity in the right lower zone silhouetting the right hemidiaphragm but not the right heart border, with an air bronchogram and no blunting of the costophrenic angle on the lateral view; no cavitation, hilar mass or contralateral shadow.",
+      },
+      {
+        test: "Bedside ultrasound of the right base",
+        why: "Ultrasound detects as little as 20 mL of pleural fluid, distinguishes fluid from consolidation when the note is dull, and guides a diagnostic tap if fluid is present; it settles the consolidation-versus-effusion question that the examiner has just asked.",
+        expected:
+          "A hepatised right lower lobe with sonographic air bronchograms and a normal diaphragm, with no more than a trace of anechoic fluid in the costophrenic recess - no effusion needing aspiration.",
+      },
+      {
+        test: "Sputum Gram stain, culture and sensitivity, and CBNAAT for M. tuberculosis",
+        why: "A good-quality sputum with more than 25 pus cells and fewer than 10 epithelial cells per low-power field and a single predominant organism identifies the pathogen and guides therapy; CBNAAT excludes tuberculosis in a setting where every lower-respiratory infection lasting more than a fortnight is presumptive TB.",
+        expected:
+          "Gram-positive lanceolate diplococci in pairs with many pus cells, culture growing Streptococcus pneumoniae sensitive to penicillin; CBNAAT negative for M. tuberculosis.",
+      },
+      {
+        test: "Complete blood count, blood urea, creatinine, random glucose and pulse oximetry, with an arterial blood gas if SpO2 is below 92%",
+        why: "Leucocytosis with a left shift supports bacterial pneumonia; urea completes the CURB-65; glucose screens for the diabetes that makes pneumonia and tuberculosis more likely; the gas decides the oxygen and the level of care.",
+        expected:
+          "Total leucocyte count 16,800 per microlitre with 85% neutrophils and toxic granulation, urea 32 mg/dL, creatinine 0.9 mg/dL, random glucose 132 mg/dL, SpO2 91% on room air rising to 96% on 2 L/min; CURB-65 remains 1.",
+      },
+      {
+        test: "Blood cultures taken before the first antibiotic dose, and HIV testing after counselling",
+        why: "Blood cultures are positive in 10-20% of pneumococcal pneumonia and define a bacteraemic pneumonia that needs a full course; HIV is tested in any adult with pneumonia in India because pneumococcal pneumonia is an early presentation of HIV infection.",
+        expected:
+          "One of two blood culture bottles growing S. pneumoniae at 24 hours; HIV serology non-reactive.",
+      },
+      {
+        test: "Repeat chest radiograph at 6 weeks",
+        why: "In a smoker over 40 the shadow must be shown to have cleared, because a carcinoma obstructing the bronchus presents as a pneumonia that improves clinically and does not resolve radiologically.",
+        expected:
+          "Complete clearing of the right lower zone opacity with a normal hilum and no residual collapse or mass.",
+      },
+    ],
+    management: [
+      {
+        heading: "Deciding the place of care and the antibiotic",
+        points: [
+          "CURB-65 of 1 with SpO2 91%: treat in hospital or under close observation for 24-48 hours with oxygen by nasal prongs to keep SpO2 above 94%, and step down to home care once the fever settles and he is eating and drinking; a CURB-65 of 0-1 with a normal saturation and reliable follow-up would be treated at home.",
+          "**Amoxicillin 1 g orally three times a day for 5 days** is the first-line drug for a non-severe community-acquired pneumonia; add **azithromycin 500 mg once daily for 3 days** if there are atypical features or the patient is not improving at 48 hours; **amoxicillin-clavulanate 1.2 g intravenously 8-hourly with a macrolide** for a CURB-65 of 2 or more, and a respiratory fluoroquinolone only if beta-lactams cannot be used.",
+          "Give the first dose within 4 hours of presentation and after the blood cultures, and switch from intravenous to oral once the patient is afebrile for 24 hours, haemodynamically stable and able to swallow; 5 days is enough if he is afebrile for 48 hours and has no more than one sign of clinical instability.",
+          "Paracetamol 650 mg 6-hourly for fever and pleuritic pain, oral fluids, no cough suppressants, early mobilisation, and thromboprophylaxis if confined to bed.",
+        ],
+      },
+      {
+        heading: "Review at 48-72 hours and what failure means",
+        points: [
+          "Expect the fever to settle in 48-72 hours and the crackles to persist for a week; bronchial breathing that remains after 10 days, or a fever that returns, means a complication - a parapneumonic effusion or empyema, a lung abscess, an obstructing lesion, a wrong organism or tuberculosis - and is an indication for a repeat radiograph and ultrasound, not a change of antibiotic.",
+          "A parapneumonic effusion is aspirated under ultrasound: a pH below 7.2, glucose below 60 mg/dL, pus or organisms on Gram stain mean a complicated effusion or empyema that needs an intercostal tube and referral, and the antibiotic is extended to 2-4 weeks.",
+          "Teach the patient and the family the signs that bring him back at once: breathlessness at rest, a saturation below 92% if a device is available, confusion, chest pain that worsens, coughing of blood, or a fever that persists beyond the third day of treatment.",
+        ],
+      },
+      {
+        heading: "Prevention and the long term",
+        points: [
+          "Smoking cessation advice at the bedside, with a quit date and pharmacotherapy offered, because smoking doubles the risk of pneumococcal pneumonia and is the reason for the 6-week radiograph.",
+          "Pneumococcal vaccination (PCV13 followed by PPSV23, or a single PCV as available) 8 weeks after recovery in a smoker, and annual influenza vaccination before the monsoon; screen for diabetes, alcohol dependence and HIV, all of which predispose to pneumonia and change its treatment.",
+          "Document the episode, the organism and the antibiotic in the patient's record, and if the CBNAAT had been positive, notify and register under NTEP through Ni-kshay and start the standard regimen the same day.",
+        ],
+      },
+    ],
+    viva: [
+      {
+        q: "Why is the vocal fremitus increased in consolidation but decreased in an effusion?",
+        a: "Consolidated lung is a solid medium continuous with a patent bronchus, and solid conducts the low-frequency vibrations of the voice better than air-filled lung; pleural fluid separates the lung from the chest wall and absorbs the vibrations, so they do not reach the palpating hand.",
+      },
+      {
+        q: "What is bronchial breathing and what are its types?",
+        a: "Breath sounds heard over the chest with the quality of those heard over the trachea - a pause between inspiration and expiration, and an expiratory phase as long as or longer than inspiration and louder; tubular (high-pitched, in consolidation), cavernous (low-pitched, hollow, over a cavity) and amphoric (metallic, over a large cavity or open pneumothorax).",
+      },
+      {
+        q: "What is aegophony and where do you hear it?",
+        a: "A nasal, bleating change in the quality of the spoken voice, in which 'ee' is heard as 'ay', heard at the upper border of a pleural effusion where the compressed lung lies just above the fluid; it can also be heard over consolidation.",
+      },
+      {
+        q: "What is the CURB-65 score and how does it change management?",
+        a: "One point each for Confusion, Urea above 42 mg/dL (7 mmol/L), Respiratory rate 30 or more, Blood pressure below 90 systolic or 60 diastolic, and age 65 or more; 0-1 can be treated at home, 2 needs hospital assessment or short-stay admission, and 3-5 is severe pneumonia needing admission and consideration of intensive care.",
+      },
+      {
+        q: "Which conditions cause bronchial breathing without consolidation?",
+        a: "Above the upper level of a pleural effusion, over a collapsed lobe with a patent bronchus, over a large cavity or a thin-walled bulla, over fibrosis of the lung adjacent to a large bronchus, and in a thin child or over the right upper lobe posteriorly where normal breath sounds can be bronchovesicular.",
+      },
+      {
+        q: "When is a cough of 2 weeks a presumptive case of tuberculosis, and what do you do?",
+        a: "Under NTEP any cough of 2 weeks or more, or of any duration with fever, weight loss, night sweats, haemoptysis or contact with TB, is a presumptive TB case; two sputum samples are sent for CBNAAT (or the upfront NAAT available), a chest radiograph is done, and a positive result is notified on Ni-kshay and treatment started the same day.",
+      },
+    ],
+    pitfalls: [
+      "Naming the diagnosis before the findings - 'this is a case of pneumonia' - and then fitting signs to it; the short case is marked on the order in which you found and reported the signs.",
+      "Calling a dull note stony dull, or missing that fremitus and vocal resonance are increased, and thereby presenting a consolidation as an effusion when the trachea is central and the breath sounds are bronchial.",
+      "Forgetting to compare the same point on both sides at every step, and percussing the back while the patient's arms are by his sides so that the scapulae hide the infra-scapular areas.",
+      "Not mentioning sputum for CBNAAT, the HIV test and the 6-week radiograph in a smoker of 45 - the three omissions that cost the most marks in an Indian examination hall.",
+    ],
+    references: [
+      "National Tuberculosis Elimination Programme (NTEP) - Training Modules for Programme Managers and Medical Officers, 2020; Guidelines for Programmatic Management of Tuberculosis, 2021",
+      "Global Initiative for Chronic Obstructive Lung Disease (GOLD) - Global Strategy for the Diagnosis, Management and Prevention of COPD, 2025 report",
+      "Hutchison's Clinical Methods, 24th edition, 2018 - the respiratory system",
+      "Macleod's Clinical Examination, 15th edition, 2023 - the respiratory system",
+      "Standard Treatment Guidelines, Ministry of Health and Family Welfare, Government of India - community-acquired pneumonia, 2016",
+    ],
+  },
+];
+
+const subject: Subject = {
+  id: "respiratory",
+  title: "Respiratory",
+  blurb: "Asthma, COPD, tuberculosis under NTEP, pneumonia, and the cough that has lasted a fortnight.",
+  icon: "Wind",
+  papers: ["II"],
+  topics,
+  cases,
+};
+
+export default subject;
