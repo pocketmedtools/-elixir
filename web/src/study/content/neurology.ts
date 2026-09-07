@@ -2926,6 +2926,431 @@ topics.push({
   ],
 });
 
+topics.push({
+  id: "neurology-bell-palsy",
+  title: "Bell palsy and the facial nerve",
+  oneLiner:
+    "An acute unilateral facial weakness is a lower motor neurone palsy - and therefore Bell palsy until proved otherwise - only when the forehead is involved and the eye cannot be closed on that side; forehead sparing means an upper motor neurone lesion and an acute stroke pathway, while vesicles, bilateral weakness, ear discharge, a parotid mass or a slowly progressive course all mean it is not Bell palsy.",
+  frequency: "common",
+  keywords: [
+    "Bell palsy",
+    "facial nerve",
+    "seventh cranial nerve",
+    "lower motor neurone facial palsy",
+    "House-Brackmann grading",
+    "Ramsay Hunt syndrome",
+    "herpes zoster oticus",
+    "prednisolone",
+    "valacyclovir",
+    "acyclovir",
+    "lagophthalmos",
+    "Bell phenomenon",
+    "exposure keratopathy",
+    "synkinesis",
+    "crocodile tears",
+    "chorda tympani",
+    "hyperacusis",
+    "stapedius",
+    "leprosy",
+    "parotid tumour",
+    "electroneuronography",
+  ],
+  sections: [
+    {
+      heading: "Anatomy that earns marks, and the first decision",
+      points: [
+        "The facial nerve leaves the pons, crosses the cerebellopontine angle with the eighth nerve, enters the internal acoustic meatus, turns at the geniculate ganglion, runs through the facial canal in the petrous temporal bone and exits at the **stylomastoid foramen** to divide within the parotid gland into temporal, zygomatic, buccal, marginal mandibular and cervical branches.",
+        "Four branches given off before the nerve leaves the skull localise the lesion: the **greater petrosal nerve** (lacrimation), the **nerve to stapedius** (hyperacusis), the **chorda tympani** (taste from the anterior two-thirds of the tongue and secretion from the submandibular and sublingual glands), and then the motor supply to all the muscles of facial expression.",
+        "**The single decision that must be made in the first minute is upper motor neurone versus lower motor neurone.** The forehead has bilateral cortical representation, so a supranuclear (upper motor neurone) lesion spares the frontalis - the patient can still wrinkle the brow and close the eye - whereas a nuclear or infranuclear (lower motor neurone) lesion paralyses the whole hemiface including the forehead.",
+        "Forehead sparing with a lower facial droop, especially with any arm drift, dysarthria or sensory change, is an **acute stroke until proved otherwise** and belongs in the stroke pathway with an immediate non-contrast CT head and thrombolysis assessment, not in a Bell palsy consultation.",
+        "In a true lower motor neurone palsy look for **lagophthalmos** (incomplete eye closure) and the **Bell phenomenon** - the eyeball rolling up and out on attempted closure, which is a normal protective reflex made visible by the palsy and is not itself a sign of disease.",
+        "Emotional and volitional facial movement travel by different pathways, so a patient with a cortical lesion may have an obvious droop on command but a symmetrical spontaneous smile; the reverse dissociation points to an extrapyramidal lesion.",
+      ],
+    },
+    {
+      heading: "Bell palsy: making the diagnosis",
+      points: [
+        "**Bell palsy is an acute, idiopathic, unilateral lower motor neurone facial palsy that reaches its maximum severity within 72 hours**, and it is a diagnosis of exclusion made clinically - there is no confirmatory test required in a typical case.",
+        "It accounts for **about 60-75% of all acute unilateral facial palsies**, with an annual incidence of 20-30 per 100,000, no sex predilection, and peaks in the third to fifth decades; risk is roughly threefold in pregnancy (especially the third trimester and the first week postpartum), diabetes and hypertension.",
+        "The prevailing mechanism is reactivation of latent **herpes simplex virus type 1** in the geniculate ganglion causing inflammatory oedema of the nerve within the unyielding bony facial canal, and therefore a compressive demyelinating or axonal injury.",
+        "The typical story is a patient who wakes with a drooping face, dribbling from the corner of the mouth, food collecting in the cheek, an eye that waters and will not close, and often a preceding day or two of **retroauricular or mastoid pain**, altered taste and hyperacusis - all of which are consistent with Bell palsy and do not indicate a sinister cause.",
+        "Examination must include the **whole ear and the palate** - otoscopy for vesicles and for a discharging or cholesteatomatous ear, the external canal and concha for zoster vesicles, the tympanic membrane, the parotid for a mass, the neck for nodes, and the other cranial nerves - and every case needs a documented **grading of severity** at the first visit.",
+        "**Grade the palsy with the House-Brackmann scale (I to VI) at every visit**; it is the outcome measure used in every trial, it dictates how urgently the eye needs protecting, and a documented baseline is what allows you to say at week 3 whether the patient is recovering.",
+      ],
+    },
+    {
+      heading: "The differential - what a facial palsy is when it is not Bell palsy",
+      points: [
+        "**Ramsay Hunt syndrome (herpes zoster oticus)** is varicella-zoster reactivation in the geniculate ganglion, presenting with severe deep ear pain, vesicles in the concha, external canal, on the pinna or on the anterior tongue and palate, often with vertigo and sensorineural hearing loss from eighth nerve involvement; it is more severe and recovers less completely than Bell palsy, so **always look inside the ear and at the palate before calling a palsy idiopathic**.",
+        "**Otological causes** are common in Indian practice - acute suppurative otitis media in children and chronic suppurative otitis media with cholesteatoma in adults erode the facial canal; a facial palsy with a discharging ear is an ENT emergency needing imaging and often surgery, never a course of prednisolone.",
+        "**Bilateral facial palsy is never Bell palsy** and demands admission and investigation: Guillain-Barre syndrome (look for areflexia and ascending weakness and check the single-breath count), Lyme disease, sarcoidosis (Heerfordt syndrome with uveitis and parotid swelling), HIV seroconversion, leukaemic or lymphomatous meningeal infiltration, and brainstem lesions.",
+        "**Leprosy** must be actively considered in India: it produces a painless, often slowly evolving facial weakness, classically of the **zygomatic branch with lagophthalmos**, alongside thickened nerves (great auricular, ulnar, common peroneal), anaesthetic hypopigmented patches and other mononeuropathies, and it is treated with multidrug therapy plus prednisolone for the reaction, not with a Bell palsy course.",
+        "**A slowly progressive facial weakness developing over weeks, or one that fails to improve at all by three months, is a tumour until imaged** - parotid malignancy, facial nerve schwannoma, cerebellopontine angle lesion, skull base or metastatic disease - so palpate the parotid and get contrast MRI of the brain, internal auditory meatus and parotid.",
+        "Other causes to enumerate are temporal bone trauma and facial injury, iatrogenic injury during parotid or mastoid surgery, diabetes mellitus, hypertension in children, Melkersson-Rosenthal syndrome (recurrent palsy, facial oedema and a fissured tongue), and rarely tuberculous otitis media.",
+      ],
+    },
+    {
+      heading: "Treatment: steroid, antiviral and the eye",
+      points: [
+        "**Oral corticosteroid started within 72 hours of onset is the only treatment with a clear, large benefit** - it raises the proportion recovering complete function from roughly 70% to about 85% and reduces synkinesis; the number needed to treat for complete recovery is about 10.",
+        "The two accepted regimens are **prednisolone 50 mg daily for 10 days**, or **prednisolone 60 mg daily for 5 days then tapered by 10 mg a day over the next 5 days**; either is given with food, and there is no advantage to a longer course.",
+        "**Antivirals alone are of no benefit and should never be given alone.** Adding an antiviral to steroid gives at best a small additional benefit and is reasonable in severe palsy (House-Brackmann IV to VI): **valacyclovir 1 g three times daily for 7 days**, or acyclovir 400 mg five times daily for 7 days.",
+        "**Ramsay Hunt syndrome is treated differently and more aggressively:** prednisolone 1 mg/kg/day for 5 days then tapered, plus **acyclovir 800 mg five times daily for 7 days** (or valacyclovir 1 g three times daily), started as early as possible because outcomes fall away sharply after 72 hours.",
+        "**Eye protection is the part of the treatment that prevents permanent harm** - the cornea is anaesthetic to the patient's awareness of drying, and exposure keratopathy can blind. Prescribe **carboxymethylcellulose 0.5% or hypromellose drops hourly while awake**, a lubricating ointment (liquid paraffin with white soft paraffin, or carbomer gel) at night, **taping the eyelid closed horizontally at night**, and protective glasses outdoors.",
+        "Steroids are still given in diabetes and in pregnancy - in diabetes with warning about hyperglycaemia and more frequent glucose monitoring or a short-term insulin adjustment, and in pregnancy after discussion, since prednisolone is extensively metabolised by the placenta. Facial physiotherapy with mirror biofeedback and gentle massage helps, but **electrical stimulation of the face should not be used** as it may worsen synkinesis.",
+      ],
+    },
+    {
+      heading: "Course, complications and when to refer",
+      points: [
+        "**About 85% of patients show the first sign of recovery within three weeks** and roughly 70% recover completely without any treatment; incomplete palsies do far better than complete ones, and recovery beginning after three weeks predicts a poorer final outcome.",
+        "Poor prognostic markers to record are complete paralysis (House-Brackmann VI), age over 60, diabetes, hypertension, severe pain, pregnancy, and no recovery by three weeks; **electroneuronography showing more than 90% degeneration within the first two weeks** identifies the small group considered for surgical decompression at specialist centres.",
+        "Sequelae of aberrant reinnervation are **synkinesis** (the eye narrows when the mouth moves, or the mouth twitches on blinking), **crocodile tears** (gustatory lacrimation from misdirected fibres to the lacrimal gland), hemifacial spasm and facial contracture; botulinum toxin to the overactive muscles is the treatment of choice for troublesome synkinesis and spasm.",
+        "**Refer the same day** for a discharging ear with palsy, a red or painful eye or any corneal staining, bilateral palsy, or associated other cranial nerve or long tract signs.",
+        "**Refer for MRI and specialist opinion** if there is no improvement whatsoever at three months, if the weakness is progressive beyond three weeks, if the palsy is recurrent on the same side, or if a parotid or neck mass is felt.",
+        "Document at every review the House-Brackmann grade, the state of the cornea and the eye closure, and whether the eye care is actually being done - the commonest avoidable harm in Bell palsy is a corneal ulcer in a patient whose face is recovering well.",
+      ],
+    },
+  ],
+  tables: [
+    {
+      heading: "Upper versus lower motor neurone facial palsy",
+      columns: ["Feature", "Upper motor neurone (supranuclear)", "Lower motor neurone (nuclear or infranuclear)"],
+      rows: [
+        ["Forehead and frontalis", "Spared - patient can wrinkle the brow", "Paralysed - no forehead wrinkling"],
+        ["Eye closure", "Preserved", "Incomplete (lagophthalmos), Bell phenomenon visible"],
+        ["Site of lesion", "Contralateral cortex, corona radiata, internal capsule, pons above the nucleus", "Facial nucleus, facial canal, stylomastoid foramen, parotid"],
+        ["Usual cause", "Stroke, tumour, demyelination", "Bell palsy, Ramsay Hunt, otitis media, trauma, parotid tumour, leprosy"],
+        ["Associated signs", "Hemiparesis, dysarthria, dysphagia, sparing of emotional smile", "Hyperacusis, loss of taste, reduced lacrimation, ear vesicles or discharge"],
+        ["Action", "Acute stroke pathway, immediate non-contrast CT head", "Clinical diagnosis, steroid within 72 hours, eye care"],
+      ],
+    },
+    {
+      heading: "House-Brackmann facial nerve grading",
+      columns: ["Grade", "Description", "Eye closure"],
+      rows: [
+        ["I - Normal", "Normal facial function in all areas", "Complete"],
+        ["II - Mild dysfunction", "Slight weakness noticeable only on close inspection, slight synkinesis", "Complete with minimum effort"],
+        ["III - Moderate dysfunction", "Obvious but not disfiguring difference, noticeable synkinesis or contracture", "Complete with effort"],
+        ["IV - Moderately severe", "Obvious weakness and disfiguring asymmetry, no forehead movement", "Incomplete"],
+        ["V - Severe dysfunction", "Barely perceptible motion, asymmetry at rest", "Incomplete"],
+        ["VI - Total paralysis", "No movement at all", "None"],
+      ],
+    },
+    {
+      heading: "Drug regimens in acute facial palsy",
+      columns: ["Situation", "Regimen", "Notes"],
+      rows: [
+        ["Bell palsy, any severity, within 72 hours", "Prednisolone 50 mg daily for 10 days, OR 60 mg daily for 5 days then taper 10 mg/day over 5 days", "The single intervention with clear benefit; give with food"],
+        ["Bell palsy, severe (House-Brackmann IV-VI)", "Add valacyclovir 1 g three times daily for 7 days, or acyclovir 400 mg five times daily for 7 days", "Small added benefit; never give an antiviral alone"],
+        ["Ramsay Hunt syndrome", "Prednisolone 1 mg/kg/day for 5 days then taper, PLUS acyclovir 800 mg five times daily for 7 days", "Start within 72 hours; audiometry and vestibular assessment"],
+        ["Eye care in all cases with lagophthalmos", "Carboxymethylcellulose 0.5% drops hourly while awake, paraffin or carbomer ointment at night, horizontal eyelid taping, protective glasses", "Prevents exposure keratopathy - the only blinding complication"],
+        ["Diabetes with Bell palsy", "Same steroid course, with intensified glucose monitoring and temporary insulin or dose adjustment", "Do not withhold the steroid; warn about hyperglycaemia"],
+        ["Pregnancy with Bell palsy", "Prednisolone at the standard dose after discussion", "Prednisolone is largely inactivated by placental 11-beta-hydroxysteroid dehydrogenase"],
+        ["Troublesome synkinesis or hemifacial spasm after recovery", "Botulinum toxin type A to the overactive muscles, repeated 3-4 monthly", "With mirror biofeedback physiotherapy; avoid facial electrical stimulation"],
+      ],
+    },
+  ],
+  redFlags: [
+    "Forehead sparing with a lower facial droop - this is an upper motor neurone palsy and an acute stroke until proved otherwise; activate the stroke pathway immediately.",
+    "Bilateral facial weakness - never Bell palsy; admit and investigate for Guillain-Barre syndrome, sarcoidosis, Lyme disease, HIV and meningeal infiltration, and check the single-breath count and vital capacity.",
+    "Vesicles in the ear canal, concha, pinna or on the palate with severe otalgia, vertigo or hearing loss - Ramsay Hunt syndrome needs high-dose steroid plus acyclovir 800 mg five times daily started the same day.",
+    "Facial palsy with a discharging ear, mastoid tenderness or a cholesteatoma - an ENT emergency requiring imaging and surgical drainage, not oral steroids.",
+    "A red, painful or hazy eye, or fluorescein staining of the cornea, in a patient with lagophthalmos - exposure keratopathy or corneal ulcer; same-day ophthalmology referral.",
+    "Facial weakness that is slowly progressive over weeks, recurrent on the same side, or accompanied by a parotid or neck mass or other cranial nerve palsies - image for tumour with contrast MRI of the brain, internal auditory meatus and parotid.",
+    "No recovery whatsoever at three months - the diagnosis of Bell palsy is wrong until imaging says otherwise.",
+  ],
+  pearls: [
+    "Forehead involved means lower motor neurone and Bell palsy is possible; forehead spared means upper motor neurone and the patient goes to the stroke pathway - this one line answers most examination questions on facial palsy.",
+    "Steroid within 72 hours is the whole of the evidence-based drug treatment; antivirals alone do nothing, and adding one only makes sense in a severe palsy or in Ramsay Hunt.",
+    "Always look inside the ear and at the palate before calling a facial palsy idiopathic - the vesicles of Ramsay Hunt change both the drug and the prognosis.",
+    "Bilateral facial palsy is a neurological emergency, not a double Bell palsy; think Guillain-Barre syndrome first and measure the respiratory reserve.",
+    "The eye, not the face, is what can be permanently damaged - lubricants hourly, ointment and taping at night, and review the cornea at every visit.",
+    "Retroauricular pain, altered taste and hyperacusis are expected in Bell palsy and are reassuring, not red flags; they simply localise the lesion above the chorda tympani and the stapedial branch.",
+    "In India, add leprosy and chronic suppurative otitis media to the differential of every facial palsy - the first is painless and slow with thickened nerves, the second has a wet ear.",
+    "House-Brackmann grade at every visit; a documented baseline is the only way to prove at three weeks whether recovery has started.",
+    "Do not use electrical stimulation of the facial muscles - it is popular and it aggravates synkinesis; use mirror biofeedback exercises instead.",
+  ],
+  theory: [
+    {
+      id: "neurology-bell-palsy-t1",
+      paper: "II",
+      kind: "long",
+      marks: 10,
+      minutes: 20,
+      frequency: "common",
+      question:
+        "A 34-year-old woman presents with sudden onset right-sided facial weakness of one day's duration. Discuss the clinical approach, differential diagnosis and management of lower motor neurone facial palsy.",
+      openingLines: [
+        "Bell palsy is an acute, idiopathic, unilateral lower motor neurone facial (seventh cranial nerve) palsy that reaches maximum severity within 72 hours, accounting for 60-75% of all acute facial palsies, and is a diagnosis of exclusion made on clinical grounds.",
+        "The first and most important step is to separate an upper motor neurone palsy, in which the forehead is spared and which represents a stroke until proved otherwise, from a lower motor neurone palsy in which the whole hemiface including the frontalis is paralysed.",
+      ],
+      answer: [
+        {
+          heading: "Applied anatomy and localisation",
+          points: [
+            "The facial nerve arises from the pons, traverses the cerebellopontine angle and internal acoustic meatus, turns at the geniculate ganglion, runs in the facial canal and exits at the stylomastoid foramen to branch within the parotid.",
+            "Branches given off in the canal localise the lesion: greater petrosal nerve (lacrimation), nerve to stapedius (hyperacusis), chorda tympani (taste from the anterior two-thirds of the tongue, submandibular and sublingual secretion).",
+            "Loss of lacrimation places the lesion at or above the geniculate ganglion; hyperacusis places it above the stapedial branch; loss of taste places it above the chorda tympani; pure motor weakness places it at or below the stylomastoid foramen.",
+            "Upper motor neurone lesions spare the forehead because frontalis has bilateral cortical representation; lower motor neurone lesions paralyse the entire hemiface.",
+            "Lagophthalmos with a visible Bell phenomenon confirms a lower motor neurone lesion at the bedside.",
+          ],
+        },
+        {
+          heading: "Clinical assessment",
+          points: [
+            "History: speed of onset and time to maximum weakness, retroauricular pain, altered taste, hyperacusis, watering eye, dribbling, ear discharge, hearing loss, vertigo, rash, trauma, recent surgery, diabetes, hypertension, pregnancy and previous episodes.",
+            "Examination: test all facial muscle groups - wrinkle the forehead, close the eyes against resistance, screw up the nose, blow out the cheeks, show the teeth, purse the lips and tense the platysma.",
+            "Examine the ear canal, tympanic membrane, palate and tongue for zoster vesicles, otitis media or cholesteatoma; palpate the parotid and the neck.",
+            "Examine all other cranial nerves, the limbs for long tract signs, the peripheral nerves for thickening (leprosy) and the skin for anaesthetic patches.",
+            "Grade the palsy on the House-Brackmann scale from I (normal) to VI (total paralysis) and record it; assess corneal integrity and the completeness of eye closure.",
+          ],
+        },
+        {
+          heading: "Differential diagnosis",
+          points: [
+            "Ramsay Hunt syndrome - herpes zoster oticus with ear vesicles, severe otalgia, vertigo and sensorineural hearing loss.",
+            "Otological - acute suppurative otitis media, chronic suppurative otitis media with cholesteatoma, tuberculous otitis media, temporal bone fracture.",
+            "Neoplastic - parotid malignancy, facial nerve schwannoma, cerebellopontine angle tumour, skull base or metastatic disease; suggested by a progressive course or a mass.",
+            "Systemic and infective - diabetes mellitus, leprosy, HIV, Lyme disease, sarcoidosis (Heerfordt syndrome), Guillain-Barre syndrome and Melkersson-Rosenthal syndrome; bilateral palsy is never Bell palsy.",
+            "Central - pontine infarct or tumour involving the facial nucleus, which gives a lower motor neurone facial palsy with a contralateral hemiparesis (Millard-Gubler syndrome).",
+          ],
+        },
+        {
+          heading: "Investigations",
+          points: [
+            "No investigation is required in a typical Bell palsy; it is a clinical diagnosis.",
+            "Blood glucose and HbA1c, blood pressure, and HIV serology where indicated by risk.",
+            "Contrast MRI of the brain, internal auditory meatus and parotid if the course is progressive, recurrent, bilateral, associated with other cranial nerve palsies, or shows no recovery at three months.",
+            "High resolution CT of the temporal bone for suspected cholesteatoma, trauma or a bony lesion.",
+            "Electroneuronography and electromyography between days 3 and 14 in complete palsy, to quantify degeneration and identify the small group considered for surgical decompression.",
+            "Cerebrospinal fluid examination and nerve conduction studies if Guillain-Barre syndrome is suspected, and slit-skin smear for leprosy.",
+          ],
+        },
+        {
+          heading: "Management",
+          points: [
+            "Prednisolone 50 mg daily for 10 days, or 60 mg daily for 5 days then tapered over 5 days, started within 72 hours of onset - this raises complete recovery from about 70% to about 85%.",
+            "Add valacyclovir 1 g three times daily for 7 days (or acyclovir 400 mg five times daily) in severe palsy; never give an antiviral alone.",
+            "Ramsay Hunt syndrome: prednisolone 1 mg/kg/day plus acyclovir 800 mg five times daily for 7 days, started as early as possible.",
+            "Eye care in every patient with incomplete closure - carboxymethylcellulose 0.5% drops hourly while awake, lubricating ointment and horizontal eyelid taping at night, and protective glasses.",
+            "Facial physiotherapy with mirror biofeedback and gentle massage; avoid electrical stimulation, which aggravates synkinesis.",
+            "Explain the natural history, reassure that most recover, and review at 1 week, 3 weeks and 3 months; refer if there is no improvement at three months, progression, recurrence, a mass, bilateral involvement or any corneal problem.",
+            "Late sequelae - synkinesis, crocodile tears, hemifacial spasm and contracture - are managed with botulinum toxin type A and physiotherapy; long-standing paralysis may need a tarsorrhaphy, gold weight implant or facial reanimation surgery.",
+          ],
+        },
+      ],
+      mustDraw: [
+        "A labelled diagram of the facial nerve from the pons to the stylomastoid foramen showing the greater petrosal nerve, nerve to stapedius and chorda tympani, with the localising sign for each.",
+        "A two-column table contrasting upper and lower motor neurone facial palsy.",
+        "The House-Brackmann grades I to VI in a table.",
+      ],
+      markSplit: [
+        { part: "Applied anatomy and upper versus lower motor neurone localisation", marks: 2 },
+        { part: "Clinical assessment and House-Brackmann grading", marks: 2 },
+        { part: "Differential diagnosis", marks: 2 },
+        { part: "Investigations and their indications", marks: 1 },
+        { part: "Steroid and antiviral regimens with doses", marks: 2 },
+        { part: "Eye care, physiotherapy, follow-up and sequelae", marks: 1 },
+      ],
+      keywords: ["Bell palsy", "facial nerve", "House-Brackmann", "prednisolone", "lagophthalmos", "Ramsay Hunt"],
+    },
+    {
+      id: "neurology-bell-palsy-t2",
+      paper: "II",
+      kind: "short-note",
+      marks: 5,
+      minutes: 10,
+      frequency: "less-common",
+      question: "Write a short note on Ramsay Hunt syndrome.",
+      openingLines: [
+        "Ramsay Hunt syndrome, or herpes zoster oticus, is reactivation of latent varicella-zoster virus in the geniculate ganglion producing a lower motor neurone facial palsy with a painful vesicular eruption in the distribution of the sensory branches of the facial nerve.",
+        "It is the second commonest cause of atraumatic facial palsy after Bell palsy, accounts for about 7-12% of cases, and is both more severe and less completely reversible, which makes early recognition and early treatment the whole point of the diagnosis.",
+      ],
+      answer: [
+        {
+          heading: "Clinical features",
+          points: [
+            "A prodrome of severe, deep, boring pain in and behind the ear, often preceding the rash and the weakness by one to three days.",
+            "Vesicles in the concha, external auditory canal, on the pinna, or on the anterior two-thirds of the tongue and soft palate; the rash may be scanty and is missed unless the ear and mouth are examined.",
+            "A lower motor neurone facial palsy that is typically complete, with lagophthalmos and loss of forehead movement.",
+            "Eighth nerve involvement in up to half of cases - sensorineural hearing loss, tinnitus and vertigo, because the vestibulocochlear nerve shares the internal acoustic meatus.",
+            "Zoster sine herpete describes the same syndrome without a visible rash, diagnosed by varicella-zoster serology or cerebrospinal fluid PCR, and it should be considered in any severe or atypical facial palsy.",
+          ],
+        },
+        {
+          heading: "Management",
+          points: [
+            "Prednisolone 1 mg/kg/day for 5 days followed by a taper, started as early as possible.",
+            "Acyclovir 800 mg five times daily for 7 days, or valacyclovir 1 g three times daily for 7 days, or famciclovir 500 mg three times daily - the antiviral is essential here, unlike in Bell palsy.",
+            "Both drugs should be started within 72 hours; benefit falls sharply with delay.",
+            "Analgesia for a pain that is often severe - paracetamol with a weak opioid initially, and amitriptyline 10-25 mg at night, gabapentin or pregabalin for the neuropathic component and for post-herpetic neuralgia.",
+            "Eye care with hourly lubricants, night-time ointment and taping; audiometry and vestibular assessment; ENT and ophthalmology referral.",
+            "Isolate from pregnant women, neonates and the immunosuppressed until the vesicles have crusted, since the vesicle fluid transmits varicella.",
+          ],
+        },
+        {
+          heading: "Prognosis",
+          points: [
+            "Complete recovery occurs in only about 50-60% even with treatment, compared with 85% in treated Bell palsy.",
+            "Poor prognostic factors are complete paralysis at presentation, age over 50, diabetes, hearing loss and delay in starting treatment.",
+            "Post-herpetic neuralgia, permanent hearing loss, vestibular dysfunction and synkinesis are recognised long-term sequelae.",
+          ],
+        },
+      ],
+      mustDraw: [
+        "A table comparing Bell palsy and Ramsay Hunt syndrome by rash, pain, hearing, treatment and prognosis.",
+      ],
+      markSplit: [
+        { part: "Definition and aetiology", marks: 1 },
+        { part: "Clinical features including eighth nerve involvement", marks: 1.5 },
+        { part: "Treatment with drug names and doses", marks: 2 },
+        { part: "Prognosis and complications", marks: 0.5 },
+      ],
+      keywords: ["Ramsay Hunt", "herpes zoster oticus", "geniculate ganglion", "acyclovir", "zoster sine herpete"],
+    },
+  ],
+  mcqs: [
+    {
+      id: "neurology-bell-palsy-q1",
+      stem: "A 34-year-old woman wakes with right facial droop that worsened over the next few hours. She cannot wrinkle the right forehead or close the right eye, has retroauricular pain and says food tastes odd. The ear canal, drum and palate are normal, and there is no other neurological abnormality. She presents 18 hours after onset. What is the best management?",
+      options: [
+        "Reassurance and eye lubricants alone, as corticosteroids have no proven benefit in this condition",
+        "Prednisolone 60 mg daily for 5 days then tapered over 5 days, with hourly eye lubricants, night ointment and eyelid taping",
+        "Valacyclovir 1 g three times daily for 7 days as the sole treatment",
+        "Urgent non-contrast CT of the head before any treatment is started",
+        "Facial electrical stimulation and physiotherapy, with steroids deferred until day 7 if there is no recovery",
+      ],
+      answer: 1,
+      explanation:
+        "Forehead involvement with inability to close the eye makes this a lower motor neurone palsy, and with a normal ear, palate and remaining neurological examination it is Bell palsy. Oral corticosteroid started within 72 hours is the only treatment with clear benefit, lifting complete recovery from around 70% to around 85%, and eye protection is what prevents the one permanently damaging complication, exposure keratopathy. Reassurance alone discards that benefit. An antiviral given alone has repeatedly been shown to be ineffective and is at most an add-on to steroid in severe palsy. CT is unnecessary because the forehead is involved, which excludes an upper motor neurone lesion, and waiting for imaging would waste part of the 72-hour window. Delaying the steroid to day 7 puts it outside the window where it works, and facial electrical stimulation is specifically discouraged because it aggravates synkinesis.",
+      difficulty: "easy",
+    },
+    {
+      id: "neurology-bell-palsy-q2",
+      stem: "A 62-year-old hypertensive man develops weakness of the left lower face over minutes while at work. He can wrinkle both sides of his forehead and close both eyes fully. His left arm drifts on outstretched arm testing and his speech is slurred. He arrives 50 minutes after onset. What is the correct interpretation and action?",
+      options: [
+        "Bell palsy - start prednisolone 50 mg daily for 10 days",
+        "Ramsay Hunt syndrome - start acyclovir 800 mg five times daily",
+        "An upper motor neurone facial palsy from a contralateral hemispheric stroke - activate the acute stroke pathway with immediate non-contrast CT and thrombolysis assessment",
+        "Ocular myasthenia gravis - arrange acetylcholine receptor antibodies and an ice pack test",
+        "Parotid malignancy infiltrating the facial nerve - arrange an urgent MRI of the parotid",
+      ],
+      answer: 2,
+      explanation:
+        "The forehead is spared and eye closure is intact, which localises the lesion above the facial nucleus, and the accompanying arm drift and dysarthria complete a hemispheric syndrome; within the thrombolysis window this is a stroke call, not a facial palsy consultation. Bell palsy is excluded by definition because it always paralyses the forehead. Ramsay Hunt requires a lower motor neurone palsy with zoster vesicles and ear pain, neither of which is present. Myasthenia gravis produces fatigable ptosis and ophthalmoparesis with fluctuation rather than an abrupt fixed lower facial weakness with limb signs. A parotid tumour causes a lower motor neurone palsy evolving over weeks with a palpable mass, not a stroke-like onset over minutes.",
+      difficulty: "easy",
+    },
+    {
+      id: "neurology-bell-palsy-q3",
+      stem: "A 55-year-old diabetic man has two days of severe deep pain in the left ear followed by complete left facial paralysis. There are vesicles in the left concha and on the left half of the soft palate, and he complains of spinning vertigo and reduced hearing on the left. He presents on day 2. What is the correct treatment?",
+      options: [
+        "Prednisolone 50 mg daily for 10 days alone, with eye care",
+        "Prednisolone 1 mg/kg/day with a taper, plus acyclovir 800 mg five times daily for 7 days, with eye care and audiometry",
+        "Acyclovir 400 mg five times daily for 7 days alone, with steroids withheld because of his diabetes",
+        "Topical acyclovir cream to the vesicles with oral analgesia and observation",
+        "Amoxicillin-clavulanate for suspected acute otitis media with facial nerve involvement",
+      ],
+      answer: 1,
+      explanation:
+        "Vesicles in the concha and on the palate with severe otalgia, complete facial paralysis and eighth nerve symptoms are Ramsay Hunt syndrome, and unlike Bell palsy it needs both a high-dose corticosteroid and a full antiviral dose - acyclovir 800 mg five times daily is the zoster dose, not the 400 mg herpes simplex dose. Treating it as Bell palsy with steroid alone omits the antiviral that matters in varicella-zoster reactivation. Withholding steroid because of diabetes is wrong: the steroid is given with intensified glucose monitoring and temporary insulin adjustment, since Ramsay Hunt recovers completely in only about half of patients even when treated. Topical acyclovir has no role in a cranial neuropathy. There is no otitis media here, and an antibiotic treats nothing in this presentation.",
+      difficulty: "moderate",
+    },
+    {
+      id: "neurology-bell-palsy-q4",
+      stem: "A 40-year-old man develops right facial weakness and then, three days later, left facial weakness, so that he cannot close either eye or wrinkle either forehead. He also reports tingling in both feet and unsteadiness. Ankle and knee jerks are absent. What is the most appropriate next step?",
+      options: [
+        "Prednisolone 60 mg daily for 5 days for bilateral Bell palsy",
+        "Admit for observation with serial single-breath count and vital capacity, nerve conduction studies and cerebrospinal fluid examination",
+        "Reassure and review in three weeks, since bilateral Bell palsy has the same good prognosis",
+        "Start acyclovir 800 mg five times daily for presumed bilateral zoster sine herpete",
+        "Arrange an outpatient MRI of the parotid glands in six weeks",
+      ],
+      answer: 1,
+      explanation:
+        "Bilateral facial palsy is never Bell palsy, and sequential bilateral facial weakness with distal paraesthesiae and generalised areflexia is Guillain-Barre syndrome until proved otherwise, so the patient needs admission and repeated measurement of respiratory reserve because respiratory failure is what kills in this condition, along with nerve conduction studies and cerebrospinal fluid showing albuminocytological dissociation. Treating it as bilateral Bell palsy with prednisolone is doubly wrong: the label is wrong and corticosteroids are of no benefit in Guillain-Barre syndrome, where the treatment is intravenous immunoglobulin or plasma exchange. Reassurance and outpatient review risk a respiratory arrest at home. Zoster sine herpete does not produce areflexia and distal sensory symptoms, and an outpatient parotid MRI in six weeks addresses none of the urgency.",
+      difficulty: "moderate",
+    },
+    {
+      id: "neurology-bell-palsy-q5",
+      stem: "A 58-year-old man reports right facial weakness that began as a slight droop ten weeks ago and has slowly worsened since. He now cannot close the right eye. There is a firm 2 cm swelling in the right parotid region and a hard node in the upper neck. He was given a course of prednisolone by another doctor eight weeks ago with no effect. What should be done?",
+      options: [
+        "Repeat the prednisolone course at a higher dose for a further 10 days",
+        "Reassure him that Bell palsy sometimes takes six months to recover and review at that point",
+        "Arrange contrast MRI of the brain, internal auditory meatus and parotid, with urgent ENT referral for the parotid mass",
+        "Start acyclovir 800 mg five times daily for presumed zoster sine herpete",
+        "Refer for facial electrical stimulation and mirror biofeedback physiotherapy",
+      ],
+      answer: 2,
+      explanation:
+        "Bell palsy reaches its maximum within 72 hours; weakness that creeps on over ten weeks and is accompanied by a parotid mass and a hard cervical node is a parotid malignancy infiltrating the facial nerve until imaging proves otherwise, so contrast MRI of the brain, internal auditory meatus and parotid with urgent ENT referral is the only acceptable answer. Repeating the steroid treats a diagnosis that has already been disproved by the failure of the first course and the progressive course. Reassuring him and waiting six months allows a treatable cancer to advance; the rule is that no improvement at three months, or any progression beyond three weeks, mandates imaging. Zoster sine herpete presents acutely, not over weeks, and does not produce a mass. Physiotherapy, and particularly electrical stimulation which aggravates synkinesis, addresses nothing in an untreated tumour.",
+      difficulty: "moderate",
+    },
+  ],
+  cards: [
+    {
+      id: "neurology-bell-palsy-c1",
+      front: "How do you distinguish an upper from a lower motor neurone facial palsy at the bedside?",
+      back: "The forehead. Upper motor neurone lesions spare frontalis (brow wrinkles, eye closes) because of bilateral cortical representation; lower motor neurone lesions paralyse the whole hemiface with lagophthalmos and a visible Bell phenomenon.",
+    },
+    {
+      id: "neurology-bell-palsy-c2",
+      front: "Steroid regimen for Bell palsy and the time window.",
+      back: "Prednisolone 50 mg daily for 10 days, or 60 mg daily for 5 days then tapered 10 mg/day over 5 days. Start within 72 hours of onset - it raises complete recovery from about 70% to about 85%.",
+    },
+    {
+      id: "neurology-bell-palsy-c3",
+      front: "When is an antiviral added in facial palsy, and at what dose?",
+      back: "Never alone. Add valacyclovir 1 g TDS or acyclovir 400 mg five times daily for 7 days in severe Bell palsy (House-Brackmann IV-VI). In Ramsay Hunt use the zoster dose - acyclovir 800 mg five times daily for 7 days - with prednisolone 1 mg/kg/day.",
+    },
+    {
+      id: "neurology-bell-palsy-c4",
+      front: "Eye care in a patient with lagophthalmos.",
+      back: "Carboxymethylcellulose 0.5% or hypromellose drops hourly while awake, paraffin or carbomer ointment at night, horizontal taping of the eyelid at night, protective glasses outdoors. Review the cornea at every visit - exposure keratopathy is the one blinding complication.",
+    },
+    {
+      id: "neurology-bell-palsy-c5",
+      front: "Which branches of the facial nerve localise the lesion, and how?",
+      back: "Greater petrosal nerve - reduced lacrimation means at or above the geniculate ganglion. Nerve to stapedius - hyperacusis means above the stapedial branch. Chorda tympani - loss of taste on the anterior two-thirds of the tongue means above the chorda. Pure motor weakness means at or below the stylomastoid foramen.",
+    },
+    {
+      id: "neurology-bell-palsy-c6",
+      front: "Causes of bilateral facial palsy.",
+      back: "Never Bell palsy. Guillain-Barre syndrome, Lyme disease, sarcoidosis (Heerfordt syndrome), HIV seroconversion, leukaemic or lymphomatous meningeal infiltration, leprosy, Melkersson-Rosenthal syndrome, and brainstem lesions. Admit and check respiratory reserve.",
+    },
+    {
+      id: "neurology-bell-palsy-c7",
+      front: "House-Brackmann grades in one line each.",
+      back: "I normal; II slight weakness on close inspection, eye closes with minimum effort; III obvious but not disfiguring, eye closes with effort, synkinesis; IV disfiguring asymmetry, no forehead movement, incomplete closure; V barely perceptible motion; VI total paralysis.",
+    },
+    {
+      id: "neurology-bell-palsy-c8",
+      front: "When must a facial palsy be imaged?",
+      back: "Progressive weakness beyond three weeks, no recovery at all by three months, recurrent ipsilateral palsy, bilateral palsy, other cranial nerve or long tract signs, or a parotid or neck mass. Contrast MRI of the brain, internal auditory meatus and parotid.",
+    },
+    {
+      id: "neurology-bell-palsy-c9",
+      front: "Late sequelae of facial palsy from aberrant reinnervation.",
+      back: "Synkinesis (eye narrows when the mouth moves), crocodile tears (gustatory lacrimation), hemifacial spasm and facial contracture. Treat with botulinum toxin type A plus mirror biofeedback physiotherapy; never facial electrical stimulation.",
+    },
+    {
+      id: "neurology-bell-palsy-c10",
+      front: "Prognosis of Bell palsy.",
+      back: "About 85% show the first sign of recovery within three weeks; about 70% recover completely untreated and about 85% with steroid. Poor markers: complete paralysis, age over 60, diabetes, hypertension, severe pain, pregnancy, and no recovery by three weeks.",
+    },
+  ],
+  references: [
+    "Clinical Practice Guideline: Bell's Palsy, American Academy of Otolaryngology-Head and Neck Surgery Foundation, Otolaryngology-Head and Neck Surgery, 2013 (Executive Summary and 2013 guideline)",
+    "Sullivan FM et al., Early treatment with prednisolone or acyclovir in Bell's palsy (the Scottish Bell's Palsy Study), New England Journal of Medicine 2007",
+    "Gagyor I et al., Antiviral treatment for Bell's palsy (idiopathic facial paralysis), Cochrane Database of Systematic Reviews, 2019 update",
+    "Madhok VB et al., Corticosteroids for Bell's palsy (idiopathic facial paralysis), Cochrane Database of Systematic Reviews, 2016",
+    "NICE Clinical Knowledge Summaries, Bell's palsy, 2023 revision",
+    "House JW and Brackmann DE, Facial nerve grading system, Otolaryngology-Head and Neck Surgery 1985",
+    "Dhingra PL and Dhingra S, Diseases of Ear, Nose and Throat, 8th edition, 2021 - facial nerve disorders",
+    "National Leprosy Eradication Programme, Government of India, Guidelines on Management of Reactions and Prevention of Disabilities, 2020",
+  ],
+});
+
 const cases: ClinicalCase[] = [
   {
     id: "neurology-case-1",

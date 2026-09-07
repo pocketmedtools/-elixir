@@ -3246,6 +3246,403 @@ topics.push({
 });
 
 
+topics.push({
+  id: "respiratory-osa",
+  title: "Obstructive sleep apnoea: STOP-BANG, polysomnography and CPAP",
+  oneLiner:
+    "Obstructive sleep apnoea is repetitive collapse of the pharyngeal airway during sleep producing apnoeas and hypopnoeas with arousals and oxygen desaturation, diagnosed when polysomnography shows an apnoea-hypopnoea index of 5 or more per hour with symptoms or 15 or more per hour regardless of symptoms, and treated first by weight reduction and continuous positive airway pressure.",
+  frequency: "common",
+  keywords: [
+    "OSA",
+    "obstructive sleep apnoea",
+    "sleep disordered breathing",
+    "snoring",
+    "STOP-BANG",
+    "Epworth Sleepiness Scale",
+    "apnoea-hypopnoea index",
+    "AHI",
+    "polysomnography",
+    "CPAP",
+    "home sleep apnoea test",
+    "obesity hypoventilation syndrome",
+    "Pickwickian syndrome",
+    "overlap syndrome",
+    "mandibular advancement device",
+    "resistant hypertension",
+    "INOSA guidelines",
+    "Mallampati",
+  ],
+  sections: [
+    {
+      heading: "Definition, mechanism and why family physicians miss it",
+      points: [
+        "**Definition:** obstructive sleep apnoea is a sleep-related breathing disorder characterised by **repetitive partial or complete collapse of the upper airway during sleep**, producing apnoeas and hypopnoeas that terminate in arousal, with intermittent hypoxaemia and fragmented sleep. The airway closes at the level of the soft palate and the tongue base while respiratory effort continues - that continued effort is what makes it obstructive rather than central.",
+        "**Scoring definitions (AASM):** an **apnoea** is a fall in airflow of 90% or more from baseline lasting **10 seconds or more**; a **hypopnoea** is a fall of 30% or more for 10 seconds or more accompanied by a **3% oxygen desaturation or an arousal**. The **apnoea-hypopnoea index (AHI)** is the number of these events per hour of sleep and is the number the whole diagnosis and grading rest on.",
+        "**Diagnostic threshold:** AHI of **5 or more per hour with symptoms or an associated comorbidity** (sleepiness, unrefreshing sleep, insomnia, gasping awakenings, witnessed apnoeas, hypertension, coronary disease, atrial fibrillation, stroke, diabetes, mood disorder), or an AHI of **15 or more per hour with or without symptoms**.",
+        "**Predisposing factors:** obesity (the single strongest, with neck circumference correlating better than BMI), male sex, age over 50, post-menopausal state, retrognathia and a crowded oropharynx (Mallampati 3-4, tonsillar hypertrophy, macroglossia), nasal obstruction, hypothyroidism, acromegaly, alcohol and sedatives at night, and supine sleep. **South Asians develop OSA at a lower BMI than Caucasians** because of craniofacial narrowing, so a BMI of 25-27 does not exclude it.",
+        "**Burden:** Indian community studies quote a prevalence of roughly **9-13% of adults for symptomatic OSA** and up to 20% for sleep-disordered breathing, with the great majority never diagnosed. The commonest reason for missing it in general practice is that the patient never complains of snoring - the **bed partner does** - and the presenting complaint is instead fatigue, poor concentration, morning headache, nocturia, resistant hypertension or road traffic accidents.",
+        "OSA sits at the centre of a cluster the family physician already treats: obesity, type 2 diabetes, dyslipidaemia and hypertension. Naming it as **a treatable cause of resistant hypertension and of poor glycaemic control** is the line that earns marks.",
+      ],
+    },
+    {
+      heading: "Clinical recognition and screening in the consulting room",
+      points: [
+        "**Nocturnal symptoms:** habitual loud snoring (present in nearly all, but non-specific on its own), **witnessed apnoeas and choking or gasping arousals** reported by the partner, restless sleep, night sweats, nocturia of two or more voids, gastro-oesophageal reflux and insomnia with frequent awakenings.",
+        "**Daytime symptoms:** unrefreshing sleep, **excessive daytime sleepiness**, morning headache and dry mouth, impaired concentration and memory, irritability and low mood, reduced libido and erectile dysfunction, and falling asleep while driving or in meetings.",
+        "**Examination:** record BMI, **neck circumference (over 43 cm in men and over 41 cm in women is a risk marker)**, waist circumference, blood pressure in both arms, a modified Mallampati score, tonsil size, nasal patency and septal deviation, retrognathia and overbite, and look for signs of hypothyroidism, acromegaly and cor pulmonale (raised jugular venous pressure, loud P2, pedal oedema).",
+        "**STOP-BANG** is the screening instrument to quote: eight yes-or-no items - Snoring, Tiredness, Observed apnoea, blood Pressure, BMI over 35, Age over 50, Neck circumference over 40 cm, male Gender. **A score of 0-2 is low risk, 3-4 intermediate and 5-8 high risk**; it is highly sensitive, so a low score usefully rules OSA out, while a high score demands a sleep study rather than confirming the diagnosis.",
+        "The **Epworth Sleepiness Scale** grades the chance of dozing in eight everyday situations from 0 to 3 each, total 0-24; **a score above 10 indicates excessive daytime sleepiness**. It measures sleepiness, not severity of obstruction - a patient can have severe OSA with a normal Epworth, and vice versa - so never use it to decide who needs a sleep study on its own.",
+        "**Ask the driving and occupational question in every case:** commercial drivers, machine operators, and shift workers with sleepiness need urgent testing and interim counselling not to drive when sleepy, because untreated OSA carries a two- to threefold increase in road traffic accidents.",
+      ],
+    },
+    {
+      heading: "Confirming the diagnosis and grading severity",
+      points: [
+        "**Level 1 attended in-laboratory polysomnography is the gold standard:** it records EEG, EOG, chin and leg EMG, ECG, nasal pressure and oronasal thermal airflow, thoracic and abdominal effort belts, pulse oximetry, body position and snoring, and it yields the AHI, the arousal index, sleep stages, the oxygen desaturation index and the lowest SpO2.",
+        "**Home sleep apnoea testing (level 3, portable)** is acceptable for **uncomplicated adults with a high pre-test probability of moderate-to-severe OSA**. It uses airflow, effort and oximetry without EEG, so it computes events per hour of recording rather than of sleep and **systematically under-estimates the AHI**; a negative or technically inadequate home study in a symptomatic patient must therefore be followed by full polysomnography.",
+        "**Home testing is not appropriate** where there is significant cardiorespiratory disease, suspected hypoventilation or neuromuscular weakness, opioid use, suspected central sleep apnoea, or another sleep disorder such as narcolepsy or periodic limb movement disorder.",
+        "**Severity grading by AHI: mild 5 to under 15, moderate 15 to under 30, severe 30 or more events per hour.** Overnight pulse oximetry alone is a screening tool only - a normal oximetry trace does not exclude OSA in a young non-obese patient whose events end in arousal without desaturation.",
+        "**Baseline investigations that change management:** thyroid-stimulating hormone, fasting glucose or HbA1c, lipid profile, haemoglobin (secondary polycythaemia), ECG and echocardiography if pulmonary hypertension is suspected, and **arterial blood gas or venous bicarbonate in the very obese** - a raised bicarbonate is the cheap clue to daytime hypercapnia.",
+        "Differentials to exclude before labelling sleepiness as OSA: insufficient sleep syndrome (the commonest cause of sleepiness in India), shift work disorder, narcolepsy, depression, uncontrolled diabetes, hypothyroidism, anaemia, and sedative or antihistamine use.",
+      ],
+    },
+    {
+      heading: "Consequences: why untreated OSA matters",
+      points: [
+        "**Cardiovascular:** intermittent hypoxaemia, sympathetic surges and large negative intrathoracic pressure swings produce **systemic hypertension (OSA is the commonest identifiable cause of resistant hypertension), non-dipping or reverse-dipping nocturnal blood pressure, atrial fibrillation, nocturnal arrhythmias, coronary artery disease, heart failure and stroke**.",
+        "**Metabolic:** insulin resistance and worsening glycaemic control independent of obesity, dyslipidaemia, non-alcoholic fatty liver disease, and a strong bidirectional relationship with the metabolic syndrome.",
+        "**Pulmonary hypertension and cor pulmonale** develop in a minority, usually those with coexisting obesity hypoventilation or COPD, and present with pedal oedema, raised jugular venous pressure and a loud pulmonary second sound.",
+        "**Neurocognitive and psychosocial:** impaired attention, memory and executive function, depression, irritability, marital strain from snoring, and reduced work performance.",
+        "**Accidents:** the two- to threefold excess of motor vehicle accidents falls essentially to baseline with adherent CPAP use, which is the strongest single argument for treatment in a commercial driver.",
+        "**Perioperative risk:** undiagnosed OSA increases postoperative hypoxaemia, difficult intubation, arrhythmia and unplanned intensive care admission; **STOP-BANG was designed as a pre-operative screening tool** and a score of 5 or more should prompt caution with sedatives and opioids and planned postoperative monitoring.",
+      ],
+    },
+    {
+      heading: "Management: behavioural measures, CPAP and the alternatives",
+      points: [
+        "**Weight reduction is disease-modifying and must be prescribed with a number:** a 10% loss of body weight reduces the AHI by roughly 25-30%, and bariatric surgery can produce remission in the morbidly obese. Set a target weight, a diet plan and 150 minutes a week of activity, and review it at every visit rather than mentioning it once.",
+        "**General measures:** avoid alcohol and sedative-hypnotics in the evening, treat nasal obstruction and allergic rhinitis with an intranasal steroid, stop smoking, ensure adequate sleep duration and regular sleep timing, and **positional therapy** (avoiding supine sleep, using a pillow or a tennis-ball shirt) for the patient whose events are clearly supine-predominant on polysomnography.",
+        "**CPAP is first-line treatment for moderate and severe OSA (AHI 15 or more) and for mild OSA with symptoms, sleepiness or significant cardiovascular comorbidity.** It works as a **pneumatic splint** holding the pharynx open, abolishing apnoeas, restoring sleep architecture and oxygenation; it improves sleepiness, quality of life, blood pressure (modestly, by about 2-3 mmHg, more in resistant hypertension) and accident risk.",
+        "**Setting up CPAP:** titrate the pressure by attended in-laboratory titration or use an **auto-titrating device (APAP)** in uncomplicated OSA, fit the mask carefully (nasal mask first, oronasal if the patient is a mouth breather), add a heated humidifier for dryness, and warn about the common early problems - mask leak and pressure sores, nasal congestion, rhinorrhoea, aerophagia and claustrophobia - each of which has a fix.",
+        "**Adherence is the whole battle and it is measured, not assumed:** the accepted target is **use for at least 4 hours a night on at least 70% of nights**, downloaded from the machine's smart card or cloud report at follow-up at 1 week, 1 month and then 3-6 monthly. Early telephone follow-up, education involving the partner, and treating side effects are what convert a trial into long-term use.",
+        "**Alternatives:** a **mandibular advancement device** made by a dentist is the option for mild-to-moderate OSA, for primary snoring, and for the patient who refuses or cannot tolerate CPAP; **surgery** (septoplasty, adenotonsillectomy, uvulopalatopharyngoplasty, maxillomandibular advancement) is for a defined anatomical obstruction, with **adenotonsillectomy being first-line in children**; **BiPAP** is used for obesity hypoventilation, overlap syndrome and CPAP intolerance at high pressures; and modafinil is reserved for residual sleepiness that persists despite documented CPAP adherence.",
+      ],
+    },
+    {
+      heading: "Special situations for the family physician",
+      points: [
+        "**Obesity hypoventilation syndrome (Pickwickian):** BMI 30 or more with **awake daytime hypercapnia, PaCO2 above 45 mmHg**, in the absence of another cause; about 90% also have OSA. Suspect it when the venous bicarbonate is raised, and treat with positive airway pressure (CPAP if there is severe coexisting OSA, otherwise BiPAP) plus aggressive weight loss, because untreated mortality is high.",
+        "**Overlap syndrome (COPD plus OSA)** produces worse nocturnal desaturation, more pulmonary hypertension and more exacerbations than either alone; these patients need both inhaler optimisation and positive airway pressure, and long-term oxygen alone without addressing the apnoeas can worsen hypercapnia.",
+        "**Pregnancy:** OSA is associated with gestational hypertension, pre-eclampsia and gestational diabetes; screen the obese pregnant woman who snores, and CPAP is safe throughout pregnancy.",
+        "**Children:** the presentation is different - mouth breathing, restless sleep, sweating, enuresis, failure to thrive, poor school performance and **hyperactivity rather than sleepiness**; **adenotonsillar hypertrophy is the usual cause and adenotonsillectomy the first-line treatment**, and in children an AHI above 1 per hour is already abnormal.",
+        "**Perioperative and prescribing care:** in a known or suspected OSA patient, avoid or minimise benzodiazepines and opioids, prefer regional anaesthesia, nurse in the non-supine position, continue the patient's own CPAP machine in hospital, and monitor oxygen saturation after surgery.",
+        "**Certification and driving:** counsel documented sleepiness against driving until treated, involve the employer for commercial drivers, and re-assess with the Epworth score and CPAP download before clearing the patient to drive.",
+      ],
+    },
+  ],
+  tables: [
+    {
+      heading: "STOP-BANG questionnaire - one point for each yes",
+      columns: ["Letter", "Item", "Threshold"],
+      rows: [
+        ["S", "Snoring loudly", "Louder than talking, or heard through a closed door"],
+        ["T", "Tiredness", "Tired, fatigued or sleepy during the daytime"],
+        ["O", "Observed apnoea", "Someone has seen you stop breathing, choke or gasp in sleep"],
+        ["P", "Pressure", "Being treated for high blood pressure"],
+        ["B", "BMI", "More than 35 kg/m2"],
+        ["A", "Age", "More than 50 years"],
+        ["N", "Neck circumference", "More than 40 cm"],
+        ["G", "Gender", "Male"],
+      ],
+    },
+    {
+      heading: "Grading, thresholds and what they mean",
+      columns: ["Measure", "Value", "Interpretation and action"],
+      rows: [
+        ["STOP-BANG score", "0-2", "Low risk of moderate-severe OSA; look for another cause of the symptom"],
+        ["STOP-BANG score", "3-4", "Intermediate risk; test if symptomatic or if comorbidity present"],
+        ["STOP-BANG score", "5-8", "High risk; arrange a sleep study and take perioperative precautions"],
+        ["Epworth Sleepiness Scale", "More than 10 of 24", "Excessive daytime sleepiness; does not grade severity of obstruction"],
+        ["Apnoea-hypopnoea index", "5 to under 15 per hour", "Mild OSA; treat if symptomatic or comorbid, otherwise behavioural measures"],
+        ["Apnoea-hypopnoea index", "15 to under 30 per hour", "Moderate OSA; CPAP indicated"],
+        ["Apnoea-hypopnoea index", "30 or more per hour", "Severe OSA; CPAP indicated, counsel on driving"],
+        ["CPAP adherence", "4 hours or more on 70% of nights", "Accepted definition of adequate use; verify from the device download"],
+      ],
+    },
+  ],
+  redFlags: [
+    "Sleepiness while driving, or a road traffic accident or near-miss attributed to dozing - counsel against driving immediately and fast-track the sleep study.",
+    "Witnessed apnoeas with morning headache, peripheral oedema, raised jugular venous pressure or a resting SpO2 below 94% while awake - suspect obesity hypoventilation or cor pulmonale and refer the same week.",
+    "A raised venous bicarbonate or a PaCO2 above 45 mmHg while awake in an obese patient - daytime hypoventilation, which needs BiPAP assessment, not reassurance.",
+    "Resistant hypertension on three drugs including a diuretic, or nocturnal or early-morning arrhythmia, in a habitual snorer - test for OSA before adding a fourth antihypertensive.",
+    "New or worsening sleepiness in a patient already on CPAP - check adherence download, mask leak and pressure adequacy, and reconsider a coexisting disorder such as narcolepsy or depression.",
+    "A child with snoring plus failure to thrive, enuresis or a deteriorating school report - refer to ENT for adenotonsillar assessment rather than treating the behaviour.",
+  ],
+  pearls: [
+    "Snoring is sensitive but almost useless alone; it is the **witnessed apnoea and the choking arousal** reported by the bed partner that carry diagnostic weight, so always interview the partner.",
+    "**STOP-BANG rules out, polysomnography rules in.** A score of 0-2 is a genuine negative screen; a score of 5-8 is a reason to test, never a diagnosis.",
+    "The **Epworth score measures sleepiness, the AHI measures obstruction** - they correlate poorly, and quoting that sentence answers half the viva questions on assessment.",
+    "**South Asians get OSA at a lower BMI**, so do not dismiss the diagnosis in a patient with a BMI of 26 and a thick neck and crowded oropharynx.",
+    "**CPAP is a splint, not oxygen.** Adding oxygen without CPAP treats the desaturation and leaves the arousals, the sympathetic surges and, in hypoventilators, the hypercapnia untouched.",
+    "A 10% weight loss cuts the AHI by about a quarter - prescribe weight loss as a measured target at every visit, and re-study the patient after substantial weight change rather than assuming the old pressure still fits.",
+  ],
+  theory: [
+    {
+      id: "respiratory-osa-t1",
+      paper: "II",
+      kind: "long",
+      marks: 10,
+      minutes: 20,
+      frequency: "common",
+      question:
+        "A 48-year-old obese man with hypertension poorly controlled on three drugs is brought by his wife because he snores loudly and stops breathing in his sleep. He falls asleep at meetings and has had a near-miss while driving. Discuss your approach to diagnosis and management.",
+      openingLines: [
+        "Obstructive sleep apnoea is a sleep-related breathing disorder in which repetitive collapse of the pharyngeal airway during sleep produces apnoeas and hypopnoeas terminating in arousal, with intermittent hypoxaemia and fragmented sleep.",
+        "This man has the classic triad of habitual snoring, witnessed apnoeas and excessive daytime sleepiness with resistant hypertension and a near-miss while driving, so my objectives are to grade his risk clinically, confirm and grade the disease by a sleep study, exclude hypoventilation and comorbidity, and start weight reduction with continuous positive airway pressure while addressing his fitness to drive today.",
+      ],
+      answer: [
+        {
+          heading: "1. History",
+          points: [
+            "Nocturnal history, preferably from the wife: loudness and habituality of snoring, **witnessed apnoeas, choking or gasping arousals**, restless sleep, night sweats, nocturia and reflux.",
+            "Daytime history: unrefreshing sleep, morning headache and dry mouth, impaired concentration, irritability, low mood, reduced libido, and quantified sleepiness by the **Epworth Sleepiness Scale**, where a score above 10 of 24 is abnormal.",
+            "Total sleep duration and timing, shift work, alcohol and sedative use at night, smoking, and any antihistamine or opioid prescription - insufficient sleep is the commonest alternative explanation for sleepiness.",
+            "Comorbidity and drug history: hypertension and the three drugs he is on, diabetes, ischaemic heart disease, atrial fibrillation, stroke, hypothyroidism, and any previous nasal or throat surgery.",
+            "**Occupational and driving history is mandatory** - the near-miss makes this an urgent problem and must be documented in the notes along with the advice given.",
+          ],
+        },
+        {
+          heading: "2. Examination and clinical risk score",
+          points: [
+            "Record **BMI, neck circumference (over 43 cm in men is a risk marker), waist circumference** and blood pressure in both arms.",
+            "Upper airway: **modified Mallampati grade, tonsil size, macroglossia, retrognathia, overbite, nasal septal deviation and turbinate hypertrophy**.",
+            "Look for secondary causes and consequences: hypothyroid facies, acromegalic features, raised jugular venous pressure, loud P2, pedal oedema and hepatomegaly suggesting cor pulmonale.",
+            "Apply **STOP-BANG**: this patient scores at least 6 of 8 (snoring, tiredness, observed apnoea, blood pressure, age over 50, male, and probably BMI and neck), which is high risk and mandates a sleep study.",
+          ],
+        },
+        {
+          heading: "3. Investigations",
+          points: [
+            "**Level 1 attended polysomnography is the gold standard**, giving the AHI, arousal index, oxygen desaturation index, lowest SpO2, sleep architecture and body position dependence.",
+            "A **level 3 home sleep apnoea test** is acceptable here given the very high pre-test probability, but a negative or technically poor study in so symptomatic a patient must be followed by full polysomnography because home testing under-estimates the AHI.",
+            "Severity is graded on the AHI: **mild 5 to under 15, moderate 15 to under 30, severe 30 or more per hour**.",
+            "Supporting tests: TSH, HbA1c, fasting lipids, haemoglobin for secondary polycythaemia, ECG, and **venous bicarbonate or arterial blood gas to exclude daytime hypercapnia and obesity hypoventilation syndrome**; echocardiography if pulmonary hypertension is suspected.",
+          ],
+        },
+        {
+          heading: "4. Non-pharmacological management",
+          points: [
+            "**Weight reduction with a stated target**: a 10% loss reduces the AHI by roughly 25-30%; set a diet, 150 minutes a week of activity, and consider bariatric referral if the BMI is 35 or more with comorbidity.",
+            "Avoid alcohol and sedatives in the evening, stop smoking, regularise sleep timing and ensure 7-8 hours in bed.",
+            "Treat nasal obstruction with an intranasal corticosteroid and refer for septoplasty if there is fixed obstruction limiting mask use.",
+            "**Positional therapy** if the study shows supine-predominant events.",
+            "**Driving advice given today**: do not drive while sleepy, inform the employer if a commercial licence is held, and re-assess once treated - untreated OSA carries a two- to threefold accident risk that normalises with adherent CPAP.",
+          ],
+        },
+        {
+          heading: "5. CPAP and follow-up",
+          points: [
+            "**CPAP is first-line** for moderate and severe OSA and for symptomatic mild disease; it acts as a pneumatic splint abolishing obstructive events, restoring sleep continuity and reducing sleepiness, accidents and blood pressure - the last being particularly relevant to his resistant hypertension.",
+            "Titrate by attended titration or an auto-titrating device, fit the mask carefully, add a heated humidifier, and pre-empt the common problems: leak, nasal congestion, dryness, aerophagia, claustrophobia and skin pressure marks.",
+            "**Define and audit adherence: 4 hours or more a night on at least 70% of nights**, checked from the machine download at 1 week, 1 month and then 3-6 monthly, with the wife involved in the education.",
+            "Alternatives if CPAP fails: a dentist-made **mandibular advancement device** for mild-moderate disease, targeted upper airway surgery for a defined anatomical lesion, and **BiPAP** if hypoventilation or high-pressure intolerance is present. Modafinil only for residual sleepiness despite documented adherence.",
+            "Continue to manage the cluster: blood pressure, glycaemia, lipids, influenza and pneumococcal vaccination, and re-evaluate the sleep study after major weight change.",
+          ],
+        },
+      ],
+      mustDraw: [
+        "A table of the eight STOP-BANG items with the 0-2 / 3-4 / 5-8 risk bands.",
+        "A table of AHI severity bands - mild, moderate, severe - against the treatment indicated.",
+        "A simple flow chart: symptoms plus STOP-BANG - sleep study - AHI grading - weight loss and general measures for all, CPAP for AHI 15 or more or symptomatic mild disease - adherence review.",
+      ],
+      markSplit: [
+        { part: "Definition and scoring criteria", marks: 2 },
+        { part: "History including partner, Epworth and driving", marks: 2 },
+        { part: "Examination and STOP-BANG", marks: 1 },
+        { part: "Polysomnography, AHI grading and supporting tests", marks: 2 },
+        { part: "Weight loss, general and positional measures", marks: 1 },
+        { part: "CPAP, adherence and alternatives", marks: 2 },
+      ],
+      keywords: ["obstructive sleep apnoea", "STOP-BANG", "polysomnography", "AHI", "CPAP", "resistant hypertension"],
+    },
+    {
+      id: "respiratory-osa-t2",
+      paper: "II",
+      kind: "short-note",
+      marks: 5,
+      minutes: 10,
+      frequency: "common",
+      question: "Write a short note on continuous positive airway pressure therapy in obstructive sleep apnoea.",
+      openingLines: [
+        "Continuous positive airway pressure delivers a constant positive pressure to the upper airway through a nasal or oronasal mask, acting as a pneumatic splint that prevents pharyngeal collapse during sleep.",
+        "It is the first-line treatment for moderate and severe obstructive sleep apnoea and for mild disease that is symptomatic or accompanied by cardiovascular comorbidity.",
+      ],
+      answer: [
+        {
+          heading: "1. Mechanism and indications",
+          points: [
+            "**Mechanism:** a pneumatic splint raising intraluminal pharyngeal pressure above the closing pressure, abolishing apnoeas and hypopnoeas, ending the arousals and correcting the intermittent desaturation. It does not treat obesity, and it is not oxygen therapy.",
+            "**Indications:** AHI 15 or more per hour regardless of symptoms; AHI 5-14 with sleepiness, unrefreshing sleep, insomnia, hypertension, ischaemic heart disease, atrial fibrillation, stroke or type 2 diabetes; and obesity hypoventilation or overlap syndrome, where BiPAP may be needed instead.",
+          ],
+        },
+        {
+          heading: "2. Benefits",
+          points: [
+            "Abolishes snoring and witnessed apnoeas, restores sleep architecture and **reduces excessive daytime sleepiness and Epworth score**.",
+            "Improves quality of life, mood, cognitive performance and the partner's sleep.",
+            "**Reduces motor vehicle accident risk to near baseline** in adherent users - the strongest argument in a driver.",
+            "Lowers blood pressure modestly, by about 2-3 mmHg on average and more in **resistant hypertension**, improves insulin sensitivity, and reduces recurrence of atrial fibrillation after cardioversion.",
+          ],
+        },
+        {
+          heading: "3. Practical set-up and problems",
+          points: [
+            "Pressure is set by attended in-laboratory titration or by an **auto-titrating (APAP)** device in uncomplicated OSA; typical therapeutic pressures are 6-14 cm H2O.",
+            "Choose a nasal mask first and an oronasal mask for mouth breathers; add a **heated humidifier** for nasal dryness and a chin strap where indicated.",
+            "**Common side effects and fixes:** mask leak and skin pressure marks (refit and resize), nasal congestion and rhinorrhoea (humidification, intranasal steroid), dry mouth, aerophagia and abdominal distension (reduce pressure, consider bilevel), claustrophobia (desensitisation with daytime wear), and noise disturbing the partner.",
+          ],
+        },
+        {
+          heading: "4. Adherence and follow-up",
+          points: [
+            "**Adequate use is defined as 4 hours or more a night on at least 70% of nights**, and it must be verified from the machine's download rather than from the patient's report.",
+            "Review at 1 week, 1 month and then every 3-6 months; the first month decides long-term use, so treat side effects early and involve the bed partner.",
+            "Re-titrate after substantial weight change, and if sleepiness persists despite documented adherence look for insufficient sleep, depression, narcolepsy, periodic limb movements or residual events before prescribing modafinil.",
+          ],
+        },
+      ],
+      mustDraw: [
+        "A two-column table of CPAP side effects against their practical remedies.",
+      ],
+      markSplit: [
+        { part: "Mechanism and indications", marks: 2 },
+        { part: "Benefits", marks: 1 },
+        { part: "Set-up and side effects with remedies", marks: 1 },
+        { part: "Adherence definition and follow-up", marks: 1 },
+      ],
+      keywords: ["CPAP", "pneumatic splint", "adherence", "APAP", "BiPAP", "obstructive sleep apnoea"],
+    },
+  ],
+  mcqs: [
+    {
+      id: "respiratory-osa-q1",
+      stem: "According to standard scoring criteria, an obstructive apnoea in an adult polysomnogram is defined as:",
+      options: [
+        "A fall in airflow of 30% or more for 10 seconds or more with a 3% desaturation",
+        "A fall in airflow of 90% or more from baseline lasting 10 seconds or more with continued respiratory effort",
+        "A fall in airflow of 50% or more for 20 seconds or more with an arousal",
+        "Cessation of airflow for 10 seconds or more with absent respiratory effort",
+      ],
+      answer: 1,
+      explanation:
+        "An apnoea requires a drop in airflow of at least 90% for at least 10 seconds; it is called obstructive when respiratory effort continues against a closed airway. Option 1 is the definition of a hypopnoea, not an apnoea. Option 3 uses invented thresholds - neither the 50% fall nor the 20-second duration is a scoring rule. Option 4 describes a central apnoea, where effort is absent because the drive itself has stopped.",
+      difficulty: "moderate",
+    },
+    {
+      id: "respiratory-osa-q2",
+      stem: "A 52-year-old man has a polysomnogram showing an apnoea-hypopnoea index of 22 per hour. His obstructive sleep apnoea is graded as:",
+      options: ["Mild", "Moderate", "Severe", "Normal - no treatment needed"],
+      answer: 1,
+      explanation:
+        "The standard bands are mild 5 to under 15, moderate 15 to under 30, and severe 30 or more events per hour, so an AHI of 22 is moderate OSA and is itself an indication for CPAP. Mild would require an AHI under 15. Severe requires 30 or more. An AHI of 22 is far above the diagnostic threshold of 5, so calling it normal is wrong on both the number and the fact that moderate disease warrants treatment regardless of symptom score.",
+      difficulty: "easy",
+    },
+    {
+      id: "respiratory-osa-q3",
+      stem: "Which statement about the STOP-BANG questionnaire is correct?",
+      options: [
+        "A score of 3 or more confirms the diagnosis of obstructive sleep apnoea",
+        "It replaces polysomnography in patients with a high pre-test probability",
+        "A score of 5 to 8 indicates high risk and warrants a sleep study",
+        "It grades the severity of obstructive sleep apnoea as mild, moderate or severe",
+      ],
+      answer: 2,
+      explanation:
+        "STOP-BANG bands are 0-2 low, 3-4 intermediate and 5-8 high risk; a high score identifies who needs testing and who needs perioperative caution. Option 1 confuses risk stratification with diagnosis - a screening tool with high sensitivity and modest specificity cannot confirm anything. Option 2 is wrong because the diagnosis and the AHI still require a sleep study; a high pre-test probability permits a home study, not no study. Option 4 is wrong because severity is graded only by the AHI from polysomnography, not by any questionnaire.",
+      difficulty: "easy",
+    },
+    {
+      id: "respiratory-osa-q4",
+      stem: "A 55-year-old man with a BMI of 41 has daytime somnolence, an AHI of 40 per hour, and an awake arterial blood gas showing PaO2 62 mmHg and PaCO2 52 mmHg with a normal spirometry. The most likely additional diagnosis is:",
+      options: [
+        "Chronic obstructive pulmonary disease",
+        "Obesity hypoventilation syndrome",
+        "Central sleep apnoea with Cheyne-Stokes breathing",
+        "Idiopathic pulmonary fibrosis",
+      ],
+      answer: 1,
+      explanation:
+        "Obesity hypoventilation syndrome is defined as BMI of 30 or more with awake daytime hypercapnia (PaCO2 above 45 mmHg) once other causes are excluded, and about 90% of these patients also have OSA - exactly this picture. COPD is excluded by the normal spirometry, which would show a reduced FEV1/FVC ratio. Central sleep apnoea produces apnoeas with absent effort and is typically associated with heart failure or opioids, and would not explain awake hypercapnia in an obese man with a high obstructive AHI. Idiopathic pulmonary fibrosis causes a restrictive pattern with hypoxaemia and a low or normal PaCO2, not hypercapnia, and spirometry here is normal.",
+      difficulty: "hard",
+    },
+    {
+      id: "respiratory-osa-q5",
+      stem: "A 9-year-old boy has habitual snoring, mouth breathing, restless sleep, secondary enuresis and deteriorating school performance with hyperactivity. Examination shows grade 3 tonsils. The most appropriate definitive treatment is:",
+      options: [
+        "Continuous positive airway pressure at night",
+        "Adenotonsillectomy",
+        "A mandibular advancement device",
+        "A trial of intranasal corticosteroid alone for six months",
+      ],
+      answer: 1,
+      explanation:
+        "Adenotonsillar hypertrophy is the commonest cause of paediatric obstructive sleep apnoea and adenotonsillectomy is the first-line definitive treatment, with hyperactivity rather than sleepiness being the typical daytime presentation in children. CPAP is used in children only when surgery is contraindicated, refused, or has failed to resolve residual disease. A mandibular advancement device is an adult option for mild-to-moderate disease and is unsuitable in a growing child with tonsillar obstruction. Intranasal steroid with or without montelukast may help mild residual disease or those unfit for surgery, but it does not address grade 3 tonsils and delaying six months risks continued growth and cognitive consequences.",
+      difficulty: "moderate",
+    },
+  ],
+  cards: [
+    {
+      id: "respiratory-osa-c1",
+      front: "Define an apnoea and a hypopnoea on polysomnography",
+      back: "Apnoea: airflow falls by 90% or more for 10 seconds or more (obstructive if effort continues). Hypopnoea: airflow falls by 30% or more for 10 seconds or more with a 3% desaturation or an arousal.",
+    },
+    {
+      id: "respiratory-osa-c2",
+      front: "Diagnostic threshold for obstructive sleep apnoea",
+      back: "AHI of 5 or more per hour with symptoms or an associated comorbidity, or an AHI of 15 or more per hour with or without symptoms.",
+    },
+    {
+      id: "respiratory-osa-c3",
+      front: "AHI severity bands",
+      back: "Mild 5 to under 15, moderate 15 to under 30, severe 30 or more events per hour of sleep.",
+    },
+    {
+      id: "respiratory-osa-c4",
+      front: "Expand STOP-BANG and give the risk bands",
+      back: "Snoring, Tiredness, Observed apnoea, Pressure (hypertension), BMI over 35, Age over 50, Neck over 40 cm, male Gender. 0-2 low, 3-4 intermediate, 5-8 high risk.",
+    },
+    {
+      id: "respiratory-osa-c5",
+      front: "Epworth Sleepiness Scale - range and cut-off",
+      back: "Eight situations scored 0-3, total 0-24; above 10 indicates excessive daytime sleepiness. It measures sleepiness, not the severity of obstruction.",
+    },
+    {
+      id: "respiratory-osa-c6",
+      front: "How does CPAP work, and what counts as adequate adherence?",
+      back: "It is a pneumatic splint holding the pharynx open during sleep. Adequate use is 4 hours or more a night on at least 70% of nights, verified from the device download.",
+    },
+    {
+      id: "respiratory-osa-c7",
+      front: "Define obesity hypoventilation syndrome",
+      back: "BMI 30 or more with awake daytime hypercapnia (PaCO2 above 45 mmHg) and no other cause; about 90% also have OSA. Treated with positive airway pressure plus weight loss.",
+    },
+    {
+      id: "respiratory-osa-c8",
+      front: "Effect of weight loss on OSA, and first-line treatment in children",
+      back: "A 10% loss of body weight reduces the AHI by roughly 25-30%. In children, adenotonsillar hypertrophy is the usual cause and adenotonsillectomy the first-line treatment.",
+    },
+  ],
+  references: [
+    "American Academy of Sleep Medicine - The AASM Manual for the Scoring of Sleep and Associated Events, version 3, 2023",
+    "American Academy of Sleep Medicine - International Classification of Sleep Disorders, 3rd edition text revision (ICSD-3-TR), 2023",
+    "AASM Clinical Practice Guideline - Diagnostic Testing for Adult Obstructive Sleep Apnea, Journal of Clinical Sleep Medicine, 2017",
+    "AASM Clinical Practice Guideline - Positive Airway Pressure Treatment for Obstructive Sleep Apnea in Adults, 2019",
+    "Indian Initiative on Obstructive Sleep Apnoea (INOSA) guidelines - ICMR and Ministry of Health and Family Welfare, Government of India, 2014",
+    "Harrison's Principles of Internal Medicine, 21st edition, 2022 - sleep apnoea",
+    "Murray and Nadel's Textbook of Respiratory Medicine, 7th edition, 2022 - obstructive sleep apnoea",
+  ],
+});
+
 const cases: ClinicalCase[] = [
   {
     id: "respiratory-case-1",

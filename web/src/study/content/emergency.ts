@@ -2769,6 +2769,446 @@ topics.push({
   ],
 });
 
+topics.push({
+  id: "emergency-altered-sensorium",
+  title: "Altered sensorium in the clinic",
+  oneLiner:
+    "Altered sensorium is any acute change in the level of arousal or the content of consciousness, and in a family clinic it is managed by securing airway, breathing and circulation first, then excluding hypoglycaemia, hypoxia, opioid effect and seizure at the bedside within minutes, before a structured search through the AEIOU TIPS causes and an early, escorted transfer.",
+  frequency: "core",
+  keywords: [
+    "altered sensorium",
+    "altered mental status",
+    "coma",
+    "unconscious patient",
+    "delirium",
+    "Glasgow Coma Scale",
+    "GCS",
+    "AEIOU TIPS",
+    "hypoglycaemia",
+    "coma cocktail",
+    "naloxone",
+    "thiamine",
+    "Wernicke encephalopathy",
+    "status epilepticus",
+    "hepatic encephalopathy",
+    "cerebral malaria",
+    "hyponatraemia",
+    "meningitis",
+    "AVPU",
+    "pupillary signs",
+  ],
+  sections: [
+    {
+      heading: "Definition, triage and the first five minutes",
+      points: [
+        "**Altered sensorium is an acute disturbance of either arousal (the level of consciousness) or content (awareness, attention and cognition), and it is a symptom, never a diagnosis.** The examiner wants that distinction in the first line: a drowsy patient has reduced arousal, a confused but awake patient has disordered content, and both are emergencies until a cause is found.",
+        "Grade the level immediately with **AVPU - Alert, responds to Voice, responds to Pain, Unresponsive - because it takes five seconds, and any patient who is P or U has a Glasgow Coma Scale of about 8 or less and an airway that is no longer protected.** Convert to a formal GCS with the three components written separately (E, V, M) once the airway is safe.",
+        "Work in the fixed order airway, breathing, circulation, disability, exposure. **The commonest avoidable death in altered sensorium is aspiration or obstruction from an unsupported airway, not the underlying disease**, so a head-tilt chin-lift or jaw thrust, suction, an oropharyngeal airway and the recovery position come before any history taking.",
+        "Attach oxygen to keep saturation 94-98% (88-92% if known chronic hypercapnic lung disease), attach a pulse oximeter, take the blood pressure, count the respiratory rate, and check the temperature; hypoxia, hypotension, hypoglycaemia and hyperthermia are all causes of coma that are correctable in the clinic itself.",
+        "**Check capillary blood glucose in every single patient with altered sensorium, without exception, before anything else diagnostic** - it is the one cause that is both instantly reversible and instantly fatal if missed, and no clinical sign reliably separates hypoglycaemia from stroke or sepsis.",
+        "While the examination proceeds, send a named person to call the ambulance service and a named person to bring the emergency tray and glucometer; simultaneously ask a relative for the three questions that solve most cases - what drugs and alcohol, what illnesses, and what happened in the last 24 hours.",
+      ],
+    },
+    {
+      heading: "The structured cause list: AEIOU TIPS in Indian practice",
+      points: [
+        "**AEIOU TIPS: Alcohol and Acidosis; Epilepsy, Endocrine and Electrolytes; Insulin (hypo- and hyperglycaemia); Opiates and Oxygen lack; Uraemia; Trauma and Temperature; Infection; Psychiatric and Porphyria; Stroke, Shock, Space-occupying lesion and Snake bite.** Reciting a structured list is worth more marks than naming ten diseases at random.",
+        "In Indian family practice the commonest causes in an adult are **hypoglycaemia from sulfonylureas or insulin, alcohol intoxication and withdrawal, sepsis with delirium in the elderly, stroke, uraemic and hepatic encephalopathy, and organophosphate or other deliberate self-poisoning**; add cerebral malaria, enteric fever and tuberculous meningitis where those are endemic.",
+        "In a child the priorities differ: **hypoglycaemia, febrile status epilepticus, acute bacterial meningitis, cerebral malaria, dengue with shock, diabetic ketoacidosis presenting for the first time, accidental kerosene or drug ingestion, and inflicted head injury.** A child with fever and altered sensorium has meningitis until proved otherwise.",
+        "In the elderly, altered sensorium is usually **delirium from a systemic cause outside the brain - urinary or chest infection, dehydration, urinary retention, constipation, hypoxia, or a newly added anticholinergic, benzodiazepine, opioid or steroid** - and the drug chart is part of the neurological examination.",
+        "Never accept the label of alcohol intoxication, psychiatric illness or postictal state at first contact. **A patient who smells of alcohol may still have a subdural haematoma, hypoglycaemia or Wernicke encephalopathy**, and the diagnosis of a functional cause is one of exclusion made after glucose, oxygenation and a neurological examination are documented as normal.",
+        "Ask specifically about the tempo: a sudden onset over seconds to minutes suggests vascular, seizure or cardiac causes; hours to days suggests infection, metabolic or drug causes; days to weeks suggests a space-occupying lesion, chronic subdural haematoma, tuberculous meningitis or hypothyroidism.",
+      ],
+    },
+    {
+      heading: "The focused examination that localises the problem",
+      points: [
+        "**Record the GCS as its three components (for example E2 V2 M4 = 8) rather than the total alone**, because the motor score carries most of the prognostic weight and a total score hides deterioration in one component. A fall of 2 or more points, or any fall to 8 or below, mandates immediate airway support and transfer.",
+        "**Pupils are the single most useful sign in an unconscious patient**: pinpoint and reactive suggests opioids or pontine haemorrhage; a unilateral fixed dilated pupil suggests uncal herniation from an expanding mass and is an emergency; mid-position fixed pupils suggest midbrain injury; and widely dilated reactive pupils suggest anticholinergic or sympathomimetic poisoning.",
+        "Look for lateralising signs by observing spontaneous movement and the response to a painful stimulus on each side; **asymmetry of movement, tone or plantar response points to a structural lesion, while a symmetrical picture with preserved brainstem reflexes points to a metabolic or toxic cause.**",
+        "Examine the neck for stiffness (absent in the very young, the very old and the deeply comatose), the fundus for papilloedema and subhyaloid haemorrhage, the skin for rash, needle marks, jaundice, cyanosis and injury, the breath for alcohol, ketones or the garlic odour of organophosphate, and the scalp and mastoids for injury.",
+        "**Look for the treatable poisoning toxidromes: cholinergic (pinpoint pupils, sweating, salivation, bradycardia, fasciculations - organophosphate), opioid (pinpoint pupils, slow shallow respiration, coma), anticholinergic (dry, hot, flushed, dilated pupils, retention) and sympathomimetic (dilated pupils, sweating, tachycardia, hypertension).**",
+        "Document the time of every observation. A single GCS has limited value; **the trend of the GCS, pupils and vital signs over 15-minute intervals is what the receiving hospital and the court will read**, and it is the trend that decides whether transfer becomes urgent.",
+      ],
+    },
+    {
+      heading: "The bedside cocktail: what to give, at what dose, and when",
+      points: [
+        "**Hypoglycaemia (capillary glucose below 70 mg/dL, or any unconscious diabetic whatever the reading): adult 25% dextrose 100 mL (25 g) intravenously over 1-3 minutes through a large-bore cannula, repeated after 10-15 minutes if the patient has not woken and the glucose remains low.** Recheck glucose 15 minutes after every dose.",
+        "**Paediatric hypoglycaemia: 10% dextrose 5 mL/kg (0.5 g/kg) intravenously; for a neonate use 10% dextrose 2 mL/kg. Never give 25% or 50% dextrose to a small child through a peripheral vein** - it is hyperosmolar, scleroses veins and causes tissue necrosis on extravasation. If no vein is available, glucagon 1 mg intramuscularly for an adult or child over 25 kg, and 0.5 mg if under 25 kg.",
+        "**Give thiamine 100 mg intravenously or intramuscularly before or with the glucose in anyone malnourished, alcoholic, vomiting in pregnancy or on dialysis**, because a glucose load in thiamine deficiency can precipitate Wernicke encephalopathy. Where Wernicke is suspected clinically, the treatment dose is thiamine 500 mg intravenously three times a day for 2 days, then 250 mg daily.",
+        "**Suspected opioid overdose (respiratory rate below 12, pinpoint pupils, coma): naloxone 0.4 mg intravenously, repeated every 2-3 minutes titrated to an adequate respiratory rate rather than to full wakefulness, up to a total of about 10 mg before the diagnosis is reconsidered.** If no vein, give the same dose intramuscularly. Child: 0.01 mg/kg intravenously, repeated every 2-3 minutes.",
+        "**Naloxone is shorter acting than every opioid it reverses (its effect wanes in 30-90 minutes), so a patient who wakes must still be observed or transferred, and long-acting agents such as methadone or sustained-release morphine need an infusion.** Sudden full reversal in a dependent patient causes agitation, vomiting and aspiration - titrate.",
+        "**Do not give flumazenil routinely for suspected benzodiazepine overdose**: in a mixed overdose or a chronically dependent patient it precipitates intractable seizures and arrhythmia, and supportive airway care is safer. Similarly, avoid empirical sedation of an agitated confused patient until glucose and hypoxia have been excluded.",
+      ],
+    },
+    {
+      heading: "Cause-specific treatment started before transfer",
+      points: [
+        "**Convulsive status epilepticus (a seizure lasting 5 minutes or more, or repeated seizures without recovery between): lorazepam 4 mg intravenously over 2 minutes in an adult, repeated once after 10 minutes; if no intravenous access, midazolam 10 mg intramuscularly (5 mg if 13-40 kg).** Child: lorazepam 0.1 mg/kg intravenously to a maximum of 4 mg per dose, or buccal or intranasal midazolam 0.2 mg/kg to a maximum of 10 mg, or rectal diazepam 0.5 mg/kg to a maximum of 20 mg.",
+        "**If seizures continue after two doses of benzodiazepine, give a second-line agent while arranging transfer: levetiracetam 60 mg/kg intravenously over 10 minutes (maximum 4500 mg), or sodium valproate 40 mg/kg (maximum 3000 mg), or fosphenytoin 20 mg phenytoin-equivalents/kg.** Plain phenytoin 20 mg/kg must be diluted in normal saline only and infused at no more than 50 mg/min in an adult (1 mg/kg/min in a child) with cardiac monitoring.",
+        "**Suspected bacterial meningitis (fever, headache, neck stiffness, altered sensorium, purpuric rash): give the first dose of ceftriaxone before transfer - adult 2 g intravenously (then 12-hourly), child 50 mg/kg per dose (100 mg/kg/day in two divided doses, maximum 4 g/day)**, with dexamethasone 0.15 mg/kg intravenously 6-hourly given with or just before the first antibiotic dose. Do not delay antibiotics for imaging or lumbar puncture.",
+        "**Cerebral malaria in an endemic area: intravenous artesunate 2.4 mg/kg at 0, 12 and 24 hours and then daily; children under 20 kg receive 3 mg/kg per dose.** Treat the hypoglycaemia that accompanies it, avoid fluid overload, and never use quinine as first line where artesunate is available.",
+        "Hepatic encephalopathy is treated by finding and stopping the precipitant - gastrointestinal bleeding, sepsis, constipation, diuretics, sedatives, high protein load - together with lactulose 30 mL orally or by nasogastric tube two to four times a day, titrated to two or three soft stools daily.",
+        "**Severe symptomatic hyponatraemia with seizures or coma: 3% saline 100 mL intravenously over 10 minutes, repeated up to three times until symptoms improve, while keeping total correction within 8 mmol/L in 24 hours** - faster correction risks osmotic demyelination. In hypertensive encephalopathy, lower the mean arterial pressure by no more than 20-25% in the first hour, with a titratable agent such as labetalol.",
+      ],
+    },
+    {
+      heading: "Airway, transfer and the medico-legal record",
+      points: [
+        "**A GCS of 8 or less, loss of the gag reflex, or vomit or blood in the airway means the airway must be secured**; in a clinic without intubation skills this is a jaw thrust, suction, an oropharyngeal airway, the left lateral recovery position, high-flow oxygen and the fastest possible escorted transfer.",
+        "Restrict spinal motion in any unconscious patient in whom trauma cannot be excluded from the history, and log-roll rather than lift. **A patient found unconscious at the roadside or at the bottom of stairs is a trauma patient until the mechanism is known.**",
+        "Send with the patient: the timed observation chart including serial GCS and pupils, the capillary glucose readings and everything given with times and doses, the drug packets or poison container brought by the family, and a written referral naming the accepting doctor if one has been contacted.",
+        "**Do not send an unconscious patient in a private car with only a relative.** Send a trained escort, a self-inflating bag with mask, suction, oxygen sufficient for at least twice the journey time, and the drugs already needed, and hand over face to face.",
+        "Record the medico-legal essentials when the cause may be poisoning, assault, road traffic injury, burns or a suspicious fall: the time and place found, who brought the patient, the exact words of the informant, the findings, the police intimation, and the identifying marks; alcohol should be described as an odour, never certified.",
+        "Explain honestly to the family that the cause is not yet known, that the patient is being transferred because the clinic cannot provide imaging and intensive care, and document the explanation and the consent for transfer.",
+      ],
+    },
+  ],
+  tables: [
+    {
+      heading: "Glasgow Coma Scale - record E, V and M separately",
+      columns: ["Score", "Eye opening (E)", "Verbal response (V)", "Best motor response (M)"],
+      rows: [
+        ["6", "Not applicable", "Not applicable", "Obeys commands"],
+        ["5", "Not applicable", "Oriented", "Localises to pain"],
+        ["4", "Spontaneous", "Confused conversation", "Withdraws from pain"],
+        ["3", "To speech", "Inappropriate words", "Abnormal flexion (decorticate)"],
+        ["2", "To pain", "Incomprehensible sounds", "Extension (decerebrate)"],
+        ["1", "None", "None", "None"],
+      ],
+    },
+    {
+      heading: "Bedside finding, the cause it signals, and the immediate drug with dose",
+      columns: ["Bedside finding", "Cause it signals", "Immediate action with dose"],
+      rows: [
+        [
+          "Capillary glucose below 70 mg/dL",
+          "Hypoglycaemia (sulfonylurea, insulin, alcohol, sepsis, malaria)",
+          "Adult 25% dextrose 100 mL IV over 1-3 min, repeat in 10-15 min if still low; child 10% dextrose 5 mL/kg IV; neonate 10% dextrose 2 mL/kg IV",
+        ],
+        [
+          "Pinpoint pupils with respiratory rate below 12",
+          "Opioid toxicity",
+          "Naloxone 0.4 mg IV (or IM if no vein), repeat every 2-3 min titrated to respiration, up to about 10 mg total; child 0.01 mg/kg IV every 2-3 min",
+        ],
+        [
+          "Pinpoint pupils with sweating, salivation, fasciculations",
+          "Organophosphate or carbamate poisoning",
+          "Atropine 2-5 mg IV in an adult (child 0.05 mg/kg), dose doubled every 5 min until chest is clear and skin dry; then pralidoxime",
+        ],
+        [
+          "Continuous seizure for 5 minutes or more",
+          "Convulsive status epilepticus",
+          "Lorazepam 4 mg IV over 2 min, repeat once after 10 min; no vein: midazolam 10 mg IM (adult). Child: lorazepam 0.1 mg/kg IV, max 4 mg per dose",
+        ],
+        [
+          "Fever with neck stiffness or purpuric rash",
+          "Bacterial meningitis or meningococcaemia",
+          "Ceftriaxone 2 g IV in an adult (child 50 mg/kg per dose) plus dexamethasone 0.15 mg/kg IV, given before transfer and before imaging",
+        ],
+        [
+          "Malnourished or alcoholic patient needing glucose",
+          "Risk of precipitating Wernicke encephalopathy",
+          "Thiamine 100 mg IV or IM before or with the dextrose; if Wernicke is suspected, thiamine 500 mg IV three times daily for 2 days",
+        ],
+      ],
+    },
+  ],
+  redFlags: [
+    "Glasgow Coma Scale 8 or less, or a fall of 2 or more points on serial charting - the airway is unprotected and transfer is immediate.",
+    "A unilateral fixed dilated pupil, new asymmetric weakness, bradycardia with hypertension and irregular breathing (Cushing response) - raised intracranial pressure with herniation.",
+    "Fever with neck stiffness, a purpuric or petechial rash, or altered sensorium in a child with fever - give ceftriaxone and transfer without waiting for investigations.",
+    "Altered sensorium with a capillary glucose below 70 mg/dL that recurs after treatment, especially on a sulfonylurea - these patients need admission and a dextrose infusion, never discharge.",
+    "Any unconscious patient with an unclear mechanism of injury, blood at the meatus, scalp wound or possible fall - manage as trauma with spinal motion restriction.",
+    "Focal seizure or seizure that does not stop after two doses of benzodiazepine, or a postictal state that does not clear within 30 minutes.",
+  ],
+  pearls: [
+    "Glucose first, every time. A capillary glucose takes 30 seconds and is the only test that can end the emergency; forgetting it is the commonest single error in the viva and in the clinic.",
+    "Give thiamine 100 mg before or with dextrose in the malnourished or alcoholic patient - the glucose load consumes the last of the thiamine and can precipitate Wernicke encephalopathy.",
+    "Record GCS as E, V and M, not as a total. The examiner will ask you to break down a total of 8, and the motor score carries the prognosis.",
+    "Naloxone is titrated to respiratory rate, not to wakefulness, and wears off before the opioid does - so the patient still needs observation or transfer after waking.",
+    "A patient smelling of alcohol has an alternative diagnosis until glucose, oxygenation, a neurological examination and a head-to-toe survey say otherwise; subdural haematoma is the classic missed cause.",
+    "In the elderly, delirium is usually caused outside the brain - infection, retention, constipation, dehydration or a new drug - so review the prescription as part of the neurological examination.",
+  ],
+  theory: [
+    {
+      id: "emergency-altered-sensorium-t1",
+      paper: "III",
+      kind: "long",
+      marks: 10,
+      minutes: 20,
+      frequency: "core",
+      question:
+        "A 58-year-old man is brought to your clinic by his family, unresponsive for the last one hour. Describe your immediate assessment and management, and outline the causes you would consider.",
+      openingLines: [
+        "Altered sensorium is an acute disturbance of the level of arousal or the content of consciousness; it is a symptom and not a diagnosis, and in an unresponsive adult it is an immediate threat to the airway.",
+        "My management runs in parallel rather than in sequence: airway, breathing and circulation are secured while a capillary blood glucose is checked, reversible causes are treated at the bedside, and a structured search for the cause proceeds using the AEIOU TIPS framework, with early escorted transfer.",
+      ],
+      answer: [
+        {
+          heading: "Immediate resuscitation (first 5 minutes)",
+          points: [
+            "Assess responsiveness with AVPU; a patient responding only to pain or unresponsive has a GCS of about 8 or less and an unprotected airway.",
+            "Open the airway with head-tilt chin-lift, or jaw thrust if trauma is possible; suction secretions or vomit, insert an oropharyngeal airway if tolerated, and place in the left lateral recovery position.",
+            "Give oxygen to maintain saturation 94-98%, support ventilation with a bag and mask if the respiratory rate is below 8 or breathing is inadequate, and attach a pulse oximeter.",
+            "Secure two intravenous cannulae, record pulse, blood pressure, respiratory rate and temperature, and treat shock with a fluid bolus while looking for its cause.",
+            "Check capillary blood glucose immediately in every patient, without exception.",
+          ],
+        },
+        {
+          heading: "The bedside reversible-cause cocktail with doses",
+          points: [
+            "Hypoglycaemia: 25% dextrose 100 mL (25 g) intravenously over 1-3 minutes in an adult, repeated after 10-15 minutes if not awake and glucose remains low; in a child 10% dextrose 5 mL/kg, and in a neonate 10% dextrose 2 mL/kg. Recheck glucose 15 minutes after each dose.",
+            "Thiamine 100 mg intravenously or intramuscularly before or with the dextrose in the malnourished or alcoholic patient; 500 mg intravenously three times daily for 2 days if Wernicke encephalopathy is suspected.",
+            "Suspected opioid toxicity: naloxone 0.4 mg intravenously repeated every 2-3 minutes, titrated to an adequate respiratory rate, to a maximum of about 10 mg; child 0.01 mg/kg. Observe after waking because naloxone wears off in 30-90 minutes.",
+            "Seizure lasting 5 minutes or more: lorazepam 4 mg intravenously over 2 minutes, repeated once after 10 minutes; midazolam 10 mg intramuscularly if there is no venous access.",
+            "Avoid flumazenil for suspected benzodiazepine overdose because of the risk of precipitating seizures in a mixed overdose or dependent patient.",
+          ],
+        },
+        {
+          heading: "Focused history and examination",
+          points: [
+            "History from the family: diabetes and its drugs, alcohol, epilepsy, liver or kidney disease, psychiatric illness, recent fever or headache, trauma, all prescribed and traditional medicines, and access to poisons or pesticides.",
+            "Examine for GCS recorded as E, V and M; pupil size, symmetry and reaction; lateralising motor signs; neck stiffness; fundus for papilloedema; and a head-to-toe survey for injury, needle marks, rash and jaundice.",
+            "Identify toxidromes: cholinergic, opioid, anticholinergic and sympathomimetic, each of which has a specific antidote or specific supportive treatment.",
+            "Repeat and chart the observations at 15-minute intervals; the trend, not the single reading, drives decisions.",
+          ],
+        },
+        {
+          heading: "Causes - AEIOU TIPS",
+          points: [
+            "Alcohol and Acidosis; Epilepsy, Endocrine (thyroid, adrenal) and Electrolytes; Insulin - both hypoglycaemia and hyperglycaemic emergencies; Opiates and Oxygen lack.",
+            "Uraemia and other organ failures including hepatic encephalopathy; Trauma including chronic subdural haematoma, and Temperature (heat stroke, hypothermia).",
+            "Infection - meningitis, encephalitis, cerebral malaria, enteric fever, sepsis with delirium in the elderly; Psychiatric and Porphyria.",
+            "Stroke, Shock, Space-occupying lesion and Snake bite (neurotoxic envenomation presenting as ptosis and paralysis rather than true coma).",
+          ],
+        },
+        {
+          heading: "Investigations and definitive plan",
+          points: [
+            "At the clinic: capillary glucose, pulse oximetry, ECG, urine dipstick, and where available haemoglobin, urea, creatinine, sodium, potassium and a malaria rapid test.",
+            "At the referral centre: computed tomography of the head, lumbar puncture where meningitis is suspected and there is no contraindication, arterial blood gas, liver and thyroid function, ammonia, blood cultures and a toxicology screen.",
+            "Cause-specific treatment begun before transfer where indicated: ceftriaxone 2 g intravenously plus dexamethasone 0.15 mg/kg for suspected bacterial meningitis; artesunate 2.4 mg/kg intravenously for cerebral malaria; atropine for organophosphate poisoning.",
+            "Transfer with a trained escort, oxygen, suction, a self-inflating bag, the timed observation chart and the drug or poison containers; hand over face to face and complete medico-legal documentation where required.",
+          ],
+        },
+      ],
+      mustDraw: [
+        "A flow chart: unresponsive patient - AVPU and airway - oxygen and monitoring - capillary glucose - reversible-cause cocktail - focused examination with GCS and pupils - AEIOU TIPS search - stabilise and transfer.",
+        "The AEIOU TIPS mnemonic expanded, with one Indian example against each letter.",
+        "A GCS table with the E, V and M components scored out.",
+      ],
+      markSplit: [
+        { part: "Definition and the parallel ABCDE approach with airway protection", marks: 2 },
+        { part: "Capillary glucose and the reversible-cause cocktail with correct doses", marks: 3 },
+        { part: "Focused examination including GCS, pupils and toxidromes", marks: 2 },
+        { part: "AEIOU TIPS cause list", marks: 2 },
+        { part: "Investigations, cause-specific treatment and safe transfer", marks: 1 },
+      ],
+      keywords: [
+        "altered sensorium",
+        "coma",
+        "AEIOU TIPS",
+        "GCS",
+        "hypoglycaemia",
+        "naloxone",
+        "thiamine",
+      ],
+    },
+    {
+      id: "emergency-altered-sensorium-t2",
+      paper: "III",
+      kind: "short-note",
+      marks: 5,
+      minutes: 10,
+      frequency: "common",
+      question: "Short note: Convulsive status epilepticus - recognition and emergency management in family practice.",
+      openingLines: [
+        "Convulsive status epilepticus is a generalised convulsion lasting 5 minutes or longer, or two or more seizures without full recovery of consciousness between them; the older 30-minute definition is now used only to define established status.",
+        "It is a time-critical emergency because neuronal injury and pharmacoresistance both increase with duration, so treatment is by the clock and not by observation.",
+      ],
+      answer: [
+        {
+          heading: "Immediate measures",
+          points: [
+            "Protect from injury, do not restrain the limbs and do not put anything into the mouth; turn the patient into the left lateral position and suction the airway.",
+            "Give high-flow oxygen, attach a pulse oximeter, note the time the seizure began, and secure intravenous access.",
+            "Check capillary blood glucose in every fitting patient and correct hypoglycaemia with 25% dextrose 100 mL intravenously in an adult, or 10% dextrose 5 mL/kg in a child.",
+            "Give thiamine 100 mg intravenously before glucose in the alcoholic or malnourished patient.",
+          ],
+        },
+        {
+          heading: "First-line drug treatment with doses",
+          points: [
+            "Adult: lorazepam 4 mg intravenously over 2 minutes, repeated once after 10 minutes if the seizure continues (maximum two doses).",
+            "Adult without intravenous access: midazolam 10 mg intramuscularly, or diazepam 10 mg by the rectal route.",
+            "Child: lorazepam 0.1 mg/kg intravenously to a maximum of 4 mg per dose; without access, buccal or intranasal midazolam 0.2 mg/kg to a maximum of 10 mg, or rectal diazepam 0.5 mg/kg to a maximum of 20 mg.",
+            "Never exceed two doses of benzodiazepine - a third dose adds respiratory depression without adding seizure control.",
+          ],
+        },
+        {
+          heading: "Second line and transfer",
+          points: [
+            "Levetiracetam 60 mg/kg intravenously over 10 minutes (maximum 4500 mg), or sodium valproate 40 mg/kg (maximum 3000 mg), or fosphenytoin 20 mg phenytoin-equivalents/kg.",
+            "Plain phenytoin 20 mg/kg must be diluted in normal saline only, never dextrose, and given no faster than 50 mg/min in an adult or 1 mg/kg/min in a child, with pulse and blood pressure monitoring.",
+            "If seizures persist after the second-line agent, this is refractory status requiring anaesthesia and ventilation - arrange immediate escorted transfer with airway support.",
+            "Look for and treat the precipitant: missed antiepileptic doses, alcohol withdrawal, hypoglycaemia, hyponatraemia, meningitis, cerebral malaria, eclampsia, head injury or a space-occupying lesion.",
+          ],
+        },
+        {
+          heading: "Special situation",
+          points: [
+            "In a pregnant or recently delivered woman with a seizure, treat as eclampsia: magnesium sulphate 4 g of 20% solution intravenously over 5 minutes plus 10 g of 50% solution intramuscularly (5 g into each buttock), then 5 g intramuscularly every 4 hours, with 2 g intravenously for a recurrent fit.",
+            "Monitor for magnesium toxicity by knee jerks, respiratory rate above 16 per minute and urine output above 30 mL per hour; the antidote is calcium gluconate 10%, 10 mL intravenously over 10 minutes.",
+          ],
+        },
+      ],
+      mustDraw: [
+        "A timeline: 0 min recognise and airway - 5 min first benzodiazepine - 15 min second benzodiazepine - 20-25 min second-line agent - 40 min refractory status and anaesthesia.",
+      ],
+      markSplit: [
+        { part: "Definition by the 5-minute rule", marks: 1 },
+        { part: "Immediate airway, oxygen and glucose measures", marks: 1 },
+        { part: "First-line benzodiazepine doses, adult and paediatric", marks: 2 },
+        { part: "Second-line agents, transfer and precipitants", marks: 1 },
+      ],
+      keywords: ["status epilepticus", "lorazepam", "midazolam", "levetiracetam", "eclampsia", "magnesium sulphate"],
+    },
+  ],
+  mcqs: [
+    {
+      id: "emergency-altered-sensorium-q1",
+      stem: "A 62-year-old man with type 2 diabetes on glibenclamide is brought unconscious to your clinic. Capillary glucose reads 38 mg/dL. He has no intravenous access yet and is thin and alcoholic. What is the most appropriate immediate action?",
+      options: [
+        "Secure a cannula and give 25% dextrose 100 mL intravenously, with thiamine 100 mg intravenously before or with the dextrose",
+        "Give 50% dextrose 50 mL through a small hand vein without thiamine, as thiamine delays treatment",
+        "Give oral glucose gel by placing it under the tongue while he is unconscious",
+        "Give intramuscular glucagon 1 mg first and withhold dextrose until he wakes",
+        "Transfer immediately without treatment because the cause requires hospital investigation",
+      ],
+      answer: 0,
+      explanation:
+        "Hypoglycaemia is the one instantly reversible cause of coma, and the adult dose is 25% dextrose 100 mL (25 g) intravenously, with thiamine 100 mg given before or with the glucose in an alcoholic or malnourished patient because a glucose load in thiamine deficiency can precipitate Wernicke encephalopathy; thiamine takes seconds to draw up and does not delay treatment. Fifty per cent dextrose through a small vein is unnecessarily hyperosmolar and risks phlebitis and extravasation necrosis, and omitting thiamine in this patient is the error the question tests. Anything oral in an unconscious patient risks aspiration. Glucagon is a fallback only when there is no venous access and works poorly in an alcoholic with depleted glycogen stores, so it does not replace dextrose. Transferring an untreated hypoglycaemic patient wastes the minutes in which brain injury becomes permanent, and a sulfonylurea-induced hypoglycaemia will in any case relapse and needs both immediate dextrose and admission.",
+      difficulty: "easy",
+    },
+    {
+      id: "emergency-altered-sensorium-q2",
+      stem: "A 24-year-old man is found unconscious with a respiratory rate of 8 per minute and pinpoint pupils. Capillary glucose is 96 mg/dL. What is the correct use of naloxone?",
+      options: [
+        "Give 2 mg intravenously as a single dose and discharge him once he is fully awake",
+        "Give 0.4 mg intravenously and repeat every 2-3 minutes titrated to an adequate respiratory rate, then observe or transfer because naloxone wears off before the opioid does",
+        "Give flumazenil first, since a mixed sedative overdose is more likely",
+        "Withhold naloxone and simply ventilate, since naloxone always causes seizures",
+        "Give naloxone by intravenous infusion only, since bolus dosing is contraindicated",
+      ],
+      answer: 1,
+      explanation:
+        "Naloxone is titrated in 0.4 mg intravenous increments every 2-3 minutes against the respiratory rate rather than against wakefulness, because full abrupt reversal in a dependent patient causes agitation, vomiting and aspiration; and since its action lasts only 30-90 minutes, which is shorter than most opioids, the patient must be observed or transferred even after waking. A single large dose followed by discharge is the classic fatal error, as re-narcotisation occurs after naloxone wears off. Flumazenil is not indicated here and is avoided in mixed overdose because it can precipitate intractable seizures. Ventilation alone is inferior when a safe specific antidote exists, and naloxone does not routinely cause seizures. An infusion is used for long-acting opioids after initial boluses, not instead of them.",
+      difficulty: "moderate",
+    },
+    {
+      id: "emergency-altered-sensorium-q3",
+      stem: "A 3-year-old child with fever for two days is brought drowsy, responding only to pain, with neck stiffness and two purpuric spots on the leg. There is a two-hour journey to the nearest hospital. What should you do before transfer?",
+      options: [
+        "Arrange transfer immediately without antibiotics so that the lumbar puncture is not affected",
+        "Give ceftriaxone 50 mg/kg intravenously with dexamethasone 0.15 mg/kg, then transfer with oxygen and an escort",
+        "Give oral amoxicillin and paracetamol and review in the morning",
+        "Perform a lumbar puncture in the clinic before starting any antibiotic",
+        "Give only intravenous fluids, since antibiotics in the clinic will mask the diagnosis",
+      ],
+      answer: 1,
+      explanation:
+        "Fever with altered sensorium, neck stiffness and a purpuric rash is meningococcal disease until proved otherwise, and mortality falls with the earliest possible parenteral antibiotic; the correct paediatric dose is ceftriaxone 50 mg/kg per dose (100 mg/kg/day in two divided doses) with dexamethasone 0.15 mg/kg given with or just before the first dose, followed by escorted transfer. Withholding antibiotics to protect the lumbar puncture result is wrong, because blood cultures, polymerase chain reaction and the clinical picture still allow diagnosis while a two-hour delay costs lives. Oral amoxicillin with next-day review in a child with reduced consciousness is indefensible. Lumbar puncture in a drowsy child in a clinic without resuscitation facilities is unsafe and must not precede antibiotics. Fluids alone treat neither the infection nor the raised risk of rapid deterioration.",
+      difficulty: "moderate",
+    },
+    {
+      id: "emergency-altered-sensorium-q4",
+      stem: "A 45-year-old man has been fitting continuously for 7 minutes. He has no intravenous access. Which is the correct first-line treatment?",
+      options: [
+        "Wait until 30 minutes have elapsed, as status epilepticus is defined by that duration",
+        "Midazolam 10 mg intramuscularly, with a second dose of benzodiazepine after 10 minutes if the seizure continues",
+        "Phenytoin 20 mg/kg intramuscularly",
+        "Three successive doses of intramuscular diazepam at 2-minute intervals",
+        "Intravenous levetiracetam before any benzodiazepine, once access is obtained",
+      ],
+      answer: 1,
+      explanation:
+        "Status epilepticus is now defined by a seizure of 5 minutes or more, and when there is no intravenous access the correct first-line drug is intramuscular midazolam 10 mg in an adult, with at most one further benzodiazepine dose after 10 minutes. Waiting for 30 minutes uses an obsolete definition and allows neuronal injury and benzodiazepine resistance to develop. Phenytoin must never be given intramuscularly because it is erratically absorbed and causes severe tissue necrosis; only fosphenytoin can be given by that route. Giving three or more benzodiazepine doses adds respiratory depression without improving seizure control, which is why the limit is two. Levetiracetam is a second-line agent used after two benzodiazepine doses have failed, not before them.",
+      difficulty: "easy",
+    },
+    {
+      id: "emergency-altered-sensorium-q5",
+      stem: "An 80-year-old woman is brought with two days of fluctuating confusion, worse at night, with visual hallucinations. She is afebrile, GCS 14, and was started on a bladder antispasmodic last week. Which statement best guides management?",
+      options: [
+        "This is dementia and needs no acute evaluation, only a memory clinic appointment",
+        "This is delirium, usually driven by a cause outside the brain such as infection, retention, constipation, dehydration or a new anticholinergic drug, and the search begins with a urine dipstick, bladder scan and drug review",
+        "The fluctuating course and hallucinations make an urgent computed tomogram of the head the single most useful first test",
+        "Start haloperidol at once, before looking for a cause, since agitation is the main risk",
+        "Because she is afebrile, infection is excluded and a psychiatric referral is appropriate",
+      ],
+      answer: 1,
+      explanation:
+        "An acute, fluctuating disturbance of attention with hallucinations is delirium, and in the elderly its cause is nearly always systemic - urinary or chest infection, urinary retention, constipation, dehydration, hypoxia, pain or a newly added anticholinergic, benzodiazepine or opioid - so a urine dipstick, palpation or scan of the bladder, bowel history and a line-by-line drug review come first, and the recently started antispasmodic is the prime suspect. Dementia is chronic and progressive without the acute fluctuating attentional deficit, and calling this dementia delays a reversible diagnosis. Imaging has a low yield in delirium without head injury, focal signs or anticoagulation, and should follow rather than precede the systemic search. Sedating with haloperidol before the cause is found masks deterioration, prolongs delirium and is reserved for dangerous agitation at the lowest effective dose. The elderly frequently mount no fever with significant infection, so being afebrile excludes nothing.",
+      difficulty: "moderate",
+    },
+  ],
+  cards: [
+    {
+      id: "emergency-altered-sensorium-c1",
+      front: "First test in every patient with altered sensorium?",
+      back: "Capillary blood glucose, without exception. It is the only cause of coma that is both instantly reversible and instantly fatal if missed, and no clinical sign distinguishes it reliably from stroke or sepsis.",
+    },
+    {
+      id: "emergency-altered-sensorium-c2",
+      front: "Dose of dextrose for hypoglycaemic coma - adult, child, neonate?",
+      back: "Adult: 25% dextrose 100 mL (25 g) IV over 1-3 minutes, repeat after 10-15 minutes if still low. Child: 10% dextrose 5 mL/kg IV. Neonate: 10% dextrose 2 mL/kg IV. Recheck glucose 15 minutes after each dose; never give 25% or 50% peripherally to a small child.",
+    },
+    {
+      id: "emergency-altered-sensorium-c3",
+      front: "Why thiamine before glucose, and at what dose?",
+      back: "A glucose load consumes the remaining thiamine and can precipitate Wernicke encephalopathy in the alcoholic or malnourished. Give thiamine 100 mg IV or IM before or with the dextrose; if Wernicke is suspected, 500 mg IV three times daily for 2 days, then 250 mg daily.",
+    },
+    {
+      id: "emergency-altered-sensorium-c4",
+      front: "Naloxone: dose, endpoint and the trap.",
+      back: "0.4 mg IV (or IM without a vein) repeated every 2-3 minutes, titrated to an adequate respiratory rate rather than to full wakefulness, up to about 10 mg total; child 0.01 mg/kg. Trap: naloxone lasts only 30-90 minutes, shorter than the opioid, so never discharge a patient who has woken.",
+    },
+    {
+      id: "emergency-altered-sensorium-c5",
+      front: "Expand AEIOU TIPS.",
+      back: "Alcohol and Acidosis; Epilepsy, Endocrine and Electrolytes; Insulin (hypo- and hyperglycaemia); Opiates and Oxygen lack; Uraemia and organ failure; Trauma and Temperature; Infection; Psychiatric and Porphyria; Stroke, Shock, Space-occupying lesion and Snake bite.",
+    },
+    {
+      id: "emergency-altered-sensorium-c6",
+      front: "Definition and first-line dose in convulsive status epilepticus.",
+      back: "A convulsion lasting 5 minutes or more, or repeated seizures without recovery between. Adult: lorazepam 4 mg IV over 2 minutes, repeat once after 10 minutes; no access - midazolam 10 mg IM. Child: lorazepam 0.1 mg/kg IV (max 4 mg per dose), or buccal/intranasal midazolam 0.2 mg/kg (max 10 mg). Maximum two benzodiazepine doses.",
+    },
+    {
+      id: "emergency-altered-sensorium-c7",
+      front: "What do the pupils tell you in an unconscious patient?",
+      back: "Pinpoint reactive - opioids or pontine haemorrhage; pinpoint with sweating, salivation and fasciculations - organophosphate; unilateral fixed dilated - uncal herniation, an emergency; mid-position fixed - midbrain lesion; widely dilated reactive - anticholinergic or sympathomimetic poisoning.",
+    },
+    {
+      id: "emergency-altered-sensorium-c8",
+      front: "Antibiotic and steroid before transfer in suspected bacterial meningitis?",
+      back: "Ceftriaxone 2 g IV in an adult (12-hourly thereafter), or 50 mg/kg per dose in a child (100 mg/kg/day in two divided doses, maximum 4 g/day), with dexamethasone 0.15 mg/kg IV 6-hourly given with or just before the first antibiotic dose. Never delay antibiotics for imaging or lumbar puncture.",
+    },
+  ],
+  references: [
+    "Kasper DL, Fauci AS et al (eds). Harrison's Principles of Internal Medicine, 21st edition, 2022 - Coma and Acute Confusional State",
+    "Ropper AH, Samuels MA, Klein JP, Prasad S. Adams and Victor's Principles of Neurology, 12th edition, 2023 - Coma and Related Disorders of Consciousness",
+    "Glasgow Coma Scale, Teasdale G et al. The Glasgow Coma Scale at 40 years: standing the test of time, Lancet Neurology 2014, and the structured GCS assessment aid, 2014",
+    "Neurocritical Care Society. Guidelines for the Evaluation and Management of Status Epilepticus, 2012, and Glauser T et al. Evidence-Based Guideline: Treatment of Convulsive Status Epilepticus, Epilepsy Currents 2016",
+    "National Health Mission, Government of India. Standard Treatment Guidelines for Medical Officers - Emergency and Critical Care, 2016",
+    "National Vector Borne Disease Control Programme, Government of India. National Drug Policy on Malaria, 2013 - management of severe and cerebral malaria",
+    "Nice CG. Head injury: assessment and early management, NICE guideline NG232, 2023",
+    "Indian Academy of Pediatrics. Standard Treatment Guidelines - Approach to a Child with Altered Sensorium, 2022",
+    "World Health Organization. Guidelines for Malaria, 2023 - intravenous artesunate dosing",
+    "Federation of Obstetric and Gynaecological Societies of India. Good Clinical Practice Recommendations on Pre-eclampsia and Eclampsia, 2019 - magnesium sulphate regimens",
+  ],
+});
+
 const cases: ClinicalCase[] = [
   {
     id: "emergency-case-1",

@@ -2848,6 +2848,432 @@ topics.push({
   ],
 });
 
+topics.push({
+  id: "gynaecology-cervical-cancer-screening",
+  title: "Cervical cancer screening with VIA and HPV testing, and HPV vaccination",
+  oneLiner:
+    "Cervical cancer is a preventable disease caused by persistent infection with high-risk human papillomavirus, and it is controlled by a three-pillar strategy of HPV vaccination of girls aged 9-14 years, screening of women aged 30-49 years with visual inspection with acetic acid or a high-performance HPV DNA test at least twice in a lifetime, and prompt treatment of screen-positive precancer by thermal ablation or large loop excision of the transformation zone.",
+  frequency: "common",
+  keywords: [
+    "cervical cancer",
+    "VIA",
+    "visual inspection with acetic acid",
+    "HPV",
+    "human papillomavirus",
+    "HPV DNA test",
+    "Pap smear",
+    "cervical cytology",
+    "Bethesda system",
+    "colposcopy",
+    "CIN",
+    "cervical intraepithelial neoplasia",
+    "LEEP",
+    "LLETZ",
+    "thermal ablation",
+    "cryotherapy",
+    "screen and treat",
+    "HPV vaccine",
+    "Cervavac",
+    "Gardasil",
+    "transformation zone",
+    "postcoital bleeding",
+    "WHO elimination 90-70-90",
+    "Ayushman Bharat health and wellness centre",
+  ],
+  sections: [
+    {
+      heading: "Burden and why screening works",
+      points: [
+        "Cervical cancer is the **second commonest cancer among Indian women** and the commonest cause of cancer death in women in many Indian registries, with about 1.23 lakh new cases and 77,000 deaths every year (GLOBOCAN 2020) - roughly a fifth of the world's burden in a country with a sixth of the world's women.",
+        "Almost all cervical cancer is caused by **persistent infection with one of about 14 high-risk HPV genotypes**; HPV 16 and 18 alone account for around 70% of cases worldwide and over 80% of cases in Indian series, which is why a vaccine covering only those two types still prevents most disease.",
+        "The natural history is the whole basis of screening: **HPV infection is common and usually transient**, with 80-90% of infections cleared by cell-mediated immunity within 2 years, but a minority persist, progress through CIN1 to CIN2 and CIN3, and only then to invasive cancer over a **latent period of 10-20 years**.",
+        "That long, detectable, treatable precancerous phase is what makes cervical cancer the only common cancer of women that can be prevented outright, and it means a woman screened even twice in her life gains a large part of the benefit of annual screening.",
+        "Risk factors are those that promote acquisition or persistence: **early age at first intercourse and early marriage, multiple partners or a partner with multiple partners, high parity, long-term combined oral contraceptive use, smoking, poor genital hygiene, low socio-economic status, and immunosuppression, especially HIV**, in which the risk of invasive disease is 6 times higher.",
+        "The **WHO global strategy for elimination (2020) sets the 90-70-90 targets for 2030**: 90% of girls fully vaccinated with HPV vaccine by age 15, 70% of women screened with a high-performance test at ages 35 and 45, and 90% of women with cervical disease receiving treatment. Elimination is defined as an incidence below 4 per 100,000 women-years.",
+      ],
+    },
+    {
+      heading: "The three screening tests and how they differ",
+      points: [
+        "**Visual inspection with acetic acid (VIA)** is the workhorse of the Indian programme: 5% acetic acid is applied to the cervix with a swab and the cervix is read in good light after one minute; a **dense, opaque, well-defined acetowhite lesion touching the squamocolumnar junction within the transformation zone is a positive test**. Acetic acid coagulates the abundant nuclear protein of dysplastic cells and turns them white.",
+        "VIA has a sensitivity of roughly 60-70% and a specificity of about 85% for CIN2 or worse. Its virtues are that it is **cheap, needs no laboratory, and gives an immediate result that permits a single-visit screen-and-treat approach**, which is the only way to avoid the enormous loss to follow-up seen in Indian programmes.",
+        "**VIA is not valid after the menopause** because the squamocolumnar junction recedes into the endocervical canal and cannot be seen; it is also unreliable in frank cervicitis and must never be used where a growth or ulcer is already visible.",
+        "**Cervical cytology (the conventional Pap smear or liquid-based cytology)** is reported by the **Bethesda 2014 system** as NILM, ASC-US, ASC-H, LSIL, HSIL, atypical glandular cells or carcinoma. A single smear has a sensitivity of only 50-60% for CIN2+ but a high specificity, so programmes based on it depend on repetition every 3 years and on a cytology workforce India does not have at scale.",
+        "**HPV DNA testing** detects the high-risk genotypes themselves and has a sensitivity of 90-95% for CIN2+ with a **negative predictive value above 99%**, which is what allows a screening interval of 5-10 years after a negative test. It is objective, can be run on a **self-collected vaginal sample**, and is the test WHO recommends as the primary screening test wherever it can be afforded.",
+        "The trade-off is specificity: HPV testing is positive in many young women with transient infection, so it is **not used below age 30** in the general population and positives are triaged, in India usually by VIA or cytology, before colposcopy.",
+        "The landmark Indian evidence is the **Osmanabad cluster-randomised trial (Sankaranarayanan, NEJM 2009)**, in which a single round of HPV testing reduced advanced cervical cancer and cervical cancer deaths, while single rounds of cytology and VIA did not reach significance for mortality - and the Mumbai trial (Shastri, 2014), in which four rounds of VIA by trained health workers reduced cervical cancer mortality by 31%.",
+      ],
+    },
+    {
+      heading: "The Indian programme: who, when and how often",
+      points: [
+        "Under the **Operational Framework for Management of Common Cancers (MoHFW, 2016)** and the population-based screening rolled out through **Ayushman Bharat Health and Wellness Centres under the NP-NCD**, all women aged **30-65 years are offered VIA once every 5 years**, performed by a trained ANM, staff nurse or medical officer at the sub-centre or PHC.",
+        "Screening is **opportunistic as well as organised**: every woman aged 30 or above attending a family physician for any reason should be asked when she was last screened, and the family physician's principal contribution is to convert that contact into a screen.",
+        "**WHO (2021) recommends HPV DNA detection as the primary screening test** from **age 30, every 5-10 years** in the general population, and from **age 25, every 3-5 years, in women living with HIV**, with either a screen-and-treat or a screen-triage-and-treat approach.",
+        "**Screening stops at 65** provided the previous two consecutive screens were negative and there is no history of CIN2+; a woman never screened before should be screened whatever her age at presentation.",
+        "**After total hysterectomy for benign disease in a woman with no history of CIN2 or worse, screening stops** because there is no cervix; after subtotal (supracervical) hysterectomy the cervix remains and screening continues on the usual schedule, and after hysterectomy for CIN2+ vaginal vault cytology continues for at least 20 years.",
+        "Pregnancy is not a contraindication - screening and colposcopy are safe, and pregnancy is often the only time a rural Indian woman reaches a health facility - but **endocervical curettage is forbidden in pregnancy** and treatment of precancer is deferred until 6 weeks postpartum.",
+        "Both prior HPV vaccination and prior sterilisation are **not** reasons to stop screening, and this is the single most common counselling error made at both ends of the programme.",
+      ],
+    },
+    {
+      heading: "Acting on a positive screen",
+      points: [
+        "A screen-positive woman goes to **colposcopy**, where 5% acetic acid and then Lugol's iodine are applied and the cervix is graded; **acetowhite epithelium, coarse punctation, mosaicism and atypical corkscrew vessels** indicate higher grades, and an **iodine-negative (Schiller-positive) area** is abnormal because dysplastic cells lack glycogen. A colposcopically directed punch biopsy gives the histological diagnosis.",
+        "**Treatment is by ablation or excision.** Thermal ablation at 100-120 degrees Celsius for 20-40 seconds, or cryotherapy with a double freeze-thaw cycle, is used only when the lesion is **ablation-eligible**: a type 1 transformation zone with the entire squamocolumnar junction visible, the lesion occupying less than 75% of the ectocervix and not extending into the canal, and no suspicion of invasive or glandular disease.",
+        "**Large loop excision of the transformation zone (LLETZ, also called LEEP)** is used for everything else - type 2 or 3 transformation zones, large lesions, suspected glandular disease, recurrence after ablation - and has the great advantage of providing a specimen so that occult microinvasion is not missed.",
+        "**Cold knife conisation** is reserved for suspected microinvasion, adenocarcinoma in situ, or where the lesion extends deep into the canal; **hysterectomy is never the primary treatment for CIN**.",
+        "**The single-visit screen-and-treat approach** - VIA or HPV test, then ablation in the same sitting for an eligible lesion - is what the Indian programme recommends where follow-up is unreliable, because in a multi-visit pathway 40-60% of screen-positive women never return.",
+        "Counsel about the obstetric consequence of excision: **LLETZ, and particularly a cone depth over 10-15 mm or repeat excision, raises the risk of preterm birth and preterm prelabour rupture of membranes**, so take the smallest adequate specimen in a young woman who has not completed her family.",
+        "Follow up after treatment with an **HPV test at 12 months (test of cure)**, because HPV clearance is a better predictor of cure than cytology; persistent HPV positivity or an abnormal cytology means repeat colposcopy.",
+      ],
+    },
+    {
+      heading: "HPV vaccination",
+      points: [
+        "Three vaccine types are available in India: the **bivalent (HPV 16, 18), the quadrivalent (6, 11, 16, 18 - including the indigenous Cervavac from the Serum Institute of India, licensed in 2022 and marketed from 2023) and the nonavalent (6, 11, 16, 18, 31, 33, 45, 52, 58)**. All are non-infectious virus-like particle vaccines made of recombinant L1 capsid protein and contain **no viral DNA**, so they cannot cause infection.",
+        "The vaccines are **prophylactic, not therapeutic**: they prevent acquisition of the types they cover but do not clear an established infection or treat existing CIN, which is why the target age is **9-14 years, before sexual debut**, when the antibody response is also highest.",
+        "**Schedule:** a **two-dose schedule at 0 and 6 months for girls aged 9-14 years**, and a **three-dose schedule at 0, 1-2 and 6 months for those aged 15 years and above and for immunocompromised or HIV-positive individuals of any age**. WHO SAGE (2022) accepts a **single-dose schedule as an alternative for ages 9-20 years**, which is what makes national roll-out affordable.",
+        "**NTAGI recommended introduction of HPV vaccine into the Universal Immunisation Programme in 2022**, and states including Sikkim, Punjab and Delhi have run school-based programmes; catch-up vaccination up to age 26, and shared decision-making up to 45 years, are reasonable in private practice.",
+        "Efficacy against vaccine-type CIN2+ in HPV-naive girls exceeds 90%, and population data from countries with high coverage already show falls in CIN2+ and in invasive cancer. Safety is well established - the commonest adverse events are injection-site pain and **vasovagal syncope, which is why the girl must be observed seated or lying for 15 minutes**.",
+        "**Vaccination does not replace screening.** A vaccinated woman still enters the screening programme at 30 because the vaccine does not cover every oncogenic type, and telling her otherwise is the mistake that undoes the programme.",
+        "Pregnancy is a precaution rather than an absolute contraindication - the vaccine is not given in pregnancy, but inadvertent administration needs no intervention and breastfeeding is not a contraindication.",
+      ],
+    },
+    {
+      heading: "Special situations and counselling",
+      points: [
+        "**Women living with HIV** are screened from age 25, at 3-5 yearly intervals with a high-performance test, have higher rates of persistence, multizonal disease and recurrence after treatment, and must be on antiretroviral therapy; their treatment failure rate after ablation is roughly twice that of HIV-negative women.",
+        "**A woman with a visible growth, an ulcer or a hard, friable, contact-bleeding cervix is not screened - she is biopsied.** Applying VIA to an obvious cancer and calling it a positive screen wastes weeks; a wedge or punch biopsy from the edge of the lesion gives the diagnosis the same day.",
+        "Counselling about a positive HPV test must address the **blame and marital discord it causes in Indian practice**: explain that HPV is a very common sexually transmitted infection, that it may have been acquired many years earlier and lain dormant, that a positive test says nothing about recent fidelity, and that partner testing and treatment are not indicated.",
+        "Male condoms reduce but do not abolish transmission because HPV infects skin outside the covered area; **male circumcision and smoking cessation both reduce risk**.",
+        "Anticipate the practical barriers that keep Indian women away - lack of a female provider, no privacy in the examination room, fear of the diagnosis, loss of daily wages, and the belief that screening is only for the symptomatic - and design the clinic session around them.",
+        "Document every screen in the woman's record and in the facility register with the date, the test used and the result, because the interval is meaningless if nobody can say when the last test was done.",
+      ],
+    },
+  ],
+  tables: [
+    {
+      heading: "The three screening tests compared",
+      columns: ["Test", "Sensitivity for CIN2+", "Specificity", "Main advantage", "Main limitation"],
+      rows: [
+        [
+          "VIA with 5% acetic acid",
+          "60-70%",
+          "About 85%",
+          "Cheap, no laboratory, immediate result, permits single-visit screen and treat",
+          "Subjective and operator dependent; invalid after menopause because the squamocolumnar junction is not visible",
+        ],
+        [
+          "Cervical cytology (Pap or liquid based)",
+          "50-60% for a single test",
+          "90-95%",
+          "Long track record; identifies glandular lesions; Bethesda reporting is standardised",
+          "Needs a cytology laboratory and trained reporters; result not available at the visit; must be repeated 3-yearly",
+        ],
+        [
+          "High-risk HPV DNA test",
+          "90-95%",
+          "About 85% at age 30 and above",
+          "Objective, self-collection possible, negative predictive value over 99% so the interval extends to 5-10 years",
+          "Costly; poor specificity below 30 years because of transient infection, so positives need triage",
+        ],
+      ],
+    },
+    {
+      heading: "HPV vaccination at a glance",
+      columns: ["Group", "Schedule", "Comment"],
+      rows: [
+        ["Girls 9-14 years (primary target)", "Two doses at 0 and 6 months", "Best immune response; given before sexual debut. WHO SAGE 2022 accepts a single dose as an alternative for 9-20 years"],
+        ["Age 15 years and above", "Three doses at 0, 1-2 and 6 months", "Catch-up up to 26 years is routine; 27-45 years by shared decision-making"],
+        ["Immunocompromised or HIV positive, any age", "Three doses at 0, 1-2 and 6 months", "Three doses regardless of age; continue screening from 25 years"],
+        ["Pregnant woman", "Defer", "Not given in pregnancy; no intervention needed if given inadvertently; breastfeeding is not a contraindication"],
+      ],
+    },
+  ],
+  redFlags: [
+    "Postcoital bleeding at any age - this is cervical cancer until proved otherwise and calls for speculum examination and biopsy, not a screening test.",
+    "A visible growth, ulcer or friable contact-bleeding cervix - go straight to biopsy and gynaecological oncology referral; do not screen.",
+    "Foul-smelling, blood-stained watery vaginal discharge, especially in a perimenopausal or postmenopausal woman.",
+    "Postmenopausal bleeding - investigate the endometrium and the cervix; VIA is not a valid test in this woman.",
+    "Persistent low backache or sciatica-like pain with unilateral leg oedema, or hydronephrosis on ultrasound - suggests parametrial or pelvic sidewall spread.",
+    "Screen-positive woman who has not been treated - failure to close the loop on a positive screen is itself the emergency in programme terms.",
+  ],
+  pearls: [
+    "Persistent high-risk HPV infection is a necessary cause of cervical cancer; the 10-20 year latency between infection and invasion is the entire opportunity that screening exploits.",
+    "A dense acetowhite lesion is only positive when it touches the squamocolumnar junction within the transformation zone - acetowhitening elsewhere is metaplasia or inflammation, not disease.",
+    "The negative predictive value of an HPV test, not its sensitivity, is what buys the 5-10 year interval.",
+    "Ablation is allowed only for a type 1 transformation zone with the whole squamocolumnar junction visible, a lesion under 75% of the ectocervix and no suspicion of invasion or glandular disease; everything else needs LLETZ.",
+    "Screen-and-treat in one visit beats a theoretically better multi-visit pathway in any setting where 40-60% of women do not return.",
+    "HPV vaccination is prophylactic, never therapeutic, and it never cancels the screening schedule.",
+    "Screening ends at 65 after two consecutive negative screens, and after total hysterectomy for benign disease - but continues after subtotal hysterectomy, because the cervix is still there.",
+  ],
+  theory: [
+    {
+      id: "gynaecology-cervical-cancer-screening-t1",
+      paper: "IV",
+      kind: "long",
+      marks: 10,
+      minutes: 20,
+      frequency: "common",
+      question:
+        "Describe the strategy for prevention and early detection of carcinoma cervix in India. Discuss the screening tests available, the national recommendations, and the management of a screen-positive woman at a primary care facility.",
+      openingLines: [
+        "Cervical cancer is the second commonest cancer in Indian women, with about 1.23 lakh new cases and 77,000 deaths each year, and it is caused almost entirely by persistent infection with high-risk human papillomavirus, chiefly types 16 and 18.",
+        "Because the disease passes through a detectable and curable precancerous phase lasting 10-20 years, it is preventable by a three-pillar strategy of HPV vaccination, screening and prompt treatment of precancer, which is the framework of the WHO 90-70-90 elimination targets for 2030.",
+      ],
+      answer: [
+        {
+          heading: "Primary prevention",
+          points: [
+            "HPV vaccination of girls aged 9-14 years before sexual debut - bivalent, quadrivalent (including the indigenous Cervavac) or nonavalent vaccine, two doses at 0 and 6 months, three doses from 15 years and in the immunocompromised; NTAGI recommended inclusion in the Universal Immunisation Programme in 2022.",
+            "Health education on delaying age at first intercourse and at marriage, limiting the number of partners, condom use, genital hygiene and smoking cessation.",
+            "Improving nutrition and treating reproductive tract infections; identifying and treating HIV, which raises the risk of invasive disease about sixfold.",
+          ],
+        },
+        {
+          heading: "Secondary prevention - screening tests",
+          points: [
+            "Visual inspection with 5% acetic acid (VIA): read after one minute, positive when a dense acetowhite lesion touches the squamocolumnar junction; sensitivity 60-70%, specificity about 85%; cheap, immediate and suitable for single-visit screen and treat; not valid after the menopause.",
+            "Cervical cytology, conventional or liquid based, reported by the Bethesda 2014 system; sensitivity 50-60% per test with high specificity; requires a cytology laboratory and 3-yearly repetition.",
+            "High-risk HPV DNA testing: sensitivity 90-95%, negative predictive value over 99%, allows a 5-10 year interval, permits self-collection, and is the primary test recommended by WHO from age 30; poor specificity below 30 so positives are triaged.",
+            "Indian evidence: the Osmanabad trial (NEJM 2009) showed a single round of HPV testing reduced advanced disease and death, and the Mumbai trial (2014) showed VIA by trained health workers reduced cervical cancer mortality by 31%.",
+          ],
+        },
+        {
+          heading: "National recommendations",
+          points: [
+            "Operational Framework for Management of Common Cancers, MoHFW 2016, delivered through Ayushman Bharat Health and Wellness Centres under the NP-NCD: VIA once every 5 years for all women aged 30-65 years, performed by a trained ANM, staff nurse or medical officer.",
+            "WHO 2021 guidance: HPV DNA as the primary test from age 30 every 5-10 years, and from age 25 every 3-5 years in women living with HIV.",
+            "Stop at 65 years after two consecutive negative screens with no history of CIN2 or worse; stop after total hysterectomy for benign disease; continue after subtotal hysterectomy.",
+            "Screening continues in vaccinated women, and pregnancy is not a contraindication to screening or colposcopy.",
+          ],
+        },
+        {
+          heading: "Managing the screen-positive woman",
+          points: [
+            "Refer for colposcopy with acetic acid and Lugol's iodine; grade the acetowhite lesion, punctation, mosaicism and atypical vessels, and take a directed punch biopsy.",
+            "Treat CIN2 or worse: thermal ablation or cryotherapy where the lesion is ablation-eligible (type 1 transformation zone, whole squamocolumnar junction visible, lesion under 75% of ectocervix, no suspicion of invasion or glandular disease); otherwise LLETZ, which also provides a specimen.",
+            "Cold knife conisation for suspected microinvasion or adenocarcinoma in situ; hysterectomy is never the primary treatment for CIN.",
+            "Where follow-up is unreliable, use the single-visit screen-and-treat approach, since 40-60% of screen-positive women are otherwise lost.",
+            "Counsel on the increased risk of preterm birth after deep or repeat excision, and follow up with an HPV test of cure at 12 months.",
+            "If a growth or ulcer is visible, do not screen - take a biopsy from the edge of the lesion and refer for staging and gynaecological oncology care.",
+          ],
+        },
+      ],
+      mustDraw: [
+        "A flow chart: eligible woman aged 30-65 - VIA or HPV test - negative, rescreen at 5 years; positive - colposcopy and directed biopsy - ablation-eligible lesion, thermal ablation; not eligible, LLETZ; suspicious of invasion, biopsy and refer - HPV test of cure at 12 months.",
+        "A labelled diagram of the cervix showing the original and new squamocolumnar junctions and the transformation zone, with the types 1, 2 and 3 transformation zone marked.",
+      ],
+      markSplit: [
+        { part: "Burden, HPV aetiology and natural history", marks: 2 },
+        { part: "The three screening tests with performance figures", marks: 3 },
+        { part: "National and WHO recommendations, ages and intervals", marks: 2 },
+        { part: "Management of the screen-positive woman including ablation eligibility", marks: 2 },
+        { part: "Primary prevention and vaccination", marks: 1 },
+      ],
+      keywords: ["cervical cancer", "VIA", "HPV DNA", "screen and treat", "LLETZ", "90-70-90"],
+    },
+    {
+      id: "gynaecology-cervical-cancer-screening-t2",
+      paper: "IV",
+      kind: "short-note",
+      marks: 5,
+      minutes: 10,
+      frequency: "common",
+      question: "Write short notes on HPV vaccination - types of vaccine, schedule, target group, efficacy and counselling points.",
+      openingLines: [
+        "HPV vaccines are non-infectious recombinant vaccines made of L1 capsid virus-like particles that contain no viral DNA and therefore cannot cause infection.",
+        "They are prophylactic and not therapeutic, so they must be given before exposure to the virus, which makes girls aged 9-14 years the primary target group.",
+      ],
+      answer: [
+        {
+          heading: "Vaccines available",
+          points: [
+            "Bivalent vaccine covering HPV 16 and 18, which cause about 70% of cervical cancer worldwide and over 80% in India.",
+            "Quadrivalent vaccine covering 6, 11, 16 and 18, which also prevents anogenital warts; Cervavac, developed by the Serum Institute of India and licensed in 2022, is a quadrivalent vaccine and is the affordable Indian option.",
+            "Nonavalent vaccine covering 6, 11, 16, 18, 31, 33, 45, 52 and 58, raising coverage of oncogenic types to about 90%.",
+          ],
+        },
+        {
+          heading: "Schedule and target group",
+          points: [
+            "Primary target: girls aged 9-14 years, before sexual debut, when antibody titres are highest - two doses at 0 and 6 months.",
+            "Age 15 years and above, and any immunocompromised or HIV-positive person: three doses at 0, 1-2 and 6 months.",
+            "WHO SAGE 2022 accepts a single-dose schedule as an alternative for ages 9-20 years, which is what makes national roll-out affordable; NTAGI recommended introduction into the Universal Immunisation Programme in 2022 and several states run school-based programmes.",
+            "Catch-up vaccination is routine up to 26 years and reasonable up to 45 years by shared decision-making; boys may be vaccinated to prevent anogenital warts and oropharyngeal and anal cancers.",
+          ],
+        },
+        {
+          heading: "Efficacy and safety",
+          points: [
+            "Over 90% efficacy against vaccine-type CIN2 or worse in HPV-naive girls, with falls in CIN2+ and in invasive cancer already documented in countries with high coverage.",
+            "Adverse effects are injection-site pain, swelling, low-grade fever and headache; vasovagal syncope is the notable event, so observe the girl seated or lying for 15 minutes.",
+            "Not given in pregnancy as a precaution, though inadvertent administration needs no intervention; breastfeeding is not a contraindication.",
+          ],
+        },
+        {
+          heading: "Counselling points",
+          points: [
+            "The vaccine does not treat existing infection or existing CIN, and it does not cover every oncogenic type.",
+            "A vaccinated woman must still enter the screening programme at age 30 - this is the single most important sentence of the counselling.",
+            "There is no evidence that HPV vaccination affects fertility or encourages early sexual activity; addressing that fear directly is what secures parental consent in Indian school programmes.",
+          ],
+        },
+      ],
+      mustDraw: [
+        "A simple table of vaccine type against genotypes covered, doses by age group, and target population.",
+      ],
+      markSplit: [
+        { part: "Vaccine types and genotypes covered", marks: 1.5 },
+        { part: "Schedule and target group including the single-dose option", marks: 1.5 },
+        { part: "Efficacy and safety", marks: 1 },
+        { part: "Counselling, especially that screening continues", marks: 1 },
+      ],
+      keywords: ["HPV vaccine", "Cervavac", "virus-like particle", "two-dose schedule", "NTAGI"],
+    },
+  ],
+  mcqs: [
+    {
+      id: "gynaecology-cervical-cancer-screening-q1",
+      stem: "A 34-year-old para 3 woman attends a Health and Wellness Centre for iron tablets. She has never been screened for cervical cancer and has no symptoms. Under the Government of India operational framework, what should be offered?",
+      options: [
+        "Annual conventional Pap smear starting now",
+        "VIA now, and if negative repeat in 5 years",
+        "HPV DNA testing now and every year",
+        "No screening, since she is asymptomatic",
+        "Colposcopy as the primary screening test",
+      ],
+      answer: 1,
+      explanation:
+        "The Operational Framework for Management of Common Cancers (MoHFW 2016), delivered through Ayushman Bharat Health and Wellness Centres, offers VIA to every woman aged 30-65 years once every 5 years, and this woman at 34 is exactly the target. An annual Pap smear is neither the Indian recommendation nor affordable or deliverable at scale, and even where cytology is used the interval is 3 years, not 1. HPV DNA testing is the test WHO prefers from age 30, but the interval after a negative test is 5-10 years precisely because of its very high negative predictive value, so annual HPV testing is wrong on the interval. Withholding screening because she is asymptomatic defeats the purpose of screening, which exists to detect disease before symptoms. Colposcopy is a diagnostic procedure used to evaluate a positive screen; it is far too resource-intensive to be a primary screening test.",
+      difficulty: "easy",
+    },
+    {
+      id: "gynaecology-cervical-cancer-screening-q2",
+      stem: "A 45-year-old woman reports bleeding after intercourse for the last four months. On speculum examination there is an irregular, friable growth on the anterior lip of the cervix that bleeds on touch. What is the correct next step?",
+      options: [
+        "VIA - if it is positive, refer for colposcopy",
+        "Conventional Pap smear and review in three weeks",
+        "HPV DNA test to decide whether referral is needed",
+        "Punch biopsy from the edge of the lesion and urgent gynaecological oncology referral",
+        "A course of antibiotics and antifungal pessaries, then reassess",
+      ],
+      answer: 3,
+      explanation:
+        "A visible friable growth with postcoital bleeding is a clinically obvious cervical carcinoma, and the only correct action is a biopsy taken from the edge of the lesion together with urgent referral for staging and oncology care. VIA is a screening test for the apparently normal cervix; performing it on a visible growth adds nothing and simply repeats what the eye has already seen. A Pap smear on a frank cancer is frequently reported as inadequate or necrotic and produces a falsely reassuring or uninterpretable result that delays diagnosis by weeks. An HPV test tells you only that high-risk virus is present, which does not change the need for tissue diagnosis and would waste more time. Treating her for infection is the classic and catastrophic error, because months are lost while the tumour is staged upward.",
+      difficulty: "easy",
+    },
+    {
+      id: "gynaecology-cervical-cancer-screening-q3",
+      stem: "A 31-year-old woman screens positive on an HPV DNA test. Colposcopy shows a dense acetowhite lesion occupying about a quarter of the ectocervix, with the entire squamocolumnar junction visible and no atypical vessels; directed biopsy reports CIN2. Which treatment is most appropriate?",
+      options: [
+        "Thermal ablation of the transformation zone",
+        "Cold knife conisation",
+        "Total abdominal hysterectomy",
+        "Repeat HPV test in 5 years with no treatment",
+        "Radical trachelectomy",
+      ],
+      answer: 0,
+      explanation:
+        "This lesion meets every criterion for ablation eligibility - a type 1 transformation zone with the whole squamocolumnar junction visible, a lesion occupying well under 75% of the ectocervix, no extension into the canal and no suspicion of invasive or glandular disease - so thermal ablation is appropriate, safe and preserves the cervix in a young woman. Cold knife conisation is reserved for suspected microinvasion, adenocarcinoma in situ or disease extending deep into the endocervical canal, and carries a much greater risk of subsequent preterm birth. Hysterectomy is never the primary treatment for cervical intraepithelial neoplasia and would be indefensible in a 31-year-old with a treatable precancer. Leaving biopsy-proven CIN2 untreated for 5 years abandons the whole point of screening, since a proportion of CIN2 and most CIN3 will progress. Radical trachelectomy is fertility-sparing surgery for early invasive cancer, not for intraepithelial disease.",
+      difficulty: "moderate",
+    },
+    {
+      id: "gynaecology-cervical-cancer-screening-q4",
+      stem: "Parents bring their 11-year-old daughter for HPV vaccination. Which statement is correct?",
+      options: [
+        "She needs three doses at 0, 1 and 6 months because three doses are always required",
+        "Two doses at 0 and 6 months are sufficient at this age, and she will still need cervical screening from age 30",
+        "The vaccine contains live attenuated HPV and can rarely cause genital warts",
+        "Once vaccinated she will not require cervical screening in adult life",
+        "The vaccine should be deferred until she is sexually active so that existing infection can be treated",
+      ],
+      answer: 1,
+      explanation:
+        "For girls aged 9-14 years a two-dose schedule at 0 and 6 months gives non-inferior immunogenicity to three doses, and the counselling must state clearly that vaccination does not replace screening, because the vaccine does not cover every oncogenic genotype. Three doses are required only from age 15 years and in immunocompromised or HIV-positive individuals, so the blanket statement that three are always needed is wrong. The vaccines are recombinant L1 virus-like particle vaccines containing no viral DNA at all, so they are non-infectious and cannot cause warts or infection. Telling a family that screening is no longer needed is the error that most undermines a national programme. Deferring until after sexual debut is the exact opposite of the correct strategy, because the vaccine is prophylactic and cannot treat an infection or a lesion that already exists.",
+      difficulty: "easy",
+    },
+    {
+      id: "gynaecology-cervical-cancer-screening-q5",
+      stem: "A 58-year-old postmenopausal woman comes to a rural PHC for screening. She has never been screened. Which is the most appropriate approach?",
+      options: [
+        "VIA, because it is the test used in the national programme for all ages",
+        "No screening, because she is postmenopausal and beyond the risk period",
+        "Cytology or an HPV test rather than VIA, because the squamocolumnar junction has receded into the canal",
+        "Screening only if she reports postmenopausal bleeding",
+        "Endometrial biopsy as the screening test of choice",
+      ],
+      answer: 2,
+      explanation:
+        "After the menopause the squamocolumnar junction recedes into the endocervical canal and cannot be visualised, so VIA cannot be interpreted and gives unacceptable false negatives; cytology, which samples the canal with an endocervical brush, or an HPV DNA test is the appropriate choice in this woman. Saying VIA is used at all ages misstates the programme, which relies on the transformation zone being visible. Declining to screen her is wrong because screening continues to 65 years, and a woman never screened before is precisely the woman in whom screening yields most. Restricting screening to the symptomatic abolishes the concept of screening, which is to find disease before symptoms appear. Endometrial biopsy investigates the endometrium in a woman with postmenopausal bleeding and has no role in cervical screening at all.",
+      difficulty: "moderate",
+    },
+  ],
+  cards: [
+    {
+      id: "gynaecology-cervical-cancer-screening-c1",
+      front: "What makes a VIA test positive?",
+      back: "A dense, opaque, well-defined acetowhite lesion in the transformation zone touching the squamocolumnar junction, read one minute after applying 5% acetic acid.",
+    },
+    {
+      id: "gynaecology-cervical-cancer-screening-c2",
+      front: "Indian national screening recommendation for cervical cancer.",
+      back: "VIA for all women aged 30-65 years once every 5 years, delivered through Ayushman Bharat Health and Wellness Centres under the NP-NCD (MoHFW Operational Framework 2016).",
+    },
+    {
+      id: "gynaecology-cervical-cancer-screening-c3",
+      front: "WHO 90-70-90 targets for cervical cancer elimination by 2030.",
+      back: "90% of girls fully vaccinated by age 15; 70% of women screened with a high-performance test at 35 and 45; 90% of women with cervical disease treated. Elimination is incidence below 4 per 100,000.",
+    },
+    {
+      id: "gynaecology-cervical-cancer-screening-c4",
+      front: "Sensitivity of VIA, cytology and HPV DNA for CIN2+.",
+      back: "VIA 60-70%, single cytology 50-60%, HPV DNA 90-95% with a negative predictive value over 99%.",
+    },
+    {
+      id: "gynaecology-cervical-cancer-screening-c5",
+      front: "When is a cervical lesion eligible for thermal ablation?",
+      back: "Type 1 transformation zone with the entire squamocolumnar junction visible, lesion under 75% of the ectocervix and not entering the canal, and no suspicion of invasive or glandular disease. Otherwise LLETZ.",
+    },
+    {
+      id: "gynaecology-cervical-cancer-screening-c6",
+      front: "HPV vaccine schedule by age.",
+      back: "Two doses at 0 and 6 months for 9-14 years; three doses at 0, 1-2 and 6 months from 15 years and in the immunocompromised. WHO SAGE 2022 allows a single dose as an alternative at 9-20 years.",
+    },
+    {
+      id: "gynaecology-cervical-cancer-screening-c7",
+      front: "When does cervical screening stop?",
+      back: "At 65 years after two consecutive negative screens with no history of CIN2+, and after total hysterectomy for benign disease. It continues after subtotal hysterectomy and in vaccinated women.",
+    },
+    {
+      id: "gynaecology-cervical-cancer-screening-c8",
+      front: "Obstetric risk after LLETZ.",
+      back: "Increased preterm birth and preterm prelabour rupture of membranes, rising with cone depth over 10-15 mm and with repeat excision - so take the smallest adequate specimen in a young woman.",
+    },
+    {
+      id: "gynaecology-cervical-cancer-screening-c9",
+      front: "Screening in women living with HIV.",
+      back: "Start at 25 years, repeat every 3-5 years with a high-performance test, ensure antiretroviral therapy; higher persistence and about double the treatment failure rate.",
+    },
+    {
+      id: "gynaecology-cervical-cancer-screening-c10",
+      front: "Test of cure after treatment of CIN.",
+      back: "HPV test at 12 months - HPV clearance predicts cure better than cytology; persistent positivity means repeat colposcopy.",
+    },
+  ],
+  references: [
+    "WHO Guideline for Screening and Treatment of Cervical Pre-cancer Lesions for Cervical Cancer Prevention, 2nd edition, 2021",
+    "WHO Global Strategy to Accelerate the Elimination of Cervical Cancer as a Public Health Problem, 2020",
+    "Ministry of Health and Family Welfare, Government of India - Operational Framework: Management of Common Cancers, 2016, and NP-NCD operational guidelines for population-based screening, 2021",
+    "WHO Position Paper on Human Papillomavirus Vaccines, Weekly Epidemiological Record, December 2022 (SAGE single-dose recommendation)",
+    "FOGSI Good Clinical Practice Recommendations on Cervical Cancer Screening and HPV Vaccination, 2019",
+    "Indian Academy of Pediatrics Advisory Committee on Vaccines and Immunization Practices (ACVIP) Immunization Guidelines, 2023-24 - HPV vaccine",
+    "Sankaranarayanan R et al, HPV Screening for Cervical Cancer in Rural India, New England Journal of Medicine, 2009; Shastri SS et al, Journal of the National Cancer Institute, 2014",
+    "Shaw's Textbook of Gynaecology, 18th edition, 2024 - premalignant lesions of the cervix",
+  ],
+});
+
 const cases: ClinicalCase[] = [
   {
     id: "gynaecology-case-1",
