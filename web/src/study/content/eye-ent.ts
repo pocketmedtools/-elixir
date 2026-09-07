@@ -963,6 +963,903 @@ topics.push({
 });
 
 
+topics.push({
+  id: "eye-ent-sore-throat",
+  title: "Sore throat, streptococcal scoring and tonsillitis",
+  oneLiner:
+    "Most sore throats are viral and self-limiting, so the family physician's task is to use a validated score (Centor or McIsaac) plus the clinical context to identify the minority caused by group A beta-haemolytic Streptococcus - who need penicillin for 10 days to prevent rheumatic fever - while never missing the deep neck space and airway emergencies that present as a sore throat.",
+  frequency: "core",
+  keywords: [
+    "sore throat",
+    "pharyngitis",
+    "tonsillitis",
+    "Centor score",
+    "McIsaac score",
+    "group A streptococcus",
+    "rheumatic fever",
+    "penicillin V",
+    "benzathine penicillin",
+    "peritonsillar abscess",
+    "quinsy",
+    "infectious mononucleosis",
+    "diphtheria",
+    "tonsillectomy",
+    "RADT",
+    "epiglottitis",
+  ],
+  sections: [
+    {
+      heading: "The problem and the epidemiology that drives it",
+      points: [
+        "**Acute pharyngitis and tonsillitis are among the commonest reasons for a primary care visit in India**, and the great majority - **about 70 to 85% in adults and 60 to 70% in children** - are viral: rhinovirus, coronavirus, adenovirus, influenza, parainfluenza, and Epstein-Barr virus.",
+        "**Group A beta-haemolytic Streptococcus (GABHS, Streptococcus pyogenes) causes about 15 to 30% of sore throats in children aged 5 to 15 years and only 5 to 15% in adults**; it is uncommon under 3 years, where it also rarely causes rheumatic fever.",
+        "The reason for identifying GABHS in India is not symptom relief - untreated streptococcal pharyngitis settles in 3 to 5 days anyway - but **prevention of acute rheumatic fever and rheumatic heart disease**, which remain major causes of cardiac morbidity in Indian young adults.",
+        "**Antibiotics started within 9 days of onset still prevent rheumatic fever**, which is why there is time to test or to observe rather than prescribe blindly; they do not prevent post-streptococcal glomerulonephritis.",
+        "The competing harm is antibiotic overuse: a sore throat treated with an antibiotic yields on average only **about 16 hours less symptom duration**, at the cost of rash, diarrhoea, anaphylaxis and community resistance.",
+        "**The examination must always look past the tonsil**: trismus, drooling, a muffled voice, unilateral swelling, neck stiffness or stridor turn a routine sore throat into an airway or deep neck space emergency.",
+      ],
+    },
+    {
+      heading: "History and examination in a sore throat",
+      points: [
+        "History: duration, fever and its height, pain on swallowing versus inability to swallow, cough and coryza (which point away from streptococcus), rash, abdominal pain and vomiting in children, and recent contact with a proven case.",
+        "Ask specifically about **immunisation status (diphtheria), previous rheumatic fever, valvular heart disease, recurrent tonsillitis episodes per year, snoring and daytime sleepiness, and any immunosuppression, diabetes or recent chemotherapy**.",
+        "**Signs favouring GABHS:** sudden onset, fever above 38 degrees C, **tonsillar exudate**, tender anterior cervical nodes, palatal petechiae, a scarlatiniform rash and strawberry tongue, **with the absence of cough, coryza, hoarseness, conjunctivitis and diarrhoea**.",
+        "**Signs favouring a virus:** cough, coryza, hoarseness, conjunctivitis, oral ulcers or vesicles, diarrhoea, and a diffusely injected pharynx without exudate.",
+        "Examine the neck for tender anterior cervical nodes (streptococcal) versus generalised and posterior cervical nodes with splenomegaly (**infectious mononucleosis**), and always look for **trismus and uvular deviation**.",
+        "**Rapid antigen detection tests (RADT) have around 90 to 95% specificity but only 70 to 90% sensitivity**; a positive test justifies an antibiotic, and a negative test in a child should ideally be backed by a throat culture, which remains the gold standard but takes 24 to 48 hours.",
+        "**Do not use anti-streptolysin O titre to diagnose acute pharyngitis** - it rises 2 to 3 weeks after infection and only helps to confirm a preceding streptococcal infection in suspected rheumatic fever or glomerulonephritis.",
+      ],
+    },
+    {
+      heading: "Centor and McIsaac scoring, and what to do with the score",
+      points: [
+        "The **Centor criteria** award one point each for **tonsillar exudate, tender anterior cervical lymphadenopathy, history of fever, and absence of cough**.",
+        "The **McIsaac modification** adds **one point for age 3 to 14 years, zero for 15 to 44 years, and subtracts one point for age 45 years or older**, giving a score from -1 to 5.",
+        "Approximate probability of GABHS by McIsaac score: **0 to 1 point about 1 to 10%, 2 points about 11 to 17%, 3 points about 28 to 35%, and 4 to 5 points about 51 to 53%**.",
+        "**Score 0 to 1: no test and no antibiotic** - symptomatic treatment and safety-netting only.",
+        "**Score 2 to 3: test with RADT or culture and treat only if positive**; where testing is unavailable, as in much of Indian practice, use a delayed prescription with review at 48 to 72 hours.",
+        "**Score 4 to 5: test if available; empirical antibiotics are acceptable** in settings of high rheumatic fever prevalence, which includes most of India, and this contextual modification is worth stating explicitly in an examination answer.",
+        "The **FeverPAIN score** (Fever in 24 hours, Purulence, Attend rapidly within 3 days, severely Inflamed tonsils, No cough or coryza) is the NICE alternative; a score of 4 to 5 supports an immediate or delayed antibiotic.",
+        "**No score is a substitute for looking for danger signs** - a patient with trismus and a muffled voice may have a Centor score of 4 and still need drainage rather than a prescription.",
+      ],
+    },
+    {
+      heading: "Treatment: symptomatic first, then the right antibiotic",
+      points: [
+        "Symptomatic treatment for every sore throat: **paracetamol 15 mg/kg six-hourly (adult 500 mg to 1 g six-hourly, maximum 4 g/day) or ibuprofen 10 mg/kg eight-hourly**, adequate fluids, warm saline gargles, and rest. Regular analgesia is the intervention patients actually value.",
+        "**Penicillin V (phenoxymethylpenicillin) is first line: 250 mg twice or three times daily for children under 27 kg and 500 mg twice daily for adults, for a full 10 days.** The 10-day course is required for eradication and rheumatic fever prevention even though symptoms settle in 3 days.",
+        "**Amoxicillin 50 mg/kg once daily (maximum 1000 mg) for 10 days** is an acceptable and better-tasting alternative in children, and is widely used in India. **Avoid ampicillin or amoxicillin if infectious mononucleosis is possible** - it causes a florid maculopapular rash in 80 to 90%.",
+        "**A single deep intramuscular injection of benzathine penicillin G - 600,000 units if under 27 kg and 1.2 million units if 27 kg or above - is the option when adherence to 10 days is doubtful**, and is the drug used for secondary prophylaxis of rheumatic fever every 3 weeks.",
+        "**Penicillin allergy:** cephalexin 20 mg/kg twice daily for 10 days if the reaction was not anaphylactic; **azithromycin 12 mg/kg once daily for 5 days** or clindamycin 7 mg/kg three times daily for 10 days if it was. Macrolide resistance in Streptococcus pyogenes is rising, so they are second choices.",
+        "**Group A Streptococcus has never been reported resistant to penicillin**, so there is no reason to start a broad-spectrum agent such as a third-generation cephalosporin or a fluoroquinolone - a favourite examiner point about Indian prescribing practice.",
+        "A single dose of **dexamethasone 0.6 mg/kg orally (maximum 10 mg)** shortens severe pain in adults with severe odynophagia, but is not routine and must never substitute for drainage of an abscess or for airway assessment.",
+      ],
+    },
+    {
+      heading: "Complications and the sore throat that is an emergency",
+      points: [
+        "**Suppurative complications:** peritonsillar abscess (quinsy), parapharyngeal and retropharyngeal abscess, cervical lymphadenitis, otitis media, sinusitis, and rarely **Lemierre syndrome** - Fusobacterium septic thrombophlebitis of the internal jugular vein with septic pulmonary emboli in a young adult with a sore throat and rigors.",
+        "**Quinsy** presents with **severe unilateral throat pain, trismus, a hot potato or muffled voice, drooling, uvular deviation to the opposite side and a bulging soft palate**; the treatment is **needle aspiration or incision and drainage plus intravenous amoxicillin-clavulanate or benzylpenicillin with metronidazole**, not oral antibiotics alone.",
+        "**Non-suppurative complications:** acute rheumatic fever 2 to 4 weeks after pharyngitis (prevented by antibiotics), acute post-streptococcal glomerulonephritis 1 to 2 weeks later (not prevented), scarlet fever, and toxic shock syndrome.",
+        "**Diphtheria** must be remembered in India in an unimmunised or partially immunised child: **a greyish-white adherent membrane over the tonsils and pharynx that bleeds on removal, bull neck, low-grade fever with disproportionate toxaemia, and later palatal palsy or myocarditis**. Treat with antitoxin, penicillin or erythromycin, isolation and notification - do not wait for culture.",
+        "**Acute epiglottitis** (now more often in adults) causes rapidly progressive sore throat with drooling, a muffled voice, tripod posture and stridor with a normal-looking oropharynx - **do not examine the throat with a spatula**; secure the airway first.",
+        "**Infectious mononucleosis** gives a membranous tonsillitis with marked generalised lymphadenopathy, splenomegaly, palatal petechiae and profound fatigue; atypical lymphocytes and a positive monospot confirm it, and the risks are ampicillin rash, airway obstruction from tonsillar hypertrophy (treated with steroids) and splenic rupture, so contact sport must be avoided for 4 to 6 weeks.",
+        "Any sore throat with **stridor, drooling, inability to swallow saliva, trismus, neck swelling or stiffness, or a toxic appearance is an emergency** and belongs in hospital.",
+      ],
+    },
+    {
+      heading: "Recurrent tonsillitis, tonsillectomy and prevention",
+      points: [
+        "**Paradise criteria for tonsillectomy in recurrent throat infection: 7 or more adequately documented episodes in the past year, 5 or more per year for 2 years, or 3 or more per year for 3 years**, with each episode having fever above 38.3 degrees C, cervical adenopathy, exudate or a positive GABHS culture.",
+        "Other indications: **obstructive sleep apnoea or sleep-disordered breathing from tonsillar hypertrophy, a second episode of quinsy or one severe episode, suspected malignancy in a unilaterally enlarged tonsil, and chronic tonsillitis unresponsive to medical treatment**.",
+        "A unilaterally enlarged tonsil in an adult, particularly with ulceration, ipsilateral otalgia or a neck node, must be regarded as **possible lymphoma or squamous carcinoma** and referred for biopsy, not treated with repeated antibiotics.",
+        "**Secondary prophylaxis after acute rheumatic fever: benzathine penicillin G 1.2 million units intramuscularly every 3 weeks** (600,000 units if under 27 kg), continued for 5 years or until age 21 without carditis, 10 years or until 21 with carditis and no residual disease, and up to 40 years or lifelong with established valve disease.",
+        "Advise return to school or work **24 hours after starting an effective antibiotic**, and treat household contacts only if they are symptomatic or if there has been rheumatic fever in the family.",
+        "Document the **number and character of previous episodes in the record** at each visit - the tonsillectomy decision depends on documentation that only continuity of care can produce, and this is a family medicine specific answer.",
+      ],
+    },
+  ],
+  tables: [
+    {
+      heading: "Centor and McIsaac scoring",
+      columns: ["Criterion", "Points"],
+      rows: [
+        ["Tonsillar exudate or swelling", "+1"],
+        ["Tender anterior cervical lymphadenopathy", "+1"],
+        ["History of fever above 38 degrees C", "+1"],
+        ["Absence of cough", "+1"],
+        ["Age 3-14 years (McIsaac modification)", "+1"],
+        ["Age 15-44 years", "0"],
+        ["Age 45 years or older", "-1"],
+      ],
+    },
+    {
+      heading: "Acting on the McIsaac score",
+      columns: ["Score", "Approximate risk of GABHS", "Action"],
+      rows: [
+        ["0 to 1", "1-10%", "No test, no antibiotic; analgesia, fluids, gargles and safety-netting"],
+        ["2", "About 11-17%", "RADT or throat culture; treat only if positive, or give a delayed prescription"],
+        ["3", "About 28-35%", "RADT or throat culture; treat if positive; delayed prescription if testing unavailable"],
+        ["4 to 5", "About 51-53%", "Test where available; empirical penicillin is acceptable in high rheumatic fever settings such as India"],
+      ],
+    },
+    {
+      heading: "Antibiotic regimens for confirmed or presumed streptococcal pharyngitis",
+      columns: ["Drug", "Dose", "Duration"],
+      rows: [
+        ["Penicillin V (first line)", "Child under 27 kg 250 mg two to three times daily; 27 kg or more and adults 500 mg twice daily", "10 days"],
+        ["Amoxicillin (palatable alternative)", "50 mg/kg once daily, maximum 1000 mg", "10 days"],
+        ["Benzathine penicillin G (poor adherence expected)", "600,000 units intramuscularly if under 27 kg; 1.2 million units if 27 kg or more", "Single dose"],
+        ["Cephalexin (non-anaphylactic penicillin allergy)", "20 mg/kg twice daily, maximum 500 mg per dose", "10 days"],
+        ["Azithromycin (anaphylactic penicillin allergy)", "12 mg/kg once daily, maximum 500 mg", "5 days"],
+        ["Clindamycin (anaphylactic allergy, alternative)", "7 mg/kg three times daily, maximum 300 mg per dose", "10 days"],
+      ],
+    },
+    {
+      heading: "Sore throats that are not simple pharyngitis",
+      columns: ["Clue", "Diagnosis", "Immediate action"],
+      rows: [
+        ["Trismus, muffled voice, uvular deviation, unilateral bulge", "Peritonsillar abscess (quinsy)", "Needle aspiration or drainage plus intravenous antibiotics; ENT referral today"],
+        ["Drooling, stridor, tripod posture, normal-looking oropharynx", "Acute epiglottitis", "Do not use a tongue depressor; secure airway, admit"],
+        ["Neck stiffness, bulge in posterior pharyngeal wall in a young child", "Retropharyngeal abscess", "Admit; lateral neck radiograph or contrast CT, intravenous antibiotics and drainage"],
+        ["Grey adherent membrane that bleeds on removal, bull neck, unimmunised", "Diphtheria", "Antitoxin plus penicillin or erythromycin, isolate, notify; do not await culture"],
+        ["Generalised lymphadenopathy, splenomegaly, marked fatigue, membranous tonsillitis", "Infectious mononucleosis", "Avoid ampicillin and amoxicillin; monospot; no contact sport for 4-6 weeks"],
+        ["Persistent unilateral tonsillar enlargement or ulcer in an adult", "Tonsillar lymphoma or squamous carcinoma", "Urgent ENT referral for biopsy"],
+        ["Sore throat, rigors and pleuritic chest pain in a young adult", "Lemierre syndrome", "Admit; blood cultures, contrast CT neck and chest, intravenous antibiotics covering anaerobes"],
+      ],
+    },
+  ],
+  redFlags: [
+    "Stridor, drooling, tripod posture or an inability to swallow saliva - impending airway obstruction from epiglottitis or a deep neck space abscess; do not examine with a spatula, secure the airway.",
+    "Trismus with a muffled hot potato voice and uvular deviation - peritonsillar abscess; needs aspiration or drainage plus intravenous antibiotics the same day.",
+    "Neck stiffness, torticollis or a bulging posterior pharyngeal wall in a child - retropharyngeal abscess; admit for imaging and drainage.",
+    "A greyish adherent membrane that bleeds on removal in an unimmunised child, with bull neck and toxaemia - diphtheria; give antitoxin, isolate and notify without waiting for culture.",
+    "Sore throat with rigors, unilateral neck tenderness and pleuritic chest pain in a young adult - Lemierre syndrome with septic pulmonary emboli.",
+    "Persistent unilateral tonsillar enlargement, ulceration or a hard neck node in an adult - malignancy until biopsy proves otherwise.",
+    "Sore throat with fever in a patient on carbimazole, methotrexate, clozapine or recent chemotherapy - possible agranulocytosis; do an urgent full blood count before prescribing anything.",
+  ],
+  pearls: [
+    "Cough, coryza, hoarseness and conjunctivitis are the four features that argue against streptococcus and for a virus.",
+    "The reason for treating a streptococcal sore throat in India is rheumatic fever prevention, not symptom relief; treatment started within 9 days of onset still prevents it.",
+    "Antibiotics prevent rheumatic fever but do not prevent post-streptococcal glomerulonephritis.",
+    "Penicillin resistance has never been documented in Streptococcus pyogenes - so a broad-spectrum drug is always the wrong answer.",
+    "Never give ampicillin or amoxicillin when infectious mononucleosis is possible; 80-90% develop a florid maculopapular rash.",
+    "A sore throat with trismus is not tonsillitis until quinsy has been excluded.",
+    "The tonsillectomy decision rests on documented episodes - record fever, exudate, nodes and any swab result at every visit, because the Paradise criteria demand documentation.",
+    "In a patient on carbimazole or clozapine, a sore throat is a haematological emergency until the neutrophil count is known.",
+  ],
+  theory: [
+    {
+      id: "eye-ent-sore-throat-t1",
+      paper: "III",
+      kind: "long",
+      marks: 10,
+      minutes: 20,
+      frequency: "core",
+      question:
+        "A 10-year-old boy presents with fever and severe sore throat of two days. Discuss the clinical approach to acute pharyngitis in family practice, the role of clinical scoring, and the rational use of antibiotics with reference to prevention of rheumatic fever in India.",
+      openingLines: [
+        "Acute pharyngitis is inflammation of the pharynx and tonsils, usually of infective origin; 70-85% of episodes are viral and only 15-30% of episodes in children aged 5-15 years are due to group A beta-haemolytic Streptococcus.",
+        "The purpose of identifying streptococcal pharyngitis in India is prevention of acute rheumatic fever and rheumatic heart disease, which remain leading causes of acquired heart disease in young Indians, rather than shortening of symptoms.",
+      ],
+      answer: [
+        {
+          heading: "1. Aetiology",
+          points: [
+            "Viral: rhinovirus, coronavirus, adenovirus (pharyngoconjunctival fever), influenza and parainfluenza, Epstein-Barr virus, enterovirus (herpangina), and primary HIV infection.",
+            "Bacterial: group A beta-haemolytic Streptococcus principally, and less often groups C and G streptococci, Fusobacterium necrophorum, Neisseria gonorrhoeae, Corynebacterium diphtheriae, and Mycoplasma pneumoniae.",
+            "Non-infective: gastro-oesophageal reflux, allergic rhinitis with post-nasal drip, smoking and occupational irritants, and agranulocytosis from drugs.",
+          ],
+        },
+        {
+          heading: "2. Clinical assessment",
+          points: [
+            "History: onset, fever, odynophagia, cough, coryza, hoarseness, rash, abdominal pain, contact history, immunisation status, previous rheumatic fever, and drugs such as carbimazole, methotrexate or clozapine.",
+            "Examination: temperature, tonsillar size and exudate, palatal petechiae, anterior cervical nodes, and a deliberate search for trismus, uvular deviation, drooling, stridor, neck swelling and splenomegaly.",
+            "Features favouring streptococcus: sudden onset, fever, exudate, tender anterior cervical nodes, palatal petechiae, scarlatiniform rash, and absence of cough and coryza.",
+            "Features favouring a virus: cough, coryza, hoarseness, conjunctivitis, oral ulcers, and diarrhoea.",
+          ],
+        },
+        {
+          heading: "3. Clinical scoring",
+          points: [
+            "Centor criteria: tonsillar exudate, tender anterior cervical nodes, history of fever, absence of cough - one point each.",
+            "McIsaac modification: add one point for age 3-14 years, none for 15-44 years, subtract one for 45 years or over.",
+            "Score 0-1 (risk 1-10%): no test, no antibiotic. Score 2-3 (risk 11-35%): rapid antigen test or throat culture, or a delayed prescription where testing is unavailable. Score 4-5 (risk about 51-53%): test if available, and empirical penicillin is acceptable in a high rheumatic fever setting such as India.",
+            "Rapid antigen detection tests have 90-95% specificity but 70-90% sensitivity; a negative test in a child should be confirmed by culture. ASO titre has no role in acute diagnosis.",
+          ],
+        },
+        {
+          heading: "4. Treatment",
+          points: [
+            "Symptomatic for all: paracetamol 15 mg/kg six-hourly or ibuprofen 10 mg/kg eight-hourly, fluids, warm saline gargles and rest.",
+            "Penicillin V 250 mg two to three times daily under 27 kg, or 500 mg twice daily in adults, for 10 days - the full course is required for eradication and rheumatic fever prevention.",
+            "Amoxicillin 50 mg/kg once daily for 10 days as a palatable alternative; benzathine penicillin G 600,000 units (under 27 kg) or 1.2 million units intramuscularly as a single dose when adherence is doubtful.",
+            "Penicillin allergy: cephalexin 20 mg/kg twice daily for 10 days, or azithromycin 12 mg/kg daily for 5 days if the reaction was anaphylactic.",
+            "Antibiotics started up to 9 days from onset still prevent rheumatic fever; they do not prevent post-streptococcal glomerulonephritis.",
+            "Return to school 24 hours after starting an effective antibiotic.",
+          ],
+        },
+        {
+          heading: "5. Complications and referral",
+          points: [
+            "Suppurative: quinsy, parapharyngeal and retropharyngeal abscess, otitis media, sinusitis, cervical lymphadenitis, Lemierre syndrome.",
+            "Non-suppurative: acute rheumatic fever at 2-4 weeks, post-streptococcal glomerulonephritis at 1-2 weeks, scarlet fever, toxic shock.",
+            "Refer or admit for stridor, drooling, trismus, inability to swallow, neck swelling or stiffness, toxaemia, suspected diphtheria, or a sore throat in a patient on a marrow-suppressing drug.",
+            "Indications for tonsillectomy by Paradise criteria: 7 documented episodes in one year, 5 per year for 2 years, or 3 per year for 3 years, plus obstructive sleep apnoea, recurrent quinsy and suspected malignancy.",
+          ],
+        },
+        {
+          heading: "6. Prevention and public health",
+          points: [
+            "Cough and hand hygiene, avoidance of shared utensils, and treatment of symptomatic household contacts.",
+            "Secondary prophylaxis after acute rheumatic fever with benzathine penicillin G 1.2 million units every 3 weeks, duration determined by the presence and severity of carditis.",
+            "Rational antibiotic prescribing to limit resistance - a documented sore throat protocol in the clinic is itself an intervention.",
+          ],
+        },
+      ],
+      mustDraw: [
+        "The Centor and McIsaac scoring table with the age modifier and the probability of streptococcal infection at each score.",
+        "A flow chart: sore throat - danger signs? - if none, McIsaac score - 0-1 no antibiotic, 2-3 test or delay, 4-5 test or treat - penicillin V 10 days - review at 48-72 hours.",
+      ],
+      markSplit: [
+        { part: "Aetiology and epidemiology", marks: 2 },
+        { part: "History, examination and danger signs", marks: 2 },
+        { part: "Centor and McIsaac scoring with actions", marks: 3 },
+        { part: "Antibiotic choice, dose and duration", marks: 2 },
+        { part: "Complications, referral and prophylaxis", marks: 1 },
+      ],
+      keywords: ["pharyngitis", "Centor score", "McIsaac", "penicillin V", "rheumatic fever"],
+    },
+    {
+      id: "eye-ent-sore-throat-t2",
+      paper: "III",
+      kind: "short-note",
+      marks: 5,
+      minutes: 10,
+      frequency: "common",
+      question: "Write short notes on peritonsillar abscess (quinsy): clinical features, differential diagnosis and management.",
+      openingLines: [
+        "Peritonsillar abscess is a collection of pus in the peritonsillar space between the tonsillar capsule and the superior constrictor muscle, usually a complication of acute tonsillitis and commonest in adolescents and young adults.",
+        "It is the commonest deep neck space infection and is important in family practice because it presents as a sore throat but requires drainage rather than an oral antibiotic.",
+      ],
+      answer: [
+        {
+          heading: "Clinical features",
+          points: [
+            "Severe unilateral throat pain with referred otalgia on the same side, progressively worsening after a few days of tonsillitis.",
+            "Trismus from pterygoid irritation, a muffled hot potato voice, drooling because swallowing is painful, and foul breath.",
+            "Fever, toxaemia, and tender ipsilateral jugulodigastric lymphadenopathy.",
+            "On examination: a bulging, oedematous, congested soft palate above and lateral to the tonsil, with the tonsil pushed down and medially and the uvula deviated to the opposite side.",
+          ],
+        },
+        {
+          heading: "Differential diagnosis",
+          points: [
+            "Severe acute tonsillitis - bilateral, no uvular deviation, no trismus.",
+            "Parapharyngeal abscess - swelling behind the posterior pillar with neck swelling and less palatal bulge.",
+            "Infectious mononucleosis with gross tonsillar hypertrophy - bilateral, generalised lymphadenopathy, splenomegaly.",
+            "Neoplasm of the tonsil or a retained foreign body, and rarely an aneurysm of the internal carotid artery, which is why aspiration is done cautiously and laterally.",
+          ],
+        },
+        {
+          heading: "Management",
+          points: [
+            "Admit or refer the same day; assess the airway first.",
+            "Needle aspiration of the point of maximum bulge or incision and drainage at the junction of a horizontal line through the base of the uvula and a vertical line through the anterior pillar, under local anaesthesia.",
+            "Antibiotics: intravenous amoxicillin-clavulanate 1.2 g eight-hourly, or benzylpenicillin 2 million units six-hourly with metronidazole 500 mg eight-hourly, switching to oral therapy for a total of 10 days.",
+            "Analgesia, intravenous fluids and mouth care; a single dose of dexamethasone 10 mg reduces pain and trismus.",
+            "Interval tonsillectomy after 4-6 weeks for recurrent quinsy or a severe first episode; immediate hot tonsillectomy is an alternative in selected centres.",
+          ],
+        },
+        {
+          heading: "Complications if untreated",
+          points: [
+            "Spread to the parapharyngeal and retropharyngeal spaces and mediastinum, airway obstruction, aspiration pneumonia if the abscess ruptures, internal jugular vein thrombosis (Lemierre syndrome) and carotid haemorrhage, and septicaemia.",
+          ],
+        },
+      ],
+      mustDraw: [
+        "A diagram of the oropharynx showing the bulging left soft palate, the tonsil displaced down and medially, and the uvula deviated to the right, with the site of incision marked.",
+      ],
+      markSplit: [
+        { part: "Definition and anatomy", marks: 1 },
+        { part: "Clinical features including trismus and uvular deviation", marks: 1.5 },
+        { part: "Differential diagnosis", marks: 1 },
+        { part: "Drainage, antibiotics with doses and interval tonsillectomy", marks: 1.5 },
+      ],
+      keywords: ["quinsy", "peritonsillar abscess", "trismus", "uvular deviation", "interval tonsillectomy"],
+    },
+  ],
+  mcqs: [
+    {
+      id: "eye-ent-sore-throat-q1",
+      stem: "A 9-year-old girl has a two-day history of fever and sore throat. She has tonsillar exudate, tender anterior cervical nodes and no cough. Using the McIsaac score, what is her score and the most appropriate action where rapid antigen testing is unavailable?",
+      options: [
+        "Score 2 - reassure and give analgesia only",
+        "Score 3 - throat culture only, no treatment while awaiting the result",
+        "Score 4 - treat with penicillin V 250 mg two to three times daily for 10 days",
+        "Score 4 - treat with azithromycin for 3 days",
+        "Score 5 - admit for intravenous antibiotics",
+      ],
+      answer: 2,
+      explanation:
+        "She scores one point each for exudate, tender anterior cervical nodes, history of fever and absence of cough, plus one for age 3-14 years, giving 4 out of 5 and a roughly 51-53% probability of group A streptococcus; in a high rheumatic fever prevalence setting such as India, empirical penicillin V for a full 10 days is appropriate when testing is unavailable. A score of 2 is arithmetically wrong here, and analgesia alone would leave rheumatic fever risk unaddressed. Waiting for a culture result without treatment is acceptable practice only where culture is actually available and follow-up is reliable. Azithromycin is a second-line penicillin-allergy option and 3 days is not an adequate eradication course. Admission is not indicated without airway or deep space involvement.",
+      difficulty: "moderate",
+    },
+    {
+      id: "eye-ent-sore-throat-q2",
+      stem: "An 18-year-old with sore throat, marked fatigue, generalised lymphadenopathy and a palpable spleen tip is given amoxicillin by a pharmacist and develops a florid maculopapular rash on day 4. What is the most likely explanation?",
+      options: [
+        "IgE-mediated penicillin allergy requiring lifelong avoidance of all beta-lactams",
+        "Ampicillin or amoxicillin rash in infectious mononucleosis",
+        "Scarlet fever from group A streptococcus",
+        "Stevens-Johnson syndrome",
+        "Drug reaction with eosinophilia and systemic symptoms (DRESS)",
+      ],
+      answer: 1,
+      explanation:
+        "Sore throat with generalised lymphadenopathy, splenomegaly and profound fatigue is infectious mononucleosis, and 80-90% of such patients develop a non-allergic maculopapular rash when given ampicillin or amoxicillin; it does not indicate true penicillin allergy and does not require lifelong avoidance. A true IgE-mediated reaction appears within an hour or two as urticaria, angioedema or anaphylaxis, not as a delayed morbilliform rash. Scarlet fever produces a sandpaper rash with circumoral pallor and a strawberry tongue at the outset of the illness, not on day 4 of an antibiotic. Stevens-Johnson syndrome involves mucosal erosions, blistering and systemic toxicity. DRESS presents later with fever, facial oedema, eosinophilia and hepatitis.",
+      difficulty: "easy",
+    },
+    {
+      id: "eye-ent-sore-throat-q3",
+      stem: "A 22-year-old man has had a sore throat for five days and now cannot open his mouth more than two centimetres. His voice is muffled, he is drooling, and the left soft palate bulges with the uvula pushed to the right. What is the correct management?",
+      options: [
+        "Oral amoxicillin-clavulanate and review in 48 hours",
+        "A single dose of dexamethasone and analgesia at home",
+        "Same-day needle aspiration or incision and drainage with intravenous antibiotics",
+        "Immediate tonsillectomy in the clinic",
+        "Throat swab, then treatment based on culture",
+      ],
+      answer: 2,
+      explanation:
+        "Trismus, a muffled voice, drooling and a unilateral palatal bulge with uvular deviation define a peritonsillar abscess, and pus must be drained by needle aspiration or incision alongside intravenous antibiotics such as amoxicillin-clavulanate or benzylpenicillin with metronidazole. Oral antibiotics alone rarely resolve an established abscess and risk spread to the parapharyngeal space and mediastinum. Dexamethasone helps pain and trismus but is an adjunct, never the treatment. Tonsillectomy is not done in a clinic and is generally deferred as an interval procedure. Waiting for a culture wastes the critical period in an infection that can obstruct the airway.",
+      difficulty: "easy",
+    },
+    {
+      id: "eye-ent-sore-throat-q4",
+      stem: "Which statement about antibiotic treatment of group A streptococcal pharyngitis is correct?",
+      options: [
+        "Treatment must begin within 48 hours of symptom onset to prevent rheumatic fever",
+        "Antibiotics prevent both acute rheumatic fever and post-streptococcal glomerulonephritis",
+        "Penicillin resistance in Streptococcus pyogenes now requires a third-generation cephalosporin",
+        "Treatment started within 9 days of onset still prevents acute rheumatic fever",
+        "A 5-day course of penicillin V is sufficient for eradication",
+      ],
+      answer: 3,
+      explanation:
+        "The classical evidence, from the Warren Air Force Base studies onward, is that antibiotic treatment begun up to 9 days after the onset of streptococcal pharyngitis still prevents acute rheumatic fever, which is why it is safe to test or observe rather than prescribe on the first day. Waiting beyond 48 hours does not forfeit protection. Antibiotics do not prevent post-streptococcal glomerulonephritis. Streptococcus pyogenes has never been shown to be resistant to penicillin, so a broad-spectrum cephalosporin is unnecessary. A full 10 days of penicillin V is required for eradication, and shorter courses relapse.",
+      difficulty: "moderate",
+    },
+    {
+      id: "eye-ent-sore-throat-q5",
+      stem: "A 6-year-old unimmunised child has fever, sore throat and a greyish-white membrane over both tonsils extending onto the uvula, which bleeds when touched. His neck is swollen and he looks toxic despite a temperature of only 37.8 degrees C. What should be done first?",
+      options: [
+        "Send a throat swab and start oral amoxicillin, reviewing in 48 hours",
+        "Give diphtheria antitoxin, start penicillin or erythromycin, isolate and notify without waiting for culture",
+        "Prescribe a course of azithromycin and arrange outpatient ENT review",
+        "Perform an urgent monospot test for infectious mononucleosis",
+        "Start intravenous acyclovir for herpetic tonsillitis",
+      ],
+      answer: 1,
+      explanation:
+        "A greyish adherent membrane that bleeds on removal, bull neck and toxaemia disproportionate to a modest fever in an unimmunised child is diphtheria, and antitoxin must be given on clinical suspicion because delay while awaiting culture allows myocarditis and neuropathy; penicillin or erythromycin, isolation and notification follow. Amoxicillin with a 48-hour review is the answer for ordinary bacterial tonsillitis and misses the toxin-mediated illness. Outpatient azithromycin repeats the same delay. Monospot addresses mononucleosis, which produces a membranous tonsillitis but with generalised lymphadenopathy and splenomegaly and no toxaemia of this kind. Acyclovir treats herpetic gingivostomatitis, which causes vesicles and ulcers rather than an adherent membrane.",
+      difficulty: "moderate",
+    },
+  ],
+  cards: [
+    {
+      id: "eye-ent-sore-throat-c1",
+      front: "The four Centor criteria.",
+      back: "Tonsillar exudate, tender anterior cervical lymphadenopathy, history of fever, and absence of cough - one point each.",
+    },
+    {
+      id: "eye-ent-sore-throat-c2",
+      front: "The McIsaac age modification.",
+      back: "Add 1 point for age 3-14 years, 0 for 15-44 years, subtract 1 for 45 years or older.",
+    },
+    {
+      id: "eye-ent-sore-throat-c3",
+      front: "First-line antibiotic, dose and duration for streptococcal pharyngitis.",
+      back: "Penicillin V 250 mg two to three times daily under 27 kg, or 500 mg twice daily in adults, for 10 days; amoxicillin 50 mg/kg once daily for 10 days is an alternative.",
+    },
+    {
+      id: "eye-ent-sore-throat-c4",
+      front: "How late can antibiotics be started and still prevent rheumatic fever?",
+      back: "Up to 9 days from the onset of symptoms; antibiotics do not prevent post-streptococcal glomerulonephritis.",
+    },
+    {
+      id: "eye-ent-sore-throat-c5",
+      front: "Which antibiotic must be avoided when infectious mononucleosis is possible, and why?",
+      back: "Ampicillin and amoxicillin - they cause a florid maculopapular rash in 80-90% of patients with mononucleosis.",
+    },
+    {
+      id: "eye-ent-sore-throat-c6",
+      front: "Triad that means quinsy rather than tonsillitis.",
+      back: "Trismus, muffled hot potato voice and uvular deviation with a unilateral bulging soft palate - needs drainage plus intravenous antibiotics.",
+    },
+    {
+      id: "eye-ent-sore-throat-c7",
+      front: "Paradise criteria for tonsillectomy.",
+      back: "7 documented episodes in 1 year, 5 per year for 2 years, or 3 per year for 3 years, each with fever above 38.3 degrees C, exudate, cervical adenopathy or a positive GABHS culture.",
+    },
+    {
+      id: "eye-ent-sore-throat-c8",
+      front: "Secondary prophylaxis regimen after acute rheumatic fever.",
+      back: "Benzathine penicillin G 1.2 million units intramuscularly every 3 weeks (600,000 units if under 27 kg); 5 years or to age 21 without carditis, 10 years or to 21 with carditis, up to 40 years or lifelong with valve disease.",
+    },
+    {
+      id: "eye-ent-sore-throat-c9",
+      front: "Sore throat with fever in a patient on carbimazole or clozapine - what must you do?",
+      back: "Urgent full blood count to exclude agranulocytosis before prescribing anything; stop the drug pending the result.",
+    },
+    {
+      id: "eye-ent-sore-throat-c10",
+      front: "Why is ASO titre useless in acute pharyngitis?",
+      back: "It rises only 2-3 weeks after infection; it confirms preceding streptococcal infection in suspected rheumatic fever or glomerulonephritis, not the current sore throat.",
+    },
+  ],
+  references: [
+    "Infectious Diseases Society of America, Clinical Practice Guideline for the Diagnosis and Management of Group A Streptococcal Pharyngitis, 2012",
+    "NICE guideline NG84, Sore throat (acute): antimicrobial prescribing, 2018 (FeverPAIN and Centor)",
+    "PL Dhingra and Shruti Dhingra, Diseases of Ear, Nose and Throat and Head and Neck Surgery, 8th edition, 2021",
+    "WHO, Rheumatic fever and rheumatic heart disease, Technical Report Series 923, 2004",
+    "Indian Academy of Pediatrics, Standard Treatment Guidelines, Acute Pharyngotonsillitis, 2022",
+    "National Centre for Disease Control, Diphtheria - National Guidelines for Outbreak Response, MoHFW, Government of India",
+    "Harrison's Principles of Internal Medicine, 21st edition, 2022 - streptococcal infections",
+  ],
+});
+
+
+topics.push({
+  id: "eye-ent-rhinitis-sinusitis",
+  title: "Allergic rhinitis and sinusitis",
+  oneLiner:
+    "Allergic rhinitis is an IgE-mediated inflammation of the nasal mucosa classified by the ARIA system into intermittent or persistent and mild or moderate-severe, treated by allergen avoidance and intranasal corticosteroids; acute rhinosinusitis is overwhelmingly viral and needs an antibiotic only when the double-sickening pattern, symptoms beyond 10 days or severe illness with high fever and purulent discharge is present, while orbital and intracranial spread are the complications that must never be missed.",
+  frequency: "core",
+  keywords: [
+    "allergic rhinitis",
+    "ARIA classification",
+    "intranasal corticosteroid",
+    "fluticasone",
+    "montelukast",
+    "levocetirizine",
+    "acute rhinosinusitis",
+    "chronic rhinosinusitis",
+    "nasal polyps",
+    "double sickening",
+    "amoxicillin-clavulanate",
+    "orbital cellulitis",
+    "saline nasal irrigation",
+    "immunotherapy",
+    "nasal obstruction",
+    "EPOS",
+  ],
+  sections: [
+    {
+      heading: "Allergic rhinitis: definition, burden and classification",
+      points: [
+        "**Allergic rhinitis is an IgE-mediated inflammation of the nasal mucosa** following allergen exposure, defined clinically by two or more of **watery rhinorrhoea, sneezing (often paroxysmal), nasal obstruction and nasal or ocular itching, for more than one hour on most days**.",
+        "It affects **roughly 20 to 30% of the Indian population**, and its importance is not the symptom alone but the co-morbidity: it worsens asthma control, causes otitis media with effusion, chronic rhinosinusitis and nasal polyps, and impairs sleep, school performance and work productivity.",
+        "**The ARIA classification replaced seasonal and perennial**: by duration, **intermittent means symptoms on fewer than 4 days a week or for fewer than 4 consecutive weeks; persistent means 4 or more days a week and for more than 4 weeks**.",
+        "By severity, **mild means normal sleep, normal daily activities, sport and work, and no troublesome symptoms; moderate-severe means one or more of these is impaired**. The two axes together give four categories that determine treatment.",
+        "**The united airway concept must be stated in any answer**: about 80% of asthmatics have rhinitis and 20 to 40% of patients with rhinitis have asthma, so every patient with rhinitis is asked about wheeze, nocturnal cough and exercise limitation, and every asthmatic has the nose examined.",
+        "Common Indian allergens are **house dust mite (Dermatophagoides), cockroach, moulds, animal dander, and pollens from Parthenium, Prosopis juliflora, grasses and Artemisia**, with biomass smoke, traffic pollution and tobacco acting as non-allergic aggravators.",
+      ],
+    },
+    {
+      heading: "Diagnosing allergic rhinitis and separating its mimics",
+      points: [
+        "History carries the diagnosis: **pattern and timing of symptoms, indoor versus outdoor triggers, seasonality, response to previous antihistamines, family history of atopy, and the presence of eczema, asthma or conjunctivitis**.",
+        "Signs to look for: **pale, boggy, bluish inferior turbinates with clear watery secretions**, a transverse nasal crease from the allergic salute, **allergic shiners (infraorbital venous congestion), Dennie-Morgan lines, cobblestoning of the posterior pharyngeal wall, and adenoid facies with mouth breathing in children**.",
+        "**Always examine for nasal polyps** - pale, insensitive, mobile, non-bleeding grape-like masses arising from the middle meatus; a unilateral polyp or a bleeding mass is not allergic and needs urgent referral.",
+        "Investigations are usually unnecessary in primary care; where diagnosis is doubtful or immunotherapy is planned use **skin prick testing (first choice) or specific serum IgE**. **Total IgE and absolute eosinophil count are neither sensitive nor specific and should not be used to make the diagnosis** - a point examiners like.",
+        "**Differential diagnosis:** non-allergic rhinitis (vasomotor - triggered by temperature change, odours and spicy food, with no itching or sneezing paroxysms), infective rhinitis, **rhinitis medicamentosa from more than 5 to 7 days of topical decongestant use**, drug-induced rhinitis (beta-blockers, ACE inhibitors, aspirin, oral contraceptives), hormonal rhinitis of pregnancy, and CSF rhinorrhoea after trauma.",
+        "In children, **unilateral foul purulent nasal discharge is a foreign body until proved otherwise**, and adenoid hypertrophy is the commonest cause of chronic mouth breathing and snoring.",
+      ],
+    },
+    {
+      heading: "Treating allergic rhinitis, stepwise",
+      points: [
+        "**Allergen avoidance first:** mattress and pillow covers, weekly hot washing of bedding, removal of carpets and soft toys from the bedroom, control of damp and mould, cockroach control, keeping windows shut during high pollen periods, and complete avoidance of tobacco and biomass smoke.",
+        "**Saline nasal irrigation (isotonic or hypertonic, 5 to 10 mL per nostril once or twice daily)** is cheap, safe in pregnancy and children, and reduces symptoms and medication need - always prescribe it.",
+        "**Intranasal corticosteroids are the single most effective drug class** and first line in persistent or moderate-severe disease: **fluticasone propionate 50 microgram per spray, two sprays per nostril once daily (adults), or mometasone furoate 50 microgram, two sprays once daily; children 6 to 11 years take one spray per nostril once daily**. Full benefit takes 1 to 2 weeks, so continuous use must be explained.",
+        "**Teach the spray technique explicitly**: blow the nose, tilt the head slightly forward, use the opposite hand to aim the spray away from the nasal septum, and do not sniff hard. Aiming at the septum causes epistaxis and, rarely, septal perforation - the commonest reason these drugs are abandoned.",
+        "**Second-generation oral antihistamines** are first line in mild intermittent disease and add-on otherwise: **levocetirizine 5 mg once daily (children 6 to 11 years 2.5 mg), cetirizine 10 mg, loratadine 10 mg or fexofenadine 120 to 180 mg once daily**. **Avoid first-generation antihistamines such as chlorpheniramine** because of sedation, impaired school performance, anticholinergic effects and driving risk.",
+        "**Intranasal antihistamine (azelastine) added to an intranasal steroid** works faster than either alone and is useful in moderate-severe disease; **montelukast 10 mg at night (children 5 mg)** is a reasonable add-on where asthma coexists, but carries a warning about neuropsychiatric effects and should not be first line.",
+        "**Oral decongestants (pseudoephedrine) are avoided in hypertension, ischaemic heart disease, glaucoma, prostatism and in children under 6**; **topical oxymetazoline must be limited to 3 to 5 days** because of rhinitis medicamentosa.",
+        "**Allergen immunotherapy (subcutaneous or sublingual) for 3 to 5 years** is the only disease-modifying treatment; it is offered for proven single or few allergen sensitisation with inadequate response to pharmacotherapy, and it can prevent progression to asthma.",
+      ],
+    },
+    {
+      heading: "Acute rhinosinusitis: diagnosis and the antibiotic decision",
+      points: [
+        "**Acute rhinosinusitis is symptomatic inflammation of the nose and paranasal sinuses of less than 12 weeks duration**, defined by **nasal blockage or obstruction plus nasal discharge (anterior or posterior), with facial pain or pressure and/or reduction of smell**.",
+        "**The overwhelming majority are viral** (common cold); only about **0.5 to 2% of viral upper respiratory infections progress to bacterial rhinosinusitis**, so the default answer is symptomatic treatment.",
+        "Bacterial infection should be suspected when there is **one of three patterns: symptoms persisting beyond 10 days without improvement; severe onset with fever above 39 degrees C and purulent nasal discharge for at least 3 to 4 consecutive days; or double sickening - initial improvement followed by worsening after 5 to 6 days**.",
+        "The **common organisms are Streptococcus pneumoniae, Haemophilus influenzae and Moraxella catarrhalis**, the same trio as acute otitis media; Staphylococcus aureus and anaerobes matter in chronic and dental-origin disease.",
+        "**Radiographs of the sinuses are not recommended for diagnosis** - mucosal thickening is common in asymptomatic people and in simple colds. **Contrast CT of the sinuses and orbit is reserved for suspected complications, unilateral disease, failure to respond, or preoperative planning**.",
+        "Symptomatic treatment: **saline irrigation, intranasal corticosteroid (mometasone 2 sprays twice daily has evidence in acute rhinosinusitis), analgesia, steam inhalation and adequate fluids**; topical decongestants for no more than 3 to 5 days.",
+        "**When an antibiotic is indicated: amoxicillin-clavulanate 625 mg three times daily in adults (or 90/6.4 mg/kg/day in two divided doses in children) for 5 to 10 days**; doxycycline 100 mg twice daily for adults with penicillin allergy, or levofloxacin 500 mg daily where a fluoroquinolone is unavoidable. **Azithromycin and cotrimoxazole are poor choices because of pneumococcal resistance.**",
+      ],
+    },
+    {
+      heading: "Chronic rhinosinusitis, polyps and when to image or refer",
+      points: [
+        "**Chronic rhinosinusitis is the same symptom complex lasting 12 weeks or more**, and it is subdivided into **chronic rhinosinusitis with nasal polyps and without nasal polyps**; the EPOS framework requires either endoscopic signs (polyps, mucopurulent discharge from the middle meatus, oedema) or CT changes for confirmation.",
+        "Contributing factors to search for: **allergic rhinitis, asthma, aspirin sensitivity (Samter triad of asthma, nasal polyps and aspirin sensitivity), deviated nasal septum, dental infection of upper premolars and molars, immunodeficiency, cystic fibrosis and primary ciliary dyskinesia in children, and biomass or occupational exposure**.",
+        "Medical treatment of chronic rhinosinusitis: **long-term intranasal corticosteroid (high-volume steroid irrigation in polyp disease), saline irrigation, treatment of allergy, and a short course of oral prednisolone 0.5 mg/kg for 5 to 7 days for severe polyposis** under supervision; prolonged low-dose macrolide is used in selected non-polypoid cases by ENT.",
+        "**Functional endoscopic sinus surgery (FESS)** is indicated after failure of maximal medical treatment, for complications, for mucocoele or fungal disease, and for antrochoanal polyp; it is a treatment for the obstructed drainage pathway, not a cure for allergy.",
+        "**Invasive fungal rhinosinusitis (mucormycosis)** must be considered in **uncontrolled diabetes, ketoacidosis, transplant recipients, and after systemic steroid or prolonged oxygen exposure**: black necrotic eschar on the palate or turbinate, facial numbness or swelling, orbital pain, ophthalmoplegia and proptosis. **It is a surgical emergency needing urgent biopsy, liposomal amphotericin B and debridement.**",
+        "**Unilateral nasal symptoms are the referral rule of this topic**: unilateral obstruction, unilateral blood-stained discharge, a unilateral polyp, facial numbness, proptosis, epiphora or a loose upper tooth suggest **inverted papilloma, nasopharyngeal carcinoma, sinonasal malignancy or fungal disease** and need endoscopy and imaging.",
+      ],
+    },
+    {
+      heading: "Complications and the family physician's follow-up",
+      points: [
+        "**Orbital complications of sinusitis are graded by Chandler: preseptal cellulitis, orbital cellulitis, subperiosteal abscess, orbital abscess and cavernous sinus thrombosis**; they most often arise from ethmoid sinusitis in children through the thin lamina papyracea.",
+        "**The distinction that must be made at the bedside is preseptal versus orbital cellulitis**: preseptal disease has lid swelling with **normal vision, normal eye movements and no proptosis**, while orbital cellulitis has **proptosis, painful or restricted eye movements, diplopia, chemosis and reduced acuity or colour vision**, and requires admission, intravenous antibiotics and urgent contrast CT.",
+        "**Intracranial complications:** meningitis, extradural, subdural and frontal lobe abscess, and cavernous sinus thrombosis; **Pott puffy tumour is a boggy forehead swelling from frontal osteomyelitis with an underlying subperiosteal abscess** and is an admission.",
+        "In allergic rhinitis, review at **2 to 4 weeks after starting an intranasal steroid**, check spray technique and adherence before adding a second drug, reassess asthma control, and step down in the off-season while continuing avoidance measures.",
+        "Counsel on realistic outcomes: **allergic rhinitis is controlled, not cured**, unless immunotherapy is used; and every patient should be given a written plan naming the drug, the dose, the technique and the review date.",
+        "Document **school days or work days lost, sleep disturbance and asthma exacerbations** - these are the outcome measures that justify escalating treatment and the ones examiners expect a family physician to record.",
+      ],
+    },
+  ],
+  tables: [
+    {
+      heading: "ARIA classification and first-line treatment",
+      columns: ["Category", "Definition", "First-line treatment"],
+      rows: [
+        ["Mild intermittent", "Fewer than 4 days a week or under 4 weeks; sleep and activity normal", "Allergen avoidance, saline irrigation, oral second-generation antihistamine as needed"],
+        ["Moderate-severe intermittent", "Fewer than 4 days a week or under 4 weeks, but sleep, school, work or sport impaired", "Intranasal corticosteroid, with an oral or intranasal antihistamine as required"],
+        ["Mild persistent", "4 or more days a week and over 4 weeks; sleep and activity normal", "Intranasal corticosteroid, or a regular oral antihistamine"],
+        ["Moderate-severe persistent", "4 or more days a week and over 4 weeks with impairment", "Intranasal corticosteroid, add intranasal azelastine; review in 2-4 weeks; consider immunotherapy referral"],
+      ],
+    },
+    {
+      heading: "Drugs for allergic rhinitis with doses",
+      columns: ["Drug", "Adult dose", "Paediatric dose", "Key caution"],
+      rows: [
+        ["Fluticasone propionate nasal spray", "2 sprays (50 microgram each) per nostril once daily", "6-11 years: 1 spray per nostril once daily", "Aim away from the septum; epistaxis and crusting"],
+        ["Mometasone furoate nasal spray", "2 sprays (50 microgram each) per nostril once daily", "3-11 years: 1 spray per nostril once daily", "Lowest systemic bioavailability; safe in long-term use"],
+        ["Levocetirizine", "5 mg once daily at night", "6-11 years: 2.5 mg once daily", "Mild sedation; reduce dose in renal impairment"],
+        ["Fexofenadine", "120-180 mg once daily", "6-11 years: 30 mg twice daily", "Non-sedating; avoid with fruit juices which reduce absorption"],
+        ["Azelastine nasal spray", "1 spray per nostril twice daily", "Over 6 years: 1 spray per nostril twice daily", "Bitter taste is the usual reason for non-adherence"],
+        ["Montelukast", "10 mg at night", "6-14 years: 5 mg chewable at night", "Neuropsychiatric adverse effects; not first line"],
+        ["Oxymetazoline 0.05% nasal drops", "2-3 drops per nostril twice daily", "Avoid under 6 years", "Maximum 3-5 days - rhinitis medicamentosa"],
+      ],
+    },
+    {
+      heading: "Viral versus bacterial acute rhinosinusitis",
+      columns: ["Feature", "Viral", "Bacterial"],
+      rows: [
+        ["Duration", "Peaks at 3-5 days and improves by day 7-10", "Persists beyond 10 days without improvement"],
+        ["Pattern", "Steady improvement", "Double sickening - improvement then worsening after 5-6 days"],
+        ["Fever", "Low grade, early, settles in 24-48 hours", "Above 39 degrees C with purulent discharge for 3-4 consecutive days"],
+        ["Discharge", "Watery then mucoid; colour change alone means nothing", "Persistently purulent, often unilateral"],
+        ["Facial pain", "Mild pressure", "Localised unilateral pain and tenderness, worse on bending forward"],
+        ["Treatment", "Saline irrigation, intranasal steroid, analgesia; no antibiotic", "Amoxicillin-clavulanate 625 mg three times daily for 5-10 days"],
+      ],
+    },
+    {
+      heading: "Preseptal versus orbital cellulitis",
+      columns: ["Feature", "Preseptal cellulitis", "Orbital cellulitis"],
+      rows: [
+        ["Visual acuity", "Normal", "Reduced, with impaired colour vision"],
+        ["Eye movements", "Full and painless", "Restricted and painful; diplopia"],
+        ["Proptosis", "Absent", "Present"],
+        ["Chemosis", "Absent or minimal", "Present"],
+        ["Pupil", "Normal", "May show a relative afferent pupillary defect"],
+        ["Management", "Oral amoxicillin-clavulanate, review in 24 hours", "Admit, contrast CT orbit and sinuses, intravenous antibiotics, urgent ENT and ophthalmology review, drainage if abscess"],
+      ],
+    },
+  ],
+  redFlags: [
+    "Proptosis, painful or restricted eye movements, diplopia or reduced vision with sinusitis - orbital cellulitis or subperiosteal abscess; admit today for contrast CT and intravenous antibiotics.",
+    "Black necrotic eschar on the palate or turbinate, facial numbness or ophthalmoplegia in an uncontrolled diabetic - invasive fungal rhinosinusitis (mucormycosis); urgent biopsy, liposomal amphotericin B and surgical debridement.",
+    "Severe headache, vomiting, altered sensorium, seizures or neck stiffness with sinusitis - meningitis, intracranial abscess or cavernous sinus thrombosis.",
+    "Boggy tender swelling of the forehead with frontal sinusitis - Pott puffy tumour from frontal bone osteomyelitis; admit.",
+    "Unilateral nasal obstruction with blood-stained discharge, a unilateral mass, facial numbness, epiphora or a loose upper tooth - sinonasal malignancy, inverted papilloma or nasopharyngeal carcinoma; urgent endoscopy and imaging.",
+    "Unilateral foul purulent nasal discharge in a child - retained nasal foreign body until removed.",
+    "Clear watery unilateral rhinorrhoea after head injury or sinus surgery, increasing on bending forward, with a salty taste - CSF rhinorrhoea; refer, do not pack the nose.",
+  ],
+  pearls: [
+    "The colour of nasal discharge does not distinguish viral from bacterial sinusitis; the time course does - beyond 10 days, or double sickening, or severe with fever above 39 degrees C.",
+    "Intranasal corticosteroids are the most effective drug in allergic rhinitis, but they take 1-2 weeks to work and must be sprayed away from the septum.",
+    "Check the technique before changing the drug - most treatment failure in rhinitis is misdirected spray, not the wrong molecule.",
+    "One airway, one disease: ask every patient with rhinitis about wheeze, and examine the nose of every asthmatic.",
+    "Topical decongestants for more than 5 days cause rhinitis medicamentosa - the patient returns with worse blockage and a bottle in the pocket.",
+    "Total IgE and absolute eosinophil count do not diagnose allergic rhinitis; the history does, and skin prick testing confirms it when immunotherapy is planned.",
+    "Any unilateral nasal sign in an adult is malignancy until proved otherwise, and in a child is a foreign body until proved otherwise.",
+    "Painful or restricted eye movement with lid swelling means the infection is behind the orbital septum - that patient is admitted, not given oral antibiotics.",
+  ],
+  theory: [
+    {
+      id: "eye-ent-rhinitis-sinusitis-t1",
+      paper: "III",
+      kind: "long",
+      marks: 10,
+      minutes: 20,
+      frequency: "core",
+      question:
+        "A 24-year-old woman has sneezing, watery nasal discharge and nasal blockage on most days for the past six months, disturbing her sleep. Discuss the classification, evaluation and stepwise management of allergic rhinitis in family practice, including its relationship with asthma.",
+      openingLines: [
+        "Allergic rhinitis is an IgE-mediated inflammation of the nasal mucosa following allergen exposure, characterised by sneezing, watery rhinorrhoea, nasal obstruction and nasal or ocular itching for more than an hour on most days.",
+        "It affects 20-30% of Indians and is significant less for the symptoms themselves than for its effect on sleep, school and work performance, and for its close association with asthma, otitis media with effusion and chronic rhinosinusitis.",
+      ],
+      answer: [
+        {
+          heading: "1. Classification (ARIA)",
+          points: [
+            "By duration: intermittent - fewer than 4 days a week or fewer than 4 consecutive weeks; persistent - 4 or more days a week and more than 4 weeks.",
+            "By severity: mild - normal sleep, daily activities, sport, work, and no troublesome symptoms; moderate-severe - one or more of these impaired.",
+            "This patient has persistent moderate-severe disease, since symptoms occur on most days for six months and disturb sleep.",
+          ],
+        },
+        {
+          heading: "2. Evaluation",
+          points: [
+            "History: pattern, seasonality, indoor and outdoor triggers, occupation, pets, damp housing, biomass and tobacco smoke exposure, family history of atopy, and previous drug response.",
+            "Ask about asthma symptoms (wheeze, nocturnal cough, exercise limitation), eczema, conjunctivitis, snoring and daytime somnolence.",
+            "Examination: pale boggy bluish turbinates with clear secretions, allergic salute crease, allergic shiners, Dennie-Morgan lines, pharyngeal cobblestoning, adenoid facies in children, and a deliberate search for nasal polyps and septal deviation.",
+            "Investigations: none routinely; skin prick testing or specific serum IgE when the diagnosis is doubtful or immunotherapy is planned. Total IgE and absolute eosinophil count are not diagnostic.",
+            "Differential diagnosis: vasomotor and other non-allergic rhinitis, infective rhinitis, rhinitis medicamentosa, drug-induced rhinitis, hormonal rhinitis of pregnancy, nasal polyposis, deviated septum, and in a child a nasal foreign body.",
+          ],
+        },
+        {
+          heading: "3. Non-pharmacological management",
+          points: [
+            "Allergen avoidance: mattress and pillow covers, weekly hot washing of bedding, removal of carpets and soft toys from the bedroom, damp and mould control, cockroach control, windows closed in the pollen season.",
+            "Complete avoidance of tobacco smoke and reduction of biomass fuel exposure, with a switch to LPG or improved stoves where possible.",
+            "Saline nasal irrigation 5-10 mL per nostril once or twice daily - cheap, effective and safe in children and pregnancy.",
+            "Patient education on the chronic relapsing nature of the illness and on correct spray technique.",
+          ],
+        },
+        {
+          heading: "4. Pharmacological management, stepwise",
+          points: [
+            "Mild intermittent: oral second-generation antihistamine as required - levocetirizine 5 mg or fexofenadine 120-180 mg once daily.",
+            "Persistent or moderate-severe: intranasal corticosteroid as first line - fluticasone propionate or mometasone furoate 2 sprays per nostril once daily, continued for at least 2-4 weeks before judging response.",
+            "Inadequate control: add intranasal azelastine, or combine an intranasal steroid with an antihistamine; consider montelukast 10 mg at night where asthma coexists, with counselling about neuropsychiatric effects.",
+            "Short-term topical decongestant for 3-5 days only for severe blockage; avoid oral decongestants in hypertension, ischaemic heart disease, glaucoma and prostatism.",
+            "Avoid first-generation antihistamines because of sedation and anticholinergic effects; avoid depot steroid injections entirely.",
+            "Allergen immunotherapy, subcutaneous or sublingual for 3-5 years, is the only disease-modifying option and is considered for proven mono-sensitisation with inadequate control.",
+          ],
+        },
+        {
+          heading: "5. The united airway and co-morbidity",
+          points: [
+            "About 80% of asthmatics have rhinitis and 20-40% of patients with rhinitis have asthma; untreated rhinitis worsens asthma control and increases exacerbations and emergency visits.",
+            "Treating rhinitis improves asthma symptoms and reduces rescue inhaler use; therefore assess asthma control at every rhinitis visit with a peak flow or spirometry where available.",
+            "Other co-morbidities to look for: otitis media with effusion, chronic rhinosinusitis with or without polyps, sleep-disordered breathing, and allergic conjunctivitis.",
+          ],
+        },
+        {
+          heading: "6. Follow-up and referral",
+          points: [
+            "Review at 2-4 weeks: check symptom control, spray technique, adherence and adverse effects before escalating.",
+            "Refer for unilateral symptoms, blood-stained discharge, nasal polyps not responding to medical treatment, suspected CSF rhinorrhoea, or for consideration of immunotherapy or surgery.",
+          ],
+        },
+      ],
+      mustDraw: [
+        "The ARIA two-by-two classification grid: intermittent versus persistent against mild versus moderate-severe, with the first-line drug written into each cell.",
+        "A stepwise treatment ladder from avoidance and saline, through oral antihistamine, to intranasal corticosteroid, to combination therapy, to immunotherapy.",
+      ],
+      markSplit: [
+        { part: "Definition and ARIA classification", marks: 2 },
+        { part: "History, signs and differential diagnosis", marks: 2 },
+        { part: "Non-pharmacological measures", marks: 1.5 },
+        { part: "Stepwise drug treatment with doses", marks: 3 },
+        { part: "Asthma link, follow-up and referral", marks: 1.5 },
+      ],
+      keywords: ["allergic rhinitis", "ARIA", "intranasal corticosteroid", "immunotherapy", "united airway"],
+    },
+    {
+      id: "eye-ent-rhinitis-sinusitis-t2",
+      paper: "III",
+      kind: "short-note",
+      marks: 5,
+      minutes: 10,
+      frequency: "common",
+      question: "Write short notes on acute bacterial rhinosinusitis: how it is distinguished from viral rhinosinusitis, its management, and its complications.",
+      openingLines: [
+        "Acute rhinosinusitis is symptomatic inflammation of the nasal cavity and paranasal sinuses of less than 12 weeks duration, defined by nasal blockage or discharge with facial pain or pressure and/or reduction of smell.",
+        "The great majority are viral; fewer than 2% of viral upper respiratory infections progress to bacterial rhinosinusitis, so the clinical task is to identify that small group and to recognise orbital and intracranial complications early.",
+      ],
+      answer: [
+        {
+          heading: "Distinguishing bacterial from viral disease",
+          points: [
+            "Symptoms persisting beyond 10 days without any improvement.",
+            "Severe onset with temperature above 39 degrees C and purulent nasal discharge for at least 3-4 consecutive days.",
+            "Double sickening - initial improvement followed by clear worsening after 5-6 days.",
+            "Supporting features: unilateral localised facial pain and tenderness, unilateral purulent discharge, and raised inflammatory markers. The colour of discharge alone is not discriminating, and plain sinus radiographs are not recommended for diagnosis.",
+          ],
+        },
+        {
+          heading: "Organisms",
+          points: [
+            "Streptococcus pneumoniae, non-typeable Haemophilus influenzae and Moraxella catarrhalis; Staphylococcus aureus and anaerobes in dental-origin and chronic disease; fungi in the immunocompromised and uncontrolled diabetic.",
+          ],
+        },
+        {
+          heading: "Management",
+          points: [
+            "Symptomatic in all: saline nasal irrigation, intranasal corticosteroid such as mometasone 2 sprays twice daily, analgesia with paracetamol or ibuprofen, steam inhalation and fluids; topical decongestant for no more than 3-5 days.",
+            "Antibiotic when bacterial criteria are met: amoxicillin-clavulanate 625 mg three times daily for 5-10 days in adults, or 90/6.4 mg/kg/day in two divided doses in children.",
+            "Penicillin allergy: doxycycline 100 mg twice daily in adults, or levofloxacin 500 mg daily; azithromycin and cotrimoxazole are poor choices because of pneumococcal resistance.",
+            "Imaging with contrast CT of sinuses and orbit only for suspected complications, unilateral disease, failure to respond, immunocompromise, or preoperative planning.",
+            "Refer for recurrent acute rhinosinusitis (four or more episodes a year), failure of two antibiotic courses, or anatomical obstruction needing FESS.",
+          ],
+        },
+        {
+          heading: "Complications",
+          points: [
+            "Orbital, graded by Chandler: preseptal cellulitis, orbital cellulitis, subperiosteal abscess, orbital abscess, cavernous sinus thrombosis. Painful or restricted eye movement, proptosis, chemosis or reduced vision means orbital involvement and admission.",
+            "Bony: frontal bone osteomyelitis with a boggy forehead swelling - Pott puffy tumour; osteomyelitis of the maxilla in infants.",
+            "Intracranial: meningitis, extradural, subdural and frontal lobe abscess, cavernous sinus thrombosis.",
+            "Descending infection: pharyngitis, otitis media, bronchitis, and exacerbation of asthma.",
+          ],
+        },
+      ],
+      mustDraw: [
+        "A table of viral versus bacterial acute rhinosinusitis with rows for duration, pattern, fever, discharge and treatment.",
+        "A coronal diagram of the paranasal sinuses showing the ostiomeatal complex and the lamina papyracea as the route of orbital spread from the ethmoids.",
+      ],
+      markSplit: [
+        { part: "Definition and the three bacterial criteria", marks: 2 },
+        { part: "Organisms and investigations", marks: 1 },
+        { part: "Treatment with drug, dose and duration", marks: 1 },
+        { part: "Complications including Chandler grading", marks: 1 },
+      ],
+      keywords: ["acute rhinosinusitis", "double sickening", "amoxicillin-clavulanate", "Chandler classification", "orbital cellulitis"],
+    },
+  ],
+  mcqs: [
+    {
+      id: "eye-ent-rhinitis-sinusitis-q1",
+      stem: "A 19-year-old student has sneezing, itching and watery rhinorrhoea on 5 days a week for the past 3 months, waking him at night and affecting his studies. According to ARIA, how is this classified and what is the first-line drug?",
+      options: [
+        "Mild intermittent - oral levocetirizine as required",
+        "Moderate-severe intermittent - intranasal azelastine",
+        "Mild persistent - oral montelukast",
+        "Moderate-severe persistent - intranasal corticosteroid",
+        "Moderate-severe persistent - a short course of oral prednisolone",
+      ],
+      answer: 3,
+      explanation:
+        "Symptoms on 4 or more days a week for more than 4 weeks make this persistent, and impairment of sleep and studies makes it moderate-severe, for which the intranasal corticosteroid is first line and the most effective single agent. It is not intermittent, since it exceeds both the 4-day and 4-week thresholds, so the first two options misclassify the duration. Mild persistent is excluded because sleep and school performance are impaired, and montelukast is in any case an add-on with neuropsychiatric warnings rather than a first choice. Oral prednisolone has no place in routine allergic rhinitis and depot steroid injections are actively discouraged.",
+      difficulty: "easy",
+    },
+    {
+      id: "eye-ent-rhinitis-sinusitis-q2",
+      stem: "A 32-year-old man had a cold that improved by day 5, then on day 7 developed worsening right-sided facial pain, purulent discharge and a temperature of 38.9 degrees C. What is the appropriate management?",
+      options: [
+        "Continue symptomatic treatment only, as this remains a viral illness",
+        "Plain radiograph of the paranasal sinuses and treat according to the result",
+        "Amoxicillin-clavulanate 625 mg three times daily for 5-10 days with saline irrigation and an intranasal steroid",
+        "Azithromycin 500 mg daily for 3 days",
+        "Contrast CT of the sinuses before any treatment",
+      ],
+      answer: 2,
+      explanation:
+        "Initial improvement followed by clear worsening - double sickening - is one of the three accepted patterns of acute bacterial rhinosinusitis, and amoxicillin-clavulanate with saline irrigation and an intranasal corticosteroid is the standard treatment. Continuing symptomatic treatment alone ignores a defined bacterial pattern in a febrile patient. Plain sinus radiographs are not recommended because mucosal thickening is common in simple colds and in asymptomatic people. Azithromycin has unacceptable pneumococcal resistance rates in India. CT is reserved for suspected complications, unilateral disease, failure to respond or preoperative planning, not for a first diagnosis.",
+      difficulty: "easy",
+    },
+    {
+      id: "eye-ent-rhinitis-sinusitis-q3",
+      stem: "A 7-year-old with three days of nasal blockage and fever now has swelling of the right upper and lower lids. The eye is proptosed, eye movements are painful and restricted laterally, and vision is 6/24 with reduced colour perception. What is the correct action?",
+      options: [
+        "Oral amoxicillin-clavulanate with review in 24 hours for preseptal cellulitis",
+        "Warm compresses and topical antibiotic eye ointment",
+        "Admit for contrast CT of the orbit and sinuses with intravenous antibiotics and urgent ENT and ophthalmology review",
+        "Start an intranasal corticosteroid and antihistamine and review in a week",
+        "Arrange an outpatient MRI in the next few days",
+      ],
+      answer: 2,
+      explanation:
+        "Proptosis, painful restricted eye movements and reduced acuity with impaired colour vision place the infection behind the orbital septum - orbital cellulitis, most often from ethmoid sinusitis through the lamina papyracea - which demands admission, urgent contrast imaging, intravenous antibiotics and drainage of any subperiosteal abscess. Preseptal cellulitis, treatable orally, has normal vision, full painless eye movements and no proptosis, so the first option under-treats a sight- and life-threatening condition. Compresses and ointment treat a stye or conjunctivitis. Rhinitis treatment addresses the wrong problem entirely, and an outpatient scan in a few days risks blindness and cavernous sinus thrombosis.",
+      difficulty: "moderate",
+    },
+    {
+      id: "eye-ent-rhinitis-sinusitis-q4",
+      stem: "A 45-year-old man with poorly controlled diabetes and a recent course of systemic steroids has facial pain, numbness of the left cheek, blood-stained nasal discharge and a black eschar on the left middle turbinate. What must be done?",
+      options: [
+        "Start amoxicillin-clavulanate and review in 48 hours",
+        "Prescribe a nasal steroid and arrange elective ENT referral",
+        "Urgent biopsy with admission, liposomal amphotericin B and surgical debridement",
+        "Nasal packing for the bleeding and outpatient CT",
+        "Oral fluconazole and glycaemic optimisation as an outpatient",
+      ],
+      answer: 2,
+      explanation:
+        "A black necrotic eschar with facial numbness and blood-stained discharge in an uncontrolled diabetic exposed to steroids is invasive fungal rhinosinusitis, usually mucormycosis, which is angioinvasive and progresses over hours to days; it requires urgent biopsy, liposomal amphotericin B and aggressive surgical debridement with correction of ketoacidosis. Antibacterial therapy has no activity against mucorales and wastes the critical window. Elective referral with a nasal steroid is dangerous, since steroids worsen the disease. Packing addresses a symptom while the infection invades the orbit and skull base. Fluconazole has no activity against mucorales at all.",
+      difficulty: "moderate",
+    },
+    {
+      id: "eye-ent-rhinitis-sinusitis-q5",
+      stem: "A patient with allergic rhinitis has used an intranasal corticosteroid for four weeks with little benefit and now complains of intermittent epistaxis. What is the most appropriate next step?",
+      options: [
+        "Stop the intranasal steroid and start oral prednisolone",
+        "Check the spray technique, particularly whether the spray is being aimed at the septum, before changing treatment",
+        "Switch immediately to a depot corticosteroid injection",
+        "Add an oral decongestant for long-term use",
+        "Order total IgE and absolute eosinophil count to confirm the diagnosis",
+      ],
+      answer: 1,
+      explanation:
+        "Epistaxis and crusting with apparent treatment failure are usually caused by directing the spray at the nasal septum, so demonstrating the correct technique - blow the nose, head slightly forward, opposite hand, aim laterally, do not sniff hard - fixes both the bleeding and the poor response before any drug change. Oral prednisolone is not appropriate for routine allergic rhinitis and would not address the mechanical problem. Depot corticosteroid injections carry systemic risks and are discouraged. Long-term oral decongestants raise blood pressure and are contraindicated in several common comorbidities. Total IgE and eosinophil counts are neither sensitive nor specific and would not change management.",
+      difficulty: "easy",
+    },
+  ],
+  cards: [
+    {
+      id: "eye-ent-rhinitis-sinusitis-c1",
+      front: "ARIA classification of allergic rhinitis.",
+      back: "Duration: intermittent (under 4 days a week or under 4 weeks) versus persistent (4 or more days a week and over 4 weeks). Severity: mild versus moderate-severe, decided by impairment of sleep, daily activity, sport, school or work.",
+    },
+    {
+      id: "eye-ent-rhinitis-sinusitis-c2",
+      front: "Most effective drug class in allergic rhinitis, with a dose.",
+      back: "Intranasal corticosteroid - fluticasone propionate or mometasone furoate 50 microgram, 2 sprays per nostril once daily in adults; takes 1-2 weeks for full effect.",
+    },
+    {
+      id: "eye-ent-rhinitis-sinusitis-c3",
+      front: "Correct intranasal spray technique.",
+      back: "Blow the nose, head slightly forward, use the opposite hand and aim the nozzle laterally away from the septum, do not sniff hard - septal aiming causes epistaxis and perforation.",
+    },
+    {
+      id: "eye-ent-rhinitis-sinusitis-c4",
+      front: "Three criteria that suggest bacterial rather than viral acute rhinosinusitis.",
+      back: "Symptoms beyond 10 days without improvement; severe onset with fever above 39 degrees C and purulent discharge for 3-4 days; or double sickening after 5-6 days.",
+    },
+    {
+      id: "eye-ent-rhinitis-sinusitis-c5",
+      front: "Antibiotic of choice and dose in acute bacterial rhinosinusitis.",
+      back: "Amoxicillin-clavulanate 625 mg three times daily for 5-10 days in adults (90/6.4 mg/kg/day in two divided doses in children); doxycycline 100 mg twice daily if penicillin allergic.",
+    },
+    {
+      id: "eye-ent-rhinitis-sinusitis-c6",
+      front: "Chandler classification of orbital complications.",
+      back: "I preseptal cellulitis, II orbital cellulitis, III subperiosteal abscess, IV orbital abscess, V cavernous sinus thrombosis - usually from ethmoid sinusitis through the lamina papyracea.",
+    },
+    {
+      id: "eye-ent-rhinitis-sinusitis-c7",
+      front: "Bedside separation of preseptal from orbital cellulitis.",
+      back: "Preseptal: normal vision, full painless eye movements, no proptosis. Orbital: proptosis, painful restricted movements, chemosis, reduced acuity and colour vision - admit.",
+    },
+    {
+      id: "eye-ent-rhinitis-sinusitis-c8",
+      front: "Rhinitis medicamentosa - cause and management.",
+      back: "Rebound congestion after more than 5-7 days of a topical decongestant such as oxymetazoline; stop the decongestant, substitute an intranasal corticosteroid and saline, and counsel about the rebound period.",
+    },
+    {
+      id: "eye-ent-rhinitis-sinusitis-c9",
+      front: "Samter triad.",
+      back: "Asthma, nasal polyposis and aspirin (NSAID) sensitivity - polyps recur readily and NSAIDs must be avoided.",
+    },
+    {
+      id: "eye-ent-rhinitis-sinusitis-c10",
+      front: "What does a unilateral nasal symptom mean?",
+      back: "In an adult, sinonasal malignancy, inverted papilloma or nasopharyngeal carcinoma until endoscopy and imaging prove otherwise; in a child, a nasal foreign body.",
+    },
+  ],
+  references: [
+    "ARIA (Allergic Rhinitis and its Impact on Asthma) guidelines, 2020 revision",
+    "EPOS 2020: European Position Paper on Rhinosinusitis and Nasal Polyps",
+    "PL Dhingra and Shruti Dhingra, Diseases of Ear, Nose and Throat and Head and Neck Surgery, 8th edition, 2021",
+    "American Academy of Otolaryngology-Head and Neck Surgery, Clinical Practice Guideline: Adult Sinusitis (Update), 2015",
+    "Infectious Diseases Society of America Guideline for Acute Bacterial Rhinosinusitis, 2012",
+    "Indian Council of Medical Research, Treatment Guidelines for Antimicrobial Use in Common Syndromes, 3rd edition, 2022",
+    "ICMR Guidelines for management of mucormycosis, 2021",
+  ],
+});
+
+
 const cases: ClinicalCase[] = [
   {
     id: "eye-ent-case-1",

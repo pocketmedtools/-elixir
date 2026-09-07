@@ -1542,6 +1542,793 @@ topics.push({
     "Neena Khanna, Illustrated Synopsis of Dermatology and Sexually Transmitted Diseases, 6th edition, 2020",
   ],
 });
+topics.push({
+  id: "psychiatry-alcohol-use-disorder",
+  title: "Alcohol use disorder: screening, withdrawal, CIWA-Ar and delirium tremens",
+  oneLiner:
+    "Alcohol use disorder is a DSM-5 pattern of impaired control, social impairment, risky use and pharmacological dependence with 2 or more of 11 criteria in twelve months; the family physician screens with AUDIT-C or AUDIT, delivers brief intervention for hazardous drinking, manages uncomplicated withdrawal with a tapering benzodiazepine and parenteral thiamine while grading severity with the CIWA-Ar, recognises that withdrawal seizures peak at 12-48 hours and delirium tremens at 48-96 hours with a mortality of 1-5% treated and up to 25% untreated, and maintains abstinence with naltrexone, acamprosate or disulfiram plus Alcoholics Anonymous.",
+  frequency: "core",
+  keywords: [
+    "alcohol use disorder",
+    "AUDIT",
+    "AUDIT-C",
+    "CAGE",
+    "CIWA-Ar",
+    "delirium tremens",
+    "withdrawal seizure",
+    "chlordiazepoxide",
+    "lorazepam",
+    "thiamine",
+    "Wernicke encephalopathy",
+    "Korsakoff psychosis",
+    "naltrexone",
+    "acamprosate",
+    "disulfiram",
+    "alcoholic hepatitis",
+    "brief intervention",
+    "Alcoholics Anonymous",
+  ],
+  sections: [
+    {
+      heading: "Burden, screening and the definition of a standard drink",
+      points: [
+        "The National Family Health Survey-5 (2019-21) found that **about 19% of Indian men and 1% of Indian women aged 15 and above consume alcohol**, and the National Mental Health Survey 2015-16 put alcohol use disorder at **4.6% of adults**, making it the commonest substance use disorder in the country; more than 85% receive no treatment, and the family physician is usually the only doctor these patients ever see.",
+        "One **standard drink contains about 10 g of ethanol** and equals 30 mL of Indian spirits (whisky, rum, brandy at 42.8% v/v is about 13 g per 30 mL peg), 285 mL of beer at 5%, or 100 mL of wine; **hazardous drinking is more than 14 standard drinks a week for men and more than 7 for women**, or more than 4 (men) or 3 (women) on any single occasion, and country liquor and toddy must be quantified in the same way, by asking for the size and number of pegs or bottles.",
+        "**Screen with AUDIT-C** - the first three AUDIT questions on frequency, typical quantity and frequency of drinking 6 or more drinks - scored 0-12, positive at **4 or more in men and 3 or more in women**; the full **AUDIT is 10 items scored 0-40**, where 8-15 is hazardous drinking, 16-19 is harmful drinking and **20 or more suggests dependence** needing assisted withdrawal and specialist input.",
+        "The **CAGE questionnaire** - felt the need to Cut down, Annoyed by criticism, Guilty about drinking, Eye-opener in the morning - is quicker, and **2 or more positive answers is significant**, but it misses hazardous drinking that has not yet reached dependence, so AUDIT-C is the better screen in an asymptomatic clinic population.",
+        "Screen opportunistically in **hypertension resistant to two drugs, new-onset atrial fibrillation, unexplained deranged liver enzymes with an AST:ALT ratio above 2, macrocytosis without anaemia, raised GGT, recurrent gastritis or pancreatitis, repeated trauma or road traffic injury, poorly controlled diabetes, tuberculosis defaulters, and in the husband of a woman presenting with depression or domestic violence**.",
+        "**DSM-5 alcohol use disorder** requires 2 or more of 11 criteria in twelve months - larger amounts than intended, unsuccessful attempts to cut down, time spent obtaining or recovering, craving, failure of role obligations, continued use despite social problems, activities given up, use in hazardous situations, use despite physical or psychological harm, tolerance, and withdrawal - graded **mild (2-3), moderate (4-5) and severe (6 or more)**.",
+      ],
+    },
+    {
+      heading: "Brief intervention and deciding who needs assisted withdrawal",
+      points: [
+        "For **hazardous and harmful drinking without dependence (AUDIT 8-19)**, deliver a **5-10 minute brief intervention using the FRAMES structure**: Feedback of the AUDIT score and the abnormal GGT or liver enzymes; Responsibility - the decision is his; Advice to cut down or stop, given clearly; a Menu of options; Empathy rather than confrontation; and Self-efficacy, reminding him of a past success. Brief intervention reduces consumption by about 4 standard drinks a week and the number needed to treat is about 8.",
+        "Set a **written, quantified goal** - a maximum number of pegs on a maximum number of days, drink-free days each week, no drinking on an empty stomach, and never drinking and driving - and give a **drinking diary**; review at 4 weeks with a repeat AUDIT and a repeat GGT, which is a powerful motivator when it falls.",
+        "**Abstinence, not reduction, is the goal** in established dependence (AUDIT 20 or more), alcoholic liver disease, pancreatitis, seizure disorder, pregnancy, and when the patient is on drugs that interact - metronidazole, paracetamol in large doses, warfarin, sulphonylureas, isoniazid and rifampicin.",
+        "**Decide the setting for detoxification.** Home-based withdrawal is safe only when there is **no history of withdrawal seizures or delirium tremens, no severe comorbidity, no polysubstance use, a reliable adult at home who holds the tablets, and daily contact with the doctor**.",
+        "**Admit for assisted withdrawal** if any of the following: a previous withdrawal seizure or delirium tremens, current CIWA-Ar of 15 or more, drinking more than about 30 units a day, confusion or hallucinations, temperature above 38 degrees, significant comorbidity such as decompensated liver disease, sepsis, head injury or unstable diabetes, pregnancy, age over 65 with frailty, no supervising adult, or a suicide risk.",
+        "**Never stop a dependent drinker abruptly without cover** - the commonest cause of withdrawal seizures and delirium tremens in Indian practice is a patient admitted for surgery, pneumonia or trauma whose alcohol history was never taken, who convulses on the second hospital day.",
+      ],
+    },
+    {
+      heading: "The withdrawal syndrome and the CIWA-Ar",
+      points: [
+        "**The timeline is exam material and must be quoted exactly**: minor withdrawal - tremor, anxiety, sweating, nausea, insomnia, tachycardia - begins **6-12 hours** after the last drink; **alcoholic hallucinosis** (usually visual, with a clear sensorium and intact orientation) at **12-24 hours**; **generalised tonic-clonic withdrawal seizures at 12-48 hours**, peaking at about 24 hours; and **delirium tremens at 48-96 hours**, occasionally up to day 7.",
+        "**The CIWA-Ar (Clinical Institute Withdrawal Assessment for Alcohol, revised) has 10 items** - nausea and vomiting, tremor, paroxysmal sweats, anxiety, agitation, tactile disturbance, auditory disturbance, visual disturbance, headache, and orientation and clouding of sensorium; nine items score 0-7 and orientation scores 0-4, giving a **maximum of 67**.",
+        "**CIWA-Ar bands: under 8 is mild** (no drug needed if stable), **8-15 is moderate** (treat), and **16 or more is severe with a high risk of seizures and delirium tremens**; scores of 15 or more, or any score with confusion, mandate admission.",
+        "**Symptom-triggered dosing is preferred to fixed dosing** where nursing observation is reliable: score the CIWA-Ar hourly, give a benzodiazepine dose whenever the score is 8-10 or more, and rescore an hour later - this uses less drug and shortens treatment than a fixed schedule. **Fixed-dose tapering is safer in home-based detoxification and where hourly scoring is impossible**, which is most of Indian general practice.",
+        "**The CIWA-Ar is invalid in a patient who cannot communicate** - the intubated, the aphasic, the demented, or one with a language barrier - and it is misleading when the agitation is due to sepsis, head injury, hypoglycaemia or hepatic encephalopathy rather than withdrawal; score falsely high in delirium of any cause.",
+        "Always check the reversible contributors that mimic and worsen withdrawal: **capillary glucose, sodium, potassium, magnesium, calcium, urea and creatinine, liver function, and a search for infection**; hypoglycaemia, hyponatraemia and hypomagnesaemia are common in the malnourished drinker and each lowers the seizure threshold.",
+      ],
+    },
+    {
+      heading: "Treating withdrawal, seizures and delirium tremens with real doses",
+      points: [
+        "**Benzodiazepines are the only drug class shown to reduce withdrawal seizures, delirium and mortality.** A standard fixed-dose regimen is **chlordiazepoxide 25-50 mg four times daily on day 1-2, reducing by about 25% a day over 5-7 days** - for example 50 mg QDS, 50 mg TDS, 25 mg QDS, 25 mg TDS, 25 mg BD, 25 mg at night, stop - with additional PRN doses for breakthrough symptoms and a maximum of about 250 mg in the first 24 hours.",
+        "**Diazepam 10 mg four times daily tapering over 5-7 days** is an equally acceptable alternative and is cheaper and more widely available in India; **lorazepam 2-4 mg six-hourly tapering** is the choice in **significant liver disease, the elderly and the patient with respiratory compromise**, because lorazepam, oxazepam and temazepam are conjugated and have no active metabolites.",
+        "**Parenteral thiamine before any glucose**: give **thiamine 100 mg intramuscularly or intravenously daily for 3-5 days** in every alcohol-dependent patient being detoxified, and **500 mg intravenously three times a day for 2-3 days followed by 250 mg daily for 5 days** if Wernicke encephalopathy is suspected or established. Glucose given first to a thiamine-deficient patient precipitates Wernicke encephalopathy, so thiamine goes in first or at least simultaneously.",
+        "**Wernicke encephalopathy** is the triad of **confusion, ophthalmoplegia or nystagmus and ataxia**, but fewer than one in five patients show all three, so treat on any one feature in a drinker; untreated it progresses to the irreversible **Korsakoff psychosis** - anterograde and retrograde amnesia with confabulation. Add oral thiamine 100 mg thrice daily, folic acid 5 mg, pyridoxine and a multivitamin, and correct magnesium, which is needed for thiamine to work.",
+        "**A withdrawal seizure** is treated with **intravenous lorazepam 2-4 mg (or diazepam 5-10 mg) repeated once after 5-10 minutes if needed**, then adequate benzodiazepine cover to prevent recurrence; **phenytoin does not prevent withdrawal seizures and is not indicated** unless there is an independent seizure disorder. Any first seizure, focal seizure, seizure after 48 hours, or a seizure with head injury or fever needs neuroimaging and a search for another cause.",
+        "**Delirium tremens** - clouded consciousness with disorientation, vivid visual and tactile hallucinations, gross tremor, agitation, fever, tachycardia, hypertension and sweating - is a **medical emergency with 1-5% mortality treated and up to 25% untreated**. Manage in hospital: intravenous or oral **diazepam 10-20 mg or lorazepam 2-4 mg repeated every 10-15 minutes until light sedation is achieved**, high-dose parenteral thiamine, correction of fluid, glucose, sodium, potassium and magnesium, treatment of the precipitating infection, nursing in a lit, quiet room with a familiar attendant, and **haloperidol 2.5-5 mg only as an adjunct for hallucinations that persist despite adequate benzodiazepine** - never alone, since it lowers the seizure threshold and does not treat withdrawal.",
+      ],
+    },
+    {
+      heading: "Relapse prevention and the family",
+      points: [
+        "**Detoxification without relapse prevention is a wasted admission** - more than 70% relapse within a year without it. Start the anti-craving drug before discharge, add psychosocial support, and give the family a written plan.",
+        "**Naltrexone 50 mg once daily** (start 25 mg for 3 days) is the usual first choice, reduces heavy drinking days and craving, requires an opioid-free interval of 7-10 days, and is **contraindicated in acute hepatitis, liver failure and in any patient needing opioid analgesia**; check liver enzymes before and periodically.",
+        "**Acamprosate 666 mg three times daily** (333 mg TDS if under 60 kg or renal impairment; contraindicated if creatinine clearance is below 30 mL/min) supports abstinence, is safe in liver disease, and is the better choice in the patient with cirrhosis; the common adverse effect is diarrhoea.",
+        "**Disulfiram 250 mg once daily** works only with supervised administration by a family member, and produces the aversive reaction - flushing, throbbing headache, vomiting, hypotension, palpitations - with any alcohol including cough syrup, mouthwash and sauces; it is contraindicated in ischaemic heart disease, psychosis, severe liver disease and pregnancy, needs an alcohol-free interval of 12-24 hours before starting, and must be prescribed only to a fully informed and consenting patient.",
+        "**Psychosocial treatment carries the evidence**: motivational interviewing, cognitive behavioural relapse prevention, contingency management, and referral to **Alcoholics Anonymous, which has active chapters in every Indian city, with Al-Anon for the family**; identify high-risk situations, refusal skills, and a plan for the first lapse so that a lapse does not become a relapse.",
+        "Treat the whole family: ask about **domestic violence, children's schooling, debt and the wife's own depression**, since alcohol dependence in the husband is one of the commonest hidden causes of anxiety, depression and injury in a woman attending a family practice; and treat the comorbidity - depression persisting 2-4 weeks after abstinence needs an antidepressant, and tobacco should be tackled at the same time rather than later.",
+      ],
+    },
+  ],
+  tables: [
+    {
+      heading: "Alcohol withdrawal: timeline, features and what to do",
+      columns: ["Time from last drink", "Syndrome", "Features", "Action"],
+      rows: [
+        ["6-12 hours", "Minor withdrawal", "Tremor, anxiety, sweating, nausea, insomnia, tachycardia, hypertension", "Score CIWA-Ar; start benzodiazepine taper and thiamine 100 mg IM"],
+        ["12-24 hours", "Alcoholic hallucinosis", "Visual or tactile hallucinations with a clear sensorium and intact orientation", "Increase the benzodiazepine; this is not delirium tremens and usually needs no antipsychotic"],
+        ["12-48 hours (peak 24)", "Withdrawal seizures", "Generalised tonic-clonic, usually single or two, no focal features", "IV lorazepam 2-4 mg; adequate benzodiazepine cover; do NOT start phenytoin; image if focal or late"],
+        ["48-96 hours (up to day 7)", "Delirium tremens", "Clouded sensorium, disorientation, vivid hallucinations, gross tremor, fever, autonomic storm", "Medical emergency; admit; loading benzodiazepine to light sedation, IV thiamine, fluids, electrolytes, treat sepsis"],
+      ],
+    },
+    {
+      heading: "CIWA-Ar: items, bands and drug regimens",
+      columns: ["Element", "Detail"],
+      rows: [
+        ["Ten items", "Nausea/vomiting, tremor, paroxysmal sweats, anxiety, agitation, tactile disturbance, auditory disturbance, visual disturbance, headache (each 0-7); orientation and clouding of sensorium (0-4)"],
+        ["Maximum score", "67"],
+        ["Under 8", "Mild - monitoring, thiamine, no benzodiazepine needed if stable"],
+        ["8-15", "Moderate - treat with a benzodiazepine; symptom-triggered dosing where hourly scoring is possible"],
+        ["16 or more", "Severe - high risk of seizures and delirium tremens; admit and treat aggressively"],
+        ["Chlordiazepoxide fixed taper", "50 mg QDS day 1, 50 mg TDS day 2, 25 mg QDS day 3, 25 mg TDS day 4, 25 mg BD day 5, 25 mg nocte day 6, stop; PRN doses for breakthrough"],
+        ["Diazepam fixed taper", "10 mg QDS day 1-2 then reduce about 25% daily over 5-7 days"],
+        ["Liver disease, elderly, respiratory disease", "Lorazepam 2-4 mg six-hourly tapering - conjugated, no active metabolite"],
+        ["Thiamine", "100 mg IM/IV daily for 3-5 days routinely; 500 mg IV TDS for 2-3 days then 250 mg daily for 5 days if Wernicke encephalopathy is suspected; always before glucose"],
+      ],
+    },
+    {
+      heading: "Relapse prevention drugs",
+      columns: ["Drug", "Dose", "Mechanism and effect", "Avoid in"],
+      rows: [
+        ["Naltrexone", "25 mg for 3 days then 50 mg OD", "Opioid antagonist; reduces craving and heavy drinking days", "Acute hepatitis or liver failure; current opioid use or need for opioid analgesia"],
+        ["Acamprosate", "666 mg TDS (333 mg TDS if under 60 kg)", "Glutamate/NMDA modulation; supports maintained abstinence; safe in liver disease", "Creatinine clearance under 30 mL/min; causes diarrhoea"],
+        ["Disulfiram", "250 mg OD, supervised", "Aldehyde dehydrogenase inhibitor; aversive reaction with alcohol", "Ischaemic heart disease, psychosis, severe liver disease, pregnancy, unsupervised or non-consenting patient"],
+      ],
+    },
+  ],
+  redFlags: [
+    "Confusion, disorientation, fever above 38 degrees, gross tremor and vivid hallucinations 48-96 hours after the last drink - delirium tremens, a medical emergency with up to 25% mortality if untreated; admit and load with benzodiazepine, do not send home.",
+    "A generalised seizure in a drinker 12-48 hours after stopping, or a CIWA-Ar of 15 or more, or a past history of withdrawal seizures or delirium tremens - assisted withdrawal in hospital, never home detoxification.",
+    "Confusion, ophthalmoplegia or nystagmus, or ataxia in any drinker - Wernicke encephalopathy; give high-dose parenteral thiamine immediately and before any glucose, on a single feature, without waiting for the full triad.",
+    "Jaundice, ascites, encephalopathy, haematemesis or a tense abdomen in a drinker - decompensated alcoholic liver disease, variceal bleeding or spontaneous bacterial peritonitis; use lorazepam not chlordiazepoxide and admit.",
+    "Severe epigastric pain radiating to the back with vomiting after a binge - acute pancreatitis; and a drinker with new confusion, fever or focal signs must be screened for hypoglycaemia, head injury, meningitis and sepsis before the picture is blamed on withdrawal.",
+    "Suicidal ideation in a drinker, or a patient with pesticide access - alcohol is present in a large proportion of Indian suicides; assess risk directly at the first visit and again after detoxification when the mood is clearer.",
+  ],
+  pearls: [
+    "AUDIT-C to screen (4 or more in men, 3 or more in women), full AUDIT to grade: 8-15 hazardous, 16-19 harmful, 20 or more dependence needing assisted withdrawal.",
+    "Learn the clock: tremor 6-12 hours, hallucinosis 12-24 hours, seizures 12-48 hours, delirium tremens 48-96 hours. It is asked every year.",
+    "Thiamine before glucose, always; and treat Wernicke on any one of confusion, ophthalmoplegia or ataxia, because fewer than 20% have the full triad.",
+    "Chlordiazepoxide or diazepam for a normal liver, lorazepam when the liver is bad - the conjugated benzodiazepines have no active metabolite and do not accumulate.",
+    "Phenytoin does not prevent alcohol withdrawal seizures; benzodiazepines do. Haloperidol treats hallucinations in delirium tremens only as an adjunct, never alone, because it lowers the seizure threshold.",
+    "Detoxification without naltrexone, acamprosate or disulfiram plus Alcoholics Anonymous is a wasted admission - over 70% relapse within a year.",
+  ],
+  theory: [
+    {
+      id: "psychiatry-alcohol-t1",
+      paper: "II",
+      kind: "long",
+      marks: 10,
+      minutes: 20,
+      frequency: "core",
+      question:
+        "A 42-year-old man who drinks about 400 mL of country liquor daily for ten years is admitted with fever and cough. On the second hospital day he becomes tremulous, sweaty and disoriented and sees insects on the wall. Discuss the diagnosis, assessment and management.",
+      openingLines: [
+        "This is alcohol withdrawal progressing to delirium tremens, which characteristically appears 48-96 hours after the last drink and is defined by a clouded sensorium with disorientation, vivid visual and tactile hallucinations, gross tremor and autonomic overactivity with fever, tachycardia, hypertension and sweating.",
+        "It is a medical emergency with a mortality of 1-5% even when treated and up to 25% untreated, and the objectives are to confirm it, exclude the mimics including his pneumonia and hypoglycaemia, sedate him adequately with a benzodiazepine, give parenteral thiamine before glucose, correct fluids and electrolytes, and plan relapse prevention once he is well.",
+      ],
+      answer: [
+        {
+          heading: "1. Confirming the diagnosis and grading severity",
+          points: [
+            "Establish the quantity in standard drinks, the time of the last drink, and any past withdrawal seizures or episodes of delirium tremens - the strongest predictors of a repeat.",
+            "Score the CIWA-Ar across its ten items; a score of 16 or more indicates severe withdrawal, and clouding of the sensorium with disorientation takes him beyond simple hallucinosis into delirium tremens.",
+            "Distinguish alcoholic hallucinosis, which occurs at 12-24 hours with a clear sensorium and intact orientation, from delirium tremens, in which consciousness is clouded and orientation lost.",
+            "Note the precipitant: an intercurrent illness such as his pneumonia commonly triggers delirium tremens by forcing abrupt cessation in a dependent drinker whose alcohol history was not taken on admission.",
+          ],
+        },
+        {
+          heading: "2. Excluding the mimics and the coexisting problems",
+          points: [
+            "Capillary glucose immediately - hypoglycaemia in a malnourished drinker is the most easily missed and most rapidly lethal mimic.",
+            "Sodium, potassium, magnesium, calcium, urea, creatinine, liver function, prothrombin time, complete blood count and a chest radiograph for his pneumonia; blood cultures if febrile and toxic.",
+            "Consider hepatic encephalopathy (asterixis, jaundice, ascites), head injury with subdural haematoma (fall history, focal signs, anisocoria - image if any doubt), meningitis, and Wernicke encephalopathy.",
+            "Look for the features of Wernicke encephalopathy - confusion, ophthalmoplegia or nystagmus, ataxia - and treat on any one of them rather than waiting for the triad.",
+          ],
+        },
+        {
+          heading: "3. Immediate management",
+          points: [
+            "Nurse in a well-lit, quiet side room with a familiar relative present, minimal staff changes and repeated reorientation; avoid physical restraint where possible as it worsens agitation and rhabdomyolysis.",
+            "Benzodiazepine loading: diazepam 10-20 mg orally or intravenously, or lorazepam 2-4 mg, repeated every 10-15 minutes until light sedation is achieved, then maintenance with a taper; lorazepam is preferred if there is significant liver disease or respiratory compromise.",
+            "Thiamine 500 mg intravenously three times daily for 2-3 days, then 250 mg daily for 5 days, given before or with any glucose-containing fluid; add folic acid 5 mg, pyridoxine and multivitamins.",
+            "Intravenous fluids for the deficit that follows sweating, fever and poor intake, with correction of hypokalaemia, hypomagnesaemia and hypophosphataemia; magnesium must be replaced for thiamine to be effective.",
+            "Treat the pneumonia with appropriate antibiotics, monitor vital signs, oxygen saturation and CIWA-Ar or a sedation scale, and watch for respiratory depression from the benzodiazepine load.",
+            "Haloperidol 2.5-5 mg may be added only for hallucinations or agitation persisting despite adequate benzodiazepine, never as sole treatment, because it lowers the seizure threshold and does not treat withdrawal.",
+          ],
+        },
+        {
+          heading: "4. Preventing withdrawal seizures",
+          points: [
+            "Adequate benzodiazepine dosing is itself the seizure prophylaxis; do not under-dose from fear of sedation.",
+            "A seizure occurring during the episode is treated with intravenous lorazepam 2-4 mg or diazepam 5-10 mg, repeated once if necessary.",
+            "Phenytoin is not indicated for withdrawal seizures and has no preventive value unless there is an independent epilepsy.",
+            "Neuroimaging is required for a focal seizure, a first seizure with head injury, a seizure occurring more than 48 hours after the last drink, or a prolonged post-ictal deficit.",
+          ],
+        },
+        {
+          heading: "5. After recovery: relapse prevention and the family",
+          points: [
+            "Assess for depression and suicidal ideation once he is clear; mood that persists 2-4 weeks into abstinence needs an antidepressant.",
+            "Start an anti-craving drug before discharge: naltrexone 50 mg daily if liver function permits, or acamprosate 666 mg thrice daily if there is significant liver disease; disulfiram 250 mg daily only with a supervising relative and full consent.",
+            "Refer to Alcoholics Anonymous, arrange motivational interviewing and relapse-prevention counselling, and involve the wife and family, including Al-Anon, addressing debt, domestic violence and the children.",
+            "Arrange follow-up at 1 week, 1 month and 3 months with liver function, a repeat AUDIT, and simultaneous tobacco cessation.",
+          ],
+        },
+      ],
+      mustDraw: [
+        "The withdrawal timeline as a horizontal chart: 6-12 h tremor, 12-24 h hallucinosis, 12-48 h seizures, 48-96 h delirium tremens.",
+        "A table of the CIWA-Ar bands (under 8, 8-15, 16 or more) against the action each triggers.",
+      ],
+      markSplit: [
+        { part: "Definition of delirium tremens and the withdrawal timeline", marks: 2 },
+        { part: "Assessment, CIWA-Ar and exclusion of mimics", marks: 2 },
+        { part: "Benzodiazepine regimen with doses and route", marks: 2 },
+        { part: "Thiamine, fluids, electrolytes and supportive nursing", marks: 2 },
+        { part: "Seizure management and relapse prevention", marks: 2 },
+      ],
+      keywords: ["delirium tremens", "CIWA-Ar", "lorazepam", "thiamine", "Wernicke encephalopathy"],
+    },
+    {
+      id: "psychiatry-alcohol-t2",
+      paper: "II",
+      kind: "short-note",
+      marks: 5,
+      minutes: 10,
+      frequency: "common",
+      question: "Short note: screening for alcohol use disorder and brief intervention in family practice.",
+      openingLines: [
+        "Hazardous drinking is consumption that risks harm - more than 14 standard drinks a week in men or 7 in women, or more than 4 or 3 respectively on one occasion - and it is detectable in the consulting room years before dependence, which is why screening plus brief intervention is one of the most cost-effective interventions in primary care.",
+        "A standard drink is 10 g of ethanol, roughly 30 mL of Indian spirits, 285 mL of beer or 100 mL of wine, and all screening depends on quantifying intake in these units.",
+      ],
+      answer: [
+        {
+          heading: "1. Screening instruments",
+          points: [
+            "AUDIT-C: the first three AUDIT items (frequency, typical quantity, frequency of 6 or more drinks), scored 0-12, positive at 4 or more in men and 3 or more in women.",
+            "Full AUDIT: 10 items scored 0-40 - 8-15 hazardous, 16-19 harmful, 20 or more suggests dependence requiring assisted withdrawal.",
+            "CAGE: Cut down, Annoyed, Guilty, Eye-opener; 2 or more positive is significant but it detects dependence rather than hazardous use.",
+            "Supporting markers: raised GGT, MCV above 100 without anaemia, AST:ALT ratio above 2 - useful for feedback and for monitoring, not for diagnosis.",
+          ],
+        },
+        {
+          heading: "2. Who to screen",
+          points: [
+            "Opportunistically in all new adult registrations and annual health checks.",
+            "Targeted: resistant hypertension, new atrial fibrillation, deranged liver enzymes, macrocytosis, recurrent gastritis or pancreatitis, repeated injury, poor diabetic control, tuberculosis default, insomnia, depression and anxiety.",
+            "In the wife or children presenting with anxiety, depression, injury or poor school performance, since the drinker in the family is often not the patient in front of you.",
+          ],
+        },
+        {
+          heading: "3. Brief intervention - the FRAMES structure",
+          points: [
+            "Feedback: give the AUDIT score and the abnormal GGT plainly, linking them to his own symptoms.",
+            "Responsibility: state that the decision to change is his alone.",
+            "Advice: give clear, unambiguous advice to cut down or stop.",
+            "Menu: offer options - drink-free days, a peg limit, no drinking on an empty stomach, avoiding drinking company, a diary.",
+            "Empathy: a warm, non-judgemental style; confrontation increases resistance.",
+            "Self-efficacy: recall a previous success such as a festival period of abstinence.",
+          ],
+        },
+        {
+          heading: "4. Outcome, follow-up and when to escalate",
+          points: [
+            "Brief intervention takes 5-10 minutes, reduces intake by about 4 standard drinks a week, and has a number needed to treat of about 8.",
+            "Review at 4 weeks with a repeat AUDIT and GGT; a falling GGT is a powerful motivator.",
+            "Escalate to assisted withdrawal and specialist referral for AUDIT 20 or more, any withdrawal symptoms, past seizures or delirium tremens, alcoholic liver disease, pregnancy, or comorbid psychiatric illness.",
+            "Aim for abstinence rather than reduction in dependence, liver disease, pancreatitis, epilepsy and pregnancy.",
+          ],
+        },
+      ],
+      mustDraw: [
+        "A table of AUDIT bands (0-7, 8-15, 16-19, 20+) against the intervention each requires.",
+        "The FRAMES acronym expanded as six lines.",
+      ],
+      markSplit: [
+        { part: "Standard drink and definition of hazardous drinking", marks: 1 },
+        { part: "AUDIT-C, AUDIT, CAGE with cut-offs", marks: 2 },
+        { part: "FRAMES brief intervention", marks: 1 },
+        { part: "Follow-up and criteria for referral or assisted withdrawal", marks: 1 },
+      ],
+      keywords: ["AUDIT", "AUDIT-C", "CAGE", "FRAMES", "brief intervention"],
+    },
+  ],
+  mcqs: [
+    {
+      id: "psychiatry-alcohol-q1",
+      stem: "A 45-year-old man with alcohol dependence and known cirrhosis with ascites requires inpatient detoxification. Which benzodiazepine regimen is most appropriate?",
+      options: [
+        "Chlordiazepoxide 50 mg four times daily tapering over a week",
+        "Lorazepam 2 mg six-hourly, tapered, because it is conjugated and has no active metabolites",
+        "Diazepam 10 mg four times daily tapering over a week",
+        "No benzodiazepine, since sedation may precipitate hepatic encephalopathy",
+        "Phenytoin loading to prevent withdrawal seizures",
+      ],
+      answer: 1,
+      explanation:
+        "In significant liver disease lorazepam, oxazepam and temazepam are preferred because they undergo glucuronidation only, have no active metabolites and do not accumulate. Chlordiazepoxide and diazepam are both oxidised by the liver, have long-acting active metabolites and accumulate in cirrhosis, causing prolonged sedation and precipitating encephalopathy. Withholding all benzodiazepine is dangerous: benzodiazepines are the only class shown to reduce withdrawal seizures, delirium tremens and mortality, and untreated withdrawal is far more likely to harm him than carefully titrated lorazepam. Phenytoin does not prevent alcohol withdrawal seizures and has no role unless there is an independent epilepsy.",
+      difficulty: "moderate",
+    },
+    {
+      id: "psychiatry-alcohol-q2",
+      stem: "A malnourished 38-year-old man with chronic alcohol use is brought to the clinic drowsy with a capillary glucose of 42 mg/dL. What is the correct sequence of treatment?",
+      options: [
+        "50% dextrose first, then thiamine after he is awake",
+        "Thiamine 100 mg intravenously before or together with the dextrose",
+        "Dextrose only; thiamine is unnecessary if he is eating",
+        "Oral glucose and observation, since intravenous therapy risks fluid overload",
+        "Naloxone followed by dextrose",
+      ],
+      answer: 1,
+      explanation:
+        "Glucose loading in a thiamine-deficient drinker consumes the last of his thiamine as a cofactor for carbohydrate metabolism and can precipitate Wernicke encephalopathy, so parenteral thiamine is given before or simultaneously with the dextrose. Giving dextrose first and thiamine later is exactly the classic error the question tests. Assuming thiamine is unnecessary ignores that chronic drinkers are deficient through poor intake, impaired absorption and impaired storage even when apparently eating. Oral glucose in a drowsy patient risks aspiration and acts too slowly at 42 mg/dL. Naloxone treats opioid overdose and has no place in documented hypoglycaemia.",
+      difficulty: "easy",
+    },
+    {
+      id: "psychiatry-alcohol-q3",
+      stem: "A 50-year-old man stopped drinking 20 hours ago. He is fully oriented, has a fine tremor and sweating, and describes seeing small animals in the room but knows they are not real. CIWA-Ar is 12. What is the diagnosis and management?",
+      options: [
+        "Delirium tremens - admit for intravenous benzodiazepine loading",
+        "Alcoholic hallucinosis with moderate withdrawal - increase the benzodiazepine, give thiamine, monitor closely",
+        "Acute schizophrenia - start risperidone",
+        "Withdrawal seizure prodrome - load with phenytoin",
+        "Normal withdrawal - no treatment required",
+      ],
+      answer: 1,
+      explanation:
+        "Hallucinations at 12-24 hours with a clear sensorium, full orientation and preserved insight define alcoholic hallucinosis with moderate withdrawal (CIWA-Ar 8-15), treated by increasing the benzodiazepine and giving thiamine with close observation. Delirium tremens requires clouding of consciousness and disorientation, which he does not have, and typically appears at 48-96 hours. Schizophrenia is not diagnosed in the context of recent alcohol cessation and hallucinosis with insight, and an antipsychotic alone would lower the seizure threshold without treating withdrawal. Phenytoin does not prevent withdrawal seizures. Calling a CIWA-Ar of 12 with hallucinations untreated risks progression to seizures and delirium tremens.",
+      difficulty: "moderate",
+    },
+    {
+      id: "psychiatry-alcohol-q4",
+      stem: "A 35-year-old man has completed detoxification and wants medication to help him stay off alcohol. He has alcoholic hepatitis with a bilirubin of 4 mg/dL and raised transaminases. He is on no opioids. Which drug is most appropriate?",
+      options: [
+        "Naltrexone 50 mg daily",
+        "Acamprosate 666 mg three times daily",
+        "Disulfiram 250 mg daily unsupervised",
+        "Chlordiazepoxide 25 mg twice daily long term",
+        "No drug is effective for relapse prevention",
+      ],
+      answer: 1,
+      explanation:
+        "Acamprosate is renally excreted, is not hepatotoxic and is the anti-craving drug of choice when there is active liver disease, provided the creatinine clearance is above 30 mL/min. Naltrexone is contraindicated in acute hepatitis and liver failure because of hepatotoxicity, which rules it out here despite his being opioid-free. Disulfiram is contraindicated in severe liver disease, and unsupervised disulfiram is ineffective in any case, since its whole benefit depends on a family member witnessing the dose. Continuing a benzodiazepine long term after detoxification substitutes one dependence for another and has no relapse-prevention evidence. Anti-craving drugs plus psychosocial support clearly reduce relapse, so nihilism is wrong.",
+      difficulty: "moderate",
+    },
+    {
+      id: "psychiatry-alcohol-q5",
+      stem: "A 55-year-old man drinking heavily for 20 years is admitted after a road traffic accident. On day 2 he has a single generalised tonic-clonic seizure lasting 90 seconds. He recovers consciousness fully. He has a scalp laceration and mild headache. What is the most appropriate next step?",
+      options: [
+        "Diagnose an alcohol withdrawal seizure and give benzodiazepine cover alone with no imaging",
+        "Give lorazepam, ensure adequate benzodiazepine cover, and obtain a CT head because of the recent head injury",
+        "Load with phenytoin and continue it lifelong",
+        "Start carbamazepine and discharge",
+        "Give haloperidol 5 mg intramuscularly",
+      ],
+      answer: 1,
+      explanation:
+        "The timing fits an alcohol withdrawal seizure, which occurs 12-48 hours after the last drink, and benzodiazepine is the correct treatment and prophylaxis; however he has sustained a head injury with a scalp laceration and headache, so a subdural haematoma must be excluded by CT before the seizure is attributed to withdrawal alone. Attributing it to withdrawal without imaging in a patient with recent head trauma is the trap. Phenytoin neither prevents nor treats alcohol withdrawal seizures and lifelong antiepileptic therapy is not indicated after an isolated withdrawal seizure. Carbamazepine has some use in mild withdrawal in some countries but does not replace a benzodiazepine here, and discharging him on day 2 of withdrawal is unsafe. Haloperidol lowers the seizure threshold and treats neither the seizure nor the withdrawal.",
+      difficulty: "hard",
+    },
+  ],
+  cards: [
+    {
+      id: "psychiatry-alcohol-c1",
+      front: "What is one standard drink, and what counts as hazardous drinking?",
+      back: "One standard drink is about 10 g of ethanol: 30 mL of spirits, 285 mL of beer at 5%, 100 mL of wine. Hazardous: more than 14 drinks a week (men) or 7 (women), or more than 4 (men) or 3 (women) on one occasion.",
+    },
+    {
+      id: "psychiatry-alcohol-c2",
+      front: "AUDIT and AUDIT-C cut-offs.",
+      back: "AUDIT-C (3 items, 0-12): positive at 4 or more in men, 3 or more in women. Full AUDIT (0-40): 8-15 hazardous, 16-19 harmful, 20 or more suggests dependence needing assisted withdrawal.",
+    },
+    {
+      id: "psychiatry-alcohol-c3",
+      front: "The alcohol withdrawal timeline.",
+      back: "Tremor and autonomic symptoms 6-12 h; alcoholic hallucinosis with clear sensorium 12-24 h; generalised seizures 12-48 h (peak 24 h); delirium tremens 48-96 h, up to day 7.",
+    },
+    {
+      id: "psychiatry-alcohol-c4",
+      front: "CIWA-Ar: how many items, maximum score, and the action bands.",
+      back: "Ten items - nine scored 0-7 plus orientation 0-4, maximum 67. Under 8 mild, 8-15 moderate (treat), 16 or more severe with high risk of seizures and delirium tremens (admit).",
+    },
+    {
+      id: "psychiatry-alcohol-c5",
+      front: "Fixed-dose chlordiazepoxide taper for alcohol withdrawal.",
+      back: "50 mg QDS day 1, 50 mg TDS day 2, 25 mg QDS day 3, 25 mg TDS day 4, 25 mg BD day 5, 25 mg nocte day 6, then stop, with PRN doses for breakthrough. Use lorazepam 2-4 mg 6-hourly instead in liver disease or the elderly.",
+    },
+    {
+      id: "psychiatry-alcohol-c6",
+      front: "Thiamine doses in the drinker.",
+      back: "Routine detoxification: 100 mg IM/IV daily for 3-5 days. Suspected or established Wernicke encephalopathy: 500 mg IV three times daily for 2-3 days then 250 mg daily for 5 days. Always before or with glucose.",
+    },
+    {
+      id: "psychiatry-alcohol-c7",
+      front: "Delirium tremens: features, mortality and treatment.",
+      back: "Clouded sensorium with disorientation, vivid visual and tactile hallucinations, gross tremor, fever, autonomic storm at 48-96 h. Mortality 1-5% treated, up to 25% untreated. Benzodiazepine loading to light sedation, IV thiamine, fluids and electrolytes, treat sepsis; haloperidol only as an adjunct.",
+    },
+    {
+      id: "psychiatry-alcohol-c8",
+      front: "Relapse prevention drugs and their doses.",
+      back: "Naltrexone 50 mg OD (avoid in acute hepatitis or opioid use); acamprosate 666 mg TDS (safe in liver disease, avoid if CrCl under 30); disulfiram 250 mg OD, supervised only. All combined with Alcoholics Anonymous and relapse-prevention counselling.",
+    },
+  ],
+  references: [
+    "American Psychiatric Association, DSM-5-TR, 2022",
+    "Sullivan JT et al. Assessment of alcohol withdrawal: the revised Clinical Institute Withdrawal Assessment for Alcohol scale (CIWA-Ar), British Journal of Addiction, 1989",
+    "Babor TF et al. AUDIT: The Alcohol Use Disorders Identification Test, WHO, 2nd edition, 2001",
+    "NICE Clinical Guideline CG100, Alcohol-use disorders: diagnosis and management of physical complications, updated 2017; NICE CG115, 2011",
+    "Indian Psychiatric Society Clinical Practice Guidelines for the management of substance use disorders, 2018",
+    "National Family Health Survey-5 (2019-21), IIPS; National Mental Health Survey of India 2015-16, NIMHANS",
+  ],
+});
+topics.push({
+  id: "psychiatry-somatic-symptom-disorder",
+  title: "Somatic symptom disorder and medically unexplained symptoms",
+  oneLiner:
+    "Somatic symptom disorder is one or more distressing physical symptoms present for at least six months accompanied by disproportionate thoughts, persistent anxiety or excessive time and energy devoted to the symptom - the DSM-5 diagnosis rests on the psychological response and not on whether the symptom is medically explained - and in Indian family practice it is managed by a single trusted doctor with regular short time-based appointments, a clear positive explanation, tight limits on re-investigation, treatment of comorbid depression and anxiety, and a goal of function rather than cure.",
+  frequency: "common",
+  keywords: [
+    "somatic symptom disorder",
+    "medically unexplained symptoms",
+    "illness anxiety disorder",
+    "hypochondriasis",
+    "conversion disorder",
+    "functional neurological disorder",
+    "factitious disorder",
+    "PHQ-15",
+    "Bradford Hill reassurance",
+    "burning feet syndrome",
+    "dhat syndrome",
+    "reattribution model",
+    "amitriptyline",
+    "chronic fatigue",
+    "fibromyalgia",
+    "health anxiety",
+  ],
+  sections: [
+    {
+      heading: "Scale of the problem and why the label matters",
+      points: [
+        "**Medically unexplained symptoms account for 15-30% of all primary care consultations worldwide** and studies from Indian general practice and psychiatry outpatient departments report similar or higher figures; these patients undergo more investigation, more surgery and more iatrogenic harm than almost any other group, and they consume a disproportionate share of a practice's time and the family's money.",
+        "**DSM-5 replaced somatoform disorder and hypochondriasis with two diagnoses**: **somatic symptom disorder** - one or more distressing somatic symptoms for at least six months with disproportionate and persistent thoughts about their seriousness, persistently high anxiety about health, or excessive time and energy devoted to them; and **illness anxiety disorder** - preoccupation with having or acquiring a serious illness with minimal or no somatic symptoms, with either excessive health-related behaviour or maladaptive avoidance.",
+        "The crucial change is that **the diagnosis is now made on positive psychological criteria, not on the absence of a medical explanation**; a patient with genuine ischaemic heart disease can have somatic symptom disorder if his response to the symptom is disproportionate, and calling the symptom 'unexplained' is no longer required.",
+        "Common Indian presentations to recognise by name: **chronic generalised body ache, burning feet and burning body sensations, gas and acidity with a fear of a hole in the stomach, headache with a fear of a brain tumour, giddiness, weakness described as 'kamzori', palpitations with repeated ECGs, and dhat syndrome** - distress attributed to the passage of semen in urine, usually in a young unmarried man, presenting with weakness, poor concentration and sexual anxiety.",
+        "**These symptoms are real, not imagined and not malingering.** The patient is not fabricating; central sensitisation, autonomic arousal and heightened symptom perception produce genuine sensation. Saying 'there is nothing wrong with you' or 'it is all in your mind' is the single commonest reason these patients doctor-shop, and the examiner will mark you down for it.",
+      ],
+    },
+    {
+      heading: "Assessment: a positive diagnosis, not a diagnosis of exclusion",
+      points: [
+        "Take a **full symptom history in the patient's own words** and allow the whole list out at the first visit - interrupting produces a new symptom at the door; record onset, course, what makes it better or worse, and what the patient believes is causing it (the explanatory model), which is the most useful question in the consultation.",
+        "Ask directly: **'What do you fear this might be?'** and **'What has been happening in your life since this started?'**; screen for the life context - marital conflict, domestic violence, a drinking husband, financial or debt stress, migration, a bereaved or ill relative with the same symptom, examination pressure, and childhood adversity, which is over-represented.",
+        "**Screen for the treatable psychiatric comorbidity in every case with the PHQ-9 and the GAD-7**; depression or anxiety coexists in **50-70%** of patients with medically unexplained symptoms, and treating it is the single most productive action available.",
+        "Use the **PHQ-15** as a severity measure: fifteen somatic symptoms scored 0-2, total 0-30, with **5-9 low, 10-14 medium and 15-30 high somatic symptom burden**; a high score predicts disability and healthcare use and gives you an objective number to follow instead of the symptom list.",
+        "**Do a careful, visible physical examination at each visit** - it is therapeutic, it earns permission to say the examination is normal, and it is the only way to avoid the disaster of missing organic disease later; then perform a **defined, time-limited investigation panel once**, typically haemoglobin, ESR, blood glucose, TSH, renal and liver function, urine analysis, calcium and vitamin B12 or vitamin D where the picture fits, plus a chest radiograph or ECG if indicated.",
+        "**Get the old records and count the tests already done.** Repeating normal investigations is not neutral: it confirms to the patient that the doctor also suspects serious disease, and every incidental finding generates the next cascade. Write in the notes what has been excluded and the date, so that the next doctor does not restart the cycle.",
+      ],
+    },
+    {
+      heading: "The explanation that works: reattribution and positive framing",
+      points: [
+        "Use the **three-stage reattribution model of Goldberg and Gask**. **Stage 1 - feeling understood**: take the full history, ask about mood and social factors, examine the patient properly. **Stage 2 - broadening the agenda**: feed back the normal findings, acknowledge the reality of the symptom, and link its timing to the life events already elicited. **Stage 3 - making the link**: give a mechanism the patient can accept, using a physiological explanation rather than a psychological accusation.",
+        "**Give a positive, physiological explanation**, for example: 'Your muscles have been tense for months because of continuous worry, and a tense muscle aches exactly as it does after heavy work - that is why your body pains'; or 'When you breathe fast during stress, the carbon dioxide falls and the hands tingle and the head feels light'; or 'Pain nerves become over-sensitive, like a doorbell that rings at a touch, so real pain is felt without new damage.'",
+        "**Never say 'there is nothing wrong', 'all tests are normal so forget it', or 'it is only tension'**; say instead 'the tests have ruled out the dangerous causes, and I now know what is causing this and how to treat it'. Naming a mechanism converts an anxious, searching patient into a treatable one.",
+        "Address the **specific fear** by name - if the fear is cancer or a brain tumour or HIV, say explicitly that the examination and tests have excluded it - and then **agree a rule about future testing**: no repeat test without a new sign, and any new symptom will be assessed on its merits at the next scheduled visit rather than in casualty.",
+        "In **dhat syndrome**, explain that nocturnal emission and semen in urine are physiologically normal, that no weakness results, and correct the cultural belief calmly without ridicule; treat coexisting depression, anxiety or erectile difficulty, which are usually the real problem.",
+        "Involve the family in the explanation - in Indian practice the family drives the investigation-seeking - and give the explanation in writing, in the local language, so it survives the journey home.",
+      ],
+    },
+    {
+      heading: "Management: the structure of care",
+      points: [
+        "**One doctor, one plan.** Nominate yourself as the single point of contact, and discourage parallel consultations; fragmented care with multiple opinions is the main driver of chronicity and of iatrogenic harm.",
+        "**Time-based rather than symptom-based appointments** - a fixed 15-minute review every 2-4 weeks whether or not the symptom is bad - is the core intervention. It removes the need for the patient to have a symptom in order to be seen, reduces emergency attendance, and is the point examiners look for.",
+        "**Set functional goals, not cure**: walking 20 minutes a day, returning to work part-time, resuming a household task, sleeping without a daytime nap; a graded activity programme with small weekly increments and a written diary works better than rest, and rest itself worsens deconditioning and pain.",
+        "**Treat the comorbidity properly.** For coexisting depression or anxiety, an SSRI at full dose - escitalopram 10-20 mg or sertraline 50-200 mg - for at least 6-12 months; where pain dominates, **amitriptyline 10-25 mg at night rising to 50-75 mg** or **duloxetine 30-60 mg daily** have direct evidence in functional pain, fibromyalgia and functional gastrointestinal disorders, and should be presented as pain-modulating drugs, which is what they are, and not as antidepressants prescribed by stealth.",
+        "**Cognitive behavioural therapy has the best evidence** for somatic symptom disorder, health anxiety and functional disorders; where none is available, deliver the elements yourself - a symptom diary, identification of catastrophic thoughts, relaxation and slow breathing, activity pacing, and a ban on symptom-checking behaviours such as repeated palpation, repeated pulse counting and internet searching.",
+        "**Stop the harm**: withdraw unnecessary analgesics, avoid opioids and benzodiazepines completely, stop the drip-and-injection culture, refuse surgery for functional pain, and avoid repeat endoscopy, repeat imaging and repeat referral. Document a clear plan that the whole clinic follows, including out-of-hours staff.",
+      ],
+    },
+    {
+      heading: "Related disorders, prognosis and referral",
+      points: [
+        "**Functional neurological disorder (conversion disorder)** presents with weakness, non-epileptic seizures, tremor or gait disturbance and is diagnosed by **positive signs, not by exclusion** - Hoover's sign (hip extension weak on direct testing but normal on contralateral hip flexion), give-way weakness, tremor entrainment, a dissociative seizure with eyes closed and resisted, prolonged duration with fluctuating course, no cyanosis and no post-ictal confusion; explain the diagnosis positively, demonstrate the sign to the patient, and refer for physiotherapy-led rehabilitation, which is the mainstay.",
+        "**Illness anxiety disorder (health anxiety)** is treated with CBT and an SSRI, with the crucial instruction that **reassurance-seeking and body-checking must be reduced, not fed**; each new reassurance relieves anxiety for hours and strengthens the loop.",
+        "**Factitious disorder** is the intentional falsification of symptoms for the sick role, while **malingering** is intentional falsification for external gain such as compensation, leave or drugs; neither is somatic symptom disorder, in which symptoms are not intentionally produced, and this distinction is frequently asked.",
+        "**Prognosis** is better than the reputation suggests: symptoms of recent onset with a clear stressor and no comorbidity often settle within months, while multiple symptoms of many years, high PHQ-15 scores, unemployment or ongoing litigation, and personality difficulty predict chronicity. The realistic aim in chronic cases is stable function with minimal iatrogenic harm.",
+        "**Refer to psychiatry** for severe or refractory disorder, prominent depression with suicidal ideation, suspected psychosis with somatic delusions such as a fixed belief of infestation or of rotting organs, comorbid substance dependence, or where CBT is available; refer to a specialist **once, with a specific question**, and take the case back afterwards rather than allowing an open referral loop.",
+        "**Do not forget that these patients also get diseases.** Any **new symptom pattern, weight loss, fever, night sweats, blood loss, a focal neurological sign, a mass, or onset of a first somatic syndrome after the age of 50** must be assessed on its merits - the diagnostic label is not a reason to stop examining.",
+      ],
+    },
+  ],
+  tables: [
+    {
+      heading: "Distinguishing the disorders that present with unexplained symptoms",
+      columns: ["Disorder", "Core feature", "Symptom production", "Motivation", "Key management"],
+      rows: [
+        ["Somatic symptom disorder", "Distressing symptoms 6 months or more plus disproportionate thoughts, anxiety or time devoted", "Not intentional", "None - the distress is genuine", "One doctor, timed appointments, positive explanation, treat comorbidity, CBT"],
+        ["Illness anxiety disorder", "Preoccupation with having a serious illness, minimal symptoms", "Not intentional", "None", "CBT, SSRI, reduce reassurance-seeking and body-checking"],
+        ["Functional neurological disorder", "Neurological symptoms with positive internal inconsistency (Hoover's sign)", "Not intentional", "None", "Positive explanation with demonstration, physiotherapy-led rehabilitation"],
+        ["Factitious disorder", "Deliberate falsification or induction of illness", "Intentional", "To assume the sick role", "Avoid confrontation, limit investigation, psychiatric involvement"],
+        ["Malingering", "Deliberate falsification", "Intentional", "External gain - money, leave, drugs, litigation", "Not a psychiatric diagnosis; document objectively, refuse the gain"],
+      ],
+    },
+    {
+      heading: "PHQ-15 somatic symptom severity and the response it should trigger",
+      columns: ["PHQ-15 score", "Burden", "Action"],
+      rows: [
+        ["0-4", "Minimal", "Explanation and reassurance; no follow-up structure needed"],
+        ["5-9", "Low", "Positive explanation, PHQ-9 and GAD-7, review once at 4 weeks"],
+        ["10-14", "Medium", "Timed 2-4 weekly appointments, treat comorbid depression or anxiety, graded activity, no repeat investigation"],
+        ["15-30", "High", "Structured care with one named doctor, SSRI or amitriptyline as indicated, CBT referral, functional goals, consider psychiatric referral"],
+      ],
+    },
+  ],
+  redFlags: [
+    "New or changed symptom pattern in a patient with an established somatic symptom disorder - assess it on its merits; the label must never stop the examination, because these patients develop organic disease at the same rate as everyone else.",
+    "Weight loss, fever, night sweats, lymphadenopathy, haemoptysis, rectal bleeding, dysphagia or a palpable mass - investigate as you would in any other patient, urgently.",
+    "A first episode of multiple unexplained somatic symptoms beginning after the age of 50 - organic disease, occult malignancy and late-onset depression are all commoner than a new somatoform illness at that age.",
+    "Focal neurological signs, papilloedema, progressive weakness, sphincter disturbance or nocturnal pain waking the patient from sleep - these are not functional patterns and need imaging.",
+    "Somatic complaints held with delusional intensity - a fixed belief of infestation, of rotting organs or of emitting a foul smell - which is psychotic depression or a delusional disorder needing an antipsychotic and referral, not reassurance.",
+    "Suicidal ideation, or escalating requests for opioids, benzodiazepines or repeat surgery - the two commonest routes by which a functional disorder becomes fatal.",
+  ],
+  pearls: [
+    "DSM-5 made this a positive diagnosis: the criteria are about disproportionate thoughts, anxiety and time devoted to the symptom, not about whether the symptom is medically explained.",
+    "The most effective single intervention is the timed appointment - a fixed 15 minutes every 2-4 weeks regardless of symptoms - because it removes the need to be ill in order to be seen.",
+    "Give a mechanism, never a negation. 'The tests have excluded the dangerous causes and I know what is causing this' beats 'all your reports are normal'.",
+    "Screen every patient with PHQ-9 and GAD-7; depression or anxiety coexists in 50-70% and is the most treatable part of the illness.",
+    "Amitriptyline 10-75 mg at night or duloxetine 30-60 mg for functional pain, explained as pain-modulating drugs, not smuggled in as antidepressants.",
+    "Functional neurological disorder is diagnosed by positive signs such as Hoover's sign, demonstrated to the patient - not by a normal MRI.",
+  ],
+  theory: [
+    {
+      id: "psychiatry-somatic-t1",
+      paper: "II",
+      kind: "long",
+      marks: 10,
+      minutes: 20,
+      frequency: "common",
+      question:
+        "A 35-year-old woman has attended six doctors in one year with generalised body ache, burning feet, giddiness and gas. She carries a file of normal reports including two ultrasounds, an endoscopy and an MRI of the brain. Discuss your approach to this patient.",
+      openingLines: [
+        "This is somatic symptom disorder, defined by DSM-5 as one or more distressing somatic symptoms present for at least six months, accompanied by disproportionate and persistent thoughts about their seriousness, persistently high health anxiety, or excessive time and energy devoted to them - the diagnosis resting on the psychological response rather than on the absence of a medical explanation.",
+        "Her symptoms are genuine and not fabricated, and the objectives are to make a positive diagnosis, avoid further iatrogenic harm from investigation, provide an explanation she can accept, treat the coexisting depression or anxiety, and restore function through one doctor and a structured follow-up.",
+      ],
+      answer: [
+        {
+          heading: "1. History - a positive assessment",
+          points: [
+            "Allow the complete symptom list at the first visit without interruption; record onset, course, aggravating and relieving factors and the disability produced.",
+            "Ask her explanatory model - what does she fear this is - and the life context: marital conflict, domestic violence, a drinking husband, finances, in-laws, children, migration, an ill or bereaved relative with similar symptoms.",
+            "Apply the PHQ-9 and GAD-7 for depression and anxiety, present in 50-70%, and ask directly about suicidal ideation; use the PHQ-15 for somatic symptom burden and record the number as a baseline.",
+            "Take a drug and treatment history: analgesics, injections, sedatives, previous surgery, and how much has been spent, which is itself a source of distress.",
+            "Review the old file and list what has already been excluded and when, so that nothing is repeated.",
+          ],
+        },
+        {
+          heading: "2. Examination and a single, defined investigation plan",
+          points: [
+            "Perform a full and visible physical examination at this visit and at each review - it is therapeutic and is the safeguard against missing organic disease later.",
+            "Order once, and only once: haemoglobin, ESR, blood glucose, TSH, renal and liver function, calcium, urine analysis, and vitamin B12 or vitamin D if the picture fits.",
+            "Do not repeat the ultrasound, endoscopy or MRI; explain that repeating normal tests will neither find nor exclude anything new and will increase her worry.",
+            "Agree an explicit rule: no new test without a new physical sign, and any new symptom will be examined at the next scheduled visit.",
+          ],
+        },
+        {
+          heading: "3. Explanation using the reattribution model",
+          points: [
+            "Stage 1, feeling understood: full history, enquiry about mood and social stress, proper examination.",
+            "Stage 2, broadening the agenda: feed back the normal findings, confirm the symptoms are real, and link their timing to the stresses she has described.",
+            "Stage 3, making the link: give a physiological mechanism - sustained muscle tension producing real ache, over-sensitised pain nerves like a doorbell that rings at a touch, hyperventilation producing tingling and giddiness.",
+            "Name and exclude her specific fear (cancer, tumour, a hole in the stomach), and give the explanation in writing in her own language for the family.",
+          ],
+        },
+        {
+          heading: "4. Management plan",
+          points: [
+            "One doctor and one plan; discourage parallel consultations and give her a written diagnosis to carry.",
+            "Timed appointments: 15 minutes every 2-4 weeks irrespective of symptoms, tapering to monthly as she improves.",
+            "Functional goals - walking 20 minutes daily, resuming household and social activity, a graded activity diary with small weekly increments; discourage rest and daytime sleep.",
+            "Drugs: an SSRI such as escitalopram 10 mg or sertraline 50 mg if the PHQ-9 or GAD-7 is positive, continued 6-12 months; amitriptyline 10-25 mg at night rising to 50-75 mg, or duloxetine 30-60 mg, if pain dominates, explained as pain-modulating drugs.",
+            "Stop harmful treatment: no opioids, no benzodiazepines, no repeated injections or drips, no surgery for functional pain.",
+            "Teach relaxation and slow breathing, stop symptom-checking and internet searching, and refer for cognitive behavioural therapy where available.",
+          ],
+        },
+        {
+          heading: "5. Follow-up, safety-netting and referral",
+          points: [
+            "Repeat the PHQ-15, PHQ-9 and GAD-7 at 4-8 weeks and follow the numbers rather than the symptom list.",
+            "Safety-net explicitly: weight loss, fever, bleeding, a lump, a focal neurological sign or a new symptom pattern will be investigated on their merits.",
+            "Refer to psychiatry for severe or refractory illness, suicidal ideation, somatic delusions or substance dependence; refer once with a specific question and take the case back.",
+            "Involve the family so that they stop driving further investigation, and record the plan in the clinic notes so that out-of-hours staff follow it.",
+          ],
+        },
+      ],
+      mustDraw: [
+        "The three-stage reattribution model as a flow chart: feeling understood - broadening the agenda - making the link.",
+        "A table of the PHQ-15 bands against the level of care each triggers.",
+      ],
+      markSplit: [
+        { part: "Definition and DSM-5 criteria of somatic symptom disorder", marks: 2 },
+        { part: "History including explanatory model, life context and comorbidity screening", marks: 2 },
+        { part: "Examination and a single defined investigation plan", marks: 1 },
+        { part: "Reattribution and the positive explanation", marks: 2 },
+        { part: "Structured management, drugs and functional goals", marks: 2 },
+        { part: "Safety-netting and referral criteria", marks: 1 },
+      ],
+      keywords: ["somatic symptom disorder", "reattribution", "PHQ-15", "timed appointments", "medically unexplained symptoms"],
+    },
+    {
+      id: "psychiatry-somatic-t2",
+      paper: "II",
+      kind: "differentiate",
+      marks: 5,
+      minutes: 10,
+      frequency: "common",
+      question: "Differentiate between somatic symptom disorder, functional neurological disorder, factitious disorder and malingering.",
+      openingLines: [
+        "All four present with symptoms that are not explained by structural disease, but they are separated by two axes: whether the symptom is intentionally produced, and what motivates its production.",
+        "Somatic symptom disorder and functional neurological disorder are not intentional and have no external motive; factitious disorder is intentional with an internal motive (the sick role); malingering is intentional with an external motive and is not a psychiatric diagnosis at all.",
+      ],
+      answer: [
+        {
+          heading: "1. Somatic symptom disorder",
+          points: [
+            "One or more distressing somatic symptoms for at least 6 months with disproportionate thoughts, persistent anxiety or excessive time devoted to them.",
+            "Symptoms are genuinely experienced and not intentionally produced; distress and impairment are real.",
+            "Management: one doctor, timed appointments, positive explanation, treat comorbid depression or anxiety, CBT, graded activity.",
+          ],
+        },
+        {
+          heading: "2. Functional neurological disorder",
+          points: [
+            "Motor or sensory symptoms - weakness, tremor, gait disorder, dissociative (non-epileptic) seizures - with clinical evidence of internal inconsistency.",
+            "Positive signs: Hoover's sign, give-way weakness, tremor entrainment, dissociative seizures with closed and resisted eyes, long fluctuating duration, no cyanosis or post-ictal confusion, preserved reflexes.",
+            "Not intentional. Managed by positive explanation with the sign demonstrated to the patient, physiotherapy-led rehabilitation and treatment of comorbidity.",
+          ],
+        },
+        {
+          heading: "3. Factitious disorder",
+          points: [
+            "Deliberate falsification or self-induction of signs - injecting insulin, contaminating wounds, manipulating thermometers, tampering with samples.",
+            "Motivation is internal: to occupy the sick role; there is no external gain.",
+            "Factitious disorder imposed on another (formerly Munchausen syndrome by proxy) is a form of child abuse and requires child protection action.",
+            "Management: avoid direct confrontation, limit invasive investigation, involve psychiatry, and coordinate the medical record across the hospital.",
+          ],
+        },
+        {
+          heading: "4. Malingering",
+          points: [
+            "Deliberate falsification or exaggeration for an external incentive - compensation, insurance, sick leave, avoiding court or work, or obtaining opioids.",
+            "It is a V-code, not a psychiatric disorder; the clue is a marked discrepancy between claimed disability and observed function, and the presence of a pending claim.",
+            "Management: objective documentation, no confrontation in the consulting room, refuse the secondary gain (no certificate, no opioid), and do not diagnose it merely because a symptom is unexplained.",
+          ],
+        },
+      ],
+      mustDraw: [
+        "A four-column table: disorder, symptom production (intentional or not), motivation (internal, external, none), and management.",
+      ],
+      markSplit: [
+        { part: "Somatic symptom disorder", marks: 1 },
+        { part: "Functional neurological disorder with positive signs", marks: 2 },
+        { part: "Factitious disorder", marks: 1 },
+        { part: "Malingering", marks: 1 },
+      ],
+      keywords: ["Hoover sign", "factitious disorder", "malingering", "conversion disorder", "secondary gain"],
+    },
+  ],
+  mcqs: [
+    {
+      id: "psychiatry-somatic-q1",
+      stem: "A 40-year-old man has had daily epigastric burning and body ache for two years with three normal endoscopies and multiple normal ultrasounds. He is preoccupied that he has stomach cancer and spends hours reading about it. Which statement best reflects the DSM-5 basis for diagnosing somatic symptom disorder in him?",
+      options: [
+        "The diagnosis requires that all his symptoms be medically unexplained",
+        "The diagnosis rests on disproportionate thoughts, persistent health anxiety and excessive time devoted to the symptoms for at least six months, whether or not a medical explanation exists",
+        "The diagnosis requires that he be intentionally producing his symptoms",
+        "The diagnosis can be made only after psychiatric referral confirms it",
+        "The diagnosis requires at least four pain, two gastrointestinal, one sexual and one pseudoneurological symptom",
+      ],
+      answer: 1,
+      explanation:
+        "DSM-5 deliberately moved away from requiring symptoms to be medically unexplained and instead requires distressing somatic symptoms for six months or more plus a positive psychological criterion - disproportionate thoughts, persistent anxiety about health, or excessive time and energy devoted to symptoms. Requiring all symptoms to be unexplained describes the abandoned DSM-IV somatoform concept. Intentional production defines factitious disorder or malingering, not somatic symptom disorder. The diagnosis is made in primary care and does not need psychiatric confirmation. The four-pain, two-gastrointestinal, one-sexual and one-pseudoneurological count is the old DSM-IV somatisation disorder criterion, which no longer exists.",
+      difficulty: "moderate",
+    },
+    {
+      id: "psychiatry-somatic-q2",
+      stem: "A 30-year-old woman with two years of medically unexplained symptoms is seen after a full normal work-up. Which single measure has the strongest evidence for reducing her healthcare use and improving function?",
+      options: [
+        "Telling her that all reports are normal and there is nothing to worry about",
+        "Regular time-based appointments with one named doctor, whether or not symptoms are present",
+        "A repeat panel of investigations every three months to reassure her",
+        "Long-term alprazolam for the associated tension",
+        "Referral to a different specialist for each symptom",
+      ],
+      answer: 1,
+      explanation:
+        "Structured, time-based follow-up with a single named doctor is the intervention with the best evidence in medically unexplained symptoms: it removes the need for the patient to produce a symptom in order to be seen, cuts emergency attendances and investigation, and improves function. Simple negative reassurance relieves anxiety for only hours and is the commonest reason for doctor-shopping. Repeating normal investigations confirms the patient's belief that something serious is being sought and generates incidental findings. Long-term benzodiazepines add dependence, sedation and falls without treating the disorder. Referring each symptom to a different specialist is precisely the fragmentation that drives chronicity and iatrogenic harm.",
+      difficulty: "easy",
+    },
+    {
+      id: "psychiatry-somatic-q3",
+      stem: "A 26-year-old woman presents with sudden inability to move her right leg after a family quarrel. Power appears 0/5 on direct hip extension, but when she flexes the left hip against resistance the right hip extends strongly. Reflexes and plantars are normal, and MRI of the spine is normal. What is the diagnosis and the correct next step?",
+      options: [
+        "Malingering - discharge her and refuse a certificate",
+        "Functional neurological disorder with a positive Hoover's sign - explain the diagnosis and demonstrate the sign to her, and refer for physiotherapy-led rehabilitation",
+        "Early Guillain-Barre syndrome - admit for nerve conduction studies",
+        "Conversion symptoms - prescribe intravenous diazepam and observe",
+        "Spinal cord compression - repeat the MRI with contrast",
+      ],
+      answer: 1,
+      explanation:
+        "Hoover's sign - weak voluntary hip extension with normal involuntary extension during contralateral hip flexion - is a positive rule-in sign of functional neurological disorder, which is diagnosed on such internal inconsistency rather than on a normal scan. Best practice is to explain the diagnosis positively, demonstrate the sign so the patient sees that the pathway is intact, and refer for physiotherapy-led rehabilitation. Malingering requires intentional production for external gain, which is not demonstrated here and should not be assumed. Guillain-Barre gives symmetrical ascending weakness with areflexia, not unilateral leg weakness with normal reflexes. Diazepam treats nothing here. The MRI is already normal and the reflexes and plantars exclude cord compression, so repeating imaging adds only cost and anxiety.",
+      difficulty: "moderate",
+    },
+    {
+      id: "psychiatry-somatic-q4",
+      stem: "A 45-year-old man with somatic symptom disorder and chronic widespread pain has a PHQ-9 of 14 and a GAD-7 of 12. He is on paracetamol, a nonsteroidal anti-inflammatory drug and vitamin injections. What is the best drug plan?",
+      options: [
+        "Add tramadol 50 mg three times daily",
+        "Stop the injections, and start amitriptyline 10-25 mg at night titrated to 50-75 mg, or duloxetine 30-60 mg, explained as pain-modulating treatment; treat the depression and anxiety at full dose and continue 6-12 months",
+        "Add clonazepam 0.5 mg twice daily long term",
+        "Continue vitamin injections weekly as they help his confidence",
+        "Refer for a diagnostic laparoscopy to settle the abdominal component",
+      ],
+      answer: 1,
+      explanation:
+        "Amitriptyline and duloxetine have direct evidence in functional and centrally mediated pain, and presenting them honestly as pain-modulating drugs improves acceptance; the coexisting moderate depression and anxiety need full-dose treatment for 6-12 months, and unnecessary injections should stop. Tramadol is an opioid with serotonergic activity, adds dependence and serotonin syndrome risk, and has no place in chronic functional pain. Long-term clonazepam produces tolerance, falls and cognitive impairment without treating the disorder. Continuing vitamin injections reinforces the belief in a physical deficiency and medicalises the illness further. Diagnostic laparoscopy in functional abdominal pain is exactly the iatrogenic harm to be avoided, and adhesions from it create new pain.",
+      difficulty: "moderate",
+    },
+    {
+      id: "psychiatry-somatic-q5",
+      stem: "A 58-year-old man has been attending for four years with unexplained body aches, managed with timed appointments and amitriptyline. He now reports six weeks of a new dull backache that wakes him at night, and he has lost 5 kg. What should you do?",
+      options: [
+        "Reassure him that this is his usual somatic symptom disorder and continue the plan",
+        "Increase the amitriptyline dose and review in a month",
+        "Assess and investigate the new symptom on its merits, including examination, blood counts, ESR, prostate assessment and spinal imaging",
+        "Refer him to psychiatry for worsening somatisation",
+        "Add a benzodiazepine for the disturbed sleep",
+      ],
+      answer: 2,
+      explanation:
+        "Night pain that wakes the patient and unexplained weight loss in a man of 58 are red flags for malignancy, myeloma or infection, and a patient with somatic symptom disorder develops organic disease at the same rate as anyone else, so the new pattern must be assessed on its merits with examination and appropriate investigation. Attributing it to the existing label is the classic and dangerous error the question tests. Increasing amitriptyline treats the symptom while the cause progresses. Psychiatric referral misdirects a patient with red flags. A benzodiazepine sedates him and delays the diagnosis further.",
+      difficulty: "easy",
+    },
+  ],
+  cards: [
+    {
+      id: "psychiatry-somatic-c1",
+      front: "DSM-5 criteria for somatic symptom disorder.",
+      back: "One or more distressing somatic symptoms for at least 6 months, plus at least one of: disproportionate and persistent thoughts about their seriousness, persistently high health anxiety, or excessive time and energy devoted to them. It does not matter whether the symptom is medically explained.",
+    },
+    {
+      id: "psychiatry-somatic-c2",
+      front: "How does illness anxiety disorder differ from somatic symptom disorder?",
+      back: "Illness anxiety disorder is preoccupation with having or acquiring a serious illness with minimal or no somatic symptoms, plus excessive health behaviour or maladaptive avoidance. Somatic symptom disorder has prominent distressing symptoms.",
+    },
+    {
+      id: "psychiatry-somatic-c3",
+      front: "The three stages of the reattribution model.",
+      back: "1. Feeling understood - full history, mood and social enquiry, proper examination. 2. Broadening the agenda - feed back normal findings, acknowledge the symptom, link to life events. 3. Making the link - give a physiological mechanism the patient can accept.",
+    },
+    {
+      id: "psychiatry-somatic-c4",
+      front: "The single most effective structural intervention in medically unexplained symptoms.",
+      back: "Time-based appointments with one named doctor - a fixed 15 minutes every 2-4 weeks whether or not symptoms are present - which removes the need to be ill in order to be seen.",
+    },
+    {
+      id: "psychiatry-somatic-c5",
+      front: "PHQ-15 bands.",
+      back: "Fifteen items scored 0-2, total 0-30: 5-9 low, 10-14 medium, 15-30 high somatic symptom burden. High scores predict disability and healthcare use.",
+    },
+    {
+      id: "psychiatry-somatic-c6",
+      front: "Positive signs of functional neurological disorder.",
+      back: "Hoover's sign, give-way weakness, tremor entrainment, dissociative seizures with eyes closed and resisted, prolonged fluctuating events without cyanosis or post-ictal confusion, normal reflexes and plantars. Diagnosis is rule-in, not exclusion.",
+    },
+    {
+      id: "psychiatry-somatic-c7",
+      front: "Somatic symptom disorder versus factitious disorder versus malingering.",
+      back: "Somatic symptom disorder: symptoms not intentional, no external motive. Factitious: intentional, motive is the sick role. Malingering: intentional, motive is external gain (money, leave, drugs) and it is not a psychiatric diagnosis.",
+    },
+    {
+      id: "psychiatry-somatic-c8",
+      front: "Drugs with evidence in functional and centrally mediated pain.",
+      back: "Amitriptyline 10-25 mg at night titrated to 50-75 mg, or duloxetine 30-60 mg daily; treat coexisting depression or anxiety with a full-dose SSRI for 6-12 months. No opioids, no benzodiazepines, no injections.",
+    },
+  ],
+  references: [
+    "American Psychiatric Association, DSM-5-TR, 2022",
+    "Kroenke K, Spitzer RL, Williams JBW. The PHQ-15, Psychosomatic Medicine, 2002",
+    "Goldberg D, Gask L, O'Dowd T. The treatment of somatization: teaching techniques of reattribution, Journal of Psychosomatic Research, 1989",
+    "Stone J et al. Functional neurological disorders: diagnosis and management, Practical Neurology / BMJ, 2020",
+    "Indian Psychiatric Society Clinical Practice Guidelines for the management of somatoform disorders, 2018",
+    "Murtagh J. General Practice, 8th edition, 2018 - chapter on the patient with unexplained symptoms",
+  ],
+});
 const cases: ClinicalCase[] = [
   {
     id: "psychiatry-case-1",

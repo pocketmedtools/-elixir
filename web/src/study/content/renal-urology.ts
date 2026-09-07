@@ -503,6 +503,779 @@ topics.push({
   ],
 });
 
+topics.push({
+  id: "renal-urology-acute-kidney-injury",
+  title: "Acute kidney injury: recognising it early, staging it by KDIGO and stopping it getting worse",
+  oneLiner:
+    "Acute kidney injury is an abrupt fall in glomerular filtration defined by KDIGO as a rise in serum creatinine of 0.3 mg/dL or more within 48 hours, or a rise to 1.5 times a known or presumed baseline within the preceding 7 days, or a urine output below 0.5 mL/kg/h for 6 hours, and it is staged 1 to 3 on whichever of creatinine or urine output gives the higher stage.",
+  frequency: "core",
+  keywords: [
+    "AKI",
+    "KDIGO AKI",
+    "acute tubular necrosis",
+    "prerenal azotaemia",
+    "fractional excretion of sodium",
+    "FeNa",
+    "community-acquired AKI",
+    "snake bite AKI",
+    "falciparum malaria",
+    "rhabdomyolysis",
+    "contrast-associated AKI",
+    "hepatorenal syndrome",
+    "obstructive uropathy",
+    "renal replacement therapy",
+    "nephrotoxin stewardship",
+    "AEIOU",
+  ],
+  sections: [
+    {
+      heading: "The KDIGO definition and staging, written exactly",
+      points: [
+        "**KDIGO 2012 definition of AKI - any one of three criteria:** a rise in serum creatinine of **0.3 mg/dL or more within 48 hours**; a rise in serum creatinine to **1.5 times baseline or more, known or presumed to have occurred within the prior 7 days**; or a **urine volume below 0.5 mL/kg/h for 6 hours**.",
+        "**Stage 1:** creatinine 1.5-1.9 times baseline, or an absolute rise of 0.3 mg/dL or more; or urine output below 0.5 mL/kg/h for 6-12 hours.",
+        "**Stage 2:** creatinine 2.0-2.9 times baseline; or urine output below 0.5 mL/kg/h for 12 hours or more.",
+        "**Stage 3:** creatinine 3.0 times baseline or more, or a rise to **4.0 mg/dL or more**, or **initiation of renal replacement therapy**, or in patients under 18 years a fall in eGFR to below 35 mL/min/1.73 m2; or urine output **below 0.3 mL/kg/h for 24 hours or more, or anuria for 12 hours or more**.",
+        "Stage on **whichever criterion - creatinine or urine output - gives the higher stage**; a patient making 15 mL/h with a creatinine of only 1.4 mg/dL is still stage 3 once the oliguria has lasted a day.",
+        "**Acute kidney disease** is the KDIGO term for kidney damage or a GFR under 60 mL/min/1.73 m2 lasting **7 to 90 days**; beyond 90 days it becomes chronic kidney disease. This bridging category exists because most AKI does not resolve neatly by day 7, and it is the reason every AKI survivor needs a creatinine and an ACR at 3 months.",
+        "Where no baseline creatinine exists - the usual Indian situation - **back-calculate an assumed baseline from an eGFR of 75 mL/min/1.73 m2** using the MDRD equation, or take the lowest creatinine of the current admission, and state in the answer book which assumption was made.",
+      ],
+    },
+    {
+      heading: "Causes: prerenal, intrinsic renal and postrenal, with the Indian weighting",
+      points: [
+        "**Prerenal (about 40-55%) - hypoperfusion of a structurally normal kidney:** vomiting, diarrhoea (the commonest cause seen in Indian primary care), haemorrhage, burns, sepsis, heart failure, cirrhosis with ascites, over-diuresis, and the haemodynamic effect of **NSAIDs constricting the afferent arteriole while an ACE inhibitor or ARB dilates the efferent one** - the triple whammy once a diuretic is added.",
+        "**Intrinsic renal (about 35-45%):** acute tubular necrosis from prolonged ischaemia or nephrotoxins; acute interstitial nephritis from drugs; acute glomerulonephritis; and vascular disease such as thrombotic microangiopathy, atheroembolism or renal artery occlusion.",
+        "**Postrenal (about 5-10%):** bladder outlet obstruction from benign prostatic hyperplasia or a blocked catheter, bilateral ureteric stones or a stone in a single functioning kidney, retroperitoneal fibrosis, and pelvic malignancy. **Obstruction must be excluded by ultrasound in every case**, because it is the one cause cured by a catheter or a nephrostomy.",
+        "**Community-acquired AKI in India** has a distinctive and heavily examined list: **acute gastroenteritis with severe dehydration, falciparum and vivax malaria, leptospirosis, scrub typhus, dengue, snake envenomation (Russell's viper and saw-scaled viper), septic abortion and obstetric haemorrhage, copper sulphate and paraphenylenediamine hair-dye poisoning, and unlabelled traditional or herbal remedies**.",
+        "**Nephrotoxic drugs to name:** NSAIDs including diclofenac and ibuprofen, aminoglycosides, amphotericin B, vancomycin, colistin, high-dose acyclovir, methotrexate, cisplatin, tenofovir, calcineurin inhibitors, iodinated contrast, and proton pump inhibitors as a cause of acute interstitial nephritis.",
+        "**Rhabdomyolysis** after crush injury, prolonged immobility, seizures, extreme exertion, statin-fibrate combination or wasp stings: creatine kinase above 5000 U/L, tea-coloured urine, **dipstick positive for blood with no red cells on microscopy**, hyperkalaemia, hyperphosphataemia and hypocalcaemia.",
+      ],
+    },
+    {
+      heading: "Bedside evaluation: the questions answered in the first hour",
+      points: [
+        "**Is the patient volume depleted, euvolaemic or overloaded?** Postural blood pressure and pulse, jugular venous pressure, mucous membranes, skin turgor, axillary sweat, capillary refill, weight change and a fluid balance chart. Volume status decides whether the next step is a fluid bolus or a diuretic, and getting it wrong is the commonest single error in AKI.",
+        "**Is the bladder palpable, and is the catheter blocked?** Palpate the bladder, do a bladder scan or post-void residual, and flush or change any catheter before ordering anything else - a blocked Foley is a curable cause of anuria.",
+        "**Urine routine and microscopy is the cheapest and most discriminating test.** A bland sediment suggests prerenal disease or obstruction; **muddy brown granular casts with renal tubular epithelial cells indicate acute tubular necrosis**; **dysmorphic red cells and red cell casts indicate glomerulonephritis**; **white cell casts with eosinophiluria, rash and fever suggest acute interstitial nephritis**; and heavy proteinuria points to a glomerular lesion.",
+        "**Fractional excretion of sodium: FeNa = (urine sodium x plasma creatinine) / (plasma sodium x urine creatinine) x 100.** Below 1% suggests prerenal azotaemia and above 2% suggests acute tubular necrosis. It is invalid after a diuretic, when the **fractional excretion of urea is used instead, with a value below 35% suggesting a prerenal state**.",
+        "**A blood urea nitrogen to creatinine ratio above 20:1** favours prerenal disease, but is also raised by gastrointestinal bleeding, steroids and a high protein intake, and lowered by malnutrition and liver disease - so it supports rather than settles the diagnosis.",
+        "**Ultrasound of the kidneys, ureters and bladder in every case of AKI** - it excludes hydronephrosis, gives kidney size and echotexture (small echogenic kidneys mean the process is chronic), and shows the bladder, the prostate and the post-void residual.",
+        "Send in parallel: electrolytes with bicarbonate, calcium and phosphate; complete blood count with peripheral smear (schistocytes mean thrombotic microangiopathy); creatine kinase; liver function; blood culture; malaria antigen and smear; dengue, leptospira and scrub typhus serology where season and story fit; and an ECG for hyperkalaemia.",
+      ],
+    },
+    {
+      heading: "Management in the clinic and on the ward",
+      points: [
+        "**Treat the cause, restore perfusion, remove the nephrotoxins, relieve the obstruction and manage the complications** - there is still no drug that treats acute tubular necrosis itself, and saying so earns the mark.",
+        "**Fluid resuscitation:** balanced crystalloid such as Ringer's lactate or Plasma-Lyte in preference to 0.9% saline, because large volumes of saline produce hyperchloraemic acidosis. Give **250-500 mL boluses with clinical reassessment after each**, not a blind litre an hour, and stop the moment the jugular venous pressure rises or the lung bases become wet. **Hydroxyethyl starch is contraindicated in AKI.**",
+        "**Diuretics neither prevent nor treat AKI**; furosemide is used only for established fluid overload, and failure to respond to it is a signal to plan dialysis rather than to escalate the dose indefinitely. **Low-dose dopamine, mannitol and fenoldopam have no role.**",
+        "**Stop and list the nephrotoxins:** NSAIDs, aminoglycosides, ACE inhibitors and ARBs (held during the acute illness and restarted once the creatinine has stabilised), SGLT2 inhibitors, metformin, diuretics, and every herbal preparation. **Metformin is stopped during AKI and restarted only when the eGFR is stable above 30 mL/min/1.73 m2.**",
+        "**Adjust every remaining drug to the current creatinine clearance**, remembering that in evolving AKI the creatinine lags behind the true GFR, so dose as though the GFR were lower than the number suggests.",
+        "**Treat hyperkalaemia the moment potassium exceeds 6.0 mmol/L or the ECG changes:** 10 mL of 10% calcium gluconate intravenously over 2-3 minutes to stabilise the myocardium, 10 units of regular insulin with 25 g of dextrose (50 mL of 50% or 100 mL of 25% dextrose), salbutamol 10-20 mg by nebuliser, sodium bicarbonate only if acidotic, a potassium binder for the gut, and dialysis if it is refractory.",
+        "**Nutrition:** 20-30 kcal/kg/day with 0.8-1.0 g/kg/day of protein in non-catabolic AKI, rising to 1.0-1.5 g/kg/day once on renal replacement therapy. **Do not restrict protein in order to postpone dialysis** - it produces protein-energy wasting and postpones nothing.",
+      ],
+    },
+    {
+      heading: "Dialysis, referral and follow-up",
+      points: [
+        "**Emergency indications for renal replacement therapy - the AEIOU list:** refractory **A**cidosis, **E**lectrolyte derangement (hyperkalaemia unresponsive to medical treatment), **I**ntoxication with a dialysable poison (methanol, ethylene glycol, lithium, salicylate, metformin-associated lactic acidosis), refractory fluid **O**verload with pulmonary oedema, and **U**raemia with pericarditis, encephalopathy, seizures or intractable vomiting.",
+        "There is **no creatinine or urea value that by itself mandates dialysis**; the AKIKI, IDEAL-ICU and STARRT-AKI trials showed a watchful strategy is at least as good as routine early initiation.",
+        "**Refer to nephrology the same day:** AKI stage 3, any AKI needing dialysis, AKI with an active urinary sediment or suspected glomerulonephritis or vasculitis, AKI with no identified cause, AKI in a transplant recipient, thrombotic microangiopathy, and AKI that has not begun to recover within 5-7 days of correcting the cause.",
+        "**Contrast-associated AKI prevention:** identify eGFR below 30 mL/min/1.73 m2 as the high-risk group, use the smallest volume of low- or iso-osmolar contrast, stop NSAIDs and diuretics, and give **isotonic saline 1 mL/kg/h for 6-12 hours before and after** the study. **N-acetylcysteine and sodium bicarbonate infusions failed in the PRESERVE trial and are no longer recommended.** Metformin is withheld at the time of contrast when the eGFR is below 30, and for 48 hours afterwards.",
+        "**Follow up every AKI survivor:** AKI trebles the risk of subsequent CKD and doubles cardiovascular risk. Check **creatinine and urine ACR at 3 months**, restart held drugs deliberately and one at a time, record the episode prominently in the case file, and counsel the patient never to take an NSAID again.",
+        "**Prevention in family practice is mostly nephrotoxin stewardship and sick-day rules:** teach every patient on an ACE inhibitor, ARB, diuretic, metformin or SGLT2 inhibitor to **hold those drugs during vomiting, diarrhoea or fever with poor intake**, and to attend for a creatinine check.",
+      ],
+    },
+    {
+      heading: "The AKI syndromes that come up in the viva",
+      points: [
+        "**Hepatorenal syndrome:** AKI in advanced cirrhosis with ascites, a bland sediment, urine sodium below 10 mmol/L, and no improvement after 2 days off diuretics with albumin 1 g/kg/day. Treated with **terlipressin plus albumin**, and definitively by liver transplantation.",
+        "**Cardiorenal syndrome:** AKI in decompensated heart failure, where venous congestion matters as much as low output; the correct treatment is usually **more decongestion with intravenous furosemide, not less**, and a modest creatinine rise during effective diuresis should not stop it.",
+        "**Snake-bite AKI:** Russell's viper is the classic Indian cause, producing acute tubular necrosis, renal cortical necrosis or thrombotic microangiopathy. Give **polyvalent anti-snake venom** guided by the 20-minute whole blood clotting time, support the kidney, and warn that recovery is slow and sometimes incomplete.",
+        "**Malarial AKI:** falciparum, and increasingly vivax, causing oliguric acute tubular necrosis with jaundice and haemolysis. Treat with **intravenous artesunate 2.4 mg/kg at 0, 12 and 24 hours and then daily**, and dialyse early; blackwater fever with haemoglobinuria is the classic presentation.",
+        "**Tumour lysis syndrome:** after chemotherapy for bulky lymphoma or leukaemia, with hyperuricaemia, hyperkalaemia, hyperphosphataemia and hypocalcaemia; prevented with hydration and **allopurinol, or rasburicase in high-risk disease**.",
+        "**Abdominal compartment syndrome:** intra-abdominal pressure above 20 mmHg with new organ failure, measured through the bladder; treated by decompression, and easily missed after laparotomy or in severe pancreatitis.",
+      ],
+    },
+  ],
+  tables: [
+    {
+      heading: "KDIGO staging of acute kidney injury",
+      columns: ["Stage", "Serum creatinine criterion", "Urine output criterion"],
+      rows: [
+        ["1", "1.5-1.9 times baseline, or a rise of 0.3 mg/dL or more within 48 hours", "Below 0.5 mL/kg/h for 6-12 hours"],
+        ["2", "2.0-2.9 times baseline", "Below 0.5 mL/kg/h for 12 hours or more"],
+        ["3", "3.0 times baseline or more, or a rise to 4.0 mg/dL or more, or start of renal replacement therapy, or eGFR below 35 mL/min/1.73 m2 if aged under 18", "Below 0.3 mL/kg/h for 24 hours or more, or anuria for 12 hours or more"],
+      ],
+    },
+    {
+      heading: "Prerenal azotaemia versus acute tubular necrosis",
+      columns: ["Parameter", "Prerenal azotaemia", "Acute tubular necrosis"],
+      rows: [
+        ["Urine sediment", "Bland, or hyaline casts", "Muddy brown granular casts, tubular epithelial cells"],
+        ["Urine sodium", "Below 20 mmol/L", "Above 40 mmol/L"],
+        ["Fractional excretion of sodium", "Below 1%", "Above 2%"],
+        ["Fractional excretion of urea (if on diuretics)", "Below 35%", "Above 50%"],
+        ["Urine osmolality", "Above 500 mOsm/kg", "Below 350 mOsm/kg"],
+        ["Urine specific gravity", "Above 1.020", "About 1.010, isosthenuric"],
+        ["BUN to creatinine ratio", "Above 20 to 1", "About 10 to 15 to 1"],
+        ["Response to fluid challenge", "Creatinine falls within 24-72 hours", "No improvement"],
+      ],
+    },
+  ],
+  redFlags: [
+    "Anuria, or urine output under 0.3 mL/kg/h for more than 12 hours - stage 3 AKI; admit, exclude obstruction and assess for dialysis today.",
+    "Potassium above 6.0 mmol/L, or peaked T waves, a widened QRS or a sine wave on the ECG - give calcium gluconate immediately and arrange dialysis.",
+    "Pulmonary oedema with a rising creatinine and no response to intravenous furosemide - refractory overload, an emergency dialysis indication.",
+    "Haemoptysis or haemoserous sputum with haematuria and a rapidly rising creatinine - pulmonary-renal syndrome; same-day nephrology referral for anti-GBM or ANCA disease.",
+    "Bilateral hydronephrosis or a palpable bladder with anuria - obstructive uropathy; pass a catheter now and arrange urgent urology review or nephrostomy.",
+    "Tea-coloured urine with severe muscle pain after crush injury, seizures or prolonged immobility - rhabdomyolysis; check creatine kinase and start aggressive intravenous fluids.",
+    "AKI with fever, jaundice, thrombocytopenia and a rural exposure or bite - suspect snake envenomation, falciparum malaria, leptospirosis or scrub typhus and treat empirically while confirming.",
+  ],
+  pearls: [
+    "Stage AKI on whichever criterion is worse, creatinine or urine output; oliguria alone can put a patient at stage 3 with a near-normal creatinine.",
+    "Every AKI needs an ultrasound and a bladder examination before any other cause is blamed - obstruction is the only cause a catheter cures.",
+    "Creatinine lags the true GFR by a day or two in evolving AKI, so a reassuring creatinine in an anuric patient is a trap.",
+    "Balanced crystalloid in 250-500 mL boluses with reassessment after each; never a blind litre an hour, and never a starch.",
+    "Diuretics convert oliguric to non-oliguric AKI without improving survival or recovery; failure to respond is a signal to plan dialysis.",
+    "A dipstick positive for blood with no red cells on microscopy means myoglobin or haemoglobin, not bleeding.",
+    "N-acetylcysteine and bicarbonate infusions do not prevent contrast-associated AKI; isotonic saline and a smaller contrast volume do.",
+    "Every AKI survivor gets a creatinine and an ACR at 3 months, a permanent no-NSAID note, and sick-day rules for their ACE inhibitor, diuretic and metformin.",
+  ],
+  theory: [
+    {
+      id: "renal-urology-acute-kidney-injury-t1",
+      paper: "II",
+      kind: "long",
+      marks: 10,
+      minutes: 20,
+      frequency: "core",
+      question:
+        "A 45-year-old farmer is brought with 4 days of profuse watery diarrhoea and vomiting, has passed only 100 mL of urine in the last 12 hours, and his serum creatinine is 3.8 mg/dL against a value of 0.9 mg/dL six months ago. Define and classify acute kidney injury, and describe your evaluation and management of this man.",
+      openingLines: [
+        "Acute kidney injury is an abrupt decline in glomerular filtration, defined by KDIGO 2012 as a rise in serum creatinine of 0.3 mg/dL or more within 48 hours, or a rise to 1.5 times a known or presumed baseline within the previous 7 days, or a urine output below 0.5 mL/kg/h for 6 hours.",
+        "This man's creatinine has risen to more than four times his known baseline and he is passing well under 0.3 mL/kg/h, so he has KDIGO stage 3 acute kidney injury, almost certainly prerenal from severe gastroenteritis with volume depletion, progressing to ischaemic acute tubular necrosis.",
+      ],
+      answer: [
+        {
+          heading: "1. Definition and staging",
+          points: [
+            "KDIGO criteria: a creatinine rise of 0.3 mg/dL or more in 48 hours; or creatinine 1.5 times baseline or more within 7 days; or urine output below 0.5 mL/kg/h for 6 hours.",
+            "Stage 1: creatinine 1.5-1.9 times baseline or a 0.3 mg/dL rise, or urine output below 0.5 mL/kg/h for 6-12 hours.",
+            "Stage 2: creatinine 2.0-2.9 times baseline, or urine output below 0.5 mL/kg/h for 12 hours or more.",
+            "Stage 3: creatinine 3 times baseline or more, or 4.0 mg/dL or more, or dialysis started; or urine output below 0.3 mL/kg/h for 24 hours, or anuria for 12 hours.",
+            "Stage on whichever criterion gives the higher stage, and state the stage explicitly rather than writing only that the patient has AKI.",
+          ],
+        },
+        {
+          heading: "2. Classification of causes",
+          points: [
+            "Prerenal: hypovolaemia from diarrhoea, vomiting, haemorrhage or burns; sepsis; cardiac failure; cirrhosis; and drugs - NSAIDs, ACE inhibitors, ARBs and diuretics.",
+            "Intrinsic renal: acute tubular necrosis, ischaemic or toxic; acute interstitial nephritis; acute glomerulonephritis; and vascular or thrombotic microangiopathic disease.",
+            "Postrenal: bladder outlet obstruction from prostate or a blocked catheter, bilateral ureteric calculi, retroperitoneal fibrosis and pelvic malignancy.",
+            "Indian community-acquired causes to name explicitly: gastroenteritis, falciparum and vivax malaria, leptospirosis, scrub typhus, dengue, snake bite, septic abortion, copper sulphate and hair-dye poisoning, and herbal nephrotoxins.",
+          ],
+        },
+        {
+          heading: "3. Evaluation of this patient",
+          points: [
+            "Assess volume status first: postural blood pressure and pulse, jugular venous pressure, mucous membranes, skin turgor, weight, and an hourly urine output chart after catheterisation.",
+            "Examine for a palpable bladder and exclude obstruction with an ultrasound of the kidneys, ureters and bladder, which also confirms normal kidney size and echotexture.",
+            "Urine routine and microscopy: a bland sediment supports a prerenal state, while muddy brown granular casts indicate established acute tubular necrosis.",
+            "Fractional excretion of sodium below 1%, urine sodium below 20 mmol/L, urine osmolality above 500 mOsm/kg and a BUN to creatinine ratio above 20 to 1 support prerenal disease; these lose value once tubular necrosis is established or a diuretic has been given.",
+            "Blood tests: electrolytes with potassium and bicarbonate, calcium, phosphate, complete blood count, blood and stool cultures, malaria smear and antigen, and an urgent ECG for hyperkalaemia.",
+          ],
+        },
+        {
+          heading: "4. Management",
+          points: [
+            "Resuscitate with balanced crystalloid, Ringer's lactate 250-500 mL boluses with clinical reassessment after each, targeting a urine output above 0.5 mL/kg/h, stopping when the jugular venous pressure rises or the bases become wet.",
+            "Treat the cause: oral rehydration solution and zinc for the diarrhoea, antibiotics only for dysentery or a septic focus, and an antiemetic for the vomiting.",
+            "Stop all nephrotoxins - NSAIDs, ACE inhibitors, ARBs, diuretics, metformin and herbal preparations - and adjust every remaining drug to the estimated creatinine clearance.",
+            "Treat hyperkalaemia above 6.0 mmol/L or with ECG change: calcium gluconate 10 mL of 10% intravenously, insulin 10 units with 25 g dextrose, nebulised salbutamol, bicarbonate if acidotic, and a potassium binder.",
+            "Nutrition at 20-30 kcal/kg/day with 0.8-1.0 g/kg/day of protein; do not restrict protein in order to postpone dialysis.",
+            "Diuretics only for established fluid overload, never to prevent or treat the injury; dopamine and mannitol have no role.",
+          ],
+        },
+        {
+          heading: "5. Dialysis, referral and follow-up",
+          points: [
+            "Dialysis for refractory acidosis, refractory hyperkalaemia, dialysable intoxication, refractory fluid overload, or uraemic pericarditis, encephalopathy or seizures - the AEIOU indications; no single number mandates it.",
+            "Refer to nephrology the same day for stage 3 AKI, no recovery within 5-7 days, an active urinary sediment, or an unidentified cause.",
+            "As he recovers, restart held drugs deliberately, one at a time, with a creatinine check after each.",
+            "Follow up at 3 months with creatinine and urine ACR, because AKI trebles the future risk of CKD; give lifelong sick-day rules and a written instruction to avoid NSAIDs.",
+          ],
+        },
+      ],
+      mustDraw: [
+        "A three-column table of prerenal, renal and postrenal causes with the Indian community-acquired list entered under each heading.",
+        "The KDIGO stage 1 to 3 table with both the creatinine and the urine output criteria.",
+      ],
+      markSplit: [
+        { part: "KDIGO definition and staging with exact numbers", marks: 2 },
+        { part: "Classification of causes including Indian causes", marks: 2 },
+        { part: "Evaluation - volume status, obstruction, sediment, FeNa", marks: 2 },
+        { part: "Management - fluids, nephrotoxin withdrawal, hyperkalaemia", marks: 3 },
+        { part: "Dialysis indications, referral and 3-month follow-up", marks: 1 },
+      ],
+      keywords: ["KDIGO AKI staging", "prerenal azotaemia", "FeNa", "AEIOU", "balanced crystalloid"],
+    },
+    {
+      id: "renal-urology-acute-kidney-injury-t2",
+      paper: "III",
+      kind: "short-note",
+      marks: 5,
+      minutes: 10,
+      frequency: "common",
+      question: "Write short notes on the indications for, and modalities of, renal replacement therapy in acute kidney injury.",
+      openingLines: [
+        "Renal replacement therapy in acute kidney injury is started for a life-threatening complication of kidney failure that has not responded to medical treatment, and not for any particular level of urea or creatinine.",
+        "The emergency indications are conventionally remembered as AEIOU: acidosis, electrolyte derangement, intoxication, overload and uraemia.",
+      ],
+      answer: [
+        {
+          heading: "Emergency indications",
+          points: [
+            "Refractory metabolic acidosis, typically a pH below 7.1, not corrected by bicarbonate and treatment of the underlying cause.",
+            "Refractory hyperkalaemia: potassium above 6.5 mmol/L, or above 6.0 mmol/L with ECG changes, not responding to calcium, insulin-dextrose, salbutamol and a binder.",
+            "Intoxication with a dialysable substance: methanol, ethylene glycol, lithium, salicylate, theophylline, and metformin-associated lactic acidosis.",
+            "Refractory fluid overload with pulmonary oedema not responding to intravenous furosemide.",
+            "Uraemic complications: pericarditis or a pericardial rub, encephalopathy, asterixis, seizures, or intractable vomiting.",
+          ],
+        },
+        {
+          heading: "Modalities",
+          points: [
+            "Intermittent haemodialysis: 3-4 hours per session, highly efficient, needs a reasonably stable blood pressure and a dialysis unit; the standard modality in Indian district hospitals and under the Pradhan Mantri National Dialysis Programme.",
+            "Continuous renal replacement therapy such as CVVH, CVVHD or CVVHDF: slow, better tolerated in haemodynamic instability and raised intracranial pressure, but needs an intensive care unit, continuous anticoagulation and considerable cost.",
+            "Sustained low-efficiency dialysis: 6-12 hours on a standard dialysis machine, a practical hybrid widely used in India for the unstable patient.",
+            "Acute peritoneal dialysis: needs no vascular access or anticoagulation, useful in children, in haemodynamic instability and where haemodialysis is unavailable; contraindicated after recent abdominal surgery or with peritonitis.",
+            "Vascular access is a non-tunnelled double-lumen catheter, right internal jugular by preference, then femoral, with the subclavian last because of the stenosis risk in a patient who may later need an arteriovenous fistula.",
+          ],
+        },
+        {
+          heading: "Timing, complications and important negatives",
+          points: [
+            "AKIKI, IDEAL-ICU and STARRT-AKI showed no survival benefit from starting dialysis early in the absence of an emergency indication, so a watchful strategy with close monitoring is appropriate.",
+            "No absolute urea or creatinine value mandates dialysis; the decision is clinical.",
+            "Complications: hypotension, dialysis disequilibrium syndrome, bleeding, catheter-related bloodstream infection, arrhythmia and, with peritoneal dialysis, peritonitis.",
+          ],
+        },
+      ],
+      mustDraw: ["A table of the AEIOU indications against the specific numeric or clinical trigger for each."],
+      markSplit: [
+        { part: "AEIOU indications with triggers", marks: 2 },
+        { part: "Modalities and their place in Indian practice", marks: 2 },
+        { part: "Timing evidence, access and complications", marks: 1 },
+      ],
+      keywords: ["AEIOU", "SLED", "CRRT", "peritoneal dialysis", "STARRT-AKI"],
+    },
+  ],
+  mcqs: [
+    {
+      id: "renal-urology-acute-kidney-injury-m1",
+      stem: "A 60 kg woman is admitted with 3 days of fever and poor oral intake. Her serum creatinine is 1.6 mg/dL, up from 1.3 mg/dL two days earlier, and she has passed 260 mL of urine in the last 14 hours. What is her KDIGO stage of acute kidney injury?",
+      options: ["No AKI, because the creatinine has risen by less than 50%", "Stage 1", "Stage 2", "Stage 3"],
+      answer: 2,
+      explanation:
+        "Her urine output is 260 mL in 14 hours, or 18.6 mL/h, which for 60 kg is 0.31 mL/kg/h - below 0.5 mL/kg/h for 12 hours or more, which is the stage 2 urine output criterion. Her creatinine rise of exactly 0.3 mg/dL within 48 hours qualifies her only for stage 1, and because staging uses whichever criterion is worse, she is stage 2. Option 1 is wrong because an absolute rise of 0.3 mg/dL in 48 hours is itself diagnostic of AKI, whatever the percentage change. Option 2 as a final answer would be right only if the urine output were ignored, which is the error being tested. Option 4 is wrong because stage 3 needs urine output below 0.3 mL/kg/h for 24 hours or anuria for 12 hours, and 14 hours at 0.31 mL/kg/h does not reach either threshold.",
+      difficulty: "hard",
+    },
+    {
+      id: "renal-urology-acute-kidney-injury-m2",
+      stem: "A 55-year-old man on telmisartan and ibuprofen for knee pain presents with 5 days of vomiting. Creatinine is 2.6 mg/dL against a baseline of 1.0, urine sodium 12 mmol/L, FeNa 0.4%, urine microscopy bland, and ultrasound shows normal-sized kidneys with no hydronephrosis. Which single step will most improve his kidney function?",
+      options: [
+        "Start intravenous furosemide 40 mg twice daily",
+        "Give balanced crystalloid in boluses and stop the ibuprofen and telmisartan",
+        "Start low-dose dopamine at 2 micrograms/kg/min",
+        "Arrange urgent haemodialysis",
+      ],
+      answer: 1,
+      explanation:
+        "A FeNa below 1%, a urine sodium below 20 mmol/L and a bland sediment define prerenal azotaemia, and the treatment is volume repletion together with removal of the drugs blocking autoregulation - the NSAID constricting the afferent arteriole and the ARB dilating the efferent one. Furosemide is wrong because he is volume depleted rather than overloaded, and a diuretic here deepens the injury; diuretics have never been shown to prevent or treat AKI. Low-dose dopamine is a discredited intervention with no renal benefit and a real risk of tachyarrhythmia and gut ischaemia. Haemodialysis is wrong because he has none of the AEIOU emergency indications, and prerenal AKI is expected to correct within 24-72 hours of adequate resuscitation.",
+      difficulty: "easy",
+    },
+    {
+      id: "renal-urology-acute-kidney-injury-m3",
+      stem: "A 28-year-old labourer is brought after being trapped under rubble for 6 hours. He has painful swollen thighs, passes small amounts of dark brown urine, and the dipstick is strongly positive for blood but microscopy shows no red cells. Which investigation confirms the diagnosis?",
+      options: ["Urine culture", "Serum creatine kinase", "Renal artery Doppler", "Anti-GBM antibody"],
+      answer: 1,
+      explanation:
+        "A dipstick positive for blood with no red cells on microscopy means the pad is reacting to myoglobin or haemoglobin, and in this crush-injury setting that is myoglobinuric rhabdomyolysis; a creatine kinase above 5000 U/L, usually far higher, confirms it, alongside hyperkalaemia, hyperphosphataemia and hypocalcaemia. Urine culture is irrelevant since there is no infective story and no pyuria. A renal artery Doppler looks for vascular occlusion, which explains neither the swollen muscles nor the dipstick-microscopy mismatch. Anti-GBM antibody tests for Goodpasture disease, which produces a nephritic sediment with dysmorphic red cells and red cell casts - the exact opposite of the finding here.",
+      difficulty: "easy",
+    },
+    {
+      id: "renal-urology-acute-kidney-injury-m4",
+      stem: "A 70-year-old diabetic man with an eGFR of 26 mL/min/1.73 m2 is scheduled for a contrast-enhanced CT scan. Which measure has the best evidence for reducing contrast-associated acute kidney injury?",
+      options: [
+        "Oral N-acetylcysteine 1200 mg twice daily for 2 days around the study",
+        "Isotonic saline 1 mL/kg/h for 6-12 hours before and after the study, with the smallest possible contrast volume",
+        "Sodium bicarbonate infusion at 3 mL/kg/h for 1 hour before the study",
+        "Prophylactic haemodialysis immediately after the study",
+      ],
+      answer: 1,
+      explanation:
+        "Volume expansion with isotonic saline, contrast minimisation and withdrawal of nephrotoxins is the only strategy that survives the evidence. The PRESERVE trial randomised more than 5000 high-risk patients and found no benefit from either N-acetylcysteine or sodium bicarbonate over saline, which is why options 1 and 3 are wrong even though both were once routine. Prophylactic dialysis after contrast does not prevent injury, exposes the patient to catheter and haemodynamic risk, and removes the contrast far too late to matter. Note also that metformin is withheld at the time of contrast when the eGFR is below 30 and for 48 hours afterwards.",
+      difficulty: "moderate",
+    },
+    {
+      id: "renal-urology-acute-kidney-injury-m5",
+      stem: "A 48-year-old woman with acute kidney injury following a septic abortion has a potassium of 6.8 mmol/L, pH 7.06, bicarbonate 9 mmol/L, and bilateral basal crepitations with an oxygen saturation of 88% on room air despite 80 mg of intravenous furosemide. What is the most appropriate next step?",
+      options: [
+        "Repeat intravenous furosemide at 120 mg and reassess in 2 hours",
+        "Start a sodium bicarbonate infusion and recheck the blood gas in 4 hours",
+        "Give calcium gluconate and insulin-dextrose and arrange urgent haemodialysis",
+        "Start an oral potassium binder and restrict fluids to 500 mL per day",
+      ],
+      answer: 2,
+      explanation:
+        "She has three simultaneous emergency indications for renal replacement therapy - refractory hyperkalaemia, severe metabolic acidosis, and diuretic-refractory pulmonary oedema - so dialysis must be arranged now, with calcium gluconate and insulin-dextrose given immediately as a bridge to protect the myocardium while access is obtained. Escalating furosemide in a patient who has already failed 80 mg wastes the hour that matters and risks ototoxicity. A bicarbonate infusion delivers a large sodium load into established pulmonary oedema and will not correct a pH of 7.06 driven by ongoing kidney failure. An oral potassium binder acts far too slowly for a potassium of 6.8 mmol/L and does nothing for the acidosis or the fluid overload.",
+      difficulty: "moderate",
+    },
+  ],
+  cards: [
+    {
+      id: "renal-urology-acute-kidney-injury-c1",
+      front: "State the three KDIGO criteria for diagnosing acute kidney injury.",
+      back: "A creatinine rise of 0.3 mg/dL or more within 48 hours; OR creatinine 1.5 times baseline or more within the prior 7 days; OR urine output below 0.5 mL/kg/h for 6 hours.",
+    },
+    {
+      id: "renal-urology-acute-kidney-injury-c2",
+      front: "KDIGO AKI stage 3 criteria.",
+      back: "Creatinine 3 times baseline or more, or a rise to 4.0 mg/dL or more, or start of renal replacement therapy (or eGFR under 35 if aged under 18); OR urine output under 0.3 mL/kg/h for 24 hours, or anuria for 12 hours.",
+    },
+    {
+      id: "renal-urology-acute-kidney-injury-c3",
+      front: "Write the fractional excretion of sodium formula and its cut-offs.",
+      back: "FeNa = (urine Na x plasma creatinine) / (plasma Na x urine creatinine) x 100. Below 1% is prerenal; above 2% is acute tubular necrosis. Invalid after diuretics - use FeUrea, where below 35% is prerenal.",
+    },
+    {
+      id: "renal-urology-acute-kidney-injury-c4",
+      front: "The AEIOU indications for dialysis in AKI.",
+      back: "Acidosis (refractory), Electrolytes (refractory hyperkalaemia), Intoxication (methanol, ethylene glycol, lithium, salicylate), Overload (refractory pulmonary oedema), Uraemia (pericarditis, encephalopathy, seizures, intractable vomiting).",
+    },
+    {
+      id: "renal-urology-acute-kidney-injury-c5",
+      front: "Urinary sediment findings and what each means in AKI.",
+      back: "Bland - prerenal or postrenal; muddy brown granular casts with tubular cells - acute tubular necrosis; dysmorphic red cells and red cell casts - glomerulonephritis; white cell casts with eosinophiluria - acute interstitial nephritis.",
+    },
+    {
+      id: "renal-urology-acute-kidney-injury-c6",
+      front: "Emergency treatment of hyperkalaemia, with doses.",
+      back: "Calcium gluconate 10 mL of 10% IV over 2-3 minutes; regular insulin 10 units with 25 g dextrose; salbutamol 10-20 mg nebulised; sodium bicarbonate if acidotic; an oral potassium binder; dialysis if refractory.",
+    },
+    {
+      id: "renal-urology-acute-kidney-injury-c7",
+      front: "Common community-acquired causes of AKI in India.",
+      back: "Acute gastroenteritis, falciparum and vivax malaria, leptospirosis, scrub typhus, dengue, snake envenomation, septic abortion and obstetric haemorrhage, copper sulphate and hair-dye poisoning, and herbal nephrotoxins.",
+    },
+    {
+      id: "renal-urology-acute-kidney-injury-c8",
+      front: "What follow-up does every AKI survivor need?",
+      back: "Serum creatinine and urine ACR at 3 months (AKI trebles the risk of CKD), deliberate one-at-a-time restarting of held drugs, a permanent no-NSAID instruction, and sick-day rules for ACE inhibitors, ARBs, diuretics, metformin and SGLT2 inhibitors.",
+    },
+  ],
+  references: [
+    "KDIGO 2012 Clinical Practice Guideline for Acute Kidney Injury, Kidney International Supplements 2012",
+    "KDIGO 2024 Clinical Practice Guideline for the Evaluation and Management of Chronic Kidney Disease - acute kidney disease definitions",
+    "Indian Society of Nephrology - acute kidney injury in the tropics, Indian Journal of Nephrology review series",
+    "National Snakebite Management Protocol, MoHFW Government of India, 2022",
+    "National Guidelines for Diagnosis and Treatment of Malaria in India, NCVBDC, 2023",
+    "Harrison's Principles of Internal Medicine, 21st edition, 2022 - acute kidney injury",
+  ],
+});
+
+topics.push({
+  id: "renal-urology-urinary-tract-infection",
+  title: "Urinary tract infection in adults: uncomplicated, complicated, recurrent and catheter-associated",
+  oneLiner:
+    "Urinary tract infection is the invasion of a normally sterile urinary tract by uropathogens, most often Escherichia coli, and it is classified as uncomplicated cystitis, uncomplicated pyelonephritis, or complicated infection (male sex, pregnancy, obstruction, stones, catheter, diabetes, immunosuppression or a transplanted kidney), because that classification alone decides whether the patient needs 3 days of nitrofurantoin at home or 10-14 days of intravenous therapy with imaging.",
+  frequency: "core",
+  keywords: [
+    "UTI",
+    "cystitis",
+    "acute pyelonephritis",
+    "asymptomatic bacteriuria",
+    "recurrent UTI",
+    "CAUTI",
+    "nitrofurantoin",
+    "fosfomycin",
+    "ESBL",
+    "Escherichia coli",
+    "emphysematous pyelonephritis",
+    "urine culture colony count",
+    "sterile pyuria",
+    "genitourinary tuberculosis",
+    "post-coital prophylaxis",
+    "antimicrobial stewardship",
+  ],
+  sections: [
+    {
+      heading: "Definitions and classification that decide the treatment",
+      points: [
+        "**Uncomplicated UTI** is cystitis or pyelonephritis in a **non-pregnant, premenopausal or postmenopausal woman with a structurally and functionally normal urinary tract**. Everything else is complicated: **male sex, pregnancy, urinary obstruction or stones, an indwelling catheter or recent instrumentation, neurogenic bladder, poorly controlled diabetes, immunosuppression, renal transplantation, and any anatomical anomaly**.",
+        "**Significant bacteriuria** on culture: **10 to the power 5 CFU/mL in a clean-catch midstream sample**; but **10 to the power 3 CFU/mL of a single uropathogen with typical symptoms in a woman**, or **10 to the power 4 CFU/mL in pyelonephritis and in men**, is significant, and **any growth from a suprapubic aspirate** is significant. Reciting only the 10 to the power 5 figure loses the mark.",
+        "**Pyuria is 10 or more white cells per high power field on centrifuged urine, or a positive leucocyte esterase**; nitrite is highly specific for Enterobacterales but negative with Enterococcus, Staphylococcus saprophyticus and Pseudomonas, and needs 4 hours of bladder incubation to turn positive.",
+        "**Asymptomatic bacteriuria** is significant bacteriuria without symptoms. It is **treated only in pregnancy and before an invasive urological procedure that will breach the mucosa**; it is **not** treated in the elderly, the catheterised, the diabetic, the transplant recipient beyond the first month, or in patients with spinal cord injury. Treating it drives resistance and Clostridioides difficile without preventing anything.",
+        "**Recurrent UTI** is **2 or more infections in 6 months, or 3 or more in 12 months**. Distinguish **relapse** (same organism within 2 weeks of finishing treatment, suggesting a stone, an abscess, prostatitis or an unresolved focus) from **reinfection** (a different organism or a later interval, suggesting behavioural and host factors).",
+        "**Catheter-associated UTI (CAUTI)** requires **symptoms or signs compatible with UTI with no other identified source, plus 10 to the power 3 CFU/mL or more of one or more bacterial species** in a catheter specimen or a midstream specimen from a patient whose catheter was removed within the last 48 hours. **Cloudy or foul-smelling urine alone is not CAUTI.**",
+      ],
+    },
+    {
+      heading: "Microbiology and the Indian resistance picture",
+      points: [
+        "**Escherichia coli causes 75-90% of uncomplicated UTIs**, followed by Klebsiella pneumoniae, Proteus mirabilis (urease-producing, associated with struvite stones and alkaline urine), Enterococcus faecalis, and **Staphylococcus saprophyticus in young sexually active women**.",
+        "In complicated and hospital-acquired infection the spectrum widens to **Pseudomonas aeruginosa, Enterobacter, Serratia, Acinetobacter, Candida species and multidrug-resistant Enterobacterales**.",
+        "**Indian resistance data from ICMR AMR surveillance is severe and examinable:** more than half of urinary E. coli isolates are **ESBL producers**, fluoroquinolone resistance exceeds 70-80%, and co-trimoxazole resistance is around 50-60%. **Fluoroquinolones and co-trimoxazole must therefore not be used empirically for uncomplicated cystitis in India.**",
+        "**Nitrofurantoin retains sensitivity in about 85-95% of Indian E. coli isolates** and is the empirical drug of choice for cystitis. It **does not treat pyelonephritis** because it achieves no renal parenchymal or blood concentration, and it is **avoided when the eGFR is below 30-45 mL/min/1.73 m2** because it is renally concentrated and will not reach the urine.",
+        "**Fosfomycin trometamol 3 g as a single oral dose** covers most ESBL producers and is useful where there is no other oral option; it is a bladder drug only.",
+        "**Sterile pyuria** - pyuria with a negative routine culture - demands a specific list: **genitourinary tuberculosis (three early-morning urine samples for AFB and CBNAAT/Xpert MTB/RIF)**, partially treated UTI, urethritis from Chlamydia or Neisseria gonorrhoeae, stones, interstitial cystitis, analgesic nephropathy, papillary necrosis, and a bladder tumour. In India, TB is the answer the examiner is waiting for.",
+      ],
+    },
+    {
+      heading: "Clinical assessment: cystitis, pyelonephritis and what must not be missed",
+      points: [
+        "**Acute cystitis:** dysuria, frequency, urgency, suprapubic pain and sometimes haematuria, **without fever, flank pain or systemic upset**. In a woman with dysuria and frequency and **no vaginal discharge or irritation, the probability of UTI exceeds 90%** and empirical treatment without culture is legitimate.",
+        "**Acute pyelonephritis:** fever above 38 degrees C with rigors, flank pain, costovertebral angle tenderness, nausea and vomiting, with or without lower tract symptoms. **Fever or flank pain converts cystitis into pyelonephritis and changes both the drug and the duration.**",
+        "**Always ask about and examine for the complicating factors:** male sex (every UTI in a man is complicated and needs evaluation of the prostate and outflow), pregnancy, previous stones, a catheter, recent instrumentation, diabetes, immunosuppression, and a poor stream or incomplete emptying.",
+        "**Differential diagnosis in women:** vaginitis (discharge, pruritus, dyspareunia, external dysuria), pelvic inflammatory disease, urethritis from a sexually transmitted infection (gradual onset, new partner, sterile pyuria), and interstitial cystitis or bladder pain syndrome with sterile urine.",
+        "**In men,** consider **acute bacterial prostatitis** (fever, perineal pain, an exquisitely tender prostate - do not massage it, that risks bacteraemia), chronic prostatitis, epididymo-orchitis, and bladder outlet obstruction with residual urine.",
+        "**In the elderly,** delirium, falls and functional decline may be the only presentation, but **it is a grave error to attribute delirium to a positive urine culture without urinary symptoms** - asymptomatic bacteriuria is present in 15-50% of institutionalised elderly and the true cause of the delirium is often elsewhere.",
+      ],
+    },
+    {
+      heading: "Investigation: when a culture and when imaging",
+      points: [
+        "**Urine culture is not needed for a first, typical, uncomplicated cystitis in a non-pregnant woman**; it is needed for pyelonephritis, all UTI in men, pregnancy, recurrence within 4 weeks, treatment failure, catheter-associated infection, diabetes, immunosuppression, and any complicated infection.",
+        "**Collect properly:** a clean-catch midstream specimen after cleaning, sent to the laboratory within 2 hours or refrigerated at 4 degrees C. **In a catheterised patient, replace the catheter and take the sample from the new catheter port, never from the drainage bag.**",
+        "**Imaging is not needed in uncomplicated pyelonephritis that responds within 72 hours.** Order **ultrasound of the kidneys, ureters and bladder** for failure to improve after 72 hours, suspected obstruction, a solitary kidney, known stones, diabetes, sepsis, or a palpable mass.",
+        "**Contrast-enhanced CT (CT urography)** is the investigation of choice when ultrasound is unhelpful and complication is suspected - it identifies **renal or perinephric abscess, emphysematous pyelonephritis, pyonephrosis, papillary necrosis and obstructing calculi**.",
+        "**Evaluate every man with a UTI** and every woman with relapse: ultrasound with post-void residual, and consider cystoscopy or CT urography for haematuria that persists after treatment, recurrent infection with the same organism, or suspicion of a stone or tumour.",
+        "Check blood sugar in every case - **undiagnosed diabetes commonly presents as recurrent or severe UTI in Indian practice** - and a serum creatinine before choosing the drug and its dose.",
+      ],
+    },
+    {
+      heading: "Treatment: drugs, doses and durations",
+      points: [
+        "**Uncomplicated cystitis in a woman:** **nitrofurantoin (macrocrystals) 100 mg PO BD for 5 days**, or **fosfomycin trometamol 3 g PO as a single dose**, or **cefuroxime axetil 250 mg PO BD for 5-7 days**. **Avoid fluoroquinolones for cystitis** - Indian resistance is above 70% and the FDA warns of tendinopathy, neuropathy, aortic dissection and dysglycaemia. A single dose of fosfomycin is attractive where adherence is doubtful.",
+        "**Uncomplicated pyelonephritis, outpatient:** **cefixime 200 mg PO BD, or cefpodoxime 200 mg PO BD, or co-amoxiclav 625 mg PO TDS, for 10-14 days**, ideally after an initial intravenous dose of ceftriaxone 1 g. Fluoroquinolones are used only when the culture proves sensitivity.",
+        "**Pyelonephritis needing admission** (vomiting, sepsis, pregnancy, obstruction, failure of oral therapy): **ceftriaxone 1-2 g IV OD, or cefoperazone-sulbactam 1.5-3 g IV BD, or amikacin 15 mg/kg IV OD with renal-function monitoring**; escalate to a carbapenem such as **meropenem 1 g IV TDS or ertapenem 1 g IV OD if ESBL is proven or strongly suspected**, then de-escalate on culture and step down to oral therapy after 48-72 afebrile hours to complete 10-14 days.",
+        "**UTI in a man:** treat for **7 days for simple cystitis and 14 days if the prostate is involved**; use a drug with prostatic penetration - **co-trimoxazole or a fluoroquinolone if sensitive** - as nitrofurantoin does not enter the prostate. Chronic bacterial prostatitis needs **4-6 weeks**.",
+        "**UTI in pregnancy:** treat asymptomatic bacteriuria as well as symptomatic infection, for **5-7 days**, with **nitrofurantoin (avoided at term and near delivery because of neonatal haemolysis, and in G6PD deficiency), cefuroxime or cefixime, or amoxicillin if sensitive**. **Fluoroquinolones, co-trimoxazole in the first trimester and near term, and tetracyclines are contraindicated.** Send a test-of-cure culture 1-2 weeks after treatment and screen monthly thereafter.",
+        "**Advise 2.5-3 litres of fluid a day, paracetamol for pain, and a review at 48-72 hours** if not improving; failure to defervesce by 72 hours means an abscess, obstruction or a resistant organism until proved otherwise.",
+      ],
+    },
+    {
+      heading: "Recurrent UTI and catheter-associated infection",
+      points: [
+        "**Behavioural and non-antibiotic measures first in recurrent UTI:** fluid intake increased by about **1.5 litres a day (the randomised evidence shows this alone nearly halves recurrences)**, complete and unhurried voiding, post-coital voiding, avoiding spermicide and diaphragm contraception, and treating constipation.",
+        "**Vaginal oestrogen** (estriol cream 0.5 mg nightly for 2 weeks then twice weekly) is the single most effective intervention in postmenopausal women with recurrent UTI, restoring lactobacilli and vaginal pH; systemic oestrogen does not work for this. Cranberry products and D-mannose have weak, inconsistent evidence and are optional.",
+        "**Continuous antibiotic prophylaxis** for 6 months when non-antibiotic measures fail: **nitrofurantoin 50-100 mg PO at night**, or **co-trimoxazole 40/200 mg at night**, or **cefalexin 125-250 mg at night**. **Post-coital prophylaxis** with a single dose of the same agents suits women whose infections follow intercourse and uses far less antibiotic.",
+        "**Self-start therapy** - giving a reliable, well-taught patient a standby course to begin when typical symptoms start - is a legitimate strategy that reduces consultations, provided a culture is sent at the start of at least the first episode.",
+        "**Preventing CAUTI is a question in its own right:** insert a catheter only for a clear indication (retention, accurate output measurement in the critically ill, selected surgery, sacral or perineal wounds in the incontinent, and comfort in terminal care - **never for incontinence or nursing convenience**), insert aseptically, maintain a **closed drainage system with the bag below the bladder and off the floor**, do not irrigate or use antiseptic-impregnated systems routinely, and **remove the catheter at the earliest possible moment**, reviewed daily.",
+        "**Do not culture or treat catheter urine without symptoms**, do not use prophylactic antibiotics for catheter insertion or change, and when treating a genuine CAUTI in a patient catheterised for more than 2 weeks, **replace the catheter before starting antibiotics** and treat for 7 days if the response is prompt, 10-14 days if it is delayed. Consider **intermittent clean self-catheterisation or a condom drainage** as safer long-term alternatives.",
+      ],
+    },
+  ],
+  tables: [
+    {
+      heading: "Empirical treatment by syndrome, with Indian first choices",
+      columns: ["Syndrome", "First choice", "Alternative", "Duration"],
+      rows: [
+        ["Uncomplicated cystitis, woman", "Nitrofurantoin 100 mg PO BD", "Fosfomycin trometamol 3 g PO single dose, or cefuroxime axetil 250 mg PO BD", "5 days (fosfomycin single dose)"],
+        ["Uncomplicated pyelonephritis, outpatient", "Cefixime 200 mg PO BD after one dose of IV ceftriaxone", "Co-amoxiclav 625 mg PO TDS", "10-14 days"],
+        ["Pyelonephritis needing admission", "Ceftriaxone 1-2 g IV OD", "Cefoperazone-sulbactam 1.5-3 g IV BD, or amikacin 15 mg/kg IV OD", "10-14 days total, step down when afebrile 48-72 h"],
+        ["Suspected or proven ESBL with sepsis", "Meropenem 1 g IV TDS", "Ertapenem 1 g IV OD", "10-14 days, de-escalate on culture"],
+        ["Cystitis in a man", "Co-trimoxazole 160/800 mg PO BD if sensitive", "Fluoroquinolone if sensitive (prostatic penetration)", "7 days; 14 days if prostatitis"],
+        ["UTI in pregnancy", "Nitrofurantoin 100 mg PO BD (not at term)", "Cefuroxime axetil 250 mg PO BD, or amoxicillin if sensitive", "5-7 days, then test of cure"],
+        ["Catheter-associated UTI", "Replace catheter, then culture-directed therapy", "Ceftriaxone 1 g IV OD pending culture", "7 days if prompt response, 10-14 if delayed"],
+      ],
+    },
+    {
+      heading: "When to treat bacteriuria and when to leave it alone",
+      columns: ["Situation", "Screen and treat?", "Reason"],
+      rows: [
+        ["Pregnancy", "Yes - screen at first antenatal visit and treat", "Prevents pyelonephritis, preterm labour and low birth weight"],
+        ["Before urological procedure breaching mucosa", "Yes - treat before the procedure", "Prevents bacteraemia and sepsis"],
+        ["Elderly, including delirium without urinary symptoms", "No", "Bacteriuria is present in 15-50%; treating it does not help and drives resistance"],
+        ["Indwelling catheter without symptoms", "No", "All long-term catheters are colonised; treatment selects resistant organisms"],
+        ["Diabetes mellitus without symptoms", "No", "No reduction in complications shown in randomised trials"],
+        ["Renal transplant beyond the first month", "No", "No benefit shown; treat only symptomatic episodes"],
+        ["Spinal cord injury with neurogenic bladder", "No", "Colonisation is universal; treat only symptomatic infection"],
+      ],
+    },
+  ],
+  redFlags: [
+    "Fever with rigors, flank pain, hypotension and tachycardia - urosepsis; take cultures, start intravenous antibiotics within the first hour and admit.",
+    "A diabetic with pyelonephritis who is not improving at 48-72 hours, especially with gas on imaging - emphysematous pyelonephritis; urgent CT, urology referral and consideration of drainage or nephrectomy.",
+    "Pyelonephritis with a known stone, hydronephrosis or a single kidney - pyonephrosis behind an obstruction; needs emergency decompression by stent or percutaneous nephrostomy, not antibiotics alone.",
+    "Any urinary tract infection in a man, or a second infection in a man, without evaluation of the prostate, stream and post-void residual - always complicated, always investigated.",
+    "Sterile pyuria with weight loss, evening fever, haematuria or a chronically ill patient - genitourinary tuberculosis; send three early-morning urines for AFB and CBNAAT.",
+    "Painless visible haematuria persisting after the infection has been treated in a patient over 40 - urothelial malignancy until cystoscopy and imaging prove otherwise.",
+    "UTI in pregnancy with fever, vomiting or uterine contractions - admit for intravenous antibiotics, as pyelonephritis in pregnancy causes preterm labour and maternal sepsis.",
+  ],
+  pearls: [
+    "Male sex, pregnancy, obstruction, stones, catheter, diabetes or immunosuppression makes every UTI complicated - the classification, not the symptom, chooses the drug and the duration.",
+    "Nitrofurantoin is a bladder drug: it does not treat pyelonephritis or prostatitis, and it fails once the eGFR falls below about 30-45 mL/min/1.73 m2.",
+    "Fluoroquinolones and co-trimoxazole are no longer empirical drugs for cystitis in India; resistance in E. coli exceeds 70% and 50% respectively.",
+    "Treat asymptomatic bacteriuria only in pregnancy and before a mucosa-breaching urological procedure. Nowhere else.",
+    "Delirium in an elderly patient with a positive urine culture and no urinary symptoms is usually not a UTI; look elsewhere before blaming the urine.",
+    "Sterile pyuria in India means tuberculosis until three early-morning urine samples say otherwise.",
+    "In recurrent UTI, an extra 1.5 litres of water a day and vaginal oestrogen in postmenopausal women do more than any antibiotic prophylaxis.",
+    "For a genuine catheter-associated infection in a long-term catheter, change the catheter before the first dose of antibiotic - the biofilm is the reservoir.",
+  ],
+  theory: [
+    {
+      id: "renal-urology-urinary-tract-infection-t1",
+      paper: "II",
+      kind: "long",
+      marks: 10,
+      minutes: 20,
+      frequency: "core",
+      question:
+        "A 32-year-old woman presents with her fourth episode of dysuria and frequency in the last 12 months. Define recurrent urinary tract infection. Discuss its evaluation, treatment and prevention in family practice, and outline the antimicrobial resistance considerations relevant to India.",
+      openingLines: [
+        "Recurrent urinary tract infection is defined as two or more culture-proven infections within 6 months, or three or more within 12 months, and it is subdivided into relapse with the same organism within 2 weeks of treatment and reinfection with a different organism or after a longer interval.",
+        "This woman has had four episodes in 12 months and therefore meets the definition; the priority is to confirm the infections by culture, exclude a structural or host cause, and then use non-antibiotic prevention before considering prophylaxis.",
+      ],
+      answer: [
+        {
+          heading: "1. Definition and terminology",
+          points: [
+            "Recurrent UTI: 2 or more infections in 6 months, or 3 or more in 12 months, each culture-confirmed.",
+            "Relapse: the same organism recurring within 2 weeks of completing treatment, suggesting an unresolved focus - a stone, an abscess, prostatitis or a foreign body.",
+            "Reinfection: a different organism, or the same organism after a longer interval, suggesting host and behavioural factors rather than a structural focus.",
+            "Significant bacteriuria: 10 to the power 5 CFU/mL in a midstream sample, but 10 to the power 3 CFU/mL of a single uropathogen with typical symptoms in a woman is enough, and any growth from a suprapubic aspirate counts.",
+          ],
+        },
+        {
+          heading: "2. Evaluation",
+          points: [
+            "History: relation to intercourse, contraception (spermicide and diaphragm increase risk), voiding habits and deferral, fluid intake, constipation, previous stones or instrumentation, menopausal status, family history, and the exact drugs and durations previously used.",
+            "Examination: abdominal and suprapubic examination, costovertebral angle tenderness, pelvic examination for atrophic vaginitis, prolapse or a fistula, and a check for a palpable bladder.",
+            "Investigations: urine routine and microscopy plus culture and sensitivity with each episode before antibiotics; fasting and postprandial blood glucose or HbA1c; serum creatinine; ultrasound of the kidneys, ureters and bladder with post-void residual.",
+            "Consider cystoscopy and CT urography for relapse with the same organism, persistent haematuria after treatment, suspected stone or tumour, or suspected fistula.",
+            "Send three early-morning urine samples for AFB and CBNAAT if there is sterile pyuria, since genitourinary tuberculosis is common in India.",
+          ],
+        },
+        {
+          heading: "3. Treatment of the acute episodes",
+          points: [
+            "Uncomplicated cystitis: nitrofurantoin 100 mg PO BD for 5 days, or fosfomycin trometamol 3 g PO as a single dose, or cefuroxime axetil 250 mg PO BD for 5-7 days.",
+            "Avoid fluoroquinolones and co-trimoxazole empirically because Indian E. coli resistance exceeds 70% and 50% respectively; reserve them for culture-proven sensitivity.",
+            "If fever or flank pain appears, reclassify as pyelonephritis and treat for 10-14 days with a cephalosporin, beginning with intravenous ceftriaxone 1 g if there is vomiting or systemic upset.",
+            "Analgesia with paracetamol, fluids of 2.5-3 litres a day, and review at 48-72 hours if not improving.",
+          ],
+        },
+        {
+          heading: "4. Prevention - non-antibiotic first",
+          points: [
+            "Increase fluid intake by about 1.5 litres a day; randomised evidence shows this alone nearly halves recurrences.",
+            "Complete, unhurried and regular voiding, voiding after intercourse, and treatment of constipation.",
+            "Stop spermicide and diaphragm contraception and offer an alternative method.",
+            "Vaginal oestrogen (estriol cream 0.5 mg nightly for 2 weeks then twice weekly) in postmenopausal women - the single most effective preventive measure in that group.",
+            "Cranberry products and D-mannose have weak evidence and may be offered but not promised.",
+          ],
+        },
+        {
+          heading: "5. Antibiotic prophylaxis and follow-up",
+          points: [
+            "Continuous prophylaxis for 6 months when non-antibiotic measures fail: nitrofurantoin 50-100 mg at night, co-trimoxazole 40/200 mg at night, or cefalexin 125-250 mg at night; review at 6 months as benefit stops when the drug stops.",
+            "Post-coital prophylaxis with a single dose of the same drugs when the infections follow intercourse; it uses much less antibiotic for the same protection.",
+            "Self-start therapy with a standby course for a reliable, well-instructed patient, sending a culture at the onset of the episode.",
+            "Counsel on the resistance consequences of prophylaxis, and record the plan and the review date in the family folder.",
+            "Screen for diabetes and treat it; involve the partner where contraception is being changed.",
+          ],
+        },
+      ],
+      mustDraw: [
+        "A flow chart from recurrent UTI through evaluation to non-antibiotic prevention, then continuous versus post-coital prophylaxis.",
+        "A table of first-line drugs with dose and duration against Indian resistance rates.",
+      ],
+      markSplit: [
+        { part: "Definition, relapse versus reinfection, colony counts", marks: 2 },
+        { part: "Evaluation including imaging and TB", marks: 2 },
+        { part: "Treatment of acute episodes with drugs and doses", marks: 2 },
+        { part: "Non-antibiotic prevention", marks: 2 },
+        { part: "Prophylaxis regimens and follow-up", marks: 2 },
+      ],
+      keywords: ["recurrent UTI", "nitrofurantoin", "vaginal oestrogen", "post-coital prophylaxis", "ESBL"],
+    },
+    {
+      id: "renal-urology-urinary-tract-infection-t2",
+      paper: "III",
+      kind: "short-note",
+      marks: 5,
+      minutes: 10,
+      frequency: "common",
+      question: "Write short notes on catheter-associated urinary tract infection, including its prevention.",
+      openingLines: [
+        "Catheter-associated urinary tract infection is defined as symptoms or signs compatible with urinary infection, with no other identified source, in a patient with an indwelling catheter or one removed within the previous 48 hours, together with a urine culture growing 10 to the power 3 CFU/mL or more of one or more organisms.",
+        "It is the commonest healthcare-associated infection, and its risk rises by about 3-8% for every day the catheter remains in place, so the single most effective intervention is early removal.",
+      ],
+      answer: [
+        {
+          heading: "Definition and microbiology",
+          points: [
+            "Symptoms include fever, rigors, new suprapubic or flank pain or tenderness, new-onset delirium in the elderly, and in the spinal-injured patient increased spasticity or autonomic dysreflexia.",
+            "Cloudy, foul-smelling or blood-tinged urine alone does not constitute infection; almost all long-term catheters are colonised.",
+            "Organisms: Escherichia coli, Klebsiella, Proteus, Pseudomonas aeruginosa, Enterococcus, and Candida species; biofilm on the catheter surface is the reservoir and protects the organisms from antibiotics.",
+          ],
+        },
+        {
+          heading: "Prevention",
+          points: [
+            "Insert only for a valid indication: retention, accurate output measurement in the critically ill, selected surgery, healing of sacral or perineal wounds in incontinent patients, and comfort at the end of life; never for incontinence or staff convenience.",
+            "Aseptic insertion by trained staff with sterile equipment and lubricant, and the smallest catheter that drains.",
+            "Maintain a closed sterile drainage system, keep the bag below the level of the bladder and off the floor, keep the tubing unkinked, and empty the bag with a separate clean container for each patient.",
+            "Do not irrigate the bladder, do not use routine antimicrobial or antiseptic instillation, and do not give prophylactic systemic antibiotics for insertion or routine change.",
+            "Review the need for the catheter every day and remove it at the earliest moment; use reminders or nurse-led removal protocols. Prefer intermittent clean self-catheterisation or condom drainage for long-term management.",
+          ],
+        },
+        {
+          heading: "Treatment",
+          points: [
+            "Do not culture or treat asymptomatic bacteriuria in a catheterised patient.",
+            "For a genuine infection, replace a catheter that has been in place for more than 2 weeks before starting antibiotics, and send the culture from the new catheter, never from the drainage bag.",
+            "Empirical therapy is guided by the local antibiogram - ceftriaxone 1 g IV OD pending culture, escalating to a carbapenem in proven ESBL infection - and is de-escalated on sensitivity.",
+            "Duration is 7 days when the response is prompt and 10-14 days when it is delayed; candiduria in an asymptomatic catheterised patient usually needs only catheter removal.",
+          ],
+        },
+      ],
+      mustDraw: ["A list of valid and invalid indications for urinary catheterisation in two columns."],
+      markSplit: [
+        { part: "Definition and what does not count as infection", marks: 1 },
+        { part: "Microbiology and biofilm", marks: 1 },
+        { part: "Prevention bundle", marks: 2 },
+        { part: "Treatment principles including catheter change", marks: 1 },
+      ],
+      keywords: ["CAUTI", "biofilm", "closed drainage", "catheter bundle", "asymptomatic bacteriuria"],
+    },
+  ],
+  mcqs: [
+    {
+      id: "renal-urology-urinary-tract-infection-m1",
+      stem: "A 26-year-old non-pregnant woman has 2 days of dysuria, frequency and suprapubic discomfort, no fever, no flank pain and no vaginal discharge. Urine dipstick shows leucocyte esterase and nitrite positive. Which is the most appropriate management in an Indian clinic?",
+      options: [
+        "Send urine culture and wait for the report before treating",
+        "Nitrofurantoin 100 mg orally twice daily for 5 days, without a culture",
+        "Ciprofloxacin 500 mg orally twice daily for 3 days",
+        "Single dose of co-trimoxazole 160/800 mg orally",
+      ],
+      answer: 1,
+      explanation:
+        "This is typical uncomplicated cystitis in a non-pregnant woman: dysuria and frequency without vaginal discharge carries a probability of UTI above 90%, so empirical treatment without culture is correct, and nitrofurantoin remains sensitive in 85-95% of Indian E. coli isolates. Waiting for a culture leaves a symptomatic patient untreated for 48 hours and is not required for a first typical episode. Ciprofloxacin is wrong because fluoroquinolone resistance in Indian urinary E. coli exceeds 70%, and the class carries warnings for tendinopathy, neuropathy and aortic dissection. A single dose of co-trimoxazole is both an inadequate regimen and an inappropriate drug where resistance runs at 50-60%; the only accepted single-dose agent is fosfomycin trometamol 3 g.",
+      difficulty: "easy",
+    },
+    {
+      id: "renal-urology-urinary-tract-infection-m2",
+      stem: "An 82-year-old woman in a care home is brought with 2 days of confusion. She is afebrile, has no dysuria, frequency or suprapubic tenderness, and is not catheterised. Urine culture grows 10 to the power 5 CFU/mL of Escherichia coli. What is the correct action?",
+      options: [
+        "Start nitrofurantoin 100 mg twice daily for 7 days",
+        "Start ceftriaxone 1 g intravenously and admit for urosepsis",
+        "Look for another cause of the delirium and do not treat the bacteriuria",
+        "Start co-trimoxazole prophylaxis to prevent further episodes",
+      ],
+      answer: 2,
+      explanation:
+        "Asymptomatic bacteriuria occurs in 15-50% of institutionalised elderly women, and a positive culture without urinary symptoms does not explain delirium; the correct step is a systematic search for the real cause - drugs, dehydration, constipation, pain, hypoxia, electrolyte disturbance, stroke or sepsis elsewhere - while withholding antibiotics. Treating with nitrofurantoin exposes her to adverse effects, Clostridioides difficile and resistance with no proven benefit, and it is the classic error this question tests. Ceftriaxone and admission for urosepsis are unjustified in an afebrile, haemodynamically stable patient with no localising urinary features. Prophylaxis is wrong because she has not had recurrent symptomatic infection, only colonisation.",
+      difficulty: "moderate",
+    },
+    {
+      id: "renal-urology-urinary-tract-infection-m3",
+      stem: "A 58-year-old man with type 2 diabetes has had fever, rigors and right flank pain for 4 days. He was started on oral cefixime 48 hours ago and remains febrile at 39.4 degrees C with a tender right loin and a blood pressure of 96/60 mmHg. What is the most important next investigation?",
+      options: [
+        "Repeat urine culture in 1 week",
+        "Contrast-enhanced CT of the abdomen",
+        "Voiding cystourethrogram",
+        "Serum prostate-specific antigen",
+      ],
+      answer: 1,
+      explanation:
+        "A diabetic with pyelonephritis who has not defervesced within 48-72 hours and is now hypotensive must be imaged urgently to find emphysematous pyelonephritis, a renal or perinephric abscess, pyonephrosis behind an obstructing stone, or papillary necrosis - contrast-enhanced CT is the investigation of choice and may change management to drainage or nephrectomy the same day. Repeating a culture in a week ignores an evolving surgical emergency. A voiding cystourethrogram assesses reflux, which is a paediatric question and irrelevant to an acutely septic adult. PSA is uninterpretable during acute infection, rises with prostatitis and instrumentation, and answers none of the urgent questions.",
+      difficulty: "moderate",
+    },
+    {
+      id: "renal-urology-urinary-tract-infection-m4",
+      stem: "A 24-year-old woman at 14 weeks of gestation is asymptomatic. Routine antenatal urine culture grows 10 to the power 5 CFU/mL of Escherichia coli sensitive to nitrofurantoin, cefuroxime and amoxicillin. What should be done?",
+      options: [
+        "No treatment, as she is asymptomatic",
+        "Treat with nitrofurantoin 100 mg twice daily for 5-7 days and repeat the culture 1-2 weeks later",
+        "Treat with ciprofloxacin 500 mg twice daily for 3 days",
+        "Treat only if a repeat culture is again positive",
+      ],
+      answer: 1,
+      explanation:
+        "Pregnancy is one of only two situations in which asymptomatic bacteriuria is treated, because untreated bacteriuria progresses to pyelonephritis in 20-30% of pregnancies and is associated with preterm labour and low birth weight; nitrofurantoin is appropriate at 14 weeks (it is avoided at term and in G6PD deficiency), and a test-of-cure culture is required. Withholding treatment because she is asymptomatic applies the non-pregnant rule and is the trap. Ciprofloxacin is contraindicated in pregnancy because of fetal cartilage toxicity. Waiting for a second positive culture delays treatment without adding useful information, since a single properly collected antenatal culture at this colony count is the accepted trigger.",
+      difficulty: "easy",
+    },
+    {
+      id: "renal-urology-urinary-tract-infection-m5",
+      stem: "A 68-year-old man with a long-term indwelling catheter for neurogenic bladder develops fever of 38.8 degrees C and new suprapubic tenderness. The catheter has been in place for 6 weeks. Which step should come first?",
+      options: [
+        "Send a urine sample from the drainage bag and start antibiotics",
+        "Irrigate the catheter with an antiseptic solution",
+        "Replace the catheter, take the culture from the new catheter, then start empirical antibiotics",
+        "Start antifungal therapy as Candida is the likeliest organism",
+      ],
+      answer: 2,
+      explanation:
+        "In a catheter that has been in place more than 2 weeks, the biofilm on the old catheter is the reservoir and its culture reflects colonisation rather than the invading organism, so the catheter is replaced first, the specimen taken from the fresh catheter, and empirical antibiotics then started and de-escalated on sensitivity. A sample from the drainage bag is never acceptable because it is invariably contaminated by stagnant, colonised urine. Catheter irrigation with antiseptic is explicitly discouraged; it does not clear infection and traumatises the urothelium while breaking the closed system. Empirical antifungal therapy is wrong because bacterial uropathogens are far more likely, and asymptomatic candiduria in a catheterised patient usually needs only catheter removal.",
+      difficulty: "moderate",
+    },
+  ],
+  cards: [
+    {
+      id: "renal-urology-urinary-tract-infection-c1",
+      front: "What makes a urinary tract infection complicated?",
+      back: "Male sex, pregnancy, obstruction or stones, indwelling catheter or recent instrumentation, neurogenic bladder, poorly controlled diabetes, immunosuppression, renal transplant, or any anatomical anomaly.",
+    },
+    {
+      id: "renal-urology-urinary-tract-infection-c2",
+      front: "Colony counts that count as significant bacteriuria.",
+      back: "10 to the power 5 CFU/mL in a clean-catch midstream sample; 10 to the power 3 CFU/mL of a single uropathogen with typical symptoms in a woman; 10 to the power 4 CFU/mL in pyelonephritis and in men; any growth from a suprapubic aspirate.",
+    },
+    {
+      id: "renal-urology-urinary-tract-infection-c3",
+      front: "When is asymptomatic bacteriuria treated?",
+      back: "Only in pregnancy, and before a urological procedure that will breach the mucosa. Not in the elderly, the catheterised, the diabetic, transplant recipients beyond the first month, or spinal cord injury.",
+    },
+    {
+      id: "renal-urology-urinary-tract-infection-c4",
+      front: "Definition of recurrent UTI, and relapse versus reinfection.",
+      back: "2 or more infections in 6 months or 3 or more in 12 months. Relapse: same organism within 2 weeks of treatment, suggests a focus (stone, abscess, prostatitis). Reinfection: different organism or later interval, suggests host and behavioural factors.",
+    },
+    {
+      id: "renal-urology-urinary-tract-infection-c5",
+      front: "Why is nitrofurantoin useless in pyelonephritis, and when is it contraindicated?",
+      back: "It achieves therapeutic concentration only in urine, not in renal parenchyma, blood or prostate. Avoid when eGFR is below about 30-45 mL/min/1.73 m2, at term in pregnancy, and in G6PD deficiency.",
+    },
+    {
+      id: "renal-urology-urinary-tract-infection-c6",
+      front: "Causes of sterile pyuria.",
+      back: "Genitourinary tuberculosis (three early-morning urines for AFB and CBNAAT), partially treated UTI, chlamydial or gonococcal urethritis, stones, interstitial cystitis, analgesic nephropathy, papillary necrosis, bladder tumour.",
+    },
+    {
+      id: "renal-urology-urinary-tract-infection-c7",
+      front: "Non-antibiotic prevention of recurrent UTI.",
+      back: "An extra 1.5 litres of fluid a day, complete and post-coital voiding, stopping spermicide and diaphragm, treating constipation, and vaginal oestriol cream in postmenopausal women.",
+    },
+    {
+      id: "renal-urology-urinary-tract-infection-c8",
+      front: "The CAUTI prevention bundle.",
+      back: "Catheterise only for a valid indication, insert aseptically, keep a closed drainage system with the bag below the bladder and off the floor, never irrigate or give prophylactic antibiotics, and review the need for the catheter daily so it comes out as early as possible.",
+    },
+  ],
+  references: [
+    "Indian Council of Medical Research, Treatment Guidelines for Antimicrobial Use in Common Syndromes, 3rd edition, 2022 - urinary tract infections",
+    "ICMR Annual Report of the Antimicrobial Resistance Surveillance Network, 2023",
+    "Infectious Diseases Society of America guideline for asymptomatic bacteriuria, Clinical Infectious Diseases, 2019",
+    "European Association of Urology Guidelines on Urological Infections, 2024",
+    "Centers for Disease Control and Prevention Guideline for Prevention of Catheter-Associated Urinary Tract Infections, updated 2019",
+    "Campbell-Walsh-Wein Urology, 12th edition, 2021 - infections of the urinary tract",
+  ],
+});
+
 const cases: ClinicalCase[] = [
   {
     id: "renal-urology-case-1",
