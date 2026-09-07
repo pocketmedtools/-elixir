@@ -1020,3 +1020,384 @@ topics.push({
     "Apley's System of Orthopaedics and Fractures, 10th edition, 2018",
   ],
 });
+
+const cases: ClinicalCase[] = [
+  {
+    id: "musculoskeletal-case-1",
+    title: "Symmetrical small-joint polyarthritis of 4 months in a 38-year-old woman - early rheumatoid arthritis",
+    kind: "long",
+    subjectId: "musculoskeletal",
+    opening:
+      "A 38-year-old woman, a tailor by occupation and mother of two, presents with pain and swelling of the small joints of both hands and both wrists for 4 months, with stiffness of the hands lasting more than an hour every morning, easy fatigue and a weight loss of 3 kg, without fever, rash, photosensitivity, oral ulcers, back pain, red eyes or urinary symptoms.",
+    minutes: 30,
+    frequency: "core",
+    sections: [
+      {
+        heading: "How to open the presentation",
+        points: [
+          "Give the identifying data, the occupation and the presenting complaint with its duration in one sentence, because in inflammatory arthritis the pattern of joint involvement, the symmetry and the duration of morning stiffness are the three facts that separate rheumatoid arthritis from everything else.",
+          "Say: 'Mrs X, a 38-year-old tailor from a taluk town, presents with pain and swelling of the metacarpophalangeal and proximal interphalangeal joints of both hands and both wrists for 4 months, with morning stiffness lasting more than an hour, and she has had to stop stitching for the last 6 weeks.'",
+          "State the relevant negatives immediately after the complaint: no fever, no rash or photosensitivity, no oral ulcers, no hair loss, no Raynaud phenomenon, no dry eyes or dry mouth, no low back pain or heel pain, no diarrhoea, no dysuria and no recent sore throat or diarrhoeal illness.",
+          "Mention what has already been done: she took diclofenac from a pharmacy with partial relief, was given a course of oral prednisolone by a local practitioner for 2 weeks with dramatic improvement that relapsed on stopping, and no blood tests have been done so far.",
+          "Close the opening with the functional state now: she cannot open a bottle, turn a tap or hold a needle, needs help with buttons in the morning, and has lost her income for the last 6 weeks, which is the reason the family finally brought her.",
+        ],
+      },
+      {
+        heading: "History of the presenting illness - pattern, tempo and the negatives that matter",
+        points: [
+          "Establish the joints involved in order of appearance: the right second and third metacarpophalangeal joints first, then the left hand within 3 weeks, then both wrists, and now the forefeet, giving an additive, symmetrical, small-joint polyarthritis over 4 months, which is the classical pattern of rheumatoid arthritis.",
+          "Quantify the inflammatory nature of the pain: it is worst on waking and after rest, improves with use, and the morning stiffness lasts 90 minutes; mechanical pain of osteoarthritis worsens with use and the stiffness lasts minutes, and this distinction earns the first marks of the case.",
+          "Ask for the systemic features of rheumatoid disease: fatigue, low-grade fever, weight loss, anorexia and a feeling of being generally unwell, and for extra-articular features such as nodules over the elbows, dry gritty eyes, pleuritic chest pain, breathlessness and numbness or tingling of the fingers from carpal tunnel compression.",
+          "Search deliberately for features of the mimics: a butterfly rash, photosensitivity, oral ulcers and alopecia for lupus; psoriatic plaques, nail pitting and dactylitis for psoriatic arthritis; preceding diarrhoea or urethritis for reactive arthritis; fever with rash for viral arthritis; and a recent chikungunya-like illness in the village, which in India is the commonest cause of a symmetrical polyarthritis that resolves.",
+          "Record what the steroid course did, because a dramatic response to prednisolone with relapse on withdrawal is typical of rheumatoid arthritis and is also the reason many Indian patients present with steroid side effects before a diagnosis is ever made.",
+        ],
+      },
+      {
+        heading: "Past, drug, menstrual, personal and socio-economic history",
+        points: [
+          "Ask about previous episodes of joint pain, previous tuberculosis or contact with tuberculosis, hepatitis B or jaundice, peptic ulcer disease and renal disease, because each of these changes the choice and monitoring of methotrexate, NSAIDs and biologics.",
+          "Take the menstrual and contraceptive history explicitly: she has regular cycles, uses no contraception and does not plan another child, but methotrexate is teratogenic and reliable contraception must be arranged before it is started; ask about the date of the last menstrual period.",
+          "List every drug taken with dose and duration, including the diclofenac from the pharmacy, the prednisolone course, any indigenous preparations that often contain undeclared steroids, and any alcohol, which must stop before methotrexate.",
+          "Record the family history of rheumatoid arthritis, psoriasis, lupus or thyroid disease, and the personal history of smoking or tobacco chewing, since smoking is the strongest environmental risk factor and worsens both severity and response to treatment.",
+          "Socio-economic details decide what is possible: a tailor earning on piece rate, a husband who drives an autorickshaw, two school-going children, a rented house, 30 km to the nearest rheumatologist, and no health insurance; the drugs chosen must be affordable for years, not weeks.",
+        ],
+      },
+      {
+        heading: "General and musculoskeletal examination to demonstrate",
+        points: [
+          "General survey: a thin woman with a BMI of 19 kg/m2, mild pallor, no icterus, no lymphadenopathy, no cushingoid features from the short steroid course, pulse 88 per minute regular, blood pressure 118/76 mmHg, afebrile, no rash, no oral ulcers, no alopecia and no nail pitting.",
+          "Hands: symmetrical spindle-shaped swelling of the second and third proximal interphalangeal joints, boggy synovial thickening and tenderness of the second to fourth metacarpophalangeal joints on both sides with a positive metacarpophalangeal squeeze test, bilateral wrist synovitis with reduced dorsiflexion, no ulnar deviation, swan-neck or boutonniere deformity yet, and wasting of the first dorsal interosseous.",
+          "Count and record the joints formally: 12 tender and 10 swollen joints out of the 28-joint count, which with the ESR and the patient global assessment gives a DAS28 score that the examiner will ask for; say that the distal interphalangeal joints are spared, which argues against psoriatic arthritis and osteoarthritis.",
+          "Elbows, shoulders, knees, ankles and forefeet: no nodules over the olecranon, full elbow extension, no knee effusion on patellar tap or bulge test, tender metatarsophalangeal squeeze bilaterally, and no Achilles enthesitis or plantar fasciitis; the spine moves freely and the sacroiliac joints are not tender.",
+          "Extra-articular screen: no scleral pallor beyond mild anaemia, no scleritis, no dry eyes on questioning, normal chest with no crackles or pleural rub, no splenomegaly, and a negative Tinel and Phalen test at both wrists; demonstrate grip strength and the ability to make a fist, because function is what the treatment is judged on.",
+        ],
+      },
+      {
+        heading: "Applying the 2010 ACR/EULAR classification criteria",
+        points: [
+          "State the criteria explicitly: they apply to a patient with at least one joint with definite clinical synovitis not better explained by another disease, and score four domains - joint involvement, serology, acute-phase reactants and duration of symptoms - with a total of 6 or more out of 10 classifying definite rheumatoid arthritis.",
+          "Joint involvement: more than 10 joints with at least one small joint scores 5; 4 to 10 small joints scores 3; 1 to 3 small joints scores 2; 2 to 10 large joints scores 1; one large joint scores 0. This patient with 22 involved small joints of hands and feet scores 5.",
+          "Serology: negative rheumatoid factor and negative anti-CCP score 0; low-positive either scores 2; high-positive either, at more than three times the upper limit of normal, scores 3. Acute-phase reactants: normal CRP and ESR score 0, abnormal either scores 1. Duration: less than 6 weeks scores 0, 6 weeks or more scores 1.",
+          "This patient scores 5 for joints, 1 for duration and 1 for a raised ESR before any serology is back, so she already classifies as rheumatoid arthritis with 7 out of 10; a positive anti-CCP would raise it to 10 and, more importantly, marks her as a patient likely to erode and to need early aggressive treatment.",
+          "Say clearly that these are classification criteria for research and not diagnostic criteria; the diagnosis is clinical, and a patient with a compatible picture and a score of 5 is still treated as rheumatoid arthritis after the mimics have been excluded.",
+        ],
+      },
+    ],
+    summaryStatement:
+      "A 38-year-old woman with a 4-month additive, symmetrical, inflammatory small-joint polyarthritis of the hands, wrists and forefeet with morning stiffness of more than an hour, constitutional symptoms and a steroid-responsive course, without features of lupus, psoriasis, spondyloarthritis or a preceding viral illness, with 12 tender and 10 swollen joints on examination - a clinical diagnosis of early seropositive-pattern rheumatoid arthritis, active by DAS28, with functional loss threatening her livelihood, requiring urgent disease-modifying treatment.",
+    differential: [
+      {
+        diagnosis: "Systemic lupus erythematosus",
+        forIt: "Young woman, symmetrical small-joint polyarthritis, fatigue, weight loss and anaemia are all shared with lupus, and lupus arthritis is typically non-erosive but clinically indistinguishable in the first months.",
+        againstIt: "No malar rash, photosensitivity, oral ulcers, alopecia, serositis, cytopenias beyond mild anaemia, or urinary abnormality; the boggy proliferative synovitis with wrist involvement is more rheumatoid than lupus, and ANA should be sent to settle it.",
+      },
+      {
+        diagnosis: "Post-chikungunya or post-viral arthritis",
+        forIt: "In India a symmetrical small-joint polyarthritis after a febrile illness with rash is commonly chikungunya, and 10 to 20 percent of patients have joint symptoms persisting beyond 3 months that mimic rheumatoid arthritis.",
+        againstIt: "No preceding fever or rash, no outbreak in her village, symptoms are worsening rather than slowly settling at 4 months, and a persistently positive anti-CCP would not be expected in post-viral arthritis.",
+      },
+      {
+        diagnosis: "Psoriatic arthritis",
+        forIt: "Can present as a symmetrical rheumatoid-like polyarthritis in a third of cases, and the skin lesions may be hidden in the scalp, natal cleft or umbilicus and never volunteered.",
+        againstIt: "No psoriatic plaques on a full skin examination including the scalp and nails, no nail pitting or onycholysis, no dactylitis, no distal interphalangeal involvement, no enthesitis and no family history of psoriasis.",
+      },
+    ],
+    investigations: [
+      {
+        test: "Complete blood count with ESR and CRP",
+        why: "To document the acute-phase response that feeds the classification criteria and the DAS28, to detect the anaemia of chronic disease and to obtain the baseline platelet and white cell counts before methotrexate.",
+        expected: "Haemoglobin 10.4 g/dL with a normocytic picture, ESR 62 mm in the first hour, CRP 28 mg/L, platelets mildly raised at 4.5 lakh, normal white cell count.",
+      },
+      {
+        test: "Rheumatoid factor and anti-cyclic citrullinated peptide antibody",
+        why: "Serology completes the ACR/EULAR score, and anti-CCP in particular is 95 percent specific and predicts erosive, aggressive disease that needs early and sustained DMARD therapy.",
+        expected: "Rheumatoid factor positive at 96 IU/mL and anti-CCP strongly positive at more than 200 U/mL, both high-positive at more than three times the upper limit.",
+      },
+      {
+        test: "Antinuclear antibody by immunofluorescence",
+        why: "To exclude lupus, which is the mimic with the most different long-term management; a negative ANA at 1:80 effectively rules it out.",
+        expected: "Negative, or a low-titre homogeneous pattern that is seen in a quarter of rheumatoid patients and does not change the diagnosis without clinical features of lupus.",
+      },
+      {
+        test: "Liver function tests, serum creatinine, hepatitis B surface antigen, hepatitis C antibody and HIV",
+        why: "Methotrexate is hepatotoxic and renally cleared, and reactivation of hepatitis B under immunosuppression is fatal; these are the mandatory pre-methotrexate baseline tests.",
+        expected: "Normal transaminases and creatinine, all viral markers negative, allowing methotrexate to be started without hepatitis B prophylaxis.",
+      },
+      {
+        test: "Chest radiograph and tuberculosis screen",
+        why: "To document baseline lung fields before methotrexate pneumonitis or a biologic is ever a question, and because latent tuberculosis must be identified before any biologic in an Indian patient; the film also shows rheumatoid nodules or effusion.",
+        expected: "Clear lung fields, no old tuberculous scar, normal cardiac silhouette.",
+      },
+      {
+        test: "Radiographs of both hands and wrists and both forefeet, and ultrasound of the hands if available",
+        why: "To document baseline erosions and juxta-articular osteopenia, against which future films show progression; ultrasound with power Doppler confirms synovitis in doubtful joints and is more sensitive than radiographs for early erosions.",
+        expected: "Periarticular osteopenia and soft-tissue swelling around the involved joints, joint space preserved, no erosions yet at 4 months; power Doppler signal in the metacarpophalangeal joints on ultrasound.",
+      },
+    ],
+    management: [
+      {
+        heading: "Principles and the treat-to-target approach",
+        points: [
+          "Explain the diagnosis, that it is a lifelong disease that can be controlled but not cured, that the window of opportunity for preventing damage is the first 3 to 6 months, and that treatment is judged against a target of remission or low disease activity measured by the DAS28 every 1 to 3 months until it is reached.",
+          "Start a conventional synthetic DMARD at the time of diagnosis, not after a trial of NSAIDs; methotrexate is the anchor drug and the first choice in every guideline, and delay of even 3 months worsens the long-term outcome.",
+          "Refer to a rheumatologist at diagnosis for confirmation and a shared plan, but do not wait for the appointment to start methotrexate if the diagnosis is clear and the baseline tests are normal; the family physician continues the monitoring and is the doctor she will actually see.",
+          "Address the cause of the delay: the steroid course from the local practitioner was symptomatic treatment that masked the disease, and the family must understand that prednisolone alone is not the treatment.",
+        ],
+      },
+      {
+        heading: "Methotrexate, folic acid and monitoring",
+        points: [
+          "Methotrexate 10 to 15 mg orally once a week on a fixed day, increased by 5 mg every 4 weeks to 20 to 25 mg weekly according to response and tolerance; write the word 'weekly' on the prescription and say it aloud, because daily dosing by error is the commonest fatal mistake with this drug.",
+          "Folic acid 5 mg once a week on a different day from methotrexate, or 1 mg daily except the methotrexate day, to reduce mouth ulcers, nausea, transaminitis and cytopenia without reducing efficacy.",
+          "Monitor complete blood count, transaminases and creatinine every 2 to 4 weeks for the first 3 months, every 8 to 12 weeks for the next 3 months and then every 12 weeks; hold the drug and seek advice if the transaminases exceed three times the upper limit, the white count falls below 3500 or platelets below 1 lakh, or the creatinine rises.",
+          "Counsel on the warning symptoms - mouth ulcers, breathlessness or dry cough, fever, unusual bruising or bleeding, jaundice - and on stopping alcohol, avoiding co-trimoxazole and high-dose NSAIDs, and using reliable contraception; methotrexate must be stopped 3 months before a planned pregnancy in either partner and is contraindicated in breastfeeding.",
+        ],
+      },
+      {
+        heading: "Bridging with NSAIDs and low-dose glucocorticoids",
+        points: [
+          "Methotrexate takes 6 to 12 weeks to act, so bridge with prednisolone 7.5 to 10 mg once daily in the morning, tapering to stop over 3 months as the DMARD takes effect; do not leave the patient on indefinite low-dose steroids, which is the commonest error in Indian practice.",
+          "Use an NSAID for symptom control in the lowest dose for the shortest time - naproxen 250 to 500 mg twice daily or diclofenac 50 mg twice daily with food - with a proton pump inhibitor if she has dyspepsia, is on steroids, or is over 60; stop it once the DMARD controls the disease.",
+          "An intra-articular injection of triamcinolone or methylprednisolone into one or two dominant joints such as the wrist gives rapid local control and reduces the systemic steroid needed.",
+          "Add calcium 1000 mg and vitamin D 800 to 1000 IU daily while on prednisolone, and use the steroid taper as the measure of whether the DMARD dose is adequate.",
+        ],
+      },
+      {
+        heading: "Escalation, non-pharmacological care, comorbidity and follow-up",
+        points: [
+          "If the DAS28 target is not reached by 3 to 6 months on optimised methotrexate, combine with hydroxychloroquine 200 to 400 mg daily and sulfasalazine 1 g twice daily as triple therapy, or refer for a biologic or a JAK inhibitor; hydroxychloroquine needs a baseline and then annual retinal examination after 5 years.",
+          "Physiotherapy for joint-protection techniques, range-of-motion and grip-strengthening exercises, resting wrist splints at night, and an occupational therapy assessment of her sewing so she can return to work with adapted tools.",
+          "Vaccinate before or early in immunosuppression - influenza yearly, pneumococcal and hepatitis B - and screen and treat the cardiovascular risk that rheumatoid arthritis doubles: lipids, blood pressure, blood sugar, smoking, and a tuberculosis screen before any biologic.",
+          "Review every 4 weeks until the target is reached with a joint count, ESR or CRP and the monitoring bloods, then every 3 months; record function with a simple HAQ, ask about mood, and involve the husband in the counselling so that the weekly drug and the follow-up are supported.",
+        ],
+      },
+    ],
+    viva: [
+      {
+        q: "Why is anti-CCP more useful than rheumatoid factor in this patient?",
+        a: "Anti-CCP is about 95 percent specific for rheumatoid arthritis, whereas rheumatoid factor is positive in hepatitis C, tuberculosis, endocarditis, lupus and 5 to 10 percent of healthy elderly; anti-CCP also appears years before symptoms and predicts erosive disease, so a high-positive result identifies the patient who must be treated aggressively from the start.",
+      },
+      {
+        q: "What is the DAS28 and what values define remission and high disease activity?",
+        a: "The DAS28 is a composite of the 28-joint tender count, 28-joint swollen count, ESR or CRP and the patient global assessment on a 100 mm scale; a score below 2.6 is remission, 2.6 to 3.2 is low activity, 3.2 to 5.1 moderate and above 5.1 high disease activity, and the treatment target is remission or at least low activity.",
+      },
+      {
+        q: "A patient on methotrexate presents with a dry cough, fever and breathlessness of 5 days. What do you do?",
+        a: "Suspect methotrexate pneumonitis, which is idiosyncratic, can occur at any dose or time and is fatal in a fifth of cases: stop methotrexate immediately, obtain a chest radiograph and oxygen saturation, exclude infection including Pneumocystis and tuberculosis, and admit for high-dose steroids; the drug is never restarted after confirmed pneumonitis.",
+      },
+      {
+        q: "Which extra-articular manifestations of rheumatoid arthritis will you screen for at follow-up?",
+        a: "Rheumatoid nodules, secondary Sjogren syndrome with dry eyes and mouth, episcleritis and scleritis, interstitial lung disease and pleural effusion, pericarditis, anaemia of chronic disease, Felty syndrome with splenomegaly and neutropenia, carpal tunnel syndrome, vasculitic leg ulcers, and accelerated atherosclerosis, which is the commonest cause of death.",
+      },
+      {
+        q: "She becomes pregnant 8 months later while on methotrexate 20 mg weekly. What is your advice?",
+        a: "Stop methotrexate immediately and continue high-dose folic acid; refer urgently to the obstetrician and rheumatologist for counselling about the risk of methotrexate embryopathy in the first trimester and for a detailed anomaly scan; control the arthritis with low-dose prednisolone, sulfasalazine or hydroxychloroquine, both of which are safe in pregnancy, and expect the disease to improve during pregnancy and flare after delivery.",
+      },
+      {
+        q: "What is the role of the family physician once the rheumatologist has started treatment?",
+        a: "Carrying out the monitoring blood tests on schedule and acting on them, checking the weekly dosing at each visit, tapering the bridging steroid, managing the comorbidity and vaccination, referring back for a flare or a failure to reach target, supporting adherence and the family, and coordinating physiotherapy and return to work - the rheumatologist sees her four times a year, the family physician sees her every month.",
+      },
+    ],
+    pitfalls: [
+      "Labelling an inflammatory polyarthritis as 'arthritis' and treating with repeated steroid courses and NSAIDs without a diagnosis or a DMARD, so that the patient arrives at the specialist with deformities and cushingoid features.",
+      "Waiting for a positive rheumatoid factor before making the diagnosis; a fifth of patients are seronegative, and the diagnosis is clinical.",
+      "Prescribing methotrexate without the word 'weekly', without folic acid, without the baseline hepatitis B screen and liver tests, or without contraception advice in a woman of reproductive age.",
+      "Forgetting that the leading cause of death in rheumatoid arthritis is cardiovascular, and not screening and treating lipids, blood pressure, sugar and smoking as aggressively as the joints.",
+    ],
+    references: [
+      "Aletaha D et al., 2010 Rheumatoid arthritis classification criteria: an ACR/EULAR collaborative initiative, Arthritis and Rheumatism 2010",
+      "EULAR recommendations for the management of rheumatoid arthritis with synthetic and biological DMARDs, 2022 update",
+      "ACR Guideline for the Treatment of Rheumatoid Arthritis, 2021",
+      "Indian Rheumatology Association guidelines on the management of rheumatoid arthritis, 2018",
+      "Harrison's Principles of Internal Medicine, 21st edition, 2022 - rheumatoid arthritis",
+      "Hutchison's Clinical Methods, 24th edition, 2018 - the locomotor system",
+    ],
+  },
+  {
+    id: "musculoskeletal-case-2",
+    title: "Examine this knee - a 61-year-old woman with pain on climbing stairs",
+    kind: "short",
+    subjectId: "musculoskeletal",
+    opening:
+      "A 61-year-old overweight woman, a homemaker, presents with pain in the right knee for 2 years, worse on climbing stairs, squatting and rising from a chair, with stiffness for a few minutes on waking, occasional swelling after a long day and no history of injury, fever, rest pain or locking.",
+    minutes: 15,
+    frequency: "core",
+    sections: [
+      {
+        heading: "How to start - introduce, expose, position and look",
+        points: [
+          "Introduce yourself, explain what you are going to do, ask permission and ask which knee hurts before touching either; expose both lower limbs from mid-thigh down with the patient standing first, because a knee is always examined against the other knee and the examination begins with the patient walking in.",
+          "Gait: watch her walk away and back and comment on an antalgic gait with a shortened stance phase on the right, a varus thrust of the right knee in stance, and the need for a hand on the wall to turn; ask her to squat if she can, and say that she cannot go below 90 degrees.",
+          "Standing inspection from the front, side and back: a varus alignment of the right knee greater than the left, no fixed flexion deformity when viewed from the side, no popliteal swelling from behind, and a wasted right quadriceps compared with the left.",
+          "Supine inspection: loss of the medial and lateral parapatellar hollows suggesting an effusion, bony enlargement at the joint margins, no scars, sinuses, erythema or pigmentation, and no obvious patellar maltracking; note the position of the patella and whether the knee rests in full extension on the couch.",
+          "Measure the quadriceps girth 10 cm above the superior pole of the patella on both sides with a tape and report the difference - 2 cm of wasting on the right - because it is the only objective evidence of chronicity you can give the examiner.",
+        ],
+      },
+      {
+        heading: "Feel - temperature, effusion, tenderness and crepitus",
+        points: [
+          "Compare skin temperature with the back of the hand over both knees and the shins; the osteoarthritic knee is not warm, and a warm knee shifts the diagnosis to an inflammatory or septic arthritis or a crystal flare.",
+          "Test for an effusion in two ways: the bulge test for a small effusion, stroking fluid from the medial gutter upwards and then sweeping the lateral side to watch the medial hollow refill, and the patellar tap for a moderate effusion, milking the suprapatellar pouch down with one hand and tapping the patella against the femur with the other.",
+          "Palpate the joint line with the knee flexed to 90 degrees, tracing the medial and lateral joint lines from the patellar tendon backwards; record tenderness along the medial joint line, marginal osteophytes felt as bony ridges, and tenderness over the medial tibial plateau at the pes anserine bursa, which is a common and treatable cause of pain in these knees.",
+          "Palpate the patella and its facets, the quadriceps and patellar tendons, the tibial tubercle, the fibular head, the collateral ligaments along their length and the popliteal fossa for a Baker cyst, and feel for crepitus with the palm over the patella as the knee is moved through flexion and extension.",
+          "Feel the distal pulses, test sensation and capillary refill, and check the hip on the same side, because hip pathology refers pain to the knee and a knee examination that omits the hip is incomplete.",
+        ],
+      },
+      {
+        heading: "Move - active and passive range with the other knee as control",
+        points: [
+          "Ask for active flexion and extension first and watch the face for pain; then measure the passive range with a goniometer or by estimation, reporting the right knee as 5 to 110 degrees against 0 to 135 on the left, so there is a fixed flexion deformity of 5 degrees and loss of terminal flexion.",
+          "Test for a fixed flexion deformity by lifting both heels off the couch and seeing whether the back of the knee can be pushed down, and for hyperextension or recurvatum by lifting the foot with the knee held straight.",
+          "Feel for crepitus during passive movement with a hand over the patella, and describe it as coarse and palpable throughout the range, which in a 61-year-old with bony enlargement is the crepitus of cartilage loss rather than the fine crepitus of synovitis.",
+          "Assess the extensor mechanism by asking her to do a straight-leg raise on the couch and to extend the knee against resistance, grading quadriceps power and noting an extensor lag if the knee cannot be fully straightened actively although it can passively.",
+          "Test patellofemoral movement by moving the patella medially and laterally and pressing it against the femur with the quadriceps contracting - the patellar grind test - which reproduces her pain on stairs and squatting.",
+        ],
+      },
+      {
+        heading: "Special tests - ligaments and menisci",
+        points: [
+          "Collateral ligaments: apply a valgus and then a varus stress at 0 degrees and at 30 degrees of flexion; laxity at 30 degrees alone means an isolated collateral injury, laxity at 0 degrees means an injury involving the posterior capsule or cruciate; in this knee there is medial pseudo-laxity from loss of medial joint space rather than true ligament injury, and the end point is firm.",
+          "Anterior cruciate ligament: the Lachman test at 20 to 30 degrees of flexion, holding the femur with one hand and drawing the tibia forward with the other, is the most sensitive; the anterior drawer at 90 degrees is less reliable and the pivot shift is painful and unnecessary here. Report a firm end point and no anterior translation.",
+          "Posterior cruciate ligament: look for a posterior sag with both knees flexed to 90 degrees and the feet flat, then perform the posterior drawer; a posterior sag mistaken for anterior laxity is a classic error.",
+          "Menisci: the McMurray test by flexing the knee fully, rotating the tibia externally and then extending with a valgus stress for the medial meniscus, and internally with varus for the lateral; report a painful click if present. The Thessaly test with the patient standing on one leg and twisting at 20 degrees of flexion is an alternative; in this knee there is medial joint line pain without a click or locking.",
+          "Say at the end that you would like to complete the examination by examining the hip and the lumbar spine, the other knee in the same detail, the peripheral pulses and the feet, and by watching her get up from a chair without using her hands.",
+        ],
+      },
+      {
+        heading: "Presenting the findings before naming the diagnosis",
+        points: [
+          "Present in the order examined: 'On examination Mrs X walks with an antalgic gait and a varus thrust on the right; the right knee is in varus alignment with 2 cm of quadriceps wasting, bony enlargement at the joint margins, a small effusion on the bulge test, no warmth, and tenderness along the medial joint line and over the pes anserine area.'",
+          "Continue: 'The range of movement is 5 to 110 degrees on the right against 0 to 135 on the left with coarse crepitus throughout, a fixed flexion deformity of 5 degrees, a positive patellar grind, no extensor lag, stable collateral and cruciate ligaments with firm end points, and a negative McMurray test; distal pulses and sensation are intact and the hip moves freely.'",
+          "Only then give the interpretation: 'These findings, in a 61-year-old overweight woman with 2 years of mechanical pain, minutes of morning stiffness and no warmth, are those of a chronic degenerative arthritis of the medial tibiofemoral and patellofemoral compartments of the right knee - clinically, osteoarthritis of the knee - with a small effusion and secondary pes anserine bursitis.'",
+          "Be ready to be asked how you would confirm it and what you would not do: a weight-bearing anteroposterior radiograph in the standing position and a lateral and skyline view, and no MRI, because MRI in a 61-year-old knee always shows a degenerate meniscus that does not need surgery.",
+        ],
+      },
+    ],
+    summaryStatement:
+      "A 61-year-old overweight woman with 2 years of mechanical right knee pain, examined to show an antalgic gait with varus thrust, varus alignment, quadriceps wasting, bony enlargement, a small cool effusion, medial joint line and pes anserine tenderness, a 5-degree fixed flexion deformity with coarse crepitus, a positive patellar grind and stable ligaments with a negative McMurray test - the clinical picture of osteoarthritis of the medial and patellofemoral compartments of the right knee.",
+    differential: [
+      {
+        diagnosis: "Degenerative medial meniscal tear",
+        forIt: "Medial joint line tenderness, pain on squatting and an effusion after activity are shared, and degenerate tears coexist with osteoarthritis in most knees of this age.",
+        againstIt: "No locking, giving way or a painful click on McMurray, no history of a twisting injury, and the bony enlargement with crepitus and varus explain the picture fully; an MRI would show a tear that does not change management.",
+      },
+      {
+        diagnosis: "Inflammatory arthritis of the knee - rheumatoid or crystal",
+        forIt: "An effusion and stiffness are present, and calcium pyrophosphate deposition disease is common in osteoarthritic knees of this age and gives acute flares.",
+        againstIt: "The knee is cool with only minutes of morning stiffness, the pattern is monoarticular and mechanical, and there is bony rather than synovial thickening; a warm, tense effusion with prolonged stiffness would demand aspiration for cells and crystals.",
+      },
+      {
+        diagnosis: "Referred pain from the hip",
+        forIt: "Hip osteoarthritis classically presents as knee pain, particularly in an older patient with a limp, and both are common enough to coexist.",
+        againstIt: "The hip has a full painless range with no groin pain, and the knee findings are local and sufficient; the hip was nonetheless examined because omitting it fails the case.",
+      },
+    ],
+    investigations: [
+      {
+        test: "Weight-bearing anteroposterior radiograph of both knees, with lateral and skyline patellar views",
+        why: "Standing films show the true joint-space narrowing that supine films hide; the four Kellgren-Lawrence features are joint-space narrowing, osteophytes, subchondral sclerosis and subchondral cysts, and the skyline view grades the patellofemoral compartment.",
+        expected: "Medial tibiofemoral joint-space narrowing with marginal osteophytes and subchondral sclerosis on the right, Kellgren-Lawrence grade 3, with patellofemoral osteophytes on the skyline view; the left shows early grade 1 to 2 change.",
+      },
+      {
+        test: "ESR and CRP",
+        why: "A normal acute-phase response supports a degenerative process and reassures against an inflammatory or septic arthritis when there is an effusion; they are not needed in a classical presentation without an effusion.",
+        expected: "ESR under 20 mm in the first hour and CRP under 6 mg/L.",
+      },
+      {
+        test: "Aspiration of the effusion for cell count, Gram stain, culture and polarised-light microscopy for crystals",
+        why: "Only if the effusion is warm, tense or acutely painful, to exclude septic arthritis and to diagnose calcium pyrophosphate or urate crystals; not done routinely in a cool osteoarthritic effusion.",
+        expected: "A clear, viscous, non-inflammatory fluid with fewer than 2000 cells per microlitre, no organisms and no crystals if it were aspirated.",
+      },
+      {
+        test: "Fasting blood sugar, lipid profile and blood pressure",
+        why: "Osteoarthritis in an overweight 61-year-old is a marker of the metabolic syndrome, and any NSAID she is given will need a renal and cardiovascular risk assessment.",
+        expected: "Often shows an unrecognised impaired fasting glucose or dyslipidaemia; blood pressure may be raised and must be documented before an NSAID.",
+      },
+      {
+        test: "Serum creatinine and haemoglobin",
+        why: "Baseline renal function before any NSAID in a woman over 60, and haemoglobin because chronic NSAID use from a pharmacy is a common cause of occult blood loss in this group.",
+        expected: "Normal creatinine; haemoglobin may be low if she has already been taking diclofenac for months.",
+      },
+    ],
+    management: [
+      {
+        heading: "Core treatment - education, exercise and weight",
+        points: [
+          "Explain that osteoarthritis is wear and repair of the joint rather than an inevitable slide to a wheelchair, that the pain comes from muscle weakness, load and inflammation more than from the cartilage seen on the film, and that the treatment she does herself is the one that works.",
+          "Quadriceps-strengthening and range-of-motion exercises taught by a physiotherapist and then done daily at home - static quadriceps contractions, straight-leg raises, wall slides and step-ups - with walking or cycling for aerobic fitness; land-based exercise has the best evidence of any treatment.",
+          "Weight reduction of at least 5 to 10 percent of body weight through diet and activity, because each kilogram lost removes about 4 kilograms of load from the knee at each step.",
+          "Avoid deep squatting, sitting cross-legged on the floor and repeated stair climbing; provide a raised toilet seat or a commode chair, a walking stick held in the opposite hand, and appropriate cushioned footwear.",
+        ],
+      },
+      {
+        heading: "Pharmacological treatment",
+        points: [
+          "Topical diclofenac or ketoprofen gel applied to the knee three to four times a day is first-line and as effective as oral NSAIDs for the knee with far less harm; paracetamol 1 g up to three times a day may be added but has little effect on its own.",
+          "Oral NSAIDs - naproxen 250 to 500 mg twice daily or ibuprofen 400 mg three times daily - for flares only, at the lowest dose and shortest duration, with a proton pump inhibitor, after checking creatinine, blood pressure and cardiovascular risk; avoid them altogether in renal impairment, heart failure or a previous ulcer.",
+          "An intra-articular corticosteroid injection of triamcinolone 40 mg or methylprednisolone 40 mg for a painful effusion or a flare that prevents exercise, giving 4 to 8 weeks of relief and repeated no more than three or four times a year; the pes anserine bursa can be injected separately.",
+          "Duloxetine 30 to 60 mg daily for persistent pain with central sensitisation or coexisting depression; tramadol only briefly and as a last resort; glucosamine, chondroitin, hyaluronic acid injections and platelet-rich plasma are not recommended by current guidelines and their cost should not be passed to the family.",
+        ],
+      },
+      {
+        heading: "Referral, surgery and follow-up",
+        points: [
+          "Refer to the orthopaedic surgeon when pain limits sleep and walking despite 3 to 6 months of adequate non-surgical treatment with weight loss and exercise, when there is a progressive deformity, or when the radiograph shows grade 4 change with bone-on-bone contact.",
+          "Total knee replacement is the definitive treatment for end-stage disease and gives excellent pain relief in 90 percent of patients; high tibial osteotomy is an option in a younger patient with isolated medial compartment disease, and arthroscopic debridement or meniscectomy has no role in the degenerative knee.",
+          "Review in 6 to 8 weeks to check the exercise programme, the weight, the analgesic use and the blood pressure if an NSAID has been prescribed, then every 3 to 6 months; screen for falls and treat the metabolic syndrome that came to light with the knee.",
+        ],
+      },
+    ],
+    viva: [
+      {
+        q: "What are the Kellgren-Lawrence grades?",
+        a: "Grade 0 is a normal film; grade 1 doubtful narrowing with possible osteophytic lipping; grade 2 definite osteophytes with possible narrowing; grade 3 moderate multiple osteophytes, definite narrowing, some sclerosis and possible deformity of bone ends; grade 4 large osteophytes, marked narrowing, severe sclerosis and definite deformity of the bone ends.",
+      },
+      {
+        q: "Which compartment of the knee is most commonly affected by osteoarthritis and why does that produce varus?",
+        a: "The medial tibiofemoral compartment, because it carries about 60 to 70 percent of the load in normal gait; as its cartilage and bone are lost the medial side collapses, the limb drifts into varus, the mechanical axis shifts further medially and the load on the medial compartment rises, creating a self-perpetuating cycle.",
+      },
+      {
+        q: "How do you distinguish a bulge sign from a patellar tap and when is each useful?",
+        a: "The bulge sign detects a small effusion of 5 to 10 mL by stroking fluid out of the medial gutter and watching it refill when the lateral side is swept; the patellar tap needs a moderate effusion of 20 to 30 mL that floats the patella, and is negative when the effusion is small or so tense that the patella cannot be depressed.",
+      },
+      {
+        q: "What is a Baker cyst and how can it present?",
+        a: "A distended gastrocnemius-semimembranosus bursa communicating with the joint through a valve-like opening, filled by the effusion of an osteoarthritic or inflammatory knee; it presents as a popliteal swelling that is tense in extension and soft in flexion, and if it ruptures it mimics a deep vein thrombosis with calf pain and swelling, which is the main reason to know about it.",
+      },
+      {
+        q: "What is the evidence for arthroscopy in the degenerative knee?",
+        a: "Randomised trials of arthroscopic debridement, lavage and partial meniscectomy against sham surgery or physiotherapy in patients over 45 with degenerative changes have shown no benefit; guidelines advise against arthroscopy for osteoarthritis and against MRI, which finds a degenerate meniscal tear in most such knees and leads to surgery that does not help.",
+      },
+      {
+        q: "A patient on diclofenac from the pharmacy for a year for this knee presents with ankle swelling. What are you worried about?",
+        a: "NSAID-induced renal impairment or sodium retention with heart failure, and in a diabetic hypertensive the combination of NSAID, ACE inhibitor and diuretic that precipitates acute kidney injury; stop the NSAID, check creatinine, potassium and haemoglobin, examine for heart failure and look for occult gastrointestinal blood loss.",
+      },
+    ],
+    pitfalls: [
+      "Examining only the painful knee and forgetting to compare with the other side, to examine the hip and spine, and to watch the patient walk - each of these is a specific mark on the short-case sheet.",
+      "Naming osteoarthritis before presenting the findings, so that the examiner cannot tell whether the diagnosis came from the examination or from the patient's age.",
+      "Calling medial pseudo-laxity from joint-space loss a collateral ligament injury, or a posterior sag an anterior drawer.",
+      "Ordering an MRI for a 61-year-old knee, finding a degenerate meniscal tear and referring for arthroscopy, when weight loss, quadriceps exercise and topical NSAID were the treatment.",
+    ],
+    references: [
+      "NICE Guideline NG226: Osteoarthritis in over 16s - diagnosis and management, 2022",
+      "ACR/Arthritis Foundation Guideline for the Management of Osteoarthritis of the Hand, Hip and Knee, 2019",
+      "OARSI guidelines for the non-surgical management of knee, hip and polyarticular osteoarthritis, 2019",
+      "Hutchison's Clinical Methods, 24th edition, 2018 - examination of the locomotor system",
+      "Apley's System of Orthopaedics and Fractures, 10th edition, 2018 - the knee",
+      "Macleod's Clinical Examination, 15th edition, 2023 - the musculoskeletal system",
+    ],
+  },
+];
+
+const subject: Subject = {
+  id: "musculoskeletal",
+  title: "Musculoskeletal & Rheumatology",
+  blurb: "Back pain, osteoarthritis, rheumatoid arthritis, gout, soft tissue rheumatism and osteoporosis.",
+  icon: "Bone",
+  papers: ["II", "III"],
+  topics,
+  cases,
+};
+
+export default subject;
