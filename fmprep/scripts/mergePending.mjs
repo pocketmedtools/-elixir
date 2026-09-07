@@ -30,6 +30,24 @@ function subjectFor(topicId) {
   return hit;
 }
 
+/**
+ * A topic still being written must not be merged. An author writes the file in
+ * one pass, but the write and the notification that it is finished are not the
+ * same moment, so a merge run in between picks up a real, parseable, half-built
+ * topic — one was merged at 20 KB with no references and had to be backed out
+ * of its subject file by hand. These are the fields a finished topic always
+ * has; a file missing any of them is left in place for the next run.
+ */
+function looksFinished(block) {
+  const missing = [];
+  for (const field of ["references:", "mcqs:", "cards:", "sections:", "pearls:", "redFlags:"]) {
+    if (!block.includes(field)) missing.push(field.slice(0, -1));
+  }
+  // A topic is tens of kilobytes; anything much smaller is a fragment.
+  if (block.length < 20000) missing.push(`only ${block.length} bytes`);
+  return missing;
+}
+
 /** The push block, verbatim, from the first `topics.push({` to its closing `});`. */
 function extractBlock(source, file) {
   const start = source.indexOf("\ntopics.push({");
@@ -61,6 +79,12 @@ for (const file of files) {
   const declared = block.match(/^\s*id: "([^"]+)"/m)?.[1];
   if (declared !== topicId) {
     throw new Error(`${file}: declares id "${declared}" but is named for "${topicId}"`);
+  }
+
+  const unfinished = looksFinished(block);
+  if (unfinished.length > 0) {
+    console.log(`wait  ${topicId} — still being written (${unfinished.join(", ")})`);
+    continue;
   }
 
   const subject = subjectFor(topicId);

@@ -239,3 +239,58 @@ not a list of known errors.
   10% of expected bladder capacity, after repeated voiding". ICCS uses age-banded
   cut-offs (roughly above 20 mL or 10% at 4–6 years, above 10 mL or 6% at
   7–12 years).
+
+## pediatrics-congenital-heart-disease
+
+- **Clindamycin for endocarditis prophylaxis in penicillin allergy.** The 2021
+  AHA scientific statement *removed* clindamycin over Clostridioides difficile
+  risk and substitutes doxycycline, azithromycin, clarithromycin or a
+  cephalosporin. The current position is written, with the change flagged in the
+  text, a pearl, a card and one MCQ, and a note that Indian charts still print
+  clindamycin 20 mg/kg.
+- **The adult congenital heart disease guideline citation.** There is no
+  AHA/ACC 2020 guideline: the AHA/ACC one is 2018 (Circulation 2019;139:e698)
+  and the 2020 document is the ESC guideline. Both are cited rather than a year
+  that does not exist.
+- **ESC 2023 on intermediate-risk lesions.** The text states only that ESC 2023
+  keeps the same high-risk list, adds ventricular assist devices, and does not
+  recommend routine prophylaxis for intermediate-risk lesions. No class of
+  recommendation is assigned to the intermediate-risk group.
+- **Intravenous propranolol in a cyanotic spell.** Sources range from 0.01 to
+  0.25 mg/kg. 0.1 mg/kg (range 0.05–0.2) slowly over 5–10 minutes with ECG
+  monitoring, repeatable once, is used — defensible but not universal.
+- **Atrial septal defect spontaneous-closure figures** (defects under 5–6 mm
+  closing in up to 80–90% within two years) and the **device rim rule** (5 mm on
+  all margins except the aortic rim, stretched diameter up to about 34–38 mm)
+  are series- and device-dependent, so ranges are given.
+- **Pulse oximetry screening algorithm.** The 2020 AAP revision (a single
+  repeat) is given, noting the 2011 algorithm allowed two.
+- **India burden** written as 8–10 per 1000, about 200,000 babies a year, one
+  fifth critical. Published Indian estimates run 150,000–240,000; the middle is
+  used and the derivation named so it is auditable.
+
+## gynaecology-uterine-prolapse
+
+- **Classification of the round ligament.** Placed firmly with the weak or
+  secondary supports (Dutta, Shaw), with the explicit statement that it maintains
+  anteversion. A minority of Indian texts list it under primary fibromuscular
+  supports precisely *because* it maintains anteversion, so the reasoning is
+  written out rather than only the label, and the answer survives either
+  examiner.
+- **Hydronephrosis in procidentia** written as "a substantial minority, older
+  series quoting up to about a third". The cited figures come from small older
+  series with no current denominator.
+- **Vault prolapse incidence** (about 1–2% after hysterectomy for a non-prolapse
+  indication, 10–12% when the hysterectomy was for prolapse, Oxford FPA cohort).
+  Widely quoted, but the range across series is much wider than those numbers
+  imply.
+- **Occult stress incontinence** (a fifth to a third of stage III–IV) and the
+  **lifetime risk of prolapse or incontinence surgery** (12–20% in Western
+  cohorts) are both hedged; the surgery-risk figure varies by source and endpoint
+  (Wu 2014 gives 20% by age 80 for the combined endpoint).
+- **Shelf pessary eponym.** "Zimmerman" is omitted because it could not be
+  confirmed; the pessary is named descriptively.
+- **Mesh.** Stated as three distinct things — the UK pause of July 2018, the FDA
+  withdrawal of April 2019, and NICE NG123/IPG599 research-only — with an
+  explicit warning not to extend any of it to abdominal sacrocolpopexy or
+  mid-urethral slings.
