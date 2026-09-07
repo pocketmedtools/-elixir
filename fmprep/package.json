@@ -10,6 +10,8 @@
     "lint": "oxlint",
     "preview": "vite preview",
     "verify": "tsx scripts/verifyContent.ts",
+    "gaps": "tsx scripts/gaps.ts",
+    "merge": "node scripts/mergePending.mjs",
     "status": "bash scripts/status.sh"
   },
   "dependencies": {

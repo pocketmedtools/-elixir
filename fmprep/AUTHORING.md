@@ -151,8 +151,28 @@ from the gaps list, so `scripts/gaps.ts` is the progress bar.
 | 19 | `preventive-child-women-legislation` | preventive.ts | Apr 2016 (JJ Act, NPEW) |
 | 20 | `preventive-occupational-health` | preventive.ts | Jun 2014 (chemical carcinogens) |
 
-Two agents must never edit the same subject file at once — `preventive.ts`
-alone carries eight of these, so its topics are written one after another.
+No two authors ever touch the same subject file. Each writes its topic as a
+standalone, typecheckable module in `pending/<topic-id>.ts` — shaped as
+
+```ts
+import type { Topic } from "../src/lib/types";
+const topics: Topic[] = [];
+topics.push({ id: "<topic-id>", /* ... */ });
+export default topics;
+```
+
+— and `npm run merge` lifts the `topics.push` block out verbatim and inserts it
+before the subject's `const cases: ClinicalCase[]` line, deleting the pending
+file as it goes. So `pending/` is both the staging area and the queue: whatever
+is still in it has been written but not yet merged.
+
+Progress is measured, not guessed:
+
+```bash
+npm run gaps     # the questions the library still cannot answer
+npm run merge    # fold finished topics into their subject files
+npm run verify   # the content checker, which must stay green
+```
 
 ## If you want to take it further
 
