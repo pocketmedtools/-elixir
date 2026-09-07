@@ -482,804 +482,6 @@ topics.push({
 });
 
 topics.push({
-  id: "dermatology-scabies-pediculosis",
-  title: "Scabies and pediculosis, including treatment of the whole household",
-  oneLiner:
-    "Scabies is an intensely pruritic infestation by the mite Sarcoptes scabiei var. hominis in which nocturnal itch, burrows and papules in the finger webs, wrists, axillae, waist and genitalia, and a history of itching in other members of the household, make the diagnosis clinically, and the cure depends entirely on treating every contact simultaneously with topical permethrin 5 per cent or oral ivermectin plus decontamination of clothes and bedding.",
-  frequency: "core",
-  keywords: [
-    "scabies",
-    "Sarcoptes scabiei",
-    "burrow",
-    "nocturnal pruritus",
-    "permethrin",
-    "ivermectin",
-    "benzyl benzoate",
-    "crusted scabies",
-    "Norwegian scabies",
-    "pediculosis capitis",
-    "pediculosis corporis",
-    "pthirus pubis",
-    "nits",
-    "malathion",
-    "post-scabetic itch",
-    "dermoscopy delta sign",
-    "impetigo",
-    "household contacts",
-  ],
-  sections: [
-    {
-      heading: "The organism, the transmission and why the whole family matters",
-      points: [
-        "Scabies is caused by **Sarcoptes scabiei var. hominis**, an obligate human mite; the fertilised female burrows into the stratum corneum at about 2 mm a day and lays two to three eggs daily for a life of four to six weeks, and an ordinary patient carries only **10 to 15 adult mites** on the whole body.",
-        "Transmission needs **prolonged skin-to-skin contact of 15 to 20 minutes**, which is why it runs through households, hostels, orphanages, prisons and shared beds rather than through casual handshakes; fomite transmission through shared clothes and bedding is real but secondary, except in crusted scabies where it is the dominant route.",
-        "The itch is a **type IV delayed hypersensitivity reaction to mite antigen, faeces and eggs**, so a first infestation stays silent for **four to six weeks** before itching begins, while a re-infestation itches within one to four days - this incubation period is the reason asymptomatic contacts must still be treated.",
-        "In Indian general practice scabies clusters in the rainy and winter months, in overcrowded housing and where water for washing is short; the classical exam history is **itching worse at night that disturbs sleep, with at least one other person in the house itching**.",
-        "Scabies is a **WHO-recognised neglected tropical disease** since 2017, with an estimated 200 million people affected at any time, and in India it is one of the commonest reasons for a skin consultation in primary care.",
-        "Untreated scabies in children is a major driver of **streptococcal pyoderma and therefore of acute post-streptococcal glomerulonephritis and acute rheumatic fever**, which is why treating scabies is a public health act and not merely a comfort measure.",
-      ],
-    },
-    {
-      heading: "Clinical features and the lesion vocabulary to use",
-      points: [
-        "Describe the eruption in the fixed order - **number, site and distribution, size, shape, surface, margin, colour, arrangement and secondary change**; in scabies the answer is multiple, symmetrical, 1 to 3 mm erythematous **papules and papulovesicles with excoriations and crusting**, discrete but grouped, in a characteristic distribution below the neck.",
-        "The **pathognomonic primary lesion is the burrow**: a 3 to 10 mm greyish, serpiginous or S-shaped thread-like ridge with a minute vesicle or black dot (the mite) at one end, best seen on the finger webs, the sides of the fingers, the flexor wrists and the ulnar border of the hand.",
-        "**Sites of predilection** - finger webs, flexor wrists, elbows, anterior axillary folds, periumbilical skin and waist, buttocks, areolae in women, and the penis and scrotum in men; **itchy papules or nodules on the glans, shaft and scrotum are almost diagnostic of scabies in an adult male**.",
-        "**The head and neck are spared in adults but involved in infants and in the elderly**; in infants under two years the palms, soles, scalp and face are typically affected with vesicles, pustules and nodules, and secondary eczematisation is common.",
-        "Secondary lesions dominate what you actually see: **excoriations proving the itch, honey-coloured crusts of secondary impetigo, eczematisation and post-inflammatory hyperpigmentation**; lichenification appears where the patient has scratched for months.",
-        "**Nodular scabies** presents as firm, reddish-brown, intensely itchy 5 to 10 mm nodules on the scrotum, penis, groins and axillae that are a persistent hypersensitivity granuloma and may **persist for weeks to months after the mite is dead**, needing intralesional or potent topical steroid rather than more scabicide.",
-      ],
-    },
-    {
-      heading: "Variants that change the management",
-      points: [
-        "**Crusted (Norwegian) scabies** occurs in HIV infection, human T-lymphotropic virus 1 infection, lepromatous leprosy, malnutrition, Down syndrome, dementia, paralysis and long-term topical or systemic steroid use, and carries **thousands to millions of mites**.",
-        "It presents as **thick, warty, fissured hyperkeratotic crusts on the hands, feet, elbows, scalp and under the nails, with gross nail dystrophy and subungual debris, and characteristically little or no itch**; it is highly contagious and is the usual index case behind an institutional outbreak.",
-        "Crusted scabies needs **combined therapy - a keratolytic such as 5 per cent salicylic acid ointment, topical permethrin daily then twice weekly, plus oral ivermectin 200 microgram per kilogram on days 1, 2, 8, 9 and 15, extended to days 22 and 29 in severe disease** - and barrier nursing with gowns and gloves.",
-        "**Scabies incognito** results from topical or systemic steroids that suppress the inflammatory response: the eruption becomes atypical and widespread, burrows are hard to find, and the itch is disproportionate to a bland-looking rash - a common trap in Indian practice where potent steroid combination creams are sold over the counter.",
-        "**Bullous scabies** in the elderly mimics bullous pemphigoid, and **scabies in the very clean patient** may show only a handful of papules on the wrists; both are diagnosed by taking the household history seriously.",
-        "**Secondary bacterial infection** with Staphylococcus aureus or Streptococcus pyogenes produces impetigo, ecthyma, folliculitis or cellulitis and must be treated with oral cloxacillin or amoxicillin-clavulanate before or alongside the scabicide.",
-      ],
-    },
-    {
-      heading: "Diagnosis, differential diagnosis and bedside tests",
-      points: [
-        "Scabies is a **clinical diagnosis** made on the triad of nocturnal itch, typical distribution and an affected household contact; the 2020 International Alliance for the Control of Scabies (IACS) criteria grade the diagnosis as confirmed (mite, egg or faecal pellet seen), clinical (burrows, typical genital or infant lesions) or suspected.",
-        "**Skin scraping**: place a drop of mineral oil or 10 per cent potassium hydroxide on an unexcoriated burrow or papule, scrape with a number 15 blade held tangentially until pinpoint bleeding, and look under low power for **mites, oval eggs or brown faecal pellets (scybala)**.",
-        "**Burrow ink test**: rub fountain-pen ink over a suspected burrow and wipe with alcohol - retained ink outlines a zig-zag track; **dermoscopy** shows the dark triangular head and mouthparts of the mite at the end of the burrow, the **delta-wing jet or hang-glider sign**.",
-        "**Differential diagnosis** - papular urticaria from insect bites (grouped on exposed limbs, seropapules, no burrows, no genital lesions), atopic dermatitis (flexural, personal or family atopy, no household clustering), pediculosis corporis (lesions along seam-contact areas of the trunk, lice in clothing seams), contact dermatitis, dermatitis herpetiformis and papular eruption of HIV.",
-        "**Post-scabetic itch** persists for two to four weeks after successful treatment because the antigen remains in the stratum corneum; treat it with emollients, a mild to moderate topical steroid and an oral antihistamine, and **do not repeat the scabicide**, because repeated application itself causes an irritant dermatitis that mimics failure.",
-        "Suspect **true treatment failure** if new burrows or new papules appear more than two weeks after treatment, and then ask about the three real causes - untreated contacts, incorrect application technique, and failure to decontaminate clothing and bedding.",
-      ],
-    },
-    {
-      heading: "Treatment of the patient and of the whole household",
-      points: [
-        "**Permethrin 5 per cent cream is first line at all ages above two months and in pregnancy and lactation**: apply to the whole body from the neck down (including the face and scalp in infants, the elderly and the immunosuppressed), leave for **8 to 14 hours (overnight)**, wash off, and **repeat once after 7 days** to kill mites hatching from eggs that survive the first application.",
-        "Application technique earns the mark: **apply after a bath to cool dry skin, cover every fold - behind the ears, umbilicus, natal cleft, genitalia, under the breasts and under the finger and toe nails after cutting them short - and reapply to the hands after every hand wash**; an adult needs about 30 grams per application.",
-        "**Oral ivermectin 200 microgram per kilogram as a single dose repeated after 7 to 14 days** is preferred for institutional outbreaks, crusted scabies, treatment failures and where topical application cannot be supervised; it is **not recommended in children under 15 kilograms or under 5 years, and is avoided in pregnancy and lactation**. Take it with food to improve absorption.",
-        "Alternatives - **benzyl benzoate 25 per cent lotion** (dilute to 12.5 per cent for children and 6.25 per cent for infants) applied on three consecutive nights, cheap and effective but stinging and irritant; **sulphur 5 to 10 per cent in petrolatum** for three consecutive nights, malodorous and staining but the safest option in infants under two months and in pregnancy; **crotamiton 10 per cent**, which is antipruritic but least effective; **lindane is no longer recommended** because of neurotoxicity.",
-        "**Treat every household member and every intimate or close physical contact of the last six weeks on the same day, whether or not they itch**, because contacts are in the asymptomatic incubation period and will otherwise re-infest the index case - this single sentence is the most examined point in the topic.",
-        "**Decontamination**: machine wash clothes, towels and bed linen used in the last three days in hot water above 60 degrees Celsius and dry in the sun or a hot dryer, or iron them; items that cannot be washed should be **sealed in a plastic bag for 72 hours to seven days**, since the mite dies within 2 to 3 days away from human skin. Fumigation of the house is unnecessary.",
-        "Also treat the complications: **oral antihistamine (hydroxyzine 25 mg at night or cetirizine 10 mg) for itch, emollients, and oral antibiotics for pyoderma**; screen the child for haematuria three weeks later if streptococcal impetigo was present, and check for other sexually transmitted infections when scabies is acquired sexually.",
-      ],
-    },
-    {
-      heading: "Pediculosis: head, body and pubic lice",
-      points: [
-        "**Pediculosis capitis** is caused by Pediculus humanus capitis, spreads by head-to-head contact and shared combs in schoolgirls, and presents with occipital and retroauricular itch, excoriation, occipital lymphadenopathy and secondary impetigo; the diagnosis is confirmed by **finding a live louse, since nits (egg cases) firmly cemented to the hair shaft may persist long after cure**.",
-        "Treat head lice with **permethrin 1 per cent cream rinse applied to damp hair for 10 minutes, or 5 per cent for 8 hours, repeated after 7 days**, or **malathion 0.5 per cent lotion for 8 to 12 hours**; add **wet combing with a fine-toothed nit comb and conditioner every 3 to 4 days for two weeks**, and treat affected household members. Oral ivermectin 200 microgram per kilogram on days 1 and 8 is used for resistant cases.",
-        "**Pediculosis corporis** is a disease of poverty and homelessness: the louse **lives and lays eggs in the seams of clothing, not on the body**, and produces itchy excoriated papules and, over years, the pigmented lichenified back of **vagabond's disease**; treatment is **hot washing, ironing or discarding the clothing plus personal hygiene**, with permethrin to the body only if lice are found on skin.",
-        "The body louse is a **vector of epidemic typhus (Rickettsia prowazekii), trench fever (Bartonella quintana) and relapsing fever (Borrelia recurrentis)** - the head louse and pubic louse transmit no disease, and this contrast is a standard viva question.",
-        "**Pediculosis pubis** is caused by Pthirus pubis, is sexually transmitted, causes itching in the pubic area with **bluish-grey macules (maculae ceruleae)** and rust-coloured specks of louse faeces on the underclothes; treat with permethrin 1 per cent or 5 per cent, treat sexual partners of the last month, and **screen for other sexually transmitted infections including HIV, syphilis and gonorrhoea**.",
-        "**Phthiriasis palpebrarum** (pubic lice on the eyelashes in a child) raises the question of sexual abuse and is treated with **thick petrolatum to the lid margins twice daily for 8 to 10 days plus mechanical removal**, never with a neurotoxic pediculicide near the eye.",
-      ],
-    },
-  ],
-  tables: [
-    {
-      heading: "Scabicides: dose, contact time and safety",
-      columns: ["Drug", "Strength and route", "Contact time and repeat", "Safe in", "Cautions"],
-      rows: [
-        ["Permethrin", "5 per cent cream, topical", "8 to 14 hours overnight, repeat day 7", "Above 2 months, pregnancy, lactation", "Costliest topical; mild burning"],
-        ["Ivermectin", "200 microgram/kg oral", "Single dose, repeat day 7 to 14", "Adults, children above 15 kg", "Avoid under 5 years, pregnancy, lactation"],
-        ["Benzyl benzoate", "25 per cent lotion (dilute for children)", "3 consecutive nights", "Adults, older children", "Stings on excoriated skin, irritant dermatitis"],
-        ["Sulphur", "5 to 10 per cent in petrolatum", "3 consecutive nights", "Infants under 2 months, pregnancy", "Malodorous, stains clothes"],
-        ["Crotamiton", "10 per cent cream or lotion", "2 to 5 consecutive nights", "Children, antipruritic", "Least effective as a scabicide"],
-        ["Lindane", "1 per cent lotion", "8 hours, single application", "Not recommended", "Neurotoxicity, seizures, aplastic anaemia"],
-      ],
-    },
-    {
-      heading: "The three pediculoses compared",
-      columns: ["Feature", "Pediculosis capitis", "Pediculosis corporis", "Pediculosis pubis"],
-      rows: [
-        ["Organism", "Pediculus humanus capitis", "Pediculus humanus corporis", "Pthirus pubis (crab louse)"],
-        ["Where the louse lives", "Scalp hair, close to the skin", "Seams of clothing", "Pubic, axillary, beard hair, eyelashes"],
-        ["Typical patient", "School child, girls more than boys", "Homeless, destitute, unwashed clothing", "Sexually active adult"],
-        ["Key sign", "Nits cemented to hair, occipital nodes", "Excoriated back, vagabond pigmentation", "Maculae ceruleae, rusty specks on underwear"],
-        ["Vector of disease", "No", "Epidemic typhus, trench fever, relapsing fever", "No"],
-        ["Treatment", "Permethrin 1 per cent plus wet combing, repeat day 7", "Wash, iron or discard clothing; hygiene", "Permethrin plus partner treatment and STI screen"],
-      ],
-    },
-  ],
-  redFlags: [
-    "Thick hyperkeratotic crusts with nail dystrophy and little itch - crusted scabies; isolate, investigate for HIV or other immunosuppression, and start combined ivermectin and topical therapy.",
-    "Fever, spreading erythema, tenderness or lymphangitis over excoriated scabies - cellulitis needing systemic antibiotics the same day.",
-    "Puffy eyelids, smoky urine or hypertension two to three weeks after impetiginised scabies in a child - acute post-streptococcal glomerulonephritis; check urine and blood pressure.",
-    "An institutional or hostel outbreak, or a bedridden patient in a nursing home - mass treatment of all residents and staff on a single day is required, not case-by-case treatment.",
-    "Scabies in an infant with failure to thrive, or widespread atypical scabies in an adult - test for HIV and for underlying immunosuppression.",
-    "Pubic lice on the eyelashes of a prepubertal child - evaluate for sexual abuse under the POCSO framework.",
-  ],
-  pearls: [
-    "The mark-carrying sentence is: treat all household and close contacts simultaneously on the same day, whether or not they itch, and decontaminate clothes and bedding.",
-    "Itch that wakes the patient at night plus another itching person in the house is scabies until proved otherwise, even without a visible burrow.",
-    "Itchy papules or nodules on the scrotum or penis in a man, and on the areolae in a woman, are close to diagnostic of scabies.",
-    "Adults are spared above the neck, infants are not - always treat the scalp and face in a baby under two years.",
-    "Post-scabetic itch lasts two to four weeks and is treated with emollients, a mild steroid and an antihistamine, not with more scabicide.",
-    "Permethrin needs a second application on day 7 because it is not fully ovicidal; a single application is the commonest reason for apparent treatment failure.",
-    "Nits alone do not mean active head lice - look for a live, moving louse before re-treating.",
-    "Crusted scabies is not itchy, and the patient who does not itch is the one who infests the whole ward.",
-  ],
-  theory: [
-    {
-      id: "dermatology-scabies-pediculosis-t1",
-      paper: "III",
-      kind: "long",
-      marks: 10,
-      minutes: 20,
-      frequency: "core",
-      question:
-        "A 24-year-old man presents with intense itching worse at night for three weeks. His wife and two children are also itching. Describe the clinical features, diagnosis and complete management of this condition including the household.",
-      openingLines: [
-        "This is scabies, an infestation of the stratum corneum by the mite Sarcoptes scabiei var. hominis, transmitted by prolonged skin-to-skin contact, and presenting with nocturnal pruritus, burrows and papules in a characteristic distribution with clustering of cases in a household.",
-        "The itch is a delayed type IV hypersensitivity response to mite antigen, appearing four to six weeks after a first infestation and within one to four days on re-infestation, which is why asymptomatic contacts must also be treated.",
-      ],
-      answer: [
-        {
-          heading: "1. Clinical features",
-          points: [
-            "Symptom: generalised itching that is characteristically worse at night and on warming in bed, disturbing sleep, with a history of similar itching in family members or bed partners.",
-            "Primary lesions: the burrow - a 3 to 10 mm greyish serpiginous ridge with a vesicle or black dot at one end - along with 1 to 3 mm erythematous papules and papulovesicles.",
-            "Distribution: finger webs, sides of fingers, flexor wrists, elbows, anterior axillary folds, periumbilical area and waist, buttocks, areolae in women, penis and scrotum in men; head and neck spared in adults but involved in infants.",
-            "Secondary lesions: excoriations, eczematisation, honey-coloured crusts of impetigo, lichenification and post-inflammatory hyperpigmentation.",
-            "Variants: nodular scabies on the genitalia, crusted (Norwegian) scabies in the immunosuppressed, scabies incognito after topical steroid use, and bullous scabies in the elderly.",
-          ],
-        },
-        {
-          heading: "2. Diagnosis",
-          points: [
-            "Clinical, using the IACS 2020 criteria: confirmed when a mite, egg or faecal pellet is demonstrated; clinical when burrows or typical genital or infant lesions are present; suspected on typical distribution with a contact history.",
-            "Skin scraping in mineral oil or 10 per cent KOH from an unexcoriated burrow, showing mites, eggs or scybala.",
-            "Burrow ink test and dermoscopy showing the delta-wing jet sign of the mite head at the end of a burrow.",
-            "Differential diagnosis: papular urticaria, atopic dermatitis, pediculosis corporis, contact dermatitis, dermatitis herpetiformis and papular pruritic eruption of HIV.",
-          ],
-        },
-        {
-          heading: "3. Treatment of the patient",
-          points: [
-            "Permethrin 5 per cent cream to the whole body from the neck down after a bath, left for 8 to 14 hours overnight, washed off, and repeated once after 7 days; about 30 g per adult application, reapplied to the hands after washing.",
-            "Alternatives: oral ivermectin 200 microgram per kilogram on day 1 and repeated day 7 to 14; benzyl benzoate 25 per cent on three consecutive nights; sulphur 5 to 10 per cent ointment for infants under two months and in pregnancy.",
-            "Symptomatic treatment: emollients, oral antihistamine such as hydroxyzine 25 mg at night, and a moderate topical corticosteroid for eczematisation and for post-scabetic itch.",
-            "Secondary pyoderma: oral cloxacillin 500 mg six hourly or amoxicillin-clavulanate for five to seven days; screen for haematuria and hypertension three weeks later.",
-          ],
-        },
-        {
-          heading: "4. Treatment of the household and environment",
-          points: [
-            "All household members, bed partners and close physical contacts of the previous six weeks are treated on the same day, whether or not they are symptomatic.",
-            "Clothes, towels and bed linen of the last three days are washed at above 60 degrees Celsius and sun dried or ironed; non-washable items are sealed in a plastic bag for 72 hours to one week.",
-            "The mite survives only 2 to 3 days off the host, so fumigation and disinfection of the house are unnecessary.",
-            "Counsel that itching may persist two to four weeks after cure and does not mean failure; review at two weeks and treat again only if new burrows or new papules have appeared.",
-          ],
-        },
-        {
-          heading: "5. Public health note",
-          points: [
-            "Scabies is a WHO neglected tropical disease; mass drug administration with ivermectin is used in high-prevalence communities and institutional outbreaks.",
-            "Control of scabies reduces streptococcal pyoderma and hence acute post-streptococcal glomerulonephritis and acute rheumatic fever in children.",
-          ],
-        },
-      ],
-      mustDraw: [
-        "A figure of the body showing the sites of predilection of scabies in an adult and in an infant.",
-        "A table of scabicides with strength, contact time, repeat schedule and safety in pregnancy and infancy.",
-      ],
-      markSplit: [
-        { part: "Clinical features and variants", marks: 3 },
-        { part: "Diagnosis and differential diagnosis", marks: 2 },
-        { part: "Treatment of the patient", marks: 3 },
-        { part: "Household treatment and decontamination", marks: 2 },
-      ],
-      keywords: ["scabies", "permethrin", "ivermectin", "burrow", "household contacts", "nocturnal itch"],
-    },
-    {
-      id: "dermatology-scabies-pediculosis-t2",
-      paper: "III",
-      kind: "short-note",
-      marks: 5,
-      minutes: 10,
-      frequency: "common",
-      question: "Write short notes on crusted (Norwegian) scabies.",
-      openingLines: [
-        "Crusted or Norwegian scabies is a hyperinfestation with Sarcoptes scabiei carrying thousands to millions of mites, occurring in immunosuppressed, neurologically impaired or malnourished hosts who cannot mount an effective scratch or immune response.",
-        "It is extremely contagious and is typically the index case behind an outbreak in a family, hospital ward or old age home.",
-      ],
-      answer: [
-        {
-          heading: "Predisposing factors",
-          points: [
-            "HIV infection, HTLV-1 infection, lymphoma and organ transplantation.",
-            "Lepromatous leprosy, Down syndrome, dementia, paralysis, spinal cord injury and severe malnutrition.",
-            "Prolonged topical or systemic corticosteroid use, including over-the-counter steroid combination creams.",
-          ],
-        },
-        {
-          heading: "Clinical features",
-          points: [
-            "Thick, warty, fissured hyperkeratotic crusts on hands, feet, elbows, knees, scalp and ears, with generalised scaling that may progress to erythroderma.",
-            "Gross nail thickening with subungual hyperkeratotic debris that harbours mites.",
-            "Itch is mild or absent, which delays diagnosis; a foul smell and secondary bacterial infection are common.",
-            "Complications: sepsis from Staphylococcus aureus or Streptococcus pyogenes bacteraemia, which is the main cause of death.",
-          ],
-        },
-        {
-          heading: "Diagnosis and treatment",
-          points: [
-            "Scraping of crust shows innumerable mites and eggs; skin biopsy shows mites in a thickened hyperkeratotic stratum corneum.",
-            "Combined therapy: oral ivermectin 200 microgram per kilogram on days 1, 2, 8, 9 and 15, extended to days 22 and 29 in severe cases.",
-            "Topical permethrin 5 per cent daily for seven days then twice weekly until cure, with 5 per cent salicylic acid or urea ointment as a keratolytic to allow penetration.",
-            "Barrier nursing with gloves and gowns, isolation, decontamination of linen, and simultaneous treatment of all contacts and health care staff.",
-            "Investigate for the underlying immunosuppression, particularly HIV testing.",
-          ],
-        },
-      ],
-      markSplit: [
-        { part: "Definition and predisposing factors", marks: 1 },
-        { part: "Clinical features and complications", marks: 2 },
-        { part: "Diagnosis and combined treatment", marks: 2 },
-      ],
-      keywords: ["crusted scabies", "Norwegian scabies", "ivermectin", "keratolytic", "HIV", "outbreak"],
-    },
-  ],
-  mcqs: [
-    {
-      id: "dermatology-scabies-pediculosis-q1",
-      stem: "A 30-year-old man is treated for scabies with a single overnight application of permethrin 5 per cent cream. Three weeks later he returns with fresh burrows in the finger webs. His wife, who also itches, was never treated. What is the single most important reason for the failure?",
-      options: [
-        "Permethrin resistance in the local mite population",
-        "Untreated household contacts together with omission of the day 7 repeat application",
-        "Inadequate contact time of the cream on the skin",
-        "Persistence of mite antigen causing post-scabetic itch",
-        "Development of crusted scabies",
-      ],
-      answer: 1,
-      explanation:
-        "New burrows three weeks later mean live mites, and the two commonest causes are an untreated contact who re-infests the patient and the missed second application on day 7, since permethrin is not reliably ovicidal. Permethrin resistance is documented but rare and should never be the first explanation when a contact is admittedly untreated. Inadequate contact time is possible but he did leave it overnight, which is within the 8 to 14 hour range. Post-scabetic itch is itch without new lesions, so fresh burrows exclude it. Crusted scabies presents with thick hyperkeratotic crusts and little itch, not a few new burrows.",
-      difficulty: "easy",
-    },
-    {
-      id: "dermatology-scabies-pediculosis-q2",
-      stem: "A 6-week-old exclusively breastfed infant has itchy vesicles and pustules on the palms, soles and scalp; the mother has itchy papules on her wrists and areolae. Which treatment is most appropriate for the infant?",
-      options: [
-        "Oral ivermectin 200 microgram per kilogram single dose",
-        "Lindane 1 per cent lotion for 8 hours",
-        "Sulphur 5 per cent in petrolatum on three consecutive nights",
-        "Benzyl benzoate 25 per cent lotion on three consecutive nights",
-        "Crotamiton 10 per cent cream for two nights only",
-      ],
-      answer: 2,
-      explanation:
-        "Below two months of age permethrin is not licensed and sulphur 5 to 10 per cent in petrolatum applied for three consecutive nights is the accepted safe scabicide, covering the scalp and face as well since infants are affected above the neck. Oral ivermectin is contraindicated under 15 kilograms and under five years. Lindane is neurotoxic and is no longer recommended at any age, least of all in a neonate with a high surface-area-to-weight ratio. Benzyl benzoate 25 per cent is far too irritant for a six-week-old and would need dilution to 6.25 per cent at best. Crotamiton is antipruritic but is the least effective scabicide and would not clear the infestation.",
-      difficulty: "moderate",
-    },
-    {
-      id: "dermatology-scabies-pediculosis-q3",
-      stem: "A 55-year-old bedridden man from an old age home has thick warty crusts on the hands, feet and elbows with dystrophic nails and generalised scaling, but complains of almost no itching. Four staff members have developed itchy papules. What is the diagnosis and the correct treatment?",
-      options: [
-        "Psoriasis vulgaris - potent topical steroid under occlusion",
-        "Crusted scabies - oral ivermectin on days 1, 2, 8, 9 and 15 plus topical permethrin and a keratolytic",
-        "Ordinary scabies - a single application of permethrin 5 per cent",
-        "Chronic eczema - emollients and a moderate topical steroid",
-        "Palmoplantar keratoderma - urea 20 per cent ointment",
-      ],
-      answer: 1,
-      explanation:
-        "Hyperkeratotic crusts with nail dystrophy, minimal itch and an outbreak among carers is crusted scabies, which carries an enormous mite burden and needs multiple doses of oral ivermectin combined with repeated topical permethrin and a keratolytic to let the scabicide penetrate the crust. Psoriasis would show silvery scale, Auspitz sign and typical extensor plaques, and treating this patient with a potent steroid would worsen the infestation. A single permethrin application is grossly inadequate for a mite load of thousands. Eczema and keratoderma do not cause an outbreak of itching among staff, which is the clue that this is an infestation.",
-      difficulty: "moderate",
-    },
-    {
-      id: "dermatology-scabies-pediculosis-q4",
-      stem: "A 32-year-old destitute man has intensely itchy excoriated papules and lichenified hyperpigmented skin over the back and shoulders. No lesions are seen in the finger webs or genitalia. Examination of his shirt shows lice and eggs in the seams. Which complication is he specifically at risk of?",
-      options: [
-        "Acute post-streptococcal glomerulonephritis",
-        "Epidemic typhus and trench fever",
-        "Acquired immunodeficiency from lymphatic spread",
-        "Bartonella henselae cat scratch disease",
-        "Chagas disease",
-      ],
-      answer: 1,
-      explanation:
-        "Lice living in clothing seams is pediculosis corporis, and Pediculus humanus corporis is the vector of epidemic typhus caused by Rickettsia prowazekii, trench fever caused by Bartonella quintana and louse-borne relapsing fever caused by Borrelia recurrentis. Post-streptococcal glomerulonephritis follows streptococcal pyoderma, which is a complication of scabies and impetigo rather than a vector-borne consequence of body lice. Lice do not cause immunodeficiency. Cat scratch disease is Bartonella henselae transmitted by cats and their fleas, not by lice. Chagas disease is transmitted by the reduviid bug in Latin America.",
-      difficulty: "moderate",
-    },
-    {
-      id: "dermatology-scabies-pediculosis-q5",
-      stem: "A 28-year-old woman treated correctly for scabies with permethrin on day 0 and day 7 returns on day 18 with continued itching. Examination shows healing excoriations and post-inflammatory hyperpigmentation but no burrows and no new papules. Her family was treated. What is the correct action?",
-      options: [
-        "Repeat permethrin for a third application",
-        "Give oral ivermectin as she has failed topical therapy",
-        "Reassure and treat with emollients, a moderate topical steroid and an oral antihistamine",
-        "Take a skin biopsy to look for mites",
-        "Start oral prednisolone 30 mg daily for two weeks",
-      ],
-      answer: 2,
-      explanation:
-        "Itch without new burrows or new papules two to four weeks after adequate treatment is post-scabetic itch, a hypersensitivity response to retained mite antigen in the stratum corneum, and it is managed with emollients, a moderate topical corticosteroid and an antihistamine. A third application of permethrin adds irritant dermatitis that perpetuates the itch and is the classic wrong answer. Ivermectin is reserved for genuine failure, which requires objective new lesions. A biopsy is unnecessary when the clinical picture is clear and no active lesions exist. Systemic steroids are disproportionate and risk converting a residual infestation into crusted scabies.",
-      difficulty: "easy",
-    },
-  ],
-  cards: [
-    {
-      id: "dermatology-scabies-pediculosis-c1",
-      front: "Incubation period of scabies and why it matters.",
-      back: "Four to six weeks in a first infestation (one to four days on re-infestation) because the itch is a type IV hypersensitivity reaction - so asymptomatic contacts are already infested and must be treated.",
-    },
-    {
-      id: "dermatology-scabies-pediculosis-c2",
-      front: "Pathognomonic lesion of scabies and where to look for it.",
-      back: "The burrow - a 3 to 10 mm greyish serpiginous ridge with a vesicle or black dot at one end, on the finger webs, sides of fingers, flexor wrists and ulnar border of the hand.",
-    },
-    {
-      id: "dermatology-scabies-pediculosis-c3",
-      front: "Permethrin regimen for scabies.",
-      back: "5 per cent cream to the whole body neck down (whole body in infants), leave 8 to 14 hours overnight, wash off, repeat on day 7; about 30 g per adult application, reapply to hands after washing.",
-    },
-    {
-      id: "dermatology-scabies-pediculosis-c4",
-      front: "Ivermectin dose and contraindications in scabies.",
-      back: "200 microgram per kilogram orally with food, repeated day 7 to 14; avoid under 15 kg or 5 years, and in pregnancy and lactation.",
-    },
-    {
-      id: "dermatology-scabies-pediculosis-c5",
-      front: "Scabicide of choice under two months of age and in pregnancy.",
-      back: "Sulphur 5 to 10 per cent in petrolatum for three consecutive nights (permethrin 5 per cent is also accepted in pregnancy and above two months).",
-    },
-    {
-      id: "dermatology-scabies-pediculosis-c6",
-      front: "Environmental decontamination in scabies.",
-      back: "Wash linen and clothes of the last 3 days above 60 degrees Celsius, sun dry or iron; seal non-washables in a bag for 72 hours to a week. The mite dies in 2 to 3 days off the host, so fumigation is not needed.",
-    },
-    {
-      id: "dermatology-scabies-pediculosis-c7",
-      front: "Post-scabetic itch versus treatment failure.",
-      back: "Post-scabetic itch: itching for 2 to 4 weeks with no new burrows or papules - treat with emollients, mild steroid and antihistamine. Failure: new burrows or papules after 2 weeks - re-treat and find the untreated contact.",
-    },
-    {
-      id: "dermatology-scabies-pediculosis-c8",
-      front: "Which louse transmits systemic disease, and which diseases?",
-      back: "Only the body louse (Pediculus humanus corporis) - epidemic typhus (Rickettsia prowazekii), trench fever (Bartonella quintana) and relapsing fever (Borrelia recurrentis).",
-    },
-    {
-      id: "dermatology-scabies-pediculosis-c9",
-      front: "Treatment of pediculosis corporis.",
-      back: "Treat the clothing, not the skin - hot wash, iron or discard clothing and improve hygiene; permethrin to the body only if lice are found on the skin.",
-    },
-    {
-      id: "dermatology-scabies-pediculosis-c10",
-      front: "Maculae ceruleae - what and where?",
-      back: "Bluish-grey macules at the site of pubic louse bites on the lower abdomen, thighs and buttocks in pediculosis pubis.",
-    },
-  ],
-  references: [
-    "IADVL Textbook of Dermatology, 5th edition, 2022 - scabies and other infestations",
-    "International Alliance for the Control of Scabies (IACS) 2020 Consensus Criteria for the Diagnosis of Scabies",
-    "WHO Informal Consultation on a Framework for Scabies Control, 2019, and WHO NTD Road Map 2021-2030",
-    "British Association of Dermatologists guideline on the management of scabies, 2024",
-    "Centers for Disease Control and Prevention, Parasites - Scabies and Lice, 2024 update",
-    "Neena Khanna, Illustrated Synopsis of Dermatology and Sexually Transmitted Diseases, 6th edition, 2020",
-  ],
-});
-
-topics.push({
-  id: "dermatology-scabies-pediculosis",
-  title: "Scabies and pediculosis, including treatment of the whole household",
-  oneLiner:
-    "Scabies is an intensely pruritic infestation by the mite Sarcoptes scabiei var. hominis in which nocturnal itch, burrows and papules in the finger webs, wrists, axillae, waist and genitalia, and a history of itching in other members of the household, make the diagnosis clinically, and the cure depends entirely on treating every contact simultaneously with topical permethrin 5 per cent or oral ivermectin plus decontamination of clothes and bedding.",
-  frequency: "core",
-  keywords: [
-    "scabies",
-    "Sarcoptes scabiei",
-    "burrow",
-    "nocturnal pruritus",
-    "permethrin",
-    "ivermectin",
-    "benzyl benzoate",
-    "crusted scabies",
-    "Norwegian scabies",
-    "pediculosis capitis",
-    "pediculosis corporis",
-    "pthirus pubis",
-    "nits",
-    "malathion",
-    "post-scabetic itch",
-    "dermoscopy delta sign",
-    "impetigo",
-    "household contacts",
-  ],
-  sections: [
-    {
-      heading: "The organism, the transmission and why the whole family matters",
-      points: [
-        "Scabies is caused by **Sarcoptes scabiei var. hominis**, an obligate human mite; the fertilised female burrows into the stratum corneum at about 2 mm a day and lays two to three eggs daily for a life of four to six weeks, and an ordinary patient carries only **10 to 15 adult mites** on the whole body.",
-        "Transmission needs **prolonged skin-to-skin contact of 15 to 20 minutes**, which is why it runs through households, hostels, orphanages, prisons and shared beds rather than through casual handshakes; fomite transmission through shared clothes and bedding is real but secondary, except in crusted scabies where it is the dominant route.",
-        "The itch is a **type IV delayed hypersensitivity reaction to mite antigen, faeces and eggs**, so a first infestation stays silent for **four to six weeks** before itching begins, while a re-infestation itches within one to four days - this incubation period is the reason asymptomatic contacts must still be treated.",
-        "In Indian general practice scabies clusters in the rainy and winter months, in overcrowded housing and where water for washing is short; the classical exam history is **itching worse at night that disturbs sleep, with at least one other person in the house itching**.",
-        "Scabies is a **WHO-recognised neglected tropical disease** since 2017, with an estimated 200 million people affected at any time, and in India it is one of the commonest reasons for a skin consultation in primary care.",
-        "Untreated scabies in children is a major driver of **streptococcal pyoderma and therefore of acute post-streptococcal glomerulonephritis and acute rheumatic fever**, which is why treating scabies is a public health act and not merely a comfort measure.",
-      ],
-    },
-    {
-      heading: "Clinical features and the lesion vocabulary to use",
-      points: [
-        "Describe the eruption in the fixed order - **number, site and distribution, size, shape, surface, margin, colour, arrangement and secondary change**; in scabies the answer is multiple, symmetrical, 1 to 3 mm erythematous **papules and papulovesicles with excoriations and crusting**, discrete but grouped, in a characteristic distribution below the neck.",
-        "The **pathognomonic primary lesion is the burrow**: a 3 to 10 mm greyish, serpiginous or S-shaped thread-like ridge with a minute vesicle or black dot (the mite) at one end, best seen on the finger webs, the sides of the fingers, the flexor wrists and the ulnar border of the hand.",
-        "**Sites of predilection** - finger webs, flexor wrists, elbows, anterior axillary folds, periumbilical skin and waist, buttocks, areolae in women, and the penis and scrotum in men; **itchy papules or nodules on the glans, shaft and scrotum are almost diagnostic of scabies in an adult male**.",
-        "**The head and neck are spared in adults but involved in infants and in the elderly**; in infants under two years the palms, soles, scalp and face are typically affected with vesicles, pustules and nodules, and secondary eczematisation is common.",
-        "Secondary lesions dominate what you actually see: **excoriations proving the itch, honey-coloured crusts of secondary impetigo, eczematisation and post-inflammatory hyperpigmentation**; lichenification appears where the patient has scratched for months.",
-        "**Nodular scabies** presents as firm, reddish-brown, intensely itchy 5 to 10 mm nodules on the scrotum, penis, groins and axillae that are a persistent hypersensitivity granuloma and may **persist for weeks to months after the mite is dead**, needing intralesional or potent topical steroid rather than more scabicide.",
-      ],
-    },
-    {
-      heading: "Variants that change the management",
-      points: [
-        "**Crusted (Norwegian) scabies** occurs in HIV infection, human T-lymphotropic virus 1 infection, lepromatous leprosy, malnutrition, Down syndrome, dementia, paralysis and long-term topical or systemic steroid use, and carries **thousands to millions of mites**.",
-        "It presents as **thick, warty, fissured hyperkeratotic crusts on the hands, feet, elbows, scalp and under the nails, with gross nail dystrophy and subungual debris, and characteristically little or no itch**; it is highly contagious and is the usual index case behind an institutional outbreak.",
-        "Crusted scabies needs **combined therapy - a keratolytic such as 5 per cent salicylic acid ointment, topical permethrin daily then twice weekly, plus oral ivermectin 200 microgram per kilogram on days 1, 2, 8, 9 and 15, extended to days 22 and 29 in severe disease** - and barrier nursing with gowns and gloves.",
-        "**Scabies incognito** results from topical or systemic steroids that suppress the inflammatory response: the eruption becomes atypical and widespread, burrows are hard to find, and the itch is disproportionate to a bland-looking rash - a common trap in Indian practice where potent steroid combination creams are sold over the counter.",
-        "**Bullous scabies** in the elderly mimics bullous pemphigoid, and **scabies in the very clean patient** may show only a handful of papules on the wrists; both are diagnosed by taking the household history seriously.",
-        "**Secondary bacterial infection** with Staphylococcus aureus or Streptococcus pyogenes produces impetigo, ecthyma, folliculitis or cellulitis and must be treated with oral cloxacillin or amoxicillin-clavulanate before or alongside the scabicide.",
-      ],
-    },
-    {
-      heading: "Diagnosis, differential diagnosis and bedside tests",
-      points: [
-        "Scabies is a **clinical diagnosis** made on the triad of nocturnal itch, typical distribution and an affected household contact; the 2020 International Alliance for the Control of Scabies (IACS) criteria grade the diagnosis as confirmed (mite, egg or faecal pellet seen), clinical (burrows, typical genital or infant lesions) or suspected.",
-        "**Skin scraping**: place a drop of mineral oil or 10 per cent potassium hydroxide on an unexcoriated burrow or papule, scrape with a number 15 blade held tangentially until pinpoint bleeding, and look under low power for **mites, oval eggs or brown faecal pellets (scybala)**.",
-        "**Burrow ink test**: rub fountain-pen ink over a suspected burrow and wipe with alcohol - retained ink outlines a zig-zag track; **dermoscopy** shows the dark triangular head and mouthparts of the mite at the end of the burrow, the **delta-wing jet or hang-glider sign**.",
-        "**Differential diagnosis** - papular urticaria from insect bites (grouped on exposed limbs, seropapules, no burrows, no genital lesions), atopic dermatitis (flexural, personal or family atopy, no household clustering), pediculosis corporis (lesions along seam-contact areas of the trunk, lice in clothing seams), contact dermatitis, dermatitis herpetiformis and papular eruption of HIV.",
-        "**Post-scabetic itch** persists for two to four weeks after successful treatment because the antigen remains in the stratum corneum; treat it with emollients, a mild to moderate topical steroid and an oral antihistamine, and **do not repeat the scabicide**, because repeated application itself causes an irritant dermatitis that mimics failure.",
-        "Suspect **true treatment failure** if new burrows or new papules appear more than two weeks after treatment, and then ask about the three real causes - untreated contacts, incorrect application technique, and failure to decontaminate clothing and bedding.",
-      ],
-    },
-    {
-      heading: "Treatment of the patient and of the whole household",
-      points: [
-        "**Permethrin 5 per cent cream is first line at all ages above two months and in pregnancy and lactation**: apply to the whole body from the neck down (including the face and scalp in infants, the elderly and the immunosuppressed), leave for **8 to 14 hours (overnight)**, wash off, and **repeat once after 7 days** to kill mites hatching from eggs that survive the first application.",
-        "Application technique earns the mark: **apply after a bath to cool dry skin, cover every fold - behind the ears, umbilicus, natal cleft, genitalia, under the breasts and under the finger and toe nails after cutting them short - and reapply to the hands after every hand wash**; an adult needs about 30 grams per application.",
-        "**Oral ivermectin 200 microgram per kilogram as a single dose repeated after 7 to 14 days** is preferred for institutional outbreaks, crusted scabies, treatment failures and where topical application cannot be supervised; it is **not recommended in children under 15 kilograms or under 5 years, and is avoided in pregnancy and lactation**. Take it with food to improve absorption.",
-        "Alternatives - **benzyl benzoate 25 per cent lotion** (dilute to 12.5 per cent for children and 6.25 per cent for infants) applied on three consecutive nights, cheap and effective but stinging and irritant; **sulphur 5 to 10 per cent in petrolatum** for three consecutive nights, malodorous and staining but the safest option in infants under two months and in pregnancy; **crotamiton 10 per cent**, which is antipruritic but least effective; **lindane is no longer recommended** because of neurotoxicity.",
-        "**Treat every household member and every intimate or close physical contact of the last six weeks on the same day, whether or not they itch**, because contacts are in the asymptomatic incubation period and will otherwise re-infest the index case - this single sentence is the most examined point in the topic.",
-        "**Decontamination**: machine wash clothes, towels and bed linen used in the last three days in hot water above 60 degrees Celsius and dry in the sun or a hot dryer, or iron them; items that cannot be washed should be **sealed in a plastic bag for 72 hours to seven days**, since the mite dies within 2 to 3 days away from human skin. Fumigation of the house is unnecessary.",
-        "Also treat the complications: **oral antihistamine (hydroxyzine 25 mg at night or cetirizine 10 mg) for itch, emollients, and oral antibiotics for pyoderma**; screen the child for haematuria three weeks later if streptococcal impetigo was present, and check for other sexually transmitted infections when scabies is acquired sexually.",
-      ],
-    },
-    {
-      heading: "Pediculosis: head, body and pubic lice",
-      points: [
-        "**Pediculosis capitis** is caused by Pediculus humanus capitis, spreads by head-to-head contact and shared combs in schoolgirls, and presents with occipital and retroauricular itch, excoriation, occipital lymphadenopathy and secondary impetigo; the diagnosis is confirmed by **finding a live louse, since nits (egg cases) firmly cemented to the hair shaft may persist long after cure**.",
-        "Treat head lice with **permethrin 1 per cent cream rinse applied to damp hair for 10 minutes, or 5 per cent for 8 hours, repeated after 7 days**, or **malathion 0.5 per cent lotion for 8 to 12 hours**; add **wet combing with a fine-toothed nit comb and conditioner every 3 to 4 days for two weeks**, and treat affected household members. Oral ivermectin 200 microgram per kilogram on days 1 and 8 is used for resistant cases.",
-        "**Pediculosis corporis** is a disease of poverty and homelessness: the louse **lives and lays eggs in the seams of clothing, not on the body**, and produces itchy excoriated papules and, over years, the pigmented lichenified back of **vagabond's disease**; treatment is **hot washing, ironing or discarding the clothing plus personal hygiene**, with permethrin to the body only if lice are found on skin.",
-        "The body louse is a **vector of epidemic typhus (Rickettsia prowazekii), trench fever (Bartonella quintana) and relapsing fever (Borrelia recurrentis)** - the head louse and pubic louse transmit no disease, and this contrast is a standard viva question.",
-        "**Pediculosis pubis** is caused by Pthirus pubis, is sexually transmitted, causes itching in the pubic area with **bluish-grey macules (maculae ceruleae)** and rust-coloured specks of louse faeces on the underclothes; treat with permethrin 1 per cent or 5 per cent, treat sexual partners of the last month, and **screen for other sexually transmitted infections including HIV, syphilis and gonorrhoea**.",
-        "**Phthiriasis palpebrarum** (pubic lice on the eyelashes in a child) raises the question of sexual abuse and is treated with **thick petrolatum to the lid margins twice daily for 8 to 10 days plus mechanical removal**, never with a neurotoxic pediculicide near the eye.",
-      ],
-    },
-  ],
-  tables: [
-    {
-      heading: "Scabicides: dose, contact time and safety",
-      columns: ["Drug", "Strength and route", "Contact time and repeat", "Safe in", "Cautions"],
-      rows: [
-        ["Permethrin", "5 per cent cream, topical", "8 to 14 hours overnight, repeat day 7", "Above 2 months, pregnancy, lactation", "Costliest topical; mild burning"],
-        ["Ivermectin", "200 microgram/kg oral", "Single dose, repeat day 7 to 14", "Adults, children above 15 kg", "Avoid under 5 years, pregnancy, lactation"],
-        ["Benzyl benzoate", "25 per cent lotion (dilute for children)", "3 consecutive nights", "Adults, older children", "Stings on excoriated skin, irritant dermatitis"],
-        ["Sulphur", "5 to 10 per cent in petrolatum", "3 consecutive nights", "Infants under 2 months, pregnancy", "Malodorous, stains clothes"],
-        ["Crotamiton", "10 per cent cream or lotion", "2 to 5 consecutive nights", "Children, antipruritic", "Least effective as a scabicide"],
-        ["Lindane", "1 per cent lotion", "8 hours, single application", "Not recommended", "Neurotoxicity, seizures, aplastic anaemia"],
-      ],
-    },
-    {
-      heading: "The three pediculoses compared",
-      columns: ["Feature", "Pediculosis capitis", "Pediculosis corporis", "Pediculosis pubis"],
-      rows: [
-        ["Organism", "Pediculus humanus capitis", "Pediculus humanus corporis", "Pthirus pubis (crab louse)"],
-        ["Where the louse lives", "Scalp hair, close to the skin", "Seams of clothing", "Pubic, axillary, beard hair, eyelashes"],
-        ["Typical patient", "School child, girls more than boys", "Homeless, destitute, unwashed clothing", "Sexually active adult"],
-        ["Key sign", "Nits cemented to hair, occipital nodes", "Excoriated back, vagabond pigmentation", "Maculae ceruleae, rusty specks on underwear"],
-        ["Vector of disease", "No", "Epidemic typhus, trench fever, relapsing fever", "No"],
-        ["Treatment", "Permethrin 1 per cent plus wet combing, repeat day 7", "Wash, iron or discard clothing; hygiene", "Permethrin plus partner treatment and STI screen"],
-      ],
-    },
-  ],
-  redFlags: [
-    "Thick hyperkeratotic crusts with nail dystrophy and little itch - crusted scabies; isolate, investigate for HIV or other immunosuppression, and start combined ivermectin and topical therapy.",
-    "Fever, spreading erythema, tenderness or lymphangitis over excoriated scabies - cellulitis needing systemic antibiotics the same day.",
-    "Puffy eyelids, smoky urine or hypertension two to three weeks after impetiginised scabies in a child - acute post-streptococcal glomerulonephritis; check urine and blood pressure.",
-    "An institutional or hostel outbreak, or a bedridden patient in a nursing home - mass treatment of all residents and staff on a single day is required, not case-by-case treatment.",
-    "Scabies in an infant with failure to thrive, or widespread atypical scabies in an adult - test for HIV and for underlying immunosuppression.",
-    "Pubic lice on the eyelashes of a prepubertal child - evaluate for sexual abuse under the POCSO framework.",
-  ],
-  pearls: [
-    "The mark-carrying sentence is: treat all household and close contacts simultaneously on the same day, whether or not they itch, and decontaminate clothes and bedding.",
-    "Itch that wakes the patient at night plus another itching person in the house is scabies until proved otherwise, even without a visible burrow.",
-    "Itchy papules or nodules on the scrotum or penis in a man, and on the areolae in a woman, are close to diagnostic of scabies.",
-    "Adults are spared above the neck, infants are not - always treat the scalp and face in a baby under two years.",
-    "Post-scabetic itch lasts two to four weeks and is treated with emollients, a mild steroid and an antihistamine, not with more scabicide.",
-    "Permethrin needs a second application on day 7 because it is not fully ovicidal; a single application is the commonest reason for apparent treatment failure.",
-    "Nits alone do not mean active head lice - look for a live, moving louse before re-treating.",
-    "Crusted scabies is not itchy, and the patient who does not itch is the one who infests the whole ward.",
-  ],
-  theory: [
-    {
-      id: "dermatology-scabies-pediculosis-t1",
-      paper: "III",
-      kind: "long",
-      marks: 10,
-      minutes: 20,
-      frequency: "core",
-      question:
-        "A 24-year-old man presents with intense itching worse at night for three weeks. His wife and two children are also itching. Describe the clinical features, diagnosis and complete management of this condition including the household.",
-      openingLines: [
-        "This is scabies, an infestation of the stratum corneum by the mite Sarcoptes scabiei var. hominis, transmitted by prolonged skin-to-skin contact, and presenting with nocturnal pruritus, burrows and papules in a characteristic distribution with clustering of cases in a household.",
-        "The itch is a delayed type IV hypersensitivity response to mite antigen, appearing four to six weeks after a first infestation and within one to four days on re-infestation, which is why asymptomatic contacts must also be treated.",
-      ],
-      answer: [
-        {
-          heading: "1. Clinical features",
-          points: [
-            "Symptom: generalised itching that is characteristically worse at night and on warming in bed, disturbing sleep, with a history of similar itching in family members or bed partners.",
-            "Primary lesions: the burrow - a 3 to 10 mm greyish serpiginous ridge with a vesicle or black dot at one end - along with 1 to 3 mm erythematous papules and papulovesicles.",
-            "Distribution: finger webs, sides of fingers, flexor wrists, elbows, anterior axillary folds, periumbilical area and waist, buttocks, areolae in women, penis and scrotum in men; head and neck spared in adults but involved in infants.",
-            "Secondary lesions: excoriations, eczematisation, honey-coloured crusts of impetigo, lichenification and post-inflammatory hyperpigmentation.",
-            "Variants: nodular scabies on the genitalia, crusted (Norwegian) scabies in the immunosuppressed, scabies incognito after topical steroid use, and bullous scabies in the elderly.",
-          ],
-        },
-        {
-          heading: "2. Diagnosis",
-          points: [
-            "Clinical, using the IACS 2020 criteria: confirmed when a mite, egg or faecal pellet is demonstrated; clinical when burrows or typical genital or infant lesions are present; suspected on typical distribution with a contact history.",
-            "Skin scraping in mineral oil or 10 per cent KOH from an unexcoriated burrow, showing mites, eggs or scybala.",
-            "Burrow ink test and dermoscopy showing the delta-wing jet sign of the mite head at the end of a burrow.",
-            "Differential diagnosis: papular urticaria, atopic dermatitis, pediculosis corporis, contact dermatitis, dermatitis herpetiformis and papular pruritic eruption of HIV.",
-          ],
-        },
-        {
-          heading: "3. Treatment of the patient",
-          points: [
-            "Permethrin 5 per cent cream to the whole body from the neck down after a bath, left for 8 to 14 hours overnight, washed off, and repeated once after 7 days; about 30 g per adult application, reapplied to the hands after washing.",
-            "Alternatives: oral ivermectin 200 microgram per kilogram on day 1 and repeated day 7 to 14; benzyl benzoate 25 per cent on three consecutive nights; sulphur 5 to 10 per cent ointment for infants under two months and in pregnancy.",
-            "Symptomatic treatment: emollients, oral antihistamine such as hydroxyzine 25 mg at night, and a moderate topical corticosteroid for eczematisation and for post-scabetic itch.",
-            "Secondary pyoderma: oral cloxacillin 500 mg six hourly or amoxicillin-clavulanate for five to seven days; screen for haematuria and hypertension three weeks later.",
-          ],
-        },
-        {
-          heading: "4. Treatment of the household and environment",
-          points: [
-            "All household members, bed partners and close physical contacts of the previous six weeks are treated on the same day, whether or not they are symptomatic.",
-            "Clothes, towels and bed linen of the last three days are washed at above 60 degrees Celsius and sun dried or ironed; non-washable items are sealed in a plastic bag for 72 hours to one week.",
-            "The mite survives only 2 to 3 days off the host, so fumigation and disinfection of the house are unnecessary.",
-            "Counsel that itching may persist two to four weeks after cure and does not mean failure; review at two weeks and treat again only if new burrows or new papules have appeared.",
-          ],
-        },
-        {
-          heading: "5. Public health note",
-          points: [
-            "Scabies is a WHO neglected tropical disease; mass drug administration with ivermectin is used in high-prevalence communities and institutional outbreaks.",
-            "Control of scabies reduces streptococcal pyoderma and hence acute post-streptococcal glomerulonephritis and acute rheumatic fever in children.",
-          ],
-        },
-      ],
-      mustDraw: [
-        "A figure of the body showing the sites of predilection of scabies in an adult and in an infant.",
-        "A table of scabicides with strength, contact time, repeat schedule and safety in pregnancy and infancy.",
-      ],
-      markSplit: [
-        { part: "Clinical features and variants", marks: 3 },
-        { part: "Diagnosis and differential diagnosis", marks: 2 },
-        { part: "Treatment of the patient", marks: 3 },
-        { part: "Household treatment and decontamination", marks: 2 },
-      ],
-      keywords: ["scabies", "permethrin", "ivermectin", "burrow", "household contacts", "nocturnal itch"],
-    },
-    {
-      id: "dermatology-scabies-pediculosis-t2",
-      paper: "III",
-      kind: "short-note",
-      marks: 5,
-      minutes: 10,
-      frequency: "common",
-      question: "Write short notes on crusted (Norwegian) scabies.",
-      openingLines: [
-        "Crusted or Norwegian scabies is a hyperinfestation with Sarcoptes scabiei carrying thousands to millions of mites, occurring in immunosuppressed, neurologically impaired or malnourished hosts who cannot mount an effective scratch or immune response.",
-        "It is extremely contagious and is typically the index case behind an outbreak in a family, hospital ward or old age home.",
-      ],
-      answer: [
-        {
-          heading: "Predisposing factors",
-          points: [
-            "HIV infection, HTLV-1 infection, lymphoma and organ transplantation.",
-            "Lepromatous leprosy, Down syndrome, dementia, paralysis, spinal cord injury and severe malnutrition.",
-            "Prolonged topical or systemic corticosteroid use, including over-the-counter steroid combination creams.",
-          ],
-        },
-        {
-          heading: "Clinical features",
-          points: [
-            "Thick, warty, fissured hyperkeratotic crusts on hands, feet, elbows, knees, scalp and ears, with generalised scaling that may progress to erythroderma.",
-            "Gross nail thickening with subungual hyperkeratotic debris that harbours mites.",
-            "Itch is mild or absent, which delays diagnosis; a foul smell and secondary bacterial infection are common.",
-            "Complications: sepsis from Staphylococcus aureus or Streptococcus pyogenes bacteraemia, which is the main cause of death.",
-          ],
-        },
-        {
-          heading: "Diagnosis and treatment",
-          points: [
-            "Scraping of crust shows innumerable mites and eggs; skin biopsy shows mites in a thickened hyperkeratotic stratum corneum.",
-            "Combined therapy: oral ivermectin 200 microgram per kilogram on days 1, 2, 8, 9 and 15, extended to days 22 and 29 in severe cases.",
-            "Topical permethrin 5 per cent daily for seven days then twice weekly until cure, with 5 per cent salicylic acid or urea ointment as a keratolytic to allow penetration.",
-            "Barrier nursing with gloves and gowns, isolation, decontamination of linen, and simultaneous treatment of all contacts and health care staff.",
-            "Investigate for the underlying immunosuppression, particularly HIV testing.",
-          ],
-        },
-      ],
-      markSplit: [
-        { part: "Definition and predisposing factors", marks: 1 },
-        { part: "Clinical features and complications", marks: 2 },
-        { part: "Diagnosis and combined treatment", marks: 2 },
-      ],
-      keywords: ["crusted scabies", "Norwegian scabies", "ivermectin", "keratolytic", "HIV", "outbreak"],
-    },
-  ],
-  mcqs: [
-    {
-      id: "dermatology-scabies-pediculosis-q1",
-      stem: "A 30-year-old man is treated for scabies with a single overnight application of permethrin 5 per cent cream. Three weeks later he returns with fresh burrows in the finger webs. His wife, who also itches, was never treated. What is the single most important reason for the failure?",
-      options: [
-        "Permethrin resistance in the local mite population",
-        "Untreated household contacts together with omission of the day 7 repeat application",
-        "Inadequate contact time of the cream on the skin",
-        "Persistence of mite antigen causing post-scabetic itch",
-        "Development of crusted scabies",
-      ],
-      answer: 1,
-      explanation:
-        "New burrows three weeks later mean live mites, and the two commonest causes are an untreated contact who re-infests the patient and the missed second application on day 7, since permethrin is not reliably ovicidal. Permethrin resistance is documented but rare and should never be the first explanation when a contact is admittedly untreated. Inadequate contact time is possible but he did leave it overnight, which is within the 8 to 14 hour range. Post-scabetic itch is itch without new lesions, so fresh burrows exclude it. Crusted scabies presents with thick hyperkeratotic crusts and little itch, not a few new burrows.",
-      difficulty: "easy",
-    },
-    {
-      id: "dermatology-scabies-pediculosis-q2",
-      stem: "A 6-week-old exclusively breastfed infant has itchy vesicles and pustules on the palms, soles and scalp; the mother has itchy papules on her wrists and areolae. Which treatment is most appropriate for the infant?",
-      options: [
-        "Oral ivermectin 200 microgram per kilogram single dose",
-        "Lindane 1 per cent lotion for 8 hours",
-        "Sulphur 5 per cent in petrolatum on three consecutive nights",
-        "Benzyl benzoate 25 per cent lotion on three consecutive nights",
-        "Crotamiton 10 per cent cream for two nights only",
-      ],
-      answer: 2,
-      explanation:
-        "Below two months of age permethrin is not licensed and sulphur 5 to 10 per cent in petrolatum applied for three consecutive nights is the accepted safe scabicide, covering the scalp and face as well since infants are affected above the neck. Oral ivermectin is contraindicated under 15 kilograms and under five years. Lindane is neurotoxic and is no longer recommended at any age, least of all in a neonate with a high surface-area-to-weight ratio. Benzyl benzoate 25 per cent is far too irritant for a six-week-old and would need dilution to 6.25 per cent at best. Crotamiton is antipruritic but is the least effective scabicide and would not clear the infestation.",
-      difficulty: "moderate",
-    },
-    {
-      id: "dermatology-scabies-pediculosis-q3",
-      stem: "A 55-year-old bedridden man from an old age home has thick warty crusts on the hands, feet and elbows with dystrophic nails and generalised scaling, but complains of almost no itching. Four staff members have developed itchy papules. What is the diagnosis and the correct treatment?",
-      options: [
-        "Psoriasis vulgaris - potent topical steroid under occlusion",
-        "Crusted scabies - oral ivermectin on days 1, 2, 8, 9 and 15 plus topical permethrin and a keratolytic",
-        "Ordinary scabies - a single application of permethrin 5 per cent",
-        "Chronic eczema - emollients and a moderate topical steroid",
-        "Palmoplantar keratoderma - urea 20 per cent ointment",
-      ],
-      answer: 1,
-      explanation:
-        "Hyperkeratotic crusts with nail dystrophy, minimal itch and an outbreak among carers is crusted scabies, which carries an enormous mite burden and needs multiple doses of oral ivermectin combined with repeated topical permethrin and a keratolytic to let the scabicide penetrate the crust. Psoriasis would show silvery scale, Auspitz sign and typical extensor plaques, and treating this patient with a potent steroid would worsen the infestation. A single permethrin application is grossly inadequate for a mite load of thousands. Eczema and keratoderma do not cause an outbreak of itching among staff, which is the clue that this is an infestation.",
-      difficulty: "moderate",
-    },
-    {
-      id: "dermatology-scabies-pediculosis-q4",
-      stem: "A 32-year-old destitute man has intensely itchy excoriated papules and lichenified hyperpigmented skin over the back and shoulders. No lesions are seen in the finger webs or genitalia. Examination of his shirt shows lice and eggs in the seams. Which complication is he specifically at risk of?",
-      options: [
-        "Acute post-streptococcal glomerulonephritis",
-        "Epidemic typhus and trench fever",
-        "Acquired immunodeficiency from lymphatic spread",
-        "Bartonella henselae cat scratch disease",
-        "Chagas disease",
-      ],
-      answer: 1,
-      explanation:
-        "Lice living in clothing seams is pediculosis corporis, and Pediculus humanus corporis is the vector of epidemic typhus caused by Rickettsia prowazekii, trench fever caused by Bartonella quintana and louse-borne relapsing fever caused by Borrelia recurrentis. Post-streptococcal glomerulonephritis follows streptococcal pyoderma, which is a complication of scabies and impetigo rather than a vector-borne consequence of body lice. Lice do not cause immunodeficiency. Cat scratch disease is Bartonella henselae transmitted by cats and their fleas, not by lice. Chagas disease is transmitted by the reduviid bug in Latin America.",
-      difficulty: "moderate",
-    },
-    {
-      id: "dermatology-scabies-pediculosis-q5",
-      stem: "A 28-year-old woman treated correctly for scabies with permethrin on day 0 and day 7 returns on day 18 with continued itching. Examination shows healing excoriations and post-inflammatory hyperpigmentation but no burrows and no new papules. Her family was treated. What is the correct action?",
-      options: [
-        "Repeat permethrin for a third application",
-        "Give oral ivermectin as she has failed topical therapy",
-        "Reassure and treat with emollients, a moderate topical steroid and an oral antihistamine",
-        "Take a skin biopsy to look for mites",
-        "Start oral prednisolone 30 mg daily for two weeks",
-      ],
-      answer: 2,
-      explanation:
-        "Itch without new burrows or new papules two to four weeks after adequate treatment is post-scabetic itch, a hypersensitivity response to retained mite antigen in the stratum corneum, and it is managed with emollients, a moderate topical corticosteroid and an antihistamine. A third application of permethrin adds irritant dermatitis that perpetuates the itch and is the classic wrong answer. Ivermectin is reserved for genuine failure, which requires objective new lesions. A biopsy is unnecessary when the clinical picture is clear and no active lesions exist. Systemic steroids are disproportionate and risk converting a residual infestation into crusted scabies.",
-      difficulty: "easy",
-    },
-  ],
-  cards: [
-    {
-      id: "dermatology-scabies-pediculosis-c1",
-      front: "Incubation period of scabies and why it matters.",
-      back: "Four to six weeks in a first infestation (one to four days on re-infestation) because the itch is a type IV hypersensitivity reaction - so asymptomatic contacts are already infested and must be treated.",
-    },
-    {
-      id: "dermatology-scabies-pediculosis-c2",
-      front: "Pathognomonic lesion of scabies and where to look for it.",
-      back: "The burrow - a 3 to 10 mm greyish serpiginous ridge with a vesicle or black dot at one end, on the finger webs, sides of fingers, flexor wrists and ulnar border of the hand.",
-    },
-    {
-      id: "dermatology-scabies-pediculosis-c3",
-      front: "Permethrin regimen for scabies.",
-      back: "5 per cent cream to the whole body neck down (whole body in infants), leave 8 to 14 hours overnight, wash off, repeat on day 7; about 30 g per adult application, reapply to hands after washing.",
-    },
-    {
-      id: "dermatology-scabies-pediculosis-c4",
-      front: "Ivermectin dose and contraindications in scabies.",
-      back: "200 microgram per kilogram orally with food, repeated day 7 to 14; avoid under 15 kg or 5 years, and in pregnancy and lactation.",
-    },
-    {
-      id: "dermatology-scabies-pediculosis-c5",
-      front: "Scabicide of choice under two months of age and in pregnancy.",
-      back: "Sulphur 5 to 10 per cent in petrolatum for three consecutive nights (permethrin 5 per cent is also accepted in pregnancy and above two months).",
-    },
-    {
-      id: "dermatology-scabies-pediculosis-c6",
-      front: "Environmental decontamination in scabies.",
-      back: "Wash linen and clothes of the last 3 days above 60 degrees Celsius, sun dry or iron; seal non-washables in a bag for 72 hours to a week. The mite dies in 2 to 3 days off the host, so fumigation is not needed.",
-    },
-    {
-      id: "dermatology-scabies-pediculosis-c7",
-      front: "Post-scabetic itch versus treatment failure.",
-      back: "Post-scabetic itch: itching for 2 to 4 weeks with no new burrows or papules - treat with emollients, mild steroid and antihistamine. Failure: new burrows or papules after 2 weeks - re-treat and find the untreated contact.",
-    },
-    {
-      id: "dermatology-scabies-pediculosis-c8",
-      front: "Which louse transmits systemic disease, and which diseases?",
-      back: "Only the body louse (Pediculus humanus corporis) - epidemic typhus (Rickettsia prowazekii), trench fever (Bartonella quintana) and relapsing fever (Borrelia recurrentis).",
-    },
-    {
-      id: "dermatology-scabies-pediculosis-c9",
-      front: "Treatment of pediculosis corporis.",
-      back: "Treat the clothing, not the skin - hot wash, iron or discard clothing and improve hygiene; permethrin to the body only if lice are found on the skin.",
-    },
-    {
-      id: "dermatology-scabies-pediculosis-c10",
-      front: "Maculae ceruleae - what and where?",
-      back: "Bluish-grey macules at the site of pubic louse bites on the lower abdomen, thighs and buttocks in pediculosis pubis.",
-    },
-  ],
-  references: [
-    "IADVL Textbook of Dermatology, 5th edition, 2022 - scabies and other infestations",
-    "International Alliance for the Control of Scabies (IACS) 2020 Consensus Criteria for the Diagnosis of Scabies",
-    "WHO Informal Consultation on a Framework for Scabies Control, 2019, and WHO NTD Road Map 2021-2030",
-    "British Association of Dermatologists guideline on the management of scabies, 2024",
-    "Centers for Disease Control and Prevention, Parasites - Scabies and Lice, 2024 update",
-    "Neena Khanna, Illustrated Synopsis of Dermatology and Sexually Transmitted Diseases, 6th edition, 2020",
-  ],
-});
-
-topics.push({
   id: "geriatrics-ethics-falls",
   title: "Falls in the older person - assessment, causes and prevention",
   oneLiner:
@@ -4626,6 +3828,424 @@ topics.push({
     "Bauer J et al. Evidence-based recommendations for optimal dietary protein intake in older people: the PROT-AGE Study Group. JAMDA, 2013",
     "NICE Clinical Guideline CG32: Nutrition support for adults, 2006 (updated) - refeeding syndrome risk criteria",
     "Longitudinal Ageing Study in India (LASI) Wave 1 report, IIPS / MoHFW, 2020",
+  ],
+});
+
+topics.push({
+  id: "geriatrics-ethics-end-of-life-death-certification",
+  title: "End-of-life decisions, advance care planning in India, and death certification",
+  oneLiner:
+    "End-of-life care requires a documented, shared decision about what treatment will and will not be given as death approaches; in India the framework rests not on statute but on the Supreme Court's decision in Common Cause v Union of India (2018), simplified in January 2023, which permits withholding and withdrawing life support and gives legal effect to an advance medical directive while active euthanasia and assisted suicide remain criminal offences - and the process ends with a correctly written medical certificate of cause of death.",
+  frequency: "less-common",
+  keywords: [
+    "advance care planning",
+    "advance medical directive",
+    "living will",
+    "Common Cause v Union of India",
+    "passive euthanasia",
+    "withholding and withdrawing life support",
+    "DNAR",
+    "do not attempt resuscitation",
+    "doctrine of double effect",
+    "Aruna Shanbaug",
+    "Mental Healthcare Act 2017",
+    "surprise question",
+    "MCCD Form 4",
+    "underlying cause of death",
+    "Registration of Births and Deaths Act 1969",
+    "medico-legal autopsy",
+    "brain-stem death",
+    "THOTA 1994",
+    "ICD-10",
+    "bereavement",
+  ],
+  sections: [
+    {
+      heading: "Advance care planning - what it is and how to do it",
+      points: [
+        "**Advance care planning** is a voluntary process of discussion between a person with capacity, those close to them and their clinicians, about their values, goals and preferences for future care, so that decisions can be made in line with those wishes if they later lose capacity. It is a **conversation with a record, not a form**, and it is revisited as the illness changes.",
+        "**Its products are three:** a statement of **wishes, values and preferences** (not legally binding but powerful evidence of what the patient would want); an **advance medical directive or 'living will'**, a written refusal of specified treatments in specified future circumstances; and the **naming of a person to be consulted or to decide** - for mental healthcare, the statutory **nominated representative under section 14 of the Mental Healthcare Act 2017**.",
+        "**When to start the conversation:** apply the **surprise question** - 'would I be surprised if this patient died in the next twelve months?' If the answer is no, begin the conversation. Other triggers are a new diagnosis of an incurable illness, advanced frailty (Clinical Frailty Scale 7 or above), a second unplanned admission within a year, a new diagnosis of dementia while capacity remains, entry to long-term care, and the family asking 'how long?'.",
+        "**How to do it well:** ask permission to have the conversation; find out what the patient already understands; ask what matters most to them and what they would find unacceptable; explain honestly what medicine can and cannot achieve, including that **cardiopulmonary resuscitation in advanced frailty or metastatic cancer almost never results in survival to discharge**; identify who should speak for them; and **write it down in the notes and give the family a copy**.",
+        "**Record specific decisions, not vague sentiments** - whether the patient would want hospital admission, intravenous antibiotics, intensive care, mechanical ventilation, dialysis, a feeding tube and cardiopulmonary resuscitation - because 'do everything' and 'do nothing' are both unusable at three in the morning.",
+        "**A DNAR (do not attempt resuscitation) decision concerns cardiopulmonary resuscitation alone and nothing else.** It must never be allowed to reduce analgesia, antibiotics, nursing care, hydration or attention; the commonest harm in practice is that the DNAR order is read as 'do not treat'. Record the decision, the reasons, who was involved and the review date, and communicate it at every transfer of care.",
+      ],
+    },
+    {
+      heading: "The Indian legal position - evolving, and to be stated as such",
+      points: [
+        "**This is an area where the position has changed and remains incomplete, and an answer should say so rather than assert one confident rule.** There is **no Indian statute** governing end-of-life decisions; what exists is Supreme Court authority, professional guidance, and a draft that was withdrawn.",
+        "**Gian Kaur v State of Punjab (1996)** held that the right to life under Article 21 does not include a right to die, overruling P. Rathinam. **Aruna Shanbaug v Union of India (2011)** first permitted passive euthanasia in India, but only with High Court approval on a case-by-case basis.",
+        "**Common Cause (A Registered Society) v Union of India (2018) 5 SCC 1**, decided by a five-judge Constitution Bench on **9 March 2018**, held that **the right to die with dignity is part of the right to life under Article 21**; that a competent adult may refuse medical treatment including life-sustaining treatment; that **withholding and withdrawing life support in a terminally ill or permanently vegetative patient (so-called passive euthanasia) is lawful**; and that an **advance medical directive is legally valid**. The Court laid down an elaborate procedure - attestation before a Judicial Magistrate First Class, a hospital medical board of experts with at least twenty years' experience, a second board constituted by the Collector, and magistrate approval.",
+        "**Because that procedure proved unworkable, the same Constitution Bench modified it on 24 January 2023**, on an application by the Indian Society of Critical Care Medicine. The simplified framework is: the directive is signed by the executor before **two attesting witnesses and attested by a notary or gazetted officer** (no longer countersigned by a magistrate); a copy is given to the nominated representatives, the family physician and the local authority; the treating hospital constitutes a **Primary Medical Board** of the treating physician and at least two subject experts of **at least five years' standing**; if it recommends withdrawal, a **Secondary Medical Board** including a registered medical practitioner nominated by the **District Health Officer** and two experts of at least five years' standing reviews it; the decision is to be taken **within 48 hours**; the **Judicial Magistrate First Class is informed** and records the decision; and an aggrieved party may approach the High Court.",
+        "**What remains unlawful:** **active euthanasia - a deliberate act intended to end life, such as administering a lethal injection - and physician-assisted suicide are criminal offences in India**, punishable as murder or abetment of suicide under what are now sections 103 and 108 of the Bharatiya Nyaya Sanhita 2023. **Attempted suicide is in practice decriminalised by section 115 of the Mental Healthcare Act 2017**, which presumes severe stress and bars trial and punishment, though the Bharatiya Nyaya Sanhita retains an offence for an attempt made to compel or restrain a public servant.",
+        "**Professional guidance and the withdrawn draft:** the **ICMR consensus on definitions in limitation of treatment and end-of-life care (2018)** and the **Indian Society of Critical Care Medicine position statements** are the usable clinical references. Draft national **guidelines on withdrawal of life support in terminally ill patients were released for public consultation by the health ministry in 2024 and were put on hold after strong objections from professional bodies** - so **there is still no notified national guideline, and an examination answer should say that the framework is judicial, procedural and awaiting legislation.**",
+      ],
+    },
+    {
+      heading: "Making and defending the decision at the bedside",
+      points: [
+        "**Withholding and withdrawing life-sustaining treatment are ethically and legally equivalent.** The distinction matters psychologically to families and staff, but a treatment that is not benefiting the patient may be stopped just as it may be not started; the fear of being unable to stop is a common reason for never starting appropriately.",
+        "**The doctrine of double effect** justifies giving a drug - typically an opioid or a sedative - with the intention of relieving suffering, accepting that it may as a foreseen but unintended side effect shorten life. The conditions are that **the act itself is good or neutral, the intention is the good effect, the bad effect is not the means to the good effect, and there is proportionate reason**. In practice, correctly titrated opioids and sedatives for symptom control at the end of life have not been shown to shorten life, so the doctrine is invoked far more often than it is needed.",
+        "**Distinguish the terms clearly, because examiners test them:** **withholding** is not starting a treatment; **withdrawing** is stopping one already started; **limitation of life-sustaining treatment** covers both; **palliative sedation** is the proportionate use of sedation to relieve refractory symptoms, titrated to comfort and not to unconsciousness for its own sake; **euthanasia** is an act intended to cause death; and **futility** is treatment that cannot achieve the physiological goal or the patient's goal - and it is the second, value-laden sense that causes most disagreement.",
+        "**Decide by a defined process:** establish the clinical facts and prognosis; determine capacity; if the patient has capacity, their informed refusal governs; if not, apply their known wishes and any advance directive, then substituted judgement (what would this patient have chosen?), then best interests; hold a **family meeting** with the senior clinician and nurse present; record who attended, what was said and what was agreed; and **make the decision a team decision, not an individual one**.",
+        "**Communicate in the family's language and without euphemism.** Use the **SPIKES** structure - Setting, Perception, Invitation, Knowledge, Emotions with empathy, Strategy and summary. Say 'dying' rather than 'not doing well'. Avoid the question 'do you want us to do everything?', which puts the burden of the decision on the family; **make a recommendation** based on what the patient would have wanted and ask whether the family agrees.",
+        "**Where there is disagreement**, do not force it: give time, arrange a second family meeting, offer a second medical opinion or the hospital ethics committee, continue full care in the interim, and involve a respected family elder or religious figure where the family wishes. **Most apparent disagreement is unresolved grief, mistrust or a fear of being blamed by absent relatives, not a genuine difference of values.**",
+      ],
+    },
+    {
+      heading: "Death certification - the rules and the form",
+      points: [
+        "**Registration is statutory:** the **Registration of Births and Deaths Act 1969**, as amended by the **Registration of Births and Deaths (Amendment) Act 2023 in force from 1 October 2023** (which mandates digital registration and a national database), requires every death to be reported to the Registrar, **normally within 21 days free of charge**; later registration attracts a late fee and, **after one year, requires an order of a first class magistrate**.",
+        "**Separate two documents.** The **Medical Certificate of Cause of Death (MCCD)** is written by the doctor - **Form 4 for institutional deaths and Form 4A for deaths outside an institution** - and is a medical document. The **death certificate** is issued by the **Registrar of Births and Deaths** after registration and is a legal document. **Doctors issue the MCCD; registrars issue the death certificate.**",
+        "**Who may certify:** the registered medical practitioner **who attended the deceased during the last illness** and is satisfied about the cause of death. **Do not certify** a death you did not attend, one where the cause is genuinely unknown, or any death that is or may be **unnatural** - in those cases inform the police and refer for medico-legal autopsy, and the certificate is then issued on the basis of the post-mortem findings.",
+        "**The structure of Part I is the whole examinable point.** Write the sequence of events leading to death, **the immediate cause on line (a), the antecedent cause on line (b), and the underlying cause on the lowest completed line (c or d)**, with the **approximate interval between onset and death** against each. **Part II** records other significant conditions contributing to death but **not related to the disease or condition causing it**. **The underlying cause - the disease or injury that initiated the train of events leading directly to death - is the entry on the lowest completed line of Part I, and it is the one that is coded and tabulated in national statistics.**",
+        "**A worked example:** I(a) Aspiration pneumonia, 3 days; I(b) Dysphagia, 4 months; I(c) Cerebral infarction, 6 months; II: Type 2 diabetes mellitus, hypertension. The **underlying cause is cerebral infarction**, not the pneumonia.",
+        "**The errors that make a certificate useless:** writing a **mode of dying rather than a cause - cardiac arrest, cardiorespiratory arrest, asystole, syncope, respiratory failure, heart failure, shock, coma or asphyxia are mechanisms, not causes**, and must be accompanied by the disease that produced them; writing **'old age' or 'senility'**, which should be used only when there truly is no identifiable disease and no other option; using abbreviations; entering more than one condition per line; leaving the interval blank; illegible handwriting; and **not sealing the certificate or issuing it to someone other than the person entitled to it**.",
+      ],
+    },
+    {
+      heading: "Medico-legal deaths, brain-stem death, and after the death",
+      points: [
+        "**Deaths that must be reported to the police and are not certified by the treating doctor** include all unnatural and suspicious deaths: accidents including road traffic and industrial accidents, burns and scalds, drowning, poisoning including snake bite where foul play is alleged, electrocution, homicide and suspected homicide, suicide and suspected suicide, custodial deaths, deaths under or shortly after anaesthesia or during an operation, deaths from suspected criminal abortion, maternal deaths in suspicious circumstances, deaths of a woman within seven years of marriage in unnatural circumstances, and any **death whose cause remains unknown**, including certain unexplained deaths within 24 hours of admission.",
+        "**Do not obstruct treatment for medico-legal reasons.** Following **Parmanand Katara v Union of India (1989)**, emergency treatment is given first and the police informed in parallel; and under the Good Samaritan protections recognised by the Supreme Court in 2016 and given statutory form in **section 134A of the Motor Vehicles Act as amended in 2019**, a bystander who brings an injured person to hospital must not be harassed or detained.",
+        "**Brain-stem death** is certified under the **Transplantation of Human Organs and Tissues Act 1994 (amended 2011, with Rules of 2014)** by a **Board of Medical Experts comprising the registered medical practitioner in charge of the hospital, a practitioner nominated from a panel approved by the appropriate authority, a neurologist or neurosurgeon (or an approved specialist where one is unavailable), and the practitioner treating the patient**, with **two sets of tests carried out at an interval of six hours**. Certification of brain-stem death is a legal declaration of death whether or not organ donation follows.",
+        "**Organ and tissue donation** should be raised where appropriate, ideally by a trained transplant coordinator rather than the treating team, after death has been declared and the family has had time; corneal, skin and bone donation remain possible after cardiac death and are relevant even in a small hospital.",
+        "**Care after death:** verify and record the fact of death (absent pulse and heart sounds, absent respiration, fixed dilated pupils, no response, with the time recorded), inform the family gently and in person, allow them time with the body and the performance of religious rites, offer to remove tubes and cannulae, handle the body with cultural respect, return belongings with a signature, and explain the practical steps of certification and transport.",
+        "**Bereavement care is part of palliative care and part of family medicine.** Make a follow-up contact with the family after the death; screen for prolonged grief disorder (persistent intense yearning and preoccupation with functional impairment beyond about twelve months in adults), which needs referral; and remember that **the surviving spouse of an older patient is now a high-risk patient of your own practice**, with excess mortality, depression, malnutrition and social isolation in the first year.",
+      ],
+    },
+  ],
+  tables: [
+    {
+      heading: "End-of-life terminology and its legal status in India (as of 2025)",
+      columns: ["Term", "Meaning", "Legal position in India"],
+      rows: [
+        ["Withholding life-sustaining treatment", "Not starting a treatment such as ventilation, dialysis or CPR", "Lawful under Common Cause (2018), procedure simplified January 2023"],
+        ["Withdrawing life-sustaining treatment", "Stopping a treatment already started", "Lawful on the same basis; ethically equivalent to withholding"],
+        ["Advance medical directive (living will)", "A written refusal of specified treatments in specified future circumstances", "Legally valid; signed before two witnesses and attested by a notary or gazetted officer since January 2023"],
+        ["DNAR / DNACPR", "A decision not to attempt cardiopulmonary resuscitation", "Lawful; concerns CPR only and must not reduce any other care"],
+        ["Palliative sedation", "Proportionate sedation to relieve refractory symptoms", "Lawful; justified by the doctrine of double effect"],
+        ["Active euthanasia", "An act intended to cause the patient's death", "A criminal offence - murder under section 103 BNS 2023"],
+        ["Physician-assisted suicide", "Providing the means for a patient to end their own life", "A criminal offence - abetment of suicide under section 108 BNS 2023"],
+        ["Attempted suicide", "An act by the patient", "Effectively decriminalised by section 115 of the Mental Healthcare Act 2017"],
+      ],
+    },
+    {
+      heading: "Medical Certificate of Cause of Death - Form 4 structure with a worked example",
+      columns: ["Section", "What goes there", "Example entry", "Approximate interval"],
+      rows: [
+        ["Part I (a) - immediate cause", "The disease or condition directly leading to death", "Aspiration pneumonia", "3 days"],
+        ["Part I (b) - antecedent cause", "The condition giving rise to (a)", "Dysphagia", "4 months"],
+        ["Part I (c) - underlying cause", "The disease that initiated the whole train of events - the entry coded for statistics", "Cerebral infarction", "6 months"],
+        ["Part I (d)", "A further antecedent condition, if any", "Left ourselves blank where not applicable", "-"],
+        ["Part II", "Other significant conditions contributing to death but not related to the disease in Part I", "Type 2 diabetes mellitus; hypertension", "-"],
+        ["Manner of death box", "Natural, accident, suicide, homicide or pending investigation", "Natural", "-"],
+        ["Never write alone", "Modes of dying are not causes", "Cardiac arrest, cardiorespiratory arrest, respiratory failure, shock, coma, asphyxia, syncope, old age", "-"],
+      ],
+    },
+    {
+      heading: "Deaths requiring police intimation and autopsy rather than an ordinary certificate",
+      columns: ["Category", "Examples", "Action"],
+      rows: [
+        ["Injury and accident", "Road traffic accident, fall from height, industrial injury, burns, drowning, electrocution", "Treat first, inform police, register as a medico-legal case, refer for autopsy"],
+        ["Poisoning and intoxication", "Suspected poisoning, alcohol or drug overdose, snake bite where foul play is alleged", "Preserve samples with a chain of custody; police intimation"],
+        ["Suicide and homicide", "Suspected suicide, hanging, suspected homicide", "Do not certify; police intimation and medico-legal autopsy"],
+        ["Custodial and institutional", "Death in police or judicial custody, death in a mental health establishment", "Mandatory magisterial inquiry and autopsy"],
+        ["Procedure-related", "Death during or shortly after anaesthesia or an operation, death after a suspected criminal abortion", "Inform police; autopsy; preserve all records"],
+        ["Deaths of women", "Death of a woman within seven years of marriage in unnatural or suspicious circumstances", "Mandatory police intimation and inquest by an Executive Magistrate"],
+        ["Cause unknown", "Death where the cause cannot be determined, or an unexplained death soon after admission", "Do not guess a cause; refer for autopsy"],
+      ],
+    },
+  ],
+  redFlags: [
+    "A DNAR order being read as a reason to withhold analgesia, antibiotics, hydration or nursing care - it concerns cardiopulmonary resuscitation and nothing else, and this misreading is the commonest harm at the end of life.",
+    "A request from a family to hasten death, or a doctor being asked to give a lethal dose - active euthanasia and assisted suicide are criminal offences in India; explore the suffering that lies behind the request and treat it.",
+    "A death that is or may be unnatural being certified by the treating doctor - accident, burn, poisoning, suicide, homicide, custodial, operative or unexplained deaths must be reported to the police and referred for autopsy.",
+    "'Cardiorespiratory arrest' or 'old age' written as the sole cause on a death certificate - a mode of dying is not a cause, and such a certificate is statistically useless and may be legally challenged.",
+    "Withdrawal of life support proceeding without the two-board process, documentation and intimation to the Judicial Magistrate First Class set out by the Supreme Court in January 2023.",
+    "A family insisting on continued intensive treatment that cannot achieve any goal the patient would have valued - do not force the issue; give time, offer a second opinion and involve the ethics committee, continuing full care meanwhile.",
+    "A bereaved older spouse who is not eating, not sleeping and not leaving the house months after the death - prolonged grief with excess mortality risk; treat them as a patient of the practice.",
+  ],
+  pearls: [
+    "Use the surprise question - would I be surprised if this patient died within twelve months? - as the trigger to begin advance care planning.",
+    "Record specific decisions about admission, antibiotics, ventilation, dialysis, feeding tubes and CPR; 'do everything' is not a plan.",
+    "Withholding and withdrawing life-sustaining treatment are ethically and legally equivalent; the fear of being unable to stop is why appropriate treatment is never started.",
+    "In India the framework is judicial, not statutory: Common Cause (2018) as modified on 24 January 2023 - say plainly that legislation is still awaited and the 2024 draft guidelines were put on hold.",
+    "Active euthanasia and assisted suicide remain crimes in India; passive euthanasia by withholding or withdrawing life support, with the prescribed process, is lawful.",
+    "Do not ask the family 'do you want us to do everything?' - make a recommendation grounded in what the patient would have wanted, and ask whether they agree.",
+    "The underlying cause of death is the entry on the lowest completed line of Part I, and it is the one that gets coded - so the sequence, not the final event, is what you are writing.",
+    "Never write a mode of dying alone: cardiac arrest, respiratory failure, shock, coma and asphyxia are mechanisms, and each needs the disease that caused it.",
+    "Brain-stem death is certified by a four-member board under THOTA 1994 with two sets of tests six hours apart - and it is a declaration of death whether or not donation follows.",
+  ],
+  theory: [
+    {
+      id: "geriatrics-ethics-end-of-life-death-certification-t1",
+      paper: "I",
+      kind: "long",
+      marks: 10,
+      minutes: 20,
+      frequency: "less-common",
+      question:
+        "Discuss advance care planning and the legal position on end-of-life decisions in India. Describe how you would conduct a goals-of-care discussion for an 84-year-old man with advanced dementia, recurrent aspiration pneumonia and a third admission in six months.",
+      openingLines: [
+        "Advance care planning is a voluntary process of discussion between a person with capacity, those close to them and their clinicians about values, goals and preferences for future care, so that treatment can follow those wishes if capacity is later lost.",
+        "In India there is no statute governing end-of-life decisions; the framework comes from Common Cause v Union of India (2018), as simplified by the same Constitution Bench on 24 January 2023, and this evolving position should be stated as such rather than as a settled rule.",
+      ],
+      answer: [
+        {
+          heading: "1. Elements and triggers of advance care planning",
+          points: [
+            "Products: a statement of wishes and values, an advance medical directive refusing specified treatments, and identification of a person to be consulted or to decide.",
+            "Triggers: a negative answer to the surprise question, a new incurable diagnosis, advanced frailty at Clinical Frailty Scale 7 or above, a second unplanned admission in a year, new dementia while capacity remains, and entry to long-term care.",
+            "Content: specific decisions about hospital admission, intravenous antibiotics, intensive care, ventilation, dialysis, feeding tubes and cardiopulmonary resuscitation, with reasons recorded.",
+            "A DNAR decision applies only to cardiopulmonary resuscitation and must never be allowed to reduce any other care.",
+          ],
+        },
+        {
+          heading: "2. The Indian legal position",
+          points: [
+            "Gian Kaur (1996): Article 21 does not include a right to die. Aruna Shanbaug (2011): passive euthanasia permitted with High Court approval.",
+            "Common Cause (2018): the right to die with dignity is part of Article 21; a competent adult may refuse life-sustaining treatment; withholding and withdrawing life support in the terminally ill or permanently vegetative is lawful; an advance medical directive is valid.",
+            "Modification of 24 January 2023: attestation by a notary or gazetted officer before two witnesses instead of a magistrate; a Primary Medical Board of the treating physician plus two experts of at least five years' standing; a Secondary Medical Board including a practitioner nominated by the District Health Officer plus two such experts; a decision within 48 hours; intimation to the Judicial Magistrate First Class; recourse to the High Court if refused.",
+            "Active euthanasia and physician-assisted suicide remain criminal offences under sections 103 and 108 of the Bharatiya Nyaya Sanhita 2023; attempted suicide is effectively decriminalised by section 115 of the Mental Healthcare Act 2017.",
+            "There is still no legislation and no notified national guideline - draft guidelines on withdrawal of life support released for consultation in 2024 were put on hold after professional objections.",
+          ],
+        },
+        {
+          heading: "3. Assessment of this patient",
+          points: [
+            "Establish the stage of dementia, the functional trajectory, nutritional state, swallowing assessment, and the burden and outcome of previous admissions.",
+            "Assess capacity for this decision; in advanced dementia it will usually be absent, so identify any prior expressed wishes, an advance directive, and the family member who knows him best.",
+            "Explain the evidence honestly: recurrent aspiration in advanced dementia signals the terminal phase; percutaneous feeding tubes in advanced dementia do not prevent aspiration, do not improve survival, do not heal pressure ulcers and add restraint and discomfort; careful hand feeding is the preferred alternative.",
+            "Assess symptom burden - pain, breathlessness, secretions, agitation - and the caregiver's capacity and wishes.",
+          ],
+        },
+        {
+          heading: "4. Conducting the goals-of-care discussion",
+          points: [
+            "Prepare: senior clinician and nurse present, a quiet room, adequate time, the right family members, and an interpreter if needed.",
+            "Use the SPIKES structure: set up, find out their perception, ask permission to share information, give the knowledge in plain language without euphemism, respond to emotion with empathy, then summarise and agree a strategy.",
+            "Ask what matters most to him and what he would find unacceptable; use substituted judgement - what would he have chosen?",
+            "Make a recommendation rather than asking the family to choose, and check their understanding and agreement.",
+            "Agree and record specific decisions: comfort-focused care at home or in hospital, oral antibiotics if they relieve symptoms, careful hand feeding rather than a tube, no intensive care or ventilation, DNAR, and who to call.",
+            "Document who attended, what was said, what was agreed and the review date; give the family a written copy and communicate it to every clinician who may be called.",
+          ],
+        },
+        {
+          heading: "5. Delivering the plan and supporting the family",
+          points: [
+            "Anticipatory prescribing for pain, breathlessness, nausea, agitation and secretions, with the subcutaneous route available at home.",
+            "Mouth care, pressure area care, positioning, continence care and a calm familiar environment.",
+            "Caregiver education and respite; a 24-hour contact number and a written plan in the local language.",
+            "After the death: verify and record death, complete the medical certificate of cause of death correctly, allow religious rites, and make a bereavement follow-up contact.",
+          ],
+        },
+      ],
+      mustDraw: [
+        "A table of end-of-life terminology - withholding, withdrawing, advance directive, DNAR, palliative sedation, active euthanasia, assisted suicide - with the legal status of each in India.",
+        "A flow chart of the January 2023 process: advance directive attested before a notary - Primary Medical Board - Secondary Medical Board - decision within 48 hours - intimation to the JMFC.",
+      ],
+      markSplit: [
+        { part: "Advance care planning - elements and triggers", marks: 2 },
+        { part: "Indian legal position and its evolving nature", marks: 3 },
+        { part: "Assessment of this patient including feeding tube evidence", marks: 2 },
+        { part: "Conducting and documenting the goals-of-care discussion", marks: 2 },
+        { part: "Delivering the plan and bereavement support", marks: 1 },
+      ],
+      keywords: ["advance care planning", "Common Cause 2018", "passive euthanasia", "DNAR", "SPIKES", "advanced dementia"],
+    },
+    {
+      id: "geriatrics-ethics-end-of-life-death-certification-t2",
+      paper: "I",
+      kind: "short-note",
+      marks: 5,
+      minutes: 10,
+      frequency: "common",
+      question: "Write short notes on the medical certification of cause of death, including common errors and the deaths that must not be certified by the treating doctor.",
+      openingLines: [
+        "The Medical Certificate of Cause of Death is the doctor's statement of the disease sequence that led to death, written in Form 4 for institutional deaths and Form 4A for deaths outside an institution under the Registration of Births and Deaths Act 1969, as amended in 2023.",
+        "It is distinct from the death certificate, which is a legal document issued by the Registrar of Births and Deaths after registration; the doctor writes the MCCD, the registrar issues the certificate.",
+      ],
+      answer: [
+        {
+          heading: "1. Who certifies, and the process",
+          points: [
+            "The registered medical practitioner who attended the deceased during the last illness and is satisfied about the cause of death.",
+            "The death is reported to the Registrar, normally within 21 days free of charge; later registration attracts a fee and, after one year, requires the order of a first class magistrate.",
+            "The MCCD is issued sealed to the person entitled to it, and a copy is retained in the records; the cause is coded to ICD-10 for national mortality statistics.",
+            "Verification of the fact of death - absent pulse and heart sounds, absent respiration, fixed dilated pupils, no response - is recorded with the time.",
+          ],
+        },
+        {
+          heading: "2. Structure of the certificate",
+          points: [
+            "Part I records the sequence: (a) the immediate cause, (b) the antecedent cause, (c) and (d) further antecedent conditions, each with the approximate interval between onset and death.",
+            "The underlying cause is the entry on the lowest completed line of Part I - the disease or injury that initiated the train of events leading directly to death - and it is the entry that is coded and tabulated.",
+            "Part II records other significant conditions contributing to death but not related to the disease in Part I.",
+            "Example: I(a) aspiration pneumonia 3 days, I(b) dysphagia 4 months, I(c) cerebral infarction 6 months, II diabetes and hypertension - the underlying cause is cerebral infarction.",
+          ],
+        },
+        {
+          heading: "3. Common errors",
+          points: [
+            "Writing a mode of dying as the cause - cardiac arrest, cardiorespiratory arrest, respiratory failure, heart failure, shock, coma, syncope or asphyxia - without the disease that produced it.",
+            "Writing 'old age' or 'senility', which should be used only when no disease can be identified.",
+            "Entering more than one condition on a line, using abbreviations, leaving intervals blank, and illegible writing.",
+            "Reversing the sequence so that the underlying cause appears on line (a).",
+            "Certifying a death that should have gone for autopsy, or issuing the certificate to a person not entitled to it.",
+          ],
+        },
+        {
+          heading: "4. Deaths not to be certified by the treating doctor",
+          points: [
+            "All unnatural and suspicious deaths: accident, burns, drowning, poisoning, electrocution, homicide and suspected homicide, suicide and suspected suicide.",
+            "Custodial deaths and deaths in a mental health establishment.",
+            "Deaths during or shortly after anaesthesia or an operation, and deaths from suspected criminal abortion.",
+            "Death of a woman within seven years of marriage in unnatural or suspicious circumstances.",
+            "Any death where the cause remains unknown - inform the police, register a medico-legal case, and refer for autopsy; treatment is never delayed for these formalities, following Parmanand Katara (1989).",
+          ],
+        },
+      ],
+      mustDraw: ["The Form 4 layout with Part I lines (a) to (d), the interval column, and Part II, filled with a worked example."],
+      markSplit: [
+        { part: "Who certifies and the statutory process", marks: 1 },
+        { part: "Structure of Part I and Part II and the underlying cause", marks: 2 },
+        { part: "Common errors", marks: 1 },
+        { part: "Deaths requiring police intimation and autopsy", marks: 1 },
+      ],
+      keywords: ["MCCD", "Form 4", "underlying cause of death", "Registration of Births and Deaths Act", "medico-legal autopsy", "mode of dying"],
+    },
+  ],
+  mcqs: [
+    {
+      id: "geriatrics-ethics-end-of-life-death-certification-q1",
+      stem: "A death certificate reads: I(a) Aspiration pneumonia, 3 days; I(b) Dysphagia, 4 months; I(c) Cerebral infarction, 6 months; II Type 2 diabetes mellitus. Which is the underlying cause of death?",
+      options: [
+        "Aspiration pneumonia",
+        "Dysphagia",
+        "Cerebral infarction",
+        "Type 2 diabetes mellitus",
+        "Cardiorespiratory arrest",
+      ],
+      answer: 2,
+      explanation:
+        "The underlying cause is the disease that initiated the train of events leading directly to death, and it is written on the lowest completed line of Part I - here cerebral infarction, which is the entry coded and tabulated in mortality statistics. Aspiration pneumonia is the immediate cause on line (a), and dysphagia the antecedent cause on line (b), neither of which is the underlying cause. Diabetes appears in Part II as a contributory condition unrelated to the Part I sequence, so it is not coded as the underlying cause. Cardiorespiratory arrest is a mode of dying and should never appear on a certificate as a cause at all.",
+      difficulty: "moderate",
+    },
+    {
+      id: "geriatrics-ethics-end-of-life-death-certification-q2",
+      stem: "Which statement about end-of-life decisions in India is correct as the law currently stands?",
+      options: [
+        "Both active and passive euthanasia are legal following Common Cause (2018)",
+        "Withholding and withdrawing life support is lawful with the prescribed process, while active euthanasia and assisted suicide remain criminal offences",
+        "Advance medical directives have no legal validity in India",
+        "A Judicial Magistrate First Class must countersign every living will before it takes effect",
+        "Parliament has enacted a statute governing end-of-life care",
+      ],
+      answer: 1,
+      explanation:
+        "Common Cause v Union of India (2018), as modified on 24 January 2023, made withholding and withdrawing life-sustaining treatment lawful through a two-board process with intimation to a magistrate, while active euthanasia and physician-assisted suicide remain criminal offences under what are now sections 103 and 108 of the Bharatiya Nyaya Sanhita. The first option is wrong because active euthanasia was never legalised. Advance directives were expressly held valid in 2018, so the third option is incorrect. Magistrate countersignature was the 2018 requirement and was replaced in January 2023 by attestation before a notary or gazetted officer. No statute has been enacted; the 2024 draft guidelines were put on hold, which is why the position must be described as judicial and evolving.",
+      difficulty: "hard",
+    },
+    {
+      id: "geriatrics-ethics-end-of-life-death-certification-q3",
+      stem: "A DNAR (do not attempt resuscitation) decision has been recorded for an 88-year-old woman with metastatic cancer. Which is correct?",
+      options: [
+        "Antibiotics and intravenous fluids should now be withheld",
+        "The decision applies only to cardiopulmonary resuscitation; all other treatment and care continue as indicated",
+        "The decision cannot be reviewed once made",
+        "The decision may be made without informing the patient or family",
+        "Analgesia should be reduced to avoid hastening death",
+      ],
+      answer: 1,
+      explanation:
+        "A DNAR decision concerns cardiopulmonary resuscitation and nothing else; antibiotics, fluids, analgesia, oxygen, nursing and every other appropriate treatment continue to be given according to the goals of care, and the commonest harm in practice is the order being misread as 'do not treat'. Withholding antibiotics and fluids on that basis is precisely that error. The decision must be reviewed as the clinical situation changes and communicated at every transfer of care. It should be discussed with the patient where she has capacity, and otherwise with the family, and recorded with the reasons. Reducing analgesia is the opposite of what a comfort-focused plan requires.",
+      difficulty: "easy",
+    },
+    {
+      id: "geriatrics-ethics-end-of-life-death-certification-q4",
+      stem: "Under the Transplantation of Human Organs and Tissues Act 1994 as amended, brain-stem death is certified by a board of medical experts. Which composition and testing interval is correct?",
+      options: [
+        "Two doctors, with a single set of tests",
+        "Four members including the medical practitioner in charge of the hospital, a practitioner from an approved panel, a neurologist or neurosurgeon, and the treating practitioner, with two sets of tests six hours apart",
+        "Three members with tests repeated after 24 hours",
+        "The treating intensivist alone, with tests repeated after 12 hours",
+        "A panel appointed by the district magistrate, with a single set of tests",
+      ],
+      answer: 1,
+      explanation:
+        "The Act requires a four-member Board of Medical Experts - the registered medical practitioner in charge of the hospital, a practitioner nominated from a panel approved by the appropriate authority, a neurologist or neurosurgeon (or an approved specialist where none is available), and the practitioner treating the patient - with two sets of tests carried out six hours apart. Two doctors with a single set of tests, a three-member board at 24 hours, and the treating intensivist alone all fall short of the statutory requirement and would render the certification invalid. The district magistrate has no role in appointing the board; the panel is approved by the appropriate authority under the Act.",
+      difficulty: "hard",
+    },
+    {
+      id: "geriatrics-ethics-end-of-life-death-certification-q5",
+      stem: "A 62-year-old man dies six hours after being admitted following a fall from a ladder at a construction site. The treating physician is asked to issue the medical certificate of cause of death. What should be done?",
+      options: [
+        "Issue the certificate stating cardiorespiratory arrest",
+        "Issue the certificate stating head injury as the cause",
+        "Inform the police, register a medico-legal case and refer for autopsy without certifying the cause",
+        "Refuse any involvement and send the family to the registrar",
+        "Issue a provisional certificate and correct it later",
+      ],
+      answer: 2,
+      explanation:
+        "This is an unnatural death from an accident at a workplace, so the treating doctor must not certify the cause; the police are informed, a medico-legal case is registered and the body is referred for post-mortem examination, with certification following the autopsy findings. Writing cardiorespiratory arrest states a mode of dying and is never acceptable, quite apart from the medico-legal issue. Certifying head injury pre-empts the autopsy and may conceal a contributory factor such as intoxication, assault or a natural event that caused the fall. Sending the family away without action abandons a statutory duty. Indian practice makes no provision for a provisional certificate that is corrected later.",
+      difficulty: "moderate",
+    },
+  ],
+  cards: [
+    {
+      id: "geriatrics-ethics-end-of-life-death-certification-c1",
+      front: "What is the surprise question and what does it trigger?",
+      back: "'Would I be surprised if this patient died in the next twelve months?' A negative answer identifies a patient who should be offered advance care planning, palliative input and a goals-of-care conversation.",
+    },
+    {
+      id: "geriatrics-ethics-end-of-life-death-certification-c2",
+      front: "What did Common Cause v Union of India (2018) decide, and what changed in January 2023?",
+      back: "The 2018 Constitution Bench held that the right to die with dignity is part of Article 21, that withholding and withdrawing life support is lawful, and that advance medical directives are valid. On 24 January 2023 the Court simplified the procedure: attestation before a notary or gazetted officer instead of a magistrate, a Primary and a Secondary Medical Board of experts of at least five years' standing, a decision within 48 hours, and intimation to the JMFC.",
+    },
+    {
+      id: "geriatrics-ethics-end-of-life-death-certification-c3",
+      front: "Which end-of-life acts remain criminal offences in India?",
+      back: "Active euthanasia, punishable as murder under section 103 of the Bharatiya Nyaya Sanhita 2023, and physician-assisted suicide, punishable as abetment of suicide under section 108. Attempted suicide by a patient is effectively decriminalised by section 115 of the Mental Healthcare Act 2017.",
+    },
+    {
+      id: "geriatrics-ethics-end-of-life-death-certification-c4",
+      front: "State the doctrine of double effect and its four conditions.",
+      back: "An act with both a good and a foreseen bad effect is permissible if the act itself is good or neutral, the intention is the good effect, the bad effect is not the means to the good effect, and there is a proportionate reason. It justifies proportionate opioid and sedative use for symptom relief at the end of life.",
+    },
+    {
+      id: "geriatrics-ethics-end-of-life-death-certification-c5",
+      front: "Which document does the doctor write, and which does the registrar issue?",
+      back: "The doctor writes the Medical Certificate of Cause of Death - Form 4 for institutional deaths, Form 4A for deaths outside an institution. The Registrar of Births and Deaths issues the death certificate after registration under the Registration of Births and Deaths Act 1969, as amended in 2023.",
+    },
+    {
+      id: "geriatrics-ethics-end-of-life-death-certification-c6",
+      front: "Where is the underlying cause of death written, and why does it matter?",
+      back: "On the lowest completed line of Part I. It is the disease or injury that initiated the train of events leading directly to death, and it is the entry coded to ICD-10 and tabulated in national mortality statistics.",
+    },
+    {
+      id: "geriatrics-ethics-end-of-life-death-certification-c7",
+      front: "Name six modes of dying that must never be written as the sole cause of death.",
+      back: "Cardiac arrest, cardiorespiratory arrest, respiratory failure, heart failure, shock, coma, syncope and asphyxia - each is a mechanism and must be accompanied by the disease that produced it. 'Old age' and 'senility' should likewise be avoided unless no disease can be identified.",
+    },
+    {
+      id: "geriatrics-ethics-end-of-life-death-certification-c8",
+      front: "How is brain-stem death certified in India?",
+      back: "Under the Transplantation of Human Organs and Tissues Act 1994 (amended 2011), by a four-member Board of Medical Experts - the practitioner in charge of the hospital, a practitioner from an approved panel, a neurologist or neurosurgeon, and the treating practitioner - with two sets of tests six hours apart.",
+    },
+  ],
+  references: [
+    "Common Cause (A Registered Society) v Union of India (2018) 5 SCC 1, and the Supreme Court's modification order of 24 January 2023",
+    "Aruna Ramchandra Shanbaug v Union of India (2011) 4 SCC 454; Gian Kaur v State of Punjab (1996) 2 SCC 648",
+    "Indian Council of Medical Research. Definition of terms used in limitation of treatment and providing palliative care at end of life, 2018",
+    "Indian Society of Critical Care Medicine / Indian Association of Palliative Care joint position statement on end-of-life care, 2014 and later updates",
+    "Registration of Births and Deaths Act, 1969, as amended by the Registration of Births and Deaths (Amendment) Act, 2023",
+    "Physician's Manual on Medical Certification of Cause of Death, Office of the Registrar General of India, revised edition",
+    "Transplantation of Human Organs and Tissues Act, 1994 (amended 2011) and Rules, 2014 - brain-stem death certification",
+    "Bharatiya Nyaya Sanhita, 2023 - sections 103 and 108; Mental Healthcare Act, 2017 - section 115",
+    "Modi's Textbook of Medical Jurisprudence and Toxicology, 26th edition, 2019",
   ],
 });
 
