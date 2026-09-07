@@ -4145,3 +4145,505 @@ topics.push({
     "Oxford Handbook of General Practice, 5th edition, 2020 - weight loss",
   ],
 });
+
+const cases: ClinicalCase[] = [
+  {
+    id: "symptom-approach-case-1",
+    title: "OSCE communication station: tiredness and weakness in a 34-year-old woman",
+    kind: "osce",
+    subjectId: "symptom-approach",
+    opening:
+      "A 34-year-old primary school teacher attends the clinic saying she has felt tired and weak for three months; the candidate has ten minutes with a simulated patient to take a focused history, explore her ideas, concerns and expectations, explain the findings on the examination card, agree a plan with safety netting and close the consultation, while an examiner marks against a communication checklist.",
+    minutes: 10,
+    frequency: "core",
+    sections: [
+      {
+        heading: "Reading the station and the first thirty seconds",
+        points: [
+          "Read the candidate instructions twice before entering: they usually state that the examination findings will be handed over on a card, that investigations are not to be discussed until asked, and that the station is marked on communication, not on the diagnosis.",
+          "Introduce yourself by name and role, confirm the patient's name and age, state the purpose of the consultation and ask permission to proceed, because the first four ticks on the checklist are earned before a single clinical question is asked.",
+          "Open with a genuinely open question such as 'Tell me about this tiredness from the beginning' and then stay silent for the first minute; the golden minute of uninterrupted narrative gives more usable information than any list of closed questions.",
+          "Reflect what you heard in her own words - kamzori, no energy after school, falling asleep while helping her son with homework - before moving on, so the patient feels heard and the examiner sees active listening.",
+          "Signpost the structure early: 'I am going to ask a few questions about your health, then about your sleep and your home, and then we will decide together what to do', which buys tolerance for the closed questions to come.",
+        ],
+      },
+      {
+        heading: "The focused history in a communication station",
+        points: [
+          "Convert the vague word into a testable statement by asking what a typical day looks like, whether she can climb the school stairs, lift a bucket of water and rise from the floor without using her hands, and whether she dozes off while sitting quietly; this separates fatigue from true weakness and from sleepiness in under a minute.",
+          "Screen the treatable big five with one or two questions each: heavy periods, clots and pad counts for anaemia; cold intolerance, weight gain and constipation for thyroid disease; thirst, polyuria and weight loss for diabetes; snoring, unrefreshing sleep and the infant's night waking for sleep debt; and the PHQ-2 questions on low mood and loss of interest.",
+          "Ask about the ten-month-old baby, whether she is breastfeeding, when her periods returned and how heavy they now are, and who does the night feeds, because in this scenario the answers carry the diagnosis.",
+          "Take the drug and tonic history without judgement: iron tablets stopped after delivery, B-complex injections from a local clinic, an ayurvedic tonic from her mother-in-law, and any sedating cold remedies or sleeping tablets.",
+          "Close the history with the red-flag negatives spoken aloud - no weight loss, no fever, no cough beyond two weeks, no bleeding from any site, no lumps, no thoughts of harming herself - so the examiner hears that the dangerous causes were considered.",
+        ],
+      },
+      {
+        heading: "Ideas, concerns and expectations, asked so that they sound natural",
+        points: [
+          "Ask for ideas in the patient's frame rather than in yours: 'What do you yourself think is behind this tiredness?' usually brings out blood ki kami, weakness after childbirth or a fear that a thyroid problem like her sister's has started.",
+          "Ask for concerns separately and wait for the answer: 'Is there anything in particular you are worried this could be?' is where the fear of cancer, tuberculosis or kidney disease surfaces, and naming it aloud is what allows it to be addressed.",
+          "Ask for expectations directly and without defensiveness: 'What were you hoping we would do today?' - in this station she wants a B-complex injection and a tonic, and the checklist rewards eliciting that want, not simply refusing it.",
+          "Pick up the cues that the simulated patient is trained to drop - a pause when asked about the husband, a mention that money has been tight since the second child, a comment that she cries easily - and follow one of them with an open question rather than moving on to the next item.",
+          "Acknowledge the effect on function and on the family: a teacher who cannot mark books in the evening, a mother who snaps at the older child, a wife who is told she has become lazy; the illness experience is marked as a separate domain from the disease history.",
+          "Summarise the ideas, concerns and expectations back to her in one sentence and check that you have understood correctly, because a summary that the patient corrects is worth more marks than one she merely nods to.",
+        ],
+      },
+      {
+        heading: "Handling the examination card and explaining what it means",
+        points: [
+          "When the examiner hands over the card - weight 54 kg, BMI 22, pulse 88 regular, blood pressure 110/70 mmHg with no postural fall, mild conjunctival pallor, no goitre, no lymphadenopathy, normal power - read it in full and then translate it for the patient in plain language.",
+          "Say what the normal findings rule out before saying what the abnormal one suggests: 'Your thyroid feels normal, your pulse and blood pressure are normal, there are no lumps or glands, and that already makes the serious things you feared very unlikely; the one thing I did notice is that you look a little pale, which fits with the heavy periods.'",
+          "Give the explanation in chunks of two or three sentences and check understanding after each chunk; the examiner is listening for the absence of jargon such as ferritin, microcytic or hypothyroidism used without explanation.",
+          "Offer a working explanation that is honest about uncertainty: the likeliest contributors are low iron from heavy periods and a vegetarian diet, broken sleep with an infant and low mood under strain, and the tests will confirm or remove the first of these.",
+          "Explain the tests you will order and why, in her terms - a blood count and iron stores for the paleness, a thyroid test because of the baby and her sister, a sugar test because it is cheap and often missed, and a urine test - and state clearly what you will not order and why a whole-body check-up would not help.",
+        ],
+      },
+      {
+        heading: "Sharing the plan and safety netting",
+        points: [
+          "Negotiate the expectation rather than deny it: 'I understand why the injection seems attractive, but the tests will tell us exactly what is low, and if iron is low the tablets work better than a single injection; I would rather treat the cause than the symptom' keeps rapport while declining the tonic.",
+          "Agree three things she can start today - a fixed wake time with the husband taking one night feed, iron-rich food with a source of vitamin C and no tea for an hour around meals, and a short daily walk rather than rest - and write them down.",
+          "Give a safety net that is specific, not generic: return sooner if she loses weight without trying, has fever for more than a week, coughs for more than two weeks, passes blood in stool or urine, becomes breathless climbing one flight, or has any thought that she would be better off dead.",
+          "Use Neighbour's three questions aloud in your own head - if I am right what will happen, how will I know if I am wrong, what will I do then - and let the patient hear the answer to the second one, because that is the safety net.",
+          "Fix the review before she asks: results in three days by phone, a review visit in two weeks with the husband if he can come, and the name of the doctor she should ask for so that the follow-up is with one person.",
+        ],
+      },
+      {
+        heading: "Closing the consultation in the last two minutes",
+        points: [
+          "Signal the close with a summary of the agreed plan in three lines - tests today, the three things to start now, review in two weeks - and ask her to repeat back what she will do, because teach-back is the checklist item most often missed under time pressure.",
+          "Invite the last question with a genuinely open door - 'Is there anything we have not covered that you wanted to ask?' - and be ready for the hidden agenda that surfaces at the door, most often about the husband's drinking or a contraceptive worry.",
+          "Confirm the contingency plan and who to contact if the symptoms change before the review, hand over the written note with the safety-net triggers, and thank her by name.",
+          "Do the housekeeping that the examiner cannot see but the next station will: leave the emotional content of this consultation behind before walking in to the next one.",
+        ],
+      },
+      {
+        heading: "What the checklist actually marks",
+        points: [
+          "Most Indian and international OSCE communication checklists score the same domains: initiating the session, gathering information with a balance of open and closed questions, eliciting ideas, concerns and expectations, explanation in plain language with checking, shared decision making, safety netting, closing, and a global rating of rapport and empathy.",
+          "The global rating is usually weighted heavily and is decided by the examiner's impression of whether the patient was treated as a person: eye contact, sitting at the same level, not writing while she speaks, and responding to emotion when it appears.",
+          "The diagnosis is rarely marked at all in a communication station, so a candidate who spends six minutes on a perfect systems review and one minute on the plan will score below one who spends four minutes on the history and six on ICE, explanation and closing.",
+          "Common deductions are asking ICE as a single mechanical question, using medical words without explanation, reassuring before the concern has been named, promising a normal result, and ending without a review date.",
+        ],
+      },
+    ],
+    summaryStatement:
+      "This is a 34-year-old school teacher, ten months post-partum, with three months of tiredness without red flags, whose examination shows only mild pallor, whose likely contributors are iron deficiency from heavy periods on a vegetarian diet, sleep debt from an infant who wakes at night and low mood under domestic and financial strain, and whose consultation should end with one rational blood panel, three practical changes agreed today, a written safety net and a named review in two weeks rather than an injection or a tonic.",
+    differential: [
+      {
+        diagnosis: "Iron deficiency anaemia from menorrhagia on a vegetarian diet",
+        forIt:
+          "Periods returned four months ago and are heavy with clots, she stopped iron after delivery, she eats no meat or eggs, and the card records conjunctival pallor; NFHS-5 found anaemia in 57% of Indian women of her age.",
+        againstIt:
+          "Pallor is a poor clinical sign and no haemoglobin is available yet; there is no breathlessness, palpitations or pica, so the anaemia, if present, is likely to be mild and may not explain the whole picture.",
+      },
+      {
+        diagnosis: "Depressive disorder with sleep deprivation and adjustment to domestic strain",
+        forIt:
+          "PHQ-2 is positive for low mood, the tiredness is worst in the morning and improves when she is teaching, she cries easily, the infant wakes twice a night and there are cues about the husband and money.",
+        againstIt:
+          "She still enjoys her class, has no hopelessness, weight change or thoughts of self-harm, and the symptoms began around the time her periods became heavy; a PHQ-9 and an Edinburgh Postnatal Depression Scale score are needed before the label is given.",
+      },
+      {
+        diagnosis: "Post-partum thyroiditis or hypothyroidism",
+        forIt:
+          "She is within twelve months of delivery, her sister has thyroid disease, and she reports feeling cold and some weight gain.",
+        againstIt:
+          "There is no goitre, the pulse is 88 and regular, and there is no constipation, hoarseness or dry skin; the weight gain is explained by the pregnancy, and a single TSH settles the question.",
+      },
+      {
+        diagnosis: "Undiagnosed diabetes, tuberculosis or another organic disease",
+        forIt:
+          "Both are common enough in India that every fatigue consultation must consider them, and diabetes in a young woman after pregnancy can follow gestational diabetes that was never rechecked.",
+        againstIt:
+          "There is no thirst, polyuria, weight loss, fever, cough or night sweats, and the examination is normal apart from pallor; a fasting glucose is cheap and a chest radiograph is not indicated on the present history.",
+      },
+    ],
+    investigations: [
+      {
+        test: "Complete blood count with peripheral smear",
+        why: "Anaemia is the commonest organic cause of fatigue in an Indian woman of reproductive age and the smear separates iron deficiency from a macrocytic picture.",
+        expected: "Haemoglobin around 9.5-10.5 g/dL with a low MCV and MCH, a microcytic hypochromic smear and a raised red cell distribution width.",
+      },
+      {
+        test: "Serum ferritin",
+        why: "Iron deficiency precedes anaemia and the ferritin decides whether iron replacement is needed even if the haemoglobin is borderline; it also gives a baseline against which to judge the response.",
+        expected: "Below 30 ng/mL, and often below 15 ng/mL, confirming absent iron stores; a normal or raised ferritin with anaemia would prompt a CRP and a rethink.",
+      },
+      {
+        test: "Serum TSH",
+        why: "Post-partum thyroiditis occurs within a year of delivery and hypothyroidism affects about one in ten Indian adults; the family history raises the pretest probability.",
+        expected: "Normal in the likeliest scenario; a raised TSH is repeated with free T4 and anti-TPO antibodies, and a suppressed TSH in the first post-partum months suggests the thyrotoxic phase of thyroiditis.",
+      },
+      {
+        test: "Fasting plasma glucose or HbA1c",
+        why: "Undiagnosed diabetes presents as fatigue and she may have had unrecognised gestational diabetes; the test is cheap and the result changes management for life.",
+        expected: "Normal; a fasting glucose of 100-125 mg/dL would trigger lifestyle work and an annual recheck, and 126 mg/dL or more on two occasions would diagnose diabetes.",
+      },
+      {
+        test: "Urine routine and microscopy",
+        why: "It is inexpensive and picks up glycosuria, proteinuria and an asymptomatic urinary infection that can present as tiredness after childbirth.",
+        expected: "Normal.",
+      },
+      {
+        test: "PHQ-9, GAD-7 and the Edinburgh Postnatal Depression Scale",
+        why: "The PHQ-2 was positive, and a score quantifies severity, guides whether psychological support alone or an antidepressant is needed, and provides a baseline to measure change at review.",
+        expected: "PHQ-9 of 8-12 and an EPDS of 10-12 suggesting mild to moderate depressive symptoms without suicidal ideation, with a GAD-7 in the mild range.",
+      },
+      {
+        test: "Serum vitamin B12 (if the smear is dimorphic or the MCV is high) and serum creatinine with ALT",
+        why: "A strict vegetarian diet makes B12 deficiency plausible, and silent kidney or liver disease is excluded once with a single sample rather than on repeated visits.",
+        expected: "B12 low-normal in a vegetarian, creatinine and ALT normal.",
+      },
+    ],
+    management: [
+      {
+        heading: "What is agreed in the station itself",
+        points: [
+          "Order the panel today as a single set and explain that the results will be discussed by phone in three days, so that she is not left waiting for a visit to learn what was found.",
+          "Decline the injection and the tonic explicitly but kindly, stating the reason - treat the cause once it is known - and offer the alternative of iron tablets if the ferritin is low, which are free at the Health and Wellness Centre under Anaemia Mukt Bharat.",
+          "Agree three changes to start today: a fixed wake time with the husband taking one of the night feeds, iron-rich food such as green leafy vegetables, jaggery, dals and sprouts with a source of vitamin C and no tea for an hour around meals, and a fifteen-minute walk on the days she feels least like it.",
+        ],
+      },
+      {
+        heading: "Treating the results at the two-week review",
+        points: [
+          "If the ferritin is low, start elemental iron 60-100 mg once daily or on alternate days with vitamin C, warn about black stools and constipation, and continue for three months after the haemoglobin normalises to refill stores; recheck haemoglobin at four weeks expecting a rise of about 1 g/dL.",
+          "Treat the menorrhagia that caused the deficiency: tranexamic acid 1 g three times daily for the days of heavy flow, or mefenamic acid 500 mg three times daily if there is pain, and discuss a levonorgestrel intrauterine system, which treats the bleeding and provides the contraception she has not yet chosen.",
+          "If the TSH is above 10 mIU/L or the free T4 is low, start levothyroxine at 1.6 mcg/kg daily on an empty stomach and recheck TSH in six to eight weeks; if the TSH is mildly raised with a normal free T4, repeat in three months rather than treating.",
+          "If the results are entirely normal, say so as a positive finding, restate the working explanation of sleep debt and low mood, and move the plan to the mood and the home rather than to a second panel.",
+        ],
+      },
+      {
+        heading: "Mood, sleep and the household",
+        points: [
+          "Offer brief behavioural activation and problem-solving counselling at each visit, schedule one pleasurable activity and one social contact a week, and involve the husband in the plan at the review because the night feeds and the money worries are shared problems.",
+          "If the PHQ-9 is 10 or more at review, or the EPDS is 13 or more, add sertraline 50 mg once daily, which is compatible with breastfeeding, warn about the two-week lag and early jitteriness, and review in two weeks; refer the same day if there is any thought of self-harm.",
+          "Ask directly about the husband's drinking and about any violence at home once rapport allows, screen with the AUDIT-C, and know the local de-addiction and women's support services before the question is asked.",
+          "Link her to the ASHA or the anganwadi worker for the infant's immunisation and growth monitoring, and use the visit to offer contraception counselling and the cervical screening she has never had.",
+        ],
+      },
+      {
+        heading: "Safety net, follow-up and continuity",
+        points: [
+          "Write the safety-net triggers on the prescription in her language: weight loss without trying, fever beyond a week, cough beyond two weeks, blood in stool or urine, breathlessness on one flight of stairs, or any thought of ending her life.",
+          "Book the two-week review with the same doctor, give the clinic phone number for the results call, and record in the notes what the plan is, what would change it and when it will be reviewed, because an unstructured wait is what turns a missed diagnosis into a late one.",
+          "Set a functional target to measure at review - marking books three evenings a week, walking to school without stopping - because a symptom score without a functional target cannot show whether the plan is working.",
+        ],
+      },
+    ],
+    viva: [
+      {
+        q: "What do ideas, concerns and expectations mean, and why does the examiner mark them separately from the history?",
+        a: "Ideas are the patient's own explanation of the symptom, concerns are her specific fears about what it might be or lead to, and expectations are what she hoped the visit would produce. They are marked separately because they are the illness experience rather than the disease history, they predict whether the patient will accept the plan, and eliciting them shortens consultations and reduces unnecessary tests. They are asked as three separate open questions at natural moments, not as one phrase read off a checklist.",
+      },
+      {
+        q: "The patient insists on a B-complex injection. How do you refuse without losing rapport?",
+        a: "I acknowledge the request and the reason behind it, explain that an injection treats a deficiency that has not yet been shown and would delay finding the real cause, offer what I can - a same-day panel, iron tablets if stores are low, a review date - and check whether that is acceptable. The principle is to negotiate the expectation rather than deny it: the patient leaves with something she values and the reason for the refusal, not just the refusal.",
+      },
+      {
+        q: "Define safety netting and describe how you document it.",
+        a: "Safety netting is the explicit contingency plan given when diagnostic uncertainty remains: what to watch for, how soon to return, and where to go. Neighbour framed it as three questions - if I am right what do I expect to happen, how will I know if I am wrong, and what will I do then. I document the specific triggers given, the review interval, who the patient should contact and that the patient understood, because a note saying 'reassured, review SOS' does not protect the patient or the doctor.",
+      },
+      {
+        q: "How do you close a consultation in the last minute of an OSCE station?",
+        a: "Summarise the agreed plan in three lines, ask the patient to tell me what she will do so I can check understanding, invite a final question, confirm the review date and the safety net, and thank her by name. The summary and the teach-back are the two items most often skipped when time is short, and they are the two the examiner is waiting for.",
+      },
+      {
+        q: "The simulated patient begins to cry when you ask about home. What do you do?",
+        a: "Stop the questions, offer a tissue and a pause, name the emotion - 'this is clearly very hard for you' - and let her speak. When she is ready I ask one open question about what is happening at home, screen for safety and for thoughts of self-harm, and then explicitly return to the plan with her permission. Responding to emotion is scored in the global rating and pressing on with the history is the commonest way to lose it.",
+      },
+      {
+        q: "Which tests would you order in this woman, which would you not, and why?",
+        a: "I would order a complete blood count with smear, ferritin, TSH, fasting glucose and a urine routine, adding B12 if the smear is dimorphic, all at once. I would not order vitamin D, ANA, tumour markers, a whole-body scan or a chest radiograph, because there is no clinical question they answer here, deficiency of vitamin D is so prevalent in India that a low result would explain nothing, and every test without a pretest question creates a false positive and a new fear.",
+      },
+      {
+        q: "What structure does the Calgary-Cambridge guide give a consultation, and where did this station's marks sit?",
+        a: "Five sequential tasks - initiating the session, gathering information, physical examination, explanation and planning, and closing the session - with two continuous tasks running throughout, building the relationship and providing structure. In this station the marks sat mainly in gathering the illness experience, explanation and planning in plain language with shared decision making, safety netting and closing, with the global rating for the relationship task.",
+      },
+      {
+        q: "Two weeks later every result is normal and she is still tired. What do you say?",
+        a: "I say that the normal results are good news because they exclude anaemia, thyroid disease, diabetes and kidney or liver disease, that the tiredness is nonetheless real, and that the likeliest explanation is broken sleep and low mood under strain, which are treatable. I would not repeat the panel; I would move to a sleep plan, behavioural activation, a PHQ-9 and, if the score is 10 or more, an antidepressant, with a functional target and a review in four weeks.",
+      },
+    ],
+    pitfalls: [
+      "Interrupting the opening narrative within twenty seconds and converting the station into a closed-question systems review that leaves no time for explanation and closing.",
+      "Asking 'What are your ideas, concerns and expectations?' as a single mechanical sentence instead of three natural questions at the right moments, and not acknowledging the answers.",
+      "Reassuring before the concern has been named - 'it is nothing serious' said before she has mentioned her aunt's cancer sounds like dismissal, not reassurance.",
+      "Saying 'there is nothing wrong with you' or 'the tests will be normal', both of which are promises the results may break and the patient will remember.",
+      "Ordering a long panel or agreeing to the injection to end the negotiation, or refusing it flatly without offering an alternative and a reason.",
+      "Ending without a summary, a teach-back, a specific safety net and a named review date, which is where the last quarter of the marks sits.",
+    ],
+    references: [
+      "Silverman J, Kurtz S, Draper J. Skills for Communicating with Patients, 3rd edition, 2013 - the Calgary-Cambridge guide",
+      "Neighbour R. The Inner Consultation, 2nd edition, 2004 - safety netting and housekeeping",
+      "Stewart M et al. Patient-Centered Medicine: Transforming the Clinical Method, 3rd edition, 2014",
+      "Murtagh's General Practice, 8th edition, 2018 - the tired patient and consultation skills",
+      "Oxford Handbook of General Practice, 5th edition, 2020 - tiredness and the consultation",
+      "Kroenke K, Spitzer RL, Williams JB. The PHQ-9: validity of a brief depression severity measure. J Gen Intern Med 2001, and the PHQ-2, Med Care 2003",
+      "Anaemia Mukt Bharat operational guidelines, Ministry of Health and Family Welfare, 2018",
+      "NFHS-5 India fact sheet 2019-21 - anaemia among women aged 15-49",
+      "RCGP MRCGP Simulated Consultation Assessment marking domains, 2023 - data gathering, clinical management, relating to others",
+    ],
+  },
+  {
+    id: "symptom-approach-case-2",
+    title: "Long case: body ache, tiredness and giddiness in a 46-year-old homemaker presented the family physician's way",
+    kind: "long",
+    subjectId: "symptom-approach",
+    opening:
+      "A 46-year-old homemaker presents with generalised body ache, tiredness and intermittent giddiness for eighteen months, having consulted six doctors, taken three courses of injections and two tonics and undergone two rounds of investigations, and she has now been brought by her daughter, who says her mother has become a different person since her grandmother's stroke.",
+    minutes: 30,
+    frequency: "core",
+    sections: [
+      {
+        heading: "Opening the presentation the family medicine way",
+        points: [
+          "Give the identifying data, the complaints in her own order and words with duration, and then the one-line problem statement - 'a 46-year-old homemaker with eighteen months of body ache, tiredness and giddiness, multiple consultations and no diagnosis, presenting at a time of major family strain' - before any detail, because the examiner decides in the first minute whether you have understood the case as a family physician or as a physician.",
+          "State early that the case will be presented under the patient-centred clinical method: the disease history, the illness experience, the whole person and the family, the common ground reached, and the continuity plan; this signposts the examiner to the marks you intend to collect.",
+          "List the six prior consultations and what each did - a general physician who gave diclofenac and a B-complex injection, an orthopaedic surgeon who ordered a spine radiograph, a private laboratory package with twenty tests, two ayurvedic practitioners and a neighbour's advice on calcium - because the investigation cascade is itself a finding.",
+          "Give the negatives that matter as part of the opening: no fever, no weight loss, no joint swelling or morning stiffness beyond thirty minutes, no focal weakness, no true vertigo with vomiting, no bleeding, no cough, and no thoughts of self-harm.",
+        ],
+      },
+      {
+        heading: "History of the complaints and what the pattern says",
+        points: [
+          "The body ache is symmetrical, involves the neck, shoulders, back, hips and calves, is present on waking and worse by evening, is not related to a particular joint and has no swelling; sleep is unrefreshing and she wakes two or three times a night, and the daughter says her mother has not slept properly since the grandmother came to live with them.",
+          "The giddiness is a light-headed, floating sensation that lasts minutes, occurs when she stands after squatting in the kitchen and when she has skipped a meal, and is never a spinning of the room, never with deafness or tinnitus, and never with a fall or loss of consciousness.",
+          "The tiredness is worst in the morning, improves a little when her daughter visits or when she goes to the temple, and is out of proportion to what she does; she describes a heaviness in the chest and a burning of the soles that no cream has helped.",
+          "Menstrual cycles have been irregular for a year with two heavy periods and hot flushes at night, she is vegetarian, she has never had her blood pressure or sugar measured before this illness, and the prior laboratory package showed a haemoglobin of 11.2 g/dL and a vitamin D of 9 ng/mL that was treated with one week of sachets.",
+          "The drug history includes intermittent diclofenac from the shop, a pantoprazole that came with it, calcium and vitamin D3 tablets taken irregularly, a multivitamin syrup and, from the second ayurvedic practitioner, a powder that gave a short-lived sense of wellbeing and increased appetite, which raises the question of an unlabelled steroid.",
+        ],
+      },
+      {
+        heading: "The illness experience: feelings, ideas, function and expectations",
+        points: [
+          "Feelings: she is frightened and ashamed - frightened that the doctors have missed a disease of the bones or the nerves, and ashamed that the family has spent money on her while nothing was found; she cried when asked how the illness has changed her.",
+          "Ideas: she believes the pain is a weakness of the bones from having had three children close together and a calcium deficiency, that the giddiness means her blood pressure is low, and that the tonics did not work because they were not strong enough.",
+          "Function: she has stopped going to her sister's house across the town, cooks less and has handed the evening meal to her daughter-in-law, has stopped attending the women's savings group, and says she is no use to anyone now, which is the sentence that must be followed up.",
+          "Expectations: she wants a full-body check-up with an MRI of the spine because the orthopaedic surgeon mentioned it, a strong injection for the pain, and a certificate that she is genuinely ill, because her son has said the pain is in her head.",
+          "The presentation should quote these in her words and then state what they mean for the plan: the fear of a missed disease needs a clear, complete examination and an honest explanation, and the expectation of an MRI needs a reason why it will not help rather than a refusal.",
+        ],
+      },
+      {
+        heading: "Understanding the whole person: family, life cycle and context",
+        points: [
+          "Draw a three-generation genogram: she is the index patient, married for twenty-six years to a 52-year-old autorickshaw driver who drinks most evenings, with a married son of 24 whose wife and infant live in the house, a daughter of 22 who is married and lives nearby, and a younger son of 17 preparing for an entrance examination; her 74-year-old mother-in-law moved in eighteen months ago after a stroke and needs help with bathing and toileting.",
+          "Place the family in its life cycle stage: it is simultaneously a family launching young adults and a family caring for an ageing member, and the two stages collide in her - she is the daughter-in-law who nurses, the mother whose son sits an examination, and the mother-in-law who has just lost the kitchen to a younger woman.",
+          "Family APGAR, taken at the bedside, scores 4 out of 10: she cannot talk to her husband about problems, decisions are made without her, and she feels the family does not value her, but she is confident her daughter would help in a crisis; this places the family in the moderately dysfunctional range.",
+          "SCREEM shows limited social contact since she stopped the savings group, strong religious support, an economic squeeze from the husband's drinking and the son's coaching fees, primary schooling and the ability to read Hindi, and medical resources limited to a private clinic two kilometres away and a Health and Wellness Centre she has not used.",
+          "The onset of the symptoms coincides with the mother-in-law's arrival, the daughter-in-law's arrival and the loss of her role in the kitchen, and the flares coincide with the husband's drinking bouts; the timeline drawn against the family events is the single most persuasive part of the presentation.",
+          "Ask about safety directly and privately: the husband has never hit her but shouts when drunk, and she sometimes sleeps in the mother-in-law's room to avoid him; there is no immediate danger, but the question must be asked and the answer recorded.",
+        ],
+      },
+      {
+        heading: "Examination to demonstrate",
+        points: [
+          "General: weight 68 kg, height 155 cm, BMI 28.3 by Asian-Indian criteria in the obese range, waist 92 cm, mild pallor, no icterus, no oedema, no lymphadenopathy, no goitre, no cushingoid features despite the powder, and a flat affect with slowed speech and tearfulness on questioning about home.",
+          "Vitals: pulse 84 regular, blood pressure 132/84 mmHg supine and 126/80 mmHg after three minutes standing with no postural symptoms, respiratory rate 16, afebrile; a blood pressure measured at the end of the examination is lower than the first, which is worth stating.",
+          "Musculoskeletal: full range of movement in all joints with no synovitis, no spinal tenderness or deformity, tenderness on palpation at the trapezius, the medial knee, the lateral epicondyle and the gluteal region bilaterally, and pain on pressure over the sternum and the anterior tibia, with normal proximal power and no waddling gait.",
+          "Neurological: normal cranial nerves, power, tone and reflexes, normal sensation including vibration at the ankle, Romberg negative, a normal tandem gait, negative Dix-Hallpike on both sides and no nystagmus, which together make a vestibular or a neurological cause of the giddiness unlikely.",
+          "Cardiovascular, respiratory, abdominal and breast examination normal, with a documented statement that a per speculum and per vaginal examination will be offered at a separate visit with a chaperone in view of the menstrual change, and that cervical screening has never been done.",
+          "Mental state examination: neat but with reduced self-care according to the daughter, low mood, reduced psychomotor activity, ideas of worthlessness, no delusions, no hallucinations, passive thoughts that she would not mind if she did not wake up but no plan or intent, with a PHQ-9 of 15 and a GAD-7 of 11.",
+        ],
+      },
+      {
+        heading: "The problem list and finding common ground",
+        points: [
+          "Present a numbered problem list that mixes the biomedical and the psychosocial without apology: widespread pain with unrefreshing sleep meeting criteria for fibromyalgia; a moderate depressive episode with somatic presentation and passive death wish; vitamin D deficiency inadequately treated; perimenopause with two heavy periods; obesity with an unmeasured cardiometabolic risk; orthostatic light-headedness related to skipped meals; caregiver burden; a husband with harmful alcohol use; and a moderately dysfunctional family in a double life cycle transition.",
+          "Common ground begins with an explanation the patient can accept: the pain is real and has a name, the nervous system has become sensitised by months of poor sleep and strain, the bones are not weak on examination, and the giddiness comes from standing up quickly on an empty stomach and not from low blood pressure.",
+          "Negotiate the MRI by agreeing the goal rather than the test: she wants to know that nothing has been missed, and a complete examination in front of her family, a small targeted panel and a promise to revisit the question if anything changes serve that goal better than an image that will show age-related change and generate another consultation.",
+          "Agree priorities in her order, not yours: sleep and pain first, because they are what she came for, then the mood, which she does not yet accept as a problem, then the household, which she says cannot change; the plan is written and a copy given to her and the daughter.",
+          "State the realistic expectation openly: improvement will be measured in function - cooking one meal, walking to the temple, sleeping five hours without waking - over three months, not in the disappearance of pain in a week, and the tonic and injection habit will be replaced by a fixed review with one doctor.",
+        ],
+      },
+    ],
+    summaryStatement:
+      "This is a 46-year-old vegetarian homemaker in the perimenopause, in a joint family that is simultaneously launching adult children and caring for a stroke-disabled mother-in-law, with eighteen months of widespread pain, unrefreshing sleep, tiredness and orthostatic light-headedness that began with the loss of her role in the household and the arrival of a dependent elder, with a normal neurological and musculoskeletal examination apart from widespread tenderness, a moderate depressive episode with somatic presentation, inadequately treated vitamin D deficiency, obesity and an unassessed cardiometabolic risk, a husband with harmful alcohol use and a moderately dysfunctional family, and a history of repeated consultations and tonics in place of a diagnosis, whose management rests on a shared explanation, treatment of the sleep, pain and mood, a family meeting and a continuity plan with one physician.",
+    differential: [
+      {
+        diagnosis: "Moderate depressive episode with somatic presentation and fibromyalgia as the pain phenotype",
+        forIt:
+          "Onset with a cluster of losses, morning-worst tiredness that improves with company, unrefreshing sleep, widespread pain with tenderness at multiple sites and no synovitis, a PHQ-9 of 15 with ideas of worthlessness and a passive death wish, and a Family APGAR of 4; the pain meets the 2016 ACR criteria with a widespread pain index above 7 and a symptom severity score above 5 for more than three months.",
+        againstIt:
+          "The son's dismissal that the pain is in her head must not become the doctor's, and the diagnosis is made only after an examination that has looked for inflammatory, metabolic and neurological disease; the vitamin D deficiency and the perimenopause are real contributors that a purely psychiatric label would leave untreated.",
+      },
+      {
+        diagnosis: "Osteomalacia from severe vitamin D deficiency",
+        forIt:
+          "A vitamin D of 9 ng/mL treated for only a week, a vegetarian diet, indoor life with full clothing, bone pain on pressure over the sternum and tibia, and body ache that is worst by evening.",
+        againstIt:
+          "Proximal power is normal with no waddling gait, there is no history of fracture, and the pain distribution includes soft-tissue tender points that osteomalacia does not explain; a calcium, phosphate, alkaline phosphatase and repeat 25-hydroxyvitamin D will separate deficiency from true osteomalacia.",
+      },
+      {
+        diagnosis: "Hypothyroidism, iron deficiency anaemia or undiagnosed diabetes",
+        forIt:
+          "A woman of 46 with tiredness, weight gain, heavy periods, a haemoglobin of 11.2 g/dL on a vegetarian diet and a BMI of 28 has a meaningful pretest probability of each, and none has been tested properly in eighteen months of consultations.",
+        againstIt:
+          "There is no goitre, cold intolerance, constipation or bradycardia, the pallor is mild, and there is no thirst or polyuria; these are excluded once with a TSH, a complete blood count with ferritin and a fasting glucose rather than pursued repeatedly.",
+      },
+      {
+        diagnosis: "Inflammatory polyarthritis, polymyalgia or early connective tissue disease",
+        forIt:
+          "Widespread pain and morning symptoms in a middle-aged woman, and the fear of a missed disease demands that the inflammatory causes be stated and excluded.",
+        againstIt:
+          "Morning stiffness lasts under thirty minutes, there is no synovitis, no rash, no Raynaud phenomenon, no dry eyes or mouth, no fever or weight loss, and the ESR and CRP on the earlier package were normal; an ANA is not ordered without these features.",
+      },
+    ],
+    investigations: [
+      {
+        test: "Complete blood count with peripheral smear and serum ferritin",
+        why: "To confirm and classify the anaemia found on the package and to decide whether iron replacement is needed for the heavy perimenopausal periods and the vegetarian diet.",
+        expected: "Haemoglobin 11.0-11.5 g/dL with a low-normal MCV and a ferritin below 30 ng/mL indicating iron deficiency in the absence of inflammation.",
+      },
+      {
+        test: "Serum calcium, phosphate, alkaline phosphatase, 25-hydroxyvitamin D and serum creatinine",
+        why: "To decide whether the bone pain is osteomalacia, which needs a longer and supervised course of cholecalciferol and calcium, or simple deficiency, and to check renal function before treatment.",
+        expected: "Calcium 8.6-8.9 mg/dL, phosphate low-normal, alkaline phosphatase mildly raised at 130-160 IU/L, 25-hydroxyvitamin D below 12 ng/mL and normal creatinine, suggesting deficiency with early osteomalacic change.",
+      },
+      {
+        test: "Serum TSH",
+        why: "Hypothyroidism is common at this age in Indian women and produces tiredness, weight gain, body ache and menorrhagia; a single measurement excludes it.",
+        expected: "Normal; if raised above 10 mIU/L or with a low free T4, levothyroxine would be started and the pain reassessed after three months.",
+      },
+      {
+        test: "Fasting plasma glucose or HbA1c and a fasting lipid profile",
+        why: "An obese 46-year-old with a waist of 92 cm has never been screened; the giddiness with skipped meals and the burning soles both need diabetes excluded, and the cardiometabolic risk is the prevention agenda for the next decade.",
+        expected: "Fasting glucose 100-110 mg/dL in the prediabetic range, and a raised triglyceride with a low HDL fitting the metabolic syndrome.",
+      },
+      {
+        test: "ESR and CRP",
+        why: "A normal acute phase response in the presence of widespread pain supports a non-inflammatory diagnosis and is the one result that will reassure the family that nothing inflammatory has been missed.",
+        expected: "ESR 15-25 mm in the first hour and a CRP below 6 mg/L.",
+      },
+      {
+        test: "PHQ-9, GAD-7 and a fibromyalgia widespread pain index with symptom severity score",
+        why: "To quantify the mood disorder for treatment decisions and monitoring, and to document the fibromyalgia diagnosis by the 2016 criteria so that the label is defended by numbers rather than by impression.",
+        expected: "PHQ-9 of 15, GAD-7 of 11, widespread pain index of 11 and a symptom severity score of 8, meeting criteria.",
+      },
+      {
+        test: "Urine routine, and a per speculum examination with cervical screening by VIA or Pap test at the next visit",
+        why: "Urine is cheap and excludes glycosuria and proteinuria, and a woman of 46 with menstrual change who has never been screened is owed the examination that the symptom visit makes possible.",
+        expected: "Urine normal; cervix normal on VIA with a negative test, and no pelvic mass to explain the heavy periods.",
+      },
+      {
+        test: "AUDIT questionnaire for the husband at a family visit",
+        why: "The husband's drinking drives the economic strain, the fear at night and the flares of her symptoms, and the score decides whether brief intervention or referral for de-addiction is offered.",
+        expected: "A score of 16-19 indicating harmful use short of dependence, which makes a brief intervention by the family physician worthwhile.",
+      },
+    ],
+    management: [
+      {
+        heading: "The explanation and the end of the investigation cascade",
+        points: [
+          "Give the diagnosis its name and its mechanism in her language: the pain is fibromyalgia, a sensitised nervous system after months of poor sleep and strain, together with low mood and low vitamin D, and it is neither imagined nor a weakness of the bones; show her the normal examination and the normal ESR as the evidence.",
+          "Close the cascade explicitly: no MRI, no further packages, no injections from the shop, no unlabelled powders, with a written statement of which tests were done and what they showed, so that the next doctor she meets does not start again.",
+          "Give the son the explanation in front of the family, because a diagnosis with a name and a plan is the certificate she asked for, and because the family will follow the plan only if it stops calling the pain imaginary.",
+        ],
+      },
+      {
+        heading: "Treating the sleep, the pain and the body",
+        points: [
+          "Start amitriptyline 10 mg at night, increasing to 25 mg over two weeks, for sleep and pain, warning about morning drowsiness and dry mouth; if the depression scores do not fall in six weeks or amitriptyline is not tolerated, switch to duloxetine 30 mg daily, increased to 60 mg, which treats both the pain and the mood.",
+          "Give cholecalciferol 60,000 IU once a week for eight weeks with elemental calcium 1000 mg daily, then 60,000 IU once a month, and recheck calcium and alkaline phosphatase at three months; stop the diclofenac and explain why it will not treat this pain and harms the stomach and kidneys.",
+          "Start iron at 60-100 mg elemental iron on alternate days if the ferritin is low, and treat the heavy periods with tranexamic acid 1 g three times daily on the heavy days, referring for an endometrial assessment if bleeding is intermenstrual, persistent or associated with a pelvic finding.",
+          "Prescribe graded activity rather than rest: a ten-minute walk after breakfast increased by ten percent a week, a return to cooking one meal a day, and a return to the savings group meeting, each written as a target with a date; sleep hygiene with a fixed wake time, no daytime sleep and no tea after six in the evening.",
+          "Treat the light-headedness by advice, not by drugs: three meals a day, water before standing, rising from squatting in two stages, and a recheck of standing blood pressure if it recurs, with an explanation that her blood pressure is normal and does not need a tonic.",
+        ],
+      },
+      {
+        heading: "Treating the mood and the family",
+        points: [
+          "Treat the depressive episode actively: behavioural activation using the same activity targets, problem-solving counselling in fifteen-minute slots over four visits, and, given a PHQ-9 of 15 with a passive death wish, an antidepressant - duloxetine if the pain is prominent or sertraline 50 mg daily if it is not - with a review in two weeks and a safety plan that the daughter knows.",
+          "Hold a family meeting with the husband, both sons and the daughter: explain the diagnosis, redistribute the mother-in-law's care so that the daughter-in-law and the sons share the toileting and bathing, agree that the kitchen is shared rather than surrendered, and give the older son a role in accompanying his mother to reviews.",
+          "Offer the husband a brief intervention for his drinking in a separate visit using the AUDIT score and the FRAMES approach, link him to the district de-addiction centre if he agrees, and tell her privately where she can go if the shouting ever becomes violence, with the number of the one-stop centre written on her card.",
+          "Refer the mother-in-law for a home-based rehabilitation assessment and register her for the palliative and home care services of the Health and Wellness Centre, because reducing the caregiver burden is treatment for the caregiver.",
+        ],
+      },
+      {
+        heading: "The continuity plan",
+        points: [
+          "Name one physician as hers, book fixed reviews at two weeks, six weeks and three months and then quarterly, and make the appointment the end of the tonic habit: she comes because it is her day, not because the pain is worse, which is the shift from symptom-driven to scheduled care that breaks somatisation cycles.",
+          "Keep a problem list and a family folder with the genogram, the Family APGAR, the medication list and the review dates, and record at each visit the functional targets met, the PHQ-9 and a pain score, so that improvement is visible to her and to the examiner.",
+          "Arrange one home visit in the first month to see the sleeping arrangement, the mother-in-law's care and the husband's drinking in context, and enlist the ASHA to keep the link when she does not attend.",
+          "Set the referral thresholds now: a psychiatrist if suicidal ideation becomes active or the PHQ-9 has not fallen by half at three months, a rheumatologist if synovitis, a rising ESR or a rash appears, and a gynaecologist for persistent or intermenstrual bleeding.",
+        ],
+      },
+      {
+        heading: "Prevention and health promotion woven into the visits",
+        points: [
+          "Use the review visits to complete what eighteen months of illness did not: a blood pressure recorded at each visit, an HbA1c and lipids managed by lifestyle with a recheck at six months, a weight target of five percent in six months, cervical screening by VIA and a clinical breast examination, and menopause counselling about hot flushes and contraception until twelve months of amenorrhoea.",
+          "Screen the rest of the household opportunistically: the husband's blood pressure and glucose, the mother-in-law's secondary stroke prevention, the daughter-in-law's antenatal and postnatal care, and the infant's immunisation card.",
+          "Make health literacy part of the plan: teach her to read her own card, explain why the powder from the practitioner may have been a steroid, and agree that no new medicine enters the house without being shown at the next review.",
+        ],
+      },
+    ],
+    viva: [
+      {
+        q: "What are the components of the patient-centred clinical method and where did you use each in this case?",
+        a: "In the third edition of Stewart's method there are four interactive components: exploring health, disease and the illness experience; understanding the whole person in the context of family and community; finding common ground on the problems, the goals and the roles; and enhancing the patient-doctor relationship. The earlier six-component version listed prevention and being realistic separately. I used the first in the feelings, ideas, function and expectations history, the second in the genogram, the life cycle and the Family APGAR, the third in the negotiated explanation and the written plan, and the fourth in the continuity plan with one physician.",
+      },
+      {
+        q: "What is the difference between disease and illness, and why does it matter here?",
+        a: "Disease is the pathophysiological process the doctor names; illness is the patient's lived experience of being unwell, with its feelings, ideas, effect on function and expectations. In this woman six doctors looked for a disease and found none, so they concluded there was nothing to treat, while the illness - the fear, the lost role, the exhaustion, the family's disbelief - went untreated and generated more consultations. Managing the illness is what stops the cascade, and here it also revealed the treatable disease that was missed: vitamin D deficiency, depression and prediabetes.",
+      },
+      {
+        q: "Describe the Family APGAR and interpret this patient's score.",
+        a: "It is Smilkstein's five-question screen of a family member's satisfaction with the family's Adaptation, Partnership, Growth, Affection and Resolve, each scored 0 to 2, giving a maximum of 10; 7 to 10 is highly functional, 4 to 6 moderately dysfunctional and 0 to 3 severely dysfunctional. Her score of 4 places the family in the moderately dysfunctional range, driven by the partnership and affection items about her husband, and it identifies the daughter as the resource to be used in the plan.",
+      },
+      {
+        q: "In which stage of the family life cycle is this family, and what does that predict?",
+        a: "By Duvall's stages it is in two at once: a family launching young adults, with a married son and daughter and a third child about to leave, and a family with ageing members after the mother-in-law's arrival. The overlap predicts exactly what happened - role loss for the mother when the daughter-in-law took the kitchen, caregiver burden without preparation, financial strain from the son's education and the elder's care, and marital strain with the husband's drinking - and it tells the physician that the transitions themselves, not just the individual, need managing.",
+      },
+      {
+        q: "How do you make a diagnosis of fibromyalgia, and is it a diagnosis of exclusion?",
+        a: "By the 2016 ACR revision: generalised pain in at least four of five body regions for at least three months, with a widespread pain index of 7 or more and a symptom severity score of 5 or more, or a widespread pain index of 4 to 6 with a symptom severity score of 9 or more; the tender point count is no longer required. It is a diagnosis made on positive criteria and can coexist with other diseases, so it is not strictly a diagnosis of exclusion, but a first diagnosis requires the examination and a small panel - blood count, ESR or CRP, TSH, calcium and vitamin D - to make sure an inflammatory, metabolic or endocrine disease is not being mislabelled.",
+      },
+      {
+        q: "How do you stop the investigation cascade without the patient feeling dismissed?",
+        a: "By reattribution: first make her feel understood through a full history and a complete examination in front of the family, then broaden the agenda by linking the timeline of symptoms to the timeline of family events, and then make the link between strain, poor sleep and a sensitised nervous system as the mechanism of real pain. I give the diagnosis a name, put in writing which tests were done and why no more are needed, offer a fixed review in place of an open invitation to return when worse, and promise to revisit the question of imaging if the examination changes.",
+      },
+      {
+        q: "What is continuity of care, what are its types, and how did you build it into the plan?",
+        a: "Continuity is care experienced as coherent and connected over time. Haggerty described three types: informational, where the record follows the patient; management, where the plan is consistent across providers; and relational, where the same physician sees the patient over time. I built informational continuity with the problem list and family folder, management continuity with the written plan and named referral thresholds, and relational continuity by naming one physician and booking scheduled rather than symptom-driven reviews.",
+      },
+      {
+        q: "She has a passive death wish. When would you refer to a psychiatrist and what do you do today?",
+        a: "Today I ask directly about plans, means and intent, document that the ideation is passive without plan or intent, agree a safety plan with the daughter, remove the diclofenac and any stored tablets from her reach, start treatment and see her in two weeks. I refer the same day if there is active ideation, a plan, a previous attempt, psychotic symptoms or bipolar features, and I refer non-urgently if the PHQ-9 has not fallen by half after three months of adequate treatment or if two antidepressants have failed.",
+      },
+    ],
+    pitfalls: [
+      "Presenting the case as a diagnosis of exclusion with a psychiatric label and no positive findings, which loses the fibromyalgia, the vitamin D, the prediabetes and the perimenopause, and confirms the son's view that the pain is in her head.",
+      "Presenting the family history as a list of relatives rather than as a genogram with a life cycle stage, a Family APGAR and a timeline of events against symptoms, which is where the family medicine marks are.",
+      "Agreeing to the MRI to end the negotiation, or refusing it without addressing the fear behind it, so that the cascade continues at the next clinic.",
+      "Treating the body ache with a repeat course of diclofenac and vitamin injections, which is what the six earlier doctors did, and calling that management.",
+      "Failing to ask about safety at home, about the husband's drinking and about self-harm, or asking in front of the family so that the true answer is never given.",
+      "Offering an open-ended 'come back if it gets worse' instead of a scheduled review with one physician, which restores the symptom-driven pattern the plan was meant to break.",
+    ],
+    references: [
+      "Stewart M, Brown JB, Weston WW et al. Patient-Centered Medicine: Transforming the Clinical Method, 3rd edition, 2014",
+      "McWhinney IR, Freeman T. Textbook of Family Medicine, 4th edition, 2016 - illness, disease and the family",
+      "Smilkstein G. The Family APGAR: a proposal for a family function test and its use by physicians. J Fam Pract 1978",
+      "Wolfe F et al. 2016 revisions to the 2010/2011 fibromyalgia diagnostic criteria. Semin Arthritis Rheum 2016",
+      "Goldberg D, Gask L, O'Dowd T. The treatment of somatization: teaching techniques of reattribution. J Psychosom Res 1989",
+      "Haggerty JL et al. Continuity of care: a multidisciplinary review. BMJ 2003",
+      "NICE NG193, Chronic pain (primary and secondary) in over 16s, 2021",
+      "Indian Council of Medical Research and Endocrine Society of India guidance on vitamin D deficiency, and the Endocrine Society clinical practice guideline on vitamin D, 2011 updated 2024",
+      "National Mental Health Survey of India 2015-16 - prevalence and treatment gap of depressive disorders",
+      "Murtagh's General Practice, 8th edition, 2018 - the patient with multiple symptoms and somatisation",
+      "Rakel and Rakel, Textbook of Family Medicine, 10th edition, 2024 - the family genogram and the family life cycle",
+    ],
+  },
+];
+
+const subject: Subject = {
+  id: "symptom-approach",
+  title: "Undifferentiated Symptoms",
+  blurb: "The complaint as it actually walks in: tiredness, giddiness, body ache, chest pain, fever without focus.",
+  icon: "Stethoscope",
+  papers: ["I", "II"],
+  topics,
+  cases,
+};
+
+export default subject;
