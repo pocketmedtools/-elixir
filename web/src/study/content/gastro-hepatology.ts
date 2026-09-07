@@ -2094,3 +2094,419 @@ topics.push({
   ],
 });
 
+
+const cases: ClinicalCase[] = [
+  {
+    id: "gastro-hepatology-case-1",
+    title: "Abdominal distension and a first haematemesis in a 45-year-old man who drinks - alcohol-related cirrhosis with ascites and variceal bleeding",
+    kind: "long",
+    subjectId: "gastro-hepatology",
+    opening:
+      "A 45-year-old lorry driver from a taluk town, who has drunk 180 to 250 mL of country liquor every evening for 20 years, presents with progressive swelling of the abdomen for 2 months, swelling of both feet for 1 month, and one episode of vomiting about a cupful of fresh blood with a black tarry stool 3 days ago, without abdominal pain, fever, confusion or reduced urine output.",
+    minutes: 30,
+    frequency: "core",
+    sections: [
+      {
+        heading: "How to open the presentation",
+        points: [
+          "Give the identifying data, the quantified alcohol history and the two complaints in one breath, because in this case the examiner wants to hear at once that you have recognised chronic liver disease with portal hypertension that has just declared itself with a bleed.",
+          "Say: 'Mr X, a 45-year-old lorry driver who has drunk about 200 mL of arrack daily for 20 years, presents with progressive abdominal distension for 2 months, bilateral pedal oedema for 1 month, and one episode of haematemesis of about 150 mL with melaena 3 days ago, for which he was admitted overnight at a private hospital, transfused one unit of blood and referred here.'",
+          "State the relevant negatives immediately: no abdominal pain, no fever, no jaundice noticed by the family, no day-night reversal of sleep, no altered behaviour or tremor of the hands, no reduction in urine output, and no previous episode of bleeding, jaundice or ascites.",
+          "Mention what happened between the bleed and arrival - the transfusion, whether an endoscopy was done and what it showed, whether an intravenous infusion of octreotide or terlipressin and an antibiotic were given - because the quality of that first 72 hours decides his chance of rebleeding.",
+          "Close the opening with the functional state now: he is able to walk to the toilet, has passed no further black stool for 24 hours, is eating a normal diet, and has not drunk alcohol since the bleed.",
+        ],
+      },
+      {
+        heading: "History of the presenting illness - distension, oedema and the bleed",
+        points: [
+          "Characterise the distension: gradual over 8 weeks, more in the flanks than the epigastrium, with tightness of the waist and increasing breathlessness on lying flat, without early satiety, vomiting or a change in bowel habit - a fluid rather than a gas or a mass distension.",
+          "Ask what the family noticed that the patient did not: yellowness of the eyes, a change in the colour of the urine, wasting of the shoulders and thighs while the belly grew, easy bruising, bleeding gums or epistaxis, and a change in the pattern of sleep.",
+          "Characterise the bleed: a single cupful of fresh red blood without preceding retching, followed by two black tarry stools, giddiness on standing and no chest pain; the absence of prior retching argues against a Mallory-Weiss tear and the volume and the black stool make a variceal source likely.",
+          "Ask directly about the precipitants of decompensation that are always present and rarely volunteered: a binge in the fortnight before the bleed, NSAIDs bought for body ache, an indigenous preparation for the swelling, a recent fever or loose stools, and any recent salt-heavy diet.",
+          "Search for the symptoms of the complications you will be asked about: fever or abdominal pain suggesting spontaneous bacterial peritonitis, confusion or drowsiness suggesting encephalopathy, and a fall in urine output suggesting hepatorenal syndrome.",
+        ],
+      },
+      {
+        heading: "The alcohol history presented as a table",
+        points: [
+          "Present the alcohol history as a table with columns for beverage, daily quantity, years of use, grams of alcohol per day and pattern, because the examiner is marking whether you can convert what the patient says into a dose: 200 mL of 40% arrack is about 64 g of ethanol a day, which is above the 40 g threshold at which cirrhosis becomes likely in men after 10 years.",
+          "Record the AUDIT-C or CAGE questions with the answers verbatim: he has felt he should cut down, his wife has annoyed him by criticising, he does not feel guilty, and he has taken a morning drink on the days after a heavy night - a CAGE score of 3.",
+          "Ask about withdrawal on the days he could not drink: tremor, sweating, insomnia and a previous seizure or an episode of seeing things that were not there, since a bleeding cirrhotic who goes into delirium tremens on day 3 of admission is a common death in the ward.",
+          "Ask about previous attempts to stop, who supported them, what made them fail, and whether he has ever been told his liver is affected; in this man a doctor told him 4 years ago to stop after an episode of vomiting and he cut down for 3 months.",
+          "Record smoking (10 beedis a day), tobacco chewing, the family's response to the drinking, the debts at the arrack shop, and whether his wife and children have been affected, because the counselling that follows must address the household and not only the patient.",
+        ],
+      },
+      {
+        heading: "Past, drug, personal and socio-economic history",
+        points: [
+          "List previous jaundice, blood transfusion, tattooing, injections from unqualified practitioners, surgery and unprotected sex, since alcohol and hepatitis B or C together accelerate cirrhosis and the viral markers must be sent whatever the alcohol history.",
+          "Record diabetes, hypertension and tuberculosis, previous admissions for any reason, and every drug with its dose, including paracetamol, NSAIDs, ayurvedic and siddha preparations and any sedative given for sleep.",
+          "Ask about the diet: rice thrice a day with little protein, salt added at the table, and the meals skipped on drinking days, because the malnutrition of the alcoholic is as much a determinant of outcome as the liver disease.",
+          "Socio-economic details decide the plan: a daily-wage driver who is the sole earner, a wife who rolls beedis, two school-going children, a house 35 km from the nearest endoscopy service and no health insurance beyond the state scheme.",
+          "Ask what the family understands about the illness, whether they believe stopping alcohol will cure it, and whether they have been told the word cirrhosis, since the conversation about prognosis and transplantation starts from where they are.",
+        ],
+      },
+      {
+        heading: "General and abdominal examination to demonstrate",
+        points: [
+          "General survey: a thin man with a BMI of 19 kg/m2 and marked wasting of the temporalis and shoulder girdle, pulse 96 per minute regular, blood pressure 104/70 mmHg lying with no postural drop, afebrile, mild icterus, moderate pallor, no lymphadenopathy, and bilateral pitting pedal oedema up to the mid-shin.",
+          "Stigmata of chronic liver disease demonstrated one by one: spider naevi over the chest and upper arms (count and record more than 5), palmar erythema, Dupuytren contracture of the right ring finger, bilateral parotid enlargement, gynaecomastia, loss of axillary and pubic hair and testicular atrophy, and leukonychia with clubbing of the fingers.",
+          "Say that you looked for the flapping tremor with the arms outstretched and wrists dorsiflexed for 30 seconds and that it was absent, that the patient could draw a five-pointed star and subtract serial sevens, and that there was no fetor hepaticus - grading him as having no overt encephalopathy.",
+          "Abdomen: uniformly distended with an everted umbilicus, fullness of the flanks, dilated veins over the abdominal wall with flow away from the umbilicus, no visible peristalsis, girth 94 cm at the umbilicus; soft, non-tender, with a firm non-tender liver edge 3 cm below the right costal margin in the midclavicular line with a span of 14 cm and a sharp regular border, and a spleen palpable 4 cm below the left costal margin.",
+          "Demonstrate the ascites in the order the examiner expects: flank dullness, shifting dullness positive from both sides, fluid thrill positive with the assistant's hand on the midline, and the puddle sign not attempted; no free-fluid signs of tenderness or guarding that would suggest peritonitis.",
+          "Complete the examination with the chest (no pleural effusion, no crepitations), the cardiovascular system (normal heart sounds, no signs of failure), a rectal examination (melaena noted, no haemorrhoids) and the genitalia (testicular atrophy, no hernia), and say that the neurological examination was normal apart from the tests of encephalopathy already described.",
+        ],
+      },
+      {
+        heading: "Scoring the disease and staging the bleed before the summary",
+        points: [
+          "Put the findings together aloud: a 20-year history of hazardous drinking, stigmata of chronic liver disease, a firm liver with splenomegaly, ascites and dilated abdominal wall veins, and an upper gastrointestinal bleed - decompensated cirrhosis with portal hypertension, most probably alcohol-related, presenting with a first variceal bleed.",
+          "Give the Child-Pugh score from the bedside and the reports: bilirubin 2.8 mg/dL (2 points), albumin 2.6 g/dL (3 points), INR 1.8 (2 points), moderate ascites (2 points), no encephalopathy (1 point) - a total of 10, Child-Pugh class B - and say that the MELD-Na would be calculated once the creatinine and sodium are back.",
+          "State that the SAAG is expected to be more than 1.1 g/dL, confirming portal hypertension as the cause of the ascites, and that the ascitic fluid polymorph count below 250 per cubic millimetre is what allows you to say spontaneous bacterial peritonitis has been ruled out and not merely that the abdomen was non-tender.",
+          "Stage the bleed: a first variceal bleed in a Child B patient, 3 days old, haemodynamically stable now, which puts him in the group with a 6-week mortality of about 15 to 20% and a rebleeding risk of 60% within a year without secondary prophylaxis.",
+          "Only then give the summary statement, so that the examiner hears a diagnosis that has been reasoned to with its aetiology, its complications and its severity in the same sentence.",
+        ],
+      },
+    ],
+    summaryStatement:
+      "This is a 45-year-old lorry driver with 20 years of hazardous alcohol use of about 64 g of ethanol a day and a CAGE score of 3, who presents with 2 months of progressive abdominal distension and pedal oedema and a single episode of haematemesis with melaena 3 days ago, and who on examination has wasting, mild icterus, multiple stigmata of chronic liver disease, a firm 14 cm liver, a 4 cm spleen, dilated abdominal wall veins and moderate ascites with shifting dullness and a fluid thrill, without encephalopathy or peritonism - a clinical picture of decompensated alcohol-related cirrhosis with portal hypertension, Child-Pugh class B (score 10), presenting with a first variceal bleed that is now controlled, in whom spontaneous bacterial peritonitis, hepatorenal syndrome and concomitant viral hepatitis must be excluded and in whom secondary prophylaxis and abstinence are the two interventions that will decide survival.",
+    differential: [
+      {
+        diagnosis: "Alcohol-related cirrhosis with portal hypertension and a variceal bleed",
+        forIt:
+          "Two decades of drinking above the threshold dose, the full set of stigmata including parotid enlargement and Dupuytren contracture, a firm liver with splenomegaly, ascites and a large painless haematemesis with melaena.",
+        againstIt:
+          "The aetiology is presumed rather than proved until hepatitis B and C serology is negative, and the source of the bleed is presumed until endoscopy shows varices with stigmata of recent bleeding rather than a peptic ulcer, which causes a third of bleeds even in cirrhotics.",
+      },
+      {
+        diagnosis: "Bleeding peptic ulcer or portal hypertensive gastropathy in a cirrhotic",
+        forIt:
+          "Alcohol, beedi smoking and NSAIDs bought for body ache make ulcer disease likely; the haematemesis was a single episode of modest volume.",
+        againstIt:
+          "No epigastric pain, no NSAID use in the preceding month on direct questioning, and the presence of splenomegaly and ascites means varices are almost certainly present; only endoscopy settles it.",
+      },
+      {
+        diagnosis: "Abdominal tuberculosis with ascites, or hepatocellular carcinoma complicating cirrhosis",
+        forIt:
+          "Ascites and weight loss in a malnourished man from an endemic area; a cirrhotic who decompensates over 2 months may have developed a tumour.",
+        againstIt:
+          "No fever, night sweats or doughy abdomen and the ascites has the clinical features of a transudate; the liver edge is regular and non-tender; a SAAG above 1.1, a low ascitic fluid protein, an ultrasound without a mass and a normal alpha-fetoprotein exclude both.",
+      },
+    ],
+    investigations: [
+      {
+        test: "Complete blood count, prothrombin time with INR, liver function tests and serum albumin",
+        why: "Anaemia and thrombocytopenia quantify the blood loss and the hypersplenism; bilirubin, albumin and INR are three of the five Child-Pugh variables and the INR and albumin tell you the synthetic reserve.",
+        expected:
+          "Haemoglobin 8.2 g/dL, MCV 104 fL, platelets 78,000 per cubic millimetre, bilirubin 2.8 mg/dL, AST 96 and ALT 42 U/L with an AST:ALT ratio above 2, GGT 320 U/L, albumin 2.6 g/dL, INR 1.8.",
+      },
+      {
+        test: "Diagnostic paracentesis with ascitic fluid cell count and differential, albumin, protein and culture in blood culture bottles",
+        why: "Every cirrhotic with ascites who is admitted, and every cirrhotic who bleeds, must have the fluid tapped: a polymorph count of 250 or more per cubic millimetre diagnoses spontaneous bacterial peritonitis, and the serum-ascites albumin gradient classifies the ascites.",
+        expected:
+          "Clear straw-coloured fluid, polymorphs 40 per cubic millimetre, ascitic albumin 0.8 g/dL giving a SAAG of 1.8 g/dL, ascitic protein 1.1 g/dL, culture sterile - portal hypertensive ascites without SBP, and a low-protein fluid that carries a high risk of SBP in future.",
+      },
+      {
+        test: "Serum creatinine, urea, sodium and potassium",
+        why: "Creatinine and sodium complete the MELD-Na score, the potassium decides whether spironolactone can be started, and a rising creatinine after a bleed is the first sign of hepatorenal syndrome or of over-diuresis.",
+        expected:
+          "Creatinine 0.9 mg/dL, urea 42 mg/dL raised by the digested blood, sodium 131 mmol/L, potassium 3.8 mmol/L.",
+      },
+      {
+        test: "Upper gastrointestinal endoscopy within 12 hours of the bleed, or as soon as possible if not already done",
+        why: "It identifies the source, allows band ligation of the varices in the same session, and grades the varices and the gastropathy for the prophylaxis plan.",
+        expected:
+          "Three columns of large oesophageal varices with red wale marks and a nipple sign at the lower end, mild portal hypertensive gastropathy, no gastric varices and no peptic ulcer; band ligation of the varices performed.",
+      },
+      {
+        test: "Ultrasound of the abdomen with Doppler of the portal vein, and serum alpha-fetoprotein",
+        why: "It confirms the shrunken nodular liver and the splenomegaly, measures the portal vein and its direction of flow, excludes portal vein thrombosis, and screens for hepatocellular carcinoma, which every cirrhotic needs 6-monthly.",
+        expected:
+          "Liver 12 cm with a coarse echotexture and an irregular surface, splenomegaly 15 cm, portal vein 15 mm with hepatopetal flow and no thrombus, moderate free fluid, no focal lesion; alpha-fetoprotein 6 ng/mL.",
+      },
+      {
+        test: "HBsAg, anti-HCV, fasting glucose, HbA1c and a chest radiograph",
+        why: "A second cause of liver disease changes both the prognosis and the treatment, diabetes coexists with alcohol-related liver disease in a third, and the chest film looks for tuberculosis and a hepatic hydrothorax before any procedure.",
+        expected:
+          "HBsAg and anti-HCV negative, fasting glucose 118 mg/dL and HbA1c 6.2%, chest radiograph normal.",
+      },
+    ],
+    management: [
+      {
+        heading: "The acute bleed - what should have been done in the first 72 hours and what must continue",
+        points: [
+          "Two wide-bore cannulae, restrictive transfusion to a haemoglobin target of 7 to 8 g/dL because over-transfusion raises portal pressure and provokes rebleeding, and no fresh frozen plasma routinely for the INR.",
+          "Vasoactive drug started before endoscopy and continued for 2 to 5 days: octreotide 50 microgram bolus then 50 microgram per hour, or terlipressin 2 mg intravenously 4-hourly reduced to 1 mg after control.",
+          "Antibiotic prophylaxis for 7 days in every cirrhotic who bleeds: ceftriaxone 1 g intravenously once daily, which reduces SBP, rebleeding and mortality; switch to oral norfloxacin 400 mg twice daily when eating.",
+          "Endoscopic band ligation at the diagnostic endoscopy; lactulose 20 mL thrice daily to clear the blood from the gut and prevent encephalopathy; proton pump inhibitor only for the post-banding ulcer, for 10 days.",
+          "Watch for the three killers of the first week: rebleeding, infection and alcohol withdrawal - give thiamine 100 mg intravenously before any glucose and a symptom-triggered benzodiazepine regimen using lorazepam rather than diazepam because it is not dependent on hepatic metabolism.",
+        ],
+      },
+      {
+        heading: "Secondary prophylaxis of the varices and the management of ascites",
+        points: [
+          "Non-selective beta-blocker plus repeated band ligation is the standard of care after a first bleed: propranolol 20 mg twice daily, increased every 3 days to the maximum tolerated dose that brings the resting heart rate to 55 to 60 per minute and keeps the systolic pressure above 90 mmHg, usually 40 to 80 mg twice daily; carvedilol 6.25 mg once daily rising to 12.5 mg is the alternative.",
+          "Band ligation repeated every 2 to 4 weeks until the varices are eradicated, then endoscopy at 3 to 6 months and yearly; failure of secondary prophylaxis with rebleeding is the indication for referral for a transjugular intrahepatic portosystemic shunt.",
+          "Ascites: dietary sodium restriction to 2 g (about 5 g of salt) per day without fluid restriction unless the sodium is below 125 mmol/L; spironolactone 100 mg once daily with furosemide 40 mg once daily in the morning, increased together in the ratio 100:40 every 3 to 5 days to a maximum of 400 mg and 160 mg, aiming at a weight loss of 0.5 kg per day without oedema and 1 kg per day with oedema.",
+          "Monitor weight, urine output, creatinine, sodium and potassium twice weekly initially; stop the diuretics for a creatinine above 1.5 mg/dL, a sodium below 120 mmol/L, a potassium above 6 mmol/L, or encephalopathy; large-volume paracentesis with 6 to 8 g of albumin per litre removed for tense ascites.",
+          "Stop every NSAID and aminoglycoside and avoid ACE inhibitors and angiotensin receptor blockers, which precipitate renal failure in cirrhotics with ascites; secondary SBP prophylaxis with norfloxacin 400 mg daily is warranted because the ascitic protein is below 1.5 g/dL.",
+        ],
+      },
+      {
+        heading: "The alcohol conversation, nutrition and the treatment of the liver disease",
+        points: [
+          "Abstinence is the single intervention that changes survival: five-year survival in Child B alcohol-related cirrhosis is about 60% with abstinence and under 35% with continued drinking, and this figure must be told to the patient and the family in plain language, once, without threats.",
+          "Use the brief intervention structure: give feedback on the finding, state that the responsibility for the decision is his, give clear advice to stop completely rather than cut down, offer a menu of options (de-addiction centre, district hospital psychiatrist, Alcoholics Anonymous group, a family member to keep the money), show empathy, and reinforce his self-efficacy by reminding him of the 3 months he managed 4 years ago.",
+          "Pharmacotherapy for maintaining abstinence in cirrhosis: baclofen 10 mg thrice daily is the drug with safety data in cirrhosis; naltrexone and disulfiram are avoided in decompensated liver disease; acamprosate needs a normal creatinine.",
+          "Nutrition: 35 kcal/kg and 1.2 to 1.5 g/kg of protein per day, never protein-restricted, with a late-evening snack of 50 g of carbohydrate to shorten the overnight fast, multivitamins and thiamine, zinc, and correction of vitamin D; involve the wife in what can be cooked from what the household has.",
+          "Vaccinate against hepatitis A and B and pneumococcus and give the yearly influenza vaccine; screen for hepatocellular carcinoma with ultrasound and alpha-fetoprotein every 6 months; refer to a liver unit for transplant evaluation if he stays abstinent for 6 months and the MELD-Na is 15 or above.",
+        ],
+      },
+      {
+        heading: "Follow-up, the family and the family physician's role",
+        points: [
+          "Review at 1 week and then every 2 to 4 weeks with weight, girth, blood pressure, pulse, mental state, creatinine and electrolytes; teach the family that fever, abdominal pain, confusion, black stool or falling urine output means same-day attendance.",
+          "Give a written list of the drugs and the drugs to avoid, and tell the family that any doctor or pharmacist he sees must be told he has cirrhosis before any injection or painkiller is given.",
+          "Screen the wife for depression and the household for financial distress, connect them with the state health insurance scheme for the endoscopy and banding, and put the patient's name on the practice's register of chronic liver disease for recall.",
+          "Discuss prognosis honestly and in stages: that this is a chronic disease, that it can be stabilised for years by abstinence and the treatment described, that a transplant is the only cure and what it costs, and that these conversations will continue at every visit.",
+        ],
+      },
+    ],
+    viva: [
+      {
+        q: "What are the components of the Child-Pugh score and what does class B mean for this patient?",
+        a: "Bilirubin, albumin, INR, ascites and encephalopathy, each scored 1 to 3; a total of 5 to 6 is class A, 7 to 9 class B and 10 to 15 class C. Class B carries a one-year survival of about 80% and a two-year survival of about 60%, and marks the point at which transplant referral should be considered.",
+      },
+      {
+        q: "How do you interpret the serum-ascites albumin gradient?",
+        a: "SAAG is serum albumin minus ascitic fluid albumin measured on the same day. A gradient of 1.1 g/dL or more indicates portal hypertension with 97% accuracy - cirrhosis, cardiac ascites, Budd-Chiari; below 1.1 indicates non-portal causes such as tuberculosis, peritoneal carcinomatosis, pancreatic ascites or nephrotic syndrome. A high SAAG with a high ascitic protein above 2.5 g/dL suggests a cardiac or post-hepatic cause.",
+      },
+      {
+        q: "How is spontaneous bacterial peritonitis diagnosed and treated?",
+        a: "An ascitic fluid polymorph count of 250 per cubic millimetre or more, with or without a positive culture, in the absence of a surgical source. Treatment is cefotaxime 2 g 8-hourly or ceftriaxone 2 g daily for 5 days, with intravenous albumin 1.5 g/kg on day 1 and 1 g/kg on day 3 to prevent hepatorenal syndrome, followed by lifelong norfloxacin 400 mg daily as secondary prophylaxis.",
+      },
+      {
+        q: "Why is propranolol used and how do you titrate it?",
+        a: "It reduces portal pressure by lowering cardiac output through beta-1 blockade and by splanchnic vasoconstriction through unopposed alpha activity from beta-2 blockade. Start at 20 mg twice daily and increase every 2 to 3 days to the dose that brings the resting heart rate to 55 to 60 per minute, keeping the systolic blood pressure above 90 mmHg; stop it in refractory ascites with a systolic below 90, in SBP or in hepatorenal syndrome.",
+      },
+      {
+        q: "What is the ratio of spironolactone to furosemide and why?",
+        a: "100 mg of spironolactone to 40 mg of furosemide, increased in that ratio. Spironolactone is the primary drug because secondary hyperaldosteronism drives the sodium retention of cirrhosis; furosemide is added to prevent hyperkalaemia and increase natriuresis. Furosemide alone is ineffective and dangerous in cirrhotic ascites.",
+      },
+      {
+        q: "What precipitates hepatic encephalopathy in this patient and how would you treat it?",
+        a: "Gastrointestinal bleeding, infection including SBP, over-diuresis with hypokalaemia and alkalosis, constipation, sedatives, a high-protein load, and hyponatraemia. Treat by identifying and correcting the precipitant, lactulose 20 to 30 mL two to four times a day titrated to two or three soft stools, rifaximin 550 mg twice daily if recurrent, and no protein restriction beyond the first 24 to 48 hours.",
+      },
+    ],
+    pitfalls: [
+      "Announcing 'alcoholic cirrhosis' without giving the grams of alcohol per day and the years of drinking, and without saying that hepatitis B and C serology was sent - the aetiology must be reasoned and the co-factors excluded.",
+      "Presenting the ascites as 'positive shifting dullness' without offering the SAAG and the polymorph count; a cirrhotic with ascites who has not had a paracentesis has not been worked up.",
+      "Over-transfusing the bleed to a normal haemoglobin, giving fresh frozen plasma for the INR, or forgetting the antibiotic - each of these increases rebleeding or death and each will be asked.",
+      "Delivering the alcohol advice as a threat or skipping it altogether; the examiner wants to hear a structured brief intervention, an offer of pharmacotherapy safe in cirrhosis, and a plan that involves the wife.",
+    ],
+    references: [
+      "Harrison's Principles of Internal Medicine, 21st edition, 2022 - cirrhosis and its complications",
+      "Davidson's Principles and Practice of Medicine, 24th edition, 2022 - liver and biliary tract disease",
+      "Hutchison's Clinical Methods, 24th edition, 2018 - the abdomen and the alcohol history",
+      "Baveno VII consensus on portal hypertension, Journal of Hepatology, 2022",
+      "EASL Clinical Practice Guidelines for decompensated cirrhosis, 2018, and alcohol-related liver disease, 2018",
+    ],
+  },
+  {
+    id: "gastro-hepatology-case-2",
+    title: "Abdominal examination - a 38-year-old woman with a mass in the left hypochondrium and a distended abdomen",
+    kind: "short",
+    subjectId: "gastro-hepatology",
+    opening:
+      "A 38-year-old woman from a coastal village presents with a dragging sensation in the left upper abdomen for 6 months and gradual distension of the abdomen for 3 months; the examiner asks for an examination of the abdomen and a diagnosis.",
+    minutes: 15,
+    frequency: "core",
+    sections: [
+      {
+        heading: "Before touching the patient",
+        points: [
+          "Introduce yourself, explain what you are going to do, take consent and ask for a chaperone; ask her to lie flat with one pillow, arms by the sides, and expose the abdomen from the xiphisternum to the pubic symphysis with the groins covered but accessible.",
+          "Stand at the foot of the bed and inspect for 10 seconds before moving: the shape of the abdomen, movement with respiration, the umbilicus, visible masses, dilated veins, scars, striae and pigmentation, and say what you see rather than what you expect.",
+          "Look at the hands, eyes and neck as you walk to the right side: pallor of the nail beds and conjunctiva, icterus, clubbing, koilonychia, palmar erythema, and lymph nodes in the neck and axillae, because the general findings decide which of the abdominal diagnoses is likely.",
+          "Ask about pain before palpating, warm your hands, and keep watching the face, not the abdomen, during palpation.",
+        ],
+      },
+      {
+        heading: "Inspection findings to state",
+        points: [
+          "The abdomen is uniformly distended with fullness of both flanks, the umbilicus is central and slightly everted, all quadrants move equally with respiration, and there is no visible peristalsis or pulsation.",
+          "There is a fullness in the left hypochondrium extending towards the umbilicus that does not move with respiration on inspection alone, no visible mass in the right hypochondrium, no scars, no dilated veins, and no striae.",
+          "General findings: moderate pallor of the conjunctiva and nail beds, no icterus, no clubbing, no koilonychia, no palmar erythema or spider naevi, no lymphadenopathy in the neck or axillae, no pedal oedema.",
+          "State the negatives that separate the diagnoses at this stage: no stigmata of chronic liver disease, no jaundice and no lymph nodes, so that the examiner knows you are already ranking the causes of what you are about to feel.",
+        ],
+      },
+      {
+        heading: "Palpation - superficial, deep, liver and spleen",
+        points: [
+          "Superficial palpation of all nine regions starting away from the site of discomfort: no tenderness, no guarding, no rigidity; deep palpation confirms a firm mass in the left hypochondrium extending 6 cm below the left costal margin towards the right iliac fossa.",
+          "Demonstrate the spleen: start in the right iliac fossa and move towards the left costal margin with each expiration, feeling for the edge to come against the fingers on inspiration; the mass moves with respiration, has a sharp anterior border with a notch palpable on its medial aspect, is dull to percussion, the fingers cannot be insinuated between it and the left costal margin, and it is not bimanually palpable or ballotable - all the features of a spleen and not a kidney.",
+          "Measure the spleen from the left costal margin along its long axis towards the right iliac fossa: 8 cm, a moderate splenomegaly; note that the surface is smooth and the consistency firm, and that there is no splenic rub.",
+          "Demonstrate the liver: starting in the right iliac fossa, a smooth firm non-tender edge is felt 3 cm below the right costal margin in the midclavicular line on inspiration; percuss the upper border in the fifth intercostal space and give the span as 15 cm; there is no hepatic bruit.",
+          "Say that you examined for the kidneys bimanually and could not ballot either, that there is no other mass, and that the hernial orifices are intact; percuss over the swelling and the flanks before demonstrating the fluid.",
+        ],
+      },
+      {
+        heading: "Percussion, auscultation and the demonstration of free fluid",
+        points: [
+          "Percussion: dullness over the spleen continuous with the splenic dullness in the left axilla in the ninth to eleventh intercostal spaces (Traube's space obliterated), dullness in both flanks with central tympany.",
+          "Shifting dullness: percuss from the umbilicus to the left flank with the finger parallel to the fluid level, mark the point where the note becomes dull, keep the finger there, turn the patient onto the right side, wait 30 seconds and percuss again - the note has become resonant; repeat on the other side; both are positive.",
+          "Fluid thrill: ask the examiner or the patient to place the ulnar border of a hand firmly on the midline, flick one flank and feel the impulse on the other; positive, indicating a large volume of free fluid.",
+          "Auscultation: normal bowel sounds, no venous hum at the umbilicus, no bruit over the liver or spleen; complete by asking to examine the genitalia and to do a rectal examination, and by measuring the girth at the umbilicus (88 cm) for follow-up.",
+        ],
+      },
+      {
+        heading: "Putting the findings together and naming the diagnosis",
+        points: [
+          "Summarise: a 38-year-old woman with pallor, a firm smooth 8 cm spleen, a 15 cm firm liver and free fluid in the peritoneal cavity, without jaundice, stigmata of chronic liver disease, lymphadenopathy or fever.",
+          "State the anatomical diagnosis first - hepatosplenomegaly with ascites - and then the differential in order of likelihood in this setting: portal hypertension from cirrhosis or non-cirrhotic portal fibrosis, chronic malaria or kala-azar in an endemic coastal village, a haematological cause such as a myeloproliferative disorder or lymphoma, and disseminated tuberculosis.",
+          "Give the reasoning for your first diagnosis: the absence of stigmata of chronic liver disease and jaundice with a large firm spleen and a preserved liver in a young woman favours non-cirrhotic portal hypertension - extrahepatic portal vein obstruction or non-cirrhotic portal fibrosis - over cirrhosis, but a firm liver with ascites keeps cirrhosis and the tropical splenomegaly syndrome in the list.",
+          "Say what you would ask for from the history that would change the ranking: recurrent fever, previous haematemesis, blood transfusion or jaundice, a past umbilical sepsis in infancy, residence in a kala-azar or malaria zone, night sweats and weight loss, and the menstrual history.",
+        ],
+      },
+    ],
+    summaryStatement:
+      "On examination of the abdomen, this 38-year-old woman has moderate pallor without icterus, lymphadenopathy or stigmata of chronic liver disease, a firm smooth non-tender spleen palpable 8 cm below the left costal margin with a palpable notch and preserved respiratory movement, a firm smooth non-tender liver with a span of 15 cm, and free fluid in the peritoneal cavity with shifting dullness and a fluid thrill - hepatosplenomegaly with ascites, most probably due to portal hypertension, in whom non-cirrhotic portal fibrosis, cirrhosis, a chronic tropical infection and a haematological malignancy need to be distinguished.",
+    differential: [
+      {
+        diagnosis: "Portal hypertension - non-cirrhotic portal fibrosis or extrahepatic portal vein obstruction",
+        forIt:
+          "A large firm spleen with a preserved, non-shrunken liver and ascites in a young woman without stigmata of chronic liver disease or jaundice; anaemia from hypersplenism.",
+        againstIt:
+          "Ascites is unusual in non-cirrhotic portal hypertension unless there has been a recent bleed or a hypoalbuminaemic state; a firm liver with a span of 15 cm is compatible with either.",
+      },
+      {
+        diagnosis: "Cirrhosis with portal hypertension - hepatitis B, autoimmune or Wilson disease at this age",
+        forIt:
+          "Hepatosplenomegaly with ascites is the classical presentation; early cirrhosis may show none of the peripheral stigmata.",
+        againstIt:
+          "No jaundice, spider naevi, palmar erythema or wasting, and the liver is large and smooth rather than small and hard; viral markers, autoimmune serology and an ultrasound with elastography are needed.",
+      },
+      {
+        diagnosis: "Chronic infection - visceral leishmaniasis, chronic malaria with tropical splenomegaly, or disseminated tuberculosis - or a myeloproliferative disorder or lymphoma",
+        forIt:
+          "Massive or moderate firm splenomegaly with anaemia in a woman from a rural coastal area; lymphoma and myelofibrosis produce exactly this spleen at this age.",
+        againstIt:
+          "No fever, night sweats, weight loss or lymphadenopathy, and ascites is uncommon in these unless the peritoneum is involved; a peripheral smear, rK39 test, ascitic fluid analysis and a bone marrow distinguish them.",
+      },
+    ],
+    investigations: [
+      {
+        test: "Complete blood count with peripheral smear and reticulocyte count",
+        why: "Pancytopenia points to hypersplenism, a leucoerythroblastic picture with tear-drop cells to myelofibrosis, a high white count with a left shift to chronic myeloid leukaemia, and malarial parasites are still occasionally found.",
+        expected:
+          "Haemoglobin 8.6 g/dL, total leucocyte count 3,200 and platelets 90,000 per cubic millimetre with a normocytic smear and no abnormal cells - hypersplenism.",
+      },
+      {
+        test: "Liver function tests, prothrombin time and serum albumin",
+        why: "Normal bilirubin, transaminases and INR with a normal albumin favour non-cirrhotic portal hypertension; deranged synthetic function favours cirrhosis.",
+        expected:
+          "Bilirubin 0.9 mg/dL, ALT 34 U/L, alkaline phosphatase 110 U/L, albumin 3.4 g/dL, INR 1.1.",
+      },
+      {
+        test: "Ultrasound of the abdomen with Doppler of the portal and splenic veins",
+        why: "It measures the liver and spleen, describes the liver surface and echotexture, shows the portal vein calibre and direction of flow, and detects portal cavernoma, which is diagnostic of extrahepatic portal vein obstruction.",
+        expected:
+          "Liver 15 cm with a normal echotexture, spleen 17 cm, portal vein 16 mm with hepatopetal flow, no cavernoma, moderate ascites.",
+      },
+      {
+        test: "Diagnostic paracentesis with cell count, albumin, protein, ADA and culture",
+        why: "The SAAG separates portal hypertensive from peritoneal ascites, the ADA and lymphocyte count screen for tuberculous peritonitis, and the polymorph count excludes infection.",
+        expected:
+          "SAAG 1.5 g/dL, protein 1.2 g/dL, lymphocytes 60 per cubic millimetre, ADA 12 U/L, culture sterile.",
+      },
+      {
+        test: "HBsAg, anti-HCV, rK39 rapid test, and upper gastrointestinal endoscopy",
+        why: "Hepatitis B and C are the commonest causes of cirrhosis at this age, rK39 screens for kala-azar in an endemic area, and the endoscopy documents the varices that prove portal hypertension and need prophylaxis.",
+        expected:
+          "HBsAg and anti-HCV negative, rK39 negative, grade 2 oesophageal varices without red signs.",
+      },
+      {
+        test: "Liver stiffness measurement by transient elastography, and liver biopsy if the diagnosis remains uncertain",
+        why: "A liver stiffness below 10 kPa with a large spleen strongly suggests non-cirrhotic portal hypertension; biopsy showing obliterative portal venopathy without cirrhosis confirms non-cirrhotic portal fibrosis.",
+        expected:
+          "Liver stiffness 7 kPa; biopsy deferred unless the picture changes.",
+      },
+    ],
+    management: [
+      {
+        heading: "Confirming the cause before treating",
+        points: [
+          "Complete the history the examiner did not give: fevers, jaundice, transfusions, umbilical sepsis at birth, previous bleeds, residence and travel, and the family history of liver disease.",
+          "Order the investigations in the sequence above so that the commonest causes are answered first and the biopsy is reserved for the patient in whom non-invasive tests disagree.",
+          "Refer to a gastroenterologist for endoscopy and elastography within 2 weeks rather than waiting for a bleed to force the referral.",
+        ],
+      },
+      {
+        heading: "Managing the portal hypertension and the ascites",
+        points: [
+          "Primary prophylaxis of variceal bleeding for large varices with propranolol titrated to a heart rate of 55 to 60 per minute, or endoscopic band ligation if beta-blockers are not tolerated.",
+          "Ascites: 2 g sodium diet, spironolactone 100 mg with furosemide 40 mg daily titrated in ratio, weight and electrolytes weekly; search for and treat the precipitant, since ascites in non-cirrhotic portal hypertension usually follows a bleed or an intercurrent illness and resolves.",
+          "Treat the anaemia of hypersplenism with iron and folate only if deficient; splenectomy or a shunt is reserved for symptomatic hypersplenism or uncontrolled bleeding and is decided at a tertiary centre.",
+        ],
+      },
+      {
+        heading: "Follow-up and the family physician's role",
+        points: [
+          "Six-monthly review with a blood count, liver function, ultrasound and, if cirrhosis is confirmed, alpha-fetoprotein; endoscopy every 1 to 2 years.",
+          "Vaccinate against hepatitis A and B; advise avoidance of alcohol, NSAIDs and indigenous hepatotoxic preparations; counsel on contraception and the need for specialist care in any future pregnancy because of the variceal bleeding risk.",
+          "Teach the patient and the family the warning signs of haematemesis, melaena, fever with abdominal pain and confusion, and where to go the same day.",
+        ],
+      },
+    ],
+    viva: [
+      {
+        q: "How do you distinguish a spleen from a left kidney at the bedside?",
+        a: "The spleen moves down and medially with respiration, has a palpable notch on its anterior border, cannot be got above because the fingers cannot be insinuated between it and the costal margin, is dull to percussion with dullness continuous with the splenic area in the axilla, and is not ballotable; the kidney is bimanually palpable and ballotable, has a band of colonic resonance in front of it, moves only slightly with respiration, and the hand can be placed between it and the costal margin.",
+      },
+      {
+        q: "What are the causes of massive splenomegaly in India?",
+        a: "Chronic myeloid leukaemia, myelofibrosis, visceral leishmaniasis, tropical splenomegaly syndrome (hyper-reactive malarial splenomegaly), thalassaemia major, Gaucher disease, portal hypertension including extrahepatic portal vein obstruction, and lymphoma; the spleen is 'massive' when it reaches the umbilicus or the pelvis.",
+      },
+      {
+        q: "How much fluid must be present for shifting dullness and for a fluid thrill?",
+        a: "Shifting dullness needs about 1 to 1.5 litres of free fluid; a fluid thrill needs a large tense collection of 2 litres or more; the puddle sign detects about 120 mL but is impractical; ultrasound detects 100 mL.",
+      },
+      {
+        q: "What is Traube's space and what does its obliteration mean?",
+        a: "The semilunar area bounded above by the sixth rib, laterally by the anterior axillary line and below by the left costal margin, normally resonant over the stomach; dullness suggests splenomegaly, a left pleural effusion, a full stomach or an enlarged left lobe of the liver.",
+      },
+      {
+        q: "How does non-cirrhotic portal fibrosis differ clinically from cirrhosis?",
+        a: "It presents at a younger age with well-tolerated variceal bleeds, a large spleen, preserved liver function with normal albumin and INR, absent stigmata of chronic liver disease, no encephalopathy and rarely ascites; liver stiffness is low and the liver biopsy shows obliterative portal venopathy without regenerative nodules.",
+      },
+      {
+        q: "What is the differential diagnosis of a low SAAG ascites?",
+        a: "Peritoneal tuberculosis, peritoneal carcinomatosis, pancreatic ascites, nephrotic syndrome, biliary ascites, chylous ascites and serositis in connective tissue disease; a SAAG below 1.1 g/dL means the ascites is not due to portal hypertension.",
+      },
+    ],
+    pitfalls: [
+      "Naming the diagnosis before the findings: the examiner wants to hear the spleen described with its size, edge, notch, consistency, movement and percussion note, and the fluid demonstrated, before the word portal hypertension is spoken.",
+      "Calling a spleen a kidney or the reverse because the mass was not examined bimanually and the notch was not sought; state each distinguishing feature you tested.",
+      "Demonstrating shifting dullness from only one side, or not waiting after turning the patient, which produces a false negative in moderate ascites.",
+      "Forgetting to look for the general findings - pallor, jaundice, lymph nodes, stigmata of chronic liver disease - which are what rank the causes of hepatosplenomegaly; and forgetting to ask for a rectal and genital examination to complete the abdomen.",
+    ],
+    references: [
+      "Hutchison's Clinical Methods, 24th edition, 2018 - examination of the abdomen",
+      "Macleod's Clinical Examination, 15th edition, 2023 - the gastrointestinal system",
+      "Harrison's Principles of Internal Medicine, 21st edition, 2022 - splenomegaly, ascites and portal hypertension",
+      "API Textbook of Medicine, 12th edition, 2022 - non-cirrhotic portal fibrosis and extrahepatic portal vein obstruction",
+    ],
+  },
+];
+
+const subject: Subject = {
+  id: "gastro-hepatology",
+  title: "Gastroenterology & Hepatology",
+  blurb: "Acid peptic disease, diarrhoea, jaundice, chronic liver disease and the acute abdomen in general practice.",
+  icon: "Pill",
+  papers: ["II"],
+  topics,
+  cases,
+};
+
+export default subject;
