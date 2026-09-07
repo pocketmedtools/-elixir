@@ -102,22 +102,24 @@ original agent briefs; in short:
 
 ## Next steps (update this list as work lands)
 
-State at last update (2026-09-07, after the third rate-limit reset): closed and
-compiling — cardiovascular 6, endocrine 10, infectious-fever 8, obstetrics 8,
-pediatrics 8, symptom-approach 9, emergency 3, eye-ent 1, fm-principles 4,
-geriatrics-ethics 1, gynaecology 3, neurology 3, surgery-office 1. Closers
-running for dermatology 1, musculoskeletal 2, preventive 8, renal-urology 1,
-gastro-hepatology 4, respiratory 7; psychiatry being authored from the stub.
+State at 2026-09-07: **all 20 subjects compile and the app builds.**
+`npx tsc -b`, `npm run verify:study`, `npm run lint` and `npm run build` all
+pass. Content totals: 89 topics, 228 model theory answers, 585 MCQs, 40 worked
+cases, 1011 flashcards. Each subject ships as its own chunk, 29-129 kB gzipped.
+A browser smoke test (Playwright, scratchpad `smoke.mjs`) passes 15/15,
+including importing a 10,800-word document and reading it to its last word.
 
-1. Confirm every file prints OK in `bash scripts/studyStatus.sh`; re-close any
-   that were cut off (truncate at `const cases` first if it no longer parses).
-2. First full build: `cd web && npx tsc -b && npm run verify:study && npm run build`.
-   Fix whatever the checker reports, commit, push.
-3. Deepen thin subjects to ≥ 8 topics (insert before `const cases`, one topic
-   per edit, verify after each), thinnest first: eye-ent, geriatrics-ethics,
-   surgery-office, dermatology, renal-urology, musculoskeletal, emergency,
-   neurology, gynaecology, fm-principles, gastro-hepatology, cardiovascular,
-   psychiatry, respiratory.
-4. Smoke test in a browser, final (non-WIP) commit, push.
-5. Optional clinical review pass: one adversarial reviewer per subject
-   checking doses, cut-offs and MCQ keys; apply confirmed fixes.
+Remaining work is depth only. Topic counts now: endocrine 10, symptom-approach
+9, infectious-fever 8, obstetrics 8, pediatrics 8, preventive 8, respiratory 7,
+cardiovascular 6, fm-principles 4, gastro-hepatology 4, neurology 3, emergency
+3, gynaecology 3, musculoskeletal 2, and 1 each for renal-urology, psychiatry,
+surgery-office, dermatology, eye-ent, geriatrics-ethics.
+
+1. Deepen every subject to >= 8 topics, thinnest first, using the insert-before-
+   `const cases` method (one topic per edit, verify after each). Agents for the
+   six one-topic subjects are running.
+2. Re-run `npm run verify:study` and `npm run build` after each wave; commit.
+3. Re-run the browser smoke test.
+4. Final (non-WIP) commit and push.
+5. Optional clinical review pass: one adversarial reviewer per subject checking
+   doses, cut-offs and MCQ keys; apply confirmed fixes.
