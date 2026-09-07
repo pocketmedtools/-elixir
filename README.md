@@ -12,7 +12,19 @@ npm run dev -- --host 127.0.0.1 --port 5173
 
 Open http://127.0.0.1:5173/
 
-**Family Medicine exam module:** [`NEW_SMART_ELIXIR/FM_STUDY.md`](./NEW_SMART_ELIXIR/FM_STUDY.md) — notes, model answers, cases, questions and your own documents, under the **FM Study** tab.
+## Family Medicine exam app
+
+Separate app in **`fmprep/`** — the DNB blueprint, 20 subjects, previous-year
+questions, model answers, cases, MCQs, flashcards and your own documents.
+Docs: **[`fmprep/README.md`](./fmprep/README.md)**
+
+```powershell
+cd fmprep
+npm install
+npm run dev
+```
+
+Published at `/fm/` on the project site by the same Pages workflow.
 
 Deploy the new UI with **Netlify** (Chrome install) or **Vercel** — root directory `web`.  
 **One-page setup:** [`FINAL_SETUP.md`](./NEW_SMART_ELIXIR/FINAL_SETUP.md)  
