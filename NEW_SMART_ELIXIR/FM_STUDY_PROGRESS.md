@@ -100,26 +100,35 @@ original agent briefs; in short:
 | surgery-office | abscess I&D, minor procedures, diabetic foot, burns dressing, hernia, hydrocele, breast lump triple assessment, thyroid swelling, abdominal lump, varicose veins, catheter, NG tube, injections, pre-op fitness, post-op follow-up |
 | fm-principles | continuity/comprehensiveness, family tools (genogram, APGAR, SCREEM), home visits, records/SOAP/POMR/ICPC, audit cycle, EBM/PICO/appraisal, research methods, thesis/protocol, telemedicine 2020, referral/gatekeeping |
 
-## Next steps (update this list as work lands)
+## Status: content complete
 
-State at 2026-09-07: **all 20 subjects compile and the app builds.**
-`npx tsc -b`, `npm run verify:study`, `npm run lint` and `npm run build` all
-pass. Content totals: 89 topics, 228 model theory answers, 585 MCQs, 40 worked
-cases, 1011 flashcards. Each subject ships as its own chunk, 29-129 kB gzipped.
-A browser smoke test (Playwright, scratchpad `smoke.mjs`) passes 15/15,
-including importing a 10,800-word document and reading it to its last word.
+As of 2026-09-07 every subject carries **at least 8 topics**, ordered core →
+common → less-common → uncommon, plus 2 worked cases. Library totals:
 
-Remaining work is depth only. Topic counts now: endocrine 10, symptom-approach
-9, infectious-fever 8, obstetrics 8, pediatrics 8, preventive 8, respiratory 7,
-cardiovascular 6, fm-principles 4, gastro-hepatology 4, neurology 3, emergency
-3, gynaecology 3, musculoskeletal 2, and 1 each for renal-urology, psychiatry,
-surgery-office, dermatology, eye-ent, geriatrics-ethics.
+| | |
+|---|---|
+| Subjects | 20 |
+| Topics | 163 |
+| Model theory answers | 376 |
+| MCQs | 955 |
+| Worked cases | 40 |
+| Flashcards | 1701 |
 
-1. Deepen every subject to >= 8 topics, thinnest first, using the insert-before-
-   `const cases` method (one topic per edit, verify after each). Agents for the
-   six one-topic subjects are running.
-2. Re-run `npm run verify:study` and `npm run build` after each wave; commit.
-3. Re-run the browser smoke test.
-4. Final (non-WIP) commit and push.
-5. Optional clinical review pass: one adversarial reviewer per subject checking
-   doses, cut-offs and MCQ keys; apply confirmed fixes.
+All green: `npx tsc -b`, `npm run verify:study` (zero warnings), `npm run lint`
+(6 pre-existing warnings elsewhere in the app), `npm run build`. The browser
+smoke test passes 15/15, including importing a 10,800-word document and reading
+it to its last word.
+
+## If you want to take it further
+
+1. **Clinical review pass.** One adversarial reviewer per subject, checking
+   drug doses, diagnostic cut-offs and that every MCQ key matches its
+   explanation; apply only confirmed corrections. This is the highest-value
+   remaining work.
+2. **More depth.** The per-subject table above lists topics not yet written;
+   add them with the insert-before-`const cases` method, one per edit.
+3. **Re-check the blueprint** against the current NBEMS information bulletin
+   before each exam cycle — `examPattern.ts` carries a dated `sourceNote` and
+   flags every figure it could not verify.
+
+The authoring protocol above still applies to any further content work.
