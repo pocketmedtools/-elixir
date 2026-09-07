@@ -12,6 +12,7 @@ import {
   FileText,
   FolderOpen,
   GraduationCap,
+  History,
   Layers,
   ListChecks,
   Search,
@@ -58,6 +59,14 @@ const SECTIONS: {
     view: { name: "library" },
     icon: BookOpen,
     tint: "border-blue-200 bg-blue-50",
+  },
+  {
+    id: "pyq",
+    title: "Previous-year questions",
+    body: "What was actually asked, sitting by sitting, linked to the answer.",
+    view: { name: "pyq" },
+    icon: History,
+    tint: "border-fuchsia-200 bg-fuchsia-50",
   },
   {
     id: "theory",

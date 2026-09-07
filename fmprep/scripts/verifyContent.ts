@@ -12,12 +12,12 @@ import {
   contentCounts,
   ensureAll,
   subjects,
-} from "../src/study/content/index";
-import blueprint from "../src/study/examPattern";
-import guide from "../src/study/casePresentation";
-import { FREQUENCY_ORDER } from "../src/study/lib/types";
-import { MIN_EASE, newCard, schedule } from "../src/study/lib/srs";
-import { buildQuiz } from "../src/study/lib/quiz";
+} from "../src/content/index";
+import blueprint from "../src/examPattern";
+import guide from "../src/casePresentation";
+import { FREQUENCY_ORDER } from "../src/lib/types";
+import { MIN_EASE, newCard, schedule } from "../src/lib/srs";
+import { buildQuiz } from "../src/lib/quiz";
 
 // Content is code-split for the app, so the checker pulls every chunk in
 // before it can look at anything.

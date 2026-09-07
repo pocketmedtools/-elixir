@@ -1,0 +1,51 @@
+@import "tailwindcss";
+
+:root {
+  --bg: #f1f5f9;
+  --card: #ffffff;
+  --ink: #0f172a;
+  --muted: #334155;
+  --accent: #0f4c81;
+  --line: #dbe3ec;
+  font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  color: var(--ink);
+  background: var(--bg);
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  padding-left: env(safe-area-inset-left);
+  padding-right: env(safe-area-inset-right);
+  padding-bottom: env(safe-area-inset-bottom);
+  background: var(--bg);
+}
+
+#root {
+  min-height: 100vh;
+}
+
+.app-header {
+  padding-top: env(safe-area-inset-top);
+}
+
+/* The thin band under the header, matching the clinical app's ribbon. */
+.brand-ribbon {
+  height: 3px;
+  background: linear-gradient(90deg, #0f4c81, #1d4ed8 55%, #0e7490);
+}
+
+/* Reading surface: a faint wash so long pages are not a flat white glare. */
+.study-stage {
+  background: linear-gradient(165deg, rgba(15, 23, 42, 0.03), rgba(15, 76, 129, 0.05));
+  min-height: 100%;
+}
+
+@media print {
+  body {
+    background: white !important;
+  }
+  .print\:hidden {
+    display: none !important;
+  }
+}

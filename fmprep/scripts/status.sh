@@ -4,7 +4,7 @@
 # Columns: subject, bytes, topics.push blocks, and whether the module loads
 # (OK + topic/case counts) or has no default export yet (PARTIAL).
 cd "$(dirname "$0")/.." || exit 1
-for f in src/study/content/*.ts; do
+for f in src/content/*.ts; do
   case "$f" in *_TEMPLATE*|*index*) continue;; esac
   n=$(basename "$f" .ts)
   sz=$(stat -c%s "$f")

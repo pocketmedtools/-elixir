@@ -1,0 +1,18 @@
+{
+  "id": "./",
+  "name": "FM Prep — Family Medicine exam",
+  "short_name": "FM Prep",
+  "description": "DNB / MD Family Medicine preparation: the blueprint, 20 subjects ordered common to uncommon, previous-year questions, model theory answers, worked cases, MCQs, flashcards and your own documents. Works offline.",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "orientation": "portrait-primary",
+  "background_color": "#ffffff",
+  "theme_color": "#0f4c81",
+  "categories": ["education", "medical"],
+  "icons": [
+    { "src": "./icon-192.png", "sizes": "192x192", "type": "image/png", "purpose": "any" },
+    { "src": "./icon-512.png", "sizes": "512x512", "type": "image/png", "purpose": "any" },
+    { "src": "./icon-512.png", "sizes": "512x512", "type": "image/png", "purpose": "maskable" }
+  ]
+}

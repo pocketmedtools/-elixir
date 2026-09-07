@@ -27,10 +27,6 @@ export const TOOL_SECTIONS: {
     heading: "OBG",
     tools: [{ id: "ob", title: "OB / EDD" }],
   },
-  {
-    heading: "Exam preparation",
-    tools: [{ id: "study", title: "FM Study" }],
-  },
 ];
 
 export default function HomeScreen({ onOpen }: { onOpen: (t: MenuTarget) => void }) {

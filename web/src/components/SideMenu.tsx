@@ -10,7 +10,7 @@ import {
 import ToolIcon, { TOOL_TEXT } from "./ToolIcon";
 
 export type MenuTarget =
-  | "home" | "pedDose" | "growth" | "bp" | "bmi" | "crCl" | "regimen" | "icu" | "insulin" | "ob" | "study" | "saved" | "report";
+  | "home" | "pedDose" | "growth" | "bp" | "bmi" | "crCl" | "regimen" | "icu" | "insulin" | "ob" | "saved" | "report";
 
 const LINK_GROUPS: {
   heading: string | null;
@@ -36,10 +36,6 @@ const LINK_GROUPS: {
     ],
   },
   { heading: "OBG", links: [{ id: "ob", label: "OB / EDD" }] },
-  {
-    heading: "Exam preparation",
-    links: [{ id: "study", label: "FM Study" }],
-  },
   {
     heading: null,
     links: [
@@ -123,6 +119,18 @@ export default function SideMenu({
               ))}
             </div>
           ))}
+          <div className="mt-1">
+            <p className="px-3 pb-1 pt-2 text-[11px] font-bold uppercase tracking-widest text-slate-500">
+              Exam preparation
+            </p>
+            <a
+              href="../fm/"
+              className="flex w-full items-center gap-3 rounded-lg bg-amber-50 px-3 py-2.5 text-left text-sm font-bold text-amber-900 hover:bg-amber-100"
+            >
+              🎓 FM Prep — Family Medicine exam app
+            </a>
+          </div>
+
           {/* Direct APK download — only meaningful when browsing the website */}
           {window.location.hostname.endsWith("github.io") && (
             <div className="mt-1">

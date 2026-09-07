@@ -15,6 +15,7 @@ import LibraryScreen from "./LibraryScreen";
 import SubjectScreen from "./SubjectScreen";
 import TopicReader from "./TopicReader";
 import TheoryBank from "./TheoryBank";
+import PyqScreen from "./PyqScreen";
 import { CaseList, CaseReader } from "./CaseBank";
 import ExamPatternScreen from "./ExamPatternScreen";
 import PresentationScreen from "./PresentationScreen";
@@ -31,6 +32,7 @@ export type StudyView =
   | { name: "subject"; id: string }
   | { name: "topic"; id: string }
   | { name: "theory"; id?: string }
+  | { name: "pyq" }
   | { name: "cases" }
   | { name: "case"; id: string }
   | { name: "presentation" }
@@ -127,6 +129,15 @@ export default function StudyModule() {
       return (
         <ContentGate need="all">
           <TheoryBank onBack={back} initialId={view.id} onOpenTopic={(id) => go({ name: "topic", id })} />
+        </ContentGate>
+      );
+
+    case "pyq":
+      // The bank itself is static, but every question links into a topic, so
+      // the library is pulled in behind it.
+      return (
+        <ContentGate need="all">
+          <PyqScreen onBack={back} onOpenTopic={(id) => go({ name: "topic", id })} />
         </ContentGate>
       );
 

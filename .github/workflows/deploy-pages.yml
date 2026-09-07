@@ -15,23 +15,38 @@ concurrency:
 jobs:
   build-deploy:
     runs-on: ubuntu-latest
-    defaults:
-      run:
-        working-directory: web
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-node@v4
         with:
           node-version: 22
           cache: npm
-          cache-dependency-path: web/package-lock.json
-      - run: npm ci
-      - run: npx tsc -b && npx vite build --base=./
+          cache-dependency-path: |
+            web/package-lock.json
+            fmprep/package-lock.json
+
+      # The clinical app is published at the site root.
+      - name: Build Pocket-Med
+        working-directory: web
+        run: npm ci && npx tsc -b && npx vite build --base=./
+
+      # The exam app is published at /fm/ on the same site, so one deploy
+      # serves both and the menu link between them is a plain relative path.
+      - name: Build FM Prep
+        working-directory: fmprep
+        run: npm ci && npx tsc -b && npm run verify && npx vite build --base=./
+
+      - name: Place FM Prep under /fm
+        run: |
+          mkdir -p web/dist/fm
+          cp -r fmprep/dist/* web/dist/fm/
+
       # Carry the current APK into the site so the direct download link
       # (https://<pages>/Pocket-Med.apk) survives every deploy; the APK
       # workflow then overwrites it with the freshly built one.
       - name: Include latest APK for the direct download link
-        run: curl -fL -o dist/Pocket-Med.apk "https://github.com/${{ github.repository }}/releases/download/apk-latest/Pocket-Med.apk" || echo "no APK release yet"
+        run: curl -fL -o web/dist/Pocket-Med.apk "https://github.com/${{ github.repository }}/releases/download/apk-latest/Pocket-Med.apk" || echo "no APK release yet"
+
       - name: Publish to gh-pages branch
         uses: peaceiris/actions-gh-pages@v4
         with:
