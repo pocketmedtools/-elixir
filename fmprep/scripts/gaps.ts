@@ -16,14 +16,14 @@ const gaps: string[] = [];
 let mapped = 0;
 for (const q of PAPER_QUESTIONS) {
   if (linksFor(q.id, q.question).length > 0) mapped++;
-  else gaps.push(`[paper ${q.session} P${q.paper} Q${q.number}] ${q.question}`);
+  else gaps.push(`${q.id}  [${q.session} P${q.paper} Q${q.number}] ${q.question}`);
 }
 console.log(`papers ${mapped}/${PAPER_QUESTIONS.length}`);
 
 let mapped2 = 0;
 for (const q of TOPICWISE_QUESTIONS) {
   if (linksFor(q.id, q.question).length > 0) mapped2++;
-  else gaps.push(`[topicwise ${q.session}] ${q.topicHeading} — ${q.question}`);
+  else gaps.push(`${q.id}  [${q.session}] ${q.topicHeading} — ${q.question}`);
 }
 console.log(`topic-wise ${mapped2}/${TOPICWISE_QUESTIONS.length}`);
 console.log(`\n--- ${gaps.length} unanswered ---`);

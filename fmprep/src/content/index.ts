@@ -89,7 +89,9 @@ export const SUBJECT_META: SubjectMeta[] = [
     id: "neurology",
     title: "Neurology",
     blurb: "Headache, stroke, seizures, vertigo, neuropathy, dementia and central nervous system infection.",
-    papers: ["II"],
+    // Paper I as well as II: the October 2024 Paper I asked a full ten-mark
+    // question on Parkinsonism.
+    papers: ["I", "II"],
     group: "Medicine and allied",
   },
   {

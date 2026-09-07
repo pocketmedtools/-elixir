@@ -17,6 +17,7 @@ import { LINKS_PART3 } from "./links.part3";
 import { LINKS_PART4 } from "./links.part4";
 import { LINKS_PART5 } from "./links.part5";
 import { LINKS_PART6 } from "./links.part6";
+import { LINKS_GAPS } from "./links.gaps";
 
 /**
  * Corrections applied after the batches were written. The list of allowed ids
@@ -43,6 +44,9 @@ export const MANUAL_LINKS: Record<string, string[]> = {
   ...LINKS_PART5,
   ...LINKS_PART6,
   ...CORRECTIONS,
+  // Written last, so a topic added to close a gap wins over the batch answer
+  // of "nothing covers this".
+  ...LINKS_GAPS,
 };
 
 /**
