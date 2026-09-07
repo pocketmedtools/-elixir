@@ -502,3 +502,390 @@ topics.push({
     "Harrison's Principles of Internal Medicine, 21st edition, 2022 - chronic kidney disease",
   ],
 });
+
+const cases: ClinicalCase[] = [
+  {
+    id: "renal-urology-case-1",
+    title: "Long case: diabetic hypertensive man with pedal oedema and a creatinine of 2.4 mg/dL",
+    kind: "long",
+    subjectId: "renal-urology",
+    opening:
+      "A 56-year-old man with type 2 diabetes for 14 years and hypertension for 9 years presents with bilateral pedal oedema for six weeks; serum creatinine is 2.4 mg/dL and urine albumin-creatinine ratio is 900 mg/g.",
+    minutes: 45,
+    frequency: "core",
+    sections: [
+      {
+        heading: "History of presenting illness",
+        points: [
+          "Pedal oedema began insidiously six weeks ago, is pitting, worse by evening and now reaches the mid-shin; there is no orthopnoea, paroxysmal nocturnal dyspnoea or abdominal distension.",
+          "He reports frothy urine for about a year and nocturia twice a night, but no dysuria, haematuria, flank pain or reduction in urine volume.",
+          "There is no history of fever, rash, joint pain, recent NSAID use for a painful knee is admitted (diclofenac on and off for three months), and no herbal or ayurvedic preparations.",
+          "Ask specifically about symptoms of uraemia - anorexia, nausea, metallic taste, pruritus, sleep reversal and cramps - because their presence changes the urgency of nephrology referral.",
+        ],
+      },
+      {
+        heading: "Diabetes and hypertension history",
+        points: [
+          "Type 2 diabetes was diagnosed 14 years ago; he takes metformin 1000 mg twice daily and glimepiride 2 mg once daily, with a last HbA1c of 8.9 percent three months ago.",
+          "Hypertension was diagnosed 9 years ago and is treated with amlodipine 10 mg daily; home readings, when checked, run around 150/90 mmHg.",
+          "He has background diabetic retinopathy on a fundus examination done two years ago, and numbness of both feet consistent with peripheral neuropathy, which supports a diabetic aetiology for the kidney disease.",
+          "There has been no prior creatinine on record, so the rate of decline is unknown; a value from any old prescription or admission is worth chasing because the trajectory matters as much as the number.",
+        ],
+      },
+      {
+        heading: "Past, family, personal and drug history",
+        points: [
+          "No prior admissions, no known ischaemic heart disease, no stroke; a lipid profile has never been done.",
+          "His father had diabetes and died of a heart attack at 62; a brother is on dialysis, which raises the pre-test probability of both diabetic and inherited kidney disease.",
+          "He smokes 10 bidis a day for 30 years, does not drink alcohol and eats a diet high in salt with pickles at most meals.",
+          "The full drug list is metformin, glimepiride, amlodipine and intermittent diclofenac; there is no ACE inhibitor or ARB, no statin, and no SGLT2 inhibitor, which is the central gap in his current management.",
+        ],
+      },
+      {
+        heading: "Examination",
+        points: [
+          "Blood pressure is 158/94 mmHg sitting with no postural drop; pulse 84 regular; BMI 27.8 kg/m2; waist 98 cm.",
+          "Mild pallor is present, there is bilateral pitting pedal oedema to the mid-shin, no raised JVP, no sacral oedema and no ascites.",
+          "Cardiovascular and respiratory examinations are normal; the abdomen is soft with no ballotable kidneys and no renal bruit.",
+          "Fundoscopy shows dot and blot haemorrhages with hard exudates; monofilament testing is absent at three of ten sites bilaterally and ankle jerks are absent; peripheral pulses are palpable.",
+        ],
+      },
+      {
+        heading: "Staging the CKD",
+        points: [
+          "With a creatinine of 2.4 mg/dL in a 56-year-old man, the CKD-EPI 2021 equation gives an eGFR of approximately 30 mL/min/1.73 m2, which sits at the border of G3b and G4; a repeat value after three months is needed to confirm chronicity and stage.",
+          "A urine ACR of 900 mg/g places him in category A3 (severely increased albuminuria, above 300 mg/g), so the full label is CKD G3b/G4 A3, the highest-risk red zone of the KDIGO heat map.",
+          "Chronicity is supported by the long duration of diabetes, retinopathy, neuropathy, and the year-long frothy urine; small kidneys on ultrasound would clinch it, whereas normal-sized kidneys are expected in diabetic nephropathy and do not exclude chronicity.",
+          "Diabetic kidney disease is the working diagnosis because retinopathy is present, albuminuria is heavy and there is no haematuria; the NSAID use is a reversible contributor to be removed immediately.",
+        ],
+      },
+      {
+        heading: "Diagnosis and problem list",
+        points: [
+          "Primary diagnosis: chronic kidney disease, stage G3b/G4 A3, most likely diabetic kidney disease, with a superimposed NSAID insult.",
+          "Comorbid problems: poorly controlled type 2 diabetes with retinopathy and neuropathy, uncontrolled hypertension, anaemia to be characterised, tobacco use and probable dyslipidaemia.",
+          "Risks to state up front: very high cardiovascular risk, progression to kidney failure within a few years if untreated, and drug toxicity from metformin and glimepiride at this eGFR.",
+        ],
+      },
+    ],
+    summaryStatement:
+      "A 56-year-old male bidi smoker with 14 years of type 2 diabetes complicated by retinopathy and neuropathy, and 9 years of poorly controlled hypertension, presents with six weeks of pitting pedal oedema and a year of frothy urine; he has a creatinine of 2.4 mg/dL (CKD-EPI eGFR about 30 mL/min/1.73 m2) and a urine ACR of 900 mg/g, consistent with chronic kidney disease G3b/G4 A3, most probably diabetic kidney disease, with recent NSAID exposure as a reversible contributor.",
+    differential: [
+      {
+        diagnosis: "Diabetic kidney disease",
+        forIt: "Long duration of diabetes, coexisting retinopathy and neuropathy, heavy albuminuria without haematuria, and a gradual course.",
+        againstIt: "Absence of a documented creatinine trend; retinopathy is supportive but does not exclude a second renal disease.",
+      },
+      {
+        diagnosis: "Hypertensive nephrosclerosis",
+        forIt: "Nine years of uncontrolled hypertension and a family history of vascular disease.",
+        againstIt: "Albuminuria of 900 mg/g is heavier than nephrosclerosis usually produces, and retinopathy points to diabetes.",
+      },
+      {
+        diagnosis: "Non-diabetic glomerular disease (for example membranous nephropathy or IgA nephropathy)",
+        forIt: "Nephrotic-range proteinuria with oedema can occur in any glomerular disease, and the brother on dialysis hints at familial disease.",
+        againstIt: "No haematuria, no active sediment, no rapid decline and no systemic features; a biopsy is considered only if the sediment is active, the decline is rapid, or retinopathy were absent.",
+      },
+    ],
+    investigations: [
+      {
+        test: "Repeat serum creatinine with CKD-EPI eGFR, plus urea and electrolytes",
+        why: "Confirms chronicity (a value more than three months apart), fixes the G stage and screens for hyperkalaemia before starting a RAS blocker.",
+        expected: "Creatinine around 2.4 mg/dL, eGFR about 30 mL/min/1.73 m2, potassium below 5.0 mmol/L, bicarbonate possibly low.",
+      },
+      {
+        test: "Urine albumin-creatinine ratio on a first-morning sample, repeated once, with urine microscopy",
+        why: "Confirms the A category on two of three samples and looks for red cell casts or dysmorphic red cells that would suggest a non-diabetic glomerulonephritis.",
+        expected: "ACR persistently above 300 mg/g (A3); bland sediment with no haematuria in diabetic kidney disease.",
+      },
+      {
+        test: "Ultrasound of the kidneys, ureters and bladder",
+        why: "Excludes obstruction, measures kidney size and cortical echogenicity, and looks for cysts or asymmetry.",
+        expected: "Normal or slightly enlarged kidneys with increased echogenicity in diabetic disease; small shrunken kidneys confirm chronicity; no hydronephrosis.",
+      },
+      {
+        test: "HbA1c, fasting lipid profile and complete blood count",
+        why: "Sets glycaemic and lipid targets and characterises the anaemia of CKD before considering iron or erythropoietin.",
+        expected: "HbA1c about 9 percent, LDL raised, haemoglobin 10 to 11 g/dL with normocytic indices.",
+      },
+      {
+        test: "Serum calcium, phosphate, intact PTH and 25-hydroxy vitamin D",
+        why: "Mineral bone disease begins at G3 and is silent; baseline values guide phosphate restriction and vitamin D replacement.",
+        expected: "Phosphate high-normal, calcium normal, PTH mildly raised, vitamin D low.",
+      },
+      {
+        test: "ECG and, if available, echocardiography",
+        why: "Cardiovascular disease is the commonest cause of death in CKD and left ventricular hypertrophy is a marker of long-standing hypertension.",
+        expected: "Voltage criteria for LVH; echocardiography showing concentric LVH with preserved ejection fraction.",
+      },
+    ],
+    management: [
+      {
+        heading: "Stop the damage and correct the reversible",
+        points: [
+          "Stop diclofenac permanently; use paracetamol or topical agents for the knee.",
+          "Sick-day rules: hold metformin, SGLT2 inhibitor, ACE inhibitor or ARB and diuretic during vomiting, diarrhoea or fever, and restart when eating and drinking normally.",
+          "Avoid iodinated contrast and aminoglycosides unless unavoidable, and warn every prescriber that he has CKD.",
+          "Advise stopping bidis and give brief advice plus nicotine replacement; restrict salt to under 5 g a day.",
+        ],
+      },
+      {
+        heading: "Slow progression - the four pillars",
+        points: [
+          "Start an ARB (telmisartan 40 mg daily, titrated to 80 mg) or ACE inhibitor (ramipril 5 mg, titrated to 10 mg); recheck creatinine and potassium within one to two weeks and accept a creatinine rise of up to 30 percent.",
+          "Add an SGLT2 inhibitor (dapagliflozin 10 mg or empagliflozin 10 mg daily), which is licensed down to an eGFR of 20 mL/min/1.73 m2 and slows decline independent of glucose lowering.",
+          "Target blood pressure below 130/80 mmHg (KDIGO 2021 suggests systolic below 120 mmHg where tolerated); add chlorthalidone 12.5 mg or a loop diuretic for the oedema, keeping amlodipine.",
+          "Consider finerenone 10 mg daily once potassium is below 4.8 mmol/L and eGFR is above 25 mL/min/1.73 m2, and add a statin (atorvastatin 20 mg) for cardiovascular protection regardless of LDL.",
+        ],
+      },
+      {
+        heading: "Diabetes control and renal dose adjustment",
+        points: [
+          "Metformin: reduce to a maximum of 1000 mg per day at eGFR 30 to 45 and stop below 30 mL/min/1.73 m2, so at an eGFR of 30 it should be stopped or held pending the repeat value.",
+          "Stop glimepiride because sulfonylureas cause prolonged hypoglycaemia in CKD; replace with a DPP-4 inhibitor (linagliptin 5 mg needs no adjustment) or basal insulin, with an HbA1c target of about 7 to 7.5 percent.",
+          "Other adjustments to remember: reduce doses of gabapentin, pregabalin, most cephalosporins, fluoroquinolones and enoxaparin; avoid nitrofurantoin, pethidine and magnesium- or aluminium-containing antacids.",
+          "Check the eGFR band before every new prescription and document it on the prescription itself.",
+        ],
+      },
+      {
+        heading: "Complications, follow-up and referral",
+        points: [
+          "Treat anaemia with iron first (oral or IV) and refer for erythropoietin when haemoglobin is below 10 g/dL after iron repletion; give oral bicarbonate if serum bicarbonate is below 22 mmol/L.",
+          "Vaccinate against hepatitis B (double dose schedule), influenza yearly and pneumococcus; check for hepatitis B and C serology early since dialysis planning may follow.",
+          "Review three-monthly with creatinine, potassium, ACR, blood pressure, weight and drug list; plot the eGFR to detect a fall of more than 5 mL/min/1.73 m2 per year.",
+          "Refer to nephrology now because eGFR is below 30 and ACR above 300 mg/g; other triggers are an eGFR fall of more than 25 percent or more than 5 per year, persistent haematuria, refractory hypertension on four drugs, potassium above 5.5 mmol/L or an unclear cause.",
+        ],
+      },
+    ],
+    viva: [
+      {
+        q: "How do you calculate and interpret eGFR in this patient?",
+        a: "Use the CKD-EPI 2021 creatinine equation, which no longer includes a race coefficient; for a creatinine of 2.4 mg/dL in a 56-year-old man it gives about 30 mL/min/1.73 m2. This is G3b/G4, and staging is confirmed only when two values three months apart are below 60.",
+      },
+      {
+        q: "What are the KDIGO G and A categories?",
+        a: "G1 is 90 or above, G2 60 to 89, G3a 45 to 59, G3b 30 to 44, G4 15 to 29 and G5 below 15 mL/min/1.73 m2; A1 is ACR below 30 mg/g, A2 30 to 300 and A3 above 300 mg/g. Risk of progression and cardiovascular death rises across both axes, so a G3b A3 patient is in the red zone.",
+      },
+      {
+        q: "Why start an ARB when the creatinine is already raised?",
+        a: "RAS blockade lowers intraglomerular pressure and albuminuria and slows progression in diabetic kidney disease with A3 albuminuria; the initial creatinine rise of up to 30 percent is haemodynamic and expected. Stop only if the rise exceeds 30 percent, potassium is above 5.5 mmol/L or there is symptomatic hypotension, and consider renal artery stenosis in that case.",
+      },
+      {
+        q: "What is the role of SGLT2 inhibitors in CKD?",
+        a: "DAPA-CKD and EMPA-KIDNEY showed that dapagliflozin and empagliflozin reduce the composite of sustained eGFR decline, kidney failure and cardiovascular or renal death by about 30 to 40 percent, in diabetic and non-diabetic CKD, and are recommended by KDIGO 2024 for eGFR 20 or above with albuminuria. Counsel about genital mycotic infection, volume depletion and the sick-day rule.",
+      },
+      {
+        q: "When would you consider a renal biopsy in a diabetic?",
+        a: "When the picture does not fit diabetic nephropathy: absent retinopathy with heavy proteinuria, active urinary sediment with dysmorphic red cells or casts, rapid decline in eGFR, sudden-onset nephrotic syndrome, or features of a systemic disease. In this patient retinopathy and a bland sediment make biopsy unnecessary.",
+      },
+      {
+        q: "What would you tell him about dialysis and transplant?",
+        a: "At an eGFR around 30 he needs education, not dialysis; planning for renal replacement begins at G4 with vein preservation in the non-dominant arm, hepatitis B vaccination and discussion of pre-emptive living-donor transplant. The Pradhan Mantri National Dialysis Programme provides free haemodialysis at district hospitals, which he should know about early.",
+      },
+    ],
+    pitfalls: [
+      "Staging CKD from a single creatinine value: chronicity needs two readings more than three months apart, or supporting evidence such as small kidneys.",
+      "Continuing metformin, sulfonylureas and NSAIDs unchanged at an eGFR of 30; renal dose review is the most commonly missed management point.",
+      "Withholding an ACE inhibitor or ARB because the creatinine is raised, or stopping it for a haemodynamic rise under 30 percent.",
+      "Forgetting that cardiovascular disease, not dialysis, is the most likely cause of death - a statin, smoking cessation and blood pressure control carry as many marks as the renal drugs.",
+    ],
+    references: [
+      "KDIGO 2024 Clinical Practice Guideline for the Evaluation and Management of Chronic Kidney Disease, Kidney International Supplements 2024",
+      "KDIGO 2022 Clinical Practice Guideline for Diabetes Management in Chronic Kidney Disease",
+      "KDIGO 2021 Clinical Practice Guideline for the Management of Blood Pressure in Chronic Kidney Disease",
+      "Indian Society of Nephrology and RSSDI consensus on diabetic kidney disease, Indian Journal of Nephrology, 2020",
+      "ICMR Guidelines for Management of Type 2 Diabetes, 2018, chapter on diabetic nephropathy",
+      "Pradhan Mantri National Dialysis Programme guidelines, National Health Mission, MoHFW, 2016",
+    ],
+  },
+  {
+    id: "renal-urology-case-2",
+    title: "Viva: 68-year-old man with nocturia and a poor stream",
+    kind: "viva",
+    subjectId: "renal-urology",
+    opening:
+      "A 68-year-old man attends with nocturia three times a night, a weak stream, hesitancy and a sense of incomplete emptying for eight months, with no haematuria or dysuria.",
+    minutes: 15,
+    frequency: "core",
+    sections: [
+      {
+        heading: "Assessing lower urinary tract symptoms",
+        points: [
+          "Separate storage symptoms (frequency, urgency, nocturia, urge incontinence) from voiding symptoms (hesitancy, weak stream, straining, intermittency, terminal dribbling) and post-micturition symptoms (incomplete emptying, post-void dribble).",
+          "Ask about red flags: visible haematuria, dysuria with fever, bone pain, weight loss, new back pain or neurological symptoms, and any episode of retention.",
+          "Review drugs that worsen LUTS - anticholinergics, decongestants, tricyclics, diuretics taken at night - and fluid, caffeine and alcohol intake in the evening.",
+          "Screen for diabetes, heart failure and sleep apnoea as causes of nocturia, and ask the patient to keep a three-day frequency-volume chart, which distinguishes nocturnal polyuria from a small bladder capacity.",
+        ],
+      },
+      {
+        heading: "The International Prostate Symptom Score",
+        points: [
+          "The IPSS has seven symptom questions (incomplete emptying, frequency, intermittency, urgency, weak stream, straining, nocturia), each scored 0 to 5, giving a total of 0 to 35.",
+          "A score of 0 to 7 is mild, 8 to 19 moderate and 20 to 35 severe; an eighth quality-of-life question scored 0 to 6 decides whether the patient wants treatment at all.",
+          "The score does not diagnose the cause; it grades bother and tracks the response to treatment, and a fall of 3 points or more is clinically meaningful.",
+          "Repeat the IPSS at each review and record it in the notes - examiners look for it as evidence of structured follow-up.",
+        ],
+      },
+      {
+        heading: "Examination including digital rectal examination",
+        points: [
+          "General examination for anaemia, a palpable bladder above the pubis and lower-limb neurology; examine the external genitalia for meatal stenosis and phimosis.",
+          "Explain the DRE, obtain consent and offer a chaperone; the patient lies in the left lateral position with knees drawn up.",
+          "A benign prostate is smooth, symmetrical, firm-elastic like the tip of the nose, with a palpable median sulcus and a rectal mucosa that moves freely over it; estimate size in fingerbreadths or grams.",
+          "Hard, nodular, asymmetrical or fixed glands with loss of the median sulcus suggest carcinoma; also assess anal tone and note tenderness, which suggests prostatitis.",
+        ],
+      },
+      {
+        heading: "The PSA debate",
+        points: [
+          "PSA is organ-specific but not cancer-specific: it rises with benign enlargement, prostatitis, retention, catheterisation, ejaculation and cycling, so test only after these have been excluded or allowed to settle for a few weeks.",
+          "Screening asymptomatic men reduces prostate cancer mortality only modestly and leads to over-diagnosis and over-treatment; guidelines therefore recommend shared decision-making for men aged 55 to 69 rather than routine screening, and no screening above 70 or with a life expectancy under 10 years.",
+          "In a symptomatic man, PSA is reasonable if the result would change management, for example an abnormal DRE, a family history, or when 5-alpha-reductase inhibitor treatment is planned (which halves the PSA after six months, so the measured value must be doubled).",
+          "Age-adjusted upper limits are roughly 2.5 ng/mL at 40 to 49, 3.5 at 50 to 59, 4.5 at 60 to 69 and 6.5 at 70 to 79; a value above 4 ng/mL or a rise of more than 0.75 ng/mL per year warrants urology referral for MRI and biopsy.",
+        ],
+      },
+      {
+        heading: "Basic investigations",
+        points: [
+          "Urinalysis and urine culture to exclude infection and haematuria; serum creatinine to detect obstructive nephropathy; blood glucose for diabetes.",
+          "Ultrasound of the kidneys, ureters, bladder and prostate with post-void residual volume: a residual above 100 to 200 mL indicates poor emptying, and hydronephrosis indicates high-pressure retention.",
+          "Uroflowmetry, where available, with a maximum flow rate below 10 mL/s suggesting obstruction; a voided volume of at least 150 mL is needed for the reading to be valid.",
+          "Cystoscopy and urodynamics are urology tools reserved for haematuria, suspected stricture or when the picture is unclear.",
+        ],
+      },
+    ],
+    summaryStatement:
+      "A 68-year-old man with eight months of moderate-to-severe voiding and storage lower urinary tract symptoms, a smooth symmetrically enlarged prostate on digital rectal examination and no red flags, consistent with benign prostatic hyperplasia causing bladder outlet obstruction.",
+    differential: [
+      {
+        diagnosis: "Benign prostatic hyperplasia",
+        forIt: "Age, gradual onset of mixed voiding and storage symptoms, smooth symmetrically enlarged gland with preserved median sulcus.",
+        againstIt: "A hard nodular gland, rapid progression or raised age-adjusted PSA would point elsewhere.",
+      },
+      {
+        diagnosis: "Carcinoma of the prostate",
+        forIt: "Age over 65; can present with identical LUTS and is often silent until locally advanced.",
+        againstIt: "Smooth gland with median sulcus, no bone pain, no weight loss, no haematospermia; PSA within the age-adjusted range would make it unlikely but not impossible.",
+      },
+      {
+        diagnosis: "Overactive bladder or nocturnal polyuria",
+        forIt: "Nocturia and frequency dominate in many older men and coexist with BPH.",
+        againstIt: "The weak stream, hesitancy and incomplete emptying are voiding symptoms that point to outlet obstruction; a frequency-volume chart showing more than 33 percent of urine output at night would suggest nocturnal polyuria instead.",
+      },
+    ],
+    investigations: [
+      {
+        test: "Urine routine and microscopy with culture",
+        why: "Excludes infection and microscopic haematuria, either of which changes the pathway.",
+        expected: "Normal; any haematuria triggers urology referral for cystoscopy.",
+      },
+      {
+        test: "Serum creatinine and blood glucose",
+        why: "Detects obstructive nephropathy and diabetes as a cause of polyuria and nocturia.",
+        expected: "Creatinine normal; a raised value with a large residual means high-pressure chronic retention.",
+      },
+      {
+        test: "PSA, after shared decision-making and a DRE-free, infection-free interval",
+        why: "Estimates cancer risk and prostate volume; a PSA above 1.5 ng/mL predicts a gland over 30 mL and a higher risk of progression.",
+        expected: "Below the age-adjusted limit of about 4.5 ng/mL for his age.",
+      },
+      {
+        test: "Ultrasound KUB and prostate with post-void residual",
+        why: "Measures prostate volume, bladder wall thickness, residual urine and upper tract dilatation.",
+        expected: "Prostate 40 to 60 mL, residual below 100 mL, no hydronephrosis.",
+      },
+      {
+        test: "Uroflowmetry",
+        why: "Objective measure of obstruction and a baseline to judge treatment response.",
+        expected: "Maximum flow rate below 10 mL/s on a voided volume above 150 mL.",
+      },
+    ],
+    management: [
+      {
+        heading: "Conservative measures for mild symptoms or low bother",
+        points: [
+          "Reduce evening fluids, caffeine and alcohol; empty the bladder before bed; double voiding for incomplete emptying.",
+          "Stop or shift to the morning any diuretic, and review anticholinergic and decongestant use.",
+          "Bladder training for storage symptoms and a frequency-volume chart to guide advice; review in three to six months with a repeat IPSS.",
+        ],
+      },
+      {
+        heading: "Alpha-blocker for moderate to severe bother",
+        points: [
+          "Tamsulosin 0.4 mg once daily after dinner is the first-line drug; alternatives are silodosin 8 mg daily or alfuzosin 10 mg daily; symptom relief appears within days and the IPSS falls by 4 to 6 points.",
+          "Warn about postural dizziness, retrograde ejaculation and nasal congestion; tell the patient to inform the ophthalmologist before cataract surgery because of intraoperative floppy iris syndrome.",
+          "Alpha-blockers relieve symptoms but do not shrink the gland or reduce the long-term risk of retention or surgery.",
+        ],
+      },
+      {
+        heading: "5-alpha-reductase inhibitor for larger glands",
+        points: [
+          "Finasteride 5 mg daily or dutasteride 0.5 mg daily when the prostate is above 30 to 40 mL or PSA is above 1.5 ng/mL; they shrink the gland by 20 to 25 percent over six months and reduce the risk of retention and surgery by about half.",
+          "Combination therapy with an alpha-blocker is superior to either alone for men with large glands (MTOPS and CombAT trials); the alpha-blocker may be withdrawn after six to nine months in some patients.",
+          "Counsel about reduced libido, erectile dysfunction, gynaecomastia and the halving of PSA; women who are or may become pregnant must not handle crushed tablets.",
+          "Add an antimuscarinic (solifenacin 5 mg) or mirabegron 25 to 50 mg for persistent storage symptoms once the residual volume is confirmed to be low; tadalafil 5 mg daily is an option when erectile dysfunction coexists.",
+        ],
+      },
+      {
+        heading: "Referral to urology and acute retention first aid",
+        points: [
+          "Refer for: acute or chronic retention, recurrent infection, haematuria, bladder stones, renal impairment or hydronephrosis from obstruction, abnormal DRE or PSA, residual above 200 mL, and failure of or intolerance to medical therapy; surgical options are TURP, HoLEP and minimally invasive procedures.",
+          "Acute urinary retention: confirm a painful palpable bladder, pass a 14 to 16 Fr Foley catheter under aseptic technique with adequate lubricant, and record the drained volume; if the catheter will not pass, do not force it - refer for suprapubic catheterisation.",
+          "Start tamsulosin 0.4 mg immediately, treat infection and constipation, stop precipitating drugs, monitor for post-obstructive diuresis if more than 1 L drains or creatinine is raised, and arrange a trial without catheter after two to three days on the alpha-blocker; failure of the trial is a surgical referral.",
+        ],
+      },
+    ],
+    viva: [
+      {
+        q: "What is the IPSS and how do you use it?",
+        a: "A validated seven-question symptom score, each item 0 to 5, total 0 to 35, graded mild (0 to 7), moderate (8 to 19) and severe (20 to 35), with a separate quality-of-life question. It quantifies bother, guides whether to treat and tracks response; it does not diagnose the cause.",
+      },
+      {
+        q: "Describe the findings of a benign versus malignant prostate on DRE.",
+        a: "Benign: smooth, symmetrical, firm-elastic, with a preserved median sulcus and mobile rectal mucosa. Malignant: hard, nodular, asymmetrical, with obliteration of the sulcus and possible fixation or extension to the seminal vesicles. DRE detects only posterior and lateral lesions and has a sensitivity of about 50 percent.",
+      },
+      {
+        q: "Should this man have a PSA test?",
+        a: "He is symptomatic, so PSA is part of evaluation rather than screening, provided he understands that a raised value leads to MRI and possibly biopsy, and that a normal value does not exclude cancer. It is drawn before DRE-related manipulation settles and before a 5-alpha-reductase inhibitor is started; screening of asymptomatic men is a shared decision only between 55 and 69 years.",
+      },
+      {
+        q: "How do alpha-blockers and 5-alpha-reductase inhibitors differ?",
+        a: "Alpha-blockers relax smooth muscle at the bladder neck and prostate, work within days, and improve symptoms and flow but not gland size or long-term progression. 5-alpha-reductase inhibitors block conversion of testosterone to dihydrotestosterone, shrink the gland over six months, halve the PSA, and reduce the risk of retention and surgery; they are useful only in glands above 30 to 40 mL.",
+      },
+      {
+        q: "A man with BPH presents at your clinic unable to pass urine for 12 hours with a painful suprapubic mass. What do you do?",
+        a: "Confirm retention clinically, catheterise with a 14 to 16 Fr Foley under aseptic technique, record the volume, send urine for culture, check creatinine and electrolytes, start tamsulosin, treat constipation or infection, stop precipitating drugs and watch urine output for post-obstructive diuresis. Arrange a trial without catheter in two to three days and refer if it fails, if the volume is over 1 L or if creatinine is raised.",
+      },
+      {
+        q: "What are the indications for urology referral in BPH?",
+        a: "Retention, recurrent urinary infection, haematuria, bladder stones, renal impairment or hydronephrosis, suspicious DRE or raised PSA, residual over 200 mL, and failure of or intolerance to medical therapy. These are the situations where surgery or further evaluation such as cystoscopy is needed.",
+      },
+    ],
+    pitfalls: [
+      "Ordering a PSA immediately after DRE, during a urinary infection or after catheterisation, and then acting on a falsely raised value.",
+      "Prescribing an anticholinergic for frequency without measuring post-void residual, precipitating retention in an obstructed bladder.",
+      "Forgetting to double the measured PSA in a man on finasteride or dutasteride, and missing a rising value.",
+      "Forcing a catheter that will not pass, or sending a man with chronic high-pressure retention home without checking creatinine and watching for post-obstructive diuresis.",
+    ],
+    references: [
+      "American Urological Association Guideline on Management of Lower Urinary Tract Symptoms attributed to Benign Prostatic Hyperplasia, 2021, amended 2023",
+      "European Association of Urology Guidelines on Management of Non-neurogenic Male LUTS, 2024",
+      "Urological Society of India guidelines on BPH management, Indian Journal of Urology, 2019",
+      "US Preventive Services Task Force recommendation statement on screening for prostate cancer, JAMA 2018",
+      "KDIGO 2024 Clinical Practice Guideline for the Evaluation and Management of Chronic Kidney Disease, for obstructive nephropathy assessment",
+      "Bailey and Love's Short Practice of Surgery, 28th edition, 2023 - the prostate and seminal vesicles",
+    ],
+  },
+];
+
+const subject: Subject = {
+  id: "renal-urology",
+  title: "Renal & Urology",
+  blurb: "Chronic kidney disease, acute kidney injury, stones, prostate disease and electrolyte trouble.",
+  icon: "Droplets",
+  papers: ["II", "III"],
+  topics,
+  cases,
+};
+
+export default subject;
