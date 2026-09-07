@@ -14,9 +14,12 @@ Branch: `claude/fm-study-material-app-y84obf` in `pocketmedtools/-elixir`.
 - `fmprep/src/examPattern.ts` (DNB blueprint, sourced) — done.
 - `fmprep/src/casePresentation.ts` (presentation guide) — done.
 - Content checker `fmprep/scripts/verifyContent.ts` (`npm run verify`).
-- Browser smoke test in the session scratchpad (`smoke.mjs`, fixtures) — not
-  in the repo; recreate if needed (opens the tab, reads a topic, imports
-  PDF/DOCX/TXT and checks first/last sentinel words survive, tests offline).
+- Browser smoke test at `fmprep/scripts/smoke.mjs` (`npm run smoke`). It drives
+  the app the way a candidate would — reads a topic, opens the past papers,
+  follows a question into the library, scrolls a seeded source document to its
+  last word, imports a file of its own, and searches across all three. Start
+  `npm run preview` on port 4174 first, or point `SMOKE_BASE` at another URL;
+  `SMOKE_SCREENSHOT=<path>` saves a screenshot at the end.
 
 ## Content state
 

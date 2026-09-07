@@ -12,6 +12,7 @@
     "verify": "tsx scripts/verifyContent.ts",
     "gaps": "tsx scripts/gaps.ts",
     "merge": "node scripts/mergePending.mjs",
+    "smoke": "node scripts/smoke.mjs",
     "status": "bash scripts/status.sh"
   },
   "dependencies": {
@@ -28,6 +29,7 @@
     "@types/react-dom": "^19.2.3",
     "@vitejs/plugin-react": "^6.0.4",
     "oxlint": "^1.75.0",
+    "playwright": "^1.63.0",
     "tailwindcss": "^4.3.3",
     "tsx": "^4.20.6",
     "typescript": "~6.0.2",

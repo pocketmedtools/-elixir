@@ -161,3 +161,31 @@ not a list of known errors.
 - **Ethosuximide paediatric maintenance.** Sources differ (BNFC about
   20 mg/kg/day, Nelson 20–30, some to 40). 20–30 mg/kg/day to a maximum of
   1500 mg/day is used.
+
+## emergency-ards
+
+- **Mortality figures.** Two sources are quoted side by side rather than one
+  number: the Berlin derivation cohort (27 / 32 / 45%) and LUNG SAFE 2016
+  hospital mortality (34.9 / 40.3 / 46.1%). They disagree by up to eight points
+  for mild disease, and an examiner expecting only the Berlin figures may find
+  the LUNG SAFE numbers unfamiliar.
+- **SpO2/FiO2 equivalents.** 315 / 235 / 148 against the PaO2/FiO2 bands of
+  300 / 200 / 100. The 315 threshold is firm; 235 and 148 are published band
+  edges derived by regression, so the severity table says the two indices agree
+  closely without being identical.
+- **The 2023 global definition** is a conference statement (AJRCCM 2024;209(1)),
+  not yet a universally adopted replacement. Said so explicitly in the section,
+  the pearl and the flashcard, with Berlin kept as the primary answer.
+- **Driving pressure under 15 cmH2O** is presented as a strong association from
+  Amato's mediation analysis, explicitly not a randomised target.
+- **ECMO and steroids** are both written as contested. EOLIA is quoted as
+  formally negative (p = 0.09, 28% crossover) with the caveat that meta-analysis
+  and Bayesian re-analysis favour ECMO; steroids carry DEXA-ARDS and RECOVERY on
+  one side and LaSRS late-start harm, influenza and undrained sepsis on the
+  other, graded conditional.
+- **Permissive hypercapnia pH floor** written as "down to about 7.20, with the
+  ARDSNet protocol tolerating 7.15–7.30", because sources quote anywhere in that
+  range as the floor.
+- **The oedema-fluid to plasma protein ratio** (above 0.75 against below 0.65) is
+  physiologically correct and examiner-friendly but essentially never measured;
+  flagged as such in the table and the theory answer.
