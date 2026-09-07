@@ -24,10 +24,15 @@ import { LINKS_PART6 } from "./links.part6";
  * questions that needed it were sent to the subject instead.
  */
 const CORRECTIONS: Record<string, string[]> = {
+  // The allowed-id list handed to the mapping pass wrongly withheld the type 2
+  // diabetes topic, so this vignette was sent to the subject instead.
   "pyq-2022-june-pi-05": [
     "endocrine-t2dm-diagnosis-oral-drugs",
-    "endocrine-diabetic-complications-screening",
+    "endocrine-diabetes-complication-screening",
   ],
+  // "Classify psychiatric disorders and describe the treatment modalities" was
+  // mapped to the subject rather than to topics.
+  "pyqtw-0209": ["psychiatry-psychosis-schizophrenia", "psychiatry-depression"],
 };
 
 export const MANUAL_LINKS: Record<string, string[]> = {
