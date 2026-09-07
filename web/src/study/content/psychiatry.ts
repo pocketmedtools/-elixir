@@ -2329,6 +2329,789 @@ topics.push({
     "Murtagh J. General Practice, 8th edition, 2018 - chapter on the patient with unexplained symptoms",
   ],
 });
+topics.push({
+  id: "psychiatry-tobacco-cessation",
+  title: "Tobacco cessation: the 5 A's, nicotine replacement and pharmacotherapy",
+  oneLiner:
+    "Tobacco dependence is a chronic relapsing disorder driven by nicotine acting on alpha-4-beta-2 nicotinic receptors, and every consultation is an opportunity to apply the 5 A's - Ask, Advise, Assess, Assist, Arrange - with the 5 R's for the unwilling patient, since brief advice alone raises quit rates by 2-3% absolute and the combination of behavioural support with nicotine replacement, bupropion or varenicline trebles the chance of abstinence at one year.",
+  frequency: "common",
+  keywords: [
+    "tobacco cessation",
+    "5 A's",
+    "5 R's",
+    "nicotine replacement therapy",
+    "nicotine patch",
+    "nicotine gum",
+    "bupropion",
+    "varenicline",
+    "Fagerstrom test",
+    "smokeless tobacco",
+    "gutkha",
+    "khaini",
+    "COTPA 2003",
+    "National Tobacco Control Programme",
+    "mCessation",
+    "quitline 1800-11-2356",
+    "oral submucous fibrosis",
+    "relapse prevention",
+  ],
+  sections: [
+    {
+      heading: "The Indian tobacco problem and why the family physician is central",
+      points: [
+        "The **Global Adult Tobacco Survey 2 (GATS-2, 2016-17) found that 28.6% of Indian adults use tobacco in some form - 42.4% of men and 14.2% of women** - with **21.4% using smokeless tobacco and 10.7% smoking**; India is unusual in that smokeless forms (khaini, gutkha, zarda, mishri, paan masala with tobacco, betel quid) predominate, so a question about smoking alone misses two-thirds of users.",
+        "Tobacco kills **more than 1.3 million Indians a year** through ischaemic heart disease, stroke, chronic obstructive pulmonary disease, tuberculosis and cancers of the lung, oral cavity, larynx, oesophagus, pancreas, bladder and cervix; **oral cancer and oral submucous fibrosis are the signature diseases of Indian smokeless tobacco and areca nut use**, and India has the world's highest burden of both.",
+        "**Ask about tobacco at every visit and record it as a vital sign**, using local terms - bidi, cigarette, hookah, chillum, khaini, gutkha, zarda, mawa, paan with tobacco, mishri applied to the gums - because patients who chew or apply tobacco routinely answer 'no' to 'do you smoke'.",
+        "**Brief advice from a doctor lasting under three minutes produces an absolute increase in quit rates of about 2-3%**, and given the number of patients a family physician sees, this is one of the highest-yield preventive acts in medicine; **advice plus behavioural support plus pharmacotherapy raises 6-12 month abstinence to about 25-30%** compared with 3-5% for unaided attempts.",
+        "Quitting works at any age: **stopping before 40 avoids about 90% of the excess mortality**, blood pressure and pulse fall within 20 minutes, carbon monoxide is normal within 12-24 hours, the risk of myocardial infarction halves at one year, stroke risk approaches that of a non-smoker at 5-15 years, and lung cancer risk halves at 10 years.",
+      ],
+    },
+    {
+      heading: "The 5 A's and the 5 R's",
+      points: [
+        "**ASK**: identify and document tobacco use for every patient at every visit, in all its forms, including secondhand exposure at home for children and pregnant women.",
+        "**ADVISE**: give clear, strong, personalised advice to quit - 'As your doctor, the most important thing you can do for your health is to stop tobacco completely, and I can help you do it' - and personalise it to his own problem, whether that is the cough, the blood pressure, the diabetes, the child's asthma or the white patch in the mouth.",
+        "**ASSESS**: determine willingness to make a quit attempt in the next 30 days, and assess nicotine dependence with the **Fagerstrom Test for Nicotine Dependence** or, quickest of all, the two heaviest-smoking-index questions: **time to the first cigarette after waking (within 30 minutes indicates high dependence) and the number smoked per day (more than 10 indicates the need for pharmacotherapy)**.",
+        "**ASSIST**: for the willing patient, set a **quit date within two weeks**, preferably a meaningful date; advise total abstinence rather than reduction from that date; remove all tobacco, lighters, ashtrays and paan supplies from the house and workplace; tell the family and enlist a supporter; plan for the high-risk situations - after meals, with tea, with alcohol, with smoking friends, at times of stress; and prescribe pharmacotherapy unless contraindicated.",
+        "**ARRANGE**: schedule follow-up **in the first week, at 2 weeks, at 1 month and then monthly for at least 3 months**, because most relapses occur in the first two weeks; congratulate success, and treat a lapse as information, not failure.",
+        "**For the patient not ready to quit, use the 5 R's at each visit**: **Relevance** (why quitting matters to him personally, his children, his job, his purse), **Risks** (the specific short-term, long-term and family risks), **Rewards** (money saved, taste and smell, breath, fitness, no smell on clothes, example to children), **Roadblocks** (fear of withdrawal, weight gain, past failure, a spouse who uses tobacco) and **Repetition** at every visit - most quitters succeed only after several attempts, and each attempt raises the chance of the next succeeding.",
+      ],
+    },
+    {
+      heading: "Pharmacotherapy 1: nicotine replacement therapy",
+      points: [
+        "**Offer pharmacotherapy to every user smoking 10 or more cigarettes or bidis a day, to anyone whose first use is within 30 minutes of waking, and to any user who has failed an unaided attempt**; it approximately doubles the quit rate and there is no need to reserve it for the heaviest users.",
+        "**Nicotine transdermal patch**: **21 mg/24 h for those using more than 10 cigarettes a day for 6 weeks, then 14 mg for 2 weeks, then 7 mg for 2 weeks**; those using 10 or fewer start at 14 mg. Apply to clean dry hairless skin above the waist, rotate the site daily; if vivid dreams or insomnia are troublesome, remove it at bedtime.",
+        "**Nicotine gum**: **2 mg for those whose first use is more than 30 minutes after waking, 4 mg if within 30 minutes**, one piece every 1-2 hours (about 8-12 pieces daily, maximum 24), for 6-12 weeks with tapering. Teach the **'chew and park' technique** - chew until a peppery taste or tingle, then park it between cheek and gum, resume when the taste fades, over about 30 minutes - and **avoid acidic drinks such as tea, coffee, cola and juice for 15 minutes before and during use**, since they block buccal absorption. Chewing it like ordinary chewing gum causes hiccups, nausea, hiccough and throat burning and delivers no nicotine.",
+        "**Nicotine lozenge 2 mg or 4 mg** dissolved slowly over 20-30 minutes is an alternative for denture wearers and for smokeless tobacco users, who often prefer an oral form; combination therapy - **a patch for background craving plus gum or lozenge as required for breakthrough craving - is more effective than either alone** and is now standard for the highly dependent.",
+        "**Nicotine replacement is safe in stable cardiovascular disease**, including after myocardial infarction once the patient is stable, and it is far safer than continuing to smoke; caution applies in the first two weeks after an infarction, in unstable angina and in serious arrhythmia. In **pregnancy**, behavioural support is first line, and intermittent nicotine replacement (gum or lozenge, not the 24-hour patch) may be used if she cannot quit otherwise, after discussion.",
+        "**Adverse effects are minor**: skin irritation with the patch, jaw ache, hiccups, dyspepsia and mouth ulcers with the gum; the common reason for failure is **under-dosing and stopping too early**, so use enough for long enough, and do not stop at two weeks.",
+      ],
+    },
+    {
+      heading: "Pharmacotherapy 2: bupropion, varenicline and combinations",
+      points: [
+        "**Bupropion sustained release** is a noradrenaline and dopamine reuptake inhibitor: **150 mg once daily in the morning for 3 days, then 150 mg twice daily (doses at least 8 hours apart), started 1-2 weeks before the quit date and continued for 7-12 weeks**, with an option to continue to 6 months for relapse prevention. It also blunts the post-cessation weight gain and treats coexisting depression.",
+        "**Bupropion lowers the seizure threshold** and is **contraindicated in epilepsy or any seizure history, eating disorders (bulimia or anorexia), abrupt alcohol or benzodiazepine withdrawal, severe hepatic impairment, and with monoamine oxidase inhibitors**; use with care in head injury and with drugs that lower the seizure threshold. Common effects are insomnia, dry mouth, headache and agitation.",
+        "**Varenicline** is a partial agonist at the alpha-4-beta-2 nicotinic receptor - it relieves craving and withdrawal while blocking the reward from a lapse - and it is the **most effective single agent**, roughly trebling the quit rate. Dose: **0.5 mg once daily on days 1-3, 0.5 mg twice daily on days 4-7, then 1 mg twice daily from day 8 for 12 weeks**, with a further 12 weeks in those who have quit, started 1 week before the quit date; take it after food with a full glass of water. Reduce the dose in severe renal impairment.",
+        "**Varenicline adverse effects**: nausea in about 30% (take with food, it usually settles), abnormal or vivid dreams, insomnia, headache and constipation. The neuropsychiatric boxed warning was **removed by the US FDA in 2016 after the EAGLES trial** showed no significant excess of serious neuropsychiatric events even in patients with psychiatric illness, but a patient with depression should still be monitored, and any new agitation, mood change or suicidal thought means stopping the drug and reviewing.",
+        "**Combinations and choice**: nicotine patch plus short-acting nicotine, or varenicline alone, are the most effective options; bupropion suits the patient with coexisting depression or who fears weight gain; nicotine replacement suits pregnancy, cardiac patients and where cost or availability matters, and is the only option available over the counter. **All of them work only when combined with behavioural support** - drug alone without counselling roughly halves the benefit.",
+        "**Smokeless tobacco users** need the same approach: behavioural support with oral nicotine replacement (gum or lozenge, 4 mg for the highly dependent), varenicline where affordable, examination of the oral cavity at every visit for leukoplakia, erythroplakia and oral submucous fibrosis, and urgent referral of any non-healing ulcer, red or speckled patch, induration or restricted mouth opening.",
+      ],
+    },
+    {
+      heading: "Withdrawal, relapse prevention and the system in India",
+      points: [
+        "**Nicotine withdrawal begins within hours, peaks at 2-3 days and largely settles by 2-4 weeks**, with irritability, anxiety, restlessness, poor concentration, low mood, increased appetite, insomnia and craving; craving typically lasts only a few minutes at a time, and telling the patient this in advance is itself a treatment. **Weight gain averages 4-5 kg**, so plan diet and 30 minutes of daily walking from the quit date rather than after the weight appears.",
+        "Teach the **4 D's for a craving - Delay, Deep breathing, Drink water, Distract** - and the **HALT rule** of recognising Hunger, Anger, Loneliness and Tiredness as triggers; replace the after-meal cigarette with a walk, brush the teeth, change the route to work, and avoid alcohol and smoking company in the first month, since alcohol is the commonest single cause of relapse.",
+        "**Distinguish a lapse from a relapse.** A single cigarette is a lapse; the plan is to discard the rest of the pack, identify the trigger and continue the quit attempt without guilt. Framing a lapse as total failure is what turns it into a relapse. Record the number of previous attempts and what happened - most successful quitters needed several attempts.",
+        "**Adjust other drugs on quitting.** Tobacco smoke induces CYP1A2, so on stopping, the levels of **theophylline, olanzapine, clozapine, caffeine, imipramine and warfarin effects rise** - reduce theophylline and antipsychotic doses and monitor the INR; insulin requirements may also fall. This is a favourite viva question.",
+        "**Use the Indian system**: the **National Tobacco Control Programme** funds Tobacco Cessation Centres at district level; the **mCessation programme (give a missed call to 011-22901701) and the National Tobacco Quitline 1800-11-2356** give free structured telephone and SMS support in several languages; free nicotine replacement is available at some district centres.",
+        "Know the law for the counselling and the exam: the **Cigarettes and Other Tobacco Products Act (COTPA) 2003** bans smoking in public places (section 4), sale to and by minors under 18 and sale within 100 yards of an educational institution (section 6), all direct and indirect advertising (section 5), and mandates pictorial health warnings covering 85% of both sides of the pack (section 7); the **Prohibition of Electronic Cigarettes Act 2019** bans the production, sale, import and advertisement of e-cigarettes in India, and India has ratified the **WHO Framework Convention on Tobacco Control**.",
+      ],
+    },
+  ],
+  tables: [
+    {
+      heading: "The 5 A's and the 5 R's at a glance",
+      columns: ["Step", "What it means", "What you actually do"],
+      rows: [
+        ["Ask", "Identify tobacco use at every visit", "Ask about cigarettes, bidis, hookah AND khaini, gutkha, zarda, paan, mishri; record as a vital sign"],
+        ["Advise", "Clear, strong, personalised advice to quit", "'As your doctor, the most important thing you can do is stop tobacco completely, and I can help you'"],
+        ["Assess", "Willingness to quit in the next 30 days and dependence", "Fagerstrom test, or time to first use after waking (under 30 min = high) and amount per day"],
+        ["Assist", "Help the willing quitter", "Quit date within 2 weeks, total abstinence, clear the house, enlist a supporter, plan triggers, prescribe pharmacotherapy"],
+        ["Arrange", "Structured follow-up", "Week 1, week 2, 1 month, then monthly for 3 months; treat a lapse as information"],
+        ["5 R's (not ready to quit)", "Motivational counselling repeated at each visit", "Relevance, Risks, Rewards, Roadblocks, Repetition"],
+      ],
+    },
+    {
+      heading: "Cessation pharmacotherapy: doses, duration and cautions",
+      columns: ["Drug", "Dose and schedule", "Duration", "Cautions and contraindications"],
+      rows: [
+        ["Nicotine patch", "21 mg/24 h if more than 10 cigarettes a day, then 14 mg, then 7 mg (14 mg start if 10 or fewer)", "6 weeks + 2 weeks + 2 weeks = 10 weeks", "Skin irritation; remove at night for vivid dreams or insomnia; caution in the first 2 weeks after myocardial infarction and in unstable angina"],
+        ["Nicotine gum", "2 mg if first use over 30 min after waking, 4 mg if within 30 min; 1 piece every 1-2 h, 8-12 a day, max 24", "6-12 weeks with taper", "Chew-and-park technique; no acidic drinks 15 min before or during; jaw ache, hiccups, dyspepsia"],
+        ["Nicotine lozenge", "2 mg or 4 mg dissolved over 20-30 min", "6-12 weeks", "Useful for denture wearers and smokeless tobacco users; do not chew or swallow"],
+        ["Bupropion SR", "150 mg OD for 3 days then 150 mg BD, started 1-2 weeks before the quit date", "7-12 weeks (up to 6 months for relapse prevention)", "Contraindicated in seizure disorder, eating disorders, abrupt alcohol or benzodiazepine withdrawal, MAOI use, severe liver disease"],
+        ["Varenicline", "0.5 mg OD days 1-3, 0.5 mg BD days 4-7, then 1 mg BD, started 1 week before the quit date", "12 weeks, plus a further 12 weeks if abstinent", "Nausea in about 30% - take with food; vivid dreams; reduce dose in severe renal impairment; monitor mood in psychiatric illness"],
+        ["Combination NRT", "Patch for background craving plus gum or lozenge as required", "10-12 weeks", "More effective than a single form in the highly dependent; the usual failure is under-dosing"],
+      ],
+    },
+  ],
+  redFlags: [
+    "A non-healing oral ulcer of more than three weeks, a red (erythroplakia) or white (leukoplakia) or speckled patch, induration, a neck node or restricted mouth opening in a tobacco or areca nut user - urgent biopsy and oncology referral for suspected oral cancer or oral submucous fibrosis.",
+    "Haemoptysis, unexplained weight loss, a persistent cough of more than three weeks or hoarseness of more than three weeks in a smoker - chest radiograph, sputum for acid-fast bacilli and CBNAAT for tuberculosis, and a lung cancer work-up.",
+    "New chest pain, breathlessness or reduced exercise tolerance in a smoker - assess for ischaemic heart disease and chronic obstructive pulmonary disease rather than treating the cough alone.",
+    "New agitation, depressed mood, unusual behaviour or suicidal ideation in a patient on varenicline or bupropion - stop the drug, review the same day, and manage the mood; also consider that unmasked withdrawal or unmasked depression may be responsible.",
+    "A seizure in a patient taking bupropion, or bupropion prescribed to someone with epilepsy, bulimia or in alcohol withdrawal - stop it immediately, as this is an avoidable prescribing error.",
+    "Confusion, nausea, arrhythmia or delirium in a patient who has just quit and is on theophylline, clozapine or olanzapine - toxicity from loss of CYP1A2 induction; reduce the dose and check levels where available.",
+  ],
+  pearls: [
+    "Ask about khaini, gutkha, zarda, paan and mishri, not just smoking - 21% of Indian adults use smokeless tobacco and they answer 'no' to 'do you smoke'.",
+    "Three minutes of clear personalised advice raises quit rates by 2-3% absolute; advice plus counselling plus drugs raises one-year abstinence to 25-30%.",
+    "Two questions grade dependence and decide pharmacotherapy: how soon after waking is the first one, and how many a day. Within 30 minutes or more than 10 a day means offer a drug.",
+    "Gum works only with chew-and-park and no tea, coffee or cola for 15 minutes; chewed like ordinary gum it gives hiccups and no nicotine.",
+    "Varenicline 1 mg twice daily for 12 weeks is the most effective single agent; the FDA removed its neuropsychiatric boxed warning in 2016 after EAGLES. Bupropion is contraindicated in epilepsy and eating disorders.",
+    "On quitting, CYP1A2 induction is lost - theophylline, clozapine, olanzapine and caffeine levels rise, so reduce the doses and warn the patient.",
+  ],
+  theory: [
+    {
+      id: "psychiatry-tobacco-t1",
+      paper: "II",
+      kind: "long",
+      marks: 10,
+      minutes: 20,
+      frequency: "common",
+      question:
+        "A 45-year-old man with newly diagnosed hypertension smokes 20 bidis a day and has done so for 25 years. His first bidi is within ten minutes of waking. Describe your approach to tobacco cessation in him.",
+      openingLines: [
+        "Tobacco dependence is a chronic relapsing disorder in which nicotine acts on alpha-4-beta-2 nicotinic acetylcholine receptors to produce craving and a withdrawal syndrome, and it is the single most important modifiable risk factor for his hypertension and cardiovascular risk.",
+        "His first bidi within ten minutes of waking and twenty a day indicate high nicotine dependence, so he requires both behavioural support and pharmacotherapy, delivered through the 5 A's framework of Ask, Advise, Assess, Assist and Arrange.",
+      ],
+      answer: [
+        {
+          heading: "1. Ask and Advise",
+          points: [
+            "Record tobacco use as a vital sign, quantifying bidis, cigarettes, hookah and all smokeless forms - khaini, gutkha, zarda, paan, mishri - and ask about secondhand exposure of his wife and children.",
+            "Calculate pack-years and years of use, and ask about previous quit attempts, what helped and what caused relapse.",
+            "Give clear, strong, personalised advice: as his doctor, the most important thing he can do for his blood pressure and his heart is to stop tobacco completely, and you will help him do it.",
+            "Personalise it - link it to his hypertension, his cardiovascular risk, the cost of 20 bidis a day over a year, and the example set for his children.",
+          ],
+        },
+        {
+          heading: "2. Assess dependence and readiness",
+          points: [
+            "Assess willingness to quit in the next 30 days; if he is not ready, apply the 5 R's - Relevance, Risks, Rewards, Roadblocks, Repetition - and revisit at every consultation.",
+            "Assess dependence with the Fagerstrom test, or with the two key items: first use within 30 minutes of waking, and more than 10 a day - both positive in him, indicating high dependence.",
+            "Screen for depression with the PHQ-9 and for alcohol use with AUDIT-C, since both predict relapse and both alter the drug choice.",
+            "Examine the oral cavity, chest and cardiovascular system; check blood pressure, lipids, blood glucose and, if he has a chronic cough, a chest radiograph and sputum for tuberculosis.",
+          ],
+        },
+        {
+          heading: "3. Assist - behavioural plan",
+          points: [
+            "Set a quit date within two weeks, and advise total abstinence from that date rather than gradual reduction.",
+            "Clear the house, workplace and vehicle of bidis, matches and ashtrays; tell the family and enlist a named supporter.",
+            "Identify his high-risk situations - after meals, with tea, with alcohol, with smoking colleagues, at times of stress - and plan a substitute for each.",
+            "Teach the 4 D's for a craving - Delay, Deep breathing, Drink water, Distract - and warn that a craving lasts only a few minutes.",
+            "Warn of withdrawal peaking at 2-3 days and settling by 2-4 weeks, and of 4-5 kg weight gain, and start a walking and diet plan from the quit date.",
+          ],
+        },
+        {
+          heading: "4. Assist - pharmacotherapy",
+          points: [
+            "He qualifies for pharmacotherapy on both dependence criteria; discuss the three options with cost and availability.",
+            "Nicotine patch 21 mg/24 h for 6 weeks, then 14 mg for 2 weeks, then 7 mg for 2 weeks, combined with 4 mg gum as required for breakthrough craving, taught with the chew-and-park technique and no acidic drinks for 15 minutes.",
+            "Or varenicline 0.5 mg OD for 3 days, 0.5 mg BD to day 7, then 1 mg BD for 12 weeks, begun one week before the quit date and taken after food.",
+            "Or bupropion SR 150 mg OD for 3 days then 150 mg BD for 7-12 weeks, started 1-2 weeks before the quit date, avoided if there is any seizure history, eating disorder or alcohol withdrawal.",
+            "Nicotine replacement is safe in stable cardiovascular disease and is far safer than continuing to smoke.",
+          ],
+        },
+        {
+          heading: "5. Arrange follow-up and manage relapse",
+          points: [
+            "Review in the first week, at 2 weeks, at 1 month and monthly for 3 months, since most relapses occur in the first two weeks.",
+            "At each visit congratulate abstinence, review craving, side effects and adherence, and check the blood pressure, which usually improves.",
+            "Treat a lapse as information: discard the remaining bidis, identify the trigger, and continue the attempt; do not withdraw the pharmacotherapy in disappointment.",
+            "Give the National Tobacco Quitline 1800-11-2356 and the mCessation missed-call number 011-22901701, and refer to the district Tobacco Cessation Centre if available.",
+            "Remember to reduce theophylline or any antipsychotic he takes after quitting, since loss of CYP1A2 induction raises their levels.",
+          ],
+        },
+      ],
+      mustDraw: [
+        "The 5 A's as a flow chart, with the 5 R's as the branch for the patient not ready to quit.",
+        "A table of the three pharmacotherapies with dose, duration and contraindications.",
+      ],
+      markSplit: [
+        { part: "Ask and Advise with personalisation", marks: 2 },
+        { part: "Assess dependence, readiness and comorbidity", marks: 2 },
+        { part: "Behavioural assistance including quit date and trigger planning", marks: 2 },
+        { part: "Pharmacotherapy with doses and duration", marks: 3 },
+        { part: "Follow-up, relapse management and referral", marks: 1 },
+      ],
+      keywords: ["5 A's", "Fagerstrom", "nicotine patch", "varenicline", "bupropion"],
+    },
+    {
+      id: "psychiatry-tobacco-t2",
+      paper: "II",
+      kind: "short-note",
+      marks: 5,
+      minutes: 10,
+      frequency: "common",
+      question: "Short note: nicotine replacement therapy - forms, doses, correct use and contraindications.",
+      openingLines: [
+        "Nicotine replacement therapy delivers nicotine without the tar, carbon monoxide and other carcinogens of tobacco smoke, relieving withdrawal and craving while the behavioural habit is unlearned, and it approximately doubles the chance of long-term abstinence.",
+        "It is indicated for any user smoking 10 or more a day, anyone whose first use is within 30 minutes of waking, and anyone who has failed an unaided attempt.",
+      ],
+      answer: [
+        {
+          heading: "1. Forms and doses",
+          points: [
+            "Transdermal patch: 21 mg/24 h for more than 10 cigarettes a day for 6 weeks, then 14 mg for 2 weeks, then 7 mg for 2 weeks; start at 14 mg for 10 or fewer.",
+            "Gum: 2 mg if the first use is more than 30 minutes after waking, 4 mg if within 30 minutes; one piece every 1-2 hours, 8-12 a day, maximum 24, for 6-12 weeks then taper.",
+            "Lozenge 2 mg or 4 mg dissolved over 20-30 minutes; useful for denture wearers and smokeless tobacco users.",
+            "Combination of a patch for background craving plus gum or lozenge for breakthrough craving is more effective than any single form in the highly dependent.",
+          ],
+        },
+        {
+          heading: "2. Correct technique - the marks are here",
+          points: [
+            "Patch: apply to clean, dry, hairless skin above the waist, rotate the site daily, remove at bedtime if there are vivid dreams or insomnia.",
+            "Gum: chew until a peppery taste or tingling, then park between cheek and gum, resume when the taste fades, over about 30 minutes; do not chew continuously like ordinary gum.",
+            "Avoid tea, coffee, cola and juice for 15 minutes before and during oral nicotine, as acidity blocks buccal absorption.",
+            "Under-dosing and stopping too early are the commonest causes of failure; use an adequate dose for at least 8-12 weeks.",
+          ],
+        },
+        {
+          heading: "3. Adverse effects and cautions",
+          points: [
+            "Patch: local skin irritation, vivid dreams, insomnia.",
+            "Gum and lozenge: jaw ache, hiccups, dyspepsia, throat irritation, mouth ulcers.",
+            "Caution within the first 2 weeks of myocardial infarction, in unstable angina and in serious arrhythmia; otherwise safe in stable cardiovascular disease and far safer than smoking.",
+            "In pregnancy behavioural support is first line; intermittent forms such as gum or lozenge may be used if she cannot quit otherwise, after discussion, in preference to the 24-hour patch.",
+          ],
+        },
+        {
+          heading: "4. Place in the overall plan",
+          points: [
+            "Always combined with behavioural support - drug without counselling roughly halves the benefit.",
+            "Alternatives are varenicline 1 mg twice daily for 12 weeks (most effective single agent) and bupropion SR 150 mg twice daily for 7-12 weeks.",
+            "Follow up at week 1, week 2, 1 month and monthly for 3 months, and manage a lapse without withdrawing treatment.",
+          ],
+        },
+      ],
+      mustDraw: [
+        "A table of NRT forms against dose, duration and the key technique point for each.",
+      ],
+      markSplit: [
+        { part: "Indications for NRT", marks: 1 },
+        { part: "Forms and doses with tapering", marks: 2 },
+        { part: "Technique, including chew-and-park and the acidic drink rule", marks: 1 },
+        { part: "Adverse effects, cautions and place in the plan", marks: 1 },
+      ],
+      keywords: ["nicotine replacement", "chew and park", "21 mg patch", "combination NRT", "pregnancy"],
+    },
+  ],
+  mcqs: [
+    {
+      id: "psychiatry-tobacco-q1",
+      stem: "A 50-year-old man smokes 25 cigarettes a day, has his first within 5 minutes of waking, and has a history of a single generalised seizure five years ago after a head injury. He wants to quit. Which pharmacotherapy should be avoided?",
+      options: [
+        "Nicotine patch 21 mg",
+        "Bupropion sustained release 150 mg twice daily",
+        "Varenicline 1 mg twice daily",
+        "Nicotine gum 4 mg",
+        "Combination of nicotine patch and gum",
+      ],
+      answer: 1,
+      explanation:
+        "Bupropion lowers the seizure threshold and is contraindicated in anyone with a seizure history, an eating disorder, or abrupt alcohol or benzodiazepine withdrawal, so it is the one drug to avoid in this man. The 21 mg patch is appropriate for someone smoking more than 10 a day and does not affect the seizure threshold. Varenicline is the most effective single agent, is not epileptogenic at usual doses, and is suitable here. Nicotine gum at 4 mg is correct for a man whose first cigarette is within 30 minutes of waking. Combination nicotine replacement is the most effective nicotine-based option for his high dependence and is entirely safe with respect to seizures.",
+      difficulty: "easy",
+    },
+    {
+      id: "psychiatry-tobacco-q2",
+      stem: "A 38-year-old woman quit smoking two weeks ago and is on a nicotine patch. She takes theophylline for asthma and olanzapine for a stable psychotic illness. She now has nausea, palpitations, tremor and insomnia. What is the most likely explanation?",
+      options: [
+        "Nicotine patch overdose",
+        "Loss of CYP1A2 induction on stopping smoking, raising theophylline and olanzapine levels",
+        "Relapse of her psychosis",
+        "Nicotine withdrawal, which peaks at two weeks",
+        "Asthma exacerbation",
+      ],
+      answer: 1,
+      explanation:
+        "Polycyclic aromatic hydrocarbons in tobacco smoke induce CYP1A2; stopping smoking removes that induction over one to two weeks and the plasma levels of theophylline, olanzapine, clozapine, caffeine and imipramine rise, producing exactly this picture of nausea, tremor, palpitations and insomnia. The doses must be reduced and levels checked where available. A patch at the correct strength does not cause this constellation, and nicotine excess would cause nausea but not the drug-level rise. Relapse of psychosis presents with psychotic symptoms, not tremor and palpitations. Nicotine withdrawal peaks at 2-3 days, not at two weeks, and is being covered by the patch. An asthma exacerbation causes wheeze and breathlessness, which she does not have.",
+      difficulty: "hard",
+    },
+    {
+      id: "psychiatry-tobacco-q3",
+      stem: "A patient using nicotine gum complains of hiccups, throat burning and no reduction in craving. He chews the gum continuously while drinking tea. What is the correct advice?",
+      options: [
+        "Stop the gum and switch to a patch, as gum has failed",
+        "Use the chew-and-park technique over about 30 minutes and avoid tea, coffee and cola for 15 minutes before and during use",
+        "Double the gum strength from 2 mg to 4 mg and continue as before",
+        "Swallow the gum after chewing for better absorption",
+        "Chew two pieces at once to increase the dose",
+      ],
+      answer: 1,
+      explanation:
+        "Nicotine gum is absorbed through the buccal mucosa; continuous chewing releases nicotine faster than it can be absorbed so it is swallowed, causing hiccups, throat burning and dyspepsia with no craving relief, and acidic drinks lower buccal pH and block absorption. The chew-and-park technique with a 15-minute drink-free window fixes both problems. Abandoning the gum discards a drug that has not actually been used correctly. Doubling the strength while using the wrong technique simply doubles the swallowed nicotine and the side effects. Swallowing the gum delivers nicotine to the stomach, where it is poorly absorbed and heavily first-pass metabolised. Chewing two pieces at once compounds the same error.",
+      difficulty: "easy",
+    },
+    {
+      id: "psychiatry-tobacco-q4",
+      stem: "A 42-year-old man says he has no intention of stopping his gutkha and asks you not to raise the subject. Which is the most appropriate response at this visit?",
+      options: [
+        "Accept his decision and never raise tobacco again",
+        "Apply the 5 R's - relevance, risks, rewards, roadblocks - and repeat the discussion briefly at every future visit",
+        "Prescribe varenicline anyway in the hope that he will use it",
+        "Tell him you will not treat his other problems until he stops",
+        "Refer him immediately to a psychiatrist for dependence",
+      ],
+      answer: 1,
+      explanation:
+        "For a user not ready to quit, motivational counselling with the 5 R's - making it personally relevant, spelling out his specific risks, listing the rewards, exploring his roadblocks, and repeating the conversation at every visit - is the evidence-based approach, and most successful quitters need several attempts before one succeeds. Never raising the subject again abandons the highest-yield preventive act available. Prescribing a drug to someone with no intention to quit wastes money and produces no benefit, since pharmacotherapy works only within a quit attempt. Making other treatment conditional on quitting is coercive, unethical and destroys the therapeutic relationship. Psychiatric referral is not required for ordinary tobacco dependence, which is managed in family practice.",
+      difficulty: "easy",
+    },
+    {
+      id: "psychiatry-tobacco-q5",
+      stem: "A 55-year-old man who has chewed khaini for 20 years is found on examination to have a firm white patch on the buccal mucosa with blanching and reduced mouth opening to 25 mm. What is the correct action?",
+      options: [
+        "Start nicotine gum and review in three months",
+        "Advise complete cessation of tobacco and areca nut, and refer urgently for biopsy and specialist assessment of oral submucous fibrosis and possible malignant change",
+        "Prescribe a topical steroid and reassure him",
+        "Reassure him that white patches in tobacco users are always benign",
+        "Advise reduction of khaini to half the current amount",
+      ],
+      answer: 1,
+      explanation:
+        "Blanching of the mucosa with fibrous bands and trismus - mouth opening reduced to 25 mm - is oral submucous fibrosis, a potentially malignant disorder strongly linked to areca nut and smokeless tobacco, and any associated white or speckled patch needs biopsy to exclude dysplasia or carcinoma, so urgent referral together with complete cessation is required. Starting gum and reviewing in three months delays a possible cancer diagnosis. A topical steroid may have a place in specialist management but is no substitute for biopsy and it is not reassurance that is needed. White patches in tobacco users are emphatically not always benign - leukoplakia carries a real rate of malignant transformation. Halving the khaini neither stops the fibrosis nor addresses the lesion.",
+      difficulty: "moderate",
+    },
+  ],
+  cards: [
+    {
+      id: "psychiatry-tobacco-c1",
+      front: "The 5 A's of tobacco cessation.",
+      back: "Ask (all forms, every visit, as a vital sign), Advise (clear, strong, personalised), Assess (readiness in 30 days and dependence), Assist (quit date, plan, pharmacotherapy), Arrange (follow-up week 1, week 2, 1 month, monthly for 3 months).",
+    },
+    {
+      id: "psychiatry-tobacco-c2",
+      front: "The 5 R's for the patient not ready to quit.",
+      back: "Relevance, Risks, Rewards, Roadblocks, Repetition - motivational counselling repeated at every visit, since most quitters succeed only after several attempts.",
+    },
+    {
+      id: "psychiatry-tobacco-c3",
+      front: "Two questions that grade nicotine dependence and decide pharmacotherapy.",
+      back: "How soon after waking is the first use (within 30 minutes indicates high dependence, and means 4 mg gum), and how many per day (more than 10 means offer pharmacotherapy, and start the 21 mg patch).",
+    },
+    {
+      id: "psychiatry-tobacco-c4",
+      front: "Nicotine patch regimen.",
+      back: "21 mg/24 h for 6 weeks, then 14 mg for 2 weeks, then 7 mg for 2 weeks, in those using more than 10 a day; start at 14 mg for 10 or fewer. Rotate sites; remove at night for vivid dreams.",
+    },
+    {
+      id: "psychiatry-tobacco-c5",
+      front: "Varenicline dose and duration.",
+      back: "0.5 mg OD days 1-3, 0.5 mg BD days 4-7, then 1 mg BD for 12 weeks (a further 12 weeks if abstinent), started 1 week before the quit date, taken after food. Nausea in about 30%. FDA removed the neuropsychiatric boxed warning in 2016 after EAGLES.",
+    },
+    {
+      id: "psychiatry-tobacco-c6",
+      front: "Bupropion dose and contraindications.",
+      back: "150 mg OD for 3 days then 150 mg BD for 7-12 weeks, started 1-2 weeks before the quit date. Contraindicated in seizure disorder, eating disorders, abrupt alcohol or benzodiazepine withdrawal, MAOI use and severe hepatic impairment.",
+    },
+    {
+      id: "psychiatry-tobacco-c7",
+      front: "Nicotine withdrawal timeline and weight gain.",
+      back: "Begins within hours, peaks at 2-3 days, largely settles by 2-4 weeks; irritability, anxiety, poor concentration, low mood, increased appetite, insomnia, craving lasting a few minutes at a time. Average weight gain 4-5 kg - plan diet and walking from the quit date.",
+    },
+    {
+      id: "psychiatry-tobacco-c8",
+      front: "Which drug levels rise after a patient stops smoking, and why?",
+      back: "Tobacco smoke induces CYP1A2; on quitting the induction is lost and theophylline, clozapine, olanzapine, caffeine and imipramine levels rise. Reduce doses, monitor, and watch the INR on warfarin.",
+    },
+  ],
+  references: [
+    "US Public Health Service, Treating Tobacco Use and Dependence: 2008 Update - the 5 A's and 5 R's",
+    "Global Adult Tobacco Survey India (GATS-2), 2016-17, MoHFW and TISS",
+    "WHO Framework Convention on Tobacco Control; National Tobacco Control Programme, MoHFW India",
+    "Anthonisen NR et al. and Cochrane reviews of nicotine replacement therapy, bupropion and varenicline for smoking cessation, updated 2023",
+    "Anthenelli RM et al. EAGLES trial, The Lancet, 2016",
+    "Cigarettes and Other Tobacco Products Act (COTPA) 2003; Prohibition of Electronic Cigarettes Act 2019, Government of India",
+  ],
+});
+topics.push({
+  id: "psychiatry-insomnia-sleep",
+  title: "Insomnia and sleep disorders in family practice",
+  oneLiner:
+    "Chronic insomnia disorder is dissatisfaction with sleep quantity or quality with difficulty initiating or maintaining sleep or early morning waking, occurring at least three nights a week for at least three months despite adequate opportunity to sleep and causing daytime impairment; the family physician grades it with the Insomnia Severity Index, excludes obstructive sleep apnoea with STOP-BANG, restless legs syndrome, depression, alcohol, drugs and pain, and treats it with cognitive behavioural therapy for insomnia - stimulus control and sleep restriction - as first line, reserving a short, dated course of a hypnotic for the minority.",
+  frequency: "common",
+  keywords: [
+    "chronic insomnia disorder",
+    "CBT-I",
+    "stimulus control",
+    "sleep restriction",
+    "sleep hygiene",
+    "Insomnia Severity Index",
+    "Epworth Sleepiness Scale",
+    "STOP-BANG",
+    "obstructive sleep apnoea",
+    "CPAP",
+    "restless legs syndrome",
+    "zolpidem",
+    "zopiclone",
+    "melatonin",
+    "sleep diary",
+    "REM sleep behaviour disorder",
+    "narcolepsy",
+    "shift work sleep disorder",
+  ],
+  sections: [
+    {
+      heading: "Definitions, prevalence and the first consultation",
+      points: [
+        "**Chronic insomnia disorder (DSM-5 and ICSD-3)**: dissatisfaction with sleep quantity or quality with difficulty initiating sleep, difficulty maintaining sleep or early morning awakening with inability to return to sleep, present **at least 3 nights a week for at least 3 months**, occurring **despite adequate opportunity and circumstances for sleep**, and producing daytime impairment - fatigue, poor concentration, irritability, low mood or impaired performance. Less than 3 months is short-term insomnia disorder.",
+        "**The daytime consequence is what makes it a disorder.** A patient who sleeps five hours and functions well is a short sleeper and needs no treatment; the complaint of poor sleep without daytime impairment is not insomnia disorder, and treating it with a hypnotic causes harm.",
+        "Insomnia affects **10-15% of adults chronically and about a third at some point in a year**, is commoner in women, in the elderly, in shift workers, and in anyone with chronic pain, depression, anxiety, chronic obstructive pulmonary disease, heart failure, hyperthyroidism, benign prostatic hyperplasia with nocturia, or menopause.",
+        "Take the history from **the patient and the bed partner**: bedtime, sleep latency, number and cause of awakenings, final waking time, time out of bed, daytime naps, and total sleep time; then the bedroom environment - noise, light, mobile phone use in bed, shared sleeping space, shift timings, and a television or a crying child in the room.",
+        "**Ask a partner about snoring, witnessed apnoea, choking arousals, restless kicking legs and acting out dreams**, because obstructive sleep apnoea, periodic limb movements and REM sleep behaviour disorder are all missed if only the patient is asked.",
+        "**Ask for a two-week sleep diary** before deciding anything - it corrects the systematic over-estimation of wakefulness that patients with insomnia make, and it is the basis on which sleep restriction is prescribed later.",
+      ],
+    },
+    {
+      heading: "Sorting out the cause: the differential a family physician must cover",
+      points: [
+        "**Psychiatric**: depression classically causes early morning waking with a diurnal mood variation; anxiety causes difficulty initiating sleep with a racing mind; mania causes reduced need for sleep without tiredness, which is a different phenomenon entirely and a red flag. Screen every insomnia patient with the **PHQ-9 and GAD-7**.",
+        "**Substances**: alcohol shortens sleep latency but fragments the second half of the night and causes early waking with sweating - the commonest reversible cause in Indian men; caffeine (including tea, cola and energy drinks) has a half-life of 5-6 hours, so an evening cup matters; nicotine is a stimulant and withdrawal wakes smokers; cannabis and stimulant withdrawal disturb sleep; and **hypnotic and benzodiazepine withdrawal produces rebound insomnia worse than the original**.",
+        "**Drugs to review by name**: steroids, theophylline, salbutamol, thyroxine, SSRIs and venlafaxine (early activation), bupropion, beta-blockers (nightmares), diuretics taken at night, levodopa, phenytoin, statins occasionally, decongestants, and nasal or oral pseudoephedrine.",
+        "**Medical**: nocturnal pain from arthritis or malignancy, gastro-oesophageal reflux, nocturnal asthma or COPD, heart failure with orthopnoea and paroxysmal nocturnal dyspnoea, nocturia from prostatism, diabetes or diuretics, hyperthyroidism, menopausal flushes, pruritus, and chronic kidney disease.",
+        "**Obstructive sleep apnoea** should be actively sought with the **STOP-BANG questionnaire** - Snoring loudly, Tiredness in the daytime, Observed apnoea, high blood Pressure, BMI over 35, Age over 50, Neck circumference over 40 cm, and male Gender - where **0-2 is low risk, 3-4 intermediate and 5-8 high risk**, and where 5 or more warrants referral for polysomnography. Grade daytime sleepiness with the **Epworth Sleepiness Scale, 8 items scored 0-3, total 0-24, with more than 10 indicating excessive daytime sleepiness**.",
+        "**Restless legs syndrome** is diagnosed on five clinical criteria - an **urge to move the legs, usually with an unpleasant sensation, worse at rest, relieved by movement, worse in the evening or night**, and not explained by another condition; it is very common in **iron deficiency, pregnancy and chronic kidney disease**, so check **serum ferritin and treat with oral iron if it is below 75 ng/mL** even when the haemoglobin is normal.",
+      ],
+    },
+    {
+      heading: "Cognitive behavioural therapy for insomnia - the first-line treatment",
+      points: [
+        "**CBT-I is first-line treatment for chronic insomnia in every major guideline, ahead of any drug**, with effects equal to hypnotics in the short term and clearly superior at 6-12 months because the benefit persists after treatment stops. It has five components, of which stimulus control and sleep restriction carry most of the effect.",
+        "**Stimulus control** re-links the bed with sleep: go to bed only when sleepy; use the bed for sleep and sex only - no phone, television, eating, studying or arguing in bed; **if not asleep within about 20 minutes, get out of bed, go to another room, do something quiet in dim light and return only when sleepy**, repeating as often as necessary; get up at the same time every morning regardless of how the night went; and **no daytime naps**.",
+        "**Sleep restriction (sleep compression)** raises sleep efficiency: from the diary, calculate **average total sleep time**, and set the time in bed to that figure (**never below 5 hours**) with a fixed rising time; when **sleep efficiency, which is total sleep time divided by time in bed, exceeds 85-90% for a week, add 15-20 minutes to the time in bed**, and continue weekly until the patient is sleeping enough. Warn about daytime sleepiness in the first two weeks and **do not use it in bipolar disorder, epilepsy, untreated obstructive sleep apnoea or in drivers of heavy vehicles**.",
+        "**Cognitive restructuring** targets the beliefs that maintain the problem: 'I must have eight hours', 'if I do not sleep I cannot function tomorrow', clock-watching at 3 a.m. and the arithmetic of lost hours; turn the clock face to the wall, and replace catastrophic prediction with the observation that the patient has in fact functioned after many bad nights.",
+        "**Relaxation**: progressive muscular relaxation, slow diaphragmatic breathing, a guided body scan, or in the Indian setting yoga nidra and simple pranayama, practised in the daytime first so that the technique is available at night rather than being learned in a panic.",
+        "**Sleep hygiene alone is not a treatment** - it is necessary but insufficient, and prescribing it on its own is one of the commonest examination errors. Deliver it alongside the rest: a fixed wake time, no caffeine after 4 p.m., no alcohol as a sleep aid, no heavy meal or vigorous exercise within 3 hours of bed, daylight exposure in the morning, regular daytime exercise, a dark, quiet and cool bedroom, and **no screens for an hour before bed**.",
+      ],
+    },
+    {
+      heading: "When and how to use drugs",
+      points: [
+        "**Drugs are second line, for short-term use, and always alongside behavioural treatment.** Reasonable indications are severe acute insomnia after a bereavement or an acute stressor, severe distress while CBT-I is being started, and short-term use in hospital or shift transition. **Prescribe for 2-4 weeks at most, with a written stop date, intermittently (three to four nights a week rather than nightly) where possible, at the lowest dose, and never as an open repeat.**",
+        "**Z-drugs**: **zolpidem 5 mg (women and elderly) to 10 mg (adult men) immediately before bed**, or **zopiclone 3.75 mg (elderly) to 7.5 mg**, or eszopiclone 1-3 mg. Warn about the metallic taste with zopiclone, next-morning impairment, and the **complex sleep behaviours - sleep-walking, sleep-driving and sleep-eating - that carry an FDA boxed warning and mean permanent discontinuation if they occur**. Take only when there are at least 7-8 hours available before driving.",
+        "**Benzodiazepines** such as **clonazepam 0.25-0.5 mg or lorazepam 0.5-1 mg at night** are effective but produce tolerance within weeks, dependence, rebound insomnia on stopping, daytime sedation, cognitive impairment, road accidents, and **falls and hip fracture in the elderly**; they are on the **Beers list as potentially inappropriate in older adults**, and long-acting agents such as diazepam and nitrazepam are the worst choices. They are best avoided altogether for chronic insomnia.",
+        "**Sedating antidepressants for the patient with comorbid depression**: **mirtazapine 7.5-15 mg at night** (also improves appetite; causes weight gain), **trazodone 25-100 mg at night**, or **low-dose amitriptyline 10-25 mg at night** where there is also chronic pain - the last with the usual anticholinergic and cardiac cautions and never in a patient at suicide risk. **Doxepin 3-6 mg** is licensed specifically for sleep maintenance insomnia.",
+        "**Melatonin 2 mg prolonged release at night, one to two hours before bed, for up to 13 weeks**, is licensed for insomnia in adults over 55 and is useful in **jet lag, shift work and circadian rhythm disorders and in children with neurodevelopmental disorders**; it is safe but its effect size in ordinary adult insomnia is small. **Sedating antihistamines** such as diphenhydramine and promethazine are widely used in India but cause tolerance within days, anticholinergic effects, next-day sedation, and delirium in the elderly, and should not be recommended.",
+        "**Stopping a long-term hypnotic** is a common family practice task: convert to an equivalent dose of a longer-acting agent if a short-acting benzodiazepine is being used, **reduce by about 10-25% every 2-4 weeks**, start CBT-I in parallel, warn about rebound insomnia lasting a few nights, provide a written schedule and frequent review, and never stop abruptly, since withdrawal seizures are possible at high doses.",
+      ],
+    },
+    {
+      heading: "The other sleep disorders a family physician must not miss",
+      points: [
+        "**Obstructive sleep apnoea**: loud snoring with witnessed apnoeas, choking arousals, unrefreshing sleep, morning headache, nocturia, resistant hypertension, atrial fibrillation, type 2 diabetes and a large neck. It causes road traffic accidents and cardiovascular death. Confirm with polysomnography or a home sleep apnoea test; treat with **weight loss (a 10% weight loss reduces the apnoea-hypopnoea index by about 25%), avoidance of alcohol and sedatives, positional therapy, and CPAP as the definitive treatment for moderate to severe disease (AHI 15 or more, or 5-14 with symptoms or comorbidity)**. **Never prescribe a hypnotic to an untreated apnoeic patient** - it worsens the apnoea and the hypoxia.",
+        "**Restless legs syndrome**: treat the cause first - **oral iron if ferritin is below 75 ng/mL**, correct renal failure and pregnancy-related deficiency, stop the aggravating drugs (antihistamines, metoclopramide, SSRIs, tricyclics, antipsychotics), reduce caffeine and alcohol; for persistent symptoms use **gabapentin 300 mg or pregabalin 75 mg at night as the preferred first-line drug**, with dopamine agonists (pramipexole 0.125-0.5 mg or ropinirole 0.25-2 mg at night) as an alternative, remembering **augmentation - earlier and more severe symptoms spreading to the arms - which is the well-known long-term problem with dopamine agonists**.",
+        "**Circadian rhythm disorders**: delayed sleep-wake phase in adolescents (cannot fall asleep before 2 a.m., cannot wake for school, sleeps normally in holidays) is treated with a gradually advanced fixed wake time, morning bright light, evening screen avoidance and low-dose melatonin taken several hours before the desired bedtime; **shift work sleep disorder** is managed with a fixed sleep schedule, a dark, quiet bedroom with eye masks and blackout curtains, strategic naps, caffeine at the start rather than the end of a shift, and bright light during the night shift.",
+        "**Narcolepsy** presents with excessive daytime sleepiness with irresistible sleep attacks, plus **cataplexy** (sudden bilateral loss of muscle tone triggered by emotion, usually laughter), sleep paralysis and hypnagogic hallucinations; the Epworth score is usually well above 15 and diagnosis needs polysomnography with a multiple sleep latency test, so refer.",
+        "**REM sleep behaviour disorder** - shouting, punching and kicking while acting out dreams, usually in men over 50 - is not a nightmare disorder; it is strongly associated with the later development of **Parkinson's disease, Lewy body dementia and multiple system atrophy**, needs the bedroom made safe (mattress on the floor, padded furniture, sharp objects and firearms removed), treatment with **melatonin 3-12 mg or clonazepam 0.25-0.5 mg at night**, and neurological referral.",
+        "**In children**, insomnia is usually behavioural - inconsistent bedtime routine, screens, caffeine in cola, bed-sharing conflicts - and is treated with a consistent routine and graduated extinction; but consider **adenotonsillar hypertrophy causing obstructive sleep apnoea**, which presents as snoring with mouth breathing, restless sleep, bed-wetting, poor school performance and hyperactivity rather than sleepiness, and which is cured by adenotonsillectomy.",
+      ],
+    },
+  ],
+  tables: [
+    {
+      heading: "Screening instruments in sleep medicine",
+      columns: ["Instrument", "What it measures", "Scoring", "Action threshold"],
+      rows: [
+        ["Insomnia Severity Index (ISI)", "Insomnia severity over 2 weeks, 7 items", "0-28", "0-7 none, 8-14 subthreshold, 15-21 moderate clinical insomnia, 22-28 severe - treat from 15, and follow the score"],
+        ["Epworth Sleepiness Scale", "Daytime sleepiness, 8 situations scored 0-3", "0-24", "More than 10 is excessive daytime sleepiness; above 15 suggests severe sleepiness - do not drive, and investigate"],
+        ["STOP-BANG", "Obstructive sleep apnoea risk", "0-8", "0-2 low, 3-4 intermediate, 5-8 high risk - refer for polysomnography"],
+        ["Two-week sleep diary", "Bedtime, latency, awakenings, rise time, naps, total sleep time, sleep efficiency", "Descriptive", "Mandatory before sleep restriction; corrects the patient's over-estimate of time awake"],
+      ],
+    },
+    {
+      heading: "Drugs used for insomnia: doses, duration and cautions",
+      columns: ["Drug", "Dose", "Duration", "Cautions"],
+      rows: [
+        ["Zolpidem", "5 mg (women, elderly) to 10 mg immediately at bedtime", "2-4 weeks, intermittent dosing preferred", "Next-morning impairment; complex sleep behaviours with an FDA boxed warning - stop permanently if they occur; need 7-8 hours before driving"],
+        ["Zopiclone", "3.75 mg (elderly) to 7.5 mg at bedtime", "2-4 weeks", "Metallic taste, next-day sedation, dependence with prolonged use"],
+        ["Melatonin prolonged release", "2 mg 1-2 hours before bed", "Up to 13 weeks", "Licensed over 55; useful in jet lag, shift work and circadian disorders; small effect in ordinary adult insomnia"],
+        ["Mirtazapine", "7.5-15 mg at night", "As long as the depression is treated", "Weight gain, sedation; use when depression coexists, not as a pure hypnotic"],
+        ["Trazodone", "25-100 mg at night", "Short to medium term", "Postural hypotension, priapism (rare); often used off-label for sleep maintenance"],
+        ["Amitriptyline", "10-25 mg at night", "With chronic pain", "Anticholinergic, cardiac toxicity, lethal in overdose - never in a patient at suicide risk"],
+        ["Benzodiazepines (clonazepam, lorazepam)", "0.25-0.5 mg / 0.5-1 mg at night", "Avoid; if unavoidable, under 2 weeks", "Tolerance, dependence, rebound insomnia, falls and hip fracture, delirium; on the Beers list for the elderly"],
+      ],
+    },
+  ],
+  redFlags: [
+    "Loud snoring with witnessed apnoeas, choking arousals, morning headache and resistant hypertension or atrial fibrillation - obstructive sleep apnoea; refer for a sleep study and never prescribe a hypnotic, which worsens the apnoea and the hypoxia.",
+    "Excessive daytime sleepiness in a driver, machine operator or shift worker, or an Epworth score above 15 - advise not to drive until assessed, and investigate; sleepiness at the wheel kills.",
+    "Reduced need for sleep with high energy, pressured speech and overactivity rather than tiredness - this is mania, not insomnia; a hypnotic will not help and an antidepressant will make it worse.",
+    "Early morning waking with pervasive low mood, anhedonia, guilt or hopelessness - depression; treat the depression rather than the sleep, and ask about suicide.",
+    "Acting out dreams with shouting, punching or kicking in a man over 50 - REM sleep behaviour disorder; make the bedroom safe and refer, as it precedes Parkinson's disease and Lewy body dementia by years.",
+    "Insomnia with new headache, vomiting, weight loss, night sweats, fever, or a new neurological sign - investigate for an organic cause rather than prescribing a hypnotic; and in a child, snoring with mouth breathing and poor school performance means adenotonsillar hypertrophy.",
+  ],
+  pearls: [
+    "Chronic insomnia disorder: 3 nights a week for 3 months, despite adequate opportunity to sleep, with daytime impairment. Without daytime impairment it is not a disorder.",
+    "CBT-I, not a hypnotic, is first-line in every guideline; stimulus control and sleep restriction carry most of the effect, and sleep hygiene alone is not a treatment.",
+    "The 20-minute rule: if not asleep in about 20 minutes, get out of bed, go elsewhere in dim light, and return only when sleepy. Fixed wake time every day, no daytime naps.",
+    "Ask the bed partner about snoring, apnoeas, kicking legs and acting out dreams - the three big diagnoses are missed if only the patient is asked.",
+    "Check ferritin in restless legs and give iron if it is under 75 ng/mL even with a normal haemoglobin; gabapentin or pregabalin is preferred to a dopamine agonist because of augmentation.",
+    "If a hypnotic is unavoidable, prescribe it for 2-4 weeks, intermittently, with a written stop date - and never to a patient with untreated sleep apnoea, alcohol dependence or a history of falls.",
+  ],
+  theory: [
+    {
+      id: "psychiatry-insomnia-t1",
+      paper: "II",
+      kind: "long",
+      marks: 10,
+      minutes: 20,
+      frequency: "common",
+      question:
+        "A 52-year-old man complains of poor sleep for one year. He takes an hour to fall asleep, wakes three or four times a night, and feels tired all day. He has been buying alprazolam over the counter for six months. Discuss your evaluation and management.",
+      openingLines: [
+        "Chronic insomnia disorder is defined as dissatisfaction with sleep quantity or quality with difficulty initiating or maintaining sleep or early morning waking, occurring at least three nights a week for at least three months despite adequate opportunity to sleep, and causing daytime impairment.",
+        "He has chronic insomnia complicated by benzodiazepine use of six months, so the objectives are to identify the cause and comorbidity, exclude obstructive sleep apnoea and restless legs, institute cognitive behavioural therapy for insomnia as the definitive treatment, and taper the alprazolam safely.",
+      ],
+      answer: [
+        {
+          heading: "1. History from the patient and the bed partner",
+          points: [
+            "Sleep history: bedtime, latency, number and cause of awakenings, final waking time, time out of bed, naps, total sleep time and daytime consequences.",
+            "Bed partner history: snoring, witnessed apnoea, choking arousals, restless kicking legs, acting out dreams - these are missed if only the patient is asked.",
+            "Substances: alcohol, caffeine and tea timing, nicotine, and the alprazolam - dose, frequency, escalation and what happens on the nights he misses it.",
+            "Psychiatric screening with the PHQ-9 and GAD-7, and enquiry about mania; medical causes - nocturia, prostatism, reflux, arthritis pain, nocturnal asthma, orthopnoea, hyperthyroidism.",
+            "Drug review: steroids, theophylline, salbutamol, thyroxine, beta-blockers, diuretics taken at night, SSRIs.",
+            "Ask him to keep a two-week sleep diary, which will be the basis of sleep restriction later.",
+          ],
+        },
+        {
+          heading: "2. Examination and investigation",
+          points: [
+            "Weight, BMI, neck circumference, blood pressure, oropharynx and nasal patency; cardiovascular and respiratory examination; look for a goitre and for signs of anaemia.",
+            "Apply the STOP-BANG questionnaire and the Epworth Sleepiness Scale; a STOP-BANG of 5 or more or an Epworth above 10 warrants referral for a sleep study.",
+            "Grade severity with the Insomnia Severity Index and record the score as a baseline to follow.",
+            "Investigations directed by the history: haemoglobin, ferritin (for restless legs), TSH, blood glucose, renal and liver function; polysomnography only if apnoea, narcolepsy, periodic limb movements or REM sleep behaviour disorder is suspected.",
+          ],
+        },
+        {
+          heading: "3. Non-drug treatment - CBT-I",
+          points: [
+            "Stimulus control: bed for sleep and sex only, go to bed only when sleepy, out of bed after about 20 minutes awake, fixed rising time every day, no daytime naps.",
+            "Sleep restriction: set time in bed to his average total sleep time from the diary (never under 5 hours) with a fixed rising time, and add 15-20 minutes each week once sleep efficiency exceeds 85-90%.",
+            "Cognitive work: challenge the belief that eight hours are essential and that a bad night ruins the day; turn the clock face away to stop clock-watching.",
+            "Relaxation: progressive muscular relaxation, slow breathing or yoga nidra, practised in the daytime first.",
+            "Sleep hygiene alongside, not instead of, the above: no caffeine after 4 p.m., no alcohol as a sleep aid, no heavy meal or vigorous exercise within 3 hours of bed, dark quiet cool bedroom, no screens for an hour before bed, morning daylight and daytime exercise.",
+          ],
+        },
+        {
+          heading: "4. Tapering the alprazolam",
+          points: [
+            "Explain that alprazolam is now maintaining the insomnia through tolerance and inter-dose rebound rather than treating it.",
+            "Convert to an equivalent dose of a longer-acting agent such as clonazepam or diazepam to smooth withdrawal.",
+            "Reduce by about 10-25% every 2-4 weeks, more slowly near the end, with a written schedule and fortnightly review; never stop abruptly, as withdrawal seizures are possible.",
+            "Warn that rebound insomnia will last a few nights and is expected, and run CBT-I in parallel throughout, since it is what makes the taper succeed.",
+          ],
+        },
+        {
+          heading: "5. Drug options, follow-up and referral",
+          points: [
+            "If a hypnotic is genuinely needed during the transition, zolpidem 5-10 mg or zopiclone 3.75-7.5 mg intermittently for a maximum of 2-4 weeks with a written stop date.",
+            "If the PHQ-9 shows depression, treat it - mirtazapine 7.5-15 mg at night serves both the mood and the sleep; trazodone 25-100 mg is an alternative.",
+            "Melatonin 2 mg prolonged release is an option given his age, particularly if the pattern is circadian.",
+            "Review at 2 and 4 weeks with a repeat Insomnia Severity Index and the sleep diary; success is a rise in sleep efficiency, not a rise in hours in bed.",
+            "Refer if the sleep study confirms obstructive sleep apnoea needing CPAP, if narcolepsy or REM sleep behaviour disorder is suspected, or if the benzodiazepine taper fails.",
+          ],
+        },
+      ],
+      mustDraw: [
+        "A table of the four screening instruments - ISI, Epworth, STOP-BANG and the sleep diary - with the score bands and the action each triggers.",
+        "The five components of CBT-I as a labelled list, with stimulus control and sleep restriction marked as the two carrying most of the effect.",
+      ],
+      markSplit: [
+        { part: "Definition of chronic insomnia disorder", marks: 1 },
+        { part: "History including bed partner, substances and comorbidity", marks: 2 },
+        { part: "Examination, screening instruments and investigation", marks: 2 },
+        { part: "CBT-I components with practical instructions", marks: 3 },
+        { part: "Benzodiazepine taper and drug options", marks: 2 },
+      ],
+      keywords: ["chronic insomnia", "CBT-I", "sleep restriction", "STOP-BANG", "benzodiazepine taper"],
+    },
+    {
+      id: "psychiatry-insomnia-t2",
+      paper: "II",
+      kind: "short-note",
+      marks: 5,
+      minutes: 10,
+      frequency: "common",
+      question: "Short note: obstructive sleep apnoea - recognition and management in family practice.",
+      openingLines: [
+        "Obstructive sleep apnoea is repetitive collapse of the upper airway during sleep producing apnoeas and hypopnoeas with oxygen desaturation and arousal, defined on polysomnography by an apnoea-hypopnoea index of 5 or more per hour with symptoms, or 15 or more regardless of symptoms.",
+        "It matters to the family physician because it causes road traffic accidents, resistant hypertension, atrial fibrillation, stroke, type 2 diabetes and cardiovascular death, and because it is grossly under-diagnosed.",
+      ],
+      answer: [
+        {
+          heading: "1. Clinical features and who to suspect",
+          points: [
+            "Nocturnal: loud habitual snoring, witnessed apnoeas, choking or gasping arousals, restless sleep, nocturia, sweating.",
+            "Daytime: unrefreshing sleep, excessive daytime sleepiness, morning headache, poor concentration, irritability, reduced libido.",
+            "High-risk groups: obesity with BMI over 30, neck circumference over 40 cm, men over 50, postmenopausal women, resistant hypertension, atrial fibrillation, type 2 diabetes, hypothyroidism, acromegaly, retrognathia and large tonsils.",
+            "In children, snoring with mouth breathing, restless sleep, enuresis, hyperactivity and poor school performance from adenotonsillar hypertrophy.",
+          ],
+        },
+        {
+          heading: "2. Assessment in the clinic",
+          points: [
+            "STOP-BANG questionnaire: 0-2 low risk, 3-4 intermediate, 5-8 high risk warranting referral.",
+            "Epworth Sleepiness Scale: more than 10 indicates excessive daytime sleepiness, above 15 is severe.",
+            "Examine BMI, neck circumference, blood pressure, oropharynx (Mallampati, tonsil size), nasal patency and jaw; check TSH, fasting glucose or HbA1c and lipids.",
+            "Confirm with polysomnography, or a home sleep apnoea test where available and the probability is high without significant comorbidity.",
+          ],
+        },
+        {
+          heading: "3. Management",
+          points: [
+            "Weight loss - a 10% reduction lowers the apnoea-hypopnoea index by about 25%; bariatric referral in the severely obese.",
+            "Avoid alcohol in the evening, and avoid all sedatives, hypnotics and opioids, which worsen the apnoea and the desaturation.",
+            "Positional therapy for supine-predominant disease, treatment of nasal obstruction, and smoking cessation.",
+            "CPAP is the definitive treatment for an AHI of 15 or more, or 5-14 with symptoms or cardiovascular comorbidity; adherence of at least 4 hours a night on 70% of nights is the target, and problems with mask fit, nasal dryness and claustrophobia must be actively troubleshot.",
+            "Mandibular advancement devices for mild to moderate disease or CPAP intolerance; ENT referral for adenotonsillectomy, which is curative in children.",
+          ],
+        },
+        {
+          heading: "4. Driving, comorbidity and follow-up",
+          points: [
+            "Advise the patient not to drive while sleepy and until treatment is effective; commercial drivers must be assessed formally.",
+            "Treat the associated hypertension, diabetes, dyslipidaemia and atrial fibrillation, all of which improve with effective CPAP.",
+            "Review at 1 month and then 3-6 monthly with the Epworth score, weight and CPAP download where available.",
+          ],
+        },
+      ],
+      mustDraw: [
+        "The STOP-BANG acronym expanded, with the risk bands.",
+        "A simple diagram of the collapsing upper airway during sleep and how CPAP splints it open.",
+      ],
+      markSplit: [
+        { part: "Definition and clinical features", marks: 1 },
+        { part: "STOP-BANG, Epworth and confirmation by sleep study", marks: 2 },
+        { part: "Management including weight loss and CPAP indications", marks: 1 },
+        { part: "Driving advice, comorbidity and follow-up", marks: 1 },
+      ],
+      keywords: ["obstructive sleep apnoea", "STOP-BANG", "Epworth", "CPAP", "apnoea-hypopnoea index"],
+    },
+  ],
+  mcqs: [
+    {
+      id: "psychiatry-insomnia-q1",
+      stem: "A 46-year-old man with a BMI of 34, resistant hypertension on three drugs, loud snoring and an Epworth score of 14 asks for a sleeping tablet because he sleeps badly. What is the most appropriate action?",
+      options: [
+        "Prescribe zolpidem 10 mg at night",
+        "Prescribe clonazepam 0.5 mg at night",
+        "Apply STOP-BANG, refer for a sleep study, advise weight loss and alcohol avoidance, and withhold any hypnotic",
+        "Prescribe promethazine 25 mg at night",
+        "Reassure him and take no action",
+      ],
+      answer: 2,
+      explanation:
+        "Obesity, resistant hypertension, loud snoring and an Epworth score of 14 point strongly to obstructive sleep apnoea, which requires STOP-BANG assessment and a sleep study, weight loss and alcohol avoidance - and any sedative is contraindicated because hypnotics reduce upper airway tone and arousal responses, worsening the apnoeas and the desaturation. Zolpidem and clonazepam are both hazardous for exactly that reason, and clonazepam adds dependence and falls. Promethazine is a sedating antihistamine with the same airway risk plus anticholinergic effects and next-day sedation. Doing nothing leaves an eminently treatable cause of his resistant hypertension and his accident risk untouched.",
+      difficulty: "easy",
+    },
+    {
+      id: "psychiatry-insomnia-q2",
+      stem: "A 55-year-old woman with chronic insomnia of two years keeps a sleep diary showing that she is in bed from 10 p.m. to 7 a.m. (9 hours) but sleeps only about 5.5 hours. She has no depression, no snoring and no restless legs. What is the correct first-line management?",
+      options: [
+        "Zopiclone 7.5 mg nightly for three months",
+        "Sleep hygiene advice alone",
+        "CBT-I with stimulus control and sleep restriction, setting time in bed to about 5.5-6 hours with a fixed rising time and extending it weekly as sleep efficiency exceeds 85-90%",
+        "Advise her to go to bed earlier to make up the lost sleep",
+        "Melatonin 2 mg with no behavioural change",
+      ],
+      answer: 2,
+      explanation:
+        "Her sleep efficiency is about 61%, the classic indication for sleep restriction within CBT-I, which is first-line treatment for chronic insomnia in every guideline and whose benefit persists after treatment stops. Nightly zopiclone for three months exceeds the 2-4 week limit, produces tolerance and dependence, and does not address the maintaining behaviour. Sleep hygiene alone is necessary but insufficient and is the commonest examination error. Going to bed earlier increases time in bed, further lowers sleep efficiency and makes the insomnia worse - it is precisely the wrong instruction. Melatonin without behavioural change has a small effect in ordinary adult insomnia and does not correct the underlying conditioning.",
+      difficulty: "moderate",
+    },
+    {
+      id: "psychiatry-insomnia-q3",
+      stem: "A 60-year-old woman describes an unpleasant crawling sensation in both legs with an urge to move them, worse in the evening when she sits, relieved by walking. Haemoglobin is 12.4 g/dL and serum ferritin is 32 ng/mL. What is the most appropriate first step?",
+      options: [
+        "Start pramipexole 0.125 mg at night",
+        "Start oral iron supplementation, since ferritin is below 75 ng/mL, and review",
+        "Start clonazepam 0.5 mg at night",
+        "Reassure her that this is a normal ageing phenomenon",
+        "Refer for nerve conduction studies to exclude peripheral neuropathy",
+      ],
+      answer: 1,
+      explanation:
+        "The five clinical criteria for restless legs syndrome are all present, and iron deficiency is the commonest reversible cause; the accepted threshold for supplementation in restless legs is a ferritin below 75 ng/mL even when the haemoglobin is normal, as brain iron may be low despite normal peripheral indices. A dopamine agonist may be needed later but should not precede correction of iron, and it carries the risk of augmentation with long-term use. Clonazepam sedates without treating the mechanism and brings dependence and falls. This is a treatable disorder, not normal ageing. Nerve conduction studies are unnecessary when the history meets all five criteria and there are no neuropathic signs.",
+      difficulty: "moderate",
+    },
+    {
+      id: "psychiatry-insomnia-q4",
+      stem: "A 68-year-old man is brought by his wife because for a year he has shouted, punched and kicked during sleep, once falling out of bed, and describes vivid dreams of being chased. He is otherwise well. What is the diagnosis and what must be done?",
+      options: [
+        "Nightmare disorder - reassure and treat with a hypnotic",
+        "REM sleep behaviour disorder - make the bedroom safe, consider melatonin 3-12 mg or clonazepam 0.25-0.5 mg at night, and refer, since it is associated with later Parkinson's disease and Lewy body dementia",
+        "Nocturnal seizures - start carbamazepine",
+        "Obstructive sleep apnoea - refer for CPAP",
+        "Sleepwalking - no action required",
+      ],
+      answer: 1,
+      explanation:
+        "Dream enactment with shouting and violent movements in a man over 50 is REM sleep behaviour disorder, caused by loss of the normal REM atonia; it is a recognised prodrome of the alpha-synucleinopathies, so the bedroom must be made safe, melatonin or clonazepam considered, and neurological referral arranged. Nightmare disorder involves frightening dreams with awakening but without complex motor enactment, and a hypnotic would not address the injury risk. Nocturnal seizures are stereotyped, brief and often with post-ictal confusion or incontinence, unlike this prolonged narrative-linked behaviour. Obstructive sleep apnoea causes snoring, apnoeas and daytime sleepiness, not dream enactment. Sleepwalking arises from non-REM sleep in the first third of the night, typically in younger people, with amnesia and no dream recall.",
+      difficulty: "hard",
+    },
+    {
+      id: "psychiatry-insomnia-q5",
+      stem: "A 72-year-old woman with insomnia has been taking nitrazepam 5 mg nightly for four years and has had two falls in six months. Which management plan is best?",
+      options: [
+        "Continue nitrazepam, as she is dependent and stopping is unsafe",
+        "Stop nitrazepam abruptly and start zolpidem 10 mg",
+        "Taper the nitrazepam by about 10-25% every 2-4 weeks with a written schedule while starting CBT-I, and treat any depression or nocturia",
+        "Add promethazine 25 mg at night to allow a faster nitrazepam reduction",
+        "Double the nitrazepam dose to improve sleep and reduce night-time wandering",
+      ],
+      answer: 2,
+      explanation:
+        "Long-acting benzodiazepines are on the Beers list as potentially inappropriate in older adults precisely because of falls, hip fracture, cognitive impairment and delirium, and her two falls make deprescribing urgent; the safe method is a slow taper of 10-25% every two to four weeks with a written schedule, CBT-I begun in parallel, and treatment of contributors such as depression and nocturia. Continuing it accepts the fall risk indefinitely. Abrupt cessation risks rebound insomnia, autonomic symptoms and even seizures, and substituting zolpidem 10 mg in a 72-year-old simply exchanges one falls risk for another at a dose above that recommended for the elderly. Promethazine adds anticholinergic burden and delirium risk in an older woman. Doubling the dose increases every harm.",
+      difficulty: "moderate",
+    },
+  ],
+  cards: [
+    {
+      id: "psychiatry-insomnia-c1",
+      front: "Definition of chronic insomnia disorder.",
+      back: "Difficulty initiating or maintaining sleep or early morning waking, at least 3 nights a week for at least 3 months, despite adequate opportunity to sleep, with daytime impairment. No daytime impairment means it is not a disorder.",
+    },
+    {
+      id: "psychiatry-insomnia-c2",
+      front: "The five components of CBT-I.",
+      back: "Stimulus control, sleep restriction, cognitive restructuring, relaxation training and sleep hygiene. Stimulus control and sleep restriction carry most of the effect; sleep hygiene alone is not a treatment.",
+    },
+    {
+      id: "psychiatry-insomnia-c3",
+      front: "The rules of stimulus control.",
+      back: "Bed only for sleep and sex; go to bed only when sleepy; if not asleep in about 20 minutes get out of bed and return only when sleepy; fixed rising time every day; no daytime naps.",
+    },
+    {
+      id: "psychiatry-insomnia-c4",
+      front: "How is sleep restriction prescribed?",
+      back: "From a 2-week diary, set time in bed to the average total sleep time (never under 5 hours) with a fixed rising time; when sleep efficiency (total sleep time / time in bed) exceeds 85-90% for a week, add 15-20 minutes. Avoid in bipolar disorder, epilepsy, untreated apnoea and heavy-vehicle drivers.",
+    },
+    {
+      id: "psychiatry-insomnia-c5",
+      front: "STOP-BANG and Epworth thresholds.",
+      back: "STOP-BANG (Snoring, Tiredness, Observed apnoea, Pressure, BMI over 35, Age over 50, Neck over 40 cm, male Gender): 0-2 low, 3-4 intermediate, 5-8 high risk. Epworth 0-24: more than 10 is excessive daytime sleepiness.",
+    },
+    {
+      id: "psychiatry-insomnia-c6",
+      front: "Insomnia Severity Index bands.",
+      back: "Seven items, total 0-28: 0-7 none, 8-14 subthreshold, 15-21 moderate clinical insomnia, 22-28 severe. Treat from 15 and follow the score.",
+    },
+    {
+      id: "psychiatry-insomnia-c7",
+      front: "Rules for prescribing a hypnotic.",
+      back: "Second line, always with behavioural treatment; zolpidem 5-10 mg or zopiclone 3.75-7.5 mg for 2-4 weeks at most, intermittently, with a written stop date. Never in untreated sleep apnoea, alcohol dependence, or a patient with falls.",
+    },
+    {
+      id: "psychiatry-insomnia-c8",
+      front: "Restless legs syndrome: the five criteria and first treatment.",
+      back: "Urge to move the legs, usually with unpleasant sensation; worse at rest; relieved by movement; worse in the evening or night; not explained by another condition. Check ferritin and give iron if under 75 ng/mL; then gabapentin or pregabalin, with dopamine agonists second because of augmentation.",
+    },
+  ],
+  references: [
+    "American Academy of Sleep Medicine, International Classification of Sleep Disorders, 3rd edition text revision (ICSD-3-TR), 2023",
+    "Riemann D et al. European Insomnia Guideline, Journal of Sleep Research, 2023",
+    "Edinger JD et al. AASM clinical practice guideline: behavioral and psychological treatment of chronic insomnia, Journal of Clinical Sleep Medicine, 2021",
+    "Chung F et al. STOP-BANG questionnaire, Chest, 2016; Johns MW. Epworth Sleepiness Scale, Sleep, 1991",
+    "Bastien CH et al. Validation of the Insomnia Severity Index, Sleep Medicine, 2001",
+    "NICE Clinical Knowledge Summary, Insomnia, 2024; American Geriatrics Society Beers Criteria, 2023",
+  ],
+});
 const cases: ClinicalCase[] = [
   {
     id: "psychiatry-case-1",

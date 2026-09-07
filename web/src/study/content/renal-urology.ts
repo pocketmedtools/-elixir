@@ -1276,6 +1276,1166 @@ topics.push({
   ],
 });
 
+topics.push({
+  id: "renal-urology-luts-bph",
+  title: "Lower urinary tract symptoms and benign prostatic hyperplasia",
+  oneLiner:
+    "Benign prostatic hyperplasia is a histological proliferation of stromal and epithelial cells in the transition zone of the prostate that may cause benign prostatic enlargement and bladder outlet obstruction, presenting as storage and voiding lower urinary tract symptoms that are quantified by the International Prostate Symptom Score and managed by watchful waiting, an alpha blocker, a 5-alpha reductase inhibitor or surgery according to symptom severity, prostate size and complications.",
+  frequency: "common",
+  keywords: [
+    "BPH",
+    "LUTS",
+    "IPSS",
+    "tamsulosin",
+    "finasteride",
+    "dutasteride",
+    "silodosin",
+    "tadalafil",
+    "TURP",
+    "acute urinary retention",
+    "post-void residual",
+    "uroflowmetry",
+    "prostate specific antigen",
+    "overactive bladder",
+    "intraoperative floppy iris syndrome",
+    "TURP syndrome",
+  ],
+  sections: [
+    {
+      heading: "Terminology, pathology and the symptom groups",
+      points: [
+        "**Three terms that are not synonyms and must be separated in the answer book:** **benign prostatic hyperplasia** is the histological diagnosis of nodular hyperplasia in the **transition zone**; **benign prostatic enlargement** is the clinical finding of a large gland; and **benign prostatic obstruction** is the urodynamic finding of obstructed flow. A man may have any one without the others.",
+        "Hyperplasia begins in the **periurethral transition zone**, is androgen dependent through **dihydrotestosterone produced by 5-alpha reductase type 2**, and needs both functioning testes and age - it is not seen in men castrated before puberty or with congenital 5-alpha reductase deficiency.",
+        "Obstruction has a **static component** (the bulk of the adenoma) and a **dynamic component** (alpha-1A adrenergic smooth muscle tone in the prostate, capsule and bladder neck), which is exactly why alpha blockers relieve symptoms within days while 5-alpha reductase inhibitors take months.",
+        "**Storage (irritative) symptoms:** frequency, urgency, nocturia, urge incontinence - these come from detrusor overactivity secondary to obstruction and are the symptoms that trouble the patient most.",
+        "**Voiding (obstructive) symptoms:** hesitancy, poor and intermittent stream, straining, terminal dribbling, and a sensation of incomplete emptying; **post-micturition dribble** is a third group.",
+        "Prevalence rises with age - histological BPH is present in about **50% of men in their sixties and 80-90% by the eighties** - but **symptoms correlate poorly with prostate size**; a 30 g gland with a prominent median lobe can obstruct more than a 90 g one.",
+      ],
+    },
+    {
+      heading: "Assessment: history, IPSS and the examination that must not be skipped",
+      points: [
+        "**Quantify with the International Prostate Symptom Score (IPSS):** seven questions (incomplete emptying, frequency, intermittency, urgency, weak stream, straining, nocturia), each scored 0-5, giving a total of 0-35 - **mild 0-7, moderate 8-19, severe 20-35** - plus a separate **quality of life question scored 0-6**. Repeat it at every review; it is the measure of response.",
+        "**A frequency-volume chart (bladder diary) over 3 days** separates true polyuria (over 3 litres a day, from diabetes, diabetes insipidus or excess fluid), **nocturnal polyuria (more than 33% of the 24-hour output at night, common in heart failure, sleep apnoea and peripheral oedema)** and genuine reduced functional capacity. It is the cheapest and most informative single investigation.",
+        "**Digital rectal examination is mandatory:** record size, consistency, symmetry, the median sulcus, nodularity and tenderness. **BPH feels smooth, rubbery, symmetrical and non-tender with a preserved median sulcus; a hard, nodular, asymmetrical gland with a lost sulcus suggests carcinoma** and demands referral irrespective of the PSA.",
+        "**Abdominal examination for a palpable bladder**, a focused neurological examination (perianal sensation, anal tone, bulbocavernosus reflex, lower limb power) for a neurogenic bladder, and examination of the external meatus and foreskin for stenosis or phimosis.",
+        "**Ask specifically about the drugs that cause or worsen LUTS:** anticholinergics, tricyclic antidepressants, first-generation antihistamines such as chlorpheniramine, decongestants containing pseudoephedrine, opioids, calcium channel blockers, and diuretics taken in the evening. Stopping the drug sometimes cures the problem.",
+        "**Screen for the mimics:** diabetes mellitus, urinary infection, bladder stone, urethral stricture (young man, previous instrumentation or gonococcal urethritis, a flat plateau-shaped flow curve), carcinoma of the prostate, carcinoma in situ of the bladder (severe irritative symptoms with haematuria), and neurogenic bladder from diabetes, stroke, Parkinson disease or spinal disease.",
+      ],
+    },
+    {
+      heading: "Investigations, including how to use PSA honestly",
+      points: [
+        "**In every patient:** urine routine and microscopy (excludes infection, haematuria and glycosuria), serum creatinine with eGFR, and blood glucose or HbA1c.",
+        "**Post-void residual urine by ultrasound:** under 50 mL is normal; **above 100-150 mL is significant**, and a persistently large residual predicts retention, infection, stones and upper tract dilatation. Ultrasound of the kidneys, ureters, bladder and prostate also gives prostate volume, intravesical prostatic protrusion, bladder wall thickness, diverticula, stones and hydronephrosis.",
+        "**Uroflowmetry** with a voided volume of at least 150 mL: **a maximum flow rate (Qmax) above 15 mL/s is normal, 10-15 mL/s equivocal, and below 10 mL/s suggests obstruction**; a flat, prolonged plateau curve suggests a urethral stricture rather than prostatic obstruction.",
+        "**PSA is offered after counselling, not ordered reflexly.** It is prostate-specific but not cancer-specific. **A PSA above 4 ng/mL, or an age-specific elevation, or a rise of more than 0.75 ng/mL per year, prompts urology referral.** PSA also serves as a surrogate for prostate volume: **a PSA above 1.5 ng/mL predicts a gland above 30 g** and identifies the men who will benefit from a 5-alpha reductase inhibitor.",
+        "**Do not measure PSA within 48 hours of ejaculation or a digital rectal examination, within 6 weeks of prostatitis, catheterisation, cystoscopy or a biopsy, or during a urinary infection.** Remember that **finasteride and dutasteride halve the PSA after 6-12 months, so the measured value must be doubled** to interpret it.",
+        "**Urodynamic pressure-flow studies** are reserved for diagnostic doubt before surgery - the young man, the neurological patient, the man with predominantly storage symptoms, or a previously failed operation. **Cystoscopy is not a routine investigation** but is indicated for haematuria, suspected stricture or bladder stone, and before surgery in selected cases.",
+      ],
+    },
+    {
+      heading: "Medical management, with drugs and doses",
+      points: [
+        "**Watchful waiting with lifestyle advice for IPSS 0-7 and for moderate scores that do not bother the patient:** restrict evening fluids and caffeine and alcohol, treat constipation, double voiding, timed voiding, avoiding the offending drugs, and reviewing the diuretic timing. Review with a repeated IPSS at 6-12 months.",
+        "**Alpha-1 blockers - first line for bothersome symptoms, and they work within days to 2 weeks:** **tamsulosin 0.4 mg PO OD after food (uroselective, alpha-1A)**, **silodosin 8 mg PO OD (the most uroselective, highest rate of retrograde ejaculation)**, **alfuzosin 10 mg PO OD (extended release)**, **terazosin 2-10 mg PO at night** and **doxazosin 1-8 mg PO at night** (non-selective, useful when hypertension coexists, but need dose titration for first-dose hypotension). They improve IPSS by about 4-6 points and Qmax by 2-3 mL/s but **do not change prostate size or prevent retention**.",
+        "**Warn every man before cataract surgery that he is taking an alpha blocker - intraoperative floppy iris syndrome** - and tell the ophthalmologist; stopping the drug beforehand does not reliably prevent it. Other side effects are postural dizziness, asthenia, nasal stuffiness and **retrograde or absent ejaculation, which is the commonest reason men stop the drug**.",
+        "**5-alpha reductase inhibitors - for a prostate above 30-40 g or a PSA above 1.5 ng/mL:** **finasteride 5 mg PO OD (type 2 inhibitor)** or **dutasteride 0.5 mg PO OD (type 1 and 2)**. They **shrink the gland by 20-30% over 6-12 months**, and uniquely **reduce the risk of acute urinary retention and the need for surgery by about half** (MTOPS and CombAT). Counsel on the **6-month delay to full benefit, loss of libido, erectile dysfunction, ejaculatory disorder, gynaecomastia, and the halving of PSA**.",
+        "**Combination of an alpha blocker with a 5-alpha reductase inhibitor** is better than either alone for men with large glands, high PSA and severe symptoms (MTOPS, CombAT); the alpha blocker may be withdrawn after 6-12 months in some men. **Tadalafil 5 mg PO OD** treats LUTS and erectile dysfunction together and is a good choice where both coexist - but **never combine it with an alpha blocker without care, and never with nitrates**.",
+        "**Antimuscarinics (solifenacin 5 mg OD, tolterodine 2 mg BD) or the beta-3 agonist mirabegron 25-50 mg OD** are added when storage symptoms persist after the obstruction is treated; they are safe **provided the post-void residual is below 150 mL and monitored**, and they are avoided in narrow-angle glaucoma. Saw palmetto and other phytotherapy have no benefit over placebo in randomised trials.",
+      ],
+    },
+    {
+      heading: "Acute urinary retention and the complications that force surgery",
+      points: [
+        "**Acute urinary retention** is a painful inability to pass urine with a palpable, percussable bladder. **Catheterise immediately** with a 14-16 Fr Foley, record the residual volume, send urine for culture, check creatinine and electrolytes, and give analgesia. **Do not decompress over minutes in the very large bladder** - rapid emptying risks haematuria ex vacuo and, more importantly, be alert to **post-obstructive diuresis** (over 200 mL/h) with hypovolaemia and electrolyte loss, which needs replacement of roughly half to two-thirds of the output and daily electrolytes.",
+        "**Start tamsulosin 0.4 mg OD immediately and attempt a trial without catheter (TWOC) after 2-3 days** - an alpha blocker raises the success rate of TWOC from about 25% to 45-50%. If the TWOC fails, leave the catheter, add a 5-alpha reductase inhibitor and refer for surgery.",
+        "**Chronic retention** is painless, with a large residual, often overflow incontinence and nocturnal enuresis; **high-pressure chronic retention causes bilateral hydronephrosis and obstructive nephropathy** and needs careful decompression with monitoring for post-obstructive diuresis.",
+        "**Absolute indications for surgery:** refractory retention or a failed TWOC, recurrent urinary infection secondary to obstruction, recurrent gross haematuria from the prostate, bladder stones, bladder diverticula with complications, and **renal impairment or hydronephrosis due to bladder outlet obstruction**. Relative indication: symptoms not controlled by, or not tolerating, medical therapy.",
+        "**Transurethral resection of the prostate (TURP) remains the reference standard** for glands of about 30-80 g; **open (or laparoscopic or robotic) simple prostatectomy or holmium laser enucleation (HoLEP) for glands above 80 g**; **transurethral incision of the prostate (TUIP) for a small gland under 30 g without a median lobe**; and bipolar TURP, photoselective vaporisation, HoLEP, Rezum water vapour therapy and prostatic urethral lift as alternatives with less bleeding and ejaculatory preservation.",
+        "**Complications of TURP to be able to list:** bleeding and clot retention, **TURP syndrome (dilutional hyponatraemia from absorption of hypotonic glycine irrigation, causing confusion, nausea, bradycardia, visual disturbance and seizures - avoided by bipolar resection with normal saline irrigation and by keeping resection time under 60 minutes)**, urinary infection, urethral stricture and bladder neck contracture, **retrograde ejaculation in 65-75%**, erectile dysfunction in about 5-10%, incontinence in about 1-2%, and the need for re-operation in 1-2% per year.",
+      ],
+    },
+    {
+      heading: "Follow-up, referral and the family physician's role",
+      points: [
+        "**Review at 4-6 weeks after starting an alpha blocker and then 6-monthly**, repeating the IPSS, the quality of life score, the post-void residual and the creatinine; review a 5-alpha reductase inhibitor at 3 and 6 months, when the benefit appears.",
+        "**Refer to urology:** any absolute surgical indication, a suspicious digital rectal examination or a raised PSA, visible haematuria, suspected stricture or neurogenic bladder, a man under 45 with significant LUTS, a raised creatinine attributed to obstruction, and failure of maximal medical therapy.",
+        "**Explain the natural history honestly** - most men with mild symptoms remain stable or improve, and only a minority progress to retention - because this is what makes watchful waiting acceptable to the patient and to the family.",
+        "**Do not offer PSA screening without a shared decision-making conversation** about the risk of overdiagnosis and the cascade of biopsy, and record the discussion; opportunistic testing in a symptomatic man is a different matter from screening a well one.",
+        "**Search for the treatable co-morbidity that masquerades as BPH:** poorly controlled diabetes with polyuria, heart failure and peripheral oedema causing nocturnal polyuria, obstructive sleep apnoea, and evening diuretic timing. Correcting these often halves the nocturia without any prostate drug.",
+        "**Counsel about sexual function before starting treatment, not after** - retrograde ejaculation with alpha blockers and silodosin, and reduced libido with 5-alpha reductase inhibitors - because unexplained ejaculatory change is the commonest reason for silent discontinuation in Indian practice.",
+      ],
+    },
+  ],
+  tables: [
+    {
+      heading: "Drugs for BPH: mechanism, dose, onset and main adverse effects",
+      columns: ["Class", "Drug and dose", "Onset", "Effect on prostate size", "Key adverse effects"],
+      rows: [
+        ["Alpha-1 blocker, uroselective", "Tamsulosin 0.4 mg PO OD; silodosin 8 mg PO OD", "Days to 2 weeks", "None", "Retrograde ejaculation, dizziness, intraoperative floppy iris syndrome"],
+        ["Alpha-1 blocker, non-selective", "Terazosin 2-10 mg PO nocte; doxazosin 1-8 mg PO nocte; alfuzosin 10 mg PO OD", "Days to 2 weeks", "None", "First-dose hypotension, dizziness, asthenia; useful if hypertensive"],
+        ["5-alpha reductase inhibitor", "Finasteride 5 mg PO OD; dutasteride 0.5 mg PO OD", "3-6 months", "Shrinks by 20-30%", "Reduced libido, erectile and ejaculatory dysfunction, gynaecomastia, PSA halved"],
+        ["Combination", "Tamsulosin 0.4 mg with dutasteride 0.5 mg PO OD", "Days for symptoms, months for size", "Shrinks by 20-30%", "Sum of both; best for large gland with severe symptoms"],
+        ["PDE-5 inhibitor", "Tadalafil 5 mg PO OD", "2-4 weeks", "None", "Headache, dyspepsia, back pain; contraindicated with nitrates"],
+        ["Antimuscarinic or beta-3 agonist", "Solifenacin 5 mg PO OD; mirabegron 25-50 mg PO OD", "2-4 weeks", "None", "Dry mouth, constipation, retention risk; keep post-void residual under 150 mL"],
+      ],
+    },
+    {
+      heading: "IPSS severity and the corresponding management",
+      columns: ["IPSS total", "Severity", "Usual management"],
+      rows: [
+        ["0-7", "Mild", "Watchful waiting with lifestyle measures and a bladder diary; review in 6-12 months"],
+        ["8-19", "Moderate", "Alpha blocker; add a 5-alpha reductase inhibitor if prostate is above 30-40 g or PSA above 1.5 ng/mL"],
+        ["20-35", "Severe", "Combination therapy, and consider surgery early, especially with a large residual or complications"],
+        ["Any score with complications", "Complicated", "Refractory retention, recurrent infection or haematuria, stones, hydronephrosis or renal impairment - surgery"],
+      ],
+    },
+  ],
+  redFlags: [
+    "Painful acute retention with a palpable bladder - catheterise now, measure the residual, check creatinine and watch for post-obstructive diuresis.",
+    "A hard, nodular or asymmetrical prostate with a lost median sulcus, or bone pain with LUTS - carcinoma of the prostate; refer urgently regardless of the PSA value.",
+    "Visible painless haematuria in a man over 40 - urothelial or prostatic malignancy; refer for cystoscopy and upper tract imaging, do not attribute it to BPH.",
+    "Bilateral hydronephrosis with a raised creatinine and a large residual - high-pressure chronic retention; decompress and monitor for post-obstructive diuresis and electrolyte loss.",
+    "LUTS with saddle anaesthesia, leg weakness, altered anal tone or new back pain - cauda equina or cord compression, not BPH; image the spine the same day.",
+    "Fever with rigors and an exquisitely tender prostate - acute bacterial prostatitis; do not massage the prostate, give antibiotics with prostatic penetration and admit if septic.",
+  ],
+  pearls: [
+    "Hyperplasia, enlargement and obstruction are three different things; symptoms correlate poorly with prostate size, so a small gland with a median lobe can obstruct badly.",
+    "A 3-day frequency-volume chart is the cheapest and most useful investigation in nocturia and separates nocturnal polyuria from a prostate problem.",
+    "Alpha blockers act in days and change nothing about the gland; 5-alpha reductase inhibitors take 6 months and are the only drugs that reduce retention and surgery.",
+    "Finasteride and dutasteride halve the PSA, so double the measured value after 6-12 months of treatment before interpreting it.",
+    "A PSA above 1.5 ng/mL predicts a prostate above 30 g and marks the man who will benefit from a 5-alpha reductase inhibitor.",
+    "Warn about intraoperative floppy iris syndrome before cataract surgery in every man on tamsulosin or silodosin.",
+    "After relieving chronic retention, watch for post-obstructive diuresis above 200 mL/h and replace half to two-thirds of the losses with electrolyte monitoring.",
+    "TURP syndrome is dilutional hyponatraemia from glycine irrigation; bipolar resection with saline and a resection time under 60 minutes largely prevents it.",
+  ],
+  theory: [
+    {
+      id: "renal-urology-luts-bph-t1",
+      paper: "II",
+      kind: "long",
+      marks: 10,
+      minutes: 20,
+      frequency: "common",
+      question:
+        "A 65-year-old man complains of nocturia four times a night, a poor stream and a feeling of incomplete emptying for 2 years. Discuss the evaluation and management of lower urinary tract symptoms due to benign prostatic hyperplasia in family practice, including the indications for surgery.",
+      openingLines: [
+        "Benign prostatic hyperplasia is nodular hyperplasia of the stromal and epithelial elements of the transition zone of the prostate, androgen dependent through dihydrotestosterone, which may produce benign prostatic enlargement and bladder outlet obstruction.",
+        "This man has both storage symptoms (nocturia) and voiding symptoms (poor stream, incomplete emptying), so the first task is to quantify them with the International Prostate Symptom Score, exclude the mimics, and only then choose between watchful waiting, drugs and surgery.",
+      ],
+      answer: [
+        {
+          heading: "1. History and symptom quantification",
+          points: [
+            "Separate storage symptoms - frequency, urgency, nocturia, urge incontinence - from voiding symptoms - hesitancy, poor stream, intermittency, straining, terminal dribbling, incomplete emptying.",
+            "Score with the IPSS: seven items each 0-5, total 0-35, mild 0-7, moderate 8-19, severe 20-35, plus the quality of life question scored 0-6, and repeat it at every review.",
+            "A 3-day frequency-volume chart to identify polyuria, nocturnal polyuria (more than 33% of 24-hour output at night) or a small functional capacity.",
+            "Ask about haematuria, previous retention, urinary infection, stones, urethral instrumentation or sexually transmitted infection, diabetes, neurological disease, and sexual function.",
+            "Review drugs that worsen LUTS: anticholinergics, tricyclics, first-generation antihistamines, decongestants, opioids and evening diuretics.",
+          ],
+        },
+        {
+          heading: "2. Examination and investigation",
+          points: [
+            "Abdominal examination for a palpable bladder; digital rectal examination recording size, consistency, symmetry, median sulcus and nodularity; examination of the meatus and foreskin; focused neurological examination including perianal sensation and anal tone.",
+            "Urine routine and microscopy, blood glucose or HbA1c, serum creatinine with eGFR.",
+            "Ultrasound of kidneys, ureters, bladder and prostate with post-void residual; a residual above 100-150 mL is significant, and hydronephrosis indicates high-pressure retention.",
+            "Uroflowmetry on a voided volume of at least 150 mL: Qmax above 15 mL/s normal, 10-15 equivocal, below 10 mL/s obstructed; a plateau curve suggests urethral stricture.",
+            "PSA after counselling; interpret with the caveats that it rises with infection, retention, instrumentation and recent ejaculation, and is halved by 5-alpha reductase inhibitors. Refer if PSA is above 4 ng/mL or the gland feels suspicious.",
+          ],
+        },
+        {
+          heading: "3. Conservative and medical management",
+          points: [
+            "IPSS 0-7 or symptoms that do not bother the patient: watchful waiting with fluid restriction in the evening, less caffeine and alcohol, double and timed voiding, treatment of constipation, and drug review; reassess in 6-12 months.",
+            "Alpha-1 blocker for bothersome symptoms: tamsulosin 0.4 mg PO OD, silodosin 8 mg PO OD, alfuzosin 10 mg PO OD, or terazosin or doxazosin titrated at night if hypertensive; effect within days, improves IPSS by 4-6 points.",
+            "5-alpha reductase inhibitor when the prostate is above 30-40 g or PSA above 1.5 ng/mL: finasteride 5 mg or dutasteride 0.5 mg PO OD; shrinks the gland by 20-30% over 6-12 months and halves the risk of retention and surgery.",
+            "Combination therapy for a large gland with severe symptoms, as shown in MTOPS and CombAT; tadalafil 5 mg PO OD where erectile dysfunction coexists.",
+            "Add an antimuscarinic or mirabegron for persistent storage symptoms, provided the post-void residual stays below 150 mL.",
+            "Counsel before starting: retrograde ejaculation with alpha blockers, sexual adverse effects and delayed onset with 5-alpha reductase inhibitors, and floppy iris syndrome before cataract surgery.",
+          ],
+        },
+        {
+          heading: "4. Acute urinary retention",
+          points: [
+            "Catheterise with a 14-16 Fr Foley, record the drained volume, send urine for culture, check creatinine and electrolytes.",
+            "Start tamsulosin 0.4 mg OD and attempt a trial without catheter after 2-3 days, which succeeds in about half of men on an alpha blocker.",
+            "Watch for post-obstructive diuresis above 200 mL/h after relieving chronic retention, replacing half to two-thirds of the loss with daily electrolytes.",
+            "A failed trial without catheter is an indication for surgery.",
+          ],
+        },
+        {
+          heading: "5. Indications for surgery and the operations",
+          points: [
+            "Absolute indications: refractory retention or failed trial without catheter, recurrent urinary infection from obstruction, recurrent gross haematuria of prostatic origin, bladder stones, complicated diverticula, and renal impairment or hydronephrosis from bladder outlet obstruction.",
+            "Relative indication: symptoms not controlled by, or intolerance of, maximal medical therapy.",
+            "TURP is the reference standard for 30-80 g; TUIP for a small gland under 30 g; HoLEP or open or laparoscopic simple prostatectomy above 80 g; bipolar TURP, photoselective vaporisation, Rezum and prostatic urethral lift as alternatives.",
+            "Complications to counsel: bleeding and clot retention, TURP syndrome with dilutional hyponatraemia, infection, stricture and bladder neck contracture, retrograde ejaculation in 65-75%, erectile dysfunction in 5-10%, incontinence in 1-2%, and re-operation in 1-2% per year.",
+          ],
+        },
+      ],
+      mustDraw: [
+        "The IPSS scoring table with the seven items and the mild, moderate and severe bands.",
+        "A management flow chart from IPSS through watchful waiting, alpha blocker, combination therapy and surgery, with the absolute surgical indications in a box.",
+      ],
+      markSplit: [
+        { part: "Definitions, symptom groups and IPSS", marks: 2 },
+        { part: "Examination including DRE, and investigations with PSA caveats", marks: 2 },
+        { part: "Medical management with drugs and doses", marks: 3 },
+        { part: "Acute retention and its management", marks: 1 },
+        { part: "Absolute surgical indications, operations and complications", marks: 2 },
+      ],
+      keywords: ["IPSS", "tamsulosin", "dutasteride", "TURP", "post-void residual"],
+    },
+    {
+      id: "renal-urology-luts-bph-t2",
+      paper: "III",
+      kind: "short-note",
+      marks: 5,
+      minutes: 10,
+      frequency: "common",
+      question: "Write short notes on acute urinary retention: causes, immediate management and prevention of recurrence.",
+      openingLines: [
+        "Acute urinary retention is the sudden, painful inability to pass urine with a palpable and percussable bladder, and it is a urological emergency because of pain, the risk of infection and the risk of obstructive nephropathy.",
+        "In men over 50 the commonest cause is benign prostatic hyperplasia, often precipitated by a drug, constipation, alcohol or an intercurrent illness.",
+      ],
+      answer: [
+        {
+          heading: "Causes",
+          points: [
+            "Obstructive: benign prostatic hyperplasia, carcinoma of the prostate, urethral stricture, meatal stenosis or phimosis, bladder neck stenosis, blood clot, bladder or urethral stone, and in women a large fibroid, ovarian mass, gravid retroverted uterus or pelvic organ prolapse.",
+            "Neurogenic: cauda equina syndrome, spinal cord compression, diabetic cystopathy, multiple sclerosis, stroke, Parkinson disease, and post-operative or post-partum bladder dysfunction.",
+            "Drug induced: anticholinergics, tricyclic antidepressants, first-generation antihistamines, alpha agonists in decongestants, opioids, and sympathomimetics.",
+            "Precipitants in a man with pre-existing BPH: constipation, alcohol excess, immobility, cold weather, a urinary infection, an unaccustomed large fluid load, and surgery under anaesthesia.",
+          ],
+        },
+        {
+          heading: "Immediate management",
+          points: [
+            "Confirm by palpation and percussion of the bladder; bladder ultrasound if available.",
+            "Catheterise aseptically with a 14-16 Fr Foley; if it will not pass, do not force - consider a coude-tip catheter, a smaller size, or a suprapubic catheter with urology assistance, and never attempt suprapubic puncture in a scarred lower abdomen or with a non-palpable bladder.",
+            "Record the drained volume, give analgesia, send urine for culture, check creatinine and electrolytes, and treat infection if present.",
+            "Look for and correct precipitants: relieve constipation, stop the offending drug, treat the infection.",
+            "Watch for post-obstructive diuresis (more than 200 mL/h) after decompressing a chronic large-volume retention, replacing half to two-thirds of the output and monitoring sodium, potassium and creatinine daily.",
+          ],
+        },
+        {
+          heading: "Preventing recurrence",
+          points: [
+            "Start tamsulosin 0.4 mg PO OD at the time of catheterisation and attempt a trial without catheter after 2-3 days; this raises the success rate from about 25% to 45-50%.",
+            "Add finasteride 5 mg or dutasteride 0.5 mg PO OD for a large gland, since these halve the future risk of retention and surgery.",
+            "Refer for surgery after a failed trial without catheter, a second episode, renal impairment, or a residual that remains large.",
+            "Advise avoidance of the precipitating drugs and alcohol, treatment of constipation, and prompt attention to urinary infection.",
+          ],
+        },
+      ],
+      mustDraw: ["A three-column table of obstructive, neurogenic and drug-induced causes of acute urinary retention."],
+      markSplit: [
+        { part: "Classified causes", marks: 2 },
+        { part: "Immediate management including catheterisation and post-obstructive diuresis", marks: 2 },
+        { part: "Prevention of recurrence and referral", marks: 1 },
+      ],
+      keywords: ["acute urinary retention", "trial without catheter", "post-obstructive diuresis", "tamsulosin", "cauda equina"],
+    },
+  ],
+  mcqs: [
+    {
+      id: "renal-urology-luts-bph-m1",
+      stem: "A 68-year-old man has an IPSS of 21, a prostate volume of 62 g on ultrasound, a PSA of 2.8 ng/mL, a post-void residual of 90 mL and a normal creatinine. Digital rectal examination shows a smooth symmetrical gland. What is the most appropriate initial treatment?",
+      options: [
+        "Watchful waiting with lifestyle advice alone",
+        "Tamsulosin 0.4 mg daily plus dutasteride 0.5 mg daily",
+        "Finasteride 5 mg daily alone",
+        "Immediate referral for transurethral resection of the prostate",
+      ],
+      answer: 1,
+      explanation:
+        "He has severe symptoms (IPSS 20-35), a gland well above 40 g and a PSA above 1.5 ng/mL, which is exactly the profile in which MTOPS and CombAT showed combination therapy to be superior to either drug alone for symptom relief and for preventing progression to retention and surgery. Watchful waiting is appropriate only for mild or non-bothersome symptoms and would leave a severely symptomatic man untreated. Finasteride alone would work eventually but takes 3-6 months, leaving him symptomatic in the interim, which is why an alpha blocker is combined with it for the rapid effect. TURP is not indicated because he has none of the absolute indications - no refractory retention, no recurrent infection or haematuria, no stones, and no renal impairment or hydronephrosis - and medical therapy has not yet been tried.",
+      difficulty: "moderate",
+    },
+    {
+      id: "renal-urology-luts-bph-m2",
+      stem: "A 70-year-old man has taken dutasteride 0.5 mg daily for 18 months. His PSA today is 2.6 ng/mL. How should this value be interpreted?",
+      options: [
+        "It is normal and needs no further action",
+        "It should be doubled to about 5.2 ng/mL, which warrants urological referral",
+        "It should be halved to about 1.3 ng/mL, which is reassuring",
+        "PSA cannot be interpreted at all in men on dutasteride",
+      ],
+      answer: 1,
+      explanation:
+        "5-alpha reductase inhibitors reduce serum PSA by about 50% after 6-12 months of treatment, so the measured value must be doubled to give the equivalent untreated figure - here about 5.2 ng/mL, which is above the 4 ng/mL threshold and requires urological assessment. Accepting 2.6 ng/mL as normal is the trap and delays the diagnosis of prostate cancer. Halving the value is the correction applied in the wrong direction. Saying PSA is uninterpretable is wrong: it remains useful, and indeed a rising PSA on a 5-alpha reductase inhibitor is a strong warning sign, because the drug should be pushing it down.",
+      difficulty: "moderate",
+    },
+    {
+      id: "renal-urology-luts-bph-m3",
+      stem: "A 74-year-old man is catheterised for painless chronic retention and drains 1800 mL. Over the next 6 hours he passes 1600 mL of urine, his blood pressure falls to 92/58 mmHg and he feels giddy. What is the correct management?",
+      options: [
+        "Clamp the catheter intermittently to slow the output",
+        "Replace half to two-thirds of the urine output with intravenous fluid and monitor electrolytes and creatinine daily",
+        "Give intravenous furosemide to prevent fluid overload",
+        "Remove the catheter and recatheterise with a smaller size",
+      ],
+      answer: 1,
+      explanation:
+        "He has post-obstructive diuresis, defined by an output above 200 mL/h after decompression of chronic retention, caused by accumulated solute, tubular concentrating failure and downregulated sodium transport; the correct treatment is measured replacement of about half to two-thirds of the output with an isotonic or hypotonic fluid, with daily sodium, potassium and creatinine. Clamping the catheter does not stop the diuresis, causes pain and risks re-obstruction and bladder injury. Furosemide is exactly wrong, as the problem is polyuria with volume depletion, not overload. Changing the catheter size addresses nothing, since the catheter is working.",
+      difficulty: "moderate",
+    },
+    {
+      id: "renal-urology-luts-bph-m4",
+      stem: "A 66-year-old man on tamsulosin for 2 years is being listed for cataract surgery. What must be communicated to the ophthalmologist?",
+      options: [
+        "Nothing specific; tamsulosin has no ocular effects",
+        "The risk of intraoperative floppy iris syndrome, so the surgeon can plan accordingly",
+        "That tamsulosin must be stopped 1 week before surgery to eliminate the risk",
+        "That tamsulosin causes acute angle closure glaucoma during surgery",
+      ],
+      answer: 1,
+      explanation:
+        "Alpha-1A blockade relaxes the iris dilator muscle and produces intraoperative floppy iris syndrome - a billowing iris, progressive miosis and iris prolapse - which markedly increases the risk of capsule rupture unless the surgeon knows in advance and uses iris hooks, a pupil expansion ring or intracameral phenylephrine. Saying nothing is the error that this question exists to prevent. Stopping the drug beforehand does not reliably prevent the syndrome, because the effect on the iris dilator persists for months to years after exposure. Tamsulosin does not cause acute angle closure glaucoma; that is an anticholinergic and sympathomimetic effect, not an alpha blocker one.",
+      difficulty: "easy",
+    },
+    {
+      id: "renal-urology-luts-bph-m5",
+      stem: "A 62-year-old man is 90 minutes into a monopolar transurethral resection of the prostate under spinal anaesthesia when he becomes confused, nauseated and bradycardic, with a serum sodium of 116 mmol/L. What is the underlying mechanism?",
+      options: [
+        "Absorption of hypotonic glycine irrigating fluid through open prostatic venous sinuses",
+        "Syndrome of inappropriate antidiuretic hormone secretion from surgical stress",
+        "Bacteraemia from the resected prostatic bed",
+        "Air embolism through the resectoscope sheath",
+      ],
+      answer: 0,
+      explanation:
+        "TURP syndrome is dilutional hyponatraemia caused by systemic absorption of the hypotonic, non-electrolyte glycine irrigation through the venous sinuses opened during monopolar resection, and the risk rises steeply beyond 60 minutes of resection; it is prevented by bipolar resection using normal saline irrigation, limiting the resection time, and keeping the irrigation bag no more than 60 cm above the patient. SIADH does occur after surgery but develops over days and does not produce a sodium of 116 mmol/L within 90 minutes. Bacteraemia causes fever, rigors and hypotension with tachycardia rather than bradycardia with acute hyponatraemia. Air embolism causes sudden hypoxia and cardiovascular collapse without any change in serum sodium.",
+      difficulty: "hard",
+    },
+  ],
+  cards: [
+    {
+      id: "renal-urology-luts-bph-c1",
+      front: "IPSS: components and severity bands.",
+      back: "Seven questions (incomplete emptying, frequency, intermittency, urgency, weak stream, straining, nocturia), each 0-5, total 0-35: mild 0-7, moderate 8-19, severe 20-35, plus a separate quality of life score 0-6.",
+    },
+    {
+      id: "renal-urology-luts-bph-c2",
+      front: "Distinguish benign prostatic hyperplasia, enlargement and obstruction.",
+      back: "Hyperplasia is the histological transition-zone diagnosis; enlargement is the clinically large gland; obstruction is the urodynamic finding of obstructed flow. They frequently occur without one another.",
+    },
+    {
+      id: "renal-urology-luts-bph-c3",
+      front: "Uroflowmetry cut-offs, and the minimum voided volume for a valid study.",
+      back: "Voided volume must be at least 150 mL. Qmax above 15 mL/s is normal, 10-15 mL/s equivocal, below 10 mL/s suggests obstruction; a flat plateau curve suggests urethral stricture.",
+    },
+    {
+      id: "renal-urology-luts-bph-c4",
+      front: "How do 5-alpha reductase inhibitors change PSA and prostate size?",
+      back: "They shrink the prostate by 20-30% over 6-12 months and halve serum PSA, so double the measured PSA after 6-12 months of treatment before interpreting it.",
+    },
+    {
+      id: "renal-urology-luts-bph-c5",
+      front: "Absolute indications for surgery in BPH.",
+      back: "Refractory retention or failed trial without catheter, recurrent UTI from obstruction, recurrent gross haematuria of prostatic origin, bladder stones, complicated diverticula, and renal impairment or hydronephrosis from bladder outlet obstruction.",
+    },
+    {
+      id: "renal-urology-luts-bph-c6",
+      front: "What is TURP syndrome and how is it prevented?",
+      back: "Dilutional hyponatraemia from absorption of hypotonic glycine irrigation through prostatic venous sinuses, causing confusion, nausea, bradycardia, visual disturbance and seizures. Prevented by bipolar resection with saline, resection time under 60 minutes, and a low irrigation height.",
+    },
+    {
+      id: "renal-urology-luts-bph-c7",
+      front: "Post-obstructive diuresis: definition and management.",
+      back: "Urine output above 200 mL/h after relieving chronic retention. Replace half to two-thirds of the output with intravenous fluid and monitor sodium, potassium and creatinine daily; do not clamp the catheter and do not give a diuretic.",
+    },
+    {
+      id: "renal-urology-luts-bph-c8",
+      front: "Which surgical option for which prostate size?",
+      back: "TUIP for under 30 g without a median lobe; TURP for about 30-80 g; HoLEP or open, laparoscopic or robotic simple prostatectomy above 80 g. Bipolar TURP, photoselective vaporisation, Rezum and urethral lift are alternatives.",
+    },
+  ],
+  references: [
+    "European Association of Urology Guidelines on the Management of Non-Neurogenic Male Lower Urinary Tract Symptoms, 2024",
+    "American Urological Association Guideline on Management of Benign Prostatic Hyperplasia, 2023 amendment",
+    "Campbell-Walsh-Wein Urology, 12th edition, 2021 - benign prostatic hyperplasia and lower urinary tract symptoms",
+    "Bailey and Love's Short Practice of Surgery, 28th edition, 2023 - the prostate and seminal vesicles",
+    "MTOPS (NEJM 2003) and CombAT (European Urology 2010) trials of combination therapy in BPH",
+    "Urological Society of India consensus statements on BPH management",
+  ],
+});
+
+topics.push({
+  id: "renal-urology-renal-stones",
+  title: "Renal and ureteric stones: the colic, the emergency, and preventing the next one",
+  oneLiner:
+    "Urolithiasis is the formation of crystalline concretions in the urinary tract - about 80% calcium oxalate, the rest uric acid, struvite, calcium phosphate and cystine - which presents as loin-to-groin colic with haematuria, is confirmed by non-contrast CT of the kidneys, ureters and bladder, and is treated by analgesia, medical expulsive therapy for stones under 10 mm, and urgent decompression whenever obstruction is accompanied by infection or renal impairment.",
+  frequency: "common",
+  keywords: [
+    "urolithiasis",
+    "renal colic",
+    "ureteric calculus",
+    "non-contrast CT KUB",
+    "medical expulsive therapy",
+    "tamsulosin",
+    "ESWL",
+    "ureteroscopy",
+    "PCNL",
+    "struvite stone",
+    "uric acid stone",
+    "potassium citrate",
+    "stone belt",
+    "24-hour urine metabolic evaluation",
+    "hydronephrosis",
+    "pyonephrosis",
+  ],
+  sections: [
+    {
+      heading: "Epidemiology, stone types and why they form",
+      points: [
+        "India has a well-described **stone belt across Punjab, Haryana, Delhi, Rajasthan, Gujarat and Maharashtra**, with a lifetime prevalence of roughly **12% in men and 6% in women** and a **recurrence rate of about 50% at 5-10 years**, driven by heat, chronic dehydration, occupational sun exposure and a low urine volume.",
+        "**Calcium oxalate (about 70-80%)** - radio-opaque, forms in acidic to neutral urine; promoted by hypercalciuria, hyperoxaluria, hypocitraturia and low urine volume. **Calcium phosphate (about 5-10%)** forms in alkaline urine and points to **distal renal tubular acidosis or primary hyperparathyroidism**.",
+        "**Uric acid (about 5-10%)** - **radiolucent on plain film but visible on CT** - forms when the **urine pH is persistently below 5.5**, and is associated with gout, obesity, the metabolic syndrome, chronic diarrhoea and a high purine intake. It is the one stone that can be **dissolved medically by alkalinising the urine**.",
+        "**Struvite / magnesium ammonium phosphate (about 5-10%)** - the **infection stone**, formed by **urease-producing organisms (Proteus mirabilis, Klebsiella, Pseudomonas, Ureaplasma - never Escherichia coli)** which split urea and alkalinise the urine above pH 7.2. These grow into **staghorn calculi**, are commoner in women and in the catheterised, and **must be completely cleared surgically because any residual fragment reseeds the infection**.",
+        "**Cystine (1-2%)** - from autosomal recessive cystinuria with defective dibasic amino acid transport; presents in childhood or early adult life with recurrent stones, **hexagonal crystals on microscopy**, and a faintly opaque ground-glass stone.",
+        "**Drug-related stones:** indinavir, atazanavir, triamterene, sulfadiazine, ceftriaxone (biliary and urinary sludge), and **topiramate and acetazolamide which cause calcium phosphate stones through a drug-induced distal renal tubular acidosis**.",
+      ],
+    },
+    {
+      heading: "Presentation and differential diagnosis",
+      points: [
+        "**Classical ureteric colic:** sudden, severe, **colicky loin-to-groin pain that makes the patient restless and unable to lie still** (in contrast to peritonitis, where the patient lies completely still), with nausea, vomiting and **microscopic or visible haematuria in about 85%**.",
+        "**The site of the pain follows the stone:** a stone in the renal pelvis or upper ureter gives flank pain; the mid ureter gives pain radiating to the iliac fossa (and mimics appendicitis on the right); and the **vesicoureteric junction gives suprapubic pain with frequency, urgency and dysuria, and pain referred to the tip of the penis or the labia majora**.",
+        "**Absence of haematuria does not exclude a stone** - about 15% have none, particularly with complete obstruction.",
+        "**The differential diagnosis that kills:** a **ruptured or leaking abdominal aortic aneurysm in a man over 50 having his first ever episode of loin pain** is the classic missed diagnosis; also consider ectopic pregnancy (do a urine pregnancy test in every woman of reproductive age), ovarian torsion, testicular torsion, appendicitis, diverticulitis, biliary colic, pyelonephritis, herpes zoster before the rash, and musculoskeletal pain.",
+        "**Ask about** previous stones and their composition if known, family history, fluid intake and occupation, gout, inflammatory bowel disease or bowel resection (enteric hyperoxaluria), recurrent urinary infection, immobilisation, sarcoidosis, and drugs including calcium and vitamin D supplements, topiramate and protease inhibitors.",
+        "**Examine for** fever and haemodynamic instability, renal angle tenderness, a palpable bladder or mass, an expansile abdominal mass and femoral pulses (aneurysm), and the testes and hernial orifices.",
+      ],
+    },
+    {
+      heading: "Investigation: what to order and in what order",
+      points: [
+        "**Non-contrast CT of the kidneys, ureters and bladder is the gold standard**, with a sensitivity of about **95-98% and specificity of about 96-98%**. It detects every stone type including uric acid, gives the **size, site, Hounsfield density (above 1000 HU predicts failure of shock wave lithotripsy) and skin-to-stone distance**, and diagnoses the alternative causes of the pain. **Low-dose protocols cut the radiation dose to around 2 mSv.**",
+        "**Ultrasound is first line in pregnancy and in children**, and a reasonable first test in a young patient with typical recurrent colic; it detects hydronephrosis and renal stones well but **misses most mid-ureteric stones**. Look for the **absent or asymmetric ureteric jet on colour Doppler** as an indirect sign, and note that a **twinkling artefact** helps identify a stone.",
+        "**Plain X-ray of the kidneys, ureters and bladder** shows about 60-70% of stones (calcium stones are opaque, uric acid stones are radiolucent, cystine stones are faintly opaque); it is useful mainly for **following up a known radio-opaque stone** rather than for diagnosis.",
+        "**Bloods in every case:** complete blood count, serum creatinine with eGFR, sodium, potassium, calcium, uric acid, and a C-reactive protein where infection is suspected. **Urine routine and microscopy with pH, and a culture** - a pH above 7 suggests a urease-producing organism and struvite, and a pH persistently below 5.5 suggests uric acid.",
+        "**Send the stone for composition analysis whenever one is passed or removed** - this single result changes prevention more than any other test, and patients must be given a sieve or told to strain their urine.",
+        "**Full metabolic evaluation with two 24-hour urine collections** (volume, calcium, oxalate, citrate, uric acid, sodium, magnesium, creatinine and pH) plus serum calcium, phosphate, parathyroid hormone and uric acid is reserved for **recurrent stone formers, all children, a solitary kidney, bilateral or staghorn stones, non-calcium stones, chronic kidney disease, nephrocalcinosis, and a strong family history**. Collect at least 4-6 weeks after the acute episode, on the patient's normal diet.",
+      ],
+    },
+    {
+      heading: "Acute management of renal colic",
+      points: [
+        "**An NSAID is the first-line analgesic and is superior to opioids** because it also reduces ureteric wall oedema and glomerular filtration pressure: **diclofenac 75 mg intramuscularly, or ketorolac 30 mg intravenously**, provided the eGFR is adequate, there is no peptic ulcer, no dehydration and no single kidney.",
+        "**Paracetamol 1 g intravenously** is an effective alternative and is the drug of choice where an NSAID is contraindicated; **opioids such as tramadol 50-100 mg or morphine 0.1 mg/kg** are second line and cause more vomiting. **Antispasmodics such as hyoscine butylbromide add nothing to an NSAID.**",
+        "**Do not force intravenous fluids to flush the stone out** - high-volume fluid loading raises intrapelvic pressure and pain without improving stone passage; give fluid to correct dehydration and vomiting only. Add an antiemetic such as **ondansetron 4-8 mg**.",
+        "**Medical expulsive therapy:** **tamsulosin 0.4 mg PO OD for up to 4 weeks** for **distal ureteric stones of 5-10 mm**, where it improves the spontaneous passage rate and shortens time to passage; **the benefit is small or absent for stones under 5 mm, which pass anyway, and for proximal stones**. Nifedipine is an inferior alternative. Counsel on dizziness and retrograde ejaculation.",
+        "**Spontaneous passage rates by size:** stones **under 5 mm pass in about 70-80%**, **5-10 mm in about 50%** (lower at the proximal ureter), and **stones above 10 mm rarely pass and usually need intervention**. Most stones that will pass do so within **4 weeks**; watchful waiting beyond 4-6 weeks risks silent renal damage.",
+        "**Give clear safety-netting:** strain the urine and bring the stone, return immediately with fever, uncontrolled pain, vomiting that prevents fluid intake, or reduced urine output, and attend for a repeat imaging or urology review at 2-4 weeks even if the pain settles - **the pain stops when the ureter is completely obstructed as well as when the stone passes**.",
+      ],
+    },
+    {
+      heading: "The stone emergencies and the definitive procedures",
+      points: [
+        "**Obstruction with infection - infected obstructed kidney or pyonephrosis - is the true urological emergency:** fever, rigors, loin pain, hypotension and pyuria with hydronephrosis. **Urgent decompression by percutaneous nephrostomy or retrograde JJ stent, plus intravenous antibiotics and resuscitation, must happen within hours; definitive stone treatment is deferred.** Antibiotics alone into an obstructed, infected system will not save the kidney or the patient.",
+        "**Other indications for urgent intervention:** obstruction in a **solitary or transplanted kidney**, bilateral obstructing stones, acute kidney injury from obstruction, and pain or vomiting that cannot be controlled.",
+        "**Extracorporeal shock wave lithotripsy (ESWL)** is best for **renal stones under 20 mm and ureteric stones under 10 mm**; it is non-invasive and done as a day case. It works poorly for **stones above 1000 HU (cystine, brushite, calcium oxalate monohydrate), obesity with a skin-to-stone distance above 10 cm, lower pole stones with an unfavourable infundibulopelvic angle**, and it is **contraindicated in pregnancy, uncorrected bleeding disorder, untreated urinary infection and distal obstruction**. Warn about **steinstrasse**, the column of fragments that obstructs the ureter.",
+        "**Ureteroscopy with laser lithotripsy (semirigid for the lower ureter, flexible retrograde intrarenal surgery for the kidney)** gives the highest stone-free rate in a single session, works irrespective of stone density, and is the preferred option in obesity, pregnancy in expert hands, bleeding disorders and after failed ESWL. A JJ stent is often left, and the patient must be **warned that the stent causes frequency, urgency, haematuria and flank pain, and must be told the removal date - a forgotten, encrusted stent is a serious and litigated complication**.",
+        "**Percutaneous nephrolithotomy (PCNL)** is the treatment of choice for **renal stones above 20 mm and for staghorn calculi**, with the best stone-free rate; complications include bleeding needing transfusion or embolisation, sepsis, pleural injury with a supracostal puncture, and injury to adjacent organs. **Complete clearance is mandatory in struvite staghorn stones** because residual fragments harbour the urease-producing organism.",
+        "**Open or laparoscopic stone surgery is now rare** in India, reserved for very large complex staghorn stones, an anatomical abnormality needing simultaneous correction, or where endourological equipment is unavailable.",
+      ],
+    },
+    {
+      heading: "Prevention: the part the family physician owns",
+      points: [
+        "**Fluid is the single most effective intervention:** enough intake to produce a **urine output above 2.5 litres a day**, which in the Indian summer often means drinking 3-3.5 litres, spread through the day and including a glass at bedtime. **Teach the patient to judge success by pale, straw-coloured urine, not by counting glasses.**",
+        "**Dietary advice with the counter-intuitive rule spelled out: do NOT restrict dietary calcium.** A normal calcium intake of **1000-1200 mg a day binds oxalate in the gut**, and a low-calcium diet increases oxalate absorption and stone recurrence. **Calcium supplements taken between meals, however, do increase risk** and should be taken with food if needed at all.",
+        "**Restrict sodium to under 2-3 g a day (under 5-6 g of salt)** because sodium drives calcium into the urine; restrict animal protein to about **0.8-1.0 g/kg/day**; limit **oxalate-rich foods - spinach, beetroot, nuts, chocolate, tea in excess, soy, rhubarb** - in documented hyperoxaluria; and increase fruit and vegetables for their citrate content.",
+        "**Potassium citrate 10-20 mEq PO two or three times daily** is the workhorse of prevention: it raises urinary citrate (a natural inhibitor of calcium crystallisation) and urine pH, and is used for **hypocitraturia, calcium oxalate stones, uric acid stones and distal renal tubular acidosis**. Monitor potassium, particularly with an ACE inhibitor or in CKD.",
+        "**Targeted drugs:** a **thiazide (hydrochlorothiazide 25 mg OD or chlorthalidone 25 mg OD) for hypercalciuria**, always with potassium citrate to prevent hypokalaemia; **allopurinol 100-300 mg OD for hyperuricosuric calcium oxalate stones and for uric acid stones**; **urinary alkalinisation with potassium citrate or sodium bicarbonate to a pH of 6.5-7.0 to dissolve uric acid stones**; and for cystinuria, high fluid intake, alkalinisation and **tiopronin** in resistant cases.",
+        "**Treat the underlying cause:** parathyroidectomy for primary hyperparathyroidism, correction of distal renal tubular acidosis, complete clearance and culture-directed antibiotics for struvite disease, and treatment of the metabolic syndrome and gout. **Follow up with an annual ultrasound or plain film, a urine pH and a repeat 24-hour urine at 6 months to check that the intervention worked.**",
+      ],
+    },
+  ],
+  tables: [
+    {
+      heading: "Stone types: appearance, urine pH, associations and specific prevention",
+      columns: ["Stone type", "Approximate share", "Radiology", "Urine pH", "Key association", "Specific prevention"],
+      rows: [
+        ["Calcium oxalate", "70-80%", "Radio-opaque, dense on CT", "Acidic to neutral", "Hypercalciuria, hyperoxaluria, hypocitraturia, low urine volume", "Fluids, normal dietary calcium, low sodium, potassium citrate, thiazide"],
+        ["Calcium phosphate", "5-10%", "Radio-opaque", "Alkaline, above 6.5", "Distal renal tubular acidosis, primary hyperparathyroidism, topiramate", "Treat the cause; cautious alkali; thiazide for hypercalciuria"],
+        ["Uric acid", "5-10%", "Radiolucent on X-ray, visible on CT", "Persistently below 5.5", "Gout, obesity, metabolic syndrome, chronic diarrhoea", "Alkalinise to pH 6.5-7.0 with potassium citrate; allopurinol; can be dissolved"],
+        ["Struvite (magnesium ammonium phosphate)", "5-10%", "Radio-opaque, often staghorn", "Above 7.2", "Urease-producing Proteus, Klebsiella, Pseudomonas; women, catheters", "Complete surgical clearance plus culture-directed antibiotics"],
+        ["Cystine", "1-2%", "Faintly opaque, ground glass", "Acidic", "Autosomal recessive cystinuria; hexagonal crystals", "High fluid intake, alkalinisation, tiopronin"],
+      ],
+    },
+    {
+      heading: "Choosing the intervention by stone size and site",
+      columns: ["Stone", "Preferred option", "Alternative", "Comment"],
+      rows: [
+        ["Ureteric stone under 5 mm, no complication", "Conservative with analgesia", "Tamsulosin if distal", "70-80% pass spontaneously, usually within 4 weeks"],
+        ["Distal ureteric stone 5-10 mm", "Medical expulsive therapy with tamsulosin 0.4 mg OD for up to 4 weeks", "Ureteroscopy with laser", "Review at 2-4 weeks; do not watch beyond 4-6 weeks"],
+        ["Ureteric stone above 10 mm", "Ureteroscopy with laser lithotripsy", "ESWL for proximal stones", "Spontaneous passage is unlikely"],
+        ["Renal stone under 20 mm", "ESWL", "Retrograde intrarenal surgery", "Avoid ESWL above 1000 HU or with skin-to-stone distance above 10 cm"],
+        ["Renal stone above 20 mm or staghorn", "Percutaneous nephrolithotomy", "Staged PCNL or open surgery", "Complete clearance is mandatory in struvite stones"],
+        ["Obstruction with fever or sepsis", "Emergency decompression by nephrostomy or JJ stent", "Neither - decompression is not optional", "Definitive stone treatment is deferred until the infection is controlled"],
+      ],
+    },
+  ],
+  redFlags: [
+    "Fever with rigors, loin pain and hydronephrosis - infected obstructed kidney; resuscitate, start intravenous antibiotics and decompress by nephrostomy or stent within hours.",
+    "Obstructing stone in a solitary or transplanted kidney, or bilateral obstructing stones - anuria and acute kidney injury; emergency decompression.",
+    "First episode of loin pain in a man over 50 with an expansile abdominal mass or unequal femoral pulses - leaking abdominal aortic aneurysm masquerading as colic; image immediately, do not sedate and send home.",
+    "Renal colic in a woman of reproductive age without a pregnancy test - exclude ectopic pregnancy before anything else.",
+    "Pain that suddenly disappears without a stone being passed - the ureter may be completely obstructed; repeat imaging rather than discharge.",
+    "A JJ stent that has been in place beyond its removal date - encrustation, stone formation, obstruction and loss of the kidney; arrange removal urgently.",
+  ],
+  pearls: [
+    "The patient with renal colic writhes and cannot get comfortable; the patient with peritonitis lies still. That single observation separates them at the door.",
+    "Non-contrast CT KUB is the gold standard and shows uric acid stones that are invisible on plain film; ultrasound is first line only in pregnancy and children.",
+    "NSAIDs beat opioids for renal colic, and forcing intravenous fluid to flush a stone out increases pain without increasing passage.",
+    "Medical expulsive therapy with tamsulosin helps distal ureteric stones of 5-10 mm; below 5 mm they pass anyway and the drug adds nothing.",
+    "Never restrict dietary calcium in a calcium stone former - normal calcium intake binds gut oxalate; it is calcium supplements taken between meals that raise risk.",
+    "A urine pH above 7.2 with a staghorn stone means a urease-producing organism, and Escherichia coli is not one of them.",
+    "Uric acid stones are the only common stone that can be dissolved medically, by alkalinising the urine to pH 6.5-7.0.",
+    "Obstruction plus infection is a surgical emergency: antibiotics alone into a closed, infected system do not work.",
+  ],
+  theory: [
+    {
+      id: "renal-urology-renal-stones-t1",
+      paper: "II",
+      kind: "long",
+      marks: 10,
+      minutes: 20,
+      frequency: "common",
+      question:
+        "A 38-year-old man from Rajasthan presents with sudden severe right loin pain radiating to the groin with vomiting and haematuria. Discuss the evaluation and management of urolithiasis, including the prevention of recurrence.",
+      openingLines: [
+        "Urolithiasis is the formation of crystalline concretions within the urinary tract, of which about 80% are calcium oxalate, and it presents typically as acute ureteric colic with loin-to-groin pain, restlessness, vomiting and haematuria.",
+        "This man is from the Indian stone belt, where dehydration and heat give a lifetime prevalence of about 12% in men and a recurrence rate near 50% at 5-10 years, so both the acute episode and the prevention of the next one must be addressed.",
+      ],
+      answer: [
+        {
+          heading: "1. Clinical assessment and differential diagnosis",
+          points: [
+            "Confirm the colic: sudden severe colicky loin-to-groin pain with a restless patient, nausea, vomiting and haematuria in about 85%; the site of referral localises the stone, with vesicoureteric junction stones producing frequency, urgency and pain referred to the tip of the penis.",
+            "Exclude the dangerous mimics: leaking abdominal aortic aneurysm in the older man, ectopic pregnancy in a woman, testicular torsion, appendicitis, biliary colic, and pyelonephritis.",
+            "Ask about previous stones and their analysis, family history, fluid intake and occupation, gout, bowel disease or resection, recurrent infection, immobilisation, and drugs such as calcium and vitamin D supplements, topiramate and protease inhibitors.",
+            "Examine for fever, haemodynamic instability, renal angle tenderness, a palpable bladder, an expansile abdominal mass, and the testes and hernial orifices.",
+          ],
+        },
+        {
+          heading: "2. Investigations",
+          points: [
+            "Non-contrast CT of the kidneys, ureters and bladder is the gold standard, sensitivity about 95-98%, giving stone size, site, Hounsfield density and skin-to-stone distance, and diagnosing alternative causes.",
+            "Ultrasound is first line in pregnancy and children and detects hydronephrosis, but misses most mid-ureteric stones; plain X-ray KUB is used mainly for follow-up of a known opaque stone.",
+            "Urine routine and microscopy with pH and culture; complete blood count, creatinine, electrolytes, calcium and uric acid.",
+            "Strain the urine and send any passed stone for composition analysis, which changes prevention more than any other single test.",
+            "Metabolic evaluation with two 24-hour urine collections, 4-6 weeks after the acute episode, for recurrent stone formers, children, solitary kidney, bilateral or staghorn stones, non-calcium stones, chronic kidney disease and nephrocalcinosis.",
+          ],
+        },
+        {
+          heading: "3. Acute management",
+          points: [
+            "Analgesia with an NSAID first - diclofenac 75 mg intramuscularly or ketorolac 30 mg intravenously - which is superior to opioids; intravenous paracetamol 1 g where NSAIDs are contraindicated, and tramadol or morphine as second line.",
+            "Antiemetic such as ondansetron 4-8 mg; intravenous fluid to correct dehydration only, not to flush the stone out.",
+            "Medical expulsive therapy with tamsulosin 0.4 mg PO OD for up to 4 weeks for distal ureteric stones of 5-10 mm; stones under 5 mm pass in 70-80% without it.",
+            "Safety-net: strain the urine, return with fever, uncontrollable pain, persistent vomiting or reduced output, and attend for review imaging at 2-4 weeks even if the pain settles.",
+          ],
+        },
+        {
+          heading: "4. Indications for urgent intervention and the definitive procedures",
+          points: [
+            "Emergency decompression by percutaneous nephrostomy or retrograde JJ stent within hours for obstruction with infection or sepsis, obstruction of a solitary or transplanted kidney, bilateral obstruction, acute kidney injury, or uncontrollable pain and vomiting.",
+            "ESWL for renal stones under 20 mm and ureteric stones under 10 mm; poor results above 1000 HU, in obesity and in lower pole stones; contraindicated in pregnancy, bleeding disorder, untreated infection and distal obstruction; complicated by steinstrasse.",
+            "Ureteroscopy with laser lithotripsy for ureteric stones above 10 mm, after failed ESWL, and where stone density is high; a JJ stent is often left and the removal date must be given in writing.",
+            "Percutaneous nephrolithotomy for renal stones above 20 mm and for staghorn calculi, with complete clearance mandatory in struvite disease.",
+          ],
+        },
+        {
+          heading: "5. Prevention of recurrence",
+          points: [
+            "Fluid intake sufficient for a urine output above 2.5 litres a day, judged by pale straw-coloured urine, including a drink at bedtime.",
+            "Normal dietary calcium of 1000-1200 mg a day - never a low-calcium diet, which increases oxalate absorption; sodium under 2-3 g a day; animal protein 0.8-1.0 g/kg/day; restrict oxalate-rich foods only in documented hyperoxaluria.",
+            "Potassium citrate 10-20 mEq two or three times daily for hypocitraturia, calcium oxalate stones, uric acid stones and distal renal tubular acidosis, with potassium monitoring.",
+            "Thiazide for hypercalciuria; allopurinol 100-300 mg OD for hyperuricosuria and uric acid stones; alkalinisation to a pH of 6.5-7.0 to dissolve uric acid stones; tiopronin for resistant cystinuria.",
+            "Treat the underlying cause - hyperparathyroidism, renal tubular acidosis, infection - and follow up with annual imaging and a repeat 24-hour urine at 6 months to confirm the intervention worked.",
+          ],
+        },
+      ],
+      mustDraw: [
+        "A table of stone types with radiological appearance, urine pH, association and specific prevention.",
+        "A flow chart of acute colic through analgesia, imaging, size-based decision (under 5 mm, 5-10 mm, above 10 mm) and the emergency decompression branch.",
+      ],
+      markSplit: [
+        { part: "Clinical features and differential diagnosis", marks: 2 },
+        { part: "Investigations including CT KUB and metabolic evaluation", marks: 2 },
+        { part: "Acute management with drugs and doses", marks: 2 },
+        { part: "Emergency decompression and definitive procedures", marks: 2 },
+        { part: "Prevention including fluids, diet and drugs", marks: 2 },
+      ],
+      keywords: ["renal colic", "CT KUB", "medical expulsive therapy", "ESWL", "potassium citrate"],
+    },
+    {
+      id: "renal-urology-renal-stones-t2",
+      paper: "III",
+      kind: "differentiate",
+      marks: 5,
+      minutes: 10,
+      frequency: "less-common",
+      question: "Differentiate between calcium oxalate, uric acid and struvite stones, and outline the specific prevention of each.",
+      openingLines: [
+        "Urinary calculi differ in composition, radiological appearance, the urine pH at which they form, their metabolic or infective associations, and therefore in their prevention.",
+        "The three commonest to differentiate are calcium oxalate (70-80%), uric acid (5-10%) and struvite or magnesium ammonium phosphate (5-10%).",
+      ],
+      answer: [
+        {
+          heading: "Calcium oxalate",
+          points: [
+            "Commonest stone, 70-80%; radio-opaque on plain film and dense on CT.",
+            "Forms in acidic to neutral urine; risk factors are low urine volume, hypercalciuria, hyperoxaluria, hypocitraturia and high sodium and animal protein intake; enteric hyperoxaluria follows bowel resection or inflammatory bowel disease.",
+            "Prevention: urine output above 2.5 L/day, normal dietary calcium of 1000-1200 mg/day (never restricted), sodium under 2-3 g/day, potassium citrate for hypocitraturia, and a thiazide for hypercalciuria.",
+          ],
+        },
+        {
+          heading: "Uric acid",
+          points: [
+            "5-10% of stones; radiolucent on plain X-ray but clearly seen on non-contrast CT.",
+            "Requires a persistently acidic urine with pH below 5.5; associated with gout, obesity, metabolic syndrome, chronic diarrhoea, and high purine intake.",
+            "Prevention and treatment: alkalinise the urine to pH 6.5-7.0 with potassium citrate or sodium bicarbonate - this is the only common stone that can be dissolved medically - plus allopurinol 100-300 mg daily and a high fluid intake.",
+          ],
+        },
+        {
+          heading: "Struvite (magnesium ammonium phosphate)",
+          points: [
+            "5-10% of stones; radio-opaque and typically staghorn, filling the pelvicalyceal system.",
+            "Forms only in urine alkalinised above pH 7.2 by urease-producing organisms - Proteus mirabilis, Klebsiella, Pseudomonas, Ureaplasma - and notably not Escherichia coli; commoner in women, in the catheterised and in neurogenic bladder.",
+            "Prevention: complete surgical clearance by percutaneous nephrolithotomy, because any residual fragment reseeds the infection, together with culture-directed antibiotics and long-term surveillance; acetohydroxamic acid is a urease inhibitor of last resort and is poorly tolerated.",
+          ],
+        },
+      ],
+      mustDraw: ["A comparison table with rows for share, radiology, urine pH, associations and prevention."],
+      markSplit: [
+        { part: "Calcium oxalate features and prevention", marks: 2 },
+        { part: "Uric acid features and dissolution therapy", marks: 1 },
+        { part: "Struvite features, organisms and need for complete clearance", marks: 2 },
+      ],
+      keywords: ["calcium oxalate", "uric acid stone", "struvite", "urease", "potassium citrate"],
+    },
+  ],
+  mcqs: [
+    {
+      id: "renal-urology-renal-stones-m1",
+      stem: "A 42-year-old man has a 7 mm stone at the vesicoureteric junction on CT, no fever, a creatinine of 0.9 mg/dL and pain controlled by oral diclofenac. What is the most appropriate management?",
+      options: [
+        "Immediate ureteroscopy with laser lithotripsy",
+        "Tamsulosin 0.4 mg daily for up to 4 weeks with analgesia and review at 2-4 weeks",
+        "Extracorporeal shock wave lithotripsy today",
+        "High-volume intravenous fluids to flush the stone out",
+      ],
+      answer: 1,
+      explanation:
+        "A 5-10 mm distal ureteric stone in an afebrile patient with normal renal function and controlled pain is the exact group in which medical expulsive therapy with an alpha blocker improves the spontaneous passage rate and shortens the time to passage, so tamsulosin with analgesia and planned review at 2-4 weeks is correct. Immediate ureteroscopy is over-treatment when about half of such stones pass without any procedure, and it carries stent morbidity and anaesthetic risk. ESWL is an option later if conservative treatment fails, but it is not the first step for an uncomplicated distal stone that may pass. Forcing intravenous fluids raises intrapelvic pressure and worsens pain without improving passage, and it is a persistent myth this question exists to correct.",
+      difficulty: "easy",
+    },
+    {
+      id: "renal-urology-renal-stones-m2",
+      stem: "A 55-year-old woman with a 9 mm obstructing left ureteric stone has a temperature of 39.2 degrees C, a pulse of 122/min, a blood pressure of 88/54 mmHg and pyuria. What is the immediate priority after resuscitation and intravenous antibiotics?",
+      options: [
+        "Emergency ureteroscopy to remove the stone",
+        "Percutaneous nephrostomy or retrograde JJ stent to decompress the collecting system",
+        "ESWL to fragment the stone so it passes",
+        "Continue antibiotics alone and reassess in 24 hours",
+      ],
+      answer: 1,
+      explanation:
+        "This is an infected obstructed kidney, the classic urological emergency, and the kidney and the patient are saved by drainage within hours - either a percutaneous nephrostomy or a retrograde JJ stent - alongside resuscitation and intravenous antibiotics. Definitive stone removal by ureteroscopy is deliberately deferred, because instrumenting an infected obstructed system raises intrapelvic pressure and can precipitate florid septic shock. ESWL is absolutely contraindicated in untreated urinary infection and would fragment nothing useful in this situation. Antibiotics alone cannot penetrate or sterilise a closed, obstructed, pus-filled collecting system, and waiting 24 hours risks death and loss of the kidney.",
+      difficulty: "easy",
+    },
+    {
+      id: "renal-urology-renal-stones-m3",
+      stem: "A 46-year-old obese man with gout has recurrent stones. Plain X-ray KUB is normal but CT shows a 12 mm stone in the renal pelvis with a density of 380 HU, and his urine pH is consistently 5.1. Which treatment may dissolve the stone without any procedure?",
+      options: [
+        "Potassium citrate to raise urine pH to 6.5-7.0, with allopurinol and a high fluid intake",
+        "Hydrochlorothiazide 25 mg daily with dietary calcium restriction",
+        "Long-term ciprofloxacin to sterilise the urine",
+        "Acetohydroxamic acid as a urease inhibitor",
+      ],
+      answer: 0,
+      explanation:
+        "A radiolucent stone on plain film that is visible on CT with a low Hounsfield density, in an obese gouty man with a urine pH persistently below 5.5, is a uric acid stone - the only common stone that dissolves with medical therapy, achieved by alkalinising the urine to pH 6.5-7.0 with potassium citrate, adding allopurinol and increasing fluid intake. A thiazide addresses hypercalciuria in calcium stone disease and would not touch a uric acid stone, and dietary calcium restriction is harmful advice in any stone former. Long-term ciprofloxacin treats nothing here, since uric acid stones are not infection stones. Acetohydroxamic acid inhibits bacterial urease and belongs to struvite disease, which forms in alkaline urine above pH 7.2 - the opposite of this man's urine.",
+      difficulty: "moderate",
+    },
+    {
+      id: "renal-urology-renal-stones-m4",
+      stem: "A 33-year-old woman who forms recurrent calcium oxalate stones asks about diet. Which advice is correct?",
+      options: [
+        "Restrict dietary calcium to below 500 mg per day",
+        "Maintain a normal calcium intake of 1000-1200 mg per day with meals, restrict sodium and animal protein, and drink enough to pass more than 2.5 litres of urine daily",
+        "Avoid all dairy products and take calcium supplements between meals instead",
+        "Restrict fluid in the evening to avoid nocturia",
+      ],
+      answer: 1,
+      explanation:
+        "Dietary calcium taken with meals binds oxalate in the gut and reduces its absorption, so a normal intake of 1000-1200 mg a day lowers recurrence, while sodium restriction reduces urinary calcium excretion and a urine output above 2.5 litres a day is the single most effective measure. Restricting calcium to below 500 mg a day increases oxalate absorption and demonstrably increases recurrence - it was standard advice for decades and is now known to be harmful. Replacing dairy with supplements taken between meals is the worst of both worlds, since supplements away from food raise stone risk without providing the gut oxalate binding. Restricting evening fluid concentrates the urine overnight, exactly when stones form, and a bedtime drink is in fact advised.",
+      difficulty: "easy",
+    },
+    {
+      id: "renal-urology-renal-stones-m5",
+      stem: "A 50-year-old woman with a neurogenic bladder and recurrent Proteus mirabilis infection has a left staghorn calculus. Her urine pH is 7.8. What is the most appropriate definitive management?",
+      options: [
+        "Long-term suppressive antibiotics and observation",
+        "ESWL in several sessions",
+        "Percutaneous nephrolithotomy aiming at complete stone clearance, with culture-directed antibiotics",
+        "Urinary acidification with ascorbic acid",
+      ],
+      answer: 2,
+      explanation:
+        "A staghorn stone in alkaline urine with Proteus mirabilis is a struvite infection stone, and because any residual fragment continues to harbour the urease-producing organism and regrows, the aim must be complete clearance, which percutaneous nephrolithotomy achieves better than any other modality, combined with culture-directed antibiotics and surveillance. Suppressive antibiotics alone leave the stone as an untreatable reservoir and lead to progressive loss of renal function and eventual xanthogranulomatous pyelonephritis. ESWL cannot reliably clear a staghorn stone and leaves the fragments that reseed the infection. Urinary acidification with ascorbic acid is ineffective and unsafe as a strategy, and does nothing about the stone burden already present.",
+      difficulty: "moderate",
+    },
+  ],
+  cards: [
+    {
+      id: "renal-urology-renal-stones-c1",
+      front: "Investigation of choice for suspected renal colic, and the exceptions.",
+      back: "Non-contrast CT of the kidneys, ureters and bladder (sensitivity 95-98%). Ultrasound is first line in pregnancy and in children; plain X-ray KUB is for following a known radio-opaque stone.",
+    },
+    {
+      id: "renal-urology-renal-stones-c2",
+      front: "Spontaneous passage rates of ureteric stones by size.",
+      back: "Under 5 mm about 70-80%, 5-10 mm about 50%, above 10 mm rarely. Most stones that will pass do so within 4 weeks.",
+    },
+    {
+      id: "renal-urology-renal-stones-c3",
+      front: "First-line analgesia in renal colic, and what not to do.",
+      back: "An NSAID - diclofenac 75 mg IM or ketorolac 30 mg IV - is superior to opioids; IV paracetamol 1 g if NSAIDs are contraindicated. Do not force intravenous fluids to flush the stone out.",
+    },
+    {
+      id: "renal-urology-renal-stones-c4",
+      front: "Which stone is radiolucent on X-ray, and how can it be dissolved?",
+      back: "Uric acid stone, radiolucent on plain film but visible on CT, forming when urine pH stays below 5.5. Dissolve it by alkalinising urine to pH 6.5-7.0 with potassium citrate, plus allopurinol and high fluid intake.",
+    },
+    {
+      id: "renal-urology-renal-stones-c5",
+      front: "Which organisms cause struvite stones, and which does not?",
+      back: "Urease producers - Proteus mirabilis, Klebsiella, Pseudomonas, Ureaplasma - which split urea and raise urine pH above 7.2. Escherichia coli does not produce urease and does not cause struvite stones.",
+    },
+    {
+      id: "renal-urology-renal-stones-c6",
+      front: "Dietary calcium advice for a calcium oxalate stone former.",
+      back: "Normal intake of 1000-1200 mg a day taken with meals, because dietary calcium binds gut oxalate. Never a low-calcium diet. Calcium supplements taken between meals increase risk.",
+    },
+    {
+      id: "renal-urology-renal-stones-c7",
+      front: "Indications for urgent decompression of an obstructing stone.",
+      back: "Obstruction with infection or sepsis, obstruction in a solitary or transplanted kidney, bilateral obstruction, acute kidney injury, and pain or vomiting that cannot be controlled - by percutaneous nephrostomy or retrograde JJ stent.",
+    },
+    {
+      id: "renal-urology-renal-stones-c8",
+      front: "Which procedure for which stone burden?",
+      back: "ESWL for renal stones under 20 mm and ureteric stones under 10 mm; ureteroscopy with laser for ureteric stones above 10 mm or high density; percutaneous nephrolithotomy for renal stones above 20 mm and all staghorn calculi.",
+    },
+  ],
+  references: [
+    "European Association of Urology Guidelines on Urolithiasis, 2024",
+    "American Urological Association / Endourological Society Guideline on Surgical Management of Stones, 2016, amended 2023",
+    "American Urological Association Guideline on Medical Management of Kidney Stones, 2019 amendment",
+    "Campbell-Walsh-Wein Urology, 12th edition, 2021 - urinary lithiasis",
+    "Indian Journal of Urology - epidemiology of urolithiasis in the Indian stone belt",
+    "Bailey and Love's Short Practice of Surgery, 28th edition, 2023 - the kidneys and ureters",
+  ],
+});
+
+topics.push({
+  id: "renal-urology-hyponatraemia-hyperkalaemia",
+  title: "Hyponatraemia and hyperkalaemia in the clinic",
+  oneLiner:
+    "Hyponatraemia is a serum sodium below 135 mmol/L, almost always a disorder of water rather than of salt, and is worked up by measuring serum osmolality, then volume status, then urine sodium and urine osmolality; hyperkalaemia is a serum potassium above 5.5 mmol/L, which becomes an immediate emergency at 6.0 mmol/L or with any ECG change, and is treated in the fixed order of stabilise the myocardium, shift potassium into cells, then remove it from the body.",
+  frequency: "common",
+  keywords: [
+    "hyponatraemia",
+    "SIADH",
+    "serum osmolality",
+    "urine sodium",
+    "osmotic demyelination syndrome",
+    "hypertonic saline",
+    "tolvaptan",
+    "hyperkalaemia",
+    "calcium gluconate",
+    "insulin dextrose",
+    "sodium zirconium cyclosilicate",
+    "salt substitute",
+    "pseudohyperkalaemia",
+    "cerebral salt wasting",
+    "thiazide hyponatraemia",
+    "RAAS blockade",
+  ],
+  sections: [
+    {
+      heading: "Hyponatraemia: definitions, severity and the three-step algorithm",
+      points: [
+        "**Hyponatraemia is a serum sodium below 135 mmol/L**, graded **mild 130-134, moderate 125-129 and severe below 125 mmol/L**; separately it is classified by speed as **acute (developing in under 48 hours) or chronic (48 hours or longer, or of unknown duration)**, and this distinction dictates how fast it may be corrected.",
+        "**Step 1 - measure serum osmolality** (normal 275-295 mOsm/kg), or calculate it as **2 x sodium + glucose (mg/dL)/18 + blood urea nitrogen (mg/dL)/2.8**. **Hypotonic (true) hyponatraemia has an osmolality below 275** and is the only kind that needs the full workup.",
+        "**Isotonic pseudohyponatraemia (osmolality 275-295)** occurs with **severe hyperlipidaemia or hyperproteinaemia (myeloma, intravenous immunoglobulin)** measured by indirect ion-selective electrode; the true sodium is normal and no treatment is needed. **Hypertonic (translocational) hyponatraemia (osmolality above 295)** is caused by **hyperglycaemia, mannitol or glycine irrigation**: correct the sodium upward by **1.6-2.4 mmol/L for every 100 mg/dL that glucose exceeds 100 mg/dL**, and treat the glucose, not the sodium.",
+        "**Step 2 - assess volume status clinically:** hypovolaemic (postural hypotension, tachycardia, dry mucosae, poor turgor, low jugular venous pressure), euvolaemic (no oedema, no signs of depletion) or hypervolaemic (oedema, raised JVP, ascites, crepitations).",
+        "**Step 3 - measure urine sodium and urine osmolality on a spot sample, before any fluid or diuretic is given.** A **urine osmolality below 100 mOsm/kg means maximally dilute urine and points to primary polydipsia, beer potomania or a low-solute diet**; above 100 mOsm/kg means ADH is acting. A **urine sodium below 30 mmol/L means the kidney is conserving sodium (true volume depletion, or the reduced effective circulating volume of heart failure and cirrhosis); above 30-40 mmol/L with euvolaemia points to SIADH, hypothyroidism, adrenal insufficiency or a thiazide**.",
+        "**In practice in India, the four commonest causes** are **thiazide diuretics, SIADH from drugs or pneumonia or tuberculosis or an intracranial event or malignancy, gastrointestinal losses with hypotonic fluid replacement, and heart failure or cirrhosis**. In a young adult with severe hyponatraemia, always ask about **excessive water intake in the summer, ecstasy or endurance exercise**.",
+      ],
+    },
+    {
+      heading: "SIADH and the mimics that must be excluded first",
+      points: [
+        "**Diagnostic criteria for SIADH (Bartter and Schwartz):** hypotonic hyponatraemia with **serum osmolality below 275 mOsm/kg**; **urine osmolality above 100 mOsm/kg** (inappropriately concentrated); **clinical euvolaemia**; **urine sodium above 30-40 mmol/L on a normal salt and water intake**; and **normal thyroid, adrenal and renal function with no diuretic use**. Low serum uric acid (below 4 mg/dL) and low blood urea support it.",
+        "**Causes of SIADH to list:** central nervous system disease (stroke, meningitis, tuberculous meningitis, head injury, subarachnoid haemorrhage, tumour); pulmonary disease (**pneumonia, tuberculosis, empyema, mechanical ventilation**); malignancy (**small cell carcinoma of the lung classically**, head and neck cancers); drugs (**carbamazepine and oxcarbazepine, SSRIs especially in the elderly, tricyclic antidepressants, antipsychotics, cyclophosphamide, vincristine, NSAIDs, opioids, desmopressin, ecstasy**); pain, nausea and the postoperative state; and HIV.",
+        "**Exclude hypothyroidism and adrenal insufficiency before diagnosing SIADH** - a short synacthen test or an 8 am cortisol, and TSH with free T4. Missing adrenal insufficiency and giving fluid restriction instead of hydrocortisone is a lethal error.",
+        "**Cerebral salt wasting** is the important mimic after subarachnoid haemorrhage, head injury or neurosurgery: the biochemistry looks identical to SIADH but the patient is **volume depleted**, so the treatment is **salt and fluid replacement, not fluid restriction**. The distinction is made on careful volume assessment, weight trend and central venous pressure.",
+        "**Thiazide-induced hyponatraemia** is the commonest drug cause in general practice, typically in an **elderly, low body weight woman within 2-4 weeks of starting the drug**; it can be profound. **Stop the thiazide permanently and do not rechallenge**, and check sodium 2-4 weeks after starting any thiazide in an older patient.",
+        "**Beer potomania and the tea-and-toast diet** produce hyponatraemia through **low solute intake limiting free water excretion**, with a urine osmolality below 100 mOsm/kg; these patients **autocorrect very fast once solute is given, and are at high risk of overcorrection** and osmotic demyelination.",
+      ],
+    },
+    {
+      heading: "Treating hyponatraemia without causing osmotic demyelination",
+      points: [
+        "**The correction limits are the most examined numbers in this topic: no more than 8-10 mmol/L in the first 24 hours and no more than 18 mmol/L in 48 hours; in the high-risk patient (sodium below 105 mmol/L, alcoholism, malnutrition, liver disease, hypokalaemia, advanced age) limit the rise to 4-6 mmol/L in 24 hours.**",
+        "**Severe symptomatic hyponatraemia - seizures, coma, obtundation, vomiting with headache - is treated immediately regardless of chronicity:** **3% hypertonic saline 100-150 mL intravenously over 10-20 minutes, repeated up to three times** until symptoms improve or the sodium has risen by **4-6 mmol/L**, which is enough to stop the cerebral oedema. Check the sodium after each bolus.",
+        "**Osmotic demyelination syndrome** follows overcorrection of chronic hyponatraemia: a biphasic course with initial improvement then, **2-6 days later, dysarthria, dysphagia, quadriparesis, a pseudobulbar palsy, and in severe cases a locked-in state**, with MRI changes in the central pons appearing late. It is largely irreversible, which is why the ceiling matters more than the target.",
+        "**If overcorrection occurs**, it can be reversed: **stop the saline, give 5% dextrose 3 mL/kg/h and desmopressin 2 micrograms intravenously** to re-lower the sodium back within the limit, and this genuinely prevents demyelination.",
+        "**Cause-directed treatment for the non-emergency case:** **hypovolaemic** - **0.9% saline with frequent sodium checks**, expecting a brisk water diuresis and a rapid rise once volume is restored and ADH switches off; **hypervolaemic (heart failure, cirrhosis, nephrotic syndrome)** - **fluid restriction to 800-1000 mL/day, salt restriction and a loop diuretic**, treating the underlying disease; **SIADH** - **fluid restriction to 500-1000 mL/day** as first line.",
+        "**When fluid restriction fails in SIADH:** add **oral urea 15-30 g/day** or **sodium chloride tablets with a low-dose loop diuretic**, or use **tolvaptan 15 mg PO OD** (a vasopressin V2 antagonist, started in hospital with 6-hourly sodium monitoring, contraindicated in liver disease, and expensive). **Demeclocycline is now rarely used.** A urine osmolality above 500 mOsm/kg or a urine to serum electrolyte ratio above 1 predicts that fluid restriction alone will fail.",
+      ],
+    },
+    {
+      heading: "Hyperkalaemia: causes and the ECG",
+      points: [
+        "**Hyperkalaemia is a serum potassium above 5.5 mmol/L: mild 5.5-5.9, moderate 6.0-6.4 and severe 6.5 mmol/L or above**, but **the number is only half the assessment - any ECG change makes it an emergency at any level**.",
+        "**Always exclude pseudohyperkalaemia first** if the patient looks well and has no cause: **haemolysis of the sample, a tight or prolonged tourniquet with fist clenching, delayed transport, a difficult paediatric sample, and thrombocytosis or marked leucocytosis** (potassium released during clotting). Repeat the sample properly before treating a well patient.",
+        "**Reduced excretion is the dominant mechanism:** **chronic kidney disease and acute kidney injury**, **type 4 renal tubular acidosis / hyporeninaemic hypoaldosteronism (very common in diabetic nephropathy)**, adrenal insufficiency, and **drugs - ACE inhibitors, ARBs, spironolactone and eplerenone, amiloride, trimethoprim (which acts like amiloride on the collecting duct), NSAIDs, heparin, calcineurin inhibitors, and beta blockers**.",
+        "**Transcellular shift:** metabolic acidosis (especially mineral acidosis), **insulin deficiency and hyperglycaemia in diabetic ketoacidosis**, beta blockade, digoxin toxicity, and suxamethonium in burns or neuromuscular disease.",
+        "**Increased load:** the crucial dietary counselling point in Indian practice is **potassium-based salt substitutes (low sodium salt is potassium chloride), coconut water, banana, citrus fruits, tomato, potato, dry fruits, dates and jaggery**, plus stored blood transfusion, rhabdomyolysis, tumour lysis and haemolysis.",
+        "**The ECG sequence, in order:** **tall peaked symmetrical T waves with a narrow base**, then a **flattened or absent P wave with a prolonged PR interval**, then **widening of the QRS**, then the **sine wave pattern** and finally ventricular fibrillation or asystole. **A normal ECG does not exclude dangerous hyperkalaemia**, and the ECG changes correlate poorly with the exact potassium value.",
+      ],
+    },
+    {
+      heading: "Treating hyperkalaemia in the right order",
+      points: [
+        "**Step 1 - stabilise the myocardium: 10 mL of 10% calcium gluconate intravenously over 2-3 minutes**, repeated after 5 minutes if the ECG has not improved. It acts in 1-3 minutes and lasts 30-60 minutes, **does not lower the potassium at all**, and is given whenever there is any ECG change or the potassium is 6.5 mmol/L or above. **Calcium chloride 10 mL of 10% has three times the calcium but must go through a central line.** In digoxin toxicity, give calcium slowly and diluted, with digoxin-specific antibody where available.",
+        "**Step 2 - shift potassium into the cells: 10 units of regular insulin in 25 g of dextrose (50 mL of 50% or 100 mL of 25% dextrose) intravenously**, which lowers potassium by about **0.6-1.2 mmol/L within 15-30 minutes and lasts 4-6 hours**; **check the blood glucose hourly for 6 hours**, as hypoglycaemia is the commonest iatrogenic complication and is more frequent in CKD and in the small, elderly patient.",
+        "**Salbutamol 10-20 mg by nebuliser (or 0.5 mg intravenously)** lowers potassium by a further **0.5-1.0 mmol/L in 30 minutes** and is additive with insulin; it fails in about a fifth of patients, particularly those on a beta blocker, and causes tachycardia and tremor. **Sodium bicarbonate is useful only when there is genuine metabolic acidosis** and is not an effective potassium-lowering agent on its own.",
+        "**Step 3 - remove potassium from the body: furosemide 40-80 mg intravenously with adequate volume status** in a patient who still makes urine; a **potassium binder - sodium zirconium cyclosilicate 10 g PO TDS for 48 hours then 5-10 g daily, or patiromer 8.4 g PO OD** (both act over hours and are now preferred), or **calcium or sodium polystyrene sulphonate 15-30 g** (slow, poorly evidenced and associated with intestinal necrosis, particularly with sorbitol); and **haemodialysis, which is the definitive treatment** in oliguric renal failure or refractory hyperkalaemia.",
+        "**Step 4 - remove the cause and prevent the next episode:** stop or reduce the ACE inhibitor, ARB, MRA, trimethoprim or NSAID; **give the dietary list by name, and specifically ask what salt the household buys**, because low-sodium salt is potassium chloride and is heavily marketed in India; treat acidosis with sodium bicarbonate; and recheck potassium within 3-7 days of any change.",
+        "**Do not abandon proven RAAS blockade for a potassium of 5.2-5.5 mmol/L in a patient with CKD or heart failure** - treat the potassium with diet, a binder, correction of acidosis and a loop diuretic, and keep the drug that protects the kidney and the heart. This is the modern, examinable position and the reason potassium binders exist.",
+      ],
+    },
+    {
+      heading: "Practical rules for the family physician",
+      points: [
+        "**Take the sample properly:** no prolonged tourniquet, no fist clenching, prompt transport, and repeat any unexpected result in a well patient before acting on it.",
+        "**Check electrolytes 1-2 weeks after starting or increasing** an ACE inhibitor, ARB, MRA, thiazide or loop diuretic, and during any intercurrent illness with vomiting, diarrhoea or reduced intake.",
+        "**Give written sick-day rules:** hold the ACE inhibitor, ARB, diuretic, MRA, metformin and SGLT2 inhibitor during vomiting, diarrhoea or fever with poor intake, and attend for a creatinine and potassium check.",
+        "**Weigh the patient at every visit in heart failure, cirrhosis and CKD** - a change in weight is a better measure of fluid balance than any single sodium value, and it is free.",
+        "**Never correct chronic hyponatraemia quickly because the number looks frightening.** The patient who has been at 112 mmol/L for weeks and is walking and talking needs a plan and a ceiling, not a bolus.",
+        "**Document the correction ceiling in the case notes and on the fluid chart**, with the target sodium at 24 hours written as a number, so that the next doctor on duty does not exceed it.",
+      ],
+    },
+  ],
+  tables: [
+    {
+      heading: "Working out the cause of hypotonic hyponatraemia",
+      columns: ["Volume status", "Urine sodium", "Urine osmolality", "Likely causes", "Treatment"],
+      rows: [
+        ["Hypovolaemic", "Below 30 mmol/L", "Above 100 mOsm/kg", "Vomiting, diarrhoea, burns, third spacing, pancreatitis", "0.9% saline with frequent sodium checks"],
+        ["Hypovolaemic", "Above 30 mmol/L", "Above 100 mOsm/kg", "Thiazide or loop diuretic, adrenal insufficiency, cerebral salt wasting, salt-losing nephropathy", "Stop the diuretic; saline; hydrocortisone if adrenal"],
+        ["Euvolaemic", "Above 30 mmol/L", "Above 100 mOsm/kg", "SIADH, hypothyroidism, adrenal insufficiency, drugs", "Treat the cause; fluid restriction 500-1000 mL/day"],
+        ["Euvolaemic", "Variable", "Below 100 mOsm/kg", "Primary polydipsia, beer potomania, low solute (tea and toast) diet", "Restrict water, restore solute, watch closely for overcorrection"],
+        ["Hypervolaemic", "Below 30 mmol/L", "Above 100 mOsm/kg", "Heart failure, cirrhosis, nephrotic syndrome", "Fluid and salt restriction, loop diuretic, treat the underlying disease"],
+        ["Hypervolaemic", "Above 30 mmol/L", "Above 100 mOsm/kg", "Advanced chronic kidney disease or acute kidney injury", "Fluid restriction; dialysis if needed"],
+      ],
+    },
+    {
+      heading: "Emergency treatment of hyperkalaemia: agent, dose, onset and duration",
+      columns: ["Agent", "Dose", "Onset", "Duration", "Effect on serum potassium"],
+      rows: [
+        ["Calcium gluconate 10%", "10 mL IV over 2-3 minutes, repeat once if ECG unchanged", "1-3 minutes", "30-60 minutes", "None - it protects the myocardium only"],
+        ["Insulin with dextrose", "10 units regular insulin with 25 g dextrose IV", "15-30 minutes", "4-6 hours", "Falls by 0.6-1.2 mmol/L; monitor glucose hourly for 6 hours"],
+        ["Salbutamol nebulised", "10-20 mg nebulised", "30 minutes", "2-4 hours", "Falls by 0.5-1.0 mmol/L; additive with insulin; fails on beta blockers"],
+        ["Sodium bicarbonate", "50-100 mmol IV, only if acidotic", "Hours", "Variable", "Small and unreliable unless true metabolic acidosis"],
+        ["Furosemide", "40-80 mg IV if urine output is preserved", "30-60 minutes", "Hours", "Removes potassium; needs adequate volume status"],
+        ["Sodium zirconium cyclosilicate or patiromer", "10 g PO TDS for 48 h then 5-10 g OD; patiromer 8.4 g PO OD", "1-6 hours", "Ongoing", "Removes potassium via the gut; suitable for chronic control"],
+        ["Haemodialysis", "As arranged", "Immediate once started", "Definitive", "The definitive treatment in oliguric or refractory cases"],
+      ],
+    },
+  ],
+  redFlags: [
+    "Hyponatraemia with seizures, coma or obtundation - give 3% hypertonic saline 100-150 mL over 10-20 minutes immediately, regardless of how chronic the hyponatraemia is.",
+    "A rise in serum sodium of more than 8-10 mmol/L in 24 hours - stop correcting, give 5% dextrose and desmopressin to bring it back down and prevent osmotic demyelination.",
+    "Potassium of 6.5 mmol/L or more, or any peaked T waves, absent P waves, wide QRS or sine wave pattern - give calcium gluconate now and arrange dialysis assessment.",
+    "Hyponatraemia with hypotension, hyperkalaemia, hyperpigmentation and weight loss - primary adrenal insufficiency; give hydrocortisone 100 mg intravenously before any other treatment.",
+    "Hyponatraemia after subarachnoid haemorrhage or neurosurgery with signs of volume depletion - cerebral salt wasting, where fluid restriction is dangerous and salt replacement is needed.",
+    "Severe hyponatraemia in an alcoholic or malnourished patient - the highest risk group for osmotic demyelination; cap the correction at 4-6 mmol/L in 24 hours.",
+  ],
+  pearls: [
+    "Hyponatraemia is a water problem, not a salt problem; measure serum osmolality first, then assess volume, then send urine sodium and urine osmolality before giving any fluid or diuretic.",
+    "Correct hyperglycaemic hyponatraemia by treating the glucose - add 1.6-2.4 mmol/L to the sodium for every 100 mg/dL of glucose above 100 mg/dL.",
+    "Never exceed 8-10 mmol/L of sodium correction in 24 hours, or 4-6 mmol/L in the alcoholic, malnourished or hypokalaemic patient.",
+    "Overcorrection is reversible: 5% dextrose plus desmopressin will bring the sodium back down and prevent osmotic demyelination.",
+    "Exclude hypothyroidism and adrenal insufficiency before diagnosing SIADH, and exclude a thiazide before anything else in an elderly woman.",
+    "In hyperkalaemia, calcium gluconate buys time but lowers nothing; insulin-dextrose and salbutamol shift it; only diuresis, a binder or dialysis removes it.",
+    "Check the household salt packet - low-sodium salt is potassium chloride and is a common hidden cause of hyperkalaemia in Indian CKD patients.",
+    "Do not stop an ACE inhibitor or ARB for a potassium of 5.2 mmol/L in CKD or heart failure; treat the potassium and keep the drug.",
+  ],
+  theory: [
+    {
+      id: "renal-urology-hyponatraemia-hyperkalaemia-t1",
+      paper: "II",
+      kind: "long",
+      marks: 10,
+      minutes: 20,
+      frequency: "common",
+      question:
+        "A 72-year-old woman on hydrochlorothiazide for hypertension is brought with 2 days of increasing confusion and one generalised seizure. Serum sodium is 112 mmol/L. Classify hyponatraemia, describe your approach to establishing the cause, and outline the management with particular attention to the rate of correction.",
+      openingLines: [
+        "Hyponatraemia is a serum sodium below 135 mmol/L and is graded as mild at 130-134, moderate at 125-129 and severe below 125 mmol/L; it is a disorder of water balance rather than of total body sodium.",
+        "This woman has severe symptomatic hyponatraemia with a seizure, most probably thiazide-induced, and she needs immediate hypertonic saline while the cause is established, with a strict ceiling on the rate of correction.",
+      ],
+      answer: [
+        {
+          heading: "1. Classification",
+          points: [
+            "By severity: mild 130-134, moderate 125-129, severe below 125 mmol/L.",
+            "By duration: acute if developing within 48 hours, chronic if 48 hours or longer or of unknown duration - the latter being the group at risk of osmotic demyelination with rapid correction.",
+            "By tonicity: hypotonic (serum osmolality below 275 mOsm/kg, the only true hyponatraemia); isotonic pseudohyponatraemia from severe hyperlipidaemia or hyperproteinaemia; and hypertonic translocational hyponatraemia from hyperglycaemia, mannitol or glycine.",
+            "By volume status: hypovolaemic, euvolaemic or hypervolaemic - the axis that determines treatment.",
+          ],
+        },
+        {
+          heading: "2. Establishing the cause",
+          points: [
+            "Measure serum osmolality, or calculate it as 2 x sodium plus glucose in mg/dL divided by 18 plus blood urea nitrogen in mg/dL divided by 2.8, to confirm hypotonicity.",
+            "Assess volume status clinically: postural blood pressure, pulse, mucous membranes, skin turgor, jugular venous pressure, oedema and weight trend.",
+            "Send spot urine sodium and urine osmolality before any fluid or diuretic: urine osmolality below 100 mOsm/kg indicates primary polydipsia or low solute intake; urine sodium below 30 mmol/L indicates renal sodium conservation, above 30-40 mmol/L with euvolaemia indicates SIADH, a diuretic, hypothyroidism or adrenal insufficiency.",
+            "Exclude hypothyroidism with TSH and free T4 and adrenal insufficiency with an 8 am cortisol or short synacthen test before diagnosing SIADH; a low serum uric acid and low urea support SIADH.",
+            "In this patient the thiazide is the prime suspect - it typically affects elderly, low body weight women within 2-4 weeks of starting - but review every other drug (SSRIs, carbamazepine, NSAIDs, opioids) and examine for pneumonia, tuberculosis, malignancy and intracranial disease.",
+          ],
+        },
+        {
+          heading: "3. Immediate management of the symptomatic patient",
+          points: [
+            "She has a seizure, so treat immediately regardless of chronicity: 3% hypertonic saline 100-150 mL intravenously over 10-20 minutes, repeated up to three times, until symptoms improve or the sodium has risen by 4-6 mmol/L.",
+            "Check serum sodium after each bolus and then 2-hourly; secure the airway, control the seizure with a benzodiazepine, and manage her in a monitored bed.",
+            "Stop the hydrochlorothiazide permanently and do not rechallenge; correct coexisting hypokalaemia, remembering that potassium replacement itself raises the serum sodium.",
+            "Look for and treat any contributory cause found on the workup.",
+          ],
+        },
+        {
+          heading: "4. Rate of correction and osmotic demyelination",
+          points: [
+            "The ceiling is a rise of no more than 8-10 mmol/L in the first 24 hours and no more than 18 mmol/L in 48 hours.",
+            "In high-risk patients - sodium below 105 mmol/L, alcoholism, malnutrition, liver disease, hypokalaemia, advanced age - limit the rise to 4-6 mmol/L in 24 hours. This woman is elderly and at 112 mmol/L, so a conservative ceiling is appropriate.",
+            "Osmotic demyelination syndrome appears 2-6 days after overcorrection, with dysarthria, dysphagia, quadriparesis, pseudobulbar palsy and in severe cases a locked-in state; MRI changes appear late and it is largely irreversible.",
+            "If the sodium rises too fast, stop the saline, give 5% dextrose 3 mL/kg/h and desmopressin 2 micrograms intravenously to re-lower the sodium into the target range.",
+            "Write the 24-hour sodium target as a number on the fluid chart so that the next doctor on duty does not exceed it.",
+          ],
+        },
+        {
+          heading: "5. Cause-directed treatment and follow-up",
+          points: [
+            "Hypovolaemic hyponatraemia: 0.9% saline with frequent monitoring, expecting a brisk rise once volume is restored and ADH switches off.",
+            "Euvolaemic hyponatraemia from SIADH: fluid restriction to 500-1000 mL a day; if it fails, oral urea 15-30 g/day, salt tablets with a low-dose loop diuretic, or tolvaptan 15 mg PO OD in hospital with 6-hourly sodium checks.",
+            "Hypervolaemic hyponatraemia: fluid restriction to 800-1000 mL a day, salt restriction, a loop diuretic and treatment of the heart failure, cirrhosis or nephrotic syndrome.",
+            "For this patient: substitute an alternative antihypertensive such as amlodipine or telmisartan, record the thiazide as a documented adverse reaction, and recheck sodium at 1 and 4 weeks.",
+            "Counsel her and her family about fluid intake, the warning symptoms of recurrence, and the need for electrolyte checks with any new diuretic.",
+          ],
+        },
+      ],
+      mustDraw: [
+        "The three-step algorithm: serum osmolality, then volume status, then urine sodium and urine osmolality, ending in the named causes.",
+        "A time-line box showing the correction ceilings of 8-10 mmol/L in 24 hours and 4-6 mmol/L in high-risk patients.",
+      ],
+      markSplit: [
+        { part: "Classification by severity, duration, tonicity and volume", marks: 2 },
+        { part: "Diagnostic algorithm with urine sodium and osmolality", marks: 2 },
+        { part: "Emergency hypertonic saline with dose and end point", marks: 2 },
+        { part: "Correction limits and osmotic demyelination including rescue", marks: 2 },
+        { part: "Cause-directed treatment and follow-up", marks: 2 },
+      ],
+      keywords: ["hyponatraemia", "hypertonic saline", "osmotic demyelination", "SIADH", "thiazide"],
+    },
+    {
+      id: "renal-urology-hyponatraemia-hyperkalaemia-t2",
+      paper: "III",
+      kind: "short-note",
+      marks: 5,
+      minutes: 10,
+      frequency: "core",
+      question: "Write short notes on the causes, ECG changes and emergency management of hyperkalaemia.",
+      openingLines: [
+        "Hyperkalaemia is a serum potassium above 5.5 mmol/L, graded as mild at 5.5-5.9, moderate at 6.0-6.4 and severe at 6.5 mmol/L or above, and it is the electrolyte disturbance most likely to cause sudden death.",
+        "Any ECG change makes it an emergency at any potassium level, and pseudohyperkalaemia from a haemolysed or badly taken sample must be excluded in a well patient before treatment.",
+      ],
+      answer: [
+        {
+          heading: "Causes",
+          points: [
+            "Pseudohyperkalaemia: haemolysed sample, prolonged tourniquet with fist clenching, delayed transport, marked thrombocytosis or leucocytosis.",
+            "Reduced excretion: acute kidney injury and chronic kidney disease; type 4 renal tubular acidosis or hyporeninaemic hypoaldosteronism, especially in diabetic nephropathy; adrenal insufficiency.",
+            "Drugs: ACE inhibitors, ARBs, spironolactone, eplerenone, amiloride, trimethoprim, NSAIDs, heparin, calcineurin inhibitors and beta blockers.",
+            "Transcellular shift: metabolic acidosis, insulin deficiency and hyperglycaemia in diabetic ketoacidosis, digoxin toxicity, suxamethonium in burns or neuromuscular disease.",
+            "Increased load: potassium-based salt substitutes, coconut water, banana, citrus, tomato, potato, dry fruits and dates; stored blood transfusion; rhabdomyolysis, tumour lysis and haemolysis.",
+          ],
+        },
+        {
+          heading: "ECG changes in sequence",
+          points: [
+            "Tall, peaked, symmetrical T waves with a narrow base.",
+            "Flattened or absent P waves with a prolonged PR interval.",
+            "Progressive widening of the QRS complex.",
+            "Sine wave pattern, then ventricular fibrillation or asystole.",
+            "A normal ECG does not exclude dangerous hyperkalaemia, and the changes correlate poorly with the exact value.",
+          ],
+        },
+        {
+          heading: "Emergency management in order",
+          points: [
+            "Stabilise the myocardium: calcium gluconate 10 mL of 10% intravenously over 2-3 minutes, repeated once if the ECG has not improved; it works within 1-3 minutes for 30-60 minutes and does not lower the potassium.",
+            "Shift potassium into cells: 10 units of regular insulin with 25 g of dextrose intravenously, lowering potassium by 0.6-1.2 mmol/L within 15-30 minutes, with hourly glucose monitoring for 6 hours; add nebulised salbutamol 10-20 mg for a further 0.5-1.0 mmol/L; sodium bicarbonate only if genuinely acidotic.",
+            "Remove potassium: furosemide 40-80 mg intravenously if urine output is preserved; a binder such as sodium zirconium cyclosilicate 10 g three times daily for 48 hours or patiromer 8.4 g daily; and haemodialysis, which is definitive.",
+            "Remove the cause: stop or reduce the ACE inhibitor, ARB, MRA, trimethoprim or NSAID; treat acidosis; give the dietary list by name and ask what salt the household uses.",
+            "Recheck potassium within 3-7 days of any change, and do not abandon proven RAAS blockade for a potassium of 5.2-5.5 mmol/L in CKD or heart failure - treat the potassium instead.",
+          ],
+        },
+      ],
+      mustDraw: ["The ECG sequence drawn as four strips: peaked T waves, absent P with long PR, wide QRS, sine wave."],
+      markSplit: [
+        { part: "Causes, classified", marks: 2 },
+        { part: "ECG changes in sequence", marks: 1 },
+        { part: "Emergency treatment with doses in the correct order", marks: 2 },
+      ],
+      keywords: ["hyperkalaemia", "calcium gluconate", "insulin dextrose", "salt substitute", "sine wave"],
+    },
+  ],
+  mcqs: [
+    {
+      id: "renal-urology-hyponatraemia-hyperkalaemia-m1",
+      stem: "A 68-year-old man with community-acquired pneumonia has a serum sodium of 121 mmol/L, serum osmolality 258 mOsm/kg, urine osmolality 480 mOsm/kg, urine sodium 62 mmol/L, no oedema, normal blood pressure with no postural drop, normal TSH and a normal 8 am cortisol. What is the most appropriate initial treatment?",
+      options: [
+        "0.9% saline at 100 mL/h",
+        "Fluid restriction to 500-1000 mL per day",
+        "3% hypertonic saline 150 mL over 20 minutes",
+        "Furosemide 40 mg intravenously",
+      ],
+      answer: 1,
+      explanation:
+        "He fulfils the Bartter and Schwartz criteria for SIADH - hypotonic hyponatraemia, inappropriately concentrated urine above 100 mOsm/kg, clinical euvolaemia, urine sodium above 30-40 mmol/L, and normal thyroid, adrenal and renal function - secondary to pneumonia, and first-line treatment for an asymptomatic patient is fluid restriction to 500-1000 mL a day while the pneumonia is treated. Isotonic saline is wrong and can lower the sodium further in SIADH, because the kidney excretes the sodium in concentrated urine and retains the free water. Hypertonic saline is reserved for severe symptoms such as seizures, coma or obtundation, none of which he has, and would risk overcorrection. Furosemide alone would worsen sodium loss without addressing the water retention, and is used only as an adjunct with salt tablets when restriction fails.",
+      difficulty: "moderate",
+    },
+    {
+      id: "renal-urology-hyponatraemia-hyperkalaemia-m2",
+      stem: "A malnourished 44-year-old man with alcohol dependence has a serum sodium of 104 mmol/L, present for at least a week, and is drowsy but not fitting. Over the first 12 hours of treatment his sodium rises to 118 mmol/L. What should be done now?",
+      options: [
+        "Continue the current fluids as the sodium is improving",
+        "Give 5% dextrose 3 mL/kg/h with desmopressin 2 micrograms intravenously to re-lower the sodium",
+        "Give a further bolus of 3% hypertonic saline to reach 125 mmol/L quickly",
+        "Start tolvaptan 15 mg orally",
+      ],
+      answer: 1,
+      explanation:
+        "He has risen 14 mmol/L in 12 hours, far above the 8-10 mmol/L per 24 hours ceiling and enormously above the 4-6 mmol/L limit that applies to a high-risk patient who is alcoholic, malnourished and started below 105 mmol/L; the recognised rescue is to stop the correcting fluid, give 5% dextrose and desmopressin to bring the sodium back down into range, which prevents osmotic demyelination. Continuing the same fluid guarantees further overcorrection and a locked-in syndrome 2-6 days later. More hypertonic saline compounds the error and is exactly what causes demyelination. Tolvaptan raises sodium further and is contraindicated here, quite apart from being inappropriate in liver disease.",
+      difficulty: "hard",
+    },
+    {
+      id: "renal-urology-hyponatraemia-hyperkalaemia-m3",
+      stem: "A 58-year-old man with diabetic CKD (eGFR 24 mL/min/1.73 m2) on telmisartan attends routine follow-up. He is well, with no ECG changes, and his potassium is 6.2 mmol/L. He mentions the family recently switched to a low-sodium salt. What is the best management?",
+      options: [
+        "Ignore it, as he is asymptomatic with a normal ECG",
+        "Stop telmisartan permanently and never restart it",
+        "Stop the potassium-containing salt substitute and high-potassium foods, start a potassium binder, correct any acidosis, reduce rather than stop telmisartan, and recheck in 3-7 days",
+        "Give intravenous calcium gluconate and admit for dialysis",
+      ],
+      answer: 2,
+      explanation:
+        "Low-sodium salt is potassium chloride and is a common, easily missed cause of hyperkalaemia in Indian CKD patients, so the correct approach is to remove the potassium load, add a binder such as sodium zirconium cyclosilicate or patiromer, correct metabolic acidosis with sodium bicarbonate, keep RAAS blockade at a reduced dose because it protects the kidney and heart, and recheck within a week. Ignoring a potassium of 6.2 mmol/L is unsafe even with a normal ECG, since the ECG correlates poorly with the value. Stopping telmisartan permanently sacrifices proven renal and cardiovascular protection when the modifiable cause is dietary. Calcium gluconate and dialysis are for an ECG-positive or refractory emergency, not for a well outpatient with a correctable cause.",
+      difficulty: "moderate",
+    },
+    {
+      id: "renal-urology-hyponatraemia-hyperkalaemia-m4",
+      stem: "A 62-year-old man with type 2 diabetes presents with a random blood glucose of 720 mg/dL and a serum sodium of 126 mmol/L. What is the correct interpretation?",
+      options: [
+        "True hypotonic hyponatraemia requiring fluid restriction",
+        "Translocational hyponatraemia; the corrected sodium is about 136-141 mmol/L and the treatment is to correct the hyperglycaemia",
+        "Pseudohyponatraemia from hyperlipidaemia; no action is needed",
+        "SIADH secondary to diabetes",
+      ],
+      answer: 1,
+      explanation:
+        "Hyperglycaemia draws water out of cells and dilutes the serum sodium, producing hypertonic or translocational hyponatraemia; adding 1.6-2.4 mmol/L for each 100 mg/dL of glucose above 100 mg/dL gives a corrected sodium of roughly 136-141 mmol/L, so there is no true sodium disorder and the treatment is insulin and fluid for the hyperglycaemia. Calling it hypotonic hyponatraemia and restricting fluid would be actively harmful in a patient who is osmotically diuresing and volume depleted. Pseudohyponatraemia is a laboratory artefact of severe hyperlipidaemia or hyperproteinaemia with a normal measured osmolality, which does not apply here. SIADH requires euvolaemia, a low serum osmolality and inappropriately concentrated urine, none of which fits a hyperosmolar hyperglycaemic state.",
+      difficulty: "easy",
+    },
+    {
+      id: "renal-urology-hyponatraemia-hyperkalaemia-m5",
+      stem: "A 40-year-old man in acute kidney injury has a potassium of 7.1 mmol/L with a widened QRS on the ECG. Which drug should be given first, and what will it do to the serum potassium?",
+      options: [
+        "Insulin with dextrose; it will lower potassium by 0.6-1.2 mmol/L in 15-30 minutes",
+        "Calcium gluconate; it will not change the serum potassium at all but protects the myocardium within 1-3 minutes",
+        "Nebulised salbutamol; it will lower potassium by 0.5-1.0 mmol/L in 30 minutes",
+        "Sodium polystyrene sulphonate; it will remove potassium through the gut",
+      ],
+      answer: 1,
+      explanation:
+        "With a widened QRS the immediate threat is a lethal arrhythmia, so the first drug is calcium gluconate, which antagonises the effect of potassium at the myocardial membrane within 1-3 minutes and lasts 30-60 minutes while doing nothing to the serum potassium - and knowing that it does not lower potassium is the point of the question, because it must always be followed by shifting and removal. Insulin-dextrose and salbutamol both shift potassium into cells and are given next, but they take 15-30 minutes, which is too slow to be first when the QRS is already wide. Sodium polystyrene sulphonate acts over many hours, is poorly supported by evidence, and carries a risk of intestinal necrosis, so it is never the first step in an emergency.",
+      difficulty: "easy",
+    },
+  ],
+  cards: [
+    {
+      id: "renal-urology-hyponatraemia-hyperkalaemia-c1",
+      front: "The three-step approach to hyponatraemia.",
+      back: "Step 1: serum osmolality (hypotonic below 275 mOsm/kg is the only true hyponatraemia). Step 2: volume status. Step 3: spot urine sodium and urine osmolality, taken before any fluid or diuretic.",
+    },
+    {
+      id: "renal-urology-hyponatraemia-hyperkalaemia-c2",
+      front: "Diagnostic criteria for SIADH.",
+      back: "Serum osmolality below 275 mOsm/kg; urine osmolality above 100 mOsm/kg; clinical euvolaemia; urine sodium above 30-40 mmol/L on normal intake; normal thyroid, adrenal and renal function with no diuretic. Low uric acid and low urea support it.",
+    },
+    {
+      id: "renal-urology-hyponatraemia-hyperkalaemia-c3",
+      front: "Maximum safe rate of sodium correction.",
+      back: "No more than 8-10 mmol/L in 24 hours and 18 mmol/L in 48 hours; only 4-6 mmol/L in 24 hours if sodium is below 105 mmol/L or the patient is alcoholic, malnourished, hypokalaemic, has liver disease or is elderly.",
+    },
+    {
+      id: "renal-urology-hyponatraemia-hyperkalaemia-c4",
+      front: "Treatment of severe symptomatic hyponatraemia, and the rescue for overcorrection.",
+      back: "3% hypertonic saline 100-150 mL IV over 10-20 minutes, repeated up to three times, until symptoms improve or sodium rises by 4-6 mmol/L. If overcorrected: stop saline, give 5% dextrose 3 mL/kg/h plus desmopressin 2 micrograms IV.",
+    },
+    {
+      id: "renal-urology-hyponatraemia-hyperkalaemia-c5",
+      front: "Correcting sodium for hyperglycaemia.",
+      back: "Add 1.6-2.4 mmol/L to the measured sodium for every 100 mg/dL that glucose exceeds 100 mg/dL. Treat the glucose, not the sodium.",
+    },
+    {
+      id: "renal-urology-hyponatraemia-hyperkalaemia-c6",
+      front: "ECG sequence in hyperkalaemia.",
+      back: "Tall peaked narrow-based T waves, then flat or absent P waves with a long PR, then a widening QRS, then a sine wave, then ventricular fibrillation or asystole. A normal ECG does not exclude danger.",
+    },
+    {
+      id: "renal-urology-hyponatraemia-hyperkalaemia-c7",
+      front: "The three-stage order of hyperkalaemia treatment.",
+      back: "1. Stabilise: calcium gluconate 10 mL of 10% IV. 2. Shift: insulin 10 units with 25 g dextrose, plus salbutamol 10-20 mg nebulised. 3. Remove: furosemide, a potassium binder, or dialysis.",
+    },
+    {
+      id: "renal-urology-hyponatraemia-hyperkalaemia-c8",
+      front: "Hidden dietary and drug causes of hyperkalaemia in Indian practice.",
+      back: "Low-sodium salt substitutes (potassium chloride), coconut water, banana, citrus, tomato, potato, dry fruits and dates; and trimethoprim, NSAIDs, heparin, ACE inhibitors, ARBs, spironolactone and beta blockers.",
+    },
+  ],
+  references: [
+    "European Society of Endocrinology, ESICM and ERA-EDTA Clinical Practice Guideline on Diagnosis and Treatment of Hyponatraemia, 2014",
+    "Expert panel recommendations on the diagnosis and treatment of hyponatraemia, American Journal of Medicine, 2013",
+    "KDIGO Controversies Conference on Potassium Management in Kidney Disease, Kidney International, 2020",
+    "European Resuscitation Council Guidelines 2021 - cardiac arrest in special circumstances, electrolyte abnormalities",
+    "Harrison's Principles of Internal Medicine, 21st edition, 2022 - fluid and electrolyte disturbances",
+    "Brenner and Rector's The Kidney, 11th edition, 2019 - disorders of sodium and potassium balance",
+  ],
+});
+
 const cases: ClinicalCase[] = [
   {
     id: "renal-urology-case-1",

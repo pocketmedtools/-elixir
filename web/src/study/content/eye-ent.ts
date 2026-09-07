@@ -1860,6 +1860,883 @@ topics.push({
 });
 
 
+topics.push({
+  id: "eye-ent-refractive-error",
+  title: "Refractive error, vision screening and presbyopia, with the National Programme for Control of Blindness",
+  oneLiner:
+    "Uncorrected refractive error is the commonest cause of visual impairment and the second commonest cause of blindness in India, and it is entirely correctable, so the family physician's job is to measure vision with a Snellen chart and pinhole, recognise myopia, hypermetropia, astigmatism and presbyopia, screen children and drivers at the right ages, and use the free spectacle and school eye health provisions of the National Programme for Control of Blindness and Visual Impairment.",
+  frequency: "common",
+  keywords: [
+    "refractive error",
+    "myopia",
+    "hypermetropia",
+    "astigmatism",
+    "presbyopia",
+    "Snellen chart",
+    "pinhole test",
+    "visual acuity",
+    "amblyopia",
+    "school eye screening",
+    "NPCBVI",
+    "vision 2020",
+    "spectacles",
+    "cycloplegic refraction",
+    "low vision",
+    "RBSK",
+  ],
+  sections: [
+    {
+      heading: "The size of the problem and the definitions to quote",
+      points: [
+        "**Uncorrected refractive error is the leading cause of visual impairment worldwide and the second leading cause of blindness in India after cataract**; it is also the single most cost-effective condition to treat, since a pair of spectacles restores full function immediately.",
+        "**WHO/ICD-11 categories by presenting distance visual acuity in the better eye: mild impairment worse than 6/12 to 6/18; moderate worse than 6/18 to 6/60; severe worse than 6/60 to 3/60; blindness worse than 3/60**. Near vision impairment is near acuity worse than N6 or M0.8 at 40 cm with existing correction.",
+        "**India's own National Programme definition of blindness was revised in 2017 to presenting visual acuity less than 3/60 in the better eye, in line with WHO**, replacing the earlier definition of less than 6/60, and this change is a favourite short-note question.",
+        "**Presenting visual acuity means the acuity with whatever correction the patient walks in with** - this is the measure that captures uncorrected refractive error, whereas best-corrected acuity hides it.",
+        "The **National Blindness and Visual Impairment Survey 2015-19** found the prevalence of blindness in those aged 50 years and above to be about **1.99%**, with **cataract responsible for roughly 66% and uncorrected refractive error for about 8% of blindness**, and refractive error the commonest cause of moderate visual impairment.",
+        "**Myopia is rising sharply in Indian urban schoolchildren** with increased near work and reduced outdoor time; **two hours of outdoor activity a day is the single best-evidenced preventive measure** and should be advised at every child health visit.",
+      ],
+    },
+    {
+      heading: "The refractive errors and how they present",
+      points: [
+        "**Myopia (short sight):** parallel rays focus in front of the retina because the eye is too long or the refractive power too high. The patient sees near objects clearly but distant ones blurred, screws up the eyes (the word myopia means to close the eye), sits close to the television or blackboard, and is corrected with a **concave (minus) lens**.",
+        "**High or pathological myopia (more than -6 dioptres or axial length over 26 mm) carries lifelong risk** of retinal detachment, lattice degeneration, myopic macular degeneration, posterior staphyloma and open-angle glaucoma, so these patients need annual dilated fundus examination, not just a new prescription.",
+        "**Hypermetropia (long sight):** rays focus behind the retina because the eye is too short; young patients compensate by accommodation, so they present with **eye strain, frontal headache after reading, intermittent blurring and convergent squint in children**, and are corrected with a **convex (plus) lens**.",
+        "**Uncorrected hypermetropia in a child is the classic cause of accommodative esotropia and of amblyopia**, and needs **cycloplegic refraction with atropine or cyclopentolate** because a child's accommodation masks the true error.",
+        "**Astigmatism:** the refracting surfaces have different curvatures in different meridians, so there is no single point focus; the patient reports distortion, tilting of letters, headache and difficulty with both distance and near, and is corrected with a **cylindrical lens**. Regular astigmatism is corrected with spectacles, irregular astigmatism (keratoconus, corneal scar) needs rigid contact lenses.",
+        "**Anisometropia** (a difference of 2 dioptres or more between the eyes) and **aniseikonia** cause suppression and **amblyopia in children**, which is why unequal vision in a child is always referred.",
+        "**Presbyopia** is the physiological loss of accommodation with age from lens hardening and ciliary muscle change, becoming symptomatic around **40 to 45 years** and progressing until about 60; it is corrected with **convex reading lenses, typically +1.00 D at 40-45 years, +1.50 D at 45-50, +2.00 D at 50-55 and +2.50 to +3.00 D beyond 60**.",
+      ],
+    },
+    {
+      heading: "Measuring vision properly in a primary care clinic",
+      points: [
+        "**Use a Snellen chart at 6 metres in good illumination, test each eye separately with the other properly occluded (palm, not fingers), and record the smallest line read** - for example 6/18 means the patient reads at 6 metres what a normal eye reads at 18 metres.",
+        "**The pinhole is the most useful instrument the family physician owns**: if acuity improves with a pinhole, the cause is refractive (or a media opacity that pinholing partly bypasses); if it does not improve, the cause lies in the media, retina or optic nerve and needs referral.",
+        "If the patient cannot read the top letter at 6 metres, walk them forward and record 5/60, 4/60 and so on; below that record **counting fingers, hand movements and perception of light with projection**, which are the terms an examiner expects.",
+        "**Test near vision separately with a near chart (N notation) at 40 cm with reading correction**; a patient with good distance vision but poor near vision after 40 years has presbyopia.",
+        "For **illiterate patients and young children** use the **Tumbling E, Landolt C, Sheridan Gardiner (SG) or Lea symbols chart**; for infants assess **fixation and following, the Bruckner red reflex test, and Hirschberg corneal light reflex for squint**.",
+        "**Always test with existing spectacles on (presenting acuity) and then with pinhole**, and record both - the difference is the burden of uncorrected refractive error that the programme is designed to remove.",
+        "**Do not prescribe glasses from a trial in a child without cycloplegia**; refer for cycloplegic refraction, because accommodation makes hypermetropia look like emmetropia.",
+      ],
+    },
+    {
+      heading: "Vision screening across the life course",
+      points: [
+        "**Newborn and infancy:** red reflex (Bruckner) test at birth, at 6 to 8 weeks and at each immunisation visit - **absence or a white reflex (leukocoria) means urgent referral for retinoblastoma, congenital cataract or retinopathy of prematurity**. Screen preterm infants born under 34 weeks or under 2000 g for **retinopathy of prematurity at 4 weeks of age or 31 weeks post-menstrual age, whichever is later**.",
+        "**Preschool (3 to 5 years):** visual acuity with picture or symbol charts, cover test for squint, and referral for any acuity worse than 6/9 or a two-line difference between the eyes, because **amblyopia treatment is most effective before 7 to 8 years and is largely ineffective after the visual system matures**.",
+        "**School age:** the **School Eye Screening Programme under NPCBVI trains teachers to screen children with a 6/9 Snellen cut-off**; children failing are referred to an optometrist, and **free spectacles are provided to children from government and government-aided schools**. **Rashtriya Bal Swasthya Karyakram (RBSK)** provides 4Ds screening (defects at birth, deficiencies, diseases, developmental delays) including vision, through mobile health teams.",
+        "**Adults:** opportunistic testing of acuity at any clinic visit for headache, poor school or work performance, or a fall; **from 40 years, screening for presbyopia, glaucoma and diabetic retinopathy** should be offered, and **every person with diabetes needs a dilated retinal examination at diagnosis and then annually**.",
+        "**Drivers:** Indian licensing requires adequate distance vision and colour vision; a family physician asked to certify must test acuity with correction, test colour vision with Ishihara plates, and assess visual fields by confrontation - **a patient with acuity worse than 6/12 in the better eye or a significant field defect should not drive until formally assessed**.",
+        "**Elderly:** annual vision check, with attention to **cataract, presbyopia, glaucoma, age-related macular degeneration and the contribution of poor vision to falls and hip fracture**; correcting vision is a falls-prevention intervention.",
+      ],
+    },
+    {
+      heading: "Correction, counselling and the errors that get made",
+      points: [
+        "**Spectacles remain the mainstay**: they are cheap, safe and reversible. Explain that the first few days of a new astigmatic or bifocal prescription bring distortion and that the patient must not abandon them; **bifocals and progressives increase the risk of falls in the elderly on stairs**, so single-vision distance glasses for walking are safer in a frail patient.",
+        "**Contact lenses** need explicit hygiene teaching: never use tap water, never sleep in daily-wear lenses, replace the case regularly, and **remove the lens and seek care the same day for a red or painful eye** - contact lens related microbial keratitis is a preventable cause of corneal blindness.",
+        "**Refractive surgery (LASIK, PRK, SMILE, phakic IOL)** requires stable refraction for at least a year, age usually over 18, adequate corneal thickness and no keratoconus or dry eye; it corrects the refraction but does not remove the retinal risks of high myopia.",
+        "**Presbyopia counselling:** it is physiological, it will progress until around 60, and near-add strength must be reviewed every 2 to 3 years. **Sudden improvement in near vision in an elderly patient - second sight - suggests a nuclear sclerotic cataract**, not recovery.",
+        "**Low vision care** is part of the programme: when the best corrected acuity remains poor, refer for magnifiers, telescopes, high-contrast reading material, good task lighting, large-print books and, in India, **certification of disability, which entitles the person to concessions, reservations and pensions**.",
+        "Common errors to avoid: prescribing glasses without a pinhole test, treating headache with reading glasses when the cause is uncorrected hypermetropia or glaucoma, missing amblyopia because only one eye is bad and the child never complains, and **assuming that failing vision in a diabetic is simply refractive - hyperglycaemia itself causes transient refractive shift, so refraction should be deferred until glycaemia is stable**.",
+      ],
+    },
+    {
+      heading: "The National Programme for Control of Blindness and Visual Impairment",
+      points: [
+        "The **National Programme for Control of Blindness was launched in 1976 as the first fully centrally sponsored health programme in India, with the goal of reducing blindness prevalence**; it was renamed the **National Programme for Control of Blindness and Visual Impairment (NPCBVI) in 2017**, when the definition of blindness was aligned with WHO at presenting acuity less than 3/60.",
+        "**Original goal: reduce blindness prevalence from 1.4% to 0.3%.** The programme's current targets follow **VISION 2020: The Right to Sight** and the WHO World Report on Vision, emphasising integrated people-centred eye care.",
+        "**Priority conditions:** cataract (the largest component, funded through free cataract surgery with intraocular lens implantation), **uncorrected refractive error including school eye screening and free spectacles**, glaucoma, diabetic retinopathy, childhood blindness including vitamin A deficiency and retinopathy of prematurity, corneal blindness and eye banking, and low vision services.",
+        "**Structure:** a National Programme Management Cell, State Blindness Control Societies and District Blindness Control Societies, with service delivery through medical colleges, district hospitals, **Vision Centres at the primary level**, NGOs and private partners under public-private partnership.",
+        "Key activities the examiner expects listed: **cataract surgery with IOL (the cataract surgical rate and cataract surgical coverage are the indicators), school eye screening with free spectacles, eye donation and corneal transplantation targets, Vision Centres providing refraction, training of ophthalmic assistants and optometrists, and IEC activities including eye donation fortnight**.",
+        "**Vitamin A prophylaxis** under the child health programme is a related blindness-prevention measure: **100,000 IU at 9 months with measles vaccination, then 200,000 IU every 6 months up to 5 years**, a total of nine doses.",
+        "The family physician's contribution is **detection and referral, not surgery**: measure presenting acuity, do a pinhole, identify operable cataract and refer, screen every diabetic for retinopathy, screen children at school entry, and use the programme's free spectacle and free surgery provisions actively.",
+      ],
+    },
+  ],
+  tables: [
+    {
+      heading: "Refractive errors at a glance",
+      columns: ["Error", "Where the image falls", "Typical symptoms", "Correcting lens"],
+      rows: [
+        ["Myopia", "In front of the retina", "Blurred distance vision, screwing up the eyes, sitting close to the board", "Concave (minus) spherical lens"],
+        ["Hypermetropia", "Behind the retina", "Eye strain, frontal headache after reading, blurring for near, convergent squint in children", "Convex (plus) spherical lens"],
+        ["Astigmatism", "No single point focus; two focal lines", "Distortion, tilted letters, headache, blur at all distances", "Cylindrical lens (rigid contact lens if irregular)"],
+        ["Presbyopia", "Loss of accommodative amplitude", "Holding print further away, difficulty reading in dim light, after age 40", "Convex reading addition, +1.00 D to +3.00 D by age"],
+        ["Anisometropia", "Unequal refraction in the two eyes", "Asymptomatic in children; suppression and amblyopia", "Spectacles or contact lenses; refer children promptly"],
+      ],
+    },
+    {
+      heading: "Visual impairment categories (WHO, presenting acuity in the better eye)",
+      columns: ["Category", "Presenting distance visual acuity"],
+      rows: [
+        ["Normal or near normal vision", "6/12 or better"],
+        ["Mild visual impairment", "Worse than 6/12 to 6/18"],
+        ["Moderate visual impairment", "Worse than 6/18 to 6/60"],
+        ["Severe visual impairment", "Worse than 6/60 to 3/60"],
+        ["Blindness", "Worse than 3/60 (India adopted this definition in 2017)"],
+        ["Near vision impairment", "Near acuity worse than N6 at 40 cm with existing correction"],
+      ],
+    },
+    {
+      heading: "Vision screening schedule for family practice",
+      columns: ["Age", "What to do", "Refer if"],
+      rows: [
+        ["Newborn and 6-8 weeks", "Red reflex (Bruckner) test, external inspection", "Absent or white reflex, corneal haze, persistent watering, nystagmus"],
+        ["Preterm under 34 weeks or under 2000 g", "Retinopathy of prematurity screening at 4 weeks of age or 31 weeks post-menstrual age, whichever is later", "Any screening abnormality; ensure the first screen is never missed"],
+        ["3-5 years", "Picture or Tumbling E acuity, cover test, Hirschberg test", "Acuity worse than 6/9, two-line difference between eyes, any squint"],
+        ["School entry and school years", "Teacher-led screening with 6/9 Snellen cut-off under NPCBVI", "Failure of screening - refer for refraction and free spectacles"],
+        ["Adults 18-40", "Opportunistic acuity with pinhole when symptomatic; driver certification", "No pinhole improvement, or acuity worse than 6/12 in the better eye"],
+        ["40 years and above", "Presbyopic near add, glaucoma risk assessment, intraocular pressure where available", "Family history of glaucoma, disc cupping, field defect"],
+        ["Every person with diabetes", "Dilated fundus examination at diagnosis then annually", "Any retinopathy, or unexplained visual drop"],
+      ],
+    },
+    {
+      heading: "Presbyopic near addition by age",
+      columns: ["Age (years)", "Usual near addition"],
+      rows: [
+        ["40-45", "+1.00 D"],
+        ["45-50", "+1.50 D"],
+        ["50-55", "+2.00 D"],
+        ["55-60", "+2.50 D"],
+        ["Over 60", "+2.50 to +3.00 D (rarely more)"],
+      ],
+    },
+  ],
+  redFlags: [
+    "Leukocoria (a white pupillary reflex) or an absent red reflex in a child - retinoblastoma, congenital cataract or retinal detachment; refer the same week, and same day if suspicion is high.",
+    "Sudden painless loss of vision at any age - retinal artery or vein occlusion, retinal detachment, vitreous haemorrhage or optic neuritis; refer immediately, not for refraction.",
+    "Visual acuity that does not improve with a pinhole - the problem is in the media, retina or optic nerve, and spectacles will not help.",
+    "Flashes, floaters or a curtain over part of the field, especially in high myopia - retinal detachment; same-day ophthalmology referral.",
+    "New squint or diplopia in a child or adult - cranial nerve palsy, raised intracranial pressure, myasthenia or orbital disease; never simply prescribe glasses.",
+    "Headache with vomiting and blurred vision with a large cup-to-disc ratio or a hard eye - glaucoma or raised intracranial pressure rather than refractive error.",
+    "Progressive visual loss in a child with a two-line difference between the eyes - amblyopia; refer before 7-8 years, after which treatment largely fails.",
+  ],
+  pearls: [
+    "Presenting visual acuity, not best-corrected acuity, is what the blindness programme measures - it is the only figure that reveals uncorrected refractive error.",
+    "The pinhole is the cheapest diagnostic test in ophthalmology: improvement means refractive, no improvement means refer.",
+    "A child never complains of one bad eye - amblyopia is found only by screening, and only treatable before about 8 years.",
+    "Never refract a child without cycloplegia; accommodation hides hypermetropia and produces an under-correction that perpetuates squint.",
+    "Sudden improvement of near vision in an elderly patient - second sight - is a nuclear cataract, not a blessing.",
+    "Two hours of outdoor play a day slows the progression of childhood myopia; near-work restriction alone does not.",
+    "Blindness in India is now defined as presenting acuity worse than 3/60 in the better eye, changed from 6/60 in 2017.",
+    "Do not refract a diabetic whose sugars have recently swung - hyperglycaemia causes a transient refractive shift and the prescription will be wrong.",
+  ],
+  theory: [
+    {
+      id: "eye-ent-refractive-error-t1",
+      paper: "III",
+      kind: "long",
+      marks: 10,
+      minutes: 20,
+      frequency: "common",
+      question:
+        "Discuss the National Programme for Control of Blindness and Visual Impairment in India: its objectives, components and current strategies, and describe the role of the family physician in the control of avoidable blindness.",
+      openingLines: [
+        "The National Programme for Control of Blindness was launched in 1976 as the first fully centrally sponsored health programme in India, with the objective of reducing the prevalence of blindness from 1.4% to 0.3%.",
+        "It was renamed the National Programme for Control of Blindness and Visual Impairment in 2017, when the Indian definition of blindness was aligned with the WHO definition of presenting visual acuity worse than 3/60 in the better eye, and it now follows the VISION 2020 and WHO World Report on Vision framework of integrated people-centred eye care.",
+      ],
+      answer: [
+        {
+          heading: "1. Magnitude of the problem",
+          points: [
+            "The National Blindness and Visual Impairment Survey 2015-19 found blindness prevalence of about 1.99% in those aged 50 years and above.",
+            "Cataract accounts for about 66% of blindness and uncorrected refractive error for about 8%; refractive error is the commonest cause of moderate visual impairment.",
+            "About 80% of global blindness is avoidable - either preventable or treatable - which is the justification for a national programme.",
+          ],
+        },
+        {
+          heading: "2. Objectives",
+          points: [
+            "To reduce the prevalence of blindness and visual impairment through the provision of comprehensive universal eye care services.",
+            "To develop and strengthen eye care infrastructure and human resources at all levels, including Vision Centres at the primary level.",
+            "To increase and expand research into the causes of blindness, and to secure participation of voluntary organisations and the private sector.",
+            "To enhance community awareness of eye care and increase the uptake of services, particularly by women, the elderly and the rural poor.",
+          ],
+        },
+        {
+          heading: "3. Components and priority conditions",
+          points: [
+            "Cataract: free cataract surgery with intraocular lens implantation, monitored by the cataract surgical rate and cataract surgical coverage.",
+            "Uncorrected refractive error: school eye screening with teacher training, free spectacles to children of government and government-aided schools, and refraction services at Vision Centres.",
+            "Glaucoma and diabetic retinopathy screening, integrated with the non-communicable disease programme.",
+            "Childhood blindness: vitamin A prophylaxis, retinopathy of prematurity screening, and management of congenital cataract and squint.",
+            "Corneal blindness: eye banking, eye donation promotion and keratoplasty targets.",
+            "Low vision services, rehabilitation and disability certification.",
+          ],
+        },
+        {
+          heading: "4. Organisational structure and delivery",
+          points: [
+            "National Programme Management Cell at the centre, State Blindness Control Societies and District Blindness Control Societies.",
+            "Service delivery at medical colleges and regional institutes of ophthalmology, district hospitals with eye units, community health centres, and Vision Centres at the primary level staffed by ophthalmic assistants and optometrists.",
+            "Public-private partnership with NGOs and private hospitals for surgical camps and outreach, with fixed grant-in-aid per surgery.",
+            "Information, education and communication activities including the annual eye donation fortnight from 25 August to 8 September.",
+          ],
+        },
+        {
+          heading: "5. Role of the family physician",
+          points: [
+            "Measure presenting visual acuity with a Snellen chart and a pinhole at any clinic visit for headache, poor school performance, falls or driving certification.",
+            "Detect and refer operable cataract, and counsel about free surgery under the programme with realistic expectations of outcome.",
+            "Screen every person with diabetes for retinopathy at diagnosis and annually, and refer for laser or anti-VEGF treatment when indicated.",
+            "Perform the red reflex test in every newborn and infant, arrange retinopathy of prematurity screening for eligible preterm babies, and refer any child with squint, leukocoria or a two-line difference in acuity before the age of 7-8 years.",
+            "Prescribe or refer for spectacles including presbyopic correction, and counsel on outdoor time in children to slow myopia progression.",
+            "Deliver vitamin A prophylaxis, immunise against measles and rubella, and identify and refer for low vision aids and disability certification.",
+            "Maintain a register of the visually impaired in the practice population and follow them up - continuity of care is the family physician's unique contribution.",
+          ],
+        },
+      ],
+      mustDraw: [
+        "An organogram of NPCBVI from the National Programme Management Cell through State and District Blindness Control Societies to district hospitals, community health centres and Vision Centres.",
+        "A pie chart of the causes of blindness in India from the 2015-19 survey - cataract about 66%, uncorrected refractive error about 8%, glaucoma, corneal opacity and posterior segment disease making up the rest.",
+      ],
+      markSplit: [
+        { part: "Magnitude and definitions including the 2017 change", marks: 2 },
+        { part: "Objectives of the programme", marks: 2 },
+        { part: "Components and priority conditions", marks: 2 },
+        { part: "Organisational structure and delivery", marks: 2 },
+        { part: "Role of the family physician", marks: 2 },
+      ],
+      keywords: ["NPCBVI", "blindness", "cataract surgical rate", "school eye screening", "VISION 2020"],
+    },
+    {
+      id: "eye-ent-refractive-error-t2",
+      paper: "III",
+      kind: "short-note",
+      marks: 5,
+      minutes: 10,
+      frequency: "common",
+      question: "Write short notes on presbyopia: mechanism, clinical features, correction and counselling, and how it differs from hypermetropia.",
+      openingLines: [
+        "Presbyopia is the physiological, age-related loss of accommodative amplitude that makes near work difficult, resulting from hardening of the crystalline lens, loss of lens elasticity and changes in ciliary muscle and zonular function.",
+        "It is universal, begins to be symptomatic at about 40-45 years, progresses until around 60 years, and is the commonest cause of near vision impairment worldwide.",
+      ],
+      answer: [
+        {
+          heading: "Mechanism",
+          points: [
+            "Accommodation depends on the elasticity of the lens and the contraction of the ciliary muscle; the amplitude of accommodation falls from about 14 dioptres in childhood to under 2 dioptres by age 50.",
+            "When the remaining amplitude cannot sustain comfortable focus at the habitual working distance of 33-40 cm, symptoms begin.",
+            "Onset is earlier in hypermetropes, in those doing fine near work, in poor illumination, and in patients on anticholinergic drugs; it is later in myopes, who may read comfortably without glasses by removing their distance correction.",
+          ],
+        },
+        {
+          heading: "Clinical features",
+          points: [
+            "Difficulty reading small print, holding the newspaper further away, needing brighter light, and blurring after sustained near work.",
+            "Asthenopic symptoms: frontal headache, eye ache, watering and drowsiness after reading.",
+            "Distance vision is unaffected, and near acuity improves with a plus lens - which is the diagnostic step.",
+          ],
+        },
+        {
+          heading: "Correction",
+          points: [
+            "Convex (plus) reading addition determined by age and working distance: about +1.00 D at 40-45 years, +1.50 D at 45-50, +2.00 D at 50-55, +2.50 D at 55-60 and up to +3.00 D beyond 60.",
+            "Options: separate reading glasses, bifocals, trifocals, progressive addition lenses, monovision contact lenses, and multifocal intraocular lenses at the time of cataract surgery.",
+            "Counsel that the addition will need revision every 2-3 years until about 60, and that presbyopia is physiological and not a disease.",
+            "Warn elderly patients that bifocals and progressives increase the risk of falls on stairs, and provide separate single-vision distance glasses for walking in frail patients.",
+          ],
+        },
+        {
+          heading: "Presbyopia versus hypermetropia",
+          points: [
+            "Presbyopia is an accommodative failure of age with a normal axial length; hypermetropia is a refractive error in which the eye is too short or too weak and is present from childhood.",
+            "In presbyopia distance vision is normal and only near vision is affected; in hypermetropia both may be affected, and the young hypermetrope compensates by accommodating.",
+            "Presbyopia needs a near addition only; hypermetropia needs a plus lens for distance as well, and in children requires cycloplegic refraction because accommodation masks the error.",
+            "Sudden improvement of near vision in an elderly presbyope - second sight - signals nuclear sclerotic cataract and needs assessment, not a weaker reading glass.",
+          ],
+        },
+      ],
+      mustDraw: [
+        "A table of near addition against age, and a simple ray diagram showing the near image falling behind the retina in presbyopia and its correction by a convex lens.",
+      ],
+      markSplit: [
+        { part: "Definition and mechanism", marks: 1.5 },
+        { part: "Clinical features", marks: 1 },
+        { part: "Correction with near addition by age and counselling", marks: 1.5 },
+        { part: "Differentiation from hypermetropia", marks: 1 },
+      ],
+      keywords: ["presbyopia", "accommodation", "near addition", "second sight", "hypermetropia"],
+    },
+  ],
+  mcqs: [
+    {
+      id: "eye-ent-refractive-error-q1",
+      stem: "A 26-year-old man reads 6/36 with each eye. With a pinhole, acuity improves to 6/9 in both eyes. What does this indicate?",
+      options: [
+        "Bilateral optic neuritis",
+        "Uncorrected refractive error, correctable with spectacles",
+        "Early bilateral cataract requiring surgery",
+        "Macular degeneration",
+        "Functional (non-organic) visual loss",
+      ],
+      answer: 1,
+      explanation:
+        "Improvement of acuity with a pinhole means the blur is optical - light rays are being focused incorrectly - which in a 26-year-old is uncorrected refractive error correctable by spectacles. Optic neuritis, macular degeneration and any retinal or neural cause do not improve with a pinhole, because the pinhole only narrows the beam and cannot repair a damaged pathway. Cataract may improve slightly with a pinhole but is very unusual at 26 and would show lens opacity on red reflex testing. Functional visual loss characteristically shows inconsistent responses rather than a clean two-fold improvement with a pinhole.",
+      difficulty: "easy",
+    },
+    {
+      id: "eye-ent-refractive-error-q2",
+      stem: "A 5-year-old girl is found on school screening to see 6/6 with the right eye and 6/24 with the left. There is no squint and the eyes look normal. What is the correct action?",
+      options: [
+        "Reassure and repeat the test in one year",
+        "Prescribe reading glasses from a trial frame in the clinic",
+        "Refer for cycloplegic refraction and amblyopia assessment now",
+        "Advise patching of the left eye at home for two hours a day",
+        "Order an MRI of the brain and orbits",
+      ],
+      answer: 2,
+      explanation:
+        "A two-line difference between the eyes in a young child is anisometropic amblyopia until proved otherwise, and treatment - refractive correction followed by patching or atropine penalisation - works only while the visual system is plastic, up to about 7-8 years, so referral for cycloplegic refraction should be immediate. Waiting a year wastes the treatable window. Prescribing from a non-cycloplegic trial in a child under-corrects hypermetropia because accommodation masks it. Patching the amblyopic left eye would be the wrong eye and would in any case be started only after refractive correction and specialist assessment. MRI is not indicated when the eyes are structurally normal and there are no neurological signs.",
+      difficulty: "moderate",
+    },
+    {
+      id: "eye-ent-refractive-error-q3",
+      stem: "According to the revised Indian definition adopted in 2017, blindness is defined as:",
+      options: [
+        "Best corrected visual acuity worse than 6/60 in the better eye",
+        "Presenting visual acuity worse than 6/60 in the better eye",
+        "Presenting visual acuity worse than 3/60 in the better eye",
+        "Best corrected visual acuity worse than 3/60 in the worse eye",
+        "Inability to count fingers at 3 metres in either eye",
+      ],
+      answer: 2,
+      explanation:
+        "India revised its definition in 2017 to presenting visual acuity worse than 3/60 in the better eye, aligning with the WHO and ICD definition and replacing the older Indian threshold of 6/60. Using best corrected acuity would conceal exactly the uncorrected refractive error the programme aims to measure and treat, so the two best-corrected options are wrong in principle as well as in threshold. The 6/60 presenting figure is the superseded Indian definition. Defining blindness by the worse eye would classify a person with one good eye as blind, which no classification does.",
+      difficulty: "easy",
+    },
+    {
+      id: "eye-ent-refractive-error-q4",
+      stem: "A 62-year-old woman who has worn +2.00 D reading glasses for years now reports she can read the newspaper without them, though distance vision has become hazy. What is the most likely explanation?",
+      options: [
+        "Reversal of presbyopia with age",
+        "Nuclear sclerotic cataract producing an index myopic shift (second sight)",
+        "Development of hypermetropia",
+        "Early age-related macular degeneration",
+        "Improvement following better diabetic control",
+      ],
+      answer: 1,
+      explanation:
+        "A nuclear sclerotic cataract increases the refractive index of the lens nucleus, producing an index myopic shift that improves near vision while distance vision deteriorates - the phenomenon called second sight - and it needs assessment for cataract, not a weaker reading glass. Presbyopia does not reverse; accommodation continues to decline with age. New hypermetropia would worsen near vision, not improve it. Macular degeneration impairs central vision for both distance and near and would never restore unaided reading. Improved glycaemic control can shift refraction transiently, but the direction is variable and it does not typically produce this classic pattern with progressive distance haze.",
+      difficulty: "moderate",
+    },
+    {
+      id: "eye-ent-refractive-error-q5",
+      stem: "Which of the following is the correct schedule for the first retinopathy of prematurity screening examination in an infant born at 30 weeks gestation?",
+      options: [
+        "At discharge from the neonatal unit, whenever that occurs",
+        "At 4 weeks of chronological age or 31 weeks post-menstrual age, whichever is later",
+        "At 3 months of age at the immunisation visit",
+        "Only if the baby received supplemental oxygen",
+        "At 6 weeks along with the red reflex test",
+      ],
+      answer: 1,
+      explanation:
+        "Screening for retinopathy of prematurity is done at 4 weeks of chronological age or 31 weeks post-menstrual age, whichever is later, in babies born under 34 weeks or weighing under 2000 g, because this is when treatable disease first becomes detectable and before it progresses to retinal detachment. Waiting for discharge is unreliable, as babies may be discharged before or long after the critical window. Three months and six weeks are both too late for many infants and risk irreversible blindness. Restricting screening to oxygen-exposed babies misses disease, since prematurity and low birth weight are themselves the primary risk factors in Indian units.",
+      difficulty: "moderate",
+    },
+  ],
+  cards: [
+    {
+      id: "eye-ent-refractive-error-c1",
+      front: "What does improvement of vision with a pinhole tell you?",
+      back: "The cause is refractive (or partly a media opacity); if there is no improvement, the problem lies in the media, retina or optic nerve and needs referral.",
+    },
+    {
+      id: "eye-ent-refractive-error-c2",
+      front: "WHO categories of visual impairment by presenting acuity in the better eye.",
+      back: "Mild worse than 6/12 to 6/18; moderate worse than 6/18 to 6/60; severe worse than 6/60 to 3/60; blindness worse than 3/60.",
+    },
+    {
+      id: "eye-ent-refractive-error-c3",
+      front: "Indian definition of blindness and when it changed.",
+      back: "Presenting visual acuity worse than 3/60 in the better eye, adopted in 2017 when NPCB was renamed NPCBVI; it replaced the earlier 6/60 threshold.",
+    },
+    {
+      id: "eye-ent-refractive-error-c4",
+      front: "Correcting lenses for the three refractive errors.",
+      back: "Myopia - concave (minus) lens; hypermetropia - convex (plus) lens; astigmatism - cylindrical lens (rigid contact lens if irregular).",
+    },
+    {
+      id: "eye-ent-refractive-error-c5",
+      front: "Presbyopic near addition by age.",
+      back: "+1.00 D at 40-45, +1.50 D at 45-50, +2.00 D at 50-55, +2.50 D at 55-60, up to +3.00 D beyond 60.",
+    },
+    {
+      id: "eye-ent-refractive-error-c6",
+      front: "Why must a child never be refracted without cycloplegia?",
+      back: "Active accommodation masks hypermetropia, producing an under-correction that perpetuates accommodative esotropia and amblyopia; use atropine or cyclopentolate.",
+    },
+    {
+      id: "eye-ent-refractive-error-c7",
+      front: "When is amblyopia treatable?",
+      back: "Best before 7-8 years while the visual system is plastic; screening at 3-5 years and at school entry exists precisely to find it in time.",
+    },
+    {
+      id: "eye-ent-refractive-error-c8",
+      front: "Year of launch and original goal of the National Programme for Control of Blindness.",
+      back: "Launched 1976 as India's first fully centrally sponsored health programme, aiming to reduce blindness prevalence from 1.4% to 0.3%; renamed NPCBVI in 2017.",
+    },
+    {
+      id: "eye-ent-refractive-error-c9",
+      front: "School Eye Screening Programme cut-off and entitlement.",
+      back: "Teachers screen with a 6/9 Snellen cut-off; children who fail are referred for refraction and receive free spectacles if they attend government or government-aided schools.",
+    },
+    {
+      id: "eye-ent-refractive-error-c10",
+      front: "Vitamin A prophylaxis schedule in India.",
+      back: "100,000 IU at 9 months with measles vaccination, then 200,000 IU every 6 months until 5 years - nine doses in all.",
+    },
+  ],
+  references: [
+    "AK Khurana, Theory and Practice of Optics and Refraction, 4th edition, 2019",
+    "AK Khurana, Comprehensive Ophthalmology, 8th edition, 2022",
+    "National Programme for Control of Blindness and Visual Impairment, operational guidelines, MoHFW, Government of India",
+    "National Blindness and Visual Impairment Survey India 2015-19, MoHFW and AIIMS",
+    "WHO World Report on Vision, 2019",
+    "Park's Textbook of Preventive and Social Medicine, 27th edition, 2023 - blindness and NPCBVI",
+    "Rashtriya Bal Swasthya Karyakram operational guidelines, MoHFW, 2013",
+  ],
+});
+
+
+topics.push({
+  id: "eye-ent-cataract-dr-glaucoma",
+  title: "Cataract, diabetic retinopathy screening and glaucoma detection - when the family physician refers",
+  oneLiner:
+    "Cataract, diabetic retinopathy and glaucoma are the three chronic blinding diseases the family physician is expected to detect rather than treat: cataract by a dimmed red reflex with vision that does not improve on pinhole and is referred when it interferes with the patient's own daily function, diabetic retinopathy by an annual dilated fundus examination from the time of diagnosis, and glaucoma by disc cupping, intraocular pressure and field testing in the at-risk - because in glaucoma the vision already lost can never be recovered.",
+  frequency: "common",
+  keywords: [
+    "cataract",
+    "phacoemulsification",
+    "intraocular lens",
+    "red reflex",
+    "diabetic retinopathy",
+    "maculopathy",
+    "anti-VEGF",
+    "panretinal photocoagulation",
+    "primary open angle glaucoma",
+    "cup disc ratio",
+    "intraocular pressure",
+    "timolol",
+    "latanoprost",
+    "visual field",
+    "NPCBVI",
+    "teleophthalmology",
+  ],
+  sections: [
+    {
+      heading: "Cataract: recognising it and deciding when to refer",
+      points: [
+        "**Cataract is any opacity of the crystalline lens** and remains the commonest cause of blindness in India, responsible for about **66% of blindness in those aged 50 and over** in the National Blindness and Visual Impairment Survey 2015-19; it is entirely curable by surgery.",
+        "Symptoms: **painless, gradual, progressive loss of vision, glare and haloes around headlights at night, monocular diplopia or polyopia, difficulty reading in bright light with nuclear cataract, and second sight - transient improvement in near vision from an index myopic shift**.",
+        "Bedside signs: **vision that does not improve with a pinhole, a dimmed or absent red reflex on distant direct ophthalmoscopy, a grey or white pupil in advanced disease, and an obscured fundus view**. The lens opacity is seen as a black shadow against the red reflex.",
+        "Causes to list: **age-related (senile) in the great majority; congenital and developmental (rubella, galactosaemia, hereditary); traumatic; complicated (uveitis, high myopia, retinitis pigmentosa); metabolic (diabetes, hypocalcaemia, Wilson disease); and drug-induced - corticosteroids causing posterior subcapsular cataract, and chlorpromazine, amiodarone and miotics**.",
+        "**Refer for surgery when the cataract interferes with the patient's own daily activities**, not at a fixed acuity: a driver or a tailor needs surgery earlier than a housebound elderly person. **Refer urgently for hypermature or intumescent cataract (risk of phacolytic or phacomorphic glaucoma), when the fundus cannot be seen in a diabetic, and for any child with leukocoria.**",
+        "**Modern surgery is small-incision phacoemulsification with a foldable intraocular lens, done under topical or peribulbar anaesthesia as a day procedure**; manual small incision cataract surgery (SICS) is the high-volume, low-cost technique used in Indian camps and district hospitals with comparable outcomes.",
+        "Counsel realistically: **spectacles will still be needed, particularly for reading, unless a multifocal lens is used**; posterior capsular opacification affects 10 to 30% within a few years and is treated with **Nd:YAG capsulotomy in the clinic, not repeat surgery**; and the eye must be reviewed urgently for pain with falling vision, which means endophthalmitis.",
+      ],
+    },
+    {
+      heading: "Diabetic retinopathy: why screening is the intervention",
+      points: [
+        "**Diabetic retinopathy is a microvascular complication whose early stages are entirely asymptomatic**, so it is found only by screening; by the time vision falls, sight-threatening disease is usually established.",
+        "Prevalence rises with duration: **nearly all patients with type 1 diabetes and more than 60% of those with type 2 have some retinopathy after 20 years**; Indian studies (CURES, SN-DREAMS) put the prevalence of any retinopathy in type 2 diabetes at roughly **17 to 18%**.",
+        "**Screening schedule: type 2 diabetes at the time of diagnosis and then annually; type 1 diabetes 5 years after diagnosis and then annually; pregnancy - screen in the first trimester and then each trimester and up to a year postpartum, because retinopathy can progress rapidly**. Gestational diabetes without pre-existing diabetes does not need retinal screening.",
+        "Screening method: **dilated fundus examination by an ophthalmologist or trained optometrist, or non-mydriatic fundus photography read remotely (teleophthalmology)**, which is being scaled up under NPCBVI and the NCD programme; direct ophthalmoscopy through an undilated pupil is not an adequate screening test and should not be claimed as one.",
+        "Classification to know: **non-proliferative (mild - microaneurysms only; moderate; severe - the 4-2-1 rule: haemorrhages in 4 quadrants, venous beading in 2, or intraretinal microvascular abnormalities in 1) and proliferative (new vessels at the disc or elsewhere, vitreous or preretinal haemorrhage, tractional detachment)**; diabetic macular oedema can occur at any stage and is the commonest cause of visual loss.",
+        "Treatment by stage: **glycaemic, blood pressure and lipid control at all stages; intravitreal anti-VEGF (ranibizumab, bevacizumab or aflibercept) for centre-involving macular oedema; focal or grid laser for non-centre-involving oedema; panretinal photocoagulation for proliferative disease; vitrectomy for non-clearing vitreous haemorrhage or tractional detachment**.",
+        "**Risk factor control is the family physician's part of the treatment**: HbA1c to individualised target, blood pressure below 140/90 (lower where tolerated), statin therapy, smoking cessation, and treatment of nephropathy and anaemia. **Rapid tightening of glycaemic control can transiently worsen retinopathy, so patients with advanced retinopathy should be co-managed with the ophthalmologist while HbA1c is lowered.**",
+      ],
+    },
+    {
+      heading: "Glaucoma: finding it before the field is lost",
+      points: [
+        "**Glaucoma is a progressive optic neuropathy with characteristic optic disc and retinal nerve fibre layer changes and corresponding visual field loss, in which raised intraocular pressure is the main modifiable risk factor** - the definition no longer requires raised pressure, and this matters because **normal-tension glaucoma is common in Indian eyes**.",
+        "**Primary open-angle glaucoma is painless and asymptomatic until late**: peripheral field loss progresses centripetally and central acuity is preserved until the end, so patients present with advanced disease. **The vision lost cannot be recovered - all treatment does is prevent further loss**, and this sentence must be said to every patient and written in every answer.",
+        "**Risk factors:** age over 40, **first-degree family history (risk increased 4 to 10 fold)**, raised intraocular pressure, high myopia, **African ancestry, diabetes, prolonged corticosteroid use (topical, inhaled, nasal or systemic), thin central cornea, and previous ocular trauma or uveitis**.",
+        "Detection in family practice: **examine the optic disc with a direct ophthalmoscope through a dilated pupil (unless the anterior chamber is shallow), looking for a cup-to-disc ratio of 0.6 or more, asymmetry of more than 0.2 between the eyes, notching or thinning of the neuroretinal rim, a nerve fibre layer defect, disc haemorrhage and nasal shift of the vessels**.",
+        "Measure **intraocular pressure where a tonometer is available (normal 10 to 21 mmHg)**, but remember that **about half of glaucoma patients have a pressure in the normal range at any single reading**, so a normal pressure does not exclude glaucoma and a raised pressure alone with normal disc and field is ocular hypertension.",
+        "**Refer for perimetry and gonioscopy** rather than starting treatment: field testing distinguishes glaucoma from ocular hypertension, and gonioscopy separates open-angle from angle-closure disease, which determines whether the treatment is a drop or a laser iridotomy.",
+        "First-line medical treatment is a **prostaglandin analogue - latanoprost 0.005% one drop at night** - which lowers pressure by 25 to 35%; alternatives are **timolol 0.5% twice daily (contraindicated in asthma, COPD, bradycardia and heart block), brimonidine 0.2% (avoid in infants), dorzolamide 2%** and fixed combinations. **Punctal occlusion for one minute after instillation reduces systemic absorption** and should be taught.",
+        "**Adherence is the whole battle in glaucoma**: a symptomless disease treated with an expensive daily drop that causes no perceptible benefit is abandoned by a third of patients within a year. The family physician's contribution is **adherence support, repeat prescriptions, checking technique, and screening the first-degree relatives, who should all be examined from the age of 40 or ten years earlier than the index case**.",
+      ],
+    },
+    {
+      heading: "The practical clinic examination for these three diseases",
+      points: [
+        "**Record presenting visual acuity and pinhole acuity in each eye** - a reduced acuity that improves with pinhole is refractive; one that does not needs a media, retinal or optic nerve cause found.",
+        "**Test the red reflex at arm's length with the ophthalmoscope set at +2 to +3 dioptres**: a dark shadow moving against the reflex is a lens or vitreous opacity; a dull reflex suggests cataract; a white reflex in a child is an emergency.",
+        "**Dilate the pupil with tropicamide 0.5 to 1% (one drop, effect in 20 to 30 minutes, wearing off in 4 to 6 hours) after excluding a shallow anterior chamber** by oblique torch illumination, and after warning the patient not to drive until the effect passes.",
+        "Systematic fundus examination: **disc (colour, margins, cup-to-disc ratio, rim, haemorrhage), vessels (arteriovenous nipping, venous beading, new vessels), background (microaneurysms, dot and blot haemorrhages, hard exudates, cotton wool spots) and macula (exudates within one disc diameter of the fovea, oedema)**.",
+        "**Confrontation field testing** at the bedside detects only gross defects but is free: compare each quadrant with your own field, one eye at a time, and use a red target to detect subtle central defects.",
+        "Document at every diabetes review: **acuity, date of the last retinal screen, HbA1c, blood pressure, lipids, renal function and foot examination** - a retinal screening date recorded in the chronic disease register is a system intervention, not a formality.",
+      ],
+    },
+    {
+      heading: "Programmes, teamwork and counselling",
+      points: [
+        "**NPCBVI funds free cataract surgery with intraocular lens implantation**, tracks the **cataract surgical rate (surgeries per million population per year, with a national target above 6000)** and **cataract surgical coverage**, and supports diabetic retinopathy and glaucoma screening integrated with the **National Programme for Prevention and Control of Non-Communicable Diseases** at Health and Wellness Centres.",
+        "**Vision Centres at the primary level** provide refraction, basic screening and referral, staffed by ophthalmic assistants and optometrists; teleophthalmology links them to base hospitals for image reading, and this model is the practical route to annual retinal screening in rural India.",
+        "Counselling for cataract surgery: **explain that surgery is day-care, that the eye is usually operated under local anaesthesia, that vision improves within days but glasses are usually still needed, that an existing retinal disease limits the result, and that pain with falling vision after surgery means returning immediately**.",
+        "Counselling for diabetic retinopathy: **screening is for life and does not stop when the sugars are good; laser treatment preserves vision but does not restore it and may reduce night and peripheral vision; and pregnancy needs additional screening**.",
+        "Counselling for glaucoma: **the drops must be continued lifelong even though they produce no felt benefit; latanoprost darkens the iris and lengthens lashes; timolol can worsen asthma and slow the pulse; and all siblings and children over 40 must be examined**.",
+        "**Comorbidity awareness:** a patient may have all three diseases at once, and in an eye with dense cataract the retina cannot be screened - so cataract surgery in a diabetic is both a visual and a diagnostic intervention, and every diabetic listed for cataract surgery should have retinal assessment as soon as the media clear.",
+      ],
+    },
+  ],
+  tables: [
+    {
+      heading: "Separating the three at the bedside",
+      columns: ["Feature", "Cataract", "Diabetic retinopathy", "Primary open-angle glaucoma"],
+      rows: [
+        ["Onset of symptoms", "Gradual painless blurring, glare, second sight", "None until maculopathy or haemorrhage", "None until advanced field loss"],
+        ["Pinhole", "Little or no improvement", "No improvement", "No improvement"],
+        ["Red reflex", "Dulled, with dark opacity shadows", "Normal until vitreous haemorrhage", "Normal"],
+        ["Disc", "Not visible if dense", "Normal, or new vessels on the disc", "Cup-to-disc 0.6 or more, rim notching, disc haemorrhage"],
+        ["Field", "Generalised blur", "Central loss with maculopathy", "Peripheral loss progressing centrally, central acuity spared until late"],
+        ["Key clinic test", "Red reflex and pinhole", "Dilated fundus examination or fundus photography", "Disc assessment, intraocular pressure, perimetry"],
+        ["Family physician's action", "Refer when function is impaired", "Screen annually from diagnosis, refer any retinopathy", "Screen the at-risk, refer for fields and gonioscopy, support adherence"],
+      ],
+    },
+    {
+      heading: "Diabetic retinopathy screening and referral intervals",
+      columns: ["Situation", "First screen", "Then", "Refer"],
+      rows: [
+        ["Type 2 diabetes", "At diagnosis", "Annually if no retinopathy", "Any retinopathy - to ophthalmology"],
+        ["Type 1 diabetes", "5 years after diagnosis (from age 10)", "Annually", "Any retinopathy"],
+        ["Pregnancy with pre-existing diabetes", "First trimester", "Each trimester and up to 12 months postpartum", "Any progression"],
+        ["Mild non-proliferative retinopathy", "-", "6-12 monthly review", "Routine ophthalmology review"],
+        ["Moderate to severe non-proliferative retinopathy", "-", "3-6 monthly", "Within weeks - risk of progression to proliferative disease"],
+        ["Proliferative retinopathy or any macular oedema", "-", "Ophthalmologist directed", "Urgent - laser or anti-VEGF needed"],
+        ["Sudden visual loss, floaters or a curtain in a diabetic", "-", "-", "Same day - vitreous haemorrhage or tractional detachment"],
+      ],
+    },
+    {
+      heading: "Glaucoma drops in primary care",
+      columns: ["Drug", "Dose", "Main cautions"],
+      rows: [
+        ["Latanoprost 0.005% (prostaglandin analogue)", "1 drop at night, lowers pressure 25-35%", "Iris and periocular darkening, lash growth, conjunctival hyperaemia, cystoid macular oedema in aphakia"],
+        ["Timolol 0.5% (beta-blocker)", "1 drop twice daily", "Asthma, COPD, bradycardia, heart block, masking of hypoglycaemia; teach punctal occlusion"],
+        ["Brimonidine 0.2% (alpha-2 agonist)", "1 drop two to three times daily", "Allergic conjunctivitis, dry mouth, drowsiness; contraindicated in infants and young children"],
+        ["Dorzolamide 2% (topical carbonic anhydrase inhibitor)", "1 drop three times daily, or twice daily in combination", "Stinging, bitter taste, sulpha allergy"],
+        ["Pilocarpine 2% (miotic)", "1 drop three to four times daily", "Brow ache, dim vision, retinal detachment risk in high myopia; now mainly for angle closure"],
+        ["Acetazolamide 250 mg (oral)", "250 mg two to four times daily, short term only", "Paraesthesiae, hypokalaemia, renal stones, aplastic anaemia; avoid in sulpha allergy and renal disease"],
+      ],
+    },
+    {
+      heading: "Referral urgency for the family physician",
+      columns: ["Finding", "Timing of referral"],
+      rows: [
+        ["Leukocoria or absent red reflex in a child", "Same day to same week - retinoblastoma or congenital cataract"],
+        ["Painful red eye with a hard globe and hazy cornea", "Within hours - acute angle-closure glaucoma"],
+        ["Sudden painless loss of vision or a curtain across the field", "Same day"],
+        ["New floaters and flashes in a diabetic or high myope", "Same day"],
+        ["Proliferative retinopathy or macular oedema on screening", "Within days"],
+        ["Cup-to-disc ratio 0.6 or more, or asymmetry over 0.2, or disc haemorrhage", "Within weeks for perimetry and gonioscopy"],
+        ["Cataract impairing the patient's daily function", "Routine, for elective surgery"],
+      ],
+    },
+  ],
+  redFlags: [
+    "Sudden painless loss of vision, or a curtain or shadow across the field - retinal detachment, vascular occlusion or vitreous haemorrhage; refer the same day, do not schedule refraction.",
+    "New floaters with flashing lights, especially in a diabetic or a high myope - retinal tear or vitreous haemorrhage; same-day referral.",
+    "Leukocoria or an absent red reflex in a child - retinoblastoma, congenital cataract or retinopathy of prematurity; urgent referral, as delay costs life as well as sight.",
+    "A painful red eye with a hard globe, hazy cornea and mid-dilated fixed pupil in a patient with a shallow anterior chamber, especially after pupil dilation - acute angle-closure glaucoma; treat and refer within hours.",
+    "Rapidly progressive visual loss in a diabetic with a white or hypermature cataract - the retina cannot be assessed; expedite surgery and warn about phacolytic and phacomorphic glaucoma.",
+    "Pain with falling vision within six weeks of cataract surgery - endophthalmitis; refer within hours for vitreous tap and intravitreal antibiotics.",
+    "Disc haemorrhage or a cup-to-disc asymmetry of more than 0.2 between the eyes - progressing glaucoma; refer for fields even if the intraocular pressure is normal.",
+  ],
+  pearls: [
+    "Cataract is referred when it interferes with the life the patient actually leads, not when it reaches a particular Snellen line.",
+    "Half of glaucoma patients have a normal intraocular pressure on any single reading - the disc and the field make the diagnosis, not the tonometer alone.",
+    "In glaucoma, treatment prevents further loss but never restores what is gone; say this to the patient at the first visit or adherence will fail.",
+    "Diabetic retinopathy is silent - screen at diagnosis in type 2 diabetes, at 5 years in type 1, and every trimester in pregnancy.",
+    "Direct ophthalmoscopy through an undilated pupil is not diabetic retinopathy screening, and must never be recorded as such.",
+    "Screen the first-degree relatives of every glaucoma patient from the age of 40, or ten years earlier than the age at which the index case presented.",
+    "Steroids in any form - drops, inhalers, nasal sprays, tablets or skin creams on the face - can raise intraocular pressure; ask about them in every glaucoma suspect.",
+    "In a dense cataract the retina cannot be screened, so cataract surgery in a diabetic is both a visual and a diagnostic procedure.",
+  ],
+  theory: [
+    {
+      id: "eye-ent-cataract-dr-glaucoma-t1",
+      paper: "III",
+      kind: "long",
+      marks: 10,
+      minutes: 20,
+      frequency: "common",
+      question:
+        "A 58-year-old man with type 2 diabetes of 12 years duration comes for a routine review and says his vision is gradually blurring. Discuss how you would evaluate him for diabetic retinopathy, cataract and glaucoma in family practice, and outline the screening, referral and follow-up plan.",
+      openingLines: [
+        "Cataract, diabetic retinopathy and glaucoma are the three chronic blinding conditions of adult life, and all three may coexist in a patient with long-standing type 2 diabetes.",
+        "The family physician's role is detection, risk factor control, timely referral and lifelong follow-up rather than definitive treatment, because two of the three are asymptomatic until sight is already threatened.",
+      ],
+      answer: [
+        {
+          heading: "1. History",
+          points: [
+            "Duration and control of diabetes, HbA1c trend, insulin or oral agents, hypertension, lipids, smoking, renal disease and proteinuria.",
+            "Visual symptoms: gradual painless blurring (cataract), glare and haloes at night, distortion or central blur (macular oedema), floaters and flashes (vitreous haemorrhage or retinal tear), and difficulty with peripheral awareness or bumping into objects (glaucoma).",
+            "Date and result of the last dilated fundus examination, use of any topical or systemic corticosteroids, and a family history of glaucoma or blindness.",
+          ],
+        },
+        {
+          heading: "2. Examination",
+          points: [
+            "Presenting and pinhole visual acuity in each eye with a Snellen chart, and near acuity.",
+            "Red reflex at arm's length: a dulled reflex with dark shadows indicates cataract.",
+            "Anterior segment by torch, including anterior chamber depth by oblique illumination before any dilating drop.",
+            "Dilated fundus examination with tropicamide 0.5-1%: assess disc for cup-to-disc ratio, rim notching and haemorrhage; vessels for beading and new vessels; background for microaneurysms, dot and blot haemorrhages, hard exudates and cotton wool spots; and macula for exudates or oedema within one disc diameter of the fovea.",
+            "Intraocular pressure where a tonometer is available, and confrontation visual fields.",
+          ],
+        },
+        {
+          heading: "3. Diabetic retinopathy - classification and screening",
+          points: [
+            "Non-proliferative: mild (microaneurysms only), moderate, and severe by the 4-2-1 rule - haemorrhages in all 4 quadrants, venous beading in 2 quadrants, or intraretinal microvascular abnormalities in 1 quadrant.",
+            "Proliferative: new vessels at the disc or elsewhere, preretinal or vitreous haemorrhage, fibrovascular proliferation, tractional retinal detachment.",
+            "Diabetic macular oedema may occur at any stage and is the commonest cause of visual loss.",
+            "Screening: at diagnosis and annually in type 2 diabetes; 5 years after diagnosis then annually in type 1; first trimester and each trimester in pregnancy with pre-existing diabetes. Fundus photography with remote reading (teleophthalmology) is an acceptable and scalable method.",
+          ],
+        },
+        {
+          heading: "4. Cataract and glaucoma assessment",
+          points: [
+            "Cataract: suspect when acuity does not improve with pinhole and the red reflex is dulled; refer for surgery when it interferes with the patient's daily function, and urgently if the fundus cannot be visualised in a diabetic or if the lens is hypermature or intumescent.",
+            "Glaucoma: assess disc for cup-to-disc ratio 0.6 or more, inter-eye asymmetry over 0.2, rim notching, nerve fibre layer defect and disc haemorrhage; measure intraocular pressure, remembering that a normal pressure does not exclude glaucoma; refer for perimetry and gonioscopy.",
+            "Diabetes is itself a risk factor for open-angle glaucoma, and neovascular glaucoma is a late complication of proliferative retinopathy.",
+          ],
+        },
+        {
+          heading: "5. Management and referral plan",
+          points: [
+            "Risk factor control: individualised HbA1c target, blood pressure below 140/90 or lower if tolerated, statin, smoking cessation, and treatment of nephropathy and anaemia; lower HbA1c gradually in advanced retinopathy, in liaison with the ophthalmologist.",
+            "Refer any retinopathy to ophthalmology; refer urgently for proliferative disease, macular oedema, sudden visual loss, or new floaters and flashes.",
+            "Ophthalmic treatment by stage: intravitreal anti-VEGF for centre-involving macular oedema, focal or grid laser for non-centre-involving oedema, panretinal photocoagulation for proliferative disease, and vitrectomy for non-clearing haemorrhage or tractional detachment.",
+            "Cataract surgery by phacoemulsification or manual small-incision surgery with intraocular lens, available free under NPCBVI, with retinal assessment as soon as the media clear.",
+            "Glaucoma: latanoprost 0.005% at night as first line after specialist confirmation, with adherence support, punctal occlusion technique, and screening of first-degree relatives from age 40.",
+          ],
+        },
+        {
+          heading: "6. Follow-up and documentation",
+          points: [
+            "Record in the chronic disease register: acuity, date of last retinal screen, HbA1c, blood pressure, lipids, renal function and foot examination at every visit.",
+            "Recall system to ensure the annual retinal screen actually happens - the failure of screening in India is a failure of recall, not of technology.",
+            "Counsel that screening continues lifelong regardless of glycaemic control, and that laser preserves rather than restores vision.",
+          ],
+        },
+      ],
+      mustDraw: [
+        "A labelled fundus diagram showing microaneurysms, dot and blot haemorrhages, hard exudates, cotton wool spots, venous beading and new vessels at the disc, with the macula marked.",
+        "A table of diabetic retinopathy screening intervals and referral urgency by stage.",
+      ],
+      markSplit: [
+        { part: "History and risk assessment", marks: 1.5 },
+        { part: "Examination including dilated fundoscopy", marks: 2 },
+        { part: "Classification and screening schedule for retinopathy", marks: 2.5 },
+        { part: "Cataract and glaucoma detection and referral criteria", marks: 2 },
+        { part: "Risk factor control, follow-up and documentation", marks: 2 },
+      ],
+      keywords: ["diabetic retinopathy", "screening", "cataract", "glaucoma", "referral"],
+    },
+    {
+      id: "eye-ent-cataract-dr-glaucoma-t2",
+      paper: "III",
+      kind: "short-note",
+      marks: 5,
+      minutes: 10,
+      frequency: "common",
+      question: "Write short notes on primary open-angle glaucoma: risk factors, detection in primary care, and principles of management.",
+      openingLines: [
+        "Primary open-angle glaucoma is a chronic, progressive optic neuropathy with characteristic optic disc cupping and retinal nerve fibre layer loss, with corresponding visual field defects, occurring in the presence of an open anterior chamber angle.",
+        "Raised intraocular pressure is the principal modifiable risk factor but is not part of the definition, since a substantial proportion of Indian patients have normal-tension glaucoma; the disease is asymptomatic until advanced, and lost vision is never recovered.",
+      ],
+      answer: [
+        {
+          heading: "Risk factors",
+          points: [
+            "Age over 40, first-degree family history (4-10 fold increase in risk), raised intraocular pressure, and thin central corneal thickness.",
+            "High myopia, diabetes mellitus, systemic hypotension and nocturnal dips, migraine and vasospasm in normal-tension disease.",
+            "Prolonged corticosteroid exposure by any route - topical eye drops, skin creams on the face, inhalers, nasal sprays or systemic steroids.",
+            "Previous ocular trauma, uveitis, pseudoexfoliation and pigment dispersion, and African ancestry.",
+          ],
+        },
+        {
+          heading: "Detection in primary care",
+          points: [
+            "Symptoms are absent until late; central acuity is preserved, so acuity testing alone will not detect it.",
+            "Optic disc examination with the direct ophthalmoscope through a dilated pupil: cup-to-disc ratio of 0.6 or more, asymmetry of more than 0.2 between eyes, notching or thinning of the neuroretinal rim (the ISNT rule is broken), nerve fibre layer defect, disc haemorrhage and nasal displacement of vessels.",
+            "Intraocular pressure measurement where available - normal 10-21 mmHg - remembering that a normal reading does not exclude glaucoma and a high reading with a normal disc and field is ocular hypertension.",
+            "Confrontation fields detect only advanced loss; refer for automated perimetry, gonioscopy and optical coherence tomography of the nerve fibre layer.",
+            "Screen first-degree relatives from age 40, or ten years earlier than the age of onset in the index case.",
+          ],
+        },
+        {
+          heading: "Principles of management",
+          points: [
+            "Aim: lower intraocular pressure to a target that halts progression, usually a 25-30% reduction from baseline, individualised by disease severity and life expectancy.",
+            "Medical: prostaglandin analogue latanoprost 0.005% once at night is first line; alternatives and add-ons are timolol 0.5% twice daily, brimonidine 0.2%, dorzolamide 2%, and fixed combinations. Teach punctal occlusion to reduce systemic absorption.",
+            "Laser: selective laser trabeculoplasty is an accepted first-line or adjunctive option; laser peripheral iridotomy is for angle-closure disease, not open-angle disease.",
+            "Surgery: trabeculectomy with antimetabolite, or a glaucoma drainage device, when medical and laser treatment fail to reach target pressure.",
+            "Lifelong monitoring of pressure, disc and fields; counselling that treatment prevents further loss but does not restore vision; adherence support and repeat prescription systems in general practice.",
+          ],
+        },
+      ],
+      mustDraw: [
+        "A labelled optic disc diagram comparing a normal disc with a cup-to-disc ratio of 0.3 against a glaucomatous disc with a ratio of 0.8, inferior rim notching and a disc haemorrhage.",
+      ],
+      markSplit: [
+        { part: "Definition", marks: 1 },
+        { part: "Risk factors", marks: 1 },
+        { part: "Detection - disc, pressure, fields and relatives", marks: 1.5 },
+        { part: "Management principles with drug names and doses", marks: 1.5 },
+      ],
+      keywords: ["open-angle glaucoma", "cup-disc ratio", "latanoprost", "perimetry", "normal-tension glaucoma"],
+    },
+  ],
+  mcqs: [
+    {
+      id: "eye-ent-cataract-dr-glaucoma-q1",
+      stem: "A 52-year-old man is newly diagnosed with type 2 diabetes. He has no visual symptoms. When should his first retinal screening examination be done?",
+      options: [
+        "Five years after diagnosis",
+        "At the time of diagnosis",
+        "Only when he develops visual symptoms",
+        "After ten years, or earlier if HbA1c exceeds 9%",
+        "At the first annual review, one year after diagnosis",
+      ],
+      answer: 1,
+      explanation:
+        "Type 2 diabetes is usually present for years before it is diagnosed, so retinopathy may already exist and screening must be done at the time of diagnosis and then annually. The five-year rule applies to type 1 diabetes, where the date of onset is known and retinopathy essentially never occurs in the first five years. Waiting for symptoms is the central error of the topic - retinopathy is silent until sight-threatening disease is established. Deferring to ten years or tying screening to HbA1c would miss existing disease, and a first screen at one year still leaves treatable proliferative disease undetected for a year.",
+      difficulty: "easy",
+    },
+    {
+      id: "eye-ent-cataract-dr-glaucoma-q2",
+      stem: "A 60-year-old woman has a cup-to-disc ratio of 0.7 in the right eye and 0.4 in the left, with inferior rim notching on the right. Her intraocular pressure is 17 mmHg in both eyes. What is the correct interpretation?",
+      options: [
+        "Glaucoma is excluded because the intraocular pressure is normal",
+        "This is physiological cupping and needs no action",
+        "She may have normal-tension glaucoma and needs perimetry, gonioscopy and optic nerve imaging",
+        "She has ocular hypertension and should start latanoprost immediately",
+        "The findings indicate a compressive optic neuropathy requiring urgent MRI",
+      ],
+      answer: 2,
+      explanation:
+        "Disc asymmetry of more than 0.2 with rim notching is a structural sign of glaucomatous damage, and because roughly half of glaucoma patients have pressures within the statistically normal range, a reading of 17 mmHg cannot exclude the disease - she needs formal fields, gonioscopy and nerve fibre layer imaging. Treating a normal pressure as reassurance is the classic way glaucoma is missed. Physiological cupping is symmetrical and preserves the neuroretinal rim, so notching argues against it. Ocular hypertension means a raised pressure with a normal disc and field, which is the opposite of this picture. A compressive lesion causes disc pallor exceeding cupping with a field defect respecting the vertical midline, not isolated inferior notching.",
+      difficulty: "moderate",
+    },
+    {
+      id: "eye-ent-cataract-dr-glaucoma-q3",
+      stem: "A 45-year-old woman with severe persistent asthma is found to have primary open-angle glaucoma. Which topical agent should be avoided?",
+      options: [
+        "Latanoprost 0.005%",
+        "Timolol 0.5%",
+        "Dorzolamide 2%",
+        "Brimonidine 0.2%",
+        "Preservative-free lubricants",
+      ],
+      answer: 1,
+      explanation:
+        "Timolol is a non-selective beta-blocker that is absorbed systemically through the nasolacrimal mucosa and can precipitate severe bronchospasm in asthma, as well as bradycardia and heart block, so it is contraindicated here. Latanoprost is the first-line prostaglandin analogue and has no bronchial effect, its adverse effects being local - iris darkening, lash growth and hyperaemia. Dorzolamide is a topical carbonic anhydrase inhibitor whose main cautions are stinging and sulpha allergy. Brimonidine causes allergic conjunctivitis and drowsiness and is contraindicated in infants, not in asthma. Lubricants are inert.",
+      difficulty: "easy",
+    },
+    {
+      id: "eye-ent-cataract-dr-glaucoma-q4",
+      stem: "A 68-year-old man had uncomplicated cataract surgery in the left eye two years ago with good vision afterwards, but over the past six months the vision has gradually dimmed again with glare. The eye is white and painless. What is the most likely cause?",
+      options: [
+        "Recurrent cataract in the same eye",
+        "Posterior capsular opacification, treatable with Nd:YAG capsulotomy",
+        "Chronic endophthalmitis",
+        "Dislocation of the intraocular lens",
+        "Cystoid macular oedema",
+      ],
+      answer: 1,
+      explanation:
+        "Gradual painless dimming with glare months to years after successful cataract surgery in a quiet white eye is posterior capsular opacification, which affects 10-30% of patients and is treated in the outpatient clinic with an Nd:YAG laser capsulotomy. A cataract cannot recur once the lens has been removed, so the first option is anatomically impossible. Chronic endophthalmitis causes low-grade inflammation with cells, keratic precipitates and often pain, not a white quiet eye. Lens dislocation produces sudden distortion or a visible edge effect rather than a slow glare-predominant decline. Cystoid macular oedema typically appears within weeks to a few months of surgery and causes central distortion with a normal anterior segment on retro-illumination.",
+      difficulty: "moderate",
+    },
+    {
+      id: "eye-ent-cataract-dr-glaucoma-q5",
+      stem: "A 55-year-old man with 15 years of type 2 diabetes reports a sudden shower of floaters in the right eye followed by loss of vision to hand movements. The eye is white and painless. What is the correct action?",
+      options: [
+        "Reassure and review at the next diabetes appointment",
+        "Arrange a routine ophthalmology appointment within three months",
+        "Refer the same day for suspected vitreous haemorrhage from proliferative diabetic retinopathy",
+        "Prescribe a lubricant and re-test vision in a week",
+        "Start intensive insulin therapy to lower HbA1c rapidly",
+      ],
+      answer: 2,
+      explanation:
+        "A sudden shower of floaters with profound painless visual loss in a long-standing diabetic is vitreous haemorrhage from proliferative retinopathy, and it requires same-day referral because the underlying new vessels need panretinal photocoagulation and the eye may harbour a tractional detachment. Reassurance and a routine appointment both delay treatment while the neovascular process continues and traction develops. A lubricant treats surface disease and is irrelevant. Rapid intensification of glycaemic control can transiently worsen advanced retinopathy and must be done gradually and in liaison with the ophthalmologist, not as the immediate response to sight loss.",
+      difficulty: "easy",
+    },
+  ],
+  cards: [
+    {
+      id: "eye-ent-cataract-dr-glaucoma-c1",
+      front: "When should cataract be referred for surgery?",
+      back: "When the opacity interferes with the patient's own daily activities - not at a fixed Snellen line; urgently if hypermature or intumescent, if the fundus cannot be seen in a diabetic, or if a child has leukocoria.",
+    },
+    {
+      id: "eye-ent-cataract-dr-glaucoma-c2",
+      front: "Bedside signs of cataract.",
+      back: "Vision not improving with pinhole, a dulled red reflex with dark opacity shadows, glare, monocular diplopia, second sight, and an obscured fundus view.",
+    },
+    {
+      id: "eye-ent-cataract-dr-glaucoma-c3",
+      front: "Diabetic retinopathy screening schedule.",
+      back: "Type 2: at diagnosis then annually. Type 1: 5 years after diagnosis then annually. Pregnancy with pre-existing diabetes: first trimester, each trimester, and up to 12 months postpartum.",
+    },
+    {
+      id: "eye-ent-cataract-dr-glaucoma-c4",
+      front: "The 4-2-1 rule.",
+      back: "Severe non-proliferative diabetic retinopathy: haemorrhages in all 4 quadrants, venous beading in 2 quadrants, or intraretinal microvascular abnormalities in 1 quadrant.",
+    },
+    {
+      id: "eye-ent-cataract-dr-glaucoma-c5",
+      front: "Treatment of diabetic macular oedema versus proliferative retinopathy.",
+      back: "Centre-involving macular oedema: intravitreal anti-VEGF (ranibizumab, bevacizumab, aflibercept); non-centre-involving: focal or grid laser. Proliferative disease: panretinal photocoagulation; vitrectomy for non-clearing haemorrhage or traction.",
+    },
+    {
+      id: "eye-ent-cataract-dr-glaucoma-c6",
+      front: "Optic disc signs of glaucoma.",
+      back: "Cup-to-disc ratio 0.6 or more, inter-eye asymmetry over 0.2, neuroretinal rim notching (ISNT rule broken), nerve fibre layer defect, disc haemorrhage, nasal shift of vessels.",
+    },
+    {
+      id: "eye-ent-cataract-dr-glaucoma-c7",
+      front: "Why does a normal intraocular pressure not exclude glaucoma?",
+      back: "About half of patients have pressures in the normal 10-21 mmHg range at any single reading - normal-tension glaucoma is common; the disc and field make the diagnosis.",
+    },
+    {
+      id: "eye-ent-cataract-dr-glaucoma-c8",
+      front: "First-line glaucoma drop and its adverse effects.",
+      back: "Latanoprost 0.005% one drop at night, lowering pressure 25-35%; causes iris and periocular darkening, eyelash lengthening and conjunctival hyperaemia.",
+    },
+    {
+      id: "eye-ent-cataract-dr-glaucoma-c9",
+      front: "Who should be screened among the relatives of a glaucoma patient?",
+      back: "All first-degree relatives from age 40, or ten years earlier than the age at which the index case was diagnosed; family history raises risk 4-10 fold.",
+    },
+    {
+      id: "eye-ent-cataract-dr-glaucoma-c10",
+      front: "Cataract surgical rate - definition and Indian target.",
+      back: "Number of cataract surgeries performed per million population per year; the national target under NPCBVI is above 6000 per million per year.",
+    },
+  ],
+  references: [
+    "AK Khurana, Comprehensive Ophthalmology, 8th edition, 2022 - lens, retina and glaucoma",
+    "Kanski's Clinical Ophthalmology, 9th edition, 2020",
+    "American Academy of Ophthalmology Preferred Practice Pattern, Diabetic Retinopathy, 2019, and Primary Open-Angle Glaucoma, 2020",
+    "American Diabetes Association Standards of Care in Diabetes, 2024 - retinopathy screening",
+    "All India Ophthalmological Society and Vitreoretinal Society of India, Diabetic Retinopathy Screening Guidelines",
+    "National Programme for Control of Blindness and Visual Impairment, operational guidelines, MoHFW, Government of India",
+    "National Blindness and Visual Impairment Survey India 2015-19, MoHFW and AIIMS",
+  ],
+});
+
+
 const cases: ClinicalCase[] = [
   {
     id: "eye-ent-case-1",
