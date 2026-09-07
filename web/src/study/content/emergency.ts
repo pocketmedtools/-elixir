@@ -3209,6 +3209,484 @@ topics.push({
   ],
 });
 
+topics.push({
+  id: "emergency-tray-and-readiness",
+  title: "The emergency tray: drugs, equipment and the clinic's readiness drill",
+  oneLiner:
+    "The emergency tray is a single sealed, checklist-controlled tray holding the small set of drugs and equipment that a family clinic must be able to reach within 30 seconds - adrenaline, atropine, dextrose, a benzodiazepine, oxygen, a self-inflating bag and suction being the irreducible core - kept usable by a named person, a dated log, expiry rotation and a quarterly mock drill.",
+  frequency: "common",
+  keywords: [
+    "emergency tray",
+    "crash cart",
+    "emergency drugs",
+    "resuscitation equipment",
+    "adrenaline",
+    "atropine",
+    "AEFI kit",
+    "anaphylaxis kit",
+    "self-inflating bag",
+    "Ambu bag",
+    "oropharyngeal airway",
+    "oxygen cylinder",
+    "mock drill",
+    "expiry check",
+    "clinic preparedness",
+    "referral pathway",
+    "weight-based dosing chart",
+    "AED",
+  ],
+  sections: [
+    {
+      heading: "Principles: one tray, one owner, one checklist",
+      points: [
+        "**The tray exists to remove decisions from the emergency.** Everything on it is chosen because it treats a condition that kills within minutes, and nothing is on it because it might one day be useful; a crowded tray costs seconds and seconds are the whole point.",
+        "**Keep a single tray, in a single fixed location known to every member of staff, sealed with a numbered breakable tag and never locked in a cupboard whose key is with one person.** A locked emergency cupboard has caused more deaths in audits than an empty one.",
+        "One named person - usually the senior nurse - owns the tray, checks it against a printed checklist on a fixed day each week, signs and dates the log, and reports shortages to the doctor the same day; **a tray without a signed dated log is presumed unchecked.**",
+        "Arrange drugs by indication, not alphabetically, in labelled compartments: anaphylaxis, arrest, seizure, hypoglycaemia, cardiac, respiratory, obstetric. **Laminate a weight-based paediatric dose chart on the inside of the lid** so nobody calculates a paediatric dose from memory under pressure.",
+        "Rotate stock first-expiry-first-out; anything within 3 months of expiry is moved into routine clinic use and replaced. **Adrenaline degrades with light and heat, so keep ampoules in their carton, away from the window, and never store the tray on top of a refrigerator or near a sterilizer.**",
+        "The tray is only half the system. The other half is a written referral pathway with the names and numbers of the nearest hospital with a ventilator, blood bank and dialysis, the ambulance number (108 in most Indian states), and a standing arrangement so that a call is answered rather than negotiated.",
+      ],
+    },
+    {
+      heading: "The irreducible drug list with adult and paediatric doses",
+      points: [
+        "**Adrenaline 1:1000 (1 mg/mL) ampoules - the single most important drug on the tray. Anaphylaxis: 0.5 mg (0.5 mL) intramuscularly into the anterolateral thigh for an adult and a child over 12 years, 0.3 mg for 6-12 years, 0.15 mg for 6 months to 6 years, repeated every 5 minutes as needed.** Cardiac arrest: 1 mg intravenously as 10 mL of 1:10,000 every 3-5 minutes; child 0.01 mg/kg (0.1 mL/kg of 1:10,000, maximum 1 mg) every 3-5 minutes.",
+        "**Atropine (Indian ampoules are commonly 0.6 mg/mL). Symptomatic bradycardia: 0.5-0.6 mg intravenously repeated every 3-5 minutes to a maximum of 3 mg in an adult; child 0.02 mg/kg with a minimum single dose of 0.1 mg and a maximum single dose of 0.5 mg.** Organophosphate poisoning: 2-5 mg intravenously in an adult (child 0.05 mg/kg), the dose doubled every 5 minutes until the chest is clear and the skin dry - stock at least 25 ampoules where pesticide poisoning is common.",
+        "**Dextrose 25% (100 mL) for adult hypoglycaemia, 25 g intravenously over 1-3 minutes; 10% dextrose for children at 5 mL/kg and for neonates at 2 mL/kg. Thiamine 100 mg ampoules to give before or with dextrose in the alcoholic or malnourished.** Glucagon 1 mg intramuscularly (0.5 mg if under 25 kg) covers the patient with no venous access.",
+        "**A benzodiazepine for seizures: lorazepam 4 mg intravenously over 2 minutes in an adult, repeated once after 10 minutes; midazolam 10 mg intramuscularly, buccally or intranasally when there is no vein; diazepam 10 mg intravenously or per rectum. Child: lorazepam 0.1 mg/kg intravenously (maximum 4 mg per dose), midazolam 0.2 mg/kg buccal or intranasal (maximum 10 mg), rectal diazepam 0.5 mg/kg (maximum 20 mg).**",
+        "**Cardiac and respiratory drugs: soluble aspirin 300 mg to be chewed and clopidogrel 300 mg for suspected myocardial infarction; glyceryl trinitrate 0.5 mg sublingually, repeated every 5 minutes up to 3 doses only while the systolic pressure stays above 90 mmHg; furosemide 40 mg slow intravenously for acute pulmonary oedema; salbutamol nebuliser solution 5 mg for a child over 5 years and an adult, 2.5 mg under 5 years, with ipratropium 500 micrograms (250 micrograms under 5 years); hydrocortisone 100 mg intravenously (child 4 mg/kg).**",
+        "**Obstetric and miscellaneous: magnesium sulphate for eclampsia - 4 g of 20% solution intravenously over 5 minutes plus 10 g of 50% solution intramuscularly (5 g into each buttock), then 5 g intramuscularly 4-hourly, with calcium gluconate 10% 10 mL intravenously over 10 minutes as the antidote; oxytocin 10 IU intramuscularly for postpartum haemorrhage; tranexamic acid 1 g intravenously over 10 minutes within 3 hours of trauma or postpartum bleeding; naloxone 0.4 mg; chlorpheniramine 10 mg; oral rehydration salts; normal saline and Ringer lactate.**",
+      ],
+    },
+    {
+      heading: "Equipment: airway, oxygen, circulation and monitoring",
+      points: [
+        "**Oxygen: a full cylinder with a working regulator, flowmeter and key kept attached, plus a spare cylinder. A non-rebreathing mask with reservoir delivers about 85% oxygen at 15 L/min and is what an emergency needs; nasal cannulae at 1-4 L/min are for the stable patient.** Log the cylinder pressure at every weekly check.",
+        "**Self-inflating bags with masks in three sizes - adult 1500-1600 mL, paediatric about 500 mL, neonatal 240 mL - each with a reservoir bag, because without the reservoir the delivered oxygen falls from about 90% to 50%.** Masks in sizes 0 to 5, and a paediatric mask must cover the bridge of the nose to the cleft of the chin without covering the eyes.",
+        "**Oropharyngeal airways in sizes 000 to 4, sized from the incisors to the angle of the mandible (or the angle of the mouth to the tragus); they are inserted upside down and rotated in an adult, but the right way up over a tongue depressor in a child, where rotation damages the palate.** An airway that provokes gagging means the patient does not need one.",
+        "Suction that works without mains electricity - a foot-operated or manual suction pump with wide-bore Yankauer and soft catheters - because power fails exactly when it matters. Test it at every check and listen for the vacuum rather than assuming it.",
+        "**Circulation and monitoring: intravenous cannulae 14G to 24G, an intraosseous needle where staff are trained, giving sets, a pressure infusion bag, a tourniquet for catastrophic limb haemorrhage, a glucometer with in-date strips, a pulse oximeter, a thermometer, blood pressure cuffs in paediatric, adult and large-adult sizes, an ECG machine and an automated external defibrillator with adult and paediatric pads where affordable.**",
+        "Add the small things that get forgotten and stop a resuscitation dead: a torch with working cells, scissors, adhesive tape, a spacer with mask for a wheezing child, sterile dressings and a bandage, a cervical collar, a splint, gloves and eye protection, a sharps bin, and a written record sheet with a clock visible from the couch.",
+      ],
+    },
+    {
+      heading: "The readiness drill: checks, mock drills and audit",
+      points: [
+        "**Run a mock drill at least once every 3 months, unannounced, using a real scenario - anaphylaxis after an injection, a collapsed adult in the waiting room, a fitting child, a woman with postpartum haemorrhage - and time three things: seconds to first compression, seconds to adrenaline drawn up, and minutes to the ambulance call being made.** Record the times and improve them.",
+        "Give every person a fixed role before the emergency happens: who compresses, who brings the tray, who draws up drugs, who calls the ambulance, who manages the family and clears the corridor, and who writes the timed record. **Unassigned roles produce a crowd around the patient and an empty doorway.**",
+        "**Every clinical and non-clinical staff member, including the receptionist and the cleaner, should be trained to recognise a collapsed patient, shout for help, start chest compressions and call for the tray.** Basic life support certification renewed every 2 years is the standard to quote.",
+        "Debrief within the same day, in a blame-free way, on three questions: what went well, what delayed us, what will change by next week - and record the change with a named owner and a date. **An undocumented drill has no value in accreditation or in a negligence claim.**",
+        "Audit two indicators quarterly: the proportion of weekly tray checks completed and signed, and the proportion of items found expired or missing at an unannounced spot check. **NABH entry-level standards for clinics require documented emergency drugs and equipment, a defined referral pathway and evidence of staff training - the log is the evidence.**",
+        "Restock immediately after every use, before the next patient is called, and reseal with a new numbered tag; **the commonest cause of an empty tray is the previous emergency**, not slow purchasing.",
+      ],
+    },
+    {
+      heading: "Special trays: immunisation, procedure room and home visit",
+      points: [
+        "**Every immunisation session must have its own anaphylaxis kit at the table, not in another room, as required by the Government of India AEFI operational guidelines: adrenaline 1:1000 ampoules, 1 mL and 2 mL syringes with needles, a self-inflating bag with paediatric and infant masks, oral airways, an oxygen source where available, and a written dose card by age.**",
+        "**The vaccinator must be able to state without looking: adrenaline 1:1000 intramuscular anterolateral thigh, 0.01 mg/kg, that is 0.15 mg under 6 years, 0.3 mg for 6-12 years and 0.5 mg above 12 years, repeated every 5 minutes if there is no improvement.** Beneficiaries are observed for 30 minutes after immunisation before leaving.",
+        "The minor procedure room needs, in addition, a means of pressure haemostasis, local anaesthetic without and with adrenaline clearly separated to prevent digital ischaemia, intravenous lipid emulsion 20% where regional blocks are performed, and a written protocol for vasovagal syncope, which is far commoner than anaphylaxis and is distinguished by bradycardia with pallor rather than tachycardia with urticaria.",
+        "**A home-visit bag is a miniature tray: adrenaline, a benzodiazepine, dextrose, aspirin, glyceryl trinitrate, furosemide, hydrocortisone, salbutamol with a spacer, a self-inflating bag with mask, oral airways, a glucometer, a pulse oximeter, a blood pressure cuff and cannulae with fluid.** It is checked on the same weekly cycle as the clinic tray.",
+        "Match the tray to what the clinic actually does. **A clinic that immunises must be ready for anaphylaxis; a rural clinic in a pesticide belt must carry enough atropine for hours of doubling doses; a clinic that conducts deliveries must carry oxytocin, magnesium sulphate and tranexamic acid.**",
+        "Where cold chain matters, keep a thermometer in the vaccine refrigerator with a twice-daily temperature log, and never store emergency drugs inside the vaccine refrigerator, where freezing destroys adrenaline and the door is opened all day.",
+      ],
+    },
+  ],
+  tables: [
+    {
+      heading: "Core emergency tray drugs - indication, adult dose, paediatric dose, repeat",
+      columns: ["Drug and strength", "Indication", "Adult dose and route", "Paediatric dose and route", "Repeat interval"],
+      rows: [
+        [
+          "Adrenaline 1:1000 (1 mg/mL)",
+          "Anaphylaxis",
+          "0.5 mg (0.5 mL) IM into anterolateral thigh",
+          "0.01 mg/kg IM: 0.15 mg under 6 years, 0.3 mg for 6-12 years, 0.5 mg above 12 years",
+          "Every 5 minutes until improvement",
+        ],
+        [
+          "Adrenaline 1:10,000 (0.1 mg/mL)",
+          "Cardiac arrest",
+          "1 mg (10 mL) IV or IO",
+          "0.01 mg/kg = 0.1 mL/kg IV or IO, maximum 1 mg",
+          "Every 3-5 minutes during CPR",
+        ],
+        [
+          "Atropine 0.6 mg/mL",
+          "Symptomatic bradycardia",
+          "0.5-0.6 mg IV bolus, maximum total 3 mg",
+          "0.02 mg/kg IV, minimum 0.1 mg, maximum single dose 0.5 mg",
+          "Every 3-5 minutes to the maximum",
+        ],
+        [
+          "Atropine 0.6 mg/mL",
+          "Organophosphate or carbamate poisoning",
+          "2-5 mg IV, dose doubled until chest clear and skin dry",
+          "0.05 mg/kg IV, dose doubled on the same principle",
+          "Double every 5 minutes, then infusion",
+        ],
+        [
+          "Dextrose 25% (adult) and 10% (child)",
+          "Hypoglycaemia",
+          "25% dextrose 100 mL (25 g) IV over 1-3 minutes",
+          "10% dextrose 5 mL/kg IV; neonate 10% dextrose 2 mL/kg IV",
+          "Repeat after 10-15 minutes if still low",
+        ],
+        [
+          "Lorazepam 2 mg/mL or midazolam 5 mg/mL",
+          "Seizure lasting 5 minutes or more",
+          "Lorazepam 4 mg IV over 2 minutes; no vein: midazolam 10 mg IM",
+          "Lorazepam 0.1 mg/kg IV, max 4 mg; buccal or intranasal midazolam 0.2 mg/kg, max 10 mg",
+          "Once only after 10 minutes - maximum two doses",
+        ],
+        [
+          "Hydrocortisone 100 mg vial",
+          "Acute severe asthma, adrenal crisis, adjunct after anaphylaxis",
+          "100-200 mg IV",
+          "4 mg/kg IV",
+          "6-hourly if continued",
+        ],
+        [
+          "Magnesium sulphate 50%",
+          "Eclampsia",
+          "4 g of 20% IV over 5 minutes plus 10 g of 50% IM (5 g each buttock)",
+          "Not applicable - obstetric use",
+          "5 g IM 4-hourly; 2 g IV for a recurrent fit",
+        ],
+        [
+          "Naloxone 0.4 mg/mL",
+          "Opioid-induced respiratory depression",
+          "0.4 mg IV or IM, titrated to respiratory rate",
+          "0.01 mg/kg IV or IM",
+          "Every 2-3 minutes, up to about 10 mg total",
+        ],
+      ],
+    },
+    {
+      heading: "Equipment checklist with the check to perform, not just the item to see",
+      columns: ["Item", "Sizes or specification", "The check that actually matters"],
+      rows: [
+        [
+          "Oxygen cylinder",
+          "Full cylinder plus one spare, regulator, flowmeter, key attached",
+          "Open the valve and read the pressure; record it dated in the log",
+        ],
+        [
+          "Self-inflating bag with reservoir",
+          "Adult 1500-1600 mL, paediatric 500 mL, neonatal 240 mL",
+          "Squeeze against an occluded mask and feel the valve open and reseal",
+        ],
+        [
+          "Face masks",
+          "Sizes 0 to 5, cushioned rim",
+          "Fit test on a manikin: nose bridge to chin cleft, eyes uncovered",
+        ],
+        [
+          "Oropharyngeal airways",
+          "Sizes 000 to 4",
+          "Size against incisors to angle of mandible; confirm the whole range is present",
+        ],
+        [
+          "Suction",
+          "Foot-operated or manual pump, Yankauer and soft catheters",
+          "Test with the mains off - it must work in a power cut",
+        ],
+        [
+          "Glucometer",
+          "Meter, in-date strips, lancets, control solution",
+          "Run a control strip and check the strip expiry date, not just the box",
+        ],
+        [
+          "Defibrillator or AED",
+          "Adult and paediatric pads, spare battery",
+          "Run the self-test, check pad expiry and battery indicator weekly",
+        ],
+        [
+          "Documentation",
+          "Timed record sheet, weight-based dose chart, referral numbers",
+          "Confirm the chart is legible, laminated and current, and the numbers answer",
+        ],
+      ],
+    },
+  ],
+  redFlags: [
+    "Adrenaline missing, expired, discoloured or stored loose in a hot room - the clinic cannot treat anaphylaxis or arrest and must not immunise or inject until it is replaced.",
+    "The emergency tray locked in a cupboard whose key is held by one absent person, or moved from its fixed location without every staff member being told.",
+    "An oxygen cylinder that reads empty or has no regulator, or a suction unit that fails when the mains supply is switched off.",
+    "A tray check log with gaps, unsigned entries or back-dated signatures - in a negligence claim this is treated as no check having been done.",
+    "No laminated weight-based paediatric dose chart, so paediatric doses are calculated from memory under pressure.",
+    "The tray not restocked and resealed immediately after the last emergency, leaving the next patient with an empty tray.",
+  ],
+  pearls: [
+    "Adrenaline is the only drug on the tray whose absence is by itself indefensible; check it first at every check, and check the concentration on the ampoule, because giving 1:1000 intravenously in place of 1:10,000 is a lethal ten-fold error.",
+    "For anaphylaxis the route is intramuscular into the anterolateral thigh, never subcutaneous and never intravenous outside a monitored setting; the thigh gives higher and faster peak levels than the deltoid.",
+    "A self-inflating bag without its reservoir delivers only about 50% oxygen instead of 90% - the reservoir is part of the equipment, not an accessory.",
+    "Time the drill, not the discussion: seconds to first compression, seconds to adrenaline drawn up, minutes to the ambulance call. Numbers improve; impressions do not.",
+    "Arrange the tray by emergency, laminate the paediatric dose chart inside the lid, and seal with a numbered tag - the three changes that most reduce time to first drug.",
+    "The commonest reason a tray is empty is the previous emergency, so restocking is part of finishing the emergency, not a task for the next day.",
+  ],
+  theory: [
+    {
+      id: "emergency-tray-and-readiness-t1",
+      paper: "III",
+      kind: "long",
+      marks: 10,
+      minutes: 20,
+      frequency: "common",
+      question:
+        "Describe the drugs and equipment that should be available in the emergency tray of a family practice clinic, and how you would ensure that the clinic and its staff remain ready to use them.",
+      openingLines: [
+        "The emergency tray is a single, sealed, checklist-controlled collection of drugs and equipment, kept in one fixed and universally known location, containing only what treats conditions that kill within minutes.",
+        "Readiness has two halves that must both be answered: the contents, and the system of ownership, checking, training and drilling that keeps the contents usable - a tray without a signed log and a trained team is stock, not preparedness.",
+      ],
+      answer: [
+        {
+          heading: "Principles of tray design",
+          points: [
+            "One tray, one fixed location known to all staff, sealed with a numbered breakable tag, never locked behind a single key holder.",
+            "Contents arranged by indication - anaphylaxis, arrest, seizure, hypoglycaemia, cardiac, respiratory, obstetric - in labelled compartments, with a laminated weight-based paediatric dose chart inside the lid.",
+            "Stock rotated first-expiry-first-out, items within 3 months of expiry moved to routine use, adrenaline kept in its carton away from heat and light.",
+            "The tray matched to the clinic's actual work: immunisation means anaphylaxis readiness, a pesticide belt means abundant atropine, deliveries mean oxytocin, magnesium sulphate and tranexamic acid.",
+          ],
+        },
+        {
+          heading: "Essential drugs with doses",
+          points: [
+            "Adrenaline 1:1000 - anaphylaxis 0.5 mg intramuscularly into the anterolateral thigh in an adult, 0.3 mg for 6-12 years and 0.15 mg for 6 months to 6 years, repeated every 5 minutes; cardiac arrest 1 mg intravenously as 10 mL of 1:10,000 every 3-5 minutes, child 0.01 mg/kg.",
+            "Atropine - bradycardia 0.5-0.6 mg intravenously every 3-5 minutes to a maximum of 3 mg, child 0.02 mg/kg (minimum 0.1 mg, maximum single dose 0.5 mg); organophosphate poisoning 2-5 mg intravenously doubled every 5 minutes until the chest is clear and the skin dry.",
+            "Dextrose 25% 100 mL intravenously for adult hypoglycaemia, 10% dextrose 5 mL/kg for a child and 2 mL/kg for a neonate, with thiamine 100 mg for the alcoholic or malnourished.",
+            "Benzodiazepine for seizures - lorazepam 4 mg intravenously repeated once after 10 minutes, or midazolam 10 mg intramuscularly; child lorazepam 0.1 mg/kg (maximum 4 mg) or buccal midazolam 0.2 mg/kg (maximum 10 mg).",
+            "Cardiac and respiratory - aspirin 300 mg chewed, clopidogrel 300 mg, glyceryl trinitrate 0.5 mg sublingually up to 3 doses if systolic above 90 mmHg, furosemide 40 mg intravenously, salbutamol nebulisation 5 mg (2.5 mg under 5 years) with ipratropium 500 micrograms (250 micrograms under 5 years), hydrocortisone 100 mg intravenously or 4 mg/kg in a child.",
+            "Others - magnesium sulphate with calcium gluconate 10% as its antidote, oxytocin 10 IU intramuscularly, tranexamic acid 1 g intravenously, naloxone 0.4 mg, chlorpheniramine 10 mg, normal saline, Ringer lactate and oral rehydration salts.",
+          ],
+        },
+        {
+          heading: "Essential equipment",
+          points: [
+            "Airway and breathing: oxygen cylinder with regulator and a spare, non-rebreathing mask for 15 L/min, self-inflating bags with reservoirs in adult 1600 mL, paediatric 500 mL and neonatal 240 mL sizes, masks 0-5, oropharyngeal airways 000-4, and suction that works without mains power.",
+            "Circulation: cannulae 14G to 24G, giving sets, intravenous fluids, a pressure bag, a tourniquet, and an intraosseous needle where staff are trained.",
+            "Monitoring and diagnostics: glucometer with in-date strips, pulse oximeter, thermometer, blood pressure cuffs in three sizes, ECG machine, and an automated external defibrillator with adult and paediatric pads where affordable.",
+            "Support items: torch, scissors, tape, spacer with mask, dressings, cervical collar, splint, gloves, sharps bin, a timed record sheet and a visible clock.",
+          ],
+        },
+        {
+          heading: "The readiness system",
+          points: [
+            "A named owner checks the tray weekly against a printed checklist and signs and dates the log; shortages are reported the same day and the tray is resealed with a new numbered tag.",
+            "Every staff member, clinical and non-clinical, is trained to recognise collapse, shout for help, start chest compressions and bring the tray; basic life support certification is renewed every 2 years.",
+            "Fixed roles are assigned in advance - compressions, tray, drugs, ambulance call, family and documentation - so that no role is left vacant in a real event.",
+            "An unannounced mock drill at least quarterly, with measured times to first compression, to adrenaline drawn up and to the ambulance call, followed by a same-day blame-free debrief producing one dated, owned change.",
+            "Quarterly audit of the proportion of checks completed and of items found expired or missing, and a written referral pathway with working numbers for the nearest hospital with ventilator, blood bank and dialysis and for the ambulance service.",
+          ],
+        },
+      ],
+      mustDraw: [
+        "A two-column table of drugs against adult and paediatric doses, with the repeat interval in a third column.",
+        "A tray layout diagram with compartments labelled by emergency - anaphylaxis, arrest, seizure, hypoglycaemia, cardiac, respiratory, obstetric.",
+        "The weekly check log format: date, items checked, expiries due, action taken, signature.",
+      ],
+      markSplit: [
+        { part: "Principles of tray design, location, sealing and ownership", marks: 2 },
+        { part: "Drug list with correct adult and paediatric doses", marks: 3 },
+        { part: "Equipment list including airway, oxygen, circulation and monitoring", marks: 2 },
+        { part: "Checking, logging, training and staff roles", marks: 2 },
+        { part: "Mock drills, audit and the written referral pathway", marks: 1 },
+      ],
+      keywords: [
+        "emergency tray",
+        "crash cart",
+        "adrenaline",
+        "atropine",
+        "mock drill",
+        "referral pathway",
+        "NABH",
+      ],
+    },
+    {
+      id: "emergency-tray-and-readiness-t2",
+      paper: "III",
+      kind: "short-note",
+      marks: 5,
+      minutes: 10,
+      frequency: "common",
+      question: "Short note: The anaphylaxis kit at an immunisation session - contents, doses and the observation protocol.",
+      openingLines: [
+        "Anaphylaxis after immunisation is rare, at roughly one to two episodes per million doses, but it is the reason no immunisation session may be conducted without an anaphylaxis kit physically at the vaccination table.",
+        "The Government of India AEFI Surveillance and Response Operational Guidelines make the kit, the trained vaccinator and the 30-minute observation period mandatory components of every session.",
+      ],
+      answer: [
+        {
+          heading: "Contents of the kit",
+          points: [
+            "Adrenaline 1:1000 ampoules, at least five, in their carton and within expiry; 1 mL and 2 mL syringes with 23G to 25G needles for intramuscular injection.",
+            "A self-inflating bag with reservoir and infant, child and adult masks; oropharyngeal airways in paediatric sizes; a suction device where available.",
+            "Oxygen source with tubing and mask where available; intravenous cannulae, a giving set and normal saline; a torch, gloves and cotton with spirit swabs.",
+            "A laminated dose card by age, an AEFI reporting form, and the telephone numbers for the ambulance and the referral hospital.",
+          ],
+        },
+        {
+          heading: "Recognition and dose",
+          points: [
+            "Suspect anaphylaxis when there is sudden onset of airway, breathing or circulation compromise, usually with skin or mucosal change such as urticaria, flushing or angio-oedema, within minutes of the injection.",
+            "Adrenaline 1:1000 intramuscularly into the anterolateral thigh, 0.01 mg/kg: 0.15 mg for 6 months to 6 years, 0.3 mg for 6-12 years and 0.5 mg above 12 years and in adults.",
+            "Repeat the same dose every 5 minutes if there is no improvement; two or more doses define a refractory case needing urgent transfer.",
+            "Lay the patient flat with the legs raised (sitting up if breathing is difficult, left lateral if pregnant), give high-flow oxygen, and never stand the patient up, since sudden upright posture has caused fatal empty-ventricle arrest.",
+          ],
+        },
+        {
+          heading: "Protocol around the session",
+          points: [
+            "Observe every beneficiary for 30 minutes after immunisation before allowing them to leave the session site.",
+            "Distinguish anaphylaxis from vasovagal syncope, which is commoner, has bradycardia with pallor and sweating rather than tachycardia with urticaria, and recovers on lying flat with the legs raised.",
+            "After adrenaline, arrange transfer with an escort and oxygen; record the vaccine name, batch number, site, time of injection, time of onset and every dose given with its time.",
+            "Report the event as a serious AEFI within 24 hours to the district immunisation officer, retain the vial and the syringe, and counsel the family without discouraging future immunisation of the community.",
+          ],
+        },
+      ],
+      mustDraw: [
+        "The age-banded adrenaline dose card: under 6 years 0.15 mg, 6-12 years 0.3 mg, over 12 years and adults 0.5 mg, all 1:1000 intramuscular into the anterolateral thigh, repeated every 5 minutes.",
+        "A two-column comparison of anaphylaxis against vasovagal syncope.",
+      ],
+      markSplit: [
+        { part: "Kit contents", marks: 2 },
+        { part: "Adrenaline dose by age, route, site and repeat interval", marks: 2 },
+        { part: "Observation period, AEFI reporting and differentiation from syncope", marks: 1 },
+      ],
+      keywords: ["AEFI", "anaphylaxis kit", "immunisation", "adrenaline", "vasovagal syncope", "30-minute observation"],
+    },
+  ],
+  mcqs: [
+    {
+      id: "emergency-tray-and-readiness-q1",
+      stem: "A 30-year-old woman develops urticaria, wheeze and a blood pressure of 80/50 mmHg two minutes after an intramuscular injection in your clinic. Which is the correct first drug, dose and route?",
+      options: [
+        "Adrenaline 1:10,000, 0.5 mg intravenously",
+        "Adrenaline 1:1000, 0.5 mg intramuscularly into the anterolateral thigh, repeated every 5 minutes if needed",
+        "Hydrocortisone 200 mg intravenously, with adrenaline reserved for failure to respond",
+        "Chlorpheniramine 10 mg intravenously followed by nebulised salbutamol",
+        "Adrenaline 1:1000, 0.5 mg subcutaneously into the upper arm",
+      ],
+      answer: 1,
+      explanation:
+        "Anaphylaxis is treated with adrenaline 1:1000, 0.5 mg (0.5 mL) intramuscularly into the anterolateral thigh, repeated every 5 minutes while the reaction continues; the thigh gives faster and higher peak concentrations than any other accessible site. Intravenous adrenaline in an unmonitored clinic risks arrhythmia and hypertensive crisis and is reserved for monitored settings by infusion, so the 1:10,000 intravenous option is wrong here even though the concentration named is the arrest concentration. Steroids have no role in the first minutes because their onset is measured in hours, and delaying adrenaline for hydrocortisone is a recognised cause of death. Antihistamines and salbutamol treat urticaria and bronchospasm respectively but do nothing for the airway oedema and vasodilatory shock that kill. The subcutaneous route is obsolete for anaphylaxis because absorption is slow and unpredictable, particularly in a shocked, vasoconstricted patient.",
+      difficulty: "easy",
+    },
+    {
+      id: "emergency-tray-and-readiness-q2",
+      stem: "During an unannounced mock drill, an 8 kg infant is the simulated cardiac arrest patient. What dose of adrenaline should be drawn up, and how often is it repeated?",
+      options: [
+        "0.08 mg (0.8 mL of 1:10,000) intravenously every 3-5 minutes",
+        "0.8 mg (0.8 mL of 1:1000) intravenously every 3-5 minutes",
+        "1 mg (10 mL of 1:10,000) intravenously every 3-5 minutes, as for an adult",
+        "0.08 mg (0.08 mL of 1:1000) intramuscularly every 5 minutes",
+        "0.08 mg intravenously as a single dose only",
+      ],
+      answer: 0,
+      explanation:
+        "The paediatric arrest dose is 0.01 mg/kg intravenously or intraosseously, which for 8 kg is 0.08 mg, and since 1:10,000 contains 0.1 mg/mL this is 0.8 mL, repeated every 3-5 minutes throughout the resuscitation - the 0.1 mL/kg rule for 1:10,000 is the version worth memorising. Drawing 0.8 mL of 1:1000 would give 0.8 mg, a ten-fold overdose and exactly the error that concentration labelling on the tray is designed to prevent. The adult 1 mg dose in an 8 kg infant is a twelve-fold overdose. The intramuscular route is for anaphylaxis, not for arrest, where circulation is absent and absorption unreliable. Adrenaline in arrest is repeated every 3-5 minutes for as long as resuscitation continues, not given once.",
+      difficulty: "moderate",
+    },
+    {
+      id: "emergency-tray-and-readiness-q3",
+      stem: "You are setting up a clinic in a rural area where organophosphate self-poisoning is common. Regarding atropine on the tray, which statement is correct?",
+      options: [
+        "A total of 3 mg is the ceiling in poisoning as it is in bradycardia, so six ampoules suffice",
+        "There is no ceiling dose in organophosphate poisoning; give 2-5 mg intravenously in an adult and double the dose every 5 minutes until the chest is clear and the skin is dry, so stock at least 25 ampoules",
+        "Atropine should be withheld until pralidoxime is available, since pralidoxime is the definitive antidote",
+        "Atropine is titrated to pupil size, and dilated pupils are the endpoint of atropinisation",
+        "The paediatric dose is the same 2-5 mg, since children have proportionally larger receptor reserves",
+      ],
+      answer: 1,
+      explanation:
+        "In organophosphate poisoning there is no maximum atropine dose: the adult regimen is 2-5 mg intravenously with the dose doubled every 5 minutes until the endpoint of atropinisation, and hundreds of milligrams may be needed over hours, so a rural clinic must stock generously rather than to the bradycardia ceiling. The 3 mg maximum belongs only to symptomatic bradycardia and applying it in poisoning leads to fatal undertreatment. Pralidoxime is an adjunct that reactivates cholinesterase but does not replace atropine, and withholding atropine to wait for it is dangerous. The endpoints of atropinisation are a clear chest on auscultation, dry axillae, a heart rate above 80 per minute and a systolic pressure above 80 mmHg; pupil size is a late and unreliable guide. The paediatric dose is 0.05 mg/kg doubled on the same principle, not the adult dose.",
+      difficulty: "hard",
+    },
+    {
+      id: "emergency-tray-and-readiness-q4",
+      stem: "At a weekly tray check, which of the following findings is the one that most urgently stops the clinic from running its immunisation session that morning?",
+      options: [
+        "The pulse oximeter probe cable is frayed but the device still reads",
+        "Two adrenaline 1:1000 ampoules expired last month and no in-date ampoules remain",
+        "The paediatric blood pressure cuff is missing",
+        "The oral rehydration salt sachets are running low",
+        "The ECG machine paper roll is nearly finished",
+      ],
+      answer: 1,
+      explanation:
+        "Adrenaline is the only treatment for anaphylaxis, and the AEFI operational guidelines make an anaphylaxis kit with in-date adrenaline a precondition for conducting an immunisation session, so no in-date adrenaline means the session cannot proceed until it is replaced. A frayed oximeter cable is a maintenance item that does not prevent the treatment of a life-threatening reaction. A missing paediatric cuff impairs assessment but does not remove the ability to give the drug that saves the patient. Oral rehydration salts are not part of the anaphylaxis pathway at all. Missing ECG paper affects documentation of a rhythm rather than any immediate emergency treatment. The examinable principle is that adrenaline is the single item whose absence is by itself indefensible.",
+      difficulty: "easy",
+    },
+    {
+      id: "emergency-tray-and-readiness-q5",
+      stem: "Your clinic's mock drill for a collapsed adult repeatedly shows a delay of over 4 minutes before adrenaline is drawn up. Which change is most likely to reduce this time?",
+      options: [
+        "Buying a more expensive defibrillator with a larger screen",
+        "Assigning fixed roles in advance, keeping the tray sealed in one fixed known location with drugs grouped by emergency and a laminated dose chart in the lid, and re-timing the drill",
+        "Sending only the doctor for an advanced life support course and leaving other staff untrained",
+        "Storing the tray in a locked cupboard so that stock is never lost",
+        "Replacing the weekly check with a monthly check to save staff time",
+      ],
+      answer: 1,
+      explanation:
+        "Delay to the first drug is a systems problem, and the interventions that reliably shorten it are pre-assigned roles, a single sealed tray in one universally known location, drugs grouped by emergency rather than alphabetically, and a laminated weight-based dose chart inside the lid, with the drill re-timed to confirm the improvement. Better hardware does not address the human and layout factors causing the delay. Training only the doctor leaves the team unable to act in the minutes before the doctor arrives, and it is the whole staff, including non-clinical members, who should be trained. Locking the tray protects stock at the direct cost of access and is a recognised cause of fatal delay. Reducing the frequency of checks worsens readiness rather than improving response time.",
+      difficulty: "moderate",
+    },
+  ],
+  cards: [
+    {
+      id: "emergency-tray-and-readiness-c1",
+      front: "Adrenaline for anaphylaxis - concentration, dose, route, site, repeat?",
+      back: "1:1000 (1 mg/mL), intramuscular into the anterolateral thigh, 0.01 mg/kg: 0.15 mg for 6 months to 6 years, 0.3 mg for 6-12 years, 0.5 mg for over 12 years and adults. Repeat every 5 minutes until improvement; two or more doses means refractory anaphylaxis needing urgent transfer.",
+    },
+    {
+      id: "emergency-tray-and-readiness-c2",
+      front: "Adrenaline for cardiac arrest - concentration, dose, route, repeat?",
+      back: "1:10,000 (0.1 mg/mL): adult 1 mg (10 mL) IV or IO every 3-5 minutes throughout resuscitation. Child 0.01 mg/kg, that is 0.1 mL/kg of 1:10,000, maximum 1 mg, every 3-5 minutes. Confusing 1:1000 with 1:10,000 is a ten-fold lethal error.",
+    },
+    {
+      id: "emergency-tray-and-readiness-c3",
+      front: "Atropine: bradycardia dose versus organophosphate poisoning dose.",
+      back: "Bradycardia: adult 0.5-0.6 mg IV every 3-5 minutes to a maximum of 3 mg; child 0.02 mg/kg, minimum 0.1 mg, maximum single dose 0.5 mg. Organophosphate poisoning: adult 2-5 mg IV (child 0.05 mg/kg) doubled every 5 minutes until the chest is clear and the skin dry - there is no ceiling dose.",
+    },
+    {
+      id: "emergency-tray-and-readiness-c4",
+      front: "Self-inflating bag sizes, and why the reservoir matters.",
+      back: "Adult 1500-1600 mL, paediatric about 500 mL, neonatal 240 mL. Without the reservoir bag attached the delivered oxygen concentration falls from roughly 90% to about 50%, so the reservoir is part of the equipment rather than an optional extra.",
+    },
+    {
+      id: "emergency-tray-and-readiness-c5",
+      front: "How is an oropharyngeal airway sized and inserted?",
+      back: "Sizes 000 to 4, measured from the incisors to the angle of the mandible (or angle of the mouth to the tragus). In adults insert upside down and rotate 180 degrees; in children insert the right way up over a tongue depressor, because rotation damages the soft palate. Gagging means the patient does not need one.",
+    },
+    {
+      id: "emergency-tray-and-readiness-c6",
+      front: "Four rules that keep an emergency tray usable.",
+      back: "One tray in one fixed known location, sealed with a numbered breakable tag and never locked behind a single key holder; a named owner checking weekly against a printed list and signing a dated log; first-expiry-first-out rotation with anything within 3 months moved to routine use; restock and reseal immediately after every use.",
+    },
+    {
+      id: "emergency-tray-and-readiness-c7",
+      front: "What is measured in a clinic mock drill?",
+      back: "Seconds to first chest compression, seconds to adrenaline drawn up, and minutes to the ambulance call. Run it unannounced at least quarterly, with pre-assigned roles, and debrief the same day producing one dated change with a named owner.",
+    },
+    {
+      id: "emergency-tray-and-readiness-c8",
+      front: "Immunisation session: minimum anaphylaxis readiness required in India.",
+      back: "An anaphylaxis kit at the vaccination table with in-date adrenaline 1:1000, syringes and needles, a self-inflating bag with infant and child masks and oral airways; a vaccinator who knows the age-banded dose; and observation of every beneficiary for 30 minutes before leaving, with serious AEFI reported within 24 hours.",
+    },
+  ],
+  references: [
+    "Ministry of Health and Family Welfare, Government of India. AEFI Surveillance and Response Operational Guidelines, 2015 - anaphylaxis kit and 30-minute observation",
+    "Resuscitation Council UK. Emergency treatment of anaphylaxis: guidelines for healthcare providers, 2021",
+    "Indian Resuscitation Council and American Heart Association. Guidelines for CPR and Emergency Cardiovascular Care, 2020, with the 2023 focused update",
+    "National Accreditation Board for Hospitals and Healthcare Providers (NABH). Standards for Small Healthcare Organisations, 3rd edition, and Entry Level Certification Standards for Clinics, 2020 - emergency drugs, equipment and staff training",
+    "Indian Public Health Standards (IPHS), Ministry of Health and Family Welfare, Government of India. Guidelines for Primary Health Centres and Health and Wellness Centres, 2022 - essential emergency drug and equipment list",
+    "World Health Organization. WHO Model List of Essential Medicines, 23rd list, 2023",
+    "Eddleston M, Buckley NA, Eyer P, Dawson AH. Management of acute organophosphorus pesticide poisoning, Lancet 2008 - incremental atropine dosing and endpoints",
+    "Indian Academy of Pediatrics. Pediatric Advanced Life Support - Indian guidelines, 2019 - weight-based emergency drug chart",
+    "Federation of Obstetric and Gynaecological Societies of India. Good Clinical Practice Recommendations on Postpartum Haemorrhage and on Eclampsia, 2019",
+  ],
+});
+
 const cases: ClinicalCase[] = [
   {
     id: "emergency-case-1",

@@ -3316,6 +3316,390 @@ topics.push({
   ],
 });
 
+topics.push({
+  id: "fm-principles-biostatistics",
+  title: "Biostatistics for the family physician: data, distributions, tests of significance and rates",
+  oneLiner:
+    "Biostatistics is the application of statistical method to biological and health data - deciding what kind of variable you have, summarising it with the right measure of central tendency and dispersion, estimating the population value with a standard error and a confidence interval, testing a hypothesis with a test chosen by the type of data and the number and pairing of groups, and reporting rates and ratios correctly.",
+  frequency: "less-common",
+  keywords: [
+    "biostatistics",
+    "qualitative and quantitative data",
+    "nominal ordinal interval ratio",
+    "mean median mode",
+    "standard deviation",
+    "variance",
+    "coefficient of variation",
+    "normal distribution",
+    "standard error of the mean",
+    "confidence interval",
+    "null hypothesis",
+    "p value",
+    "type I and type II error",
+    "power",
+    "student t test",
+    "chi-square test",
+    "ANOVA",
+    "correlation coefficient",
+    "regression",
+    "incidence and prevalence",
+    "standardisation",
+    "skewness",
+  ],
+  sections: [
+    {
+      heading: "Variables and scales of measurement",
+      points: [
+        "**Biostatistics** is the science of collecting, summarising, presenting, analysing and drawing inferences from data relating to living beings; a **variable** is any characteristic that differs between individuals, and identifying its type is the first and most examined step because **the type of variable dictates both the summary measure and the statistical test**.",
+        "**Qualitative (categorical) data** are counted, not measured. **Nominal** data have named categories with no order - sex, blood group, religion, cause of death - and a two-category nominal variable is called **dichotomous or binary**. **Ordinal** data have categories with a rank but unequal or unknown intervals - pain graded mild, moderate or severe, socio-economic class, NYHA class, Likert responses.",
+        "**Quantitative (numerical) data** are measured. **Discrete** data take only whole values obtained by counting - parity, number of episodes of diarrhoea in a year. **Continuous** data can take any value within a range - height, weight, haemoglobin, blood pressure - and are limited only by the precision of the instrument.",
+        "The classical **scales of measurement are nominal, ordinal, interval and ratio**. An **interval scale has equal intervals but an arbitrary zero** (temperature in degrees Celsius - 40 degrees is not twice as hot as 20), whereas a **ratio scale has a true zero** (weight, height, pulse rate, serum creatinine), so ratios are meaningful.",
+        "**Down-grading data always loses information:** converting a measured haemoglobin into anaemic or not anaemic converts continuous data into binary, discards the size of the deficit, and reduces the statistical power of the study, so measure at the highest scale available and categorise only at the analysis stage if you must.",
+        "In a research protocol every variable must be listed with its **operational definition, its type and its unit** - the examiner's favourite question at a thesis viva is what type of variable your outcome is and why you chose your test.",
+      ],
+    },
+    {
+      heading: "Summarising data: central tendency, dispersion and shape",
+      points: [
+        "**Measures of central tendency: the mean** (sum of observations divided by their number - uses every value, but is dragged by outliers), **the median** (the middle value when the data are arranged in order, or the average of the two middle values when the number is even - unaffected by outliers), and **the mode** (the most frequently occurring value, the only measure usable for nominal data).",
+        "**Use the mean for symmetrical (normally distributed) continuous data, the median for skewed data or data with outliers or open-ended classes (income, hospital stay, incubation period), and the mode for nominal data.** Reporting a mean income or a mean length of stay is the classic error, because both are right-skewed.",
+        "**Measures of dispersion: the range** (crude, uses only the extremes), **the interquartile range** (the middle 50%, quoted with the median), **the variance** (the mean of the squared deviations from the mean), **the standard deviation** (the square root of the variance, in the same units as the data), and the **coefficient of variation = (standard deviation divided by mean) multiplied by 100**, which is dimensionless and is used to compare variability between variables measured in different units or on very different scales.",
+        "**Skewness** describes asymmetry. In a **positively (right) skewed** distribution the tail is to the right and **mean is greater than median which is greater than mode** (income, serum triglycerides, length of stay); in a **negatively (left) skewed** distribution the order is reversed. In a perfectly symmetrical distribution the mean, median and mode coincide.",
+        "**The normal (Gaussian) distribution** is a symmetrical bell-shaped curve completely defined by its mean and standard deviation, with mean = median = mode and total area under the curve equal to 1. **Approximately 68.3% of observations lie within 1 SD of the mean, 95.4% within 2 SD (95% within 1.96 SD) and 99.7% within 3 SD (99% within 2.58 SD)** - these numbers are the basis of biological reference ranges and must be quoted exactly.",
+        "**Standard deviation describes the spread of the individual observations; standard error of the mean describes the precision of the estimate of the mean.** SEM = standard deviation divided by the square root of n, so it falls as the sample grows while the SD does not. Quoting SEM instead of SD to make data look tight is a recognised form of misrepresentation.",
+      ],
+    },
+    {
+      heading: "From sample to population: confidence intervals and hypothesis testing",
+      points: [
+        "A study measures a **sample** in order to say something about a **population**; the difference between the sample estimate and the true population value is **sampling error**, and it is quantified by the standard error.",
+        "**A 95% confidence interval is the sample estimate plus or minus 1.96 standard errors**, and it means that a range constructed this way will contain the true population value in 95 of every 100 such samples. A **narrow interval means a precise estimate**; a wide interval means an underpowered study however impressive the point estimate.",
+        "**A confidence interval is more informative than a p value** because it shows both the direction and the plausible size of the effect. For a **difference between means the interval is significant if it excludes 0**; for a **ratio measure - odds ratio, risk ratio, hazard ratio - it is significant if it excludes 1**.",
+        "**Hypothesis testing** begins with the **null hypothesis (H0), that there is no difference or no association**, and the alternative hypothesis (H1), that there is. The test computes the probability of observing a difference at least as large as the one found **if the null hypothesis were true** - that probability is the **p value**.",
+        "**A p value below 0.05 leads to rejection of the null hypothesis. It is not the probability that the null hypothesis is true, nor the probability that the result is due to chance alone, nor a measure of the size or clinical importance of the effect** - saying so is the commonest conceptual error in a thesis viva. A very large study can produce a highly significant p value for a clinically trivial difference.",
+        "**Type I (alpha) error is rejecting a true null hypothesis - a false positive, conventionally capped at 0.05. Type II (beta) error is failing to reject a false null hypothesis - a false negative. Power = 1 - beta**, conventionally set at 80% or 90%, and it rises with a larger sample, a larger effect size, smaller variability and a higher alpha. **Multiple significance testing inflates the type I error**, which is why subgroup analyses must be pre-specified and corrected.",
+      ],
+    },
+    {
+      heading: "Choosing and interpreting a test of significance",
+      points: [
+        "Choose the test from four questions: **what type of outcome data (categorical or continuous), how many groups, are the groups paired or independent, and are the data normally distributed?** Answering those four aloud is what earns the mark, not the name of the test.",
+        "**Continuous, normally distributed data (parametric tests):** **unpaired (independent) Student t test** for two independent groups; **paired t test** for two measurements on the same subjects (before and after treatment); **one-way ANOVA** for three or more independent groups, followed by a post-hoc test such as Tukey to say which pairs differ; **repeated-measures ANOVA** for three or more measurements on the same subjects.",
+        "**Continuous but skewed, ordinal, or small samples (non-parametric tests):** **Mann-Whitney U test** for two independent groups, **Wilcoxon signed-rank test** for two paired measurements, **Kruskal-Wallis test** for three or more independent groups, and **Friedman test** for three or more paired measurements. Non-parametric tests make no assumption about the distribution but have slightly less power when the data really are normal.",
+        "**Categorical data:** the **chi-square test** for association between two categorical variables in independent groups, with the requirement that the **expected count is 5 or more in at least 80% of cells** - if not, use **Fisher's exact test**; **McNemar's test** for paired categorical data (before and after in the same subjects, or matched pairs); and the **chi-square test for trend** for an ordered exposure.",
+        "**Relationships between two continuous variables:** **Pearson's correlation coefficient (r)** for normally distributed data and **Spearman's rank correlation (rho)** for skewed or ordinal data; **r ranges from -1 to +1**, where 0 is no linear relationship. **Correlation is not causation and r-squared, not r, is the proportion of variance explained** - an r of 0.5 explains only 25% of the variance. **Linear regression** predicts a continuous outcome from one or more predictors, **logistic regression** predicts a binary outcome and yields adjusted odds ratios, and **Cox proportional hazards regression** analyses time-to-event data and yields hazard ratios.",
+        "**Survival data** are summarised by the **Kaplan-Meier curve**, which handles censored observations, and two curves are compared by the **log-rank test**.",
+      ],
+    },
+    {
+      heading: "Rates, ratios and proportions used in family practice",
+      points: [
+        "**A ratio** relates two independent quantities (sex ratio, doctor-population ratio); **a proportion** is a ratio in which the numerator is part of the denominator, expressed as a percentage; **a rate** is a proportion with time built into it and a multiplier applied (per 1000 or per 100000 per year).",
+        "**Incidence** is the number of **new** cases arising in a defined population at risk in a defined period, divided by the population at risk, and measures the **risk of developing the disease**; **prevalence** is the number of **existing (old plus new) cases** at a point or over a period divided by the population, and measures the **burden of disease**. The relationship is **prevalence = incidence multiplied by average duration** in a steady state, which explains why a chronic incurable disease has a high prevalence with a low incidence, and why a successful new cure reduces prevalence while leaving incidence unchanged.",
+        "**Vital statistics to know verbatim: crude birth rate** (live births per 1000 mid-year population per year); **crude death rate** (deaths per 1000 mid-year population per year); **infant mortality rate** (deaths under 1 year per 1000 live births per year); **neonatal mortality rate** (deaths under 28 days per 1000 live births); **under-five mortality rate** (per 1000 live births); and the **maternal mortality ratio** (maternal deaths per **100000 live births**) - the denominator and the multiplier are the marks.",
+        "**Case fatality rate** is deaths from a disease divided by the number of cases of that disease, expressed as a percentage, and measures the virulence or severity of the disease rather than its frequency in the population.",
+        "**Crude rates cannot be compared between populations with different age structures**; use **standardisation** - the **direct method** applies the age-specific rates of each population to a chosen standard population, and the **indirect method** applies the age-specific rates of a standard population to the study population to give the **standardised mortality ratio (SMR)**, used when age-specific rates in the study population are unreliable or unavailable.",
+        "**Presenting data:** use a **bar chart for nominal data with gaps between the bars, a histogram for continuous data with no gaps and area proportional to frequency, a pie chart for parts of a whole, a line or arithmetic graph for a trend over time, a scatter diagram for the relationship between two continuous variables**, and a **spot map for the geographical distribution of cases**. Every table needs a title, defined units and totals, and every axis needs a label with a scale that starts at zero unless the break is declared.",
+      ],
+    },
+    {
+      heading: "Common errors, and how statistics is examined",
+      points: [
+        "**Quoting a mean for skewed data**, quoting a **standard error where a standard deviation is meant**, and quoting a **p value with no effect size or confidence interval** are the three commonest reporting errors, and each is worth a mark in a critical appraisal question.",
+        "**Confusing statistical with clinical significance:** a trial of 20000 patients can show a significant 1 mmHg fall in blood pressure that no patient will notice; always ask for the size of the effect and its confidence interval before deciding to change practice.",
+        "**Absence of evidence is not evidence of absence:** a non-significant result in a small study means the study could not detect a difference, not that no difference exists - check the confidence interval and the power calculation before concluding equivalence.",
+        "**Ecological fallacy** is inferring an individual-level relationship from group-level data; **regression to the mean** explains apparent improvement in extreme values on repeat measurement and is why an uncontrolled before-and-after study over-states benefit; and **multiple testing** manufactures significance if enough comparisons are made.",
+        "In the DNB written paper biostatistics appears as short notes - measures of central tendency, standard deviation, normal distribution, tests of significance, sampling methods, standardisation of rates, and the presentation of data - each worth about 5 marks and each answerable in a definition, a formula, a classification and one worked example.",
+        "In the thesis viva the examiner will ask **what your outcome variable is, what test you used and why, what your p value means, and how you arrived at your sample size** - four questions that are answered from this topic alone.",
+      ],
+    },
+  ],
+  tables: [
+    {
+      heading: "Type of variable, its summary measure and its usual test",
+      columns: ["Type of data", "Example", "Central tendency", "Dispersion", "Usual test of significance"],
+      rows: [
+        ["Nominal", "Blood group, sex, cause of death", "Mode", "Proportions", "Chi-square or Fisher's exact test"],
+        ["Ordinal", "Pain mild-moderate-severe, NYHA class", "Median", "Range, interquartile range", "Mann-Whitney or Kruskal-Wallis"],
+        ["Discrete numerical", "Parity, number of episodes per year", "Median or mean", "Interquartile range or SD", "Non-parametric or Poisson methods"],
+        ["Continuous, normal", "Height, haemoglobin, blood pressure", "Mean", "Standard deviation", "t test or ANOVA"],
+        ["Continuous, skewed", "Income, length of hospital stay", "Median", "Interquartile range", "Mann-Whitney or Kruskal-Wallis"],
+      ],
+    },
+    {
+      heading: "Choosing a test of significance",
+      columns: ["Comparison", "Parametric test", "Non-parametric equivalent", "If the outcome is categorical"],
+      rows: [
+        ["Two independent groups", "Unpaired Student t test", "Mann-Whitney U test", "Chi-square or Fisher's exact test"],
+        ["Two paired measurements", "Paired t test", "Wilcoxon signed-rank test", "McNemar's test"],
+        ["Three or more independent groups", "One-way ANOVA with post-hoc test", "Kruskal-Wallis test", "Chi-square test on an r x c table"],
+        ["Three or more paired measurements", "Repeated-measures ANOVA", "Friedman test", "Cochran's Q test"],
+        ["Association of two continuous variables", "Pearson correlation, linear regression", "Spearman rank correlation", "Logistic regression for a binary outcome"],
+        ["Time to an event", "Cox proportional hazards regression", "Kaplan-Meier curve with log-rank test", "Not applicable"],
+      ],
+    },
+  ],
+  redFlags: [
+    "A thesis protocol with no sample size calculation, or one in which the calculated size was quietly abandoned when recruitment proved hard - the study is then underpowered, the negative result uninterpretable, and the ethics committee approval arguably invalid; recalculate and declare, never conceal.",
+    "A significant p value produced by testing many outcomes or many subgroups without pre-specification or correction - report it as hypothesis-generating only, because multiple testing manufactures false positives.",
+    "A mean and standard deviation reported for obviously skewed data such as income, length of stay or duration of symptoms, or a standard error quoted where a standard deviation is required - both misrepresent the data and must be corrected before submission.",
+    "A conclusion of no difference or equivalence drawn from a small non-significant study - absence of evidence is not evidence of absence, and the confidence interval will usually be wide enough to include a clinically important effect.",
+    "Crude rates compared directly between two populations of different age structure - the comparison is invalid until the rates are age-standardised.",
+    "Any analysis of individually identifiable data outside the approved protocol, or sharing of a raw data sheet containing names or hospital numbers - a data protection and ethics breach under the Digital Personal Data Protection Act 2023 as well as a research misconduct issue.",
+  ],
+  pearls: [
+    "**Standard deviation describes the data; standard error describes the estimate.** SEM = SD divided by the square root of n, so SEM shrinks as the sample grows and SD does not - one line that answers a whole short note.",
+    "**Mean for normal, median for skewed, mode for nominal** - and in a right-skewed distribution mean is greater than median is greater than mode.",
+    "**Mean plus or minus 1.96 SD covers 95% of individuals; mean plus or minus 1.96 SEM gives the 95% confidence interval of the mean.** Confusing the two is the single most common calculation error in the paper.",
+    "A p value is the probability of the observed result or a more extreme one **if the null hypothesis is true** - never the probability that the null hypothesis is true.",
+    "**Prevalence = incidence multiplied by average duration.** Curing a disease faster lowers prevalence without touching incidence; that sentence answers most incidence-versus-prevalence questions.",
+    "**Maternal mortality ratio is per 100000 live births; infant mortality rate is per 1000 live births.** Getting the denominator and the multiplier right is worth more marks than the definition itself.",
+  ],
+  theory: [
+    {
+      id: "fm-principles-biostatistics-t1",
+      paper: "I",
+      kind: "long",
+      marks: 10,
+      minutes: 20,
+      frequency: "less-common",
+      question:
+        "Discuss the tests of significance commonly used in medical research. How would you select an appropriate test for a given set of data? Illustrate with examples from family practice.",
+      openingLines: [
+        "A test of significance calculates the probability - the p value - of obtaining a difference at least as large as the one observed if the null hypothesis of no difference were true, and a p value below the pre-set level of significance, conventionally 0.05, leads to rejection of the null hypothesis.",
+        "The choice of test is not a matter of preference but follows mechanically from four questions: the type of outcome variable, the number of groups compared, whether the groups are independent or paired, and whether the data satisfy the assumptions of a parametric test.",
+      ],
+      answer: [
+        {
+          heading: "1. Basic concepts",
+          points: [
+            "**Null hypothesis (H0)**: there is no difference or no association in the population; **alternative hypothesis (H1)**: there is. The test is applied to the sample data and yields a test statistic and a p value.",
+            "**Level of significance (alpha)** is fixed before the study, conventionally at 0.05, and is the maximum acceptable probability of a **type I error - rejecting a true null hypothesis, a false positive**.",
+            "**Type II error (beta)** is failing to reject a false null hypothesis, a false negative; **power = 1 - beta**, conventionally 80% or 90%, and depends on sample size, effect size, variability and alpha.",
+            "**A confidence interval should always accompany the p value**, because it gives the direction and plausible magnitude of the effect: significant if it excludes 0 for a difference, or 1 for a ratio.",
+          ],
+        },
+        {
+          heading: "2. The four questions that select the test",
+          points: [
+            "**What type is the outcome variable** - nominal, ordinal, or continuous?",
+            "**How many groups** are being compared - two, or three or more?",
+            "**Are the groups independent or paired** - different patients, or the same patients measured twice?",
+            "**Are the assumptions of a parametric test met** - approximately normal distribution, reasonably equal variances and an adequate sample size? If not, use the non-parametric equivalent.",
+          ],
+        },
+        {
+          heading: "3. Parametric tests for continuous, normally distributed data",
+          points: [
+            "**Unpaired (independent) Student t test** - comparing mean birth weight of babies of anaemic and non-anaemic mothers in the practice.",
+            "**Paired t test** - comparing mean systolic blood pressure in the same 40 hypertensives before and 12 weeks after starting amlodipine.",
+            "**One-way ANOVA** with a post-hoc test such as Tukey - comparing mean HbA1c across three treatment groups; ANOVA says that a difference exists somewhere, the post-hoc test says where.",
+            "**Repeated-measures ANOVA** - peak expiratory flow measured in the same asthmatics at 0, 4 and 12 weeks.",
+            "**Pearson correlation and linear regression** - the relationship between body mass index and fasting blood glucose, remembering that r-squared and not r is the proportion of variance explained.",
+          ],
+        },
+        {
+          heading: "4. Non-parametric and categorical tests",
+          points: [
+            "**Mann-Whitney U test** for two independent groups with skewed or ordinal data - length of hospital stay in two treatment arms; **Wilcoxon signed-rank test** for paired ordinal data - pain score before and after an intervention.",
+            "**Kruskal-Wallis test** for three or more independent groups and **Friedman test** for three or more paired measurements.",
+            "**Chi-square test** for association between two categorical variables - immunisation status against literacy of the mother - valid only when the **expected count is 5 or more in at least 80% of cells**, otherwise **Fisher's exact test**.",
+            "**McNemar's test** for paired categorical data, for example smoking status in the same subjects before and after a cessation programme.",
+            "**Kaplan-Meier survival curves compared by the log-rank test**, and **Cox proportional hazards regression** where covariates must be adjusted for.",
+          ],
+        },
+        {
+          heading: "5. Interpretation and common errors",
+          points: [
+            "**Statistical significance is not clinical significance** - report the effect size and its confidence interval and judge whether the difference matters to the patient.",
+            "**A p value is not the probability that the null hypothesis is true**, nor a measure of the size of the effect.",
+            "**Multiple testing inflates the type I error**; subgroup analyses must be pre-specified and interpreted as hypothesis-generating.",
+            "**A non-significant result in a small study is not proof of no difference**; inspect the confidence interval and the power.",
+            "Check the assumptions before applying a parametric test, and state in the thesis which test was used for which variable and why.",
+          ],
+        },
+      ],
+      mustDraw: [
+        "A table with rows for two independent groups, two paired groups, three or more independent groups, three or more paired groups and association of two variables, and columns for the parametric test, the non-parametric equivalent and the categorical-outcome test.",
+        "A 2 x 2 contingency table with observed and expected counts, showing where the chi-square test applies and the expected-count rule.",
+      ],
+      markSplit: [
+        { part: "Null hypothesis, p value, alpha and beta errors, power", marks: 2 },
+        { part: "The four questions that select a test", marks: 2 },
+        { part: "Parametric tests with family practice examples", marks: 2 },
+        { part: "Non-parametric and categorical tests with examples", marks: 2 },
+        { part: "Interpretation, confidence intervals and common errors", marks: 2 },
+      ],
+      keywords: ["test of significance", "t test", "chi-square", "ANOVA", "Mann-Whitney", "p value", "power"],
+    },
+    {
+      id: "fm-principles-biostatistics-t2",
+      paper: "I",
+      kind: "short-note",
+      marks: 5,
+      minutes: 10,
+      frequency: "less-common",
+      question: "Write a short note on the normal distribution and its applications, including the standard deviation and the standard error of the mean.",
+      openingLines: [
+        "The normal or Gaussian distribution is a symmetrical, bell-shaped, unimodal frequency distribution of a continuous variable, completely defined by two parameters - its mean and its standard deviation - in which the mean, median and mode coincide and the total area under the curve equals one.",
+        "Most biological continuous variables such as height, haemoglobin and blood pressure approximate it, which is why it underpins reference ranges, parametric tests and confidence intervals.",
+      ],
+      answer: [
+        {
+          heading: "1. Properties",
+          points: [
+            "Symmetrical about the mean, bell-shaped, unimodal, and asymptotic to the horizontal axis; **mean = median = mode**.",
+            "Completely described by the mean (which fixes its position) and the standard deviation (which fixes its spread).",
+            "**Area under the curve: 68.3% of observations lie within mean plus or minus 1 SD, 95.4% within 2 SD (95% within 1.96 SD), and 99.7% within 3 SD (99% within 2.58 SD).**",
+            "The **standard normal distribution** is obtained by the **z transformation, z = (observation minus mean) divided by the standard deviation**, giving a distribution with mean 0 and standard deviation 1, from which any percentile can be read off a table.",
+          ],
+        },
+        {
+          heading: "2. Standard deviation and standard error",
+          points: [
+            "**Standard deviation is the square root of the variance**, the mean of the squared deviations from the mean, and it describes the **scatter of individual observations**; it is expressed in the same units as the data.",
+            "**Coefficient of variation = (SD divided by mean) x 100**, a unitless measure used to compare variability between different variables or units.",
+            "**Standard error of the mean = SD divided by the square root of n**, and it describes the **precision with which the sample mean estimates the population mean**; it falls as the sample size rises whereas the SD does not.",
+            "**Mean plus or minus 1.96 SD contains 95% of individuals; mean plus or minus 1.96 SEM is the 95% confidence interval of the mean** - the distinction is the most frequently examined point in this note.",
+          ],
+        },
+        {
+          heading: "3. Applications",
+          points: [
+            "**Construction of biological reference ranges** - the conventional range of mean plus or minus 2 SD, which by definition labels 5% of a healthy population abnormal, a point worth making when interpreting a mildly out-of-range report.",
+            "Calculation of **confidence intervals** and the basis of **parametric tests of significance** (t test, ANOVA) and of **sample size formulae**.",
+            "Determining the proportion of a population above or below a cut-off using the z score - for example, the proportion of children below a growth standard.",
+            "**Skewed data** (income, length of stay, incubation period, serum triglycerides) are not normal; either describe them with median and interquartile range, transform them (commonly by taking logarithms), or use non-parametric tests.",
+          ],
+        },
+      ],
+      mustDraw: [
+        "The bell-shaped normal curve with the mean marked and vertical lines at plus or minus 1, 2 and 3 SD, labelled 68.3%, 95.4% and 99.7%.",
+        "A sketch of a positively skewed curve with mode, median and mean marked in that order from left to right.",
+      ],
+      markSplit: [
+        { part: "Definition and properties of the curve", marks: 1 },
+        { part: "Area under the curve figures and the z transformation", marks: 1 },
+        { part: "Standard deviation, coefficient of variation and standard error", marks: 2 },
+        { part: "Applications and the handling of skewed data", marks: 1 },
+      ],
+      keywords: ["normal distribution", "standard deviation", "standard error", "z score", "reference range", "skewness"],
+    },
+  ],
+  mcqs: [
+    {
+      id: "fm-principles-biostatistics-q1",
+      stem: "The duration of hospital stay in days for seven patients was 2, 3, 3, 4, 5, 8 and 40. Which measure best represents the central tendency of these data?",
+      options: [
+        "The mean, which is 9.29 days",
+        "The median, which is 4 days",
+        "The mode, which is 3 days",
+        "The range, which is 38 days",
+      ],
+      answer: 1,
+      explanation:
+        "Arranged in order the middle (fourth) of seven values is 4, so the median is 4 days. The mean is (2+3+3+4+5+8+40)/7 = 65/7 = 9.29 days, which is arithmetically correct but is dragged upwards by the single outlier of 40 and represents none of the patients - length of stay is characteristically right-skewed, and the median with the interquartile range is the correct summary. The mode of 3 is correct as a value but the mode is the measure of choice for nominal data, not for continuous data with a clear middle. The range is a measure of dispersion, not of central tendency, so it cannot answer the question at all.",
+      difficulty: "moderate",
+    },
+    {
+      id: "fm-principles-biostatistics-q2",
+      stem: "In a sample of 100 adults the mean haemoglobin is 12.0 g/dL with a standard deviation of 2.0 g/dL. The 95% confidence interval for the mean haemoglobin of the population is approximately:",
+      options: ["8.0 to 16.0 g/dL", "11.8 to 12.2 g/dL", "11.6 to 12.4 g/dL", "10.0 to 14.0 g/dL"],
+      answer: 2,
+      explanation:
+        "The standard error of the mean is SD divided by the square root of n = 2.0 divided by 10 = 0.2 g/dL. The 95% confidence interval is the mean plus or minus 1.96 standard errors = 12.0 plus or minus (1.96 x 0.2) = 12.0 plus or minus 0.39, that is about 11.6 to 12.4 g/dL. Option 1 (8.0 to 16.0) is mean plus or minus 2 SD, which is the range containing 95% of individuals, not the confidence interval of the mean - this is the classic trap. Option 4 (10.0 to 14.0) is mean plus or minus 1 SD wrongly doubled and covers only about 68% of individuals. Option 2 is mean plus or minus 1 SEM, which corresponds to roughly 68% confidence, not 95%.",
+      difficulty: "hard",
+    },
+    {
+      id: "fm-principles-biostatistics-q3",
+      stem: "Systolic blood pressure in a population is normally distributed with a mean of 120 mmHg and a standard deviation of 10 mmHg. Approximately what percentage of the population has a systolic blood pressure between 100 and 140 mmHg?",
+      options: ["68%", "95%", "99.7%", "50%"],
+      answer: 1,
+      explanation:
+        "100 and 140 mmHg are exactly 2 standard deviations below and above the mean, and in a normal distribution approximately 95% (precisely 95.4%) of observations lie within mean plus or minus 2 SD. 68.3% corresponds to mean plus or minus 1 SD, that is 110 to 130 mmHg. 99.7% corresponds to mean plus or minus 3 SD, that is 90 to 150 mmHg. 50% is the proportion lying on either side of the mean, since the curve is symmetrical, and has nothing to do with the interval given.",
+      difficulty: "easy",
+    },
+    {
+      id: "fm-principles-biostatistics-q4",
+      stem: "In a village of 5000 people, 250 people were found to have hypertension at a survey on 1 January, and during that year 100 previously unaffected people newly developed hypertension. The annual incidence of hypertension in this village is:",
+      options: [
+        "5%",
+        "2%",
+        "Approximately 2.1%",
+        "7%",
+      ],
+      answer: 2,
+      explanation:
+        "Incidence uses only new cases in the numerator and only the population at risk in the denominator. The population at risk excludes the 250 who already have the disease, so it is 5000 - 250 = 4750, and the incidence is 100/4750 = 0.021, that is about 2.1% per year (21 per 1000 per year). Option 1 (5%) is the point prevalence on 1 January, 250/5000, which measures existing burden and not new risk. Option 2 (2%) is the common error of dividing the 100 new cases by the whole population of 5000 without removing those already affected. Option 4 (7%) adds old and new cases over the whole population, which gives the period prevalence, not the incidence.",
+      difficulty: "hard",
+    },
+    {
+      id: "fm-principles-biostatistics-q5",
+      stem: "A researcher wishes to compare the mean fall in systolic blood pressure in the same 50 hypertensive patients before and 12 weeks after starting a drug. The data are normally distributed. The appropriate test of significance is:",
+      options: [
+        "Unpaired Student t test",
+        "Paired Student t test",
+        "Chi-square test",
+        "One-way analysis of variance",
+      ],
+      answer: 1,
+      explanation:
+        "There are two measurements on the same individuals, so the observations are paired, the outcome is continuous and normally distributed, and the paired t test is correct - it analyses the within-patient differences and is more powerful than treating the readings as independent. The unpaired t test is for two separate groups of different individuals and would discard the pairing, wasting information and widening the confidence interval. The chi-square test applies to categorical outcomes in a contingency table, not to a continuous variable such as blood pressure. One-way ANOVA is used for three or more independent groups; with only two paired measurements it is not applicable, and its repeated-measures form would be needed only if there were three or more time points.",
+      difficulty: "moderate",
+    },
+  ],
+  cards: [
+    {
+      id: "fm-principles-biostatistics-c1",
+      front: "When do you use mean, median and mode?",
+      back: "Mean for symmetrical continuous data; median for skewed data, outliers or open-ended classes (income, length of stay); mode for nominal data. In right skew, mean > median > mode.",
+    },
+    {
+      id: "fm-principles-biostatistics-c2",
+      front: "Standard deviation versus standard error of the mean",
+      back: "SD is the square root of the variance and describes the scatter of individual observations. SEM = SD divided by the square root of n and describes the precision of the sample mean; SEM falls as n rises, SD does not.",
+    },
+    {
+      id: "fm-principles-biostatistics-c3",
+      front: "Area under the normal curve",
+      back: "68.3% within mean plus or minus 1 SD, 95.4% within 2 SD (95% within 1.96 SD), 99.7% within 3 SD (99% within 2.58 SD).",
+    },
+    {
+      id: "fm-principles-biostatistics-c4",
+      front: "What exactly does a p value of 0.03 mean?",
+      back: "If the null hypothesis were true, there is a 3% probability of obtaining a difference at least as large as the one observed. It is not the probability that the null hypothesis is true, and it says nothing about the size or clinical importance of the effect.",
+    },
+    {
+      id: "fm-principles-biostatistics-c5",
+      front: "Type I error, type II error and power",
+      back: "Type I (alpha) is rejecting a true null hypothesis, a false positive, conventionally 0.05. Type II (beta) is failing to reject a false null hypothesis, a false negative. Power = 1 - beta, conventionally 80-90%.",
+    },
+    {
+      id: "fm-principles-biostatistics-c6",
+      front: "Which test: two independent groups, two paired groups, three or more groups, categorical data?",
+      back: "Two independent: unpaired t test (Mann-Whitney if skewed). Two paired: paired t test (Wilcoxon). Three or more independent: ANOVA (Kruskal-Wallis). Categorical: chi-square, Fisher's exact if expected count under 5, McNemar if paired.",
+    },
+    {
+      id: "fm-principles-biostatistics-c7",
+      front: "Relationship between incidence and prevalence",
+      back: "Prevalence = incidence multiplied by average duration of the disease. A cure that shortens duration lowers prevalence without changing incidence; a chronic incurable disease has high prevalence with low incidence.",
+    },
+    {
+      id: "fm-principles-biostatistics-c8",
+      front: "Denominators: infant mortality rate, maternal mortality ratio, case fatality rate",
+      back: "IMR = deaths under 1 year per 1000 live births per year. MMR = maternal deaths per 100000 live births. Case fatality rate = deaths from a disease divided by cases of that disease, as a percentage.",
+    },
+  ],
+  references: [
+    "K Park - Park's Textbook of Preventive and Social Medicine, 27th edition, 2023 - health information and basic medical statistics",
+    "B K Mahajan - Methods in Biostatistics for Medical Students and Research Workers, 9th edition, 2018",
+    "Sundar Rao P S S and Richard J - An Introduction to Biostatistics and Research Methods, 5th edition, 2012",
+    "Douglas G Altman - Practical Statistics for Medical Research, Chapman and Hall, 2nd printing, 1999",
+    "Indian Council of Medical Research - National Ethical Guidelines for Biomedical and Health Research Involving Human Participants, 2017",
+    "National Board of Examinations - Guidelines for Preparation and Submission of Thesis Protocol and Thesis, current edition",
+  ],
+});
+
 const cases: ClinicalCase[] = [
   {
     id: "fm-principles-case-1",

@@ -3351,6 +3351,447 @@ topics.push({
   ],
 });
 
+topics.push({
+  id: "neurology-low-back-pain-neuro",
+  title: "Low back pain with neurological signs, including cauda equina syndrome",
+  oneLiner:
+    "Low back pain is triaged at the first consultation into three groups - simple non-specific back pain that needs advice and analgesia and no imaging, radicular pain from nerve root compression that follows a dermatomal map and usually settles with conservative care, and serious spinal pathology signalled by red flags, of which cauda equina syndrome is the one that must be recognised in minutes and decompressed within hours.",
+  frequency: "common",
+  keywords: [
+    "low back pain",
+    "sciatica",
+    "radiculopathy",
+    "cauda equina syndrome",
+    "saddle anaesthesia",
+    "straight leg raise",
+    "Lasegue sign",
+    "femoral stretch test",
+    "prolapsed intervertebral disc",
+    "L5 radiculopathy",
+    "S1 radiculopathy",
+    "foot drop",
+    "lumbar canal stenosis",
+    "neurogenic claudication",
+    "Pott spine",
+    "spinal epidural abscess",
+    "post-void residual",
+    "red flags",
+    "pregabalin",
+    "amitriptyline",
+    "STarT Back",
+  ],
+  sections: [
+    {
+      heading: "The size of the problem and the three-way triage",
+      points: [
+        "Low back pain has a lifetime prevalence of about 60-80% and is the leading cause of years lived with disability worldwide; Indian community studies report a point prevalence of roughly 6-10% and a one-year prevalence above 40%, with a higher burden in manual labourers, drivers and women engaged in prolonged floor-level household work.",
+        "**Every consultation for back pain answers one question first: is this non-specific mechanical back pain, radicular pain from nerve root compression, or serious spinal pathology?** Roughly 90-95% of presentations fall into the first group, about 5% are radicular, and under 1-2% represent malignancy, infection, fracture or cauda equina syndrome.",
+        "**Non-specific low back pain needs no imaging at all**, and imaging it does measurable harm: degenerative changes, disc bulges and Modic changes are present in a majority of asymptomatic adults over 40, so a scan generates a label, a fear of movement and a referral chain without changing management.",
+        "**Radicular pain (sciatica) is pain radiating below the knee in a dermatomal distribution, usually with paraesthesiae, and is worse than the back pain itself**; the commonest cause in adults under 50 is a posterolateral prolapsed intervertebral disc, most often at **L4-L5 and L5-S1**, and about 90% settle without surgery within 6-12 weeks.",
+        "In practice the useful history is the onset (sudden lift, gradual, or no trigger), the exact radiation and whether it crosses the knee, whether coughing or straining aggravates it, night pain, morning stiffness lasting over 30 minutes, fever, weight loss, cancer history, steroid or intravenous drug use, and a direct question about **bladder, bowel and saddle sensation in every single patient**.",
+        "Psychosocial factors - fear-avoidance beliefs, catastrophising, low mood, dissatisfaction at work and ongoing compensation claims - predict chronicity better than any imaging finding, and stratified tools such as the **STarT Back** questionnaire identify who needs early psychologically informed physiotherapy.",
+      ],
+    },
+    {
+      heading: "Examining for neurological signs and localising the root",
+      points: [
+        "Inspect the standing patient for the loss of lumbar lordosis, a sciatic list, a gibbus (angular kyphosis of tuberculous spine), scars and skin lesions; palpate for midline bony tenderness (fracture, infection, metastasis) versus paraspinal muscle tenderness (mechanical), and percuss the spinous processes.",
+        "**Test the three roots that matter with three movements, three sensory areas and two reflexes:** L4 - knee extension and ankle dorsiflexion, sensation over the medial leg and medial malleolus, reduced knee jerk; L5 - big toe dorsiflexion (extensor hallucis longus) and foot dorsiflexion, sensation over the dorsum of the foot and lateral leg, **no reflex change**; S1 - plantar flexion and eversion, sensation over the lateral foot and sole, **lost ankle jerk**.",
+        "**The straight leg raise (Lasegue sign)** reproduces the patient's radiating leg pain between 30 and 70 degrees of passive hip flexion with the knee extended, and is sensitive but not specific for L5 and S1 root tension; **the crossed straight leg raise** - raising the good leg reproduces pain in the affected leg - is far more specific and, when positive, strongly predicts a large central or paracentral disc.",
+        "**The femoral stretch test** (prone hip extension with the knee flexed) is the equivalent for the upper lumbar roots L2, L3 and L4, and an upper lumbar radiculopathy is unusual enough that it deserves imaging and a search for a non-disc cause.",
+        "Ask the patient to **walk on the heels (L5) and on the toes (S1)**, look for a positive Trendelenburg from gluteus medius weakness (L5), and grade any weakness on the MRC scale, since a documented power grade is the only way to prove progression later.",
+        "Perform a **digital rectal examination with assessment of anal tone and voluntary squeeze, plus perianal pinprick sensation over the S2-S4 dermatomes, in every patient with bilateral leg symptoms or any urinary complaint**, and measure a bladder scan post-void residual - these three findings are what convert a suspicion into an emergency.",
+      ],
+    },
+    {
+      heading: "Cauda equina syndrome - the emergency in the middle of a common complaint",
+      points: [
+        "**Cauda equina syndrome is compression of the lumbosacral nerve roots below the conus medullaris (below L1-L2)**, most often by a large central disc prolapse at L4-L5 or L5-S1, and less often by tumour, epidural abscess, haematoma, trauma or severe canal stenosis; it is rare, at about 1 in 65,000 per year, but it is the single most litigated diagnosis in back pain.",
+        "The classical features are **bilateral sciatica, saddle (perineal) anaesthesia, bladder dysfunction, faecal incontinence or loss of anal tone, and sexual dysfunction**, with variable lower limb weakness and areflexia; **no single feature is reliable enough to rule the diagnosis in or out, which is why the whole set must be asked about and examined every time**.",
+        "**Bladder involvement evolves in a sequence that must be understood**: first loss of the sensation of bladder filling and of the urinary stream passing, then difficulty initiating micturition and a poor stream, then painless retention with overflow incontinence. **Painless retention with overflow is late (cauda equina syndrome with retention, CESR) and carries a far worse prognosis than the incomplete stage (CESI) where sensation is impaired but voiding is preserved.**",
+        "**A post-void residual volume above 200 mL, or a patient who cannot say whether urine is passing, mandates emergency MRI of the whole spine on the same admission, out of hours if necessary** - not an outpatient scan, not a trial of analgesia, and not a plain radiograph, which cannot see neural tissue.",
+        "**Definitive treatment is emergency surgical decompression, and outcome depends on operating before retention is established**; the widely accepted target is decompression within 48 hours of symptom onset, and within 24 hours where feasible, with the strongest evidence being that patients decompressed while still incomplete (CESI) do substantially better than those already in retention.",
+        "In practice the family physician's job is complete when the diagnosis is suspected and the patient is transferred that same hour to a centre with MRI and spinal surgery, with the time of onset of each symptom documented; **safety-netting every patient discharged with sciatica by explaining in writing the symptoms that mandate immediate return is a medico-legal necessity, not a courtesy**.",
+      ],
+    },
+    {
+      heading: "The other red flags and their Indian weighting",
+      points: [
+        "**Infection - tuberculosis of the spine (Pott disease) is the commonest cause of serious spinal infection in India** and must be considered in any patient with constitutional symptoms, unremitting night pain, thoracolumbar involvement, a gibbus or a paravertebral cold abscess; MRI shows contiguous vertebral body destruction with relative disc preservation and a paravertebral collection, and treatment is 12 months of anti-tuberculosis therapy (2HRZE then 10 months of continuation) with surgery reserved for instability, deformity or neurological deficit.",
+        "**Pyogenic spinal epidural abscess and vertebral osteomyelitis** present with fever, severe localised spinal tenderness, a rising C-reactive protein and erythrocyte sedimentation rate, and progressive neurological deficit, typically in diabetics, dialysis patients, intravenous drug users and after spinal procedures; blood cultures and urgent contrast MRI come before any empirical antibiotic in a stable patient, but never delay antibiotics in sepsis.",
+        "**Malignancy** is suggested by age over 50 with new back pain, a known cancer (breast, prostate, lung, thyroid, kidney, myeloma), unexplained weight loss, pain that is unremitting at night and not relieved by lying down, and a raised alkaline phosphatase or a monoclonal band; **new or progressive neurological signs in a patient with cancer are metastatic spinal cord compression until MRI of the whole spine proves otherwise, and dexamethasone 16 mg daily should be started while arranging it**.",
+        "**Fracture** is suggested by a fall or trauma, age over 65 with osteoporosis risk, prolonged corticosteroid use, and sudden severe pain with midline tenderness; a vertebral fragility fracture is diagnosed on plain radiographs and mandates assessment and treatment of osteoporosis in addition to analgesia.",
+        "**Inflammatory back pain (axial spondyloarthritis)** is the opposite pattern and is regularly missed for years - onset before 45, insidious, morning stiffness over 30 minutes, improvement with exercise and not with rest, night pain in the second half of the night, alternating buttock pain, and a good response to NSAIDs; check HLA-B27, C-reactive protein and sacroiliac joint imaging and refer to rheumatology.",
+        "**Lumbar canal stenosis** in older patients gives neurogenic claudication - bilateral buttock and leg pain and heaviness on walking, relieved by sitting or by flexing forward, with a longer walking distance uphill or leaning on a trolley, and normal peripheral pulses; the key differentiation from vascular claudication is the posture dependence and the preserved pulses.",
+      ],
+    },
+    {
+      heading: "Investigation and conservative management",
+      points: [
+        "**Do not image non-specific low back pain.** Image urgently (MRI, same day) for suspected cauda equina syndrome, metastatic cord compression, spinal infection or a progressive motor deficit; image routinely (MRI within weeks) for radicular pain that has failed 6-12 weeks of conservative care and where surgery is being considered, or where a red flag is present but not an emergency.",
+        "Baseline blood tests when serious pathology is suspected are a complete blood count, erythrocyte sedimentation rate and C-reactive protein, blood glucose, renal function, calcium, alkaline phosphatase, and prostate-specific antigen or serum protein electrophoresis where the history points that way; plain radiographs are useful only for fracture, deformity and alignment, and never exclude a disc or a tumour.",
+        "**The core of conservative treatment is to stay active and avoid bed rest**; more than a day or two in bed worsens outcomes. Explain that hurt does not equal harm, that the natural history is favourable, and give a specific graded return-to-activity plan rather than a period of rest.",
+        "**Analgesia: an NSAID is first line** - ibuprofen 400 mg three times daily, or naproxen 250-500 mg twice daily, or diclofenac 50 mg three times daily, at the lowest effective dose for the shortest period, with a proton pump inhibitor in those over 60 or with gastrointestinal risk, and avoided in renal impairment, uncontrolled hypertension and established cardiovascular disease. Paracetamol 1 g up to four times daily is a poor sole agent for acute back pain but is a useful adjunct.",
+        "A short course of a **weak opioid (tramadol 50 mg up to three times daily, or codeine with paracetamol)** may be added for severe pain for a few days only. **Gabapentinoids should not be used for sciatica** - trials show no benefit and significant sedation, dizziness and misuse potential - although **amitriptyline 10-25 mg at night** or duloxetine 30-60 mg daily are reasonable for established chronic neuropathic or persistent pain.",
+        "Structured exercise and physiotherapy, with manual therapy only as part of a package that includes exercise, are the mainstay beyond the first fortnight; **epidural corticosteroid injection provides short-term relief of severe radicular pain** and can avert surgery in some, and **elective discectomy is offered for radicular pain persisting beyond 6-12 weeks with concordant imaging, giving faster relief of leg pain but a similar outcome at one to two years compared with conservative care**.",
+      ],
+    },
+  ],
+  tables: [
+    {
+      heading: "Lumbosacral root localisation",
+      columns: ["Root", "Motor weakness", "Sensory loss", "Reflex", "Provocation test"],
+      rows: [
+        ["L3", "Hip flexion and knee extension", "Anterior thigh", "Knee jerk may be reduced", "Femoral stretch test"],
+        ["L4", "Knee extension, ankle dorsiflexion (tibialis anterior)", "Medial leg and medial malleolus", "Knee jerk reduced or absent", "Femoral stretch test"],
+        ["L5", "Big toe dorsiflexion (extensor hallucis longus), foot dorsiflexion, hip abduction", "Dorsum of foot and lateral leg, first web space", "No reflex change", "Straight leg raise; heel walking; Trendelenburg"],
+        ["S1", "Plantar flexion and foot eversion", "Lateral border of foot, sole, little toe", "Ankle jerk absent", "Straight leg raise; toe walking"],
+        ["S2-S4", "Anal sphincter and bladder detrusor", "Saddle or perineal area", "Anal wink and bulbocavernosus lost", "Digital rectal examination and perianal pinprick"],
+      ],
+    },
+    {
+      heading: "Red flags in low back pain and the action each demands",
+      columns: ["Red flag", "Suspected pathology", "Action"],
+      rows: [
+        ["Saddle anaesthesia, bilateral sciatica, urinary retention or incontinence, faecal incontinence, lax anal tone", "Cauda equina syndrome", "Emergency same-day MRI whole spine and immediate spinal surgical referral; aim to decompress within 24-48 hours"],
+        ["Known cancer with new back pain, or progressive neurological deficit in a cancer patient", "Metastatic spinal cord compression", "Dexamethasone 16 mg daily started immediately, urgent MRI whole spine within 24 hours, oncology and spinal referral"],
+        ["Fever, night sweats, weight loss, unremitting night pain, gibbus, thoracolumbar pain", "Tuberculosis of the spine (Pott disease)", "ESR, CRP, chest radiograph, contrast MRI spine, tissue or pus for CBNAAT and culture; 12 months of ATT (2HRZE + 10 months continuation)"],
+        ["Fever with severe focal spinal tenderness, diabetes, dialysis, intravenous drug use or recent spinal procedure", "Pyogenic vertebral osteomyelitis or epidural abscess", "Blood cultures, ESR and CRP, urgent contrast MRI; antibiotics after cultures unless septic; spinal surgical opinion"],
+        ["Age over 65, osteoporosis, prolonged steroids, trauma, sudden pain with midline tenderness", "Vertebral fragility or traumatic fracture", "Plain radiographs, consider CT; analgesia, bone protection, DEXA, treat osteoporosis"],
+        ["Onset before 45, insidious, morning stiffness over 30 minutes, better with exercise, night pain, alternating buttock pain", "Axial spondyloarthritis", "HLA-B27, CRP, sacroiliac joint radiographs or MRI, rheumatology referral, NSAID trial"],
+        ["Progressive or severe motor weakness such as a new foot drop", "Significant root or cord compression", "Urgent MRI and spinal surgical opinion within days, not weeks"],
+      ],
+    },
+    {
+      heading: "Cauda equina syndrome versus lumbar canal stenosis versus vascular claudication",
+      columns: ["Feature", "Cauda equina syndrome", "Lumbar canal stenosis", "Vascular claudication"],
+      rows: [
+        ["Onset", "Acute or subacute, over hours to days", "Chronic, over months to years", "Chronic, progressive"],
+        ["Leg symptoms", "Bilateral sciatica, often with weakness", "Bilateral buttock and leg heaviness on walking", "Calf cramp at a fixed claudication distance"],
+        ["Relief", "None; may worsen", "Sitting or flexing forward; better uphill or leaning on a trolley", "Standing still, irrespective of posture"],
+        ["Saddle sensation", "Impaired or absent - the cardinal sign", "Normal", "Normal"],
+        ["Bladder", "Loss of filling sensation, then poor stream, then painless retention with overflow", "Normal until very advanced", "Normal"],
+        ["Peripheral pulses", "Normal", "Normal", "Reduced or absent, with bruits"],
+        ["Action", "Emergency MRI and decompression", "Elective MRI, physiotherapy, consider decompression", "Ankle-brachial index, risk factor control, vascular referral"],
+      ],
+    },
+  ],
+  redFlags: [
+    "New urinary hesitancy, loss of the sensation of the stream, painless retention or overflow incontinence in a patient with back pain - suspect cauda equina syndrome; check post-void residual and arrange emergency MRI of the whole spine the same hour.",
+    "Saddle or perineal numbness, loss of anal tone on rectal examination, or bilateral sciatica - cauda equina syndrome until MRI proves otherwise; refer immediately for decompression within 24-48 hours.",
+    "A progressive or severe motor deficit such as a new foot drop or a rapidly worsening weakness - urgent MRI and a spinal surgical opinion within days.",
+    "Back pain in a patient with a known malignancy, or a new deficit with cancer history - start dexamethasone 16 mg daily and arrange MRI of the whole spine within 24 hours for metastatic cord compression.",
+    "Fever, night sweats, weight loss, unremitting night pain or a gibbus - tuberculous spondylitis or a pyogenic spinal infection; investigate with inflammatory markers and contrast MRI, and take tissue before committing to long treatment.",
+    "Severe localised spinal tenderness with fever in a diabetic, a dialysis patient or an intravenous drug user - spinal epidural abscess; blood cultures and emergency contrast MRI.",
+    "First episode of significant back pain over 50 or under 20, or thoracic rather than lumbar pain - a lower threshold for investigation applies in both.",
+  ],
+  pearls: [
+    "Ask every back pain patient about bladder function and saddle sensation, and write the answer in the notes - the negative record is as valuable as the positive finding.",
+    "Painless urinary retention with overflow is a late sign of cauda equina syndrome, not an early one; by then the prognosis has already worsened, so act on the loss of the sensation of the stream.",
+    "The crossed straight leg raise is much more specific than the straight leg raise, and when positive predicts a large central or paracentral disc.",
+    "L5 has no reflex - a radiculopathy with weak big toe dorsiflexion, numbness of the first web space and normal ankle and knee jerks is L5 until proved otherwise.",
+    "An absent ankle jerk with weak plantar flexion and numbness of the lateral border of the foot is S1; an absent knee jerk with weak knee extension and medial leg numbness is L4.",
+    "Do not image non-specific low back pain - degenerative changes are near universal after 40 and the scan buys a label, a fear of movement and a referral, not a diagnosis.",
+    "Avoid bed rest; staying active is the single most consistently effective piece of advice in acute back pain.",
+    "Gabapentin and pregabalin do not work for sciatica and should not be prescribed for it, despite how often they are.",
+    "In India, tuberculosis of the spine is the commonest serious spinal infection; think of it with night pain, constitutional symptoms and thoracolumbar involvement, and remember CNS and skeletal tuberculosis are treated for 12 months, not six.",
+    "Ninety per cent of sciatica settles within 6-12 weeks with conservative care, so surgery is for the persistent, the progressive and the emergency, and the conversation about it belongs at week six, not week one.",
+  ],
+  theory: [
+    {
+      id: "neurology-low-back-pain-neuro-t1",
+      paper: "II",
+      kind: "long",
+      marks: 10,
+      minutes: 20,
+      frequency: "common",
+      question:
+        "A 42-year-old lorry driver presents with severe low back pain radiating to the left leg for ten days, with numbness of the perineum and difficulty passing urine since this morning. Discuss the clinical evaluation and management of low back pain with neurological signs, with emphasis on cauda equina syndrome.",
+      openingLines: [
+        "Cauda equina syndrome is compression of the lumbosacral nerve roots below the conus medullaris, most commonly by a large central prolapsed intervertebral disc at L4-L5 or L5-S1, and it is a surgical emergency in which the outcome is determined by the interval between the onset of bladder dysfunction and decompression.",
+        "In this patient, low back pain with unilateral radiation accompanied by perineal numbness and new urinary difficulty is cauda equina syndrome until an emergency MRI of the whole spine proves otherwise, and the immediate task is transfer to a centre with MRI and spinal surgery rather than analgesia and review.",
+      ],
+      answer: [
+        {
+          heading: "Triage of low back pain",
+          points: [
+            "Non-specific mechanical low back pain - 90-95% of presentations, no imaging, advice, analgesia and activity.",
+            "Radicular pain (sciatica) - pain radiating below the knee in a dermatomal distribution, usually from a posterolateral disc prolapse at L4-L5 or L5-S1, of which about 90% settle in 6-12 weeks.",
+            "Serious spinal pathology - under 1-2%: cauda equina syndrome, malignancy and metastatic cord compression, infection including tuberculous spondylitis, fracture and inflammatory spondyloarthritis.",
+            "The triage is made by history and examination; imaging follows the suspicion rather than creating it.",
+          ],
+        },
+        {
+          heading: "History",
+          points: [
+            "Onset, site, radiation, whether the leg pain is worse than the back pain, aggravation by coughing or straining, and any preceding lifting injury.",
+            "Direct questions in every case about bladder emptying and the sensation of the urinary stream, faecal continence, saddle numbness and sexual function, with the time of onset of each recorded.",
+            "Red flag screen - fever, night sweats, weight loss, night pain, known cancer, corticosteroid use, intravenous drug use, trauma, osteoporosis risk, and age at first onset.",
+            "Occupational and psychosocial history - a lorry driver has prolonged seated vibration exposure, and fear-avoidance beliefs, low mood and compensation issues predict chronicity.",
+          ],
+        },
+        {
+          heading: "Examination",
+          points: [
+            "Gait, posture, sciatic list, loss of lumbar lordosis, gibbus, midline versus paraspinal tenderness, and range of lumbar movement.",
+            "Root-level motor testing - knee extension (L3-L4), ankle dorsiflexion (L4-L5), big toe dorsiflexion (L5), plantar flexion and eversion (S1) - graded on the MRC scale, with heel and toe walking.",
+            "Sensory testing of the L4, L5 and S1 dermatomes and, critically, the S2-S4 saddle area to pinprick and light touch.",
+            "Reflexes - knee jerk (L3-L4), ankle jerk (S1), plantar response; an upgoing plantar or hyperreflexia indicates a cord rather than a cauda equina lesion.",
+            "Straight leg raise and crossed straight leg raise for L5 and S1 tension, femoral stretch test for L2 to L4.",
+            "Digital rectal examination for resting anal tone and voluntary squeeze, and a bladder scan for post-void residual volume - a residual above 200 mL is highly significant.",
+          ],
+        },
+        {
+          heading: "Cauda equina syndrome - features, stages and urgency",
+          points: [
+            "Cardinal features - bilateral sciatica, saddle anaesthesia, bladder dysfunction, faecal incontinence or loss of anal tone, sexual dysfunction, and variable lower limb weakness with areflexia.",
+            "Bladder involvement progresses from loss of the sensation of filling and of the stream, to difficulty initiating micturition and a poor stream, to painless retention with overflow incontinence.",
+            "Incomplete cauda equina syndrome (CESI), where sensation is altered but voiding is preserved, carries a substantially better prognosis than cauda equina syndrome with retention (CESR).",
+            "Emergency MRI of the whole spine is the investigation of choice and must be done on the same admission, out of hours if necessary; plain radiographs and CT are inadequate for neural tissue.",
+            "Treatment is emergency surgical decompression, targeted within 24-48 hours of symptom onset, and the earlier the better within that window.",
+            "Document the time of onset of each symptom and the findings of rectal and saddle examination - this is the most litigated diagnosis in musculoskeletal practice.",
+          ],
+        },
+        {
+          heading: "Management of the other groups and follow-up",
+          points: [
+            "Non-specific back pain - reassurance that hurt is not harm, stay active, avoid bed rest, an NSAID such as ibuprofen 400 mg three times daily or naproxen 500 mg twice daily with gastroprotection where indicated, paracetamol as an adjunct, heat, and early graded exercise.",
+            "Radicular pain - the same measures, with amitriptyline 10-25 mg at night for persistent neuropathic pain (gabapentinoids are not recommended for sciatica), structured physiotherapy, and consideration of epidural corticosteroid injection for severe radicular pain.",
+            "Refer for MRI and a surgical opinion if radicular pain persists beyond 6-12 weeks, if there is a progressive motor deficit, or if a red flag emerges; discectomy gives faster relief of leg pain with a similar outcome at one to two years.",
+            "Treat the underlying serious pathology when identified - dexamethasone 16 mg daily and urgent MRI for suspected metastatic cord compression, 12 months of anti-tuberculosis treatment for Pott spine, culture-directed antibiotics for pyogenic spinal infection, bone protection after a fragility fracture.",
+            "Safety-net every discharged patient in writing with the symptoms that mandate immediate return - new numbness of the perineum, any change in urination or defecation, worsening weakness, or fever.",
+          ],
+        },
+      ],
+      mustDraw: [
+        "A table of L4, L5 and S1 root levels with motor, sensory and reflex findings.",
+        "A flow chart: low back pain, then red flag screen, then cauda equina features present - emergency MRI whole spine and decompression within 48 hours; red flag without cauda equina - urgent MRI; radicular - conservative care for 6-12 weeks; non-specific - advice and analgesia with no imaging.",
+      ],
+      markSplit: [
+        { part: "Triage into non-specific, radicular and serious pathology", marks: 1.5 },
+        { part: "History including the bladder and saddle questions and red flag screen", marks: 1.5 },
+        { part: "Examination and root localisation", marks: 2 },
+        { part: "Cauda equina syndrome - features, staging and time to decompression", marks: 3 },
+        { part: "Conservative management with drugs and doses", marks: 1.5 },
+        { part: "Referral criteria and safety-netting", marks: 0.5 },
+      ],
+      keywords: ["cauda equina syndrome", "sciatica", "straight leg raise", "saddle anaesthesia", "post-void residual", "discectomy"],
+    },
+    {
+      id: "neurology-low-back-pain-neuro-t2",
+      paper: "II",
+      kind: "enumerate",
+      marks: 5,
+      minutes: 10,
+      frequency: "common",
+      question:
+        "Enumerate the red flags in low back pain and outline the action required for each.",
+      openingLines: [
+        "Red flags in low back pain are clinical features that raise the probability of serious spinal pathology - cauda equina syndrome, malignancy, infection, fracture and inflammatory disease - which together account for under 2% of presentations but for almost all of the avoidable harm.",
+        "Their purpose is not to be ticked off as a list but to change the next action, so each flag should be stated together with the pathology it suggests and the investigation or referral it demands.",
+      ],
+      answer: [
+        {
+          heading: "Cauda equina syndrome",
+          points: [
+            "Saddle or perineal anaesthesia, bilateral sciatica, urinary retention or overflow incontinence, faecal incontinence, loss of anal tone, sexual dysfunction.",
+            "Action - digital rectal examination, perianal pinprick, post-void residual measurement, emergency MRI of the whole spine the same day, immediate spinal surgical referral for decompression within 24-48 hours.",
+          ],
+        },
+        {
+          heading: "Malignancy and metastatic cord compression",
+          points: [
+            "Age over 50 with new back pain, known cancer of the breast, prostate, lung, thyroid or kidney, myeloma, unexplained weight loss, unremitting night pain not relieved by lying down, and failure to improve after a month.",
+            "Action - full blood count, ESR and CRP, calcium, alkaline phosphatase, PSA or serum protein electrophoresis; MRI of the whole spine within 24 hours if a deficit is present, with dexamethasone 16 mg daily started immediately.",
+          ],
+        },
+        {
+          heading: "Infection",
+          points: [
+            "Fever, night sweats, weight loss, unremitting night pain, gibbus or angular kyphosis, a paravertebral swelling, diabetes, dialysis, intravenous drug use, immunosuppression or recent spinal instrumentation.",
+            "Action - blood cultures, ESR and CRP, chest radiograph, contrast MRI of the spine, and tissue or pus for CBNAAT, acid-fast bacilli and pyogenic culture; tuberculous spondylitis is treated with 12 months of anti-tuberculosis therapy, pyogenic infection with culture-directed intravenous antibiotics.",
+          ],
+        },
+        {
+          heading: "Fracture",
+          points: [
+            "Significant trauma, or minor trauma in a patient over 65 or on prolonged corticosteroids, sudden severe pain with midline bony tenderness, and known osteoporosis.",
+            "Action - plain radiographs of the affected region, CT if the radiograph is equivocal or an unstable injury is suspected, analgesia, bracing where indicated, DEXA and osteoporosis treatment.",
+          ],
+        },
+        {
+          heading: "Inflammatory back pain and progressive neurological deficit",
+          points: [
+            "Onset before 45, insidious course, morning stiffness over 30 minutes, improvement with exercise but not with rest, night pain waking the patient in the second half of the night, alternating buttock pain, and a good response to NSAIDs - suggests axial spondyloarthritis; check HLA-B27, CRP and sacroiliac imaging and refer to rheumatology.",
+            "Any progressive or severe motor deficit, such as a new foot drop or worsening weakness over days - urgent MRI and a spinal surgical opinion within days rather than weeks.",
+          ],
+        },
+      ],
+      mustDraw: [
+        "A three-column table of red flag, suspected pathology and required action.",
+      ],
+      markSplit: [
+        { part: "Cauda equina syndrome features and action", marks: 1.5 },
+        { part: "Malignancy and cord compression", marks: 1 },
+        { part: "Infection including tuberculous spondylitis", marks: 1 },
+        { part: "Fracture", marks: 0.75 },
+        { part: "Inflammatory back pain and progressive deficit", marks: 0.75 },
+      ],
+      keywords: ["red flags", "cauda equina", "Pott spine", "cord compression", "axial spondyloarthritis"],
+    },
+  ],
+  mcqs: [
+    {
+      id: "neurology-low-back-pain-neuro-q1",
+      stem: "A 45-year-old man has had left-sided sciatica for two weeks. Today he reports that he cannot feel the toilet seat, has passed urine only twice since morning and did not feel the stream. Examination shows reduced pinprick sensation over both buttocks and the perineum, and reduced resting anal tone. A bladder scan shows a post-void residual of 380 mL. What is the most appropriate next step?",
+      options: [
+        "Prescribe naproxen 500 mg twice daily and review in one week",
+        "Arrange an outpatient MRI of the lumbar spine within two weeks and refer to physiotherapy",
+        "Order urgent plain radiographs of the lumbosacral spine and catheterise",
+        "Refer immediately for emergency MRI of the whole spine and a spinal surgical opinion the same day, with urinary catheterisation in the interim",
+        "Start pregabalin 75 mg twice daily and refer for an epidural steroid injection",
+      ],
+      answer: 3,
+      explanation:
+        "Saddle anaesthesia, bilateral perineal sensory loss, reduced anal tone and a post-void residual of 380 mL constitute cauda equina syndrome, and the only acceptable action is emergency MRI of the whole spine with immediate spinal surgical referral, because outcome depends on decompression within 24-48 hours of symptom onset. An NSAID with review in a week and an outpatient scan in two weeks both allow an incomplete syndrome to progress to established retention, which is the point at which recovery of bladder and sexual function becomes unlikely. Plain radiographs cannot visualise neural tissue or a disc and add nothing beyond delay, although catheterisation is appropriate as an interim measure alongside, not instead of, referral. Pregabalin has no evidence base in sciatica and an epidural injection is contraindicated when the patient needs decompression.",
+      difficulty: "easy",
+    },
+    {
+      id: "neurology-low-back-pain-neuro-q2",
+      stem: "A 38-year-old woman has right leg pain radiating to the dorsum of the foot. She cannot dorsiflex her right great toe (power 3/5) and has numbness in the first web space. Knee and ankle jerks are both normal and symmetrical. Straight leg raise reproduces her pain at 40 degrees on the right. Which nerve root is involved?",
+      options: [
+        "L3",
+        "L4",
+        "L5",
+        "S1",
+        "S2",
+      ],
+      answer: 2,
+      explanation:
+        "Weak extensor hallucis longus with sensory loss in the first web space and over the dorsum of the foot, in the presence of entirely normal reflexes, is the classic L5 pattern - L5 is the root with no tendon reflex of its own, which is exactly why the preserved reflexes point towards it rather than away from radiculopathy. L4 would reduce the knee jerk and cause weak knee extension with medial leg numbness. S1 would abolish the ankle jerk and cause weak plantar flexion with numbness of the lateral border of the foot. L3 affects hip flexion and knee extension with anterior thigh sensory loss and is tested by the femoral stretch test rather than the straight leg raise. S2 supplies the posterior thigh and, with S3 and S4, the saddle area, and does not produce toe dorsiflexion weakness.",
+      difficulty: "easy",
+    },
+    {
+      id: "neurology-low-back-pain-neuro-q3",
+      stem: "A 34-year-old office worker has had low back pain for eight days after lifting a suitcase. The pain does not radiate below the buttock. There is no fever, weight loss, night pain, bladder symptom or saddle numbness, and the neurological examination of both legs is normal. He asks for an MRI. What is the correct management?",
+      options: [
+        "MRI of the lumbar spine to reassure him and exclude a disc prolapse",
+        "Plain radiographs of the lumbosacral spine as a reasonable compromise",
+        "Advice to stay active with an explanation that hurt is not harm, a short course of an NSAID with gastroprotection if indicated, and review if red flags develop - with no imaging",
+        "Two weeks of bed rest with a lumbar corset and tramadol 50 mg three times daily",
+        "Referral to a spinal surgeon for an opinion before any treatment is started",
+      ],
+      answer: 2,
+      explanation:
+        "This is non-specific mechanical low back pain with no red flags and a normal neurological examination, and the evidence-based response is advice to remain active, a short NSAID course and safety-netting, with no imaging at all. MRI in this setting almost always shows degenerative change or a disc bulge, findings present in most asymptomatic adults over 40, which produce a label, fear of movement and a referral cascade without improving outcome, so it does not reassure in the long run. Plain radiographs share that problem while also delivering a substantial gonadal radiation dose and being unable to see a disc. Bed rest and a corset actively worsen outcomes and tramadol is not first-line for an acute mechanical strain. A surgical referral before any conservative treatment inverts the order of care for a condition that resolves in most people within weeks.",
+      difficulty: "easy",
+    },
+    {
+      id: "neurology-low-back-pain-neuro-q4",
+      stem: "A 55-year-old man with poorly controlled type 2 diabetes has three weeks of severe mid-thoracic back pain, worse at night, with evening fevers and 6 kg weight loss. There is marked tenderness over T9-T10 and a mild spastic paraparesis with brisk knee jerks and extensor plantars. ESR is 88 mm/hour. What is the most appropriate next investigation and initial action?",
+      options: [
+        "Plain radiographs of the thoracic spine and a trial of NSAIDs for two weeks",
+        "Urgent contrast MRI of the whole spine, with tissue or pus sent for CBNAAT, acid-fast bacilli and pyogenic culture before committing to prolonged therapy",
+        "Nerve conduction studies and electromyography of the lower limbs",
+        "Lumbar puncture for cerebrospinal fluid analysis",
+        "Start empirical anti-tuberculosis treatment immediately without any imaging or tissue diagnosis",
+      ],
+      answer: 1,
+      explanation:
+        "Thoracic back pain with night pain, fever, weight loss, a very high ESR and long tract signs is spinal infection with cord compression - tuberculous spondylitis being the commonest such cause in India, with pyogenic vertebral osteomyelitis and epidural abscess close behind in a poorly controlled diabetic - so urgent contrast MRI of the whole spine is mandatory, and tissue should be obtained for CBNAAT and culture because the two diagnoses have entirely different treatments. Plain radiographs miss early disease and a two-week NSAID trial wastes the window in which a compressing lesion can be decompressed before the paraparesis becomes fixed. Nerve conduction studies assess peripheral nerve, not cord, and are irrelevant to an upper motor neurone syndrome. Lumbar puncture below a compressive lesion risks deterioration and yields nothing here. Committing to 12 months of anti-tuberculosis treatment without imaging or tissue is unjustifiable when the alternative is a pyogenic abscess needing drainage and different antibiotics.",
+      difficulty: "hard",
+    },
+    {
+      id: "neurology-low-back-pain-neuro-q5",
+      stem: "A 68-year-old man describes bilateral buttock and thigh heaviness with tingling that comes on after walking about 200 metres, is relieved within a minute or two of sitting down, and does not trouble him at all when he cycles or pushes a shopping trolley. Dorsalis pedis and posterior tibial pulses are strong bilaterally. Saddle sensation and bladder function are normal. What is the most likely diagnosis?",
+      options: [
+        "Peripheral arterial disease with vascular claudication",
+        "Lumbar canal stenosis with neurogenic claudication",
+        "Cauda equina syndrome",
+        "Bilateral S1 radiculopathy from a disc prolapse",
+        "Diabetic lumbosacral radiculoplexus neuropathy",
+      ],
+      answer: 1,
+      explanation:
+        "Posture-dependent bilateral leg symptoms that are relieved by sitting or by lumbar flexion, and are absent when cycling or leaning on a trolley, together with normal peripheral pulses, are the signature of neurogenic claudication from lumbar canal stenosis, because flexion enlarges the spinal canal while extension narrows it. Vascular claudication is excluded by the strong pulses and by the fact that it depends on the level of exertion rather than on posture, so cycling would provoke it rather than relieve it. Cauda equina syndrome is excluded by normal saddle sensation and bladder function and by the chronic exertional pattern. A bilateral S1 radiculopathy would give constant radicular pain below the knee with an absent ankle jerk rather than exertional heaviness relieved by flexion. Diabetic lumbosacral radiculoplexus neuropathy presents with severe asymmetrical thigh pain followed by proximal wasting and weight loss, not with a reproducible walking distance.",
+      difficulty: "moderate",
+    },
+  ],
+  cards: [
+    {
+      id: "neurology-low-back-pain-neuro-c1",
+      front: "The five cardinal features of cauda equina syndrome.",
+      back: "Bilateral sciatica, saddle (perineal) anaesthesia, bladder dysfunction, faecal incontinence or loss of anal tone, and sexual dysfunction, with variable lower limb weakness and areflexia. No single feature rules it in or out - ask and examine for all of them.",
+    },
+    {
+      id: "neurology-low-back-pain-neuro-c2",
+      front: "How does bladder involvement evolve in cauda equina syndrome, and why does it matter?",
+      back: "Loss of the sensation of filling and of the stream, then difficulty initiating micturition with a poor stream, then painless retention with overflow. Incomplete disease (CESI) has a far better prognosis than established retention (CESR), so act on the earliest stage.",
+    },
+    {
+      id: "neurology-low-back-pain-neuro-c3",
+      front: "Investigation and timing for suspected cauda equina syndrome.",
+      back: "Emergency MRI of the whole spine on the same admission, out of hours if needed, plus post-void residual measurement (over 200 mL is significant). Surgical decompression within 24-48 hours of symptom onset; document the time of onset of each symptom.",
+    },
+    {
+      id: "neurology-low-back-pain-neuro-c4",
+      front: "L4, L5 and S1 root patterns in one line each.",
+      back: "L4 - weak knee extension and ankle dorsiflexion, medial leg numbness, reduced knee jerk. L5 - weak big toe dorsiflexion, first web space and dorsum of foot numbness, no reflex change. S1 - weak plantar flexion and eversion, lateral foot and sole numbness, absent ankle jerk.",
+    },
+    {
+      id: "neurology-low-back-pain-neuro-c5",
+      front: "Straight leg raise versus crossed straight leg raise.",
+      back: "Straight leg raise reproduces radiating leg pain between 30 and 70 degrees and is sensitive but not specific for L5 and S1 root tension. The crossed test - raising the good leg reproduces pain in the bad leg - is much more specific and predicts a large central or paracentral disc.",
+    },
+    {
+      id: "neurology-low-back-pain-neuro-c6",
+      front: "When should low back pain be imaged?",
+      back: "Never for non-specific back pain. Emergency MRI for suspected cauda equina, cord compression, spinal infection or a progressive motor deficit. Routine MRI for radicular pain failing 6-12 weeks of conservative care when surgery is being considered, or for a non-emergent red flag.",
+    },
+    {
+      id: "neurology-low-back-pain-neuro-c7",
+      front: "First-line drug treatment of acute low back pain and sciatica.",
+      back: "An NSAID at the lowest effective dose for the shortest time - ibuprofen 400 mg TDS, naproxen 250-500 mg BD or diclofenac 50 mg TDS, with a PPI if over 60 or at gastrointestinal risk. Paracetamol 1 g QDS as an adjunct, tramadol 50 mg for a few days if severe. Amitriptyline 10-25 mg at night for persistent neuropathic pain.",
+    },
+    {
+      id: "neurology-low-back-pain-neuro-c8",
+      front: "Why should gabapentin and pregabalin not be prescribed for sciatica?",
+      back: "Randomised evidence shows no benefit over placebo for sciatic leg pain, while sedation, dizziness, weight gain and misuse potential are real. Use exercise, an NSAID, amitriptyline or duloxetine for persistent pain, and consider epidural steroid injection for severe radicular pain.",
+    },
+    {
+      id: "neurology-low-back-pain-neuro-c9",
+      front: "Neurogenic versus vascular claudication.",
+      back: "Neurogenic - bilateral buttock and leg heaviness, relieved by sitting or forward flexion, better uphill or leaning on a trolley, pulses normal. Vascular - calf cramp at a fixed distance, relieved by standing still regardless of posture, pulses reduced with bruits.",
+    },
+    {
+      id: "neurology-low-back-pain-neuro-c10",
+      front: "Tuberculosis of the spine (Pott disease) - clues and treatment.",
+      back: "Thoracolumbar pain with night pain, fever, weight loss, gibbus, cold abscess; MRI shows contiguous vertebral destruction with relative disc preservation and a paravertebral collection. Treat with 12 months of ATT (2HRZE then 10 months continuation); surgery for instability, deformity or neurological deficit.",
+    },
+    {
+      id: "neurology-low-back-pain-neuro-c11",
+      front: "Suspected metastatic spinal cord compression - immediate action.",
+      back: "Start dexamethasone 16 mg daily at once and arrange MRI of the whole spine within 24 hours, with oncology and spinal surgical referral. Do not wait for the scan to give the steroid.",
+    },
+    {
+      id: "neurology-low-back-pain-neuro-c12",
+      front: "What must be documented for every patient discharged with sciatica?",
+      back: "That bladder function, bowel function and saddle sensation were asked about and were normal, and that written safety-netting advice was given to return immediately for perineal numbness, any change in urination or defecation, worsening weakness or fever.",
+    },
+  ],
+  references: [
+    "NICE Guideline NG59, Low back pain and sciatica in over 16s: assessment and management, 2016 (updated 2020)",
+    "NICE Guideline NG75, Spinal metastases and metastatic spinal cord compression, 2023",
+    "Todd NV and Dickson RA, Standards of care in cauda equina syndrome, British Journal of Neurosurgery 2016",
+    "British Association of Spine Surgeons and Society of British Neurological Surgeons, Standards of Care for Investigation and Management of Cauda Equina Syndrome, 2018",
+    "Mathieson S et al., Trial of pregabalin for acute and chronic sciatica, New England Journal of Medicine 2017",
+    "Peul WC et al., Surgery versus prolonged conservative treatment for sciatica, New England Journal of Medicine 2007",
+    "WHO Consolidated Guidelines on Tuberculosis, Module 4: Treatment - Drug-susceptible tuberculosis treatment, 2022, and India NTEP Technical and Operational Guidelines, 2021 - osteoarticular tuberculosis",
+    "Hutchinson's Clinical Methods, 24th edition, 2018 - examination of the spine and lower limb neurology",
+    "API Textbook of Medicine, 11th edition, 2019 - approach to low back pain",
+  ],
+});
+
 const cases: ClinicalCase[] = [
   {
     id: "neurology-case-1",
