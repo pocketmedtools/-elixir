@@ -3274,6 +3274,461 @@ topics.push({
   ],
 });
 
+topics.push({
+  id: "gynaecology-menopause-hormone-therapy",
+  title: "Menopause and menopausal hormone therapy",
+  oneLiner:
+    "Menopause is the permanent cessation of menstruation resulting from loss of ovarian follicular activity, diagnosed retrospectively after 12 consecutive months of amenorrhoea with no other pathological cause, occurring at a mean age of 46-47 years in Indian women, and its symptomatic and skeletal consequences are treated with lifestyle measures, non-hormonal drugs, and menopausal hormone therapy given at the lowest effective dose to appropriately selected women who begin it under 60 years of age or within 10 years of the menopause.",
+  frequency: "common",
+  keywords: [
+    "menopause",
+    "perimenopause",
+    "climacteric",
+    "STRAW+10",
+    "vasomotor symptoms",
+    "hot flushes",
+    "night sweats",
+    "genitourinary syndrome of menopause",
+    "GSM",
+    "atrophic vaginitis",
+    "menopausal hormone therapy",
+    "MHT",
+    "HRT",
+    "estradiol",
+    "conjugated equine oestrogen",
+    "micronised progesterone",
+    "tibolone",
+    "premature ovarian insufficiency",
+    "POI",
+    "osteoporosis",
+    "DXA",
+    "FRAX",
+    "window of opportunity",
+    "Women's Health Initiative",
+    "Indian Menopause Society",
+  ],
+  sections: [
+    {
+      heading: "Definitions and staging",
+      points: [
+        "**Menopause** is the permanent cessation of menstruation resulting from loss of ovarian follicular activity; it is a **retrospective clinical diagnosis made after 12 consecutive months of amenorrhoea** for which no other pathological or physiological cause can be found.",
+        "The **mean age at menopause in Indian women is 46-47 years**, some 4-5 years earlier than the Western figure of 51, and the Indian Menopause Society estimates that over 130 million Indian women are now postmenopausal - a group whose 30 remaining years of life are lived in an oestrogen-deficient state.",
+        "**Perimenopause (the menopausal transition)** begins with the first change in cycle length and ends 12 months after the last menstrual period; the **climacteric** is the broader phase of declining ovarian function surrounding it. The **STRAW+10 (2011) staging system** divides the reproductive lifespan into reproductive, menopausal transition and postmenopausal stages using cycle criteria supported by FSH and anti-Mullerian hormone.",
+        "**Premature ovarian insufficiency (POI)** is menopause before **40 years**, affecting about 1% of women; **early menopause** is between 40 and 45 years. Causes include chromosomal (Turner syndrome, fragile X premutation), autoimmune, iatrogenic (surgery, chemotherapy, pelvic radiotherapy) and idiopathic, which is the largest group.",
+        "**Induced (surgical) menopause** after bilateral oophorectomy is abrupt, with no perimenopausal taper, and produces more severe vasomotor symptoms and a steeper loss of bone than natural menopause - which is why oophorectomy in a young woman must never be casual.",
+        "Cigarette smoking advances menopause by about 2 years; hysterectomy without oophorectomy advances ovarian failure by 1-4 years through disturbed ovarian blood supply, and the woman then has no menstrual marker of the event.",
+      ],
+    },
+    {
+      heading: "Physiology and the symptom picture",
+      points: [
+        "The primary event is **depletion of the ovarian follicular pool**: inhibin B falls first, releasing FSH from negative feedback, so a **rising FSH with an initially preserved oestradiol** is the earliest biochemical change; oestradiol falls only late, and after menopause the main circulating oestrogen is **oestrone, derived from peripheral aromatisation of adrenal androstenedione in adipose tissue**.",
+        "**Vasomotor symptoms affect about 75% of women** and are caused by narrowing of the hypothalamic thermoneutral zone mediated by KNDy neurons; they last a **median of 7.4 years (SWAN study)** and in a third of women more than 10 years, which is why the old advice to simply wait them out is poor counselling.",
+        "**Genitourinary syndrome of menopause (GSM)** - vaginal dryness, burning, dyspareunia, urinary urgency, frequency, dysuria and recurrent urinary tract infection - is the symptom cluster that **does not remit with time but progresses**, and it is the one most often left unasked about in an Indian consultation.",
+        "Sleep disturbance, mood lability, low mood, irritability, poor concentration and joint aches are common; **depression risk is genuinely raised during the transition itself**, particularly in women with prior depression or premenstrual dysphoria, and should be actively screened for rather than attributed to age.",
+        "Indian women characteristically present with **somatic complaints - joint and body aches, tiredness, burning feet, palpitations - more often than with classic hot flushes**, and the diagnosis is missed if the doctor waits for a textbook flush.",
+        "Sexual dysfunction has three separable contributions - reduced desire from falling androgens, dyspareunia from GSM, and relationship or partner factors - and each needs its own treatment.",
+      ],
+    },
+    {
+      heading: "Long-term consequences",
+      points: [
+        "**Bone:** oestrogen restrains osteoclastic resorption, and its withdrawal produces an accelerated phase of loss of **up to 2-5% of trabecular bone per year for the first 5-7 years**, and a total of about 20% of bone mass in the decade after menopause. Osteoporosis is defined on **DXA as a T score of -2.5 or below** at the lumbar spine or femoral neck; **FRAX** estimates 10-year fracture probability where DXA is unavailable, which is the usual Indian situation.",
+        "**Cardiovascular:** the lipid profile shifts adversely with a rise in LDL and lipoprotein(a) and a fall in HDL; central adiposity, insulin resistance and hypertension increase, and the female advantage in coronary disease narrows. Menopause is a reason to **formally assess cardiovascular risk, blood pressure, fasting glucose and lipids**, not merely to prescribe oestrogen.",
+        "**Genitourinary:** progressive vaginal atrophy with a rise in pH above 4.5, loss of lactobacilli, urethral atrophy, and pelvic floor weakening contributing to prolapse and stress incontinence.",
+        "**Skin, connective tissue and dentition:** thinning skin with loss of collagen (about 30% in the first 5 years), brittle nails and hair, and alveolar bone loss with tooth loss.",
+        "**Cognition:** the transition brings verbal memory complaints that largely settle; there is **no evidence that starting hormone therapy prevents dementia**, and starting it in women over 65 increased dementia in the WHI memory study, so cognition is not an indication.",
+        "In Indian women these consequences arrive on top of a high baseline of **vitamin D deficiency, low dietary calcium (often under 400 mg a day) and sarcopenia**, so lifestyle and nutritional correction is not an optional add-on to drug therapy.",
+      ],
+    },
+    {
+      heading: "Assessment in the family practice clinic",
+      points: [
+        "**In a woman over 45 years with typical vasomotor symptoms and a changing or absent cycle the diagnosis is clinical and no hormone test is required** - NICE NG23 states this explicitly, and ordering an FSH in this woman is a marked error in an examination.",
+        "**FSH is measured in three situations:** a woman aged 40-45 with menopausal symptoms and cycle change, a woman under 40 in whom POI is suspected (**two FSH values above 25-40 IU/L taken 4-6 weeks apart**), and a woman whose menstrual marker is absent because of hysterectomy or a progestogen-only method.",
+        "**Always exclude the mimics before attributing symptoms to menopause:** pregnancy, thyroid disease, anaemia, tuberculosis and other chronic infection, diabetes, depression and anxiety, phaeochromocytoma, carcinoid, and drug effects such as tamoxifen, GnRH analogues and aromatase inhibitors.",
+        "Baseline assessment: weight, height, BMI, waist circumference, blood pressure, breast examination, pelvic examination, cervical screening if due, haemoglobin, fasting glucose or HbA1c, lipids, thyroid function, serum calcium and vitamin D, and a DXA where risk factors or a FRAX threshold justify it.",
+        "**Contraception is still required** - a woman over 50 needs contraception for 12 months after the last period and a woman under 50 for 24 months; **menopausal hormone therapy is not a contraceptive** and this is the point candidates most often get wrong.",
+        "Take the full history that decides suitability for hormone therapy: personal or family history of breast or endometrial cancer, venous thromboembolism, stroke, ischaemic heart disease, migraine with aura, liver disease, gallstones and smoking.",
+      ],
+    },
+    {
+      heading: "Non-hormonal management",
+      points: [
+        "Lifestyle first and for everyone: **weight reduction, regular weight-bearing and resistance exercise, smoking cessation, limiting alcohol and caffeine, layered cotton clothing, a cool sleeping environment** and avoiding identified triggers such as hot or spicy food.",
+        "**Calcium 1000-1200 mg a day, from diet where possible, and vitamin D 800-1000 IU a day**, with correction of documented deficiency; this is baseline therapy for every Indian postmenopausal woman, whether or not she takes hormones.",
+        "For vasomotor symptoms where hormones are contraindicated or declined: **SSRIs and SNRIs - paroxetine 7.5-20 mg, escitalopram 10-20 mg, venlafaxine 37.5-75 mg - reduce flushes by 40-60%**; note that **paroxetine and fluoxetine inhibit CYP2D6 and must be avoided in women taking tamoxifen**, where venlafaxine is the safe choice.",
+        "**Gabapentin 300-900 mg at night** is particularly useful for night sweats; clonidine has modest efficacy and troublesome side effects. **Cognitive behavioural therapy and clinical hypnosis have good trial evidence** and no drug interaction.",
+        "**Non-hormonal vaginal moisturisers and lubricants** are first-line for mild GSM and are compatible with any oncological history.",
+        "For osteoporosis: **bisphosphonates (alendronate 70 mg weekly, zoledronic acid annually)** are first-line drug treatment; denosumab and teriparatide are used in high-risk or refractory disease. Fall prevention, vision correction and home safety matter as much as the drug.",
+        "Phytoestrogens, black cohosh and other complementary products have inconsistent evidence, are not standardised, and black cohosh carries a rare hepatotoxicity warning - say this plainly rather than dismissing the question.",
+      ],
+    },
+    {
+      heading: "Menopausal hormone therapy: indications, regimens and risks",
+      points: [
+        "**Indications are narrow and specific:** moderate to severe vasomotor symptoms affecting quality of life; genitourinary syndrome of menopause (local therapy); **premature ovarian insufficiency and early menopause, where hormone therapy is replacement and is given at least until the average age of natural menopause, about 51 years**; and prevention of osteoporosis in a symptomatic woman under 60 who cannot take alternatives.",
+        "**The window of opportunity: begin under the age of 60 or within 10 years of the menopause.** In that window the benefit-risk balance is favourable and cardiovascular risk is not increased; started later, in a woman with established atheroma, the same therapy raises coronary and stroke risk. MHT is **not** started for primary or secondary prevention of cardiovascular disease or for dementia prevention.",
+        "**Regimen is decided by the uterus and by the time since the last period.** A woman **with a uterus must have a progestogen** to protect the endometrium; a woman after hysterectomy takes **oestrogen alone**. **Sequential (cyclical) combined therapy** - progestogen for 12-14 days a month producing a withdrawal bleed - is used in the perimenopause and within 12 months of the last period; **continuous combined therapy**, which is bleed-free, is used once a woman is more than a year postmenopausal.",
+        "**Route matters.** Oral oestrogen undergoes first-pass hepatic metabolism and roughly doubles the risk of venous thromboembolism; **transdermal oestradiol (patch 25-50 micrograms twice weekly, or gel) does not increase VTE risk and is preferred in obesity, migraine, hypertriglyceridaemia, gallbladder disease, hypertension and any thrombotic risk**. Typical oral doses are oestradiol valerate 1-2 mg or conjugated equine oestrogen 0.3-0.625 mg daily.",
+        "**Micronised progesterone 100 mg daily continuously, or 200 mg for 12-14 days sequentially, is the preferred progestogen** because it is metabolically neutral and appears not to carry the breast and thrombotic excess associated with medroxyprogesterone acetate; dydrogesterone is a reasonable alternative, and the **LNG-IUS is licensed for endometrial protection** and conveniently provides contraception in the perimenopause.",
+        "**Local vaginal oestrogen for GSM** - estriol cream 0.5-1 mg or a 10 microgram estradiol pessary, daily for 2 weeks then twice weekly - produces negligible systemic absorption, **needs no added progestogen, can be continued indefinitely**, and may be used with specialist agreement in many breast cancer survivors. Its benefit stops when it is stopped.",
+        "**Risks, stated as absolute numbers:** combined MHT adds roughly **1 extra case of breast cancer per 1000 women per year of use** beyond 5 years, with risk returning towards baseline after stopping, while **oestrogen-alone therapy in the WHI did not increase and may have reduced breast cancer**. Oral therapy roughly doubles VTE risk from a low baseline; stroke risk rises slightly with oral but not low-dose transdermal therapy; **unopposed oestrogen in a woman with a uterus causes endometrial hyperplasia and carcinoma**. Gallbladder disease increases with oral therapy.",
+        "**Absolute contraindications:** undiagnosed abnormal vaginal bleeding, known or suspected breast cancer or other oestrogen-dependent malignancy, current or past venous thromboembolism or known thrombophilia, active or recent arterial thromboembolic disease (angina, myocardial infarction, stroke), active liver disease with deranged function, untreated endometrial hyperplasia, porphyria cutanea tarda and pregnancy.",
+        "**Duration and review:** there is **no arbitrary limit and no obligation to stop at 5 years**; continue at the lowest effective dose with an **annual review** of symptoms, blood pressure, weight, breast examination and screening, and stop by tapering rather than abruptly. **Tibolone 2.5 mg** is an alternative that helps flushes, libido and bone but raises stroke risk in women over 60.",
+      ],
+    },
+  ],
+  tables: [
+    {
+      heading: "Choosing the menopausal hormone therapy regimen",
+      columns: ["Clinical situation", "Regimen", "Preferred route or agent", "Key point"],
+      rows: [
+        [
+          "Perimenopausal woman with a uterus, still bleeding or within 12 months of the last period",
+          "Sequential combined - continuous oestrogen with progestogen for 12-14 days each month",
+          "Transdermal oestradiol 25-50 micrograms twice weekly with micronised progesterone 200 mg for 12-14 days, or an LNG-IUS",
+          "Produces a predictable withdrawal bleed; contraception is still needed, as MHT is not contraceptive",
+        ],
+        [
+          "Postmenopausal woman with a uterus, more than 12 months since the last period",
+          "Continuous combined - daily oestrogen plus daily progestogen",
+          "Oestradiol valerate 1 mg or transdermal patch with micronised progesterone 100 mg daily",
+          "Bleed-free regimen; irregular bleeding beyond 6 months of starting must be investigated",
+        ],
+        [
+          "Woman after hysterectomy",
+          "Oestrogen alone",
+          "Transdermal oestradiol or oestradiol valerate 1-2 mg daily",
+          "No progestogen is needed and adding one only increases breast risk - unless there is a history of endometriosis",
+        ],
+        [
+          "Genitourinary syndrome of menopause alone, no vasomotor symptoms",
+          "Local vaginal oestrogen",
+          "Estriol cream 0.5-1 mg or 10 microgram estradiol pessary, daily for 2 weeks then twice weekly",
+          "No systemic progestogen required, may be continued indefinitely, benefit ends when treatment stops",
+        ],
+        [
+          "Premature ovarian insufficiency (under 40 years)",
+          "Full replacement doses of oestrogen with a progestogen, or a combined oral contraceptive if contraception is needed",
+          "Higher doses than for a woman of 55, continued until at least age 51",
+          "This is replacement, not optional symptom relief - withholding it costs bone and cardiovascular health",
+        ],
+      ],
+    },
+    {
+      heading: "Benefits and risks of systemic MHT started within the window",
+      columns: ["Outcome", "Effect", "Approximate magnitude"],
+      rows: [
+        ["Vasomotor symptoms", "Marked benefit - the primary indication", "Reduction in frequency and severity of about 75%, superior to any non-hormonal option"],
+        ["Bone and fracture", "Benefit", "Prevents postmenopausal bone loss and reduces vertebral and hip fracture; the effect wanes after stopping"],
+        ["Breast cancer", "Increased with combined therapy", "About 1 extra case per 1000 women per year of use beyond 5 years; oestrogen alone showed no increase in the WHI"],
+        ["Venous thromboembolism", "Increased with oral, not with transdermal", "Oral roughly doubles a low baseline risk; low-dose transdermal oestradiol carries no measurable excess"],
+        ["Stroke", "Small increase with oral therapy", "Age dependent, negligible under 60 years, and not seen with low-dose transdermal therapy"],
+        ["Coronary heart disease", "Neutral or reduced when started within 10 years of menopause", "Increased if first started more than 10 years after menopause or over 60 years - the timing hypothesis"],
+        ["Endometrial cancer", "Increased only by unopposed oestrogen in a woman with a uterus", "Abolished by adequate progestogen or by an LNG-IUS"],
+      ],
+    },
+  ],
+  redFlags: [
+    "Any bleeding after 12 months of amenorrhoea, or new or persistent bleeding beyond 6 months of starting continuous combined MHT - requires transvaginal ultrasound for endometrial thickness and endometrial sampling to exclude carcinoma.",
+    "A new breast lump, nipple retraction, bloody nipple discharge or skin dimpling in a woman on or considering MHT - triple assessment before anything else.",
+    "Unilateral calf pain and swelling, pleuritic chest pain or breathlessness in a woman on oral MHT - suspected venous thromboembolism, stop the oestrogen and investigate the same day.",
+    "Sudden severe headache, focal neurological deficit, visual loss or new migraine with aura on MHT - stop and evaluate for stroke or transient ischaemic attack.",
+    "Menopausal symptoms with amenorrhoea in a woman under 40 - this is premature ovarian insufficiency until proved otherwise and needs karyotype, fragile X screening, autoimmune screen and long-term hormone replacement, not reassurance.",
+    "Unexplained weight loss, night sweats with fever, or a persistent cough alongside vasomotor symptoms - exclude tuberculosis, lymphoma and thyrotoxicosis before calling it menopause.",
+  ],
+  pearls: [
+    "In a woman over 45 with typical symptoms, menopause is a clinical diagnosis - ordering an FSH is the error, not the omission.",
+    "The uterus decides the regimen: uterus present means a progestogen is compulsory; hysterectomy means oestrogen alone.",
+    "Transdermal oestradiol avoids first-pass metabolism and does not raise venous thromboembolism risk - it is the default in obesity, migraine, hypertension and any thrombotic concern.",
+    "The window of opportunity is under 60 years or within 10 years of menopause; outside it the same drug changes from cardioprotective-neutral to harmful.",
+    "MHT is not contraception - 12 months of amenorrhoea over 50, 24 months under 50, before contraception can be stopped.",
+    "Premature ovarian insufficiency is replacement, not treatment: continue until at least age 51 and use higher doses than a 55-year-old would need.",
+    "Genitourinary syndrome of menopause is the symptom that never gets better on its own - ask about it directly, treat with local oestrogen, and continue treatment indefinitely.",
+  ],
+  theory: [
+    {
+      id: "gynaecology-menopause-hormone-therapy-t1",
+      paper: "IV",
+      kind: "long",
+      marks: 10,
+      minutes: 20,
+      frequency: "common",
+      question:
+        "Define menopause. Describe the physiological changes and clinical consequences of the menopause, and discuss the indications, contraindications, regimens and risks of menopausal hormone therapy.",
+      openingLines: [
+        "Menopause is the permanent cessation of menstruation resulting from loss of ovarian follicular activity, diagnosed retrospectively after 12 consecutive months of amenorrhoea with no other pathological cause, occurring at a mean age of 46-47 years in Indian women.",
+        "Menopause before 40 years is premature ovarian insufficiency and between 40 and 45 years is early menopause; the perimenopause is the transition from the first change in cycle length to 12 months after the last period.",
+      ],
+      answer: [
+        {
+          heading: "Physiology",
+          points: [
+            "Depletion of the ovarian follicular pool causes a fall in inhibin B, loss of negative feedback and a rise in FSH, with oestradiol preserved early and falling late.",
+            "After menopause the dominant oestrogen is oestrone, produced by aromatisation of adrenal androstenedione in adipose tissue, so obese women have higher endogenous oestrogen and a higher endometrial cancer risk.",
+            "Narrowing of the hypothalamic thermoneutral zone, mediated by KNDy neurons, produces vasomotor instability.",
+          ],
+        },
+        {
+          heading: "Clinical consequences",
+          points: [
+            "Short term: vasomotor symptoms in about 75% of women lasting a median of 7.4 years; sleep disturbance, mood lability, poor concentration, joint and body aches, and in Indian women a predominantly somatic presentation.",
+            "Intermediate: genitourinary syndrome of menopause with vaginal dryness, dyspareunia, urgency, dysuria and recurrent urinary tract infection - progressive rather than self-limiting; skin and hair thinning; sexual dysfunction.",
+            "Long term - bone: accelerated loss of 2-5% of trabecular bone per year for 5-7 years, about 20% of bone mass in a decade, with osteoporosis defined as a DXA T score of -2.5 or below and fracture risk estimated by FRAX.",
+            "Long term - cardiovascular: rise in LDL and lipoprotein(a), fall in HDL, central adiposity, insulin resistance and hypertension, narrowing the female advantage in coronary disease.",
+            "Long term - urogenital and pelvic floor: atrophy, prolapse and stress incontinence; and dental alveolar bone loss.",
+          ],
+        },
+        {
+          heading: "Indications for menopausal hormone therapy",
+          points: [
+            "Moderate to severe vasomotor symptoms impairing quality of life - the principal indication.",
+            "Genitourinary syndrome of menopause, treated with local vaginal oestrogen.",
+            "Premature ovarian insufficiency and early menopause, where hormone therapy is replacement and is continued at least until the average age of natural menopause, about 51 years.",
+            "Prevention of osteoporosis in a symptomatic woman under 60 years in whom other agents are unsuitable.",
+            "The window of opportunity: begin under 60 years or within 10 years of menopause. MHT is not indicated for prevention of cardiovascular disease or of dementia.",
+          ],
+        },
+        {
+          heading: "Regimens and route",
+          points: [
+            "Woman with a uterus: oestrogen plus a progestogen - sequential (progestogen 12-14 days a month, with a withdrawal bleed) in the perimenopause and within 12 months of the last period; continuous combined and bleed-free thereafter.",
+            "Woman after hysterectomy: oestrogen alone; a progestogen adds risk without benefit.",
+            "Oral oestradiol valerate 1-2 mg or conjugated equine oestrogen 0.3-0.625 mg; transdermal oestradiol patch 25-50 micrograms twice weekly or gel, preferred where there is obesity, migraine, hypertriglyceridaemia, gallbladder disease or thrombotic risk because it avoids first-pass metabolism.",
+            "Micronised progesterone 100 mg daily continuous or 200 mg for 12-14 days sequential is the preferred progestogen; the LNG-IUS gives endometrial protection with contraception; tibolone 2.5 mg is an alternative but raises stroke risk over 60 years.",
+            "Local vaginal oestrogen for genitourinary symptoms needs no systemic progestogen and can be continued indefinitely.",
+          ],
+        },
+        {
+          heading: "Contraindications and risks",
+          points: [
+            "Absolute contraindications: undiagnosed vaginal bleeding, known or suspected breast or other oestrogen-dependent cancer, current or past venous thromboembolism or thrombophilia, recent arterial thromboembolic disease, active liver disease, untreated endometrial hyperplasia and pregnancy.",
+            "Breast cancer: about 1 extra case per 1000 women per year of combined therapy beyond 5 years, falling towards baseline after stopping; oestrogen alone showed no increase in the WHI.",
+            "Venous thromboembolism roughly doubled by oral but not by low-dose transdermal therapy; small increase in stroke with oral therapy; gallbladder disease increased.",
+            "Endometrial hyperplasia and carcinoma from unopposed oestrogen in a woman with a uterus - prevented by adequate progestogen.",
+            "Review annually at the lowest effective dose; there is no arbitrary 5-year stopping rule, and treatment is tapered rather than stopped abruptly.",
+          ],
+        },
+      ],
+      mustDraw: [
+        "A table of MHT regimens: uterus present versus absent, and perimenopausal versus more than one year postmenopausal, with the agent, dose and route in each cell.",
+        "A line diagram of hormone changes across the menopausal transition - FSH rising, inhibin B falling first, oestradiol fluctuating then falling.",
+      ],
+      markSplit: [
+        { part: "Definition, ages and staging", marks: 1 },
+        { part: "Physiology of the transition", marks: 1.5 },
+        { part: "Short, intermediate and long-term consequences", marks: 2.5 },
+        { part: "Indications and the window of opportunity", marks: 1.5 },
+        { part: "Regimens, doses and route", marks: 2 },
+        { part: "Contraindications, risks and review", marks: 1.5 },
+      ],
+      keywords: ["menopause", "MHT", "window of opportunity", "micronised progesterone", "transdermal oestradiol", "WHI"],
+    },
+    {
+      id: "gynaecology-menopause-hormone-therapy-t2",
+      paper: "IV",
+      kind: "short-note",
+      marks: 5,
+      minutes: 10,
+      frequency: "common",
+      question: "Write short notes on premature ovarian insufficiency - definition, causes, diagnosis and management.",
+      openingLines: [
+        "Premature ovarian insufficiency is the loss of ovarian function before the age of 40 years, presenting with oligomenorrhoea or amenorrhoea for at least 4 months together with a raised FSH, and it affects about 1% of women.",
+        "It is distinguished from menopause by being potentially intermittent - spontaneous ovulation and pregnancy occur in about 5% of women - which is why the term insufficiency has replaced premature ovarian failure.",
+      ],
+      answer: [
+        {
+          heading: "Causes",
+          points: [
+            "Idiopathic in the majority, which is the honest answer after investigation.",
+            "Genetic: Turner syndrome and its mosaics, fragile X (FMR1) premutation, other X chromosome deletions; a family history is present in 10-30%.",
+            "Autoimmune: associated with autoimmune thyroid disease, Addison disease, type 1 diabetes and myasthenia; anti-adrenal and anti-thyroid antibodies may be positive.",
+            "Iatrogenic: bilateral oophorectomy, chemotherapy (particularly alkylating agents), pelvic radiotherapy; and infective causes such as mumps oophoritis and tuberculosis.",
+          ],
+        },
+        {
+          heading: "Diagnosis",
+          points: [
+            "Oligomenorrhoea or amenorrhoea for at least 4 months in a woman under 40, with two FSH values above 25-40 IU/L measured 4-6 weeks apart.",
+            "Exclude pregnancy first; then check prolactin, thyroid function and, where indicated, testosterone; anti-Mullerian hormone will be low but is not itself diagnostic.",
+            "Once confirmed: karyotype, FMR1 premutation testing, adrenal and thyroid autoantibodies, and a baseline DXA scan.",
+          ],
+        },
+        {
+          heading: "Management",
+          points: [
+            "Hormone replacement is mandatory, not optional, and is continued at least until the average age of natural menopause, about 51 years; doses are higher than those used in a woman of 55.",
+            "Either a systemic MHT regimen with adequate oestrogen and a progestogen for endometrial protection, or a combined oral contraceptive where the woman also needs contraception - and contraception is needed, because ovulation can recur.",
+            "Calcium 1000-1200 mg and vitamin D 800-1000 IU daily, weight-bearing exercise, smoking cessation, and DXA surveillance.",
+            "Fertility counselling: spontaneous conception occurs in about 5%, and the established route to pregnancy is oocyte donation; fertility preservation should be discussed before gonadotoxic treatment.",
+            "Address the psychological impact directly - the diagnosis of infertility in a young Indian woman carries a heavy social burden, and structured counselling and support are part of treatment.",
+          ],
+        },
+      ],
+      mustDraw: [
+        "A flow chart: amenorrhoea under 40 years - exclude pregnancy - FSH twice, 4-6 weeks apart - raised, diagnose POI - karyotype, FMR1, autoantibodies, DXA - hormone replacement until age 51 with fertility and bone counselling.",
+      ],
+      markSplit: [
+        { part: "Definition and epidemiology", marks: 1 },
+        { part: "Causes in four groups", marks: 1.5 },
+        { part: "Diagnostic criteria and investigations", marks: 1.5 },
+        { part: "Hormone replacement, bone protection and fertility counselling", marks: 1 },
+      ],
+      keywords: ["premature ovarian insufficiency", "FSH", "fragile X premutation", "karyotype", "oocyte donation"],
+    },
+  ],
+  mcqs: [
+    {
+      id: "gynaecology-menopause-hormone-therapy-q1",
+      stem: "A 49-year-old woman with a uterus has had irregular periods for a year, the last one four months ago, with disabling hot flushes and night sweats. She has no contraindication to hormone therapy. Which is the most appropriate prescription?",
+      options: [
+        "Continuous combined oestrogen and progestogen",
+        "Sequential combined therapy - continuous oestrogen with progestogen for 12-14 days each month",
+        "Oestrogen alone",
+        "Local vaginal oestrogen only",
+        "Serum FSH first, and treat only if it is above 40 IU/L",
+      ],
+      answer: 1,
+      explanation:
+        "She is perimenopausal, being only four months from her last period, so a sequential regimen giving progestogen for 12-14 days a month produces a predictable withdrawal bleed and protects the endometrium; continuous combined therapy started this early causes troublesome erratic breakthrough bleeding, which is why it is reserved for women more than 12 months past their last period. Oestrogen alone is prohibited in a woman with a uterus because unopposed oestrogen causes endometrial hyperplasia and carcinoma. Local vaginal oestrogen treats genitourinary symptoms but has negligible systemic absorption and will not touch disabling vasomotor symptoms. Measuring FSH in a symptomatic woman over 45 is explicitly discouraged by NICE NG23 because the diagnosis is clinical and a fluctuating perimenopausal FSH may be normal, so treatment would be wrongly withheld.",
+      difficulty: "moderate",
+    },
+    {
+      id: "gynaecology-menopause-hormone-therapy-q2",
+      stem: "A 52-year-old woman two years past her menopause, BMI 34, with a history of migraine with aura and hypertension controlled on amlodipine, has severe vasomotor symptoms. Which is the safest effective option?",
+      options: [
+        "Oral conjugated equine oestrogen with medroxyprogesterone acetate",
+        "Transdermal oestradiol patch with micronised progesterone",
+        "Combined oral contraceptive pill",
+        "Tibolone 2.5 mg daily",
+        "No hormone therapy is possible; offer clonidine only",
+      ],
+      answer: 1,
+      explanation:
+        "Transdermal oestradiol avoids first-pass hepatic metabolism, does not raise the risk of venous thromboembolism or stroke at low dose, and is the recommended route in obesity, migraine and hypertension, while micronised progesterone gives endometrial protection with the most favourable breast and metabolic profile. Oral conjugated oestrogen with medroxyprogesterone acetate is the WHI combination and carries the oral VTE and stroke excess in exactly the woman whose BMI and migraine make that matter. A combined oral contraceptive is absolutely contraindicated in migraine with aura, and in any case delivers supraphysiological ethinyl oestradiol to a 52-year-old who needs replacement, not contraception at that dose. Tibolone helps flushes but increases stroke risk and is not the safest choice in a hypertensive woman with aura. Concluding that no hormone therapy is possible is wrong - migraine with aura and obesity contraindicate the oral contraceptive, not transdermal MHT, and this over-cautious refusal is the commonest reason Indian women are left untreated.",
+      difficulty: "hard",
+    },
+    {
+      id: "gynaecology-menopause-hormone-therapy-q3",
+      stem: "A 35-year-old woman has had no periods for eight months. Pregnancy test is negative, prolactin and thyroid function are normal, and FSH is 52 IU/L, confirmed as 48 IU/L six weeks later. Which statement is correct?",
+      options: [
+        "She has premature ovarian insufficiency and needs hormone replacement until about age 51",
+        "Hormone therapy should be avoided because of the breast cancer risk shown in the WHI",
+        "She is now sterile and needs no contraception",
+        "A single low-dose oestrogen patch is sufficient and no progestogen is required",
+        "Treatment should be deferred until she becomes symptomatic",
+      ],
+      answer: 0,
+      explanation:
+        "Amenorrhoea for at least four months under the age of 40 with two FSH values above 25-40 IU/L taken 4-6 weeks apart establishes premature ovarian insufficiency, and hormone therapy is replacement of a hormone she should still be making, continued at least to the average age of natural menopause around 51 years, alongside karyotype, FMR1 testing, autoantibodies and DXA. The WHI studied women with a mean age of 63 who were already past menopause, and its risk estimates cannot be applied to a 35-year-old being restored to physiological levels - misapplying it is the classic error that leaves these women osteoporotic. She is not reliably sterile, since ovulation recurs in about 5% of women with POI, so contraception is still needed if pregnancy is unwanted. She has a uterus, so a progestogen is compulsory to prevent endometrial hyperplasia, and the doses required are higher, not lower, than in an older woman. Deferring treatment until symptoms appear ignores the bone and cardiovascular consequences that accrue silently.",
+      difficulty: "moderate",
+    },
+    {
+      id: "gynaecology-menopause-hormone-therapy-q4",
+      stem: "A 60-year-old woman, ten years postmenopausal, has troublesome vaginal dryness, dyspareunia and recurrent urinary tract infections. She has no flushes and had a breast-conserving surgery for a small oestrogen-receptor-positive breast cancer eight years ago and is off all treatment. What is the most appropriate first step?",
+      options: [
+        "Systemic oral MHT at the lowest dose",
+        "Vaginal moisturisers and lubricants, with low-dose local vaginal oestrogen discussed with her oncologist if these fail",
+        "Tibolone 2.5 mg daily",
+        "Nothing can be offered because of her breast cancer history",
+        "Long-term prophylactic antibiotics alone",
+      ],
+      answer: 1,
+      explanation:
+        "Genitourinary syndrome of menopause is treated locally, and non-hormonal moisturisers and lubricants are the correct first step in any woman with a hormone-receptor-positive breast cancer, with low-dose vaginal oestrogen - whose systemic absorption is negligible - a reasonable next step taken in consultation with her oncologist. Systemic MHT is contraindicated by her breast cancer history and would in any case be started outside the window of opportunity at 60 years and ten years postmenopausal. Tibolone is systemic, is contraindicated after breast cancer, and increases stroke risk in this age group. Declaring that nothing can be offered is both untrue and the reason so many survivors endure years of dyspareunia in silence. Prophylactic antibiotics alone treat the consequence and not the cause, since the recurrent infections stem from urogenital atrophy and a vaginal pH above 4.5.",
+      difficulty: "hard",
+    },
+    {
+      id: "gynaecology-menopause-hormone-therapy-q5",
+      stem: "A 56-year-old woman has been on continuous combined MHT for 18 months with good symptom control. She reports fresh vaginal bleeding for the last three weeks. What is the correct action?",
+      options: [
+        "Reassure her that breakthrough bleeding is expected on continuous combined therapy",
+        "Increase the progestogen dose and review in six months",
+        "Stop the MHT and review in three months",
+        "Arrange transvaginal ultrasound for endometrial thickness and endometrial sampling",
+        "Switch to a sequential regimen so that bleeding becomes predictable",
+      ],
+      answer: 3,
+      explanation:
+        "Unscheduled bleeding is common in the first six months of continuous combined therapy but new bleeding after 18 months of an established bleed-free regimen must be treated as postmenopausal bleeding and investigated with transvaginal ultrasound and endometrial sampling to exclude hyperplasia and carcinoma. Reassurance is only appropriate within those first six months, and offering it here is precisely how an endometrial cancer is missed. Raising the progestogen dose treats a presumed hormonal cause without ever excluding malignancy, and buys six months of delay. Simply stopping the therapy removes the symptom control and still leaves the endometrium uninvestigated. Switching to a sequential regimen deliberately reintroduces bleeding, which makes any future assessment harder and again postpones the diagnosis.",
+      difficulty: "moderate",
+    },
+  ],
+  cards: [
+    {
+      id: "gynaecology-menopause-hormone-therapy-c1",
+      front: "Define menopause and give the mean age in Indian women.",
+      back: "Permanent cessation of menstruation from loss of ovarian follicular activity, diagnosed retrospectively after 12 consecutive months of amenorrhoea with no other cause; mean age 46-47 years in India, about 51 in the West.",
+    },
+    {
+      id: "gynaecology-menopause-hormone-therapy-c2",
+      front: "When is an FSH needed to diagnose menopause?",
+      back: "Never in a symptomatic woman over 45 - the diagnosis is clinical. Measure it at 40-45 years with symptoms, under 40 for suspected POI (two values above 25-40 IU/L, 4-6 weeks apart), and when there is no menstrual marker.",
+    },
+    {
+      id: "gynaecology-menopause-hormone-therapy-c3",
+      front: "What is the window of opportunity for MHT?",
+      back: "Start under 60 years of age or within 10 years of the menopause; outside that window coronary and stroke risk rise and the benefit-risk balance turns unfavourable.",
+    },
+    {
+      id: "gynaecology-menopause-hormone-therapy-c4",
+      front: "Sequential versus continuous combined MHT - who gets which?",
+      back: "Sequential (progestogen 12-14 days a month, withdrawal bleed) in the perimenopause and within 12 months of the last period; continuous combined and bleed-free once more than 12 months postmenopausal.",
+    },
+    {
+      id: "gynaecology-menopause-hormone-therapy-c5",
+      front: "Why choose transdermal over oral oestrogen?",
+      back: "It avoids first-pass hepatic metabolism, so it does not raise VTE risk and does not raise stroke risk at low dose - preferred in obesity, migraine, hypertension, hypertriglyceridaemia and gallbladder disease.",
+    },
+    {
+      id: "gynaecology-menopause-hormone-therapy-c6",
+      front: "Absolute risk of breast cancer with combined MHT.",
+      back: "About 1 extra case per 1000 women per year of use beyond 5 years, returning towards baseline after stopping; oestrogen-alone therapy in the WHI showed no increase.",
+    },
+    {
+      id: "gynaecology-menopause-hormone-therapy-c7",
+      front: "Treatment of genitourinary syndrome of menopause.",
+      back: "Moisturisers and lubricants, then local vaginal oestrogen (estriol 0.5-1 mg cream or 10 microgram estradiol pessary) daily for 2 weeks then twice weekly - no progestogen needed, continue indefinitely.",
+    },
+    {
+      id: "gynaecology-menopause-hormone-therapy-c8",
+      front: "Non-hormonal drugs for hot flushes, with the tamoxifen caveat.",
+      back: "SSRIs and SNRIs reduce flushes by 40-60% - venlafaxine 37.5-75 mg, escitalopram, paroxetine 7.5-20 mg - but paroxetine and fluoxetine inhibit CYP2D6 and must be avoided with tamoxifen. Gabapentin 300-900 mg at night for night sweats.",
+    },
+    {
+      id: "gynaecology-menopause-hormone-therapy-c9",
+      front: "How long is contraception needed around the menopause?",
+      back: "12 months after the last period if over 50, 24 months if under 50. MHT is not a contraceptive.",
+    },
+    {
+      id: "gynaecology-menopause-hormone-therapy-c10",
+      front: "Premature ovarian insufficiency - definition and duration of treatment.",
+      back: "Ovarian failure before 40 years with amenorrhoea 4 months or more and two raised FSH values; hormone replacement at higher doses until at least age 51, plus karyotype, FMR1, autoantibodies and DXA.",
+    },
+    {
+      id: "gynaecology-menopause-hormone-therapy-c11",
+      front: "Bone loss after menopause and the diagnostic threshold for osteoporosis.",
+      back: "2-5% of trabecular bone per year for 5-7 years, about 20% in a decade; osteoporosis is a DXA T score of -2.5 or below, with FRAX used where DXA is unavailable.",
+    },
+    {
+      id: "gynaecology-menopause-hormone-therapy-c12",
+      front: "Bleeding on continuous combined MHT - when is it a red flag?",
+      back: "Unscheduled bleeding in the first 6 months is expected; new or persistent bleeding after that must be investigated with transvaginal ultrasound and endometrial sampling.",
+    },
+  ],
+  references: [
+    "NICE NG23 Menopause: Diagnosis and Management, 2015, updated 2024",
+    "Indian Menopause Society Clinical Practice Guidelines on Menopause, 2020",
+    "International Menopause Society Recommendations on Women's Midlife Health and Menopause Hormone Therapy, 2016, with 2021 white paper",
+    "The 2022 Hormone Therapy Position Statement of The North American Menopause Society",
+    "FOGSI Good Clinical Practice Recommendations on Menopause and Midlife Health, 2019",
+    "WHO Medical Eligibility Criteria for Contraceptive Use, 5th edition, 2015, with 2024 update - contraception in the perimenopause",
+    "Rossouw JE et al, Women's Health Initiative, JAMA 2002, and the WHI 18-year follow-up, JAMA 2017",
+    "Shaw's Textbook of Gynaecology, 18th edition, 2024 - menopause and hormone replacement therapy",
+  ],
+});
+
 const cases: ClinicalCase[] = [
   {
     id: "gynaecology-case-1",
