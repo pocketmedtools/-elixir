@@ -532,3 +532,1012 @@ topics.push({
     "API Textbook of Medicine, 11th edition, 2019 - headache and facial pain",
   ],
 });
+
+topics.push({
+  id: "neurology-stroke-acute",
+  title: "Acute stroke: recognition and the first hour",
+  oneLiner:
+    "Stroke is a sudden focal neurological deficit of vascular origin lasting more than 24 hours or leading to death, and because intravenous thrombolysis is effective only within 4.5 hours and mechanical thrombectomy within 6-24 hours of a selected large-vessel occlusion, the family physician's job is to recognise it in seconds, check the capillary glucose, stabilise, and move the patient to a CT-capable stroke-ready hospital without stopping to lower the blood pressure or give aspirin.",
+  frequency: "core",
+  keywords: [
+    "cerebrovascular accident",
+    "CVA",
+    "ischaemic stroke",
+    "intracerebral haemorrhage",
+    "thrombolysis",
+    "alteplase",
+    "tenecteplase",
+    "thrombectomy",
+    "FAST",
+    "BE-FAST",
+    "NIHSS",
+    "window period",
+    "middle cerebral artery",
+    "lacunar syndrome",
+    "stroke unit",
+    "dysphagia screen",
+    "aspiration pneumonia",
+  ],
+  sections: [
+    {
+      heading: "Definition, burden and the two kinds of stroke",
+      points: [
+        "**Definition:** rapidly developing clinical signs of focal (or global) disturbance of cerebral function lasting more than 24 hours or leading to death, with no apparent cause other than vascular origin (WHO). A deficit that resolves fully within 24 hours with no infarct on imaging is a transient ischaemic attack.",
+        "**Burden in India:** stroke incidence is roughly 105-152 per 100 000 per year, the age-standardised burden is higher than in high-income countries, and Indian patients are on average **a decade younger** at presentation. Stroke is among the top three causes of death and the leading cause of adult disability.",
+        "**About 80% of strokes are ischaemic and 20% haemorrhagic** (intracerebral haemorrhage and subarachnoid haemorrhage), and the proportion of haemorrhage is higher in India than in the West because of the burden of untreated hypertension.",
+        "Ischaemic stroke subtypes (TOAST): large-artery atherosclerosis, cardioembolism (atrial fibrillation, rheumatic mitral stenosis, prosthetic valves, recent myocardial infarction), **small-vessel or lacunar disease** driven by hypertension and diabetes, stroke of other determined cause (dissection, vasculitis, antiphospholipid syndrome, sickle cell disease), and cryptogenic stroke.",
+        "**Nothing at the bedside reliably separates infarction from haemorrhage** - headache, vomiting, early depressed consciousness and very high blood pressure make haemorrhage more likely, but only a CT scan decides. This is why no antiplatelet is given before imaging.",
+        "**Time is brain:** an untreated large-vessel ischaemic stroke destroys about 1.9 million neurons a minute, and every 15 minutes saved in door-to-needle time translates into measurable disability-free survival.",
+        "The single greatest determinant of outcome that a general practice can influence is the **interval from symptom onset to the CT scanner**, and most Indian delay is pre-hospital - the patient waits at home to see if it passes.",
+      ],
+    },
+    {
+      heading: "Recognising stroke: BE-FAST and the vascular syndromes",
+      points: [
+        "**BE-FAST:** **B**alance (sudden loss of balance), **E**yes (sudden visual loss or diplopia), **F**ace drooping, **A**rm weakness, **S**peech difficulty, **T**ime to call for help. Adding balance and eyes to the original FAST captures the posterior circulation strokes that FAST misses.",
+        "**Anterior circulation (carotid) territory:** contralateral hemiparesis and hemisensory loss with the face and arm affected more than the leg in middle cerebral artery strokes, homonymous hemianopia, gaze deviation towards the lesion, **aphasia with dominant hemisphere lesions** and neglect or dressing apraxia with non-dominant lesions. Anterior cerebral artery strokes weaken the leg more than the arm and cause abulia and incontinence.",
+        "**Posterior circulation (vertebrobasilar):** vertigo, nausea, ataxia, diplopia, dysarthria, dysphagia, crossed signs (ipsilateral cranial nerve palsy with contralateral limb weakness), Horner syndrome, cortical blindness and sudden decreased consciousness. **Lateral medullary (Wallenberg) syndrome** is the classic: ipsilateral facial sensory loss, Horner syndrome, palatal and vocal cord palsy with ataxia, and contralateral spinothalamic loss over the body.",
+        "**Lacunar syndromes** have no cortical signs - no aphasia, no neglect, no visual field defect - and take five forms: pure motor hemiparesis (internal capsule or pons), pure sensory stroke (thalamus), sensorimotor stroke, ataxic hemiparesis, and dysarthria-clumsy hand syndrome.",
+        "**Stroke mimics to exclude at the bedside:** hypoglycaemia (check capillary glucose in every single patient before anything else), Todd paresis after a seizure, complicated migraine with aura, hypertensive encephalopathy, subdural haematoma, brain tumour, Bell palsy (spares the forehead in stroke, involves it in Bell palsy), conversion disorder, and sepsis unmasking an old deficit.",
+        "Document the **exact time the patient was last seen well**, not the time the deficit was noticed; a stroke on waking is timed from when the patient went to sleep unless perfusion imaging is available.",
+        "Quantify the deficit with the **NIHSS** where possible: it predicts outcome, guides thrombolysis and thrombectomy decisions, and gives a reproducible baseline; a score above 6 with a gaze deviation and dense hemiplegia suggests large-vessel occlusion.",
+      ],
+    },
+    {
+      heading: "What the clinic actually does in the first hour",
+      points: [
+        "**Check capillary blood glucose immediately** - hypoglycaemia is the commonest stroke mimic and is corrected in one minute with 25% dextrose; never send a suspected stroke to the scanner without this number.",
+        "Airway, breathing, circulation: position at 30 degrees head up if there is any risk of aspiration or raised pressure, keep the patient **nil by mouth including oral drugs and water** until a bedside swallow screen is done, give oxygen only if saturation is below 94%, and secure an intravenous line in the non-paretic arm.",
+        "**Arrange transport at once** to the nearest CT-capable, preferably thrombolysis-ready, hospital, and telephone ahead so that the CT and the stroke team are ready - a pre-notified arrival roughly halves door-to-needle time. Send a written note stating the exact time last seen well, the deficit, the glucose, the blood pressure, current drugs (especially anticoagulants) and comorbidity.",
+        "**Do not give aspirin, clopidogrel, heparin or any antithrombotic before the CT scan** - if this is a haemorrhage, they cause harm.",
+        "**Do not lower the blood pressure** in the acute phase of an ischaemic stroke unless it exceeds **220/120 mmHg**, or thrombolysis is planned, when it must be brought below **185/110 mmHg** before the bolus. High pressure maintains perfusion in the ischaemic penumbra and dropping it extends the infarct. In intracerebral haemorrhage the target is a systolic of 140 mmHg, achieved gradually.",
+        "Treat fever with paracetamol, treat hyperglycaemia above 180 mg/dL with insulin while avoiding hypoglycaemia, correct hypotension and dehydration with normal saline, and **avoid dextrose-containing fluids** which worsen cerebral oedema.",
+        "Avoid three specific errors that recur in examinations: sublingual nifedipine, intramuscular injections (they preclude thrombolysis), and urinary catheterisation as a reflex rather than for retention.",
+      ],
+    },
+    {
+      heading: "Thrombolysis and thrombectomy: the windows and the rules",
+      points: [
+        "**Intravenous alteplase 0.9 mg/kg (maximum 90 mg), 10% as a bolus over 1 minute and the rest over 60 minutes, is given within 4.5 hours of symptom onset** in eligible patients with a disabling deficit and a CT that excludes haemorrhage. **Tenecteplase 0.25 mg/kg as a single bolus** is an accepted alternative and is increasingly used in India because a single bolus is far simpler.",
+        "**Absolute contraindications:** intracranial haemorrhage on CT, a history of intracranial haemorrhage, blood pressure above 185/110 mmHg that cannot be lowered, platelets below 100 000/microlitre, INR above 1.7 or a DOAC taken within 48 hours, glucose below 50 mg/dL, major surgery or serious head injury within 3 months, active internal bleeding, aortic dissection and known intracranial neoplasm or arteriovenous malformation.",
+        "**Mechanical thrombectomy is offered within 6 hours of onset for a proven large-vessel occlusion** (internal carotid or proximal middle cerebral artery) on CT or MR angiography, and can be extended to **24 hours** in carefully selected patients using perfusion imaging or clinical-core mismatch criteria (DAWN and DEFUSE-3). Thrombectomy is given in addition to thrombolysis when both are possible.",
+        "**Number needed to treat:** roughly 1 in 3 thrombolysed within 90 minutes and about 1 in 10 across the whole 4.5-hour window achieve an improved functional outcome; the risk of symptomatic intracranial haemorrhage is about 6%. The benefit falls steeply with every hour, which is the entire argument for speed.",
+        "After thrombolysis: no antiplatelet, no anticoagulant and no invasive procedure for 24 hours, blood pressure kept below 180/105 mmHg, neurological observations every 15 minutes for 2 hours, and a repeat CT at 24 hours before starting aspirin.",
+        "**If the window is missed** - the situation in most of India - the patient still benefits enormously from stroke unit care: **aspirin 300 mg started within 48 hours after haemorrhage is excluded**, dysphagia screening, early mobilisation, physiotherapy, prevention of aspiration, deep vein thrombosis prophylaxis and secondary prevention. **Admission to a stroke unit reduces death and dependency more than any single drug**, with a number needed to treat of about 20.",
+        "For minor non-cardioembolic stroke (NIHSS 3 or less) or high-risk TIA, **dual antiplatelet therapy with aspirin plus clopidogrel for 21 days** followed by single antiplatelet reduces recurrence (CHANCE and POINT trials); longer dual therapy only increases bleeding.",
+      ],
+    },
+    {
+      heading: "Investigations and the search for a cause",
+      points: [
+        "**Non-contrast CT head is the first investigation in every stroke** - it is fast, available and reliably excludes haemorrhage. Early ischaemic signs (loss of grey-white differentiation, insular ribbon sign, a hyperdense middle cerebral artery, sulcal effacement) may be subtle in the first hours, and a normal CT does not exclude infarction.",
+        "**MRI with diffusion-weighted imaging** detects infarction within minutes and is the test of choice for posterior fossa strokes, small lacunes, and where the diagnosis is in doubt; CT or MR angiography identifies large-vessel occlusion and dissection.",
+        "**Every stroke patient needs:** blood glucose, complete blood count, prothrombin time and INR, creatinine and electrolytes, lipid profile, HbA1c, ECG, and chest radiograph. Add troponin if there is chest pain or ECG change.",
+        "**Look for the source of embolism:** a 12-lead ECG and at least 24 hours of cardiac monitoring or Holter for paroxysmal atrial fibrillation, echocardiography for rheumatic mitral stenosis, prosthetic valves, left ventricular thrombus, dilated cardiomyopathy and (in the young) a patent foramen ovale with a bubble study.",
+        "**Carotid Doppler** in every anterior circulation ischaemic stroke or TIA who would be a candidate for endarterectomy - symptomatic stenosis of 70-99% should be operated within 2 weeks.",
+        "**Stroke in the young (under 45) needs an extended work-up** in India: echocardiography for rheumatic heart disease, vasculitis screen, antiphospholipid antibodies, homocysteine, protein C, protein S and antithrombin, haemoglobin electrophoresis for sickle cell disease, HIV and VDRL, cervical artery dissection on MR angiography, and a careful history of oral contraceptives, smoking, substance use and the puerperium (cerebral venous sinus thrombosis).",
+        "**Cerebral venous sinus thrombosis** deserves separate mention because it is common in Indian obstetric practice: headache, seizures, papilloedema and deficits that cross arterial territories, in a postpartum or dehydrated patient; diagnose with MR venography and **treat with anticoagulation even when there is haemorrhagic infarction**.",
+      ],
+    },
+    {
+      heading: "The first week: complications and rehabilitation",
+      points: [
+        "**Dysphagia affects up to half of acute strokes** and is the main cause of aspiration pneumonia. Perform a bedside swallow screen before the first oral intake; if it fails, keep the patient nil by mouth and pass a nasogastric tube within 24 hours rather than starving the patient.",
+        "Prevent aspiration by feeding sitting upright, thickened fluids, small boluses and oral hygiene; pneumonia and urinary infection are the commonest causes of death after the first 48 hours.",
+        "**Deep vein thrombosis prophylaxis** with intermittent pneumatic compression and early mobilisation; low molecular weight heparin from 48 hours in immobile patients with ischaemic stroke, but not in intracerebral haemorrhage until bleeding is stable.",
+        "Prevent pressure ulcers with 2-hourly turning and a pressure-relieving mattress; prevent shoulder subluxation with correct positioning and by never pulling on the paretic arm; treat constipation and urinary retention actively.",
+        "**Start rehabilitation on day one**: passive range of movement, sitting out of bed as soon as the patient is stable, physiotherapy, occupational therapy and speech therapy. Most motor recovery occurs in the first 3 months but useful gains continue for a year.",
+        "**Post-stroke depression affects about a third of survivors** and is under-treated; screen at follow-up with PHQ-9 and treat with an SSRI (sertraline or escitalopram) plus counselling. Also screen for post-stroke pain, spasticity, seizures and vascular cognitive impairment.",
+        "The family physician owns the long game: blood pressure to below 130/80 mmHg, a statin, an antiplatelet or anticoagulant as indicated, glycaemic control, tobacco and alcohol cessation, secondary prevention counselling, carer support, disability certification and vocational advice.",
+      ],
+    },
+  ],
+  tables: [
+    {
+      heading: "Localising the stroke from the bedside deficit",
+      columns: ["Territory", "Key clinical features", "Extra clue"],
+      rows: [
+        ["Middle cerebral artery (dominant)", "Contralateral face and arm weakness more than leg, hemisensory loss, homonymous hemianopia, aphasia", "Gaze deviates towards the lesion"],
+        ["Middle cerebral artery (non-dominant)", "Same motor pattern with neglect, anosognosia, dressing and constructional apraxia", "Patient may deny the deficit"],
+        ["Anterior cerebral artery", "Contralateral leg weakness more than arm, abulia, urinary incontinence, grasp reflex", "Face is usually spared"],
+        ["Posterior cerebral artery", "Homonymous hemianopia with macular sparing, alexia without agraphia, memory disturbance", "Motor power often normal"],
+        ["Vertebrobasilar / brainstem", "Vertigo, diplopia, dysarthria, dysphagia, ataxia, crossed signs, altered consciousness", "Crossed signs are pathognomonic of brainstem"],
+        ["Lateral medullary (PICA)", "Ipsilateral facial sensory loss, Horner syndrome, palatal palsy, ataxia; contralateral body pain and temperature loss", "Hiccups and intractable vomiting"],
+        ["Lacunar (small vessel)", "Pure motor, pure sensory, sensorimotor, ataxic hemiparesis or dysarthria-clumsy hand", "No cortical signs at all"],
+      ],
+    },
+    {
+      heading: "Thrombolysis: windows, doses and blood pressure rules",
+      columns: ["Item", "Rule"],
+      rows: [
+        ["Window for intravenous thrombolysis", "Within 4.5 hours of time last seen well"],
+        ["Alteplase dose", "0.9 mg/kg, maximum 90 mg; 10% as bolus over 1 minute, remainder over 60 minutes"],
+        ["Tenecteplase dose", "0.25 mg/kg single intravenous bolus, maximum 25 mg"],
+        ["Blood pressure before thrombolysis", "Must be below 185/110 mmHg; use labetalol 10-20 mg IV boluses"],
+        ["Blood pressure if not thrombolysing (ischaemic)", "Do not treat unless above 220/120 mmHg; then lower by no more than 15% in 24 hours"],
+        ["Blood pressure in intracerebral haemorrhage", "Lower systolic to about 140 mmHg over the first hour"],
+        ["Thrombectomy window", "Within 6 hours routinely; up to 24 hours in selected large-vessel occlusion with imaging mismatch"],
+        ["After thrombolysis", "No antiplatelet or anticoagulant for 24 hours; repeat CT at 24 hours before starting aspirin"],
+      ],
+    },
+    {
+      heading: "Ischaemic versus haemorrhagic stroke: what the clinic can and cannot tell",
+      columns: ["Feature", "Ischaemic", "Haemorrhagic"],
+      rows: [
+        ["Proportion of all strokes", "About 80%", "About 20%"],
+        ["Onset", "Sudden, often on waking, deficit maximal at onset", "Sudden during activity or straining, deficit may progress over minutes to hours"],
+        ["Headache and vomiting", "Uncommon", "Common and early"],
+        ["Early loss of consciousness", "Uncommon except basilar occlusion", "Common with large bleeds"],
+        ["Blood pressure at presentation", "Often raised", "Usually very high"],
+        ["Seizure at onset", "Uncommon", "More common"],
+        ["Decisive test", "Non-contrast CT (may be normal early)", "Non-contrast CT (hyperdense from the outset)"],
+      ],
+    },
+  ],
+  redFlags: [
+    "Any sudden focal deficit - the patient goes to a CT-capable hospital now; do not observe overnight and do not treat at home.",
+    "Capillary glucose below 70 mg/dL in a patient with a focal deficit - treat hypoglycaemia first, it is the commonest reversible stroke mimic.",
+    "Sudden headache with vomiting, neck stiffness and depressed consciousness - haemorrhagic stroke or subarachnoid haemorrhage; no antiplatelet before imaging.",
+    "Deteriorating consciousness with a new pupillary asymmetry in the first 72 hours - malignant middle cerebral artery infarction or expanding haematoma; needs urgent neurosurgical assessment for decompressive craniectomy.",
+    "Sudden vertigo with inability to sit or stand unsupported, or vertigo with any new cranial nerve sign - a cerebellar stroke masquerading as peripheral vertigo.",
+    "Stroke in a patient under 45, in a pregnant or postpartum woman, or with a known prosthetic valve or rheumatic heart disease - urgent referral for an extended aetiological work-up.",
+    "Fever with new focal deficit in a stroke patient - aspiration pneumonia, infective endocarditis or brain abscess, not simply post-stroke fever.",
+    "Failure of a bedside swallow screen - keep nil by mouth including oral medication, and arrange a nasogastric tube within 24 hours.",
+  ],
+  pearls: [
+    "The time that matters is the time the patient was last seen well, not the time somebody noticed the deficit - record it in the referral note.",
+    "Check the capillary glucose before anything else in every suspected stroke; hypoglycaemia and Todd paresis are the two mimics that repeatedly catch candidates.",
+    "Never give aspirin before the CT scan and never lower blood pressure in acute ischaemic stroke unless it exceeds 220/120 mmHg or you are about to thrombolyse.",
+    "Sublingual nifedipine, intramuscular injections and dextrose-containing fluids are the three reflex errors of acute stroke care.",
+    "A stroke unit bed saves more lives and more independence than thrombolysis does, and it is available to every patient who arrives outside the window.",
+    "Crossed signs - an ipsilateral cranial nerve palsy with contralateral limb weakness - localise the lesion to the brainstem and to nowhere else.",
+    "A lacunar syndrome has no cortical signs; if there is aphasia, neglect or a visual field defect the stroke is not lacunar.",
+    "In a young woman with headache, seizures and deficits crossing arterial territories in the puerperium, think cerebral venous sinus thrombosis and anticoagulate even if there is haemorrhagic infarction.",
+  ],
+  theory: [
+    {
+      id: "neurology-stroke-acute-t1",
+      paper: "II",
+      kind: "long",
+      marks: 10,
+      minutes: 20,
+      frequency: "core",
+      question:
+        "A 58-year-old hypertensive man is brought to your clinic 70 minutes after developing sudden weakness of the right arm and leg with difficulty in speaking. Describe your immediate assessment and management, and outline the criteria and contraindications for intravenous thrombolysis.",
+      openingLines: [
+        "Stroke is a rapidly developing focal neurological deficit of vascular origin lasting more than 24 hours or leading to death; this man has a left hemisphere syndrome with right hemiparesis and aphasia, most likely a left middle cerebral artery territory infarct.",
+        "He is within the 4.5-hour window for intravenous thrombolysis, so the whole of the immediate management is directed at stabilising him and moving him to a CT-capable stroke-ready hospital in the shortest possible time.",
+      ],
+      answer: [
+        {
+          heading: "1. Immediate bedside actions in the first five minutes",
+          points: [
+            "Record the exact time he was last seen well and the time of onset - this determines eligibility for thrombolysis.",
+            "Check capillary blood glucose at once and treat hypoglycaemia with 25% dextrose; it is the commonest stroke mimic.",
+            "Assess airway, breathing, circulation; oxygen only if saturation is below 94%; head end raised 30 degrees; keep strictly nil by mouth.",
+            "Secure intravenous access in the non-paretic arm with normal saline; avoid dextrose-containing fluids and avoid intramuscular injections which preclude thrombolysis.",
+            "Record blood pressure, pulse, temperature, Glasgow Coma Scale and an NIHSS score, and take an ECG looking for atrial fibrillation.",
+          ],
+        },
+        {
+          heading: "2. Focused examination",
+          points: [
+            "Confirm the vascular syndrome: face, arm and leg power, sensory loss, visual fields, gaze deviation, speech (fluency, comprehension, naming, repetition), neglect, and plantar responses.",
+            "Look for the cause: irregular pulse, cardiac murmurs of rheumatic mitral stenosis, carotid bruit, blood pressure in both arms.",
+            "Exclude mimics: examine for signs of head injury, tongue bite or incontinence suggesting a seizure with Todd paresis, and fever suggesting sepsis or meningitis.",
+          ],
+        },
+        {
+          heading: "3. Transfer and communication",
+          points: [
+            "Arrange immediate ambulance transfer to the nearest CT-capable, thrombolysis-ready hospital and telephone ahead so the CT and stroke team are ready on arrival - pre-notification roughly halves door-to-needle time.",
+            "Send a written note stating the exact time last seen well, the deficit and NIHSS, capillary glucose, blood pressure, current medication including anticoagulants and antiplatelets, comorbidity and allergies.",
+            "Do not give aspirin, clopidogrel or heparin before the CT scan, and do not lower blood pressure unless it exceeds 220/120 mmHg or thrombolysis is planned.",
+          ],
+        },
+        {
+          heading: "4. Criteria for intravenous thrombolysis",
+          points: [
+            "Clinical diagnosis of ischaemic stroke causing a measurable and disabling neurological deficit.",
+            "Treatment can be started within 4.5 hours of the time last seen well.",
+            "Non-contrast CT excludes intracranial haemorrhage and shows no established large infarct.",
+            "Age 18 years or above, with no upper age limit in current guidance.",
+            "Blood pressure controlled below 185/110 mmHg before the bolus, using intravenous labetalol boluses.",
+            "Alteplase 0.9 mg/kg (maximum 90 mg), 10% as a bolus over one minute and the remainder over 60 minutes; or tenecteplase 0.25 mg/kg as a single bolus.",
+          ],
+        },
+        {
+          heading: "5. Contraindications to thrombolysis",
+          points: [
+            "Intracranial haemorrhage on CT, previous intracranial haemorrhage, known arteriovenous malformation, aneurysm or intracranial neoplasm.",
+            "Blood pressure persistently above 185/110 mmHg despite treatment.",
+            "Platelet count below 100 000/microlitre, INR above 1.7, heparin within 48 hours with a raised APTT, or a direct oral anticoagulant within 48 hours.",
+            "Blood glucose below 50 mg/dL, or a deficit that clears with correction of glucose.",
+            "Major surgery or serious trauma within 14 days, head injury or previous stroke within 3 months, gastrointestinal or urinary bleeding within 21 days, arterial puncture at a non-compressible site within 7 days.",
+            "Active internal bleeding, suspected aortic dissection, suspected infective endocarditis, and seizure at onset with a residual deficit attributable to the seizure.",
+          ],
+        },
+        {
+          heading: "6. If the window is missed or thrombolysis is contraindicated",
+          points: [
+            "Admit to a stroke unit - this alone reduces death and dependency with a number needed to treat of about 20.",
+            "Aspirin 300 mg within 48 hours once CT excludes haemorrhage, then 75-150 mg daily; dual antiplatelet therapy with clopidogrel for 21 days in minor stroke and high-risk TIA.",
+            "Bedside swallow screen before any oral intake, deep vein thrombosis prophylaxis, glycaemic and temperature control, early mobilisation and physiotherapy.",
+            "Secondary prevention from day 1-2: blood pressure to below 130/80 mmHg, high-intensity statin, anticoagulation if atrial fibrillation, tobacco and alcohol cessation, and carotid imaging with endarterectomy within 2 weeks for symptomatic 70-99% stenosis.",
+          ],
+        },
+      ],
+      mustDraw: [
+        "A time-line flow chart from symptom onset through glucose check, transfer and CT to the thrombolysis decision, with the 4.5-hour and 6-24 hour windows marked.",
+        "A table of blood pressure thresholds in acute stroke: no thrombolysis, planned thrombolysis, and intracerebral haemorrhage.",
+      ],
+      markSplit: [
+        { part: "Definition and immediate bedside stabilisation including glucose", marks: 2 },
+        { part: "Focused examination and localisation", marks: 1.5 },
+        { part: "Transfer, pre-notification and what not to do", marks: 1.5 },
+        { part: "Thrombolysis criteria with dose", marks: 2.5 },
+        { part: "Contraindications and the alternative pathway if the window is missed", marks: 2.5 },
+      ],
+      keywords: ["acute ischaemic stroke", "alteplase", "tenecteplase", "4.5-hour window", "NIHSS", "stroke unit"],
+    },
+    {
+      id: "neurology-stroke-acute-t2",
+      paper: "II",
+      kind: "short-note",
+      marks: 5,
+      minutes: 10,
+      frequency: "common",
+      question: "Write short notes on stroke in the young: causes and investigations.",
+      openingLines: [
+        "Stroke in the young is conventionally defined as stroke occurring below 45 years of age, and it accounts for a strikingly high proportion of Indian strokes - between 15% and 30% in hospital series, far above Western figures.",
+        "The aetiological spectrum is different from that of older patients, so an extended and systematic work-up is mandatory rather than optional.",
+      ],
+      answer: [
+        {
+          heading: "Cardiac causes",
+          points: [
+            "Rheumatic heart disease with mitral stenosis and atrial fibrillation - still a leading cause in India.",
+            "Prosthetic valves with inadequate anticoagulation, infective endocarditis, cardiomyopathy with mural thrombus, recent myocardial infarction.",
+            "Patent foramen ovale with paradoxical embolism, atrial septal defect and atrial myxoma.",
+          ],
+        },
+        {
+          heading: "Vascular and haematological causes",
+          points: [
+            "Cervical artery dissection after trauma, neck manipulation or trivial strain - presents with neck pain and Horner syndrome.",
+            "Vasculitis including Takayasu arteritis, systemic lupus erythematosus, primary CNS angiitis, and infective arteritis from tuberculous meningitis or neurosyphilis.",
+            "Antiphospholipid antibody syndrome, protein C, protein S and antithrombin deficiency, factor V Leiden, hyperhomocysteinaemia.",
+            "Sickle cell disease, polycythaemia, severe iron deficiency anaemia in children and nephrotic syndrome.",
+            "Moyamoya disease and fibromuscular dysplasia.",
+          ],
+        },
+        {
+          heading: "Situational and drug-related causes",
+          points: [
+            "Pregnancy and the puerperium, particularly cerebral venous sinus thrombosis, eclampsia and postpartum angiopathy.",
+            "Combined oral contraceptives, especially with smoking and migraine with aura.",
+            "Substance use - cocaine, amphetamines, cannabis - and anabolic steroid abuse.",
+            "HIV infection, neurocysticercosis-associated vasculitis and tuberculous meningitis with basal arteritis.",
+          ],
+        },
+        {
+          heading: "Investigations",
+          points: [
+            "Non-contrast CT first, then MRI brain with diffusion-weighted imaging and MR angiography of the intracranial and cervical vessels; MR venography if venous thrombosis is suspected.",
+            "ECG, 24-hour Holter or longer monitoring, transthoracic echocardiography, and transoesophageal echocardiography with a bubble study for patent foramen ovale.",
+            "Complete blood count, ESR, prothrombin time with INR, lipid profile, HbA1c, renal and liver function, homocysteine.",
+            "Thrombophilia screen (protein C, protein S, antithrombin, factor V Leiden), antiphospholipid antibodies including lupus anticoagulant, antinuclear antibody and ANCA.",
+            "Haemoglobin electrophoresis, HIV, VDRL, and cerebrospinal fluid examination where vasculitis or infection is suspected.",
+          ],
+        },
+      ],
+      mustDraw: ["A classification chart of causes of young stroke under the headings cardiac, vascular, haematological, infective and situational."],
+      markSplit: [
+        { part: "Definition and Indian burden", marks: 0.5 },
+        { part: "Cardiac causes", marks: 1 },
+        { part: "Vascular and haematological causes", marks: 1.5 },
+        { part: "Situational and drug causes", marks: 0.5 },
+        { part: "Investigation protocol", marks: 1.5 },
+      ],
+      keywords: ["young stroke", "rheumatic heart disease", "cervical artery dissection", "antiphospholipid syndrome", "cerebral venous sinus thrombosis"],
+    },
+    {
+      id: "neurology-stroke-acute-t3",
+      paper: "II",
+      kind: "chart-flow",
+      marks: 5,
+      minutes: 10,
+      frequency: "common",
+      question: "Draw and explain a flow chart for the management of a suspected acute stroke reaching a primary health centre without a CT scanner.",
+      openingLines: [
+        "The primary health centre cannot image or thrombolyse, so its task is recognition, stabilisation, exclusion of mimics, and the fastest possible transfer to a CT-capable stroke-ready facility with a good handover.",
+        "The flow chart runs: recognise, check glucose, stabilise, decide destination, pre-notify, transfer, and hand over with a written time-stamped note.",
+      ],
+      answer: [
+        {
+          heading: "Step 1 - Recognise",
+          points: [
+            "Apply BE-FAST: balance, eyes, face droop, arm weakness, speech difficulty, time.",
+            "Record the exact time last seen well and quantify the deficit; note whether the forehead is spared (stroke) or involved (Bell palsy).",
+          ],
+        },
+        {
+          heading: "Step 2 - Exclude mimics and stabilise",
+          points: [
+            "Capillary glucose immediately; treat hypoglycaemia with 25% dextrose 50 mL intravenously and reassess.",
+            "Airway, breathing, circulation; head up 30 degrees; oxygen only if saturation below 94%; nil by mouth; intravenous normal saline in the non-paretic arm.",
+            "Look for seizure with Todd paresis, head injury, sepsis and hypertensive encephalopathy.",
+          ],
+        },
+        {
+          heading: "Step 3 - Decide and do not delay",
+          points: [
+            "If within 4.5 hours of onset, transfer to the nearest thrombolysis-capable centre even if it is further than the nearest hospital.",
+            "If beyond the window, transfer to the nearest hospital with a CT scanner and inpatient stroke care.",
+            "Do not give aspirin, do not give antihypertensives unless blood pressure exceeds 220/120 mmHg, do not give intramuscular injections, do not give sublingual nifedipine.",
+          ],
+        },
+        {
+          heading: "Step 4 - Pre-notify and hand over",
+          points: [
+            "Telephone the receiving hospital so the CT and the stroke team are ready; use the state ambulance service (108) rather than private transport where possible.",
+            "Send a written note: time last seen well, deficit, glucose, blood pressure, ECG finding, drugs including anticoagulants, comorbidity, and the name and telephone number of the referring doctor.",
+            "Send an accompanying relative who can give consent for thrombolysis.",
+          ],
+        },
+        {
+          heading: "Step 5 - After discharge, the continuing role",
+          points: [
+            "Secondary prevention: blood pressure below 130/80 mmHg, high-intensity statin, antiplatelet or anticoagulant, glycaemic control, tobacco cessation.",
+            "Community rehabilitation, dysphagia and aspiration prevention, home safety and fall prevention, carer training and support.",
+            "Screening and treatment of post-stroke depression, spasticity and seizures, and disability certification.",
+          ],
+        },
+      ],
+      mustDraw: ["The five-box flow chart: recognise (BE-FAST) - glucose and stabilise - decide destination by window - pre-notify and transfer - long-term secondary prevention."],
+      markSplit: [
+        { part: "Recognition and timing", marks: 1 },
+        { part: "Glucose and stabilisation, mimics", marks: 1.5 },
+        { part: "Transfer decision and the things not to do", marks: 1.5 },
+        { part: "Handover and continuing care", marks: 1 },
+      ],
+      keywords: ["BE-FAST", "primary health centre", "pre-notification", "window period", "secondary prevention"],
+    },
+  ],
+  mcqs: [
+    {
+      id: "neurology-stroke-acute-q1",
+      stem: "A 62-year-old man arrives 2 hours after sudden onset of left hemiparesis. Blood pressure is 208/116 mmHg, capillary glucose 142 mg/dL, and non-contrast CT shows no haemorrhage. Thrombolysis is planned. What should be done about the blood pressure?",
+      options: [
+        "Leave it alone; high pressure maintains penumbral perfusion",
+        "Lower it below 185/110 mmHg with intravenous labetalol before giving alteplase",
+        "Give sublingual nifedipine 5 mg to bring it down rapidly",
+        "Lower systolic blood pressure to 120 mmHg before thrombolysis",
+        "Withhold thrombolysis permanently because of the blood pressure",
+      ],
+      answer: 1,
+      explanation:
+        "Blood pressure must be brought below 185/110 mmHg before intravenous thrombolysis, and intravenous labetalol boluses are the standard means of doing so, because thrombolysis at a higher pressure sharply increases the risk of symptomatic intracranial haemorrhage. Leaving it alone is the correct policy only when thrombolysis is not planned and pressure is under 220/120 mmHg. Sublingual nifedipine causes an uncontrolled fall and extends the infarct and has no place in stroke care. Lowering systolic to 120 mmHg would drop perfusion of the penumbra, and treatable hypertension is a temporary, not a permanent, contraindication.",
+      difficulty: "moderate",
+    },
+    {
+      id: "neurology-stroke-acute-q2",
+      stem: "A 70-year-old woman with atrial fibrillation is found by her family at 6 a.m. with right-sided weakness and no speech. She was last seen normal at 10 p.m. the previous night. CT at 7 a.m. shows no haemorrhage and no established infarct. Which statement is correct?",
+      options: [
+        "She is eligible for intravenous alteplase because CT is normal",
+        "The time last seen well is 10 p.m., so she is outside the 4.5-hour window for standard thrombolysis and should be assessed for thrombectomy or imaging-guided treatment",
+        "Thrombolysis should be given because a wake-up stroke is timed from waking",
+        "She should be given intravenous heparin immediately for atrial fibrillation",
+        "No further acute intervention is possible and she should be admitted to a general ward",
+      ],
+      answer: 1,
+      explanation:
+        "Stroke onset is timed from when the patient was last seen well, which is 10 p.m., so eight hours have elapsed and standard 4.5-hour thrombolysis criteria are not met; a wake-up stroke is never timed from waking. She should nevertheless be assessed urgently for mechanical thrombectomy, which can extend to 24 hours in selected large-vessel occlusion, or for advanced imaging-selected thrombolysis at a centre offering it. Immediate intravenous heparin is not given in cardioembolic stroke because it increases haemorrhagic transformation without reducing recurrence. A general ward is inferior to a stroke unit, which reduces death and dependency regardless of reperfusion therapy.",
+      difficulty: "hard",
+    },
+    {
+      id: "neurology-stroke-acute-q3",
+      stem: "A 55-year-old diabetic is brought with sudden right hemiparesis and drowsiness. Capillary glucose is 38 mg/dL. He takes glibenclamide and had missed breakfast. What is the most appropriate immediate action?",
+      options: [
+        "Send immediately for CT scan without treatment",
+        "Give 50 mL of 25% dextrose intravenously and reassess the deficit",
+        "Give aspirin 300 mg and observe",
+        "Start an insulin infusion to normalise glucose slowly",
+        "Give intravenous mannitol for cerebral oedema",
+      ],
+      answer: 1,
+      explanation:
+        "Hypoglycaemia is the commonest stroke mimic and can produce a dense focal deficit that reverses completely with dextrose, so 50 mL of 25% dextrose intravenously followed by reassessment is the correct first move, with a sulfonylurea-treated patient needing prolonged observation and a dextrose infusion because glibenclamide has a long duration of action. Scanning first wastes the minutes in which the brain is being damaged by a reversible cause. Aspirin treats the wrong disease and is contraindicated before imaging in any case. Insulin and mannitol both worsen the situation.",
+      difficulty: "easy",
+    },
+    {
+      id: "neurology-stroke-acute-q4",
+      stem: "A 48-year-old man has sudden vertigo, vomiting, hoarseness and difficulty swallowing. Examination shows loss of pain and temperature sensation on the left side of the face and the right side of the body, a left Horner syndrome and left limb ataxia. Where is the lesion?",
+      options: [
+        "Left lateral medulla",
+        "Right internal capsule",
+        "Left cerebellar hemisphere only",
+        "Left midbrain",
+        "Right pontine base",
+      ],
+      answer: 0,
+      explanation:
+        "Crossed sensory loss - ipsilateral face and contralateral body - with Horner syndrome, palatal and vocal cord palsy, ataxia and vertigo is the lateral medullary or Wallenberg syndrome, from posterior inferior cerebellar artery or vertebral artery occlusion, and the side is given by the face and the Horner syndrome, which are on the left. An internal capsular lesion causes a pure motor hemiparesis without cranial nerve or crossed findings. An isolated cerebellar lesion gives ataxia and vertigo but not the crossed sensory pattern, Horner syndrome or bulbar palsy. Midbrain lesions produce third nerve palsy with contralateral weakness, and a pontine base lesion produces sixth and seventh nerve involvement with contralateral hemiparesis.",
+      difficulty: "moderate",
+    },
+    {
+      id: "neurology-stroke-acute-q5",
+      stem: "A 66-year-old man is admitted with an acute ischaemic stroke and moderate right hemiparesis with slurred speech. He is alert. His daughter asks when he can eat. What should be done first?",
+      options: [
+        "Allow a normal diet since he is alert",
+        "Perform a bedside swallow screen before any oral intake, including medicines and water",
+        "Insert a percutaneous endoscopic gastrostomy on day 1",
+        "Keep him nil by mouth for 7 days as a routine",
+        "Allow only oral fluids but no solids",
+      ],
+      answer: 1,
+      explanation:
+        "Up to half of acute strokes have dysphagia and aspiration pneumonia is a leading cause of early death, so every stroke patient must have a bedside swallow screen before the first oral intake of anything, including tablets and sips of water; alertness and clear speech do not exclude an unsafe swallow. If the screen fails, a nasogastric tube within 24 hours provides nutrition rather than starving the patient, and a gastrostomy is considered only if dysphagia persists for weeks. Routinely withholding all oral intake for a week causes malnutrition and delays recovery, and a fluids-only rule is unsafe because thin liquids are the hardest bolus to control.",
+      difficulty: "easy",
+    },
+    {
+      id: "neurology-stroke-acute-q6",
+      stem: "A 30-year-old woman presents 8 days after a normal delivery with severe headache, two generalised seizures, papilloedema and mild left hemiparesis. CT shows a right parietal haemorrhagic infarct that does not respect an arterial territory. What is the most likely diagnosis and appropriate treatment?",
+      options: [
+        "Hypertensive intracerebral haemorrhage; lower blood pressure aggressively",
+        "Cerebral venous sinus thrombosis; anticoagulate with low molecular weight heparin",
+        "Arterial ischaemic stroke; give intravenous thrombolysis",
+        "Eclampsia; give magnesium sulphate alone and observe",
+        "Brain abscess; start intravenous antibiotics",
+      ],
+      answer: 1,
+      explanation:
+        "Headache, seizures, papilloedema and a haemorrhagic lesion crossing arterial boundaries in the puerperium is cerebral venous sinus thrombosis, confirmed by MR venography, and anticoagulation with low molecular weight heparin is indicated even in the presence of haemorrhagic infarction because the haemorrhage results from venous congestion that anticoagulation relieves. Aggressive blood pressure lowering treats a diagnosis she does not have. Thrombolysis is contraindicated with haemorrhage on imaging and this is not an arterial stroke. Eclampsia should be excluded by blood pressure and urine protein, but it does not explain a focal haemorrhagic infarct, and there is no fever or ring lesion to suggest abscess.",
+      difficulty: "hard",
+    },
+    {
+      id: "neurology-stroke-acute-q7",
+      stem: "A 59-year-old man had a minor ischaemic stroke with an NIHSS of 2 twenty hours ago, and CT excludes haemorrhage. He is not in atrial fibrillation. Which antithrombotic regimen is best supported by evidence?",
+      options: [
+        "Aspirin 75 mg alone lifelong from today",
+        "Aspirin plus clopidogrel for 21 days, then a single antiplatelet long term",
+        "Warfarin titrated to an INR of 2-3",
+        "Aspirin plus clopidogrel indefinitely",
+        "Low molecular weight heparin for 7 days then aspirin",
+      ],
+      answer: 1,
+      explanation:
+        "In minor non-cardioembolic ischaemic stroke with an NIHSS of 3 or less, or in high-risk TIA, short-course dual antiplatelet therapy with aspirin and clopidogrel started within 24 hours and continued for 21 days reduces early recurrence, after which a single antiplatelet is continued long term - the CHANCE and POINT evidence. Aspirin alone is inferior in the first three weeks in this specific group. Warfarin has no advantage over antiplatelets in non-cardioembolic stroke and adds bleeding. Continuing dual antiplatelet therapy indefinitely progressively increases major bleeding without further ischaemic benefit, and heparin does not reduce recurrence in acute ischaemic stroke.",
+      difficulty: "moderate",
+    },
+  ],
+  cards: [
+    {
+      id: "neurology-stroke-acute-c1",
+      front: "WHO definition of stroke.",
+      back: "Rapidly developing clinical signs of focal or global disturbance of cerebral function lasting more than 24 hours or leading to death, with no apparent cause other than vascular origin.",
+    },
+    {
+      id: "neurology-stroke-acute-c2",
+      front: "What does BE-FAST stand for?",
+      back: "Balance, Eyes, Face droop, Arm weakness, Speech difficulty, Time to call for help - the two extra letters catch posterior circulation stroke.",
+    },
+    {
+      id: "neurology-stroke-acute-c3",
+      front: "Alteplase dose and window for acute ischaemic stroke.",
+      back: "0.9 mg/kg (maximum 90 mg) within 4.5 hours of time last seen well; 10% as a bolus over 1 minute, the rest over 60 minutes. Tenecteplase 0.25 mg/kg single bolus is an alternative.",
+    },
+    {
+      id: "neurology-stroke-acute-c4",
+      front: "Blood pressure rules in acute ischaemic stroke.",
+      back: "Do not treat unless above 220/120 mmHg. If thrombolysing, bring below 185/110 mmHg first and keep below 180/105 mmHg for 24 hours. In intracerebral haemorrhage aim systolic 140 mmHg.",
+    },
+    {
+      id: "neurology-stroke-acute-c5",
+      front: "Thrombectomy window for large-vessel occlusion.",
+      back: "Within 6 hours routinely; extended to 24 hours in selected patients with perfusion or clinical-core mismatch (DAWN, DEFUSE-3).",
+    },
+    {
+      id: "neurology-stroke-acute-c6",
+      front: "Five lacunar syndromes.",
+      back: "Pure motor hemiparesis, pure sensory stroke, sensorimotor stroke, ataxic hemiparesis, dysarthria-clumsy hand syndrome - all without cortical signs.",
+    },
+    {
+      id: "neurology-stroke-acute-c7",
+      front: "Features of lateral medullary (Wallenberg) syndrome.",
+      back: "Ipsilateral facial pain and temperature loss, Horner syndrome, palatal and vocal cord palsy, limb ataxia, vertigo and hiccups; contralateral body pain and temperature loss.",
+    },
+    {
+      id: "neurology-stroke-acute-c8",
+      front: "When is aspirin started after ischaemic stroke, and at what dose?",
+      back: "300 mg within 48 hours once CT excludes haemorrhage, then 75-150 mg daily; delay 24 hours after thrombolysis and repeat CT first.",
+    },
+    {
+      id: "neurology-stroke-acute-c9",
+      front: "Dual antiplatelet regimen after minor stroke or high-risk TIA.",
+      back: "Aspirin plus clopidogrel for 21 days started within 24 hours, then a single antiplatelet long term (CHANCE, POINT).",
+    },
+    {
+      id: "neurology-stroke-acute-c10",
+      front: "Which single intervention reduces death and dependency in stroke most broadly?",
+      back: "Admission to an organised stroke unit - number needed to treat about 20, and available even to patients outside the thrombolysis window.",
+    },
+    {
+      id: "neurology-stroke-acute-c11",
+      front: "Timing of carotid endarterectomy after a stroke or TIA.",
+      back: "Within 2 weeks of the event for symptomatic internal carotid stenosis of 70-99%; benefit falls sharply with delay.",
+    },
+    {
+      id: "neurology-stroke-acute-c12",
+      front: "Three reflex errors to avoid in acute stroke.",
+      back: "Sublingual nifedipine, intramuscular injections (they preclude thrombolysis) and dextrose-containing intravenous fluids.",
+    },
+  ],
+  references: [
+    "AHA/ASA Guidelines for the Early Management of Patients with Acute Ischemic Stroke, 2019 with 2019-2023 focused updates",
+    "Indian Stroke Association / Indian Academy of Neurology consensus guidelines for acute ischaemic stroke, 2022",
+    "ESO Guidelines on Intravenous Thrombolysis for Acute Ischaemic Stroke, 2021",
+    "DAWN and DEFUSE-3 trials of late-window thrombectomy, NEJM 2018",
+    "Harrison's Principles of Internal Medicine, 21st edition, 2022 - cerebrovascular diseases",
+  ],
+});
+
+topics.push({
+  id: "neurology-tia",
+  title: "Transient ischaemic attack and secondary prevention",
+  oneLiner:
+    "A transient ischaemic attack is a transient episode of focal neurological dysfunction caused by focal brain, spinal cord or retinal ischaemia without infarction on imaging, and it is a medical emergency rather than a reassuring event because up to 10% of patients have a completed stroke within 7 days - a risk that specialist assessment, dual antiplatelet therapy, a statin, blood pressure control and carotid surgery within 2 weeks can cut by about 80%.",
+  frequency: "core",
+  keywords: [
+    "TIA",
+    "mini stroke",
+    "amaurosis fugax",
+    "ABCD2 score",
+    "carotid stenosis",
+    "carotid endarterectomy",
+    "clopidogrel",
+    "dual antiplatelet",
+    "atorvastatin",
+    "atrial fibrillation",
+    "CHA2DS2-VASc",
+    "secondary prevention",
+    "crescendo TIA",
+    "vertebrobasilar insufficiency",
+  ],
+  sections: [
+    {
+      heading: "Definition and why it is an emergency",
+      points: [
+        "**Tissue-based definition (AHA/ASA, current):** a transient episode of neurological dysfunction caused by focal brain, spinal cord or retinal ischaemia **without acute infarction on imaging**. The older time-based definition of a deficit resolving within 24 hours is obsolete because a third of such patients have infarcts on diffusion-weighted MRI.",
+        "**Most TIAs last under an hour**, and typically 5-20 minutes; an event lasting more than an hour usually leaves an infarct and is a minor stroke.",
+        "**The risk of stroke after a TIA is front-loaded:** about 5% at 2 days, 8-10% at 7 days and 10-17% at 90 days without treatment. Half of the strokes that follow a TIA occur within the first 48 hours.",
+        "Urgent evaluation and treatment within 24 hours reduces the 90-day stroke risk by roughly 80% (the EXPRESS and SOS-TIA studies), which is a larger absolute benefit than most interventions in medicine.",
+        "**A TIA is therefore a warning that must be acted upon the same day**, not an event to investigate at leisure; in the Indian setting the practical message to the patient and family is that this is as urgent as chest pain.",
+        "The name 'mini stroke' is best avoided with patients because it implies triviality; call it a warning stroke.",
+      ],
+    },
+    {
+      heading: "Recognising a TIA and its mimics",
+      points: [
+        "**Carotid territory TIA:** unilateral weakness or clumsiness of the face, arm or leg, unilateral sensory disturbance, dysphasia, and **amaurosis fugax** - painless monocular visual loss described as a curtain descending, lasting minutes and clearing completely.",
+        "**Vertebrobasilar TIA:** bilateral or alternating limb weakness, ataxia and unsteadiness, diplopia, dysarthria, dysphagia, bilateral visual loss or a homonymous field defect, and vertigo. **Vertigo alone is almost never a TIA**; it must be accompanied by other posterior circulation features.",
+        "The onset is **sudden and maximal at the start**, and the resolution is complete - a march of symptoms over minutes suggests migraine aura, and a march over seconds with positive symptoms suggests a focal seizure.",
+        "**Symptoms that are NOT a TIA on their own:** isolated dizziness or light-headedness, syncope or presyncope, generalised weakness, confusion, incontinence, tinnitus, transient global amnesia, and 'my whole body went numb'.",
+        "**Mimics to exclude:** migraine with aura (positive visual phenomena, gradual march, headache follows), focal seizure with Todd paresis, hypoglycaemia, syncope, vestibular disorders, subdural haematoma, brain tumour, multiple sclerosis in the young, and functional neurological disorder.",
+        "**Crescendo TIA** - two or more attacks in a week, or increasing frequency, duration or severity - carries a very high stroke risk and warrants admission.",
+        "Ask about the specifics that change the diagnosis: neck pain or recent neck trauma or manipulation (dissection), palpitation (atrial fibrillation), claudication and previous vascular surgery, and the drug and contraceptive history.",
+      ],
+    },
+    {
+      heading: "Risk stratification and the immediate plan",
+      points: [
+        "**ABCD2 score:** **A**ge 60 or over = 1; **B**lood pressure 140/90 mmHg or more = 1; **C**linical features - unilateral weakness = 2, speech disturbance without weakness = 1; **D**uration 60 minutes or more = 2, 10-59 minutes = 1; **D**iabetes = 1. Maximum 7.",
+        "A score of 0-3 is low risk, 4-5 moderate and 6-7 high, with 2-day stroke risks of roughly 1%, 4% and 8%. **However, current UK and American guidance no longer uses ABCD2 to decide who is seen urgently - everyone with a suspected TIA is assessed within 24 hours** - because the score misses carotid stenosis and atrial fibrillation, which are high-risk regardless of the score.",
+        "**Start aspirin 300 mg immediately** (unless bleeding or contraindication) at the moment a TIA is suspected, and refer for specialist assessment within 24 hours.",
+        "**Admit** if there is crescendo TIA, atrial fibrillation newly detected, a known high-grade carotid stenosis, an event while already on antiplatelet therapy, or the patient cannot be reliably assessed within 24 hours - a common reason to admit in Indian practice.",
+        "**Advise the patient not to drive** until assessed - a month for a private licence and considerably longer for a commercial licence in most jurisdictions.",
+        "Give the family written warning symptoms with the instruction to call an ambulance immediately if a deficit recurs and does not clear within a few minutes.",
+      ],
+    },
+    {
+      heading: "Investigations after a TIA",
+      points: [
+        "**Neuroimaging:** MRI with diffusion-weighted imaging is preferred and should be done within 24 hours - it distinguishes true TIA from minor stroke, identifies the vascular territory, and finds mimics. Non-contrast CT is acceptable where MRI is unavailable but a normal CT proves nothing.",
+        "**Carotid imaging within 24 hours** for all anterior circulation events in patients who would be candidates for revascularisation: carotid Doppler first, then CT or MR angiography to confirm the degree of stenosis before surgery.",
+        "**Cardiac evaluation:** 12-lead ECG in everyone, plus prolonged rhythm monitoring (24-72 hour Holter, or longer where available) because paroxysmal atrial fibrillation is found in 10-15% of apparently cryptogenic events and completely changes treatment from an antiplatelet to an anticoagulant.",
+        "**Echocardiography** where a cardiac source is suspected - murmur, rheumatic heart disease, prosthetic valve, recent myocardial infarction, young patient, or no other cause found; add a bubble study for patent foramen ovale in the young.",
+        "**Blood tests:** complete blood count (polycythaemia, thrombocytosis, anaemia), blood glucose and HbA1c, lipid profile, creatinine and electrolytes, ESR (giant cell arteritis in amaurosis fugax over 50), and prothrombin time with INR.",
+        "In the young or where no cause is found, extend to thrombophilia and antiphospholipid antibodies, homocysteine, vasculitis screen and, in India, evaluation for rheumatic heart disease and cervical artery dissection.",
+      ],
+    },
+    {
+      heading: "Secondary prevention: the five pillars",
+      points: [
+        "**1. Antithrombotic therapy.** For non-cardioembolic events, **aspirin 75-150 mg daily, or clopidogrel 75 mg daily, lifelong**; give **aspirin plus clopidogrel for 21 days** after a high-risk TIA (ABCD2 4 or more) or minor stroke, then drop to one agent. For **atrial fibrillation, anticoagulate** with warfarin (INR 2-3) or a DOAC - aspirin is not an acceptable substitute - and remember that rheumatic mitral stenosis or a mechanical valve requires warfarin, never a DOAC.",
+        "**2. Blood pressure.** The single most powerful long-term intervention. Aim **below 130/80 mmHg** after the acute phase; every 10 mmHg fall in systolic pressure reduces recurrent stroke by about a quarter. Start or intensify within a few days of a TIA (immediately, since there is no penumbra to protect), using an ACE inhibitor or ARB with a thiazide-like diuretic or amlodipine.",
+        "**3. Lipids.** **High-intensity statin - atorvastatin 40-80 mg or rosuvastatin 20-40 mg daily - for every ischaemic TIA or stroke regardless of the baseline LDL**, targeting LDL cholesterol below 70 mg/dL (below 55 mg/dL for very high risk per the Lipid Association of India). Add ezetimibe 10 mg if the target is missed.",
+        "**4. Diabetes and lifestyle.** HbA1c to individualised target, ideally below 7%; complete tobacco cessation in every form including gutkha, khaini and bidi; alcohol reduction; 150 minutes a week of moderate activity; salt below 5 g a day; weight reduction to a BMI below 23 kg/m2 by Asian-Indian criteria; and treatment of obstructive sleep apnoea.",
+        "**5. Carotid revascularisation.** **Carotid endarterectomy within 2 weeks** for symptomatic stenosis of **70-99%** (and considered for 50-69% in men with recent symptoms), performed by a surgeon with an audited perioperative stroke or death rate below 6%. Benefit falls sharply after 2 weeks and there is no benefit for near-occlusion or asymptomatic mild stenosis. Carotid stenting is an alternative in the young or where the neck is hostile to surgery.",
+        "Set the whole package in a written care plan with named review dates - the failure mode in Indian practice is not ignorance of the drugs but non-adherence and loss to follow-up, so use fixed-dose combinations, the NP-NCD clinic, a treatment card and a family member as the treatment supporter.",
+      ],
+    },
+    {
+      heading: "Follow-up and the conversation with the patient",
+      points: [
+        "Review at 2 weeks, 3 months, then 6-monthly: blood pressure, adherence, bleeding, symptoms of recurrence, HbA1c, lipids annually, renal function on ACE inhibitor or diuretic, INR if on warfarin.",
+        "Explain the diagnosis in plain language: a blood vessel to the brain blocked briefly, the brain recovered, and the treatment is to prevent the next one which may not recover.",
+        "Explicitly say the numbers - roughly one in ten will have a stroke within a week untreated, and treatment removes most of that risk - because this is what drives adherence.",
+        "Address the fear directly, screen for anxiety and depression, and involve the family so that warning symptoms are recognised at home.",
+        "Check for and treat the conditions that often coexist: atrial fibrillation, heart failure, peripheral arterial disease, chronic kidney disease and obstructive sleep apnoea.",
+        "Document driving advice, work restrictions and, in occupational drivers, the need for formal fitness assessment.",
+      ],
+    },
+  ],
+  tables: [
+    {
+      heading: "ABCD2 score for early stroke risk after TIA",
+      columns: ["Component", "Criterion", "Points"],
+      rows: [
+        ["A - Age", "60 years or more", "1"],
+        ["B - Blood pressure", "140/90 mmHg or more at assessment", "1"],
+        ["C - Clinical features", "Unilateral weakness", "2"],
+        ["C - Clinical features", "Speech disturbance without weakness", "1"],
+        ["D - Duration", "60 minutes or more", "2"],
+        ["D - Duration", "10-59 minutes", "1"],
+        ["D - Diabetes", "Present", "1"],
+        ["Interpretation", "0-3 low, 4-5 moderate, 6-7 high (2-day risk about 1%, 4%, 8%)", "Max 7"],
+      ],
+    },
+    {
+      heading: "TIA versus its common mimics",
+      columns: ["Feature", "TIA", "Migraine aura", "Focal seizure"],
+      rows: [
+        ["Onset", "Sudden, maximal at onset", "Gradual march over 5-20 minutes", "Sudden, spreads over seconds"],
+        ["Symptom type", "Negative - loss of power, sensation, vision, speech", "Positive then negative - flashing lights then scotoma", "Positive - jerking, tingling, deja vu"],
+        ["Duration", "Usually 5-20 minutes, under 1 hour", "20-60 minutes", "Seconds to 2 minutes, then postictal state"],
+        ["Headache", "Rare", "Follows the aura in most", "Postictal headache common"],
+        ["Recurrence pattern", "Stereotyped, in the same territory", "Stereotyped, often lifelong history", "Stereotyped, may generalise"],
+        ["Age at first event", "Usually over 50 with vascular risk factors", "Usually under 40, long history", "Any age"],
+      ],
+    },
+    {
+      heading: "Secondary prevention package after a non-cardioembolic TIA",
+      columns: ["Pillar", "Intervention", "Target or dose"],
+      rows: [
+        ["Antiplatelet", "Aspirin 75-150 mg or clopidogrel 75 mg daily; aspirin plus clopidogrel for the first 21 days if high risk", "Lifelong single agent thereafter"],
+        ["Blood pressure", "ACE inhibitor or ARB with a thiazide-like diuretic or amlodipine", "Below 130/80 mmHg"],
+        ["Lipids", "Atorvastatin 40-80 mg or rosuvastatin 20-40 mg daily, add ezetimibe if needed", "LDL below 70 mg/dL (below 55 mg/dL if very high risk)"],
+        ["Glycaemia", "Metformin-based regimen; consider an SGLT2 inhibitor or GLP-1 agonist if atherosclerotic disease", "HbA1c below 7% individualised"],
+        ["Carotid", "Endarterectomy for symptomatic 70-99% stenosis", "Within 2 weeks of the event"],
+        ["Lifestyle", "Tobacco cessation, alcohol reduction, salt below 5 g/day, 150 minutes activity a week", "BMI below 23 kg/m2, waist below 90 cm (men) and 80 cm (women)"],
+      ],
+    },
+  ],
+  redFlags: [
+    "Two or more TIAs in a week, or attacks increasing in frequency, duration or severity - crescendo TIA, admit today.",
+    "A TIA occurring while already on aspirin or clopidogrel - antiplatelet failure; admit and investigate for carotid stenosis or a cardiac source.",
+    "TIA with a newly irregular pulse - undiagnosed atrial fibrillation; this patient needs anticoagulation, not an antiplatelet.",
+    "Amaurosis fugax in a patient over 50 with headache, scalp tenderness or jaw claudication - giant cell arteritis; check ESR and start steroids the same day.",
+    "TIA with neck pain, a Horner syndrome or a recent history of neck trauma or manipulation - carotid or vertebral artery dissection.",
+    "Deficit that has not fully resolved by the time you examine the patient - this is a stroke, not a TIA; apply the stroke pathway and the thrombolysis window.",
+    "TIA in a patient with a prosthetic valve, rheumatic mitral stenosis or infective endocarditis - urgent cardiology referral; anticoagulation decisions differ.",
+  ],
+  pearls: [
+    "The tissue-based definition rules: transient symptoms with an infarct on diffusion-weighted MRI is a stroke, not a TIA, and it changes prognosis and paperwork.",
+    "Half of the strokes that follow a TIA happen in the first 48 hours - which is why the assessment window is 24 hours and not next week's outpatient slot.",
+    "Isolated dizziness, syncope, generalised weakness and transient global amnesia are not TIAs; a TIA produces focal negative symptoms with sudden onset.",
+    "Vertigo counts as a posterior circulation TIA only when it comes with other brainstem or cerebellar features.",
+    "Start aspirin 300 mg the moment a TIA is suspected in the clinic - do not wait for imaging in a patient with no deficit and no bleeding risk.",
+    "Do not use ABCD2 to decide who gets seen quickly: everyone with a suspected TIA is assessed within 24 hours, because the score misses carotid stenosis and atrial fibrillation.",
+    "Carotid endarterectomy for symptomatic 70-99% stenosis must happen within two weeks; the benefit largely evaporates after that.",
+    "Every ischaemic TIA gets a high-intensity statin regardless of the baseline LDL - the benefit is not confined to those with high cholesterol.",
+  ],
+  theory: [
+    {
+      id: "neurology-tia-t1",
+      paper: "II",
+      kind: "long",
+      marks: 10,
+      minutes: 20,
+      frequency: "core",
+      question:
+        "A 64-year-old man with diabetes and hypertension had 20 minutes of right arm weakness and slurred speech yesterday, which resolved completely. Define transient ischaemic attack, describe your evaluation and outline a complete secondary prevention plan.",
+      openingLines: [
+        "A transient ischaemic attack is a transient episode of neurological dysfunction caused by focal brain, spinal cord or retinal ischaemia without acute infarction on imaging - a tissue-based definition that has replaced the old 24-hour rule.",
+        "It is a medical emergency: the risk of completed stroke is about 5% at 2 days and 10% at 7 days, and urgent assessment with immediate secondary prevention reduces the 90-day risk by roughly 80%.",
+      ],
+      answer: [
+        {
+          heading: "1. Confirm that it was a TIA",
+          points: [
+            "History from the patient and a witness: sudden onset, maximal at onset, focal negative symptoms, complete resolution, and duration.",
+            "Determine the territory: right arm weakness with dysarthria is a left carotid (anterior circulation) event; ask specifically about amaurosis fugax in the left eye.",
+            "Exclude mimics: hypoglycaemia (was he on a sulfonylurea or insulin), focal seizure with Todd paresis, migraine aura, syncope, vestibular disorder and functional symptoms.",
+            "Ask about previous similar events, current antiplatelet or anticoagulant use, palpitation, neck trauma, and claudication.",
+          ],
+        },
+        {
+          heading: "2. Examination",
+          points: [
+            "Full neurological examination to confirm that no deficit remains - a residual deficit means this is a stroke.",
+            "Pulse for atrial fibrillation, blood pressure in both arms, carotid bruits, cardiac murmurs, peripheral pulses, fundus for retinal emboli and hypertensive or diabetic retinopathy.",
+            "Calculate an ABCD2 score for prognostic information, but do not use it to delay assessment.",
+          ],
+        },
+        {
+          heading: "3. Investigations",
+          points: [
+            "MRI brain with diffusion-weighted imaging within 24 hours; CT if MRI is unavailable.",
+            "Carotid Doppler within 24 hours since this is an anterior circulation event and he is a surgical candidate.",
+            "ECG in all, plus 24-72 hours of rhythm monitoring for paroxysmal atrial fibrillation; echocardiography if a cardiac source is suspected.",
+            "Blood glucose and HbA1c, complete blood count, lipid profile, creatinine and electrolytes, ESR, prothrombin time with INR.",
+          ],
+        },
+        {
+          heading: "4. Immediate treatment",
+          points: [
+            "Aspirin 300 mg immediately, then aspirin 75 mg plus clopidogrel 75 mg for 21 days (high-risk TIA), followed by a single antiplatelet lifelong.",
+            "If atrial fibrillation is found, stop the antiplatelet and anticoagulate - warfarin to INR 2-3, or a DOAC in non-valvular AF; warfarin only if there is rheumatic mitral stenosis or a mechanical valve.",
+            "Atorvastatin 40-80 mg daily started at once, irrespective of baseline LDL.",
+            "Refer for specialist assessment within 24 hours; admit if crescendo TIA, new atrial fibrillation, event on antiplatelet therapy, or no reliable access to rapid assessment.",
+          ],
+        },
+        {
+          heading: "5. Long-term secondary prevention",
+          points: [
+            "Blood pressure to below 130/80 mmHg with an ACE inhibitor or ARB plus a thiazide-like diuretic or amlodipine - the largest long-term risk reduction.",
+            "LDL cholesterol below 70 mg/dL, adding ezetimibe 10 mg if the target is missed on a maximal statin.",
+            "Glycaemic control with an individualised HbA1c target, preferring agents with cardiovascular benefit.",
+            "Complete tobacco cessation including smokeless forms, alcohol reduction, salt below 5 g a day, 150 minutes a week of activity, weight to a BMI below 23 kg/m2.",
+            "Carotid endarterectomy within 2 weeks if the Doppler shows symptomatic 70-99% stenosis.",
+            "Written care plan, driving advice, warning symptoms given to the family, and structured follow-up at 2 weeks, 3 months and then 6-monthly.",
+          ],
+        },
+      ],
+      mustDraw: [
+        "The ABCD2 score as a table with points and risk bands.",
+        "A flow chart of the 24-hour TIA pathway: suspect - aspirin 300 mg - urgent imaging and carotid Doppler and ECG - decide antiplatelet versus anticoagulant - five-pillar secondary prevention.",
+      ],
+      markSplit: [
+        { part: "Definition, tissue-based, and early stroke risk", marks: 2 },
+        { part: "History, mimics and localisation", marks: 2 },
+        { part: "Examination and investigations", marks: 2 },
+        { part: "Immediate antithrombotic and statin decisions", marks: 2 },
+        { part: "Long-term five-pillar prevention including carotid surgery", marks: 2 },
+      ],
+      keywords: ["transient ischaemic attack", "ABCD2", "dual antiplatelet", "carotid endarterectomy", "secondary prevention"],
+    },
+    {
+      id: "neurology-tia-t2",
+      paper: "II",
+      kind: "short-note",
+      marks: 5,
+      minutes: 10,
+      frequency: "common",
+      question: "Write short notes on the secondary prevention of ischaemic stroke.",
+      openingLines: [
+        "Secondary prevention is the set of interventions started after an ischaemic stroke or TIA to prevent recurrence, and about 80% of recurrent strokes are preventable by a combination of drugs and risk factor control.",
+        "It rests on five pillars: antithrombotic therapy chosen by mechanism, blood pressure control, lipid lowering, control of diabetes and lifestyle, and revascularisation where indicated.",
+      ],
+      answer: [
+        {
+          heading: "Antithrombotic therapy chosen by mechanism",
+          points: [
+            "Non-cardioembolic stroke or TIA: aspirin 75-150 mg or clopidogrel 75 mg daily lifelong; aspirin plus clopidogrel for 21 days only after minor stroke or high-risk TIA.",
+            "Atrial fibrillation: anticoagulation with warfarin to INR 2-3 or a direct oral anticoagulant; aspirin is not an adequate substitute.",
+            "Rheumatic mitral stenosis or a mechanical prosthetic valve: warfarin, never a DOAC.",
+            "Timing after stroke: start anticoagulation 1-14 days after the event depending on infarct size and haemorrhagic risk.",
+          ],
+        },
+        {
+          heading: "Blood pressure and lipids",
+          points: [
+            "Target below 130/80 mmHg once the acute phase is over; each 10 mmHg systolic reduction cuts recurrence by about a quarter.",
+            "Preferred combination is an ACE inhibitor or ARB with a thiazide-like diuretic (the PROGRESS regimen) or amlodipine.",
+            "High-intensity statin for every ischaemic event irrespective of baseline LDL, targeting LDL below 70 mg/dL, with ezetimibe as the first add-on.",
+          ],
+        },
+        {
+          heading: "Diabetes, lifestyle and comorbidity",
+          points: [
+            "Individualised HbA1c target around 7%; agents with proven cardiovascular benefit preferred.",
+            "Complete tobacco cessation in every form, alcohol within limits, salt under 5 g a day, DASH-style diet, 150 minutes of moderate activity weekly, weight to a BMI below 23 kg/m2.",
+            "Screen and treat obstructive sleep apnoea, depression and physical deconditioning; adherence support with fixed-dose combinations and a treatment card.",
+          ],
+        },
+        {
+          heading: "Revascularisation and follow-up",
+          points: [
+            "Carotid endarterectomy within 2 weeks for symptomatic internal carotid stenosis of 70-99%; consider for 50-69% in men.",
+            "Carotid stenting where surgery is high risk or the patient is young with a suitable lesion.",
+            "Structured follow-up with a written plan, warning symptoms taught to the family, driving advice, and rehabilitation continued in the community.",
+          ],
+        },
+      ],
+      mustDraw: ["A table of the five pillars of secondary prevention with the drug, dose and target for each."],
+      markSplit: [
+        { part: "Antithrombotic choice by mechanism", marks: 1.5 },
+        { part: "Blood pressure and lipid targets", marks: 1.5 },
+        { part: "Diabetes and lifestyle", marks: 1 },
+        { part: "Carotid revascularisation and follow-up", marks: 1 },
+      ],
+      keywords: ["secondary prevention", "PROGRESS", "LDL target", "carotid endarterectomy", "anticoagulation"],
+    },
+  ],
+  mcqs: [
+    {
+      id: "neurology-tia-q1",
+      stem: "A 68-year-old hypertensive man had 15 minutes of painless loss of vision in the right eye described as a curtain coming down, which cleared fully 6 hours ago. He is neurologically normal now. What is the single most important investigation to arrange urgently?",
+      options: [
+        "Fundus fluorescein angiography",
+        "Carotid Doppler of the neck vessels",
+        "Visual evoked potentials",
+        "MRI of the orbits",
+        "Erythrocyte sedimentation rate only",
+      ],
+      answer: 1,
+      explanation:
+        "Amaurosis fugax is a retinal TIA in the internal carotid territory, and the urgent question is whether there is a surgically correctable carotid stenosis, so carotid Doppler within 24 hours is the key investigation because symptomatic 70-99% stenosis needs endarterectomy within two weeks. Fluorescein angiography and orbital MRI investigate intrinsic eye disease that does not present with brief complete resolution. Visual evoked potentials test the optic nerve pathway and have no role here. ESR should certainly be checked to exclude giant cell arteritis in a man of this age, but it does not replace the carotid study that determines whether he needs surgery.",
+      difficulty: "moderate",
+    },
+    {
+      id: "neurology-tia-q2",
+      stem: "A 59-year-old woman is seen 4 hours after a 10-minute episode of left arm weakness that resolved fully. Pulse is irregularly irregular at 96/min, and ECG confirms atrial fibrillation. Echocardiography shows no valve lesion and normal ventricular function. Which is the correct antithrombotic plan?",
+      options: [
+        "Aspirin 75 mg daily lifelong",
+        "Aspirin plus clopidogrel for 21 days then clopidogrel alone",
+        "Anticoagulation with a direct oral anticoagulant or warfarin to INR 2-3",
+        "Aspirin plus warfarin together",
+        "No antithrombotic until MRI confirms infarction",
+      ],
+      answer: 2,
+      explanation:
+        "A TIA in a patient with atrial fibrillation is cardioembolic and requires anticoagulation; her CHA2DS2-VASc score already exceeds the threshold once the TIA is counted, and non-valvular AF permits either a DOAC or warfarin. Aspirin alone gives little protection against cardioembolic stroke and is explicitly not an acceptable alternative. Dual antiplatelet therapy is the regimen for non-cardioembolic minor stroke and high-risk TIA, not for AF. Combining aspirin with warfarin adds bleeding without ischaemic benefit in the absence of a coronary indication, and treatment should not be delayed for imaging in a patient with no residual deficit.",
+      difficulty: "moderate",
+    },
+    {
+      id: "neurology-tia-q3",
+      stem: "Which of the following episodes is most consistent with a transient ischaemic attack?",
+      options: [
+        "Ten minutes of spinning vertigo with vomiting and no other symptoms",
+        "Twenty minutes of sudden painless right-sided face and arm weakness with slurred speech, resolving completely",
+        "A 30-second episode of light-headedness and greying of vision on standing up quickly",
+        "One hour of tingling that started in the right hand and marched to the face over 20 minutes, followed by a throbbing headache",
+        "Sudden inability to recall recent events for 4 hours with repetitive questioning, then full recovery",
+      ],
+      answer: 1,
+      explanation:
+        "A TIA produces sudden, focal, negative neurological symptoms that are maximal at onset and resolve completely - unilateral face and arm weakness with dysarthria is the classic anterior circulation event. Isolated vertigo without other brainstem features is almost never a TIA and usually reflects a peripheral vestibular disorder. Light-headedness with greying of vision on standing is presyncope from orthostatic hypotension, a global rather than focal event. A sensory march over 20 minutes followed by headache is migraine aura, and 4 hours of anterograde amnesia with repetitive questioning is transient global amnesia, which carries no stroke risk.",
+      difficulty: "easy",
+    },
+    {
+      id: "neurology-tia-q4",
+      stem: "A 71-year-old man had a TIA 5 days ago and carotid Doppler shows 85% stenosis of the symptomatic left internal carotid artery. He is fit for surgery. What is the correct timing of carotid endarterectomy?",
+      options: [
+        "Within 2 weeks of the index event",
+        "After 6 weeks to allow the plaque to stabilise",
+        "After 3 months of medical therapy, only if symptoms recur",
+        "Only if the stenosis progresses beyond 90%",
+        "Immediately, within 24 hours, in all cases",
+      ],
+      answer: 0,
+      explanation:
+        "The benefit of endarterectomy for symptomatic 70-99% stenosis is greatest when performed within two weeks of the event, when the risk of recurrent stroke is highest, and it falls steeply with delay so that surgery after three months confers little advantage. Waiting six weeks or three months exposes the patient to precisely the period of maximum recurrence risk. There is no requirement for the stenosis to progress, since it is already in the range with proven benefit. Operating within 24 hours in every case is not recommended because very early surgery after a large infarct increases perioperative risk; two weeks is the accepted target.",
+      difficulty: "easy",
+    },
+    {
+      id: "neurology-tia-q5",
+      stem: "A 55-year-old man presents with three episodes of right hand weakness and dysphasia in the past 4 days, each lasting 5-10 minutes, the last one this morning. He already takes aspirin 75 mg daily. Neurological examination is normal. What is the most appropriate management?",
+      options: [
+        "Add clopidogrel and review in the outpatient clinic in 2 weeks",
+        "Admit the same day for urgent imaging, carotid and cardiac evaluation",
+        "Reassure and arrange an MRI in one month",
+        "Start warfarin empirically",
+        "Increase aspirin to 150 mg and review after one week",
+      ],
+      answer: 1,
+      explanation:
+        "Recurrent stereotyped events of increasing frequency define crescendo TIA, and their occurrence on established antiplatelet therapy marks a very high short-term stroke risk, so same-day admission for urgent brain imaging, carotid imaging and cardiac rhythm assessment is required. Adding a second antiplatelet is part of the eventual plan but does not address the need to find a treatable carotid stenosis or cardiac source now. Reassurance and a scan in a month ignore the fact that half the strokes after a TIA occur within 48 hours. Empirical warfarin without a demonstrated cardioembolic source adds bleeding risk without benefit, and simply increasing the aspirin dose has no evidence base.",
+      difficulty: "moderate",
+    },
+    {
+      id: "neurology-tia-q6",
+      stem: "Which statement about the ABCD2 score is correct in current practice?",
+      options: [
+        "A score of 3 or less allows safe deferral of assessment for a week",
+        "It reliably identifies patients with carotid stenosis needing surgery",
+        "It gives prognostic information but should not be used to decide who receives urgent assessment, as all suspected TIAs are assessed within 24 hours",
+        "It is used to decide whether to give thrombolysis",
+        "A score of 7 is an indication for immediate anticoagulation",
+      ],
+      answer: 2,
+      explanation:
+        "Current UK and American guidance retains ABCD2 as a rough prognostic index but no longer uses it to triage access to specialist assessment, because low scores still occur in patients with severe carotid stenosis or atrial fibrillation who face a high recurrence risk - so everyone with a suspected TIA is assessed within 24 hours. Deferring a low-score patient for a week is exactly the practice the guidance abandoned. The score contains no information about carotid or cardiac status. Thrombolysis is not given for a resolved deficit, and a high score is not by itself an indication for anticoagulation, which depends on finding a cardioembolic source.",
+      difficulty: "hard",
+    },
+    {
+      id: "neurology-tia-q7",
+      stem: "A 63-year-old woman with a TIA two days ago has an LDL cholesterol of 96 mg/dL, blood pressure 148/86 mmHg and HbA1c 6.4%. She is on no lipid-lowering therapy. What is the appropriate lipid management?",
+      options: [
+        "No statin, since the LDL is below 100 mg/dL",
+        "Start atorvastatin 10 mg daily and recheck in 3 months",
+        "Start a high-intensity statin such as atorvastatin 40-80 mg daily targeting LDL below 70 mg/dL",
+        "Start fenofibrate 145 mg daily",
+        "Advise dietary change alone for 6 months before any drug",
+      ],
+      answer: 2,
+      explanation:
+        "Every ischaemic stroke or TIA is a secondary prevention indication for a high-intensity statin regardless of the baseline LDL, with a target below 70 mg/dL and below 55 mg/dL in the very high risk category defined by the Lipid Association of India; the SPARCL and treat-to-target evidence supports this. Withholding a statin because the LDL is under 100 mg/dL misapplies a primary prevention threshold. Low-dose atorvastatin gives an LDL reduction under 50% and is not high-intensity therapy. Fenofibrate treats hypertriglyceridaemia and does not reduce stroke recurrence, and a six-month diet trial wastes the period of highest risk.",
+      difficulty: "easy",
+    },
+  ],
+  cards: [
+    {
+      id: "neurology-tia-c1",
+      front: "Current (tissue-based) definition of TIA.",
+      back: "Transient focal neurological dysfunction from brain, spinal cord or retinal ischaemia WITHOUT acute infarction on imaging. The old 24-hour time-based definition is obsolete.",
+    },
+    {
+      id: "neurology-tia-c2",
+      front: "Stroke risk after an untreated TIA at 2 days, 7 days and 90 days.",
+      back: "About 5% at 2 days, 8-10% at 7 days, 10-17% at 90 days. Urgent treatment reduces the 90-day risk by roughly 80%.",
+    },
+    {
+      id: "neurology-tia-c3",
+      front: "Components of the ABCD2 score.",
+      back: "Age 60+ (1), BP 140/90+ (1), unilateral weakness (2) or speech disturbance alone (1), duration 60 min+ (2) or 10-59 min (1), Diabetes (1). Maximum 7.",
+    },
+    {
+      id: "neurology-tia-c4",
+      front: "What is amaurosis fugax and what does it imply?",
+      back: "Painless transient monocular visual loss like a curtain descending - a retinal TIA in the internal carotid territory; arrange carotid Doppler urgently and check ESR if over 50.",
+    },
+    {
+      id: "neurology-tia-c5",
+      front: "Dual antiplatelet regimen after a high-risk TIA.",
+      back: "Aspirin plus clopidogrel started within 24 hours and continued for 21 days, then a single antiplatelet lifelong.",
+    },
+    {
+      id: "neurology-tia-c6",
+      front: "Blood pressure and LDL targets after an ischaemic TIA.",
+      back: "Blood pressure below 130/80 mmHg; LDL cholesterol below 70 mg/dL (below 55 mg/dL if very high risk), on a high-intensity statin regardless of baseline LDL.",
+    },
+    {
+      id: "neurology-tia-c7",
+      front: "Indication and timing for carotid endarterectomy.",
+      back: "Symptomatic internal carotid stenosis of 70-99% (consider 50-69% in men), operated within 2 weeks of the event by a surgeon with a complication rate under 6%.",
+    },
+    {
+      id: "neurology-tia-c8",
+      front: "Symptoms that are NOT a TIA when they occur in isolation.",
+      back: "Dizziness, syncope or presyncope, generalised weakness, confusion, incontinence, tinnitus, transient global amnesia, whole-body numbness.",
+    },
+    {
+      id: "neurology-tia-c9",
+      front: "Definition of crescendo TIA and what it demands.",
+      back: "Two or more TIAs in a week, or attacks increasing in frequency, duration or severity - admit the same day for urgent evaluation.",
+    },
+    {
+      id: "neurology-tia-c10",
+      front: "When must a TIA patient be anticoagulated rather than given an antiplatelet?",
+      back: "When there is atrial fibrillation or another cardioembolic source; warfarin (INR 2-3) if there is rheumatic mitral stenosis or a mechanical valve, otherwise a DOAC or warfarin.",
+    },
+    {
+      id: "neurology-tia-c11",
+      front: "What proportion of cryptogenic TIA and stroke patients have paroxysmal atrial fibrillation on prolonged monitoring?",
+      back: "About 10-15% with 24-72 hours of monitoring, rising further with longer recording - which is why rhythm monitoring is mandatory.",
+    },
+    {
+      id: "neurology-tia-c12",
+      front: "First drug to give in the clinic when a TIA is suspected.",
+      back: "Aspirin 300 mg orally at once (if there is no bleeding or contraindication), then refer for specialist assessment within 24 hours.",
+    },
+  ],
+  references: [
+    "NICE Guideline NG128, Stroke and transient ischaemic attack in over 16s: diagnosis and initial management, updated 2022",
+    "AHA/ASA Guideline for the Prevention of Stroke in Patients with Stroke and Transient Ischemic Attack, 2021",
+    "Rothwell PM et al., Effect of urgent treatment of TIA and minor stroke on early recurrent stroke (EXPRESS study), Lancet 2007",
+    "CHANCE and POINT trials of dual antiplatelet therapy after minor stroke and high-risk TIA, NEJM 2013 and 2018",
+    "Indian Academy of Neurology guidelines on secondary prevention of stroke, 2022",
+  ],
+});

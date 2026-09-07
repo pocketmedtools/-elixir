@@ -1001,3 +1001,976 @@ topics.push({
     "Nocturnal Oxygen Therapy Trial and Medical Research Council long-term oxygen trial",
   ],
 });
+
+topics.push({
+  id: "respiratory-tuberculosis-ntep",
+  title: "Pulmonary tuberculosis under NTEP: diagnosis, regimens, follow-up and drug resistance",
+  oneLiner:
+    "Under the National TB Elimination Programme every presumptive tuberculosis patient gets an upfront molecular test with universal drug susceptibility testing for rifampicin, drug-sensitive disease is treated with daily fixed dose combinations as 2 months of HRZE followed by 4 months of HRE by weight band, and every patient is notified on Ni-kshay and receives nutritional support under Ni-kshay Poshan Yojana.",
+  frequency: "core",
+  keywords: [
+    "TB",
+    "NTEP",
+    "RNTCP",
+    "Ni-kshay",
+    "CBNAAT",
+    "Xpert MTB/RIF",
+    "Truenat",
+    "HRZE",
+    "fixed dose combination",
+    "MDR-TB",
+    "BPaLM",
+    "bedaquiline",
+    "Ni-kshay Poshan Yojana",
+    "universal drug susceptibility testing",
+    "DOT",
+    "Pradhan Mantri TB Mukt Bharat Abhiyaan",
+  ],
+  sections: [
+    {
+      heading: "Burden, programme and the definitions you must use",
+      points: [
+        "India carries the largest tuberculosis burden in the world - about a quarter of global cases. The **India TB Report 2024** recorded roughly 25.5 lakh patients notified in 2023, the highest ever, with an estimated incidence of about **195 per 100,000 population** and mortality of about 22 per 100,000.",
+        "The **National TB Prevalence Survey 2019-21** found a prevalence of microbiologically confirmed pulmonary tuberculosis of about **316 per 100,000 among those aged 15 years and over**, and showed that nearly half of prevalent cases had no cough at the time of the survey - which is why symptom screening alone misses disease and chest radiography is now used for screening.",
+        "The programme was renamed the **National TB Elimination Programme (NTEP)** in 2020, with the National Strategic Plan aiming at elimination (an incidence below 1 per lakh) by 2025, ahead of the global SDG target of 2030. Its four pillars are Detect, Treat, Prevent and Build.",
+        "**Presumptive pulmonary tuberculosis:** any person with cough of **two weeks or more**, fever of two weeks or more, significant unintentional weight loss, haemoptysis, or any abnormality on chest radiograph. In people living with HIV, contacts, and other high-risk groups, **cough of any duration** counts.",
+        "**Microbiologically confirmed TB** means demonstration of Mycobacterium tuberculosis by smear, culture or an approved molecular test; **clinically diagnosed TB** is a case diagnosed by a clinician on radiology, histology or clinical grounds and started on a full course of treatment - both must be notified.",
+        "**Notification is mandatory for every provider, public and private**, under the 2012 Gazette order amended in 2018, which makes failure to notify an offence under sections 269 and 270 of the Indian Penal Code (now the corresponding sections of the Bharatiya Nyaya Sanhita); notification is done on the **Ni-kshay** portal.",
+      ],
+    },
+    {
+      heading: "Diagnosis: the NTEP algorithm",
+      points: [
+        "**An upfront nucleic acid amplification test (NAAT) is the diagnostic test of first choice** for all presumptive tuberculosis - CBNAAT (Xpert MTB/RIF or Ultra) or Truenat MTB/MTB Plus, which is the point-of-care platform deployed down to peripheral health institutions and Ayushman Arogya Mandirs.",
+        "**Universal drug susceptibility testing (UDST)** is programme policy: every diagnosed tuberculosis patient must have at least rifampicin susceptibility established at diagnosis, which the NAAT provides in the same run (Truenat requires the MTB-RIF Dx chip as a reflex test).",
+        "Sputum smear microscopy (two samples - a spot and an early-morning specimen, stained by Ziehl-Neelsen or fluorescence) still has a role where NAAT is unavailable and for **follow-up during treatment**, but it is no longer the preferred diagnostic test; it needs 5,000-10,000 bacilli per mL against about 130 per mL for Xpert.",
+        "Chest radiography is a **screening and triage** tool, increasingly with artificial-intelligence reading and hand-held X-ray in active case-finding campaigns; a radiological diagnosis alone must always be followed by an attempt at microbiological confirmation.",
+        "For **extrapulmonary tuberculosis**, obtain the appropriate specimen and send it for NAAT plus cytology or histopathology and culture: pleural fluid and biopsy, lymph node aspirate, cerebrospinal fluid, ascitic fluid, pus, endometrial or synovial tissue. NAAT sensitivity on paucibacillary fluids is low, so a negative test never excludes the diagnosis.",
+        "**Every tuberculosis patient must be offered HIV testing, screened for diabetes, tobacco use and alcohol use, and have a nutritional assessment with weight, height and BMI** - the NTEP comorbidity package, and an easy five marks if listed.",
+        "Sputum culture on liquid (MGIT) or solid (Lowenstein-Jensen) medium with line probe assay (first-line LPA for isoniazid and rifampicin, second-line LPA for fluoroquinolones and injectables) is used for all rifampicin-resistant cases and for treatment failures, through the network of Culture and Drug Susceptibility Testing laboratories and the National Reference Laboratories.",
+      ],
+    },
+    {
+      heading: "Treating drug-sensitive tuberculosis",
+      points: [
+        "**The regimen is daily, not intermittent** - thrice-weekly treatment was abandoned in 2017. Drugs are given as **fixed dose combinations** in a patient-wise box supplied free, and the patient is supported by a treatment supporter with 99DOTS or video-observed or family-observed treatment.",
+        "**New and previously treated drug-sensitive pulmonary tuberculosis: 2 months of HRZE (intensive phase) followed by 4 months of HRE (continuation phase)** - note that India retains ethambutol in the continuation phase, so the regimen is written 2HRZE + 4HRE. There is no separate Category II regimen: streptomycin-based retreatment was withdrawn in 2021 and previously treated patients are managed by DST.",
+        "**Tuberculous meningitis and osteoarticular tuberculosis: 2HRZE + 10HRE, a total of 12 months**, with adjuvant corticosteroid (dexamethasone or prednisolone, tapered over 6-8 weeks) in meningitis and pericarditis. Disseminated and spinal disease may also be extended on clinical grounds.",
+        "**Adult weight bands (25 kg and above)** determine the number of FDC tablets: **25-39 kg two tablets, 40-54 kg three, 55-69 kg four, 70 kg and above five**, taken once daily on an empty stomach. The intensive-phase adult tablet contains isoniazid 75 mg, rifampicin 150 mg, pyrazinamide 400 mg and ethambutol 275 mg; the continuation-phase tablet omits pyrazinamide.",
+        "**Children** are treated with dispersible paediatric FDCs by weight band (4-7, 8-11, 12-15, 16-24, 25-29 and 30-39 kg) at doses of isoniazid 10 mg/kg (7-15), rifampicin 15 mg/kg (10-20), pyrazinamide 35 mg/kg (30-40) and ethambutol 20 mg/kg (15-25) daily.",
+        "**Pyridoxine 10 mg daily is given to every patient on isoniazid** in the programme to prevent peripheral neuropathy, and the dose is increased in pregnancy, malnutrition, alcohol use, diabetes, chronic kidney disease and HIV.",
+        "**Anti-tuberculosis treatment in HIV:** start ART in every patient regardless of CD4 count, **within two weeks of starting anti-tuberculosis treatment** (deferred to 4-8 weeks in tuberculous meningitis because of the risk of paradoxical worsening), give cotrimoxazole preventive therapy, and remember that rifampicin requires the dolutegravir dose to be doubled to 50 mg twice daily.",
+      ],
+    },
+    {
+      heading: "Follow-up, outcomes and adverse effects",
+      points: [
+        "Weigh the patient at every visit and **revise the weight band when the weight crosses into the next band** - failing to do so is a classic cause of under-dosing and acquired resistance.",
+        "**Follow-up sputum smear microscopy is done at the end of the intensive phase (end of month 2) and at the end of treatment (end of month 6)** for all pulmonary cases, with an additional examination in the continuation phase where the programme protocol requires it, and at any time if the patient deteriorates.",
+        "**A positive smear at the end of the intensive phase is not an indication to extend the intensive phase** (extension was dropped from the programme); it is an indication to send a specimen for repeat NAAT with drug susceptibility testing and to re-examine adherence.",
+        "**Treatment failure** is defined by a positive sputum smear or culture at **month 5 or later** during treatment, or by clinical or bacteriological evidence of failure at any time - such a patient is re-evaluated with DST and switched to an appropriate regimen.",
+        "**Outcome definitions:** cured (microbiologically confirmed at diagnosis, smear or culture negative at the end of treatment and on at least one previous occasion), treatment completed (finished without evidence of failure but without documented end-of-treatment negativity), treatment success (cured plus completed), treatment failed, died, **lost to follow-up (treatment interrupted for one consecutive month or more)**, not evaluated, and treatment regimen changed.",
+        "**Adverse effects to know cold:** hepatotoxicity from isoniazid, rifampicin and pyrazinamide - stop all hepatotoxic drugs if ALT is more than three times the upper limit with symptoms or more than five times without, wait for ALT to fall below twice normal and bilirubin to normalise, then reintroduce sequentially, rifampicin first, then isoniazid, then pyrazinamide; **ethambutol** causes dose-related optic neuritis with loss of red-green discrimination (test colour vision and acuity at baseline and warn the patient); **isoniazid** causes peripheral neuropathy and rarely psychosis; **pyrazinamide** causes arthralgia with hyperuricaemia; **rifampicin** turns urine and tears orange (warn about contact lenses), causes flu-like syndrome and is a powerful enzyme inducer - it reduces the efficacy of oral contraceptives, warfarin, oral hypoglycaemics, phenytoin, antiretrovirals and immunosuppressants.",
+        "**Special situations:** pregnancy - all four first-line drugs are safe, streptomycin is contraindicated (fetal ototoxicity), and treatment must not be delayed; renal failure - reduce or space out ethambutol and pyrazinamide (three times a week after dialysis) while isoniazid and rifampicin need no change; liver disease - use a modified regimen with fewer hepatotoxic drugs under specialist advice.",
+      ],
+    },
+    {
+      heading: "Drug-resistant tuberculosis (PMDT)",
+      points: [
+        "**Definitions:** mono-resistance is resistance to one first-line drug; **MDR-TB** is resistance to at least isoniazid and rifampicin; **RR-TB** is rifampicin resistance with or without other resistance and is managed as MDR; **pre-XDR-TB** is MDR/RR-TB with additional resistance to any fluoroquinolone; **XDR-TB** (2021 WHO definition) is MDR/RR-TB with fluoroquinolone resistance plus resistance to at least one other Group A drug (bedaquiline or linezolid).",
+        "**BPaLM is now the preferred regimen for MDR/RR-TB and pre-XDR-TB in India**, rolled out under NTEP from 2024: **bedaquiline, pretomanid, linezolid and moxifloxacin for 6 months**, in patients aged 15 years and over who have had less than one month of exposure to bedaquiline, pretomanid, linezolid or delamanid, with fluoroquinolone susceptibility confirmed; if the fluoroquinolone is resistant, moxifloxacin is dropped and the regimen becomes BPaL.",
+        "BPaLM is not used in pregnancy and lactation, in extrapulmonary disease involving the central nervous system, bone or disseminated forms, or where the eligibility criteria are not met - those patients receive the **shorter oral bedaquiline-containing regimen (9-11 months)** or the **longer oral M/XDR regimen (18-20 months)**.",
+        "The longer regimen is built from **Group A (levofloxacin or moxifloxacin, bedaquiline, linezolid - all three included), Group B (clofazimine, cycloserine) and then Group C** (ethambutol, delamanid, pyrazinamide, imipenem-cilastatin or meropenem, amikacin, ethionamide, para-aminosalicylic acid) to make up the required number of effective drugs.",
+        "**Monitoring on a DR-TB regimen:** monthly sputum culture, **ECG for QTc prolongation** (bedaquiline, moxifloxacin, clofazimine and delamanid all prolong it), monthly complete blood count for linezolid-induced myelosuppression, visual acuity and colour vision for linezolid and ethambutol, symptom enquiry for peripheral neuropathy, thyroid function on ethionamide and PAS, liver and renal function, and audiometry if an injectable is ever used.",
+        "Treatment is delivered through the **Nodal DR-TB Centres and District DR-TB Centres**, with all drugs supplied free, a treatment supporter, active drug-safety monitoring (aDSM) for the newer drugs, and monthly follow-up on the Ni-kshay platform.",
+      ],
+    },
+    {
+      heading: "Support, prevention and infection control",
+      points: [
+        "**Ni-kshay Poshan Yojana:** direct benefit transfer for nutritional support to every notified tuberculosis patient for the whole duration of treatment, **raised from Rs 500 to Rs 1,000 per month with effect from 1 November 2024**, paid into an Aadhaar-linked bank account through Ni-kshay. Undernourished patients additionally receive an energy-dense nutritional supplement under the programme.",
+        "**Pradhan Mantri TB Mukt Bharat Abhiyaan** (launched September 2022) enlists **Ni-kshay Mitras** - individuals, institutions, corporates and elected representatives - who adopt patients and provide a monthly food basket and support, typically for at least six months.",
+        "Other programme incentives: an honorarium for the treatment supporter (higher for drug-resistant cases), a notification and outcome-reporting incentive for private providers, and an informant incentive for referral of presumptive cases from difficult and tribal areas. Tribal patients receive a transport allowance.",
+        "**Infection control follows the administrative-environmental-personal hierarchy:** early identification and fast-tracking of coughing patients, cough hygiene and mask for the patient, separate well-ventilated waiting areas with cross-ventilation and exhaust, sputum collection in the open air rather than in a closed room, and N95 respirators for staff in high-risk areas.",
+        "**A patient on effective treatment becomes rapidly non-infectious** - within about two weeks for drug-sensitive smear-positive disease - which is the reassurance the family needs; there is no need to isolate the patient at home beyond basic cough hygiene and ventilation.",
+        "**BCG** is given at birth (or as soon as possible up to one year) in the national immunisation schedule; it protects against disseminated and meningeal tuberculosis in children but not reliably against adult pulmonary disease.",
+      ],
+    },
+  ],
+  tables: [
+    {
+      heading: "NTEP adult weight bands and daily fixed dose combination tablets",
+      columns: ["Weight band", "Intensive phase (HRZE) tablets/day", "Continuation phase (HRE) tablets/day"],
+      rows: [
+        ["25-39 kg", "2", "2"],
+        ["40-54 kg", "3", "3"],
+        ["55-69 kg", "4", "4"],
+        ["70 kg and above", "5", "5"],
+      ],
+    },
+    {
+      heading: "First-line drugs: dose, key adverse effect and monitoring",
+      columns: ["Drug", "Daily adult dose", "Key adverse effect", "Monitoring or antidote"],
+      rows: [
+        ["Isoniazid (H)", "5 mg/kg (4-6), max 300 mg", "Hepatitis, peripheral neuropathy, psychosis", "Pyridoxine 10 mg daily; liver function if symptomatic"],
+        ["Rifampicin (R)", "10 mg/kg (8-12), max 600 mg", "Hepatitis, orange secretions, flu-like syndrome, enzyme induction", "Warn about contraceptive failure and drug interactions"],
+        ["Pyrazinamide (Z)", "25 mg/kg (20-30)", "Hepatitis, arthralgia, hyperuricaemia", "Symptomatic; stop for gout-like arthritis"],
+        ["Ethambutol (E)", "15 mg/kg (15-20)", "Retrobulbar optic neuritis, red-green colour blindness", "Baseline and periodic visual acuity and colour vision"],
+        ["Streptomycin (rarely used)", "15 mg/kg IM", "Ototoxicity, nephrotoxicity, fetal ototoxicity", "Contraindicated in pregnancy; audiometry"],
+      ],
+    },
+    {
+      heading: "Drug-resistant TB definitions and the current Indian regimen",
+      columns: ["Category", "Definition", "Regimen"],
+      rows: [
+        ["Mono/poly resistance", "Resistance to one or more first-line drugs but not to both H and R", "Individualised regimen based on DST"],
+        ["MDR / RR-TB", "Resistance to at least isoniazid and rifampicin, or rifampicin alone", "BPaLM for 6 months if eligible; otherwise shorter oral (9-11 months) or longer oral (18-20 months) regimen"],
+        ["Pre-XDR-TB", "MDR/RR-TB plus fluoroquinolone resistance", "BPaL for 6 months, or longer oral regimen"],
+        ["XDR-TB", "MDR/RR-TB plus fluoroquinolone resistance plus resistance to bedaquiline or linezolid", "Individualised longer regimen at a Nodal DR-TB Centre"],
+      ],
+    },
+  ],
+  redFlags: [
+    "Massive haemoptysis, a fall in blood pressure or respiratory distress in a patient with tuberculosis - admit for airway protection and consider bronchial artery embolisation.",
+    "Jaundice, vomiting or right upper quadrant tenderness on treatment - drug-induced hepatitis; stop all hepatotoxic drugs the same day and check liver function.",
+    "New blurring of vision or loss of red-green discrimination - ethambutol optic neuritis; stop ethambutol immediately, as recovery depends on early withdrawal.",
+    "Headache, vomiting, altered sensorium, seizure or focal deficit in a tuberculosis patient - tuberculous meningitis or a tuberculoma; refer for imaging and cerebrospinal fluid examination the same day.",
+    "Rifampicin resistance reported on NAAT - refer to the District or Nodal DR-TB Centre immediately; never continue a first-line regimen.",
+    "A patient who has missed treatment for a month or more - lost to follow-up; trace actively, re-evaluate with NAAT and DST before restarting.",
+    "Worsening symptoms and enlarging lymph nodes after starting ART in an HIV-positive patient - immune reconstitution inflammatory syndrome; continue both treatments and add steroid rather than stopping therapy.",
+    "Breathlessness with a shifted trachea in a patient with cavitary disease - pneumothorax or a large effusion, needs urgent chest radiograph and drainage.",
+  ],
+  pearls: [
+    "The NTEP first-line regimen is 2HRZE + 4HRE, daily, by weight band - the ethambutol in the continuation phase is the detail candidates most often get wrong.",
+    "Upfront NAAT with universal drug susceptibility testing means every patient's rifampicin status is known before treatment starts; smear microscopy is now mainly a follow-up test.",
+    "Cough of two weeks or more makes a patient presumptive tuberculosis - and in a person living with HIV or a household contact, cough of any duration does.",
+    "Re-weigh at every visit and move the patient up a weight band when they gain weight; under-dosing is how acquired resistance is manufactured.",
+    "Never add a single drug to a failing regimen - it is the classic way to create resistance.",
+    "A positive smear at the end of the intensive phase means send for NAAT and DST, not extend the intensive phase, which the programme no longer does.",
+    "Ni-kshay Poshan Yojana now pays Rs 1,000 per month (doubled from Rs 500 in November 2024) for the full duration of treatment.",
+    "Rifampicin makes oral contraceptives fail - every woman of reproductive age on treatment needs alternative contraception, and this is a favourite viva question.",
+    "In a patient with tuberculosis and HIV, start anti-tuberculosis treatment first and add ART within two weeks - except in tuberculous meningitis, where ART is deferred by 4-8 weeks.",
+    "Notification is a legal duty for every doctor, public or private; the Ni-kshay ID is what unlocks free drugs and the patient's nutritional benefit.",
+  ],
+  theory: [
+    {
+      id: "respiratory-tuberculosis-ntep-t1",
+      paper: "II",
+      kind: "long",
+      marks: 10,
+      minutes: 20,
+      frequency: "core",
+      question:
+        "A 35-year-old man presents with cough for one month, evening rise of temperature and weight loss. Describe your approach to diagnosis and management under the National TB Elimination Programme, including follow-up and the support available to the patient.",
+      openingLines: [
+        "This man fulfils the NTEP definition of presumptive pulmonary tuberculosis - cough of two weeks or more with fever and significant weight loss - and must be investigated with an upfront molecular test.",
+        "India accounts for about a quarter of the world's tuberculosis, with roughly 25.5 lakh patients notified in 2023, and the programme aims at elimination by 2025 through the four pillars of Detect, Treat, Prevent and Build.",
+      ],
+      answer: [
+        {
+          heading: "1. History and examination",
+          points: [
+            "Duration and character of cough, sputum, haemoptysis, fever pattern, night sweats, appetite and quantified weight loss, chest pain and breathlessness.",
+            "Contact history with a tuberculosis patient, past treatment for tuberculosis with the regimen and outcome, and adherence to it - this determines whether he is a new or previously treated patient.",
+            "Risk factors and comorbidity: HIV status, diabetes, smoking, alcohol, undernutrition, silica or biomass exposure, steroid or immunosuppressant use, and occupation and living conditions.",
+            "Examination: weight, height and BMI, pallor, lymphadenopathy, and chest examination for crackles, bronchial breathing or effusion; look for extrapulmonary sites.",
+          ],
+        },
+        {
+          heading: "2. Investigations under the programme",
+          points: [
+            "**Upfront NAAT** on a sputum specimen - CBNAAT (Xpert MTB/RIF or Ultra) or Truenat - which detects Mycobacterium tuberculosis and rifampicin resistance simultaneously, satisfying the policy of **universal drug susceptibility testing**.",
+            "Sputum smear microscopy where NAAT is not available, and always for follow-up during treatment.",
+            "Chest radiograph to define the extent of disease and to detect complications such as effusion, cavitation or a mass.",
+            "**HIV test, blood sugar, tobacco and alcohol screening, and a nutritional assessment** in every patient as part of the comorbidity package; complete blood count and liver function as a baseline.",
+            "If rifampicin resistance is detected, send for first- and second-line line probe assay and culture, and refer to the District DR-TB Centre.",
+          ],
+        },
+        {
+          heading: "3. Notification and treatment",
+          points: [
+            "**Notify on Ni-kshay** - a legal obligation for every provider - and register the patient for free drugs, follow-up and benefits.",
+            "For drug-sensitive disease start **daily fixed dose combination therapy: 2 months of HRZE followed by 4 months of HRE**, dosed by weight band (25-39 kg two tablets, 40-54 kg three, 55-69 kg four, 70 kg and above five), taken once daily.",
+            "Add **pyridoxine 10 mg daily**; counsel about orange urine, the need for alternative contraception because rifampicin inactivates oral contraceptives, and the danger of stopping treatment when he feels better.",
+            "Arrange treatment adherence support - a treatment supporter with 99DOTS or family-observed treatment - and give the patient the full patient-wise box with a treatment card.",
+            "If HIV positive, start cotrimoxazole preventive therapy and antiretroviral therapy within two weeks irrespective of CD4 count.",
+          ],
+        },
+        {
+          heading: "4. Follow-up and monitoring",
+          points: [
+            "Clinical review monthly with weight recorded at every visit and the **weight band revised upward as he gains weight**.",
+            "**Follow-up sputum smear at the end of the intensive phase (month 2) and at the end of treatment (month 6)**; a positive smear at the end of the intensive phase prompts repeat NAAT with drug susceptibility testing rather than extension of the intensive phase.",
+            "Sputum positive at month 5 or later defines treatment failure, requiring re-evaluation with DST and a change of regimen.",
+            "Watch for adverse effects: jaundice and vomiting (hepatitis - stop hepatotoxic drugs), visual blurring or colour disturbance (ethambutol), tingling feet (isoniazid neuropathy), and joint pains (pyrazinamide).",
+            "Record the outcome at the end of treatment as cured, treatment completed, failed, died, lost to follow-up or not evaluated.",
+          ],
+        },
+        {
+          heading: "5. Prevention, contacts and social support",
+          points: [
+            "**Household contact investigation**: symptom screening of all contacts, chest radiograph and NAAT for the symptomatic, and TB preventive treatment for eligible contacts after active disease has been excluded.",
+            "**Ni-kshay Poshan Yojana** pays Rs 1,000 per month by direct benefit transfer for the whole duration of treatment, with an energy-dense nutritional supplement for the undernourished.",
+            "**Pradhan Mantri TB Mukt Bharat Abhiyaan** links the patient to a Ni-kshay Mitra who provides a monthly food basket and support.",
+            "Infection control at home: cough hygiene, disposal of sputum, cross-ventilation and sunlight; reassure the family that infectivity falls rapidly once effective treatment starts.",
+            "Address the drivers - undernutrition, diabetes control, tobacco and alcohol cessation - and screen the household for diabetes and HIV where indicated.",
+          ],
+        },
+      ],
+      mustDraw: [
+        "The NTEP diagnostic algorithm from presumptive TB through upfront NAAT to rifampicin-sensitive and rifampicin-resistant arms.",
+        "A weight-band table showing the number of intensive and continuation phase FDC tablets.",
+      ],
+      markSplit: [
+        { part: "Presumptive TB definition, history and examination", marks: 2 },
+        { part: "Diagnostic algorithm with NAAT and UDST", marks: 2 },
+        { part: "Notification and regimen with weight bands", marks: 2 },
+        { part: "Follow-up, adverse effects and outcomes", marks: 2 },
+        { part: "Contacts, prevention and social support schemes", marks: 2 },
+      ],
+      keywords: ["NTEP", "CBNAAT", "2HRZE 4HRE", "Ni-kshay", "Ni-kshay Poshan Yojana"],
+    },
+    {
+      id: "respiratory-tuberculosis-ntep-t2",
+      paper: "II",
+      kind: "short-note",
+      marks: 5,
+      minutes: 10,
+      frequency: "common",
+      question: "Write short notes on multidrug-resistant tuberculosis: definition, diagnosis and current management in India.",
+      openingLines: [
+        "Multidrug-resistant tuberculosis is disease caused by Mycobacterium tuberculosis resistant to at least isoniazid and rifampicin; rifampicin-resistant tuberculosis detected on a molecular test is managed in the same way.",
+        "India has one of the largest burdens of drug-resistant tuberculosis in the world, and programmatic management is delivered through District and Nodal DR-TB Centres with free drugs and active drug-safety monitoring.",
+      ],
+      answer: [
+        {
+          heading: "Definitions",
+          points: [
+            "MDR-TB: resistance to at least isoniazid and rifampicin. RR-TB: rifampicin resistance with or without resistance to other drugs.",
+            "Pre-XDR-TB: MDR/RR-TB with additional resistance to any fluoroquinolone.",
+            "XDR-TB (2021 definition): MDR/RR-TB with fluoroquinolone resistance plus resistance to at least one other Group A drug, that is bedaquiline or linezolid.",
+            "Resistance may be primary (transmitted) or acquired (from inadequate treatment, irregular intake, single-drug addition or under-dosing).",
+          ],
+        },
+        {
+          heading: "Diagnosis",
+          points: [
+            "**Universal drug susceptibility testing:** every diagnosed patient has rifampicin resistance tested upfront by CBNAAT or Truenat MTB-RIF Dx.",
+            "Rifampicin resistance triggers first- and second-line line probe assay and liquid culture with phenotypic DST for fluoroquinolones, bedaquiline, linezolid and other drugs.",
+            "Groups at higher risk: previously treated patients, treatment failures, contacts of known drug-resistant cases, and patients not improving on first-line therapy.",
+          ],
+        },
+        {
+          heading: "Treatment",
+          points: [
+            "**BPaLM - bedaquiline, pretomanid, linezolid and moxifloxacin for 6 months** - is the preferred regimen for eligible patients aged 15 years and over with MDR/RR-TB or pre-XDR-TB; where the fluoroquinolone is resistant, moxifloxacin is dropped to give BPaL.",
+            "Ineligible patients (pregnancy and lactation, central nervous system, bone or disseminated disease, prior exposure of over a month to the component drugs) receive the shorter oral bedaquiline-containing regimen of 9-11 months or the longer oral regimen of 18-20 months.",
+            "The longer regimen is constructed from Group A (levofloxacin or moxifloxacin, bedaquiline, linezolid), Group B (clofazimine, cycloserine) and Group C drugs to make up an effective combination.",
+            "All drugs are free, treatment is supported and monitored, and adherence support and counselling are essential because the treatment is long and toxic.",
+          ],
+        },
+        {
+          heading: "Monitoring and prevention",
+          points: [
+            "Monthly sputum culture, **ECG for QTc** with bedaquiline, moxifloxacin and clofazimine, monthly blood counts and neurological and visual checks for linezolid, thyroid function on ethionamide and PAS, and liver and renal function.",
+            "Active drug-safety monitoring with reporting of serious adverse events; dose modification or drug substitution rather than abandonment of the regimen.",
+            "Prevention rests on early diagnosis, correct first-line treatment with weight-band dosing, never adding a single drug to a failing regimen, contact investigation, and airborne infection control.",
+          ],
+        },
+      ],
+      mustDraw: ["A table of MDR, pre-XDR and XDR definitions with the corresponding Indian regimen."],
+      markSplit: [
+        { part: "Definitions including pre-XDR and XDR", marks: 1.5 },
+        { part: "Diagnosis and universal DST", marks: 1 },
+        { part: "BPaLM and alternative regimens", marks: 1.5 },
+        { part: "Monitoring and prevention", marks: 1 },
+      ],
+      keywords: ["MDR-TB", "BPaLM", "bedaquiline", "pre-XDR", "line probe assay"],
+    },
+    {
+      id: "respiratory-tuberculosis-ntep-t3",
+      paper: "II",
+      kind: "chart-flow",
+      marks: 5,
+      minutes: 8,
+      frequency: "common",
+      question: "Draw and explain the flow chart for the management of anti-tuberculosis drug-induced hepatitis.",
+      openingLines: [
+        "Drug-induced hepatitis is the commonest serious adverse effect of first-line anti-tuberculosis treatment and is caused chiefly by isoniazid, rifampicin and pyrazinamide.",
+        "It is defined as a rise in alanine aminotransferase to more than three times the upper limit of normal with symptoms, or more than five times without symptoms, or a rise in bilirubin with jaundice, once other causes have been considered.",
+      ],
+      answer: [
+        {
+          heading: "Recognition",
+          points: [
+            "Anorexia, nausea, vomiting, right upper quadrant pain, jaundice or dark urine appearing in the first two months of treatment.",
+            "Check liver function, bilirubin, prothrombin time, and exclude viral hepatitis A, B and E, alcohol, other hepatotoxic drugs and biliary disease.",
+            "Higher risk in undernutrition, alcohol use, pre-existing liver disease, hepatitis B or C, HIV, older age and slow acetylators.",
+          ],
+        },
+        {
+          heading: "Immediate action",
+          points: [
+            "**Stop all hepatotoxic anti-tuberculosis drugs (H, R and Z) immediately.**",
+            "If the disease is severe or sputum positive and treatment cannot be interrupted, cover with a non-hepatotoxic holding regimen such as levofloxacin, ethambutol and an aminoglycoside under specialist advice.",
+            "Support with hydration and nutrition, monitor prothrombin time and sensorium, and admit if there is encephalopathy or coagulopathy, which indicates acute liver failure.",
+          ],
+        },
+        {
+          heading: "Reintroduction",
+          points: [
+            "Wait until **ALT falls below twice the upper limit of normal and bilirubin normalises** and symptoms settle.",
+            "Reintroduce sequentially with liver function monitoring: **rifampicin first, then isoniazid after 3-7 days, then pyrazinamide** last.",
+            "If hepatitis recurs on reintroduction, the offending drug is dropped permanently and the regimen is reconstructed and prolonged accordingly - commonly a pyrazinamide-free regimen of 2HRE + 7HR.",
+            "Counsel about alcohol, paracetamol dose limits and traditional or over-the-counter remedies, and follow liver function until it has normalised.",
+          ],
+        },
+      ],
+      mustDraw: [
+        "A flow chart: symptoms or raised ALT, stop H R Z, exclude other causes, holding regimen if needed, wait for ALT under twice normal, sequential reintroduction R then H then Z, and the branch for recurrence.",
+      ],
+      markSplit: [
+        { part: "Definition and recognition", marks: 1.5 },
+        { part: "Immediate action and holding regimen", marks: 1.5 },
+        { part: "Sequential reintroduction with thresholds", marks: 2 },
+      ],
+      keywords: ["drug-induced hepatitis", "ALT", "holding regimen", "sequential reintroduction", "pyrazinamide"],
+    },
+  ],
+  mcqs: [
+    {
+      id: "respiratory-tuberculosis-ntep-q1",
+      stem: "A 40-year-old man with cough for three weeks has a sputum Xpert MTB/RIF reported as 'MTB detected, rifampicin resistance detected'. What is the correct next step under NTEP?",
+      options: [
+        "Start 2HRZE + 4HRE and repeat the test after two months",
+        "Refer to the District or Nodal DR-TB Centre for second-line line probe assay, culture DST and an appropriate regimen",
+        "Add levofloxacin to the standard first-line regimen",
+        "Start streptomycin-based retreatment (Category II)",
+        "Repeat the Xpert on a second sample before any action, and start no treatment meanwhile",
+      ],
+      answer: 1,
+      explanation:
+        "Rifampicin resistance on a molecular test defines RR-TB, which is managed as multidrug-resistant disease: the patient must be referred for second-line testing and started on a programme regimen such as BPaLM at a DR-TB centre. Giving a first-line regimen exposes the patient to functional monotherapy and amplifies resistance. Adding a single drug to a failing regimen is the classic way resistance is manufactured. The streptomycin-based Category II retreatment regimen was withdrawn from the programme in 2021. Repeating the test may occasionally be done for discordant results, but treatment must not be withheld while the patient is referred.",
+      difficulty: "easy",
+    },
+    {
+      id: "respiratory-tuberculosis-ntep-q2",
+      stem: "A 52 kg man with newly diagnosed drug-sensitive pulmonary tuberculosis is started on treatment. Which regimen and dose is correct under the current NTEP?",
+      options: [
+        "Three FDC tablets daily: 2 months HRZE then 4 months HRE",
+        "Four FDC tablets daily: 2 months HRZE then 4 months HR",
+        "Three FDC tablets thrice weekly: 2 months HRZE then 4 months HR",
+        "Two FDC tablets daily: 2 months HRZE then 4 months HRE",
+        "Four FDC tablets daily: 3 months HRZE then 5 months HRE",
+      ],
+      answer: 0,
+      explanation:
+        "The 40-54 kg weight band receives three fixed dose combination tablets daily, and the Indian regimen retains ethambutol in the continuation phase, so it is written 2HRZE followed by 4HRE. Four tablets belong to the 55-69 kg band, and a continuation phase of HR alone is the WHO formulation, not the Indian one. Thrice-weekly intermittent therapy was abandoned by the programme in 2017 in favour of daily therapy. Routine extension of the intensive phase to three months is no longer part of the programme.",
+      difficulty: "moderate",
+    },
+    {
+      id: "respiratory-tuberculosis-ntep-q3",
+      stem: "A 28-year-old woman on 2HRZE develops nausea and jaundice in week 6. ALT is 320 U/L (upper limit 40), bilirubin 4.2 mg/dL, and viral markers are negative. What is the correct management?",
+      options: [
+        "Continue all drugs and add a hepatoprotective agent",
+        "Stop isoniazid alone and continue rifampicin, pyrazinamide and ethambutol",
+        "Stop isoniazid, rifampicin and pyrazinamide, and reintroduce sequentially once ALT falls below twice normal",
+        "Substitute rifampicin with rifabutin and continue the rest",
+        "Stop all drugs permanently and treat with fluoroquinolone monotherapy",
+      ],
+      answer: 2,
+      explanation:
+        "This is drug-induced hepatitis, and all three hepatotoxic drugs - isoniazid, rifampicin and pyrazinamide - must be stopped, with sequential reintroduction (rifampicin, then isoniazid, then pyrazinamide) once ALT is below twice the upper limit and bilirubin has normalised. Continuing the drugs with a so-called hepatoprotective agent risks acute liver failure and has no evidence base. Stopping isoniazid alone leaves two hepatotoxic drugs running. Rifabutin is also hepatotoxic and is used for interaction problems, not hepatitis. Fluoroquinolone monotherapy would create resistance; if cover is needed while the liver recovers, a non-hepatotoxic multi-drug holding regimen is used.",
+      difficulty: "moderate",
+    },
+    {
+      id: "respiratory-tuberculosis-ntep-q4",
+      stem: "A patient completing the intensive phase of treatment for smear-positive pulmonary tuberculosis has a follow-up sputum smear that is still positive at the end of month 2. What is the correct action under current NTEP policy?",
+      options: [
+        "Extend the intensive phase by one month and repeat the smear",
+        "Declare treatment failure and start a second-line regimen",
+        "Send a specimen for repeat NAAT with drug susceptibility testing, review adherence, and move to the continuation phase",
+        "Add streptomycin for one month",
+        "Repeat the whole intensive phase from the beginning",
+      ],
+      answer: 2,
+      explanation:
+        "The programme no longer extends the intensive phase; a positive smear at the end of the intensive phase is an indication to repeat molecular testing with drug susceptibility testing and to look hard at adherence, while the patient moves into the continuation phase. Treatment failure is defined by positivity at month 5 or later, so it cannot be declared at month 2, and second-line drugs must never be started without evidence of resistance. Adding streptomycin is single-drug addition to a possibly failing regimen. Restarting the intensive phase has no basis in the guidelines.",
+      difficulty: "hard",
+    },
+    {
+      id: "respiratory-tuberculosis-ntep-q5",
+      stem: "A 30-year-old woman on rifampicin-containing anti-tuberculosis treatment is taking a combined oral contraceptive pill. What advice should she be given?",
+      options: [
+        "The pill remains fully effective and no change is needed",
+        "Rifampicin induces hepatic enzymes and reduces contraceptive efficacy, so an alternative or additional method is needed",
+        "She should double the dose of the pill and continue",
+        "She should stop rifampicin and take a rifampicin-free regimen",
+        "She should stop the pill and rely on the natural infertility caused by tuberculosis",
+      ],
+      answer: 1,
+      explanation:
+        "Rifampicin is a potent inducer of cytochrome P450 enzymes and accelerates the metabolism of oestrogen and progestogen, causing contraceptive failure, so she needs an alternative such as an intrauterine device, an injectable, or barrier methods, and this must be discussed at the first visit. Doubling the pill is not a reliable or recommended fix. Rifampicin is essential to the regimen and is never dropped for this reason. Tuberculosis does not confer contraceptive protection, and unintended pregnancy on treatment is a real and avoidable problem.",
+      difficulty: "easy",
+    },
+    {
+      id: "respiratory-tuberculosis-ntep-q6",
+      stem: "A newly diagnosed patient with pulmonary tuberculosis is also found to be HIV positive with a CD4 count of 180 cells/microlitre. When should antiretroviral therapy be started?",
+      options: [
+        "Immediately, on the same day as anti-tuberculosis treatment",
+        "Within two weeks of starting anti-tuberculosis treatment",
+        "After completing the intensive phase",
+        "After completing the full six months of anti-tuberculosis treatment",
+        "Only if the CD4 count falls below 100 cells/microlitre",
+      ],
+      answer: 1,
+      explanation:
+        "National and WHO guidance is to start anti-tuberculosis treatment first and add antiretroviral therapy within two weeks, irrespective of the CD4 count, because early ART reduces mortality; the exception is tuberculous meningitis, where ART is deferred by four to eight weeks because of the danger of paradoxical inflammatory worsening. Starting both on the same day increases the pill burden, the risk of overlapping toxicity and immune reconstitution disease without added benefit. Deferring ART to the end of the intensive phase or the end of treatment increases mortality, and waiting for a lower CD4 count is contrary to the treat-all policy.",
+      difficulty: "moderate",
+    },
+    {
+      id: "respiratory-tuberculosis-ntep-q7",
+      stem: "Under Ni-kshay Poshan Yojana, what nutritional support is a notified tuberculosis patient entitled to at present?",
+      options: [
+        "Rs 500 per month for the first two months only",
+        "Rs 1,000 per month by direct benefit transfer for the entire duration of treatment",
+        "A one-time payment of Rs 5,000 at diagnosis",
+        "Free rations from the public distribution system in place of any cash transfer",
+        "Rs 1,000 per month only for drug-resistant tuberculosis patients",
+      ],
+      answer: 1,
+      explanation:
+        "The nutritional support incentive was doubled from Rs 500 to Rs 1,000 per month with effect from November 2024 and is paid by direct benefit transfer into an Aadhaar-linked account for the whole duration of treatment, for every notified patient including those treated in the private sector. It is not restricted to the intensive phase, is not a lump sum, and is not restricted to drug-resistant disease, although treatment supporters for drug-resistant patients receive a higher honorarium. Food baskets from Ni-kshay Mitras under Pradhan Mantri TB Mukt Bharat Abhiyaan are additional to, not a replacement for, the cash transfer.",
+      difficulty: "easy",
+    },
+    {
+      id: "respiratory-tuberculosis-ntep-q8",
+      stem: "Which of the following patients with MDR-TB is eligible for the BPaLM regimen under the current Indian programme?",
+      options: [
+        "A 30-year-old pregnant woman with pulmonary MDR-TB",
+        "A 17-year-old boy with pulmonary MDR-TB and fluoroquinolone-sensitive isolate, no prior exposure to bedaquiline or linezolid",
+        "A 45-year-old man with MDR tuberculous meningitis",
+        "A 50-year-old woman who has taken bedaquiline for four months previously",
+        "A 12-year-old child with pulmonary MDR-TB",
+      ],
+      answer: 1,
+      explanation:
+        "BPaLM is offered to patients aged 15 years and over with pulmonary MDR/RR-TB or pre-XDR-TB, provided there has been less than one month of previous exposure to bedaquiline, pretomanid, linezolid or delamanid, and it is the boy in this list who fits. Pregnancy and lactation are exclusions. Central nervous system, osteoarticular and disseminated disease are excluded because pretomanid penetration and evidence are inadequate. Four months of previous bedaquiline exposure disqualifies a patient, and children under 15 are treated with other regimens.",
+      difficulty: "hard",
+    },
+  ],
+  cards: [
+    {
+      id: "respiratory-tuberculosis-ntep-c1",
+      front: "Definition of presumptive pulmonary tuberculosis under NTEP.",
+      back: "Cough of two weeks or more, fever of two weeks or more, significant weight loss, haemoptysis, or any chest radiograph abnormality; cough of any duration in PLHIV, contacts and other high-risk groups.",
+    },
+    {
+      id: "respiratory-tuberculosis-ntep-c2",
+      front: "The first-line regimen and its duration in India.",
+      back: "2 months of daily HRZE followed by 4 months of daily HRE (ethambutol is retained in the continuation phase); 12 months total for TB meningitis and osteoarticular disease.",
+    },
+    {
+      id: "respiratory-tuberculosis-ntep-c3",
+      front: "Adult weight bands and number of FDC tablets per day.",
+      back: "25-39 kg two tablets, 40-54 kg three, 55-69 kg four, 70 kg and above five - re-check the band at every visit as the patient gains weight.",
+    },
+    {
+      id: "respiratory-tuberculosis-ntep-c4",
+      front: "What is universal drug susceptibility testing?",
+      back: "Every diagnosed TB patient must have rifampicin susceptibility tested at diagnosis, which the upfront NAAT (CBNAAT or Truenat) provides.",
+    },
+    {
+      id: "respiratory-tuberculosis-ntep-c5",
+      front: "When are follow-up sputum smears done in drug-sensitive pulmonary TB?",
+      back: "At the end of the intensive phase (month 2) and at the end of treatment (month 6), plus any time the patient deteriorates.",
+    },
+    {
+      id: "respiratory-tuberculosis-ntep-c6",
+      front: "Definition of treatment failure.",
+      back: "Sputum smear or culture positive at month 5 or later during treatment (or bacteriological or clinical evidence of failure at any time), prompting DST and a change of regimen.",
+    },
+    {
+      id: "respiratory-tuberculosis-ntep-c7",
+      front: "Definition of lost to follow-up.",
+      back: "A patient whose treatment was interrupted for one consecutive month or more.",
+    },
+    {
+      id: "respiratory-tuberculosis-ntep-c8",
+      front: "MDR, pre-XDR and XDR in one line each.",
+      back: "MDR: resistance to at least H and R. Pre-XDR: MDR/RR plus fluoroquinolone resistance. XDR: MDR/RR plus fluoroquinolone resistance plus resistance to bedaquiline or linezolid.",
+    },
+    {
+      id: "respiratory-tuberculosis-ntep-c9",
+      front: "What is the BPaLM regimen and how long is it given?",
+      back: "Bedaquiline, pretomanid, linezolid and moxifloxacin for 6 months, for eligible MDR/RR and pre-XDR patients aged 15 and above; drop moxifloxacin (BPaL) if fluoroquinolone-resistant.",
+    },
+    {
+      id: "respiratory-tuberculosis-ntep-c10",
+      front: "Adverse effect of ethambutol and how it is monitored.",
+      back: "Dose-related retrobulbar optic neuritis with loss of red-green colour discrimination; check visual acuity and colour vision at baseline and periodically, and stop the drug at the first symptom.",
+    },
+    {
+      id: "respiratory-tuberculosis-ntep-c11",
+      front: "How is drug-induced hepatitis on ATT restarted?",
+      back: "Wait until ALT is under twice normal and bilirubin has normalised, then reintroduce sequentially - rifampicin first, then isoniazid, then pyrazinamide.",
+    },
+    {
+      id: "respiratory-tuberculosis-ntep-c12",
+      front: "Ni-kshay Poshan Yojana entitlement now.",
+      back: "Rs 1,000 per month (doubled from Rs 500 in November 2024) by direct benefit transfer for the whole duration of treatment, plus energy-dense nutritional supplement for the undernourished.",
+    },
+  ],
+  references: [
+    "National TB Elimination Programme, Training Modules for Programme Managers and Medical Officers, Central TB Division, MoHFW, 2020 with subsequent updates",
+    "Guidelines for Programmatic Management of Drug-Resistant Tuberculosis in India, Central TB Division, 2021, with the 2024 BPaLM operational guidance",
+    "India TB Report 2024, Central TB Division, MoHFW",
+    "National TB Prevalence Survey in India 2019-2021, ICMR and Central TB Division",
+    "WHO Consolidated Guidelines on Tuberculosis: Module 4 - Treatment of drug-resistant tuberculosis, 2022",
+  ],
+});
+
+topics.push({
+  id: "respiratory-pneumonia-cap",
+  title: "Community-acquired pneumonia: CURB-65, empirical antibiotics and follow-up",
+  oneLiner:
+    "Community-acquired pneumonia is an acute lower respiratory infection acquired outside hospital with new radiographic consolidation, and the family physician's job is to decide the site of care using CURB-65 or CRB-65, start an appropriate empirical antibiotic within four hours, and know which patient will not get better at home.",
+  frequency: "core",
+  keywords: [
+    "CAP",
+    "CURB-65",
+    "CRB-65",
+    "Streptococcus pneumoniae",
+    "atypical pneumonia",
+    "amoxicillin",
+    "azithromycin",
+    "ceftriaxone",
+    "parapneumonic effusion",
+    "empyema",
+    "pneumococcal vaccine",
+    "IMNCI",
+    "melioidosis",
+    "aspiration pneumonia",
+    "procalcitonin",
+    "lung abscess",
+  ],
+  sections: [
+    {
+      heading: "Definition, organisms and the Indian context",
+      points: [
+        "**Definition:** an acute infection of the pulmonary parenchyma acquired outside a hospital or long-term care facility, with symptoms of an acute lower respiratory infection plus **new radiographic shadowing** for which there is no other explanation.",
+        "The clinical picture is fever with rigors, cough with rusty or purulent sputum, pleuritic chest pain and breathlessness; the elderly often present atypically with confusion, a fall, poor feeding or simply tachypnoea with no fever.",
+        "**Streptococcus pneumoniae** remains the single commonest and most lethal organism worldwide and in India; the other typical organisms are Haemophilus influenzae (in COPD), Staphylococcus aureus (post-influenza, cavitating, rapidly progressive), Klebsiella pneumoniae (diabetics and alcoholics, upper lobe with a bulging fissure) and Moraxella catarrhalis.",
+        "**Atypical organisms** - Mycoplasma pneumoniae, Chlamydophila pneumoniae and Legionella pneumophila - produce a subacute illness with prominent dry cough, headache and myalgia, and radiographic changes out of proportion to the chest findings; they do not respond to beta-lactams.",
+        "**The Indian differentials that must be part of the answer:** pulmonary tuberculosis in any subacute pneumonia (send sputum for NAAT if the illness has lasted over two weeks or does not resolve), scrub typhus and other rickettsial disease in an undifferentiated fever with pneumonitis (add doxycycline), melioidosis in a diabetic from a coastal or agricultural area, and leptospirosis with pulmonary haemorrhage in the monsoon.",
+        "Risk factors worth eliciting: age over 65, smoking, COPD and bronchiectasis, diabetes, chronic kidney or liver disease, heart failure, HIV and other immunosuppression, alcohol excess, aspiration risk from stroke or altered sensorium, poor dentition, and biomass smoke exposure.",
+      ],
+    },
+    {
+      heading: "Assessing severity and deciding where to treat",
+      points: [
+        "**CURB-65 gives one point each for: Confusion (new disorientation in person, place or time, or an Abbreviated Mental Test score of 8 or less), Urea above 7 mmol/L (about 19-20 mg/dL blood urea), Respiratory rate 30 per minute or more, Blood pressure systolic under 90 mmHg or diastolic 60 mmHg or less, and age 65 years or over.**",
+        "**Interpretation:** score 0-1 is low mortality and suitable for home treatment; score 2 means intermediate risk and needs hospital-supervised care or a short admission; score 3 or more is severe pneumonia requiring admission, with scores of 4-5 prompting assessment for intensive care.",
+        "**CRB-65 drops the urea** and is the version to use in a clinic without a laboratory: 0 treat at home, 1-2 refer for hospital assessment, 3-4 arrange urgent admission.",
+        "Neither score replaces clinical judgement: hypoxaemia (SpO2 under 92% on room air), multilobar involvement, an effusion, decompensated comorbidity, vomiting that prevents oral therapy, and an unsupported social situation are all independent reasons to admit whatever the score.",
+        "Additional markers of severe pneumonia used in hospital: PaO2/FiO2 ratio under 250, need for vasopressors or mechanical ventilation, leucopenia, thrombocytopenia, hypothermia and acidosis.",
+        "**In children the assessment is by the WHO and IMNCI criteria** - fast breathing by age (60 per minute or more under 2 months, 50 or more from 2-12 months, 40 or more from 1-5 years) defines pneumonia, and chest indrawing, stridor at rest, inability to drink, convulsion, lethargy or severe undernutrition defines severe pneumonia requiring referral.",
+      ],
+    },
+    {
+      heading: "Investigation - and what is worth doing at each level",
+      points: [
+        "**Chest radiograph (posteroanterior)** is the confirmatory investigation and should be obtained in every patient in whom the diagnosis is being made, both to confirm consolidation and to detect an effusion, cavitation, a mass or multilobar disease.",
+        "Pulse oximetry on room air in every patient - the single most useful bedside number, and the one that decides admission more often than the score does.",
+        "In an ambulatory patient with a clear picture, no further investigation is required. For the admitted patient: complete blood count, urea, creatinine, electrolytes, glucose, liver function, C-reactive protein, blood cultures before antibiotics, sputum Gram stain and culture, and HIV testing where relevant.",
+        "**Sputum for NAAT or acid-fast bacilli** whenever the illness has lasted more than two weeks, when there is weight loss or haemoptysis, or when the radiograph shows upper lobe or cavitary disease - the reflex an Indian examiner expects.",
+        "Test for influenza and SARS-CoV-2 in season; consider Legionella urinary antigen in severe pneumonia, and paired serology or PCR for Mycoplasma only if it changes management.",
+        "Procalcitonin can support antibiotic de-escalation where available, but it must not be used to withhold antibiotics in a patient who looks septic. A radiograph that appears normal early in a dehydrated or neutropenic patient does not exclude pneumonia.",
+      ],
+    },
+    {
+      heading: "Empirical antibiotic treatment",
+      points: [
+        "**Outpatient, previously healthy, no antibiotic in the last three months:** amoxicillin 500 mg to 1 g orally three times daily for 5 days; add or substitute a macrolide (azithromycin 500 mg once daily for 3-5 days, or doxycycline 100 mg twice daily) if atypical infection is suspected.",
+        "**Outpatient with comorbidity** (COPD, diabetes, heart, liver or kidney disease, alcohol excess, immunosuppression, or recent antibiotics): amoxicillin-clavulanate 625 mg three times daily (or cefuroxime 500 mg twice daily) **plus** azithromycin 500 mg once daily, or a respiratory fluoroquinolone as an alternative.",
+        "**Inpatient, non-severe:** ceftriaxone 1-2 g intravenously once daily plus azithromycin 500 mg; **severe or intensive care:** ceftriaxone or piperacillin-tazobactam plus a macrolide, with the addition of anti-MRSA or antipseudomonal cover only where there are specific risk factors.",
+        "**Fluoroquinolones are deliberately kept as a second choice in India** because they treat tuberculosis partially, delay its diagnosis and select for resistance; this reasoning is worth writing out in an answer.",
+        "**Duration is 5 days** in most patients, provided the patient has been afebrile for 48-72 hours and is clinically stable (no more than one of: temperature above 37.8 C, pulse above 100, respiratory rate above 24, systolic BP under 90, SpO2 under 90%, inability to eat, altered mental state). Longer courses are needed for Staphylococcus aureus, Pseudomonas, cavitation, empyema and lung abscess.",
+        "**Aspiration pneumonia** in a patient with stroke, seizure, alcohol excess or poor dentition: amoxicillin-clavulanate, or clindamycin where there is penicillin allergy; anaerobic cover is not routinely needed for simple aspiration pneumonitis without necrotising features.",
+        "Supportive care matters: oxygen for SpO2 under 92% (88-92% in known COPD), fluids, paracetamol, early mobilisation, glycaemic control, and thromboprophylaxis in the admitted patient. Chest physiotherapy has no role in uncomplicated pneumonia, and cough suppressants should be avoided.",
+      ],
+    },
+    {
+      heading: "Follow-up, non-resolving pneumonia and prevention",
+      points: [
+        "Review the ambulatory patient at **48-72 hours**; most improve by then, and failure to do so demands reassessment rather than a change of antibiotic by telephone.",
+        "**Causes of non-resolving pneumonia - the list to have ready:** wrong organism (tuberculosis, fungus, atypicals, viruses), resistant organism, a complication (parapneumonic effusion, empyema, lung abscess), an obstructing endobronchial lesion such as carcinoma or a foreign body, the wrong diagnosis (pulmonary embolism, pulmonary oedema, eosinophilic pneumonia, vasculitis, organising pneumonia, malignancy), an immunocompromised host, or simply inadequate dose or non-adherence.",
+        "**Any parapneumonic effusion should be tapped under ultrasound guidance**: pH under 7.20, glucose under 40-60 mg/dL, LDH above 1000 IU/L, positive Gram stain or culture, or frank pus indicate a complicated effusion or empyema requiring intercostal drainage.",
+        "**Repeat the chest radiograph at 6 weeks** in smokers, in those over 50, and in anyone with persistent symptoms, to confirm resolution and to exclude an underlying malignancy - radiographic clearance always lags behind clinical recovery.",
+        "**Prevention:** pneumococcal vaccination (PCV in the Universal Immunisation Programme for children; PCV followed by PPSV23 for adults over 65 and for those with chronic heart, lung, liver or kidney disease, diabetes, asplenia, cochlear implants, cerebrospinal fluid leak or immunosuppression), annual influenza vaccine, COVID-19 vaccine as per policy, smoking cessation, oral and dental hygiene, and swallowing assessment after stroke.",
+        "Counsel about the natural history so expectations are realistic: fever settles in about a week, chest pain and sputum in about four weeks, cough and fatigue may take six weeks to three months, and full recovery can take six months in the elderly.",
+      ],
+    },
+  ],
+  tables: [
+    {
+      heading: "CURB-65 score, mortality and site of care",
+      columns: ["Score", "Approximate 30-day mortality", "Recommended site of care"],
+      rows: [
+        ["0", "Under 1%", "Home treatment with oral antibiotics"],
+        ["1", "About 2-3%", "Home treatment if oxygenation and social circumstances allow"],
+        ["2", "About 9%", "Hospital-supervised or short inpatient care"],
+        ["3", "About 15-22%", "Admit as severe pneumonia"],
+        ["4-5", "About 30-40%", "Admit and assess for intensive care"],
+      ],
+    },
+    {
+      heading: "Empirical antibiotic choice by setting",
+      columns: ["Setting", "First choice", "Alternative", "Duration"],
+      rows: [
+        ["Outpatient, no comorbidity", "Amoxicillin 500 mg-1 g PO TDS", "Doxycycline 100 mg PO BD or azithromycin 500 mg PO OD", "5 days"],
+        ["Outpatient with comorbidity", "Amoxicillin-clavulanate 625 mg PO TDS plus azithromycin 500 mg PO OD", "Levofloxacin 750 mg PO OD (second line in India)", "5-7 days"],
+        ["Inpatient, non-severe", "Ceftriaxone 1-2 g IV OD plus azithromycin 500 mg", "Amoxicillin-clavulanate IV plus macrolide", "5-7 days"],
+        ["Severe or ICU", "Ceftriaxone or piperacillin-tazobactam IV plus macrolide", "Add anti-MRSA or antipseudomonal cover if risk factors", "7 days or more"],
+        ["Suspected aspiration", "Amoxicillin-clavulanate 1.2 g IV TDS", "Clindamycin if penicillin-allergic", "5-7 days, longer if necrotising"],
+      ],
+    },
+    {
+      heading: "Clinical clues to the organism",
+      columns: ["Clue", "Suspected organism"],
+      rows: [
+        ["Rusty sputum, rigors, lobar consolidation, herpes labialis", "Streptococcus pneumoniae"],
+        ["Upper lobe consolidation with bulging fissure, red-currant jelly sputum, diabetic or alcoholic", "Klebsiella pneumoniae"],
+        ["Cavitating pneumonia after influenza, rapid deterioration", "Staphylococcus aureus"],
+        ["Dry cough, headache, myalgia, extrapulmonary features, cold agglutinins", "Mycoplasma pneumoniae"],
+        ["Confusion, diarrhoea, hyponatraemia, deranged liver function, air-conditioning or water exposure", "Legionella pneumophila"],
+        ["Diabetic from a coastal or paddy-farming area with abscesses and septicaemia", "Burkholderia pseudomallei (melioidosis)"],
+        ["Subacute cough over weeks, weight loss, upper lobe or cavitary shadow", "Mycobacterium tuberculosis"],
+      ],
+    },
+  ],
+  redFlags: [
+    "CURB-65 score of 3 or more, or a CRB-65 of 3-4 in the clinic - severe pneumonia, arrange admission now.",
+    "SpO2 below 92% on room air (below 90% in a known COPD patient) or a respiratory rate of 30 or more - admit regardless of the score.",
+    "New confusion in an elderly patient with fever or cough - this is often the only presentation of pneumonia and carries a high mortality.",
+    "Systolic blood pressure under 90 mmHg, capillary refill over 3 seconds or a lactate above 2 mmol/L - sepsis; start the sepsis bundle including antibiotics within one hour.",
+    "Pleuritic pain with dullness and reduced breath sounds - parapneumonic effusion or empyema, needs ultrasound and diagnostic aspiration.",
+    "No improvement after 48-72 hours of appropriate antibiotics - reassess for empyema, tuberculosis, obstruction, resistance or an alternative diagnosis.",
+    "Chest indrawing, stridor at rest, inability to drink, convulsion or lethargy in a child - severe pneumonia by IMNCI, refer urgently after the first dose of antibiotic.",
+    "Cavitary or upper lobe shadowing with weight loss and cough over two weeks - investigate for tuberculosis before repeated courses of antibiotics.",
+  ],
+  pearls: [
+    "Say CURB-65 in full - Confusion, Urea over 7 mmol/L, Respiratory rate 30 or more, Blood pressure under 90 systolic or 60 or less diastolic, and age 65 or over - and give the mortality bands with it.",
+    "Use CRB-65 where there is no laboratory; it needs nothing but a history, a watch and a blood pressure cuff.",
+    "Oxygen saturation trumps the score: a hypoxaemic patient with CURB-65 of 1 still needs admission.",
+    "Five days of antibiotic is enough for most community-acquired pneumonia, provided the patient has been afebrile and stable for 48-72 hours.",
+    "Reserve fluoroquinolones in India: they partially treat tuberculosis, mask it, delay its diagnosis and breed resistance.",
+    "Any pneumonia that has not settled in two weeks needs a sputum NAAT for tuberculosis and a look at the radiograph for cavitation.",
+    "Tap every significant parapneumonic effusion under ultrasound guidance - pH under 7.20 or frank pus means a chest tube, not another antibiotic.",
+    "Repeat the chest radiograph at six weeks in smokers and in those over 50 to make sure a carcinoma is not hiding behind the consolidation.",
+    "Radiological clearance lags clinical recovery; do not chase a persistent shadow at two weeks in a patient who feels well, and do not ignore one at six weeks in a patient who does not.",
+  ],
+  theory: [
+    {
+      id: "respiratory-pneumonia-cap-t1",
+      paper: "II",
+      kind: "long",
+      marks: 10,
+      minutes: 20,
+      frequency: "core",
+      question:
+        "A 68-year-old man with type 2 diabetes presents to your clinic with fever, cough with purulent sputum and breathlessness for three days. Discuss your assessment of severity, investigations, treatment and follow-up.",
+      openingLines: [
+        "Community-acquired pneumonia is an acute infection of the lung parenchyma acquired outside hospital, with clinical features of a lower respiratory infection and new radiographic shadowing.",
+        "In a 68-year-old diabetic the immediate question is not which antibiotic but where he should be treated, and that is answered by a severity score together with oxygen saturation and social circumstances.",
+      ],
+      answer: [
+        {
+          heading: "1. Assessment of severity",
+          points: [
+            "**CURB-65**: one point each for new confusion, blood urea above 7 mmol/L (about 19-20 mg/dL), respiratory rate 30 per minute or more, systolic BP under 90 or diastolic 60 mmHg or less, and age 65 years or over. He already scores 1 for age.",
+            "Score 0-1 home, 2 hospital-supervised, 3 or more severe pneumonia needing admission and assessment for intensive care at 4-5.",
+            "Where no laboratory is available use **CRB-65**: 0 home, 1-2 refer, 3-4 urgent admission.",
+            "Override the score and admit for hypoxaemia (SpO2 under 92% on air), multilobar disease, effusion, uncontrolled diabetes or another decompensated comorbidity, vomiting, or an unsafe home situation.",
+          ],
+        },
+        {
+          heading: "2. Examination and investigations",
+          points: [
+            "Vital signs including respiratory rate and SpO2, hydration, mental state, capillary refill, and a full chest examination for consolidation, effusion and added sounds.",
+            "**Chest radiograph** to confirm consolidation and identify effusion, cavitation, multilobar disease or a mass.",
+            "Blood counts, urea, creatinine, electrolytes, blood sugar and HbA1c, liver function and C-reactive protein; blood cultures and sputum Gram stain with culture before antibiotics if admitted.",
+            "**Sputum NAAT for tuberculosis** if the illness has lasted more than two weeks, or there is weight loss, haemoptysis or upper lobe or cavitary shadowing; test for influenza and SARS-CoV-2 in season.",
+            "Look actively for diabetic decompensation: capillary glucose, urine ketones and an assessment for hyperosmolar state or ketoacidosis, both of which pneumonia commonly precipitates.",
+          ],
+        },
+        {
+          heading: "3. Treatment",
+          points: [
+            "**Antibiotics within four hours of the diagnosis** (within one hour if there is sepsis), after cultures where feasible.",
+            "As an outpatient with comorbidity: amoxicillin-clavulanate 625 mg three times daily plus azithromycin 500 mg once daily; if admitted, ceftriaxone 1-2 g intravenously daily plus azithromycin.",
+            "Duration 5-7 days, provided he is afebrile and clinically stable for 48-72 hours.",
+            "Oxygen to a target SpO2 of 94-98% (88-92% if COPD coexists), adequate hydration, paracetamol for fever and pleuritic pain, and early mobilisation.",
+            "Optimise glycaemic control with insulin if necessary during the acute illness, and stop metformin if he becomes hypotensive or dehydrated.",
+          ],
+        },
+        {
+          heading: "4. Monitoring and complications",
+          points: [
+            "Review at 48-72 hours if treated at home, and daily if admitted, with observations, saturation and mental state.",
+            "**Non-resolving pneumonia** should prompt a search for empyema, lung abscess, tuberculosis, an obstructing lesion, a resistant organism, or a wrong diagnosis such as pulmonary embolism or cardiac failure.",
+            "Any significant pleural effusion needs ultrasound-guided aspiration; pH under 7.20, glucose under 40-60 mg/dL, LDH over 1000 IU/L or pus require intercostal drainage.",
+            "Other complications: sepsis and septic shock, acute kidney injury, acute respiratory distress syndrome, metastatic infection, and decompensation of diabetes and cardiac disease.",
+          ],
+        },
+        {
+          heading: "5. Follow-up and prevention",
+          points: [
+            "Repeat the chest radiograph at 6 weeks because of his age, to confirm resolution and exclude an underlying carcinoma.",
+            "Vaccinate against pneumococcus (PCV followed by PPSV23) and influenza annually once he has recovered; give COVID-19 vaccination as per current policy.",
+            "Advise on smoking cessation, oral hygiene, glycaemic control and nutrition, and explain the expected timeline of recovery so that a lingering cough does not lead to repeated antibiotic courses.",
+          ],
+        },
+      ],
+      mustDraw: [
+        "A CURB-65 table with the five criteria, score bands, mortality and site of care.",
+        "A table of empirical antibiotic choice by setting with doses and duration.",
+      ],
+      markSplit: [
+        { part: "Definition and CURB-65 with interpretation", marks: 3 },
+        { part: "Investigations including TB screening", marks: 2 },
+        { part: "Antibiotics with doses and supportive care", marks: 3 },
+        { part: "Complications, follow-up and prevention", marks: 2 },
+      ],
+      keywords: ["CURB-65", "amoxicillin-clavulanate", "parapneumonic effusion", "pneumococcal vaccine", "non-resolving pneumonia"],
+    },
+    {
+      id: "respiratory-pneumonia-cap-t2",
+      paper: "II",
+      kind: "short-note",
+      marks: 5,
+      minutes: 10,
+      frequency: "common",
+      question: "Write short notes on non-resolving pneumonia: definition, causes and approach.",
+      openingLines: [
+        "Non-resolving pneumonia is pneumonia in which clinical improvement fails to occur within 48-72 hours of appropriate antibiotic treatment, or in which radiographic shadowing persists beyond about four weeks despite treatment.",
+        "It is a common reason for referral and the correct response is a systematic re-evaluation of host, organism, drug and diagnosis, not an empirical escalation of antibiotics.",
+      ],
+      answer: [
+        {
+          heading: "Causes by category",
+          points: [
+            "**Host factors:** advanced age, diabetes, alcohol excess, malnutrition, HIV and other immunosuppression, chronic lung disease and heart failure, all of which slow resolution.",
+            "**Organism factors:** tuberculosis (the first consideration in India), fungal infection, Nocardia, resistant bacteria, Legionella, and viral pneumonia.",
+            "**Complications:** parapneumonic effusion, empyema, lung abscess, necrotising pneumonia and metastatic infection.",
+            "**Obstruction:** bronchogenic carcinoma, an inhaled foreign body (especially in children), a broncholith or extrinsic compression by nodes.",
+            "**Wrong diagnosis:** pulmonary embolism with infarction, cardiac failure, organising pneumonia, eosinophilic pneumonia, hypersensitivity pneumonitis, vasculitis, drug-induced lung disease and malignancy such as lymphoma or adenocarcinoma.",
+            "**Drug factors:** wrong drug, inadequate dose, poor absorption, poor adherence and inadequate duration.",
+          ],
+        },
+        {
+          heading: "Approach",
+          points: [
+            "Re-take the history including occupation, travel, animal and bird exposure, drugs and immunosuppression, and re-examine for effusion, clubbing, lymphadenopathy and extrapulmonary signs.",
+            "Repeat the chest radiograph and proceed to **contrast-enhanced CT of the chest**, which defines abscess, empyema, endobronchial obstruction, nodes and interstitial patterns.",
+            "Send **sputum for NAAT and culture for mycobacteria**, fungal stain and culture, and blood cultures; test for HIV.",
+            "**Ultrasound-guided pleural aspiration** for any effusion, with cell count, protein, LDH, glucose, pH, ADA, cytology, Gram stain, NAAT and culture.",
+            "Refer for **bronchoscopy with lavage, brushings and biopsy** where obstruction, malignancy or an unusual infection is suspected, and consider CT-guided or surgical lung biopsy for persistent undiagnosed shadowing.",
+          ],
+        },
+        {
+          heading: "Principles of management",
+          points: [
+            "Treat what you find rather than escalating blindly; stop antibiotics if a non-infective cause is confirmed.",
+            "Drain empyema early, treat tuberculosis under the programme, and refer suspected malignancy without delay.",
+            "Reassess and address the host: glycaemic control, nutrition, alcohol, smoking, and immunosuppressive medication.",
+          ],
+        },
+      ],
+      mustDraw: ["A table of causes grouped as host, organism, complication, obstruction, wrong diagnosis and drug factors."],
+      markSplit: [
+        { part: "Definition", marks: 1 },
+        { part: "Causes in grouped form", marks: 2 },
+        { part: "Investigational approach", marks: 1.5 },
+        { part: "Management principles", marks: 0.5 },
+      ],
+      keywords: ["non-resolving pneumonia", "empyema", "bronchoscopy", "endobronchial obstruction", "tuberculosis"],
+    },
+  ],
+  mcqs: [
+    {
+      id: "respiratory-pneumonia-cap-q1",
+      stem: "A 70-year-old woman has fever, cough and breathlessness for two days. She is oriented, respiratory rate 26/min, BP 118/76 mmHg, SpO2 95% on air, blood urea 34 mg/dL. Chest radiograph shows right lower lobe consolidation. What is her CURB-65 score and the appropriate site of care?",
+      options: [
+        "Score 1, treat at home",
+        "Score 2, hospital-supervised care or short admission",
+        "Score 3, admit as severe pneumonia",
+        "Score 0, treat at home",
+        "Score 4, admit to intensive care",
+      ],
+      answer: 1,
+      explanation:
+        "She scores one point for age 65 or over and one for a blood urea above 7 mmol/L (34 mg/dL is about 12 mmol/L), giving a CURB-65 of 2, which carries around 9% mortality and calls for hospital-supervised treatment or a short admission. She scores nothing for confusion, for a respiratory rate below 30, or for a blood pressure that is not hypotensive, so scores of 3 and 4 are wrong. Counting only the age or ignoring the urea underestimates her risk and would send home a patient with intermediate-risk pneumonia.",
+      difficulty: "moderate",
+    },
+    {
+      id: "respiratory-pneumonia-cap-q2",
+      stem: "A 34-year-old previously healthy man has fever, cough and left-sided pleuritic pain for two days. Respiratory rate 20/min, BP 124/80 mmHg, SpO2 97% on air, no confusion. Chest radiograph shows left lower lobe consolidation. Which is the most appropriate treatment?",
+      options: [
+        "Amoxicillin 500 mg to 1 g orally three times daily for 5 days at home",
+        "Levofloxacin 750 mg orally once daily for 7 days at home",
+        "Admission for intravenous ceftriaxone plus azithromycin",
+        "Azithromycin alone for 3 days with no follow-up",
+        "No antibiotic, as most pneumonia is viral",
+      ],
+      answer: 0,
+      explanation:
+        "This is low-severity community-acquired pneumonia (CURB-65 zero) in a previously healthy adult, so oral amoxicillin at home for five days with review at 48-72 hours is the correct treatment, covering the pneumococcus which is the commonest and most dangerous organism. A respiratory fluoroquinolone is deliberately avoided as a first choice in India because it partially treats and masks tuberculosis and drives resistance. Admission and intravenous therapy are unnecessary in a well-oxygenated, haemodynamically stable young man. Macrolide monotherapy without follow-up leaves pneumococcal resistance uncovered and abandons the essential 48-72 hour review, and radiographically confirmed consolidation with fever does require antibiotics.",
+      difficulty: "easy",
+    },
+    {
+      id: "respiratory-pneumonia-cap-q3",
+      stem: "A 45-year-old man treated for four days with amoxicillin-clavulanate for right-sided pneumonia remains febrile with worsening pleuritic pain. Examination shows stony dullness and absent breath sounds at the right base. Ultrasound shows a moderate septated effusion. Aspirate is turbid with pH 7.05, glucose 30 mg/dL and LDH 2,400 IU/L. What is the correct management?",
+      options: [
+        "Continue the same antibiotic and repeat the radiograph in a week",
+        "Change to a fluoroquinolone and observe",
+        "Insert an intercostal drain and continue antibiotics",
+        "Repeat therapeutic aspiration daily without a drain",
+        "Start anti-tuberculosis treatment empirically",
+      ],
+      answer: 2,
+      explanation:
+        "A turbid effusion with pH under 7.20, glucose under 40-60 mg/dL and LDH above 1,000 IU/L is a complicated parapneumonic effusion or empyema, and the treatment is prompt intercostal tube drainage together with continued antibiotics, with intrapleural fibrinolytics or surgical referral if drainage is incomplete because of septations. Continuing antibiotics alone allows loculation and a fibrothorax. Changing the antibiotic class does not drain pus. Repeated needle aspiration is inadequate for a septated collection. Anti-tuberculosis treatment is not started empirically in an acutely septic patient with pus and a neutrophilic biochemistry pattern, though fluid should still be sent for mycobacterial testing.",
+      difficulty: "moderate",
+    },
+    {
+      id: "respiratory-pneumonia-cap-q4",
+      stem: "A 22-year-old student has had dry cough, headache and low-grade fever for ten days. The chest is nearly clear on auscultation but the radiograph shows bilateral patchy reticular shadowing. He has already taken amoxicillin for five days without improvement. Which is the most likely organism and treatment?",
+      options: [
+        "Streptococcus pneumoniae; increase the amoxicillin dose",
+        "Mycoplasma pneumoniae; azithromycin or doxycycline",
+        "Klebsiella pneumoniae; ceftriaxone",
+        "Staphylococcus aureus; cloxacillin",
+        "Pneumocystis jirovecii; cotrimoxazole",
+      ],
+      answer: 1,
+      explanation:
+        "A subacute illness in a young adult with prominent dry cough and headache, radiographic changes out of proportion to the chest findings, and failure to respond to a beta-lactam is the classical picture of Mycoplasma pneumoniae, which lacks a cell wall and therefore does not respond to penicillins; a macrolide or doxycycline is required. Pneumococcus produces lobar consolidation with rigors and rusty sputum and usually responds to amoxicillin. Klebsiella affects diabetics and alcoholics with upper lobe consolidation. Staphylococcal pneumonia is acute, cavitating and severe, typically after influenza. Pneumocystis would require immunosuppression, usually advanced HIV, with marked hypoxaemia on exertion.",
+      difficulty: "easy",
+    },
+    {
+      id: "respiratory-pneumonia-cap-q5",
+      stem: "A 3-year-old child has cough and fever for two days, respiratory rate 46/min, no chest indrawing, is drinking well, and is playful between bouts of coughing. What is the appropriate action under IMNCI?",
+      options: [
+        "Classify as severe pneumonia and refer urgently",
+        "Classify as pneumonia and give oral amoxicillin with home care advice and follow-up in 3 days",
+        "Classify as no pneumonia and give a cough syrup",
+        "Admit for intravenous antibiotics and oxygen",
+        "Start anti-tuberculosis treatment",
+      ],
+      answer: 1,
+      explanation:
+        "In a child aged 1-5 years a respiratory rate of 40 per minute or more defines fast breathing and hence pneumonia, and in the absence of any danger sign the IMNCI classification is pneumonia, treated with oral amoxicillin at home with clear advice on when to return and a follow-up visit in three days. Severe pneumonia requires chest indrawing, stridor at rest, inability to drink, convulsion, lethargy or severe undernutrition, none of which is present. Calling it no pneumonia ignores the fast breathing, and cough syrups are not recommended in young children. Admission is not required for a feeding, alert child without hypoxaemia, and there is nothing here to suggest tuberculosis.",
+      difficulty: "moderate",
+    },
+    {
+      id: "respiratory-pneumonia-cap-q6",
+      stem: "A 55-year-old smoker was treated for left upper lobe pneumonia six weeks ago. He feels well now, but a repeat chest radiograph still shows persistent shadowing in the same area. What is the most appropriate next step?",
+      options: [
+        "Reassure and repeat the radiograph after one year",
+        "Give another course of antibiotics for two weeks",
+        "Arrange contrast-enhanced CT of the chest and refer for bronchoscopy",
+        "Start empirical anti-tuberculosis treatment",
+        "Start inhaled corticosteroids",
+      ],
+      answer: 2,
+      explanation:
+        "Persistent radiographic shadowing at six weeks in a smoker over 50 raises the possibility of an underlying bronchogenic carcinoma or an endobronchial lesion causing post-obstructive pneumonia, so CT of the chest with bronchoscopy is the appropriate next step; this is precisely why a six-week follow-up radiograph is recommended in this group. Reassurance and a one-year interval would delay a treatable cancer. Another antibiotic course treats an infection that has already resolved clinically. Anti-tuberculosis treatment should not be started empirically without an attempt at microbiological or histological diagnosis, though sputum for mycobacteria should certainly be sent alongside. Inhaled corticosteroids have no role in this problem.",
+      difficulty: "moderate",
+    },
+    {
+      id: "respiratory-pneumonia-cap-q7",
+      stem: "Which of the following is the strongest reason to avoid a respiratory fluoroquinolone as first-line empirical therapy for community-acquired pneumonia in India?",
+      options: [
+        "It has poor activity against Streptococcus pneumoniae",
+        "It cannot be given orally",
+        "It partially treats tuberculosis, delays its diagnosis and selects for fluoroquinolone-resistant Mycobacterium tuberculosis",
+        "It is contraindicated in patients over 60 years",
+        "It has no activity against atypical organisms",
+      ],
+      answer: 2,
+      explanation:
+        "Fluoroquinolones have good anti-tuberculous activity, so an empirical course can produce partial improvement in an undiagnosed tuberculosis patient, delay diagnosis by weeks, and select for fluoroquinolone resistance that later compromises second-line treatment of drug-resistant disease - a serious problem in a high-burden country. They are in fact highly active against pneumococcus and atypical organisms and have excellent oral bioavailability, which is why they are otherwise attractive. Age over 60 is a caution for tendinopathy and dysglycaemia, not an absolute contraindication, and is not the principal Indian argument.",
+      difficulty: "easy",
+    },
+  ],
+  cards: [
+    {
+      id: "respiratory-pneumonia-cap-c1",
+      front: "Expand CURB-65 with the exact thresholds.",
+      back: "Confusion (new); Urea above 7 mmol/L (about 19-20 mg/dL); Respiratory rate 30/min or more; Blood pressure systolic under 90 or diastolic 60 mmHg or less; age 65 years or over.",
+    },
+    {
+      id: "respiratory-pneumonia-cap-c2",
+      front: "CURB-65 score bands and site of care.",
+      back: "0-1 home; 2 hospital-supervised or short admission; 3 or more admit as severe; 4-5 assess for intensive care.",
+    },
+    {
+      id: "respiratory-pneumonia-cap-c3",
+      front: "What is CRB-65 and when is it used?",
+      back: "CURB-65 without the urea, for use in a clinic with no laboratory: 0 home, 1-2 refer for assessment, 3-4 urgent admission.",
+    },
+    {
+      id: "respiratory-pneumonia-cap-c4",
+      front: "First-line antibiotic for low-severity CAP in a previously healthy adult.",
+      back: "Amoxicillin 500 mg to 1 g orally three times daily for 5 days, with review at 48-72 hours.",
+    },
+    {
+      id: "respiratory-pneumonia-cap-c5",
+      front: "Antibiotic for outpatient CAP with comorbidity.",
+      back: "Amoxicillin-clavulanate 625 mg TDS plus azithromycin 500 mg OD (or doxycycline), for 5-7 days.",
+    },
+    {
+      id: "respiratory-pneumonia-cap-c6",
+      front: "Criteria for clinical stability that allow stopping antibiotics at 5 days.",
+      back: "Afebrile 48-72 hours plus no more than one of: temperature above 37.8 C, pulse above 100, respiratory rate above 24, systolic BP under 90, SpO2 under 90%, inability to eat, altered mental state.",
+    },
+    {
+      id: "respiratory-pneumonia-cap-c7",
+      front: "Pleural fluid findings that mandate a chest drain in pneumonia.",
+      back: "Frank pus, positive Gram stain or culture, pH under 7.20, glucose under 40-60 mg/dL, or LDH above 1,000 IU/L.",
+    },
+    {
+      id: "respiratory-pneumonia-cap-c8",
+      front: "IMNCI fast-breathing thresholds by age.",
+      back: "60/min or more under 2 months; 50/min or more from 2-12 months; 40/min or more from 1-5 years.",
+    },
+    {
+      id: "respiratory-pneumonia-cap-c9",
+      front: "Six categories of cause for non-resolving pneumonia.",
+      back: "Host factors, wrong or resistant organism (think tuberculosis), complications such as empyema or abscess, endobronchial obstruction, a wrong diagnosis, and drug or adherence failure.",
+    },
+    {
+      id: "respiratory-pneumonia-cap-c10",
+      front: "Clue: upper lobe consolidation with a bulging fissure in an alcoholic diabetic.",
+      back: "Klebsiella pneumoniae (Friedlander pneumonia), often with red-currant jelly sputum and a tendency to abscess formation.",
+    },
+    {
+      id: "respiratory-pneumonia-cap-c11",
+      front: "Who needs a repeat chest radiograph at six weeks after pneumonia?",
+      back: "Smokers, patients over 50, and anyone with persisting symptoms - to confirm resolution and exclude an underlying malignancy.",
+    },
+    {
+      id: "respiratory-pneumonia-cap-c12",
+      front: "Vaccines that prevent community-acquired pneumonia in adults.",
+      back: "Pneumococcal conjugate followed by polysaccharide vaccine in those over 65 or with chronic disease, annual influenza vaccine, and COVID-19 vaccine as per national policy.",
+    },
+  ],
+  references: [
+    "British Thoracic Society guideline for community-acquired pneumonia in adults, with 2015 annotations",
+    "ATS/IDSA Guideline on the Diagnosis and Treatment of Adults with Community-acquired Pneumonia, 2019",
+    "National Treatment Guidelines for Antimicrobial Use in Infectious Diseases, NCDC, MoHFW, and ICMR Treatment Guidelines for Antimicrobial Use, 2022",
+    "Integrated Management of Neonatal and Childhood Illness (IMNCI) training modules, MoHFW",
+    "API Textbook of Medicine, 11th edition, 2019 - respiratory infections",
+  ],
+});

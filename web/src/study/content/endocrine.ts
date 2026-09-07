@@ -3913,3 +3913,1426 @@ topics.push({
     "National Programme for Prevention and Control of Non-Communicable Diseases (NP-NCD) operational guidelines, MoHFW",
   ],
 });
+
+topics.push({
+  id: "endocrine-vitamin-d-calcium",
+  title: "Vitamin D deficiency and calcium disorders",
+  oneLiner:
+    "Vitamin D deficiency is defined by a serum 25-hydroxyvitamin D below 20 ng/mL and is near-universal in India despite abundant sunshine, presenting as bone pain, proximal myopathy, rickets or osteomalacia and treated with cholecalciferol 60,000 IU weekly for 8 weeks followed by monthly maintenance with adequate dietary calcium, while symptomatic hypocalcaemia and hypercalcaemia demand a parathyroid hormone level before any treatment.",
+  frequency: "less-common",
+  keywords: [
+    "vitamin D deficiency",
+    "25-hydroxyvitamin D",
+    "cholecalciferol",
+    "calcitriol",
+    "rickets",
+    "osteomalacia",
+    "Looser zone",
+    "hypocalcaemia",
+    "Chvostek sign",
+    "Trousseau sign",
+    "hypoparathyroidism",
+    "primary hyperparathyroidism",
+    "hypercalcaemia",
+    "parathyroid adenoma",
+    "calcium carbonate",
+    "calcium citrate",
+    "osteoporosis",
+    "ICMR RDA",
+    "alfacalcidol",
+    "magnesium",
+  ],
+  sections: [
+    {
+      heading: "Why vitamin D deficiency is so common in India",
+      points: [
+        "Community studies from across India report **serum 25-hydroxyvitamin D below 20 ng/mL in 50-90%** of apparently healthy adults, children, pregnant women and even outdoor workers - a paradox in a country lying between 8 and 37 degrees north with year-round sunshine.",
+        "The reasons are behavioural and biological: **skin pigmentation** requires three to five times longer sun exposure to make the same vitamin D, **indoor work and urban high-rise living**, complete clothing coverage for cultural and religious reasons, **the widespread use of sunscreen and skin-lightening avoidance of the sun**, and atmospheric pollution which absorbs UVB in cities.",
+        "**Dietary intake is negligible** in a largely vegetarian population - vitamin D occurs naturally in oily fish, egg yolk and liver, and Indian milk is not routinely fortified, so almost none is obtained from food.",
+        "**A high phytate and low calcium diet** compounds it: an average Indian intake of 300-400 mg of calcium a day against the ICMR recommendation of 1000 mg means that even adequate vitamin D cannot maintain calcium balance, and the resulting secondary hyperparathyroidism accelerates vitamin D catabolism.",
+        "Groups at highest risk: **exclusively breastfed infants without supplementation**, pregnant and lactating women, veiled women, the elderly and housebound, patients on **phenytoin, phenobarbitone, rifampicin or long-term corticosteroids**, those with malabsorption (coeliac disease, chronic pancreatitis, post-bariatric surgery) and chronic kidney or liver disease.",
+        "The practical inference is that **treatment is often started empirically in high-risk symptomatic patients**, because the assay costs more than the eight weeks of cholecalciferol it would justify.",
+      ],
+    },
+    {
+      heading: "Recognising deficiency and its bone disease",
+      points: [
+        "Adults typically present with **vague generalised body ache, low back and pelvic pain, bone tenderness over the sternum and tibiae, difficulty rising from a squat or climbing stairs from proximal myopathy, and a waddling gait** - a picture endlessly mislabelled as fibromyalgia or 'weakness'.",
+        "**Osteomalacia** is defective mineralisation of mature bone: bone pain, muscle weakness, pseudofractures (**Looser zones**) on the pubic rami, femoral neck, ribs and scapula, and a raised alkaline phosphatase with a low or low-normal calcium and phosphate.",
+        "**Rickets** is the same defect in the growing skeleton: delayed closure of the anterior fontanelle, craniotabes, frontal bossing, **rachitic rosary**, **Harrison sulcus**, widened wrists and ankles, bow legs or knock knees, delayed dentition, delayed motor milestones and, in infancy, hypocalcaemic seizures or stridor from laryngospasm.",
+        "**Nutritional rickets in India is often calcium-deficiency rickets** rather than pure vitamin D deficiency, so treatment must always include calcium and not vitamin D alone - a point examiners like.",
+        "Biochemistry of deficiency progresses in stages: **first a rise in parathyroid hormone with normal calcium**, then a falling phosphate with a rising alkaline phosphatase, and only late a frank hypocalcaemia - so a normal serum calcium never excludes deficiency.",
+        "Radiological signs in rickets: **cupping, splaying and fraying of the metaphysis** at the wrist and knee, widened growth plate, and generalised osteopenia; the wrist radiograph is the single most useful film.",
+      ],
+    },
+    {
+      heading: "Testing and treating vitamin D deficiency",
+      points: [
+        "**Measure serum 25-hydroxyvitamin D, not 1,25-dihydroxyvitamin D.** The 25-hydroxy form has a 2-3 week half-life and reflects stores; the 1,25 form is short-lived, is often normal or high in deficiency because of secondary hyperparathyroidism, and is reserved for suspected rickets of renal origin or 1-alpha-hydroxylase problems.",
+        "**Interpretation: deficiency below 20 ng/mL, insufficiency 20-29 ng/mL, sufficiency 30-100 ng/mL, potential toxicity above 150 ng/mL** (multiply by 2.5 for nmol/L).",
+        "**Do not screen the whole population.** Test when there is bone pain with proximal myopathy, suspected rickets or osteomalacia, osteoporosis before starting a bisphosphonate, malabsorption, chronic kidney disease, recurrent fractures, or a patient on anticonvulsants or long-term steroids.",
+        "**Treatment of deficiency in adults: cholecalciferol 60,000 IU once a week for 8 weeks** (a total of about 480,000 IU), then a maintenance of **60,000 IU once a month** or 1000-2000 IU daily, taken with a fatty meal because absorption is fat dependent.",
+        "**Give calcium alongside**: elemental calcium 500 mg twice daily as calcium carbonate (taken with food, since it needs gastric acid) or calcium citrate (usable on an empty stomach and preferred on a proton pump inhibitor or after bariatric surgery).",
+        "**Children:** cholecalciferol 2000 IU daily for 6 weeks or 60,000 IU weekly for 6 weeks by age and weight, with elemental calcium 500 mg daily, and 400 IU daily thereafter. **Every exclusively breastfed infant needs 400 IU daily from birth**, and IAP advises 400 IU daily for all infants and 600 IU for children and adolescents.",
+        "**Recheck at 3 months, not earlier**, and check calcium and creatinine if high doses have been used. Do not use undated mega-doses of 6 lakh IU by injection casually - vitamin D toxicity with hypercalcaemia, nephrocalcinosis and renal failure is now regularly seen in India from repeated unsupervised injections.",
+        "**Use active vitamin D (calcitriol 0.25-0.5 mcg twice daily or alfacalcidol) only where 1-alpha-hydroxylation fails or is bypassed** - chronic kidney disease, hypoparathyroidism, vitamin D-dependent rickets type 1 - never as routine replacement, because it does not replenish stores and readily causes hypercalcaemia.",
+      ],
+    },
+    {
+      heading: "Hypocalcaemia",
+      points: [
+        "**Always correct the measured calcium for albumin** before acting: corrected calcium equals measured calcium plus 0.8 times (4.0 minus serum albumin in g/dL). An ionised calcium is better still where available, and an alkalosis from hyperventilation lowers ionised calcium without changing the total.",
+        "Symptoms follow the level and its speed of fall: **perioral and acral paraesthesia, muscle cramps, carpopedal spasm, laryngospasm with stridor, tetany, seizures**, and on the ECG a **prolonged QT interval** which can lead to arrhythmia.",
+        "**Chvostek sign** is twitching of the facial muscles on tapping the facial nerve in front of the tragus - present in up to 10-25% of normal people, so it is suggestive rather than diagnostic. **Trousseau sign** is carpal spasm within 3 minutes of inflating a cuff above systolic pressure and is far more specific.",
+        "Causes: **vitamin D deficiency and osteomalacia** (the commonest in India), **hypoparathyroidism** - most often post-surgical after thyroidectomy or parathyroidectomy, sometimes autoimmune or from infiltration, **chronic kidney disease**, **hypomagnesaemia**, acute pancreatitis, massive transfusion with citrate, tumour lysis syndrome, and pseudohypoparathyroidism.",
+        "**Hypomagnesaemia must be corrected first**: magnesium below 0.5 mmol/L impairs both parathyroid hormone secretion and its action at the bone, so calcium will not correct until magnesium is replaced - a classic cause of refractory hypocalcaemia in the alcoholic, the malnourished and the patient on a proton pump inhibitor or diuretic.",
+        "**Acute symptomatic hypocalcaemia:** 10 mL of 10% calcium gluconate (about 90 mg elemental calcium) diluted in 50-100 mL of 5% dextrose given intravenously over 10 minutes with cardiac monitoring, repeated as needed and followed by an infusion of 10 ampoules in 1 litre of 5% dextrose at 50-100 mL/hour. Never give calcium chloride peripherally and never give calcium as a rapid bolus to a patient on digoxin.",
+        "**Chronic hypoparathyroidism** is managed with elemental calcium 1-2 g daily in divided doses plus **calcitriol 0.25-1 mcg twice daily**, aiming for a low-normal serum calcium and a 24-hour urine calcium below 300 mg to avoid nephrocalcinosis; plain cholecalciferol alone will not work because 1-alpha-hydroxylation is parathyroid hormone dependent.",
+      ],
+    },
+    {
+      heading: "Hypercalcaemia and primary hyperparathyroidism",
+      points: [
+        "**Primary hyperparathyroidism and malignancy account for about 90% of hypercalcaemia.** In the outpatient with an incidental raised calcium and no illness, think primary hyperparathyroidism; in the unwell inpatient with rapid onset, think malignancy.",
+        "Clinical shorthand: **stones, bones, abdominal groans and psychic moans** - renal calculi and nephrocalcinosis, bone pain, osteitis fibrosa cystica and fractures, constipation, peptic ulcer and pancreatitis, and depression, poor concentration or confusion, together with polyuria, polydipsia and fatigue.",
+        "**The diagnostic pair is calcium with an intact parathyroid hormone measured on the same sample.** A raised or inappropriately normal parathyroid hormone with hypercalcaemia is primary hyperparathyroidism; a suppressed parathyroid hormone points to malignancy, vitamin D toxicity, sarcoidosis, thyrotoxicosis, immobilisation or milk-alkali syndrome.",
+        "**Indian primary hyperparathyroidism is still often symptomatic** at presentation - overt bone disease, brown tumours and renal stones - unlike the asymptomatic biochemical disease of the West, because routine calcium testing is not universal.",
+        "Always check a **24-hour urine calcium and creatinine clearance**: **familial hypocalciuric hypercalcaemia** has a low urinary calcium excretion with a calcium-creatinine clearance ratio below 0.01, is benign and autosomal dominant, and must not be sent for parathyroidectomy.",
+        "**Parathyroidectomy is indicated** for symptomatic disease, and in asymptomatic disease for serum calcium more than 1 mg/dL above the upper limit, creatinine clearance below 60 mL/min, a T-score of -2.5 or less or a vertebral fracture, renal stones or nephrocalcinosis, urinary calcium above 400 mg a day, or age below 50. Localise first with sestamibi scanning and neck ultrasound.",
+        "**Acute severe hypercalcaemia (above 14 mg/dL or symptomatic):** intravenous normal saline 200-300 mL/hour to restore volume and promote calciuresis, a loop diuretic only after rehydration and only for fluid overload, **zoledronic acid 4 mg intravenously** (onset 2-4 days), calcitonin 4 IU/kg 12-hourly for rapid but short-lived effect, and steroids for the hypercalcaemia of sarcoidosis, lymphoma or vitamin D toxicity. Stop thiazides, lithium, calcium and vitamin D supplements.",
+      ],
+    },
+    {
+      heading: "Calcium requirement, sources and osteoporosis prevention",
+      points: [
+        "**ICMR-NIN 2020 recommended dietary allowance for calcium is 1000 mg a day for adults, 1000-1200 mg in pregnancy and lactation, 850 mg for children aged 10-12 and about 1050 mg for adolescents**; actual Indian intakes average only 300-500 mg a day.",
+        "**Dietary sources to name in a diet plan:** milk and curd (about 120 mg per 100 mL), paneer, ragi (finger millet, one of the richest vegetarian sources at about 350 mg per 100 g), til (sesame), amaranth and other green leafy vegetables, drumstick leaves, small fish eaten with bones, and almonds.",
+        "**Calcium carbonate contains 40% elemental calcium** and is the cheapest, but needs gastric acid so must be taken with food; **calcium citrate contains 21%** and is absorbed without acid, making it the right choice on a proton pump inhibitor, in achlorhydria and after bariatric surgery. Absorption is best in **doses of 500 mg or less at a time**.",
+        "Under **Anaemia Mukt Bharat and the antenatal care schedule, calcium 500 mg with vitamin D 250 IU twice daily is given from 14 weeks of gestation through pregnancy and for 6 months postpartum**, taken at a different time from iron and folic acid because calcium impairs iron absorption.",
+        "For **osteoporosis prevention**: adequate calcium and vitamin D, weight-bearing and resistance exercise, tobacco and alcohol cessation, fall prevention at home, and correction of deficiency before starting a bisphosphonate - giving zoledronic acid to a vitamin D deficient patient precipitates severe hypocalcaemia.",
+        "Do not over-supplement: **calcium supplements above about 1000-1200 mg a day**, particularly without dietary need, add nothing for bone and increase the risk of renal stones and constipation.",
+      ],
+    },
+  ],
+  tables: [
+    {
+      heading: "Interpreting serum 25-hydroxyvitamin D",
+      columns: ["Category", "25(OH)D level", "Action"],
+      rows: [
+        ["Deficiency", "Below 20 ng/mL (50 nmol/L)", "Cholecalciferol 60,000 IU weekly for 8 weeks with calcium, then monthly maintenance"],
+        ["Insufficiency", "20-29 ng/mL", "Cholecalciferol 60,000 IU monthly or 1000-2000 IU daily with dietary calcium"],
+        ["Sufficiency", "30-100 ng/mL", "No treatment; maintain sun exposure and dietary calcium"],
+        ["Excess", "Above 100 ng/mL", "Stop supplements, check serum and urine calcium"],
+        ["Toxicity", "Above 150 ng/mL with hypercalcaemia", "Stop vitamin D and calcium, hydrate, steroids if severe, check renal function"],
+      ],
+    },
+    {
+      heading: "Biochemical patterns in metabolic bone disease",
+      columns: ["Condition", "Calcium", "Phosphate", "Alkaline phosphatase", "Parathyroid hormone"],
+      rows: [
+        ["Vitamin D deficiency / osteomalacia", "Low or low-normal", "Low", "High", "High (secondary)"],
+        ["Primary hyperparathyroidism", "High", "Low", "Normal or high", "High or inappropriately normal"],
+        ["Hypoparathyroidism", "Low", "High", "Normal", "Low or undetectable"],
+        ["Chronic kidney disease - mineral bone disorder", "Low or normal", "High", "High", "High (secondary or tertiary)"],
+        ["Hypercalcaemia of malignancy", "High", "Variable", "High if bone metastases", "Suppressed"],
+        ["Osteoporosis (uncomplicated)", "Normal", "Normal", "Normal", "Normal"],
+      ],
+    },
+    {
+      heading: "Calcium salts and vitamin D preparations in Indian practice",
+      columns: ["Preparation", "Elemental content or strength", "When to choose it"],
+      rows: [
+        ["Calcium carbonate 1250 mg tablet", "500 mg elemental calcium (40%)", "Cheapest; take with food, needs gastric acid"],
+        ["Calcium citrate 1000 mg tablet", "About 210 mg elemental calcium (21%)", "On a proton pump inhibitor, achlorhydria, post-bariatric surgery, stone formers"],
+        ["Cholecalciferol 60,000 IU sachet", "Vitamin D3", "Weekly for 8 weeks to treat deficiency, then monthly maintenance"],
+        ["Calcitriol 0.25 mcg capsule", "Active 1,25-dihydroxyvitamin D", "Hypoparathyroidism, chronic kidney disease; not for routine replacement"],
+        ["Calcium gluconate 10% ampoule", "About 90 mg elemental calcium per 10 mL", "Acute symptomatic hypocalcaemia, diluted and given slowly"],
+      ],
+    },
+  ],
+  redFlags: [
+    "Carpopedal spasm, stridor or a seizure with a low calcium - give intravenous calcium gluconate immediately with cardiac monitoring rather than waiting for oral treatment to work.",
+    "Hypocalcaemia that will not correct despite adequate calcium and vitamin D - measure and replace magnesium, since hypomagnesaemia blocks both parathyroid hormone release and its action.",
+    "Serum calcium above 14 mg/dL, or any hypercalcaemia with drowsiness, vomiting or dehydration - admit for intravenous saline and a bisphosphonate.",
+    "Hypercalcaemia with a suppressed parathyroid hormone, weight loss and bone pain - look for malignancy with myeloma screen, chest imaging and a bone scan rather than repeating the calcium.",
+    "A child with bow legs, a rachitic rosary and a hypocalcaemic seizure - treat as nutritional rickets urgently with calcium as well as vitamin D, and check for renal tubular disease if it recurs.",
+    "Vomiting, polyuria, confusion and renal impairment after repeated unsupervised 6 lakh IU vitamin D injections - vitamin D toxicity with hypercalcaemia and nephrocalcinosis.",
+    "New hypocalcaemia with perioral tingling in the first 48 hours after thyroidectomy - post-surgical hypoparathyroidism until proved otherwise; check calcium urgently before discharge.",
+  ],
+  pearls: [
+    "Measure 25-hydroxyvitamin D and not 1,25-dihydroxyvitamin D: the active form is often normal or even high in deficiency because secondary hyperparathyroidism drives its production.",
+    "A normal serum calcium does not exclude vitamin D deficiency - parathyroid hormone rises first and defends the calcium until the bone disease is advanced.",
+    "Indian nutritional rickets is frequently calcium-deficiency rickets, so calcium must be given with the vitamin D or the child will not heal.",
+    "Always correct calcium for albumin: add 0.8 mg/dL to the measured calcium for every 1 g/dL that albumin falls below 4 g/dL, or you will chase a hypocalcaemia that does not exist.",
+    "Trousseau sign beats Chvostek sign - up to a quarter of normal people have a positive Chvostek, but carpal spasm on cuff inflation is genuinely specific.",
+    "Refractory hypocalcaemia means check the magnesium; nothing else will work until it is replaced.",
+    "Calcium plus a raised or inappropriately normal parathyroid hormone on the same sample makes the diagnosis of primary hyperparathyroidism - no imaging is needed to diagnose it, only to localise it before surgery.",
+    "Check the urinary calcium before referring for parathyroidectomy: familial hypocalciuric hypercalcaemia is benign, has a calcium-creatinine clearance ratio below 0.01, and needs no operation.",
+    "Correct vitamin D deficiency before giving a bisphosphonate, or you will precipitate severe symptomatic hypocalcaemia.",
+  ],
+  theory: [
+    {
+      id: "endocrine-vitamin-d-calcium-t1",
+      paper: "II",
+      kind: "long",
+      marks: 10,
+      minutes: 18,
+      frequency: "less-common",
+      question:
+        "A 34-year-old veiled homemaker presents with generalised body ache of one year, difficulty in rising from a squat and pain in both hips. Discuss the likely diagnosis, the causes of this condition in India, its clinical and biochemical features, and management.",
+      openingLines: [
+        "The picture of generalised bone pain with proximal myopathy in a young Indian woman with limited sun exposure is characteristic of vitamin D deficiency with osteomalacia, defined biochemically by a serum 25-hydroxyvitamin D below 20 ng/mL.",
+        "Osteomalacia is defective mineralisation of mature bone matrix, the adult counterpart of rickets, and is one of the most under-diagnosed treatable causes of chronic musculoskeletal pain in Indian practice.",
+      ],
+      answer: [
+        {
+          heading: "1. Why deficiency is common in India",
+          points: [
+            "Reduced synthesis: skin pigmentation requiring longer exposure, complete clothing coverage, indoor living and work, urban high-rise housing, sunscreen use and atmospheric pollution absorbing UVB.",
+            "Negligible dietary intake in a predominantly vegetarian diet with no routine fortification of milk or oil.",
+            "Low dietary calcium of 300-500 mg a day against an ICMR requirement of 1000 mg, with a high phytate load, producing secondary hyperparathyroidism that accelerates vitamin D catabolism.",
+            "Additional risks: repeated pregnancy and prolonged lactation, malabsorption, chronic kidney or liver disease, and drugs such as phenytoin, phenobarbitone, rifampicin and corticosteroids.",
+          ],
+        },
+        {
+          heading: "2. Clinical features",
+          points: [
+            "Symptoms: diffuse bony pain especially in the pelvis, low back, ribs and thighs; proximal muscle weakness with difficulty rising from a squat or climbing stairs; a waddling gait; and fatigue.",
+            "Signs: bone tenderness on sternal and tibial pressure, proximal myopathy without wasting or fasciculation, waddling gait, and sometimes deformity or fracture.",
+            "Complications: fragility and pseudofractures, hypocalcaemic tetany, and increased fall and fracture risk in the elderly.",
+            "Differential diagnosis: fibromyalgia, hypothyroid myopathy, polymyalgia rheumatica, myeloma, metastatic bone disease and inflammatory myopathy.",
+          ],
+        },
+        {
+          heading: "3. Investigations",
+          points: [
+            "Serum 25-hydroxyvitamin D: below 20 ng/mL confirms deficiency; 20-29 ng/mL is insufficiency.",
+            "Serum calcium (corrected for albumin), phosphate, alkaline phosphatase, intact parathyroid hormone, creatinine and magnesium.",
+            "Typical pattern: low or low-normal calcium, low phosphate, high alkaline phosphatase and high parathyroid hormone.",
+            "Radiographs of the pelvis and femur for Looser zones or pseudofractures; a wrist film in children for metaphyseal cupping and fraying; DXA if osteoporosis is also suspected.",
+            "Search for malabsorption (coeliac serology, faecal fat) if deficiency recurs after adequate treatment.",
+          ],
+        },
+        {
+          heading: "4. Treatment",
+          points: [
+            "Cholecalciferol 60,000 IU orally once a week for 8 weeks, taken with a fatty meal, followed by 60,000 IU monthly or 1000-2000 IU daily as maintenance.",
+            "Elemental calcium 500 mg twice daily as calcium carbonate with food, or calcium citrate if on a proton pump inhibitor, continued throughout.",
+            "Counsel on 15-30 minutes of sun exposure to the face, arms and legs between 10 am and 3 pm on most days, and on calcium-rich foods - milk, curd, paneer, ragi, sesame, green leafy vegetables and small fish with bones.",
+            "Analgesia and graded physiotherapy for the myopathy; symptoms improve within 2-4 weeks and strength over 3-6 months.",
+            "Use calcitriol only if there is chronic kidney disease or hypoparathyroidism, never as routine replacement.",
+          ],
+        },
+        {
+          heading: "5. Monitoring and prevention",
+          points: [
+            "Recheck 25-hydroxyvitamin D, calcium and alkaline phosphatase at 3 months; alkaline phosphatase falling towards normal confirms healing.",
+            "Check serum and urine calcium if high doses have been used, and avoid repeated unsupervised mega-dose injections which cause hypercalcaemia and nephrocalcinosis.",
+            "Prevention: 400 IU daily for all infants from birth including the exclusively breastfed, 600 IU for children and adolescents, supplementation in pregnancy and lactation with calcium 500 mg twice daily from 14 weeks under the antenatal schedule, and fortified food promotion.",
+            "Screen the household - deficiency is shared by family members with the same diet and sun exposure.",
+          ],
+        },
+      ],
+      mustDraw: [
+        "Table of calcium, phosphate, alkaline phosphatase and parathyroid hormone in osteomalacia, primary hyperparathyroidism, hypoparathyroidism and osteoporosis.",
+        "Table of 25-hydroxyvitamin D categories with the corresponding treatment.",
+      ],
+      markSplit: [
+        { part: "Diagnosis and definition", marks: 1 },
+        { part: "Causes specific to India", marks: 2 },
+        { part: "Clinical features and differential diagnosis", marks: 2 },
+        { part: "Investigations with the expected biochemical pattern", marks: 2 },
+        { part: "Treatment doses and prevention", marks: 3 },
+      ],
+      keywords: ["vitamin D deficiency", "osteomalacia", "cholecalciferol", "Looser zone", "proximal myopathy"],
+    },
+    {
+      id: "endocrine-vitamin-d-calcium-t2",
+      paper: "II",
+      kind: "short-note",
+      marks: 5,
+      minutes: 9,
+      frequency: "less-common",
+      question: "Write short notes on the causes and emergency management of symptomatic hypocalcaemia.",
+      openingLines: [
+        "Hypocalcaemia is a corrected serum calcium below 8.5 mg/dL, where the corrected value equals the measured calcium plus 0.8 times the deficit of albumin below 4 g/dL.",
+        "It becomes an emergency when it produces tetany, laryngospasm, seizures or a prolonged QT interval with arrhythmia, and treatment must then precede full aetiological work-up.",
+      ],
+      answer: [
+        {
+          heading: "Causes",
+          points: [
+            "Vitamin D deficiency and osteomalacia - the commonest cause in India.",
+            "Hypoparathyroidism: post-thyroidectomy or post-parathyroidectomy (commonest), autoimmune, infiltrative, or as part of DiGeorge syndrome.",
+            "Hypomagnesaemia, which impairs both parathyroid hormone secretion and its peripheral action.",
+            "Chronic kidney disease with hyperphosphataemia and reduced 1-alpha-hydroxylation.",
+            "Acute pancreatitis, massive transfusion with citrate, tumour lysis syndrome, rhabdomyolysis, and pseudohypoparathyroidism with end-organ resistance.",
+          ],
+        },
+        {
+          heading: "Clinical features",
+          points: [
+            "Perioral and acral paraesthesia, muscle cramps, carpopedal spasm and tetany.",
+            "Laryngospasm with stridor, bronchospasm, and generalised seizures.",
+            "Chvostek sign (facial twitch on tapping the facial nerve, non-specific) and Trousseau sign (carpal spasm within 3 minutes of cuff inflation, specific).",
+            "ECG shows a prolonged QT interval; chronic hypocalcaemia causes cataract, basal ganglia calcification, dry skin and brittle nails.",
+          ],
+        },
+        {
+          heading: "Emergency management",
+          points: [
+            "Secure airway and give oxygen; attach cardiac monitoring and obtain intravenous access.",
+            "Calcium gluconate 10%, 10 mL (about 90 mg elemental calcium) diluted in 50-100 mL of 5% dextrose intravenously over 10 minutes, repeated until symptoms settle.",
+            "Follow with an infusion of 10 ampoules of 10% calcium gluconate in 1 litre of 5% dextrose at 50-100 mL/hour, titrated to keep calcium at the lower end of normal.",
+            "Measure and replace magnesium; hypocalcaemia will not correct while magnesium is low.",
+            "Extreme caution in patients on digoxin, since calcium potentiates digoxin toxicity; avoid calcium chloride peripherally because of tissue necrosis on extravasation.",
+          ],
+        },
+        {
+          heading: "Continuing treatment",
+          points: [
+            "Oral elemental calcium 1-2 g daily in divided doses once symptoms settle.",
+            "Cholecalciferol for deficiency; calcitriol 0.25-1 mcg twice daily for hypoparathyroidism or chronic kidney disease, since plain vitamin D cannot be activated without parathyroid hormone.",
+            "Monitor calcium, phosphate, magnesium and 24-hour urine calcium, keeping urinary calcium below 300 mg a day to avoid nephrocalcinosis.",
+            "Identify and treat the cause, and issue a written warning card after thyroid or parathyroid surgery.",
+          ],
+        },
+      ],
+      mustDraw: ["Flow chart: symptomatic hypocalcaemia - IV calcium gluconate 10 mL over 10 min - infusion - check magnesium - oral calcium with cholecalciferol or calcitriol by cause."],
+      markSplit: [
+        { part: "Definition with albumin correction", marks: 1 },
+        { part: "Causes", marks: 1 },
+        { part: "Clinical features and signs", marks: 1 },
+        { part: "Emergency drug treatment with doses", marks: 2 },
+      ],
+      keywords: ["hypocalcaemia", "calcium gluconate", "Trousseau", "hypomagnesaemia", "hypoparathyroidism"],
+    },
+  ],
+  mcqs: [
+    {
+      id: "endocrine-vitamin-d-calcium-q1",
+      stem: "A 40-year-old woman with generalised body ache and difficulty climbing stairs has calcium 8.2 mg/dL, phosphate 2.1 mg/dL, alkaline phosphatase 420 IU/L and parathyroid hormone 128 pg/mL. Which test confirms the diagnosis?",
+      options: [
+        "Serum 1,25-dihydroxyvitamin D",
+        "Serum 25-hydroxyvitamin D",
+        "Sestamibi parathyroid scan",
+        "Serum protein electrophoresis",
+      ],
+      answer: 1,
+      explanation:
+        "Low calcium and phosphate with a high alkaline phosphatase and secondary rise in parathyroid hormone is the classic pattern of vitamin D deficiency osteomalacia, and 25-hydroxyvitamin D is the storage form that confirms it. The 1,25-dihydroxy form is often normal or even raised in deficiency because the high parathyroid hormone drives 1-alpha-hydroxylation, so it will mislead. A sestamibi scan localises a parathyroid adenoma in primary hyperparathyroidism, which would show a high calcium rather than a low one. Protein electrophoresis screens for myeloma, which typically raises calcium and leaves alkaline phosphatase normal.",
+      difficulty: "moderate",
+    },
+    {
+      id: "endocrine-vitamin-d-calcium-q2",
+      stem: "A 55-year-old man had a total thyroidectomy 36 hours ago and now reports perioral tingling and cramps. Corrected calcium is 6.9 mg/dL and he has carpal spasm on inflating the blood pressure cuff. What is the immediate treatment?",
+      options: [
+        "Oral calcium carbonate 500 mg twice daily and review in the morning",
+        "Cholecalciferol 60,000 IU orally as a single dose",
+        "10 mL of 10% calcium gluconate diluted in 5% dextrose intravenously over 10 minutes with cardiac monitoring",
+        "Intravenous magnesium sulphate 2 g alone",
+      ],
+      answer: 2,
+      explanation:
+        "Symptomatic hypocalcaemia with a positive Trousseau sign after thyroidectomy is post-surgical hypoparathyroidism and needs intravenous calcium gluconate given slowly under cardiac monitoring, followed by an infusion and then oral calcium with calcitriol. Oral calcium alone acts too slowly for tetany that can progress to laryngospasm. Cholecalciferol cannot be 1-alpha-hydroxylated without parathyroid hormone and takes days regardless. Magnesium should be checked and replaced if low but does not treat symptomatic tetany on its own.",
+      difficulty: "easy",
+    },
+    {
+      id: "endocrine-vitamin-d-calcium-q3",
+      stem: "A 58-year-old woman has an incidental serum calcium of 11.4 mg/dL. Intact parathyroid hormone is 96 pg/mL (normal 15-65), phosphate is 2.2 mg/dL and she has had two renal stones. What is the diagnosis and the appropriate next step?",
+      options: [
+        "Hypercalcaemia of malignancy; arrange a bone scan and myeloma screen",
+        "Primary hyperparathyroidism; refer for parathyroidectomy after sestamibi and ultrasound localisation",
+        "Familial hypocalciuric hypercalcaemia; reassure and take no further action",
+        "Vitamin D toxicity; stop supplements and recheck in 6 weeks",
+      ],
+      answer: 1,
+      explanation:
+        "Hypercalcaemia with an inappropriately raised parathyroid hormone and a low phosphate is primary hyperparathyroidism, and renal stones are an accepted indication for parathyroidectomy, with sestamibi and ultrasound used to localise the adenoma before surgery. Malignant hypercalcaemia suppresses parathyroid hormone, so a level of 96 pg/mL excludes it. Familial hypocalciuric hypercalcaemia can mimic this biochemically but has a low urinary calcium and does not cause stones, and should be excluded with a calcium-creatinine clearance ratio before surgery rather than assumed. Vitamin D toxicity also suppresses parathyroid hormone.",
+      difficulty: "moderate",
+    },
+    {
+      id: "endocrine-vitamin-d-calcium-q4",
+      stem: "A malnourished man with alcohol dependence has a corrected calcium of 7.2 mg/dL that fails to rise after 48 hours of adequate intravenous and oral calcium. What is the most likely reason?",
+      options: [
+        "Hypomagnesaemia impairing parathyroid hormone secretion and action",
+        "Coexisting hyperphosphataemia from chronic kidney disease",
+        "Inadequate dose of vitamin D",
+        "Laboratory error in the albumin correction",
+      ],
+      answer: 0,
+      explanation:
+        "Refractory hypocalcaemia in an alcoholic or malnourished patient is nearly always hypomagnesaemia, which both blocks parathyroid hormone release and causes end-organ resistance to it, so calcium cannot normalise until magnesium is replaced. Hyperphosphataemia contributes in renal failure but does not typically produce complete refractoriness in this setting. Vitamin D takes days to weeks and would not explain failure of intravenous calcium to raise the level at all. Repeating the albumin correction may be prudent but does not explain a genuinely low ionised calcium with symptoms.",
+      difficulty: "moderate",
+    },
+    {
+      id: "endocrine-vitamin-d-calcium-q5",
+      stem: "A 3-year-old child from an urban slum has bow legs, a rachitic rosary and widened wrists. Serum calcium is 7.8 mg/dL, phosphate 2.6 mg/dL, alkaline phosphatase 890 IU/L and 25-hydroxyvitamin D is 9 ng/mL. Which treatment is correct?",
+      options: [
+        "Cholecalciferol alone, since calcium intake is adequate in all Indian diets",
+        "Calcitriol 0.25 mcg twice daily as the drug of choice",
+        "Cholecalciferol 60,000 IU weekly for 6 weeks together with elemental calcium 500 mg daily",
+        "Intramuscular vitamin D 6 lakh IU repeated monthly for six months",
+      ],
+      answer: 2,
+      explanation:
+        "Nutritional rickets in India is usually a combined calcium and vitamin D deficiency, so treatment requires both cholecalciferol and elemental calcium, followed by maintenance vitamin D and dietary counselling. Vitamin D alone frequently fails to heal Indian nutritional rickets because dietary calcium averages only 300-500 mg a day. Calcitriol bypasses the storage pool, does not replenish it, and risks hypercalcaemia; it is reserved for renal disease and vitamin D-dependent rickets. Repeated 6 lakh IU injections are a recognised cause of vitamin D toxicity with hypercalcaemia and nephrocalcinosis.",
+      difficulty: "moderate",
+    },
+    {
+      id: "endocrine-vitamin-d-calcium-q6",
+      stem: "A 62-year-old woman on long-term omeprazole for reflux needs calcium supplementation for osteoporosis. Which preparation is most appropriate and why?",
+      options: [
+        "Calcium carbonate, because it contains the highest percentage of elemental calcium",
+        "Calcium citrate, because its absorption does not depend on gastric acid",
+        "Calcium gluconate tablets, because they are best tolerated",
+        "Calcium lactate, because it is unaffected by dietary phytate",
+      ],
+      answer: 1,
+      explanation:
+        "Calcium carbonate requires gastric acid for dissolution, so a proton pump inhibitor substantially reduces its absorption; calcium citrate is absorbed independently of acid and is the correct choice in achlorhydria, on acid suppression and after bariatric surgery. Carbonate does contain the most elemental calcium at 40%, but that is irrelevant if it cannot be dissolved. Calcium gluconate tablets contain very little elemental calcium and are impractical orally. Calcium lactate is also acid dependent and phytate affects all salts similarly.",
+      difficulty: "easy",
+    },
+    {
+      id: "endocrine-vitamin-d-calcium-q7",
+      stem: "A 68-year-old woman with a T-score of -3.1 and a 25-hydroxyvitamin D of 12 ng/mL is due to receive zoledronic acid. What must be done first?",
+      options: [
+        "Nothing; bisphosphonates can be given regardless of vitamin D status",
+        "Correct the vitamin D deficiency and confirm a normal serum calcium before infusion",
+        "Give a loop diuretic to protect the kidneys before infusion",
+        "Start calcitriol 0.5 mcg twice daily indefinitely",
+      ],
+      answer: 1,
+      explanation:
+        "A potent intravenous bisphosphonate given to a vitamin D deficient patient causes severe symptomatic hypocalcaemia, so deficiency must be corrected and calcium confirmed normal before the infusion. Ignoring vitamin D status is precisely the error that produces post-infusion tetany. A loop diuretic lowers calcium further and increases the risk. Calcitriol is not the correct replacement for simple nutritional deficiency and would not replenish stores.",
+      difficulty: "moderate",
+    },
+  ],
+  cards: [
+    {
+      id: "endocrine-vitamin-d-calcium-c1",
+      front: "Vitamin D cut-offs on serum 25(OH)D",
+      back: "Deficiency below 20 ng/mL; insufficiency 20-29; sufficiency 30-100; toxicity above 150 ng/mL with hypercalcaemia.",
+    },
+    {
+      id: "endocrine-vitamin-d-calcium-c2",
+      front: "Standard adult treatment regimen for vitamin D deficiency",
+      back: "Cholecalciferol 60,000 IU weekly for 8 weeks with a fatty meal, then 60,000 IU monthly or 1000-2000 IU daily, plus elemental calcium 500 mg twice daily.",
+    },
+    {
+      id: "endocrine-vitamin-d-calcium-c3",
+      front: "Which vitamin D metabolite to measure, and why",
+      back: "25-hydroxyvitamin D, because it has a 2-3 week half-life and reflects stores; the 1,25 form is often normal or high in deficiency due to secondary hyperparathyroidism.",
+    },
+    {
+      id: "endocrine-vitamin-d-calcium-c4",
+      front: "Albumin correction of serum calcium",
+      back: "Corrected calcium = measured calcium + 0.8 x (4.0 - serum albumin in g/dL).",
+    },
+    {
+      id: "endocrine-vitamin-d-calcium-c5",
+      front: "Chvostek versus Trousseau sign",
+      back: "Chvostek is facial twitch on tapping the facial nerve, positive in up to 25% of normals. Trousseau is carpal spasm within 3 minutes of cuff inflation and is far more specific.",
+    },
+    {
+      id: "endocrine-vitamin-d-calcium-c6",
+      front: "Acute symptomatic hypocalcaemia dose",
+      back: "10 mL of 10% calcium gluconate (about 90 mg elemental calcium) in 50-100 mL of 5% dextrose IV over 10 minutes with cardiac monitoring, then an infusion.",
+    },
+    {
+      id: "endocrine-vitamin-d-calcium-c7",
+      front: "Refractory hypocalcaemia - what have you forgotten?",
+      back: "Magnesium. Hypomagnesaemia impairs parathyroid hormone secretion and its action; calcium will not correct until magnesium is replaced.",
+    },
+    {
+      id: "endocrine-vitamin-d-calcium-c8",
+      front: "Biochemistry of osteomalacia",
+      back: "Low or low-normal calcium, low phosphate, high alkaline phosphatase, high parathyroid hormone, low 25(OH)D.",
+    },
+    {
+      id: "endocrine-vitamin-d-calcium-c9",
+      front: "Biochemistry of primary hyperparathyroidism",
+      back: "High calcium, low phosphate, high or inappropriately normal parathyroid hormone; alkaline phosphatase raised when bone disease is present.",
+    },
+    {
+      id: "endocrine-vitamin-d-calcium-c10",
+      front: "Familial hypocalciuric hypercalcaemia - how to spot it",
+      back: "Hypercalcaemia with a raised parathyroid hormone but a low urinary calcium and a calcium-creatinine clearance ratio below 0.01; autosomal dominant, benign, needs no surgery.",
+    },
+    {
+      id: "endocrine-vitamin-d-calcium-c11",
+      front: "Acute severe hypercalcaemia management",
+      back: "Intravenous normal saline 200-300 mL/hour, zoledronic acid 4 mg IV, calcitonin for rapid short-term effect, steroids for sarcoid, lymphoma or vitamin D toxicity; stop thiazides, lithium, calcium and vitamin D.",
+    },
+    {
+      id: "endocrine-vitamin-d-calcium-c12",
+      front: "ICMR calcium requirement versus actual Indian intake",
+      back: "Recommended 1000 mg daily for adults (1000-1200 mg in pregnancy and lactation); actual intake averages only 300-500 mg a day.",
+    },
+    {
+      id: "endocrine-vitamin-d-calcium-c13",
+      front: "Calcium carbonate versus calcium citrate",
+      back: "Carbonate is 40% elemental and needs food and gastric acid; citrate is 21% elemental and is absorbed without acid, so it is used on a proton pump inhibitor or after bariatric surgery.",
+    },
+    {
+      id: "endocrine-vitamin-d-calcium-c14",
+      front: "Radiological signs of rickets and osteomalacia",
+      back: "Rickets: metaphyseal cupping, splaying and fraying with a widened growth plate at wrist and knee. Osteomalacia: Looser zones (pseudofractures) in pubic rami, femoral neck, ribs and scapula.",
+    },
+  ],
+  references: [
+    "Indian Council of Medical Research - National Institute of Nutrition, Nutrient Requirements for Indians (RDA and EAR), 2020",
+    "Indian Academy of Paediatrics revised guidelines on prevention and treatment of vitamin D and calcium deficiency, 2017",
+    "Endocrine Society Clinical Practice Guideline, Evaluation, Treatment and Prevention of Vitamin D Deficiency, 2011 and 2024 update",
+    "Fourth International Workshop on the Management of Asymptomatic Primary Hyperparathyroidism, 2014",
+    "Ministry of Health and Family Welfare, Anaemia Mukt Bharat and antenatal calcium supplementation guidelines",
+    "Harrison's Principles of Internal Medicine, 21st edition, 2022 - disorders of bone and mineral metabolism",
+  ],
+});
+
+topics.push({
+  id: "endocrine-adrenal-disorders",
+  title: "Adrenal disease: Cushing syndrome and adrenal insufficiency",
+  oneLiner:
+    "Cushing syndrome is glucocorticoid excess - overwhelmingly iatrogenic in Indian practice - screened for with an overnight 1 mg dexamethasone suppression test, late-night salivary cortisol or 24-hour urinary free cortisol, while adrenal insufficiency presents with fatigue, weight loss, postural hypotension and hyperpigmentation, is confirmed by an 8 am cortisol with ACTH, and is treated for life with hydrocortisone plus fludrocortisone and strict sick-day rules.",
+  frequency: "uncommon",
+  keywords: [
+    "Cushing syndrome",
+    "Cushing disease",
+    "dexamethasone suppression test",
+    "late-night salivary cortisol",
+    "urinary free cortisol",
+    "iatrogenic steroid",
+    "Addison disease",
+    "adrenal insufficiency",
+    "adrenal crisis",
+    "hydrocortisone",
+    "fludrocortisone",
+    "short synacthen test",
+    "ACTH",
+    "adrenal tuberculosis",
+    "hyperpigmentation",
+    "phaeochromocytoma",
+    "metanephrines",
+    "Conn syndrome",
+    "primary aldosteronism",
+    "adrenal incidentaloma",
+    "congenital adrenal hyperplasia",
+    "steroid card",
+  ],
+  sections: [
+    {
+      heading: "Cushing syndrome: recognising it",
+      points: [
+        "**By far the commonest cause in India is exogenous corticosteroid** - oral prednisolone for asthma or arthritis, intra-articular and depot injections from unqualified practitioners, potent topical steroids used for months on tinea, steroid-containing skin-lightening creams, steroid nasal sprays and Ayurvedic or 'herbal' preparations adulterated with steroid. Ask about all of these by name, because patients do not consider them medicines.",
+        "The **discriminatory features** that separate Cushing syndrome from simple obesity are **proximal myopathy** (difficulty rising from a chair without arms), **wide purple striae over 1 cm**, **easy bruising and thin skin**, **facial plethora** and **unexplained osteoporotic fracture** - not weight gain, hypertension or diabetes, which are far too common to discriminate.",
+        "Other features: central obesity with thin limbs, moon face, interscapular and supraclavicular fat pads, hirsutism and acne, oligomenorrhoea, poor wound healing, recurrent infection, depression or frank psychosis, insomnia and cataract.",
+        "**In children, growth arrest with continued weight gain** is the single most reliable sign - a child growing normally almost never has Cushing syndrome.",
+        "**Rapid onset with severe hypokalaemia, marked pigmentation, oedema and profound myopathy but few of the classic body changes** suggests ectopic ACTH from a small cell lung carcinoma or a carcinoid, where the cortisol is extremely high and the time course too short for the physical stigmata to develop.",
+        "Complications that make it dangerous: **diabetes, hypertension, osteoporosis with vertebral fracture, venous thromboembolism, opportunistic infection and reactivation of tuberculosis** - the last being a specific concern in India before or during any steroid treatment.",
+      ],
+    },
+    {
+      heading: "Confirming and localising Cushing syndrome",
+      points: [
+        "**Step one is always to exclude exogenous steroid** by history. If it is present, no biochemical test is needed - the plasma ACTH and cortisol will both be suppressed, and the treatment is a supervised taper, not an endocrine work-up.",
+        "**Three accepted screening tests**, of which at least two should be abnormal before a diagnosis is accepted: the **overnight 1 mg dexamethasone suppression test** (1 mg at 11 pm, serum cortisol at 8 am; failure to suppress below 1.8 mcg/dL is abnormal), **late-night salivary cortisol** on two separate nights, and **24-hour urinary free cortisol** on two collections.",
+        "**False positives are common**: depression, alcohol dependence, poorly controlled diabetes, obesity, severe illness, shift work, oestrogen-containing pills which raise cortisol-binding globulin, and enzyme-inducing drugs such as phenytoin, carbamazepine and rifampicin which accelerate dexamethasone metabolism. These constitute pseudo-Cushing states.",
+        "**Once cortisol excess is confirmed, measure plasma ACTH** at 8-9 am. A **suppressed ACTH below 5 pg/mL indicates an adrenal source** - go to CT of the adrenals. A **normal or raised ACTH indicates an ACTH-dependent cause** - pituitary Cushing disease (about 70% of endogenous cases) or ectopic ACTH.",
+        "Distinguish pituitary from ectopic disease with a **high-dose (8 mg) dexamethasone suppression test** (pituitary adenomas usually suppress, ectopic sources usually do not), a **pituitary MRI**, and where doubt persists, **bilateral inferior petrosal sinus sampling**, which is the gold standard and is available in a few tertiary centres.",
+        "**Treatment is by cause:** transsphenoidal adenomectomy for Cushing disease, adrenalectomy for an adrenal adenoma or carcinoma, resection of the ectopic source, and medical control with **ketoconazole, metyrapone or osilodrostat** while awaiting surgery. Post-operative adrenal insufficiency is expected and needs hydrocortisone cover with a written card.",
+        "**Iatrogenic Cushing syndrome** is managed by tapering to the lowest effective dose and switching to steroid-sparing agents, never by stopping abruptly; the suppressed axis takes 6-12 months or more to recover and the patient needs sick-day rules throughout.",
+      ],
+    },
+    {
+      heading: "Adrenal insufficiency: presentation",
+      points: [
+        "**Primary adrenal insufficiency (Addison disease)** is destruction of the adrenal cortex: fatigue, anorexia, weight loss, nausea and vomiting, abdominal pain, salt craving, postural dizziness, myalgia and low mood, developing over months and repeatedly mistaken for depression, tuberculosis or malignancy.",
+        "**Hyperpigmentation is the specific sign** and occurs only in primary disease, where the high ACTH stimulates melanocytes: it is most obvious in palmar creases, knuckles, elbows, scars, the buccal mucosa and gums, areolae and areas of pressure or friction. Its absence does not exclude the disease when onset is rapid.",
+        "**Biochemistry is a strong clue**: hyponatraemia (about 90%), hyperkalaemia (about 50%, present only in primary disease because mineralocorticoid is also lost), mild hypercalcaemia, hypoglycaemia especially in children, a normal anion gap acidosis, and eosinophilia with lymphocytosis.",
+        "**In India tuberculosis remains a leading cause** of primary adrenal insufficiency alongside autoimmune adrenalitis; adrenal calcification on imaging supports tuberculous destruction. Other causes are adrenal haemorrhage (meningococcaemia, anticoagulants, antiphospholipid syndrome), HIV with opportunistic infection, histoplasmosis, metastases, lymphoma, adrenoleukodystrophy and bilateral adrenalectomy.",
+        "**Autoimmune Addison disease** often accompanies other autoimmune disease - type 1 diabetes, autoimmune thyroid disease, vitiligo, pernicious anaemia, premature ovarian insufficiency - as autoimmune polyglandular syndrome types 1 and 2, so screen for the others.",
+        "**Secondary adrenal insufficiency** results from pituitary disease or, far more often, **from abrupt withdrawal of exogenous glucocorticoid**: there is no hyperpigmentation, potassium is normal because aldosterone is intact, and mineralocorticoid replacement is not needed.",
+        "**Any patient who has had prednisolone above 5 mg daily (or equivalent) for more than 3-4 weeks** should be regarded as having a suppressed axis; suspect it also with repeated intra-articular or intramuscular depot injections and with potent topical or inhaled steroids in high dose.",
+      ],
+    },
+    {
+      heading: "Confirming and treating adrenal insufficiency",
+      points: [
+        "**Send an 8-9 am serum cortisol with a paired plasma ACTH.** A morning cortisol **below 3 mcg/dL is diagnostic** of insufficiency, **above 15-18 mcg/dL effectively excludes** it, and values in between need a stimulation test.",
+        "**The short synacthen (ACTH stimulation) test** is the confirmatory investigation: 250 mcg of tetracosactide intramuscularly or intravenously with cortisol measured at 0, 30 and 60 minutes; a **peak below 18 mcg/dL confirms adrenal insufficiency**. A high ACTH with a low cortisol localises the problem to the adrenal; a low or normal ACTH indicates a pituitary or hypothalamic cause needing pituitary MRI and assessment of the other axes.",
+        "Look for the cause: **anti-21-hydroxylase antibodies** for autoimmune disease, a **CT of the adrenals** for enlargement, calcification or masses, chest radiograph and evaluation for tuberculosis, HIV testing, and very long chain fatty acids in a young male with neurological signs.",
+        "**Maintenance replacement: hydrocortisone 15-25 mg a day in two or three divided doses**, weighted to the morning to mimic the diurnal rhythm - typically 10 mg on waking, 5 mg at midday and 2.5-5 mg in the mid-afternoon. Prednisolone 3-5 mg once daily is an acceptable alternative where adherence or cost favours it. Dexamethasone is avoided because it cannot be titrated and readily overtreats.",
+        "**Primary disease also needs fludrocortisone 50-200 mcg once daily** for mineralocorticoid replacement, titrated against postural blood pressure, serum potassium and plasma renin activity; it is not required in secondary insufficiency. Salt is not restricted.",
+        "**There is no blood test to monitor replacement.** Titrate clinically against energy, weight, appetite, postural blood pressure, potassium and the absence of cushingoid features - a cortisol level taken during treatment is uninterpretable.",
+        "**Adjust the dose for interacting drugs**: rifampicin, phenytoin and carbamazepine induce cortisol metabolism and roughly double the requirement, an important point when treating tuberculosis in a patient with Addison disease.",
+        "**DHEA 25-50 mg daily** may be considered for persistent fatigue and low libido in women, but is optional and not available everywhere.",
+      ],
+    },
+    {
+      heading: "Adrenal crisis and sick-day rules",
+      points: [
+        "**Adrenal crisis is hypotensive shock unresponsive to fluids and inotropes**, with vomiting, abdominal pain that can mimic an acute abdomen, fever, confusion, hyponatraemia, hyperkalaemia and hypoglycaemia. It is precipitated by infection, gastroenteritis, surgery, trauma, missed doses or vomited tablets.",
+        "**Treat before you confirm.** Give **hydrocortisone 100 mg intravenously or intramuscularly immediately**, then 50 mg 6-hourly or 200 mg over 24 hours by infusion, with **rapid intravenous normal saline 1 litre in the first hour** and 5% dextrose for hypoglycaemia. Save a sample for cortisol and ACTH before the first dose if this causes no delay - but never delay the steroid for it.",
+        "**At this dose hydrocortisone provides sufficient mineralocorticoid effect**, so fludrocortisone is not needed until the dose falls below about 50 mg a day.",
+        "Treat the precipitant with antibiotics or antivirals as appropriate, correct electrolytes with fluid rather than with insulin-dextrose in the first instance, and monitor sodium correction so that hyponatraemia is not corrected too rapidly.",
+        "**Sick-day rule 1 - double the dose** of oral hydrocortisone for a fever above 38 C, an intercurrent infection needing antibiotics, or a minor procedure, and continue until 24 hours after recovery.",
+        "**Sick-day rule 2 - go parenteral** when vomiting or diarrhoea prevents oral absorption: 100 mg of hydrocortisone intramuscularly and attend hospital. Every patient must be issued an emergency injection kit and taught, with a family member, how to use it.",
+        "**Every patient carries a steroid emergency card and preferably wears a medical alert bracelet**, and the diagnosis must be told to every doctor and dentist. Surgical cover: 100 mg of hydrocortisone at induction with 200 mg over 24 hours for major surgery, and a single 100 mg dose for minor procedures.",
+        "**Never stop long-term steroids abruptly** in any patient, and always taper - the same crisis follows abrupt withdrawal in a patient who has never had adrenal disease.",
+      ],
+    },
+    {
+      heading: "The rest of the adrenal tail",
+      points: [
+        "**Phaeochromocytoma** is the great mimic: episodic headache, palpitation and sweating with paroxysmal or sustained hypertension, pallor, tremor and anxiety, sometimes provoked by micturition in a bladder paraganglioma. Screen with **plasma free metanephrines or 24-hour urinary fractionated metanephrines**, not with catecholamines, then image with CT or MRI and MIBG.",
+        "**Alpha blockade must precede beta blockade** in phaeochromocytoma - phenoxybenzamine or prazosin for 10-14 days with liberal salt and fluid, adding a beta-blocker only afterwards for tachycardia. A beta-blocker given first causes unopposed alpha stimulation and a hypertensive crisis. Up to a third are familial (MEN2, von Hippel-Lindau, neurofibromatosis type 1, SDH mutations) so offer genetic assessment.",
+        "**Primary aldosteronism (Conn syndrome)** is the commonest secondary cause of hypertension and is under-diagnosed: suspect it with resistant hypertension, spontaneous or diuretic-induced hypokalaemia, an adrenal incidentaloma or hypertension in the young. Screen with the **aldosterone-renin ratio**, having controlled the confounding effect of drugs, and treat with spironolactone or eplerenone medically, or adrenalectomy for a unilateral adenoma after adrenal vein sampling.",
+        "**Adrenal incidentaloma** - a mass found on imaging done for another reason - needs two questions answered: is it functioning (1 mg overnight dexamethasone suppression test, plasma metanephrines, and an aldosterone-renin ratio if hypertensive) and is it malignant (size above 4 cm, irregular margins and unenhanced attenuation above 10 Hounsfield units are suspicious). Non-functioning benign lesions under 4 cm are followed rather than removed.",
+        "**Congenital adrenal hyperplasia**, most often 21-hydroxylase deficiency, presents in the newborn with ambiguous genitalia in a female infant or a salt-wasting crisis in the second week of life with vomiting, hyponatraemia and hyperkalaemia, and in later childhood with virilisation and rapid growth with advanced bone age. Diagnosis rests on a raised **17-hydroxyprogesterone**, and treatment is hydrocortisone with fludrocortisone.",
+        "**Steroid-induced adrenal suppression is the commonest adrenal disorder a family physician will actually manage** - far more common than all the primary adrenal diseases put together - so the practical skills that matter are safe tapering, sick-day rules and the steroid card.",
+      ],
+    },
+  ],
+  tables: [
+    {
+      heading: "Primary versus secondary adrenal insufficiency",
+      columns: ["Feature", "Primary (Addison disease)", "Secondary (pituitary or steroid withdrawal)"],
+      rows: [
+        ["Site of the lesion", "Adrenal cortex", "Pituitary or hypothalamus, or exogenous steroid"],
+        ["Plasma ACTH", "High", "Low or inappropriately normal"],
+        ["Hyperpigmentation", "Present", "Absent"],
+        ["Serum potassium", "High (aldosterone lost)", "Normal (aldosterone preserved)"],
+        ["Serum sodium", "Low", "Low (dilutional, from cortisol lack)"],
+        ["Mineralocorticoid replacement", "Fludrocortisone 50-200 mcg daily required", "Not required"],
+        ["Common Indian causes", "Tuberculosis, autoimmune adrenalitis, HIV, haemorrhage", "Abrupt steroid withdrawal, pituitary tumour or surgery, Sheehan syndrome"],
+      ],
+    },
+    {
+      heading: "Screening tests for Cushing syndrome",
+      columns: ["Test", "How it is done", "Abnormal result", "Main pitfall"],
+      rows: [
+        ["Overnight 1 mg dexamethasone suppression", "1 mg at 11 pm, serum cortisol at 8 am", "Cortisol above 1.8 mcg/dL", "False positive with oestrogen pill, phenytoin, rifampicin, depression, alcohol"],
+        ["Late-night salivary cortisol", "Sample at 11 pm on two separate nights", "Raised on both nights", "Invalid in shift workers and with recent smoking or eating"],
+        ["24-hour urinary free cortisol", "Two complete collections", "More than three times the upper limit", "Incomplete collection; unreliable if eGFR is below 60"],
+        ["Plasma ACTH (for localisation, not screening)", "8-9 am sample after cortisol excess is confirmed", "Below 5 pg/mL means adrenal source", "Sample must be transported on ice and processed promptly"],
+      ],
+    },
+    {
+      heading: "Steroid replacement and stress dosing",
+      columns: ["Situation", "Hydrocortisone dose", "Notes"],
+      rows: [
+        ["Maintenance", "15-25 mg daily in 2-3 divided doses, morning weighted", "Add fludrocortisone 50-200 mcg daily in primary disease only"],
+        ["Fever above 38 C or infection on antibiotics", "Double the usual oral dose", "Continue until 24 hours after recovery"],
+        ["Vomiting or diarrhoea", "100 mg intramuscularly, then attend hospital", "Oral tablets cannot be relied upon; emergency kit is mandatory"],
+        ["Minor surgery or dental extraction", "100 mg at induction, usual dose next day", "No taper needed for a single dose"],
+        ["Major surgery or trauma", "100 mg at induction then 200 mg over 24 hours", "Halve daily until maintenance is reached"],
+        ["Adrenal crisis", "100 mg IV or IM stat, then 50 mg 6-hourly", "With 1 litre of normal saline in the first hour and dextrose for hypoglycaemia"],
+      ],
+    },
+  ],
+  redFlags: [
+    "Hypotension unresponsive to fluids and inotropes with hyponatraemia and hyperkalaemia in a patient on or recently off steroids - give hydrocortisone 100 mg immediately, before any confirmatory test.",
+    "Vomiting or diarrhoea in a patient on replacement steroid - oral tablets are not absorbed, so give parenteral hydrocortisone and admit rather than sending home with an antiemetic.",
+    "Abdominal pain with fever and shock in a known Addison patient - adrenal crisis can mimic an acute abdomen, and laparotomy without steroid cover is lethal.",
+    "Growth arrest with continuing weight gain in a child - Cushing syndrome or exogenous steroid, and needs endocrine referral rather than dietary advice.",
+    "New severe hypokalaemia with hypertension, oedema and profound proximal weakness developing over weeks in a smoker - suspect ectopic ACTH from a small cell lung carcinoma.",
+    "Paroxysms of headache, palpitation and sweating with labile hypertension - screen for phaeochromocytoma and never start a beta-blocker before alpha blockade.",
+    "Any patient stopping prednisolone above 5 mg daily after more than 3-4 weeks without a taper - the axis is suppressed and crisis can follow.",
+    "An adrenal mass larger than 4 cm with irregular margins and unenhanced attenuation above 10 Hounsfield units - refer for surgical assessment for adrenocortical carcinoma.",
+  ],
+  pearls: [
+    "In India, ask about steroid-containing skin creams, unlabelled 'herbal' powders and depot injections from unqualified practitioners - iatrogenic Cushing syndrome outnumbers every endogenous cause many times over.",
+    "The discriminatory features of Cushing syndrome are proximal myopathy, purple striae wider than 1 cm, easy bruising and facial plethora; obesity, hypertension and diabetes are far too common to be of any use.",
+    "Hyperpigmentation means primary adrenal insufficiency; there is no pigmentation in secondary disease because ACTH is low.",
+    "Hyperkalaemia distinguishes primary from secondary insufficiency, because only primary disease loses aldosterone - and only primary disease needs fludrocortisone.",
+    "In adrenal crisis, treat first and test later: draw the sample if it costs no time, but the hydrocortisone must not wait for the cortisol result.",
+    "At 100 mg a day, hydrocortisone provides enough mineralocorticoid effect that fludrocortisone can be omitted until the dose falls below about 50 mg.",
+    "Rifampicin, phenytoin and carbamazepine roughly double the hydrocortisone requirement - a trap when starting antitubercular treatment in an Addison patient.",
+    "Alpha blockade always precedes beta blockade in phaeochromocytoma; the reverse order produces unopposed alpha stimulation and a hypertensive crisis.",
+    "There is no laboratory test to titrate steroid replacement - judge it by weight, energy, appetite, postural blood pressure and potassium.",
+  ],
+  theory: [
+    {
+      id: "endocrine-adrenal-disorders-t1",
+      paper: "II",
+      kind: "long",
+      marks: 10,
+      minutes: 18,
+      frequency: "uncommon",
+      question:
+        "A 40-year-old woman presents with fatigue, weight loss of 8 kg, giddiness on standing and darkening of the skin over 8 months. Blood pressure is 88/60 mmHg, sodium 126 mmol/L and potassium 5.8 mmol/L. Discuss the diagnosis, causes, investigations and management including the emergency treatment of an acute deterioration.",
+      openingLines: [
+        "Weight loss, postural hypotension and hyperpigmentation with hyponatraemia and hyperkalaemia is the classic presentation of primary adrenal insufficiency, or Addison disease, in which destruction of the adrenal cortex causes deficiency of both cortisol and aldosterone.",
+        "The hyperpigmentation and the hyperkalaemia together localise the lesion to the adrenal gland rather than the pituitary, since only primary disease raises ACTH and only primary disease loses mineralocorticoid.",
+      ],
+      answer: [
+        {
+          heading: "1. Causes in Indian practice",
+          points: [
+            "Infective: tuberculosis, which remains a leading cause in India and often leaves adrenal calcification; also histoplasmosis, HIV with opportunistic infection, and disseminated fungal infection.",
+            "Autoimmune adrenalitis with anti-21-hydroxylase antibodies, often as part of autoimmune polyglandular syndrome with thyroid disease, type 1 diabetes, vitiligo or pernicious anaemia.",
+            "Vascular: bilateral adrenal haemorrhage in meningococcaemia (Waterhouse-Friderichsen syndrome), anticoagulation or antiphospholipid syndrome.",
+            "Infiltrative and neoplastic: metastases, lymphoma, amyloidosis, and adrenoleukodystrophy in young males.",
+            "Iatrogenic: bilateral adrenalectomy, or drugs such as ketoconazole, etomidate and mitotane.",
+          ],
+        },
+        {
+          heading: "2. Clinical assessment",
+          points: [
+            "Symptoms: fatigue, anorexia, weight loss, nausea, vomiting, abdominal pain, salt craving, muscle and joint pain, low mood and dizziness on standing.",
+            "Signs: hyperpigmentation of palmar creases, knuckles, scars, buccal mucosa and areolae, postural hypotension, weight loss, loss of axillary and pubic hair in women, and vitiligo if autoimmune.",
+            "Look for the cause: cough, fever and night sweats for tuberculosis, other autoimmune disease, HIV risk, and anticoagulant use.",
+            "Assess severity: postural blood pressure drop, dehydration, confusion and any features suggesting impending crisis.",
+          ],
+        },
+        {
+          heading: "3. Investigations",
+          points: [
+            "Serum electrolytes: hyponatraemia in about 90%, hyperkalaemia in about half, mild hypercalcaemia, hypoglycaemia, and eosinophilia with lymphocytosis on the blood count.",
+            "8-9 am serum cortisol with a paired plasma ACTH: cortisol below 3 mcg/dL is diagnostic, above 15-18 mcg/dL excludes it, and a high ACTH confirms a primary adrenal cause.",
+            "Short synacthen test where the morning cortisol is equivocal: 250 mcg tetracosactide with cortisol at 0, 30 and 60 minutes; a peak below 18 mcg/dL confirms insufficiency.",
+            "Aetiological tests: anti-21-hydroxylase antibodies, CT of the adrenals for enlargement or calcification, chest radiograph and sputum or tissue evaluation for tuberculosis, HIV test, and thyroid function with fasting glucose to screen for polyglandular disease.",
+          ],
+        },
+        {
+          heading: "4. Long-term management",
+          points: [
+            "Hydrocortisone 15-25 mg daily in divided doses weighted to the morning - typically 10 mg on waking, 5 mg at midday and 2.5-5 mg mid-afternoon; prednisolone 3-5 mg daily is an alternative.",
+            "Fludrocortisone 50-200 mcg once daily, titrated against postural blood pressure, serum potassium and plasma renin; no salt restriction.",
+            "Treat the underlying cause - a full course of antitubercular treatment where indicated, remembering that rifampicin roughly doubles the hydrocortisone requirement.",
+            "Monitor clinically: weight, energy, appetite, postural blood pressure, sodium and potassium; there is no cortisol level that can be used to titrate the dose.",
+            "Educate the patient and a family member, issue a steroid emergency card and a medical alert bracelet, and supply an emergency hydrocortisone injection kit with training in its use.",
+          ],
+        },
+        {
+          heading: "5. Sick-day rules and adrenal crisis",
+          points: [
+            "Double the oral dose for fever above 38 C or any infection needing antibiotics, continuing until 24 hours after recovery.",
+            "For vomiting or diarrhoea, give 100 mg of hydrocortisone intramuscularly and attend hospital, since oral absorption cannot be relied upon.",
+            "Surgical cover: 100 mg at induction for minor procedures; 100 mg at induction with 200 mg over 24 hours for major surgery, halving daily to maintenance.",
+            "Adrenal crisis: hydrocortisone 100 mg intravenously or intramuscularly at once followed by 50 mg 6-hourly, 1 litre of normal saline in the first hour with further fluid by response, 5% dextrose for hypoglycaemia, and treatment of the precipitant. Take a sample for cortisol and ACTH only if it causes no delay.",
+            "Fludrocortisone is unnecessary while hydrocortisone is above about 50 mg a day, as it then provides adequate mineralocorticoid effect.",
+          ],
+        },
+      ],
+      mustDraw: [
+        "Table comparing primary and secondary adrenal insufficiency on ACTH, pigmentation, potassium and the need for fludrocortisone.",
+        "Flow chart: suspicion - 8 am cortisol with ACTH - equivocal leads to short synacthen test - confirmed leads to aetiological work-up - replacement with sick-day rules.",
+      ],
+      markSplit: [
+        { part: "Diagnosis with reasoning from the biochemistry", marks: 1 },
+        { part: "Causes relevant to India", marks: 2 },
+        { part: "Clinical features and examination", marks: 1.5 },
+        { part: "Investigations including the synacthen test", marks: 2 },
+        { part: "Replacement therapy with doses", marks: 1.5 },
+        { part: "Sick-day rules and crisis management", marks: 2 },
+      ],
+      keywords: ["Addison disease", "short synacthen test", "hydrocortisone", "fludrocortisone", "adrenal crisis"],
+    },
+    {
+      id: "endocrine-adrenal-disorders-t2",
+      paper: "II",
+      kind: "short-note",
+      marks: 5,
+      minutes: 9,
+      frequency: "uncommon",
+      question: "Write short notes on Cushing syndrome: causes, clinical features and the approach to diagnosis.",
+      openingLines: [
+        "Cushing syndrome is the clinical state resulting from chronic exposure to excess glucocorticoid, whatever its source, while Cushing disease refers specifically to the syndrome caused by an ACTH-secreting pituitary adenoma.",
+        "In Indian practice the overwhelming majority of cases are iatrogenic, from prescribed or self-administered corticosteroid including topical, injectable and adulterated herbal preparations.",
+      ],
+      answer: [
+        {
+          heading: "Causes",
+          points: [
+            "Exogenous (commonest): oral, injectable, inhaled, nasal and potent topical corticosteroid, and steroid-adulterated herbal or cosmetic preparations.",
+            "ACTH-dependent endogenous: pituitary adenoma (Cushing disease, about 70% of endogenous cases) and ectopic ACTH from small cell lung carcinoma, bronchial or thymic carcinoid, or medullary thyroid carcinoma.",
+            "ACTH-independent endogenous: adrenal adenoma, adrenal carcinoma, and rarely bilateral macronodular or micronodular adrenal hyperplasia.",
+          ],
+        },
+        {
+          heading: "Clinical features",
+          points: [
+            "Discriminatory: proximal myopathy, purple striae wider than 1 cm, easy bruising with thin skin, facial plethora, and unexplained osteoporotic fracture; in children, growth arrest with weight gain.",
+            "Non-discriminatory but common: central obesity, moon face, buffalo hump, hypertension, diabetes, hirsutism, acne, oligomenorrhoea, depression and poor wound healing.",
+            "Complications: osteoporosis with vertebral fracture, venous thromboembolism, opportunistic infection and reactivation of tuberculosis, cataract and psychosis.",
+          ],
+        },
+        {
+          heading: "Diagnostic approach",
+          points: [
+            "Step 1: exclude exogenous steroid by a detailed drug history covering creams, injections and herbal preparations - if present, no biochemical work-up is needed.",
+            "Step 2: confirm cortisol excess with at least two abnormal screening tests from the overnight 1 mg dexamethasone suppression test (cortisol above 1.8 mcg/dL), late-night salivary cortisol on two nights, and two 24-hour urinary free cortisol collections.",
+            "Step 3: exclude pseudo-Cushing states - depression, alcohol dependence, uncontrolled diabetes, obesity, severe illness, oestrogen therapy and enzyme-inducing drugs.",
+            "Step 4: localise with a 9 am plasma ACTH - suppressed indicates an adrenal source needing adrenal CT; normal or raised indicates ACTH dependence, evaluated with a high-dose dexamethasone suppression test, pituitary MRI and, where doubt remains, inferior petrosal sinus sampling.",
+          ],
+        },
+        {
+          heading: "Principles of treatment",
+          points: [
+            "Iatrogenic: taper to the lowest effective dose, use steroid-sparing agents, never stop abruptly, and provide sick-day rules and a steroid card.",
+            "Cushing disease: transsphenoidal adenomectomy, with radiotherapy or bilateral adrenalectomy for failure.",
+            "Adrenal tumour: adrenalectomy; ectopic ACTH: resection or treatment of the primary tumour.",
+            "Medical control while awaiting surgery with ketoconazole, metyrapone or osilodrostat, and hydrocortisone cover afterwards for the expected adrenal insufficiency.",
+          ],
+        },
+      ],
+      mustDraw: ["Flow chart: clinical suspicion - exclude exogenous steroid - two abnormal screening tests - plasma ACTH - suppressed goes to adrenal CT, raised goes to pituitary MRI and high-dose suppression."],
+      markSplit: [
+        { part: "Definition and causes", marks: 1.5 },
+        { part: "Discriminatory clinical features", marks: 1.5 },
+        { part: "Screening and confirmatory tests", marks: 1.5 },
+        { part: "Localisation and treatment principles", marks: 0.5 },
+      ],
+      keywords: ["Cushing syndrome", "dexamethasone suppression", "iatrogenic steroid", "ACTH", "proximal myopathy"],
+    },
+  ],
+  mcqs: [
+    {
+      id: "endocrine-adrenal-disorders-q1",
+      stem: "A 32-year-old woman using an unlabelled skin-lightening cream for two years has moon face, purple abdominal striae, proximal myopathy and new hypertension. Serum cortisol at 8 am is 1.8 mcg/dL and plasma ACTH is undetectable. What is the diagnosis?",
+      options: [
+        "Cushing disease from a pituitary adenoma",
+        "Adrenal adenoma secreting cortisol",
+        "Exogenous (iatrogenic) Cushing syndrome from a steroid-containing cream",
+        "Ectopic ACTH syndrome",
+      ],
+      answer: 2,
+      explanation:
+        "Cushingoid features with a low cortisol and an undetectable ACTH mean the glucocorticoid is coming from outside the body and has suppressed the whole axis, which is exactly what a steroid-adulterated cosmetic cream does; the treatment is a supervised taper with sick-day rules, not an endocrine work-up. Cushing disease would show a raised or normal ACTH with a high cortisol. An adrenal adenoma suppresses ACTH but raises cortisol, not lowers it. Ectopic ACTH produces very high levels of both ACTH and cortisol.",
+      difficulty: "moderate",
+    },
+    {
+      id: "endocrine-adrenal-disorders-q2",
+      stem: "A 45-year-old man with known Addison disease on hydrocortisone presents with 12 hours of vomiting, blood pressure 78/50 mmHg, sodium 124 mmol/L, potassium 6.1 mmol/L and glucose 52 mg/dL. What is the first action?",
+      options: [
+        "Send serum cortisol and ACTH and start treatment once the results return",
+        "Give hydrocortisone 100 mg intravenously immediately with intravenous normal saline and dextrose",
+        "Give calcium gluconate and insulin-dextrose for the hyperkalaemia before any steroid",
+        "Double his oral hydrocortisone dose and observe for 6 hours",
+      ],
+      answer: 1,
+      explanation:
+        "This is an adrenal crisis, in which hydrocortisone 100 mg intravenously with rapid saline and dextrose must be given at once - a sample may be drawn first only if it causes no delay. Waiting for cortisol results is the classic fatal error. The hyperkalaemia of adrenal crisis is driven by mineralocorticoid deficiency and volume depletion and corrects with steroid and fluid; treating it first delays the definitive therapy. Doubling the oral dose is useless in a vomiting patient because tablets are not absorbed.",
+      difficulty: "easy",
+    },
+    {
+      id: "endocrine-adrenal-disorders-q3",
+      stem: "A patient has an 8 am cortisol of 9 mcg/dL, which is equivocal. A short synacthen test is performed with 250 mcg tetracosactide. Which result confirms adrenal insufficiency?",
+      options: [
+        "Peak cortisol below 18 mcg/dL at 30 or 60 minutes",
+        "Peak cortisol above 25 mcg/dL at 60 minutes",
+        "A doubling of the baseline cortisol regardless of the peak",
+        "A rise in plasma ACTH after stimulation",
+      ],
+      answer: 0,
+      explanation:
+        "A peak cortisol below 18 mcg/dL after 250 mcg of tetracosactide confirms adrenal insufficiency, since a healthy adrenal cortex responds briskly to a supraphysiological ACTH stimulus. A peak above 25 mcg/dL is a normal response that excludes the diagnosis. The increment above baseline is unreliable and has been abandoned in favour of the absolute peak. ACTH is not measured during the test - tetracosactide is itself a synthetic ACTH analogue, so its level after injection is meaningless.",
+      difficulty: "moderate",
+    },
+    {
+      id: "endocrine-adrenal-disorders-q4",
+      stem: "A 38-year-old woman with Addison disease is started on antitubercular treatment including rifampicin. What change to her replacement therapy is needed?",
+      options: [
+        "No change; rifampicin does not interact with corticosteroids",
+        "Halve the hydrocortisone dose, since rifampicin potentiates steroid effect",
+        "Approximately double the hydrocortisone dose, since rifampicin induces its metabolism",
+        "Stop hydrocortisone and use dexamethasone alone",
+      ],
+      answer: 2,
+      explanation:
+        "Rifampicin is a potent inducer of hepatic enzymes and roughly doubles the clearance of hydrocortisone, so the replacement dose must be increased by about twofold to prevent a crisis - the same applies to phenytoin and carbamazepine. Claiming no interaction risks an adrenal crisis a few days into treatment. Halving the dose inverts the pharmacology entirely. Dexamethasone is also metabolised by the same pathway and cannot be titrated, so it is not a solution.",
+      difficulty: "hard",
+    },
+    {
+      id: "endocrine-adrenal-disorders-q5",
+      stem: "A 44-year-old man with episodic headache, palpitation and drenching sweats has a blood pressure of 210/120 mmHg during an episode. Plasma free metanephrines are markedly raised and CT shows a 4 cm right adrenal mass. What is the correct preparation for surgery?",
+      options: [
+        "Start atenolol first to control the tachycardia, then add an alpha-blocker",
+        "Start phenoxybenzamine or prazosin with liberal salt and fluid for 10-14 days, adding a beta-blocker only afterwards",
+        "Proceed directly to surgery, since medical preparation delays definitive treatment",
+        "Start amlodipine alone and operate the following day",
+      ],
+      answer: 1,
+      explanation:
+        "In phaeochromocytoma alpha blockade with phenoxybenzamine or prazosin, together with salt and fluid loading to re-expand the contracted plasma volume, is given for 10-14 days before surgery, and a beta-blocker is added only afterwards for reflex tachycardia. Giving a beta-blocker first leaves alpha receptors unopposed and can precipitate a hypertensive crisis. Operating without preparation risks catastrophic intraoperative hypertension and cardiovascular collapse. A calcium channel blocker alone is inadequate preparation and does not address the volume contraction.",
+      difficulty: "moderate",
+    },
+    {
+      id: "endocrine-adrenal-disorders-q6",
+      stem: "Which combination of findings best distinguishes primary from secondary adrenal insufficiency at the bedside and on basic biochemistry?",
+      options: [
+        "Hyperpigmentation with hyperkalaemia indicates primary disease",
+        "Hyponatraemia alone indicates primary disease",
+        "Postural hypotension indicates secondary disease",
+        "Hypoglycaemia occurs only in secondary disease",
+      ],
+      answer: 0,
+      explanation:
+        "Only primary adrenal disease raises ACTH, which drives melanocyte stimulation and produces hyperpigmentation, and only primary disease destroys the zona glomerulosa and so loses aldosterone, producing hyperkalaemia - together these two findings are decisive and also indicate the need for fludrocortisone. Hyponatraemia occurs in both, since cortisol deficiency alone impairs free water excretion. Postural hypotension occurs in both, more markedly in primary disease. Hypoglycaemia results from cortisol deficiency and occurs in both forms, particularly in children.",
+      difficulty: "easy",
+    },
+    {
+      id: "endocrine-adrenal-disorders-q7",
+      stem: "A 25-year-old woman on prednisolone 20 mg daily for 8 months for lupus nephritis wishes to stop it because of weight gain. What is the correct advice?",
+      options: [
+        "She can stop immediately, since the underlying disease is now quiescent",
+        "Taper slowly over months, provide sick-day rules and a steroid card, since the axis may take 6-12 months or more to recover",
+        "Switch abruptly to hydrocortisone 20 mg daily, which is a physiological dose and needs no taper",
+        "Stop the prednisolone and start fludrocortisone instead",
+      ],
+      answer: 1,
+      explanation:
+        "Eight months of prednisolone at 20 mg daily suppresses the hypothalamic-pituitary-adrenal axis, which recovers over 6-12 months or longer, so the dose must be tapered gradually with sick-day rules and a steroid emergency card during the whole period of recovery. Stopping immediately risks adrenal crisis as well as a flare of her lupus. An abrupt switch to hydrocortisone still leaves her unable to mount a stress response and provides no taper of the underlying disease control. Fludrocortisone is a mineralocorticoid and does not replace glucocorticoid at all.",
+      difficulty: "moderate",
+    },
+  ],
+  cards: [
+    {
+      id: "endocrine-adrenal-disorders-c1",
+      front: "Commonest cause of Cushing syndrome in India",
+      back: "Exogenous corticosteroid - oral, depot injection, potent topical steroid for tinea, skin-lightening creams and steroid-adulterated herbal preparations. ACTH and cortisol are both suppressed.",
+    },
+    {
+      id: "endocrine-adrenal-disorders-c2",
+      front: "Discriminatory features of Cushing syndrome",
+      back: "Proximal myopathy, purple striae wider than 1 cm, easy bruising with thin skin, facial plethora, unexplained fracture; in children, growth arrest with weight gain.",
+    },
+    {
+      id: "endocrine-adrenal-disorders-c3",
+      front: "Three screening tests for Cushing syndrome",
+      back: "Overnight 1 mg dexamethasone suppression (cortisol above 1.8 mcg/dL), late-night salivary cortisol on two nights, and two 24-hour urinary free cortisol collections; need at least two abnormal.",
+    },
+    {
+      id: "endocrine-adrenal-disorders-c4",
+      front: "What does plasma ACTH tell you in confirmed cortisol excess?",
+      back: "Below 5 pg/mL means an adrenal source - image the adrenals. Normal or raised means ACTH-dependent disease - pituitary MRI, high-dose dexamethasone test, and petrosal sinus sampling if needed.",
+    },
+    {
+      id: "endocrine-adrenal-disorders-c5",
+      front: "Morning cortisol cut-offs in suspected adrenal insufficiency",
+      back: "Below 3 mcg/dL is diagnostic, above 15-18 mcg/dL excludes it, and anything between needs a short synacthen test.",
+    },
+    {
+      id: "endocrine-adrenal-disorders-c6",
+      front: "Short synacthen test",
+      back: "250 mcg tetracosactide IM or IV, cortisol at 0, 30 and 60 minutes; a peak below 18 mcg/dL confirms adrenal insufficiency.",
+    },
+    {
+      id: "endocrine-adrenal-disorders-c7",
+      front: "Maintenance replacement in Addison disease",
+      back: "Hydrocortisone 15-25 mg daily in 2-3 divided doses weighted to the morning, plus fludrocortisone 50-200 mcg once daily; no fludrocortisone in secondary insufficiency.",
+    },
+    {
+      id: "endocrine-adrenal-disorders-c8",
+      front: "The two sick-day rules",
+      back: "Rule 1: double the oral dose for fever above 38 C or infection until 24 hours after recovery. Rule 2: for vomiting or diarrhoea give 100 mg hydrocortisone IM and attend hospital.",
+    },
+    {
+      id: "endocrine-adrenal-disorders-c9",
+      front: "Adrenal crisis treatment",
+      back: "Hydrocortisone 100 mg IV or IM at once, then 50 mg 6-hourly; 1 litre normal saline in the first hour, dextrose for hypoglycaemia, treat the precipitant. Do not wait for cortisol results.",
+    },
+    {
+      id: "endocrine-adrenal-disorders-c10",
+      front: "Primary versus secondary adrenal insufficiency in two signs",
+      back: "Hyperpigmentation and hyperkalaemia occur only in primary disease, because only there is ACTH high and aldosterone lost.",
+    },
+    {
+      id: "endocrine-adrenal-disorders-c11",
+      front: "Leading causes of Addison disease in India",
+      back: "Tuberculosis (often with adrenal calcification) and autoimmune adrenalitis; also HIV with opportunistic infection, adrenal haemorrhage, metastases and adrenoleukodystrophy.",
+    },
+    {
+      id: "endocrine-adrenal-disorders-c12",
+      front: "Drugs that double the hydrocortisone requirement",
+      back: "Rifampicin, phenytoin and carbamazepine - potent enzyme inducers; a trap when starting antitubercular treatment.",
+    },
+    {
+      id: "endocrine-adrenal-disorders-c13",
+      front: "Screening test and drug order in phaeochromocytoma",
+      back: "Plasma free or 24-hour urinary fractionated metanephrines. Alpha blockade (phenoxybenzamine or prazosin) with salt and fluid for 10-14 days, and only then a beta-blocker.",
+    },
+    {
+      id: "endocrine-adrenal-disorders-c14",
+      front: "Two questions to ask of every adrenal incidentaloma",
+      back: "Is it functioning (1 mg dexamethasone suppression, metanephrines, aldosterone-renin ratio if hypertensive)? Is it malignant (over 4 cm, irregular, unenhanced attenuation above 10 HU)?",
+    },
+    {
+      id: "endocrine-adrenal-disorders-c15",
+      front: "When is the HPA axis assumed to be suppressed?",
+      back: "After prednisolone above 5 mg daily (or equivalent) for more than 3-4 weeks; recovery takes 6-12 months or more, so taper and give sick-day rules throughout.",
+    },
+  ],
+  references: [
+    "Endocrine Society Clinical Practice Guideline, Diagnosis and Treatment of Primary Adrenal Insufficiency, 2016",
+    "Endocrine Society Clinical Practice Guideline, The Diagnosis of Cushing's Syndrome, 2008, and Treatment of Cushing's Syndrome, 2015",
+    "Endocrine Society Clinical Practice Guideline, Pheochromocytoma and Paraganglioma, 2014",
+    "European Society of Endocrinology and ENSAT guideline on the management of adrenal incidentalomas, 2023",
+    "Society for Endocrinology guidance on the emergency management of adrenal crisis and steroid emergency cards, 2020",
+    "Harrison's Principles of Internal Medicine, 21st edition, 2022 - disorders of the adrenal cortex",
+    "API Textbook of Medicine, 11th edition, 2019 - adrenal disorders",
+  ],
+});
+
+const cases: ClinicalCase[] = [
+  {
+    id: "endocrine-case-uncontrolled-t2dm",
+    title: "Uncontrolled type 2 diabetes with complications",
+    kind: "long",
+    subjectId: "endocrine",
+    opening:
+      "A 54-year-old shopkeeper with type 2 diabetes of 12 years presents with tingling and burning of both feet for a year, blurring of vision for 3 months and frothy urine, on metformin and glimepiride with an HbA1c of 9.8%.",
+    minutes: 30,
+    frequency: "core",
+    sections: [
+      {
+        heading: "How to open the presentation",
+        points: [
+          "Give the identifying data, the presenting complaints in the patient's own sequence with duration, and then the one-line problem statement before any detail - examiners judge the first thirty seconds.",
+          "Say: 'Mr X, a 54-year-old shopkeeper from a peri-urban area, a known type 2 diabetic for 12 years on oral agents, presents with symmetrical burning and tingling of both feet for one year, progressive blurring of vision for 3 months and frothy urine for 2 months.'",
+          "Add the negatives that matter early: no chest pain, no breathlessness, no claudication, no foot ulcer, no fever, no weight loss, no polyuria at present.",
+          "State the current treatment with doses and adherence, and the last documented HbA1c, so the examiner knows you have the therapeutic picture.",
+        ],
+      },
+      {
+        heading: "History of the diabetes",
+        points: [
+          "Mode of detection: found on a routine test at a camp, or with osmotic symptoms; whether it was ever confirmed on a laboratory venous sample.",
+          "Course: drugs used over 12 years with doses and reasons for change, any period of insulin use, hospital admissions for hyperglycaemia or hypoglycaemia, and the pattern of clinic attendance and drug interruptions.",
+          "Glycaemic control: home monitoring if any, the last three HbA1c values, symptoms of hyperglycaemia and any episodes of sweating, tremor or confusion suggesting hypoglycaemia, particularly at night or when meals are missed.",
+          "Diet and activity in real terms: number of chapatis or cups of rice per meal, sugar in tea, fried and sweet items, alcohol and tobacco including gutkha and khaini, and the actual daily walking distance.",
+          "Ask about traditional remedies, homeopathic and Ayurvedic preparations and periods of drug stoppage during religious fasting - these are common and are rarely volunteered.",
+        ],
+      },
+      {
+        heading: "History of complications - the marks are here",
+        points: [
+          "Eye: blurred vision, floaters, sudden visual loss, date and result of the last dilated fundus examination, any laser treatment or intravitreal injection, and cataract surgery.",
+          "Kidney: frothy urine, ankle swelling, reduction in urine output, previous urine albumin or creatinine results, and use of analgesics or nephrotoxic remedies.",
+          "Nerve: symmetrical burning, tingling and numbness with nocturnal worsening, unsteadiness in the dark, painless injury or burn to the foot, and autonomic symptoms - postural dizziness, early satiety and vomiting, nocturnal diarrhoea, erectile dysfunction, bladder emptying difficulty and gustatory sweating.",
+          "Foot: ulcer, callus, deformity, previous amputation, footwear worn indoors and outdoors, walking barefoot in the shop or temple, and who cuts his nails.",
+          "Macrovascular: exertional chest discomfort or breathlessness, claudication distance, transient limb weakness or speech disturbance, and known hypertension or dyslipidaemia with treatment.",
+          "Infection: recurrent boils, balanoposthitis or vulvovaginal candidiasis, dental sepsis, urinary infection, and the four TB symptom questions - cough for 2 weeks or more, fever, night sweats, weight loss.",
+        ],
+      },
+      {
+        heading: "Family, personal and socio-economic history",
+        points: [
+          "Family history of diabetes, premature coronary disease, stroke, hypertension and kidney disease in first-degree relatives, and the ages at which they occurred.",
+          "Occupation, hours standing, income, who pays for the drugs, distance from the clinic, and whether he collects free drugs under the NP-NCD programme at the Health and Wellness Centre.",
+          "Who cooks at home, whether the family eats the same food, and whether anyone else in the household has been screened - the family is the unit of care.",
+          "Health beliefs and fears: what he believes caused the diabetes, whether he fears insulin, and what he thinks will happen to him - the answers determine whether your plan will be followed.",
+        ],
+      },
+      {
+        heading: "Examination to demonstrate",
+        points: [
+          "General: build and nutrition, weight, height, BMI by Asian-Indian criteria, waist circumference, pallor, oedema, acanthosis nigricans, skin infections, injection sites if on insulin, and the dental and oral examination.",
+          "Vitals: pulse in all four limbs, blood pressure supine and after 2 minutes standing to detect autonomic neuropathy, respiratory rate and temperature.",
+          "Eyes: visual acuity in each eye, and dilated direct ophthalmoscopy describing what you see - microaneurysms, dot and blot haemorrhages, hard exudates, cotton wool spots, venous beading and new vessels.",
+          "Feet, exposed to the knees, both together: colour, hair loss, dryness, callus over pressure points, clawing of toes, prominent metatarsal heads, ulcers with site and depth, interdigital maceration, and nails.",
+          "Neurological: 10 g monofilament at ten sites, 128 Hz vibration at the great toe and medial malleolus, ankle jerks, pinprick and temperature, joint position sense, and Romberg test.",
+          "Vascular: dorsalis pedis and posterior tibial pulses, capillary refill, femoral and popliteal pulses, and bruits over the femoral and carotid arteries.",
+          "Cardiovascular and abdominal examination for cardiomegaly, murmurs, renal bruit and hepatomegaly, and a systemic examination completing the general survey.",
+        ],
+      },
+    ],
+    summaryStatement:
+      "This is a 54-year-old shopkeeper with poorly controlled type 2 diabetes mellitus of 12 years' duration on submaximal oral therapy, with established microvascular complications - symmetrical distal sensorimotor polyneuropathy with loss of protective sensation, background diabetic retinopathy with maculopathy affecting vision, and diabetic kidney disease with albuminuria - together with hypertension and dyslipidaemia, currently without a foot ulcer or symptomatic macrovascular disease, in a patient with limited health literacy and intermittent drug supply.",
+    differential: [
+      {
+        diagnosis: "Diabetic distal symmetrical sensorimotor polyneuropathy",
+        forIt:
+          "Twelve years of poorly controlled diabetes, symmetrical glove-and-stocking burning worse at night, absent ankle jerks, reduced vibration and loss of monofilament sensation at multiple sites.",
+        againstIt:
+          "Nothing against it clinically, but it remains a diagnosis of exclusion; asymmetry, rapid progression, motor predominance or upper limb onset would demand another explanation.",
+      },
+      {
+        diagnosis: "Vitamin B12 deficiency neuropathy from long-term metformin",
+        forIt:
+          "Twelve years of metformin, a largely vegetarian diet, and an identical distal sensory picture with unsteadiness in the dark.",
+        againstIt:
+          "No glossitis, no anaemia and no posterior column signs with extensor plantars so far; a serum B12 level settles it and it is cheap to exclude and cheap to treat.",
+      },
+      {
+        diagnosis: "Alcoholic or nutritional neuropathy",
+        forIt: "Common in this age group and can be indistinguishable clinically, with burning feet and calf tenderness.",
+        againstIt: "No history of significant alcohol intake and no other features of nutritional deficiency.",
+      },
+      {
+        diagnosis: "Chronic kidney disease of another cause - hypertensive or obstructive",
+        forIt: "Long-standing hypertension, frothy urine and reduced eGFR could all be explained by hypertensive nephrosclerosis.",
+        againstIt:
+          "Albuminuria with concurrent retinopathy strongly supports a diabetic aetiology; absence of retinopathy with heavy proteinuria would have forced a search for another renal disease.",
+      },
+      {
+        diagnosis: "Lumbar canal stenosis or radiculopathy",
+        forIt: "Leg symptoms in a middle-aged man who stands all day at his shop.",
+        againstIt: "Symptoms are symmetrical, non-dermatomal, worse at rest and at night, with no back pain and no claudication distance that improves on bending forward.",
+      },
+    ],
+    investigations: [
+      {
+        test: "HbA1c, fasting and 2-hour post-prandial plasma glucose",
+        why: "To quantify control over 3 months and to see whether the fasting or the post-meal value is driving it, which decides the drug added.",
+        expected: "HbA1c 9.8%, fasting 180-220 mg/dL and post-prandial above 300 mg/dL with a high-carbohydrate diet.",
+      },
+      {
+        test: "Urine albumin-creatinine ratio on an early morning sample, repeated twice in 3-6 months",
+        why: "To establish albuminuria as the earliest marker of diabetic kidney disease; a single positive can be caused by fever, exercise or infection.",
+        expected: "30-300 mg/g indicates moderately increased albuminuria, and above 300 mg/g severely increased.",
+      },
+      {
+        test: "Serum creatinine with eGFR, electrolytes and haemoglobin",
+        why: "To stage chronic kidney disease and to decide the safety of metformin and the dose of other drugs.",
+        expected: "eGFR often 45-75 mL/min/1.73 m2 at this stage, with normocytic anaemia if it is lower.",
+      },
+      {
+        test: "Dilated fundus examination by an ophthalmologist, with fundus photography or OCT if available",
+        why: "Retinopathy is asymptomatic until the macula or vitreous is involved; blurred vision here demands formal assessment for maculopathy.",
+        expected: "Microaneurysms, dot and blot haemorrhages and hard exudates near the macula; new vessels would upgrade it to proliferative disease needing urgent laser.",
+      },
+      {
+        test: "10 g monofilament, 128 Hz tuning fork and ankle reflexes",
+        why: "To document loss of protective sensation, which defines the at-risk foot and dictates footwear and follow-up interval.",
+        expected: "Absent monofilament sensation at 4 or more of 10 sites with reduced vibration and absent ankle jerks.",
+      },
+      {
+        test: "Serum vitamin B12",
+        why: "Long-term metformin causes deficiency that mimics diabetic neuropathy and is easily and cheaply corrected.",
+        expected: "Low or borderline in a substantial minority after 4 or more years of metformin.",
+      },
+      {
+        test: "Fasting lipid profile, ECG, and blood pressure recorded supine and standing",
+        why: "To quantify cardiovascular risk, detect silent ischaemia and demonstrate autonomic neuropathy.",
+        expected: "Raised triglyceride with low HDL, possible Q waves or ST-T changes, and a postural fall of 20 mmHg systolic if autonomic neuropathy is present.",
+      },
+      {
+        test: "Sputum for NAAT or chest radiograph if any TB symptom is present, and urine routine with culture",
+        why: "Bidirectional TB screening is mandatory under NTEP, and asymptomatic urinary infection is common and worsens control.",
+        expected: "Usually negative, but the yield in poorly controlled diabetes justifies the test.",
+      },
+      {
+        test: "TSH and liver function tests",
+        why: "Thyroid disease is common and worsens lipids and control; ALT screens for fatty liver before adding drugs.",
+        expected: "Usually normal; a raised TSH or ALT changes the drug plan.",
+      },
+    ],
+    management: [
+      {
+        heading: "Immediate priorities",
+        points: [
+          "Treat the two things that can cause irreversible loss this month: refer for ophthalmology assessment of the maculopathy, and protect the insensate foot with proper footwear and daily inspection advice.",
+          "Review the drug list for inappropriate agents: glimepiride is risky as the eGFR falls, and the dose of metformin must be checked against renal function.",
+          "Confirm adherence and drug supply before escalating - the commonest cause of an HbA1c of 9.8% is that the tablets were not taken.",
+        ],
+      },
+      {
+        heading: "Glycaemic control",
+        points: [
+          "Continue metformin 1 g twice daily if eGFR is above 45 mL/min/1.73 m2, halving the dose between 30 and 45 and stopping below 30.",
+          "Add an SGLT2 inhibitor - dapagliflozin 10 mg once daily or empagliflozin 10 mg once daily - for the albuminuric kidney disease, which slows eGFR decline independently of glucose lowering, provided eGFR is above 20-25 mL/min/1.73 m2.",
+          "Because the HbA1c is 9.8% and above target by more than 1.5%, start basal insulin: glargine or NPH 10 units at bedtime, or 0.1-0.2 units/kg, titrated by 2 units every 3 days against the fasting glucose with a target of 80-130 mg/dL.",
+          "Reduce or stop glimepiride when basal insulin is introduced to avoid hypoglycaemia, and teach hypoglycaemia recognition and the rule of 15 to the patient and his family.",
+          "Set an individualised HbA1c target of below 7.5% given his duration of disease, established complications and hypoglycaemia risk, reviewed with an HbA1c in 3 months.",
+        ],
+      },
+      {
+        heading: "Treating each complication",
+        points: [
+          "Retinopathy: ophthalmology referral now, laser photocoagulation or anti-VEGF injection as advised, and annual dilated examination thereafter; warn that sudden visual loss or floaters need same-day review.",
+          "Kidney disease: start an ACE inhibitor or ARB - ramipril 5 mg daily or telmisartan 40 mg daily - titrated up, checking creatinine and potassium 1-2 weeks after each increase; a rise in creatinine of up to 30% is acceptable.",
+          "Neuropathy: pain relief with amitriptyline 10-25 mg at night, or pregabalin 75 mg twice daily, or duloxetine 30-60 mg daily, titrated slowly and warning about drowsiness and postural dizziness; correct vitamin B12 with methylcobalamin 1500 mcg daily if deficient.",
+          "Foot: classify as high risk because of loss of protective sensation, prescribe well-fitting cushioned footwear with a microcellular rubber insole, forbid barefoot walking indoors and out, teach daily inspection with a mirror and lukewarm water washing with careful drying between the toes, and arrange 3-monthly foot review.",
+          "Cardiovascular risk: atorvastatin 40 mg at night regardless of the lipid level given established microvascular disease, blood pressure target below 130/80 mmHg, aspirin only if there is established atherosclerotic disease, and firm tobacco cessation support.",
+        ],
+      },
+      {
+        heading: "Education, follow-up and the family",
+        points: [
+          "Explain in his own language what the complications are, that they are the reason for tighter control, and that the treatment aims to prevent blindness, dialysis and amputation - specific consequences motivate better than numbers.",
+          "Teach insulin injection technique, site rotation, storage without a refrigerator in a clay pot or wrapped cloth, and disposal of needles.",
+          "Sick-day rules: never stop insulin, hold metformin and the SGLT2 inhibitor with vomiting, dehydration or sepsis, test more often and attend if unable to keep fluids down.",
+          "Register in the NP-NCD clinic for free drugs and recall, give a written follow-up card with the schedule, and involve his wife, who cooks, in the dietary plan.",
+          "Follow-up: 2 weeks for insulin titration, then monthly until stable, 3-monthly HbA1c and blood pressure, 3-monthly foot examination, and annual fundus, urine albumin-creatinine ratio, eGFR and lipids.",
+          "Screen his first-degree relatives with a fasting glucose, since two siblings and a son are at high risk.",
+        ],
+      },
+    ],
+    viva: [
+      {
+        q: "Why do you call this diabetic kidney disease rather than hypertensive nephropathy?",
+        a: "Because albuminuria coexists with retinopathy, and in type 2 diabetes the presence of retinopathy with albuminuria has a high positive predictive value for diabetic nephropathy. Albuminuria with no retinopathy, an active urinary sediment, rapidly falling eGFR or heavy proteinuria of sudden onset would make me look for a non-diabetic renal disease and consider a biopsy.",
+      },
+      {
+        q: "He is on metformin for 12 years and has burning feet. What else must you exclude?",
+        a: "Vitamin B12 deficiency. Metformin reduces ileal B12 absorption, and after 4 or more years deficiency is common, particularly on a vegetarian diet. It produces an identical distal sensory neuropathy, so I would send a serum B12 and treat with methylcobalamin 1500 mcg daily if it is low or borderline.",
+      },
+      {
+        q: "How would you decide the HbA1c target for this man?",
+        a: "By individualising. He has 12 years of disease, established microvascular complications and will now be on insulin, so a target below 7.5% is appropriate rather than below 6.5%. In a newly diagnosed young patient with no complications I would aim for 6.5% or lower, and in a frail elderly patient living alone I would accept around 8%.",
+      },
+      {
+        q: "Why add an SGLT2 inhibitor rather than a DPP-4 inhibitor here?",
+        a: "Because he has albuminuric chronic kidney disease. SGLT2 inhibitors slow the decline in eGFR and reduce heart failure hospitalisation independently of glucose lowering, which DPP-4 inhibitors do not. I would counsel on genital mycotic infection, ensure he stops it during acute illness, and warn about euglycaemic ketoacidosis.",
+      },
+      {
+        q: "How do you grade the diabetic foot risk and what does each grade mean for follow-up?",
+        a: "No neuropathy or vascular disease is low risk with annual review. Neuropathy alone, or deformity, or absent pulses is moderate risk with 3-6 monthly review. Neuropathy with deformity or peripheral arterial disease, or a previous ulcer or amputation, is high risk with 1-3 monthly review by a foot care team. This man has loss of protective sensation, so he is at least moderate risk and needs protective footwear now.",
+      },
+      {
+        q: "What is the rule of 15 and when do you teach it?",
+        a: "For a conscious patient with hypoglycaemia, give 15 g of fast-acting carbohydrate - three teaspoons of sugar or glucose in water, or 150 mL of fruit juice - recheck the glucose after 15 minutes and repeat if it is still below 70 mg/dL, then give a complex carbohydrate snack. I teach it to every patient and to a family member at the visit when insulin or a sulfonylurea is started, not at some later visit.",
+      },
+      {
+        q: "He fasts during a religious festival for nine days. What do you advise?",
+        a: "Assess risk first, then plan. I would halve or omit the sulfonylurea, keep metformin with the main meal, reduce the basal insulin dose by about 20%, insist on breaking the fast if glucose falls below 70 mg/dL or rises above 300 mg/dL, provide a glucometer and strips, encourage adequate fluids at permitted times, and see him before and after the fasting period rather than forbidding fasting outright.",
+      },
+      {
+        q: "What would make you refer this patient to a nephrologist?",
+        a: "An eGFR below 30 mL/min/1.73 m2, rapidly declining eGFR of more than 5 mL/min a year, urine albumin-creatinine ratio above 300 mg/g despite maximal ACE inhibitor or ARB therapy, refractory hypertension or hyperkalaemia, an active urinary sediment with red cell casts, or diagnostic uncertainty about a non-diabetic renal disease.",
+      },
+    ],
+    pitfalls: [
+      "Presenting the case as 'a known diabetic with high sugars' without a structured complication history - the marks in this long case sit almost entirely in the eye, kidney, nerve and foot history.",
+      "Examining the feet with the socks on, or examining only one foot; both feet must be exposed to the knees and compared, with the footwear inspected too.",
+      "Failing to record a standing blood pressure and then missing autonomic neuropathy, which changes both the drug choice and the fall risk.",
+      "Blaming poor control on 'non-compliance' without asking who pays for the drugs, whether the supply ran out, and whether he stopped them during fasting or an illness.",
+      "Intensifying drugs while ignoring an untreated infection, undiagnosed tuberculosis, dental sepsis or depression, all of which will defeat any regimen.",
+      "Forgetting vitamin B12 in a patient on long-term metformin and attributing every symptom to diabetic neuropathy.",
+      "Quoting a single HbA1c target for everyone instead of individualising it to duration, complications, hypoglycaemia risk and life expectancy.",
+      "Omitting the family: not screening first-degree relatives and not involving the person who actually cooks the food.",
+    ],
+    references: [
+      "American Diabetes Association, Standards of Care in Diabetes, 2025",
+      "RSSDI Clinical Practice Recommendations for the Management of Type 2 Diabetes Mellitus, 2022",
+      "ICMR Guidelines for Management of Type 2 Diabetes, 2018",
+      "KDIGO Clinical Practice Guideline for Diabetes Management in Chronic Kidney Disease, 2022",
+      "International Working Group on the Diabetic Foot (IWGDF) Guidelines, 2023",
+      "National Programme for Prevention and Control of Non-Communicable Diseases (NP-NCD) operational guidelines, MoHFW",
+    ],
+  },
+  {
+    id: "endocrine-case-thyroid-swelling",
+    title: "Short case and viva: swelling in the front of the neck",
+    kind: "short",
+    subjectId: "endocrine",
+    opening:
+      "A 32-year-old woman has noticed a painless swelling in the front of the neck for 8 months, with no pain, no hoarseness and no difficulty in swallowing or breathing.",
+    minutes: 12,
+    frequency: "common",
+    sections: [
+      {
+        heading: "Demonstrating that it is thyroid",
+        points: [
+          "Seat the patient on a stool with the neck slightly extended and adequate light, expose from the chin to below both clavicles, and inspect from the front before touching anything.",
+          "Ask her to swallow a sip of water: **a thyroid swelling moves up with deglutition** because it is bound to the trachea by the ligament of Berry, and this is the observation that identifies the organ.",
+          "Ask her to protrude the tongue: **a thyroglossal cyst rises on tongue protrusion**, a thyroid swelling does not - this single manoeuvre separates the two commonest midline neck swellings.",
+          "Then palpate from behind with both hands, thumbs on the nape, defining size, shape, surface, consistency, mobility, tenderness, and whether the lower border can be reached - an unreachable lower border means retrosternal extension.",
+          "Palpate for the trachea in the suprasternal notch, for cervical lymph nodes in all groups, and for a carotid pulse that should be palpable; **a pulse pushed backwards and impalpable (Berry sign) suggests malignant infiltration**.",
+        ],
+      },
+      {
+        heading: "Completing the local examination",
+        points: [
+          "Percuss the manubrium for retrosternal dullness and auscultate over the upper poles for a bruit, which indicates a hyperdynamic vascular gland as in Graves disease.",
+          "Test for **Pemberton sign** - ask her to raise both arms above the head for a minute and watch for facial congestion, cyanosis, distended neck veins or stridor, which indicates thoracic inlet obstruction by a retrosternal goitre.",
+          "Ask her to speak and cough to assess voice quality; a bovine cough or hoarseness suggests recurrent laryngeal nerve involvement and mandates indirect laryngoscopy.",
+          "Say clearly whether the gland is diffusely enlarged, multinodular or a solitary nodule, and state the size in centimetres rather than in fruit.",
+        ],
+      },
+      {
+        heading: "Assessing the functional status",
+        points: [
+          "Look for hyperthyroidism: pulse rate and rhythm, sleeping pulse, tremor of outstretched hands, warm moist palms, proximal myopathy, lid lag, lid retraction, proptosis and pretibial myxoedema.",
+          "Look for hypothyroidism: bradycardia, dry coarse skin, periorbital puffiness, hoarse voice, delayed relaxation of the ankle jerk, and a slow answer to a simple question.",
+          "Ask the functional screening questions: weight change with appetite, heat or cold intolerance, palpitation, bowel habit, menstrual pattern, and energy.",
+          "State your functional conclusion explicitly - 'she is clinically euthyroid' - because the examiner will ask for it if you do not offer it.",
+        ],
+      },
+      {
+        heading: "Presenting the findings",
+        points: [
+          "Present as: 'On examination there is a 3 by 3 cm swelling in the front of the neck to the right of the midline, moving up with deglutition but not on tongue protrusion, firm, non-tender, with a smooth surface and well-defined margins, the lower border reachable, no cervical lymphadenopathy, trachea central, carotid pulses palpable, no bruit and no Pemberton sign.'",
+          "Follow with the functional statement and then the summary: 'a clinically euthyroid patient with a solitary right lobe thyroid nodule with no clinical features suggesting malignancy or compression.'",
+          "Offer the differential diagnosis in order of likelihood before being asked, and then say what investigation you would do first.",
+        ],
+      },
+    ],
+    summaryStatement:
+      "This is a 32-year-old clinically euthyroid woman with a solitary, firm, non-tender, mobile 3 cm nodule in the right lobe of the thyroid, moving with deglutition but not with tongue protrusion, with no cervical lymphadenopathy, no tracheal deviation, no retrosternal extension and no clinical features of compression or malignancy.",
+    differential: [
+      {
+        diagnosis: "Benign colloid nodule in a multinodular goitre (dominant nodule)",
+        forIt: "Commonest cause in an iodine-deficient country, painless, slow growing, euthyroid, firm and mobile with a smooth surface.",
+        againstIt: "The rest of the gland feels normal, so it may be a genuinely solitary lesion rather than a dominant nodule - ultrasound frequently reveals other nodules.",
+      },
+      {
+        diagnosis: "Follicular adenoma",
+        forIt: "A true solitary, smooth, firm, encapsulated nodule in a young woman with normal thyroid function fits perfectly.",
+        againstIt: "It cannot be distinguished from follicular carcinoma on clinical examination or on cytology - only histology after hemithyroidectomy can separate them.",
+      },
+      {
+        diagnosis: "Papillary carcinoma of the thyroid",
+        forIt: "The commonest thyroid malignancy, often presenting as a painless solitary nodule in a young woman with a normal TSH.",
+        againstIt: "No hard or fixed feel, no lymphadenopathy, no hoarseness, no rapid growth and no history of neck irradiation.",
+      },
+      {
+        diagnosis: "Toxic adenoma",
+        forIt: "A solitary nodule with the rest of the gland impalpable can be an autonomously functioning adenoma.",
+        againstIt: "She is clinically euthyroid with no tachycardia or tremor; a suppressed TSH would be needed and would then require a scintiscan.",
+      },
+      {
+        diagnosis: "Thyroid cyst or haemorrhage into a nodule",
+        forIt: "Cystic degeneration is common; sudden painful enlargement would suggest haemorrhage into a pre-existing nodule.",
+        againstIt: "There is no fluctuation, no history of sudden onset and no pain; ultrasound will settle it immediately.",
+      },
+      {
+        diagnosis: "Non-thyroid neck swelling - thyroglossal cyst, lymph node, dermoid, branchial cyst",
+        forIt: "All present as neck swellings and must be excluded by position and mobility.",
+        againstIt: "The swelling moves with deglutition and not with tongue protrusion, which places it in the thyroid and excludes a thyroglossal cyst.",
+      },
+    ],
+    investigations: [
+      {
+        test: "Serum TSH, with free T4 if TSH is abnormal",
+        why: "It is the first test in every thyroid nodule, and it decides the next step - a suppressed TSH sends you to a scan and a normal TSH to ultrasound.",
+        expected: "Normal in a clinically euthyroid patient with a benign or neoplastic nodule; suppressed in a toxic adenoma.",
+      },
+      {
+        test: "High-resolution ultrasound of the neck with cervical node survey",
+        why: "To characterise the nodule, detect impalpable additional nodules, and grade the risk of malignancy by ACR TI-RADS or ATA categories, which sets the size threshold for aspiration.",
+        expected: "A well-defined isoechoic solid nodule with peripheral vascularity in a benign lesion; hypoechogenicity, taller-than-wide shape, microcalcification, irregular margins or abnormal nodes suggest malignancy.",
+      },
+      {
+        test: "Radionuclide (technetium-99m) scan, only if TSH is suppressed",
+        why: "To identify an autonomously functioning hot nodule, which is almost never malignant and does not require cytology.",
+        expected: "A hot nodule with suppression of the rest of the gland in a toxic adenoma; a cold nodule requires cytology.",
+      },
+      {
+        test: "Ultrasound-guided fine-needle aspiration cytology reported by the Bethesda system",
+        why: "It is the definitive investigation for a cold nodule meeting the size and risk threshold, and it directs management by category.",
+        expected: "Bethesda II benign in the majority; III, IV, V or VI change management as set out in the Bethesda table.",
+      },
+      {
+        test: "Indirect laryngoscopy or flexible nasolaryngoscopy",
+        why: "To document vocal cord function before any thyroid surgery, and immediately if the patient is hoarse.",
+        expected: "Normal cord movement; a paralysed cord raises strong suspicion of malignant infiltration.",
+      },
+      {
+        test: "Serum calcitonin, and chest radiograph or CT for a large or retrosternal goitre",
+        why: "Calcitonin if medullary carcinoma is suspected from family history or cytology; imaging to define retrosternal extension and tracheal compression before surgery.",
+        expected: "Normal calcitonin in the great majority; tracheal narrowing or deviation on imaging changes the anaesthetic plan.",
+      },
+    ],
+    management: [
+      {
+        heading: "If the cytology is benign (Bethesda II)",
+        points: [
+          "Reassure, explain that surgery is not needed, and arrange clinical and ultrasound follow-up at 12-24 months.",
+          "Repeat aspiration if the nodule grows by more than 50% in volume or 20% in two dimensions, or if new suspicious ultrasound features appear.",
+          "Do not use levothyroxine suppression therapy: it rarely shrinks nodules and causes iatrogenic thyrotoxicosis with atrial fibrillation and bone loss.",
+          "Advise iodised salt use, and reassure that a benign nodule does not turn malignant with time.",
+        ],
+      },
+      {
+        heading: "If the cytology is indeterminate or malignant",
+        points: [
+          "Bethesda III: repeat aspiration, molecular testing where available, or diagnostic lobectomy according to the ultrasound risk and patient preference.",
+          "Bethesda IV: diagnostic hemithyroidectomy with isthmusectomy, since capsular and vascular invasion can only be assessed histologically.",
+          "Bethesda V or VI: total thyroidectomy with central compartment node dissection where indicated, followed by radioiodine ablation and TSH-suppressive levothyroxine for high-risk differentiated cancer.",
+          "Counsel specifically on the risks of thyroid surgery: recurrent laryngeal nerve palsy with hoarseness, hypoparathyroidism with hypocalcaemia, haematoma with airway obstruction, and lifelong levothyroxine after total thyroidectomy.",
+        ],
+      },
+      {
+        heading: "Surgical indications regardless of cytology",
+        points: [
+          "Pressure symptoms - dysphagia, dyspnoea, stridor, or a positive Pemberton sign from retrosternal extension.",
+          "Cosmetic concern in a large goitre after the patient has been fully informed of the risks.",
+          "A recurrent cyst that refills after two aspirations, and any nodule with clinical red flags such as fixity, rapid growth, hoarseness or lymphadenopathy.",
+          "A toxic adenoma or toxic multinodular goitre, where radioiodine and surgery are the two definitive options and drugs alone will never cure it.",
+        ],
+      },
+      {
+        heading: "Post-operative care",
+        points: [
+          "Watch for stridor and neck swelling in the first 24 hours - a tension haematoma needs the wound opened at the bedside, so clip removers must be at the bed.",
+          "Check serum calcium at 12 and 24 hours and ask about perioral tingling; treat symptomatic hypocalcaemia with intravenous calcium gluconate and start oral calcium with calcitriol.",
+          "Assess the voice on the first post-operative day and arrange laryngoscopy if it is altered.",
+          "Start levothyroxine 1.6 mcg/kg after total thyroidectomy, with a TSH check at 6-8 weeks; after hemithyroidectomy check TSH at 6-8 weeks since about a fifth become hypothyroid.",
+        ],
+      },
+    ],
+    viva: [
+      {
+        q: "How do you prove clinically that a neck swelling arises from the thyroid?",
+        a: "It moves upwards with deglutition, because the pretracheal fascia binds the gland to the trachea through the ligament of Berry. A thyroglossal cyst also moves with swallowing but in addition rises on tongue protrusion, because of its attachment to the hyoid and foramen caecum, so the two manoeuvres together localise the swelling.",
+      },
+      {
+        q: "What is Berry sign and what does it mean?",
+        a: "Absence of a palpable carotid pulse on the side of a thyroid swelling. The carotid sheath is displaced or infiltrated, which suggests a malignant thyroid lesion; in a benign goitre the carotid is pushed laterally but remains palpable.",
+      },
+      {
+        q: "What is Pemberton sign?",
+        a: "Facial congestion, cyanosis, distended neck veins and sometimes stridor when the patient raises both arms above the head for a minute. It indicates that a retrosternal goitre is obstructing the thoracic inlet, and it is an indication for surgery and for careful anaesthetic assessment.",
+      },
+      {
+        q: "Why is the first investigation a TSH and not an FNAC?",
+        a: "Because a suppressed TSH changes the entire pathway: it points to an autonomously functioning nodule, which is investigated with a radionuclide scan and is almost never malignant, so cytology is unnecessary and can be misleading. With a normal or raised TSH the pathway goes to ultrasound and then risk-stratified aspiration.",
+      },
+      {
+        q: "Which ultrasound features make you suspect malignancy?",
+        a: "Marked hypoechogenicity, a taller-than-wide shape, irregular or lobulated margins, microcalcification, extrathyroidal extension and abnormal cervical lymph nodes with loss of the fatty hilum or cystic change. Purely cystic and spongiform nodules are almost always benign.",
+      },
+      {
+        q: "Why is a Bethesda IV report an indication for surgery?",
+        a: "Because the distinction between follicular adenoma and follicular carcinoma rests entirely on capsular and vascular invasion, which cannot be seen in an aspirate of cells. With a malignancy risk of 25-40%, a diagnostic hemithyroidectomy provides the whole capsule for histology and is both diagnostic and, if benign, therapeutic.",
+      },
+      {
+        q: "Name the complications of thyroidectomy you would consent for.",
+        a: "Haemorrhage with tension haematoma and airway obstruction, recurrent laryngeal nerve injury causing hoarseness and, if bilateral, stridor requiring tracheostomy, external laryngeal nerve injury altering voice pitch, hypoparathyroidism with hypocalcaemia which may be transient or permanent, hypothyroidism requiring lifelong levothyroxine, wound infection, keloid and thyroid storm if an unprepared thyrotoxic patient is operated.",
+      },
+      {
+        q: "A patient develops perioral tingling and carpal spasm on the first night after total thyroidectomy. What do you do?",
+        a: "This is symptomatic hypocalcaemia from post-surgical hypoparathyroidism. I would check corrected calcium urgently, attach cardiac monitoring and give 10 mL of 10% calcium gluconate diluted in 50-100 mL of 5% dextrose intravenously over 10 minutes, repeat as required and set up an infusion, then start oral calcium 1-2 g daily with calcitriol 0.25-0.5 mcg twice daily. Plain cholecalciferol would not work, since 1-alpha-hydroxylation depends on parathyroid hormone.",
+      },
+      {
+        q: "How common is malignancy in a solitary thyroid nodule, and which clinical features raise your suspicion?",
+        a: "About 5-10% of nodules are malignant. Suspicion rises with age under 20 or over 60, male sex, a hard or fixed nodule, rapid growth, hoarseness with vocal cord palsy, stridor or dysphagia, cervical lymphadenopathy, previous head and neck irradiation, and a family history of medullary carcinoma or MEN2.",
+      },
+    ],
+    pitfalls: [
+      "Palpating from the front only and never standing behind the patient, which loses the surface, consistency and lower border of the gland.",
+      "Forgetting to ask the patient to protrude the tongue, and then being unable to exclude a thyroglossal cyst.",
+      "Failing to state the functional status - a candidate who describes a beautiful lump but cannot say whether the patient is euthyroid has missed the point of the case.",
+      "Omitting the search for cervical lymph nodes and the assessment of the voice, both of which change the diagnosis and the operation.",
+      "Requesting an FNAC before a TSH, and so aspirating a hot nodule unnecessarily.",
+      "Offering levothyroxine suppression for a benign nodule, which is ineffective and causes iatrogenic thyrotoxicosis.",
+      "Describing size as 'the size of a lemon' instead of measuring it in centimetres in two dimensions.",
+      "Sending an unprepared thyrotoxic patient for surgery and precipitating a thyroid storm.",
+    ],
+    references: [
+      "American Thyroid Association Management Guidelines for Adult Patients with Thyroid Nodules and Differentiated Thyroid Cancer, 2015",
+      "The Bethesda System for Reporting Thyroid Cytopathology, 3rd edition, 2023",
+      "ACR Thyroid Imaging Reporting and Data System (TI-RADS), 2017",
+      "Bailey and Love's Short Practice of Surgery, 28th edition, 2023 - the thyroid gland",
+      "S Das, A Manual on Clinical Surgery, 14th edition - examination of a swelling in the neck",
+      "Indian Thyroid Society consensus on evaluation of thyroid nodules, 2020",
+    ],
+  },
+];
+
+const subject: Subject = {
+  id: "endocrine",
+  title: "Endocrine & Metabolic",
+  blurb:
+    "Diabetes from diagnosis through insulin, complication screening and the emergencies, then thyroid disease, obesity and the metabolic syndrome, vitamin D and calcium, and the adrenal tail.",
+  icon: "Activity",
+  papers: ["II"],
+  topics,
+  cases,
+};
+
+export default subject;

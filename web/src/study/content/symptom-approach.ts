@@ -1514,3 +1514,993 @@ topics.push({
     "NICE Clinical Knowledge Summaries: Vertigo, 2023",
   ],
 });
+
+topics.push({
+  id: "symptom-approach-chest-pain",
+  title: "Chest pain in general practice and pretest probability",
+  oneLiner:
+    "Chest pain in an ambulatory clinic is musculoskeletal, gastro-oesophageal or psychogenic in about four out of five patients and cardiac in only about one in ten, so the family physician works from a formal pretest probability - age, sex and the three features of typical angina - deciding first whether this is an emergency, then whether the probability justifies a test, and always leaving the consultation with an explicit safety net.",
+  frequency: "core",
+  keywords: [
+    "chest pain",
+    "angina",
+    "pretest probability",
+    "Diamond-Forrester",
+    "Marburg Heart Score",
+    "INTERHEART",
+    "acute coronary syndrome",
+    "STEMI",
+    "GERD",
+    "costochondritis",
+    "Tietze syndrome",
+    "panic disorder",
+    "aortic dissection",
+    "pulmonary embolism",
+    "Wells score",
+    "MONA",
+    "thrombolysis",
+    "STEMI hub and spoke",
+    "safety netting",
+  ],
+  sections: [
+    {
+      heading: "What chest pain actually is in an ambulatory clinic",
+      points: [
+        "**The prevalence of disease depends on the setting, and this is the central lesson of the topic.** In an emergency department 15-25% of chest pain is acute coronary syndrome; in a general practice consulting room the figure is around 8-12%, and in a young patient without risk factors it is under 2%.",
+        "**Typical distribution in family practice:** chest wall and musculoskeletal pain 25-35%, gastro-oesophageal 10-20%, stable coronary disease 8-12%, psychogenic and panic 7-15%, pulmonary 5-10%, and acute coronary syndrome 1-3%.",
+        "**The same test performs differently in the two settings.** A treadmill test with 70% sensitivity and 75% specificity applied to a population with 10% prevalence gives a positive predictive value near 24%, so three of every four positives are false - which is why the pretest probability must be estimated before the test is ordered, not after.",
+        "**Indian caveat:** coronary disease occurs a decade earlier in Indians than in Europeans, with the INTERHEART study showing a mean age of first myocardial infarction of about 53 years in South Asians against 59 elsewhere, and a large share of events in people who would be classed as low risk by Western charts.",
+        "Therefore **a 45-year-old Indian man with exertional chest discomfort is not a low-risk patient**, and diabetes shifts the probability further because it both accelerates disease and blunts the pain.",
+        "**The task in the room has three parts, in order:** exclude the five immediately life-threatening causes, estimate the pretest probability of coronary disease, and decide between test, treat, or watch with a safety net.",
+      ],
+    },
+    {
+      heading: "The five that must not be missed",
+      points: [
+        "**Acute coronary syndrome:** central heaviness or tightness for more than 20 minutes, radiating to arm, jaw or epigastrium, with sweating, nausea or breathlessness. In diabetics, women and the elderly it presents as breathlessness, fatigue, syncope or epigastric burning with no pain at all.",
+        "**Aortic dissection:** sudden, severe, tearing or ripping pain, maximal at onset, migrating to the back or interscapular region, with a blood pressure difference over 20 mmHg between arms, unequal pulses, a new early diastolic murmur, or focal neurological deficit. **Never give thrombolysis or an anticoagulant before considering it.**",
+        "**Pulmonary embolism:** pleuritic pain with sudden breathlessness, tachycardia, hypoxia, and a risk factor - immobility, long travel, recent surgery, pregnancy or puerperium, oral contraceptives, malignancy, or previous venous thromboembolism. Use the Wells score, then D-dimer if the score is low and CT pulmonary angiography if it is high.",
+        "**Tension pneumothorax and spontaneous pneumothorax:** sudden pleuritic pain with breathlessness, hyper-resonance and absent breath sounds; in a tall thin young smoker, or in known COPD. Tension pneumothorax is a clinical diagnosis needing immediate needle decompression, not a radiograph.",
+        "**Oesophageal rupture (Boerhaave syndrome):** severe pain after forceful vomiting, with subcutaneous emphysema and shock. Rare, lethal, and the reason to ask what happened just before the pain began.",
+        "**Also lethal but less often listed:** myocarditis and pericarditis with tamponade, severe aortic stenosis, and cardiac tamponade from tuberculous pericardial effusion, which remains a genuine cause in India.",
+      ],
+    },
+    {
+      heading: "Estimating pretest probability",
+      points: [
+        "**Typical (definite) angina requires all three:** substernal discomfort of characteristic quality and duration, provoked by exertion or emotional stress, and relieved within minutes by rest or sublingual nitrate. Two of three is atypical angina; one or none is non-anginal chest pain.",
+        "**Age and sex do most of the work.** Typical angina in a man over 50 carries a pretest probability of coronary disease above 80%; non-anginal pain in a woman under 40 carries a probability under 5%. Sex and age must be combined with the pain description before any test is ordered.",
+        "**The Marburg Heart Score is designed for exactly this setting** and scores 1 point each for: age 55 or more in men or 65 or more in women; known vascular disease; pain worse with exertion; pain not reproducible by palpation; and the patient assuming the pain is cardiac. **A score of 0-2 makes coronary disease very unlikely (negative predictive value about 97-98%), while 3 or more warrants further evaluation.**",
+        "**Features that raise the probability:** exertional provocation, relief by rest or nitrate, radiation to both arms or the jaw, sweating, nausea, and a duration of 2-10 minutes.",
+        "**Features that lower it:** pain reproduced exactly by palpation of the chest wall, pain lasting seconds or lasting continuously for days unchanged, pain sharply localised to a point the patient indicates with one finger, and pain that varies with posture or respiration.",
+        "**None of these features is powerful enough alone to overrule a strong story.** Chest wall tenderness is present in some patients who are also having a myocardial infarction, so use it to shift probability, never to close the case.",
+      ],
+    },
+    {
+      heading: "Examination and the tests that are worth doing",
+      points: [
+        "**Examination in every case:** pulse in both arms, blood pressure in both arms, respiratory rate, oxygen saturation, JVP, heart sounds with special attention to murmurs and a pericardial rub, chest auscultation and percussion, palpation of the chest wall for reproducible tenderness, and examination of the legs for deep vein thrombosis.",
+        "**A 12-lead ECG within 10 minutes** for any pain that could be cardiac, repeated after 15-30 minutes if the pain persists and the first is normal, and compared with any earlier tracing. **A normal ECG does not exclude acute coronary syndrome** - it is normal in up to a third of patients with a non-ST-elevation infarct.",
+        "**Look specifically for:** ST elevation of 1 mm or more in two contiguous limb leads or 2 mm in two contiguous chest leads, ST depression, T inversion, new left bundle branch block, Q waves, and the posterior infarct pattern of tall R waves with ST depression in V1-V3, which needs posterior leads V7-V9.",
+        "**Troponin, where available**, at presentation and at 3 hours using a high-sensitivity assay; remember troponin is raised in myocarditis, pulmonary embolism, sepsis, chronic kidney disease and tachyarrhythmia, so it is interpreted with the clinical picture and the rise-and-fall pattern, not as a yes-or-no test.",
+        "**In stable chest pain the choice of test follows the pretest probability:** below about 15% no test is needed; 15-65% a treadmill exercise test or CT coronary angiography; 65-85% functional imaging such as stress echocardiography; above 85% treat as coronary disease and refer, since a negative test would not change the management.",
+        "**Do not order a treadmill test** in an uninterpretable baseline ECG (left bundle branch block, pacing, pre-excitation, digoxin effect, significant resting ST change), in a patient unable to exercise, or in anyone with ongoing rest pain - those patients need imaging or admission.",
+      ],
+    },
+    {
+      heading: "The common benign causes and how to treat them convincingly",
+      points: [
+        "**Musculoskeletal chest pain** is the commonest single group: costochondritis (tender costochondral junctions without swelling), Tietze syndrome (tender with visible swelling of the second or third costal cartilage), muscle strain after lifting or coughing, and thoracic radiculopathy. Treat with explanation, paracetamol or a short NSAID course, local heat and a return to normal activity.",
+        "**Gastro-oesophageal reflux** gives burning retrosternal pain worse on lying, bending or after a heavy meal, with regurgitation and a sour taste; note that it can also be relieved by nitrates, so relief with a nitrate does not prove cardiac pain. Treat with a proton pump inhibitor such as pantoprazole 40 mg PO once daily before breakfast for 4-8 weeks, weight loss, smaller meals, and no food for 3 hours before lying down.",
+        "**Panic disorder and anxiety** produce chest tightness with palpitations, paraesthesiae, a sense of impending doom, and a rapid onset peaking within 10 minutes. Diagnose positively, teach controlled breathing, and treat with an SSRI plus cognitive behavioural therapy when attacks recur - **but exclude the cardiac cause first in anyone with risk factors, because the two coexist.**",
+        "**Herpes zoster** causes unilateral dermatomal pain that precedes the rash by 2-4 days and is a classic cause of a chest pain consultation with a normal examination; re-examine the skin at review.",
+        "**Pleuritic pain** with fever and cough suggests pneumonia; without fever it may be pulmonary embolism, pneumothorax or musculoskeletal - the presence of pleurisy narrows nothing on its own.",
+        "**Explain and name the diagnosis.** Patients who leave with a positive label (this is inflammation of the rib joints; this is acid coming up the food pipe) are far less likely to re-attend and to seek repeat investigation than those told only that their heart is fine.",
+      ],
+    },
+    {
+      heading: "Emergency management and the Indian referral pathway",
+      points: [
+        "**When acute coronary syndrome is suspected: load with aspirin 325 mg chewed and clopidogrel 300 mg (75 mg if over 75 years), give sublingual nitroglycerine 0.5 mg unless systolic BP is below 90 mmHg or an inferior infarct with right ventricular involvement is suspected, give oxygen only if saturation is below 90%, and arrange transfer by ambulance, never by the patient's own vehicle or a two-wheeler.**",
+        "**Time is the outcome.** For STEMI, primary percutaneous coronary intervention is preferred if it can be achieved within 120 minutes of first medical contact; otherwise give thrombolysis within 30 minutes of arrival - **tenecteplase weight-adjusted 30-50 mg IV bolus, or streptokinase 1.5 million units IV over 60 minutes** where cost dictates - under the STEMI India hub-and-spoke model.",
+        "**Absolute contraindications to thrombolysis:** any prior intracranial haemorrhage, ischaemic stroke within 3 months, known cerebral vascular malformation or intracranial malignancy, suspected aortic dissection, active bleeding, and significant closed head or facial trauma within 3 months.",
+        "**Morphine 2-4 mg IV** for pain that persists after nitrates; use it cautiously since it delays antiplatelet absorption. Avoid NSAIDs in acute coronary syndrome.",
+        "**Do not give sublingual nitrates in an inferior infarct with right ventricular involvement** (ST elevation in V4R, hypotension with clear lung fields) - it causes profound hypotension. Give fluids instead.",
+        "**Document the transfer:** pre-transfer ECG sent ahead where possible, drugs and doses given with times, the receiving hospital and person informed, and an accompanying attendant with a written note.",
+      ],
+    },
+    {
+      heading: "Safety netting and the use of time in chest pain",
+      points: [
+        "**Never send a patient home with unexplained chest pain and no plan.** The plan must contain a specific diagnosis or working hypothesis, a defined review point, and an explicit list of what should bring them back sooner.",
+        "**Words that work:** if the pain comes back at rest, lasts more than 15-20 minutes, comes with sweating, vomiting or breathlessness, or wakes you from sleep, do not wait for the appointment - go straight to the nearest hospital with an ECG facility, and chew an aspirin on the way unless you are allergic.",
+        "**Give the timescale for improvement:** musculoskeletal pain should be clearly better in 1-2 weeks; reflux should improve within 1-2 weeks of a proton pump inhibitor. Failure to follow that trajectory is itself an indication to reconsider the diagnosis.",
+        "**Watchful waiting is legitimate when the pretest probability is low, the ECG is normal, the patient is stable and reliable, and a defined review is booked** - typically 48-72 hours for a new pain and 1-2 weeks for a chronic one.",
+        "**Record the safety net verbatim in the notes.** Chest pain is the commonest cause of a serious missed diagnosis in general practice, and the documented safety net is what makes an uncertain decision a defensible one.",
+        "**Reassess rather than repeat.** If the pain returns unchanged after a normal work-up, take a fresh history rather than order the same test again - the story changes more often than the test does.",
+      ],
+    },
+  ],
+  tables: [
+    {
+      heading: "Causes of chest pain by setting",
+      columns: ["Cause", "General practice", "Emergency department", "Discriminating feature"],
+      rows: [
+        ["Musculoskeletal / chest wall", "25-35%", "5-10%", "Reproduced exactly by palpation, worse on movement"],
+        ["Gastro-oesophageal", "10-20%", "5-10%", "Burning, worse lying or after meals, regurgitation"],
+        ["Stable coronary disease", "8-12%", "10-15%", "Exertional, relieved by rest in minutes"],
+        ["Acute coronary syndrome", "1-3%", "15-25%", "Rest pain over 20 minutes with sweating or vomiting"],
+        ["Psychogenic / panic", "7-15%", "5-10%", "Peaks in 10 minutes, paraesthesiae, doom, recurrent"],
+        ["Pulmonary (pneumonia, PE, pneumothorax)", "5-10%", "10-15%", "Pleuritic, breathless, hypoxic, abnormal chest signs"],
+      ],
+    },
+    {
+      heading: "Marburg Heart Score (chest pain in primary care)",
+      columns: ["Item", "Points"],
+      rows: [
+        ["Age 55 years or more in men, 65 or more in women", "1"],
+        ["Known coronary, cerebrovascular or peripheral arterial disease", "1"],
+        ["Pain worse with exercise", "1"],
+        ["Pain not reproducible by palpation", "1"],
+        ["Patient assumes the pain is cardiac", "1"],
+        ["Score 0-2: coronary disease very unlikely (NPV about 97-98%)", "Reassure, treat the likely cause, safety net"],
+        ["Score 3-5: further evaluation needed", "ECG, risk factor assessment, functional or anatomical testing, referral"],
+      ],
+    },
+    {
+      heading: "Pretest probability and the test to choose in stable chest pain",
+      columns: ["Pretest probability", "Typical patient", "Recommended action"],
+      rows: [
+        ["Under 15%", "Young woman with non-anginal pain, no risk factors", "No cardiac testing; diagnose and treat the likely cause; safety net"],
+        ["15-65%", "45-year-old man with atypical pain and one risk factor", "Treadmill exercise test or CT coronary angiography"],
+        ["65-85%", "60-year-old diabetic man with atypical exertional pain", "Functional imaging - stress echocardiography or myocardial perfusion imaging"],
+        ["Over 85%", "65-year-old man with typical angina and prior vascular disease", "Treat as coronary disease and refer; a negative test would not change management"],
+      ],
+    },
+  ],
+  redFlags: [
+    "Chest pain at rest lasting more than 20 minutes with sweating, vomiting or breathlessness - acute coronary syndrome; ECG within 10 minutes and immediate transfer.",
+    "Sudden tearing pain radiating to the back with a blood pressure difference over 20 mmHg between arms or unequal pulses - aortic dissection; no thrombolysis, no anticoagulant, urgent imaging.",
+    "Pleuritic pain with sudden breathlessness, tachycardia and hypoxia, especially post-surgery, post-partum or after long travel - pulmonary embolism.",
+    "Chest pain with syncope, systolic BP below 90 mmHg, a new murmur, or a heart rate below 40 or above 150 per minute - haemodynamic compromise; resuscitate and transfer.",
+    "Pain with hyper-resonance, tracheal deviation and absent breath sounds - tension pneumothorax; needle decompression before any radiograph.",
+    "Severe chest pain following forceful vomiting with subcutaneous emphysema - oesophageal rupture; surgical emergency.",
+    "New chest pain in a diabetic, an elderly patient or a woman presenting only as breathlessness, fatigue, syncope or epigastric burning - a silent or atypical infarct.",
+    "Chest pain with fever, a pericardial rub and a raised JVP with pulsus paradoxus - pericarditis with tamponade; echocardiography urgently.",
+  ],
+  pearls: [
+    "Estimate the pretest probability before ordering the test, because the same treadmill result means opposite things in a 30-year-old woman and a 60-year-old diabetic man.",
+    "The setting changes the disease: the same chest pain that is 20% cardiac in a casualty is 8-12% cardiac in a consulting room and under 2% in a young low-risk patient.",
+    "A Marburg Heart Score of 0-2 has a negative predictive value of about 97-98% for coronary disease and is the single most useful primary-care tool for this symptom.",
+    "A normal ECG does not exclude acute coronary syndrome; up to a third of non-ST-elevation infarcts have a normal first tracing, so repeat it if the pain persists.",
+    "Reproducible chest wall tenderness lowers probability but never closes the case - it can coexist with a genuine infarct.",
+    "Relief of pain by an antacid or by a nitrate proves nothing: nitrates relax oesophageal spasm and antacids can settle anxiety.",
+    "In Indians, first infarction comes about six years earlier than in Europeans (INTERHEART), so a 45-year-old man with exertional pain is not a low-risk patient.",
+    "Never send chest pain home without three sentences: what I think it is, when it should get better, and exactly what should bring you back at once.",
+  ],
+  theory: [
+    {
+      id: "symptom-approach-chest-pain-t1",
+      paper: "II",
+      kind: "long",
+      marks: 10,
+      minutes: 20,
+      frequency: "core",
+      question:
+        "A 48-year-old man walks into your clinic with chest pain of one hour's duration. Discuss your approach, including the concept of pretest probability and the decision on where he should be managed.",
+      openingLines: [
+        "Chest pain is a symptom with a wide differential whose probabilities depend heavily on the setting: acute coronary syndrome accounts for 15-25% of chest pain in an emergency department but only 1-3% in a general practice consultation, while chest wall pain accounts for a quarter to a third of general practice presentations.",
+        "The approach has three sequential tasks - exclude the immediately life-threatening causes, estimate the pretest probability of coronary disease, and then decide between test, treat and watchful waiting with an explicit safety net.",
+      ],
+      answer: [
+        {
+          heading: "1. Immediate assessment for the life-threatening causes",
+          points: [
+            "Assess airway, breathing and circulation; record pulse in both arms, blood pressure in both arms, respiratory rate and oxygen saturation.",
+            "Obtain a 12-lead ECG within 10 minutes and repeat it after 15-30 minutes if pain persists with a normal first tracing.",
+            "Screen for the five that must not be missed: acute coronary syndrome, aortic dissection, pulmonary embolism, pneumothorax and oesophageal rupture.",
+            "Look for haemodynamic red flags - systolic BP under 90 mmHg, syncope, a new murmur, a raised JVP, hypoxia, or a heart rate under 40 or over 150 per minute.",
+          ],
+        },
+        {
+          heading: "2. History that defines the probability",
+          points: [
+            "Character, site, radiation, duration, provocation and relief; the three features of typical angina are substernal discomfort of characteristic quality and duration, provocation by exertion or emotion, and relief within minutes by rest or nitrate.",
+            "Three of three is typical angina, two of three atypical, one or none non-anginal.",
+            "Risk factors: age, sex, diabetes, hypertension, smoking, dyslipidaemia, family history of premature coronary disease, obesity, and physical inactivity.",
+            "Indian context: coronary disease presents about six years earlier in South Asians (INTERHEART), so a man of 48 with exertional pain must not be classed as young and low risk.",
+            "Apply the Marburg Heart Score - age 55 or more in men, known vascular disease, pain worse with exertion, pain not reproducible by palpation, and the patient believing it is cardiac; 0-2 makes coronary disease very unlikely, 3 or more requires evaluation.",
+          ],
+        },
+        {
+          heading: "3. Examination",
+          points: [
+            "Chest wall palpation for reproducible tenderness, cardiac auscultation for murmurs and a rub, lung fields for consolidation, effusion or pneumothorax, JVP, legs for deep vein thrombosis, and a skin examination for early zoster.",
+            "Chest wall tenderness lowers the probability of ischaemia but does not exclude it.",
+          ],
+        },
+        {
+          heading: "4. Investigation guided by pretest probability",
+          points: [
+            "Below 15%: no cardiac test; make a positive diagnosis of the likely cause and safety net.",
+            "15-65%: treadmill exercise test or CT coronary angiography.",
+            "65-85%: functional imaging such as stress echocardiography or myocardial perfusion imaging.",
+            "Above 85%: treat as coronary disease and refer, since a negative test would not change management.",
+            "Troponin at presentation and at 3 hours where an acute syndrome is suspected, interpreted with the rise-and-fall pattern; do not use a single troponin to exclude an event within 3 hours of onset.",
+            "Do not order a treadmill test with an uninterpretable baseline ECG, in a patient unable to exercise, or with ongoing rest pain.",
+          ],
+        },
+        {
+          heading: "5. Disposal and immediate treatment",
+          points: [
+            "If acute coronary syndrome is suspected: aspirin 325 mg chewed, clopidogrel 300 mg (75 mg if over 75), sublingual nitroglycerine 0.5 mg unless hypotensive or a right ventricular infarct is suspected, oxygen only if saturation is below 90%, and transfer by ambulance.",
+            "STEMI: primary PCI if achievable within 120 minutes of first medical contact, otherwise thrombolysis within 30 minutes with tenecteplase 30-50 mg by weight or streptokinase 1.5 million units over 60 minutes, after checking contraindications.",
+            "If a non-cardiac cause is established, treat it positively - NSAID and explanation for costochondritis, pantoprazole 40 mg once daily for reflux, breathing work and an SSRI for panic disorder.",
+            "Safety net in writing: return at once for rest pain over 15-20 minutes, sweating, vomiting, breathlessness or pain waking from sleep; give the expected timeline for improvement and a definite review date; document it verbatim.",
+          ],
+        },
+      ],
+      mustDraw: [
+        "A table of chest pain causes with their frequency in general practice versus the emergency department.",
+        "The Marburg Heart Score as a five-item table with the interpretation of 0-2 and 3-5.",
+        "A pretest probability ladder linking probability bands to the test chosen.",
+      ],
+      markSplit: [
+        { part: "Immediate exclusion of life-threatening causes with ECG timing", marks: 2 },
+        { part: "History, typical angina features and risk factors including the Indian context", marks: 2 },
+        { part: "Pretest probability and the Marburg Heart Score", marks: 2 },
+        { part: "Choice of investigation by probability band", marks: 2 },
+        { part: "Immediate treatment, referral pathway and safety netting", marks: 2 },
+      ],
+      keywords: ["chest pain", "pretest probability", "Marburg Heart Score", "typical angina", "STEMI", "safety netting"],
+    },
+    {
+      id: "symptom-approach-chest-pain-t2",
+      paper: "I",
+      kind: "short-note",
+      marks: 5,
+      minutes: 10,
+      frequency: "core",
+      question: "Write short notes on pretest probability and its influence on the interpretation of a diagnostic test in family practice.",
+      openingLines: [
+        "Pretest probability is the probability that a patient has a given disease before a test is performed, estimated from prevalence in that setting plus the patient's age, sex, risk factors and symptom pattern.",
+        "By Bayes theorem the post-test probability depends on the pretest probability and the likelihood ratio of the result, so the same test result carries entirely different meaning in different patients - which is why the family physician must estimate probability before ordering.",
+      ],
+      answer: [
+        {
+          heading: "The concepts",
+          points: [
+            "Sensitivity and specificity are properties of the test; predictive values are properties of the test in a particular population and change with prevalence.",
+            "Likelihood ratio of a positive result equals sensitivity divided by (1 minus specificity); a likelihood ratio above 10 or below 0.1 changes management, one near 1 does not.",
+            "Post-test odds equal pretest odds multiplied by the likelihood ratio; the Fagan nomogram performs this conversion graphically.",
+          ],
+        },
+        {
+          heading: "Worked example in chest pain",
+          points: [
+            "A treadmill test with 70% sensitivity and 75% specificity applied where prevalence is 10% gives a positive predictive value of about 24% - three of four positives are false.",
+            "The same test where prevalence is 80% gives a positive predictive value above 90% and a negative result that still does not exclude disease.",
+            "The consequence: test in the intermediate probability band, where the result can actually move the decision; do not test at the extremes.",
+          ],
+        },
+        {
+          heading: "Practical rules for the clinic",
+          points: [
+            "Estimate probability with a validated tool where one exists - Marburg Heart Score for chest pain, Wells score for pulmonary embolism and deep vein thrombosis, Centor and McIsaac score for sore throat, Ottawa rules for ankle and knee injury.",
+            "Ask before every test: what will I do differently if it is positive, and what if it is negative? If the answer is the same, do not order it.",
+            "Remember the harms of testing at low probability: false positives, incidental findings, cost, radiation, delay and iatrogenic anxiety.",
+            "Use serial assessment over time as a diagnostic instrument in place of a test when the probability is low - this is watchful waiting with safety netting.",
+          ],
+        },
+      ],
+      mustDraw: [
+        "A 2x2 table showing true positives, false positives, false negatives and true negatives, with the formulae for sensitivity, specificity and predictive values.",
+        "A worked calculation of positive predictive value at 10% and at 80% prevalence.",
+      ],
+      markSplit: [
+        { part: "Definition and Bayes theorem", marks: 1.5 },
+        { part: "Sensitivity, specificity, predictive values and likelihood ratios", marks: 1.5 },
+        { part: "Worked example showing prevalence changing the predictive value", marks: 1 },
+        { part: "Practical rules and validated scores", marks: 1 },
+      ],
+      keywords: ["pretest probability", "Bayes theorem", "likelihood ratio", "predictive value", "Fagan nomogram"],
+    },
+    {
+      id: "symptom-approach-chest-pain-t3",
+      paper: "II",
+      kind: "differentiate",
+      marks: 5,
+      minutes: 8,
+      frequency: "common",
+      question: "Differentiate cardiac from non-cardiac chest pain in general practice, and list the features that would make you refer immediately.",
+      openingLines: [
+        "Cardiac ischaemic pain arises from myocardial oxygen supply-demand mismatch and is therefore visceral - poorly localised, exertional and relieved by rest - whereas most non-cardiac chest pain is somatic or oesophageal and is localised, positional or food related.",
+        "No single feature is decisive, so the differentiation is made by combining several, and any residual doubt in a patient with risk factors is resolved in favour of investigation.",
+      ],
+      answer: [
+        {
+          heading: "Points of difference",
+          points: [
+            "Site: cardiac pain is diffuse and shown with a fist or open palm over the sternum; non-cardiac pain is often pointed to with one finger.",
+            "Quality: cardiac pain is heaviness, tightness, squeezing or burning; sharp, stabbing or knife-like pain is usually not ischaemic.",
+            "Duration: cardiac pain lasts 2-10 minutes in angina and over 20 minutes in an acute syndrome; seconds-long or constant days-long unchanged pain is not ischaemic.",
+            "Provocation: cardiac pain is provoked by exertion, emotion, cold and heavy meals; non-cardiac pain by posture, respiration, palpation, or food and lying flat in reflux.",
+            "Relief: cardiac pain settles with rest or nitrate within minutes; note that nitrates also relieve oesophageal spasm, so this is not decisive.",
+            "Associated features: sweating, nausea, vomiting and breathlessness favour a cardiac cause; paraesthesiae, perioral tingling and a sense of doom favour panic.",
+            "Examination: reproducible tenderness favours a chest wall cause; a fourth heart sound, a new murmur, a rub or crackles favour a cardiac cause.",
+          ],
+        },
+        {
+          heading: "Features demanding immediate referral",
+          points: [
+            "Rest pain lasting more than 20 minutes, or pain with sweating, vomiting or breathlessness.",
+            "Any ischaemic change on ECG - ST elevation or depression, new T inversion, or new left bundle branch block.",
+            "Haemodynamic instability: systolic BP below 90 mmHg, syncope, heart rate below 40 or above 150 per minute.",
+            "Tearing pain with a blood pressure difference over 20 mmHg between arms or unequal pulses - aortic dissection.",
+            "Pleuritic pain with hypoxia and tachycardia in a patient with thromboembolic risk factors.",
+            "Chest pain in a diabetic or an elderly patient presenting atypically as breathlessness, fatigue, syncope or epigastric burning.",
+          ],
+        },
+      ],
+      mustDraw: ["A two-column table contrasting cardiac and non-cardiac chest pain across site, quality, duration, provocation, relief, associated features and examination."],
+      markSplit: [
+        { part: "Tabulated differences", marks: 3 },
+        { part: "Features demanding immediate referral", marks: 2 },
+      ],
+      keywords: ["cardiac chest pain", "non-cardiac chest pain", "costochondritis", "reflux", "referral criteria"],
+    },
+  ],
+  mcqs: [
+    {
+      id: "symptom-approach-chest-pain-q1",
+      stem: "A 34-year-old woman attends with three weeks of left-sided chest pain, sharp, worse on deep breathing and on lifting her child. She does not smoke, has no diabetes or hypertension, and no family history of heart disease. Pressing over the left fourth costochondral junction reproduces her pain exactly. ECG is normal. What is the best next step?",
+      options: [
+        "Order a treadmill exercise test to exclude coronary disease",
+        "Order high-sensitivity troponin at 0 and 3 hours",
+        "Diagnose costochondritis, explain it, prescribe a short NSAID course and safety net with a review in two weeks",
+        "Refer for CT coronary angiography",
+        "Start pantoprazole 40 mg daily and review in eight weeks",
+      ],
+      answer: 2,
+      explanation:
+        "Her Marburg Heart Score is 0-1, the pain is reproduced exactly by palpation and varies with respiration and movement, so the pretest probability of coronary disease is far below 15% and a positive diagnosis of costochondritis with explanation, analgesia and a safety net is correct. A treadmill test at this probability produces mostly false positives and starts a cascade of further testing. Troponin is a test for acute myocardial injury and has no role in three weeks of positional pain with a normal ECG. CT coronary angiography adds radiation, contrast and cost with no plausible yield. A proton pump inhibitor treats reflux, which does not fit pain reproduced by palpation and worsened by breathing.",
+      difficulty: "easy",
+    },
+    {
+      id: "symptom-approach-chest-pain-q2",
+      stem: "A 57-year-old diabetic man reports 40 minutes of central chest heaviness with sweating and vomiting that began at rest. He is pale, pulse 96 per minute, BP 106/70 mmHg. ECG shows 2 mm ST elevation in leads II, III and aVF. The nearest catheterisation laboratory is 3 hours away and your facility has thrombolytics. What should you do first after aspirin and clopidogrel loading?",
+      options: [
+        "Give sublingual nitroglycerine 0.5 mg to relieve the pain",
+        "Record a right-sided ECG (V4R) before giving nitrates, and prepare thrombolysis",
+        "Give intravenous furosemide 40 mg",
+        "Wait for troponin before any further treatment",
+        "Arrange transfer for primary PCI regardless of the travel time",
+      ],
+      answer: 1,
+      explanation:
+        "Inferior ST elevation with borderline blood pressure demands a right-sided ECG because right ventricular infarction is preload dependent, and nitrates in that setting cause profound hypotension; meanwhile thrombolysis must be prepared because PCI cannot be delivered within 120 minutes of first medical contact. Giving nitroglycerine before excluding right ventricular involvement is the specific error the question tests. Furosemide would worsen the hypotension in a preload-dependent infarct. Waiting for troponin wastes myocardium in a diagnosis already made by ST elevation. Transferring for primary PCI three hours away breaches the 120-minute rule and delays reperfusion that could be given now.",
+      difficulty: "hard",
+    },
+    {
+      id: "symptom-approach-chest-pain-q3",
+      stem: "A treadmill test has a sensitivity of 70% and specificity of 75% for obstructive coronary disease. It is used in a primary care population in which the pretest probability of coronary disease is 10%. Approximately what proportion of positive tests will be true positives?",
+      options: [
+        "About 70%",
+        "About 50%",
+        "About 24%",
+        "About 90%",
+        "About 10%",
+      ],
+      answer: 2,
+      explanation:
+        "In 1000 patients with 10% prevalence there are 100 with disease and 900 without; the test finds 70 true positives and 225 false positives (25% of 900), so the positive predictive value is 70 divided by 295, about 24%. Seventy per cent is the sensitivity, which is a property of the test and not the probability that a positive result is correct - confusing the two is the classic error. Fifty per cent and ninety per cent would require a much higher prevalence than a primary care chest pain population has. Ten per cent is the pretest probability itself, which a positive test should raise, not leave unchanged.",
+      difficulty: "hard",
+    },
+    {
+      id: "symptom-approach-chest-pain-q4",
+      stem: "A 63-year-old man with hypertension develops sudden severe chest pain radiating to the interscapular region. BP is 178/96 mmHg in the right arm and 142/84 mmHg in the left. ECG shows no ST elevation. What is the most important immediate action?",
+      options: [
+        "Give thrombolysis for a presumed evolving myocardial infarction",
+        "Start heparin infusion for a presumed non-ST-elevation acute coronary syndrome",
+        "Arrange urgent CT aortogram and control the heart rate and blood pressure, avoiding thrombolysis and anticoagulation",
+        "Give sublingual nitroglycerine and reassess in 15 minutes",
+        "Discharge on a proton pump inhibitor as the ECG is normal",
+      ],
+      answer: 2,
+      explanation:
+        "Sudden tearing interscapular pain with a 36 mmHg inter-arm blood pressure difference is aortic dissection, so imaging must be arranged urgently while heart rate and blood pressure are lowered with an intravenous beta-blocker, and thrombolysis and anticoagulation are absolutely avoided because they cause catastrophic haemorrhage. Thrombolysis in dissection is the single most lethal error in this scenario. Heparin carries the same danger. Nitrates without first controlling heart rate increase the shear stress on the aortic wall through reflex tachycardia. Discharge on a proton pump inhibitor ignores a time-critical surgical emergency in which a normal ECG is expected.",
+      difficulty: "moderate",
+    },
+    {
+      id: "symptom-approach-chest-pain-q5",
+      stem: "A 29-year-old man has had five episodes over two months of chest tightness with palpitations, tingling in the fingers, dizziness and a fear that he is dying, each peaking within 10 minutes and settling in half an hour. ECG, echocardiography and thyroid function are normal and he has no cardiac risk factors. What is the most appropriate management?",
+      options: [
+        "Repeat the ECG and echocardiography every three months for reassurance",
+        "Make a positive diagnosis of panic disorder, teach controlled breathing, and offer cognitive behavioural therapy with an SSRI such as escitalopram 10 mg daily",
+        "Prescribe alprazolam 0.5 mg to be taken during each attack indefinitely",
+        "Refer for CT coronary angiography to be certain",
+        "Advise complete rest and avoidance of all physical exertion",
+      ],
+      answer: 1,
+      explanation:
+        "Recurrent discrete attacks peaking within 10 minutes with paraesthesiae, palpitations and a fear of dying, in a young man with a normal cardiac work-up, satisfy the criteria for panic disorder, which must be diagnosed positively and treated with breathing retraining, cognitive behavioural therapy and an SSRI. Repeating normal investigations reinforces health anxiety and provides reassurance that lasts only days. Long-term as-needed benzodiazepines cause tolerance, dependence and rebound anxiety and undermine exposure-based therapy. CT coronary angiography in a 29-year-old with no risk factors is radiation and cost with essentially no yield. Advising avoidance of exertion reinforces avoidance behaviour and worsens the disorder.",
+      difficulty: "easy",
+    },
+    {
+      id: "symptom-approach-chest-pain-q6",
+      stem: "A 68-year-old woman with diabetes presents with two days of increasing breathlessness and epigastric burning, with no chest pain. She attributes it to indigestion. Pulse is 104 per minute and she has bibasal crackles. What is the most appropriate immediate action?",
+      options: [
+        "Prescribe an antacid and review in one week",
+        "Record a 12-lead ECG immediately and treat as a possible acute coronary syndrome",
+        "Order an upper gastrointestinal endoscopy",
+        "Start amoxicillin-clavulanate for a lower respiratory tract infection",
+        "Advise a lactose-free diet and review in 48 hours",
+      ],
+      answer: 1,
+      explanation:
+        "Diabetic women commonly present with an anginal equivalent rather than chest pain, and breathlessness with epigastric burning, tachycardia and pulmonary crackles is a silent infarct with incipient failure until an ECG says otherwise. An antacid with a week's review is exactly how these deaths happen. Endoscopy investigates a symptom that is being misattributed and delays the time-critical diagnosis. Antibiotics for crackles without fever or focal signs treat the wrong organ. Dietary advice ignores an acutely unwell patient with objective abnormal signs.",
+      difficulty: "moderate",
+    },
+  ],
+  cards: [
+    {
+      id: "symptom-approach-chest-pain-c1",
+      front: "Frequency of acute coronary syndrome among chest pain patients: casualty versus general practice.",
+      back: "15-25% in an emergency department, only 1-3% in a general practice consultation; chest wall pain accounts for 25-35% in general practice.",
+    },
+    {
+      id: "symptom-approach-chest-pain-c2",
+      front: "The three features of typical angina.",
+      back: "Substernal discomfort of characteristic quality and duration; provoked by exertion or emotion; relieved within minutes by rest or nitrate. Three of three typical, two atypical, one or none non-anginal.",
+    },
+    {
+      id: "symptom-approach-chest-pain-c3",
+      front: "The five items of the Marburg Heart Score.",
+      back: "Age 55+ in men or 65+ in women; known vascular disease; pain worse with exertion; pain not reproducible by palpation; patient assumes it is cardiac. 0-2 makes coronary disease very unlikely.",
+    },
+    {
+      id: "symptom-approach-chest-pain-c4",
+      front: "Pretest probability bands and the test to choose in stable chest pain.",
+      back: "Under 15% no test; 15-65% treadmill or CT coronary angiography; 65-85% functional imaging; over 85% treat and refer.",
+    },
+    {
+      id: "symptom-approach-chest-pain-c5",
+      front: "Five causes of chest pain that must not be missed.",
+      back: "Acute coronary syndrome, aortic dissection, pulmonary embolism, tension pneumothorax, oesophageal rupture.",
+    },
+    {
+      id: "symptom-approach-chest-pain-c6",
+      front: "Does a normal ECG exclude an acute coronary syndrome?",
+      back: "No. Up to a third of non-ST-elevation infarcts have a normal first ECG; repeat it after 15-30 minutes if pain persists and compare with an old tracing.",
+    },
+    {
+      id: "symptom-approach-chest-pain-c7",
+      front: "First drugs for suspected acute coronary syndrome in a clinic.",
+      back: "Aspirin 325 mg chewed plus clopidogrel 300 mg (75 mg if over 75), sublingual nitroglycerine 0.5 mg unless hypotensive or right ventricular infarct, oxygen only if saturation under 90%, ambulance transfer.",
+    },
+    {
+      id: "symptom-approach-chest-pain-c8",
+      front: "Reperfusion timing rule in STEMI.",
+      back: "Primary PCI if achievable within 120 minutes of first medical contact; otherwise thrombolysis within 30 minutes - tenecteplase 30-50 mg by weight or streptokinase 1.5 million units over 60 minutes.",
+    },
+    {
+      id: "symptom-approach-chest-pain-c9",
+      front: "When must you not give sublingual nitrates in an infarct?",
+      back: "Inferior infarct with right ventricular involvement (ST elevation in V4R, hypotension with clear lungs) - give fluids instead. Also avoid if systolic BP is below 90 mmHg or a PDE-5 inhibitor was taken in 24-48 hours.",
+    },
+    {
+      id: "symptom-approach-chest-pain-c10",
+      front: "Why is the INTERHEART finding relevant to Indian chest pain?",
+      back: "South Asians have their first myocardial infarction about six years earlier (mean about 53 years), so a 45-year-old Indian man with exertional pain is not low risk.",
+    },
+    {
+      id: "symptom-approach-chest-pain-c11",
+      front: "Does relief by an antacid or a nitrate settle the diagnosis?",
+      back: "No. Nitrates relieve oesophageal spasm and antacids can settle anxiety-related pain; response to treatment is not a diagnostic test.",
+    },
+    {
+      id: "symptom-approach-chest-pain-c12",
+      front: "The chest pain safety net, in the words to use.",
+      back: "Go straight to a hospital with an ECG if the pain comes at rest, lasts over 15-20 minutes, comes with sweating, vomiting or breathlessness, or wakes you from sleep - and chew an aspirin on the way unless allergic.",
+    },
+  ],
+  references: [
+    "ESC Guidelines for the Management of Chronic Coronary Syndromes, 2019 and 2024",
+    "Bosner S et al, Ruling out coronary artery disease in primary care: the Marburg Heart Score, CMAJ, 2010",
+    "Yusuf S et al, INTERHEART study, Lancet 2004, and the South Asian INTERHEART analysis, JAMA 2007",
+    "STEMI India hub-and-spoke model and the Tamil Nadu STEMI programme reports, 2014-2020",
+    "NICE Clinical Guideline CG95: Recent-onset chest pain of suspected cardiac origin, updated 2016",
+    "Fourth Universal Definition of Myocardial Infarction, ESC/ACC/AHA/WHF, 2018",
+  ],
+});
+
+topics.push({
+  id: "symptom-approach-breathlessness",
+  title: "Breathlessness",
+  oneLiner:
+    "Breathlessness is the conscious awareness of an uncomfortable need to breathe, and the family physician sorts it first by speed of onset, then by whether the cause is cardiac, respiratory, haematological, metabolic or psychological, using an oxygen saturation, a chest examination, an ECG and a chest radiograph to make the split before committing to treatment.",
+  frequency: "common",
+  keywords: [
+    "dyspnoea",
+    "shortness of breath",
+    "saans phoolna",
+    "MRC dyspnoea scale",
+    "orthopnoea",
+    "paroxysmal nocturnal dyspnoea",
+    "heart failure",
+    "NT-proBNP",
+    "asthma",
+    "COPD",
+    "biomass fuel",
+    "anaemia",
+    "pulmonary embolism",
+    "hyperventilation",
+    "spirometry",
+    "peak expiratory flow",
+    "pulse oximetry",
+    "cor pulmonale",
+  ],
+  sections: [
+    {
+      heading: "Defining and grading the symptom",
+      points: [
+        "**Dyspnoea is a subjective experience of breathing discomfort** with qualitatively distinct sensations - air hunger, chest tightness and increased work of breathing - each pointing to different mechanisms; ask which of these it feels like, because tightness suggests bronchoconstriction and air hunger suggests hypoxaemia or metabolic acidosis.",
+        "**Grade it with the modified MRC scale** at the first visit: 0 breathless only on strenuous exercise; 1 short of breath hurrying on the level or walking up a slight hill; 2 walks slower than others of the same age or stops for breath on the level; 3 stops after about 100 metres or a few minutes on the level; 4 too breathless to leave the house or breathless on dressing.",
+        "**Record what changed:** the grade last month or last year is worth more than the grade today, because the rate of change separates a stable chronic disease from a decompensation.",
+        "**Speed of onset is the first branch point.** Minutes: pneumothorax, pulmonary embolism, acute left ventricular failure, anaphylaxis, aspiration, arrhythmia, acute severe asthma. Hours to days: pneumonia, asthma or COPD exacerbation, heart failure, metabolic acidosis, effusion. Weeks to months: anaemia, interstitial lung disease, chronic heart failure, deconditioning, tuberculosis, pleural effusion, thyroid disease, pregnancy, obesity.",
+        "**Ask for the trio that identifies cardiac dyspnoea:** orthopnoea (how many pillows, and whether that has changed), paroxysmal nocturnal dyspnoea (waking at night gasping and going to the window), and ankle swelling that is worse in the evening.",
+        "**Ask for the respiratory pattern:** episodic breathlessness with wheeze, cough and night or early morning worsening, with triggers such as dust, cold air or exercise, is asthma; progressive breathlessness with chronic productive cough in a smoker or a woman with lifelong biomass fuel exposure is COPD.",
+      ],
+    },
+    {
+      heading: "Causes worth remembering in Indian practice",
+      points: [
+        "**Anaemia is a leading and easily missed cause** - NFHS-5 found anaemia in 57% of women aged 15-49 - and breathlessness on exertion with pallor and a haemic flow murmur may be the whole story.",
+        "**COPD from biomass fuel** is a distinctively Indian entity: a never-smoking woman who has cooked on a chulha with wood or dung cakes for 20 years can have fixed airflow obstruction, and the diagnosis is missed if the smoking question is the only exposure asked about.",
+        "**Tuberculosis** presents as breathlessness through pleural effusion, extensive parenchymal disease, or post-tubercular fibrosis and bronchiectasis; ask about past treatment, and remember that post-TB lung disease is now a major cause of chronic breathlessness in India.",
+        "**Rheumatic heart disease** remains common: a young woman with progressive breathlessness, a loud first heart sound and a mid-diastolic murmur has mitral stenosis, and pregnancy or a tachyarrhythmia often unmasks it.",
+        "**Air pollution and occupational exposure:** silicosis in stone crushers and agate workers, byssinosis in textile mills, asthma in bakers and painters, and the winter pollution peaks in the northern plains that drive exacerbations across whole cities.",
+        "**Metabolic and other causes not to forget:** diabetic ketoacidosis (deep sighing Kussmaul breathing with dehydration), chronic kidney disease with acidosis and fluid overload, thyrotoxicosis, obesity and deconditioning, pregnancy (physiological in about 70% by the third trimester), and hyperventilation with anxiety.",
+      ],
+    },
+    {
+      heading: "Examination and bedside measurement",
+      points: [
+        "**Measure, do not estimate:** respiratory rate counted over a full minute, pulse oximetry at rest and after walking, pulse, blood pressure, temperature, and peak expiratory flow rate where obstruction is suspected.",
+        "**A resting saturation below 94% on air, or a fall of 4% or more on walking, is objective evidence of pathology** and reclassifies the consultation immediately.",
+        "**Signs of severity:** inability to complete a sentence, respiratory rate above 30 per minute, use of accessory muscles, silent chest, cyanosis, altered sensorium, and a rising pulse with a falling saturation.",
+        "**Cardiac examination:** JVP, apex position and character, third heart sound, murmurs, bibasal crepitations that do not clear on coughing, pedal oedema, and tender hepatomegaly.",
+        "**Respiratory examination:** trachea position, chest expansion, percussion note, breath sounds, wheeze, crackles (fine end-inspiratory in interstitial disease, coarse in bronchiectasis, basal in failure), and a pleural rub.",
+        "**Look for the systemic clues:** pallor, clubbing, cyanosis, lymphadenopathy, goitre, ascites, and calf swelling or tenderness for deep vein thrombosis.",
+      ],
+    },
+    {
+      heading: "Investigations that change management",
+      points: [
+        "**First line in the clinic:** haemoglobin and complete blood count, blood glucose, chest radiograph, ECG, and oxygen saturation. These four plus the examination separate most causes.",
+        "**Spirometry with reversibility** is the diagnostic test for obstructive disease: a post-bronchodilator FEV1/FVC below 0.70 defines COPD; an FEV1 improvement of 12% and 200 mL or more after a bronchodilator supports asthma, though a negative test does not exclude it.",
+        "**Peak expiratory flow diurnal variability above 20%** or a symptom diary supports asthma where spirometry is unavailable, which is the reality in most Indian primary care.",
+        "**NT-proBNP or BNP where available:** an NT-proBNP below 125 pg/mL in the non-acute setting, or below 300 pg/mL acutely, makes heart failure very unlikely and is the most useful rule-out test; a raised value is less specific because age, atrial fibrillation, renal impairment and pulmonary embolism all raise it.",
+        "**Echocardiography** is the definitive test for heart failure and valvular disease, and is what a raised NT-proBNP or an abnormal ECG should lead to.",
+        "**Targeted additions:** sputum Xpert MTB/RIF for cough over two weeks, D-dimer with a Wells score for suspected pulmonary embolism, TSH, renal function with electrolytes, HIV testing where indicated, and arterial or venous blood gas when acidosis is suspected.",
+      ],
+    },
+    {
+      heading: "Managing the common diagnoses",
+      points: [
+        "**Acute severe asthma:** salbutamol 2.5-5 mg by nebuliser (or 4-10 puffs by metered-dose inhaler with a spacer) repeated every 20 minutes for an hour, ipratropium 0.5 mg added in severe attacks, and prednisolone 40-50 mg PO daily for 5 days started within an hour. Refer if the peak flow stays below 50% of predicted, saturation is below 92%, or the patient cannot speak in sentences.",
+        "**COPD exacerbation:** short-acting bronchodilators, prednisolone 40 mg PO daily for 5 days, and an antibiotic (amoxicillin-clavulanate 625 mg PO TDS or doxycycline 100 mg PO BD for 5 days) only when sputum has become purulent or there is increased volume with increased breathlessness. Controlled oxygen to a target saturation of 88-92%, never high-flow.",
+        "**Acute heart failure with pulmonary oedema:** sit the patient up, oxygen to a target above 90%, furosemide 40 mg IV (or twice the usual oral dose in those already on it), nitrates if systolic BP is above 110 mmHg, and urgent transfer; look for and treat the precipitant - infection, arrhythmia, anaemia, non-adherence, salt load or an NSAID.",
+        "**Chronic heart failure with reduced ejection fraction:** the four pillars - an ARNI or ACE inhibitor, a beta-blocker, a mineralocorticoid receptor antagonist and an SGLT2 inhibitor - each started at low dose and titrated, with furosemide for congestion only, plus salt and fluid advice and daily weights.",
+        "**Anaemia:** treat the cause, not just the number. Oral iron 60 mg elemental daily on an empty stomach with vitamin C, expecting a haemoglobin rise of about 1 g/dL in 2-3 weeks, and reserve transfusion for haemodynamic compromise or a haemoglobin below 7 g/dL with symptoms.",
+        "**Hyperventilation and anxiety-related breathlessness** is a positive diagnosis: episodic breathlessness at rest with sighing, chest tightness, perioral and finger tingling, and normal saturation. Teach diaphragmatic breathing with a prolonged expiration, treat the anxiety disorder, and never use a paper bag, which has caused deaths when the cause was actually hypoxic.",
+      ],
+    },
+    {
+      heading: "Referral, safety netting and the breathless patient at the end of life",
+      points: [
+        "**Admit or refer the same day:** saturation below 92% on air, respiratory rate above 30 per minute, inability to complete a sentence, altered sensorium, systolic BP below 90 mmHg, suspected pulmonary embolism or pneumothorax, new heart failure with pulmonary oedema, and any breathlessness the family physician cannot explain in a patient who looks unwell.",
+        "**Use the walking oximetry test in the clinic** - saturation before and after walking 40 steps or for 6 minutes - to catch the patient who looks well at rest but desaturates, particularly in interstitial disease and after COVID-19.",
+        "**Safety net for the patient sent home:** return at once for breathlessness at rest, inability to speak in full sentences, blue lips, chest pain, confusion, a fever that persists beyond three days, or coughing blood; give the expected timeline for improvement and a definite review.",
+        "**Written action plans work in asthma and COPD:** the daily inhaler, the reliever, when to double or start prednisolone, and the number to call - they reduce admissions and are a genuinely evidence-based family practice intervention.",
+        "**Check inhaler technique at every visit.** More treatment failures are caused by poor technique than by inadequate drug, and a spacer converts a failing metered-dose inhaler into an effective one at almost no cost.",
+        "**Breathlessness in advanced disease** is treated as a symptom in its own right: a fan directed at the face, positioning, breathing techniques, treatment of anaemia and effusion where appropriate, and **low-dose oral morphine 2.5-5 mg every 4 hours** titrated carefully, which relieves the sensation without hastening death when used properly.",
+      ],
+    },
+  ],
+  tables: [
+    {
+      heading: "Modified MRC dyspnoea scale",
+      columns: ["Grade", "Description"],
+      rows: [
+        ["0", "Breathless only on strenuous exercise"],
+        ["1", "Short of breath when hurrying on the level or walking up a slight hill"],
+        ["2", "Walks slower than people of the same age on the level, or stops for breath at own pace"],
+        ["3", "Stops for breath after about 100 metres or after a few minutes on the level"],
+        ["4", "Too breathless to leave the house, or breathless while dressing or undressing"],
+      ],
+    },
+    {
+      heading: "Speed of onset and likely cause",
+      columns: ["Onset", "Causes", "First actions"],
+      rows: [
+        ["Seconds to minutes", "Pneumothorax, pulmonary embolism, anaphylaxis, aspiration, acute LV failure, arrhythmia, acute severe asthma", "Saturation, ECG, immediate treatment and transfer"],
+        ["Hours to days", "Pneumonia, asthma or COPD exacerbation, heart failure, metabolic acidosis, pleural effusion", "Chest radiograph, glucose, haemoglobin, ECG, treat and reassess"],
+        ["Weeks to months", "Anaemia, tuberculosis, interstitial lung disease, chronic heart failure, effusion, deconditioning, thyroid disease, pregnancy", "Full clinic panel, spirometry, echocardiography, walking oximetry"],
+      ],
+    },
+    {
+      heading: "Cardiac versus respiratory versus other breathlessness",
+      columns: ["Feature", "Cardiac", "Respiratory", "Anaemia / metabolic / anxiety"],
+      rows: [
+        ["Orthopnoea and PND", "Characteristic", "Uncommon except in severe COPD", "Absent"],
+        ["Wheeze", "Cardiac wheeze possible in acute failure", "Common in asthma and COPD", "Absent"],
+        ["Cough", "Frothy pink sputum in acute failure", "Chronic productive or dry", "Absent"],
+        ["Examination", "Raised JVP, S3, basal crackles, pedal oedema", "Prolonged expiration, wheeze, barrel chest, reduced breath sounds", "Pallor, Kussmaul breathing, normal chest"],
+        ["Oxygen saturation", "Low in acute failure", "Low, may fall further on walking", "Normal in anaemia and anxiety"],
+        ["Best rule-out test", "NT-proBNP below 125 pg/mL (non-acute)", "Spirometry with reversibility", "Haemoglobin, glucose, blood gas, GAD-7"],
+      ],
+    },
+  ],
+  redFlags: [
+    "Oxygen saturation below 92% on room air, or a fall of 4% or more on walking - hypoxaemia needing oxygen and admission.",
+    "Inability to complete a sentence, respiratory rate above 30 per minute, use of accessory muscles or a silent chest - impending respiratory failure.",
+    "Sudden breathlessness with pleuritic chest pain and tachycardia in a patient with immobility, surgery, pregnancy or malignancy - pulmonary embolism.",
+    "Sudden breathlessness with unilateral hyper-resonance and absent breath sounds - pneumothorax, tension if there is hypotension and tracheal shift.",
+    "Breathlessness with frothy pink sputum, orthopnoea and bibasal crackles - acute pulmonary oedema; sit up, oxygen, intravenous furosemide, transfer.",
+    "Breathlessness with stridor, drooling, urticaria or angioedema - upper airway obstruction or anaphylaxis; adrenaline 0.5 mg intramuscularly into the anterolateral thigh at once.",
+    "Deep sighing breathing with dehydration and abdominal pain in a diabetic - diabetic ketoacidosis; check ketones and glucose immediately.",
+    "New breathlessness with haemoptysis, weight loss or a fever for more than two weeks - tuberculosis, malignancy or lung abscess.",
+  ],
+  pearls: [
+    "Speed of onset is the first branch point in breathlessness - minutes, days or months separates the differential better than any single sign.",
+    "Measure the saturation before and after walking; the patient who is normal at rest and desaturates on walking is the one who is missed.",
+    "In a never-smoking Indian woman with fixed airflow obstruction, ask about the chulha - biomass smoke causes COPD indistinguishable from the tobacco form.",
+    "An NT-proBNP below 125 pg/mL in the outpatient setting effectively rules out heart failure; a raised value is much less specific.",
+    "Orthopnoea and paroxysmal nocturnal dyspnoea are cardiac until proved otherwise; ask how many pillows, and whether the number changed.",
+    "Never treat hyperventilation with a paper bag - if the cause turns out to be hypoxic, rebreathing kills.",
+    "Check inhaler technique at every single visit; a spacer rescues more failing asthma than a new molecule does.",
+    "Low-dose oral morphine relieves breathlessness in advanced disease without hastening death, and withholding it is a failure of symptom control.",
+  ],
+  theory: [
+    {
+      id: "symptom-approach-breathlessness-t1",
+      paper: "II",
+      kind: "long",
+      marks: 10,
+      minutes: 20,
+      frequency: "core",
+      question:
+        "A 55-year-old woman presents with breathlessness on exertion for three months. Outline the differential diagnosis and your stepwise approach to evaluation and management in family practice.",
+      openingLines: [
+        "Dyspnoea is the conscious awareness of an uncomfortable need to breathe; it is graded by the modified MRC scale and its differential is best organised first by speed of onset and then by system - cardiac, respiratory, haematological, metabolic and psychological.",
+        "Chronic exertional breathlessness over three months in an Indian woman of 55 most often reflects anaemia, chronic obstructive pulmonary disease including the biomass-related form, heart failure, valvular disease of rheumatic origin, post-tubercular lung disease, or deconditioning with obesity.",
+      ],
+      answer: [
+        {
+          heading: "1. Characterise and grade",
+          points: [
+            "Define onset, progression, and the modified MRC grade now and three months ago - the rate of change matters more than the current grade.",
+            "Ask about orthopnoea, paroxysmal nocturnal dyspnoea and ankle swelling for cardiac causes; wheeze, cough, sputum and diurnal variation for respiratory causes.",
+            "Ask about the qualitative sensation - chest tightness suggests bronchoconstriction, air hunger suggests hypoxaemia or acidosis, and increased work suggests restriction.",
+          ],
+        },
+        {
+          heading: "2. Differential diagnosis",
+          points: [
+            "Cardiac: heart failure with reduced or preserved ejection fraction, rheumatic mitral stenosis, ischaemic heart disease presenting as an anginal equivalent, arrhythmia, pericardial effusion.",
+            "Respiratory: COPD including biomass-related disease, asthma, post-tubercular lung disease and bronchiectasis, interstitial lung disease, pleural effusion, lung cancer.",
+            "Haematological: iron deficiency anaemia, which affects 57% of Indian women aged 15-49 by NFHS-5.",
+            "Metabolic and endocrine: diabetic ketoacidosis, chronic kidney disease with acidosis, thyrotoxicosis, obesity and deconditioning.",
+            "Psychological: hyperventilation syndrome with anxiety - a positive diagnosis, never one of exclusion alone.",
+          ],
+        },
+        {
+          heading: "3. History and examination",
+          points: [
+            "Exposure history: tobacco in all forms, biomass fuel and years of chulha cooking, occupational dust, past tuberculosis and its treatment, and drugs including beta-blockers and NSAIDs.",
+            "Measure respiratory rate over a full minute, oxygen saturation at rest and after walking, pulse, blood pressure and temperature.",
+            "Cardiac examination: JVP, apex, third heart sound, murmurs, basal crackles, pedal oedema, tender hepatomegaly.",
+            "Respiratory examination: trachea, expansion, percussion, breath sounds, wheeze, crackles and rub.",
+            "General: pallor, clubbing, cyanosis, goitre, lymph nodes and calf tenderness.",
+          ],
+        },
+        {
+          heading: "4. Investigations",
+          points: [
+            "First line: complete blood count, blood glucose, chest radiograph, ECG and pulse oximetry with a walking test.",
+            "Spirometry with bronchodilator reversibility - post-bronchodilator FEV1/FVC below 0.70 defines COPD; a 12% and 200 mL improvement supports asthma.",
+            "NT-proBNP where available - below 125 pg/mL in the non-acute setting effectively excludes heart failure; echocardiography if raised or if the ECG is abnormal.",
+            "Targeted: sputum Xpert MTB/RIF if cough exceeds two weeks, TSH, renal function, D-dimer with a Wells score if embolism is suspected, and HIV testing where indicated.",
+          ],
+        },
+        {
+          heading: "5. Management and safety netting",
+          points: [
+            "Treat the diagnosis made: inhaled therapy with checked technique and a spacer for obstructive disease, iron for deficiency anaemia with a search for the cause, the four pillars of heart failure therapy for reduced ejection fraction, and NTEP treatment for tuberculosis.",
+            "Non-drug measures in every case: tobacco cessation, a clean cooking fuel and improved ventilation, pulmonary rehabilitation or graded walking, weight reduction, influenza and pneumococcal vaccination in chronic lung disease.",
+            "Write an action plan for asthma and COPD stating the daily inhaler, the reliever, when to start prednisolone, and whom to call.",
+            "Refer or admit for saturation below 92%, respiratory rate above 30, inability to speak in sentences, suspected embolism or pneumothorax, or new pulmonary oedema.",
+            "Safety net: return at once for rest breathlessness, blue lips, chest pain, confusion, haemoptysis or a fever beyond three days; review in 2-4 weeks with a repeat MRC grade and walking oximetry.",
+          ],
+        },
+      ],
+      mustDraw: [
+        "A table of the modified MRC dyspnoea scale, grades 0 to 4.",
+        "A three-column table separating cardiac, respiratory and other breathlessness by orthopnoea, examination findings, saturation and the best rule-out test.",
+      ],
+      markSplit: [
+        { part: "Definition, grading and characterisation", marks: 2 },
+        { part: "Differential diagnosis by system with the Indian causes", marks: 2 },
+        { part: "History, exposure and examination", marks: 2 },
+        { part: "Investigations including spirometry and NT-proBNP", marks: 2 },
+        { part: "Management, referral criteria and safety netting", marks: 2 },
+      ],
+      keywords: ["dyspnoea", "MRC grade", "biomass COPD", "NT-proBNP", "walking oximetry", "action plan"],
+    },
+    {
+      id: "symptom-approach-breathlessness-t2",
+      paper: "II",
+      kind: "short-note",
+      marks: 5,
+      minutes: 10,
+      frequency: "common",
+      question: "Write short notes on the assessment and initial management of acute severe asthma in a primary care setting.",
+      openingLines: [
+        "Acute severe asthma is an exacerbation with a peak expiratory flow of 33-50% of predicted or best, a respiratory rate of 25 per minute or more, a pulse of 110 per minute or more, or an inability to complete sentences in one breath.",
+        "Life-threatening features are a peak flow under 33%, saturation under 92%, a silent chest, cyanosis, poor respiratory effort, bradycardia, hypotension, exhaustion, confusion or coma - and these mandate immediate transfer while treatment is being given.",
+      ],
+      answer: [
+        {
+          heading: "Rapid assessment",
+          points: [
+            "Ability to speak in sentences, respiratory rate, pulse, oxygen saturation, peak expiratory flow as a percentage of predicted or personal best.",
+            "Look for accessory muscle use, silent chest, cyanosis, exhaustion and altered sensorium.",
+            "Ask about previous intensive care or intubation, recent oral steroid use, frequent reliever use, and non-adherence - all markers of a near-fatal risk.",
+          ],
+        },
+        {
+          heading: "Immediate treatment",
+          points: [
+            "Oxygen to a target saturation of 94-98%.",
+            "Salbutamol 2.5-5 mg by nebuliser, or 4-10 puffs by metered-dose inhaler with a spacer, repeated every 20 minutes for the first hour.",
+            "Ipratropium bromide 0.5 mg by nebuliser added in severe or life-threatening attacks.",
+            "Prednisolone 40-50 mg orally at once and daily for 5 days, or hydrocortisone 100 mg intravenously if the patient cannot swallow; steroids take 4-6 hours to act, so they must be given early.",
+            "Magnesium sulphate 2 g intravenously over 20 minutes in life-threatening attacks not responding to initial treatment, where facilities allow.",
+          ],
+        },
+        {
+          heading: "Assessing response and disposal",
+          points: [
+            "Reassess peak flow, saturation and speech 15-30 minutes after each treatment.",
+            "Transfer if the peak flow remains below 50% of predicted, saturation stays below 92%, the patient cannot speak in sentences, or there is any life-threatening feature.",
+            "Discharge only when the peak flow is above 75% of best, symptoms are settling and the patient is stable for at least an hour.",
+          ],
+        },
+        {
+          heading: "Before discharge",
+          points: [
+            "Complete the 5-day prednisolone course and start or resume an inhaled corticosteroid - never treat an exacerbation with a bronchodilator alone.",
+            "Check inhaler technique and issue a spacer, provide a written asthma action plan, identify the trigger, and review within 48 hours and again at one week.",
+            "Explain that repeated reliever use without an inhaled steroid is the commonest pathway to a fatal attack.",
+          ],
+        },
+      ],
+      mustDraw: [
+        "A table of severity grading - moderate, acute severe, and life-threatening asthma - with the numerical criteria for each.",
+      ],
+      markSplit: [
+        { part: "Severity assessment with numbers", marks: 1.5 },
+        { part: "Immediate drug treatment with doses", marks: 2 },
+        { part: "Response assessment and transfer criteria", marks: 1 },
+        { part: "Discharge plan, action plan and follow-up", marks: 0.5 },
+      ],
+      keywords: ["acute severe asthma", "peak expiratory flow", "salbutamol", "prednisolone", "asthma action plan"],
+    },
+    {
+      id: "symptom-approach-breathlessness-t3",
+      paper: "II",
+      kind: "differentiate",
+      marks: 5,
+      minutes: 8,
+      frequency: "common",
+      question: "Differentiate cardiac from respiratory dyspnoea, and state the investigations that resolve the difficulty.",
+      openingLines: [
+        "Cardiac dyspnoea arises from raised pulmonary venous pressure and reduced cardiac output, while respiratory dyspnoea arises from increased work of breathing or impaired gas exchange; in practice the two commonly coexist, especially in the elderly smoker.",
+        "The distinction is made from the pattern of the symptom, the examination and a small set of investigations rather than from the severity of breathlessness alone.",
+      ],
+      answer: [
+        {
+          heading: "Points of difference",
+          points: [
+            "Orthopnoea and paroxysmal nocturnal dyspnoea are characteristic of cardiac disease and uncommon in respiratory disease except in severe COPD.",
+            "Cough: frothy pink sputum in acute pulmonary oedema; chronic productive cough with sputum in COPD and bronchiectasis; dry nocturnal cough in asthma.",
+            "Chest examination: raised JVP, displaced apex, third heart sound, murmurs, bibasal fine crackles and pedal oedema in cardiac disease; prolonged expiration, wheeze, hyperinflation and reduced breath sounds in respiratory disease.",
+            "Course: cardiac dyspnoea often progresses over weeks with weight gain from fluid; respiratory dyspnoea fluctuates with exacerbations and infections.",
+            "Response: cardiac dyspnoea improves with diuresis; respiratory dyspnoea improves with bronchodilators.",
+          ],
+        },
+        {
+          heading: "Investigations that resolve the question",
+          points: [
+            "Chest radiograph: cardiomegaly, upper lobe diversion, Kerley B lines and pleural effusion in failure; hyperinflation, flattened diaphragms and bullae in COPD.",
+            "ECG: a completely normal ECG makes systolic heart failure unlikely; look for atrial fibrillation, LVH, Q waves and right heart strain.",
+            "NT-proBNP: below 125 pg/mL in the outpatient setting effectively excludes heart failure and is the single most useful discriminator.",
+            "Echocardiography: ejection fraction, wall motion, valve lesions, chamber sizes and pulmonary pressures.",
+            "Spirometry with reversibility: post-bronchodilator FEV1/FVC below 0.70 confirms fixed airflow obstruction.",
+            "Haemoglobin, TSH, renal function and blood gas to identify the non-cardiac non-respiratory contributors that often decide the picture.",
+          ],
+        },
+      ],
+      mustDraw: ["A two-column table contrasting cardiac and respiratory dyspnoea across symptom pattern, cough, examination, radiograph and the decisive test."],
+      markSplit: [
+        { part: "Symptom-based differences", marks: 1.5 },
+        { part: "Examination differences", marks: 1.5 },
+        { part: "Investigations including NT-proBNP and spirometry", marks: 2 },
+      ],
+      keywords: ["cardiac dyspnoea", "respiratory dyspnoea", "orthopnoea", "NT-proBNP", "spirometry"],
+    },
+  ],
+  mcqs: [
+    {
+      id: "symptom-approach-breathlessness-q1",
+      stem: "A 58-year-old never-smoking woman from rural Bihar has had progressive breathlessness and a productive cough for two years. She has cooked on a wood chulha for 30 years. Post-bronchodilator FEV1/FVC is 0.58 with an FEV1 of 62% predicted and no significant reversibility. What is the most likely diagnosis?",
+      options: [
+        "Asthma",
+        "Chronic obstructive pulmonary disease from biomass fuel exposure",
+        "Post-tubercular bronchiectasis",
+        "Interstitial lung disease",
+        "Chronic heart failure with preserved ejection fraction",
+      ],
+      answer: 1,
+      explanation:
+        "A fixed post-bronchodilator FEV1/FVC below 0.70 with minimal reversibility defines COPD, and three decades of biomass smoke exposure is a well-established cause of COPD in Indian women who have never smoked tobacco. Asthma would show significant reversibility or diurnal peak flow variability and typically has an earlier onset with episodic symptoms. Post-tubercular bronchiectasis is possible but would require a history of treated tuberculosis with copious sputum and characteristic radiographic changes, none of which is given. Interstitial lung disease produces a restrictive pattern with a preserved or raised FEV1/FVC ratio, the opposite of this. Heart failure with preserved ejection fraction does not produce fixed airflow obstruction on spirometry.",
+      difficulty: "easy",
+    },
+    {
+      id: "symptom-approach-breathlessness-q2",
+      stem: "A 64-year-old man attends with two weeks of exertional breathlessness. At rest his oxygen saturation is 96% and the chest is clear. After walking 40 steps in the corridor his saturation falls to 88% and he is markedly breathless. What does this finding most importantly indicate?",
+      options: [
+        "It is a normal physiological response to exertion",
+        "It confirms anxiety-related hyperventilation",
+        "It is objective evidence of a gas exchange abnormality requiring urgent investigation",
+        "It indicates deconditioning that will respond to graded exercise",
+        "It is an artefact of pulse oximetry and can be ignored",
+      ],
+      answer: 2,
+      explanation:
+        "Exertional desaturation of 4% or more, or to below 90%, is never physiological and is objective evidence of impaired gas exchange - interstitial lung disease, pulmonary vascular disease, pulmonary embolism and post-COVID lung injury all present this way with a clear chest and normal resting saturation. Healthy people maintain saturation on walking, so calling it normal is wrong. Hyperventilation raises rather than lowers saturation. Deconditioning causes breathlessness and tachycardia without desaturation. Dismissing it as artefact ignores a reproducible, measured abnormality that changes the entire work-up.",
+      difficulty: "moderate",
+    },
+    {
+      id: "symptom-approach-breathlessness-q3",
+      stem: "A 26-year-old woman has recurrent episodes of breathlessness at rest with chest tightness, sighing, tingling around the mouth and in the fingers, lasting 20 minutes. Oxygen saturation during an episode is 99%, chest examination and ECG are normal, and haemoglobin is 12.6 g/dL. What is the most appropriate management?",
+      options: [
+        "Rebreathing into a paper bag during attacks",
+        "Positive diagnosis of hyperventilation with an anxiety disorder, breathing retraining and treatment of the anxiety",
+        "Inhaled salbutamol as required for presumed asthma",
+        "Long-term propranolol 40 mg twice daily",
+        "CT pulmonary angiography to exclude chronic thromboembolic disease",
+      ],
+      answer: 1,
+      explanation:
+        "Rest breathlessness with sighing, perioral and digital paraesthesiae from respiratory alkalosis, a normal saturation and a normal examination is hyperventilation associated with an anxiety disorder, and it should be diagnosed positively and treated with diaphragmatic breathing retraining plus treatment of the underlying anxiety. Paper bag rebreathing is dangerous and has caused deaths when the true cause was hypoxic, and it is no longer recommended. Salbutamol treats bronchoconstriction, which she does not have, and its tremor and palpitations worsen anxiety. Propranolol may blunt somatic symptoms but is not the treatment for the disorder and is contraindicated in asthma if the diagnosis is wrong. CT pulmonary angiography in a young woman with a normal saturation, normal examination and recurrent stereotyped attacks is unnecessary radiation.",
+      difficulty: "easy",
+    },
+    {
+      id: "symptom-approach-breathlessness-q4",
+      stem: "A 70-year-old man with known COPD presents with worsening breathlessness for two days and an oxygen saturation of 84% on air. High-flow oxygen at 10 L/min is started by the nurse. Thirty minutes later he is drowsy. What is the most likely explanation and the correct action?",
+      options: [
+        "Progressive hypoxia; increase the oxygen flow further",
+        "Carbon dioxide retention from uncontrolled oxygen; reduce oxygen to target a saturation of 88-92% and get a blood gas",
+        "Sedation from the nebulised salbutamol; stop the bronchodilator",
+        "Cerebral infarction; arrange an urgent CT brain",
+        "Hypoglycaemia; give 25% dextrose intravenously",
+      ],
+      answer: 1,
+      explanation:
+        "In a patient with chronic hypercapnic COPD, uncontrolled high-flow oxygen worsens ventilation-perfusion matching and reduces respiratory drive, causing carbon dioxide narcosis, so oxygen is titrated to a target saturation of 88-92% with a Venturi mask and a blood gas is obtained. Increasing the flow compounds the very problem causing the drowsiness. Nebulised salbutamol causes tremor and tachycardia, not sedation. A CT brain investigates a diagnosis with no supporting focal signs and delays a reversible cause. Hypoglycaemia is worth checking in any drowsy patient but does not explain a deterioration that began exactly when high-flow oxygen was started.",
+      difficulty: "moderate",
+    },
+    {
+      id: "symptom-approach-breathlessness-q5",
+      stem: "A 48-year-old woman has six weeks of exertional breathlessness with an MRC grade of 2. Examination shows conjunctival pallor and a soft systolic murmur at the apex, with a clear chest, normal JVP and no oedema. What is the most appropriate first investigation?",
+      options: [
+        "Echocardiography",
+        "Complete blood count with peripheral smear",
+        "CT pulmonary angiography",
+        "Spirometry with reversibility",
+        "NT-proBNP",
+      ],
+      answer: 1,
+      explanation:
+        "Pallor with a soft flow murmur and a clear chest in an Indian woman of reproductive age points to anaemia, which affects 57% of women aged 15-49 by NFHS-5, and a complete blood count with a smear is cheap, immediately available and likely to give the whole answer. Echocardiography is the right test if the murmur turns out to be organic or if the blood count is normal, but it is the second step, not the first. CT pulmonary angiography carries radiation and contrast risk for a subacute symptom with no thromboembolic risk factors or hypoxia. Spirometry investigates airflow obstruction, for which there is no wheeze, cough or exposure history. NT-proBNP would be reasonable if heart failure were suspected, but the JVP is normal, there is no oedema and the chest is clear.",
+      difficulty: "easy",
+    },
+    {
+      id: "symptom-approach-breathlessness-q6",
+      stem: "A 32-year-old woman who delivered by caesarean section eight days ago develops sudden breathlessness with right-sided pleuritic pain. Pulse is 118 per minute, respiratory rate 28 per minute, saturation 91% on air, and the chest is clear with a normal chest radiograph. What is the most appropriate next step?",
+      options: [
+        "Reassure and treat as postoperative pain with an NSAID",
+        "Apply the Wells score, start therapeutic low molecular weight heparin and arrange CT pulmonary angiography urgently",
+        "Order a D-dimer and discharge if it is normal",
+        "Start amoxicillin-clavulanate for a chest infection",
+        "Arrange spirometry with reversibility testing",
+      ],
+      answer: 1,
+      explanation:
+        "Sudden pleuritic breathlessness with tachycardia and hypoxia in the puerperium, with a clear chest and a normal chest radiograph, is pulmonary embolism until excluded, and the correct response is to score her risk, anticoagulate immediately with weight-based enoxaparin and confirm with CT pulmonary angiography. Treating it as postoperative pain with an NSAID misses a leading cause of maternal death. D-dimer is unreliable in the puerperium because pregnancy and surgery both raise it, and a strategy of discharging on a normal D-dimer in a high-probability patient is unsafe. Antibiotics treat a diagnosis unsupported by fever, sputum or radiographic change. Spirometry has no role in acute hypoxic breathlessness.",
+      difficulty: "moderate",
+    },
+  ],
+  cards: [
+    {
+      id: "symptom-approach-breathlessness-c1",
+      front: "The five grades of the modified MRC dyspnoea scale.",
+      back: "0 strenuous exercise only; 1 hurrying on the level or a slight hill; 2 walks slower than peers or stops on the level; 3 stops after about 100 metres; 4 housebound or breathless on dressing.",
+    },
+    {
+      id: "symptom-approach-breathlessness-c2",
+      front: "What does exertional desaturation mean?",
+      back: "A fall of 4% or more, or to below 90%, on walking is never physiological - it indicates a gas exchange abnormality (interstitial disease, pulmonary vascular disease, embolism, post-COVID injury).",
+    },
+    {
+      id: "symptom-approach-breathlessness-c3",
+      front: "Spirometric definition of COPD and of asthma reversibility.",
+      back: "COPD: post-bronchodilator FEV1/FVC below 0.70. Asthma: FEV1 improvement of 12% and 200 mL or more after a bronchodilator, or peak flow diurnal variability above 20%.",
+    },
+    {
+      id: "symptom-approach-breathlessness-c4",
+      front: "NT-proBNP rule-out thresholds for heart failure.",
+      back: "Below 125 pg/mL in the non-acute outpatient setting and below 300 pg/mL in the acute setting make heart failure very unlikely; raised values are much less specific.",
+    },
+    {
+      id: "symptom-approach-breathlessness-c5",
+      front: "Oxygen target in a COPD exacerbation, and why.",
+      back: "88-92% using controlled oxygen. High-flow oxygen worsens ventilation-perfusion matching and reduces drive, causing carbon dioxide narcosis.",
+    },
+    {
+      id: "symptom-approach-breathlessness-c6",
+      front: "Life-threatening features in acute asthma.",
+      back: "Peak flow under 33% of predicted, saturation under 92%, silent chest, cyanosis, poor respiratory effort, bradycardia, hypotension, exhaustion, confusion or coma.",
+    },
+    {
+      id: "symptom-approach-breathlessness-c7",
+      front: "Steroid dose and duration in an asthma or COPD exacerbation.",
+      back: "Prednisolone 40-50 mg orally daily for 5 days, given within the first hour; no taper is needed for a course of this length.",
+    },
+    {
+      id: "symptom-approach-breathlessness-c8",
+      front: "Why must you never use a paper bag for hyperventilation?",
+      back: "If the breathlessness is actually hypoxic - embolism, asthma, infarct - rebreathing worsens hypoxia and has caused deaths. Use diaphragmatic breathing retraining instead.",
+    },
+    {
+      id: "symptom-approach-breathlessness-c9",
+      front: "Biomass fuel and COPD - the Indian point.",
+      back: "A never-smoking woman with decades of chulha cooking can have fixed airflow obstruction indistinguishable from smoking-related COPD; always ask about cooking fuel.",
+    },
+    {
+      id: "symptom-approach-breathlessness-c10",
+      front: "Treatment of breathlessness in advanced disease.",
+      back: "A fan to the face, positioning, breathing techniques, and low-dose oral morphine 2.5-5 mg every 4 hours titrated - it relieves the sensation without hastening death.",
+    },
+    {
+      id: "symptom-approach-breathlessness-c11",
+      front: "The three questions that identify cardiac dyspnoea.",
+      back: "How many pillows do you sleep on and has that changed; do you wake at night gasping for air; do your ankles swell by evening?",
+    },
+    {
+      id: "symptom-approach-breathlessness-c12",
+      front: "What belongs in a written asthma action plan?",
+      back: "The daily controller inhaler, the reliever and how much is too much, when to start prednisolone, the peak flow or symptom thresholds, and whom to call or where to go.",
+    },
+  ],
+  references: [
+    "GOLD Global Strategy for the Diagnosis, Management and Prevention of COPD, 2024 report",
+    "Global Initiative for Asthma (GINA) Main Report, 2024",
+    "ESC Guidelines for the Diagnosis and Treatment of Acute and Chronic Heart Failure, 2021 with 2023 focused update",
+    "Indian Chest Society and NCCP guidelines for the diagnosis and management of COPD and asthma in India, 2013-2021",
+    "National Family Health Survey (NFHS-5) India Report, 2019-21 - anaemia and household fuel use",
+    "Murtagh's General Practice, 8th edition, 2018 - dyspnoea",
+  ],
+});
