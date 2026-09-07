@@ -2402,6 +2402,920 @@ topics.push({
   ],
 });
 
+topics.push({
+  id: "fm-principles-ebm",
+  title: "Evidence-based medicine: PICO, appraisal, diagnostic statistics and the forest plot",
+  oneLiner:
+    "Evidence-based medicine is the conscientious, explicit and judicious use of current best evidence in making decisions about the care of individual patients, integrating individual clinical expertise with the best available external evidence and the patient's values, and it is practised as five steps - ask a focused PICO question, acquire the best evidence, appraise it critically, apply it to this patient, and audit the result.",
+  frequency: "common",
+  keywords: [
+    "evidence-based medicine",
+    "Sackett",
+    "PICO",
+    "five steps of EBM",
+    "levels of evidence",
+    "Oxford CEBM",
+    "GRADE",
+    "critical appraisal",
+    "randomised controlled trial",
+    "allocation concealment",
+    "intention to treat",
+    "CONSORT",
+    "sensitivity",
+    "specificity",
+    "positive predictive value",
+    "likelihood ratio",
+    "pre-test probability",
+    "number needed to treat",
+    "absolute risk reduction",
+    "relative risk reduction",
+    "odds ratio",
+    "confidence interval",
+    "forest plot",
+    "heterogeneity",
+    "I squared",
+    "PRISMA",
+    "systematic review",
+    "meta-analysis",
+  ],
+  sections: [
+    {
+      heading: "Definition and the five steps",
+      points: [
+        "**Sackett's 1996 BMJ definition:** evidence-based medicine is the conscientious, explicit and judicious use of current best evidence in making decisions about the care of individual patients - quote it verbatim, then add that it means **integrating individual clinical expertise with the best available external clinical evidence from systematic research**.",
+        "The **three-legged stool** of modern EBM is **best research evidence, clinical expertise and patient values and circumstances**; an answer that omits patient values misses the point of the discipline and loses the applied mark.",
+        "**The five steps (the five As): Ask** a focused answerable question, **Acquire** the best evidence efficiently, **Appraise** it for validity, importance and applicability, **Apply** it to this patient after discussion, and **Assess or Audit** your own performance in doing all four.",
+        "EBM is **not cookbook medicine and not cost-cutting**: guidelines describe the average patient, whereas the fourth step exists precisely to decide whether this particular patient - older, multimorbid, poorer or with different priorities than the trial population - is the person the evidence describes.",
+        "In Indian family practice the commonest EBM failures are **extrapolation from trials in different populations, prescribing based on a drug representative's abstract, and treating surrogate outcomes** (a lipid level, a bone density) as if they were patient-important outcomes such as fracture, stroke or death.",
+        "The corresponding skill is **information management, not information accumulation**: know four or five pre-appraised sources - Cochrane Library, BMJ Best Practice or UpToDate, national guidelines such as the Standard Treatment Guidelines and the NTEP guidelines, and PubMed Clinical Queries - rather than searching everything from scratch.",
+      ],
+    },
+    {
+      heading: "Asking the question: PICO and the right study design",
+      points: [
+        "**Background questions** ask about general knowledge ('what causes gout?') and are answered from a textbook; **foreground questions** ask about a specific decision in a specific patient and are structured as **PICO**.",
+        "**P - Patient, population or problem** (a 55-year-old man with type 2 diabetes and microalbuminuria); **I - Intervention, exposure, index test or prognostic factor** (an ACE inhibitor); **C - Comparison** (placebo or usual care - state it explicitly, and 'no treatment' is a legitimate comparator); **O - Outcome** that matters to the patient (progression to end-stage renal disease, not a fall in albumin excretion).",
+        "Add **T for the time horizon and the type of study** where relevant - PICOT - because 'over 5 years' changes both the search and the answer.",
+        "**Match the design to the question:** therapy and prevention are best answered by a **randomised controlled trial or a systematic review of RCTs**; **diagnosis and screening** by a cross-sectional study of consecutive patients with an independent, blinded comparison against a reference standard; **prognosis** by an inception cohort; **aetiology or harm** by a cohort, or by a case-control study when the outcome is rare or the exposure is long-delayed; **frequency** by a cross-sectional survey; and questions about **patient experience or meaning** by qualitative research.",
+        "**Rare harms cannot be studied by RCTs** - a trial of 5000 patients cannot detect a 1 in 10 000 event - so pharmacovigilance, case series and observational studies remain the evidence for adverse effects, which is why absence of harm in trials is not evidence of safety.",
+        "Convert the question into a search: use **MeSH terms plus free text, Boolean AND, OR and NOT, truncation, and a methodological filter**; the Cochrane Library first, then PubMed Clinical Queries, and only then a general search.",
+      ],
+    },
+    {
+      heading: "Levels of evidence and grades of recommendation",
+      points: [
+        "The **Oxford Centre for Evidence-Based Medicine hierarchy** runs: **level 1 - systematic review of RCTs or an individual RCT with a narrow confidence interval; level 2 - cohort studies and low-quality RCTs; level 3 - case-control studies; level 4 - case series and poor-quality cohort or case-control studies; level 5 - expert opinion or reasoning from physiology or bench research**.",
+        "**Grades of recommendation follow the levels: A from consistent level 1 studies, B from consistent level 2 or 3 studies or extrapolation from level 1, C from level 4 studies or extrapolation from level 2 or 3, and D from level 5 evidence or troublingly inconsistent or inconclusive studies at any level.**",
+        "The hierarchy is a **starting presumption, not a rule**: a large, well-conducted cohort study can outrank a small, unblinded RCT with 40% attrition, and for questions where randomisation is impossible or unethical the best available evidence is observational.",
+        "**GRADE (Grading of Recommendations, Assessment, Development and Evaluation)** is the system used by WHO, NICE and Cochrane: evidence starts **high for RCTs and low for observational studies**, and is then **downgraded for risk of bias, inconsistency, indirectness, imprecision and publication bias**, or **upgraded for a large effect size, a dose-response gradient, or when plausible confounding would only reduce the observed effect**.",
+        "GRADE ends with **four certainty levels - high, moderate, low, very low - and only two recommendation strengths, strong ('we recommend') and conditional or weak ('we suggest')**, because the strength depends on the balance of benefits and harms, values and resources, not on the evidence alone.",
+        "Learn to state the difference in one line: **the level of evidence describes the study; the grade of recommendation describes what you should do about it**.",
+      ],
+    },
+    {
+      heading: "Critical appraisal of a randomised controlled trial",
+      points: [
+        "Appraisal asks three questions in order: **is it valid (internal validity), is it important (size and precision of the effect), and is it applicable to my patient (external validity)** - a trial that fails the first question is not rescued by a spectacular result.",
+        "**Randomisation** removes selection bias and balances known and unknown confounders; check that it was truly random (computer-generated sequence, random number tables, permuted blocks or stratified randomisation) and not 'quasi-random' by alternate allocation, date of birth or hospital number, which the investigator can predict.",
+        "**Allocation concealment is distinct from blinding and is the single item most strongly associated with exaggerated treatment effects**: the person recruiting must not be able to foresee the next assignment, which requires a central telephone or web randomisation service or sequentially numbered, opaque, sealed envelopes.",
+        "**Blinding** of participants, clinicians, outcome assessors and analysts protects against performance and detection bias; where blinding is impossible (surgery, physiotherapy), **blinded outcome assessment with objective endpoints** is the minimum acceptable substitute.",
+        "**Follow-up and analysis:** were all patients accounted for at the end and analysed in the groups to which they were randomised - **intention-to-treat analysis preserves randomisation and gives the more conservative, more realistic estimate**, whereas per-protocol analysis reintroduces selection bias. **Attrition above 20% seriously threatens validity**, and the worst-case sensitivity analysis should be checked.",
+        "Also check **baseline comparability of the groups, equal treatment apart from the intervention (no co-intervention), whether the outcome was patient-important and pre-specified rather than a composite or a surrogate, the size and precision of the effect with its 95% confidence interval, whether the trial was stopped early for benefit (which overestimates effect), funding and conflicts of interest, and trial registration (CTRI in India, ClinicalTrials.gov) with reporting to CONSORT 2010 including the flow diagram**.",
+      ],
+    },
+    {
+      heading: "Diagnostic test statistics",
+      points: [
+        "Build the **2x2 table** with the disease across the top (present, absent) and the test result down the side (positive, negative), giving **true positives (a), false positives (b), false negatives (c) and true negatives (d)** - draw it before calculating anything, because most errors in the exam are errors of orientation.",
+        "**Sensitivity = a/(a+c)**, the proportion of those with the disease who test positive; **specificity = d/(b+d)**, the proportion of those without the disease who test negative. Both are **properties of the test and are independent of prevalence**.",
+        "**SnNout and SpPin:** a highly **Sen**sitive test, when **N**egative, rules **out** the disease; a highly **Sp**ecific test, when **P**ositive, rules **in** the disease. This is why sensitive tests are used to screen and specific tests to confirm.",
+        "**Positive predictive value = a/(a+b)** and **negative predictive value = d/(c+d)** answer the question the patient actually asks - given this result, do I have the disease? - but **both vary steeply with prevalence**, which is why a test that performs beautifully in a tertiary clinic generates mostly false positives in general practice.",
+        "**Likelihood ratios are the most useful appraisal statistic because they are prevalence-independent yet convert directly to post-test probability: LR+ = sensitivity / (1 - specificity), LR- = (1 - sensitivity) / specificity.** As a rule of thumb an **LR+ above 10 or an LR- below 0.1 produces a large and usually conclusive change in probability**, 5-10 and 0.1-0.2 a moderate change, 2-5 and 0.2-0.5 a small change, and 1-2 or 0.5-1 a negligible one.",
+        "Use **pre-test probability x LR (through Fagan's nomogram or by converting to odds) to get post-test probability**; also know **accuracy = (a+d)/total**, **prevalence = (a+c)/total**, and that **ROC curve area** summarises test performance across all cut-offs, with 0.5 being useless and 1.0 perfect.",
+      ],
+    },
+    {
+      heading: "Treatment effects, meta-analysis and the forest plot",
+      points: [
+        "From a trial's 2x2 table, **control event rate (CER)** and **experimental event rate (EER)** give: **relative risk RR = EER/CER; absolute risk reduction ARR = CER - EER; relative risk reduction RRR = (CER - EER)/CER = 1 - RR; number needed to treat NNT = 1/ARR**, always rounded up and always quoted with the time period and the outcome.",
+        "**Number needed to harm NNH = 1/absolute risk increase.** Relative measures look impressive and are prevalence-blind; **absolute measures and NNT are what the patient needs to hear**, and presenting a 25% RRR without the 2% ARR is the commonest way evidence is used to mislead.",
+        "**Odds ratio = (a/c)/(b/d)**, used in case-control studies and logistic regression; it **approximates the relative risk only when the outcome is rare (under about 10%)** and otherwise exaggerates it.",
+        "A **95% confidence interval is the range within which the true value lies with 95% confidence**; a confidence interval that **crosses 1 for a ratio measure (RR, OR, HR) or crosses 0 for a difference measure (ARR, mean difference) is not statistically significant**. A wide interval means an imprecise, underpowered study even when the point estimate is impressive.",
+        "**Systematic review and meta-analysis:** a systematic review uses an explicit, reproducible search and appraisal method to answer a focused question and follows **PRISMA 2020** with a flow diagram and a registered protocol (PROSPERO); a meta-analysis is the optional statistical pooling of those results, weighting each study, usually by the inverse of its variance so larger and more precise studies count more.",
+        "**Reading a forest plot:** each horizontal line is one study, the **square is the point estimate with its area proportional to the study's weight** and the line is its 95% confidence interval; the **vertical line is the line of no effect (1 for ratios, 0 for differences)**; the **diamond at the bottom is the pooled estimate, its width being the pooled confidence interval**, and it is significant if the diamond does not touch the line of no effect. **Heterogeneity is judged by visual non-overlap of the intervals, the chi-square test with p below 0.10, and I-squared - roughly 0-40% may not be important, 30-60% moderate, 50-90% substantial and 75-100% considerable** - substantial heterogeneity calls for a random-effects model, subgroup analysis or no pooling at all. **Publication bias is examined by a funnel plot**, whose asymmetry suggests missing small negative trials.",
+      ],
+    },
+  ],
+  tables: [
+    {
+      heading: "The diagnostic 2x2 table with a worked example (1000 patients, prevalence 10%)",
+      columns: ["", "Disease present", "Disease absent", "Total"],
+      rows: [
+        ["Test positive", "a = 90 (true positive)", "b = 180 (false positive)", "270"],
+        ["Test negative", "c = 10 (false negative)", "d = 720 (true negative)", "730"],
+        ["Total", "100", "900", "1000"],
+        ["Derived", "Sensitivity = 90/100 = 90%", "Specificity = 720/900 = 80%", "Accuracy = 810/1000 = 81%"],
+        ["Derived", "PPV = 90/270 = 33%", "NPV = 720/730 = 99%", "LR+ = 0.9/0.2 = 4.5; LR- = 0.1/0.8 = 0.125"],
+      ],
+    },
+    {
+      heading: "Oxford CEBM levels of evidence and grades of recommendation",
+      columns: ["Level", "Type of evidence", "Grade of recommendation"],
+      rows: [
+        ["1", "Systematic review of RCTs, or an individual RCT with a narrow confidence interval; all-or-none case series", "A"],
+        ["2", "Systematic review of cohort studies, an individual cohort study, or a low-quality RCT", "B"],
+        ["3", "Systematic review of case-control studies, or an individual case-control study", "B"],
+        ["4", "Case series, and poor-quality cohort or case-control studies", "C"],
+        ["5", "Expert opinion without explicit critical appraisal, or reasoning from physiology or bench research", "D"],
+      ],
+    },
+    {
+      heading: "Question type, best study design, and the appraisal checklist to use",
+      columns: ["Type of question", "Best design", "Appraisal focus"],
+      rows: [
+        ["Therapy or prevention", "Systematic review of RCTs, or an RCT", "Randomisation, allocation concealment, blinding, intention to treat, follow-up"],
+        ["Diagnosis", "Cross-sectional study of consecutive patients versus a reference standard", "Independent blinded comparison, appropriate spectrum, reference standard applied to all"],
+        ["Prognosis", "Inception cohort followed from a uniform early point", "Representative sample, sufficient and complete follow-up, objective outcome criteria"],
+        ["Aetiology or harm", "Cohort study; case-control if the outcome is rare", "Comparable groups, exposure and outcome measured the same way, confounders addressed"],
+        ["Frequency or burden", "Cross-sectional survey with random sampling", "Representative sample, adequate response rate, defined denominator"],
+        ["Patient experience", "Qualitative study", "Sampling strategy, data saturation, reflexivity, triangulation, audit trail"],
+      ],
+    },
+    {
+      heading: "Treatment effect measures from a worked trial (CER 20%, EER 15%)",
+      columns: ["Measure", "Formula", "Value"],
+      rows: [
+        ["Relative risk", "EER / CER", "0.15 / 0.20 = 0.75"],
+        ["Relative risk reduction", "(CER - EER) / CER", "0.05 / 0.20 = 25%"],
+        ["Absolute risk reduction", "CER - EER", "20% - 15% = 5%"],
+        ["Number needed to treat", "1 / ARR", "1 / 0.05 = 20 patients for the trial duration"],
+        ["Number needed to harm", "1 / absolute risk increase", "If harm rises from 1% to 3%, NNH = 1 / 0.02 = 50"],
+      ],
+    },
+  ],
+  redFlags: [
+    "A trial result being applied to a patient who cannot give valid consent - assess capacity formally and involve the nominated representative under the Mental Healthcare Act 2017; never enrol or switch such a patient on your own judgement.",
+    "A patient or family asking you to help them join, or to continue, an unregistered trial, an unapproved stem cell or 'immunotherapy' treatment, or an off-label use with no evidence - refer to the institutional ethics committee and the treating specialist rather than counselling alone, and document the advice given.",
+    "Evidence used to withdraw or withhold a treatment the patient wants - decisions to stop dialysis, ventilation, feeding or chemotherapy are never a solo primary care decision; they require the treating team, documented capacity assessment and family discussion.",
+    "A screening or research activity in the practice that uncovers a notifiable disease - tuberculosis, HIV, measles, dengue, cholera, diphtheria or acute flaccid paralysis - notification through IHIP/IDSP and Nikshay is a legal obligation that overrides any study protocol or promise of anonymity given to the participant.",
+    "Any appraisal exercise that becomes a change of a hospital or practice protocol - do not implement it alone; changes to a standard treatment protocol need departmental agreement, documentation and a re-audit plan, because an undocumented deviation is medico-legally indefensible if harm follows.",
+    "A drug promotion or sponsored 'guideline' that names a surrogate outcome, quotes only relative risk reduction, or reports a subgroup as the main result - do not change prescribing on it; check the primary publication, the registration record and the conflict of interest statement first.",
+  ],
+  pearls: [
+    "Open every EBM answer with Sackett's 1996 sentence, then the three-legged stool of best evidence, clinical expertise and patient values - the third leg is where most candidates lose the mark.",
+    "Sensitivity and specificity are properties of the test; predictive values belong to the population. That single sentence answers a large family of MCQs.",
+    "SnNout and SpPin: sensitive test negative rules out, specific test positive rules in.",
+    "Likelihood ratios are the appraisal statistic to quote because they are prevalence-independent: LR+ above 10 or LR- below 0.1 is a conclusive change in probability.",
+    "Always convert a relative risk reduction into an absolute risk reduction and an NNT before you counsel a patient, and always state the NNT with its outcome and its time period.",
+    "Allocation concealment, not blinding, is the item most strongly associated with exaggerated treatment effects - say it explicitly in the appraisal answer.",
+    "On a forest plot the diamond is the pooled estimate and the vertical line is no effect; if the diamond touches the line, the pooled result is not significant.",
+  ],
+  theory: [
+    {
+      id: "fm-principles-ebm-t1",
+      paper: "I",
+      kind: "long",
+      marks: 10,
+      minutes: 20,
+      frequency: "common",
+      question:
+        "Define evidence-based medicine. Describe its steps, frame a clinical question using PICO, and outline how you would critically appraise a randomised controlled trial of a new antihypertensive drug before using it in your practice.",
+      openingLines: [
+        "Evidence-based medicine is the conscientious, explicit and judicious use of current best evidence in making decisions about the care of individual patients (Sackett, BMJ 1996), integrating individual clinical expertise with the best available external evidence and with the patient's values and circumstances.",
+        "It is practised in five steps - ask, acquire, appraise, apply and assess - and the appraisal step asks three questions of any trial: is it valid, is it important, and is it applicable to my patient?",
+      ],
+      answer: [
+        {
+          heading: "1. Definition and components",
+          points: [
+            "Sackett's definition quoted verbatim.",
+            "Three components: best research evidence, clinical expertise, patient values and circumstances.",
+            "EBM is not cookbook medicine and not a cost-containment tool; the fourth step exists to individualise.",
+          ],
+        },
+        {
+          heading: "2. The five steps",
+          points: [
+            "Ask an answerable question in PICO format.",
+            "Acquire the best evidence efficiently, using pre-appraised sources first (Cochrane, BMJ Best Practice, national guidelines) then PubMed Clinical Queries.",
+            "Appraise for validity, importance and applicability.",
+            "Apply, integrating patient values, comorbidity, cost and availability.",
+            "Assess and audit one's own performance in the preceding four steps.",
+          ],
+        },
+        {
+          heading: "3. The PICO question",
+          points: [
+            "P: adults aged 40-70 with uncomplicated stage 2 hypertension attending a general practice.",
+            "I: the new antihypertensive drug at its licensed dose.",
+            "C: an established low-cost thiazide or amlodipine regimen.",
+            "O: patient-important outcomes - stroke, myocardial infarction, cardiovascular death and treatment withdrawal for adverse effects, over at least 3 years - not the fall in millimetres of mercury, which is a surrogate.",
+            "Best design to answer it: a systematic review of RCTs, or a large RCT with hard endpoints.",
+          ],
+        },
+        {
+          heading: "4. Appraising the trial - is it valid?",
+          points: [
+            "Was allocation truly randomised, with a described sequence generation?",
+            "Was allocation concealed from the recruiter (central randomisation or sequentially numbered opaque sealed envelopes)? This is the item most associated with exaggerated effects.",
+            "Were patients, clinicians and outcome assessors blinded, and was the placebo credible?",
+            "Were the groups similar at baseline and treated equally apart from the intervention?",
+            "Was follow-up complete, was attrition below 20%, and was the analysis by intention to treat?",
+            "Was the outcome pre-specified, patient-important and not a composite dominated by a soft component? Was the trial registered (CTRI or ClinicalTrials.gov) and reported to CONSORT 2010?",
+          ],
+        },
+        {
+          heading: "5. Is it important, and is it applicable?",
+          points: [
+            "Calculate CER, EER, RR, RRR, ARR and NNT with the outcome and the time period stated; examine the width of the 95% confidence interval for precision.",
+            "Was the trial stopped early for benefit, and was the effect driven by a subgroup or a post-hoc analysis?",
+            "Applicability: is my patient like the trial population in age, comorbidity, baseline risk and concomitant drugs? Is the drug available, affordable and monitorable in my setting?",
+            "Are the benefits worth the harms, the cost and the burden to this patient, and what does the patient value?",
+            "Check funding source and conflicts of interest before changing practice; a single trial rarely justifies replacing a proven, cheap first-line drug.",
+          ],
+        },
+      ],
+      mustDraw: [
+        "A five-step EBM cycle diagram (ask, acquire, appraise, apply, assess).",
+        "A PICO table with the four rows filled in for this question.",
+        "A 2x2 outcome table with CER, EER, ARR, RRR and NNT worked out beside it.",
+      ],
+      markSplit: [
+        { part: "Definition and the three components", marks: 2 },
+        { part: "Five steps of EBM", marks: 2 },
+        { part: "PICO question correctly framed with a patient-important outcome", marks: 2 },
+        { part: "Validity appraisal of the RCT", marks: 3 },
+        { part: "Importance and applicability, with NNT", marks: 1 },
+      ],
+      keywords: ["evidence-based medicine", "Sackett", "PICO", "critical appraisal", "intention to treat", "NNT"],
+    },
+    {
+      id: "fm-principles-ebm-t2",
+      paper: "I",
+      kind: "short-note",
+      marks: 5,
+      minutes: 10,
+      frequency: "common",
+      question:
+        "Short note: sensitivity, specificity, predictive values and likelihood ratios, with their relevance to a screening test used in general practice.",
+      openingLines: [
+        "The performance of a diagnostic or screening test is derived from a 2x2 table comparing the test result against a reference standard in a defined population.",
+        "Sensitivity and specificity are properties of the test and do not vary with prevalence; predictive values describe the population being tested and vary steeply with it, which is why likelihood ratios are the most transferable statistics.",
+      ],
+      answer: [
+        {
+          heading: "1. The 2x2 table and the definitions",
+          points: [
+            "a true positive, b false positive, c false negative, d true negative.",
+            "Sensitivity = a/(a+c): proportion of diseased who test positive.",
+            "Specificity = d/(b+d): proportion of non-diseased who test negative.",
+            "Positive predictive value = a/(a+b); negative predictive value = d/(c+d).",
+            "Accuracy = (a+d)/total; prevalence = (a+c)/total.",
+          ],
+        },
+        {
+          heading: "2. Likelihood ratios and post-test probability",
+          points: [
+            "LR+ = sensitivity / (1 - specificity); LR- = (1 - sensitivity) / specificity.",
+            "Prevalence-independent, and convert pre-test to post-test probability using Fagan's nomogram or the odds method.",
+            "LR+ above 10 or LR- below 0.1 gives a large, often conclusive change in probability; values near 1 are useless.",
+          ],
+        },
+        {
+          heading: "3. SnNout, SpPin and the trade-off",
+          points: [
+            "A sensitive test, when negative, rules out; a specific test, when positive, rules in.",
+            "Moving the cut-off increases one at the expense of the other; the ROC curve plots sensitivity against 1 - specificity across all cut-offs, and the area under it summarises overall discrimination.",
+            "Screening uses sensitive tests first and confirms with specific tests, because a missed case is worse than a temporary false alarm.",
+          ],
+        },
+        {
+          heading: "4. Relevance in general practice",
+          points: [
+            "Low prevalence in primary care means low positive predictive value: most positives from indiscriminate testing are false positives.",
+            "False positives cause anxiety, further invasive tests, cost and labelling; false negatives cause false reassurance.",
+            "Screening must additionally satisfy the Wilson and Jungner criteria, not merely have a good test.",
+            "Worked illustration: with 90% sensitivity, 80% specificity and 10% prevalence, PPV is only 33% - two of every three positives are false.",
+          ],
+        },
+      ],
+      mustDraw: [
+        "The 2x2 table with a, b, c, d labelled and all formulae written beside it.",
+        "A worked example with real numbers showing PPV falling as prevalence falls.",
+        "A simple ROC curve with the diagonal line of no discrimination.",
+      ],
+      markSplit: [
+        { part: "2x2 table with sensitivity and specificity defined", marks: 2 },
+        { part: "Predictive values and their dependence on prevalence", marks: 1 },
+        { part: "Likelihood ratios and post-test probability", marks: 1 },
+        { part: "Application to screening in general practice", marks: 1 },
+      ],
+      keywords: ["sensitivity", "specificity", "predictive value", "likelihood ratio", "ROC curve", "screening"],
+    },
+  ],
+  mcqs: [
+    {
+      id: "fm-principles-ebm-q1",
+      stem: "A new test for a disease with a prevalence of 10% is applied to 1000 people. It correctly identifies 90 of the 100 with the disease and correctly excludes 720 of the 900 without it. What are the sensitivity and the positive predictive value?",
+      options: [
+        "Sensitivity 90%, PPV 90%",
+        "Sensitivity 90%, PPV 33%",
+        "Sensitivity 80%, PPV 33%",
+        "Sensitivity 33%, PPV 90%",
+      ],
+      answer: 1,
+      explanation:
+        "The 2x2 table is a = 90, c = 10, d = 720, b = 900 - 720 = 180. Sensitivity = a/(a+c) = 90/100 = 90%. Total positives = a + b = 90 + 180 = 270, so PPV = a/(a+b) = 90/270 = 33%. Specificity is 720/900 = 80%, which is the number offered in the third option as a distractor for sensitivity. The key teaching point is that a test with excellent sensitivity and good specificity still has a low predictive value when prevalence is low, so two of every three positives here are false positives.",
+      difficulty: "moderate",
+    },
+    {
+      id: "fm-principles-ebm-q2",
+      stem: "In a trial, the event rate was 20% in the control group and 15% in the treated group. What is the number needed to treat?",
+      options: [
+        "4",
+        "5",
+        "20",
+        "25",
+      ],
+      answer: 2,
+      explanation:
+        "Absolute risk reduction = CER - EER = 20% - 15% = 5% = 0.05, and NNT = 1/ARR = 1/0.05 = 20 patients treated for the duration of the trial to prevent one event. The relative risk reduction is (0.20 - 0.15)/0.20 = 25%, which is the fourth option and the classic trap - candidates who compute the RRR and then invert something get 4 or 25. Always quote the NNT with the outcome and the time period, since an NNT of 20 over 5 years is a very different proposition from an NNT of 20 over 6 weeks.",
+      difficulty: "moderate",
+    },
+    {
+      id: "fm-principles-ebm-q3",
+      stem: "Which feature of a randomised controlled trial is most strongly associated with exaggerated estimates of treatment effect when it is inadequate?",
+      options: [
+        "Inadequate sample size calculation",
+        "Inadequate allocation concealment",
+        "Absence of a placebo run-in period",
+        "Failure to report the funding source",
+      ],
+      answer: 1,
+      explanation:
+        "Empirical meta-epidemiological studies (Schulz and colleagues) showed that trials with inadequate or unclear allocation concealment yield treatment effects exaggerated by around 30-40%, making it the item most strongly linked to bias; it is distinct from blinding, because concealment protects the moment of allocation while blinding protects what happens afterwards. An inadequate sample size produces imprecision rather than systematic bias, a placebo run-in affects generalisability rather than internal validity, and undeclared funding is a serious reporting failure but is not itself the mechanism of the exaggeration.",
+      difficulty: "hard",
+    },
+    {
+      id: "fm-principles-ebm-q4",
+      stem: "On a forest plot of a meta-analysis of eight trials, the diamond at the foot of the plot crosses the vertical line of no effect and the reported I-squared is 82%. The correct interpretation is:",
+      options: [
+        "The pooled effect is statistically significant and the studies are consistent",
+        "The pooled effect is not statistically significant and there is considerable heterogeneity between studies",
+        "The pooled effect is significant but underpowered, and I-squared of 82% indicates publication bias",
+        "The diamond crossing the line indicates a fixed-effect model was used incorrectly",
+      ],
+      answer: 1,
+      explanation:
+        "The diamond represents the pooled estimate with its 95% confidence interval; if it crosses the vertical line of no effect (1 for ratio measures, 0 for difference measures), the pooled result is not statistically significant. I-squared estimates the proportion of variability due to between-study heterogeneity rather than chance, and 75-100% is conventionally described as considerable heterogeneity, which calls for a random-effects model, subgroup or sensitivity analysis, or a decision not to pool at all. Publication bias is assessed by a funnel plot, not by I-squared, and the choice of model is not signalled by where the diamond sits.",
+      difficulty: "moderate",
+    },
+    {
+      id: "fm-principles-ebm-q5",
+      stem: "According to the Oxford CEBM hierarchy, a well-conducted individual cohort study provides which level of evidence, and supports which grade of recommendation?",
+      options: [
+        "Level 1, grade A",
+        "Level 2, grade B",
+        "Level 3, grade C",
+        "Level 4, grade D",
+      ],
+      answer: 1,
+      explanation:
+        "In the Oxford hierarchy level 1 is a systematic review of RCTs or an individual RCT with a narrow confidence interval, level 2 covers cohort studies and low-quality RCTs, level 3 case-control studies, level 4 case series and poor-quality observational studies, and level 5 expert opinion or bench reasoning. Grades follow: A from consistent level 1, B from consistent level 2 or 3, C from level 4, D from level 5 or inconsistent evidence. Remember to add that the hierarchy is a presumption rather than a rule, and that GRADE now formalises upgrading and downgrading for effect size, bias, indirectness, imprecision and publication bias.",
+      difficulty: "easy",
+    },
+  ],
+  cards: [
+    {
+      id: "fm-principles-ebm-c1",
+      front: "Sackett's definition of evidence-based medicine.",
+      back: "The conscientious, explicit and judicious use of current best evidence in making decisions about the care of individual patients (BMJ 1996), integrating individual clinical expertise with the best available external evidence and the patient's values.",
+    },
+    {
+      id: "fm-principles-ebm-c2",
+      front: "The five steps of EBM.",
+      back: "Ask a focused PICO question; Acquire the best evidence; Appraise it for validity, importance and applicability; Apply it with the patient; Assess or audit your own performance.",
+    },
+    {
+      id: "fm-principles-ebm-c3",
+      front: "Expand PICO and say what makes a good O.",
+      back: "Patient or problem, Intervention, Comparison, Outcome (add T for time or type of study). The outcome must be patient-important - stroke, death, admission - not a surrogate such as a lipid level or a bone density.",
+    },
+    {
+      id: "fm-principles-ebm-c4",
+      front: "Formulae for sensitivity, specificity, PPV and NPV.",
+      back: "Sensitivity = a/(a+c); specificity = d/(b+d); PPV = a/(a+b); NPV = d/(c+d), where a = true positive, b = false positive, c = false negative, d = true negative. Sensitivity and specificity are prevalence-independent; predictive values are not.",
+    },
+    {
+      id: "fm-principles-ebm-c5",
+      front: "Likelihood ratio formulae and their interpretation thresholds.",
+      back: "LR+ = sensitivity/(1 - specificity); LR- = (1 - sensitivity)/specificity. LR+ over 10 or LR- under 0.1 gives a large, usually conclusive change in probability; 5-10 and 0.1-0.2 moderate; 2-5 and 0.2-0.5 small; near 1 negligible.",
+    },
+    {
+      id: "fm-principles-ebm-c6",
+      front: "RR, RRR, ARR and NNT from CER and EER.",
+      back: "RR = EER/CER; RRR = (CER - EER)/CER; ARR = CER - EER; NNT = 1/ARR, rounded up and quoted with the outcome and the time period. NNH = 1/absolute risk increase.",
+    },
+    {
+      id: "fm-principles-ebm-c7",
+      front: "Why is intention-to-treat analysis preferred?",
+      back: "It analyses patients in the groups to which they were randomised, preserving the balance that randomisation created; it gives the more conservative and more realistic estimate, whereas per-protocol analysis reintroduces selection bias.",
+    },
+    {
+      id: "fm-principles-ebm-c8",
+      front: "How do you read a forest plot?",
+      back: "Each line is a study: the square is its point estimate with area proportional to weight, the line is its 95% CI. The vertical line is no effect (1 for ratios, 0 for differences). The diamond is the pooled estimate; if it crosses the line the pooled result is not significant.",
+    },
+    {
+      id: "fm-principles-ebm-c9",
+      front: "I-squared bands for heterogeneity.",
+      back: "0-40% may not be important; 30-60% moderate; 50-90% substantial; 75-100% considerable. Substantial heterogeneity calls for a random-effects model, subgroup analysis, or not pooling at all. Publication bias is assessed with a funnel plot.",
+    },
+    {
+      id: "fm-principles-ebm-c10",
+      front: "Level of evidence versus grade of recommendation.",
+      back: "The level describes the study design and quality (Oxford levels 1 to 5); the grade describes what to do about it (A to D). GRADE gives four certainty levels - high, moderate, low, very low - and only two recommendation strengths, strong and conditional.",
+    },
+  ],
+  references: [
+    "Sackett DL, Rosenberg WMC, Gray JAM, Haynes RB, Richardson WS. Evidence based medicine: what it is and what it isn't. BMJ 1996;312:71-72",
+    "Straus SE, Glasziou P, Richardson WS, Haynes RB. Evidence-Based Medicine: How to Practice and Teach It, 5th edition, Elsevier, 2019",
+    "Oxford Centre for Evidence-Based Medicine. Levels of Evidence (2011 update) and the 2009 levels with grades of recommendation",
+    "Guyatt GH et al. GRADE guidelines series. Journal of Clinical Epidemiology, 2011 onwards",
+    "Schulz KF, Altman DG, Moher D. CONSORT 2010 statement: updated guidelines for reporting parallel group randomised trials. BMJ 2010;340:c332",
+    "Page MJ et al. The PRISMA 2020 statement: an updated guideline for reporting systematic reviews. BMJ 2021;372:n71",
+    "Higgins JPT, Thomas J et al (eds). Cochrane Handbook for Systematic Reviews of Interventions, version 6.4, Cochrane, 2023",
+    "Greenhalgh T. How to Read a Paper: The Basics of Evidence-Based Medicine and Healthcare, 6th edition, Wiley-Blackwell, 2019",
+  ],
+});
+
+topics.push({
+  id: "fm-principles-research-thesis",
+  title: "Research methodology, the DNB thesis and telemedicine practice",
+  oneLiner:
+    "Research methodology is the systematic process of choosing a design that fits the question, sampling a population without bias, controlling confounding, calculating an adequate sample size, obtaining ethics committee approval and valid informed consent, and reporting the work honestly in a protocol and thesis - and in contemporary Indian family practice it now extends to consulting within the Telemedicine Practice Guidelines of 2020.",
+  frequency: "less-common",
+  keywords: [
+    "research methodology",
+    "study design",
+    "cross-sectional study",
+    "cohort study",
+    "case-control study",
+    "randomised controlled trial",
+    "sampling",
+    "simple random sampling",
+    "stratified sampling",
+    "cluster sampling",
+    "selection bias",
+    "information bias",
+    "recall bias",
+    "confounding",
+    "sample size",
+    "power",
+    "type I error",
+    "type II error",
+    "institutional ethics committee",
+    "ICMR guidelines",
+    "informed consent",
+    "Declaration of Helsinki",
+    "plagiarism",
+    "protocol writing",
+    "thesis",
+    "IMRAD",
+    "CTRI",
+    "telemedicine",
+    "Telemedicine Practice Guidelines 2020",
+  ],
+  sections: [
+    {
+      heading: "Choosing the design",
+      points: [
+        "Research is first divided into **descriptive studies** (which describe distribution - case report, case series, cross-sectional survey, ecological study) and **analytical studies** (which test an association or a hypothesis), and analytical studies into **observational** (case-control, cohort) and **experimental or interventional** (randomised controlled trial, community trial, field trial).",
+        "**Cross-sectional study:** exposure and outcome measured at the same point, so it gives **prevalence** and is quick, cheap and useful for planning services; its weakness is that **temporality cannot be established**, so it generates hypotheses rather than proving causation. Most DNB family medicine theses are cross-sectional for this reason.",
+        "**Case-control study:** starts from the outcome and looks backwards at exposure, gives an **odds ratio**, is **efficient for rare diseases and long latent periods**, needs fewer subjects and less time, but is vulnerable to **recall bias and to the choice of controls**, and cannot give incidence.",
+        "**Cohort study:** starts from the exposure and follows forward to the outcome, gives **incidence, relative risk and attributable risk**, establishes temporality and can study multiple outcomes of one exposure, but is expensive, slow, needs large numbers and suffers **loss to follow-up**; it is **efficient for rare exposures** and can be prospective, retrospective (historical) or ambidirectional.",
+        "**Randomised controlled trial** is the strongest design for a therapeutic question because randomisation balances known and unknown confounders; variants include parallel group, crossover (for stable chronic conditions), factorial, cluster-randomised (randomising villages or clinics, which requires adjustment for the design effect) and non-inferiority designs.",
+        "**Qualitative research** - in-depth interviews, focus group discussions of 6 to 12 participants, participant observation - answers questions of meaning, experience and barriers, and is analysed by thematic or content analysis with sampling continued to **data saturation**; mixed-methods designs combine it with a survey and are increasingly used in family medicine theses.",
+      ],
+    },
+    {
+      heading: "Sampling, sample size and errors",
+      points: [
+        "Define the **reference population, the study population, the sampling frame and the sampling unit** before choosing a method; the commonest thesis error is a sampling frame that silently excludes the people the question is about.",
+        "**Probability sampling** allows generalisation and includes **simple random** (lottery or random number table), **systematic** (every kth unit after a random start, which fails if the list has a periodicity), **stratified** (divide into homogeneous strata and sample within each - increases precision, best when strata differ), **cluster** (sample intact groups such as villages or wards - cheapest in the field but least precise, requiring a design effect and hence a larger sample), and **multistage** sampling as used in the National Family Health Survey.",
+        "**Non-probability sampling** - convenience, purposive, quota and snowball - does not permit statistical generalisation but is legitimate and often preferable in qualitative work; snowball sampling is the practical method for hidden populations such as people who inject drugs.",
+        "**Sample size for estimating a proportion with absolute precision: n = Z squared x p x q / d squared**, which at 95% confidence (Z = 1.96, taken as 2) simplifies to **n = 4pq/d squared**, where p is the anticipated prevalence in percent, q is 100 - p and d is the absolute precision in percentage points; for **relative precision** substitute d with the fraction of p. Adjust for a **finite population, the design effect in cluster sampling, and an expected non-response or dropout rate (usually adding 10-20%)**.",
+        "For **comparing two groups**, sample size depends on the **level of significance (alpha, conventionally 0.05), the power (1 - beta, conventionally 80% or 90%), the expected difference or effect size, and the variability (standard deviation or the two proportions)**; the smaller the difference you wish to detect, the larger the sample - a doubling of precision costs a quadrupling of sample.",
+        "**Type I (alpha) error is rejecting a true null hypothesis - a false positive; type II (beta) error is failing to reject a false null hypothesis - a false negative. Power = 1 - beta**, and an underpowered study is not a neutral result but an unethical one, since patients were exposed to research that could not answer its question.",
+      ],
+    },
+    {
+      heading: "Bias and confounding",
+      points: [
+        "**Bias is any systematic error in design, conduct or analysis that produces an estimate systematically different from the truth**; unlike random error it is not reduced by increasing the sample size, and once present it usually cannot be corrected in analysis.",
+        "**Selection bias** arises when those studied differ systematically from those not studied - **Berkson's (admission rate) bias** in hospital-based case-control studies, **Neyman's (prevalence-incidence) bias** when rapidly fatal or rapidly resolving cases are missed, **healthy worker effect**, non-response bias and loss to follow-up bias.",
+        "**Information (measurement) bias** arises from how data are collected - **recall bias** (cases remember exposures better than controls), **interviewer bias**, **observer bias**, **social desirability bias** in questions about alcohol, tobacco or sexual behaviour, and **misclassification**, which is **non-differential** (biasing towards the null) or **differential** (biasing in either direction).",
+        "Bias is controlled by **design**: a clearly defined and consistently applied case definition, appropriate controls, standardised and validated instruments, calibrated equipment, trained and blinded observers, blinding of participants and assessors, and a high response rate with follow-up of defaulters.",
+        "**Confounding is a distortion of the exposure-outcome association by a third variable that is independently associated with the exposure and is an independent risk factor for the outcome, and is not on the causal pathway between them** - the classic example being age or smoking in a study of alcohol and lung cancer.",
+        "Confounding is controlled **in the design by randomisation, restriction and matching**, and **in the analysis by stratification (Mantel-Haenszel), standardisation and multivariable regression**; randomisation is unique in that it also balances **unknown and unmeasured** confounders, which is why it sits at the top of the hierarchy.",
+      ],
+    },
+    {
+      heading: "Ethics, the ethics committee and informed consent",
+      points: [
+        "The framework runs from the **Nuremberg Code (1947)**, through the **Declaration of Helsinki (WMA 1964, last revised 2013)** and the **Belmont Report (1979)**, to the **ICMR National Ethical Guidelines for Biomedical and Health Research Involving Human Participants (2017)** and, for drug trials, the **New Drugs and Clinical Trials Rules 2019** with registration of the ethics committee with the CDSCO.",
+        "The four principles - **autonomy, beneficence, non-maleficence and justice** - are expanded by the ICMR into **essentiality, voluntariness, non-exploitation, privacy and confidentiality, precaution and risk minimisation, professional competence, accountability and transparency, the maximisation of benefit, institutional arrangements, public domain, totality of responsibility, and environmental protection**.",
+        "**Every study on human participants, including a record review or a questionnaire survey, must have prior written approval from a registered Institutional Ethics Committee** before a single participant is recruited. The IEC has **at least seven members** including a chairperson from outside the institution, a member secretary, a basic medical scientist, clinicians, a legal expert, a social scientist or philosopher or representative of a non-governmental organisation, and a **lay person**, with **both sexes represented** and no more than half of the members from the same institution.",
+        "**Informed consent has three elements - information, comprehension and voluntariness** - and must cover the purpose, procedures, duration, foreseeable risks and benefits, alternatives, confidentiality and its limits, compensation for research-related injury, the right to refuse or withdraw at any time without loss of usual care, and the contact details of the investigator and the ethics committee. It is documented on a **participant information sheet in the local language plus a signed or thumb-impressed consent form, with an impartial witness for an illiterate participant**.",
+        "**Vulnerable groups** - children (assent from age 7 and consent from the parent or guardian, with the participant's own consent at 18), pregnant women, prisoners, persons with mental illness or cognitive impairment, the economically or socially disadvantaged, students and employees of the investigator - require additional safeguards and justification for their inclusion; **capacity must be formally assessed, and a legally acceptable representative used where it is absent**.",
+        "**Confidentiality, anonymisation, data storage plans, conflict of interest declarations and a plan for compensation for research-related injury** must all be in the protocol; **trial registration with the Clinical Trials Registry - India (CTRI) is mandatory before enrolment of the first participant**, and most journals will not publish an unregistered trial.",
+      ],
+    },
+    {
+      heading: "The protocol, the thesis and academic integrity",
+      points: [
+        "**NBEMS requires a thesis protocol to be submitted within a defined window of joining (broadly the first six months) and the completed thesis by the prescribed date, and acceptance of the thesis is a precondition for being allowed to sit the final examination** - so the thesis is best treated as a scheduling problem as much as a scientific one.",
+        "**Protocol structure:** title; introduction and rationale; review of literature; aims and objectives written as one primary and a few specific measurable objectives; methodology (study design, setting, study period, study population, inclusion and exclusion criteria, sample size with the formula and its assumptions, sampling technique, study tools with their validation, data collection procedure, operational definitions, statistical analysis plan); ethical considerations and consent; budget; timeline as a Gantt chart; references in a consistent style; and annexures with the proforma, the participant information sheet and the consent form.",
+        "**Write objectives as verbs that can be measured** - to estimate, to compare, to determine, to assess association - and never as 'to study', which cannot be assessed; the objectives, the tools, the analysis plan and the tables of the thesis must all correspond one to one.",
+        "**Thesis structure follows IMRAD:** Introduction (why), Materials and Methods (how), Results (what was found, in tables and figures without interpretation), and Discussion (what it means, compared with the published literature, with limitations stated honestly and a conclusion that answers the objectives), preceded by the title page, certificates, declaration, acknowledgements, contents, abbreviations and abstract, and followed by references, annexures and the master chart.",
+        "**Plagiarism is the use of another's work, words, ideas or data without appropriate attribution**, and includes self-plagiarism, mosaic or patchwork paraphrasing, cut-and-paste from a source without quotation, and fabricated references. The **UGC (Promotion of Academic Integrity and Prevention of Plagiarism) Regulations 2018** grade similarity as **level 0 up to 10% (no penalty), level 1 above 10 to 40%, level 2 above 40 to 60% and level 3 above 60%**, with escalating penalties up to withdrawal of the degree; institutions run submissions through similarity software, and the defence is to **read, understand, write in your own words and cite everything**.",
+        "**Authorship follows the four ICMJE criteria - substantial contribution to conception or design or to acquisition, analysis or interpretation; drafting or critical revision; final approval; and accountability for all aspects** - and gift, guest and ghost authorship are misconduct. Report the finished work using the appropriate reporting guideline: **CONSORT for trials, STROBE for observational studies, PRISMA for systematic reviews, STARD for diagnostic accuracy, COREQ for qualitative research**.",
+      ],
+    },
+    {
+      heading: "Telemedicine Practice Guidelines, India 2020",
+      points: [
+        "The **Telemedicine Practice Guidelines were notified on 25 March 2020** by the Board of Governors in supersession of the Medical Council of India with NITI Aayog, and were **appended to the Indian Medical Council (Professional Conduct, Etiquette and Ethics) Regulations 2002 as Regulation 3.8 (Appendix 5)**, making them legally binding on every registered medical practitioner in India.",
+        "They apply to **a registered medical practitioner registered under the National Medical Commission Act or the erstwhile IMC Act**, and cover consultations by **video, audio or text (chat, images, messaging, email, fax)**, between **patient and RMP, caregiver and RMP, health worker and RMP, or RMP and RMP**. They **exclude** research, the use of digital technology to conduct surgery remotely, hard prescriptive protocols and specifications of hardware.",
+        "**Consent:** it is **implied when the patient initiates** the teleconsultation, and **explicit consent must be recorded when the health worker, the caregiver or the RMP initiates** it; the RMP must confirm the patient's identity and their own, must give their **registration number on every prescription**, and must **maintain records including the log of the consultation, the patient records and the prescription** exactly as for an in-person consultation.",
+        "**Prescribing is restricted by four lists: List O** - over-the-counter drugs safe to prescribe by any mode (paracetamol, oral rehydration solution, lozenges, antiseptics and similar); **List A** - drugs that may be prescribed at a **first consultation only if it is by video**, or as a refill at follow-up (for example ORS-plus items, oral antihistamines, topical antifungals as listed); **List B** - an add-on list that may be prescribed **only at a follow-up teleconsultation** for a condition already diagnosed in person; and a **Prohibited list** - drugs in **Schedule X of the Drugs and Cosmetics Rules and those under the Narcotic Drugs and Psychotropic Substances Act**, which may never be prescribed by telemedicine.",
+        "**The RMP must exercise professional judgement about whether a teleconsultation is appropriate at all, and must not proceed if a physical examination is essential**; in an **emergency the role is limited to first aid, life-saving advice, counselling and facilitating referral**, and the patient must be advised to attend in person at the earliest.",
+        "Practitioners were required to **complete the mandatory online course on telemedicine within three years of notification**, must not misuse patient images or data, must not use telemedicine to advertise or solicit, and remain **fully accountable under the same standard of care as an in-person consultation** - the guideline reduces neither the duty of care nor the medico-legal exposure.",
+      ],
+    },
+  ],
+  tables: [
+    {
+      heading: "Observational study designs compared",
+      columns: ["Feature", "Cross-sectional", "Case-control", "Cohort"],
+      rows: [
+        ["Starting point", "Exposure and outcome measured together", "Starts with the outcome (cases and controls)", "Starts with the exposure"],
+        ["Measure obtained", "Prevalence, prevalence ratio", "Odds ratio", "Incidence, relative risk, attributable risk"],
+        ["Temporality", "Cannot be established", "Backward, inferred", "Established prospectively"],
+        ["Best suited to", "Estimating burden, planning services", "Rare diseases, long latency, multiple exposures", "Rare exposures, multiple outcomes, incidence"],
+        ["Main weakness", "No causal inference; reverse causality", "Recall bias, control selection, no incidence", "Cost, time, loss to follow-up"],
+        ["Typical DNB thesis use", "Commonest design used", "Occasionally used for risk factor studies", "Rarely feasible within the thesis timeline"],
+      ],
+    },
+    {
+      heading: "Bias: type, example and how it is controlled",
+      columns: ["Type of bias", "Example", "Control"],
+      rows: [
+        ["Selection - Berkson's", "Hospital controls have different admission probabilities from the community", "Use community controls or multiple control groups"],
+        ["Selection - Neyman's", "Rapidly fatal cases never reach a prevalence survey", "Use incident rather than prevalent cases"],
+        ["Non-response and attrition", "Defaulters differ systematically from attenders", "Maximise response, follow up defaulters, compare responders with non-responders"],
+        ["Recall bias", "Mothers of malformed babies recall drug exposure better", "Use records or objective exposure measures; blind the interviewer"],
+        ["Interviewer and observer bias", "Knowing the group influences how a reading is taken", "Blinding, standardised protocol, calibrated instruments, automated readings"],
+        ["Confounding", "Age confounds the relation between grey hair and myocardial infarction", "Randomisation, restriction, matching, stratification, multivariable regression"],
+      ],
+    },
+    {
+      heading: "Sample size formulae worth reproducing",
+      columns: ["Purpose", "Formula", "Worked example"],
+      rows: [
+        ["Estimating a proportion, absolute precision", "n = Z squared x p x q / d squared, that is 4pq/d squared at 95% confidence", "p = 20%, q = 80%, d = 5%: n = 4 x 20 x 80 / 25 = 256"],
+        ["Estimating a proportion, relative precision", "Replace d with the chosen fraction of p", "p = 20%, relative precision 20% means d = 4: n = 4 x 20 x 80 / 16 = 400"],
+        ["Estimating a mean", "n = Z squared x SD squared / d squared", "SD = 10, d = 2: n = 4 x 100 / 4 = 100"],
+        ["Adjustments", "Add for non-response; multiply by the design effect for cluster sampling; apply a finite population correction", "256 with 10% non-response becomes about 285"],
+      ],
+    },
+    {
+      heading: "Telemedicine Practice Guidelines 2020: prescribing lists",
+      columns: ["List", "What it contains", "When it may be prescribed"],
+      rows: [
+        ["List O", "Over-the-counter medicines - paracetamol, ORS, lozenges, antiseptics and similar", "Any mode of teleconsultation, including audio and text"],
+        ["List A", "Relatively safe medicines with a low potential for abuse", "First consultation only if by video, or as a refill at follow-up"],
+        ["List B", "Add-on medicines for a condition already diagnosed in person", "Follow-up teleconsultation only"],
+        ["Prohibited list", "Schedule X drugs and drugs under the NDPS Act", "Never by telemedicine, by any mode"],
+      ],
+    },
+  ],
+  redFlags: [
+    "Recruiting a participant who cannot give valid consent - a child, a person with cognitive impairment, an unconscious patient, or anyone whose capacity is doubtful - without formal capacity assessment, assent where applicable, and consent from a legally acceptable representative; never take a thumb impression from an illiterate participant without an impartial witness.",
+    "A research participant or teleconsultation patient who discloses child sexual abuse, domestic violence or a threat of self-harm - confidentiality is not absolute; POCSO 2012 reporting is mandatory, a same-day safety plan is required, and this is escalated to a senior, never carried alone or deferred to the end of the study.",
+    "A notifiable disease detected during a survey or teleconsultation - tuberculosis, HIV, measles, dengue, cholera, diphtheria, acute flaccid paralysis - must be notified through IHIP/IDSP and Nikshay; no protocol, consent form or promise of anonymity overrides a statutory notification duty.",
+    "A serious adverse event, or any research-related injury or death - report to the ethics committee and the sponsor within the prescribed timeline (24 hours for a death, with the detailed report to follow), and never manage or conceal it within the study team; compensation obligations follow under the New Drugs and Clinical Trials Rules 2019.",
+    "A teleconsultation where a physical examination is essential, where the patient is deteriorating, or which is an emergency - the RMP must limit themselves to first aid, life-saving advice, counselling and facilitating referral, and must insist on an in-person visit; proceeding to prescribe is medico-legally indefensible.",
+    "Any request to prescribe a Schedule X drug, a narcotic or a psychotropic by teleconsultation, or to backdate or issue a prescription without a consultation - it is prohibited under the Telemedicine Practice Guidelines and is professional misconduct, whatever the relationship with the patient or the pressure applied.",
+    "Data or authorship irregularity - being offered authorship on a paper you did not contribute to, being asked to add a name, or discovering fabricated data or a plagiarised section - stop and take it to the guide and the institution rather than settling it privately.",
+  ],
+  pearls: [
+    "Case-control is efficient for rare diseases; cohort is efficient for rare exposures. Examiners ask this pair almost every year.",
+    "Bias is systematic error and is not reduced by a larger sample; random error is, which is why the answer to a wide confidence interval is more subjects but the answer to bias is a better design.",
+    "A confounder must be associated with the exposure, be an independent risk factor for the outcome, and not lie on the causal pathway - state all three conditions to earn the mark.",
+    "Randomisation is the only method that controls unknown and unmeasured confounders; every other method controls only what you thought to measure.",
+    "Memorise n = 4pq/d squared and be able to substitute numbers into it in under a minute; it is the commonest calculation item in this subject.",
+    "Power is 1 - beta, conventionally 80%; an underpowered study is an ethical failure, not merely a statistical one.",
+    "Write objectives with measurable verbs - to estimate, to compare, to determine - never 'to study'; the objectives, tools, analysis plan and result tables must map one to one.",
+    "The Telemedicine Practice Guidelines 2020 sit in Regulation 3.8 of the 2002 Code of Ethics: consent implied when the patient initiates, explicit when anyone else does, and Schedule X and NDPS drugs are never prescribable.",
+  ],
+  theory: [
+    {
+      id: "fm-principles-research-thesis-t1",
+      paper: "I",
+      kind: "long",
+      marks: 10,
+      minutes: 20,
+      frequency: "less-common",
+      question:
+        "You wish to study the prevalence of depression among elderly patients attending your urban family practice. Write the protocol you would submit, covering study design, sampling, sample size calculation, tools, bias, ethical considerations and the analysis plan.",
+      openingLines: [
+        "A question about the burden of a condition at a point in time is best answered by a descriptive cross-sectional study, since prevalence, not incidence or causation, is the measure required.",
+        "The protocol must state the design, setting, period, population, inclusion and exclusion criteria, sample size with its formula and assumptions, sampling technique, validated tools, data collection procedure, statistical plan and ethical safeguards before a single participant is approached.",
+      ],
+      answer: [
+        {
+          heading: "1. Title, rationale and objectives",
+          points: [
+            "Title: prevalence of depression and its associated factors among patients aged 60 years and above attending an urban family practice - a cross-sectional study.",
+            "Rationale: depression in the elderly is common, under-detected in primary care, presents somatically, and is treatable; local data are needed to plan screening.",
+            "Primary objective: to estimate the prevalence of depression among patients aged 60 and above attending the clinic during the study period.",
+            "Secondary objectives: to determine its association with living arrangement, comorbidity, functional dependence and socio-economic status; to describe the proportion already diagnosed and treated.",
+          ],
+        },
+        {
+          heading: "2. Design, setting, population and period",
+          points: [
+            "Descriptive cross-sectional study with an analytical component.",
+            "Setting: the outpatient department of an urban family practice or health and wellness centre.",
+            "Study period: 12 months, with 6 months of data collection.",
+            "Inclusion: age 60 and above, attending during the study period, giving informed consent.",
+            "Exclusion: acute medical emergency, significant cognitive impairment precluding interview, known psychosis, and those unwilling to consent.",
+          ],
+        },
+        {
+          heading: "3. Sample size and sampling",
+          points: [
+            "Formula for a proportion with absolute precision: n = Z squared x p x q / d squared, that is 4pq/d squared at 95% confidence.",
+            "Assuming p = 20% from previous Indian studies, q = 80% and d = 5%: n = 4 x 20 x 80 / 25 = 256.",
+            "Adding 10% for non-response and incomplete forms gives approximately 285, rounded to 300.",
+            "Sampling: systematic random sampling of every kth eligible attender after a random start, k derived from the expected attendance; state that consecutive convenience sampling would be an inferior alternative and must be declared as a limitation.",
+          ],
+        },
+        {
+          heading: "4. Tools and data collection",
+          points: [
+            "A pre-tested, semi-structured proforma for sociodemographic data, comorbidity, drugs and living arrangement, with socio-economic status by the modified Kuppuswamy scale.",
+            "Depression screened with the Geriatric Depression Scale (GDS-15) or PHQ-9 in a locally validated translation, with a stated cut-off; positive screens confirmed against ICD-10 or DSM-5 criteria by clinical interview.",
+            "Functional status by the Barthel Index or Katz ADL; cognition screened with the MMSE or MoCA to apply the exclusion criterion.",
+            "Pilot on 20 participants who are then excluded from the main analysis; check internal consistency with Cronbach's alpha; interviews in a private room by a single trained interviewer.",
+          ],
+        },
+        {
+          heading: "5. Bias, confounding and the analysis plan",
+          points: [
+            "Selection bias minimised by systematic random sampling from all eligible attenders, and acknowledged: clinic attenders are not the community elderly.",
+            "Information bias minimised by a validated translated tool, a single trained interviewer, privacy, and confirmation of positive screens.",
+            "Confounding by age, sex, comorbidity and socio-economic status addressed by multivariable logistic regression.",
+            "Analysis: data entered in duplicate in Epi Info or MS Excel, analysed in SPSS or R; prevalence reported as a percentage with a 95% confidence interval; categorical comparisons by chi-square or Fisher's exact test, continuous by t test or Mann-Whitney; adjusted odds ratios from logistic regression; p below 0.05 taken as significant.",
+          ],
+        },
+        {
+          heading: "6. Ethical considerations",
+          points: [
+            "Prior written approval from the registered Institutional Ethics Committee before recruitment begins.",
+            "Participant information sheet and written informed consent in the local language, with an impartial witness and thumb impression for illiterate participants.",
+            "Voluntariness, right to withdraw without any effect on routine care, privacy and confidentiality with coded data and restricted access.",
+            "A prospective plan for participants who screen positive or disclose suicidal ideation: same-day clinical assessment, referral to mental health services and a documented safety plan - a screening study creates a duty of care.",
+            "No conflict of interest; funding declared; data retained as per institutional policy; results shared with the department.",
+          ],
+        },
+      ],
+      mustDraw: [
+        "A protocol skeleton as a numbered list of headings, from title to annexures.",
+        "The sample size formula written out with the numbers substituted.",
+        "A Gantt chart timeline of the 12 months, and a dummy table for the main result.",
+      ],
+      markSplit: [
+        { part: "Design justification and objectives", marks: 2 },
+        { part: "Sample size calculation shown with the formula", marks: 2 },
+        { part: "Sampling technique and inclusion or exclusion criteria", marks: 1 },
+        { part: "Tools, pilot and data collection", marks: 2 },
+        { part: "Bias, confounding and analysis plan", marks: 1 },
+        { part: "Ethical considerations including the duty of care to positive screens", marks: 2 },
+      ],
+      keywords: ["cross-sectional study", "sample size", "systematic random sampling", "ethics committee", "informed consent", "protocol"],
+    },
+    {
+      id: "fm-principles-research-thesis-t2",
+      paper: "I",
+      kind: "short-note",
+      marks: 5,
+      minutes: 10,
+      frequency: "less-common",
+      question: "Short note: the Telemedicine Practice Guidelines of India, 2020.",
+      openingLines: [
+        "The Telemedicine Practice Guidelines were notified on 25 March 2020 by the Board of Governors in supersession of the Medical Council of India, in partnership with NITI Aayog, and were appended to the Indian Medical Council (Professional Conduct, Etiquette and Ethics) Regulations 2002 as Regulation 3.8.",
+        "They give legal legitimacy to teleconsultation by a registered medical practitioner while holding it to the same standard of care as an in-person consultation.",
+      ],
+      answer: [
+        {
+          heading: "1. Scope and who may practise",
+          points: [
+            "Applies to every registered medical practitioner registered under the NMC Act or the erstwhile IMC Act.",
+            "Modes covered: video, audio, and text including chat, images, messaging, email and fax.",
+            "Relationships covered: patient to RMP, caregiver to RMP, health worker to RMP, and RMP to RMP.",
+            "Excludes research, remote surgery, hardware specifications and hard prescriptive protocols.",
+          ],
+        },
+        {
+          heading: "2. Consent, identification and records",
+          points: [
+            "Consent is implied when the patient initiates; explicit consent must be recorded when the RMP, caregiver or health worker initiates.",
+            "Both parties must be identified; the RMP states name and registration number, which must appear on the prescription.",
+            "The RMP maintains the consultation log, patient records, prescriptions and any images, exactly as for an in-person visit.",
+            "Fees may be charged as for an in-person consultation, with a receipt.",
+          ],
+        },
+        {
+          heading: "3. Prescribing lists",
+          points: [
+            "List O: over-the-counter drugs, prescribable by any mode.",
+            "List A: prescribable at a first consultation only if by video, or as a refill at follow-up.",
+            "List B: add-on drugs at a follow-up teleconsultation for a condition already diagnosed in person.",
+            "Prohibited list: Schedule X drugs and drugs under the NDPS Act - never prescribable by telemedicine.",
+          ],
+        },
+        {
+          heading: "4. Professional judgement, limits and accountability",
+          points: [
+            "The RMP must decide whether teleconsultation is appropriate, and must not proceed where a physical examination is essential.",
+            "In an emergency the role is limited to first aid, life-saving advice, counselling and facilitating referral, with an in-person visit advised at the earliest.",
+            "The same standard of care, confidentiality and data protection applies; misuse of patient images or data, and advertising or soliciting through telemedicine, are prohibited.",
+            "The mandatory online telemedicine course was to be completed within three years of notification; breaches are dealt with as professional misconduct under the 2002 Regulations.",
+          ],
+        },
+      ],
+      mustDraw: [
+        "A table of the four prescribing lists against the mode and stage of consultation.",
+        "A flow chart: patient initiates or RMP initiates - consent implied or explicit - identification - consultation - prescription within the permitted list - records.",
+      ],
+      markSplit: [
+        { part: "Origin, legal status and scope", marks: 1 },
+        { part: "Consent, identification and record keeping", marks: 1 },
+        { part: "The four prescribing lists", marks: 2 },
+        { part: "Limits, emergencies and accountability", marks: 1 },
+      ],
+      keywords: ["telemedicine", "Regulation 3.8", "List O", "List A", "List B", "prohibited list", "informed consent"],
+    },
+  ],
+  mcqs: [
+    {
+      id: "fm-principles-research-thesis-q1",
+      stem: "You wish to estimate the prevalence of anaemia in a community where the expected prevalence is 20%, with an absolute precision of 5% at 95% confidence. Using n = 4pq/d squared, what is the required sample size before adjusting for non-response?",
+      options: [
+        "64",
+        "256",
+        "400",
+        "1600",
+      ],
+      answer: 1,
+      explanation:
+        "With p = 20, q = 80 and d = 5: n = 4 x 20 x 80 / 5 squared = 6400/25 = 256. The value 400 is what you get if relative precision of 20% is used instead (d = 4, giving 6400/16 = 400), and 1600 arises from using d = 2. The common error is to confuse absolute precision (5 percentage points, so the estimate lies between 15% and 25%) with relative precision (20% of p, so d = 4). Add 10-20% for non-response, and multiply by the design effect if cluster sampling is used.",
+      difficulty: "moderate",
+    },
+    {
+      id: "fm-principles-research-thesis-q2",
+      stem: "A study design that starts with the outcome and looks backwards at exposure, is efficient for rare diseases, and yields an odds ratio, is:",
+      options: [
+        "A cross-sectional study",
+        "A case-control study",
+        "A prospective cohort study",
+        "A randomised controlled trial",
+      ],
+      answer: 1,
+      explanation:
+        "The case-control design selects cases with the outcome and comparable controls without it, then looks backwards at exposure, so it is efficient in time and numbers for rare diseases and long latent periods and yields an odds ratio. It cannot give incidence and is vulnerable to recall bias and to control selection. The cohort design starts from exposure and gives incidence and relative risk, being efficient for rare exposures rather than rare diseases; a cross-sectional study measures both at once and gives prevalence; an RCT allocates the exposure and is the design for therapeutic questions.",
+      difficulty: "easy",
+    },
+    {
+      id: "fm-principles-research-thesis-q3",
+      stem: "Which statement about confounding is correct?",
+      options: [
+        "A confounder lies on the causal pathway between exposure and outcome",
+        "A confounder is associated with the exposure and is an independent risk factor for the outcome, and is not on the causal pathway",
+        "Confounding is eliminated by increasing the sample size",
+        "Confounding can only be controlled in the analysis, never in the design",
+      ],
+      answer: 1,
+      explanation:
+        "All three conditions must be stated: the confounder is associated with the exposure, is an independent risk factor for the outcome, and does not lie on the causal pathway - a variable on the causal pathway is a mediator, and adjusting for it would remove part of the very effect being measured. Increasing the sample size reduces random error, not systematic error. Confounding is controlled in the design by randomisation, restriction and matching, and in the analysis by stratification, standardisation and multivariable regression, with randomisation uniquely handling unknown confounders.",
+      difficulty: "moderate",
+    },
+    {
+      id: "fm-principles-research-thesis-q4",
+      stem: "Under the Telemedicine Practice Guidelines 2020, a patient with a previously in-person diagnosis of hypertension contacts you by audio call for a refill of amlodipine. Which statement is correct?",
+      options: [
+        "No prescription may ever be issued on an audio-only teleconsultation",
+        "Explicit written consent must be obtained because the patient initiated the call",
+        "A follow-up refill of a listed medicine for a condition already diagnosed in person is permitted, and the prescription must carry your registration number",
+        "Schedule X drugs may be prescribed by audio if the patient is known to you",
+      ],
+      answer: 2,
+      explanation:
+        "The guidelines permit prescribing at follow-up for a condition already diagnosed in person, within the permitted lists, and every prescription must carry the RMP's name and registration number and be recorded. Audio-only consultations are allowed and are not blanket-barred from prescribing; the video requirement applies to first consultations for List A medicines. Consent is implied when the patient initiates the consultation - explicit consent is required only when the RMP, caregiver or health worker initiates it. Schedule X and NDPS drugs are on the prohibited list and may never be prescribed by telemedicine, however well known the patient is.",
+      difficulty: "moderate",
+    },
+    {
+      id: "fm-principles-research-thesis-q5",
+      stem: "In a case-control study of congenital malformations, mothers of affected babies remember first-trimester drug exposure more completely than mothers of healthy babies. This is an example of:",
+      options: [
+        "Berkson's bias",
+        "Recall bias",
+        "Confounding",
+        "Neyman's bias",
+      ],
+      answer: 1,
+      explanation:
+        "Recall bias is a form of information bias in which cases and controls differ systematically in the completeness or accuracy with which past exposures are remembered, and it is the classic weakness of retrospective case-control designs; it is minimised by using documented records, objective exposure measures, structured memory aids and blinded interviewers. Berkson's bias is a selection bias arising from differential admission probabilities in hospital-based studies, Neyman's is the prevalence-incidence bias that arises when rapidly fatal or rapidly resolving cases are missed, and confounding is a distortion by a third variable rather than an error of measurement.",
+      difficulty: "easy",
+    },
+  ],
+  cards: [
+    {
+      id: "fm-principles-research-thesis-c1",
+      front: "Case-control versus cohort: which is efficient for what?",
+      back: "Case-control is efficient for rare diseases and long latency and gives an odds ratio; cohort is efficient for rare exposures, gives incidence and relative risk, and establishes temporality.",
+    },
+    {
+      id: "fm-principles-research-thesis-c2",
+      front: "Sample size formula for estimating a proportion, and a worked example.",
+      back: "n = Z squared x p x q / d squared, that is 4pq/d squared at 95% confidence. With p = 20%, q = 80%, d = 5%: n = 4 x 20 x 80 / 25 = 256; add 10-20% for non-response and multiply by the design effect for cluster sampling.",
+    },
+    {
+      id: "fm-principles-research-thesis-c3",
+      front: "Type I error, type II error and power.",
+      back: "Type I (alpha) is rejecting a true null hypothesis - a false positive, conventionally set at 0.05. Type II (beta) is failing to reject a false null hypothesis - a false negative. Power = 1 - beta, conventionally 80% or 90%.",
+    },
+    {
+      id: "fm-principles-research-thesis-c4",
+      front: "The three conditions that define a confounder.",
+      back: "Associated with the exposure; an independent risk factor for the outcome; not on the causal pathway between them. Controlled by randomisation, restriction, matching, stratification and multivariable regression.",
+    },
+    {
+      id: "fm-principles-research-thesis-c5",
+      front: "Name the probability sampling methods and their trade-offs.",
+      back: "Simple random (unbiased, needs a full frame); systematic (easy, fails with periodicity); stratified (most precise when strata differ); cluster (cheapest in the field, least precise, needs a design effect); multistage (used in large surveys such as NFHS).",
+    },
+    {
+      id: "fm-principles-research-thesis-c6",
+      front: "Composition of an Institutional Ethics Committee.",
+      back: "At least seven members - chairperson from outside the institution, member secretary, basic medical scientist, clinicians, legal expert, social scientist or philosopher or NGO representative, and a lay person; both sexes represented; not more than half from the same institution.",
+    },
+    {
+      id: "fm-principles-research-thesis-c7",
+      front: "The three elements of valid informed consent.",
+      back: "Information, comprehension and voluntariness - documented on a participant information sheet in the local language plus a signed or thumb-impressed consent form, with an impartial witness for illiterate participants and the right to withdraw without loss of usual care.",
+    },
+    {
+      id: "fm-principles-research-thesis-c8",
+      front: "IMRAD, and the reporting guideline for each design.",
+      back: "Introduction, Materials and Methods, Results, and Discussion. CONSORT for trials, STROBE for observational studies, PRISMA for systematic reviews, STARD for diagnostic accuracy and COREQ for qualitative research.",
+    },
+    {
+      id: "fm-principles-research-thesis-c9",
+      front: "UGC 2018 plagiarism similarity bands.",
+      back: "Level 0 up to 10% - no penalty; level 1 above 10 to 40%; level 2 above 40 to 60%; level 3 above 60% - with escalating penalties up to withdrawal of the degree. Self-plagiarism and mosaic paraphrasing are included.",
+    },
+    {
+      id: "fm-principles-research-thesis-c10",
+      front: "Telemedicine Practice Guidelines 2020: date, legal position and consent rule.",
+      back: "Notified 25 March 2020 by the BoG in supersession of the MCI with NITI Aayog, appended to the IMC Ethics Regulations 2002 as Regulation 3.8. Consent is implied when the patient initiates and must be explicit when the RMP, caregiver or health worker initiates.",
+    },
+    {
+      id: "fm-principles-research-thesis-c11",
+      front: "The four telemedicine prescribing lists.",
+      back: "List O - over-the-counter, any mode. List A - first consult only by video, or refill at follow-up. List B - add-on at follow-up for a condition already diagnosed in person. Prohibited - Schedule X and NDPS drugs, never by telemedicine.",
+    },
+    {
+      id: "fm-principles-research-thesis-c12",
+      front: "The four ICMJE authorship criteria.",
+      back: "Substantial contribution to conception or design or to acquisition, analysis or interpretation; drafting or critical revision for intellectual content; final approval of the version to be published; and accountability for all aspects of the work. All four must be met.",
+    },
+  ],
+  references: [
+    "Indian Council of Medical Research. National Ethical Guidelines for Biomedical and Health Research Involving Human Participants, ICMR, 2017",
+    "Ministry of Health and Family Welfare, Government of India. New Drugs and Clinical Trials Rules, 2019",
+    "Board of Governors in supersession of the Medical Council of India, with NITI Aayog. Telemedicine Practice Guidelines, 25 March 2020 - Appendix 5 to the IMC (Professional Conduct, Etiquette and Ethics) Regulations 2002, Regulation 3.8",
+    "World Medical Association. Declaration of Helsinki - Ethical Principles for Medical Research Involving Human Subjects, 2013 revision",
+    "University Grants Commission. Promotion of Academic Integrity and Prevention of Plagiarism in Higher Educational Institutions Regulations, 2018",
+    "Park K. Park's Textbook of Preventive and Social Medicine, 27th edition, Bhanot, 2023 - epidemiology and health information chapters",
+    "Sundar Rao PSS, Richard J. An Introduction to Biostatistics and Research Methods, 5th edition, PHI Learning, 2012",
+    "Gordis L. Epidemiology, 6th edition, Elsevier, 2018",
+    "National Board of Examinations in Medical Sciences. Guidelines for Thesis Protocol and Thesis Submission for DNB candidates, NBEMS (current edition)",
+  ],
+});
+
 const cases: ClinicalCase[] = [
   {
     id: "fm-principles-case-1",
