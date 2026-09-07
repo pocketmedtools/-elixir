@@ -132,3 +132,32 @@ not a list of known errors.
 - **Jackson's low tracheostomy.** Dhingra treats it as rarely performed rather
   than giving crisp indications, so it is framed as reserved for special
   situations rather than given an invented list.
+
+## neurology-seizures-epilepsy
+
+- **Driving in India.** No single defensible national seizure-free interval could
+  be pinned down. The Central Motor Vehicles Rules Form 1 self-declaration has
+  historically been an absolute bar, with amendments and Indian Epilepsy Society
+  advocacy moving towards a defined interval, applied inconsistently. The text
+  says so explicitly and anchors the practical advice to the UK DVLA numbers
+  (one year for established epilepsy, six months after a single unprovoked
+  seizure with normal investigations, no driving during and for six months after
+  drug withdrawal, never a commercial vehicle) — labelled as UK figures, not
+  presented as Indian law.
+- **Ethosuximide availability in India** is genuinely patchy, and many Indian
+  units start valproate for that reason. Stated as a practical caveat rather
+  than pretending the drug is always obtainable.
+- **NICE NG217 ordering in absence seizures.** Ethosuximide first, valproate
+  second (subject to the MHRA valproate restrictions), lamotrigine or
+  levetiracetam if both fail — but valproate moves first where generalised
+  tonic-clonic seizures coexist, except in girls. Written as that conditional
+  rather than a flat ladder.
+- **Vitamin K in late pregnancy on enzyme-inducing drugs.** Evidence is weak and
+  guidelines have diverged; omitted rather than given a number.
+- **HLA-B*1502 and carbamazepine.** Firm in Han Chinese and Thai populations;
+  allele frequency in Indian populations is reported but lower and testing is
+  not routine here. Phrased as a caution in some Asian populations rather than a
+  testing recommendation.
+- **Ethosuximide paediatric maintenance.** Sources differ (BNFC about
+  20 mg/kg/day, Nelson 20–30, some to 40). 20–30 mg/kg/day to a maximum of
+  1500 mg/day is used.
