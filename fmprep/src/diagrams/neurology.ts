@@ -378,9 +378,9 @@ const diagrams: DiagramSet = {
             "Everyone with a suspected TIA, whatever the ABCD2 score - the score misses carotid stenosis and atrial fibrillation",
         },
         {
-          label: "MRI with diffusion-weighted imaging within 24 hours",
+          label: "MRI with diffusion-weighted imaging",
           detail:
-            "It separates true TIA from minor stroke and finds mimics; CT is acceptable where MRI is unavailable but a normal CT proves nothing",
+            "Within 24 hours - it separates true TIA from minor stroke and finds mimics; CT is acceptable where MRI is unavailable but a normal CT proves nothing",
         },
         {
           label: "Carotid imaging within 24 hours",
@@ -472,8 +472,9 @@ const diagrams: DiagramSet = {
           ],
         },
         {
-          label: "2. Blood pressure - the largest long-term gain",
+          label: "2. Blood pressure",
           steps: [
+            "The single most powerful long-term intervention",
             "Target below 130/80 mmHg once the acute phase is over",
             "ACE inhibitor or ARB with a thiazide-like diuretic or amlodipine",
             "Every 10 mmHg fall in systolic pressure cuts recurrent stroke by about a quarter",
@@ -536,7 +537,7 @@ const diagrams: DiagramSet = {
           ],
         },
         {
-          label: "Spontaneous and recurrent, 5 minutes to 72 hours",
+          label: "Spontaneous, recurrent, 5 min to 72 hours",
           steps: [
             "Vestibular migraine - the commonest cause of recurrent spontaneous vertigo, and massively under-diagnosed",
             "At least 5 episodes with migrainous features in half of them; normal hearing and audiogram",
@@ -544,7 +545,7 @@ const diagrams: DiagramSet = {
           ],
         },
         {
-          label: "Spontaneous and recurrent, 20 minutes to 12 hours",
+          label: "Spontaneous, recurrent, 20 min to 12 hours",
           steps: [
             "Meniere disease with fluctuating aural symptoms in the affected ear",
             "Audiogram documents low-to-mid frequency sensorineural loss",
@@ -672,7 +673,7 @@ const diagrams: DiagramSet = {
             "The head now lies 45 degrees to the left; hold 30-60 seconds. Nystagmus may recur in the same direction, which is a good sign",
         },
         {
-          label: "4. Roll onto the left shoulder, nose to the floor",
+          label: "4. Roll onto the left shoulder",
           detail:
             "Head rotated a further 90 degrees so the nose points about 45 degrees down; hold 30-60 seconds for a further burst of nystagmus in the same direction",
         },
@@ -772,7 +773,7 @@ const diagrams: DiagramSet = {
             "Capsaicin 0.075% cream four times daily for 6-8 weeks, or a lidocaine 5% patch",
         },
         {
-          label: "Tramadol or tapentadol - second line and brief",
+          label: "Tramadol or tapentadol, second line only",
           detail:
             "50 mg twice daily, short course only. Strong opioids should not be used for chronic neuropathic pain - tolerance, dependence, hyperalgesia and no benefit at 12 months. NSAIDs and paracetamol do not work at all",
           tone: "warn",
@@ -796,7 +797,7 @@ const diagrams: DiagramSet = {
             "128 Hz tuning fork at the great toe, pinprick, temperature discrimination or the ankle reflex",
         },
         {
-          label: "Any site not felt is loss of protective sensation",
+          label: "Any site not felt: protective sensation lost",
           detail:
             "Record it in the notes as a yes or no, not as an impression - it is the single finding that changes management and identifies the foot at risk of ulceration",
           tone: "warn",
@@ -826,7 +827,7 @@ const diagrams: DiagramSet = {
           tone: "warn",
         },
         {
-          label: "Do not be reassured by oximetry or blood gases",
+          label: "Oximetry and blood gases mislead here",
           detail:
             "Both stay normal until the patient is close to respiratory arrest, because the problem is bellows failure rather than gas exchange. A single-breath count under 20 is a useful proxy",
           tone: "warn",
@@ -858,7 +859,7 @@ const diagrams: DiagramSet = {
             "Fever, headache, neck stiffness, altered sensorium - the full triad is present in fewer than half of adults but two of the four in about 95%. Kernig and Brudzinski are specific but very insensitive",
         },
         {
-          label: "Blood cultures, then antibiotic within the hour",
+          label: "Blood cultures, then antibiotic in the hour",
           detail:
             "Ceftriaxone 2 g IV 12-hourly plus vancomycin 15-20 mg/kg IV 8-12 hourly, in meningeal doses - half doses do not cross the blood-brain barrier",
           tone: "good",
@@ -885,7 +886,7 @@ const diagrams: DiagramSet = {
             "Cell count and differential, protein, glucose with a simultaneous blood glucose, Gram stain and culture; PCR and CBNAAT yields survive several hours of antibiotic. Send 5-10 mL if tuberculosis is possible",
         },
         {
-          label: "Fever with altered behaviour or seizures: add acyclovir",
+          label: "Altered behaviour or seizures: add acyclovir",
           detail:
             "10 mg/kg IV 8-hourly empirically for herpes simplex encephalitis while investigating - delay beyond 48 hours multiplies mortality",
           tone: "warn",
@@ -1079,7 +1080,7 @@ const diagrams: DiagramSet = {
             "House-Brackmann IV to VI: valacyclovir 1 g three times daily for 7 days, or acyclovir 400 mg five times daily. Never give an antiviral alone - alone it does nothing",
         },
         {
-          label: "Eye protection prevents the blinding complication",
+          label: "Eye protection prevents corneal damage",
           detail:
             "Carboxymethylcellulose 0.5% or hypromellose drops hourly while awake, paraffin or carbomer ointment at night, horizontal eyelid taping at night, protective glasses outdoors",
           tone: "warn",
@@ -1245,7 +1246,7 @@ const diagrams: DiagramSet = {
           tone: "warn",
         },
         {
-          label: "Digital rectal examination and perianal pinprick",
+          label: "Rectal examination and perianal pinprick",
           detail: "Resting anal tone and voluntary squeeze; anal wink and bulbocavernosus reflex",
         },
         {
@@ -1477,7 +1478,7 @@ const diagrams: DiagramSet = {
             "Levosulpiride, flunarizine, cinnarizine, metoclopramide or an antipsychotic - review in 4-8 weeks before labelling anyone. Exclude Wilson disease under 50",
         },
         {
-          label: "Levodopa plus carbidopa is the most effective drug",
+          label: "Levodopa with carbidopa is most effective",
           detail:
             "100/25 mg: half a tablet three times daily or one tablet twice daily, titrated weekly to 300-600 mg of levodopa a day in 3-4 doses, taken 30-60 minutes before food. The 100/10 formulation supplies too little carbidopa unless taken four or more times a day",
         },
@@ -1590,7 +1591,7 @@ const diagrams: DiagramSet = {
           tone: "warn",
         },
         {
-          label: "Think eclampsia in the pregnant or recently delivered",
+          label: "Think eclampsia in pregnancy or puerperium",
           detail:
             "A convulsion after 20 weeks or within 6 weeks of delivery is eclampsia until proved otherwise - magnesium sulphate, blood pressure control and delivery, not a benzodiazepine alone",
           tone: "warn",

@@ -186,6 +186,70 @@ npm run merge    # fold finished topics into their subject files
 npm run verify   # the content checker, which must stay green
 ```
 
+## Phase 3 — making it glanceable (in progress)
+
+The library read like a textbook because it was rendered like one. Three things
+changed, and the third is ongoing.
+
+**Colour is navigation.** `src/lib/hues.ts` gives each subject one hue. The
+reader sets it as `--h` on its root and `src/index.css` derives the accent, wash,
+rule and highlighter from it, so a subject is one number rather than a palette to
+keep in step. Semantic colour stays separate: red is danger, gold is a pearl or a
+drawing the examiner expects, green is the right answer. Never add a colour that
+means nothing.
+
+**Marked lines.** `RichText` in `src/components/ui.tsx` renders a `**bold**` run
+as a highlighter mark, not merely bold — the authors used bold for the lines that
+decide management, so those are the lines that get marked. It also picks every
+quantity into its own chip, matching a list of the units the library actually
+writes. That list is the whole trick: matching any digit would light up "a grade
+2 of 6 murmur", and matching too few leaves "1.6 microgram/kg/day" split down the
+middle. If a dose renders half-highlighted, the unit belongs in that list.
+
+**Diagrams, as data.** `Diagram` in `src/lib/types.ts` defines five shapes with
+deterministic layouts:
+
+| kind | for |
+|---|---|
+| `flow` | an algorithm, a protocol, a resuscitation sequence, a work-up |
+| `branch` | a classification, a differential, causes grouped by mechanism |
+| `ladder` | escalation in order: a treatment ladder, severity grades |
+| `cycle` | a closed loop: audit, planning, transmission |
+| `compare` | what tells look-alikes apart — the highest-value shape in an exam library |
+
+They live in `src/diagrams/<subject>.ts` keyed by topic id, **beside** the library
+rather than inside it, so illustrating a topic never means editing a 400 KB
+subject file and several authors can work at once. A topic with no entry renders
+without one, which is the honest state: a diagram that misrepresents the material
+is worse than none.
+
+`npm run verify` validates them — a comparison row whose cell count does not
+match its columns, a branch with one arm, a cycle that does not close, a label
+too long for a box, or a key that is not a real topic id all fail the build.
+`DiagramBlock.tsx` draws them for the app and `scripts/singlefile.template.html`
+for the single-file build; connectors are CSS borders rather than SVG paths so
+they reflow on a phone and inherit the subject hue.
+
+To write more, copy `src/diagrams/_TEMPLATE.example.ts`, and give the author the
+per-topic digests in `review/<subject>/` rather than the subject file.
+
+**State:** eight subjects drawn. Run this to see where it stands:
+
+```bash
+for f in src/diagrams/*.ts; do echo "$(grep -c 'kind:' $f) $(basename $f .ts)"; done | sort -rn
+```
+
+## Reading it without a server
+
+```bash
+npm run single      # packs the whole library into one self-contained HTML file
+```
+
+`dist-single/fm-prep.html` carries every topic, model answer, question,
+flashcard, diagram and past question with its links — about 10 MB, no server, no
+build step to open it. What it cannot carry is the document importer (that needs
+pdf.js and mammoth) and the offline service worker; for those, run the app.
+
 ## If you want to take it further
 
 1. **Clinical review pass.** One adversarial reviewer per subject, checking
