@@ -17,17 +17,33 @@ import { FREQUENCY_LABEL } from "../lib/types";
 const QUANTITY =
   /(\d[\d.,]*(?:\s*(?:-|to)\s*\d[\d.,]*)?\s*(?:micrograms?\/kg\/day|micrograms?\/kg\/min|micrograms?\/kg|mg\/kg\/day|mg\/kg\/dose|mcg\/kg\/min|mcg\/kg\/day|mL\/kg\/h|mg\/kg|mcg\/kg|mg\/dL|g\/dL|mmol\/L|mEq\/kg|mEq\/L|mL\/min|mg\/day|IU\b|units?\b|mg\b|mcg\b|micrograms?\b|mL\b|kg\b|mmHg|cmH2O|%|per 1000|per 100000|degrees C|weeks?\b|days?\b|hours?\b|minutes?\b|months?\b|years?\b))/g;
 
+/**
+ * A trailing source tag, "[NICE NG28 2022]". It has to be visible - a figure a
+ * reader cannot trace is a figure they cannot trust - but it is not the point
+ * of the line, so it is set quiet and small rather than in the reading colour.
+ */
+const CITE = /(\[[^\]]{2,60}\])/g;
+
 /** Split a run of plain text so every quantity in it becomes its own chip. */
 function withQuantities(text: string, keyBase: string): ReactNode[] {
-  return text.split(QUANTITY).map((piece, i) =>
-    i % 2 === 1 ? (
-      <b key={`${keyBase}-q${i}`} className="num">
-        {piece}
-      </b>
-    ) : (
-      <span key={`${keyBase}-t${i}`}>{piece}</span>
-    ),
-  );
+  return text.split(CITE).flatMap((chunk, ci) => {
+    if (ci % 2 === 1) {
+      return [
+        <cite key={`${keyBase}-c${ci}`} className="cite">
+          {chunk.slice(1, -1)}
+        </cite>,
+      ];
+    }
+    return chunk.split(QUANTITY).map((piece, i) =>
+      i % 2 === 1 ? (
+        <b key={`${keyBase}-${ci}-q${i}`} className="num">
+          {piece}
+        </b>
+      ) : (
+        <span key={`${keyBase}-${ci}-t${i}`}>{piece}</span>
+      ),
+    );
+  });
 }
 
 /**

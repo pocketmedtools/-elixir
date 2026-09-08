@@ -102,6 +102,9 @@ main{padding:26px 0 80px}
   border:1px dashed var(--rule);border-radius:var(--radius)}
 mark.hl{background:var(--hl);color:var(--ink);font-weight:650;
   padding:.06em .22em;border-radius:2px;box-decoration-break:clone;-webkit-box-decoration-break:clone}
+cite.cite{font:500 .72em/1.5 "IBM Plex Mono",ui-monospace,monospace;font-style:normal;
+  color:var(--acc);background:var(--wash);border:1px solid var(--acc-rule);border-radius:3px;
+  padding:.05em .36em;margin-left:.35em;white-space:nowrap;vertical-align:.05em}
 b.num{font-family:"IBM Plex Mono",ui-monospace,monospace;font-weight:600;
   font-variant-numeric:tabular-nums;color:var(--acc);white-space:nowrap}
 .freq{display:inline-flex;align-items:center;gap:6px;font:600 10.5px/1 "IBM Plex Mono",monospace;
@@ -320,11 +323,16 @@ const esc = x => String(x).replace(/[&<>"]/g, c => ({"&":"&amp;","<":"&lt;",">":
 /* Units the library actually writes, so a dose is picked out but "2 of 6" is not. */
 const NUM = /\b(\d[\d.,]*(?:\s*(?:-|to)\s*\d[\d.,]*)?\s*(?:micrograms?\/kg\/day|micrograms?\/kg\/min|micrograms?\/kg|mg\/kg\/day|mg\/kg\/dose|mcg\/kg\/min|mcg\/kg\/day|mL\/kg\/h|mg\/kg|mcg\/kg|mg\/dL|g\/dL|mmol\/L|mEq\/kg|mEq\/L|mL\/min|mg\/day|IU\b|units?\b|mg\b|mcg\b|micrograms?\b|mL\b|kg\b|mmHg|cmH2O|%|per 1000|per 100000|degrees C|weeks?\b|days?\b|hours?\b|minutes?\b|months?\b|years?\b))/g;
 
-/** Escape, then turn **bold** into a real highlight, then pick out quantities. */
+/* A trailing source tag, "[NICE NG28 2022]": visible, because a figure a reader
+   cannot trace is a figure they cannot trust, but set quiet. */
+const CITE = /\[([^\]]{2,60})\]/g;
+
+/** Escape, mark the **bold** runs, chip the quantities, quieten the sources. */
 function rich(x){
   return esc(x)
     .replace(/\*\*(.+?)\*\*/g, '<mark class="hl">$1</mark>')
-    .replace(NUM, '<b class="num">$1</b>');
+    .replace(NUM, '<b class="num">$1</b>')
+    .replace(CITE, '<cite class="cite">$1</cite>');
 }
 const freq = f => '<span class="freq"><i style="--w:' + ((FREQ[f] ? FREQ[f][1] : .2) * 100) + '%"></i>' + (FREQ[f] ? FREQ[f][0] : f) + '</span>';
 const el = document.getElementById("view");

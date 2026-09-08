@@ -127,3 +127,22 @@ b.num {
   border-right: 2px solid var(--acc-rule); border-bottom: 2px solid var(--acc-rule);
   transform: translateX(-50%) rotate(45deg);
 }
+
+/* A source tag at the end of a point. Visible, because a figure a reader
+   cannot trace is a figure they cannot trust; quiet, because it is not what
+   the line is about. */
+cite.cite {
+  font-family: ui-monospace, "SF Mono", Menlo, Consolas, monospace;
+  font-style: normal;
+  font-size: 0.72em;
+  font-weight: 500;
+  letter-spacing: 0.01em;
+  color: var(--acc);
+  background: var(--wash);
+  border: 1px solid var(--acc-rule);
+  border-radius: 3px;
+  padding: 0.05em 0.36em;
+  margin-left: 0.35em;
+  white-space: nowrap;
+  vertical-align: 0.05em;
+}
