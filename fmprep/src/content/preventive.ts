@@ -2233,7 +2233,7 @@ topics.push({
       difficulty: "easy",
       answer: 3,
       explanation:
-        "Incidence density uses person-time as denominator: 25 cases / 2500 person-years = 0.01 per person-year = 10 per 1000 person-years. The option A per 1000 person-years is a decimal-place slip, and 2.5 per 1000 comes from dividing 25 by 10 instead of by 2.5. The option 25 per 1000 persons is the cumulative incidence using persons as denominator, which ignores that not everyone was followed for the same period and is not a rate at all. Person-time methods are used precisely because they accommodate variable entry and exit in a dynamic cohort.",
+        "Incidence density uses person-time as denominator: 25 cases / 2500 person-years = 0.01 per person-year = 10 per 1000 person-years. The option reading 1 per 1000 person-years is a decimal-place slip, and 2.5 per 1000 comes from dividing 25 by 10 instead of by 2.5. The option 25 per 1000 persons is the cumulative incidence using persons as denominator, which ignores that not everyone was followed for the same period and is not a rate at all. Person-time methods are used precisely because they accommodate variable entry and exit in a dynamic cohort.",
     },
   ],
   cards: [
