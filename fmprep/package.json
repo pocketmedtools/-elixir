@@ -14,6 +14,7 @@
     "gaps": "tsx scripts/gaps.ts",
     "prose": "tsx scripts/prose.ts",
     "contrast": "tsx scripts/contrast.ts",
+    "factcheck": "node scripts/factcheck.mjs",
     "digest": "tsx scripts/reviewDigest.ts",
     "keys": "tsx scripts/checkMcqKeys.ts",
     "merge": "node scripts/mergePending.mjs",
