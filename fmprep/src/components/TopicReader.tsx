@@ -21,7 +21,7 @@ import { BackBar, Callout, Chip, FrequencyChip, SectionBlock, TableBlock, RichTe
 import TheoryAnswer from "./TheoryAnswer";
 import DiagramBlock from "./DiagramBlock";
 import { ensureDiagrams } from "../diagrams/index";
-import { SUBJECT_HUE } from "../lib/hues";
+import { colorVars } from "../lib/hues";
 import type { Diagram } from "../lib/types";
 
 function slug(text: string, i: number): string {
@@ -88,7 +88,7 @@ export default function TopicReader({
         fontSize: `${readerScale}rem`,
         fontFamily: readerSerif ? 'Georgia, "Times New Roman", serif' : undefined,
         // Everything below takes its colour from the subject.
-        ["--h" as string]: String(SUBJECT_HUE[subjectIdForTopic(topicId) ?? ""] ?? 210),
+        ...colorVars(subjectIdForTopic(topicId)),
       }}
     >
       <div ref={topRef} />

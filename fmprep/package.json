@@ -13,6 +13,7 @@
     "verify": "tsx scripts/verifyContent.ts",
     "gaps": "tsx scripts/gaps.ts",
     "prose": "tsx scripts/prose.ts",
+    "contrast": "tsx scripts/contrast.ts",
     "digest": "tsx scripts/reviewDigest.ts",
     "keys": "tsx scripts/checkMcqKeys.ts",
     "merge": "node scripts/mergePending.mjs",

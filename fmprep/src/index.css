@@ -57,14 +57,40 @@ body {
    exists inside a media query.
    --------------------------------------------------------------- */
 :root {
-  --h: 210;
-  --acc: hsl(var(--h) 58% 34%);
-  --acc-hi: hsl(var(--h) 62% 44%);
+  --h: 212;
+  /* Accent lightness per theme, set per subject alongside the hue: a green and
+     an indigo need different lightness to reach the same contrast. */
+  --al: 40;
+  --ad: 58;
+  --acc: hsl(var(--h) 58% calc(var(--al) * 1%));
+  --acc-hi: hsl(var(--h) 62% calc((var(--al) + 10) * 1%));
   --wash: hsl(var(--h) 62% 96%);
   --wash-2: hsl(var(--h) 50% 92%);
   --acc-rule: hsl(var(--h) 34% 82%);
   --hl: hsl(var(--h) 88% 84%);
   --sunk: #eff1f4;
+}
+
+
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --acc: hsl(var(--h) 58% calc(var(--ad) * 1%));
+    --acc-hi: hsl(var(--h) 62% calc((var(--ad) + 8) * 1%));
+    --wash: hsl(var(--h) 36% 14%);
+    --wash-2: hsl(var(--h) 32% 19%);
+    --acc-rule: hsl(var(--h) 28% 30%);
+    --hl: hsl(var(--h) 54% 30%);
+    --sunk: #131a27;
+  }
+}
+:root[data-theme="dark"] {
+  --acc: hsl(var(--h) 58% calc(var(--ad) * 1%));
+  --acc-hi: hsl(var(--h) 62% calc((var(--ad) + 8) * 1%));
+  --wash: hsl(var(--h) 36% 14%);
+  --wash-2: hsl(var(--h) 32% 19%);
+  --acc-rule: hsl(var(--h) 28% 30%);
+  --hl: hsl(var(--h) 54% 30%);
+  --sunk: #131a27;
 }
 
 /* The highlighter: a **bold** run in the content is a line that decides

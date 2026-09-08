@@ -9,12 +9,12 @@
    subject hue, set per screen, and the accent family derives from it.
    --------------------------------------------------------------- */
 :root{
-  --h:210;
+  --h:212; --al:40; --ad:58;
   --paper:#F7F6F3; --raised:#FFFFFF; --sunk:#EFEDE8;
   --ink:#11182A; --ink-soft:#3C4761; --quiet:#6B7488;
   --rule:#E1DED7; --rule-soft:#EDEBE5;
-  --acc:hsl(var(--h) 58% 34%);
-  --acc-hi:hsl(var(--h) 62% 44%);
+  --acc:hsl(var(--h) 58% calc(var(--al) * 1%));
+  --acc-hi:hsl(var(--h) 62% calc((var(--al) + 10) * 1%));
   --wash:hsl(var(--h) 62% 96%);
   --wash-2:hsl(var(--h) 50% 92%);
   --acc-rule:hsl(var(--h) 34% 82%);
@@ -30,8 +30,8 @@
     --paper:#0D1220; --raised:#141B2B; --sunk:#0A0F1A;
     --ink:#E9EBF0; --ink-soft:#B4BCCC; --quiet:#828C9F;
     --rule:#242D3F; --rule-soft:#1B2333;
-    --acc:hsl(var(--h) 58% 70%);
-    --acc-hi:hsl(var(--h) 62% 78%);
+    --acc:hsl(var(--h) 58% calc(var(--ad) * 1%));
+    --acc-hi:hsl(var(--h) 62% calc((var(--ad) + 8) * 1%));
     --wash:hsl(var(--h) 36% 14%);
     --wash-2:hsl(var(--h) 32% 19%);
     --acc-rule:hsl(var(--h) 28% 30%);
@@ -46,8 +46,8 @@
   --paper:#0D1220; --raised:#141B2B; --sunk:#0A0F1A;
   --ink:#E9EBF0; --ink-soft:#B4BCCC; --quiet:#828C9F;
   --rule:#242D3F; --rule-soft:#1B2333;
-  --acc:hsl(var(--h) 58% 70%);
-  --acc-hi:hsl(var(--h) 62% 78%);
+  --acc:hsl(var(--h) 58% calc(var(--ad) * 1%));
+  --acc-hi:hsl(var(--h) 62% calc((var(--ad) + 8) * 1%));
   --wash:hsl(var(--h) 36% 14%);
   --wash-2:hsl(var(--h) 32% 19%);
   --acc-rule:hsl(var(--h) 28% 30%);
@@ -293,14 +293,21 @@ footer{border-top:1px solid var(--rule);padding:24px 0 36px;font-size:12.5px;
 const DATA = JSON.parse(document.getElementById("fmdata").textContent);
 const S = DATA.subjects, M = DATA.meta, PYQ = DATA.pyq, DIA = DATA.diagrams || {};
 
-const HUE = {
-  "symptom-approach":265,"fm-principles":212,"cardiovascular":350,"endocrine":32,
-  "respiratory":194,"gastro-hepatology":22,"infectious-fever":8,"neurology":281,
-  "renal-urology":176,"musculoskeletal":45,"psychiatry":300,"surgery-office":206,
-  "dermatology":338,"eye-ent":160,"emergency":2,"pediatrics":132,"obstetrics":322,
-  "gynaecology":310,"preventive":100,"geriatrics-ethics":232
+const COLOR = {
+  "symptom-approach":[265,40,65],"fm-principles":[212,40,58],"cardiovascular":[350,40,61],
+  "endocrine":[32,37,58],"respiratory":[194,36,58],"gastro-hepatology":[22,40,58],
+  "infectious-fever":[8,40,59],"neurology":[281,40,63],"renal-urology":[176,30,58],
+  "musculoskeletal":[45,33,58],"psychiatry":[300,40,58],"surgery-office":[206,40,58],
+  "dermatology":[338,40,61],"eye-ent":[160,31,58],"emergency":[2,40,61],
+  "pediatrics":[132,31,58],"obstetrics":[322,40,60],"gynaecology":[310,40,59],
+  "preventive":[100,31,58],"geriatrics-ethics":[232,40,65]
 };
-const hueOf = id => HUE[id] !== undefined ? HUE[id] : 210;
+/* A subject is a hue plus its accent lightness in each theme: at one lightness a
+   green is far brighter than an indigo, so a single value cannot clear contrast
+   for all twenty. */
+const colorOf = id => COLOR[id] || [212,40,58];
+const hueOf = id => colorOf(id)[0];
+const varsOf = id => { const c = colorOf(id); return "--h:" + c[0] + ";--al:" + c[1] + ";--ad:" + c[2]; };
 document.getElementById("spectrum").innerHTML =
   S.map(s => '<i style="background:hsl(' + hueOf(s.id) + ' 58% 46%)"></i>').join("");
 
@@ -369,7 +376,7 @@ function viewLibrary(){
     const s = S.find(x => x.id === state.sub);
     const groups = ["core","common","less-common","uncommon"]
       .map(f => [f, s.topics.filter(t => t.frequency === f)]).filter(g => g[1].length);
-    return '<div style="--h:' + hueOf(s.id) + '">' +
+    return '<div style="' + varsOf(s.id) + '">' +
       '<button class="back" data-back="sub">&larr; All subjects</button>' +
       '<p class="eyebrow">' + esc(s.group) + '</p>' +
       '<h2 style="font-size:29px;margin:8px 0 10px;color:var(--acc)">' + esc(s.title) + '</h2>' +
@@ -397,9 +404,9 @@ function viewLibrary(){
         [[M.topics,"topics"],[M.theory,"model answers"],[M.mcqs,"MCQs"],[M.diagrams,"diagrams"],[M.cards,"flashcards"],[M.pastQuestions,"past questions"]]
           .map(x => '<div class="stat"><b>' + x[0] + '</b><span>' + x[1] + '</span></div>').join("") +
       '</div></div>' +
-    groups.map(g => '<div class="sec" style="--h:212"><h3><span class="n">' + S.filter(s=>s.group===g).length + '</span>' + esc(g) + '</h3>' +
+    groups.map(g => '<div class="sec" style="--h:212;--al:40;--ad:58"><h3><span class="n">' + S.filter(s=>s.group===g).length + '</span>' + esc(g) + '</h3>' +
       '<div class="grid">' + S.filter(s => s.group === g).map(s =>
-        '<button class="subj" data-sub="' + s.id + '" style="--h:' + hueOf(s.id) + '">' +
+        '<button class="subj" data-sub="' + s.id + '" style="' + varsOf(s.id) + '">' +
         '<h3>' + esc(s.title) + '</h3><p>' + esc(s.blurb) + '</p>' +
         '<span class="foot"><span class="chip acc">' + s.topics.length + ' topics</span>' +
         '<span class="chip">Paper ' + s.papers.join(", ") + '</span></span></button>').join("") +
@@ -412,7 +419,7 @@ function viewTopic(){
   let n = 0;
   const sec = (h, inner) => '<div class="sec"><h3><span class="n">' +
     String(++n).padStart(2,"0") + '</span>' + esc(h) + '</h3>' + inner + '</div>';
-  return '<div class="reader reading" style="--h:' + hueOf(s.id) + '">' +
+  return '<div class="reader reading" style="' + varsOf(s.id) + '">' +
     '<button class="back" data-back="topic">&larr; ' + esc(s.title) + '</button>' +
     '<p class="eyebrow">' + esc(s.title) + '</p>' +
     '<h2 style="margin-top:8px">' + esc(t.title) + '</h2>' +
@@ -474,10 +481,10 @@ function viewPapers(){
         '<span class="chip">' + esc(q.session) + '</span>' +
         (q.marks ? '<span class="chip bad">' + q.marks + ' marks</span>' : "") + '</span>' +
       (links.length ? '<span class="foot">' + links.map(x =>
-        '<button class="chip solid" data-topic="' + x.t.id + '" style="--h:' + hueOf(x.s.id) + '">' +
+        '<button class="chip solid" data-topic="' + x.t.id + '" style="' + varsOf(x.s.id) + '">' +
         esc(x.t.title) + ' &rarr;</button>').join("") + '</span>' : "") + '</div>';
   };
-  return '<div style="--h:206"><div class="hero"><p class="eyebrow mute">Your own question papers</p>' +
+  return '<div style="--h:206;--al:40;--ad:58"><div class="hero"><p class="eyebrow mute">Your own question papers</p>' +
     '<h2>' + M.pastQuestions + ' past questions, every one linked to its answer</h2>' +
     '<p>' + M.paperQuestions + ' from the June 2022 to June 2025 sittings, and ' + M.topicwiseQuestions +
     ' filed by topic from 2011 to 2022. Every question carries a button to the topic that answers it.</p></div>' +
@@ -495,17 +502,17 @@ function viewPapers(){
 
 function viewBank(){
   if (!state.quiz) {
-    return '<div class="hero" style="--h:132"><p class="eyebrow mute">Question bank</p>' +
+    return '<div class="hero" style="--h:132;--al:31;--ad:58"><p class="eyebrow mute">Question bank</p>' +
       '<h2>' + M.mcqs + ' questions, each with the reasoning</h2>' +
       '<p>Every explanation says why the key is right and why the tempting wrong answer is tempting.</p></div>' +
-      '<div class="grid"><button class="subj" data-quiz="all" style="--h:212"><h3>Mixed paper</h3>' +
+      '<div class="grid"><button class="subj" data-quiz="all" style="--h:212;--al:40;--ad:58"><h3>Mixed paper</h3>' +
       '<p>Thirty questions drawn across all twenty subjects.</p></button>' +
-      S.map(s => '<button class="subj" data-quiz="sub:' + s.id + '" style="--h:' + hueOf(s.id) + '">' +
+      S.map(s => '<button class="subj" data-quiz="sub:' + s.id + '" style="' + varsOf(s.id) + '">' +
         '<h3>' + esc(s.title) + '</h3><p>' + s.topics.reduce((n,t)=>n+t.mcqs.length,0) + ' questions</p></button>').join("") +
       '</div>';
   }
   const q = state.quiz.items[state.quiz.i], picked = state.quiz.picked, done = picked !== null;
-  return '<div style="--h:' + hueOf(q.subjectId) + '">' +
+  return '<div style="' + varsOf(q.subjectId) + '">' +
     '<button class="back" data-back="bank">&larr; Question bank</button><div class="reading">' +
     '<div class="chips" style="margin-bottom:16px">' +
       '<span class="chip acc">' + (state.quiz.i+1) + ' of ' + state.quiz.items.length + '</span>' +
@@ -534,7 +541,7 @@ function viewBank(){
 function viewCards(){
   const pool = state.cardSub === "all" ? DATA.allCards : DATA.allCards.filter(c => c.subjectId === state.cardSub);
   const c = pool[state.card % pool.length];
-  return '<div style="--h:' + hueOf(c.subjectId) + '"><p class="eyebrow mute">Flashcards</p>' +
+  return '<div style="' + varsOf(c.subjectId) + '"><p class="eyebrow mute">Flashcards</p>' +
     '<h2 style="font-size:28px;margin:8px 0 4px">' + M.cards + ' cards</h2>' +
     '<select id="cardsub" style="margin:16px 0;max-width:360px">' +
     '<option value="all">Every subject (' + DATA.allCards.length + ')</option>' +
@@ -567,11 +574,11 @@ function viewSearch(){
     }
     const block = (title, inner, n) => n ? '<div class="sec"><h3><span class="n">' + n + '</span>' + title + '</h3>' + inner + '</div>' : "";
     out = block("Topics", '<div class="rows">' + hitT.map(e =>
-        '<button class="row" data-topic="' + e.t.id + '" style="--h:' + hueOf(e.s.id) + '">' +
+        '<button class="row" data-topic="' + e.t.id + '" style="' + varsOf(e.s.id) + '">' +
         '<h4>' + esc(e.t.title) + '</h4><p class="line">' + esc(e.t.oneLiner) + '</p>' +
         '<span class="foot"><span class="chip acc">' + esc(e.s.title) + '</span>' + freq(e.t.frequency) + '</span></button>').join("") + '</div>', hitT.length)
       + block("Questions", '<div class="rows">' + hitQ.map(x =>
-        '<button class="row" data-topic="' + x.t.id + '" style="--h:' + hueOf(x.s.id) + '">' +
+        '<button class="row" data-topic="' + x.t.id + '" style="' + varsOf(x.s.id) + '">' +
         '<p class="line" style="color:var(--ink);font-size:14.4px">' + esc(x.m.stem) + '</p>' +
         '<span class="foot"><span class="chip acc">' + esc(x.t.title) + '</span></span></button>').join("") + '</div>', hitQ.length)
       + block("Past questions", '<div class="rows">' + hitP.map(p =>
@@ -581,7 +588,7 @@ function viewSearch(){
   } else {
     out = '<p class="empty">Type at least two letters. Search runs over every topic, every question and both of your question papers.</p>';
   }
-  return '<div style="--h:265"><p class="eyebrow mute">Search</p>' +
+  return '<div style="--h:265;--al:40;--ad:65"><p class="eyebrow mute">Search</p>' +
     '<h2 style="font-size:28px;margin:8px 0 16px">Across the whole library</h2>' +
     '<input type="search" id="q" placeholder="metformin, tet spell, PCPNDT, spinal anaesthesia&hellip;" value="' + esc(state.q) + '">' +
     out + '</div>';
