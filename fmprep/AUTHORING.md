@@ -103,26 +103,35 @@ original agent briefs; in short:
 | surgery-office | abscess I&D, minor procedures, diabetic foot, burns dressing, hernia, hydrocele, breast lump triple assessment, thyroid swelling, abdominal lump, varicose veins, catheter, NG tube, injections, pre-op fitness, post-op follow-up |
 | fm-principles | continuity/comprehensiveness, family tools (genogram, APGAR, SCREEM), home visits, records/SOAP/POMR/ICPC, audit cycle, EBM/PICO/appraisal, research methods, thesis/protocol, telemedicine 2020, referral/gatekeeping |
 
-## Status: content complete
+## Status: content complete, and every past question answered
 
-As of 2026-09-07 every subject carries **at least 8 topics**, ordered core →
-common → less-common → uncommon, plus 2 worked cases. Library totals:
+Every subject carries at least 8 topics, ordered core → common → less-common →
+uncommon, plus 2 worked cases. Library totals:
 
 | | |
 |---|---|
 | Subjects | 20 |
-| Topics | 163 |
-| Model theory answers | 376 |
-| MCQs | 955 |
+| Topics | 183 |
+| Model theory answers | 419 |
+| MCQs | 1095 |
 | Worked cases | 40 |
-| Flashcards | 1701 |
+| Flashcards | 1941 |
+| Past questions answered | 1055 of 1055 |
 
 All green: `npx tsc -b`, `npm run verify` (zero warnings), `npm run lint`
-(6 pre-existing warnings elsewhere in the app), `npm run build`. The browser
-smoke test passes 15/15, including importing a 10,800-word document and reading
-it to its last word.
+(8 pre-existing warnings in app components, none in content), `npm run build`,
+and `npm run smoke` at 20/20 — which includes scrolling a seeded source paper
+through all 19,136 of its words and following a real 2022 question into the
+topic that answers it.
 
-## Phase 2 — closing the library gaps found by the past papers (in progress)
+## Phase 2 — closing the library gaps found by the past papers (done)
+
+**Every question in `src/pyq/` now opens onto a topic that answers it:
+237/237 of the June 2022 to June 2025 papers, and 818/818 of the 2011-2022
+topic-wise compilation. `npm run gaps` prints "0 unanswered".**
+
+The twenty topics below were written because a real question had no honest
+answer without them. The table is kept as the record of why each exists.
 
 Every question in `src/pyq/` is matched against the library. 32 of them still
 have no honest answer, and `npx tsx scripts/gaps.ts` prints them. They ask for
@@ -182,7 +191,12 @@ npm run verify   # the content checker, which must stay green
 1. **Clinical review pass.** One adversarial reviewer per subject, checking
    drug doses, diagnostic cut-offs and that every MCQ key matches its
    explanation; apply only confirmed corrections. This is the highest-value
-   remaining work.
+   remaining work. Start from `CLINICAL-REVIEW.md`, where each author recorded
+   the lines they could not settle — the caesarean dose of heavy bupivacaine,
+   the transfusion threshold after myocardial infarction, ketamine in raised
+   intracranial pressure, driving after a seizure in India. Those are written in
+   the app as contested rather than settled, so they are a reading list for a
+   primary source, not a defect list.
 2. **More depth.** The per-subject table above lists topics not yet written;
    add them with the insert-before-`const cases` method, one per edit.
 3. **Re-check the blueprint** against the current NBEMS information bulletin

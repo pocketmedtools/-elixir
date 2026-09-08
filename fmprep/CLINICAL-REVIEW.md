@@ -389,3 +389,27 @@ not a list of known errors.
   return by the 5th** come from the Rules rather than the body of the Act.
   Correct as far as could be established, but these are the details most often
   paraphrased loosely in Indian preventive medicine texts.
+
+## preventive-child-women-legislation
+
+- **Child Welfare Committee composition under the 2000 Act.** The 2000 Act said
+  a chairperson plus four members, at least one a woman; the explicit "and one an
+  expert on matters concerning children" is 2015 wording. The main section uses
+  the 2015 form, with the addition flagged parenthetically inside the theory
+  answer — a marker looking only for the 2000 Act might want that plainer.
+- **POCSO and consent for medical examination.** The Act routes examination
+  through CrPC 164A and does not spell out a consent age; the "12 years or above"
+  threshold comes from the MoHFW 2014 guidelines and is attributed to them rather
+  than to the Act.
+- **The 2022 Supreme Court identity-withholding nuance** (X v. Principal
+  Secretary, on medical termination for a minor) is included as a narrow
+  exemption from identity *disclosure* only, not from reporting. Real but recent
+  and rarely in textbooks.
+- **The 2021 amendment's offence reclassification.** Stated as offences
+  punishable with three to seven years becoming serious, non-cognizable and
+  non-bailable. That is the substance; the precise phrasing varies between
+  summaries.
+- **Scheme names in flux.** Swadhar Greh to Shakti Sadan, Childline to Child
+  Helpline under Mission Vatsalya, ICDS to Saksham Anganwadi and POSHAN 2.0.
+  Both old and new names are given, since papers still use the old ones.
+- **Modi's Textbook edition** cited as the 26th (2018); a newer edition may exist.
