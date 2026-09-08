@@ -294,3 +294,17 @@ not a list of known errors.
   withdrawal of April 2019, and NICE NG123/IPG599 research-only — with an
   explicit warning not to extend any of it to abdominal sacrocolpopexy or
   mid-urethral slings.
+
+## preventive-health-information-gis
+
+- **Census 2011 against 2021.** Written as "decennial, last completed in 2011
+  (the 2021 round was postponed and is being conducted subsequently)" rather
+  than asserting a completion date for the delayed round.
+- **U-WIN rollout.** Given as the Co-WIN-derived registry rolled out nationally
+  from 2024–25. The platform and its purpose are right; the pilot-to-national
+  timeline is the least certain part.
+- **IHIP migration.** April 2021 for national case-based reporting, with a pilot
+  from November 2018, and "about 33 epidemic-prone conditions" — the disease
+  count has changed across IHIP versions, hence the hedge.
+- **NCVBDC naming.** The post-2021 "National Center for Vector Borne Diseases
+  Control" is used without also giving the older NVBDCP expansion inline.
