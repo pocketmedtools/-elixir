@@ -160,3 +160,51 @@ export type Subject = {
   topics: Topic[];
   cases?: ClinicalCase[];
 };
+
+/**
+ * Diagrams a reader can take in at a glance.
+ *
+ * Prose is where the detail lives, but a candidate revising the night before
+ * needs the shape of a thing — the order of steps in a resuscitation, the two
+ * arms of a classification, what separates two look-alike diagnoses. Rather
+ * than hand-drawn SVG, which rots and cannot be checked, a diagram is written
+ * as data in one of five shapes, each with a layout the page draws the same way
+ * every time.
+ */
+export type DiagramTone =
+  /** The ordinary case. */
+  | "neutral"
+  /** A branch point: something is being decided here. */
+  | "decision"
+  /** Danger, a contraindication, or the step people get wrong. */
+  | "warn"
+  /** The target state, or the right answer. */
+  | "good";
+
+export type DiagramStep = {
+  label: string;
+  /** A dose, a threshold, a caveat — the line under the box. */
+  detail?: string;
+  tone?: DiagramTone;
+};
+
+export type Diagram =
+  /** One thing after another: an algorithm, a protocol, a work-up. */
+  | { kind: "flow"; heading: string; caption?: string; steps: DiagramStep[] }
+  /** One root splitting into arms: a classification, a differential. */
+  | {
+      kind: "branch";
+      heading: string;
+      caption?: string;
+      root: string;
+      arms: { label: string; tone?: DiagramTone; steps: string[] }[];
+    }
+  /** Escalation in order of increasing intensity: a treatment ladder. */
+  | { kind: "ladder"; heading: string; caption?: string; steps: DiagramStep[] }
+  /** A closed loop: the disaster cycle, the audit cycle, the planning cycle. */
+  | { kind: "cycle"; heading: string; caption?: string; steps: DiagramStep[] }
+  /** Side by side: what tells two similar things apart. */
+  | { kind: "compare"; heading: string; caption?: string; columns: string[]; rows: string[][] };
+
+/** Diagrams for a subject, keyed by the topic id they belong to. */
+export type DiagramSet = Record<string, Diagram[]>;

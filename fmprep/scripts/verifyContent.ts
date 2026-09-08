@@ -12,6 +12,7 @@ import {
   contentCounts,
   ensureAll,
   subjects,
+  topicIndex,
 } from "../src/content/index";
 import blueprint from "../src/examPattern";
 import guide from "../src/casePresentation";
@@ -120,6 +121,50 @@ section("MCQ bank");
     }
   }
   console.log(`mcqs: ${ids.size}`);
+}
+
+/* ---------- 2b. Diagrams ---------- */
+section("Diagrams");
+{
+  const { diagramsByTopic } = await import("../src/diagrams/index");
+  const byTopic = await diagramsByTopic();
+  const index = topicIndex();
+  let total = 0;
+  for (const [topicId, list] of Object.entries(byTopic)) {
+    if (!index.has(topicId))
+      fail(`diagram written for "${topicId}", which is not a topic in the library`);
+    for (const d of list) {
+      total++;
+      const where = `${topicId} / "${d.heading}"`;
+      if (!d.heading?.trim()) fail(`${topicId}: a diagram has no heading`);
+      if (d.kind === "compare") {
+        if (d.columns.length < 2) fail(`${where}: a comparison needs at least two columns`);
+        for (const row of d.rows) {
+          if (row.length !== d.columns.length)
+            fail(`${where}: a row has ${row.length} cells but there are ${d.columns.length} columns`);
+        }
+        if (d.rows.length === 0) fail(`${where}: a comparison with no rows`);
+      } else if (d.kind === "branch") {
+        if (!d.root?.trim()) fail(`${where}: a branch diagram needs a root`);
+        if (d.arms.length < 2) fail(`${where}: a branch needs at least two arms`);
+        for (const arm of d.arms) {
+          if (!arm.label?.trim()) fail(`${where}: an arm has no label`);
+          if (arm.steps.length === 0) fail(`${where}: arm "${arm.label}" has no steps`);
+        }
+      } else {
+        if (d.steps.length < 2) fail(`${where}: a ${d.kind} needs at least two steps`);
+        // A cycle that does not close is a flow drawn in a circle.
+        if (d.kind === "cycle" && d.steps.length < 3)
+          fail(`${where}: a cycle needs at least three steps to close`);
+        for (const st of d.steps) {
+          if (!st.label?.trim()) fail(`${where}: a step has no label`);
+          if (st.label.length > 60)
+            warn(`${where}: step "${st.label.slice(0, 40)}..." is long for a box`);
+        }
+      }
+    }
+  }
+  console.log(`diagrams: ${total} across ${Object.keys(byTopic).length} topics`);
 }
 
 /* ---------- 3. Flashcards ---------- */
