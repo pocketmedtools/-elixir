@@ -14,5 +14,5 @@ web/dist/
 web/android/keystore/
 
 # Generated review digests — regenerate with `npm run digest`
-fmprep/review/*.md
+fmprep/review/**
 !fmprep/review/README.md
