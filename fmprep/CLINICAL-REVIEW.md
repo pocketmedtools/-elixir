@@ -308,3 +308,26 @@ not a list of known errors.
   count has changed across IHIP versions, hence the hedge.
 - **NCVBDC naming.** The post-2021 "National Center for Vector Borne Diseases
   Control" is used without also giving the older NVBDCP expansion inline.
+
+## preventive-climate-change-health
+
+- **India and the COP26 health commitment.** Deliberately not claimed: the topic
+  mentions the WHO ATACH alliance (2022) generically without asserting Indian
+  membership, because the signatory list could not be verified. Worth a check
+  before adding the claim.
+- **Heat action plan coverage.** Written as "more than 20 states and over 100
+  cities and districts" — a floor rather than a point estimate, because the
+  number keeps rising and published counts differ (23 states is commonly cited).
+- **Ahmedabad 2010 excess deaths (1,344).** The Azhar et al. 2014 estimate,
+  widely quoted, but a modelled all-cause excess figure rather than a count of
+  certified heat deaths. The text says "an estimated" without spelling out the
+  modelling caveat.
+- **Global warming potentials of methane and nitrous oxide (28x and 265x).**
+  AR5 100-year values, still used in national inventory reporting and quoted by
+  Park and Indian programme documents; AR6 revises them to about 27–30 and 273.
+- **NCAP target.** The revised 40% by 2025–26 target is given rather than the
+  original 20–30% by 2024, with "more than 130 non-attainment cities" (131 is
+  the usual figure, later expanded).
+- **Chronic kidney disease of unknown aetiology and heat.** Stated as "thought
+  to be driven partly by" — the heat-stress hypothesis for Uddanam is plausible
+  but not settled.
