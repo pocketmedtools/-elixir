@@ -3848,7 +3848,7 @@ topics.push({
       ],
       answer: 1,
       explanation:
-        "Unexplained persistent parotid enlargement and linear gingival erythema, along with unexplained persistent hepatosplenomegaly and extensive molluscum contagiosum, are paediatric-specific stage 2 items in the 2007 WHO revision and have no counterpart in the adult list. Herpes zoster, fungal nail infection, angular cheilitis, seborrhoeic dermatitis, recurrent upper respiratory infection and papular pruritic eruption appear in stage 2 for both age groups. Oral hairy leukoplakia and persistent oral candidiasis are stage 3, not stage 2, in both.",
+        "Unexplained persistent parotid enlargement and linear gingival erythema, along with unexplained persistent hepatosplenomegaly and extensive molluscum contagiosum, are paediatric-specific stage 2 items in the 2007 WHO revision and have no counterpart in the adult list. Herpes zoster, fungal nail infection, recurrent upper respiratory infection and papular pruritic eruption appear in stage 2 for both age groups, while angular cheilitis and seborrhoeic dermatitis are adult stage 2 items only. Oral hairy leukoplakia and persistent oral candidiasis are stage 3, not stage 2, in both.",
       difficulty: "moderate",
     },
     {

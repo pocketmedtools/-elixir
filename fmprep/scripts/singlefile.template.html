@@ -1,0 +1,489 @@
+<title>FM Prep Library</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Spectral:ital,wght@0,500;0,600;1,400&family=IBM+Plex+Sans:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<style>
+:root{
+  --paper:#FAF9F6; --raised:#FFFFFF; --ink:#16233A; --ink-soft:#3B4A63;
+  --quiet:#6E7788; --rule:#DFDCD4; --rule-soft:#EDEAE3;
+  --mark:#A8281F; --mark-wash:#FBEFEE; --mark-rule:#E9C9C6;
+  --band:#16233A; --ok:#1F5D4C; --ok-wash:#E9F2EE;
+  --sel:#16233A; --sel-ink:#FAF9F6;
+  --shadow:0 1px 2px rgba(22,35,58,.06),0 8px 24px -16px rgba(22,35,58,.28);
+}
+@media (prefers-color-scheme:dark){
+  :root:not([data-theme="light"]){
+    --paper:#0F1622; --raised:#161F2E; --ink:#E8E9EC; --ink-soft:#B6BECD;
+    --quiet:#8A93A5; --rule:#2A3purple; --rule:#283243; --rule-soft:#1E2736;
+    --mark:#E8837A; --mark-wash:#2A1A19; --mark-rule:#5A312D;
+    --band:#C6D0E2; --ok:#7FC4AC; --ok-wash:#152722;
+    --sel:#E8E9EC; --sel-ink:#0F1622;
+    --shadow:0 1px 2px rgba(0,0,0,.4),0 8px 24px -16px rgba(0,0,0,.7);
+  }
+}
+:root[data-theme="dark"]{
+  --paper:#0F1622; --raised:#161F2E; --ink:#E8E9EC; --ink-soft:#B6BECD;
+  --quiet:#8A93A5; --rule:#283243; --rule-soft:#1E2736;
+  --mark:#E8837A; --mark-wash:#2A1A19; --mark-rule:#5A312D;
+  --band:#C6D0E2; --ok:#7FC4AC; --ok-wash:#152722;
+  --sel:#E8E9EC; --sel-ink:#0F1622;
+  --shadow:0 1px 2px rgba(0,0,0,.4),0 8px 24px -16px rgba(0,0,0,.7);
+}
+*{box-sizing:border-box}
+body{
+  background:var(--paper); color:var(--ink);
+  font:400 16px/1.62 "IBM Plex Sans",system-ui,-apple-system,"Segoe UI",sans-serif;
+  -webkit-font-smoothing:antialiased;
+}
+h1,h2,h3,h4{font-family:Spectral,Georgia,"Times New Roman",serif;font-weight:600;text-wrap:balance;margin:0;line-height:1.22}
+p{margin:0}
+button{font:inherit;color:inherit;background:none;border:none;cursor:pointer}
+a{color:inherit}
+:focus-visible{outline:2px solid var(--mark);outline-offset:2px;border-radius:3px}
+@media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}}
+
+.wrap{max-width:1060px;margin:0 auto;padding:0 20px}
+.reading{max-width:68ch}
+
+/* ---- masthead ---- */
+.mast{border-bottom:1px solid var(--rule);background:var(--raised)}
+.mast-in{display:flex;align-items:baseline;gap:14px;flex-wrap:wrap;padding:18px 0 14px}
+.mast h1{font-size:23px;letter-spacing:-.01em}
+.mast .sub{font-size:13px;color:var(--quiet)}
+.rule-red{height:2px;background:var(--mark)}
+
+/* ---- mode bar ---- */
+nav.modes{position:sticky;top:0;z-index:20;background:var(--raised);border-bottom:1px solid var(--rule)}
+nav.modes .wrap{display:flex;gap:2px;overflow-x:auto;scrollbar-width:none}
+nav.modes .wrap::-webkit-scrollbar{display:none}
+.mode{padding:11px 14px;font-size:13.5px;font-weight:600;color:var(--quiet);white-space:nowrap;border-bottom:2px solid transparent}
+.mode[aria-current="true"]{color:var(--ink);border-bottom-color:var(--mark)}
+.mode:hover{color:var(--ink)}
+
+main{padding:26px 0 72px}
+
+/* ---- shared bits ---- */
+.eyebrow{font:500 11px/1 "IBM Plex Mono",ui-monospace,monospace;letter-spacing:.1em;text-transform:uppercase;color:var(--quiet)}
+.mono{font-family:"IBM Plex Mono",ui-monospace,monospace;font-variant-numeric:tabular-nums}
+.back{display:inline-flex;align-items:center;gap:7px;font-size:13px;font-weight:600;color:var(--quiet);padding:6px 0;margin-bottom:14px}
+.back:hover{color:var(--ink)}
+.chip{display:inline-block;font:500 11px/1.5 "IBM Plex Mono",ui-monospace,monospace;padding:2px 7px;border:1px solid var(--rule);border-radius:2px;color:var(--ink-soft);white-space:nowrap}
+.chip.mark{color:var(--mark);border-color:var(--mark-rule);background:var(--mark-wash)}
+.chip.solid{background:var(--sel);color:var(--sel-ink);border-color:var(--sel)}
+.chips{display:flex;flex-wrap:wrap;gap:6px}
+.empty{padding:44px 0;text-align:center;color:var(--quiet);font-size:14px}
+
+/* frequency reads as a 4-step ramp of one hue, so it is one system */
+.freq{display:inline-flex;align-items:center;gap:5px;font:500 11px/1 "IBM Plex Mono",monospace;color:var(--quiet);white-space:nowrap}
+.freq i{width:22px;height:4px;border-radius:1px;background:var(--rule);display:block;position:relative;overflow:hidden}
+.freq i::after{content:"";position:absolute;inset:0;background:var(--band);width:var(--w)}
+
+/* ---- stat strip ---- */
+.stats{display:grid;grid-template-columns:repeat(auto-fit,minmax(112px,1fr));gap:0;border:1px solid var(--rule);border-radius:3px;background:var(--raised);overflow:hidden;margin:20px 0 30px}
+.stat{padding:13px 15px;border-right:1px solid var(--rule-soft)}
+.stat:last-child{border-right:none}
+.stat b{display:block;font:600 25px/1.1 "IBM Plex Mono",monospace;font-variant-numeric:tabular-nums;letter-spacing:-.02em}
+.stat span{display:block;font-size:11.5px;color:var(--quiet);margin-top:3px}
+
+/* ---- lists ---- */
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(258px,1fr));gap:10px}
+.card{display:block;width:100%;text-align:left;background:var(--raised);border:1px solid var(--rule);border-radius:3px;padding:14px 15px}
+.card:hover{border-color:var(--quiet)}
+.card h3{font-size:16.5px;margin-bottom:5px}
+.card p{font-size:13px;color:var(--quiet);line-height:1.5}
+.card .foot{margin-top:10px;display:flex;gap:6px;flex-wrap:wrap}
+
+.rows{border:1px solid var(--rule);border-radius:3px;background:var(--raised);overflow:hidden}
+.row{display:block;width:100%;text-align:left;padding:12px 15px;border-bottom:1px solid var(--rule-soft)}
+.row:last-child{border-bottom:none}
+.row:hover{background:var(--paper)}
+.row h4{font-size:15.5px;font-family:"IBM Plex Sans",sans-serif;font-weight:600}
+.row .line{font-size:13px;color:var(--quiet);margin-top:3px;line-height:1.5}
+.row .foot{margin-top:8px;display:flex;gap:6px;flex-wrap:wrap;align-items:center}
+
+/* ---- topic reader ---- */
+.reader h2{font-size:29px;letter-spacing:-.015em;margin-bottom:9px}
+.oneliner{font-size:17px;line-height:1.55;color:var(--ink-soft);font-family:Spectral,Georgia,serif;font-style:italic;margin:0 0 16px}
+.sec{margin-top:30px}
+.sec > h3{font-size:19px;padding-bottom:7px;border-bottom:1px solid var(--rule);margin-bottom:12px}
+.pts{list-style:none;padding:0;margin:0;display:flex;flex-direction:column;gap:9px}
+.pts li{padding-left:17px;position:relative;font-size:15.2px;line-height:1.62}
+.pts li::before{content:"";position:absolute;left:2px;top:.66em;width:5px;height:1px;background:var(--quiet)}
+.pts strong{font-weight:600}
+
+.tbl{overflow-x:auto;border:1px solid var(--rule);border-radius:3px;background:var(--raised)}
+table{border-collapse:collapse;width:100%;font-size:13.6px;min-width:460px}
+th,td{text-align:left;padding:9px 12px;border-bottom:1px solid var(--rule-soft);vertical-align:top}
+th{font:600 11px/1.4 "IBM Plex Mono",monospace;letter-spacing:.05em;text-transform:uppercase;color:var(--quiet);background:var(--paper)}
+tr:last-child td{border-bottom:none}
+
+.flags{border-left:2px solid var(--mark);background:var(--mark-wash);padding:13px 16px;border-radius:0 3px 3px 0}
+.flags .eyebrow{color:var(--mark)}
+.flags ul{list-style:none;padding:0;margin:9px 0 0;display:flex;flex-direction:column;gap:7px}
+.flags li{font-size:14.6px;line-height:1.55;padding-left:15px;position:relative}
+.flags li::before{content:"";position:absolute;left:0;top:.62em;width:5px;height:5px;border-radius:50%;background:var(--mark)}
+
+.pearls{border:1px dashed var(--rule);border-radius:3px;padding:13px 16px}
+.pearls ol{margin:9px 0 0;padding-left:19px;display:flex;flex-direction:column;gap:7px}
+.pearls li{font-size:14.6px;line-height:1.55}
+
+/* theory answers — the answer-book shape: marks in the margin */
+.theory{border:1px solid var(--rule);border-radius:3px;background:var(--raised);margin-bottom:11px;overflow:hidden}
+.theory > summary{padding:13px 15px;cursor:pointer;list-style:none;display:flex;gap:11px;align-items:flex-start}
+.theory > summary::-webkit-details-marker{display:none}
+.theory summary .q{flex:1;min-width:0;font-size:15px;line-height:1.55;font-weight:500}
+.theory summary .m{font:600 12px/1.4 "IBM Plex Mono",monospace;color:var(--mark);white-space:nowrap;padding-top:2px}
+.theory[open] > summary{border-bottom:1px solid var(--rule-soft)}
+.theory .body{padding:15px}
+.opening{border-left:2px solid var(--band);padding:2px 0 2px 13px;margin-bottom:16px;display:flex;flex-direction:column;gap:6px}
+.opening p{font-size:14.8px;line-height:1.58;font-family:Spectral,Georgia,serif}
+.splits{display:flex;flex-direction:column;gap:0;border:1px solid var(--rule-soft);border-radius:3px;margin-top:14px}
+.split{display:flex;justify-content:space-between;gap:12px;padding:7px 11px;border-bottom:1px solid var(--rule-soft);font-size:13.4px}
+.split:last-child{border-bottom:none}
+.split b{font-family:"IBM Plex Mono",monospace;font-weight:600;color:var(--mark);font-variant-numeric:tabular-nums}
+
+/* ---- quiz ---- */
+.opt{display:flex;gap:11px;width:100%;text-align:left;padding:12px 14px;border:1px solid var(--rule);border-radius:3px;background:var(--raised);margin-bottom:8px;align-items:flex-start;font-size:14.8px;line-height:1.55}
+.opt:hover:not(:disabled){border-color:var(--quiet)}
+.opt .lt{font:600 13px/1.5 "IBM Plex Mono",monospace;color:var(--quiet);flex-shrink:0}
+.opt.right{border-color:var(--ok);background:var(--ok-wash)}
+.opt.right .lt{color:var(--ok)}
+.opt.wrong{border-color:var(--mark);background:var(--mark-wash)}
+.opt.wrong .lt{color:var(--mark)}
+.opt:disabled{cursor:default}
+.expl{border:1px solid var(--rule);border-left:2px solid var(--band);border-radius:0 3px 3px 0;padding:13px 15px;font-size:14.6px;line-height:1.62;margin-top:12px;background:var(--raised)}
+.btn{display:inline-block;padding:9px 17px;background:var(--sel);color:var(--sel-ink);border-radius:3px;font-size:14px;font-weight:600}
+.btn.ghost{background:transparent;color:var(--ink);border:1px solid var(--rule)}
+.bar{display:flex;gap:9px;flex-wrap:wrap;align-items:center;margin-top:16px}
+
+/* ---- flashcard ---- */
+.fc{border:1px solid var(--rule);border-radius:3px;background:var(--raised);padding:30px 24px;min-height:210px;display:flex;flex-direction:column;justify-content:center;gap:14px;box-shadow:var(--shadow)}
+.fc .front{font-family:Spectral,Georgia,serif;font-size:20px;line-height:1.45}
+.fc .back{font-size:15.4px;line-height:1.62;color:var(--ink-soft);border-top:1px solid var(--rule-soft);padding-top:14px}
+
+/* ---- inputs ---- */
+input[type="search"],select{
+  width:100%;padding:10px 13px;border:1px solid var(--rule);border-radius:3px;
+  background:var(--raised);color:var(--ink);font:inherit;font-size:15px;
+}
+.pills{display:flex;gap:6px;flex-wrap:wrap;margin:12px 0}
+.pill{padding:6px 12px;border:1px solid var(--rule);border-radius:2px;font-size:12.5px;font-weight:600;color:var(--quiet);background:var(--raised)}
+.pill[aria-pressed="true"]{background:var(--sel);color:var(--sel-ink);border-color:var(--sel)}
+
+footer{border-top:1px solid var(--rule);padding:22px 0 34px;font-size:12.5px;line-height:1.6;color:var(--quiet)}
+</style>
+
+<div class="mast">
+  <div class="wrap mast-in">
+    <h1>FM Prep</h1>
+    <p class="sub">DNB / MD Family Medicine &mdash; the whole revision library, offline in one page</p>
+  </div>
+  <div class="rule-red"></div>
+</div>
+
+<nav class="modes">
+  <div class="wrap" id="modes"></div>
+</nav>
+
+<main><div class="wrap" id="view"></div></main>
+
+<footer><div class="wrap reading">
+  <p>Study material for examination preparation, written for licensed doctors and doctors in training. Verify every dose and every guideline against a current primary source before acting on it clinically. Examination logistics change: confirm papers, marks and dates against the current NBEMS information bulletin.</p>
+</div></footer>
+
+<script id="fmdata" type="application/json">/*__DATA__*/</script>
+<script>
+const DATA = JSON.parse(document.getElementById("fmdata").textContent);
+const S = DATA.subjects, M = DATA.meta, PYQ = DATA.pyq;
+
+const TOPIC = new Map();
+for (const s of S) for (const t of s.topics) TOPIC.set(t.id, {t, s});
+
+const FREQ = {core:["Core",1],common:["Common",.72],"less-common":["Less common",.44],uncommon:["Uncommon",.2]};
+const esc = x => String(x).replace(/[&<>"]/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
+const bold = x => esc(x).replace(/\*\*(.+?)\*\*/g, "<strong>$1</strong>");
+const freq = f => `<span class="freq"><i style="--w:${(FREQ[f]?.[1] ?? .2)*100}%"></i>${FREQ[f]?.[0] ?? f}</span>`;
+const el = document.getElementById("view");
+
+let state = {mode:"library", sub:null, topic:null, pyqView:"sitting", pyqPaper:"all", quiz:null, card:0, cardSub:"all", q:""};
+const go = p => { Object.assign(state, p); render(); window.scrollTo(0,0); };
+
+const MODES = [["library","Library"],["papers","Past papers"],["bank","Question bank"],["cards","Flashcards"],["search","Search"]];
+document.getElementById("modes").innerHTML = MODES.map(([k,l]) =>
+  `<button class="mode" data-m="${k}">${l}</button>`).join("");
+document.getElementById("modes").onclick = e => {
+  const b = e.target.closest("[data-m]"); if (!b) return;
+  go({mode:b.dataset.m, sub:null, topic:null, quiz:null, q:""});
+};
+
+/* ---------- renderers ---------- */
+function statStrip(){
+  return `<div class="stats">
+    ${[[M.topics,"topics"],[M.theory,"model answers"],[M.mcqs,"MCQs"],[M.cards,"flashcards"],[M.cases,"worked cases"],[M.pastQuestions,"past questions"]]
+      .map(([n,l]) => `<div class="stat"><b>${n}</b><span>${l}</span></div>`).join("")}
+  </div>`;
+}
+
+function viewLibrary(){
+  if (state.topic) return viewTopic();
+  if (state.sub) {
+    const s = S.find(x => x.id === state.sub);
+    const byFreq = ["core","common","less-common","uncommon"];
+    const groups = byFreq.map(f => [f, s.topics.filter(t => t.frequency === f)]).filter(([,l]) => l.length);
+    return `<button class="back" data-back="sub">&larr; All subjects</button>
+      <h2 style="font-size:27px">${esc(s.title)}</h2>
+      <p class="oneliner">${esc(s.blurb)}</p>
+      <div class="chips" style="margin-bottom:22px">
+        <span class="chip">Paper ${s.papers.join(", ")}</span>
+        <span class="chip">${s.topics.length} topics</span>
+        <span class="chip">${s.cases.length} worked cases</span>
+      </div>
+      ${groups.map(([f,list]) => `<div class="sec">
+        <h3>${FREQ[f][0]}</h3>
+        <div class="rows">${list.map(t => `<button class="row" data-topic="${t.id}">
+          <h4>${esc(t.title)}</h4><p class="line">${esc(t.oneLiner)}</p>
+          <span class="foot">${freq(t.frequency)}<span class="chip">${t.mcqs.length} MCQ</span>
+          ${t.theory.length ? `<span class="chip mark">${t.theory.length} model answers</span>` : ""}
+          <span class="chip">${t.cards.length} cards</span></span>
+        </button>`).join("")}</div></div>`).join("")}`;
+  }
+  const groups = [...new Set(S.map(s => s.group))];
+  return `<p class="eyebrow">The library</p>
+    <h2 style="font-size:27px;margin-top:6px">Everything, ordered commonest first</h2>
+    ${statStrip()}
+    ${groups.map(g => `<div class="sec"><h3>${esc(g)}</h3>
+      <div class="grid">${S.filter(s => s.group === g).map(s => `<button class="card" data-sub="${s.id}">
+        <h3>${esc(s.title)}</h3><p>${esc(s.blurb)}</p>
+        <span class="foot"><span class="chip">${s.topics.length} topics</span>
+        <span class="chip">Paper ${s.papers.join(", ")}</span></span>
+      </button>`).join("")}</div></div>`).join("")}`;
+}
+
+function viewTopic(){
+  const {t, s} = TOPIC.get(state.topic);
+  const sec = (h, inner) => `<div class="sec"><h3>${esc(h)}</h3>${inner}</div>`;
+  return `<div class="reader reading">
+    <button class="back" data-back="topic">&larr; ${esc(s.title)}</button>
+    <p class="eyebrow">${esc(s.title)}</p>
+    <h2 style="margin-top:7px">${esc(t.title)}</h2>
+    <p class="oneliner">${esc(t.oneLiner)}</p>
+    <div class="chips">${freq(t.frequency)}<span class="chip">Paper ${s.papers.join(", ")}</span></div>
+
+    ${t.sections.map(x => sec(x.heading, `<ul class="pts">${x.points.map(p => `<li>${bold(p)}</li>`).join("")}</ul>`)).join("")}
+
+    ${t.tables.map(tb => sec(tb.heading, `<div class="tbl"><table><thead><tr>${tb.columns.map(c => `<th>${esc(c)}</th>`).join("")}</tr></thead>
+      <tbody>${tb.rows.map(r => `<tr>${r.map(c => `<td>${bold(c)}</td>`).join("")}</tr>`).join("")}</tbody></table></div>`)).join("")}
+
+    ${t.redFlags.length ? `<div class="sec"><div class="flags"><p class="eyebrow">Refer or admit today</p>
+      <ul>${t.redFlags.map(f => `<li>${bold(f)}</li>`).join("")}</ul></div></div>` : ""}
+
+    ${t.theory.length ? `<div class="sec"><h3>Model answers</h3>
+      ${t.theory.map(q => `<details class="theory"><summary>
+        <span class="q">${esc(q.question)}</span><span class="m">${q.marks} marks</span></summary>
+        <div class="body">
+          <div class="chips" style="margin-bottom:13px">
+            <span class="chip">Paper ${q.paper}</span><span class="chip">${esc(q.kind.replace(/-/g," "))}</span>
+            <span class="chip">${q.minutes} min</span>${freq(q.frequency)}</div>
+          <p class="eyebrow">Open with this</p>
+          <div class="opening">${q.openingLines.map(l => `<p>${bold(l)}</p>`).join("")}</div>
+          ${q.answer.map(a => `<div style="margin-top:16px"><p class="eyebrow">${esc(a.heading)}</p>
+            <ul class="pts" style="margin-top:8px">${a.points.map(p => `<li>${bold(p)}</li>`).join("")}</ul></div>`).join("")}
+          ${q.mustDraw.length ? `<div class="flags" style="margin-top:16px;border-left-color:var(--band);background:transparent;border:1px dashed var(--rule)">
+            <p class="eyebrow">The examiner expects you to draw</p>
+            <ul>${q.mustDraw.map(d => `<li style="padding-left:0">${bold(d)}</li>`).join("")}</ul></div>` : ""}
+          ${q.markSplit.length ? `<div class="splits">${q.markSplit.map(m => `<div class="split"><span>${esc(m.part)}</span><b>${m.marks}</b></div>`).join("")}</div>` : ""}
+        </div></details>`).join("")}</div>` : ""}
+
+    ${t.pearls.length ? `<div class="sec"><div class="pearls"><p class="eyebrow">Worth memorising verbatim</p>
+      <ol>${t.pearls.map(p => `<li>${bold(p)}</li>`).join("")}</ol></div></div>` : ""}
+
+    ${t.mcqs.length ? `<div class="sec"><h3>Questions</h3>
+      <button class="btn" data-quiz="${t.id}">Drill these ${t.mcqs.length} questions</button></div>` : ""}
+
+    ${t.references.length ? sec("Sources", `<ul class="pts">${t.references.map(r => `<li>${esc(r)}</li>`).join("")}</ul>`) : ""}
+  </div>`;
+}
+
+function viewPapers(){
+  const isSit = state.pyqView === "sitting";
+  let items;
+  if (isSit) {
+    items = PYQ.papers.filter(q => state.pyqPaper === "all" || q.paper === state.pyqPaper);
+  } else {
+    const g = {};
+    for (const q of PYQ.topicwise) (g[q.topicHeading] ||= []).push(q);
+    items = Object.entries(g).sort((a,b) => b[1].length - a[1].length);
+    if (state.pyqView === "repeat") items = items.filter(([,l]) => new Set(l.map(x => x.session)).size >= 3);
+  }
+  const qCard = q => {
+    const links = (PYQ.links[q.id] || []).map(id => TOPIC.get(id)).filter(Boolean);
+    return `<div class="row" style="cursor:default">
+      <p style="font-size:14.8px;line-height:1.6">${esc(q.question)}</p>
+      <span class="foot">
+        ${q.paper ? `<span class="chip">Paper ${q.paper}</span>` : ""}
+        <span class="chip">${esc(q.session)}</span>
+        ${q.marks ? `<span class="chip mark">${q.marks} marks</span>` : ""}
+      </span>
+      ${links.length ? `<span class="foot">${links.map(({t}) =>
+        `<button class="chip solid" data-topic="${t.id}">${esc(t.title)} &rarr;</button>`).join("")}</span>` : ""}
+    </div>`;
+  };
+  return `<p class="eyebrow">Your own question papers</p>
+    <h2 style="font-size:27px;margin-top:6px">${M.pastQuestions} past questions, every one linked to its answer</h2>
+    <p class="oneliner">${M.paperQuestions} from the June 2022 to June 2025 sittings, and ${M.topicwiseQuestions} filed by topic from 2011 to 2022.</p>
+    <div class="pills">
+      ${[["sitting","By sitting"],["topic","By topic"],["repeat","Repeaters"]].map(([k,l]) =>
+        `<button class="pill" aria-pressed="${state.pyqView===k}" data-pv="${k}">${l}</button>`).join("")}
+    </div>
+    ${isSit ? `<div class="pills">${["all","I","II","III","IV"].map(p =>
+      `<button class="pill" aria-pressed="${state.pyqPaper===p}" data-pp="${p}">${p==="all"?"All papers":"Paper "+p}</button>`).join("")}</div>` : ""}
+    ${isSit
+      ? `<p class="eyebrow" style="margin:14px 0 8px">${items.length} questions</p><div class="rows">${items.map(qCard).join("")}</div>`
+      : `<p class="eyebrow" style="margin:14px 0 8px">${items.length} topics</p>
+         ${items.map(([name,list]) => `<div class="sec"><h3>${esc(name)}
+           <span class="chip" style="float:right;margin-top:5px">${list.length} asked</span></h3>
+           <div class="rows">${list.map(qCard).join("")}</div></div>`).join("")}`}`;
+}
+
+function viewBank(){
+  if (!state.quiz) {
+    return `<p class="eyebrow">Question bank</p>
+      <h2 style="font-size:27px;margin-top:6px">${M.mcqs} questions, each with the reasoning</h2>
+      <p class="oneliner">Every explanation says why the key is right and why the tempting wrong answer is tempting.</p>
+      <div class="grid" style="margin-top:22px">
+        <button class="card" data-quiz="all"><h3>Mixed paper</h3><p>30 questions drawn across all 20 subjects.</p></button>
+        ${S.map(s => `<button class="card" data-quiz="sub:${s.id}"><h3>${esc(s.title)}</h3>
+          <p>${s.topics.reduce((n,t)=>n+t.mcqs.length,0)} questions</p></button>`).join("")}
+      </div>`;
+  }
+  const q = state.quiz.items[state.quiz.i];
+  const picked = state.quiz.picked;
+  const done = picked !== null;
+  return `<button class="back" data-back="bank">&larr; Question bank</button>
+    <div class="reading">
+      <div class="chips" style="margin-bottom:14px">
+        <span class="chip">${state.quiz.i+1} of ${state.quiz.items.length}</span>
+        <span class="chip">${esc(q.subjectTitle)}</span>
+        <span class="chip">${esc(q.difficulty)}</span>
+        <span class="chip mono">${state.quiz.score} right</span>
+      </div>
+      <p style="font-size:17px;line-height:1.6;margin-bottom:16px">${esc(q.stem)}</p>
+      ${q.options.map((o,i) => {
+        let cls = "opt";
+        if (done && i === q.answer) cls += " right";
+        else if (done && i === picked) cls += " wrong";
+        return `<button class="${cls}" data-opt="${i}" ${done?"disabled":""}>
+          <span class="lt">${String.fromCharCode(65+i)}</span><span>${esc(o)}</span></button>`;
+      }).join("")}
+      ${done ? `<div class="expl"><p class="eyebrow" style="margin-bottom:7px">${picked===q.answer?"Correct":"The key is "+String.fromCharCode(65+q.answer)}</p>
+        ${esc(q.explanation)}</div>
+        <div class="bar">
+          ${state.quiz.i+1 < state.quiz.items.length ? `<button class="btn" data-next="1">Next question</button>` : `<button class="btn" data-back="bank">Finish &mdash; ${state.quiz.score} of ${state.quiz.items.length}</button>`}
+          <button class="btn ghost" data-topic="${q.topicId}">Read the topic</button>
+        </div>` : ""}
+    </div>`;
+}
+
+function viewCards(){
+  const pool = state.cardSub === "all" ? DATA.allCards : DATA.allCards.filter(c => c.subjectId === state.cardSub);
+  const c = pool[state.card % pool.length];
+  return `<p class="eyebrow">Flashcards</p>
+    <h2 style="font-size:27px;margin-top:6px">${M.cards} cards</h2>
+    <select id="cardsub" style="margin:16px 0;max-width:340px">
+      <option value="all">Every subject (${DATA.allCards.length})</option>
+      ${S.map(s => `<option value="${s.id}" ${state.cardSub===s.id?"selected":""}>${esc(s.title)}</option>`).join("")}
+    </select>
+    <div class="reading">
+      <div class="fc">
+        <p class="eyebrow">${esc(c.subjectTitle)} &middot; card ${(state.card % pool.length)+1} of ${pool.length}</p>
+        <p class="front">${bold(c.front)}</p>
+        <p class="back">${bold(c.back)}</p>
+      </div>
+      <div class="bar"><button class="btn" data-card="1">Next card</button>
+        <button class="btn ghost" data-topic="${c.topicId}">Read the topic</button></div>
+    </div>`;
+}
+
+function viewSearch(){
+  const q = state.q.trim().toLowerCase();
+  let out = "";
+  if (q.length >= 2) {
+    const hitT = [], hitQ = [], hitP = [];
+    for (const [id,{t,s}] of TOPIC) {
+      if (t.title.toLowerCase().includes(q) || t.oneLiner.toLowerCase().includes(q) || t.keywords.some(k => k.toLowerCase().includes(q)))
+        hitT.push({t,s});
+      if (hitT.length > 40) break;
+    }
+    for (const s of S) for (const t of s.topics) for (const m of t.mcqs) {
+      if (hitQ.length > 25) break;
+      if (m.stem.toLowerCase().includes(q)) hitQ.push({m,t});
+    }
+    for (const p of PYQ.papers.concat(PYQ.topicwise)) {
+      if (hitP.length > 25) break;
+      if (p.question.toLowerCase().includes(q)) hitP.push(p);
+    }
+    const block = (title, inner, n) => n ? `<div class="sec"><h3>${title} <span class="chip" style="float:right;margin-top:5px">${n}</span></h3>${inner}</div>` : "";
+    out = block("Topics", `<div class="rows">${hitT.map(({t,s}) => `<button class="row" data-topic="${t.id}">
+        <h4>${esc(t.title)}</h4><p class="line">${esc(t.oneLiner)}</p>
+        <span class="foot"><span class="chip">${esc(s.title)}</span>${freq(t.frequency)}</span></button>`).join("")}</div>`, hitT.length)
+      + block("Questions", `<div class="rows">${hitQ.map(({m,t}) => `<button class="row" data-topic="${t.id}">
+        <p class="line" style="color:var(--ink)">${esc(m.stem)}</p>
+        <span class="foot"><span class="chip">${esc(t.title)}</span></span></button>`).join("")}</div>`, hitQ.length)
+      + block("Past questions", `<div class="rows">${hitP.map(p => `<div class="row" style="cursor:default">
+        <p class="line" style="color:var(--ink)">${esc(p.question)}</p>
+        <span class="foot"><span class="chip">${esc(p.session)}</span></span></div>`).join("")}</div>`, hitP.length);
+    if (!out) out = `<p class="empty">Nothing matches &ldquo;${esc(state.q)}&rdquo;.</p>`;
+  } else {
+    out = `<p class="empty">Type at least two letters. Search runs over every topic, every question and both question papers.</p>`;
+  }
+  return `<p class="eyebrow">Search</p>
+    <h2 style="font-size:27px;margin:6px 0 16px">Across the whole library</h2>
+    <input type="search" id="q" placeholder="metformin, tet spell, PCPNDT, spinal anaesthesia&hellip;" value="${esc(state.q)}">
+    ${out}`;
+}
+
+function render(){
+  for (const b of document.querySelectorAll(".mode")) b.setAttribute("aria-current", String(b.dataset.m === state.mode));
+  el.innerHTML = ({library:viewLibrary, papers:viewPapers, bank:viewBank, cards:viewCards, search:viewSearch})[state.mode]();
+  const q = document.getElementById("q");
+  if (q) { q.focus(); q.setSelectionRange(q.value.length, q.value.length);
+    q.oninput = e => { state.q = e.target.value; const p = e.target.selectionStart; render();
+      const n = document.getElementById("q"); if (n) { n.focus(); n.setSelectionRange(p,p); } }; }
+  const cs = document.getElementById("cardsub");
+  if (cs) cs.onchange = e => go({cardSub:e.target.value, card:0});
+}
+
+function startQuiz(spec){
+  let pool = [];
+  const push = (t,s) => { for (const m of t.mcqs) pool.push({...m, topicId:t.id, subjectTitle:s.title}); };
+  if (spec === "all") { for (const s of S) for (const t of s.topics) push(t,s); pool = shuffle(pool).slice(0,30); }
+  else if (spec.startsWith("sub:")) { const s = S.find(x => x.id === spec.slice(4)); for (const t of s.topics) push(t,s); pool = shuffle(pool).slice(0,30); }
+  else { const {t,s} = TOPIC.get(spec); push(t,s); }
+  go({mode:"bank", quiz:{items:pool, i:0, picked:null, score:0}});
+}
+const shuffle = a => { a = a.slice(); for (let i=a.length-1;i>0;i--){ const j = Math.floor(Math.random()*(i+1)); [a[i],a[j]]=[a[j],a[i]]; } return a; };
+
+document.addEventListener("click", e => {
+  const t = e.target.closest("[data-topic],[data-sub],[data-quiz],[data-back],[data-opt],[data-next],[data-pv],[data-pp],[data-card]");
+  if (!t) return;
+  const d = t.dataset;
+  if (d.topic) return go({mode:"library", sub:TOPIC.get(d.topic).s.id, topic:d.topic, quiz:null});
+  if (d.sub) return go({sub:d.sub, topic:null});
+  if (d.quiz) return startQuiz(d.quiz);
+  if (d.back === "topic") return go({topic:null});
+  if (d.back === "sub") return go({sub:null});
+  if (d.back === "bank") return go({quiz:null});
+  if (d.opt !== undefined && state.quiz && state.quiz.picked === null) {
+    const p = Number(d.opt);
+    state.quiz.picked = p;
+    if (p === state.quiz.items[state.quiz.i].answer) state.quiz.score++;
+    return render();
+  }
+  if (d.next) { state.quiz.i++; state.quiz.picked = null; return render(); }
+  if (d.pv) return go({pyqView:d.pv});
+  if (d.pp) return go({pyqPaper:d.pp});
+  if (d.card) return go({card:state.card+1});
+});
+
+render();
+</script>

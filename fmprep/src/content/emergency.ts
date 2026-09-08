@@ -4189,7 +4189,7 @@ topics.push({
       ],
       answer: 1,
       explanation:
-        "Tidal volume is 6 mL/kg of predicted body weight, and predicted body weight for a man is 50 + 0.91 x (height in cm - 152.4) = 50 + 0.91 x 22.6 = about 70.6 kg, giving roughly 420 mL. Predicted body weight depends only on height and sex, because lung size does so; using the actual 95 kg would give about 570 mL, which is the classic error and delivers a 35% overdose of volume into a lung whose aerated compartment - the baby lung - is already small. 760 mL corresponds to the traditional 8 mL/kg of actual body weight that the ARMA trial's control arm approximated and that increased mortality. 285 mL is 4 mL/kg of predicted body weight, which is the floor used only when the plateau pressure cannot be brought below 30 cmH2O at 6 mL/kg, not a starting value. 950 mL is 10 mL/kg of actual weight and is frankly injurious.",
+        "Tidal volume is 6 mL/kg of predicted body weight, and predicted body weight for a man is 50 + 0.91 x (height in cm - 152.4) = 50 + 0.91 x 22.6 = about 70.6 kg, giving roughly 420 mL. Predicted body weight depends only on height and sex, because lung size does so; using the actual 95 kg would give about 570 mL, which is the classic error and delivers a 35% overdose of volume into a lung whose aerated compartment - the baby lung - is already small. 760 mL is about 11 mL/kg of predicted body weight, close to the 12 mL/kg control arm of the ARMA trial that increased mortality. 285 mL is 4 mL/kg of predicted body weight, which is the floor used only when the plateau pressure cannot be brought below 30 cmH2O at 6 mL/kg, not a starting value. 950 mL is 10 mL/kg of actual weight and is frankly injurious.",
       difficulty: "moderate",
     },
     {
