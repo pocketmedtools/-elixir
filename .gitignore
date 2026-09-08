@@ -16,3 +16,6 @@ web/android/keystore/
 # Generated review digests — regenerate with `npm run digest`
 fmprep/review/**
 !fmprep/review/README.md
+
+# Generated single-file build — regenerate with `npm run single`
+fmprep/dist-single/
