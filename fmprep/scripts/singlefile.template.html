@@ -1,190 +1,286 @@
 <title>FM Prep Library</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Spectral:ital,wght@0,500;0,600;1,400&family=IBM+Plex+Sans:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&family=IBM+Plex+Sans:wght@400;500;600;700&family=IBM+Plex+Mono:wght@500;600&display=swap">
 <style>
+/* ---------------------------------------------------------------
+   Every colour is declared on bare :root first, so the theme blocks
+   below only ever redefine a token that already exists. --h is the
+   subject hue, set per screen, and the accent family derives from it.
+   --------------------------------------------------------------- */
 :root{
-  --paper:#FAF9F6; --raised:#FFFFFF; --ink:#16233A; --ink-soft:#3B4A63;
-  --quiet:#6E7788; --rule:#DFDCD4; --rule-soft:#EDEAE3;
-  --mark:#A8281F; --mark-wash:#FBEFEE; --mark-rule:#E9C9C6;
-  --band:#16233A; --ok:#1F5D4C; --ok-wash:#E9F2EE;
-  --sel:#16233A; --sel-ink:#FAF9F6;
-  --shadow:0 1px 2px rgba(22,35,58,.06),0 8px 24px -16px rgba(22,35,58,.28);
+  --h:210;
+  --paper:#F7F6F3; --raised:#FFFFFF; --sunk:#EFEDE8;
+  --ink:#11182A; --ink-soft:#3C4761; --quiet:#6B7488;
+  --rule:#E1DED7; --rule-soft:#EDEBE5;
+  --acc:hsl(var(--h) 58% 34%);
+  --acc-hi:hsl(var(--h) 62% 44%);
+  --wash:hsl(var(--h) 62% 96%);
+  --wash-2:hsl(var(--h) 50% 92%);
+  --acc-rule:hsl(var(--h) 34% 82%);
+  --hl:hsl(var(--h) 88% 84%);
+  --danger:#B3231B; --danger-wash:#FDEEEC; --danger-rule:#F0C6C1;
+  --good:#166B52;   --good-wash:#E8F4EF;   --good-rule:#B9DDCE;
+  --think:#8A5A00;  --think-wash:#FDF3DF;  --think-rule:#EBD4A0;
+  --shadow:0 1px 1px rgba(17,24,42,.04),0 10px 26px -20px rgba(17,24,42,.4);
+  --radius:5px;
 }
 @media (prefers-color-scheme:dark){
   :root:not([data-theme="light"]){
-    --paper:#0F1622; --raised:#161F2E; --ink:#E8E9EC; --ink-soft:#B6BECD;
-    --quiet:#8A93A5; --rule:#2A3purple; --rule:#283243; --rule-soft:#1E2736;
-    --mark:#E8837A; --mark-wash:#2A1A19; --mark-rule:#5A312D;
-    --band:#C6D0E2; --ok:#7FC4AC; --ok-wash:#152722;
-    --sel:#E8E9EC; --sel-ink:#0F1622;
-    --shadow:0 1px 2px rgba(0,0,0,.4),0 8px 24px -16px rgba(0,0,0,.7);
+    --paper:#0D1220; --raised:#141B2B; --sunk:#0A0F1A;
+    --ink:#E9EBF0; --ink-soft:#B4BCCC; --quiet:#828C9F;
+    --rule:#242D3F; --rule-soft:#1B2333;
+    --acc:hsl(var(--h) 58% 70%);
+    --acc-hi:hsl(var(--h) 62% 78%);
+    --wash:hsl(var(--h) 36% 14%);
+    --wash-2:hsl(var(--h) 32% 19%);
+    --acc-rule:hsl(var(--h) 28% 30%);
+    --hl:hsl(var(--h) 54% 30%);
+    --danger:#F09189; --danger-wash:#2C1614; --danger-rule:#5C2E29;
+    --good:#7FCDAF;   --good-wash:#0F2620;   --good-rule:#2C5546;
+    --think:#E5BE6B;  --think-wash:#2A2110;  --think-rule:#584727;
+    --shadow:0 1px 1px rgba(0,0,0,.5),0 10px 26px -20px rgba(0,0,0,.9);
   }
 }
 :root[data-theme="dark"]{
-  --paper:#0F1622; --raised:#161F2E; --ink:#E8E9EC; --ink-soft:#B6BECD;
-  --quiet:#8A93A5; --rule:#283243; --rule-soft:#1E2736;
-  --mark:#E8837A; --mark-wash:#2A1A19; --mark-rule:#5A312D;
-  --band:#C6D0E2; --ok:#7FC4AC; --ok-wash:#152722;
-  --sel:#E8E9EC; --sel-ink:#0F1622;
-  --shadow:0 1px 2px rgba(0,0,0,.4),0 8px 24px -16px rgba(0,0,0,.7);
+  --paper:#0D1220; --raised:#141B2B; --sunk:#0A0F1A;
+  --ink:#E9EBF0; --ink-soft:#B4BCCC; --quiet:#828C9F;
+  --rule:#242D3F; --rule-soft:#1B2333;
+  --acc:hsl(var(--h) 58% 70%);
+  --acc-hi:hsl(var(--h) 62% 78%);
+  --wash:hsl(var(--h) 36% 14%);
+  --wash-2:hsl(var(--h) 32% 19%);
+  --acc-rule:hsl(var(--h) 28% 30%);
+  --hl:hsl(var(--h) 54% 30%);
+  --danger:#F09189; --danger-wash:#2C1614; --danger-rule:#5C2E29;
+  --good:#7FCDAF;   --good-wash:#0F2620;   --good-rule:#2C5546;
+  --think:#E5BE6B;  --think-wash:#2A2110;  --think-rule:#584727;
+  --shadow:0 1px 1px rgba(0,0,0,.5),0 10px 26px -20px rgba(0,0,0,.9);
 }
 *{box-sizing:border-box}
-body{
-  background:var(--paper); color:var(--ink);
-  font:400 16px/1.62 "IBM Plex Sans",system-ui,-apple-system,"Segoe UI",sans-serif;
-  -webkit-font-smoothing:antialiased;
-}
-h1,h2,h3,h4{font-family:Spectral,Georgia,"Times New Roman",serif;font-weight:600;text-wrap:balance;margin:0;line-height:1.22}
+body{background:var(--paper);color:var(--ink);
+  font:400 16px/1.6 "IBM Plex Sans",system-ui,-apple-system,"Segoe UI",sans-serif;
+  -webkit-font-smoothing:antialiased}
+h1,h2,h3,h4{font-family:Fraunces,Georgia,"Times New Roman",serif;font-weight:600;
+  text-wrap:balance;margin:0;line-height:1.2}
 p{margin:0}
-button{font:inherit;color:inherit;background:none;border:none;cursor:pointer}
-a{color:inherit}
-:focus-visible{outline:2px solid var(--mark);outline-offset:2px;border-radius:3px}
+button{font:inherit;color:inherit;background:none;border:none;cursor:pointer;text-align:left}
+:focus-visible{outline:2px solid var(--acc-hi);outline-offset:2px;border-radius:3px}
 @media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}}
-
-.wrap{max-width:1060px;margin:0 auto;padding:0 20px}
-.reading{max-width:68ch}
-
-/* ---- masthead ---- */
-.mast{border-bottom:1px solid var(--rule);background:var(--raised)}
-.mast-in{display:flex;align-items:baseline;gap:14px;flex-wrap:wrap;padding:18px 0 14px}
-.mast h1{font-size:23px;letter-spacing:-.01em}
-.mast .sub{font-size:13px;color:var(--quiet)}
-.rule-red{height:2px;background:var(--mark)}
-
-/* ---- mode bar ---- */
-nav.modes{position:sticky;top:0;z-index:20;background:var(--raised);border-bottom:1px solid var(--rule)}
-nav.modes .wrap{display:flex;gap:2px;overflow-x:auto;scrollbar-width:none}
+.wrap{max-width:1080px;margin:0 auto;padding:0 20px}
+.reading{max-width:72ch}
+.mast{background:var(--raised);border-bottom:1px solid var(--rule)}
+.mast-in{display:flex;align-items:center;gap:13px;padding:15px 0}
+.glyph{width:34px;height:34px;border-radius:8px;flex-shrink:0;display:grid;place-items:center;
+  background:linear-gradient(150deg,hsl(210 58% 40%),hsl(280 52% 44%));color:#fff;
+  font:600 14px/1 "IBM Plex Mono",monospace}
+.mast h1{font-size:21px;letter-spacing:-.015em}
+.mast .sub{font-size:12.5px;color:var(--quiet);line-height:1.35}
+.spectrum{height:3px;display:flex}
+.spectrum i{flex:1}
+nav.modes{position:sticky;top:0;z-index:30;background:var(--raised);border-bottom:1px solid var(--rule)}
+nav.modes .wrap{display:flex;gap:1px;overflow-x:auto;scrollbar-width:none}
 nav.modes .wrap::-webkit-scrollbar{display:none}
-.mode{padding:11px 14px;font-size:13.5px;font-weight:600;color:var(--quiet);white-space:nowrap;border-bottom:2px solid transparent}
-.mode[aria-current="true"]{color:var(--ink);border-bottom-color:var(--mark)}
+.mode{padding:12px 15px;font-size:13.5px;font-weight:600;color:var(--quiet);
+  white-space:nowrap;border-bottom:2.5px solid transparent}
+.mode[aria-current="true"]{color:var(--acc);border-bottom-color:var(--acc)}
 .mode:hover{color:var(--ink)}
-
-main{padding:26px 0 72px}
-
-/* ---- shared bits ---- */
-.eyebrow{font:500 11px/1 "IBM Plex Mono",ui-monospace,monospace;letter-spacing:.1em;text-transform:uppercase;color:var(--quiet)}
-.mono{font-family:"IBM Plex Mono",ui-monospace,monospace;font-variant-numeric:tabular-nums}
-.back{display:inline-flex;align-items:center;gap:7px;font-size:13px;font-weight:600;color:var(--quiet);padding:6px 0;margin-bottom:14px}
-.back:hover{color:var(--ink)}
-.chip{display:inline-block;font:500 11px/1.5 "IBM Plex Mono",ui-monospace,monospace;padding:2px 7px;border:1px solid var(--rule);border-radius:2px;color:var(--ink-soft);white-space:nowrap}
-.chip.mark{color:var(--mark);border-color:var(--mark-rule);background:var(--mark-wash)}
-.chip.solid{background:var(--sel);color:var(--sel-ink);border-color:var(--sel)}
-.chips{display:flex;flex-wrap:wrap;gap:6px}
-.empty{padding:44px 0;text-align:center;color:var(--quiet);font-size:14px}
-
-/* frequency reads as a 4-step ramp of one hue, so it is one system */
-.freq{display:inline-flex;align-items:center;gap:5px;font:500 11px/1 "IBM Plex Mono",monospace;color:var(--quiet);white-space:nowrap}
-.freq i{width:22px;height:4px;border-radius:1px;background:var(--rule);display:block;position:relative;overflow:hidden}
-.freq i::after{content:"";position:absolute;inset:0;background:var(--band);width:var(--w)}
-
-/* ---- stat strip ---- */
-.stats{display:grid;grid-template-columns:repeat(auto-fit,minmax(112px,1fr));gap:0;border:1px solid var(--rule);border-radius:3px;background:var(--raised);overflow:hidden;margin:20px 0 30px}
-.stat{padding:13px 15px;border-right:1px solid var(--rule-soft)}
-.stat:last-child{border-right:none}
-.stat b{display:block;font:600 25px/1.1 "IBM Plex Mono",monospace;font-variant-numeric:tabular-nums;letter-spacing:-.02em}
-.stat span{display:block;font-size:11.5px;color:var(--quiet);margin-top:3px}
-
-/* ---- lists ---- */
-.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(258px,1fr));gap:10px}
-.card{display:block;width:100%;text-align:left;background:var(--raised);border:1px solid var(--rule);border-radius:3px;padding:14px 15px}
-.card:hover{border-color:var(--quiet)}
-.card h3{font-size:16.5px;margin-bottom:5px}
-.card p{font-size:13px;color:var(--quiet);line-height:1.5}
-.card .foot{margin-top:10px;display:flex;gap:6px;flex-wrap:wrap}
-
-.rows{border:1px solid var(--rule);border-radius:3px;background:var(--raised);overflow:hidden}
-.row{display:block;width:100%;text-align:left;padding:12px 15px;border-bottom:1px solid var(--rule-soft)}
-.row:last-child{border-bottom:none}
-.row:hover{background:var(--paper)}
-.row h4{font-size:15.5px;font-family:"IBM Plex Sans",sans-serif;font-weight:600}
-.row .line{font-size:13px;color:var(--quiet);margin-top:3px;line-height:1.5}
-.row .foot{margin-top:8px;display:flex;gap:6px;flex-wrap:wrap;align-items:center}
-
-/* ---- topic reader ---- */
-.reader h2{font-size:29px;letter-spacing:-.015em;margin-bottom:9px}
-.oneliner{font-size:17px;line-height:1.55;color:var(--ink-soft);font-family:Spectral,Georgia,serif;font-style:italic;margin:0 0 16px}
-.sec{margin-top:30px}
-.sec > h3{font-size:19px;padding-bottom:7px;border-bottom:1px solid var(--rule);margin-bottom:12px}
-.pts{list-style:none;padding:0;margin:0;display:flex;flex-direction:column;gap:9px}
-.pts li{padding-left:17px;position:relative;font-size:15.2px;line-height:1.62}
-.pts li::before{content:"";position:absolute;left:2px;top:.66em;width:5px;height:1px;background:var(--quiet)}
-.pts strong{font-weight:600}
-
-.tbl{overflow-x:auto;border:1px solid var(--rule);border-radius:3px;background:var(--raised)}
-table{border-collapse:collapse;width:100%;font-size:13.6px;min-width:460px}
-th,td{text-align:left;padding:9px 12px;border-bottom:1px solid var(--rule-soft);vertical-align:top}
-th{font:600 11px/1.4 "IBM Plex Mono",monospace;letter-spacing:.05em;text-transform:uppercase;color:var(--quiet);background:var(--paper)}
+main{padding:26px 0 80px}
+.eyebrow{font:600 10.5px/1 "IBM Plex Mono",ui-monospace,monospace;letter-spacing:.13em;
+  text-transform:uppercase;color:var(--acc)}
+.eyebrow.mute{color:var(--quiet)}
+.back{display:inline-flex;align-items:center;gap:7px;font-size:13px;font-weight:600;
+  color:var(--quiet);padding:5px 0;margin-bottom:12px}
+.back:hover{color:var(--acc)}
+.chip{display:inline-block;font:500 11px/1.55 "IBM Plex Mono",ui-monospace,monospace;
+  padding:2px 8px;border:1px solid var(--rule);border-radius:99px;color:var(--ink-soft);white-space:nowrap}
+.chip.acc{color:var(--acc);border-color:var(--acc-rule);background:var(--wash)}
+.chip.bad{color:var(--danger);border-color:var(--danger-rule);background:var(--danger-wash)}
+.chip.solid{background:var(--acc);color:var(--raised);border-color:var(--acc)}
+.chips{display:flex;flex-wrap:wrap;gap:6px;align-items:center}
+.empty{padding:48px 20px;text-align:center;color:var(--quiet);font-size:14px;
+  border:1px dashed var(--rule);border-radius:var(--radius)}
+mark.hl{background:var(--hl);color:var(--ink);font-weight:650;
+  padding:.06em .22em;border-radius:2px;box-decoration-break:clone;-webkit-box-decoration-break:clone}
+b.num{font-family:"IBM Plex Mono",ui-monospace,monospace;font-weight:600;
+  font-variant-numeric:tabular-nums;color:var(--acc);white-space:nowrap}
+.freq{display:inline-flex;align-items:center;gap:6px;font:600 10.5px/1 "IBM Plex Mono",monospace;
+  color:var(--quiet);white-space:nowrap;text-transform:uppercase;letter-spacing:.07em}
+.freq i{width:26px;height:5px;border-radius:99px;background:var(--rule);display:block;position:relative;overflow:hidden}
+.freq i::after{content:"";position:absolute;inset:0;background:var(--acc);width:var(--w)}
+.hero{background:var(--raised);border:1px solid var(--rule);border-radius:var(--radius);
+  padding:26px 24px;box-shadow:var(--shadow);margin-bottom:22px}
+.hero h2{font-size:30px;letter-spacing:-.02em;margin:8px 0 10px}
+.hero p{color:var(--ink-soft);font-size:15.6px;line-height:1.62;max-width:64ch}
+.stats{display:grid;grid-template-columns:repeat(auto-fit,minmax(104px,1fr));gap:10px;margin-top:20px}
+.stat{background:var(--sunk);border-radius:var(--radius);padding:12px 13px}
+.stat b{display:block;font:600 24px/1.1 "IBM Plex Mono",monospace;
+  font-variant-numeric:tabular-nums;letter-spacing:-.03em;color:var(--acc)}
+.stat span{display:block;font-size:11px;color:var(--quiet);margin-top:4px;line-height:1.35}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(250px,1fr));gap:11px}
+.subj{position:relative;background:var(--raised);border:1px solid var(--rule);
+  border-radius:var(--radius);padding:15px 16px 15px 19px;overflow:hidden;width:100%}
+.subj::before{content:"";position:absolute;left:0;top:0;bottom:0;width:4px;background:var(--acc)}
+.subj:hover{border-color:var(--acc-rule);background:var(--wash)}
+.subj h3{font-size:16.5px;margin-bottom:5px;color:var(--acc)}
+.subj p{font-size:12.8px;color:var(--quiet);line-height:1.5}
+.subj .foot{margin-top:11px;display:flex;gap:6px;flex-wrap:wrap}
+.rows{display:flex;flex-direction:column;gap:8px}
+.row{background:var(--raised);border:1px solid var(--rule);border-radius:var(--radius);
+  padding:13px 15px;width:100%;position:relative}
+.row:hover{border-color:var(--acc-rule);background:var(--wash)}
+.row h4{font:600 15.5px/1.4 "IBM Plex Sans",sans-serif}
+.row .line{font-size:13px;color:var(--quiet);margin-top:4px;line-height:1.5}
+.row .foot{margin-top:9px;display:flex;gap:6px;flex-wrap:wrap;align-items:center}
+.reader h2{font-size:31px;letter-spacing:-.02em;margin-bottom:10px}
+.oneliner{font-size:17.5px;line-height:1.55;color:var(--ink-soft);
+  font-family:Fraunces,Georgia,serif;margin:0 0 18px;border-left:3px solid var(--acc);padding-left:15px}
+.sec{margin-top:34px}
+.sec > h3{font-size:20px;display:flex;align-items:baseline;gap:11px;margin-bottom:14px;
+  padding-bottom:9px;border-bottom:2px solid var(--acc-rule)}
+.sec > h3 .n{font:600 11px/1 "IBM Plex Mono",monospace;color:var(--raised);
+  background:var(--acc);border-radius:3px;padding:5px 7px;flex-shrink:0}
+.pts{list-style:none;padding:0;margin:0;display:flex;flex-direction:column;gap:10px}
+.pts li{padding-left:20px;position:relative;font-size:15.4px;line-height:1.65}
+.pts li::before{content:"";position:absolute;left:1px;top:.58em;width:7px;height:7px;
+  border-radius:2px;background:var(--acc);opacity:.55}
+.pts strong{font-weight:650}
+.tbl{overflow-x:auto;border:1px solid var(--rule);border-radius:var(--radius);background:var(--raised)}
+table{border-collapse:collapse;width:100%;font-size:13.7px;min-width:480px}
+th,td{text-align:left;padding:10px 13px;border-bottom:1px solid var(--rule-soft);vertical-align:top}
+th{font:600 10.5px/1.4 "IBM Plex Mono",monospace;letter-spacing:.07em;text-transform:uppercase;
+  color:var(--acc);background:var(--wash);border-bottom:1px solid var(--acc-rule)}
+tbody tr:nth-child(even){background:var(--sunk)}
 tr:last-child td{border-bottom:none}
-
-.flags{border-left:2px solid var(--mark);background:var(--mark-wash);padding:13px 16px;border-radius:0 3px 3px 0}
-.flags .eyebrow{color:var(--mark)}
-.flags ul{list-style:none;padding:0;margin:9px 0 0;display:flex;flex-direction:column;gap:7px}
-.flags li{font-size:14.6px;line-height:1.55;padding-left:15px;position:relative}
-.flags li::before{content:"";position:absolute;left:0;top:.62em;width:5px;height:5px;border-radius:50%;background:var(--mark)}
-
-.pearls{border:1px dashed var(--rule);border-radius:3px;padding:13px 16px}
-.pearls ol{margin:9px 0 0;padding-left:19px;display:flex;flex-direction:column;gap:7px}
-.pearls li{font-size:14.6px;line-height:1.55}
-
-/* theory answers — the answer-book shape: marks in the margin */
-.theory{border:1px solid var(--rule);border-radius:3px;background:var(--raised);margin-bottom:11px;overflow:hidden}
-.theory > summary{padding:13px 15px;cursor:pointer;list-style:none;display:flex;gap:11px;align-items:flex-start}
+td:first-child{font-weight:600}
+.panel{border-radius:var(--radius);padding:15px 17px;border:1px solid}
+.panel .ph{display:flex;align-items:center;gap:8px;margin-bottom:10px}
+.panel ul,.panel ol{list-style:none;padding:0;margin:0;display:flex;flex-direction:column;gap:8px}
+.panel li{font-size:14.8px;line-height:1.58;padding-left:19px;position:relative}
+.panel.bad{background:var(--danger-wash);border-color:var(--danger-rule)}
+.panel.bad .eyebrow{color:var(--danger)}
+.panel.bad li::before{content:"!";position:absolute;left:0;top:0;font:600 13px/1.5 "IBM Plex Mono",monospace;color:var(--danger)}
+.panel.gold{background:var(--think-wash);border-color:var(--think-rule);counter-reset:pearl}
+.panel.gold .eyebrow{color:var(--think)}
+.panel.gold li::before{counter-increment:pearl;content:counter(pearl);position:absolute;left:0;top:0;
+  font:600 11px/1.7 "IBM Plex Mono",monospace;color:var(--think)}
+.dg{border:1px solid var(--acc-rule);border-radius:var(--radius);background:var(--raised);
+  padding:16px 17px 18px;margin-bottom:12px;box-shadow:var(--shadow)}
+.dg > h4{font:600 15.5px/1.35 "IBM Plex Sans",sans-serif;color:var(--acc);margin-bottom:3px}
+.dg .cap{font-size:12.5px;color:var(--quiet);line-height:1.5;margin-bottom:14px}
+.dg .cap:empty{display:none}
+.node{border:1.5px solid var(--acc-rule);background:var(--wash);border-radius:var(--radius);
+  padding:9px 13px;font-size:14px;line-height:1.45}
+.node .nl{font-weight:600}
+.node .nd{font-size:12.4px;color:var(--ink-soft);margin-top:3px;line-height:1.45}
+.node.decision{border-color:var(--think-rule);background:var(--think-wash);border-style:dashed}
+.node.decision .nl::after{content:" ?";color:var(--think);font-weight:700}
+.node.warn{border-color:var(--danger-rule);background:var(--danger-wash)}
+.node.good{border-color:var(--good-rule);background:var(--good-wash)}
+.flow{display:flex;flex-direction:column;align-items:stretch}
+.flow .node{position:relative}
+.flow .node + .node{margin-top:22px}
+.flow .node + .node::before{content:"";position:absolute;left:50%;top:-22px;height:22px;width:2px;background:var(--acc-rule)}
+.flow .node + .node::after{content:"";position:absolute;left:50%;top:-9px;width:7px;height:7px;
+  border-right:2px solid var(--acc-rule);border-bottom:2px solid var(--acc-rule);
+  transform:translateX(-50%) rotate(45deg)}
+.ladder{display:flex;flex-direction:column;gap:7px}
+.rung{display:flex;align-items:flex-start;gap:11px}
+.rung .lv{font:600 11px/1 "IBM Plex Mono",monospace;color:var(--raised);background:var(--acc);
+  border-radius:3px;padding:6px 8px;flex-shrink:0;margin-top:4px}
+.rung .node{flex:1;min-width:0}
+.branch .rootbox{display:flex;justify-content:center}
+.branch .rootbox .node{background:var(--acc);color:var(--raised);border-color:var(--acc);
+  font-weight:650;text-align:center}
+.branch .stem{height:18px;width:2px;background:var(--acc-rule);margin:0 auto}
+.arms{display:grid;grid-template-columns:repeat(auto-fit,minmax(160px,1fr));gap:11px}
+.arm{display:flex;flex-direction:column;gap:7px}
+.arm > .hd{font:600 12.5px/1.35 "IBM Plex Sans",sans-serif;color:var(--acc);
+  background:var(--wash-2);border:1px solid var(--acc-rule);border-radius:var(--radius);
+  padding:8px 11px;text-align:center}
+.arm.warn > .hd{color:var(--danger);background:var(--danger-wash);border-color:var(--danger-rule)}
+.arm.good > .hd{color:var(--good);background:var(--good-wash);border-color:var(--good-rule)}
+.arm ul{list-style:none;padding:0;margin:0;display:flex;flex-direction:column;gap:5px}
+.arm li{font-size:13.4px;line-height:1.5;padding:6px 10px;background:var(--sunk);
+  border-radius:3px;border-left:2px solid var(--acc-rule)}
+.cycle{display:flex;flex-wrap:wrap;gap:9px;align-items:stretch}
+.cyc{flex:1 1 150px;min-width:0;position:relative;padding:10px 12px 10px 34px;
+  background:var(--wash);border:1.5px solid var(--acc-rule);border-radius:var(--radius);
+  font-size:13.6px;line-height:1.45}
+.cyc .k{position:absolute;left:9px;top:9px;width:18px;height:18px;border-radius:99px;
+  background:var(--acc);color:var(--raised);font:600 10.5px/18px "IBM Plex Mono",monospace;text-align:center}
+.cyc .nl{font-weight:600}
+.cyc .nd{font-size:12.2px;color:var(--ink-soft);margin-top:3px}
+.loopback{display:flex;align-items:center;gap:10px;margin-top:10px;
+  font:600 10.5px/1 "IBM Plex Mono",monospace;color:var(--acc);letter-spacing:.09em;text-transform:uppercase}
+.loopback::before,.loopback::after{content:"";flex:1;height:1px;background:var(--acc-rule)}
+.theory{border:1px solid var(--rule);border-radius:var(--radius);background:var(--raised);
+  margin-bottom:10px;overflow:hidden}
+.theory > summary{padding:13px 15px;cursor:pointer;list-style:none;display:flex;gap:12px;align-items:flex-start}
 .theory > summary::-webkit-details-marker{display:none}
 .theory summary .q{flex:1;min-width:0;font-size:15px;line-height:1.55;font-weight:500}
-.theory summary .m{font:600 12px/1.4 "IBM Plex Mono",monospace;color:var(--mark);white-space:nowrap;padding-top:2px}
-.theory[open] > summary{border-bottom:1px solid var(--rule-soft)}
-.theory .body{padding:15px}
-.opening{border-left:2px solid var(--band);padding:2px 0 2px 13px;margin-bottom:16px;display:flex;flex-direction:column;gap:6px}
-.opening p{font-size:14.8px;line-height:1.58;font-family:Spectral,Georgia,serif}
-.splits{display:flex;flex-direction:column;gap:0;border:1px solid var(--rule-soft);border-radius:3px;margin-top:14px}
-.split{display:flex;justify-content:space-between;gap:12px;padding:7px 11px;border-bottom:1px solid var(--rule-soft);font-size:13.4px}
-.split:last-child{border-bottom:none}
-.split b{font-family:"IBM Plex Mono",monospace;font-weight:600;color:var(--mark);font-variant-numeric:tabular-nums}
-
-/* ---- quiz ---- */
-.opt{display:flex;gap:11px;width:100%;text-align:left;padding:12px 14px;border:1px solid var(--rule);border-radius:3px;background:var(--raised);margin-bottom:8px;align-items:flex-start;font-size:14.8px;line-height:1.55}
-.opt:hover:not(:disabled){border-color:var(--quiet)}
-.opt .lt{font:600 13px/1.5 "IBM Plex Mono",monospace;color:var(--quiet);flex-shrink:0}
-.opt.right{border-color:var(--ok);background:var(--ok-wash)}
-.opt.right .lt{color:var(--ok)}
-.opt.wrong{border-color:var(--mark);background:var(--mark-wash)}
-.opt.wrong .lt{color:var(--mark)}
+.theory summary .m{font:600 11.5px/1.5 "IBM Plex Mono",monospace;color:var(--raised);
+  background:var(--danger);border-radius:99px;padding:2px 9px;white-space:nowrap}
+.theory[open] > summary{border-bottom:1px solid var(--rule-soft);background:var(--wash)}
+.theory .body{padding:16px}
+.opening{background:var(--wash);border-left:3px solid var(--acc);
+  border-radius:0 var(--radius) var(--radius) 0;padding:12px 15px;margin-bottom:18px;
+  display:flex;flex-direction:column;gap:7px}
+.opening p{font-size:14.8px;line-height:1.58;font-family:Fraunces,Georgia,serif}
+.splits{margin-top:16px;display:flex;flex-direction:column;gap:5px}
+.split{display:grid;grid-template-columns:1fr auto;gap:11px;align-items:center;
+  padding:7px 11px;background:var(--sunk);border-radius:3px;font-size:13.4px}
+.split .bar{grid-column:1/-1;height:4px;border-radius:99px;background:var(--rule);overflow:hidden}
+.split .bar i{display:block;height:100%;background:var(--danger);width:var(--w)}
+.split b{font-family:"IBM Plex Mono",monospace;font-weight:600;color:var(--danger);font-variant-numeric:tabular-nums}
+.opt{display:flex;gap:12px;width:100%;padding:13px 15px;border:1.5px solid var(--rule);
+  border-radius:var(--radius);background:var(--raised);margin-bottom:9px;align-items:flex-start;
+  font-size:14.9px;line-height:1.55}
+.opt:hover:not(:disabled){border-color:var(--acc);background:var(--wash)}
+.opt .lt{font:600 12px/17px "IBM Plex Mono",monospace;color:var(--quiet);flex-shrink:0;
+  width:20px;height:20px;border-radius:99px;border:1.5px solid var(--rule);text-align:center}
+.opt.right{border-color:var(--good);background:var(--good-wash)}
+.opt.right .lt{color:var(--raised);background:var(--good);border-color:var(--good)}
+.opt.wrong{border-color:var(--danger);background:var(--danger-wash)}
+.opt.wrong .lt{color:var(--raised);background:var(--danger);border-color:var(--danger)}
 .opt:disabled{cursor:default}
-.expl{border:1px solid var(--rule);border-left:2px solid var(--band);border-radius:0 3px 3px 0;padding:13px 15px;font-size:14.6px;line-height:1.62;margin-top:12px;background:var(--raised)}
-.btn{display:inline-block;padding:9px 17px;background:var(--sel);color:var(--sel-ink);border-radius:3px;font-size:14px;font-weight:600}
-.btn.ghost{background:transparent;color:var(--ink);border:1px solid var(--rule)}
-.bar{display:flex;gap:9px;flex-wrap:wrap;align-items:center;margin-top:16px}
-
-/* ---- flashcard ---- */
-.fc{border:1px solid var(--rule);border-radius:3px;background:var(--raised);padding:30px 24px;min-height:210px;display:flex;flex-direction:column;justify-content:center;gap:14px;box-shadow:var(--shadow)}
-.fc .front{font-family:Spectral,Georgia,serif;font-size:20px;line-height:1.45}
-.fc .back{font-size:15.4px;line-height:1.62;color:var(--ink-soft);border-top:1px solid var(--rule-soft);padding-top:14px}
-
-/* ---- inputs ---- */
-input[type="search"],select{
-  width:100%;padding:10px 13px;border:1px solid var(--rule);border-radius:3px;
-  background:var(--raised);color:var(--ink);font:inherit;font-size:15px;
-}
-.pills{display:flex;gap:6px;flex-wrap:wrap;margin:12px 0}
-.pill{padding:6px 12px;border:1px solid var(--rule);border-radius:2px;font-size:12.5px;font-weight:600;color:var(--quiet);background:var(--raised)}
-.pill[aria-pressed="true"]{background:var(--sel);color:var(--sel-ink);border-color:var(--sel)}
-
-footer{border-top:1px solid var(--rule);padding:22px 0 34px;font-size:12.5px;line-height:1.6;color:var(--quiet)}
+.expl{border:1px solid var(--acc-rule);border-left:3px solid var(--acc);
+  border-radius:0 var(--radius) var(--radius) 0;padding:14px 16px;font-size:14.7px;
+  line-height:1.65;margin-top:13px;background:var(--raised)}
+.btn{display:inline-block;padding:10px 18px;background:var(--acc);color:var(--raised);
+  border-radius:var(--radius);font-size:14px;font-weight:600}
+.btn.ghost{background:transparent;color:var(--acc);border:1.5px solid var(--acc-rule)}
+.bar-row{display:flex;gap:10px;flex-wrap:wrap;align-items:center;margin-top:18px}
+.fc{border:1px solid var(--acc-rule);border-top:4px solid var(--acc);border-radius:var(--radius);
+  background:var(--raised);padding:32px 26px;min-height:220px;display:flex;flex-direction:column;
+  justify-content:center;gap:16px;box-shadow:var(--shadow)}
+.fc .front{font-family:Fraunces,Georgia,serif;font-size:21px;line-height:1.42}
+.fc .back{font-size:15.4px;line-height:1.65;color:var(--ink-soft);
+  border-top:1px solid var(--rule-soft);padding-top:15px}
+input[type="search"],select{width:100%;padding:11px 14px;border:1.5px solid var(--rule);
+  border-radius:var(--radius);background:var(--raised);color:var(--ink);font:inherit;font-size:15px}
+input[type="search"]:focus,select:focus{border-color:var(--acc);outline:none}
+.pills{display:flex;gap:7px;flex-wrap:wrap;margin:14px 0}
+.pill{padding:7px 13px;border:1.5px solid var(--rule);border-radius:99px;font-size:12.5px;
+  font-weight:600;color:var(--quiet);background:var(--raised)}
+.pill[aria-pressed="true"]{background:var(--acc);color:var(--raised);border-color:var(--acc)}
+.pill:hover{border-color:var(--acc-rule)}
+footer{border-top:1px solid var(--rule);padding:24px 0 36px;font-size:12.5px;
+  line-height:1.62;color:var(--quiet);background:var(--raised)}
 </style>
 
 <div class="mast">
   <div class="wrap mast-in">
-    <h1>FM Prep</h1>
-    <p class="sub">DNB / MD Family Medicine &mdash; the whole revision library, offline in one page</p>
+    <span class="glyph" aria-hidden>FM</span>
+    <div>
+      <h1>FM Prep</h1>
+      <p class="sub">DNB / MD Family Medicine &mdash; the whole revision library, in one page</p>
+    </div>
   </div>
-  <div class="rule-red"></div>
+  <div class="spectrum" id="spectrum" aria-hidden></div>
 </div>
 
-<nav class="modes">
-  <div class="wrap" id="modes"></div>
-</nav>
-
+<nav class="modes"><div class="wrap" id="modes"></div></nav>
 <main><div class="wrap" id="view"></div></main>
 
 <footer><div class="wrap reading">
@@ -194,214 +290,259 @@ footer{border-top:1px solid var(--rule);padding:22px 0 34px;font-size:12.5px;lin
 <script id="fmdata" type="application/json">/*__DATA__*/</script>
 <script>
 const DATA = JSON.parse(document.getElementById("fmdata").textContent);
-const S = DATA.subjects, M = DATA.meta, PYQ = DATA.pyq;
+const S = DATA.subjects, M = DATA.meta, PYQ = DATA.pyq, DIA = DATA.diagrams || {};
+
+const HUE = {
+  "symptom-approach":265,"fm-principles":212,"cardiovascular":350,"endocrine":32,
+  "respiratory":194,"gastro-hepatology":22,"infectious-fever":8,"neurology":281,
+  "renal-urology":176,"musculoskeletal":45,"psychiatry":300,"surgery-office":206,
+  "dermatology":338,"eye-ent":160,"emergency":2,"pediatrics":132,"obstetrics":322,
+  "gynaecology":310,"preventive":100,"geriatrics-ethics":232
+};
+const hueOf = id => HUE[id] !== undefined ? HUE[id] : 210;
+document.getElementById("spectrum").innerHTML =
+  S.map(s => '<i style="background:hsl(' + hueOf(s.id) + ' 58% 46%)"></i>').join("");
 
 const TOPIC = new Map();
 for (const s of S) for (const t of s.topics) TOPIC.set(t.id, {t, s});
 
 const FREQ = {core:["Core",1],common:["Common",.72],"less-common":["Less common",.44],uncommon:["Uncommon",.2]};
 const esc = x => String(x).replace(/[&<>"]/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
-const bold = x => esc(x).replace(/\*\*(.+?)\*\*/g, "<strong>$1</strong>");
-const freq = f => `<span class="freq"><i style="--w:${(FREQ[f]?.[1] ?? .2)*100}%"></i>${FREQ[f]?.[0] ?? f}</span>`;
+
+/* Units the library actually writes, so a dose is picked out but "2 of 6" is not. */
+const NUM = /\b(\d[\d.,]*(?:\s*(?:-|to)\s*\d[\d.,]*)?\s*(?:mg\/kg\/day|mcg\/kg\/min|mL\/kg\/h|mg\/kg|mcg\/kg|mg\/dL|g\/dL|mmol\/L|mEq\/kg|mL\/min|mg\/day|IU\b|units?\b|mg\b|mcg\b|micrograms?\b|mL\b|kg\b|mmHg|cmH2O|%|per 1000|per 100000|degrees C|weeks?\b|days?\b|hours?\b|minutes?\b|months?\b|years?\b))/g;
+
+/** Escape, then turn **bold** into a real highlight, then pick out quantities. */
+function rich(x){
+  return esc(x)
+    .replace(/\*\*(.+?)\*\*/g, '<mark class="hl">$1</mark>')
+    .replace(NUM, '<b class="num">$1</b>');
+}
+const freq = f => '<span class="freq"><i style="--w:' + ((FREQ[f] ? FREQ[f][1] : .2) * 100) + '%"></i>' + (FREQ[f] ? FREQ[f][0] : f) + '</span>';
 const el = document.getElementById("view");
 
-let state = {mode:"library", sub:null, topic:null, pyqView:"sitting", pyqPaper:"all", quiz:null, card:0, cardSub:"all", q:""};
+let state = {mode:"library", sub:null, topic:null, pyqView:"sitting", pyqPaper:"all",
+             quiz:null, card:0, cardSub:"all", q:""};
 const go = p => { Object.assign(state, p); render(); window.scrollTo(0,0); };
 
 const MODES = [["library","Library"],["papers","Past papers"],["bank","Question bank"],["cards","Flashcards"],["search","Search"]];
-document.getElementById("modes").innerHTML = MODES.map(([k,l]) =>
-  `<button class="mode" data-m="${k}">${l}</button>`).join("");
-document.getElementById("modes").onclick = e => {
-  const b = e.target.closest("[data-m]"); if (!b) return;
-  go({mode:b.dataset.m, sub:null, topic:null, quiz:null, q:""});
-};
+document.getElementById("modes").innerHTML = MODES.map(m => '<button class="mode" data-m="' + m[0] + '">' + m[1] + '</button>').join("");
 
-/* ---------- renderers ---------- */
-function statStrip(){
-  return `<div class="stats">
-    ${[[M.topics,"topics"],[M.theory,"model answers"],[M.mcqs,"MCQs"],[M.cards,"flashcards"],[M.cases,"worked cases"],[M.pastQuestions,"past questions"]]
-      .map(([n,l]) => `<div class="stat"><b>${n}</b><span>${l}</span></div>`).join("")}
-  </div>`;
+/* ---------- diagrams: one deterministic layout per shape ---------- */
+function drawNode(st){
+  const tone = st.tone && st.tone !== "neutral" ? " " + st.tone : "";
+  return '<div class="node' + tone + '"><div class="nl">' + rich(st.label) + '</div>' +
+    (st.detail ? '<div class="nd">' + rich(st.detail) + '</div>' : "") + '</div>';
+}
+function drawDiagram(d){
+  let inner = "";
+  if (d.kind === "flow") {
+    inner = '<div class="flow">' + d.steps.map(drawNode).join("") + '</div>';
+  } else if (d.kind === "ladder") {
+    inner = '<div class="ladder">' + d.steps.map((st,i) =>
+      '<div class="rung"><span class="lv">' + (i+1) + '</span>' + drawNode(st) + '</div>').join("") + '</div>';
+  } else if (d.kind === "cycle") {
+    inner = '<div class="cycle">' + d.steps.map((st,i) =>
+      '<div class="cyc"><span class="k">' + (i+1) + '</span><span class="nl">' + rich(st.label) + '</span>' +
+      (st.detail ? '<div class="nd">' + rich(st.detail) + '</div>' : "") + '</div>').join("") + '</div>' +
+      '<div class="loopback">back to ' + esc(d.steps[0].label) + '</div>';
+  } else if (d.kind === "branch") {
+    inner = '<div class="branch"><div class="rootbox"><div class="node">' + rich(d.root) + '</div></div>' +
+      '<div class="stem"></div><div class="arms">' + d.arms.map(a =>
+        '<div class="arm ' + (a.tone && a.tone !== "neutral" ? a.tone : "") + '">' +
+        '<div class="hd">' + rich(a.label) + '</div><ul>' +
+        a.steps.map(s => '<li>' + rich(s) + '</li>').join("") + '</ul></div>').join("") + '</div></div>';
+  } else if (d.kind === "compare") {
+    inner = '<div class="tbl"><table><thead><tr>' + d.columns.map(c => '<th>' + esc(c) + '</th>').join("") +
+      '</tr></thead><tbody>' + d.rows.map(r => '<tr>' + r.map(c => '<td>' + rich(c) + '</td>').join("") + '</tr>').join("") +
+      '</tbody></table></div>';
+  }
+  return '<div class="dg"><h4>' + esc(d.heading) + '</h4><p class="cap">' +
+    (d.caption ? esc(d.caption) : "") + '</p>' + inner + '</div>';
 }
 
+/* ---------- views ---------- */
 function viewLibrary(){
   if (state.topic) return viewTopic();
   if (state.sub) {
     const s = S.find(x => x.id === state.sub);
-    const byFreq = ["core","common","less-common","uncommon"];
-    const groups = byFreq.map(f => [f, s.topics.filter(t => t.frequency === f)]).filter(([,l]) => l.length);
-    return `<button class="back" data-back="sub">&larr; All subjects</button>
-      <h2 style="font-size:27px">${esc(s.title)}</h2>
-      <p class="oneliner">${esc(s.blurb)}</p>
-      <div class="chips" style="margin-bottom:22px">
-        <span class="chip">Paper ${s.papers.join(", ")}</span>
-        <span class="chip">${s.topics.length} topics</span>
-        <span class="chip">${s.cases.length} worked cases</span>
-      </div>
-      ${groups.map(([f,list]) => `<div class="sec">
-        <h3>${FREQ[f][0]}</h3>
-        <div class="rows">${list.map(t => `<button class="row" data-topic="${t.id}">
-          <h4>${esc(t.title)}</h4><p class="line">${esc(t.oneLiner)}</p>
-          <span class="foot">${freq(t.frequency)}<span class="chip">${t.mcqs.length} MCQ</span>
-          ${t.theory.length ? `<span class="chip mark">${t.theory.length} model answers</span>` : ""}
-          <span class="chip">${t.cards.length} cards</span></span>
-        </button>`).join("")}</div></div>`).join("")}`;
+    const groups = ["core","common","less-common","uncommon"]
+      .map(f => [f, s.topics.filter(t => t.frequency === f)]).filter(g => g[1].length);
+    return '<div style="--h:' + hueOf(s.id) + '">' +
+      '<button class="back" data-back="sub">&larr; All subjects</button>' +
+      '<p class="eyebrow">' + esc(s.group) + '</p>' +
+      '<h2 style="font-size:29px;margin:8px 0 10px;color:var(--acc)">' + esc(s.title) + '</h2>' +
+      '<p class="oneliner">' + esc(s.blurb) + '</p>' +
+      '<div class="chips" style="margin-bottom:8px">' +
+        '<span class="chip acc">Paper ' + s.papers.join(", ") + '</span>' +
+        '<span class="chip">' + s.topics.length + ' topics</span>' +
+        '<span class="chip">' + s.topics.reduce((n,t)=>n+t.mcqs.length,0) + ' questions</span>' +
+        '<span class="chip">' + s.cases.length + ' worked cases</span></div>' +
+      groups.map(g => '<div class="sec"><h3><span class="n">' + g[1].length + '</span>' + FREQ[g[0]][0] + '</h3>' +
+        '<div class="rows">' + g[1].map(t => '<button class="row" data-topic="' + t.id + '">' +
+          '<h4>' + esc(t.title) + '</h4><p class="line">' + esc(t.oneLiner) + '</p>' +
+          '<span class="foot">' + freq(t.frequency) + '<span class="chip">' + t.mcqs.length + ' MCQ</span>' +
+          (t.theory.length ? '<span class="chip bad">' + t.theory.length + ' model answers</span>' : "") +
+          ((DIA[t.id]||[]).length ? '<span class="chip acc">' + DIA[t.id].length + ' diagrams</span>' : "") +
+          '<span class="chip">' + t.cards.length + ' cards</span></span></button>').join("") +
+        '</div></div>').join("") + '</div>';
   }
-  const groups = [...new Set(S.map(s => s.group))];
-  return `<p class="eyebrow">The library</p>
-    <h2 style="font-size:27px;margin-top:6px">Everything, ordered commonest first</h2>
-    ${statStrip()}
-    ${groups.map(g => `<div class="sec"><h3>${esc(g)}</h3>
-      <div class="grid">${S.filter(s => s.group === g).map(s => `<button class="card" data-sub="${s.id}">
-        <h3>${esc(s.title)}</h3><p>${esc(s.blurb)}</p>
-        <span class="foot"><span class="chip">${s.topics.length} topics</span>
-        <span class="chip">Paper ${s.papers.join(", ")}</span></span>
-      </button>`).join("")}</div></div>`).join("")}`;
+  const groups = [];
+  for (const s of S) if (groups.indexOf(s.group) < 0) groups.push(s.group);
+  return '<div class="hero"><p class="eyebrow mute">The library</p>' +
+      '<h2>Everything, ordered commonest first</h2>' +
+      '<p>Twenty subjects, each read the way the paper asks it: the definition that earns the first mark, the numbers that decide management, the red flags that force a referral today, and the model answer written out as it should appear in the answer book.</p>' +
+      '<div class="stats">' +
+        [[M.topics,"topics"],[M.theory,"model answers"],[M.mcqs,"MCQs"],[M.diagrams,"diagrams"],[M.cards,"flashcards"],[M.pastQuestions,"past questions"]]
+          .map(x => '<div class="stat"><b>' + x[0] + '</b><span>' + x[1] + '</span></div>').join("") +
+      '</div></div>' +
+    groups.map(g => '<div class="sec" style="--h:212"><h3><span class="n">' + S.filter(s=>s.group===g).length + '</span>' + esc(g) + '</h3>' +
+      '<div class="grid">' + S.filter(s => s.group === g).map(s =>
+        '<button class="subj" data-sub="' + s.id + '" style="--h:' + hueOf(s.id) + '">' +
+        '<h3>' + esc(s.title) + '</h3><p>' + esc(s.blurb) + '</p>' +
+        '<span class="foot"><span class="chip acc">' + s.topics.length + ' topics</span>' +
+        '<span class="chip">Paper ' + s.papers.join(", ") + '</span></span></button>').join("") +
+      '</div></div>').join("");
 }
 
 function viewTopic(){
-  const {t, s} = TOPIC.get(state.topic);
-  const sec = (h, inner) => `<div class="sec"><h3>${esc(h)}</h3>${inner}</div>`;
-  return `<div class="reader reading">
-    <button class="back" data-back="topic">&larr; ${esc(s.title)}</button>
-    <p class="eyebrow">${esc(s.title)}</p>
-    <h2 style="margin-top:7px">${esc(t.title)}</h2>
-    <p class="oneliner">${esc(t.oneLiner)}</p>
-    <div class="chips">${freq(t.frequency)}<span class="chip">Paper ${s.papers.join(", ")}</span></div>
-
-    ${t.sections.map(x => sec(x.heading, `<ul class="pts">${x.points.map(p => `<li>${bold(p)}</li>`).join("")}</ul>`)).join("")}
-
-    ${t.tables.map(tb => sec(tb.heading, `<div class="tbl"><table><thead><tr>${tb.columns.map(c => `<th>${esc(c)}</th>`).join("")}</tr></thead>
-      <tbody>${tb.rows.map(r => `<tr>${r.map(c => `<td>${bold(c)}</td>`).join("")}</tr>`).join("")}</tbody></table></div>`)).join("")}
-
-    ${t.redFlags.length ? `<div class="sec"><div class="flags"><p class="eyebrow">Refer or admit today</p>
-      <ul>${t.redFlags.map(f => `<li>${bold(f)}</li>`).join("")}</ul></div></div>` : ""}
-
-    ${t.theory.length ? `<div class="sec"><h3>Model answers</h3>
-      ${t.theory.map(q => `<details class="theory"><summary>
-        <span class="q">${esc(q.question)}</span><span class="m">${q.marks} marks</span></summary>
-        <div class="body">
-          <div class="chips" style="margin-bottom:13px">
-            <span class="chip">Paper ${q.paper}</span><span class="chip">${esc(q.kind.replace(/-/g," "))}</span>
-            <span class="chip">${q.minutes} min</span>${freq(q.frequency)}</div>
-          <p class="eyebrow">Open with this</p>
-          <div class="opening">${q.openingLines.map(l => `<p>${bold(l)}</p>`).join("")}</div>
-          ${q.answer.map(a => `<div style="margin-top:16px"><p class="eyebrow">${esc(a.heading)}</p>
-            <ul class="pts" style="margin-top:8px">${a.points.map(p => `<li>${bold(p)}</li>`).join("")}</ul></div>`).join("")}
-          ${q.mustDraw.length ? `<div class="flags" style="margin-top:16px;border-left-color:var(--band);background:transparent;border:1px dashed var(--rule)">
-            <p class="eyebrow">The examiner expects you to draw</p>
-            <ul>${q.mustDraw.map(d => `<li style="padding-left:0">${bold(d)}</li>`).join("")}</ul></div>` : ""}
-          ${q.markSplit.length ? `<div class="splits">${q.markSplit.map(m => `<div class="split"><span>${esc(m.part)}</span><b>${m.marks}</b></div>`).join("")}</div>` : ""}
-        </div></details>`).join("")}</div>` : ""}
-
-    ${t.pearls.length ? `<div class="sec"><div class="pearls"><p class="eyebrow">Worth memorising verbatim</p>
-      <ol>${t.pearls.map(p => `<li>${bold(p)}</li>`).join("")}</ol></div></div>` : ""}
-
-    ${t.mcqs.length ? `<div class="sec"><h3>Questions</h3>
-      <button class="btn" data-quiz="${t.id}">Drill these ${t.mcqs.length} questions</button></div>` : ""}
-
-    ${t.references.length ? sec("Sources", `<ul class="pts">${t.references.map(r => `<li>${esc(r)}</li>`).join("")}</ul>`) : ""}
-  </div>`;
+  const e = TOPIC.get(state.topic), t = e.t, s = e.s;
+  const dgs = DIA[t.id] || [];
+  let n = 0;
+  const sec = (h, inner) => '<div class="sec"><h3><span class="n">' +
+    String(++n).padStart(2,"0") + '</span>' + esc(h) + '</h3>' + inner + '</div>';
+  return '<div class="reader reading" style="--h:' + hueOf(s.id) + '">' +
+    '<button class="back" data-back="topic">&larr; ' + esc(s.title) + '</button>' +
+    '<p class="eyebrow">' + esc(s.title) + '</p>' +
+    '<h2 style="margin-top:8px">' + esc(t.title) + '</h2>' +
+    '<p class="oneliner">' + rich(t.oneLiner) + '</p>' +
+    '<div class="chips" style="margin-bottom:6px">' + freq(t.frequency) +
+      '<span class="chip acc">Paper ' + s.papers.join(", ") + '</span>' +
+      (dgs.length ? '<span class="chip acc">' + dgs.length + ' diagrams</span>' : "") +
+      '<span class="chip">' + t.mcqs.length + ' questions</span></div>' +
+    (dgs.length ? sec("At a glance", dgs.map(drawDiagram).join("")) : "") +
+    t.sections.map(x => sec(x.heading, '<ul class="pts">' + x.points.map(p => '<li>' + rich(p) + '</li>').join("") + '</ul>')).join("") +
+    t.tables.map(tb => sec(tb.heading, '<div class="tbl"><table><thead><tr>' +
+      tb.columns.map(c => '<th>' + esc(c) + '</th>').join("") + '</tr></thead><tbody>' +
+      tb.rows.map(r => '<tr>' + r.map(c => '<td>' + rich(c) + '</td>').join("") + '</tr>').join("") +
+      '</tbody></table></div>')).join("") +
+    (t.redFlags.length ? sec("Refer or admit today",
+      '<div class="panel bad"><div class="ph"><span class="eyebrow">Red flags</span></div><ul>' +
+      t.redFlags.map(f => '<li>' + rich(f) + '</li>').join("") + '</ul></div>') : "") +
+    (t.theory.length ? sec("Model answers", t.theory.map(q =>
+      '<details class="theory"><summary><span class="q">' + esc(q.question) + '</span>' +
+      '<span class="m">' + q.marks + '</span></summary><div class="body">' +
+      '<div class="chips" style="margin-bottom:14px"><span class="chip acc">Paper ' + q.paper + '</span>' +
+      '<span class="chip">' + esc(q.kind.replace(/-/g," ")) + '</span>' +
+      '<span class="chip">' + q.minutes + ' min</span>' + freq(q.frequency) + '</div>' +
+      '<p class="eyebrow">Open with this</p>' +
+      '<div class="opening" style="margin-top:8px">' + q.openingLines.map(l => '<p>' + rich(l) + '</p>').join("") + '</div>' +
+      q.answer.map(a => '<div style="margin-top:18px"><p class="eyebrow">' + esc(a.heading) + '</p>' +
+        '<ul class="pts" style="margin-top:9px">' + a.points.map(p => '<li>' + rich(p) + '</li>').join("") + '</ul></div>').join("") +
+      (q.mustDraw.length ? '<div class="panel gold" style="margin-top:18px"><div class="ph">' +
+        '<span class="eyebrow">The examiner expects a drawing</span></div><ul>' +
+        q.mustDraw.map(d => '<li>' + rich(d) + '</li>').join("") + '</ul></div>' : "") +
+      (q.markSplit.length ? '<div class="splits"><p class="eyebrow mute" style="margin-bottom:3px">Where the marks are</p>' +
+        q.markSplit.map(mk => '<div class="split"><span>' + esc(mk.part) + '</span><b>' + mk.marks + '</b>' +
+        '<span class="bar"><i style="--w:' + Math.round(mk.marks / q.marks * 100) + '%"></i></span></div>').join("") + '</div>' : "") +
+      '</div></details>').join("")) : "") +
+    (t.pearls.length ? sec("Worth memorising verbatim",
+      '<div class="panel gold"><div class="ph"><span class="eyebrow">Pearls</span></div><ol>' +
+      t.pearls.map(p => '<li>' + rich(p) + '</li>').join("") + '</ol></div>') : "") +
+    (t.mcqs.length ? sec("Test yourself", '<button class="btn" data-quiz="' + t.id + '">Drill these ' + t.mcqs.length + ' questions</button>') : "") +
+    (t.references.length ? sec("Sources", '<ul class="pts">' + t.references.map(r => '<li>' + esc(r) + '</li>').join("") + '</ul>') : "") +
+    '</div>';
 }
 
 function viewPapers(){
   const isSit = state.pyqView === "sitting";
   let items;
-  if (isSit) {
-    items = PYQ.papers.filter(q => state.pyqPaper === "all" || q.paper === state.pyqPaper);
-  } else {
+  if (isSit) items = PYQ.papers.filter(q => state.pyqPaper === "all" || q.paper === state.pyqPaper);
+  else {
     const g = {};
-    for (const q of PYQ.topicwise) (g[q.topicHeading] ||= []).push(q);
-    items = Object.entries(g).sort((a,b) => b[1].length - a[1].length);
-    if (state.pyqView === "repeat") items = items.filter(([,l]) => new Set(l.map(x => x.session)).size >= 3);
+    for (const q of PYQ.topicwise) { (g[q.topicHeading] = g[q.topicHeading] || []).push(q); }
+    items = Object.keys(g).map(k => [k, g[k]]).sort((a,b) => b[1].length - a[1].length);
+    if (state.pyqView === "repeat")
+      items = items.filter(x => new Set(x[1].map(q => q.session)).size >= 3);
   }
   const qCard = q => {
     const links = (PYQ.links[q.id] || []).map(id => TOPIC.get(id)).filter(Boolean);
-    return `<div class="row" style="cursor:default">
-      <p style="font-size:14.8px;line-height:1.6">${esc(q.question)}</p>
-      <span class="foot">
-        ${q.paper ? `<span class="chip">Paper ${q.paper}</span>` : ""}
-        <span class="chip">${esc(q.session)}</span>
-        ${q.marks ? `<span class="chip mark">${q.marks} marks</span>` : ""}
-      </span>
-      ${links.length ? `<span class="foot">${links.map(({t}) =>
-        `<button class="chip solid" data-topic="${t.id}">${esc(t.title)} &rarr;</button>`).join("")}</span>` : ""}
-    </div>`;
+    return '<div class="row" style="cursor:default">' +
+      '<p style="font-size:14.9px;line-height:1.6">' + esc(q.question) + '</p>' +
+      '<span class="foot">' + (q.paper ? '<span class="chip acc">Paper ' + q.paper + '</span>' : "") +
+        '<span class="chip">' + esc(q.session) + '</span>' +
+        (q.marks ? '<span class="chip bad">' + q.marks + ' marks</span>' : "") + '</span>' +
+      (links.length ? '<span class="foot">' + links.map(x =>
+        '<button class="chip solid" data-topic="' + x.t.id + '" style="--h:' + hueOf(x.s.id) + '">' +
+        esc(x.t.title) + ' &rarr;</button>').join("") + '</span>' : "") + '</div>';
   };
-  return `<p class="eyebrow">Your own question papers</p>
-    <h2 style="font-size:27px;margin-top:6px">${M.pastQuestions} past questions, every one linked to its answer</h2>
-    <p class="oneliner">${M.paperQuestions} from the June 2022 to June 2025 sittings, and ${M.topicwiseQuestions} filed by topic from 2011 to 2022.</p>
-    <div class="pills">
-      ${[["sitting","By sitting"],["topic","By topic"],["repeat","Repeaters"]].map(([k,l]) =>
-        `<button class="pill" aria-pressed="${state.pyqView===k}" data-pv="${k}">${l}</button>`).join("")}
-    </div>
-    ${isSit ? `<div class="pills">${["all","I","II","III","IV"].map(p =>
-      `<button class="pill" aria-pressed="${state.pyqPaper===p}" data-pp="${p}">${p==="all"?"All papers":"Paper "+p}</button>`).join("")}</div>` : ""}
-    ${isSit
-      ? `<p class="eyebrow" style="margin:14px 0 8px">${items.length} questions</p><div class="rows">${items.map(qCard).join("")}</div>`
-      : `<p class="eyebrow" style="margin:14px 0 8px">${items.length} topics</p>
-         ${items.map(([name,list]) => `<div class="sec"><h3>${esc(name)}
-           <span class="chip" style="float:right;margin-top:5px">${list.length} asked</span></h3>
-           <div class="rows">${list.map(qCard).join("")}</div></div>`).join("")}`}`;
+  return '<div style="--h:206"><div class="hero"><p class="eyebrow mute">Your own question papers</p>' +
+    '<h2>' + M.pastQuestions + ' past questions, every one linked to its answer</h2>' +
+    '<p>' + M.paperQuestions + ' from the June 2022 to June 2025 sittings, and ' + M.topicwiseQuestions +
+    ' filed by topic from 2011 to 2022. Every question carries a button to the topic that answers it.</p></div>' +
+    '<div class="pills">' + [["sitting","By sitting"],["topic","By topic"],["repeat","Repeaters"]].map(x =>
+      '<button class="pill" aria-pressed="' + (state.pyqView===x[0]) + '" data-pv="' + x[0] + '">' + x[1] + '</button>').join("") + '</div>' +
+    (isSit ? '<div class="pills">' + ["all","I","II","III","IV"].map(p =>
+      '<button class="pill" aria-pressed="' + (state.pyqPaper===p) + '" data-pp="' + p + '">' +
+      (p==="all" ? "All papers" : "Paper " + p) + '</button>').join("") + '</div>' : "") +
+    (isSit
+      ? '<p class="eyebrow mute" style="margin:16px 0 9px">' + items.length + ' questions</p><div class="rows">' + items.map(qCard).join("") + '</div>'
+      : '<p class="eyebrow mute" style="margin:16px 0 9px">' + items.length + ' topics</p>' +
+        items.map(x => '<div class="sec"><h3><span class="n">' + x[1].length + '</span>' + esc(x[0]) + '</h3>' +
+          '<div class="rows">' + x[1].map(qCard).join("") + '</div></div>').join("")) + '</div>';
 }
 
 function viewBank(){
   if (!state.quiz) {
-    return `<p class="eyebrow">Question bank</p>
-      <h2 style="font-size:27px;margin-top:6px">${M.mcqs} questions, each with the reasoning</h2>
-      <p class="oneliner">Every explanation says why the key is right and why the tempting wrong answer is tempting.</p>
-      <div class="grid" style="margin-top:22px">
-        <button class="card" data-quiz="all"><h3>Mixed paper</h3><p>30 questions drawn across all 20 subjects.</p></button>
-        ${S.map(s => `<button class="card" data-quiz="sub:${s.id}"><h3>${esc(s.title)}</h3>
-          <p>${s.topics.reduce((n,t)=>n+t.mcqs.length,0)} questions</p></button>`).join("")}
-      </div>`;
+    return '<div class="hero" style="--h:132"><p class="eyebrow mute">Question bank</p>' +
+      '<h2>' + M.mcqs + ' questions, each with the reasoning</h2>' +
+      '<p>Every explanation says why the key is right and why the tempting wrong answer is tempting.</p></div>' +
+      '<div class="grid"><button class="subj" data-quiz="all" style="--h:212"><h3>Mixed paper</h3>' +
+      '<p>Thirty questions drawn across all twenty subjects.</p></button>' +
+      S.map(s => '<button class="subj" data-quiz="sub:' + s.id + '" style="--h:' + hueOf(s.id) + '">' +
+        '<h3>' + esc(s.title) + '</h3><p>' + s.topics.reduce((n,t)=>n+t.mcqs.length,0) + ' questions</p></button>').join("") +
+      '</div>';
   }
-  const q = state.quiz.items[state.quiz.i];
-  const picked = state.quiz.picked;
-  const done = picked !== null;
-  return `<button class="back" data-back="bank">&larr; Question bank</button>
-    <div class="reading">
-      <div class="chips" style="margin-bottom:14px">
-        <span class="chip">${state.quiz.i+1} of ${state.quiz.items.length}</span>
-        <span class="chip">${esc(q.subjectTitle)}</span>
-        <span class="chip">${esc(q.difficulty)}</span>
-        <span class="chip mono">${state.quiz.score} right</span>
-      </div>
-      <p style="font-size:17px;line-height:1.6;margin-bottom:16px">${esc(q.stem)}</p>
-      ${q.options.map((o,i) => {
-        let cls = "opt";
-        if (done && i === q.answer) cls += " right";
-        else if (done && i === picked) cls += " wrong";
-        return `<button class="${cls}" data-opt="${i}" ${done?"disabled":""}>
-          <span class="lt">${String.fromCharCode(65+i)}</span><span>${esc(o)}</span></button>`;
-      }).join("")}
-      ${done ? `<div class="expl"><p class="eyebrow" style="margin-bottom:7px">${picked===q.answer?"Correct":"The key is "+String.fromCharCode(65+q.answer)}</p>
-        ${esc(q.explanation)}</div>
-        <div class="bar">
-          ${state.quiz.i+1 < state.quiz.items.length ? `<button class="btn" data-next="1">Next question</button>` : `<button class="btn" data-back="bank">Finish &mdash; ${state.quiz.score} of ${state.quiz.items.length}</button>`}
-          <button class="btn ghost" data-topic="${q.topicId}">Read the topic</button>
-        </div>` : ""}
-    </div>`;
+  const q = state.quiz.items[state.quiz.i], picked = state.quiz.picked, done = picked !== null;
+  return '<div style="--h:' + hueOf(q.subjectId) + '">' +
+    '<button class="back" data-back="bank">&larr; Question bank</button><div class="reading">' +
+    '<div class="chips" style="margin-bottom:16px">' +
+      '<span class="chip acc">' + (state.quiz.i+1) + ' of ' + state.quiz.items.length + '</span>' +
+      '<span class="chip">' + esc(q.subjectTitle) + '</span>' +
+      '<span class="chip">' + esc(q.difficulty) + '</span>' +
+      '<span class="chip' + (state.quiz.score ? " acc" : "") + '">' + state.quiz.score + ' right</span></div>' +
+    '<p style="font-size:17.5px;line-height:1.6;margin-bottom:18px">' + esc(q.stem) + '</p>' +
+    q.options.map((o,i) => {
+      let cls = "opt";
+      if (done && i === q.answer) cls += " right";
+      else if (done && i === picked) cls += " wrong";
+      return '<button class="' + cls + '" data-opt="' + i + '"' + (done ? " disabled" : "") + '>' +
+        '<span class="lt">' + String.fromCharCode(65+i) + '</span><span>' + esc(o) + '</span></button>';
+    }).join("") +
+    (done ? '<div class="expl"><p class="eyebrow" style="margin-bottom:8px;color:' +
+        (picked===q.answer ? "var(--good)" : "var(--danger)") + '">' +
+        (picked===q.answer ? "Correct" : "The key is " + String.fromCharCode(65+q.answer)) + '</p>' +
+        esc(q.explanation) + '</div><div class="bar-row">' +
+        (state.quiz.i+1 < state.quiz.items.length
+          ? '<button class="btn" data-next="1">Next question</button>'
+          : '<button class="btn" data-back="bank">Finish &mdash; ' + state.quiz.score + ' of ' + state.quiz.items.length + '</button>') +
+        '<button class="btn ghost" data-topic="' + q.topicId + '">Read the topic</button></div>' : "") +
+    '</div></div>';
 }
 
 function viewCards(){
   const pool = state.cardSub === "all" ? DATA.allCards : DATA.allCards.filter(c => c.subjectId === state.cardSub);
   const c = pool[state.card % pool.length];
-  return `<p class="eyebrow">Flashcards</p>
-    <h2 style="font-size:27px;margin-top:6px">${M.cards} cards</h2>
-    <select id="cardsub" style="margin:16px 0;max-width:340px">
-      <option value="all">Every subject (${DATA.allCards.length})</option>
-      ${S.map(s => `<option value="${s.id}" ${state.cardSub===s.id?"selected":""}>${esc(s.title)}</option>`).join("")}
-    </select>
-    <div class="reading">
-      <div class="fc">
-        <p class="eyebrow">${esc(c.subjectTitle)} &middot; card ${(state.card % pool.length)+1} of ${pool.length}</p>
-        <p class="front">${bold(c.front)}</p>
-        <p class="back">${bold(c.back)}</p>
-      </div>
-      <div class="bar"><button class="btn" data-card="1">Next card</button>
-        <button class="btn ghost" data-topic="${c.topicId}">Read the topic</button></div>
-    </div>`;
+  return '<div style="--h:' + hueOf(c.subjectId) + '"><p class="eyebrow mute">Flashcards</p>' +
+    '<h2 style="font-size:28px;margin:8px 0 4px">' + M.cards + ' cards</h2>' +
+    '<select id="cardsub" style="margin:16px 0;max-width:360px">' +
+    '<option value="all">Every subject (' + DATA.allCards.length + ')</option>' +
+    S.map(s => '<option value="' + s.id + '"' + (state.cardSub===s.id ? " selected" : "") + '>' + esc(s.title) + '</option>').join("") +
+    '</select><div class="reading"><div class="fc">' +
+    '<p class="eyebrow">' + esc(c.subjectTitle) + ' &middot; ' + ((state.card % pool.length)+1) + ' of ' + pool.length + '</p>' +
+    '<p class="front">' + rich(c.front) + '</p><p class="back">' + rich(c.back) + '</p></div>' +
+    '<div class="bar-row"><button class="btn" data-card="1">Next card</button>' +
+    '<button class="btn ghost" data-topic="' + c.topicId + '">Read the topic</button></div></div></div>';
 }
 
 function viewSearch(){
@@ -409,64 +550,77 @@ function viewSearch(){
   let out = "";
   if (q.length >= 2) {
     const hitT = [], hitQ = [], hitP = [];
-    for (const [id,{t,s}] of TOPIC) {
-      if (t.title.toLowerCase().includes(q) || t.oneLiner.toLowerCase().includes(q) || t.keywords.some(k => k.toLowerCase().includes(q)))
-        hitT.push({t,s});
-      if (hitT.length > 40) break;
-    }
+    TOPIC.forEach(e => {
+      if (hitT.length > 40) return;
+      const t = e.t;
+      if (t.title.toLowerCase().indexOf(q) >= 0 || t.oneLiner.toLowerCase().indexOf(q) >= 0 ||
+          t.keywords.some(k => k.toLowerCase().indexOf(q) >= 0)) hitT.push(e);
+    });
     for (const s of S) for (const t of s.topics) for (const m of t.mcqs) {
       if (hitQ.length > 25) break;
-      if (m.stem.toLowerCase().includes(q)) hitQ.push({m,t});
+      if (m.stem.toLowerCase().indexOf(q) >= 0) hitQ.push({m:m, t:t, s:s});
     }
     for (const p of PYQ.papers.concat(PYQ.topicwise)) {
       if (hitP.length > 25) break;
-      if (p.question.toLowerCase().includes(q)) hitP.push(p);
+      if (p.question.toLowerCase().indexOf(q) >= 0) hitP.push(p);
     }
-    const block = (title, inner, n) => n ? `<div class="sec"><h3>${title} <span class="chip" style="float:right;margin-top:5px">${n}</span></h3>${inner}</div>` : "";
-    out = block("Topics", `<div class="rows">${hitT.map(({t,s}) => `<button class="row" data-topic="${t.id}">
-        <h4>${esc(t.title)}</h4><p class="line">${esc(t.oneLiner)}</p>
-        <span class="foot"><span class="chip">${esc(s.title)}</span>${freq(t.frequency)}</span></button>`).join("")}</div>`, hitT.length)
-      + block("Questions", `<div class="rows">${hitQ.map(({m,t}) => `<button class="row" data-topic="${t.id}">
-        <p class="line" style="color:var(--ink)">${esc(m.stem)}</p>
-        <span class="foot"><span class="chip">${esc(t.title)}</span></span></button>`).join("")}</div>`, hitQ.length)
-      + block("Past questions", `<div class="rows">${hitP.map(p => `<div class="row" style="cursor:default">
-        <p class="line" style="color:var(--ink)">${esc(p.question)}</p>
-        <span class="foot"><span class="chip">${esc(p.session)}</span></span></div>`).join("")}</div>`, hitP.length);
-    if (!out) out = `<p class="empty">Nothing matches &ldquo;${esc(state.q)}&rdquo;.</p>`;
+    const block = (title, inner, n) => n ? '<div class="sec"><h3><span class="n">' + n + '</span>' + title + '</h3>' + inner + '</div>' : "";
+    out = block("Topics", '<div class="rows">' + hitT.map(e =>
+        '<button class="row" data-topic="' + e.t.id + '" style="--h:' + hueOf(e.s.id) + '">' +
+        '<h4>' + esc(e.t.title) + '</h4><p class="line">' + esc(e.t.oneLiner) + '</p>' +
+        '<span class="foot"><span class="chip acc">' + esc(e.s.title) + '</span>' + freq(e.t.frequency) + '</span></button>').join("") + '</div>', hitT.length)
+      + block("Questions", '<div class="rows">' + hitQ.map(x =>
+        '<button class="row" data-topic="' + x.t.id + '" style="--h:' + hueOf(x.s.id) + '">' +
+        '<p class="line" style="color:var(--ink);font-size:14.4px">' + esc(x.m.stem) + '</p>' +
+        '<span class="foot"><span class="chip acc">' + esc(x.t.title) + '</span></span></button>').join("") + '</div>', hitQ.length)
+      + block("Past questions", '<div class="rows">' + hitP.map(p =>
+        '<div class="row" style="cursor:default"><p class="line" style="color:var(--ink);font-size:14.4px">' +
+        esc(p.question) + '</p><span class="foot"><span class="chip">' + esc(p.session) + '</span></span></div>').join("") + '</div>', hitP.length);
+    if (!out) out = '<p class="empty">Nothing matches &ldquo;' + esc(state.q) + '&rdquo;.</p>';
   } else {
-    out = `<p class="empty">Type at least two letters. Search runs over every topic, every question and both question papers.</p>`;
+    out = '<p class="empty">Type at least two letters. Search runs over every topic, every question and both of your question papers.</p>';
   }
-  return `<p class="eyebrow">Search</p>
-    <h2 style="font-size:27px;margin:6px 0 16px">Across the whole library</h2>
-    <input type="search" id="q" placeholder="metformin, tet spell, PCPNDT, spinal anaesthesia&hellip;" value="${esc(state.q)}">
-    ${out}`;
+  return '<div style="--h:265"><p class="eyebrow mute">Search</p>' +
+    '<h2 style="font-size:28px;margin:8px 0 16px">Across the whole library</h2>' +
+    '<input type="search" id="q" placeholder="metformin, tet spell, PCPNDT, spinal anaesthesia&hellip;" value="' + esc(state.q) + '">' +
+    out + '</div>';
 }
 
 function render(){
-  for (const b of document.querySelectorAll(".mode")) b.setAttribute("aria-current", String(b.dataset.m === state.mode));
-  el.innerHTML = ({library:viewLibrary, papers:viewPapers, bank:viewBank, cards:viewCards, search:viewSearch})[state.mode]();
+  const views = {library:viewLibrary, papers:viewPapers, bank:viewBank, cards:viewCards, search:viewSearch};
+  const btns = document.querySelectorAll(".mode");
+  for (let i = 0; i < btns.length; i++) btns[i].setAttribute("aria-current", String(btns[i].dataset.m === state.mode));
+  el.innerHTML = views[state.mode]();
   const q = document.getElementById("q");
-  if (q) { q.focus(); q.setSelectionRange(q.value.length, q.value.length);
-    q.oninput = e => { state.q = e.target.value; const p = e.target.selectionStart; render();
-      const n = document.getElementById("q"); if (n) { n.focus(); n.setSelectionRange(p,p); } }; }
+  if (q) {
+    q.focus(); q.setSelectionRange(q.value.length, q.value.length);
+    q.oninput = ev => {
+      state.q = ev.target.value;
+      const pos = ev.target.selectionStart;
+      render();
+      const n = document.getElementById("q");
+      if (n) { n.focus(); n.setSelectionRange(pos, pos); }
+    };
+  }
   const cs = document.getElementById("cardsub");
-  if (cs) cs.onchange = e => go({cardSub:e.target.value, card:0});
+  if (cs) cs.onchange = ev => go({cardSub:ev.target.value, card:0});
 }
 
+const shuffle = a => { a = a.slice(); for (let i=a.length-1;i>0;i--){ const j = Math.floor(Math.random()*(i+1)); const x=a[i]; a[i]=a[j]; a[j]=x; } return a; };
 function startQuiz(spec){
   let pool = [];
-  const push = (t,s) => { for (const m of t.mcqs) pool.push({...m, topicId:t.id, subjectTitle:s.title}); };
+  const push = (t,s) => { for (const m of t.mcqs) pool.push(Object.assign({}, m, {topicId:t.id, subjectId:s.id, subjectTitle:s.title})); };
   if (spec === "all") { for (const s of S) for (const t of s.topics) push(t,s); pool = shuffle(pool).slice(0,30); }
-  else if (spec.startsWith("sub:")) { const s = S.find(x => x.id === spec.slice(4)); for (const t of s.topics) push(t,s); pool = shuffle(pool).slice(0,30); }
-  else { const {t,s} = TOPIC.get(spec); push(t,s); }
+  else if (spec.indexOf("sub:") === 0) { const s = S.find(x => x.id === spec.slice(4)); for (const t of s.topics) push(t,s); pool = shuffle(pool).slice(0,30); }
+  else { const e = TOPIC.get(spec); push(e.t, e.s); }
   go({mode:"bank", quiz:{items:pool, i:0, picked:null, score:0}});
 }
-const shuffle = a => { a = a.slice(); for (let i=a.length-1;i>0;i--){ const j = Math.floor(Math.random()*(i+1)); [a[i],a[j]]=[a[j],a[i]]; } return a; };
 
-document.addEventListener("click", e => {
-  const t = e.target.closest("[data-topic],[data-sub],[data-quiz],[data-back],[data-opt],[data-next],[data-pv],[data-pp],[data-card]");
+document.addEventListener("click", ev => {
+  const t = ev.target.closest("[data-m],[data-topic],[data-sub],[data-quiz],[data-back],[data-opt],[data-next],[data-pv],[data-pp],[data-card]");
   if (!t) return;
   const d = t.dataset;
+  if (d.m) return go({mode:d.m, sub:null, topic:null, quiz:null, q:""});
   if (d.topic) return go({mode:"library", sub:TOPIC.get(d.topic).s.id, topic:d.topic, quiz:null});
   if (d.sub) return go({sub:d.sub, topic:null});
   if (d.quiz) return startQuiz(d.quiz);

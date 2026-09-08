@@ -14,9 +14,11 @@ import { ensureAll, subjects } from "../src/content/index";
 import { PAPER_QUESTIONS } from "../src/pyq/papers.generated";
 import { TOPICWISE_QUESTIONS } from "../src/pyq/topicwise.generated";
 import { linksFor } from "../src/pyq/link";
+import { diagramsByTopic } from "../src/diagrams/index";
 
 await ensureAll();
 const S = subjects();
+const diagrams = await diagramsByTopic();
 
 // Fields the page reads, with the optional ones defaulted so the renderer never
 // has to guard. Nothing is dropped: this is the library, not a sample of it.
@@ -73,7 +75,9 @@ const data = {
     paperQuestions: PAPER_QUESTIONS.length,
     topicwiseQuestions: TOPICWISE_QUESTIONS.length,
     pastQuestions: PAPER_QUESTIONS.length + TOPICWISE_QUESTIONS.length,
+    diagrams: Object.values(diagrams).reduce((n, d) => n + d.length, 0),
   },
+  diagrams,
   subjects: packed,
   allCards,
   pyq: {
@@ -97,5 +101,5 @@ writeFileSync("dist-single/fm-prep.html", html);
 console.log(
   `fm-prep.html  ${(html.length / 1048576).toFixed(2)} MB  ` +
     `(${data.meta.topics} topics, ${data.meta.mcqs} mcqs, ${data.meta.cards} cards, ` +
-    `${data.meta.pastQuestions} past questions, ${Object.keys(links).length} linked)`,
+    `${data.meta.diagrams} diagrams, ${data.meta.pastQuestions} past questions, ${Object.keys(links).length} linked)`,
 );
