@@ -3535,7 +3535,7 @@ topics.push({
       ],
       answer: 1,
       explanation:
-        "An apnoea requires a drop in airflow of at least 90% for at least 10 seconds; it is called obstructive when respiratory effort continues against a closed airway. Option 1 is the definition of a hypopnoea, not an apnoea. Option 3 uses invented thresholds - neither the 50% fall nor the 20-second duration is a scoring rule. Option 4 describes a central apnoea, where effort is absent because the drive itself has stopped.",
+        "An apnoea requires a drop in airflow of at least 90% for at least 10 seconds; it is called obstructive when respiratory effort continues against a closed airway. Option A is the definition of a hypopnoea, not an apnoea. Option C uses invented thresholds - neither the 50% fall nor the 20-second duration is a scoring rule. Option D describes a central apnoea, where effort is absent because the drive itself has stopped.",
       difficulty: "moderate",
     },
     {
@@ -3558,7 +3558,7 @@ topics.push({
       ],
       answer: 2,
       explanation:
-        "STOP-BANG bands are 0-2 low, 3-4 intermediate and 5-8 high risk; a high score identifies who needs testing and who needs perioperative caution. Option 1 confuses risk stratification with diagnosis - a screening tool with high sensitivity and modest specificity cannot confirm anything. Option 2 is wrong because the diagnosis and the AHI still require a sleep study; a high pre-test probability permits a home study, not no study. Option 4 is wrong because severity is graded only by the AHI from polysomnography, not by any questionnaire.",
+        "STOP-BANG bands are 0-2 low, 3-4 intermediate and 5-8 high risk; a high score identifies who needs testing and who needs perioperative caution. Option A confuses risk stratification with diagnosis - a screening tool with high sensitivity and modest specificity cannot confirm anything. Option B is wrong because the diagnosis and the AHI still require a sleep study; a high pre-test probability permits a home study, not no study. Option D is wrong because severity is graded only by the AHI from polysomnography, not by any questionnaire.",
       difficulty: "easy",
     },
     {

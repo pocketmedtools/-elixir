@@ -101,6 +101,23 @@ section("MCQ bank");
     if (/all of the above|none of the above/i.test(mcq.options.join(" ")))
       warn(`${mcq.id}: uses an "all/none of the above" option`);
     if (!["easy", "moderate", "hard"].includes(mcq.difficulty)) fail(`${mcq.id}: bad difficulty`);
+
+    // The quiz screen labels the choices A, B, C, D. An explanation that says
+    // "option 1" is pointing at something the reader cannot see, and one that
+    // argues against the option it just marked correct contradicts itself.
+    //
+    // "The option 400% is the relative risk misread" names a choice by its
+    // content, which is better than any label — so a number only counts as a
+    // label when it stands alone as the subject of the sentence.
+    if (/\b[Oo]ptions?\s+[1-5](?!\d)(?=[.,;:)]|\s+(?:is|are|was|were|and\s+[1-5]\b))/.test(mcq.explanation))
+      fail(`${mcq.id}: explanation refers to a numbered option, but the screen labels them A-E`);
+    for (const m of mcq.explanation.matchAll(/\b[Oo]ptions?\s+\(?([A-E])\)?\b/g)) {
+      const index = m[1].charCodeAt(0) - 65;
+      if (index >= mcq.options.length)
+        fail(`${mcq.id}: explanation names option ${m[1]}, but there are only ${mcq.options.length}`);
+      else if (index === mcq.answer)
+        fail(`${mcq.id}: explanation argues against option ${m[1]}, which is the key`);
+    }
   }
   console.log(`mcqs: ${ids.size}`);
 }

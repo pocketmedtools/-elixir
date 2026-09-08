@@ -3607,7 +3607,7 @@ topics.push({
       options: ["8.0 to 16.0 g/dL", "11.8 to 12.2 g/dL", "11.6 to 12.4 g/dL", "10.0 to 14.0 g/dL"],
       answer: 2,
       explanation:
-        "The standard error of the mean is SD divided by the square root of n = 2.0 divided by 10 = 0.2 g/dL. The 95% confidence interval is the mean plus or minus 1.96 standard errors = 12.0 plus or minus (1.96 x 0.2) = 12.0 plus or minus 0.39, that is about 11.6 to 12.4 g/dL. Option 1 (8.0 to 16.0) is mean plus or minus 2 SD, which is the range containing 95% of individuals, not the confidence interval of the mean - this is the classic trap. Option 4 (10.0 to 14.0) is mean plus or minus 1 SD wrongly doubled and covers only about 68% of individuals. Option 2 is mean plus or minus 1 SEM, which corresponds to roughly 68% confidence, not 95%.",
+        "The standard error of the mean is SD divided by the square root of n = 2.0 divided by 10 = 0.2 g/dL. The 95% confidence interval is the mean plus or minus 1.96 standard errors = 12.0 plus or minus (1.96 x 0.2) = 12.0 plus or minus 0.39, that is about 11.6 to 12.4 g/dL. Option A (8.0 to 16.0) is mean plus or minus 2 SD, which is the range containing 95% of individuals, not the confidence interval of the mean - this is the classic trap. Option D (10.0 to 14.0) is mean plus or minus 1 SD wrongly doubled and covers only about 68% of individuals. Option B is mean plus or minus 1 SEM, which corresponds to roughly 68% confidence, not 95%.",
       difficulty: "hard",
     },
     {
@@ -3630,7 +3630,7 @@ topics.push({
       ],
       answer: 2,
       explanation:
-        "Incidence uses only new cases in the numerator and only the population at risk in the denominator. The population at risk excludes the 250 who already have the disease, so it is 5000 - 250 = 4750, and the incidence is 100/4750 = 0.021, that is about 2.1% per year (21 per 1000 per year). Option 1 (5%) is the point prevalence on 1 January, 250/5000, which measures existing burden and not new risk. Option 2 (2%) is the common error of dividing the 100 new cases by the whole population of 5000 without removing those already affected. Option 4 (7%) adds old and new cases over the whole population, which gives the period prevalence, not the incidence.",
+        "Incidence uses only new cases in the numerator and only the population at risk in the denominator. The population at risk excludes the 250 who already have the disease, so it is 5000 - 250 = 4750, and the incidence is 100/4750 = 0.021, that is about 2.1% per year (21 per 1000 per year). Option A (5%) is the point prevalence on 1 January, 250/5000, which measures existing burden and not new risk. Option B (2%) is the common error of dividing the 100 new cases by the whole population of 5000 without removing those already affected. Option D (7%) adds old and new cases over the whole population, which gives the period prevalence, not the incidence.",
       difficulty: "hard",
     },
     {

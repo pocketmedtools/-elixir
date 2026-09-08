@@ -11,6 +11,8 @@
     "preview": "vite preview",
     "verify": "tsx scripts/verifyContent.ts",
     "gaps": "tsx scripts/gaps.ts",
+    "digest": "tsx scripts/reviewDigest.ts",
+    "keys": "tsx scripts/checkMcqKeys.ts",
     "merge": "node scripts/mergePending.mjs",
     "smoke": "node scripts/smoke.mjs",
     "status": "bash scripts/status.sh"

@@ -778,7 +778,7 @@ topics.push({
       options: ["No AKI, because the creatinine has risen by less than 50%", "Stage 1", "Stage 2", "Stage 3"],
       answer: 2,
       explanation:
-        "Her urine output is 260 mL in 14 hours, or 18.6 mL/h, which for 60 kg is 0.31 mL/kg/h - below 0.5 mL/kg/h for 12 hours or more, which is the stage 2 urine output criterion. Her creatinine rise of exactly 0.3 mg/dL within 48 hours qualifies her only for stage 1, and because staging uses whichever criterion is worse, she is stage 2. Option 1 is wrong because an absolute rise of 0.3 mg/dL in 48 hours is itself diagnostic of AKI, whatever the percentage change. Option 2 as a final answer would be right only if the urine output were ignored, which is the error being tested. Option 4 is wrong because stage 3 needs urine output below 0.3 mL/kg/h for 24 hours or anuria for 12 hours, and 14 hours at 0.31 mL/kg/h does not reach either threshold.",
+        "Her urine output is 260 mL in 14 hours, or 18.6 mL/h, which for 60 kg is 0.31 mL/kg/h - below 0.5 mL/kg/h for 12 hours or more, which is the stage 2 urine output criterion. Her creatinine rise of exactly 0.3 mg/dL within 48 hours qualifies her only for stage 1, and because staging uses whichever criterion is worse, she is stage 2. Option A is wrong because an absolute rise of 0.3 mg/dL in 48 hours is itself diagnostic of AKI, whatever the percentage change. Option B as a final answer would be right only if the urine output were ignored, which is the error being tested. Option D is wrong because stage 3 needs urine output below 0.3 mL/kg/h for 24 hours or anuria for 12 hours, and 14 hours at 0.31 mL/kg/h does not reach either threshold.",
       difficulty: "hard",
     },
     {
@@ -815,7 +815,7 @@ topics.push({
       ],
       answer: 1,
       explanation:
-        "Volume expansion with isotonic saline, contrast minimisation and withdrawal of nephrotoxins is the only strategy that survives the evidence. The PRESERVE trial randomised more than 5000 high-risk patients and found no benefit from either N-acetylcysteine or sodium bicarbonate over saline, which is why options 1 and 3 are wrong even though both were once routine. Prophylactic dialysis after contrast does not prevent injury, exposes the patient to catheter and haemodynamic risk, and removes the contrast far too late to matter. Note also that metformin is withheld at the time of contrast when the eGFR is below 30 and for 48 hours afterwards.",
+        "Volume expansion with isotonic saline, contrast minimisation and withdrawal of nephrotoxins is the only strategy that survives the evidence. The PRESERVE trial randomised more than 5000 high-risk patients and found no benefit from either N-acetylcysteine or sodium bicarbonate over saline, which is why options A and C are wrong even though both were once routine. Prophylactic dialysis after contrast does not prevent injury, exposes the patient to catheter and haemodynamic risk, and removes the contrast far too late to matter. Note also that metformin is withheld at the time of contrast when the eGFR is below 30 and for 48 hours afterwards.",
       difficulty: "moderate",
     },
     {

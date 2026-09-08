@@ -12,3 +12,7 @@ web/dist/
 .env.*
 !.env.example
 web/android/keystore/
+
+# Generated review digests — regenerate with `npm run digest`
+fmprep/review/*.md
+!fmprep/review/README.md
