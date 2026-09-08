@@ -331,3 +331,61 @@ not a list of known errors.
 - **Chronic kidney disease of unknown aetiology and heat.** Stated as "thought
   to be driven partly by" — the heat-stress hypothesis for Uddanam is plausible
   but not settled.
+
+## infectious-fever-hiv-art
+
+- **Second-line regimen after TLD failure.** NACO's chart has moved over
+  successive editions (atazanavir/r and lopinavir/r historically, darunavir/r in
+  newer guidance), so the text says "a ritonavir-boosted protease inhibitor
+  (atazanavir, lopinavir or darunavir, per the current NACO chart)" rather than
+  naming one.
+- **Paediatric dolutegravir weight bands.** The 5/15/20/25/30/50 mg ladder is
+  WHO's, hedged with "about" and paired with an instruction to check the current
+  NACO paediatric chart at every weight gain, since NACO's bands were revised as
+  paediatric dolutegravir rolled out.
+- **PEP when the source is documented and sustainedly suppressed.** Genuinely
+  divergent: some authorities omit prophylaxis, most Indian centres still give it
+  for a deep percutaneous injury. Stated as a divergence, not a rule.
+- **PrEP in India.** Not a universal national programme; it runs through targeted
+  interventions and demonstration projects for key populations, and this is
+  moving — written as "check local availability before promising it".
+- **Cotrimoxazole stop threshold.** WHO permits discontinuation at a different
+  threshold in low-malaria, low-mortality settings; NACO keeps CD4 350. Both
+  stated, NACO followed.
+- **Cryptococcal meningitis induction.** WHO 2022 prefers single high-dose
+  liposomal amphotericin B with flucytosine, but neither is reliably available in
+  India, so amphotericin B deoxycholate with high-dose fluconazole is given as
+  the practical Indian induction, with the reason stated.
+- **Preconception folic acid.** 400 microgram, with 5 mg reserved for the usual
+  high-risk indications. Some centres still give 5 mg to every woman on
+  dolutegravir as a legacy of the Tsepamo neural-tube signal, which longer
+  follow-up did not confirm; the text notes the signal was not confirmed but does
+  not adopt 5 mg for all.
+- **Non-occupational PEP follow-up window.** NACO uses 6 weeks / 3 months /
+  6 months; some international guidance shortens this to 4 months with
+  fourth-generation assays. Both noted, NACO followed.
+
+## preventive-sex-ratio-pcpndt
+
+- **NFHS-5 overall household sex ratio (1020).** Stated explicitly, with the
+  disagreement against the census figure of 943 explained (de facto usual
+  residents, male out-migration). This figure is widely misquoted as evidence
+  that India now has more women than men, so the wording is worth a second
+  opinion.
+- **SRS sex ratio at birth of about 907 (2018–20)** given as "about": the SRS
+  series is a three-year moving average and the exact figure shifts between
+  report editions.
+- **Appropriate Authority composition.** The Act's district-level Authority is a
+  single officer (Civil Surgeon, CMO or DHO) while the state-level one is a
+  three-member body. Said explicitly, because some textbooks blur this.
+- **Advisory Committee chairperson.** The Act names an eminent person from the
+  field as chairperson with the Appropriate Authority as ex-officio member
+  secretary; a few Indian texts write this differently, and the Act's version is
+  the one used.
+- **The 106th Constitutional Amendment (women's reservation, 2023)** and the
+  pending age-of-marriage-to-21 bill post-date Park's 27th edition; the latter is
+  flagged as pending rather than enacted.
+- **The Section 25 fine (Rs 1000, and Rs 500 a day)** and the **Form F monthly
+  return by the 5th** come from the Rules rather than the body of the Act.
+  Correct as far as could be established, but these are the details most often
+  paraphrased loosely in Indian preventive medicine texts.
