@@ -9,32 +9,86 @@ import type { ReactNode } from "react";
 import type { Frequency, NoteSection, NoteTable } from "../lib/types";
 import { FREQUENCY_LABEL } from "../lib/types";
 
-/** Render a point that may contain **bold** runs. */
+/**
+ * The units the library actually writes. Matching these rather than any digit
+ * is what lets a dose be picked out while an ordinary number - "a grade 2 of 6
+ * murmur" - is left as prose.
+ */
+const QUANTITY =
+  /(\d[\d.,]*(?:\s*(?:-|to)\s*\d[\d.,]*)?\s*(?:micrograms?\/kg\/day|micrograms?\/kg\/min|micrograms?\/kg|mg\/kg\/day|mg\/kg\/dose|mcg\/kg\/min|mcg\/kg\/day|mL\/kg\/h|mg\/kg|mcg\/kg|mg\/dL|g\/dL|mmol\/L|mEq\/kg|mEq\/L|mL\/min|mg\/day|IU\b|units?\b|mg\b|mcg\b|micrograms?\b|mL\b|kg\b|mmHg|cmH2O|%|per 1000|per 100000|degrees C|weeks?\b|days?\b|hours?\b|minutes?\b|months?\b|years?\b))/g;
+
+/** Split a run of plain text so every quantity in it becomes its own chip. */
+function withQuantities(text: string, keyBase: string): ReactNode[] {
+  return text.split(QUANTITY).map((piece, i) =>
+    i % 2 === 1 ? (
+      <b key={`${keyBase}-q${i}`} className="num">
+        {piece}
+      </b>
+    ) : (
+      <span key={`${keyBase}-t${i}`}>{piece}</span>
+    ),
+  );
+}
+
+/**
+ * A point that may contain **bold** runs.
+ *
+ * The authors used bold for the lines that decide management, so those are
+ * marked with a highlighter rather than merely emboldened, and every dose,
+ * cut-off and interval is set apart so the numbers can be found at a glance.
+ */
 export function RichText({ text }: { text: string }) {
   const parts = text.split(/(\*\*[^*]+\*\*)/g).filter((p) => p !== "");
   return (
     <>
       {parts.map((part, i) =>
         part.startsWith("**") && part.endsWith("**") ? (
-          <strong key={i} className="font-bold text-slate-900">
-            {part.slice(2, -2)}
-          </strong>
+          <mark key={i} className="hl">
+            {withQuantities(part.slice(2, -2), `b${i}`)}
+          </mark>
         ) : (
-          <span key={i}>{part}</span>
+          <span key={i}>{withQuantities(part, `p${i}`)}</span>
         ),
       )}
     </>
   );
 }
 
-export function SectionBlock({ section, id }: { section: NoteSection; id?: string }) {
+export function SectionBlock({
+  section,
+  id,
+  index,
+}: {
+  section: NoteSection;
+  id?: string;
+  /** Position in the topic, shown as a badge so the page has a spine to scan. */
+  index?: number;
+}) {
   return (
-    <section id={id} className="mt-6 scroll-mt-20 first:mt-0">
-      <h3 className="text-base font-bold tracking-tight text-slate-900">{section.heading}</h3>
-      <ul className="mt-2 space-y-2">
+    <section id={id} className="mt-8 scroll-mt-20 first:mt-0">
+      <h3
+        className="flex items-baseline gap-2.5 pb-2 text-lg font-bold tracking-tight text-slate-900"
+        style={{ borderBottom: "2px solid var(--acc-rule)" }}
+      >
+        {index !== undefined && (
+          <span
+            aria-hidden
+            className="shrink-0 rounded px-1.5 py-1 font-mono text-[11px] leading-none text-white"
+            style={{ background: "var(--acc)" }}
+          >
+            {String(index).padStart(2, "0")}
+          </span>
+        )}
+        {section.heading}
+      </h3>
+      <ul className="mt-3 space-y-2.5">
         {section.points.map((point, i) => (
-          <li key={i} className="flex gap-2 leading-relaxed">
-            <span aria-hidden className="mt-[0.55em] h-1.5 w-1.5 shrink-0 rounded-full bg-slate-400" />
+          <li key={i} className="flex gap-2.5 leading-relaxed">
+            <span
+              aria-hidden
+              className="mt-[0.5em] h-[7px] w-[7px] shrink-0 rounded-sm opacity-60"
+              style={{ background: "var(--acc)" }}
+            />
             <span>
               <RichText text={point} />
             </span>
@@ -50,13 +104,18 @@ export function TableBlock({ table }: { table: NoteTable }) {
     <section className="mt-6">
       <h3 className="text-base font-bold tracking-tight text-slate-900">{table.heading}</h3>
       <div className="mt-2 -mx-3 overflow-x-auto px-3">
-        <table className="w-full min-w-[34rem] border-collapse text-left text-sm">
+        <table className="w-full min-w-[34rem] overflow-hidden rounded-lg border-collapse text-left text-sm">
           <thead>
             <tr>
               {table.columns.map((c, i) => (
                 <th
                   key={i}
-                  className="border-b-2 border-slate-300 pb-1.5 pr-3 align-bottom font-bold text-slate-900"
+                  className="px-3 py-2 text-left align-bottom font-mono text-[10.5px] font-semibold uppercase tracking-wider"
+                  style={{
+                    color: "var(--acc)",
+                    background: "var(--wash)",
+                    borderBottom: "1px solid var(--acc-rule)",
+                  }}
                 >
                   {c}
                 </th>
@@ -65,9 +124,12 @@ export function TableBlock({ table }: { table: NoteTable }) {
           </thead>
           <tbody>
             {table.rows.map((row, ri) => (
-              <tr key={ri} className="align-top">
+              <tr key={ri} className={`align-top ${ri % 2 ? "bg-[var(--sunk)]" : ""}`}>
                 {row.map((cell, ci) => (
-                  <td key={ci} className="border-b border-slate-200 py-2 pr-3 leading-snug">
+                  <td
+                    key={ci}
+                    className={`border-b border-slate-200 px-3 py-2 leading-snug ${ci === 0 ? "font-semibold" : ""}`}
+                  >
                     <RichText text={cell} />
                   </td>
                 ))}

@@ -49,3 +49,55 @@ body {
     display: none !important;
   }
 }
+
+/* ---------------------------------------------------------------
+   Subject colour. One hue per subject, set on the reader root as
+   --h, with the accent family derived from it. Declared here on
+   bare :root so a component never depends on a token that only
+   exists inside a media query.
+   --------------------------------------------------------------- */
+:root {
+  --h: 210;
+  --acc: hsl(var(--h) 58% 34%);
+  --acc-hi: hsl(var(--h) 62% 44%);
+  --wash: hsl(var(--h) 62% 96%);
+  --wash-2: hsl(var(--h) 50% 92%);
+  --acc-rule: hsl(var(--h) 34% 82%);
+  --hl: hsl(var(--h) 88% 84%);
+  --sunk: #eff1f4;
+}
+
+/* The highlighter: a **bold** run in the content is a line that decides
+   management, so it is marked rather than merely emboldened. */
+mark.hl {
+  background: var(--hl);
+  color: var(--ink);
+  font-weight: 650;
+  padding: 0.06em 0.22em;
+  border-radius: 2px;
+  box-decoration-break: clone;
+  -webkit-box-decoration-break: clone;
+}
+
+/* A measured quantity, so doses and cut-offs leave the line of prose. */
+b.num {
+  font-family: ui-monospace, "SF Mono", Menlo, Consolas, monospace;
+  font-weight: 600;
+  font-variant-numeric: tabular-nums;
+  color: var(--acc);
+  white-space: nowrap;
+}
+
+/* Flow-chart connectors, drawn with borders rather than SVG so they
+   inherit the subject hue and reflow on a phone. */
+.flowchart > * + * { margin-top: 1.375rem; position: relative; }
+.flowchart > * + *::before {
+  content: ""; position: absolute; left: 50%; top: -1.375rem;
+  height: 1.375rem; width: 2px; background: var(--acc-rule);
+}
+.flowchart > * + *::after {
+  content: ""; position: absolute; left: 50%; top: -0.55rem;
+  width: 7px; height: 7px;
+  border-right: 2px solid var(--acc-rule); border-bottom: 2px solid var(--acc-rule);
+  transform: translateX(-50%) rotate(45deg);
+}

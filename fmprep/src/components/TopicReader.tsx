@@ -7,7 +7,7 @@
  * never open — the long material is simply further down the page.
  */
 import { useEffect, useMemo, useRef, useState, useSyncExternalStore } from "react";
-import { getTopic, neighbours } from "../content/index";
+import { getTopic, neighbours, subjectIdForTopic } from "../content/index";
 import {
   getVersion,
   isBookmarked,
@@ -19,6 +19,10 @@ import {
 } from "../lib/store";
 import { BackBar, Callout, Chip, FrequencyChip, SectionBlock, TableBlock, RichText } from "./ui";
 import TheoryAnswer from "./TheoryAnswer";
+import DiagramBlock from "./DiagramBlock";
+import { ensureDiagrams } from "../diagrams/index";
+import { SUBJECT_HUE } from "../lib/hues";
+import type { Diagram } from "../lib/types";
 
 function slug(text: string, i: number): string {
   return `sec-${i}-${text.toLowerCase().replace(/[^a-z0-9]+/g, "-").slice(0, 32)}`;
@@ -40,6 +44,7 @@ export default function TopicReader({
   const { readerScale, readerSerif } = getState().settings;
   const [openTheory, setOpenTheory] = useState<string | null>(null);
   const [showAnswers, setShowAnswers] = useState<Record<string, boolean>>({});
+  const [diagrams, setDiagrams] = useState<Diagram[]>([]);
   const topRef = useRef<HTMLDivElement | null>(null);
 
   useEffect(() => {
@@ -47,6 +52,19 @@ export default function TopicReader({
     topRef.current?.scrollIntoView({ block: "start" });
     setOpenTheory(null);
     setShowAnswers({});
+  }, [topicId]);
+
+  // Diagrams live in their own chunk, so a topic that has none costs nothing.
+  useEffect(() => {
+    let live = true;
+    const subjectId = subjectIdForTopic(topicId);
+    if (!subjectId) return;
+    ensureDiagrams(subjectId).then((set) => {
+      if (live) setDiagrams(set[topicId] ?? []);
+    });
+    return () => {
+      live = false;
+    };
   }, [topicId]);
 
   const near = useMemo(() => neighbours(topicId), [topicId]);
@@ -66,7 +84,12 @@ export default function TopicReader({
   return (
     <div
       className="mx-auto max-w-3xl px-3 py-5 md:px-6"
-      style={{ fontSize: `${readerScale}rem`, fontFamily: readerSerif ? 'Georgia, "Times New Roman", serif' : undefined }}
+      style={{
+        fontSize: `${readerScale}rem`,
+        fontFamily: readerSerif ? 'Georgia, "Times New Roman", serif' : undefined,
+        // Everything below takes its colour from the subject.
+        ["--h" as string]: String(SUBJECT_HUE[subjectIdForTopic(topicId) ?? ""] ?? 210),
+      }}
     >
       <div ref={topRef} />
       <BackBar
@@ -137,8 +160,28 @@ export default function TopicReader({
       )}
 
       <article className="mt-2">
+        {diagrams.length > 0 && (
+          <section className="mt-6">
+            <h3
+              className="flex items-baseline gap-2.5 pb-2 text-lg font-bold tracking-tight text-slate-900"
+              style={{ borderBottom: "2px solid var(--acc-rule)" }}
+            >
+              <span
+                aria-hidden
+                className="shrink-0 rounded px-1.5 py-1 font-mono text-[11px] leading-none text-white"
+                style={{ background: "var(--acc)" }}
+              >
+                00
+              </span>
+              At a glance
+            </h3>
+            {diagrams.map((d, i) => (
+              <DiagramBlock key={i} diagram={d} />
+            ))}
+          </section>
+        )}
         {topic.sections.map((section, i) => (
-          <SectionBlock key={i} section={section} id={slug(section.heading, i)} />
+          <SectionBlock key={i} section={section} id={slug(section.heading, i)} index={i + 1} />
         ))}
         {(topic.tables ?? []).map((table, i) => (
           <TableBlock key={i} table={table} />
