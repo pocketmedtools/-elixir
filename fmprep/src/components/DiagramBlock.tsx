@@ -114,7 +114,7 @@ export default function DiagramBlock({ diagram }: { diagram: Diagram }) {
           </div>
         </div>
         <div className="mx-auto h-[18px] w-0.5" style={{ background: "var(--acc-rule)" }} />
-        <div className="grid gap-2.5 [grid-template-columns:repeat(auto-fit,minmax(160px,1fr))]">
+        <div className="grid items-start gap-2.5 gap-y-5 [grid-template-columns:repeat(auto-fit,minmax(160px,1fr))]">
           {diagram.arms.map((arm, i) => {
             const tone = TONE[arm.tone ?? "neutral"];
             return (
