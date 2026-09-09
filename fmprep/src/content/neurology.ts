@@ -2246,7 +2246,7 @@ topics.push({
         "With nausea, vomiting, spontaneous nystagmus, head-motion intolerance and unsteadiness. [TiTrATE 2015]",
         "Most cases are vestibular neuritis, but **up to a quarter are a cerebellar or brainstem infarct**. [HINTS Stroke 2009]",
         "**About half of those infarcts have no other neurological sign**. [HINTS Stroke 2009]",
-        "**HINTS is a three-step oculomotor examination: **Head Impulse, Nystagmus, Test of Skew**. [HINTS Stroke 2009]",
+        "HINTS is a three-step oculomotor examination: **Head Impulse, Nystagmus, Test of Skew**. [HINTS Stroke 2009]",
         "HINTS is validated only in acute vestibular syndrome, with **nystagmus present at the time of testing**. [HINTS Stroke 2009]",
         "It is meaningless and misleading in episodic, positional or resolved dizziness. [HINTS Stroke 2009]",
         "Head impulse test (Halmagyi-Curthoys): with the patient fixating on your nose, turn the head rapidly **10-20 degrees** to one side. [HINTS Stroke 2009]",
