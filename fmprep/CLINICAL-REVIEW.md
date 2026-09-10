@@ -413,3 +413,16 @@ not a list of known errors.
   Helpline under Mission Vatsalya, ICDS to Saksham Anganwadi and POSHAN 2.0.
   Both old and new names are given, since papers still use the old ones.
 - **Modi's Textbook edition** cited as the 26th (2018); a newer edition may exist.
+
+## fm-principles (flagged during the point-form rewrite, left as written)
+
+- **Burden of proof under CPA 2019.** The text says the burden of showing
+  reasonable care falls on the doctor. In Indian medical negligence law it
+  normally rests on the complainant, shifting to the doctor only where res ipsa
+  loquitur applies. As written this overstates it.
+- **EHR Standards for India (2016) and FHIR.** The text credits the 2016 MoHFW
+  standards with specifying HL7 FHIR for exchange. The 2016 notification names
+  SNOMED CT, LOINC and HL7 v2.x/v3/CDA; FHIR was not clearly part of it.
+- **Telemedicine Practice Guidelines (2020) and the NMC Act.** The text defines
+  the RMP under "the NMC Act or the erstwhile IMC Act". The March 2020 guidelines
+  define RMP under the IMC Act 1956 alone - the NMC Act was not yet in force.
