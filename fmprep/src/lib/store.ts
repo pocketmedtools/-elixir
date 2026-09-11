@@ -85,7 +85,7 @@ const DEFAULT_SETTINGS: Settings = {
   examMinutes: 60,
   newCardsPerDay: 20,
   readerScale: 1,
-  readerSerif: false,
+  readerSerif: true,
 };
 
 const EMPTY: State = {

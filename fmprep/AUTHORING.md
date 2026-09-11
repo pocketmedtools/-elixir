@@ -219,15 +219,28 @@ while every token-level check passed, because each token was individually
 correct. `color-scheme: light` is pinned so the phone's setting cannot repaint
 form controls underneath. One theme cannot drift.
 
+**Type.** Two faces. Notes are read for an hour at a stretch, so the prose is
+set in a serif and the chrome and headings in the platform sans - which is what
+keeps a heading looking like a heading rather than more prose. Both are system
+stacks led by Noto Serif, which ships with Android and so needs no network in
+the installed app; the single-file page fetches it when it can and falls back to
+Charter and Georgia when it cannot, so the two read the same. The reader's
+Serif toggle now switches the other way, to the interface sans.
+
 **Marked words.** Three kinds of word are worth finding without reading the line
-around them, and each is written in its own colour: carmine for the line that
-decides management, violet for a name or an eponym to attach, green for a
-measured quantity. They are coloured letters, not highlighter washes - a wash
-behind the words fights the letters, and a page of marked points ends up looking
-like a used textbook. Three is the limit: a fourth colour stops the eye sorting
-them without reading, which is the only reason to have any. A name is detected
-by pattern in `RichText` and in the template's `rich()` - an acronym, or a
-capitalised word with a four-digit year - so the two regexes must stay in step.
+around them, and each is written in its own dark colour: deep carmine for the
+line that decides management, deep violet for a name or an eponym to attach,
+deep green for a measured quantity. They are coloured letters, not highlighter
+washes - a wash behind the words fights the letters, and a page of marked points
+ends up looking like a used textbook. Three is the limit: a fourth colour stops
+the eye sorting them without reading, which is the only reason to have any. A
+name is detected by pattern in `RichText` and in the template's `rich()` - an
+acronym, or a capitalised word with a four-digit year - so the two regexes must
+stay in step.
+
+Every colour on the page is a deep tone. The subject band was re-solved lower,
+so the worst pair on the page now clears 5.8:1 rather than 4.6:1; nothing is a
+bright or pastel tint, and nothing depends on a light wash to be read.
 
 The lesson from all of this is the check that now exists. `npm run readable`
 drives the built app in both colour schemes and, for every element holding

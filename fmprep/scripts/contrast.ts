@@ -34,9 +34,9 @@ const THEMES: Theme[] = [
  * on: the card, the page, a zebra row, and the three tone washes.
  */
 const MARK: [string, string][] = [
-  ["key line", "#9b1b30"],
-  ["name or eponym", "#5b2a86"],
-  ["quantity", "#0f6b3f"],
+  ["key line", "#7d1122"],
+  ["name or eponym", "#48206b"],
+  ["quantity", "#0b5430"],
 ];
 const MARK_GROUND: [string, string][] = [
   ["card", "#ffffff"], ["page", "#f4f2ef"], ["zebra row", "#f7f6f4"],

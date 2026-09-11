@@ -131,9 +131,32 @@
   --think: #8a5200; --think-wash: #f9f3ec; --think-rule: #e6d2b6;
   --danger: #a8102a; --danger-wash: #fbedee; --danger-rule: #edc3c8;
   color-scheme: light;
-  font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  /* Two faces. Notes are read for an hour at a time, so the prose is set in a
+     serif - Noto Serif ships with Android and Charter with iOS, so the
+     installed app gets a real reading face with nothing to download. The
+     chrome and the headings stay in the platform sans, which is what keeps a
+     heading looking like a heading rather than more prose. */
+  --font-read: "Noto Serif", "Source Serif 4", Charter, "Bitstream Charter",
+    "Iowan Old Style", Georgia, "Times New Roman", serif;
+  --font-ui: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  --font-mono: ui-monospace, "SF Mono", "Roboto Mono", Menlo, Consolas, monospace;
+  font-family: var(--font-read);
   color: var(--ink);
   background: var(--bg);
+}
+
+/* Headings, controls and labels are chrome, so they take the sans; everything
+   else inherits the reading serif from the root. */
+h1, h2, h3, h4, h5, h6,
+button, input, select, textarea, nav, .app-header, .chip, .eyebrow {
+  font-family: var(--font-ui);
+}
+
+/* Headings, controls and labels are chrome and take the sans; everything else
+   inherits the reading serif from the root. */
+h1, h2, h3, h4, h5, h6,
+button, input, select, textarea, nav, .app-header, .chip, .eyebrow {
+  font-family: var(--font-ui);
 }
 
 body {
@@ -156,8 +179,8 @@ html, body { overflow-x: hidden; max-width: 100%; }
 .brand-ribbon {
   height: 3px;
   background: linear-gradient(90deg,
-    #950129, #aa4300, #8a5d00, #5b7101, #017f26, #017953,
-    #017879, #007481, #3f1e8e, #501485, #700168, #7d015f, #880154);
+    #5d0172, #3f2810, #910127, #713e00, #015657, #7e2f01, #8f1500,
+    #460079, #00574b, #5e4700, #700168, #00545e, #880154);
 }
 
 .study-stage { background: var(--bg); min-height: 100%; }
@@ -199,26 +222,26 @@ html, body { overflow-x: hidden; max-width: 100%; }
 /* The line that decides management. */
 mark.hl {
   background: none;
-  color: #9b1b30;
+  color: #7d1122;
   font-weight: 700;
   padding: 0;
 }
 
 /* A name or an eponym to attach: WONCA, AAFP, Leeuwenhorst 1974. */
-mark.hl.hl-name { color: #5b2a86; }
+mark.hl.hl-name { color: #48206b; }
 
 /* A measured quantity. Monospaced and tabular as well as coloured, so a
    dose is found by its shape before its colour is even registered. */
 b.num {
-  font-family: ui-monospace, "SF Mono", Menlo, Consolas, monospace;
+  font-family: var(--font-mono);
   font-weight: 700;
   font-variant-numeric: tabular-nums;
-  color: #0f6b3f;
+  color: #0b5430;
   white-space: nowrap;
 }
 /* A quantity inside a marked line keeps its own colour: the dose is still
    the thing being looked for, even when the whole line is marked. */
-mark.hl b.num { color: #0f6b3f; }
+mark.hl b.num { color: #0b5430; }
 
 /* Flow-chart connectors, drawn with borders rather than SVG so they
    inherit the subject colour and reflow on a phone. */
@@ -238,7 +261,7 @@ mark.hl b.num { color: #0f6b3f; }
    cannot trace is a figure they cannot trust; quiet, because it is not what
    the line is about. */
 cite.cite {
-  font-family: ui-monospace, "SF Mono", Menlo, Consolas, monospace;
+  font-family: var(--font-mono);
   font-style: normal;
   font-size: 0.72em;
   font-weight: 500;
@@ -280,7 +303,7 @@ cite.cite {
   .stack-table td[data-col]::before {
     content: attr(data-col);
     display: block;
-    font-family: ui-monospace, "SF Mono", Menlo, Consolas, monospace;
+    font-family: var(--font-mono);
     font-size: 10px;
     font-weight: 600;
     letter-spacing: 0.08em;

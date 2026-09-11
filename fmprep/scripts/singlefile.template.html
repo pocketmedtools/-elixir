@@ -1,7 +1,7 @@
 <title>FM Prep Library</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&family=IBM+Plex+Sans:wght@400;500;600;700&family=IBM+Plex+Mono:wght@500;600&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Serif:wght@400;600;700&family=IBM+Plex+Mono:wght@500;600&display=swap">
 <style>
 /* ---------------------------------------------------------------
    Every colour is declared on bare :root first, so the theme blocks
@@ -28,6 +28,13 @@
   --think:#8a5200;  --think-wash:#f9f3ec;  --think-rule:#e6d2b6;
   --shadow:0 1px 1px rgba(21,19,17,.04),0 10px 26px -20px rgba(21,19,17,.4);
   --radius:5px;
+  /* Notes are read for an hour at a stretch, so the prose is a serif and the
+     chrome a sans. Noto Serif is fetched when there is a network and is already
+     installed on Android; Charter and Georgia cover the rest, so the page reads
+     the same offline. */
+  --font-read:"Noto Serif","Source Serif 4",Charter,"Bitstream Charter","Iowan Old Style",Georgia,"Times New Roman",serif;
+  --font-ui:system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
+  --font-mono:"IBM Plex Mono",ui-monospace,"SF Mono","Roboto Mono",Menlo,Consolas,monospace;
   color-scheme:light;
 }
 /* Subject colour. The element carries both themes' values because the data
@@ -42,9 +49,10 @@
    wider than a phone, each inside its own scrolling box. */
 html,body{overflow-x:hidden;max-width:100%}
 body{background:var(--paper);color:var(--ink);overflow-wrap:break-word;
-  font:400 16px/1.6 "IBM Plex Sans",system-ui,-apple-system,"Segoe UI",sans-serif;
+  font:400 16.5px/1.68 var(--font-read);
   -webkit-font-smoothing:antialiased}
-h1,h2,h3,h4{font-family:Fraunces,Georgia,"Times New Roman",serif;font-weight:600;
+h1,h2,h3,h4,nav,button,input,select,.chip,.eyebrow{font-family:var(--font-ui)}
+h1,h2,h3,h4{font-weight:700;letter-spacing:-.011em;
   text-wrap:balance;margin:0;line-height:1.2}
 p{margin:0}
 button{font:inherit;color:inherit;background:none;border:none;cursor:pointer;text-align:left}
@@ -56,15 +64,15 @@ button{font:inherit;color:inherit;background:none;border:none;cursor:pointer;tex
 .mast-in{display:flex;align-items:center;gap:13px;padding:15px 0}
 .glyph{width:34px;height:34px;border-radius:8px;flex-shrink:0;display:grid;place-items:center;
   background:var(--ink);color:var(--raised);
-  font:600 14px/1 "IBM Plex Mono",monospace}
+  font:600 14px/1 var(--font-mono)}
 .mast h1{font-size:21px;letter-spacing:-.015em}
 .mast .sub{font-size:12.5px;color:var(--quiet);line-height:1.35}
 .btn.dl{white-space:nowrap;text-decoration:none;font-size:13px;padding:9px 14px;flex-shrink:0}
 .apk{background:var(--sunk);border-top:1px solid var(--rule);padding:16px 0}
-.apk-t{font:600 14px/1.4 "IBM Plex Sans",system-ui,sans-serif;color:var(--ink)}
+.apk-t{font:600 14px/1.4 var(--font-ui);color:var(--ink)}
 .apk-s{margin:8px 0 0;padding-left:20px;font-size:13.5px;line-height:1.6;color:var(--ink-soft)}
 .apk-u{display:flex;gap:8px;align-items:center;flex-wrap:wrap;margin-top:12px}
-.apk-u code{flex:1;min-width:220px;font:500 12px/1.5 "IBM Plex Mono",ui-monospace,monospace;
+.apk-u code{flex:1;min-width:220px;font:500 12px/1.5 var(--font-mono);
   color:var(--ink);background:var(--raised);border:1px solid var(--rule);border-radius:var(--radius);
   padding:9px 11px;overflow-wrap:anywhere;user-select:all}
 .apk-n{margin-top:10px;font-size:12.5px;color:var(--quiet);line-height:1.5}
@@ -94,20 +102,20 @@ nav.modes .wrap::-webkit-scrollbar{display:none}
 .mode[aria-current="true"]{color:var(--acc);border-bottom-color:var(--acc)}
 .mode:hover{color:var(--ink)}
 main{padding:26px 0 80px}
-.eyebrow{font:600 10.5px/1 "IBM Plex Mono",ui-monospace,monospace;letter-spacing:.13em;
+.eyebrow{font:600 10.5px/1 var(--font-mono);letter-spacing:.13em;
   text-transform:uppercase;color:var(--acc)}
 .eyebrow.mute{color:var(--quiet)}
 .back{display:inline-flex;align-items:center;gap:7px;font-size:13px;font-weight:600;
   color:var(--quiet);padding:5px 0;margin-bottom:12px}
 .back:hover{color:var(--acc)}
-.chip{display:inline-block;font:500 11px/1.55 "IBM Plex Mono",ui-monospace,monospace;
+.chip{display:inline-block;font:500 11px/1.55 var(--font-mono);
   padding:2px 8px;border:1px solid var(--rule);border-radius:99px;color:var(--ink-soft);white-space:nowrap}
 .chip.acc{color:var(--acc);border-color:var(--acc-rule);background:var(--wash)}
 .chip.bad{color:var(--danger);border-color:var(--danger-rule);background:var(--danger-wash)}
 .chip.solid{background:var(--acc);color:var(--raised);border-color:var(--acc)}
 /* A link to the topic that answers a question: a real button, in the reading
    face, that wraps - a long title must never widen the page on a phone. */
-button.chip.solid{font:600 12.5px/1.45 "IBM Plex Sans",system-ui,sans-serif;white-space:normal;
+button.chip.solid{font:600 12.5px/1.45 var(--font-ui);white-space:normal;
   text-align:left;padding:6px 12px;border-radius:9px;max-width:100%;overflow-wrap:anywhere;
   background:var(--sunk);color:var(--acc);border:1px solid var(--rule)}
 button.chip.solid:hover{border-color:var(--acc);background:var(--wash)}
@@ -120,15 +128,15 @@ button.chip.solid:hover{border-color:var(--acc);background:var(--wash)}
    like a used textbook. The letters carry the colour, the paper stays white,
    and the body text stays black. Three is the limit - a fourth stops the eye
    sorting them without reading. */
-mark.hl{background:none;color:#9b1b30;font-weight:700;padding:0}
-mark.hl.hl-name{color:#5b2a86}
-cite.cite{font:500 .72em/1.5 "IBM Plex Mono",ui-monospace,monospace;font-style:normal;
+mark.hl{background:none;color:#7d1122;font-weight:700;padding:0}
+mark.hl.hl-name{color:#48206b}
+cite.cite{font:500 .72em/1.5 var(--font-mono);font-style:normal;
   color:var(--quiet);background:var(--sunk);border:1px solid var(--rule);border-radius:3px;
   padding:.05em .36em;margin-left:.35em;white-space:nowrap;vertical-align:.05em}
-b.num{font-family:"IBM Plex Mono",ui-monospace,monospace;font-weight:700;
-  font-variant-numeric:tabular-nums;color:#0f6b3f;white-space:nowrap}
-mark.hl b.num{color:#0f6b3f}
-.freq{display:inline-flex;align-items:center;gap:6px;font:600 10.5px/1 "IBM Plex Mono",monospace;
+b.num{font-family:var(--font-mono);font-weight:700;
+  font-variant-numeric:tabular-nums;color:#0b5430;white-space:nowrap}
+mark.hl b.num{color:#0b5430}
+.freq{display:inline-flex;align-items:center;gap:6px;font:600 10.5px/1 var(--font-mono);
   color:var(--quiet);white-space:nowrap;text-transform:uppercase;letter-spacing:.07em}
 .freq i{width:26px;height:5px;border-radius:99px;background:var(--rule);display:block;position:relative;overflow:hidden}
 .freq i::after{content:"";position:absolute;inset:0;background:var(--acc);width:var(--w)}
@@ -138,7 +146,7 @@ mark.hl b.num{color:#0f6b3f}
 .hero p{color:var(--ink-soft);font-size:15.6px;line-height:1.62;max-width:64ch}
 .stats{display:grid;grid-template-columns:repeat(auto-fit,minmax(104px,1fr));gap:10px;margin-top:20px}
 .stat{background:var(--sunk);border-radius:var(--radius);padding:12px 13px}
-.stat b{display:block;font:600 24px/1.1 "IBM Plex Mono",monospace;
+.stat b{display:block;font:600 24px/1.1 var(--font-mono);
   font-variant-numeric:tabular-nums;letter-spacing:-.03em;color:var(--acc)}
 .stat span{display:block;font-size:11px;color:var(--quiet);margin-top:4px;line-height:1.35}
 .grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(250px,1fr));gap:11px}
@@ -153,16 +161,16 @@ mark.hl b.num{color:#0f6b3f}
 .row{background:var(--raised);border:1px solid var(--rule);border-radius:var(--radius);
   padding:13px 15px;width:100%;position:relative}
 .row:hover{border-color:var(--acc-rule);background:var(--wash)}
-.row h4{font:600 15.5px/1.4 "IBM Plex Sans",sans-serif}
+.row h4{font:600 15.5px/1.4 var(--font-ui)}
 .row .line{font-size:13px;color:var(--quiet);margin-top:4px;line-height:1.5}
 .row .foot{margin-top:9px;display:flex;gap:6px;flex-wrap:wrap;align-items:center}
 .reader h2{font-size:31px;letter-spacing:-.02em;margin-bottom:10px}
 .oneliner{font-size:17.5px;line-height:1.55;color:var(--ink-soft);
-  font-family:Fraunces,Georgia,serif;margin:0 0 18px;border-left:3px solid var(--acc);padding-left:15px}
+  font-family:var(--font-ui);margin:0 0 18px;border-left:3px solid var(--acc);padding-left:15px}
 .sec{margin-top:34px}
 .sec > h3{font-size:20px;display:flex;align-items:baseline;gap:11px;margin-bottom:14px;
   padding-bottom:9px;border-bottom:2px solid var(--acc-rule)}
-.sec > h3 .n{font:600 11px/1 "IBM Plex Mono",monospace;color:var(--raised);
+.sec > h3 .n{font:600 11px/1 var(--font-mono);color:var(--raised);
   background:var(--acc);border-radius:3px;padding:5px 7px;flex-shrink:0}
 .pts{list-style:none;padding:0;margin:0;display:flex;flex-direction:column;gap:10px}
 .pts li{padding-left:20px;position:relative;font-size:15.4px;line-height:1.65}
@@ -184,14 +192,14 @@ mark.hl b.num{color:#0f6b3f}
   .tbl td{border:0;padding:5px 11px}
   .tbl td+td{border-top:1px dashed var(--rule)}
   .tbl td[data-col]::before{content:attr(data-col);display:block;
-    font:600 10px/1.5 "IBM Plex Mono",ui-monospace,monospace;letter-spacing:.08em;
+    font:600 10px/1.5 var(--font-mono);letter-spacing:.08em;
     text-transform:uppercase;color:var(--acc);margin-bottom:2px}
   .tbl td:first-child::before{display:none}
   .tbl td:first-child{font-weight:600;font-size:1.03em;padding-bottom:7px}
 }
 table{border-collapse:collapse;width:100%;font-size:13.7px;min-width:480px}
 th,td{text-align:left;padding:10px 13px;border-bottom:1px solid var(--rule-soft);vertical-align:top}
-th{font:600 10.5px/1.4 "IBM Plex Mono",monospace;letter-spacing:.07em;text-transform:uppercase;
+th{font:600 10.5px/1.4 var(--font-mono);letter-spacing:.07em;text-transform:uppercase;
   color:var(--acc);background:var(--wash);border-bottom:1px solid var(--acc-rule)}
 tbody tr:nth-child(even){background:var(--sunk)}
 tr:last-child td{border-bottom:none}
@@ -202,14 +210,14 @@ td:first-child{font-weight:600}
 .panel li{font-size:14.8px;line-height:1.58;padding-left:19px;position:relative}
 .panel.bad{background:var(--danger-wash);border-color:var(--danger-rule)}
 .panel.bad .eyebrow{color:var(--danger)}
-.panel.bad li::before{content:"!";position:absolute;left:0;top:0;font:600 13px/1.5 "IBM Plex Mono",monospace;color:var(--danger)}
+.panel.bad li::before{content:"!";position:absolute;left:0;top:0;font:600 13px/1.5 var(--font-mono);color:var(--danger)}
 .panel.gold{background:var(--think-wash);border-color:var(--think-rule);counter-reset:pearl}
 .panel.gold .eyebrow{color:var(--think)}
 .panel.gold li::before{counter-increment:pearl;content:counter(pearl);position:absolute;left:0;top:0;
-  font:600 11px/1.7 "IBM Plex Mono",monospace;color:var(--think)}
+  font:600 11px/1.7 var(--font-mono);color:var(--think)}
 .dg{border:1px solid var(--acc-rule);border-radius:var(--radius);background:var(--raised);
   padding:16px 17px 18px;margin-bottom:12px;box-shadow:var(--shadow)}
-.dg > h4{font:600 15.5px/1.35 "IBM Plex Sans",sans-serif;color:var(--acc);margin-bottom:3px}
+.dg > h4{font:600 15.5px/1.35 var(--font-ui);color:var(--acc);margin-bottom:3px}
 .dg .cap{font-size:12.5px;color:var(--quiet);line-height:1.5;margin-bottom:14px}
 .dg .cap:empty{display:none}
 .node{border:1.5px solid var(--acc-rule);background:var(--wash);border-radius:var(--radius);
@@ -229,7 +237,7 @@ td:first-child{font-weight:600}
   transform:translateX(-50%) rotate(45deg)}
 .ladder{display:flex;flex-direction:column;gap:7px}
 .rung{display:flex;align-items:flex-start;gap:11px}
-.rung .lv{font:600 11px/1 "IBM Plex Mono",monospace;color:var(--raised);background:var(--acc);
+.rung .lv{font:600 11px/1 var(--font-mono);color:var(--raised);background:var(--acc);
   border-radius:3px;padding:6px 8px;flex-shrink:0;margin-top:4px}
 .rung .node{flex:1;min-width:0}
 .branch .rootbox{display:flex;justify-content:center}
@@ -239,7 +247,7 @@ td:first-child{font-weight:600}
 .arms{display:grid;grid-template-columns:repeat(auto-fit,minmax(160px,1fr));
   gap:11px;row-gap:20px;align-items:start}
 .arm{display:flex;flex-direction:column;gap:7px}
-.arm > .hd{font:600 12.5px/1.35 "IBM Plex Sans",sans-serif;color:var(--acc);
+.arm > .hd{font:600 12.5px/1.35 var(--font-ui);color:var(--acc);
   background:var(--wash-2);border:1px solid var(--acc-rule);border-radius:var(--radius);
   padding:8px 11px;text-align:center}
 .arm.warn > .hd{color:var(--danger);background:var(--danger-wash);border-color:var(--danger-rule)}
@@ -252,36 +260,36 @@ td:first-child{font-weight:600}
   background:var(--wash);border:1.5px solid var(--acc-rule);border-radius:var(--radius);
   font-size:13.6px;line-height:1.45}
 .cyc .k{position:absolute;left:9px;top:9px;width:18px;height:18px;border-radius:99px;
-  background:var(--acc);color:var(--raised);font:600 10.5px/18px "IBM Plex Mono",monospace;text-align:center}
+  background:var(--acc);color:var(--raised);font:600 10.5px/18px var(--font-mono);text-align:center}
 .cyc .nl{font-weight:600}
 .cyc .nd{font-size:12.2px;color:var(--ink-soft);margin-top:3px}
 .loopback{display:flex;align-items:center;gap:10px;margin-top:10px;
-  font:600 10.5px/1 "IBM Plex Mono",monospace;color:var(--acc);letter-spacing:.09em;text-transform:uppercase}
+  font:600 10.5px/1 var(--font-mono);color:var(--acc);letter-spacing:.09em;text-transform:uppercase}
 .loopback::before,.loopback::after{content:"";flex:1;height:1px;background:var(--acc-rule)}
 .theory{border:1px solid var(--rule);border-radius:var(--radius);background:var(--raised);
   margin-bottom:10px;overflow:hidden}
 .theory > summary{padding:13px 15px;cursor:pointer;list-style:none;display:flex;gap:12px;align-items:flex-start}
 .theory > summary::-webkit-details-marker{display:none}
 .theory summary .q{flex:1;min-width:0;font-size:15px;line-height:1.55;font-weight:500}
-.theory summary .m{font:600 11.5px/1.5 "IBM Plex Mono",monospace;color:var(--raised);
+.theory summary .m{font:600 11.5px/1.5 var(--font-mono);color:var(--raised);
   background:var(--danger);border-radius:99px;padding:2px 9px;white-space:nowrap}
 .theory[open] > summary{border-bottom:1px solid var(--rule-soft);background:var(--wash)}
 .theory .body{padding:16px}
 .opening{background:var(--wash);border-left:3px solid var(--acc);
   border-radius:0 var(--radius) var(--radius) 0;padding:12px 15px;margin-bottom:18px;
   display:flex;flex-direction:column;gap:7px}
-.opening p{font-size:14.8px;line-height:1.58;font-family:Fraunces,Georgia,serif}
+.opening p{font-size:14.8px;line-height:1.58;font-family:var(--font-read)}
 .splits{margin-top:16px;display:flex;flex-direction:column;gap:5px}
 .split{display:grid;grid-template-columns:1fr auto;gap:11px;align-items:center;
   padding:7px 11px;background:var(--sunk);border-radius:3px;font-size:13.4px}
 .split .bar{grid-column:1/-1;height:4px;border-radius:99px;background:var(--rule);overflow:hidden}
 .split .bar i{display:block;height:100%;background:var(--danger);width:var(--w)}
-.split b{font-family:"IBM Plex Mono",monospace;font-weight:600;color:var(--danger);font-variant-numeric:tabular-nums}
+.split b{font-family:var(--font-mono);font-weight:600;color:var(--danger);font-variant-numeric:tabular-nums}
 .opt{display:flex;gap:12px;width:100%;padding:13px 15px;border:1.5px solid var(--rule);
   border-radius:var(--radius);background:var(--raised);margin-bottom:9px;align-items:flex-start;
   font-size:14.9px;line-height:1.55}
 .opt:hover:not(:disabled){border-color:var(--acc);background:var(--wash)}
-.opt .lt{font:600 12px/17px "IBM Plex Mono",monospace;color:var(--quiet);flex-shrink:0;
+.opt .lt{font:600 12px/17px var(--font-mono);color:var(--quiet);flex-shrink:0;
   width:20px;height:20px;border-radius:99px;border:1.5px solid var(--rule);text-align:center}
 .opt.right{border-color:var(--good);background:var(--good-wash)}
 .opt.right .lt{color:var(--raised);background:var(--good);border-color:var(--good)}
@@ -298,7 +306,7 @@ td:first-child{font-weight:600}
 .fc{border:1px solid var(--acc-rule);border-top:4px solid var(--acc);border-radius:var(--radius);
   background:var(--raised);padding:32px 26px;min-height:220px;display:flex;flex-direction:column;
   justify-content:center;gap:16px;box-shadow:var(--shadow)}
-.fc .front{font-family:Fraunces,Georgia,serif;font-size:21px;line-height:1.42}
+.fc .front{font-family:var(--font-read);font-size:21px;line-height:1.42}
 .fc .back{font-size:15.4px;line-height:1.65;color:var(--ink-soft);
   border-top:1px solid var(--rule-soft);padding-top:15px}
 input[type="search"],select{width:100%;padding:11px 14px;border:1.5px solid var(--rule);
@@ -354,26 +362,26 @@ const DATA = JSON.parse(document.getElementById("fmdata").textContent);
 const S = DATA.subjects, M = DATA.meta, PYQ = DATA.pyq, DIA = DATA.diagrams || {};
 
 const COLOR = {
-  "symptom-approach":["#5f0575","#c58bd7","#f4eef5","#28232d","#d2b9d8","#4f3c56"],
-  "fm-principles":["#4f3720","#bb9f84","#f3f1ef","#272525","#cec7c1","#4b433c"],
-  "cardiovascular":["#950129","#e88287","#f8edf0","#2c2225","#e1b8c3","#5a393d"],
-  "endocrine":["#965501","#dc914b","#f8f3ed","#2b231f","#e2cfb8","#563e2a"],
-  "respiratory":["#017879","#01c1c3","#edf6f6","#15282b","#b8d9d9","#104d50"],
-  "gastro-hepatology":["#aa4300","#e58961","#f9f2ed","#2c2221","#e7cab8","#593b31"],
-  "infectious-fever":["#9e1901","#e88572","#f8efed","#2c2223","#e4bfb8","#5a3a36"],
-  "neurology":["#501485","#b391e6","#f3eff6","#27232e","#cebddd","#493e5b"],
-  "renal-urology":["#007a6a","#21bea8","#edf6f5","#182828","#b8dad5","#1a4c47"],
-  "musculoskeletal":["#7f6201","#c59f3a","#f6f4ed","#28251d","#dbd3b8","#4f4324"],
+  "symptom-approach":["#5d0172","#c58bd7","#f4edf5","#28232d","#d2b8d8","#4f3c56"],
+  "fm-principles":["#3f2810","#bb9f84","#f2f0ee","#272525","#c9c3bc","#4b433c"],
+  "cardiovascular":["#910127","#e88287","#f7edf0","#2c2225","#e0b8c3","#5a393d"],
+  "endocrine":["#713e00","#dc914b","#f5f1ed","#2b231f","#d7c9b8","#563e2a"],
+  "respiratory":["#015657","#01c1c3","#edf3f3","#15282b","#b8d0d0","#104d50"],
+  "gastro-hepatology":["#7e2f01","#e58961","#f6f0ed","#2c2221","#dbc5b8","#593b31"],
+  "infectious-fever":["#8f1500","#e88572","#f7efed","#2c2223","#e0bdb8","#5a3a36"],
+  "neurology":["#460079","#b391e6","#f2edf6","#27232e","#cbb8d9","#493e5b"],
+  "renal-urology":["#00574b","#21bea8","#edf3f2","#182828","#b8d0cd","#1a4c47"],
+  "musculoskeletal":["#5e4700","#c59f3a","#f4f2ed","#28251d","#d2cbb8","#4f4324"],
   "psychiatry":["#700168","#d286c7","#f5edf4","#2a222b","#d7b8d5","#533b51"],
-  "surgery-office":["#007481","#01bcd0","#edf5f6","#15282c","#b8d8dc","#104c54"],
+  "surgery-office":["#00545e","#01bcd0","#edf3f4","#15282c","#b8cfd2","#104c54"],
   "dermatology":["#880154","#e082ad","#f7edf3","#2b2229","#deb8cf","#573949"],
-  "eye-ent":["#017953","#4bbd8e","#edf6f3","#1c2826","#b8d9cf","#284c3f"],
-  "emergency":["#940015","#e8847c","#f8edef","#2c2224","#e1b8bd","#5a3a39"],
-  "pediatrics":["#017f26","#6eb974","#edf6f0","#202723","#b8dbc2","#334b37"],
+  "eye-ent":["#015b3e","#4bbd8e","#edf4f1","#1c2826","#b8d1c9","#284c3f"],
+  "emergency":["#920114","#e8847c","#f7edef","#2c2224","#e0b8bd","#5a3a39"],
+  "pediatrics":["#015c1a","#6eb974","#edf4ef","#202723","#b8d1bf","#334b37"],
   "obstetrics":["#7d015f","#da84ba","#f6edf4","#2a222a","#dbb8d2","#553a4d"],
-  "gynaecology":["#3f1e8e","#a197ee","#f2eff7","#25242f","#c9c0df","#43405e"],
-  "preventive":["#5b7101","#98b152","#f4f5ed","#242620","#d1d7b8","#40482c"],
-  "geriatrics-ethics":["#8a5d00","#d1993e","#f7f4ed","#2a241e","#ded2b8","#534126"]
+  "gynaecology":["#31027b","#a197ee","#f1edf6","#25242f","#c5b8da","#43405e"],
+  "preventive":["#425300","#98b152","#f2f3ed","#242620","#cacfb8","#40482c"],
+  "geriatrics-ethics":["#654300","#d1993e","#f4f2ed","#2a241e","#d4cab8","#534126"]
 };
 /* A subject is six values: accent, chip ground and hairline, in each theme.
    One value cannot serve both - a carmine that reads on white is invisible on

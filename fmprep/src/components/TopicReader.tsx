@@ -86,7 +86,10 @@ export default function TopicReader({
       className="subject-theme mx-auto max-w-3xl px-3 py-5 md:px-6"
       style={{
         fontSize: `${readerScale}rem`,
-        fontFamily: readerSerif ? 'Georgia, "Times New Roman", serif' : undefined,
+        // The reading face is the serif; the toggle drops back to the UI sans
+        // for anyone who prefers it. Both stacks are system fonts, so the
+        // installed app renders them with no network.
+        fontFamily: readerSerif ? "var(--font-read)" : "var(--font-ui)",
         // Everything below takes its colour from the subject.
         ...colorVars(subjectIdForTopic(topicId)),
       }}
