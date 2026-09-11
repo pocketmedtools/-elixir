@@ -391,7 +391,8 @@ const diagrams: DiagramSet = {
         },
         {
           label: "5. Taper what needs tapering",
-          detail: "Antihistamines, statins, vitamins and one of several antihypertensives can generally be stopped outright",
+          detail:
+            "Benzodiazepines, beta-blockers, clonidine, corticosteroids, SSRIs and SNRIs, proton pump inhibitors, opioids, levodopa and antiepileptics all need a taper; antihistamines, statins and vitamins can be stopped outright",
           tone: "warn",
         },
         {
@@ -975,7 +976,7 @@ const diagrams: DiagramSet = {
         {
           label: "Confirm with low muscle quantity",
           detail:
-            "Appendicular skeletal muscle index on DXA under 7.0 kg/m2 in men and under 5.5 kg/m2 in women (EWGSOP2), or under 5.7 kg/m2 in women by AWGS",
+            "Appendicular skeletal muscle index on DXA under 7.0 kg/m2 in men and under 5.5 kg/m2 in women (EWGSOP2), or under 5.4 kg/m2 in women by AWGS",
         },
         {
           label: "Grade severity by physical performance",
