@@ -60,17 +60,25 @@ jobs:
           npx cap add android
           npx cap sync android
 
-      # App icon from the PWA's own 512px icon, when one is present.
+      # App icon from the PWA's own 512px icon. Written straight into each
+      # density folder as plain PNGs, and the adaptive-icon XML removed, so
+      # nothing references a resource that was never generated. Deterministic,
+      # and needs no extra package.
       - name: App icon
         run: |
-          if [ -f public/icon-512.png ]; then
-            mkdir -p assets
-            cp public/icon-512.png assets/icon-only.png
-            cp public/icon-512.png assets/icon-foreground.png
-            npx @capacitor/assets generate --android --iconBackgroundColor '#11182A' --iconBackgroundColorDark '#11182A' || echo "icon generation skipped"
-          else
-            echo "no public/icon-512.png; keeping the default icon"
-          fi
+          SRC=public/icon-512.png
+          if [ ! -f "$SRC" ]; then echo "no $SRC; keeping the default icon"; exit 0; fi
+          IM=$(command -v magick || command -v convert)
+          RES=android/app/src/main/res
+          rm -rf "$RES/mipmap-anydpi-v26"
+          for pair in mdpi:48 hdpi:72 xhdpi:96 xxhdpi:144 xxxhdpi:192; do
+            d=${pair%%:*}; s=${pair##*:}
+            mkdir -p "$RES/mipmap-$d"
+            "$IM" "$SRC" -resize "${s}x${s}" "$RES/mipmap-$d/ic_launcher.png"
+            cp "$RES/mipmap-$d/ic_launcher.png" "$RES/mipmap-$d/ic_launcher_round.png"
+            cp "$RES/mipmap-$d/ic_launcher.png" "$RES/mipmap-$d/ic_launcher_foreground.png"
+          done
+          ls "$RES"/mipmap-xxxhdpi/
 
       # A stable signing identity lets updates install over old versions. It is
       # kept on a dedicated release tag; it is an install identity, not a
