@@ -10,53 +10,54 @@
    --------------------------------------------------------------- */
 :root{
   --h:212; --al:40; --ad:58;
-  /* Pocket-Med's palette, exactly: slate neutrals, one navy accent, emerald
-     for good, amber for caution, red for danger. No per-subject hue. */
-  --paper:#f1f5f9; --raised:#ffffff; --sunk:#f8fafc;
-  --ink:#0f172a; --ink-soft:#334155; --quiet:#5b6b80;
-  --rule:#dbe3ec; --rule-soft:#e2e8f0;
-  --acc:#0f4c81;
-  --acc-hi:#1a5f9a;
-  --wash:#f8fafc;
-  --wash-2:#f1f5f9;
-  --acc-rule:#dbe3ec;
+  /* Neutral greys and black only: no blue tint anywhere, in either theme.
+     Green, amber and red are kept for the three clinical meanings (safe,
+     caution, danger) and for nothing else. */
+  --paper:#f4f4f4; --raised:#ffffff; --sunk:#f7f7f7;
+  --ink:#141414; --ink-soft:#3d3d3d; --quiet:#5f5f5f;
+  --rule:#e2e2e2; --rule-soft:#ececec;
+  --acc:#1a1a1a;
+  --acc-hi:#333333;
+  --wash:#f4f4f4;
+  --wash-2:#e9e9e9;
+  --acc-rule:#cfcfcf;
   --hl:transparent;
-  --danger:#b91c1c; --danger-wash:#fef2f2; --danger-rule:#fecaca;
-  --good:#166534;   --good-wash:#f0fdf4;   --good-rule:#bbf7d0;
-  --think:#b45309;  --think-wash:#fff7ed;  --think-rule:#fed7aa;
-  --shadow:0 1px 1px rgba(17,24,42,.04),0 10px 26px -20px rgba(17,24,42,.4);
+  --danger:#b91c1c; --danger-wash:#fdf2f2; --danger-rule:#f3c4c4;
+  --good:#166534;   --good-wash:#f1faf3;   --good-rule:#bfe7ca;
+  --think:#a85a05;  --think-wash:#fff6ea;  --think-rule:#f6d6a8;
+  --shadow:0 1px 1px rgba(0,0,0,.04),0 10px 26px -20px rgba(0,0,0,.35);
   --radius:5px;
 }
 @media (prefers-color-scheme:dark){
   :root:not([data-theme="light"]){
-    --paper:#020617; --raised:#0f172a; --sunk:#1e293b;
-    --ink:#f1f5f9; --ink-soft:#cbd5e1; --quiet:#94a3b8;
-    --rule:#334155; --rule-soft:#1e293b;
-    --acc:#7fb3e0;
-    --acc-hi:#9cc6ea;
-    --wash:#1e293b;
-    --wash-2:#273449;
-    --acc-rule:#3b4d63;
+    --paper:#0c0c0c; --raised:#181818; --sunk:#232323;
+    --ink:#f2f2f2; --ink-soft:#cfcfcf; --quiet:#9e9e9e;
+    --rule:#333333; --rule-soft:#272727;
+    --acc:#e6e6e6;
+    --acc-hi:#ffffff;
+    --wash:#232323;
+    --wash-2:#2c2c2c;
+    --acc-rule:#474747;
     --hl:transparent;
-    --danger:#fca5a5; --danger-wash:#450a0a; --danger-rule:#7f1d1d;
-    --good:#86efac;   --good-wash:#052e16;   --good-rule:#14532d;
-    --think:#fcd34d;  --think-wash:#451a03;  --think-rule:#78350f;
+    --danger:#f5a3a3; --danger-wash:#3a1212; --danger-rule:#6f2323;
+    --good:#8fe3a8;   --good-wash:#102616;   --good-rule:#1f5a30;
+    --think:#f5cf6a;  --think-wash:#33220a;  --think-rule:#6b4a14;
     --shadow:0 1px 1px rgba(0,0,0,.5),0 10px 26px -20px rgba(0,0,0,.9);
   }
 }
 :root[data-theme="dark"]{
-  --paper:#020617; --raised:#0f172a; --sunk:#1e293b;
-  --ink:#f1f5f9; --ink-soft:#cbd5e1; --quiet:#94a3b8;
-  --rule:#334155; --rule-soft:#1e293b;
-  --acc:#7fb3e0;
-  --acc-hi:#9cc6ea;
-  --wash:#1e293b;
-  --wash-2:#273449;
-  --acc-rule:#3b4d63;
+  --paper:#0c0c0c; --raised:#181818; --sunk:#232323;
+  --ink:#f2f2f2; --ink-soft:#cfcfcf; --quiet:#9e9e9e;
+  --rule:#333333; --rule-soft:#272727;
+  --acc:#e6e6e6;
+  --acc-hi:#ffffff;
+  --wash:#232323;
+  --wash-2:#2c2c2c;
+  --acc-rule:#474747;
   --hl:transparent;
-  --danger:#fca5a5; --danger-wash:#450a0a; --danger-rule:#7f1d1d;
-  --good:#86efac;   --good-wash:#052e16;   --good-rule:#14532d;
-  --think:#fcd34d;  --think-wash:#451a03;  --think-rule:#78350f;
+  --danger:#f5a3a3; --danger-wash:#3a1212; --danger-rule:#6f2323;
+  --good:#8fe3a8;   --good-wash:#102616;   --good-rule:#1f5a30;
+  --think:#f5cf6a;  --think-wash:#33220a;  --think-rule:#6b4a14;
   --shadow:0 1px 1px rgba(0,0,0,.5),0 10px 26px -20px rgba(0,0,0,.9);
 }
 *{box-sizing:border-box}

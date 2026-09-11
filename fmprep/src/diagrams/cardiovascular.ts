@@ -674,7 +674,7 @@ const diagrams: DiagramSet = {
         {
           label: "Above 500 mg/dL",
           detail:
-            "Fibrate first, strict alcohol abstinence, low fat diet, tight glycaemic control and omega-3 2-4 g/day; never combine a fibrate with gemfibrozil",
+            "Fibrate first, strict alcohol abstinence, low fat diet, tight glycaemic control and omega-3 2-4 g/day; never combine a statin with gemfibrozil",
         },
         {
           label: "Above 1000 mg/dL",
@@ -947,7 +947,7 @@ const diagrams: DiagramSet = {
         ],
         [
           "Right ventricular",
-          "V3R-V4R, 1 mm",
+          "V3R-V4R, 0.5 mm or more",
           "Proximal right coronary",
           "Preload dependent - fluid boluses, and nitrates are contraindicated",
         ],

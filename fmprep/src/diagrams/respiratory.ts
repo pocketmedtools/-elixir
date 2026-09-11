@@ -497,9 +497,8 @@ const diagrams: DiagramSet = {
           tone: "decision",
         },
         {
-          label: "Stop at 5 days if stable",
-          detail:
-            "Afebrile for 48-72 hours with no more than one instability criterion - temperature over 37.8 C, pulse over 100, respiratory rate over 24, systolic BP under 90, SpO2 under 90%, unable to eat, altered mental state",
+          label: "No improvement: widen the differential",
+          detail: "Empyema, tuberculosis, bronchial obstruction, resistance or an alternative diagnosis",
         },
         {
           label: "Tap any effusion under ultrasound",
@@ -508,8 +507,9 @@ const diagrams: DiagramSet = {
           tone: "warn",
         },
         {
-          label: "No improvement: widen the differential",
-          detail: "Empyema, tuberculosis, bronchial obstruction, resistance or an alternative diagnosis",
+          label: "Stop at 5 days if stable",
+          detail:
+            "Afebrile for 48-72 hours with no more than one instability criterion - temperature over 37.8 C, pulse over 100, respiratory rate over 24, systolic BP under 90, SpO2 under 90%, unable to eat, altered mental state",
         },
         {
           label: "Repeat the chest radiograph at 6 weeks",
@@ -628,7 +628,7 @@ const diagrams: DiagramSet = {
       heading: "COVID-19 severity and what it changes",
       caption:
         "The danger is silent hypoxaemia: a fall of 3% or more, or an SpO2 under 93% after a 6-minute walk, means hospital.",
-      columns: ["", "Mild", "Moderate", "Severe"],
+      columns: ["Grade", "Mild", "Moderate", "Severe"],
       rows: [
         [
           "Criteria",

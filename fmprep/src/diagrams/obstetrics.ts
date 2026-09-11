@@ -163,7 +163,7 @@ const diagrams: DiagramSet = {
           ],
         },
         {
-          label: "Fundal height lagging over 3 cm",
+          label: "Fundal height lagging 3 cm or more",
           steps: [
             "Height in cm equals gestation in weeks from 24 to 36 weeks",
             "Growth restriction, oligohydramnios or wrong dates",

@@ -1,7 +1,7 @@
 /**
  * Does every colour pair the page renders pass WCAG contrast, in both themes?
  *
- * The palette is fixed - Pocket-Med's slate neutrals and one navy accent - so
+ * The palette is fixed - neutral greys, black, and three semantic colours - so
  * this checks the literal token values that index.css and the single-file
  * template declare. The values here must be kept identical to those files, or
  * the check measures a palette the page does not render; that is the whole
@@ -20,21 +20,21 @@ type Theme = {
 const THEMES: Theme[] = [
   {
     name: "light",
-    paper: "#f1f5f9", raised: "#ffffff", sunk: "#f8fafc",
-    ink: "#0f172a", inkSoft: "#334155", quiet: "#5b6b80",
-    acc: "#0f4c81", wash: "#f8fafc",
-    good: "#166534", goodWash: "#f0fdf4",
-    danger: "#b91c1c", dangerWash: "#fef2f2",
-    think: "#b45309", thinkWash: "#fff7ed",
+    paper: "#f4f4f4", raised: "#ffffff", sunk: "#f7f7f7",
+    ink: "#141414", inkSoft: "#3d3d3d", quiet: "#5f5f5f",
+    acc: "#1a1a1a", wash: "#f4f4f4",
+    good: "#166534", goodWash: "#f1faf3",
+    danger: "#b91c1c", dangerWash: "#fdf2f2",
+    think: "#a85a05", thinkWash: "#fff6ea",
   },
   {
     name: "dark",
-    paper: "#020617", raised: "#0f172a", sunk: "#1e293b",
-    ink: "#f1f5f9", inkSoft: "#cbd5e1", quiet: "#94a3b8",
-    acc: "#7fb3e0", wash: "#1e293b",
-    good: "#86efac", goodWash: "#052e16",
-    danger: "#fca5a5", dangerWash: "#450a0a",
-    think: "#fcd34d", thinkWash: "#451a03",
+    paper: "#0c0c0c", raised: "#181818", sunk: "#232323",
+    ink: "#f2f2f2", inkSoft: "#cfcfcf", quiet: "#9e9e9e",
+    acc: "#e6e6e6", wash: "#232323",
+    good: "#8fe3a8", goodWash: "#102616",
+    danger: "#f5a3a3", dangerWash: "#3a1212",
+    think: "#f5cf6a", thinkWash: "#33220a",
   },
 ];
 
