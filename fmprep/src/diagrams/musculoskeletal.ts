@@ -300,7 +300,7 @@ const diagrams: DiagramSet = {
         {
           label: "Recheck serum urate 2 weeks later",
           detail:
-            "Urate is normal or low in up to a third of acute attacks because inflammation is uricosuric; the 2-week level is the true baseline and the target",
+            "Urate is normal or low in up to a third of acute attacks because inflammation is uricosuric; the 2-week level is the true baseline, and treatment is then targeted to under 6 mg/dL",
         },
       ],
     },

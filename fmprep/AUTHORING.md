@@ -238,15 +238,22 @@ no label exceeds 52 characters, and every shape holds (compare rows matching
 their column count, branches with at least two non-empty arms, cycles of three
 or more). It is cheap, so run it after touching `src/diagrams/`.
 
-**Still open.** The adversarial *clinical* read - does the diagram draw what its
-topic actually says - has covered fourteen of the twenty subjects. Six have had
-only the mechanical check: **psychiatry, dermatology, eye-ent,
-geriatrics-ethics, fm-principles, musculoskeletal**. To finish, run
-`npm run digest` first (the check reads `review/<subject>/`, which must reflect
-the current topics), then one agent per subject against
-`fmprep/src/diagrams/<subject>.ts` with `review/<subject>/` as the source of
-truth. The prompt that the fourteen used is the `CHECK` template in the
-workflow script under `workflows/scripts/fm-prep-diagram-check2-*.js`.
+**Clinical read.** All twenty subjects are now read: one agent per subject
+against `src/diagrams/<subject>.ts`, with `review/<subject>/` as the source of
+truth and the content file off limits except by `sed` on a line range. Six
+diagrams across four subjects carried a real error, and the pattern is worth
+knowing before writing more: none was a typo, and none was reachable by any
+structural check. A deprescribing step named "taper what needs tapering"
+listed only the drugs that need no taper. A sarcopenia step that says "on DXA"
+quoted the bioimpedance cut-off. A caption claimed one centimetre divides every
+pair of lesions when its own last row is a 3 mm petechia. A gout box made the
+patient's own baseline urate the treatment target instead of 6 mg/dL,
+contradicting the next diagram in the same topic. Two were tone: ophthalmology
+review made conditional on visible eye signs in toxic epidermal necrolysis, and
+the minutes-to-hours arm holding anaphylaxis left neutral while slower
+reactions carried a warning. So the faults to hunt are a label that contradicts
+its own detail, a number borrowed from the neighbouring instrument, and a
+dangerous step left unmarked.
 
 ## Phase 3 — making it glanceable (done)
 
