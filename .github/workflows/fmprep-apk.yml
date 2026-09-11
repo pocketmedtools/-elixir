@@ -60,25 +60,23 @@ jobs:
           npx cap add android
           npx cap sync android
 
-      # App icon from the PWA's own 512px icon. Written straight into each
-      # density folder as plain PNGs, and the adaptive-icon XML removed, so
-      # nothing references a resource that was never generated. Deterministic,
-      # and needs no extra package.
+      # App icon from the PWA's own 512px icon, copied as-is into every density
+      # folder - Android scales a launcher PNG down itself, so no image tool is
+      # needed (the runner image no longer ships ImageMagick). The adaptive-icon
+      # XML is removed so nothing references a resource that was never made.
       - name: App icon
         run: |
           SRC=public/icon-512.png
           if [ ! -f "$SRC" ]; then echo "no $SRC; keeping the default icon"; exit 0; fi
-          IM=$(command -v magick || command -v convert)
           RES=android/app/src/main/res
           rm -rf "$RES/mipmap-anydpi-v26"
-          for pair in mdpi:48 hdpi:72 xhdpi:96 xxhdpi:144 xxxhdpi:192; do
-            d=${pair%%:*}; s=${pair##*:}
+          for d in mdpi hdpi xhdpi xxhdpi xxxhdpi; do
             mkdir -p "$RES/mipmap-$d"
-            "$IM" "$SRC" -resize "${s}x${s}" "$RES/mipmap-$d/ic_launcher.png"
-            cp "$RES/mipmap-$d/ic_launcher.png" "$RES/mipmap-$d/ic_launcher_round.png"
-            cp "$RES/mipmap-$d/ic_launcher.png" "$RES/mipmap-$d/ic_launcher_foreground.png"
+            cp "$SRC" "$RES/mipmap-$d/ic_launcher.png"
+            cp "$SRC" "$RES/mipmap-$d/ic_launcher_round.png"
+            cp "$SRC" "$RES/mipmap-$d/ic_launcher_foreground.png"
           done
-          ls "$RES"/mipmap-xxxhdpi/
+          ls -la "$RES"/mipmap-xxxhdpi/
 
       # A stable signing identity lets updates install over old versions. It is
       # kept on a dedicated release tag; it is an install identity, not a
