@@ -323,6 +323,60 @@ reactions carried a warning. So the faults to hunt are a label that contradicts
 its own detail, a number borrowed from the neighbouring instrument, and a
 dangerous step left unmarked.
 
+## Phase 5 — high-yield points, reasoning and sources (in progress)
+
+The complaint was that concepts still read as paragraphs. Measured, that was
+true of 68 topics across 13 subjects; respiratory was the worst in the library
+at a 253-character mean with 59 per cent of points over 200 characters and not
+one source tag.
+
+**Where it has reached.** Library mean 119 characters (was 135), points over
+200 characters 3 per cent (was 12), sourced 66 per cent (was 49). Eleven
+subjects clear every target. Finished and verified: cardiovascular,
+dermatology, eye-ent, musculoskeletal, endocrine, gastro-hepatology, and most
+of neurology, obstetrics, psychiatry, surgery-office.
+
+**Still to do, in priority order.**
+
+1. Finish the topics that still carry `<-- LONG` in `npm run prosetopic`:
+   mostly pediatrics, preventive and respiratory.
+2. The seven subjects never in this wave, which are short but unsupported -
+   this is the bigger gap and `npm run depth` is the measure of it:
+
+   | subject | gives a reason | cites a source |
+   |---|---|---|
+   | renal-urology | 22% | 7% |
+   | symptom-approach | 32% | 14% |
+   | geriatrics-ethics | 31% | 31% |
+   | emergency | 20% | 34% |
+   | fm-principles | 27% | 39% |
+   | infectious-fever | 23% | 43% |
+   | gynaecology | 28% | 47% |
+
+3. Paediatrics cites sources but only 32 per cent of them name a recent edition
+   or a year inside the last decade; those citations need refreshing.
+
+**How to run it.** One agent per subject, never more than about six at once -
+a session limit killed nine at once on the first attempt. Give each agent only
+its own subject file, forbid reading the file whole (they are 350-450 KB), and
+require it to clear `npm run prosetopic <subject>` before finishing. Keep an
+autosave committing every few minutes; the agents do not commit.
+
+**The failure to expect.** An agent killed mid-edit leaves the file
+syntactically broken - the first attempt left a duplicated brace in
+`obstetrics.ts`, which made the whole subject fail to load and its five
+diagrams look like orphans. After any interrupted wave, run `npm run verify`
+before anything else, and if a subject fails to load, find it with
+`npx tsx -e 'import("./src/content/<subject>.ts")'`, which prints the line.
+
+**The two checks this phase added.** `npm run prosetopic <subject>` lists each
+topic with its mean and its over-200 share, marking the ones still long, so a
+finishing pass targets only those. `npm run depth` counts, per subject, the
+share of points that give a reason rather than only a fact, the share that end
+in a traceable citation, and the share of those citations that are current.
+Shape and substance fail independently: a point can be short, sharp and still
+an unsupported assertion.
+
 ## Phase 3 — making it glanceable (done)
 
 The library read like a textbook because it was rendered like one. Three things
