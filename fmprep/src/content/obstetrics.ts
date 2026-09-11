@@ -3595,7 +3595,6 @@ topics.push({
         "**The interpregnancy interval need only be what the couple needs** - the WHO six-month advice after miscarriage is unsupported by later data. [NICE NG126 2019]",
       ],
     },
-    },
   ],
   tables: [
     {
