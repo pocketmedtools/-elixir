@@ -507,7 +507,7 @@ const diagrams: DiagramSet = {
       steps: [
         {
           label: "Withdrawal begins within hours",
-          detail: "Irritability, anxiety, restlessness, poor concentration, low mood, appetite, insomnia and craving",
+          detail: "Irritability, anxiety, restlessness, poor concentration, low mood, increased appetite, insomnia and craving",
         },
         {
           label: "Peaks at 2-3 days",
