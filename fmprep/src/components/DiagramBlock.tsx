@@ -3,17 +3,20 @@
  *
  * Each of the five shapes has one deterministic layout, so a diagram written by
  * one author looks like a diagram written by another, reflows on a phone, and
- * takes the subject's colour from the --h set on the reader. Connectors are CSS
+ * takes the subject's colour from the vars set on the reader. Connectors are CSS
  * borders rather than SVG paths for the same reason: they wrap.
  */
 import type { Diagram, DiagramStep, DiagramTone } from "../lib/types";
 import { RichText } from "./ui";
 
-const TONE: Record<DiagramTone, { border: string; bg: string; extra?: string }> = {
+// Tone is semantic and therefore theme-aware: these were literal hex values
+// once, which meant a pale caution ground stayed pale under the dark theme and
+// took light type on top of it - the box went unreadable.
+const TONE: Record<DiagramTone, { border: string; bg: string; ink?: string; extra?: string }> = {
   neutral: { border: "var(--acc-rule)", bg: "var(--wash)" },
-  decision: { border: "#e0c48f", bg: "#fdf6e6", extra: "border-dashed" },
-  warn: { border: "#efc4bf", bg: "#fdeeec" },
-  good: { border: "#b6dccd", bg: "#e9f4ef" },
+  decision: { border: "var(--think-rule)", bg: "var(--think-wash)", ink: "var(--ink)", extra: "border-dashed" },
+  warn: { border: "var(--danger-rule)", bg: "var(--danger-wash)", ink: "var(--ink)" },
+  good: { border: "var(--good-rule)", bg: "var(--good-wash)", ink: "var(--ink)" },
 };
 
 function Node({ step }: { step: DiagramStep }) {
@@ -21,7 +24,7 @@ function Node({ step }: { step: DiagramStep }) {
   return (
     <div
       className={`rounded-md border-[1.5px] px-3.5 py-2.5 text-sm leading-snug ${tone.extra ?? ""}`}
-      style={{ borderColor: tone.border, background: tone.bg }}
+      style={{ borderColor: tone.border, background: tone.bg, color: tone.ink }}
     >
       <span className="font-semibold">
         <RichText text={step.label} />
@@ -149,7 +152,7 @@ export default function DiagramBlock({ diagram }: { diagram: Diagram }) {
   } else {
     body = (
       <div className="-mx-1 overflow-x-auto px-1">
-        <table className="w-full min-w-[30rem] border-collapse text-left text-sm">
+        <table className="stack-table w-full border-collapse text-left text-sm sm:min-w-[30rem]">
           <thead>
             <tr>
               {diagram.columns.map((c, i) => (
@@ -173,6 +176,7 @@ export default function DiagramBlock({ diagram }: { diagram: Diagram }) {
                 {row.map((cell, ci) => (
                   <td
                     key={ci}
+                    data-col={diagram.columns[ci]}
                     className={`border-b border-slate-200 px-3 py-2 leading-snug ${ci === 0 ? "font-semibold" : ""}`}
                   >
                     <RichText text={cell} />

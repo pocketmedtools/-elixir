@@ -198,25 +198,44 @@ that per subject; `npm run prosetopic <subject>` per topic. `npm run factcheck
 pre-rewrite baseline commit and fails if one is gone entirely - it was run on
 all twenty subjects and nothing was lost.
 
-**Palette.** Neutral greys and black, in both themes, with no blue anywhere:
-the per-subject hue is gone, the accent is near-black on light and light grey on
-dark, and green, amber and red are kept for exactly three meanings - safe,
-caution, danger. Bold runs render as heavy dark type with no wash behind them,
-and doses are dark bold figures rather than accent-coloured. The React app
-remaps Tailwind's slate, blue, sky, indigo, cyan, violet and teal scales to one
-grey scale in the `@theme` block of `src/index.css`, so a component written with
-`bg-slate-100` cannot reintroduce a cool cast. `npm run contrast` holds the
-literal token values and must pass after any palette change; its constants must
-match `src/index.css` and `scripts/singlefile.template.html` or it measures a
-palette the page does not render.
+**Palette.** Twenty subject colours, deep and saturated, none of them blue,
+generated rather than picked: `scripts/genTheme.mjs` walks OKLCH lightness at a
+fixed hue and keeps the most saturated value inside a band that still clears
+4.6:1 against both grounds of its theme. The band is what stops a dark-theme
+teal from resolving to fluorescent cyan. Colour marks structure only - a section
+rule, a number badge, a diagram frame, a chip - and never washes behind running
+text: a line that decides management is marked by the weight of its letters.
+Green, ochre and carmine are reserved for safe, caution and danger.
 
-**Phone.** `npm run diagrams` and the width audit matter more than they look.
-The past-question topic links were nowrap monospace pills, so one long title
-pushed the whole page wider than the screen and the tab bar scrolled out of
-reach. They wrap now, `html, body` cannot scroll sideways, and the masthead
-collapses under 600px to mark, name and a small "Get app" button. Anything new
-that sets `white-space: nowrap` on content of unbounded length will break this
-again.
+**The theme bug, and why every check missed it.** The app is written in Tailwind
+utilities naming literal shades - `bg-white`, `text-slate-900` - so a dark theme
+cannot be opted into per component. The token colours switched under
+`prefers-color-scheme` while those utilities did not, so on a phone in dark mode
+the cards stayed white while the panels went black and the headings went
+near-white: whole sections rendered invisible. Every token-level check passed
+throughout, because each token was individually correct. The fix is to redefine
+the ramps the utilities resolve through, so `bg-slate-50` becomes a dark surface
+and `text-slate-900` light type with no component touched. Twelve Tailwind
+families fold onto six meanings there; run `npm run theme` and paste, never
+hand-edit a value.
+
+The lesson is the check that now exists. `npm run readable` drives the built app
+in both themes and, for every element holding visible text, resolves the real
+painted background by walking up through transparent ancestors before measuring
+contrast. It caught 119 unreadable elements the token checks called clean. Run
+it, not just `npm run contrast`, after any colour change. It parses OKLCH as
+well as rgb, because Chrome reports Tailwind colours in OKLCH and a naive parser
+reads 0.98 as a red channel and invents failures everywhere.
+
+**Phone.** Two faults, both about width. The past-question topic links were
+nowrap monospace pills, so one long title pushed the page wider than the screen
+and the tab bar scrolled out of reach; they wrap now and neither `html` nor
+`body` can scroll sideways. And a three-column comparison table needs about
+34rem, which a 390px screen does not have, so it was clipping its last column -
+usually the one holding the answer. Below 640px each row becomes its own card
+and each cell carries the column it sat under, so the comparison reads down
+instead of across. Anything new that sets `white-space: nowrap` on content of
+unbounded length, or a `min-width` in rem on a table, breaks this again.
 
 **Android.** `capacitor.config.ts` plus `.github/workflows/fmprep-apk.yml`.
 The Android project is generated in CI from the config, never committed. The

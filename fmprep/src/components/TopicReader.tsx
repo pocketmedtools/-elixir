@@ -83,7 +83,7 @@ export default function TopicReader({
 
   return (
     <div
-      className="mx-auto max-w-3xl px-3 py-5 md:px-6"
+      className="subject-theme mx-auto max-w-3xl px-3 py-5 md:px-6"
       style={{
         fontSize: `${readerScale}rem`,
         fontFamily: readerSerif ? 'Georgia, "Times New Roman", serif' : undefined,

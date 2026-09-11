@@ -21,7 +21,9 @@
     "merge": "node scripts/mergePending.mjs",
     "smoke": "node scripts/smoke.mjs",
     "status": "bash scripts/status.sh",
-    "diagrams": "tsx scripts/diagramAudit.mjs"
+    "diagrams": "tsx scripts/diagramAudit.mjs",
+    "readable": "node scripts/readable.mjs",
+    "theme": "node scripts/genTheme.mjs"
   },
   "dependencies": {
     "@capacitor/android": "^8.5.1",

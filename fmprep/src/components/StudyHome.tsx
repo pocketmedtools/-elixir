@@ -35,6 +35,7 @@ import { currentStreak, getState, getVersion, subscribe } from "../lib/store";
 import { getDocs } from "../lib/docs";
 import type { StudyView } from "./StudyModule";
 import { Chip } from "./ui";
+import { colorVars } from "../lib/hues";
 
 const SECTIONS: {
   id: string;
@@ -259,9 +260,12 @@ export default function StudyHome({ onGo }: { onGo: (view: StudyView) => void })
                   key={meta.id}
                   type="button"
                   onClick={() => onGo({ name: "subject", id: meta.id })}
-                  className="rounded-full border border-slate-200 bg-white px-3 py-1.5 text-xs font-semibold text-slate-800 shadow-sm hover:bg-slate-50"
+                  // Its own colour, so the chip a reader is looking for is found
+                  // before its name is read.
+                  style={{ ...colorVars(meta.id), borderColor: "var(--acc-rule)", background: "var(--wash)" }}
+                  className="subject-theme rounded-full border px-3 py-1.5 text-xs font-semibold shadow-sm"
                 >
-                  {meta.title}
+                  <span style={{ color: "var(--acc)" }}>{meta.title}</span>
                 </button>
               ))}
             </div>

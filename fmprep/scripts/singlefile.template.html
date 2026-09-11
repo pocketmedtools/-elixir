@@ -9,56 +9,65 @@
    subject hue, set per screen, and the accent family derives from it.
    --------------------------------------------------------------- */
 :root{
-  --h:212; --al:40; --ad:58;
-  /* Neutral greys and black only: no blue tint anywhere, in either theme.
-     Green, amber and red are kept for the three clinical meanings (safe,
-     caution, danger) and for nothing else. */
-  --paper:#f4f4f4; --raised:#ffffff; --sunk:#f7f7f7;
-  --ink:#141414; --ink-soft:#3d3d3d; --quiet:#5f5f5f;
-  --rule:#e2e2e2; --rule-soft:#ececec;
-  --acc:#1a1a1a;
-  --acc-hi:#333333;
-  --wash:#f4f4f4;
-  --wash-2:#e9e9e9;
-  --acc-rule:#cfcfcf;
-  --hl:transparent;
-  --danger:#b91c1c; --danger-wash:#fdf2f2; --danger-rule:#f3c4c4;
-  --good:#166534;   --good-wash:#f1faf3;   --good-rule:#bfe7ca;
-  --think:#a85a05;  --think-wash:#fff6ea;  --think-rule:#f6d6a8;
-  --shadow:0 1px 1px rgba(0,0,0,.04),0 10px 26px -20px rgba(0,0,0,.35);
+  /* Neutral structure in warm grey, and three semantic colours that mean safe,
+     caution and danger and are used for nothing else. Subject colour arrives
+     separately, on .subject-theme, and marks structure only. */
+  --paper:#f4f2ef; --raised:#ffffff; --sunk:#f7f6f4;
+  --ink:#151311; --ink-soft:#3d3831; --quiet:#5f5952;
+  --rule:#e4e1db; --rule-soft:#eeebe6;
+  --acc:#151311; --acc-hi:#3d3831; --wash:#f4f2ef; --wash-2:#eeebe6;
+  --acc-rule:#d8d4cc; --hl:transparent;
+  --danger:#a8102a; --danger-wash:#fbedee; --danger-rule:#edc3c8;
+  --good:#14622f;   --good-wash:#eff6f0;   --good-rule:#c2ddc9;
+  --think:#8a5200;  --think-wash:#f9f3ec;  --think-rule:#e6d2b6;
+  --shadow:0 1px 1px rgba(21,19,17,.04),0 10px 26px -20px rgba(21,19,17,.4);
   --radius:5px;
+  color-scheme:light;
 }
 @media (prefers-color-scheme:dark){
   :root:not([data-theme="light"]){
-    --paper:#0c0c0c; --raised:#181818; --sunk:#232323;
-    --ink:#f2f2f2; --ink-soft:#cfcfcf; --quiet:#9e9e9e;
-    --rule:#333333; --rule-soft:#272727;
-    --acc:#e6e6e6;
-    --acc-hi:#ffffff;
-    --wash:#232323;
-    --wash-2:#2c2c2c;
-    --acc-rule:#474747;
-    --hl:transparent;
-    --danger:#f5a3a3; --danger-wash:#3a1212; --danger-rule:#6f2323;
-    --good:#8fe3a8;   --good-wash:#102616;   --good-rule:#1f5a30;
-    --think:#f5cf6a;  --think-wash:#33220a;  --think-rule:#6b4a14;
+    color-scheme:dark;
+    --paper:#0d0d0f; --raised:#17171a; --sunk:#1e1e22;
+    --ink:#f4f4f6; --ink-soft:#d5d5db; --quiet:#a8a8b2;
+    --rule:#33333a; --rule-soft:#26262b;
+    --acc:#f4f4f6; --acc-hi:#ffffff; --wash:#1e1e22; --wash-2:#26262b;
+    --acc-rule:#3f3f47; --hl:transparent;
+    --danger:#e88d95; --danger-wash:#2a1a1d; --danger-rule:#5c2c33;
+    --good:#6fbf85;   --good-wash:#16241a;   --good-rule:#2c5436;
+    --think:#d6a247;  --think-wash:#271f13;  --think-rule:#56421d;
     --shadow:0 1px 1px rgba(0,0,0,.5),0 10px 26px -20px rgba(0,0,0,.9);
   }
 }
 :root[data-theme="dark"]{
-  --paper:#0c0c0c; --raised:#181818; --sunk:#232323;
-  --ink:#f2f2f2; --ink-soft:#cfcfcf; --quiet:#9e9e9e;
-  --rule:#333333; --rule-soft:#272727;
-  --acc:#e6e6e6;
-  --acc-hi:#ffffff;
-  --wash:#232323;
-  --wash-2:#2c2c2c;
-  --acc-rule:#474747;
-  --hl:transparent;
-  --danger:#f5a3a3; --danger-wash:#3a1212; --danger-rule:#6f2323;
-  --good:#8fe3a8;   --good-wash:#102616;   --good-rule:#1f5a30;
-  --think:#f5cf6a;  --think-wash:#33220a;  --think-rule:#6b4a14;
+  color-scheme:dark;
+  --paper:#0d0d0f; --raised:#17171a; --sunk:#1e1e22;
+  --ink:#f4f4f6; --ink-soft:#d5d5db; --quiet:#a8a8b2;
+  --rule:#33333a; --rule-soft:#26262b;
+  --acc:#f4f4f6; --acc-hi:#ffffff; --wash:#1e1e22; --wash-2:#26262b;
+  --acc-rule:#3f3f47; --hl:transparent;
+  --danger:#e88d95; --danger-wash:#2a1a1d; --danger-rule:#5c2c33;
+  --good:#6fbf85;   --good-wash:#16241a;   --good-rule:#2c5436;
+  --think:#d6a247;  --think-wash:#271f13;  --think-rule:#56421d;
   --shadow:0 1px 1px rgba(0,0,0,.5),0 10px 26px -20px rgba(0,0,0,.9);
+}
+/* Subject colour. Both themes' values sit on the element; the theme picks
+   between them here rather than at :root, where they would not yet be set. */
+.subject-theme{
+  --acc:var(--acc-l,#151311); --acc-hi:var(--acc-l,#151311);
+  --wash:var(--wash-l,#f4f2ef); --wash-2:var(--wash-l,#eeebe6);
+  --acc-rule:var(--rule-l,#d8d4cc);
+}
+@media (prefers-color-scheme:dark){
+  :root:not([data-theme="light"]) .subject-theme{
+    --acc:var(--acc-d,#f4f4f6); --acc-hi:var(--acc-d,#f4f4f6);
+    --wash:var(--wash-d,#1e1e22); --wash-2:var(--wash-d,#26262b);
+    --acc-rule:var(--rule-d,#3f3f47);
+  }
+}
+:root[data-theme="dark"] .subject-theme{
+  --acc:var(--acc-d,#f4f4f6); --acc-hi:var(--acc-d,#f4f4f6);
+  --wash:var(--wash-d,#1e1e22); --wash-2:var(--wash-d,#26262b);
+  --acc-rule:var(--rule-d,#3f3f47);
 }
 *{box-sizing:border-box}
 /* The page body never scrolls sideways: only a table or a code block may be
@@ -185,6 +194,25 @@ b.num{font-family:"IBM Plex Mono",ui-monospace,monospace;font-weight:700;
   border-radius:2px;background:var(--acc);opacity:.55}
 .pts strong{font-weight:650}
 .tbl{overflow-x:auto;border:1px solid var(--rule);border-radius:var(--radius);background:var(--raised)}
+/* Three columns at a readable size need about 34rem, which a phone does not
+   have, so the last column - usually the one holding the answer - was reached
+   only by swiping. Below the breakpoint each row becomes its own card and each
+   cell carries the column it sat under: the comparison reads down, not across. */
+@media (max-width:639px){
+  .tbl{overflow-x:visible;border:0;background:none;border-radius:0}
+  .tbl table,.tbl tbody,.tbl tr,.tbl td{display:block;width:100%;min-width:0}
+  .tbl thead{display:none}
+  .tbl tr{border:1px solid var(--acc-rule);border-radius:9px;margin-bottom:9px;
+    padding:4px 2px 6px;background:var(--raised)}
+  .tbl tr:nth-child(even){background:var(--sunk)}
+  .tbl td{border:0;padding:5px 11px}
+  .tbl td+td{border-top:1px dashed var(--rule)}
+  .tbl td[data-col]::before{content:attr(data-col);display:block;
+    font:600 10px/1.5 "IBM Plex Mono",ui-monospace,monospace;letter-spacing:.08em;
+    text-transform:uppercase;color:var(--acc);margin-bottom:2px}
+  .tbl td:first-child::before{display:none}
+  .tbl td:first-child{font-weight:600;font-size:1.03em;padding-bottom:7px}
+}
 table{border-collapse:collapse;width:100%;font-size:13.7px;min-width:480px}
 th,td{text-align:left;padding:10px 13px;border-bottom:1px solid var(--rule-soft);vertical-align:top}
 th{font:600 10.5px/1.4 "IBM Plex Mono",monospace;letter-spacing:.07em;text-transform:uppercase;
@@ -350,22 +378,38 @@ const DATA = JSON.parse(document.getElementById("fmdata").textContent);
 const S = DATA.subjects, M = DATA.meta, PYQ = DATA.pyq, DIA = DATA.diagrams || {};
 
 const COLOR = {
-  "symptom-approach":[265,40,65],"fm-principles":[212,40,58],"cardiovascular":[350,40,61],
-  "endocrine":[32,37,58],"respiratory":[194,36,58],"gastro-hepatology":[22,40,58],
-  "infectious-fever":[8,40,59],"neurology":[281,40,63],"renal-urology":[176,30,58],
-  "musculoskeletal":[45,33,58],"psychiatry":[300,40,58],"surgery-office":[206,40,58],
-  "dermatology":[338,40,61],"eye-ent":[160,31,58],"emergency":[2,40,61],
-  "pediatrics":[132,31,58],"obstetrics":[322,40,60],"gynaecology":[310,40,59],
-  "preventive":[100,31,58],"geriatrics-ethics":[232,40,65]
+  "symptom-approach":["#5f0575","#c58bd7","#f4eef5","#28232d","#d2b9d8","#4f3c56"],
+  "fm-principles":["#4f3720","#bb9f84","#f3f1ef","#272525","#cec7c1","#4b433c"],
+  "cardiovascular":["#950129","#e88287","#f8edf0","#2c2225","#e1b8c3","#5a393d"],
+  "endocrine":["#965501","#dc914b","#f8f3ed","#2b231f","#e2cfb8","#563e2a"],
+  "respiratory":["#017879","#01c1c3","#edf6f6","#15282b","#b8d9d9","#104d50"],
+  "gastro-hepatology":["#aa4300","#e58961","#f9f2ed","#2c2221","#e7cab8","#593b31"],
+  "infectious-fever":["#9e1901","#e88572","#f8efed","#2c2223","#e4bfb8","#5a3a36"],
+  "neurology":["#501485","#b391e6","#f3eff6","#27232e","#cebddd","#493e5b"],
+  "renal-urology":["#007a6a","#21bea8","#edf6f5","#182828","#b8dad5","#1a4c47"],
+  "musculoskeletal":["#7f6201","#c59f3a","#f6f4ed","#28251d","#dbd3b8","#4f4324"],
+  "psychiatry":["#700168","#d286c7","#f5edf4","#2a222b","#d7b8d5","#533b51"],
+  "surgery-office":["#007481","#01bcd0","#edf5f6","#15282c","#b8d8dc","#104c54"],
+  "dermatology":["#880154","#e082ad","#f7edf3","#2b2229","#deb8cf","#573949"],
+  "eye-ent":["#017953","#4bbd8e","#edf6f3","#1c2826","#b8d9cf","#284c3f"],
+  "emergency":["#940015","#e8847c","#f8edef","#2c2224","#e1b8bd","#5a3a39"],
+  "pediatrics":["#017f26","#6eb974","#edf6f0","#202723","#b8dbc2","#334b37"],
+  "obstetrics":["#7d015f","#da84ba","#f6edf4","#2a222a","#dbb8d2","#553a4d"],
+  "gynaecology":["#3f1e8e","#a197ee","#f2eff7","#25242f","#c9c0df","#43405e"],
+  "preventive":["#5b7101","#98b152","#f4f5ed","#242620","#d1d7b8","#40482c"],
+  "geriatrics-ethics":["#8a5d00","#d1993e","#f7f4ed","#2a241e","#ded2b8","#534126"]
 };
-/* A subject is a hue plus its accent lightness in each theme: at one lightness a
-   green is far brighter than an indigo, so a single value cannot clear contrast
-   for all twenty. */
-const colorOf = id => COLOR[id] || [212,40,58];
-const hueOf = id => colorOf(id)[0];
-const varsOf = id => { const c = colorOf(id); return "--h:" + c[0] + ";--al:" + c[1] + ";--ad:" + c[2]; };
+/* A subject is six values: accent, chip ground and hairline, in each theme.
+   One value cannot serve both - a carmine that reads on white is invisible on
+   near-black - and the theme is chosen in CSS, on .subject-theme, because a
+   rule at :root would read these before any subject had set them. */
+const colorOf = id => COLOR[id] || COLOR["fm-principles"];
+const varsOf = id => { const c = colorOf(id);
+  return "--acc-l:" + c[0] + ";--acc-d:" + c[1] + ";--wash-l:" + c[2] +
+    ";--wash-d:" + c[3] + ";--rule-l:" + c[4] + ";--rule-d:" + c[5]; };
+
 document.getElementById("spectrum").innerHTML =
-  S.map(() => '<i style="background:var(--acc)"></i>').join("");
+  S.map(s => '<i class="subject-theme" style="' + varsOf(s.id) + ';background:var(--acc)"></i>').join("");
 
 const TOPIC = new Map();
 for (const s of S) for (const t of s.topics) TOPIC.set(t.id, {t, s});
@@ -423,7 +467,8 @@ function drawDiagram(d){
         a.steps.map(s => '<li>' + rich(s) + '</li>').join("") + '</ul></div>').join("") + '</div></div>';
   } else if (d.kind === "compare") {
     inner = '<div class="tbl"><table><thead><tr>' + d.columns.map(c => '<th>' + esc(c) + '</th>').join("") +
-      '</tr></thead><tbody>' + d.rows.map(r => '<tr>' + r.map(c => '<td>' + rich(c) + '</td>').join("") + '</tr>').join("") +
+      '</tr></thead><tbody>' + d.rows.map(r => '<tr>' + r.map((c, i) =>
+        '<td data-col="' + esc(d.columns[i] || "") + '">' + rich(c) + '</td>').join("") + '</tr>').join("") +
       '</tbody></table></div>';
   }
   return '<div class="dg"><h4>' + esc(d.heading) + '</h4><p class="cap">' +
@@ -437,7 +482,7 @@ function viewLibrary(){
     const s = S.find(x => x.id === state.sub);
     const groups = ["core","common","less-common","uncommon"]
       .map(f => [f, s.topics.filter(t => t.frequency === f)]).filter(g => g[1].length);
-    return '<div style="' + varsOf(s.id) + '">' +
+    return '<div class="subject-theme" style="' + varsOf(s.id) + '">' +
       '<button class="back" data-back="sub">&larr; All subjects</button>' +
       '<p class="eyebrow">' + esc(s.group) + '</p>' +
       '<h2 style="font-size:29px;margin:8px 0 10px;color:var(--acc)">' + esc(s.title) + '</h2>' +
@@ -467,7 +512,7 @@ function viewLibrary(){
       '</div></div>' +
     groups.map(g => '<div class="sec" style="--h:212;--al:40;--ad:58"><h3><span class="n">' + S.filter(s=>s.group===g).length + '</span>' + esc(g) + '</h3>' +
       '<div class="grid">' + S.filter(s => s.group === g).map(s =>
-        '<button class="subj" data-sub="' + s.id + '" style="' + varsOf(s.id) + '">' +
+        '<button class="subj subject-theme" data-sub="' + s.id + '" style="' + varsOf(s.id) + '">' +
         '<h3>' + esc(s.title) + '</h3><p>' + esc(s.blurb) + '</p>' +
         '<span class="foot"><span class="chip acc">' + s.topics.length + ' topics</span>' +
         '<span class="chip">Paper ' + s.papers.join(", ") + '</span></span></button>').join("") +
@@ -480,7 +525,7 @@ function viewTopic(){
   let n = 0;
   const sec = (h, inner) => '<div class="sec"><h3><span class="n">' +
     String(++n).padStart(2,"0") + '</span>' + esc(h) + '</h3>' + inner + '</div>';
-  return '<div class="reader reading" style="' + varsOf(s.id) + '">' +
+  return '<div class="reader reading subject-theme" style="' + varsOf(s.id) + '">' +
     '<button class="back" data-back="topic">&larr; ' + esc(s.title) + '</button>' +
     '<p class="eyebrow">' + esc(s.title) + '</p>' +
     '<h2 style="margin-top:8px">' + esc(t.title) + '</h2>' +
@@ -493,7 +538,8 @@ function viewTopic(){
     t.sections.map(x => sec(x.heading, '<ul class="pts">' + x.points.map(p => '<li>' + rich(p) + '</li>').join("") + '</ul>')).join("") +
     t.tables.map(tb => sec(tb.heading, '<div class="tbl"><table><thead><tr>' +
       tb.columns.map(c => '<th>' + esc(c) + '</th>').join("") + '</tr></thead><tbody>' +
-      tb.rows.map(r => '<tr>' + r.map(c => '<td>' + rich(c) + '</td>').join("") + '</tr>').join("") +
+      tb.rows.map(r => '<tr>' + r.map((c, i) =>
+        '<td data-col="' + esc(tb.columns[i] || "") + '">' + rich(c) + '</td>').join("") + '</tr>').join("") +
       '</tbody></table></div>')).join("") +
     (t.redFlags.length ? sec("Refer or admit today",
       '<div class="panel bad"><div class="ph"><span class="eyebrow">Red flags</span></div><ul>' +
@@ -542,7 +588,7 @@ function viewPapers(){
         '<span class="chip">' + esc(q.session) + '</span>' +
         (q.marks ? '<span class="chip bad">' + q.marks + ' marks</span>' : "") + '</span>' +
       (links.length ? '<span class="foot">' + links.map(x =>
-        '<button class="chip solid" data-topic="' + x.t.id + '" style="' + varsOf(x.s.id) + '">' +
+        '<button class="chip solid subject-theme" data-topic="' + x.t.id + '" style="' + varsOf(x.s.id) + '">' +
         esc(x.t.title) + ' &rarr;</button>').join("") + '</span>' : "") + '</div>';
   };
   return '<div style="--h:206;--al:40;--ad:58"><div class="hero"><p class="eyebrow mute">Your own question papers</p>' +
@@ -568,12 +614,12 @@ function viewBank(){
       '<p>Every explanation says why the key is right and why the tempting wrong answer is tempting.</p></div>' +
       '<div class="grid"><button class="subj" data-quiz="all" style="--h:212;--al:40;--ad:58"><h3>Mixed paper</h3>' +
       '<p>Thirty questions drawn across all twenty subjects.</p></button>' +
-      S.map(s => '<button class="subj" data-quiz="sub:' + s.id + '" style="' + varsOf(s.id) + '">' +
+      S.map(s => '<button class="subj subject-theme" data-quiz="sub:' + s.id + '" style="' + varsOf(s.id) + '">' +
         '<h3>' + esc(s.title) + '</h3><p>' + s.topics.reduce((n,t)=>n+t.mcqs.length,0) + ' questions</p></button>').join("") +
       '</div>';
   }
   const q = state.quiz.items[state.quiz.i], picked = state.quiz.picked, done = picked !== null;
-  return '<div style="' + varsOf(q.subjectId) + '">' +
+  return '<div class="subject-theme" style="' + varsOf(q.subjectId) + '">' +
     '<button class="back" data-back="bank">&larr; Question bank</button><div class="reading">' +
     '<div class="chips" style="margin-bottom:16px">' +
       '<span class="chip acc">' + (state.quiz.i+1) + ' of ' + state.quiz.items.length + '</span>' +
@@ -635,11 +681,11 @@ function viewSearch(){
     }
     const block = (title, inner, n) => n ? '<div class="sec"><h3><span class="n">' + n + '</span>' + title + '</h3>' + inner + '</div>' : "";
     out = block("Topics", '<div class="rows">' + hitT.map(e =>
-        '<button class="row" data-topic="' + e.t.id + '" style="' + varsOf(e.s.id) + '">' +
+        '<button class="row subject-theme" data-topic="' + e.t.id + '" style="' + varsOf(e.s.id) + '">' +
         '<h4>' + esc(e.t.title) + '</h4><p class="line">' + esc(e.t.oneLiner) + '</p>' +
         '<span class="foot"><span class="chip acc">' + esc(e.s.title) + '</span>' + freq(e.t.frequency) + '</span></button>').join("") + '</div>', hitT.length)
       + block("Questions", '<div class="rows">' + hitQ.map(x =>
-        '<button class="row" data-topic="' + x.t.id + '" style="' + varsOf(x.s.id) + '">' +
+        '<button class="row subject-theme" data-topic="' + x.t.id + '" style="' + varsOf(x.s.id) + '">' +
         '<p class="line" style="color:var(--ink);font-size:14.4px">' + esc(x.m.stem) + '</p>' +
         '<span class="foot"><span class="chip acc">' + esc(x.t.title) + '</span></span></button>').join("") + '</div>', hitQ.length)
       + block("Past questions", '<div class="rows">' + hitP.map(p =>

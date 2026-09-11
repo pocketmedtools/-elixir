@@ -120,7 +120,7 @@ export function TableBlock({ table }: { table: NoteTable }) {
     <section className="mt-6">
       <h3 className="text-base font-bold tracking-tight text-slate-900">{table.heading}</h3>
       <div className="mt-2 -mx-3 overflow-x-auto px-3">
-        <table className="w-full min-w-[34rem] overflow-hidden rounded-lg border-collapse text-left text-sm">
+        <table className="stack-table w-full border-collapse overflow-hidden rounded-lg text-left text-sm sm:min-w-[34rem]">
           <thead>
             <tr>
               {table.columns.map((c, i) => (
@@ -144,6 +144,7 @@ export function TableBlock({ table }: { table: NoteTable }) {
                 {row.map((cell, ci) => (
                   <td
                     key={ci}
+                    data-col={table.columns[ci]}
                     className={`border-b border-slate-200 px-3 py-2 leading-snug ${ci === 0 ? "font-semibold" : ""}`}
                   >
                     <RichText text={cell} />
