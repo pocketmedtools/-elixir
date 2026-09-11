@@ -23,7 +23,8 @@
     "status": "bash scripts/status.sh",
     "diagrams": "tsx scripts/diagramAudit.mjs",
     "readable": "node scripts/readable.mjs",
-    "theme": "node scripts/genTheme.mjs"
+    "theme": "node scripts/genTheme.mjs",
+    "typescale": "node scripts/typescale.mjs"
   },
   "dependencies": {
     "@capacitor/android": "^8.5.1",
