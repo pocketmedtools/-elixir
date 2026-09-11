@@ -83,6 +83,14 @@ button{font:inherit;color:inherit;background:none;border:none;cursor:pointer;tex
 .mast h1{font-size:21px;letter-spacing:-.015em}
 .mast .sub{font-size:12.5px;color:var(--quiet);line-height:1.35}
 .btn.dl{white-space:nowrap;text-decoration:none;font-size:13px;padding:9px 14px;flex-shrink:0}
+.apk{background:var(--sunk);border-top:1px solid var(--rule);padding:16px 0}
+.apk-t{font:600 14px/1.4 "IBM Plex Sans",system-ui,sans-serif;color:var(--ink)}
+.apk-s{margin:8px 0 0;padding-left:20px;font-size:13.5px;line-height:1.6;color:var(--ink-soft)}
+.apk-u{display:flex;gap:8px;align-items:center;flex-wrap:wrap;margin-top:12px}
+.apk-u code{flex:1;min-width:220px;font:500 12px/1.5 "IBM Plex Mono",ui-monospace,monospace;
+  color:var(--ink);background:var(--raised);border:1px solid var(--rule);border-radius:var(--radius);
+  padding:9px 11px;overflow-wrap:anywhere;user-select:all}
+.apk-n{margin-top:10px;font-size:12.5px;color:var(--quiet);line-height:1.5}
 .btn.dl .short{display:none}
 /* Phone: one tidy line - mark, name, a small button; the strapline goes. */
 @media (max-width:600px){
@@ -308,8 +316,23 @@ footer{border-top:1px solid var(--rule);padding:24px 0 36px;font-size:12.5px;
       <h1>FM Prep</h1>
       <p class="sub">DNB / MD Family Medicine &mdash; the whole revision library, in one page</p>
     </div>
-    <a class="btn dl" href="https://raw.githubusercontent.com/pocketmedtools/-elixir/fmprep-apk/FM-Prep.apk"
-       target="_blank" rel="noopener"><span class="long">Download Android app</span><span class="short">Get app</span></a>
+    <button class="btn dl" id="getapp" aria-expanded="false" aria-controls="apkbox"><span class="long">Download Android app</span><span class="short">Get app</span></button>
+  </div>
+  <!-- Not a bare link: inside an embedded viewer the page cannot open a tab or
+       start a download of its own, so the button reveals the address instead
+       and the reader opens it in their own browser. -->
+  <div class="apk" id="apkbox" hidden>
+    <div class="wrap">
+      <p class="apk-t">Install FM Prep on an Android phone</p>
+      <ol class="apk-s">
+        <li>Copy the address below and open it in Chrome on the phone.</li>
+        <li>The file <b>FM-Prep.apk</b> downloads directly, about 13 MB.</li>
+        <li>Open it and allow installing from this source when asked.</li>
+      </ol>
+      <div class="apk-u"><code id="apkurl">https://raw.githubusercontent.com/pocketmedtools/-elixir/fmprep-apk/FM-Prep.apk</code>
+        <button class="btn ghost" id="apkcopy">Copy</button></div>
+      <p class="apk-n">Everything works offline once installed. The same library is on this page, so the app is optional.</p>
+    </div>
   </div>
   <div class="spectrum" id="spectrum" aria-hidden></div>
 </div>
@@ -661,6 +684,27 @@ function startQuiz(spec){
   else { const e = TOPIC.get(spec); push(e.t, e.s); }
   go({mode:"bank", quiz:{items:pool, i:0, picked:null, score:0}});
 }
+
+// The install panel. Kept out of the router: it is chrome, not a screen, so
+// opening it must not lose the reader's place in the library.
+const apkBtn = document.getElementById("getapp");
+const apkBox = document.getElementById("apkbox");
+apkBtn.addEventListener("click", () => {
+  const open = apkBox.hidden;
+  apkBox.hidden = !open;
+  apkBtn.setAttribute("aria-expanded", String(open));
+  if (open) apkBox.scrollIntoView({block:"nearest"});
+});
+document.getElementById("apkcopy").addEventListener("click", async ev => {
+  const url = document.getElementById("apkurl").textContent;
+  const btn = ev.currentTarget;
+  try { await navigator.clipboard.writeText(url); btn.textContent = "Copied"; }
+  catch { // No clipboard permission in an embedded frame: select it instead.
+    const r = document.createRange(); r.selectNodeContents(document.getElementById("apkurl"));
+    const sel = getSelection(); sel.removeAllRanges(); sel.addRange(r);
+    btn.textContent = "Selected - press copy"; }
+  setTimeout(() => { btn.textContent = "Copy"; }, 2500);
+});
 
 document.addEventListener("click", ev => {
   const t = ev.target.closest("[data-m],[data-topic],[data-sub],[data-quiz],[data-back],[data-opt],[data-next],[data-pv],[data-pp],[data-card]");
