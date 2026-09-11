@@ -62,37 +62,38 @@ body {
      an indigo need different lightness to reach the same contrast. */
   --al: 40;
   --ad: 58;
-  /* Muted, dark accents - navy, slate, forest, burgundy - rather than
-     saturated ones, so the page reads as a reference and not a poster. */
-  --acc: hsl(var(--h) 34% calc(var(--al) * 1%));
-  --acc-hi: hsl(var(--h) 38% calc((var(--al) + 10) * 1%));
-  --wash: hsl(var(--h) 20% 96.5%);
-  --wash-2: hsl(var(--h) 20% 93%);
-  --acc-rule: hsl(var(--h) 18% 84%);
+  /* Pocket-Med's palette, exactly: slate neutrals and one navy accent. No
+     per-subject hue - a reference reads in one colour, and subject identity
+     is the chip that names it, not a tint over the page. */
+  --acc: #0f4c81;
+  --acc-hi: #1a5f9a;
+  --wash: #f8fafc;
+  --wash-2: #f1f5f9;
+  --acc-rule: #dbe3ec;
   --hl: transparent;
-  --sunk: #eff1f4;
+  --sunk: #f8fafc;
 }
 
 
 @media (prefers-color-scheme: dark) {
   :root:not([data-theme="light"]) {
-    --acc: hsl(var(--h) 30% calc(var(--ad) * 1%));
-    --acc-hi: hsl(var(--h) 34% calc((var(--ad) + 8) * 1%));
-    --wash: hsl(var(--h) 36% 14%);
-    --wash-2: hsl(var(--h) 32% 19%);
-    --acc-rule: hsl(var(--h) 28% 30%);
-    --hl: hsl(var(--h) 54% 30%);
-    --sunk: #131a27;
+    --acc: #7fb3e0;
+    --acc-hi: #9cc6ea;
+    --wash: #1e293b;
+    --wash-2: #273449;
+    --acc-rule: #3b4d63;
+    --hl: transparent;
+    --sunk: #1e293b;
   }
 }
 :root[data-theme="dark"] {
-  --acc: hsl(var(--h) 30% calc(var(--ad) * 1%));
-  --acc-hi: hsl(var(--h) 34% calc((var(--ad) + 8) * 1%));
-  --wash: hsl(var(--h) 36% 14%);
-  --wash-2: hsl(var(--h) 32% 19%);
-  --acc-rule: hsl(var(--h) 28% 30%);
-  --hl: hsl(var(--h) 54% 30%);
-  --sunk: #131a27;
+  --acc: #7fb3e0;
+  --acc-hi: #9cc6ea;
+  --wash: #1e293b;
+  --wash-2: #273449;
+  --acc-rule: #3b4d63;
+  --hl: transparent;
+  --sunk: #1e293b;
 }
 
 /* A **bold** run in the content is a line that decides management. It is set

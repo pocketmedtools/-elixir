@@ -448,7 +448,7 @@ const diagrams: DiagramSet = {
         {
           label: "Score 4-5: moderate risk",
           detail:
-            "About 4% at 2 days; the high-risk band in which aspirin plus clopidogrel is given for 21 days",
+            "About 4% at 2 days; a score of 4 or more counts as a high-risk TIA and gets aspirin plus clopidogrel for 21 days",
         },
         {
           label: "Score 6-7: high risk",

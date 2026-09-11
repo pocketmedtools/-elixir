@@ -1532,7 +1532,7 @@ const diagrams: DiagramSet = {
         [
           "Post-dural puncture headache",
           "0.5-5 percent depending on the needle",
-          "Rare, but up to 50 percent after accidental puncture by the Tuohy needle",
+          "Rare, but 50-80 percent after accidental puncture by the Tuohy needle",
         ],
         [
           "Typical use",
@@ -1594,7 +1594,7 @@ const diagrams: DiagramSet = {
         {
           label: "Post-dural puncture headache",
           steps: [
-            "0.5-2 percent with a 25-27G pencil point, up to 30-40 percent with a large cutting needle",
+            "0.5-2 percent with a 25-27G pencil point, up to 70 percent with a 16G cutting needle",
             "Fronto-occipital, postural, begins within 24-48 hours, with neck stiffness, photophobia or diplopia",
             "Analgesia, caffeine 300-500 mg, oral fluids, abdominal binder - bed rest prevents nothing",
             "Epidural blood patch with 15-20 mL of autologous blood cures 60-90 percent",

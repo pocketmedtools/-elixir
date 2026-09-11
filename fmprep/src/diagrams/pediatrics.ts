@@ -594,7 +594,7 @@ const diagrams: DiagramSet = {
         {
           label: "Prevent hypoglycaemia",
           detail:
-            "If the child can drink, breast milk or sugar water (4 level teaspoons of sugar in 200 mL of clean water); if unconscious, 5 mL/kg of 10% dextrose intravenously or the same volume by nasogastric tube",
+            "If the child can drink, breast milk or sugar water (4 level teaspoons of sugar in 200 mL of clean water); if unconscious, 5 mL/kg of 10% dextrose intravenously, or the same volume of sugar water by nasogastric tube",
         },
         {
           label: "Stop a convulsion",

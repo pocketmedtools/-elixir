@@ -127,6 +127,24 @@ jobs:
           path: fmprep/FM-Prep.apk
           if-no-files-found: error
 
+      # The primary download link. A release asset redirects github.com -> a
+      # signed S3 URL, and Android's download manager stalls on that hop at
+      # 100 per cent. raw.githubusercontent.com serves the file directly, so
+      # the APK lives on its own single-commit branch, force-pushed each build.
+      #   https://raw.githubusercontent.com/<owner>/<repo>/fmprep-apk/FM-Prep.apk
+      - name: Publish APK at a direct URL
+        working-directory: ${{ github.workspace }}
+        run: |
+          rm -rf /tmp/apkpub && mkdir -p /tmp/apkpub
+          cp fmprep/FM-Prep.apk /tmp/apkpub/
+          cd /tmp/apkpub
+          git init -q -b fmprep-apk
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add FM-Prep.apk
+          git commit -q -m "FM-Prep.apk built from ${{ github.sha }}"
+          git push -f "https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}.git" fmprep-apk
+
       - name: Publish APK to the rolling release
         uses: softprops/action-gh-release@v2
         with:

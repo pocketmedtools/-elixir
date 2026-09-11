@@ -1,61 +1,78 @@
-import { SUBJECT_COLOR } from "../src/lib/hues.ts";
-
 /**
- * Does every subject hue actually pass contrast, in both themes?
+ * Does every colour pair the page renders pass WCAG contrast, in both themes?
  *
- * The palette derives an accent from one hue per subject at a fixed lightness.
- * That is convenient but not automatically legible: at the same HSL lightness a
- * yellow is far brighter than a blue, so a fixed L that works for indigo can
- * fail for gold. This computes the real WCAG ratio for every pair the page
- * actually renders, so the fix is measured rather than guessed.
+ * The palette is fixed - Pocket-Med's slate neutrals and one navy accent - so
+ * this checks the literal token values that index.css and the single-file
+ * template declare. The values here must be kept identical to those files, or
+ * the check measures a palette the page does not render; that is the whole
+ * reason it exists.
  */
-
-const hsl = (h, s, l) => {
-  s /= 100; l /= 100;
-  const k = (n) => (n + h / 30) % 12;
-  const a = s * Math.min(l, 1 - l);
-  const f = (n) => l - a * Math.max(-1, Math.min(k(n) - 3, Math.min(9 - k(n), 1)));
-  return [f(0), f(8), f(4)];
+type Theme = {
+  name: string;
+  paper: string; raised: string; sunk: string;
+  ink: string; inkSoft: string; quiet: string;
+  acc: string; wash: string;
+  good: string; goodWash: string;
+  danger: string; dangerWash: string;
+  think: string; thinkWash: string;
 };
-const hex = (s) => [1, 3, 5].map((i) => parseInt(s.slice(i, i + 2), 16) / 255);
-const lum = ([r, g, b]) => {
-  const c = (v) => (v <= 0.03928 ? v / 12.92 : ((v + 0.055) / 1.055) ** 2.4);
+
+const THEMES: Theme[] = [
+  {
+    name: "light",
+    paper: "#f1f5f9", raised: "#ffffff", sunk: "#f8fafc",
+    ink: "#0f172a", inkSoft: "#334155", quiet: "#5b6b80",
+    acc: "#0f4c81", wash: "#f8fafc",
+    good: "#166534", goodWash: "#f0fdf4",
+    danger: "#b91c1c", dangerWash: "#fef2f2",
+    think: "#b45309", thinkWash: "#fff7ed",
+  },
+  {
+    name: "dark",
+    paper: "#020617", raised: "#0f172a", sunk: "#1e293b",
+    ink: "#f1f5f9", inkSoft: "#cbd5e1", quiet: "#94a3b8",
+    acc: "#7fb3e0", wash: "#1e293b",
+    good: "#86efac", goodWash: "#052e16",
+    danger: "#fca5a5", dangerWash: "#450a0a",
+    think: "#fcd34d", thinkWash: "#451a03",
+  },
+];
+
+const hex = (s: string) => [1, 3, 5].map((i) => parseInt(s.slice(i, i + 2), 16) / 255);
+const lum = ([r, g, b]: number[]) => {
+  const c = (v: number) => (v <= 0.03928 ? v / 12.92 : ((v + 0.055) / 1.055) ** 2.4);
   return 0.2126 * c(r) + 0.7152 * c(g) + 0.0722 * c(b);
 };
-const ratio = (a, b) => {
-  const [x, y] = [lum(a), lum(b)].sort((p, q) => q - p);
+const ratio = (a: string, b: string) => {
+  const [x, y] = [lum(hex(a)), lum(hex(b))].sort((p, q) => q - p);
   return (x + 0.05) / (y + 0.05);
 };
 
-// Light theme, then dark, exactly as index.css declares them.
-const THEMES = [
-  { name: "light", washL: 96.5, paper: "#F7F6F3", raised: "#FFFFFF", ink: "#11182A" },
-  { name: "dark", washL: 14, paper: "#0D1220", raised: "#141B2B", ink: "#E9EBF0" },
-];
-
 let worst = { r: 99, what: "" };
-const fails = [];
+const fails: string[] = [];
 for (const t of THEMES) {
-  const paper = hex(t.paper), raised = hex(t.raised), ink = hex(t.ink);
-  const white = [1, 1, 1];
-  for (const [id, c] of Object.entries(SUBJECT_COLOR)) {
-    const h = c.h;
-    // Saturation must match index.css exactly, or the check measures a
-    // palette the page does not render.
-    const acc = hsl(h, t.name === "light" ? 34 : 30, t.name === "light" ? c.l : c.d);
-    const wash = hsl(h, t.name === "light" ? 20 : 36, t.washL);
-    const checks = [
-      [`accent text on page (${id})`, ratio(acc, paper), 4.5],
-      [`accent text on card (${id})`, ratio(acc, raised), 4.5],
-      [`accent chip on its wash (${id})`, ratio(acc, wash), 4.5],
-      // Buttons and badges put the page ground on the accent.
-      [`button label on accent (${id})`, ratio(t.name === "light" ? white : hex(t.raised === "#141B2B" ? "#0D1220" : t.raised), acc), 4.5],
-    ];
-    for (const [what, r, need] of checks) {
-      if (r < worst.r) worst = { r, what: `${what} [${t.name}]` };
-      if (r < need) fails.push(`${t.name.padEnd(5)} ${r.toFixed(2)}  ${what}`);
-    }
+  // Text sizes: body text needs 4.5:1; the quiet meta text is set at 11-13 px
+  // so it is held to the same bar rather than the large-text 3:1.
+  const checks: [string, number, number][] = [
+    ["ink on page", ratio(t.ink, t.paper), 4.5],
+    ["ink on card", ratio(t.ink, t.raised), 4.5],
+    ["soft ink on card", ratio(t.inkSoft, t.raised), 4.5],
+    ["quiet text on card", ratio(t.quiet, t.raised), 4.5],
+    ["quiet text on page", ratio(t.quiet, t.paper), 4.5],
+    ["accent text on page", ratio(t.acc, t.paper), 4.5],
+    ["accent text on card", ratio(t.acc, t.raised), 4.5],
+    ["accent chip on its wash", ratio(t.acc, t.wash), 4.5],
+    ["card text on accent (badge/button)", ratio(t.raised, t.acc), 4.5],
+    ["ink on sunk (zebra row)", ratio(t.ink, t.sunk), 4.5],
+    ["good on its wash", ratio(t.good, t.goodWash), 4.5],
+    ["danger on its wash", ratio(t.danger, t.dangerWash), 4.5],
+    ["caution on its wash", ratio(t.think, t.thinkWash), 4.5],
+  ];
+  for (const [what, r, need] of checks) {
+    if (r < worst.r) worst = { r, what: `${what} [${t.name}]` };
+    if (r < need) fails.push(`${t.name.padEnd(5)} ${r.toFixed(2)}  ${what}`);
   }
 }
 console.log(fails.length ? `${fails.length} pairs below 4.5:1\n` + fails.join("\n") : "every pair passes 4.5:1");
 console.log(`\nworst overall: ${worst.r.toFixed(2)}  ${worst.what}`);
+process.exitCode = fails.length ? 1 : 0;

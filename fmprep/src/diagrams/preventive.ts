@@ -119,10 +119,10 @@ const diagrams: DiagramSet = {
     },
     {
       kind: "compare",
-      heading: "The three population cancer screens in India",
+      heading: "The NP-NCD population screens in India",
       caption:
-        "NP-NCD, all from age 30 and all repeated every 5 years, on top of the CBAC form with a cut-off score of 4.",
-      columns: ["Cancer", "Test as delivered", "Who, how often, and what next"],
+        "The three cancers from age 30, every 5 years, on top of the CBAC form with a cut-off score of 4; blood pressure and glucose are annual.",
+      columns: ["Condition", "Test as delivered", "Who, how often, and what next"],
       rows: [
         [
           "Cervix",
@@ -859,7 +859,9 @@ const diagrams: DiagramSet = {
         },
         {
           label: "Start cautious feeding with F-75",
-          detail: "75 kcal per 100 mL, starting at 100 kcal/kg/day and rising gradually",
+          detail:
+            "75 kcal per 100 mL, starting at 100 kcal/kg/day and rising gradually - refeeding syndrome (hypophosphataemia, cardiac failure, death in the first week) is why it starts low and slow",
+          tone: "warn",
         },
         {
           label: "Catch-up growth with F-100",
@@ -873,8 +875,7 @@ const diagrams: DiagramSet = {
         {
           label: "Prepare for follow-up after discharge",
           detail:
-            "Refeeding syndrome - hypophosphataemia, cardiac failure and death in the first week - is why feeding starts low and slow",
-          tone: "warn",
+            "Discharge at 15 per cent weight gain or weight-for-height above -2 SD, no oedema for two weeks, mother trained; then four fortnightly visits",
         },
       ],
     },
@@ -1670,7 +1671,7 @@ const diagrams: DiagramSet = {
       kind: "compare",
       heading: "The pneumoconioses and organic dust diseases",
       caption:
-        "Byssinosis is the one that is obstructive with a normal chest radiograph - every other entry here is restrictive.",
+        "Byssinosis is the one that is obstructive with a normal chest radiograph; the fibrotic and allergic entries are restrictive, and the benign pneumoconioses have normal lung function.",
       columns: ["Disease", "Dust or agent and trade", "Latency", "The discriminating feature"],
       rows: [
         [
@@ -2377,7 +2378,7 @@ const diagrams: DiagramSet = {
           "Creche under the amended Maternity Benefit Act",
           "Mandatory at 50 or more employees, with four visits a day permitted",
         ],
-        ["Creche under the Factories Act 1948", "Where 30 or more women are employed"],
+        ["Creche under the Factories Act 1948", "Where more than 30 women are employed"],
         [
           "Internal Complaints Committee (Sexual Harassment at Workplace Act 2013)",
           "Mandatory at 10 or more employees, chaired by a senior woman, with at least half the members women",

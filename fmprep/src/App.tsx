@@ -36,12 +36,22 @@ export default function App() {
       <header className="app-header border-b border-[var(--line)] bg-white">
         <div className="mx-auto flex max-w-4xl items-center gap-2 px-3 py-2.5 md:px-6">
           <GraduationCap className="h-6 w-6 shrink-0 text-[var(--accent)]" aria-hidden />
-          <div className="min-w-0">
+          <div className="min-w-0 flex-1">
             <p className="text-sm font-bold leading-tight tracking-tight text-slate-900">FM Prep</p>
             <p className="text-[11px] leading-tight text-slate-500">
               DNB / MD Family Medicine — notes, papers, cases, questions
             </p>
           </div>
+          {/* A direct file URL, not a release redirect: Android's download
+              manager stalls on the github.com -> S3 hop. */}
+          <a
+            href="https://raw.githubusercontent.com/pocketmedtools/-elixir/fmprep-apk/FM-Prep.apk"
+            target="_blank"
+            rel="noopener"
+            className="shrink-0 rounded-lg bg-slate-900 px-3 py-1.5 text-xs font-semibold text-white hover:bg-slate-800"
+          >
+            Download Android app
+          </a>
         </div>
         <div className="brand-ribbon" />
       </header>

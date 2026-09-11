@@ -10,51 +10,53 @@
    --------------------------------------------------------------- */
 :root{
   --h:212; --al:40; --ad:58;
-  --paper:#F7F6F3; --raised:#FFFFFF; --sunk:#EFEDE8;
-  --ink:#11182A; --ink-soft:#3C4761; --quiet:#6B7488;
-  --rule:#E1DED7; --rule-soft:#EDEBE5;
-  --acc:hsl(var(--h) 34% calc(var(--al) * 1%));
-  --acc-hi:hsl(var(--h) 38% calc((var(--al) + 10) * 1%));
-  --wash:hsl(var(--h) 20% 96.5%);
-  --wash-2:hsl(var(--h) 20% 93%);
-  --acc-rule:hsl(var(--h) 18% 84%);
+  /* Pocket-Med's palette, exactly: slate neutrals, one navy accent, emerald
+     for good, amber for caution, red for danger. No per-subject hue. */
+  --paper:#f1f5f9; --raised:#ffffff; --sunk:#f8fafc;
+  --ink:#0f172a; --ink-soft:#334155; --quiet:#5b6b80;
+  --rule:#dbe3ec; --rule-soft:#e2e8f0;
+  --acc:#0f4c81;
+  --acc-hi:#1a5f9a;
+  --wash:#f8fafc;
+  --wash-2:#f1f5f9;
+  --acc-rule:#dbe3ec;
   --hl:transparent;
-  --danger:#B3231B; --danger-wash:#FDEEEC; --danger-rule:#F0C6C1;
-  --good:#166B52;   --good-wash:#E8F4EF;   --good-rule:#B9DDCE;
-  --think:#8A5A00;  --think-wash:#FDF3DF;  --think-rule:#EBD4A0;
+  --danger:#b91c1c; --danger-wash:#fef2f2; --danger-rule:#fecaca;
+  --good:#166534;   --good-wash:#f0fdf4;   --good-rule:#bbf7d0;
+  --think:#b45309;  --think-wash:#fff7ed;  --think-rule:#fed7aa;
   --shadow:0 1px 1px rgba(17,24,42,.04),0 10px 26px -20px rgba(17,24,42,.4);
   --radius:5px;
 }
 @media (prefers-color-scheme:dark){
   :root:not([data-theme="light"]){
-    --paper:#0D1220; --raised:#141B2B; --sunk:#0A0F1A;
-    --ink:#E9EBF0; --ink-soft:#B4BCCC; --quiet:#828C9F;
-    --rule:#242D3F; --rule-soft:#1B2333;
-    --acc:hsl(var(--h) 30% calc(var(--ad) * 1%));
-    --acc-hi:hsl(var(--h) 34% calc((var(--ad) + 8) * 1%));
-    --wash:hsl(var(--h) 36% 14%);
-    --wash-2:hsl(var(--h) 32% 19%);
-    --acc-rule:hsl(var(--h) 28% 30%);
-    --hl:hsl(var(--h) 54% 30%);
-    --danger:#F09189; --danger-wash:#2C1614; --danger-rule:#5C2E29;
-    --good:#7FCDAF;   --good-wash:#0F2620;   --good-rule:#2C5546;
-    --think:#E5BE6B;  --think-wash:#2A2110;  --think-rule:#584727;
+    --paper:#020617; --raised:#0f172a; --sunk:#1e293b;
+    --ink:#f1f5f9; --ink-soft:#cbd5e1; --quiet:#94a3b8;
+    --rule:#334155; --rule-soft:#1e293b;
+    --acc:#7fb3e0;
+    --acc-hi:#9cc6ea;
+    --wash:#1e293b;
+    --wash-2:#273449;
+    --acc-rule:#3b4d63;
+    --hl:transparent;
+    --danger:#fca5a5; --danger-wash:#450a0a; --danger-rule:#7f1d1d;
+    --good:#86efac;   --good-wash:#052e16;   --good-rule:#14532d;
+    --think:#fcd34d;  --think-wash:#451a03;  --think-rule:#78350f;
     --shadow:0 1px 1px rgba(0,0,0,.5),0 10px 26px -20px rgba(0,0,0,.9);
   }
 }
 :root[data-theme="dark"]{
-  --paper:#0D1220; --raised:#141B2B; --sunk:#0A0F1A;
-  --ink:#E9EBF0; --ink-soft:#B4BCCC; --quiet:#828C9F;
-  --rule:#242D3F; --rule-soft:#1B2333;
-  --acc:hsl(var(--h) 30% calc(var(--ad) * 1%));
-  --acc-hi:hsl(var(--h) 34% calc((var(--ad) + 8) * 1%));
-  --wash:hsl(var(--h) 36% 14%);
-  --wash-2:hsl(var(--h) 32% 19%);
-  --acc-rule:hsl(var(--h) 28% 30%);
-  --hl:hsl(var(--h) 54% 30%);
-  --danger:#F09189; --danger-wash:#2C1614; --danger-rule:#5C2E29;
-  --good:#7FCDAF;   --good-wash:#0F2620;   --good-rule:#2C5546;
-  --think:#E5BE6B;  --think-wash:#2A2110;  --think-rule:#584727;
+  --paper:#020617; --raised:#0f172a; --sunk:#1e293b;
+  --ink:#f1f5f9; --ink-soft:#cbd5e1; --quiet:#94a3b8;
+  --rule:#334155; --rule-soft:#1e293b;
+  --acc:#7fb3e0;
+  --acc-hi:#9cc6ea;
+  --wash:#1e293b;
+  --wash-2:#273449;
+  --acc-rule:#3b4d63;
+  --hl:transparent;
+  --danger:#fca5a5; --danger-wash:#450a0a; --danger-rule:#7f1d1d;
+  --good:#86efac;   --good-wash:#052e16;   --good-rule:#14532d;
+  --think:#fcd34d;  --think-wash:#451a03;  --think-rule:#78350f;
   --shadow:0 1px 1px rgba(0,0,0,.5),0 10px 26px -20px rgba(0,0,0,.9);
 }
 *{box-sizing:border-box}
@@ -275,10 +277,13 @@ footer{border-top:1px solid var(--rule);padding:24px 0 36px;font-size:12.5px;
 <div class="mast">
   <div class="wrap mast-in">
     <span class="glyph" aria-hidden>FM</span>
-    <div>
+    <div style="flex:1;min-width:0">
       <h1>FM Prep</h1>
       <p class="sub">DNB / MD Family Medicine &mdash; the whole revision library, in one page</p>
     </div>
+    <a class="btn" href="https://raw.githubusercontent.com/pocketmedtools/-elixir/fmprep-apk/FM-Prep.apk"
+       target="_blank" rel="noopener" style="white-space:nowrap;text-decoration:none;font-size:13px;padding:9px 14px">
+      Download Android app</a>
   </div>
   <div class="spectrum" id="spectrum" aria-hidden></div>
 </div>
@@ -311,7 +316,7 @@ const colorOf = id => COLOR[id] || [212,40,58];
 const hueOf = id => colorOf(id)[0];
 const varsOf = id => { const c = colorOf(id); return "--h:" + c[0] + ";--al:" + c[1] + ";--ad:" + c[2]; };
 document.getElementById("spectrum").innerHTML =
-  S.map(s => '<i style="background:hsl(' + hueOf(s.id) + ' 28% 36%)"></i>').join("");
+  S.map(() => '<i style="background:var(--acc)"></i>').join("");
 
 const TOPIC = new Map();
 for (const s of S) for (const t of s.topics) TOPIC.set(t.id, {t, s});
