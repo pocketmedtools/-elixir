@@ -1885,7 +1885,7 @@ topics.push({
     {
       heading: "Definition, burden and why India screens differently",
       points: [
-        "**GDM is carbohydrate intolerance of variable severity with onset or first recognition during pregnancy** - severity varies, so treatment is titrated. [GoI GDM 2018]",
+        "**GDM is carbohydrate intolerance of variable severity first recognised in pregnancy** - severity varies, so treatment is titrated to it. [GoI GDM 2018]",
         "**Overt diabetes in the first trimester: fasting 126 mg/dL or more, random 200 mg/dL or more, or HbA1c 6.5 per cent or more.** [GoI GDM 2018]",
         "**Overt disease is diabetes in pregnancy, not GDM** - it is managed as pre-existing diabetes, with anomaly and retinopathy screening. [GoI GDM 2018]",
         "**Indian prevalence is 10-14.3 per cent by DIPSI criteria** - higher in urban than rural areas, and in the south and west. [GoI GDM 2018]",
@@ -1943,7 +1943,7 @@ topics.push({
         "**Metformin 500 mg once or twice daily with meals, increased weekly to a maximum of 2000-2500 mg per day** in divided doses. [GoI GDM 2018]",
         "**Metformin crosses the placenta but showed no teratogenicity or fetal harm** in the MiG trial and its follow-up. [GoI GDM 2018]",
         "**Add insulin when targets are missed on the maximum tolerated dose of metformin** - do not simply wait another two weeks. [GoI GDM 2018]",
-        "**Start insulin directly if fasting exceeds 110-120 mg/dL or the 2-hour value exceeds 160-180 mg/dL at diagnosis** - metformin will not reach target. [GoI GDM 2018]",
+        "**Start insulin directly if fasting exceeds 110-120 mg/dL or the 2-hour exceeds 160-180 mg/dL at diagnosis** - metformin will not reach target. [GoI GDM 2018]",
         "**Insulin starting dose 0.1-0.2 units/kg/day**, usually human premixed 30/70 twice daily before breakfast and dinner. [GoI GDM 2018]",
         "**Or basal NPH at bedtime with regular insulin before meals** where a more flexible regimen suits her better. [GoI GDM 2018]",
         "**Titrate by 2-4 units every 2-3 days against the highest out-of-range value** - correct one value at a time. [GoI GDM 2018]",
@@ -2168,7 +2168,7 @@ topics.push({
           points: [
             "Antenatal: **polyhydramnios and pre-eclampsia, the latter increased two- to three-fold** by the shared endothelial and metabolic insult. [FOGSI 2019]",
             "Antenatal: **recurrent urinary and genital infection including candidiasis** - glycosuria feeds the organism. [FOGSI 2019]",
-            "Antenatal: **preterm labour, and diabetic ketoacidosis in severe cases** - ketoacidosis in pregnancy occurs at lower glucose levels than outside it. [FOGSI 2019]",
+            "Antenatal: **preterm labour, and diabetic ketoacidosis in severe cases** - ketoacidosis here occurs at lower glucose levels than outside pregnancy. [FOGSI 2019]",
             "Intrapartum: **obstructed and prolonged labour from a macrosomic fetus**, with shoulder dystocia and its perineal and sphincter injuries. [FOGSI 2019]",
             "Intrapartum: **more operative and caesarean delivery, and postpartum haemorrhage from an overdistended uterus.** [FOGSI 2019]",
             "Postpartum: **wound infection and delayed lactation** - hyperglycaemia impairs both healing and lactogenesis. [FOGSI 2019]",
@@ -2197,6 +2197,7 @@ topics.push({
             "**Intergenerational transmission is the main public health argument for aggressive detection and control of GDM in India.** [GoI GDM 2018]",
           ],
         },
+      ],
       mustDraw: ["A two-column table of maternal versus fetal/neonatal complications, divided into antenatal, intrapartum and postnatal."],
       markSplit: [
         { part: "Maternal complications", marks: 2 },
@@ -2221,25 +2222,32 @@ topics.push({
         {
           heading: "Classification of hyperglycaemia in pregnancy",
           points: [
-            "Pregestational (overt) diabetes: type 1 or type 2 diabetes diagnosed before conception. White's classification (classes A to T) grades it by age of onset, duration and vascular complications, and is still asked in vivas.",
-            "Diabetes mellitus in pregnancy (WHO 2013): hyperglycaemia first detected during pregnancy that meets non-pregnant diagnostic criteria - fasting plasma glucose 126 mg/dL or more, 2-hour value 200 mg/dL or more after a 75 g load, random 200 mg/dL or more with symptoms, or HbA1c 6.5% or more.",
-            "Gestational diabetes mellitus: hyperglycaemia first detected in pregnancy that is above normal but below the overt diabetes thresholds.",
+            "**Pregestational (overt) diabetes: type 1 or type 2 diagnosed before conception** - the group that carries the anomaly risk. [WHO 2013]",
+            "**White's classification, classes A to T**, grades pregestational diabetes by age of onset, duration and vascular complications. [Williams Obstetrics 26e]",
+            "**Diabetes mellitus in pregnancy (WHO 2013): hyperglycaemia first found in pregnancy that meets non-pregnant criteria.** [WHO 2013]",
+            "Its thresholds: **fasting 126 mg/dL or more, or 2-hour 200 mg/dL or more after a 75 g load**. [WHO 2013]",
+            "Its thresholds also: **random 200 mg/dL or more with symptoms, or HbA1c 6.5 per cent or more**. [WHO 2013]",
+            "**Gestational diabetes: hyperglycaemia first detected in pregnancy, above normal but below the overt diabetes thresholds.** [WHO 2013]",
           ],
         },
         {
           heading: "Diagnostic thresholds",
           points: [
-            "DIPSI (Indian national programme): 75 g non-fasting load, 2-hour venous plasma glucose 140 mg/dL or more diagnoses GDM; 120-139 mg/dL is decreased gestational glucose tolerance.",
-            "IADPSG/WHO 2013: fasting 75 g load with fasting 92-125 mg/dL, 1-hour 180 mg/dL or more, or 2-hour 153-199 mg/dL - any one value diagnoses GDM.",
-            "Carpenter and Coustan (100 g, 3-hour test, two or more abnormal values): fasting 95, 1-hour 180, 2-hour 155, 3-hour 140 mg/dL - the older two-step American approach.",
+            "**DIPSI, the Indian national programme: a 75 g non-fasting load with a single 2-hour venous plasma glucose.** [GoI GDM 2018]",
+            "**DIPSI: 140 mg/dL or more diagnoses GDM; 120-139 mg/dL is decreased gestational glucose tolerance.** [GoI GDM 2018]",
+            "**IADPSG and WHO 2013: fasting 75 g load, with fasting 92-125 mg/dL, 1-hour 180 mg/dL or more, or 2-hour 153-199 mg/dL.** [WHO 2013]",
+            "**Any one abnormal IADPSG value diagnoses GDM** - values above that range mean overt diabetes, not GDM. [WHO 2013]",
+            "**Carpenter and Coustan: a 100 g 3-hour test needing two or more abnormal values** - the older two-step American approach. [ACOG 2020]",
+            "**Carpenter-Coustan thresholds: fasting 95, 1-hour 180, 2-hour 155, 3-hour 140 mg/dL.** [ACOG 2020]",
           ],
         },
         {
           heading: "Why the classification matters",
           points: [
-            "Diabetes in pregnancy detected in the first trimester implies hyperglycaemia during organogenesis and therefore a raised risk of congenital malformation, needing an anomaly scan with fetal echocardiography and screening for retinopathy and nephropathy.",
-            "True gestational diabetes appearing in the second half of pregnancy does not carry the same anomaly risk, and its complications are those of fetal overgrowth.",
-            "Both require postpartum reclassification with a 75 g oral glucose tolerance test at 6-12 weeks.",
+            "**Diabetes found in the first trimester means hyperglycaemia during organogenesis** - and therefore a raised risk of congenital malformation. [WHO 2013]",
+            "**That woman needs an anomaly scan with fetal echocardiography, and screening for retinopathy and nephropathy.** [FOGSI 2019]",
+            "**True GDM appearing in the second half of pregnancy carries no such anomaly risk** - its complications are those of fetal overgrowth. [FOGSI 2019]",
+            "**Both groups need postpartum reclassification by a 75 g oral glucose tolerance test at 6-12 weeks.** [GoI GDM 2018]",
           ],
         },
       ],
