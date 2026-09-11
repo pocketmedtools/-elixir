@@ -18,12 +18,12 @@ export default function PresentationScreen({ onBack }: { onBack: () => void }) {
   const [openId, setOpenId] = useState<string | null>(guide.templates[0]?.id ?? null);
 
   return (
-    <div className="mx-auto max-w-3xl px-3 py-5 md:px-6">
+    <div className="mx-auto max-w-2xl px-3 py-5 md:px-6">
       <BackBar onBack={onBack} label="Study" />
 
       <header className="mt-5">
-        <h1 className="text-2xl font-bold leading-tight tracking-tight text-slate-900">{guide.title}</h1>
-        <div className="mt-3 space-y-2 leading-relaxed text-slate-800">
+        <h1 className="text-[26px] font-bold leading-tight tracking-tight text-slate-900">{guide.title}</h1>
+        <div className="mt-4 space-y-3 text-[17.5px] leading-[1.7] text-slate-800">
           {guide.overview.map((line, i) => (
             <p key={i}>{line}</p>
           ))}
@@ -31,7 +31,7 @@ export default function PresentationScreen({ onBack }: { onBack: () => void }) {
       </header>
 
       <section className="mt-7">
-        <h2 className="text-lg font-bold tracking-tight text-slate-900">The running orders</h2>
+        <h2 className="text-[21px] font-bold tracking-tight text-slate-900">The running orders</h2>
         <div className="mt-2 space-y-2">
           {guide.templates.map((template) => {
             const open = openId === template.id;
@@ -71,7 +71,7 @@ export default function PresentationScreen({ onBack }: { onBack: () => void }) {
       </section>
 
       <section className="mt-8">
-        <h2 className="text-lg font-bold tracking-tight text-slate-900">The family medicine tools</h2>
+        <h2 className="text-[21px] font-bold tracking-tight text-slate-900">The family medicine tools</h2>
         {guide.familyTools.map((s, i) => (
           <SectionBlock key={i} section={s} />
         ))}
@@ -82,7 +82,7 @@ export default function PresentationScreen({ onBack }: { onBack: () => void }) {
       ))}
 
       <section className="mt-8">
-        <h2 className="text-lg font-bold tracking-tight text-slate-900">How it is marked</h2>
+        <h2 className="text-[21px] font-bold tracking-tight text-slate-900">How it is marked</h2>
         {guide.marking.map((s, i) => (
           <SectionBlock key={i} section={s} />
         ))}

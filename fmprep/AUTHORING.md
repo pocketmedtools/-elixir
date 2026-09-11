@@ -224,8 +224,32 @@ set in a serif and the chrome and headings in the platform sans - which is what
 keeps a heading looking like a heading rather than more prose. Both are system
 stacks led by Noto Serif, which ships with Android and so needs no network in
 the installed app; the single-file page fetches it when it can and falls back to
-Charter and Georgia when it cannot, so the two read the same. The reader's
-Serif toggle now switches the other way, to the interface sans.
+Charter and Georgia when it cannot, so the two read the same. The reader's Serif
+toggle now switches the other way, to the interface sans.
+
+The scale: prose 17.6px at 1.7, secondary 16px, nothing read as a sentence
+below 13px, points 16px apart, section headings 21px and the topic title 26px.
+The reader's own base is `1.1rem` multiplied by `readerScale`, and the sizes
+inside it are written in `em` rather than in fixed classes, so A+ and A- move
+the headings and the callouts too instead of only the points.
+
+`npm run typescale` is the check, and it measures the rendered page rather than
+the source: every distinct font size with the share of text set at it, the
+leading, the median gap between consecutive points, and the median line length.
+It fails below the bar the reader described - body under 17px, leading under
+1.62, points less than 14px apart, more than 6 per cent of characters under
+13px. Before this pass it failed three of the four.
+
+Two traps to know before touching a size. Tailwind v4 ships a line-height with
+every named size, so replacing `text-sm` with an arbitrary `text-[15.5px]`
+silently removes the leading that every descendant was inheriting - a table
+whose cells looked fine went to `normal` everywhere else. And a value pasted
+from a proposal is not checked by anything: an unterminated `var(--font-ui`
+reached the template once, and because an unclosed function token swallows
+everything up to the next bracket it took the rules after it with it, which is
+why comparison tables silently stopped stacking on a phone. `npm run typescale`
+and the 360px width audit catch the second; nothing catches the first but
+reading the diff.
 
 **Marked words.** Three kinds of word are worth finding without reading the line
 around them, and each is written in its own dark colour: deep carmine for the

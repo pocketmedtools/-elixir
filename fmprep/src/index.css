@@ -250,10 +250,10 @@ mark.hl b.num { color: inherit; }
 
 /* Flow-chart connectors, drawn with borders rather than SVG so they
    inherit the subject colour and reflow on a phone. */
-.flowchart > * + * { margin-top: 1.375rem; position: relative; }
+.flowchart > * + * { margin-top: 1.75rem; position: relative; }
 .flowchart > * + *::before {
-  content: ""; position: absolute; left: 50%; top: -1.375rem;
-  height: 1.375rem; width: 2px; background: var(--acc-rule);
+  content: ""; position: absolute; left: 50%; top: -1.75rem;
+  height: 1.75rem; width: 2px; background: var(--acc-rule);
 }
 .flowchart > * + *::after {
   content: ""; position: absolute; left: 50%; top: -0.55rem;
@@ -268,15 +268,15 @@ mark.hl b.num { color: inherit; }
 cite.cite {
   font-family: var(--font-mono);
   font-style: normal;
-  font-size: 0.72em;
+  font-size: max(13px, 0.78em);
   font-weight: 500;
   letter-spacing: 0.01em;
   color: var(--quiet);
   background: var(--sunk);
   border: 1px solid var(--rule);
   border-radius: 3px;
-  padding: 0.05em 0.36em;
-  margin-left: 0.35em;
+  padding: 0.12em 0.4em;
+  margin-left: 0.4em;
   white-space: nowrap;
   vertical-align: 0.05em;
 }
@@ -297,27 +297,27 @@ cite.cite {
   .stack-table tr {
     border: 1px solid var(--acc-rule);
     border-radius: 9px;
-    padding: 4px 2px 6px;
-    margin-bottom: 9px;
+    padding: 6px 2px 9px;
+    margin-bottom: 12px;
     background: var(--card);
   }
   .stack-table tr:nth-child(even) { background: var(--sunk); }
-  .stack-table td { border-bottom: 0; padding: 5px 11px; }
+  .stack-table td { border-bottom: 0; padding: 7px 12px; }
   .stack-table td + td { border-top: 1px dashed var(--rule); }
   /* The column name, above the value it belonged to. */
   .stack-table td[data-col]::before {
     content: attr(data-col);
     display: block;
     font-family: var(--font-mono);
-    font-size: 10px;
+    font-size: 11.5px;
     font-weight: 600;
     letter-spacing: 0.08em;
     text-transform: uppercase;
     color: var(--acc);
-    margin-bottom: 2px;
+    margin-bottom: 4px;
   }
   /* The first cell names the row, so it reads as the card's heading and
      does not repeat the column label above it. */
   .stack-table td:first-child::before { display: none; }
-  .stack-table td:first-child { font-size: 1.03em; padding-bottom: 7px; }
+  .stack-table td:first-child { font-size: 1.06em; padding-bottom: 9px; }
 }

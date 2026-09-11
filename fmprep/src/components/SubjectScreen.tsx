@@ -27,7 +27,7 @@ export default function SubjectScreen({
 
   if (!subject) {
     return (
-      <div className="mx-auto max-w-3xl px-3 py-5 md:px-6">
+      <div className="mx-auto max-w-3xl px-3 py-6 md:px-6">
         <BackBar onBack={onBack} label="Library" />
         <Empty title="Subject not found" body="It may have been renamed. Go back to the library and pick it again." />
       </div>
@@ -39,13 +39,13 @@ export default function SubjectScreen({
   const theoryCount = subject.topics.reduce((n, t) => n + (t.theory?.length ?? 0), 0);
 
   return (
-    <div className="mx-auto max-w-3xl px-3 py-5 md:px-6">
+    <div className="mx-auto max-w-3xl px-3 py-6 md:px-6">
       <BackBar onBack={onBack} label="Library" />
 
-      <header className="mt-5">
-        <h1 className="text-2xl font-bold tracking-tight text-slate-900">{subject.title}</h1>
-        <p className="mt-1 leading-relaxed text-slate-700">{subject.blurb}</p>
-        <div className="mt-3 flex flex-wrap gap-1.5">
+      <header className="mt-6">
+        <h1 className="text-[26px] font-bold leading-[1.25] tracking-tight text-slate-900">{subject.title}</h1>
+        <p className="mt-1.5 text-[17.5px] leading-[1.7] text-slate-700">{subject.blurb}</p>
+        <div className="mt-4 flex flex-wrap gap-2">
           <Chip tone="blue">Paper {subject.papers.join(", ")}</Chip>
           <Chip>{subject.topics.length} topics</Chip>
           <Chip>{theoryCount} theory questions</Chip>
@@ -58,18 +58,18 @@ export default function SubjectScreen({
         <button
           type="button"
           onClick={() => onPractiseSubject(subject.id)}
-          className="mt-4 w-full rounded-xl bg-teal-900 px-4 py-3 text-sm font-bold text-white shadow-sm hover:bg-teal-800"
+          className="mt-5 w-full rounded-xl bg-teal-900 px-4 py-3.5 text-[15px] font-bold text-white shadow-sm hover:bg-teal-800"
         >
           Practise {Math.min(questionCount, 25)} questions from {subject.title}
         </button>
       )}
 
       {groups.map((group) => (
-        <section key={group.band} className="mt-6">
+        <section key={group.band} className="mt-8">
           <h2 className="text-xs font-bold uppercase tracking-widest text-slate-500">
             {FREQUENCY_LABEL[group.band]}
           </h2>
-          <div className="mt-2 space-y-2">
+          <div className="mt-3 space-y-3">
             {group.topics.map((topic) => (
               <RowButton
                 key={topic.id}
@@ -90,9 +90,9 @@ export default function SubjectScreen({
       ))}
 
       {subject.cases && subject.cases.length > 0 && (
-        <section className="mt-8">
+        <section className="mt-10">
           <h2 className="text-xs font-bold uppercase tracking-widest text-slate-500">Cases in this subject</h2>
-          <div className="mt-2 space-y-2">
+          <div className="mt-3 space-y-3">
             {subject.cases.map((c) => (
               <RowButton
                 key={c.id}

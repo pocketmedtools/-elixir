@@ -12,7 +12,7 @@ export default function TheoryAnswer({ question }: { question: TheoryQuestion })
     <div className="mt-3">
       <div className="rounded-lg border border-emerald-200 bg-emerald-50 p-3">
         <p className="text-xs font-bold uppercase tracking-wide text-emerald-900">Open with this</p>
-        <ul className="mt-1.5 space-y-1.5 text-sm leading-relaxed text-emerald-950">
+        <ul className="mt-2.5 space-y-2.5 text-[16.5px] leading-[1.7] text-emerald-950">
           {question.openingLines.map((line, i) => (
             <li key={i}>{line}</li>
           ))}
@@ -30,7 +30,7 @@ export default function TheoryAnswer({ question }: { question: TheoryQuestion })
       {question.markSplit && question.markSplit.length > 0 && (
         <section className="mt-6">
           <h3 className="text-base font-bold tracking-tight text-slate-900">Where the marks are</h3>
-          <ul className="mt-2 space-y-1.5 text-sm">
+          <ul className="mt-3 space-y-2 text-[15.5px]">
             {question.markSplit.map((part, i) => (
               <li key={i} className="flex items-baseline justify-between gap-3 border-b border-slate-100 pb-1.5">
                 <span className="text-slate-800">{part.part}</span>
@@ -39,7 +39,7 @@ export default function TheoryAnswer({ question }: { question: TheoryQuestion })
             ))}
           </ul>
           {total > 0 && (
-            <p className="mt-2 text-xs text-slate-600">
+            <p className="mt-3 text-[13.5px] text-slate-600">
               {total} of {question.marks} marks accounted for; spend about {question.minutes} minutes on this answer.
             </p>
           )}

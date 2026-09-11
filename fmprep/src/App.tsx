@@ -27,18 +27,18 @@ export default function App() {
         >
           <GraduationCap className="h-14 w-14 text-[var(--accent)]" />
           <p className="mt-3 text-lg font-bold tracking-tight text-slate-900">FM Prep</p>
-          <p className="mt-1 text-xs text-slate-500">Family Medicine exam</p>
+          <p className="mt-1 text-[13px] text-slate-500">Family Medicine exam</p>
         </div>
       )}
 
       {/* Not sticky: each screen has its own sticky back bar, and two stacked
           sticky rows would cover it. */}
       <header className="app-header border-b border-[var(--line)] bg-white">
-        <div className="mx-auto flex max-w-4xl items-center gap-2 px-3 py-2.5 md:px-6">
+        <div className="mx-auto flex max-w-4xl items-center gap-2.5 px-3 py-3 md:px-6">
           <GraduationCap className="h-6 w-6 shrink-0 text-[var(--accent)]" aria-hidden />
           <div className="min-w-0 flex-1">
-            <p className="text-sm font-bold leading-tight tracking-tight text-slate-900">FM Prep</p>
-            <p className="hidden text-[11px] leading-tight text-slate-500 sm:block">
+            <p className="text-[15px] font-bold leading-tight tracking-tight text-slate-900">FM Prep</p>
+            <p className="hidden text-[13px] leading-snug text-slate-500 sm:block">
               DNB / MD Family Medicine — notes, papers, cases, questions
             </p>
           </div>
@@ -48,7 +48,7 @@ export default function App() {
             href="https://raw.githubusercontent.com/pocketmedtools/-elixir/fmprep-apk/FM-Prep.apk"
             target="_blank"
             rel="noopener"
-            className="shrink-0 rounded-lg bg-slate-900 px-3 py-1.5 text-xs font-semibold text-white hover:bg-slate-800"
+            className="shrink-0 rounded-lg bg-slate-900 px-3 py-2 text-[13px] font-semibold text-white hover:bg-slate-800"
           >
             <span className="hidden sm:inline">Download Android app</span>
             <span className="sm:hidden">Get app</span>

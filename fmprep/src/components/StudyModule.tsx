@@ -147,7 +147,7 @@ export default function StudyModule() {
         <ContentGate need="all">
           <Suspense
             fallback={
-              <p className="mx-auto max-w-3xl px-3 py-10 text-center text-sm text-slate-600">
+              <p className="mx-auto max-w-3xl px-3 py-10 text-center text-[15px] text-slate-600">
                 Opening the question papers…
               </p>
             }

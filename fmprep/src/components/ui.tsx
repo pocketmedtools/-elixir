@@ -121,15 +121,15 @@ export function SectionBlock({
   index?: number;
 }) {
   return (
-    <section id={id} className="mt-8 scroll-mt-20 first:mt-0">
+    <section id={id} className="mt-10 scroll-mt-20 first:mt-0">
       <h3
-        className="flex items-baseline gap-2.5 pb-2 text-lg font-bold tracking-tight text-slate-900"
+        className="flex items-baseline gap-3 pb-2.5 text-[1.2em] font-bold leading-snug tracking-tight text-slate-900"
         style={{ borderBottom: "2px solid var(--acc-rule)" }}
       >
         {index !== undefined && (
           <span
             aria-hidden
-            className="shrink-0 rounded px-1.5 py-1 font-mono text-[11px] leading-none text-white"
+            className="shrink-0 rounded px-2 py-1 font-mono text-[12px] leading-none text-white"
             style={{ background: "var(--acc)" }}
           >
             {String(index).padStart(2, "0")}
@@ -137,12 +137,12 @@ export function SectionBlock({
         )}
         {section.heading}
       </h3>
-      <ul className="mt-3 space-y-2.5">
+      <ul className="mt-4 space-y-4">
         {section.points.map((point, i) => (
-          <li key={i} className="flex gap-2.5 leading-relaxed">
+          <li key={i} className="flex gap-3 leading-[1.7]">
             <span
               aria-hidden
-              className="mt-[0.5em] h-[7px] w-[7px] shrink-0 rounded-sm opacity-60"
+              className="mt-[0.55em] h-[7px] w-[7px] shrink-0 rounded-sm opacity-60"
               style={{ background: "var(--acc)" }}
             />
             <span>
@@ -157,16 +157,16 @@ export function SectionBlock({
 
 export function TableBlock({ table }: { table: NoteTable }) {
   return (
-    <section className="mt-6">
-      <h3 className="text-base font-bold tracking-tight text-slate-900">{table.heading}</h3>
-      <div className="mt-2 -mx-3 overflow-x-auto px-3">
-        <table className="stack-table w-full border-collapse overflow-hidden rounded-lg text-left text-sm sm:min-w-[34rem]">
+    <section className="mt-8">
+      <h3 className="text-[1.08em] font-bold leading-snug tracking-tight text-slate-900">{table.heading}</h3>
+      <div className="mt-3 -mx-3 overflow-x-auto px-3">
+        <table className="stack-table w-full border-collapse overflow-hidden rounded-lg text-left text-[0.92em] leading-[1.55] sm:min-w-[34rem]">
           <thead>
             <tr>
               {table.columns.map((c, i) => (
                 <th
                   key={i}
-                  className="px-3 py-2 text-left align-bottom font-mono text-[10.5px] font-semibold uppercase tracking-wider"
+                  className="px-3.5 py-2.5 text-left align-bottom font-mono text-[12px] font-semibold uppercase tracking-wider"
                   style={{
                     color: "var(--acc)",
                     background: "var(--wash)",
@@ -185,7 +185,7 @@ export function TableBlock({ table }: { table: NoteTable }) {
                   <td
                     key={ci}
                     data-col={table.columns[ci]}
-                    className={`border-b border-slate-200 px-3 py-2 leading-snug ${ci === 0 ? "font-semibold" : ""}`}
+                    className={`border-b border-slate-200 px-3 py-2.5 leading-[1.55] ${ci === 0 ? "font-semibold" : ""}`}
                   >
                     <RichText text={cell} />
                   </td>
@@ -215,12 +215,12 @@ export function Callout({
     note: "border-slate-200 bg-slate-50 text-slate-900",
   }[tone];
   return (
-    <section className={`mt-6 rounded-xl border p-4 ${styles}`}>
-      <h3 className="text-sm font-bold uppercase tracking-wide">{title}</h3>
-      <ul className="mt-2 space-y-2 text-sm leading-relaxed">
+    <section className={`mt-8 rounded-xl border p-5 ${styles}`}>
+      <h3 className="text-[15px] font-bold uppercase tracking-wide">{title}</h3>
+      <ul className="mt-3 space-y-4 text-[0.95em] leading-[1.7]">
         {items.map((item, i) => (
-          <li key={i} className="flex gap-2">
-            <span aria-hidden className="mt-[0.55em] h-1.5 w-1.5 shrink-0 rounded-full bg-current opacity-60" />
+          <li key={i} className="flex gap-3">
+            <span aria-hidden className="mt-[0.6em] h-1.5 w-1.5 shrink-0 rounded-full bg-current opacity-60" />
             <span>
               <RichText text={item} />
             </span>
@@ -249,7 +249,7 @@ export function FrequencyChip({ frequency }: { frequency: Frequency }) {
   return (
     <span
       title={FREQUENCY_LABEL[frequency]}
-      className={`rounded-full px-2 py-0.5 text-[11px] font-bold ${FREQ_CHIP[frequency]}`}
+      className={`rounded-full px-2.5 py-1 text-[13px] font-bold ${FREQ_CHIP[frequency]}`}
     >
       {FREQ_SHORT[frequency]}
     </span>
@@ -262,7 +262,7 @@ export function Chip({ children, tone = "slate" }: { children: ReactNode; tone?:
     blue: "bg-blue-100 text-blue-900",
     teal: "bg-teal-100 text-teal-900",
   }[tone];
-  return <span className={`rounded-full px-2 py-0.5 text-[11px] font-semibold ${styles}`}>{children}</span>;
+  return <span className={`rounded-full px-2.5 py-1 text-[13px] font-semibold ${styles}`}>{children}</span>;
 }
 
 export function BackBar({
@@ -275,11 +275,11 @@ export function BackBar({
   right?: ReactNode;
 }) {
   return (
-    <div className="sticky top-0 z-20 -mx-3 flex items-center gap-2 border-b border-slate-200 bg-white/95 px-3 py-2 backdrop-blur md:-mx-6 md:px-6">
+    <div className="sticky top-0 z-20 -mx-3 flex items-center gap-2 border-b border-slate-200 bg-white/95 px-3 py-2.5 backdrop-blur md:-mx-6 md:px-6">
       <button
         type="button"
         onClick={onBack}
-        className="rounded-lg px-2 py-1 text-sm font-semibold text-slate-700 hover:bg-slate-100"
+        className="min-w-0 truncate rounded-lg px-2 py-1.5 text-[15px] font-semibold text-slate-700 hover:bg-slate-100"
       >
         ← {label}
       </button>
@@ -291,8 +291,8 @@ export function BackBar({
 export function Empty({ title, body }: { title: string; body: string }) {
   return (
     <div className="mt-8 rounded-xl border border-dashed border-slate-300 bg-white p-6 text-center">
-      <p className="font-bold text-slate-900">{title}</p>
-      <p className="mx-auto mt-1 max-w-md text-sm text-slate-600">{body}</p>
+      <p className="text-[17px] font-bold text-slate-900">{title}</p>
+      <p className="mx-auto mt-1.5 max-w-md text-[15px] leading-[1.6] text-slate-600">{body}</p>
     </div>
   );
 }
@@ -315,12 +315,12 @@ export function RowButton({
     <button
       type="button"
       onClick={onClick}
-      className="flex w-full items-start gap-3 rounded-xl border border-slate-200 bg-white p-3.5 text-left shadow-sm transition hover:shadow"
+      className="flex w-full items-start gap-3.5 rounded-xl border border-slate-200 bg-white p-4 text-left shadow-sm transition hover:shadow"
     >
       {left}
       <span className="min-w-0 flex-1">
-        <span className="block font-bold leading-snug text-slate-900">{title}</span>
-        {subtitle && <span className="mt-0.5 block text-xs leading-snug text-slate-600">{subtitle}</span>}
+        <span className="block text-[17px] font-bold leading-snug text-slate-900">{title}</span>
+        {subtitle && <span className="mt-1 block text-[13.5px] leading-[1.55] text-slate-600">{subtitle}</span>}
       </span>
       {right}
     </button>

@@ -47,7 +47,7 @@ export function CaseList({
       <button
         type="button"
         onClick={onHowTo}
-        className="mt-3 w-full rounded-xl border border-amber-200 bg-amber-50 px-4 py-3 text-left text-sm font-semibold text-amber-950"
+        className="mt-4 w-full rounded-xl border border-amber-200 bg-amber-50 px-4 py-3.5 text-left text-[15px] font-semibold text-amber-950"
       >
         New to the format? Read how a case is presented and marked →
       </button>
@@ -109,7 +109,7 @@ export function CaseReader({ caseId, onBack }: { caseId: string; onBack: () => v
           <Chip tone="teal">{found.subjectTitle}</Chip>
         </div>
         <h1 className="mt-2 text-2xl font-bold leading-tight tracking-tight text-slate-900">{c.title}</h1>
-        <p className="mt-2 rounded-xl border border-slate-200 bg-white p-3 leading-relaxed text-slate-800 shadow-sm">
+        <p className="mt-3 rounded-xl border border-slate-200 bg-white p-4 text-[17.5px] leading-[1.7] text-slate-800 shadow-sm">
           {c.opening}
         </p>
       </header>
@@ -122,17 +122,17 @@ export function CaseReader({ caseId, onBack }: { caseId: string; onBack: () => v
 
       <section className="mt-6 rounded-xl border border-emerald-200 bg-emerald-50 p-4">
         <h3 className="text-sm font-bold uppercase tracking-wide text-emerald-900">Summary statement</h3>
-        <p className="mt-1.5 leading-relaxed text-emerald-950">{c.summaryStatement}</p>
+        <p className="mt-2 text-[17.5px] leading-[1.7] text-emerald-950">{c.summaryStatement}</p>
       </section>
 
       {c.differential.length > 0 && (
         <section className="mt-6">
-          <h3 className="text-base font-bold tracking-tight text-slate-900">Differential, argued both ways</h3>
+          <h3 className="text-[19px] font-bold tracking-tight text-slate-900">Differential, argued both ways</h3>
           <div className="mt-2 space-y-2">
             {c.differential.map((d, i) => (
-              <div key={i} className="rounded-xl border border-slate-200 bg-white p-3 shadow-sm">
-                <p className="font-bold text-slate-900">{d.diagnosis}</p>
-                <p className="mt-1 text-sm leading-relaxed text-emerald-900">
+              <div key={i} className="rounded-xl border border-slate-200 bg-white p-4 shadow-sm">
+                <p className="text-[17.5px] font-bold text-slate-900">{d.diagnosis}</p>
+                <p className="mt-2 text-[16px] leading-[1.65] text-emerald-900">
                   <span className="font-semibold">For: </span>
                   {d.forIt}
                 </p>
@@ -148,13 +148,13 @@ export function CaseReader({ caseId, onBack }: { caseId: string; onBack: () => v
 
       {c.investigations.length > 0 && (
         <section className="mt-6">
-          <h3 className="text-base font-bold tracking-tight text-slate-900">Investigations, with a reason each</h3>
-          <div className="mt-2 -mx-3 overflow-x-auto px-3">
-            <table className="w-full min-w-[34rem] border-collapse text-left text-sm">
+          <h3 className="text-lg font-bold tracking-tight text-slate-900">Investigations, with a reason each</h3>
+          <div className="mt-3 -mx-3 overflow-x-auto px-3">
+            <table className="stack-table w-full border-collapse text-left text-[16.5px] leading-[1.5] sm:min-w-[38rem]">
               <thead>
                 <tr>
                   {["Test", "Why", "What you expect"].map((h) => (
-                    <th key={h} className="border-b-2 border-slate-300 pb-1.5 pr-3 font-bold text-slate-900">
+                    <th key={h} className="border-b-2 border-slate-300 pb-2 pr-3 font-bold text-slate-900">
                       {h}
                     </th>
                   ))}
@@ -163,9 +163,9 @@ export function CaseReader({ caseId, onBack }: { caseId: string; onBack: () => v
               <tbody>
                 {c.investigations.map((inv, i) => (
                   <tr key={i} className="align-top">
-                    <td className="border-b border-slate-200 py-2 pr-3 font-semibold">{inv.test}</td>
-                    <td className="border-b border-slate-200 py-2 pr-3">{inv.why}</td>
-                    <td className="border-b border-slate-200 py-2 pr-3">{inv.expected}</td>
+                    <td className="border-b border-slate-200 py-2.5 pr-3 leading-[1.6] font-semibold">{inv.test}</td>
+                    <td data-col="Why" className="border-b border-slate-200 py-2.5 pr-3 leading-[1.6]">{inv.why}</td>
+                    <td data-col="What you expect" className="border-b border-slate-200 py-2.5 pr-3 leading-[1.6]">{inv.expected}</td>
                   </tr>
                 ))}
               </tbody>
@@ -180,19 +180,19 @@ export function CaseReader({ caseId, onBack }: { caseId: string; onBack: () => v
 
       {c.viva.length > 0 && (
         <section className="mt-8">
-          <h3 className="text-base font-bold tracking-tight text-slate-900">The viva that follows</h3>
-          <p className="mt-1 text-xs text-slate-600">Answer it in your head first, then check.</p>
+          <h3 className="text-[19px] font-bold tracking-tight text-slate-900">The viva that follows</h3>
+          <p className="mt-2 text-[13.5px] text-slate-600">Answer it in your head first, then check.</p>
           <div className="mt-2 space-y-2">
             {c.viva.map((v, i) => (
-              <div key={i} className="rounded-xl border border-slate-200 bg-white p-3.5 shadow-sm">
-                <p className="font-semibold text-slate-900">{v.q}</p>
+              <div key={i} className="rounded-xl border border-slate-200 bg-white p-4 shadow-sm">
+                <p className="text-[17.5px] font-semibold leading-[1.5] text-slate-900">{v.q}</p>
                 {showViva[i] ? (
-                  <p className="mt-1.5 leading-relaxed text-slate-800">{v.a}</p>
+                  <p className="mt-2.5 text-[17.5px] leading-[1.7] text-slate-800">{v.a}</p>
                 ) : (
                   <button
                     type="button"
                     onClick={() => setShowViva((s) => ({ ...s, [i]: true }))}
-                    className="mt-2 rounded-lg border border-slate-300 px-3 py-1.5 text-xs font-semibold text-slate-700"
+                    className="mt-3 rounded-lg border border-slate-300 px-3.5 py-2 text-[13.5px] font-semibold text-slate-700"
                   >
                     Show the answer
                   </button>
@@ -208,7 +208,7 @@ export function CaseReader({ caseId, onBack }: { caseId: string; onBack: () => v
       {c.references.length > 0 && (
         <section className="mt-8 border-t border-slate-200 pt-4">
           <h3 className="text-xs font-bold uppercase tracking-widest text-slate-500">References</h3>
-          <ul className="mt-2 space-y-1 text-xs leading-relaxed text-slate-600">
+          <ul className="mt-3 space-y-1.5 text-[13px] leading-[1.6] text-slate-600">
             {c.references.map((r, i) => (
               <li key={i}>{r}</li>
             ))}

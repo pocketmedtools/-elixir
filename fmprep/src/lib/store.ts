@@ -55,7 +55,7 @@ export type Settings = {
   examMinutes: number;
   /** New cards introduced per day. */
   newCardsPerDay: number;
-  /** Reader body size multiplier, 0.9 to 1.5. */
+  /** Reader body size multiplier, 0.9 to 1.5, applied on top of the reader's 1.1rem base — so 1 reads at 17.6px, 0.9 at 15.8px and 1.5 at 26.4px. */
   readerScale: number;
   /** Serif body text — easier for long reading for some people. */
   readerSerif: boolean;

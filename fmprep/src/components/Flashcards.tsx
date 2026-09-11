@@ -88,11 +88,11 @@ export default function Flashcards({
         onClick={() => setFlipped(true)}
         className="mt-2 min-h-[11rem] w-full rounded-2xl border border-slate-200 bg-white p-6 text-left shadow-sm"
       >
-        <p className="text-lg font-semibold leading-relaxed text-slate-900">{current.card.front}</p>
+        <p className="text-[19.5px] font-semibold leading-[1.5] text-slate-900">{current.card.front}</p>
         {flipped ? (
-          <p className="mt-4 border-t border-slate-200 pt-4 leading-relaxed text-slate-800">{current.card.back}</p>
+          <p className="mt-5 border-t border-slate-200 pt-5 text-[17.5px] leading-[1.7] text-slate-800">{current.card.back}</p>
         ) : (
-          <p className="mt-4 text-sm text-slate-500">Tap to see the answer</p>
+          <p className="mt-5 text-[15px] text-slate-500">Tap to see the answer</p>
         )}
       </button>
 
@@ -106,7 +106,7 @@ export default function Flashcards({
               className={`rounded-xl px-2 py-3 text-center text-white ${g.cls}`}
             >
               <span className="block text-sm font-bold">{g.label}</span>
-              <span className="mt-0.5 block text-[11px] opacity-90">
+              <span className="mt-1 block text-[13px] opacity-90">
                 {intervalPreview(cardState, g.grade, now)}
               </span>
             </button>

@@ -83,9 +83,9 @@ export default function TopicReader({
 
   return (
     <div
-      className="subject-theme mx-auto max-w-3xl px-3 py-5 md:px-6"
+      className="subject-theme mx-auto max-w-[42rem] px-3 py-5 md:px-6"
       style={{
-        fontSize: `${readerScale}rem`,
+        fontSize: `${(readerScale * 1.1).toFixed(3)}rem`,
         // The reading face is the serif; the toggle drops back to the UI sans
         // for anyone who prefers it. Both stacks are system fonts, so the
         // installed app renders them with no network.
@@ -104,7 +104,7 @@ export default function TopicReader({
               type="button"
               aria-label="Smaller text"
               onClick={() => updateSettings({ readerScale: Math.max(0.9, Number((readerScale - 0.1).toFixed(2))) })}
-              className="rounded-lg border border-slate-300 bg-white px-2 py-1 text-xs font-bold text-slate-700"
+              className="rounded-lg border border-slate-300 bg-white px-2 py-1.5 text-[13px] font-bold text-slate-700"
             >
               A-
             </button>
@@ -112,14 +112,14 @@ export default function TopicReader({
               type="button"
               aria-label="Larger text"
               onClick={() => updateSettings({ readerScale: Math.min(1.5, Number((readerScale + 0.1).toFixed(2))) })}
-              className="rounded-lg border border-slate-300 bg-white px-2 py-1 text-sm font-bold text-slate-700"
+              className="rounded-lg border border-slate-300 bg-white px-2 py-1.5 text-[15px] font-bold text-slate-700"
             >
               A+
             </button>
             <button
               type="button"
               onClick={() => updateSettings({ readerSerif: !readerSerif })}
-              className="rounded-lg border border-slate-300 bg-white px-2 py-1 text-xs font-semibold text-slate-700"
+              className="rounded-lg border border-slate-300 bg-white px-2 py-1.5 text-[13px] font-semibold text-slate-700"
             >
               {readerSerif ? "Sans" : "Serif"}
             </button>
@@ -127,7 +127,7 @@ export default function TopicReader({
               type="button"
               onClick={() => toggleBookmark(topic.id)}
               aria-pressed={bookmarked}
-              className={`rounded-lg border px-2 py-1 text-xs font-semibold ${
+              className={`rounded-lg border px-2 py-1.5 text-[13px] font-semibold ${
                 bookmarked ? "border-amber-300 bg-amber-100 text-amber-900" : "border-slate-300 bg-white text-slate-700"
               }`}
             >
@@ -137,24 +137,24 @@ export default function TopicReader({
         }
       />
 
-      <header className="mt-5">
+      <header className="mt-6">
         <div className="flex flex-wrap items-center gap-2">
           <FrequencyChip frequency={topic.frequency} />
           <Chip>{subjectTitle}</Chip>
         </div>
-        <h1 className="mt-2 text-2xl font-bold leading-tight tracking-tight text-slate-900">{topic.title}</h1>
-        <p className="mt-2 rounded-xl border border-slate-200 bg-white p-3 leading-relaxed text-slate-800 shadow-sm">
+        <h1 className="mt-3 text-[1.5em] font-bold leading-tight tracking-tight text-slate-900">{topic.title}</h1>
+        <p className="mt-3 rounded-xl border border-slate-200 bg-white p-4 text-[1.05em] leading-[1.7] text-slate-800 shadow-sm">
           <RichText text={topic.oneLiner} />
         </p>
       </header>
 
       {topic.sections.length > 1 && (
-        <nav aria-label="Sections" className="mt-4 flex flex-wrap gap-1.5">
+        <nav aria-label="Sections" className="mt-5 flex flex-wrap gap-2">
           {topic.sections.map((s, i) => (
             <a
               key={i}
               href={`#${slug(s.heading, i)}`}
-              className="rounded-full bg-slate-100 px-2.5 py-1 text-xs font-semibold text-slate-700 hover:bg-slate-200"
+              className="rounded-full bg-slate-100 px-3 py-1.5 text-[13px] font-semibold text-slate-700 hover:bg-slate-200"
             >
               {s.heading}
             </a>
@@ -162,16 +162,16 @@ export default function TopicReader({
         </nav>
       )}
 
-      <article className="mt-2">
+      <article className="mt-5">
         {diagrams.length > 0 && (
-          <section className="mt-6">
+          <section className="mt-8">
             <h3
-              className="flex items-baseline gap-2.5 pb-2 text-lg font-bold tracking-tight text-slate-900"
+              className="flex items-baseline gap-3 pb-2.5 text-[1.2em] font-bold leading-snug tracking-tight text-slate-900"
               style={{ borderBottom: "2px solid var(--acc-rule)" }}
             >
               <span
                 aria-hidden
-                className="shrink-0 rounded px-1.5 py-1 font-mono text-[11px] leading-none text-white"
+                className="shrink-0 rounded px-2 py-1 font-mono text-[12px] leading-none text-white"
                 style={{ background: "var(--acc)" }}
               >
                 00
@@ -195,13 +195,13 @@ export default function TopicReader({
 
       {topic.theory && topic.theory.length > 0 && (
         <section className="mt-8">
-          <h2 className="text-lg font-bold tracking-tight text-slate-900">
+          <h2 className="text-[1.2em] font-bold leading-snug tracking-tight text-slate-900">
             Theory questions from this topic ({topic.theory.length})
           </h2>
-          <p className="mt-1 text-xs text-slate-600">
+          <p className="mt-2 text-[13.5px] leading-relaxed text-slate-600">
             Written-paper style, with the model answer laid out in the order it should be written.
           </p>
-          <div className="mt-3 space-y-2">
+          <div className="mt-4 space-y-3">
             {topic.theory.map((q) => {
               const open = openTheory === q.id;
               return (
@@ -209,7 +209,7 @@ export default function TopicReader({
                   <button
                     type="button"
                     onClick={() => setOpenTheory(open ? null : q.id)}
-                    className="flex w-full items-start gap-2 p-3.5 text-left"
+                    className="flex w-full items-start gap-2.5 p-4 text-left"
                   >
                     <span className="min-w-0 flex-1">
                       <span className="block font-semibold leading-snug text-slate-900">{q.question}</span>
@@ -248,7 +248,7 @@ export default function TopicReader({
         <button
           type="button"
           onClick={() => onPractise(topic.id)}
-          className="mt-8 w-full rounded-xl bg-teal-900 px-4 py-3 text-center text-sm font-bold text-white shadow-sm hover:bg-teal-800"
+          className="mt-10 w-full rounded-xl bg-teal-900 px-4 py-3.5 text-center text-[15px] font-bold text-white shadow-sm hover:bg-teal-800"
         >
           Practise {topic.mcqs.length} questions from this topic
         </button>
@@ -257,7 +257,7 @@ export default function TopicReader({
       {topic.references.length > 0 && (
         <section className="mt-8 border-t border-slate-200 pt-4">
           <h2 className="text-xs font-bold uppercase tracking-widest text-slate-500">References</h2>
-          <ul className="mt-2 space-y-1 text-xs leading-relaxed text-slate-600">
+          <ul className="mt-3 space-y-2 text-[13.5px] leading-relaxed text-slate-600">
             {topic.references.map((r, i) => (
               <li key={i}>{r}</li>
             ))}
@@ -272,8 +272,8 @@ export default function TopicReader({
             onClick={() => onOpenTopic(near.prev!.topic.id)}
             className="min-w-0 flex-1 rounded-xl border border-slate-200 bg-white p-3 text-left shadow-sm"
           >
-            <span className="block text-[11px] font-semibold uppercase tracking-wide text-slate-500">Previous</span>
-            <span className="mt-0.5 block truncate text-sm font-bold text-slate-900">{near.prev.topic.title}</span>
+            <span className="block text-[13px] font-semibold uppercase tracking-wide text-slate-500">Previous</span>
+            <span className="mt-1 block truncate text-[15px] font-bold text-slate-900">{near.prev.topic.title}</span>
           </button>
         )}
         {near.next && (
@@ -282,8 +282,8 @@ export default function TopicReader({
             onClick={() => onOpenTopic(near.next!.topic.id)}
             className="min-w-0 flex-1 rounded-xl border border-slate-200 bg-white p-3 text-right shadow-sm"
           >
-            <span className="block text-[11px] font-semibold uppercase tracking-wide text-slate-500">Next</span>
-            <span className="mt-0.5 block truncate text-sm font-bold text-slate-900">{near.next.topic.title}</span>
+            <span className="block text-[13px] font-semibold uppercase tracking-wide text-slate-500">Next</span>
+            <span className="mt-1 block truncate text-[15px] font-bold text-slate-900">{near.next.topic.title}</span>
           </button>
         )}
       </nav>

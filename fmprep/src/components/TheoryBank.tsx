@@ -43,15 +43,15 @@ export default function TheoryBank({
   }, [all, paper, band, subjectId]);
 
   const filterBtn = (active: boolean) =>
-    `rounded-full px-3 py-1.5 text-xs font-semibold transition ${
+    `rounded-full px-3.5 py-2 text-[13px] font-semibold transition ${
       active ? "bg-slate-900 text-white" : "bg-slate-100 text-slate-700 hover:bg-slate-200"
     }`;
 
   return (
     <div className="mx-auto max-w-3xl px-3 py-5 md:px-6">
       <BackBar onBack={onBack} label="Study" />
-      <h1 className="mt-5 text-2xl font-bold tracking-tight text-slate-900">Theory question bank</h1>
-      <p className="mt-1 leading-relaxed text-slate-700">
+      <h1 className="mt-5 text-[26px] font-bold leading-tight tracking-tight text-slate-900">Theory question bank</h1>
+      <p className="mt-2 text-[17.5px] leading-[1.7] text-slate-700">
         {all.length} written-paper questions in the shapes the papers actually use — long answers, short notes,
         enumerations and differentiations — each with a model answer written in the order it should be put down.
       </p>
@@ -80,7 +80,7 @@ export default function TheoryBank({
         <select
           value={subjectId}
           onChange={(e) => setSubjectId(e.target.value)}
-          className="w-full rounded-lg border border-slate-300 bg-white px-3 py-2 text-sm font-semibold text-slate-800"
+          className="w-full rounded-lg border border-slate-300 bg-white px-3.5 py-2.5 text-base font-semibold text-slate-800"
         >
           <option value="all">Every subject</option>
           {subjectList.map((s) => (
@@ -91,12 +91,12 @@ export default function TheoryBank({
         </select>
       </div>
 
-      <p className="mt-3 text-xs text-slate-500">{list.length} questions</p>
+      <p className="mt-4 text-[13px] text-slate-500">{list.length} questions</p>
 
       {list.length === 0 ? (
         <Empty title="Nothing matches those filters" body="Widen the paper or frequency filter to see questions again." />
       ) : (
-        <div className="mt-2 space-y-2">
+        <div className="mt-3 space-y-3">
           {list.map((t) => {
             const isOpen = open === t.question.id;
             return (
@@ -104,11 +104,11 @@ export default function TheoryBank({
                 <button
                   type="button"
                   onClick={() => setOpen(isOpen ? null : t.question.id)}
-                  className="flex w-full items-start gap-2 p-3.5 text-left"
+                  className="flex w-full items-start gap-2 p-4 text-left"
                 >
                   <span className="min-w-0 flex-1">
-                    <span className="block font-semibold leading-snug text-slate-900">{t.question.question}</span>
-                    <span className="mt-1.5 flex flex-wrap items-center gap-1.5">
+                    <span className="block text-[17.5px] font-semibold leading-[1.5] text-slate-900">{t.question.question}</span>
+                    <span className="mt-2.5 flex flex-wrap items-center gap-2">
                       <Chip tone="blue">Paper {t.question.paper}</Chip>
                       <Chip>{t.question.marks} marks</Chip>
                       <Chip>{t.question.minutes} min</Chip>
@@ -119,7 +119,7 @@ export default function TheoryBank({
                   <span aria-hidden className="text-slate-400">{isOpen ? "▾" : "▸"}</span>
                 </button>
                 {isOpen && (
-                  <div className="border-t border-slate-100 px-3.5 pb-4">
+                  <div className="border-t border-slate-100 px-4 pb-5">
                     {!revealed[t.question.id] ? (
                       <div className="mt-3 flex flex-wrap gap-2">
                         <button
@@ -132,7 +132,7 @@ export default function TheoryBank({
                         <button
                           type="button"
                           onClick={() => onOpenTopic(t.topicId)}
-                          className="rounded-lg border border-slate-300 bg-white px-3 py-2 text-sm font-semibold text-slate-800"
+                          className="rounded-lg border border-slate-300 bg-white px-3.5 py-2.5 text-[15px] font-semibold text-slate-800"
                         >
                           Read the topic first
                         </button>

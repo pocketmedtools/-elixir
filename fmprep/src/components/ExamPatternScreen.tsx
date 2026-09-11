@@ -21,7 +21,7 @@ export default function ExamPatternScreen({ onBack }: { onBack: () => void }) {
             <p key={i}>{line}</p>
           ))}
         </div>
-        <p className="mt-3 rounded-xl border border-amber-200 bg-amber-50 p-3 text-sm leading-relaxed text-amber-950">
+        <p className="mt-4 rounded-xl border border-amber-200 bg-amber-50 p-4 text-[15.5px] leading-[1.65] text-amber-950">
           {blueprint.sourceNote}
         </p>
       </header>
@@ -51,21 +51,21 @@ export default function ExamPatternScreen({ onBack }: { onBack: () => void }) {
                 </button>
                 {open && (
                   <div className="border-t border-slate-100 px-3.5 pb-4 pt-3">
-                    <h3 className="text-sm font-bold text-slate-900">What it covers</h3>
-                    <ul className="mt-1.5 space-y-1 text-sm leading-relaxed text-slate-800">
+                    <h3 className="text-[18px] font-bold text-slate-900">What it covers</h3>
+                    <ul className="mt-2.5 space-y-2.5 text-[16.5px] leading-[1.7] text-slate-800">
                       {paper.covers.map((c, i) => (
                         <li key={i} className="flex gap-2">
-                          <span aria-hidden className="mt-[0.55em] h-1.5 w-1.5 shrink-0 rounded-full bg-slate-400" />
+                          <span aria-hidden className="mt-[0.6em] h-1.5 w-1.5 shrink-0 rounded-full bg-slate-400" />
                           <span>{c}</span>
                         </li>
                       ))}
                     </ul>
 
-                    <h3 className="mt-4 text-sm font-bold text-slate-900">How the paper is built</h3>
-                    <ul className="mt-1.5 space-y-1 text-sm leading-relaxed text-slate-800">
+                    <h3 className="mt-4 text-[18px] font-bold text-slate-900">How the paper is built</h3>
+                    <ul className="mt-2.5 space-y-2.5 text-[16.5px] leading-[1.7] text-slate-800">
                       {paper.structure.map((s, i) => (
                         <li key={i} className="flex gap-2">
-                          <span aria-hidden className="mt-[0.55em] h-1.5 w-1.5 shrink-0 rounded-full bg-slate-400" />
+                          <span aria-hidden className="mt-[0.6em] h-1.5 w-1.5 shrink-0 rounded-full bg-slate-400" />
                           <span>{s}</span>
                         </li>
                       ))}
@@ -73,7 +73,7 @@ export default function ExamPatternScreen({ onBack }: { onBack: () => void }) {
 
                     {paper.recurringThemes.length > 0 && (
                       <>
-                        <h3 className="mt-4 text-sm font-bold text-slate-900">Themes that keep coming back</h3>
+                        <h3 className="mt-4 text-[18px] font-bold text-slate-900">Themes that keep coming back</h3>
                         <ul className="mt-2 space-y-2">
                           {paper.recurringThemes.map((t, i) => (
                             <li key={i} className="rounded-lg border border-slate-200 p-2.5">
@@ -81,7 +81,7 @@ export default function ExamPatternScreen({ onBack }: { onBack: () => void }) {
                                 <span className="font-semibold text-slate-900">{t.theme}</span>
                                 <FrequencyChip frequency={t.frequency} />
                               </span>
-                              <span className="mt-1 block text-sm leading-relaxed text-slate-700">{t.note}</span>
+                              <span className="mt-1.5 block text-[16px] leading-[1.65] text-slate-700">{t.note}</span>
                             </li>
                           ))}
                         </ul>
@@ -101,14 +101,14 @@ export default function ExamPatternScreen({ onBack }: { onBack: () => void }) {
           {blueprint.practical.map((component, i) => (
             <div key={i} className="rounded-xl border border-slate-200 bg-white p-3.5 shadow-sm">
               <div className="flex flex-wrap items-center gap-2">
-                <span className="font-bold text-slate-900">{component.name}</span>
+                <span className="text-[17.5px] font-bold text-slate-900">{component.name}</span>
                 {component.minutes ? <Chip>{component.minutes} min</Chip> : null}
                 {component.weight ? <Chip tone="blue">{component.weight}</Chip> : null}
               </div>
-              <ul className="mt-2 space-y-1 text-sm leading-relaxed text-slate-800">
+              <ul className="mt-3 space-y-2.5 text-[16.5px] leading-[1.7] text-slate-800">
                 {component.whatHappens.map((w, j) => (
                   <li key={j} className="flex gap-2">
-                    <span aria-hidden className="mt-[0.55em] h-1.5 w-1.5 shrink-0 rounded-full bg-slate-400" />
+                    <span aria-hidden className="mt-[0.6em] h-1.5 w-1.5 shrink-0 rounded-full bg-slate-400" />
                     <span>{w}</span>
                   </li>
                 ))}
@@ -116,7 +116,7 @@ export default function ExamPatternScreen({ onBack }: { onBack: () => void }) {
               {component.howItIsMarked.length > 0 && (
                 <div className="mt-2 rounded-lg bg-slate-50 p-2.5">
                   <p className="text-xs font-bold uppercase tracking-wide text-slate-600">How it is marked</p>
-                  <ul className="mt-1 space-y-1 text-sm leading-relaxed text-slate-800">
+                  <ul className="mt-2 space-y-2 text-[15.5px] leading-[1.65] text-slate-800">
                     {component.howItIsMarked.map((m, j) => (
                       <li key={j}>{m}</li>
                     ))}

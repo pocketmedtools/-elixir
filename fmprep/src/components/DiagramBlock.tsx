@@ -23,7 +23,7 @@ function Node({ step }: { step: DiagramStep }) {
   const tone = TONE[step.tone ?? "neutral"];
   return (
     <div
-      className={`rounded-md border-[1.5px] px-3.5 py-2.5 text-sm leading-snug ${tone.extra ?? ""}`}
+      className={`rounded-md border-[1.5px] px-4 py-3 text-[16px] leading-[1.5] ${tone.extra ?? ""}`}
       style={{ borderColor: tone.border, background: tone.bg, color: tone.ink }}
     >
       <span className="font-semibold">
@@ -31,7 +31,7 @@ function Node({ step }: { step: DiagramStep }) {
         {step.tone === "decision" && <span className="font-bold text-amber-700"> ?</span>}
       </span>
       {step.detail && (
-        <span className="mt-1 block text-[12.5px] leading-snug text-slate-600">
+        <span className="mt-1.5 block text-[14px] leading-[1.55] text-slate-600">
           <RichText text={step.detail} />
         </span>
       )}
@@ -52,11 +52,11 @@ export default function DiagramBlock({ diagram }: { diagram: Diagram }) {
     );
   } else if (diagram.kind === "ladder") {
     body = (
-      <div className="flex flex-col gap-2">
+      <div className="flex flex-col gap-3">
         {diagram.steps.map((s, i) => (
-          <div key={i} className="flex items-start gap-2.5">
+          <div key={i} className="flex items-start gap-3">
             <span
-              className="mt-1 shrink-0 rounded px-2 py-1.5 font-mono text-[11px] leading-none text-white"
+              className="mt-3 shrink-0 rounded px-2 py-1.5 font-mono text-[12px] leading-none text-white"
               style={{ background: "var(--acc)" }}
             >
               {i + 1}
@@ -71,15 +71,15 @@ export default function DiagramBlock({ diagram }: { diagram: Diagram }) {
   } else if (diagram.kind === "cycle") {
     body = (
       <>
-        <div className="flex flex-wrap gap-2.5">
+        <div className="flex flex-wrap gap-3">
           {diagram.steps.map((s, i) => (
             <div
               key={i}
-              className="relative min-w-0 flex-1 basis-[150px] rounded-md border-[1.5px] py-2.5 pl-9 pr-3 text-[13.5px] leading-snug"
+              className="relative min-w-0 flex-1 basis-[210px] rounded-md border-[1.5px] py-3 pl-10 pr-3.5 text-[15px] leading-[1.5]"
               style={{ borderColor: "var(--acc-rule)", background: "var(--wash)" }}
             >
               <span
-                className="absolute left-2.5 top-2.5 h-[18px] w-[18px] rounded-full text-center font-mono text-[10.5px] leading-[18px] text-white"
+                className="absolute left-3 top-3 h-[20px] w-[20px] rounded-full text-center font-mono text-[12px] leading-[20px] text-white"
                 style={{ background: "var(--acc)" }}
               >
                 {i + 1}
@@ -88,7 +88,7 @@ export default function DiagramBlock({ diagram }: { diagram: Diagram }) {
                 <RichText text={s.label} />
               </span>
               {s.detail && (
-                <span className="mt-0.5 block text-[12px] text-slate-600">
+                <span className="mt-1 block text-[13.5px] leading-[1.5] text-slate-600">
                   <RichText text={s.detail} />
                 </span>
               )}
@@ -96,7 +96,7 @@ export default function DiagramBlock({ diagram }: { diagram: Diagram }) {
           ))}
         </div>
         <p
-          className="mt-2.5 flex items-center gap-2.5 font-mono text-[10.5px] uppercase tracking-widest"
+          className="mt-3.5 flex items-center gap-2.5 font-mono text-[11.5px] uppercase tracking-widest"
           style={{ color: "var(--acc)" }}
         >
           <span aria-hidden className="h-px flex-1" style={{ background: "var(--acc-rule)" }} />
@@ -110,20 +110,20 @@ export default function DiagramBlock({ diagram }: { diagram: Diagram }) {
       <div>
         <div className="flex justify-center">
           <div
-            className="rounded-md border-[1.5px] px-3.5 py-2.5 text-center text-sm font-bold text-white"
+            className="rounded-md border-[1.5px] px-4 py-3 text-center text-[16px] font-bold leading-[1.5] text-white"
             style={{ borderColor: "var(--acc)", background: "var(--acc)" }}
           >
             <RichText text={diagram.root} />
           </div>
         </div>
-        <div className="mx-auto h-[18px] w-0.5" style={{ background: "var(--acc-rule)" }} />
-        <div className="grid items-start gap-2.5 gap-y-5 [grid-template-columns:repeat(auto-fit,minmax(160px,1fr))]">
+        <div className="mx-auto h-[26px] w-0.5" style={{ background: "var(--acc-rule)" }} />
+        <div className="grid items-start gap-3 gap-y-6 [grid-template-columns:repeat(auto-fit,minmax(200px,1fr))]">
           {diagram.arms.map((arm, i) => {
             const tone = TONE[arm.tone ?? "neutral"];
             return (
-              <div key={i} className="flex flex-col gap-2">
+              <div key={i} className="flex flex-col gap-2.5">
                 <p
-                  className="rounded-md border px-3 py-2 text-center text-[12.5px] font-semibold leading-snug"
+                  className="rounded-md border px-3.5 py-2.5 text-center text-[15px] font-semibold leading-[1.45]"
                   style={{
                     borderColor: tone.border,
                     background: arm.tone && arm.tone !== "neutral" ? tone.bg : "var(--wash-2)",
@@ -132,11 +132,11 @@ export default function DiagramBlock({ diagram }: { diagram: Diagram }) {
                 >
                   <RichText text={arm.label} />
                 </p>
-                <ul className="flex flex-col gap-1.5">
+                <ul className="flex flex-col gap-2.5">
                   {arm.steps.map((step, si) => (
                     <li
                       key={si}
-                      className="rounded bg-[var(--sunk)] px-2.5 py-1.5 text-[13px] leading-snug"
+                      className="rounded bg-[var(--sunk)] px-3 py-2 text-[14.5px] leading-[1.55]"
                       style={{ borderLeft: "2px solid var(--acc-rule)" }}
                     >
                       <RichText text={step} />
@@ -152,13 +152,13 @@ export default function DiagramBlock({ diagram }: { diagram: Diagram }) {
   } else {
     body = (
       <div className="-mx-1 overflow-x-auto px-1">
-        <table className="stack-table w-full border-collapse text-left text-sm sm:min-w-[30rem]">
+        <table className="stack-table w-full border-collapse text-left text-[15.5px] leading-[1.45] sm:min-w-[33rem]">
           <thead>
             <tr>
               {diagram.columns.map((c, i) => (
                 <th
                   key={i}
-                  className="px-3 py-2 font-mono text-[10.5px] font-semibold uppercase tracking-wider"
+                  className="px-3.5 py-2.5 font-mono text-[11.5px] font-semibold uppercase tracking-wider"
                   style={{
                     color: "var(--acc)",
                     background: "var(--wash)",
@@ -177,7 +177,7 @@ export default function DiagramBlock({ diagram }: { diagram: Diagram }) {
                   <td
                     key={ci}
                     data-col={diagram.columns[ci]}
-                    className={`border-b border-slate-200 px-3 py-2 leading-snug ${ci === 0 ? "font-semibold" : ""}`}
+                    className={`border-b border-slate-200 px-3.5 py-2.5 leading-[1.55] ${ci === 0 ? "font-semibold" : ""}`}
                   >
                     <RichText text={cell} />
                   </td>
@@ -192,15 +192,15 @@ export default function DiagramBlock({ diagram }: { diagram: Diagram }) {
 
   return (
     <figure
-      className="mt-3 rounded-xl border bg-white p-4 shadow-sm"
+      className="mt-5 rounded-xl border bg-white p-4 shadow-sm"
       style={{ borderColor: "var(--acc-rule)" }}
     >
-      <figcaption className="mb-3">
-        <p className="text-[15px] font-bold leading-snug" style={{ color: "var(--acc)" }}>
+      <figcaption className="mb-4">
+        <p className="text-[17.5px] font-bold leading-[1.3]" style={{ color: "var(--acc)" }}>
           {diagram.heading}
         </p>
         {diagram.caption && (
-          <p className="mt-0.5 text-[12.5px] leading-snug text-slate-500">{diagram.caption}</p>
+          <p className="mt-1 text-[14px] leading-[1.5] text-slate-500">{diagram.caption}</p>
         )}
       </figcaption>
       {body}

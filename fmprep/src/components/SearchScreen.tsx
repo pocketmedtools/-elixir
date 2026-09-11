@@ -36,7 +36,7 @@ export default function SearchScreen({
   }, [results]);
 
   return (
-    <div className="mx-auto max-w-3xl px-3 py-5 md:px-6">
+    <div className="mx-auto max-w-3xl px-3 py-6 md:px-6">
       <BackBar onBack={onBack} label="Study" />
 
       <input
@@ -44,11 +44,11 @@ export default function SearchScreen({
         value={query}
         onChange={(e) => setQuery(e.target.value)}
         placeholder="Search notes, answers, cases, questions, your documents"
-        className="mt-5 w-full rounded-xl border border-slate-300 bg-white px-4 py-3 text-base outline-none focus:ring-2 focus:ring-slate-500"
+        className="mt-6 w-full rounded-xl border border-slate-300 bg-white px-4 py-3.5 text-[17px] outline-none focus:ring-2 focus:ring-slate-500"
       />
 
       {query.trim().length < 2 ? (
-        <p className="mt-3 text-sm text-slate-600">
+        <p className="mt-4 text-[15px] leading-[1.65] text-slate-600">
           Type at least two letters. Searching covers every word of the notes, every model answer, every case and
           every document you have imported.
         </p>
@@ -56,9 +56,9 @@ export default function SearchScreen({
         <Empty title="Nothing found" body="Try a drug name, an abbreviation, or a phrase from your own notes." />
       ) : (
         <>
-          <p className="mt-3 text-xs text-slate-500">{results.length} results</p>
+          <p className="mt-4 text-[13px] text-slate-500">{results.length} results</p>
           {grouped.map(([kind, list]) => (
-            <section key={kind} className="mt-5">
+            <section key={kind} className="mt-6">
               <h2 className="text-xs font-bold uppercase tracking-widest text-slate-500">
                 {KIND_LABEL[kind as SearchResult["kind"]]} · {list.length}
               </h2>
@@ -68,15 +68,15 @@ export default function SearchScreen({
                     key={`${r.kind}-${r.id}`}
                     type="button"
                     onClick={() => onOpen(r)}
-                    className="block w-full rounded-xl border border-slate-200 bg-white p-3.5 text-left shadow-sm hover:shadow"
+                    className="block w-full rounded-xl border border-slate-200 bg-white p-4 text-left shadow-sm hover:shadow"
                   >
                     <span className="flex items-start justify-between gap-2">
-                      <span className="font-bold leading-snug text-slate-900">
+                      <span className="text-[17px] font-bold leading-snug text-slate-900">
                         {r.title.length > 120 ? `${r.title.slice(0, 120)}…` : r.title}
                       </span>
                       <Chip>{r.context}</Chip>
                     </span>
-                    <span className="mt-1 block text-xs leading-relaxed text-slate-600">{r.snippet}</span>
+                    <span className="mt-1.5 block text-[13.5px] leading-[1.6] text-slate-600">{r.snippet}</span>
                   </button>
                 ))}
               </div>

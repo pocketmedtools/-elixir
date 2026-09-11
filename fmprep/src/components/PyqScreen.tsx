@@ -60,7 +60,7 @@ function QuestionCard({
         className="flex w-full items-start gap-2 p-3.5 text-left"
       >
         <span className="min-w-0 flex-1">
-          <span className="block leading-relaxed text-slate-900">{question}</span>
+          <span className="block text-[17.5px] leading-[1.65] text-slate-900">{question}</span>
           <span className="mt-1.5 flex flex-wrap items-center gap-1.5">{meta}</span>
         </span>
         <span aria-hidden className="text-slate-400">
@@ -71,7 +71,7 @@ function QuestionCard({
       {open && (
         <div className="border-t border-slate-100 px-3.5 pb-4 pt-3">
           {links.length === 0 ? (
-            <p className="text-sm text-slate-600">
+            <p className="text-[15.5px] leading-[1.6] text-slate-600">
               No single library topic covers this one closely. Search the library for a phrase from
               the question, or read the subject it belongs to.
             </p>
@@ -86,7 +86,7 @@ function QuestionCard({
                     key={`${id}-${l.topicId}`}
                     type="button"
                     onClick={() => onOpenTopic(l.topicId)}
-                    className="rounded-lg border border-slate-300 bg-white px-3 py-2 text-left text-sm font-semibold text-slate-800 hover:bg-slate-50"
+                    className="rounded-lg border border-slate-300 bg-white px-3.5 py-2.5 text-left text-[15px] font-semibold text-slate-800 hover:bg-slate-50"
                   >
                     {l.topicTitle}
                     <span className="ml-1.5 font-normal text-slate-500">· {l.subjectTitle}</span>
@@ -134,7 +134,7 @@ export default function PyqScreen({
   }, [groups, recurring, topicQuery, view]);
 
   const tab = (active: boolean) =>
-    `flex-1 rounded-xl border p-2.5 text-sm font-bold ${
+    `flex-1 rounded-xl border p-3 text-[15px] font-bold ${
       active ? "border-slate-900 bg-slate-900 text-white" : "border-slate-200 bg-white text-slate-800"
     }`;
   const pill = (active: boolean) =>
@@ -153,7 +153,7 @@ export default function PyqScreen({
         {counts.topicwiseQuestions} filed under {counts.topics} topics (2011–2022). Every one opens
         onto the topic that answers it.
       </p>
-      <p className="mt-2 rounded-xl border border-slate-200 bg-white p-3 text-sm leading-relaxed text-slate-700 shadow-sm">
+      <p className="mt-3 rounded-xl border border-slate-200 bg-white p-4 text-[15.5px] leading-[1.65] text-slate-700 shadow-sm">
         {PYQ_SOURCE_NOTE}
       </p>
       <button
@@ -254,13 +254,13 @@ export default function PyqScreen({
                       className="flex w-full items-start gap-2 p-3.5 text-left"
                     >
                       <span className="min-w-0 flex-1">
-                        <span className="block font-bold text-slate-900">{g.topic}</span>
+                        <span className="block text-[17.5px] font-bold leading-[1.45] text-slate-900">{g.topic}</span>
                         <span className="mt-1 flex flex-wrap items-center gap-1.5">
                           <Chip tone="blue">
                             {g.questions.length} question{g.questions.length > 1 ? "s" : ""}
                           </Chip>
                           <Chip>{g.years.length} years</Chip>
-                          <span className="text-[11px] text-slate-500">{g.years.join(", ")}</span>
+                          <span className="text-[13px] text-slate-500">{g.years.join(", ")}</span>
                         </span>
                       </span>
                       <span aria-hidden className="text-slate-400">
@@ -269,7 +269,7 @@ export default function PyqScreen({
                     </button>
 
                     {isOpen && (
-                      <div className="space-y-2 border-t border-slate-100 p-3">
+                      <div className="space-y-3 border-t border-slate-100 p-3.5">
                         {g.questions.map((q: TopicwiseQuestion) => (
                           <QuestionCard
                             key={q.id}
