@@ -198,26 +198,55 @@ that per subject; `npm run prosetopic <subject>` per topic. `npm run factcheck
 pre-rewrite baseline commit and fails if one is gone entirely - it was run on
 all twenty subjects and nothing was lost.
 
-**Palette.** Bold runs render as heavy dark type and nothing else - no wash
-behind them - and doses are dark bold figures, not accent-coloured. Subject hues
-are muted to 34 per cent saturation (30 in dark) so they read as navy, slate,
-forest and burgundy. `npm run contrast` must pass after any change to
-`src/lib/hues.ts` or the saturation constants in `src/index.css`; the checker's
-constants must match the CSS or it measures a palette the page does not render.
+**Palette.** Neutral greys and black, in both themes, with no blue anywhere:
+the per-subject hue is gone, the accent is near-black on light and light grey on
+dark, and green, amber and red are kept for exactly three meanings - safe,
+caution, danger. Bold runs render as heavy dark type with no wash behind them,
+and doses are dark bold figures rather than accent-coloured. The React app
+remaps Tailwind's slate, blue, sky, indigo, cyan, violet and teal scales to one
+grey scale in the `@theme` block of `src/index.css`, so a component written with
+`bg-slate-100` cannot reintroduce a cool cast. `npm run contrast` holds the
+literal token values and must pass after any palette change; its constants must
+match `src/index.css` and `scripts/singlefile.template.html` or it measures a
+palette the page does not render.
+
+**Phone.** `npm run diagrams` and the width audit matter more than they look.
+The past-question topic links were nowrap monospace pills, so one long title
+pushed the whole page wider than the screen and the tab bar scrolled out of
+reach. They wrap now, `html, body` cannot scroll sideways, and the masthead
+collapses under 600px to mark, name and a small "Get app" button. Anything new
+that sets `white-space: nowrap` on content of unbounded length will break this
+again.
 
 **Android.** `capacitor.config.ts` plus `.github/workflows/fmprep-apk.yml`.
 The Android project is generated in CI from the config, never committed. The
 APK is signed with a stable identity kept on the `fmprep-signing-key` release
-and published to the rolling `fmprep-apk-latest` release, so the download URL
-is permanent and updates install over old versions. Entirely separate from
+and published two ways. The rolling `fmprep-apk-latest` release is the archive;
+the link the app itself offers is
+`https://raw.githubusercontent.com/pocketmedtools/-elixir/fmprep-apk/FM-Prep.apk`,
+a single-commit branch force-pushed each build. That indirection exists because
+a release asset redirects github.com to a signed S3 URL and Android's download
+manager stalls on that hop at 100 per cent; raw.githubusercontent serves the
+bytes directly. Updates install over old versions either way. Entirely separate from
 Pocket-Med: own workflow, own app id (`in.fmprep.app`), own tags; it never
 touches `web/` or `gh-pages`. The runner image has no ImageMagick, so the
 launcher icon is the 512px PWA icon copied into each density folder as-is.
 
-**Still open.** The 735 diagrams passed structural validation but the
-adversarial clinical read never ran - a session limit killed the workflow
-before its first agent. The check reads `review/<subject>/`, so run
-`npm run digest` first to regenerate those from the rewritten topics.
+**Diagram checks.** Two layers. `npm run diagrams` is the mechanical one and
+passes clean: every diagram key names a real topic, every string is plain ASCII,
+no label exceeds 52 characters, and every shape holds (compare rows matching
+their column count, branches with at least two non-empty arms, cycles of three
+or more). It is cheap, so run it after touching `src/diagrams/`.
+
+**Still open.** The adversarial *clinical* read - does the diagram draw what its
+topic actually says - has covered fourteen of the twenty subjects. Six have had
+only the mechanical check: **psychiatry, dermatology, eye-ent,
+geriatrics-ethics, fm-principles, musculoskeletal**. To finish, run
+`npm run digest` first (the check reads `review/<subject>/`, which must reflect
+the current topics), then one agent per subject against
+`fmprep/src/diagrams/<subject>.ts` with `review/<subject>/` as the source of
+truth. The prompt that the fourteen used is the `CHECK` template in the
+workflow script under `workflows/scripts/fm-prep-diagram-check2-*.js`.
 
 ## Phase 3 — making it glanceable (done)
 

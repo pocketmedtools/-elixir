@@ -535,8 +535,9 @@ const diagrams: DiagramSet = {
           detail: "Haloperidol 0.5-1.5 mg at night; nausea affects about a third and settles in 3-5 days",
         },
         {
-          label: "Set the breakthrough dose at one-sixth of the 24-hour total",
-          detail: "10 mg four-hourly is 60 mg a day, so the rescue dose is 10 mg, as often as hourly if needed",
+          label: "Breakthrough dose: one-sixth of the daily total",
+          detail:
+            "10 mg four-hourly is 60 mg a day, so the rescue dose is 10 mg, as often as hourly if needed",
         },
         {
           label: "Review at 24 hours and titrate",
@@ -548,7 +549,7 @@ const diagrams: DiagramSet = {
           detail: "Avoids waking the patient at 2 am",
         },
         {
-          label: "Opioid toxicity - rare, and treated in small increments",
+          label: "Opioid toxicity: reverse in small increments",
           detail:
             "Respiratory rate under 8 with unrousable sedation and pinpoint pupils: dilute naloxone 400 micrograms in 10 mL saline and give 0.5 mL (20 micrograms) intravenously every 2 minutes. A full ampoule reverses all analgesia and precipitates a pain and withdrawal crisis",
           tone: "warn",

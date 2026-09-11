@@ -20,7 +20,8 @@
     "keys": "tsx scripts/checkMcqKeys.ts",
     "merge": "node scripts/mergePending.mjs",
     "smoke": "node scripts/smoke.mjs",
-    "status": "bash scripts/status.sh"
+    "status": "bash scripts/status.sh",
+    "diagrams": "tsx scripts/diagramAudit.mjs"
   },
   "dependencies": {
     "@capacitor/android": "^8.5.1",
