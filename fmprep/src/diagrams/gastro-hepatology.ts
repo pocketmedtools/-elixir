@@ -606,7 +606,7 @@ const diagrams: DiagramSet = {
           steps: [
             "A documented responder with anti-HBs above 10 mIU/mL needs nothing",
             "Unvaccinated or non-responder: immunoglobulin 0.06 mL/kg within 24 hours",
-            "Ideally within 7 days, plus a full vaccine course at a separate site",
+            "Never later than 7 days, plus a full vaccine course at a separate site",
           ],
         },
         {
