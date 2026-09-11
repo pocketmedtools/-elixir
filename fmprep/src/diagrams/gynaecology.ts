@@ -1119,8 +1119,9 @@ const diagrams: DiagramSet = {
             "Spontaneous ovulation recurs in about 5%; oocyte donation is the established route to pregnancy, and fertility preservation is discussed before gonadotoxic treatment",
         },
         {
-          label: "Calcium, vitamin D and weight-bearing exercise",
-          detail: "Calcium 1000-1200 mg and vitamin D 800-1000 IU daily, smoking cessation, DXA surveillance",
+          label: "Calcium, vitamin D and exercise",
+          detail:
+            "Calcium 1000-1200 mg and vitamin D 800-1000 IU daily, weight-bearing exercise, smoking cessation, DXA surveillance",
         },
       ],
     },

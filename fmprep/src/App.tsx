@@ -38,7 +38,7 @@ export default function App() {
           <GraduationCap className="h-6 w-6 shrink-0 text-[var(--accent)]" aria-hidden />
           <div className="min-w-0 flex-1">
             <p className="text-sm font-bold leading-tight tracking-tight text-slate-900">FM Prep</p>
-            <p className="text-[11px] leading-tight text-slate-500">
+            <p className="hidden text-[11px] leading-tight text-slate-500 sm:block">
               DNB / MD Family Medicine — notes, papers, cases, questions
             </p>
           </div>
@@ -50,7 +50,8 @@ export default function App() {
             rel="noopener"
             className="shrink-0 rounded-lg bg-slate-900 px-3 py-1.5 text-xs font-semibold text-white hover:bg-slate-800"
           >
-            Download Android app
+            <span className="hidden sm:inline">Download Android app</span>
+            <span className="sm:hidden">Get app</span>
           </a>
         </div>
         <div className="brand-ribbon" />

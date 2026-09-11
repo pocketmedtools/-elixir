@@ -999,7 +999,9 @@ const diagrams: DiagramSet = {
       steps: [
         {
           label: "Tall peaked symmetrical T waves",
-          detail: "With a narrow base - the earliest change",
+          detail:
+            "With a narrow base - the earliest change, and already an indication for calcium gluconate: any ECG change is an emergency",
+          tone: "warn",
         },
         {
           label: "Flattened or absent P wave",
@@ -1008,7 +1010,7 @@ const diagrams: DiagramSet = {
         {
           label: "Widening of the QRS",
           detail:
-            "Give calcium gluconate now - the immediate threat is a lethal arrhythmia",
+            "Calcium gluconate now if not already given - the immediate threat is a lethal arrhythmia",
           tone: "warn",
         },
         { label: "Sine wave pattern", tone: "warn" },
@@ -1048,7 +1050,7 @@ const diagrams: DiagramSet = {
         [
           "An 80-year-old 45 kg woman, creatinine 1.0 mg/dL",
           "Reported as about 56 mL/min/1.73 m2, which looks near normal",
-          "About 25 mL/min - the number her gabapentin, morphine, digoxin and metformin must be dosed on",
+          "About 25-32 mL/min by the formula above - the number her gabapentin, morphine, digoxin and metformin must be dosed on",
         ],
         [
           "Getting from one to the other",
@@ -1329,7 +1331,7 @@ const diagrams: DiagramSet = {
         [
           "Treatment",
           "Supportive: salt and fluid restriction, a loop diuretic, antihypertensives, and penicillin to clear the organism",
-          "Supportive: maximal RAS blockade, blood pressure control and an SGLT2 inhibitor for at least 90 days",
+          "Supportive for at least 90 days before any immunosuppression: maximal RAS blockade, blood pressure control and an SGLT2 inhibitor",
         ],
         [
           "Immunosuppression",

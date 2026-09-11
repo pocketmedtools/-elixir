@@ -561,7 +561,7 @@ const diagrams: DiagramSet = {
             "150 mg/kg over 60 minutes, then 50 mg/kg over 4 hours, then 100 mg/kg over 16 hours - 300 mg/kg in all",
         },
         {
-          label: "Anaphylactoid reaction: slow, do not stop",
+          label: "Anaphylactoid reaction: pause, never abandon",
           detail:
             "It is rate-related, not allergic. Stop the infusion, chlorphenamine 10 mg IV, salbutamol for wheeze, then restart more slowly",
         },

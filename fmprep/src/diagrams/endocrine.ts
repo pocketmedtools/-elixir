@@ -465,8 +465,8 @@ const diagrams: DiagramSet = {
     {
       kind: "branch",
       heading: "Subclinical hypothyroidism - treat or monitor?",
-      caption: "Confirm first: up to a third of raised TSH values normalise spontaneously.",
-      root: "Raised TSH with a normal free T4, repeated after 6-12 weeks with anti-TPO",
+      caption: "Confirm first - repeat after 6-12 weeks with anti-TPO; up to a third of raised TSH values normalise spontaneously.",
+      root: "Confirmed raised TSH with a normal free T4",
       arms: [
         {
           label: "TSH 10 mIU/L or more",
@@ -781,8 +781,8 @@ const diagrams: DiagramSet = {
         ["Overweight BMI", "23.0-24.9 kg/m2", "25.0-29.9 kg/m2"],
         ["Obesity BMI", "25.0 kg/m2 or more", "30.0 kg/m2 or more"],
         ["Waist circumference", "90 cm men, 80 cm women", "Higher thresholds used for European populations"],
-        ["Bariatric surgery with comorbidity", "BMI 32.5 kg/m2 or more", "About five units higher"],
-        ["Bariatric surgery without comorbidity", "BMI 37.5 kg/m2 or more", "About five units higher"],
+        ["Bariatric surgery with comorbidity", "BMI 32.5 kg/m2 or more", "BMI 35.0 kg/m2 or more"],
+        ["Bariatric surgery without comorbidity", "BMI 37.5 kg/m2 or more", "BMI 40.0 kg/m2 or more"],
       ],
     },
     {
@@ -919,7 +919,7 @@ const diagrams: DiagramSet = {
           detail: "About 90 mg elemental calcium, diluted in 50-100 mL of 5% dextrose with cardiac monitoring; repeat until symptoms settle",
         },
         {
-          label: "Never bolus, never peripherally as chloride",
+          label: "Slowly if on digoxin; no peripheral chloride",
           detail: "No rapid bolus in a patient on digoxin, and calcium chloride is not given peripherally",
           tone: "warn",
         },

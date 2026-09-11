@@ -60,7 +60,10 @@
   --shadow:0 1px 1px rgba(0,0,0,.5),0 10px 26px -20px rgba(0,0,0,.9);
 }
 *{box-sizing:border-box}
-body{background:var(--paper);color:var(--ink);
+/* The page body never scrolls sideways: only a table or a code block may be
+   wider than a phone, each inside its own scrolling box. */
+html,body{overflow-x:hidden;max-width:100%}
+body{background:var(--paper);color:var(--ink);overflow-wrap:break-word;
   font:400 16px/1.6 "IBM Plex Sans",system-ui,-apple-system,"Segoe UI",sans-serif;
   -webkit-font-smoothing:antialiased}
 h1,h2,h3,h4{font-family:Fraunces,Georgia,"Times New Roman",serif;font-weight:600;
@@ -78,13 +81,30 @@ button{font:inherit;color:inherit;background:none;border:none;cursor:pointer;tex
   font:600 14px/1 "IBM Plex Mono",monospace}
 .mast h1{font-size:21px;letter-spacing:-.015em}
 .mast .sub{font-size:12.5px;color:var(--quiet);line-height:1.35}
+.btn.dl{white-space:nowrap;text-decoration:none;font-size:13px;padding:9px 14px;flex-shrink:0}
+.btn.dl .short{display:none}
+/* Phone: one tidy line - mark, name, a small button; the strapline goes. */
+@media (max-width:600px){
+  .mast-in{gap:10px;padding:11px 0}
+  .glyph{width:30px;height:30px;font-size:12.5px}
+  .mast h1{font-size:19px}
+  .mast .sub{display:none}
+  .btn.dl{font-size:12px;padding:7px 11px}
+  .btn.dl .long{display:none}
+  .btn.dl .short{display:inline}
+  .wrap{padding:0 14px}
+  main{padding:16px 0 64px}
+  .hero{padding:18px 16px}
+  .hero h2{font-size:24px}
+}
 .spectrum{height:3px;display:flex}
 .spectrum i{flex:1}
 nav.modes{position:sticky;top:0;z-index:30;background:var(--raised);border-bottom:1px solid var(--rule)}
 nav.modes .wrap{display:flex;gap:1px;overflow-x:auto;scrollbar-width:none}
 nav.modes .wrap::-webkit-scrollbar{display:none}
-.mode{padding:12px 15px;font-size:13.5px;font-weight:600;color:var(--quiet);
+.mode{padding:12px 15px;font-size:13.5px;font-weight:600;color:var(--quiet);flex-shrink:0;
   white-space:nowrap;border-bottom:2.5px solid transparent}
+@media (max-width:600px){.mode{padding:11px 12px;font-size:13px}}
 .mode[aria-current="true"]{color:var(--acc);border-bottom-color:var(--acc)}
 .mode:hover{color:var(--ink)}
 main{padding:26px 0 80px}
@@ -99,6 +119,12 @@ main{padding:26px 0 80px}
 .chip.acc{color:var(--acc);border-color:var(--acc-rule);background:var(--wash)}
 .chip.bad{color:var(--danger);border-color:var(--danger-rule);background:var(--danger-wash)}
 .chip.solid{background:var(--acc);color:var(--raised);border-color:var(--acc)}
+/* A link to the topic that answers a question: a real button, in the reading
+   face, that wraps - a long title must never widen the page on a phone. */
+button.chip.solid{font:600 12.5px/1.45 "IBM Plex Sans",system-ui,sans-serif;white-space:normal;
+  text-align:left;padding:6px 12px;border-radius:9px;max-width:100%;overflow-wrap:anywhere;
+  background:var(--sunk);color:var(--acc);border:1px solid var(--rule)}
+button.chip.solid:hover{border-color:var(--acc);background:var(--wash)}
 .chips{display:flex;flex-wrap:wrap;gap:6px;align-items:center}
 .empty{padding:48px 20px;text-align:center;color:var(--quiet);font-size:14px;
   border:1px dashed var(--rule);border-radius:var(--radius)}
@@ -281,9 +307,8 @@ footer{border-top:1px solid var(--rule);padding:24px 0 36px;font-size:12.5px;
       <h1>FM Prep</h1>
       <p class="sub">DNB / MD Family Medicine &mdash; the whole revision library, in one page</p>
     </div>
-    <a class="btn" href="https://raw.githubusercontent.com/pocketmedtools/-elixir/fmprep-apk/FM-Prep.apk"
-       target="_blank" rel="noopener" style="white-space:nowrap;text-decoration:none;font-size:13px;padding:9px 14px">
-      Download Android app</a>
+    <a class="btn dl" href="https://raw.githubusercontent.com/pocketmedtools/-elixir/fmprep-apk/FM-Prep.apk"
+       target="_blank" rel="noopener"><span class="long">Download Android app</span><span class="short">Get app</span></a>
   </div>
   <div class="spectrum" id="spectrum" aria-hidden></div>
 </div>
