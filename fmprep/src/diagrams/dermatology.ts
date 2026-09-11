@@ -56,7 +56,8 @@ const diagrams: DiagramSet = {
     {
       kind: "compare",
       heading: "Primary lesions by size and content",
-      caption: "One centimetre is the dividing line for every pair.",
+      caption:
+        "One centimetre divides macule from patch, papule from plaque and vesicle from bulla - but a petechia is under 3 mm.",
       columns: ["Content", "Under 1 cm", "1 cm or more", "Typical example"],
       rows: [
         ["Flat colour change", "Macule", "Patch", "Vitiligo, leprosy patch, freckle"],
@@ -1182,8 +1183,9 @@ const diagrams: DiagramSet = {
       arms: [
         {
           label: "Minutes to hours",
+          tone: "warn",
           steps: [
-            "Urticaria, angioedema and anaphylaxis",
+            "Urticaria, angioedema and anaphylaxis - the emergency of this group",
             "IgE-mediated; each individual wheal lasts under 24 hours",
           ],
         },
@@ -1339,8 +1341,9 @@ const diagrams: DiagramSet = {
         },
         {
           label: "Urgent and continuing eye care",
+          tone: "warn",
           detail:
-            "Ophthalmology review for red eyes, photophobia or a pseudomembrane - ocular sequelae are the commonest permanent disability",
+            "Ophthalmology review on day 1 and daily thereafter, whatever the eyes look like; preservative-free lubricants and lysis of adhesions - ocular sequelae are the commonest permanent disability",
         },
         {
           label: "Two things not to do",
