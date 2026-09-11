@@ -9,9 +9,15 @@
    subject hue, set per screen, and the accent family derives from it.
    --------------------------------------------------------------- */
 :root{
-  /* Neutral structure in warm grey, and three semantic colours that mean safe,
-     caution and danger and are used for nothing else. Subject colour arrives
-     separately, on .subject-theme, and marks structure only. */
+  /* One theme: a white page, black letters, colour only where it carries
+     meaning. color-scheme is pinned so the phone's own dark setting cannot
+     repaint anything underneath. There is deliberately no dark variant - a
+     second theme is what let light surfaces end up under light type and made
+     whole sections invisible, while every token-level check still passed.
+
+     Neutral structure in warm grey, three semantic colours meaning safe,
+     caution and danger, and subject colour arriving separately on
+     .subject-theme, where it marks structure only. */
   --paper:#f4f2ef; --raised:#ffffff; --sunk:#f7f6f4;
   --ink:#151311; --ink-soft:#3d3831; --quiet:#5f5952;
   --rule:#e4e1db; --rule-soft:#eeebe6;
@@ -24,50 +30,12 @@
   --radius:5px;
   color-scheme:light;
 }
-@media (prefers-color-scheme:dark){
-  :root:not([data-theme="light"]){
-    color-scheme:dark;
-    --paper:#0d0d0f; --raised:#17171a; --sunk:#1e1e22;
-    --ink:#f4f4f6; --ink-soft:#d5d5db; --quiet:#a8a8b2;
-    --rule:#33333a; --rule-soft:#26262b;
-    --acc:#f4f4f6; --acc-hi:#ffffff; --wash:#1e1e22; --wash-2:#26262b;
-    --acc-rule:#3f3f47; --hl:transparent;
-    --danger:#e88d95; --danger-wash:#2a1a1d; --danger-rule:#5c2c33;
-    --good:#6fbf85;   --good-wash:#16241a;   --good-rule:#2c5436;
-    --think:#d6a247;  --think-wash:#271f13;  --think-rule:#56421d;
-    --shadow:0 1px 1px rgba(0,0,0,.5),0 10px 26px -20px rgba(0,0,0,.9);
-  }
-}
-:root[data-theme="dark"]{
-  color-scheme:dark;
-  --paper:#0d0d0f; --raised:#17171a; --sunk:#1e1e22;
-  --ink:#f4f4f6; --ink-soft:#d5d5db; --quiet:#a8a8b2;
-  --rule:#33333a; --rule-soft:#26262b;
-  --acc:#f4f4f6; --acc-hi:#ffffff; --wash:#1e1e22; --wash-2:#26262b;
-  --acc-rule:#3f3f47; --hl:transparent;
-  --danger:#e88d95; --danger-wash:#2a1a1d; --danger-rule:#5c2c33;
-  --good:#6fbf85;   --good-wash:#16241a;   --good-rule:#2c5436;
-  --think:#d6a247;  --think-wash:#271f13;  --think-rule:#56421d;
-  --shadow:0 1px 1px rgba(0,0,0,.5),0 10px 26px -20px rgba(0,0,0,.9);
-}
-/* Subject colour. Both themes' values sit on the element; the theme picks
-   between them here rather than at :root, where they would not yet be set. */
+/* Subject colour. The element carries both themes' values because the data
+   table is shared with the app; only the light half is read here. */
 .subject-theme{
   --acc:var(--acc-l,#151311); --acc-hi:var(--acc-l,#151311);
   --wash:var(--wash-l,#f4f2ef); --wash-2:var(--wash-l,#eeebe6);
   --acc-rule:var(--rule-l,#d8d4cc);
-}
-@media (prefers-color-scheme:dark){
-  :root:not([data-theme="light"]) .subject-theme{
-    --acc:var(--acc-d,#f4f4f6); --acc-hi:var(--acc-d,#f4f4f6);
-    --wash:var(--wash-d,#1e1e22); --wash-2:var(--wash-d,#26262b);
-    --acc-rule:var(--rule-d,#3f3f47);
-  }
-}
-:root[data-theme="dark"] .subject-theme{
-  --acc:var(--acc-d,#f4f4f6); --acc-hi:var(--acc-d,#f4f4f6);
-  --wash:var(--wash-d,#1e1e22); --wash-2:var(--wash-d,#26262b);
-  --acc-rule:var(--rule-d,#3f3f47);
 }
 *{box-sizing:border-box}
 /* The page body never scrolls sideways: only a table or a code block may be
@@ -146,12 +114,20 @@ button.chip.solid:hover{border-color:var(--acc);background:var(--wash)}
 .chips{display:flex;flex-wrap:wrap;gap:6px;align-items:center}
 .empty{padding:48px 20px;text-align:center;color:var(--quiet);font-size:14px;
   border:1px dashed var(--rule);border-radius:var(--radius)}
-mark.hl{background:none;color:var(--ink);font-weight:750;padding:0}
+/* Marked words. Three kinds are worth finding without reading the line around
+   them, so each is written in its own colour rather than painted over: a wash
+   behind the words fights the letters and makes a page of marked points look
+   like a used textbook. The letters carry the colour, the paper stays white,
+   and the body text stays black. Three is the limit - a fourth stops the eye
+   sorting them without reading. */
+mark.hl{background:none;color:#9b1b30;font-weight:700;padding:0}
+mark.hl.hl-name{color:#5b2a86}
 cite.cite{font:500 .72em/1.5 "IBM Plex Mono",ui-monospace,monospace;font-style:normal;
   color:var(--quiet);background:var(--sunk);border:1px solid var(--rule);border-radius:3px;
   padding:.05em .36em;margin-left:.35em;white-space:nowrap;vertical-align:.05em}
 b.num{font-family:"IBM Plex Mono",ui-monospace,monospace;font-weight:700;
-  font-variant-numeric:tabular-nums;color:var(--ink);white-space:nowrap}
+  font-variant-numeric:tabular-nums;color:#0f6b3f;white-space:nowrap}
+mark.hl b.num{color:#0f6b3f}
 .freq{display:inline-flex;align-items:center;gap:6px;font:600 10.5px/1 "IBM Plex Mono",monospace;
   color:var(--quiet);white-space:nowrap;text-transform:uppercase;letter-spacing:.07em}
 .freq i{width:26px;height:5px;border-radius:99px;background:var(--rule);display:block;position:relative;overflow:hidden}
@@ -424,10 +400,16 @@ const NUM = /\b(\d[\d.,]*(?:\s*(?:-|to)\s*\d[\d.,]*)?\s*(?:micrograms?\/kg\/day|
    cannot trace is a figure they cannot trust, but set quiet. */
 const CITE = /\[([^\]]{2,60})\]/g;
 
+/* A bold run that names something rather than states something: an acronym
+   (WONCA, AAFP) or an eponym with its year (Leeuwenhorst 1974). It takes its own
+   highlighter colour, because a name is recalled differently from a rule. */
+const NAME = /^(?:[A-Z][A-Za-z'’-]*(?:\s+[A-Z][A-Za-z'’-]*)*\s+\d{4}|[A-Z]{2,}(?:[ -][A-Z0-9]+)*)$/;
+
 /** Escape, mark the **bold** runs, chip the quantities, quieten the sources. */
 function rich(x){
   return esc(x)
-    .replace(/\*\*(.+?)\*\*/g, '<mark class="hl">$1</mark>')
+    .replace(/\*\*(.+?)\*\*/g, (_, run) =>
+      '<mark class="hl' + (NAME.test(run.trim()) ? ' hl-name' : '') + '">' + run + '</mark>')
     .replace(NUM, '<b class="num">$1</b>')
     .replace(CITE, '<cite class="cite">$1</cite>');
 }

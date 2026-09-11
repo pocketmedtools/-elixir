@@ -103,16 +103,17 @@
 }
 
 /* ---------------------------------------------------------------
-   Theme.
+   One theme: a white page, black letters, colour only where it
+   carries meaning. `color-scheme: light` is declared so the phone's
+   own dark setting cannot repaint form controls underneath it.
 
-   The app is written in Tailwind utilities that name a literal
-   shade - bg-white, text-slate-900 - so a dark theme cannot be
-   opted into selectively. It is done by inverting the ramp above:
-   bg-white becomes a dark card, text-slate-900 becomes light type,
-   and every component follows without being touched. Getting this
-   wrong is what made the reader unreadable: the token colours
-   switched to dark while the cards stayed white, so black panels
-   and near-white headings landed on white paper.
+   There is deliberately no dark theme. The app is written in
+   Tailwind utilities naming a literal shade - bg-white,
+   text-slate-900 - so a dark variant means redefining the ramps
+   those resolve through, and any component that slips through keeps
+   a light surface under light type. That is exactly what happened
+   before: whole sections rendered invisible on a phone in dark mode
+   while every token-level check passed. One theme cannot drift.
    --------------------------------------------------------------- */
 :root {
   --bg: #f4f2ef;
@@ -133,115 +134,6 @@
   font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
   color: var(--ink);
   background: var(--bg);
-}
-
-@media (prefers-color-scheme: dark) {
-  :root:not([data-theme="light"]) {
-    color-scheme: dark;
-    --color-slate-50: #161616; --color-slate-100: #222221; --color-slate-200: #313130;
-    --color-slate-300: #474544; --color-slate-400: #9d9b98; --color-slate-500: #b0ada9;
-    --color-slate-600: #c0bdba; --color-slate-700: #cfccc9; --color-slate-800: #dfddda;
-    --color-slate-900: #edebe9; --color-slate-950: #faf8f6;
-    --color-gray-50: #161616; --color-gray-100: #222221; --color-gray-200: #313130;
-    --color-gray-300: #474544; --color-gray-400: #9d9b98; --color-gray-500: #b0ada9;
-    --color-gray-600: #c0bdba; --color-gray-700: #cfccc9; --color-gray-800: #dfddda;
-    --color-gray-900: #edebe9; --color-gray-950: #faf8f6;
-    --color-zinc-50: #161616; --color-zinc-100: #222221; --color-zinc-200: #313130;
-    --color-zinc-300: #474544; --color-zinc-400: #9d9b98; --color-zinc-500: #b0ada9;
-    --color-zinc-600: #c0bdba; --color-zinc-700: #cfccc9; --color-zinc-800: #dfddda;
-    --color-zinc-900: #edebe9; --color-zinc-950: #faf8f6;
-    --color-neutral-50: #161616; --color-neutral-100: #222221; --color-neutral-200: #313130;
-    --color-neutral-300: #474544; --color-neutral-400: #9d9b98; --color-neutral-500: #b0ada9;
-    --color-neutral-600: #c0bdba; --color-neutral-700: #cfccc9; --color-neutral-800: #dfddda;
-    --color-neutral-900: #edebe9; --color-neutral-950: #faf8f6;
-    --color-stone-50: #161616; --color-stone-100: #222221; --color-stone-200: #313130;
-    --color-stone-300: #474544; --color-stone-400: #9d9b98; --color-stone-500: #b0ada9;
-    --color-stone-600: #c0bdba; --color-stone-700: #cfccc9; --color-stone-800: #dfddda;
-    --color-stone-900: #edebe9; --color-stone-950: #faf8f6;
-    --color-emerald-50: #121813; --color-emerald-100: #1a251d; --color-emerald-200: #223627;
-    --color-emerald-300: #2a4f35; --color-emerald-400: #6dac7f; --color-emerald-500: #6bc486;
-    --color-emerald-600: #80d498; --color-emerald-700: #97e1ab; --color-emerald-800: #b2efc1;
-    --color-emerald-900: #c9fbd4; --color-emerald-950: #ddffe6;
-    --color-green-50: #121813; --color-green-100: #1a251d; --color-green-200: #223627;
-    --color-green-300: #2a4f35; --color-green-400: #6dac7f; --color-green-500: #6bc486;
-    --color-green-600: #80d498; --color-green-700: #97e1ab; --color-green-800: #b2efc1;
-    --color-green-900: #c9fbd4; --color-green-950: #ddffe6;
-    --color-lime-50: #121813; --color-lime-100: #1a251d; --color-lime-200: #223627;
-    --color-lime-300: #2a4f35; --color-lime-400: #6dac7f; --color-lime-500: #6bc486;
-    --color-lime-600: #80d498; --color-lime-700: #97e1ab; --color-lime-800: #b2efc1;
-    --color-lime-900: #c9fbd4; --color-lime-950: #ddffe6;
-    --color-amber-50: #1a150f; --color-amber-100: #292015; --color-amber-200: #3e2d19;
-    --color-amber-300: #5c3f18; --color-amber-400: #c29150; --color-amber-500: #e19e3e;
-    --color-amber-600: #f0af58; --color-amber-700: #fcc176; --color-amber-800: #ffd497;
-    --color-amber-900: #ffe4b2; --color-amber-950: #fff3cc;
-    --color-yellow-50: #1a150f; --color-yellow-100: #292015; --color-yellow-200: #3e2d19;
-    --color-yellow-300: #5c3f18; --color-yellow-400: #c29150; --color-yellow-500: #e19e3e;
-    --color-yellow-600: #f0af58; --color-yellow-700: #fcc176; --color-yellow-800: #ffd497;
-    --color-yellow-900: #ffe4b2; --color-yellow-950: #fff3cc;
-    --color-orange-50: #1a150f; --color-orange-100: #292015; --color-orange-200: #3e2d19;
-    --color-orange-300: #5c3f18; --color-orange-400: #c29150; --color-orange-500: #e19e3e;
-    --color-orange-600: #f0af58; --color-orange-700: #fcc176; --color-orange-800: #ffd497;
-    --color-orange-900: #ffe4b2; --color-orange-950: #fff3cc;
-    --color-rose-50: #1c1313; --color-rose-100: #2e1d1d; --color-rose-200: #452727;
-    --color-rose-300: #683435; --color-rose-400: #d87e7e; --color-rose-500: #fe8385;
-    --color-rose-600: #ff9697; --color-rose-700: #ffaaaa; --color-rose-800: #ffc2c1;
-    --color-rose-900: #ffd5d4; --color-rose-950: #ffe7e6;
-    --color-red-50: #1c1313; --color-red-100: #2e1d1d; --color-red-200: #452727;
-    --color-red-300: #683435; --color-red-400: #d87e7e; --color-red-500: #fe8385;
-    --color-red-600: #ff9697; --color-red-700: #ffaaaa; --color-red-800: #ffc2c1;
-    --color-red-900: #ffd5d4; --color-red-950: #ffe7e6;
-    --color-violet-50: #19141a; --color-violet-100: #281e2a; --color-violet-200: #3a2a3e;
-    --color-violet-300: #56395d; --color-violet-400: #b886c4; --color-violet-500: #d48fe4;
-    --color-violet-600: #e4a1f3; --color-violet-700: #f0b4fe; --color-violet-800: #fbc9ff;
-    --color-violet-900: #ffdbff; --color-violet-950: #ffebff;
-    --color-fuchsia-50: #19141a; --color-fuchsia-100: #281e2a; --color-fuchsia-200: #3a2a3e;
-    --color-fuchsia-300: #56395d; --color-fuchsia-400: #b886c4; --color-fuchsia-500: #d48fe4;
-    --color-fuchsia-600: #e4a1f3; --color-fuchsia-700: #f0b4fe; --color-fuchsia-800: #fbc9ff;
-    --color-fuchsia-900: #ffdbff; --color-fuchsia-950: #ffebff;
-    --color-purple-50: #19141a; --color-purple-100: #281e2a; --color-purple-200: #3a2a3e;
-    --color-purple-300: #56395d; --color-purple-400: #b886c4; --color-purple-500: #d48fe4;
-    --color-purple-600: #e4a1f3; --color-purple-700: #f0b4fe; --color-purple-800: #fbc9ff;
-    --color-purple-900: #ffdbff; --color-purple-950: #ffebff;
-    --color-pink-50: #19141a; --color-pink-100: #281e2a; --color-pink-200: #3a2a3e;
-    --color-pink-300: #56395d; --color-pink-400: #b886c4; --color-pink-500: #d48fe4;
-    --color-pink-600: #e4a1f3; --color-pink-700: #f0b4fe; --color-pink-800: #fbc9ff;
-    --color-pink-900: #ffdbff; --color-pink-950: #ffebff;
-    --color-teal-50: #101817; --color-teal-100: #172525; --color-teal-200: #1b3636;
-    --color-teal-300: #1a4f4e; --color-teal-400: #57acaa; --color-teal-500: #42c3c2;
-    --color-teal-600: #5fd3d1; --color-teal-700: #7ee1df; --color-teal-800: #a0eeec;
-    --color-teal-900: #bafaf8; --color-teal-950: #d3ffff;
-    --color-cyan-50: #101817; --color-cyan-100: #172525; --color-cyan-200: #1b3636;
-    --color-cyan-300: #1a4f4e; --color-cyan-400: #57acaa; --color-cyan-500: #42c3c2;
-    --color-cyan-600: #5fd3d1; --color-cyan-700: #7ee1df; --color-cyan-800: #a0eeec;
-    --color-cyan-900: #bafaf8; --color-cyan-950: #d3ffff;
-    --color-sky-50: #101817; --color-sky-100: #172525; --color-sky-200: #1b3636;
-    --color-sky-300: #1a4f4e; --color-sky-400: #57acaa; --color-sky-500: #42c3c2;
-    --color-sky-600: #5fd3d1; --color-sky-700: #7ee1df; --color-sky-800: #a0eeec;
-    --color-sky-900: #bafaf8; --color-sky-950: #d3ffff;
-    --color-blue-50: #101817; --color-blue-100: #172525; --color-blue-200: #1b3636;
-    --color-blue-300: #1a4f4e; --color-blue-400: #57acaa; --color-blue-500: #42c3c2;
-    --color-blue-600: #5fd3d1; --color-blue-700: #7ee1df; --color-blue-800: #a0eeec;
-    --color-blue-900: #bafaf8; --color-blue-950: #d3ffff;
-    --color-indigo-50: #101817; --color-indigo-100: #172525; --color-indigo-200: #1b3636;
-    --color-indigo-300: #1a4f4e; --color-indigo-400: #57acaa; --color-indigo-500: #42c3c2;
-    --color-indigo-600: #5fd3d1; --color-indigo-700: #7ee1df; --color-indigo-800: #a0eeec;
-    --color-indigo-900: #bafaf8; --color-indigo-950: #d3ffff;
-    --color-white: #17171a;
-    --color-black: #ffffff;
-
-    --bg: #0d0d0f;
-    --card: #17171a;
-    --ink: #f4f4f6;
-    --muted: #d5d5db;
-    --quiet: #a8a8b2;
-    --rule: #33333a;
-    --sunk: #1e1e22;
-    --accent: #f4f4f6;
-    --line: #33333a;
-    --good: #6fbf85; --good-wash: #16241a; --good-rule: #2c5436;
-    --think: #d6a247; --think-wash: #271f13; --think-rule: #56421d;
-    --danger: #e88d95; --danger-wash: #2a1a1d; --danger-rule: #5c2c33;
-  }
 }
 
 body {
@@ -290,35 +182,43 @@ html, body { overflow-x: hidden; max-width: 100%; }
   --acc-rule: var(--rule-l, #e4e1db);
   --hl: transparent;
 }
-@media (prefers-color-scheme: dark) {
-  :root:not([data-theme="light"]) .subject-theme {
-    --acc: var(--acc-d, #f4f4f6);
-    --acc-hi: var(--acc-d, #f4f4f6);
-    --wash: var(--wash-d, #1e1e22);
-    --wash-2: var(--wash-d, #26262b);
-    --acc-rule: var(--rule-d, #33333a);
-  }
-}
+/* ---------------------------------------------------------------
+   Marked words.
 
-/* A **bold** run is a line that decides management. It is set in heavy dark
-   type and nothing else - no paint behind it, no colour - so the emphasis is
-   the weight of the letters, the way a textbook does it. */
+   Three kinds of word are worth finding without reading the line
+   around it, so each is written in its own colour rather than
+   painted over: a wash behind the words fights the letters and
+   makes a page of marked points look like a used textbook. The
+   letters carry the colour, the paper stays white, and the body
+   text stays black so the marks are the only colour in the prose.
+
+   Three is the limit. A fourth colour stops the eye sorting them
+   without reading, which is the whole point of having any.
+   --------------------------------------------------------------- */
+
+/* The line that decides management. */
 mark.hl {
   background: none;
-  color: var(--ink);
-  font-weight: 800;
+  color: #9b1b30;
+  font-weight: 700;
   padding: 0;
 }
 
-/* A measured quantity: dark, bold, tabular, so a dose is found at a glance
-   without leaving the reading colour. */
+/* A name or an eponym to attach: WONCA, AAFP, Leeuwenhorst 1974. */
+mark.hl.hl-name { color: #5b2a86; }
+
+/* A measured quantity. Monospaced and tabular as well as coloured, so a
+   dose is found by its shape before its colour is even registered. */
 b.num {
   font-family: ui-monospace, "SF Mono", Menlo, Consolas, monospace;
   font-weight: 700;
   font-variant-numeric: tabular-nums;
-  color: var(--ink);
+  color: #0f6b3f;
   white-space: nowrap;
 }
+/* A quantity inside a marked line keeps its own colour: the dose is still
+   the thing being looked for, even when the whole line is marked. */
+mark.hl b.num { color: #0f6b3f; }
 
 /* Flow-chart connectors, drawn with borders rather than SVG so they
    inherit the subject colour and reflow on a phone. */

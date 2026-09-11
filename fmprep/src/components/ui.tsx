@@ -24,6 +24,15 @@ const QUANTITY =
  */
 const CITE = /(\[[^\]]{2,60}\])/g;
 
+/**
+ * A bold run that names something rather than states something: an acronym
+ * (WONCA, AAFP, NICE) or an eponym with its year (Leeuwenhorst 1974). These get
+ * their own highlighter colour, because in an exam answer a name is recalled
+ * differently from a rule - one is a label to attach, the other a line to
+ * reproduce - and two colours let the eye sort them without reading.
+ */
+const NAME = /^(?:[A-Z][A-Za-z'’-]*(?:\s+[A-Z][A-Za-z'’-]*)*\s+\d{4}|[A-Z]{2,}(?:[ -][A-Z0-9]+)*)$/;
+
 /** Split a run of plain text so every quantity in it becomes its own chip. */
 function withQuantities(text: string, keyBase: string): ReactNode[] {
   return text.split(CITE).flatMap((chunk, ci) => {
@@ -52,6 +61,12 @@ function withQuantities(text: string, keyBase: string): ReactNode[] {
  * The authors used bold for the lines that decide management, so those are
  * marked with a highlighter rather than merely emboldened, and every dose,
  * cut-off and interval is set apart so the numbers can be found at a glance.
+ *
+ * Three highlighter colours, and each means one thing: amber for the line that
+ * decides management, mint for a measured quantity, lilac for a name or an
+ * eponym. The letters stay black in all three - the colour is the paper behind
+ * them, the way a highlighter pen works, so nothing is harder to read for being
+ * marked.
  */
 export function RichText({ text }: { text: string }) {
   const parts = text.split(/(\*\*[^*]+\*\*)/g).filter((p) => p !== "");
@@ -59,7 +74,7 @@ export function RichText({ text }: { text: string }) {
     <>
       {parts.map((part, i) =>
         part.startsWith("**") && part.endsWith("**") ? (
-          <mark key={i} className="hl">
+          <mark key={i} className={NAME.test(part.slice(2, -2).trim()) ? "hl hl-name" : "hl"}>
             {withQuantities(part.slice(2, -2), `b${i}`)}
           </mark>
         ) : (

@@ -207,25 +207,37 @@ rule, a number badge, a diagram frame, a chip - and never washes behind running
 text: a line that decides management is marked by the weight of its letters.
 Green, ochre and carmine are reserved for safe, caution and danger.
 
-**The theme bug, and why every check missed it.** The app is written in Tailwind
-utilities naming literal shades - `bg-white`, `text-slate-900` - so a dark theme
-cannot be opted into per component. The token colours switched under
-`prefers-color-scheme` while those utilities did not, so on a phone in dark mode
-the cards stayed white while the panels went black and the headings went
-near-white: whole sections rendered invisible. Every token-level check passed
-throughout, because each token was individually correct. The fix is to redefine
-the ramps the utilities resolve through, so `bg-slate-50` becomes a dark surface
-and `text-slate-900` light type with no component touched. Twelve Tailwind
-families fold onto six meanings there; run `npm run theme` and paste, never
-hand-edit a value.
+**One theme, and why.** A white page, black letters, colour only where it
+carries meaning. There is deliberately no dark variant. The app is written in
+Tailwind utilities naming a literal shade - `bg-white`, `text-slate-900` - so a
+dark theme means redefining the ramps those resolve through, and any component
+that slips through keeps a light surface under light type. That is exactly what
+happened: the token colours switched under `prefers-color-scheme` while the
+utilities did not, so on a phone in dark mode the cards stayed white, the panels
+went black and the headings went near-white. Whole sections rendered invisible
+while every token-level check passed, because each token was individually
+correct. `color-scheme: light` is pinned so the phone's setting cannot repaint
+form controls underneath. One theme cannot drift.
 
-The lesson is the check that now exists. `npm run readable` drives the built app
-in both themes and, for every element holding visible text, resolves the real
-painted background by walking up through transparent ancestors before measuring
-contrast. It caught 119 unreadable elements the token checks called clean. Run
-it, not just `npm run contrast`, after any colour change. It parses OKLCH as
-well as rgb, because Chrome reports Tailwind colours in OKLCH and a naive parser
-reads 0.98 as a red channel and invents failures everywhere.
+**Marked words.** Three kinds of word are worth finding without reading the line
+around them, and each is written in its own colour: carmine for the line that
+decides management, violet for a name or an eponym to attach, green for a
+measured quantity. They are coloured letters, not highlighter washes - a wash
+behind the words fights the letters, and a page of marked points ends up looking
+like a used textbook. Three is the limit: a fourth colour stops the eye sorting
+them without reading, which is the only reason to have any. A name is detected
+by pattern in `RichText` and in the template's `rich()` - an acronym, or a
+capitalised word with a four-digit year - so the two regexes must stay in step.
+
+The lesson from all of this is the check that now exists. `npm run readable`
+drives the built app in both colour schemes and, for every element holding
+visible text, resolves the real painted background by walking up through
+transparent ancestors before measuring contrast. It caught 119 unreadable
+elements the token checks called clean, and it now doubles as the regression
+test that the phone's dark setting changes nothing. Run it, not just
+`npm run contrast`, after any colour change. It parses OKLCH as well as rgb,
+because Chrome reports Tailwind colours in OKLCH and a naive parser reads 0.98
+as a red channel and invents failures everywhere.
 
 **Phone.** Two faults, both about width. The past-question topic links were
 nowrap monospace pills, so one long title pushed the page wider than the screen
