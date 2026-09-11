@@ -4129,7 +4129,7 @@ topics.push({
           points: [
             "**Prednisolone 50 mg daily for 10 days, or 60 mg daily for 5 days then tapered over 5 days**, started within 72 hours of onset. [AAN 2012]",
             "That steroid course raises complete recovery from about **70% to about 85%** - the single intervention with clear benefit. [AAN 2012]",
-            "Add **valacyclovir 1 g three times daily for 7 days** (or acyclovir 400 mg five times daily) in severe palsy only. [AAN 2012]",
+            "Add **valacyclovir 1 g three times daily for 7 days** (or acyclovir 400 mg five times daily for 7 days) in severe palsy only. [AAN 2012]",
             "**Never give an antiviral alone** - alone it does nothing. [AAN 2012]",
             "Ramsay Hunt syndrome: **prednisolone 1 mg/kg/day plus acyclovir 800 mg five times daily for 7 days**, started as early as possible. [AAO-HNS 2013]",
             "Eye care for incomplete closure: **carboxymethylcellulose 0.5% drops hourly while awake**, ointment and eyelid taping at night, protective glasses. [AAO-HNS 2013]",
