@@ -186,7 +186,40 @@ npm run merge    # fold finished topics into their subject files
 npm run verify   # the content checker, which must stay green
 ```
 
-## Phase 3 — making it glanceable (in progress)
+## Phase 4 — points, a professional palette, and an Android app (done)
+
+**Point form.** Every one of the 183 topics was re-cut from paragraphs into
+points: 14,381 points became 29,430, the mean fell from 260 characters to 135,
+and nearly half now name their source. The house style is one fact per point,
+under 160 characters, the figure in bold, the reason as a clause after a dash,
+the guideline in square brackets. `npm run prose` measures the distance from
+that per subject; `npm run prosetopic <subject>` per topic. `npm run factcheck
+<subject> 5cbd390` compares every quantity in a subject file against the
+pre-rewrite baseline commit and fails if one is gone entirely - it was run on
+all twenty subjects and nothing was lost.
+
+**Palette.** Bold runs render as heavy dark type and nothing else - no wash
+behind them - and doses are dark bold figures, not accent-coloured. Subject hues
+are muted to 34 per cent saturation (30 in dark) so they read as navy, slate,
+forest and burgundy. `npm run contrast` must pass after any change to
+`src/lib/hues.ts` or the saturation constants in `src/index.css`; the checker's
+constants must match the CSS or it measures a palette the page does not render.
+
+**Android.** `capacitor.config.ts` plus `.github/workflows/fmprep-apk.yml`.
+The Android project is generated in CI from the config, never committed. The
+APK is signed with a stable identity kept on the `fmprep-signing-key` release
+and published to the rolling `fmprep-apk-latest` release, so the download URL
+is permanent and updates install over old versions. Entirely separate from
+Pocket-Med: own workflow, own app id (`in.fmprep.app`), own tags; it never
+touches `web/` or `gh-pages`. The runner image has no ImageMagick, so the
+launcher icon is the 512px PWA icon copied into each density folder as-is.
+
+**Still open.** The 735 diagrams passed structural validation but the
+adversarial clinical read never ran - a session limit killed the workflow
+before its first agent. The check reads `review/<subject>/`, so run
+`npm run digest` first to regenerate those from the rewritten topics.
+
+## Phase 3 — making it glanceable (done)
 
 The library read like a textbook because it was rendered like one. Three things
 changed, and the third is ongoing.
