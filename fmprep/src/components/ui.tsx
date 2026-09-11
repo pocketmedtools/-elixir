@@ -10,12 +10,23 @@ import type { Frequency, NoteSection, NoteTable } from "../lib/types";
 import { FREQUENCY_LABEL } from "../lib/types";
 
 /**
- * The units the library actually writes. Matching these rather than any digit
- * is what lets a dose be picked out while an ordinary number - "a grade 2 of 6
- * murmur" - is left as prose.
+ * A measured quantity, as this library writes them.
+ *
+ * Matching a listed unit rather than any digit is what lets a dose be picked
+ * out while an ordinary number - "a grade 2 of 6 murmur" - is left as prose.
+ *
+ * Two shapes matter beyond a bare number and its unit, and both were splitting
+ * values down the middle before they were added. A pair written over a slash is
+ * ONE measurement, not two: a blood pressure, a combination tablet, a weight
+ * band. Matching only its second half left "20/10 mmHg" rendered as loose text
+ * "20/" followed by a coloured "10 mmHg", which reads as though the systolic
+ * and the diastolic were different kinds of fact. Either side of that slash may
+ * itself be a range - a staging row reads "130-139/85-89 mmHg" - so the range
+ * is allowed twice, not once. And a Snellen acuity - 6/60, 6/9 - carries no
+ * unit at all, so without a shape of its own the whole value went unmarked.
  */
 const QUANTITY =
-  /(\d[\d.,]*(?:\s*(?:-|to)\s*\d[\d.,]*)?\s*(?:micrograms?\/kg\/day|micrograms?\/kg\/min|micrograms?\/kg|mg\/kg\/day|mg\/kg\/dose|mcg\/kg\/min|mcg\/kg\/day|mL\/kg\/h|mg\/kg|mcg\/kg|mg\/dL|g\/dL|mmol\/L|mEq\/kg|mEq\/L|mL\/min|mg\/day|IU\b|units?\b|mg\b|mcg\b|micrograms?\b|mL\b|kg\b|mmHg|cmH2O|%|per 1000|per 100000|degrees C|weeks?\b|days?\b|hours?\b|minutes?\b|months?\b|years?\b))/g;
+  /(\b[36]\s*\/\s*(?:5|6|9|12|18|24|36|60)\b|\d[\d.,]*(?:\s*(?:-|to)\s*\d[\d.,]*)?(?:\s*\/\s*\d[\d.,]*(?:\s*(?:-|to)\s*\d[\d.,]*)?)?\s*(?:micrograms?\/kg\/day|micrograms?\/kg\/min|micrograms?\/kg|mg\/kg\/day|mg\/kg\/dose|mcg\/kg\/min|mcg\/kg\/day|kcal\/kg\/day|g\/kg\/day|mL\/kg\/h|mg\/kg|mcg\/kg|g\/kg|mg\/dL|g\/dL|ng\/mL|pg\/mL|mmol\/mol|mmol\/L|mEq\/kg|mEq\/L|mIU\/L|IU\/L|U\/L|mL\/min\/1\.73\s*m2|mL\/min|L\/min|mg\/day|g\/day|IU\b|units?\b|mg\b|mcg\b|micrograms?\b|mL\b|kg\b|mmHg|cmH2O|kcal\b|cm\b|mm\b|dB\b|Hz\b|SD\b|%|per 1000|per 100000|percent\b|degrees C|degrees\b|weeks?\b|days?\b|hours?\b|minutes?\b|seconds?\b|months?\b|years?\b|min\b|h\b|litres?\b|lakh\b|million\b|crore\b))/g;
 
 /**
  * A trailing source tag, "[NICE NG28 2022]". It has to be visible - a figure a
@@ -32,6 +43,22 @@ const CITE = /(\[[^\]]{2,60}\])/g;
  * reproduce - and two colours let the eye sort them without reading.
  */
 const NAME = /^(?:[A-Z][A-Za-z'’-]*(?:\s+[A-Z][A-Za-z'’-]*)*\s+\d{4}|[A-Z]{2,}(?:[ -][A-Z0-9]+)*)$/;
+
+/**
+ * What kind of thing a marked run is, which decides its one colour.
+ *
+ * One colour per marked run, always. Colouring a quantity inside a marked run
+ * differently from the words around it chopped a single phrase into two
+ * colours - "24 per cent" in one, "of men" in another - which reads as two
+ * facts rather than one. An author who marked a run containing a figure marked
+ * it because the figure is the point, so the whole run takes the value colour.
+ */
+function markKind(run: string): "value" | "name" | "key" {
+  const t = run.trim();
+  if (NAME.test(t)) return "name";
+  QUANTITY.lastIndex = 0;
+  return QUANTITY.test(t) ? "value" : "key";
+}
 
 /** Split a run of plain text so every quantity in it becomes its own chip. */
 function withQuantities(text: string, keyBase: string): ReactNode[] {
@@ -62,11 +89,9 @@ function withQuantities(text: string, keyBase: string): ReactNode[] {
  * marked with a highlighter rather than merely emboldened, and every dose,
  * cut-off and interval is set apart so the numbers can be found at a glance.
  *
- * Three highlighter colours, and each means one thing: amber for the line that
- * decides management, mint for a measured quantity, lilac for a name or an
- * eponym. The letters stay black in all three - the colour is the paper behind
- * them, the way a highlighter pen works, so nothing is harder to read for being
- * marked.
+ * Three colours, each meaning one thing, and one colour per marked run: deep
+ * green when the run carries a measured value, deep violet when it is a name or
+ * an eponym to attach, deep carmine otherwise - a line that decides management.
  */
 export function RichText({ text }: { text: string }) {
   const parts = text.split(/(\*\*[^*]+\*\*)/g).filter((p) => p !== "");
@@ -74,7 +99,7 @@ export function RichText({ text }: { text: string }) {
     <>
       {parts.map((part, i) =>
         part.startsWith("**") && part.endsWith("**") ? (
-          <mark key={i} className={NAME.test(part.slice(2, -2).trim()) ? "hl hl-name" : "hl"}>
+          <mark key={i} className={`hl hl-${markKind(part.slice(2, -2))}`}>
             {withQuantities(part.slice(2, -2), `b${i}`)}
           </mark>
         ) : (

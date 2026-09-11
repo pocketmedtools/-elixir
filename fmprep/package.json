@@ -24,7 +24,8 @@
     "diagrams": "tsx scripts/diagramAudit.mjs",
     "readable": "node scripts/readable.mjs",
     "theme": "node scripts/genTheme.mjs",
-    "typescale": "node scripts/typescale.mjs"
+    "typescale": "node scripts/typescale.mjs",
+    "marks": "node scripts/marks.mjs"
   },
   "dependencies": {
     "@capacitor/android": "^8.5.1",

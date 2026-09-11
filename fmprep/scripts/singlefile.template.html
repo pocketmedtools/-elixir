@@ -130,12 +130,18 @@ button.chip.solid:hover{border-color:var(--acc);background:var(--wash)}
    sorting them without reading. */
 mark.hl{background:none;color:#7d1122;font-weight:700;padding:0}
 mark.hl.hl-name{color:#48206b}
+/* A marked run carrying a measured value takes the quantity colour, so a blood
+   pressure and the words qualifying it stay one colour and one fact. */
+mark.hl.hl-value{color:#0b5430}
 cite.cite{font:500 .72em/1.5 var(--font-mono);font-style:normal;
   color:var(--quiet);background:var(--sunk);border:1px solid var(--rule);border-radius:3px;
   padding:.05em .36em;margin-left:.35em;white-space:nowrap;vertical-align:.05em}
 b.num{font-family:var(--font-mono);font-weight:700;
   font-variant-numeric:tabular-nums;color:#0b5430;white-space:nowrap}
-mark.hl b.num{color:#0b5430}
+/* Inside a marked run the quantity takes the run's colour rather than its own:
+   still monospaced, so a dose is found by its shape, but no longer breaking the
+   phrase it belongs to into two colours. */
+mark.hl b.num{color:inherit}
 .freq{display:inline-flex;align-items:center;gap:6px;font:600 10.5px/1 var(--font-mono);
   color:var(--quiet);white-space:nowrap;text-transform:uppercase;letter-spacing:.07em}
 .freq i{width:26px;height:5px;border-radius:99px;background:var(--rule);display:block;position:relative;overflow:hidden}
@@ -401,23 +407,39 @@ for (const s of S) for (const t of s.topics) TOPIC.set(t.id, {t, s});
 const FREQ = {core:["Core",1],common:["Common",.72],"less-common":["Less common",.44],uncommon:["Uncommon",.2]};
 const esc = x => String(x).replace(/[&<>"]/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
 
-/* Units the library actually writes, so a dose is picked out but "2 of 6" is not. */
-const NUM = /\b(\d[\d.,]*(?:\s*(?:-|to)\s*\d[\d.,]*)?\s*(?:micrograms?\/kg\/day|micrograms?\/kg\/min|micrograms?\/kg|mg\/kg\/day|mg\/kg\/dose|mcg\/kg\/min|mcg\/kg\/day|mL\/kg\/h|mg\/kg|mcg\/kg|mg\/dL|g\/dL|mmol\/L|mEq\/kg|mEq\/L|mL\/min|mg\/day|IU\b|units?\b|mg\b|mcg\b|micrograms?\b|mL\b|kg\b|mmHg|cmH2O|%|per 1000|per 100000|degrees C|weeks?\b|days?\b|hours?\b|minutes?\b|months?\b|years?\b))/g;
+/* A measured quantity as this library writes them: a listed unit rather than any
+   digit, so a dose is picked out and "a grade 2 of 6 murmur" is left as prose.
+   A pair written over a slash is ONE measurement - a blood pressure, a
+   combination tablet - and matching only its second half rendered "20/10 mmHg"
+   as loose text followed by a coloured "10 mmHg", as though systolic and
+   diastolic were different kinds of fact. A Snellen acuity carries no unit at
+   all, so it needs a shape of its own. */
+const NUM = /(\b[36]\s*\/\s*(?:5|6|9|12|18|24|36|60)\b|\d[\d.,]*(?:\s*(?:-|to)\s*\d[\d.,]*)?(?:\s*\/\s*\d[\d.,]*(?:\s*(?:-|to)\s*\d[\d.,]*)?)?\s*(?:micrograms?\/kg\/day|micrograms?\/kg\/min|micrograms?\/kg|mg\/kg\/day|mg\/kg\/dose|mcg\/kg\/min|mcg\/kg\/day|kcal\/kg\/day|g\/kg\/day|mL\/kg\/h|mg\/kg|mcg\/kg|g\/kg|mg\/dL|g\/dL|ng\/mL|pg\/mL|mmol\/mol|mmol\/L|mEq\/kg|mEq\/L|mIU\/L|IU\/L|U\/L|mL\/min\/1\.73\s*m2|mL\/min|L\/min|mg\/day|g\/day|IU\b|units?\b|mg\b|mcg\b|micrograms?\b|mL\b|kg\b|mmHg|cmH2O|kcal\b|cm\b|mm\b|dB\b|Hz\b|SD\b|%|per 1000|per 100000|percent\b|degrees C|degrees\b|weeks?\b|days?\b|hours?\b|minutes?\b|seconds?\b|months?\b|years?\b|min\b|h\b|litres?\b|lakh\b|million\b|crore\b))/g;
 
 /* A trailing source tag, "[NICE NG28 2022]": visible, because a figure a reader
    cannot trace is a figure they cannot trust, but set quiet. */
 const CITE = /\[([^\]]{2,60})\]/g;
 
 /* A bold run that names something rather than states something: an acronym
-   (WONCA, AAFP) or an eponym with its year (Leeuwenhorst 1974). It takes its own
-   highlighter colour, because a name is recalled differently from a rule. */
+   (WONCA, AAFP) or an eponym with its year (Leeuwenhorst 1974). */
 const NAME = /^(?:[A-Z][A-Za-z'’-]*(?:\s+[A-Z][A-Za-z'’-]*)*\s+\d{4}|[A-Z]{2,}(?:[ -][A-Z0-9]+)*)$/;
+
+/* One colour per marked run, decided by what the run carries. Colouring a
+   quantity inside a run differently from the words around it chopped one phrase
+   into two colours; an author who marked a run containing a figure marked it
+   because the figure is the point, so the whole run takes the value colour. */
+function markKind(run){
+  var t = run.trim();
+  if (NAME.test(t)) return "name";
+  NUM.lastIndex = 0;
+  return NUM.test(t) ? "value" : "key";
+}
 
 /** Escape, mark the **bold** runs, chip the quantities, quieten the sources. */
 function rich(x){
   return esc(x)
     .replace(/\*\*(.+?)\*\*/g, (_, run) =>
-      '<mark class="hl' + (NAME.test(run.trim()) ? ' hl-name' : '') + '">' + run + '</mark>')
+      '<mark class="hl hl-' + markKind(run) + '">' + run + '</mark>')
     .replace(NUM, '<b class="num">$1</b>')
     .replace(CITE, '<cite class="cite">$1</cite>');
 }
