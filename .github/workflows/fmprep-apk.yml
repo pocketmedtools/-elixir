@@ -1,0 +1,134 @@
+name: Build FM Prep Android APK
+
+# Builds the FM Prep exam app as a signed Android APK and publishes it to a
+# rolling GitHub Release, so the download link never changes:
+#   https://github.com/<owner>/<repo>/releases/download/fmprep-apk-latest/FM-Prep.apk
+#
+# This is FM Prep's own workflow. It reads only fmprep/, uses its own release
+# tags (fmprep-apk-latest, fmprep-signing-key) and never touches web/, the
+# Pocket-Med workflow, or the gh-pages branch.
+
+on:
+  workflow_dispatch:
+  push:
+    branches: [main, claude/fm-study-material-app-y84obf]
+    paths:
+      - "fmprep/**"
+      - ".github/workflows/fmprep-apk.yml"
+
+permissions:
+  contents: write
+
+jobs:
+  build-apk:
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: fmprep
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Java
+        uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: "21"
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+          cache: npm
+          cache-dependency-path: fmprep/package-lock.json
+
+      - name: Install dependencies
+        run: npm ci
+
+      # Content checks gate the APK the same way they gate the site: a wrong
+      # answer key or an unbalanced bold marker fails the build here too.
+      - name: Verify content and build the web app
+        run: npm run build:apk
+
+      - name: Setup Android SDK
+        uses: android-actions/setup-android@v3
+
+      # The Android project is generated fresh each run from capacitor.config.ts.
+      - name: Generate the Android project
+        run: |
+          npx cap add android
+          npx cap sync android
+
+      # App icon from the PWA's own 512px icon, when one is present.
+      - name: App icon
+        run: |
+          if [ -f public/icon-512.png ]; then
+            mkdir -p assets
+            cp public/icon-512.png assets/icon-only.png
+            cp public/icon-512.png assets/icon-foreground.png
+            npx @capacitor/assets generate --android --iconBackgroundColor '#11182A' --iconBackgroundColorDark '#11182A' || echo "icon generation skipped"
+          else
+            echo "no public/icon-512.png; keeping the default icon"
+          fi
+
+      # A stable signing identity lets updates install over old versions. It is
+      # kept on a dedicated release tag; it is an install identity, not a
+      # confidential credential (impossible in a public repository).
+      - name: Obtain signing keystore
+        run: |
+          mkdir -p keystore
+          if curl -fL -o keystore/fmprep-release.keystore \
+            "https://github.com/${{ github.repository }}/releases/download/fmprep-signing-key/fmprep-release.keystore"; then
+            echo "Reusing the existing FM Prep signing identity"
+            echo "NEW_KEY=0" >> "$GITHUB_ENV"
+          else
+            keytool -genkeypair -keystore keystore/fmprep-release.keystore -alias fmprep \
+              -keyalg RSA -keysize 2048 -validity 10950 -storepass fmprep -keypass fmprep \
+              -dname "CN=FM Prep, OU=Exam Preparation, O=FM Prep, C=IN"
+            echo "NEW_KEY=1" >> "$GITHUB_ENV"
+          fi
+
+      - name: Persist a newly created signing identity
+        if: env.NEW_KEY == '1'
+        uses: softprops/action-gh-release@v2
+        with:
+          tag_name: fmprep-signing-key
+          name: FM Prep install identity
+          body: "Stable APK signing identity used by the FM Prep build workflow so updates install over previous versions."
+          files: fmprep/keystore/fmprep-release.keystore
+
+      - name: Build release APK (unsigned)
+        run: cd android && chmod +x gradlew && ./gradlew assembleRelease --no-daemon
+
+      # Sign with apksigner rather than editing the generated Gradle file, so
+      # the project stays exactly what Capacitor emits.
+      - name: Align and sign
+        run: |
+          BT="$ANDROID_HOME/build-tools/$(ls "$ANDROID_HOME/build-tools" | sort -V | tail -1)"
+          UNSIGNED=android/app/build/outputs/apk/release/app-release-unsigned.apk
+          [ -f "$UNSIGNED" ] || UNSIGNED=android/app/build/outputs/apk/release/app-release.apk
+          "$BT/zipalign" -f -p 4 "$UNSIGNED" FM-Prep-aligned.apk
+          "$BT/apksigner" sign --ks keystore/fmprep-release.keystore --ks-key-alias fmprep \
+            --ks-pass pass:fmprep --key-pass pass:fmprep --out FM-Prep.apk FM-Prep-aligned.apk
+          "$BT/apksigner" verify FM-Prep.apk
+          ls -la FM-Prep.apk
+
+      - name: Upload APK artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: FM-Prep-apk
+          path: fmprep/FM-Prep.apk
+          if-no-files-found: error
+
+      - name: Publish APK to the rolling release
+        uses: softprops/action-gh-release@v2
+        with:
+          tag_name: fmprep-apk-latest
+          name: FM Prep Android app
+          body: |
+            Latest FM Prep Android APK - the DNB / MD Family Medicine revision library.
+
+            Download **FM-Prep.apk** below, open it on the phone, and allow install from this source.
+            Updates install over the previous version.
+          files: fmprep/FM-Prep.apk

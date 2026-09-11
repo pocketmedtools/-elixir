@@ -62,20 +62,22 @@ body {
      an indigo need different lightness to reach the same contrast. */
   --al: 40;
   --ad: 58;
-  --acc: hsl(var(--h) 58% calc(var(--al) * 1%));
-  --acc-hi: hsl(var(--h) 62% calc((var(--al) + 10) * 1%));
-  --wash: hsl(var(--h) 62% 96%);
-  --wash-2: hsl(var(--h) 50% 92%);
-  --acc-rule: hsl(var(--h) 34% 82%);
-  --hl: hsl(var(--h) 88% 84%);
+  /* Muted, dark accents - navy, slate, forest, burgundy - rather than
+     saturated ones, so the page reads as a reference and not a poster. */
+  --acc: hsl(var(--h) 34% calc(var(--al) * 1%));
+  --acc-hi: hsl(var(--h) 38% calc((var(--al) + 10) * 1%));
+  --wash: hsl(var(--h) 20% 96.5%);
+  --wash-2: hsl(var(--h) 20% 93%);
+  --acc-rule: hsl(var(--h) 18% 84%);
+  --hl: transparent;
   --sunk: #eff1f4;
 }
 
 
 @media (prefers-color-scheme: dark) {
   :root:not([data-theme="light"]) {
-    --acc: hsl(var(--h) 58% calc(var(--ad) * 1%));
-    --acc-hi: hsl(var(--h) 62% calc((var(--ad) + 8) * 1%));
+    --acc: hsl(var(--h) 30% calc(var(--ad) * 1%));
+    --acc-hi: hsl(var(--h) 34% calc((var(--ad) + 8) * 1%));
     --wash: hsl(var(--h) 36% 14%);
     --wash-2: hsl(var(--h) 32% 19%);
     --acc-rule: hsl(var(--h) 28% 30%);
@@ -84,8 +86,8 @@ body {
   }
 }
 :root[data-theme="dark"] {
-  --acc: hsl(var(--h) 58% calc(var(--ad) * 1%));
-  --acc-hi: hsl(var(--h) 62% calc((var(--ad) + 8) * 1%));
+  --acc: hsl(var(--h) 30% calc(var(--ad) * 1%));
+  --acc-hi: hsl(var(--h) 34% calc((var(--ad) + 8) * 1%));
   --wash: hsl(var(--h) 36% 14%);
   --wash-2: hsl(var(--h) 32% 19%);
   --acc-rule: hsl(var(--h) 28% 30%);
@@ -93,24 +95,23 @@ body {
   --sunk: #131a27;
 }
 
-/* The highlighter: a **bold** run in the content is a line that decides
-   management, so it is marked rather than merely emboldened. */
+/* A **bold** run in the content is a line that decides management. It is set
+   in heavy dark type and nothing else - no paint behind it, no colour - so the
+   emphasis is the weight of the letters, the way a textbook does it. */
 mark.hl {
-  background: var(--hl);
+  background: none;
   color: var(--ink);
-  font-weight: 650;
-  padding: 0.06em 0.22em;
-  border-radius: 2px;
-  box-decoration-break: clone;
-  -webkit-box-decoration-break: clone;
+  font-weight: 750;
+  padding: 0;
 }
 
-/* A measured quantity, so doses and cut-offs leave the line of prose. */
+/* A measured quantity: dark, bold, tabular, so a dose is found at a glance
+   without leaving the reading colour. */
 b.num {
   font-family: ui-monospace, "SF Mono", Menlo, Consolas, monospace;
-  font-weight: 600;
+  font-weight: 700;
   font-variant-numeric: tabular-nums;
-  color: var(--acc);
+  color: var(--ink);
   white-space: nowrap;
 }
 
@@ -137,9 +138,9 @@ cite.cite {
   font-size: 0.72em;
   font-weight: 500;
   letter-spacing: 0.01em;
-  color: var(--acc);
-  background: var(--wash);
-  border: 1px solid var(--acc-rule);
+  color: var(--quiet);
+  background: var(--sunk);
+  border: 1px solid var(--rule);
   border-radius: 3px;
   padding: 0.05em 0.36em;
   margin-left: 0.35em;
