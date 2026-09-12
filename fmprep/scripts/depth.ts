@@ -13,22 +13,23 @@
  *   source   the point ends in a bracketed guideline or standard text, so a
  *            reader can trace the figure. An untraceable number is a number a
  *            reader cannot use.
- *   recent   the source names a year from the last decade, or an edition. A
- *            citation of a 2009 guideline superseded twice is worse than none.
+ *   recent   the source is still the current one. An edition or a year inside
+ *            the last decade passes; so does a tag whose year is part of its
+ *            name, because a statute and a landmark paper are cited by their
+ *            own year forever. See `scripts/lib/citations.ts`. A citation of a
+ *            2009 guideline superseded twice is worse than none.
  *
  *   npm run depth              # every subject
  *   npm run depth cardiovascular
  */
 import { ensureAll, subjects } from "../src/content/index";
+import { isCurrent } from "./lib/citations";
 
 await ensureAll();
 
 const CITE = /\[[^\]]{2,60}\]\s*$/;
-const YEAR = /\b(19|20)\d{2}\b/;
-const EDITION = /\b\d{1,2}(?:e|th ed|nd ed|rd ed|st ed)\b/i;
 // A reason clause: an em-free dash used as a connective, or a plain connective.
 const REASON = /(?: - | because | since | so that | which is why |, so |, as )/i;
-const THIS_YEAR = 2026;
 const want = process.argv[2];
 
 const rows: { id: string; n: number; reason: number; source: number; recent: number }[] = [];
@@ -45,9 +46,7 @@ for (const s of subjects()) {
     const m = p.match(CITE);
     if (!m) continue;
     source++;
-    const tag = m[0];
-    const y = tag.match(YEAR);
-    if (EDITION.test(tag) || (y && THIS_YEAR - Number(y[0]) <= 10)) recent++;
+    if (isCurrent(m[0])) recent++;
   }
   rows.push({ id: s.id, n: pts.length, reason, source, recent });
 }
@@ -65,4 +64,4 @@ for (const r of rows) {
 const tot = rows.reduce((a, r) => ({ n: a.n + r.n, reason: a.reason + r.reason, source: a.source + r.source, recent: a.recent + r.recent }), { n: 0, reason: 0, source: 0, recent: 0 });
 console.log(`\n${"ALL".padEnd(26)} ${String(tot.n).padStart(5)}  ${String(pct(tot.reason, tot.n)).padStart(5)}%  ${String(pct(tot.source, tot.n)).padStart(5)}%  ${String(pct(tot.recent, Math.max(1, tot.source))).padStart(6)}%`);
 console.log("\nTarget: reason over 70%, source over 70%, current over 90% of the sources given.");
-console.log('"current" is the share of citations naming an edition or a year within the last decade.');
+console.log('"current" is the share of citations that are still the current document.');

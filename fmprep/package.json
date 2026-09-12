@@ -27,7 +27,8 @@
     "typescale": "node scripts/typescale.mjs",
     "marks": "node scripts/marks.mjs",
     "prosetopic": "tsx scripts/prosetopic.ts",
-    "depth": "tsx scripts/depth.ts"
+    "depth": "tsx scripts/depth.ts",
+    "stale": "tsx scripts/stale.ts"
   },
   "dependencies": {
     "@capacitor/android": "^8.5.1",
