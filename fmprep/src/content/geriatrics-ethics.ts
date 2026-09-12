@@ -3800,7 +3800,7 @@ topics.push({
             "Correct hearing and vision, treat dental disease and fit dentures - and address social isolation and food insecurity. [WHO ICOPE 2019]",
             "Relax disease targets to match the frailty - use the **Clinical Frailty Scale** to calibrate how hard to investigate. [Rockwood 2020]",
             "Link to entitlements - the **NPHCE geriatric clinic**, the public distribution system and the Annapurna Scheme. [NPHCE 2011]",
-            "Also the old age pension, **Rashtriya Vayoshri Yojana** for devices, and PM-JAY Vay Vandana cover at 70 and above. [PM-JAY 2024]",
+            "Also the old age pension and **Rashtriya Vayoshri Yojana** for devices - plus PM-JAY Vay Vandana cover at 70 and above. [PM-JAY 2024]",
             "Review **weight and function at 4-8 weeks** - and begin advance care planning where the frailty is advanced. [BGS 2024]",
           ],
         },
@@ -3855,7 +3855,7 @@ topics.push({
         {
           heading: "3. Refeeding syndrome - risk, mechanism and prevention",
           points: [
-            "Mechanism: refeeding after starvation causes an **insulin surge** that drives phosphate, potassium and magnesium into cells. [NICE CG32 2017]",
+            "Mechanism - refeeding after starvation causes an **insulin surge** that drives phosphate, potassium and magnesium into cells. [NICE CG32 2017]",
             "The result - hypophosphataemia, arrhythmia, cardiac and respiratory failure, rhabdomyolysis, seizures, Wernicke encephalopathy. [NICE CG32 2017]",
             "High risk - **BMI under 16 kg/m2**, or unintentional weight loss over 15% in 3-6 months. [NICE CG32 2017]",
             "Also high risk - little or no intake for more than 10 days, or low potassium, phosphate or magnesium before feeding. [NICE CG32 2017]",
