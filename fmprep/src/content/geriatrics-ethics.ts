@@ -2492,7 +2492,7 @@ topics.push({
       heading: "Confidentiality and its exceptions",
       points: [
         "Confidentiality is a duty under **regulation 7.14, IMC Regulations 2002** - breach is professional misconduct, not discourtesy. [IMC Ethics Regulations 2002]",
-        "Regulation 7.14: a practitioner shall not disclose the secrets of a patient learnt in the profession - subject to defined exceptions. [IMC Ethics Regulations 2002]",
+        "Regulation 7.14: a practitioner shall not disclose the secrets of a patient learnt in practice - subject to defined exceptions. [IMC Ethics Regulations 2002]",
         "The NMC's replacement conduct regulations of **August 2023** were kept in abeyance within weeks - the 2002 Regulations still govern. [NMC 2023]",
         "The **2002 Regulations continue to govern** - say which set you are citing and its date. [IMC Ethics Regulations 2002]",
         "Exception 1: disclosure with the patient's **valid consent** - the duty is owed to the patient, so the patient can waive it. [IMC Ethics Regulations 2002]",
