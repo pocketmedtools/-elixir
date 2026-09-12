@@ -5232,7 +5232,7 @@ topics.push({
             "**Treat the cause and achieve source control** - appropriate antibiotics within the first hour of suspected septic shock. [SSC 2021]",
             "Source control continued: **drain pus, remove infected lines, operate on a perforation** - no antibiotic sterilises an abscess. [SSC 2021]",
             "Source control continued: **antivenom, artesunate, atropine with pralidoxime** - the antidote outranks any ventilator setting. [WHO 2023]",
-            "**Oxygenation targets are deliberately modest - PaO2 55-80 mmHg or SpO2 88-95%** - chasing a normal saturation costs FiO2 and pressure without benefit. [ARDSNet 2000]",
+            "**Oxygenation targets are deliberately modest - PaO2 55-80 mmHg or SpO2 88-95%** - a normal saturation costs FiO2 and pressure for nothing. [ARDSNet 2000]",
             "**Escalate in steps:** face mask, then high-flow oxygen or CPAP in mild disease with monitoring - each step needs a time limit. [ESICM 2023]",
             "**Intubate without delay** when the work of breathing is unsustainable, PaCO2 rises or consciousness falls - a falling ROX index says the same. [ESICM 2023]",
             "**Conservative fluid strategy once shock has resolved** (FACTT, 2006) - aim neutral to negative while keeping perfusion. [ESICM 2023]",
