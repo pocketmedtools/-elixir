@@ -19,3 +19,9 @@ fmprep/review/**
 
 # Generated single-file build — regenerate with `npm run single`
 fmprep/dist-single/
+
+# Throwaway helper scripts an agent writes while measuring a subject. They are
+# named with a leading underscore so they never mix with the real checks in
+# fmprep/scripts, and they are not worth committing or worth deleting out from
+# under a running agent.
+fmprep/scripts/_*.ts
