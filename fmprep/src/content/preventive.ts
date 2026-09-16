@@ -4393,7 +4393,7 @@ topics.push({
         "**Culex tritaeniorhynchus** carries Japanese encephalitis - breeds in rice fields, with the pig as amplifier. [Park 27e]",
         "**Culex quinquefasciatus** carries filaria - breeds in polluted water. [Park 27e]",
         "**Phlebotomus argentipes** carries kala-azar - breeds in damp cracks in mud walls. [Park 27e]",
-        "**Integrated vector management** (WHO, 2004) combines five approaches chosen on local entomological evidence - one method alone breeds resistance. [WHO 2004]",
+        "**Integrated vector management** (WHO 2004, now in the Global Vector Control Response 2017-2030) combines five approaches - one method breeds resistance. [WHO GVCR 2017]",
         "**Environmental** control: source reduction, drainage, weekly dry day, covering containers - it removes the breeding site permanently. [Park 27e]",
         "**Biological** control: Gambusia affinis, Poecilia reticulata and Bti - fish and Bti leave no residue in drinking water. [Park 27e]",
         "**Chemical** control: larvicides for the aquatic stage, adulticides for the flying mosquito - larvicide is cheaper and the larva cannot escape. [Park 27e]",
