@@ -92,6 +92,13 @@ export const STILL_CURRENT = new Set<string>([
   "NICE CG32 2006", "NICE CG32", "AAP AOM 2013", "WHO MEC 2015", "ATA 2014",
   "ATA 2015", "MDS 2015", "USPHS 2008", "BGS Fit for Frailty 2015",
   "STROBE 2007", "STARD 2015", "Cochrane Handbook 6.4", "BAD Warts 2014",
+  // Checked against a search for a replacement, and there is none: the National
+  // Tracheostomy Safety Project manual and its emergency algorithms, the AAGBI
+  // local anaesthetic toxicity safety guideline, the AAO-HNS Bell palsy
+  // guideline, the WHO/UNICEF joint statement on acute diarrhoea, and the NICE
+  // publication that still defines clinical audit.
+  "NTSP 2012", "AAGBI 2010", "AAGBI LAST 2010", "AAO-HNS 2013",
+  "WHO/UNICEF 2005", "NICE 2002",
 ]);
 
 const YEAR = /\b(19|20)\d{2}\b/;
