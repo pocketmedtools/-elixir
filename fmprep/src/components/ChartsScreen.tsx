@@ -21,11 +21,16 @@ import {
 } from "../lib/chartIndex";
 import { colorVars } from "../lib/hues";
 import { armDailyChart } from "../lib/dailyChart";
+import { MANUAL_LINKS } from "../pyq/links";
 import type { Diagram } from "../lib/types";
 import DiagramBlock from "./DiagramBlock";
 import { BackBar, TableBlock } from "./ui";
 
 const KINDS: ChartKind[] = ["score", "treatment", "flow", "table"];
+
+const isNativeApp = Boolean(
+  (globalThis as { Capacitor?: { isNativePlatform?: () => boolean } }).Capacitor?.isNativePlatform?.(),
+);
 
 export default function ChartsScreen({
   onBack,
@@ -42,6 +47,12 @@ export default function ChartsScreen({
   const [query, setQuery] = useState(initialQuery);
   const [kind, setKind] = useState<ChartKind | null>(null);
   const [open, setOpen] = useState<string | null>(initialChartId ?? null);
+  /* What the daily notification is actually doing, in the words a reader needs:
+     it is the installed app only, and it says so rather than leaving someone
+     waiting for a notification the web page can never send. */
+  const [notifyNote, setNotifyNote] = useState(
+    "Install the Android app to get it as a notification at 8am.",
+  );
   const [byTopic, setByTopic] = useState<Record<string, Diagram[]> | null>(null);
   const ready = byTopic !== null;
 
@@ -57,14 +68,30 @@ export default function ChartsScreen({
     [byTopic],
   );
   const results = useMemo(() => searchCharts(index, query, kind ?? undefined), [index, query, kind]);
-  const today = useMemo(() => chartOfTheDay(index, dayNumber(Date.now())), [index]);
+  /* How often each topic has actually been examined. The daily rotation works
+     through the busiest first, so the first month covers what the papers keep
+     asking rather than whatever sorted first alphabetically. */
+  const examWeight = useMemo(() => {
+    const n: Record<string, number> = {};
+    for (const topics of Object.values(MANUAL_LINKS)) for (const t of topics) n[t] = (n[t] ?? 0) + 1;
+    return (topicId: string) => n[topicId] ?? 0;
+  }, []);
+
+  const today = useMemo(
+    () => chartOfTheDay(index, dayNumber(Date.now()), examWeight),
+    [index, examWeight],
+  );
 
   /* Re-arm the fortnight of daily notifications whenever this screen is
      opened with a full index. No-ops on the web, where a page cannot raise a
      notification once its tab is closed. */
   useEffect(() => {
-    if (index.length) void armDailyChart(index);
-  }, [index]);
+    if (!index.length) return;
+    void armDailyChart(index, examWeight).then((n) => {
+      if (n > 0) setNotifyNote(`Notifications are on: the next ${n} days are scheduled for 8am.`);
+      else if (isNativeApp) setNotifyNote("Allow notifications to get it at 8am.");
+    });
+  }, [index, examWeight]);
 
   const counts = useMemo(() => {
     const c: Record<string, number> = {};
@@ -135,6 +162,11 @@ export default function ChartsScreen({
           <section className="mt-6 rounded-xl border-[1.5px] p-4" style={{ borderColor: "var(--rule)", background: "var(--cream)" }}>
             <p className="text-[12.5px] font-bold" style={{ color: "var(--label)" }}>
               Today&apos;s classification
+            </p>
+            {/* Nothing on screen said what the daily chart was or where it came
+                from, so it read as decoration. It has to say so itself. */}
+            <p className="mt-1 mb-2 text-[13px] leading-snug" style={{ color: "var(--quiet)" }}>
+              One a day, worked through most-examined first. {notifyNote}
             </p>
             <Row entry={today} open={open === today.id} onToggle={() => setOpen(open === today.id ? null : today.id)} onOpenTopic={onOpenTopic} />
           </section>

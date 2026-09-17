@@ -293,7 +293,8 @@ td:first-child{font-weight:600}
 .chart-body{margin-top:16px;padding-top:15px;border-top:1px dashed var(--acc-rule)}
 .today{margin-top:22px;border:1.5px solid var(--rule);background:var(--cream);
   border-radius:var(--radius);padding:14px 15px}
-.today > .eyebrow{margin-bottom:8px}
+.today > .eyebrow{margin-bottom:6px}
+.today-note{font-size:13px;line-height:1.5;color:var(--quiet);margin-bottom:10px}
 .vis{margin-top:26px;padding-top:22px;border-top:1px dashed var(--acc-rule);
   display:flex;flex-direction:column;gap:16px}
 .vis-h{font:700 16.5px/1.35 var(--font-ui);color:var(--head);margin-bottom:10px}
@@ -916,9 +917,20 @@ function chartSearch(q, kind){
 /* One a day, the same one on every device, and every score comes round before
    any repeats. */
 const dayNo = at => Math.floor((at - new Date(at).getTimezoneOffset() * 60000) / 86400000);
+/* Most-examined first. Alphabetical by id was arbitrary: it started at whatever
+   subject happened to sort first, which is no way to spend the first month. The
+   papers say which classifications matter, so the rotation follows how often
+   each chart's own topic is linked from a past question; ties fall back to the
+   id so the order is identical on every device. */
+const EXAM_WEIGHT = (() => {
+  const n = {};
+  for (const qid in PYQ.links) for (const t of PYQ.links[qid]) n[t] = (n[t] || 0) + 1;
+  return n;
+})();
 function chartOfDay(){
   const pool = chartIndex().filter(e => e.kind === "score" || e.kind === "treatment")
-    .slice().sort((a, b) => a.id.localeCompare(b.id));
+    .slice().sort((a, b) =>
+      (EXAM_WEIGHT[b.topicId] || 0) - (EXAM_WEIGHT[a.topicId] || 0) || a.id.localeCompare(b.id));
   return pool.length ? pool[dayNo(Date.now()) % pool.length] : null;
 }
 
@@ -951,6 +963,8 @@ function viewCharts(){
       '<button class="pill" data-ck="' + k + '" aria-pressed="' + (state.ck === k) + '">' +
         CHART_LABEL[k] + (counts[k] ? " (" + counts[k] + ")" : "") + '</button>').join("") + '</div>' +
     (today ? '<div class="today"><p class="eyebrow">Today\'s classification</p>' +
+       '<p class="today-note">One a day, worked through most-examined first. ' +
+       'Install the Android app to get it as a notification at 8am.</p>' +
        chartCard(today, state.chart === today.id) + '</div>' : "") +
     '<p style="color:var(--quiet);font-size:14px;margin:22px 0 10px">' + res.length +
       (res.length === 1 ? ' chart' : ' charts') + (state.cq ? ' matching "' + esc(state.cq) + '"' : "") + '</p>' +

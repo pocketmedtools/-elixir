@@ -193,92 +193,92 @@ export const LINKS_PART3: Record<string, string[]> = {
   "pyqtw-0301": ["surgery-office-abscess-ssti"],
   // Young heavy smoker with gangrene of the great toe - Buerger disease and chronic
   // limb-threatening ischaemia; tobacco cessation is the treatment.
-  "pyqtw-0303": ["cardiovascular-pad-vte", "psychiatry-tobacco-cessation"],
+  "pyqtw-0304": ["cardiovascular-pad-vte", "psychiatry-tobacco-cessation"],
   // Diffuse midline neck swelling moving with deglutition plus proptosis - Graves disease.
-  "pyqtw-0304": ["endocrine-hyperthyroidism-nodule"],
-  // Long-standing goitre now enlarging with dysphagia - suspicion of malignancy in a nodule.
   "pyqtw-0305": ["endocrine-hyperthyroidism-nodule"],
-  "pyqtw-0308": ["endocrine-hyperthyroidism-nodule"],
-  "pyqtw-0309": ["endocrine-hyperthyroidism-nodule", "obstetrics-antenatal-care"],
+  // Long-standing goitre now enlarging with dysphagia - suspicion of malignancy in a nodule.
+  "pyqtw-0306": ["endocrine-hyperthyroidism-nodule"],
+  "pyqtw-0309": ["endocrine-hyperthyroidism-nodule"],
+  "pyqtw-0310": ["endocrine-hyperthyroidism-nodule", "obstetrics-antenatal-care"],
   // Acute testicular pain in a boy - torsion until proved otherwise.
-  "pyqtw-0310": ["surgery-office-hernia", "renal-urology-urinary-tract-infection"],
   "pyqtw-0311": ["surgery-office-hernia", "renal-urology-urinary-tract-infection"],
   "pyqtw-0312": ["surgery-office-hernia", "renal-urology-urinary-tract-infection"],
+  "pyqtw-0313": ["surgery-office-hernia", "renal-urology-urinary-tract-infection"],
   // GCS, CT indications and bilateral periorbital ecchymosis (base-of-skull fracture).
-  "pyqtw-0315": ["emergency-trauma-primary-survey", "emergency-altered-sensorium"],
-  "pyqtw-0317": ["emergency-trauma-primary-survey", "emergency-shock"],
-  "pyqtw-0318": ["emergency-trauma-primary-survey"],
+  "pyqtw-0317": ["emergency-trauma-primary-survey", "emergency-altered-sensorium"],
+  "pyqtw-0319": ["emergency-trauma-primary-survey", "emergency-shock"],
+  "pyqtw-0320": ["emergency-trauma-primary-survey"],
   // Surgical complications (question text truncated in the compilation).
-  "pyqtw-0319": ["surgery-office-preop-postop"],
+  "pyqtw-0321": ["surgery-office-preop-postop"],
   // Arterial, venous and neuropathic ulcers, plus pressure sores.
-  "pyqtw-0321": [
+  "pyqtw-0323": [
     "cardiovascular-pad-vte",
     "surgery-office-diabetic-foot",
     "geriatrics-ethics-palliative-symptom-control",
   ],
   // Farmer with a foot ulcer - neuropathic or venous; healing factors and wound care.
-  "pyqtw-0322": [
+  "pyqtw-0324": [
     "surgery-office-diabetic-foot",
     "cardiovascular-pad-vte",
     "surgery-office-wound-suturing",
   ],
   // Acute urinary retention with a tender distended bladder - BPH, then catheterisation.
-  "pyqtw-0323": ["renal-urology-luts-bph", "surgery-office-catheter-ngt-injection"],
-  "pyqtw-0325": ["renal-urology-luts-bph"],
-  "pyqtw-0326": ["renal-urology-luts-bph"],
-  "pyqtw-0328": ["renal-urology-luts-bph", "surgery-office-preop-postop"],
+  "pyqtw-0325": ["renal-urology-luts-bph", "surgery-office-catheter-ngt-injection"],
+  "pyqtw-0327": ["renal-urology-luts-bph"],
+  "pyqtw-0328": ["renal-urology-luts-bph"],
+  "pyqtw-0330": ["renal-urology-luts-bph", "surgery-office-preop-postop"],
   // Frank haematuria in a perimenopausal woman - infection, stone, glomerular disease and
   // the urothelial malignancy that must be excluded.
-  "pyqtw-0329": [
+  "pyqtw-0331": [
     "renal-urology-urinary-tract-infection",
     "renal-urology-renal-stones",
     "renal-urology-proteinuria-nephrotic-nephritic",
   ],
-  "pyqtw-0330": ["renal-urology-luts-bph", "surgery-office-catheter-ngt-injection"],
-  "pyqtw-0331": ["renal-urology-luts-bph", "surgery-office-catheter-ngt-injection"],
-  "pyqtw-0332": ["surgery-office-catheter-ngt-injection", "renal-urology-luts-bph"],
-  // Young man, poor stream, past urethral discharge - post-gonococcal urethral stricture.
+  "pyqtw-0332": ["renal-urology-luts-bph", "surgery-office-catheter-ngt-injection"],
   "pyqtw-0333": ["renal-urology-luts-bph", "surgery-office-catheter-ngt-injection"],
+  "pyqtw-0334": ["surgery-office-catheter-ngt-injection", "renal-urology-luts-bph"],
+  // Young man, poor stream, past urethral discharge - post-gonococcal urethral stricture.
+  "pyqtw-0335": ["renal-urology-luts-bph", "surgery-office-catheter-ngt-injection"],
   // Dribbling of urine in an elderly diabetic multipara - stress, urge and overflow
   // incontinence from pelvic floor weakness, atrophy and neurogenic bladder.
-  "pyqtw-0334": [
+  "pyqtw-0336": [
     "geriatrics-ethics-cga",
     "renal-urology-luts-bph",
     "gynaecology-menopause-hormone-therapy",
   ],
-  "pyqtw-0335": ["cardiovascular-pad-vte"],
+  "pyqtw-0337": ["cardiovascular-pad-vte"],
   // Heaviness, itching above the ankle and a varicose ulcer - chronic venous insufficiency
   // with stasis eczema; compression is the treatment.
-  "pyqtw-0336": ["cardiovascular-pad-vte", "dermatology-eczema-atopic-dermatitis"],
-  "pyqtw-0337": [
+  "pyqtw-0338": ["cardiovascular-pad-vte", "dermatology-eczema-atopic-dermatitis"],
+  "pyqtw-0339": [
     "musculoskeletal-fractures-sports-injury",
     "musculoskeletal-knee-osteoarthritis",
   ],
   // Occupational low back pain in a tailor - mechanical back pain and its prevention.
-  "pyqtw-0339": ["musculoskeletal-low-back-pain"],
+  "pyqtw-0341": ["musculoskeletal-low-back-pain"],
   // Acute low back pain at 70 - red flags, vertebral fragility fracture, cord and cauda signs.
-  "pyqtw-0340": [
+  "pyqtw-0342": [
     "musculoskeletal-low-back-pain",
     "musculoskeletal-osteoporosis",
     "neurology-low-back-pain-neuro",
   ],
-  "pyqtw-0341": ["musculoskeletal-fractures-sports-injury"],
+  "pyqtw-0343": ["musculoskeletal-fractures-sports-injury"],
   // Colles fracture in a post-menopausal woman - a sentinel fragility fracture.
-  "pyqtw-0342": [
+  "pyqtw-0344": [
     "musculoskeletal-fractures-sports-injury",
     "musculoskeletal-osteoporosis",
     "geriatrics-ethics-falls",
   ],
   // Wrist fracture after a bathroom fall at 65 - fracture care plus falls and bone health.
-  "pyqtw-0343": [
+  "pyqtw-0345": [
     "musculoskeletal-fractures-sports-injury",
     "musculoskeletal-osteoporosis",
     "geriatrics-ethics-falls",
   ],
-  "pyqtw-0344": [
+  "pyqtw-0346": [
     "musculoskeletal-fractures-sports-injury",
     "musculoskeletal-osteoporosis",
   ],
   // Ten days of elbow pain - lateral epicondylitis and the overuse injuries.
-  "pyqtw-0347": ["musculoskeletal-fractures-sports-injury"],
+  "pyqtw-0349": ["musculoskeletal-fractures-sports-injury"],
 };

@@ -159,15 +159,39 @@ export const KIND_LABEL: Record<ChartKind, string> = {
 };
 
 /**
- * Which chart is today's? A stable rotation over the whole index, so every
- * classification comes round exactly once before any repeats, and the same day
- * always gives the same chart on every device.
+ * The order the daily chart works through: most examined first.
+ *
+ * Alphabetical by id was arbitrary - it started at whatever subject happened to
+ * sort first, which is no way to spend the first month. The papers say which
+ * classifications matter: a score whose topic has been asked in eight sittings
+ * is worth seeing before one asked once. So the rotation is sorted by how often
+ * the chart's own topic appears in the past papers, and ties fall back to the
+ * id so the order is still identical on every device.
+ *
+ * `weight` is supplied by the caller because the index does not know about the
+ * question papers; the app and the page both pass the same count.
  */
-export function chartOfTheDay(index: ChartEntry[], dayNumber: number): ChartEntry | undefined {
-  const pool = index.filter((e) => e.kind === "score" || e.kind === "treatment");
-  if (!pool.length) return undefined;
-  const ordered = [...pool].sort((a, b) => a.id.localeCompare(b.id));
-  return ordered[dayNumber % ordered.length];
+export function rankedForDaily(
+  index: ChartEntry[],
+  weight: (topicId: string) => number = () => 0,
+): ChartEntry[] {
+  return index
+    .filter((e) => e.kind === "score" || e.kind === "treatment")
+    .sort((a, b) => weight(b.topicId) - weight(a.topicId) || a.id.localeCompare(b.id));
+}
+
+/**
+ * Which chart is today's? A stable rotation over the ranked list, so every
+ * classification comes round exactly once before any repeats, the busiest
+ * arrive first, and the same day gives the same chart on every device.
+ */
+export function chartOfTheDay(
+  index: ChartEntry[],
+  dayNumber: number,
+  weight?: (topicId: string) => number,
+): ChartEntry | undefined {
+  const ordered = rankedForDaily(index, weight);
+  return ordered.length ? ordered[dayNumber % ordered.length] : undefined;
 }
 
 /** Whole days since the epoch, in local time, so the day flips at midnight. */

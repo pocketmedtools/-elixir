@@ -12,6 +12,9 @@
  * notifications, re-armed whenever the app is opened, gives that without
  * needing a server or a push certificate.
  *
+ * The order is most-examined first, so the first weeks carry the scores the
+ * papers keep asking rather than whatever happened to sort first.
+ *
  * This is the installed Android app only. A web page cannot raise a
  * notification once its tab is closed without a push service behind it, and a
  * daily study reminder is not worth that.
@@ -50,7 +53,10 @@ async function plugin(): Promise<Plugin | null> {
  * scheduled. Safe to call on every launch: pending ones are cleared first, so
  * re-arming never stacks duplicates.
  */
-export async function armDailyChart(index: ChartEntry[]): Promise<number> {
+export async function armDailyChart(
+  index: ChartEntry[],
+  weight?: (topicId: string) => number,
+): Promise<number> {
   const LN = await plugin();
   if (!LN || !index.length) return 0;
 
@@ -67,7 +73,7 @@ export async function armDailyChart(index: ChartEntry[]): Promise<number> {
   const notifications = [];
   for (let i = 0; i < HORIZON; i++) {
     const day = today + i;
-    const entry = chartOfTheDay(index, day);
+    const entry = chartOfTheDay(index, day, weight);
     if (!entry) continue;
     const at = new Date(now);
     at.setDate(at.getDate() + i);

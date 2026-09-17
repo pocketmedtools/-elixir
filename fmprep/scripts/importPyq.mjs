@@ -223,6 +223,11 @@ function parseTopicwise(text) {
     // Trailing heading lines belong to the NEXT question, not this one.
     let stop = end;
     while (stop > start && looksLikeHeading(lines[stop - 1])) stop--;
+    // A question that is itself one short noun phrase - "Paraphimosis.",
+    // "Lasers in ophthalmology." - is indistinguishable from a heading, so the
+    // loop above ate it and left nothing between the two session markers. If
+    // stripping emptied the range, the lines were the question after all.
+    if (stop === start && end > start) stop = end;
 
     // The heading directly above a question is its topic. Anything further up
     // (the subject and organ-system headings) could not be recovered reliably
@@ -242,7 +247,12 @@ function parseTopicwise(text) {
     if (!topicHeading) topicHeading = entries[entries.length - 1]?.topicHeading ?? "";
 
     const question = lines.slice(start, stop).join(" ").replace(/\s+/g, " ").trim();
-    if (question.length <= 25) continue;
+    // This was 25, which silently dropped every one-word question the papers
+    // actually set: "Paraphimosis", "Non-union of fracture of humerus bone",
+    // "Lasers in ophthalmology". Four real questions were missing from the
+    // library because of it. The filter is only here to discard parse noise, so
+    // it now rejects what cannot be a question rather than what is merely short.
+    if (question.length < 6 || !/[a-z]{3}/i.test(question)) continue;
 
     counter++;
     entries.push({
