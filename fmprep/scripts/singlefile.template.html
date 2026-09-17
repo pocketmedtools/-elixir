@@ -352,9 +352,9 @@ footer{border-top:1px solid var(--rule);padding:28px 0 40px;font-size:14px;
          needs the address to hand without hunting for it. -->
     <a class="btn dl" id="getapp" href="https://raw.githubusercontent.com/pocketmedtools/-elixir/fmprep-apk/FM-Prep.apk" target="_blank" rel="noopener" aria-describedby="apkbox"><span class="long">Download Android app</span><span class="short">Get app</span></a>
   </div>
-  <!-- Not a bare link: inside an embedded viewer the page cannot open a tab or
-       start a download of its own, so the button reveals the address instead
-       and the reader opens it in their own browser. -->
+  <!-- The fallback. The link above downloads the file directly wherever the
+       page is allowed to navigate; an embedded viewer can refuse that without
+       reporting anything, so the address is also here to copy. -->
   <div class="apk" id="apkbox" hidden>
     <div class="wrap">
       <p class="apk-t">Install FM Prep on an Android phone</p>
