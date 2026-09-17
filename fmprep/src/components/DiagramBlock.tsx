@@ -6,6 +6,7 @@
  * takes the subject's colour from the vars set on the reader. Connectors are CSS
  * borders rather than SVG paths for the same reason: they wrap.
  */
+import type { CSSProperties } from "react";
 import type { Diagram, DiagramStep, DiagramTone } from "../lib/types";
 import { RichText } from "./ui";
 
@@ -160,41 +161,39 @@ export default function DiagramBlock({ diagram }: { diagram: Diagram }) {
     );
   } else {
     body = (
-      <div className="-mx-1 overflow-x-auto px-1">
-        <table className="stack-table w-full border-collapse text-left text-[15.5px] leading-[1.45] sm:min-w-[33rem]">
-          <thead>
-            <tr>
-              {diagram.columns.map((c, i) => (
-                <th
-                  key={i}
-                  className="px-3.5 py-2.5 font-mono text-[11.5px] font-semibold uppercase tracking-wider"
-                  style={{
-                    color: "var(--acc)",
-                    background: "var(--wash)",
-                    borderBottom: "1px solid var(--acc-rule)",
-                  }}
-                >
-                  {c}
-                </th>
-              ))}
-            </tr>
-          </thead>
-          <tbody>
-            {diagram.rows.map((row, ri) => (
-              <tr key={ri} className={`align-top ${ri % 2 ? "bg-[var(--sunk)]" : ""}`}>
-                {row.map((cell, ci) => (
-                  <td
-                    key={ci}
-                    data-col={diagram.columns[ci]}
-                    className={`border-b border-slate-200 px-3.5 py-2.5 leading-[1.55] ${ci === 0 ? "font-semibold" : ""}`}
-                  >
-                    <RichText text={cell} />
-                  </td>
+      <div className="tbl-wrap">
+        <div className="tbl-scroll">
+          <table
+            className="grid-table text-left text-[15.5px] leading-[1.45] sm:min-w-[33rem]"
+            style={{ "--cols": diagram.columns.length } as CSSProperties}
+          >
+            <thead>
+              <tr>
+                {diagram.columns.map((c, i) => (
+                  <th key={i} className="px-3 py-2.5 align-bottom">
+                    {c}
+                  </th>
                 ))}
               </tr>
-            ))}
-          </tbody>
-        </table>
+            </thead>
+            <tbody>
+              {diagram.rows.map((row, ri) => (
+                <tr key={ri} className="align-top">
+                  {row.map((cell, ci) => (
+                    <td key={ci} data-col={diagram.columns[ci]} className="px-3 py-2.5 leading-[1.55]">
+                      <RichText text={cell} />
+                    </td>
+                  ))}
+                </tr>
+              ))}
+            </tbody>
+          </table>
+        </div>
+        {diagram.columns.length > 2 && (
+          <p className="tbl-hint">
+            Swipe the table sideways &rarr; {diagram.columns.length - 1} more columns. The first column stays put.
+          </p>
+        )}
       </div>
     );
   }

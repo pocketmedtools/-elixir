@@ -307,46 +307,93 @@ cite.cite {
 }
 
 /* ---------------------------------------------------------------
-   Comparison tables on a phone.
+   Tables on a phone.
 
-   Three columns at a readable size need about 34rem, which a 390px
-   screen does not have, so the table was clipping its last column -
-   the one that usually holds the answer. Below the breakpoint each
-   row becomes its own card and each cell carries the column name it
-   sat under, so the comparison is read down instead of across and
-   nothing needs swiping to reach.
+   Every table used to become one card per row below 640px, with the
+   header hidden and each cell prefixed by its column name. That is
+   what turned the Glasgow Coma Scale into six cards headed by a bare
+   numeral - a ladder you could not read as a ladder and a score you
+   could not add up. A classification only means anything as a grid,
+   so the grid is what stays. What changes on a phone is that the
+   first column freezes and the rest of the table scrolls under it,
+   so the row you are reading never leaves the screen.
    --------------------------------------------------------------- */
+
+/* The scrollport is the wrapper, never the table. `overflow` on the
+   <table> itself makes the table its own scroll container, and a
+   sticky cell inside it is then pinned to a box that never moves -
+   the same bug as the html/body one above, one level down. The frame
+   and the rounding therefore live out here. */
+.tbl-wrap { margin-top: 12px; }
+.tbl-scroll {
+  overflow-x: auto;
+  overscroll-behavior-x: contain;
+  border: 1px solid var(--rule);
+  border-radius: 9px;
+  background: var(--card);
+}
+
+/* `separate` is not cosmetic. Under `collapse` the borders belong to
+   the table rather than to the cell, so a sticky cell slides away
+   from its own right-hand rule and leaves the separator behind with
+   the scrolling content. Only bottom borders are ever set here, so
+   nothing doubles up when they stop collapsing. */
+.grid-table { border-collapse: separate; border-spacing: 0; width: 100%; }
+.grid-table th, .grid-table td { text-align: left; vertical-align: top; border-bottom: 1px solid var(--rule); }
+.grid-table tr:last-child td { border-bottom: 0; }
+.grid-table td:first-child { font-weight: 600; }
+.grid-table th {
+  font-family: var(--font-ui); font-weight: 700; letter-spacing: normal;
+  text-transform: none; font-size: 13px; line-height: 1.4;
+  color: var(--label); background: var(--mint);
+  border-bottom: 2px solid var(--rule);
+}
+
+/* The frozen column. A sticky cell is a positioned box: it paints
+   above its non-positioned siblings, which is what lets the rest of
+   the row scroll underneath it - but only if it carries its own
+   opaque background. A background on the <tr> paints below both and
+   is no help. The divider is an inset shadow, not a border-right, so
+   it travels with the cell instead of staying with the layout. */
+.grid-table th:first-child,
+.grid-table td:first-child {
+  position: sticky; left: 0;
+  box-shadow: inset -1px 0 0 var(--rule);
+}
+.grid-table td:first-child { z-index: 1; background: var(--card); }
+.grid-table tbody tr:nth-child(even) td:first-child { background: var(--pale); }
+/* Doubled class so this beats `.study-stage th` further down the file,
+   which is (0,2,1) and would otherwise decide the corner cell. */
+.grid-table.grid-table th:first-child { z-index: 2; background: var(--mint); }
+
+/* "There is more to the right", said once, in words. Rendered only
+   when the table has three or more columns, which at any phone width
+   is exactly when it scrolls. */
+.tbl-hint {
+  margin: 6px 2px 0;
+  font-family: var(--font-ui);
+  font-size: 12px; font-weight: 600; line-height: 1.45;
+  color: var(--label);
+}
+@media (min-width: 640px) { .tbl-hint { display: none; } }
+
 @media (max-width: 639px) {
-  .stack-table, .stack-table tbody, .stack-table tr, .stack-table td { display: block; width: 100%; }
-  .stack-table thead { display: none; }
-  .stack-table tr {
-    border: 1px solid var(--acc-rule);
-    border-radius: 9px;
-    padding: 6px 2px 9px;
-    margin-bottom: 12px;
-    background: var(--card);
+  /* 12.5px is the size at which a three-column table's text budget on
+     a 360px screen is 47 characters a row. The reader's A-/A+ still
+     moves this, it just never goes below the floor. Unlayered, so it
+     beats the text-[0.92em] / text-[15.5px] / text-[16.5px] utilities
+     the three renderers each set, and all three finally match. */
+  .grid-table { font-size: max(12.5px, 0.74em); line-height: 1.5; }
+  .grid-table th, .grid-table td { padding: 8px 12px; }
+  /* Something to scroll: without a min-width the table shrinks to the
+     box and there is nothing for the frozen column to stand still
+     against. 8rem for the key, 9.25rem for every other column. */
+  .grid-table { min-width: calc(8rem + (var(--cols, 3) - 1) * 9.25rem); }
+  .grid-table th:first-child,
+  .grid-table td:first-child {
+    width: 8rem; min-width: 8rem; max-width: 8rem;
+    overflow-wrap: anywhere;
   }
-  .stack-table tr:nth-child(even) { background: var(--pale); }
-  .stack-table td { border-bottom: 0; padding: 7px 12px; }
-  .stack-table td + td { border-top: 1px dashed var(--rule); }
-  /* The column name, above the value it belonged to. */
-  .stack-table td[data-col]::before {
-    content: attr(data-col);
-    display: block;
-    /* This was 11.5px monospace, uppercased, with 0.08em of tracking - the
-       "T R U E  W E A K N E S S" look. Title Case at standard tracking reads
-       as a label without shouting. */
-    font-family: var(--font-ui);
-    font-size: 12px;
-    font-weight: 700;
-    letter-spacing: normal;
-    color: var(--label);
-    margin-bottom: 4px;
-  }
-  /* The first cell names the row, so it reads as the card's heading and
-     does not repeat the column label above it. */
-  .stack-table td:first-child::before { display: none; }
-  .stack-table td:first-child { font-size: 1.06em; padding-bottom: 9px; }
 }
 
 /* ---------------------------------------------------------------

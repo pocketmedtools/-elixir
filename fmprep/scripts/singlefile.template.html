@@ -233,33 +233,43 @@ mark.hl b.num{color:inherit}
 .pts li::before{content:"";position:absolute;left:1px;top:.68em;width:7px;height:7px;
   border-radius:2px;background:var(--head)}
 .pts strong{font-weight:650}
-.tbl{overflow-x:auto;border:1px solid var(--rule);border-radius:var(--radius);background:var(--raised)}
-/* Three columns at a readable size need about 34rem, which a phone does not
-   have, so the last column - usually the one holding the answer - was reached
-   only by swiping. Below the breakpoint each row becomes its own card and each
-   cell carries the column it sat under: the comparison reads down, not across. */
-@media (max-width:639px){
-  .tbl{overflow-x:visible;border:0;background:none;border-radius:0}
-  .tbl table,.tbl tbody,.tbl tr,.tbl td{display:block;width:100%;min-width:0}
-  .tbl thead{display:none}
-  .tbl tr{border:1px solid var(--acc-rule);border-radius:9px;margin-bottom:12px;
-    padding:6px 2px 8px;background:var(--raised)}
-  .tbl tr:nth-child(even){background:var(--sunk)}
-  .tbl td{border:0;padding:7px 12px}
-  .tbl td+td{border-top:1px dashed var(--rule)}
-  .tbl td[data-col]::before{content:attr(data-col);display:block;
-    font:700 12px/1.5 var(--font-ui);letter-spacing:normal;
-    color:var(--label);margin-bottom:4px}
-  .tbl td:first-child::before{display:none}
-  .tbl td:first-child{font-weight:600;font-size:1.03em;padding-bottom:7px}
-}
-table{border-collapse:collapse;width:100%;font-size:15px;min-width:520px}
+.tblw{margin-top:12px}
+/* The scrollport is this wrapper, never the table: `overflow` on the
+   <table> would make the table its own scroll container and pin the
+   sticky column to a box that never moves. */
+.tbl{overflow-x:auto;overscroll-behavior-x:contain;border:1px solid var(--rule);
+  border-radius:var(--radius);background:var(--raised)}
+.tblh{margin:6px 2px 0;font:600 12px/1.45 var(--font-ui);color:var(--label)}
+@media (min-width:640px){.tblh{display:none}}
+/* `separate`, not `collapse`: under `collapse` the borders belong to the
+   table, so a sticky cell slides away from its own right-hand rule. Only
+   bottom borders are set, so nothing doubles when they stop collapsing. */
+table{border-collapse:separate;border-spacing:0;width:100%;font-size:15px;min-width:520px}
 th,td{text-align:left;padding:12px 14px;border-bottom:1px solid var(--rule-soft);vertical-align:top}
 th{font:700 13px/1.4 var(--font-ui);letter-spacing:normal;
-  color:var(--label);background:var(--mint);border-bottom:1px solid var(--acc-rule)}
+  color:var(--label);background:var(--mint);border-bottom:2px solid var(--rule)}
 tbody tr:nth-child(even){background:var(--pale)}
 tr:last-child td{border-bottom:none}
 td:first-child{font-weight:600}
+/* The frozen column. A sticky cell paints above its non-positioned
+   siblings, which is what lets the row scroll underneath it - but only
+   if it carries its own opaque background; a background on the <tr>
+   paints below both. The divider is an inset shadow so it travels with
+   the cell instead of staying behind with the layout. */
+th:first-child,td:first-child{position:sticky;left:0;box-shadow:inset -1px 0 0 var(--rule)}
+td:first-child{z-index:1;background:var(--raised)}
+th:first-child{z-index:2;background:var(--mint)}
+tbody tr:nth-child(even) td:first-child{background:var(--pale)}
+/* Tables on a phone: the grid survives, the first column freezes, the
+   rest scrolls under it. This used to be one card per row with the
+   header hidden, which is what made a scored scale unreadable. */
+@media (max-width:639px){
+  table{font-size:12.5px;line-height:1.5;
+    min-width:calc(8rem + (var(--cols,3) - 1) * 9.25rem)}
+  th,td{padding:8px 12px}
+  th:first-child,td:first-child{width:8rem;min-width:8rem;max-width:8rem;
+    overflow-wrap:anywhere}
+}
 .panel{border-radius:var(--radius);padding:18px 19px;border:1px solid}
 .panel .ph{display:flex;align-items:center;gap:8px;margin-bottom:13px}
 .panel ul,.panel ol{list-style:none;padding:0;margin:0;display:flex;flex-direction:column;gap:14px}
@@ -567,10 +577,14 @@ function drawDiagram(d){
         '<div class="hd">' + rich(a.label) + '</div><ul>' +
         a.steps.map(s => '<li>' + rich(s) + '</li>').join("") + '</ul></div>').join("") + '</div></div>';
   } else if (d.kind === "compare") {
-    inner = '<div class="tbl"><table><thead><tr>' + d.columns.map(c => '<th>' + esc(c) + '</th>').join("") +
+    inner = '<div class="tblw"><div class="tbl"><table style="--cols:' + d.columns.length + '"><thead><tr>' +
+      d.columns.map(c => '<th>' + esc(c) + '</th>').join("") +
       '</tr></thead><tbody>' + d.rows.map(r => '<tr>' + r.map((c, i) =>
         '<td data-col="' + esc(d.columns[i] || "") + '">' + rich(c) + '</td>').join("") + '</tr>').join("") +
-      '</tbody></table></div>';
+      '</tbody></table></div>' +
+      (d.columns.length > 2 ? '<p class="tblh">Swipe the table sideways &rarr; ' +
+        (d.columns.length - 1) + ' more columns. The first column stays put.</p>' : "") +
+      '</div>';
   }
   return '<div class="dg"><h4>' + esc(d.heading) + '</h4><p class="cap">' +
     (d.caption ? esc(d.caption) : "") + '</p>' + inner + '</div>';
@@ -671,11 +685,13 @@ function placeVisuals(sections, visuals){
    which meant every table in the chart library threw ReferenceError the moment
    a reader tried to open it - 627 of the 1,330 charts, silently. */
 function tableHtml(tb){
-  return '<div class="tbl"><table><thead><tr>' +
+  return '<div class="tblw"><div class="tbl"><table style="--cols:' + tb.columns.length + '"><thead><tr>' +
     tb.columns.map(c => '<th>' + esc(c) + '</th>').join("") + '</tr></thead><tbody>' +
     tb.rows.map(r => '<tr>' + r.map((c, i) =>
       '<td data-col="' + esc(tb.columns[i] || "") + '">' + rich(c) + '</td>').join("") + '</tr>').join("") +
-    '</tbody></table></div>';
+    '</tbody></table></div>' +
+    (tb.columns.length > 2 ? '<p class="tblh">Swipe the table sideways &rarr; ' + (tb.columns.length - 1) + ' more columns. The first column stays put.</p>' : "") +
+    '</div>';
 }
 
 function viewTopic(){

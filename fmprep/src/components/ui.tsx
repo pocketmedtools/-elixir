@@ -5,7 +5,7 @@
  * phone, at night, one-handed. So the type is generous, the measure is capped,
  * and **bold** inside a point is honoured rather than shown as asterisks.
  */
-import type { ReactNode } from "react";
+import type { CSSProperties, ReactNode } from "react";
 import type { Frequency, NoteSection, NoteTable } from "../lib/types";
 import { FREQUENCY_LABEL } from "../lib/types";
 
@@ -159,41 +159,39 @@ export function TableBlock({ table }: { table: NoteTable }) {
   return (
     <section className="mt-8">
       <h3 className="text-[1.08em] font-bold leading-snug tracking-tight text-slate-900">{table.heading}</h3>
-      <div className="mt-3 -mx-3 overflow-x-auto px-3">
-        <table className="stack-table w-full border-collapse overflow-hidden rounded-lg text-left text-[0.92em] leading-[1.55] sm:min-w-[34rem]">
-          <thead>
-            <tr>
-              {table.columns.map((c, i) => (
-                <th
-                  key={i}
-                  className="px-3.5 py-2.5 text-left align-bottom font-mono text-[12px] font-semibold uppercase tracking-wider"
-                  style={{
-                    color: "var(--acc)",
-                    background: "var(--wash)",
-                    borderBottom: "1px solid var(--acc-rule)",
-                  }}
-                >
-                  {c}
-                </th>
-              ))}
-            </tr>
-          </thead>
-          <tbody>
-            {table.rows.map((row, ri) => (
-              <tr key={ri} className={`align-top ${ri % 2 ? "bg-[var(--sunk)]" : ""}`}>
-                {row.map((cell, ci) => (
-                  <td
-                    key={ci}
-                    data-col={table.columns[ci]}
-                    className={`border-b border-slate-200 px-3 py-2.5 leading-[1.55] ${ci === 0 ? "font-semibold" : ""}`}
-                  >
-                    <RichText text={cell} />
-                  </td>
+      <div className="tbl-wrap">
+        <div className="tbl-scroll">
+          <table
+            className="grid-table text-left text-[0.92em] leading-[1.55] sm:min-w-[34rem]"
+            style={{ "--cols": table.columns.length } as CSSProperties}
+          >
+            <thead>
+              <tr>
+                {table.columns.map((c, i) => (
+                  <th key={i} className="px-3 py-2.5 align-bottom">
+                    {c}
+                  </th>
                 ))}
               </tr>
-            ))}
-          </tbody>
-        </table>
+            </thead>
+            <tbody>
+              {table.rows.map((row, ri) => (
+                <tr key={ri} className="align-top">
+                  {row.map((cell, ci) => (
+                    <td key={ci} data-col={table.columns[ci]} className="px-3 py-2.5 leading-[1.55]">
+                      <RichText text={cell} />
+                    </td>
+                  ))}
+                </tr>
+              ))}
+            </tbody>
+          </table>
+        </div>
+        {table.columns.length > 2 && (
+          <p className="tbl-hint">
+            Swipe the table sideways &rarr; {table.columns.length - 1} more columns. The first column stays put.
+          </p>
+        )}
       </div>
     </section>
   );

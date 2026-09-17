@@ -3,6 +3,7 @@
  * would be presented at the table.
  */
 import { useMemo, useState } from "react";
+import type { CSSProperties } from "react";
 import { allCases, getCase } from "../content/index";
 import type { CaseKind } from "../lib/types";
 import { BackBar, Callout, Chip, Empty, FrequencyChip, RowButton, SectionBlock } from "./ui";
@@ -149,27 +150,33 @@ export function CaseReader({ caseId, onBack }: { caseId: string; onBack: () => v
       {c.investigations.length > 0 && (
         <section className="mt-6">
           <h3 className="text-lg font-bold tracking-tight text-slate-900">Investigations, with a reason each</h3>
-          <div className="mt-3 -mx-3 overflow-x-auto px-3">
-            <table className="stack-table w-full border-collapse text-left text-[16.5px] leading-[1.5] sm:min-w-[38rem]">
-              <thead>
-                <tr>
-                  {["Test", "Why", "What you expect"].map((h) => (
-                    <th key={h} className="border-b-2 border-slate-300 pb-2 pr-3 font-bold text-slate-900">
-                      {h}
-                    </th>
-                  ))}
-                </tr>
-              </thead>
-              <tbody>
-                {c.investigations.map((inv, i) => (
-                  <tr key={i} className="align-top">
-                    <td className="border-b border-slate-200 py-2.5 pr-3 leading-[1.6] font-semibold">{inv.test}</td>
-                    <td data-col="Why" className="border-b border-slate-200 py-2.5 pr-3 leading-[1.6]">{inv.why}</td>
-                    <td data-col="What you expect" className="border-b border-slate-200 py-2.5 pr-3 leading-[1.6]">{inv.expected}</td>
+          <div className="tbl-wrap">
+            <div className="tbl-scroll">
+              <table
+                className="grid-table text-left text-[16.5px] leading-[1.5] sm:min-w-[38rem]"
+                style={{ "--cols": 3 } as CSSProperties}
+              >
+                <thead>
+                  <tr>
+                    {["Test", "Why", "What you expect"].map((h) => (
+                      <th key={h} className="px-3 py-2.5 align-bottom">
+                        {h}
+                      </th>
+                    ))}
                   </tr>
-                ))}
-              </tbody>
-            </table>
+                </thead>
+                <tbody>
+                  {c.investigations.map((inv, i) => (
+                    <tr key={i} className="align-top">
+                      <td data-col="Test" className="px-3 py-2.5 leading-[1.6]">{inv.test}</td>
+                      <td data-col="Why" className="px-3 py-2.5 leading-[1.6]">{inv.why}</td>
+                      <td data-col="What you expect" className="px-3 py-2.5 leading-[1.6]">{inv.expected}</td>
+                    </tr>
+                  ))}
+                </tbody>
+              </table>
+            </div>
+            <p className="tbl-hint">Swipe the table sideways &rarr; 2 more columns. The first column stays put.</p>
           </div>
         </section>
       )}
