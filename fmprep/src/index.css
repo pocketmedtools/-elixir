@@ -116,13 +116,27 @@
    while every token-level check passed. One theme cannot drift.
    --------------------------------------------------------------- */
 :root {
-  --bg: #f4f2ef;
+  --bg: #fdfbf7;
   --card: #ffffff;
-  --ink: #151311;
-  --muted: #3d3831;
-  --quiet: #6d665c;
-  --rule: #e4e1db;
-  --sunk: #f7f6f4;
+  --ink: #1c1b19;
+  --muted: #3a3733;
+  --quiet: #5c574f;
+  --rule: #e6e2d9;
+  --sunk: #f6f4ef;
+  /* Body text is near-black, not blue. The blue in the brief was an example of
+     a palette, not an instruction to tint every line: a page where the prose
+     itself is coloured reads as decoration, and the colour stops meaning
+     anything. Colour is spent on two jobs only - a dark green heading and a
+     maroon keyword - and everything else is ink. */
+  --head: #1a5336;
+  --list: #1c1b19;
+  --key: #800000;
+  /* Pastel grounds for chart nodes and table rows: present enough to separate
+     a box from the page, faint enough not to fight the letters on it. */
+  --pale: #f3f4f6;
+  --cream: #fff8e7;
+  --mint: #eef6f1;
+  --blush: #fdf0f0;
   --accent: #151311;
   --line: #e4e1db;
   /* Semantic colour, fixed in every subject: these three mean safe,
@@ -131,14 +145,11 @@
   --think: #8a5200; --think-wash: #f9f3ec; --think-rule: #e6d2b6;
   --danger: #a8102a; --danger-wash: #fbedee; --danger-rule: #edc3c8;
   color-scheme: light;
-  /* Two faces. Notes are read for an hour at a time, so the prose is set in a
-     serif - Noto Serif ships with Android and Charter with iOS, so the
-     installed app gets a real reading face with nothing to download. The
-     chrome and the headings stay in the platform sans, which is what keeps a
-     heading looking like a heading rather than more prose. */
-  --font-read: "Noto Serif", "Source Serif 4", Charter, "Bitstream Charter",
-    "Iowan Old Style", Georgia, "Times New Roman", serif;
-  --font-ui: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  /* One family, so a heading and the line under it sit on the same rhythm.
+     Flip --font-read back to a serif stack to restore the book face. */
+  --font-read: Inter, system-ui, -apple-system, "Segoe UI", Roboto,
+    "Helvetica Neue", Arial, sans-serif;
+  --font-ui: Inter, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
   --font-mono: ui-monospace, "SF Mono", "Roboto Mono", Menlo, Consolas, monospace;
   font-family: var(--font-read);
   color: var(--ink);
@@ -222,17 +233,17 @@ html, body { overflow-x: hidden; max-width: 100%; }
 /* The line that decides management. */
 mark.hl {
   background: none;
-  color: #7d1122;
+  color: var(--key);
   font-weight: 700;
   padding: 0;
 }
 
 /* A name or an eponym to attach: WONCA, AAFP, Leeuwenhorst 1974. */
-mark.hl.hl-name { color: #48206b; }
+mark.hl.hl-name { color: var(--key); }
 
 /* A marked run carrying a measured value takes the quantity colour, so a
    blood pressure and the words that qualify it are one colour and one fact. */
-mark.hl.hl-value { color: #0b5430; }
+mark.hl.hl-value { color: var(--key); }
 
 /* A measured quantity. It was set in the monospace face, on the theory that a
    dose is found by its shape; in a serif paragraph that reads as a typewriter
@@ -243,7 +254,7 @@ b.num {
   font-family: inherit;
   font-weight: 700;
   font-variant-numeric: tabular-nums;
-  color: #0b5430;
+  color: var(--key);
   white-space: nowrap;
 }
 /* Inside a marked run the quantity takes the run's colour rather than its own,
@@ -268,11 +279,11 @@ mark.hl b.num { color: inherit; }
    cannot trace is a figure they cannot trust; quiet, because it is not what
    the line is about. */
 cite.cite {
-  font-family: var(--font-mono);
+  font-family: var(--font-ui);
   font-style: normal;
   font-size: max(13px, 0.78em);
   font-weight: 500;
-  letter-spacing: 0.01em;
+  letter-spacing: normal;
   color: var(--quiet);
   background: var(--sunk);
   border: 1px solid var(--rule);
@@ -303,19 +314,21 @@ cite.cite {
     margin-bottom: 12px;
     background: var(--card);
   }
-  .stack-table tr:nth-child(even) { background: var(--sunk); }
+  .stack-table tr:nth-child(even) { background: var(--pale); }
   .stack-table td { border-bottom: 0; padding: 7px 12px; }
   .stack-table td + td { border-top: 1px dashed var(--rule); }
   /* The column name, above the value it belonged to. */
   .stack-table td[data-col]::before {
     content: attr(data-col);
     display: block;
-    font-family: var(--font-mono);
-    font-size: 11.5px;
-    font-weight: 600;
-    letter-spacing: 0.08em;
-    text-transform: uppercase;
-    color: var(--acc);
+    /* This was 11.5px monospace, uppercased, with 0.08em of tracking - the
+       "T R U E  W E A K N E S S" look. Title Case at standard tracking reads
+       as a label without shouting. */
+    font-family: var(--font-ui);
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: normal;
+    color: var(--head);
     margin-bottom: 4px;
   }
   /* The first cell names the row, so it reads as the card's heading and
@@ -323,3 +336,34 @@ cite.cite {
   .stack-table td:first-child::before { display: none; }
   .stack-table td:first-child { font-size: 1.06em; padding-bottom: 9px; }
 }
+
+/* ---------------------------------------------------------------
+   The reading palette, applied where the components set colour with
+   utility classes. Editing three tokens here beats editing the same
+   Tailwind class on forty elements, and it keeps the app and the
+   single-file build reading from one description of the design.
+   Scoped to the study stage so the shell's own chrome is untouched.
+   --------------------------------------------------------------- */
+.study-stage h1,
+.study-stage h2,
+.study-stage h3,
+.study-stage h4 { color: var(--head); letter-spacing: normal; }
+
+/* The body of a list. A point is the thing a reader scans, so it takes the
+   blue; a heading above it stays green and a marked word inside it stays
+   maroon, because those two are set later and more specifically. */
+.study-stage li { color: var(--list); }
+.study-stage li mark.hl,
+.study-stage li b.num { color: var(--key); }
+
+/* The section number badge, and any small label the components tint with the
+   subject accent: green reads as structure, the subject colour stays on rules
+   and borders where it still says which subject you are in. */
+.study-stage h3 > span[aria-hidden] { background: var(--head) !important;
+  font-family: var(--font-ui); font-weight: 700; letter-spacing: normal; }
+
+/* Pastel grounds, so a chart node and a table row separate from the page
+   without a wash of subject colour behind the letters. */
+.study-stage table tbody tr:nth-child(even) { background: var(--pale); }
+.study-stage th { color: var(--head); background: var(--mint);
+  font-family: var(--font-ui); letter-spacing: normal; text-transform: none; }

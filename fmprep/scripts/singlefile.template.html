@@ -1,7 +1,7 @@
 <title>FM Prep Library</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Serif:wght@400;600;700&family=IBM+Plex+Mono:wght@500;600&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap">
 <style>
 /* ---------------------------------------------------------------
    Every colour is declared on bare :root first, so the theme blocks
@@ -18,9 +18,18 @@
      Neutral structure in warm grey, three semantic colours meaning safe,
      caution and danger, and subject colour arriving separately on
      .subject-theme, where it marks structure only. */
-  --paper:#f4f2ef; --raised:#ffffff; --sunk:#f7f6f4;
-  --ink:#151311; --ink-soft:#3d3831; --quiet:#5f5952;
-  --rule:#e4e1db; --rule-soft:#eeebe6;
+  --paper:#fdfbf7; --raised:#ffffff; --sunk:#f6f4ef;
+  --ink:#1c1b19; --ink-soft:#3a3733; --quiet:#5c574f;
+  --rule:#e6e2d9; --rule-soft:#f0ece3;
+  /* Body text is near-black, not blue. The blue in the brief was an example of
+     a palette, not an instruction to tint every line: a page where the prose
+     itself is coloured reads as decoration, and the colour stops meaning
+     anything. Colour is spent on two jobs only - a dark green heading and a
+     maroon keyword - and everything else is ink. */
+  --head:#1a5336; --list:#1c1b19; --key:#800000;
+  /* Pastel grounds for chart nodes and table rows: present enough to separate
+     a box from the page, faint enough not to fight the letters on it. */
+  --pale:#f3f4f6; --cream:#fff8e7; --mint:#eef6f1; --blush:#fdf0f0;
   --acc:#151311; --acc-hi:#3d3831; --wash:#f4f2ef; --wash-2:#eeebe6;
   --acc-rule:#d8d4cc; --hl:transparent;
   --danger:#a8102a; --danger-wash:#fbedee; --danger-rule:#edc3c8;
@@ -32,8 +41,10 @@
      chrome a sans. Noto Serif is fetched when there is a network and is already
      installed on Android; Charter and Georgia cover the rest, so the page reads
      the same offline. */
-  --font-read:"Noto Serif","Source Serif 4",Charter,"Bitstream Charter","Iowan Old Style",Georgia,"Times New Roman",serif;
-  --font-ui:system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
+  /* One family, so a heading and the line under it sit on the same rhythm.
+     Flip --font-read back to a serif stack to restore the book face. */
+  --font-read:Inter,system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
+  --font-ui:Inter,system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
   --font-mono:"IBM Plex Mono",ui-monospace,"SF Mono","Roboto Mono",Menlo,Consolas,monospace;
   color-scheme:light;
 }
@@ -52,8 +63,8 @@ body{background:var(--paper);color:var(--ink);overflow-wrap:break-word;
   font:400 17.5px/1.7 var(--font-read);
   -webkit-font-smoothing:antialiased}
 h1,h2,h3,h4,nav,button,input,select,.chip,.eyebrow{font-family:var(--font-ui)}
-h1,h2,h3,h4{font-weight:700;letter-spacing:-.011em;
-  text-wrap:balance;margin:0;line-height:1.2}
+h1,h2,h3,h4{font-weight:700;letter-spacing:normal;color:var(--head);
+  text-wrap:balance;margin:0;line-height:1.25}
 p{margin:0}
 button{font:inherit;color:inherit;background:none;border:none;cursor:pointer;text-align:left}
 :focus-visible{outline:2px solid var(--acc-hi);outline-offset:2px;border-radius:3px}
@@ -63,8 +74,8 @@ button{font:inherit;color:inherit;background:none;border:none;cursor:pointer;tex
 .mast{background:var(--raised);border-bottom:1px solid var(--rule)}
 .mast-in{display:flex;align-items:center;gap:13px;padding:15px 0}
 .glyph{width:34px;height:34px;border-radius:8px;flex-shrink:0;display:grid;place-items:center;
-  background:var(--ink);color:var(--raised);
-  font:600 14px/1 var(--font-mono)}
+  background:var(--head);color:var(--raised);
+  font:700 14px/1 var(--font-ui)}
 .mast h1{font-size:22px;letter-spacing:-.015em}
 .mast .sub{font-size:13px;color:var(--quiet);line-height:1.4}
 .btn.dl{white-space:nowrap;text-decoration:none;font-size:13.5px;padding:10px 15px;flex-shrink:0}
@@ -102,13 +113,15 @@ nav.modes .wrap::-webkit-scrollbar{display:none}
 .mode[aria-current="true"]{color:var(--acc);border-bottom-color:var(--acc)}
 .mode:hover{color:var(--ink)}
 main{padding:30px 0 88px}
-.eyebrow{font:600 11.5px/1.25 var(--font-mono);letter-spacing:.13em;
-  text-transform:uppercase;color:var(--acc)}
+/* This was 11.5px monospace, uppercased, with .13em of tracking - the
+   "T R U E  W E A K N E S S" look. Title Case at standard tracking reads as a
+   label without shouting. */
+.eyebrow{font:700 12.5px/1.3 var(--font-ui);letter-spacing:normal;color:var(--head)}
 .eyebrow.mute{color:var(--quiet)}
 .back{display:inline-flex;align-items:center;gap:7px;font-size:13.5px;font-weight:600;
   color:var(--quiet);padding:7px 0;margin-bottom:16px}
 .back:hover{color:var(--acc)}
-.chip{display:inline-block;font:500 13px/1.5 var(--font-mono);
+.chip{display:inline-block;font:600 13px/1.5 var(--font-ui);
   padding:3px 9px;border:1px solid var(--rule);border-radius:99px;color:var(--ink-soft);white-space:nowrap}
 .chip.acc{color:var(--acc);border-color:var(--acc-rule);background:var(--wash)}
 .chip.bad{color:var(--danger);border-color:var(--danger-rule);background:var(--danger-wash)}
@@ -131,12 +144,15 @@ button.chip.solid:hover{border-color:var(--acc);background:var(--wash)}
    like a used textbook. The letters carry the colour, the paper stays white,
    and the body text stays black. Three is the limit - a fourth stops the eye
    sorting them without reading. */
-mark.hl{background:none;color:#7d1122;font-weight:700;padding:0}
-mark.hl.hl-name{color:#48206b}
+/* One colour for everything worth finding: a keyword, an eponym and a measured
+   value are all the same job to a reader scanning a page. Three colours made
+   them sort the colours instead. */
+mark.hl{background:none;color:var(--key);font-weight:700;padding:0}
+mark.hl.hl-name{color:var(--key)}
 /* A marked run carrying a measured value takes the quantity colour, so a blood
    pressure and the words qualifying it stay one colour and one fact. */
-mark.hl.hl-value{color:#0b5430}
-cite.cite{font:500 .72em/1.5 var(--font-mono);font-style:normal;
+mark.hl.hl-value{color:var(--key)}
+cite.cite{font:500 .74em/1.5 var(--font-ui);font-style:normal;
   color:var(--quiet);background:var(--sunk);border:1px solid var(--rule);border-radius:3px;
   padding:.05em .36em;margin-left:.35em;white-space:nowrap;vertical-align:.05em}
 /* A measured quantity takes the face of whatever it sits in. Set in the
@@ -144,12 +160,12 @@ cite.cite{font:500 .72em/1.5 var(--font-mono);font-style:normal;
    digits too wide and off the baseline of the words around them; weight,
    colour and tabular figures mark it well enough on their own. */
 b.num{font-family:inherit;font-weight:700;
-  font-variant-numeric:tabular-nums;color:#0b5430;white-space:nowrap}
+  font-variant-numeric:tabular-nums;color:var(--key);white-space:nowrap}
 /* Inside a marked run the quantity takes the run's colour rather than its own,
    so the phrase it belongs to is not broken into two colours. */
 mark.hl b.num{color:inherit}
-.freq{display:inline-flex;align-items:center;gap:7px;font:600 11.5px/1 var(--font-mono);
-  color:var(--quiet);white-space:nowrap;text-transform:uppercase;letter-spacing:.07em}
+.freq{display:inline-flex;align-items:center;gap:7px;font:600 12px/1 var(--font-ui);
+  color:var(--quiet);white-space:nowrap;letter-spacing:normal}
 .freq i{width:26px;height:5px;border-radius:99px;background:var(--rule);display:block;position:relative;overflow:hidden}
 .freq i::after{content:"";position:absolute;inset:0;background:var(--acc);width:var(--w)}
 .hero{background:var(--raised);border:1px solid var(--rule);border-radius:var(--radius);
@@ -182,12 +198,12 @@ mark.hl b.num{color:inherit}
 .sec{margin-top:40px}
 .sec > h3{font-size:22px;display:flex;align-items:baseline;gap:12px;margin-bottom:18px;
   padding-bottom:10px;border-bottom:2px solid var(--acc-rule)}
-.sec > h3 .n{font:600 12px/1 var(--font-mono);color:var(--raised);
-  background:var(--acc);border-radius:3px;padding:6px 8px;flex-shrink:0}
+.sec > h3 .n{font:700 12.5px/1 var(--font-ui);color:var(--raised);
+  background:var(--head);border-radius:3px;padding:6px 8px;flex-shrink:0}
 .pts{list-style:none;padding:0;margin:0;display:flex;flex-direction:column;gap:18px}
-.pts li{padding-left:23px;position:relative;font-size:17.5px;line-height:1.7}
-.pts li::before{content:"";position:absolute;left:1px;top:.62em;width:7px;height:7px;
-  border-radius:2px;background:var(--acc);opacity:.55}
+.pts li{padding-left:23px;position:relative;font-size:17.5px;line-height:1.7;color:var(--list)}
+.pts li::before{content:"";position:absolute;left:1px;top:.68em;width:7px;height:7px;
+  border-radius:2px;background:var(--head)}
 .pts strong{font-weight:650}
 .tbl{overflow-x:auto;border:1px solid var(--rule);border-radius:var(--radius);background:var(--raised)}
 /* Three columns at a readable size need about 34rem, which a phone does not
@@ -204,22 +220,22 @@ mark.hl b.num{color:inherit}
   .tbl td{border:0;padding:7px 12px}
   .tbl td+td{border-top:1px dashed var(--rule)}
   .tbl td[data-col]::before{content:attr(data-col);display:block;
-    font:600 11px/1.5 var(--font-mono);letter-spacing:.08em;
-    text-transform:uppercase;color:var(--acc);margin-bottom:3px}
+    font:700 12px/1.5 var(--font-ui);letter-spacing:normal;
+    color:var(--head);margin-bottom:4px}
   .tbl td:first-child::before{display:none}
   .tbl td:first-child{font-weight:600;font-size:1.03em;padding-bottom:7px}
 }
 table{border-collapse:collapse;width:100%;font-size:15px;min-width:520px}
 th,td{text-align:left;padding:12px 14px;border-bottom:1px solid var(--rule-soft);vertical-align:top}
-th{font:600 11.5px/1.4 var(--font-mono);letter-spacing:.07em;text-transform:uppercase;
-  color:var(--acc);background:var(--wash);border-bottom:1px solid var(--acc-rule)}
-tbody tr:nth-child(even){background:var(--sunk)}
+th{font:700 13px/1.4 var(--font-ui);letter-spacing:normal;
+  color:var(--head);background:var(--mint);border-bottom:1px solid var(--acc-rule)}
+tbody tr:nth-child(even){background:var(--pale)}
 tr:last-child td{border-bottom:none}
 td:first-child{font-weight:600}
 .panel{border-radius:var(--radius);padding:18px 19px;border:1px solid}
 .panel .ph{display:flex;align-items:center;gap:8px;margin-bottom:13px}
 .panel ul,.panel ol{list-style:none;padding:0;margin:0;display:flex;flex-direction:column;gap:14px}
-.panel li{font-size:16.5px;line-height:1.68;padding-left:22px;position:relative}
+.panel li{font-size:16.5px;line-height:1.68;padding-left:22px;position:relative;color:var(--list)}
 .panel.bad{background:var(--danger-wash);border-color:var(--danger-rule)}
 .panel.bad .eyebrow{color:var(--danger)}
 .panel.bad li::before{content:"!";position:absolute;left:0;top:0;font:600 14px/1.65 var(--font-mono);color:var(--danger)}
@@ -232,20 +248,20 @@ td:first-child{font-weight:600}
    for the next section. */
 .vis{margin-top:26px;padding-top:22px;border-top:1px dashed var(--acc-rule);
   display:flex;flex-direction:column;gap:16px}
-.vis-h{font:700 16px/1.35 var(--font-ui);color:var(--ink);margin-bottom:10px}
+.vis-h{font:700 16.5px/1.35 var(--font-ui);color:var(--head);margin-bottom:10px}
 .dg{border:1px solid var(--acc-rule);border-radius:var(--radius);background:var(--raised);
   padding:19px 19px 21px;margin-bottom:16px;box-shadow:var(--shadow)}
-.dg > h4{font:600 17px/1.35 var(--font-ui);color:var(--acc);margin-bottom:4px}
+.dg > h4{font:700 17.5px/1.35 var(--font-ui);color:var(--head);margin-bottom:5px}
 .dg .cap{font-size:14px;color:var(--quiet);line-height:1.55;margin-bottom:16px}
 .dg .cap:empty{display:none}
-.node{border:1.5px solid var(--acc-rule);background:var(--wash);border-radius:var(--radius);
-  padding:11px 14px;font-size:15.5px;line-height:1.5}
-.node .nl{font-weight:600}
+.node{border:1.5px solid var(--acc-rule);background:var(--pale);border-radius:var(--radius);
+  padding:11px 14px;font-size:15.5px;line-height:1.5;color:var(--list)}
+.node .nl{font-weight:700;color:var(--head)}
 .node .nd{font-size:13.5px;color:var(--ink-soft);margin-top:4px;line-height:1.5}
-.node.decision{border-color:var(--think-rule);background:var(--think-wash);border-style:dashed}
+.node.decision{border-color:var(--think-rule);background:var(--cream);border-style:dashed}
 .node.decision .nl::after{content:" ?";color:var(--think);font-weight:700}
-.node.warn{border-color:var(--danger-rule);background:var(--danger-wash)}
-.node.good{border-color:var(--good-rule);background:var(--good-wash)}
+.node.warn{border-color:var(--danger-rule);background:var(--blush)}
+.node.good{border-color:var(--good-rule);background:var(--mint)}
 .flow{display:flex;flex-direction:column;align-items:stretch}
 .flow .node{position:relative}
 .flow .node + .node{margin-top:22px}
@@ -255,7 +271,7 @@ td:first-child{font-weight:600}
   transform:translateX(-50%) rotate(45deg)}
 .ladder{display:flex;flex-direction:column;gap:10px}
 .rung{display:flex;align-items:flex-start;gap:12px}
-.rung .lv{font:600 11px/1 var(--font-mono);color:var(--raised);background:var(--acc);
+.rung .lv{font:700 11.5px/1 var(--font-ui);color:var(--raised);background:var(--head);
   border-radius:3px;padding:6px 8px;flex-shrink:0;margin-top:6px}
 .rung .node{flex:1;min-width:0}
 .branch .rootbox{display:flex;justify-content:center}
@@ -270,25 +286,25 @@ td:first-child{font-weight:600}
    as a caption. It is now the largest thing in the arm and takes the near-black
    of the prose; the subject colour marks it as structure from the left edge
    rather than tinting the letters, which is what kept it looking washed. */
-.arm > .hd{font:700 17px/1.4 var(--font-ui);color:var(--ink);
-  background:var(--wash-2);border:1px solid var(--acc-rule);
+.arm > .hd{font:700 17px/1.4 var(--font-ui);color:var(--head);
+  background:var(--mint);border:1px solid var(--acc-rule);
   border-left:3px solid var(--acc);border-radius:var(--radius);
   padding:9px 13px}
 .arm.warn > .hd{background:var(--danger-wash);border-color:var(--danger-rule);border-left-color:var(--danger)}
 .arm.good > .hd{background:var(--good-wash);border-color:var(--good-rule);border-left-color:var(--good)}
 .arm ul{list-style:none;padding:0;margin:0;display:flex;flex-direction:column;gap:7px}
-.arm li{font-size:15.5px;line-height:1.6;padding:8px 11px;background:var(--sunk);
+.arm li{font-size:15.5px;line-height:1.6;padding:8px 11px;background:var(--pale);color:var(--list);
   border-radius:3px;border-left:2px solid var(--acc-rule)}
 .cycle{display:flex;flex-wrap:wrap;gap:11px;align-items:stretch}
 .cyc{flex:1 1 230px;min-width:0;position:relative;padding:12px 13px 12px 36px;
-  background:var(--wash);border:1.5px solid var(--acc-rule);border-radius:var(--radius);
-  font-size:15px;line-height:1.5}
+  background:var(--cream);border:1.5px solid var(--acc-rule);border-radius:var(--radius);
+  font-size:15px;line-height:1.5;color:var(--list)}
 .cyc .k{position:absolute;left:10px;top:11px;width:18px;height:18px;border-radius:99px;
-  background:var(--acc);color:var(--raised);font:600 10.5px/18px var(--font-mono);text-align:center}
-.cyc .nl{font-weight:600}
+  background:var(--head);color:var(--raised);font:700 11px/18px var(--font-ui);text-align:center}
+.cyc .nl{font-weight:700;color:var(--head)}
 .cyc .nd{font-size:13.5px;color:var(--ink-soft);margin-top:4px}
 .loopback{display:flex;align-items:center;gap:11px;margin-top:13px;
-  font:600 11.5px/1.2 var(--font-mono);color:var(--acc);letter-spacing:.09em;text-transform:uppercase}
+  font:700 12px/1.2 var(--font-ui);color:var(--head);letter-spacing:normal}
 .loopback::before,.loopback::after{content:"";flex:1;height:1px;background:var(--acc-rule)}
 .theory{border:1px solid var(--rule);border-radius:var(--radius);background:var(--raised);
   margin-bottom:14px;overflow:hidden}
