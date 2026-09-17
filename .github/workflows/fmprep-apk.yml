@@ -153,14 +153,63 @@ jobs:
           git commit -q -m "FM-Prep.apk built from ${{ github.sha }}"
           git push -f "https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}.git" fmprep-apk
 
+      # Uploaded through the API rather than by an action. The action deleted
+      # the existing asset before uploading the replacement, so an upload that
+      # failed left the release holding nothing - which is what happened on
+      # 17 Sep: "Deleting previously uploaded asset FM-Prep.apk... Uploading
+      # FM-Prep.apk... Error saving asset", after which the release page
+      # listed only the two source archives and the download URL answered 404.
+      #
+      # Here the new file goes up under a temporary name, the old asset is
+      # removed only once that upload has succeeded, and the new one is then
+      # renamed into place. Every ordering of failures leaves a downloadable
+      # APK on the release.
       - name: Publish APK to the rolling release
-        uses: softprops/action-gh-release@v2
-        with:
-          tag_name: fmprep-apk-latest
-          name: FM Prep Android app
-          body: |
-            Latest FM Prep Android APK - the DNB / MD Family Medicine revision library.
+        working-directory: ${{ github.workspace }}
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          REPO: ${{ github.repository }}
+          TAG: fmprep-apk-latest
+        run: |
+          set -euo pipefail
+          api() {
+            curl -sS --fail-with-body \
+              -H "Authorization: Bearer $GH_TOKEN" \
+              -H "Accept: application/vnd.github+json" \
+              -H "X-GitHub-Api-Version: 2022-11-28" "$@"
+          }
 
-            Download **FM-Prep.apk** below, open it on the phone, and allow install from this source.
-            Updates install over the previous version.
-          files: fmprep/FM-Prep.apk
+          ID=$(api "https://api.github.com/repos/$REPO/releases/tags/$TAG" | jq -r '.id // empty') || ID=""
+          if [ -z "$ID" ]; then
+            ID=$(api -X POST "https://api.github.com/repos/$REPO/releases" \
+              -d "$(jq -n --arg t "$TAG" '{
+                    tag_name: $t, name: "FM Prep Android app",
+                    body: "Latest FM Prep Android APK - the DNB / MD Family Medicine revision library.\n\nDownload **FM-Prep.apk** below, open it on the phone, and allow install from this source.\nUpdates install over the previous version.\n"
+                  }')" | jq -r .id)
+            echo "created release $ID"
+          fi
+
+          assets() { api "https://api.github.com/repos/$REPO/releases/$ID/assets?per_page=100"; }
+          drop() {
+            local aid
+            aid=$(assets | jq -r --arg n "$1" '.[] | select(.name == $n) | .id' | head -1)
+            [ -n "$aid" ] && api -X DELETE "https://api.github.com/repos/$REPO/releases/assets/$aid" >/dev/null && echo "removed $1"
+            return 0
+          }
+
+          # Clear any half-finished upload left by an earlier run.
+          drop FM-Prep-incoming.apk
+
+          NEW=$(api -X POST \
+            -H "Content-Type: application/vnd.android.package-archive" \
+            --data-binary @fmprep/FM-Prep.apk \
+            "https://uploads.github.com/repos/$REPO/releases/$ID/assets?name=FM-Prep-incoming.apk" \
+            | jq -r '.id')
+          [ -n "$NEW" ] && [ "$NEW" != "null" ] || { echo "upload did not return an asset id"; exit 1; }
+          echo "uploaded as asset $NEW"
+
+          drop FM-Prep.apk
+          api -X PATCH "https://api.github.com/repos/$REPO/releases/assets/$NEW" \
+            -d '{"name":"FM-Prep.apk"}' >/dev/null
+
+          assets | jq -r '.[] | "\(.name)  \(.size) bytes  \(.state)"'
