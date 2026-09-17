@@ -1935,6 +1935,75 @@ topics.push({
   ],
   tables: [
     {
+      heading: "Medico-legal duties in every poisoning",
+      columns: ["Duty", "What it means in practice", "Why"],
+      rows: [
+        ["Treat as a medico-legal case", "Every poisoning in India, deliberate or accidental", "The record will be read in court years later [AIIMS Protocols 2023]"],
+        ["Timed, legible entry", "Clock time against every drug and dose", "An untimed note cannot establish the sequence afterwards [AIIMS Protocols 2023]"],
+        ["Preserve the evidence", "Bottle, vomitus and gastric aspirate, labelled and sealed", "It is the chemical evidence [AIIMS Protocols 2023]"],
+        ["Inform the police", "In writing, without delaying treatment", "Notification and resuscitation are not in competition [AIIMS Protocols 2023]"],
+        ["Do not certify intent", "Suicide, accident or homicide is a legal finding", "Not a medical one [AIIMS Protocols 2023]"],
+        ["Never withhold consent", "No life-saving intervention is delayed on medico-legal grounds", "Treatment comes first in law too [AIIMS Protocols 2023]"],
+      ],
+    },
+    {
+      heading: "Pralidoxime: dose and the rules around it",
+      columns: ["Item", "Specification", "Why"],
+      rows: [
+        ["Adult loading", "30 mg/kg (usually 1-2 g) IV in 100 mL saline over 15-30 min", "A fast push is dangerous [Eddleston 2008]"],
+        ["Adult infusion", "8-10 mg/kg/hour (about 500 mg/hour) for at least 24 hours", "A bolus is cleared within an hour [Eddleston 2008]"],
+        ["Without a pump", "1 g IV every 4-6 hours", "Intermittent dosing is far better than none [Eddleston 2008]"],
+        ["Child", "25-50 mg/kg IV over 30 minutes, then 10-20 mg/kg/hour", "The same slow-infusion rule applies [Eddleston 2008]"],
+        ["Sequence", "Only after atropine has started", "Never before and never instead [Eddleston 2008]"],
+        ["Duration", "Until off atropine and breathing normally", "The enzyme recovers after the symptoms do [Eddleston 2008]"],
+        ["Rapid injection", "Hypertension, tachycardia, laryngospasm", "Always dilute and infuse [Eddleston 2008]"],
+        ["Renal failure", "Reduce the dose", "Pralidoxime is renally cleared and accumulates [Eddleston 2008]"],
+      ],
+    },
+    {
+      heading: "Drugs to avoid in organophosphate poisoning",
+      columns: ["Drug", "Problem", "What to use instead"],
+      rows: [
+        ["Succinylcholine", "Metabolised by the same cholinesterase; block lasts hours, not minutes", "Rocuronium 1 mg/kg, which does not depend on cholinesterase [Eddleston 2008]"],
+        ["Aminoglycosides", "Worsen neuromuscular weakness", "Choose another antibiotic class [Eddleston 2008]"],
+        ["Morphine", "Adds respiratory depression to a failing diaphragm", "Avoid; treat the cause of distress [Eddleston 2008]"],
+      ],
+    },
+    {
+      heading: "Paracetamol: when it is toxic, and when to treat before the level",
+      columns: ["Situation", "Rule", "Reason"],
+      rows: [
+        ["Normal adult", "Toxic above 150 mg/kg, or above 7.5 g", "Below that, glutathione copes [NICE/RCEM 2023]"],
+        ["Malnourished, chronic alcoholic, anorexia", "Threshold falls to 75-100 mg/kg", "Glutathione stores are already low [NICE/RCEM 2023]"],
+        ["On enzyme inducers", "Threshold falls to 75-100 mg/kg", "Phenytoin, carbamazepine, rifampicin, isoniazid make more NAPQI [NICE/RCEM 2023]"],
+        ["Time of ingestion unknown", "Treat first, ask afterwards", "The nomogram cannot be plotted without a clock [NICE/RCEM 2023]"],
+        ["Staggered over more than an hour", "Treat first", "The nomogram does not apply to staggered doses [NICE/RCEM 2023]"],
+        ["Level not obtainable within 8 hours", "Treat first", "Protection falls away sharply after 8 hours [NICE/RCEM 2023]"],
+      ],
+    },
+    {
+      heading: "Corrosive ingestion: the four things never done",
+      columns: ["Never", "What happens if you do"],
+      rows: [
+        ["Induce vomiting", "Re-exposes the mucosa and converts a survivable burn into a perforation [Goldfrank 11e]"],
+        ["Pass a lavage tube", "Re-exposes the mucosa and risks perforation [Goldfrank 11e]"],
+        ["Give activated charcoal", "Adsorbs nothing here and blinds the endoscopist [Goldfrank 11e]"],
+        ["Neutralise with milk, vinegar or bicarbonate", "The exothermic reaction adds a thermal burn [Goldfrank 11e]"],
+      ],
+    },
+    {
+      heading: "Superwarfarin rodenticide (bromadiolone, brodifacoum)",
+      columns: ["Question", "Answer", "Why"],
+      rows: [
+        ["Mechanism", "Vitamin K antagonist with a half-life of weeks", "Bleeding risk is prolonged for weeks to months [Goldfrank 11e]"],
+        ["Small accidental child ingestion", "INR at 24 and 48 hours only", "Most such children never bleed [Goldfrank 11e]"],
+        ["Asymptomatic patient", "No prophylactic vitamin K", "It masks the INR that would reveal the poisoning [Goldfrank 11e]"],
+        ["Active bleeding", "Vitamin K1 10 mg slow IV over at least 20 minutes", "A fast push causes cardiovascular collapse [Goldfrank 11e]"],
+        ["Active bleeding, immediate cover", "Fresh frozen plasma 15 mL/kg or prothrombin complex", "Vitamin K itself takes hours to work [Goldfrank 11e]"],
+        ["Afterwards", "Oral vitamin K1 10-50 mg daily for weeks to months, by INR", "The poison outlasts one dose [Goldfrank 11e]"],
+      ],
+    },
+    {
       heading: "Toxidromes at the bedside",
       columns: ["Toxidrome", "Pupils", "Skin", "Pulse", "Typical Indian agents", "First move"],
       rows: [

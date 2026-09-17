@@ -528,6 +528,129 @@ const diagrams: DiagramSet = {
 
   "emergency-poisoning": [
     {
+      kind: "compare",
+      heading: "The four universal antidotes",
+      caption: "Given before the compound is named, because each treats a killer that is common to many poisons. [Goldfrank 11e]",
+      columns: ["Antidote", "Adult dose", "Child dose", "When"],
+      rows: [
+        ["Oxygen", "Titrate to SpO2 94-98%", "Same target", "Always - most poison deaths are hypoxic before they are toxic"],
+        ["Dextrose", "25 g IV (50 mL of 50% or 100 mL of 25%), large vein", "2 mL/kg of 10%", "Glucose below 70 mg/dL or unmeasurable; 50% sclerosis small veins"],
+        ["Naloxone", "0.4-2 mg IV every 2-3 min, maximum 10 mg", "0.01 mg/kg, rising to 0.1 mg/kg", "Respiratory rate below 12 with pinpoint pupils; titrate to breathing"],
+        ["Thiamine", "100 mg IV", "By weight", "Malnourished or alcoholic - glucose without it precipitates Wernicke's"],
+      ],
+    },
+    {
+      kind: "compare",
+      heading: "Gut decontamination: what still has a place",
+      caption: "Almost nothing does. Emesis, salt water, milk and village remedies are forbidden: they cause aspiration and delay real treatment. [WHO Pesticide 2008, Goldfrank 11e]",
+      columns: ["Method", "Dose or window", "Never when"],
+      rows: [
+        ["Gastric lavage", "Within 1 hour of a life-threatening ingestion only, airway protected", "Corrosives, hydrocarbons such as kerosene, or a drowsy patient with no cuffed tube"],
+        ["Single-dose charcoal", "1 g/kg once within 1 hour (adult 50 g, child 25 g)", "Iron, lithium, alcohols, acids, alkalis, hydrocarbons - none adsorb"],
+        ["Multiple-dose charcoal", "50 g then 25 g every 4-6 hours", "Only for poisons that recirculate: oleander, carbamazepine, dapsone, phenobarbitone, quinine, theophylline [de Silva 2003]"],
+      ],
+    },
+    {
+      kind: "compare",
+      heading: "The smell at the bedside",
+      caption: "In organophosphate it is the solvent, not the poison, that smells; only a minority of people can smell cyanide at all. [Eddleston 2008, Goldfrank 11e]",
+      columns: ["Finding", "Names", "What it changes"],
+      rows: [
+        ["Garlic or kerosene smell", "Organophosphate formulation", "Start atropine on the clinical picture"],
+        ["Decaying-fish or garlic (phosphine)", "Aluminium phosphide", "Ventilate the room; the rescuer is at risk [Mehrpour 2012]"],
+        ["Burns around the mouth", "A corrosive", "Forbids lavage and charcoal at the same moment"],
+        ["Bitter almond smell", "Cyanide", "Only some people can detect it, so absence proves nothing"],
+      ],
+    },
+    {
+      kind: "compare",
+      heading: "Atropinisation: the five end-points",
+      caption: "The chest and the axillae are the ones that matter - secretions kill, pupils do not. Never titrate to pupil size alone. [Eddleston 2008]",
+      columns: ["End-point", "Target", "Note"],
+      rows: [
+        ["Chest", "Clear, no crackles or wheeze", "The one end-point that decides survival"],
+        ["Heart rate", "Above 80 per minute", "A bradycardic patient is still under-atropinised"],
+        ["Systolic BP", "Above 80 mmHg", "Perfusion, not only secretion, must be restored"],
+        ["Axillae", "Dry", "The cheapest and most reliable bedside sign"],
+        ["Pupils", "No longer pinpoint", "The last sign to respond, so never titrate to it"],
+      ],
+    },
+    {
+      kind: "compare",
+      heading: "Late syndromes after organophosphate poisoning",
+      caption: "Both appear after apparent recovery, which is when the family has already been told he is better. [Eddleston 2008]",
+      columns: ["Syndrome", "Timing", "Features", "Treatment"],
+      rows: [
+        ["Intermediate syndrome", "24-96 hours", "Proximal limb, neck flexor and respiratory weakness, cranial nerve palsies", "Ventilation, not more atropine - the block is nicotinic"],
+        ["Bedside test", "Any time after 24 hours", "Ask the patient to lift the head off the pillow", "Neck flexors fail first, and the diaphragm fails quietly"],
+        ["Delayed polyneuropathy", "2-3 weeks", "Distal sensorimotor neuropathy", "No specific treatment - warn the family early"],
+      ],
+    },
+    {
+      kind: "compare",
+      heading: "The four stages of paracetamol hepatotoxicity",
+      caption: "A well-looking patient at 6 hours proves nothing: stage 1 may be entirely silent. [NICE/RCEM 2023]",
+      columns: ["Stage", "Time", "Clinical picture"],
+      rows: [
+        ["1", "0-24 hours", "Nausea and vomiting, or nothing at all"],
+        ["2", "24-72 hours", "Right upper quadrant pain, rising transaminases and INR"],
+        ["3", "72-96 hours", "Fulminant hepatic failure with encephalopathy; only transplantation changes it"],
+        ["4", "Beyond 96 hours", "Recovery or death; survivors recover normal liver architecture"],
+      ],
+    },
+    {
+      kind: "compare",
+      heading: "Acid against alkali ingestion",
+      caption: "In India acid ingestion predominates, deliberate and accidental from cleaners decanted into drink bottles. [Goldfrank 11e, AIIMS Protocols 2023]",
+      columns: ["Feature", "Acid", "Alkali"],
+      rows: [
+        ["Agents", "Drain cleaners: hydrochloric, sulphuric acid", "Caustic soda, lye, button batteries"],
+        ["Necrosis", "Coagulative - the eschar limits the depth", "Liquefactive - it burrows deeply instead of sealing"],
+        ["Organ injured", "Stomach; passes the oesophagus quickly and pools at the pylorus", "Oesophagus; squamous mucosa has no defence against saponification"],
+      ],
+    },
+    {
+      kind: "flow",
+      heading: "Aluminium phosphide: the supportive package",
+      caption: "No antidote exists, mortality is 60-90%, and a single 3 g tablet can kill an adult. [Mehrpour 2012]",
+      steps: [
+        {
+          label: "Protect the room and the rescuer",
+          detail: "Ventilate; never give mouth-to-mouth, because the exhaled phosphine is toxic",
+          tone: "warn",
+        },
+        {
+          label: "Coconut oil and bicarbonate lavage",
+          detail: "Oil retards phosphine release, bicarbonate reduces acid hydrolysis",
+        },
+        {
+          label: "High-flow oxygen and large-volume crystalloid",
+          detail: "The shock is vasoplegic and profoundly volume-dependent at first",
+        },
+        {
+          label: "Noradrenaline",
+          detail: "Fluid alone cannot restore a vascular tone that has been abolished",
+        },
+        {
+          label: "Bicarbonate and magnesium sulphate",
+          detail: "Bicarbonate for the acidosis, magnesium to suppress ventricular ectopy",
+        },
+        { label: "Intensive care", detail: "Arrhythmia and multi-organ failure follow; refer early", tone: "good" },
+      ],
+    },
+    {
+      kind: "compare",
+      heading: "Yellow phosphorus paste (Ratol): three phases",
+      caption: "The symptom-free window is when patients are wrongly discharged home. Observe well past day 3. [Goldfrank 11e]",
+      columns: ["Phase", "Timing", "Picture"],
+      rows: [
+        ["1", "First hours", "Vomiting, luminescent garlic-smelling 'smoking' stools - pathognomonic when present"],
+        ["2", "1-3 days", "Symptom-free window; the patient looks well"],
+        ["3", "Day 4-8", "Fulminant hepatic failure, renal failure, coagulopathy"],
+        ["Treatment", "Throughout", "No antidote; liver transplantation is the only definitive option, so refer early"],
+      ],
+    },
+    {
       kind: "flow",
       heading: "The poisoned patient: the first ten minutes",
       caption: "Resuscitate, then decontaminate, then diagnose. In that order.",

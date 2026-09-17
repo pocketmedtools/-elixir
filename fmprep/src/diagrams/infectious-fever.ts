@@ -645,6 +645,20 @@ const diagrams: DiagramSet = {
 
   "infectious-fever-scrub-typhus": [
     {
+      kind: "compare",
+      heading: "Scrub typhus against its look-alikes",
+      caption:
+        "All five present as an acute undifferentiated fever in the same districts, and co-infection occurs, so run a malaria test and dengue serology alongside. [ICMR 2022]",
+      columns: ["Illness", "Discriminating feature", "Confirmatory test"],
+      rows: [
+        ["Scrub typhus", "Eschar; neutrophilia with thrombocytopenia and high transaminases", "IgM ELISA from day 5-7; defervescence within 48 hours of doxycycline is itself diagnostic"],
+        ["Dengue", "Leucopenia rather than leucocytosis, and no eschar", "NS1 antigen to day 5, IgM MAC-ELISA from day 5"],
+        ["Leptospirosis", "Calf tenderness and jaundice out of proportion, with the same neutrophilia", "Leptospira IgM ELISA"],
+        ["Enteric fever", "Relative bradycardia with a step-ladder fever", "Blood culture"],
+        ["Malaria", "Paroxysms with rigors, splenomegaly", "Thick and thin smear, or RDT"],
+      ],
+    },
+    {
       kind: "flow",
       heading: "Scrub typhus: from suspicion to treatment",
       caption:

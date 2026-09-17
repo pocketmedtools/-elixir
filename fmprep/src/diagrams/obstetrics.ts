@@ -357,6 +357,76 @@ const diagrams: DiagramSet = {
         ],
       ],
     },
+    {
+      kind: "branch",
+      heading: "Five reasons oral iron fails",
+      root: "Haemoglobin not risen 1 g/dL in 4 weeks",
+      caption:
+        "Exclude all five before calling it oral iron failure and escalating to intravenous iron - most failures are not pharmacological. [FOGSI IDA 2016]",
+      arms: [
+        {
+          label: "1. She is not taking it",
+          tone: "warn",
+          steps: ["Non-compliance outnumbers every other cause", "Ask about nausea, metallic taste, black stools, constipation"],
+        },
+        {
+          label: "2. She takes it with tea or calcium",
+          steps: ["Tannins and calcium chelate iron in the gut"],
+        },
+        {
+          label: "3. Ongoing blood loss",
+          steps: ["Absorption cannot exceed what is being lost"],
+        },
+        {
+          label: "4. Malabsorption or infection",
+          steps: ["Hepcidin rises in inflammation and shuts iron out"],
+        },
+        {
+          label: "5. The diagnosis is wrong",
+          steps: ["Thalassaemia trait, B12 deficiency or anaemia of chronic disease"],
+        },
+      ],
+    },
+    {
+      kind: "ladder",
+      heading: "Escalating iron therapy in pregnancy",
+      caption:
+        "Iron sucrose 600 mg per week is the ceiling set by transferrin binding capacity; ferric carboxymaltose 1000-1500 mg corrects the whole deficit in one sitting, so one visit replaces six. [AMB 2018]",
+      steps: [
+        {
+          label: "Oral iron 120 mg elemental daily",
+          detail: "Two IFA tablets in two divided doses for 180 days; mild or moderate anaemia under 12 weeks",
+        },
+        {
+          label: "IV iron: moderate anaemia after 12 weeks",
+          detail: "Haemoglobin 7.0-9.9 g/dL - there is not enough time left for oral iron to work",
+          tone: "decision",
+        },
+        {
+          label: "IV iron: no response to 4 weeks of oral",
+          detail: "Or intolerance to oral iron - a tablet not swallowed delivers no iron at all",
+        },
+        {
+          label: "IV iron: anaemia found after 30 weeks",
+          detail: "Delivery is the deadline; severe anaemia after 34 weeks also earns IV iron as an adjunct",
+        },
+        {
+          label: "Transfuse: below 7 g/dL after 34 weeks",
+          detail: "Or below 5 g/dL at any gestation, when cardiac failure is imminent",
+          tone: "warn",
+        },
+        {
+          label: "Transfuse: below 8 g/dL for labour",
+          detail: "Labour or urgent surgery - normal blood loss would be unsurvivable",
+          tone: "warn",
+        },
+        {
+          label: "Transfuse whatever the number",
+          detail: "Cardiac failure, hypoxia, infection or active bleeding - the number stops deciding",
+          tone: "warn",
+        },
+      ],
+    },
   ],
 
   "obstetrics-hypertensive-disorders": [

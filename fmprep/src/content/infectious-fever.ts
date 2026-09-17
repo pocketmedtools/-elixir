@@ -1818,18 +1818,10 @@ topics.push({
       heading: "Clinical course week by week",
       points: [
         "**Week 1: step-ladder rise in fever** with headache, malaise, anorexia and dry cough - bacteraemia builds daily. [Harrison 21e]",
-        "Week 1 bowel habit: constipation in adults, diarrhoea in children - Peyer patch involvement differs. [Harrison 21e]",
-        "**Relative bradycardia (Faget sign)** may be present in week 1 - endotoxin blunts the pulse rise. [Harrison 21e]",
-        "Blood culture is positive in **60-80%** in week 1 - bacteraemia is heaviest then. [Harrison 21e]",
         "**Week 2: sustained high fever** with a toxic look and coated tongue with clean red edges - sustained bacteraemia and toxaemia. [Harrison 21e]",
         "Week 2 abdomen: distension and tenderness, soft splenomegaly and hepatomegaly - reticuloendothelial infiltration. [Harrison 21e]",
         "**Rose spots** = crops of 2-4 mm blanching pink macules on the trunk, in 5-30% of patients - they are bacterial emboli in the skin. [Harrison 21e]",
-        "Rose spots are very hard to see on Indian skin - pigment hides a blanching macule. [Harrison 21e]",
-        "**Week 3 is the week of complications** - intestinal haemorrhage and perforation of the terminal ileum. [Harrison 21e]",
-        "Week 3 also brings typhoid encephalopathy - the coma-vigil or muttering delirium of the typhoid state. [Harrison 21e]",
-        "Myocarditis and shock are further week 3 complications - toxaemia peaks in week 3. [Harrison 21e]",
         "**Week 4 and beyond:** gradual defervescence and convalescence - bacterial load falls. [Harrison 21e]",
-        "**Relapse occurs in 5-10%**, usually 1-3 weeks after stopping antibiotics - generally milder. [Harrison 21e]",
         "Other complications: acute cholecystitis, hepatitis, nephritis, arthritis, deep vein thrombosis - the organism seeds many sites. [Harrison 21e]",
         "Osteomyelitis occurs particularly in sickle cell disease; meningitis in infants - infarcted bone is easily seeded. [Harrison 21e]",
         "Haemophagocytic lymphohistiocytosis is a recognised complication - macrophage activation follows. [Harrison 21e]",
@@ -1843,18 +1835,13 @@ topics.push({
         "**Blood culture is the gold standard** for enteric fever - it yields the organism and its sensitivity. [ICMR 2022]",
         "Take **10-15 mL of blood in adults** (2-4 mL in children) into 45-90 mL of broth - bacteraemia is low-grade. [ICMR 2022]",
         "Send ideally two sets of blood culture before any antibiotic - one set misses a third of cases. [ICMR 2022]",
-        "Blood culture yield is **60-80% in week 1**, falling to 30-40% by week 3 - bacteraemia wanes after week 1. [ICMR 2022]",
         "Yield falls sharply after even one dose of antibiotic - one dose sterilises the blood. [ICMR 2022]",
-        "**Bone marrow culture is the most sensitive test (80-95%)** and stays positive despite prior antibiotics - the marrow holds the organism. [Harrison 21e]",
-        "Bone marrow culture is the answer when a partially treated patient must be diagnosed - antibiotics do not clear the marrow. [Harrison 21e]",
-        "Stool and urine cultures become positive from week 2-3 - used to detect carriers. [ICMR 2022]",
         "**The Widal test is a poor test in India.** - endemic exposure raises background titres. [ICMR 2022]",
         "Widal measures agglutinins to the O and H antigens - both antigens cross-react widely. [Harrison 21e]",
         "Widal needs paired sera 7-10 days apart showing a **fourfold rise** - only a rise means current infection. [Harrison 21e]",
         "A single Widal titre is confounded by past infection, prior vaccination and cross-reacting infections - all three raise the titre. [ICMR 2022]",
         "A single high O titre may support the diagnosis in a non-endemic setting - **never the sole basis for treatment**. [ICMR 2022]",
         "Typhidot, Typhidot-M and Tubex TF detect IgM - quicker than culture. [ICMR 2022]",
-        "Rapid IgM tests have **sensitivity and specificity of only about 70-80%** - they do not replace culture. [ICMR 2022]",
         "Rapid tests are acceptable only where culture is unavailable, interpreted against the clinical picture - a false positive costs 14 days of drug. [ICMR 2022]",
         "Supportive findings: **normal or low leucocyte count with a left shift** and relative lymphopenia - the organism is intracellular. [Harrison 21e]",
         "**Aneosinophilia** is characteristic - eosinophils vanish in typhoid. [Harrison 21e]",
@@ -1866,12 +1853,6 @@ topics.push({
     {
       heading: "Antimicrobial resistance and current treatment",
       points: [
-        "**Classical MDR typhoid** = resistant to chloramphenicol, ampicillin and cotrimoxazole - the H58 haplotype carried it from the 1990s. [ICMR 2022]",
-        "**Fluoroquinolone non-susceptibility is now near-universal in India.** - gyrA mutations are ubiquitous. [ICMR AMR 2023]",
-        "**XDR typhoid** = MDR plus resistance to third-generation cephalosporins - spread from Sindh, Pakistan since 2016. [ICMR 2022]",
-        "Imported XDR typhoid cases have been reported in India - travel carries the strain. [ICMR AMR 2023]",
-        "**Fluoroquinolones must no longer be used empirically for enteric fever in India.** - clinical failure follows a sensitive report. [ICMR 2022]",
-        "Nalidixic acid resistance or a **ciprofloxacin MIC of 0.12 microgram/mL or more** predicts failure - old breakpoints still call it sensitive. [ICMR 2022]",
         "**Uncomplicated, outpatient: azithromycin 500 mg to 1 g PO once daily for 7 days** in adults - azithromycin concentrates inside cells. [ICMR 2022]",
         "Children: azithromycin **20 mg/kg once daily (maximum 1 g) for 7 days** - children need weight-based dosing. [ICMR 2022]",
         "Alternative oral: **cefixime 20 mg/kg/day in two divided doses (adult 200 mg BD) for 14 days** - defervesces more slowly. [ICMR 2022]",
@@ -1911,6 +1892,16 @@ topics.push({
     },
   ],
   tables: [
+    {
+      heading: "Resistance phenotypes in Indian enteric fever",
+      columns: ["Phenotype", "Definition", "What it means for treatment"],
+      rows: [
+        ["Classical MDR typhoid", "Resistant to chloramphenicol, ampicillin and cotrimoxazole", "Carried by the H58 haplotype since the 1990s; none of the three is usable [ICMR 2022]"],
+        ["Fluoroquinolone non-susceptible", "Near-universal in India; gyrA mutations are ubiquitous", "Fluoroquinolones must no longer be used empirically for enteric fever in India [ICMR AMR 2023; ICMR 2022]"],
+        ["Nalidixic acid resistant, or ciprofloxacin MIC 0.12 microgram/mL or more", "Predicts clinical failure even when old breakpoints report the isolate sensitive", "Treat as resistant whatever the report says [ICMR 2022]"],
+        ["XDR typhoid", "MDR plus resistance to third-generation cephalosporins; spread from Sindh, Pakistan since 2016, with imported cases reported in India", "Meropenem, because it survives the CTX-M beta-lactamase [ICMR 2022; ICMR AMR 2023]"],
+      ],
+    },
     {
       heading: "Diagnostic tests in enteric fever",
       columns: ["Test", "Sensitivity and timing", "Comment"],
@@ -2395,9 +2386,6 @@ topics.push({
         "Transaminases raised **2-5 times** with a disproportionately raised alkaline phosphatase - vasculitic hepatitis with cholestasis. [Mandell 9e]",
         "Hypoalbuminaemia and hyponatraemia complete the pattern - capillary leak and SIADH. [Mandell 9e]",
         "This pattern with a negative malaria test should prompt a search for the eschar and empirical doxycycline - the eschar clinches it. [ICMR 2022]",
-        "Dengue differs by leucopenia rather than leucocytosis, and no eschar - dengue suppresses the marrow. [ICMR 2022]",
-        "Leptospirosis differs by calf tenderness and jaundice out of proportion - same neutrophilia. [ICMR 2022]",
-        "Enteric fever differs by relative bradycardia and blood culture; malaria by the smear - each has its own confirmatory test. [ICMR 2022]",
         "Fever with lymphadenopathy: also consider infectious mononucleosis, HIV seroconversion and lymphoma - all enlarge lymphoid tissue. [Harrison 21e]",
         "**Defervescence within 48 hours of doxycycline is itself diagnostic.** - no other tropical fever answers so fast. [ICMR 2022]",
         "Fever beyond 72 hours on adequate doxycycline - doubt the diagnosis, suspect a complication or a **second infection**. [ICMR 2022]",
@@ -2430,19 +2418,6 @@ topics.push({
         "**The diagnosis is clinical - treatment must not wait for serology.** [DHR-ICMR 2015, Mandell 9e]",
         "Probable case = acute fever with an eschar, or with suggestive features in an endemic area - the eschar alone is enough to treat. [DHR-ICMR 2015, Mandell 9e]",
         "Confirmed case = positive IgM ELISA, IFA or PCR - each detects the organism or its antibody. [DHR-ICMR 2015, Mandell 9e]",
-        "**IgM ELISA on serum from day 5-7 onwards is the recommended test in India.** - IgM appears only in the second week. [DHR-ICMR 2015, Mandell 9e]",
-        "Most laboratories use an IgM ELISA optical density cut-off of about **0.5** - cut-offs vary between kits. [ICMR 2022]",
-        "IgM ELISA is positive in 85-90% by the second week; a fourfold rise in paired sera is confirmatory - antibody takes time to rise. [ICMR 2022]",
-        "IgM ELISA cannot distinguish recent past infection in a highly endemic area - IgM persists for months. [ICMR 2022]",
-        "**Indirect immunofluorescence assay (IFA) is the reference standard** - needs a fluorescence microscope and trained staff. [ICMR 2022]",
-        "IFA is available only at reference laboratories - it needs a fluorescence microscope. [ICMR 2022]",
-        "**PCR for the 56 kDa type-specific antigen gene** on blood, buffy coat or, best of all, an eschar swab or biopsy - the eschar is richest. [Mandell 9e]",
-        "PCR is positive in the first week before antibodies appear - test of choice in the early or doxycycline-pretreated patient. [ICMR 2022]",
-        "**Weil-Felix** exploits cross-reacting Proteus antigens - Proteus shares surface antigens. [Mandell 9e]",
-        "OX-K agglutination at a titre of **1 in 80 or higher** suggests scrub typhus - OX-K cross-reacts with Orientia. [Mandell 9e]",
-        "OX-2 and OX-19 suggest the spotted fever group; OX-19 alone the typhus group - different cross-reacting antigens. [Mandell 9e]",
-        "Weil-Felix is cheap and widely available but has **sensitivity of only 30-50%** and poor specificity - cross-reaction cuts both ways. [ICMR 2022]",
-        "A negative Weil-Felix never excludes the disease; a positive one should be confirmed - half of true cases are missed. [ICMR 2022]",
         "Supporting tests: complete blood count, liver and renal function, electrolytes for hyponatraemia - each tracks organ involvement. [ICMR 2022]",
         "Chest radiograph for interstitial infiltrates or effusion - pneumonitis is often silent. [ICMR 2022]",
         "Lumbar puncture, ECG and echocardiography as the clinical picture demands - vasculitis can hit any organ. [ICMR 2022]",
@@ -2499,6 +2474,16 @@ topics.push({
     },
   ],
   tables: [
+    {
+      heading: "Confirmatory tests for scrub typhus",
+      columns: ["Test", "Sample and timing", "Performance"],
+      rows: [
+        ["IgM ELISA, the recommended test in India", "Serum from day 5-7 onwards; most laboratories use an optical density cut-off of about 0.5, and cut-offs vary between kits", "Positive in 85-90% by the second week; a fourfold rise in paired sera is confirmatory; cannot distinguish recent past infection in a highly endemic area because IgM persists for months [DHR-ICMR 2015; ICMR 2022]"],
+        ["Indirect immunofluorescence assay (IFA), the reference standard", "Reference laboratories only", "Needs a fluorescence microscope and trained staff [ICMR 2022]"],
+        ["PCR for the 56 kDa type-specific antigen gene", "Blood, buffy coat or, best of all, an eschar swab or biopsy", "Positive in the first week before antibodies appear, so it is the test of choice in the early or doxycycline-pretreated patient [Mandell 9e; ICMR 2022]"],
+        ["Weil-Felix OX-K agglutination", "Titre of 1 in 80 or higher suggests scrub typhus; it exploits cross-reacting Proteus surface antigens", "Sensitivity only 30-50% with poor specificity: a negative never excludes the disease and a positive should be confirmed [Mandell 9e; ICMR 2022]"],
+      ],
+    },
     {
       heading: "Rickettsial diseases seen in India",
       columns: ["Disease", "Organism", "Vector", "Clinical clue", "Weil-Felix pattern"],
@@ -5547,6 +5532,8 @@ const subject: Subject = {
 };
 
 export default subject;
+
+
 
 
 

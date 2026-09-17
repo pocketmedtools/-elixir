@@ -467,6 +467,35 @@ const diagrams: DiagramSet = {
 
   "cardiovascular-heart-failure": [
     {
+      kind: "branch",
+      heading: "When to send the heart failure patient on",
+      caption: "Refer for advanced therapy or transplantation early - referral after end-organ damage is established comes too late.",
+      root: "Heart failure in general practice",
+      arms: [
+        {
+          label: "Needs an echocardiogram",
+          steps: ["New heart failure not yet imaged", "Any valve lesion - a surgical lesion changes the whole plan"],
+        },
+        {
+          label: "Suspected ischaemic aetiology",
+          steps: ["Revascularisation assessment", "Hibernating myocardium regains function once perfused"],
+        },
+        {
+          label: "Stage D",
+          tone: "warn",
+          steps: ["NYHA III-IV despite optimal drugs", "Recurrent admissions", "Devices and transplant apply here"],
+        },
+        {
+          label: "Titration is failing",
+          steps: [
+            "Refractory hypotension",
+            "Renal dysfunction limiting titration",
+            "Untitratable pillars mean the mortality benefit is lost",
+          ],
+        },
+      ],
+    },
+    {
       kind: "compare",
       heading: "HFrEF versus HFpEF at a glance",
       caption: "Mildly reduced ejection fraction, HFmrEF, occupies the 41-49% band between them.",

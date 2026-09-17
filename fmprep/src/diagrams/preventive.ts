@@ -1748,6 +1748,189 @@ const diagrams: DiagramSet = {
         ["Funeral expenses", "Paid to the person who performs the last rites"],
       ],
     },
+    {
+      kind: "compare",
+      heading: "Occupational against work-related disease",
+      caption: "The distinction decides compensability, which is why the viva asks it. [Park 27e]",
+      columns: ["Feature", "Occupational disease", "Work-related disease"],
+      rows: [
+        ["Relation to work", "Arises out of and in the course of employment, from an agent specific to that work", "Multifactorial, with work one contributing cause among several"],
+        ["Dose-response", "Present", "Not demonstrable"],
+        ["Examples", "Silicosis, lead poisoning, mesothelioma", "Hypertension, low back pain, COPD, depression"],
+        ["Compensation", "Compensable as such", "Not compensable as an occupational disease"],
+      ],
+    },
+    {
+      kind: "branch",
+      heading: "Three routes by which a chemical enters the worker",
+      caption: "Chemical hazards are the largest group; air sampling alone misses two of the three routes. [Park 27e]",
+      root: "Chemical agent at the workplace",
+      arms: [
+        {
+          label: "Inhalation - the main route",
+          steps: [
+            "Dusts, fumes, mists, vapours and gases reach the alveolus directly",
+            "Respirable fraction is 0.5-5 micrometre",
+            "Particles above 10 micrometre are trapped in the upper airway",
+          ],
+        },
+        {
+          label: "Skin absorption",
+          tone: "warn",
+          steps: [
+            "Organic solvents, aniline, organophosphates",
+            "Tetraethyl lead and phenol",
+            "Air sampling misses this route entirely",
+          ],
+        },
+        {
+          label: "Ingestion",
+          steps: [
+            "Hand-to-mouth transfer while eating, drinking, chewing tobacco or smoking",
+            "Hence the strict no-eating rule in lead and pesticide work",
+            "Separate washing facilities, to be used before meals",
+          ],
+        },
+      ],
+    },
+    {
+      kind: "branch",
+      heading: "Dusts classified by the reaction they provoke",
+      caption: "Pneumoconiosis (ILO 1971) is the accumulation of dust in the lungs and the tissue reaction to its presence. [ILO 1971]",
+      root: "Inhaled dust",
+      arms: [
+        {
+          label: "Fibrogenic",
+          tone: "warn",
+          steps: [
+            "Silica, asbestos, coal, beryllium",
+            "Collagenous fibrosis with functional loss",
+          ],
+        },
+        {
+          label: "Inert or benign",
+          tone: "good",
+          steps: [
+            "Iron (siderosis), tin (stannosis), barium (baritosis)",
+            "Radiologically dramatic, functionally harmless",
+          ],
+        },
+        {
+          label: "Allergenic",
+          steps: [
+            "Cotton, bagasse, mouldy hay",
+            "Hypersensitivity rather than fibrosis",
+          ],
+        },
+      ],
+    },
+    {
+      kind: "compare",
+      heading: "Irritant against allergic contact dermatitis",
+      caption: "Occupational dermatoses are the commonest occupational disease in most registries, and patch testing is what separates the two. [Park 27e]",
+      columns: ["Feature", "Irritant contact dermatitis", "Allergic contact dermatitis"],
+      rows: [
+        ["Share of occupational dermatoses", "About 80 per cent", "The remainder"],
+        ["Mechanism", "Direct damage, no sensitisation needed", "Type IV sensitisation"],
+        ["Typical exposure", "Wet work, detergents, solvents, oils", "Hexavalent chromium in wet cement, rubber accelerators, nickel, epoxy, paraphenylenediamine"],
+        ["Confirmed by", "Clinical pattern and exposure history", "Patch testing"],
+      ],
+    },
+    {
+      kind: "branch",
+      heading: "ILO Convention 161 - what the service actually does",
+      caption: "ILO C161 (1985) makes the occupational health service essentially preventive and advisory to the employer, not curative. India has not ratified C155 or C161. [ILO C161 1985]",
+      root: "Occupational health service",
+      arms: [
+        {
+          label: "Surveillance",
+          steps: [
+            "Surveillance of the working environment",
+            "Surveillance of workers' health",
+          ],
+        },
+        {
+          label: "Adaptation and first aid",
+          steps: [
+            "Adaptation of work to the worker",
+            "Organisation of first aid on site, not at a hospital",
+          ],
+        },
+        {
+          label: "Training and records",
+          steps: [
+            "Training in safe practice",
+            "Notification and record-keeping that outlive the latency of the disease",
+            "Advice on return to work",
+          ],
+        },
+      ],
+    },
+    {
+      kind: "flow",
+      heading: "Taking an occupational history",
+      caption: "Ramazzini's question, worked out in seven steps. [Park 27e]",
+      steps: [
+        {
+          label: "What do you do all day?",
+          detail: "Ask the task, not the job title - the title conceals the exposure",
+        },
+        {
+          label: "What materials and processes are around you?",
+          detail: "Include those used by workers nearby; bystander exposure counts",
+        },
+        {
+          label: "The last three jobs, and how long in each",
+          detail: "Latency means the causal job may be long past",
+        },
+        {
+          label: "Is protective equipment provided, fitted and worn?",
+          detail: "Provision alone proves nothing",
+        },
+        {
+          label: "Do coworkers have the same complaint?",
+          detail: "The cheapest epidemiology available in a consultation",
+        },
+        {
+          label: "Do symptoms improve away from work?",
+          detail: "Weekends and holidays - the key question in asthma and dermatitis",
+          tone: "decision",
+        },
+        {
+          label: "Hobbies, home industry, neighbourhood",
+          detail: "Exposure does not stop at the factory gate; remember take-home exposure, such as the wife with mesothelioma from washing overalls",
+          tone: "warn",
+        },
+      ],
+    },
+    {
+      kind: "flow",
+      heading: "Attributing a disease to work - five requirements",
+      caption: "All five are needed; presence in the trade is not exposure. [Park 27e]",
+      steps: [
+        {
+          label: "1. A consistent clinical picture",
+          detail: "Exposure alone proves nothing without the disease claimed",
+        },
+        {
+          label: "2. Documented exposure, adequate dose and duration",
+          detail: "Presence in the trade is not exposure",
+        },
+        {
+          label: "3. Consistency with known latency and biology",
+          detail: "A tumour appearing too early cannot be attributed",
+        },
+        {
+          label: "4. Exclusion of important non-occupational causes",
+          detail: "Smoking and infection must be considered",
+        },
+        {
+          label: "5. Improvement on removal, recurrence on return",
+          detail: "The strongest evidence available in life",
+          tone: "good",
+        },
+      ],
+    },
   ],
 
   "preventive-climate-change-health": [

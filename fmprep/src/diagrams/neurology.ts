@@ -388,6 +388,18 @@ const diagrams: DiagramSet = {
         ],
       ],
     },
+    {
+      kind: "flow",
+      heading: "The first week: dysphagia screen before the first sip",
+      caption: "Half of acute strokes have dysphagia, and aspiration pneumonia is a leading cause of death in survivors. [AHA/ASA 2019]",
+      steps: [
+        { label: "Assume the swallow is unsafe", detail: "Nil by mouth, including oral drugs and water, until screened [AHA/ASA 2019]", tone: "warn" },
+        { label: "Bedside swallow screen before any oral intake", detail: "The first drink of water is the commonest aspiration event [AHA/ASA 2019]", tone: "decision" },
+        { label: "Screen passed: feed sitting upright", detail: "Thickened fluids and small boluses; thin liquids are the hardest to control [Harrison 21e]", tone: "good" },
+        { label: "Screen failed: nasogastric tube within 24 hours", detail: "Keep nil by mouth; starvation itself worsens outcome [AHA/ASA 2019]", tone: "warn" },
+        { label: "Oral hygiene twice daily either way", detail: "It is aspirated oral flora, not the food, that causes the pneumonia [AHA/ASA 2019]" },
+      ],
+    },
   ],
 
   "neurology-tia": [
