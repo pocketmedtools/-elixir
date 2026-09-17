@@ -134,6 +134,9 @@ export const STILL_CURRENT = new Set<string>([
   // annotation), INOSA, WHO GDM diagnostic thresholds, and the MoHFW ANC and
   // SBA guidelines of 2010 all remain the current documents.
   "HBNC MoHFW 2014", "MoHFW HBNC 2014", "IAP Growth Charts 2015", "KDIGO AKI 2012", "ESE 2014", "BTS 2009", "INOSA 2014", "WHO GDM 2013", "MoHFW ANC 2010", "MoHFW SBA 2010",
+  // The KDIGO 2013 lipid guideline is still the one that speaks to dialysis
+  // patients; the MoHFW cardiovascular STG of 2015 has no revised edition.
+  "KDIGO 2013", "STG Cardiovascular MoHFW 2015",
 ]);
 
 const YEAR = /\b(19|20)\d{2}\b/;
