@@ -51,8 +51,16 @@ jobs:
       - name: Verify content and build the web app
         run: npm run build:apk
 
+      # `packages: ''` is load-bearing. The action's default is to install
+      # `tools`, which Google has withdrawn from the SDK repository, so
+      # sdkmanager exits 1 and the whole build dies before it compiles
+      # anything. The runner image already ships platform-tools and
+      # build-tools; all this step still needs to do is point ANDROID_HOME at
+      # them, and Gradle fetches whatever else the project asks for.
       - name: Setup Android SDK
         uses: android-actions/setup-android@v3
+        with:
+          packages: ''
 
       # The Android project is generated fresh each run from capacitor.config.ts.
       - name: Generate the Android project
