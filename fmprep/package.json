@@ -30,7 +30,8 @@
     "depth": "tsx scripts/depth.ts",
     "stale": "tsx scripts/stale.ts",
     "failing": "tsx scripts/failing.ts",
-    "apply": "tsx scripts/apply.ts"
+    "apply": "tsx scripts/apply.ts",
+    "numfont": "node scripts/numfont.mjs"
   },
   "dependencies": {
     "@capacitor/android": "^8.5.1",

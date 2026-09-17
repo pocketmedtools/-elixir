@@ -139,11 +139,14 @@ mark.hl.hl-value{color:#0b5430}
 cite.cite{font:500 .72em/1.5 var(--font-mono);font-style:normal;
   color:var(--quiet);background:var(--sunk);border:1px solid var(--rule);border-radius:3px;
   padding:.05em .36em;margin-left:.35em;white-space:nowrap;vertical-align:.05em}
-b.num{font-family:var(--font-mono);font-weight:700;
+/* A measured quantity takes the face of whatever it sits in. Set in the
+   monospace face it read as a typewriter splice in a serif paragraph, the
+   digits too wide and off the baseline of the words around them; weight,
+   colour and tabular figures mark it well enough on their own. */
+b.num{font-family:inherit;font-weight:700;
   font-variant-numeric:tabular-nums;color:#0b5430;white-space:nowrap}
-/* Inside a marked run the quantity takes the run's colour rather than its own:
-   still monospaced, so a dose is found by its shape, but no longer breaking the
-   phrase it belongs to into two colours. */
+/* Inside a marked run the quantity takes the run's colour rather than its own,
+   so the phrase it belongs to is not broken into two colours. */
 mark.hl b.num{color:inherit}
 .freq{display:inline-flex;align-items:center;gap:7px;font:600 11.5px/1 var(--font-mono);
   color:var(--quiet);white-space:nowrap;text-transform:uppercase;letter-spacing:.07em}
@@ -256,13 +259,19 @@ td:first-child{font-weight:600}
 .arms{display:grid;grid-template-columns:repeat(auto-fit,minmax(160px,1fr));
   gap:12px;row-gap:24px;align-items:start}
 .arm{display:flex;flex-direction:column;gap:9px}
-.arm > .hd{font:600 14px/1.35 var(--font-ui);color:var(--acc);
-  background:var(--wash-2);border:1px solid var(--acc-rule);border-radius:var(--radius);
-  padding:9px 12px;text-align:center}
-.arm.warn > .hd{color:var(--danger);background:var(--danger-wash);border-color:var(--danger-rule)}
-.arm.good > .hd{color:var(--good);background:var(--good-wash);border-color:var(--good-rule)}
+/* The arm's heading. At 14px semibold in the subject colour, centred, above
+   15px items, it was smaller and lighter than the list it introduced and read
+   as a caption. It is now the largest thing in the arm and takes the near-black
+   of the prose; the subject colour marks it as structure from the left edge
+   rather than tinting the letters, which is what kept it looking washed. */
+.arm > .hd{font:700 17px/1.4 var(--font-ui);color:var(--ink);
+  background:var(--wash-2);border:1px solid var(--acc-rule);
+  border-left:3px solid var(--acc);border-radius:var(--radius);
+  padding:9px 13px}
+.arm.warn > .hd{background:var(--danger-wash);border-color:var(--danger-rule);border-left-color:var(--danger)}
+.arm.good > .hd{background:var(--good-wash);border-color:var(--good-rule);border-left-color:var(--good)}
 .arm ul{list-style:none;padding:0;margin:0;display:flex;flex-direction:column;gap:7px}
-.arm li{font-size:15px;line-height:1.55;padding:8px 11px;background:var(--sunk);
+.arm li{font-size:15.5px;line-height:1.6;padding:8px 11px;background:var(--sunk);
   border-radius:3px;border-left:2px solid var(--acc-rule)}
 .cycle{display:flex;flex-wrap:wrap;gap:11px;align-items:stretch}
 .cyc{flex:1 1 230px;min-width:0;position:relative;padding:12px 13px 12px 36px;
@@ -337,7 +346,11 @@ footer{border-top:1px solid var(--rule);padding:28px 0 40px;font-size:14px;
       <h1>FM Prep</h1>
       <p class="sub">DNB / MD Family Medicine &mdash; the whole revision library, in one page</p>
     </div>
-    <button class="btn dl" id="getapp" aria-expanded="false" aria-controls="apkbox"><span class="long">Download Android app</span><span class="short">Get app</span></button>
+    <!-- A real link, so a tap downloads the file wherever the page is allowed
+         to navigate. Clicking also opens the panel below, because inside an
+         embedded viewer that navigation can be blocked silently and the reader
+         needs the address to hand without hunting for it. -->
+    <a class="btn dl" id="getapp" href="https://raw.githubusercontent.com/pocketmedtools/-elixir/fmprep-apk/FM-Prep.apk" target="_blank" rel="noopener" aria-describedby="apkbox"><span class="long">Download Android app</span><span class="short">Get app</span></a>
   </div>
   <!-- Not a bare link: inside an embedded viewer the page cannot open a tab or
        start a download of its own, so the button reveals the address instead
@@ -750,11 +763,12 @@ function startQuiz(spec){
 // opening it must not lose the reader's place in the library.
 const apkBtn = document.getElementById("getapp");
 const apkBox = document.getElementById("apkbox");
+// The link is left to do its own work - no preventDefault - so the download
+// starts wherever navigation is permitted. The panel opens alongside it, since
+// a blocked navigation in an embedded frame reports nothing at all.
 apkBtn.addEventListener("click", () => {
-  const open = apkBox.hidden;
-  apkBox.hidden = !open;
-  apkBtn.setAttribute("aria-expanded", String(open));
-  if (open) apkBox.scrollIntoView({block:"nearest"});
+  apkBox.hidden = false;
+  apkBox.scrollIntoView({block:"nearest"});
 });
 document.getElementById("apkcopy").addEventListener("click", async ev => {
   const url = document.getElementById("apkurl").textContent;

@@ -122,12 +122,21 @@ export default function DiagramBlock({ diagram }: { diagram: Diagram }) {
             const tone = TONE[arm.tone ?? "neutral"];
             return (
               <div key={i} className="flex flex-col gap-2.5">
+                {/* The arm's heading. It used to be 15px semibold in the
+                    subject colour, centred, above 14.5px items - smaller and
+                    lighter than the list it introduced, so it read as a
+                    caption. It is now the largest thing in the arm, in the
+                    near-black the prose uses, and the subject colour marks it
+                    as structure from the left edge instead of tinting the
+                    letters. */}
                 <p
-                  className="rounded-md border px-3.5 py-2.5 text-center text-[15px] font-semibold leading-[1.45]"
+                  className="rounded-md border border-l-[3px] px-3.5 py-2.5 text-[17px] font-bold leading-[1.4]"
                   style={{
                     borderColor: tone.border,
+                    borderLeftColor:
+                      arm.tone && arm.tone !== "neutral" ? tone.border : "var(--acc)",
                     background: arm.tone && arm.tone !== "neutral" ? tone.bg : "var(--wash-2)",
-                    color: arm.tone && arm.tone !== "neutral" ? "inherit" : "var(--acc)",
+                    color: "var(--ink)",
                   }}
                 >
                   <RichText text={arm.label} />
@@ -136,7 +145,7 @@ export default function DiagramBlock({ diagram }: { diagram: Diagram }) {
                   {arm.steps.map((step, si) => (
                     <li
                       key={si}
-                      className="rounded bg-[var(--sunk)] px-3 py-2 text-[14.5px] leading-[1.55]"
+                      className="rounded bg-[var(--sunk)] px-3 py-2 text-[15.5px] leading-[1.6]"
                       style={{ borderLeft: "2px solid var(--acc-rule)" }}
                     >
                       <RichText text={step} />

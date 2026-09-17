@@ -234,18 +234,20 @@ mark.hl.hl-name { color: #48206b; }
    blood pressure and the words that qualify it are one colour and one fact. */
 mark.hl.hl-value { color: #0b5430; }
 
-/* A measured quantity. Monospaced and tabular as well as coloured, so a
-   dose is found by its shape before its colour is even registered. */
+/* A measured quantity. It was set in the monospace face, on the theory that a
+   dose is found by its shape; in a serif paragraph that reads as a typewriter
+   splice, with the digits too wide and sitting off the baseline of the words
+   around them. Weight, colour and tabular figures mark it perfectly well, so
+   it now takes the face of whatever it sits in. */
 b.num {
-  font-family: var(--font-mono);
+  font-family: inherit;
   font-weight: 700;
   font-variant-numeric: tabular-nums;
   color: #0b5430;
   white-space: nowrap;
 }
-/* Inside a marked run the quantity takes the run's colour rather than its own.
-   It is still monospaced and tabular, so a dose is found by its shape; what it
-   no longer does is break the phrase it belongs to into two colours. */
+/* Inside a marked run the quantity takes the run's colour rather than its own,
+   so the phrase it belongs to is not broken into two colours. */
 mark.hl b.num { color: inherit; }
 
 /* Flow-chart connectors, drawn with borders rather than SVG so they
