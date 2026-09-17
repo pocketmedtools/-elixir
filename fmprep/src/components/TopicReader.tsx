@@ -22,7 +22,21 @@ import TheoryAnswer from "./TheoryAnswer";
 import DiagramBlock from "./DiagramBlock";
 import { ensureDiagrams } from "../diagrams/index";
 import { colorVars } from "../lib/hues";
-import type { Diagram } from "../lib/types";
+import { placeVisuals } from "../lib/placeVisuals";
+
+/** A chart or a table, so both can be placed by the same rule. */
+type Visual =
+  | { heading: string; diagram: Diagram; table?: undefined }
+  | { heading: string; table: NoteTable; diagram?: undefined };
+
+function Visual({ visual }: { visual: Visual }) {
+  return visual.diagram ? (
+    <DiagramBlock diagram={visual.diagram} />
+  ) : (
+    <TableBlock table={visual.table} />
+  );
+}
+import type { Diagram, NoteTable } from "../lib/types";
 
 function slug(text: string, i: number): string {
   return `sec-${i}-${text.toLowerCase().replace(/[^a-z0-9]+/g, "-").slice(0, 32)}`;
@@ -46,6 +60,17 @@ export default function TopicReader({
   const [showAnswers, setShowAnswers] = useState<Record<string, boolean>>({});
   const [diagrams, setDiagrams] = useState<Diagram[]>([]);
   const topRef = useRef<HTMLDivElement | null>(null);
+
+  /* Charts and tables are placed beside the section they are about rather than
+     banked at the top and bottom of the topic. */
+  const placed = useMemo(() => {
+    const sections = found?.topic.sections ?? [];
+    const visuals: Visual[] = [
+      ...diagrams.map((d) => ({ heading: d.heading, diagram: d }) as Visual),
+      ...((found?.topic.tables ?? []).map((t) => ({ heading: t.heading, table: t }) as Visual)),
+    ];
+    return placeVisuals(sections, visuals);
+  }, [found, diagrams]);
 
   useEffect(() => {
     markTopicRead(topicId, Date.now());
@@ -163,7 +188,7 @@ export default function TopicReader({
       )}
 
       <article className="mt-5">
-        {diagrams.length > 0 && (
+        {placed.opener.length > 0 && (
           <section className="mt-8">
             <h3
               className="flex items-baseline gap-3 pb-2.5 text-[1.2em] font-bold leading-snug tracking-tight text-slate-900"
@@ -178,16 +203,25 @@ export default function TopicReader({
               </span>
               At a glance
             </h3>
-            {diagrams.map((d, i) => (
-              <DiagramBlock key={i} diagram={d} />
+            {placed.opener.map((v, i) => (
+              <Visual key={i} visual={v} />
             ))}
           </section>
         )}
         {topic.sections.map((section, i) => (
-          <SectionBlock key={i} section={section} id={slug(section.heading, i)} index={i + 1} />
-        ))}
-        {(topic.tables ?? []).map((table, i) => (
-          <TableBlock key={i} table={table} />
+          <div key={i}>
+            <SectionBlock section={section} id={slug(section.heading, i)} index={i + 1} />
+            {placed.after[i].length > 0 && (
+              <div
+                className="mt-6 flex flex-col gap-4 pt-5"
+                style={{ borderTop: "1px dashed var(--acc-rule)" }}
+              >
+                {placed.after[i].map((v, j) => (
+                  <Visual key={j} visual={v} />
+                ))}
+              </div>
+            )}
+          </div>
         ))}
         <Callout tone="danger" title="Red flags — refer or admit" items={topic.redFlags} />
         <Callout tone="pearl" title="Exam pearls" items={topic.pearls} />

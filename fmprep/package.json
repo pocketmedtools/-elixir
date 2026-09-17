@@ -31,7 +31,8 @@
     "stale": "tsx scripts/stale.ts",
     "failing": "tsx scripts/failing.ts",
     "apply": "tsx scripts/apply.ts",
-    "numfont": "node scripts/numfont.mjs"
+    "numfont": "node scripts/numfont.mjs",
+    "rhythm": "node scripts/rhythm.mjs"
   },
   "dependencies": {
     "@capacitor/android": "^8.5.1",

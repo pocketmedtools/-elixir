@@ -227,6 +227,12 @@ td:first-child{font-weight:600}
 .panel.gold .eyebrow{color:var(--think)}
 .panel.gold li::before{counter-increment:pearl;content:counter(pearl);position:absolute;left:0;top:0;
   font:600 12px/1.85 var(--font-mono);color:var(--think)}
+/* A chart or table sitting inside a prose section, rather than in a block of
+   its own: it needs separating from the points above it without being mistaken
+   for the next section. */
+.vis{margin-top:26px;padding-top:22px;border-top:1px dashed var(--acc-rule);
+  display:flex;flex-direction:column;gap:16px}
+.vis-h{font:700 16px/1.35 var(--font-ui);color:var(--ink);margin-bottom:10px}
 .dg{border:1px solid var(--acc-rule);border-radius:var(--radius);background:var(--raised);
   padding:19px 19px 21px;margin-bottom:16px;box-shadow:var(--shadow)}
 .dg > h4{font:600 17px/1.35 var(--font-ui);color:var(--acc);margin-bottom:4px}
@@ -547,12 +553,70 @@ function viewLibrary(){
       '</div></div>').join("");
 }
 
+/* Which prose section does a chart or a table belong beside?
+   Every visual used to be emitted in one block at the top and every table in
+   another at the bottom, which left the middle of a topic - well over a
+   hundred points in a big one - as unbroken prose. A reader got a picture, a
+   wall, then more pictures. Matching is by the words the headings share, which
+   is crude but right far more often than the alternative of not trying: an
+   unmatched visual still has to go somewhere, and going next to a section
+   about the same thing beats going nowhere near it. */
+const STOP = new Set(["the","and","for","with","from","that","this","what","when",
+  "how","why","its","are","was","not","but","all","any","out","who","get","use",
+  "into","than","then","them","they","been","have","has","had","his","her","she",
+  "him","you","your","our","can","may","will","would","should","could","about",
+  "after","before","during","each","more","most","other","some","such","only",
+  "own","same","very","just","also","first","second","third"]);
+const words = s => new Set(String(s).toLowerCase().match(/[a-z]{3,}/g)?.filter(w => !STOP.has(w)) ?? []);
+const overlap = (a, b) => { let n = 0; for (const w of a) if (b.has(w)) n++; return n; };
+
+/* Returns, per section index, the visuals to place after it; plus whatever
+   found no home, which opens the topic as it did before. */
+function placeVisuals(sections, visuals){
+  const secWords = sections.map(x => words(x.heading));
+  const after = sections.map(() => []);
+  const spare = [];
+  const CAP = 2;
+  for (const v of visuals) {
+    const vw = words(v.heading);
+    let best = -1, bestScore = 0;
+    for (let i = 0; i < secWords.length; i++) {
+      const sc = overlap(vw, secWords[i]);
+      if (sc > bestScore && after[i].length < CAP) { bestScore = sc; best = i; }
+    }
+    if (best >= 0) after[best].push(v); else spare.push(v);
+  }
+  /* Nothing matched anywhere is still better placed than piled up: give the
+     leftovers to the sections that have none, longest section first, because
+     that is where a reader most needs the break. */
+  const empty = sections.map((x, i) => i)
+    .filter(i => after[i].length === 0)
+    .sort((a, b) => sections[b].points.length - sections[a].points.length);
+  const opener = [];
+  for (const v of spare) {
+    const i = empty.shift();
+    if (i === undefined) opener.push(v); else after[i].push(v);
+  }
+  return { after, opener };
+}
+
 function viewTopic(){
   const e = TOPIC.get(state.topic), t = e.t, s = e.s;
   const dgs = DIA[t.id] || [];
   let n = 0;
   const sec = (h, inner) => '<div class="sec"><h3><span class="n">' +
     String(++n).padStart(2,"0") + '</span>' + esc(h) + '</h3>' + inner + '</div>';
+  const tableHtml = tb => '<div class="tbl"><table><thead><tr>' +
+    tb.columns.map(c => '<th>' + esc(c) + '</th>').join("") + '</tr></thead><tbody>' +
+    tb.rows.map(r => '<tr>' + r.map((c, i) =>
+      '<td data-col="' + esc(tb.columns[i] || "") + '">' + rich(c) + '</td>').join("") + '</tr>').join("") +
+    '</tbody></table></div>';
+  const visuals = [
+    ...dgs.map(d => ({ heading: d.heading, html: drawDiagram(d) })),
+    ...t.tables.map(tb => ({ heading: tb.heading,
+      html: '<h4 class="vis-h">' + esc(tb.heading) + '</h4>' + tableHtml(tb) })),
+  ];
+  const placed = placeVisuals(t.sections, visuals);
   return '<div class="reader reading subject-theme" style="' + varsOf(s.id) + '">' +
     '<button class="back" data-back="topic">&larr; ' + esc(s.title) + '</button>' +
     '<p class="eyebrow">' + esc(s.title) + '</p>' +
@@ -562,13 +626,11 @@ function viewTopic(){
       '<span class="chip acc">Paper ' + s.papers.join(", ") + '</span>' +
       (dgs.length ? '<span class="chip acc">' + dgs.length + ' diagrams</span>' : "") +
       '<span class="chip">' + t.mcqs.length + ' questions</span></div>' +
-    (dgs.length ? sec("At a glance", dgs.map(drawDiagram).join("")) : "") +
-    t.sections.map(x => sec(x.heading, '<ul class="pts">' + x.points.map(p => '<li>' + rich(p) + '</li>').join("") + '</ul>')).join("") +
-    t.tables.map(tb => sec(tb.heading, '<div class="tbl"><table><thead><tr>' +
-      tb.columns.map(c => '<th>' + esc(c) + '</th>').join("") + '</tr></thead><tbody>' +
-      tb.rows.map(r => '<tr>' + r.map((c, i) =>
-        '<td data-col="' + esc(tb.columns[i] || "") + '">' + rich(c) + '</td>').join("") + '</tr>').join("") +
-      '</tbody></table></div>')).join("") +
+    (placed.opener.length ? sec("At a glance", placed.opener.map(v => v.html).join("")) : "") +
+    t.sections.map((x, i) => sec(x.heading,
+      '<ul class="pts">' + x.points.map(p => '<li>' + rich(p) + '</li>').join("") + '</ul>' +
+      (placed.after[i].length
+        ? '<div class="vis">' + placed.after[i].map(v => v.html).join("") + '</div>' : ""))).join("") +
     (t.redFlags.length ? sec("Refer or admit today",
       '<div class="panel bad"><div class="ph"><span class="eyebrow">Red flags</span></div><ul>' +
       t.redFlags.map(f => '<li>' + rich(f) + '</li>').join("") + '</ul></div>') : "") +
