@@ -6,7 +6,7 @@ topics.push({
   id: "preventive-prevention-screening",
   title: "Levels of prevention and the principles of screening",
   oneLiner:
-    "Prevention is classified by the point in the natural history of disease at which it acts - primordial, primary, secondary and tertiary - and screening is secondary prevention that is justified only when the disease, the test and the available treatment together satisfy the Wilson and Jungner criteria.",
+    "Prevention is classified by the point in the natural history of disease at which it acts - **primordial, primary, secondary and tertiary** - and screening is **secondary prevention** that is justified only when the disease, the test and the available treatment together satisfy the **Wilson and Jungner criteria**.",
   frequency: "core",
   keywords: [
     "levels of prevention",
@@ -512,7 +512,7 @@ topics.push({
   id: "preventive-national-health-programmes",
   title: "National health programmes the family physician works inside",
   oneLiner:
-    "The national health programmes deliver almost all preventive care in India through a three-tier system now anchored on the Ayushman Arogya Mandir, and the family physician is the person who registers, screens, treats, refers, records and reports within NP-NCD, NTEP, NCVBDC, NLEP, RCH, RBSK, NMHP and Ayushman Bharat PM-JAY.",
+    "The national health programmes deliver almost all preventive care in India through **a three-tier system** now anchored on the **Ayushman Arogya Mandir**, and the family physician is the person who **registers, screens, treats, refers**, records and reports within NP-NCD, NTEP, NCVBDC, NLEP, RCH, RBSK, NMHP and Ayushman Bharat PM-JAY.",
   frequency: "core",
   keywords: [
     "NP-NCD",
@@ -1124,7 +1124,7 @@ topics.push({
   id: "preventive-immunisation",
   title: "Immunisation: the UIP schedule, cold chain, AEFI and adult vaccines",
   oneLiner:
-    "The Universal Immunisation Programme provides free vaccines against 12 diseases on a fixed National Immunisation Schedule, and the family physician must know the schedule by heart, keep the cold chain between +2 and +8 degrees Celsius, recognise and report adverse events following immunisation, and add adult, travel and catch-up vaccines that the programme does not supply.",
+    "The Universal Immunisation Programme provides free vaccines against **12 diseases** on a fixed **National Immunisation Schedule**, and the family physician must know the schedule by heart, keep the cold chain between **+2 and +8 degrees Celsius**, recognise and report adverse events following immunisation, and add adult, travel and catch-up vaccines that the programme does not supply.",
   frequency: "core",
   keywords: [
     "Universal Immunisation Programme",
@@ -1675,7 +1675,7 @@ topics.push({
   id: "preventive-biostatistics",
   title: "Biostatistics for the paper: test performance, risk measures and significance",
   oneLiner:
-    "The examinable core of biostatistics is a 2x2 table - from which sensitivity, specificity, predictive values and likelihood ratios are read off - together with the risk measures (relative risk, absolute risk reduction, number needed to treat, odds ratio) and the interpretation of p values, confidence intervals and the choice of statistical test.",
+    "The examinable core of biostatistics is **a 2x2 table** - from which sensitivity, specificity, predictive values and likelihood ratios are read off - together with the risk measures (relative risk, absolute risk reduction, **number needed to treat**, odds ratio) and the interpretation of **p values, confidence intervals** and the choice of statistical test.",
   frequency: "core",
   keywords: [
     "sensitivity",
@@ -2221,7 +2221,7 @@ topics.push({
   id: "preventive-study-designs",
   title: "Epidemiological study designs and measures of disease frequency",
   oneLiner:
-    "Descriptive studies measure the burden of disease in terms of time, place and person and generate hypotheses; analytical studies (case-control and cohort) test them by measuring association as odds ratio or relative risk; and experimental studies (randomised controlled, field and community trials) prove causation by allocating the exposure under the investigator's control.",
+    "Descriptive studies measure the burden of disease in terms of **time, place and person** and generate hypotheses; analytical studies (**case-control and cohort**) test them by measuring association as odds ratio or relative risk; and experimental studies (randomised controlled, field and community trials) **prove causation** by allocating the exposure under the investigator's control.",
   frequency: "core",
   keywords: [
     "incidence",
@@ -2726,7 +2726,7 @@ topics.push({
   id: "preventive-outbreak-investigation",
   title: "Outbreak investigation step by step and the IDSP",
   oneLiner:
-    "An epidemic is the occurrence of disease clearly in excess of what is expected for that place and time, and its investigation follows a fixed sequence - verify the diagnosis, confirm the epidemic, define and count cases, describe them by time, place and person, form and test a hypothesis, look at the environment and write the report - while control measures run in parallel from the first day and every step is reported through the Integrated Disease Surveillance Programme.",
+    "An epidemic is the occurrence of disease clearly **in excess of what is expected** for that place and time, and its investigation follows a fixed sequence - **verify the diagnosis, confirm the epidemic**, define and count cases, describe them by time, place and person, form and test a hypothesis, look at the environment and write the report - while control measures run in parallel from the first day and every step is reported through the **Integrated Disease Surveillance Programme**.",
   frequency: "common",
   keywords: [
     "epidemic",
@@ -3234,7 +3234,7 @@ topics.push({
   id: "preventive-nutrition-programmes",
   title: "Nutritional assessment, deficiency diseases and the national nutrition programmes",
   oneLiner:
-    "India carries a double burden of undernutrition - stunting in a third of children under five and anaemia in more than half of women - alongside rising overweight, and the family physician's tools are anthropometry against the WHO 2006 standards, the ICMR-NIN 2020 requirements, and the programmes that deliver food, iron, vitamin A, deworming and iodised salt: Poshan 2.0 through the anganwadi, PM POSHAN in schools, Anaemia Mukt Bharat and NIDDCP.",
+    "India carries **a double burden of undernutrition** - stunting in **a third of children under five** and anaemia in more than half of women - alongside rising overweight, and the family physician's tools are anthropometry against the WHO 2006 standards, the ICMR-NIN 2020 requirements, and the programmes that deliver food, iron, vitamin A, deworming and iodised salt: **Poshan 2.0 through the anganwadi**, PM POSHAN in schools, Anaemia Mukt Bharat and NIDDCP.",
   frequency: "common",
   keywords: [
     "malnutrition",
@@ -3799,7 +3799,7 @@ topics.push({
   id: "preventive-water-sanitation-vector",
   title: "Water, sanitation, waste and vector control",
   oneLiner:
-    "Safe water is water free of pathogens and harmful chemicals - achieved on a large scale by storage, filtration and chlorination to a free residual of 0.5 mg/L after one hour, and in the home by boiling, chlorine tablets or filters - and the same environmental logic runs through sanitary latrines, biomedical waste segregation and the integrated control of the mosquitoes, flies and sandflies that carry malaria, dengue, JE, filaria and kala-azar.",
+    "Safe water is water **free of pathogens and harmful chemicals** - achieved on a large scale by storage, filtration and chlorination to **a free residual of 0.5 mg/L** after one hour, and in the home by **boiling, chlorine tablets or filters** - and the same environmental logic runs through sanitary latrines, biomedical waste segregation and the integrated control of the mosquitoes, flies and sandflies that carry malaria, dengue, JE, filaria and kala-azar.",
   frequency: "common",
   keywords: [
     "safe water",
@@ -4319,7 +4319,7 @@ topics.push({
   id: "preventive-disaster-management",
   title: "Disaster management and the health response",
   oneLiner:
-    "A disaster is a sudden, calamitous event - natural or man-made - that causes widespread damage, loss of life and human suffering on a scale that overwhelms the coping capacity of the affected community and demands outside assistance; its management is a continuous cycle of mitigation, preparedness, response and recovery, and in India it is governed by the Disaster Management Act, 2005 through NDMA, the SDMAs and the DDMAs.",
+    "A disaster is a sudden, calamitous event - natural or man-made - that causes widespread damage, loss of life and human suffering on a scale that **overwhelms the coping capacity** of the affected community and demands outside assistance; its management is a continuous cycle of **mitigation, preparedness, response and recovery**, and in India it is governed by the **Disaster Management Act, 2005** through NDMA, the SDMAs and the DDMAs.",
   frequency: "common",
   keywords: [
     "disaster",
@@ -5380,7 +5380,7 @@ topics.push({
   id: "preventive-health-planning-management",
   title: "Health planning and management: the planning cycle, SWOT and network analysis",
   oneLiner:
-    "Health planning is the orderly process of defining community health problems, identifying unmet needs, surveying the resources available to meet them, establishing priority goals that are realistic and feasible, and projecting administrative action to accomplish the purpose of the proposed programme, while management is the process of getting that plan executed through and with people - the two joined in a repeating planning cycle of situation analysis, objectives, resource assessment, priorities, plan write-up, programming and implementation, monitoring and evaluation, supported by quantitative techniques such as cost-benefit and cost-effectiveness analysis, system analysis, network analysis (PERT and CPM) and SWOT analysis.",
+    "Health planning is the orderly process of **defining community health problems**, identifying unmet needs, surveying the resources available to meet them, establishing priority goals that are realistic and feasible, and projecting administrative action to accomplish the purpose of the proposed programme, while management is the process of getting that plan executed **through and with people** - the two joined in a repeating planning cycle of situation analysis, objectives, resource assessment, priorities, plan write-up, programming and implementation, monitoring and evaluation, supported by quantitative techniques such as **cost-benefit and cost-effectiveness analysis**, system analysis, network analysis (PERT and CPM) and SWOT analysis.",
   frequency: "common",
   keywords: [
     "health planning",
@@ -6318,7 +6318,7 @@ topics.push({
   id: "preventive-iec-social-marketing",
   title: "Health communication: IEC, social marketing and social mobilisation",
   oneLiner:
-    "Health communication is the planned use of information, education and persuasion to change what people know, feel and do about health, and it works through three overlapping strategies - IEC and its behaviour-change successors BCC and SBCC, which inform and persuade the individual; social marketing, which applies commercial marketing concepts and the four Ps to secure a voluntary behaviour change for social good; and social mobilisation, which brings together all feasible and practical intersectoral partners and allies to raise awareness of and demand for a development objective, assist in the delivery of resources and services, and strengthen community participation for sustainability.",
+    "Health communication is the planned use of **information, education and persuasion** to change what people know, feel and do about health, and it works through three overlapping strategies - IEC and its behaviour-change successors BCC and SBCC, which inform and persuade the individual; social marketing, which applies commercial marketing concepts and **the four Ps** to secure a voluntary behaviour change for social good; and **social mobilisation**, which brings together all feasible and practical intersectoral partners and allies to raise awareness of and demand for a development objective, assist in the delivery of resources and services, and strengthen community participation for sustainability.",
   frequency: "common",
   keywords: [
     "IEC",
@@ -7575,7 +7575,7 @@ topics.push({
   id: "preventive-occupational-health",
   title: "Occupational health, occupational disease and chemical carcinogens",
   oneLiner:
-    "Occupational health, as defined by the Joint ILO/WHO Committee in 1950 and revised in 1995, should aim at the promotion and maintenance of the highest degree of physical, mental and social well-being of workers in all occupations, the prevention among workers of departures from health caused by their working conditions, the protection of workers from risks arising from factors adverse to health, the placing and maintenance of the worker in an occupational environment adapted to his physiological and psychological capabilities - in a word, the adaptation of work to man and of each man to his job.",
+    "Occupational health, as defined by the **Joint ILO/WHO Committee in 1950** and revised in 1995, should aim at the promotion and maintenance of the highest degree of **physical, mental and social well-being** of workers in all occupations, the prevention among workers of departures from health caused by their working conditions, the protection of workers from risks arising from factors adverse to health, the placing and maintenance of the worker in an occupational environment adapted to his physiological and psychological capabilities - in a word, **the adaptation of work to man** and of each man to his job.",
   frequency: "less-common",
   keywords: [
     "occupational health",
@@ -8549,7 +8549,7 @@ topics.push({
   id: "preventive-climate-change-health",
   title: "Climate change and health",
   oneLiner:
-    "Climate change is a long-term shift in temperature and weather patterns attributable directly or indirectly to human activity that alters the composition of the global atmosphere, and it damages health not mainly by creating new diseases but by acting as a risk multiplier on the environmental determinants of health - air, water, food, shelter and vector ecology - and on the social determinants - income, occupation, housing, gender and access to care - so that the burden falls hardest on the populations that contributed least to it.",
+    "Climate change is **a long-term shift in temperature** and weather patterns attributable directly or indirectly to human activity that alters the composition of the global atmosphere, and it damages health not mainly by creating new diseases but by acting as **a risk multiplier** on the environmental determinants of health - air, water, food, shelter and vector ecology - and on the social determinants - income, occupation, housing, gender and access to care - so that the burden falls hardest on the populations that **contributed least to it**.",
   frequency: "uncommon",
   keywords: [
     "climate change",
@@ -9401,7 +9401,7 @@ topics.push({
   id: "preventive-health-information-gis",
   title: "Health information systems and geographic information systems in public health",
   oneLiner:
-    "A geographic information system (GIS) is a computer-based system for the capture, storage, retrieval, management, analysis and display of spatially referenced data - data tied to a location on the earth's surface - which lets health information be held as layers over a map so that disease, population, services and environment can be seen and analysed together.",
+    "**A geographic information system (GIS)** is a computer-based system for the capture, storage, retrieval, management, analysis and display of **spatially referenced data** - data tied to a location on the earth's surface - which lets health information be **held as layers over a map** so that disease, population, services and environment can be seen and analysed together.",
   frequency: "uncommon",
   keywords: [
     "geographic information system",
@@ -9974,7 +9974,7 @@ topics.push({
   id: "preventive-sex-ratio-pcpndt",
   title: "Sex ratio, the declining child sex ratio and the PCPNDT Act",
   oneLiner:
-    "Sex ratio in India is expressed as the number of females per 1000 males, and the child sex ratio is the number of girls per 1000 boys in the 0-6 year age group - a figure that fell to 918 in the 2011 census, the lowest since independence, driven by son preference acting through cheap ultrasound and sex-selective abortion at a time of falling fertility, and countered chiefly by the Pre-conception and Pre-natal Diagnostic Techniques (Prohibition of Sex Selection) Act, 1994 as amended in 2003, which prohibits sex selection and the communication of foetal sex but does not restrict lawful abortion under the MTP Act.",
+    "Sex ratio in India is expressed as the number of **females per 1000 males**, and the child sex ratio is the number of girls per 1000 boys in the 0-6 year age group - a figure that **fell to 918 in the 2011 census**, the lowest since independence, driven by son preference acting through cheap ultrasound and sex-selective abortion at a time of falling fertility, and countered chiefly by the Pre-conception and Pre-natal Diagnostic Techniques (Prohibition of Sex Selection) Act, 1994 as amended in 2003, which **prohibits sex selection** and the communication of foetal sex but does not restrict lawful abortion under the MTP Act.",
   frequency: "less-common",
   keywords: [
     "sex ratio",
@@ -10713,7 +10713,7 @@ topics.push({
   id: "preventive-child-women-legislation",
   title: "Legislation and policy for children and women",
   oneLiner:
-    "India protects children and women through a layer of constitutional guarantees (Articles 15(3), 21A, 23, 24, 39 and 45), a body of special statutes - the Juvenile Justice (Care and Protection of Children) Act, POCSO, the child labour, child marriage and education laws for children, and the domestic violence, workplace sexual harassment, dowry, maternity benefit and medical termination of pregnancy laws for women - and an overarching policy framework, the National Policy for the Empowerment of Women 2001, delivered on the ground through ICDS, POSHAN, Mission Vatsalya and Mission Shakti; several of these laws place a legally enforceable duty on the treating doctor.",
+    "India protects children and women through a layer of **constitutional guarantees** (Articles 15(3), 21A, 23, 24, 39 and 45), a body of special statutes - the Juvenile Justice (Care and Protection of Children) Act, POCSO, the child labour, child marriage and education laws for children, and the domestic violence, workplace sexual harassment, dowry, maternity benefit and medical termination of pregnancy laws for women - and an overarching policy framework, the National Policy for the Empowerment of Women 2001, delivered on the ground through **ICDS, POSHAN, Mission Vatsalya and Mission Shakti**; several of these laws place **a legally enforceable duty** on the treating doctor.",
   frequency: "less-common",
   keywords: [
     "Juvenile Justice Act",

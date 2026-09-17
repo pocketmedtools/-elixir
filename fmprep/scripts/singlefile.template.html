@@ -21,12 +21,13 @@
   --paper:#fdfbf7; --raised:#ffffff; --sunk:#f6f4ef;
   --ink:#1c1b19; --ink-soft:#3a3733; --quiet:#5c574f;
   --rule:#e6e2d9; --rule-soft:#f0ece3;
-  /* Body text is near-black, not blue. The blue in the brief was an example of
-     a palette, not an instruction to tint every line: a page where the prose
-     itself is coloured reads as decoration, and the colour stops meaning
-     anything. Colour is spent on two jobs only - a dark green heading and a
-     maroon keyword - and everything else is ink. */
-  --head:#1a5336; --list:#1c1b19; --key:#800000;
+  /* Three inks, three jobs, in descending weight: a dark green heading, a
+     maroon keyword, and a dark blue for the small labels that name a thing
+     without being the thing - a table's column, the kind of chart, the subject
+     a card belongs to. Blue earns a place in the mix by carrying the least, so
+     a page still reads green-then-maroon and the blue only answers "what am I
+     looking at". Running text stays near-black. */
+  --head:#1a5336; --list:#1c1b19; --key:#800000; --label:#0f3460;
   /* Pastel grounds for chart nodes and table rows: present enough to separate
      a box from the page, faint enough not to fight the letters on it. */
   --pale:#f3f4f6; --cream:#fff8e7; --mint:#eef6f1; --blush:#fdf0f0;
@@ -58,7 +59,15 @@
 *{box-sizing:border-box}
 /* The page body never scrolls sideways: only a table or a code block may be
    wider than a phone, each inside its own scrolling box. */
+/* `overflow-x: hidden` here stops the page scrolling sideways, and it also
+     makes every `position: sticky` descendant stop sticking, because a hidden
+     overflow turns this into a scroll container. That is what left a reader
+     sixteen thousand pixels into a topic with no back control and no mode bar
+     anywhere on screen. `clip` does the same job without creating the scroll
+     container, so the sticky bars survive; `hidden` stays as the fallback for
+     anything too old to know `clip`. */
 html,body{overflow-x:hidden;max-width:100%}
+@supports (overflow-x:clip){html,body{overflow-x:clip}}
 body{background:var(--paper);color:var(--ink);overflow-wrap:break-word;
   font:400 17.5px/1.7 var(--font-read);
   -webkit-font-smoothing:antialiased}
@@ -116,10 +125,20 @@ main{padding:30px 0 88px}
 /* This was 11.5px monospace, uppercased, with .13em of tracking - the
    "T R U E  W E A K N E S S" look. Title Case at standard tracking reads as a
    label without shouting. */
-.eyebrow{font:700 12.5px/1.3 var(--font-ui);letter-spacing:normal;color:var(--head)}
+.eyebrow{font:700 12.5px/1.3 var(--font-ui);letter-spacing:normal;color:var(--label)}
 .eyebrow.mute{color:var(--quiet)}
-.back{display:inline-flex;align-items:center;gap:7px;font-size:13.5px;font-weight:600;
-  color:var(--quiet);padding:7px 0;margin-bottom:16px}
+/* A topic runs to thirty thousand pixels, so the way back cannot live only at
+   the top of it. This rides under the mode bar - 49px tall on a phone, 53 on a
+   tablet - and stays there the whole way down, with the page's own ground
+   behind it so the prose does not show through. */
+.back{position:sticky;top:49px;z-index:25;display:flex;align-items:center;gap:7px;
+  /* A button shrink-wraps to its text however it is displayed, so the bar has
+     to be told to fill the column or it floats as a stub over the prose. */
+  width:100%;justify-content:flex-start;
+  font-size:13.5px;font-weight:600;color:var(--label);
+  background:var(--raised);border:1px solid var(--rule);border-radius:99px;
+  margin:0 0 18px;padding:10px 16px;box-shadow:var(--shadow)}
+@media (min-width:700px){.back{top:53px}}
 .back:hover{color:var(--acc)}
 .chip{display:inline-block;font:600 13px/1.5 var(--font-ui);
   padding:3px 9px;border:1px solid var(--rule);border-radius:99px;color:var(--ink-soft);white-space:nowrap}
@@ -193,8 +212,15 @@ mark.hl b.num{color:inherit}
 .row .line{font-size:14.5px;color:var(--quiet);margin-top:6px;line-height:1.55}
 .row .foot{margin-top:13px;display:flex;gap:8px;flex-wrap:wrap;align-items:center}
 .reader h2{font-size:33px;letter-spacing:-.02em;margin-bottom:12px}
-.oneliner{font-size:18.5px;line-height:1.6;color:var(--ink-soft);
-  font-family:var(--font-ui);margin:0 0 22px;border-left:3px solid var(--acc);padding-left:17px}
+/* The topic's opening statement. It was 18.5px of soft grey with nothing
+   marked in it - four hundred characters of even tone, which is the one place
+   a reader most needs to be told what matters. Near-black, a little heavier,
+   and on a mint ground so it reads as the lead rather than as the first of the
+   points. The marked words inside it come out maroon like everywhere else. */
+.oneliner{font-size:18.5px;line-height:1.62;color:var(--ink);font-weight:500;
+  font-family:var(--font-ui);margin:0 0 24px;border-left:4px solid var(--head);
+  background:var(--mint);border-radius:0 var(--radius) var(--radius) 0;
+  padding:15px 17px}
 .sec{margin-top:40px}
 .sec > h3{font-size:22px;display:flex;align-items:baseline;gap:12px;margin-bottom:18px;
   padding-bottom:10px;border-bottom:2px solid var(--acc-rule)}
@@ -221,14 +247,14 @@ mark.hl b.num{color:inherit}
   .tbl td+td{border-top:1px dashed var(--rule)}
   .tbl td[data-col]::before{content:attr(data-col);display:block;
     font:700 12px/1.5 var(--font-ui);letter-spacing:normal;
-    color:var(--head);margin-bottom:4px}
+    color:var(--label);margin-bottom:4px}
   .tbl td:first-child::before{display:none}
   .tbl td:first-child{font-weight:600;font-size:1.03em;padding-bottom:7px}
 }
 table{border-collapse:collapse;width:100%;font-size:15px;min-width:520px}
 th,td{text-align:left;padding:12px 14px;border-bottom:1px solid var(--rule-soft);vertical-align:top}
 th{font:700 13px/1.4 var(--font-ui);letter-spacing:normal;
-  color:var(--head);background:var(--mint);border-bottom:1px solid var(--acc-rule)}
+  color:var(--label);background:var(--mint);border-bottom:1px solid var(--acc-rule)}
 tbody tr:nth-child(even){background:var(--pale)}
 tr:last-child td{border-bottom:none}
 td:first-child{font-weight:600}

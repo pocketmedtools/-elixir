@@ -6,7 +6,7 @@ topics.push({
   id: "obstetrics-antenatal-care",
   title: "Antenatal care under RCH and PMSMA",
   oneLiner:
-    "Antenatal care is the planned, protocolised supervision of a pregnant woman from registration in the first trimester to delivery, delivered in India through the RCH programme as a minimum of four antenatal visits with the Mother and Child Protection Card, free investigations, IFA and calcium supplementation, Td immunisation and a specialist check on the 9th of every month under Pradhan Mantri Surakshit Matritva Abhiyan.",
+    "Antenatal care is the planned, protocolised supervision of a pregnant woman from registration in the first trimester to delivery, delivered in India through the RCH programme as **a minimum of four antenatal visits** with the **Mother and Child Protection Card**, free investigations, IFA and calcium supplementation, Td immunisation and a specialist check on the 9th of every month under **Pradhan Mantri Surakshit Matritva Abhiyan**.",
   frequency: "core",
   keywords: [
     "ANC",
@@ -594,7 +594,7 @@ topics.push({
   id: "obstetrics-anaemia-pregnancy",
   title: "Anaemia in pregnancy and Anemia Mukt Bharat",
   oneLiner:
-    "Anaemia in pregnancy is a haemoglobin below 11 g/dL at any gestation, graded by the Government of India as mild 10-10.9, moderate 7-9.9, severe 4-6.9 and very severe below 4 g/dL, and managed under Anemia Mukt Bharat with oral iron-folic acid, intravenous iron for moderate anaemia beyond the first trimester or oral-iron failure, and transfusion reserved for severe anaemia near term or with decompensation.",
+    "Anaemia in pregnancy is a **haemoglobin below 11 g/dL** at any gestation, graded by the Government of India as mild 10-10.9, moderate 7-9.9, severe 4-6.9 and very severe below 4 g/dL, and managed under Anemia Mukt Bharat with oral iron-folic acid, **intravenous iron for moderate anaemia** beyond the first trimester or oral-iron failure, and **transfusion reserved for severe anaemia** near term or with decompensation.",
   frequency: "core",
   keywords: [
     "anaemia in pregnancy",
@@ -1140,7 +1140,7 @@ topics.push({
   id: "obstetrics-hypertensive-disorders",
   title: "Hypertensive disorders of pregnancy, pre-eclampsia and eclampsia",
   oneLiner:
-    "Hypertensive disorders of pregnancy are hypertension of 140/90 mmHg or more on two occasions four hours apart after 20 weeks, classified as gestational hypertension, pre-eclampsia with or without severe features, eclampsia, chronic hypertension and chronic hypertension with superimposed pre-eclampsia; magnesium sulphate prevents and treats eclamptic convulsions and delivery is the only cure.",
+    "Hypertensive disorders of pregnancy are hypertension of **140/90 mmHg or more** on two occasions four hours apart **after 20 weeks**, classified as gestational hypertension, pre-eclampsia with or without severe features, eclampsia, chronic hypertension and chronic hypertension with superimposed pre-eclampsia; **magnesium sulphate** prevents and treats eclamptic convulsions and delivery is the only cure.",
   frequency: "core",
   keywords: [
     "pre-eclampsia",
@@ -1692,7 +1692,7 @@ topics.push({
   id: "obstetrics-gdm",
   title: "Gestational diabetes: the DIPSI and FOGSI approach",
   oneLiner:
-    "Gestational diabetes mellitus is carbohydrate intolerance first recognised in pregnancy, screened in India by the DIPSI single-step non-fasting 75 g oral glucose test with a 2-hour plasma glucose of 140 mg/dL or more as the diagnostic threshold, treated first with medical nutrition therapy and then with metformin or insulin, targeting fasting under 95 mg/dL and 2-hour postprandial under 120 mg/dL.",
+    "Gestational diabetes mellitus is **carbohydrate intolerance first recognised in pregnancy**, screened in India by the DIPSI single-step non-fasting 75 g oral glucose test with a 2-hour plasma glucose of **140 mg/dL or more** as the diagnostic threshold, treated first with medical nutrition therapy and then with **metformin or insulin**, targeting fasting under 95 mg/dL and 2-hour postprandial under 120 mg/dL.",
   frequency: "core",
   keywords: [
     "GDM",
@@ -2212,7 +2212,7 @@ topics.push({
   id: "obstetrics-labour-partograph",
   title: "Recognition of labour, the partograph and when to refer",
   oneLiner:
-    "Labour is the onset of regular, painful uterine contractions producing progressive cervical effacement and dilatation, and the partograph is the single-page graphic record of the active first stage on which cervical dilatation plotted against time, with its alert and action lines, tells a medical officer at a primary health centre whether progress is normal, whether the woman must be referred, and how much time there is to move her.",
+    "Labour is the onset of regular, painful uterine contractions producing **progressive cervical effacement and dilatation**, and the partograph is the single-page graphic record of the active first stage on which cervical dilatation plotted against time, with **its alert and action lines**, tells a medical officer at a primary health centre whether progress is normal, **whether the woman must be referred**, and how much time there is to move her.",
   frequency: "core",
   keywords: [
     "partograph",
@@ -2667,7 +2667,7 @@ topics.push({
   id: "obstetrics-pph",
   title: "Postpartum haemorrhage: first response, uterotonics and transfer",
   oneLiner:
-    "Postpartum haemorrhage is blood loss of 500 mL or more after vaginal birth or 1000 mL or more after caesarean section within 24 hours of delivery, or any loss that makes the woman haemodynamically unstable, and it is the leading direct cause of maternal death in India; its first response is simultaneous resuscitation, uterine massage, oxytocin infusion, tranexamic acid and a search for the cause using the four Ts, with transfer arranged the moment bleeding does not stop.",
+    "Postpartum haemorrhage is blood loss of **500 mL or more** after vaginal birth or 1000 mL or more after caesarean section within 24 hours of delivery, or any loss that makes the woman haemodynamically unstable, and it is the **leading direct cause of maternal death** in India; its first response is simultaneous resuscitation, uterine massage, oxytocin infusion, tranexamic acid and a search for the cause using **the four Ts**, with transfer arranged the moment bleeding does not stop.",
   frequency: "core",
   keywords: [
     "PPH",
@@ -3092,7 +3092,7 @@ topics.push({
   id: "obstetrics-early-pregnancy-bleeding",
   title: "Early pregnancy bleeding, ectopic pregnancy and abortion care under the MTP Act 2021",
   oneLiner:
-    "Bleeding before 20 weeks is a miscarriage, an ectopic pregnancy or a molar pregnancy until proven otherwise; the family physician's task is to confirm the pregnancy with a urine test, recognise shock, avoid a rough pelvic examination, arrange a transvaginal ultrasound with serum beta-hCG, give anti-D to the Rh-negative woman, and know both the drug regimens for miscarriage and medical abortion and the legal framework of the Medical Termination of Pregnancy (Amendment) Act 2021.",
+    "**Bleeding before 20 weeks** is a miscarriage, an ectopic pregnancy or a molar pregnancy until proven otherwise; the family physician's task is to confirm the pregnancy with a urine test, recognise shock, **avoid a rough pelvic examination**, arrange a transvaginal ultrasound with serum beta-hCG, give **anti-D to the Rh-negative woman**, and know both the drug regimens for miscarriage and medical abortion and the legal framework of the Medical Termination of Pregnancy (Amendment) Act 2021.",
   frequency: "common",
   keywords: [
     "miscarriage",
@@ -3553,7 +3553,7 @@ topics.push({
   id: "obstetrics-postnatal-care",
   title: "Postnatal care, breastfeeding and postpartum contraception",
   oneLiner:
-    "The puerperium is the six weeks after delivery in which the reproductive organs return to the non-pregnant state, and postnatal care is the scheduled supervision of mother and newborn in that period - a 48-hour facility stay, home-based newborn care visits by the ASHA on days 3, 7, 14, 21, 28 and 42, examination for bleeding, sepsis, hypertension, thromboembolism and depression, support for exclusive breastfeeding, and a contraceptive method chosen before the six-week check.",
+    "The puerperium is **the six weeks after delivery** in which the reproductive organs return to the non-pregnant state, and postnatal care is the scheduled supervision of mother and newborn in that period - **a 48-hour facility stay**, home-based newborn care visits by the ASHA on **days 3, 7, 14, 21, 28 and 42**, examination for bleeding, sepsis, hypertension, thromboembolism and depression, support for exclusive breastfeeding, and a contraceptive method chosen before the six-week check.",
   frequency: "common",
   keywords: [
     "puerperium",

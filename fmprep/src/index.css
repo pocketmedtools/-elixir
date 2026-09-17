@@ -123,14 +123,16 @@
   --quiet: #5c574f;
   --rule: #e6e2d9;
   --sunk: #f6f4ef;
-  /* Body text is near-black, not blue. The blue in the brief was an example of
-     a palette, not an instruction to tint every line: a page where the prose
-     itself is coloured reads as decoration, and the colour stops meaning
-     anything. Colour is spent on two jobs only - a dark green heading and a
-     maroon keyword - and everything else is ink. */
+  /* Three inks, three jobs, in descending weight: a dark green heading, a
+     maroon keyword, and a dark blue for the small labels that name a thing
+     without being the thing - a table's column, the kind of chart, the subject
+     a card belongs to. Blue earns a place in the mix by carrying the least, so
+     a page still reads green-then-maroon and the blue only answers "what am I
+     looking at". Running text stays near-black. */
   --head: #1a5336;
   --list: #1c1b19;
   --key: #800000;
+  --label: #0f3460;
   /* Pastel grounds for chart nodes and table rows: present enough to separate
      a box from the page, faint enough not to fight the letters on it. */
   --pale: #f3f4f6;
@@ -181,7 +183,17 @@ body {
   overflow-wrap: break-word;
 }
 
+/* `overflow-x: hidden` here stops the page scrolling sideways, and it also
+   makes every `position: sticky` descendant stop sticking, because a hidden
+   overflow turns this into a scroll container. That is what left a reader
+   sixteen thousand pixels into a topic with no back control and no mode bar
+   anywhere on screen. `clip` does the same job without creating the scroll
+   container, so the sticky bars survive; `hidden` stays as the fallback for
+   anything too old to know `clip`. */
 html, body { overflow-x: hidden; max-width: 100%; }
+@supports (overflow-x: clip) {
+  html, body { overflow-x: clip; }
+}
 #root { min-height: 100vh; }
 .app-header { padding-top: env(safe-area-inset-top); }
 
@@ -328,7 +340,7 @@ cite.cite {
     font-size: 12px;
     font-weight: 700;
     letter-spacing: normal;
-    color: var(--head);
+    color: var(--label);
     margin-bottom: 4px;
   }
   /* The first cell names the row, so it reads as the card's heading and
@@ -365,5 +377,12 @@ cite.cite {
 /* Pastel grounds, so a chart node and a table row separate from the page
    without a wash of subject colour behind the letters. */
 .study-stage table tbody tr:nth-child(even) { background: var(--pale); }
-.study-stage th { color: var(--head); background: var(--mint);
+.study-stage th { color: var(--label); background: var(--mint);
   font-family: var(--font-ui); letter-spacing: normal; text-transform: none; }
+
+/* The frequency scale: one colour, four steps of quiet. */
+.freq-chip { border-radius: 9999px; padding: 4px 10px; font-size: 13px; font-weight: 600; }
+.freq-core { background: var(--head); color: #fff; }
+.freq-common { background: var(--mint); color: var(--head); }
+.freq-less { background: var(--sunk); color: var(--ink-soft, var(--muted)); }
+.freq-uncommon { background: var(--sunk); color: var(--quiet); }

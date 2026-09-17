@@ -6,7 +6,7 @@ topics.push({
   id: "fm-principles-definition",
   title: "Definition and principles of family medicine",
   oneLiner:
-    "Family medicine is the academic and clinical discipline that provides continuing, comprehensive, person-centred first-contact care to individuals and their families irrespective of age, sex, organ system or disease, and it is defined by its relationship with the patient rather than by a body of knowledge, an organ or a technology.",
+    "**Family medicine** is the academic and clinical discipline that provides **continuing, comprehensive, person-centred first-contact care** to individuals and their families irrespective of age, sex, organ system or disease, and it is defined by **its relationship with the patient** rather than by a body of knowledge, an organ or a technology.",
   frequency: "core",
   keywords: [
     "family physician",
@@ -500,7 +500,7 @@ topics.push({
   id: "fm-principles-consultation",
   title: "The consultation: models and communication skills",
   oneLiner:
-    "The consultation is the central act of family medicine, and the recognised models - Pendleton's seven tasks, the Calgary-Cambridge guide, Neighbour's five checkpoints, Balint's ideas and the BATHE technique - are practical structures for eliciting the patient's ideas, concerns and expectations, reaching a shared understanding and closing safely.",
+    "The consultation is **the central act of family medicine**, and the recognised models - **Pendleton's seven tasks**, the Calgary-Cambridge guide, Neighbour's five checkpoints, Balint's ideas and the BATHE technique - are practical structures for eliciting the patient's **ideas, concerns and expectations**, reaching a shared understanding and closing safely.",
   frequency: "core",
   keywords: [
     "Pendleton",
@@ -1047,7 +1047,7 @@ topics.push({
   id: "fm-principles-continuity",
   title: "Continuity, comprehensiveness, coordination and first contact care",
   oneLiner:
-    "The four defining functions of primary care are first contact accessibility, continuity of the doctor-patient relationship over time, comprehensiveness of the services offered, and coordination of everything done elsewhere, and together they explain why strong primary care produces better outcomes at lower cost.",
+    "The **four defining functions** of primary care are **first contact accessibility**, continuity of the doctor-patient relationship over time, comprehensiveness of the services offered, and coordination of everything done elsewhere, and together they explain why strong primary care produces **better outcomes at lower cost**.",
   frequency: "core",
   keywords: [
     "four Cs",
@@ -1489,7 +1489,7 @@ topics.push({
   id: "fm-principles-family-unit",
   title: "The family as the unit of care: genogram, life cycle, APGAR and SCREEM",
   oneLiner:
-    "The family is the unit of care in family medicine because it determines exposure, behaviour, adherence and support, and it is assessed with a set of standard instruments - the three-generation genogram, the family life cycle, the family life line, the family APGAR score and the SCREEM resource inventory.",
+    "The family is **the unit of care** in family medicine because it determines **exposure, behaviour, adherence and support**, and it is assessed with a set of standard instruments - **the three-generation genogram**, the family life cycle, the family life line, the family APGAR score and the SCREEM resource inventory.",
   frequency: "core",
   keywords: [
     "genogram",
@@ -2082,7 +2082,7 @@ topics.push({
   id: "fm-principles-records-audit",
   title: "Medical records, practice management and the clinical audit cycle",
   oneLiner:
-    "A family practice runs on its records: a structured problem-oriented record with SOAP progress notes, a coded morbidity register and a family folder make continuity possible, satisfy the medico-legal and regulatory requirement, and supply the denominator without which clinical audit - the systematic comparison of care against explicit criteria followed by change and re-measurement - cannot be done at all.",
+    "A family practice runs on its records: a structured problem-oriented record with **SOAP progress notes**, a coded morbidity register and a family folder make continuity possible, satisfy the medico-legal and regulatory requirement, and supply the denominator without which clinical audit - the systematic **comparison of care against explicit criteria** followed by **change and re-measurement** - cannot be done at all.",
   frequency: "common",
   keywords: [
     "problem-oriented medical record",
@@ -2543,7 +2543,7 @@ topics.push({
   id: "fm-principles-ebm",
   title: "Evidence-based medicine: PICO, appraisal, diagnostic statistics and the forest plot",
   oneLiner:
-    "Evidence-based medicine is the conscientious, explicit and judicious use of current best evidence in making decisions about the care of individual patients, integrating individual clinical expertise with the best available external evidence and the patient's values, and it is practised as five steps - ask a focused PICO question, acquire the best evidence, appraise it critically, apply it to this patient, and audit the result.",
+    "**Evidence-based medicine** is the conscientious, explicit and judicious use of **current best evidence** in making decisions about the care of individual patients, integrating individual clinical expertise with the best available external evidence and the patient's values, and it is practised as **five steps** - ask a focused PICO question, acquire the best evidence, appraise it critically, apply it to this patient, and audit the result.",
   frequency: "common",
   keywords: [
     "evidence-based medicine",
@@ -3041,7 +3041,7 @@ topics.push({
   id: "fm-principles-research-thesis",
   title: "Research methodology, the DNB thesis and telemedicine practice",
   oneLiner:
-    "Research methodology is the systematic process of choosing a design that fits the question, sampling a population without bias, controlling confounding, calculating an adequate sample size, obtaining ethics committee approval and valid informed consent, and reporting the work honestly in a protocol and thesis - and in contemporary Indian family practice it now extends to consulting within the Telemedicine Practice Guidelines of 2020.",
+    "**Research methodology** is the systematic process of choosing a design that fits the question, sampling a population without bias, controlling confounding, calculating **an adequate sample size**, obtaining ethics committee approval and valid informed consent, and reporting the work honestly in a protocol and thesis - and in contemporary Indian family practice it now extends to consulting within the **Telemedicine Practice Guidelines of 2020**.",
   frequency: "less-common",
   keywords: [
     "research methodology",
@@ -3590,7 +3590,7 @@ topics.push({
   id: "fm-principles-biostatistics",
   title: "Biostatistics for the family physician: data, distributions, tests of significance and rates",
   oneLiner:
-    "Biostatistics is the application of statistical method to biological and health data - deciding what kind of variable you have, summarising it with the right measure of central tendency and dispersion, estimating the population value with a standard error and a confidence interval, testing a hypothesis with a test chosen by the type of data and the number and pairing of groups, and reporting rates and ratios correctly.",
+    "Biostatistics is **the application of statistical method** to biological and health data - deciding what kind of variable you have, summarising it with the right measure of **central tendency and dispersion**, estimating the population value with a standard error and **a confidence interval**, testing a hypothesis with a test chosen by the type of data and the number and pairing of groups, and reporting rates and ratios correctly.",
   frequency: "less-common",
   keywords: [
     "biostatistics",

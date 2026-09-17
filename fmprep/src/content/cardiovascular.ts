@@ -6,7 +6,7 @@ topics.push({
   id: "cardiovascular-hypertension",
   title: "Hypertension: diagnosis, staging and drug choice",
   oneLiner:
-    "Hypertension is a sustained office blood pressure of 140/90 mmHg or more on at least two separate readings, and in India it is managed under NP-NCD using a simple amlodipine-telmisartan-chlorthalidone protocol titrated to a target below 140/90 mmHg.",
+    "Hypertension is a **sustained office blood pressure** of **140/90 mmHg or more** on at least two separate readings, and in India it is managed under NP-NCD using a simple **amlodipine-telmisartan-chlorthalidone protocol** titrated to a target below 140/90 mmHg.",
   frequency: "core",
   keywords: [
     "high blood pressure",
@@ -622,7 +622,7 @@ topics.push({
   id: "cardiovascular-stable-angina",
   title: "Stable angina and chronic coronary syndrome",
   oneLiner:
-    "Chronic coronary syndrome is the stable phase of coronary atherosclerosis presenting as predictable exertional chest discomfort relieved by rest or nitrate, managed with lifelong antiplatelet and high-intensity statin, anti-anginal drugs titrated to symptoms, and revascularisation reserved for refractory symptoms or high-risk anatomy.",
+    "**Chronic coronary syndrome** is the stable phase of coronary atherosclerosis presenting as predictable exertional chest discomfort **relieved by rest or nitrate**, managed with **lifelong antiplatelet and high-intensity statin**, anti-anginal drugs titrated to symptoms, and revascularisation reserved for refractory symptoms or high-risk anatomy.",
   frequency: "core",
   keywords: [
     "angina pectoris",
@@ -1121,7 +1121,7 @@ topics.push({
   id: "cardiovascular-acs",
   title: "Acute coronary syndrome: the first hour in the clinic",
   oneLiner:
-    "Acute coronary syndrome covers unstable angina, NSTEMI and STEMI, and the family physician's job is a 10-minute ECG, MONA-plus-antiplatelet loading, and a decision within 30 minutes between thrombolysis on site and immediate transfer for primary PCI.",
+    "Acute coronary syndrome covers **unstable angina, NSTEMI and STEMI**, and the family physician's job is **a 10-minute ECG**, MONA-plus-antiplatelet loading, and **a decision within 30 minutes** between thrombolysis on site and immediate transfer for primary PCI.",
   frequency: "core",
   keywords: [
     "STEMI",
@@ -1736,7 +1736,7 @@ topics.push({
   id: "cardiovascular-heart-failure",
   title: "Heart failure with reduced and preserved ejection fraction",
   oneLiner:
-    "Heart failure is a clinical syndrome of dyspnoea, fatigue and fluid overload caused by a structural or functional cardiac abnormality, classified by ejection fraction into HFrEF (40% or less), HFmrEF (41-49%) and HFpEF (50% or more), and in HFrEF four drug pillars - ARNI or ACE inhibitor, beta-blocker, mineralocorticoid antagonist and SGLT2 inhibitor - reduce mortality.",
+    "Heart failure is a clinical syndrome of **dyspnoea, fatigue and fluid overload** caused by a structural or functional cardiac abnormality, classified by ejection fraction into **HFrEF (40% or less)**, HFmrEF (41-49%) and HFpEF (50% or more), and in HFrEF **four drug pillars** - ARNI or ACE inhibitor, beta-blocker, mineralocorticoid antagonist and SGLT2 inhibitor - reduce mortality.",
   frequency: "core",
   keywords: [
     "congestive cardiac failure",
@@ -2380,7 +2380,7 @@ topics.push({
   id: "cardiovascular-dyslipidaemia",
   title: "Dyslipidaemia, risk stratification and statin choice",
   oneLiner:
-    "Dyslipidaemia in Indians is characteristically atherogenic - high triglycerides, low HDL and small dense LDL at a relatively normal total cholesterol - and management is driven by absolute cardiovascular risk category, with LDL cholesterol targets falling from below 100 mg/dL in moderate risk to below 50 mg/dL in the extreme-risk group of the Lipid Association of India.",
+    "Dyslipidaemia in Indians is characteristically atherogenic - **high triglycerides, low HDL** and small dense LDL at a relatively normal total cholesterol - and management is driven by **absolute cardiovascular risk category**, with LDL cholesterol targets falling from below 100 mg/dL in moderate risk to **below 50 mg/dL** in the extreme-risk group of the Lipid Association of India.",
   frequency: "core",
   keywords: [
     "hyperlipidaemia",
@@ -2838,7 +2838,7 @@ topics.push({
   id: "cardiovascular-atrial-fibrillation",
   title: "Atrial fibrillation: rate, rhythm and anticoagulation",
   oneLiner:
-    "Atrial fibrillation is an irregularly irregular supraventricular arrhythmia with absent P waves that raises stroke risk fivefold, and its management follows three parallel decisions - anticoagulate by CHA2DS2-VASc after weighing HAS-BLED, control the rate, and consider rhythm control - with the crucial Indian caveat that moderate-to-severe rheumatic mitral stenosis or a mechanical valve mandates warfarin, never a DOAC.",
+    "Atrial fibrillation is an irregularly irregular supraventricular arrhythmia with **absent P waves** that raises **stroke risk fivefold**, and its management follows three parallel decisions - anticoagulate by CHA2DS2-VASc after weighing HAS-BLED, control the rate, and consider rhythm control - with the crucial Indian caveat that moderate-to-severe rheumatic mitral stenosis or a mechanical valve mandates **warfarin, never a DOAC**.",
   frequency: "common",
   keywords: [
     "AF",
@@ -3303,7 +3303,7 @@ topics.push({
   id: "cardiovascular-ecg-interpretation",
   title: "ECG reading for the family physician: a systematic method and the must-not-miss patterns",
   oneLiner:
-    "A 12-lead ECG is read the same way every time - rate, rhythm, axis, intervals, P wave, QRS, ST segment, T wave - and the family physician's job is not to name every arrhythmia but to recognise the handful of patterns that mean the patient leaves the clinic in an ambulance.",
+    "**A 12-lead ECG** is read the same way every time - **rate, rhythm, axis, intervals**, P wave, QRS, ST segment, T wave - and the family physician's job is not to name every arrhythmia but to recognise the handful of patterns that mean the patient **leaves the clinic in an ambulance**.",
   frequency: "common",
   keywords: [
     "electrocardiogram",
@@ -3769,7 +3769,7 @@ topics.push({
   id: "cardiovascular-pad-vte",
   title: "Peripheral arterial disease and venous thromboembolism",
   oneLiner:
-    "Peripheral arterial disease is atherosclerotic narrowing of the limb arteries diagnosed by an ankle-brachial index of 0.90 or less and treated as coronary risk equivalent, while venous thromboembolism is clot in the deep veins or pulmonary arteries diagnosed by a pretest probability score with D-dimer and imaging, and treated with at least three months of anticoagulation.",
+    "**Peripheral arterial disease** is atherosclerotic narrowing of the limb arteries diagnosed by an **ankle-brachial index of 0.90 or less** and treated as coronary risk equivalent, while venous thromboembolism is clot in the deep veins or pulmonary arteries diagnosed by a pretest probability score with D-dimer and imaging, and treated with **at least three months of anticoagulation**.",
   frequency: "common",
   keywords: [
     "peripheral arterial disease",

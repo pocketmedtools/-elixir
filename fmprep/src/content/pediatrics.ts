@@ -6,7 +6,7 @@ topics.push({
   id: "pediatrics-newborn-care",
   title: "Newborn care, danger signs and the sick young infant",
   oneLiner:
-    "Essential newborn care is warmth, early exclusive breastfeeding, cord and eye care, vitamin K and weighing, followed by structured home visits that look for seven danger signs, any one of which is possible serious bacterial infection until proved otherwise.",
+    "Essential newborn care is warmth, **early exclusive breastfeeding**, cord and eye care, vitamin K and weighing, followed by structured home visits that look for **seven danger signs**, any one of which is **possible serious bacterial infection** until proved otherwise.",
   frequency: "core",
   keywords: [
     "essential newborn care",
@@ -670,7 +670,7 @@ topics.push({
   id: "pediatrics-immunisation",
   title: "Immunisation under the Universal Immunisation Programme, with catch-up",
   oneLiner:
-    "The Universal Immunisation Programme provides eleven vaccines free of cost against twelve diseases from birth to 16 years, and the single commonest clinical task is deciding what a partially immunised child needs today without ever restarting a schedule.",
+    "The Universal Immunisation Programme provides **eleven vaccines free of cost** against **twelve diseases** from birth to 16 years, and the single commonest clinical task is deciding what a partially immunised child needs today **without ever restarting a schedule**.",
   frequency: "core",
   keywords: [
     "UIP",
@@ -1270,7 +1270,7 @@ topics.push({
   id: "pediatrics-growth-monitoring",
   title: "Growth monitoring, infant feeding and faltering growth",
   oneLiner:
-    "Growth monitoring means plotting weight, length or height and head circumference serially on the WHO 2006 standards for under-fives and the IAP 2015 charts thereafter, because the direction of the curve tells you far more than any single point on it.",
+    "Growth monitoring means plotting weight, length or height and head circumference serially on the **WHO 2006 standards** for under-fives and the **IAP 2015 charts** thereafter, because **the direction of the curve** tells you far more than any single point on it.",
   frequency: "core",
   keywords: [
     "growth chart",
@@ -1858,7 +1858,7 @@ topics.push({
   id: "pediatrics-imnci",
   title: "The IMNCI approach to the sick child",
   oneLiner:
-    "IMNCI is a syndromic, colour-coded case management strategy for children from birth to 5 years in which every sick child is first checked for general danger signs, then assessed for the four main symptoms, classified pink, yellow or green, and treated, referred or sent home with four rules of home care.",
+    "IMNCI is a **syndromic, colour-coded case management strategy** for children from birth to 5 years in which every sick child is first checked for **general danger signs**, then assessed for the four main symptoms, classified **pink, yellow or green**, and treated, referred or sent home with four rules of home care.",
   frequency: "core",
   keywords: [
     "IMNCI",
@@ -2457,7 +2457,7 @@ topics.push({
   id: "pediatrics-diarrhoea-dehydration",
   title: "Acute diarrhoea, assessment of dehydration and Plans A, B and C",
   oneLiner:
-    "Acute diarrhoea is three or more loose or watery stools in 24 hours; the whole of its management is to classify dehydration by four signs, replace fluid by Plan A, B or C, give zinc for 14 days, keep feeding, and reserve antibiotics for dysentery and cholera.",
+    "Acute diarrhoea is **three or more loose or watery stools** in 24 hours; the whole of its management is to classify dehydration by four signs, replace fluid by **Plan A, B or C**, give **zinc for 14 days**, keep feeding, and reserve antibiotics for dysentery and cholera.",
   frequency: "core",
   keywords: [
     "acute gastroenteritis",
@@ -2975,7 +2975,7 @@ topics.push({
   id: "pediatrics-severe-acute-malnutrition",
   title: "Severe acute malnutrition: identification, the ten steps and community management",
   oneLiner:
-    "Severe acute malnutrition in a child of 6-59 months is a weight-for-height below -3 SD, a mid-upper arm circumference under 11.5 cm, or bilateral pitting oedema; the child with complications or a failed appetite test goes to the Nutritional Rehabilitation Centre for the WHO ten steps, and the uncomplicated child is treated at home with energy-dense food, antibiotics and weekly follow-up.",
+    "Severe acute malnutrition in a child of 6-59 months is a **weight-for-height below -3 SD**, a mid-upper arm circumference **under 11.5 cm**, or **bilateral pitting oedema**; the child with complications or a failed appetite test goes to the Nutritional Rehabilitation Centre for the WHO ten steps, and the uncomplicated child is treated at home with energy-dense food, antibiotics and weekly follow-up.",
   frequency: "core",
   keywords: [
     "SAM",
@@ -3522,7 +3522,7 @@ topics.push({
   id: "pediatrics-fever-febrile-seizure",
   title: "Fever in the under-five and febrile seizures",
   oneLiner:
-    "Fever in a child under five is an axillary temperature of 37.5 degrees C or more; the IMNCI pathway sorts it into very severe febrile disease, malaria, measles and fever with or without a focus, paracetamol 15 mg/kg is the only routine drug, and a brief generalised seizure with fever in a child of 6 months to 5 years without meningitis is a simple febrile seizure that needs counselling, not investigation.",
+    "Fever in a child under five is an axillary temperature of **37.5 degrees C or more**; the IMNCI pathway sorts it into very severe febrile disease, malaria, measles and fever with or without a focus, **paracetamol 15 mg/kg** is the only routine drug, and a brief generalised seizure with fever in a child of 6 months to 5 years without meningitis is **a simple febrile seizure** that needs counselling, not investigation.",
   frequency: "common",
   keywords: [
     "fever without focus",
@@ -4001,7 +4001,7 @@ topics.push({
   id: "pediatrics-anaemia-deworming",
   title: "Childhood anaemia, Anemia Mukt Bharat and deworming",
   oneLiner:
-    "Anaemia in a child of 6-59 months is a haemoglobin under 11 g/dL, is iron deficiency in most Indian children, is treated with elemental iron 3 mg/kg/day for 2-3 months beyond normalisation, and is prevented by the Anemia Mukt Bharat 6x6x6 package of prophylactic iron-folic acid, biannual albendazole, fortified food and testing.",
+    "Anaemia in a child of 6-59 months is a **haemoglobin under 11 g/dL**, is iron deficiency in most Indian children, is treated with **elemental iron 3 mg/kg/day** for 2-3 months beyond normalisation, and is prevented by the **Anemia Mukt Bharat 6x6x6 package** of prophylactic iron-folic acid, biannual albendazole, fortified food and testing.",
   frequency: "common",
   keywords: [
     "iron deficiency anaemia",
@@ -4468,7 +4468,7 @@ topics.push({
   id: "pediatrics-congenital-heart-disease",
   title: "Congenital heart disease in children",
   oneLiner:
-    "Congenital heart disease is a structural abnormality of the heart or the great vessels present from birth, occurring in about 8-10 per 1000 live births, and is divided into acyanotic lesions (left-to-right shunts such as ventricular septal defect, atrial septal defect and patent ductus arteriosus, and obstructive lesions such as pulmonary or aortic stenosis and coarctation) and cyanotic lesions (with reduced pulmonary blood flow, of which Tetralogy of Fallot is the commonest beyond infancy, or with increased pulmonary blood flow such as transposition of the great arteries and total anomalous pulmonary venous connection).",
+    "Congenital heart disease is a **structural abnormality of the heart** or the great vessels present from birth, occurring in about **8-10 per 1000 live births**, and is divided into acyanotic lesions (left-to-right shunts such as ventricular septal defect, atrial septal defect and patent ductus arteriosus, and obstructive lesions such as pulmonary or aortic stenosis and coarctation) and cyanotic lesions (with reduced pulmonary blood flow, of which **Tetralogy of Fallot** is the commonest beyond infancy, or with increased pulmonary blood flow such as transposition of the great arteries and total anomalous pulmonary venous connection).",
   frequency: "less-common",
   keywords: [
     "congenital heart disease",
@@ -5263,7 +5263,7 @@ topics.push({
   id: "pediatrics-nocturnal-enuresis",
   title: "Nocturnal enuresis and bedwetting",
   oneLiner:
-    "Nocturnal enuresis is intermittent involuntary voiding of a normal volume of urine during sleep in a child aged five years or older, conventionally at least twice a week for three months or causing clinically significant distress; it is a developmental delay in the control of night-time bladder filling, not a behaviour the child chooses, and it resolves spontaneously in about 15% of affected children every year.",
+    "Nocturnal enuresis is **intermittent involuntary voiding** of a normal volume of urine during sleep in a child aged **five years or older**, conventionally at least twice a week for three months or causing clinically significant distress; it is a developmental delay in the control of night-time bladder filling, not a behaviour the child chooses, and it resolves spontaneously in **about 15%** of affected children every year.",
   frequency: "less-common",
   keywords: [
     "nocturnal enuresis",
@@ -5995,7 +5995,7 @@ topics.push({
   id: "pediatrics-oral-thrush",
   title: "Oral thrush and oral candidiasis",
   oneLiner:
-    "Oral thrush is an opportunistic fungal infection of the oral mucosa caused most often by Candida albicans, a normal commensal of the mouth, and it presents classically as creamy-white curd-like pseudomembranous plaques on the tongue, palate and buccal mucosa that can be scraped off to leave a raw or erythematous, sometimes bleeding, base - so its appearance always signals a change in the host or in the local oral environment rather than the arrival of a new organism.",
+    "Oral thrush is an opportunistic fungal infection of the oral mucosa caused most often by **Candida albicans**, a normal commensal of the mouth, and it presents classically as **creamy-white curd-like pseudomembranous plaques** on the tongue, palate and buccal mucosa that can be scraped off to leave a raw or erythematous, sometimes bleeding, base - so its appearance always signals **a change in the host** or in the local oral environment rather than the arrival of a new organism.",
   frequency: "less-common",
   keywords: [
     "oral thrush",

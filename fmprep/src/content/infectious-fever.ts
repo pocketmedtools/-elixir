@@ -6,7 +6,7 @@ topics.push({
   id: "infectious-fever-acute-undifferentiated-fever",
   title: "Acute undifferentiated fever: the Indian approach",
   oneLiner:
-    "Acute undifferentiated fever is fever of less than two weeks with no localising features on history and examination, and in India the working rule is to exclude malaria, dengue, scrub typhus, enteric fever and leptospirosis by the day of illness before any antibiotic is written.",
+    "Acute undifferentiated fever is **fever of less than two weeks** with **no localising features** on history and examination, and in India the working rule is to exclude malaria, dengue, scrub typhus, enteric fever and leptospirosis by the day of illness **before any antibiotic is written**.",
   frequency: "core",
   keywords: [
     "AUFI",
@@ -521,7 +521,7 @@ topics.push({
   id: "infectious-fever-dengue",
   title: "Dengue: warning signs, phases and fluid management",
   oneLiner:
-    "Dengue is a mosquito-borne flaviviral illness with febrile, critical and recovery phases, in which death results from plasma leakage rather than from the platelet count, and management is entirely about recognising the WHO warning signs and giving titrated isotonic crystalloid during the 24-48 hour critical phase.",
+    "Dengue is a mosquito-borne flaviviral illness with febrile, critical and recovery phases, in which death results from **plasma leakage** rather than from the platelet count, and management is entirely about recognising **the WHO warning signs** and giving titrated isotonic crystalloid during the **24-48 hour critical phase**.",
   frequency: "core",
   keywords: [
     "dengue fever",
@@ -1070,7 +1070,7 @@ topics.push({
   id: "infectious-fever-malaria",
   title: "Malaria: diagnosis and NVBDCP species-wise treatment",
   oneLiner:
-    "Malaria is a protozoal infection transmitted by the female Anopheles mosquito which must be confirmed by rapid diagnostic test or microscopy before treatment, and then treated by species under the national drug policy - chloroquine with 14 days of primaquine for vivax, artesunate plus sulfadoxine-pyrimethamine (artemether-lumefantrine in the North-East) with single-dose primaquine for falciparum, and intravenous artesunate for severe disease.",
+    "Malaria is a protozoal infection transmitted by the female Anopheles mosquito which must be confirmed by **rapid diagnostic test or microscopy** before treatment, and then treated by species under the national drug policy - chloroquine with **14 days of primaquine for vivax**, artesunate plus sulfadoxine-pyrimethamine (artemether-lumefantrine in the North-East) with single-dose primaquine for falciparum, and **intravenous artesunate for severe disease**.",
   frequency: "core",
   keywords: [
     "malaria",
@@ -1585,7 +1585,7 @@ topics.push({
   id: "infectious-fever-enteric-fever",
   title: "Enteric fever: diagnosis, drug resistance and typhoid vaccines",
   oneLiner:
-    "Enteric fever is a systemic illness caused by Salmonella enterica serovar Typhi or Paratyphi acquired through faecally contaminated food and water, diagnosed by blood culture rather than by the Widal test, and now treated with azithromycin or a third-generation cephalosporin because fluoroquinolone resistance is near universal in India.",
+    "Enteric fever is a systemic illness caused by **Salmonella enterica serovar Typhi** or Paratyphi acquired through faecally contaminated food and water, **diagnosed by blood culture** rather than by the Widal test, and now treated with **azithromycin or a third-generation cephalosporin** because fluoroquinolone resistance is near universal in India.",
   frequency: "core",
   keywords: [
     "typhoid",
@@ -2082,7 +2082,7 @@ topics.push({
   id: "infectious-fever-scrub-typhus",
   title: "Scrub typhus and the rickettsial fevers",
   oneLiner:
-    "Scrub typhus is an acute febrile illness caused by Orientia tsutsugamushi, transmitted by the bite of larval trombiculid mites (chiggers), recognised by an eschar with leucocytosis, thrombocytopenia and raised transaminases, and cured by doxycycline within 48 hours if it is thought of.",
+    "Scrub typhus is an acute febrile illness caused by **Orientia tsutsugamushi**, transmitted by the bite of larval trombiculid mites (chiggers), recognised by **an eschar** with leucocytosis, thrombocytopenia and raised transaminases, and cured by **doxycycline within 48 hours** if it is thought of.",
   frequency: "common",
   keywords: [
     "scrub typhus",
@@ -2508,7 +2508,7 @@ topics.push({
   id: "infectious-fever-urinary-tract-infection",
   title: "Urinary tract infection: cystitis, pyelonephritis and the special groups",
   oneLiner:
-    "Urinary tract infection is symptomatic bacterial invasion of the urinary tract, classified as uncomplicated cystitis in the healthy non-pregnant woman and complicated in everyone else, and in India it is treated with nitrofurantoin or fosfomycin rather than a fluoroquinolone because Escherichia coli resistance exceeds 70%.",
+    "Urinary tract infection is symptomatic bacterial invasion of the urinary tract, classified as **uncomplicated cystitis** in the healthy non-pregnant woman and complicated in everyone else, and in India it is treated with **nitrofurantoin or fosfomycin** rather than a fluoroquinolone because Escherichia coli resistance **exceeds 70%**.",
   frequency: "common",
   keywords: [
     "UTI",
@@ -2930,7 +2930,7 @@ topics.push({
   id: "infectious-fever-skin-soft-tissue-infection",
   title: "Skin and soft tissue infection: impetigo to necrotising fasciitis",
   oneLiner:
-    "Skin and soft tissue infections range from superficial impetigo and folliculitis through cellulitis and abscess to necrotising fasciitis, are caused mainly by Staphylococcus aureus and Streptococcus pyogenes, and are managed by deciding whether the lesion needs drainage, whether MRSA cover is needed, and whether pain out of proportion means the surgeon is needed tonight.",
+    "Skin and soft tissue infections range from superficial impetigo and folliculitis through cellulitis and abscess to necrotising fasciitis, are caused mainly by **Staphylococcus aureus and Streptococcus pyogenes**, and are managed by deciding **whether the lesion needs drainage**, whether MRSA cover is needed, and whether **pain out of proportion** means the surgeon is needed tonight.",
   frequency: "common",
   keywords: [
     "SSTI",
@@ -3349,7 +3349,7 @@ topics.push({
   id: "infectious-fever-rabies-animal-bite",
   title: "Animal bite and rabies post-exposure prophylaxis",
   oneLiner:
-    "Rabies is a uniformly fatal Lyssavirus encephalitis transmitted by the saliva of a rabid animal, almost always a dog in India, and it is completely preventable by immediate wound washing for 15 minutes, a cell culture vaccine by the intradermal or intramuscular schedule, and rabies immunoglobulin infiltrated into every category III wound.",
+    "Rabies is a **uniformly fatal** Lyssavirus encephalitis transmitted by the saliva of a rabid animal, almost always a dog in India, and it is completely preventable by **immediate wound washing for 15 minutes**, a cell culture vaccine by the intradermal or intramuscular schedule, and **rabies immunoglobulin** infiltrated into every category III wound.",
   frequency: "common",
   keywords: [
     "rabies",
@@ -3754,7 +3754,7 @@ topics.push({
   id: "infectious-fever-hiv-art",
   title: "HIV: diagnosis, staging, antiretroviral therapy and prevention",
   oneLiner:
-    "HIV is a chronic retroviral infection diagnosed in India by the NACO three-test antibody algorithm (by DNA-PCR under 18 months of age), staged clinically by the WHO system, and treated in every diagnosed person regardless of CD4 count with a single daily fixed-dose tablet of tenofovir, lamivudine and dolutegravir, the aim being a sustained undetectable viral load which both preserves the patient's health and makes sexual transmission effectively impossible.",
+    "HIV is a chronic retroviral infection diagnosed in India by the **NACO three-test antibody algorithm** (by DNA-PCR under 18 months of age), staged clinically by the WHO system, and treated in every diagnosed person **regardless of CD4 count** with a single daily fixed-dose tablet of **tenofovir, lamivudine and dolutegravir**, the aim being a sustained undetectable viral load which both preserves the patient's health and makes sexual transmission effectively impossible.",
   frequency: "common",
   keywords: [
     "HIV",

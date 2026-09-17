@@ -6,7 +6,7 @@ topics.push({
   id: "psychiatry-depression",
   title: "Depression: PHQ-9, drug choice and suicide risk assessment",
   oneLiner:
-    "Major depressive disorder is a persistent lowering of mood or loss of interest for at least two weeks with at least five of nine DSM-5 symptoms causing functional impairment; in family practice it is detected with the PHQ-2 and graded with the PHQ-9, treated with an SSRI such as escitalopram or sertraline plus structured follow-up, and every case is asked directly about suicidal thoughts because the question does not plant the idea and the answer changes the plan.",
+    "Major depressive disorder is a persistent lowering of mood or loss of interest for **at least two weeks** with at least **five of nine DSM-5 symptoms** causing functional impairment; in family practice it is detected with the PHQ-2 and graded with the PHQ-9, treated with an SSRI such as escitalopram or sertraline plus structured follow-up, and every case is **asked directly about suicidal thoughts** because the question does not plant the idea and the answer changes the plan.",
   frequency: "core",
   keywords: [
     "major depressive disorder",
@@ -490,7 +490,7 @@ topics.push({
   id: "psychiatry-anxiety",
   title: "Anxiety disorders and panic: GAD-7, panic attacks and the drugs that help",
   oneLiner:
-    "Generalised anxiety disorder is excessive, uncontrollable worry on most days for at least six months with restlessness, fatigue, poor concentration, irritability, muscle tension or disturbed sleep, while panic disorder is recurrent unexpected surges of intense fear peaking within ten minutes with autonomic symptoms plus a month of anticipatory fear or avoidance; in family practice both are screened with the GAD-7, separated from thyrotoxicosis, arrhythmia and substance effects, and treated with an SSRI or SNRI plus cognitive behavioural techniques, with benzodiazepines used only as a bridge of two to four weeks.",
+    "Generalised anxiety disorder is **excessive, uncontrollable worry** on most days for **at least six months** with restlessness, fatigue, poor concentration, irritability, muscle tension or disturbed sleep, while panic disorder is recurrent unexpected surges of intense fear peaking within ten minutes with autonomic symptoms plus a month of anticipatory fear or avoidance; in family practice both are screened with the GAD-7, separated from thyrotoxicosis, arrhythmia and substance effects, and treated with **an SSRI or SNRI** plus cognitive behavioural techniques, with benzodiazepines used only as a bridge of two to four weeks.",
   frequency: "core",
   keywords: [
     "generalised anxiety disorder",
@@ -960,7 +960,7 @@ topics.push({
   id: "psychiatry-alcohol-use-disorder",
   title: "Alcohol use disorder: screening, withdrawal, CIWA-Ar and delirium tremens",
   oneLiner:
-    "Alcohol use disorder is a DSM-5 pattern of impaired control, social impairment, risky use and pharmacological dependence with 2 or more of 11 criteria in twelve months; the family physician screens with AUDIT-C or AUDIT, delivers brief intervention for hazardous drinking, manages uncomplicated withdrawal with a tapering benzodiazepine and parenteral thiamine while grading severity with the CIWA-Ar, recognises that withdrawal seizures peak at 12-48 hours and delirium tremens at 48-96 hours with a mortality of 1-5% treated and up to 25% untreated, and maintains abstinence with naltrexone, acamprosate or disulfiram plus Alcoholics Anonymous.",
+    "Alcohol use disorder is a DSM-5 pattern of impaired control, social impairment, risky use and pharmacological dependence with **2 or more of 11 criteria** in twelve months; the family physician screens with **AUDIT-C or AUDIT**, delivers brief intervention for hazardous drinking, manages uncomplicated withdrawal with **a tapering benzodiazepine and parenteral thiamine** while grading severity with the CIWA-Ar, recognises that withdrawal seizures peak at 12-48 hours and delirium tremens at 48-96 hours with a mortality of 1-5% treated and up to 25% untreated, and maintains abstinence with naltrexone, acamprosate or disulfiram plus Alcoholics Anonymous.",
   frequency: "core",
   keywords: [
     "alcohol use disorder",
@@ -1468,7 +1468,7 @@ topics.push({
   id: "psychiatry-somatic-symptom-disorder",
   title: "Somatic symptom disorder and medically unexplained symptoms",
   oneLiner:
-    "Somatic symptom disorder is one or more distressing physical symptoms present for at least six months accompanied by disproportionate thoughts, persistent anxiety or excessive time and energy devoted to the symptom - the DSM-5 diagnosis rests on the psychological response and not on whether the symptom is medically explained - and in Indian family practice it is managed by a single trusted doctor with regular short time-based appointments, a clear positive explanation, tight limits on re-investigation, treatment of comorbid depression and anxiety, and a goal of function rather than cure.",
+    "Somatic symptom disorder is one or more distressing physical symptoms present for **at least six months** accompanied by disproportionate thoughts, persistent anxiety or excessive time and energy devoted to the symptom - the DSM-5 diagnosis **rests on the psychological response** and not on whether the symptom is medically explained - and in Indian family practice it is managed by a single trusted doctor with regular short time-based appointments, a clear positive explanation, tight limits on re-investigation, treatment of comorbid depression and anxiety, and a goal of **function rather than cure**.",
   frequency: "common",
   keywords: [
     "somatic symptom disorder",
@@ -1940,7 +1940,7 @@ topics.push({
   id: "psychiatry-tobacco-cessation",
   title: "Tobacco cessation: the 5 A's, nicotine replacement and pharmacotherapy",
   oneLiner:
-    "Tobacco dependence is a chronic relapsing disorder driven by nicotine acting on alpha-4-beta-2 nicotinic receptors, and every consultation is an opportunity to apply the 5 A's - Ask, Advise, Assess, Assist, Arrange - with the 5 R's for the unwilling patient, since brief advice alone raises quit rates by 2-3% absolute and the combination of behavioural support with nicotine replacement, bupropion or varenicline trebles the chance of abstinence at one year.",
+    "Tobacco dependence is a chronic relapsing disorder driven by nicotine acting on alpha-4-beta-2 nicotinic receptors, and every consultation is an opportunity to apply **the 5 A's** - Ask, Advise, Assess, Assist, Arrange - with the 5 R's for the unwilling patient, since brief advice alone raises quit rates by **2-3% absolute** and the combination of behavioural support with **nicotine replacement, bupropion or varenicline** trebles the chance of abstinence at one year.",
   frequency: "common",
   keywords: [
     "tobacco cessation",
@@ -2371,7 +2371,7 @@ topics.push({
   id: "psychiatry-insomnia-sleep",
   title: "Insomnia and sleep disorders in family practice",
   oneLiner:
-    "Chronic insomnia disorder is dissatisfaction with sleep quantity or quality with difficulty initiating or maintaining sleep or early morning waking, occurring at least three nights a week for at least three months despite adequate opportunity to sleep and causing daytime impairment; the family physician grades it with the Insomnia Severity Index, excludes obstructive sleep apnoea with STOP-BANG, restless legs syndrome, depression, alcohol, drugs and pain, and treats it with cognitive behavioural therapy for insomnia - stimulus control and sleep restriction - as first line, reserving a short, dated course of a hypnotic for the minority.",
+    "Chronic insomnia disorder is dissatisfaction with sleep quantity or quality with difficulty initiating or maintaining sleep or early morning waking, occurring **at least three nights a week** for **at least three months** despite adequate opportunity to sleep and causing daytime impairment; the family physician grades it with the Insomnia Severity Index, excludes obstructive sleep apnoea with STOP-BANG, restless legs syndrome, depression, alcohol, drugs and pain, and treats it with **cognitive behavioural therapy for insomnia** - stimulus control and sleep restriction - as first line, reserving a short, dated course of a hypnotic for the minority.",
   frequency: "common",
   keywords: [
     "chronic insomnia disorder",
@@ -2816,7 +2816,7 @@ topics.push({
   id: "psychiatry-psychosis-schizophrenia",
   title: "Psychosis and schizophrenia: recognition, first steps, referral and the Mental Healthcare Act 2017",
   oneLiner:
-    "Psychosis is a loss of contact with reality shown by delusions, hallucinations, disorganised speech or grossly disorganised behaviour, and schizophrenia is its commonest chronic form, requiring two or more such symptoms for a month with six months of overall disturbance; the family physician's job is to recognise it early, exclude the organic and substance-induced causes, start or facilitate an antipsychotic without delay because a long duration of untreated psychosis worsens outcome, manage agitation safely, support the family, and work within the rights-based framework of the Mental Healthcare Act 2017.",
+    "Psychosis is a loss of contact with reality shown by **delusions, hallucinations, disorganised speech** or grossly disorganised behaviour, and schizophrenia is its commonest chronic form, requiring two or more such symptoms for a month with **six months of overall disturbance**; the family physician's job is to recognise it early, exclude the organic and substance-induced causes, start or facilitate an antipsychotic without delay because a long duration of untreated psychosis worsens outcome, manage agitation safely, support the family, and work within the rights-based framework of the **Mental Healthcare Act 2017**.",
   frequency: "less-common",
   keywords: [
     "schizophrenia",
@@ -3307,7 +3307,7 @@ topics.push({
   id: "psychiatry-delirium-dementia",
   title: "Delirium versus dementia in the older patient",
   oneLiner:
-    "Delirium is an acute, fluctuating disturbance of attention and awareness with an additional cognitive deficit, caused by a medical condition, drug or withdrawal, and it is a medical emergency; dementia is an insidious, progressive decline in two or more cognitive domains sufficient to impair independence, with a clear sensorium - the practical separations are the time course, the state of attention and the level of consciousness, and the two coexist so often that a sudden worsening in a patient with dementia is delirium until proved otherwise.",
+    "Delirium is an **acute, fluctuating disturbance of attention** and awareness with an additional cognitive deficit, caused by a medical condition, drug or withdrawal, and it is a medical emergency; dementia is an insidious, progressive decline in **two or more cognitive domains** sufficient to impair independence, with a clear sensorium - the practical separations are the time course, the state of attention and the level of consciousness, and the two coexist so often that a sudden worsening in a patient with dementia is **delirium until proved otherwise**.",
   frequency: "less-common",
   keywords: [
     "delirium",

@@ -6,7 +6,7 @@ topics.push({
   id: "respiratory-asthma",
   title: "Asthma: diagnosis, control and the GINA ladder in India",
   oneLiner:
-    "Asthma is a chronic inflammatory airway disease defined by a history of variable respiratory symptoms together with demonstrated variable expiratory airflow limitation, and GINA now treats every adult and adolescent with an inhaled corticosteroid-containing reliever rather than a short-acting beta-2 agonist alone.",
+    "Asthma is a chronic inflammatory airway disease defined by a history of variable respiratory symptoms together with demonstrated **variable expiratory airflow limitation**, and GINA now treats every adult and adolescent with an **inhaled corticosteroid-containing reliever** rather than a **short-acting beta-2 agonist** alone.",
   frequency: "core",
   keywords: [
     "bronchial asthma",
@@ -479,7 +479,7 @@ topics.push({
   id: "respiratory-copd",
   title: "COPD: GOLD assessment, inhalers and exacerbations",
   oneLiner:
-    "COPD is a heterogeneous lung condition causing persistent, often progressive airflow obstruction, confirmed by a post-bronchodilator FEV1/FVC below 0.70 in a patient with chronic respiratory symptoms and a history of exposure to tobacco smoke, biomass fuel or occupational dust.",
+    "COPD is a heterogeneous lung condition causing **persistent, often progressive airflow obstruction**, confirmed by a **post-bronchodilator FEV1/FVC below 0.70** in a patient with chronic respiratory symptoms and a history of exposure to **tobacco smoke, biomass fuel or occupational dust**.",
   frequency: "core",
   keywords: [
     "chronic obstructive pulmonary disease",
@@ -945,7 +945,7 @@ topics.push({
   id: "respiratory-tuberculosis-ntep",
   title: "Pulmonary tuberculosis under NTEP: diagnosis, regimens, follow-up and drug resistance",
   oneLiner:
-    "Under the National TB Elimination Programme every presumptive tuberculosis patient gets an upfront molecular test with universal drug susceptibility testing for rifampicin, drug-sensitive disease is treated with daily fixed dose combinations as 2 months of HRZE followed by 4 months of HRE by weight band, and every patient is notified on Ni-kshay and receives nutritional support under Ni-kshay Poshan Yojana.",
+    "Under the National TB Elimination Programme every presumptive tuberculosis patient gets an **upfront molecular test** with universal drug susceptibility testing for rifampicin, drug-sensitive disease is treated with daily fixed dose combinations as **2 months of HRZE** followed by 4 months of HRE by weight band, and every patient is notified on Ni-kshay and receives nutritional support under **Ni-kshay Poshan Yojana**.",
   frequency: "core",
   keywords: [
     "TB",
@@ -1463,7 +1463,7 @@ topics.push({
   id: "respiratory-pneumonia-cap",
   title: "Community-acquired pneumonia: CURB-65, empirical antibiotics and follow-up",
   oneLiner:
-    "Community-acquired pneumonia is an acute lower respiratory infection acquired outside hospital with new radiographic consolidation, and the family physician's job is to decide the site of care using CURB-65 or CRB-65, start an appropriate empirical antibiotic within four hours, and know which patient will not get better at home.",
+    "Community-acquired pneumonia is an acute lower respiratory infection acquired outside hospital with **new radiographic consolidation**, and the family physician's job is to decide the site of care using **CURB-65 or CRB-65**, start an appropriate empirical antibiotic **within four hours**, and know which patient will not get better at home.",
   frequency: "core",
   keywords: [
     "CAP",
@@ -1925,7 +1925,7 @@ topics.push({
   id: "respiratory-acute-cough-influenza-covid",
   title: "Acute cough, acute bronchitis, influenza-like illness and COVID-19 in the clinic",
   oneLiner:
-    "An acute cough is one lasting under three weeks, is viral in more than nine of ten adults and needs no antibiotic; the family physician's job is to pick out the pneumonia, the influenza patient who needs oseltamivir today, the COVID-19 patient with silent hypoxaemia, and the cough that reaches fourteen days and becomes presumptive tuberculosis under NTEP.",
+    "An acute cough is one **lasting under three weeks**, is viral in more than nine of ten adults and **needs no antibiotic**; the family physician's job is to pick out the pneumonia, the influenza patient who needs oseltamivir today, the COVID-19 patient with silent hypoxaemia, and the cough that **reaches fourteen days** and becomes presumptive tuberculosis under NTEP.",
   frequency: "common",
   keywords: [
     "acute bronchitis",
@@ -2419,7 +2419,7 @@ topics.push({
   id: "respiratory-tb-infection-contacts-tpt",
   title: "TB infection, contact investigation and TB preventive treatment under NTEP",
   oneLiner:
-    "TB infection is a state of persistent immune response to Mycobacterium tuberculosis antigens without clinical or radiological evidence of active disease; under NTEP every household contact of a pulmonary tuberculosis patient is screened, active disease is excluded, and eligible contacts and all people living with HIV are offered TB preventive treatment with 6H or 3HP, recorded on Ni-kshay.",
+    "**TB infection** is a state of persistent immune response to Mycobacterium tuberculosis antigens without clinical or radiological evidence of active disease; under NTEP **every household contact** of a pulmonary tuberculosis patient is screened, active disease is excluded, and eligible contacts and all people living with HIV are offered **TB preventive treatment with 6H or 3HP**, recorded on Ni-kshay.",
   frequency: "common",
   keywords: [
     "latent tuberculosis",
@@ -2898,7 +2898,7 @@ topics.push({
   id: "respiratory-pleural-effusion",
   title: "Pleural effusion: Light's criteria, the tubercular effusion and the parapneumonic one that needs a tube",
   oneLiner:
-    "A pleural effusion is an abnormal collection of fluid in the pleural space that is classified as a transudate or an exudate by Light's criteria on a diagnostic thoracentesis; in India a lymphocyte-predominant exudate with adenosine deaminase above 40 U/L in a young adult is tubercular until proven otherwise, and a parapneumonic effusion with a pH under 7.20 needs a chest drain.",
+    "A pleural effusion is an abnormal collection of fluid in the pleural space that is classified as a transudate or an exudate by **Light's criteria** on a diagnostic thoracentesis; in India a lymphocyte-predominant exudate with **adenosine deaminase above 40 U/L** in a young adult is tubercular until proven otherwise, and a parapneumonic effusion with a **pH under 7.20** needs a chest drain.",
   frequency: "common",
   keywords: [
     "pleural effusion",
@@ -3379,7 +3379,7 @@ topics.push({
   id: "respiratory-osa",
   title: "Obstructive sleep apnoea: STOP-BANG, polysomnography and CPAP",
   oneLiner:
-    "Obstructive sleep apnoea is repetitive collapse of the pharyngeal airway during sleep producing apnoeas and hypopnoeas with arousals and oxygen desaturation, diagnosed when polysomnography shows an apnoea-hypopnoea index of 5 or more per hour with symptoms or 15 or more per hour regardless of symptoms, and treated first by weight reduction and continuous positive airway pressure.",
+    "Obstructive sleep apnoea is **repetitive collapse of the pharyngeal airway** during sleep producing apnoeas and hypopnoeas with arousals and oxygen desaturation, diagnosed when polysomnography shows an apnoea-hypopnoea **index of 5 or more per hour** with symptoms or 15 or more per hour regardless of symptoms, and treated first by weight reduction and **continuous positive airway pressure**.",
   frequency: "common",
   keywords: [
     "OSA",

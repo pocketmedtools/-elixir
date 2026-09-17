@@ -6,7 +6,7 @@ topics.push({
   id: "surgery-office-wound-suturing",
   title: "Wound care, local anaesthesia and suturing",
   oneLiner:
-    "A traumatic wound is assessed for depth, contamination, tissue loss and neurovascular injury, cleaned and debrided, closed primarily only if it is clean and less than about 6 hours old (12-24 hours on the face), and every patient additionally needs tetanus prophylaxis, rabies risk assessment and a documented local anaesthetic dose that stays below 3 mg/kg of plain lignocaine or 7 mg/kg with adrenaline.",
+    "A traumatic wound is assessed for depth, contamination, tissue loss and neurovascular injury, cleaned and debrided, closed primarily only if it is clean and **less than about 6 hours old** (12-24 hours on the face), and every patient additionally needs **tetanus prophylaxis**, rabies risk assessment and a documented local anaesthetic dose that stays below **3 mg/kg of plain lignocaine** or 7 mg/kg with adrenaline.",
   frequency: "core",
   keywords: [
     "laceration",
@@ -608,7 +608,7 @@ topics.push({
   id: "surgery-office-abscess-ssti",
   title: "Abscess incision and drainage, and skin and soft tissue infection in the clinic",
   oneLiner:
-    "An abscess is a localised collection of pus in a tissue cavity that will not resolve with antibiotics alone and whose definitive treatment is adequate incision, deroofing and breakdown of all loculi under proper anaesthesia and asepsis, while spreading non-suppurative infection (cellulitis and erysipelas) is treated with antibiotics, elevation and marking of the margin, and the family physician's crucial skill is separating these two from the pain-out-of-proportion patient with a necrotising soft tissue infection who needs immediate resuscitation and surgical referral.",
+    "An abscess is **a localised collection of pus** in a tissue cavity that will not resolve with antibiotics alone and whose definitive treatment is adequate **incision, deroofing and breakdown** of all loculi under proper anaesthesia and asepsis, while spreading non-suppurative infection (cellulitis and erysipelas) is treated with antibiotics, elevation and marking of the margin, and the family physician's crucial skill is separating these two from the pain-out-of-proportion patient with a **necrotising soft tissue infection** who needs immediate resuscitation and surgical referral.",
   frequency: "core",
   keywords: [
     "abscess",
@@ -1129,7 +1129,7 @@ topics.push({
   id: "surgery-office-diabetic-foot",
   title: "The diabetic foot ulcer - grading, offloading, dressings, antibiotics and referral",
   oneLiner:
-    "A diabetic foot ulcer is a full-thickness break in the skin below the ankle in a person with diabetes, produced by the triad of peripheral neuropathy, peripheral arterial disease and impaired immunity acting on repetitive unperceived pressure, and it is managed by a fixed sequence - grade the ulcer, treat infection, restore perfusion, debride the wound, offload the pressure, dress it appropriately and control the metabolic state - because an ulcer that is not offloaded will not heal however good the dressing.",
+    "A diabetic foot ulcer is a **full-thickness break in the skin** below the ankle in a person with diabetes, produced by the triad of **peripheral neuropathy, peripheral arterial disease** and impaired immunity acting on repetitive unperceived pressure, and it is managed by a fixed sequence - grade the ulcer, treat infection, restore perfusion, debride the wound, **offload the pressure**, dress it appropriately and control the metabolic state - because an ulcer that is not offloaded will not heal however good the dressing.",
   frequency: "core",
   keywords: [
     "diabetic foot",
@@ -1667,7 +1667,7 @@ topics.push({
   id: "surgery-office-minor-procedures",
   title: "Minor office procedures - lipoma, sebaceous cyst, ingrown toenail, skin biopsy and wart cautery",
   oneLiner:
-    "Minor surgery in the family physician's clinic is safe only when every case follows the same discipline - a confirmed clinical diagnosis, an explicit decision that the lesion is suitable for the office rather than the theatre, written informed consent, asepsis, a calculated and documented local anaesthetic dose, complete removal of the pathological tissue (the cyst wall, the lipoma capsule, the nail matrix), histopathology of every specimen excised, and written aftercare - and the commonest examination errors are enucleating a deep or rapidly growing lipoma that is a sarcoma, leaving cyst wall behind, and shaving a pigmented lesion that turns out to be a melanoma.",
+    "Minor surgery in the family physician's clinic is safe only when every case follows the same discipline - **a confirmed clinical diagnosis**, an explicit decision that the lesion is suitable for the office rather than the theatre, written informed consent, asepsis, a calculated and documented local anaesthetic dose, complete removal of the pathological tissue (the cyst wall, the lipoma capsule, the nail matrix), **histopathology of every specimen excised**, and written aftercare - and the commonest examination errors are enucleating a deep or rapidly growing lipoma that is a sarcoma, **leaving cyst wall behind**, and shaving a pigmented lesion that turns out to be a melanoma.",
   frequency: "common",
   keywords: [
     "lipoma",
@@ -2207,7 +2207,7 @@ topics.push({
   id: "surgery-office-hernia",
   title: "Hernia - types, recognition and referral",
   oneLiner:
-    "A hernia is the protrusion of a viscus or part of a viscus through an abnormal opening in the wall of its containing cavity, and the family physician's job is to recognise it, classify it by site and by state (reducible, irreducible, obstructed or strangulated), distinguish an inguinal from a femoral hernia by the relation of the neck of the sac to the pubic tubercle, refer every femoral hernia and every symptomatic inguinal hernia for elective tension-free mesh repair, and send any irreducible, tender or obstructed hernia to hospital the same hour.",
+    "A hernia is the **protrusion of a viscus** or part of a viscus through an abnormal opening in the wall of its containing cavity, and the family physician's job is to recognise it, classify it by site and by state (reducible, irreducible, obstructed or strangulated), distinguish an inguinal from a femoral hernia by the relation of the neck of the sac to **the pubic tubercle**, refer every femoral hernia and every symptomatic inguinal hernia for elective **tension-free mesh repair**, and send any irreducible, tender or obstructed hernia to hospital the same hour.",
   frequency: "common",
   keywords: [
     "hernia",
@@ -2713,7 +2713,7 @@ topics.push({
   id: "surgery-office-breast-lump",
   title: "The breast lump and triple assessment",
   oneLiner:
-    "Every discrete breast lump is assessed by the triple assessment - clinical examination, imaging (ultrasound under 40 years, mammography with ultrasound at 40 and over) and tissue diagnosis by core needle biopsy - each scored 1 to 5, and a lump may be called benign only when all three are concordantly benign, because a triple assessment that is discordant, or a clinically suspicious lump with reassuring tests, must be treated as cancer until an excision biopsy proves otherwise.",
+    "Every discrete breast lump is assessed by **the triple assessment** - clinical examination, imaging (ultrasound under 40 years, mammography with ultrasound at 40 and over) and tissue diagnosis by **core needle biopsy** - each scored 1 to 5, and a lump may be called benign only when **all three are concordantly benign**, because a triple assessment that is discordant, or a clinically suspicious lump with reassuring tests, must be treated as cancer until an excision biopsy proves otherwise.",
   frequency: "common",
   keywords: [
     "breast lump",
@@ -3234,7 +3234,7 @@ topics.push({
   id: "surgery-office-catheter-ngt-injection",
   title: "Urethral catheterisation, nasogastric tube and injection technique with their complications",
   oneLiner:
-    "The three commonest invasive procedures in general practice each have a fixed recitable sequence - indication, contraindication, consent, asepsis, correct size, correct anatomy, objective confirmation of position and documentation - and the examinable errors are inflating a catheter balloon before the tube reaches the bifurcation, forgetting to replace the foreskin, confirming a nasogastric tube by auscultation instead of aspirate pH or radiograph, and injecting into the dorsogluteal upper outer quadrant when the ventrogluteal site would have avoided the sciatic nerve.",
+    "The three commonest invasive procedures in general practice each have **a fixed recitable sequence** - indication, contraindication, consent, asepsis, correct size, correct anatomy, objective confirmation of position and documentation - and the examinable errors are inflating a catheter balloon **before the tube reaches the bifurcation**, forgetting to replace the foreskin, confirming a nasogastric tube by auscultation instead of **aspirate pH or radiograph**, and injecting into the dorsogluteal upper outer quadrant when the ventrogluteal site would have avoided the sciatic nerve.",
   frequency: "common",
   keywords: [
     "urethral catheterisation",
@@ -3744,7 +3744,7 @@ topics.push({
   id: "surgery-office-preop-postop",
   title: "Pre-operative fitness assessment and post-operative follow-up by the family physician",
   oneLiner:
-    "Pre-operative assessment is not a ritual of routine tests but a structured judgement of the patient's physiological reserve, comorbidity control and drug therapy against the magnitude of the planned operation - graded by ASA class, functional capacity in metabolic equivalents and a revised cardiac risk index - followed after surgery by a family physician who knows the day-by-day timetable of postoperative complications, can recognise a wound infection, an anastomotic leak or a pulmonary embolus early, and takes back the long-term care of the wound, the drugs, the rehabilitation and the return to work.",
+    "Pre-operative assessment is not a ritual of routine tests but a structured judgement of **the patient's physiological reserve**, comorbidity control and drug therapy against the magnitude of the planned operation - graded by ASA class, functional capacity in metabolic equivalents and **a revised cardiac risk index** - followed after surgery by a family physician who knows the day-by-day timetable of postoperative complications, can recognise a wound infection, **an anastomotic leak** or a pulmonary embolus early, and takes back the long-term care of the wound, the drugs, the rehabilitation and the return to work.",
   frequency: "less-common",
   keywords: [
     "preoperative assessment",
@@ -4246,7 +4246,7 @@ topics.push({
   id: "surgery-office-procedural-sedation-ketamine",
   title: "Procedural sedation and ketamine anaesthesia",
   oneLiner:
-    "Procedural sedation is the drug-induced depression of consciousness that lets a painful or frightening procedure be done while the patient keeps a patent airway and spontaneous ventilation; ketamine is unique among the drugs used because it produces dissociative anaesthesia - a cataleptic, trance-like state of profound analgesia and amnesia caused by non-competitive NMDA receptor blockade, in which airway reflexes, respiratory drive and cardiovascular tone are largely preserved.",
+    "Procedural sedation is the **drug-induced depression of consciousness** that lets a painful or frightening procedure be done while the patient keeps a patent airway and spontaneous ventilation; ketamine is unique among the drugs used because it produces **dissociative anaesthesia** - a cataleptic, trance-like state of profound analgesia and amnesia caused by **non-competitive NMDA receptor blockade**, in which airway reflexes, respiratory drive and cardiovascular tone are largely preserved.",
   frequency: "uncommon",
   keywords: [
     "dissociative anaesthesia",
@@ -4993,7 +4993,7 @@ topics.push({
   id: "surgery-office-spinal-anaesthesia",
   title: "Spinal anaesthesia",
   oneLiner:
-    "Spinal (subarachnoid) anaesthesia is the reversible chemical blockade of nerve roots produced by injecting a small dose of local anaesthetic into the cerebrospinal fluid of the lumbar subarachnoid space below the termination of the spinal cord, giving rapid, dense sympathetic, sensory and motor block for surgery below the umbilicus; it is administered only by a trained anaesthetist with full monitoring and resuscitation facilities.",
+    "Spinal (subarachnoid) anaesthesia is the **reversible chemical blockade of nerve roots** produced by injecting a small dose of local anaesthetic into the cerebrospinal fluid of the **lumbar subarachnoid space** below the termination of the spinal cord, giving rapid, dense sympathetic, sensory and motor block for surgery **below the umbilicus**; it is administered only by a trained anaesthetist with full monitoring and resuscitation facilities.",
   frequency: "less-common",
   keywords: [
     "subarachnoid block",
@@ -5743,7 +5743,7 @@ topics.push({
   id: "surgery-office-blood-transfusion",
   title: "Blood transfusion, blood products and transfusion reactions",
   oneLiner:
-    "Blood transfusion is the therapeutic intravenous administration of whole blood or, far more usually, a specific component separated from it, given only when the deficit it corrects is causing or will cause harm, after ABO and Rh D grouping and compatibility testing, and accepting a defined set of immunological, infective and metabolic hazards.",
+    "Blood transfusion is the therapeutic intravenous administration of whole blood or, far more usually, **a specific component separated from it**, given only when the deficit it corrects is causing or will cause harm, after **ABO and Rh D grouping** and compatibility testing, and accepting a defined set of **immunological, infective and metabolic hazards**.",
   frequency: "less-common",
   keywords: [
     "packed red cells",
@@ -6551,7 +6551,7 @@ topics.push({
   id: "surgery-office-tracheostomy",
   title: "Tracheostomy: indications, care and complications",
   oneLiner:
-    "Tracheostomy is the creation of an opening in the anterior wall of the trachea, classically through the 2nd and 3rd tracheal rings, brought out on the skin of the neck as a stoma to provide an alternative airway - strictly, tracheotomy is the act of cutting into the trachea for a temporary opening that closes when the tube is removed while tracheostomy is the fashioned stoma, and both differ from cricothyroidotomy, which is an emergency incision through the cricothyroid membrane above the thyroid gland and is meant to be converted or closed within 48-72 hours, the figure Dhingra and ATLS teach, though some units now allow longer.",
+    "Tracheostomy is the creation of an opening in the anterior wall of the trachea, classically through **the 2nd and 3rd tracheal rings**, brought out on the skin of the neck as a stoma to provide an alternative airway - strictly, tracheotomy is the act of cutting into the trachea for a temporary opening that closes when the tube is removed while tracheostomy is the fashioned stoma, and both differ from cricothyroidotomy, which is an emergency incision through **the cricothyroid membrane** above the thyroid gland and is meant to be converted or closed within **48-72 hours**, the figure Dhingra and ATLS teach, though some units now allow longer.",
   frequency: "uncommon",
   keywords: [
     "tracheostomy",

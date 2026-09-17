@@ -159,7 +159,8 @@ export default function PyqScreen({
       <button
         type="button"
         onClick={onOpenSources}
-        className="mt-2 w-full rounded-xl border border-cyan-200 bg-cyan-50 px-4 py-3 text-left text-sm font-semibold text-cyan-950"
+        className="mt-2 w-full rounded-lg border px-4 py-3 text-left text-sm font-semibold"
+        style={{ borderColor: "var(--rule)", background: "var(--mint)", color: "var(--head)" }}
       >
         Read the source documents in full →
       </button>

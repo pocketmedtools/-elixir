@@ -6,7 +6,7 @@ topics.push({
   id: "emergency-cardiac-arrest",
   title: "Cardiac arrest: BLS and ACLS essentials for the clinic",
   oneLiner:
-    "Cardiac arrest is the sudden cessation of effective cardiac mechanical activity, recognised in an unresponsive person who is not breathing normally, and treated by immediate high-quality chest compressions, early defibrillation of shockable rhythms, adrenaline 1 mg IV every 3-5 minutes, and correction of the 4 Hs and 4 Ts.",
+    "Cardiac arrest is the sudden cessation of effective cardiac mechanical activity, recognised in an unresponsive person who is **not breathing normally**, and treated by immediate high-quality chest compressions, early defibrillation of shockable rhythms, **adrenaline 1 mg IV every 3-5 minutes**, and correction of **the 4 Hs and 4 Ts**.",
   frequency: "core",
   keywords: [
     "CPR",
@@ -577,7 +577,7 @@ topics.push({
   id: "emergency-anaphylaxis",
   title: "Anaphylaxis",
   oneLiner:
-    "Anaphylaxis is an acute, life-threatening, generalised hypersensitivity reaction with sudden airway, breathing or circulation compromise usually accompanied by skin changes, and it is treated with intramuscular adrenaline 0.5 mg of 1:1000 into the anterolateral thigh, repeated every 5 minutes as needed.",
+    "Anaphylaxis is an acute, life-threatening, generalised hypersensitivity reaction with sudden **airway, breathing or circulation compromise** usually accompanied by skin changes, and it is treated with **intramuscular adrenaline 0.5 mg of 1:1000** into **the anterolateral thigh**, repeated every 5 minutes as needed.",
   frequency: "core",
   keywords: [
     "anaphylaxis",
@@ -1114,7 +1114,7 @@ topics.push({
   id: "emergency-shock",
   title: "Shock: recognition and the first hour of fluids",
   oneLiner:
-    "Shock is acute circulatory failure with inadequate tissue oxygen delivery, recognised at the bedside by tachycardia, a narrow pulse pressure, delayed capillary refill, altered sensorium and oliguria, and treated in the first hour by classifying the type, giving type-appropriate fluid, starting noradrenaline when fluid fails, and treating the cause.",
+    "Shock is **acute circulatory failure** with inadequate tissue oxygen delivery, recognised at the bedside by tachycardia, **a narrow pulse pressure**, delayed capillary refill, altered sensorium and oliguria, and treated in the first hour by classifying the type, giving type-appropriate fluid, **starting noradrenaline when fluid fails**, and treating the cause.",
   frequency: "core",
   keywords: [
     "shock",
@@ -1575,7 +1575,7 @@ topics.push({
   id: "emergency-poisoning",
   title: "Poisoning in Indian practice: organophosphate, paracetamol, corrosive, rodenticide and oleander",
   oneLiner:
-    "Acute poisoning is managed by resuscitation and decontamination before diagnosis, by recognising the toxidrome at the bedside, and by giving the specific antidote in full dose - atropine titrated to a dry chest in organophosphate poisoning, N-acetylcysteine 150 mg/kg then 50 mg/kg then 100 mg/kg in paracetamol overdose, vitamin K1 in superwarfarin ingestion, and digoxin-specific antibody or temporary pacing in yellow oleander - while corrosives and hydrocarbons are never lavaged and aluminium phosphide has no antidote at all.",
+    "Acute poisoning is managed by **resuscitation and decontamination before diagnosis**, by recognising the toxidrome at the bedside, and by giving the specific antidote in full dose - **atropine titrated to a dry chest** in organophosphate poisoning, N-acetylcysteine 150 mg/kg then 50 mg/kg then 100 mg/kg in paracetamol overdose, vitamin K1 in superwarfarin ingestion, and digoxin-specific antibody or temporary pacing in yellow oleander - while corrosives and hydrocarbons are never lavaged and **aluminium phosphide has no antidote** at all.",
   frequency: "core",
   keywords: [
     "organophosphate",
@@ -2141,7 +2141,7 @@ topics.push({
   id: "emergency-burns",
   title: "Burns: first aid, fluid estimation and referral",
   oneLiner:
-    "A burn is assessed by cooling the wound with running water for 20 minutes while keeping the patient warm, by estimating burn surface area with the rule of nines or the patient's palm as 1%, by estimating depth, and by starting Ringer's lactate at 4 mL per kg per percent burn in the first 24 hours from the time of the burn with half given in the first 8 hours, titrated to a urine output of 0.5 mL/kg/hour in adults and 1 mL/kg/hour in children, with referral of any burn above 10% in an adult or 5% in a child and of all burns to the face, hands, feet, perineum or major joints.",
+    "A burn is assessed by cooling the wound with **running water for 20 minutes** while keeping the patient warm, by estimating burn surface area with **the rule of nines** or the patient's palm as 1%, by estimating depth, and by starting **Ringer's lactate at 4 mL per kg** per percent burn in the first 24 hours from the time of the burn with half given in the first 8 hours, titrated to a urine output of 0.5 mL/kg/hour in adults and 1 mL/kg/hour in children, with referral of any burn above 10% in an adult or 5% in a child and of all burns to the face, hands, feet, perineum or major joints.",
   frequency: "common",
   keywords: [
     "burns",
@@ -2652,7 +2652,7 @@ topics.push({
   id: "emergency-trauma-primary-survey",
   title: "The trauma primary survey and safe transfer",
   oneLiner:
-    "The trauma primary survey treats injuries in the order that kills - catastrophic external haemorrhage, then airway with cervical spine protection, breathing, circulation with haemorrhage control, disability and exposure - fixing each problem before moving on, giving tranexamic acid 1 g intravenously within 3 hours of injury, resuscitating with warmed blood rather than large volumes of crystalloid, and transferring the packaged patient early with a structured ATMIST handover rather than delaying for investigations that will not change what the clinic can do.",
+    "The trauma primary survey treats injuries in the order that kills - **catastrophic external haemorrhage**, then airway with cervical spine protection, breathing, circulation with haemorrhage control, disability and exposure - fixing each problem before moving on, giving **tranexamic acid 1 g intravenously** within 3 hours of injury, resuscitating with warmed blood rather than large volumes of crystalloid, and transferring the packaged patient early with **a structured ATMIST handover** rather than delaying for investigations that will not change what the clinic can do.",
   frequency: "common",
   keywords: [
     "trauma",
@@ -3164,7 +3164,7 @@ topics.push({
   id: "emergency-altered-sensorium",
   title: "Altered sensorium in the clinic",
   oneLiner:
-    "Altered sensorium is any acute change in the level of arousal or the content of consciousness, and in a family clinic it is managed by securing airway, breathing and circulation first, then excluding hypoglycaemia, hypoxia, opioid effect and seizure at the bedside within minutes, before a structured search through the AEIOU TIPS causes and an early, escorted transfer.",
+    "Altered sensorium is any acute change in the level of arousal or **the content of consciousness**, and in a family clinic it is managed by securing airway, breathing and circulation first, then excluding **hypoglycaemia, hypoxia, opioid effect and seizure** at the bedside within minutes, before a structured search through **the AEIOU TIPS causes** and an early, escorted transfer.",
   frequency: "core",
   keywords: [
     "altered sensorium",
@@ -3685,7 +3685,7 @@ topics.push({
   id: "emergency-tray-and-readiness",
   title: "The emergency tray: drugs, equipment and the clinic's readiness drill",
   oneLiner:
-    "The emergency tray is a single sealed, checklist-controlled tray holding the small set of drugs and equipment that a family clinic must be able to reach within 30 seconds - adrenaline, atropine, dextrose, a benzodiazepine, oxygen, a self-inflating bag and suction being the irreducible core - kept usable by a named person, a dated log, expiry rotation and a quarterly mock drill.",
+    "The emergency tray is a single sealed, checklist-controlled tray holding the small set of drugs and equipment that a family clinic must be able to reach **within 30 seconds** - **adrenaline, atropine, dextrose**, a benzodiazepine, oxygen, a self-inflating bag and suction being the irreducible core - kept usable by a named person, a dated log, expiry rotation and **a quarterly mock drill**.",
   frequency: "common",
   keywords: [
     "emergency tray",
@@ -4252,7 +4252,7 @@ topics.push({
   id: "emergency-ards",
   title: "Acute respiratory distress syndrome",
   oneLiner:
-    "Acute respiratory distress syndrome is acute, diffuse, inflammatory lung injury defined by the Berlin criteria of 2012 - onset within one week of a known insult or new or worsening respiratory symptoms, bilateral opacities on chest imaging not fully explained by effusion, collapse or nodules, respiratory failure not fully explained by cardiac failure or fluid overload, and hypoxaemia graded by the PaO2/FiO2 ratio (mild 201-300, moderate 101-200, severe 100 or less) measured on a PEEP or CPAP of at least 5 cmH2O - the histological substrate being diffuse alveolar damage, and the treatment being treatment of the cause plus lung-protective ventilation in an intensive care unit, so that the family physician's job is recognition, oxygenation, early referral and long-term follow-up rather than definitive care.",
+    "Acute respiratory distress syndrome is acute, diffuse, inflammatory lung injury defined by **the Berlin criteria of 2012** - onset within one week of a known insult or new or worsening respiratory symptoms, bilateral opacities on chest imaging not fully explained by effusion, collapse or nodules, respiratory failure not fully explained by cardiac failure or fluid overload, and hypoxaemia graded by **the PaO2/FiO2 ratio** (mild 201-300, moderate 101-200, severe 100 or less) measured on a PEEP or CPAP of at least 5 cmH2O - the histological substrate being diffuse alveolar damage, and the treatment being treatment of the cause plus **lung-protective ventilation** in an intensive care unit, so that the family physician's job is recognition, oxygenation, early referral and long-term follow-up rather than definitive care.",
   frequency: "less-common",
   keywords: [
     "ARDS",

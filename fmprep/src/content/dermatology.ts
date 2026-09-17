@@ -6,7 +6,7 @@ topics.push({
   id: "dermatology-lesion-description",
   title: "Describing a skin lesion: primary and secondary morphology",
   oneLiner:
-    "A skin lesion is described in a fixed order - number, site and distribution, size, shape, surface, margin, colour, consistency and arrangement, followed by the secondary changes - and the diagnosis is then offered as a morphological pattern, because in the short case the marks are given for the description and not for the guess.",
+    "A skin lesion is described in **a fixed order** - number, site and distribution, size, shape, surface, margin, colour, consistency and arrangement, followed by the secondary changes - and the diagnosis is then offered as **a morphological pattern**, because in the short case the marks are given for the description and **not for the guess**.",
   frequency: "core",
   keywords: [
     "primary lesion",
@@ -472,7 +472,7 @@ topics.push({
   id: "dermatology-scabies-pediculosis",
   title: "Scabies and pediculosis, including treatment of the whole household",
   oneLiner:
-    "Scabies is an intensely pruritic infestation by the mite Sarcoptes scabiei var. hominis in which nocturnal itch, burrows and papules in the finger webs, wrists, axillae, waist and genitalia, together with a history of itching in other members of the household, make the diagnosis clinically, and the cure depends entirely on treating every contact simultaneously with topical permethrin 5 per cent or oral ivermectin plus decontamination of clothes and bedding.",
+    "Scabies is an intensely pruritic infestation by the mite **Sarcoptes scabiei var. hominis** in which **nocturnal itch, burrows** and papules in the finger webs, wrists, axillae, waist and genitalia, together with a history of itching in other members of the household, make the diagnosis clinically, and the cure depends entirely on **treating every contact simultaneously** with topical permethrin 5 per cent or oral ivermectin plus decontamination of clothes and bedding.",
   frequency: "core",
   keywords: [
     "scabies",
@@ -951,7 +951,7 @@ topics.push({
   id: "dermatology-eczema-atopic-dermatitis",
   title: "Eczema and atopic dermatitis, with the topical steroid ladder",
   oneLiner:
-    "Eczema is a pattern of inflammation of the epidermis and dermis characterised clinically by itch with ill-defined erythema, papulovesicles, oozing and crusting when acute and by lichenification, scaling and fissuring when chronic, of which atopic dermatitis is the commonest form, diagnosed by the Hanifin and Rajka or UK Working Party criteria, and treated with liberal emollients, a topical corticosteroid matched in potency to the site and severity, identification of triggers and treatment of infection.",
+    "Eczema is a pattern of inflammation of the epidermis and dermis characterised clinically by **itch with ill-defined erythema**, papulovesicles, oozing and crusting when acute and by lichenification, scaling and fissuring when chronic, of which **atopic dermatitis** is the commonest form, diagnosed by the Hanifin and Rajka or UK Working Party criteria, and treated with **liberal emollients**, a topical corticosteroid matched in potency to the site and severity, identification of triggers and treatment of infection.",
   frequency: "core",
   keywords: [
     "eczema",
@@ -1424,7 +1424,7 @@ topics.push({
   id: "dermatology-acne-vulgaris",
   title: "Acne vulgaris: grading, treatment ladder and isotretinoin",
   oneLiner:
-    "Acne vulgaris is a chronic inflammatory disease of the pilosebaceous unit driven by follicular hyperkeratinisation, androgen-driven sebum excess, colonisation by Cutibacterium acnes and perifollicular inflammation, whose defining lesion is the comedone, and which is graded by lesion type and severity into mild, moderate, severe and nodulocystic disease to select topical retinoid and benzoyl peroxide, oral doxycycline, hormonal therapy or oral isotretinoin.",
+    "Acne vulgaris is a chronic inflammatory disease of **the pilosebaceous unit** driven by follicular hyperkeratinisation, androgen-driven sebum excess, colonisation by Cutibacterium acnes and perifollicular inflammation, whose defining lesion is **the comedone**, and which is graded by lesion type and severity into mild, moderate, severe and nodulocystic disease to select **topical retinoid and benzoyl peroxide**, oral doxycycline, hormonal therapy or oral isotretinoin.",
   frequency: "common",
   keywords: [
     "acne vulgaris",
@@ -1900,7 +1900,7 @@ topics.push({
   id: "dermatology-urticaria-angioedema",
   title: "Urticaria and angioedema, acute and chronic",
   oneLiner:
-    "Urticaria is a mast-cell-driven eruption of transient itchy wheals, each lasting less than 24 hours and resolving without residual marks, with or without angioedema, classified as acute (under six weeks) or chronic spontaneous and inducible (six weeks or longer), and managed by a stepwise increase of second-generation H1 antihistamines up to four times the standard dose before adding omalizumab or ciclosporin, with adrenaline reserved for airway angioedema and anaphylaxis.",
+    "Urticaria is a mast-cell-driven eruption of **transient itchy wheals**, each lasting **less than 24 hours** and resolving without residual marks, with or without angioedema, classified as acute (under six weeks) or chronic spontaneous and inducible (six weeks or longer), and managed by a stepwise increase of second-generation H1 antihistamines up to **four times the standard dose** before adding omalizumab or ciclosporin, with adrenaline reserved for airway angioedema and anaphylaxis.",
   frequency: "common",
   keywords: [
     "urticaria",
@@ -2344,7 +2344,7 @@ topics.push({
   id: "dermatology-psoriasis",
   title: "Psoriasis: plaque disease, nails, arthritis and the treatment ladder",
   oneLiner:
-    "Psoriasis is a chronic, immune-mediated, genetically determined inflammatory disease of skin and joints driven by the interleukin 23 and T helper 17 axis, whose classical lesion is a well-defined erythematous plaque with silvery-white scale over the extensors, scalp and sacrum with nail pitting and onycholysis, and which is managed by topical vitamin D analogue with corticosteroid for limited disease and by phototherapy, methotrexate, ciclosporin, acitretin or biologics for extensive, erythrodermic, pustular or arthritic disease.",
+    "Psoriasis is a chronic, immune-mediated, genetically determined inflammatory disease of skin and joints driven by the interleukin 23 and T helper 17 axis, whose classical lesion is a **well-defined erythematous plaque with silvery-white scale** over the extensors, scalp and sacrum with **nail pitting and onycholysis**, and which is managed by **topical vitamin D analogue with corticosteroid** for limited disease and by phototherapy, methotrexate, ciclosporin, acitretin or biologics for extensive, erythrodermic, pustular or arthritic disease.",
   frequency: "common",
   keywords: [
     "psoriasis",
@@ -2821,7 +2821,7 @@ topics.push({
   id: "dermatology-leprosy-nlep",
   title: "Leprosy under NLEP: cardinal signs, classification, MDT and lepra reactions",
   oneLiner:
-    "Leprosy is a chronic granulomatous infection by Mycobacterium leprae affecting skin and peripheral nerves, diagnosed under the National Leprosy Eradication Programme by any one of three cardinal signs - a definite hypopigmented or erythematous patch with definite sensory loss, a thickened or tender peripheral nerve with loss of sensation or weakness in its distribution, or a positive slit-skin smear - classified for treatment as paucibacillary or multibacillary and treated with fixed-duration multidrug therapy, with lepra reactions and nerve function impairment managed separately with corticosteroids while multidrug therapy continues.",
+    "Leprosy is a chronic granulomatous infection by **Mycobacterium leprae** affecting skin and peripheral nerves, diagnosed under the National Leprosy Eradication Programme by any one of **three cardinal signs** - a definite hypopigmented or erythematous patch with definite sensory loss, a thickened or tender peripheral nerve with loss of sensation or weakness in its distribution, or a positive slit-skin smear - classified for treatment as paucibacillary or multibacillary and treated with **fixed-duration multidrug therapy**, with lepra reactions and nerve function impairment managed separately with corticosteroids while multidrug therapy continues.",
   frequency: "common",
   keywords: [
     "leprosy",
@@ -3316,7 +3316,7 @@ topics.push({
   id: "dermatology-drug-eruptions-sjs-ten",
   title: "Drug eruptions, Stevens-Johnson syndrome and toxic epidermal necrolysis",
   oneLiner:
-    "Adverse cutaneous drug reactions range from a benign morbilliform exanthem to the severe cutaneous adverse reactions - Stevens-Johnson syndrome and toxic epidermal necrolysis, DRESS and acute generalised exanthematous pustulosis - which are separated by mucosal involvement, skin pain, a positive Nikolsky sign and systemic features, and in which the single act that changes mortality is immediate withdrawal of the culprit drug followed by supportive care in a burns or intensive care setting with prognosis quantified by SCORTEN.",
+    "Adverse cutaneous drug reactions range from a benign morbilliform exanthem to the severe cutaneous adverse reactions - Stevens-Johnson syndrome and toxic epidermal necrolysis, DRESS and acute generalised exanthematous pustulosis - which are separated by mucosal involvement, skin pain, **a positive Nikolsky sign** and systemic features, and in which the single act that changes mortality is **immediate withdrawal of the culprit drug** followed by supportive care in a burns or intensive care setting with prognosis **quantified by SCORTEN**.",
   frequency: "less-common",
   keywords: [
     "drug eruption",

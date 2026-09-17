@@ -6,7 +6,7 @@ topics.push({
   id: "renal-urology-chronic-kidney-disease",
   title: "Chronic kidney disease: staging, slowing progression and what the family physician owns",
   oneLiner:
-    "Chronic kidney disease is an abnormality of kidney structure or function present for more than 3 months - most often an eGFR below 60 mL/min/1.73 m2 or a urine albumin-creatinine ratio of 30 mg/g or more - and it is staged by G category (eGFR) and A category (albuminuria) together, because the two predict outcome independently.",
+    "Chronic kidney disease is an abnormality of kidney structure or function **present for more than 3 months** - most often an **eGFR below 60 mL/min/1.73 m2** or a urine albumin-creatinine ratio of **30 mg/g or more** - and it is staged by G category (eGFR) and A category (albuminuria) together, because the two predict outcome independently.",
   frequency: "core",
   keywords: [
     "CKD",
@@ -566,7 +566,7 @@ topics.push({
   id: "renal-urology-acute-kidney-injury",
   title: "Acute kidney injury: recognising it early, staging it by KDIGO and stopping it getting worse",
   oneLiner:
-    "Acute kidney injury is an abrupt fall in glomerular filtration defined by KDIGO as a rise in serum creatinine of 0.3 mg/dL or more within 48 hours, or a rise to 1.5 times a known or presumed baseline within the preceding 7 days, or a urine output below 0.5 mL/kg/h for 6 hours, and it is staged 1 to 3 on whichever of creatinine or urine output gives the higher stage.",
+    "Acute kidney injury is an abrupt fall in glomerular filtration defined by KDIGO as a rise in serum creatinine of **0.3 mg/dL or more within 48 hours**, or a rise to **1.5 times a known or presumed baseline** within the preceding 7 days, or a urine output **below 0.5 mL/kg/h for 6 hours**, and it is staged 1 to 3 on whichever of creatinine or urine output gives the higher stage.",
   frequency: "core",
   keywords: [
     "AKI",
@@ -999,7 +999,7 @@ topics.push({
   id: "renal-urology-urinary-tract-infection",
   title: "Urinary tract infection in adults: uncomplicated, complicated, recurrent and catheter-associated",
   oneLiner:
-    "Urinary tract infection is the invasion of a normally sterile urinary tract by uropathogens, most often Escherichia coli, and it is classified as uncomplicated cystitis, uncomplicated pyelonephritis, or complicated infection (male sex, pregnancy, obstruction, stones, catheter, diabetes, immunosuppression or a transplanted kidney), because that classification alone decides whether the patient needs 3 days of nitrofurantoin at home or 10-14 days of intravenous therapy with imaging.",
+    "Urinary tract infection is the invasion of a normally sterile urinary tract by uropathogens, most often **Escherichia coli**, and it is classified as **uncomplicated cystitis, uncomplicated pyelonephritis, or complicated infection** (male sex, pregnancy, obstruction, stones, catheter, diabetes, immunosuppression or a transplanted kidney), because that classification alone decides whether the patient needs **3 days of nitrofurantoin** at home or 10-14 days of intravenous therapy with imaging.",
   frequency: "core",
   keywords: [
     "UTI",
@@ -1443,7 +1443,7 @@ topics.push({
   id: "renal-urology-luts-bph",
   title: "Lower urinary tract symptoms and benign prostatic hyperplasia",
   oneLiner:
-    "Benign prostatic hyperplasia is a histological proliferation of stromal and epithelial cells in the transition zone of the prostate that may cause benign prostatic enlargement and bladder outlet obstruction, presenting as storage and voiding lower urinary tract symptoms that are quantified by the International Prostate Symptom Score and managed by watchful waiting, an alpha blocker, a 5-alpha reductase inhibitor or surgery according to symptom severity, prostate size and complications.",
+    "Benign prostatic hyperplasia is a histological proliferation of stromal and epithelial cells in the **transition zone of the prostate** that may cause benign prostatic enlargement and bladder outlet obstruction, presenting as storage and voiding lower urinary tract symptoms that are quantified by the **International Prostate Symptom Score** and managed by watchful waiting, **an alpha blocker**, a 5-alpha reductase inhibitor or surgery according to symptom severity, prostate size and complications.",
   frequency: "common",
   keywords: [
     "BPH",
@@ -1890,7 +1890,7 @@ topics.push({
   id: "renal-urology-renal-stones",
   title: "Renal and ureteric stones: the colic, the emergency, and preventing the next one",
   oneLiner:
-    "Urolithiasis is the formation of crystalline concretions in the urinary tract - about 80% calcium oxalate, the rest uric acid, struvite, calcium phosphate and cystine - which presents as loin-to-groin colic with haematuria, is confirmed by non-contrast CT of the kidneys, ureters and bladder, and is treated by analgesia, medical expulsive therapy for stones under 10 mm, and urgent decompression whenever obstruction is accompanied by infection or renal impairment.",
+    "Urolithiasis is the formation of crystalline concretions in the urinary tract - **about 80% calcium oxalate**, the rest uric acid, struvite, calcium phosphate and cystine - which presents as **loin-to-groin colic with haematuria**, is confirmed by non-contrast CT of the kidneys, ureters and bladder, and is treated by analgesia, medical expulsive therapy for **stones under 10 mm**, and urgent decompression whenever obstruction is accompanied by infection or renal impairment.",
   frequency: "common",
   keywords: [
     "urolithiasis",
@@ -2330,7 +2330,7 @@ topics.push({
   id: "renal-urology-hyponatraemia-hyperkalaemia",
   title: "Hyponatraemia and hyperkalaemia in the clinic",
   oneLiner:
-    "Hyponatraemia is a serum sodium below 135 mmol/L, almost always a disorder of water rather than of salt, and is worked up by measuring serum osmolality, then volume status, then urine sodium and urine osmolality; hyperkalaemia is a serum potassium above 5.5 mmol/L, which becomes an immediate emergency at 6.0 mmol/L or with any ECG change, and is treated in the fixed order of stabilise the myocardium, shift potassium into cells, then remove it from the body.",
+    "Hyponatraemia is a serum sodium **below 135 mmol/L**, almost always a disorder of water rather than of salt, and is worked up by measuring serum osmolality, then volume status, then urine sodium and urine osmolality; hyperkalaemia is a serum potassium **above 5.5 mmol/L**, which becomes an immediate emergency at 6.0 mmol/L or with any ECG change, and is treated in the fixed order of **stabilise the myocardium**, shift potassium into cells, then remove it from the body.",
   frequency: "common",
   keywords: [
     "hyponatraemia",
@@ -2771,7 +2771,7 @@ topics.push({
   id: "renal-urology-drug-dosing-renal-impairment",
   title: "Drug dosing in renal impairment: the prescription that protects the kidney",
   oneLiner:
-    "Safe prescribing in renal impairment means estimating clearance with the equation the drug label was written against - Cockcroft-Gault creatinine clearance in mL/min, not the reported eGFR in mL/min/1.73 m2 - then deciding for each drug whether to reduce the dose, lengthen the interval, avoid it altogether or monitor its level, while stopping the nephrotoxins and issuing sick-day rules.",
+    "Safe prescribing in renal impairment means estimating clearance with the equation the drug label was written against - **Cockcroft-Gault creatinine clearance in mL/min**, **not the reported eGFR** in mL/min/1.73 m2 - then deciding for each drug whether to reduce the dose, lengthen the interval, avoid it altogether or monitor its level, while **stopping the nephrotoxins** and issuing sick-day rules.",
   frequency: "common",
   keywords: [
     "Cockcroft-Gault",
@@ -3195,7 +3195,7 @@ topics.push({
   id: "renal-urology-proteinuria-nephrotic-nephritic",
   title: "Proteinuria, and the nephrotic and nephritic syndromes",
   oneLiner:
-    "Proteinuria is quantified by the urine albumin-creatinine ratio or protein-creatinine ratio rather than by dipstick, and it separates into the nephrotic syndrome - proteinuria above 3.5 g/day with hypoalbuminaemia below 3.0 g/dL, oedema and hyperlipidaemia, from a podocyte lesion with a bland sediment - and the nephritic syndrome - haematuria with dysmorphic red cells and red cell casts, hypertension, oliguria and a rising creatinine, from an inflammatory glomerular lesion.",
+    "Proteinuria is quantified by the **urine albumin-creatinine ratio** or protein-creatinine ratio rather than by dipstick, and it separates into the nephrotic syndrome - **proteinuria above 3.5 g/day** with hypoalbuminaemia below 3.0 g/dL, oedema and hyperlipidaemia, from a podocyte lesion with a bland sediment - and the nephritic syndrome - haematuria with dysmorphic red cells and **red cell casts**, hypertension, oliguria and a rising creatinine, from an inflammatory glomerular lesion.",
   frequency: "less-common",
   keywords: [
     "proteinuria",

@@ -133,7 +133,7 @@ export default function ChartsScreen({
             before any repeats. The Android build also sends it as a notification. */}
         {!query && !kind && today && (
           <section className="mt-6 rounded-xl border-[1.5px] p-4" style={{ borderColor: "var(--rule)", background: "var(--cream)" }}>
-            <p className="text-[12.5px] font-bold" style={{ color: "var(--head)" }}>
+            <p className="text-[12.5px] font-bold" style={{ color: "var(--label)" }}>
               Today&apos;s classification
             </p>
             <Row entry={today} open={open === today.id} onToggle={() => setOpen(open === today.id ? null : today.id)} onOpenTopic={onOpenTopic} />
@@ -180,7 +180,7 @@ function Row({
   return (
     <div style={colorVars(entry.subjectId)}>
       <button type="button" onClick={onToggle} className="w-full text-left">
-        <p className="text-[12.5px] font-bold" style={{ color: "var(--head)" }}>
+        <p className="text-[12.5px] font-bold" style={{ color: "var(--label)" }}>
           {KIND_LABEL[entry.kind]} · {entry.subjectTitle}
         </p>
         <p className="mt-1 text-[17px] font-bold leading-snug" style={{ color: "var(--head)" }}>

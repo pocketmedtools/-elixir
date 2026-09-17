@@ -6,7 +6,7 @@ topics.push({
   id: "eye-ent-red-eye",
   title: "The red eye: telling the five causes apart at the bedside",
   oneLiner:
-    "A red eye is separated at the bedside into the five classical causes - conjunctivitis, keratitis, anterior uveitis, acute angle-closure glaucoma and scleritis - by four findings alone: visual acuity, the pattern of redness, the cornea after fluorescein, and the pupil, with digital tension added when the eye is painful.",
+    "A red eye is separated at the bedside into **the five classical causes** - conjunctivitis, keratitis, anterior uveitis, acute angle-closure glaucoma and scleritis - by **four findings alone**: visual acuity, the pattern of redness, the cornea after fluorescein, and the pupil, with **digital tension** added when the eye is painful.",
   frequency: "core",
   keywords: [
     "red eye",
@@ -581,7 +581,7 @@ topics.push({
   id: "eye-ent-otitis",
   title: "Acute otitis media, otitis externa and chronic suppurative otitis media",
   oneLiner:
-    "A discharging or painful ear is separated by otoscopy into acute otitis media (a bulging, red, immobile tympanic membrane with a middle ear effusion), otitis externa (a tender, oedematous canal with pain on tragal pressure and an intact drum) and chronic suppurative otitis media (a perforation with discharge for more than two weeks), the last of which must be further divided into safe mucosal disease and unsafe squamous disease with cholesteatoma.",
+    "A discharging or painful ear is separated by otoscopy into acute otitis media (**a bulging, red, immobile tympanic membrane** with a middle ear effusion), otitis externa (a tender, oedematous canal with **pain on tragal pressure** and an intact drum) and chronic suppurative otitis media (a perforation with discharge for more than two weeks), the last of which must be further divided into safe mucosal disease and **unsafe squamous disease with cholesteatoma**.",
   frequency: "core",
   keywords: [
     "acute otitis media",
@@ -1100,7 +1100,7 @@ topics.push({
   id: "eye-ent-sore-throat",
   title: "Sore throat, streptococcal scoring and tonsillitis",
   oneLiner:
-    "Most sore throats are viral and self-limiting, so the family physician's task is to use a validated score (Centor or McIsaac) plus the clinical context to identify the minority caused by group A beta-haemolytic Streptococcus - who need penicillin for 10 days to prevent rheumatic fever - while never missing the deep neck space and airway emergencies that present as a sore throat.",
+    "Most sore throats are viral and self-limiting, so the family physician's task is to use a validated score (**Centor or McIsaac**) plus the clinical context to identify the minority caused by **group A beta-haemolytic Streptococcus** - who need **penicillin for 10 days** to prevent rheumatic fever - while never missing the deep neck space and airway emergencies that present as a sore throat.",
   frequency: "core",
   keywords: [
     "sore throat",
@@ -1633,7 +1633,7 @@ topics.push({
   id: "eye-ent-rhinitis-sinusitis",
   title: "Allergic rhinitis and sinusitis",
   oneLiner:
-    "Allergic rhinitis is an IgE-mediated inflammation of the nasal mucosa classified by the ARIA system into intermittent or persistent and mild or moderate-severe, treated by allergen avoidance and intranasal corticosteroids; acute rhinosinusitis is overwhelmingly viral and needs an antibiotic only when the double-sickening pattern, symptoms beyond 10 days or severe illness with high fever and purulent discharge is present, while orbital and intracranial spread are the complications that must never be missed.",
+    "Allergic rhinitis is an **IgE-mediated inflammation of the nasal mucosa** classified by the ARIA system into intermittent or persistent and mild or moderate-severe, treated by allergen avoidance and **intranasal corticosteroids**; acute rhinosinusitis is overwhelmingly viral and needs an antibiotic only when the double-sickening pattern, **symptoms beyond 10 days** or severe illness with high fever and purulent discharge is present, while orbital and intracranial spread are the complications that must never be missed.",
   frequency: "core",
   keywords: [
     "allergic rhinitis",
@@ -2169,7 +2169,7 @@ topics.push({
   id: "eye-ent-refractive-error",
   title: "Refractive error, vision screening and presbyopia, with the National Programme for Control of Blindness",
   oneLiner:
-    "Uncorrected refractive error is the commonest cause of visual impairment and the second commonest cause of blindness in India, and it is entirely correctable, so the family physician's job is to measure vision with a Snellen chart and pinhole, recognise myopia, hypermetropia, astigmatism and presbyopia, screen children and drivers at the right ages, and use the free spectacle and school eye health provisions of the National Programme for Control of Blindness and Visual Impairment.",
+    "Uncorrected refractive error is **the commonest cause of visual impairment** and the second commonest cause of blindness in India, and it is **entirely correctable**, so the family physician's job is to measure vision with **a Snellen chart and pinhole**, recognise myopia, hypermetropia, astigmatism and presbyopia, screen children and drivers at the right ages, and use the free spectacle and school eye health provisions of the National Programme for Control of Blindness and Visual Impairment.",
   frequency: "common",
   keywords: [
     "refractive error",
@@ -2613,7 +2613,7 @@ topics.push({
   id: "eye-ent-cataract-dr-glaucoma",
   title: "Cataract, diabetic retinopathy screening and glaucoma detection - when the family physician refers",
   oneLiner:
-    "Cataract, diabetic retinopathy and glaucoma are the three chronic blinding diseases the family physician is expected to detect rather than treat: cataract by a dimmed red reflex with vision that does not improve on pinhole and is referred when it interferes with the patient's own daily function, diabetic retinopathy by an annual dilated fundus examination from the time of diagnosis, and glaucoma by disc cupping, intraocular pressure and field testing in the at-risk - because in glaucoma the vision already lost can never be recovered.",
+    "Cataract, diabetic retinopathy and glaucoma are the three chronic blinding diseases the family physician is expected to detect rather than treat: cataract by **a dimmed red reflex** with vision that does not improve on pinhole and is referred when it interferes with the patient's own daily function, diabetic retinopathy by **an annual dilated fundus examination** from the time of diagnosis, and glaucoma by disc cupping, intraocular pressure and field testing in the at-risk - because in glaucoma the vision already lost **can never be recovered**.",
   frequency: "common",
   keywords: [
     "cataract",
@@ -3084,7 +3084,7 @@ topics.push({
   id: "eye-ent-hearing-loss",
   title: "Hearing loss across ages, tuning fork tests and the deafness programme",
   oneLiner:
-    "Hearing loss is separated at the bedside into conductive and sensorineural by tuning fork tests with a 512 Hz fork - Rinne, Weber and Absolute Bone Conduction - then placed in an age-specific differential running from congenital deafness and glue ear in children to presbycusis, noise-induced loss and ototoxicity in adults, with sudden sensorineural hearing loss treated as an emergency and universal newborn screening and the National Programme for Prevention and Control of Deafness providing the public health frame.",
+    "Hearing loss is separated at the bedside into **conductive and sensorineural** by tuning fork tests with **a 512 Hz fork** - Rinne, Weber and Absolute Bone Conduction - then placed in an age-specific differential running from congenital deafness and glue ear in children to presbycusis, noise-induced loss and ototoxicity in adults, with sudden sensorineural hearing loss **treated as an emergency** and universal newborn screening and the National Programme for Prevention and Control of Deafness providing the public health frame.",
   frequency: "common",
   keywords: [
     "hearing loss",
@@ -3579,7 +3579,7 @@ topics.push({
   id: "eye-ent-epistaxis-foreign-bodies",
   title: "Epistaxis and foreign bodies in ear, nose and throat",
   oneLiner:
-    "Most epistaxis is anterior, from Little's area on the septum, and stops with correct first aid and cautery, while posterior bleeding in an elderly or anticoagulated patient can be life-threatening and needs packing, resuscitation and admission; foreign bodies are removed at the first attempt with the right instrument, with button batteries in the nose or oesophagus, organic bodies in the ear and any airway foreign body treated as emergencies.",
+    "Most epistaxis is anterior, from **Little's area on the septum**, and stops with correct first aid and cautery, while **posterior bleeding** in an elderly or anticoagulated patient can be life-threatening and needs packing, resuscitation and admission; foreign bodies are removed at the first attempt with the right instrument, with **button batteries** in the nose or oesophagus, organic bodies in the ear and any airway foreign body treated as emergencies.",
   frequency: "common",
   keywords: [
     "epistaxis",

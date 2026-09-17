@@ -6,7 +6,7 @@ topics.push({
   id: "musculoskeletal-low-back-pain",
   title: "Low back pain and its red flags",
   oneLiner:
-    "Low back pain is pain between the costal margins and the gluteal folds, over 90% of which is non-specific mechanical pain that needs a red-flag screen, reassurance, early mobilisation and short-course analgesia rather than imaging.",
+    "Low back pain is pain between the **costal margins and the gluteal folds**, **over 90%** of which is non-specific mechanical pain that needs a red-flag screen, **reassurance, early mobilisation and short-course analgesia** rather than imaging.",
   frequency: "core",
   keywords: [
     "backache",
@@ -567,7 +567,7 @@ topics.push({
   id: "musculoskeletal-knee-osteoarthritis",
   title: "Osteoarthritis of the knee",
   oneLiner:
-    "Knee osteoarthritis is a clinically diagnosed whole-joint disease of activity-related pain, brief morning stiffness under 30 minutes, crepitus and bony enlargement in a person over 45, treated first with weight loss and quadriceps exercise and only then with the most conservative effective analgesia.",
+    "Knee osteoarthritis is a clinically diagnosed whole-joint disease of activity-related pain, brief **morning stiffness under 30 minutes**, crepitus and bony enlargement in a person **over 45**, treated first with **weight loss and quadriceps exercise** and only then with the most conservative effective analgesia.",
   frequency: "core",
   keywords: [
     "OA knee",
@@ -1152,7 +1152,7 @@ topics.push({
   id: "musculoskeletal-gout",
   title: "Gout and hyperuricaemia",
   oneLiner:
-    "Gout is an inflammatory arthritis caused by deposition of monosodium urate crystals in and around joints once serum urate exceeds its saturation point, presenting as recurrent acute attacks that are treated with anti-inflammatories and then prevented for life by urate-lowering therapy titrated to a serum urate below 6 mg/dL.",
+    "Gout is an inflammatory arthritis caused by deposition of **monosodium urate crystals** in and around joints once serum urate exceeds its saturation point, presenting as recurrent acute attacks that are treated with anti-inflammatories and then prevented for life by **urate-lowering therapy** titrated to a serum urate **below 6 mg/dL**.",
   frequency: "core",
   keywords: [
     "gouty arthritis",
@@ -1657,7 +1657,7 @@ topics.push({
   id: "musculoskeletal-shoulder-pain",
   title: "Shoulder pain and adhesive capsulitis",
   oneLiner:
-    "Most shoulder pain in general practice is rotator cuff related, and the single discriminating question at the bedside is whether passive external rotation is preserved - loss of passive external rotation in all planes defines adhesive capsulitis (frozen shoulder), a self-limiting but 18-30 month condition strongly associated with diabetes.",
+    "Most shoulder pain in general practice is **rotator cuff related**, and the single discriminating question at the bedside is whether passive external rotation is preserved - **loss of passive external rotation** in all planes defines **adhesive capsulitis (frozen shoulder)**, a self-limiting but 18-30 month condition strongly associated with diabetes.",
   frequency: "common",
   keywords: [
     "frozen shoulder",
@@ -2172,7 +2172,7 @@ topics.push({
   id: "musculoskeletal-neck-pain",
   title: "Neck pain and cervical spondylosis",
   oneLiner:
-    "Most neck pain is mechanical and self-limiting, but every consultation must sort the patient into one of three boxes - simple mechanical neck pain, cervical radiculopathy, or cervical myelopathy - because myelopathy is a progressive cord disease that needs surgery and is missed when the gait and the plantars are not examined.",
+    "Most neck pain is **mechanical and self-limiting**, but every consultation must sort the patient into one of three boxes - simple mechanical neck pain, cervical radiculopathy, or **cervical myelopathy** - because myelopathy is a progressive cord disease that needs surgery and is missed when **the gait and the plantars** are not examined.",
   frequency: "common",
   keywords: [
     "cervical spondylosis",
@@ -2677,7 +2677,7 @@ topics.push({
   id: "musculoskeletal-osteoporosis",
   title: "Osteoporosis, vitamin D deficiency and the fragility fracture",
   oneLiner:
-    "Osteoporosis is a skeletal disorder of reduced bone mass and disrupted microarchitecture that raises fracture risk, defined densitometrically as a T-score of -2.5 or below at the hip or lumbar spine, or clinically by any fragility fracture of the hip or vertebra whatever the density; it is treated with calcium, vitamin D repletion, fall prevention and an antiresorptive drug, most often oral alendronate 70 mg weekly.",
+    "Osteoporosis is a skeletal disorder of reduced bone mass and disrupted microarchitecture that raises fracture risk, defined densitometrically as **a T-score of -2.5 or below** at the hip or lumbar spine, or clinically by **any fragility fracture** of the hip or vertebra whatever the density; it is treated with calcium, vitamin D repletion, fall prevention and an antiresorptive drug, most often oral **alendronate 70 mg weekly**.",
   frequency: "common",
   keywords: [
     "osteoporosis",
@@ -3204,7 +3204,7 @@ topics.push({
   id: "musculoskeletal-spondyloarthropathy-sle",
   title: "Seronegative spondyloarthropathy and recognising systemic lupus erythematosus",
   oneLiner:
-    "The seronegative spondyloarthropathies are a family of rheumatoid-factor-negative, HLA-B27-associated diseases characterised by inflammatory back pain, asymmetrical lower limb oligoarthritis, enthesitis, dactylitis and extra-articular features, while systemic lupus erythematosus is a multisystem autoimmune disease of young women in which a non-erosive arthritis is only one manifestation and the ANA is the screening test with anti-dsDNA and anti-Smith the specific ones.",
+    "The seronegative spondyloarthropathies are a family of rheumatoid-factor-negative, HLA-B27-associated diseases characterised by **inflammatory back pain**, asymmetrical lower limb oligoarthritis, enthesitis, dactylitis and extra-articular features, while systemic lupus erythematosus is a multisystem autoimmune disease of young women in which a non-erosive arthritis is only one manifestation and **the ANA is the screening test** with **anti-dsDNA and anti-Smith** the specific ones.",
   frequency: "less-common",
   keywords: [
     "seronegative spondyloarthropathy",
@@ -3737,7 +3737,7 @@ topics.push({
   id: "musculoskeletal-fractures-sports-injury",
   title: "Common fractures, splinting and sports or overuse injury in the clinic",
   oneLiner:
-    "The family physician's job in musculoskeletal trauma is to apply the Ottawa and Canadian C-spine rules to decide who needs a radiograph, to recognise the fractures that are missed or that threaten limb and life, to immobilise correctly in a plaster or functional splint above and below the joint, and to manage soft tissue and overuse injuries with protected loading and graded rehabilitation rather than rest.",
+    "The family physician's job in musculoskeletal trauma is to apply **the Ottawa and Canadian C-spine rules** to decide who needs a radiograph, to recognise the fractures that are missed or that threaten limb and life, to immobilise correctly in a plaster or functional splint **above and below the joint**, and to manage soft tissue and overuse injuries with **protected loading and graded rehabilitation** rather than rest.",
   frequency: "less-common",
   keywords: [
     "fracture",

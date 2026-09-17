@@ -75,7 +75,11 @@ export default function SubjectScreen({
                 key={topic.id}
                 onClick={() => onOpenTopic(topic.id)}
                 title={topic.title}
-                subtitle={topic.oneLiner.length > 150 ? `${topic.oneLiner.slice(0, 150)}…` : topic.oneLiner}
+                subtitle={(() => {
+                  // The one-liner carries **marked** runs for the reader; this list is plain text.
+                  const plain = topic.oneLiner.replace(/\*\*/g, "");
+                  return plain.length > 150 ? `${plain.slice(0, 150)}…` : plain;
+                })()}
                 right={
                   read[topic.id] ? (
                     <span aria-label="Read" title="Read" className="shrink-0 text-emerald-600">

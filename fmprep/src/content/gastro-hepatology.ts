@@ -6,7 +6,7 @@ topics.push({
   id: "gastro-hepatology-acid-peptic-gerd",
   title: "Acid peptic disease, GERD and Helicobacter pylori eradication",
   oneLiner:
-    "Acid peptic disease is mucosal injury of the stomach and duodenum caused by acid and pepsin acting on a mucosa weakened by Helicobacter pylori or NSAIDs, and in Indian practice it is managed by testing and treating H. pylori, withdrawing the offending drug, and giving a proton pump inhibitor before breakfast for a defined course rather than indefinitely.",
+    "Acid peptic disease is mucosal injury of the stomach and duodenum caused by acid and pepsin acting on a mucosa weakened by **Helicobacter pylori or NSAIDs**, and in Indian practice it is managed by **testing and treating H. pylori**, withdrawing the offending drug, and giving a **proton pump inhibitor before breakfast** for a defined course rather than indefinitely.",
   frequency: "core",
   keywords: [
     "APD",
@@ -596,7 +596,7 @@ topics.push({
   id: "gastro-hepatology-acute-diarrhoea",
   title: "Acute diarrhoea and dysentery: ORS, zinc and the water-borne outbreak",
   oneLiner:
-    "Acute diarrhoea is the passage of three or more loose or watery stools in 24 hours for less than 14 days, and its management rests on assessing dehydration clinically, replacing losses with low-osmolarity ORS, giving zinc for 14 days in every child under five, continuing feeding, and reserving antibiotics for dysentery, cholera and severe systemic illness.",
+    "Acute diarrhoea is the passage of **three or more loose or watery stools** in 24 hours for less than 14 days, and its management rests on assessing dehydration clinically, replacing losses with **low-osmolarity ORS**, giving **zinc for 14 days** in every child under five, continuing feeding, and reserving antibiotics for dysentery, cholera and severe systemic illness.",
   frequency: "core",
   keywords: [
     "acute gastroenteritis",
@@ -1195,7 +1195,7 @@ topics.push({
   id: "gastro-hepatology-jaundice",
   title: "The approach to jaundice, including drug-induced liver injury",
   oneLiner:
-    "Jaundice is yellow discolouration of skin, sclerae and mucous membranes from a serum bilirubin above about 2-3 mg/dL, and the clinical task is to place it in one of three boxes - prehepatic haemolytic, hepatocellular, or cholestatic - using the history, the urine and stool colour, the pattern of liver function tests and an ultrasound, before naming a cause.",
+    "Jaundice is **yellow discolouration of skin**, sclerae and mucous membranes from a serum bilirubin **above about 2-3 mg/dL**, and the clinical task is to place it in one of three boxes - **prehepatic haemolytic, hepatocellular, or cholestatic** - using the history, the urine and stool colour, the pattern of liver function tests and an ultrasound, before naming a cause.",
   frequency: "core",
   keywords: [
     "jaundice",
@@ -1820,7 +1820,7 @@ topics.push({
   id: "gastro-hepatology-viral-hepatitis",
   title: "Viral hepatitis A to E and the National Viral Hepatitis Control Programme",
   oneLiner:
-    "Viral hepatitis is inflammation of the liver caused by the five hepatotropic viruses A to E, of which A and E are faeco-orally transmitted and cause acute self-limiting illness with a risk of fulminant failure in pregnancy, while B and C are blood-borne, become chronic, and are the drivers of cirrhosis and hepatocellular carcinoma addressed by India's National Viral Hepatitis Control Programme.",
+    "Viral hepatitis is inflammation of the liver caused by the **five hepatotropic viruses A to E**, of which A and E are faeco-orally transmitted and cause acute self-limiting illness with a risk of **fulminant failure in pregnancy**, while B and C are **blood-borne, become chronic**, and are the drivers of cirrhosis and hepatocellular carcinoma addressed by India's National Viral Hepatitis Control Programme.",
   frequency: "core",
   keywords: [
     "hepatitis A",
@@ -2445,7 +2445,7 @@ topics.push({
   id: "gastro-hepatology-chronic-liver-disease",
   title: "Chronic liver disease and cirrhosis: ascites, encephalopathy, SBP and the decompensated patient",
   oneLiner:
-    "Cirrhosis is the end stage of chronic liver injury in which diffuse fibrosis and regenerative nodules replace normal architecture, producing portal hypertension and hepatocellular failure, and the family physician's job is to recognise decompensation - ascites, encephalopathy, variceal bleeding, jaundice - to stage severity with Child-Pugh and MELD, to treat spontaneous bacterial peritonitis and encephalopathy promptly, and to remove the ongoing insult, which in India is most often alcohol, hepatitis B or C, or metabolic fatty liver disease.",
+    "Cirrhosis is the end stage of chronic liver injury in which **diffuse fibrosis and regenerative nodules** replace normal architecture, producing portal hypertension and hepatocellular failure, and the family physician's job is to recognise decompensation - **ascites, encephalopathy, variceal bleeding, jaundice** - to stage severity with **Child-Pugh and MELD**, to treat spontaneous bacterial peritonitis and encephalopathy promptly, and to remove the ongoing insult, which in India is most often alcohol, hepatitis B or C, or metabolic fatty liver disease.",
   frequency: "core",
   keywords: [
     "cirrhosis",
@@ -2932,7 +2932,7 @@ topics.push({
   id: "gastro-hepatology-gi-bleeding",
   title: "Upper and lower gastrointestinal bleeding: variceal and non-variceal, who is referred and how fast",
   oneLiner:
-    "Gastrointestinal bleeding is bleeding from anywhere between the mouth and the anus, divided at the ligament of Treitz into upper (haematemesis, coffee-ground vomit, melaena) and lower (haematochezia), and the family physician's task is to resuscitate first, decide by risk score and by the presence of chronic liver disease whether this is a variceal or a non-variceal bleed, start terlipressin with ceftriaxone or an intravenous proton pump inhibitor accordingly, and transfer for endoscopy within 12 to 24 hours.",
+    "Gastrointestinal bleeding is bleeding from anywhere between the mouth and the anus, divided at **the ligament of Treitz** into upper (haematemesis, coffee-ground vomit, melaena) and lower (haematochezia), and the family physician's task is to **resuscitate first**, decide by risk score and by the presence of chronic liver disease whether this is a variceal or a non-variceal bleed, start terlipressin with ceftriaxone or an intravenous proton pump inhibitor accordingly, and transfer for endoscopy **within 12 to 24 hours**.",
   frequency: "common",
   keywords: [
     "upper gastrointestinal bleed",
@@ -3381,7 +3381,7 @@ topics.push({
   id: "gastro-hepatology-ibs-constipation",
   title: "Irritable bowel syndrome and chronic constipation",
   oneLiner:
-    "Irritable bowel syndrome is a disorder of gut-brain interaction defined by the Rome IV criteria as recurrent abdominal pain at least one day a week for three months associated with defecation or a change in stool frequency or form, with no structural disease, and chronic constipation is infrequent, hard or difficult defecation for at least three months; both are positive clinical diagnoses made on symptom criteria plus the absence of alarm features, and both are managed with a therapeutic relationship, diet, fibre and targeted drugs rather than with repeated investigation.",
+    "Irritable bowel syndrome is a disorder of gut-brain interaction defined by **the Rome IV criteria** as recurrent abdominal pain **at least one day a week** for three months associated with defecation or a change in stool frequency or form, with no structural disease, and chronic constipation is infrequent, hard or difficult defecation for at least three months; both are positive clinical diagnoses made on symptom criteria plus **the absence of alarm features**, and both are managed with a therapeutic relationship, diet, fibre and targeted drugs rather than with repeated investigation.",
   frequency: "common",
   keywords: [
     "irritable bowel syndrome",
@@ -3868,7 +3868,7 @@ topics.push({
   id: "gastro-hepatology-acute-abdomen-pancreatitis",
   title: "The acute abdomen in general practice and acute pancreatitis: who is referred and how fast",
   oneLiner:
-    "The acute abdomen is abdominal pain of less than one week duration severe enough to make the patient seek urgent care and requiring a decision on whether surgery or admission is needed, and in first-contact practice the task is not to make the exact diagnosis but to separate the patient who must be transferred within the hour from the one who can safely be reviewed, using pain character and migration, peritoneal signs, vital signs, an erect chest radiograph, an ultrasound and a serum lipase, remembering that acute pancreatitis is diagnosed on two of three - typical pain, enzyme elevation three times the upper limit of normal, and imaging - and is managed by aggressive early fluid resuscitation, analgesia and early enteral feeding.",
+    "The acute abdomen is abdominal pain of less than one week duration severe enough to make the patient seek urgent care and requiring a decision on whether surgery or admission is needed, and in first-contact practice the task is not to make the exact diagnosis but to separate the patient who must be **transferred within the hour** from the one who can safely be reviewed, using pain character and migration, peritoneal signs, vital signs, an erect chest radiograph, an ultrasound and a serum lipase, remembering that acute pancreatitis is diagnosed on **two of three** - typical pain, enzyme elevation three times the upper limit of normal, and imaging - and is managed by **aggressive early fluid resuscitation**, analgesia and early enteral feeding.",
   frequency: "common",
   keywords: [
     "acute abdomen",

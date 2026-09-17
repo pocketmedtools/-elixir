@@ -6,7 +6,7 @@ topics.push({
   id: "neurology-headache",
   title: "Headache and migraine",
   oneLiner:
-    "Headache is the commonest neurological complaint in family practice, and its management turns on a single first decision - whether this is a primary headache (migraine, tension-type or cluster) that can be diagnosed clinically and treated, or a secondary headache flagged by thunderclap onset, fever with neck stiffness, papilloedema, a new focal deficit, immunosuppression or new-onset headache after 50, which needs same-day imaging.",
+    "Headache is the commonest neurological complaint in family practice, and its management turns on a single first decision - whether this is **a primary headache** (migraine, tension-type or cluster) that can be diagnosed clinically and treated, or a secondary headache flagged by **thunderclap onset**, fever with neck stiffness, papilloedema, a new focal deficit, immunosuppression or new-onset headache after 50, which needs **same-day imaging**.",
   frequency: "core",
   keywords: [
     "migraine",
@@ -695,7 +695,7 @@ topics.push({
   id: "neurology-stroke-acute",
   title: "Acute stroke: recognition and the first hour",
   oneLiner:
-    "Stroke is a sudden focal neurological deficit of vascular origin lasting more than 24 hours or leading to death, and because intravenous thrombolysis is effective only within 4.5 hours and mechanical thrombectomy within 6-24 hours of a selected large-vessel occlusion, the family physician's job is to recognise it in seconds, check the capillary glucose, stabilise, and move the patient to a CT-capable stroke-ready hospital without stopping to lower the blood pressure or give aspirin.",
+    "Stroke is a **sudden focal neurological deficit** of vascular origin lasting more than 24 hours or leading to death, and because intravenous thrombolysis is effective only **within 4.5 hours** and mechanical thrombectomy within 6-24 hours of a selected large-vessel occlusion, the family physician's job is to recognise it in seconds, check the capillary glucose, stabilise, and move the patient to a **CT-capable stroke-ready hospital** without stopping to lower the blood pressure or give aspirin.",
   frequency: "core",
   keywords: [
     "cerebrovascular accident",
@@ -1406,7 +1406,7 @@ topics.push({
   id: "neurology-tia",
   title: "Transient ischaemic attack and secondary prevention",
   oneLiner:
-    "A transient ischaemic attack is a transient episode of focal neurological dysfunction caused by focal brain, spinal cord or retinal ischaemia without infarction on imaging, and it is a medical emergency rather than a reassuring event because up to 10% of patients have a completed stroke within 7 days - a risk that specialist assessment, dual antiplatelet therapy, a statin, blood pressure control and carotid surgery within 2 weeks can cut by about 80%.",
+    "A transient ischaemic attack is a transient episode of focal neurological dysfunction caused by focal brain, spinal cord or retinal ischaemia **without infarction on imaging**, and it is a medical emergency rather than a reassuring event because up to 10% of patients have **a completed stroke within 7 days** - a risk that specialist assessment, **dual antiplatelet therapy**, a statin, blood pressure control and carotid surgery within 2 weeks can cut by about 80%.",
   frequency: "core",
   keywords: [
     "TIA",
@@ -1938,7 +1938,7 @@ topics.push({
   id: "neurology-vertigo",
   title: "Vertigo and dizziness - the bedside tests",
   oneLiner:
-    "Dizziness is sorted not by asking the patient to describe the sensation but by timing and triggers - episodic and positional dizziness lasting under a minute is benign paroxysmal positional vertigo diagnosed by the Dix-Hallpike test and cured by the Epley manoeuvre, while continuous dizziness lasting days (the acute vestibular syndrome) is separated into vestibular neuritis and posterior circulation stroke by the three-step HINTS examination, which in trained hands is more sensitive for stroke than an early diffusion-weighted MRI.",
+    "Dizziness is sorted not by asking the patient to describe the sensation but by **timing and triggers** - episodic and positional dizziness lasting under a minute is benign paroxysmal positional vertigo diagnosed by the Dix-Hallpike test and cured by **the Epley manoeuvre**, while continuous dizziness lasting days (the acute vestibular syndrome) is separated into vestibular neuritis and posterior circulation stroke by **the three-step HINTS examination**, which in trained hands is more sensitive for stroke than an early diffusion-weighted MRI.",
   frequency: "core",
   keywords: [
     "vertigo",
@@ -2536,7 +2536,7 @@ topics.push({
   id: "neurology-peripheral-neuropathy",
   title: "Peripheral neuropathy, especially diabetic",
   oneLiner:
-    "Peripheral neuropathy is damage to peripheral nerves producing a length-dependent glove-and-stocking loss of sensation, burning pain, absent ankle reflexes and eventually weakness, and in Indian family practice the first four causes to exclude in every case are diabetes, alcohol, vitamin B12 deficiency and leprosy - the last being the commonest treatable neuropathy in the world and the only one where a thickened palpable nerve makes the diagnosis at the bedside.",
+    "Peripheral neuropathy is damage to peripheral nerves producing a length-dependent **glove-and-stocking loss of sensation**, burning pain, absent ankle reflexes and eventually weakness, and in Indian family practice the first four causes to exclude in every case are **diabetes, alcohol, vitamin B12 deficiency** and leprosy - the last being the commonest treatable neuropathy in the world and the only one where **a thickened palpable nerve** makes the diagnosis at the bedside.",
   frequency: "core",
   keywords: [
     "peripheral neuropathy",
@@ -3152,7 +3152,7 @@ topics.push({
   id: "neurology-cns-infection",
   title: "Central nervous system infection - bacterial meningitis, tuberculous meningitis and neurocysticercosis",
   oneLiner:
-    "Central nervous system infection in Indian practice has three faces the family physician must be able to separate on the first visit - acute bacterial meningitis, where the first dose of ceftriaxone with dexamethasone within the first hour decides survival; tuberculous meningitis, which creeps in over two to three weeks with fever, headache and cranial nerve palsies and needs twelve months of anti-tuberculosis treatment with adjunctive steroids started on clinical suspicion alone; and neurocysticercosis, the commonest cause of new-onset seizures in the country, which is treated with albendazole under steroid cover, or with no antiparasitic drug at all if the lesion is calcified.",
+    "Central nervous system infection in Indian practice has three faces the family physician must be able to separate on the first visit - acute bacterial meningitis, where the first dose of **ceftriaxone with dexamethasone** within the first hour decides survival; tuberculous meningitis, which creeps in over two to three weeks with fever, headache and cranial nerve palsies and needs **twelve months of anti-tuberculosis treatment** with adjunctive steroids started on clinical suspicion alone; and neurocysticercosis, the commonest cause of new-onset seizures in the country, which is treated with **albendazole under steroid cover**, or with no antiparasitic drug at all if the lesion is calcified.",
   frequency: "common",
   keywords: [
     "bacterial meningitis",
@@ -3692,7 +3692,7 @@ topics.push({
   id: "neurology-bell-palsy",
   title: "Bell palsy and the facial nerve",
   oneLiner:
-    "An acute unilateral facial weakness is a lower motor neurone palsy - and therefore Bell palsy until proved otherwise - only when the forehead is involved and the eye cannot be closed on that side; forehead sparing means an upper motor neurone lesion and an acute stroke pathway, while vesicles, bilateral weakness, ear discharge, a parotid mass or a slowly progressive course all mean it is not Bell palsy.",
+    "An acute unilateral facial weakness is a **lower motor neurone palsy** - and therefore Bell palsy until proved otherwise - only **when the forehead is involved** and the eye cannot be closed on that side; **forehead sparing** means an upper motor neurone lesion and an acute stroke pathway, while vesicles, bilateral weakness, ear discharge, a parotid mass or a slowly progressive course all mean it is not Bell palsy.",
   frequency: "common",
   keywords: [
     "Bell palsy",
@@ -4129,7 +4129,7 @@ topics.push({
   id: "neurology-low-back-pain-neuro",
   title: "Low back pain with neurological signs, including cauda equina syndrome",
   oneLiner:
-    "Low back pain is triaged at the first consultation into three groups - simple non-specific back pain that needs advice and analgesia and no imaging, radicular pain from nerve root compression that follows a dermatomal map and usually settles with conservative care, and serious spinal pathology signalled by red flags, of which cauda equina syndrome is the one that must be recognised in minutes and decompressed within hours.",
+    "Low back pain is triaged at the first consultation into three groups - **simple non-specific back pain** that needs advice and analgesia and no imaging, radicular pain from nerve root compression that follows a dermatomal map and usually settles with conservative care, and serious spinal pathology signalled by red flags, of which **cauda equina syndrome** is the one that must be recognised in minutes and **decompressed within hours**.",
   frequency: "common",
   keywords: [
     "low back pain",
@@ -4593,7 +4593,7 @@ topics.push({
   id: "neurology-parkinsonism",
   title: "Parkinsonism and Parkinson's disease",
   oneLiner:
-    "Parkinsonism is a clinical syndrome defined by bradykinesia together with rest tremor and/or rigidity; Parkinson's disease is its commonest cause - a progressive degeneration of dopaminergic neurones in the substantia nigra pars compacta with alpha-synuclein (Lewy body) pathology, diagnosed clinically by the MDS 2015 criteria and supported by a sustained response to levodopa.",
+    "Parkinsonism is a clinical syndrome defined by **bradykinesia together with rest tremor** and/or rigidity; Parkinson's disease is its commonest cause - a progressive degeneration of dopaminergic neurones in the **substantia nigra pars compacta** with alpha-synuclein (Lewy body) pathology, diagnosed clinically by the MDS 2015 criteria and supported by **a sustained response to levodopa**.",
   frequency: "less-common",
   keywords: [
     "Parkinson disease",
@@ -5293,7 +5293,7 @@ topics.push({
   id: "neurology-seizures-epilepsy",
   title: "Seizures and epilepsy, including absence seizures in children",
   oneLiner:
-    "A seizure is the transient occurrence of signs or symptoms caused by abnormal excessive or synchronous neuronal activity in the brain, while epilepsy - by the ILAE 2014 practical clinical definition - is a disease of the brain diagnosed when a person has had two unprovoked or reflex seizures more than 24 hours apart, or one unprovoked seizure with a risk of recurrence over the next 10 years of at least 60% (the risk that follows two unprovoked seizures), or a diagnosed epilepsy syndrome.",
+    "A seizure is the transient occurrence of signs or symptoms caused by **abnormal excessive or synchronous neuronal activity** in the brain, while epilepsy - by the ILAE 2014 practical clinical definition - is a disease of the brain diagnosed when a person has had two unprovoked or reflex seizures **more than 24 hours apart**, or one unprovoked seizure with a risk of recurrence over the next 10 years of **at least 60%** (the risk that follows two unprovoked seizures), or a diagnosed epilepsy syndrome.",
   frequency: "common",
   keywords: [
     "epilepsy",

@@ -13,7 +13,7 @@ topics.push({
   id: "endocrine-t2dm-diagnosis-oral-drugs",
   title: "Type 2 diabetes: diagnosis and oral drug selection",
   oneLiner:
-    "Type 2 diabetes is diagnosed by FPG 126 mg/dL or more, 2-hour post-75 g OGTT 200 mg/dL or more, HbA1c 6.5% or more, or a random glucose of 200 mg/dL or more with osmotic symptoms, and is managed with lifestyle plus metformin, adding a second agent chosen by cardio-renal risk, weight, hypoglycaemia risk and cost.",
+    "Type 2 diabetes is diagnosed by **FPG 126 mg/dL or more**, 2-hour post-75 g OGTT 200 mg/dL or more, **HbA1c 6.5% or more**, or a random glucose of 200 mg/dL or more with osmotic symptoms, and is managed with **lifestyle plus metformin**, adding a second agent chosen by cardio-renal risk, weight, hypoglycaemia risk and cost.",
   frequency: "core",
   keywords: [
     "T2DM",
@@ -592,7 +592,7 @@ topics.push({
   id: "endocrine-insulin-initiation",
   title: "Insulin initiation and titration in general practice",
   oneLiner:
-    "Insulin is started in type 2 diabetes when HbA1c remains above target on two or three oral agents, when HbA1c is above 10% or glucose above 300 mg/dL at diagnosis, or in any catabolic or ketotic patient, usually as bedtime basal insulin at 10 units or 0.1-0.2 units/kg titrated by 2 units every 3 days against the fasting glucose.",
+    "Insulin is started in type 2 diabetes when HbA1c remains above target on two or three oral agents, when **HbA1c is above 10%** or glucose above 300 mg/dL at diagnosis, or in any catabolic or ketotic patient, usually as **bedtime basal insulin at 10 units** or 0.1-0.2 units/kg titrated by **2 units every 3 days** against the fasting glucose.",
   frequency: "core",
   keywords: [
     "basal insulin",
@@ -1020,7 +1020,7 @@ topics.push({
   id: "endocrine-diabetes-complication-screening",
   title: "Screening for diabetic complications: eye, foot, kidney and nerve",
   oneLiner:
-    "Every person with type 2 diabetes needs an annual dilated fundus examination, an annual urine albumin-creatinine ratio with eGFR, an annual foot examination with a 10 g monofilament and pedal pulses, and a symptom-directed neuropathy assessment, beginning at diagnosis in type 2 disease and 5 years after diagnosis in type 1.",
+    "Every person with type 2 diabetes needs an **annual dilated fundus examination**, an annual urine albumin-creatinine ratio with eGFR, an annual foot examination with **a 10 g monofilament** and pedal pulses, and a symptom-directed neuropathy assessment, beginning at diagnosis in type 2 disease and **5 years after diagnosis** in type 1.",
   frequency: "core",
   keywords: [
     "diabetic retinopathy",
@@ -1566,7 +1566,7 @@ topics.push({
   id: "endocrine-hypoglycaemia",
   title: "Hypoglycaemia: recognition, treatment and prevention",
   oneLiner:
-    "Hypoglycaemia in a treated diabetic is a plasma glucose below 70 mg/dL (level 1 alert), below 54 mg/dL (level 2, clinically significant) or any episode with altered mental or physical function requiring another person's help (level 3, severe), and it is treated by the rule of 15 when the patient can swallow and by intravenous 25% dextrose or intramuscular glucagon when the patient cannot.",
+    "Hypoglycaemia in a treated diabetic is a plasma glucose **below 70 mg/dL** (level 1 alert), below 54 mg/dL (level 2, clinically significant) or any episode with altered mental or physical function requiring another person's help (level 3, severe), and it is treated by **the rule of 15** when the patient can swallow and by **intravenous 25% dextrose or intramuscular glucagon** when the patient cannot.",
   frequency: "core",
   keywords: [
     "hypoglycaemia",
@@ -1995,7 +1995,7 @@ topics.push({
   id: "endocrine-hypothyroidism",
   title: "Hypothyroidism and subclinical hypothyroidism",
   oneLiner:
-    "Overt primary hypothyroidism is a raised TSH with a low free T4 and is treated with levothyroxine 1.6 mcg/kg/day on an empty stomach, while subclinical hypothyroidism is a raised TSH with a normal free T4 and is treated only when TSH is 10 mIU/L or more, when the patient is pregnant or planning pregnancy, or when TPO antibodies and symptoms are present.",
+    "Overt primary hypothyroidism is a **raised TSH with a low free T4** and is treated with **levothyroxine 1.6 mcg/kg/day** on an empty stomach, while subclinical hypothyroidism is a raised TSH with a normal free T4 and is treated only when TSH is **10 mIU/L or more**, when the patient is pregnant or planning pregnancy, or when TPO antibodies and symptoms are present.",
   frequency: "core",
   keywords: [
     "hypothyroidism",
@@ -2472,7 +2472,7 @@ topics.push({
   id: "endocrine-diabetic-emergencies",
   title: "Diabetic ketoacidosis and hyperosmolar hyperglycaemic state",
   oneLiner:
-    "Diabetic ketoacidosis is the triad of hyperglycaemia (usually above 250 mg/dL), ketonaemia or ketonuria and metabolic acidosis with pH below 7.3 or bicarbonate below 18 mmol/L, while the hyperosmolar hyperglycaemic state is marked hyperglycaemia (usually above 600 mg/dL) with effective osmolality above 320 mOsm/kg and minimal ketosis; both are treated with fluid first, then insulin, with potassium replacement and a hunt for the precipitant.",
+    "Diabetic ketoacidosis is the triad of hyperglycaemia (usually above 250 mg/dL), ketonaemia or ketonuria and metabolic acidosis with **pH below 7.3** or bicarbonate below 18 mmol/L, while the hyperosmolar hyperglycaemic state is marked hyperglycaemia (usually above 600 mg/dL) with effective **osmolality above 320 mOsm/kg** and minimal ketosis; both are treated with **fluid first, then insulin**, with potassium replacement and a hunt for the precipitant.",
   frequency: "common",
   keywords: [
     "DKA",
@@ -2879,7 +2879,7 @@ topics.push({
   id: "endocrine-hyperthyroidism-nodule",
   title: "Hyperthyroidism and the thyroid nodule",
   oneLiner:
-    "Thyrotoxicosis is suspected from weight loss despite a good appetite, palpitation, heat intolerance and tremor, confirmed by a suppressed TSH with a raised free T4 or free T3, and treated by cause - carbimazole with beta-blockade for Graves disease, symptomatic care for thyroiditis - while a discrete thyroid nodule is worked up with TSH, ultrasound and fine-needle aspiration reported by the Bethesda system.",
+    "Thyrotoxicosis is suspected from weight loss despite a good appetite, palpitation, heat intolerance and tremor, confirmed by a **suppressed TSH with a raised free T4** or free T3, and treated by cause - **carbimazole with beta-blockade** for Graves disease, symptomatic care for thyroiditis - while a discrete thyroid nodule is worked up with TSH, ultrasound and fine-needle aspiration reported by **the Bethesda system**.",
   frequency: "common",
   keywords: [
     "thyrotoxicosis",
@@ -3440,7 +3440,7 @@ topics.push({
   id: "endocrine-obesity-metabolic-syndrome",
   title: "Obesity and the metabolic syndrome: Asian-Indian cut-offs",
   oneLiner:
-    "Asian Indians develop cardiometabolic disease at a lower body mass index than Europeans, so overweight begins at a BMI of 23 kg/m2, obesity at 25 kg/m2 and abdominal obesity at a waist of 90 cm in men and 80 cm in women, and the metabolic syndrome is diagnosed when any three of abdominal obesity, raised triglyceride, low HDL, raised blood pressure and raised fasting glucose coexist.",
+    "Asian Indians develop cardiometabolic disease at a lower body mass index than Europeans, so overweight begins at **a BMI of 23 kg/m2**, obesity at 25 kg/m2 and abdominal obesity at a waist of **90 cm in men and 80 cm in women**, and the metabolic syndrome is diagnosed when **any three of** abdominal obesity, raised triglyceride, low HDL, raised blood pressure and raised fasting glucose coexist.",
   frequency: "common",
   keywords: [
     "obesity",
@@ -3976,7 +3976,7 @@ topics.push({
   id: "endocrine-vitamin-d-calcium",
   title: "Vitamin D deficiency and calcium disorders",
   oneLiner:
-    "Vitamin D deficiency is defined by a serum 25-hydroxyvitamin D below 20 ng/mL and is near-universal in India despite abundant sunshine, presenting as bone pain, proximal myopathy, rickets or osteomalacia and treated with cholecalciferol 60,000 IU weekly for 8 weeks followed by monthly maintenance with adequate dietary calcium, while symptomatic hypocalcaemia and hypercalcaemia demand a parathyroid hormone level before any treatment.",
+    "**Vitamin D deficiency** is defined by a serum 25-hydroxyvitamin D **below 20 ng/mL** and is near-universal in India despite abundant sunshine, presenting as bone pain, proximal myopathy, rickets or osteomalacia and treated with **cholecalciferol 60,000 IU weekly for 8 weeks** followed by monthly maintenance with adequate dietary calcium, while symptomatic hypocalcaemia and hypercalcaemia demand a parathyroid hormone level before any treatment.",
   frequency: "less-common",
   keywords: [
     "vitamin D deficiency",
@@ -4443,7 +4443,7 @@ topics.push({
   id: "endocrine-adrenal-disorders",
   title: "Adrenal disease: Cushing syndrome and adrenal insufficiency",
   oneLiner:
-    "Cushing syndrome is glucocorticoid excess - overwhelmingly iatrogenic in Indian practice - screened for with an overnight 1 mg dexamethasone suppression test, late-night salivary cortisol or 24-hour urinary free cortisol, while adrenal insufficiency presents with fatigue, weight loss, postural hypotension and hyperpigmentation, is confirmed by an 8 am cortisol with ACTH, and is treated for life with hydrocortisone plus fludrocortisone and strict sick-day rules.",
+    "Cushing syndrome is **glucocorticoid excess** - overwhelmingly iatrogenic in Indian practice - screened for with an **overnight 1 mg dexamethasone suppression test**, late-night salivary cortisol or 24-hour urinary free cortisol, while adrenal insufficiency presents with fatigue, weight loss, postural hypotension and hyperpigmentation, is confirmed by an 8 am cortisol with ACTH, and is treated for life with **hydrocortisone plus fludrocortisone** and strict sick-day rules.",
   frequency: "uncommon",
   keywords: [
     "Cushing syndrome",

@@ -6,7 +6,7 @@ topics.push({
   id: "symptom-approach-fatigue",
   title: "Fatigue and tiredness",
   oneLiner:
-    "Fatigue is a subjective sense of exhaustion disproportionate to effort and not relieved by rest, and in Indian family practice it is a symptom whose commonest causes are anaemia, undiagnosed diabetes or thyroid disease, sleep debt, depression and drugs, so it is worked up with a short focused history, one rational blood panel and a named review date rather than with an open-ended battery of tests.",
+    "Fatigue is a subjective sense of exhaustion disproportionate to effort and **not relieved by rest**, and in Indian family practice it is a symptom whose commonest causes are **anaemia, undiagnosed diabetes or thyroid disease**, sleep debt, depression and drugs, so it is worked up with a short focused history, one rational blood panel and **a named review date** rather than with an open-ended battery of tests.",
   frequency: "core",
   keywords: [
     "tiredness",
@@ -558,7 +558,7 @@ topics.push({
   id: "symptom-approach-body-ache",
   title: "Generalised body ache and the somatisation consultation",
   oneLiner:
-    "Generalised body ache (badan dard, sharir dard) is one of the commonest presenting complaints in Indian general practice and is usually a benign combination of overuse, vitamin D deficiency, poor sleep and psychological distress, but the family physician must separate it from inflammatory disease, myopathy, hypothyroidism, malignancy and acute infection before settling into explanation, analgesia and a structured follow-up.",
+    "**Generalised body ache** (badan dard, sharir dard) is one of the commonest presenting complaints in Indian general practice and is usually a benign combination of **overuse, vitamin D deficiency, poor sleep** and psychological distress, but the family physician must separate it from inflammatory disease, myopathy, hypothyroidism, malignancy and acute infection before settling into **explanation, analgesia and a structured follow-up**.",
   frequency: "core",
   keywords: [
     "badan dard",
@@ -1100,7 +1100,7 @@ topics.push({
   id: "symptom-approach-dizziness",
   title: "Giddiness and dizziness",
   oneLiner:
-    "Giddiness is a single Indian word covering four separate symptoms - vertigo, presyncope, disequilibrium and non-specific lightheadedness - and the family physician's first job is to establish which of the four it is by asking about timing and triggers rather than about the quality of the sensation, because that alone separates benign positional vertigo and orthostatic hypotension from posterior circulation stroke.",
+    "**Giddiness** is a single Indian word covering **four separate symptoms** - vertigo, presyncope, disequilibrium and non-specific lightheadedness - and the family physician's first job is to establish which of the four it is by **asking about timing and triggers** rather than about the quality of the sensation, because that alone separates benign positional vertigo and orthostatic hypotension from posterior circulation stroke.",
   frequency: "core",
   keywords: [
     "chakkar",
@@ -1646,7 +1646,7 @@ topics.push({
   id: "symptom-approach-chest-pain",
   title: "Chest pain in general practice and pretest probability",
   oneLiner:
-    "Chest pain in an ambulatory clinic is musculoskeletal, gastro-oesophageal or psychogenic in about four out of five patients and cardiac in only about one in ten, so the family physician works from a formal pretest probability - age, sex and the three features of typical angina - deciding first whether this is an emergency, then whether the probability justifies a test, and always leaving the consultation with an explicit safety net.",
+    "Chest pain in an ambulatory clinic is **musculoskeletal, gastro-oesophageal or psychogenic** in about **four out of five patients** and cardiac in only about one in ten, so the family physician works from **a formal pretest probability** - age, sex and the three features of typical angina - deciding first whether this is an emergency, then whether the probability justifies a test, and always leaving the consultation with an explicit safety net.",
   frequency: "core",
   keywords: [
     "chest pain",
@@ -2233,7 +2233,7 @@ topics.push({
   id: "symptom-approach-breathlessness",
   title: "Breathlessness",
   oneLiner:
-    "Breathlessness is the conscious awareness of an uncomfortable need to breathe, and the family physician sorts it first by speed of onset, then by whether the cause is cardiac, respiratory, haematological, metabolic or psychological, using an oxygen saturation, a chest examination, an ECG and a chest radiograph to make the split before committing to treatment.",
+    "Breathlessness is the conscious awareness of **an uncomfortable need to breathe**, and the family physician sorts it first **by speed of onset**, then by whether the cause is cardiac, respiratory, haematological, metabolic or psychological, using an oxygen saturation, a chest examination, **an ECG and a chest radiograph** to make the split before committing to treatment.",
   frequency: "common",
   keywords: [
     "dyspnoea",
@@ -2776,7 +2776,7 @@ topics.push({
   id: "symptom-approach-fever-without-focus",
   title: "Fever without a focus and the acute undifferentiated febrile illness",
   oneLiner:
-    "Fever without a focus is a documented temperature of 38 C or more in a patient in whom the history and examination find no localising source, and in Indian family practice it is approached by the day of fever, the season and the exposure history, a deliberate search for the six signs that name a cause, and a small first-line set - complete blood count with platelets, a malaria smear with rapid test, dengue NS1 and a urine routine - with paracetamol, fluids and a dated review rather than an antibiotic on the first day.",
+    "Fever without a focus is a documented temperature of **38 C or more** in a patient in whom the history and examination find **no localising source**, and in Indian family practice it is approached by the day of fever, the season and the exposure history, a deliberate search for the six signs that name a cause, and a small first-line set - complete blood count with platelets, a malaria smear with rapid test, dengue NS1 and a urine routine - with **paracetamol, fluids and a dated review** rather than an antibiotic on the first day.",
   frequency: "common",
   keywords: [
     "bukhar",
@@ -3266,7 +3266,7 @@ topics.push({
   id: "symptom-approach-headache",
   title: "Headache: naming the primary headache and catching the secondary one",
   oneLiner:
-    "Headache is the commonest neurological complaint in general practice and more than nine in ten headaches seen there are primary - migraine, tension-type or medication-overuse headache - so the consultation's work is to screen for the few secondary causes with the SNOOP red flags, to name the primary headache from the history using ICHD-3 criteria without imaging, and to treat it with a written plan that limits acute drugs to fewer than 10-15 days a month.",
+    "Headache is the commonest neurological complaint in general practice and **more than nine in ten** headaches seen there are primary - migraine, tension-type or medication-overuse headache - so the consultation's work is to screen for the few secondary causes with **the SNOOP red flags**, to name the primary headache from the history using ICHD-3 criteria without imaging, and to treat it with a written plan that limits acute drugs to **fewer than 10-15 days a month**.",
   frequency: "common",
   keywords: [
     "sir dard",
@@ -3762,7 +3762,7 @@ topics.push({
   id: "symptom-approach-chronic-cough",
   title: "Cough for more than two weeks",
   oneLiner:
-    "A cough lasting two weeks or more in India is, by the definition of the National Tuberculosis Elimination Programme, presumptive pulmonary tuberculosis until a sputum nucleic acid amplification test and a chest radiograph say otherwise, and once tuberculosis is excluded the family physician works through the post-infectious cough, asthma and COPD, upper airway cough syndrome, reflux, ACE inhibitors and smoke exposure with a spirometry and a structured sequence of empirical trials rather than a succession of cough syrups.",
+    "A cough lasting **two weeks or more** in India is, by the definition of the National Tuberculosis Elimination Programme, **presumptive pulmonary tuberculosis** until a **sputum nucleic acid amplification test** and a chest radiograph say otherwise, and once tuberculosis is excluded the family physician works through the post-infectious cough, asthma and COPD, upper airway cough syndrome, reflux, ACE inhibitors and smoke exposure with a spirometry and a structured sequence of empirical trials rather than a succession of cough syrups.",
   frequency: "common",
   keywords: [
     "khansi",
@@ -4266,7 +4266,7 @@ topics.push({
   id: "symptom-approach-weight-loss",
   title: "Unintentional weight loss",
   oneLiner:
-    "Unintentional weight loss is a documented loss of 5% or more of usual body weight over six to twelve months without trying, and because its causes divide roughly into thirds - malignancy, non-malignant organic disease (in India above all tuberculosis, diabetes, thyrotoxicosis and HIV) and psychiatric or social causes - the family physician first confirms the loss on a scale, takes a history aimed at those three groups and at the appetite, and orders a tiered work-up in which a normal examination and a normal first tier justify three to six months of watchful waiting with monthly weights rather than whole-body imaging.",
+    "**Unintentional weight loss** is a documented loss of **5% or more** of usual body weight over six to twelve months without trying, and because its causes divide roughly into thirds - malignancy, non-malignant organic disease (in India above all tuberculosis, diabetes, thyrotoxicosis and HIV) and psychiatric or social causes - the family physician first confirms the loss on a scale, takes a history aimed at those three groups and at the appetite, and orders a tiered work-up in which a normal examination and a normal first tier justify three to six months of **watchful waiting with monthly weights** rather than whole-body imaging.",
   frequency: "less-common",
   keywords: [
     "wazan kam hona",

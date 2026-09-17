@@ -43,7 +43,6 @@ const SECTIONS: {
   body: string;
   view: StudyView;
   icon: typeof BookOpen;
-  tint: string;
 }[] = [
   {
     id: "pattern",
@@ -51,7 +50,6 @@ const SECTIONS: {
     body: "What the papers are, what they carry, and how to write them.",
     view: { name: "pattern" },
     icon: GraduationCap,
-    tint: "border-indigo-200 bg-indigo-50",
   },
   {
     id: "library",
@@ -59,7 +57,6 @@ const SECTIONS: {
     body: "Every subject, ordered common to uncommon.",
     view: { name: "library" },
     icon: BookOpen,
-    tint: "border-blue-200 bg-blue-50",
   },
   {
     id: "pyq",
@@ -67,7 +64,6 @@ const SECTIONS: {
     body: "What was actually asked, sitting by sitting, linked to the answer.",
     view: { name: "pyq" },
     icon: History,
-    tint: "border-fuchsia-200 bg-fuchsia-50",
   },
   {
     id: "theory",
@@ -75,7 +71,6 @@ const SECTIONS: {
     body: "Written-paper questions with model answers, by paper.",
     view: { name: "theory" },
     icon: FileText,
-    tint: "border-violet-200 bg-violet-50",
   },
   {
     id: "cases",
@@ -83,7 +78,6 @@ const SECTIONS: {
     body: "Long, short, OSCE and viva — worked end to end.",
     view: { name: "cases" },
     icon: Stethoscope,
-    tint: "border-rose-200 bg-rose-50",
   },
   {
     id: "howto",
@@ -91,7 +85,6 @@ const SECTIONS: {
     body: "The running order, the phrases, the family tools.",
     view: { name: "presentation" },
     icon: ClipboardList,
-    tint: "border-amber-200 bg-amber-50",
   },
   {
     id: "mcq",
@@ -99,7 +92,6 @@ const SECTIONS: {
     body: "Practice sets that target what you get wrong.",
     view: { name: "quizSetup" },
     icon: ListChecks,
-    tint: "border-teal-200 bg-teal-50",
   },
   {
     id: "charts",
@@ -107,7 +99,6 @@ const SECTIONS: {
     body: "Every classification, scoring system, flow chart and table in one place, searchable.",
     view: { name: "charts" },
     icon: Layers,
-    tint: "border-emerald-200 bg-emerald-50",
   },
   {
     id: "docs",
@@ -115,7 +106,6 @@ const SECTIONS: {
     body: "Your own notes and files, read here, complete and offline.",
     view: { name: "docs" },
     icon: FolderOpen,
-    tint: "border-cyan-200 bg-cyan-50",
   },
   {
     id: "progress",
@@ -123,7 +113,6 @@ const SECTIONS: {
     body: "Streak, coverage, weak subjects, past mock scores.",
     view: { name: "progress" },
     icon: TrendingUp,
-    tint: "border-slate-200 bg-slate-50",
   },
 ];
 
@@ -194,19 +183,33 @@ export default function StudyHome({ onGo }: { onGo: (view: StudyView) => void })
       <section className="mt-6 grid gap-3.5 sm:grid-cols-2">
         {SECTIONS.map((s) => {
           const Icon = s.icon;
+          /* Every tile is the same card. Ten pastel tints - half of them in
+             the blue family - read as ten unrelated things and fought the one
+             palette the rest of the app had settled on. The green bar down the
+             left edge is what the web page uses to say "this is a way in", and
+             it is the only colour a tile needs. */
           return (
             <button
               key={s.id}
               type="button"
               onClick={() => onGo(s.view)}
-              className={`flex items-start gap-3.5 rounded-xl border p-4.5 text-left shadow-sm transition hover:shadow ${s.tint}`}
+              className="relative flex items-start gap-3.5 overflow-hidden rounded-lg border p-4.5 pl-5 text-left transition"
+              style={{ borderColor: "var(--rule)", background: "var(--card)" }}
             >
-              <span className="mt-0.5 flex h-9 w-9 shrink-0 items-center justify-center rounded-lg bg-white/70 text-slate-800">
+              <span aria-hidden className="absolute left-0 top-0 h-full w-1" style={{ background: "var(--head)" }} />
+              <span
+                className="mt-0.5 flex h-9 w-9 shrink-0 items-center justify-center rounded-lg"
+                style={{ background: "var(--mint)", color: "var(--head)" }}
+              >
                 <Icon className="h-5 w-5" aria-hidden />
               </span>
               <span>
-                <span className="block text-[17px] font-bold leading-snug text-slate-900">{s.title}</span>
-                <span className="mt-1.5 block text-[13.5px] leading-[1.55] text-slate-700">{s.body}</span>
+                <span className="block text-[17px] font-bold leading-snug" style={{ color: "var(--head)" }}>
+                  {s.title}
+                </span>
+                <span className="mt-1.5 block text-[13.5px] leading-[1.55]" style={{ color: "var(--quiet)" }}>
+                  {s.body}
+                </span>
               </span>
             </button>
           );

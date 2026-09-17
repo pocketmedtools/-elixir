@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
-import { GraduationCap } from "lucide-react";
 import StudyModule from "./components/StudyModule";
+import { dressNativeShell } from "./lib/nativeShell";
 
 /**
  * FM Prep — the Family Medicine exam app.
@@ -9,6 +9,11 @@ import StudyModule from "./components/StudyModule";
  * back stack), and the disclaimer. Everything below runs on the device, with
  * no server and no account.
  */
+/** True inside the installed Android build, false on the web. */
+const isNative = Boolean(
+  (globalThis as { Capacitor?: { isNativePlatform?: () => boolean } }).Capacitor?.isNativePlatform?.(),
+);
+
 export default function App() {
   // A brief opening card, so a cold start does not flash an empty page while
   // the first chunk parses.
@@ -18,6 +23,11 @@ export default function App() {
     return () => clearTimeout(t);
   }, []);
 
+  // The system splash is dismissed once this has painted, not on a timer.
+  useEffect(() => {
+    void dressNativeShell();
+  }, []);
+
   return (
     <div className="flex min-h-screen flex-col">
       {splash && (
@@ -25,8 +35,14 @@ export default function App() {
           aria-hidden
           className="fixed inset-0 z-50 flex flex-col items-center justify-center bg-white transition-opacity"
         >
-          <GraduationCap className="h-14 w-14 text-[var(--accent)]" />
-          <p className="mt-3 text-lg font-bold tracking-tight text-slate-900">FM Prep</p>
+          <span
+            aria-hidden
+            className="grid h-16 w-16 place-items-center rounded-2xl text-[24px] font-bold text-white"
+            style={{ background: "var(--head)" }}
+          >
+            FM
+          </span>
+          <p className="mt-3 text-lg font-bold" style={{ color: "var(--head)" }}>FM Prep</p>
           <p className="mt-1 text-[13px] text-slate-500">Family Medicine exam</p>
         </div>
       )}
@@ -35,15 +51,26 @@ export default function App() {
           sticky rows would cover it. */}
       <header className="app-header border-b border-[var(--line)] bg-white">
         <div className="mx-auto flex max-w-4xl items-center gap-2.5 px-3 py-3 md:px-6">
-          <GraduationCap className="h-6 w-6 shrink-0 text-[var(--accent)]" aria-hidden />
+          {/* The same mark the web page carries, so the two do not open on
+              two different-looking products. */}
+          <span
+            aria-hidden
+            className="grid h-[34px] w-[34px] shrink-0 place-items-center rounded-lg text-[14px] font-bold text-white"
+            style={{ background: "var(--head)" }}
+          >
+            FM
+          </span>
           <div className="min-w-0 flex-1">
-            <p className="text-[15px] font-bold leading-tight tracking-tight text-slate-900">FM Prep</p>
+            <p className="text-[19px] font-bold leading-tight" style={{ color: "var(--head)" }}>FM Prep</p>
             <p className="hidden text-[13px] leading-snug text-slate-500 sm:block">
               DNB / MD Family Medicine — notes, papers, cases, questions
             </p>
           </div>
-          {/* A direct file URL, not a release redirect: Android's download
-              manager stalls on the github.com -> S3 hop. */}
+          {/* Offering the Android app to someone already inside the Android
+              app is noise, so the installed build drops it. A direct file URL,
+              not a release redirect: Android's download manager stalls on the
+              github.com -> S3 hop. */}
+          {!isNative && (
           <a
             href="https://raw.githubusercontent.com/pocketmedtools/-elixir/fmprep-apk/FM-Prep.apk"
             target="_blank"
@@ -53,6 +80,7 @@ export default function App() {
             <span className="hidden sm:inline">Download Android app</span>
             <span className="sm:hidden">Get app</span>
           </a>
+          )}
         </div>
         <div className="brand-ribbon" />
       </header>

@@ -231,11 +231,14 @@ export function Callout({
   );
 }
 
+/* Frequency is an ordered scale, so it reads as one colour getting quieter
+   rather than four unrelated hues. It was emerald, sky, violet and slate:
+   nothing in that sequence told a reader which end was "asked every time". */
 const FREQ_CHIP: Record<Frequency, string> = {
-  core: "bg-emerald-100 text-emerald-900",
-  common: "bg-sky-100 text-sky-900",
-  "less-common": "bg-violet-100 text-violet-900",
-  uncommon: "bg-slate-200 text-slate-700",
+  core: "freq-chip freq-core",
+  common: "freq-chip freq-common",
+  "less-common": "freq-chip freq-less",
+  uncommon: "freq-chip freq-uncommon",
 };
 
 const FREQ_SHORT: Record<Frequency, string> = {
@@ -256,13 +259,24 @@ export function FrequencyChip({ frequency }: { frequency: Frequency }) {
   );
 }
 
+/* Two tones, not three. "blue" and "teal" are kept as names so the call sites
+   read the same, but both now mean "this one counts" and take the one accent
+   the rest of the app uses; a literal blue was the last of the hue the palette
+   had otherwise dropped. */
 export function Chip({ children, tone = "slate" }: { children: ReactNode; tone?: "slate" | "blue" | "teal" }) {
-  const styles = {
-    slate: "bg-slate-100 text-slate-700",
-    blue: "bg-blue-100 text-blue-900",
-    teal: "bg-teal-100 text-teal-900",
-  }[tone];
-  return <span className={`rounded-full px-2.5 py-1 text-[13px] font-semibold ${styles}`}>{children}</span>;
+  const accent = tone !== "slate";
+  return (
+    <span
+      className="rounded-full px-2.5 py-1 text-[13px] font-semibold"
+      style={
+        accent
+          ? { background: "var(--mint)", color: "var(--head)" }
+          : { background: "var(--sunk)", color: "var(--quiet)" }
+      }
+    >
+      {children}
+    </span>
+  );
 }
 
 export function BackBar({

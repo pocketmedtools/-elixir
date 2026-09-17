@@ -6,7 +6,7 @@ topics.push({
   id: "geriatrics-ethics-cga",
   title: "Comprehensive geriatric assessment",
   oneLiner:
-    "Comprehensive geriatric assessment is a multidimensional, interdisciplinary diagnostic process that measures the medical, functional, cognitive, psychological, nutritional and social capabilities of an older person in order to build a single coordinated problem list and long-term care plan.",
+    "Comprehensive geriatric assessment is a **multidimensional, interdisciplinary diagnostic process** that measures the medical, functional, cognitive, psychological, nutritional and social capabilities of an older person in order to build **a single coordinated problem list** and long-term care plan.",
   frequency: "core",
   keywords: [
     "CGA",
@@ -530,7 +530,7 @@ topics.push({
   id: "geriatrics-ethics-falls",
   title: "Falls in the older person - assessment, causes and prevention",
   oneLiner:
-    "A fall is an event in which a person unintentionally comes to rest on the ground, floor or other lower level, not as a result of a major intrinsic event such as stroke or seizure or an overwhelming external force; in older people it is almost always multifactorial, and the number of risk factors present predicts the risk better than any single cause.",
+    "A fall is an event in which a person unintentionally **comes to rest on the ground**, floor or other lower level, not as a result of a major intrinsic event such as stroke or seizure or an overwhelming external force; in older people it is **almost always multifactorial**, and **the number of risk factors present** predicts the risk better than any single cause.",
   frequency: "core",
   keywords: [
     "falls",
@@ -1058,7 +1058,7 @@ topics.push({
   id: "geriatrics-ethics-polypharmacy",
   title: "Polypharmacy and deprescribing - Beers and STOPP/START",
   oneLiner:
-    "Polypharmacy is conventionally the concurrent use of five or more regular medicines, but the clinically useful definition is inappropriate polypharmacy - the use of drugs whose harm outweighs their benefit for this patient at this stage of life - and deprescribing is the planned, supervised process of tapering or stopping such drugs with follow-up.",
+    "Polypharmacy is conventionally the concurrent use of **five or more regular medicines**, but the clinically useful definition is **inappropriate polypharmacy** - the use of drugs whose harm outweighs their benefit for this patient at this stage of life - and deprescribing is the planned, supervised process of **tapering or stopping such drugs** with follow-up.",
   frequency: "core",
   keywords: [
     "polypharmacy",
@@ -1598,7 +1598,7 @@ topics.push({
   id: "geriatrics-ethics-palliative-symptom-control",
   title: "Palliative care symptom control and morphine prescribing in India",
   oneLiner:
-    "Palliative care is the active, holistic care of people with serious health-related suffering due to severe illness, addressing physical, psychological, social and spiritual distress in the patient and the family; its central pharmacological skill is the correct titration of oral morphine, which under the amended NDPS framework can now be stocked and dispensed through a single simplified licence, always with a stimulant laxative prescribed alongside it.",
+    "Palliative care is the active, holistic care of people with **serious health-related suffering** due to severe illness, addressing physical, psychological, social and spiritual distress in the patient and the family; its central pharmacological skill is the correct **titration of oral morphine**, which under the amended NDPS framework can now be stocked and dispensed through a single simplified licence, always with **a stimulant laxative** prescribed alongside it.",
   frequency: "core",
   keywords: [
     "palliative care",
@@ -2172,7 +2172,7 @@ topics.push({
   id: "geriatrics-ethics-consent-capacity-records",
   title: "Consent, capacity, confidentiality and medical records - the Indian medico-legal position",
   oneLiner:
-    "Valid consent in India requires a person who is legally competent and has decision-making capacity, given voluntarily and after disclosure of the nature of the procedure, its material risks, alternatives and the consequences of refusal; capacity is presumed and decision-specific, confidentiality is a professional duty with defined statutory exceptions, and the medical record is both the instrument of care and the principal evidence when care is questioned.",
+    "Valid consent in India requires a person who is **legally competent and has decision-making capacity**, given voluntarily and after disclosure of the nature of the procedure, its **material risks, alternatives** and the consequences of refusal; capacity is **presumed and decision-specific**, confidentiality is a professional duty with defined statutory exceptions, and the medical record is both the instrument of care and the principal evidence when care is questioned.",
   frequency: "common",
   keywords: [
     "informed consent",
@@ -2707,7 +2707,7 @@ topics.push({
   id: "geriatrics-ethics-dementia-caregiver",
   title: "Dementia care and caregiver support",
   oneLiner:
-    "Dementia (major neurocognitive disorder) is an acquired, usually progressive decline from a previous level in one or more cognitive domains that is severe enough to interfere with independence in everyday activities and is not explained by delirium or another mental disorder; its management in family practice is the diagnosis and staging of the syndrome, the treatment of reversible contributors and behavioural symptoms without antipsychotics wherever possible, and the sustained support of the caregiver, who is the real unit of care.",
+    "Dementia (major neurocognitive disorder) is an acquired, usually progressive decline from a previous level in **one or more cognitive domains** that is severe enough to **interfere with independence in everyday activities** and is not explained by delirium or another mental disorder; its management in family practice is the diagnosis and staging of the syndrome, the treatment of reversible contributors and behavioural symptoms without antipsychotics wherever possible, and the sustained support of the caregiver, who is **the real unit of care**.",
   frequency: "common",
   keywords: [
     "dementia",
@@ -3201,7 +3201,7 @@ topics.push({
   id: "geriatrics-ethics-frailty-sarcopenia-nutrition",
   title: "Frailty, sarcopenia and nutrition in the elderly",
   oneLiner:
-    "Frailty is a state of reduced physiological reserve across multiple systems in which a minor stressor produces a disproportionate and often catastrophic deterioration in function; sarcopenia, the progressive loss of skeletal muscle strength and mass, is its physical core, and undernutrition combined with inactivity is the modifiable driver that resistance exercise and adequate protein can reverse.",
+    "Frailty is a state of **reduced physiological reserve** across multiple systems in which **a minor stressor** produces a disproportionate and often catastrophic deterioration in function; sarcopenia, the progressive loss of skeletal muscle strength and mass, is its physical core, and undernutrition combined with inactivity is the modifiable driver that **resistance exercise and adequate protein** can reverse.",
   frequency: "common",
   keywords: [
     "frailty",
@@ -3696,7 +3696,7 @@ topics.push({
   id: "geriatrics-ethics-end-of-life-death-certification",
   title: "End-of-life decisions, advance care planning in India, and death certification",
   oneLiner:
-    "End-of-life care requires a documented, shared decision about what treatment will and will not be given as death approaches; in India the framework rests not on statute but on the Supreme Court's decision in Common Cause v Union of India (2018), simplified in January 2023, which permits withholding and withdrawing life support and gives legal effect to an advance medical directive while active euthanasia and assisted suicide remain criminal offences - and the process ends with a correctly written medical certificate of cause of death.",
+    "End-of-life care requires a documented, shared decision about what treatment will and will not be given as death approaches; in India the framework rests not on statute but on the Supreme Court's decision in **Common Cause v Union of India** (2018), simplified in January 2023, which permits withholding and withdrawing life support and gives legal effect to **an advance medical directive** while active euthanasia and assisted suicide remain criminal offences - and the process ends with a correctly written **medical certificate of cause of death**.",
   frequency: "less-common",
   keywords: [
     "advance care planning",

@@ -168,7 +168,17 @@ export default function TopicReader({
           <Chip>{subjectTitle}</Chip>
         </div>
         <h1 className="mt-3 text-[1.5em] font-bold leading-tight tracking-tight text-slate-900">{topic.title}</h1>
-        <p className="mt-3 rounded-xl border border-slate-200 bg-white p-4 text-[1.05em] leading-[1.7] text-slate-800 shadow-sm">
+        {/* The topic's opening statement, matching the web page: near-black
+            on a mint ground behind a green rule, so it reads as the lead
+            rather than as the first of the points. */}
+        <p
+          className="mt-3 rounded-r-lg p-4 text-[1.05em] font-medium leading-[1.62]"
+          style={{
+            background: "var(--mint)",
+            borderLeft: "4px solid var(--head)",
+            color: "var(--ink)",
+          }}
+        >
           <RichText text={topic.oneLiner} />
         </p>
       </header>

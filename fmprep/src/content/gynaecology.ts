@@ -6,7 +6,7 @@ topics.push({
   id: "gynaecology-abnormal-uterine-bleeding",
   title: "Abnormal uterine bleeding and the PALM-COEIN system",
   oneLiner:
-    "Abnormal uterine bleeding is bleeding from the uterine corpus that is abnormal in frequency, regularity, duration or volume in a non-pregnant woman of reproductive age, and it is classified by the FIGO PALM-COEIN system into four structural causes (polyp, adenomyosis, leiomyoma, malignancy and hyperplasia) and five non-structural causes (coagulopathy, ovulatory dysfunction, endometrial, iatrogenic, not otherwise classified).",
+    "Abnormal uterine bleeding is bleeding from the uterine corpus that is abnormal in **frequency, regularity, duration or volume** in a non-pregnant woman of reproductive age, and it is classified by the **FIGO PALM-COEIN system** into **four structural causes** (polyp, adenomyosis, leiomyoma, malignancy and hyperplasia) and five non-structural causes (coagulopathy, ovulatory dysfunction, endometrial, iatrogenic, not otherwise classified).",
   frequency: "core",
   keywords: [
     "AUB",
@@ -505,7 +505,7 @@ topics.push({
   id: "gynaecology-contraception",
   title: "Contraception: the Indian method mix and WHO Medical Eligibility Criteria",
   oneLiner:
-    "Contraceptive choice in Indian family practice is a shared decision between the woman, her partner and the physician, made from the national basket of condoms, combined and progestogen-only pills, weekly centchroman, the copper IUCD, the LNG-IUS, injectable DMPA, emergency contraception and sterilisation, with safety governed by the WHO Medical Eligibility Criteria categories 1 to 4.",
+    "Contraceptive choice in Indian family practice is **a shared decision** between the woman, her partner and the physician, made from the national basket of condoms, combined and progestogen-only pills, **weekly centchroman**, the copper IUCD, the LNG-IUS, injectable DMPA, emergency contraception and sterilisation, with safety governed by the **WHO Medical Eligibility Criteria** categories 1 to 4.",
   frequency: "core",
   keywords: [
     "family planning",
@@ -1071,7 +1071,7 @@ topics.push({
   id: "gynaecology-pcos",
   title: "Polycystic ovary syndrome",
   oneLiner:
-    "Polycystic ovary syndrome is diagnosed by the Rotterdam criteria when two of three features are present - oligo-ovulation or anovulation, clinical or biochemical hyperandrogenism, and polycystic ovarian morphology - after excluding thyroid disease, hyperprolactinaemia, non-classical congenital adrenal hyperplasia and androgen-secreting tumours, and it is managed as a lifelong metabolic and reproductive condition, not as an ovarian cyst.",
+    "Polycystic ovary syndrome is diagnosed by **the Rotterdam criteria** when **two of three features** are present - oligo-ovulation or anovulation, clinical or biochemical hyperandrogenism, and polycystic ovarian morphology - after excluding thyroid disease, hyperprolactinaemia, non-classical congenital adrenal hyperplasia and androgen-secreting tumours, and it is managed as a lifelong metabolic and reproductive condition, **not as an ovarian cyst**.",
   frequency: "core",
   keywords: [
     "PCOS",
@@ -1555,7 +1555,7 @@ topics.push({
   id: "gynaecology-vaginal-discharge-pid",
   title: "Vaginal discharge and pelvic inflammatory disease: syndromic management",
   oneLiner:
-    "Abnormal vaginal discharge in a family practice is sorted into vaginitis (bacterial vaginosis, vulvovaginal candidiasis, trichomoniasis) and cervicitis (Neisseria gonorrhoeae, Chlamydia trachomatis), and because laboratory confirmation is rarely available at the point of care the Indian national programme treats it by colour-coded syndromic kits, while any woman with lower abdominal pain plus cervical motion, uterine or adnexal tenderness is treated as pelvic inflammatory disease to protect her future fertility.",
+    "Abnormal vaginal discharge in a family practice is sorted into vaginitis (bacterial vaginosis, vulvovaginal candidiasis, trichomoniasis) and cervicitis (Neisseria gonorrhoeae, Chlamydia trachomatis), and because laboratory confirmation is rarely available at the point of care the Indian national programme treats it by **colour-coded syndromic kits**, while any woman with lower abdominal pain plus **cervical motion, uterine or adnexal tenderness** is treated as **pelvic inflammatory disease** to protect her future fertility.",
   frequency: "core",
   keywords: [
     "vaginal discharge",
@@ -2025,7 +2025,7 @@ topics.push({
   id: "gynaecology-infertility-workup",
   title: "Infertility: the first-line work-up a family physician completes",
   oneLiner:
-    "Infertility is the failure to achieve a clinical pregnancy after 12 months of regular unprotected intercourse (6 months if the woman is over 35), and the entire first-line work-up - semen analysis, confirmation of ovulation, thyroid and prolactin, a tubal patency test and a pelvic ultrasound - can and should be completed by the family physician in about two menstrual cycles, so that only a defined problem, not an undifferentiated couple, is referred to the specialist.",
+    "Infertility is the failure to achieve a clinical pregnancy after **12 months of regular unprotected intercourse** (6 months if the woman is **over 35**), and the entire first-line work-up - semen analysis, confirmation of ovulation, thyroid and prolactin, a tubal patency test and a pelvic ultrasound - can and should be completed by the family physician in **about two menstrual cycles**, so that only a defined problem, not an undifferentiated couple, is referred to the specialist.",
   frequency: "common",
   keywords: [
     "infertility",
@@ -2518,7 +2518,7 @@ topics.push({
   id: "gynaecology-dysmenorrhoea-endometriosis-fibroids",
   title: "Dysmenorrhoea, endometriosis and fibroids",
   oneLiner:
-    "Painful periods are divided into primary dysmenorrhoea - prostaglandin-mediated pain in a structurally normal pelvis, beginning within two years of menarche and answering to NSAIDs and hormonal suppression - and secondary dysmenorrhoea, in which endometriosis, adenomyosis, fibroids or chronic pelvic infection are producing the pain, and the family physician's task is to separate the two on history and examination, treat the common cause well, and refer the pelvis that is fixed, nodular or enlarged.",
+    "Painful periods are divided into **primary dysmenorrhoea** - prostaglandin-mediated pain in a structurally normal pelvis, beginning **within two years of menarche** and answering to NSAIDs and hormonal suppression - and secondary dysmenorrhoea, in which endometriosis, adenomyosis, fibroids or chronic pelvic infection are producing the pain, and the family physician's task is to separate the two on history and examination, treat the common cause well, and refer the pelvis that is **fixed, nodular or enlarged**.",
   frequency: "common",
   keywords: [
     "dysmenorrhoea",
@@ -3018,7 +3018,7 @@ topics.push({
   id: "gynaecology-cervical-cancer-screening",
   title: "Cervical cancer screening with VIA and HPV testing, and HPV vaccination",
   oneLiner:
-    "Cervical cancer is a preventable disease caused by persistent infection with high-risk human papillomavirus, and it is controlled by a three-pillar strategy of HPV vaccination of girls aged 9-14 years, screening of women aged 30-49 years with visual inspection with acetic acid or a high-performance HPV DNA test at least twice in a lifetime, and prompt treatment of screen-positive precancer by thermal ablation or large loop excision of the transformation zone.",
+    "Cervical cancer is a preventable disease caused by persistent infection with **high-risk human papillomavirus**, and it is controlled by a three-pillar strategy of HPV vaccination of girls **aged 9-14 years**, screening of women aged 30-49 years with **visual inspection with acetic acid** or a high-performance HPV DNA test at least twice in a lifetime, and prompt treatment of screen-positive precancer by thermal ablation or large loop excision of the transformation zone.",
   frequency: "common",
   keywords: [
     "cervical cancer",
@@ -3469,7 +3469,7 @@ topics.push({
   id: "gynaecology-menopause-hormone-therapy",
   title: "Menopause and menopausal hormone therapy",
   oneLiner:
-    "Menopause is the permanent cessation of menstruation resulting from loss of ovarian follicular activity, diagnosed retrospectively after 12 consecutive months of amenorrhoea with no other pathological cause, occurring at a mean age of 46-47 years in Indian women, and its symptomatic and skeletal consequences are treated with lifestyle measures, non-hormonal drugs, and menopausal hormone therapy given at the lowest effective dose to appropriately selected women who begin it under 60 years of age or within 10 years of the menopause.",
+    "Menopause is the permanent cessation of menstruation resulting from loss of ovarian follicular activity, diagnosed retrospectively after **12 consecutive months of amenorrhoea** with no other pathological cause, occurring at a **mean age of 46-47 years** in Indian women, and its symptomatic and skeletal consequences are treated with lifestyle measures, non-hormonal drugs, and menopausal hormone therapy given at the **lowest effective dose** to appropriately selected women who begin it under 60 years of age or within 10 years of the menopause.",
   frequency: "common",
   keywords: [
     "menopause",
@@ -4004,7 +4004,7 @@ topics.push({
   id: "gynaecology-uterine-prolapse",
   title: "Pelvic organ prolapse: anatomy, assessment and management",
   oneLiner:
-    "Pelvic organ prolapse is the descent of one or more of the anterior vaginal wall, the posterior vaginal wall, the uterus and cervix, or the vaginal vault after hysterectomy, from their normal position towards or through the vaginal introitus, caused by failure of the muscular pelvic floor and of the fibromuscular endopelvic fascia and its condensations that suspend and attach the vagina and cervix.",
+    "**Pelvic organ prolapse** is the descent of one or more of the anterior vaginal wall, the posterior vaginal wall, the uterus and cervix, or the vaginal vault after hysterectomy, from their normal position **towards or through the vaginal introitus**, caused by **failure of the muscular pelvic floor** and of the fibromuscular endopelvic fascia and its condensations that suspend and attach the vagina and cervix.",
   frequency: "less-common",
   keywords: [
     "uterine prolapse",
