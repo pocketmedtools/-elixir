@@ -274,6 +274,17 @@ td:first-child{font-weight:600}
    for the next section. */
 /* A chart in the searchable library: the heading is the control, and the
    chart itself unfolds under it rather than on a page of its own. */
+/* A past question's history: how often it was asked, and how the examiner
+   divided the marks. */
+.chip.rep{background:var(--cream);border-color:var(--think-rule);color:var(--think)}
+.asked{margin-top:8px;font-size:13px;color:var(--quiet);line-height:1.5}
+.msplit{margin-top:10px;display:flex;flex-wrap:wrap;gap:7px;align-items:center}
+.msplit-h{font:700 12px/1 var(--font-ui);color:var(--label)}
+.mpart{display:inline-flex;align-items:center;gap:5px;background:var(--mint);
+  border:1px solid var(--rule);border-radius:99px;padding:4px 10px;
+  font:600 12px/1 var(--font-ui);color:var(--label)}
+.mpart b{font-size:13.5px;color:var(--head)}
+.mtot{font:700 12.5px/1 var(--font-ui);color:var(--head)}
 .chart-list{display:flex;flex-direction:column;gap:11px}
 .chart-row{background:var(--raised);border:1px solid var(--rule);border-radius:var(--radius);padding:15px 16px}
 .chart-head{display:block;width:100%;text-align:left}
@@ -653,17 +664,23 @@ function placeVisuals(sections, visuals){
   return { after, opener };
 }
 
+/* Shared by the topic reader and the chart library. It lived inside viewTopic,
+   which meant every table in the chart library threw ReferenceError the moment
+   a reader tried to open it - 627 of the 1,330 charts, silently. */
+function tableHtml(tb){
+  return '<div class="tbl"><table><thead><tr>' +
+    tb.columns.map(c => '<th>' + esc(c) + '</th>').join("") + '</tr></thead><tbody>' +
+    tb.rows.map(r => '<tr>' + r.map((c, i) =>
+      '<td data-col="' + esc(tb.columns[i] || "") + '">' + rich(c) + '</td>').join("") + '</tr>').join("") +
+    '</tbody></table></div>';
+}
+
 function viewTopic(){
   const e = TOPIC.get(state.topic), t = e.t, s = e.s;
   const dgs = DIA[t.id] || [];
   let n = 0;
   const sec = (h, inner) => '<div class="sec"><h3><span class="n">' +
     String(++n).padStart(2,"0") + '</span>' + esc(h) + '</h3>' + inner + '</div>';
-  const tableHtml = tb => '<div class="tbl"><table><thead><tr>' +
-    tb.columns.map(c => '<th>' + esc(c) + '</th>').join("") + '</tr></thead><tbody>' +
-    tb.rows.map(r => '<tr>' + r.map((c, i) =>
-      '<td data-col="' + esc(tb.columns[i] || "") + '">' + rich(c) + '</td>').join("") + '</tr>').join("") +
-    '</tbody></table></div>';
   const visuals = [
     ...dgs.map(d => ({ heading: d.heading, html: drawDiagram(d) })),
     ...t.tables.map(tb => ({ heading: tb.heading,
@@ -725,11 +742,23 @@ function viewPapers(){
   }
   const qCard = q => {
     const links = (PYQ.links[q.id] || []).map(id => TOPIC.get(id)).filter(Boolean);
+    const rep = (DATA.pyqStats.repeats || {})[q.id];
+    const sp = (DATA.pyqStats.splits || {})[q.id];
+    /* How often it has been asked matters more than anything else on the card:
+       a question that has come up in three sittings is the one to learn first.
+       The mark split is the examiner's own bracket notation, lifted out of the
+       question text where it was reading as prose. */
     return '<div class="row" style="cursor:default">' +
       '<p style="font-size:16.5px;line-height:1.68">' + esc(q.question) + '</p>' +
       '<span class="foot">' + (q.paper ? '<span class="chip acc">Paper ' + q.paper + '</span>' : "") +
         '<span class="chip">' + esc(q.session) + '</span>' +
-        (q.marks ? '<span class="chip bad">' + q.marks + ' marks</span>' : "") + '</span>' +
+        (q.marks ? '<span class="chip bad">' + q.marks + ' marks</span>' : "") +
+        (rep && rep.times > 1 ? '<span class="chip rep">Asked ' + rep.times + ' times</span>' : "") +
+        '</span>' +
+      (rep && rep.times > 1 ? '<p class="asked">Sittings: ' + rep.sittings.map(esc).join(" &middot; ") + '</p>' : "") +
+      (sp ? '<div class="msplit"><span class="msplit-h">Marks</span>' +
+        sp.parts.map((n, i) => '<span class="mpart">' + (i + 1) + '<b>' + n + '</b></span>').join("") +
+        '<span class="mtot">= ' + sp.total + (sp.disagrees ? ' (stated ' + q.marks + ')' : "") + '</span></div>' : "") +
       (links.length ? '<span class="foot">' + links.map(x =>
         '<button class="chip solid subject-theme" data-topic="' + x.t.id + '" style="' + varsOf(x.s.id) + '">' +
         esc(x.t.title) + ' &rarr;</button>').join("") + '</span>' : "") + '</div>';
@@ -830,22 +859,52 @@ function chartIndex(){
   return CHARTS;
 }
 
+/* Medical short forms. "GCS" found seven charts and "Glasgow" two, because the
+   index only held the literal words: a chart headed "Glasgow Coma Scale" was
+   invisible to anyone typing the short form and the other way round. The table
+   is injected from the same file the app imports, so the two searches cannot
+   drift apart. Expansion happens per query rather than by padding 1,330
+   haystacks with synonyms. */
+const ABBR = DATA.abbr || {};
+const ABBR_REV = (() => { const out = {};
+  for (const short in ABBR) for (const long of ABBR[short]) (out[long] = out[long] || []).push(short);
+  return out; })();
+function alternates(term){
+  const t = term.toLowerCase(), out = {};
+  out[t] = 1;
+  for (const x of (ABBR[t] || [])) out[x] = 1;
+  for (const x of (ABBR_REV[t] || [])) out[x] = 1;
+  if (t.length >= 4) for (const long in ABBR_REV)
+    if (long.indexOf(t) >= 0) for (const s of ABBR_REV[long]) out[s] = 1;
+  return Object.keys(out);
+}
+
 /* Every word typed has to appear, so a second word narrows rather than widens;
-   a hit in the heading outranks one buried in a table cell. */
+   a hit in the heading outranks one buried in a table cell. A term matches on
+   any of its spellings. */
 function chartSearch(q, kind){
   const terms = q.toLowerCase().split(/\s+/).filter(Boolean);
   let pool = chartIndex();
   if (kind) pool = pool.filter(e => e.kind === kind);
   if (!terms.length) return pool;
+  /* A bare substring test makes a short term match inside longer words: "MI"
+     hit 1,210 of 1,330 charts through "administration" and "milligram". Three
+     characters or fewer must be a whole word; longer terms may match from a
+     word start, so "hypert" still reaches "hypertension" mid-typing. */
+  const esc = x => x.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
+  const expanded = terms.map(t => alternates(t).map(f => ({
+    f: f, re: new RegExp(f.length <= 3 ? "\\b" + esc(f) + "\\b" : "\\b" + esc(f)) })));
   const out = [];
   for (const e of pool) {
     const head = e.heading.toLowerCase();
     let score = 0, all = true;
-    for (const term of terms) {
-      if (e.hay.indexOf(term) < 0) { all = false; break; }
-      if (new RegExp("\\b" + term.replace(/[.*+?^${}()|[\]\\]/g, "\\$&") + "\\b").test(head)) score += 10;
-      else if (head.indexOf(term) >= 0) score += 6;
-      else if (e.topicTitle.toLowerCase().indexOf(term) >= 0) score += 3;
+    for (const forms of expanded) {
+      let hit = null;
+      for (const x of forms) if (x.re.test(e.hay)) { hit = x.f; break; }
+      if (!hit) { all = false; break; }
+      if (new RegExp("\\b" + hit.replace(/[.*+?^${}()|[\]\\]/g, "\\$&") + "\\b").test(head)) score += 10;
+      else if (head.indexOf(hit) >= 0) score += 6;
+      else if (e.topicTitle.toLowerCase().indexOf(hit) >= 0) score += 3;
       else score += 1;
     }
     if (all) out.push({e:e, s:score});

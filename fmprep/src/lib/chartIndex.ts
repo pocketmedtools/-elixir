@@ -15,6 +15,7 @@
  * boxes each is drawn with.
  */
 import type { Diagram, NoteTable } from "./types";
+import { alternates } from "./abbreviations";
 
 export type ChartKind = "score" | "treatment" | "flow" | "table";
 
@@ -111,21 +112,38 @@ export function buildChartIndex(
  * narrows rather than widening the way an any-word match would. An entry whose
  * heading carries the words is ranked above one that only mentions them in a
  * cell, and a whole-word hit above a prefix.
+ *
+ * A term matches on any of its spellings: "GCS" reaches a chart headed
+ * "Glasgow Coma Scale" and the other way round. Without that the index only
+ * held the literal words, and the same score was two different searches.
  */
 export function searchCharts(index: ChartEntry[], query: string, kind?: ChartKind): ChartEntry[] {
   const terms = query.toLowerCase().split(/\s+/).filter(Boolean);
   const pool = kind ? index.filter((e) => e.kind === kind) : index;
   if (!terms.length) return pool;
+  const esc = (x: string) => x.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
+  /* A bare substring test makes a short term match inside longer words: "MI"
+     hit 1,210 of 1,330 charts through "administration" and "milligram", and
+     "SAM" hit 228 through "same". Three characters or fewer must be a whole
+     word; anything longer may match from a word start, so typing "hypert"
+     still reaches "hypertension" while the search is being typed. */
+  const matcher = (form: string) =>
+    new RegExp(form.length <= 3 ? `\\b${esc(form)}\\b` : `\\b${esc(form)}`);
+  const expanded = terms.map((t) => alternates(t).map((f) => ({ f, re: matcher(f) })));
   const scored: { e: ChartEntry; score: number }[] = [];
   for (const e of pool) {
     const heading = e.heading.toLowerCase();
     let score = 0;
     let all = true;
-    for (const t of terms) {
-      if (!e.haystack.includes(t)) { all = false; break; }
-      if (new RegExp(`\\b${t.replace(/[.*+?^${}()|[\]\\]/g, "\\$&")}\\b`).test(heading)) score += 10;
-      else if (heading.includes(t)) score += 6;
-      else if (e.topicTitle.toLowerCase().includes(t)) score += 3;
+    for (const forms of expanded) {
+      const found = forms.find((x) => x.re.test(e.haystack));
+      if (!found) { all = false; break; }
+      const hit = found.f;
+      // The spelling that actually matched decides the rank, so a heading hit
+      // on the expansion scores like a heading hit on what was typed.
+      if (new RegExp(`\\b${esc(hit)}\\b`).test(heading)) score += 10;
+      else if (heading.includes(hit)) score += 6;
+      else if (e.topicTitle.toLowerCase().includes(hit)) score += 3;
       else score += 1;
     }
     if (all) scored.push({ e, score });

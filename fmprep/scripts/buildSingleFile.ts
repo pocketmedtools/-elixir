@@ -11,6 +11,8 @@
  */
 import { readFileSync, writeFileSync } from "node:fs";
 import { ensureAll, subjects } from "../src/content/index";
+import { ABBREVIATIONS } from "../src/lib/abbreviations";
+import { markSplit, repeatIndex } from "../src/lib/pyqStats";
 import { PAPER_QUESTIONS } from "../src/pyq/papers.generated";
 import { TOPICWISE_QUESTIONS } from "../src/pyq/topicwise.generated";
 import { linksFor } from "../src/pyq/link";
@@ -77,7 +79,25 @@ const data = {
       count((t) => (t.tables ?? []).length),
   },
   diagrams,
+  /* The same table the app imports, so the two searches cannot drift. */
+  abbr: ABBREVIATIONS,
   subjects: packed,
+  /* Precomputed rather than shipped as an algorithm: the clustering is
+     quadratic within a bucket, and doing it here means the page and the app
+     cannot disagree about how often a question has been asked. */
+  pyqStats: (() => {
+    const every = [
+      ...PAPER_QUESTIONS.map((q) => ({ id: q.id, question: q.question, session: q.session, year: q.year, marks: q.marks })),
+      ...TOPICWISE_QUESTIONS.map((q) => ({ id: q.id, question: q.question, session: q.session, year: q.year, marks: q.marks })),
+    ];
+    const repeats = repeatIndex(every);
+    const splits: Record<string, { parts: number[]; total: number; disagrees: boolean }> = {};
+    for (const q of every) {
+      const sp = markSplit(q.question, q.marks);
+      if (sp) splits[q.id] = sp;
+    }
+    return { repeats, splits };
+  })(),
   pyq: {
     papers: PAPER_QUESTIONS.map((q) => ({
       id: q.id, question: q.question, paper: q.paper, session: q.session, marks: q.marks,

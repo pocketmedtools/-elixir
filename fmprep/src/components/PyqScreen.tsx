@@ -14,6 +14,7 @@ import { useMemo, useState } from "react";
 import {
   PAPER_QUESTIONS,
   PYQ_SOURCE_NOTE,
+  TOPICWISE_QUESTIONS,
   papersFor,
   pyqCounts,
   recurringTopics,
@@ -25,6 +26,7 @@ import {
 import { linksFor } from "../pyq/link";
 import type { PaperId } from "../lib/types";
 import { BackBar, Chip, Empty } from "./ui";
+import { markSplit, repeatIndex, type MarkSplit, type Repeat } from "../lib/pyqStats";
 
 const PAPERS: PaperId[] = ["I", "II", "III", "IV"];
 
@@ -38,16 +40,58 @@ const KIND_LABEL: Record<string, string> = {
 };
 
 /** One question, with the library topics that answer it. */
+/* How often a question has been asked matters more than anything else on the
+   card: one that has come up in three sittings is the one to learn first. The
+   mark split is the examiner's own bracket notation, lifted out of the question
+   text where it was reading as ordinary prose. */
+function QuestionHistory({ repeat, split, stated }: { repeat?: Repeat; split?: MarkSplit | null; stated: number }) {
+  if (!repeat?.sittings.length && !split) return null;
+  return (
+    <>
+      {repeat && repeat.times > 1 && (
+        <p className="mt-2 text-[13px] leading-snug" style={{ color: "var(--quiet)" }}>
+          Sittings: {repeat.sittings.join(" · ")}
+        </p>
+      )}
+      {split && (
+        <p className="mt-2.5 flex flex-wrap items-center gap-1.5">
+          <span className="text-[12px] font-bold" style={{ color: "var(--label)" }}>Marks</span>
+          {split.parts.map((n, i) => (
+            <span
+              key={i}
+              className="inline-flex items-center gap-1.5 rounded-full border px-2.5 py-1 text-[12px] font-semibold"
+              style={{ background: "var(--mint)", borderColor: "var(--rule)", color: "var(--label)" }}
+            >
+              {i + 1}
+              <b className="text-[13.5px]" style={{ color: "var(--head)" }}>{n}</b>
+            </span>
+          ))}
+          <span className="text-[12.5px] font-bold" style={{ color: "var(--head)" }}>
+            = {split.total}
+            {split.disagrees ? ` (stated ${stated})` : ""}
+          </span>
+        </p>
+      )}
+    </>
+  );
+}
+
 function QuestionCard({
   id,
   question,
   meta,
   onOpenTopic,
+  repeat,
+  split,
+  stated = 0,
 }: {
   id: string;
   question: string;
   meta: React.ReactNode;
   onOpenTopic: (topicId: string) => void;
+  repeat?: Repeat;
+  split?: MarkSplit | null;
+  stated?: number;
 }) {
   const [open, setOpen] = useState(false);
   const links = useMemo(() => (open ? linksFor(id, question) : []), [open, id, question]);
@@ -67,6 +111,14 @@ function QuestionCard({
           {open ? "▾" : "▸"}
         </span>
       </button>
+
+      {/* Outside the button, not inside it. A paragraph nested in a button is
+          invalid, and it folded the sitting list into the button's accessible
+          name - which is what made the smoke test click the card instead of
+          the link to the answer. */}
+      <div className="px-3.5 pb-3 -mt-1">
+        <QuestionHistory repeat={repeat} split={split} stated={stated} />
+      </div>
 
       {open && (
         <div className="border-t border-slate-100 px-3.5 pb-4 pt-3">
@@ -118,6 +170,16 @@ export default function PyqScreen({
 
   const counts = pyqCounts();
   const sittingList = sittings();
+  /* Built once over every question from both sources, because a question can
+     repeat between a sitting paper and the topic-wise compilation. */
+  const stats = useMemo(() => {
+    const every = [
+      ...PAPER_QUESTIONS.map((q) => ({ id: q.id, question: q.question, session: q.session, year: q.year })),
+      ...TOPICWISE_QUESTIONS.map((q) => ({ id: q.id, question: q.question, session: q.session, year: q.year })),
+    ];
+    return { repeats: repeatIndex(every) };
+  }, []);
+
   const paperList = papersFor(session, paper);
   const groups = topicGroups();
   const recurring = recurringTopics();
@@ -214,6 +276,9 @@ export default function PyqScreen({
                 id={q.id}
                 question={q.question}
                 onOpenTopic={onOpenTopic}
+                repeat={stats.repeats[q.id]}
+                split={markSplit(q.question, q.marks)}
+                stated={q.marks}
                 meta={
                   <>
                     <Chip tone="blue">Paper {q.paper}</Chip>
@@ -221,6 +286,9 @@ export default function PyqScreen({
                     <Chip>Q{q.number}</Chip>
                     {q.marks > 0 && <Chip>{q.marks} marks</Chip>}
                     <Chip tone="teal">{KIND_LABEL[q.kind] ?? q.kind}</Chip>
+                    {stats.repeats[q.id]?.times > 1 && (
+                      <Chip tone="teal">Asked {stats.repeats[q.id].times} times</Chip>
+                    )}
                   </>
                 }
               />
@@ -277,11 +345,17 @@ export default function PyqScreen({
                             id={q.id}
                             question={q.question}
                             onOpenTopic={onOpenTopic}
+                            repeat={stats.repeats[q.id]}
+                            split={markSplit(q.question, q.marks)}
+                            stated={q.marks}
                             meta={
                               <>
                                 <Chip>{q.session}</Chip>
                                 {q.marks > 0 && <Chip>{q.marks} marks</Chip>}
                                 <Chip tone="teal">{KIND_LABEL[q.kind] ?? q.kind}</Chip>
+                                {stats.repeats[q.id]?.times > 1 && (
+                                  <Chip tone="teal">Asked {stats.repeats[q.id].times} times</Chip>
+                                )}
                               </>
                             }
                           />
