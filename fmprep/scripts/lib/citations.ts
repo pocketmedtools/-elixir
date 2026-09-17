@@ -45,6 +45,10 @@ export const PROPER_NAME = new Set<string>([
   "Bodenheimer 2014", "IHI 2008", "IHI 2003", "AFFIRM 2002", "RACE II 2010",
   "SOAP II 2010", "Magpie Trial 2002", "WHI 2002", "IDPP-1 2006", "DICE BMJ 2015",
   "PROT-AGE 2013", "ICMR-INDIAB 2014",
+  // Landmark papers found under a generic tag and named properly: the
+  // Osmanabad HPV screening trial, the COPCORD survey, and the WHO
+  // collaborative study that defined stroke.
+  "Sankaranarayanan NEJM 2009", "Chopra COPCORD 2015", "WHO 1980",
   
   // Judgments of the Supreme Court and the High Courts.
   "Samira Kohli 2008", "Jacob Mathew 2005", "Parmanand Katara 1989",
@@ -99,6 +103,22 @@ export const STILL_CURRENT = new Set<string>([
   // publication that still defines clinical audit.
   "NTSP 2012", "AAGBI 2010", "AAGBI LAST 2010", "AAO-HNS 2013",
   "WHO/UNICEF 2005", "NICE 2002",
+  // Each searched for a successor in September 2026 and none found. Altman's
+  // Practical Statistics has one edition; the PAHO disaster manual, the MoHFW
+  // sexual violence protocol, sterilisation standards and calcium guideline,
+  // the WHO growth standards, hospital safety index, palliative care
+  // definition and pesticide manual, the DHR-ICMR rickettsial and NVBDCP
+  // malaria guidelines, the ASAS and ACR/EULAR classification criteria, the
+  // AASM circadian guideline, the Endocrine Society hypoglycaemia guideline,
+  // the JAPI metabolic syndrome consensus, the AAN Bell palsy guideline
+  // (reaffirmed 2026), the IDSA meningitis guideline, the ILAE definitions
+  // of epilepsy and status epilepticus, and the OCEBM 2011 levels table.
+  "Altman 1991", "PAHO 2000", "MoHFW Sexual Violence 2014",
+  "WHO Growth Standards 2006", "WHO HSI 2015", "WHO Palliative 2002",
+  "MoHFW Sterilization 2014", "MoHFW Calcium 2014", "DHR-ICMR 2015",
+  "NVBDCP 2014", "ASAS 2009", "ACR/EULAR 2015", "WHO Pesticide 2008",
+  "AASM 2015", "Endocrine Society 2009", "JAPI 2009", "AAN 2012", "IDSA 2004",
+  "ILAE 2014", "ILAE 2015", "OCEBM 2011",
 ]);
 
 const YEAR = /\b(19|20)\d{2}\b/;
