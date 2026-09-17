@@ -7,7 +7,7 @@
 //
 // Bump CACHE_VERSION whenever the shell list changes; activate() drops every
 // older cache so a deploy never serves a half-stale shell.
-const CACHE_VERSION = 'fm-prep-v1'
+const CACHE_VERSION = 'fm-prep-v2'
 
 const BASE = new URL('./', self.location).pathname
 const INDEX = BASE + 'index.html'
