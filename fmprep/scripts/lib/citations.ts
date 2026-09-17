@@ -127,6 +127,13 @@ export const STILL_CURRENT = new Set<string>([
   // urinary tract symptoms in men (2019 surveillance: no update needed).
   "GRADE Handbook 2013", "STG Ophthalmology MoHFW 2015", "WHO CSOM 2004",
   "IDSA ABRS 2012", "ACEP 2011", "ACEP 2014", "NICE CG97 2015",
+  // Searched September 2026: KDIGO's 2026 AKI guideline is still a draft, so
+  // 2012 remains the published one; no 2025 European hyponatraemia guideline
+  // was found under any of the three societies' names; the HBNC 42-day
+  // schedule, IAP 2015 growth data, BTS pneumonia guideline (2015
+  // annotation), INOSA, WHO GDM diagnostic thresholds, and the MoHFW ANC and
+  // SBA guidelines of 2010 all remain the current documents.
+  "HBNC MoHFW 2014", "MoHFW HBNC 2014", "IAP Growth Charts 2015", "KDIGO AKI 2012", "ESE 2014", "BTS 2009", "INOSA 2014", "WHO GDM 2013", "MoHFW ANC 2010", "MoHFW SBA 2010",
 ]);
 
 const YEAR = /\b(19|20)\d{2}\b/;
