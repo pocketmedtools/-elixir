@@ -40,7 +40,7 @@ function Node({ step }: { step: DiagramStep }) {
   );
 }
 
-export default function DiagramBlock({ diagram }: { diagram: Diagram }) {
+export default function DiagramBlock({ diagram, hideHeading }: { diagram: Diagram; hideHeading?: boolean }) {
   let body = null;
 
   if (diagram.kind === "flow") {
@@ -203,6 +203,7 @@ export default function DiagramBlock({ diagram }: { diagram: Diagram }) {
       className="mt-5 rounded-xl border bg-white p-4 shadow-sm"
       style={{ borderColor: "var(--acc-rule)" }}
     >
+      {!hideHeading && (
       <figcaption className="mb-4">
         <p className="text-[17.5px] font-bold leading-[1.3]" style={{ color: "var(--acc)" }}>
           {diagram.heading}
@@ -211,6 +212,7 @@ export default function DiagramBlock({ diagram }: { diagram: Diagram }) {
           <p className="mt-1 text-[14px] leading-[1.5] text-slate-500">{diagram.caption}</p>
         )}
       </figcaption>
+      )}
       {body}
     </figure>
   );

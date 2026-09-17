@@ -223,8 +223,8 @@ function Row({
 
       {open && (
         <div className="mt-4">
-          {entry.diagram ? <DiagramBlock diagram={entry.diagram} /> : null}
-          {entry.table ? <TableBlock table={entry.table} /> : null}
+          {entry.diagram ? <DiagramBlock diagram={entry.diagram} hideHeading /> : null}
+          {entry.table ? <TableBlock table={entry.table} hideHeading /> : null}
           <button
             type="button"
             onClick={() => onOpenTopic(entry.topicId)}

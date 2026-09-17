@@ -7,6 +7,8 @@
  */
 import type { CSSProperties, ReactNode } from "react";
 import type { Frequency, NoteSection, NoteTable } from "../lib/types";
+import { figureFromTable } from "../lib/figure";
+import FigureBlock from "./FigureBlock";
 import { FREQUENCY_LABEL } from "../lib/types";
 
 /**
@@ -155,11 +157,25 @@ export function SectionBlock({
   );
 }
 
-export function TableBlock({ table }: { table: NoteTable }) {
-  return (
-    <section className="mt-8">
-      <h3 className="text-[1.08em] font-bold leading-snug tracking-tight text-slate-900">{table.heading}</h3>
-      <div className="tbl-wrap">
+// `hideHeading` is for the chart library, where the card already prints the
+// heading immediately above - it was printing twice.
+export function TableBlock({ table, hideHeading }: { table: NoteTable; hideHeading?: boolean }) {
+  // A classification is drawn; a comparison stays a table. Deriving it here
+  // rather than marking up 560 tables by hand means a table that is already
+  // shaped like a scale becomes a figure without being rewritten.
+  const figure = figureFromTable(table);
+  if (figure) {
+    return (
+      <section className="mt-8">
+        {!hideHeading && (
+          <h3 className="text-[1.08em] font-bold leading-snug tracking-tight text-slate-900">{table.heading}</h3>
+        )}
+        <FigureBlock figure={figure} />
+      </section>
+    );
+  }
+  const body = (
+    <div className="tbl-wrap">
         <div className="tbl-scroll">
           <table
             className="grid-table text-left text-[0.92em] leading-[1.55] sm:min-w-[34rem]"
@@ -187,12 +203,19 @@ export function TableBlock({ table }: { table: NoteTable }) {
             </tbody>
           </table>
         </div>
-        {table.columns.length > 2 && (
-          <p className="tbl-hint">
-            Swipe the table sideways &rarr; {table.columns.length - 1} more columns. The first column stays put.
-          </p>
-        )}
-      </div>
+      {table.columns.length > 2 && (
+        <p className="tbl-hint">
+          Swipe the table sideways &rarr; {table.columns.length - 1} more columns. The first column stays put.
+        </p>
+      )}
+    </div>
+  );
+  return (
+    <section className="mt-8">
+      {!hideHeading && (
+        <h3 className="text-[1.08em] font-bold leading-snug tracking-tight text-slate-900">{table.heading}</h3>
+      )}
+      {body}
     </section>
   );
 }
