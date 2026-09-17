@@ -181,6 +181,37 @@ const diagrams: DiagramSet = {
         },
       ],
     },
+    {
+      kind: "compare",
+      heading: "Trigeminal neuralgia versus the indomethacin-responsive headaches",
+      caption: "Any strictly unilateral daily headache with autonomic features earns an indomethacin trial, with gastric protection, before it is labelled chronic migraine. [API 11e 2019]",
+      columns: ["Feature", "Trigeminal neuralgia", "Paroxysmal hemicrania / hemicrania continua"],
+      rows: [
+        ["Pain", "Electric-shock paroxysms lasting seconds", "Strictly unilateral, with autonomic features"],
+        ["Territory", "V2 or V3 distribution", "Orbital or temporal, one side only"],
+        ["Trigger", "Chewing, talking, shaving, cold wind", "None specific"],
+        ["Diagnostic clue", "Refractory period between paroxysms", "Absolute response to indomethacin"],
+        ["Usual cause", "Vascular compression of the nerve root", "Idiopathic"],
+        ["First line", "Carbamazepine 100 mg BD up to 200 mg TDS-QDS", "Indomethacin 25-75 mg TDS"],
+        ["Alternative", "Oxcarbazepine: fewer interactions, less marrow suppression", "None; the response is the test"],
+        ["MRI when", "Under 40 years, sensory loss, bilateral pain, poor response", "Not needed to make the diagnosis"],
+        ["MRI looks for", "Multiple sclerosis, cerebellopontine angle tumour", "Nothing specific"],
+      ],
+    },
+    {
+      kind: "flow",
+      heading: "Medication overuse headache: recognise, withdraw, cover",
+      caption: "Always a second diagnosis on top of a pre-existing primary headache. [ICHD-3 2018]",
+      steps: [
+        { label: "Headache 15 or more days a month", detail: "In someone who already had a primary headache [ICHD-3 2018]", tone: "warn" },
+        { label: "Count the drug days, not the tablets", detail: "Simple analgesics on 15 or more days a month; triptans, opioids, ergots or combination analgesics on 10 or more days [ICHD-3 2018]" },
+        { label: "Overuse for more than 3 months?", detail: "Shorter periods of heavy use do not produce the syndrome [ICHD-3 2018]", tone: "decision" },
+        { label: "Withdraw the offending drug", detail: "No preventive works while the overused analgesic continues [NICE CG150 2021]", tone: "warn" },
+        { label: "Start a preventive the same day", detail: "It shortens and softens the rebound period [NICE CG150 2021]" },
+        { label: "Warn: worse for 1-2 weeks", detail: "An unwarned patient restarts the drug and the cycle repeats [BASH 2019]" },
+        { label: "Bridge the rebound", detail: "Naproxen or a short prednisolone taper, neither being the overused class [NICE CG150 2021]", tone: "good" },
+      ],
+    },
   ],
 
   "neurology-stroke-acute": [

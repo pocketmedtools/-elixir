@@ -6,6 +6,50 @@ import type { DiagramSet } from "../lib/types";
 const diagrams: DiagramSet = {
   "emergency-cardiac-arrest": [
     {
+      kind: "compare",
+      heading: "Defibrillation: energy, pads and contact",
+      caption: "Energy is chosen by waveform and by weight; contact decides how much of it crosses the ventricles. [ERC 2021, AHA 2020]",
+      columns: ["Item", "Setting", "Why"],
+      rows: [
+        ["Biphasic, first shock", "150-200 J, or the manufacturer setting", "Biphasic defibrillates at lower energy with less myocardial injury"],
+        ["Biphasic, later shocks", "Same energy or higher", "Escalation may end a rhythm the first shock survived"],
+        ["Monophasic", "360 J for every shock", "The older waveform is less efficient at any given energy"],
+        ["Child", "4 J/kg for the first and all later shocks", "Weight-based energy avoids both failure and myocardial burn"],
+        ["Paediatric pads or attenuator", "Under 8 years or 25 kg", "Adult energy on a small chest damages myocardium"],
+        ["Pad position", "Sternal-apical", "Right infraclavicular and left mid-axillary at the 5th space"],
+        ["Skin preparation", "Shave heavy hair, wipe the chest dry", "Poor contact arcs current across the skin and wastes the shock"],
+        ["Never pad over", "Pacemaker box, transdermal patch", "Current is shunted away and the patch can burn the skin"],
+      ],
+    },
+    {
+      kind: "branch",
+      heading: "Stopping, and when to keep going",
+      caption: "Survival past 20 minutes of asystole is vanishingly rare, but every arm on the right has documented survival after prolonged arrest. [ERC 2021]",
+      root: "Arrest not responding: should we stop?",
+      arms: [
+        {
+          label: "Grounds to stop",
+          tone: "warn",
+          steps: [
+            "At least 20 minutes of advanced life support",
+            "Persistent asystole with no reversible cause",
+            "End-tidal CO2 still below 10 mmHg after 20 minutes of good compressions",
+            "A team decision, never one person's - it protects patient and team leader alike",
+          ],
+        },
+        {
+          label: "Grounds to continue",
+          tone: "good",
+          steps: [
+            "Hypothermia - no one is dead until warm and dead",
+            "Drowning, poisoning, and the young",
+            "Pregnancy beyond 20 weeks - perimortem caesarean within 5 minutes",
+            "Pulmonary embolism thrombolysed - continue CPR for 60-90 minutes",
+          ],
+        },
+      ],
+    },
+    {
       kind: "flow",
       heading: "Adult advanced life support",
       caption: "From recognition to return of spontaneous circulation, in the order it is done.",
@@ -121,6 +165,17 @@ const diagrams: DiagramSet = {
   ],
 
   "emergency-anaphylaxis": [
+    {
+      kind: "compare",
+      heading: "How anaphylaxis kills, and how fast",
+      caption: "The route of exposure sets the clock. A parenteral trigger leaves no time to fetch help first. [RCUK 2021]",
+      columns: ["Mechanism", "Median time to death", "Typical trigger"],
+      rows: [
+        ["Upper airway obstruction", "5 minutes", "Iatrogenic, parenteral - no time for transport"],
+        ["Bronchospasm", "15 minutes", "Food - gut absorption is slower than a vein"],
+        ["Vasodilatory shock", "Up to 35% of circulating volume shifts out in 10 minutes", "Any route, with capillary leak into the interstitium"],
+      ],
+    },
     {
       kind: "flow",
       heading: "Anaphylaxis: the first ten minutes",
@@ -253,6 +308,71 @@ const diagrams: DiagramSet = {
   ],
 
   "emergency-shock": [
+    {
+      kind: "compare",
+      heading: "The three perfusion windows",
+      caption: "Skin, brain and kidney read oxygen delivery where a cuff cannot, and need no equipment at all. [ATLS 10e]",
+      columns: ["Window", "What to look for", "Interpretation"],
+      rows: [
+        ["Skin", "Capillary refill over 3 seconds, mottling, cold peripheries", "The first window to close"],
+        ["Brain", "Anxiety, restlessness, drowsiness, confusion", "A restless shocked patient is hypoxic, not difficult"],
+        ["Kidney", "Urine under 0.5 mL/kg/h adult, under 1 mL/kg/h child", "Catheterise early so the trend is visible"],
+      ],
+    },
+    {
+      kind: "compare",
+      heading: "Numbers that call shock before the blood pressure does",
+      caption: "Each moves while the systolic still looks acceptable. Where point-of-care lactate is unavailable, the three clinical windows substitute. [ATLS 10e, SSC 2021]",
+      columns: ["Measure", "How it is taken", "Threshold"],
+      rows: [
+        ["Pulse pressure", "Systolic minus diastolic", "Narrow, below about 25% of systolic, in hypovolaemic and cardiogenic shock"],
+        ["Shock index", "Heart rate divided by systolic BP", "Above 0.9 predicts significant blood loss and transfusion need"],
+        ["Serum lactate", "Point-of-care or laboratory", "Above 2 mmol/L means tissue hypoperfusion"],
+        ["Serum lactate, high risk", "Point-of-care or laboratory", "Above 4 mmol/L, with mortality climbing steeply"],
+      ],
+    },
+    {
+      kind: "compare",
+      heading: "Which fluid, and which never",
+      caption: "The choice of fluid changes kidney injury and death, not just the volume delivered. [SSC 2021]",
+      columns: ["Fluid", "Place", "Reason"],
+      rows: [
+        ["Balanced crystalloid", "Preferred first choice", "Ringer lactate or Plasmalyte; electrolytes near plasma"],
+        ["0.9% saline", "Acceptable, but not in large volume", "154 mmol/L chloride causes hyperchloraemic acidosis and kidney injury"],
+        ["Starches", "Contraindicated", "More renal replacement therapy and more deaths"],
+        ["Albumin", "Not first-line", "No better than crystalloid and many times the cost"],
+      ],
+    },
+    {
+      kind: "flow",
+      heading: "Dengue shock syndrome",
+      caption: "The critical phase begins as the fever falls, on days 4-6, and the leak is time-limited. [NVBDCP 2023]",
+      steps: [
+        {
+          label: "Days 4-6 of fever, fever settling",
+          detail: "Pulse pressure narrowing to 20 mmHg or less marks the critical phase",
+          tone: "warn",
+        },
+        {
+          label: "Rising haematocrit, falling platelets",
+          detail: "Plasma leaks out of the vessels and concentrates the blood",
+        },
+        {
+          label: "Isotonic crystalloid 5-10 mL/kg/h",
+          detail: "Titrated to pulse pressure and haematocrit, not to a fixed volume",
+        },
+        {
+          label: "Haematocrit falling but still shocked?",
+          detail: "This is bleeding, not improvement - look for the source and transfuse",
+          tone: "decision",
+        },
+        {
+          label: "Stop early, do not over-transfuse",
+          detail: "Leaked plasma returns to the circulation after about 48 hours and floods the lungs",
+          tone: "good",
+        },
+      ],
+    },
     {
       kind: "branch",
       heading: "Classifying shock at the bedside",

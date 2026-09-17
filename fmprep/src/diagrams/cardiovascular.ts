@@ -190,6 +190,19 @@ const diagrams: DiagramSet = {
   "cardiovascular-stable-angina": [
     {
       kind: "compare",
+      heading: "CABG or PCI in stable coronary disease",
+      caption: "Revascularisation in stable disease relieves symptoms; ISCHEMIA and COURAGE showed it does not cut death or infarction, so optimal medical therapy comes first.",
+      columns: ["Anatomy", "Preferred", "Why"],
+      rows: [
+        ["Left main disease", "CABG", "A graft protects the whole territory distal to the lesion"],
+        ["Triple-vessel disease with a high SYNTAX score", "CABG", "Complex anatomy stents poorly"],
+        ["Diabetes with multivessel disease", "CABG", "Diffuse disease and restenosis make stenting less durable"],
+        ["One- or two-vessel, focal lesions", "PCI", "Shorter recovery and no sternotomy"],
+        ["After a drug-eluting stent", "DAPT: aspirin 75 mg plus clopidogrel 75 mg OD for 6 months, then aspirin alone lifelong", "6 months is how long the struts take to endothelialise; shorten to 1-3 months if bleeding risk is high, and never stop early without the interventionist"],
+      ],
+    },
+    {
+      kind: "compare",
       heading: "Typical, atypical and non-anginal chest pain",
       caption: "Three features: substernal character, provoked by exertion, relieved by rest or nitrate.",
       columns: ["Feature", "Typical angina", "Atypical angina", "Non-anginal"],

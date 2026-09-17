@@ -174,6 +174,18 @@ const diagrams: DiagramSet = {
 
   "infectious-fever-dengue": [
     {
+      kind: "ladder",
+      heading: "The older DHF grading, still used by the programme",
+      caption:
+        "Indian programme documents still grade dengue as dengue fever, DHF I-IV and dengue shock syndrome, so know this alongside the WHO 2009 groups. Grades III and IV together are dengue shock syndrome. [NVBDCP 2024]",
+      steps: [
+        { label: "DHF grade I", detail: "Fever with a positive tourniquet test only - capillary fragility only" },
+        { label: "DHF grade II", detail: "Grade I plus spontaneous bleeding - vessels have begun to bleed" },
+        { label: "DHF grade III", detail: "Circulatory failure with a narrow pulse pressure - plasma leak has reached the circulation", tone: "warn" },
+        { label: "DHF grade IV", detail: "Profound shock with unrecordable blood pressure - leak is now uncompensated", tone: "warn" },
+      ],
+    },
+    {
       kind: "flow",
       heading: "The three phases of dengue",
       caption:
@@ -285,6 +297,39 @@ const diagrams: DiagramSet = {
   ],
 
   "infectious-fever-malaria": [
+    {
+      kind: "branch",
+      heading: "Giving primaquine safely",
+      caption:
+        "Primaquine causes dose-related oxidant haemolysis, so G6PD status governs the regimen. Vivax radical cure is 0.25 mg/kg daily for 14 days; the falciparum gametocytocidal dose is 0.75 mg/kg once on day 2. [NVBDCP 2024]",
+      root: "Primaquine for radical cure or gametocytocide",
+      arms: [
+        {
+          label: "G6PD normal or no risk history",
+          tone: "good",
+          steps: [
+            "Give the full 14-day course for vivax",
+            "Warn about dark urine and stop the drug if it appears",
+          ],
+        },
+        {
+          label: "G6PD status unknown",
+          steps: [
+            "Ask about family jaundice after fava beans or sulpha drugs",
+            "Primaquine 0.75 mg/kg weekly for 8 weeks, supervised",
+            "Weekly dosing limits haemolysis",
+          ],
+        },
+        {
+          label: "Contraindicated",
+          tone: "warn",
+          steps: [
+            "Pregnancy, infant under 1 year, known G6PD deficiency",
+            "Oxidant haemolysis; no primaquine at all",
+          ],
+        },
+      ],
+    },
     {
       kind: "branch",
       heading: "NVBDCP drug policy: treatment by species",

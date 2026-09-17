@@ -181,6 +181,68 @@ const diagrams: DiagramSet = {
         },
       ],
     },
+    {
+      kind: "flow",
+      heading: "PMSMA on the 9th, and e-PMSMA follow-up",
+      caption:
+        "PMSMA 2016 lays a specialist screening net over the four routine visits; e-PMSMA 2022 adds named tracking of the women it finds.",
+      steps: [
+        {
+          label: "Fixed date: the 9th of every month",
+          detail: "A free, assured, quality antenatal check-up; a fixed date is what makes the specialist turn up",
+        },
+        {
+          label: "Every woman in the 2nd or 3rd trimester",
+          detail: "Seen at a designated facility",
+        },
+        {
+          label: "Seen by an obstetrician or trained MO",
+          detail: "So every woman meets a specialist at least once",
+        },
+        {
+          label: "Detect and colour-code high risk",
+          detail: "PMSMA is a screening net laid over the four visits, not routine care",
+          tone: "decision",
+        },
+        {
+          label: "Red sticker on the MCP card",
+          detail: "Tracked by name on the ANMOL/RCH portal, so a missed visit is visible",
+          tone: "warn",
+        },
+        {
+          label: "e-PMSMA named follow-up",
+          detail: "An incentive is paid for completing four high-risk antenatal visits, so follow-up does not lapse",
+          tone: "good",
+        },
+      ],
+    },
+    {
+      kind: "branch",
+      heading: "Two silent infections screened at booking",
+      root: "Booking serology: HIV and VDRL",
+      caption: "Both are treatable, both are silent, and treatment of either prevents almost all fetal disease.",
+      arms: [
+        {
+          label: "HIV: opt-out testing [NACO 2021]",
+          steps: [
+            "Opt-in testing left most positive women undiagnosed",
+            "Reactive: immediate lifelong antiretroviral therapy for the mother",
+            "Vertical transmission falls from about 30% to under 2%",
+            "Most transmission is at delivery, at peak viral load",
+          ],
+        },
+        {
+          label: "Syphilis: VDRL mandatory [NACO 2021]",
+          tone: "warn",
+          steps: [
+            "The spirochaete crosses the placenta: stillbirth, prematurity, congenital syphilis",
+            "Benzathine penicillin 2.4 million units IM single dose [CDC STI 2021]",
+            "Late latent: three weekly doses of 2.4 million units IM",
+            "No other antibiotic reliably crosses to treat the fetus",
+          ],
+        },
+      ],
+    },
   ],
 
   "obstetrics-anaemia-pregnancy": [
