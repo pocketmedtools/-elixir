@@ -67,12 +67,16 @@ export default function App() {
             </p>
           </div>
           {/* Offering the Android app to someone already inside the Android
-              app is noise, so the installed build drops it. A direct file URL,
-              not a release redirect: Android's download manager stalls on the
-              github.com -> S3 hop. */}
+              app is noise, so the installed build drops it. The release
+              asset rather than the raw file: raw.githubusercontent serves an
+              APK as application/octet-stream with no filename, which a phone
+              browser will not hand to the installer, and its CDN can answer
+              with a copy of the previous build for minutes after a push. The
+              release URL redirects once, to a signed address that carries the
+              APK media type and Content-Disposition: attachment. */}
           {!isNative && (
           <a
-            href="https://raw.githubusercontent.com/pocketmedtools/-elixir/fmprep-apk/FM-Prep.apk"
+            href="https://github.com/pocketmedtools/-elixir/releases/download/fmprep-apk-latest/FM-Prep.apk"
             target="_blank"
             rel="noopener"
             className="shrink-0 rounded-lg bg-slate-900 px-3 py-2 text-[13px] font-semibold text-white hover:bg-slate-800"
