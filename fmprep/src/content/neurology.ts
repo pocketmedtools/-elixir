@@ -682,68 +682,6 @@ topics.push({
       difficulty: "easy",
     },
   ],
-  cards: [
-    {
-      id: "neurology-headache-c1",
-      front: "ICHD-3 criteria for migraine without aura.",
-      back: "At least 5 attacks, 4-72 hours untreated, 2 of 4 (unilateral, pulsating, moderate-severe, worse with routine activity), plus nausea or vomiting, or photophobia AND phonophobia.",
-    },
-    {
-      id: "neurology-headache-c2",
-      front: "Definition of chronic migraine.",
-      back: "Headache on 15 or more days a month for more than 3 months, with migraine features on at least 8 of those days.",
-    },
-    {
-      id: "neurology-headache-c3",
-      front: "Diagnostic thresholds for medication overuse headache.",
-      back: "Headache 15 or more days a month with regular use for over 3 months of simple analgesics on 15 or more days a month, or triptans, ergots, opioids or combination analgesics on 10 or more days a month.",
-    },
-    {
-      id: "neurology-headache-c4",
-      front: "Two first-line treatments for an acute cluster attack.",
-      back: "High-flow oxygen 12-15 L/min by non-rebreathing mask for 15-20 minutes, and subcutaneous sumatriptan 6 mg.",
-    },
-    {
-      id: "neurology-headache-c5",
-      front: "Sensitivity of non-contrast CT for subarachnoid haemorrhage by time from onset.",
-      back: "Close to 100% within 6 hours; it falls steadily after that, so a negative late CT must be followed by lumbar puncture at 12 hours or later for xanthochromia.",
-    },
-    {
-      id: "neurology-headache-c6",
-      front: "First-line drug for trigeminal neuralgia and its dose.",
-      back: "Carbamazepine 100 mg PO BD titrated to 200 mg TDS-QDS; MRI if under 40, bilateral, with sensory loss or drug-resistant.",
-    },
-    {
-      id: "neurology-headache-c7",
-      front: "Which headache responds absolutely to indomethacin?",
-      back: "Paroxysmal hemicrania and hemicrania continua - the response is itself diagnostic.",
-    },
-    {
-      id: "neurology-headache-c8",
-      front: "Contraceptive rule in migraine with aura.",
-      back: "Combined hormonal contraception is WHO MEC category 4 (absolutely contraindicated); use progestogen-only methods, implants or intrauterine devices.",
-    },
-    {
-      id: "neurology-headache-c9",
-      front: "Four first-line oral migraine preventives with doses.",
-      back: "Propranolol 40-160 mg/day, amitriptyline 10-75 mg at night, topiramate 25-100 mg/day, flunarizine 5-10 mg at night.",
-    },
-    {
-      id: "neurology-headache-c10",
-      front: "What counts as success from a migraine preventive, and after how long?",
-      back: "A 50% reduction in headache days on a diary, judged after an 8-12 week trial at the target dose.",
-    },
-    {
-      id: "neurology-headache-c11",
-      front: "Immediate treatment of suspected giant cell arteritis.",
-      back: "Prednisolone 40-60 mg daily at once (IV methylprednisolone if visual loss), then temporal artery biopsy within 1-2 weeks; do not wait for histology.",
-    },
-    {
-      id: "neurology-headache-c12",
-      front: "Which triptan contraindications must be checked before prescribing?",
-      back: "Ischaemic heart disease, previous MI or stroke, uncontrolled hypertension, peripheral vascular disease, hemiplegic or brainstem-aura migraine, and ergot use within 24 hours.",
-    },
-  ],
   references: [
     "International Classification of Headache Disorders, 3rd edition (ICHD-3), Cephalalgia 2018",
     "NICE Clinical Guideline CG150, Headaches in over 12s: diagnosis and management, updated 2021",
@@ -1455,68 +1393,6 @@ topics.push({
       difficulty: "moderate",
     },
   ],
-  cards: [
-    {
-      id: "neurology-stroke-acute-c1",
-      front: "WHO definition of stroke.",
-      back: "Rapidly developing clinical signs of focal or global disturbance of cerebral function lasting more than 24 hours or leading to death, with no apparent cause other than vascular origin.",
-    },
-    {
-      id: "neurology-stroke-acute-c2",
-      front: "What does BE-FAST stand for?",
-      back: "Balance, Eyes, Face droop, Arm weakness, Speech difficulty, Time to call for help - the two extra letters catch posterior circulation stroke.",
-    },
-    {
-      id: "neurology-stroke-acute-c3",
-      front: "Alteplase dose and window for acute ischaemic stroke.",
-      back: "0.9 mg/kg (maximum 90 mg) within 4.5 hours of time last seen well; 10% as a bolus over 1 minute, the rest over 60 minutes. Tenecteplase 0.25 mg/kg single bolus is an alternative.",
-    },
-    {
-      id: "neurology-stroke-acute-c4",
-      front: "Blood pressure rules in acute ischaemic stroke.",
-      back: "Do not treat unless above 220/120 mmHg. If thrombolysing, bring below 185/110 mmHg first and keep below 180/105 mmHg for 24 hours. In intracerebral haemorrhage aim systolic 140 mmHg.",
-    },
-    {
-      id: "neurology-stroke-acute-c5",
-      front: "Thrombectomy window for large-vessel occlusion.",
-      back: "Within 6 hours routinely; extended to 24 hours in selected patients with perfusion or clinical-core mismatch (DAWN, DEFUSE-3).",
-    },
-    {
-      id: "neurology-stroke-acute-c6",
-      front: "Five lacunar syndromes.",
-      back: "Pure motor hemiparesis, pure sensory stroke, sensorimotor stroke, ataxic hemiparesis, dysarthria-clumsy hand syndrome - all without cortical signs.",
-    },
-    {
-      id: "neurology-stroke-acute-c7",
-      front: "Features of lateral medullary (Wallenberg) syndrome.",
-      back: "Ipsilateral facial pain and temperature loss, Horner syndrome, palatal and vocal cord palsy, limb ataxia, vertigo and hiccups; contralateral body pain and temperature loss.",
-    },
-    {
-      id: "neurology-stroke-acute-c8",
-      front: "When is aspirin started after ischaemic stroke, and at what dose?",
-      back: "300 mg within 48 hours once CT excludes haemorrhage, then 75-150 mg daily; delay 24 hours after thrombolysis and repeat CT first.",
-    },
-    {
-      id: "neurology-stroke-acute-c9",
-      front: "Dual antiplatelet regimen after minor stroke or high-risk TIA.",
-      back: "Aspirin plus clopidogrel for 21 days started within 24 hours, then a single antiplatelet long term (CHANCE, POINT).",
-    },
-    {
-      id: "neurology-stroke-acute-c10",
-      front: "Which single intervention reduces death and dependency in stroke most broadly?",
-      back: "Admission to an organised stroke unit - number needed to treat about 20, and available even to patients outside the thrombolysis window.",
-    },
-    {
-      id: "neurology-stroke-acute-c11",
-      front: "Timing of carotid endarterectomy after a stroke or TIA.",
-      back: "Within 2 weeks of the event for symptomatic internal carotid stenosis of 70-99%; benefit falls sharply with delay.",
-    },
-    {
-      id: "neurology-stroke-acute-c12",
-      front: "Three reflex errors to avoid in acute stroke.",
-      back: "Sublingual nifedipine, intramuscular injections (they preclude thrombolysis) and dextrose-containing intravenous fluids.",
-    },
-  ],
   references: [
     "AHA/ASA Guidelines for the Early Management of Patients with Acute Ischemic Stroke, 2019 with 2019-2023 focused updates",
     "Indian Stroke Association / Indian Academy of Neurology consensus guidelines for acute ischaemic stroke, 2022",
@@ -2047,68 +1923,6 @@ topics.push({
       explanation:
         "Every ischaemic stroke or TIA is a secondary prevention indication for a high-intensity statin regardless of the baseline LDL, with a target below 70 mg/dL and below 55 mg/dL in the very high risk category defined by the Lipid Association of India; the SPARCL and treat-to-target evidence supports this. Withholding a statin because the LDL is under 100 mg/dL misapplies a primary prevention threshold. Low-dose atorvastatin gives an LDL reduction under 50% and is not high-intensity therapy. Fenofibrate treats hypertriglyceridaemia and does not reduce stroke recurrence, and a six-month diet trial wastes the period of highest risk.",
       difficulty: "easy",
-    },
-  ],
-  cards: [
-    {
-      id: "neurology-tia-c1",
-      front: "Current (tissue-based) definition of TIA.",
-      back: "Transient focal neurological dysfunction from brain, spinal cord or retinal ischaemia WITHOUT acute infarction on imaging. The old 24-hour time-based definition is obsolete.",
-    },
-    {
-      id: "neurology-tia-c2",
-      front: "Stroke risk after an untreated TIA at 2 days, 7 days and 90 days.",
-      back: "About 5% at 2 days, 8-10% at 7 days, 10-17% at 90 days. Urgent treatment reduces the 90-day risk by roughly 80%.",
-    },
-    {
-      id: "neurology-tia-c3",
-      front: "Components of the ABCD2 score.",
-      back: "Age 60+ (1), BP 140/90+ (1), unilateral weakness (2) or speech disturbance alone (1), duration 60 min+ (2) or 10-59 min (1), Diabetes (1). Maximum 7.",
-    },
-    {
-      id: "neurology-tia-c4",
-      front: "What is amaurosis fugax and what does it imply?",
-      back: "Painless transient monocular visual loss like a curtain descending - a retinal TIA in the internal carotid territory; arrange carotid Doppler urgently and check ESR if over 50.",
-    },
-    {
-      id: "neurology-tia-c5",
-      front: "Dual antiplatelet regimen after a high-risk TIA.",
-      back: "Aspirin plus clopidogrel started within 24 hours and continued for 21 days, then a single antiplatelet lifelong.",
-    },
-    {
-      id: "neurology-tia-c6",
-      front: "Blood pressure and LDL targets after an ischaemic TIA.",
-      back: "Blood pressure below 130/80 mmHg; LDL cholesterol below 70 mg/dL (below 55 mg/dL if very high risk), on a high-intensity statin regardless of baseline LDL.",
-    },
-    {
-      id: "neurology-tia-c7",
-      front: "Indication and timing for carotid endarterectomy.",
-      back: "Symptomatic internal carotid stenosis of 70-99% (consider 50-69% in men), operated within 2 weeks of the event by a surgeon with a complication rate under 6%.",
-    },
-    {
-      id: "neurology-tia-c8",
-      front: "Symptoms that are NOT a TIA when they occur in isolation.",
-      back: "Dizziness, syncope or presyncope, generalised weakness, confusion, incontinence, tinnitus, transient global amnesia, whole-body numbness.",
-    },
-    {
-      id: "neurology-tia-c9",
-      front: "Definition of crescendo TIA and what it demands.",
-      back: "Two or more TIAs in a week, or attacks increasing in frequency, duration or severity - admit the same day for urgent evaluation.",
-    },
-    {
-      id: "neurology-tia-c10",
-      front: "When must a TIA patient be anticoagulated rather than given an antiplatelet?",
-      back: "When there is atrial fibrillation or another cardioembolic source; warfarin (INR 2-3) if there is rheumatic mitral stenosis or a mechanical valve, otherwise a DOAC or warfarin.",
-    },
-    {
-      id: "neurology-tia-c11",
-      front: "What proportion of cryptogenic TIA and stroke patients have paroxysmal atrial fibrillation on prolonged monitoring?",
-      back: "About 10-15% with 24-72 hours of monitoring, rising further with longer recording - which is why rhythm monitoring is mandatory.",
-    },
-    {
-      id: "neurology-tia-c12",
-      front: "First drug to give in the clinic when a TIA is suspected.",
-      back: "Aspirin 300 mg orally at once (if there is no bleeding or contraindication), then refer for specialist assessment within 24 hours.",
     },
   ],
   references: [
@@ -2706,58 +2520,6 @@ topics.push({
       explanation:
         "Repeated episodes of vestibular symptoms lasting between 5 minutes and 72 hours with migrainous features - photophobia, phonophobia and headache - in at least half the attacks, with normal hearing and a normal audiogram, meet the criteria for vestibular migraine, and prophylaxis follows migraine practice with propranolol, amitriptyline, flunarizine or topiramate. Meniere disease requires audiometrically documented low-to-mid frequency sensorineural hearing loss and fluctuating aural symptoms, both absent here. Vestibular neuritis is a single monophasic illness of continuous vertigo lasting days, not a recurrent episodic disorder. BPPV lasts under a minute and is triggered by head position. Persistent postural-perceptual dizziness is continuous non-spinning unsteadiness for three months or more, not discrete attacks of hours.",
       difficulty: "moderate",
-    },
-  ],
-  cards: [
-    {
-      id: "neurology-vertigo-c1",
-      front: "The four features of a positive Dix-Hallpike test.",
-      back: "Latency of 1-5 seconds; upbeating torsional nystagmus with the upper pole beating towards the dependent ear; duration under 60 seconds; reversal on sitting up with fatiguing on repetition.",
-    },
-    {
-      id: "neurology-vertigo-c2",
-      front: "The three components of HINTS and the central pattern.",
-      back: "Head Impulse, Nystagmus, Test of Skew. Central = INFARCT: Impulse Normal, Fast-phase Alternating (direction-changing), Refixation on Cover Test (skew). Any one central finding means central.",
-    },
-    {
-      id: "neurology-vertigo-c3",
-      front: "Why is a NORMAL head impulse test the worrying result?",
-      back: "In a patient with continuous vertigo and nystagmus, an intact vestibulo-ocular reflex means the peripheral apparatus is working, so the lesion must be central - a brainstem or cerebellar stroke.",
-    },
-    {
-      id: "neurology-vertigo-c4",
-      front: "Which canal is involved in most BPPV, and what treats it?",
-      back: "The posterior semicircular canal in 85-90%; treated by the Epley manoeuvre (about 80% cured after one, 90-95% after two or three). Horizontal canal BPPV needs the Lempert 360 degree roll.",
-    },
-    {
-      id: "neurology-vertigo-c5",
-      front: "The five positions of the Epley manoeuvre for the right side.",
-      back: "1 Sit, head 45 degrees right. 2 Lie back to Dix-Hallpike right, head 20-30 degrees below horizontal. 3 Head 90 degrees to the left. 4 Roll onto the left shoulder, nose 45 degrees to the floor. 5 Sit up with the chin tucked. Hold each 30-60 seconds.",
-    },
-    {
-      id: "neurology-vertigo-c6",
-      front: "Diagnostic criteria for definite Meniere disease.",
-      back: "Two or more spontaneous vertigo attacks of 20 minutes to 12 hours; audiometrically documented low-to-mid frequency sensorineural hearing loss in the affected ear on at least one occasion; fluctuating hearing loss, tinnitus or fullness in that ear; no better explanation.",
-    },
-    {
-      id: "neurology-vertigo-c7",
-      front: "Definition of orthostatic hypotension.",
-      back: "A fall of 20 mmHg or more in systolic, or 10 mmHg or more in diastolic, blood pressure within 3 minutes of standing from a supine position.",
-    },
-    {
-      id: "neurology-vertigo-c8",
-      front: "How long may vestibular sedatives be used, and why not longer?",
-      back: "48-72 hours only. Beyond that betahistine, cinnarizine, prochlorperazine and dimenhydrinate delay central compensation and cause chronic dizziness; cinnarizine and prochlorperazine also cause drug-induced parkinsonism and tardive dyskinesia in the elderly.",
-    },
-    {
-      id: "neurology-vertigo-c9",
-      front: "Commonest cause of recurrent spontaneous vertigo.",
-      back: "Vestibular migraine - 5 minutes to 72 hours, migraine history, migrainous features in at least half the attacks; the vertigo often occurs without any headache.",
-    },
-    {
-      id: "neurology-vertigo-c10",
-      front: "What does new unilateral deafness with an acute vestibular syndrome suggest?",
-      back: "An anterior inferior cerebellar artery (AICA) infarct involving the labyrinthine artery - it raises rather than lowers the concern for stroke (HINTS plus).",
     },
   ],
   references: [
@@ -3375,58 +3137,6 @@ topics.push({
       difficulty: "hard",
     },
   ],
-  cards: [
-    {
-      id: "neurology-peripheral-neuropathy-c1",
-      front: "The four causes of peripheral neuropathy to exclude first in India.",
-      back: "Diabetes mellitus, alcohol, vitamin B12 deficiency and leprosy - all common, all treatable, three of them tested with cheap blood tests and the fourth by palpating nerves.",
-    },
-    {
-      id: "neurology-peripheral-neuropathy-c2",
-      front: "When and how is diabetic peripheral neuropathy screened for?",
-      back: "At diagnosis in type 2 diabetes, 5 years after diagnosis in type 1, then annually. Use a 10 g monofilament at the great toe and 1st, 3rd and 5th metatarsal heads, plus one of a 128 Hz tuning fork, pinprick, temperature or the ankle reflex.",
-    },
-    {
-      id: "neurology-peripheral-neuropathy-c3",
-      front: "What does inability to feel the 10 g monofilament mean?",
-      back: "Loss of protective sensation - the foot is at risk of ulceration. It is the single most important finding of the diabetic foot examination and must be recorded as a yes or no.",
-    },
-    {
-      id: "neurology-peripheral-neuropathy-c4",
-      front: "First-line drugs for painful diabetic neuropathy with target doses.",
-      back: "Amitriptyline 10-75 mg at night; duloxetine 60 mg daily; pregabalin 75 mg BD to 300 mg daily (max 600); gabapentin to 1800-3600 mg daily in 3 doses. Titrate to maximum tolerated over 4-8 weeks before declaring failure.",
-    },
-    {
-      id: "neurology-peripheral-neuropathy-c5",
-      front: "Absent ankle jerks with brisk knee jerks and extensor plantars - diagnosis?",
-      back: "Vitamin B12 deficiency with subacute combined degeneration. Haemoglobin and mean corpuscular volume are often normal; confirm with methylmalonic acid and homocysteine if B12 is low-normal.",
-    },
-    {
-      id: "neurology-peripheral-neuropathy-c6",
-      front: "Which nerves are palpated for thickening in suspected leprosy?",
-      back: "Ulnar at the elbow, common peroneal at the fibular neck, posterior tibial behind the medial malleolus, greater auricular in the neck, and the radial cutaneous at the wrist.",
-    },
-    {
-      id: "neurology-peripheral-neuropathy-c7",
-      front: "Pyridoxine dose to prevent isoniazid neuropathy.",
-      back: "10 mg daily routinely with anti-tuberculosis treatment, and 50 mg daily in the malnourished, alcoholic, diabetic, pregnant, uraemic or HIV-positive patient.",
-    },
-    {
-      id: "neurology-peripheral-neuropathy-c8",
-      front: "The 20/30/40 rule in Guillain-Barre syndrome.",
-      back: "Anticipate intubation when forced vital capacity falls below 20 mL/kg, maximum inspiratory pressure is weaker than -30 cmH2O, or maximum expiratory pressure is below 40 cmH2O. Oxygen saturation stays normal until near arrest.",
-    },
-    {
-      id: "neurology-peripheral-neuropathy-c9",
-      front: "Treatment of Guillain-Barre syndrome.",
-      back: "Intravenous immunoglobulin 0.4 g/kg/day for 5 days OR plasma exchange - equally effective, never combined. Corticosteroids are ineffective and must not be used.",
-    },
-    {
-      id: "neurology-peripheral-neuropathy-c10",
-      front: "Hot, swollen, deformed but relatively painless foot in a neuropathic diabetic.",
-      back: "Charcot neuroarthropathy. Treat with immediate total-contact casting and complete offloading, not antibiotics; misdiagnosis as cellulitis destroys the foot.",
-    },
-  ],
   references: [
     "American Diabetes Association Standards of Care in Diabetes, 2024 - Retinopathy, Neuropathy and Foot Care",
     "Pop-Busui R et al., Diabetic Neuropathy: A Position Statement by the American Diabetes Association, Diabetes Care 2017",
@@ -3966,68 +3676,6 @@ topics.push({
       difficulty: "moderate",
     },
   ],
-  cards: [
-    {
-      id: "neurology-cns-infection-c1",
-      front: "Empirical antibiotics for community-acquired bacterial meningitis in an adult.",
-      back: "Ceftriaxone 2 g IV 12-hourly plus vancomycin 15-20 mg/kg IV 8-12 hourly; add ampicillin 2 g IV 4-hourly if over 50, pregnant, immunosuppressed or alcoholic, to cover Listeria.",
-    },
-    {
-      id: "neurology-cns-infection-c2",
-      front: "Dexamethasone in bacterial meningitis - dose and timing.",
-      back: "0.15 mg/kg IV every 6 hours for 4 days, first dose 15-20 minutes before or with the first antibiotic dose. Stop it if the organism is not pneumococcus; do not start it late.",
-    },
-    {
-      id: "neurology-cns-infection-c3",
-      front: "When must CT precede lumbar puncture?",
-      back: "Immunocompromise, known CNS lesion, new seizure within a week, papilloedema, altered consciousness, or focal deficit. Antibiotics are given before the scan in every case.",
-    },
-    {
-      id: "neurology-cns-infection-c4",
-      front: "The ATT regimen for CNS tuberculosis.",
-      back: "12 months total - 2 months HRZE intensive phase, then 10 months continuation (HRE under the Indian NTEP, HR under WHO). Daily, never intermittent, with pyridoxine 10 mg daily.",
-    },
-    {
-      id: "neurology-cns-infection-c5",
-      front: "Steroid regimen in tuberculous meningitis.",
-      back: "Dexamethasone 0.4 mg/kg/day IV for BMRC Stage II and III (0.3 mg/kg/day for Stage I), reduced weekly and switched to oral, tapering over 6-8 weeks. Alternative: prednisolone 1-2 mg/kg/day (max 60 mg) for 4 weeks then taper over 4 weeks.",
-    },
-    {
-      id: "neurology-cns-infection-c6",
-      front: "BMRC staging of tuberculous meningitis.",
-      back: "Stage I - conscious, no deficit. Stage II - conscious with meningism plus cranial nerve palsy or focal deficit, or GCS 11-14. Stage III - stuporous or comatose, GCS 10 or below, or dense hemiplegia.",
-    },
-    {
-      id: "neurology-cns-infection-c7",
-      front: "Albendazole regimen for viable parenchymal neurocysticercosis.",
-      back: "Albendazole 15 mg/kg/day (max 1200 mg/day) in two divided doses for 10-14 days; for more than two viable cysts add praziquantel 50 mg/kg/day for the same period. Solitary granuloma: albendazole 15 mg/kg/day for 7-14 days.",
-    },
-    {
-      id: "neurology-cns-infection-c8",
-      front: "Steroid cover for neurocysticercosis treatment.",
-      back: "Prednisolone 1 mg/kg/day (or dexamethasone 0.1 mg/kg/day) started 1-3 days BEFORE albendazole, continued throughout the course, then tapered - the dying cyst causes the oedema and seizures.",
-    },
-    {
-      id: "neurology-cns-infection-c9",
-      front: "When is antiparasitic treatment contraindicated in neurocysticercosis?",
-      back: "Calcified lesions (parasite already dead), cysticercal encephalitis with diffuse oedema, untreated hydrocephalus (shunt first), and untreated intraocular cysticercosis (fundoscopy first).",
-    },
-    {
-      id: "neurology-cns-infection-c10",
-      front: "Meningococcal contact chemoprophylaxis regimens.",
-      back: "Rifampicin 600 mg BD for 2 days, or ciprofloxacin 500 mg single dose, or ceftriaxone 250 mg IM single dose (drug of choice in pregnancy). No prophylaxis for pneumococcal contacts.",
-    },
-    {
-      id: "neurology-cns-infection-c11",
-      front: "Empirical treatment of suspected herpes simplex encephalitis.",
-      back: "Intravenous acyclovir 10 mg/kg every 8 hours for 14-21 days, started on suspicion before the PCR result; untreated mortality exceeds 70% and delay beyond 48 hours multiplies it.",
-    },
-    {
-      id: "neurology-cns-infection-c12",
-      front: "How is neurocysticercosis acquired, and why does it matter?",
-      back: "By ingesting Taenia solium eggs shed in human faeces, through contaminated food, water or hands - not by eating pork. Vegetarians get it, and the household taeniasis carrier is the source and must be treated.",
-    },
-  ],
   references: [
     "IDSA Practice Guidelines for the Management of Bacterial Meningitis, Clinical Infectious Diseases (with ESCMID 2016 update)",
     "WHO Consolidated Guidelines on Tuberculosis, Module 4: Treatment - Drug-susceptible tuberculosis treatment, 2022",
@@ -4463,58 +4111,6 @@ topics.push({
       explanation:
         "Bell palsy reaches its maximum within 72 hours; weakness that creeps on over ten weeks and is accompanied by a parotid mass and a hard cervical node is a parotid malignancy infiltrating the facial nerve until imaging proves otherwise, so contrast MRI of the brain, internal auditory meatus and parotid with urgent ENT referral is the only acceptable answer. Repeating the steroid treats a diagnosis that has already been disproved by the failure of the first course and the progressive course. Reassuring him and waiting six months allows a treatable cancer to advance; the rule is that no improvement at three months, or any progression beyond three weeks, mandates imaging. Zoster sine herpete presents acutely, not over weeks, and does not produce a mass. Physiotherapy, and particularly electrical stimulation which aggravates synkinesis, addresses nothing in an untreated tumour.",
       difficulty: "moderate",
-    },
-  ],
-  cards: [
-    {
-      id: "neurology-bell-palsy-c1",
-      front: "How do you distinguish an upper from a lower motor neurone facial palsy at the bedside?",
-      back: "The forehead. Upper motor neurone lesions spare frontalis (brow wrinkles, eye closes) because of bilateral cortical representation; lower motor neurone lesions paralyse the whole hemiface with lagophthalmos and a visible Bell phenomenon.",
-    },
-    {
-      id: "neurology-bell-palsy-c2",
-      front: "Steroid regimen for Bell palsy and the time window.",
-      back: "Prednisolone 50 mg daily for 10 days, or 60 mg daily for 5 days then tapered 10 mg/day over 5 days. Start within 72 hours of onset - it raises complete recovery from about 70% to about 85%.",
-    },
-    {
-      id: "neurology-bell-palsy-c3",
-      front: "When is an antiviral added in facial palsy, and at what dose?",
-      back: "Never alone. Add valacyclovir 1 g TDS or acyclovir 400 mg five times daily for 7 days in severe Bell palsy (House-Brackmann IV-VI). In Ramsay Hunt use the zoster dose - acyclovir 800 mg five times daily for 7 days - with prednisolone 1 mg/kg/day.",
-    },
-    {
-      id: "neurology-bell-palsy-c4",
-      front: "Eye care in a patient with lagophthalmos.",
-      back: "Carboxymethylcellulose 0.5% or hypromellose drops hourly while awake, paraffin or carbomer ointment at night, horizontal taping of the eyelid at night, protective glasses outdoors. Review the cornea at every visit - exposure keratopathy is the one blinding complication.",
-    },
-    {
-      id: "neurology-bell-palsy-c5",
-      front: "Which branches of the facial nerve localise the lesion, and how?",
-      back: "Greater petrosal nerve - reduced lacrimation means at or above the geniculate ganglion. Nerve to stapedius - hyperacusis means above the stapedial branch. Chorda tympani - loss of taste on the anterior two-thirds of the tongue means above the chorda. Pure motor weakness means at or below the stylomastoid foramen.",
-    },
-    {
-      id: "neurology-bell-palsy-c6",
-      front: "Causes of bilateral facial palsy.",
-      back: "Never Bell palsy. Guillain-Barre syndrome, Lyme disease, sarcoidosis (Heerfordt syndrome), HIV seroconversion, leukaemic or lymphomatous meningeal infiltration, leprosy, Melkersson-Rosenthal syndrome, and brainstem lesions. Admit and check respiratory reserve.",
-    },
-    {
-      id: "neurology-bell-palsy-c7",
-      front: "House-Brackmann grades in one line each.",
-      back: "I normal; II slight weakness on close inspection, eye closes with minimum effort; III obvious but not disfiguring, eye closes with effort, synkinesis; IV disfiguring asymmetry, no forehead movement, incomplete closure; V barely perceptible motion; VI total paralysis.",
-    },
-    {
-      id: "neurology-bell-palsy-c8",
-      front: "When must a facial palsy be imaged?",
-      back: "Progressive weakness beyond three weeks, no recovery at all by three months, recurrent ipsilateral palsy, bilateral palsy, other cranial nerve or long tract signs, or a parotid or neck mass. Contrast MRI of the brain, internal auditory meatus and parotid.",
-    },
-    {
-      id: "neurology-bell-palsy-c9",
-      front: "Late sequelae of facial palsy from aberrant reinnervation.",
-      back: "Synkinesis (eye narrows when the mouth moves), crocodile tears (gustatory lacrimation), hemifacial spasm and facial contracture. Treat with botulinum toxin type A plus mirror biofeedback physiotherapy; never facial electrical stimulation.",
-    },
-    {
-      id: "neurology-bell-palsy-c10",
-      front: "Prognosis of Bell palsy.",
-      back: "About 85% show the first sign of recovery within three weeks; about 70% recover completely untreated and about 85% with steroid. Poor markers: complete paralysis, age over 60, diabetes, hypertension, severe pain, pregnancy, and no recovery by three weeks.",
     },
   ],
   references: [
@@ -4978,68 +4574,6 @@ topics.push({
       explanation:
         "Posture-dependent bilateral leg symptoms that are relieved by sitting or by lumbar flexion, and are absent when cycling or leaning on a trolley, together with normal peripheral pulses, are the signature of neurogenic claudication from lumbar canal stenosis, because flexion enlarges the spinal canal while extension narrows it. Vascular claudication is excluded by the strong pulses and by the fact that it depends on the level of exertion rather than on posture, so cycling would provoke it rather than relieve it. Cauda equina syndrome is excluded by normal saddle sensation and bladder function and by the chronic exertional pattern. A bilateral S1 radiculopathy would give constant radicular pain below the knee with an absent ankle jerk rather than exertional heaviness relieved by flexion. Diabetic lumbosacral radiculoplexus neuropathy presents with severe asymmetrical thigh pain followed by proximal wasting and weight loss, not with a reproducible walking distance.",
       difficulty: "moderate",
-    },
-  ],
-  cards: [
-    {
-      id: "neurology-low-back-pain-neuro-c1",
-      front: "The five cardinal features of cauda equina syndrome.",
-      back: "Bilateral sciatica, saddle (perineal) anaesthesia, bladder dysfunction, faecal incontinence or loss of anal tone, and sexual dysfunction, with variable lower limb weakness and areflexia. No single feature rules it in or out - ask and examine for all of them.",
-    },
-    {
-      id: "neurology-low-back-pain-neuro-c2",
-      front: "How does bladder involvement evolve in cauda equina syndrome, and why does it matter?",
-      back: "Loss of the sensation of filling and of the stream, then difficulty initiating micturition with a poor stream, then painless retention with overflow. Incomplete disease (CESI) has a far better prognosis than established retention (CESR), so act on the earliest stage.",
-    },
-    {
-      id: "neurology-low-back-pain-neuro-c3",
-      front: "Investigation and timing for suspected cauda equina syndrome.",
-      back: "Emergency MRI of the whole spine on the same admission, out of hours if needed, plus post-void residual measurement (over 200 mL is significant). Surgical decompression within 24-48 hours of symptom onset; document the time of onset of each symptom.",
-    },
-    {
-      id: "neurology-low-back-pain-neuro-c4",
-      front: "L4, L5 and S1 root patterns in one line each.",
-      back: "L4 - weak knee extension and ankle dorsiflexion, medial leg numbness, reduced knee jerk. L5 - weak big toe dorsiflexion, first web space and dorsum of foot numbness, no reflex change. S1 - weak plantar flexion and eversion, lateral foot and sole numbness, absent ankle jerk.",
-    },
-    {
-      id: "neurology-low-back-pain-neuro-c5",
-      front: "Straight leg raise versus crossed straight leg raise.",
-      back: "Straight leg raise reproduces radiating leg pain between 30 and 70 degrees and is sensitive but not specific for L5 and S1 root tension. The crossed test - raising the good leg reproduces pain in the bad leg - is much more specific and predicts a large central or paracentral disc.",
-    },
-    {
-      id: "neurology-low-back-pain-neuro-c6",
-      front: "When should low back pain be imaged?",
-      back: "Never for non-specific back pain. Emergency MRI for suspected cauda equina, cord compression, spinal infection or a progressive motor deficit. Routine MRI for radicular pain failing 6-12 weeks of conservative care when surgery is being considered, or for a non-emergent red flag.",
-    },
-    {
-      id: "neurology-low-back-pain-neuro-c7",
-      front: "First-line drug treatment of acute low back pain and sciatica.",
-      back: "An NSAID at the lowest effective dose for the shortest time - ibuprofen 400 mg TDS, naproxen 250-500 mg BD or diclofenac 50 mg TDS, with a PPI if over 60 or at gastrointestinal risk. Paracetamol 1 g QDS as an adjunct, tramadol 50 mg for a few days if severe. Amitriptyline 10-25 mg at night for persistent neuropathic pain.",
-    },
-    {
-      id: "neurology-low-back-pain-neuro-c8",
-      front: "Why should gabapentin and pregabalin not be prescribed for sciatica?",
-      back: "Randomised evidence shows no benefit over placebo for sciatic leg pain, while sedation, dizziness, weight gain and misuse potential are real. Use exercise, an NSAID, amitriptyline or duloxetine for persistent pain, and consider epidural steroid injection for severe radicular pain.",
-    },
-    {
-      id: "neurology-low-back-pain-neuro-c9",
-      front: "Neurogenic versus vascular claudication.",
-      back: "Neurogenic - bilateral buttock and leg heaviness, relieved by sitting or forward flexion, better uphill or leaning on a trolley, pulses normal. Vascular - calf cramp at a fixed distance, relieved by standing still regardless of posture, pulses reduced with bruits.",
-    },
-    {
-      id: "neurology-low-back-pain-neuro-c10",
-      front: "Tuberculosis of the spine (Pott disease) - clues and treatment.",
-      back: "Thoracolumbar pain with night pain, fever, weight loss, gibbus, cold abscess; MRI shows contiguous vertebral destruction with relative disc preservation and a paravertebral collection. Treat with 12 months of ATT (2HRZE then 10 months continuation); surgery for instability, deformity or neurological deficit.",
-    },
-    {
-      id: "neurology-low-back-pain-neuro-c11",
-      front: "Suspected metastatic spinal cord compression - immediate action.",
-      back: "Start dexamethasone 16 mg daily at once and arrange MRI of the whole spine within 24 hours, with oncology and spinal surgical referral. Do not wait for the scan to give the steroid.",
-    },
-    {
-      id: "neurology-low-back-pain-neuro-c12",
-      front: "What must be documented for every patient discharged with sciatica?",
-      back: "That bladder function, bowel function and saddle sensation were asked about and were normal, and that written safety-netting advice was given to return immediately for perineal numbness, any change in urination or defecation, worsening weakness or fever.",
     },
   ],
   references: [
@@ -5745,68 +5279,6 @@ topics.push({
       explanation:
         "Parkinsonism under the age of 50 - and certainly at 26 - with dystonia, dysarthria, a wing-beating proximal tremor, personality change and deranged liver enzymes is Wilson disease until proved otherwise, and it is the one cause where missing the diagnosis costs the patient a treatable, potentially fatal disease. The first-line screen is a low serum ceruloplasmin together with slit-lamp examination for Kayser-Fleischer rings, followed by 24-hour urinary copper and, where needed, liver biopsy copper or ATP7B genetics. MRI is a useful supporting test and may show the face of the giant panda in the midbrain, but it does not make the diagnosis and should not come first. Parkin mutations do cause young-onset parkinsonism, but that is a levodopa-responsive, dystonia-prone syndrome without hepatic involvement or psychiatric change, and genetic testing is neither first line nor widely affordable. DaT SPECT confirms nigrostriatal loss but cannot distinguish its cause and would not change the immediate management. Manganese toxicity requires an occupational exposure that is not described here.",
       difficulty: "hard",
-    },
-  ],
-  cards: [
-    {
-      id: "neurology-parkinsonism-c1",
-      front: "MDS 2015 definition of parkinsonism?",
-      back: "Bradykinesia (slowness WITH decrement in amplitude or speed on repetition) plus at least one of rest tremor or rigidity. Bradykinesia is mandatory.",
-    },
-    {
-      id: "neurology-parkinsonism-c2",
-      front: "Why was postural instability dropped from the definition of parkinsonism?",
-      back: "Because it is a late feature of Parkinson's disease; early falls point instead to progressive supranuclear palsy or another atypical syndrome.",
-    },
-    {
-      id: "neurology-parkinsonism-c3",
-      front: "How much dopaminergic loss before motor signs appear?",
-      back: "About 50-60% of substantia nigra pars compacta neurones and 60-80% of striatal dopamine - hence the long non-motor prodrome.",
-    },
-    {
-      id: "neurology-parkinsonism-c4",
-      front: "The four drug groups that cause drug-induced parkinsonism in Indian practice?",
-      back: "Antipsychotics (haloperidol, trifluoperazine, risperidone); prokinetics and antiemetics (levosulpiride, metoclopramide, prochlorperazine); flunarizine and cinnarizine; valproate, lithium, tetrabenazine, methyldopa.",
-    },
-    {
-      id: "neurology-parkinsonism-c5",
-      front: "Three features that separate drug-induced parkinsonism from Parkinson's disease?",
-      back: "Symmetrical, subacute over weeks, postural more than rest tremor - often with orofacial tardive dyskinesia; it reverses over weeks to months after the drug is stopped.",
-    },
-    {
-      id: "neurology-parkinsonism-c6",
-      front: "The discriminating feature of PSP, MSA, CBD and DLB in one line each?",
-      back: "PSP - early backward falls plus downgaze palsy. MSA - early severe autonomic failure, cerebellar signs, stridor. CBD - grossly asymmetric limb with apraxia and alien limb. DLB - dementia within a year, fluctuating cognition, visual hallucinations.",
-    },
-    {
-      id: "neurology-parkinsonism-c7",
-      front: "Standard Indian levodopa tablet and starting regimen?",
-      back: "Levodopa 100 mg + carbidopa 25 mg. Start half a tablet three times daily (or one tablet twice daily), titrate weekly to 300-600 mg levodopa/day in 3-4 doses, 30-60 minutes before food. At least 75 mg carbidopa a day is needed to avoid nausea.",
-    },
-    {
-      id: "neurology-parkinsonism-c8",
-      front: "Pramipexole and ropinirole starting doses and the adverse effect to counsel about?",
-      back: "Pramipexole 0.125 mg TDS to 0.5-1.0 mg TDS (max 4.5 mg/day); ropinirole 0.25 mg TDS to 3-9 mg/day (max 24 mg/day). Counsel on impulse control disorder, sleep attacks and driving - and ask the spouse.",
-    },
-    {
-      id: "neurology-parkinsonism-c9",
-      front: "Drug of choice for levodopa-induced dyskinesia?",
-      back: "Amantadine 100 mg once or twice daily (max about 300 mg/day, reduce in renal impairment); alternatively fractionate levodopa into smaller, more frequent doses.",
-    },
-    {
-      id: "neurology-parkinsonism-c10",
-      front: "Which antiemetic and which antipsychotic are safe in Parkinson's disease?",
-      back: "Domperidone for nausea (not metoclopramide or prochlorperazine); quetiapine or clozapine for psychosis (never haloperidol, risperidone or olanzapine).",
-    },
-    {
-      id: "neurology-parkinsonism-c11",
-      front: "What happens if levodopa is stopped abruptly?",
-      back: "Parkinsonism-hyperpyrexia (acute akinesia) syndrome - fever, severe rigidity, altered sensorium, raised CK, mimicking neuroleptic malignant syndrome. Doses must be given on time, every time, including in hospital.",
-    },
-    {
-      id: "neurology-parkinsonism-c12",
-      front: "Hoehn and Yahr stages 1 to 5 in one line each?",
-      back: "1 unilateral; 2 bilateral without balance impairment; 3 bilateral with postural instability but independent; 4 severe disability yet still walks or stands unaided; 5 wheelchair-bound or bedridden unless aided (1.5 and 2.5 are the modified intermediate stages).",
     },
   ],
   references: [
@@ -6615,68 +6087,6 @@ topics.push({
       explanation:
         "A single small ring-enhancing lesion under 20 mm with an eccentric hyperdense dot - the scolex - and perilesional oedema in a young Indian adult with a new focal seizure is a solitary cysticercus granuloma, the commonest identified cause of new-onset focal seizures in India, and the CT appearance is characteristic. Treatment is albendazole 15 mg/kg/day for 10-14 days with corticosteroid cover started before or with the albendazole to blunt the inflammatory reaction as the parasite dies, together with an antiseizure medicine continued until the lesion resolves and the patient is seizure-free, with a fundus examination first to exclude ocular cysticercosis. A tuberculoma is the main differential but is typically larger than 20 mm, irregular, with a thicker wall and no scolex, which is specific to cysticercosis, and antitubercular therapy for 12 months should not be started on this appearance without further evidence. An antiseizure medicine alone leaves an active, treatable parasite in place. Surgery has no role in an uncomplicated parenchymal granuloma, and there is nothing to suggest cryptococcal disease in an immunocompetent man with a normal chest radiograph.",
       difficulty: "hard",
-    },
-  ],
-  cards: [
-    {
-      id: "neurology-seizures-epilepsy-c1",
-      front: "State the ILAE 2014 practical clinical definition of epilepsy.",
-      back: "Epilepsy is a disease of the brain defined by any one of: (1) at least two unprovoked or reflex seizures more than 24 hours apart; (2) one unprovoked or reflex seizure with a probability of further seizures over the next 10 years of at least 60%; or (3) a diagnosed epilepsy syndrome. It is resolved after 10 years seizure-free with 5 years off drugs, or on passing the age of an age-dependent syndrome.",
-    },
-    {
-      id: "neurology-seizures-epilepsy-c2",
-      front: "The three tiers of the ILAE 2017 classification.",
-      back: "Seizure type (focal, generalised or unknown onset), then epilepsy type (focal, generalised, combined generalised and focal, or unknown), then epilepsy syndrome - with the aetiology (structural, genetic, infectious, metabolic, immune, unknown) and comorbidities named at every tier.",
-    },
-    {
-      id: "neurology-seizures-epilepsy-c3",
-      front: "Old terms and their ILAE 2017 replacements.",
-      back: "Partial becomes focal; simple partial becomes focal aware; complex partial becomes focal impaired awareness; secondarily generalised becomes focal to bilateral tonic-clonic; psychic becomes cognitive. Convulsion, dyscognitive, grand mal and petit mal are abandoned.",
-    },
-    {
-      id: "neurology-seizures-epilepsy-c4",
-      front: "The profile of childhood absence epilepsy.",
-      back: "Onset 4-10 years (peak 5-7), girls 60-70%, normal development and examination, family history of seizures in 15-40%. Attacks last 4-20 seconds, occur tens to hundreds of times a day, and have no aura and no post-ictal phase. Onset before 4 years should raise GLUT1 deficiency.",
-    },
-    {
-      id: "neurology-seizures-epilepsy-c5",
-      front: "The bedside test for absence seizures.",
-      back: "Three minutes of vigorous hyperventilation - counting aloud, blowing a paper windmill or keeping a paper strip fluttering - reproduces an attack in over 90% of untreated childhood absence epilepsy. Repeat it at every follow-up as a free measure of seizure control.",
-    },
-    {
-      id: "neurology-seizures-epilepsy-c6",
-      front: "EEG in typical absence, and the two look-alike patterns.",
-      back: "Generalised, bilaterally synchronous, symmetrical 3 Hz (2.5-4 Hz) spike-and-wave on a normal background, activated by hyperventilation. Slow spike-and-wave under 2.5 Hz means Lennox-Gastaut syndrome; 4-6 Hz polyspike-and-wave means juvenile myoclonic epilepsy.",
-    },
-    {
-      id: "neurology-seizures-epilepsy-c7",
-      front: "When does a child with absences need an MRI?",
-      back: "Not in typical childhood absence epilepsy. Do image for focal clinical or EEG features, an abnormal or asymmetric EEG background, spike-and-wave slower than 2.5 Hz, an abnormal neurological examination, developmental delay or regression, onset before 4 or after 10 years, or seizures resistant to appropriate drugs.",
-    },
-    {
-      id: "neurology-seizures-epilepsy-c8",
-      front: "First-line drug and dose for typical childhood absence epilepsy.",
-      back: "Ethosuximide - start 250 mg/day (10-15 mg/kg/day), titrate every 5-7 days to 20-30 mg/kg/day in two divided doses, maximum 1500 mg/day. It equals valproate for efficacy with less attentional dysfunction (Glauser trial), but gives no cover against tonic-clonic seizures, for which valproate is needed.",
-    },
-    {
-      id: "neurology-seizures-epilepsy-c9",
-      front: "Which drugs make absence and myoclonic seizures worse?",
-      back: "Carbamazepine, oxcarbazepine, phenytoin, gabapentin, pregabalin, vigabatrin and tiagabine - they aggravate absences and myoclonus and can precipitate absence status epilepticus. Lamotrigine, although useful, can worsen the myoclonus of juvenile myoclonic epilepsy.",
-    },
-    {
-      id: "neurology-seizures-epilepsy-c10",
-      front: "After a single unprovoked seizure in an adult, when do you start a drug?",
-      back: "Baseline recurrence is about 40-50% at 2 years. Treat when the risk reaches 60% or more - an epileptiform EEG, a causative structural lesion, a remote symptomatic cause (prior stroke, trauma or CNS infection), or a nocturnal seizure - or when a recurrence would be catastrophic for work or safety. Early treatment shortens time to remission but does not change long-term seizure freedom.",
-    },
-    {
-      id: "neurology-seizures-epilepsy-c11",
-      front: "Define status epilepticus and give the first two drug steps with doses.",
-      back: "A convulsion of 5 minutes or more, or repeated seizures without recovery of consciousness (ILAE 2015 t1 = 5 min, t2 = 30 min). Step 1: IV lorazepam 0.1 mg/kg (max 4 mg), repeat once - or IM/buccal/intranasal midazolam 0.2 mg/kg if no line; never a third dose. Step 2: IV levetiracetam 60 mg/kg, or valproate 40 mg/kg, or fosphenytoin 20 mg PE/kg - equally effective in ESETT.",
-    },
-    {
-      id: "neurology-seizures-epilepsy-c12",
-      front: "Sodium valproate in a girl or woman who could become pregnant.",
-      back: "Avoid unless nothing else works and reliable contraception is in place - about 10% major congenital malformations (dose-dependent, worse above 1000 mg/day) and neurodevelopmental impairment in 30-40% with a 7-10 point IQ loss. Lamotrigine and levetiracetam are the preferred drugs; give folic acid 5 mg daily preconception, plan the pregnancy, and never stop an antiseizure medicine abruptly.",
     },
   ],
   references: [

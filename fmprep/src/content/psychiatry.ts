@@ -476,48 +476,6 @@ topics.push({
       difficulty: "moderate",
     },
   ],
-  cards: [
-    {
-      id: "psychiatry-depression-c1",
-      front: "DSM-5 criteria for a major depressive episode.",
-      back: "Five or more of nine symptoms for at least 2 weeks, one being depressed mood or anhedonia: sleep, appetite/weight, energy, concentration, psychomotor change, guilt/worthlessness, thoughts of death; with functional impairment.",
-    },
-    {
-      id: "psychiatry-depression-c2",
-      front: "PHQ-9 severity bands.",
-      back: "0-4 none, 5-9 mild, 10-14 moderate, 15-19 moderately severe, 20-27 severe. Score of 10 or more: start an antidepressant. Remission: under 5.",
-    },
-    {
-      id: "psychiatry-depression-c3",
-      front: "The five dimensions of a suicide risk assessment.",
-      back: "Ideation (passive/active), plan (specific/lethal), means (access), intent and preparation, past attempts - the strongest single predictor.",
-    },
-    {
-      id: "psychiatry-depression-c4",
-      front: "Which patient defines high suicide risk and what happens the same day?",
-      back: "Active ideation with a plan, means and intent, or an attempt in the past month, or psychosis: never left alone, family informed, same-day psychiatric assessment and admission.",
-    },
-    {
-      id: "psychiatry-depression-c5",
-      front: "First-line antidepressant doses in family practice.",
-      back: "Escitalopram 10 mg OM (5 mg elderly, max 20); sertraline 50 mg OM (start 25, max 200); fluoxetine 20 mg OM. Benefit from 2 weeks, judge at 4-6 weeks.",
-    },
-    {
-      id: "psychiatry-depression-c6",
-      front: "Antidepressant of choice after myocardial infarction and in lactation.",
-      back: "Sertraline - SADHART evidence in cardiac disease, and the lowest transfer into breast milk. Avoid tricyclics in cardiac disease and in anyone at suicide risk.",
-    },
-    {
-      id: "psychiatry-depression-c7",
-      front: "How long to continue an antidepressant after remission?",
-      back: "6-9 months after remission for a first episode; 2 years or more after a second or third episode; then taper over 4 weeks.",
-    },
-    {
-      id: "psychiatry-depression-c8",
-      front: "SSRI adverse effects that reach the exam.",
-      back: "Hyponatraemia in the elderly (check sodium at 2 weeks), GI bleeding with NSAIDs, sexual dysfunction, early activation and suicidal ideation under 25, QT prolongation (citalopram), serotonin syndrome with tramadol, linezolid, triptans.",
-    },
-  ],
   references: [
     "National Mental Health Survey of India 2015-16, NIMHANS, 2016",
     "American Psychiatric Association, Diagnostic and Statistical Manual of Mental Disorders, 5th edition text revision (DSM-5-TR), 2022",
@@ -987,48 +945,6 @@ topics.push({
       explanation:
         "This is social anxiety disorder of the performance type. Propranolol 20-40 mg an hour before the event blocks the peripheral beta-adrenergic symptoms - tremor, palpitation, blushing - and is the accepted as-needed treatment, while the disorder itself needs an SSRI and graded exposure since avoidance is already causing occupational impairment. Diazepam impairs concentration and speech performance and lifelong use creates dependence. An SSRI started today cannot work in three days, as benefit begins at two weeks and is judged at 8-12. Buspirone takes about two weeks to act and has no single-dose effect. Reassurance alone leaves a man who is already taking leave from work untreated.",
       difficulty: "moderate",
-    },
-  ],
-  cards: [
-    {
-      id: "psychiatry-anxiety-c1",
-      front: "DSM-5 criteria for generalised anxiety disorder.",
-      back: "Excessive, hard-to-control worry about several domains, more days than not for at least 6 months, with 3 or more of: restlessness, fatigue, poor concentration, irritability, muscle tension, sleep disturbance; causing impairment.",
-    },
-    {
-      id: "psychiatry-anxiety-c2",
-      front: "Definition of a panic attack and of panic disorder.",
-      back: "Panic attack: abrupt surge of fear peaking within about 10 minutes with 4 or more of 13 symptoms. Panic disorder: recurrent unexpected attacks plus at least 1 month of worry about further attacks or avoidance.",
-    },
-    {
-      id: "psychiatry-anxiety-c3",
-      front: "GAD-7 bands and treatment threshold.",
-      back: "0-4 minimal, 5-9 mild, 10-14 moderate, 15-21 severe. GAD-2 of 3 or more triggers the full scale; a GAD-7 of 10 or more is the threshold to start drug treatment.",
-    },
-    {
-      id: "psychiatry-anxiety-c4",
-      front: "How does SSRI dosing in anxiety differ from depression?",
-      back: "Start at half the dose (escitalopram 5 mg, sertraline 25 mg) because of first-week activation, titrate to the top of the range, judge at 8-12 weeks, and continue 12 months after response.",
-    },
-    {
-      id: "psychiatry-anxiety-c5",
-      front: "Rules for benzodiazepine use in an anxiety disorder.",
-      back: "A bridge only: clonazepam 0.25-0.5 mg BD or lorazepam 0.5-1 mg BD for a maximum of 2-4 weeks with a written stop date. Never in alcohol use, COPD, sleep apnoea or over 65. Avoid alprazolam.",
-    },
-    {
-      id: "psychiatry-anxiety-c6",
-      front: "Managing an acute panic attack.",
-      back: "Sit the patient down, check pulse, BP, SpO2, glucose and ECG, name the diagnosis confidently, slow breathing in for 4 out for 6 at 6-8 breaths a minute, grounding. No paper bag. Drugs rarely needed.",
-    },
-    {
-      id: "psychiatry-anxiety-c7",
-      front: "Organic mimics of anxiety to exclude.",
-      back: "Thyrotoxicosis, paroxysmal SVT and other arrhythmias, hypoglycaemia, phaeochromocytoma, asthma, pulmonary embolism, anaemia, menopause; drugs - salbutamol, theophylline, steroids, thyroxine, caffeine, cannabis; alcohol or benzodiazepine withdrawal.",
-    },
-    {
-      id: "psychiatry-anxiety-c8",
-      front: "Principle of graded exposure in agoraphobia.",
-      back: "Build a hierarchy from easiest to hardest, practise daily until anxiety halves, then climb a step; stay in the situation until anxiety falls, and drop safety behaviours (tablet in pocket, companion, seat near the door) which maintain the fear.",
     },
   ],
   references: [
@@ -1539,48 +1455,6 @@ topics.push({
       difficulty: "hard",
     },
   ],
-  cards: [
-    {
-      id: "psychiatry-alcohol-c1",
-      front: "What is one standard drink, and what counts as hazardous drinking?",
-      back: "One standard drink is about 10 g of ethanol: 30 mL of spirits, 285 mL of beer at 5%, 100 mL of wine. Hazardous: more than 14 drinks a week (men) or 7 (women), or more than 4 (men) or 3 (women) on one occasion.",
-    },
-    {
-      id: "psychiatry-alcohol-c2",
-      front: "AUDIT and AUDIT-C cut-offs.",
-      back: "AUDIT-C (3 items, 0-12): positive at 4 or more in men, 3 or more in women. Full AUDIT (0-40): 8-15 hazardous, 16-19 harmful, 20 or more suggests dependence needing assisted withdrawal.",
-    },
-    {
-      id: "psychiatry-alcohol-c3",
-      front: "The alcohol withdrawal timeline.",
-      back: "Tremor and autonomic symptoms 6-12 h; alcoholic hallucinosis with clear sensorium 12-24 h; generalised seizures 12-48 h (peak 24 h); delirium tremens 48-96 h, up to day 7.",
-    },
-    {
-      id: "psychiatry-alcohol-c4",
-      front: "CIWA-Ar: how many items, maximum score, and the action bands.",
-      back: "Ten items - nine scored 0-7 plus orientation 0-4, maximum 67. Under 8 mild, 8-15 moderate (treat), 16 or more severe with high risk of seizures and delirium tremens (admit).",
-    },
-    {
-      id: "psychiatry-alcohol-c5",
-      front: "Fixed-dose chlordiazepoxide taper for alcohol withdrawal.",
-      back: "50 mg QDS day 1, 50 mg TDS day 2, 25 mg QDS day 3, 25 mg TDS day 4, 25 mg BD day 5, 25 mg nocte day 6, then stop, with PRN doses for breakthrough. Use lorazepam 2-4 mg 6-hourly instead in liver disease or the elderly.",
-    },
-    {
-      id: "psychiatry-alcohol-c6",
-      front: "Thiamine doses in the drinker.",
-      back: "Routine detoxification: 100 mg IM/IV daily for 3-5 days. Suspected or established Wernicke encephalopathy: 500 mg IV three times daily for 2-3 days then 250 mg daily for 5 days. Always before or with glucose.",
-    },
-    {
-      id: "psychiatry-alcohol-c7",
-      front: "Delirium tremens: features, mortality and treatment.",
-      back: "Clouded sensorium with disorientation, vivid visual and tactile hallucinations, gross tremor, fever, autonomic storm at 48-96 h. Mortality 1-5% treated, up to 25% untreated. Benzodiazepine loading to light sedation, IV thiamine, fluids and electrolytes, treat sepsis; haloperidol only as an adjunct.",
-    },
-    {
-      id: "psychiatry-alcohol-c8",
-      front: "Relapse prevention drugs and their doses.",
-      back: "Naltrexone 50 mg OD (avoid in acute hepatitis or opioid use); acamprosate 666 mg TDS (safe in liver disease, avoid if CrCl under 30); disulfiram 250 mg OD, supervised only. All combined with Alcoholics Anonymous and relapse-prevention counselling.",
-    },
-  ],
   references: [
     "American Psychiatric Association, DSM-5-TR, 2022",
     "Sullivan JT et al. Assessment of alcohol withdrawal: the revised Clinical Institute Withdrawal Assessment for Alcohol scale (CIWA-Ar), British Journal of Addiction, 1989",
@@ -2053,48 +1927,6 @@ topics.push({
       difficulty: "easy",
     },
   ],
-  cards: [
-    {
-      id: "psychiatry-somatic-c1",
-      front: "DSM-5 criteria for somatic symptom disorder.",
-      back: "One or more distressing somatic symptoms for at least 6 months, plus at least one of: disproportionate and persistent thoughts about their seriousness, persistently high health anxiety, or excessive time and energy devoted to them. It does not matter whether the symptom is medically explained.",
-    },
-    {
-      id: "psychiatry-somatic-c2",
-      front: "How does illness anxiety disorder differ from somatic symptom disorder?",
-      back: "Illness anxiety disorder is preoccupation with having or acquiring a serious illness with minimal or no somatic symptoms, plus excessive health behaviour or maladaptive avoidance. Somatic symptom disorder has prominent distressing symptoms.",
-    },
-    {
-      id: "psychiatry-somatic-c3",
-      front: "The three stages of the reattribution model.",
-      back: "1. Feeling understood - full history, mood and social enquiry, proper examination. 2. Broadening the agenda - feed back normal findings, acknowledge the symptom, link to life events. 3. Making the link - give a physiological mechanism the patient can accept.",
-    },
-    {
-      id: "psychiatry-somatic-c4",
-      front: "The single most effective structural intervention in medically unexplained symptoms.",
-      back: "Time-based appointments with one named doctor - a fixed 15 minutes every 2-4 weeks whether or not symptoms are present - which removes the need to be ill in order to be seen.",
-    },
-    {
-      id: "psychiatry-somatic-c5",
-      front: "PHQ-15 bands.",
-      back: "Fifteen items scored 0-2, total 0-30: 5-9 low, 10-14 medium, 15-30 high somatic symptom burden. High scores predict disability and healthcare use.",
-    },
-    {
-      id: "psychiatry-somatic-c6",
-      front: "Positive signs of functional neurological disorder.",
-      back: "Hoover's sign, give-way weakness, tremor entrainment, dissociative seizures with eyes closed and resisted, prolonged fluctuating events without cyanosis or post-ictal confusion, normal reflexes and plantars. Diagnosis is rule-in, not exclusion.",
-    },
-    {
-      id: "psychiatry-somatic-c7",
-      front: "Somatic symptom disorder versus factitious disorder versus malingering.",
-      back: "Somatic symptom disorder: symptoms not intentional, no external motive. Factitious: intentional, motive is the sick role. Malingering: intentional, motive is external gain (money, leave, drugs) and it is not a psychiatric diagnosis.",
-    },
-    {
-      id: "psychiatry-somatic-c8",
-      front: "Drugs with evidence in functional and centrally mediated pain.",
-      back: "Amitriptyline 10-25 mg at night titrated to 50-75 mg, or duloxetine 30-60 mg daily; treat coexisting depression or anxiety with a full-dose SSRI for 6-12 months. No opioids, no benzodiazepines, no injections.",
-    },
-  ],
   references: [
     "American Psychiatric Association, DSM-5-TR, 2022",
     "Kroenke K, Spitzer RL, Williams JBW. The PHQ-15, Psychosomatic Medicine, 2002",
@@ -2524,48 +2356,6 @@ topics.push({
       explanation:
         "Blanching of the mucosa with fibrous bands and trismus - mouth opening reduced to 25 mm - is oral submucous fibrosis, a potentially malignant disorder strongly linked to areca nut and smokeless tobacco, and any associated white or speckled patch needs biopsy to exclude dysplasia or carcinoma, so urgent referral together with complete cessation is required. Starting gum and reviewing in three months delays a possible cancer diagnosis. A topical steroid may have a place in specialist management but is no substitute for biopsy and it is not reassurance that is needed. White patches in tobacco users are emphatically not always benign - leukoplakia carries a real rate of malignant transformation. Halving the khaini neither stops the fibrosis nor addresses the lesion.",
       difficulty: "moderate",
-    },
-  ],
-  cards: [
-    {
-      id: "psychiatry-tobacco-c1",
-      front: "The 5 A's of tobacco cessation.",
-      back: "Ask (all forms, every visit, as a vital sign), Advise (clear, strong, personalised), Assess (readiness in 30 days and dependence), Assist (quit date, plan, pharmacotherapy), Arrange (follow-up week 1, week 2, 1 month, monthly for 3 months).",
-    },
-    {
-      id: "psychiatry-tobacco-c2",
-      front: "The 5 R's for the patient not ready to quit.",
-      back: "Relevance, Risks, Rewards, Roadblocks, Repetition - motivational counselling repeated at every visit, since most quitters succeed only after several attempts.",
-    },
-    {
-      id: "psychiatry-tobacco-c3",
-      front: "Two questions that grade nicotine dependence and decide pharmacotherapy.",
-      back: "How soon after waking is the first use (within 30 minutes indicates high dependence, and means 4 mg gum), and how many per day (more than 10 means offer pharmacotherapy, and start the 21 mg patch).",
-    },
-    {
-      id: "psychiatry-tobacco-c4",
-      front: "Nicotine patch regimen.",
-      back: "21 mg/24 h for 6 weeks, then 14 mg for 2 weeks, then 7 mg for 2 weeks, in those using more than 10 a day; start at 14 mg for 10 or fewer. Rotate sites; remove at night for vivid dreams.",
-    },
-    {
-      id: "psychiatry-tobacco-c5",
-      front: "Varenicline dose and duration.",
-      back: "0.5 mg OD days 1-3, 0.5 mg BD days 4-7, then 1 mg BD for 12 weeks (a further 12 weeks if abstinent), started 1 week before the quit date, taken after food. Nausea in about 30%. FDA removed the neuropsychiatric boxed warning in 2016 after EAGLES.",
-    },
-    {
-      id: "psychiatry-tobacco-c6",
-      front: "Bupropion dose and contraindications.",
-      back: "150 mg OD for 3 days then 150 mg BD for 7-12 weeks, started 1-2 weeks before the quit date. Contraindicated in seizure disorder, eating disorders, abrupt alcohol or benzodiazepine withdrawal, MAOI use and severe hepatic impairment.",
-    },
-    {
-      id: "psychiatry-tobacco-c7",
-      front: "Nicotine withdrawal timeline and weight gain.",
-      back: "Begins within hours, peaks at 2-3 days, largely settles by 2-4 weeks; irritability, anxiety, poor concentration, low mood, increased appetite, insomnia, craving lasting a few minutes at a time. Average weight gain 4-5 kg - plan diet and walking from the quit date.",
-    },
-    {
-      id: "psychiatry-tobacco-c8",
-      front: "Which drug levels rise after a patient stops smoking, and why?",
-      back: "Tobacco smoke induces CYP1A2; on quitting the induction is lost and theophylline, clozapine, olanzapine, caffeine and imipramine levels rise. Reduce doses, monitor, and watch the INR on warfarin.",
     },
   ],
   references: [
@@ -3011,48 +2801,6 @@ topics.push({
       explanation:
         "Long-acting benzodiazepines are on the Beers list as potentially inappropriate in older adults precisely because of falls, hip fracture, cognitive impairment and delirium, and her two falls make deprescribing urgent; the safe method is a slow taper of 10-25% every two to four weeks with a written schedule, CBT-I begun in parallel, and treatment of contributors such as depression and nocturia. Continuing it accepts the fall risk indefinitely. Abrupt cessation risks rebound insomnia, autonomic symptoms and even seizures, and substituting zolpidem 10 mg in a 72-year-old simply exchanges one falls risk for another at a dose above that recommended for the elderly. Promethazine adds anticholinergic burden and delirium risk in an older woman. Doubling the dose increases every harm.",
       difficulty: "moderate",
-    },
-  ],
-  cards: [
-    {
-      id: "psychiatry-insomnia-c1",
-      front: "Definition of chronic insomnia disorder.",
-      back: "Difficulty initiating or maintaining sleep or early morning waking, at least 3 nights a week for at least 3 months, despite adequate opportunity to sleep, with daytime impairment. No daytime impairment means it is not a disorder.",
-    },
-    {
-      id: "psychiatry-insomnia-c2",
-      front: "The five components of CBT-I.",
-      back: "Stimulus control, sleep restriction, cognitive restructuring, relaxation training and sleep hygiene. Stimulus control and sleep restriction carry most of the effect; sleep hygiene alone is not a treatment.",
-    },
-    {
-      id: "psychiatry-insomnia-c3",
-      front: "The rules of stimulus control.",
-      back: "Bed only for sleep and sex; go to bed only when sleepy; if not asleep in about 20 minutes get out of bed and return only when sleepy; fixed rising time every day; no daytime naps.",
-    },
-    {
-      id: "psychiatry-insomnia-c4",
-      front: "How is sleep restriction prescribed?",
-      back: "From a 2-week diary, set time in bed to the average total sleep time (never under 5 hours) with a fixed rising time; when sleep efficiency (total sleep time / time in bed) exceeds 85-90% for a week, add 15-20 minutes. Avoid in bipolar disorder, epilepsy, untreated apnoea and heavy-vehicle drivers.",
-    },
-    {
-      id: "psychiatry-insomnia-c5",
-      front: "STOP-BANG and Epworth thresholds.",
-      back: "STOP-BANG (Snoring, Tiredness, Observed apnoea, Pressure, BMI over 35, Age over 50, Neck over 40 cm, male Gender): 0-2 low, 3-4 intermediate, 5-8 high risk. Epworth 0-24: more than 10 is excessive daytime sleepiness.",
-    },
-    {
-      id: "psychiatry-insomnia-c6",
-      front: "Insomnia Severity Index bands.",
-      back: "Seven items, total 0-28: 0-7 none, 8-14 subthreshold, 15-21 moderate clinical insomnia, 22-28 severe. Treat from 15 and follow the score.",
-    },
-    {
-      id: "psychiatry-insomnia-c7",
-      front: "Rules for prescribing a hypnotic.",
-      back: "Second line, always with behavioural treatment; zolpidem 5-10 mg or zopiclone 3.75-7.5 mg for 2-4 weeks at most, intermittently, with a written stop date. Never in untreated sleep apnoea, alcohol dependence, or a patient with falls.",
-    },
-    {
-      id: "psychiatry-insomnia-c8",
-      front: "Restless legs syndrome: the five criteria and first treatment.",
-      back: "Urge to move the legs, usually with unpleasant sensation; worse at rest; relieved by movement; worse in the evening or night; not explained by another condition. Check ferritin and give iron if under 75 ng/mL; then gabapentin or pregabalin, with dopamine agonists second because of augmentation.",
     },
   ],
   references: [
@@ -3544,48 +3292,6 @@ topics.push({
       explanation:
         "Section 115 of the Mental Healthcare Act 2017 presumes that a person who attempts suicide is under severe stress, bars trial and punishment under section 309 of the Indian Penal Code, and places a duty on the government to provide care, treatment and rehabilitation. The Act therefore contradicts the first option. Unmodified or direct ECT without anaesthesia and muscle relaxant is prohibited outright, with no emergency exception. Supported admission under sections 89 and 90 is limited to 30 days in the first instance and beyond that requires the Mental Health Review Board, so it cannot continue indefinitely on the representative's request. Section 21(4) requires insurers to provide cover for mental illness on the same basis as physical illness, so exclusion is unlawful.",
       difficulty: "easy",
-    },
-  ],
-  cards: [
-    {
-      id: "psychiatry-psychosis-c1",
-      front: "DSM-5 criteria for schizophrenia.",
-      back: "Two or more of delusions, hallucinations, disorganised speech, grossly disorganised or catatonic behaviour, negative symptoms - each for a significant part of one month, with at least one being delusions, hallucinations or disorganised speech - plus functional decline and six months of continuous disturbance.",
-    },
-    {
-      id: "psychiatry-psychosis-c2",
-      front: "What must be excluded before diagnosing a first episode of schizophrenia?",
-      back: "Delirium above all; then hypoglycaemia, electrolyte disturbance, uraemia, hepatic encephalopathy, thyroid disease, B12 deficiency, HIV, neurosyphilis, encephalitis, epilepsy, tumour, SLE, Wilson's disease under 40; and substance-induced psychosis, especially cannabis, alcohol, stimulants and steroids.",
-    },
-    {
-      id: "psychiatry-psychosis-c3",
-      front: "Why does duration of untreated psychosis matter?",
-      back: "A longer duration of untreated psychosis predicts poorer symptomatic and functional recovery. In India the median exceeds a year, so early recognition and prompt treatment by the family physician is the highest-value intervention available.",
-    },
-    {
-      id: "psychiatry-psychosis-c4",
-      front: "Antipsychotic starting doses in family practice.",
-      back: "Risperidone 1-2 mg at night to 2-6 mg/day; olanzapine 5-10 mg at night to 20 mg; aripiprazole 10-15 mg to 30 mg; quetiapine 50-600 mg; haloperidol 1.5-5 mg to 10 mg. One drug at a time, adequate trial of 4-6 weeks.",
-    },
-    {
-      id: "psychiatry-psychosis-c5",
-      front: "Treatment of acute dystonia and of akathisia.",
-      back: "Acute dystonia: promethazine 25-50 mg IM/IV or trihexyphenidyl 2 mg orally, with relief in minutes. Akathisia: reduce the dose or switch, plus propranolol 10-40 mg BD-TDS; it is mistaken for worsening psychosis and is a recognised cause of suicide.",
-    },
-    {
-      id: "psychiatry-psychosis-c6",
-      front: "Neuroleptic malignant syndrome.",
-      back: "Hyperthermia, lead-pipe rigidity, altered sensorium, autonomic instability, raised creatine kinase and leucocytosis over 24-72 hours; about 10% mortality. Stop the antipsychotic, admit, cool, hydrate aggressively, give a benzodiazepine, and bromocriptine or dantrolene if severe.",
-    },
-    {
-      id: "psychiatry-psychosis-c7",
-      front: "Rapid tranquillisation for acute agitation.",
-      back: "De-escalate first, then offer oral risperidone 1-2 mg, olanzapine 5-10 mg or lorazepam 1-2 mg. If IM is needed: haloperidol 5-10 mg plus promethazine 25-50 mg (the TREC-validated combination) or lorazepam 2-4 mg. Never give IM olanzapine within an hour of a parenteral benzodiazepine.",
-    },
-    {
-      id: "psychiatry-psychosis-c8",
-      front: "Five things the Mental Healthcare Act 2017 changed.",
-      back: "Rights-based access with free care for the poor and insurance parity; advance directive and nominated representative; independent versus supported admission (maximum 30 days initially) with Mental Health Review Boards; section 115 decriminalised attempted suicide; unmodified ECT, chaining and seclusion prohibited.",
     },
   ],
   references: [
@@ -4107,48 +3813,6 @@ topics.push({
       explanation:
         "A subacute onset after a bereavement with withdrawal, early morning waking, poor effort and 'I do not know' answers on cognitive testing is the classic picture of depressive pseudodementia, which is fully treatable; the correct action is to treat the depression and reassess cognition afterwards, as the MMSE frequently improves substantially. Alzheimer's disease is insidious over years and patients typically attempt answers and confabulate rather than declining to answer. Delirium requires an acute fluctuating course with impaired attention and altered consciousness, which he does not have. Vascular dementia requires vascular risk factors, focal signs and a stepwise course. Calling this normal ageing misses a treatable illness with a real suicide risk, which should also be asked about directly.",
       difficulty: "moderate",
-    },
-  ],
-  cards: [
-    {
-      id: "psychiatry-delirium-c1",
-      front: "DSM-5 definition of delirium.",
-      back: "Disturbance of attention and awareness developing over hours to days, a change from baseline, fluctuating during the day, with an additional cognitive disturbance, and directly caused by a medical condition, substance intoxication or withdrawal, or a medication.",
-    },
-    {
-      id: "psychiatry-delirium-c2",
-      front: "The Confusion Assessment Method (CAM).",
-      back: "Delirium is present with (1) acute onset and fluctuating course AND (2) inattention, PLUS either (3) disorganised thinking OR (4) an altered level of consciousness.",
-    },
-    {
-      id: "psychiatry-delirium-c3",
-      front: "The 4AT and its cut-off.",
-      back: "Alertness, AMT4 (age, date of birth, place, year), Attention (months backwards), Acute change or fluctuating course; scored 0-12. Four or more suggests possible delirium; 1-3 possible cognitive impairment; 0 delirium unlikely.",
-    },
-    {
-      id: "psychiatry-delirium-c4",
-      front: "Three questions that separate delirium from dementia.",
-      back: "How fast did it start (hours to days versus months to years)? Is attention impaired (delirium yes, early dementia no)? Is the level of consciousness altered or fluctuating (delirium yes, dementia no until very late)?",
-    },
-    {
-      id: "psychiatry-delirium-c5",
-      front: "PINCH ME - the causes of delirium.",
-      back: "Pain, Infection, Nutrition (including hypoglycaemia and thiamine deficiency), Constipation (and urinary retention), Hydration and electrolytes, Medication and withdrawal, Environment. Always check the bladder and rectum and reconcile the drug list.",
-    },
-    {
-      id: "psychiatry-delirium-c6",
-      front: "Drug treatment of delirium and the two absolute cautions.",
-      back: "Antipsychotics do not treat or shorten delirium; use haloperidol 0.25-0.5 mg only for severe distress or danger, usually maximum 2-3 mg in 24 hours in the elderly. Use quetiapine instead in Parkinson's disease and Lewy body dementia; use a benzodiazepine with thiamine in alcohol or benzodiazepine withdrawal delirium.",
-    },
-    {
-      id: "psychiatry-delirium-c7",
-      front: "Reversible causes of cognitive decline to exclude in every dementia work-up.",
-      back: "Vitamin B12 deficiency, hypothyroidism, depression (pseudodementia), normal pressure hydrocephalus, chronic subdural haematoma, neurosyphilis, HIV, hypercalcaemia, alcohol, obstructive sleep apnoea and anticholinergic drug burden.",
-    },
-    {
-      id: "psychiatry-delirium-c8",
-      front: "Distinguishing features of dementia with Lewy bodies.",
-      back: "Fluctuating cognition, well-formed recurrent visual hallucinations, spontaneous parkinsonism, REM sleep behaviour disorder, and severe neuroleptic sensitivity - haloperidol and risperidone can cause irreversible deterioration; cholinesterase inhibitors help the hallucinations.",
     },
   ],
   references: [

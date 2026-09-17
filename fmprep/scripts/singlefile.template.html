@@ -246,6 +246,17 @@ td:first-child{font-weight:600}
 /* A chart or table sitting inside a prose section, rather than in a block of
    its own: it needs separating from the points above it without being mistaken
    for the next section. */
+/* A chart in the searchable library: the heading is the control, and the
+   chart itself unfolds under it rather than on a page of its own. */
+.chart-list{display:flex;flex-direction:column;gap:11px}
+.chart-row{background:var(--raised);border:1px solid var(--rule);border-radius:var(--radius);padding:15px 16px}
+.chart-head{display:block;width:100%;text-align:left}
+.chart-title{font:700 17px/1.4 var(--font-ui);color:var(--head);margin-top:5px}
+.chart-sub{font-size:14px;color:var(--quiet);margin-top:3px;line-height:1.45}
+.chart-body{margin-top:16px;padding-top:15px;border-top:1px dashed var(--acc-rule)}
+.today{margin-top:22px;border:1.5px solid var(--rule);background:var(--cream);
+  border-radius:var(--radius);padding:14px 15px}
+.today > .eyebrow{margin-bottom:8px}
 .vis{margin-top:26px;padding-top:22px;border-top:1px dashed var(--acc-rule);
   display:flex;flex-direction:column;gap:16px}
 .vis-h{font:700 16.5px/1.35 var(--font-ui);color:var(--head);margin-bottom:10px}
@@ -485,10 +496,10 @@ const freq = f => '<span class="freq"><i style="--w:' + ((FREQ[f] ? FREQ[f][1] :
 const el = document.getElementById("view");
 
 let state = {mode:"library", sub:null, topic:null, pyqView:"sitting", pyqPaper:"all",
-             quiz:null, card:0, cardSub:"all", q:""};
+             quiz:null, q:"", cq:"", ck:null, chart:null};
 const go = p => { Object.assign(state, p); render(); window.scrollTo(0,0); };
 
-const MODES = [["library","Library"],["papers","Past papers"],["bank","Question bank"],["cards","Flashcards"],["search","Search"]];
+const MODES = [["library","Library"],["charts","Charts & Scores"],["papers","Past papers"],["bank","Question bank"],["search","Search"]];
 document.getElementById("modes").innerHTML = MODES.map(m => '<button class="mode" data-m="' + m[0] + '">' + m[1] + '</button>').join("");
 
 /* ---------- diagrams: one deterministic layout per shape ---------- */
@@ -548,7 +559,7 @@ function viewLibrary(){
           '<span class="foot">' + freq(t.frequency) + '<span class="chip">' + t.mcqs.length + ' MCQ</span>' +
           (t.theory.length ? '<span class="chip bad">' + t.theory.length + ' model answers</span>' : "") +
           ((DIA[t.id]||[]).length ? '<span class="chip acc">' + DIA[t.id].length + ' diagrams</span>' : "") +
-          '<span class="chip">' + t.cards.length + ' cards</span></span></button>').join("") +
+          '<span class="chip">' + t.mcqs.length + ' questions</span></span></button>').join("") +
         '</div></div>').join("") + '</div>';
   }
   const groups = [];
@@ -557,7 +568,7 @@ function viewLibrary(){
       '<h2>Everything, ordered commonest first</h2>' +
       '<p>Twenty subjects, each read the way the paper asks it: the definition that earns the first mark, the numbers that decide management, the red flags that force a referral today, and the model answer written out as it should appear in the answer book.</p>' +
       '<div class="stats">' +
-        [[M.topics,"topics"],[M.theory,"model answers"],[M.mcqs,"MCQs"],[M.diagrams,"diagrams"],[M.cards,"flashcards"],[M.pastQuestions,"past questions"]]
+        [[M.topics,"topics"],[M.theory,"model answers"],[M.mcqs,"MCQs"],[M.charts,"charts and tables"],[M.pastQuestions,"past questions"]]
           .map(x => '<div class="stat"><b>' + x[0] + '</b><span>' + x[1] + '</span></div>').join("") +
       '</div></div>' +
     groups.map(g => '<div class="sec" style="--h:212;--al:40;--ad:58"><h3><span class="n">' + S.filter(s=>s.group===g).length + '</span>' + esc(g) + '</h3>' +
@@ -751,19 +762,117 @@ function viewBank(){
     '</div></div>';
 }
 
-function viewCards(){
-  const pool = state.cardSub === "all" ? DATA.allCards : DATA.allCards.filter(c => c.subjectId === state.cardSub);
-  const c = pool[state.card % pool.length];
-  return '<div style="' + varsOf(c.subjectId) + '"><p class="eyebrow mute">Flashcards</p>' +
-    '<h2 style="font-size:30px;margin:10px 0 6px">' + M.cards + ' cards</h2>' +
-    '<select id="cardsub" style="margin:20px 0;max-width:380px">' +
-    '<option value="all">Every subject (' + DATA.allCards.length + ')</option>' +
-    S.map(s => '<option value="' + s.id + '"' + (state.cardSub===s.id ? " selected" : "") + '>' + esc(s.title) + '</option>').join("") +
-    '</select><div class="reading"><div class="fc">' +
-    '<p class="eyebrow">' + esc(c.subjectTitle) + ' &middot; ' + ((state.card % pool.length)+1) + ' of ' + pool.length + '</p>' +
-    '<p class="front">' + rich(c.front) + '</p><p class="back">' + rich(c.back) + '</p></div>' +
-    '<div class="bar-row"><button class="btn" data-card="1">Next card</button>' +
-    '<button class="btn ghost" data-topic="' + c.topicId + '">Read the topic</button></div></div></div>';
+/* Every classification, score, flow chart and table in the library, searchable.
+   The flashcard drill this replaces asked for a fact out of context; what an
+   exam rewards is holding the chart, and those were reachable only by knowing
+   which topic happened to carry them. */
+const CHART_SCORE = /\b(classification|classif\w*|criteria|criterion|score|scoring|grading|grade|grades|stage|staging|scale|index|severity|class|typing|types?)\b/i;
+const CHART_TREAT = /\b(treat\w*|therapy|management|managing|regimen|protocol|algorithm|step[- ]?up|ladder|first[- ]line|second[- ]line|dose|dosing|prescrib\w*|resuscitat\w*|antidote|when to|choosing|choice)\b/i;
+const CHART_LABEL = {score:"Classifications & Scores", treatment:"Treatment Algorithms", flow:"Flow Charts", table:"Tables"};
+const chartKind = (heading, isTable, dk) =>
+  CHART_SCORE.test(heading) ? "score" :
+  CHART_TREAT.test(heading) ? "treatment" :
+  (isTable || dk === "compare") ? "table" : "flow";
+const plain = s => String(s == null ? "" : s).replace(/\*\*/g, "").replace(/\s+/g, " ").trim();
+
+let CHARTS = null;
+function chartIndex(){
+  if (CHARTS) return CHARTS;
+  CHARTS = [];
+  for (const s of S) for (const t of s.topics) {
+    const base = {subjectId:s.id, subjectTitle:s.title, topicId:t.id, topicTitle:t.title};
+    (DIA[t.id] || []).forEach((d, i) => {
+      const bits = [d.heading, d.caption || ""];
+      if (d.steps) for (const st of d.steps) bits.push(st.label || "", st.detail || "");
+      if (d.arms) for (const a of d.arms) { bits.push(a.label || ""); if (a.steps) bits.push(a.steps.join(" ")); }
+      if (d.root) bits.push(d.root);
+      if (d.columns) bits.push(d.columns.join(" "));
+      if (d.rows) for (const r of d.rows) bits.push(r.join(" "));
+      CHARTS.push(Object.assign({}, base, {
+        id: t.id + "--d" + i, kind: chartKind(d.heading, false, d.kind),
+        heading: plain(d.heading), caption: plain(d.caption),
+        hay: plain(bits.join(" ") + " " + t.title + " " + s.title).toLowerCase(), d: d}));
+    });
+    (t.tables || []).forEach((tb, i) => {
+      const bits = [tb.heading].concat(tb.columns, tb.rows.map(r => r.join(" ")));
+      CHARTS.push(Object.assign({}, base, {
+        id: t.id + "--t" + i, kind: chartKind(tb.heading, true),
+        heading: plain(tb.heading), caption: "",
+        hay: plain(bits.join(" ") + " " + t.title + " " + s.title).toLowerCase(), tb: tb}));
+    });
+  }
+  return CHARTS;
+}
+
+/* Every word typed has to appear, so a second word narrows rather than widens;
+   a hit in the heading outranks one buried in a table cell. */
+function chartSearch(q, kind){
+  const terms = q.toLowerCase().split(/\s+/).filter(Boolean);
+  let pool = chartIndex();
+  if (kind) pool = pool.filter(e => e.kind === kind);
+  if (!terms.length) return pool;
+  const out = [];
+  for (const e of pool) {
+    const head = e.heading.toLowerCase();
+    let score = 0, all = true;
+    for (const term of terms) {
+      if (e.hay.indexOf(term) < 0) { all = false; break; }
+      if (new RegExp("\\b" + term.replace(/[.*+?^${}()|[\]\\]/g, "\\$&") + "\\b").test(head)) score += 10;
+      else if (head.indexOf(term) >= 0) score += 6;
+      else if (e.topicTitle.toLowerCase().indexOf(term) >= 0) score += 3;
+      else score += 1;
+    }
+    if (all) out.push({e:e, s:score});
+  }
+  out.sort((a, b) => b.s - a.s || a.e.heading.localeCompare(b.e.heading));
+  return out.map(x => x.e);
+}
+
+/* One a day, the same one on every device, and every score comes round before
+   any repeats. */
+const dayNo = at => Math.floor((at - new Date(at).getTimezoneOffset() * 60000) / 86400000);
+function chartOfDay(){
+  const pool = chartIndex().filter(e => e.kind === "score" || e.kind === "treatment")
+    .slice().sort((a, b) => a.id.localeCompare(b.id));
+  return pool.length ? pool[dayNo(Date.now()) % pool.length] : null;
+}
+
+function chartCard(e, open){
+  return '<div class="chart-row subject-theme" style="' + varsOf(e.subjectId) + '">' +
+    '<button class="chart-head" data-chart="' + e.id + '">' +
+      '<p class="eyebrow">' + CHART_LABEL[e.kind] + ' &middot; ' + esc(e.subjectTitle) + '</p>' +
+      '<p class="chart-title">' + esc(e.heading) + '</p>' +
+      '<p class="chart-sub">' + esc(e.topicTitle) + '</p>' +
+    '</button>' +
+    (open ? '<div class="chart-body">' +
+      (e.d ? drawDiagram(e.d) : '<h4 class="vis-h">' + esc(e.tb.heading) + '</h4>' + tableHtml(e.tb)) +
+      '<button class="btn" style="margin-top:14px" data-topic="' + e.topicId + '">Open the whole topic</button>' +
+      '</div>' : "") + '</div>';
+}
+
+function viewCharts(){
+  const idx = chartIndex();
+  const res = chartSearch(state.cq || "", state.ck || null);
+  const counts = {};
+  for (const e of idx) counts[e.kind] = (counts[e.kind] || 0) + 1;
+  const today = (!state.cq && !state.ck) ? chartOfDay() : null;
+  return '<div><p class="eyebrow mute">The whole library, by chart</p>' +
+    '<h2 style="font-size:30px;margin:10px 0 6px">Charts, Scores &amp; Tables</h2>' +
+    '<p style="color:var(--quiet);font-size:15px;max-width:62ch">' + idx.length +
+      ' charts across every subject. Search a topic, a score, a drug or a subject name.</p>' +
+    '<input type="search" id="cq" value="' + esc(state.cq || "") +
+      '" placeholder="Glasgow coma, Ranson, asthma step-up, dengue..." style="margin:18px 0 0;max-width:520px">' +
+    '<div class="pills">' + ["score","treatment","flow","table"].map(k =>
+      '<button class="pill" data-ck="' + k + '" aria-pressed="' + (state.ck === k) + '">' +
+        CHART_LABEL[k] + (counts[k] ? " (" + counts[k] + ")" : "") + '</button>').join("") + '</div>' +
+    (today ? '<div class="today"><p class="eyebrow">Today\'s classification</p>' +
+       chartCard(today, state.chart === today.id) + '</div>' : "") +
+    '<p style="color:var(--quiet);font-size:14px;margin:22px 0 10px">' + res.length +
+      (res.length === 1 ? ' chart' : ' charts') + (state.cq ? ' matching "' + esc(state.cq) + '"' : "") + '</p>' +
+    (res.length ? '<div class="chart-list">' + res.slice(0, 120).map(e => chartCard(e, state.chart === e.id)).join("") + '</div>'
+      : '<p class="empty">Nothing matches that. Try a shorter word, or the name of the topic.</p>') +
+    (res.length > 120 ? '<p style="color:var(--quiet);font-size:14px;text-align:center;margin-top:14px">Showing the first 120 of ' +
+      res.length + '. Narrow the search to see the rest.</p>' : "") + '</div>';
 }
 
 function viewSearch(){
@@ -808,7 +917,7 @@ function viewSearch(){
 }
 
 function render(){
-  const views = {library:viewLibrary, papers:viewPapers, bank:viewBank, cards:viewCards, search:viewSearch};
+  const views = {library:viewLibrary, charts:viewCharts, papers:viewPapers, bank:viewBank, search:viewSearch};
   const btns = document.querySelectorAll(".mode");
   for (let i = 0; i < btns.length; i++) btns[i].setAttribute("aria-current", String(btns[i].dataset.m === state.mode));
   el.innerHTML = views[state.mode]();
@@ -823,8 +932,11 @@ function render(){
       if (n) { n.focus(); n.setSelectionRange(pos, pos); }
     };
   }
-  const cs = document.getElementById("cardsub");
-  if (cs) cs.onchange = ev => go({cardSub:ev.target.value, card:0});
+  const cq = document.getElementById("cq");
+  if (cq) {
+    cq.oninput = ev => { const v = ev.target.value, pos = ev.target.selectionStart; go({cq:v, chart:null});
+      const n = document.getElementById("cq"); if (n) { n.focus(); n.setSelectionRange(pos, pos); } };
+  }
 }
 
 const shuffle = a => { a = a.slice(); for (let i=a.length-1;i>0;i--){ const j = Math.floor(Math.random()*(i+1)); const x=a[i]; a[i]=a[j]; a[j]=x; } return a; };
@@ -860,7 +972,7 @@ document.getElementById("apkcopy").addEventListener("click", async ev => {
 });
 
 document.addEventListener("click", ev => {
-  const t = ev.target.closest("[data-m],[data-topic],[data-sub],[data-quiz],[data-back],[data-opt],[data-next],[data-pv],[data-pp],[data-card]");
+  const t = ev.target.closest("[data-m],[data-topic],[data-sub],[data-quiz],[data-back],[data-opt],[data-next],[data-pv],[data-pp],[data-chart],[data-ck]");
   if (!t) return;
   const d = t.dataset;
   if (d.m) return go({mode:d.m, sub:null, topic:null, quiz:null, q:""});
@@ -877,6 +989,8 @@ document.addEventListener("click", ev => {
     return render();
   }
   if (d.next) { state.quiz.i++; state.quiz.picked = null; return render(); }
+  if (d.chart) return go({chart: state.chart === d.chart ? null : d.chart});
+  if (d.ck) return go({ck: state.ck === d.ck ? null : d.ck, chart:null});
   if (d.pv) return go({pyqView:d.pv});
   if (d.pp) return go({pyqPaper:d.pp});
   if (d.card) return go({card:state.card+1});

@@ -580,68 +580,6 @@ topics.push({
       difficulty: "moderate",
     },
   ],
-  cards: [
-    {
-      id: "obstetrics-antenatal-care-c1",
-      front: "Minimum number of antenatal visits under the Government of India programme, and their timing?",
-      back: "Four: within 12 weeks, 14-26 weeks, 28-34 weeks, and 36 weeks to term. WHO 2016 recommends eight contacts.",
-    },
-    {
-      id: "obstetrics-antenatal-care-c2",
-      front: "What is PMSMA and when is it held?",
-      back: "Pradhan Mantri Surakshit Matritva Abhiyan - free assured specialist antenatal check-up for every second- and third-trimester woman on the 9th of every month, with green or red high-risk stickers on the MCP card.",
-    },
-    {
-      id: "obstetrics-antenatal-care-c3",
-      front: "Naegele's rule.",
-      back: "EDD = first day of LMP + 9 months + 7 days, for a regular 28-day cycle; add or subtract the days by which the cycle exceeds or falls short of 28.",
-    },
-    {
-      id: "obstetrics-antenatal-care-c4",
-      front: "Composition and duration of the national IFA tablet in pregnancy.",
-      back: "60 mg elemental iron plus 500 microgram folic acid, one tablet daily from the second trimester for 180 days antenatally and 180 days postpartum.",
-    },
-    {
-      id: "obstetrics-antenatal-care-c5",
-      front: "Calcium supplementation in pregnancy: dose and duration.",
-      back: "500 mg twice daily (1 g elemental calcium per day) from 14 weeks for six months antenatally and six months postpartum; taken separately from iron.",
-    },
-    {
-      id: "obstetrics-antenatal-care-c6",
-      front: "Td immunisation schedule in pregnancy.",
-      back: "Two doses 0.5 mL IM four weeks apart, the first as early as possible; a single booster if two doses were received within the last three years.",
-    },
-    {
-      id: "obstetrics-antenatal-care-c7",
-      front: "When is folic acid 5 mg daily used instead of 400 microgram?",
-      back: "Previous neural tube defect, antiepileptic drugs, pregestational diabetes, obesity, haemoglobinopathy, and malabsorption.",
-    },
-    {
-      id: "obstetrics-antenatal-care-c8",
-      front: "Aspirin for pre-eclampsia prevention: dose and timing.",
-      back: "75-150 mg at night, started between 12 and 16 weeks and continued until 36 weeks, in women with high-risk factors.",
-    },
-    {
-      id: "obstetrics-antenatal-care-c9",
-      front: "Expected relationship between symphysio-fundal height and gestation.",
-      back: "Between 24 and 36 weeks the height in centimetres equals the gestational age in weeks plus or minus 2 cm; a lag of more than 3 cm needs ultrasound.",
-    },
-    {
-      id: "obstetrics-antenatal-care-c10",
-      front: "The three routine antenatal ultrasounds and their timing.",
-      back: "Dating scan 6-11 weeks, nuchal translucency with dual marker 11-13+6 weeks, anomaly scan 18-20 weeks; growth scan 32-36 weeks if indicated. Form F is mandatory for each.",
-    },
-    {
-      id: "obstetrics-antenatal-care-c11",
-      front: "Name the three financial schemes supporting maternity care in India.",
-      back: "Janani Suraksha Yojana (institutional delivery incentive), Janani Shishu Suraksha Karyakram (free delivery, drugs, diagnostics, diet, blood and transport), Pradhan Mantri Matru Vandana Yojana (maternity benefit).",
-    },
-    {
-      id: "obstetrics-antenatal-care-c12",
-      front: "India's current maternal mortality ratio and the SDG target.",
-      back: "97 per 100,000 live births (SRS 2018-20); the SDG 3.1 target is below 70 per 100,000 by 2030.",
-    },
-  ],
   references: [
     "Guidelines for Antenatal Care and Skilled Attendance at Birth by ANMs, LHVs and Staff Nurses, MoHFW, Government of India",
     "Pradhan Mantri Surakshit Matritva Abhiyan operational guidelines and e-PMSMA guidance note, MoHFW, 2016 and 2022",
@@ -1186,68 +1124,6 @@ topics.push({
       explanation:
         "Iron sucrose is limited to 200 mg per sitting, diluted in 100 mL of normal saline and infused over 15-30 minutes, on alternate days, with a weekly ceiling of 600 mg; this is why ferric carboxymaltose, which can deliver 1000-1500 mg at once, is preferred when a woman cannot attend repeatedly. Total dose infusion in one sitting applies to ferric carboxymaltose, not iron sucrose. Iron sucrose is an intravenous preparation only. It is not contraindicated in pregnancy beyond the first trimester and is in fact the programme's standard. Iron sucrose does not require a formal test dose, though observation for 30 minutes with resuscitation facilities available is expected.",
       difficulty: "moderate",
-    },
-  ],
-  cards: [
-    {
-      id: "obstetrics-anaemia-pregnancy-c1",
-      front: "Haemoglobin cut-offs: pregnancy, postpartum, non-pregnant woman.",
-      back: "Pregnancy below 11 g/dL, postpartum below 10 g/dL, non-pregnant adult woman below 12 g/dL.",
-    },
-    {
-      id: "obstetrics-anaemia-pregnancy-c2",
-      front: "Government of India grading of anaemia in pregnancy.",
-      back: "Mild 10.0-10.9, moderate 7.0-9.9, severe 4.0-6.9, very severe below 4.0 g/dL.",
-    },
-    {
-      id: "obstetrics-anaemia-pregnancy-c3",
-      front: "NFHS-5 prevalence of anaemia in pregnant Indian women.",
-      back: "52.2% (up from 50.4% in NFHS-4) - the highest national burden in the world.",
-    },
-    {
-      id: "obstetrics-anaemia-pregnancy-c4",
-      front: "Anemia Mukt Bharat: what does 6x6x6 stand for?",
-      back: "Six target beneficiary groups, six interventions and six institutional mechanisms, aiming to cut anaemia by 3 percentage points per year.",
-    },
-    {
-      id: "obstetrics-anaemia-pregnancy-c5",
-      front: "Therapeutic oral iron dose for mild or moderate anaemia in pregnancy.",
-      back: "Two IFA tablets daily = 120 mg elemental iron with 1 mg folic acid, for 180 days, then prophylaxis for 180 days postpartum.",
-    },
-    {
-      id: "obstetrics-anaemia-pregnancy-c6",
-      front: "Iron deficit formula for parenteral iron.",
-      back: "Iron deficit (mg) = 2.4 x body weight (kg) x (target Hb - actual Hb in g/dL), plus 500 mg for stores.",
-    },
-    {
-      id: "obstetrics-anaemia-pregnancy-c7",
-      front: "Iron sucrose dosing limits.",
-      back: "200 mg in 100 mL normal saline over 15-30 minutes per sitting, alternate days, maximum 600 mg per week.",
-    },
-    {
-      id: "obstetrics-anaemia-pregnancy-c8",
-      front: "Ferric carboxymaltose dose and gestational limit.",
-      back: "1000-1500 mg in 250 mL normal saline over 15-30 minutes as a single sitting, after 12-14 weeks of gestation.",
-    },
-    {
-      id: "obstetrics-anaemia-pregnancy-c9",
-      front: "Transfusion thresholds in pregnancy anaemia.",
-      back: "Hb below 7 g/dL after 34 weeks, Hb below 5 g/dL at any gestation, or any anaemia with cardiac failure, hypoxia, infection or active bleeding.",
-    },
-    {
-      id: "obstetrics-anaemia-pregnancy-c10",
-      front: "Expected haemoglobin response to correctly taken oral iron.",
-      back: "Reticulocytosis by day 5-7, haemoglobin rise of about 0.8-1 g/dL every two weeks; no rise in four weeks defines oral iron failure.",
-    },
-    {
-      id: "obstetrics-anaemia-pregnancy-c11",
-      front: "Three time points at which an anaemic woman is most likely to develop cardiac failure.",
-      back: "30-32 weeks (peak plasma volume), the second stage of labour, and immediately after delivery (uterine autotransfusion).",
-    },
-    {
-      id: "obstetrics-anaemia-pregnancy-c12",
-      front: "How long is delayed cord clamping recommended and what does it give the baby?",
-      back: "1-3 minutes after birth in a baby not needing resuscitation; it transfers 80-100 mL of blood and prevents infant iron deficiency.",
     },
   ],
   references: [
@@ -1802,68 +1678,6 @@ topics.push({
       difficulty: "moderate",
     },
   ],
-  cards: [
-    {
-      id: "obstetrics-hypertensive-disorders-c1",
-      front: "Definition of pre-eclampsia (ISSHP 2018).",
-      back: "Hypertension after 20 weeks with proteinuria (300 mg/24 h, PCR 0.3, or dipstick 2+), OR with maternal organ dysfunction or uteroplacental dysfunction even without proteinuria.",
-    },
-    {
-      id: "obstetrics-hypertensive-disorders-c2",
-      front: "Severe features of pre-eclampsia.",
-      back: "BP 160/110 mmHg or more, platelets under 100,000/microlitre, AST/ALT twice normal, creatinine over 1.1 mg/dL or doubled, pulmonary oedema, new cerebral or visual symptoms.",
-    },
-    {
-      id: "obstetrics-hypertensive-disorders-c3",
-      front: "Pritchard magnesium sulphate regimen.",
-      back: "Loading 4 g of 20% IV over 5 min PLUS 10 g of 50% deep IM (5 g each buttock); maintenance 5 g of 50% IM into alternate buttocks every 4 hours for 24 hours after delivery or the last fit.",
-    },
-    {
-      id: "obstetrics-hypertensive-disorders-c4",
-      front: "Zuspan magnesium sulphate regimen.",
-      back: "Loading 4 g of 20% IV over 15-20 minutes, then an infusion of 1 g per hour for 24 hours after delivery or the last convulsion.",
-    },
-    {
-      id: "obstetrics-hypertensive-disorders-c5",
-      front: "Three checks before every maintenance dose of magnesium sulphate.",
-      back: "Respiratory rate 16 per minute or more, urine output 30 mL per hour or more (100 mL in 4 hours), and a present patellar reflex.",
-    },
-    {
-      id: "obstetrics-hypertensive-disorders-c6",
-      front: "Antidote to magnesium sulphate toxicity, with dose.",
-      back: "Calcium gluconate 1 g = 10 mL of a 10% solution intravenously over 10 minutes; stop the magnesium.",
-    },
-    {
-      id: "obstetrics-hypertensive-disorders-c7",
-      front: "Therapeutic and toxic serum magnesium levels.",
-      back: "Therapeutic 4-7 mEq/L; loss of patellar reflex 8-10 mEq/L; respiratory depression 12 mEq/L; cardiac arrest above 25-30 mEq/L.",
-    },
-    {
-      id: "obstetrics-hypertensive-disorders-c8",
-      front: "Intravenous labetalol regimen for severe hypertension in pregnancy.",
-      back: "20 mg slow IV, then 40 mg after 10 min, then 80 mg every 10 min, to a maximum cumulative 300 mg; or infusion 1-2 mg/min.",
-    },
-    {
-      id: "obstetrics-hypertensive-disorders-c9",
-      front: "Hydralazine dose for severe hypertension in pregnancy.",
-      back: "5 mg slow IV over 5 minutes, repeat 5-10 mg every 20 minutes to a maximum of 20-30 mg, after a 250-500 mL crystalloid preload.",
-    },
-    {
-      id: "obstetrics-hypertensive-disorders-c10",
-      front: "Fluid rate in severe pre-eclampsia and why.",
-      back: "80 mL per hour (about 1 mL/kg/h). The plasma volume is contracted and capillaries leak, so over-infusion causes pulmonary oedema - a leading iatrogenic cause of death.",
-    },
-    {
-      id: "obstetrics-hypertensive-disorders-c11",
-      front: "Tennessee criteria for HELLP syndrome.",
-      back: "LDH 600 IU/L or more (or bilirubin 1.2 mg/dL with schistocytes), AST/ALT at least twice normal, platelets below 100,000 per microlitre.",
-    },
-    {
-      id: "obstetrics-hypertensive-disorders-c12",
-      front: "Timing of delivery in hypertensive disorders.",
-      back: "37 weeks for gestational hypertension or pre-eclampsia without severe features; 34 weeks for severe features; immediate delivery for eclampsia, HELLP, abruption, pulmonary oedema or non-reassuring fetal status.",
-    },
-  ],
   references: [
     "FOGSI-ICOG Good Clinical Practice Recommendations on Pre-eclampsia and Eclampsia, 2019",
     "ISSHP Classification, Diagnosis and Management Recommendations for Hypertensive Disorders of Pregnancy, 2018",
@@ -2384,68 +2198,6 @@ topics.push({
       difficulty: "moderate",
     },
   ],
-  cards: [
-    {
-      id: "obstetrics-gdm-c1",
-      front: "The DIPSI test in one line.",
-      back: "75 g anhydrous glucose in 300 mL water, irrespective of the last meal, single venous plasma glucose at 2 hours; 140 mg/dL or more diagnoses GDM.",
-    },
-    {
-      id: "obstetrics-gdm-c2",
-      front: "DIPSI value of 120-139 mg/dL means what?",
-      back: "Decreased gestational glucose tolerance - give medical nutrition therapy and repeat the test.",
-    },
-    {
-      id: "obstetrics-gdm-c3",
-      front: "IADPSG / WHO 2013 thresholds on the fasting 75 g OGTT.",
-      back: "Fasting 92 mg/dL or more, 1-hour 180 mg/dL or more, 2-hour 153 mg/dL or more; any one value diagnoses GDM.",
-    },
-    {
-      id: "obstetrics-gdm-c4",
-      front: "When does the Indian programme screen for GDM?",
-      back: "Universally, twice: at the first antenatal contact and again at 24-28 weeks. An early negative test must be repeated.",
-    },
-    {
-      id: "obstetrics-gdm-c5",
-      front: "Glycaemic targets in GDM.",
-      back: "Fasting below 95 mg/dL, 1-hour postprandial below 140 mg/dL, 2-hour postprandial below 120 mg/dL, HbA1c below 6%.",
-    },
-    {
-      id: "obstetrics-gdm-c6",
-      front: "When is drug therapy started in GDM?",
-      back: "When the 2-hour postprandial remains 120 mg/dL or more, or fasting 95 mg/dL or more, after two weeks of medical nutrition therapy.",
-    },
-    {
-      id: "obstetrics-gdm-c7",
-      front: "First-line drug for GDM in the Indian national guideline, and its dose.",
-      back: "Metformin 500 mg once or twice daily with meals, titrated weekly to a maximum of 2000-2500 mg per day.",
-    },
-    {
-      id: "obstetrics-gdm-c8",
-      front: "Starting insulin dose in GDM and how it is titrated.",
-      back: "0.1-0.2 units/kg/day, usually premixed 30/70 before breakfast and dinner, titrated by 2-4 units every 2-3 days against the highest out-of-range value.",
-    },
-    {
-      id: "obstetrics-gdm-c9",
-      front: "Antidiabetic drugs contraindicated in pregnancy.",
-      back: "Pioglitazone, SGLT2 inhibitors, GLP-1 receptor agonists and sulphonylureas other than glibenclamide; glibenclamide itself is second-line at best.",
-    },
-    {
-      id: "obstetrics-gdm-c10",
-      front: "Timing of delivery in GDM.",
-      back: "39-40 weeks if diet-controlled, 38-39 weeks if on metformin or insulin; discuss caesarean if the estimated fetal weight is 4000-4500 g or more.",
-    },
-    {
-      id: "obstetrics-gdm-c11",
-      front: "Postpartum test and its timing after GDM.",
-      back: "75 g oral glucose tolerance test at 6-12 weeks postpartum to reclassify; then lifelong annual or biennial screening.",
-    },
-    {
-      id: "obstetrics-gdm-c12",
-      front: "Long-term risks after GDM, for mother and child.",
-      back: "Mother: about 50% develop type 2 diabetes within 5-10 years, with 30-70% recurrence of GDM. Child: raised lifetime risk of obesity, impaired glucose tolerance and metabolic syndrome.",
-    },
-  ],
   references: [
     "National Guidelines for Diagnosis and Management of Gestational Diabetes Mellitus, Maternal Health Division, MoHFW, 2014 (reprinted 2018)",
     "DIPSI (Diabetes in Pregnancy Study Group India) guidelines for the diagnosis and management of GDM",
@@ -2900,53 +2652,6 @@ topics.push({
       difficulty: "easy",
     },
   ],
-  cards: [
-    {
-      id: "obstetrics-labour-partograph-c1",
-      front: "Definition of true labour and the single criterion that separates it from false labour.",
-      back: "Regular painful contractions increasing in frequency, duration and intensity with progressive cervical effacement and dilatation; cervical change on serial examination is the deciding criterion.",
-    },
-    {
-      id: "obstetrics-labour-partograph-c2",
-      front: "Where do the alert and action lines of the modified partograph start and how are they drawn?",
-      back: "Alert line from 4 cm at 0 hours rising 1 cm per hour to 10 cm at 6 hours; action line parallel, 4 hours to the right. The first X is placed on the alert line.",
-    },
-    {
-      id: "obstetrics-labour-partograph-c3",
-      front: "Frequency of observations on the partograph: fetal heart, contractions, pulse, vaginal examination, blood pressure, temperature.",
-      back: "Fetal heart every 30 min, contractions every 30 min, pulse every 30 min, vaginal examination and blood pressure every 4 hours, temperature every 2 hours.",
-    },
-    {
-      id: "obstetrics-labour-partograph-c4",
-      front: "Meaning of crossing the alert line and crossing the action line.",
-      back: "Alert line crossed: progress slower than 1 cm/hour - refer from a facility without caesarean capacity. Action line crossed: a doctor at a CEmOC facility must decide between augmentation and caesarean.",
-    },
-    {
-      id: "obstetrics-labour-partograph-c5",
-      front: "Components of active management of the third stage of labour.",
-      back: "Oxytocin 10 units IM within 1 minute of birth after excluding a second twin, delayed cord clamping at 1-3 minutes, controlled cord traction with counter-traction by a skilled attendant, uterine massage after the placenta.",
-    },
-    {
-      id: "obstetrics-labour-partograph-c6",
-      front: "Seven signal functions of basic emergency obstetric care, and the two that make it comprehensive.",
-      back: "Parenteral antibiotics, uterotonics and anticonvulsants, manual removal of placenta, removal of retained products, assisted vaginal delivery, neonatal resuscitation; plus caesarean section and blood transfusion for CEmOC.",
-    },
-    {
-      id: "obstetrics-labour-partograph-c7",
-      front: "Antenatal corticosteroid regimens and gestational window.",
-      back: "24 to 34 weeks: dexamethasone 6 mg IM every 12 hours for 4 doses, or betamethasone 12 mg IM twice 24 hours apart; the first dose is given before referral.",
-    },
-    {
-      id: "obstetrics-labour-partograph-c8",
-      front: "Duration limits of the stages of labour (WHO 2018).",
-      back: "Active first stage usually not beyond 12 hours in a first labour and 10 hours in later labours; second stage up to 3 hours in a primigravida and 2 hours in a multipara; third stage within 30 minutes.",
-    },
-    {
-      id: "obstetrics-labour-partograph-c9",
-      front: "First aid for cord prolapse at a primary health centre.",
-      back: "Knee-chest or exaggerated Sims position, elevate the presenting part with two fingers in the vagina and keep them there, fill the bladder with 500 mL saline for a long transfer, do not handle the cord, immediate transfer for caesarean.",
-    },
-  ],
   references: [
     "Guidelines for Antenatal Care and Skilled Attendance at Birth by ANMs, LHVs and Staff Nurses, MoHFW, Government of India, 2010",
     "Dakshata and LaQshya Labour Room Quality Improvement Initiative guidelines, MoHFW, 2015 and 2017",
@@ -3371,53 +3076,6 @@ topics.push({
       explanation:
         "External aortic compression occludes the aorta below the renal arteries against the lumbar spine and is used for torrential bleeding, during transfer, or when bimanual compression is impossible; disappearance of the femoral pulse confirms adequate pressure. Bimanual compression uses a fist in the anterior vaginal fornix against the abdominal hand. Controlled cord traction delivers the placenta and Credé's manoeuvre is an obsolete fundal expression that risks inversion. Balloon tamponade is intrauterine, not external.",
       difficulty: "easy",
-    },
-  ],
-  cards: [
-    {
-      id: "obstetrics-pph-c1",
-      front: "Definition of postpartum haemorrhage, primary and secondary.",
-      back: "Blood loss of 500 mL or more after vaginal birth or 1000 mL or more after caesarean within 24 hours, or any loss causing instability. Primary: within 24 hours. Secondary: 24 hours to 12 weeks.",
-    },
-    {
-      id: "obstetrics-pph-c2",
-      front: "The four Ts of PPH with their approximate share.",
-      back: "Tone 70% (atony), Trauma 20% (tears, rupture, inversion), Tissue 10% (retained placenta, accreta), Thrombin 1% (coagulopathy).",
-    },
-    {
-      id: "obstetrics-pph-c3",
-      front: "Oxytocin dose for prevention and for treatment of PPH.",
-      back: "Prevention: 10 units IM within one minute of birth. Treatment: 20 units in 500 mL Ringer lactate at 40-60 drops per minute, maximum 3 L of oxytocin-containing fluid, never an IV bolus.",
-    },
-    {
-      id: "obstetrics-pph-c4",
-      front: "Tranexamic acid in PPH: dose, timing, evidence.",
-      back: "1 g IV over 10 minutes within 3 hours of birth, repeat 1 g after 30 minutes if bleeding continues; WOMAN trial 2017 - one-third reduction in death from bleeding.",
-    },
-    {
-      id: "obstetrics-pph-c5",
-      front: "Doses, maximums and contraindications of methylergometrine and carboprost.",
-      back: "Methylergometrine 0.2 mg IM or slow IV every 15 minutes up to 5 doses (1 mg) - contraindicated in hypertension and heart disease. Carboprost 250 microgram IM every 15 minutes up to 8 doses (2 mg) - contraindicated in asthma.",
-    },
-    {
-      id: "obstetrics-pph-c6",
-      front: "Misoprostol doses in PPH.",
-      back: "Prevention 600 microgram orally where oxytocin is unavailable; treatment 800 microgram sublingual as a single dose.",
-    },
-    {
-      id: "obstetrics-pph-c7",
-      front: "Shock index: formula and threshold after delivery.",
-      back: "Heart rate divided by systolic blood pressure; above 0.9 after delivery indicates significant haemorrhage, above 1.5 severe.",
-    },
-    {
-      id: "obstetrics-pph-c8",
-      front: "Condom balloon tamponade: how much fluid and how long is it left?",
-      back: "A condom over a Foley catheter filled with 300-500 mL saline until bleeding stops, vagina packed, oxytocin infusion and antibiotics continued, removed after 12-24 hours.",
-    },
-    {
-      id: "obstetrics-pph-c9",
-      front: "Components of the WHO E-MOTIVE bundle for PPH (2023).",
-      back: "Early detection with a calibrated drape, Massage, Oxytocic drugs, Tranexamic acid, IV fluids, Examination and Escalation - delivered together within 15 minutes.",
     },
   ],
   references: [
@@ -3877,53 +3535,6 @@ topics.push({
       explanation:
         "Weekly hCG until three consecutive normal values and then monthly for six months detects the 15-20% of complete moles that progress to gestational trophoblastic neoplasia, defined by a plateau over three weeks, a rise over two weeks or persistence at six months. A single value at six weeks misses late rises, and monthly-only testing from the outset misses the early plateau. Forty-eight-hourly testing is the interval for a pregnancy of unknown location, not for mole surveillance. Benign histology does not exclude neoplasia because the diagnosis of neoplasia is biochemical, not histological.",
       difficulty: "easy",
-    },
-  ],
-  cards: [
-    {
-      id: "obstetrics-early-pregnancy-bleeding-c1",
-      front: "Discriminatory zone for beta-hCG on transvaginal and transabdominal ultrasound.",
-      back: "An intrauterine sac should be visible above 1500-2000 mIU/mL on transvaginal scan and above about 3500 mIU/mL on transabdominal scan; an empty uterus above this level is an ectopic until proven otherwise.",
-    },
-    {
-      id: "obstetrics-early-pregnancy-bleeding-c2",
-      front: "Criteria for single-dose methotrexate in ectopic pregnancy, and the dose.",
-      back: "Stable, unruptured, mass under 3.5 cm, no fetal cardiac activity, hCG under 5000 mIU/mL, normal counts and liver and renal function, not breastfeeding, able to follow up; 50 mg per square metre IM; hCG on days 4 and 7 with a 15% fall.",
-    },
-    {
-      id: "obstetrics-early-pregnancy-bleeding-c3",
-      front: "Ultrasound criteria for a missed miscarriage.",
-      back: "Crown-rump length 7 mm or more with no cardiac activity, or mean sac diameter 25 mm or more with no embryo, confirmed on a repeat scan a week later or by a second observer.",
-    },
-    {
-      id: "obstetrics-early-pregnancy-bleeding-c4",
-      front: "Drug regimens for incomplete and missed miscarriage.",
-      back: "Incomplete: misoprostol 600 microgram orally (or 400 microgram sublingually) single dose. Missed: mifepristone 200 mg orally then misoprostol 800 microgram vaginally 24-48 hours later; MVA is the surgical alternative.",
-    },
-    {
-      id: "obstetrics-early-pregnancy-bleeding-c5",
-      front: "Gestational limits and opinions under the MTP Act as amended in 2021.",
-      back: "Up to 20 weeks one RMP; 20-24 weeks two RMPs for the seven Rule 3B categories; beyond 24 weeks a Medical Board for substantial fetal abnormality; any gestation to save life under Section 5.",
-    },
-    {
-      id: "obstetrics-early-pregnancy-bleeding-c6",
-      front: "The seven Rule 3B categories eligible for termination between 20 and 24 weeks.",
-      back: "Survivors of rape, sexual assault or incest; minors; change of marital status during pregnancy (widowhood or divorce); physical disability; mental illness; substantial fetal abnormality; humanitarian settings, disasters or emergencies.",
-    },
-    {
-      id: "obstetrics-early-pregnancy-bleeding-c7",
-      front: "Outpatient medical abortion regimen and the gestational window under the MTP Rules 2021.",
-      back: "Up to 9 weeks (63 days): mifepristone 200 mg orally, then misoprostol 800 microgram buccally, vaginally or sublingually 24-48 hours later; review at two weeks.",
-    },
-    {
-      id: "obstetrics-early-pregnancy-bleeding-c8",
-      front: "Anti-D doses after a sensitising event in an Rh-negative woman.",
-      back: "50 microgram (250 IU) IM before 12 weeks; 300 microgram (1500 IU) IM at or after 12 weeks; within 72 hours of the event.",
-    },
-    {
-      id: "obstetrics-early-pregnancy-bleeding-c9",
-      front: "hCG surveillance after evacuation of a complete mole, and the definition of gestational trophoblastic neoplasia.",
-      back: "Weekly until three consecutive negatives, then monthly for six months. Neoplasia: plateau over three weeks, rise over two weeks, or persistence at six months.",
     },
   ],
   references: [
@@ -4453,58 +4064,6 @@ topics.push({
       explanation:
         "The post-placental and immediate postpartum windows for IUCD insertion close at 48 hours; between 48 hours and four to six weeks the involuting uterus carries a higher risk of expulsion and perforation (WHO MEC category 3), so insertion is deferred to the six-week visit and a bridge method such as condoms, progestogen-only pill or DMPA is provided. Breastfeeding is not a contraindication to a copper IUCD - it is in fact an ideal method for the lactating woman. Waiting for menstruation is unnecessary and risks a pregnancy before the first period, and the IUCD is entirely appropriate after vaginal delivery once the window is right.",
       difficulty: "moderate",
-    },
-  ],
-  cards: [
-    {
-      id: "obstetrics-postnatal-care-c1",
-      front: "HBNC visit schedule after institutional and home delivery.",
-      back: "Institutional: days 3, 7, 14, 21, 28 and 42 (six visits). Home delivery: day 1 added (seven visits). HBYC follows at 3, 6, 9, 12 and 15 months.",
-    },
-    {
-      id: "obstetrics-postnatal-care-c2",
-      front: "Definition of puerperal sepsis.",
-      back: "Temperature of 38 degrees C or more on any two of the first ten days after delivery, excluding the first 24 hours, usually with foul lochia and a tender uterus.",
-    },
-    {
-      id: "obstetrics-postnatal-care-c3",
-      front: "Four signs of good attachment at the breast.",
-      back: "Chin touching the breast, mouth wide open, lower lip turned outward, more areola visible above the upper lip than below.",
-    },
-    {
-      id: "obstetrics-postnatal-care-c4",
-      front: "How is adequacy of breastfeeding judged?",
-      back: "Six or more wet nappies a day after day 4, regaining birth weight by two weeks, and gaining at least 500 g a month in the first six months.",
-    },
-    {
-      id: "obstetrics-postnatal-care-c5",
-      front: "Treatment of lactational mastitis.",
-      back: "Continue feeding from the affected breast; flucloxacillin, dicloxacillin or cephalexin 500 mg every 6 hours for 10-14 days; NSAID; review at 48 hours; aspirate or drain if an abscess forms.",
-    },
-    {
-      id: "obstetrics-postnatal-care-c6",
-      front: "The three criteria of the lactational amenorrhoea method and its efficacy.",
-      back: "Amenorrhoea, exclusive or nearly exclusive breastfeeding day and night, infant under six months; 98% effective while all three hold.",
-    },
-    {
-      id: "obstetrics-postnatal-care-c7",
-      front: "Timing windows for PPIUCD insertion.",
-      back: "Within 10 minutes of placental delivery, during caesarean, or within 48 hours of birth; not between 48 hours and 4-6 weeks; interval insertion thereafter.",
-    },
-    {
-      id: "obstetrics-postnatal-care-c8",
-      front: "Blues, depression and psychosis after delivery: frequency, onset and key feature.",
-      back: "Blues 50-80%, day 3-5, resolve by 2 weeks. Depression 10-20%, EPDS 13 or more, sertraline if moderate or severe. Psychosis 1-2 per 1000, first 2 weeks, confusion and delusions - emergency admission.",
-    },
-    {
-      id: "obstetrics-postnatal-care-c9",
-      front: "Combined oral contraceptive in the postpartum period by WHO MEC.",
-      back: "Breastfeeding: category 4 before 6 weeks, 3 from 6 weeks to 6 months, 2 thereafter. Not breastfeeding: category 3 before 21 days (4 with VTE risk factors), then 2.",
-    },
-    {
-      id: "obstetrics-postnatal-care-c10",
-      front: "Dose schedule of centchroman (Chhaya) and DMPA (Antara).",
-      back: "Centchroman 30 mg twice weekly for 3 months then once weekly, non-hormonal, safe in lactation. DMPA 150 mg IM every 3 months, can start from delivery.",
     },
   ],
   references: [

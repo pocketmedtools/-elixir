@@ -4,7 +4,7 @@
  * The real app code-splits per subject and keeps documents in IndexedDB, which
  * needs a server and a browser cache. This is the same content in a single
  * file that can be opened from anywhere: every topic, every model answer, every
- * question with its explanation, every flashcard, and all 1055 past questions
+ * question with its explanation, and all 1055 past questions
  * already linked to the topics that answer them. What it cannot carry is the
  * document importer (it needs pdf.js and mammoth) and the offline service
  * worker.
@@ -41,7 +41,6 @@ const packed = S.map((s) => ({
     pearls: t.pearls,
     references: t.references,
     mcqs: t.mcqs,
-    cards: t.cards,
     theory: (t.theory ?? []).map((q) => ({
       ...q,
       mustDraw: q.mustDraw ?? [],
@@ -58,9 +57,6 @@ for (const q of [...PAPER_QUESTIONS, ...TOPICWISE_QUESTIONS]) {
   if (hit.length) links[q.id] = hit;
 }
 
-const allCards = packed.flatMap((s) =>
-  s.topics.flatMap((t) => t.cards.map((c) => ({ ...c, topicId: t.id, subjectId: s.id, subjectTitle: s.title }))),
-);
 
 const count = (f: (t: (typeof packed)[number]["topics"][number]) => number) =>
   packed.reduce((n, s) => n + s.topics.reduce((m, t) => m + f(t), 0), 0);
@@ -69,17 +65,19 @@ const data = {
   meta: {
     topics: count(() => 1),
     mcqs: count((t) => t.mcqs.length),
-    cards: count((t) => t.cards.length),
     theory: count((t) => t.theory.length),
     cases: packed.reduce((n, s) => n + s.cases.length, 0),
     paperQuestions: PAPER_QUESTIONS.length,
     topicwiseQuestions: TOPICWISE_QUESTIONS.length,
     pastQuestions: PAPER_QUESTIONS.length + TOPICWISE_QUESTIONS.length,
     diagrams: Object.values(diagrams).reduce((n, d) => n + d.length, 0),
+    /* Diagrams plus tables: what the chart library actually holds. */
+    charts:
+      Object.values(diagrams).reduce((n, d) => n + d.length, 0) +
+      count((t) => (t.tables ?? []).length),
   },
   diagrams,
   subjects: packed,
-  allCards,
   pyq: {
     papers: PAPER_QUESTIONS.map((q) => ({
       id: q.id, question: q.question, paper: q.paper, session: q.session, marks: q.marks,
@@ -100,6 +98,6 @@ const html = template.replace("/*__DATA__*/", json);
 writeFileSync("dist-single/fm-prep.html", html);
 console.log(
   `fm-prep.html  ${(html.length / 1048576).toFixed(2)} MB  ` +
-    `(${data.meta.topics} topics, ${data.meta.mcqs} mcqs, ${data.meta.cards} cards, ` +
-    `${data.meta.diagrams} diagrams, ${data.meta.pastQuestions} past questions, ${Object.keys(links).length} linked)`,
+    `(${data.meta.topics} topics, ${data.meta.mcqs} mcqs, ` +
+    `${data.meta.charts} charts, ${data.meta.pastQuestions} past questions, ${Object.keys(links).length} linked)`,
 );

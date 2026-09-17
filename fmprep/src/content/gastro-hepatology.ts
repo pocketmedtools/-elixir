@@ -582,68 +582,6 @@ topics.push({
       difficulty: "easy",
     },
   ],
-  cards: [
-    {
-      id: "gastro-hepatology-acid-peptic-gerd-c1",
-      front: "First-line Helicobacter pylori regimen in India, with duration.",
-      back: "Bismuth quadruple therapy for 14 days: PPI BD + bismuth subcitrate 120 mg QID + tetracycline 500 mg QID + metronidazole 400 mg TDS.",
-    },
-    {
-      id: "gastro-hepatology-acid-peptic-gerd-c2",
-      front: "How long must a PPI and antibiotics be stopped before a urea breath test?",
-      back: "PPI for 2 weeks, antibiotics and bismuth for 4 weeks - otherwise the test is falsely negative.",
-    },
-    {
-      id: "gastro-hepatology-acid-peptic-gerd-c3",
-      front: "Why is H. pylori serology useless in India?",
-      back: "Adult seroprevalence is 60-80 percent and IgG stays positive for years after cure, so it proves neither active infection nor eradication.",
-    },
-    {
-      id: "gastro-hepatology-acid-peptic-gerd-c4",
-      front: "PPI course length for duodenal versus gastric ulcer.",
-      back: "Duodenal ulcer 4 weeks; gastric ulcer 8 weeks plus repeat endoscopy and biopsy at 8-12 weeks to prove healing and exclude cancer.",
-    },
-    {
-      id: "gastro-hepatology-acid-peptic-gerd-c5",
-      front: "List the alarm features in dyspepsia.",
-      back: "Dysphagia, odynophagia, weight loss, persistent vomiting, GI bleeding or iron-deficiency anaemia, abdominal mass, family history of gastric cancer, and new onset over age 40-45 in India.",
-    },
-    {
-      id: "gastro-hepatology-acid-peptic-gerd-c6",
-      front: "When must a PPI be co-prescribed with an NSAID?",
-      back: "Age 65 or more, past peptic ulcer or bleed, concurrent aspirin, anticoagulant, steroid or SSRI, or high-dose NSAID therapy.",
-    },
-    {
-      id: "gastro-hepatology-acid-peptic-gerd-c7",
-      front: "Triad of gastric outlet obstruction.",
-      back: "Projectile non-bilious vomiting of undigested food, visible gastric peristalsis with a succussion splash, and hypochloraemic hypokalaemic alkalosis with paradoxical aciduria.",
-    },
-    {
-      id: "gastro-hepatology-acid-peptic-gerd-c8",
-      front: "Correct timing of a proton pump inhibitor.",
-      back: "30-60 minutes before breakfast; the drug must be present when meal-stimulated pumps are activated. Wrong timing is the commonest cause of PPI failure.",
-    },
-    {
-      id: "gastro-hepatology-acid-peptic-gerd-c9",
-      front: "Signs of a perforated peptic ulcer.",
-      back: "Sudden severe epigastric pain becoming generalised, board-like rigidity, absent liver dullness, and free gas under the diaphragm on an erect chest film.",
-    },
-    {
-      id: "gastro-hepatology-acid-peptic-gerd-c10",
-      front: "What is Barrett oesophagus and why does it matter?",
-      back: "Intestinal metaplasia of the lower oesophagus from chronic reflux; it is premalignant for oesophageal adenocarcinoma and needs endoscopic surveillance.",
-    },
-    {
-      id: "gastro-hepatology-acid-peptic-gerd-c11",
-      front: "Long-term risks of proton pump inhibitor therapy.",
-      back: "Hypomagnesaemia, vitamin B12 deficiency, enteric infection including C. difficile, community-acquired pneumonia, fundic gland polyps, and associations with fracture and CKD.",
-    },
-    {
-      id: "gastro-hepatology-acid-peptic-gerd-c12",
-      front: "Which H2 blocker should now be prescribed, and why not ranitidine?",
-      back: "Famotidine 20-40 mg at night. Ranitidine was withdrawn worldwide because of NDMA (nitrosamine) contamination.",
-    },
-  ],
   references: [
     "Indian Society of Gastroenterology consensus on Helicobacter pylori infection, Indian Journal of Gastroenterology, 2021",
     "Maastricht VI / Florence Consensus Report on the management of Helicobacter pylori infection, Gut, 2022",
@@ -1241,68 +1179,6 @@ topics.push({
       explanation:
         "Sick-day rules require temporary withdrawal of drugs that become dangerous in volume depletion: metformin risks lactic acidosis, SGLT2 inhibitors risk euglycaemic ketoacidosis and volume loss, and ACE inhibitors, ARBs, diuretics and NSAIDs together precipitate acute kidney injury by removing the kidney's autoregulatory reserve. Increasing metformin compounds the lactic acidosis risk. Loperamide gives symptomatic relief at best and does nothing about the renal and metabolic hazard, and an empirical fluoroquinolone treats a self-limiting illness while adding tendon, QT and C. difficile risk in an older patient.",
       difficulty: "moderate",
-    },
-  ],
-  cards: [
-    {
-      id: "gastro-hepatology-acute-diarrhoea-c1",
-      front: "Composition of low-osmolarity ORS.",
-      back: "Sodium 75, chloride 65, glucose 75, potassium 20, citrate 10 mmol/L; total osmolarity 245 mOsm/L.",
-    },
-    {
-      id: "gastro-hepatology-acute-diarrhoea-c2",
-      front: "Zinc dose and duration in childhood diarrhoea.",
-      back: "20 mg daily for 14 days (10 mg daily if under 6 months), whatever the type of diarrhoea.",
-    },
-    {
-      id: "gastro-hepatology-acute-diarrhoea-c3",
-      front: "Plan B fluid volume and time.",
-      back: "75 mL/kg of low-osmolarity ORS over 4 hours at the facility, then reassess.",
-    },
-    {
-      id: "gastro-hepatology-acute-diarrhoea-c4",
-      front: "Plan C: fluid, total volume and schedule.",
-      back: "Ringer lactate 100 mL/kg. Under 12 months: 30 mL/kg in 1 hour then 70 mL/kg over 5 hours. Over 12 months: 30 mL/kg in 30 minutes then 70 mL/kg over 2.5 hours.",
-    },
-    {
-      id: "gastro-hepatology-acute-diarrhoea-c5",
-      front: "The four IMNCI signs used to classify dehydration.",
-      back: "General condition, sunken eyes, thirst and drinking, and skin pinch. Two or more signs in a column classify that grade.",
-    },
-    {
-      id: "gastro-hepatology-acute-diarrhoea-c6",
-      front: "Why does ORS work in secretory diarrhoea?",
-      back: "The SGLT1 sodium-glucose co-transporter in the enterocyte brush border stays intact and absorbs sodium with glucose 1:1, with water following osmotically.",
-    },
-    {
-      id: "gastro-hepatology-acute-diarrhoea-c7",
-      front: "Treatment of cholera in an adult after rehydration.",
-      back: "Doxycycline 300 mg as a single oral dose; azithromycin 1 g single dose in pregnancy and 20 mg/kg in children.",
-    },
-    {
-      id: "gastro-hepatology-acute-diarrhoea-c8",
-      front: "Bacillary versus amoebic dysentery on stool microscopy.",
-      back: "Bacillary: many pus cells and red cells, no trophozoites. Amoebic: trophozoites containing ingested red blood cells, few pus cells.",
-    },
-    {
-      id: "gastro-hepatology-acute-diarrhoea-c9",
-      front: "Complete treatment of amoebic dysentery.",
-      back: "Metronidazole 800 mg TDS (or tinidazole 2 g OD) for 7-10 days, then a luminal amoebicide - diloxanide furoate 500 mg TDS for 10 days or paromomycin.",
-    },
-    {
-      id: "gastro-hepatology-acute-diarrhoea-c10",
-      front: "When is loperamide contraindicated?",
-      back: "Dysentery or any bloody diarrhoea, fever, suspected C. difficile, and all children under 12 - risk of toxic megacolon and masked fluid loss.",
-    },
-    {
-      id: "gastro-hepatology-acute-diarrhoea-c11",
-      front: "Residual chlorine target when chlorinating a suspect water source.",
-      back: "0.5 mg/L after 30 minutes of contact time.",
-    },
-    {
-      id: "gastro-hepatology-acute-diarrhoea-c12",
-      front: "Which ORS is used in severe acute malnutrition, and why?",
-      back: "ReSoMal - lower sodium and higher potassium, because these children are sodium-overloaded and potassium-depleted and tolerate rapid fluid poorly.",
     },
   ],
   references: [
@@ -1930,68 +1806,6 @@ topics.push({
       difficulty: "moderate",
     },
   ],
-  cards: [
-    {
-      id: "gastro-hepatology-jaundice-c1",
-      front: "At what bilirubin level does jaundice become clinically visible, and where is it seen first?",
-      back: "About 2.5-3 mg/dL, first in the sclerae and under the tongue, best seen in natural daylight.",
-    },
-    {
-      id: "gastro-hepatology-jaundice-c2",
-      front: "How do you calculate and interpret the R factor?",
-      back: "R = (ALT / upper limit of normal) divided by (ALP / upper limit of normal). 5 or more = hepatocellular; 2 or less = cholestatic; between 2 and 5 = mixed.",
-    },
-    {
-      id: "gastro-hepatology-jaundice-c3",
-      front: "Urine and stool colour in the three types of jaundice.",
-      back: "Haemolytic: normal urine, normal or dark stool. Hepatocellular: dark urine, normal or pale stool. Obstructive: dark urine, pale clay-coloured stool.",
-    },
-    {
-      id: "gastro-hepatology-jaundice-c4",
-      front: "Which tests measure liver function rather than liver injury?",
-      back: "Prothrombin time / INR, serum albumin and bilirubin. Transaminases measure injury only.",
-    },
-    {
-      id: "gastro-hepatology-jaundice-c5",
-      front: "State Courvoisier law.",
-      back: "In a jaundiced patient a palpable, non-tender, distended gallbladder is unlikely to be due to stones - suspect malignant distal biliary obstruction.",
-    },
-    {
-      id: "gastro-hepatology-jaundice-c6",
-      front: "AST:ALT ratio above 2 with both under 300 U/L means what?",
-      back: "Alcohol-related liver disease. ALT above 1000 U/L means viral hepatitis, drug or toxin injury, or ischaemic hepatitis.",
-    },
-    {
-      id: "gastro-hepatology-jaundice-c7",
-      front: "NTEP definition of anti-tuberculosis drug-induced hepatitis.",
-      back: "ALT more than 5 times the upper limit of normal without symptoms, or more than 3 times with symptoms such as nausea, vomiting, abdominal pain or jaundice.",
-    },
-    {
-      id: "gastro-hepatology-jaundice-c8",
-      front: "Order of reintroduction of anti-tuberculosis drugs after hepatitis has settled.",
-      back: "Rifampicin first, then isoniazid after 3-7 days, then pyrazinamide last - once ALT is below twice normal and bilirubin has normalised.",
-    },
-    {
-      id: "gastro-hepatology-jaundice-c9",
-      front: "The non-hepatotoxic holding regimen for tuberculosis.",
-      back: "Levofloxacin plus ethambutol plus an aminoglycoside (streptomycin or amikacin).",
-    },
-    {
-      id: "gastro-hepatology-jaundice-c10",
-      front: "State Hy's law and why it matters.",
-      back: "Hepatocellular injury with ALT above 3 times normal plus bilirubin above 2 times normal, without cholestasis, predicts about 10 percent mortality - stop the drug and refer.",
-    },
-    {
-      id: "gastro-hepatology-jaundice-c11",
-      front: "Prolonged prothrombin time that corrects with parenteral vitamin K - what does it mean?",
-      back: "Cholestasis with fat-soluble vitamin malabsorption. Failure to correct means hepatocellular synthetic failure.",
-    },
-    {
-      id: "gastro-hepatology-jaundice-c12",
-      front: "Neonatal jaundice beyond 14 days with pale stools - diagnosis and deadline.",
-      back: "Biliary atresia until proved otherwise; Kasai portoenterostomy must be done before 60 days of life.",
-    },
-  ],
   references: [
     "EASL Clinical Practice Guidelines on drug-induced liver injury, Journal of Hepatology, 2019",
     "National Tuberculosis Elimination Programme (NTEP) technical and operational guidelines for tuberculosis in India, 2023",
@@ -2617,68 +2431,6 @@ topics.push({
       difficulty: "moderate",
     },
   ],
-  cards: [
-    {
-      id: "gastro-hepatology-viral-hepatitis-c1",
-      front: "Which hepatitis viruses are faeco-oral and which are blood-borne?",
-      back: "Faeco-oral: A and E (never chronic in the immunocompetent). Blood-borne: B, C and D (can become chronic).",
-    },
-    {
-      id: "gastro-hepatology-viral-hepatitis-c2",
-      front: "Risk of chronicity of hepatitis B by age at infection.",
-      back: "Perinatal about 90 percent, early childhood about 30 percent, adult acquisition under 5 percent.",
-    },
-    {
-      id: "gastro-hepatology-viral-hepatitis-c3",
-      front: "Anti-HBs positive, anti-HBc negative - what does it mean?",
-      back: "Immunity from vaccination. Anti-HBs with anti-HBc total positive means resolved natural infection.",
-    },
-    {
-      id: "gastro-hepatology-viral-hepatitis-c4",
-      front: "Which marker is positive in the hepatitis B window period?",
-      back: "IgM anti-HBc alone, with HBsAg already cleared and anti-HBs not yet detectable.",
-    },
-    {
-      id: "gastro-hepatology-viral-hepatitis-c5",
-      front: "Why can anti-HCV not be used as a test of cure?",
-      back: "It stays positive for life after exposure, including after spontaneous clearance or successful treatment. Cure is undetectable HCV RNA 12 weeks after therapy (SVR12).",
-    },
-    {
-      id: "gastro-hepatology-viral-hepatitis-c6",
-      front: "Free hepatitis C regimen under NVHCP and its duration.",
-      back: "Sofosbuvir 400 mg plus velpatasvir 100 mg once daily for 12 weeks, pan-genotypic.",
-    },
-    {
-      id: "gastro-hepatology-viral-hepatitis-c7",
-      front: "Maternal mortality of hepatitis E in the third trimester.",
-      back: "15-25 percent, from fulminant hepatic failure, DIC and obstetric haemorrhage. There is no licensed vaccine in India.",
-    },
-    {
-      id: "gastro-hepatology-viral-hepatitis-c8",
-      front: "Immunoprophylaxis for a baby born to an HBsAg-positive mother.",
-      back: "Hepatitis B immunoglobulin 0.5 mL IM within 12 hours plus hepatitis B vaccine birth dose within 24 hours at a different site, then pentavalent at 6, 10 and 14 weeks.",
-    },
-    {
-      id: "gastro-hepatology-viral-hepatitis-c9",
-      front: "When is maternal tenofovir given in pregnancy for hepatitis B?",
-      back: "From 28 weeks until delivery (continued 4-12 weeks postpartum) when HBV DNA exceeds 200000 IU/mL or HBeAg is positive.",
-    },
-    {
-      id: "gastro-hepatology-viral-hepatitis-c10",
-      front: "Define acute liver failure.",
-      back: "Encephalopathy with coagulopathy (INR 1.5 or more) developing within 26 weeks of the onset of illness in a patient with no pre-existing liver disease.",
-    },
-    {
-      id: "gastro-hepatology-viral-hepatitis-c11",
-      front: "Post-exposure prophylaxis after a needle-stick from an HBsAg-positive source in an unvaccinated worker.",
-      back: "Hepatitis B immunoglobulin 0.06 mL/kg IM within 24 hours plus a full vaccine course started at a different site. Nothing is needed if anti-HBs is already above 10 mIU/mL.",
-    },
-    {
-      id: "gastro-hepatology-viral-hepatitis-c12",
-      front: "Hepatocellular carcinoma surveillance in chronic viral hepatitis.",
-      back: "Six-monthly ultrasound with alpha-fetoprotein in all cirrhotics, Asian men over 40 and women over 50 with hepatitis B, and anyone with a family history of liver cancer.",
-    },
-  ],
   references: [
     "National Viral Hepatitis Control Programme operational guidelines, MoHFW Government of India, 2018 and subsequent updates",
     "WHO Guidelines for the prevention, diagnosis, care and treatment of people with chronic hepatitis B infection, 2024",
@@ -3165,48 +2917,6 @@ topics.push({
       difficulty: "hard",
     },
   ],
-  cards: [
-    {
-      id: "gastro-hepatology-chronic-liver-disease-c1",
-      front: "Five variables of the Child-Turcotte-Pugh score.",
-      back: "Bilirubin, albumin, INR, ascites and encephalopathy. A is 5-6, B is 7-9, C is 10-15 points.",
-    },
-    {
-      id: "gastro-hepatology-chronic-liver-disease-c2",
-      front: "SAAG threshold and what it means.",
-      back: "Serum albumin minus ascitic albumin. 1.1 g/dL or more means portal hypertension (about 97 percent accurate); less than 1.1 means a peritoneal cause such as TB or malignancy.",
-    },
-    {
-      id: "gastro-hepatology-chronic-liver-disease-c3",
-      front: "Diagnostic criterion for spontaneous bacterial peritonitis.",
-      back: "Ascitic polymorphonuclear count of 250 cells/mm3 or more, treated even if the culture is negative (culture-negative neutrocytic ascites).",
-    },
-    {
-      id: "gastro-hepatology-chronic-liver-disease-c4",
-      front: "Albumin dose in SBP and why.",
-      back: "1.5 g/kg on day 1 and 1 g/kg on day 3 - prevents hepatorenal syndrome and cuts mortality from about 30 percent to 10 percent.",
-    },
-    {
-      id: "gastro-hepatology-chronic-liver-disease-c5",
-      front: "Diuretic regimen and ratio for cirrhotic ascites.",
-      back: "Spironolactone 100 mg with furosemide 40 mg each morning, escalated in a 100:40 ratio to a maximum of 400 mg and 160 mg.",
-    },
-    {
-      id: "gastro-hepatology-chronic-liver-disease-c6",
-      front: "Albumin replacement for large-volume paracentesis.",
-      back: "6-8 g of albumin per litre removed whenever more than 5 litres are drained.",
-    },
-    {
-      id: "gastro-hepatology-chronic-liver-disease-c7",
-      front: "Protein intake in hepatic encephalopathy.",
-      back: "Do not restrict. Give 1.2-1.5 g/kg/day in frequent small meals with a late-evening snack; sarcopenia worsens encephalopathy.",
-    },
-    {
-      id: "gastro-hepatology-chronic-liver-disease-c8",
-      front: "Drugs to avoid in a cirrhotic with ascites.",
-      back: "NSAIDs, aminoglycosides, ACE inhibitors and ARBs (renal failure), plus sedatives, benzodiazepines and opioids (encephalopathy). Paracetamol up to 2 g/day is the safe analgesic.",
-    },
-  ],
   references: [
     "EASL Clinical Practice Guidelines for the management of patients with decompensated cirrhosis, Journal of Hepatology, 2018",
     "AASLD Practice Guidance: Diagnosis, evaluation and management of ascites, spontaneous bacterial peritonitis and hepatorenal syndrome, 2021",
@@ -3654,48 +3364,6 @@ topics.push({
       explanation:
         "Retching or vomiting that precedes the haematemesis is the hallmark of a Mallory-Weiss mucosal tear at the gastro-oesophageal junction, which stops spontaneously in about 90 percent of cases and needs only supportive care. Variceal bleeding is painless, large-volume and occurs on a background of chronic liver disease, which he does not have at 30 with a single binge. Boerhaave syndrome is full-thickness rupture with severe chest pain, surgical emphysema and mediastinal air, none of which is present and the chest radiograph is normal. A duodenal ulcer usually presents with melaena or coffee-ground vomit after epigastric pain rather than after retching, and a Dieulafoy lesion causes sudden massive bleeding without a preceding vomiting history.",
       difficulty: "moderate",
-    },
-  ],
-  cards: [
-    {
-      id: "gastro-hepatology-gi-bleeding-c1",
-      front: "Anatomical division between upper and lower GI bleeding.",
-      back: "The ligament of Treitz - proximal is upper (haematemesis, melaena), distal is lower (haematochezia).",
-    },
-    {
-      id: "gastro-hepatology-gi-bleeding-c2",
-      front: "Two drugs to start before endoscopy in a cirrhotic with haematemesis.",
-      back: "Terlipressin 2 mg IV six-hourly and ceftriaxone 1 g IV daily for up to 7 days.",
-    },
-    {
-      id: "gastro-hepatology-gi-bleeding-c3",
-      front: "Transfusion threshold and target in acute upper GI bleeding.",
-      back: "Restrictive: threshold 7 g/dL, target 7-9 g/dL (8 g/dL threshold if ischaemic heart disease).",
-    },
-    {
-      id: "gastro-hepatology-gi-bleeding-c4",
-      front: "Forrest classification of a bleeding peptic ulcer.",
-      back: "Ia spurting, Ib oozing, IIa visible vessel, IIb adherent clot, IIc flat pigmented spot, III clean base. Ia to IIb need endoscopic therapy.",
-    },
-    {
-      id: "gastro-hepatology-gi-bleeding-c5",
-      front: "Intravenous PPI regimen after a non-variceal bleed.",
-      back: "Pantoprazole 80 mg IV bolus then 8 mg/hour infusion for 72 hours, then oral PPI.",
-    },
-    {
-      id: "gastro-hepatology-gi-bleeding-c6",
-      front: "Glasgow-Blatchford score of 0-1 means what?",
-      back: "Very low risk - the patient can be managed as an outpatient with early endoscopy rather than admitted.",
-    },
-    {
-      id: "gastro-hepatology-gi-bleeding-c7",
-      front: "How long may a Sengstaken-Blakemore tube stay in?",
-      back: "A maximum of 24 hours, as a bridge to definitive therapy, with the airway secured first.",
-    },
-    {
-      id: "gastro-hepatology-gi-bleeding-c8",
-      front: "Commonest cause of major lower gastrointestinal haemorrhage.",
-      back: "Diverticular bleeding - painless, arterial, large volume, self-limiting in 75-80 percent.",
     },
   ],
   references: [
@@ -4183,48 +3851,6 @@ topics.push({
       explanation:
         "A long-standing IBS label offers no protection against organic disease, and this man now has three alarm features - a persistent change in bowel habit, significant weight loss and rectal bleeding, at an age above 50 - which mandate urgent colonic visualisation for colorectal cancer. Reassurance, dietary manipulation, loperamide or a neuromodulator all treat symptoms while allowing a potentially curable tumour to progress, and deferring calprotectin for six months is an unacceptable delay when bleeding and weight loss are already present.",
       difficulty: "easy",
-    },
-  ],
-  cards: [
-    {
-      id: "gastro-hepatology-ibs-constipation-c1",
-      front: "State the Rome IV criteria for irritable bowel syndrome.",
-      back: "Recurrent abdominal pain at least 1 day/week for 3 months, with onset 6 months earlier, plus 2 of 3: related to defecation, change in stool frequency, change in stool form.",
-    },
-    {
-      id: "gastro-hepatology-ibs-constipation-c2",
-      front: "Which fibre helps IBS and which makes it worse?",
-      back: "Soluble fibre (ispaghula or isabgol) helps; insoluble bran worsens pain and bloating.",
-    },
-    {
-      id: "gastro-hepatology-ibs-constipation-c3",
-      front: "Why avoid lactulose in IBS?",
-      back: "It is a FODMAP - fermented by colonic bacteria to gas, so it worsens the bloating and pain. Use polyethylene glycol instead.",
-    },
-    {
-      id: "gastro-hepatology-ibs-constipation-c4",
-      front: "Faecal calprotectin cut-off and what it rules out.",
-      back: "Below 50 microgram/g effectively excludes inflammatory bowel disease in a patient with diarrhoea, avoiding colonoscopy.",
-    },
-    {
-      id: "gastro-hepatology-ibs-constipation-c5",
-      front: "Bristol stool form scale - which types are normal?",
-      back: "Types 3 (cracked sausage) and 4 (smooth soft sausage). 1-2 are constipation, 6-7 are diarrhoea.",
-    },
-    {
-      id: "gastro-hepatology-ibs-constipation-c6",
-      front: "Rifaximin regimen in IBS with diarrhoea and bloating.",
-      back: "550 mg three times daily for 14 days; durable benefit in about 40 percent, and the course may be repeated.",
-    },
-    {
-      id: "gastro-hepatology-ibs-constipation-c7",
-      front: "What does a digital rectal examination add in chronic constipation?",
-      back: "Detects impaction, mass, fissure, sphincter tone and dyssynergic defecation - paradoxical puborectalis contraction on straining, which needs biofeedback.",
-    },
-    {
-      id: "gastro-hepatology-ibs-constipation-c8",
-      front: "First-line drug for chronic functional constipation.",
-      back: "Polyethylene glycol (macrogol) 13-26 g daily is the best-evidenced osmotic laxative; bulk-forming ispaghula is tried first if fluid intake is adequate.",
     },
   ],
   references: [
@@ -4768,48 +4394,6 @@ topics.push({
       explanation:
         "Same-admission cholecystectomy after mild gallstone pancreatitis has settled is the standard of care because 25-30 percent of patients who are discharged without surgery return with recurrent pancreatitis, cholecystitis or cholangitis within six weeks. Deferring surgery by six months maximises that risk. Urgent ERCP is indicated only where there is concurrent cholangitis or persistent biliary obstruction, and this patient has a normal common bile duct. Ursodeoxycholic acid does not clear gallstones reliably and does not prevent recurrent pancreatitis. Repeat CT adds nothing in mild disease that has already resolved without collections.",
       difficulty: "moderate",
-    },
-  ],
-  cards: [
-    {
-      id: "gastro-hepatology-acute-abdomen-pancreatitis-c1",
-      front: "Revised Atlanta criteria for diagnosing acute pancreatitis.",
-      back: "Two of three: characteristic epigastric pain radiating to the back; lipase or amylase at least 3 times the upper limit of normal; characteristic findings on CT, MRI or ultrasound.",
-    },
-    {
-      id: "gastro-hepatology-acute-abdomen-pancreatitis-c2",
-      front: "Components of the BISAP score.",
-      back: "Blood urea over 25 mg/dL, Impaired mental status, SIRS, Age over 60, Pleural effusion - 1 point each; 3 or more predicts severe pancreatitis.",
-    },
-    {
-      id: "gastro-hepatology-acute-abdomen-pancreatitis-c3",
-      front: "Fluid regimen in acute pancreatitis after the WATERFALL trial.",
-      back: "Moderate goal-directed Ringer lactate, about 1.5 mL/kg/hour after a 10 mL/kg bolus if hypovolaemic, titrated to urine output and haematocrit. Aggressive over-resuscitation causes overload without benefit.",
-    },
-    {
-      id: "gastro-hepatology-acute-abdomen-pancreatitis-c4",
-      front: "Are prophylactic antibiotics indicated in necrotising pancreatitis?",
-      back: "No. Antibiotics only for proven or strongly suspected infected necrosis, cholangitis or extrapancreatic infection.",
-    },
-    {
-      id: "gastro-hepatology-acute-abdomen-pancreatitis-c5",
-      front: "Alvarado score - what it is and the action thresholds.",
-      back: "MANTRELS for appendicitis, out of 10. Score 7 or more means surgical referral, 5-6 equivocal needing imaging, 4 or less unlikely.",
-    },
-    {
-      id: "gastro-hepatology-acute-abdomen-pancreatitis-c6",
-      front: "Charcot triad and Reynolds pentad.",
-      back: "Charcot triad: fever with rigors, jaundice, right upper quadrant pain - ascending cholangitis. Reynolds pentad adds hypotension and confusion - needs urgent biliary drainage.",
-    },
-    {
-      id: "gastro-hepatology-acute-abdomen-pancreatitis-c7",
-      front: "Colic versus peritonitis - how does the patient lie?",
-      back: "Colic makes the patient restless and unable to lie still; peritonitis makes the patient lie absolutely still because movement hurts.",
-    },
-    {
-      id: "gastro-hepatology-acute-abdomen-pancreatitis-c8",
-      front: "When should cholecystectomy be done after mild gallstone pancreatitis?",
-      back: "During the same admission once the attack settles - delay leads to 25-30 percent recurrence within six weeks.",
     },
   ],
   references: [

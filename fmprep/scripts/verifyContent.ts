@@ -5,7 +5,6 @@
  */
 import {
   SUBJECT_META,
-  allCards,
   allCases,
   allMcqs,
   allTheory,
@@ -17,7 +16,6 @@ import {
 import blueprint from "../src/examPattern";
 import guide from "../src/casePresentation";
 import { FREQUENCY_ORDER } from "../src/lib/types";
-import { MIN_EASE, newCard, schedule } from "../src/lib/srs";
 import { buildQuiz } from "../src/lib/quiz";
 
 // Content is code-split for the app, so the checker pulls every chunk in
@@ -167,18 +165,6 @@ section("Diagrams");
   console.log(`diagrams: ${total} across ${Object.keys(byTopic).length} topics`);
 }
 
-/* ---------- 3. Flashcards ---------- */
-section("Flashcards");
-{
-  const ids = new Set<string>();
-  for (const { card } of allCards()) {
-    if (ids.has(card.id)) fail(`duplicate card id: ${card.id}`);
-    ids.add(card.id);
-    if (!card.front.trim() || !card.back.trim()) fail(`${card.id}: empty side`);
-  }
-  console.log(`cards: ${ids.size}`);
-}
-
 /* ---------- 4. Theory questions ---------- */
 section("Theory question bank");
 {
@@ -250,29 +236,6 @@ section("Exam blueprint and presentation guide");
 section("Scheduler and quiz behaviour");
 {
   const now = 1_700_000_000_000;
-  const fresh = newCard(now);
-
-  const again = schedule(fresh, "again", now);
-  if (again.due - now !== 10 * 60_000) fail("srs: 'again' should bring a card back in ten minutes");
-  if (again.lapses !== 1) fail("srs: 'again' should count a lapse");
-
-  let card = schedule(fresh, "good", now);
-  if (card.interval !== 1) fail(`srs: first 'good' should give a 1-day interval, gave ${card.interval}`);
-  card = schedule(card, "good", now);
-  if (card.interval !== 6) fail(`srs: second 'good' should give a 6-day interval, gave ${card.interval}`);
-  const third = schedule(card, "good", now);
-  if (third.interval <= 6) fail("srs: the third 'good' should grow the interval");
-  if (schedule(card, "easy", now).interval <= third.interval)
-    fail("srs: 'easy' should grow the interval more than 'good'");
-
-  let punished = fresh;
-  for (let i = 0; i < 20; i++) punished = schedule(punished, "again", now);
-  if (punished.ease < MIN_EASE - 1e-9) fail(`srs: ease fell below the ${MIN_EASE} floor`);
-
-  let long = { ...fresh, interval: 3000, reps: 9, ease: 3 };
-  long = schedule(long, "easy", now);
-  if (long.interval > 3650) fail(`srs: interval ran past the ten-year ceiling (${long.interval})`);
-
   const states: Record<string, never> = {};
   const paper = buildQuiz({
     count: 30,
@@ -308,7 +271,7 @@ section("Scheduler and quiz behaviour");
 /* ---------- Result ---------- */
 const counts = contentCounts();
 console.log(
-  `\nTotals — subjects ${counts.subjects}, topics ${counts.topics}, theory ${counts.theory}, mcqs ${counts.mcqs}, cards ${counts.cards}, cases ${counts.cases}`,
+  `\nTotals — subjects ${counts.subjects}, topics ${counts.topics}, theory ${counts.theory}, mcqs ${counts.mcqs}, cases ${counts.cases}`,
 );
 
 if (warnings.length) {

@@ -1,23 +1,11 @@
 /**
  * Device-local study state.
  *
- * Everything the learner does — cards scheduled, questions answered, topics
+ * Everything the learner does — questions answered, topics
  * read, exams sat — lives in this browser's localStorage. There is no account
  * and no server, so the app stays usable offline and nothing leaves the phone.
  * React subscribes through useSyncExternalStore(subscribe, getVersion).
  */
-
-export type CardState = {
-  /** SM-2 ease factor; 1.3 is the floor. */
-  ease: number;
-  /** Current interval in days. */
-  interval: number;
-  /** Epoch ms when the card is next due. */
-  due: number;
-  reps: number;
-  lapses: number;
-  lastAt: number;
-};
 
 export type McqState = {
   seen: number;
@@ -53,8 +41,6 @@ export type Settings = {
   examSize: number;
   /** Minutes allowed for a mock exam. */
   examMinutes: number;
-  /** New cards introduced per day. */
-  newCardsPerDay: number;
   /** Reader body size multiplier, 0.9 to 1.5, applied on top of the reader's 1.1rem base — so 1 reads at 17.6px, 0.9 at 15.8px and 1.5 at 26.4px. */
   readerScale: number;
   /** Serif body text — easier for long reading for some people. */
@@ -62,7 +48,6 @@ export type Settings = {
 };
 
 type State = {
-  cards: Record<string, CardState>;
   mcqs: Record<string, McqState>;
   topics: Record<string, TopicState>;
   bookmarks: string[];
@@ -83,13 +68,11 @@ const DEFAULT_SETTINGS: Settings = {
   theme: "system",
   examSize: 50,
   examMinutes: 60,
-  newCardsPerDay: 20,
   readerScale: 1,
   readerSerif: true,
 };
 
 const EMPTY: State = {
-  cards: {},
   mcqs: {},
   topics: {},
   bookmarks: [],
@@ -179,15 +162,6 @@ export function currentStreak(now: number): number {
   return streak;
 }
 
-export function recordCard(id: string, card: CardState, at: number) {
-  commit(
-    withStudyDay(
-      { ...state, cards: { ...state.cards, [id]: card } },
-      at,
-    ),
-  );
-}
-
 export function recordAnswer(id: string, choice: number, isCorrect: boolean, at: number) {
   const prev = state.mcqs[id];
   const next: McqState = {
@@ -259,12 +233,11 @@ export function updateSettings(patch: Partial<Settings>) {
 }
 
 /** Clear one slice of progress, or everything. */
-export function resetProgress(what: "cards" | "mcqs" | "topics" | "exams" | "all") {
+export function resetProgress(what: "mcqs" | "topics" | "exams" | "all") {
   if (what === "all") {
     commit({ ...EMPTY, settings: state.settings });
     return;
   }
-  if (what === "cards") commit({ ...state, cards: {} });
   if (what === "mcqs") commit({ ...state, mcqs: {} });
   if (what === "topics") commit({ ...state, topics: {}, bookmarks: state.bookmarks });
   if (what === "exams") commit({ ...state, exams: [] });

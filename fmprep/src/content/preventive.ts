@@ -498,68 +498,6 @@ topics.push({
         "The Operational Framework for Management of Common Cancers (2016) and the NP-NCD guidelines specify VIA using 5% acetic acid, performed by a trained ANM at the health and wellness centre, every 5 years in women aged 30-65 years, with VIA-positive women referred for colposcopy and biopsy. Cytology-based Pap screening is not feasible at scale in India because of the cytopathology workforce required, HPV DNA testing is the WHO-preferred test and is being phased in but is not yet the national standard, and colposcopy is a diagnostic and not a screening procedure.",
     },
   ],
-  cards: [
-    {
-      id: "preventive-prevention-screening-c1",
-      front: "The four levels of prevention, in order.",
-      back: "Primordial (before the risk factor), primary (risk factor present, disease absent), secondary (subclinical disease - early diagnosis and prompt treatment), tertiary (established disease - disability limitation and rehabilitation).",
-    },
-    {
-      id: "preventive-prevention-screening-c2",
-      front: "Leavell and Clark's five modes of intervention.",
-      back: "Health promotion, specific protection, early diagnosis and prompt treatment, disability limitation, rehabilitation.",
-    },
-    {
-      id: "preventive-prevention-screening-c3",
-      front: "Definition of screening (Commission on Chronic Illness, 1951).",
-      back: "Presumptive identification of unrecognised disease by tests applied rapidly, to sort apparently well persons who probably have a disease from those who probably do not. It is not diagnosis.",
-    },
-    {
-      id: "preventive-prevention-screening-c4",
-      front: "The four Wilson and Jungner headings.",
-      back: "The disease (important, latent stage, known natural history); the test (simple, safe, valid, cheap, acceptable); the treatment (accepted, available, agreed policy on whom to treat); the programme (continuing, cost-balanced).",
-    },
-    {
-      id: "preventive-prevention-screening-c5",
-      front: "Lead time bias in one line.",
-      back: "Screening advances the date of diagnosis without postponing death, so survival from diagnosis lengthens while mortality is unchanged.",
-    },
-    {
-      id: "preventive-prevention-screening-c6",
-      front: "Length time bias in one line.",
-      back: "Periodic screening preferentially picks up slow-growing indolent disease; aggressive disease surfaces between rounds as interval cases, so screen-detected cases look falsely good.",
-    },
-    {
-      id: "preventive-prevention-screening-c7",
-      front: "Which endpoint proves a screening programme works?",
-      back: "A fall in disease-specific mortality in the whole population in a randomised comparison analysed by intention to screen - never survival from diagnosis.",
-    },
-    {
-      id: "preventive-prevention-screening-c8",
-      front: "Rose's prevention paradox.",
-      back: "A preventive measure that brings large benefit to the population offers little to each participating individual - hence poor uptake of salt reduction and tobacco control.",
-    },
-    {
-      id: "preventive-prevention-screening-c9",
-      front: "Types of screening.",
-      back: "Mass, high-risk (selective), multiphasic, and case finding (opportunistic).",
-    },
-    {
-      id: "preventive-prevention-screening-c10",
-      front: "The three population cancer screens in India, and from what age.",
-      back: "Cervix by VIA, breast by clinical breast examination, oral cavity by visual examination - all from age 30, repeated every 5 years, under NP-NCD.",
-    },
-    {
-      id: "preventive-prevention-screening-c11",
-      front: "CBAC form: what is it and what is the cut-off?",
-      back: "Community Based Assessment Checklist, filled for everyone aged 30 and above by the ASHA; a score of 4 or more indicates high risk and mandates screening and referral.",
-    },
-    {
-      id: "preventive-prevention-screening-c12",
-      front: "Why does the same test have different predictive values in a camp and in a clinic?",
-      back: "Sensitivity and specificity are test properties, but predictive values depend on prevalence - low prevalence collapses the positive predictive value.",
-    },
-  ],
   references: [
     "Park's Textbook of Preventive and Social Medicine, 27th edition, 2023 - chapters on concepts of prevention and screening for disease",
     "Wilson JMG, Jungner G. Principles and Practice of Screening for Disease. WHO Public Health Paper No. 34, 1968",
@@ -1170,68 +1108,6 @@ topics.push({
         "Tele-MANAS provides 24-hour free tele-mental health counselling in multiple languages on 14416 (also reachable on 1-800-891-4416), with escalation to a mental health professional and to the District Mental Health Programme where needed. 104 is the state health helpline, 108 is the emergency ambulance service, 1075 was the national COVID-19 helpline, and 1800-11-2356 is the national tobacco quitline - the last is worth knowing separately because tobacco cessation counselling is examined alongside mental health.",
     },
   ],
-  cards: [
-    {
-      id: "preventive-national-health-programmes-c1",
-      front: "Population norms: ASHA, sub-centre, PHC, CHC.",
-      back: "ASHA 1,000; sub-centre 5,000 (3,000 tribal/hilly); PHC 30,000 (20,000); CHC 120,000 (80,000). CHC is the first referral unit with four specialists and 30 beds.",
-    },
-    {
-      id: "preventive-national-health-programmes-c2",
-      front: "The two components of Ayushman Bharat.",
-      back: "Ayushman Arogya Mandir (Health and Wellness Centres) delivering 12 comprehensive primary care packages, and PM-JAY giving Rs 5 lakh per family per year for hospitalisation.",
-    },
-    {
-      id: "preventive-national-health-programmes-c3",
-      front: "Who is covered by PM-JAY from October 2024 irrespective of income?",
-      back: "All citizens aged 70 years and above, through the Ayushman Vay Vandana card with an additional Rs 5 lakh top-up cover.",
-    },
-    {
-      id: "preventive-national-health-programmes-c4",
-      front: "NTEP daily regimen for drug-sensitive TB.",
-      back: "2 months HRZE (intensive) then 4 months HRE (continuation), daily, as weight-band fixed-dose combinations. Intermittent thrice-weekly therapy has been abandoned.",
-    },
-    {
-      id: "preventive-national-health-programmes-c5",
-      front: "Nikshay Poshan Yojana amount.",
-      back: "Direct benefit transfer for nutritional support throughout treatment - Rs 500 per month from 2018, raised to Rs 1,000 per month from November 2024.",
-    },
-    {
-      id: "preventive-national-health-programmes-c6",
-      front: "Definition of leprosy elimination and when India achieved it.",
-      back: "Prevalence below 1 case per 10,000 population; achieved nationally in December 2005. The current target is zero transmission by 2027.",
-    },
-    {
-      id: "preventive-national-health-programmes-c7",
-      front: "MDT duration for paucibacillary and multibacillary leprosy.",
-      back: "Paucibacillary 6 months, multibacillary 12 months, both now on a three-drug regimen (rifampicin, clofazimine, dapsone). Contacts get single-dose rifampicin prophylaxis.",
-    },
-    {
-      id: "preventive-national-health-programmes-c8",
-      front: "Annual parasite incidence formula and the Category 1 cut-off.",
-      back: "API = confirmed malaria cases / population at risk x 1,000. API below 1 per 1,000 places a district in Category 1, the elimination phase.",
-    },
-    {
-      id: "preventive-national-health-programmes-c9",
-      front: "Kala-azar elimination target.",
-      back: "Fewer than 1 case per 10,000 population at block level - achieved across endemic blocks in 2023. Treatment is single-dose liposomal amphotericin B 10 mg/kg.",
-    },
-    {
-      id: "preventive-national-health-programmes-c10",
-      front: "RBSK age range, the 4 Ds, and where positives are treated.",
-      back: "Birth to 18 years; defects at birth, deficiencies, diseases, developmental delays including disability; 30 conditions; free care at District Early Intervention Centres.",
-    },
-    {
-      id: "preventive-national-health-programmes-c11",
-      front: "National Mental Health Survey 2015-16 headline figures.",
-      back: "Current prevalence of mental morbidity about 10.6% in adults, lifetime 13.7%, with a treatment gap of 70-92% depending on the disorder.",
-    },
-    {
-      id: "preventive-national-health-programmes-c12",
-      front: "Which portal for TB, for leprosy, and for outbreak surveillance?",
-      back: "TB - Nikshay; leprosy - Nikusth 2.0; communicable disease and outbreak surveillance - IHIP (the digital IDSP platform), using S, P and L forms.",
-    },
-  ],
   references: [
     "Park's Textbook of Preventive and Social Medicine, 27th edition, 2023 - national health programmes",
     "National Strategic Plan for Tuberculosis Elimination and India TB Report 2024, Central TB Division, MoHFW",
@@ -1785,68 +1661,6 @@ topics.push({
         "An interrupted immunisation schedule is never restarted - immunological memory persists, so the remaining doses are simply given from the point of interruption at the minimum interval of four weeks between doses of the same vaccine, together with the vaccines now due for age such as measles-rubella and vitamin A. Restarting wastes vaccine, wastes visits and needlessly delays protection. Abandoning the pentavalent series would leave the child unprotected against diphtheria, pertussis, tetanus, hepatitis B and Hib, and single arbitrary doses do not confer the protection the primary series is designed to give.",
     },
   ],
-  cards: [
-    {
-      id: "preventive-immunisation-c1",
-      front: "The 12 diseases covered by the UIP.",
-      back: "Tuberculosis, diphtheria, pertussis, tetanus, polio, hepatitis B, Hib, measles, rubella, rotavirus diarrhoea, pneumococcal disease, and Japanese encephalitis in endemic districts.",
-    },
-    {
-      id: "preventive-immunisation-c2",
-      front: "Vaccines given at birth, and their route.",
-      back: "BCG 0.05 mL intradermal left upper arm, OPV zero dose 2 drops oral, hepatitis B birth dose 0.5 mL intramuscular thigh within 24 hours.",
-    },
-    {
-      id: "preventive-immunisation-c3",
-      front: "When is fractional IPV given, and how?",
-      back: "At 6 and 14 weeks; 0.1 mL intradermal in the right upper arm.",
-    },
-    {
-      id: "preventive-immunisation-c4",
-      front: "Vitamin A prophylaxis schedule.",
-      back: "1 lakh IU at 9 months with MR-1, then 2 lakh IU every 6 months up to 5 years - 9 doses in all.",
-    },
-    {
-      id: "preventive-immunisation-c5",
-      front: "Cold chain storage temperatures.",
-      back: "ILR and vaccine carrier +2 to +8 degrees Celsius; deep freezer -15 to -25 degrees Celsius for OPV and ice packs.",
-    },
-    {
-      id: "preventive-immunisation-c6",
-      front: "Which vaccines must never be frozen?",
-      back: "Hepatitis B, pentavalent, PCV, IPV, Td and liquid rotavirus vaccine - all aluminium-adsorbed or freeze-sensitive. Use the shake test if freezing is suspected.",
-    },
-    {
-      id: "preventive-immunisation-c7",
-      front: "VVM stages: use or discard?",
-      back: "Stage 1 and 2 (inner square lighter than the outer circle) - use. Stage 3 and 4 (square matches or is darker) - discard. VVM records heat only.",
-    },
-    {
-      id: "preventive-immunisation-c8",
-      front: "Open vial policy - which vaccines and how long?",
-      back: "28 days for OPV, hepatitis B, pentavalent, Td, fIPV and liquid rotavirus. Never for BCG, MR or JE, which are discarded 4 hours after reconstitution.",
-    },
-    {
-      id: "preventive-immunisation-c9",
-      front: "The five cause-specific AEFI categories.",
-      back: "Vaccine product related, vaccine quality defect related, immunisation error related, immunisation anxiety related, coincidental.",
-    },
-    {
-      id: "preventive-immunisation-c10",
-      front: "Adrenaline dose for post-vaccination anaphylaxis.",
-      back: "Adrenaline 1:1000, 0.01 mL/kg intramuscularly into the anterolateral thigh, maximum 0.5 mL, repeated every 5-15 minutes; observe every vaccinee for 30 minutes.",
-    },
-    {
-      id: "preventive-immunisation-c11",
-      front: "Herd immunity threshold formula and the measles figure.",
-      back: "1 - 1/R0. Measles (R0 12-18) needs about 92-95% coverage; tetanus has no herd immunity because there is no person-to-person spread.",
-    },
-    {
-      id: "preventive-immunisation-c12",
-      front: "Rabies category III - what three things are required?",
-      back: "Wash with soap and running water for 15 minutes, full vaccine course, and rabies immunoglobulin (human 20 IU/kg, equine 40 IU/kg) infiltrated into and around the wound on day 0.",
-    },
-  ],
   references: [
     "Universal Immunisation Programme, National Immunisation Schedule, MoHFW, India - Immunisation Handbook for Medical Officers, 2023 revision",
     "Park's Textbook of Preventive and Social Medicine, 27th edition, 2023 - immunity and immunisation, cold chain",
@@ -2394,68 +2208,6 @@ topics.push({
         "Attributable risk = 90 - 10 = 80 per 100,000 per year, and attributable risk per cent = (Ie - Iu)/Ie x 100 = 80/90 x 100 = 88.9%. This means that about 89% of lung cancer occurring in smokers is attributable to smoking and would be prevented if they had never smoked. The value 9 is the relative risk (90/10), not a percentage, and 80% would be the answer only if the denominator were mistakenly taken as 100. Attributable risk per cent measures the impact of removing an exposure in the exposed group, whereas population attributable risk additionally accounts for how common the exposure is.",
     },
   ],
-  cards: [
-    {
-      id: "preventive-biostatistics-c1",
-      front: "Sensitivity and specificity formulae from the 2x2 table.",
-      back: "Sensitivity = a/(a+c) - read down the disease-present column. Specificity = d/(b+d) - read down the disease-absent column. Both are test properties, independent of prevalence.",
-    },
-    {
-      id: "preventive-biostatistics-c2",
-      front: "SnNout and SpPin.",
-      back: "A highly Sensitive test that is Negative rules disease Out; a highly Specific test that is Positive rules disease In.",
-    },
-    {
-      id: "preventive-biostatistics-c3",
-      front: "Likelihood ratio formulae and what counts as useful.",
-      back: "LR+ = sens/(1 - spec); LR- = (1 - sens)/spec. LR+ above 10 or LR- below 0.1 is a large, usually conclusive shift; 0.5 to 2 is nearly useless.",
-    },
-    {
-      id: "preventive-biostatistics-c4",
-      front: "Number needed to treat.",
-      back: "NNT = 1 / absolute risk reduction, rounded up, quoted with the duration of follow-up. NNH = 1 / absolute risk increase.",
-    },
-    {
-      id: "preventive-biostatistics-c5",
-      front: "Odds ratio formula and when it approximates relative risk.",
-      back: "OR = (a x d)/(b x c). It approximates the relative risk when the outcome is rare (below about 10%) and exaggerates it when common.",
-    },
-    {
-      id: "preventive-biostatistics-c6",
-      front: "Attributable risk and attributable risk per cent.",
-      back: "AR = Ie - Iu (excess risk from the exposure). AR% = (Ie - Iu)/Ie x 100 - the proportion of disease in the exposed due to the exposure.",
-    },
-    {
-      id: "preventive-biostatistics-c7",
-      front: "What exactly does a p value mean?",
-      back: "The probability of a result at least as extreme as that observed if the null hypothesis were true. It is not the probability the null hypothesis is true, and it says nothing about effect size.",
-    },
-    {
-      id: "preventive-biostatistics-c8",
-      front: "Type I error, type II error and power.",
-      back: "Type I (alpha) - claiming a difference that does not exist, conventionally 0.05. Type II (beta) - missing a real difference. Power = 1 - beta, usually set at 80-90%.",
-    },
-    {
-      id: "preventive-biostatistics-c9",
-      front: "Standard deviation versus standard error.",
-      back: "SD describes the scatter of individuals; SE = SD/square root of n describes the precision of the mean. 95% CI for a mean = mean +/- 1.96 SE.",
-    },
-    {
-      id: "preventive-biostatistics-c10",
-      front: "Sample size for a prevalence survey.",
-      back: "n = 4pq / L squared (p, q and L in percentages, 95% confidence). Add 10-15% for non-response and multiply by the design effect for cluster sampling.",
-    },
-    {
-      id: "preventive-biostatistics-c11",
-      front: "Which test: two independent groups, skewed continuous data?",
-      back: "Mann-Whitney U test. Paired equivalent is Wilcoxon signed-rank; three or more groups is Kruskal-Wallis.",
-    },
-    {
-      id: "preventive-biostatistics-c12",
-      front: "Bradford Hill: which criterion is indispensable?",
-      back: "Temporality - the exposure must precede the outcome. The other eight (strength, consistency, specificity, biological gradient, plausibility, coherence, experiment, analogy) support but never replace it.",
-    },
-  ],
   references: [
     "Park's Textbook of Preventive and Social Medicine, 27th edition, 2023 - screening, epidemiological methods and health information",
     "Mahajan's Methods in Biostatistics for Medical Students and Research Workers, 9th edition, 2018",
@@ -2958,48 +2710,6 @@ topics.push({
       answer: 3,
       explanation:
         "Incidence density uses person-time as denominator: 25 cases / 2500 person-years = 0.01 per person-year = 10 per 1000 person-years. The option reading 1 per 1000 person-years is a decimal-place slip, and 2.5 per 1000 comes from dividing 25 by 10 instead of by 2.5. The option 25 per 1000 persons is the cumulative incidence using persons as denominator, which ignores that not everyone was followed for the same period and is not a rate at all. Person-time methods are used precisely because they accommodate variable entry and exit in a dynamic cohort.",
-    },
-  ],
-  cards: [
-    {
-      id: "preventive-study-designs-c1",
-      front: "Relation between incidence, prevalence and duration.",
-      back: "Prevalence = incidence x mean duration (steady state). Treatments that prolong life without cure raise prevalence; rapid cure or rapid death lower it.",
-    },
-    {
-      id: "preventive-study-designs-c2",
-      front: "Secondary attack rate - formula and exclusions.",
-      back: "Secondary cases within one incubation period / exposed susceptible contacts x 100. Exclude the primary case and immune persons from the denominator.",
-    },
-    {
-      id: "preventive-study-designs-c3",
-      front: "Odds ratio: formula and when it approximates RR.",
-      back: "OR = ad/bc. Approximates relative risk when the disease is rare (under about 10%) and cases and controls are representative of their populations.",
-    },
-    {
-      id: "preventive-study-designs-c4",
-      front: "Berkson's bias versus Neyman's bias.",
-      back: "Berkson - selection bias from hospital controls with differential admission rates. Neyman - prevalence-incidence bias from using surviving prevalent cases rather than incident cases.",
-    },
-    {
-      id: "preventive-study-designs-c5",
-      front: "Three conditions for a confounder.",
-      back: "Associated with the exposure; an independent risk factor for the outcome; not on the causal pathway between them. Controlled by randomisation, restriction, matching, stratification or regression.",
-    },
-    {
-      id: "preventive-study-designs-c6",
-      front: "Allocation concealment versus blinding.",
-      back: "Concealment - recruiter cannot foresee the next allocation (central randomisation, opaque sealed envelopes); prevents selection bias at entry. Blinding - participant/observer/analyst unaware after entry; prevents performance and detection bias.",
-    },
-    {
-      id: "preventive-study-designs-c7",
-      front: "Phases of a clinical trial with numbers.",
-      back: "Phase I: 20-80 healthy volunteers, safety and dose. Phase II: 100-300 patients, efficacy. Phase III: 1000-3000, RCT against standard, pre-licensure. Phase IV: post-marketing surveillance.",
-    },
-    {
-      id: "preventive-study-designs-c8",
-      front: "Field trial versus community trial - one example each.",
-      back: "Field trial: healthy individuals as the unit - Salk polio vaccine trial, 1954. Community trial: whole communities as the unit - Newburgh-Kingston water fluoridation study, 1945-55.",
     },
   ],
   references: [
@@ -3508,48 +3218,6 @@ topics.push({
       answer: 1,
       explanation:
         "Verification of the diagnosis comes first: a cluster of reported cholera may be rotavirus, food poisoning or a rumour, and the entire response depends on knowing what the disease actually is. Confirmation of the existence of the epidemic - showing the cases are in excess of expectation - is the second step. Defining the population at risk, searching for cases, descriptive analysis, hypothesis, testing, environmental evaluation and the report follow. Control measures are not a numbered step because they run in parallel from day one, but they still need at least a working diagnosis to be rational.",
-    },
-  ],
-  cards: [
-    {
-      id: "preventive-outbreak-investigation-c1",
-      front: "Define epidemic, endemic and pandemic.",
-      back: "Epidemic - occurrence clearly in excess of expected for the place and time. Endemic - constant presence in an area. Pandemic - epidemic crossing international boundaries affecting large numbers.",
-    },
-    {
-      id: "preventive-outbreak-investigation-c2",
-      front: "Ten steps of epidemic investigation, in order.",
-      back: "Verify diagnosis; confirm epidemic exists; define population at risk; search for cases (case definition, line list); analyse by time, place, person; hypothesis; test hypothesis; evaluate ecological factors; further investigation of the population; report.",
-    },
-    {
-      id: "preventive-outbreak-investigation-c3",
-      front: "Point source versus propagated epidemic curve.",
-      back: "Point source - explosive rise, all cases within one incubation period range, rapid fall. Propagated - slow rise with successive peaks one incubation period apart.",
-    },
-    {
-      id: "preventive-outbreak-investigation-c4",
-      front: "How to read a food-specific attack rate table.",
-      back: "The vehicle has the highest attack rate among eaters, the lowest among non-eaters and the largest difference (or ratio) between them; a food eaten by nobody who fell ill is excluded.",
-    },
-    {
-      id: "preventive-outbreak-investigation-c5",
-      front: "IDSP forms and who fills them.",
-      back: "S (syndromic) - health worker/ASHA; P (presumptive) - medical officer; L (laboratory) - lab. Weekly, Monday to Sunday, nil reports compulsory, on IHIP since April 2021.",
-    },
-    {
-      id: "preventive-outbreak-investigation-c6",
-      front: "Always-notifiable diseases under IHR 2005.",
-      back: "Smallpox, wild poliovirus, SARS, human influenza of a new subtype - notify WHO within 24 hours. Cholera, plague, yellow fever, VHF, West Nile are assessed by the decision instrument.",
-    },
-    {
-      id: "preventive-outbreak-investigation-c7",
-      front: "Measles outbreak definition and response.",
-      back: "Five or more suspected cases in a block within four weeks (confirmed if two or more IgM positive). Vaccinate 6 months to 5 years within 72 hours, vitamin A to cases, coverage survey.",
-    },
-    {
-      id: "preventive-outbreak-investigation-c8",
-      front: "Cholera outbreak: chemoprophylaxis and water target.",
-      back: "Doxycycline 300 mg single dose for adult household contacts (azithromycin for children and pregnancy); residual chlorine 0.5 mg/L after 30 minutes' contact; search for cases 10 days after the last one.",
     },
   ],
   references: [
@@ -4116,48 +3784,6 @@ topics.push({
         "This is epidemic dropsy, caused by sanguinarine in the seed oil of Argemone mexicana used to adulterate mustard oil; it produces capillary dilatation and leak with oedema, diarrhoea, glaucoma and high-output cardiac failure, and clusters in households sharing the oil. Beta-oxalyl-amino-alanine in khesari dal causes lathyrism (spastic paraplegia), aflatoxin from mouldy groundnuts causes hepatitis and hepatocellular carcinoma, pyrrolizidine alkaloids from Crotalaria cause endemic ascites through hepatic veno-occlusive disease, and ergot on bajra causes ergotism with gangrene and convulsions. The oil is tested with the nitric acid test, withdrawn and the outbreak notified to the food safety officer.",
     },
   ],
-  cards: [
-    {
-      id: "preventive-nutrition-programmes-c1",
-      front: "Criteria for severe acute malnutrition, 6-59 months.",
-      back: "Any one of: weight-for-height below -3 SD; MUAC below 11.5 cm; bilateral pitting oedema. MAM: -3 to -2 SD or MUAC 11.5-12.4 cm without oedema.",
-    },
-    {
-      id: "preventive-nutrition-programmes-c2",
-      front: "NFHS-5 (2019-21) child undernutrition figures.",
-      back: "Stunting 35.5%, wasting 19.3%, severe wasting 7.7%, underweight 32.1%; anaemia 67.1% in 6-59 months, 57% in women 15-49, 52.2% in pregnancy.",
-    },
-    {
-      id: "preventive-nutrition-programmes-c3",
-      front: "Six services of ICDS and the supplementary nutrition norms.",
-      back: "Supplementary nutrition, immunisation, health check-up, referral, pre-school education, nutrition and health education. 500 kcal/12-15 g protein for 6-72 months; 800 kcal/20-25 g for severely malnourished; 600 kcal/18-20 g for pregnant and lactating women.",
-    },
-    {
-      id: "preventive-nutrition-programmes-c4",
-      front: "PM POSHAN energy and protein norms.",
-      back: "Primary (Bal Vatika to class V): 450 kcal, 12 g protein. Upper primary (VI-VIII): 700 kcal, 20 g protein. Replaced the Mid-Day Meal Scheme in September 2021.",
-    },
-    {
-      id: "preventive-nutrition-programmes-c5",
-      front: "Ten steps of SAM management - the two feeding formulas.",
-      back: "Stabilisation: F-75 (75 kcal/100 mL) at 100 kcal/kg/day; rehabilitation: F-100 (100 kcal/100 mL) at 150-220 kcal/kg/day. Iron only after weight gain begins; ReSoMal not standard ORS for dehydration.",
-    },
-    {
-      id: "preventive-nutrition-programmes-c6",
-      front: "ICMR-NIN 2020: reference adult and energy for sedentary work.",
-      back: "Reference man 65 kg, woman 55 kg. Sedentary man 2110 kcal, woman 1660 kcal. Pregnancy +350 kcal (2nd and 3rd trimester); lactation +600 kcal (0-6 months), +520 (6-12 months). Protein 0.83 g/kg.",
-    },
-    {
-      id: "preventive-nutrition-programmes-c7",
-      front: "Vitamin A: prophylactic schedule and treatment dose.",
-      back: "1 lakh IU at 9 months, then 2 lakh IU six-monthly from 16 months to 5 years (nine doses). Treatment: 2 lakh IU day 1, day 2 and 2-4 weeks later; half at 6-12 months; quarter under 6 months.",
-    },
-    {
-      id: "preventive-nutrition-programmes-c8",
-      front: "Iodised salt standards and the definition of an endemic district.",
-      back: "30 ppm iodine at production, 15 ppm at the consumer level. Endemic: goitre in more than 5% of children aged 6-12 years or median urinary iodine below 100 mcg/L.",
-    },
-  ],
   references: [
     "Park's Textbook of Preventive and Social Medicine, 27th edition, 2023 - nutrition and health",
     "ICMR-NIN Nutrient Requirements for Indians: Recommended Dietary Allowances and Estimated Average Requirements, 2020; ICMR-NIN Dietary Guidelines for Indians, 2024",
@@ -4677,48 +4303,6 @@ topics.push({
       answer: 2,
       explanation:
         "Temephos (Abate), an organophosphate of very low mammalian toxicity, is the only larvicide approved for potable water at 1 mg/L (1 ppm), and it is the standard anti-larval measure for Aedes in overhead tanks, drums and coolers under NCVBDC. Paris green (copper aceto-arsenite) and mineral oil are for non-potable collections and are toxic or spoil the water. Malathion 5% is used as an adult fog or a residual spray at 2 g/m2, and DDT at 1 g/m2 is an indoor residual spray against resting adult Anopheles - neither is a larvicide for drinking water. Biological alternatives for containers are Bacillus thuringiensis israelensis and larvivorous fish in large tanks.",
-    },
-  ],
-  cards: [
-    {
-      id: "preventive-water-sanitation-vector-c1",
-      front: "Residual chlorine standards.",
-      back: "Free residual 0.5 mg/L after one hour of contact (1 mg/L when viral disease is feared); at least 0.2 mg/L at the consumer's tap (IS 10500:2012). Measured by orthotolidine; OTA separates free from combined.",
-    },
-    {
-      id: "preventive-water-sanitation-vector-c2",
-      front: "Horrock's apparatus: components and the dose rule.",
-      back: "Six white cups, one black cup, two pipettes, starch-iodide indicator, 2 g measure. First cup showing blue at 30 minutes gives the cup number; each cup = 2.5 g bleaching powder per 455 litres.",
-    },
-    {
-      id: "preventive-water-sanitation-vector-c3",
-      front: "Slow sand filter numbers.",
-      back: "Sand 0.2-0.3 mm effective size, bed about 1 m, supernatant 1-1.5 m, rate 0.1-0.4 m3/m2/h, vital layer forms in 2-3 weeks, removes 99.9-99.99% bacteria, cleaned by scraping 1-2 cm.",
-    },
-    {
-      id: "preventive-water-sanitation-vector-c4",
-      front: "Key chemical limits in drinking water (IS 10500:2012).",
-      back: "Fluoride 1.0 (permissible 1.5) mg/L; nitrate 45 mg/L no relaxation; arsenic 0.01 mg/L; TDS 500 (2000); hardness 200 (600); pH 6.5-8.5; E. coli 0 per 100 mL.",
-    },
-    {
-      id: "preventive-water-sanitation-vector-c5",
-      front: "Sanitary latrine - the four criteria.",
-      back: "Excreta must not contaminate surface or ground water; must not be accessible to flies or animals; must not be handled fresh; must cause no nuisance from odour or unsightliness. Twin-pit pour-flush: 20 mm water seal, pits used alternately for about 3 years each.",
-    },
-    {
-      id: "preventive-water-sanitation-vector-c6",
-      front: "Biomedical waste colours in one line.",
-      back: "Yellow - anatomical, soiled, expired drugs, chemical (incinerate). Red - contaminated plastics (autoclave, recycle). White - sharps (autoclave, shred). Blue - glass and implants (disinfect, recycle). Store no longer than 48 hours.",
-    },
-    {
-      id: "preventive-water-sanitation-vector-c7",
-      front: "Indoor residual spray doses and rounds.",
-      back: "DDT 50% WP 1 g/m2, two rounds; malathion 25% WP 2 g/m2, three rounds; alphacypermethrin 5% WP 25 mg/m2, two rounds. Each round protects 10-12 weeks; needs over 80% room coverage.",
-    },
-    {
-      id: "preventive-water-sanitation-vector-c8",
-      front: "Elimination targets: malaria, kala-azar, filaria.",
-      back: "Malaria: API below 1 per 1000, zero indigenous cases by 2027, certification by 2030. Kala-azar: below 1 per 10,000 at block level (reached 2023). Filaria: microfilaria rate below 1% after MDA, elimination by 2027.",
     },
   ],
   references: [
@@ -5784,68 +5368,6 @@ topics.push({
         "Crude mortality rate in an emergency is expressed per 10,000 population per day. Here the person-time denominator is 8,000 people x 3 days = 24,000 person-days, so the rate is 12/24,000 = 0.0005 per person per day = 5 per 10,000 per day. The accepted humanitarian benchmarks are that a crude mortality rate above 1 per 10,000 per day (or an under-5 mortality rate above 2 per 10,000 per day), or a doubling of the pre-disaster baseline, defines an emergency that is out of control and demands immediate investigation and escalation. A rate of 5 per 10,000 per day is five times the threshold. Option A divides by days incorrectly, option B forgets to convert to 10,000, and option E omits the three-day denominator. Option D is wrong because although the baseline comparison is a useful second criterion, the absolute threshold of 1 per 10,000 per day stands on its own and must not be used as a reason to delay action. Crude mortality rate is the single most sensitive indicator of whether a relief operation is working.",
     },
   ],
-  cards: [
-    {
-      id: "preventive-disaster-management-c1",
-      front: "Define disaster (DM Act 2005) and give the risk equation.",
-      back: "A catastrophe, mishap, calamity or grave occurrence from natural or man-made causes causing substantial loss of life, human suffering, damage to property or degradation of environment, of such magnitude as to be BEYOND THE COPING CAPACITY of the affected community (section 2(d)). Risk = Hazard x Vulnerability / Capacity - you cannot change the hazard, so every measure works on vulnerability or capacity.",
-    },
-    {
-      id: "preventive-disaster-management-c2",
-      front: "The four stages of the disaster cycle, with one activity each.",
-      back: "Mitigation (pre-event: building codes, retrofitting, embankments, zoning, insurance); Preparedness (pre-event: rehearsed plans, early warning, shelters, stockpiles, mock drills); Response (impact to 4-6 weeks: rescue, triage, emergency care, camps, surveillance); Recovery = rehabilitation + reconstruction (weeks to years: services, livelihoods, rebuild to a higher standard - 'build back better'). Phases by time: pre-impact, impact, post-impact. They overlap; they are not sequential.",
-    },
-    {
-      id: "preventive-disaster-management-c3",
-      front: "Levels of disaster in India - L0 to L3 and who leads.",
-      back: "L0 = normal time, used for preparedness and mitigation. L1 = district manages with own resources - DDMA under the District Magistrate. L2 = state resources needed - SDMA under the Chief Minister / SEC under the Chief Secretary, SDRF deployed. L3 = district and state overwhelmed, national assistance needed - NDMA and NEC, NDRF and armed forces. Note: the DM Act has no provision for declaring a 'national disaster'; some documents add an L4 for GoI-handled catastrophes.",
-    },
-    {
-      id: "preventive-disaster-management-c4",
-      front: "Disaster Management Act 2005 - who chairs NDMA, NEC, SDMA, SEC and DDMA?",
-      back: "NDMA (s.3) - Prime Minister, up to 9 other members with one Vice-Chairperson. NEC (s.8) - Union Home Secretary. SDMA (s.14) - Chief Minister. SEC (s.20) - Chief Secretary. DDMA (s.25) - District Magistrate/Collector/Deputy Commissioner, CO-CHAIRED by the elected head of the district local authority, with the SP and the Chief Medical Officer as ex officio members. NIDM s.42; NDRF s.44-45; funds s.46-48. MHA is the overall nodal ministry; MoHFW for epidemics and biological events.",
-    },
-    {
-      id: "preventive-disaster-management-c5",
-      front: "NDRF the Force, NDRF the Fund, and the NDRR - separate them.",
-      back: "National Disaster Response FORCE (s.44-45): specialist force from BSF/CRPF/CISF/ITBP/SSB/Assam Rifles, raised 2006 with 8 battalions, since expanded (16, with more sanctioned - quote current figures with care), 18 search-and-rescue teams per battalion, CBRN-capable. National Disaster Response FUND (s.46) with the National Disaster Mitigation Fund (s.47) and state/district funds (s.48); restructured by the 15th Finance Commission into NDRMF/SDRMF; SDRF shared 75:25 (90:10 for NE and Himalayan states). NDRR: a revolving corpus of about Rs 250 crore held with NDRF for pre-positioned relief stores for about one lakh people.",
-    },
-    {
-      id: "preventive-disaster-management-c6",
-      front: "Triage categories, colours and the guiding principle.",
-      back: "Priority I / Immediate / RED - salvageable life-threatening injury (airway obstruction, tension pneumothorax, exsanguinating haemorrhage, shock). Priority II / Delayed / YELLOW - can wait 2-4 hours (long-bone fracture, stable abdominal injury). Priority III / Minimal / GREEN - walking wounded. Priority IV / Expectant or dead / BLACK. Principle: the greatest good for the greatest number, which REVERSES ordinary clinical priority. Triage is dynamic and repeated at every echelon; over-triage above about 50% degrades outcome.",
-    },
-    {
-      id: "preventive-disaster-management-c7",
-      front: "START triage in one line.",
-      back: "'30-2-Can do', under 60 seconds per casualty. 1) All who can walk to the marked area = GREEN. 2) Respiration: none after opening the airway = BLACK; rate over 30/min = RED. 3) Perfusion: capillary refill over 2 seconds or absent radial pulse = RED (control haemorrhage first). 4) Mental status: cannot obey simple commands = RED; obeys = YELLOW. Only two interventions permitted - open the airway, stop the bleeding. JumpSTART is the paediatric version (5 rescue breaths before black if apnoeic with a pulse; rate cut-offs 15-45/min; AVPU). SALT is the alternative modern scheme.",
-    },
-    {
-      id: "preventive-disaster-management-c8",
-      front: "Dead bodies after a disaster - the myth and the correction.",
-      back: "Dead bodies from natural disasters DO NOT cause epidemics: victims died of trauma, drowning or burns, not epidemic disease. Mass burial, mass cremation and lime are unjustified and cause legal and psychological harm. Identify every body (photograph, personal effects, unique number, DNA where feasible), bury or cremate individually with records - families need a death certificate for inheritance, insurance and remarriage. The only real risk is to handlers (hepatitis B and C, HIV, TB, gut organisms) - gloves, boots, body bags, hand hygiene, hepatitis B vaccine. It is the crowded survivors, not the dead, who generate outbreaks.",
-    },
-    {
-      id: "preventive-disaster-management-c9",
-      front: "Sphere minimum standards - the numbers to quote.",
-      back: "Water 15 L per person per day; water point within 500 m; queuing under 30 min; 250 persons per tap. Latrines: max 20 persons per latrine, over 30 m from and downhill of water sources, sex-segregated, 3:1 female:male in public latrines. Shelter: 3.5 square metres covered space per person (about 45 square metres total site area). Food: 2,100 kcal per person per day. Health: 1 basic health unit per 10,000, 1 health centre per 50,000, 1 district hospital per 250,000, about 22 health workers per 10,000. Alarm: crude mortality rate over 1 per 10,000 per day (under-5 over 2 per 10,000 per day) or a doubling of baseline. Free residual chlorine 0.5 mg/L at delivery.",
-    },
-    {
-      id: "preventive-disaster-management-c10",
-      front: "Sendai Framework 2015-2030 - priorities and targets.",
-      back: "Adopted 18 March 2015 at Sendai, Japan; successor to the Hyogo Framework for Action 2005-2015 (which followed the Yokohama Strategy 1994 and IDNDR 1990-99). FOUR PRIORITIES: (1) understanding disaster risk; (2) strengthening disaster risk governance; (3) investing in DRR for resilience; (4) enhancing preparedness for response and to 'build back better' in recovery. SEVEN TARGETS (A-G): reduce mortality; reduce affected people; reduce economic loss relative to GDP; reduce damage to critical infrastructure including health and educational facilities; increase countries with national and local DRR strategies; enhance international cooperation; increase multi-hazard early warning access. India: PM's Ten Point Agenda (2016) and CDRI (2019); NDMP 2016, revised 2019, is aligned to it.",
-    },
-    {
-      id: "preventive-disaster-management-c11",
-      front: "National School Safety Programme - what it was and what it did.",
-      back: "NDMA centrally sponsored demonstration scheme, approved 2011, implemented from 2011-12; about 8,600 schools in 43 districts across 22 multi-hazard-prone states/UTs (about 200 schools per district), largely seismic zones IV and V. Objectives: culture of preparedness in schools; sensitise and train students, teachers and administrators; School Disaster Management Plans; demonstrate structural and non-structural safety. STRUCTURAL: vulnerability assessment of buildings, demonstrative retrofitting of one school per district, training of engineers, architects and masons, compliance of new buildings with the National Building Code. NON-STRUCTURAL: anchoring almirahs, fans, water tanks, lab chemicals and glass; clear exits and marked evacuation routes; school disaster management committees and student task forces; SDMP for every school; mock drills at least twice a year; first aid and fire equipment; awareness reaching the community through children.",
-    },
-    {
-      id: "preventive-disaster-management-c12",
-      front: "Immunisation and chemoprophylaxis in a relief camp - what to do and what not to do.",
-      back: "DO: measles-containing vaccine with vitamin A for children 6 months to 15 years, regardless of previous status, repeated after 9 months for those vaccinated at 6-8 months - the immunisation priority in a crowded displaced population. Td by wound protocol for the injured. Doxycycline for leptospirosis in heavily exposed groups after floods, and doxycycline for household contacts of a confirmed cholera case. DO NOT: mass typhoid vaccination, blanket antibiotic prophylaxis, or mass tetanus toxoid campaigns. Classical teaching is that mass cholera vaccination is not the first answer (safe water and sanitation are), but WHO now recommends oral cholera vaccine from the global stockpile as an ADJUNCT in defined high-risk humanitarian settings - state both.",
-    },
-  ],
   references: [
     "Park K. Park's Textbook of Preventive and Social Medicine, 27th edition, 2023 - chapter on disaster management, the disaster cycle, triage and relief camp health",
     "The Disaster Management Act, 2005 (Act 53 of 2005), Government of India - sections 2(d), 3, 8, 14, 20, 25, 42, 44-48",
@@ -6782,68 +6304,6 @@ topics.push({
       difficulty: "moderate",
       explanation:
         "The Planning Commission, created by a Cabinet resolution in March 1950 with the Prime Minister as chairman, was replaced by NITI Aayog (National Institution for Transforming India) on 1 January 2015; the Twelfth Five-Year Plan (2012-17) was the last, and central planning now runs through NITI Aayog's vision, strategy and action-agenda documents, Finance Commission recommendations and the annual budget. NITI Aayog replaced the Planning Commission, not the National Development Council, and the National Health Policy is issued by the Ministry of Health and Family Welfare (the current one is the National Health Policy 2017, which targets government health expenditure of 2.5 per cent of GDP by 2025). Health planning continues centrally through the National Health Mission, whose funds flow to states against a Programme Implementation Plan built up from District Health Action Plans, so it is not a state-only activity.",
-    },
-  ],
-  cards: [
-    {
-      id: "preventive-health-planning-management-c1",
-      front: "WHO definition of health planning.",
-      back: "The orderly process of defining community health problems, identifying unmet needs and surveying the resources to meet them, establishing priority goals that are realistic and feasible, and projecting administrative action to accomplish the purpose of the proposed programme.",
-    },
-    {
-      id: "preventive-health-planning-management-c2",
-      front: "POSDCORB - expand it and name the authors.",
-      back: "Planning, Organising, Staffing, Directing, COordinating, Reporting, Budgeting. Luther Gulick and Lyndall Urwick, 1937. Fayol (1916) gave the parent five - planning, organising, commanding, coordinating, controlling - plus 14 principles.",
-    },
-    {
-      id: "preventive-health-planning-management-c3",
-      front: "The eight steps of the planning cycle, in order.",
-      back: "1 Analysis of the health situation, 2 establishment of objectives and goals, 3 assessment of resources, 4 fixing priorities, 5 write-up of the formulated plan, 6 programming and implementation, 7 monitoring, 8 evaluation - which feeds back into step 1. Draw it as a circle.",
-    },
-    {
-      id: "preventive-health-planning-management-c4",
-      front: "How are priorities set in health planning?",
-      back: "Magnitude, seriousness, feasibility or vulnerability to intervention, community concern or felt need, and cost with political and legal acceptability. Formalised as Hanlon's BPRS = [(A + 2B) x C] / 3 (A size, B seriousness, C effectiveness, each 0-10) with the PEARL filter - Propriety, Economics, Acceptability, Resources, Legality.",
-    },
-    {
-      id: "preventive-health-planning-management-c5",
-      front: "PERT expected time, standard deviation and variance.",
-      back: "te = (to + 4tm + tp) / 6; standard deviation = (tp - to) / 6; variance = [(tp - to) / 6] squared. Sum variances along the critical path, take the square root for the project SD, then Z = (scheduled time - expected time) / project SD.",
-    },
-    {
-      id: "preventive-health-planning-management-c6",
-      front: "Critical path and total float - define both.",
-      back: "Critical path = the longest path through the network, and therefore the shortest possible project duration; its activities have zero float. Total float = latest start - earliest start = latest finish - earliest finish, the delay possible without pushing back the project end. Move resources from floating to critical activities.",
-    },
-    {
-      id: "preventive-health-planning-management-c7",
-      front: "PERT versus CPM in three contrasts.",
-      back: "PERT - probabilistic (three time estimates), event-oriented, time only, for novel projects; US Navy Polaris 1958. CPM - deterministic (one estimate), activity-oriented, time and cost with crashing (cost slope = (crash cost - normal cost) / (normal time - crash time)), for repetitive projects; DuPont 1957.",
-    },
-    {
-      id: "preventive-health-planning-management-c8",
-      front: "Management techniques based on quantitative methods - the enumeration.",
-      back: "Cost-benefit, cost-effectiveness, cost-utility and cost accounting; input-output analysis; model building and simulation; system analysis; network analysis (PERT/CPM); PPBS; work study and work sampling; organisation and methods; decision making and decision trees; management by objectives; operational research; health management information system.",
-    },
-    {
-      id: "preventive-health-planning-management-c9",
-      front: "Cost-benefit versus cost-effectiveness versus cost-utility.",
-      back: "CBA - costs and consequences both in money; is it worth doing at all (benefit-cost ratio). CEA - cost in money, effect in natural units (deaths averted); which way of reaching the same objective is cheapest. CUA - effect as QALYs gained or DALYs averted; allows unlike programmes to be compared.",
-    },
-    {
-      id: "preventive-health-planning-management-c10",
-      front: "SWOT - the internal-external rule and the TOWS pairings.",
-      back: "Strengths and weaknesses are internal and present; opportunities and threats are external and future. TOWS (Weihrich 1982): SO maxi-maxi (strengths to seize opportunities), WO mini-maxi (opportunities to fix weaknesses), ST maxi-mini (strengths to blunt threats), WT mini-mini (minimise both).",
-    },
-    {
-      id: "preventive-health-planning-management-c11",
-      front: "Monitoring versus evaluation.",
-      back: "Monitoring - continuous, internal, day-to-day, watches inputs and process against the schedule, corrects while the programme runs. Evaluation - periodic, systematic, internal or external, judges outcome and impact against the original objectives on relevance, adequacy, progress, efficiency, effectiveness and impact, and decides what next.",
-    },
-    {
-      id: "preventive-health-planning-management-c12",
-      front: "Committee one-liners: Bhore, Mudaliar, Chadha, Kartar Singh, Shrivastav, Bajaj.",
-      back: "Bhore 1946 - PHC, integration of preventive and curative, three-million plan, the social physician. Mudaliar 1962 - consolidate existing PHCs, strengthen district hospitals. Chadha 1963 - basic health worker per 10,000 for malaria vigilance. Kartar Singh 1973 - multipurpose worker per 5,000, supervisor per 4 workers. Shrivastav 1975 - community health workers, referral services complex. Bajaj 1986 - health manpower planning, Educational Commission for Health Sciences.",
     },
   ],
   references: [
@@ -8103,68 +7563,6 @@ topics.push({
         "Social mobilisation is the process of bringing together all feasible and practical intersectoral partners and allies to raise awareness of and demand for a development objective, to assist in delivery, and to strengthen community participation for sustainability - which is exactly what the polio Social Mobilization Network did in the high-risk blocks of Uttar Pradesh and Bihar. Behaviour change communication is planned, segmented communication directed at a defined audience through chosen channels. Social marketing engineers a product, price, place and promotion for a consumer. Advocacy is directed upward at policy makers and resource holders to secure commitment, policy and funds - important in polio but not what is described here. Health education is the teaching component. In practice the polio programme used all five, but the described activity - building an intersectoral alliance of community allies - is the definition of social mobilisation.",
     },
   ],
-  cards: [
-    {
-      id: "preventive-iec-social-marketing-c1",
-      front: "The elements of the communication process, and the models to name.",
-      back: "Sender (communicator) - message - channel - receiver (audience) - feedback, with noise acting throughout. Lasswell (1948): who says what, in which channel, to whom, with what effect. Berlo's SMCR: Source, Message, Channel, Receiver. Feedback is what makes it communication rather than announcement.",
-    },
-    {
-      id: "preventive-iec-social-marketing-c2",
-      front: "The seven Cs of a good health message.",
-      back: "Credibility (trusted source, believable content), Content (relevant to felt needs and within their capacity to act), Context (fits the social and cultural setting), Clarity (simple words, one idea, unambiguous action), Continuity and consistency (repeated, not contradicted), Channels (the ones the audience uses and trusts), Capability of the audience (literacy, language, means).",
-    },
-    {
-      id: "preventive-iec-social-marketing-c3",
-      front: "Barriers to communication, with one remedy for each.",
-      back: "Physiological (deafness, poor vision, pain, fatigue) - speak clearly, large print, choose the right moment. Psychological (anxiety, prejudice, low comprehension, mistrust) - empathy, rapport, small steps. Environmental (noise, crowding, distance, poor venue) - quiet, well-lit, acceptable place. Cultural (illiteracy, custom, belief, caste, gender, social distance) - the most important in India; work through local opinion leaders. Linguistic (unfamiliar language, dialect, jargon) - local dialect, plain words, pictures.",
-    },
-    {
-      id: "preventive-iec-social-marketing-c4",
-      front: "IEC: define it, and distinguish information from education from communication.",
-      back: "IEC is planned, multi-channel use of information, education and communication to raise knowledge, change attitudes and social norms, create demand for services and achieve sustained behaviour change. Information = one-way transfer of facts. Education = participatory process building understanding and skill. Communication = two-way with feedback, in which the message is negotiated against the person's beliefs and constraints.",
-    },
-    {
-      id: "preventive-iec-social-marketing-c5",
-      front: "IEC to BCC to SBCC - what changes at each step?",
-      back: "IEC informs and educates a broad audience. BCC adds formative research into why people behave as they do, a specific target behaviour, a segmented audience and explicit attention to barriers. SBCC adds the social norms, gender relations, service quality and policy that hold the behaviour in place, so the strategy works at individual, community, service and policy levels. UNICEF's parallel term is Communication for Development (C4D).",
-    },
-    {
-      id: "preventive-iec-social-marketing-c6",
-      front: "Steps in planning a communication activity, in order.",
-      back: "1 Situation analysis and needs assessment (KAP survey, FGD). 2 Define the problem and the specific behaviour. 3 Set SMART communication objectives. 4 Segment and define the audience (primary, secondary, tertiary). 5 Design the message and choose the appeal. 6 Select the channel mix and media plan. 7 Fix budget and timeline. 8 Pre-test the material. 9 Produce and distribute. 10 Train the communicators. 11 Implement and monitor process. 12 Evaluate outcome and impact, and feed back into step 1.",
-    },
-    {
-      id: "preventive-iec-social-marketing-c7",
-      front: "Pre-testing: on whom, and for what five attributes?",
-      back: "On a sample of the intended audience, never only on colleagues. Test for attraction (does it catch attention), comprehension (is the message understood as intended), acceptability (is anything offensive or culturally wrong), involvement or self-identification (do they see themselves in it), and persuasion (do they intend to act). Revise and re-test if the changes are major. Methods: interviews, focus groups, gatekeeper review, readability check.",
-    },
-    {
-      id: "preventive-iec-social-marketing-c8",
-      front: "Define social marketing, with the origin.",
-      back: "The systematic application of commercial marketing concepts and techniques - consumer research, segmentation, the marketing mix and continuous monitoring - to achieve a voluntary behaviour change in a target audience for their own welfare and that of society. Coined by Kotler and Zaltman, Journal of Marketing, 1971, following Wiebe's 1951 question of why brotherhood cannot be sold like soap.",
-    },
-    {
-      id: "preventive-iec-social-marketing-c9",
-      front: "The four Ps in a health context, one line each.",
-      back: "Product - the good, service, practice or idea, branded and packaged with an obvious benefit. Price - the subsidised money cost plus the non-monetary price of time, travel, pain, embarrassment, lost wages and lost pleasure. Place - where and how it can be obtained or done, and how convenient that is. Promotion - advertising, branding, mass and folk media, celebrity endorsement and interpersonal persuasion. Place and price usually decide success; promotion alone rarely does.",
-    },
-    {
-      id: "preventive-iec-social-marketing-c10",
-      front: "The added Ps of social marketing, and Andreasen's benchmark criteria.",
-      back: "Added Ps: People (staff, retailers, frontline workers - selection, training, incentive), Partnership (other departments, NGOs, industry, media), Policy (law and regulation that sustain the change), Purse strings (funding source, size and duration). Andreasen's six benchmarks: behaviour-change objective, formative audience research, segmentation and targeting, an attractive exchange, use of all four Ps, and explicit attention to the competition.",
-    },
-    {
-      id: "preventive-iec-social-marketing-c11",
-      front: "Define social mobilisation (UNICEF), verbatim.",
-      back: "The process of bringing together all feasible and practical intersectoral partners and allies to raise people's awareness of and demand for a particular development programme, to assist in the delivery of resources and services, and to strengthen community participation for sustainability and self-reliance. Distinguish: advocacy targets policy makers; social marketing targets the consumer; community mobilisation is the same process within one community.",
-    },
-    {
-      id: "preventive-iec-social-marketing-c12",
-      front: "Five Indian social marketing successes and what each proved.",
-      back: "Nirodh (1968) - place and price beat exhortation for a stigmatised product. ORS sachets - a clinical treatment turned into a cheap household product with a benefit visible in hours. Pulse Polio (1995) - branding plus doorstep delivery reduces the non-monetary price to zero; polio-free certification 2014. Universal salt iodisation - a change requiring no behaviour change at all, locked in by law and by the trade. JSY with JSSK (2005, 2011) - attack the cash and transport price; institutional delivery rose from about 39 per cent (NFHS-3) to about 89 per cent (NFHS-5).",
-    },
-  ],
   references: [
     "Park's Textbook of Preventive and Social Medicine, 27th edition, 2023 - chapter on Health Education and Communication: the communication process, one-way and two-way communication, barriers, the seven C's, health education approaches, and IEC in national programmes",
     "Kotler P, Zaltman G. Social Marketing: An Approach to Planned Social Change. Journal of Marketing 1971;35(3):3-12 - the founding definition; see also Wiebe GD, Public Opinion Quarterly 1951, and Andreasen AR's benchmark criteria for social marketing",
@@ -9139,68 +8537,6 @@ topics.push({
         "Group 2A means probably carcinogenic to humans, based on limited evidence in humans plus sufficient evidence in experimental animals (or strong mechanistic evidence); examples include inorganic lead compounds, night shift work involving circadian disruption, red meat, glyphosate, emissions from high-temperature frying and very hot beverages above 65 degrees C. Option A describes Group 1 (asbestos, benzene, vinyl chloride, benzidine, arsenic, hexavalent chromium, crystalline silica, wood dust, aflatoxins, ionising radiation, tobacco, alcohol, processed meat). Option C describes Group 2B (petrol, carbon black, inhaled titanium dioxide, radiofrequency fields from mobile telephones, aspartame). Option D describes Group 3 (coffee, caffeine, tea, saccharin, inorganic mercury). Option E describes the former Group 4, which contained only caprolactam and was abolished in the 2019 revision of the IARC Preamble, caprolactam being moved to Group 3. The essential caveat is that IARC classifies hazard - the strength of evidence that an agent can cause cancer - and not risk at any given level of exposure, which is why processed meat and asbestos share Group 1 without being equally dangerous.",
     },
   ],
-  cards: [
-    {
-      id: "preventive-occupational-health-c1",
-      front: "The ILO/WHO definition of occupational health and its three objectives.",
-      back: "Joint ILO/WHO Committee 1950, revised 1995: promotion and maintenance of the highest degree of physical, mental and social well-being of workers in all occupations; prevention of departures from health caused by working conditions; protection from risks adverse to health; placing and maintenance of the worker in an environment adapted to his physiological and psychological capabilities - in a word, the adaptation of work to man and of each man to his job. Three objectives (1995): maintenance and promotion of workers' health and working capacity; improvement of the working environment; development of a work organisation and culture that supports health and safety.",
-    },
-    {
-      id: "preventive-occupational-health-c2",
-      front: "IARC classification of carcinogens - the groups, with examples, and the one caveat.",
-      back: "Group 1 carcinogenic to humans (sufficient human evidence): asbestos, benzene, vinyl chloride, benzidine, arsenic, hexavalent chromium, nickel compounds, cadmium, crystalline silica, wood dust, aflatoxins, formaldehyde, ionising radiation, tobacco, alcohol, processed meat, HPV 16, hepatitis B and C, H. pylori. Group 2A probably carcinogenic (limited human plus sufficient animal): inorganic lead, night shift work, red meat, glyphosate, very hot beverages above 65 degrees C. Group 2B possibly carcinogenic: petrol, carbon black, inhaled titanium dioxide, radiofrequency fields, aspartame. Group 3 not classifiable: coffee, caffeine, tea, saccharin, inorganic mercury. Group 4 abolished in the 2019 Preamble revision - it held caprolactam alone. IARC classifies hazard, not risk.",
-    },
-    {
-      id: "preventive-occupational-health-c3",
-      front: "The four carcinogen-tumour pairs that must never be got wrong.",
-      back: "Benzene - acute myeloid leukaemia (rubber, shoe adhesive, printing, petrochemical). Asbestos - malignant mesothelioma of pleura and peritoneum, and bronchogenic carcinoma of lung. Vinyl chloride monomer - angiosarcoma of the liver (PVC autoclave cleaning). Beta-naphthylamine and benzidine, the aromatic amines of the aniline dye industry - transitional cell carcinoma of the urinary bladder (Rehn, 1895).",
-    },
-    {
-      id: "preventive-occupational-health-c4",
-      front: "The next set of carcinogen-tumour pairs, to reach ten or more.",
-      back: "Arsenic - skin cancer (also lung, bladder, hepatic angiosarcoma). Polycyclic aromatic hydrocarbons in soot, tar, pitch and mineral oil - skin and scrotal squamous carcinoma (Pott, 1775) and lung. Hexavalent chromium - lung and nasal sinus. Nickel compounds - lung and nasal cavity. Aflatoxin B1 - hepatocellular carcinoma. Hardwood and leather dust - adenocarcinoma of nasal cavity and sinuses. Bis(chloromethyl) ether - small-cell lung carcinoma. Cadmium - lung. Ionising radiation - leukaemia; radon - lung; radium - osteosarcoma; thorotrast - hepatic angiosarcoma.",
-    },
-    {
-      id: "preventive-occupational-health-c5",
-      front: "Silicosis - agent, occupations, latency, radiology and complications.",
-      back: "Free crystalline silica (quartz), respirable 1-3 micrometre. Stone cutting and crushing, sandblasting, mining, foundry, pottery and ceramics, glass, slate pencil (Mandsaur), agate grinding (Khambhat), artificial stone worktops. Chronic 10-15 years; accelerated 5-10; acute silicoproteinosis within months to 5 years. Upper-zone rounded opacities, egg-shell calcification of hilar nodes, progressive massive fibrosis; restrictive with reduced diffusing capacity; clubbing absent. Complications: silicotuberculosis (first and foremost), PMF, cor pulmonale, pneumothorax, lung cancer (IARC Group 1), Caplan's syndrome, scleroderma, silica nephropathy. No treatment - prevention and compensation only.",
-    },
-    {
-      id: "preventive-occupational-health-c6",
-      front: "Asbestos-related disease - the benign and the malignant.",
-      back: "Fibres: chrysotile (white, serpentine) is most used; crocidolite (blue) and the amphiboles are most mesotheliomagenic. Benign: asbestosis after 10-20 years - lower-zone irregular opacities, bibasal fine crackles, clubbing, restrictive with low diffusing capacity, asbestos (ferruginous) bodies; calcified pleural plaques, benign effusion, rounded atelectasis. Malignant: bronchogenic carcinoma (commonest; multiplicative with smoking - about 5x asbestos alone, 10x smoking alone, 50x both) and malignant mesothelioma (latency 20-40 years, unrelated to smoking, no threshold dose, occurs after brief or take-home exposure); also laryngeal and ovarian cancer.",
-    },
-    {
-      id: "preventive-occupational-health-c7",
-      front: "Byssinosis, bagassosis and farmer's lung - agent, story and lung function.",
-      back: "Byssinosis: cotton, flax and hemp dust in card and blowing rooms; chest tightness on the first day back after a break (Monday feeling), easing through the week; OBSTRUCTIVE defect, normal chest X-ray; Schilling grades 0-3; becomes irreversible. Bagassosis: Thermoactinomyces sacchari in stored dry bagasse (sugarcane residue for paper, board, rayon); hypersensitivity pneumonitis, restrictive; prevent by keeping moisture above 20 per cent and spraying with 2 per cent propionic acid. Farmer's lung: Saccharopolyspora rectivirgula (Micropolyspora faeni) in mouldy hay; fever, cough and dyspnoea 4-8 hours after exposure; mid and upper zones; restrictive with low diffusing capacity.",
-    },
-    {
-      id: "preventive-occupational-health-c8",
-      front: "Lead poisoning - the clinical picture, the laboratory and the treatment.",
-      back: "Sources: lead-acid battery manufacture and recycling, smelting, printing type, paint, pottery glaze, solder, radiator repair, surma. Features: facial pallor, blue-black Burton's line on the gums, lead colic with constipation, anaemia with basophilic stippling, motor neuropathy giving wrist and foot drop, encephalopathy with metaphyseal lead lines in children, interstitial nephritis with saturnine gout, hypertension. Laboratory: blood lead is the test; supported by raised urinary delta-aminolaevulinic acid and coproporphyrin and blood zinc protoporphyrin (lead inhibits ALA dehydratase and ferrochelatase). Treatment: remove from exposure, calcium disodium EDTA or oral DMSA, dimercaprol plus EDTA for encephalopathy. Notifiable under the Third Schedule.",
-    },
-    {
-      id: "preventive-occupational-health-c9",
-      front: "Noise-induced hearing loss - the audiogram and the limits.",
-      back: "Continuous noise above 85-90 dB(A) for 8 hours; the Indian statutory limit under the Factories Act rules is 90 dB(A) for 8 hours. Loss is bilateral, symmetrical, sensorineural and high-frequency, with the characteristic notch at 4000 Hz (3000-6000 Hz) and recovery at 8000 Hz; a reversible temporary threshold shift precedes the permanent one; tinnitus and difficulty following speech in noise are early complaints. Non-auditory effects: hypertension, sleep disturbance, annoyance, accidents. Prevention: engineering enclosure and damping, exposure-time limits, ear plugs (15-30 dB) or muffs (20-40 dB), pre-placement baseline and annual audiometry. Irreversible - notifiable and compensable.",
-    },
-    {
-      id: "preventive-occupational-health-c10",
-      front: "Hierarchy of control, in order, and why PPE is last.",
-      back: "Elimination - substitution - engineering controls - administrative controls - personal protective equipment. Examples: abandon dry sandblasting; steel shot for silica sand, toluene for benzene, synthetic fibre for asbestos; enclosure, local exhaust ventilation, wet drilling; job rotation, restricted-entry permits, wet sweeping, training; fit-tested respirators and hearing protection. PPE ranks last because it leaves the hazard untouched, protects only the wearer, fails silently, is uncomfortable and therefore not worn, needs fit-testing and maintenance, and shifts responsibility from the employer's process to the worker's discipline - but it is indispensable for maintenance and emergencies.",
-    },
-    {
-      id: "preventive-occupational-health-c11",
-      front: "Factories Act 1948 - coverage, the numbers, and the Schedules.",
-      back: "Applies where a manufacturing process runs with 10 or more workers using power or 20 or more without. Health: 14.2 cubic metres (500 cubic feet) per worker, drinking water cooled where 250 or more workers, ventilation, dust and fume removal, lighting, latrines, spittoons. Welfare: first-aid box per 150 workers, ambulance room above 500, canteen above 250, rest and lunch rooms above 150, creche above 30 women workers, welfare officer at 500, safety officer at 1000. Hours: 48 a week, 9 a day, spread-over 10.5 hours, rest after 5 hours, overtime at double rate. No child below 14; certificate of fitness from the certifying surgeon for 15-18 years. First Schedule - hazardous processes; Second Schedule - permissible levels of 116 chemicals; Third Schedule - notifiable occupational diseases, notifiable under section 89 by the manager AND by the attending medical practitioner. Now subsumed into the OSH Code 2020.",
-    },
-    {
-      id: "preventive-occupational-health-c12",
-      front: "ESI Act 1948 - coverage, contributions and the six benefits.",
-      back: "Based on the Adarkar report 1944; enacted 19 April 1948; first implemented at Kanpur and Delhi on 24 February 1952. Covers non-seasonal factories and, by extension, shops, hotels, cinemas, transport, newspapers, educational and medical institutions with 10 or more employees, up to a wage ceiling of Rs 21,000 a month. Contributions from 1 July 2019: employee 0.75 per cent, employer 3.25 per cent; state meets one-eighth of medical care expenditure. Six benefits: medical (from day one, no expenditure ceiling), sickness (about 70 per cent of wages for up to 91 days, needing 78 days' contribution; extended 80 per cent up to 2 years for 34 diseases; enhanced 100 per cent for 7 days after vasectomy and 14 after tubectomy), maternity (100 per cent for 26 weeks), disablement (temporary 90 per cent, permanent 90 per cent as a life pension), dependants' (90 per cent) and funeral expenses. Apex body the ESI Corporation with a Medical Benefit Council; disputes to the Employees' Insurance Court. Now subsumed into the Code on Social Security 2020.",
-    },
-  ],
   references: [
     "Park K. Park's Textbook of Preventive and Social Medicine, 27th edition, 2023 - chapter on Occupational Health, and the sections on occupational cancers, pneumoconioses and social security legislation",
     "The Factories Act, 1948 (Act 63 of 1948) as amended in 1987, with the Model Factories Rules - Chapters III, IV, IVA and V, section 89, and the First, Second and Third Schedules; now amalgamated into the Occupational Safety, Health and Working Conditions Code, 2020",
@@ -10053,68 +9389,6 @@ topics.push({
       difficulty: "hard",
     },
   ],
-  cards: [
-    {
-      id: "preventive-climate-change-health-c1",
-      front: "UNFCCC definition of climate change.",
-      back: "A change of climate attributed directly or indirectly to human activity that alters the composition of the global atmosphere, and which is in addition to natural climate variability observed over comparable time periods.",
-    },
-    {
-      id: "preventive-climate-change-health-c2",
-      front: "The three pathways from climate change to health.",
-      back: "Direct (heat illness, injury and death from floods, cyclones, lightning); ecosystem-mediated (vector-borne, water- and food-borne disease, aeroallergens, crop yield and nutrition, zoonoses); socially mediated (displacement, livelihood loss, food and water insecurity, conflict, mental illness, widening inequity).",
-    },
-    {
-      id: "preventive-climate-change-health-c3",
-      front: "Main greenhouse gases and their principal sources.",
-      back: "Carbon dioxide - fossil fuel, deforestation, cement (about 280 to about 420 ppm). Methane - paddy, ruminants, landfill, oil and gas (about 28x GWP). Nitrous oxide - nitrogenous fertiliser, biomass burning (about 265x). Fluorinated gases - HFCs, PFCs, SF6 (thousands x). Plus black carbon and tropospheric ozone as short-lived climate pollutants.",
-    },
-    {
-      id: "preventive-climate-change-health-c4",
-      front: "Key observed figures from IPCC AR6 (2021-2023).",
-      back: "Warming of about 1.1 degrees C in 2011-2020 versus 1850-1900; global mean sea level up about 0.20 m from 1901 to 2018; human influence unequivocal. Projection: 1.5 degrees C likely reached in the early 2030s. Say explicitly which figures are projections.",
-    },
-    {
-      id: "preventive-climate-change-health-c5",
-      front: "India-specific climate observations and projections.",
-      back: "Mean annual temperature up about 0.7 degrees C from 1901 to 2018 (IMD); heat waves projected 3-4 times more frequent by 2100 (MoES 2020); North Indian Ocean sea level up about 3.3 mm per year 1993-2017; more erratic monsoon with more localised extreme rainfall; Himalayan glacier retreat.",
-    },
-    {
-      id: "preventive-climate-change-health-c6",
-      front: "IMD heat wave definition.",
-      back: "Maximum temperature at least 40 degrees C (plains), 37 degrees C (coast) or 30 degrees C (hills), with a departure from normal of 4.5-6.4 degrees C = heat wave, more than 6.4 degrees C = severe. Or actual maximum 45 degrees C (severe at 47 degrees C) regardless of departure.",
-    },
-    {
-      id: "preventive-climate-change-health-c7",
-      front: "Heat exhaustion versus heat stroke - the discriminator.",
-      back: "The sensorium. Heat exhaustion: core 37-40 degrees C, sweating preserved, sensorium intact. Heat stroke: core above 40 degrees C WITH altered mental state, seizure or coma. Skin may still be wet in exertional heat stroke, so do not rely on dry skin.",
-    },
-    {
-      id: "preventive-climate-change-health-c8",
-      front: "Heat stroke - first-line management.",
-      back: "Immediate rapid cooling (cold water immersion preferred in exertional; otherwise ice packs to neck, axillae, groins plus tepid spray and fanning), target core below 39 degrees C within about 30 minutes; airway protection, intravenous crystalloid, benzodiazepine for shivering or seizure, monitor CK, creatinine, potassium and coagulation, urgent referral. No antipyretic, no dantrolene.",
-    },
-    {
-      id: "preventive-climate-change-health-c9",
-      front: "NAPCC 2008 - the eight missions.",
-      back: "Solar; Enhanced Energy Efficiency; Sustainable Habitat; Water; Sustaining the Himalayan Ecosystem; Green India; Sustainable Agriculture; Strategic Knowledge for Climate Change. Health is NOT one of them; state action plans (SAPCC) follow from it.",
-    },
-    {
-      id: "preventive-climate-change-health-c10",
-      front: "NPCCHH - year, ministry, agency and what it does.",
-      back: "National Programme on Climate Change and Human Health, MoHFW, 2019, under the National Health Mission and run through NCDC with national, state and district nodal officers. Awareness, capacity building, sentinel surveillance of heat-related illness and death and of air-pollution-related illness (on IHIP), health adaptation plans, and green and climate-resilient health facilities.",
-    },
-    {
-      id: "preventive-climate-change-health-c11",
-      front: "Ahmedabad Heat Action Plan - year and four pillars.",
-      back: "2013, South Asia's first, after the May 2010 heat wave (about 1,344 excess deaths). Pillars: public awareness and community outreach; early warning system with inter-agency coordination (IMD yellow / orange / red alerts); capacity building of health-care professionals; reducing heat exposure (cool roofs, shade, water, revised work hours). Generalised by NDMA guidelines, 2016 (revised 2019).",
-    },
-    {
-      id: "preventive-climate-change-health-c12",
-      front: "India's climate commitments - Panchamrit and the 2022 NDC.",
-      back: "Emissions intensity of GDP down 45% by 2030 from the 2005 level; about 50% of cumulative installed electric power capacity from non-fossil sources (500 GW) by 2030; additional carbon sink of 2.5-3 billion tonnes CO2 equivalent; reduce projected emissions by 1 billion tonnes by 2030; net zero by 2070. Paris Agreement target: well below 2 degrees C, pursuing 1.5 degrees C. SDG 13 is Climate Action.",
-    },
-  ],
   references: [
     "Park's Textbook of Preventive and Social Medicine, 27th edition, 2023 - environment and health, climate change, global warming and greenhouse effect, heat and cold related illness",
     "IPCC Sixth Assessment Report - Working Group I (2021), Working Group II Impacts, Adaptation and Vulnerability (2022) and Synthesis Report (2023)",
@@ -10686,68 +9960,6 @@ topics.push({
       difficulty: "moderate",
       explanation:
         "IDSP was launched in November 2004 with weekly reporting on the S (syndromic, by health workers and ASHAs), P (presumptive, by medical officers) and L (laboratory) forms. From April 2021 this was migrated nationally to the Integrated Health Information Platform, which is case-based, near real-time and geo-referenced, covering about 33 epidemic-prone conditions - which is why an answer that stops at 'S, P and L forms' is now incomplete. The HMIS portal carries monthly aggregate service statistics (antenatal care, deliveries, immunisation, outpatient attendance) and is not an outbreak system. The Sample Registration System is a dual-record demographic survey giving the birth rate, death rate, IMR and MMR, with no role in outbreak alerts. Ni-kshay is the tuberculosis notification and case-management system alone.",
-    },
-  ],
-  cards: [
-    {
-      id: "preventive-health-information-gis-c1",
-      front: "Define a geographic information system.",
-      back: "A computer-based system for the capture, storage, retrieval, management, analysis and display of spatially referenced (geographically referenced) data - data tied to a location on the earth's surface.",
-    },
-    {
-      id: "preventive-health-information-gis-c2",
-      front: "Five components of a GIS.",
-      back: "Hardware, software, data, people, methods. Data are the costliest component; trained people are the limiting one.",
-    },
-    {
-      id: "preventive-health-information-gis-c3",
-      front: "GIS versus GPS versus remote sensing - one sentence.",
-      back: "GPS collects position (NAVSTAR; India's NavIC), remote sensing collects imagery (IRS/Resourcesat/Cartosat, viewed on Bhuvan), GIS stores, integrates, analyses and displays them with health attribute data.",
-    },
-    {
-      id: "preventive-health-information-gis-c4",
-      front: "Spatial versus attribute data, and vector versus raster.",
-      back: "Spatial data = where (co-ordinates, boundary); attribute data = what (population, cases), joined by a common code such as the LGD code. Vector = points, lines, polygons for discrete features; raster = grid of cells for continuous surfaces and satellite imagery.",
-    },
-    {
-      id: "preventive-health-information-gis-c5",
-      front: "Buffering, overlay and network analysis - what each answers.",
-      back: "Buffer: who lies within a set distance (population within 5 km of a CHC; containment zones). Overlay: where conditions coincide (deprivation over disease incidence). Network analysis: real travel time to the nearest facility along roads, and ambulance response.",
-    },
-    {
-      id: "preventive-health-information-gis-c6",
-      front: "Four types of thematic map and when each is used.",
-      back: "Spot/dot map for individual events; dot density where each dot is a fixed number of events; choropleth shading administrative areas by a RATE; graduated symbol where symbol size carries the value; isopleth (contour) for continuous data. Never shade a choropleth by raw counts.",
-    },
-    {
-      id: "preventive-health-information-gis-c7",
-      front: "Eight uses of GIS in public health.",
-      back: "Surveillance and outbreak investigation; vector control; health service planning and facility siting; access and equity analysis; programme monitoring and microplanning; environmental health; disaster management; research in spatial epidemiology.",
-    },
-    {
-      id: "preventive-health-information-gis-c8",
-      front: "Founding example of GIS in public health.",
-      back: "John Snow's 1854 spot map of cholera deaths clustering around the Broad Street pump, Golden Square, London - the source identified before the organism was known.",
-    },
-    {
-      id: "preventive-health-information-gis-c9",
-      front: "Ecological fallacy versus modifiable areal unit problem.",
-      back: "Ecological fallacy: inferring an individual-level association from group-level (area) data. MAUP: the result changes with the units chosen - scale effect (block vs district) and zoning effect (boundaries re-drawn at the same scale).",
-    },
-    {
-      id: "preventive-health-information-gis-c10",
-      front: "Confidentiality safeguards when mapping health data.",
-      back: "Do not map identifiable individuals; aggregate to village, ward or grid; suppress small numbers; jitter or geomask published points; keep the co-ordinate file restricted with consent and ethics approval; comply with the ABDM Health Data Management Policy and the DPDP Act, 2023.",
-    },
-    {
-      id: "preventive-health-information-gis-c11",
-      front: "Which Indian source gives which number - census, CRS, SRS, NFHS?",
-      back: "Census: denominators (last completed 2011). CRS: legal registration of births and deaths (RBD Act 1969, amended 2023). SRS: birth rate, death rate, IMR, NMR, TFR and MMR. NFHS-5 (2019-21): district-level coverage, nutrition and NCD indicators.",
-    },
-    {
-      id: "preventive-health-information-gis-c12",
-      front: "IDSP reporting - what changed in 2021?",
-      back: "IDSP began November 2004 with weekly S (syndromic), P (presumptive) and L (laboratory) forms. Since April 2021 reporting is case-based, geo-referenced and near real time on the Integrated Health Information Platform (IHIP), covering about 33 epidemic-prone conditions.",
     },
   ],
   references: [
@@ -11487,68 +10699,6 @@ topics.push({
       answer: 2,
       explanation:
         "The sex ratio at birth reflects only births in the recent past, speaks directly to sex selection before birth, and is available monthly at district and block level from the Civil Registration System and HMIS - which is why Beti Bachao Beti Padhao sets district targets in terms of a 2-point annual gain in SRB. The child sex ratio (option A) pools six birth cohorts, is available only once a decade, and confounds three distinct processes - sex selection before birth, excess female mortality between 0 and 6 years, and under-enumeration of girls - so a change in it cannot be attributed to any single cause. The overall sex ratio is dominated by adult migration and mortality and is far too blunt. Under-five mortality in girls captures post-natal discrimination but not sex selection, and institutional delivery is a process indicator only. One caveat: in a village or a single facility the annual number of births is small enough for random variation alone to swing the ratio widely, so act on sustained trends and clusters rather than a single month.",
-    },
-  ],
-  cards: [
-    {
-      id: "preventive-sex-ratio-pcpndt-c1",
-      front: "Define sex ratio, child sex ratio and sex ratio at birth as used in India.",
-      back: "Sex ratio - females per 1000 males in the population (reverse of the international convention). Child sex ratio - females per 1000 males aged 0-6 years, from the census. Sex ratio at birth - female live births per 1000 male live births; natural value about 950.",
-    },
-    {
-      id: "preventive-sex-ratio-pcpndt-c2",
-      front: "Census of India 2011 - overall sex ratio and child sex ratio.",
-      back: "Overall 943 (best since 1961); child sex ratio 918, the lowest since independence (927 in 2001, 945 in 1991). Rural CSR 923, urban 905. The overall ratio improving while the child ratio falls is the paradox to explain.",
-    },
-    {
-      id: "preventive-sex-ratio-pcpndt-c3",
-      front: "States at the extremes of sex ratio and child sex ratio, 2011 census.",
-      back: "Overall: highest Kerala 1084 and Puducherry 1037; lowest Haryana 879, J&K 889, Punjab 895. Child sex ratio: worst Haryana 834, Punjab 846, J&K 862, Delhi 871; best Mizoram and Meghalaya about 970, Puducherry 967, Kerala 964.",
-    },
-    {
-      id: "preventive-sex-ratio-pcpndt-c4",
-      front: "The mechanism linking falling fertility to a falling child sex ratio.",
-      back: "A smaller desired family size concentrates the demand for at least one son into fewer births, so the ratio is most skewed in the richest, most educated, lowest-fertility states and worsens steeply with birth order. Economic Survey 2017-18 called this son meta-preference (about 21 million 'unwanted' girls, 63 million missing women).",
-    },
-    {
-      id: "preventive-sex-ratio-pcpndt-c5",
-      front: "Name and dates of the PCPNDT Act.",
-      back: "Pre-natal Diagnostic Techniques (Regulation and Prevention of Misuse) Act, 1994, in force 1 January 1996; amended with effect from 14 February 2003 and renamed the Pre-conception and Pre-natal Diagnostic Techniques (Prohibition of Sex Selection) Act, 1994. The amendment added pre-conception techniques and brought ultrasound and imaging centres under registration.",
-    },
-    {
-      id: "preventive-sex-ratio-pcpndt-c6",
-      front: "The five indications for pre-natal diagnosis under Section 4(3).",
-      back: "Age above 35 years; two or more spontaneous abortions or foetal loss; exposure to a potentially teratogenic agent (drugs, radiation, infection, chemicals); family history of mental retardation, physical deformity such as spasticity or other genetic disease; any other condition specified by the Central Supervisory Board.",
-    },
-    {
-      id: "preventive-sex-ratio-pcpndt-c7",
-      front: "Which premises must be registered under the PCPNDT Act, and for how long is the certificate valid?",
-      back: "Genetic counselling centres, genetic laboratories, genetic clinics, and ultrasound clinics and imaging centres. Application on Form A, certificate on Form B, valid 5 years and renewable, suspendable or cancellable by the Appropriate Authority; the statutory 'sex determination not done here' board must be displayed.",
-    },
-    {
-      id: "preventive-sex-ratio-pcpndt-c8",
-      front: "Form F - what, when and how long?",
-      back: "The statutory record of every pre-natal diagnostic procedure including every obstetric ultrasound; completed before the procedure and signed by the doctor and the woman. Preserved 2 years from the date of the last entry (longer if a case is pending); monthly returns to the Appropriate Authority by the fifth of the following month. Form G is the consent form.",
-    },
-    {
-      id: "preventive-sex-ratio-pcpndt-c9",
-      front: "Appropriate Authority and Advisory Committee under the PCPNDT Act.",
-      back: "Appropriate Authority at state, UT and district level - at district level the Civil Surgeon, CMO or DHO; powers to register, suspend, cancel, investigate, search, seize and seal, and to file complaints. Advisory Committee: 3 medical experts, 1 legal expert, 1 information and publicity officer, 3 eminent social workers (one from a women's organisation); term 3 years, meets at least once in 60 days.",
-    },
-    {
-      id: "preventive-sex-ratio-pcpndt-c10",
-      front: "PCPNDT penalties for the doctor and for the person seeking sex selection.",
-      back: "Doctor (Sec 23(1)): 3 years and Rs 10,000 first conviction; 5 years and Rs 50,000 subsequent. Medical Council (Sec 23(2)): suspension once charges are framed, name removed for 5 years on first conviction and permanently after. Husband or relative seeking sex selection (Sec 23(3)): 3 years and Rs 50,000, then 5 years and Rs 1,00,000. Offences are cognizable, non-bailable, non-compoundable.",
-    },
-    {
-      id: "preventive-sex-ratio-pcpndt-c11",
-      front: "Section 24 presumption and Section 28 cognizance.",
-      back: "Sec 24 - the court shall presume, unless the contrary is proved, that the pregnant woman was compelled by her husband or relative, who is liable for abetment; she is treated as a victim. Sec 28 - cognizance only on a complaint by the Appropriate Authority, or by any person or social organisation after not less than 15 days' notice to the Authority; tried by a Metropolitan or First Class Judicial Magistrate.",
-    },
-    {
-      id: "preventive-sex-ratio-pcpndt-c12",
-      front: "Beti Bachao Beti Padhao - launch, ministries, objectives and target.",
-      back: "Launched 22 January 2015 at Panipat, Haryana; tri-ministerial (Women and Child Development, Health and Family Welfare, Education); objectives - prevent gender-biased sex-selective elimination, ensure survival and protection of the girl child, ensure her education and participation. Target: sex ratio at birth up 2 points a year in focus districts; now a component of Mission Shakti (Sambal). Sukanya Samriddhi Yojana (2015) is its savings component.",
     },
   ],
   references: [
@@ -12467,68 +11617,6 @@ topics.push({
       answer: 1,
       explanation:
         "The preliminary assessment and possible transfer to the Children's Court applies only to a child who has completed 16 years of age and is alleged to have committed a heinous offence - an offence with a minimum punishment of seven years or more. This boy is 15, so however grave the offence he is dealt with entirely by the Juvenile Justice Board as a child in conflict with law, with the ordinary dispositional orders including up to three years in a special home. The preliminary-assessment choice is the trap of applying the heinous-offence rule to the gravity of the offence while ignoring the age bar; the place-of-safety-until-21 choice describes what happens to a 16 to 18-year-old who is actually transferred and tried as an adult; a case is never sent to the Sessions Court, only to the designated Children's Court, and only after the Board's assessment; and the Child Welfare Committee has no jurisdiction over a child in conflict with law - the social investigation report is prepared by the probation officer for the Board.",
-    },
-  ],
-  cards: [
-    {
-      id: "preventive-child-women-legislation-c1",
-      front: "The one change the JJ Act 2000 is remembered for, against the 1986 Act.",
-      back: "A uniform age of 18 years for both sexes and both categories (the 1986 Act used 16 for boys, 18 for girls). Age is reckoned on the date of commission of the offence.",
-    },
-    {
-      id: "preventive-child-women-legislation-c2",
-      front: "Composition of the Juvenile Justice Board.",
-      back: "Principal Magistrate - a Metropolitan Magistrate or Judicial Magistrate First Class trained in child psychology or child welfare - plus two social workers, at least one of whom must be a woman. Sits as a bench, in a child-friendly setting.",
-    },
-    {
-      id: "preventive-child-women-legislation-c3",
-      front: "Composition and powers of the Child Welfare Committee.",
-      back: "Chairperson plus four members, at least one a woman and one an expert on matters concerning children; term 3 years, quorum 3, powers of a metropolitan magistrate. Final authority for a child in need of care and protection, including declaring a child legally free for adoption.",
-    },
-    {
-      id: "preventive-child-women-legislation-c4",
-      front: "The five absolute bars under the Juvenile Justice Act.",
-      back: "No death sentence; no life imprisonment without the possibility of release; no police lock-up or jail; no joint trial with an adult; no disclosure of the child's identity.",
-    },
-    {
-      id: "preventive-child-women-legislation-c5",
-      front: "Institutions of care under the JJ Act - which child goes where.",
-      back: "Observation home - CICL pending inquiry. Special home - CICL after the finding, up to 3 years. Place of safety - 16-18 heinous, and a child tried as an adult until 21. Children's home - CNCP. Open shelter - street and working children. Specialised adoption agency. After-care 18-21, extendable to 23.",
-    },
-    {
-      id: "preventive-child-women-legislation-c6",
-      front: "Dispositional orders available to the Juvenile Justice Board.",
-      back: "Advice or admonition and release home; group counselling; community service; fine payable by parent or earning child; probation of good conduct under a parent, guardian or fit person up to 3 years; special home up to 3 years. Plus schooling, vocational training or de-addiction.",
-    },
-    {
-      id: "preventive-child-women-legislation-c7",
-      front: "What the JJ Act 2015 added that the 2000 Act did not have.",
-      back: "Offence grading (petty / serious / heinous); preliminary assessment within 3 months and possible adult trial in the Children's Court for a 16-18 year old accused of a heinous offence; CARA given statutory status; compulsory registration of every child care institution; new offences - cruelty, begging, intoxicants, militant use, sale of children, corporal punishment.",
-    },
-    {
-      id: "preventive-child-women-legislation-c8",
-      front: "POCSO mandatory reporting - who, to whom, and the penalty.",
-      back: "Section 19: any person, doctors included, with knowledge or apprehension of a sexual offence against a child under 18 must report to the local police or Special Juvenile Police Unit, who inform the CWC and Special Court within 24 hours. Section 21: failure to report or record - up to 6 months or fine or both; up to 1 year for the head of a company or institution.",
-    },
-    {
-      id: "preventive-child-women-legislation-c9",
-      front: "POCSO medical examination - the four rules.",
-      back: "A girl child is examined by a woman doctor; in the presence of a parent or trusted person; the examination may proceed even without an FIR and without a magistrate's order; and no hospital, public or private, may refuse free first aid and treatment to a victim of a sexual offence.",
-    },
-    {
-      id: "preventive-child-women-legislation-c10",
-      front: "National Policy for the Empowerment of Women 2001 - structure and two key phrases.",
-      back: "Goal: advancement, development and empowerment of women. Three parts: objectives, policy prescriptions, operational strategies. Key phrases: de jure and de facto enjoyment of all human rights on equal terms with men, and mainstreaming a gender perspective in the development process. The draft National Policy for Women 2016 was never notified; the 2001 policy remains in force.",
-    },
-    {
-      id: "preventive-child-women-legislation-c11",
-      front: "Maternity Benefit Act after the 2017 amendment - the numbers.",
-      back: "26 weeks for the first two children (maximum 8 weeks before delivery), 12 weeks for the third and subsequent child, 12 weeks for a commissioning or adopting mother; creche compulsory at 50 or more employees with 4 visits a day; work from home by agreement; applies to establishments with 10 or more employees.",
-    },
-    {
-      id: "preventive-child-women-legislation-c12",
-      front: "Child labour and child marriage - the post-amendment position.",
-      back: "Child Labour Act 1986 as amended 2016: total ban below 14 in every occupation except a family enterprise after school hours and a child artist; adolescents 14-18 barred from hazardous work; offence cognizable. PCMA 2006: 18 for a female, 21 for a male; voidable at the option of the party who was a child up to 2 years after majority; void if the child was enticed or trafficked; the 2021 Bill to raise the female age to 21 was never enacted.",
     },
   ],
   references: [

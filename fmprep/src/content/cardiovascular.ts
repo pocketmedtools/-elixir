@@ -609,68 +609,6 @@ topics.push({
       difficulty: "moderate",
     },
   ],
-  cards: [
-    {
-      id: "cardiovascular-hypertension-c1",
-      front: "Office BP threshold that defines hypertension in Indian and WHO practice?",
-      back: "140/90 mmHg or more, confirmed on two separate visits (one visit suffices if BP is 180/110 mmHg or more, or there is target organ damage).",
-    },
-    {
-      id: "cardiovascular-hypertension-c2",
-      front: "Equivalent hypertension thresholds for HBPM and ABPM?",
-      back: "HBPM average 135/85; ABPM daytime 135/85, 24-hour 130/80, night 120/70 mmHg.",
-    },
-    {
-      id: "cardiovascular-hypertension-c3",
-      front: "The IHCI / NP-NCD drug ladder in order.",
-      back: "Amlodipine 5-10 mg, then add telmisartan 40-80 mg, then add chlorthalidone 12.5-25 mg, then add spironolactone 25 mg.",
-    },
-    {
-      id: "cardiovascular-hypertension-c4",
-      front: "Definition of resistant hypertension.",
-      back: "BP above target on three optimally dosed drugs from different classes including a diuretic, with adherence and measurement technique confirmed.",
-    },
-    {
-      id: "cardiovascular-hypertension-c5",
-      front: "Maximum safe BP reduction in the first hour of a hypertensive emergency?",
-      back: "25% of mean arterial pressure. Exceptions: aortic dissection (systolic under 120 mmHg within 20 minutes) and acute ischaemic stroke (do not treat below 220/120 mmHg).",
-    },
-    {
-      id: "cardiovascular-hypertension-c6",
-      front: "Creatinine rise after starting an ACE inhibitor: when do you stop the drug?",
-      back: "A rise up to 30% is expected and the drug is continued. Above 30%, or potassium above 5.5 mmol/L, stop and look for renal artery stenosis or volume depletion.",
-    },
-    {
-      id: "cardiovascular-hypertension-c7",
-      front: "Antihypertensives safe in pregnancy, and the three to avoid.",
-      back: "Safe: labetalol, nifedipine sustained-release, methyldopa. Avoid: ACE inhibitors, ARBs and atenolol.",
-    },
-    {
-      id: "cardiovascular-hypertension-c8",
-      front: "Four features that should trigger a search for secondary hypertension.",
-      back: "Onset before 30 or after 55, Grade 3 at presentation, resistant hypertension, and unprovoked hypokalaemia (add abdominal bruit and sudden loss of control).",
-    },
-    {
-      id: "cardiovascular-hypertension-c9",
-      front: "Blood pressure fall expected from reducing salt intake to under 5 g/day?",
-      back: "About 4-5 mmHg systolic in hypertensives; average Indian intake is 8-11 g/day.",
-    },
-    {
-      id: "cardiovascular-hypertension-c10",
-      front: "ECG criterion for left ventricular hypertrophy that reclassifies a hypertensive as high risk.",
-      back: "Sokolow-Lyon: S in V1 plus R in V5 or V6 greater than 35 mm.",
-    },
-    {
-      id: "cardiovascular-hypertension-c11",
-      front: "Why is chlorthalidone preferred over hydrochlorothiazide?",
-      back: "Longer half-life and greater 24-hour BP lowering at equivalent doses, with better outcome trial evidence; watch potassium and sodium.",
-    },
-    {
-      id: "cardiovascular-hypertension-c12",
-      front: "NFHS-5 prevalence of hypertension in Indian adults aged 15-49?",
-      back: "About 24% of men and 21% of women; ICMR-INDIAB puts overall adult prevalence near 35%.",
-    },
-  ],
   references: [
     "WHO Guideline for the Pharmacological Treatment of Hypertension in Adults, 2021",
     "India Hypertension Control Initiative (ICMR-NCDIR / MoHFW / WHO India) standard treatment protocol, 2022",
@@ -1168,68 +1106,6 @@ topics.push({
       explanation:
         "The pain description fits reflux, but a smoker with premature family history has enough risk to warrant objective exclusion of coronary disease alongside treating the likely cause, and a normal resting ECG does not exclude stable angina. Treating reflux alone risks missing coincident coronary disease in a high-risk man. Direct angiography is disproportionate for pain with no anginal features, and starting secondary prevention drugs empirically treats a diagnosis that has not been made. Endoscopy alone answers only half the question.",
       difficulty: "moderate",
-    },
-  ],
-  cards: [
-    {
-      id: "cardiovascular-stable-angina-c1",
-      front: "The three features that define typical angina.",
-      back: "Substernal discomfort of characteristic quality and duration; provoked by exertion or emotion; relieved by rest or nitrate within minutes. Two of three = atypical, one or none = non-anginal.",
-    },
-    {
-      id: "cardiovascular-stable-angina-c2",
-      front: "Positive treadmill test criterion.",
-      back: "Horizontal or downsloping ST depression of 1 mm or more, measured 80 ms after the J point.",
-    },
-    {
-      id: "cardiovascular-stable-angina-c3",
-      front: "Five high-risk treadmill findings that mandate angiography.",
-      back: "ST depression 2 mm or more; ST depression in stage 1; ST change persisting more than 5 minutes into recovery; fall in systolic BP with exercise; exercise-induced ventricular tachycardia (Duke score -11 or lower).",
-    },
-    {
-      id: "cardiovascular-stable-angina-c4",
-      front: "When is a treadmill test uninterpretable?",
-      back: "LBBB, paced rhythm, pre-excitation, resting ST depression more than 1 mm, or digoxin effect - use stress echo, MPI or CT coronary angiography.",
-    },
-    {
-      id: "cardiovascular-stable-angina-c5",
-      front: "CCS class III angina - define it.",
-      back: "Marked limitation: angina on walking one to two blocks on level ground or climbing one flight of stairs at a normal pace.",
-    },
-    {
-      id: "cardiovascular-stable-angina-c6",
-      front: "Four drug classes that reduce mortality or events in chronic coronary syndrome.",
-      back: "Aspirin, high-intensity statin, ACE inhibitor or ARB (with hypertension, diabetes, LV dysfunction or CKD), and beta-blocker after myocardial infarction.",
-    },
-    {
-      id: "cardiovascular-stable-angina-c7",
-      front: "Target resting heart rate on a beta-blocker for angina?",
-      back: "55-60 beats per minute at rest.",
-    },
-    {
-      id: "cardiovascular-stable-angina-c8",
-      front: "Why must nitrates never be given with sildenafil?",
-      back: "PDE-5 inhibition plus nitrate-driven cGMP rise causes catastrophic hypotension. Avoid nitrates within 24 h of sildenafil or vardenafil and 48 h of tadalafil.",
-    },
-    {
-      id: "cardiovascular-stable-angina-c9",
-      front: "Duration of dual antiplatelet therapy after a drug-eluting stent for stable angina?",
-      back: "6 months of aspirin plus clopidogrel, then aspirin lifelong (1-3 months if bleeding risk is high). After ACS it is 12 months.",
-    },
-    {
-      id: "cardiovascular-stable-angina-c10",
-      front: "Which drug combination causes dangerous bradycardia and heart block in angina?",
-      back: "Verapamil or diltiazem plus a beta-blocker. Amlodipine plus a beta-blocker is safe.",
-    },
-    {
-      id: "cardiovascular-stable-angina-c11",
-      front: "What did COURAGE and ISCHEMIA show about stenting in stable coronary disease?",
-      back: "Routine revascularisation added to optimal medical therapy improves symptoms but does not reduce death or myocardial infarction.",
-    },
-    {
-      id: "cardiovascular-stable-angina-c12",
-      front: "LDL cholesterol target in established coronary artery disease?",
-      back: "Below 55 mg/dL (very-high-risk category, Lipid Association of India and ESC), using high-intensity statin with ezetimibe added if needed.",
     },
   ],
   references: [
@@ -1845,68 +1721,6 @@ topics.push({
       explanation:
         "The anticipated first-medical-contact-to-balloon time is about 100 minutes, comfortably within the 120-minute limit, so primary PCI is the preferred strategy because it achieves higher patency rates with less intracranial bleeding than lysis. On-site thrombolysis is the correct answer only when PCI cannot be delivered within 120 minutes. Withholding reperfusion for antiplatelets alone abandons the occluded artery, and waiting for a troponin result wastes the highest-yield period of the golden hours - STEMI is an ECG diagnosis, not a biomarker diagnosis.",
       difficulty: "moderate",
-    },
-  ],
-  cards: [
-    {
-      id: "cardiovascular-acs-c1",
-      front: "Time target for the first ECG in suspected acute coronary syndrome?",
-      back: "Within 10 minutes of first medical contact, interpreted by a competent person.",
-    },
-    {
-      id: "cardiovascular-acs-c2",
-      front: "STEMI ST-elevation thresholds.",
-      back: "1 mm in two contiguous leads, except V2-V3 where it is 2 mm in men 40 or older, 2.5 mm in men under 40, and 1.5 mm in women.",
-    },
-    {
-      id: "cardiovascular-acs-c3",
-      front: "Door-to-needle and door-to-balloon targets.",
-      back: "Door-to-needle under 30 minutes for thrombolysis; door-to-balloon under 90 minutes, and first-medical-contact-to-balloon under 120 minutes for primary PCI.",
-    },
-    {
-      id: "cardiovascular-acs-c4",
-      front: "Tenecteplase dosing by weight.",
-      back: "30 mg under 60 kg, 35 mg 60-69 kg, 40 mg 70-79 kg, 45 mg 80-89 kg, 50 mg 90 kg or more; halve the dose if aged 75 or older.",
-    },
-    {
-      id: "cardiovascular-acs-c5",
-      front: "Clopidogrel loading dose in STEMI by age.",
-      back: "300 mg if under 75 years; 75 mg only if 75 years or older. 600 mg if primary PCI is planned.",
-    },
-    {
-      id: "cardiovascular-acs-c6",
-      front: "Three signs of successful thrombolysis at 60-90 minutes.",
-      back: "More than 50% resolution of maximal ST elevation, relief of chest pain, and accelerated idioventricular rhythm.",
-    },
-    {
-      id: "cardiovascular-acs-c7",
-      front: "What is the pharmacoinvasive strategy?",
-      back: "Thrombolyse locally when PCI is not available within 120 minutes, then transfer every patient for coronary angiography within 3-24 hours regardless of apparent lysis success.",
-    },
-    {
-      id: "cardiovascular-acs-c8",
-      front: "Four drugs to withhold in right ventricular infarction.",
-      back: "Nitrates, diuretics, morphine (in excess) and any preload-reducing agent; give fluid boluses instead.",
-    },
-    {
-      id: "cardiovascular-acs-c9",
-      front: "Killip class IV - definition and mortality.",
-      back: "Cardiogenic shock (systolic BP below 90 mmHg with hypoperfusion); in-hospital mortality 70-80%.",
-    },
-    {
-      id: "cardiovascular-acs-c10",
-      front: "Timing and treatment of Dressler syndrome.",
-      back: "2-6 weeks post-infarction: fever, pleuritic pain, rub, effusion, raised ESR. Treat with high-dose aspirin or colchicine; avoid NSAIDs and steroids early.",
-    },
-    {
-      id: "cardiovascular-acs-c11",
-      front: "Standard discharge prescription after STEMI.",
-      back: "Aspirin 75 mg + clopidogrel 75 mg (or ticagrelor 90 mg BD) for 12 months, atorvastatin 40-80 mg, a beta-blocker, an ACE inhibitor, plus an MRA if EF 40% or less with failure or diabetes.",
-    },
-    {
-      id: "cardiovascular-acs-c12",
-      front: "Why must streptokinase not be repeated after 5 days?",
-      back: "Neutralising antistreptokinase antibodies persist for years, reducing efficacy and increasing allergic reactions - record any prior dose on the patient's card.",
     },
   ],
   references: [
@@ -2553,68 +2367,6 @@ topics.push({
       difficulty: "hard",
     },
   ],
-  cards: [
-    {
-      id: "cardiovascular-heart-failure-c1",
-      front: "Ejection fraction cut-offs for HFrEF, HFmrEF and HFpEF.",
-      back: "HFrEF 40% or less; HFmrEF 41-49%; HFpEF 50% or more with objective evidence of raised filling pressures.",
-    },
-    {
-      id: "cardiovascular-heart-failure-c2",
-      front: "Name the four pillars of HFrEF therapy.",
-      back: "ARNI (or ACE inhibitor/ARB), beta-blocker, mineralocorticoid receptor antagonist, and SGLT2 inhibitor.",
-    },
-    {
-      id: "cardiovascular-heart-failure-c3",
-      front: "Which three beta-blockers are proven in HFrEF?",
-      back: "Carvedilol, bisoprolol and metoprolol succinate (nebivolol in the elderly). No other beta-blocker has mortality evidence.",
-    },
-    {
-      id: "cardiovascular-heart-failure-c4",
-      front: "Natriuretic peptide rule-out thresholds.",
-      back: "Non-acute: BNP under 35 or NT-proBNP under 125 pg/mL. Acute dyspnoea: BNP under 100 or NT-proBNP under 300 pg/mL.",
-    },
-    {
-      id: "cardiovascular-heart-failure-c5",
-      front: "The washout needed before starting sacubitril/valsartan.",
-      back: "36 hours after the last ACE inhibitor dose (no washout needed when switching from an ARB), to avoid angioedema.",
-    },
-    {
-      id: "cardiovascular-heart-failure-c6",
-      front: "When must spironolactone be stopped in heart failure?",
-      back: "Potassium above 5.5 mmol/L or eGFR below 30 mL/min/1.73 m2; recheck potassium and creatinine at 1 week, 4 weeks, then 3-monthly.",
-    },
-    {
-      id: "cardiovascular-heart-failure-c7",
-      front: "The FAILURE mnemonic for precipitants of decompensation.",
-      back: "Forgotten drugs, Arrhythmia, Ischaemia/Infarction, Lifestyle (salt/fluid), Upregulation (pregnancy, thyrotoxicosis, anaemia), Renal failure, Embolism and infection.",
-    },
-    {
-      id: "cardiovascular-heart-failure-c8",
-      front: "Weight-gain rule that patients must be taught.",
-      back: "Contact the clinic for a gain of 2 kg in 3 days or 2.5 kg in a week - it signals fluid retention before symptoms appear.",
-    },
-    {
-      id: "cardiovascular-heart-failure-c9",
-      front: "Criteria for a primary prevention ICD in heart failure.",
-      back: "LVEF 35% or less with NYHA class II-III despite at least 3 months of optimal medical therapy and a reasonable life expectancy.",
-    },
-    {
-      id: "cardiovascular-heart-failure-c10",
-      front: "Which drugs must be stopped in heart failure?",
-      back: "NSAIDs, pioglitazone, verapamil and diltiazem (in HFrEF), class I antiarrhythmics, and high-sodium effervescent preparations.",
-    },
-    {
-      id: "cardiovascular-heart-failure-c11",
-      front: "Two treatable mimics of HFpEF that must be excluded in India.",
-      back: "Constrictive pericarditis (often tuberculous) and cardiac amyloidosis (low-voltage ECG with echocardiographic hypertrophy, apical sparing).",
-    },
-    {
-      id: "cardiovascular-heart-failure-c12",
-      front: "Iron deficiency in heart failure: threshold and treatment.",
-      back: "Ferritin under 100 ng/mL, or 100-299 with transferrin saturation under 20%; treat with intravenous ferric carboxymaltose, which improves symptoms even without anaemia.",
-    },
-  ],
   references: [
     "ESC Guidelines for the Diagnosis and Treatment of Acute and Chronic Heart Failure, 2021, with 2023 focused update",
     "AHA/ACC/HFSA Guideline for the Management of Heart Failure, 2022",
@@ -3071,68 +2823,6 @@ topics.push({
       explanation:
         "Non-HDL cholesterol is simply total cholesterol minus HDL, needs no fasting, and its treatment target is set 30 mg/dL above the corresponding LDL target. Because it captures all apolipoprotein B-containing atherogenic particles including triglyceride-rich remnants and IDL, it is more informative than calculated LDL precisely when triglycerides are high, which is the usual Indian situation. Apolipoprotein A1 is the main HDL protein and measures the protective fraction, the opposite of what non-HDL represents.",
       difficulty: "easy",
-    },
-  ],
-  cards: [
-    {
-      id: "cardiovascular-dyslipidaemia-c1",
-      front: "Define atherogenic dyslipidaemia.",
-      back: "High triglycerides (above 150 mg/dL), low HDL (below 40 in men, 50 in women) and small dense LDL particles - the characteristic Indian pattern of insulin resistance.",
-    },
-    {
-      id: "cardiovascular-dyslipidaemia-c2",
-      front: "Four groups who get a statin without any risk calculation.",
-      back: "Established atherosclerotic cardiovascular disease; LDL 190 mg/dL or more; diabetes aged 40-75; chronic kidney disease.",
-    },
-    {
-      id: "cardiovascular-dyslipidaemia-c3",
-      front: "LDL targets for very high and extreme risk (Lipid Association of India).",
-      back: "Very high risk and extreme risk category A: below 50 mg/dL. Extreme risk category B (recurrent ACS within a year, polyvascular disease): below 30 mg/dL.",
-    },
-    {
-      id: "cardiovascular-dyslipidaemia-c4",
-      front: "Doses that count as high-intensity statin therapy.",
-      back: "Atorvastatin 40-80 mg or rosuvastatin 20-40 mg once daily - an LDL reduction of 50% or more.",
-    },
-    {
-      id: "cardiovascular-dyslipidaemia-c5",
-      front: "How is the non-HDL cholesterol target derived?",
-      back: "Total cholesterol minus HDL; target = LDL target + 30 mg/dL. No fasting sample needed.",
-    },
-    {
-      id: "cardiovascular-dyslipidaemia-c6",
-      front: "Triglyceride level at which pancreatitis prevention becomes the priority?",
-      back: "Above 500 mg/dL start a fibrate; above 1000 mg/dL treat urgently - alcohol abstinence, low fat diet, glycaemic control, fenofibrate, omega-3.",
-    },
-    {
-      id: "cardiovascular-dyslipidaemia-c7",
-      front: "First add-on drug when LDL target is missed on a maximal statin?",
-      back: "Ezetimibe 10 mg once daily (a further 15-25% LDL reduction); a PCSK9 inhibitor only after that combination fails.",
-    },
-    {
-      id: "cardiovascular-dyslipidaemia-c8",
-      front: "Which fibrate must never be combined with a statin?",
-      back: "Gemfibrozil - it inhibits statin glucuronidation and sharply increases myopathy risk. Fenofibrate may be combined with care.",
-    },
-    {
-      id: "cardiovascular-dyslipidaemia-c9",
-      front: "Statin rule in dialysis patients.",
-      back: "Do not initiate a statin de novo in a patient already on maintenance dialysis; continue one that was started before dialysis.",
-    },
-    {
-      id: "cardiovascular-dyslipidaemia-c10",
-      front: "Pathognomonic sign of familial hypercholesterolaemia.",
-      back: "Tendon xanthomata, classically over the Achilles and extensor tendons of the hands; with LDL 190 mg/dL or more and premature family history.",
-    },
-    {
-      id: "cardiovascular-dyslipidaemia-c11",
-      front: "Secondary causes of dyslipidaemia to exclude before treating.",
-      back: "Hypothyroidism, nephrotic syndrome, CKD, cholestasis, uncontrolled diabetes, alcohol, obesity, pregnancy; drugs - thiazides, steroids, OCPs, antiretrovirals, ciclosporin.",
-    },
-    {
-      id: "cardiovascular-dyslipidaemia-c12",
-      front: "When should lipoprotein(a) be measured?",
-      back: "Once in a lifetime, in premature coronary disease, a strong family history, familial hypercholesterolaemia, or recurrent events despite an LDL at target.",
     },
   ],
   references: [
@@ -3600,68 +3290,6 @@ topics.push({
       difficulty: "moderate",
     },
   ],
-  cards: [
-    {
-      id: "cardiovascular-atrial-fibrillation-c1",
-      front: "ECG criteria for atrial fibrillation.",
-      back: "Absent P waves with fibrillatory waves, irregularly irregular R-R intervals; needs 30 seconds of a rhythm strip or a standard 12-lead ECG.",
-    },
-    {
-      id: "cardiovascular-atrial-fibrillation-c2",
-      front: "CHA2DS2-VASc thresholds for anticoagulation.",
-      back: "Anticoagulate at 2 or more in men and 3 or more in women; consider at 1 in men, 2 in women; none at 0 in men, 1 in women.",
-    },
-    {
-      id: "cardiovascular-atrial-fibrillation-c3",
-      front: "Which two CHA2DS2-VASc items score 2 points?",
-      back: "Age 75 years or more, and prior stroke, TIA or thromboembolism.",
-    },
-    {
-      id: "cardiovascular-atrial-fibrillation-c4",
-      front: "What does valvular AF mean, and why does it matter?",
-      back: "Moderate-to-severe rheumatic mitral stenosis or a mechanical prosthetic valve - warfarin is mandatory and DOACs are contraindicated (INVICTUS, RE-ALIGN).",
-    },
-    {
-      id: "cardiovascular-atrial-fibrillation-c5",
-      front: "What does a HAS-BLED score of 3 or more mean?",
-      back: "High bleeding risk - correct modifiable factors (BP, labile INR, antiplatelets, NSAIDs, alcohol) and review more often. It is never a reason to withhold anticoagulation.",
-    },
-    {
-      id: "cardiovascular-atrial-fibrillation-c6",
-      front: "The 48-hour rule for cardioversion.",
-      back: "Beyond 48 hours or unknown duration: 3 weeks of anticoagulation before, or a transoesophageal echo to exclude thrombus; and at least 4 weeks of anticoagulation after, in every case.",
-    },
-    {
-      id: "cardiovascular-atrial-fibrillation-c7",
-      front: "Rate control targets in AF.",
-      back: "Resting rate below 110/min if asymptomatic with preserved LV function (lenient, RACE II); below 80/min if symptomatic or with LV dysfunction.",
-    },
-    {
-      id: "cardiovascular-atrial-fibrillation-c8",
-      front: "Drugs forbidden in pre-excited AF.",
-      back: "Digoxin, verapamil, diltiazem, adenosine and beta-blockers - all can precipitate ventricular fibrillation. Use procainamide or synchronised DC cardioversion.",
-    },
-    {
-      id: "cardiovascular-atrial-fibrillation-c9",
-      front: "Apixaban dose reduction criteria.",
-      back: "2.5 mg twice daily if two of: age 80 or over, weight 60 kg or less, creatinine 1.5 mg/dL or more. Otherwise 5 mg twice daily.",
-    },
-    {
-      id: "cardiovascular-atrial-fibrillation-c10",
-      front: "INR 5-9 with no bleeding - what do you do?",
-      back: "Withhold warfarin and give vitamin K 1-2.5 mg orally; recheck INR in 24 hours. Major bleeding at any INR needs IV vitamin K 10 mg plus prothrombin complex concentrate.",
-    },
-    {
-      id: "cardiovascular-atrial-fibrillation-c11",
-      front: "Is aspirin an acceptable alternative to anticoagulation in AF?",
-      back: "No. It provides minimal stroke protection with nearly the same bleeding risk and is not recommended for stroke prevention in AF.",
-    },
-    {
-      id: "cardiovascular-atrial-fibrillation-c12",
-      front: "Monitoring required for long-term amiodarone.",
-      back: "TSH and liver function 6-monthly, chest radiograph annually, and periodic eye examination; watch for pulmonary fibrosis, thyroid dysfunction and photosensitivity.",
-    },
-  ],
   references: [
     "ESC Guidelines for the Management of Atrial Fibrillation, 2024",
     "INVICTUS trial (rivaroxaban versus vitamin K antagonist in rheumatic heart disease with AF), NEJM 2022",
@@ -4125,68 +3753,6 @@ topics.push({
       explanation:
         "Widespread concave ST elevation crossing coronary territories, with PR depression and reciprocal PR elevation in aVR, in a patient with positional pleuritic pain, is acute pericarditis. A STEMI is confined to a coronary territory and shows reciprocal ST depression, both of which are absent here. Left ventricular aneurysm shows persistent ST elevation with well-formed Q waves in a patient weeks after an infarct, and there is no such history. Early repolarisation gives concave elevation with J point notching but no PR depression and no pleuritic positional pain, and Takotsubo cardiomyopathy mimics an anterior STEMI with regional changes and needs angiography to exclude occlusion.",
       difficulty: "moderate",
-    },
-  ],
-  cards: [
-    {
-      id: "cardiovascular-ecg-c1",
-      front: "Standard ECG calibration, and what one small and one large square mean.",
-      back: "25 mm/second and 10 mm/millivolt. Small square 0.04 s and 0.1 mV; large square 0.20 s and 0.5 mV.",
-    },
-    {
-      id: "cardiovascular-ecg-c2",
-      front: "ST elevation thresholds for diagnosing STEMI.",
-      back: "1 mm in two contiguous leads, except V2-V3 where it is 2.5 mm in men under 40, 2 mm in men 40 or older, and 1.5 mm in women.",
-    },
-    {
-      id: "cardiovascular-ecg-c3",
-      front: "How does a posterior infarct appear on the standard 12-lead ECG?",
-      back: "ST depression with tall R waves and upright T waves in V1-V3; confirm with 0.5 mm elevation in V7-V9 and reperfuse as a STEMI.",
-    },
-    {
-      id: "cardiovascular-ecg-c4",
-      front: "Sgarbossa criteria for infarction in left bundle branch block.",
-      back: "Concordant ST elevation 1 mm (5 points), concordant ST depression 1 mm in V1-V3 (3 points), excessively discordant elevation (modified Smith ST/S ratio minus 0.25). Score 3 or more is specific.",
-    },
-    {
-      id: "cardiovascular-ecg-c5",
-      front: "Sequence of ECG changes in rising hyperkalaemia.",
-      back: "Peaked T waves, then loss of P wave with PR prolongation, then QRS widening, then sine wave and asystole.",
-    },
-    {
-      id: "cardiovascular-ecg-c6",
-      front: "Upper limit of the corrected QT interval, and the level at which torsades risk becomes real.",
-      back: "440 ms in men and 460 ms in women by the Bazett formula; risk of torsades rises sharply above 500 ms.",
-    },
-    {
-      id: "cardiovascular-ecg-c7",
-      front: "Which drugs are contraindicated in atrial fibrillation with pre-excitation?",
-      back: "All AV nodal blockers - adenosine, verapamil, diltiazem, digoxin and beta-blockers. Use procainamide or DC cardioversion.",
-    },
-    {
-      id: "cardiovascular-ecg-c8",
-      front: "Commonest ECG finding in acute pulmonary embolism, and how often S1Q3T3 appears.",
-      back: "Sinus tachycardia is commonest; S1Q3T3 is seen in only about 10-20% of cases, so its absence excludes nothing.",
-    },
-    {
-      id: "cardiovascular-ecg-c9",
-      front: "ECG signs of a large pericardial effusion with tamponade.",
-      back: "Sinus tachycardia, low voltage complexes and electrical alternans; echocardiography is still mandatory.",
-    },
-    {
-      id: "cardiovascular-ecg-c10",
-      front: "Difference between digoxin effect and digoxin toxicity on the ECG.",
-      back: "Effect: sagging down-sloping ST depression with short QT (reverse tick), expected at therapeutic levels. Toxicity: bradyarrhythmias, ectopics, bidirectional VT, and atrial tachycardia with block.",
-    },
-    {
-      id: "cardiovascular-ecg-c11",
-      front: "What does ST elevation in aVR with widespread ST depression suggest?",
-      back: "Left main or severe triple-vessel disease; transfer urgently for angiography rather than thrombolysis.",
-    },
-    {
-      id: "cardiovascular-ecg-c12",
-      front: "Target time from arrival to first ECG in a patient with chest pain.",
-      back: "Within 10 minutes, repeated every 15-30 minutes while pain continues.",
     },
   ],
   references: [
@@ -4671,68 +4237,6 @@ topics.push({
       explanation:
         "This is Rutherford class IIb acute limb ischaemia - sensory loss beyond the toes with early motor weakness and inaudible arterial signals - almost certainly embolic from his atrial fibrillation, and it requires immediate systemic heparinisation and emergency revascularisation, usually Fogarty embolectomy, within hours. Warming, elevation and observation waste the six-hour window and elevation further reduces perfusion. An oral anticoagulant and an outpatient appointment guarantee limb loss. Primary amputation is reserved for class III with fixed mottling, profound anaesthesia and rigid muscles, which is not the case since motor weakness is only mild. Deferring for imaging overnight is too slow for a class IIb limb.",
       difficulty: "hard",
-    },
-  ],
-  cards: [
-    {
-      id: "cardiovascular-pad-vte-c1",
-      front: "Ankle-brachial index that diagnoses peripheral arterial disease, and the value that means severe disease.",
-      back: "0.90 or less diagnoses PAD; 0.40 or less is severe. Above 1.40 means incompressible calcified vessels - use the toe-brachial index.",
-    },
-    {
-      id: "cardiovascular-pad-vte-c2",
-      front: "How do you distinguish neurogenic from vascular claudication?",
-      back: "Neurogenic pain starts on standing, is relieved by sitting or leaning forward, is easier uphill or on a bicycle, and pulses are normal. Vascular pain comes at a fixed walking distance and is relieved by standing still.",
-    },
-    {
-      id: "cardiovascular-pad-vte-c3",
-      front: "Only drug with reproducible benefit on claudication distance, and its absolute contraindication.",
-      back: "Cilostazol 100 mg twice daily, improving pain-free walking by 40-60%; absolutely contraindicated in heart failure of any severity.",
-    },
-    {
-      id: "cardiovascular-pad-vte-c4",
-      front: "The six P of acute limb ischaemia and the time window.",
-      back: "Pain, pallor, pulselessness, paraesthesia, paralysis, perishing cold. About six hours to save the limb - heparinise and refer immediately.",
-    },
-    {
-      id: "cardiovascular-pad-vte-c5",
-      front: "Triad of Leriche syndrome.",
-      back: "Buttock and thigh claudication, absent femoral pulses, and erectile dysfunction - aorto-iliac occlusive disease.",
-    },
-    {
-      id: "cardiovascular-pad-vte-c6",
-      front: "Only effective treatment for Buerger disease.",
-      back: "Complete and permanent cessation of tobacco in every form; no drug, bypass or sympathectomy substitutes for it.",
-    },
-    {
-      id: "cardiovascular-pad-vte-c7",
-      front: "When is a D-dimer useful in suspected DVT?",
-      back: "Only after a pretest probability score, and only in the unlikely group (Wells 1 or less), where a negative high-sensitivity result excludes DVT without imaging.",
-    },
-    {
-      id: "cardiovascular-pad-vte-c8",
-      front: "Rivaroxaban and apixaban regimens for acute venous thromboembolism.",
-      back: "Rivaroxaban 15 mg BD for 21 days then 20 mg OD with food. Apixaban 10 mg BD for 7 days then 5 mg BD.",
-    },
-    {
-      id: "cardiovascular-pad-vte-c9",
-      front: "Duration of anticoagulation after a first venous thromboembolism.",
-      back: "Three months if provoked by a major transient risk factor; at least three months then consider indefinite therapy if unprovoked, recurrent, cancer-associated or antiphospholipid syndrome.",
-    },
-    {
-      id: "cardiovascular-pad-vte-c10",
-      front: "Which VTE patients should not receive a direct oral anticoagulant?",
-      back: "Pregnancy and lactation, antiphospholipid syndrome (triple positive), mechanical heart valves, severe renal impairment with creatinine clearance under 15 mL/min; low molecular weight heparin is preferred in active cancer with gastrointestinal or urothelial tumours.",
-    },
-    {
-      id: "cardiovascular-pad-vte-c11",
-      front: "Definition of high-risk (massive) pulmonary embolism and its treatment.",
-      back: "Systolic BP below 90 mmHg or a fall of 40 mmHg for 15 minutes; treat with systemic thrombolysis such as alteplase 100 mg over 2 hours, then anticoagulation.",
-    },
-    {
-      id: "cardiovascular-pad-vte-c12",
-      front: "Do compression stockings prevent post-thrombotic syndrome?",
-      back: "No. They relieve symptoms and oedema, but trial evidence does not show prevention; post-thrombotic syndrome still affects 20-50% after proximal DVT.",
     },
   ],
   references: [

@@ -3,7 +3,7 @@
  * the mock papers already sat. Also the door out — export and reset.
  */
 import { useSyncExternalStore } from "react";
-import { allCards, allMcqs, contentCounts, getSubject, subjects } from "../content/index";
+import { allMcqs, contentCounts, getSubject, subjects } from "../content/index";
 import {
   currentStreak,
   exportState,
@@ -14,7 +14,6 @@ import {
   subscribe,
   updateSettings,
 } from "../lib/store";
-import { isDue, isLearned } from "../lib/srs";
 import { BackBar, Chip, Empty } from "./ui";
 
 export default function ProgressScreen({ onBack }: { onBack: () => void }) {
@@ -23,9 +22,6 @@ export default function ProgressScreen({ onBack }: { onBack: () => void }) {
   const state = getState();
   const counts = contentCounts();
 
-  const cards = allCards();
-  const due = cards.filter((c) => state.cards[c.card.id] && isDue(state.cards[c.card.id], now)).length;
-  const learned = cards.filter((c) => isLearned(state.cards[c.card.id])).length;
   const answered = Object.values(state.mcqs).reduce((n, m) => n + m.seen, 0);
   const correct = Object.values(state.mcqs).reduce((n, m) => n + m.correct, 0);
 
@@ -76,8 +72,6 @@ export default function ProgressScreen({ onBack }: { onBack: () => void }) {
         {stat("topics opened", `${Object.keys(state.topics).length}/${counts.topics}`)}
         {stat("questions answered", String(answered))}
         {stat("accuracy", answered ? `${Math.round((correct / answered) * 100)}%` : "—")}
-        {stat("cards learned", `${learned}/${cards.length}`)}
-        {stat("cards due now", String(due))}
         {stat("MCQs available", String(allMcqs().length))}
         {stat("mock papers", String(state.exams.length))}
       </div>
@@ -177,19 +171,6 @@ export default function ProgressScreen({ onBack }: { onBack: () => void }) {
             value={state.settings.examMinutes}
             onChange={(e) =>
               updateSettings({ examMinutes: Math.max(10, Math.min(240, Number(e.target.value) || 60)) })
-            }
-            className="mt-1 w-full rounded-lg border border-slate-300 px-3 py-2 text-base"
-          />
-        </label>
-        <label className="mt-3 block text-sm font-semibold text-slate-800">
-          New flashcards a day
-          <input
-            type="number"
-            min={5}
-            max={100}
-            value={state.settings.newCardsPerDay}
-            onChange={(e) =>
-              updateSettings({ newCardsPerDay: Math.max(5, Math.min(100, Number(e.target.value) || 20)) })
             }
             className="mt-1 w-full rounded-lg border border-slate-300 px-3 py-2 text-base"
           />

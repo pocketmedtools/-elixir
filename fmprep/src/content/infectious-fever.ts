@@ -508,68 +508,6 @@ topics.push({
       difficulty: "easy",
     },
   ],
-  cards: [
-    {
-      id: "infectious-fever-acute-undifferentiated-fever-c1",
-      front: "Define acute undifferentiated febrile illness.",
-      back: "Fever of less than 14 days with no localising features on history, examination and bedside tests. It is a working label, not a diagnosis.",
-    },
-    {
-      id: "infectious-fever-acute-undifferentiated-fever-c2",
-      front: "The five causes of acute undifferentiated fever in India that must be excluded first.",
-      back: "Malaria, dengue, scrub typhus, enteric fever and leptospirosis.",
-    },
-    {
-      id: "infectious-fever-acute-undifferentiated-fever-c3",
-      front: "Which dengue test on day 3, and which on day 7?",
-      back: "NS1 antigen day 1-5; IgM MAC-ELISA from day 5 onwards. An IgM sent before day 5 is falsely reassuring.",
-    },
-    {
-      id: "infectious-fever-acute-undifferentiated-fever-c4",
-      front: "Where do you look for a scrub typhus eschar?",
-      back: "Axilla, groin, perineum, under the breasts, behind the ears and the natal cleft - the patient must be undressed.",
-    },
-    {
-      id: "infectious-fever-acute-undifferentiated-fever-c5",
-      front: "What is relative bradycardia (Faget sign) and what does it suggest?",
-      back: "A pulse inappropriately slow for the temperature. Suggests enteric fever, brucellosis, leptospirosis and drug fever.",
-    },
-    {
-      id: "infectious-fever-acute-undifferentiated-fever-c6",
-      front: "Best single empirical antimicrobial in undifferentiated tropical fever in India, and why.",
-      back: "Doxycycline 100 mg twice daily for 7 days - it covers scrub typhus, other rickettsioses and leptospirosis. Azithromycin substitutes in pregnancy and young children.",
-    },
-    {
-      id: "infectious-fever-acute-undifferentiated-fever-c7",
-      front: "Haemogram pattern: leucopenia with thrombocytopenia versus neutrophil leucocytosis with thrombocytopenia.",
-      back: "Leucopenia: dengue, malaria, enteric fever. Neutrophil leucocytosis: leptospirosis, scrub typhus, bacterial sepsis.",
-    },
-    {
-      id: "infectious-fever-acute-undifferentiated-fever-c8",
-      front: "Why are NSAIDs banned in undifferentiated fever?",
-      back: "Bleeding risk and acute kidney injury if the diagnosis turns out to be dengue. Paracetamol up to 4 g a day is the only antipyretic until dengue is excluded.",
-    },
-    {
-      id: "infectious-fever-acute-undifferentiated-fever-c9",
-      front: "Fever with jaundice: name five causes seen in Indian practice.",
-      back: "Falciparum malaria, leptospirosis, viral hepatitis A and E, enteric fever, and amoebic liver abscess or cholangitis.",
-    },
-    {
-      id: "infectious-fever-acute-undifferentiated-fever-c10",
-      front: "What proportion of acute undifferentiated fever remains without an aetiological diagnosis in Indian studies?",
-      back: "About 30-40% even where good serology and culture are available; the top five pathogens account for 60-70% of those diagnosed.",
-    },
-    {
-      id: "infectious-fever-acute-undifferentiated-fever-c11",
-      front: "The single most useful number to record in the history of a febrile patient.",
-      back: "The day of illness - it decides which test will be positive and when the dengue critical phase falls.",
-    },
-    {
-      id: "infectious-fever-acute-undifferentiated-fever-c12",
-      front: "Under which national programme is a cluster of fever cases reported?",
-      back: "The Integrated Disease Surveillance Programme (IDSP), through the weekly S, P and L forms.",
-    },
-  ],
   references: [
     "ICMR Treatment Guidelines for Antimicrobial Use in Common Syndromes, 3rd edition, 2022 - acute febrile illness",
     "National Vector Borne Disease Control Programme (NVBDCP / NCVBDC), MoHFW - guidelines for dengue, malaria and other vector-borne diseases",
@@ -1119,68 +1057,6 @@ topics.push({
       difficulty: "easy",
     },
   ],
-  cards: [
-    {
-      id: "infectious-fever-dengue-c1",
-      front: "List the seven WHO warning signs in dengue.",
-      back: "Abdominal pain or tenderness; persistent vomiting; clinical fluid accumulation; mucosal bleeding; lethargy or restlessness; liver enlargement over 2 cm; rising haematocrit with rapidly falling platelets.",
-    },
-    {
-      id: "infectious-fever-dengue-c2",
-      front: "When does the critical phase of dengue occur and how long does it last?",
-      back: "Days 3-7, beginning at defervescence, lasting 24-48 hours. Plasma leakage, shock and bleeding all happen here.",
-    },
-    {
-      id: "infectious-fever-dengue-c3",
-      front: "Fluid regimen for dengue with warning signs (Group B).",
-      back: "Isotonic crystalloid 5-7 mL/kg/h for 1-2 h, then 3-5 mL/kg/h for 2-4 h, then 2-3 mL/kg/h, titrated to clinical state, haematocrit and urine output.",
-    },
-    {
-      id: "infectious-fever-dengue-c4",
-      front: "Fluid bolus for compensated versus hypotensive dengue shock.",
-      back: "Compensated: 5-10 mL/kg isotonic crystalloid over 1 hour. Hypotensive: 20 mL/kg crystalloid or colloid over 15-30 minutes.",
-    },
-    {
-      id: "infectious-fever-dengue-c5",
-      front: "Shock persists after a fluid bolus - what does a falling haematocrit mean?",
-      back: "Concealed haemorrhage. Give fresh whole blood or packed cells. A rising haematocrit instead means continued leakage - more fluid or colloid.",
-    },
-    {
-      id: "infectious-fever-dengue-c6",
-      front: "Indications for platelet transfusion in dengue.",
-      back: "Clinically significant bleeding at any count; or prophylactically below 10,000 per cubic millimetre (below 20,000 with an added bleeding risk). Never for a count alone.",
-    },
-    {
-      id: "infectious-fever-dengue-c7",
-      front: "Which dengue test on day 2, and which on day 7?",
-      back: "Day 2: NS1 antigen (useful days 1-5). Day 7: IgM MAC-ELISA (positive from day 5, free at Sentinel Surveillance Hospitals under NVBDCP).",
-    },
-    {
-      id: "infectious-fever-dengue-c8",
-      front: "Discharge criteria in dengue.",
-      back: "Afebrile 48 hours without antipyretics, appetite improving, stable haematocrit off IV fluids for 24 hours, good urine output, no respiratory distress, platelets rising above 50,000.",
-    },
-    {
-      id: "infectious-fever-dengue-c9",
-      front: "What is expanded dengue syndrome?",
-      back: "Unusual manifestations without classical plasma leakage - encephalitis, myocarditis, acute liver failure, AKI, Guillain-Barre syndrome, acalculous cholecystitis, HLH.",
-    },
-    {
-      id: "infectious-fever-dengue-c10",
-      front: "Why is secondary dengue infection more severe?",
-      back: "Antibody-dependent enhancement: non-neutralising antibody from a previous serotype increases viral uptake into monocytes, worsening capillary leak.",
-    },
-    {
-      id: "infectious-fever-dengue-c11",
-      front: "Old WHO grading: what separates DHF grade II from grade III?",
-      back: "Grade II is fever with spontaneous bleeding; grade III adds circulatory failure with a narrow pulse pressure of 20 mmHg or less. Grade IV is unrecordable BP.",
-    },
-    {
-      id: "infectious-fever-dengue-c12",
-      front: "Treatments with no role in dengue.",
-      back: "Steroids, intravenous immunoglobulin, papaya leaf extract, prophylactic antibiotics, aspirin and NSAIDs, and intramuscular injections.",
-    },
-  ],
   references: [
     "WHO Dengue: Guidelines for Diagnosis, Treatment, Prevention and Control, new edition 2009",
     "National Guidelines for Clinical Management of Dengue Fever, NVBDCP / NCVBDC, MoHFW, 2015 (revised)",
@@ -1696,68 +1572,6 @@ topics.push({
       difficulty: "easy",
     },
   ],
-  cards: [
-    {
-      id: "infectious-fever-malaria-c1",
-      front: "NVBDCP regimen for uncomplicated P. vivax malaria.",
-      back: "Chloroquine 25 mg base/kg over 3 days (10, 10, 5 mg/kg) plus primaquine 0.25 mg/kg daily for 14 days for radical cure.",
-    },
-    {
-      id: "infectious-fever-malaria-c2",
-      front: "NVBDCP regimen for uncomplicated P. falciparum outside the North-East.",
-      back: "Artesunate 4 mg/kg daily for 3 days plus sulfadoxine-pyrimethamine 25/1.25 mg/kg single dose on day 1, plus primaquine 0.75 mg/kg single dose on day 2.",
-    },
-    {
-      id: "infectious-fever-malaria-c3",
-      front: "Why is the falciparum regimen different in the seven North-Eastern states?",
-      back: "Sulfadoxine-pyrimethamine resistance; artemether-lumefantrine twice daily for 3 days is used instead, with single-dose primaquine.",
-    },
-    {
-      id: "infectious-fever-malaria-c4",
-      front: "Intravenous artesunate dose in severe malaria.",
-      back: "2.4 mg/kg IV at 0, 12 and 24 hours then once daily (3 mg/kg per dose if under 20 kg). Minimum 24 hours, then complete with a full 3-day oral ACT.",
-    },
-    {
-      id: "infectious-fever-malaria-c5",
-      front: "Define cerebral malaria.",
-      back: "Unrousable coma persisting more than 30 minutes after a seizure, with asexual P. falciparum parasitaemia and no other cause. No neck stiffness or photophobia.",
-    },
-    {
-      id: "infectious-fever-malaria-c6",
-      front: "Three contraindications to primaquine.",
-      back: "Pregnancy, infants under 1 year, and G6PD deficiency. Where G6PD status is unknown, weekly 0.75 mg/kg for 8 weeks under supervision.",
-    },
-    {
-      id: "infectious-fever-malaria-c7",
-      front: "Why can a rapid diagnostic test not be used to monitor treatment response?",
-      back: "HRP2 antigen persists for 2-4 weeks after cure. Use the peripheral smear to judge response.",
-    },
-    {
-      id: "infectious-fever-malaria-c8",
-      front: "Falciparum malaria in pregnancy: which drug in which trimester?",
-      back: "Quinine in the first trimester (WHO now also allows artemether-lumefantrine); artemisinin combination therapy in the second and third. Primaquine never.",
-    },
-    {
-      id: "infectious-fever-malaria-c9",
-      front: "Name four WHO criteria for severe malaria.",
-      back: "Impaired consciousness, glucose below 40 mg/dL, haemoglobin below 7 g/dL in adults, creatinine above 3 mg/dL. Also acidosis, pulmonary oedema, bleeding, shock, parasitaemia above 10%.",
-    },
-    {
-      id: "infectious-fever-malaria-c10",
-      front: "Malaria chemoprophylaxis for a 3-week trip to a high-risk district.",
-      back: "Doxycycline 100 mg daily, starting 2 days before travel and continuing 4 weeks after leaving. Mefloquine 250 mg weekly for longer stays.",
-    },
-    {
-      id: "infectious-fever-malaria-c11",
-      front: "What is post-artesunate delayed haemolysis?",
-      back: "Haemolytic anaemia 1-3 weeks after artesunate for high parasitaemia. Recheck haemoglobin at 1 and 2 weeks and transfuse if required.",
-    },
-    {
-      id: "infectious-fever-malaria-c12",
-      front: "India's malaria elimination target.",
-      back: "National Framework for Malaria Elimination 2016-2030: zero indigenous cases by 2027 and elimination certification by 2030.",
-    },
-  ],
   references: [
     "National Drug Policy on Malaria, NVBDCP / NCVBDC, MoHFW, 2013 with subsequent updates",
     "National Framework for Malaria Elimination in India 2016-2030, MoHFW",
@@ -2255,68 +2069,6 @@ topics.push({
       difficulty: "moderate",
     },
   ],
-  cards: [
-    {
-      id: "infectious-fever-enteric-fever-c1",
-      front: "Gold standard test for enteric fever, and the volume of blood needed.",
-      back: "Blood culture, 10-15 mL in adults (2-4 mL in children) into 45-90 mL broth, two sets, before any antibiotic. Yield 60-80% in week 1.",
-    },
-    {
-      id: "infectious-fever-enteric-fever-c2",
-      front: "Which test stays positive despite prior antibiotics?",
-      back: "Bone marrow culture, 80-95% sensitive. It is the answer for the partially treated patient.",
-    },
-    {
-      id: "infectious-fever-enteric-fever-c3",
-      front: "Why is a single Widal titre useless in India?",
-      back: "Confounded by past infection, vaccination and cross-reactions; needs paired sera 7-10 days apart with a fourfold rise. Never treat on a single titre.",
-    },
-    {
-      id: "infectious-fever-enteric-fever-c4",
-      front: "First-line oral antibiotic for uncomplicated enteric fever in India.",
-      back: "Azithromycin 500 mg-1 g once daily for 7 days (20 mg/kg, max 1 g, in children). Alternative cefixime 20 mg/kg/day for 14 days.",
-    },
-    {
-      id: "infectious-fever-enteric-fever-c5",
-      front: "Define MDR and XDR typhoid.",
-      back: "MDR: resistant to chloramphenicol, ampicillin and cotrimoxazole. XDR: MDR plus fluoroquinolone and third-generation cephalosporin resistance - needs azithromycin or meropenem.",
-    },
-    {
-      id: "infectious-fever-enteric-fever-c6",
-      front: "Which laboratory marker predicts fluoroquinolone failure in typhoid?",
-      back: "Nalidixic acid resistance, or a ciprofloxacin MIC of 0.12 microgram/mL or more, even when the report says sensitive.",
-    },
-    {
-      id: "infectious-fever-enteric-fever-c7",
-      front: "Steroid regimen in severe typhoid with shock or altered sensorium.",
-      back: "Dexamethasone 3 mg/kg IV loading, then 1 mg/kg 6-hourly for 48 hours (8 doses). Reduced mortality from 55% to 10% in the Hoffman trial.",
-    },
-    {
-      id: "infectious-fever-enteric-fever-c8",
-      front: "In which week do perforation and haemorrhage occur, and where is the perforation?",
-      back: "Week 3, in the terminal ileum, from ulcerated Peyer patches. Avoid purgatives, enemas and NSAIDs.",
-    },
-    {
-      id: "infectious-fever-enteric-fever-c9",
-      front: "Define a chronic typhoid carrier and how to treat one.",
-      back: "Excretion in stool or urine beyond 12 months. Ciprofloxacin 750 mg BD for 28 days (or high-dose amoxicillin or azithromycin); cholecystectomy if gallstones and persistent excretion.",
-    },
-    {
-      id: "infectious-fever-enteric-fever-c10",
-      front: "Typbar-TCV: age, dose, schedule.",
-      back: "Typhoid conjugate vaccine from 6 months, single 0.5 mL IM. IAP advises 9-12 months with a booster at 4-6 years. WHO prequalified 2018.",
-    },
-    {
-      id: "infectious-fever-enteric-fever-c11",
-      front: "Haemogram clues to enteric fever.",
-      back: "Normal or low white count with left shift, aneosinophilia, relative lymphopenia, mild thrombocytopenia, transaminases 2-3 times normal.",
-    },
-    {
-      id: "infectious-fever-enteric-fever-c12",
-      front: "How long does defervescence take on an appropriate antibiotic?",
-      back: "Three to five days. Do not change the antibiotic on day 2 for continuing fever.",
-    },
-  ],
   references: [
     "ICMR Treatment Guidelines for Antimicrobial Use in Common Syndromes, 3rd edition, 2022 - enteric fever",
     "WHO Typhoid Vaccines: WHO Position Paper, March 2018",
@@ -2743,48 +2495,6 @@ topics.push({
       difficulty: "moderate",
     },
   ],
-  cards: [
-    {
-      id: "infectious-fever-scrub-typhus-c1",
-      front: "Organism, vector and reservoir of scrub typhus.",
-      back: "Orientia tsutsugamushi; larval trombiculid mite (chigger) of Leptotrombidium deliense, which is both vector and reservoir via transovarial transmission. Rodents are maintenance hosts.",
-    },
-    {
-      id: "infectious-fever-scrub-typhus-c2",
-      front: "Describe the eschar and where to look.",
-      back: "Painless 5-20 mm black necrotic crust with an erythematous halo and tender regional nodes. Look in axilla, groin, perineum, genitalia, under the breast, neck and behind the ear.",
-    },
-    {
-      id: "infectious-fever-scrub-typhus-c3",
-      front: "Laboratory pattern that suggests scrub typhus over dengue.",
-      back: "Neutrophil leucocytosis (dengue has leucopenia), thrombocytopenia, transaminases 2-5 times normal, raised alkaline phosphatase, hyponatraemia, hypoalbuminaemia.",
-    },
-    {
-      id: "infectious-fever-scrub-typhus-c4",
-      front: "Weil-Felix patterns for scrub typhus, spotted fever group and typhus group.",
-      back: "OX-K: scrub typhus. OX-2 plus OX-19: spotted fever group. OX-19 alone: typhus group. Significant titre 1 in 80; sensitivity only 30-50%.",
-    },
-    {
-      id: "infectious-fever-scrub-typhus-c5",
-      front: "Treatment of scrub typhus in an adult, a child and a pregnant woman.",
-      back: "Adult: doxycycline 100 mg BD 7 days. Child: doxycycline 4.5 mg/kg/day in two divided doses 7 days (or azithromycin 10 mg/kg/day 5 days). Pregnancy: azithromycin 500 mg OD 5 days.",
-    },
-    {
-      id: "infectious-fever-scrub-typhus-c6",
-      front: "Treatment of severe scrub typhus and the trial behind it.",
-      back: "Intravenous doxycycline 100 mg BD plus intravenous azithromycin 500 mg OD for 7 days - INTREST trial, Vellore, NEJM 2023 - with oxygen, ventilation and organ support.",
-    },
-    {
-      id: "infectious-fever-scrub-typhus-c7",
-      front: "Leading cause of death in scrub typhus and the timing.",
-      back: "ARDS and interstitial pneumonitis, appearing in the second week of untreated illness; untreated mortality 6-35%, under 2% with early doxycycline.",
-    },
-    {
-      id: "infectious-fever-scrub-typhus-c8",
-      front: "Chemoprophylaxis and vaccine for scrub typhus.",
-      back: "Doxycycline 200 mg once weekly before, during and up to 6 weeks after a short high-risk exposure. There is no vaccine; prevention is protective clothing, permethrin and DEET.",
-    },
-  ],
   references: [
     "DHR-ICMR Guidelines for Diagnosis and Management of Rickettsial Diseases in India, 2015",
     "Varghese GM et al., Intravenous Doxycycline, Azithromycin, or Both for Severe Scrub Typhus (INTREST trial), New England Journal of Medicine, 2023",
@@ -3207,48 +2917,6 @@ topics.push({
       difficulty: "moderate",
     },
   ],
-  cards: [
-    {
-      id: "infectious-fever-urinary-tract-infection-c1",
-      front: "Define uncomplicated UTI.",
-      back: "Cystitis or pyelonephritis in a non-pregnant, pre-menopausal woman with a structurally and functionally normal urinary tract and no comorbidity. Everyone else is complicated.",
-    },
-    {
-      id: "infectious-fever-urinary-tract-infection-c2",
-      front: "First-line drugs for uncomplicated cystitis in India and why not ciprofloxacin.",
-      back: "Nitrofurantoin 100 mg BD 5 days or fosfomycin 3 g single dose. E. coli fluoroquinolone resistance exceeds 70% and over 60% of isolates are ESBL producers.",
-    },
-    {
-      id: "infectious-fever-urinary-tract-infection-c3",
-      front: "When is asymptomatic bacteriuria treated?",
-      back: "Only in pregnancy and before urological procedures that breach the mucosa. Not in the elderly, diabetics, or catheterised patients.",
-    },
-    {
-      id: "infectious-fever-urinary-tract-infection-c4",
-      front: "Safe and unsafe UTI drugs in pregnancy.",
-      back: "Safe: nitrofurantoin (not after 36 weeks), cephalexin, amoxicillin-clavulanate, fosfomycin. Unsafe: fluoroquinolones, tetracyclines, cotrimoxazole in first trimester and near term.",
-    },
-    {
-      id: "infectious-fever-urinary-tract-infection-c5",
-      front: "Definition of recurrent UTI and the prophylaxis options.",
-      back: "Two or more in 6 months or three or more in 12 months. Nitrofurantoin 50-100 mg at night or post-coital for 6-12 months; methenamine hippurate 1 g BD (ALTAR trial); vaginal oestrogen after menopause.",
-    },
-    {
-      id: "infectious-fever-urinary-tract-infection-c6",
-      front: "Causes of sterile pyuria.",
-      back: "Genitourinary tuberculosis, partially treated UTI, chlamydial urethritis, stones, interstitial nephritis, papillary necrosis, adjacent appendicitis or diverticulitis.",
-    },
-    {
-      id: "infectious-fever-urinary-tract-infection-c7",
-      front: "Which patient with pyelonephritis needs imaging, and when?",
-      back: "Every man, child, pregnant woman, diabetic and patient with stones or obstruction - ultrasound at presentation; and anyone still febrile at 72 hours on appropriate antibiotics.",
-    },
-    {
-      id: "infectious-fever-urinary-tract-infection-c8",
-      front: "Imaging after a first febrile UTI in a child.",
-      back: "Ultrasound of kidneys and bladder in all; MCUG if ultrasound abnormal, atypical or recurrent infection, or under 2 years per ISPN; DMSA 4-6 months later for scarring when reflux is found.",
-    },
-  ],
   references: [
     "ICMR Treatment Guidelines for Antimicrobial Use in Common Syndromes, 3rd edition, 2022 - urinary tract infections",
     "ICMR Antimicrobial Resistance Surveillance Network annual report, 2022 - Enterobacterales resistance data",
@@ -3667,48 +3335,6 @@ topics.push({
       difficulty: "easy",
     },
   ],
-  cards: [
-    {
-      id: "infectious-fever-skin-soft-tissue-infection-c1",
-      front: "Organism rule for skin and soft tissue infection.",
-      back: "Purulent (abscess, furuncle, carbuncle) - Staphylococcus aureus. Non-purulent (cellulitis, erysipelas) - Streptococcus pyogenes.",
-    },
-    {
-      id: "infectious-fever-skin-soft-tissue-infection-c2",
-      front: "Treatment of limited and extensive impetigo.",
-      back: "Limited: topical mupirocin 2% or fusidic acid TDS for 5-7 days. Extensive: oral cephalexin or cloxacillin for 7 days. Warn about post-streptococcal glomerulonephritis.",
-    },
-    {
-      id: "infectious-fever-skin-soft-tissue-infection-c3",
-      front: "Oral drugs that cover community MRSA in India.",
-      back: "Cotrimoxazole double strength BD, doxycycline 100 mg BD, clindamycin 300-450 mg TDS; linezolid 600 mg BD for severe infection.",
-    },
-    {
-      id: "infectious-fever-skin-soft-tissue-infection-c4",
-      front: "Duration of antibiotics for uncomplicated cellulitis.",
-      back: "Five days if improving (Hepburn trial); extend only if the infection has not improved.",
-    },
-    {
-      id: "infectious-fever-skin-soft-tissue-infection-c5",
-      front: "Clinical clues to necrotising fasciitis.",
-      back: "Pain out of proportion, oedema beyond erythema, dusky or anaesthetic skin, haemorrhagic bullae, crepitus, dishwater discharge, systemic toxicity, progression over hours.",
-    },
-    {
-      id: "infectious-fever-skin-soft-tissue-infection-c6",
-      front: "LRINEC score components and cut-offs.",
-      back: "CRP, leucocyte count, haemoglobin, sodium, creatinine, glucose. Score 6-7 intermediate, 8 or more high risk. A low score does not exclude the diagnosis.",
-    },
-    {
-      id: "infectious-fever-skin-soft-tissue-infection-c7",
-      front: "Antibiotic regimen for necrotising fasciitis and why clindamycin.",
-      back: "Piperacillin-tazobactam or meropenem plus clindamycin plus vancomycin, with immediate debridement. Clindamycin suppresses toxin production and works in the stationary phase (Eagle effect).",
-    },
-    {
-      id: "infectious-fever-skin-soft-tissue-infection-c8",
-      front: "Prevention of recurrent cellulitis.",
-      back: "Treat tinea pedis and lymphoedema, compression, skin care, and penicillin V 250 mg BD for 12 months after two or more episodes (PATCH I). Foot hygiene for filarial ADLA under NVBDCP.",
-    },
-  ],
   references: [
     "Stevens DL et al., IDSA Practice Guidelines for the Diagnosis and Management of Skin and Soft Tissue Infections, 2014 update",
     "ICMR Treatment Guidelines for Antimicrobial Use in Common Syndromes, 3rd edition, 2022 - skin and soft tissue infections",
@@ -4113,48 +3739,6 @@ topics.push({
       explanation:
         "Hydrophobia with agitation after an untreated dog bite is furious rabies, which is virtually always fatal once symptoms begin; management is palliative sedation and analgesia, with gloves and eye protection against saliva, and post-exposure prophylaxis for anyone with mucosal or broken-skin contact with his saliva. Vaccine and immunoglobulin do not alter the course after onset. Acyclovir has no activity against rabies virus. The Milwaukee protocol has failed in almost every subsequent attempt. Human-to-human transmission is theoretically possible through saliva and has occurred through transplanted organs, so barrier precautions are appropriate even though airborne isolation is not needed.",
       difficulty: "moderate",
-    },
-  ],
-  cards: [
-    {
-      id: "infectious-fever-rabies-animal-bite-c1",
-      front: "WHO category II versus category III exposure.",
-      back: "II: nibbling of uncovered skin, minor scratches without bleeding - wash plus vaccine. III: transdermal bites or scratches, licks on broken skin, saliva on mucosa, bat contact - wash plus vaccine plus RIG.",
-    },
-    {
-      id: "infectious-fever-rabies-animal-bite-c2",
-      front: "First step in every animal bite and how long.",
-      back: "Wash with soap and running water for 15 minutes, then povidone iodine or 70% alcohol. No irritants, no cautery, no suturing.",
-    },
-    {
-      id: "infectious-fever-rabies-animal-bite-c3",
-      front: "Essen and Zagreb intramuscular schedules.",
-      back: "Essen: days 0, 3, 7, 14, 28 (five doses). Zagreb 2-1-1: two doses day 0 (one in each deltoid), then days 7 and 21 (four doses, three visits). Deltoid or thigh, never gluteal.",
-    },
-    {
-      id: "infectious-fever-rabies-animal-bite-c4",
-      front: "Updated Thai Red Cross intradermal schedule.",
-      back: "0.1 mL at two sites on days 0, 3, 7 and 28 (2-2-2-0-2), eight doses in four visits; reconstituted vial used within 6-8 hours.",
-    },
-    {
-      id: "infectious-fever-rabies-animal-bite-c5",
-      front: "Doses of ERIG, HRIG and monoclonal antibody.",
-      back: "ERIG 40 IU/kg (max 3000 IU); HRIG 20 IU/kg (max 1500 IU); rabies mAb 3.33 IU/kg (single) or 40 IU/kg (cocktail). Infiltrate into all wounds; day 0, up to day 7.",
-    },
-    {
-      id: "infectious-fever-rabies-animal-bite-c6",
-      front: "PEP for a previously fully vaccinated person.",
-      back: "Two doses on days 0 and 3 (IM or ID), no RIG, regardless of the interval since the prior course. Nerve tissue vaccine or incomplete course counts as unvaccinated.",
-    },
-    {
-      id: "infectious-fever-rabies-animal-bite-c7",
-      front: "Rule on observing the biting dog.",
-      back: "Start PEP on day 0; observe a healthy available dog or cat for 10 days; stop the course if it remains healthy. Observation never delays the first dose.",
-    },
-    {
-      id: "infectious-fever-rabies-animal-bite-c8",
-      front: "National programme facts for rabies in India.",
-      back: "National Rabies Control Programme under NCDC (12th Plan); NAPRE 2021 targets zero dog-mediated deaths by 2030; rabies notifiable since 2021; nerve tissue vaccine stopped 2004; World Rabies Day 28 September.",
     },
   ],
   references: [
@@ -4988,68 +4572,6 @@ topics.push({
       explanation:
         "A positive serum cryptococcal antigen without meningitis is asymptomatic cryptococcal antigenaemia, which predicts progression to meningitis and death; the WHO answer is pre-emptive fluconazole 800 mg daily for 2 weeks, then 400 mg for 8 weeks, then 200 mg until immune recovery, with antiretroviral therapy started about 2 weeks later rather than the same day, so that fungal burden falls before immune reconstitution. Starting antiretroviral therapy today without antifungal cover risks cryptococcal immune reconstitution disease. Amphotericin with flucytosine is induction therapy for proven meningitis, which this lumbar puncture excludes, and both drugs are hard to obtain in much of India. Cotrimoxazole does not treat cryptococcus. Waiting for a lower CD4 count abandons the patient to a preventable, highly lethal infection.",
       difficulty: "hard",
-    },
-  ],
-  cards: [
-    {
-      id: "infectious-fever-hiv-art-c1",
-      front: "The NACO algorithm for diagnosing HIV in an adult.",
-      back: "Strategy III - three tests (A1, A2, A3) using three different antigen preparations or test principles. All three reactive = positive. A1 non-reactive = negative. Two of three reactive = indeterminate: retest at 14-28 days and at 3 months, or settle with a nucleic acid test. Written informed consent is mandatory.",
-    },
-    {
-      id: "infectious-fever-hiv-art-c2",
-      front: "Window periods for the three classes of HIV test.",
-      back: "Third-generation antibody test about 3-12 weeks; fourth-generation antigen-antibody (p24) test about 2-4 weeks; nucleic acid test about 10-14 days. Retest at 6 weeks and 3 months after a defined exposure.",
-    },
-    {
-      id: "infectious-fever-hiv-art-c3",
-      front: "Why an antibody test fails under 18 months, and the NACO early infant diagnosis schedule.",
-      back: "Maternal IgG crosses the placenta and persists up to 18 months. Use HIV-1 DNA-PCR on a dried blood spot at 6 weeks (or first contact), repeat at 6 months and 12 months, test 6 weeks after breastfeeding stops, and confirm with an antibody test at 18 months. Start ART the same day a PCR is positive, while confirming on a second sample.",
-    },
-    {
-      id: "infectious-fever-hiv-art-c4",
-      front: "The three paediatric-specific WHO staging items examiners look for.",
-      back: "Stage 2: persistent parotid enlargement and linear gingival erythema (plus unexplained persistent hepatosplenomegaly). Stage 3: symptomatic lymphoid interstitial pneumonitis. None of these appear in the adult list.",
-    },
-    {
-      id: "infectious-fever-hiv-art-c5",
-      front: "First-line ART for an adult under NACO, and its two commonest interactions.",
-      back: "TLD - tenofovir 300 mg + lamivudine 300 mg + dolutegravir 50 mg, one fixed-dose tablet once daily, free at the ART centre, for everyone regardless of CD4. Rifampicin: double the dolutegravir (extra 50 mg 12 hours later, through rifampicin and 2 weeks after). Antacids, calcium, iron and zinc chelate it: give dolutegravir 2 hours before or 6 hours after, or take the supplement with food.",
-    },
-    {
-      id: "infectious-fever-hiv-art-c6",
-      front: "Viral load monitoring schedule and the definition of virological failure.",
-      back: "Viral load at 6 months, 12 months, then annually. Failure = above 1000 copies/mL on two consecutive samples at least 3 months apart with enhanced adherence counselling in between; only then switch to second line (boosted protease inhibitor plus optimised backbone).",
-    },
-    {
-      id: "infectious-fever-hiv-art-c7",
-      front: "Cotrimoxazole preventive therapy - start, stop and what it prevents.",
-      back: "Start at CD4 under 350, or WHO stage 3 or 4, or any HIV-TB co-infection regardless of CD4; one double-strength tablet (800/160 mg) daily. Stop after two CD4 counts above 350 at least 6 months apart on ART. Prevents Pneumocystis pneumonia, cerebral toxoplasmosis, isosporiasis, some bacterial diarrhoea and malaria. All exposed infants from 6 weeks; all infected children under 5 regardless of CD4.",
-    },
-    {
-      id: "infectious-fever-hiv-art-c8",
-      front: "Opportunistic infections by CD4 band.",
-      back: "Above 500: TB, bacterial pneumonia, herpes zoster. 200-500: oral candidiasis, oral hairy leukoplakia, pulmonary TB, Kaposi sarcoma. Under 200: Pneumocystis pneumonia, oesophageal candidiasis, extrapulmonary TB. Under 100: cerebral toxoplasmosis, cryptococcal meningitis, cryptosporidiosis. Under 50: CMV retinitis, disseminated MAC, primary CNS lymphoma.",
-    },
-    {
-      id: "infectious-fever-hiv-art-c9",
-      front: "Post-exposure prophylaxis: window, regimen, duration and follow-up.",
-      back: "Start as early as possible, ideally within 2 hours and no later than 72 hours. NACO uses one regimen for all exposures - tenofovir + lamivudine + dolutegravir daily for 28 days. Baseline HIV, HBsAg, anti-HCV, haemogram, LFT, RFT and pregnancy test; HIV retested at 6 weeks, 3 months and 6 months. Wash with soap and water; never squeeze the wound or apply spirit or bleach.",
-    },
-    {
-      id: "infectious-fever-hiv-art-c10",
-      front: "U=U - the four trials and the exact definition of undetectable.",
-      back: "HPTN 052 (2011/2016), PARTNER (2016), PARTNER2 (2019) and Opposites Attract (2018) - zero phylogenetically linked transmissions across tens of thousands of condomless acts. Undetectable means below 200 copies/mL, sustained for at least 6 months, documented by an actual laboratory report, with good adherence. It covers sexual transmission only, not other STIs, pregnancy or shared needles.",
-    },
-    {
-      id: "infectious-fever-hiv-art-c11",
-      front: "Safe conception options for a serodiscordant couple.",
-      back: "First choice: sustained documented suppression below 50 copies/mL plus unprotected intercourse limited to the fertile window, condoms at all other times. Add PrEP for the negative partner where suppression is not documented or anxiety is high. Sperm washing with IUI or IVF-ICSI when the man is positive and suppression is uncertain or there is infertility. Self-insemination with a syringe when the woman is the positive partner. Screen both for STIs and fertility, folic acid 400 microgram, and enrol in PPTCT if she is positive.",
-    },
-    {
-      id: "infectious-fever-hiv-art-c12",
-      front: "Four things the HIV/AIDS (Prevention and Control) Act 2017 requires.",
-      back: "Written informed consent for HIV testing and treatment (exceptions: court order, screening of donated blood, organs, tissue and semen, anonymised research); confidentiality with disclosure only by consent or court order; prohibition of discrimination in employment, education, healthcare, residence, insurance and public office; and a right to ART and management of opportunistic infections - qualified by the words as far as possible. Each state appoints an Ombudsman; court hearings are in camera and on priority.",
     },
   ],
   references: [

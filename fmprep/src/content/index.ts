@@ -9,14 +9,13 @@
  * Screens read the synchronous accessors below, which return whatever is
  * loaded, and subscribe to `subscribeContent` so they re-render when a chunk
  * arrives. `ensureAll` pulls the whole library in one go — that is what the
- * search box, the mock papers, the flashcards and the "make available
+ * search box, the mock papers and the "make available
  * offline" button use. Once a chunk has been fetched, the service worker has
  * it cached and it opens with no network at all.
  */
 import {
   FREQUENCY_ORDER,
   type ClinicalCase,
-  type Flashcard,
   type Frequency,
   type Mcq,
   type PaperId,
@@ -309,13 +308,6 @@ export type IndexedMcq = {
   topicId: string;
   topicTitle: string;
 };
-export type IndexedCard = {
-  card: Flashcard;
-  subjectId: string;
-  subjectTitle: string;
-  topicId: string;
-  topicTitle: string;
-};
 export type IndexedTheory = {
   question: TheoryQuestion;
   subjectId: string;
@@ -328,7 +320,6 @@ export type IndexedCase = { clinicalCase: ClinicalCase; subjectId: string; subje
 let topicMemo: Map<string, IndexedTopic> | null = null;
 let mcqListMemo: IndexedMcq[] | null = null;
 let mcqMapMemo: Map<string, IndexedMcq> | null = null;
-let cardListMemo: IndexedCard[] | null = null;
 let theoryListMemo: IndexedTheory[] | null = null;
 let caseListMemo: IndexedCase[] | null = null;
 
@@ -336,7 +327,6 @@ function clearIndexes() {
   topicMemo = null;
   mcqListMemo = null;
   mcqMapMemo = null;
-  cardListMemo = null;
   theoryListMemo = null;
   caseListMemo = null;
 }
@@ -402,23 +392,6 @@ export function mcqIndex(): Map<string, IndexedMcq> {
   return mcqMapMemo;
 }
 
-export function allCards(): IndexedCard[] {
-  if (cardListMemo) return cardListMemo;
-  const list: IndexedCard[] = [];
-  for (const subject of subjects())
-    for (const topic of subject.topics)
-      for (const card of topic.cards)
-        list.push({
-          card,
-          subjectId: subject.id,
-          subjectTitle: subject.title,
-          topicId: topic.id,
-          topicTitle: topic.title,
-        });
-  cardListMemo = list;
-  return list;
-}
-
 export function allTheory(): IndexedTheory[] {
   if (theoryListMemo) return theoryListMemo;
   const list: IndexedTheory[] = [];
@@ -467,7 +440,6 @@ export function contentCounts(): {
   subjectsAvailable: number;
   topics: number;
   mcqs: number;
-  cards: number;
   theory: number;
   cases: number;
 } {
@@ -476,7 +448,6 @@ export function contentCounts(): {
     subjectsAvailable: SUBJECT_META.length,
     topics: topicIndex().size,
     mcqs: allMcqs().length,
-    cards: allCards().length,
     theory: allTheory().length,
     cases: allCases().length,
   };

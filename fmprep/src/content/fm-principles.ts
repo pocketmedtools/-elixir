@@ -486,68 +486,6 @@ topics.push({
       difficulty: "moderate",
     },
   ],
-  cards: [
-    {
-      id: "fm-principles-definition-c1",
-      front: "WONCA Europe definition of general practice / family medicine.",
-      back: "An academic and scientific discipline with its own educational content, research, evidence base and clinical activity, and a clinical specialty oriented to primary care (2002, revised 2011).",
-    },
-    {
-      id: "fm-principles-definition-c2",
-      front: "Leeuwenhorst definition of the general practitioner (1974).",
-      back: "A licensed medical graduate who gives personal, primary and continuing care to individuals, families and a practice population irrespective of age, sex and illness.",
-    },
-    {
-      id: "fm-principles-definition-c3",
-      front: "McWhinney's first principle.",
-      back: "Commitment to the person rather than to a particular body of knowledge, group of diseases or special technique - an open-ended commitment with no natural end point.",
-    },
-    {
-      id: "fm-principles-definition-c4",
-      front: "How many of McWhinney's principles are there, and name the last one.",
-      back: "Nine. The ninth is that the family physician is a manager of resources - investigations, drugs, referrals and admissions.",
-    },
-    {
-      id: "fm-principles-definition-c5",
-      front: "Starfield's four Cs of primary care.",
-      back: "First contact access, continuity (longitudinality), comprehensiveness and coordination.",
-    },
-    {
-      id: "fm-principles-definition-c6",
-      front: "The six WONCA core competencies.",
-      back: "Primary care management, person-centred care, specific problem-solving skills, comprehensive approach, community orientation, holistic modelling.",
-    },
-    {
-      id: "fm-principles-definition-c7",
-      front: "Ecology of medical care figures per 1000 adults per month (White, 1961).",
-      back: "750 symptomatic, 250 consult a physician, 9 admitted, 5 referred to another physician, 1 reaches a university teaching hospital.",
-    },
-    {
-      id: "fm-principles-definition-c8",
-      front: "Who described the iceberg of disease, and what lies below the waterline?",
-      back: "Last, 1963. Presymptomatic, undiagnosed, untreated and unreported disease plus carriers - the majority of illness in the community.",
-    },
-    {
-      id: "fm-principles-definition-c9",
-      front: "Tudor Hart's inverse care law.",
-      back: "The availability of good medical care varies inversely with the need of the population served, and operates most completely where care is exposed to market forces (1971).",
-    },
-    {
-      id: "fm-principles-definition-c10",
-      front: "Marinker's contrast between hospital and general practice.",
-      back: "The hospital doctor reduces uncertainty, explores possibility and marginalises error; the general practitioner tolerates uncertainty, explores probability and marginalises danger.",
-    },
-    {
-      id: "fm-principles-definition-c11",
-      front: "Which model underpins family medicine, and who described it?",
-      back: "The biopsychosocial model, George Engel, 1977 - disease, illness experience and social context addressed together.",
-    },
-    {
-      id: "fm-principles-definition-c12",
-      front: "Two Indian policy documents that institutionalise family medicine.",
-      back: "National Health Policy 2017 (two-thirds of the budget to primary care, family medicine training) and Ayushman Bharat 2018 Health and Wellness Centres delivering comprehensive primary health care.",
-    },
-  ],
   references: [
     "McWhinney IR, Freeman T. Textbook of Family Medicine, 4th edition, Oxford University Press, 2016",
     "WONCA Europe. The European Definition of General Practice / Family Medicine, 2011 revision",
@@ -1095,68 +1033,6 @@ topics.push({
       difficulty: "moderate",
     },
   ],
-  cards: [
-    {
-      id: "fm-principles-consultation-c1",
-      front: "Pendleton's task one.",
-      back: "Define the reason for the patient's attendance, including the nature and history of the problem, its aetiology, the patient's ideas, concerns and expectations, and the effects of the problem.",
-    },
-    {
-      id: "fm-principles-consultation-c2",
-      front: "The five sequential stages of Calgary-Cambridge.",
-      back: "Initiating the session, gathering information, physical examination, explanation and planning, closing the session.",
-    },
-    {
-      id: "fm-principles-consultation-c3",
-      front: "The two continuous threads of Calgary-Cambridge.",
-      back: "Providing structure and building the relationship - drawn as vertical bars beside the five stages.",
-    },
-    {
-      id: "fm-principles-consultation-c4",
-      front: "Neighbour's five checkpoints.",
-      back: "Connecting, summarising, handing over, safety netting, housekeeping.",
-    },
-    {
-      id: "fm-principles-consultation-c5",
-      front: "Byrne and Long's six phases (1976).",
-      back: "Relating to the patient, discovering the reason for attendance, verbal or physical examination, consideration of the condition, detailing treatment, terminating.",
-    },
-    {
-      id: "fm-principles-consultation-c6",
-      front: "Stott and Davis's four areas (1979).",
-      back: "Management of the presenting problem, modification of help-seeking behaviour, management of continuing problems, opportunistic health promotion.",
-    },
-    {
-      id: "fm-principles-consultation-c7",
-      front: "Expand BATHE.",
-      back: "Background, Affect, Trouble, Handling, Empathy - a one-minute psychosocial screen from The Fifteen Minute Hour.",
-    },
-    {
-      id: "fm-principles-consultation-c8",
-      front: "Expand SPIKES.",
-      back: "Setting, Perception, Invitation, Knowledge, Emotions with empathic response, Strategy and summary.",
-    },
-    {
-      id: "fm-principles-consultation-c9",
-      front: "The three ICE questions in plain words.",
-      back: "What do you think is causing it? Is there anything you are particularly worried about? What were you hoping we could do today?",
-    },
-    {
-      id: "fm-principles-consultation-c10",
-      front: "Balint: collusion of anonymity.",
-      back: "Responsibility for a patient diffused among several doctors so that no single doctor owns the decision - the argument for continuity of care.",
-    },
-    {
-      id: "fm-principles-consultation-c11",
-      front: "Helman's six folk-model questions.",
-      back: "What has happened? Why has it happened? Why to me? Why now? What would happen if nothing were done? What should I do about it or whom should I consult?",
-    },
-    {
-      id: "fm-principles-consultation-c12",
-      front: "The five elements of good safety netting.",
-      back: "What you expect to happen, what would be abnormal, exactly what to watch for, where to go, and by when - all recorded in the notes.",
-    },
-  ],
   references: [
     "Silverman J, Kurtz S, Draper J. Skills for Communicating with Patients, 3rd edition, CRC Press, 2013",
     "Pendleton D, Schofield T, Tate P, Havelock P. The New Consultation, Oxford University Press, 2003",
@@ -1598,68 +1474,6 @@ topics.push({
       explanation:
         "Comprehensiveness is about the breadth of needs met at first contact, so a very high referral rate suggests a narrow practice while a very low one raises safety concerns about problems retained beyond competence. Never referring is unsafe, not comprehensive. It covers curative, preventive, promotive, rehabilitative and palliative care rather than prevention alone, depends on skills and scope rather than equipment, and is a distinct attribute from continuity, which concerns the persistence of the relationship over time.",
       difficulty: "moderate",
-    },
-  ],
-  cards: [
-    {
-      id: "fm-principles-continuity-c1",
-      front: "The three types of continuity of care.",
-      back: "Informational (the data travel), management (a consistent plan) and relational (an ongoing personal relationship) - the last is unique to family medicine.",
-    },
-    {
-      id: "fm-principles-continuity-c2",
-      front: "The best-known outcome benefit of relational continuity.",
-      back: "Lower mortality - Pereira Gray et al, BMJ Open 2018, 22 studies in nine countries; also fewer emergency attendances and admissions.",
-    },
-    {
-      id: "fm-principles-continuity-c3",
-      front: "Penchansky and Thomas's five dimensions of access.",
-      back: "Availability, accessibility (geographic), affordability, accommodation (hours and appointments) and acceptability.",
-    },
-    {
-      id: "fm-principles-continuity-c4",
-      front: "How is comprehensiveness measured?",
-      back: "By the range of service categories provided and by the referral rate - a very high referral rate means a narrow practice, a very low one raises safety concerns.",
-    },
-    {
-      id: "fm-principles-continuity-c5",
-      front: "The single highest-yield coordination task after hospital discharge.",
-      back: "Medication reconciliation - producing one agreed drug list from the discharge summary and the previous prescription.",
-    },
-    {
-      id: "fm-principles-continuity-c6",
-      front: "How many service packages does an Ayushman Arogya Mandir deliver, and name three commonly forgotten ones.",
-      back: "Twelve. Commonly forgotten: elderly and palliative care, mental health, and emergency medical services and trauma care.",
-    },
-    {
-      id: "fm-principles-continuity-c7",
-      front: "Who staffs a subcentre-level Health and Wellness Centre?",
-      back: "A community health officer (BSc nursing or ayurveda graduate with a certificate in community health) with ANMs and about five ASHAs.",
-    },
-    {
-      id: "fm-principles-continuity-c8",
-      front: "What is the CBAC used for?",
-      back: "Community Based Assessment Checklist - risk scoring of everyone over 30 at an HWC to select those for hypertension, diabetes and cancer screening.",
-    },
-    {
-      id: "fm-principles-continuity-c9",
-      front: "The Triple Aim, and what the Quadruple Aim adds.",
-      back: "Better population health, better patient experience, lower per capita cost; the fourth aim is clinician wellbeing.",
-    },
-    {
-      id: "fm-principles-continuity-c10",
-      front: "The workable compromise between access and continuity.",
-      back: "A named doctor with booked reviews for chronic and complex care, plus same-day open access for acute illness.",
-    },
-    {
-      id: "fm-principles-continuity-c11",
-      front: "Which Balint concept describes the harm caused by poor coordination?",
-      back: "Collusion of anonymity - responsibility spread across many doctors so that no one owns the decision.",
-    },
-    {
-      id: "fm-principles-continuity-c12",
-      front: "PM-JAY financial cover per family per year.",
-      back: "Five lakh rupees for secondary and tertiary hospitalisation, for the eligible bottom 40 per cent of households (plus all above 70 years under the 2024 extension).",
     },
   ],
   references: [
@@ -2254,73 +2068,6 @@ topics.push({
       difficulty: "hard",
     },
   ],
-  cards: [
-    {
-      id: "fm-principles-family-unit-c1",
-      front: "Define a genogram.",
-      back: "A pictorial display of family structure, medical history and relationships over at least three generations using standard symbols - structure plus relationships, unlike a plain pedigree chart.",
-    },
-    {
-      id: "fm-principles-family-unit-c2",
-      front: "Genogram: male, female, index patient, deceased.",
-      back: "Square, circle, double outline or arrow, and a cross through the symbol with age or year of death.",
-    },
-    {
-      id: "fm-principles-family-unit-c3",
-      front: "Genogram: separation versus divorce.",
-      back: "One oblique stroke across the marriage line for separation, two for divorce.",
-    },
-    {
-      id: "fm-principles-family-unit-c4",
-      front: "What does a dotted line drawn around symbols on a genogram mean?",
-      back: "Everyone living in the same household - the line that distinguishes a joint from a nuclear household.",
-    },
-    {
-      id: "fm-principles-family-unit-c5",
-      front: "Expand the family APGAR and give its author and year.",
-      back: "Adaptation, Partnership, Growth, Affection, Resolve. Gabriel Smilkstein, 1978.",
-    },
-    {
-      id: "fm-principles-family-unit-c6",
-      front: "Family APGAR scoring and interpretation bands.",
-      back: "Each item 2 (almost always), 1 (some of the time), 0 (hardly ever); total 0-10. 7-10 highly functional, 4-6 moderately dysfunctional, 0-3 severely dysfunctional.",
-    },
-    {
-      id: "fm-principles-family-unit-c7",
-      front: "Expand SCREEM and say how it is scored.",
-      back: "Social, Cultural, Religious, Economic, Educational, Medical. Not scored numerically - each domain is classified as a resource or a pathology.",
-    },
-    {
-      id: "fm-principles-family-unit-c8",
-      front: "Name Duvall's eight family life cycle stages.",
-      back: "Married couple; childbearing; preschool; school-age; teenage; launching; middle-aged parents; ageing family members - defined by the age of the oldest child.",
-    },
-    {
-      id: "fm-principles-family-unit-c9",
-      front: "What is a family life line?",
-      back: "A chronological chart of significant family events plotted against dates and illness onsets, used to show the temporal relationship between life events and symptoms.",
-    },
-    {
-      id: "fm-principles-family-unit-c10",
-      front: "Hill's ABCX model of family crisis.",
-      back: "A (stressor event) interacting with B (crisis-meeting resources) and C (the family's perception of the event) produces X (the crisis); the double ABCX adds pile-up and adaptation.",
-    },
-    {
-      id: "fm-principles-family-unit-c11",
-      front: "What is an ecomap?",
-      back: "A diagram of the family circle with lines to external systems (school, work, temple, PHC, moneylender); line thickness shows strength and arrows show the direction of energy flow.",
-    },
-    {
-      id: "fm-principles-family-unit-c12",
-      front: "Expand the PRACTICE model of family assessment.",
-      back: "Presenting problem, Roles and structure, Affect, Communication, Time in the life cycle, Illness in the family and coping with stress, Community resources, Environment.",
-    },
-    {
-      id: "fm-principles-family-unit-c13",
-      front: "Which scales are used for socio-economic classification in Indian family assessment?",
-      back: "Modified Kuppuswamy (education, occupation, family income; income slabs revised annually with the CPI) for urban, and BG Prasad (per capita monthly income) for rural families.",
-    },
-  ],
   references: [
     "McGoldrick M, Gerson R, Petry S. Genograms: Assessment and Intervention, 4th edition, WW Norton, 2020",
     "Smilkstein G. The family APGAR - a proposal for a family function test. Journal of Family Practice, 1978",
@@ -2777,58 +2524,6 @@ topics.push({
       explanation:
         "Regulation 1.3 requires that records of indoor patients be maintained in the standard proforma for three years from the date of commencement of treatment, and that a copy be supplied to the patient or an authorised attendant within 72 hours of a request. The other options mix in retention periods used by hospitals for other purposes or by other jurisdictions. Note that medico-legal cases and records relevant to a pending claim should in practice be kept much longer, because limitation periods under consumer law may extend beyond three years.",
       difficulty: "moderate",
-    },
-  ],
-  cards: [
-    {
-      id: "fm-principles-records-audit-c1",
-      front: "Define clinical audit in one sentence.",
-      back: "A quality improvement process that seeks to improve patient care and outcomes through the systematic review of care against explicit criteria and the implementation of change (NICE, 2002).",
-    },
-    {
-      id: "fm-principles-records-audit-c2",
-      front: "The five stages of the audit cycle.",
-      back: "1. Select topic, set criteria and standards. 2. Measure current performance. 3. Compare and analyse the gap. 4. Implement change. 5. Re-audit to close the loop - drawn as a spiral, not a circle.",
-    },
-    {
-      id: "fm-principles-records-audit-c3",
-      front: "Criterion versus standard.",
-      back: "A criterion is a measurable statement of what should happen; a standard is the level of performance expected, expressed as a percentage with a timeframe.",
-    },
-    {
-      id: "fm-principles-records-audit-c4",
-      front: "Donabedian's three types of quality criteria, with a diabetes example of each.",
-      back: "Structure - a calibrated glucometer available. Process - annual foot examination documented. Outcome - proportion with HbA1c below 7%. Process criteria are preferred in small-practice audit.",
-    },
-    {
-      id: "fm-principles-records-audit-c5",
-      front: "The four components of Weed's problem-oriented medical record.",
-      back: "Defined database; complete problem list; initial plans (diagnostic, therapeutic, patient education) for each problem; progress notes in SOAP format against the problem number.",
-    },
-    {
-      id: "fm-principles-records-audit-c6",
-      front: "Expand SOAP and SOAPIER.",
-      back: "Subjective, Objective, Assessment, Plan. SOAPIER adds Intervention, Evaluation and Revision; SOAPE adds Education.",
-    },
-    {
-      id: "fm-principles-records-audit-c7",
-      front: "Structure of ICPC-2.",
-      back: "Biaxial: 17 body-system chapters (letters) crossed with 7 components (1-99) - symptoms, diagnostic and preventive procedures, medication and treatment, test results, administrative, referral and follow-up, diagnoses. Codes reason for encounter, problem managed and process of care.",
-    },
-    {
-      id: "fm-principles-records-audit-c8",
-      front: "How does audit differ from research in terms of approval needed?",
-      back: "Audit measures existing care against agreed standards with no new intervention, so it needs service or institutional approval; research generates new knowledge, may allocate or randomise, and needs ethics committee approval with written informed consent.",
-    },
-    {
-      id: "fm-principles-records-audit-c9",
-      front: "NMC record-keeping rule to quote.",
-      back: "Regulation 1.3, Code of Ethics 2002: indoor records in the standard proforma, retained three years from commencement of treatment, copy supplied to the patient or authorised attendant within 72 hours of a request.",
-    },
-    {
-      id: "fm-principles-records-audit-c10",
-      front: "What is a significant event analysis?",
-      back: "A structured team review of a single important case - a missed myocardial infarction, a drug error, a maternal death, a near miss - covering what happened, why, what was learned and what will change; complementary to criterion-based audit.",
     },
   ],
   references: [
@@ -3328,58 +3023,6 @@ topics.push({
       explanation:
         "In the Oxford hierarchy level 1 is a systematic review of RCTs or an individual RCT with a narrow confidence interval, level 2 covers cohort studies and low-quality RCTs, level 3 case-control studies, level 4 case series and poor-quality observational studies, and level 5 expert opinion or bench reasoning. Grades follow: A from consistent level 1, B from consistent level 2 or 3, C from level 4, D from level 5 or inconsistent evidence. Remember to add that the hierarchy is a presumption rather than a rule, and that GRADE now formalises upgrading and downgrading for effect size, bias, indirectness, imprecision and publication bias.",
       difficulty: "easy",
-    },
-  ],
-  cards: [
-    {
-      id: "fm-principles-ebm-c1",
-      front: "Sackett's definition of evidence-based medicine.",
-      back: "The conscientious, explicit and judicious use of current best evidence in making decisions about the care of individual patients (BMJ 1996), integrating individual clinical expertise with the best available external evidence and the patient's values.",
-    },
-    {
-      id: "fm-principles-ebm-c2",
-      front: "The five steps of EBM.",
-      back: "Ask a focused PICO question; Acquire the best evidence; Appraise it for validity, importance and applicability; Apply it with the patient; Assess or audit your own performance.",
-    },
-    {
-      id: "fm-principles-ebm-c3",
-      front: "Expand PICO and say what makes a good O.",
-      back: "Patient or problem, Intervention, Comparison, Outcome (add T for time or type of study). The outcome must be patient-important - stroke, death, admission - not a surrogate such as a lipid level or a bone density.",
-    },
-    {
-      id: "fm-principles-ebm-c4",
-      front: "Formulae for sensitivity, specificity, PPV and NPV.",
-      back: "Sensitivity = a/(a+c); specificity = d/(b+d); PPV = a/(a+b); NPV = d/(c+d), where a = true positive, b = false positive, c = false negative, d = true negative. Sensitivity and specificity are prevalence-independent; predictive values are not.",
-    },
-    {
-      id: "fm-principles-ebm-c5",
-      front: "Likelihood ratio formulae and their interpretation thresholds.",
-      back: "LR+ = sensitivity/(1 - specificity); LR- = (1 - sensitivity)/specificity. LR+ over 10 or LR- under 0.1 gives a large, usually conclusive change in probability; 5-10 and 0.1-0.2 moderate; 2-5 and 0.2-0.5 small; near 1 negligible.",
-    },
-    {
-      id: "fm-principles-ebm-c6",
-      front: "RR, RRR, ARR and NNT from CER and EER.",
-      back: "RR = EER/CER; RRR = (CER - EER)/CER; ARR = CER - EER; NNT = 1/ARR, rounded up and quoted with the outcome and the time period. NNH = 1/absolute risk increase.",
-    },
-    {
-      id: "fm-principles-ebm-c7",
-      front: "Why is intention-to-treat analysis preferred?",
-      back: "It analyses patients in the groups to which they were randomised, preserving the balance that randomisation created; it gives the more conservative and more realistic estimate, whereas per-protocol analysis reintroduces selection bias.",
-    },
-    {
-      id: "fm-principles-ebm-c8",
-      front: "How do you read a forest plot?",
-      back: "Each line is a study: the square is its point estimate with area proportional to weight, the line is its 95% CI. The vertical line is no effect (1 for ratios, 0 for differences). The diamond is the pooled estimate; if it crosses the line the pooled result is not significant.",
-    },
-    {
-      id: "fm-principles-ebm-c9",
-      front: "I-squared bands for heterogeneity.",
-      back: "0-40% may not be important; 30-60% moderate; 50-90% substantial; 75-100% considerable. Substantial heterogeneity calls for a random-effects model, subgroup analysis, or not pooling at all. Publication bias is assessed with a funnel plot.",
-    },
-    {
-      id: "fm-principles-ebm-c10",
-      front: "Level of evidence versus grade of recommendation.",
-      back: "The level describes the study design and quality (Oxford levels 1 to 5); the grade describes what to do about it (A to D). GRADE gives four certainty levels - high, moderate, low, very low - and only two recommendation strengths, strong and conditional.",
     },
   ],
   references: [
@@ -3930,68 +3573,6 @@ topics.push({
       difficulty: "easy",
     },
   ],
-  cards: [
-    {
-      id: "fm-principles-research-thesis-c1",
-      front: "Case-control versus cohort: which is efficient for what?",
-      back: "Case-control is efficient for rare diseases and long latency and gives an odds ratio; cohort is efficient for rare exposures, gives incidence and relative risk, and establishes temporality.",
-    },
-    {
-      id: "fm-principles-research-thesis-c2",
-      front: "Sample size formula for estimating a proportion, and a worked example.",
-      back: "n = Z squared x p x q / d squared, that is 4pq/d squared at 95% confidence. With p = 20%, q = 80%, d = 5%: n = 4 x 20 x 80 / 25 = 256; add 10-20% for non-response and multiply by the design effect for cluster sampling.",
-    },
-    {
-      id: "fm-principles-research-thesis-c3",
-      front: "Type I error, type II error and power.",
-      back: "Type I (alpha) is rejecting a true null hypothesis - a false positive, conventionally set at 0.05. Type II (beta) is failing to reject a false null hypothesis - a false negative. Power = 1 - beta, conventionally 80% or 90%.",
-    },
-    {
-      id: "fm-principles-research-thesis-c4",
-      front: "The three conditions that define a confounder.",
-      back: "Associated with the exposure; an independent risk factor for the outcome; not on the causal pathway between them. Controlled by randomisation, restriction, matching, stratification and multivariable regression.",
-    },
-    {
-      id: "fm-principles-research-thesis-c5",
-      front: "Name the probability sampling methods and their trade-offs.",
-      back: "Simple random (unbiased, needs a full frame); systematic (easy, fails with periodicity); stratified (most precise when strata differ); cluster (cheapest in the field, least precise, needs a design effect); multistage (used in large surveys such as NFHS).",
-    },
-    {
-      id: "fm-principles-research-thesis-c6",
-      front: "Composition of an Institutional Ethics Committee.",
-      back: "At least seven members - chairperson from outside the institution, member secretary, basic medical scientist, clinicians, legal expert, social scientist or philosopher or NGO representative, and a lay person; both sexes represented; not more than half from the same institution.",
-    },
-    {
-      id: "fm-principles-research-thesis-c7",
-      front: "The three elements of valid informed consent.",
-      back: "Information, comprehension and voluntariness - documented on a participant information sheet in the local language plus a signed or thumb-impressed consent form, with an impartial witness for illiterate participants and the right to withdraw without loss of usual care.",
-    },
-    {
-      id: "fm-principles-research-thesis-c8",
-      front: "IMRAD, and the reporting guideline for each design.",
-      back: "Introduction, Materials and Methods, Results, and Discussion. CONSORT for trials, STROBE for observational studies, PRISMA for systematic reviews, STARD for diagnostic accuracy and COREQ for qualitative research.",
-    },
-    {
-      id: "fm-principles-research-thesis-c9",
-      front: "UGC 2018 plagiarism similarity bands.",
-      back: "Level 0 up to 10% - no penalty; level 1 above 10 to 40%; level 2 above 40 to 60%; level 3 above 60% - with escalating penalties up to withdrawal of the degree. Self-plagiarism and mosaic paraphrasing are included.",
-    },
-    {
-      id: "fm-principles-research-thesis-c10",
-      front: "Telemedicine Practice Guidelines 2020: date, legal position and consent rule.",
-      back: "Notified 25 March 2020 by the BoG in supersession of the MCI with NITI Aayog, appended to the IMC Ethics Regulations 2002 as Regulation 3.8. Consent is implied when the patient initiates and must be explicit when the RMP, caregiver or health worker initiates.",
-    },
-    {
-      id: "fm-principles-research-thesis-c11",
-      front: "The four telemedicine prescribing lists.",
-      back: "List O - over-the-counter, any mode. List A - first consult only by video, or refill at follow-up. List B - add-on at follow-up for a condition already diagnosed in person. Prohibited - Schedule X and NDPS drugs, never by telemedicine.",
-    },
-    {
-      id: "fm-principles-research-thesis-c12",
-      front: "The four ICMJE authorship criteria.",
-      back: "Substantial contribution to conception or design or to acquisition, analysis or interpretation; drafting or critical revision for intellectual content; final approval of the version to be published; and accountability for all aspects of the work. All four must be met.",
-    },
-  ],
   references: [
     "Indian Council of Medical Research. National Ethical Guidelines for Biomedical and Health Research Involving Human Participants, ICMR, 2017",
     "Ministry of Health and Family Welfare, Government of India. New Drugs and Clinical Trials Rules, 2019",
@@ -4470,48 +4051,6 @@ topics.push({
       explanation:
         "There are two measurements on the same individuals, so the observations are paired, the outcome is continuous and normally distributed, and the paired t test is correct - it analyses the within-patient differences and is more powerful than treating the readings as independent. The unpaired t test is for two separate groups of different individuals and would discard the pairing, wasting information and widening the confidence interval. The chi-square test applies to categorical outcomes in a contingency table, not to a continuous variable such as blood pressure. One-way ANOVA is used for three or more independent groups; with only two paired measurements it is not applicable, and its repeated-measures form would be needed only if there were three or more time points.",
       difficulty: "moderate",
-    },
-  ],
-  cards: [
-    {
-      id: "fm-principles-biostatistics-c1",
-      front: "When do you use mean, median and mode?",
-      back: "Mean for symmetrical continuous data; median for skewed data, outliers or open-ended classes (income, length of stay); mode for nominal data. In right skew, mean > median > mode.",
-    },
-    {
-      id: "fm-principles-biostatistics-c2",
-      front: "Standard deviation versus standard error of the mean",
-      back: "SD is the square root of the variance and describes the scatter of individual observations. SEM = SD divided by the square root of n and describes the precision of the sample mean; SEM falls as n rises, SD does not.",
-    },
-    {
-      id: "fm-principles-biostatistics-c3",
-      front: "Area under the normal curve",
-      back: "68.3% within mean plus or minus 1 SD, 95.4% within 2 SD (95% within 1.96 SD), 99.7% within 3 SD (99% within 2.58 SD).",
-    },
-    {
-      id: "fm-principles-biostatistics-c4",
-      front: "What exactly does a p value of 0.03 mean?",
-      back: "If the null hypothesis were true, there is a 3% probability of obtaining a difference at least as large as the one observed. It is not the probability that the null hypothesis is true, and it says nothing about the size or clinical importance of the effect.",
-    },
-    {
-      id: "fm-principles-biostatistics-c5",
-      front: "Type I error, type II error and power",
-      back: "Type I (alpha) is rejecting a true null hypothesis, a false positive, conventionally 0.05. Type II (beta) is failing to reject a false null hypothesis, a false negative. Power = 1 - beta, conventionally 80-90%.",
-    },
-    {
-      id: "fm-principles-biostatistics-c6",
-      front: "Which test: two independent groups, two paired groups, three or more groups, categorical data?",
-      back: "Two independent: unpaired t test (Mann-Whitney if skewed). Two paired: paired t test (Wilcoxon). Three or more independent: ANOVA (Kruskal-Wallis). Categorical: chi-square, Fisher's exact if expected count under 5, McNemar if paired.",
-    },
-    {
-      id: "fm-principles-biostatistics-c7",
-      front: "Relationship between incidence and prevalence",
-      back: "Prevalence = incidence multiplied by average duration of the disease. A cure that shortens duration lowers prevalence without changing incidence; a chronic incurable disease has high prevalence with low incidence.",
-    },
-    {
-      id: "fm-principles-biostatistics-c8",
-      front: "Denominators: infant mortality rate, maternal mortality ratio, case fatality rate",
-      back: "IMR = deaths under 1 year per 1000 live births per year. MMR = maternal deaths per 100000 live births. Case fatality rate = deaths from a disease divided by cases of that disease, as a percentage.",
     },
   ],
   references: [

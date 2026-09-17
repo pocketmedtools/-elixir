@@ -460,68 +460,6 @@ topics.push({
       difficulty: "easy",
     },
   ],
-  cards: [
-    {
-      id: "dermatology-lesion-description-c1",
-      front: "Papule versus plaque versus nodule.",
-      back: "Papule: solid elevation under 1 cm. Plaque: flat-topped elevation 1 cm or more. Nodule: solid lesion over 1 cm with dermal or subcutaneous depth.",
-    },
-    {
-      id: "dermatology-lesion-description-c2",
-      front: "Vesicle versus bulla - the cut-off.",
-      back: "1 cm. Fluid-filled under 1 cm is a vesicle, 1 cm or larger is a bulla.",
-    },
-    {
-      id: "dermatology-lesion-description-c3",
-      front: "The fixed order for describing a lesion in the short case.",
-      back: "Number, site and distribution, size in cm, shape, surface, margin, colour, consistency, arrangement, secondary changes - then sensation, nerves, hair, nails, mucosae and nodes.",
-    },
-    {
-      id: "dermatology-lesion-description-c4",
-      front: "Erosion versus ulcer.",
-      back: "Erosion: epidermis only, heals without scar. Ulcer: into dermis or deeper, always heals with a scar.",
-    },
-    {
-      id: "dermatology-lesion-description-c5",
-      front: "Hypopigmented versus depigmented - why it matters.",
-      back: "Hypopigmented means partial pigment loss (leprosy, pityriasis versicolor, pityriasis alba); depigmented means chalk-white total loss (vitiligo). The word chosen changes the differential.",
-    },
-    {
-      id: "dermatology-lesion-description-c6",
-      front: "Wood's lamp colours worth remembering.",
-      back: "Coral-red: erythrasma. Golden-yellow: pityriasis versicolor. Greenish-yellow: Microsporum tinea capitis. Bright blue-white with sharp margins: vitiligo.",
-    },
-    {
-      id: "dermatology-lesion-description-c7",
-      front: "Nikolsky sign versus bulla spread sign.",
-      back: "Nikolsky: shearing normal-looking skin peels the epidermis (pemphigus, TEN, SSSS). Bulla spread: pressure on an existing blister extends it laterally.",
-    },
-    {
-      id: "dermatology-lesion-description-c8",
-      front: "Which peripheral nerves must be palpated in every skin case in India?",
-      back: "Ulnar above the elbow, median at the wrist, radial cutaneous, common peroneal at the neck of fibula, posterior tibial behind the medial malleolus, great auricular and supraorbital.",
-    },
-    {
-      id: "dermatology-lesion-description-c9",
-      front: "Edge of the lesion: rolled and pearly, everted, undermined, punched out.",
-      back: "Rolled and pearly - basal cell carcinoma; everted - squamous cell carcinoma; undermined - tuberculous ulcer; punched out - trophic or arterial ulcer.",
-    },
-    {
-      id: "dermatology-lesion-description-c10",
-      front: "Define a wheal.",
-      back: "A transient, itchy, oedematous elevation with a surrounding flare that resolves within 24 hours leaving no residual mark - the defining lesion of urticaria.",
-    },
-    {
-      id: "dermatology-lesion-description-c11",
-      front: "What is lichenification and what does it tell you?",
-      back: "Thickened skin with exaggerated skin markings and hyperpigmentation from chronic rubbing - it proves the itch is long-standing (chronic eczema, lichen simplex chronicus).",
-    },
-    {
-      id: "dermatology-lesion-description-c12",
-      front: "Papulosquamous differential in one line.",
-      back: "Psoriasis, lichen planus, pityriasis rosea, tinea corporis, secondary syphilis, chronic eczema and pityriasis rubra pilaris.",
-    },
-  ],
   references: [
     "IADVL Textbook of Dermatology, 5th edition, 2022 - approach to the patient and morphology of skin lesions",
     "Rook's Textbook of Dermatology, 10th edition, 2024 - clinical examination of the skin",
@@ -999,58 +937,6 @@ topics.push({
       difficulty: "easy",
     },
   ],
-  cards: [
-    {
-      id: "dermatology-scabies-pediculosis-c1",
-      front: "Incubation period of scabies and why it matters.",
-      back: "Four to six weeks in a first infestation and one to four days on re-infestation, because the itch is a type IV hypersensitivity reaction - so asymptomatic contacts are already infested and must be treated.",
-    },
-    {
-      id: "dermatology-scabies-pediculosis-c2",
-      front: "Pathognomonic lesion of scabies and where to look for it.",
-      back: "The burrow - a 3 to 10 mm greyish serpiginous ridge with a vesicle or black dot at one end, on the finger webs, sides of the fingers, flexor wrists and ulnar border of the hand.",
-    },
-    {
-      id: "dermatology-scabies-pediculosis-c3",
-      front: "Permethrin regimen for scabies.",
-      back: "5 per cent cream to the whole body neck down (whole body in infants), left 8 to 14 hours overnight, washed off and repeated on day 7; about 30 g per adult application, reapplied to the hands after washing.",
-    },
-    {
-      id: "dermatology-scabies-pediculosis-c4",
-      front: "Ivermectin dose and contraindications in scabies.",
-      back: "200 microgram per kilogram orally with food, repeated on day 7 to 14; avoid under 15 kg or 5 years and in pregnancy and lactation.",
-    },
-    {
-      id: "dermatology-scabies-pediculosis-c5",
-      front: "Scabicide of choice under two months of age and in pregnancy.",
-      back: "Sulphur 5 to 10 per cent in petrolatum on three consecutive nights; permethrin 5 per cent is also acceptable in pregnancy and above two months.",
-    },
-    {
-      id: "dermatology-scabies-pediculosis-c6",
-      front: "Environmental decontamination in scabies.",
-      back: "Wash linen and clothes of the last 3 days above 60 degrees Celsius and sun dry or iron them; seal non-washables in a bag for 72 hours to a week. The mite dies in 2 to 3 days off the host, so fumigation is not needed.",
-    },
-    {
-      id: "dermatology-scabies-pediculosis-c7",
-      front: "Post-scabetic itch versus treatment failure.",
-      back: "Post-scabetic itch - itching for 2 to 4 weeks with no new burrows or papules, treated with emollients, a mild steroid and an antihistamine. Failure - new burrows or papules after 2 weeks, so re-treat and find the untreated contact.",
-    },
-    {
-      id: "dermatology-scabies-pediculosis-c8",
-      front: "Which louse transmits systemic disease, and which diseases?",
-      back: "Only the body louse, Pediculus humanus corporis - epidemic typhus (Rickettsia prowazekii), trench fever (Bartonella quintana) and relapsing fever (Borrelia recurrentis).",
-    },
-    {
-      id: "dermatology-scabies-pediculosis-c9",
-      front: "Treatment of pediculosis corporis.",
-      back: "Treat the clothing rather than the skin - hot wash, iron or discard clothing and improve hygiene; permethrin to the body only if lice are found on the skin itself.",
-    },
-    {
-      id: "dermatology-scabies-pediculosis-c10",
-      front: "Maculae ceruleae - what and where?",
-      back: "Bluish-grey macules at the sites of pubic louse bites on the lower abdomen, thighs and buttocks in pediculosis pubis.",
-    },
-  ],
   references: [
     "IADVL Textbook of Dermatology, 5th edition, 2022 - scabies and other infestations",
     "International Alliance for the Control of Scabies (IACS) 2020 Consensus Criteria for the Diagnosis of Scabies",
@@ -1522,58 +1408,6 @@ topics.push({
       explanation:
         "A raised active scaly edge with central clearing modified by weeks of a potent steroid combination cream, now atypical and widespread with atrophy, is tinea incognito, and the correct step is to stop the steroid, confirm with a KOH mount and treat with an adequate course of oral terbinafine along with a topical azole. Nummular eczema is a coin-shaped oozing plaque without an advancing edge, and more steroid would worsen a dermatophyte infection. Psoriasis gives well-defined silvery plaques with Auspitz sign and nail pits, not a spreading annular edge. Erythema annulare centrifugum has a trailing scale inside the edge and would not respond in this way to steroid abuse. Cutaneous lupus is photodistributed with scarring and follicular plugging.",
       difficulty: "moderate",
-    },
-  ],
-  cards: [
-    {
-      id: "dermatology-eczema-atopic-dermatitis-c1",
-      front: "Histological hallmark of eczema.",
-      back: "Spongiosis - intercellular oedema of the epidermis - with a perivascular lymphocytic infiltrate; acanthosis and hyperkeratosis in the chronic stage.",
-    },
-    {
-      id: "dermatology-eczema-atopic-dermatitis-c2",
-      front: "UK Working Party diagnostic criteria for atopic dermatitis.",
-      back: "An itchy skin condition plus three or more of: onset before two years, history of flexural involvement, generally dry skin, personal or first-degree family history of atopy, and visible flexural dermatitis.",
-    },
-    {
-      id: "dermatology-eczema-atopic-dermatitis-c3",
-      front: "Distribution of atopic dermatitis by age.",
-      back: "Infant - cheeks, forehead, scalp and extensor limbs with napkin sparing; child - antecubital and popliteal fossae, wrists, ankles, neck; adult - flexures, hands and head and neck.",
-    },
-    {
-      id: "dermatology-eczema-atopic-dermatitis-c4",
-      front: "One fingertip unit - definition and coverage.",
-      back: "The ointment from the distal crease to the tip of an adult index finger, about 0.5 g, enough to cover an area equal to two adult palms.",
-    },
-    {
-      id: "dermatology-eczema-atopic-dermatitis-c5",
-      front: "Topical steroid potency by site.",
-      back: "Mild (hydrocortisone 1 per cent) on face, eyelids, flexures and infants; moderate (mometasone, clobetasone) on trunk and limbs; potent (betamethasone valerate) on lichenified skin; very potent (clobetasol) on palms and soles only.",
-    },
-    {
-      id: "dermatology-eczema-atopic-dermatitis-c6",
-      front: "What is proactive therapy in atopic dermatitis?",
-      back: "After clearing a flare, applying a moderate steroid or tacrolimus twice weekly to previously affected sites to prevent relapse - less total steroid than repeatedly treating flares.",
-    },
-    {
-      id: "dermatology-eczema-atopic-dermatitis-c7",
-      front: "Eczema herpeticum - recognition and treatment.",
-      back: "Rapid monomorphic punched-out erosions with haemorrhagic crusts, fever and malaise in atopic skin; start systemic aciclovir immediately and refer, adding antibacterial cover and ophthalmology review if the eye is involved.",
-    },
-    {
-      id: "dermatology-eczema-atopic-dermatitis-c8",
-      front: "Irritant versus allergic contact dermatitis in one line each.",
-      back: "Irritant - non-immunological, affects anyone, burns within hours, confined to contact site, patch test negative. Allergic - type IV hypersensitivity, needs sensitisation, itches at 24 to 72 hours, spreads beyond the site, patch test positive.",
-    },
-    {
-      id: "dermatology-eczema-atopic-dermatitis-c9",
-      front: "Systemic options for severe refractory atopic dermatitis.",
-      back: "Narrowband UVB, ciclosporin 3 to 5 mg/kg/day, methotrexate 7.5 to 15 mg weekly with folic acid, azathioprine after TPMT testing, mycophenolate, and dupilumab 600 mg loading then 300 mg every two weeks - not long-term oral steroids.",
-    },
-    {
-      id: "dermatology-eczema-atopic-dermatitis-c10",
-      front: "Common contact allergens in Indian practice.",
-      back: "Nickel in jewellery, para-phenylenediamine in hair dye, potassium dichromate in cement, parthenium (Congress grass), fragrance mix, rubber accelerators in footwear, and topical neomycin.",
     },
   ],
   references: [
@@ -2052,58 +1886,6 @@ topics.push({
       difficulty: "hard",
     },
   ],
-  cards: [
-    {
-      id: "dermatology-acne-vulgaris-c1",
-      front: "The four pathogenic steps of acne and the drug for each.",
-      back: "Follicular hyperkeratinisation - retinoid; androgen-driven sebum excess - hormonal therapy and isotretinoin; Cutibacterium acnes - benzoyl peroxide and antibiotics; perifollicular inflammation - antibiotics, retinoids and isotretinoin.",
-    },
-    {
-      id: "dermatology-acne-vulgaris-c2",
-      front: "Open versus closed comedone.",
-      back: "Open comedone (blackhead) - dilated follicular orifice with oxidised keratin plug. Closed comedone (whitehead) - 1 to 2 mm skin-coloured papule with a barely visible opening; both are the primary non-inflammatory lesions.",
-    },
-    {
-      id: "dermatology-acne-vulgaris-c3",
-      front: "Clinical grading of acne, grades 1 to 4.",
-      back: "1 - comedones only; 2 - papules with comedones; 3 - pustules and papules, more widespread; 4 - nodules, cysts and scarring.",
-    },
-    {
-      id: "dermatology-acne-vulgaris-c4",
-      front: "Why is benzoyl peroxide added to every antibiotic regimen in acne?",
-      back: "It is bactericidal against Cutibacterium acnes and generates no resistance, so it protects the antibiotic; topical antibiotics must never be used as monotherapy.",
-    },
-    {
-      id: "dermatology-acne-vulgaris-c5",
-      front: "Isotretinoin dose and cumulative target.",
-      back: "0.5 to 1 mg per kilogram per day with a fatty meal, to a cumulative dose of 120 to 150 mg per kilogram over about 6 to 8 months; a lower cumulative dose predicts relapse.",
-    },
-    {
-      id: "dermatology-acne-vulgaris-c6",
-      front: "Monitoring on isotretinoin.",
-      back: "Fasting lipids and liver transaminases at baseline and 4 to 8 weeks, monthly pregnancy tests in women; stop for triglycerides above 500 mg/dL or transaminases above three times normal.",
-    },
-    {
-      id: "dermatology-acne-vulgaris-c7",
-      front: "Why must tetracyclines not be combined with isotretinoin?",
-      back: "Both raise intracranial pressure, so the combination risks benign intracranial hypertension with headache, visual blurring and papilloedema.",
-    },
-    {
-      id: "dermatology-acne-vulgaris-c8",
-      front: "Types of atrophic acne scar.",
-      back: "Ice-pick - narrow and deep, under 2 mm; rolling - broad, shallow, tethered by dermal bands; boxcar - round or oval with sharply defined vertical walls.",
-    },
-    {
-      id: "dermatology-acne-vulgaris-c9",
-      front: "Acne treatment in pregnancy.",
-      back: "Safe - azelaic acid, benzoyl peroxide, topical clindamycin and erythromycin, and oral erythromycin or azithromycin after the first trimester. Contraindicated - all retinoids, tetracyclines and hormonal anti-androgens.",
-    },
-    {
-      id: "dermatology-acne-vulgaris-c10",
-      front: "How long before an acne regimen is judged, and what is maintenance?",
-      back: "Judge at 8 to 12 weeks with lesion counts; after clearance continue a topical retinoid with or without benzoyl peroxide for 6 to 12 months as maintenance.",
-    },
-  ],
   references: [
     "IADVL Textbook of Dermatology, 5th edition, 2022 - acne and related disorders",
     "Indian Acne Alliance and IADVL consensus recommendations for the management of acne vulgaris, 2021",
@@ -2546,58 +2328,6 @@ topics.push({
       explanation:
         "Small punctate wheals with disproportionately large flares provoked by exercise, hot showers, emotion or spicy food, and settling within an hour, is cholinergic urticaria, caused by a rise in core body temperature and confirmed by exercise or hot bath provocation; it is treated with a regular second-generation antihistamine. Symptomatic dermographism produces linear wheals along a stroke line and is provoked by scratching rather than by heat. Cold urticaria appears on rewarming after cold exposure and is confirmed by the ice cube test. Delayed pressure urticaria causes deep painful swelling appearing four to eight hours after sustained pressure such as tight straps. Aquagenic urticaria follows water contact at any temperature, which does not fit the exercise trigger.",
       difficulty: "moderate",
-    },
-  ],
-  cards: [
-    {
-      id: "dermatology-urticaria-angioedema-c1",
-      front: "Definition of a wheal and the time limit that defines urticaria.",
-      back: "A transient itchy oedematous elevation with a surrounding flare; each individual wheal resolves within 24 hours leaving completely normal skin.",
-    },
-    {
-      id: "dermatology-urticaria-angioedema-c2",
-      front: "Acute versus chronic urticaria.",
-      back: "Acute - less than six weeks; chronic - six weeks or longer, subdivided into chronic spontaneous (no trigger, often autoimmune) and chronic inducible (reproducible physical or other trigger).",
-    },
-    {
-      id: "dermatology-urticaria-angioedema-c3",
-      front: "Step 2 of the urticaria ladder.",
-      back: "Up-dose the same second-generation antihistamine to a maximum of four times the standard dose before adding any other drug.",
-    },
-    {
-      id: "dermatology-urticaria-angioedema-c4",
-      front: "What is UAS7?",
-      back: "Urticaria Activity Score over 7 days - daily wheal number (0 to 3) plus itch severity (0 to 3), summed across a week to a maximum of 42, used to track control and justify escalation.",
-    },
-    {
-      id: "dermatology-urticaria-angioedema-c5",
-      front: "When should a wheal be biopsied?",
-      back: "When individual lesions last over 24 hours, burn or hurt rather than itch, leave purpura or pigmentation, or come with fever, arthralgia and a raised ESR - urticarial vasculitis.",
-    },
-    {
-      id: "dermatology-urticaria-angioedema-c6",
-      front: "Adrenaline in anaphylaxis - dose and route.",
-      back: "0.5 mg (0.5 mL of 1 in 1000) intramuscularly into the anterolateral thigh in an adult, repeated every 5 to 15 minutes; child 0.01 mg per kilogram to a maximum of 0.5 mg. Never plain 1 in 1000 intravenously.",
-    },
-    {
-      id: "dermatology-urticaria-angioedema-c7",
-      front: "Screening test for hereditary angioedema.",
-      back: "Serum C4, which is low both during and between attacks; confirm with C1 esterase inhibitor antigenic level and function.",
-    },
-    {
-      id: "dermatology-urticaria-angioedema-c8",
-      front: "Why do antihistamines and steroids fail in hereditary and ACE-inhibitor angioedema?",
-      back: "Both are bradykinin-mediated rather than histamine-mediated; treat with C1 inhibitor concentrate, icatibant or fresh frozen plasma, and stop the ACE inhibitor permanently.",
-    },
-    {
-      id: "dermatology-urticaria-angioedema-c9",
-      front: "Antihistamines of choice in pregnancy for urticaria.",
-      back: "Loratadine and cetirizine have the best safety data; chlorpheniramine is the older alternative, and up-dosing should be discussed with a specialist.",
-    },
-    {
-      id: "dermatology-urticaria-angioedema-c10",
-      front: "The commonest cause of acute urticaria in children.",
-      back: "Viral upper respiratory tract infection, followed by drugs such as beta lactams, NSAIDs and sulphonamides; investigation is usually unnecessary.",
     },
   ],
   references: [
@@ -3075,58 +2805,6 @@ topics.push({
       explanation:
         "Anti-tumour necrosis factor agents reactivate latent tuberculosis, which is highly prevalent in India, and can reactivate hepatitis B, so screening with a chest radiograph plus interferon gamma release assay or tuberculin test, along with hepatitis B, C and HIV serology, is mandatory and latent infection must be treated before the biologic begins. Calcium and parathyroid hormone are relevant to hypocalcaemia in pustular psoriasis, not to biologic screening. A confirmatory biopsy is unnecessary when the clinical diagnosis is secure. Antinuclear antibody and rheumatoid factor may be checked in the arthritis workup but do not gate biologic therapy. Bone density is a concern with long-term corticosteroids, which have no place in psoriasis management.",
       difficulty: "moderate",
-    },
-  ],
-  cards: [
-    {
-      id: "dermatology-psoriasis-c1",
-      front: "The three bedside signs of psoriasis.",
-      back: "Grattage or candle-grease sign (scraping increases silvery scale), Berkeley membrane (glistening membrane below the scale) and Auspitz sign (pinpoint bleeding from suprapapillary thinning over dilated capillaries).",
-    },
-    {
-      id: "dermatology-psoriasis-c2",
-      front: "Histological hallmarks of psoriasis.",
-      back: "Parakeratosis with loss of the granular layer, regular acanthosis with elongated rete ridges, suprapapillary thinning, dilated tortuous papillary capillaries, Munro microabscesses and spongiform pustules of Kogoj.",
-    },
-    {
-      id: "dermatology-psoriasis-c3",
-      front: "Nail changes in psoriasis versus lichen planus.",
-      back: "Psoriasis - irregular deep pitting, oil-drop or salmon patch, onycholysis, subungual hyperkeratosis, splinter haemorrhages. Lichen planus - longitudinal ridging, thinning, and pterygium formation.",
-    },
-    {
-      id: "dermatology-psoriasis-c4",
-      front: "Drugs that precipitate or worsen psoriasis.",
-      back: "Beta blockers, lithium, antimalarials, NSAIDs, interferon, ACE inhibitors and, most importantly, withdrawal of systemic corticosteroids.",
-    },
-    {
-      id: "dermatology-psoriasis-c5",
-      front: "The rule of tens.",
-      back: "PASI above 10, or body surface area above 10 per cent, or DLQI above 10 - the conventional threshold for moving to phototherapy or systemic therapy.",
-    },
-    {
-      id: "dermatology-psoriasis-c6",
-      front: "Five patterns of psoriatic arthritis.",
-      back: "Distal interphalangeal predominant, asymmetrical oligoarthritis (commonest), symmetrical polyarthritis, spondyloarthritis with sacroiliitis, and arthritis mutilans with pencil-in-cup deformity.",
-    },
-    {
-      id: "dermatology-psoriasis-c7",
-      front: "Systemic drug of choice for an unstable erythrodermic flare.",
-      back: "Ciclosporin 2.5 to 5 mg/kg/day for rapid control (or infliximab), limited to a maximum of one year because of nephrotoxicity and hypertension.",
-    },
-    {
-      id: "dermatology-psoriasis-c8",
-      front: "Acitretin - who is it best for, and the key warning?",
-      back: "Best for pustular and palmoplantar psoriasis and for HIV-positive patients since it is not immunosuppressive; it is a potent teratogen requiring contraception for three years after stopping.",
-    },
-    {
-      id: "dermatology-psoriasis-c9",
-      front: "Why should salicylic acid and calcipotriol not be applied together?",
-      back: "Salicylic acid inactivates calcipotriol - use the keratolytic at a different time of day, or before the vitamin D analogue in a staged regimen.",
-    },
-    {
-      id: "dermatology-psoriasis-c10",
-      front: "Comorbidities to screen for in every psoriasis consultation.",
-      back: "Metabolic syndrome - obesity, hypertension, diabetes, dyslipidaemia and fatty liver - plus psoriatic arthritis, cardiovascular disease, depression, alcohol and smoking.",
     },
   ],
   references: [
@@ -3624,58 +3302,6 @@ topics.push({
       difficulty: "hard",
     },
   ],
-  cards: [
-    {
-      id: "dermatology-leprosy-nlep-c1",
-      front: "The three cardinal signs of leprosy under NLEP.",
-      back: "A definite hypopigmented or erythematous patch with definite sensory loss; a thickened or tender peripheral nerve with sensory loss or muscle weakness in its distribution; acid-fast bacilli in a slit-skin smear. Any one is enough.",
-    },
-    {
-      id: "dermatology-leprosy-nlep-c2",
-      front: "WHO operational classification for treatment.",
-      back: "Paucibacillary - 1 to 5 lesions, not more than one nerve trunk, negative smear. Multibacillary - more than 5 lesions, or more than one nerve trunk, or a positive smear. A positive smear always means multibacillary.",
-    },
-    {
-      id: "dermatology-leprosy-nlep-c3",
-      front: "Multibacillary adult multidrug therapy regimen.",
-      back: "Monthly supervised rifampicin 600 mg, clofazimine 300 mg and dapsone 100 mg, with daily clofazimine 50 mg and dapsone 100 mg, for 12 months (12 packs within 18 months).",
-    },
-    {
-      id: "dermatology-leprosy-nlep-c4",
-      front: "Which nerves are palpated in a leprosy examination?",
-      back: "Great auricular, supraorbital, ulnar above the elbow, median at the wrist, radial cutaneous, lateral popliteal at the neck of the fibula, posterior tibial behind the medial malleolus, and sural - always comparing both sides.",
-    },
-    {
-      id: "dermatology-leprosy-nlep-c5",
-      front: "Type 1 versus type 2 lepra reaction in one line each.",
-      back: "Type 1 - type IV hypersensitivity in borderline disease with inflamed existing lesions and acute neuritis, no fever. Type 2 - type III immune complex disease in BL and LL with crops of tender nodules, fever, arthralgia and iritis.",
-    },
-    {
-      id: "dermatology-leprosy-nlep-c6",
-      front: "Steroid regimen for a lepra reaction with neuritis.",
-      back: "Prednisolone 40 to 60 mg daily (about 1 mg/kg), tapered by 5 to 10 mg every two to four weeks over about 12 weeks in type 1 and up to 20 weeks or longer in type 2, with the limb splinted and multidrug therapy continued.",
-    },
-    {
-      id: "dermatology-leprosy-nlep-c7",
-      front: "WHO disability grading in leprosy.",
-      back: "Graded separately for each eye, hand and foot - Grade 0 no anaesthesia or deformity; Grade 1 loss of protective sensation without visible deformity; Grade 2 visible deformity or damage (eye - vision worse than 6/60).",
-    },
-    {
-      id: "dermatology-leprosy-nlep-c8",
-      front: "Main adverse effects of the three multidrug therapy drugs.",
-      back: "Rifampicin - orange urine, hepatitis, enzyme induction reducing oral contraceptive efficacy. Clofazimine - reversible reddish-brown pigmentation, ichthyosis, enteropathy. Dapsone - haemolysis (G6PD), methaemoglobinaemia, agranulocytosis, hypersensitivity syndrome.",
-    },
-    {
-      id: "dermatology-leprosy-nlep-c9",
-      front: "How is a slit-skin smear taken and reported?",
-      back: "From both ear lobes and the active edge of one or two lesions; pinch bloodless, slit 5 mm long and 2 to 3 mm deep, scrape, stain by modified Ziehl-Neelsen; report the bacteriological index 0 to 6+ and the morphological index as the percentage of viable bacilli.",
-    },
-    {
-      id: "dermatology-leprosy-nlep-c10",
-      front: "Post-exposure prophylaxis for leprosy contacts.",
-      back: "A single dose of rifampicin (600 mg in adults, weight-adjusted from two years of age) after excluding active leprosy and tuberculosis, as part of NLEP contact tracing.",
-    },
-  ],
   references: [
     "National Leprosy Eradication Programme, Training Manual for Medical Officers, Directorate General of Health Services, Government of India, 2019",
     "NLEP National Strategic Plan and Roadmap for Leprosy 2023-2027, Ministry of Health and Family Welfare, Government of India, 2023",
@@ -4167,58 +3793,6 @@ topics.push({
       explanation:
         "A rash appearing two to eight weeks after an aromatic anticonvulsant with facial oedema, fever, lymphadenopathy, eosinophilia and hepatitis is DRESS, which requires drug withdrawal, admission, monitoring of liver, renal and cardiac function, and a slowly tapered systemic corticosteroid because abrupt withdrawal causes relapse, with thyroid function rechecked months later. Toxic epidermal necrolysis presents with skin pain, blistering, a positive Nikolsky sign and severe mucosal erosions, all absent here. AGEP appears within days as sterile non-follicular pustules with neutrophilia rather than eosinophilia. A simple morbilliform exanthem has no facial oedema, eosinophilia or hepatitis, and continuing the drug in this setting risks fulminant hepatitis. Attributing the picture to coincidental viral hepatitis ignores the temporal relationship and the eosinophilia that define the syndrome.",
       difficulty: "moderate",
-    },
-  ],
-  cards: [
-    {
-      id: "dermatology-drug-eruptions-sjs-ten-c1",
-      front: "SJS, overlap and TEN by body surface area.",
-      back: "SJS - under 10 per cent epidermal detachment; SJS-TEN overlap - 10 to 30 per cent; TEN - more than 30 per cent. Count only detached or Nikolsky-positive skin, not erythema.",
-    },
-    {
-      id: "dermatology-drug-eruptions-sjs-ten-c2",
-      front: "The seven SCORTEN parameters.",
-      back: "Age 40 or over, associated malignancy, heart rate 120 or more, detachment over 10 per cent on day 1, urea over 10 mmol/L, bicarbonate under 20 mmol/L, glucose over 14 mmol/L - one point each, calculated at 24 hours and day 3.",
-    },
-    {
-      id: "dermatology-drug-eruptions-sjs-ten-c3",
-      front: "Commonest culprit drugs for SJS and TEN in India.",
-      back: "Carbamazepine, phenytoin, lamotrigine, phenobarbitone, allopurinol, nevirapine, sulphonamides including cotrimoxazole, dapsone, oxicam NSAIDs and fluoroquinolones; Mycoplasma pneumoniae in children.",
-    },
-    {
-      id: "dermatology-drug-eruptions-sjs-ten-c4",
-      front: "First and most important step in managing TEN.",
-      back: "Immediate withdrawal of the culprit and all non-essential drugs, then transfer to a burns unit or intensive care - drug withdrawal has the clearest effect on mortality.",
-    },
-    {
-      id: "dermatology-drug-eruptions-sjs-ten-c5",
-      front: "Skin care rules in TEN.",
-      back: "Leave detached epidermis in place as a biological dressing, use non-adherent paraffin or silicone dressings, do not debride, and avoid silver sulphadiazine because it is a sulphonamide.",
-    },
-    {
-      id: "dermatology-drug-eruptions-sjs-ten-c6",
-      front: "Time to onset as a clue to the type of drug reaction.",
-      back: "Minutes to hours - urticaria and anaphylaxis; hours on re-exposure - fixed drug eruption; 1 to 4 days - AGEP; 4 to 14 days - morbilliform exanthem; 4 to 28 days - SJS-TEN; 2 to 8 weeks - DRESS.",
-    },
-    {
-      id: "dermatology-drug-eruptions-sjs-ten-c7",
-      front: "Diagnostic features of DRESS.",
-      back: "Rash 2 to 8 weeks after the drug, facial oedema, fever, lymphadenopathy, eosinophilia above 700 per cubic millimetre or atypical lymphocytes, and hepatitis, nephritis or myocarditis; steroids are tapered over 6 to 12 weeks.",
-    },
-    {
-      id: "dermatology-drug-eruptions-sjs-ten-c8",
-      front: "HLA associations worth quoting.",
-      back: "HLA-B*15:02 with carbamazepine-induced SJS-TEN in South and South-east Asians, HLA-B*58:01 with allopurinol, and HLA-B*57:01 with abacavir hypersensitivity - warn first-degree relatives.",
-    },
-    {
-      id: "dermatology-drug-eruptions-sjs-ten-c9",
-      front: "SJS-TEN versus staphylococcal scalded skin syndrome.",
-      back: "SJS-TEN - adults, drug-related, full-thickness epidermal necrosis, severe mucosal erosions. SSSS - young children, toxin-mediated subcorneal split, perioral crusting, mucosae spared, responds to antistaphylococcal antibiotics.",
-    },
-    {
-      id: "dermatology-drug-eruptions-sjs-ten-c10",
-      front: "Long-term sequelae of epidermal necrolysis to follow up.",
-      back: "Dry eye, trichiasis, symblepharon and blindness; nail dystrophy, pigmentary change and scarring alopecia; oesophageal and vaginal stenosis; bronchiolitis obliterans; chronic kidney disease; and depression or post-traumatic stress disorder.",
     },
   ],
   references: [

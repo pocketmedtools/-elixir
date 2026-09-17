@@ -11,6 +11,8 @@ import ContentGate from "./ContentGate";
 import { load as loadDocs, seedDocuments } from "../lib/docs";
 import type { SearchResult } from "../lib/search";
 import StudyHome from "./StudyHome";
+import ChartsScreen from "./ChartsScreen";
+import { onDailyChartTapped } from "../lib/dailyChart";
 import LibraryScreen from "./LibraryScreen";
 import SubjectScreen from "./SubjectScreen";
 import TopicReader from "./TopicReader";
@@ -19,7 +21,6 @@ import { CaseList, CaseReader } from "./CaseBank";
 import ExamPatternScreen from "./ExamPatternScreen";
 import PresentationScreen from "./PresentationScreen";
 import { QuizSession, QuizSetup, type QuizConfig } from "./QuizRunner";
-import Flashcards from "./Flashcards";
 import MyDocuments from "./MyDocuments";
 import DocReader from "./DocReader";
 import SearchScreen from "./SearchScreen";
@@ -38,10 +39,10 @@ export type StudyView =
   | { name: "pattern" }
   | { name: "quizSetup" }
   | { name: "quiz"; config: QuizConfig }
-  | { name: "cards" }
   | { name: "docs" }
   | { name: "doc"; id: string }
   | { name: "search"; query?: string }
+  | { name: "charts"; q?: string; chartId?: string }
   | { name: "progress" };
 
 // A thousand past questions and their text are worth their own chunk: the app
@@ -72,6 +73,14 @@ export default function StudyModule() {
   useEffect(() => {
     window.scrollTo({ top: 0 });
   }, [stack.length, view.name]);
+
+  /* Tapping the daily notification should land on that chart, not the home
+     screen. Registered once; a no-op anywhere but the installed app. */
+  useEffect(() => {
+    void onDailyChartTapped((chartId) =>
+      setStack((s) => [...s, { name: "charts", chartId }]),
+    );
+  }, []);
 
   const go = useCallback((next: StudyView) => setStack((s) => [...s, next]), []);
   const back = useCallback(
@@ -207,12 +216,6 @@ export default function StudyModule() {
         </ContentGate>
       );
 
-    case "cards":
-      return (
-        <ContentGate need="all">
-          <Flashcards onBack={back} onOpenTopic={(id) => go({ name: "topic", id })} />
-        </ContentGate>
-      );
 
     case "docs":
       return <MyDocuments onBack={back} onOpenDoc={(id) => go({ name: "doc", id })} />;
@@ -224,6 +227,18 @@ export default function StudyModule() {
           onBack={back}
           onSearchLibrary={(query) => go({ name: "search", query })}
         />
+      );
+
+    case "charts":
+      return (
+        <ContentGate need="all">
+          <ChartsScreen
+            onBack={back}
+            onOpenTopic={(id) => go({ name: "topic", id })}
+            initialQuery={view.q}
+            initialChartId={view.chartId}
+          />
+        </ContentGate>
       );
 
     case "search":

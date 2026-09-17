@@ -594,68 +594,6 @@ topics.push({
       difficulty: "moderate",
     },
   ],
-  cards: [
-    {
-      id: "surgery-office-wound-suturing-c1",
-      front: "Maximum dose of plain lignocaine and of lignocaine with adrenaline.",
-      back: "3 mg/kg plain (adult ceiling about 200 mg) and 7 mg/kg with adrenaline (about 500 mg).",
-    },
-    {
-      id: "surgery-office-wound-suturing-c2",
-      front: "How many mg in 1 mL of 1% and 2% lignocaine?",
-      back: "1% = 10 mg/mL, 2% = 20 mg/mL, 0.5% = 5 mg/mL. Adrenaline 1:200,000 = 5 microgram/mL.",
-    },
-    {
-      id: "surgery-office-wound-suturing-c3",
-      front: "Maximum dose of bupivacaine.",
-      back: "2 mg/kg (adult ceiling 150 mg plain, up to about 175-200 mg with adrenaline); the most cardiotoxic agent in routine use.",
-    },
-    {
-      id: "surgery-office-wound-suturing-c4",
-      front: "Earliest features of local anaesthetic systemic toxicity.",
-      back: "Perioral and tongue numbness, metallic taste, tinnitus, dizziness, slurred speech and twitching - stop injecting immediately.",
-    },
-    {
-      id: "surgery-office-wound-suturing-c5",
-      front: "Lipid emulsion regimen for local anaesthetic toxicity.",
-      back: "20% lipid emulsion 1.5 mL/kg bolus over 1 minute, then 15 mL/kg/hour; up to two repeat boluses, double the infusion if unstable, cumulative maximum 12 mL/kg.",
-    },
-    {
-      id: "surgery-office-wound-suturing-c6",
-      front: "The golden period for primary closure.",
-      back: "About 6 hours for limbs and trunk; up to 12-24 hours on the face and scalp because of the rich blood supply.",
-    },
-    {
-      id: "surgery-office-wound-suturing-c7",
-      front: "When is delayed primary closure done, and on which day?",
-      back: "Contaminated wounds, wounds over 6 hours old and bites: clean, debride, pack open and close on day 3 to 5 if there is no infection.",
-    },
-    {
-      id: "surgery-office-wound-suturing-c8",
-      front: "How much irrigation fluid does a wound need?",
-      back: "50-100 mL of normal saline (or potable tap water) per centimetre of wound length, delivered under pressure.",
-    },
-    {
-      id: "surgery-office-wound-suturing-c9",
-      front: "Suture removal times: face, scalp, trunk, limb, sole.",
-      back: "Face 4-5 days, scalp 7-10, trunk 7-10, upper limb 10, lower limb 10-14, palm and sole 12-14 days.",
-    },
-    {
-      id: "surgery-office-wound-suturing-c10",
-      front: "Tetanus prophylaxis for a dirty wound in someone with under 3 doses.",
-      back: "Tetanus toxoid or Td plus human tetanus immunoglobulin 250 IU IM at a different site (500 IU if over 24 hours old, heavily contaminated or over 90 kg).",
-    },
-    {
-      id: "surgery-office-wound-suturing-c11",
-      front: "The four CDC wound classes with infection rates.",
-      back: "I Clean under 2%; II Clean-contaminated 3-11%; III Contaminated 10-17%; IV Dirty over 27%.",
-    },
-    {
-      id: "surgery-office-wound-suturing-c12",
-      front: "Rabies category III exposure - the three steps.",
-      back: "Wash 15 minutes with soap and running water, infiltrate rabies immunoglobulin (human 20 IU/kg, equine 40 IU/kg) into the wound, and give the full vaccine course; do not suture.",
-    },
-  ],
   references: [
     "Bailey and Love Short Practice of Surgery, 28th edition, 2023 - wounds, tissue repair and scars",
     "SRB Manual of Surgery, 6th edition, 2019 - wounds, sutures and suture materials",
@@ -1176,48 +1114,6 @@ topics.push({
       answer: 0,
       explanation: "Recurrent spontaneous abscesses in a healthcare worker suggest community-acquired MRSA carriage: an oral agent that covers both MRSA and streptococci (clindamycin) is combined with decolonisation - nasal mupirocin twice daily for 5 days, chlorhexidine body washes, personal towels and household screening - plus a search for diabetes, anaemia and HIV. Cefuroxime (option B) is a beta-lactam and is inactive against MRSA. Vancomycin (option C) is parenteral and reserved for severe or inpatient disease. Doxycycline alone (option D) treats the episode but ignores carriage, so the boils recur, and it covers streptococci poorly. Rifampicin monotherapy (option E) rapidly selects resistance and must never be used alone.",
       difficulty: "hard",
-    },
-  ],
-  cards: [
-    {
-      id: "surgery-office-abscess-ssti-c1",
-      front: "The governing principle of abscess management, and why antibiotics alone fail",
-      back: "Ubi pus, ibi evacua - where there is pus, let it out. The pyogenic membrane walling off the cavity is avascular, so antibiotics do not reach the pus; drainage is definitive treatment and antibiotics are an adjunct.",
-    },
-    {
-      id: "surgery-office-abscess-ssti-c2",
-      front: "Describe the Hilton method",
-      back: "Incise skin and superficial fascia only with the blade, then introduce closed sinus forceps into the cavity and open them within it to break down loculi bluntly. Nerves and vessels are pushed aside rather than cut - used near neurovascular bundles (neck, axilla, groin, popliteal fossa).",
-    },
-    {
-      id: "surgery-office-abscess-ssti-c3",
-      front: "Why is local anaesthetic not injected into an abscess?",
-      back: "Acidic pus inactivates the base form of the drug so the block fails, the injection is very painful, and it can disseminate infection. Use a field or ring block in surrounding healthy tissue, ethyl chloride for a superficial boil, or general or regional anaesthesia for deep and large abscesses.",
-    },
-    {
-      id: "surgery-office-abscess-ssti-c4",
-      front: "First-line treatment of a lactational breast abscess under 5 cm",
-      back: "Ultrasound-guided needle aspiration under local anaesthesia with a wide-bore needle, repeated every 2-3 days, plus an antistaphylococcal antibiotic, and breastfeeding is continued from both breasts. Formal incision and drainage is for large, multiloculated, skin-thinned or failed-aspiration abscesses.",
-    },
-    {
-      id: "surgery-office-abscess-ssti-c5",
-      front: "Erysipelas versus cellulitis",
-      back: "Erysipelas: upper dermis and lymphatics, sharply demarcated raised edge, face or shin, usually Streptococcus pyogenes. Cellulitis: deep dermis and subcutaneous fat, indistinct edge, more often Staph aureus. Mark the margin with the date and time in both.",
-    },
-    {
-      id: "surgery-office-abscess-ssti-c6",
-      front: "Kanavel's four signs",
-      back: "Suppurative flexor tenosynovitis: (1) uniform sausage-like swelling of the finger, (2) finger held in slight flexion, (3) tenderness along the flexor sheath, (4) severe pain on passive extension. A same-day surgical emergency, never an office drainage.",
-    },
-    {
-      id: "surgery-office-abscess-ssti-c7",
-      front: "LRINEC score - components and interpretation",
-      back: "C-reactive protein, total leucocyte count, haemoglobin, sodium, creatinine and glucose. 6 or more is suggestive and 8 or more highly suggestive of necrotising fasciitis, but a low score never excludes it; diagnosis is clinical and confirmed at operation by the finger test.",
-    },
-    {
-      id: "surgery-office-abscess-ssti-c8",
-      front: "Oral options for community-acquired MRSA in the clinic",
-      back: "Clindamycin 300-450 mg TDS, cotrimoxazole double strength BD, doxycycline 100 mg BD, or linezolid 600 mg BD. Cotrimoxazole and doxycycline cover streptococci poorly, so add amoxicillin or prefer clindamycin when both organisms are possible.",
     },
   ],
   references: [
@@ -1755,48 +1651,6 @@ topics.push({
       answer: 2,
       explanation: "Erythema beyond 2 cm or involvement of deeper structures such as an abscess defines a moderate (grade 3) infection even when there are no systemic features; note that up to half of patients with a serious diabetic foot infection are afebrile with a normal white cell count, so normal vitals do not downgrade it. Options A and B underestimate a plantar space collection that will spread along the fascial planes. Grade 4 (option D) requires a systemic inflammatory response, and in any case a collection must be drained - antibiotics alone do not treat pus. Grading is clinical and must not wait for a swab (option E), and a deep tissue specimen rather than a swab should be sent at the time of drainage.",
       difficulty: "moderate",
-    },
-  ],
-  cards: [
-    {
-      id: "surgery-office-diabetic-foot-c1",
-      front: "Meggitt-Wagner grades 0 to 5",
-      back: "0 at-risk foot without ulcer; 1 superficial ulcer; 2 deep ulcer to tendon, capsule or bone without abscess or osteomyelitis; 3 deep ulcer with abscess, osteomyelitis or joint sepsis; 4 localised gangrene of forefoot or heel; 5 gangrene of the whole foot.",
-    },
-    {
-      id: "surgery-office-diabetic-foot-c2",
-      front: "What does the University of Texas classification add to Wagner?",
-      back: "It adds a stage to the depth grade (0-3): A clean, B infected, C ischaemic, D infected and ischaemic. It therefore records infection and ischaemia separately and predicts amputation risk better than depth alone.",
-    },
-    {
-      id: "surgery-office-diabetic-foot-c3",
-      front: "How is the 10 g monofilament test performed and interpreted?",
-      back: "Apply the Semmes-Weinstein 10 g filament perpendicular to the skin until it buckles, for 1-2 seconds, with the eyes closed, at the plantar great toe and the first, third and fifth metatarsal heads, avoiding callus. Failure to feel it at any site means loss of protective sensation - a foot at risk of ulceration.",
-    },
-    {
-      id: "surgery-office-diabetic-foot-c4",
-      front: "Gold standard offloading for a neuropathic plantar forefoot ulcer",
-      back: "A total contact cast or another non-removable knee-high device. Contraindicated with significant ischaemia, active deep infection or osteomyelitis, or if weekly review is impossible. Next choices: removable walker made irremovable, removable walker, then a healing sandal or half shoe.",
-    },
-    {
-      id: "surgery-office-diabetic-foot-c5",
-      front: "IWGDF/IDSA infection grades",
-      back: "1 uninfected; 2 mild (skin and subcutaneous only, erythema 0.5-2 cm); 3 moderate (erythema over 2 cm or deeper structures - abscess, fasciitis, tendon, joint, bone); 4 severe (any foot infection with a systemic inflammatory response). Suffix O denotes osteomyelitis.",
-    },
-    {
-      id: "surgery-office-diabetic-foot-c6",
-      front: "Duration of antibiotic therapy for diabetic foot osteomyelitis",
-      back: "About 6 weeks when infected bone is left in place; 2-3 weeks (or less) when all infected bone has been resected. Therapy should be directed by bone biopsy culture, not a superficial wound swab.",
-    },
-    {
-      id: "surgery-office-diabetic-foot-c7",
-      front: "Neuropathic versus ischaemic diabetic ulcer",
-      back: "Neuropathic: warm pulsatile foot, punched-out ulcer over a pressure point with surrounding callus, painless, dry skin, distended veins. Ischaemic: cold pulseless foot, ulcer at the toe tips or heel, painful with rest pain, dependent rubor, thin shiny hairless skin. Most ulcers in practice are neuroischaemic.",
-    },
-    {
-      id: "surgery-office-diabetic-foot-c8",
-      front: "Six rules of foot-care advice for a diabetic patient",
-      back: "Inspect both feet and between the toes daily; wash in lukewarm water tested with the elbow and dry between the toes; emollient on dry skin but not between the toes; cut nails straight across; never walk barefoot anywhere; wear closed deep-toed MCR-soled footwear and check inside the shoe before wearing it. No corn caps, blades or hot water bottles.",
     },
   ],
   references: [
@@ -2340,48 +2194,6 @@ topics.push({
       difficulty: "moderate",
     },
   ],
-  cards: [
-    {
-      id: "surgery-office-minor-procedures-c1",
-      front: "Slip sign",
-      back: "The edge of a lipoma slips away from the palpating finger because the tumour is soft, lobulated and encapsulated within surrounding fat. With pinchable overlying skin, no punctum and no transillumination, it is the classical lipoma sign.",
-    },
-    {
-      id: "surgery-office-minor-procedures-c2",
-      front: "When must a soft tissue lump be referred rather than excised in the clinic?",
-      back: "Larger than 5 cm, deep to the deep fascia, rapidly growing, painful, fixed or recurrent after previous excision - suspect a sarcoma. Arrange MRI and refer for planned wide excision with a core biopsy through an excisable track; never enucleate it in the office.",
-    },
-    {
-      id: "surgery-office-minor-procedures-c3",
-      front: "Cock's peculiar tumour",
-      back: "An infected, ulcerated sebaceous cyst with exuberant granulation tissue and everted edges that closely mimics a squamous cell carcinoma. It must be biopsied rather than assumed benign.",
-    },
-    {
-      id: "surgery-office-minor-procedures-c4",
-      front: "Why does a sebaceous cyst recur after excision?",
-      back: "Because a fragment of the epithelial cyst wall has been left behind. If the cyst ruptures during dissection, every fragment of wall must be removed with forceps and a curette. The incision is elliptical and includes the punctum.",
-    },
-    {
-      id: "surgery-office-minor-procedures-c5",
-      front: "Heifetz staging of the ingrown toenail",
-      back: "Stage 1 erythema, oedema and pain without discharge - conservative. Stage 2 infection with seropurulent discharge and ulceration. Stage 3 chronic granulation tissue with lateral fold hypertrophy. Stages 2 and 3 need partial nail avulsion with matricectomy.",
-    },
-    {
-      id: "surgery-office-minor-procedures-c6",
-      front: "Phenol matricectomy technique and result",
-      back: "After avulsing the lateral 3-4 mm nail strip, apply 80-88% phenol on a cotton applicator to the exposed lateral matrix for 30 seconds, three times, then wash with alcohol or saline. Recurrence falls below 5 percent, compared with over 60 percent after simple total avulsion without matricectomy.",
-    },
-    {
-      id: "surgery-office-minor-procedures-c7",
-      front: "How is a specimen for direct immunofluorescence handled?",
-      back: "Take perilesional normal-looking skin, and send it in Michel's medium or normal saline - never in formalin, which destroys the immune deposits. Routine histology from the edge of a fresh blister goes into 10% neutral buffered formalin at ten times the specimen volume.",
-    },
-    {
-      id: "surgery-office-minor-procedures-c8",
-      front: "Local anaesthetic arithmetic to recite before any minor procedure",
-      back: "Plain lignocaine 3 mg/kg (adult ceiling about 200 mg); with adrenaline 7 mg/kg (about 500 mg). 1% = 10 mg/mL, 2% = 20 mg/mL. A 60 kg adult: 18 mL of 1% plain or 42 mL of 1% with adrenaline. Aspirate before injecting and record the total dose in milligrams.",
-    },
-  ],
   references: [
     "Bailey and Love Short Practice of Surgery, 28th edition, 2023 - skin and subcutaneous tissue; basic surgical skills and anastomoses",
     "SRB Manual of Surgery, 6th edition, 2019 - cysts, lipoma, sebaceous cyst, nail disorders and minor procedures",
@@ -2886,48 +2698,6 @@ topics.push({
       answer: 2,
       explanation: "A large, long-standing, irreducible inguinoscrotal hernia in an older man is the classical setting for a sliding hernia, where a retroperitoneal viscus - sigmoid colon on the left, caecum on the right, or the bladder medially - forms part of the wall of the sac and can be injured if the sac is opened blindly. A truss (option A) never cures a hernia and is reserved for the patient unfit for any operation. Watchful waiting (option B) applies only to minimally symptomatic reducible hernias, not to an irreducible one, which is the step before obstruction. The bladder can indeed slide into the sac (option D). Chronic groin pain after repair affects up to 10 percent of patients and must be mentioned at consent (option E).",
       difficulty: "moderate",
-    },
-  ],
-  cards: [
-    {
-      id: "surgery-office-hernia-c1",
-      front: "Definition and the three parts of a hernia",
-      back: "Protrusion of a viscus, or part of a viscus, through an abnormal opening in the wall of its containing cavity. It has a sac (peritoneal diverticulum with mouth, neck, body, fundus), coverings (the abdominal wall layers traversed) and contents (omentum - omentocele; bowel - enterocele).",
-    },
-    {
-      id: "surgery-office-hernia-c2",
-      front: "How do you tell an inguinal from a femoral hernia clinically?",
-      back: "By the relation of the NECK of the sac to the pubic tubercle: inguinal is above and medial, femoral is below and lateral. Judge the neck, not the fundus, because a femoral sac can turn upwards over the inguinal ligament and imitate an inguinal hernia.",
-    },
-    {
-      id: "surgery-office-hernia-c3",
-      front: "Boundaries of Hesselbach's triangle",
-      back: "Laterally the inferior epigastric vessels, medially the lateral border of the rectus sheath, inferiorly the inguinal ligament. A direct hernia comes through this triangle, medial to the inferior epigastric vessels; an indirect hernia emerges lateral to them through the deep ring.",
-    },
-    {
-      id: "surgery-office-hernia-c4",
-      front: "Boundaries of the femoral canal and their clinical importance",
-      back: "Anteriorly the inguinal ligament, posteriorly the pectineal (Astley Cooper) ligament, medially the lacunar (Gimbernat) ligament, laterally the femoral vein. Three boundaries are rigid, which is why the femoral hernia has the highest strangulation rate and about 40 percent present as an emergency.",
-    },
-    {
-      id: "surgery-office-hernia-c5",
-      front: "Richter, Littre, Maydl and Amyand hernia",
-      back: "Richter: part of the bowel circumference only, so it strangulates without obstructing (commonest in femoral hernias). Littre: Meckel diverticulum in the sac. Maydl: W-loop with the strangulated segment inside the abdomen (retrograde strangulation). Amyand: appendix in an inguinal sac.",
-    },
-    {
-      id: "surgery-office-hernia-c6",
-      front: "Why is taxis contraindicated in a strangulated hernia?",
-      back: "It can reduce gangrenous bowel into the peritoneal cavity, reduce the hernia en masse with the constricting ring still around the bowel, rupture the bowel and cause peritonitis, and falsely reassure both patient and doctor. Resuscitate and refer for emergency operation instead.",
-    },
-    {
-      id: "surgery-office-hernia-c7",
-      front: "Operation of choice in an adult inguinal hernia, and in a child",
-      back: "Adult: Lichtenstein open tension-free mesh hernioplasty (gold standard, can be done under local anaesthesia as day surgery); laparoscopic TEP or TAPP for bilateral and recurrent hernias. Child: herniotomy alone - high ligation and excision of the sac, with no mesh and no canal repair.",
-    },
-    {
-      id: "surgery-office-hernia-c8",
-      front: "Umbilical hernia in a child versus paraumbilical hernia in an adult",
-      back: "Childhood umbilical hernia usually closes spontaneously; repair only if it persists beyond 4-5 years, exceeds about 1.5-2 cm, or becomes complicated. An adult paraumbilical hernia has a narrow fibrous neck, never resolves, and obstructs and strangulates readily, so it is always repaired.",
     },
   ],
   references: [
@@ -3450,48 +3220,6 @@ topics.push({
       difficulty: "moderate",
     },
   ],
-  cards: [
-    {
-      id: "surgery-office-breast-lump-c1",
-      front: "What are the three arms of triple assessment and the governing rule?",
-      back: "Clinical examination (P1-P5), imaging (U1-U5 or M1-M5, or BIRADS) and tissue diagnosis (FNAC C1-C5 or core biopsy B1-B5). A lump may be called benign only when all three are concordantly benign; any discordance mandates excision biopsy. Sensitivity exceeds 99 percent when concordant.",
-    },
-    {
-      id: "surgery-office-breast-lump-c2",
-      front: "Which imaging for which age?",
-      back: "Ultrasound first under 40 years, and in pregnancy or lactation at any age, because the dense breast defeats mammography. At 40 and over, bilateral mammography in craniocaudal and mediolateral oblique views plus targeted ultrasound.",
-    },
-    {
-      id: "surgery-office-breast-lump-c3",
-      front: "Why has core needle biopsy replaced FNAC?",
-      back: "Core biopsy distinguishes invasive carcinoma from carcinoma in situ, gives histological type and grade, and provides tissue for oestrogen receptor, progesterone receptor and HER2 status, which decide neoadjuvant and adjuvant treatment. FNAC remains useful for cysts, nodes and low-resource settings.",
-    },
-    {
-      id: "surgery-office-breast-lump-c4",
-      front: "Three rules after aspirating a breast cyst",
-      back: "The lump must disappear completely, the fluid must not be blood-stained, and there must be no residual mass. If any rule fails, or the cyst refills rapidly, send cytology and refer to exclude an intracystic carcinoma.",
-    },
-    {
-      id: "surgery-office-breast-lump-c5",
-      front: "Indications for excising a fibroadenoma",
-      back: "Larger than 3 cm, enlarging on review, patient over 35-40 years, discordant triple assessment, or patient preference. A fibroadenoma under 3 cm in a woman under 30 with a concordantly benign assessment may be observed.",
-    },
-    {
-      id: "surgery-office-breast-lump-c6",
-      front: "Paget disease of the nipple versus nipple eczema",
-      back: "Paget disease begins on the nipple and spreads to the areola, is unilateral, persistent and fails to respond to steroid, and indicates an underlying ductal carcinoma in most cases - biopsy it. Eczema spares the nipple, is often bilateral and itchy, and responds to topical treatment.",
-    },
-    {
-      id: "surgery-office-breast-lump-c7",
-      front: "Significance of unilateral single-duct blood-stained nipple discharge",
-      back: "Commonest cause is an intraduct papilloma, but ductal carcinoma in situ and invasive carcinoma must be excluded. Needs full triple assessment and usually referral for microdochectomy or major duct excision (Hadfield). Discharge cytology is of limited value and a negative result excludes nothing.",
-    },
-    {
-      id: "surgery-office-breast-lump-c8",
-      front: "Breast cancer screening in India",
-      back: "There is no national mammography screening programme. Under NPCDCS and the Ayushman Bharat Health and Wellness Centres, clinical breast examination is offered to women aged 30 and above at about 5-yearly intervals along with cervical and oral cancer screening, supported by breast awareness education rather than formal self-examination drills.",
-    },
-  ],
   references: [
     "Bailey and Love Short Practice of Surgery, 28th edition, 2023 - the breast",
     "SRB Manual of Surgery, 6th edition, 2019 - breast diseases",
@@ -4000,48 +3728,6 @@ topics.push({
       difficulty: "easy",
     },
   ],
-  cards: [
-    {
-      id: "surgery-office-catheter-ngt-injection-c1",
-      front: "Contraindication to urethral catheterisation and its signs",
-      back: "Suspected urethral injury: blood at the external meatus, perineal or scrotal butterfly haematoma, high-riding or impalpable prostate, inability to void after pelvic trauma, pelvic fracture. Do not catheterise - arrange a retrograde urethrogram and a suprapubic catheter.",
-    },
-    {
-      id: "surgery-office-catheter-ngt-injection-c2",
-      front: "French gauge, catheter sizes and balloon filling",
-      back: "French (Charriere) gauge is the circumference in millimetres; diameter equals Fr divided by 3. Routine adult 14-16 Fr, three-way 20-24 Fr for clot retention, 8-10 Fr in children, Coude tip for prostatic enlargement. Inflate with 10 mL of sterile water - never saline (crystallises) and never air.",
-    },
-    {
-      id: "surgery-office-catheter-ngt-injection-c3",
-      front: "Two errors that must never occur during male catheterisation",
-      back: "Inflating the balloon before the catheter reaches the bifurcation and urine drains (causes urethral rupture), and failing to replace the foreskin afterwards (causes paraphimosis). Also instil 10-20 mL of lignocaine 2% gel and wait 3-5 minutes before passing the catheter.",
-    },
-    {
-      id: "surgery-office-catheter-ngt-injection-c4",
-      front: "Post-obstructive diuresis",
-      back: "Follows relief of chronic retention. Monitor hourly urine output; if it exceeds about 200 mL/hour for several hours, check electrolytes and creatinine, watch for postural hypotension and replace roughly half to three quarters of the loss intravenously. Haematuria ex vacuo may also follow rapid decompression.",
-    },
-    {
-      id: "surgery-office-catheter-ngt-injection-c5",
-      front: "How is nasogastric tube position confirmed?",
-      back: "Aspirate gastric content and test on pH paper - pH 5.5 or less confirms gastric placement. If no aspirate, reposition on the left side, advance or withdraw 10-20 cm and re-test; if still uncertain, take a chest and upper abdominal radiograph. Never use the whoosh test or bubbling in water.",
-    },
-    {
-      id: "surgery-office-catheter-ngt-injection-c6",
-      front: "NEX measurement and the tubes to name",
-      back: "NEX: measure from the tip of the Nose to the Ear lobe to the Xiphisternum and mark the tube. Ryle and Levin tubes are single lumen for drainage; the Salem sump is double lumen with a blue pigtail air vent; fine-bore 8-12 Fr polyurethane tubes are for feeding.",
-    },
-    {
-      id: "surgery-office-catheter-ngt-injection-c7",
-      front: "Safest intramuscular sites and how to find the ventrogluteal site",
-      back: "Ventrogluteal is the safest gluteal site: palm on the greater trochanter, index finger on the anterior superior iliac spine, middle finger along the iliac crest, inject into the V. Vastus lateralis for infants and for adrenaline; deltoid for adult vaccines. Avoid the dorsogluteal quadrant (sciatic nerve) and never give a vaccine into the buttock.",
-    },
-    {
-      id: "surgery-office-catheter-ngt-injection-c8",
-      front: "Immediate steps after a needle-stick injury",
-      back: "Do not squeeze or suck; wash with soap and running water. Report and register; test the source for HIV, hepatitis B and C with consent. HIV post-exposure prophylaxis (three drugs for 28 days) as soon as possible, ideally within 2 hours and certainly within 72 hours. Hepatitis B immunoglobulin plus vaccine if unprotected; no prophylaxis for hepatitis C, so serial testing at baseline, 6 weeks, 3 and 6 months.",
-    },
-  ],
   references: [
     "Bailey and Love Short Practice of Surgery, 28th edition, 2023 - basic surgical skills; urology",
     "SRB Manual of Surgery, 6th edition, 2019 - surgical procedures, catheterisation and Ryle tube",
@@ -4542,48 +4228,6 @@ topics.push({
       answer: 0,
       explanation: "Effective prophylaxis requires adequate tissue concentration at the moment of incision, which means a single intravenous dose within 60 minutes of incision (120 minutes for vancomycin or a fluoroquinolone), redosing if the operation exceeds two drug half-lives or blood loss exceeds about 1500 mL, and stopping within 24 hours. Prolonged courses (option B) do not reduce infection and do select resistant organisms and Clostridioides difficile. Giving it after closure (option C) misses the window entirely. Prophylaxis never substitutes for antisepsis, sterile technique, normothermia and glycaemic control (option D). It is not needed for every clean operation without an implant (option E), where the baseline infection rate is under 2 percent.",
       difficulty: "easy",
-    },
-  ],
-  cards: [
-    {
-      id: "surgery-office-preop-postop-c1",
-      front: "The four purposes of pre-operative assessment",
-      back: "Identify and optimise comorbidity; quantify and communicate perioperative risk; plan drugs, fasting, thromboprophylaxis and antibiotic prophylaxis; and inform consent and shared decision-making, including the option of not operating. Fitness is always relative to the magnitude of the planned operation.",
-    },
-    {
-      id: "surgery-office-preop-postop-c2",
-      front: "ASA I to VI in one line each",
-      back: "I normal healthy patient; II mild systemic disease without functional limitation; III severe systemic disease with substantive functional limitation; IV severe systemic disease that is a constant threat to life; V moribund, not expected to survive without the operation; VI declared brain-dead organ donor. Suffix E for emergency, which roughly doubles or trebles the risk.",
-    },
-    {
-      id: "surgery-office-preop-postop-c3",
-      front: "The six components of the Revised Cardiac Risk Index",
-      back: "High-risk surgery (intraperitoneal, intrathoracic or suprainguinal vascular), ischaemic heart disease, congestive cardiac failure, cerebrovascular disease, insulin-treated diabetes, and serum creatinine above 2 mg/dL. Risk rises stepwise with the number of factors; 2 or more warrants a cardiology opinion.",
-    },
-    {
-      id: "surgery-office-preop-postop-c4",
-      front: "How long should elective surgery be deferred after a cardiac event?",
-      back: "At least 60 days after myocardial infarction; at least 1 month after a bare-metal stent; ideally 6 months (minimum 3 months if unavoidable) after a drug-eluting stent; and 3 to 6 months after a stroke. Never stop dual antiplatelet therapy inside these windows without cardiology advice.",
-    },
-    {
-      id: "surgery-office-preop-postop-c5",
-      front: "Pre-operative fasting rules",
-      back: "6 hours for solids, infant formula and non-human milk; 4 hours for breast milk; 2 hours for clear fluids. Enhanced recovery pathways add a carbohydrate drink up to 2 hours before. Prolonged overnight starvation causes dehydration, hypoglycaemia and hypotension without any safety benefit.",
-    },
-    {
-      id: "surgery-office-preop-postop-c6",
-      front: "The postoperative fever timetable (five Ws)",
-      back: "Wind days 0-2 (atelectasis and the surgical inflammatory response); water days 3-5 (urinary and chest infection); walking days 4-6 (deep vein thrombosis and pulmonary embolism); wound days 5-7 (surgical site infection); days 5-10 anastomotic leak and intra-abdominal collection; wonder drugs beyond day 7 (drug fever, line sepsis, C. difficile).",
-    },
-    {
-      id: "surgery-office-preop-postop-c7",
-      front: "Rules for surgical antibiotic prophylaxis",
-      back: "A single intravenous dose within 60 minutes before incision (120 minutes for vancomycin or a fluoroquinolone), redosed if the operation exceeds two drug half-lives or blood loss exceeds about 1500 mL, and stopped within 24 hours. Prolonged courses do not lower infection rates but do select resistant organisms.",
-    },
-    {
-      id: "surgery-office-preop-postop-c8",
-      front: "Discharge criteria after day-care surgery",
-      back: "Stable vital signs for at least an hour; oriented to time, place and person; walking unaided at the pre-procedure level; pain and nausea controlled on oral medication; no active bleeding; tolerating oral fluids; a responsible adult escort and a telephone at home; and written instructions with a named contact number.",
     },
   ],
   references: [
@@ -5337,68 +4981,6 @@ topics.push({
       difficulty: "easy",
     },
   ],
-  cards: [
-    {
-      id: "surgery-office-procedural-sedation-ketamine-c1",
-      front: "Define dissociative anaesthesia and name the receptor involved.",
-      back: "A cataleptic, trance-like state of profound analgesia and amnesia caused by functional and electrophysiological dissociation of the thalamocortical from the limbic system - produced by non-competitive antagonism at the phencyclidine site of the NMDA glutamate receptor. Eyes open with a vacant nystagmoid stare, increased tone, purposeless movements, and preserved corneal, cough and laryngeal reflexes.",
-    },
-    {
-      id: "surgery-office-procedural-sedation-ketamine-c2",
-      front: "The single governing safety rule of procedural sedation.",
-      back: "Anyone who sedates must be able to rescue the patient from one level deeper than the level intended - because sedation is a continuum and patients drift deeper than planned.",
-    },
-    {
-      id: "surgery-office-procedural-sedation-ketamine-c3",
-      front: "The four ASA levels of sedation and the response that defines each.",
-      back: "Minimal (anxiolysis) - normal response to verbal command. Moderate ('conscious') - purposeful response to verbal or light tactile stimulation. Deep - purposeful response only after repeated or painful stimulation. General anaesthesia - unarousable even to pain. Reflex withdrawal is NOT a purposeful response. Ketamine's dissociative state sits outside the continuum.",
-    },
-    {
-      id: "surgery-office-procedural-sedation-ketamine-c4",
-      front: "Ketamine dissociative doses: IV and IM.",
-      back: "IV 1-1.5 mg/kg in adults and 1.5-2 mg/kg in children, given over 30-60 seconds (top-up 0.5-1 mg/kg). IM 4-5 mg/kg (top-up 2-2.5 mg/kg). IM induction of anaesthesia 5-10 mg/kg.",
-    },
-    {
-      id: "surgery-office-procedural-sedation-ketamine-c5",
-      front: "Ketamine by intranasal, oral and sub-dissociative analgesic routes.",
-      back: "Intranasal: analgesia 0.5-1 mg/kg, sedation 3-6 mg/kg (bioavailability 25-50 percent, unreliable). Oral 6-10 mg/kg, onset 20-45 minutes (bioavailability only 16-20 percent). Sub-dissociative IV analgesia 0.1-0.3 mg/kg infused over 10-15 minutes - never a rapid bolus, which causes dysphoria.",
-    },
-    {
-      id: "surgery-office-procedural-sedation-ketamine-c6",
-      front: "Onset and duration of ketamine by IV and IM routes.",
-      back: "IV onset 30 seconds, clinical duration 5-10 minutes, recovery 30-60 minutes. IM onset 3-5 minutes, duration 15-30 minutes, recovery 60-120 minutes. Metabolised by CYP3A4/2B6 to norketamine, which has about one third the potency and prolongs the IM and oral effect.",
-    },
-    {
-      id: "surgery-office-procedural-sedation-ketamine-c7",
-      front: "Why is ketamine used in shock, and what is the catch?",
-      back: "Centrally mediated sympathetic stimulation raises heart rate, blood pressure and cardiac output - the only common induction agent that supports the circulation. The catch: ketamine is also a direct myocardial depressant, and in the catecholamine-depleted patient (prolonged shock, sepsis, exhaustion) that effect is unmasked and the blood pressure falls. Reduce the dose to 0.5-1 mg/kg and have a vasopressor ready.",
-    },
-    {
-      id: "surgery-office-procedural-sedation-ketamine-c8",
-      front: "Absolute contraindications to ketamine, and the two contested ones.",
-      back: "Absolute: age under 3 months, and known or suspected schizophrenia. Contested: raised intracranial pressure (current reviews in sedated, ventilated, normocapnic patients show no rise in ICP and often better cerebral perfusion pressure, so it is now used in head injury) and raised intraocular pressure or open globe injury (the rise is small and transient, less than from coughing, but the drug is still avoided in penetrating eye injury when an alternative exists).",
-    },
-    {
-      id: "surgery-office-procedural-sedation-ketamine-c9",
-      front: "Emergence phenomena - frequency, prevention and treatment.",
-      back: "10-30 percent of adults, about 1.6 percent clinically important in children; commoner with rapid or large doses and a noisy recovery. Prevent by forewarning with a pleasant suggestion and recovering the patient in a quiet, dim, undisturbed room. Treat (and in adults prevent) with midazolam 0.03-0.05 mg/kg IV. Routine prophylactic midazolam is NOT recommended in children.",
-    },
-    {
-      id: "surgery-office-procedural-sedation-ketamine-c10",
-      front: "Laryngospasm during ketamine sedation - rate and management.",
-      back: "About 0.3 percent (1 in 300). Stop the stimulus, suction the pharynx, 100 percent oxygen, jaw thrust with firm pressure in the laryngospasm notch behind the ear lobule (Larson manoeuvre), then bag-valve-mask with PEEP. If it does not break, succinylcholine 0.5-1 mg/kg IV (3-4 mg/kg IM) with atropine, then intubate.",
-    },
-    {
-      id: "surgery-office-procedural-sedation-ketamine-c11",
-      front: "SOAPME - the pre-sedation equipment check.",
-      back: "Suction (working, rigid Yankauer); Oxygen with flowmeter and delivery devices; Airway kit (oro- and nasopharyngeal airways, correctly sized bag-valve-mask, laryngoscope, tubes with stylet, supraglottic airway); Pharmacy (sedative plus adrenaline, atropine, glycopyrrolate, succinylcholine, ondansetron, midazolam, naloxone, flumazenil, IV fluids); Monitors (SpO2, ECG, NIBP, capnography); Equipment (defibrillator, tilting trolley).",
-    },
-    {
-      id: "surgery-office-procedural-sedation-ketamine-c12",
-      front: "Fasting rules before elective sedation, and where the emergency guidance differs.",
-      back: "Clear fluids 2 hours, breast milk 4 hours, formula and non-human milk 6 hours, light meal 6 hours, fatty or meat-containing meal 8 hours (ASA; many paediatric societies now accept 1 hour for clear fluids). ACEP states that recent food intake is not a contraindication to emergency procedural sedation, since no evidence links pre-procedural fasting to aspiration - the decision balances urgency against aspiration risk.",
-    },
-  ],
   references: [
     "Miller's Anesthesia, 9th edition, 2020 - intravenous anaesthetics (ketamine pharmacology) and monitored anaesthesia care.",
     "Morgan & Mikhail's Clinical Anesthesiology, 6th edition, 2018 - intravenous anaesthetics and ambulatory/non-operating-room anaesthesia.",
@@ -6147,68 +5729,6 @@ topics.push({
       explanation:
         "ASRA 4th edition (2018) requires 12 hours after a prophylactic dose of low-molecular-weight heparin but 24 hours after a therapeutic dose such as enoxaparin 1 mg/kg twice daily or 1.5 mg/kg daily; at 14 hours the interval is not met, so the block is deferred or general anaesthesia is used. The INR and platelet count do not reflect anti-Xa activity, so normal results give no reassurance about low-molecular-weight heparin. Protamine reverses low-molecular-weight heparin only partially - roughly 60 percent of anti-Xa activity - and is not accepted as a way to shorten the interval before a neuraxial block. An epidural is more hazardous, not less: it uses a 16-18G Tuohy needle and often a catheter, and both insertion and removal carry haematoma risk. European (ESAIC) intervals differ slightly from ASRA, so the guideline being followed should always be named.",
       difficulty: "hard",
-    },
-  ],
-  cards: [
-    {
-      id: "surgery-office-spinal-anaesthesia-c1",
-      front: "List, in order, the layers a spinal needle crosses in the midline approach.",
-      back: "Skin, subcutaneous fat, supraspinous ligament, interspinous ligament, ligamentum flavum, epidural space, dura mater, arachnoid mater, subarachnoid space (CSF). Depth 4-6 cm in an adult. The paramedian route bypasses the supraspinous and interspinous ligaments.",
-    },
-    {
-      id: "surgery-office-spinal-anaesthesia-c2",
-      front: "Where does the spinal cord end, where does the dural sac end, and which interspace is used?",
-      back: "Cord ends at the lower border of L1 (L1-L2) in the adult and at L3 in the neonate; dural sac ends at S2 in the adult and S3 in the infant. Inject at L3-L4 or L4-L5 (L2-L3 at the highest), never above L2.",
-    },
-    {
-      id: "surgery-office-spinal-anaesthesia-c3",
-      front: "What is Tuffier's line and what is the caveat about it?",
-      back: "The intercristal line joining the highest points of the iliac crests; it classically crosses the body of L4 or the L4-L5 interspace. Palpation frequently overestimates the level by one space, so identify the space and then use the one below.",
-    },
-    {
-      id: "surgery-office-spinal-anaesthesia-c4",
-      front: "Give the dose of 0.5 percent hyperbaric bupivacaine for caesarean section and the level required.",
-      back: "2.0-2.2 mL (10-11 mg), commonly with fentanyl 15-25 mcg; the practical range is 1.8-2.5 mL (9-12.5 mg). Confirm loss of cold to T4 and loss of light touch to T5 before incision.",
-    },
-    {
-      id: "surgery-office-spinal-anaesthesia-c5",
-      front: "Give the key physicochemical numbers for bupivacaine.",
-      back: "Amide (pipecoloxylidide) local anaesthetic; pKa 8.1 (slower onset than lignocaine); protein binding 95 percent (long duration); high lipid solubility (about four times the potency of lignocaine). Hyperbaric preparation: 0.5 percent in 8 percent dextrose, density about 1.026 g/mL, 20 mg in 4 mL.",
-    },
-    {
-      id: "surgery-office-spinal-anaesthesia-c6",
-      front: "Why is bupivacaine more cardiotoxic than lignocaine, and how is systemic toxicity treated?",
-      back: "It binds cardiac sodium channels avidly and dissociates slowly in diastole ('fast in, slow out'), causing re-entrant VT and refractory VF; the cardiovascular:CNS toxicity ratio is about 2 versus about 7 for lignocaine, so arrest can precede convulsions. Treat with airway control and 100 percent oxygen, a benzodiazepine for seizures, 20 percent lipid emulsion 1.5 mL/kg then 0.25 mL/kg/min, amiodarone (not lignocaine) for arrhythmias, and prolonged CPR.",
-    },
-    {
-      id: "surgery-office-spinal-anaesthesia-c7",
-      front: "Define baricity and state what hyperbaric, isobaric and hypobaric solutions do.",
-      back: "Baricity is the density of the solution relative to CSF at 37 degrees C (CSF 1.0003-1.0009 g/mL). Hyperbaric (bupivacaine in 8 percent dextrose) sinks with gravity; isobaric (plain bupivacaine) stays near the injection site giving a longer, more stable block; hypobaric (bupivacaine in sterile water) rises - used for hip surgery lateral with the operative side up and perianal surgery in the prone jack-knife position.",
-    },
-    {
-      id: "surgery-office-spinal-anaesthesia-c8",
-      front: "For how long can posture change the height of a spinal block, and where does a supine hyperbaric block settle?",
-      back: "Posture matters only for the first 15-20 minutes, until the block is fixed. Supine, hyperbaric drug runs down the lumbar lordosis into the thoracic kyphotic trough at T4-T6, which is where an unmodified block tends to settle. Sitting for 3-5 minutes gives a saddle block (S2-S5).",
-    },
-    {
-      id: "surgery-office-spinal-anaesthesia-c9",
-      front: "Which sensory levels are needed for which operations?",
-      back: "Caesarean section T4; hernia and upper abdominal surgery T6; TURP, hip surgery and vaginal delivery T10; lower limb T12; perineal and anorectal surgery S2-S5. Landmarks: T4 nipple, T6 xiphisternum, T8 lower costal margin, T10 umbilicus, L1 inguinal ligament.",
-    },
-    {
-      id: "surgery-office-spinal-anaesthesia-c10",
-      front: "How do you test the level of a spinal block, and in what order?",
-      back: "Cold (ice or ethyl chloride) first, then pinprick, then light touch, both sides, recording the highest dermatome and the time. Cold is 1-2 segments higher than pinprick, and pinprick 1-2 segments higher than touch. Motor block is graded on the modified Bromage scale.",
-    },
-    {
-      id: "surgery-office-spinal-anaesthesia-c11",
-      front: "Phenylephrine or ephedrine for hypotension after an obstetric spinal?",
-      back: "Phenylephrine is first line - infusion 25-50 mcg/min or boluses of 50-100 mcg - because it preserves fetal acid-base status better; it causes reflex bradycardia. Ephedrine 6 mg IV (5-10 mg) is preferred when hypotension is accompanied by bradycardia. Noradrenaline 4-6 mcg boluses is an accepted alternative. Add left uterine displacement and a crystalloid co-load of 10-15 mL/kg given at the moment of injection.",
-    },
-    {
-      id: "surgery-office-spinal-anaesthesia-c12",
-      front: "Give the ASRA 2018 waiting times before a neuraxial block for the common antithrombotics.",
-      back: "Aspirin and NSAIDs alone - no delay. LMWH: 12 hours prophylactic, 24 hours therapeutic. Subcutaneous unfractionated heparin 5000 units: 4-6 hours. Warfarin: 5 days with INR 1.4 or less. Clopidogrel and ticagrelor 5-7 days, prasugrel 7-10 days. Rivaroxaban and apixaban 72 hours; dabigatran 72-120 hours by renal function. Fondaparinux 36-42 hours. European (ESAIC) intervals differ slightly - name the guideline you follow.",
     },
   ],
   references: [
@@ -7019,68 +6539,6 @@ topics.push({
       difficulty: "moderate",
     },
   ],
-  cards: [
-    {
-      id: "surgery-office-blood-transfusion-c1",
-      front: "Restrictive transfusion thresholds - the two numbers.",
-      back: "7 g/dL for most stable hospitalised adults including ICU, sepsis and upper GI bleeding; 8 g/dL with cardiovascular disease, acute coronary syndrome or in the perioperative period. Target 7-9 g/dL after transfusion. One unit at a time, then reassess.",
-    },
-    {
-      id: "surgery-office-blood-transfusion-c2",
-      front: "Storage temperature and shelf life of packed red cells, platelets, FFP and cryoprecipitate.",
-      back: "Red cells 2-6 degrees C for 35 days (CPDA-1) or 42 days (additive solution). Platelets 20-24 degrees C with continuous agitation for 5 days. FFP and cryoprecipitate at minus 30 degrees C or colder for 1 year, used within 4 hours of thawing.",
-    },
-    {
-      id: "surgery-office-blood-transfusion-c3",
-      front: "Expected rise from one unit of red cells, one RDP, one SDP and 10 units of cryoprecipitate.",
-      back: "1 unit red cells raises haemoglobin about 1 g/dL (4 mL/kg raises 1 g/dL in a child); 1 random donor platelet unit raises the count 5,000-10,000 per microlitre and 1 single donor apheresis unit 30,000-50,000; about 10 units of cryoprecipitate raise fibrinogen by 50-100 mg/dL.",
-    },
-    {
-      id: "surgery-office-blood-transfusion-c4",
-      front: "What does one unit of cryoprecipitate contain?",
-      back: "10-20 mL containing factor VIII 80 IU or more, fibrinogen 150-250 mg, von Willebrand factor, factor XIII and fibronectin - the cold-insoluble precipitate left when FFP is thawed at 1-6 degrees C.",
-    },
-    {
-      id: "surgery-office-blood-transfusion-c5",
-      front: "List the indications for fresh frozen plasma.",
-      back: "Multiple factor deficiency with bleeding or before an urgent procedure with PT or APTT above 1.5 times normal (DIC, liver disease, dilutional coagulopathy); massive transfusion in a 1:1:1 ratio; warfarin reversal in major bleeding when PCC is unavailable (with vitamin K); single factor deficiency with no concentrate, notably factor V and XI; TTP plasma exchange; hereditary angioedema without C1-inhibitor concentrate; bleeding haemorrhagic disease of the newborn. Dose 10-15 mL/kg.",
-    },
-    {
-      id: "surgery-office-blood-transfusion-c6",
-      front: "When is FFP NOT indicated?",
-      back: "Volume expansion, nutritional support or hypoalbuminaemia, immunoglobulin replacement, wound healing, correcting an INR below 1.5, and prophylactic correction of a deranged INR in a patient who is neither bleeding nor undergoing a procedure.",
-    },
-    {
-      id: "surgery-office-blood-transfusion-c7",
-      front: "Forward versus reverse grouping - what is tested against what, and why both?",
-      back: "Forward (cell) grouping: patient's red cells against known anti-A, anti-B and anti-AB sera. Reverse (serum) grouping: patient's serum against known A, B and O reagent cells. Both are done because each independently checks the other; any discrepancy must be resolved before issue. Reverse grouping is uninterpretable under 4-6 months of age and in hypogammaglobulinaemia.",
-    },
-    {
-      id: "surgery-office-blood-transfusion-c8",
-      front: "Major versus minor crossmatch, and the three phases.",
-      back: "Major crossmatch = donor red cells against recipient serum - the one that matters. Minor crossmatch = recipient red cells against donor serum - now largely obsolete. Phases: immediate spin in saline at room temperature (IgM, ABO), 37 degrees C incubation with LISS or albumin (IgG sensitisation), then the antiglobulin (Coombs) phase.",
-    },
-    {
-      id: "surgery-office-blood-transfusion-c9",
-      front: "Direct versus indirect antiglobulin test.",
-      back: "DAT detects antibody already coating the patient's red cells in vivo - autoimmune haemolytic anaemia, haemolytic disease of the fetus and newborn, a haemolytic transfusion reaction. IAT detects free antibody in serum - the antibody screen, the AHG crossmatch and weak D (Du) testing.",
-    },
-    {
-      id: "surgery-office-blood-transfusion-c10",
-      front: "What may be added to a transfusion line, and what must never be?",
-      back: "Only 0.9 percent normal saline. Ringer's lactate contains calcium and clots the unit; 5 percent dextrose is hypotonic and haemolyses the cells; no drug is ever given through the transfusion line. Use a 170-200 micron filter set, change it every 12 hours or 4 units, and complete every unit within 4 hours of leaving the blood bank refrigerator.",
-    },
-    {
-      id: "surgery-office-blood-transfusion-c11",
-      front: "TRALI versus TACO.",
-      back: "Both cause breathlessness within 6 hours. TRALI: donor anti-HLA or anti-neutrophil antibodies, non-cardiogenic, normal JVP and BNP, treated with oxygen and ventilation - diuretics are harmful; mortality 5-10 percent. TACO: circulatory overload, raised JVP and BNP, hypertension, positive fluid balance, responds to sitting up, oxygen and furosemide; now the leading cause of transfusion-related death in haemovigilance data.",
-    },
-    {
-      id: "surgery-office-blood-transfusion-c12",
-      front: "Indian blood safety framework: law, mandatory tests, donor criteria and haemovigilance.",
-      back: "Blood is a drug under the Drugs and Cosmetics Act 1940 and Rules 1945 Part XII-B, licensed on Form 26-G; paid donation banned since 1 January 1998 (Common Cause v. Union of India, 1996) with NBTC and SBTCs created and NACO supervising. Five mandatory tests: HIV 1 and 2, HBsAg, anti-HCV, syphilis, malaria. Donor: 18-65 years, 45 kg or more, haemoglobin 12.5 g/dL or more, 3-month interval. Reactions are reported to the Haemovigilance Programme of India (IPC Ghaziabad, since 10 December 2012).",
-    },
-  ],
   references: [
     "National Blood Transfusion Council / NACO, Standards for Blood Banks and Blood Transfusion Services, Ministry of Health and Family Welfare, Government of India, 2022 edition; with the NACO Transfusion Medicine Technical Manual, 2nd edition, 2013",
     "Drugs and Cosmetics Act 1940 and Rules 1945, Part XII-B of Schedule F (blood centre licensing on Form 26-G) as amended by GSR 166(E), 2020",
@@ -7790,68 +7248,6 @@ topics.push({
       explanation:
         "A surgical cricothyroidotomy is avoided below about 12 years of age because the child's cricothyroid membrane is tiny, the larynx sits high and soft, and cricoid injury produces subglottic stenosis; the paediatric rescue is a needle cricothyroidotomy with a 14-16 G cannula and oxygen insufflation, which oxygenates but does not ventilate, so carbon dioxide climbs and it buys only 20-30 minutes as a bridge to a definitive airway. Open cricothyroidotomy (option A) is therefore wrong at this age, and a size 6.0 tube would not pass. An emergency tracheostomy in a hypoxic struggling child (option C) is a difficult, bloody operation on a small mobile trachea with a high pleural dome and a high innominate artery, and the fifth ring is far too low. Blind nasotracheal intubation (option D) has already failed by definition in a cannot-intubate situation and risks converting partial to complete obstruction. A mini-tracheostomy (option E) is a 4 mm cannula designed for clearing secretions, not for oxygenating an obstructed airway.",
       difficulty: "hard",
-    },
-  ],
-  cards: [
-    {
-      id: "surgery-office-tracheostomy-c1",
-      front: "At which tracheal ring is a tracheostomy made, and why not higher or lower?",
-      back: "Between the 2nd and 3rd rings, below the thyroid isthmus. Higher (1st ring or cricoid) causes cricoid perichondritis and subglottic stenosis; lower (below the 4th ring) is deep, near the arch vessels, and risks a tracheo-innominate artery fistula.",
-    },
-    {
-      id: "surgery-office-tracheostomy-c2",
-      front: "Tracheotomy versus tracheostomy versus cricothyroidotomy.",
-      back: "Tracheotomy is the incision itself - a temporary opening that closes when the tube comes out. Tracheostomy is the fashioned stoma brought to skin. Cricothyroidotomy is through the cricothyroid membrane above the thyroid gland - the fast emergency airway, converted or closed within about 3-7 days, and avoided under 12 years.",
-    },
-    {
-      id: "surgery-office-tracheostomy-c3",
-      front: "Jackson's classification of tracheostomy by level.",
-      back: "High - above the isthmus (1st-2nd rings), condemned because of subglottic stenosis, except when the larynx is to be removed anyway. Mid - through or after dividing the isthmus (2nd-3rd rings), the standard operation. Low - below the isthmus (4th ring and below), deep, near the great vessels, the tube kinks.",
-    },
-    {
-      id: "surgery-office-tracheostomy-c4",
-      front: "The four groups of indications for tracheostomy.",
-      back: "1. Upper airway obstruction (infective, traumatic, neoplastic, neurological such as bilateral abductor palsy, congenital). 2. Prolonged ventilation and weaning. 3. Pulmonary toilet for secretions the patient cannot clear, with aspiration protection. 4. Part of major head and neck surgery, including the permanent stoma of a total laryngectomy.",
-    },
-    {
-      id: "surgery-office-tracheostomy-c5",
-      front: "Which structures are at risk while opening the trachea, and what differs in a child?",
-      back: "Isthmus of the thyroid over rings 2-4, anterior jugular veins and the jugular venous arch, inferior thyroid veins, a thyroidea ima artery in about 10 percent, recurrent laryngeal nerves laterally, oesophagus behind, and the pleural domes. In a child the trachea is small, soft and mobile, and the pleural cupola and the innominate artery both ride higher - sometimes above the suprasternal notch.",
-    },
-    {
-      id: "surgery-office-tracheostomy-c6",
-      front: "Fenestrated tube and speaking valve - the two rules.",
-      back: "Use the fenestrated inner tube for speech and swap in the plain inner tube before suction or positive-pressure ventilation. A speaking valve or cap goes on only with the cuff fully deflated and a patent upper airway - on an inflated cuff the patient can breathe in but not out.",
-    },
-    {
-      id: "surgery-office-tracheostomy-c7",
-      front: "What cuff pressure, how often checked, and why that number?",
-      back: "20-30 cmH2O, measured with a manometer at least once a shift. Below 20 the cuff leaks and secretions pass into the lungs; above 30 it exceeds tracheal mucosal capillary perfusion pressure, causing ischaemia that ends as tracheal stenosis, tracheomalacia or a tracheo-oesophageal fistula.",
-    },
-    {
-      id: "surgery-office-tracheostomy-c8",
-      front: "When is the first tracheostomy tube change done, and why the delay?",
-      back: "After the tract has epithelialised - about day 3-5 where maturation or stay sutures were placed, day 5-7 in most surgical tracheostomies, and 7-10 days after a percutaneous one (guidance genuinely varies). Earlier, a tube can be pushed into a pretracheal false passage. Change with an experienced operator, light, suction, a tracheal dilator and a size-smaller spare tube.",
-    },
-    {
-      id: "surgery-office-tracheostomy-c9",
-      front: "Suction technique numbers.",
-      back: "Suction on demand, not by the clock. Catheter French size no more than twice the tube's internal diameter in mm minus two (14 Fr for an 8.0 tube). Pass without suction to just beyond the tube tip, apply 100-150 mmHg in adults (80-100 mmHg in children) while withdrawing, for 10-15 seconds, no more than three passes, pre-oxygenating the unstable patient.",
-    },
-    {
-      id: "surgery-office-tracheostomy-c10",
-      front: "Why is humidification compulsory after a tracheostomy?",
-      back: "The nose, which warms, humidifies and filters inspired air, has been bypassed. Without a heated humidifier, a heat-and-moisture exchanger or a moist bib plus nebulised saline 4-6 times a day and good hydration, secretions dry into crusts, and crusts block the tube - the commonest lethal ward emergency.",
-    },
-    {
-      id: "surgery-office-tracheostomy-c11",
-      front: "Complications of tracheostomy by timing - one line each.",
-      back: "Immediate: haemorrhage, pneumothorax, oesophageal or recurrent laryngeal nerve injury, false passage, apnoea from loss of hypoxic drive. Early (first week): tube blockage, displacement, surgical emphysema, stomal infection, aspiration. Late: tracheal stenosis, tracheomalacia, granulation, tracheo-oesophageal fistula, tracheo-innominate fistula, persistent tracheocutaneous fistula, decannulation difficulty.",
-    },
-    {
-      id: "surgery-office-tracheostomy-c12",
-      front: "Decannulation - criteria and the stepwise process.",
-      back: "Indication resolved, awake and cooperative, off ventilation on 30-40 percent oxygen or less for 24-48 hours, effective cough with suction no more than 3-4 hourly, safe swallow, patent upper airway on laryngoscopy or cuff-deflation trial, no infection or planned surgery. Then: deflate the cuff, downsize, change to uncuffed or fenestrated, cap for increasing periods until 24 hours including sleep is tolerated, remove in the morning of a working day, seal with an occlusive dressing; the stoma closes in 5-7 days. Endoscope every child first.",
     },
   ],
   references: [

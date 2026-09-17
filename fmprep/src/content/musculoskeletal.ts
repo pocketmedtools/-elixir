@@ -553,68 +553,6 @@ topics.push({
       difficulty: "moderate",
     },
   ],
-  cards: [
-    {
-      id: "musculoskeletal-low-back-pain-c1",
-      front: "What proportion of low back pain is non-specific, radicular and serious pathology?",
-      back: "About 90% non-specific mechanical, 5-10% radicular, and 1-2% serious specific pathology (infection, tumour, fracture, inflammatory).",
-    },
-    {
-      id: "musculoskeletal-low-back-pain-c2",
-      front: "Name the five cardinal features of cauda equina syndrome.",
-      back: "Bilateral sciatica, saddle anaesthesia, bladder dysfunction with retention and overflow, faecal incontinence with lax anal tone, and progressive lower limb weakness.",
-    },
-    {
-      id: "musculoskeletal-low-back-pain-c3",
-      front: "When is imaging indicated in acute low back pain?",
-      back: "Only when a red flag is present, or when pain persists beyond 6 weeks. MRI is the modality for suspected cauda equina, infection, tumour or surgical radiculopathy.",
-    },
-    {
-      id: "musculoskeletal-low-back-pain-c4",
-      front: "Five features of inflammatory back pain.",
-      back: "Onset before 45, insidious, morning stiffness over 30 minutes, night pain in the second half of the night, improvement with exercise and not with rest (plus a dramatic NSAID response).",
-    },
-    {
-      id: "musculoskeletal-low-back-pain-c5",
-      front: "How is the modified Schober test performed and what is normal?",
-      back: "Mark 10 cm above and 5 cm below the lumbosacral junction (dimples of Venus) with the patient erect; on full flexion the 15 cm distance should increase by more than 5 cm. Less than 5 cm indicates restricted lumbar flexion.",
-    },
-    {
-      id: "musculoskeletal-low-back-pain-c6",
-      front: "Interpret the straight leg raise and the crossed straight leg raise.",
-      back: "SLR reproducing radicular pain below the knee at 30-70 degrees is sensitive but not specific for disc herniation; the crossed SLR (pain in the affected leg when the opposite leg is raised) is insensitive but highly specific.",
-    },
-    {
-      id: "musculoskeletal-low-back-pain-c7",
-      front: "Root, weakness and reflex for L5 versus S1 radiculopathy.",
-      back: "L5 - great toe and ankle dorsiflexion weakness, foot drop, reflexes preserved, sensory loss over the dorsum of foot. S1 - plantarflexion weakness, cannot toe-walk, absent ankle jerk, sensory loss over the lateral border and sole.",
-    },
-    {
-      id: "musculoskeletal-low-back-pain-c8",
-      front: "First-line drug therapy for acute non-specific low back pain.",
-      back: "An NSAID at the lowest effective dose for the shortest time - ibuprofen 400 mg TDS or naproxen 250-500 mg BD after food, 5-7 days, with a PPI if there is gastric risk; paracetamol as an add-on.",
-    },
-    {
-      id: "musculoskeletal-low-back-pain-c9",
-      front: "How much bed rest is advised for acute low back pain?",
-      back: "None beyond one or two days. Staying active and continuing work with modified duties speeds recovery and reduces chronicity.",
-    },
-    {
-      id: "musculoskeletal-low-back-pain-c10",
-      front: "What are yellow flags, and why do they matter more than radiographs?",
-      back: "Psychosocial predictors of chronicity - fear-avoidance, catastrophising, low mood, job dissatisfaction, compensation claims. They predict long-term disability far better than any imaging finding.",
-    },
-    {
-      id: "musculoskeletal-low-back-pain-c11",
-      front: "Distinguish neurogenic from vascular claudication.",
-      back: "Neurogenic - relieved by sitting or forward flexion, cycling tolerated, normal pulses, variable walking distance. Vascular - relieved by standing still, fixed claudication distance, absent or reduced pulses.",
-    },
-    {
-      id: "musculoskeletal-low-back-pain-c12",
-      front: "How should tuberculous spondylitis be confirmed before treatment?",
-      back: "MRI of the spine plus image-guided biopsy for Xpert MTB/RIF, histopathology and culture, wherever biopsy is feasible - do not start empirical antitubercular therapy on imaging alone.",
-    },
-  ],
   references: [
     "NICE NG59: Low back pain and sciatica in over 16s - assessment and management, 2016 (updated 2020)",
     "American College of Physicians Clinical Practice Guideline on Noninvasive Treatments for Acute, Subacute and Chronic Low Back Pain, 2017",
@@ -1201,68 +1139,6 @@ topics.push({
       difficulty: "easy",
     },
   ],
-  cards: [
-    {
-      id: "musculoskeletal-knee-osteoarthritis-c1",
-      front: "NICE criteria for diagnosing osteoarthritis clinically, without investigation.",
-      back: "Age 45 or over, activity-related joint pain, and either no morning stiffness or morning stiffness lasting no longer than 30 minutes.",
-    },
-    {
-      id: "musculoskeletal-knee-osteoarthritis-c2",
-      front: "The four radiographic features of osteoarthritis.",
-      back: "Asymmetrical joint space narrowing, osteophytes, subchondral sclerosis and subchondral cysts.",
-    },
-    {
-      id: "musculoskeletal-knee-osteoarthritis-c3",
-      front: "Kellgren-Lawrence grade 3 and grade 4.",
-      back: "Grade 3 - multiple osteophytes, definite joint space narrowing, some sclerosis and possible deformity. Grade 4 - large osteophytes, marked narrowing, severe sclerosis and definite deformity.",
-    },
-    {
-      id: "musculoskeletal-knee-osteoarthritis-c4",
-      front: "The three core treatments every osteoarthritis patient must receive.",
-      back: "Education, exercise (quadriceps and aerobic) and weight management. Drugs are adjuncts to these, never a substitute.",
-    },
-    {
-      id: "musculoskeletal-knee-osteoarthritis-c5",
-      front: "First-line drug for knee osteoarthritis and why.",
-      back: "Topical diclofenac 1% gel 2-4 g TDS-QDS - effective locally with roughly one-tenth the systemic exposure of an oral NSAID.",
-    },
-    {
-      id: "musculoskeletal-knee-osteoarthritis-c6",
-      front: "What is the NSAID triple whammy?",
-      back: "NSAID plus ACE inhibitor or ARB plus diuretic in a volume-depleted patient - a common preventable cause of acute kidney injury.",
-    },
-    {
-      id: "musculoskeletal-knee-osteoarthritis-c7",
-      front: "Monitoring schedule for a patient on regular oral NSAIDs.",
-      back: "Blood pressure and weight at 2-4 weeks; serum creatinine and potassium at 2-4 weeks and then 3-6 monthly; haemoglobin if gastrointestinal symptoms; stop rules for melaena, dyspepsia, oedema or reduced urine output.",
-    },
-    {
-      id: "musculoskeletal-knee-osteoarthritis-c8",
-      front: "Which NSAID for the patient with high cardiovascular risk, and which to avoid?",
-      back: "Naproxen has the most favourable cardiovascular profile; avoid diclofenac and high-dose etoricoxib. Add a PPI for gastroprotection.",
-    },
-    {
-      id: "musculoskeletal-knee-osteoarthritis-c9",
-      front: "How is an effusion detected on knee examination?",
-      back: "Patellar tap for a large effusion; the bulge or wipe test (milk fluid from the medial compartment and watch it refill) for a small effusion.",
-    },
-    {
-      id: "musculoskeletal-knee-osteoarthritis-c10",
-      front: "Maximum frequency of intra-articular steroid injection in one joint.",
-      back: "Three to four injections per year, with at least three months between injections; never inject if infection is suspected or into a prosthetic joint.",
-    },
-    {
-      id: "musculoskeletal-knee-osteoarthritis-c11",
-      front: "In which hand should a walking stick be held for a painful right knee?",
-      back: "In the left hand - the hand opposite the affected knee - so that it unloads the painful joint.",
-    },
-    {
-      id: "musculoskeletal-knee-osteoarthritis-c12",
-      front: "Name four treatments for knee osteoarthritis that are not recommended.",
-      back: "Glucosamine and chondroitin, intra-articular hyaluronic acid, arthroscopic lavage and debridement, and long-term opioids (add lateral wedge insoles and systemic steroids).",
-    },
-  ],
   references: [
     "NICE NG226: Osteoarthritis in over 16s - diagnosis and management, 2022",
     "OARSI Guidelines for the Non-surgical Management of Knee, Hip and Polyarticular Osteoarthritis, 2019",
@@ -1764,68 +1640,6 @@ topics.push({
       explanation:
         "Fever with rigors and a hot joint in a diabetic is septic arthritis until proved otherwise, and a known history of gout does not protect him - the two conditions frequently coexist in the same joint, so the mandatory steps are aspiration for Gram stain, cell count and culture, blood cultures, empirical intravenous antibiotics after sampling, and urgent orthopaedic referral for washout. Escalating colchicine or starting systemic steroids treats a presumed flare while an untreated infection destroys cartilage within days, and steroids additionally worsen his glycaemic control and blunt the fever that is the warning sign. An NSAID with a routine outpatient MRI delays the only test that answers the question, and injecting triamcinolone into a possibly infected joint converts a treatable arthritis into a catastrophic septic joint.",
       difficulty: "easy",
-    },
-  ],
-  cards: [
-    {
-      id: "musculoskeletal-gout-c1",
-      front: "At what serum urate concentration does monosodium urate saturate physiological fluid?",
-      back: "About 6.8 mg/dL (405 micromol/L). Above this, crystals form - which is why the treatment target is set below 6 mg/dL, and below 5 mg/dL with tophi.",
-    },
-    {
-      id: "musculoskeletal-gout-c2",
-      front: "Describe gout and pseudogout crystals under polarised light.",
-      back: "Gout - monosodium urate, needle-shaped, strongly negatively birefringent, often intracellular in neutrophils. Pseudogout - calcium pyrophosphate, rhomboid or rod-shaped, weakly positively birefringent.",
-    },
-    {
-      id: "musculoskeletal-gout-c3",
-      front: "Why can serum urate be normal during an acute gout attack?",
-      back: "Acute inflammation increases renal urate excretion, so urate is normal or low in up to a third of attacks. Measure the true baseline at least 2 weeks after the attack settles.",
-    },
-    {
-      id: "musculoskeletal-gout-c4",
-      front: "Give the modern low-dose colchicine regimen for an acute attack.",
-      back: "1.2 mg PO stat then 0.6 mg one hour later, then 0.6 mg once or twice daily (in India, 1 mg then 0.5 mg after an hour). Equally effective as, and far safer than, hourly dosing to diarrhoea.",
-    },
-    {
-      id: "musculoskeletal-gout-c5",
-      front: "List the indications for starting urate-lowering therapy.",
-      back: "Two or more attacks per year, any tophus, radiographic gouty joint damage, CKD stage 3 or worse, and recurrent uric acid stones. Asymptomatic hyperuricaemia alone is not an indication.",
-    },
-    {
-      id: "musculoskeletal-gout-c6",
-      front: "How is allopurinol started and titrated?",
-      back: "Start 100 mg PO daily (50 mg if eGFR under 30), increase by 100 mg every 2-4 weeks against serum urate to a target under 6 mg/dL; usual 300-600 mg, maximum 800-900 mg daily.",
-    },
-    {
-      id: "musculoskeletal-gout-c7",
-      front: "What prophylaxis is given when urate-lowering therapy is started, and for how long?",
-      back: "Colchicine 0.5 mg PO once or twice daily for at least 3-6 months (or a low-dose NSAID with PPI, or prednisolone 5 mg), because falling urate mobilises crystals and provokes flares.",
-    },
-    {
-      id: "musculoskeletal-gout-c8",
-      front: "Name the drugs that raise serum urate and those that lower it.",
-      back: "Raise - thiazide and loop diuretics, low-dose aspirin, ciclosporin, tacrolimus, pyrazinamide, ethambutol, levodopa. Lower - losartan, fenofibrate, atorvastatin, SGLT2 inhibitors, high-dose aspirin.",
-    },
-    {
-      id: "musculoskeletal-gout-c9",
-      front: "What is allopurinol hypersensitivity syndrome and who is at risk?",
-      back: "Fever, rash progressing to SJS/TEN, eosinophilia, hepatitis and acute kidney injury, mortality up to 25%. Risk: first 8-12 weeks, high starting dose, renal impairment, and HLA-B*5801 carriage (Han Chinese, Thai, Korean).",
-    },
-    {
-      id: "musculoskeletal-gout-c10",
-      front: "Which drug combination with allopurinol causes profound marrow suppression?",
-      back: "Azathioprine or 6-mercaptopurine - allopurinol blocks xanthine oxidase, their main inactivating enzyme. Reduce the thiopurine to about 25% of dose or avoid the combination.",
-    },
-    {
-      id: "musculoskeletal-gout-c11",
-      front: "What are the classic radiographic features of chronic gout?",
-      back: "Punched-out juxta-articular erosions with sclerotic overhanging edges, preserved joint space until late, and soft tissue tophi. Ultrasound shows the double contour sign; dual-energy CT colour-codes urate.",
-    },
-    {
-      id: "musculoskeletal-gout-c12",
-      front: "How much does dietary modification lower serum urate?",
-      back: "About 1 mg/dL at best. Diet supports but never replaces urate-lowering drugs; low-fat dairy, coffee and vitamin C are protective, and pulses and most vegetables need not be restricted.",
     },
   ],
   references: [
@@ -2344,68 +2158,6 @@ topics.push({
       difficulty: "easy",
     },
   ],
-  cards: [
-    {
-      id: "musculoskeletal-shoulder-pain-c1",
-      front: "What is the single discriminating sign between rotator cuff disease and adhesive capsulitis?",
-      back: "Passive external rotation with the elbow at the side and the scapula fixed. It is full in cuff disease and markedly reduced in adhesive capsulitis.",
-    },
-    {
-      id: "musculoskeletal-shoulder-pain-c2",
-      front: "Describe the capsular pattern of the shoulder.",
-      back: "External rotation lost most, then abduction, then internal rotation. Seen in adhesive capsulitis and in glenohumeral osteoarthritis.",
-    },
-    {
-      id: "musculoskeletal-shoulder-pain-c3",
-      front: "Name the three phases of adhesive capsulitis with their durations.",
-      back: "Freezing or painful (2-9 months), frozen or stiff (4-12 months), thawing or recovery (5-24 months). Total course typically 18-30 months.",
-    },
-    {
-      id: "musculoskeletal-shoulder-pain-c4",
-      front: "Which systemic disease is most strongly associated with frozen shoulder, and how strongly?",
-      back: "Diabetes mellitus - up to 20% of diabetics versus 2-5% of the general population; often bilateral, more severe and more resistant. Check HbA1c in every new frozen shoulder.",
-    },
-    {
-      id: "musculoskeletal-shoulder-pain-c5",
-      front: "What does a painful arc at 60-120 degrees mean, versus pain at 170-180 degrees?",
-      back: "60-120 degrees indicates subacromial impingement or supraspinatus tendinopathy; pain in the terminal 20-30 degrees indicates acromioclavicular joint pathology.",
-    },
-    {
-      id: "musculoskeletal-shoulder-pain-c6",
-      front: "Name the four rotator cuff muscles and the test for each.",
-      back: "Supraspinatus - Jobe empty-can test. Infraspinatus and teres minor - resisted external rotation in neutral and external rotation lag sign. Subscapularis - lift-off and belly-press tests.",
-    },
-    {
-      id: "musculoskeletal-shoulder-pain-c7",
-      front: "How is the glenohumeral joint injected for adhesive capsulitis?",
-      back: "Triamcinolone 40 mg (or methylprednisolone 40 mg) with 4-5 mL 1% lignocaine by the posterior approach, 2 cm below and 1 cm medial to the posterolateral acromion, aimed at the coracoid; ultrasound guidance preferred. Maximum 2-3 injections, 6 weeks apart.",
-    },
-    {
-      id: "musculoskeletal-shoulder-pain-c8",
-      front: "What home exercises are prescribed for a frozen shoulder?",
-      back: "Pendulum (Codman) exercises, wall-walking or finger ladder, stick-assisted forward flexion and external rotation, and towel stretch for internal rotation - 3-5 times daily after a hot pack, 30-second holds, kept within the pain-free range in the freezing phase.",
-    },
-    {
-      id: "musculoskeletal-shoulder-pain-c9",
-      front: "When should a frozen shoulder be referred for manipulation or capsular release?",
-      back: "After 6-9 months of proper conservative management with persistent disabling restriction. Risks of manipulation include humeral fracture, dislocation and cuff tear; intensive physiotherapy must follow immediately.",
-    },
-    {
-      id: "musculoskeletal-shoulder-pain-c10",
-      front: "What is the drop-arm sign and what does it indicate?",
-      back: "The passively abducted arm cannot be held and drops when released - a full-thickness rotator cuff tear, usually of supraspinatus. Confirm with ultrasound; refer young traumatic tears early for repair within 3 months.",
-    },
-    {
-      id: "musculoskeletal-shoulder-pain-c11",
-      front: "Which shoulder presentations demand a chest radiograph?",
-      back: "A smoker with shoulder pain and weight loss, hand intrinsic muscle wasting, Horner syndrome, or a full painless shoulder range - a Pancoast tumour of the lung apex.",
-    },
-    {
-      id: "musculoskeletal-shoulder-pain-c12",
-      front: "What is hydrodilatation and when is it used?",
-      back: "Distension arthrography - injection of 20-40 mL of saline with steroid and local anaesthetic into the glenohumeral joint to stretch or rupture the contracted capsule. Used at 3-6 months when injection and physiotherapy have not restored range.",
-    },
-  ],
   references: [
     "British Elbow and Shoulder Society / BOA guideline on the management of frozen shoulder, 2020",
     "American Academy of Orthopaedic Surgeons Clinical Practice Guideline on Management of Rotator Cuff Injuries, 2019",
@@ -2908,68 +2660,6 @@ topics.push({
       explanation:
         "Sudden severe posterior neck and occipital pain after a rotational neck movement, followed by posterior circulation symptoms of vertigo, diplopia and dysarthria, is the classic presentation of vertebral artery dissection and needs urgent CT or MR angiography and stroke unit care. An acute disc prolapse causes dermatomal arm pain and segmental weakness, not brainstem symptoms. Acute torticollis produces painful restricted movement with a tilted head but no cranial nerve or cerebellar features. Cervical myelopathy is insidious over months with long-tract signs rather than an abrupt event with brainstem symptoms, and although migraine with brainstem aura can mimic this, a first episode of abrupt neck pain with neurological deficit at this age must be treated as a dissection until imaging excludes it.",
       difficulty: "moderate",
-    },
-  ],
-  cards: [
-    {
-      id: "musculoskeletal-neck-pain-c1",
-      front: "Into which three clinical boxes is every neck pain patient sorted?",
-      back: "Simple mechanical (axial) neck pain, cervical radiculopathy (root compression with dermatomal arm pain), and cervical myelopathy (cord compression with upper motor neurone signs). A fourth box holds infection, tumour, fracture and inflammatory disease.",
-    },
-    {
-      id: "musculoskeletal-neck-pain-c2",
-      front: "How is Spurling test performed and what does it mean?",
-      back: "Extend, laterally flex and rotate the head towards the symptomatic side with gentle axial compression. Reproduction of radicular arm pain is highly specific but not sensitive for cervical radiculopathy.",
-    },
-    {
-      id: "musculoskeletal-neck-pain-c3",
-      front: "Name four bedside signs of cervical myelopathy.",
-      back: "Positive Hoffmann sign, inverted supinator jerk, sustained clonus with extensor plantars, and an abnormal tandem gait; add the finger escape sign and a rapid grip-and-release count under 20 in 10 seconds.",
-    },
-    {
-      id: "musculoskeletal-neck-pain-c4",
-      front: "What are the four history questions that detect cervical myelopathy?",
-      back: "Has your handwriting changed, do you drop things or struggle with buttons and coins, is your walking unsteady or wide-based, and is there urinary urgency or hesitancy? Add Lhermitte phenomenon on neck flexion.",
-    },
-    {
-      id: "musculoskeletal-neck-pain-c5",
-      front: "Give the C5, C6, C7 root localisation.",
-      back: "C5 - lateral shoulder, weak abduction, biceps jerk. C6 - thumb and index finger, weak elbow flexion and wrist extension, supinator jerk. C7 - middle finger, weak elbow and finger extension, triceps jerk.",
-    },
-    {
-      id: "musculoskeletal-neck-pain-c6",
-      front: "What is the mJOA score and what does it decide?",
-      back: "The modified Japanese Orthopaedic Association score for myelopathy severity: 15-17 mild, 12-14 moderate, under 12 severe. Moderate and severe disease (under 15) should be referred for surgical decompression.",
-    },
-    {
-      id: "musculoskeletal-neck-pain-c7",
-      front: "What proportion of cervical radiculopathies settle without surgery, and over what period?",
-      back: "About 75-90% improve with conservative management within 3 months. Refer for imaging and a spinal opinion if severe pain persists beyond 6-12 weeks, or sooner for progressive weakness.",
-    },
-    {
-      id: "musculoskeletal-neck-pain-c8",
-      front: "Why should a soft cervical collar not be prescribed for chronic neck pain?",
-      back: "Beyond a few days it causes deep neck flexor deconditioning, dependence and delayed recovery. Its only roles are brief use after significant trauma, night comfort in severe acute radicular pain, and instability awaiting surgery.",
-    },
-    {
-      id: "musculoskeletal-neck-pain-c9",
-      front: "What is the shoulder abduction relief sign?",
-      back: "Relief of radicular arm pain when the patient places the hand of the affected arm on top of the head - it reduces root tension and is quite specific for cervical nerve root compression.",
-    },
-    {
-      id: "musculoskeletal-neck-pain-c10",
-      front: "Which MRI findings define significant cervical spondylotic myelopathy?",
-      back: "Sagittal canal diameter under 13 mm (critical under 10 mm), cord compression with flattening, and intramedullary T2 hyperintensity indicating cord signal change, which predicts a poorer surgical outcome.",
-    },
-    {
-      id: "musculoskeletal-neck-pain-c11",
-      front: "What is the most important treatable mimic of cervical myelopathy?",
-      back: "Subacute combined degeneration from vitamin B12 deficiency - check serum B12, folate and a complete blood count with peripheral smear in every suspected myelopathy.",
-    },
-    {
-      id: "musculoskeletal-neck-pain-c12",
-      front: "What must be excluded before intubating a patient with long-standing rheumatoid arthritis?",
-      back: "Atlantoaxial subluxation - flexion-extension lateral radiographs (atlantodental interval above 3 mm in adults) or MRI. Neck extension at intubation can cause cord compression.",
     },
   ],
   references: [
@@ -3496,68 +3186,6 @@ topics.push({
       explanation:
         "Glucocorticoid-induced osteoporosis causes fractures at a higher bone density than postmenopausal disease, and bone loss is fastest in the first 6-12 months, so a postmenopausal woman on prednisolone 5 mg or more daily for 3 months or longer needs calcium, vitamin D and a bisphosphonate now, whatever the T-score. Calling -1.6 mere osteopenia applies a postmenopausal threshold to a different disease. Calcium and vitamin D alone are necessary but insufficient in a moderate-risk steroid user. Waiting for a fracture abandons the whole point of prevention, and raloxifene has no hip fracture benefit and is not first-line in steroid-induced osteoporosis.",
       difficulty: "moderate",
-    },
-  ],
-  cards: [
-    {
-      id: "musculoskeletal-osteoporosis-c1",
-      front: "Give the WHO densitometric definitions of normal, osteopenia and osteoporosis.",
-      back: "T-score at hip or lumbar spine: normal is -1.0 or above; osteopenia is -1.1 to -2.4; osteoporosis is -2.5 or below; severe (established) osteoporosis is -2.5 or below plus a fragility fracture.",
-    },
-    {
-      id: "musculoskeletal-osteoporosis-c2",
-      front: "When do you use a Z-score instead of a T-score?",
-      back: "In premenopausal women, men under 50 and children. A Z-score of -2.0 or below is reported as below the expected range for age and demands a search for a secondary cause.",
-    },
-    {
-      id: "musculoskeletal-osteoporosis-c3",
-      front: "How is alendronate taken, and why does it matter?",
-      back: "70 mg once weekly on waking, on an empty stomach, with a full glass of plain water, remaining upright and taking nothing else by mouth for 30 minutes. Absorption is under 1% and is abolished by food, tea, milk or calcium; lying down causes pill oesophagitis.",
-    },
-    {
-      id: "musculoskeletal-osteoporosis-c4",
-      front: "What is the vitamin D repletion regimen and the target level?",
-      back: "Cholecalciferol 60,000 IU orally weekly for 8 weeks, then 60,000 IU monthly, with elemental calcium 500-1000 mg daily. Recheck 25-hydroxyvitamin D at 3 months, targeting above 30 ng/mL.",
-    },
-    {
-      id: "musculoskeletal-osteoporosis-c5",
-      front: "Biochemistry in osteoporosis versus osteomalacia.",
-      back: "Osteoporosis: calcium, phosphate, alkaline phosphatase and parathyroid hormone all normal. Osteomalacia: low or low-normal calcium and phosphate, raised alkaline phosphatase, raised parathyroid hormone, low 25-hydroxyvitamin D, Looser zones on radiograph.",
-    },
-    {
-      id: "musculoskeletal-osteoporosis-c6",
-      front: "Why must denosumab never be stopped abruptly?",
-      back: "It does not bind bone, so withdrawal causes rebound osteoclast activation with multiple vertebral fractures within 6-12 months. A bisphosphonate must be given as follow-on therapy.",
-    },
-    {
-      id: "musculoskeletal-osteoporosis-c7",
-      front: "Who needs bone protection because of glucocorticoids?",
-      back: "Anyone on prednisolone 5 mg daily or more for 3 months or longer. Treat on the basis of steroid exposure and risk, not on the T-score, because steroid fractures occur at higher bone densities.",
-    },
-    {
-      id: "musculoskeletal-osteoporosis-c8",
-      front: "Name the two rare skeletal adverse effects of long-term bisphosphonates and their warning signs.",
-      back: "Atypical femoral fracture - transverse subtrochanteric or diaphyseal fracture heralded by weeks of thigh or groin pain, about 1 per 10,000 patient-years. Osteonecrosis of the jaw - exposed non-healing jaw bone, roughly 1 in 10,000-100,000 patient-years at osteoporosis doses.",
-    },
-    {
-      id: "musculoskeletal-osteoporosis-c9",
-      front: "What clues at the bedside suggest an undiagnosed vertebral fracture?",
-      back: "Historical height loss over 4 cm or measured loss over 2 cm, thoracic kyphosis, occiput-to-wall distance over 5 cm, and a rib-to-pelvis distance under two finger-breadths. Two-thirds of vertebral fractures are clinically silent.",
-    },
-    {
-      id: "musculoskeletal-osteoporosis-c10",
-      front: "What is a bisphosphonate drug holiday and who gets one?",
-      back: "Stopping after 5 years of oral or 3 years of intravenous bisphosphonate in a low-risk patient - no new fracture, T-score above -2.5, no ongoing steroids - with reassessment after 2-3 years. High-risk patients continue.",
-    },
-    {
-      id: "musculoskeletal-osteoporosis-c11",
-      front: "Which test confirms vitamin D deficiency, and which one must not be used?",
-      back: "Serum 25-hydroxyvitamin D is the test of record (deficiency below 20 ng/mL, insufficiency 20-29). Do not order 1,25-dihydroxyvitamin D, which is normal or high in deficiency because of secondary hyperparathyroidism.",
-    },
-    {
-      id: "musculoskeletal-osteoporosis-c12",
-      front: "List six secondary causes of osteoporosis to exclude in a man or a premenopausal woman.",
-      back: "Hyperparathyroidism, thyrotoxicosis, hypogonadism, Cushing syndrome, malabsorption (coeliac, inflammatory bowel disease, post-gastrectomy), chronic kidney or liver disease, myeloma, and drugs - glucocorticoids, anticonvulsants, aromatase inhibitors, long-term heparin.",
     },
   ],
   references: [
@@ -4092,68 +3720,6 @@ topics.push({
       difficulty: "easy",
     },
   ],
-  cards: [
-    {
-      id: "musculoskeletal-spondyloarthropathy-sle-c1",
-      front: "Name the members of the seronegative spondyloarthropathy family.",
-      back: "Ankylosing spondylitis (radiographic axial spondyloarthritis), non-radiographic axial spondyloarthritis, psoriatic arthritis, reactive arthritis, enteropathic arthritis with inflammatory bowel disease, juvenile spondyloarthritis, and undifferentiated spondyloarthritis.",
-    },
-    {
-      id: "musculoskeletal-spondyloarthropathy-sle-c2",
-      front: "Give the six bedside measurements in ankylosing spondylitis with their abnormal values.",
-      back: "Modified Schober increase under 5 cm; occiput-to-wall distance above zero; chest expansion under 5 cm; lateral lumbar flexion under 10 cm; cervical rotation under 70 degrees; intermalleolar distance under 100 cm.",
-    },
-    {
-      id: "musculoskeletal-spondyloarthropathy-sle-c3",
-      front: "What is dactylitis and what does it signify?",
-      back: "Uniform sausage-like swelling of a whole digit from combined tenosynovitis and joint inflammation. It is a hallmark of psoriatic and reactive arthritis and is not a feature of rheumatoid arthritis.",
-    },
-    {
-      id: "musculoskeletal-spondyloarthropathy-sle-c4",
-      front: "Why is HLA-B27 not a screening test for back pain?",
-      back: "It is present in 90-95% of ankylosing spondylitis but also in 6-8% of the healthy Indian population, so in an unselected patient with back pain a positive result has poor predictive value. It supports a clinical diagnosis; it does not make one.",
-    },
-    {
-      id: "musculoskeletal-spondyloarthropathy-sle-c5",
-      front: "Which drugs work for axial and which for peripheral spondyloarthritis?",
-      back: "Axial: continuous NSAIDs plus daily exercise, then a TNF or IL-17 inhibitor if two NSAIDs fail over 4 weeks each. Peripheral only: sulfasalazine 1-1.5 g twice daily or methotrexate 15-25 mg weekly. Sulfasalazine and methotrexate do not help axial disease.",
-    },
-    {
-      id: "musculoskeletal-spondyloarthropathy-sle-c6",
-      front: "List the radiographic sequence in ankylosing spondylitis.",
-      back: "Sacroiliitis (blurring, erosions with pseudo-widening, sclerosis, narrowing, ankylosis), then spinal shiny corners (Romanus lesions), squaring of vertebral bodies, syndesmophytes, and finally the bamboo spine with ossified ligaments.",
-    },
-    {
-      id: "musculoskeletal-spondyloarthropathy-sle-c7",
-      front: "Compare the arthritis of SLE with that of rheumatoid arthritis.",
-      back: "SLE: symmetrical small joint, more pain than swelling, non-erosive, deformity if any is the reducible Jaccoud arthropathy. Rheumatoid arthritis: symmetrical small joint with true synovitis, erosive on radiograph, with fixed deformity and nodules.",
-    },
-    {
-      id: "musculoskeletal-spondyloarthropathy-sle-c8",
-      front: "Which autoantibody is most sensitive and which most specific for SLE?",
-      back: "ANA is most sensitive (over 95%, so a negative result nearly excludes SLE) but poorly specific. Anti-Smith is the most specific but only 20-30% sensitive. Anti-dsDNA is about 70% sensitive, highly specific, and tracks disease activity and nephritis.",
-    },
-    {
-      id: "musculoskeletal-spondyloarthropathy-sle-c9",
-      front: "How do you distinguish a lupus flare from infection?",
-      back: "Flare: ESR up, CRP normal or only mildly raised, C3 and C4 low, anti-dsDNA rising. Infection: CRP high, neutrophilia, complement normal, anti-dsDNA unchanged. A high CRP in a lupus patient means infection until proved otherwise.",
-    },
-    {
-      id: "musculoskeletal-spondyloarthropathy-sle-c10",
-      front: "What is the one drug every SLE patient should be on, and what monitoring does it need?",
-      back: "Hydroxychloroquine 200-400 mg daily, at or below 5 mg/kg actual body weight, lifelong - it reduces flares, thrombosis, organ damage and mortality. Baseline retinal examination and then annual screening after 5 years. It is continued through pregnancy.",
-    },
-    {
-      id: "musculoskeletal-spondyloarthropathy-sle-c11",
-      front: "Name six drugs that cause drug-induced lupus and the antibody that marks it.",
-      back: "Hydralazine, procainamide, isoniazid, minocycline, phenytoin, methyldopa (and anti-TNF agents). Anti-histone antibodies are positive in over 95%. It spares the kidney and brain and resolves on stopping the drug.",
-    },
-    {
-      id: "musculoskeletal-spondyloarthropathy-sle-c12",
-      front: "What must be screened for before starting a TNF inhibitor in India?",
-      back: "Latent and active tuberculosis with a chest radiograph plus a tuberculin skin test or interferon-gamma release assay, and hepatitis B and C serology; also exclude active infection, heart failure and demyelinating disease.",
-    },
-  ],
   references: [
     "ASAS-EULAR Recommendations for the Management of Axial Spondyloarthritis, 2022 update",
     "ASAS classification criteria for axial and peripheral spondyloarthritis, 2009-2011",
@@ -4685,68 +4251,6 @@ topics.push({
       explanation:
         "She fails every limb of the Ottawa ankle and foot rules, which are close to 100% sensitive for clinically significant fractures, so no radiograph is needed and she can be told so with confidence; the treatment is functional, with protection, optimal loading, compression, elevation and proprioceptive rehabilitation, which restores function faster and reduces recurrent instability. Radiographing anyway wastes money and radiation and, worse, is here combined with a cast that causes stiffness and wasting. Six weeks of plaster for a ligament sprain is outdated and harmful. Bed rest with elevation for a week delays recovery, and MRI has no role in an uncomplicated acute lateral ankle sprain managed functionally.",
       difficulty: "easy",
-    },
-  ],
-  cards: [
-    {
-      id: "musculoskeletal-fractures-sports-injury-c1",
-      front: "State the Ottawa ankle rules.",
-      back: "Radiograph the ankle if there is malleolar zone pain plus bone tenderness at the posterior edge or tip of either malleolus, or inability to bear weight for four steps both immediately after the injury and in the clinic. Radiograph the foot for midfoot pain plus navicular or fifth metatarsal base tenderness, or the same weight-bearing failure.",
-    },
-    {
-      id: "musculoskeletal-fractures-sports-injury-c2",
-      front: "Why is a clinically suspected scaphoid fracture treated despite a normal radiograph?",
-      back: "Up to 20% are radiographically occult initially. The scaphoid blood supply enters distally and runs retrograde, so a missed proximal pole fracture leads to avascular necrosis and non-union. Immobilise in a thumb spica and re-image at 10-14 days or arrange MRI.",
-    },
-    {
-      id: "musculoskeletal-fractures-sports-injury-c3",
-      front: "What are the cardinal signs of compartment syndrome and what is the emergency management?",
-      back: "Pain out of proportion to the injury, pain on passive stretch, a tense compartment and paraesthesiae - pulses stay present until very late. Split the plaster and dressings to skin along the full length, keep the limb at heart level, and refer for fasciotomy within about 6 hours.",
-    },
-    {
-      id: "musculoskeletal-fractures-sports-injury-c4",
-      front: "Give the positions of function for splinting the wrist, hand, ankle and knee.",
-      back: "Wrist in slight extension; hand with metacarpophalangeal joints flexed 70-90 degrees and interphalangeal joints extended; ankle at 90 degrees neutral, never in equinus; knee in 15-20 degrees flexion. Splint the joint above and below, digits left visible.",
-    },
-    {
-      id: "musculoskeletal-fractures-sports-injury-c5",
-      front: "Why is a back slab used acutely instead of a full cast?",
-      back: "Swelling peaks at 48-72 hours after injury, so a circumferential cast applied on day one becomes a tourniquet. Use a slab, or split a full cast along its whole length down to skin, and arrange a plaster check at 24-48 hours.",
-    },
-    {
-      id: "musculoskeletal-fractures-sports-injury-c6",
-      front: "What has replaced RICE for acute soft tissue injury?",
-      back: "PEACE and LOVE - Protect, Elevate, Avoid anti-inflammatories, Compress, Educate; then Load, Optimism, Vascularisation, Exercise. Practically, POLICE: Protection, Optimal Loading, Ice, Compression, Elevation. Early protected loading beats rest.",
-    },
-    {
-      id: "musculoskeletal-fractures-sports-injury-c7",
-      front: "How do you distinguish medial tibial stress syndrome from a tibial stress fracture?",
-      back: "Shin splints give diffuse tenderness over 5 cm or more of the posteromedial tibial border with no rest pain. A stress fracture gives focal tenderness over 2-3 cm, night and rest pain, and a positive hop test; radiographs are normal for 2-6 weeks, so MRI is the investigation.",
-    },
-    {
-      id: "musculoskeletal-fractures-sports-injury-c8",
-      front: "Why should corticosteroid never be injected into the Achilles tendon?",
-      back: "It weakens the collagen matrix and precipitates rupture. Treat midportion Achilles tendinopathy with an eccentric heel-drop programme over 12 weeks, and remember that fluoroquinolones and systemic steroids also predispose to spontaneous rupture.",
-    },
-    {
-      id: "musculoskeletal-fractures-sports-injury-c9",
-      front: "Give the tetanus prophylaxis rule for a tetanus-prone wound.",
-      back: "Give a tetanus toxoid-containing vaccine if the last dose was more than 5 years ago (more than 10 years for a clean minor wound), and add human tetanus immunoglobulin 250-500 IU intramuscularly at a separate site if immunisation is incomplete or unknown.",
-    },
-    {
-      id: "musculoskeletal-fractures-sports-injury-c10",
-      front: "How is a middle-third clavicle fracture treated, and when do you refer?",
-      back: "Broad arm sling or figure-of-eight bandage for 3-4 weeks with early elbow and hand movement. Refer if open, tenting the skin, neurovascularly compromised, comminuted with more than 2 cm shortening, or a displaced lateral third fracture.",
-    },
-    {
-      id: "musculoskeletal-fractures-sports-injury-c11",
-      front: "What is the first-line treatment for lateral epicondylitis, and what is the evidence on steroid injection?",
-      back: "Activity modification, an eccentric wrist extensor loading programme, a counterforce brace and topical NSAIDs. Corticosteroid injection relieves pain in the short term but gives significantly worse outcomes at 6-12 months than physiotherapy or watchful waiting.",
-    },
-    {
-      id: "musculoskeletal-fractures-sports-injury-c12",
-      front: "What immediate steps does an open fracture require in the clinic?",
-      back: "Sterile saline-soaked dressing, splint, intravenous antibiotics within one hour (cefazolin 2 g, adding gentamicin for heavy contamination), tetanus prophylaxis, analgesia, nil by mouth, and immediate referral for debridement and fixation.",
     },
   ],
   references: [

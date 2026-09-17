@@ -38,12 +38,6 @@ export type Mcq = {
   difficulty: Difficulty;
 };
 
-export type Flashcard = {
-  id: string;
-  front: string;
-  back: string;
-};
-
 export type NoteSection = {
   heading: string;
   /** Terse, exam-ready lines; may contain inline **bold** markers. */
@@ -144,7 +138,6 @@ export type Topic = {
   /** Written-paper questions in the DNB style, with model answers. */
   theory?: TheoryQuestion[];
   mcqs: Mcq[];
-  cards: Flashcard[];
   /** Guideline or textbook the content follows, with edition/year. */
   references: string[];
 };

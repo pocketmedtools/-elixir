@@ -544,68 +544,6 @@ topics.push({
       difficulty: "moderate",
     },
   ],
-  cards: [
-    {
-      id: "symptom-approach-fatigue-c1",
-      front: "The one-third rule in fatigue.",
-      back: "About a third of patients have a physical cause, a third a psychological cause, and a third no definable cause; expect it and it will stop you over-investigating.",
-    },
-    {
-      id: "symptom-approach-fatigue-c2",
-      front: "First-line panel for fatigue in Indian family practice.",
-      back: "CBC with smear, HbA1c or fasting glucose, TSH, creatinine, ALT, urine routine; add ferritin in menstruating women and B12 in strict vegetarians or metformin users.",
-    },
-    {
-      id: "symptom-approach-fatigue-c3",
-      front: "How do you tell fatigue from true weakness at the bedside?",
-      back: "Power. Fatigue has normal power and no anatomical pattern; weakness has demonstrable loss of power that localises - ask the patient to rise from a squat.",
-    },
-    {
-      id: "symptom-approach-fatigue-c4",
-      front: "NFHS-5 anaemia prevalence figures worth quoting.",
-      back: "57% of women aged 15-49, 25% of men aged 15-49, and 67% of children aged 6-59 months (NFHS-5, 2019-21).",
-    },
-    {
-      id: "symptom-approach-fatigue-c5",
-      front: "Iron deficiency anaemia in a man or a postmenopausal woman: what must you do?",
-      back: "Assume gastrointestinal blood loss and refer for bidirectional endoscopy; give iron in parallel, never instead.",
-    },
-    {
-      id: "symptom-approach-fatigue-c6",
-      front: "PHQ-2 questions.",
-      back: "Over the last two weeks, how often have you been bothered by (1) little interest or pleasure in doing things and (2) feeling down, depressed or hopeless? A positive screen leads to PHQ-9.",
-    },
-    {
-      id: "symptom-approach-fatigue-c7",
-      front: "Four components of a safety net.",
-      back: "What I think is happening; what to expect and by when; what would worry me; exactly what to do and where to go - written down and read back.",
-    },
-    {
-      id: "symptom-approach-fatigue-c8",
-      front: "Diagnostic criteria for chronic fatigue syndrome / ME.",
-      back: "Disabling fatigue for 6 months or more with post-exertional malaise, unrefreshing sleep and cognitive difficulty, after exclusion of alternative causes.",
-    },
-    {
-      id: "symptom-approach-fatigue-c9",
-      front: "Drugs that commonly cause fatigue.",
-      back: "Beta-blockers, sedating antihistamines, antiepileptics, antipsychotics, opioids, statins (myalgia), metformin and PPIs (B12 depletion), alcohol and cannabis.",
-    },
-    {
-      id: "symptom-approach-fatigue-c10",
-      front: "Which fatigue patients get a chest radiograph and sputum Xpert MTB/RIF?",
-      back: "Anyone with cough for two weeks or more, evening fever, night sweats, haemoptysis, weight loss or a tuberculosis contact - free under NTEP.",
-    },
-    {
-      id: "symptom-approach-fatigue-c11",
-      front: "What is watchful waiting, properly done?",
-      back: "A planned interval of observation with a named review date, a named person to return to, and an explicit list of what would change the plan - documented in the notes.",
-    },
-    {
-      id: "symptom-approach-fatigue-c12",
-      front: "Fatigue worse in the morning versus fatigue worse after exertion.",
-      back: "Morning-worst, improving with activity and company, suggests depression; exertion-worst, forcing rest, suggests an organic or post-viral cause.",
-    },
-  ],
   references: [
     "Murtagh's General Practice, 8th edition, 2018 - the tired patient",
     "NICE Guideline NG206: Myalgic encephalomyelitis (chronic fatigue syndrome) diagnosis and management, 2021",
@@ -1146,68 +1084,6 @@ topics.push({
       explanation:
         "Time-based rather than symptom-triggered appointments with a single named doctor, active treatment of comorbid mood disorder, and a rule of no new investigation without a new sign are the interventions shown to reduce both distress and healthcare use in somatic symptom disorder. A PET-CT provides reassurance lasting days at most and will generate incidental findings that restart the cycle. Blunt dismissal ruptures the therapeutic relationship and drives the patient towards informal providers. Parallel specialist referrals fragment care and multiply investigations. Long-term benzodiazepines cause tolerance and dependence without treating the underlying disorder.",
       difficulty: "easy",
-    },
-  ],
-  cards: [
-    {
-      id: "symptom-approach-body-ache-c1",
-      front: "The one line that sorts a body-ache clinic.",
-      back: "Morning stiffness over an hour improving with activity is inflammatory; stiffness under 30 minutes worsening with activity is mechanical.",
-    },
-    {
-      id: "symptom-approach-body-ache-c2",
-      front: "Vitamin D thresholds and the Indian loading regimen.",
-      back: "Deficiency under 20 ng/mL, insufficiency 20-29, sufficiency 30 or more. Cholecalciferol 60,000 IU weekly for 8 weeks then monthly, with calcium 500-1000 mg daily.",
-    },
-    {
-      id: "symptom-approach-body-ache-c3",
-      front: "Definition of fibromyalgia (2016 ACR).",
-      back: "Chronic widespread pain for 3 months or more with fatigue, unrefreshing sleep and cognitive symptoms, scored by Widespread Pain Index and Symptom Severity Scale; tender-point counting is no longer required.",
-    },
-    {
-      id: "symptom-approach-body-ache-c4",
-      front: "Which drugs work in fibromyalgia and which do not?",
-      back: "Work: amitriptyline 10-25 mg at night, duloxetine 30-60 mg daily, pregabalin. Do not work: NSAIDs and opioids.",
-    },
-    {
-      id: "symptom-approach-body-ache-c5",
-      front: "The three steps of the reattribution model.",
-      back: "Feeling understood (full history and examination), broadening the agenda (sleep, mood, life events), making the link (a physiological mechanism the patient can accept).",
-    },
-    {
-      id: "symptom-approach-body-ache-c6",
-      front: "Why must you not order ANA to screen a generalised body ache?",
-      back: "ANA is positive at low titre in 5-15% of healthy people; a false positive creates a permanent illness identity and endless referrals.",
-    },
-    {
-      id: "symptom-approach-body-ache-c7",
-      front: "Bone pain that wakes the patient at night in someone over 50 with a high ESR - what must be excluded?",
-      back: "Multiple myeloma and bone metastasis - serum protein electrophoresis, calcium, alkaline phosphatase and imaging.",
-    },
-    {
-      id: "symptom-approach-body-ache-c8",
-      front: "Polymyalgia rheumatica: the diagnostic triad and the treatment.",
-      back: "Age over 50, girdle pain with morning stiffness over 45-60 minutes, and a high ESR or CRP. Prednisolone 15 mg daily with a dramatic response within 72 hours; watch for giant cell arteritis.",
-    },
-    {
-      id: "symptom-approach-body-ache-c9",
-      front: "Statin myalgia: when do you stop and when do you rechallenge?",
-      back: "CPK under about 5 times normal with no weakness - stop temporarily, let symptoms settle, rechallenge with a lower dose or alternate-day rosuvastatin. CPK over 10 times normal or myoglobinuria - stop and treat as rhabdomyolysis.",
-    },
-    {
-      id: "symptom-approach-body-ache-c10",
-      front: "Dengue warning signs that mandate admission.",
-      back: "Abdominal pain or tenderness, persistent vomiting, clinical fluid accumulation, mucosal bleeding, lethargy or restlessness, liver enlargement over 2 cm, and a rising haematocrit with a falling platelet count.",
-    },
-    {
-      id: "symptom-approach-body-ache-c11",
-      front: "How should follow-up be structured in somatic symptom disorder?",
-      back: "One named doctor, fixed-interval time-based appointments of fixed length, no new investigation without a new sign, treatment of comorbid depression and anxiety, and a functional goal at every visit.",
-    },
-    {
-      id: "symptom-approach-body-ache-c12",
-      front: "Bedside test for proximal muscle weakness.",
-      back: "Ask the patient to rise from a squat or from a chair without using the hands, and to comb the hair or lift a vessel overhead.",
     },
   ],
   references: [
@@ -1754,68 +1630,6 @@ topics.push({
       explanation:
         "Vestibular sedatives suppress symptoms but block the central compensation on which recovery depends, so they should be stopped after 24-72 hours and replaced with graded movement and vestibular rehabilitation exercises, which shorten recovery. Continuing them for weeks with bed rest is the commonest reason a patient with neuritis remains unsteady for months. Adding a second sedative compounds the same error. MRI is unnecessary when the initial HINTS pattern was peripheral and the patient is improving with no new neurological signs. Steroids may shorten recovery only if given within the first three days, and starting them on day five in an improving patient offers no benefit against real adverse effects.",
       difficulty: "moderate",
-    },
-  ],
-  cards: [
-    {
-      id: "symptom-approach-dizziness-c1",
-      front: "The four symptoms hidden inside the word giddiness.",
-      back: "Vertigo (illusion of movement), presyncope (about to faint), disequilibrium (unsteady only when standing or walking), and non-specific lightheadedness (anxiety, drugs).",
-    },
-    {
-      id: "symptom-approach-dizziness-c2",
-      front: "What replaces the question what does the dizziness feel like?",
-      back: "TiTrATE - Timing, Triggers, And Targeted Examination: when did it start, how long does each attack last, what triggers it, what comes with it.",
-    },
-    {
-      id: "symptom-approach-dizziness-c3",
-      front: "The three components of HINTS and what makes it central.",
-      back: "Head Impulse, Nystagmus, Test of Skew. Central if head impulse is normal, or nystagmus is direction-changing or vertical, or skew deviation is present - any one is enough.",
-    },
-    {
-      id: "symptom-approach-dizziness-c4",
-      front: "When may HINTS be used?",
-      back: "Only in acute continuous vertigo with nystagmus (acute vestibular syndrome). Never in episodic or positional vertigo.",
-    },
-    {
-      id: "symptom-approach-dizziness-c5",
-      front: "Positive Dix-Hallpike findings.",
-      back: "Upbeating torsional nystagmus after a 2-20 second latency, lasting under a minute, with vertigo, and fatiguing on repetition - posterior canal BPPV.",
-    },
-    {
-      id: "symptom-approach-dizziness-c6",
-      front: "How long may a vestibular sedative be given, and why?",
-      back: "24-72 hours only. Beyond that prochlorperazine, betahistine and cinnarizine block central compensation and prolong the illness.",
-    },
-    {
-      id: "symptom-approach-dizziness-c7",
-      front: "Definition of orthostatic hypotension.",
-      back: "A fall of 20 mmHg systolic or 10 mmHg diastolic within 3 minutes of standing from supine.",
-    },
-    {
-      id: "symptom-approach-dizziness-c8",
-      front: "Meniere disease triad and attack duration.",
-      back: "Episodic vertigo of 20 minutes to 12 hours with fluctuating low-frequency sensorineural hearing loss, tinnitus and aural fullness.",
-    },
-    {
-      id: "symptom-approach-dizziness-c9",
-      front: "Vestibular migraine: duration and the giveaway.",
-      back: "5 minutes to 72 hours of vertigo in a patient with a migraine history, with photophobia or phonophobia; often no headache at all during the attack.",
-    },
-    {
-      id: "symptom-approach-dizziness-c10",
-      front: "Why is a normal CT brain unhelpful in acute vertigo?",
-      back: "CT misses most posterior circulation infarcts in the first 24-48 hours; MRI with diffusion weighting is the test, and clinical central features override a normal CT.",
-    },
-    {
-      id: "symptom-approach-dizziness-c11",
-      front: "Which dizzy patient can walk, and which cannot?",
-      back: "Peripheral vertigo allows walking, however unsteadily; inability to sit or walk unaided points to a cerebellar lesion.",
-    },
-    {
-      id: "symptom-approach-dizziness-c12",
-      front: "Safety net for any dizzy patient sent home.",
-      back: "No driving, no work at height, no machinery, rise in stages, keep a light on at night, and return at once for weakness, slurred speech, double vision, difficulty swallowing or inability to walk.",
     },
   ],
   references: [
@@ -2405,68 +2219,6 @@ topics.push({
       difficulty: "moderate",
     },
   ],
-  cards: [
-    {
-      id: "symptom-approach-chest-pain-c1",
-      front: "Frequency of acute coronary syndrome among chest pain patients: casualty versus general practice.",
-      back: "15-25% in an emergency department, only 1-3% in a general practice consultation; chest wall pain accounts for 25-35% in general practice.",
-    },
-    {
-      id: "symptom-approach-chest-pain-c2",
-      front: "The three features of typical angina.",
-      back: "Substernal discomfort of characteristic quality and duration; provoked by exertion or emotion; relieved within minutes by rest or nitrate. Three of three typical, two atypical, one or none non-anginal.",
-    },
-    {
-      id: "symptom-approach-chest-pain-c3",
-      front: "The five items of the Marburg Heart Score.",
-      back: "Age 55+ in men or 65+ in women; known vascular disease; pain worse with exertion; pain not reproducible by palpation; patient assumes it is cardiac. 0-2 makes coronary disease very unlikely.",
-    },
-    {
-      id: "symptom-approach-chest-pain-c4",
-      front: "Pretest probability bands and the test to choose in stable chest pain.",
-      back: "Under 15% no test; 15-65% treadmill or CT coronary angiography; 65-85% functional imaging; over 85% treat and refer.",
-    },
-    {
-      id: "symptom-approach-chest-pain-c5",
-      front: "Five causes of chest pain that must not be missed.",
-      back: "Acute coronary syndrome, aortic dissection, pulmonary embolism, tension pneumothorax, oesophageal rupture.",
-    },
-    {
-      id: "symptom-approach-chest-pain-c6",
-      front: "Does a normal ECG exclude an acute coronary syndrome?",
-      back: "No. Up to a third of non-ST-elevation infarcts have a normal first ECG; repeat it after 15-30 minutes if pain persists and compare with an old tracing.",
-    },
-    {
-      id: "symptom-approach-chest-pain-c7",
-      front: "First drugs for suspected acute coronary syndrome in a clinic.",
-      back: "Aspirin 325 mg chewed plus clopidogrel 300 mg (75 mg if over 75), sublingual nitroglycerine 0.5 mg unless hypotensive or right ventricular infarct, oxygen only if saturation under 90%, ambulance transfer.",
-    },
-    {
-      id: "symptom-approach-chest-pain-c8",
-      front: "Reperfusion timing rule in STEMI.",
-      back: "Primary PCI if achievable within 120 minutes of first medical contact; otherwise thrombolysis within 30 minutes - tenecteplase 30-50 mg by weight or streptokinase 1.5 million units over 60 minutes.",
-    },
-    {
-      id: "symptom-approach-chest-pain-c9",
-      front: "When must you not give sublingual nitrates in an infarct?",
-      back: "Inferior infarct with right ventricular involvement (ST elevation in V4R, hypotension with clear lungs) - give fluids instead. Also avoid if systolic BP is below 90 mmHg or a PDE-5 inhibitor was taken in 24-48 hours.",
-    },
-    {
-      id: "symptom-approach-chest-pain-c10",
-      front: "Why is the INTERHEART finding relevant to Indian chest pain?",
-      back: "South Asians have their first myocardial infarction about six years earlier (mean about 53 years), so a 45-year-old Indian man with exertional pain is not low risk.",
-    },
-    {
-      id: "symptom-approach-chest-pain-c11",
-      front: "Does relief by an antacid or a nitrate settle the diagnosis?",
-      back: "No. Nitrates relieve oesophageal spasm and antacids can settle anxiety-related pain; response to treatment is not a diagnostic test.",
-    },
-    {
-      id: "symptom-approach-chest-pain-c12",
-      front: "The chest pain safety net, in the words to use.",
-      back: "Go straight to a hospital with an ECG if the pain comes at rest, lasts over 15-20 minutes, comes with sweating, vomiting or breathlessness, or wakes you from sleep - and chew an aspirin on the way unless allergic.",
-    },
-  ],
   references: [
     "ESC Guidelines for the Management of Chronic Coronary Syndromes, 2019 and 2024",
     "Bosner S et al, Ruling out coronary artery disease in primary care: the Marburg Heart Score, CMAJ, 2010",
@@ -3010,68 +2762,6 @@ topics.push({
       difficulty: "moderate",
     },
   ],
-  cards: [
-    {
-      id: "symptom-approach-breathlessness-c1",
-      front: "The five grades of the modified MRC dyspnoea scale.",
-      back: "0 strenuous exercise only; 1 hurrying on the level or a slight hill; 2 walks slower than peers or stops on the level; 3 stops after about 100 metres; 4 housebound or breathless on dressing.",
-    },
-    {
-      id: "symptom-approach-breathlessness-c2",
-      front: "What does exertional desaturation mean?",
-      back: "A fall of 4% or more, or to below 90%, on walking is never physiological - it indicates a gas exchange abnormality (interstitial disease, pulmonary vascular disease, embolism, post-COVID injury).",
-    },
-    {
-      id: "symptom-approach-breathlessness-c3",
-      front: "Spirometric definition of COPD and of asthma reversibility.",
-      back: "COPD: post-bronchodilator FEV1/FVC below 0.70. Asthma: FEV1 improvement of 12% and 200 mL or more after a bronchodilator, or peak flow diurnal variability above 20%.",
-    },
-    {
-      id: "symptom-approach-breathlessness-c4",
-      front: "NT-proBNP rule-out thresholds for heart failure.",
-      back: "Below 125 pg/mL in the non-acute outpatient setting and below 300 pg/mL in the acute setting make heart failure very unlikely; raised values are much less specific.",
-    },
-    {
-      id: "symptom-approach-breathlessness-c5",
-      front: "Oxygen target in a COPD exacerbation, and why.",
-      back: "88-92% using controlled oxygen. High-flow oxygen worsens ventilation-perfusion matching and reduces drive, causing carbon dioxide narcosis.",
-    },
-    {
-      id: "symptom-approach-breathlessness-c6",
-      front: "Life-threatening features in acute asthma.",
-      back: "Peak flow under 33% of predicted, saturation under 92%, silent chest, cyanosis, poor respiratory effort, bradycardia, hypotension, exhaustion, confusion or coma.",
-    },
-    {
-      id: "symptom-approach-breathlessness-c7",
-      front: "Steroid dose and duration in an asthma or COPD exacerbation.",
-      back: "Prednisolone 40-50 mg orally daily for 5 days, given within the first hour; no taper is needed for a course of this length.",
-    },
-    {
-      id: "symptom-approach-breathlessness-c8",
-      front: "Why must you never use a paper bag for hyperventilation?",
-      back: "If the breathlessness is actually hypoxic - embolism, asthma, infarct - rebreathing worsens hypoxia and has caused deaths. Use diaphragmatic breathing retraining instead.",
-    },
-    {
-      id: "symptom-approach-breathlessness-c9",
-      front: "Biomass fuel and COPD - the Indian point.",
-      back: "A never-smoking woman with decades of chulha cooking can have fixed airflow obstruction indistinguishable from smoking-related COPD; always ask about cooking fuel.",
-    },
-    {
-      id: "symptom-approach-breathlessness-c10",
-      front: "Treatment of breathlessness in advanced disease.",
-      back: "A fan to the face, positioning, breathing techniques, and low-dose oral morphine 2.5-5 mg every 4 hours titrated - it relieves the sensation without hastening death.",
-    },
-    {
-      id: "symptom-approach-breathlessness-c11",
-      front: "The three questions that identify cardiac dyspnoea.",
-      back: "How many pillows do you sleep on and has that changed; do you wake at night gasping for air; do your ankles swell by evening?",
-    },
-    {
-      id: "symptom-approach-breathlessness-c12",
-      front: "What belongs in a written asthma action plan?",
-      back: "The daily controller inhaler, the reliever and how much is too much, when to start prednisolone, the peak flow or symptom thresholds, and whom to call or where to go.",
-    },
-  ],
   references: [
     "GOLD Global Strategy for the Diagnosis, Management and Prevention of COPD, 2024 report",
     "Global Initiative for Asthma (GINA) Main Report, 2024",
@@ -3559,58 +3249,6 @@ topics.push({
       explanation:
         "This is classical pyrexia of unknown origin with a raised ESR, anaemia, splenomegaly and retroperitoneal nodes, and the next step is tissue: a targeted CT with sampling of the abnormal node for histopathology, CBNAAT and culture, which distinguishes abdominal tuberculosis from lymphoma. An empirical antituberculous trial before any attempt at tissue diagnosis is poor practice - it delays a lymphoma diagnosis, may partially treat it, and produces ambiguous responses. Steroids before biopsy destroy lymphoma histology and mask tuberculosis. A third antibiotic after sterile cultures and a month of fever has no rationale. Widal and Weil-Felix tests add nothing at four weeks after negative cultures and a picture that has moved beyond acute undifferentiated fever.",
       difficulty: "hard",
-    },
-  ],
-  cards: [
-    {
-      id: "symptom-approach-fever-without-focus-c1",
-      front: "Definition of acute undifferentiated febrile illness.",
-      back: "Fever of less than 14 days with no localising source on history and examination; in India think malaria, dengue, scrub typhus, enteric fever, leptospirosis and chikungunya on top of self-limiting viral fever.",
-    },
-    {
-      id: "symptom-approach-fever-without-focus-c2",
-      front: "The one test every fever in India gets at the first visit.",
-      back: "A peripheral smear with a rapid antigen test for malaria, repeated if negative and the fever continues.",
-    },
-    {
-      id: "symptom-approach-fever-without-focus-c3",
-      front: "Dengue tests by day of fever.",
-      back: "NS1 antigen day 1-5; IgM from day 5; daily platelet count and haematocrit from day 3; the critical phase begins with defervescence between days 3 and 7.",
-    },
-    {
-      id: "symptom-approach-fever-without-focus-c4",
-      front: "Dengue warning signs (WHO 2009).",
-      back: "Abdominal pain, persistent vomiting, clinical fluid accumulation, mucosal bleeding, lethargy or restlessness, liver more than 2 cm, and a rising haematocrit with a rapidly falling platelet count.",
-    },
-    {
-      id: "symptom-approach-fever-without-focus-c5",
-      front: "Where to look for the eschar of scrub typhus.",
-      back: "Axilla, groin, under the breast, at the waistband, behind the ear and in the perineum - a painless black crusted ulcer with a red rim, found in about a third of Indian cases.",
-    },
-    {
-      id: "symptom-approach-fever-without-focus-c6",
-      front: "Treatment of Plasmodium vivax and Plasmodium falciparum malaria in India.",
-      back: "Vivax: chloroquine 25 mg/kg over 3 days plus primaquine 0.25 mg/kg daily for 14 days after G6PD check. Falciparum: artesunate plus sulfadoxine-pyrimethamine for 3 days plus single-dose primaquine 0.75 mg/kg on day 2; artemether-lumefantrine in the north-east.",
-    },
-    {
-      id: "symptom-approach-fever-without-focus-c7",
-      front: "First-line treatment of uncomplicated enteric fever in India.",
-      back: "Cefixime 20 mg/kg/day in two doses for 14 days or azithromycin 20 mg/kg (max 1 g) daily for 7 days after a blood culture; ceftriaxone if admitted; fluoroquinolones are no longer first line.",
-    },
-    {
-      id: "symptom-approach-fever-without-focus-c8",
-      front: "Classical definition of pyrexia of unknown origin.",
-      back: "Petersdorf and Beeson 1961: temperature above 38.3 C on several occasions, more than 3 weeks, undiagnosed after 1 week of inpatient work-up; Durack and Street 1991 accept 3 outpatient visits or 3 hospital days.",
-    },
-    {
-      id: "symptom-approach-fever-without-focus-c9",
-      front: "When is empirical doxycycline justified in a fever without focus?",
-      back: "An eschar, a rural, paddy or flood exposure, or fever beyond 5 days with negative malaria and dengue tests in an endemic area - 100 mg twice daily for 7 days, azithromycin in pregnancy and young children.",
-    },
-    {
-      id: "symptom-approach-fever-without-focus-c10",
-      front: "Admission criteria in dengue.",
-      back: "Any warning sign or shock, platelets below 20,000 or bleeding, haematocrit rise of 20% or more, inability to take fluids, pregnancy, infancy, comorbidity, or living alone without transport.",
     },
   ],
   references: [
@@ -4108,58 +3746,6 @@ topics.push({
       explanation:
         "Strictly unilateral orbital pain of 15-180 minutes with ipsilateral autonomic features, nocturnal timing, restlessness and a bout pattern is cluster headache, and the two acute treatments with evidence are high-flow oxygen and subcutaneous sumatriptan, followed by verapamil to prevent the bout. Carbamazepine treats trigeminal neuralgia, whose pain is a brief electric shock in a nerve territory, not a 45-minute boring pain. Unilateral nasal blockage with tearing is a cranial autonomic feature, not sinusitis, and antibiotics do nothing. Amitriptyline has no role in cluster headache. Oral analgesics are useless because the attack ends before the tablet is absorbed.",
       difficulty: "moderate",
-    },
-  ],
-  cards: [
-    {
-      id: "symptom-approach-headache-c1",
-      front: "ICHD-3 criteria for migraine without aura.",
-      back: "At least 5 attacks lasting 4-72 hours; 2 of 4 pain features (unilateral, pulsating, moderate to severe, aggravated by activity); 1 of 2 accompaniments (nausea or vomiting; photophobia and phonophobia); not better explained.",
-    },
-    {
-      id: "symptom-approach-headache-c2",
-      front: "SNOOP mnemonic for secondary headache.",
-      back: "Systemic symptoms or disease; Neurological signs; Onset thunderclap or with exertion; Older than 50; Pattern change, Positional, Papilloedema, Pregnancy, Painkiller overuse.",
-    },
-    {
-      id: "symptom-approach-headache-c3",
-      front: "Work-up of a thunderclap headache.",
-      back: "Non-contrast CT head within 6 hours (sensitivity near 100%); if negative or beyond 6 hours, lumbar puncture at 12 hours for xanthochromia or CT angiography; never discharged as exertional migraine.",
-    },
-    {
-      id: "symptom-approach-headache-c4",
-      front: "Definition of medication-overuse headache.",
-      back: "Headache on 15 or more days a month in a patient with a primary headache, with simple analgesics on 15 or more days or triptans, ergots, opioids or combinations on 10 or more days a month, for more than 3 months.",
-    },
-    {
-      id: "symptom-approach-headache-c5",
-      front: "Indications and choices for migraine prevention.",
-      back: "Four or more migraine days a month, disabling attacks, or failing or overused acute drugs; propranolol, amitriptyline, flunarizine, topiramate or valproate, titrated over 4 weeks and judged at 8-12 weeks on the diary.",
-    },
-    {
-      id: "symptom-approach-headache-c6",
-      front: "Contraindications to triptans.",
-      back: "Ischaemic heart disease, uncontrolled hypertension, previous stroke or TIA, peripheral vascular disease, hemiplegic or basilar migraine, pregnancy, and use within 24 hours of an ergot.",
-    },
-    {
-      id: "symptom-approach-headache-c7",
-      front: "Acute and preventive treatment of cluster headache.",
-      back: "Acute: 100% oxygen 12-15 L/min for 15-20 minutes or subcutaneous sumatriptan 6 mg. Preventive: verapamil 240-480 mg a day with ECG monitoring, with a short prednisolone bridge.",
-    },
-    {
-      id: "symptom-approach-headache-c8",
-      front: "Giant cell arteritis in the clinic - the three actions.",
-      back: "New headache after 50 with jaw claudication, scalp tenderness or visual symptoms: send ESR and CRP, start prednisolone 40-60 mg the same day, and arrange temporal artery biopsy within two weeks.",
-    },
-    {
-      id: "symptom-approach-headache-c9",
-      front: "Three headache myths to correct in the consultation.",
-      back: "Hypertension causes headache only in an emergency; refractive error rarely causes chronic headache; self-diagnosed sinus headache is usually migraine.",
-    },
-    {
-      id: "symptom-approach-headache-c10",
-      front: "Cautions with flunarizine.",
-      back: "Weight gain, sedation, depression and drug-induced parkinsonism, particularly in the elderly; avoid in depression and in Parkinson disease; review weight and mood at each visit.",
     },
   ],
   references: [
@@ -4664,58 +4250,6 @@ topics.push({
       difficulty: "moderate",
     },
   ],
-  cards: [
-    {
-      id: "symptom-approach-chronic-cough-c1",
-      front: "NTEP definition of presumptive pulmonary tuberculosis.",
-      back: "Cough of 2 weeks or more, or fever of 2 weeks, significant weight loss, haemoptysis, or any chest radiograph abnormality; any duration of symptoms in PLHIV, household contacts, diabetics and the immunosuppressed.",
-    },
-    {
-      id: "symptom-approach-chronic-cough-c2",
-      front: "First test for a presumptive tuberculosis patient under NTEP.",
-      back: "An upfront nucleic acid amplification test on sputum - CBNAAT (Xpert MTB/RIF) or Truenat - with a chest radiograph at the same visit; not smear microscopy.",
-    },
-    {
-      id: "symptom-approach-chronic-cough-c3",
-      front: "Daily regimen for new drug-sensitive tuberculosis in India.",
-      back: "2HRZE followed by 4HRE, daily, as fixed-dose combinations by weight band; notify on Nikshay, test HIV and blood sugar, screen contacts.",
-    },
-    {
-      id: "symptom-approach-chronic-cough-c4",
-      front: "The big three causes of chronic cough in a non-smoker with a normal radiograph not on an ACE inhibitor.",
-      back: "Upper airway cough syndrome, asthma including cough-variant asthma, and gastro-oesophageal reflux - over 90% of cases, and about a quarter have two of them.",
-    },
-    {
-      id: "symptom-approach-chronic-cough-c5",
-      front: "Duration classification of cough (ACCP).",
-      back: "Acute under 3 weeks; subacute 3-8 weeks; chronic beyond 8 weeks - but India tests for tuberculosis at 2 weeks.",
-    },
-    {
-      id: "symptom-approach-chronic-cough-c6",
-      front: "ACE inhibitor cough - frequency and management.",
-      back: "Dry cough in 5-20% of users, may begin months after starting; stop and switch to an ARB; resolves within 1-4 weeks, occasionally up to 3 months.",
-    },
-    {
-      id: "symptom-approach-chronic-cough-c7",
-      front: "Why is a fluoroquinolone never given as a trial for a cough of two weeks?",
-      back: "It partially treats tuberculosis, delays the diagnosis by masking symptoms, and generates fluoroquinolone resistance that compromises drug-resistant regimens.",
-    },
-    {
-      id: "symptom-approach-chronic-cough-c8",
-      front: "Tuberculosis preventive treatment options for household contacts.",
-      back: "3HP: isoniazid plus rifapentine weekly for 12 weeks; or 6H: daily isoniazid for 6 months - offered to contacts of all ages after active disease is excluded, with priority for children under 5 and PLHIV.",
-    },
-    {
-      id: "symptom-approach-chronic-cough-c9",
-      front: "Spirometry thresholds for asthma and COPD.",
-      back: "Asthma: FEV1 rise of 12% and 200 mL after bronchodilator, or PEF diurnal variability above 10-20%. COPD: post-bronchodilator FEV1/FVC below 0.70.",
-    },
-    {
-      id: "symptom-approach-chronic-cough-c10",
-      front: "What is worth giving for the symptom of cough?",
-      back: "Honey in a warm drink (not under 1 year), steam and fluids; dextromethorphan in adults; no codeine for chronic cough, no combination syrups, no cough preparations in children under 4.",
-    },
-  ],
   references: [
     "Central TB Division, Ministry of Health and Family Welfare, Training Modules for Programme Managers and Medical Officers under NTEP, 2020",
     "Central TB Division, Guidelines for Programmatic Management of Drug-Resistant Tuberculosis in India, 2021, with the 2024 update on shorter all-oral regimens",
@@ -5212,58 +4746,6 @@ topics.push({
       explanation:
         "New-onset diabetes after 50 with weight loss, epigastric pain radiating to the back, pale stools and obstructive jaundice is carcinoma of the head of the pancreas until imaging says otherwise, and the pathway is ultrasound followed by a pancreatic-protocol contrast CT and surgical referral for staging. Attributing the weight loss to diabetes and waiting three months hands an operable tumour the time to become inoperable. CA 19-9 is raised in cholestasis of any cause and is normal in a proportion of cancers; it does not decide imaging. ERCP is a therapeutic procedure for biliary drainage after imaging, not a first-line diagnostic test, and carries a pancreatitis risk. An antituberculous trial in a picture of painless-to-dull obstructive jaundice with a new diabetes is the wrong empirical decision.",
       difficulty: "hard",
-    },
-  ],
-  cards: [
-    {
-      id: "symptom-approach-weight-loss-c1",
-      front: "Definition of clinically significant unintentional weight loss.",
-      back: "Loss of 5% or more of usual body weight over 6-12 months, or 10% at any time, without dieting, fasting or a new exercise programme.",
-    },
-    {
-      id: "symptom-approach-weight-loss-c2",
-      front: "The three groups of causes and their approximate share.",
-      back: "Malignancy 15-35%; non-malignant organic disease 30-40% (tuberculosis, diabetes, thyrotoxicosis, HIV, organ failure, malabsorption); psychiatric and social 10-25%; unexplained 10-25% with a good prognosis.",
-    },
-    {
-      id: "symptom-approach-weight-loss-c3",
-      front: "What does the appetite tell you?",
-      back: "Preserved or increased appetite: diabetes, thyrotoxicosis, malabsorption, phaeochromocytoma, worms. Reduced appetite: malignancy, chronic infection, depression, chronic organ disease, drugs.",
-    },
-    {
-      id: "symptom-approach-weight-loss-c4",
-      front: "Tier-one tests for unintentional weight loss.",
-      back: "CBC with smear, ESR and CRP, HbA1c, TSH, creatinine and electrolytes, LFT with albumin, calcium, urine routine, stool occult blood and ova, HIV with consent, chest radiograph, ultrasound abdomen; sputum CBNAAT if any cough.",
-    },
-    {
-      id: "symptom-approach-weight-loss-c5",
-      front: "When is watchful waiting appropriate and what does it consist of?",
-      back: "Normal examination and normal tier one: 3-6 months of monthly weights, repeat history, a nutritional prescription and treatment of mood, with tier two if the loss continues or a symptom appears.",
-    },
-    {
-      id: "symptom-approach-weight-loss-c6",
-      front: "MEALS ON WHEELS.",
-      back: "Medications, Emotional problems, Anorexia or Alcoholism, Late-life paranoia, Swallowing disorders, Oral factors, No money, Wandering and dementia, Hyperthyroidism and hyperparathyroidism, Enteric problems, Eating problems, Low-salt and low-cholesterol diets, Shopping and social problems.",
-    },
-    {
-      id: "symptom-approach-weight-loss-c7",
-      front: "Markers of medical instability in anorexia nervosa that mean admission.",
-      back: "Pulse below 50 by day or 45 at night, postural systolic fall of 20 mmHg, temperature below 35.5 C, BMI below 15, electrolyte derangement, syncope, or ECG abnormality.",
-    },
-    {
-      id: "symptom-approach-weight-loss-c8",
-      front: "Refeeding syndrome - who is at risk and what to check.",
-      back: "BMI below 16, loss of over 15% in 3 months, little intake for over 10 days: check and replace phosphate, potassium and magnesium, give thiamine before calories, and increase intake slowly, ideally in hospital.",
-    },
-    {
-      id: "symptom-approach-weight-loss-c9",
-      front: "Drugs that cause weight loss.",
-      back: "Metformin, SGLT2 inhibitors, GLP-1 agonists, topiramate, levodopa, digoxin, SSRIs in the elderly, antituberculous drugs, chemotherapy, thyroxine over-replacement, laxative and diuretic misuse.",
-    },
-    {
-      id: "symptom-approach-weight-loss-c10",
-      front: "Role of tumour markers in weight loss.",
-      back: "None as a screen: CA-125, CEA, CA 19-9 and AFP are raised in benign disease and normal in early cancer; they follow a cancer already diagnosed.",
     },
   ],
   references: [

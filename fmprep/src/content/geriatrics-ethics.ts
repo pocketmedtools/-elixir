@@ -516,68 +516,6 @@ topics.push({
       difficulty: "easy",
     },
   ],
-  cards: [
-    {
-      id: "geriatrics-ethics-cga-c1",
-      front: "Define comprehensive geriatric assessment in one sentence.",
-      back: "A multidimensional, interdisciplinary diagnostic process determining the medical, psychological and functional capabilities of a frail older person, in order to develop a coordinated plan for treatment and long-term follow-up.",
-    },
-    {
-      id: "geriatrics-ethics-cga-c2",
-      front: "The four geriatric giants of Isaacs, plus the fifth usually added.",
-      back: "Immobility, instability (falls), incontinence, impaired intellect or memory - plus iatrogenesis.",
-    },
-    {
-      id: "geriatrics-ethics-cga-c3",
-      front: "The 5 Ms of geriatrics.",
-      back: "Mind, Mobility, Medications, Multicomplexity and Matters Most.",
-    },
-    {
-      id: "geriatrics-ethics-cga-c4",
-      front: "Katz ADL items and score interpretation.",
-      back: "Bathing, dressing, toileting, transferring, continence, feeding; 0-6. Six is independent, four moderate impairment, two or less severe dependence.",
-    },
-    {
-      id: "geriatrics-ethics-cga-c5",
-      front: "Which functional loss comes first in dementia - ADL or IADL?",
-      back: "IADL. Handling money, managing medication, using transport and cooking fail before bathing, dressing and feeding.",
-    },
-    {
-      id: "geriatrics-ethics-cga-c6",
-      front: "GDS-15 cut-offs.",
-      back: "5 or more suggests depression; 10 or more is almost always depression. Preferred over PHQ-9 in the physically ill because it avoids somatic items.",
-    },
-    {
-      id: "geriatrics-ethics-cga-c7",
-      front: "Gait speed and Timed Up and Go thresholds.",
-      back: "Usual gait speed under 0.8 m/s is slow; Timed Up and Go of 12 seconds or more predicts falls, and over 20 seconds indicates functional dependence.",
-    },
-    {
-      id: "geriatrics-ethics-cga-c8",
-      front: "MNA short form bands.",
-      back: "Score 0-14: 12-14 normal, 8-11 at risk of malnutrition, 0-7 malnourished.",
-    },
-    {
-      id: "geriatrics-ethics-cga-c9",
-      front: "Why not use the MMSE unadjusted in India?",
-      back: "It is heavily education dependent and falsely labels unschooled patients as impaired; use the Hindi Mental State Examination or a validated vernacular MoCA.",
-    },
-    {
-      id: "geriatrics-ethics-cga-c10",
-      front: "Indian ageing numbers worth quoting.",
-      back: "103.9 million aged 60 and over at Census 2011 (8.6%); UNFPA India Ageing Report 2023 projects about 20.8% by 2050. LASI wave 1 (2017-18) is the reference survey.",
-    },
-    {
-      id: "geriatrics-ethics-cga-c11",
-      front: "Name three Indian government schemes relevant to an older patient.",
-      back: "NPHCE (geriatric clinics and regional geriatric centres), Rashtriya Vayoshri Yojana (free assistive devices), and Ayushman Bharat PM-JAY Vay Vandana (Rs 5 lakh cover for all aged 70 and above, from October 2024).",
-    },
-    {
-      id: "geriatrics-ethics-cga-c12",
-      front: "The national helpline number for senior citizens in India.",
-      back: "Elderline 14567, run by the Ministry of Social Justice and Empowerment.",
-    },
-  ],
   references: [
     "Ellis G et al. Comprehensive geriatric assessment for older adults admitted to hospital. Cochrane Database of Systematic Reviews, 2017",
     "Hazzard's Geriatric Medicine and Gerontology, 8th edition, 2022 - assessment of the older patient",
@@ -1101,48 +1039,6 @@ topics.push({
       explanation:
         "Orthostatic hypotension is defined as a fall of at least 20 mmHg systolic or at least 10 mmHg diastolic within 3 minutes of standing; the systolic drop here is 28 mmHg, so the criteria are met, and reviewing the drug list - antihypertensives, alpha-blockers, diuretics, nitrates, tricyclics - is always the first intervention. The first option therefore misapplies the definition. Fludrocortisone is second line, used only after non-pharmacological measures and drug withdrawal, and carries risks of fluid overload and supine hypertension. A 10-minute reading is used only when delayed orthostatic hypotension is suspected and its absence does not invalidate the test. Carotid sinus hypersensitivity is diagnosed by carotid sinus massage producing asystole of 3 seconds or more or a systolic fall of 50 mmHg, not by a standing test.",
       difficulty: "hard",
-    },
-  ],
-  cards: [
-    {
-      id: "geriatrics-ethics-falls-c1",
-      front: "Define a fall (WHO) and define a recurrent faller.",
-      back: "A fall is an event in which a person unintentionally comes to rest on the ground, floor or other lower level, not because of a major intrinsic event such as stroke or seizure or an overwhelming external force. A recurrent faller has had two or more falls in twelve months.",
-    },
-    {
-      id: "geriatrics-ethics-falls-c2",
-      front: "The three STEADI screening questions.",
-      back: "Have you fallen in the past year? Do you feel unsteady when standing or walking? Do you worry about falling? A yes to any one triggers a fuller falls assessment.",
-    },
-    {
-      id: "geriatrics-ethics-falls-c3",
-      front: "Timed Up and Go: how is it done and what is abnormal?",
-      back: "Rise from a standard armchair, walk 3 metres, turn, walk back and sit down. Twelve seconds or more indicates increased falls risk; more than 20 seconds indicates functional dependence.",
-    },
-    {
-      id: "geriatrics-ethics-falls-c4",
-      front: "Definition of orthostatic hypotension.",
-      back: "A fall of 20 mmHg or more in systolic, or 10 mmHg or more in diastolic, blood pressure within 3 minutes of standing from a 5-minute supine rest.",
-    },
-    {
-      id: "geriatrics-ethics-falls-c5",
-      front: "Name six classes of fall-risk-increasing drugs.",
-      back: "Benzodiazepines and Z-drugs, antipsychotics, antidepressants (especially tricyclics), opioids and anticholinergics, antihypertensives including alpha-blockers and diuretics, and sulfonylureas or insulin causing hypoglycaemia.",
-    },
-    {
-      id: "geriatrics-ethics-falls-c6",
-      front: "What exercise prescription prevents falls?",
-      back: "Progressive strength training plus balance training that genuinely challenges balance, at least 3 hours a week, sustained long term - the Otago programme or tai chi. Walking alone does not prevent falls.",
-    },
-    {
-      id: "geriatrics-ethics-falls-c7",
-      front: "Why should bed rails not be used to prevent falls in hospital?",
-      back: "They do not reduce falls, and they convert a fall from bed height into a fall from a greater height, with risk of entrapment and strangulation. Use low beds, floor mats, lighting, a call bell in reach and scheduled toileting instead.",
-    },
-    {
-      id: "geriatrics-ethics-falls-c8",
-      front: "Should anticoagulation be stopped in an older person with atrial fibrillation who falls?",
-      back: "No. The stroke risk prevented outweighs the bleeding risk from falls - a patient would need to fall on the order of 295 times a year for the harm to outweigh the benefit. Treat the fall risk instead and continue anticoagulation.",
     },
   ],
   references: [
@@ -1686,48 +1582,6 @@ topics.push({
       explanation:
         "First-generation antihistamines such as chlorpheniramine have no withdrawal or rebound syndrome and can simply be stopped, which is fortunate because their anticholinergic burden makes them a priority for deprescribing. Abrupt withdrawal of a beta-blocker causes rebound tachycardia, angina and infarction. Clonidine withdrawal causes a rebound hypertensive crisis. Long-term alprazolam requires a slow taper of roughly 10-25% of the dose every two to four weeks to avoid rebound insomnia, anxiety and seizures. Prednisolone at 10 mg daily for six months suppresses the hypothalamic-pituitary-adrenal axis, and stopping it abruptly risks an adrenal crisis.",
       difficulty: "hard",
-    },
-  ],
-  cards: [
-    {
-      id: "geriatrics-ethics-polypharmacy-c1",
-      front: "Define polypharmacy, hyperpolypharmacy and inappropriate polypharmacy.",
-      back: "Polypharmacy is the concurrent use of five or more regular medicines; hyperpolypharmacy ten or more. Inappropriate polypharmacy is the use of drugs whose harm outweighs their benefit for that patient - the concept that actually matters, since some patients legitimately need many drugs.",
-    },
-    {
-      id: "geriatrics-ethics-polypharmacy-c2",
-      front: "What is a prescribing cascade? Give two examples.",
-      back: "An adverse drug effect is mistaken for a new disease and a second drug is added to treat it. Examples: amlodipine oedema treated with furosemide; metoclopramide-induced parkinsonism treated with levodopa; donepezil urgency treated with oxybutynin.",
-    },
-    {
-      id: "geriatrics-ethics-polypharmacy-c3",
-      front: "Beers criteria versus STOPP/START - what is the key difference?",
-      back: "Beers (AGS, 2023) is American and lists only potentially inappropriate medications to avoid. STOPP/START (version 3, 2023) is European, arranged by physiological system, and uniquely includes START criteria for evidence-based drugs that are being wrongly omitted.",
-    },
-    {
-      id: "geriatrics-ethics-polypharmacy-c4",
-      front: "Name six drug classes on the Beers list to avoid in the elderly.",
-      back: "First-generation antihistamines, benzodiazepines and Z-drugs, antipsychotics for dementia-related behaviour, tricyclic antidepressants, glibenclamide, long-term NSAIDs; also oral antimuscarinics, PPIs beyond 8 weeks, alpha-blockers for hypertension and digoxin above 0.125 mg daily.",
-    },
-    {
-      id: "geriatrics-ethics-polypharmacy-c5",
-      front: "The two questions that decide whether to continue a preventive drug in an older patient.",
-      back: "What is the drug's time to benefit, and what is this patient's estimated remaining life expectancy? If the time to benefit exceeds the life expectancy, the drug should be stopped.",
-    },
-    {
-      id: "geriatrics-ethics-polypharmacy-c6",
-      front: "Which drugs must be tapered rather than stopped abruptly?",
-      back: "Benzodiazepines and Z-drugs, beta-blockers, clonidine, systemic corticosteroids, SSRIs and SNRIs, proton pump inhibitors, opioids, levodopa and antiepileptics.",
-    },
-    {
-      id: "geriatrics-ethics-polypharmacy-c7",
-      front: "What is the triple whammy?",
-      back: "An ACE inhibitor or ARB plus a diuretic plus an NSAID, a combination that commonly precipitates acute kidney injury in older people, especially during intercurrent illness or dehydration.",
-    },
-    {
-      id: "geriatrics-ethics-polypharmacy-c8",
-      front: "What is a brown bag review and why does it matter in India?",
-      back: "Asking the patient or attendant to bring every medicine in the house - strips, bottles, drops, ointments, tonics and churnas - to the consultation. It matters because of multiple prescribers with no shared record, over-the-counter sale of prescription drugs, concurrent AYUSH use and sharing of medicines within the family.",
     },
   ],
   references: [
@@ -2303,48 +2157,6 @@ topics.push({
       difficulty: "moderate",
     },
   ],
-  cards: [
-    {
-      id: "geriatrics-ethics-palliative-symptom-control-c1",
-      front: "The five WHO principles of analgesia.",
-      back: "By mouth, by the clock, by the ladder, for the individual, and with attention to detail.",
-    },
-    {
-      id: "geriatrics-ethics-palliative-symptom-control-c2",
-      front: "Starting dose and breakthrough dose of oral morphine.",
-      back: "Immediate-release morphine 5-10 mg every 4 hours in an opioid-naive adult, 2.5-5 mg in the frail elderly or renal impairment. The breakthrough dose is one-sixth of the total 24-hour dose, given as immediate-release morphine and repeatable hourly.",
-    },
-    {
-      id: "geriatrics-ethics-palliative-symptom-control-c3",
-      front: "Oral morphine to subcutaneous and to intravenous morphine conversions.",
-      back: "Oral to subcutaneous is 2:1 - halve the oral dose. Oral to intravenous is 2:1 to 3:1; use the more conservative 3:1 when uncertain. Reduce by 25-50% when switching to a different opioid because cross-tolerance is incomplete.",
-    },
-    {
-      id: "geriatrics-ethics-palliative-symptom-control-c4",
-      front: "Which laxative goes with morphine, and which must be avoided?",
-      back: "A stimulant laxative - bisacodyl 5-10 mg or senna 2 tablets at night - prescribed prophylactically with the first opioid dose, with lactulose or macrogol added if the stool is hard. Avoid bulk-forming laxatives such as isphagula, which risk impaction in patients with poor fluid intake.",
-    },
-    {
-      id: "geriatrics-ethics-palliative-symptom-control-c5",
-      front: "What did the NDPS (Amendment) Act 2014 change?",
-      back: "In force from 1 May 2014, it created the class of essential narcotic drugs (morphine, fentanyl, methadone, oxycodone, codeine, hydrocodone), moved rule-making for their medical use to the Central Government, and allowed a Recognised Medical Institution to procure, stock and dispense them under a single simplified licence.",
-    },
-    {
-      id: "geriatrics-ethics-palliative-symptom-control-c6",
-      front: "Antiemetic of choice for opioid-induced nausea, and for gastric stasis.",
-      back: "Haloperidol 0.5-1.5 mg at night acts at the D2 receptors of the chemoreceptor trigger zone and is the choice for opioid, uraemic and hypercalcaemic nausea. Metoclopramide 10 mg three times daily is the prokinetic choice for gastric stasis, but must be avoided in complete mechanical obstruction and in parkinsonism.",
-    },
-    {
-      id: "geriatrics-ethics-palliative-symptom-control-c7",
-      front: "How is the death rattle managed?",
-      back: "Explain to the family, reposition on the side, avoid suction, reduce parenteral fluids, and give an antimuscarinic early - hyoscine butylbromide 20 mg subcutaneously or glycopyrronium 200 micrograms subcutaneously, both of which sedate less than hyoscine hydrobromide.",
-    },
-    {
-      id: "geriatrics-ethics-palliative-symptom-control-c8",
-      front: "Define total pain.",
-      back: "Cicely Saunders' concept that suffering in serious illness has physical, psychological, social and spiritual components. Pain that escalates despite a correctly titrated opioid is usually total pain and needs the non-physical dimensions addressed.",
-    },
-  ],
   references: [
     "WHO Guidelines for the pharmacological and radiotherapeutic management of cancer pain in adults and adolescents, 2018",
     "Indian Association of Palliative Care (IAPC) consensus guidelines on cancer pain management, 2012 and subsequent updates",
@@ -2878,48 +2690,6 @@ topics.push({
       difficulty: "hard",
     },
   ],
-  cards: [
-    {
-      id: "geriatrics-ethics-consent-capacity-records-c1",
-      front: "The six elements of valid informed consent.",
-      back: "Competence (18 years), capacity, voluntariness, adequate disclosure (nature, purpose, material risks, alternatives, consequences of refusal), understanding in the patient's language, and documentation of what was explained.",
-    },
-    {
-      id: "geriatrics-ethics-consent-capacity-records-c2",
-      front: "What did Samira Kohli v Dr Prabha Manchanda (2008) decide?",
-      back: "Consent for a diagnostic procedure does not extend to therapeutic surgery; a relative cannot consent on behalf of a competent adult; India follows 'real consent' judged by the Bolam standard of disclosure rather than the reasonably prudent patient standard.",
-    },
-    {
-      id: "geriatrics-ethics-consent-capacity-records-c3",
-      front: "The functional test of capacity.",
-      back: "The ability to understand the relevant information, retain it, weigh it and appreciate the reasonably foreseeable consequences, and communicate the decision. Codified for mental healthcare in section 4 of the Mental Healthcare Act 2017. Capacity is presumed, decision-specific and time-specific.",
-    },
-    {
-      id: "geriatrics-ethics-consent-capacity-records-c4",
-      front: "Five exceptions to medical confidentiality.",
-      back: "Patient consent; order of a court; statutory notification (notifiable diseases, PCPNDT, mandatory POCSO reporting); serious and identified risk to a specific person or the community; and the incapacitated patient's own interest.",
-    },
-    {
-      id: "geriatrics-ethics-consent-capacity-records-c5",
-      front: "Medical record retention and supply under the 2002 Regulations.",
-      back: "Indoor patient records for at least 3 years from the commencement of treatment in the Appendix 3 format (Reg 1.3.1), supplied to the patient or authorised attendant within 72 hours of request (Reg 1.3.2), with a medico-legal case register (Reg 1.3.3).",
-    },
-    {
-      id: "geriatrics-ethics-consent-capacity-records-c6",
-      front: "How is an error in a medical record corrected?",
-      back: "Strike it through with a single line so it stays legible, write the correction, and date, time and initial it. Never erase, overwrite or use correcting fluid, and never alter a record after a complaint - add a clearly labelled dated addendum instead.",
-    },
-    {
-      id: "geriatrics-ethics-consent-capacity-records-c7",
-      front: "Jacob Mathew v State of Punjab (2005) - the principle.",
-      back: "For criminal liability a doctor's negligence must be gross or reckless, not a mere error of judgement; a credible independent medical opinion should be obtained before prosecution, and doctors should not be routinely arrested. Section 304A IPC is now section 106 of the Bharatiya Nyaya Sanhita 2023.",
-    },
-    {
-      id: "geriatrics-ethics-consent-capacity-records-c8",
-      front: "What is the current uncertainty about doctors and the Consumer Protection Act?",
-      back: "IMA v V.P. Shantha (1995) brought medical services within consumer law and still binds, but the word 'healthcare' was dropped from the definition of service in the 2019 Act, and in Bar of Indian Lawyers v D.K. Gandhi (May 2024) the Supreme Court asked a larger bench to reconsider Shantha. State the current law and flag the pending reference.",
-    },
-  ],
   references: [
     "Indian Medical Council (Professional Conduct, Etiquette and Ethics) Regulations, 2002 (as amended) - regulations 1.3, 1.4, 7.14 and Appendix 3; note the NMC's 2023 replacement regulations were kept in abeyance",
     "Samira Kohli v Dr Prabha Manchanda (2008) 1 SCC 1; Jacob Mathew v State of Punjab (2005) 6 SCC 1; IMA v V.P. Shantha (1995) 6 SCC 651; Mr X v Hospital Z (1998) 8 SCC 296",
@@ -3415,48 +3185,6 @@ topics.push({
       difficulty: "hard",
     },
   ],
-  cards: [
-    {
-      id: "geriatrics-ethics-dementia-caregiver-c1",
-      front: "DSM-5 criteria for major neurocognitive disorder.",
-      back: "Significant decline from a previous level in one or more cognitive domains, based on the concern of the patient, an informant or a clinician plus objective testing; the deficits interfere with independence in everyday activities and do not occur exclusively during delirium or another mental disorder.",
-    },
-    {
-      id: "geriatrics-ethics-dementia-caregiver-c2",
-      front: "The four core features of dementia with Lewy bodies.",
-      back: "Fluctuating cognition with marked variation in attention and alertness; recurrent well-formed visual hallucinations; REM sleep behaviour disorder; and spontaneous parkinsonism within a year of the cognitive onset. Severe neuroleptic sensitivity means antipsychotics must be avoided.",
-    },
-    {
-      id: "geriatrics-ethics-dementia-caregiver-c3",
-      front: "Reversible or partly reversible causes of cognitive decline.",
-      back: "Drugs (anticholinergics, benzodiazepines, opioids), hypothyroidism, vitamin B12 deficiency, hyponatraemia, hypercalcaemia, depression, alcohol, chronic subdural haematoma, normal pressure hydrocephalus, sleep apnoea, neurosyphilis and HIV.",
-    },
-    {
-      id: "geriatrics-ethics-dementia-caregiver-c4",
-      front: "The triad of normal pressure hydrocephalus.",
-      back: "Gait apraxia (a magnetic, shuffling gait) which comes first, urinary incontinence, and cognitive impairment - 'wobbly, wet and wacky'. Potentially reversible by ventriculoperitoneal shunting, so it must not be missed.",
-    },
-    {
-      id: "geriatrics-ethics-dementia-caregiver-c5",
-      front: "Donepezil and memantine - indication and dosing.",
-      back: "Donepezil 5 mg at night increased to 10 mg after 4-6 weeks, for mild to moderate Alzheimer disease, DLB and Parkinson disease dementia. Memantine, an NMDA antagonist, for moderate to severe Alzheimer disease: 5 mg daily increased by 5 mg weekly to 10 mg twice daily.",
-    },
-    {
-      id: "geriatrics-ethics-dementia-caregiver-c6",
-      front: "What is the DICE approach to BPSD?",
-      back: "Describe the behaviour precisely, Investigate the cause (pain, constipation, retention, infection, hunger, boredom, over- or under-stimulation, a new drug, a change of environment), Create a plan with the caregiver, and Evaluate it.",
-    },
-    {
-      id: "geriatrics-ethics-dementia-caregiver-c7",
-      front: "The Zarit Burden Interview.",
-      back: "A 22-item caregiver burden scale scored 0-88: roughly 0-20 little or no burden, 21-40 mild to moderate, 41-60 moderate to severe, 61-88 severe. Use it with a GDS-15 or PHQ-9 for the caregiver's own depression.",
-    },
-    {
-      id: "geriatrics-ethics-dementia-caregiver-c8",
-      front: "Modifiable risk factors for dementia (Lancet Commission).",
-      back: "Less education, hearing loss, hypertension, obesity, smoking, depression, physical inactivity, diabetes, excess alcohol, traumatic brain injury, air pollution and social isolation, with untreated visual loss and high LDL cholesterol added in 2024 - together about 45% of dementia risk.",
-    },
-  ],
   references: [
     "Livingston G et al. Dementia prevention, intervention and care: 2024 report of the Lancet standing Commission. The Lancet, 2024",
     "NICE guideline NG97: Dementia - assessment, management and support for people living with dementia and their carers, 2018 (updated)",
@@ -3950,48 +3678,6 @@ topics.push({
       explanation:
         "Progressive resistance training, combined with sufficient protein intake, is the only intervention that reliably increases muscle strength and mass in older adults, with benefit demonstrated even in nursing home residents in their nineties. Megestrol increases weight mainly as fat and fluid and causes thromboembolism, fluid retention and adrenal suppression. Testosterone given regardless of level produces modest strength gains at the cost of cardiovascular, prostatic and erythrocytosis risks and is not recommended for sarcopenia. Growth hormone increases lean mass measured by imaging without improving strength or function, and causes oedema, arthralgia and glucose intolerance. A multivitamin corrects specific deficiencies but has no effect on muscle in a replete patient.",
       difficulty: "easy",
-    },
-  ],
-  cards: [
-    {
-      id: "geriatrics-ethics-frailty-sarcopenia-nutrition-c1",
-      front: "The five Fried frailty criteria.",
-      back: "Unintentional weight loss of 4.5 kg or 5% in a year, self-reported exhaustion, weak grip strength, slow gait speed and low physical activity. Three or more of five is frail; one or two is pre-frail.",
-    },
-    {
-      id: "geriatrics-ethics-frailty-sarcopenia-nutrition-c2",
-      front: "The Clinical Frailty Scale.",
-      back: "A 1 to 9 judgement scale derived from the cumulative deficit model: 1 very fit, 4 living with very mild frailty, 5 mildly frail, 7 severely frail, 8 very severely frail, 9 terminally ill. A score of 5 or more indicates frailty.",
-    },
-    {
-      id: "geriatrics-ethics-frailty-sarcopenia-nutrition-c3",
-      front: "The FRAIL scale.",
-      back: "Fatigue, Resistance (climbing a flight of stairs), Ambulation (walking a block), Illnesses (more than five) and Loss of weight (more than 5%), scored 0-5; 3 or more is frail and 1-2 pre-frail.",
-    },
-    {
-      id: "geriatrics-ethics-frailty-sarcopenia-nutrition-c4",
-      front: "AWGS 2019 sarcopenia cut-offs to use in India.",
-      back: "Grip strength under 28 kg in men and 18 kg in women; five-times chair stand 12 seconds or more; gait speed under 1.0 m/s; appendicular skeletal muscle index under 7.0 kg/m2 in men and 5.4 kg/m2 (DXA) or 5.7 (BIA) in women; calf circumference under 34 cm in men and 33 cm in women for case finding.",
-    },
-    {
-      id: "geriatrics-ethics-frailty-sarcopenia-nutrition-c5",
-      front: "SARC-F questionnaire.",
-      back: "Strength to lift 5 kg, Assistance in walking, Rise from a chair, Climb ten stairs, and Falls in the past year, scored 0-10. A score of 4 or more suggests sarcopenia and prompts formal testing.",
-    },
-    {
-      id: "geriatrics-ethics-frailty-sarcopenia-nutrition-c6",
-      front: "MNA short form scoring bands.",
-      back: "Score 0-14: 12-14 normal nutritional status, 8-11 at risk of malnutrition, 0-7 malnourished. The full MNA scores 0-30, with 24 or above normal, 17-23.5 at risk and below 17 malnourished.",
-    },
-    {
-      id: "geriatrics-ethics-frailty-sarcopenia-nutrition-c7",
-      front: "Protein requirements in older adults.",
-      back: "1.0-1.2 g/kg/day when healthy, 1.2-1.5 g/kg/day in acute or chronic illness, up to 2.0 g/kg/day in severe illness or injury, with caution in advanced chronic kidney disease. Distribute as about 25-30 g at each of three meals.",
-    },
-    {
-      id: "geriatrics-ethics-frailty-sarcopenia-nutrition-c8",
-      front: "Preventing refeeding syndrome.",
-      back: "Identify high risk (BMI under 16, weight loss over 15% in 3-6 months, minimal intake over 10 days, or low potassium, phosphate or magnesium). Give thiamine 200-300 mg daily before and during feeding, start at 10 kcal/kg/day (5 in extreme risk), build up over 4-7 days, and monitor and replace phosphate, potassium and magnesium daily.",
     },
   ],
   references: [
@@ -4493,48 +4179,6 @@ topics.push({
       explanation:
         "This is an unnatural death from an accident at a workplace, so the treating doctor must not certify the cause; the police are informed, a medico-legal case is registered and the body is referred for post-mortem examination, with certification following the autopsy findings. Writing cardiorespiratory arrest states a mode of dying and is never acceptable, quite apart from the medico-legal issue. Certifying head injury pre-empts the autopsy and may conceal a contributory factor such as intoxication, assault or a natural event that caused the fall. Sending the family away without action abandons a statutory duty. Indian practice makes no provision for a provisional certificate that is corrected later.",
       difficulty: "moderate",
-    },
-  ],
-  cards: [
-    {
-      id: "geriatrics-ethics-end-of-life-death-certification-c1",
-      front: "What is the surprise question and what does it trigger?",
-      back: "'Would I be surprised if this patient died in the next twelve months?' A negative answer identifies a patient who should be offered advance care planning, palliative input and a goals-of-care conversation.",
-    },
-    {
-      id: "geriatrics-ethics-end-of-life-death-certification-c2",
-      front: "What did Common Cause v Union of India (2018) decide, and what changed in January 2023?",
-      back: "The 2018 Constitution Bench held that the right to die with dignity is part of Article 21, that withholding and withdrawing life support is lawful, and that advance medical directives are valid. On 24 January 2023 the Court simplified the procedure: attestation before a notary or gazetted officer instead of a magistrate, a Primary and a Secondary Medical Board of experts of at least five years' standing, a decision within 48 hours, and intimation to the JMFC.",
-    },
-    {
-      id: "geriatrics-ethics-end-of-life-death-certification-c3",
-      front: "Which end-of-life acts remain criminal offences in India?",
-      back: "Active euthanasia, punishable as murder under section 103 of the Bharatiya Nyaya Sanhita 2023, and physician-assisted suicide, punishable as abetment of suicide under section 108. Attempted suicide by a patient is effectively decriminalised by section 115 of the Mental Healthcare Act 2017.",
-    },
-    {
-      id: "geriatrics-ethics-end-of-life-death-certification-c4",
-      front: "State the doctrine of double effect and its four conditions.",
-      back: "An act with both a good and a foreseen bad effect is permissible if the act itself is good or neutral, the intention is the good effect, the bad effect is not the means to the good effect, and there is a proportionate reason. It justifies proportionate opioid and sedative use for symptom relief at the end of life.",
-    },
-    {
-      id: "geriatrics-ethics-end-of-life-death-certification-c5",
-      front: "Which document does the doctor write, and which does the registrar issue?",
-      back: "The doctor writes the Medical Certificate of Cause of Death - Form 4 for institutional deaths, Form 4A for deaths outside an institution. The Registrar of Births and Deaths issues the death certificate after registration under the Registration of Births and Deaths Act 1969, as amended in 2023.",
-    },
-    {
-      id: "geriatrics-ethics-end-of-life-death-certification-c6",
-      front: "Where is the underlying cause of death written, and why does it matter?",
-      back: "On the lowest completed line of Part I. It is the disease or injury that initiated the train of events leading directly to death, and it is the entry coded to ICD-10 and tabulated in national mortality statistics.",
-    },
-    {
-      id: "geriatrics-ethics-end-of-life-death-certification-c7",
-      front: "Name six modes of dying that must never be written as the sole cause of death.",
-      back: "Cardiac arrest, cardiorespiratory arrest, respiratory failure, heart failure, shock, coma, syncope and asphyxia - each is a mechanism and must be accompanied by the disease that produced it. 'Old age' and 'senility' should likewise be avoided unless no disease can be identified.",
-    },
-    {
-      id: "geriatrics-ethics-end-of-life-death-certification-c8",
-      front: "How is brain-stem death certified in India?",
-      back: "Under the Transplantation of Human Organs and Tissues Act 1994 (amended 2011), by a four-member Board of Medical Experts - the practitioner in charge of the hospital, a practitioner from an approved panel, a neurologist or neurosurgeon, and the treating practitioner - with two sets of tests six hours apart.",
     },
   ],
   references: [

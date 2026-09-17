@@ -567,68 +567,6 @@ topics.push({
       difficulty: "moderate",
     },
   ],
-  cards: [
-    {
-      id: "eye-ent-red-eye-c1",
-      front: "The five classical causes of a red eye that must be separated.",
-      back: "Conjunctivitis, microbial keratitis, acute anterior uveitis, acute angle-closure glaucoma and scleritis. Episcleritis and subconjunctival haemorrhage are the benign mimics.",
-    },
-    {
-      id: "eye-ent-red-eye-c2",
-      front: "Conjunctival versus ciliary injection.",
-      back: "Conjunctival: superficial, maximal in the fornices, moves with the conjunctiva, blanches with a vasoconstrictor. Ciliary: deep violaceous, maximal at the limbus, does not move or blanch - means cornea, iris or ciliary body disease.",
-    },
-    {
-      id: "eye-ent-red-eye-c3",
-      front: "Pupil signs in the four main causes of a red eye.",
-      back: "Conjunctivitis normal; keratitis normal or small; uveitis small and irregular from synechiae; acute angle closure mid-dilated, vertically oval and fixed.",
-    },
-    {
-      id: "eye-ent-red-eye-c4",
-      front: "First-line drugs in acute angle-closure glaucoma.",
-      back: "Acetazolamide 500 mg stat, timolol 0.5%, brimonidine 0.2%, topical steroid; pilocarpine 2% only once pressure starts falling; mannitol 20% 1-2 g/kg IV if uncontrolled.",
-    },
-    {
-      id: "eye-ent-red-eye-c5",
-      front: "Definitive treatment of acute angle closure, and what must be done to the other eye.",
-      back: "Laser peripheral iridotomy to the affected eye once the cornea clears, plus prophylactic iridotomy to the fellow eye, which otherwise has a 40-80% risk of an attack.",
-    },
-    {
-      id: "eye-ent-red-eye-c6",
-      front: "Why is a topical steroid dangerous in an undiagnosed red eye?",
-      back: "It converts a herpetic dendrite into a geographic ulcer, accelerates fungal keratitis, and with long use causes steroid-induced glaucoma and posterior subcapsular cataract.",
-    },
-    {
-      id: "eye-ent-red-eye-c7",
-      front: "Bedside test separating episcleritis from scleritis.",
-      back: "2.5% phenylephrine blanches episcleral vessels but not scleral vessels; scleritis is also exquisitely tender and wakes the patient with boring pain.",
-    },
-    {
-      id: "eye-ent-red-eye-c8",
-      front: "Fluorescein pattern of herpes simplex epithelial keratitis.",
-      back: "A branching dendritic ulcer with terminal bulbs; treat with acyclovir 3% eye ointment five times daily, never with an unopposed steroid.",
-    },
-    {
-      id: "eye-ent-red-eye-c9",
-      front: "Red painful eye with falling vision after cataract surgery - diagnosis and timeline?",
-      back: "Acute postoperative endophthalmitis, usually within 1-6 weeks; refer within hours for vitreous tap and intravitreal antibiotics.",
-    },
-    {
-      id: "eye-ent-red-eye-c10",
-      front: "Two things you must never give a red eye patient to take home.",
-      back: "A topical anaesthetic (epithelial toxicity, corneal melt, masks worsening) and an unsupervised steroid-antibiotic combination drop.",
-    },
-    {
-      id: "eye-ent-red-eye-c11",
-      front: "When is padding an eye wrong?",
-      back: "When there is any discharge, in a contact lens wearer, and in suspected infective keratitis - padding converts an abrasion into an ulcer.",
-    },
-    {
-      id: "eye-ent-red-eye-c12",
-      front: "Features of fungal keratitis.",
-      back: "Vegetable matter or agricultural trauma, dry greyish infiltrate with feathery margins, satellite lesions, hypopyon, worsening after topical steroids.",
-    },
-  ],
   references: [
     "AK Khurana, Comprehensive Ophthalmology, 8th edition, 2022 - diseases of the conjunctiva, cornea and uvea",
     "Kanski's Clinical Ophthalmology, 9th edition, 2020",
@@ -1144,58 +1082,6 @@ topics.push({
       explanation:
         "A tender postauricular swelling with the pinna pushed down, out and forward in a child with otorrhoea is acute mastoiditis, which requires admission for intravenous antibiotics, imaging and drainage or cortical mastoidectomy if there is a subperiosteal abscess or no response. Escalating oral antibiotics at home risks masked mastoiditis and intracranial spread. Topical drops do not treat bone infection. Post-auricular lymph nodes lie behind and below the mastoid tip and do not displace the pinna forward. A two-week outpatient appointment misses the window in which a brain abscess or meningitis can develop.",
       difficulty: "easy",
-    },
-  ],
-  cards: [
-    {
-      id: "eye-ent-otitis-c1",
-      front: "Diagnostic otoscopic sign of acute otitis media.",
-      back: "A bulging, opaque tympanic membrane with reduced or absent mobility on pneumatic otoscopy; redness alone in a crying child is not diagnostic.",
-    },
-    {
-      id: "eye-ent-otitis-c2",
-      front: "Which children with acute otitis media get an antibiotic immediately?",
-      back: "Under 6 months; 6-24 months with bilateral disease; otorrhoea from perforation; severe pain, fever above 39 degrees C or toxicity; immunodeficiency, craniofacial anomaly or cochlear implant.",
-    },
-    {
-      id: "eye-ent-otitis-c3",
-      front: "First-line antibiotic and dose for acute otitis media in a child.",
-      back: "Amoxicillin 80-90 mg/kg/day in 2-3 divided doses; 10 days if under 2 years or perforated, 5-7 days if over 2 years with mild disease.",
-    },
-    {
-      id: "eye-ent-otitis-c4",
-      front: "The one sign that says otitis externa rather than otitis media.",
-      back: "Pain on pressing the tragus or pulling the pinna, with an intact drum and no fever.",
-    },
-    {
-      id: "eye-ent-otitis-c5",
-      front: "Safe versus unsafe CSOM in one line.",
-      back: "Central pars tensa perforation with profuse odourless mucoid discharge is safe; attic or posterosuperior marginal perforation with scanty foul discharge, granulation or polyp is unsafe squamous disease with cholesteatoma.",
-    },
-    {
-      id: "eye-ent-otitis-c6",
-      front: "Which ear drops must never be used through a perforation, and what is used instead?",
-      back: "Avoid aminoglycosides (neomycin, gentamicin, framycetin) because of ototoxicity; use ciprofloxacin 0.3% drops instead.",
-    },
-    {
-      id: "eye-ent-otitis-c7",
-      front: "Signs of acute mastoiditis.",
-      back: "Postauricular swelling, redness and tenderness with the pinna pushed down, out and forward, sagging of the posterosuperior canal wall, fever and otorrhoea - admit.",
-    },
-    {
-      id: "eye-ent-otitis-c8",
-      front: "Gradenigo triad and what it means.",
-      back: "Otorrhoea, retro-orbital or deep facial pain (trigeminal) and lateral rectus palsy (sixth nerve) - petrous apicitis complicating middle ear suppuration.",
-    },
-    {
-      id: "eye-ent-otitis-c9",
-      front: "Malignant otitis externa - who, what and how long treated?",
-      back: "Elderly diabetic or immunocompromised patient, Pseudomonas skull base osteomyelitis with severe night otalgia and canal floor granulations; ciprofloxacin 750 mg twice daily or intravenous anti-pseudomonal therapy for 6-8 weeks with glycaemic control.",
-    },
-    {
-      id: "eye-ent-otitis-c10",
-      front: "When is glue ear referred for grommets?",
-      back: "Bilateral effusion persisting beyond 3 months with hearing loss above 25-30 dB, or with speech delay or educational difficulty.",
     },
   ],
   references: [
@@ -1729,58 +1615,6 @@ topics.push({
       explanation:
         "A greyish adherent membrane that bleeds on removal, bull neck and toxaemia disproportionate to a modest fever in an unimmunised child is diphtheria, and antitoxin must be given on clinical suspicion because delay while awaiting culture allows myocarditis and neuropathy; penicillin or erythromycin, isolation and notification follow. Amoxicillin with a 48-hour review is the answer for ordinary bacterial tonsillitis and misses the toxin-mediated illness. Outpatient azithromycin repeats the same delay. Monospot addresses mononucleosis, which produces a membranous tonsillitis but with generalised lymphadenopathy and splenomegaly and no toxaemia of this kind. Acyclovir treats herpetic gingivostomatitis, which causes vesicles and ulcers rather than an adherent membrane.",
       difficulty: "moderate",
-    },
-  ],
-  cards: [
-    {
-      id: "eye-ent-sore-throat-c1",
-      front: "The four Centor criteria.",
-      back: "Tonsillar exudate, tender anterior cervical lymphadenopathy, history of fever, and absence of cough - one point each.",
-    },
-    {
-      id: "eye-ent-sore-throat-c2",
-      front: "The McIsaac age modification.",
-      back: "Add 1 point for age 3-14 years, 0 for 15-44 years, subtract 1 for 45 years or older.",
-    },
-    {
-      id: "eye-ent-sore-throat-c3",
-      front: "First-line antibiotic, dose and duration for streptococcal pharyngitis.",
-      back: "Penicillin V 250 mg two to three times daily under 27 kg, or 500 mg twice daily in adults, for 10 days; amoxicillin 50 mg/kg once daily for 10 days is an alternative.",
-    },
-    {
-      id: "eye-ent-sore-throat-c4",
-      front: "How late can antibiotics be started and still prevent rheumatic fever?",
-      back: "Up to 9 days from the onset of symptoms; antibiotics do not prevent post-streptococcal glomerulonephritis.",
-    },
-    {
-      id: "eye-ent-sore-throat-c5",
-      front: "Which antibiotic must be avoided when infectious mononucleosis is possible, and why?",
-      back: "Ampicillin and amoxicillin - they cause a florid maculopapular rash in 80-90% of patients with mononucleosis.",
-    },
-    {
-      id: "eye-ent-sore-throat-c6",
-      front: "Triad that means quinsy rather than tonsillitis.",
-      back: "Trismus, muffled hot potato voice and uvular deviation with a unilateral bulging soft palate - needs drainage plus intravenous antibiotics.",
-    },
-    {
-      id: "eye-ent-sore-throat-c7",
-      front: "Paradise criteria for tonsillectomy.",
-      back: "7 documented episodes in 1 year, 5 per year for 2 years, or 3 per year for 3 years, each with fever above 38.3 degrees C, exudate, cervical adenopathy or a positive GABHS culture.",
-    },
-    {
-      id: "eye-ent-sore-throat-c8",
-      front: "Secondary prophylaxis regimen after acute rheumatic fever.",
-      back: "Benzathine penicillin G 1.2 million units intramuscularly every 3 weeks (600,000 units if under 27 kg); 5 years or to age 21 without carditis, 10 years or to 21 with carditis, up to 40 years or lifelong with valve disease.",
-    },
-    {
-      id: "eye-ent-sore-throat-c9",
-      front: "Sore throat with fever in a patient on carbimazole or clozapine - what must you do?",
-      back: "Urgent full blood count to exclude agranulocytosis before prescribing anything; stop the drug pending the result.",
-    },
-    {
-      id: "eye-ent-sore-throat-c10",
-      front: "Why is ASO titre useless in acute pharyngitis?",
-      back: "It rises only 2-3 weeks after infection; it confirms preceding streptococcal infection in suspected rheumatic fever or glomerulonephritis, not the current sore throat.",
     },
   ],
   references: [
@@ -2319,58 +2153,6 @@ topics.push({
       difficulty: "easy",
     },
   ],
-  cards: [
-    {
-      id: "eye-ent-rhinitis-sinusitis-c1",
-      front: "ARIA classification of allergic rhinitis.",
-      back: "Duration: intermittent (under 4 days a week or under 4 weeks) versus persistent (4 or more days a week and over 4 weeks). Severity: mild versus moderate-severe, decided by impairment of sleep, daily activity, sport, school or work.",
-    },
-    {
-      id: "eye-ent-rhinitis-sinusitis-c2",
-      front: "Most effective drug class in allergic rhinitis, with a dose.",
-      back: "Intranasal corticosteroid - fluticasone propionate or mometasone furoate 50 microgram, 2 sprays per nostril once daily in adults; takes 1-2 weeks for full effect.",
-    },
-    {
-      id: "eye-ent-rhinitis-sinusitis-c3",
-      front: "Correct intranasal spray technique.",
-      back: "Blow the nose, head slightly forward, use the opposite hand and aim the nozzle laterally away from the septum, do not sniff hard - septal aiming causes epistaxis and perforation.",
-    },
-    {
-      id: "eye-ent-rhinitis-sinusitis-c4",
-      front: "Three criteria that suggest bacterial rather than viral acute rhinosinusitis.",
-      back: "Symptoms beyond 10 days without improvement; severe onset with fever above 39 degrees C and purulent discharge for 3-4 days; or double sickening after 5-6 days.",
-    },
-    {
-      id: "eye-ent-rhinitis-sinusitis-c5",
-      front: "Antibiotic of choice and dose in acute bacterial rhinosinusitis.",
-      back: "Amoxicillin-clavulanate 625 mg three times daily for 5-10 days in adults (90/6.4 mg/kg/day in two divided doses in children); doxycycline 100 mg twice daily if penicillin allergic.",
-    },
-    {
-      id: "eye-ent-rhinitis-sinusitis-c6",
-      front: "Chandler classification of orbital complications.",
-      back: "I preseptal cellulitis, II orbital cellulitis, III subperiosteal abscess, IV orbital abscess, V cavernous sinus thrombosis - usually from ethmoid sinusitis through the lamina papyracea.",
-    },
-    {
-      id: "eye-ent-rhinitis-sinusitis-c7",
-      front: "Bedside separation of preseptal from orbital cellulitis.",
-      back: "Preseptal: normal vision, full painless eye movements, no proptosis. Orbital: proptosis, painful restricted movements, chemosis, reduced acuity and colour vision - admit.",
-    },
-    {
-      id: "eye-ent-rhinitis-sinusitis-c8",
-      front: "Rhinitis medicamentosa - cause and management.",
-      back: "Rebound congestion after more than 5-7 days of a topical decongestant such as oxymetazoline; stop the decongestant, substitute an intranasal corticosteroid and saline, and counsel about the rebound period.",
-    },
-    {
-      id: "eye-ent-rhinitis-sinusitis-c9",
-      front: "Samter triad.",
-      back: "Asthma, nasal polyposis and aspirin (NSAID) sensitivity - polyps recur readily and NSAIDs must be avoided.",
-    },
-    {
-      id: "eye-ent-rhinitis-sinusitis-c10",
-      front: "What does a unilateral nasal symptom mean?",
-      back: "In an adult, sinonasal malignancy, inverted papilloma or nasopharyngeal carcinoma until endoscopy and imaging prove otherwise; in a child, a nasal foreign body.",
-    },
-  ],
   references: [
     "ARIA (Allergic Rhinitis and its Impact on Asthma) guidelines, 2020 revision",
     "EPOS 2020: European Position Paper on Rhinosinusitis and Nasal Polyps",
@@ -2813,58 +2595,6 @@ topics.push({
       explanation:
         "Screening for retinopathy of prematurity is done at 4 weeks of chronological age or 31 weeks post-menstrual age, whichever is later, in babies born under 34 weeks or weighing under 2000 g, because this is when treatable disease first becomes detectable and before it progresses to retinal detachment. Waiting for discharge is unreliable, as babies may be discharged before or long after the critical window. Three months and six weeks are both too late for many infants and risk irreversible blindness. Restricting screening to oxygen-exposed babies misses disease, since prematurity and low birth weight are themselves the primary risk factors in Indian units.",
       difficulty: "moderate",
-    },
-  ],
-  cards: [
-    {
-      id: "eye-ent-refractive-error-c1",
-      front: "What does improvement of vision with a pinhole tell you?",
-      back: "The cause is refractive (or partly a media opacity); if there is no improvement, the problem lies in the media, retina or optic nerve and needs referral.",
-    },
-    {
-      id: "eye-ent-refractive-error-c2",
-      front: "WHO categories of visual impairment by presenting acuity in the better eye.",
-      back: "Mild worse than 6/12 to 6/18; moderate worse than 6/18 to 6/60; severe worse than 6/60 to 3/60; blindness worse than 3/60.",
-    },
-    {
-      id: "eye-ent-refractive-error-c3",
-      front: "Indian definition of blindness and when it changed.",
-      back: "Presenting visual acuity worse than 3/60 in the better eye, adopted in 2017 when NPCB was renamed NPCBVI; it replaced the earlier 6/60 threshold.",
-    },
-    {
-      id: "eye-ent-refractive-error-c4",
-      front: "Correcting lenses for the three refractive errors.",
-      back: "Myopia - concave (minus) lens; hypermetropia - convex (plus) lens; astigmatism - cylindrical lens (rigid contact lens if irregular).",
-    },
-    {
-      id: "eye-ent-refractive-error-c5",
-      front: "Presbyopic near addition by age.",
-      back: "+1.00 D at 40-45, +1.50 D at 45-50, +2.00 D at 50-55, +2.50 D at 55-60, up to +3.00 D beyond 60.",
-    },
-    {
-      id: "eye-ent-refractive-error-c6",
-      front: "Why must a child never be refracted without cycloplegia?",
-      back: "Active accommodation masks hypermetropia, producing an under-correction that perpetuates accommodative esotropia and amblyopia; use atropine or cyclopentolate.",
-    },
-    {
-      id: "eye-ent-refractive-error-c7",
-      front: "When is amblyopia treatable?",
-      back: "Best before 7-8 years while the visual system is plastic; screening at 3-5 years and at school entry exists precisely to find it in time.",
-    },
-    {
-      id: "eye-ent-refractive-error-c8",
-      front: "Year of launch and original goal of the National Programme for Control of Blindness.",
-      back: "Launched 1976 as India's first fully centrally sponsored health programme, aiming to reduce blindness prevalence from 1.4% to 0.3%; renamed NPCBVI in 2017.",
-    },
-    {
-      id: "eye-ent-refractive-error-c9",
-      front: "School Eye Screening Programme cut-off and entitlement.",
-      back: "Teachers screen with a 6/9 Snellen cut-off; children who fail are referred for refraction and receive free spectacles if they attend government or government-aided schools.",
-    },
-    {
-      id: "eye-ent-refractive-error-c10",
-      front: "Vitamin A prophylaxis schedule in India.",
-      back: "100,000 IU at 9 months with measles vaccination, then 200,000 IU every 6 months until 5 years - nine doses in all.",
     },
   ],
   references: [
@@ -3336,58 +3066,6 @@ topics.push({
       explanation:
         "A sudden shower of floaters with profound painless visual loss in a long-standing diabetic is vitreous haemorrhage from proliferative retinopathy, and it requires same-day referral because the underlying new vessels need panretinal photocoagulation and the eye may harbour a tractional detachment. Reassurance and a routine appointment both delay treatment while the neovascular process continues and traction develops. A lubricant treats surface disease and is irrelevant. Rapid intensification of glycaemic control can transiently worsen advanced retinopathy and must be done gradually and in liaison with the ophthalmologist, not as the immediate response to sight loss.",
       difficulty: "easy",
-    },
-  ],
-  cards: [
-    {
-      id: "eye-ent-cataract-dr-glaucoma-c1",
-      front: "When should cataract be referred for surgery?",
-      back: "When the opacity interferes with the patient's own daily activities - not at a fixed Snellen line; urgently if hypermature or intumescent, if the fundus cannot be seen in a diabetic, or if a child has leukocoria.",
-    },
-    {
-      id: "eye-ent-cataract-dr-glaucoma-c2",
-      front: "Bedside signs of cataract.",
-      back: "Vision not improving with pinhole, a dulled red reflex with dark opacity shadows, glare, monocular diplopia, second sight, and an obscured fundus view.",
-    },
-    {
-      id: "eye-ent-cataract-dr-glaucoma-c3",
-      front: "Diabetic retinopathy screening schedule.",
-      back: "Type 2: at diagnosis then annually. Type 1: 5 years after diagnosis then annually. Pregnancy with pre-existing diabetes: first trimester, each trimester, and up to 12 months postpartum.",
-    },
-    {
-      id: "eye-ent-cataract-dr-glaucoma-c4",
-      front: "The 4-2-1 rule.",
-      back: "Severe non-proliferative diabetic retinopathy: haemorrhages in all 4 quadrants, venous beading in 2 quadrants, or intraretinal microvascular abnormalities in 1 quadrant.",
-    },
-    {
-      id: "eye-ent-cataract-dr-glaucoma-c5",
-      front: "Treatment of diabetic macular oedema versus proliferative retinopathy.",
-      back: "Centre-involving macular oedema: intravitreal anti-VEGF (ranibizumab, bevacizumab, aflibercept); non-centre-involving: focal or grid laser. Proliferative disease: panretinal photocoagulation; vitrectomy for non-clearing haemorrhage or traction.",
-    },
-    {
-      id: "eye-ent-cataract-dr-glaucoma-c6",
-      front: "Optic disc signs of glaucoma.",
-      back: "Cup-to-disc ratio 0.6 or more, inter-eye asymmetry over 0.2, neuroretinal rim notching (ISNT rule broken), nerve fibre layer defect, disc haemorrhage, nasal shift of vessels.",
-    },
-    {
-      id: "eye-ent-cataract-dr-glaucoma-c7",
-      front: "Why does a normal intraocular pressure not exclude glaucoma?",
-      back: "About half of patients have pressures in the normal 10-21 mmHg range at any single reading - normal-tension glaucoma is common; the disc and field make the diagnosis.",
-    },
-    {
-      id: "eye-ent-cataract-dr-glaucoma-c8",
-      front: "First-line glaucoma drop and its adverse effects.",
-      back: "Latanoprost 0.005% one drop at night, lowering pressure 25-35%; causes iris and periocular darkening, eyelash lengthening and conjunctival hyperaemia.",
-    },
-    {
-      id: "eye-ent-cataract-dr-glaucoma-c9",
-      front: "Who should be screened among the relatives of a glaucoma patient?",
-      back: "All first-degree relatives from age 40, or ten years earlier than the age at which the index case was diagnosed; family history raises risk 4-10 fold.",
-    },
-    {
-      id: "eye-ent-cataract-dr-glaucoma-c10",
-      front: "Cataract surgical rate - definition and Indian target.",
-      back: "Number of cataract surgeries performed per million population per year; the national target under NPCBVI is above 6000 per million per year.",
     },
   ],
   references: [
@@ -3884,58 +3562,6 @@ topics.push({
       difficulty: "moderate",
     },
   ],
-  cards: [
-    {
-      id: "eye-ent-hearing-loss-c1",
-      front: "Which tuning fork is used and why?",
-      back: "512 Hz - 256 Hz produces tactile vibration that is felt rather than heard, and 1024 Hz decays too quickly to complete the test.",
-    },
-    {
-      id: "eye-ent-hearing-loss-c2",
-      front: "Rinne and Weber in conductive hearing loss.",
-      back: "Rinne negative in the affected ear (bone better than air, implying a gap of at least 15-20 dB) and Weber lateralised to the affected (worse) ear; absolute bone conduction is normal.",
-    },
-    {
-      id: "eye-ent-hearing-loss-c3",
-      front: "Rinne and Weber in sensorineural hearing loss.",
-      back: "Rinne positive but both conductions reduced, Weber lateralised to the better ear, and absolute bone conduction reduced compared with the examiner.",
-    },
-    {
-      id: "eye-ent-hearing-loss-c4",
-      front: "What is a false negative Rinne?",
-      back: "In a dead ear the fork on the mastoid is heard by the opposite cochlea, so bone conduction seems better; mask the good ear with a Barany box and check absolute bone conduction, which is reduced.",
-    },
-    {
-      id: "eye-ent-hearing-loss-c5",
-      front: "The 1-3-6 rule of newborn hearing screening.",
-      back: "Screening by 1 month of age, diagnostic confirmation by 3 months, and intervention including hearing aid fitting by 6 months.",
-    },
-    {
-      id: "eye-ent-hearing-loss-c6",
-      front: "WHO definition of disabling hearing loss.",
-      back: "More than 35 dB in the better hearing ear in adults, and more than 30 dB in children.",
-    },
-    {
-      id: "eye-ent-hearing-loss-c7",
-      front: "Audiogram sign of noise-induced hearing loss.",
-      back: "A sensorineural notch maximal at 4000 Hz with partial recovery at 8000 Hz, from exposure above 85 dB(A) for 8 hours a day.",
-    },
-    {
-      id: "eye-ent-hearing-loss-c8",
-      front: "Definition and treatment of sudden sensorineural hearing loss.",
-      back: "A loss of 30 dB or more across three contiguous frequencies within 72 hours; treat with prednisolone 1 mg/kg/day (max 60 mg) for 7-14 days with taper started within 72 hours, plus audiometry and MRI.",
-    },
-    {
-      id: "eye-ent-hearing-loss-c9",
-      front: "Tympanometry types.",
-      back: "A normal; As shallow (otosclerosis, ossicular fixation); Ad deep (ossicular discontinuity, flaccid drum); B flat (effusion, or perforation if canal volume is high); C negative pressure (Eustachian dysfunction).",
-    },
-    {
-      id: "eye-ent-hearing-loss-c10",
-      front: "Objectives of the National Programme for Prevention and Control of Deafness.",
-      back: "Prevent avoidable hearing loss; identify and treat ear disease early; medically rehabilitate people with deafness; strengthen inter-sectoral linkages; and build institutional capacity for ear care - launched 2006-07.",
-    },
-  ],
   references: [
     "PL Dhingra and Shruti Dhingra, Diseases of Ear, Nose and Throat and Head and Neck Surgery, 8th edition, 2021",
     "Scott-Brown's Otorhinolaryngology, Head and Neck Surgery, 8th edition, 2018",
@@ -4414,58 +4040,6 @@ topics.push({
       explanation:
         "A witnessed choking episode followed by a symptom-free interval and then persistent cough with a unilateral wheeze is the classic sequence of an inhaled foreign body, usually in the right main bronchus, and a normal radiograph is common because most organic foreign bodies are radiolucent - bronchoscopy is therefore justified on history and signs alone. Treating as asthma delays diagnosis and does not explain strictly unilateral findings. Bronchiolitis affects younger infants, is bilateral and follows a viral prodrome. Repeating the film in a month allows granulation, atelectasis, bronchiectasis and abscess formation. Antibiotics may treat a secondary pneumonia but leave the peanut in place, and the pneumonia recurs.",
       difficulty: "moderate",
-    },
-  ],
-  cards: [
-    {
-      id: "eye-ent-epistaxis-foreign-bodies-c1",
-      front: "Which arteries form the Kiesselbach plexus in Little's area?",
-      back: "Anterior ethmoidal (from ophthalmic), sphenopalatine and greater palatine (from maxillary), and the septal branch of the superior labial artery (from facial) - the source of about 90-95% of nosebleeds.",
-    },
-    {
-      id: "eye-ent-epistaxis-foreign-bodies-c2",
-      front: "Correct first aid for epistaxis (Trotter method).",
-      back: "Sit upright leaning forward, breathe through the mouth and spit out blood, pinch the soft cartilaginous part of the nose continuously for 10-15 minutes, with an ice pack to the bridge.",
-    },
-    {
-      id: "eye-ent-epistaxis-foreign-bodies-c3",
-      front: "Why must both sides of the septum never be cauterised at the same sitting?",
-      back: "Bilateral cautery devascularises the septal cartilage and can cause septal perforation; wait 4-6 weeks between sides.",
-    },
-    {
-      id: "eye-ent-epistaxis-foreign-bodies-c4",
-      front: "How long is an anterior nasal pack left, and when are antibiotics added?",
-      back: "24-48 hours; give antistaphylococcal cover such as co-amoxiclav if the pack remains beyond 48 hours, because of sinusitis and rare toxic shock syndrome.",
-    },
-    {
-      id: "eye-ent-epistaxis-foreign-bodies-c5",
-      front: "Recurrent profuse unilateral epistaxis with obstruction in an adolescent boy.",
-      back: "Juvenile nasopharyngeal angiofibroma - diagnose with contrast CT or MRI; never biopsy in the clinic because of the risk of torrential bleeding.",
-    },
-    {
-      id: "eye-ent-epistaxis-foreign-bodies-c6",
-      front: "When is ear syringing contraindicated?",
-      back: "Vegetable or organic foreign bodies (they swell), known or suspected perforation, grommet in situ, previous ear surgery, and any battery; also use body-temperature water to avoid caloric vertigo.",
-    },
-    {
-      id: "eye-ent-epistaxis-foreign-bodies-c7",
-      front: "Unilateral foul blood-stained nasal discharge in a child.",
-      back: "A retained nasal foreign body until the nose is examined properly - not sinusitis, whatever the previous antibiotic courses suggested.",
-    },
-    {
-      id: "eye-ent-epistaxis-foreign-bodies-c8",
-      front: "Three sites where oesophageal foreign bodies lodge.",
-      back: "Cricopharynx (commonest, about 15 cm from the incisors), the level of the aortic arch and left main bronchus, and the diaphragmatic hiatus; a button battery here must be removed within 2 hours.",
-    },
-    {
-      id: "eye-ent-epistaxis-foreign-bodies-c9",
-      front: "Choking first aid in an infant under 1 year versus an older child.",
-      back: "Infant: 5 back blows then 5 chest thrusts, no abdominal thrusts. Over 1 year and adults: 5 back blows then 5 abdominal thrusts. Never a blind finger sweep; start CPR if unconscious.",
-    },
-    {
-      id: "eye-ent-epistaxis-foreign-bodies-c10",
-      front: "Why does a normal chest radiograph not exclude an inhaled foreign body?",
-      back: "Most organic foreign bodies such as peanuts are radiolucent; expiratory films may show obstructive emphysema with mediastinal shift away, but a convincing history with unilateral signs justifies bronchoscopy regardless.",
     },
   ],
   references: [

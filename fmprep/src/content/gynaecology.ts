@@ -492,68 +492,6 @@ topics.push({
       difficulty: "moderate",
     },
   ],
-  cards: [
-    {
-      id: "gynaecology-abnormal-uterine-bleeding-c1",
-      front: "Expand PALM-COEIN.",
-      back: "Polyp, Adenomyosis, Leiomyoma (SM submucosal / O other), Malignancy and hyperplasia; Coagulopathy, Ovulatory dysfunction, Endometrial, Iatrogenic, Not otherwise classified.",
-    },
-    {
-      id: "gynaecology-abnormal-uterine-bleeding-c2",
-      front: "FIGO 2018 normal menstrual parameters.",
-      back: "Frequency 24-38 days, regularity within 7-9 days variation, duration 8 days or less, volume as judged by the woman.",
-    },
-    {
-      id: "gynaecology-abnormal-uterine-bleeding-c3",
-      front: "Which terms does FIGO 2018 ask you to abandon?",
-      back: "Menorrhagia, metrorrhagia, menometrorrhagia, oligomenorrhoea, polymenorrhoea and dysfunctional uterine bleeding.",
-    },
-    {
-      id: "gynaecology-abnormal-uterine-bleeding-c4",
-      front: "Indications for endometrial biopsy in AUB.",
-      back: "Age 45 or over; under 45 with persistent AUB plus unopposed oestrogen risk (obesity, PCOS, anovulation); failed medical therapy; postmenopausal bleeding with endometrium over 4 mm; Lynch syndrome.",
-    },
-    {
-      id: "gynaecology-abnormal-uterine-bleeding-c5",
-      front: "Endometrial thickness cut-off in postmenopausal bleeding.",
-      back: "4 mm or less makes carcinoma very unlikely; above 4 mm mandates endometrial sampling.",
-    },
-    {
-      id: "gynaecology-abnormal-uterine-bleeding-c6",
-      front: "First-line medical treatment for heavy menstrual bleeding.",
-      back: "LNG-IUS 52 mg (20 microgram/24 h), reducing measured loss by 70-95%, provided the cavity is not distorted.",
-    },
-    {
-      id: "gynaecology-abnormal-uterine-bleeding-c7",
-      front: "Tranexamic acid dose and effect in heavy menstrual bleeding.",
-      back: "1 g PO three to four times a day for the first 3-5 bleeding days; reduces loss by 40-50%. Avoid in active thromboembolic disease.",
-    },
-    {
-      id: "gynaecology-abnormal-uterine-bleeding-c8",
-      front: "Correct norethisterone regimen for ovulatory heavy menstrual bleeding.",
-      back: "5 mg PO three times a day from day 5 to day 26; the luteal-phase-only (day 19-26) regimen does not work.",
-    },
-    {
-      id: "gynaecology-abnormal-uterine-bleeding-c9",
-      front: "What proportion of women with heavy menstrual bleeding have an inherited bleeding disorder?",
-      back: "About 13%, most commonly von Willebrand disease - suspect it when bleeding has been heavy since menarche.",
-    },
-    {
-      id: "gynaecology-abnormal-uterine-bleeding-c10",
-      front: "Risk of endometrial carcinoma in postmenopausal bleeding.",
-      back: "About 10%; the commonest cause overall is genital tract atrophy, but cancer must be excluded first.",
-    },
-    {
-      id: "gynaecology-abnormal-uterine-bleeding-c11",
-      front: "Which fibroids reliably cause heavy menstrual bleeding?",
-      back: "Submucosal ones - FIGO types 0, 1 and 2 - which is why the L category is split into L-SM and L-O.",
-    },
-    {
-      id: "gynaecology-abnormal-uterine-bleeding-c12",
-      front: "First test in any reproductive-age woman with abnormal bleeding.",
-      back: "Urine pregnancy test - to exclude miscarriage, ectopic and gestational trophoblastic disease.",
-    },
-  ],
   references: [
     "FIGO Systems 1 and 2 for abnormal uterine bleeding in the reproductive years, Munro et al, International Journal of Gynecology and Obstetrics, 2018 revision",
     "NICE NG88 Heavy Menstrual Bleeding: Assessment and Management, 2018 (updated 2021)",
@@ -1118,68 +1056,6 @@ topics.push({
       difficulty: "hard",
     },
   ],
-  cards: [
-    {
-      id: "gynaecology-contraception-c1",
-      front: "WHO MEC categories 1 to 4 in one line each.",
-      back: "1 no restriction; 2 advantages outweigh risks; 3 risks usually outweigh advantages (avoid unless nothing else); 4 unacceptable health risk (do not use). Simplified: 1-2 use, 3-4 do not use.",
-    },
-    {
-      id: "gynaecology-contraception-c2",
-      front: "Category 4 conditions for combined hormonal contraception (name six).",
-      back: "Migraine with aura; age 35 or more with 15 or more cigarettes a day; BP 160/100 mmHg or more; current or past VTE; current breast cancer; breastfeeding under 6 weeks postpartum. (Also stroke, IHD, severe cirrhosis, thrombogenic mutations.)",
-    },
-    {
-      id: "gynaecology-contraception-c3",
-      front: "Missed combined pill: the two-line rule.",
-      back: "One pill missed (under 48 h): take it, continue, no back-up. Two or more (48 h or more): take the latest, continue, condoms 7 days; week 1 add emergency contraception if unprotected sex in last 5 days; week 3 skip the hormone-free interval.",
-    },
-    {
-      id: "gynaecology-contraception-c4",
-      front: "Antara (DMPA) dose, interval and grace period.",
-      back: "150 mg IM every 3 months; grace period 2 weeks early to 4 weeks late; expect spotting early and amenorrhoea in about half at one year; fertility returns after 9-12 months.",
-    },
-    {
-      id: "gynaecology-contraception-c5",
-      front: "Chhaya (centchroman) regimen.",
-      back: "Ormeloxifene 30 mg twice weekly for 12 weeks, then once weekly on the same day; non-steroidal, oestrogen-free SERM. Avoid in PCOS, cervical hyperplasia, liver or kidney disease.",
-    },
-    {
-      id: "gynaecology-contraception-c6",
-      front: "Duration of Cu-IUCD 380A, Cu-IUCD 375 and LNG-IUS 52 mg.",
-      back: "380A ten years, 375 five years, LNG-IUS 52 mg five to eight years.",
-    },
-    {
-      id: "gynaecology-contraception-c7",
-      front: "Postpartum IUCD timing rules.",
-      back: "Within 10 minutes of placental delivery or up to 48 hours (PPIUCD), or from 4-6 weeks. Between 48 hours and 4 weeks is MEC Category 3.",
-    },
-    {
-      id: "gynaecology-contraception-c8",
-      front: "Most effective emergency contraception.",
-      back: "Copper IUCD within 5 days of unprotected intercourse, failure under 0.1%, and it continues as 10-year contraception. Levonorgestrel 1.5 mg is the oral standard within 72-120 hours.",
-    },
-    {
-      id: "gynaecology-contraception-c9",
-      front: "Three conditions for the lactational amenorrhoea method.",
-      back: "Exclusive or near-exclusive breastfeeding, complete amenorrhoea, and less than 6 months postpartum - all three, or the method fails.",
-    },
-    {
-      id: "gynaecology-contraception-c10",
-      front: "Government of India sterilisation eligibility.",
-      back: "Ever-married, woman aged 22-49 years, at least one child over one year old (unless medically indicated), written informed consent; spouse consent NOT required and consent may be withdrawn any time.",
-    },
-    {
-      id: "gynaecology-contraception-c11",
-      front: "Post-vasectomy advice.",
-      back: "Not effective immediately: use another method for 3 months or 20 ejaculations and confirm azoospermia on semen analysis. Failure rate about 0.15%.",
-    },
-    {
-      id: "gynaecology-contraception-c12",
-      front: "Category 4 conditions for IUCD insertion (name five).",
-      back: "Pregnancy; puerperal sepsis; immediate post-septic abortion; unexplained vaginal bleeding before evaluation; current PID, purulent cervicitis or gonococcal/chlamydial infection; cervical or endometrial cancer; distorted cavity; pelvic tuberculosis; GTD with raised hCG.",
-    },
-  ],
   references: [
     "WHO Medical Eligibility Criteria for Contraceptive Use, 5th edition, 2015, with 2024 update",
     "WHO Selected Practice Recommendations for Contraceptive Use, 3rd edition, 2016",
@@ -1666,68 +1542,6 @@ topics.push({
       difficulty: "hard",
     },
   ],
-  cards: [
-    {
-      id: "gynaecology-pcos-c1",
-      front: "Rotterdam criteria for PCOS.",
-      back: "Two of three: oligo/anovulation; clinical or biochemical hyperandrogenism; polycystic ovarian morphology - after excluding thyroid disease, hyperprolactinaemia, non-classical CAH, Cushing and androgen-secreting tumours.",
-    },
-    {
-      id: "gynaecology-pcos-c2",
-      front: "Current ultrasound definition of polycystic ovarian morphology.",
-      back: "20 or more follicles of 2-9 mm in either ovary and/or ovarian volume 10 mL or more, on a transducer of 8 MHz or higher.",
-    },
-    {
-      id: "gynaecology-pcos-c3",
-      front: "When must ultrasound NOT be used to diagnose PCOS?",
-      back: "Within 8 years of menarche - multifollicular ovaries are normal in adolescence; diagnose on irregular cycles plus hyperandrogenism instead.",
-    },
-    {
-      id: "gynaecology-pcos-c4",
-      front: "Three exclusion tests before labelling PCOS.",
-      back: "TSH, prolactin, and early-morning follicular-phase 17-hydroxyprogesterone (add dexamethasone suppression and testosterone/DHEAS if virilised).",
-    },
-    {
-      id: "gynaecology-pcos-c5",
-      front: "First-line ovulation induction in PCOS.",
-      back: "Letrozole 2.5 mg on days 3-7, escalating to 5 and 7.5 mg - better ovulation and live-birth rates than clomiphene, especially in obese women.",
-    },
-    {
-      id: "gynaecology-pcos-c6",
-      front: "How much weight loss restores ovulation in PCOS?",
-      back: "5-10% of body weight - it restores ovulation in most women and improves insulin resistance, hirsutism and pregnancy rates.",
-    },
-    {
-      id: "gynaecology-pcos-c7",
-      front: "Metabolic screening schedule in PCOS.",
-      back: "75 g oral glucose tolerance test at diagnosis and every 1-3 years, plus fasting lipids, blood pressure and weight; screen for depression, anxiety and sleep apnoea.",
-    },
-    {
-      id: "gynaecology-pcos-c8",
-      front: "Endometrial cancer risk in PCOS and how to reduce it.",
-      back: "2-6 fold increased from chronic unopposed oestrogen. Reduce with the combined pill, cyclical progestogen for 10-14 days every 2-3 months, or an LNG-IUS.",
-    },
-    {
-      id: "gynaecology-pcos-c9",
-      front: "Ferriman-Gallwey threshold for hirsutism in South Asian women.",
-      back: "A modified Ferriman-Gallwey score of 4-6 or more across nine body areas is significant; ethnic cut-offs differ from those used in white populations.",
-    },
-    {
-      id: "gynaecology-pcos-c10",
-      front: "Why is spironolactone given only with contraception?",
-      back: "It is an antiandrogen that can feminise a male fetus; reliable contraception is mandatory throughout treatment, and potassium should be checked.",
-    },
-    {
-      id: "gynaecology-pcos-c11",
-      front: "Which androgen values demand imaging for a tumour?",
-      back: "Total testosterone above 150 ng/dL (5.2 nmol/L) or DHEAS more than twice the upper limit of normal - image the ovaries and adrenals.",
-    },
-    {
-      id: "gynaecology-pcos-c12",
-      front: "Why is the LH to FSH ratio not used to diagnose PCOS?",
-      back: "It is neither sensitive nor specific, is not a Rotterdam criterion, and varies with cycle day, BMI and assay - ordering it is a common error.",
-    },
-  ],
   references: [
     "International Evidence-based Guideline for the Assessment and Management of Polycystic Ovary Syndrome, Monash University and ESHRE, 2023",
     "Rotterdam ESHRE/ASRM-Sponsored PCOS Consensus Workshop Group criteria, 2003",
@@ -2195,58 +2009,6 @@ topics.push({
       explanation:
         "Failure to respond within 72 hours and a 7 cm tubo-ovarian abscess are both admission criteria; she needs intravenous antibiotics and image-guided percutaneous or transvaginal drainage, since abscesses above about 5-7 cm respond poorly to antibiotics alone. Continuing the identical failed oral regimen ignores the defined 72-hour review point and risks rupture and generalised peritonitis. Substituting oral ciprofloxacin at home neither addresses the failure of the outpatient route nor drains the collection, and fluoroquinolone monotherapy has poor anaerobic cover and high gonococcal resistance in India. Hysterectomy with bilateral salpingo-oophorectomy in a 30-year-old is reserved for rupture with life-threatening sepsis, not for a first attempt at controlling an abscess. Inserting an intrauterine device during active pelvic infection is Category 4 and would worsen the infection.",
       difficulty: "hard",
-    },
-  ],
-  cards: [
-    {
-      id: "gynaecology-vaginal-discharge-pid-c1",
-      front: "State the four Amsel criteria.",
-      back: "Thin homogeneous discharge; vaginal pH above 4.5; positive whiff test with 10% KOH; clue cells over 20% of epithelial cells. Three of four diagnose bacterial vaginosis.",
-    },
-    {
-      id: "gynaecology-vaginal-discharge-pid-c2",
-      front: "Which vaginitis has a normal vaginal pH?",
-      back: "Vulvovaginal candidiasis - pH stays 4.0-4.5. Bacterial vaginosis and trichomoniasis both raise the pH above 4.5.",
-    },
-    {
-      id: "gynaecology-vaginal-discharge-pid-c3",
-      front: "CDC minimum criteria for starting treatment for pelvic inflammatory disease.",
-      back: "Sexually active woman with pelvic or lower abdominal pain and no other cause, plus any one of cervical motion tenderness, uterine tenderness or adnexal tenderness.",
-    },
-    {
-      id: "gynaecology-vaginal-discharge-pid-c4",
-      front: "Outpatient regimen for pelvic inflammatory disease.",
-      back: "Ceftriaxone 500 mg IM stat, plus doxycycline 100 mg PO BD for 14 days, plus metronidazole 500 mg PO BD for 14 days.",
-    },
-    {
-      id: "gynaecology-vaginal-discharge-pid-c5",
-      front: "Which NACO kit is used for pelvic inflammatory disease, and what does it contain?",
-      back: "Kit 6, yellow - cefixime 400 mg single dose plus metronidazole 400 mg BD and doxycycline 100 mg BD for 14 days.",
-    },
-    {
-      id: "gynaecology-vaginal-discharge-pid-c6",
-      front: "Risk of infertility after pelvic inflammatory disease.",
-      back: "About 12% after one episode, 25% after two and 50% after three; ectopic pregnancy risk rises six-fold to ten-fold, and about 30% get chronic pelvic pain.",
-    },
-    {
-      id: "gynaecology-vaginal-discharge-pid-c7",
-      front: "What is Fitz-Hugh-Curtis syndrome?",
-      back: "Perihepatitis complicating pelvic inflammatory disease - right upper quadrant pleuritic pain with violin-string adhesions between the liver capsule and the anterior abdominal wall.",
-    },
-    {
-      id: "gynaecology-vaginal-discharge-pid-c8",
-      front: "Which causes of vaginal discharge require the partner to be treated?",
-      back: "Trichomoniasis, chlamydia, gonorrhoea and pelvic inflammatory disease. Not bacterial vaginosis and not candidiasis.",
-    },
-    {
-      id: "gynaecology-vaginal-discharge-pid-c9",
-      front: "WHO MEC category for IUD insertion in current purulent cervicitis or PID.",
-      back: "Category 4 for initiation - treat first, insert later. If it occurs with a device already in situ it is Category 2 for continuation.",
-    },
-    {
-      id: "gynaecology-vaginal-discharge-pid-c10",
-      front: "Name three limitations of syndromic management of vaginal discharge.",
-      back: "Over-treatment of physiological and candidal discharge; failure to detect asymptomatic chlamydial infection; no surveillance of antimicrobial resistance.",
     },
   ],
   references: [
@@ -2739,68 +2501,6 @@ topics.push({
       explanation:
         "The HSG appearances and hypomenorrhoea strongly suggest genital tuberculosis, but proof is required before committing a woman to six months of antitubercular therapy, and that proof is a premenstrual endometrial aspirate examined by CBNAAT, mycobacterial culture and histopathology for granulomas. Starting treatment on a Mantoux result is precisely the widespread malpractice the guidelines condemn, because in India a positive tuberculin test reflects near-universal exposure and not active genital disease. Tubal reconstructive surgery in tuberculous tubes gives very poor pregnancy rates with a high ectopic risk and is not recommended. Repeating the HSG adds radiation and risks reactivating disease without changing the diagnosis. Reassurance ignores a treatable infection and wastes the woman's remaining reproductive time.",
       difficulty: "hard",
-    },
-  ],
-  cards: [
-    {
-      id: "gynaecology-infertility-workup-c1",
-      front: "Define infertility and state when to start investigating early.",
-      back: "Failure to conceive after 12 months of regular unprotected intercourse; investigate at 6 months if she is 35 or older, and at once with amenorrhoea, known tubal disease, previous pelvic infection or surgery, or a known male factor.",
-    },
-    {
-      id: "gynaecology-infertility-workup-c2",
-      front: "Approximate distribution of causes of infertility.",
-      back: "Male factor 30-40%, ovulatory 25-30%, tubal and peritoneal 25-35%, uterine and cervical 5-10%, unexplained 10-15%; both partners contribute in 20-30%.",
-    },
-    {
-      id: "gynaecology-infertility-workup-c3",
-      front: "WHO 6th edition (2021) lower reference limits for semen.",
-      back: "Volume 1.4 mL, concentration 16 million/mL, total sperm 39 million, total motility 42%, progressive motility 30%, vitality 54%, normal forms 4%.",
-    },
-    {
-      id: "gynaecology-infertility-workup-c4",
-      front: "When is mid-luteal progesterone drawn, and what value confirms ovulation?",
-      back: "Seven days before the expected period (day 21 of a 28-day cycle, day 28 of a 35-day cycle); above 3 ng/mL or 10 nmol/L confirms ovulation.",
-    },
-    {
-      id: "gynaecology-infertility-workup-c5",
-      front: "When in the cycle is hysterosalpingography performed, and why?",
-      back: "Day 6-11, after bleeding has stopped and before ovulation, so that an early pregnancy is not irradiated; give doxycycline cover if there is a history of pelvic inflammatory disease.",
-    },
-    {
-      id: "gynaecology-infertility-workup-c6",
-      front: "Why is an abnormal semen analysis repeated after three months?",
-      back: "Spermatogenesis takes about 74 days plus epididymal transit, so a fever, illness or drug in the preceding cycle can produce a transient abnormality.",
-    },
-    {
-      id: "gynaecology-infertility-workup-c7",
-      front: "WHO groups of anovulation.",
-      back: "Group I hypogonadotropic hypogonadal (hypothalamic); Group II normogonadotropic normo-oestrogenic, about 85% and mostly PCOS; Group III hypergonadotropic hypo-oestrogenic (ovarian insufficiency); plus hyperprolactinaemic anovulation.",
-    },
-    {
-      id: "gynaecology-infertility-workup-c8",
-      front: "First-line ovulation induction in PCOS.",
-      back: "Letrozole 2.5-5 mg on days 3-7, which beats clomiphene citrate 50-150 mg on days 2-6 for live birth; metformin is an adjunct only.",
-    },
-    {
-      id: "gynaecology-infertility-workup-c9",
-      front: "How is genital tuberculosis proved in an infertile woman?",
-      back: "Premenstrual endometrial aspirate for AFB culture, CBNAAT and histology showing granulomas - never on a positive Mantoux test or IGRA alone.",
-    },
-    {
-      id: "gynaecology-infertility-workup-c10",
-      front: "What do AMH and antral follicle count actually tell you?",
-      back: "They predict the ovarian response to stimulation, not the chance of natural conception; a low value means refer early, not that she cannot conceive.",
-    },
-    {
-      id: "gynaecology-infertility-workup-c11",
-      front: "Which laws govern assisted reproduction in India?",
-      back: "The Assisted Reproductive Technology (Regulation) Act 2021 and the Surrogacy (Regulation) Act 2021, with sex selection prohibited under the PC-PNDT Act 1994.",
-    },
-    {
-      id: "gynaecology-infertility-workup-c12",
-      front: "Advice on coital frequency for a couple trying to conceive.",
-      back: "Intercourse every 2-3 days throughout the cycle rather than calendar timing, and avoid spermicidal vaginal lubricants.",
     },
   ],
   references: [
@@ -3303,68 +3003,6 @@ topics.push({
       difficulty: "hard",
     },
   ],
-  cards: [
-    {
-      id: "gynaecology-dysmenorrhoea-endometriosis-fibroids-c1",
-      front: "Mechanism of primary dysmenorrhoea.",
-      back: "Progesterone withdrawal releases arachidonic acid; prostaglandin F2 alpha and E2 cause dysrhythmic myometrial contractions with intrauterine pressure above 150-200 mmHg and uterine ischaemia.",
-    },
-    {
-      id: "gynaecology-dysmenorrhoea-endometriosis-fibroids-c2",
-      front: "How should an NSAID be given for dysmenorrhoea?",
-      back: "Start before or at the very onset of pain and continue regularly for 2-3 days - mefenamic acid 500 mg TDS, ibuprofen 400 mg TDS, or naproxen 500 mg then 250 mg 8-hourly. Not as required.",
-    },
-    {
-      id: "gynaecology-dysmenorrhoea-endometriosis-fibroids-c3",
-      front: "Three history features that make dysmenorrhoea secondary.",
-      back: "Onset years after menarche (usually after 25); pain beginning days before the flow and persisting after it; progressive worsening with deep dyspareunia or infertility.",
-    },
-    {
-      id: "gynaecology-dysmenorrhoea-endometriosis-fibroids-c4",
-      front: "Define endometriosis and give the main theory of origin.",
-      back: "Functioning endometrial glands and stroma outside the uterine cavity; Sampson's retrograde menstruation, supplemented by coelomic metaplasia and lymphovascular spread.",
-    },
-    {
-      id: "gynaecology-dysmenorrhoea-endometriosis-fibroids-c5",
-      front: "What is the role of CA-125 in endometriosis?",
-      back: "None for diagnosis or exclusion - it is neither sensitive nor specific and rises in PID, fibroids, adenomyosis, pregnancy and ovarian cancer.",
-    },
-    {
-      id: "gynaecology-dysmenorrhoea-endometriosis-fibroids-c6",
-      front: "First-line medical treatment of endometriosis-associated pain.",
-      back: "NSAID plus a hormonal method: continuous combined oral contraceptive, dienogest 2 mg daily, medroxyprogesterone acetate, or the LNG-IUS.",
-    },
-    {
-      id: "gynaecology-dysmenorrhoea-endometriosis-fibroids-c7",
-      front: "Why must ovarian suppression not be used for endometriosis-associated infertility?",
-      back: "It prevents ovulation, so it cannot improve conception and only wastes reproductive time; the options are surgery or assisted reproduction.",
-    },
-    {
-      id: "gynaecology-dysmenorrhoea-endometriosis-fibroids-c8",
-      front: "Endometrioma: excise or drain?",
-      back: "Excise the capsule - drainage alone recurs in over 80% - but counsel that excision removes normal cortex and lowers AMH.",
-    },
-    {
-      id: "gynaecology-dysmenorrhoea-endometriosis-fibroids-c9",
-      front: "FIGO leiomyoma types 0 to 8.",
-      back: "0-2 submucosal (0 intracavitary pedunculated, 1 under 50% intramural, 2 at least 50%); 3-5 intramural or transmural; 6-7 subserosal; 8 other, such as cervical or parasitic.",
-    },
-    {
-      id: "gynaecology-dysmenorrhoea-endometriosis-fibroids-c10",
-      front: "WHO MEC category for an IUD in a woman with fibroids.",
-      back: "Category 1 if the uterine cavity is not distorted; Category 4 if the cavity is distorted. The anatomy, not the fibroid itself, decides.",
-    },
-    {
-      id: "gynaecology-dysmenorrhoea-endometriosis-fibroids-c11",
-      front: "Red degeneration of a fibroid - when, how and what to do.",
-      back: "Second trimester of pregnancy; acute localised pain, low-grade fever and vomiting; treat with analgesia, hydration and rest, never with surgery.",
-    },
-    {
-      id: "gynaecology-dysmenorrhoea-endometriosis-fibroids-c12",
-      front: "How does adenomyosis differ from a fibroid on examination?",
-      back: "Adenomyosis gives a symmetrically bulky, globular, tender uterus in a parous woman; a fibroid gives an irregular, firm, non-tender enlargement that moves with the cervix.",
-    },
-  ],
   references: [
     "ESHRE Guideline on the Management of Women with Endometriosis, 2022",
     "NICE NG73 Endometriosis: Diagnosis and Management, 2017 (updated 2024)",
@@ -3813,58 +3451,6 @@ topics.push({
       explanation:
         "After the menopause the squamocolumnar junction recedes into the endocervical canal and cannot be visualised, so VIA cannot be interpreted and gives unacceptable false negatives; cytology, which samples the canal with an endocervical brush, or an HPV DNA test is the appropriate choice in this woman. Saying VIA is used at all ages misstates the programme, which relies on the transformation zone being visible. Declining to screen her is wrong because screening continues to 65 years, and a woman never screened before is precisely the woman in whom screening yields most. Restricting screening to the symptomatic abolishes the concept of screening, which is to find disease before symptoms appear. Endometrial biopsy investigates the endometrium in a woman with postmenopausal bleeding and has no role in cervical screening at all.",
       difficulty: "moderate",
-    },
-  ],
-  cards: [
-    {
-      id: "gynaecology-cervical-cancer-screening-c1",
-      front: "What makes a VIA test positive?",
-      back: "A dense, opaque, well-defined acetowhite lesion in the transformation zone touching the squamocolumnar junction, read one minute after applying 5% acetic acid.",
-    },
-    {
-      id: "gynaecology-cervical-cancer-screening-c2",
-      front: "Indian national screening recommendation for cervical cancer.",
-      back: "VIA for all women aged 30-65 years once every 5 years, delivered through Ayushman Bharat Health and Wellness Centres under the NP-NCD (MoHFW Operational Framework 2016).",
-    },
-    {
-      id: "gynaecology-cervical-cancer-screening-c3",
-      front: "WHO 90-70-90 targets for cervical cancer elimination by 2030.",
-      back: "90% of girls fully vaccinated by age 15; 70% of women screened with a high-performance test at 35 and 45; 90% of women with cervical disease treated. Elimination is incidence below 4 per 100,000.",
-    },
-    {
-      id: "gynaecology-cervical-cancer-screening-c4",
-      front: "Sensitivity of VIA, cytology and HPV DNA for CIN2+.",
-      back: "VIA 60-70%, single cytology 50-60%, HPV DNA 90-95% with a negative predictive value over 99%.",
-    },
-    {
-      id: "gynaecology-cervical-cancer-screening-c5",
-      front: "When is a cervical lesion eligible for thermal ablation?",
-      back: "Type 1 transformation zone with the entire squamocolumnar junction visible, lesion under 75% of the ectocervix and not entering the canal, and no suspicion of invasive or glandular disease. Otherwise LLETZ.",
-    },
-    {
-      id: "gynaecology-cervical-cancer-screening-c6",
-      front: "HPV vaccine schedule by age.",
-      back: "Two doses at 0 and 6 months for 9-14 years; three doses at 0, 1-2 and 6 months from 15 years and in the immunocompromised. WHO SAGE 2022 allows a single dose as an alternative at 9-20 years.",
-    },
-    {
-      id: "gynaecology-cervical-cancer-screening-c7",
-      front: "When does cervical screening stop?",
-      back: "At 65 years after two consecutive negative screens with no history of CIN2+, and after total hysterectomy for benign disease. It continues after subtotal hysterectomy and in vaccinated women.",
-    },
-    {
-      id: "gynaecology-cervical-cancer-screening-c8",
-      front: "Obstetric risk after LLETZ.",
-      back: "Increased preterm birth and preterm prelabour rupture of membranes, rising with cone depth over 10-15 mm and with repeat excision - so take the smallest adequate specimen in a young woman.",
-    },
-    {
-      id: "gynaecology-cervical-cancer-screening-c9",
-      front: "Screening in women living with HIV.",
-      back: "Start at 25 years, repeat every 3-5 years with a high-performance test, ensure antiretroviral therapy; higher persistence and about double the treatment failure rate.",
-    },
-    {
-      id: "gynaecology-cervical-cancer-screening-c10",
-      front: "Test of cure after treatment of CIN.",
-      back: "HPV test at 12 months - HPV clearance predicts cure better than cytology; persistent positivity means repeat colposcopy.",
     },
   ],
   references: [
@@ -4400,68 +3986,6 @@ topics.push({
       explanation:
         "Unscheduled bleeding is common in the first six months of continuous combined therapy but new bleeding after 18 months of an established bleed-free regimen must be treated as postmenopausal bleeding and investigated with transvaginal ultrasound and endometrial sampling to exclude hyperplasia and carcinoma. Reassurance is only appropriate within those first six months, and offering it here is precisely how an endometrial cancer is missed. Raising the progestogen dose treats a presumed hormonal cause without ever excluding malignancy, and buys six months of delay. Simply stopping the therapy removes the symptom control and still leaves the endometrium uninvestigated. Switching to a sequential regimen deliberately reintroduces bleeding, which makes any future assessment harder and again postpones the diagnosis.",
       difficulty: "moderate",
-    },
-  ],
-  cards: [
-    {
-      id: "gynaecology-menopause-hormone-therapy-c1",
-      front: "Define menopause and give the mean age in Indian women.",
-      back: "Permanent cessation of menstruation from loss of ovarian follicular activity, diagnosed retrospectively after 12 consecutive months of amenorrhoea with no other cause; mean age 46-47 years in India, about 51 in the West.",
-    },
-    {
-      id: "gynaecology-menopause-hormone-therapy-c2",
-      front: "When is an FSH needed to diagnose menopause?",
-      back: "Never in a symptomatic woman over 45 - the diagnosis is clinical. Measure it at 40-45 years with symptoms, under 40 for suspected POI (two values above 25-40 IU/L, 4-6 weeks apart), and when there is no menstrual marker.",
-    },
-    {
-      id: "gynaecology-menopause-hormone-therapy-c3",
-      front: "What is the window of opportunity for MHT?",
-      back: "Start under 60 years of age or within 10 years of the menopause; outside that window coronary and stroke risk rise and the benefit-risk balance turns unfavourable.",
-    },
-    {
-      id: "gynaecology-menopause-hormone-therapy-c4",
-      front: "Sequential versus continuous combined MHT - who gets which?",
-      back: "Sequential (progestogen 12-14 days a month, withdrawal bleed) in the perimenopause and within 12 months of the last period; continuous combined and bleed-free once more than 12 months postmenopausal.",
-    },
-    {
-      id: "gynaecology-menopause-hormone-therapy-c5",
-      front: "Why choose transdermal over oral oestrogen?",
-      back: "It avoids first-pass hepatic metabolism, so it does not raise VTE risk and does not raise stroke risk at low dose - preferred in obesity, migraine, hypertension, hypertriglyceridaemia and gallbladder disease.",
-    },
-    {
-      id: "gynaecology-menopause-hormone-therapy-c6",
-      front: "Absolute risk of breast cancer with combined MHT.",
-      back: "About 1 extra case per 1000 women per year of use beyond 5 years, returning towards baseline after stopping; oestrogen-alone therapy in the WHI showed no increase.",
-    },
-    {
-      id: "gynaecology-menopause-hormone-therapy-c7",
-      front: "Treatment of genitourinary syndrome of menopause.",
-      back: "Moisturisers and lubricants, then local vaginal oestrogen (estriol 0.5-1 mg cream or 10 microgram estradiol pessary) daily for 2 weeks then twice weekly - no progestogen needed, continue indefinitely.",
-    },
-    {
-      id: "gynaecology-menopause-hormone-therapy-c8",
-      front: "Non-hormonal drugs for hot flushes, with the tamoxifen caveat.",
-      back: "SSRIs and SNRIs reduce flushes by 40-60% - venlafaxine 37.5-75 mg, escitalopram, paroxetine 7.5-20 mg - but paroxetine and fluoxetine inhibit CYP2D6 and must be avoided with tamoxifen. Gabapentin 300-900 mg at night for night sweats.",
-    },
-    {
-      id: "gynaecology-menopause-hormone-therapy-c9",
-      front: "How long is contraception needed around the menopause?",
-      back: "12 months after the last period if over 50, 24 months if under 50. MHT is not a contraceptive.",
-    },
-    {
-      id: "gynaecology-menopause-hormone-therapy-c10",
-      front: "Premature ovarian insufficiency - definition and duration of treatment.",
-      back: "Ovarian failure before 40 years with amenorrhoea 4 months or more and two raised FSH values; hormone replacement at higher doses until at least age 51, plus karyotype, FMR1, autoantibodies and DXA.",
-    },
-    {
-      id: "gynaecology-menopause-hormone-therapy-c11",
-      front: "Bone loss after menopause and the diagnostic threshold for osteoporosis.",
-      back: "2-5% of trabecular bone per year for 5-7 years, about 20% in a decade; osteoporosis is a DXA T score of -2.5 or below, with FRAX used where DXA is unavailable.",
-    },
-    {
-      id: "gynaecology-menopause-hormone-therapy-c12",
-      front: "Bleeding on continuous combined MHT - when is it a red flag?",
-      back: "Unscheduled bleeding in the first 6 months is expected; new or persistent bleeding after that must be investigated with transvaginal ultrasound and endometrial sampling.",
     },
   ],
   references: [
@@ -5500,68 +5024,6 @@ topics.push({
       explanation:
         "Colpocleisis is the obliterative operation designed for exactly this woman - frail, elderly, with advanced prolapse, failed pessary management and no wish to retain coital function. It is short, can be performed under regional or local anaesthesia, succeeds in over 90 per cent, and the prior normal cytology and endometrial assessment satisfy the requirement to exclude cervical and uterine pathology before the cervix becomes inaccessible; she must be counselled that it is irreversible, that coitus will no longer be possible, and that stress incontinence may be unmasked. Sacrocolpopexy is the most durable operation for vault prolapse but is also the most morbid, needing general anaesthesia, a longer procedure and a longer recovery, which her anaesthetist has advised against. A transvaginal mesh kit is restricted to research settings by NICE NG123 and is not an option. Anterior colporrhaphy alone treats one compartment and ignores the apex, so it would fail promptly in stage IV disease. A Manchester repair is a uterus-conserving operation for a younger woman with cervical elongation, not for a frail 82-year-old with complete eversion.",
       difficulty: "moderate",
-    },
-  ],
-  cards: [
-    {
-      id: "gynaecology-uterine-prolapse-c1",
-      front: "Name the primary (true) supports of the uterus.",
-      back: "The pelvic diaphragm - levator ani (pubococcygeus with pubovaginalis and pubourethralis, puborectalis, iliococcygeus) and coccygeus with their fascia - plus the perineal body and the perineal membrane or urogenital diaphragm. The levator ani is the active, weight-bearing support: it keeps the levator plate horizontal and the genital hiatus closed.",
-    },
-    {
-      id: "gynaecology-uterine-prolapse-c2",
-      front: "Which structures are only weak or secondary supports, and what does the round ligament actually do?",
-      back: "The round ligament, the broad ligament and the uterovesical and rectouterine peritoneal folds. The round ligament maintains anteversion, not elevation - shortening it never cured prolapse; the broad ligament is a peritoneal drape with no supporting function. Calling either a support of the uterus is the classic examiner trap.",
-    },
-    {
-      id: "gynaecology-uterine-prolapse-c3",
-      front: "Cardinal (transverse cervical, Mackenrodt) ligament: attachments, contents and function.",
-      back: "From the lateral supravaginal cervix and upper vagina to the lateral pelvic wall over the obturator fascia; forms the base of the broad ligament; carries the uterine vessels and, in its upper part, the ureter. It is the strongest mechanical suspension of the cervix. Failure gives uterine descent and post-hysterectomy vault prolapse; it is the ligament shortened and crossed in a Manchester repair.",
-    },
-    {
-      id: "gynaecology-uterine-prolapse-c4",
-      front: "Uterosacral ligament: attachments and function.",
-      back: "From the posterolateral supravaginal cervix and upper vagina, around the rectum, to the presacral fascia at S2-S4. It pulls the cervix backwards and upwards over the levator plate, maintaining anteversion and anteflexion so the uterus acts as a flap valve. Failure gives apical descent and enterocele; it is the ligament used in McCall culdoplasty and high uterosacral suspension.",
-    },
-    {
-      id: "gynaecology-uterine-prolapse-c5",
-      front: "DeLancey's three levels of vaginal support and the prolapse each failure produces.",
-      back: "Level I - apical suspension by the uterosacral-cardinal complex; failure gives uterine or vault prolapse and enterocele. Level II - lateral attachment of the mid-vagina to the arcus tendineus fasciae pelvis via the pubocervical and rectovaginal fascia; failure gives cystocele and rectocele. Level III - distal fusion to the perineal body, perineal membrane and levator ani; failure gives urethrocele and a deficient perineum.",
-    },
-    {
-      id: "gynaecology-uterine-prolapse-c6",
-      front: "State the 'water under the bridge' relation and why it matters.",
-      back: "The ureter passes beneath the uterine artery about 1.5 to 2 cm lateral to the supravaginal cervix, inside the upper cardinal ligament. It is therefore the structure most at risk when the uterine pedicle is clamped at hysterectomy, and it lies only 2 to 3 cm lateral to the uterosacral ligament at the ischial spine - hence cystoscopy after high uterosacral suspension.",
-    },
-    {
-      id: "gynaecology-uterine-prolapse-c7",
-      front: "The old degrees of uterine descent, and the definition of procidentia.",
-      back: "First degree - cervix descends below its normal level but stays within the vagina. Second degree - cervix at or through the introitus with the uterine body still inside. Third degree (procidentia) - the whole uterus lies outside the vulva with complete inversion of the vagina. Baden-Walker grades 0-4 measure each compartment against the hymen.",
-    },
-    {
-      id: "gynaecology-uterine-prolapse-c8",
-      front: "The six POP-Q points and the three measurements.",
-      back: "Aa (anterior wall 3 cm proximal to the urethral meatus, -3 to +3), Ba (most dependent upper anterior wall), C (cervix or cuff), D (posterior fornix, omitted after hysterectomy), Ap (posterior wall 3 cm proximal to the hymen, -3 to +3), Bp (most dependent upper posterior wall); plus gh (genital hiatus), pb (perineal body) and tvl (total vaginal length). Measured on maximum Valsalva, in centimetres, relative to the hymen - negative above, positive below.",
-    },
-    {
-      id: "gynaecology-uterine-prolapse-c9",
-      front: "POP-Q stages 0 to IV.",
-      back: "Stage 0 - Aa, Ba, Ap, Bp all -3 and C or D between -tvl and -(tvl - 2). Stage I - leading edge more than 1 cm above the hymen. Stage II - leading edge within 1 cm either side of the hymen. Stage III - more than 1 cm below the hymen but less than (tvl - 2). Stage IV - complete eversion, leading edge at or beyond (tvl - 2). The stage is always set by the leading edge, whichever point that is.",
-    },
-    {
-      id: "gynaecology-uterine-prolapse-c10",
-      front: "Pessaries: types, who they suit, and their complications.",
-      back: "Ring (with or without support, usually 60-75 mm) first-line; shelf or Gellhorn for stage III-IV or a deficient perineum. Indications: unfit for or declines surgery, wants more children, pregnancy or puerperium, awaiting surgery, healing a decubitus ulcer, or a diagnostic trial. Fit the largest comfortable retained size; check she can void and walk; review at 1-2 weeks then 3-6 monthly. Complications: discharge, erosion, ulceration, bleeding, expulsion, unmasked stress incontinence and - if forgotten - impaction and vesicovaginal or rectovaginal fistula.",
-    },
-    {
-      id: "gynaecology-uterine-prolapse-c11",
-      front: "Management of a decubitus ulcer on a prolapse.",
-      back: "Reduce the prolapse and keep it reduced with a pessary or pack, add vaginal oestrogen (estriol cream, or an estradiol 10 microgram vaginal tablet nightly for two weeks then twice weekly), use saline or glycerine-acriflavine packs, treat infection and correct anaemia; it heals in two to three weeks. Never operate on an unhealed ulcer. Biopsy any ulcer with a rolled or everted edge, an indurated or friable base, or failure to heal, to exclude squamous carcinoma.",
-    },
-    {
-      id: "gynaecology-uterine-prolapse-c12",
-      front: "Vault prolapse: incidence, prevention and treatment.",
-      back: "About 1-2 per cent after hysterectomy for a non-prolapse indication, rising to about 10-12 per cent when the hysterectomy was done for prolapse. Prevent it at the index operation - McCall culdoplasty or high uterosacral suspension, uterosacral-cardinal pedicles into the vaginal angles, closure of any enterocele sac, and sacrospinous fixation if the vault reaches the introitus on traction. Treat it by sacrocolpopexy (abdominal or laparoscopic, mesh) for durability, sacrospinous or high uterosacral fixation vaginally, colpocleisis in the frail woman not wishing to retain coital function, or a pessary.",
     },
   ],
   references: [

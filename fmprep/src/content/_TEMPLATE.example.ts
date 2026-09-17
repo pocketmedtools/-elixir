@@ -64,13 +64,6 @@ topics.push({
       difficulty: "moderate",
     },
   ],
-  cards: [
-    {
-      id: "example-topic-c1",
-      front: "The question side, short.",
-      back: "The answer side, one or two lines.",
-    },
-  ],
   theory: [
     {
       id: "example-topic-t1",

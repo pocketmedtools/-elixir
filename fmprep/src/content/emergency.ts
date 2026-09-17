@@ -564,68 +564,6 @@ topics.push({
       difficulty: "moderate",
     },
   ],
-  cards: [
-    {
-      id: "emergency-cardiac-arrest-c1",
-      front: "Two findings that diagnose cardiac arrest.",
-      back: "Unresponsive and not breathing normally. Agonal gasps count as not breathing. A pulse check must not delay compressions.",
-    },
-    {
-      id: "emergency-cardiac-arrest-c2",
-      front: "Adult compression depth, rate and ratio.",
-      back: "Depth 5-6 cm, rate 100-120/min, ratio 30:2, full recoil, interruptions under 10 seconds. Once intubated: continuous compressions with 10 breaths/min.",
-    },
-    {
-      id: "emergency-cardiac-arrest-c3",
-      front: "Adrenaline in cardiac arrest: dose, concentration, route and interval.",
-      back: "Adult 1 mg IV/IO (10 mL of 1:10,000) every 3-5 minutes. Child 10 microgram/kg (0.1 mL/kg of 1:10,000), maximum 1 mg, every 3-5 minutes.",
-    },
-    {
-      id: "emergency-cardiac-arrest-c4",
-      front: "When is adrenaline given in a shockable versus a non-shockable rhythm?",
-      back: "Shockable (VF/pVT): after the third shock. Non-shockable (asystole/PEA): as soon as access is available. Then every 3-5 minutes in both.",
-    },
-    {
-      id: "emergency-cardiac-arrest-c5",
-      front: "Amiodarone in refractory VF.",
-      back: "300 mg IV after the third shock and 150 mg after the fifth (child 5 mg/kg, max 300 mg). Lidocaine 100 mg is the alternative if amiodarone is unavailable.",
-    },
-    {
-      id: "emergency-cardiac-arrest-c6",
-      front: "Defibrillation energies for adults and children.",
-      back: "Adult 150-200 J biphasic (360 J monophasic), subsequent shocks the same or higher. Child 4 J/kg for every shock.",
-    },
-    {
-      id: "emergency-cardiac-arrest-c7",
-      front: "Which rhythms are shockable?",
-      back: "Ventricular fibrillation and pulseless ventricular tachycardia only. Asystole and PEA are never shocked.",
-    },
-    {
-      id: "emergency-cardiac-arrest-c8",
-      front: "List the 4 Hs and 4 Ts.",
-      back: "Hypoxia, hypovolaemia, hyper/hypokalaemia and metabolic causes, hypothermia; tension pneumothorax, tamponade, toxins, thrombosis.",
-    },
-    {
-      id: "emergency-cardiac-arrest-c9",
-      front: "Paediatric BLS differences from the adult sequence.",
-      back: "Five rescue breaths first, 15:2 with two rescuers, depth at least one-third of the chest, two-thumb technique in infants, and hypoxia as the usual cause.",
-    },
-    {
-      id: "emergency-cardiac-arrest-c10",
-      front: "What does an end-tidal CO2 below 10 mmHg during CPR mean?",
-      back: "Compressions are inadequate. A sudden rise above 35-40 mmHg means return of spontaneous circulation.",
-    },
-    {
-      id: "emergency-cardiac-arrest-c11",
-      front: "Post-ROSC oxygen and temperature targets.",
-      back: "SpO2 94-98%, PaCO2 35-45 mmHg, systolic BP above 100 mmHg, glucose below 180 mg/dL, and temperature at or below 37.5 C for 72 hours.",
-    },
-    {
-      id: "emergency-cardiac-arrest-c12",
-      front: "Arrest in pregnancy beyond 20 weeks: two extra steps.",
-      back: "Manual left uterine displacement during CPR, and perimortem caesarean section within 5 minutes if there is no ROSC.",
-    },
-  ],
   references: [
     "European Resuscitation Council Guidelines 2021 - Adult Advanced Life Support and Basic Life Support",
     "American Heart Association Guidelines for CPR and Emergency Cardiovascular Care, 2020, with 2023 focused updates",
@@ -1163,68 +1101,6 @@ topics.push({
       difficulty: "hard",
     },
   ],
-  cards: [
-    {
-      id: "emergency-anaphylaxis-c1",
-      front: "Adult adrenaline dose in anaphylaxis: dose, concentration, site, interval.",
-      back: "0.5 mg = 0.5 mL of 1:1000, intramuscular into the anterolateral mid-thigh, repeated every 5 minutes if no improvement.",
-    },
-    {
-      id: "emergency-anaphylaxis-c2",
-      front: "Paediatric intramuscular adrenaline doses by age.",
-      back: "Over 12 y: 0.5 mg. 6-12 y: 0.3 mg. 6 months-6 y: 0.15 mg. Under 6 months: 0.1-0.15 mg. Weight-based 0.01 mg/kg, max 0.5 mg.",
-    },
-    {
-      id: "emergency-anaphylaxis-c3",
-      front: "Why must 1:1000 adrenaline never be given as an intravenous bolus?",
-      back: "It causes hypertensive crisis, myocardial ischaemia and ventricular arrhythmia. IV use is 1:10,000, in 50 microgram boluses or an infusion, with monitoring.",
-    },
-    {
-      id: "emergency-anaphylaxis-c4",
-      front: "Clinical criteria for anaphylaxis.",
-      back: "Sudden onset with airway, breathing or circulation compromise, usually with skin or mucosal changes; or sudden hypotension after a known trigger. Skin signs are absent in up to 20% of fatal cases.",
-    },
-    {
-      id: "emergency-anaphylaxis-c5",
-      front: "Fluid resuscitation in anaphylaxis.",
-      back: "500-1000 mL crystalloid rapidly in an adult, 10 mL/kg in a child, repeated as needed - up to 35% of plasma volume leaks out within 10 minutes.",
-    },
-    {
-      id: "emergency-anaphylaxis-c6",
-      front: "Definition of refractory anaphylaxis and its treatment.",
-      back: "Persisting airway, breathing or circulation problems after two appropriate IM doses of adrenaline. Start an adrenaline infusion, give aggressive fluids and get expert help.",
-    },
-    {
-      id: "emergency-anaphylaxis-c7",
-      front: "Anaphylaxis in a patient on beta-blockers.",
-      back: "Reactions are more severe and refractory. Give glucagon 1-2 mg IV over 5 minutes (child 20-30 microgram/kg, max 1 mg), repeatable.",
-    },
-    {
-      id: "emergency-anaphylaxis-c8",
-      front: "Biphasic reaction: frequency, timing and consequence.",
-      back: "3-5% of cases, usually within 4-12 hours, with no re-exposure. It is the reason for 6-12 hours of observation.",
-    },
-    {
-      id: "emergency-anaphylaxis-c9",
-      front: "Where do antihistamines and steroids sit in the anaphylaxis algorithm?",
-      back: "Third-line, after stabilisation, for skin symptoms only. Removed from the initial algorithm in 2021 because they delay adrenaline and do not treat A, B or C.",
-    },
-    {
-      id: "emergency-anaphylaxis-c10",
-      front: "Position of the anaphylactic patient.",
-      back: "Flat with legs raised; sitting only if breathing dominates; left lateral in pregnancy. Never stand or walk the patient - empty ventricle syndrome kills.",
-    },
-    {
-      id: "emergency-anaphylaxis-c11",
-      front: "Adrenaline auto-injector strengths and how many to prescribe.",
-      back: "0.3 mg for over 30 kg, 0.15 mg for 7.5-25 kg. Prescribe two, and demonstrate the technique to the patient and a family member.",
-    },
-    {
-      id: "emergency-anaphylaxis-c12",
-      front: "Investigation that retrospectively confirms anaphylaxis.",
-      back: "Serum mast cell tryptase as soon as possible, at 1-2 hours, and a baseline at 24 hours. A normal value does not exclude anaphylaxis and never delays treatment.",
-    },
-  ],
   references: [
     "Resuscitation Council UK, Emergency Treatment of Anaphylaxis: Guidelines for Healthcare Providers, 2021",
     "World Allergy Organization Anaphylaxis Guidance, 2020",
@@ -1684,68 +1560,6 @@ topics.push({
       explanation:
         "Hypotension with bradycardia and warm, dry, well-perfused skin after a high spinal injury is neurogenic shock, caused by loss of sympathetic outflow with unopposed vagal tone; management is fluids followed by noradrenaline and atropine for symptomatic bradycardia. Haemorrhagic shock produces tachycardia with cold clammy skin, though occult bleeding must still be excluded before settling on this diagnosis. Septic shock requires an infective source and evolves over hours to days, not immediately after a fall. Cardiogenic shock gives raised neck veins and crackles, and vasovagal syncope is transient and resolves on lying flat.",
       difficulty: "moderate",
-    },
-  ],
-  cards: [
-    {
-      id: "emergency-shock-c1",
-      front: "Define shock and name the three clinical windows of perfusion.",
-      back: "Acute circulatory failure with inadequate tissue oxygen delivery. Windows: skin (capillary refill, mottling), brain (sensorium) and kidney (urine output).",
-    },
-    {
-      id: "emergency-shock-c2",
-      front: "Why is hypotension a late sign of shock?",
-      back: "Compensatory tachycardia and vasoconstriction maintain systolic pressure until about 30% of blood volume is lost, especially in the young and in pregnancy.",
-    },
-    {
-      id: "emergency-shock-c3",
-      front: "Shock index: formula and threshold.",
-      back: "Heart rate divided by systolic BP. Above 0.9 predicts significant blood loss and need for transfusion before the BP falls.",
-    },
-    {
-      id: "emergency-shock-c4",
-      front: "The four types of shock with one physical sign each.",
-      back: "Hypovolaemic (flat neck veins), distributive (warm peripheries, wide pulse pressure), cardiogenic (raised JVP with crackles), obstructive (raised JVP with clear lungs).",
-    },
-    {
-      id: "emergency-shock-c5",
-      front: "Surviving Sepsis fluid and antibiotic targets.",
-      back: "30 mL/kg balanced crystalloid within 3 hours; blood cultures then broad-spectrum antibiotics within 1 hour; noradrenaline to a MAP of 65 mmHg.",
-    },
-    {
-      id: "emergency-shock-c6",
-      front: "Paediatric fluid bolus in shock.",
-      back: "10-20 mL/kg isotonic crystalloid over 5-20 minutes, reassess after each; use cautious 10 mL/kg boluses where there is no ventilator support (FEAST).",
-    },
-    {
-      id: "emergency-shock-c7",
-      front: "First-line vasopressor and why not dopamine.",
-      back: "Noradrenaline 0.05-0.5 microgram/kg/min. Dopamine causes more arrhythmias and higher mortality in septic shock (SOAP II), and renal-dose dopamine does not protect kidneys.",
-    },
-    {
-      id: "emergency-shock-c8",
-      front: "Fluid rule in cardiogenic shock.",
-      back: "A cautious 250 mL challenge only if the lungs are clear; stop at the first crackle. The treatment is reperfusion plus dobutamine or noradrenaline.",
-    },
-    {
-      id: "emergency-shock-c9",
-      front: "Right ventricular infarction: three drugs to avoid.",
-      back: "Nitrates, diuretics and morphine - all reduce preload in a preload-dependent ventricle. Give fluid instead.",
-    },
-    {
-      id: "emergency-shock-c10",
-      front: "Passive leg raise: what it does and what it shows.",
-      back: "Reversible auto-transfusion of about 300 mL; an improvement in BP and pulse pressure predicts fluid responsiveness without committing to a bolus.",
-    },
-    {
-      id: "emergency-shock-c11",
-      front: "Signs that a fluid bolus must be stopped.",
-      back: "Rising JVP, new basal crackles, falling SpO2, rising respiratory rate, and an enlarging tender liver in a child.",
-    },
-    {
-      id: "emergency-shock-c12",
-      front: "Lactate thresholds in shock.",
-      back: "Above 2 mmol/L indicates hypoperfusion; above 4 mmol/L marks high risk. Failure of lactate to fall with treatment predicts death.",
     },
   ],
   references: [
@@ -2309,48 +2123,6 @@ topics.push({
       difficulty: "hard",
     },
   ],
-  cards: [
-    {
-      id: "emergency-poisoning-c1",
-      front: "Atropine regimen in organophosphate poisoning.",
-      back: "Adult 1.8-3 mg IV bolus, doubled every 5 minutes until atropinised; child 0.02-0.05 mg/kg (minimum 0.1 mg) doubled every 5 minutes. Then infuse 10-20% of the total loading dose per hour.",
-    },
-    {
-      id: "emergency-poisoning-c2",
-      front: "The five end-points of atropinisation.",
-      back: "Clear chest with no crackles, heart rate above 80/min, systolic BP above 80 mmHg, dry axillae, and pupils no longer pinpoint. Trust the chest and the axillae, never the pupils alone.",
-    },
-    {
-      id: "emergency-poisoning-c3",
-      front: "Pralidoxime dose and rules.",
-      back: "Adult 30 mg/kg (1-2 g) IV over 15-30 minutes, then 8-10 mg/kg/hour, or 1 g IV every 4-6 hours, for at least 24 hours. Child 25-50 mg/kg then 10-20 mg/kg/hour. Always after atropine, always infused, never in carbamate poisoning.",
-    },
-    {
-      id: "emergency-poisoning-c4",
-      front: "Intravenous N-acetylcysteine 21-hour regimen.",
-      back: "150 mg/kg in 200 mL of 5% dextrose over 60 minutes, then 50 mg/kg in 500 mL over 4 hours, then 100 mg/kg in 1000 mL over 16 hours - 300 mg/kg in total.",
-    },
-    {
-      id: "emergency-poisoning-c5",
-      front: "When is paracetamol ingestion potentially hepatotoxic?",
-      back: "Above 150 mg/kg or 7.5 g in an adult; above 75-100 mg/kg in alcoholics, the malnourished, and those on phenytoin, carbamazepine, rifampicin or isoniazid.",
-    },
-    {
-      id: "emergency-poisoning-c6",
-      front: "Four things never done after a corrosive ingestion.",
-      back: "No induced emesis, no gastric lavage, no activated charcoal, no attempt at neutralisation with milk, vinegar or bicarbonate. Endoscopy is done at 12-48 hours.",
-    },
-    {
-      id: "emergency-poisoning-c7",
-      front: "Superwarfarin rodenticide with bleeding.",
-      back: "Vitamin K1 10 mg by slow IV injection over 20 minutes plus fresh frozen plasma 15 mL/kg or prothrombin complex, then oral vitamin K1 10-50 mg daily for weeks, guided by INR.",
-    },
-    {
-      id: "emergency-poisoning-c8",
-      front: "Intermediate syndrome.",
-      back: "Proximal limb, neck flexor and respiratory muscle weakness 24-96 hours after organophosphate poisoning. Tested by asking the patient to lift the head off the pillow. Needs ventilation, not more atropine.",
-    },
-  ],
   references: [
     "Eddleston M, Buckley NA, Eyer P, Dawson AH. Management of acute organophosphorus pesticide poisoning, The Lancet 2008",
     "World Health Organization. Clinical management of acute pesticide intoxication: prevention of suicidal behaviours, WHO 2008",
@@ -2864,48 +2636,6 @@ topics.push({
       difficulty: "moderate",
     },
   ],
-  cards: [
-    {
-      id: "emergency-burns-c1",
-      front: "Burn first aid: the cooling rule.",
-      back: "Cool running tap water for 20 minutes, still useful up to 3 hours after the burn. Never ice, never toothpaste, turmeric, ink, oil, ghee, mud or egg white. Cool the burn but warm the patient.",
-    },
-    {
-      id: "emergency-burns-c2",
-      front: "Wallace rule of nines in the adult.",
-      back: "Head and neck 9%, each arm 9%, each leg 18%, front of trunk 18%, back of trunk 18%, perineum 1%. Patient's palm with fingers is about 1% for scattered patches.",
-    },
-    {
-      id: "emergency-burns-c3",
-      front: "Parkland formula.",
-      back: "4 mL x kg x %TBSA of Ringer's lactate in the first 24 hours; half in the first 8 hours measured from the time of the burn, the rest over the next 16 hours. Only partial and full-thickness burn is counted.",
-    },
-    {
-      id: "emergency-burns-c4",
-      front: "Target urine output in burn resuscitation.",
-      back: "Adult 0.5 mL/kg/hour (30-50 mL/hour); child under 30 kg 1 mL/kg/hour; 1-2 mL/kg/hour if there is myoglobinuria. Titrate the infusion hourly by about a third at a time.",
-    },
-    {
-      id: "emergency-burns-c5",
-      front: "What extra do children need in burn resuscitation?",
-      back: "Maintenance fluid by the 4-2-1 rule with a dextrose-containing solution, in addition to the Parkland volume, because glycogen stores are small. Monitor blood glucose.",
-    },
-    {
-      id: "emergency-burns-c6",
-      front: "Signs of inhalation injury.",
-      back: "Enclosed-space fire, loss of consciousness, facial or neck burns, singed nasal hair, soot in mouth or sputum, hoarseness, brassy cough, stridor. Intubate early with an uncut tube.",
-    },
-    {
-      id: "emergency-burns-c7",
-      front: "Why does the pulse oximeter mislead after a fire?",
-      back: "It cannot distinguish carboxyhaemoglobin from oxyhaemoglobin, so it reads falsely normal in carbon monoxide poisoning. Give 100% oxygen; carboxyhaemoglobin half-life falls from about 4 hours in air to about 1 hour on 100% oxygen.",
-    },
-    {
-      id: "emergency-burns-c8",
-      front: "Burn depth: the three bedside tests.",
-      back: "Blanching on pressure, sensation to pin-prick, and appearance after deroofing blisters. Insensate and non-blanching means full thickness; exquisitely painful and briskly blanching means superficial.",
-    },
-  ],
   references: [
     "Advanced Trauma Life Support (ATLS), 10th edition, American College of Surgeons, 2018 - thermal injuries chapter",
     "American Burn Association. Advanced Burn Life Support Provider Manual, 2023 update - fluid resuscitation and referral criteria",
@@ -3416,48 +3146,6 @@ topics.push({
       explanation:
         "In traumatic brain injury both hypoxia and hypotension roughly double mortality, so the targets are an SpO2 above 94%, a systolic pressure above 110 mmHg, normocapnia, the head up 30 degrees, and a definitive airway because a GCS of 8 or less means the airway is unprotected. Permissive hypotension is specifically abandoned when a significant head injury is present, since cerebral perfusion pressure depends on the systemic pressure. Prolonged hyperventilation causes cerebral vasoconstriction and ischaemia and is reserved as a very short-term measure for impending herniation. Steroids increase mortality in head injury, as the CRASH trial showed, and transferring an unprotected airway is indefensible. Fluid restriction produces hypotension, which is far more damaging than the oedema it is meant to prevent.",
       difficulty: "hard",
-    },
-  ],
-  cards: [
-    {
-      id: "emergency-trauma-primary-survey-c1",
-      front: "The order of the primary survey.",
-      back: "<C>ABCDE - Catastrophic haemorrhage, Airway with cervical spine protection, Breathing, Circulation with haemorrhage control, Disability, Exposure. Treat each problem as it is found before moving on, and reassess from A after every intervention.",
-    },
-    {
-      id: "emergency-trauma-primary-survey-c2",
-      front: "The six immediately life-threatening chest injuries.",
-      back: "Airway obstruction, tension pneumothorax, open pneumothorax, massive haemothorax, flail chest with pulmonary contusion, cardiac tamponade. All are clinical diagnoses; none waits for a radiograph.",
-    },
-    {
-      id: "emergency-trauma-primary-survey-c3",
-      front: "Needle decompression of a tension pneumothorax.",
-      back: "14-gauge cannula in the fifth intercostal space at the anterior axillary line in adults (second space mid-clavicular line in children), followed immediately by an intercostal drain in the safe triangle.",
-    },
-    {
-      id: "emergency-trauma-primary-survey-c4",
-      front: "Where does blood hide in trauma?",
-      back: "On the floor and four more: the chest, the abdomen, the pelvis and retroperitoneum, and the long bones. A femur holds 1-1.5 litres and a pelvis several litres.",
-    },
-    {
-      id: "emergency-trauma-primary-survey-c5",
-      front: "Tranexamic acid in trauma.",
-      back: "1 g IV over 10 minutes as early as possible and always within 3 hours of injury, then 1 g over 8 hours. Child 15 mg/kg (max 1 g) then 2 mg/kg/hour. After 3 hours it increases mortality.",
-    },
-    {
-      id: "emergency-trauma-primary-survey-c6",
-      front: "Fluid strategy in haemorrhagic shock.",
-      back: "One litre of warmed crystalloid (child 20 mL/kg), then blood (child 10 mL/kg) in a 1:1:1 ratio with plasma and platelets. Permissive hypotension to a systolic of 80-90 mmHg until surgical control, except in head injury where the systolic must exceed 110 mmHg.",
-    },
-    {
-      id: "emergency-trauma-primary-survey-c7",
-      front: "The lethal triad.",
-      back: "Hypothermia, acidosis and coagulopathy, each worsening the others. Prevented by warmed fluids, a warm patient, a warm room, early blood products and rapid surgical control of bleeding.",
-    },
-    {
-      id: "emergency-trauma-primary-survey-c8",
-      front: "ATMIST handover.",
-      back: "Age, Time of injury, Mechanism, Injuries found and suspected, Signs with trends, Treatment given with times. Delivered once, with everyone listening, and a written copy sent with the ambulance.",
     },
   ],
   references: [
@@ -3977,48 +3665,6 @@ topics.push({
       explanation:
         "An acute, fluctuating disturbance of attention with hallucinations is delirium, and in the elderly its cause is nearly always systemic - urinary or chest infection, urinary retention, constipation, dehydration, hypoxia, pain or a newly added anticholinergic, benzodiazepine or opioid - so a urine dipstick, palpation or scan of the bladder, bowel history and a line-by-line drug review come first, and the recently started antispasmodic is the prime suspect. Dementia is chronic and progressive without the acute fluctuating attentional deficit, and calling this dementia delays a reversible diagnosis. Imaging has a low yield in delirium without head injury, focal signs or anticoagulation, and should follow rather than precede the systemic search. Sedating with haloperidol before the cause is found masks deterioration, prolongs delirium and is reserved for dangerous agitation at the lowest effective dose. The elderly frequently mount no fever with significant infection, so being afebrile excludes nothing.",
       difficulty: "moderate",
-    },
-  ],
-  cards: [
-    {
-      id: "emergency-altered-sensorium-c1",
-      front: "First test in every patient with altered sensorium?",
-      back: "Capillary blood glucose, without exception. It is the only cause of coma that is both instantly reversible and instantly fatal if missed, and no clinical sign distinguishes it reliably from stroke or sepsis.",
-    },
-    {
-      id: "emergency-altered-sensorium-c2",
-      front: "Dose of dextrose for hypoglycaemic coma - adult, child, neonate?",
-      back: "Adult: 25% dextrose 100 mL (25 g) IV over 1-3 minutes, repeat after 10-15 minutes if still low. Child: 10% dextrose 5 mL/kg IV. Neonate: 10% dextrose 2 mL/kg IV. Recheck glucose 15 minutes after each dose; never give 25% or 50% peripherally to a small child.",
-    },
-    {
-      id: "emergency-altered-sensorium-c3",
-      front: "Why thiamine before glucose, and at what dose?",
-      back: "A glucose load consumes the remaining thiamine and can precipitate Wernicke encephalopathy in the alcoholic or malnourished. Give thiamine 100 mg IV or IM before or with the dextrose; if Wernicke is suspected, 500 mg IV three times daily for 2 days, then 250 mg daily.",
-    },
-    {
-      id: "emergency-altered-sensorium-c4",
-      front: "Naloxone: dose, endpoint and the trap.",
-      back: "0.4 mg IV (or IM without a vein) repeated every 2-3 minutes, titrated to an adequate respiratory rate rather than to full wakefulness, up to about 10 mg total; child 0.01 mg/kg. Trap: naloxone lasts only 30-90 minutes, shorter than the opioid, so never discharge a patient who has woken.",
-    },
-    {
-      id: "emergency-altered-sensorium-c5",
-      front: "Expand AEIOU TIPS.",
-      back: "Alcohol and Acidosis; Epilepsy, Endocrine and Electrolytes; Insulin (hypo- and hyperglycaemia); Opiates and Oxygen lack; Uraemia and organ failure; Trauma and Temperature; Infection; Psychiatric and Porphyria; Stroke, Shock, Space-occupying lesion and Snake bite.",
-    },
-    {
-      id: "emergency-altered-sensorium-c6",
-      front: "Definition and first-line dose in convulsive status epilepticus.",
-      back: "A convulsion lasting 5 minutes or more, or repeated seizures without recovery between. Adult: lorazepam 4 mg IV over 2 minutes, repeat once after 10 minutes; no access - midazolam 10 mg IM. Child: lorazepam 0.1 mg/kg IV (max 4 mg per dose), or buccal/intranasal midazolam 0.2 mg/kg (max 10 mg). Maximum two benzodiazepine doses.",
-    },
-    {
-      id: "emergency-altered-sensorium-c7",
-      front: "What do the pupils tell you in an unconscious patient?",
-      back: "Pinpoint reactive - opioids or pontine haemorrhage; pinpoint with sweating, salivation and fasciculations - organophosphate; unilateral fixed dilated - uncal herniation, an emergency; mid-position fixed - midbrain lesion; widely dilated reactive - anticholinergic or sympathomimetic poisoning.",
-    },
-    {
-      id: "emergency-altered-sensorium-c8",
-      front: "Antibiotic and steroid before transfer in suspected bacterial meningitis?",
-      back: "Ceftriaxone 2 g IV in an adult (12-hourly thereafter), or 50 mg/kg per dose in a child (100 mg/kg/day in two divided doses, maximum 4 g/day), with dexamethasone 0.15 mg/kg IV 6-hourly given with or just before the first antibiotic dose. Never delay antibiotics for imaging or lumbar puncture.",
     },
   ],
   references: [
@@ -4587,48 +4233,6 @@ topics.push({
       explanation:
         "Delay to the first drug is a systems problem, and the interventions that reliably shorten it are pre-assigned roles, a single sealed tray in one universally known location, drugs grouped by emergency rather than alphabetically, and a laminated weight-based dose chart inside the lid, with the drill re-timed to confirm the improvement. Better hardware does not address the human and layout factors causing the delay. Training only the doctor leaves the team unable to act in the minutes before the doctor arrives, and it is the whole staff, including non-clinical members, who should be trained. Locking the tray protects stock at the direct cost of access and is a recognised cause of fatal delay. Reducing the frequency of checks worsens readiness rather than improving response time.",
       difficulty: "moderate",
-    },
-  ],
-  cards: [
-    {
-      id: "emergency-tray-and-readiness-c1",
-      front: "Adrenaline for anaphylaxis - concentration, dose, route, site, repeat?",
-      back: "1:1000 (1 mg/mL), intramuscular into the anterolateral thigh, 0.01 mg/kg: 0.15 mg for 6 months to 6 years, 0.3 mg for 6-12 years, 0.5 mg for over 12 years and adults. Repeat every 5 minutes until improvement; two or more doses means refractory anaphylaxis needing urgent transfer.",
-    },
-    {
-      id: "emergency-tray-and-readiness-c2",
-      front: "Adrenaline for cardiac arrest - concentration, dose, route, repeat?",
-      back: "1:10,000 (0.1 mg/mL): adult 1 mg (10 mL) IV or IO every 3-5 minutes throughout resuscitation. Child 0.01 mg/kg, that is 0.1 mL/kg of 1:10,000, maximum 1 mg, every 3-5 minutes. Confusing 1:1000 with 1:10,000 is a ten-fold lethal error.",
-    },
-    {
-      id: "emergency-tray-and-readiness-c3",
-      front: "Atropine: bradycardia dose versus organophosphate poisoning dose.",
-      back: "Bradycardia: adult 0.5-0.6 mg IV every 3-5 minutes to a maximum of 3 mg; child 0.02 mg/kg, minimum 0.1 mg, maximum single dose 0.5 mg. Organophosphate poisoning: adult 2-5 mg IV (child 0.05 mg/kg) doubled every 5 minutes until the chest is clear and the skin dry - there is no ceiling dose.",
-    },
-    {
-      id: "emergency-tray-and-readiness-c4",
-      front: "Self-inflating bag sizes, and why the reservoir matters.",
-      back: "Adult 1500-1600 mL, paediatric about 500 mL, neonatal 240 mL. Without the reservoir bag attached the delivered oxygen concentration falls from roughly 90% to about 50%, so the reservoir is part of the equipment rather than an optional extra.",
-    },
-    {
-      id: "emergency-tray-and-readiness-c5",
-      front: "How is an oropharyngeal airway sized and inserted?",
-      back: "Sizes 000 to 4, measured from the incisors to the angle of the mandible (or angle of the mouth to the tragus). In adults insert upside down and rotate 180 degrees; in children insert the right way up over a tongue depressor, because rotation damages the soft palate. Gagging means the patient does not need one.",
-    },
-    {
-      id: "emergency-tray-and-readiness-c6",
-      front: "Four rules that keep an emergency tray usable.",
-      back: "One tray in one fixed known location, sealed with a numbered breakable tag and never locked behind a single key holder; a named owner checking weekly against a printed list and signing a dated log; first-expiry-first-out rotation with anything within 3 months moved to routine use; restock and reseal immediately after every use.",
-    },
-    {
-      id: "emergency-tray-and-readiness-c7",
-      front: "What is measured in a clinic mock drill?",
-      back: "Seconds to first chest compression, seconds to adrenaline drawn up, and minutes to the ambulance call. Run it unannounced at least quarterly, with pre-assigned roles, and debrief the same day producing one dated change with a named owner.",
-    },
-    {
-      id: "emergency-tray-and-readiness-c8",
-      front: "Immunisation session: minimum anaphylaxis readiness required in India.",
-      back: "An anaphylaxis kit at the vaccination table with in-date adrenaline 1:1000, syringes and needles, a self-inflating bag with infant and child masks and oral airways; a vaccinator who knows the age-banded dose; and observation of every beneficiary for 30 minutes before leaving, with serious AEFI reported within 24 hours.",
     },
   ],
   references: [
@@ -5497,68 +5101,6 @@ topics.push({
       explanation:
         "The 2023 global definition, published in 2024, was written to make the diagnosis possible outside well-resourced intensive care units: it recognises non-intubated ARDS in patients on high-flow nasal oxygen at a flow of at least 30 L/min or on CPAP or NIV with PEEP of at least 5 cmH2O, and it accepts SpO2/FiO2 of 315 or less - valid only when SpO2 is 97% or below - as an alternative oxygenation criterion, with the PEEP and flow requirements waived in resource-limited settings. The wedge pressure criterion belonged to the 1994 American-European Consensus Conference definition and was deliberately removed by Berlin in 2012; it was not reinstated. Imaging was widened, not narrowed - lung ultrasound performed by a trained operator is now acceptable alongside radiograph and CT. Severity bands were retained, with SpO2/FiO2 equivalents of 315, 235 and 148. No definition of ARDS has ever required bronchoalveolar lavage.",
       difficulty: "easy",
-    },
-  ],
-  cards: [
-    {
-      id: "emergency-ards-c1",
-      front: "The four components of the Berlin definition of ARDS.",
-      back: "1) Timing: within one week of a known insult or new/worsening respiratory symptoms. 2) Imaging: bilateral opacities not fully explained by effusion, collapse or nodules. 3) Origin of oedema: not fully explained by cardiac failure or fluid overload (objective assessment such as echocardiography if no risk factor). 4) Oxygenation: PaO2/FiO2 graded, measured on PEEP or CPAP of at least 5 cmH2O.",
-    },
-    {
-      id: "emergency-ards-c2",
-      front: "Berlin severity bands and their mortality.",
-      back: "Mild: PaO2/FiO2 more than 200 and up to 300, mortality about 27-35%. Moderate: more than 100 and up to 200, about 32-40%. Severe: 100 or less, about 45-46%. PaO2 in mmHg, FiO2 as a fraction - PaO2 60 on FiO2 0.6 = 100 = severe.",
-    },
-    {
-      id: "emergency-ards-c3",
-      front: "What did the 2023 New Global Definition add to Berlin?",
-      back: "Non-intubated ARDS on high-flow nasal oxygen at 30 L/min or more, or CPAP/NIV with PEEP of at least 5 cmH2O; SpO2/FiO2 of 315 or less (only valid when SpO2 is 97% or below) as an alternative to PaO2/FiO2; lung ultrasound as acceptable imaging; and PEEP/flow requirements waived in resource-limited settings. Berlin remains the reference standard in trials and textbooks.",
-    },
-    {
-      id: "emergency-ards-c4",
-      front: "Associated disorders of ARDS: direct versus indirect.",
-      back: "Direct (pulmonary): pneumonia, aspiration, inhalation injury, near-drowning, pulmonary contusion, fat embolism, reperfusion after transplant. Indirect (extrapulmonary): sepsis (commonest overall, about 40%), severe trauma, massive transfusion, acute pancreatitis, burns, drug overdose, TRALI, eclampsia, cardiopulmonary bypass. In India add malaria, dengue, leptospirosis, scrub typhus, organophosphate poisoning.",
-    },
-    {
-      id: "emergency-ards-c5",
-      front: "Histology and the three phases of ARDS.",
-      back: "Histology is diffuse alveolar damage. Exudative phase day 0-7: oedema, hyaline membranes, neutrophils, type I pneumocyte loss. Proliferative phase day 7-21: type II pneumocyte and fibroblast proliferation, organisation of exudate, compliance recovering. Fibrotic phase from about day 10-14 in a minority: collagen deposition, cysts, honeycombing, high dead space.",
-    },
-    {
-      id: "emergency-ards-c6",
-      front: "One line each: ARDS versus cardiogenic pulmonary oedema.",
-      back: "ARDS - permeability oedema, precipitant present, JVP normal, no third heart sound, peripheral patchy opacities with normal heart size, irregular pleural line with spared areas on ultrasound, BNP low, normal echo, poor response to diuresis, oedema/plasma protein ratio above 0.75. Cardiogenic - hydrostatic oedema, cardiac history, raised JVP, third heart sound, perihilar bat's wing with cardiomegaly and Kerley B lines, homogeneous B-lines, BNP high, abnormal echo, brisk response to diuresis, ratio below 0.65.",
-    },
-    {
-      id: "emergency-ards-c7",
-      front: "The ARDSNet lung-protective numbers.",
-      back: "Tidal volume 6 mL/kg predicted body weight (range 4-8); plateau pressure 30 cmH2O or less on an end-inspiratory hold; driving pressure (plateau minus PEEP) under 15 cmH2O; respiratory rate up to 35 with permissive hypercapnia to a pH of about 7.20; PEEP from a PEEP-FiO2 table; oxygenation target PaO2 55-80 mmHg or SpO2 88-95%. The rationale is the baby lung - the aerated compartment is the size of a young child's lung.",
-    },
-    {
-      id: "emergency-ards-c8",
-      front: "How is predicted body weight calculated, and why?",
-      back: "Men: 50 + 0.91 x (height in cm - 152.4). Women: 45.5 + 0.91 x (height in cm - 152.4). Lung size tracks height and sex, not fat mass, so using actual weight in an obese patient delivers a large overdose of tidal volume. A 95 kg man of 175 cm has a predicted body weight of about 70 kg and gets about 420 mL, not 570 mL.",
-    },
-    {
-      id: "emergency-ards-c9",
-      front: "Prone positioning: indication, dose and evidence.",
-      back: "PROSEVA (NEJM 2013): PaO2/FiO2 below 150 on FiO2 of 0.6 or more with PEEP of at least 5, after 12-24 hours of stabilisation; prone for at least 16 consecutive hours a day. 28-day mortality 16.0% versus 32.8%, 90-day mortality 23.6% versus 41.0%. Needs 3-5 trained staff, eye and pressure-point care and secure tubes; the feared complication is unplanned extubation.",
-    },
-    {
-      id: "emergency-ards-c10",
-      front: "Fluids and neuromuscular blockade in ARDS.",
-      back: "Conservative fluid strategy once shock has resolved (FACTT 2006): no mortality difference but about 2.5 more ventilator-free days - aim neutral to negative balance while maintaining perfusion. Neuromuscular blockade with cisatracurium for 48 hours helped in ACURASYS (2010) but was neutral against light sedation in ROSE (2019), so it is not routine - reserve it for severe dyssynchrony, unacceptable plateau pressure, or to enable proning.",
-    },
-    {
-      id: "emergency-ards-c11",
-      front: "Corticosteroids in ARDS: what is and is not established.",
-      back: "Supportive: DEXA-ARDS (2020) dexamethasone 20 mg daily for 5 days then 10 mg daily for 5 days in moderate-to-severe ARDS reduced 60-day mortality (21% versus 36%); dexamethasone 6 mg for 10 days is established for COVID-19 needing oxygen. Against: ARDSNet LaSRS showed harm when started after 14 days; steroids are avoided in influenza and in undrained infection; guideline recommendations remain conditional. State both sides rather than asserting steroids are standard.",
-    },
-    {
-      id: "emergency-ards-c12",
-      front: "Long-term outcome of ARDS survivors and the family physician's job.",
-      back: "Spirometry is usually near normal by 6-12 months with a reduced DLCO; the real disability is extrapulmonary - ICU-acquired weakness (6-minute walk about 76% of predicted at 5 years, only half back at work at 1 year), cognitive impairment in about a third, depression about 30%, anxiety up to 40%, PTSD 20-25% - the post-intensive care syndrome. Primary care: medication reconciliation, nutrition and weight, pulmonary rehabilitation, PHQ-9 and GAD-7 screening, spirometry with DLCO at 3-6 months if breathless, vaccination, carer support, and referral back for persistent hypoxaemia or progressive fibrosis.",
     },
   ],
   references: [

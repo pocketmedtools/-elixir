@@ -552,68 +552,6 @@ topics.push({
       difficulty: "hard",
     },
   ],
-  cards: [
-    {
-      id: "renal-urology-chronic-kidney-disease-c1",
-      front: "KDIGO definition of chronic kidney disease.",
-      back: "Abnormality of kidney structure or function for more than 3 months: eGFR below 60 mL/min/1.73 m2, or a damage marker (ACR 30 mg/g or more, abnormal sediment, tubular disorder, histology, imaging abnormality, transplant history).",
-    },
-    {
-      id: "renal-urology-chronic-kidney-disease-c2",
-      front: "The six G categories with their eGFR ranges.",
-      back: "G1 90 or more; G2 60-89; G3a 45-59; G3b 30-44; G4 15-29; G5 below 15 mL/min/1.73 m2.",
-    },
-    {
-      id: "renal-urology-chronic-kidney-disease-c3",
-      front: "The three A categories by urine albumin-creatinine ratio.",
-      back: "A1 under 30 mg/g; A2 30-300 mg/g; A3 above 300 mg/g (divide by 10 for mg/mmol: under 3, 3-30, above 30).",
-    },
-    {
-      id: "renal-urology-chronic-kidney-disease-c4",
-      front: "Write the Cockcroft-Gault formula.",
-      back: "CrCl (mL/min) = [(140 - age) x weight in kg] / (72 x serum creatinine in mg/dL), x 0.85 if female. Used for drug dosing, not for staging.",
-    },
-    {
-      id: "renal-urology-chronic-kidney-disease-c5",
-      front: "Which equation is used for CKD staging, and which for drug dosing?",
-      back: "CKD-EPI 2021 creatinine equation for staging (mL/min/1.73 m2); Cockcroft-Gault creatinine clearance for drug dose adjustment (mL/min).",
-    },
-    {
-      id: "renal-urology-chronic-kidney-disease-c6",
-      front: "eGFR and albuminuria thresholds for starting an SGLT2 inhibitor in CKD.",
-      back: "eGFR 20 mL/min/1.73 m2 or more with ACR 200 mg/g or more, or heart failure at any albuminuria, or type 2 diabetes with CKD. Continue until dialysis or transplant.",
-    },
-    {
-      id: "renal-urology-chronic-kidney-disease-c7",
-      front: "Finerenone: dose, eGFR and potassium thresholds.",
-      back: "10 mg OD if eGFR 25-59, 20 mg OD if eGFR 60 or more; only start if potassium is 5.0 mmol/L or less; recheck potassium at 4 weeks.",
-    },
-    {
-      id: "renal-urology-chronic-kidney-disease-c8",
-      front: "Haemoglobin target in CKD anaemia, and when to start an ESA.",
-      back: "Replete iron first (TSAT above 30%); start an ESA only if Hb is below 10 g/dL; target 10-11.5 g/dL and never above 13 g/dL.",
-    },
-    {
-      id: "renal-urology-chronic-kidney-disease-c9",
-      front: "Definition of rapid progression of CKD.",
-      back: "A sustained fall in eGFR of 5 mL/min/1.73 m2 per year or more, or a drop in G category accompanied by a 25% or greater fall from baseline eGFR.",
-    },
-    {
-      id: "renal-urology-chronic-kidney-disease-c10",
-      front: "Causes of CKD where the kidneys are NOT small.",
-      back: "Diabetic nephropathy, amyloidosis, polycystic kidney disease, HIV-associated nephropathy, myeloma kidney and infiltrative disease.",
-    },
-    {
-      id: "renal-urology-chronic-kidney-disease-c11",
-      front: "Hepatitis B vaccination schedule in CKD.",
-      back: "Double dose, 40 micrograms intramuscularly at 0, 1, 2 and 6 months, given early (eGFR still above 30) with an anti-HBs titre check afterwards.",
-    },
-    {
-      id: "renal-urology-chronic-kidney-disease-c12",
-      front: "Commonest cause of CKD in the Indian Society of Nephrology registry, and the geographical cluster of unknown-cause CKD.",
-      back: "Diabetic kidney disease (about 31%); CKD of undetermined aetiology clusters in the Uddanam region of Srikakulam district, Andhra Pradesh.",
-    },
-  ],
   references: [
     "KDIGO 2024 Clinical Practice Guideline for the Evaluation and Management of Chronic Kidney Disease",
     "KDIGO 2021 Clinical Practice Guideline for the Management of Blood Pressure in Chronic Kidney Disease",
@@ -1045,48 +983,6 @@ topics.push({
       explanation:
         "She has three simultaneous emergency indications for renal replacement therapy - refractory hyperkalaemia, severe metabolic acidosis, and diuretic-refractory pulmonary oedema - so dialysis must be arranged now, with calcium gluconate and insulin-dextrose given immediately as a bridge to protect the myocardium while access is obtained. Escalating furosemide in a patient who has already failed 80 mg wastes the hour that matters and risks ototoxicity. A bicarbonate infusion delivers a large sodium load into established pulmonary oedema and will not correct a pH of 7.06 driven by ongoing kidney failure. An oral potassium binder acts far too slowly for a potassium of 6.8 mmol/L and does nothing for the acidosis or the fluid overload.",
       difficulty: "moderate",
-    },
-  ],
-  cards: [
-    {
-      id: "renal-urology-acute-kidney-injury-c1",
-      front: "State the three KDIGO criteria for diagnosing acute kidney injury.",
-      back: "A creatinine rise of 0.3 mg/dL or more within 48 hours; OR creatinine 1.5 times baseline or more within the prior 7 days; OR urine output below 0.5 mL/kg/h for 6 hours.",
-    },
-    {
-      id: "renal-urology-acute-kidney-injury-c2",
-      front: "KDIGO AKI stage 3 criteria.",
-      back: "Creatinine 3 times baseline or more, or a rise to 4.0 mg/dL or more, or start of renal replacement therapy (or eGFR under 35 if aged under 18); OR urine output under 0.3 mL/kg/h for 24 hours, or anuria for 12 hours.",
-    },
-    {
-      id: "renal-urology-acute-kidney-injury-c3",
-      front: "Write the fractional excretion of sodium formula and its cut-offs.",
-      back: "FeNa = (urine Na x plasma creatinine) / (plasma Na x urine creatinine) x 100. Below 1% is prerenal; above 2% is acute tubular necrosis. Invalid after diuretics - use FeUrea, where below 35% is prerenal.",
-    },
-    {
-      id: "renal-urology-acute-kidney-injury-c4",
-      front: "The AEIOU indications for dialysis in AKI.",
-      back: "Acidosis (refractory), Electrolytes (refractory hyperkalaemia), Intoxication (methanol, ethylene glycol, lithium, salicylate), Overload (refractory pulmonary oedema), Uraemia (pericarditis, encephalopathy, seizures, intractable vomiting).",
-    },
-    {
-      id: "renal-urology-acute-kidney-injury-c5",
-      front: "Urinary sediment findings and what each means in AKI.",
-      back: "Bland - prerenal or postrenal; muddy brown granular casts with tubular cells - acute tubular necrosis; dysmorphic red cells and red cell casts - glomerulonephritis; white cell casts with eosinophiluria - acute interstitial nephritis.",
-    },
-    {
-      id: "renal-urology-acute-kidney-injury-c6",
-      front: "Emergency treatment of hyperkalaemia, with doses.",
-      back: "Calcium gluconate 10 mL of 10% IV over 2-3 minutes; regular insulin 10 units with 25 g dextrose; salbutamol 10-20 mg nebulised; sodium bicarbonate if acidotic; an oral potassium binder; dialysis if refractory.",
-    },
-    {
-      id: "renal-urology-acute-kidney-injury-c7",
-      front: "Common community-acquired causes of AKI in India.",
-      back: "Acute gastroenteritis, falciparum and vivax malaria, leptospirosis, scrub typhus, dengue, snake envenomation, septic abortion and obstetric haemorrhage, copper sulphate and hair-dye poisoning, and herbal nephrotoxins.",
-    },
-    {
-      id: "renal-urology-acute-kidney-injury-c8",
-      front: "What follow-up does every AKI survivor need?",
-      back: "Serum creatinine and urine ACR at 3 months (AKI trebles the risk of CKD), deliberate one-at-a-time restarting of held drugs, a permanent no-NSAID instruction, and sick-day rules for ACE inhibitors, ARBs, diuretics, metformin and SGLT2 inhibitors.",
     },
   ],
   references: [
@@ -1531,48 +1427,6 @@ topics.push({
       explanation:
         "In a catheter that has been in place more than 2 weeks, the biofilm on the old catheter is the reservoir and its culture reflects colonisation rather than the invading organism, so the catheter is replaced first, the specimen taken from the fresh catheter, and empirical antibiotics then started and de-escalated on sensitivity. A sample from the drainage bag is never acceptable because it is invariably contaminated by stagnant, colonised urine. Catheter irrigation with antiseptic is explicitly discouraged; it does not clear infection and traumatises the urothelium while breaking the closed system. Empirical antifungal therapy is wrong because bacterial uropathogens are far more likely, and asymptomatic candiduria in a catheterised patient usually needs only catheter removal.",
       difficulty: "moderate",
-    },
-  ],
-  cards: [
-    {
-      id: "renal-urology-urinary-tract-infection-c1",
-      front: "What makes a urinary tract infection complicated?",
-      back: "Male sex, pregnancy, obstruction or stones, indwelling catheter or recent instrumentation, neurogenic bladder, poorly controlled diabetes, immunosuppression, renal transplant, or any anatomical anomaly.",
-    },
-    {
-      id: "renal-urology-urinary-tract-infection-c2",
-      front: "Colony counts that count as significant bacteriuria.",
-      back: "10 to the power 5 CFU/mL in a clean-catch midstream sample; 10 to the power 3 CFU/mL of a single uropathogen with typical symptoms in a woman; 10 to the power 4 CFU/mL in pyelonephritis and in men; any growth from a suprapubic aspirate.",
-    },
-    {
-      id: "renal-urology-urinary-tract-infection-c3",
-      front: "When is asymptomatic bacteriuria treated?",
-      back: "Only in pregnancy, and before a urological procedure that will breach the mucosa. Not in the elderly, the catheterised, the diabetic, transplant recipients beyond the first month, or spinal cord injury.",
-    },
-    {
-      id: "renal-urology-urinary-tract-infection-c4",
-      front: "Definition of recurrent UTI, and relapse versus reinfection.",
-      back: "2 or more infections in 6 months or 3 or more in 12 months. Relapse: same organism within 2 weeks of treatment, suggests a focus (stone, abscess, prostatitis). Reinfection: different organism or later interval, suggests host and behavioural factors.",
-    },
-    {
-      id: "renal-urology-urinary-tract-infection-c5",
-      front: "Why is nitrofurantoin useless in pyelonephritis, and when is it contraindicated?",
-      back: "It achieves therapeutic concentration only in urine, not in renal parenchyma, blood or prostate. Avoid when eGFR is below about 30-45 mL/min/1.73 m2, at term in pregnancy, and in G6PD deficiency.",
-    },
-    {
-      id: "renal-urology-urinary-tract-infection-c6",
-      front: "Causes of sterile pyuria.",
-      back: "Genitourinary tuberculosis (three early-morning urines for AFB and CBNAAT), partially treated UTI, chlamydial or gonococcal urethritis, stones, interstitial cystitis, analgesic nephropathy, papillary necrosis, bladder tumour.",
-    },
-    {
-      id: "renal-urology-urinary-tract-infection-c7",
-      front: "Non-antibiotic prevention of recurrent UTI.",
-      back: "An extra 1.5 litres of fluid a day, complete and post-coital voiding, stopping spermicide and diaphragm, treating constipation, and vaginal oestriol cream in postmenopausal women.",
-    },
-    {
-      id: "renal-urology-urinary-tract-infection-c8",
-      front: "The CAUTI prevention bundle.",
-      back: "Catheterise only for a valid indication, insert aseptically, keep a closed drainage system with the bag below the bladder and off the floor, never irrigate or give prophylactic antibiotics, and review the need for the catheter daily so it comes out as early as possible.",
     },
   ],
   references: [
@@ -2022,48 +1876,6 @@ topics.push({
       difficulty: "hard",
     },
   ],
-  cards: [
-    {
-      id: "renal-urology-luts-bph-c1",
-      front: "IPSS: components and severity bands.",
-      back: "Seven questions (incomplete emptying, frequency, intermittency, urgency, weak stream, straining, nocturia), each 0-5, total 0-35: mild 0-7, moderate 8-19, severe 20-35, plus a separate quality of life score 0-6.",
-    },
-    {
-      id: "renal-urology-luts-bph-c2",
-      front: "Distinguish benign prostatic hyperplasia, enlargement and obstruction.",
-      back: "Hyperplasia is the histological transition-zone diagnosis; enlargement is the clinically large gland; obstruction is the urodynamic finding of obstructed flow. They frequently occur without one another.",
-    },
-    {
-      id: "renal-urology-luts-bph-c3",
-      front: "Uroflowmetry cut-offs, and the minimum voided volume for a valid study.",
-      back: "Voided volume must be at least 150 mL. Qmax above 15 mL/s is normal, 10-15 mL/s equivocal, below 10 mL/s suggests obstruction; a flat plateau curve suggests urethral stricture.",
-    },
-    {
-      id: "renal-urology-luts-bph-c4",
-      front: "How do 5-alpha reductase inhibitors change PSA and prostate size?",
-      back: "They shrink the prostate by 20-30% over 6-12 months and halve serum PSA, so double the measured PSA after 6-12 months of treatment before interpreting it.",
-    },
-    {
-      id: "renal-urology-luts-bph-c5",
-      front: "Absolute indications for surgery in BPH.",
-      back: "Refractory retention or failed trial without catheter, recurrent UTI from obstruction, recurrent gross haematuria of prostatic origin, bladder stones, complicated diverticula, and renal impairment or hydronephrosis from bladder outlet obstruction.",
-    },
-    {
-      id: "renal-urology-luts-bph-c6",
-      front: "What is TURP syndrome and how is it prevented?",
-      back: "Dilutional hyponatraemia from absorption of hypotonic glycine irrigation through prostatic venous sinuses, causing confusion, nausea, bradycardia, visual disturbance and seizures. Prevented by bipolar resection with saline, resection time under 60 minutes, and a low irrigation height.",
-    },
-    {
-      id: "renal-urology-luts-bph-c7",
-      front: "Post-obstructive diuresis: definition and management.",
-      back: "Urine output above 200 mL/h after relieving chronic retention. Replace half to two-thirds of the output with intravenous fluid and monitor sodium, potassium and creatinine daily; do not clamp the catheter and do not give a diuretic.",
-    },
-    {
-      id: "renal-urology-luts-bph-c8",
-      front: "Which surgical option for which prostate size?",
-      back: "TUIP for under 30 g without a median lobe; TURP for about 30-80 g; HoLEP or open, laparoscopic or robotic simple prostatectomy above 80 g. Bipolar TURP, photoselective vaporisation, Rezum and urethral lift are alternatives.",
-    },
-  ],
   references: [
     "European Association of Urology Guidelines on the Management of Non-Neurogenic Male Lower Urinary Tract Symptoms, 2024",
     "American Urological Association Guideline on Management of Benign Prostatic Hyperplasia, 2023 amendment",
@@ -2502,48 +2314,6 @@ topics.push({
       explanation:
         "A staghorn stone in alkaline urine with Proteus mirabilis is a struvite infection stone, and because any residual fragment continues to harbour the urease-producing organism and regrows, the aim must be complete clearance, which percutaneous nephrolithotomy achieves better than any other modality, combined with culture-directed antibiotics and surveillance. Suppressive antibiotics alone leave the stone as an untreatable reservoir and lead to progressive loss of renal function and eventual xanthogranulomatous pyelonephritis. ESWL cannot reliably clear a staghorn stone and leaves the fragments that reseed the infection. Urinary acidification with ascorbic acid is ineffective and unsafe as a strategy, and does nothing about the stone burden already present.",
       difficulty: "moderate",
-    },
-  ],
-  cards: [
-    {
-      id: "renal-urology-renal-stones-c1",
-      front: "Investigation of choice for suspected renal colic, and the exceptions.",
-      back: "Non-contrast CT of the kidneys, ureters and bladder (sensitivity 95-98%). Ultrasound is first line in pregnancy and in children; plain X-ray KUB is for following a known radio-opaque stone.",
-    },
-    {
-      id: "renal-urology-renal-stones-c2",
-      front: "Spontaneous passage rates of ureteric stones by size.",
-      back: "Under 5 mm about 70-80%, 5-10 mm about 50%, above 10 mm rarely. Most stones that will pass do so within 4 weeks.",
-    },
-    {
-      id: "renal-urology-renal-stones-c3",
-      front: "First-line analgesia in renal colic, and what not to do.",
-      back: "An NSAID - diclofenac 75 mg IM or ketorolac 30 mg IV - is superior to opioids; IV paracetamol 1 g if NSAIDs are contraindicated. Do not force intravenous fluids to flush the stone out.",
-    },
-    {
-      id: "renal-urology-renal-stones-c4",
-      front: "Which stone is radiolucent on X-ray, and how can it be dissolved?",
-      back: "Uric acid stone, radiolucent on plain film but visible on CT, forming when urine pH stays below 5.5. Dissolve it by alkalinising urine to pH 6.5-7.0 with potassium citrate, plus allopurinol and high fluid intake.",
-    },
-    {
-      id: "renal-urology-renal-stones-c5",
-      front: "Which organisms cause struvite stones, and which does not?",
-      back: "Urease producers - Proteus mirabilis, Klebsiella, Pseudomonas, Ureaplasma - which split urea and raise urine pH above 7.2. Escherichia coli does not produce urease and does not cause struvite stones.",
-    },
-    {
-      id: "renal-urology-renal-stones-c6",
-      front: "Dietary calcium advice for a calcium oxalate stone former.",
-      back: "Normal intake of 1000-1200 mg a day taken with meals, because dietary calcium binds gut oxalate. Never a low-calcium diet. Calcium supplements taken between meals increase risk.",
-    },
-    {
-      id: "renal-urology-renal-stones-c7",
-      front: "Indications for urgent decompression of an obstructing stone.",
-      back: "Obstruction with infection or sepsis, obstruction in a solitary or transplanted kidney, bilateral obstruction, acute kidney injury, and pain or vomiting that cannot be controlled - by percutaneous nephrostomy or retrograde JJ stent.",
-    },
-    {
-      id: "renal-urology-renal-stones-c8",
-      front: "Which procedure for which stone burden?",
-      back: "ESWL for renal stones under 20 mm and ureteric stones under 10 mm; ureteroscopy with laser for ureteric stones above 10 mm or high density; percutaneous nephrolithotomy for renal stones above 20 mm and all staghorn calculi.",
     },
   ],
   references: [
@@ -2987,48 +2757,6 @@ topics.push({
       difficulty: "easy",
     },
   ],
-  cards: [
-    {
-      id: "renal-urology-hyponatraemia-hyperkalaemia-c1",
-      front: "The three-step approach to hyponatraemia.",
-      back: "Step 1: serum osmolality (hypotonic below 275 mOsm/kg is the only true hyponatraemia). Step 2: volume status. Step 3: spot urine sodium and urine osmolality, taken before any fluid or diuretic.",
-    },
-    {
-      id: "renal-urology-hyponatraemia-hyperkalaemia-c2",
-      front: "Diagnostic criteria for SIADH.",
-      back: "Serum osmolality below 275 mOsm/kg; urine osmolality above 100 mOsm/kg; clinical euvolaemia; urine sodium above 30-40 mmol/L on normal intake; normal thyroid, adrenal and renal function with no diuretic. Low uric acid and low urea support it.",
-    },
-    {
-      id: "renal-urology-hyponatraemia-hyperkalaemia-c3",
-      front: "Maximum safe rate of sodium correction.",
-      back: "No more than 8-10 mmol/L in 24 hours and 18 mmol/L in 48 hours; only 4-6 mmol/L in 24 hours if sodium is below 105 mmol/L or the patient is alcoholic, malnourished, hypokalaemic, has liver disease or is elderly.",
-    },
-    {
-      id: "renal-urology-hyponatraemia-hyperkalaemia-c4",
-      front: "Treatment of severe symptomatic hyponatraemia, and the rescue for overcorrection.",
-      back: "3% hypertonic saline 100-150 mL IV over 10-20 minutes, repeated up to three times, until symptoms improve or sodium rises by 4-6 mmol/L. If overcorrected: stop saline, give 5% dextrose 3 mL/kg/h plus desmopressin 2 micrograms IV.",
-    },
-    {
-      id: "renal-urology-hyponatraemia-hyperkalaemia-c5",
-      front: "Correcting sodium for hyperglycaemia.",
-      back: "Add 1.6-2.4 mmol/L to the measured sodium for every 100 mg/dL that glucose exceeds 100 mg/dL. Treat the glucose, not the sodium.",
-    },
-    {
-      id: "renal-urology-hyponatraemia-hyperkalaemia-c6",
-      front: "ECG sequence in hyperkalaemia.",
-      back: "Tall peaked narrow-based T waves, then flat or absent P waves with a long PR, then a widening QRS, then a sine wave, then ventricular fibrillation or asystole. A normal ECG does not exclude danger.",
-    },
-    {
-      id: "renal-urology-hyponatraemia-hyperkalaemia-c7",
-      front: "The three-stage order of hyperkalaemia treatment.",
-      back: "1. Stabilise: calcium gluconate 10 mL of 10% IV. 2. Shift: insulin 10 units with 25 g dextrose, plus salbutamol 10-20 mg nebulised. 3. Remove: furosemide, a potassium binder, or dialysis.",
-    },
-    {
-      id: "renal-urology-hyponatraemia-hyperkalaemia-c8",
-      front: "Hidden dietary and drug causes of hyperkalaemia in Indian practice.",
-      back: "Low-sodium salt substitutes (potassium chloride), coconut water, banana, citrus, tomato, potato, dry fruits and dates; and trimethoprim, NSAIDs, heparin, ACE inhibitors, ARBs, spironolactone and beta blockers.",
-    },
-  ],
   references: [
     "European Society of Endocrinology, ESICM and ERA-EDTA Clinical Practice Guideline on Diagnosis and Treatment of Hyponatraemia, 2014",
     "Expert panel recommendations on the diagnosis and treatment of hyponatraemia, American Journal of Medicine, 2013",
@@ -3451,48 +3179,6 @@ topics.push({
       explanation:
         "Rifampicin is a powerful inducer of CYP3A4 and P-glycoprotein and can reduce tacrolimus concentrations several-fold within days, so the tacrolimus dose must be increased substantially with frequent level monitoring in liaison with the transplant unit, or a rifabutin-based regimen considered - failure to do this causes acute rejection. Isoniazid is not a significant inducer of tacrolimus metabolism, and the drugs that raise levels are the macrolides, azoles, diltiazem, verapamil and grapefruit. Ethambutol does need renal dose adjustment in a transplant recipient with reduced graft function, so saying no adjustment is needed is wrong. Pyrazinamide does not cause calcineurin inhibitor withdrawal; its main issues are hepatotoxicity and hyperuricaemia.",
       difficulty: "hard",
-    },
-  ],
-  cards: [
-    {
-      id: "renal-urology-drug-dosing-renal-impairment-c1",
-      front: "Which equation for staging and which for drug dosing?",
-      back: "CKD-EPI 2021 in mL/min/1.73 m2 for staging; Cockcroft-Gault creatinine clearance in mL/min for drug dosing, because that is what drug labels were written against.",
-    },
-    {
-      id: "renal-urology-drug-dosing-renal-impairment-c2",
-      front: "How do you de-index a reported eGFR to an individual clearance?",
-      back: "Individual clearance = eGFR x body surface area / 1.73. It matters most at extremes of body size and for narrow therapeutic index drugs.",
-    },
-    {
-      id: "renal-urology-drug-dosing-renal-impairment-c3",
-      front: "Does the loading dose change in renal failure?",
-      back: "No. Loading dose depends on volume of distribution, not clearance, so give the full loading dose even in dialysis-dependent failure; adjust only the maintenance dose or interval.",
-    },
-    {
-      id: "renal-urology-drug-dosing-renal-impairment-c4",
-      front: "Dose reduction or interval extension - which for which antibiotic?",
-      back: "Concentration-dependent killing (aminoglycosides, fluoroquinolones): keep the dose, lengthen the interval. Time-dependent killing (beta-lactams, vancomycin): keep the interval, reduce the dose.",
-    },
-    {
-      id: "renal-urology-drug-dosing-renal-impairment-c5",
-      front: "Metformin thresholds by eGFR.",
-      back: "Full dose above 45; maximum 1000 mg/day at 30-44 and do not initiate in that band; stop below 30; hold during acute illness, dehydration and before contrast when eGFR is under 30.",
-    },
-    {
-      id: "renal-urology-drug-dosing-renal-impairment-c6",
-      front: "Drugs that raise serum creatinine without reducing GFR.",
-      back: "Trimethoprim, cimetidine, dolutegravir, ritonavir and cobicistat - they block tubular creatinine secretion. Urea and urine output remain normal.",
-    },
-    {
-      id: "renal-urology-drug-dosing-renal-impairment-c7",
-      front: "Antimicrobials that need no renal dose adjustment.",
-      back: "Azithromycin, doxycycline, clindamycin, linezolid, moxifloxacin, ceftriaxone, rifampicin, isoniazid and metronidazole.",
-    },
-    {
-      id: "renal-urology-drug-dosing-renal-impairment-c8",
-      front: "Sick-day rules for CKD - which drugs are held?",
-      back: "DAMN plus two: Diuretics, ACE inhibitors and ARBs, Metformin, NSAIDs, and also the SGLT2 inhibitor and the mineralocorticoid receptor antagonist. Restart one at a time when eating and drinking normally.",
     },
   ],
   references: [
@@ -3992,48 +3678,6 @@ topics.push({
       explanation:
         "Short duration of diabetes, absent retinopathy, a rapid rise in creatinine and an active sediment with dysmorphic red cells are the classic features arguing against diabetic kidney disease and in favour of a non-diabetic glomerular lesion, which is common in Indian biopsy series - so a renal biopsy is required to make the diagnosis before committing her to lifelong management. Labelling it diabetic nephropathy on the basis of the diabetes alone misses a potentially treatable lesion such as lupus nephritis, membranous nephropathy or a vasculitis. Starting an SGLT2 inhibitor and reviewing in 6 months is reasonable supportive therapy but would delay a diagnosis in a patient whose function is falling fast. Presuming an infection ignores that dysmorphic red cells with heavy proteinuria indicate a glomerular rather than an infective source.",
       difficulty: "moderate",
-    },
-  ],
-  cards: [
-    {
-      id: "renal-urology-proteinuria-nephrotic-nephritic-c1",
-      front: "Define nephrotic syndrome.",
-      back: "Proteinuria above 3.5 g/1.73 m2/day (PCR above 3000 mg/g), serum albumin below 3.0 g/dL, oedema, and hyperlipidaemia with lipiduria, on a bland urinary sediment.",
-    },
-    {
-      id: "renal-urology-proteinuria-nephrotic-nephritic-c2",
-      front: "How does a urine protein-creatinine ratio translate into daily protein excretion?",
-      back: "A PCR of 1000 mg/g corresponds to about 1 g of protein a day, because an adult excretes roughly 1 g of creatinine daily. This makes 24-hour collections largely unnecessary.",
-    },
-    {
-      id: "renal-urology-proteinuria-nephrotic-nephritic-c3",
-      front: "Two things the urine dipstick misses.",
-      back: "Category A2 albuminuria (30-300 mg/g), because it detects albumin only above about 300 mg/L; and Bence Jones light chains in myeloma.",
-    },
-    {
-      id: "renal-urology-proteinuria-nephrotic-nephritic-c4",
-      front: "Post-streptococcal glomerulonephritis versus IgA nephropathy - the timing.",
-      back: "Post-streptococcal: 1-3 weeks after throat infection, 3-6 weeks after pyoderma, with a low C3 that normalises by 6-8 weeks. IgA nephropathy: synpharyngitic, within 1-3 days of the infection, with normal complement.",
-    },
-    {
-      id: "renal-urology-proteinuria-nephrotic-nephritic-c5",
-      front: "Interpreting complement in glomerulonephritis.",
-      back: "Low C3 with normal C4: post-infectious GN or C3 glomerulopathy. Low C3 and low C4: lupus nephritis, cryoglobulinaemia, shunt nephritis. Normal complement: IgA nephropathy, ANCA vasculitis, anti-GBM disease.",
-    },
-    {
-      id: "renal-urology-proteinuria-nephrotic-nephritic-c6",
-      front: "The three types of rapidly progressive glomerulonephritis.",
-      back: "Type 1 anti-GBM (linear IgG, Goodpasture); type 2 immune-complex (lupus, post-infectious, IgA, Henoch-Schonlein, cryoglobulinaemia); type 3 pauci-immune ANCA-associated (GPA with PR3, MPA with MPO).",
-    },
-    {
-      id: "renal-urology-proteinuria-nephrotic-nephritic-c7",
-      front: "Steroid regimen for childhood nephrotic syndrome.",
-      back: "Prednisolone 60 mg/m2/day (maximum 60 mg) for 6 weeks, then 40 mg/m2 on alternate days for 6 weeks, then taper. 80-90% remit within 4 weeks; no remission after 4-6 weeks of daily steroids is steroid resistance and needs a biopsy.",
-    },
-    {
-      id: "renal-urology-proteinuria-nephrotic-nephritic-c8",
-      front: "When should a diabetic patient with proteinuria be biopsied?",
-      back: "When the picture is atypical: no retinopathy, an active sediment with dysmorphic red cells or casts, rapid rise in proteinuria or creatinine, short duration of diabetes, or a sudden nephrotic presentation.",
     },
   ],
   references: [

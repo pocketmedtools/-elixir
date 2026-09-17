@@ -466,68 +466,6 @@ topics.push({
       difficulty: "moderate",
     },
   ],
-  cards: [
-    {
-      id: "respiratory-asthma-c1",
-      front: "GINA definition of asthma in one sentence.",
-      back: "A history of variable respiratory symptoms (wheeze, breathlessness, chest tightness, cough) together with variable expiratory airflow limitation, on a background of chronic airway inflammation.",
-    },
-    {
-      id: "respiratory-asthma-c2",
-      front: "Criteria for significant bronchodilator reversibility.",
-      back: "FEV1 increase of more than 12% AND more than 200 mL, 10-15 minutes after 200-400 microgram of salbutamol.",
-    },
-    {
-      id: "respiratory-asthma-c3",
-      front: "PEF variability that supports a diagnosis of asthma.",
-      back: "Average daily diurnal variability of more than 10% in adults (over 13% in children) across two weeks of twice-daily readings.",
-    },
-    {
-      id: "respiratory-asthma-c4",
-      front: "The four GINA symptom control questions (last 4 weeks).",
-      back: "Daytime symptoms more than twice a week; any night waking; reliever needed more than twice a week; any activity limitation. 0 = controlled, 1-2 = partly, 3-4 = uncontrolled.",
-    },
-    {
-      id: "respiratory-asthma-c5",
-      front: "Why is salmeterol never used as a reliever?",
-      back: "It has a slow onset of action; only formoterol among the LABAs has a rapid onset, which is why ICS-formoterol is the anti-inflammatory reliever in GINA Track 1.",
-    },
-    {
-      id: "respiratory-asthma-c6",
-      front: "Maximum inhalations per day in adult MART with budesonide-formoterol 200/6.",
-      back: "12 inhalations in total in any one day; exceeding this or needing that many repeatedly means the patient must be reassessed the same day.",
-    },
-    {
-      id: "respiratory-asthma-c7",
-      front: "Life-threatening features in acute asthma.",
-      back: "Silent chest, cyanosis, feeble respiratory effort, exhaustion, confusion or drowsiness, bradycardia or hypotension, PEF under 33%, and a normal or rising PaCO2.",
-    },
-    {
-      id: "respiratory-asthma-c8",
-      front: "Steroid dose and duration after an acute asthma exacerbation.",
-      back: "Prednisolone 40-50 mg orally daily for 5-7 days in adults (1-2 mg/kg, maximum 40 mg, for 3-5 days in children); no taper needed for courses under two weeks.",
-    },
-    {
-      id: "respiratory-asthma-c9",
-      front: "Dose and role of magnesium sulphate in acute asthma.",
-      back: "2 g intravenously over 20 minutes as a single dose, for severe exacerbations not responding to the first hour of bronchodilator and steroid, or FEV1 under 25-30% predicted.",
-    },
-    {
-      id: "respiratory-asthma-c10",
-      front: "Number of salbutamol canisters per year that marks high-risk asthma.",
-      back: "Three or more a year is associated with increased exacerbations; twelve or more is associated with increased asthma death.",
-    },
-    {
-      id: "respiratory-asthma-c11",
-      front: "India's share of global asthma cases versus asthma deaths.",
-      back: "About 13% of the world's asthma cases but over 40% of the world's asthma deaths (GBD India State-Level Disease Burden Initiative).",
-    },
-    {
-      id: "respiratory-asthma-c12",
-      front: "When and how do you step down asthma treatment?",
-      back: "After 3 months of good control, reduce the ICS dose by 25-50% with a follow-up date and an action plan; never stop inhaled corticosteroid completely in an adult.",
-    },
-  ],
   references: [
     "Global Initiative for Asthma (GINA), Global Strategy for Asthma Management and Prevention, 2024-2025 update",
     "India Guidelines for Diagnosis and Management of Bronchial Asthma - Joint ICS/NCCP recommendations, 2023",
@@ -992,68 +930,6 @@ topics.push({
       explanation:
         "The Lung Health Study and subsequent data show that stopping smoking is the intervention that returns the rate of FEV1 decline towards that of a non-smoker, at any stage of disease. Inhaled corticosteroids and long-acting bronchodilators improve symptoms, lung function and exacerbations but do not convincingly change the long-term slope of decline. Pulmonary rehabilitation improves exercise capacity and quality of life without altering FEV1, and azithromycin reduces exacerbation frequency in selected patients but does not change lung function decline.",
       difficulty: "easy",
-    },
-  ],
-  cards: [
-    {
-      id: "respiratory-copd-c1",
-      front: "Spirometric criterion that defines COPD.",
-      back: "Post-bronchodilator FEV1/FVC below 0.70 in a patient with chronic respiratory symptoms and a relevant exposure history.",
-    },
-    {
-      id: "respiratory-copd-c2",
-      front: "GOLD grades 1 to 4 by FEV1 percent predicted.",
-      back: "GOLD 1 mild 80% or more; GOLD 2 moderate 50-79%; GOLD 3 severe 30-49%; GOLD 4 very severe under 30%.",
-    },
-    {
-      id: "respiratory-copd-c3",
-      front: "What defines GOLD group E?",
-      back: "Two or more moderate exacerbations in the past year, or one or more requiring hospitalisation, regardless of symptom score.",
-    },
-    {
-      id: "respiratory-copd-c4",
-      front: "Symptom cut-offs that separate group A from group B.",
-      back: "mMRC 2 or more, or CAT score 10 or more, defines the high-symptom group B.",
-    },
-    {
-      id: "respiratory-copd-c5",
-      front: "Eosinophil thresholds for inhaled corticosteroid in COPD.",
-      back: "300 cells/microlitre or more favours adding ICS; 100 or more supports it if exacerbations continue on LABA-LAMA; under 100 argues against it.",
-    },
-    {
-      id: "respiratory-copd-c6",
-      front: "Target oxygen saturation in an acute exacerbation of COPD.",
-      back: "88-92%, ideally with a 24-28% Venturi mask, rechecking the arterial gas within 30-60 minutes.",
-    },
-    {
-      id: "respiratory-copd-c7",
-      front: "Gas criteria for starting non-invasive ventilation in COPD.",
-      back: "pH under 7.35 with PaCO2 above 45 mmHg, or severe dyspnoea with respiratory muscle fatigue despite medical therapy.",
-    },
-    {
-      id: "respiratory-copd-c8",
-      front: "Anthonisen cardinal symptoms of an exacerbation.",
-      back: "Increased dyspnoea, increased sputum volume, increased sputum purulence; antibiotics benefit those with all three, or two including purulence.",
-    },
-    {
-      id: "respiratory-copd-c9",
-      front: "Indications for long-term oxygen therapy.",
-      back: "Resting PaO2 55 mmHg or less (SpO2 88% or less), or PaO2 56-59 mmHg with cor pulmonale, oedema or haematocrit above 55%; used at least 15 hours a day.",
-    },
-    {
-      id: "respiratory-copd-c10",
-      front: "Steroid regimen for an acute exacerbation of COPD.",
-      back: "Prednisolone 40 mg orally once daily for 5 days, without a taper (REDUCE trial).",
-    },
-    {
-      id: "respiratory-copd-c11",
-      front: "Two options for the frequent exacerbator already on triple therapy.",
-      back: "Roflumilast 500 microgram daily if FEV1 under 50% with chronic bronchitis, or azithromycin 250 mg daily / 500 mg three times weekly after checking QTc and excluding non-tuberculous mycobacteria.",
-    },
-    {
-      id: "respiratory-copd-c12",
-      front: "Why is inhaled corticosteroid risky in Indian COPD patients?",
-      back: "It increases the risk of pneumonia and of reactivation of tuberculosis, so it is avoided in patients with prior mycobacterial disease or eosinophils under 100 cells/microlitre.",
     },
   ],
   references: [
@@ -1574,68 +1450,6 @@ topics.push({
       difficulty: "hard",
     },
   ],
-  cards: [
-    {
-      id: "respiratory-tuberculosis-ntep-c1",
-      front: "Definition of presumptive pulmonary tuberculosis under NTEP.",
-      back: "Cough of two weeks or more, fever of two weeks or more, significant weight loss, haemoptysis, or any chest radiograph abnormality; cough of any duration in PLHIV, contacts and other high-risk groups.",
-    },
-    {
-      id: "respiratory-tuberculosis-ntep-c2",
-      front: "The first-line regimen and its duration in India.",
-      back: "2 months of daily HRZE followed by 4 months of daily HRE (ethambutol is retained in the continuation phase); 12 months total for TB meningitis and osteoarticular disease.",
-    },
-    {
-      id: "respiratory-tuberculosis-ntep-c3",
-      front: "Adult weight bands and number of FDC tablets per day.",
-      back: "25-39 kg two tablets, 40-54 kg three, 55-69 kg four, 70 kg and above five - re-check the band at every visit as the patient gains weight.",
-    },
-    {
-      id: "respiratory-tuberculosis-ntep-c4",
-      front: "What is universal drug susceptibility testing?",
-      back: "Every diagnosed TB patient must have rifampicin susceptibility tested at diagnosis, which the upfront NAAT (CBNAAT or Truenat) provides.",
-    },
-    {
-      id: "respiratory-tuberculosis-ntep-c5",
-      front: "When are follow-up sputum smears done in drug-sensitive pulmonary TB?",
-      back: "At the end of the intensive phase (month 2) and at the end of treatment (month 6), plus any time the patient deteriorates.",
-    },
-    {
-      id: "respiratory-tuberculosis-ntep-c6",
-      front: "Definition of treatment failure.",
-      back: "Sputum smear or culture positive at month 5 or later during treatment (or bacteriological or clinical evidence of failure at any time), prompting DST and a change of regimen.",
-    },
-    {
-      id: "respiratory-tuberculosis-ntep-c7",
-      front: "Definition of lost to follow-up.",
-      back: "A patient whose treatment was interrupted for one consecutive month or more.",
-    },
-    {
-      id: "respiratory-tuberculosis-ntep-c8",
-      front: "MDR, pre-XDR and XDR in one line each.",
-      back: "MDR: resistance to at least H and R. Pre-XDR: MDR/RR plus fluoroquinolone resistance. XDR: MDR/RR plus fluoroquinolone resistance plus resistance to bedaquiline or linezolid.",
-    },
-    {
-      id: "respiratory-tuberculosis-ntep-c9",
-      front: "What is the BPaLM regimen and how long is it given?",
-      back: "Bedaquiline, pretomanid, linezolid and moxifloxacin for 6 months, for eligible MDR/RR and pre-XDR patients aged 15 and above; drop moxifloxacin (BPaL) if fluoroquinolone-resistant.",
-    },
-    {
-      id: "respiratory-tuberculosis-ntep-c10",
-      front: "Adverse effect of ethambutol and how it is monitored.",
-      back: "Dose-related retrobulbar optic neuritis with loss of red-green colour discrimination; check visual acuity and colour vision at baseline and periodically, and stop the drug at the first symptom.",
-    },
-    {
-      id: "respiratory-tuberculosis-ntep-c11",
-      front: "How is drug-induced hepatitis on ATT restarted?",
-      back: "Wait until ALT is under twice normal and bilirubin has normalised, then reintroduce sequentially - rifampicin first, then isoniazid, then pyrazinamide.",
-    },
-    {
-      id: "respiratory-tuberculosis-ntep-c12",
-      front: "Ni-kshay Poshan Yojana entitlement now.",
-      back: "Rs 1,000 per month (doubled from Rs 500 in November 2024) by direct benefit transfer for the whole duration of treatment, plus energy-dense nutritional supplement for the undernourished.",
-    },
-  ],
   references: [
     "National TB Elimination Programme, Training Modules for Programme Managers and Medical Officers, Central TB Division, MoHFW, 2020 with subsequent updates",
     "Guidelines for Programmatic Management of Drug-Resistant Tuberculosis in India, Central TB Division, 2021, with the 2024 BPaLM operational guidance",
@@ -2096,68 +1910,6 @@ topics.push({
       explanation:
         "Fluoroquinolones have good anti-tuberculous activity, so an empirical course can produce partial improvement in an undiagnosed tuberculosis patient, delay diagnosis by weeks, and select for fluoroquinolone resistance that later compromises second-line treatment of drug-resistant disease - a serious problem in a high-burden country. They are in fact highly active against pneumococcus and atypical organisms and have excellent oral bioavailability, which is why they are otherwise attractive. Age over 60 is a caution for tendinopathy and dysglycaemia, not an absolute contraindication, and is not the principal Indian argument.",
       difficulty: "easy",
-    },
-  ],
-  cards: [
-    {
-      id: "respiratory-pneumonia-cap-c1",
-      front: "Expand CURB-65 with the exact thresholds.",
-      back: "Confusion (new); Urea above 7 mmol/L (about 19-20 mg/dL); Respiratory rate 30/min or more; Blood pressure systolic under 90 or diastolic 60 mmHg or less; age 65 years or over.",
-    },
-    {
-      id: "respiratory-pneumonia-cap-c2",
-      front: "CURB-65 score bands and site of care.",
-      back: "0-1 home; 2 hospital-supervised or short admission; 3 or more admit as severe; 4-5 assess for intensive care.",
-    },
-    {
-      id: "respiratory-pneumonia-cap-c3",
-      front: "What is CRB-65 and when is it used?",
-      back: "CURB-65 without the urea, for use in a clinic with no laboratory: 0 home, 1-2 refer for assessment, 3-4 urgent admission.",
-    },
-    {
-      id: "respiratory-pneumonia-cap-c4",
-      front: "First-line antibiotic for low-severity CAP in a previously healthy adult.",
-      back: "Amoxicillin 500 mg to 1 g orally three times daily for 5 days, with review at 48-72 hours.",
-    },
-    {
-      id: "respiratory-pneumonia-cap-c5",
-      front: "Antibiotic for outpatient CAP with comorbidity.",
-      back: "Amoxicillin-clavulanate 625 mg TDS plus azithromycin 500 mg OD (or doxycycline), for 5-7 days.",
-    },
-    {
-      id: "respiratory-pneumonia-cap-c6",
-      front: "Criteria for clinical stability that allow stopping antibiotics at 5 days.",
-      back: "Afebrile 48-72 hours plus no more than one of: temperature above 37.8 C, pulse above 100, respiratory rate above 24, systolic BP under 90, SpO2 under 90%, inability to eat, altered mental state.",
-    },
-    {
-      id: "respiratory-pneumonia-cap-c7",
-      front: "Pleural fluid findings that mandate a chest drain in pneumonia.",
-      back: "Frank pus, positive Gram stain or culture, pH under 7.20, glucose under 40-60 mg/dL, or LDH above 1,000 IU/L.",
-    },
-    {
-      id: "respiratory-pneumonia-cap-c8",
-      front: "IMNCI fast-breathing thresholds by age.",
-      back: "60/min or more under 2 months; 50/min or more from 2-12 months; 40/min or more from 1-5 years.",
-    },
-    {
-      id: "respiratory-pneumonia-cap-c9",
-      front: "Six categories of cause for non-resolving pneumonia.",
-      back: "Host factors, wrong or resistant organism (think tuberculosis), complications such as empyema or abscess, endobronchial obstruction, a wrong diagnosis, and drug or adherence failure.",
-    },
-    {
-      id: "respiratory-pneumonia-cap-c10",
-      front: "Clue: upper lobe consolidation with a bulging fissure in an alcoholic diabetic.",
-      back: "Klebsiella pneumoniae (Friedlander pneumonia), often with red-currant jelly sputum and a tendency to abscess formation.",
-    },
-    {
-      id: "respiratory-pneumonia-cap-c11",
-      front: "Who needs a repeat chest radiograph at six weeks after pneumonia?",
-      back: "Smokers, patients over 50, and anyone with persisting symptoms - to confirm resolution and exclude an underlying malignancy.",
-    },
-    {
-      id: "respiratory-pneumonia-cap-c12",
-      front: "Vaccines that prevent community-acquired pneumonia in adults.",
-      back: "Pneumococcal conjugate followed by polysaccharide vaccine in those over 65 or with chronic disease, annual influenza vaccine, and COVID-19 vaccine as per national policy.",
     },
   ],
   references: [
@@ -2650,68 +2402,6 @@ topics.push({
       difficulty: "moderate",
     },
   ],
-  cards: [
-    {
-      id: "respiratory-acute-cough-influenza-covid-c1",
-      front: "WHO surveillance definitions of ILI and SARI.",
-      back: "ILI: acute respiratory infection with measured fever of 38 degrees Celsius or more and cough, onset within the last 10 days. SARI: the same illness requiring hospital admission.",
-    },
-    {
-      id: "respiratory-acute-cough-influenza-covid-c2",
-      front: "Time axis of cough, and the Indian exception.",
-      back: "Acute under 3 weeks, subacute 3-8 weeks, chronic over 8 weeks; but any cough of 2 weeks or more is presumptive tuberculosis under NTEP and needs sputum NAAT.",
-    },
-    {
-      id: "respiratory-acute-cough-influenza-covid-c3",
-      front: "MoHFW influenza Category B(ii) - who and what.",
-      back: "Influenza-like illness in a high-risk group (pregnancy, under 5, over 65, chronic disease, immunosuppression): oseltamivir immediately, home isolation, no test needed.",
-    },
-    {
-      id: "respiratory-acute-cough-influenza-covid-c4",
-      front: "Which influenza patients are tested, and what test?",
-      back: "Only Category C (severe or hospitalised) - RT-PCR on nasopharyngeal and throat swab sent to a VRDL; treatment is never delayed for the result.",
-    },
-    {
-      id: "respiratory-acute-cough-influenza-covid-c5",
-      front: "Oseltamivir adult treatment and prophylaxis doses.",
-      back: "Treatment 75 mg twice daily for 5 days, ideally within 48 hours but at any time in severe or high-risk illness; prophylaxis 75 mg once daily for 10 days.",
-    },
-    {
-      id: "respiratory-acute-cough-influenza-covid-c6",
-      front: "Pneumonia discriminators in a patient with acute cough.",
-      back: "Pulse over 100/min, respiratory rate over 24/min, temperature over 38 degrees Celsius, focal crackles or bronchial breathing, SpO2 under 94% - any one earns a chest radiograph.",
-    },
-    {
-      id: "respiratory-acute-cough-influenza-covid-c7",
-      front: "Point-of-care CRP thresholds for antibiotics in acute cough.",
-      back: "Under 20 mg/L: no antibiotic. 20-100 mg/L: delayed prescription. Over 100 mg/L: treat as pneumonia.",
-    },
-    {
-      id: "respiratory-acute-cough-influenza-covid-c8",
-      front: "COVID-19 severity bands (AIIMS-ICMR).",
-      back: "Mild: no breathlessness, SpO2 94% or more. Moderate: respiratory rate 24-30 or SpO2 90-93%. Severe: rate over 30, SpO2 under 90%, ARDS or shock.",
-    },
-    {
-      id: "respiratory-acute-cough-influenza-covid-c9",
-      front: "The 6-minute walk test in home-isolated COVID-19.",
-      back: "A fall in SpO2 of 3% or more, or a reading under 93% after walking, unmasks silent hypoxaemia and means hospital referral.",
-    },
-    {
-      id: "respiratory-acute-cough-influenza-covid-c10",
-      front: "Pertussis treatment and contact management.",
-      back: "Azithromycin 10 mg/kg day 1 then 5 mg/kg days 2-5 (adult 500 then 250 mg); same course for all household contacts if an infant, pregnant woman or immunocompromised person is at home; exclude from school for 5 days; notify.",
-    },
-    {
-      id: "respiratory-acute-cough-influenza-covid-c11",
-      front: "Influenza vaccine in India: which formulation, when, how often.",
-      back: "Inactivated Southern Hemisphere formulation (trivalent from 2024-25), given in April-May before the monsoon, every year; two doses 4 weeks apart for first-time recipients aged 6 months to 8 years; any trimester of pregnancy.",
-    },
-    {
-      id: "respiratory-acute-cough-influenza-covid-c12",
-      front: "Cough syrups in children - the 2025 MoHFW advice.",
-      back: "Not to be prescribed under 2 years and generally not recommended under 5; use fluids, honey after 1 year, saline nasal drops and a review date instead.",
-    },
-  ],
   references: [
     "MoHFW Guidelines on categorisation of seasonal influenza A H1N1 cases during screening for home isolation, testing, treatment and hospitalisation, 2009, with subsequent revisions",
     "ICMR Treatment Guidelines for Antimicrobial Use in Common Syndromes, 2nd edition, 2019, and National Treatment Guidelines for Antimicrobial Use, NCDC, MoHFW",
@@ -3191,68 +2881,6 @@ topics.push({
       explanation:
         "A positive symptom screen in a contact makes him presumptive tuberculosis, and giving isoniazid alone or with rifapentine to a person with unrecognised active disease is monotherapy that breeds resistance; the correct sequence is a sputum NAAT, a chest radiograph and clinical review, with TPT only after disease is excluded. Starting 3HP or 6H on the IGRA alone ignores the symptoms. Empirical four-drug treatment without a specimen throws away the chance of bacteriological confirmation and rifampicin susceptibility testing, both of which NTEP demands up front. Repeating the IGRA answers a question that is no longer relevant.",
       difficulty: "moderate",
-    },
-  ],
-  cards: [
-    {
-      id: "respiratory-tb-infection-contacts-tpt-c1",
-      front: "Definition of TB infection.",
-      back: "A state of persistent immune response to M. tuberculosis antigens without evidence of clinically manifest active tuberculosis - asymptomatic, non-infectious, normal chest radiograph.",
-    },
-    {
-      id: "respiratory-tb-infection-contacts-tpt-c2",
-      front: "Lifetime risk of progression from infection, and the groups where it is highest.",
-      back: "5-10%, half within the first 2 years; PLHIV about 10% per year; infants under 1 year 40-50%; also undernutrition, diabetes, silicosis, anti-TNF therapy, dialysis and recent infection.",
-    },
-    {
-      id: "respiratory-tb-infection-contacts-tpt-c3",
-      front: "NTEP definition of a household contact.",
-      back: "A person who shared the same enclosed living space as the index patient for one or more nights, or for frequent or extended daytime periods, in the 3 months before the current treatment began.",
-    },
-    {
-      id: "respiratory-tb-infection-contacts-tpt-c4",
-      front: "Screening cascade for every household contact.",
-      back: "Four-symptom screen (cough of any duration, fever, weight loss, night sweats) plus a chest radiograph for all; NAAT for any symptom or radiographic abnormality; TPT only after disease is excluded.",
-    },
-    {
-      id: "respiratory-tb-infection-contacts-tpt-c5",
-      front: "Mantoux technique and reading.",
-      back: "0.1 mL of 5 TU PPD-S or 2 TU PPD RT23 intradermally on the volar forearm; read induration (not erythema) transversely in millimetres at 48-72 hours.",
-    },
-    {
-      id: "respiratory-tb-infection-contacts-tpt-c6",
-      front: "Tuberculin cut-offs under NTEP.",
-      back: "5 mm or more: PLHIV, severely malnourished children, immunosuppressed. 10 mm or more: everyone else including contacts and health workers. Cy-Tb: 5 mm or more.",
-    },
-    {
-      id: "respiratory-tb-infection-contacts-tpt-c7",
-      front: "Who gets TPT without any test of infection?",
-      back: "Household contacts under 5 years of age and all people living with HIV - once active disease has been excluded.",
-    },
-    {
-      id: "respiratory-tb-infection-contacts-tpt-c8",
-      front: "3HP: composition, dose and eligibility.",
-      back: "12 once-weekly doses of isoniazid 15 mg/kg (maximum 900 mg) plus rifapentine 900 mg at 50 kg or more (weight-banded below), age 2 years and above, not in pregnancy, compatible with efavirenz and dolutegravir; complete within 16 weeks.",
-    },
-    {
-      id: "respiratory-tb-infection-contacts-tpt-c9",
-      front: "6H dosing and who it is chosen for.",
-      back: "Isoniazid 10 mg/kg (maximum 300 mg) in children and 5 mg/kg (maximum 300 mg) in adults daily for 6 months with pyridoxine; regimen for children under 2, pregnant women and PLHIV on protease inhibitor or nevirapine ART; 180 doses within 9 months.",
-    },
-    {
-      id: "respiratory-tb-infection-contacts-tpt-c10",
-      front: "Preventive management for a household contact of MDR-TB.",
-      back: "Daily levofloxacin for 6 months (750-1000 mg adult; 15-20 mg/kg child) per WHO 2024, plus symptom screening every 6 months for 2 years; never isoniazid-based regimens.",
-    },
-    {
-      id: "respiratory-tb-infection-contacts-tpt-c11",
-      front: "When to stop TPT for hepatotoxicity.",
-      back: "ALT more than three times the upper limit with symptoms, or more than five times without; stop the drugs, check bilirubin, and do not restart without specialist advice.",
-    },
-    {
-      id: "respiratory-tb-infection-contacts-tpt-c12",
-      front: "Three causes each of a false-negative and a false-positive tuberculin test.",
-      back: "False negative: HIV, severe undernutrition, measles or live vaccine within 6 weeks, miliary TB, steroids, infants under 6 months. False positive: recent BCG (mainly within 10 years) and non-tuberculous mycobacteria.",
     },
   ],
   references: [
@@ -3736,68 +3364,6 @@ topics.push({
       difficulty: "easy",
     },
   ],
-  cards: [
-    {
-      id: "respiratory-pleural-effusion-c1",
-      front: "Light's criteria for an exudate.",
-      back: "Any one of: pleural/serum protein over 0.5; pleural/serum LDH over 0.6; pleural LDH over two-thirds of the upper limit of normal serum LDH.",
-    },
-    {
-      id: "respiratory-pleural-effusion-c2",
-      front: "How to rescue a diuretic-treated heart failure effusion misclassified as exudate.",
-      back: "Serum minus pleural protein over 3.1 g/dL, or serum minus pleural albumin over 1.2 g/dL, indicates a transudate; pleural NT-proBNP over 1,500 pg/mL supports heart failure.",
-    },
-    {
-      id: "respiratory-pleural-effusion-c3",
-      front: "Bedside signs that separate effusion from consolidation.",
-      back: "Both are dull with reduced breath sounds; effusion is stony dull with reduced vocal fremitus and resonance and shift away; consolidation has bronchial breathing with increased fremitus and resonance and no shift.",
-    },
-    {
-      id: "respiratory-pleural-effusion-c4",
-      front: "Volumes of fluid needed to show on each imaging method.",
-      back: "About 200 mL to blunt the costophrenic angle on a PA film, 50 mL on a lateral film, 5-20 mL on ultrasound; a decubitus layer over 1 cm is safe to tap.",
-    },
-    {
-      id: "respiratory-pleural-effusion-c5",
-      front: "Pleural fluid profile of tubercular effusion.",
-      back: "Straw-coloured exudate, protein often over 5 g/dL, lymphocytes over 80%, mesothelial cells under 5%, ADA over 40 U/L (over 70 highly specific), Xpert Ultra positive in about half, closed biopsy granulomas in 80%.",
-    },
-    {
-      id: "respiratory-pleural-effusion-c6",
-      front: "Treatment of tubercular pleural effusion under NTEP.",
-      back: "Notify; daily fixed-dose 2HRZE/4HRE for 6 months by weight band; therapeutic tap for breathlessness; no routine steroids; paradoxical enlargement early is not failure; residual thickening needs no extension.",
-    },
-    {
-      id: "respiratory-pleural-effusion-c7",
-      front: "Criteria for draining a parapneumonic effusion.",
-      back: "pH under 7.20, glucose under 40-60 mg/dL, LDH over 1,000 IU/L, positive Gram stain or culture, loculation on ultrasound, or frank pus (empyema).",
-    },
-    {
-      id: "respiratory-pleural-effusion-c8",
-      front: "Boundaries of the safe triangle for a chest drain.",
-      back: "Anterior border of latissimus dorsi, lateral border of pectoralis major, a horizontal line at the level of the nipple, with the apex below the axilla; fifth intercostal space, over the upper border of the rib.",
-    },
-    {
-      id: "respiratory-pleural-effusion-c9",
-      front: "Maximum volume to remove at one therapeutic tap, and why.",
-      back: "1-1.5 L; stop for chest pain, cough or lightheadedness - re-expansion pulmonary oedema follows rapid emptying of a large or long-standing effusion.",
-    },
-    {
-      id: "respiratory-pleural-effusion-c10",
-      front: "Fluid clues: very low glucose, milky fluid, bloody fluid, high amylase.",
-      back: "Glucose under 30 mg/dL - rheumatoid effusion (also empyema, TB, malignancy); milky - chylothorax with triglycerides over 110 mg/dL; bloody - malignancy, embolism, trauma (haemothorax if haematocrit over 50% of blood); amylase - pancreatitis or oesophageal rupture.",
-    },
-    {
-      id: "respiratory-pleural-effusion-c11",
-      front: "Massive effusion without contralateral mediastinal shift - what does it mean?",
-      back: "The lung beneath has collapsed: endobronchial carcinoma or a mesothelioma fixing the mediastinum; needs CT and bronchoscopy, not repeated aspiration.",
-    },
-    {
-      id: "respiratory-pleural-effusion-c12",
-      front: "Management options for a recurrent malignant pleural effusion.",
-      back: "Therapeutic aspiration for symptoms; for recurrence an indwelling pleural catheter, or talc pleurodesis if the lung re-expands (impossible in trapped lung); palliative care with a median survival of 4-6 months.",
-    },
-  ],
   references: [
     "British Thoracic Society Guideline for Pleural Disease, 2023",
     "Light RW. Pleural Diseases, 6th edition, 2013, and the original Light's criteria, Annals of Internal Medicine 1972",
@@ -4256,48 +3822,6 @@ topics.push({
       explanation:
         "Adenotonsillar hypertrophy is the commonest cause of paediatric obstructive sleep apnoea and adenotonsillectomy is the first-line definitive treatment, with hyperactivity rather than sleepiness being the typical daytime presentation in children. CPAP is used in children only when surgery is contraindicated, refused, or has failed to resolve residual disease. A mandibular advancement device is an adult option for mild-to-moderate disease and is unsuitable in a growing child with tonsillar obstruction. Intranasal steroid with or without montelukast may help mild residual disease or those unfit for surgery, but it does not address grade 3 tonsils and delaying six months risks continued growth and cognitive consequences.",
       difficulty: "moderate",
-    },
-  ],
-  cards: [
-    {
-      id: "respiratory-osa-c1",
-      front: "Define an apnoea and a hypopnoea on polysomnography",
-      back: "Apnoea: airflow falls by 90% or more for 10 seconds or more (obstructive if effort continues). Hypopnoea: airflow falls by 30% or more for 10 seconds or more with a 3% desaturation or an arousal.",
-    },
-    {
-      id: "respiratory-osa-c2",
-      front: "Diagnostic threshold for obstructive sleep apnoea",
-      back: "AHI of 5 or more per hour with symptoms or an associated comorbidity, or an AHI of 15 or more per hour with or without symptoms.",
-    },
-    {
-      id: "respiratory-osa-c3",
-      front: "AHI severity bands",
-      back: "Mild 5 to under 15, moderate 15 to under 30, severe 30 or more events per hour of sleep.",
-    },
-    {
-      id: "respiratory-osa-c4",
-      front: "Expand STOP-BANG and give the risk bands",
-      back: "Snoring, Tiredness, Observed apnoea, Pressure (hypertension), BMI over 35, Age over 50, Neck over 40 cm, male Gender. 0-2 low, 3-4 intermediate, 5-8 high risk.",
-    },
-    {
-      id: "respiratory-osa-c5",
-      front: "Epworth Sleepiness Scale - range and cut-off",
-      back: "Eight situations scored 0-3, total 0-24; above 10 indicates excessive daytime sleepiness. It measures sleepiness, not the severity of obstruction.",
-    },
-    {
-      id: "respiratory-osa-c6",
-      front: "How does CPAP work, and what counts as adequate adherence?",
-      back: "It is a pneumatic splint holding the pharynx open during sleep. Adequate use is 4 hours or more a night on at least 70% of nights, verified from the device download.",
-    },
-    {
-      id: "respiratory-osa-c7",
-      front: "Define obesity hypoventilation syndrome",
-      back: "BMI 30 or more with awake daytime hypercapnia (PaCO2 above 45 mmHg) and no other cause; about 90% also have OSA. Treated with positive airway pressure plus weight loss.",
-    },
-    {
-      id: "respiratory-osa-c8",
-      front: "Effect of weight loss on OSA, and first-line treatment in children",
-      back: "A 10% loss of body weight reduces the AHI by roughly 25-30%. In children, adenotonsillar hypertrophy is the usual cause and adenotonsillectomy the first-line treatment.",
     },
   ],
   references: [
