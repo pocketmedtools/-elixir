@@ -119,6 +119,14 @@ export const STILL_CURRENT = new Set<string>([
   "NVBDCP 2014", "ASAS 2009", "ACR/EULAR 2015", "WHO Pesticide 2008",
   "AASM 2015", "Endocrine Society 2009", "JAPI 2009", "AAN 2012", "IDSA 2004",
   "ILAE 2014", "ILAE 2015", "OCEBM 2011",
+  // Searched September 2026, no successor: the GRADE Handbook (the GRADE Book
+  // is incomplete and has not withdrawn it), the MoHFW Clinical Establishments
+  // Act ophthalmology STG, the WHO chronic suppurative otitis media document,
+  // the IDSA rhinosinusitis guideline, the ACEP ketamine dissociative sedation
+  // guideline and procedural sedation clinical policy, and NICE CG97 on lower
+  // urinary tract symptoms in men (2019 surveillance: no update needed).
+  "GRADE Handbook 2013", "STG Ophthalmology MoHFW 2015", "WHO CSOM 2004",
+  "IDSA ABRS 2012", "ACEP 2011", "ACEP 2014", "NICE CG97 2015",
 ]);
 
 const YEAR = /\b(19|20)\d{2}\b/;
