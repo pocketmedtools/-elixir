@@ -323,59 +323,106 @@ reactions carried a warning. So the faults to hunt are a label that contradicts
 its own detail, a number borrowed from the neighbouring instrument, and a
 dangerous step left unmarked.
 
-## Phase 5 — high-yield points, reasoning and sources (in progress)
+## Phase 5 — high-yield points, reasoning and sources (done)
 
 The complaint was that concepts still read as paragraphs. Measured, that was
 true of 68 topics across 13 subjects; respiratory was the worst in the library
 at a 253-character mean with 59 per cent of points over 200 characters and not
 one source tag.
 
-**Where it has reached.** Library mean 119 characters (was 135), points over
-200 characters 3 per cent (was 12), sourced 66 per cent (was 49). Eleven
-subjects clear every target. Finished and verified: cardiovascular,
-dermatology, eye-ent, musculoskeletal, endocrine, gastro-hepatology, and most
-of neurology, obstetrics, psychiatry, surgery-office.
+**Where it finished.** Every one of the 39,405 points in all 20 subjects now
+gives a reason, ends in a traceable citation, and that citation is the current
+document. `npm run depth` reads 100/100/100 for every subject.
 
-**Still to do, in priority order.**
+| | at the start | now |
+|---|---|---|
+| gives a reason | 26% | 100% |
+| cites a source | 49% | 100% |
+| citation is current | 79% | 100% |
+| mean length | 135 chars | 137 chars |
+| over 200 characters | 12% | 0% |
 
-1. Finish the topics that still carry `<-- LONG` in `npm run prosetopic`:
-   mostly pediatrics, preventive and respiratory.
-2. The seven subjects never in this wave, which are short but unsupported -
-   this is the bigger gap and `npm run depth` is the measure of it:
+**The measurement bug that mattered more than the content.** The currency check
+first read 88 per cent, and most of what it flagged was correct. It failed any
+citation older than a decade, which made `[Factories Act 1948]` and `[Wilson
+and Jungner 1968]` look like rot beside `[KDIGO 2012]`, which really had been
+replaced. A statute, a court judgment, a census, a treaty, a scheme named for
+the year it began and a landmark paper are all cited by their own year forever;
+only a document with editions can go out of date. `scripts/lib/citations.ts`
+now classifies a tag, and both checkers read it. Of 368 flagged tags over 4,569
+points, 201 were never rot. Every remaining tag was searched for a successor one
+at a time, and the sets carry a note on each saying how it was decided.
 
-   | subject | gives a reason | cites a source |
-   |---|---|---|
-   | renal-urology | 22% | 7% |
-   | symptom-approach | 32% | 14% |
-   | geriatrics-ethics | 31% | 31% |
-   | emergency | 20% | 34% |
-   | fm-principles | 27% | 39% |
-   | infectious-fever | 23% | 43% |
-   | gynaecology | 28% | 47% |
+**Where a new edition existed, the point was rewritten, not relabelled.** A
+point that cites the current document while stating the superseded advice is
+worse than one that cites the old document honestly. Found this way:
 
-3. Paediatrics cites sources but only 32 per cent of them name a recent edition
-   or a year inside the last decade; those citations need refreshing.
+- IDSA replaced its group A streptococcal pharyngitis guideline in October 2025
+  and now gates testing on a Centor or McIsaac score. 91 points in eye-ent.
+- NICE NG249 (April 2025) replaced CG161 on falls: scope widened to people
+  50-64 at higher risk, strength and balance training promoted. 79 points.
+- Two cardiovascular points cited ESC 2024 while stating the 2020 rule:
+  anticoagulation is now CHA2DS2-VA, the sex point dropped, and the
+  cardioversion window is 24 hours, not 48.
+- The Intensified Diarrhoea Control Fortnight was replaced by the STOP
+  Diarrhoea Campaign in 2025, with co-packaged ORS and zinc.
 
-**How to run it.** One agent per subject, never more than about six at once -
-a session limit killed nine at once on the first attempt. Give each agent only
-its own subject file, forbid reading the file whole (they are 350-450 KB), and
-require it to clear `npm run prosetopic <subject>` before finishing. Keep an
-autosave committing every few minutes; the agents do not commit.
+**The two tools that made the wave safe.** Earlier waves had each agent writing
+its own finder and its own applier, and one of those appliers left a file unable
+to import. Now:
+
+- `npm run failing <subject> [reason|source|stale|all] [topic]` lists the exact
+  points that fail, as JSON lines, so nobody reads a 400 KB file to find them.
+- `npm run apply <file> <batch.json>` takes `[{old, new}]` and refuses the whole
+  batch, writing nothing, if any entry is not found exactly once, is non-ASCII,
+  has other than one bold run, exceeds 170 characters, drops a numeric token the
+  old text had, or leaves the file unable to import.
+
+The number-retention rule caught five genuine losses in earlier waves and is the
+single most valuable check here. Note its one limit: a dated relabel such as
+`[BTS 2010]` to `[BTS 2023]` drops a number by definition, so tag-only changes
+need a separate step that keeps the body byte-identical.
+
+**How it was run.** One agent per subject or small group, never more than six at
+once - session limits killed waves of thirteen, nine and seven. Each agent got
+`scratchpad/BRIEF.md` and `verified.md` (settled verdicts, so nobody
+re-researched them), its own scratch directory, and a standing instruction to
+measure first and never assume a topic was already done. That instruction earned
+its place: told four musculoskeletal topics were finished, the agent measured
+them at 19 per cent and did them anyway.
 
 **The failure to expect.** An agent killed mid-edit leaves the file
-syntactically broken - the first attempt left a duplicated brace in
-`obstetrics.ts`, which made the whole subject fail to load and its five
-diagrams look like orphans. After any interrupted wave, run `npm run verify`
-before anything else, and if a subject fails to load, find it with
+syntactically broken - one wave left a duplicated brace in `obstetrics.ts`,
+which made the whole subject fail to load and its five diagrams look like
+orphans. Keep an autosave that commits every few minutes **only when the content
+parses**, so a half-written block can never be pushed. After any interrupted
+wave run `npm run verify` first, and if a subject fails to load find it with
 `npx tsx -e 'import("./src/content/<subject>.ts")'`, which prints the line.
 
-**The two checks this phase added.** `npm run prosetopic <subject>` lists each
-topic with its mean and its over-200 share, marking the ones still long, so a
-finishing pass targets only those. `npm run depth` counts, per subject, the
-share of points that give a reason rather than only a fact, the share that end
-in a traceable citation, and the share of those citations that are current.
-Shape and substance fail independently: a point can be short, sharp and still
-an unsupported assertion.
+**The checks this phase added.** `npm run prosetopic <subject>` lists each topic
+with its mean and over-200 share. `npm run depth` counts, per subject, the share
+of points that give a reason, the share that end in a traceable citation, and the
+share of those citations that are current. `npm run stale [subject] [tags]` lists
+what is left, by topic or by tag. Shape and substance fail independently: a point
+can be short, sharp and still an unsupported assertion.
+
+## Phase 6 — the Android build, fixed
+
+Every APK build had been failing for some time: always in 28 seconds, always
+before a line of the app compiled, while the content and web build passed. The
+cause was one line in the log - `setup-android` installs a legacy SDK package
+called `tools` by default, Google withdrew it from the SDK repository, and
+`sdkmanager` exits 1. Passing `packages: ''` fixes it; the runner image already
+ships platform-tools and build-tools, and Gradle fetches the rest.
+
+Worth remembering because the failure was invisible from inside the repo: the
+code was fine and the workflow file was unchanged for weeks. If the APK link
+stops updating, read the job log before reading the diff.
+
+The Node 20 deprecation notice in the same log is unrelated: GitHub already
+forces these actions onto Node 24 and they work. Bumping `checkout`,
+`setup-node` and `setup-java` to their Node 24 majors is worth doing as its own
+change, with the tags checked first.
 
 ## Phase 3 — making it glanceable (done)
 
