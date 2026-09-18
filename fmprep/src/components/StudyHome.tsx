@@ -34,7 +34,7 @@ import {
 import { currentStreak, getState, getVersion, subscribe } from "../lib/store";
 import { getDocs } from "../lib/docs";
 import type { StudyView } from "./StudyModule";
-import { Chip } from "./ui";
+import {} from "./ui";
 import { colorVars } from "../lib/hues";
 
 const SECTIONS: {
@@ -121,7 +121,7 @@ export default function StudyHome({ onGo }: { onGo: (view: StudyView) => void })
   useSyncExternalStore(subscribeContent, contentVersion);
   const state = getState();
   const streak = currentStreak(Date.now());
-  const docs = getDocs();
+
   const readCount = Object.keys(state.topics).length;
   const [downloading, setDownloading] = useState<{ done: number; total: number } | null>(null);
 
@@ -138,17 +138,15 @@ export default function StudyHome({ onGo }: { onGo: (view: StudyView) => void })
   return (
     <div className="mx-auto max-w-4xl px-3 py-6 md:px-6">
       <header>
-        <h1 className="text-[26px] font-bold leading-[1.25] tracking-tight text-slate-900">Family Medicine exam preparation</h1>
-        <p className="mt-1.5 text-[17.5px] leading-[1.7] text-slate-700">
-          Notes, written-paper answers, cases, questions and your own documents. Every subject is downloaded once,
-          then read with no network at all.
-        </p>
-        <div className="mt-4 flex flex-wrap gap-2">
-          <Chip tone="blue">{SUBJECT_META.length} subjects</Chip>
-          <Chip>4 papers covered</Chip>
-          {docs.length > 0 && <Chip tone="teal">{docs.length} of your documents</Chip>}
-          {ready && <Chip tone="teal">Whole library available offline</Chip>}
-        </div>
+        {/* One line, capitals, a book face: the name of the thing and nothing
+            under it. The strapline and the count chips were noise on a phone,
+            and every count is one tap away in the tiles. */}
+        <h1
+          className="whitespace-nowrap text-[17px] font-bold tracking-[0.04em] sm:text-[24px]"
+          style={{ fontFamily: '"Times New Roman", Times, Georgia, serif', color: "var(--head)" }}
+        >
+          FAMILY MEDICINE EXAM PREPARATION
+        </h1>
       </header>
 
       <button
