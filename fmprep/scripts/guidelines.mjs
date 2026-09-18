@@ -36,6 +36,16 @@ const CYCLE =
 const EDITION = /\b(\d{1,2})e\b/;
 const TAG = /\[([A-Za-z][^\][]{1,60}?\s(?:19|20)\d{2}[a-z]?)\]/g;
 
+/** Editions checked against the publisher's own document, on disk, by hand.
+ *  A tag on this list is still listed below as due a look when older than the
+ *  current year, because the check covered the recommendations named, not
+ *  every point; it is printed so the reader knows how far the audit reached. */
+const VERIFIED = [
+  "GOLD 2026  - Pocket Guide v1.1: figures 2.10-2.13, 3.8-3.10 read as pages (no text layer)",
+  "GINA 2026  - Summary Guide: Track 1/2, Table 7 AIR/MART doses, exacerbation steroids",
+  "ADA 2026   - Standards of Care: recs 2 (screening), 9.5-9.12, 10.3-10.4, 10.18-10.24, 12.5, 13 (older adults)",
+];
+
 const want = process.argv.includes("--body")
   ? process.argv[process.argv.indexOf("--body") + 1]?.toUpperCase()
   : null;
@@ -70,6 +80,8 @@ const B = pick(books).sort(byUse);
 const total = [...uses.values()].reduce((s, a) => s + a.n, 0);
 const due = C.reduce((s, r) => s + r.n, 0);
 
+console.log("\nChecked against the publisher's document (see scripts/guidelines.mjs):");
+for (const v of VERIFIED) console.log("  " + v);
 console.log(`\n${due.toLocaleString()} of ${total.toLocaleString()} cited points name a body that has`);
 console.log(`reissued since the tag was written - ${((due / total) * 100).toFixed(1)} per cent of the library.`);
 console.log(`${C.length} distinct editions, from ${Math.min(...C.map((r) => r.year))} to ${THIS_YEAR - 1}.\n`);
