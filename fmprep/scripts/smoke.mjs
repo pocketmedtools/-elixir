@@ -86,8 +86,10 @@ await page.getByRole("button", { name: /Previous-year questions/i }).first().cli
 await page.waitForTimeout(12000); // whole library + the question bank chunk
 const heading = await page.getByRole("heading", { name: /Previous-year questions/i }).count();
 check("pyq screen opens", heading > 0);
-const blurb = await page.getByText(/questions from .* sittings/i).first().innerText().catch(() => "");
-check("pyq counts shown", /\d+ questions from \d+ sittings/i.test(blurb), blurb.slice(0, 80));
+// The sentence that used to give the counts was removed with the other
+// straplines; what must still be true is that the sittings themselves render.
+const sittingYears = await page.getByText(/\b20(2[2-5])\b/).count();
+check("pyq sittings listed", sittingYears > 0, `${sittingYears} year labels`);
 
 // A real question from the papers, and its link into the library.
 const q1 = page.getByText(/Describe briefly on Vit\.D metabolism/i).first();
