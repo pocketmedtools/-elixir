@@ -32,7 +32,6 @@ import {
   subscribeContent,
 } from "../content/index";
 import { currentStreak, getState, getVersion, subscribe } from "../lib/store";
-import { getDocs } from "../lib/docs";
 import type { StudyView } from "./StudyModule";
 import {} from "./ui";
 import { colorVars } from "../lib/hues";
