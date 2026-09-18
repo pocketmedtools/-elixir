@@ -16,7 +16,6 @@ import {
   PYQ_SOURCE_NOTE,
   TOPICWISE_QUESTIONS,
   papersFor,
-  pyqCounts,
   recurringTopics,
   sittings,
   topicGroups,
@@ -168,7 +167,6 @@ export default function PyqScreen({
   const [topicQuery, setTopicQuery] = useState("");
   const [openTopic, setOpenTopic] = useState<string | null>(null);
 
-  const counts = pyqCounts();
   const sittingList = sittings();
   /* Built once over every question from both sources, because a question can
      repeat between a sitting paper and the topic-wise compilation. */
@@ -210,11 +208,6 @@ export default function PyqScreen({
       <h1 className="mt-5 text-2xl font-bold tracking-tight text-slate-900">
         Previous-year questions
       </h1>
-      <p className="mt-1 leading-relaxed text-slate-700">
-        {counts.paperQuestions} questions from {counts.sittings} sittings (2022–2025), and{" "}
-        {counts.topicwiseQuestions} filed under {counts.topics} topics (2011–2022). Every one opens
-        onto the topic that answers it.
-      </p>
       <p className="mt-3 rounded-xl border border-slate-200 bg-white p-4 text-[15.5px] leading-[1.65] text-slate-700 shadow-sm">
         {PYQ_SOURCE_NOTE}
       </p>

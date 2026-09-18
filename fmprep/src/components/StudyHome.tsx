@@ -39,77 +39,66 @@ import { colorVars } from "../lib/hues";
 const SECTIONS: {
   id: string;
   title: string;
-  body: string;
   view: StudyView;
   icon: typeof BookOpen;
 }[] = [
   {
     id: "pattern",
     title: "Exam pattern & blueprint",
-    body: "What the papers are, what they carry, and how to write them.",
     view: { name: "pattern" },
     icon: GraduationCap,
   },
   {
     id: "library",
     title: "Subject library",
-    body: "Every subject, ordered common to uncommon.",
     view: { name: "library" },
     icon: BookOpen,
   },
   {
     id: "pyq",
     title: "Previous-year questions",
-    body: "What was actually asked, sitting by sitting, linked to the answer.",
     view: { name: "pyq" },
     icon: History,
   },
   {
     id: "theory",
     title: "Theory question bank",
-    body: "Written-paper questions with model answers, by paper.",
     view: { name: "theory" },
     icon: FileText,
   },
   {
     id: "cases",
     title: "Case presentations",
-    body: "Long, short, OSCE and viva — worked end to end.",
     view: { name: "cases" },
     icon: Stethoscope,
   },
   {
     id: "howto",
     title: "How to present a case",
-    body: "The running order, the phrases, the family tools.",
     view: { name: "presentation" },
     icon: ClipboardList,
   },
   {
     id: "mcq",
     title: "MCQs & mock exams",
-    body: "Practice sets that target what you get wrong.",
     view: { name: "quizSetup" },
     icon: ListChecks,
   },
   {
     id: "charts",
     title: "Charts, Scores & Tables",
-    body: "Every classification, scoring system, flow chart and table in one place, searchable.",
     view: { name: "charts" },
     icon: Layers,
   },
   {
     id: "docs",
     title: "My documents",
-    body: "Your own notes and files, read here, complete and offline.",
     view: { name: "docs" },
     icon: FolderOpen,
   },
   {
     id: "progress",
     title: "Progress",
-    body: "Streak, coverage, weak subjects, past mock scores.",
     view: { name: "progress" },
     icon: TrendingUp,
   },
@@ -203,9 +192,6 @@ export default function StudyHome({ onGo }: { onGo: (view: StudyView) => void })
               <span>
                 <span className="block text-[17px] font-bold leading-snug" style={{ color: "var(--head)" }}>
                   {s.title}
-                </span>
-                <span className="mt-1.5 block text-[13.5px] leading-[1.55]" style={{ color: "var(--quiet)" }}>
-                  {s.body}
                 </span>
               </span>
             </button>

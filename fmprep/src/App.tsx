@@ -62,9 +62,6 @@ export default function App() {
           </span>
           <div className="min-w-0 flex-1">
             <p className="text-[19px] font-bold leading-tight" style={{ color: "var(--head)" }}>FM Prep</p>
-            <p className="hidden text-[13px] leading-snug text-slate-500 sm:block">
-              DNB / MD Family Medicine — notes, papers, cases, questions
-            </p>
           </div>
           {/* Offering the Android app to someone already inside the Android
               app is noise, so the installed build drops it. The release

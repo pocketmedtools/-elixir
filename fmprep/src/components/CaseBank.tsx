@@ -40,11 +40,6 @@ export function CaseList({
     <div className="mx-auto max-w-3xl px-3 py-5 md:px-6">
       <BackBar onBack={onBack} label="Study" />
       <h1 className="mt-5 text-2xl font-bold tracking-tight text-slate-900">Case presentations</h1>
-      <p className="mt-1 leading-relaxed text-slate-700">
-        {cases.length} cases worked through as they are presented: the opening line, the history and examination
-        in presentation order, the summary statement, the differential argued both ways, the investigations with
-        a reason each, the plan, and the viva that follows.
-      </p>
       <button
         type="button"
         onClick={onHowTo}

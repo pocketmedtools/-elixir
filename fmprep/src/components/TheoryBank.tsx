@@ -51,10 +51,6 @@ export default function TheoryBank({
     <div className="mx-auto max-w-3xl px-3 py-5 md:px-6">
       <BackBar onBack={onBack} label="Study" />
       <h1 className="mt-5 text-[26px] font-bold leading-tight tracking-tight text-slate-900">Theory question bank</h1>
-      <p className="mt-2 text-[17.5px] leading-[1.7] text-slate-700">
-        {all.length} written-paper questions in the shapes the papers actually use — long answers, short notes,
-        enumerations and differentiations — each with a model answer written in the order it should be put down.
-      </p>
 
       <div className="mt-4 space-y-2">
         <div className="flex flex-wrap gap-1.5">

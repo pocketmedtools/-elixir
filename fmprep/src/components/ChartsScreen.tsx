@@ -28,10 +28,6 @@ import { BackBar, TableBlock } from "./ui";
 
 const KINDS: ChartKind[] = ["score", "treatment", "flow", "table"];
 
-const isNativeApp = Boolean(
-  (globalThis as { Capacitor?: { isNativePlatform?: () => boolean } }).Capacitor?.isNativePlatform?.(),
-);
-
 export default function ChartsScreen({
   onBack,
   onOpenTopic,
@@ -47,12 +43,6 @@ export default function ChartsScreen({
   const [query, setQuery] = useState(initialQuery);
   const [kind, setKind] = useState<ChartKind | null>(null);
   const [open, setOpen] = useState<string | null>(initialChartId ?? null);
-  /* What the daily notification is actually doing, in the words a reader needs:
-     it is the installed app only, and it says so rather than leaving someone
-     waiting for a notification the web page can never send. */
-  const [notifyNote, setNotifyNote] = useState(
-    "Install the Android app to get it as a notification at 8am.",
-  );
   const [byTopic, setByTopic] = useState<Record<string, Diagram[]> | null>(null);
   const ready = byTopic !== null;
 
@@ -87,10 +77,7 @@ export default function ChartsScreen({
      notification once its tab is closed. */
   useEffect(() => {
     if (!index.length) return;
-    void armDailyChart(index, examWeight).then((n) => {
-      if (n > 0) setNotifyNote(`Notifications are on: the next ${n} days are scheduled for 8am.`);
-      else if (isNativeApp) setNotifyNote("Allow notifications to get it at 8am.");
-    });
+    void armDailyChart(index, examWeight);
   }, [index, examWeight]);
 
   const counts = useMemo(() => {
@@ -107,11 +94,7 @@ export default function ChartsScreen({
         <h2 className="mt-4 text-[1.45em] font-bold leading-tight tracking-tight">
           Charts, Scores &amp; Tables
         </h2>
-        <p className="mt-1.5 text-[14.5px] leading-relaxed text-[var(--quiet)]">
-          {ready
-            ? `${index.length} charts across the whole library. Search a topic, a score, a drug or a subject.`
-            : "Loading every chart in the library…"}
-        </p>
+        {!ready && <p className="mt-1.5 text-[14.5px] text-[var(--quiet)]">Loading every chart in the library…</p>}
 
         <label className="relative mt-4 block">
           <Search
@@ -165,9 +148,6 @@ export default function ChartsScreen({
             </p>
             {/* Nothing on screen said what the daily chart was or where it came
                 from, so it read as decoration. It has to say so itself. */}
-            <p className="mt-1 mb-2 text-[13px] leading-snug" style={{ color: "var(--quiet)" }}>
-              One a day, worked through most-examined first. {notifyNote}
-            </p>
             <Row entry={today} open={open === today.id} onToggle={() => setOpen(open === today.id ? null : today.id)} onOpenTopic={onOpenTopic} />
           </section>
         )}

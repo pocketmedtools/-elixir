@@ -26,10 +26,6 @@ export default function LibraryScreen({
     <div className="mx-auto max-w-4xl px-3 py-6 md:px-6">
       <BackBar onBack={onBack} label="Study" />
       <h1 className="mt-6 text-[26px] font-bold leading-[1.25] tracking-tight text-slate-900">Subject library</h1>
-      <p className="mt-1.5 text-[17.5px] leading-[1.7] text-slate-700">
-        Inside every subject the topics run commonest first, so a short revision session covers what is most
-        likely to be asked, and the uncommon material is still there when there is time for it.
-      </p>
 
       {SUBJECT_GROUPS.map((group) => (
         <section key={group.heading} className="mt-8">

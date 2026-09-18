@@ -88,11 +88,6 @@ export default function MyDocuments({
     <div className="mx-auto max-w-3xl px-3 py-5 md:px-6">
       <BackBar onBack={onBack} label="Study" />
       <h1 className="mt-5 text-2xl font-bold tracking-tight text-slate-900">My documents</h1>
-      <p className="mt-1 leading-relaxed text-slate-700">
-        Bring in your own notes, project files and case write-ups. The whole text is kept, word for word, and the
-        original file is stored alongside it so it can be taken out again unchanged. Everything stays on this
-        device and works with no network.
-      </p>
 
       <section className="mt-4 rounded-xl border border-slate-200 bg-white p-4 shadow-sm">
         <label className="block text-xs font-semibold text-slate-700">

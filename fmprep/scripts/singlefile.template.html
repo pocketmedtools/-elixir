@@ -1086,16 +1086,12 @@ function viewCharts(){
   const today = (!state.cq && !state.ck) ? chartOfDay() : null;
   return '<div><p class="eyebrow mute">The whole library, by chart</p>' +
     '<h2 style="font-size:30px;margin:10px 0 6px">Charts, Scores &amp; Tables</h2>' +
-    '<p style="color:var(--quiet);font-size:15px;max-width:62ch">' + idx.length +
-      ' charts across every subject. Search a topic, a score, a drug or a subject name.</p>' +
     '<input type="search" id="cq" value="' + esc(state.cq || "") +
       '" placeholder="Glasgow coma, Ranson, asthma step-up, dengue..." style="margin:18px 0 0;max-width:520px">' +
     '<div class="pills">' + ["score","treatment","flow","table"].map(k =>
       '<button class="pill" data-ck="' + k + '" aria-pressed="' + (state.ck === k) + '">' +
         CHART_LABEL[k] + (counts[k] ? " (" + counts[k] + ")" : "") + '</button>').join("") + '</div>' +
     (today ? '<div class="today"><p class="eyebrow">Today\'s classification</p>' +
-       '<p class="today-note">One a day, worked through most-examined first. ' +
-       'Install the Android app to get it as a notification at 8am.</p>' +
        chartCard(today, state.chart === today.id) + '</div>' : "") +
     '<p style="color:var(--quiet);font-size:14px;margin:22px 0 10px">' + res.length +
       (res.length === 1 ? ' chart' : ' charts') + (state.cq ? ' matching "' + esc(state.cq) + '"' : "") + '</p>' +

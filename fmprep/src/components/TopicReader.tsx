@@ -242,9 +242,6 @@ export default function TopicReader({
           <h2 className="text-[1.2em] font-bold leading-snug tracking-tight text-slate-900">
             Theory questions from this topic ({topic.theory.length})
           </h2>
-          <p className="mt-2 text-[13.5px] leading-relaxed text-slate-600">
-            Written-paper style, with the model answer laid out in the order it should be written.
-          </p>
           <div className="mt-4 space-y-3">
             {topic.theory.map((q) => {
               const open = openTheory === q.id;

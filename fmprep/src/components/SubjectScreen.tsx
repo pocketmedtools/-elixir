@@ -44,7 +44,6 @@ export default function SubjectScreen({
 
       <header className="mt-6">
         <h1 className="text-[26px] font-bold leading-[1.25] tracking-tight text-slate-900">{subject.title}</h1>
-        <p className="mt-1.5 text-[17.5px] leading-[1.7] text-slate-700">{subject.blurb}</p>
         <div className="mt-4 flex flex-wrap gap-2">
           <Chip tone="blue">Paper {subject.papers.join(", ")}</Chip>
           <Chip>{subject.topics.length} topics</Chip>
