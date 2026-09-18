@@ -418,7 +418,7 @@ cite.cite {
 /* The section number badge, and any small label the components tint with the
    subject accent: green reads as structure, the subject colour stays on rules
    and borders where it still says which subject you are in. */
-.study-stage h3 > span[aria-hidden] { background: var(--head) !important;
+.study-stage h3 > span[aria-hidden] { background: var(--ink, var(--head)) !important;
   font-family: var(--font-ui); font-weight: 700; letter-spacing: normal; }
 
 /* Pastel grounds, so a chart node and a table row separate from the page
@@ -539,3 +539,13 @@ cite.cite {
 .q-parts .q-l { font-family: var(--font-ui); font-weight: 700; color: var(--label); }
 .q-parts .q-m { font-family: var(--font-ui); font-size: 12.5px; font-weight: 700; color: var(--key); background: var(--pale); border-radius: 5px; padding: 2px 7px; font-variant-numeric: tabular-nums; }
 .q-kind { margin-top: 8px; font-family: var(--font-ui); font-size: 12px; font-weight: 600; color: var(--quiet); }
+
+/* Section badges inside a topic: the seven inks in turn, so the spine of a
+   long topic reads as a sequence rather than one repeated green square. */
+.study-stage section:nth-of-type(7n+1) { --ink: #14532d; }
+.study-stage section:nth-of-type(7n+2) { --ink: #0f3460; }
+.study-stage section:nth-of-type(7n+3) { --ink: #4a1259; }
+.study-stage section:nth-of-type(7n+4) { --ink: #4a3018; }
+.study-stage section:nth-of-type(7n+5) { --ink: #7a1220; }
+.study-stage section:nth-of-type(7n+6) { --ink: #0d4a44; }
+.study-stage section:nth-of-type(7n+7) { --ink: #7a2e08; }

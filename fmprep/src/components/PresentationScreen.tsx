@@ -5,7 +5,7 @@
  */
 import { useState } from "react";
 import guide from "../casePresentation";
-import { BackBar, Callout, Chip, SectionBlock, TableBlock } from "./ui";
+import { BackBar, Callout, Chip, RichText, SectionBlock, TableBlock } from "./ui";
 
 const KIND_LABEL = {
   long: "Long case",
@@ -25,7 +25,7 @@ export default function PresentationScreen({ onBack }: { onBack: () => void }) {
         <h1 className="text-[26px] font-bold leading-tight tracking-tight text-slate-900">{guide.title}</h1>
         <div className="mt-4 space-y-3 text-[17.5px] leading-[1.7] text-slate-800">
           {guide.overview.map((line, i) => (
-            <p key={i}>{line}</p>
+            <p key={i}><RichText text={line} /></p>
           ))}
         </div>
       </header>
