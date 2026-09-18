@@ -677,6 +677,25 @@ topics.push({
       ],
     },
     {
+      heading: "NACP, NOHP and PM-ABHIM",
+      points: [
+        "**NACP-V (2021-2026)** is the fifth phase of the National AIDS and STD Control Programme run by NACO, begun as NACP-I in 1992 - a programme, not a division. [NACO NACP-V 2021]",
+        "Its targets are **95-95-95 by 2025**: 95% of people with HIV diagnosed, 95% of them on ART, 95% of those suppressed - each link is where a cascade leaks. [NACO NACP-V 2021]",
+        "It also aims for an **80% fall in new infections and AIDS deaths from the 2010 baseline**, and elimination of vertical transmission of HIV and syphilis. [NACO NACP-V 2021]",
+        "**Test and treat since 2017**: every person diagnosed starts ART regardless of CD4, same day where ready - the CD4 threshold is gone. [NACO 2021]",
+        "Delivery runs through **ICTCs for testing, ART centres and link ART centres for treatment, and targeted interventions** for key populations. [NACO NACP-V 2021]",
+        "**Sampoorna Suraksha Kendras (2022)** are the one-stop centres for key populations - testing, treatment and STI care at one door. [NACO 2022]",
+        "**The HIV and AIDS Act 2017** bars discrimination in work, education and care, and requires informed consent for testing - the legal arm of the programme. [HIV/AIDS Act 2017]",
+        "India carries about **2.5 million people living with HIV at an adult prevalence near 0.2%** - a low-prevalence, concentrated epidemic. [NACO 2023]",
+        "**The National Oral Health Programme (2014)** sits under NHM: a dental unit at every district hospital and oral health in the RBSK screening package. [NOHP MoHFW 2014]",
+        "Its clinical edge is **oral cancer screening at 30 and above under NP-NCD** - the CBAC form asks about tobacco, and a health worker inspects the mouth. [NOHP MoHFW 2014]",
+        "**PM-ABHIM (25 October 2021)** is the Pradhan Mantri Ayushman Bharat Health Infrastructure Mission - Rs 64,180 crore over 2021-26, the largest health infrastructure scheme yet. [PM-ABHIM MoHFW 2021]",
+        "It builds **block public health units, integrated district public health laboratories, and critical care blocks** in every district over 5 lakh people. [PM-ABHIM MoHFW 2021]",
+        "At the centre it funds **a National Institute for One Health, new regional NCDC branches and virology institutes**, and expands IHIP surveillance. [PM-ABHIM MoHFW 2021]",
+        "Read the three Ayushman Bharat names apart: **Arogya Mandir is the clinic, PM-JAY the insurance, PM-ABHIM the buildings and laboratories**. [PM-ABHIM MoHFW 2021]",
+      ],
+    },
+    {
       heading: "NMHP and Ayushman Bharat",
       points: [
         "The **National Mental Health Programme (1982)** runs through the District Mental Health Programme, 1996 - care had to reach past the mental hospital. [Park 27e]",
