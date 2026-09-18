@@ -677,6 +677,21 @@ topics.push({
       ],
     },
     {
+      heading: "The smaller programmes an examiner still asks about",
+      points: [
+        "**Mission Parivar Vikas (2016)** targets the 146 districts in seven states with a total fertility rate of 3 or more - the districts that decide the national number. [MPV MoHFW 2016]",
+        "It added **injectable MPA (Antara) and centchroman (Chhaya)** to the basket, with the Nayi Pehel kit for newlyweds - choice is what raises uptake. [MPV MoHFW 2016]",
+        "**SUMAN (October 2019)** guarantees free, dignified maternity care with no expense refused - JSY cash and JSSK entitlements now sit under one assurance. [SUMAN MoHFW 2019]",
+        "**PM POSHAN (September 2021)** replaced the Mid Day Meal Scheme: a hot cooked meal for classes I to VIII and pre-primary, funded to 2025-26. [PM POSHAN 2021]",
+        "**NAPSE (2024)**, the National Action Plan for Snakebite Envenoming, aims to **halve snakebite deaths by 2030** - India loses about 58,000 people a year. [NAPSE MoHFW 2024]",
+        "Its pillars are **antivenom at every CHC, referral protocols, a helpline and community education** - most deaths are delay, not venom. [NAPSE MoHFW 2024]",
+        "**NRCP** works under the National Action Plan for dog-mediated Rabies Elimination, **NAPRE, target 2030** - India carries about a third of the world's rabies deaths. [NAPRE 2021]",
+        "It relies on **intradermal post-exposure vaccination, dog vaccination and One Health coordination** - the dog is the reservoir, so the human programme cannot work alone. [NAPRE 2021]",
+        "**NPPCF (2008)**, the National Programme for Prevention and Control of Fluorosis, works district by district: **water testing, surveillance, treatment and safe-water advocacy**. [NPPCF MoHFW 2008]",
+        "A fluorosis district is one where drinking water exceeds **1.5 mg/L** - the programme's job is mapping the sources before treating the bones. [NPPCF MoHFW 2008]",
+      ],
+    },
+    {
       heading: "NACP, NOHP and PM-ABHIM",
       points: [
         "**NACP-V (2021-2026)** is the fifth phase of the National AIDS and STD Control Programme run by NACO, begun as NACP-I in 1992 - a programme, not a division. [NACO NACP-V 2021]",
