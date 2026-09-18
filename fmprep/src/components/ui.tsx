@@ -112,6 +112,11 @@ export function RichText({ text }: { text: string }) {
   );
 }
 
+/* The seven inks the figures use, so a topic's section badges run through
+   them in order. Set inline from the index: the sections are not siblings
+   in the DOM, so an nth-of-type rule never advances past the first. */
+const SECTION_INKS = ["#14532d", "#0f3460", "#4a1259", "#4a3018", "#7a1220", "#0d4a44", "#7a2e08"];
+
 export function SectionBlock({
   section,
   id,
@@ -123,7 +128,11 @@ export function SectionBlock({
   index?: number;
 }) {
   return (
-    <section id={id} className="mt-10 scroll-mt-20 first:mt-0">
+    <section
+      id={id}
+      className="mt-10 scroll-mt-20 first:mt-0"
+      style={index !== undefined ? ({ "--ink": SECTION_INKS[(index - 1 + 7) % 7] } as CSSProperties) : undefined}
+    >
       <h3
         className="flex items-baseline gap-3 pb-2.5 text-[1.2em] font-bold leading-snug tracking-tight text-slate-900"
         style={{ borderBottom: "2px solid var(--acc-rule)" }}

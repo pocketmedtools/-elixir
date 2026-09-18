@@ -828,7 +828,8 @@ function viewTopic(){
   const e = TOPIC.get(state.topic), t = e.t, s = e.s;
   const dgs = DIA[t.id] || [];
   let n = 0;
-  const sec = (h, inner) => '<div class="sec"><h3><span class="n">' +
+  const INKS = ["#14532d","#0f3460","#4a1259","#4a3018","#7a1220","#0d4a44","#7a2e08"];
+  const sec = (h, inner) => '<div class="sec" style="--ink:' + INKS[n % 7] + '"><h3><span class="n">' +
     String(++n).padStart(2,"0") + '</span>' + esc(h) + '</h3>' + inner + '</div>';
   const visuals = [
     ...dgs.map(d => ({ heading: d.heading, html: drawDiagram(d) })),
