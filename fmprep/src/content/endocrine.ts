@@ -48,7 +48,7 @@ topics.push({
         "HbA1c **6.5% or more** diagnoses diabetes - glycated haemoglobin averages glucose over the red cell lifespan of about 120 days. [ADA 2025]",
         "Random plasma glucose **200 mg/dL or more** with polyuria, polydipsia and weight loss diagnoses diabetes - symptoms here need no repeat test. [ADA 2025]",
         "Any one of these four criteria is enough - they are alternatives, not a set to be satisfied together. [ADA 2025]",
-        "Without unequivocal hyperglycaemia, confirm with a **repeat test on a separate sample** - ideally the same test repeated. [ADA 2025]",
+        "Without unequivocal hyperglycaemia, confirm with **two abnormal results** - the same test on a second sample, or two different tests at once. [ADA 2026]",
         "Two different abnormal tests on one sample also confirm - for example FPG 132 mg/dL with HbA1c 6.8%. [ADA 2025]",
         "Impaired fasting glucose is **100-125 mg/dL** by ADA but 110-125 mg/dL by WHO - the lower ADA cut-off labels many more Indians as prediabetic. [ADA 2025]",
         "Impaired glucose tolerance is a 2-hour value of **140-199 mg/dL** after 75 g glucose - it predicts vascular risk better than the fasting value. [ADA 2025]",
