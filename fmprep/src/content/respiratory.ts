@@ -521,7 +521,8 @@ topics.push({
         "**Grades by post-bronchodilator FEV1 % predicted:** GOLD 1 is 80% or more, GOLD 2 is 50-79%, GOLD 3 is 30-49%, GOLD 4 under 30% - reversible ones are asthma. [GOLD 2024]",
         "**mMRC runs 0 to 4**: 0 breathless on strenuous exercise, 1 on hurrying or a slight hill, 2 walking slower than peers - it grades what the patient can do. [GOLD 2024]",
         "mMRC 3 is **stopping after about 100 metres**, and 4 is breathless dressing or leaving the house - the grade that marks housebound disease. [GOLD 2024]",
-        "The cut-offs that lift a patient out of Group A are **mMRC 2 or more, or CAT 10 or more out of 40** - above them symptoms justify dual bronchodilation. [GOLD 2024]",
+        "The cut-offs that lift a patient out of Group A are **mMRC 2 or more, or CAAT 10 or more out of 40** - above them symptoms justify dual bronchodilation. [GOLD 2026]",
+        "**The CAT is now the CAAT - the Chronic Airways Assessment Test** - renamed in GOLD 2026; the questions and the scores are unchanged and interchangeable. [GOLD 2026]",
         "**Two or more moderate exacerbations, or one hospitalisation, in the past year makes Group E** whatever the symptom score - past attacks predict the next. [GOLD 2024]",
         "**Group A is low symptom and low risk, Group B high symptom and low risk, Group E the exacerbator** - E replaced C and D in GOLD 2023. [GOLD 2024]",
         "Finish with a **blood eosinophil count** - it alone decides whether an inhaled corticosteroid belongs in the regimen. [GOLD 2024]",
@@ -539,7 +540,9 @@ topics.push({
         "If exacerbations persist on LABA-LAMA, **add ICS when eosinophils are 100 cells/microlitre or more**; below 100 it only adds pneumonia - no cells to suppress. [GOLD 2024]",
         "**Withhold ICS after repeated pneumonia or mycobacterial infection** - in India inhaled steroid after old tuberculosis risks reactivation. [GOLD 2024]",
         "**Roflumilast 500 microgram daily** for the frequent exacerbator with chronic bronchitis and FEV1 under 50% on triple therapy - PDE4 blockade cuts attacks. [GOLD 2024]",
-        "**Azithromycin 250 mg daily or 500 mg three times a week for a year** cuts exacerbations - first check QTc, hearing and sputum for NTM. [GOLD 2024]",
+        "**Azithromycin 250 mg daily or 500 mg three times a week for a year** cuts exacerbations - first check QTc, hearing and sputum for NTM. [GOLD 2026]",
+        "For dyspnoea that persists on LABA-LAMA, **consider adding ensifentrine**, the inhaled dual PDE3 and PDE4 inhibitor new to the 2026 algorithm. [GOLD 2026]",
+        "**Dupilumab and mepolizumab are the biologics in COPD** - for the exacerbator on triple therapy with eosinophils 300 or more; dupilumab needs chronic bronchitis. [GOLD 2026]",
         "**Oral theophylline is a weak bronchodilator with a narrow index** - cheap, but never first choice, and oral salbutamol has no place at all. [GOLD 2024]",
       ],
     },
@@ -588,9 +591,9 @@ topics.push({
       heading: "GOLD ABE assessment and initial inhaled therapy",
       columns: ["Group", "Symptoms", "Exacerbations in past year", "Initial treatment"],
       rows: [
-        ["A", "mMRC 0-1 or CAT under 10", "0 or 1 moderate, no admission", "A long-acting bronchodilator (LAMA or LABA)"],
-        ["B", "mMRC 2 or more or CAT 10 or more", "0 or 1 moderate, no admission", "LABA plus LAMA"],
-        ["E", "Any symptom level", "2 or more moderate, or 1 or more with admission", "LABA plus LAMA; add ICS if eosinophils 300/microlitre or more"],
+        ["A", "mMRC 0-1, CAAT under 10", "None", "A long-acting bronchodilator (LAMA or LABA)"],
+        ["B", "mMRC 2 or more, CAAT 10 or more", "None", "LABA plus LAMA"],
+        ["E", "Any symptom level", "One or more moderate or severe", "LABA plus LAMA; consider adding ICS if eosinophils 300/microlitre or more"],
       ],
     },
     {
@@ -675,7 +678,7 @@ topics.push({
           heading: "3. Assessment and grouping",
           points: [
             "Assign the **grade from FEV1 and the group from symptoms and exacerbations** - Group A low and low, Group B high symptom, Group E exacerbator. [GOLD 2024]",
-            "**Group E is two or more moderate exacerbations or one hospitalisation** in the year, however well he feels between them - attacks predict attacks. [GOLD 2024]",
+            "**Group E is now one or more moderate or severe exacerbations** in the year, down from two - a single moderate attack moves him, however well he feels between them. [GOLD 2026]",
             "Screen what sets prognosis: **ischaemic heart disease, heart failure, lung cancer, osteoporosis, depression, diabetes, sleep apnoea** - these kill first. [GOLD 2024]",
           ],
         },
@@ -4019,7 +4022,7 @@ const cases: ClinicalCase[] = [
       },
       {
         q: "What is the GOLD ABE grouping and where does this patient sit?",
-        a: "Group A is few symptoms (mMRC 0-1, CAT under 10) and no more than one moderate exacerbation; group B is more symptoms with the same low exacerbation risk; group E is anyone with two or more moderate exacerbations or one hospitalisation in the last year regardless of symptoms. This patient, with mMRC 2 and one hospitalisation, is group E and starts on LABA-LAMA.",
+        a: "Group A is few symptoms (mMRC 0-1, CAAT under 10) with no moderate or severe exacerbation in the past year; group B is more symptoms with the same zero exacerbation history; group E is anyone with one or more moderate or severe exacerbations in the last year, regardless of symptoms - GOLD 2026 lowered that threshold from two. This patient, with mMRC 2 and one hospitalisation, is group E and starts on LABA-LAMA.",
       },
       {
         q: "Why is the oxygen target 88-92% and not 95%?",
