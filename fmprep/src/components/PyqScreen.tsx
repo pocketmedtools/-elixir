@@ -13,7 +13,6 @@
 import { useMemo, useState } from "react";
 import {
   PAPER_QUESTIONS,
-  PYQ_SOURCE_NOTE,
   TOPICWISE_QUESTIONS,
   papersFor,
   recurringTopics,
@@ -75,10 +74,35 @@ function QuestionHistory({ repeat, split, stated }: { repeat?: Repeat; split?: M
   );
 }
 
+/** "a) ... [3] b) ... [3] c) ... [4]" becomes a stem and three numbered parts,
+ *  each with its own marks, which is how the paper prints it and how a
+ *  candidate divides the answer. A question with no lettered parts is left
+ *  whole. */
+function splitParts(q: string): { stem: string; parts: { label: string; text: string; marks: string }[] } {
+  const rx = /(?:^|\s)\(?([a-h]|[ivx]{1,4})\)\s+/g;
+  const hits = [...q.matchAll(rx)];
+  if (hits.length < 2) return { stem: q.trim(), parts: [] };
+  const stem = q.slice(0, hits[0].index).trim();
+  const parts = hits.map((h, i) => {
+    const start = (h.index ?? 0) + h[0].length;
+    const end = i + 1 < hits.length ? (hits[i + 1].index ?? q.length) : q.length;
+    let text = q.slice(start, end).trim();
+    let marks = "";
+    // "[3]", "[2+2]", "(4 marks)" - the bracket is kept as written.
+    const m = text.match(/\s*(?:\[([\d.+ ]+)\]|\(([\d.+ ]+)\s*marks?\))\s*$/i);
+    if (m) { marks = (m[1] ?? m[2]).replace(/\s+/g, ""); text = text.slice(0, m.index).trim(); }
+    return { label: h[1] + ")", text, marks };
+  });
+  return { stem, parts };
+}
+
 function QuestionCard({
   id,
   question,
-  meta,
+  label,
+  where,
+  marks,
+  kind,
   onOpenTopic,
   repeat,
   split,
@@ -86,28 +110,44 @@ function QuestionCard({
 }: {
   id: string;
   question: string;
-  meta: React.ReactNode;
+  /** "Q1", or nothing for the topic-wise compilation. */
+  label?: string;
+  /** "Paper II - June 2025" */
+  where: string;
+  marks: number;
+  kind: string;
   onOpenTopic: (topicId: string) => void;
   repeat?: Repeat;
   split?: MarkSplit | null;
   stated?: number;
 }) {
+  const shaped = useMemo(() => splitParts(question), [question]);
   const [open, setOpen] = useState(false);
   const links = useMemo(() => (open ? linksFor(id, question) : []), [open, id, question]);
 
   return (
     <div className="rounded-xl border border-slate-200 bg-white shadow-sm">
-      <button
-        type="button"
-        onClick={() => setOpen((o) => !o)}
-        className="flex w-full items-start gap-2 p-3.5 text-left"
-      >
-        <span className="min-w-0 flex-1">
-          <span className="block text-[17.5px] leading-[1.65] text-slate-900">{question}</span>
-          <span className="mt-1.5 flex flex-wrap items-center gap-1.5">{meta}</span>
+      <button type="button" onClick={() => setOpen((o) => !o)} className="w-full p-3.5 text-left">
+        <span className="q-head">
+          {label && <span className="q-no">{label}</span>}
+          <span className="q-where">{where}</span>
+          {marks > 0 && <span className="q-marks">{marks} marks</span>}
         </span>
-        <span aria-hidden className="text-slate-400">
-          {open ? "▾" : "▸"}
+        {shaped.stem && <span className="q-stem block">{shaped.stem}</span>}
+        {shaped.parts.length > 0 && (
+          <ul className="q-parts">
+            {shaped.parts.map((p, i) => (
+              <li key={i}>
+                <span className="q-l">{p.label}</span>
+                <span>{p.text}</span>
+                {p.marks ? <span className="q-m">{p.marks}</span> : <span />}
+              </li>
+            ))}
+          </ul>
+        )}
+        <span className="q-kind block">
+          {kind}
+          {repeat && repeat.times > 1 ? ` - asked ${repeat.times} times` : ""}
         </span>
       </button>
 
@@ -116,7 +156,9 @@ function QuestionCard({
           name - which is what made the smoke test click the card instead of
           the link to the answer. */}
       <div className="px-3.5 pb-3 -mt-1">
-        <QuestionHistory repeat={repeat} split={split} stated={stated} />
+        {/* The parts above already carry their marks; the split row is for a
+            question printed without lettered parts. */}
+        <QuestionHistory repeat={repeat} split={shaped.parts.length ? null : split} stated={stated} />
       </div>
 
       {open && (
@@ -208,19 +250,7 @@ export default function PyqScreen({
       <h1 className="mt-5 text-2xl font-bold tracking-tight text-slate-900">
         Previous-year questions
       </h1>
-      <p className="mt-3 rounded-xl border border-slate-200 bg-white p-4 text-[15.5px] leading-[1.65] text-slate-700 shadow-sm">
-        {PYQ_SOURCE_NOTE}
-      </p>
-      <button
-        type="button"
-        onClick={onOpenSources}
-        className="mt-2 w-full rounded-lg border px-4 py-3 text-left text-sm font-semibold"
-        style={{ borderColor: "var(--rule)", background: "var(--mint)", color: "var(--head)" }}
-      >
-        Read the source documents in full →
-      </button>
-
-      <div className="mt-4 flex gap-2">
+      <div className="mt-4 grid grid-cols-3 gap-2">
         <button type="button" onClick={() => setView("sittings")} className={tab(view === "sittings")}>
           By sitting
         </button>
@@ -272,18 +302,10 @@ export default function PyqScreen({
                 repeat={stats.repeats[q.id]}
                 split={markSplit(q.question, q.marks)}
                 stated={q.marks}
-                meta={
-                  <>
-                    <Chip tone="blue">Paper {q.paper}</Chip>
-                    <Chip>{q.session}</Chip>
-                    <Chip>Q{q.number}</Chip>
-                    {q.marks > 0 && <Chip>{q.marks} marks</Chip>}
-                    <Chip tone="teal">{KIND_LABEL[q.kind] ?? q.kind}</Chip>
-                    {stats.repeats[q.id]?.times > 1 && (
-                      <Chip tone="teal">Asked {stats.repeats[q.id].times} times</Chip>
-                    )}
-                  </>
-                }
+                label={`Q${q.number}`}
+                where={`Paper ${q.paper} - ${q.session}`}
+                marks={q.marks}
+                kind={KIND_LABEL[q.kind] ?? q.kind}
               />
             ))}
           </div>
@@ -341,16 +363,9 @@ export default function PyqScreen({
                             repeat={stats.repeats[q.id]}
                             split={markSplit(q.question, q.marks)}
                             stated={q.marks}
-                            meta={
-                              <>
-                                <Chip>{q.session}</Chip>
-                                {q.marks > 0 && <Chip>{q.marks} marks</Chip>}
-                                <Chip tone="teal">{KIND_LABEL[q.kind] ?? q.kind}</Chip>
-                                {stats.repeats[q.id]?.times > 1 && (
-                                  <Chip tone="teal">Asked {stats.repeats[q.id].times} times</Chip>
-                                )}
-                              </>
-                            }
+                            where={q.session}
+                            marks={q.marks}
+                            kind={KIND_LABEL[q.kind] ?? q.kind}
                           />
                         ))}
                       </div>
@@ -362,6 +377,14 @@ export default function PyqScreen({
           )}
         </>
       )}
+      <button
+        type="button"
+        onClick={onOpenSources}
+        className="mt-6 w-full rounded-lg border px-4 py-3 text-left text-sm font-semibold"
+        style={{ borderColor: "var(--rule)", background: "var(--mint)", color: "var(--head)" }}
+      >
+        Read the source documents in full &rarr;
+      </button>
     </div>
   );
 }

@@ -5,10 +5,21 @@
 import { useState } from "react";
 import blueprint from "../examPattern";
 import type { PaperId } from "../lib/types";
-import { BackBar, Chip, FrequencyChip, SectionBlock, TableBlock } from "./ui";
+import type { NoteTable } from "../lib/types";
+import { BackBar, Chip, FrequencyChip, RichText, SectionBlock, TableBlock } from "./ui";
 
 export default function ExamPatternScreen({ onBack }: { onBack: () => void }) {
   const [openPaper, setOpenPaper] = useState<PaperId | null>(blueprint.papers[0]?.id ?? null);
+  const summary: NoteTable = {
+    heading: "The four theory papers - type, subjects, marks and time",
+    columns: ["Paper", "Subjects", "Marks", "Time"],
+    rows: blueprint.papers.map((p) => [
+      `Paper ${p.id}`,
+      p.title.replace(/^Paper [IV]+ - /, "").split(" (")[0],
+      String(p.marks),
+      `${p.minutes} min`,
+    ]),
+  };
 
   return (
     <div className="mx-auto max-w-3xl px-3 py-5 md:px-6">
@@ -16,15 +27,23 @@ export default function ExamPatternScreen({ onBack }: { onBack: () => void }) {
 
       <header className="mt-5">
         <h1 className="text-2xl font-bold leading-tight tracking-tight text-slate-900">{blueprint.title}</h1>
-        <div className="mt-3 space-y-2 leading-relaxed text-slate-800">
-          {blueprint.overview.map((line, i) => (
-            <p key={i}>{line}</p>
-          ))}
-        </div>
-        <p className="mt-4 rounded-xl border border-amber-200 bg-amber-50 p-4 text-[15.5px] leading-[1.65] text-amber-950">
-          {blueprint.sourceNote}
-        </p>
       </header>
+
+      {/* The shape of the examination in one table before any prose: four
+          papers, the marks, the time. */}
+      <TableBlock table={summary} />
+
+      <section className="mt-7">
+        <h2 className="text-lg font-bold tracking-tight text-slate-900">How the examination runs</h2>
+        <ul className="mt-2.5 space-y-2.5 text-[16.5px] leading-[1.7] text-slate-800">
+          {blueprint.overview.map((line, i) => (
+            <li key={i} className="flex gap-2">
+              <span aria-hidden className="mt-[0.6em] h-1.5 w-1.5 shrink-0 rounded-full" style={{ background: "var(--head)" }} />
+              <span><RichText text={line} /></span>
+            </li>
+          ))}
+        </ul>
+      </section>
 
       <section className="mt-7">
         <h2 className="text-lg font-bold tracking-tight text-slate-900">The theory papers</h2>
@@ -40,7 +59,7 @@ export default function ExamPatternScreen({ onBack }: { onBack: () => void }) {
                 >
                   <span className="min-w-0 flex-1">
                     <span className="block font-bold text-slate-900">
-                      Paper {paper.id} — {paper.title}
+                      {paper.title.split(" (")[0]}
                     </span>
                     <span className="mt-1 flex flex-wrap gap-1.5">
                       <Chip tone="blue">{paper.marks} marks</Chip>
@@ -56,7 +75,7 @@ export default function ExamPatternScreen({ onBack }: { onBack: () => void }) {
                       {paper.covers.map((c, i) => (
                         <li key={i} className="flex gap-2">
                           <span aria-hidden className="mt-[0.6em] h-1.5 w-1.5 shrink-0 rounded-full bg-slate-400" />
-                          <span>{c}</span>
+                          <span><RichText text={c} /></span>
                         </li>
                       ))}
                     </ul>
@@ -66,7 +85,7 @@ export default function ExamPatternScreen({ onBack }: { onBack: () => void }) {
                       {paper.structure.map((s, i) => (
                         <li key={i} className="flex gap-2">
                           <span aria-hidden className="mt-[0.6em] h-1.5 w-1.5 shrink-0 rounded-full bg-slate-400" />
-                          <span>{s}</span>
+                          <span><RichText text={s} /></span>
                         </li>
                       ))}
                     </ul>
@@ -81,7 +100,7 @@ export default function ExamPatternScreen({ onBack }: { onBack: () => void }) {
                                 <span className="font-semibold text-slate-900">{t.theme}</span>
                                 <FrequencyChip frequency={t.frequency} />
                               </span>
-                              <span className="mt-1.5 block text-[16px] leading-[1.65] text-slate-700">{t.note}</span>
+                              <span className="mt-1.5 block text-[16px] leading-[1.65] text-slate-700"><RichText text={t.note} /></span>
                             </li>
                           ))}
                         </ul>
@@ -109,7 +128,7 @@ export default function ExamPatternScreen({ onBack }: { onBack: () => void }) {
                 {component.whatHappens.map((w, j) => (
                   <li key={j} className="flex gap-2">
                     <span aria-hidden className="mt-[0.6em] h-1.5 w-1.5 shrink-0 rounded-full bg-slate-400" />
-                    <span>{w}</span>
+                    <span><RichText text={w} /></span>
                   </li>
                 ))}
               </ul>
@@ -118,7 +137,7 @@ export default function ExamPatternScreen({ onBack }: { onBack: () => void }) {
                   <p className="text-xs font-bold uppercase tracking-wide text-slate-600">How it is marked</p>
                   <ul className="mt-2 space-y-2 text-[15.5px] leading-[1.65] text-slate-800">
                     {component.howItIsMarked.map((m, j) => (
-                      <li key={j}>{m}</li>
+                      <li key={j}><RichText text={m} /></li>
                     ))}
                   </ul>
                 </div>
@@ -156,6 +175,7 @@ export default function ExamPatternScreen({ onBack }: { onBack: () => void }) {
       {blueprint.references.length > 0 && (
         <section className="mt-8 border-t border-slate-200 pt-4">
           <h2 className="text-xs font-bold uppercase tracking-widest text-slate-500">Sources</h2>
+          <p className="mt-2 text-xs leading-relaxed text-slate-600">{blueprint.sourceNote}</p>
           <ul className="mt-2 space-y-1 text-xs leading-relaxed text-slate-600">
             {blueprint.references.map((r, i) => (
               <li key={i}>

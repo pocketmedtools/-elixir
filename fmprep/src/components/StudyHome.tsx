@@ -179,18 +179,18 @@ export default function StudyHome({ onGo }: { onGo: (view: StudyView) => void })
               key={s.id}
               type="button"
               onClick={() => onGo(s.view)}
-              className="relative flex items-start gap-3.5 overflow-hidden rounded-lg border p-4.5 pl-5 text-left transition"
+              className="tile relative flex items-start gap-3.5 overflow-hidden rounded-lg border p-4.5 pl-5 text-left transition"
               style={{ borderColor: "var(--rule)", background: "var(--card)" }}
             >
-              <span aria-hidden className="absolute left-0 top-0 h-full w-1" style={{ background: "var(--head)" }} />
+              <span aria-hidden className="absolute left-0 top-0 h-full w-1" style={{ background: "var(--ink)" }} />
               <span
                 className="mt-0.5 flex h-9 w-9 shrink-0 items-center justify-center rounded-lg"
-                style={{ background: "var(--mint)", color: "var(--head)" }}
+                style={{ background: "var(--wash)", color: "var(--ink)" }}
               >
                 <Icon className="h-5 w-5" aria-hidden />
               </span>
               <span>
-                <span className="block text-[17px] font-bold leading-snug" style={{ color: "var(--head)" }}>
+                <span className="block text-[17px] font-bold leading-snug" style={{ color: "var(--ink)" }}>
                   {s.title}
                 </span>
               </span>

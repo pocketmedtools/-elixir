@@ -103,6 +103,7 @@ export default function StudyModule() {
     [go],
   );
 
+  const screen = (() => {
   switch (view.name) {
     case "library":
       return <LibraryScreen onBack={back} onOpenSubject={(id) => go({ name: "subject", id })} />;
@@ -258,4 +259,19 @@ export default function StudyModule() {
     default:
       return <StudyHome onGo={(next) => (next.name === "home" ? home() : go(next))} />;
   }
+  })();
+
+  /* Fixed, not sticky. A sticky bar depends on no ancestor being a scroll
+     container, which has broken twice; a fixed control depends on nothing
+     and is on screen however far down a topic the reader is. */
+  return (
+    <>
+      {screen}
+      {view.name !== "home" && (
+        <button type="button" className="home-fab" onClick={home} aria-label="Home">
+          Home
+        </button>
+      )}
+    </>
+  );
 }
