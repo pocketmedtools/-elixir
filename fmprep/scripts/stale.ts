@@ -9,6 +9,14 @@
  *   npm run stale                    # every subject, counts only
  *   npm run stale preventive         # that subject, by topic
  *   npm run stale preventive tags    # the distinct stale tags, commonest first
+ *
+ * What this does NOT do, because it has been read that way and it matters:
+ * a clean run here is not evidence that the content is current. This reads
+ * the year printed inside a tag and nothing else. It never opens the
+ * guideline, so a point tagged [ADA 2025] passes whether or not ADA 2025
+ * said it, and whether or not ADA 2026 has since changed the number. For the
+ * list of citations whose body has reissued since the tag was written - which
+ * is 40 per cent of the library - use `npm run guidelines`.
  */
 import { ensureAll, subjects } from "../src/content/index";
 import { classify } from "./lib/citations";
