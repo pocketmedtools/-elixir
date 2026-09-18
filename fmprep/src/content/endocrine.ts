@@ -116,6 +116,7 @@ topics.push({
       heading: "Targets and the first consultation",
       points: [
         "**HbA1c below 7%** is the target for most adults with type 2 diabetes - microvascular risk falls to here, then hypoglycaemia risk rises. [ADA 2025]",
+        "Older adults are tiered: **healthy under 7-7.5%, complex with multimorbidity or ADL loss under 8%, very complex avoid hypoglycaemia** rather than chase a number. [ADA 2026]",
         "**HbA1c 6.5% or lower** for the young, newly diagnosed with long life expectancy and no cardiovascular disease - they have decades to accrue benefit. [ADA 2025]",
         "**HbA1c up to 8%** is acceptable in frailty or advanced complications - a single severe hypo does more harm than years at a higher HbA1c. [ADA 2025]",
         "Relax the target too in hypoglycaemia unawareness or short life expectancy, because there is no time for microvascular benefit to appear. [ADA 2025]",
