@@ -7,6 +7,7 @@ import {
   signUp,
   subscribe,
 } from "../lib/accounts";
+import { APK_URL, isWebsite } from "../lib/platform";
 import ToolIcon, { TOOL_TEXT } from "./ToolIcon";
 
 export type MenuTarget =
@@ -122,10 +123,10 @@ export default function SideMenu({
             </div>
           ))}
           {/* Direct APK download — only meaningful when browsing the website */}
-          {window.location.hostname.endsWith("github.io") && (
+          {isWebsite() && (
             <div className="mt-1">
               <a
-                href={`${import.meta.env.BASE_URL}Pocket-Med.apk`}
+                href={APK_URL}
                 download="Pocket-Med.apk"
                 className="flex w-full items-center gap-3 rounded-lg bg-emerald-50 px-3 py-2.5 text-left text-sm font-bold text-emerald-900 hover:bg-emerald-100"
               >
