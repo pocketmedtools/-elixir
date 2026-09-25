@@ -84,7 +84,7 @@ const scores: Record<string, NoteTable[]> = {
       ],
     },
     {
-      heading: "Waist circumference and waist-hip ratio risk criteria (WHO 2008, Indian consensus 2009)",
+      heading: "Waist circumference and waist-hip ratio risk criteria (WHO; ICMR-INDIAB 2023; Park 28e 2025)",
       columns: ["Measure", "Men", "Women", "Meaning"],
       rows: [
         ["Waist - Asian Indian cut-off", "90 cm or more", "80 cm or more", "Abdominal obesity (Indian consensus, IDF South Asian)"],
@@ -108,7 +108,7 @@ const scores: Record<string, NoteTable[]> = {
       ],
     },
     {
-      heading: "WHO goitre grading and total goitre rate severity (WHO/ICCIDD 2007)",
+      heading: "WHO goitre grading and total goitre rate severity (WHO; Park 28e 2025)",
       columns: ["Grade or rate", "Definition", "Meaning"],
       rows: [
         ["Grade 0", "No goitre palpable or visible", "-"],
@@ -275,16 +275,6 @@ const scores: Record<string, NoteTable[]> = {
   ],
   "preventive-disaster-management": [
     {
-      heading: "START triage classification for mass casualties (Park 28e 2025, ATLS 11e)",
-      columns: ["Category", "Criteria", "Priority"],
-      rows: [
-        ["Green - minor", "Able to walk", "Delayed care (walking wounded)"],
-        ["Black - expectant or dead", "Not breathing even after airway repositioning", "No treatment"],
-        ["Red - immediate", "RR above 30, or no radial pulse or CRT above 2 s, or cannot obey simple commands", "Treat and evacuate first"],
-        ["Yellow - delayed", "RR 30 or less, radial pulse present, obeys commands, but cannot walk", "Treat after red"],
-      ],
-    },
-    {
       heading: "JumpSTART paediatric triage criteria, 1-8 years (Tintinalli 9e 2020)",
       columns: ["Category", "Criteria", "Note"],
       rows: [
@@ -349,7 +339,7 @@ const scores: Record<string, NoteTable[]> = {
   ],
   "preventive-occupational-health": [
     {
-      heading: "Ambient noise standards by zone classification (Noise Pollution Rules 2000)",
+      heading: "Ambient noise standards by zone classification (CPCB; Park 28e 2025)",
       columns: ["Zone", "Day limit, dB(A) Leq (6 am-10 pm)", "Night limit, dB(A) Leq (10 pm-6 am)"],
       rows: [
         ["Industrial area", "75", "70"],

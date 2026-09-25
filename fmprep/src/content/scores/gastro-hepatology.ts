@@ -3,7 +3,7 @@ import type { NoteTable } from "../../lib/types";
 const scores: Record<string, NoteTable[]> = {
   "gastro-hepatology-acid-peptic-gerd": [
     {
-      heading: "Los Angeles classification of reflux oesophagitis (Lyon consensus 2.0, 2023)",
+      heading: "Los Angeles classification of reflux oesophagitis (Lyon consensus 2.0, 2024)",
       columns: ["Grade", "Endoscopic finding", "Meaning"],
       rows: [
         ["LA grade A", "One or more mucosal breaks 5 mm or less, not extending between the tops of two folds", "Not conclusive for GERD on its own - needs pH study if doubt"],
@@ -85,19 +85,6 @@ const scores: Record<string, NoteTable[]> = {
         ["Hyperacute", "7 days or less", "Paracetamol, hepatitis A or E; cerebral oedema common but best spontaneous survival"],
         ["Acute", "8 to 28 days", "Hepatitis B; intermediate prognosis"],
         ["Subacute", "29 days to 12 weeks", "Drug-induced, seronegative; little cerebral oedema but worst spontaneous survival"],
-      ],
-    },
-    {
-      heading: "King's College criteria for liver transplant in acute liver failure (EASL 2017)",
-      columns: ["Criterion", "Paracetamol-induced ALF", "Non-paracetamol ALF"],
-      rows: [
-        ["Stand-alone criterion", "Arterial pH below 7.30 after resuscitation, or lactate above 3.0 mmol/L after fluids", "INR above 6.5 (PT above 100 s) irrespective of HE grade"],
-        ["Combined criterion", "All three in 24 h: INR above 6.5, creatinine above 3.4 mg/dL, grade III-IV encephalopathy", "Any 3 of the 5 features listed below"],
-        ["Feature - age", "Not applicable", "Age below 10 or above 40 years"],
-        ["Feature - aetiology", "Not applicable", "Non-A non-B hepatitis, halothane or idiosyncratic drug reaction"],
-        ["Feature - tempo", "Not applicable", "Jaundice to encephalopathy more than 7 days"],
-        ["Feature - INR", "Not applicable", "INR above 3.5 (PT above 50 s)"],
-        ["Feature - bilirubin", "Not applicable", "Serum bilirubin above 17.5 mg/dL (300 micromol/L)"],
       ],
     },
   ],

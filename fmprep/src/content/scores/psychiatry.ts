@@ -36,16 +36,6 @@ const scores: Record<string, NoteTable[]> = {
       ],
     },
     {
-      heading: "Edinburgh Postnatal Depression Scale (EPDS) score bands (Williams 26e 2022)",
-      columns: ["EPDS total (0-30)", "Meaning", "Action"],
-      rows: [
-        ["0-9", "Depression unlikely", "Routine care; rescreen if concern"],
-        ["10-12", "Possible depression", "Repeat in 2-4 weeks, clinical assessment"],
-        ["13 or more", "Probable depression", "Full assessment; psychological therapy, SSRI (sertraline in breastfeeding)"],
-        ["Item 10 any score above 0", "Thoughts of self-harm", "Same-day assessment of suicide risk regardless of total"],
-      ],
-    },
-    {
       heading: "Modified SAD PERSONS scale for suicide risk (Rosen 10e 2022)",
       columns: ["Component", "Finding", "Points"],
       rows: [

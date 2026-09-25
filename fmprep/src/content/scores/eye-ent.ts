@@ -192,16 +192,6 @@ const scores: Record<string, NoteTable[]> = {
       ],
     },
     {
-      heading: "Keith-Wagener-Barker classification of hypertensive retinopathy (Kanski 10e 2024)",
-      columns: ["Grade", "Fundus findings", "Meaning"],
-      rows: [
-        ["Grade 1", "Mild generalised arteriolar narrowing", "Long-standing hypertension"],
-        ["Grade 2", "Grade 1 plus focal narrowing and arteriovenous nicking", "Established hypertension"],
-        ["Grade 3", "Grade 2 plus flame haemorrhages, cotton wool spots, hard exudates", "Severe hypertension"],
-        ["Grade 4", "Grade 3 plus optic disc swelling (papilloedema)", "Hypertensive emergency (malignant hypertension)"],
-      ],
-    },
-    {
       heading: "Wong-Mitchell classification of hypertensive retinopathy (Kanski 10e 2024)",
       columns: ["Grade", "Retinal signs", "Systemic association"],
       rows: [

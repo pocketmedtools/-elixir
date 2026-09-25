@@ -203,16 +203,6 @@ const scores: Record<string, NoteTable[]> = {
   ],
   "musculoskeletal-neck-pain": [
     {
-      heading: "Canadian C-spine rule criteria for imaging in alert trauma patients (ATLS 11e 2025)",
-      columns: ["Step", "Question", "Decision"],
-      rows: [
-        ["1 - High-risk factor", "Age 65 or over, dangerous mechanism, or limb paraesthesias?", "Yes - image (CT)"],
-        ["2 - Low-risk factor", "Simple rear-end crash, sitting in ED, ambulatory, delayed pain, no midline tenderness?", "No low-risk factor - image"],
-        ["3 - Active rotation", "Can actively rotate neck 45 degrees left and right?", "Yes - no imaging; unable - image"],
-        ["Applies to", "GCS 15, stable, blunt trauma", "Not for age under 16 or known spinal disease"],
-      ],
-    },
-    {
       heading: "Quebec Task Force classification of whiplash-associated disorders (Campbell 13e 2025)",
       columns: ["Grade", "Clinical presentation", "Management"],
       rows: [
@@ -296,7 +286,7 @@ const scores: Record<string, NoteTable[]> = {
       ],
     },
     {
-      heading: "ASAS classification criteria for axial spondyloarthritis (ASAS 2009)",
+      heading: "ASAS classification criteria for axial spondyloarthritis (ASAS; ASAS-EULAR 2022)",
       columns: ["Arm", "Requirement", "Note"],
       rows: [
         ["Entry", "Back pain 3 months or more with onset before age 45", "-"],
@@ -315,7 +305,7 @@ const scores: Record<string, NoteTable[]> = {
       ],
     },
     {
-      heading: "ASAS criteria for inflammatory back pain (ASAS 2009)",
+      heading: "ASAS criteria for inflammatory back pain (ASAS; ASAS-EULAR 2022)",
       columns: ["Feature", "Description", "Note"],
       rows: [
         ["1 - Age at onset", "Under 40 years", "In chronic back pain over 3 months"],
@@ -420,15 +410,6 @@ const scores: Record<string, NoteTable[]> = {
     },
   ],
   "musculoskeletal-fractures-sports-injury": [
-    {
-      heading: "Ottawa ankle and foot rules criteria for X-ray (Rosen 10e 2022)",
-      columns: ["Rule", "X-ray if pain in zone plus any of", "Note"],
-      rows: [
-        ["Ankle series", "Pain in malleolar zone plus tenderness at posterior edge or tip of either malleolus (distal 6 cm)", "Or inability to bear weight for 4 steps both at injury and in ED"],
-        ["Foot series", "Pain in midfoot zone plus tenderness at base of fifth metatarsal or navicular", "Or inability to bear weight for 4 steps"],
-        ["Performance", "Sensitivity close to 100%", "Not validated in intoxication, multiple injuries or reduced sensation"],
-      ],
-    },
     {
       heading: "Ottawa knee rule criteria for X-ray after knee injury (Rosen 10e 2022)",
       columns: ["Criterion", "Finding", "Note"],

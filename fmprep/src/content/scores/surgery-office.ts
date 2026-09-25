@@ -99,30 +99,6 @@ const scores: Record<string, NoteTable[]> = {
       ],
     },
     {
-      heading: "STOP-Bang score for obstructive sleep apnoea before surgery (Miller 10e 2024)",
-      columns: ["Component", "Finding", "Points"],
-      rows: [
-        ["Snoring", "Loud snoring", "1"],
-        ["Tired", "Daytime tiredness or sleepiness", "1"],
-        ["Observed", "Observed apnoea or choking in sleep", "1"],
-        ["Pressure", "Treated or current hypertension", "1"],
-        ["BMI", "Over 35 kg/m2", "1"],
-        ["Age", "Over 50 years", "1"],
-        ["Neck circumference", "Over 40 cm", "1"],
-        ["Gender", "Male", "1"],
-      ],
-    },
-    {
-      heading: "STOP-Bang score bands (Miller 10e 2024)",
-      columns: ["STOP-Bang", "OSA risk", "Action"],
-      rows: [
-        ["0-2", "Low", "Routine care"],
-        ["3-4", "Intermediate", "Opioid-sparing plan, postoperative monitoring"],
-        ["5-8", "High", "Sleep study if time allows; CPAP, extended monitoring"],
-        ["STOP 2+ plus male, BMI 35+ or big neck", "High", "High risk even if total is 3-4 (big neck = over 40 cm)"],
-      ],
-    },
-    {
       heading: "Modified Aldrete score for recovery room discharge (Miller 10e 2024)",
       columns: ["Component", "Finding", "Points"],
       rows: [
@@ -290,22 +266,6 @@ const scores: Record<string, NoteTable[]> = {
       ],
     },
     {
-      heading: "Richmond Agitation-Sedation Scale (RASS) (Tintinalli 9e 2020)",
-      columns: ["Score", "Term", "Description"],
-      rows: [
-        ["+4", "Combative", "Overtly combative, violent, danger to staff"],
-        ["+3", "Very agitated", "Pulls or removes tubes or catheters; aggressive"],
-        ["+2", "Agitated", "Frequent non-purposeful movement, fights ventilator"],
-        ["+1", "Restless", "Anxious but movements not aggressive or vigorous"],
-        ["0", "Alert and calm", "-"],
-        ["-1", "Drowsy", "Not fully alert; sustained awakening to voice (eye contact 10 s or more)"],
-        ["-2", "Light sedation", "Briefly awakens to voice with eye contact under 10 s"],
-        ["-3", "Moderate sedation", "Movement or eye opening to voice but no eye contact"],
-        ["-4", "Deep sedation", "No response to voice; movement or eye opening to physical stimulus"],
-        ["-5", "Unrousable", "No response to voice or physical stimulus"],
-      ],
-    },
-    {
       heading: "Ramsay sedation scale (Tintinalli 9e 2020)",
       columns: ["Level", "Description", "Meaning"],
       rows: [
@@ -435,15 +395,6 @@ const scores: Record<string, NoteTable[]> = {
     },
   ],
   "surgery-office-abscess-ssti": [
-    {
-      heading: "Hurley staging of hidradenitis suppurativa (Rook 10e 2024)",
-      columns: ["Stage", "Features", "Usual management"],
-      rows: [
-        ["Stage I", "Single or multiple abscesses without sinus tracts or scarring", "Topical clindamycin, lifestyle, deroofing"],
-        ["Stage II", "Recurrent abscesses with sinus tracts and scarring, widely separated", "Oral tetracyclines or clindamycin-rifampicin, local excision"],
-        ["Stage III", "Diffuse involvement or interconnected tracts across the whole area", "Biologics (adalimumab), wide excision"],
-      ],
-    },
   ],
   "surgery-office-diabetic-foot": [
     {
@@ -495,30 +446,6 @@ const scores: Record<string, NoteTable[]> = {
         ["Risk 1 - low", "LOPS or PAD", "Every 6-12 months"],
         ["Risk 2 - moderate", "LOPS plus PAD, or LOPS plus deformity, or PAD plus deformity", "Every 3-6 months"],
         ["Risk 3 - high", "LOPS or PAD plus previous ulcer, amputation or end-stage renal disease", "Every 1-3 months"],
-      ],
-    },
-    {
-      heading: "Fontaine classification of peripheral arterial disease (ESC 2024)",
-      columns: ["Stage", "Clinical features", "Management"],
-      rows: [
-        ["Stage I", "Asymptomatic", "Risk factor control, antiplatelet, statin"],
-        ["Stage IIa", "Mild claudication (over 200 m)", "Supervised exercise, cilostazol"],
-        ["Stage IIb", "Moderate to severe claudication (under 200 m)", "Exercise; revascularise if lifestyle-limiting"],
-        ["Stage III", "Ischaemic rest pain", "Chronic limb-threatening ischaemia - urgent revascularisation"],
-        ["Stage IV", "Ulceration or gangrene", "Revascularisation, debridement, minor amputation"],
-      ],
-    },
-    {
-      heading: "Rutherford classification of chronic limb ischaemia (ESC 2024)",
-      columns: ["Category", "Clinical description", "Grade"],
-      rows: [
-        ["Category 0", "Asymptomatic", "Grade 0"],
-        ["Category 1", "Mild claudication", "Grade I"],
-        ["Category 2", "Moderate claudication", "Grade I"],
-        ["Category 3", "Severe claudication", "Grade I"],
-        ["Category 4", "Ischaemic rest pain", "Grade II"],
-        ["Category 5", "Minor tissue loss - non-healing ulcer, focal gangrene", "Grade III"],
-        ["Category 6", "Major tissue loss above transmetatarsal level, foot not salvageable", "Grade III"],
       ],
     },
     {
@@ -577,7 +504,7 @@ const scores: Record<string, NoteTable[]> = {
       ],
     },
     {
-      heading: "EHS classification of primary and incisional ventral hernia (EHS 2009)",
+      heading: "EHS classification of primary and incisional ventral hernia (EHS; EHS/AHS 2023)",
       columns: ["Code", "Location or size", "Boundaries"],
       rows: [
         ["M1 subxiphoidal", "Midline", "Xiphoid to 3 cm below it"],
@@ -692,39 +619,6 @@ const scores: Record<string, NoteTable[]> = {
         ["Bethesda IV", "Follicular neoplasm", "About 30%", "Molecular testing, diagnostic lobectomy"],
         ["Bethesda V", "Suspicious for malignancy", "About 74%", "Molecular testing, lobectomy or near-total thyroidectomy"],
         ["Bethesda VI", "Malignant", "About 97%", "Lobectomy or near-total thyroidectomy"],
-      ],
-    },
-    {
-      heading: "ACR TI-RADS score for thyroid nodules on ultrasound (ACR 2017)",
-      columns: ["Component", "Finding", "Points"],
-      rows: [
-        ["Composition", "Cystic, almost completely cystic, or spongiform", "0"],
-        ["Composition", "Mixed cystic and solid", "1"],
-        ["Composition", "Solid or almost completely solid", "2"],
-        ["Echogenicity", "Anechoic", "0"],
-        ["Echogenicity", "Hyperechoic or isoechoic", "1"],
-        ["Echogenicity", "Hypoechoic", "2"],
-        ["Echogenicity", "Very hypoechoic", "3"],
-        ["Shape", "Wider-than-tall", "0"],
-        ["Shape", "Taller-than-wide", "3"],
-        ["Margin", "Smooth or ill-defined", "0"],
-        ["Margin", "Lobulated or irregular", "2"],
-        ["Margin", "Extrathyroidal extension", "3"],
-        ["Echogenic foci (add each type present)", "None or large comet-tail artefacts", "0"],
-        ["Echogenic foci (add each type present)", "Macrocalcifications", "1"],
-        ["Echogenic foci (add each type present)", "Peripheral (rim) calcifications", "2"],
-        ["Echogenic foci (add each type present)", "Punctate echogenic foci", "3"],
-      ],
-    },
-    {
-      heading: "ACR TI-RADS score levels and FNA thresholds (ACR 2017)",
-      columns: ["Level", "Points", "FNA if", "Follow-up if"],
-      rows: [
-        ["TR1 - benign", "0", "No FNA", "None"],
-        ["TR2 - not suspicious", "2", "No FNA", "None"],
-        ["TR3 - mildly suspicious", "3", "2.5 cm or more", "1.5 cm or more (at 1, 3 and 5 years)"],
-        ["TR4 - moderately suspicious", "4-6", "1.5 cm or more", "1 cm or more (at 1, 2, 3 and 5 years)"],
-        ["TR5 - highly suspicious", "7 or more", "1 cm or more", "0.5 cm or more (yearly for 5 years)"],
       ],
     },
     {

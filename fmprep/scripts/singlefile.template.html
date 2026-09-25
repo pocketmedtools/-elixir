@@ -1109,7 +1109,7 @@ function chartCard(e, open){
       '<p class="chart-sub">' + esc(e.topicTitle) + '</p>' +
     '</button>' +
     (open ? '<div class="chart-body">' +
-      (e.d ? drawDiagram(e.d) : '<h4 class="vis-h">' + esc(e.tb.heading) + '</h4>' + tableHtml(e.tb)) +
+      (e.d ? drawDiagram(e.d) : tableHtml(e.tb)) +
       '<button class="btn" style="margin-top:14px" data-topic="' + e.topicId + '">Open the whole topic</button>' +
       '</div>' : "") + '</div>';
 }

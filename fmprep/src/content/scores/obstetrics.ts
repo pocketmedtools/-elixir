@@ -361,7 +361,7 @@ const scores: Record<string, NoteTable[]> = {
   ],
   "obstetrics-postnatal-care": [
     {
-      heading: "Edinburgh Postnatal Depression Scale item scoring (NICE CG192, Cox 1987)",
+      heading: "Edinburgh Postnatal Depression Scale item scoring (NICE CG192 2020)",
       columns: ["Item", "Content", "Scoring"],
       rows: [
         ["Item 1", "Able to laugh and see the funny side", "0-3, lower score for usual ability"],
@@ -387,7 +387,7 @@ const scores: Record<string, NoteTable[]> = {
       ],
     },
     {
-      heading: "LATCH breastfeeding assessment score (Jensen 1994)",
+      heading: "LATCH breastfeeding assessment score (LATCH tool, in use 2026)",
       columns: ["Component", "Finding", "Points"],
       rows: [
         ["Latch", "Too sleepy or reluctant, no latch achieved", "0"],

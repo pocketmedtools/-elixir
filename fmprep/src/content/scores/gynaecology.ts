@@ -191,7 +191,7 @@ const scores: Record<string, NoteTable[]> = {
       ],
     },
     {
-      heading: "Swede score for colposcopic assessment (IFCPC, Strander 2005)",
+      heading: "Swede score for colposcopic assessment (IFCPC; Berek and Novak 16e 2020)",
       columns: ["Component", "Finding", "Points"],
       rows: [
         ["Acetowhite uptake", "None or transparent", "0"],
@@ -293,7 +293,7 @@ const scores: Record<string, NoteTable[]> = {
       ],
     },
     {
-      heading: "AFS classification of intrauterine adhesions (Asherman) (AFS 1988)",
+      heading: "AFS classification of intrauterine adhesions (Asherman) (Berek and Novak 16e 2020)",
       columns: ["Component", "Finding", "Points"],
       rows: [
         ["Extent of cavity involved", "Less than one-third", "1"],
@@ -447,7 +447,7 @@ const scores: Record<string, NoteTable[]> = {
       ],
     },
     {
-      heading: "Menopause Rating Scale items (MRS, Heinemann 2004)",
+      heading: "Menopause Rating Scale items (MRS; Berek and Novak 16e 2020)",
       columns: ["Subscale", "Items (each 0-4)", "Subscale range"],
       rows: [
         ["Somatic", "Hot flushes and sweating, heart discomfort, sleep problems, joint and muscle discomfort", "0-16"],
@@ -456,7 +456,7 @@ const scores: Record<string, NoteTable[]> = {
       ],
     },
     {
-      heading: "Menopause Rating Scale total score severity (MRS, Heinemann 2004)",
+      heading: "Menopause Rating Scale total score severity (MRS; Berek and Novak 16e 2020)",
       columns: ["Total (0-44)", "Severity", "Implication"],
       rows: [
         ["0-4", "None or little", "Reassure, lifestyle"],

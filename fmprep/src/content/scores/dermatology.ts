@@ -177,7 +177,7 @@ const scores: Record<string, NoteTable[]> = {
       ],
     },
     {
-      heading: "Global Acne Grading System (GAGS) - scoring method (Doshi 1997; IADVL)",
+      heading: "Global Acne Grading System (GAGS) - scoring method (IADVL; Rook 10e 2024)",
       columns: ["Item", "Value"],
       rows: [
         ["Forehead", "Location factor 2"],

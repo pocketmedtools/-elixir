@@ -382,29 +382,6 @@ const scores: Record<string, NoteTable[]> = {
       ],
     },
     {
-      heading: "Hunt and Hess grading of subarachnoid haemorrhage (Harrison 22e 2025)",
-      columns: ["Grade", "Clinical features", "Meaning"],
-      rows: [
-        ["Grade I", "Asymptomatic, or mild headache and slight neck stiffness", "Good grade - early aneurysm securing"],
-        ["Grade II", "Moderate to severe headache, neck stiffness, no deficit except cranial nerve palsy", "Good grade"],
-        ["Grade III", "Drowsiness, confusion or mild focal deficit", "Intermediate; outcome worsens from here"],
-        ["Grade IV", "Stupor, moderate to severe hemiparesis, possible early decerebrate rigidity", "Poor grade"],
-        ["Grade V", "Deep coma, decerebrate rigidity, moribund appearance", "Poor grade, highest mortality"],
-        ["Modifier", "Add one grade for serious systemic disease or severe vasospasm on angiography", "Original 1968 rule"],
-      ],
-    },
-    {
-      heading: "WFNS grading of subarachnoid haemorrhage (Harrison 22e 2025)",
-      columns: ["Grade", "GCS", "Motor deficit"],
-      rows: [
-        ["WFNS I", "15", "Absent"],
-        ["WFNS II", "13-14", "Absent"],
-        ["WFNS III", "13-14", "Present"],
-        ["WFNS IV", "7-12", "Present or absent"],
-        ["WFNS V", "3-6", "Present or absent"],
-      ],
-    },
-    {
       heading: "Modified Fisher scale for vasospasm risk after SAH (Harrison 22e 2025)",
       columns: ["Grade", "CT findings", "Symptomatic vasospasm risk"],
       rows: [
@@ -413,17 +390,6 @@ const scores: Record<string, NoteTable[]> = {
         ["Grade 2", "Thin SAH with IVH", "About 33%"],
         ["Grade 3", "Thick SAH (fills a cistern or fissure), no IVH", "About 33%"],
         ["Grade 4", "Thick SAH with IVH", "About 40%"],
-      ],
-    },
-    {
-      heading: "West Haven grading of hepatic encephalopathy (AASLD/EASL, Sleisenger 11e 2021)",
-      columns: ["Grade", "Clinical features", "Category"],
-      rows: [
-        ["Minimal", "No clinical signs; abnormal psychometric or neurophysiological tests", "Covert"],
-        ["Grade 1", "Trivial lack of awareness, euphoria or anxiety, short attention, altered sleep rhythm", "Covert"],
-        ["Grade 2", "Lethargy, disorientation to time, personality change, inappropriate behaviour, asterixis", "Overt"],
-        ["Grade 3", "Somnolence to semi-stupor, responds to stimuli, gross disorientation, bizarre behaviour", "Overt - protect airway"],
-        ["Grade 4", "Coma", "Overt - ICU"],
       ],
     },
   ],

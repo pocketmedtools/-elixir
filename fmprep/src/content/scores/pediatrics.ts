@@ -104,7 +104,7 @@ const scores: Record<string, NoteTable[]> = {
       ],
     },
     {
-      heading: "Thompson HIE score for encephalopathy after birth asphyxia (Thompson 1997)",
+      heading: "Thompson HIE score for encephalopathy after birth asphyxia (Nelson 22e 2024)",
       columns: ["Component", "Finding", "Points"],
       rows: [
         ["Tone", "Normal", "0"],

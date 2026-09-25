@@ -65,46 +65,6 @@ const scores: Record<string, NoteTable[]> = {
       ],
     },
     {
-      heading: "University of Texas diabetic wound classification (grade and stage)",
-      columns: ["Class", "Definition", "Group"],
-      rows: [
-        ["Grade 0", "Pre- or post-ulcerative lesion, completely epithelialised", "Depth"],
-        ["Grade I", "Superficial wound not involving tendon, capsule or bone", "Depth"],
-        ["Grade II", "Wound penetrating to tendon or capsule", "Depth"],
-        ["Grade III", "Wound penetrating to bone or joint", "Depth"],
-        ["Stage A", "Clean wound, no infection or ischaemia", "Complication"],
-        ["Stage B", "Infected, non-ischaemic", "Complication"],
-        ["Stage C", "Ischaemic, non-infected", "Complication"],
-        ["Stage D", "Infected and ischaemic - highest amputation risk", "Complication"],
-      ],
-    },
-    {
-      heading: "SINBAD score for diabetic foot ulcer (IWGDF 2023 classification guideline)",
-      columns: ["Component", "Finding", "Points"],
-      rows: [
-        ["Site", "Forefoot", "0"],
-        ["Site", "Midfoot or hindfoot", "1"],
-        ["Ischaemia", "Pedal blood flow intact - at least one palpable pulse", "0"],
-        ["Ischaemia", "Clinical evidence of reduced pedal flow", "1"],
-        ["Neuropathy", "Protective sensation intact", "0"],
-        ["Neuropathy", "Protective sensation lost", "1"],
-        ["Bacterial infection", "None", "0"],
-        ["Bacterial infection", "Present", "1"],
-        ["Area", "Ulcer below 1 cm2", "0"],
-        ["Area", "Ulcer 1 cm2 or more", "1"],
-        ["Depth", "Confined to skin and subcutaneous tissue", "0"],
-        ["Depth", "Reaching muscle, tendon or deeper", "1"],
-      ],
-    },
-    {
-      heading: "SINBAD score interpretation",
-      columns: ["SINBAD (0-6)", "Meaning", "Action"],
-      rows: [
-        ["0 to 2", "Lower risk of non-healing", "Primary care with foot protection service"],
-        ["3 to 6", "Higher risk of delayed healing and amputation", "Refer to multidisciplinary foot team"],
-      ],
-    },
-    {
       heading: "Eichenholtz staging of Charcot neuro-osteoarthropathy (IWGDF 2023 Charcot)",
       columns: ["Stage", "Clinical and imaging features", "Management"],
       rows: [

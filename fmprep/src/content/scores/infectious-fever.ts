@@ -3,18 +3,6 @@ import type { NoteTable } from "../../lib/types";
 const scores: Record<string, NoteTable[]> = {
   "infectious-fever-acute-undifferentiated-fever": [
     {
-      heading: "Sepsis-3 definitions and clinical criteria (Sepsis-3 2016; SSC 2021)",
-      columns: ["Term", "Definition", "Clinical criteria"],
-      rows: [
-        ["Sepsis", "Life-threatening organ dysfunction from a dysregulated host response to infection", "Acute rise in total SOFA score of 2 points or more"],
-        ["Septic shock", "Sepsis with circulatory and metabolic failure; mortality above 40 percent", "Vasopressor for MAP 65 mmHg or more and lactate above 2 mmol/L after fluids"],
-        ["qSOFA - respiratory", "Respiratory rate 22 per minute or more", "Scores 1"],
-        ["qSOFA - mental status", "Altered mentation (GCS below 15)", "Scores 1"],
-        ["qSOFA - circulation", "Systolic BP 100 mmHg or less", "Scores 1"],
-        ["qSOFA 2 or more", "Higher risk of death or prolonged ICU stay outside ICU", "Prompt for organ dysfunction work-up; SSC 2021 advises not to use alone as a screen"],
-      ],
-    },
-    {
       heading: "SIRS criteria (ACCP/SCCM; SSC 2021 screening)",
       columns: ["Criterion", "Threshold", "Note"],
       rows: [
@@ -23,51 +11,6 @@ const scores: Record<string, NoteTable[]> = {
         ["Respiration", "Rate above 20 per minute or PaCO2 below 32 mmHg", "Also counts in the IWGDF/IDSA severe foot infection"],
         ["White cell count", "Above 12,000 or below 4000/mm3, or more than 10 percent bands", "Leucopenia is a poor sign"],
         ["SIRS present", "2 or more of the 4 criteria", "Sensitive but not specific; sepsis is now defined by SOFA"],
-      ],
-    },
-    {
-      heading: "SOFA score for organ dysfunction in sepsis (Sepsis-3; SSC 2021)",
-      columns: ["Component", "Finding", "Points"],
-      rows: [
-        ["Respiration - PaO2/FiO2 (mmHg)", "400 or more", "0"],
-        ["Respiration - PaO2/FiO2 (mmHg)", "Below 400", "1"],
-        ["Respiration - PaO2/FiO2 (mmHg)", "Below 300", "2"],
-        ["Respiration - PaO2/FiO2 (mmHg)", "Below 200 with respiratory support", "3"],
-        ["Respiration - PaO2/FiO2 (mmHg)", "Below 100 with respiratory support", "4"],
-        ["Coagulation - platelets (x10^3/mm3)", "150 or more", "0"],
-        ["Coagulation - platelets (x10^3/mm3)", "Below 150", "1"],
-        ["Coagulation - platelets (x10^3/mm3)", "Below 100", "2"],
-        ["Coagulation - platelets (x10^3/mm3)", "Below 50", "3"],
-        ["Coagulation - platelets (x10^3/mm3)", "Below 20", "4"],
-        ["Liver - bilirubin (mg/dL)", "Below 1.2", "0"],
-        ["Liver - bilirubin (mg/dL)", "1.2 to 1.9", "1"],
-        ["Liver - bilirubin (mg/dL)", "2.0 to 5.9", "2"],
-        ["Liver - bilirubin (mg/dL)", "6.0 to 11.9", "3"],
-        ["Liver - bilirubin (mg/dL)", "12.0 or more", "4"],
-        ["Cardiovascular", "MAP 70 mmHg or more", "0"],
-        ["Cardiovascular", "MAP below 70 mmHg", "1"],
-        ["Cardiovascular", "Dopamine below 5 or any dobutamine (microg/kg/min)", "2"],
-        ["Cardiovascular", "Dopamine 5.1-15, or adrenaline or noradrenaline 0.1 or less", "3"],
-        ["Cardiovascular", "Dopamine above 15, or adrenaline or noradrenaline above 0.1", "4"],
-        ["CNS - Glasgow Coma Scale", "15", "0"],
-        ["CNS - Glasgow Coma Scale", "13 to 14", "1"],
-        ["CNS - Glasgow Coma Scale", "10 to 12", "2"],
-        ["CNS - Glasgow Coma Scale", "6 to 9", "3"],
-        ["CNS - Glasgow Coma Scale", "Below 6", "4"],
-        ["Renal - creatinine (mg/dL) or urine output", "Below 1.2", "0"],
-        ["Renal - creatinine (mg/dL) or urine output", "1.2 to 1.9", "1"],
-        ["Renal - creatinine (mg/dL) or urine output", "2.0 to 3.4", "2"],
-        ["Renal - creatinine (mg/dL) or urine output", "3.5 to 4.9, or urine below 500 mL/day", "3"],
-        ["Renal - creatinine (mg/dL) or urine output", "5.0 or more, or urine below 200 mL/day", "4"],
-      ],
-    },
-    {
-      heading: "SOFA score - interpretation",
-      columns: ["Result", "Meaning", "Action"],
-      rows: [
-        ["Baseline", "Assumed 0 unless known pre-existing organ dysfunction", "Score the change, not the absolute value"],
-        ["Rise of 2 or more", "Sepsis - about 10 percent in-hospital mortality", "Sepsis bundle within 1 hour; senior review"],
-        ["Rising over 48 h", "Worsening organ failure", "Escalate to ICU; review source control"],
       ],
     },
     {
@@ -132,16 +75,6 @@ const scores: Record<string, NoteTable[]> = {
       ],
     },
     {
-      heading: "Types of fever of unknown origin (Harrison 22e 2025)",
-      columns: ["Type", "Definition", "Common causes"],
-      rows: [
-        ["Classic FUO", "Above 38.3 C on several occasions for 3 weeks+, undiagnosed after structured work-up", "TB, lymphoma, abscess, endocarditis, Still disease, vasculitis"],
-        ["Nosocomial FUO", "Hospitalised, no infection on admission; undiagnosed after 3 days including 2 days of cultures", "C. difficile, drug fever, septic thrombophlebitis, sinusitis"],
-        ["Neutropenic FUO", "Neutrophils below 500/mm3 or expected to fall; undiagnosed after 3 days", "Bacterial, fungal (Candida, Aspergillus), perianal infection"],
-        ["HIV-associated FUO", "HIV with fever over 4 weeks outpatient or 3 days inpatient", "MAC, TB, CMV, histoplasmosis, lymphoma"],
-      ],
-    },
-    {
       heading: "Types of fever pattern and their classic causes (Harrison 22e 2025)",
       columns: ["Pattern", "Description", "Classic causes"],
       rows: [
@@ -197,7 +130,7 @@ const scores: Record<string, NoteTable[]> = {
   ],
   "infectious-fever-skin-soft-tissue-infection": [
     {
-      heading: "Eron classification of skin and soft tissue infection severity (NICE NG141)",
+      heading: "Eron classification of skin and soft tissue infection severity (CREST guideline)",
       columns: ["Class", "Features", "Management"],
       rows: [
         ["Class I", "No systemic toxicity, no uncontrolled comorbidity", "Oral antibiotic at home (flucloxacillin or cefalexin)"],

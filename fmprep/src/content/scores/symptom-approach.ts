@@ -163,39 +163,6 @@ const scores: Record<string, NoteTable[]> = {
         ["HIV-associated FUO", "Fever over 3 weeks outpatient or 3 days inpatient in HIV", "TB, MAC, cryptococcus, lymphoma, histoplasmosis"],
       ],
     },
-    {
-      heading: "Yale Observation Scale for febrile children under 3 years (Nelson 22e 2024)",
-      columns: ["Component", "Finding", "Points"],
-      rows: [
-        ["Quality of cry", "Strong with normal tone, or content and not crying", "1"],
-        ["Quality of cry", "Whimpering or sobbing", "3"],
-        ["Quality of cry", "Weak, moaning or high-pitched", "5"],
-        ["Reaction to parent stimulation", "Cries briefly then stops, or content", "1"],
-        ["Reaction to parent stimulation", "Cries off and on", "3"],
-        ["Reaction to parent stimulation", "Continual cry or hardly responds", "5"],
-        ["State variation", "Stays awake, or wakes quickly when stimulated", "1"],
-        ["State variation", "Eyes close briefly, or wakes with prolonged stimulation", "3"],
-        ["State variation", "Falls asleep or will not rouse", "5"],
-        ["Colour", "Pink", "1"],
-        ["Colour", "Pale extremities or acrocyanosis", "3"],
-        ["Colour", "Pale, cyanotic, mottled or ashen", "5"],
-        ["Hydration", "Skin and eyes normal, mucosa moist", "1"],
-        ["Hydration", "Skin and eyes normal, mouth slightly dry", "3"],
-        ["Hydration", "Skin doughy or tented, dry mucosa and/or sunken eyes", "5"],
-        ["Response to social overtures", "Smiles or alerts", "1"],
-        ["Response to social overtures", "Brief smile or alerts briefly", "3"],
-        ["Response to social overtures", "No smile, anxious or dull face, or no alerting", "5"],
-      ],
-    },
-    {
-      heading: "Yale Observation Scale score bands",
-      columns: ["Total", "Risk of serious illness", "Action"],
-      rows: [
-        ["10 or less", "Low (about 3%)", "Home care with safety-net advice if examination normal"],
-        ["11-15", "Intermediate (about 26%)", "Careful assessment, investigations, observe"],
-        ["16 or more", "High (about 92%)", "Refer or admit; full sepsis work-up"],
-      ],
-    },
   ],
 
   "symptom-approach-fatigue": [
@@ -214,38 +181,6 @@ const scores: Record<string, NoteTable[]> = {
   ],
 
   "symptom-approach-body-ache": [
-    {
-      heading: "ACR 2016 revised fibromyalgia diagnostic criteria (ACR 2016)",
-      columns: ["Criterion", "Requirement", "Note"],
-      rows: [
-        ["Widespread Pain Index (WPI)", "Number of 19 body areas painful in past week (0-19)", "Shoulders, hips, arms, legs, jaw, chest, abdomen, back, neck"],
-        ["Symptom Severity Scale (SSS)", "Fatigue, unrefreshing sleep, cognition (0-3 each) plus headache, abdominal pain, depression (0-1 each)", "Total 0-12"],
-        ["Threshold", "WPI 7 or more and SSS 5 or more, or WPI 4-6 and SSS 9 or more", "Both parts needed"],
-        ["Generalised pain", "Pain in at least 4 of 5 regions", "Jaw, chest and abdomen do not count to region total"],
-        ["Duration", "Symptoms at similar level for at least 3 months", "Check thyroid, CK, ESR/CRP, vitamin D"],
-        ["Other diagnoses", "Diagnosis valid regardless of other conditions", "Fibromyalgia is not a diagnosis of exclusion"],
-      ],
-    },
-    {
-      heading: "EULAR/ACR 2012 polymyalgia rheumatica classification score (without ultrasound)",
-      columns: ["Component", "Finding", "Points"],
-      rows: [
-        ["Morning stiffness", "Over 45 minutes", "2"],
-        ["Hip involvement", "Hip pain or limited range of movement", "1"],
-        ["Serology", "RF and ACPA both negative", "2"],
-        ["Other joints", "No pain in other joints", "1"],
-      ],
-    },
-    {
-      heading: "EULAR/ACR 2012 polymyalgia rheumatica score - interpretation",
-      columns: ["Total", "Classification", "Note"],
-      rows: [
-        ["Entry requirement", "Age 50 or more, bilateral shoulder aching, raised CRP and/or ESR", "Must be met before scoring"],
-        ["4 or more (clinical)", "Classified as PMR", "Ultrasound adds 1 point for shoulder plus hip, 1 for both shoulders"],
-        ["5 or more (with ultrasound)", "Classified as PMR", "Ultrasound: subdeltoid bursitis, biceps tenosynovitis, hip synovitis"],
-        ["Below threshold", "Not classified as PMR", "Consider RA, hypothyroidism, myositis, malignancy, GCA overlap"],
-      ],
-    },
   ],
 
   "symptom-approach-chronic-cough": [
