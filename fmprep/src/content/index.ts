@@ -255,7 +255,10 @@ const EXTRA_LOADERS: Record<string, () => Promise<{ default: Topic[] }>> = {
   dermatology: () => import("./extra/dermatology"),
   "eye-ent": () => import("./extra/eye-ent"),
   emergency: () => import("./extra/emergency"),
-  pediatrics: () => import("./extra/pediatrics"),
+  pediatrics: () =>
+    Promise.all([import("./extra/pediatrics"), import("./extra/pediatrics-b")]).then(([a, b]) => ({
+      default: [...a.default, ...b.default],
+    })),
   obstetrics: () => import("./extra/obstetrics"),
   gynaecology: () => import("./extra/gynaecology"),
   preventive: () => import("./extra/preventive"),
