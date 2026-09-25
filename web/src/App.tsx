@@ -3,6 +3,7 @@ import HomeScreen from "./components/HomeScreen";
 import SavedScreen from "./components/SavedScreen";
 import SideMenu, { type MenuTarget } from "./components/SideMenu";
 import BmiCalculator from "./components/BmiCalculator";
+import BiliTool from "./components/BiliTool";
 import BpCentiles from "./components/BpCentiles";
 import CreatinineClearance from "./components/CreatinineClearance";
 import GrowthCalculator from "./components/GrowthCalculator";
@@ -122,6 +123,13 @@ export default function App() {
       idle: "bg-slate-100 text-slate-800 hover:bg-slate-200",
     },
     {
+      id: "bili",
+      label: "Jaundice (Bili)",
+      shortLabel: "Bili",
+      active: "bg-yellow-900 text-white shadow-sm",
+      idle: "bg-slate-100 text-slate-800 hover:bg-slate-200",
+    },
+    {
       id: "ob",
       label: "OB / EDD",
       shortLabel: "OB",
@@ -217,6 +225,7 @@ export default function App() {
         {tab === "growth" && <GrowthCalculator />}
         {tab === "bp" && <BpCentiles />}
         {tab === "nbWeight" && <NewbornWeightLoss />}
+        {tab === "bili" && <BiliTool />}
         {tab === "bmi" && <BmiCalculator />}
         {tab === "crCl" && <CreatinineClearance />}
         {tab === "regimen" && <RegimenAnalyzerUI />}

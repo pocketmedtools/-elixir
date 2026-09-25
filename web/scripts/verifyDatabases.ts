@@ -1270,6 +1270,62 @@ section("Pediatric DB integrity");
   console.log("newborn weight loss: formula, 7/10/12 % bands, red flag and age advice OK");
 }
 
+// ---------- Neonatal jaundice (NICE CG98) ----------
+{
+  console.log("\n=== Neonatal jaundice suite ===");
+  const { biliThresholds, assessBili } = await import("../src/lib/biliMath");
+  // NICE CG98 >= 38 wk table: [hours, repeat, consider, phototherapy, exchange].
+  const T: [number, number | null, number | null, number, number][] = [
+    [0, null, null, 100, 100], [6, 100, 112, 125, 150], [12, 100, 125, 150, 200], [18, 100, 137, 175, 250],
+    [24, 100, 150, 200, 300], [30, 112, 162, 212, 350], [36, 125, 175, 225, 400], [42, 137, 187, 237, 450],
+    [48, 150, 200, 250, 450], [54, 162, 212, 262, 450], [60, 175, 225, 275, 450], [66, 187, 237, 287, 450],
+    [72, 200, 250, 300, 450], [78, null, 262, 312, 450], [84, null, 275, 325, 450], [90, null, 287, 337, 450],
+    [96, null, 300, 350, 450], [200, null, 300, 350, 450],
+  ];
+  for (const [h, rep, con, ph, ex] of T) {
+    const t = biliThresholds(40, h);
+    const chk = (a: number | null, b: number | null, n: string) => {
+      if (b != null && (a == null || Math.floor(a) !== b)) fail(`NICE ${n} at ${h} h: ${a} vs ${b}`);
+    };
+    chk(t.repeat, rep, "repeat"); chk(t.consider, con, "consider"); chk(t.photo, ph, "photo"); chk(t.exchange, ex, "exchange");
+  }
+  // Preterm graphs: 40/80 at birth, GA*10-100 / GA*10 from 72 h.
+  for (let ga = 23; ga <= 37; ga++) {
+    const a = biliThresholds(ga, 0), b = biliThresholds(ga, 72), c = biliThresholds(ga, 300);
+    if (a.photo !== 40 || a.exchange !== 80) fail(`NICE preterm ${ga} wk birth values`);
+    if (b.photo !== ga * 10 - 100 || b.exchange !== ga * 10) fail(`NICE preterm ${ga} wk 72 h values`);
+    if (c.photo !== b.photo || c.exchange !== b.exchange) fail(`NICE preterm ${ga} wk should plateau after 72 h`);
+  }
+  // Lines never cross and never fall with age; zones ordered by bilirubin.
+  const order = ["below", "repeat", "consider", "photo", "exchange"];
+  for (const ga of [23, 28, 32, 35, 37, 38]) {
+    let prevT = biliThresholds(ga, 0);
+    for (let h = 0; h <= 400; h += 1) {
+      const t = biliThresholds(ga, h);
+      if (t.exchange < t.photo) fail(`exchange below photo at ${ga} wk ${h} h`);
+      if (t.photo < prevT.photo - 1e-9 || t.exchange < prevT.exchange - 1e-9) fail(`threshold fell at ${ga} wk ${h} h`);
+      prevT = t;
+      if (h % 12) continue;
+      let last = 0;
+      for (let s = 5; s <= 600; s += 5) {
+        const i = order.indexOf(assessBili(ga, h, s).zone);
+        if (i < last) fail(`bili zone not monotonic ${ga} wk ${h} h ${s}`);
+        last = i;
+      }
+    }
+  }
+  // Spot: 40 wk, 48 h, 15 mg/dL = 256.5 µmol/L > 250 → phototherapy.
+  if (assessBili(40, 48, 15 * 17.1).zone !== "photo") fail("15 mg/dL at 48 h term should need phototherapy");
+  if (assessBili(40, 48, 14 * 17.1).zone !== "consider") fail("14 mg/dL at 48 h term should be 'consider'");
+  if (assessBili(40, 30, 360).zone !== "exchange") fail("360 at 30 h term should exceed exchange");
+  const rise = assessBili(40, 30, 200, { umol: 100, ageHours: 18 });
+  if (!rise.ratePerHour || Math.abs(rise.ratePerHour - 8.333) > 0.01) fail("rate of rise calc wrong");
+  if (!assessBili(40, 36, 250, { umol: 150, ageHours: 24 }).actions.some((a) => a.includes("> 8.5")))
+    fail("rapid rise > 8.5 should be flagged");
+  if (!assessBili(38, 12, 60).actions.some((a) => a.includes("first 24 h"))) fail("<24 h jaundice flag missing");
+  console.log("NICE CG98: all 18 table rows exact, preterm lines, monotonic zones, rate of rise OK");
+}
+
 // ---------- Result ----------
 console.log("\n========== VERIFY RESULT ==========");
 if (failures.length) {

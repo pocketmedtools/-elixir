@@ -10,7 +10,7 @@ import {
 import ToolIcon, { TOOL_TEXT } from "./ToolIcon";
 
 export type MenuTarget =
-  | "home" | "pedDose" | "growth" | "bp" | "nbWeight" | "bmi" | "crCl" | "regimen" | "icu" | "insulin" | "ob" | "saved" | "report";
+  | "home" | "pedDose" | "growth" | "bp" | "nbWeight" | "bili" | "bmi" | "crCl" | "regimen" | "icu" | "insulin" | "ob" | "saved" | "report";
 
 const LINK_GROUPS: {
   heading: string | null;
@@ -34,6 +34,7 @@ const LINK_GROUPS: {
       { id: "growth", label: "Growth Charts" },
       { id: "bp", label: "Ped-BP" },
       { id: "nbWeight", label: "Newborn Weight Loss" },
+      { id: "bili", label: "Neonatal Jaundice (Bili)" },
     ],
   },
   { heading: "OBG", links: [{ id: "ob", label: "OB / EDD" }] },
