@@ -1,4 +1,5 @@
 import type { MenuTarget } from "./SideMenu";
+import DownloadApk from "./DownloadApk";
 import ToolIcon, { TOOL_BG, TOOL_SOFT } from "./ToolIcon";
 
 export const TOOL_SECTIONS: {
@@ -34,6 +35,7 @@ export const TOOL_SECTIONS: {
 export default function HomeScreen({ onOpen }: { onOpen: (t: MenuTarget) => void }) {
   return (
     <div className="mx-auto max-w-4xl px-3 py-6 md:px-6">
+      <div className="mb-6 empty:hidden"><DownloadApk /></div>
       {TOOL_SECTIONS.map((section) => (
         <section key={section.heading} className="mb-6 last:mb-0">
           <h2 className="mb-3 text-xs font-bold uppercase tracking-widest text-slate-500">

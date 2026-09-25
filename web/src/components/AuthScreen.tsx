@@ -1,4 +1,5 @@
 import { useState } from "react";
+import DownloadApk from "./DownloadApk";
 import { signIn, signUp } from "../lib/accounts";
 
 const inputCls =
@@ -88,6 +89,7 @@ export default function AuthScreen({ onGuest }: { onGuest: () => void }) {
         <p className="mt-4 text-center text-[11px] leading-snug text-slate-500">
           Saved calculations stay on this device. At sign-up your phone number is shared once with the app maintainer for records.
         </p>
+        <div className="mt-4 empty:hidden"><DownloadApk compact /></div>
       </div>
     </div>
   );
