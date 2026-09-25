@@ -1,5 +1,349 @@
 import type { Topic } from "../../lib/types";
 
-const topics: Topic[] = [];
+const topics: Topic[] = [
+  {
+    id: "geriatrics-ethics-elderly-community-health",
+    title: "Health problems of the elderly, elder abuse and social support in India",
+    oneLiner:
+      "India's population aged 60 and above - **about 10.5% (149 million) in 2022, projected to reach 20.8% by 2050** - carries a heavy load of chronic disease, disability, depression, dependency and elder abuse, addressed by NPHCE, the MWPSC Act 2007, pensions, PM-JAY cover for all aged 70+ and a family physician who practises comprehensive geriatric assessment and active-ageing advice.",
+    frequency: "core",
+    keywords: [
+      "geriatrics",
+      "elderly",
+      "senior citizens",
+      "LASI",
+      "India Ageing Report",
+      "NPHCE",
+      "elder abuse",
+      "EASI",
+      "MWPSC Act 2007",
+      "Maintenance and Welfare of Parents and Senior Citizens Act",
+      "Elderline 14567",
+      "IGNOAPS",
+      "Ayushman Vay Vandana",
+      "PM-JAY 70+",
+      "RPwD Act 2016",
+      "UDID",
+      "CBR",
+      "ICOPE",
+      "healthy ageing",
+      "retirement",
+    ],
+    sections: [
+      {
+        heading: "Demographic ageing in India",
+        points: [
+          "**Elderly** in India are persons aged **60 years and above** (National Policy on Older Persons 1999; MWPSC Act 2007). [Park 28e]",
+          "The elderly were **8.6% (104 million) in Census 2011**, rose to about **10.5% (149 million) in 2022**, and will be **20.8% (347 million) by 2050**. [UNFPA India Ageing Report 2023]",
+          "**LASI Wave 1 (2017-18)** is India's largest ageing survey - over 72,000 adults aged 45 and above in all states. [LASI Wave 1 2020]",
+          "**Feminisation of ageing** - women outlive men, and more than half of women aged 60+ are widowed, often without income. [LASI Wave 1 2020]",
+          "**Ruralisation** - about 70% of elderly live in rural areas with limited access to specialist care. [UNFPA India Ageing Report 2023]",
+          "**Old-age dependency ratio** is rising; southern states (Kerala, Tamil Nadu) and Himachal Pradesh have the oldest populations. [UNFPA India Ageing Report 2023]",
+          "Life expectancy at 60 is **about 18 years**, and higher for women. [UNFPA India Ageing Report 2023]",
+          "**Breakdown of the joint family**, migration of children and urbanisation leave many elderly living alone or as couples. [Park 28e]",
+          "Around **three-quarters of the elderly have at least one chronic disease** and about 40% have some disability. [LASI Wave 1 2020]",
+        ],
+      },
+      {
+        heading: "Medical, psychological, social and economic problems",
+        points: [
+          "**Medical - chronic NCDs**: hypertension (about one-third), diabetes, COPD, IHD, stroke, CKD, cancers, osteoarthritis. [LASI Wave 1 2020]",
+          "**Geriatric giants (Isaacs)**: immobility, instability (falls), incontinence, intellectual impairment and iatrogenesis. [Brocklehurst 8e]",
+          "**Sensory loss** - cataract and presbyopia, presbycusis - is the commonest disability and among the most treatable. [LASI Wave 1 2020]",
+          "**Multimorbidity and polypharmacy** (5 or more drugs) cause falls, delirium and admissions - review with Beers and STOPP/START criteria. [AGS Beers 2023]",
+          "Other medical problems: **osteoporosis and fractures, malnutrition and sarcopenia, oral disease, constipation, sleep disorders, BPH**. [Harrison 22e]",
+          "**Psychological**: depression (about 1 in 5 elderly has depressive symptoms), dementia (estimated 7-8% prevalence in 60+), anxiety, loneliness, bereavement. [LASI-DAD 2023]",
+          "Depression in the elderly often presents with **somatic complaints, poor sleep, memory complaints or weight loss** - screen with GDS-15. [NPHCE 2021]",
+          "**Social**: loss of spouse, isolation, change of role, dependence on children, neglect, abuse and migration of children. [Park 28e]",
+          "**Economic**: only a minority have a pension; many depend on children or keep working; **out-of-pocket health spending** pushes families into poverty. [LASI Wave 1 2020]",
+          "Elderly women face a **double disadvantage** - widowhood, no property in their name and lower literacy. [UNFPA India Ageing Report 2023]",
+        ],
+      },
+      {
+        heading: "Healthy and active ageing and retirement",
+        points: [
+          "**Healthy ageing** (WHO) is developing and maintaining the **functional ability** that enables well-being in older age - built on intrinsic capacity and environment. [WHO ICOPE 2024]",
+          "WHO **ICOPE** screens six domains of intrinsic capacity: **cognition, mobility, nutrition, vision, hearing and depressive symptoms**. [WHO ICOPE 2024]",
+          "The **UN Decade of Healthy Ageing 2021-2030** is the global framework India subscribes to. [WHO ICOPE 2024]",
+          "**Physical activity**: 150 minutes of moderate activity a week plus **balance and strength training on 3 or more days** to prevent falls (yoga, tai chi). [WHO Physical Activity Guidelines 2020]",
+          "**Diet**: protein 1-1.2 g/kg/day, calcium 1200 mg, vitamin D, fibre, adequate fluids; avoid excess salt. [ICMR-NIN 2024]",
+          "**Vaccination**: annual influenza, pneumococcal (PCV then PPSV23), Td booster every 10 years, recombinant zoster vaccine. [API Adult Immunization 2024]",
+          "Stop **tobacco and alcohol**; keep mentally and socially active - volunteering, senior citizens' clubs, religious and community groups. [Park 28e]",
+          "**Retirement - anticipated problems**: loss of role and identity, reduced income, loss of workplace social network, boredom, depression, increased alcohol use, marital friction. [Park 28e]",
+          "**Pre-retirement counselling** - financial planning, hobbies, part-time or voluntary work, health insurance before the employer cover ends. [Park 28e]",
+          "**Pre-retirement health check**: BP, glucose, lipids, BMI, cancer screening (oral, breast, cervix, colorectal as indicated), vision, hearing, bone health, cognition, mood. [NPHCE 2021]",
+        ],
+      },
+      {
+        heading: "Elder abuse: types, warning signs, screening and remedies",
+        points: [
+          "**Elder abuse (WHO)** is a single or repeated act, or lack of appropriate action, within a relationship with an expectation of trust, which causes harm or distress to an older person. [WHO 2022]",
+          "Types: **physical, psychological (verbal), financial (material), sexual, neglect** (active or passive), **abandonment** and self-neglect. [Brocklehurst 8e]",
+          "About **5% of Indian elderly reported abuse** in LASI; NGO surveys report much higher rates - verbal abuse and disrespect are commonest, usually by sons and daughters-in-law. [LASI Wave 1 2020]",
+          "**Warning signs**: unexplained bruises or fractures, delay in seeking care, poor hygiene, malnutrition, pressure ulcers, fearfulness, sudden change in finances or will. [Brocklehurst 8e]",
+          "Risk factors: **dependency, dementia, caregiver stress, caregiver substance use, financial dependence of the abuser, social isolation**. [Harrison 22e]",
+          "Screen with the **Elder Abuse Suspicion Index (EASI)** - six questions asked of the older person alone. [Brocklehurst 8e]",
+          "**Interview the elder alone**, document injuries with body diagrams, assess capacity and immediate safety. [Harrison 22e]",
+          "Remedies: counselling and caregiver support, respite, **Elderline 14567**, police senior-citizen cells, Maintenance Tribunal, old-age homes, legal aid. [MoSJE 2023]",
+          "Physical or sexual abuse is a **criminal offence under BNS 2023** - police intimation and MLC documentation are required. [BNS 2023]",
+          "**World Elder Abuse Awareness Day is 15 June**. [WHO 2022]",
+        ],
+      },
+      {
+        heading: "Legal protection and national programmes",
+        points: [
+          "**Maintenance and Welfare of Parents and Senior Citizens (MWPSC) Act 2007** obliges children and relatives who inherit property to maintain senior citizens. [MWPSC Act 2007]",
+          "A **Maintenance Tribunal** (headed by the SDM) can order maintenance **up to Rs 10,000 per month**, and must decide within **90 days**. [MWPSC Act 2007]",
+          "**Abandonment** of a senior citizen by a person responsible for care is punishable with up to **3 months' imprisonment or Rs 5000 fine, or both**. [MWPSC Act 2007]",
+          "Property transferred on condition of care can be **declared void** by the tribunal if care is not provided. [MWPSC Act 2007]",
+          "The Act also asks states to run **at least one old-age home per district** and to reserve beds and queues for seniors in government hospitals. [MWPSC Act 2007]",
+          "**National Policy on Older Persons 1999** set the framework - financial security, health care, shelter, welfare and protection. [Park 28e]",
+          "**NPHCE (National Programme for Health Care of the Elderly, 2010)** provides services from SC-HWC (home care, screening) to PHC, CHC (rehabilitation), district geriatric wards and Regional Geriatric Centres, and two National Centres of Ageing (AIIMS Delhi, MMC Chennai). [NPHCE 2021]",
+          "**Elderline 14567** is the national toll-free helpline for senior citizens (information, legal guidance, emotional support, rescue). [MoSJE 2023]",
+          "**Rashtriya Vayoshri Yojana** gives free aids - spectacles, hearing aids, walking sticks, dentures, wheelchairs - to BPL and low-income seniors. [MoSJE 2023]",
+          "Concessions: **Senior Citizens Savings Scheme, higher FD interest, income-tax benefits** and priority in public services. [Park 28e]",
+        ],
+      },
+      {
+        heading: "Social security and health cover",
+        points: [
+          "**IGNOAPS** (Indira Gandhi National Old Age Pension Scheme, under NSAP) pays **Rs 200 per month for BPL persons aged 60-79 and Rs 500 from age 80**, topped up by states. [MoRD NSAP 2024]",
+          "**Pradhan Mantri Vaya Vandana Yojana** was an LIC pension scheme for those 60+; it closed to new subscribers on **31 March 2023**. [Park 28e]",
+          "**PM-JAY for all aged 70+ (October 2024)** covers every senior citizen aged 70 and above irrespective of income, with the **Ayushman Vay Vandana card** and up to **Rs 5 lakh per year**. [NHA 2024]",
+          "Seniors already in an eligible PM-JAY family get an **additional Rs 5 lakh top-up** for themselves. [NHA 2024]",
+          "**Atal Vayo Abhyuday Yojana (AVYAY)** is the umbrella scheme of the Ministry of Social Justice for old-age homes, day care and mobile medicare units. [MoSJE 2023]",
+          "**CGHS, ECHS and ESIC** cover retired government employees, ex-servicemen and insured workers respectively. [Park 28e]",
+        ],
+      },
+      {
+        heading: "Disability: RPwD Act 2016, certification and CBR",
+        points: [
+          "The **Rights of Persons with Disabilities Act 2016** recognises **21 disabilities** (up from 7 in the 1995 Act), including locomotor, visual, hearing, intellectual, mental illness, autism, thalassaemia, haemophilia, sickle cell disease and acid-attack survivors. [RPwD Act 2016]",
+          "**Benchmark disability** is 40% or more - it confers reservation of **4% in government jobs and 5% in higher education**. [RPwD Act 2016]",
+          "A **disability certificate** is issued by a notified medical authority (medical board) and linked to the **UDID (Unique Disability ID) card**, applied for online. [RPwD Act 2016]",
+          "Discrimination against persons with disability is an offence; **Sugamya Bharat Abhiyan** mandates accessible public buildings, transport and websites. [RPwD Act 2016]",
+          "**Community-based rehabilitation (CBR)** uses community resources to deliver rehabilitation - the WHO CBR matrix has health, education, livelihood, social and empowerment components. [Park 28e]",
+          "Family physician's role in disability: **early detection, certification guidance, aids, physiotherapy, linkage to schemes and caregiver support**. [NPHCE 2021]",
+        ],
+      },
+      {
+        heading: "Elder- and disabled-friendly home and the family physician's role",
+        points: [
+          "**Lighting**: bright light in corridors and stairs, **night lights** on the way to the toilet, switches at room entry. [Brocklehurst 8e]",
+          "**Floors**: remove loose rugs and clutter, non-slip tiles or mats, no trailing wires, avoid polished floors. [NICE CG161 2019]",
+          "**Bathroom**: **grab bars** near the toilet and in the shower, raised Western toilet seat or commode chair, shower stool, non-slip mat. [NICE CG161 2019]",
+          "**Stairs and entry**: handrails on both sides, contrasting step edges, **ramps** of gradient 1:12 for wheelchairs. [RPwD Act 2016]",
+          "**Bedroom**: bed at knee height, phone and torch within reach, ground-floor room if mobility is poor. [Brocklehurst 8e]",
+          "**Kitchen**: items at waist-to-shoulder height, gas safety devices, avoid step stools. [Brocklehurst 8e]",
+          "**Safety**: emergency numbers displayed (108, 14567), medical alert device, a neighbour or relative checking daily. [MoSJE 2023]",
+          "Family physician: **comprehensive geriatric assessment** (medical, functional - ADL/IADL, cognitive, mood, social, environmental), annual review and medication reconciliation. [Brocklehurst 8e]",
+          "Home visits, advance care planning, caregiver training and linkage to NPHCE, PM-JAY and pension schemes complete the role. [NPHCE 2021]",
+        ],
+      },
+    ],
+    tables: [
+      {
+        heading: "Types of elder abuse - classification with warning signs",
+        columns: ["Type", "Examples", "Warning signs"],
+        rows: [
+          ["Physical", "Hitting, restraint, over-sedation", "Unexplained bruises, fractures, burns"],
+          ["Psychological", "Insults, threats, isolation", "Fearfulness, withdrawal, depression"],
+          ["Financial", "Taking pension, forced will or property transfer", "Unpaid bills despite income, sudden transfer of assets"],
+          ["Sexual", "Non-consensual contact", "Genital injury, STI, fear of a caregiver"],
+          ["Neglect", "Withholding food, medicines, hygiene", "Malnutrition, pressure ulcers, dehydration, soiled clothes"],
+          ["Abandonment", "Deserting in hospital, pilgrimage site or home", "Elder left alone without means"],
+        ],
+      },
+      {
+        heading: "Schemes and laws for senior citizens",
+        columns: ["Measure", "Key provision"],
+        rows: [
+          ["MWPSC Act 2007", "Maintenance up to Rs 10,000/month; tribunal decides in 90 days; abandonment punishable"],
+          ["NPHCE 2010", "Geriatric care from HWC to Regional Geriatric Centres and National Centres of Ageing"],
+          ["IGNOAPS", "Rs 200/month (60-79), Rs 500/month (80+) for BPL"],
+          ["PM-JAY 70+ (2024)", "Rs 5 lakh cover for every person aged 70+, Ayushman Vay Vandana card"],
+          ["Rashtriya Vayoshri Yojana", "Free assistive devices for low-income seniors"],
+          ["Elderline 14567", "National toll-free helpline"],
+          ["RPwD Act 2016", "21 disabilities, benchmark 40%, UDID card, reservations"],
+        ],
+      },
+    ],
+    redFlags: [
+      "Unexplained injuries, fractures or burns in an elderly person, especially with delay in seeking care - suspect abuse; examine alone and document.",
+      "Acute confusion (delirium) - search for infection, drugs, dehydration, retention; admit if cause is not quickly reversible.",
+      "Recurrent falls or a fall with inability to get up - full falls assessment; exclude fracture and syncope.",
+      "Rapid unintentional weight loss over 5% in 6 months - malignancy, depression, neglect or dementia.",
+      "Suicidal ideation in an elderly man living alone - the highest-risk group; urgent psychiatric referral.",
+      "Pressure ulcers, dehydration or starvation in a dependent elder - neglect; safeguarding action and police intimation if criminal.",
+      "Abandoned elder without means - Elderline 14567, police and Maintenance Tribunal.",
+    ],
+    pearls: [
+      "India's elderly will double from about 10% to over 20% of the population by 2050 - the demographic transition is now a geriatric one.",
+      "The geriatric giants are immobility, instability, incontinence, intellectual impairment and iatrogenesis.",
+      "ICOPE screens six domains of intrinsic capacity: cognition, mobility, nutrition, vision, hearing and mood.",
+      "MWPSC Act 2007: up to Rs 10,000 per month, decided in 90 days, and abandonment is a punishable offence.",
+      "Since October 2024 every Indian aged 70 and above is covered under PM-JAY regardless of income.",
+      "Elderline is 14567 - quote it.",
+      "Always interview a suspected abused elder alone.",
+      "RPwD Act 2016: 21 disabilities, benchmark 40%, UDID card.",
+      "A grab bar and a night light prevent more fractures than most drugs.",
+    ],
+    mcqs: [
+      {
+        id: "geriatrics-ethics-elderly-community-health-q1",
+        stem: "Under the Maintenance and Welfare of Parents and Senior Citizens Act 2007, the maximum monthly maintenance that a Maintenance Tribunal can order is:",
+        options: ["Rs 2000", "Rs 5000", "Rs 10,000", "No upper limit"],
+        answer: 2,
+        explanation:
+          "The Act caps maintenance at Rs 10,000 per month, and the tribunal should decide within 90 days. Rs 2000 and Rs 5000 are below the statutory ceiling, and the proposal to remove the cap in the 2019 amendment bill has not become law.",
+        difficulty: "moderate",
+      },
+      {
+        id: "geriatrics-ethics-elderly-community-health-q2",
+        stem: "A 76-year-old widow brought by her son has a healing forearm fracture, poor hygiene and weight loss. She looks at her son before answering each question. What is the most appropriate next step?",
+        options: [
+          "Accept the history of a fall and discharge with analgesics",
+          "Interview her alone, screen for abuse and document injuries",
+          "Ask the son to sign an undertaking to take better care",
+          "Refer her to an old-age home immediately",
+        ],
+        answer: 1,
+        explanation:
+          "Injury with delay, neglect and fearfulness towards a caregiver are warning signs of elder abuse, so she must be interviewed alone, screened (EASI) and documented. Accepting the history misses abuse, asking the suspected abuser to sign an undertaking does not ensure safety, and placement is premature before assessing her wishes and capacity.",
+        difficulty: "moderate",
+      },
+      {
+        id: "geriatrics-ethics-elderly-community-health-q3",
+        stem: "Which of the following is NOT one of the six domains of intrinsic capacity screened under WHO ICOPE?",
+        options: ["Hearing", "Nutrition", "Blood pressure", "Depressive symptoms"],
+        answer: 2,
+        explanation:
+          "ICOPE screens cognition, mobility, nutrition, vision, hearing and depressive symptoms. Blood pressure is a disease risk factor measured in NCD screening, not a domain of intrinsic capacity.",
+        difficulty: "easy",
+      },
+      {
+        id: "geriatrics-ethics-elderly-community-health-q4",
+        stem: "Under the Rights of Persons with Disabilities Act 2016, benchmark disability that makes a person eligible for reservation is defined as:",
+        options: ["20% or more", "30% or more", "40% or more", "50% or more"],
+        answer: 2,
+        explanation:
+          "Benchmark disability is 40% or more of a specified disability as certified by the medical authority. Lower thresholds do not confer reservation benefits, and 50% is not the statutory benchmark.",
+        difficulty: "easy",
+      },
+      {
+        id: "geriatrics-ethics-elderly-community-health-q5",
+        stem: "An 81-year-old man from a BPL family asks about a monthly central pension. Under IGNOAPS, the central contribution he is entitled to is:",
+        options: ["Rs 200 per month", "Rs 500 per month", "Rs 1000 per month", "Rs 3000 per month"],
+        answer: 1,
+        explanation:
+          "IGNOAPS pays Rs 500 per month from age 80, and Rs 200 per month between 60 and 79; states add their own top-ups. Rs 1000 and Rs 3000 are not the central IGNOAPS rates.",
+        difficulty: "moderate",
+      },
+    ],
+    theory: [
+      {
+        id: "geriatrics-ethics-elderly-community-health-t1",
+        paper: "I",
+        kind: "long",
+        marks: 10,
+        minutes: 18,
+        frequency: "core",
+        question:
+          "Enumerate the health problems of the elderly in India. Describe the role of the family physician and the government measures for their welfare. [4+3+3]",
+        openingLines: [
+          "The elderly (60 years and above) form about 10.5% of India's population, projected to exceed 20% by 2050 (India Ageing Report 2023).",
+          "Three-quarters have at least one chronic disease, and their problems are medical, psychological, social and economic.",
+        ],
+        answer: [
+          {
+            heading: "Health problems",
+            points: [
+              "Medical: NCDs, geriatric giants, sensory loss, osteoporosis, malnutrition, polypharmacy.",
+              "Psychological: depression, dementia, loneliness, bereavement.",
+              "Social: isolation, loss of role, abuse, migration of children.",
+              "Economic: no pension, dependency, out-of-pocket spending.",
+            ],
+          },
+          {
+            heading: "Role of family physician",
+            points: [
+              "Comprehensive geriatric assessment; ICOPE screening; medication review.",
+              "Vaccination, falls prevention, home modification, nutrition.",
+              "Home visits, caregiver support, abuse screening, advance care planning, palliative care.",
+            ],
+          },
+          {
+            heading: "Government measures",
+            points: [
+              "NPHCE; National Policy on Older Persons 1999; MWPSC Act 2007.",
+              "IGNOAPS, PM-JAY 70+, Rashtriya Vayoshri Yojana, AVYAY, Elderline 14567.",
+              "Tax and travel concessions, senior citizens' savings scheme.",
+            ],
+          },
+        ],
+        mustDraw: ["NPHCE service pyramid: SC-HWC - PHC - CHC - district geriatric ward - Regional Geriatric Centre - National Centre of Ageing"],
+        markSplit: [
+          { part: "Health problems", marks: 4 },
+          { part: "Role of family physician", marks: 3 },
+          { part: "Government measures", marks: 3 },
+        ],
+        keywords: ["elderly", "NPHCE", "MWPSC", "geriatric giants"],
+      },
+      {
+        id: "geriatrics-ethics-elderly-community-health-t2",
+        paper: "I",
+        kind: "short-note",
+        marks: 10,
+        minutes: 18,
+        frequency: "common",
+        question: "Write a short note on elder abuse - types, identification and legal remedies in India. [3+4+3]",
+        openingLines: [
+          "Elder abuse is a single or repeated act, or lack of appropriate action, within a relationship of trust that causes harm or distress to an older person (WHO).",
+          "It is under-reported in India because victims depend on the abuser, usually a son or daughter-in-law.",
+        ],
+        answer: [
+          {
+            heading: "Types",
+            points: ["Physical, psychological, financial, sexual, neglect, abandonment, self-neglect."],
+          },
+          {
+            heading: "Identification",
+            points: [
+              "Risk factors: dependency, dementia, caregiver stress and substance use.",
+              "Warning signs: unexplained injuries, delay, neglect, fearfulness, financial change.",
+              "EASI screening; interview alone; document with body diagram; capacity and safety assessment.",
+            ],
+          },
+          {
+            heading: "Remedies",
+            points: [
+              "MWPSC Act 2007 - maintenance tribunal, abandonment offence, voiding property transfer.",
+              "BNS 2023 offences, police senior-citizen cells, Elderline 14567.",
+              "Counselling, respite care, old-age homes, legal aid.",
+            ],
+          },
+        ],
+        mustDraw: ["Table of abuse types with warning signs"],
+        markSplit: [
+          { part: "Types", marks: 3 },
+          { part: "Identification", marks: 4 },
+          { part: "Legal remedies", marks: 3 },
+        ],
+        keywords: ["elder abuse", "EASI", "MWPSC", "neglect"],
+      },
+    ],
+    references: [
+      "Longitudinal Ageing Study in India (LASI) Wave 1 Report, 2020",
+      "UNFPA India Ageing Report, 2023",
+      "NPHCE Operational Guidelines, MoHFW, 2021",
+      "Maintenance and Welfare of Parents and Senior Citizens Act, 2007",
+      "Rights of Persons with Disabilities Act, 2016",
+      "WHO ICOPE Handbook, 2nd ed, 2024",
+      "Brocklehurst's Textbook of Geriatric Medicine and Gerontology, 8th ed, 2017",
+      "Park's Textbook of Preventive and Social Medicine, 28th ed, 2025",
+    ],
+  },
+  // END-TOPICS
+];
 
 export default topics;
