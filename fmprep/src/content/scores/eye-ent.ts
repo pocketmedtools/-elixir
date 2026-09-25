@@ -1,5 +1,512 @@
 import type { NoteTable } from "../../lib/types";
 
-const scores: Record<string, NoteTable[]> = {};
+const scores: Record<string, NoteTable[]> = {
+  "eye-ent-red-eye": [
+    {
+      heading: "WHO simplified trachoma grading system (WHO 2020 revision, Park 28e 2025)",
+      columns: ["Sign", "Definition", "Action"],
+      rows: [
+        ["TF - follicular", "5 or more follicles, each 0.5 mm or more, in the central upper tarsal conjunctiva", "Azithromycin (SAFE); elimination if under 5% in children 1-9 years"],
+        ["TI - intense", "Inflammatory thickening obscuring over half the normal deep tarsal vessels", "Antibiotic treatment, facial cleanliness"],
+        ["TS - scarring", "Easily visible white lines, bands or sheets in the tarsal conjunctiva", "Sign of past infection; monitor for trichiasis"],
+        ["TT - trichiasis", "At least one upper-lid eyelash touches the eyeball, or evidence of recent epilation", "Lid surgery; elimination if under 0.2% in adults 15+"],
+        ["CO - corneal opacity", "Easily visible opacity over the pupil blurring part of the pupil margin", "Causes visual impairment or blindness"],
+      ],
+    },
+    {
+      heading: "WHO classification of xerophthalmia (Park 28e 2025)",
+      columns: ["Code", "Sign", "Meaning"],
+      rows: [
+        ["XN", "Night blindness", "Earliest symptom"],
+        ["X1A", "Conjunctival xerosis", "Dry, wrinkled, lustreless conjunctiva"],
+        ["X1B", "Bitot's spots", "Foamy triangular spots, usually temporal"],
+        ["X2", "Corneal xerosis", "Dull, hazy cornea - emergency"],
+        ["X3A", "Corneal ulceration or keratomalacia under one-third of cornea", "Blinding stage - vitamin A now"],
+        ["X3B", "Corneal ulceration or keratomalacia one-third or more of cornea", "Blinding stage - vitamin A now"],
+        ["XS", "Corneal scar", "Sequel"],
+        ["XF", "Xerophthalmic fundus", "White retinal dots"],
+        ["Treatment", "Vitamin A day 0, day 1 and day 14", "200,000 IU if over 1 year; 100,000 IU 6-12 months; 50,000 IU under 6 months"],
+      ],
+    },
+    {
+      heading: "Roper-Hall classification of chemical eye injury (Kanski 10e 2024)",
+      columns: ["Grade", "Cornea", "Limbal ischaemia", "Prognosis"],
+      rows: [
+        ["Grade I", "Epithelial damage only", "None", "Good"],
+        ["Grade II", "Hazy, iris details visible", "Under one-third of limbus", "Good"],
+        ["Grade III", "Total epithelial loss, stromal haze obscures iris details", "One-third to one-half of limbus", "Guarded"],
+        ["Grade IV", "Opaque, iris and pupil obscured", "Over one-half of limbus", "Poor"],
+      ],
+    },
+    {
+      heading: "Dua classification of ocular surface chemical burns (Kanski 10e 2024)",
+      columns: ["Grade", "Limbal involvement (clock hours)", "Conjunctival involvement", "Prognosis"],
+      rows: [
+        ["Grade I", "0", "0%", "Very good"],
+        ["Grade II", "3 or less", "30% or less", "Good"],
+        ["Grade III", "Over 3 to 6", "Over 30% to 50%", "Good"],
+        ["Grade IV", "Over 6 to 9", "Over 50% to 75%", "Good to guarded"],
+        ["Grade V", "Over 9 to under 12", "Over 75% to under 100%", "Guarded to poor"],
+        ["Grade VI", "Total limbus (12)", "Total conjunctiva (100%)", "Very poor"],
+      ],
+    },
+    {
+      heading: "SUN anatomical classification of uveitis (Kanski 10e 2024)",
+      columns: ["Type", "Primary site of inflammation", "Includes"],
+      rows: [
+        ["Anterior uveitis", "Anterior chamber", "Iritis, iridocyclitis, anterior cyclitis"],
+        ["Intermediate uveitis", "Vitreous", "Pars planitis, posterior cyclitis, hyalitis"],
+        ["Posterior uveitis", "Retina or choroid", "Choroiditis, chorioretinitis, retinitis, neuroretinitis"],
+        ["Panuveitis", "Anterior chamber, vitreous and retina or choroid", "E.g. VKH, sympathetic ophthalmia, Behcet"],
+      ],
+    },
+    {
+      heading: "SUN grading scale of anterior chamber cells (Kanski 10e 2024)",
+      columns: ["Grade", "Cells in 1 x 1 mm slit beam field", "Meaning"],
+      rows: [
+        ["Grade 0", "Under 1", "Inactive"],
+        ["Grade 0.5+", "1-5", "Trace"],
+        ["Grade 1+", "6-15", "Active"],
+        ["Grade 2+", "16-25", "Active"],
+        ["Grade 3+", "26-50", "Active, severe"],
+        ["Grade 4+", "Over 50", "Active, severe"],
+      ],
+    },
+    {
+      heading: "SUN grading scale of anterior chamber flare (Kanski 10e 2024)",
+      columns: ["Grade", "Description", "Meaning"],
+      rows: [
+        ["Grade 0", "None", "-"],
+        ["Grade 1+", "Faint", "Mild protein leak"],
+        ["Grade 2+", "Moderate - iris and lens details clear", "-"],
+        ["Grade 3+", "Marked - iris and lens details hazy", "-"],
+        ["Grade 4+", "Intense - fibrin or plastic aqueous", "Severe"],
+      ],
+    },
+  ],
+  "eye-ent-refractive-error": [
+    {
+      heading: "WHO ICD-11 classification of visual impairment (NPCBVI 2017 aligned)",
+      columns: ["Category", "Presenting visual acuity, better eye", "Meaning"],
+      rows: [
+        ["No or mild impairment (0)", "6/12 or better; mild if worse than 6/12 to 6/18", "Near VI if worse than N6 or M0.8 at 40 cm"],
+        ["Moderate impairment (1)", "Worse than 6/18 to 6/60", "Refract; correct cause"],
+        ["Severe impairment (2)", "Worse than 6/60 to 3/60", "Low vision services"],
+        ["Blindness (3)", "Worse than 3/60 to 1/60 (counts fingers at 1 m)", "India adopted WHO blindness cut-off 3/60 in 2017"],
+        ["Blindness (4)", "Worse than 1/60 to light perception", "-"],
+        ["Blindness (5)", "No light perception", "-"],
+        ["Field criterion", "Central visual field under 10 degrees radius", "Counts as blindness regardless of acuity"],
+      ],
+    },
+    {
+      heading: "IMI classification of myopia (International Myopia Institute 2019)",
+      columns: ["Category", "Spherical equivalent (cycloplegic)", "Meaning"],
+      rows: [
+        ["Pre-myopia", "Over -0.50 D to +0.75 D or less in a child with risk factors", "Prevention: outdoor time 2 h/day"],
+        ["Myopia", "-0.50 D or more negative", "Correct; consider control measures in children"],
+        ["Low myopia", "-0.50 D to under -6.00 D", "Glasses; low-dose atropine or myopia control lenses in progressors"],
+        ["High myopia", "-6.00 D or more negative", "Risk of retinal detachment, glaucoma, myopic maculopathy"],
+        ["Pathologic myopia", "Excessive axial elongation with structural fundus changes", "Posterior staphyloma, CNV - vision threatening"],
+      ],
+    },
+    {
+      heading: "Types of astigmatism (Kanski 10e 2024)",
+      columns: ["Type", "Definition", "Note"],
+      rows: [
+        ["Regular - with-the-rule", "Vertical meridian steeper", "Common in the young; corrected by plus cylinder at 90 degrees"],
+        ["Regular - against-the-rule", "Horizontal meridian steeper", "Common in the elderly"],
+        ["Regular - oblique", "Principal meridians not near 90 or 180 degrees", "-"],
+        ["Irregular", "Principal meridians not at right angles", "Keratoconus, corneal scar; needs contact lens"],
+        ["Simple", "One focal line on the retina, other in front or behind", "Simple myopic or simple hypermetropic"],
+        ["Compound", "Both focal lines in front of (or both behind) the retina", "Compound myopic or hypermetropic"],
+        ["Mixed", "One focal line in front of and one behind the retina", "-"],
+      ],
+    },
+  ],
+  "eye-ent-cataract-dr-glaucoma": [
+    {
+      heading: "Van Herick grading of peripheral anterior chamber depth (Kanski 10e 2024)",
+      columns: ["Grade", "Peripheral AC depth vs corneal thickness (CT)", "Angle closure"],
+      rows: [
+        ["Grade 4", "Equal to or more than CT", "Closure impossible"],
+        ["Grade 3", "One-quarter to one-half CT", "Closure unlikely"],
+        ["Grade 2", "One-quarter CT", "Closure possible - gonioscopy"],
+        ["Grade 1", "Less than one-quarter CT", "Closure likely - gonioscopy, consider laser iridotomy"],
+        ["Grade 0", "Iridocorneal contact", "Closed"],
+      ],
+    },
+    {
+      heading: "Shaffer gonioscopic grading of the angle (Kanski 10e 2024)",
+      columns: ["Grade", "Angle width", "Deepest structure seen", "Meaning"],
+      rows: [
+        ["Grade 4", "35-45 degrees", "Ciliary body", "Closure impossible"],
+        ["Grade 3", "25-35 degrees", "Scleral spur", "Closure impossible"],
+        ["Grade 2", "About 20 degrees", "Trabecular meshwork", "Closure possible"],
+        ["Grade 1", "About 10 degrees", "Schwalbe line (maybe top of meshwork)", "High risk of closure"],
+        ["Slit", "Under 10 degrees", "No obvious contact, no structures identified", "Very high risk"],
+        ["Grade 0", "0 degrees", "Iridocorneal contact", "Closed"],
+      ],
+    },
+    {
+      heading: "ISGEO classification of primary angle closure disease (EGS 2020)",
+      columns: ["Stage", "Definition", "Management"],
+      rows: [
+        ["PACS (suspect)", "Iridotrabecular contact 180 degrees or more, normal IOP, no PAS, no optic neuropathy", "Observe; laser iridotomy if high risk"],
+        ["PAC (angle closure)", "PACS plus raised IOP and/or PAS, no optic neuropathy", "Laser iridotomy or lens extraction"],
+        ["PACG (glaucoma)", "PAC plus glaucomatous optic neuropathy and field loss", "Lens extraction, medication, trabeculectomy"],
+        ["Acute angle closure", "Sudden IOP rise, painful red eye, halos, mid-dilated pupil", "Emergency - lower IOP, then laser iridotomy both eyes"],
+      ],
+    },
+    {
+      heading: "Hodapp-Parrish-Anderson glaucoma field severity staging (Kanski 10e 2024)",
+      columns: ["Stage", "Mean deviation (24-2 field)", "Other criteria"],
+      rows: [
+        ["Early", "Better than -6 dB", "Under 25% points depressed at 5% level; no central 5-degree point under 15 dB"],
+        ["Moderate", "-6 to -12 dB", "Under 50% points depressed; no central point at 0 dB; one hemifield under 15 dB"],
+        ["Severe", "Worse than -12 dB", "Over 50% points depressed, or central point 0 dB, or both hemifields affected"],
+      ],
+    },
+    {
+      heading: "LOCS III cataract grading scale (Kanski 10e 2024)",
+      columns: ["Feature", "Graded against", "Scale range"],
+      rows: [
+        ["Nuclear opalescence (NO)", "Six slit-lamp standard photographs", "0.1-6.9"],
+        ["Nuclear colour (NC)", "Six slit-lamp standard photographs", "0.1-6.9"],
+        ["Cortical (C)", "Five retroillumination standard photographs", "0.1-5.9"],
+        ["Posterior subcapsular (P)", "Five retroillumination standard photographs", "0.1-5.9"],
+      ],
+    },
+    {
+      heading: "Clinical grading of cataract maturity and nuclear hardness (Kanski 10e 2024)",
+      columns: ["Grade", "Appearance", "Surgical relevance"],
+      rows: [
+        ["Immature", "Partial lens opacity; iris shadow present", "Surgery when vision affects daily life"],
+        ["Mature", "Total opacity; no iris shadow; white lens", "Needs capsule staining for capsulorhexis"],
+        ["Intumescent", "Swollen lens from fluid uptake", "Risk of phacomorphic glaucoma"],
+        ["Hypermature (Morgagnian)", "Liquefied cortex, sunken nucleus, wrinkled capsule", "Phacolytic glaucoma, zonular weakness"],
+        ["Nuclear grade 1 (soft)", "Clear to greyish-white nucleus", "Easy phaco"],
+        ["Nuclear grade 2 (soft-medium)", "Yellowish nucleus", "-"],
+        ["Nuclear grade 3 (medium hard)", "Amber nucleus", "-"],
+        ["Nuclear grade 4 (hard)", "Brown nucleus", "More phaco energy; consider SICS"],
+        ["Nuclear grade 5 (rock hard)", "Black (brunescent) nucleus", "Manual SICS often preferred"],
+      ],
+    },
+    {
+      heading: "Keith-Wagener-Barker classification of hypertensive retinopathy (Kanski 10e 2024)",
+      columns: ["Grade", "Fundus findings", "Meaning"],
+      rows: [
+        ["Grade 1", "Mild generalised arteriolar narrowing", "Long-standing hypertension"],
+        ["Grade 2", "Grade 1 plus focal narrowing and arteriovenous nicking", "Established hypertension"],
+        ["Grade 3", "Grade 2 plus flame haemorrhages, cotton wool spots, hard exudates", "Severe hypertension"],
+        ["Grade 4", "Grade 3 plus optic disc swelling (papilloedema)", "Hypertensive emergency (malignant hypertension)"],
+      ],
+    },
+    {
+      heading: "Wong-Mitchell classification of hypertensive retinopathy (Kanski 10e 2024)",
+      columns: ["Grade", "Retinal signs", "Systemic association"],
+      rows: [
+        ["None", "No detectable signs", "None"],
+        ["Mild", "Generalised or focal arteriolar narrowing, AV nicking, arteriolar wall opacity", "Modest association with stroke, CHD and death"],
+        ["Moderate", "Haemorrhages, microaneurysms, cotton wool spots, hard exudates", "Strong association with stroke, cognitive decline, CV death"],
+        ["Malignant", "Moderate signs plus optic disc swelling", "Strong association with death - urgent BP control"],
+      ],
+    },
+  ],
+  "eye-ent-otitis": [
+    {
+      heading: "Jerger classification of tympanogram types (Scott-Brown 8e 2018)",
+      columns: ["Type", "Tympanogram", "Usual cause"],
+      rows: [
+        ["Type A", "Normal peak pressure and compliance", "Normal middle ear; also in sensorineural loss"],
+        ["Type As", "Normal pressure, shallow (reduced) compliance", "Otosclerosis, tympanosclerosis"],
+        ["Type Ad", "Normal pressure, very deep (high) compliance", "Ossicular discontinuity, flaccid or atrophic drum"],
+        ["Type B", "Flat, no peak", "Normal canal volume: effusion; large volume: perforation or grommet; small: wax"],
+        ["Type C", "Peak at negative pressure (below -100 daPa)", "Eustachian tube dysfunction, early or resolving OME"],
+      ],
+    },
+    {
+      heading: "Classification of otitis media (Scott-Brown 8e 2018)",
+      columns: ["Type", "Features", "Management"],
+      rows: [
+        ["Acute otitis media", "Rapid onset, otalgia, fever, bulging drum", "Analgesia; antibiotic per AAP criteria"],
+        ["Otitis media with effusion", "Fluid behind intact drum, no acute signs; conductive loss", "Watchful waiting 3 months; grommets if persistent"],
+        ["CSOM - mucosal, active", "Perforation with mucopurulent discharge (tubotympanic)", "Aural toilet, topical quinolone"],
+        ["CSOM - mucosal, inactive", "Dry central perforation", "Myringoplasty or tympanoplasty"],
+        ["CSOM - squamous, active", "Cholesteatoma with discharge (atticoantral)", "Mastoidectomy - unsafe ear"],
+        ["CSOM - squamous, inactive", "Retraction pocket without debris", "Monitor, may need surgery"],
+        ["Healed otitis media", "Thin scar or tympanosclerosis", "Nil"],
+      ],
+    },
+    {
+      heading: "Stages of acute otitis media (Scott-Brown 8e 2018)",
+      columns: ["Stage", "Drum appearance", "Symptoms"],
+      rows: [
+        ["Tubal occlusion", "Retracted, dull, loss of light reflex", "Deafness, ear fullness"],
+        ["Presuppuration", "Hyperaemic; cartwheel vessels", "Earache, fever"],
+        ["Suppuration", "Red and bulging; yellow spot of impending perforation", "Severe earache, high fever"],
+        ["Resolution", "Perforation with discharge, or resolving", "Pain settles once drum perforates"],
+        ["Complication", "Persisting or spreading infection", "Mastoiditis, facial palsy, meningitis, abscess"],
+      ],
+    },
+    {
+      heading: "AAP criteria for diagnosis and antibiotic use in acute otitis media (AAP 2013)",
+      columns: ["Criterion", "Definition", "Action"],
+      rows: [
+        ["Diagnosis 1", "Moderate or severe bulging of drum, or new otorrhoea not due to otitis externa", "Diagnose AOM"],
+        ["Diagnosis 2", "Mild bulging plus ear pain under 48 h or intense drum erythema", "Diagnose AOM"],
+        ["Exclusion", "No middle ear effusion on pneumatic otoscopy or tympanometry", "Do not diagnose AOM"],
+        ["Severe or otorrhoea", "Otalgia over 48 h, temperature 39 C or more, or otorrhoea", "Antibiotic at any age"],
+        ["6-23 months, bilateral", "Non-severe bilateral AOM", "Antibiotic"],
+        ["6-23 months, unilateral", "Non-severe unilateral AOM", "Antibiotic or observe 48-72 h"],
+        ["24 months or more", "Non-severe AOM (one or both ears)", "Antibiotic or observe 48-72 h; amoxicillin 80-90 mg/kg/day"],
+      ],
+    },
+    {
+      heading: "Sade classification of pars tensa retraction (Scott-Brown 8e 2018)",
+      columns: ["Grade", "Finding", "Meaning"],
+      rows: [
+        ["Grade 1", "Slight retraction of the drum", "Eustachian tube dysfunction"],
+        ["Grade 2", "Retraction touching the incus or stapes", "Monitor"],
+        ["Grade 3", "Retraction onto the promontory, not adherent (atelectasis)", "Consider ventilation tube"],
+        ["Grade 4", "Drum adherent to the promontory (adhesive otitis media)", "Surgery may be needed"],
+        ["Grade 5", "Perforation of the retracted drum", "Risk of cholesteatoma"],
+      ],
+    },
+    {
+      heading: "Tos classification of pars flaccida (attic) retraction (Scott-Brown 8e 2018)",
+      columns: ["Grade", "Finding", "Meaning"],
+      rows: [
+        ["Grade 1", "Dimple, not touching the malleus neck", "Monitor"],
+        ["Grade 2", "Retraction adherent to the malleus neck", "Monitor"],
+        ["Grade 3", "Limited erosion of the scutum (outer attic wall)", "Pre-cholesteatoma - consider surgery"],
+        ["Grade 4", "Severe erosion of the scutum", "Attic cholesteatoma likely - surgery"],
+      ],
+    },
+    {
+      heading: "Staging of middle ear cholesteatoma (EAONO/JOS 2017)",
+      columns: ["Stage", "Extent", "Meaning"],
+      rows: [
+        ["Stage I", "Confined to the primary site (attic or tympanic cavity)", "Localised"],
+        ["Stage II", "Involves two or more sites", "Extended into mastoid or other middle ear sites"],
+        ["Stage III", "Extracranial complication", "Facial palsy, labyrinthine fistula, subperiosteal abscess"],
+        ["Stage IV", "Intracranial complication", "Meningitis, brain abscess, sinus thrombosis"],
+      ],
+    },
+  ],
+  "eye-ent-hearing-loss": [
+    {
+      heading: "Tuning-fork test interpretation - types of hearing loss (Scott-Brown 8e 2018)",
+      columns: ["Type", "Rinne (512 Hz)", "Weber", "ABC and Schwabach"],
+      rows: [
+        ["Normal hearing", "Positive both ears (AC over BC)", "Central", "Normal"],
+        ["Right conductive loss", "Negative on right (BC over AC)", "Lateralises to right (deaf) ear", "ABC normal; Schwabach lengthened"],
+        ["Right sensorineural loss", "Positive on right (AC over BC, both reduced)", "Lateralises to left (better) ear", "ABC reduced; Schwabach shortened"],
+        ["Right dead ear", "False negative on right (sound heard in left cochlea)", "Lateralises to left ear", "Mask the good ear with Barany box"],
+        ["Bilateral symmetrical loss", "Depends on type", "Central", "Pure tone audiometry to confirm"],
+      ],
+    },
+    {
+      heading: "Rinne tuning-fork grading of the air-bone gap (Scott-Brown 8e 2018)",
+      columns: ["Rinne finding", "Air-bone gap", "Meaning"],
+      rows: [
+        ["Negative at 256 Hz only", "About 15-30 dB", "Mild conductive loss"],
+        ["Negative at 256 and 512 Hz", "About 30-45 dB", "Moderate conductive loss"],
+        ["Negative at 256, 512 and 1024 Hz", "About 45-60 dB", "Severe conductive loss"],
+      ],
+    },
+    {
+      heading: "Audiogram pattern types and typical causes (Scott-Brown 8e 2018)",
+      columns: ["Pattern", "Audiogram", "Typical cause"],
+      rows: [
+        ["Noise notch", "Dip at 4 kHz (3-6 kHz) with recovery at 8 kHz", "Noise-induced hearing loss"],
+        ["High-frequency sloping", "Bilateral symmetrical loss worse at high frequencies", "Presbycusis, ototoxicity"],
+        ["Low-frequency rising", "Loss worse at low frequencies, fluctuating", "Meniere disease"],
+        ["Carhart notch", "Bone conduction dip at 2 kHz with air-bone gap", "Otosclerosis"],
+        ["Cookie-bite", "Mid-frequency loss", "Genetic (congenital) hearing loss"],
+        ["Flat conductive", "Air-bone gap across frequencies", "OME, CSOM, wax"],
+        ["Asymmetric sensorineural", "15 dB or more difference between ears at 2+ frequencies", "Needs MRI to exclude vestibular schwannoma"],
+      ],
+    },
+  ],
+  "eye-ent-sore-throat": [
+    {
+      heading: "FeverPAIN score for streptococcal sore throat (NICE NG84)",
+      columns: ["Component", "Finding", "Points"],
+      rows: [
+        ["Fever", "In the past 24 hours", "1"],
+        ["Purulence", "Pus on tonsils", "1"],
+        ["Attend rapidly", "Within 3 days of onset", "1"],
+        ["Inflamed tonsils", "Severely inflamed", "1"],
+        ["No cough or coryza", "Absent", "1"],
+      ],
+    },
+    {
+      heading: "FeverPAIN score bands and antibiotic action (NICE NG84)",
+      columns: ["FeverPAIN", "Chance of streptococcus", "Action"],
+      rows: [
+        ["0-1", "About 13-18%", "No antibiotic; self-care and safety-net advice"],
+        ["2-3", "About 34-40%", "Consider no antibiotic or a back-up prescription"],
+        ["4-5", "About 62-65%", "Consider immediate antibiotic (phenoxymethylpenicillin 10 days) or back-up"],
+      ],
+    },
+    {
+      heading: "Brodsky grading of palatine tonsil size (Scott-Brown 8e 2018)",
+      columns: ["Grade", "Tonsil size (% of oropharyngeal width)", "Meaning"],
+      rows: [
+        ["Grade 0", "Within the tonsillar fossa (or removed)", "No obstruction"],
+        ["Grade 1", "Under 25%", "Small"],
+        ["Grade 2", "25-50%", "Moderate"],
+        ["Grade 3", "50-75%", "Large - may contribute to sleep-disordered breathing"],
+        ["Grade 4", "Over 75% (kissing tonsils)", "Obstructive - consider OSA in children"],
+      ],
+    },
+    {
+      heading: "Friedman tongue position classification for OSA (Scott-Brown 8e 2018)",
+      columns: ["Grade", "View with mouth open, tongue in the mouth", "Meaning"],
+      rows: [
+        ["FTP I", "Whole uvula and tonsils or pillars visible", "Favourable for palatal surgery"],
+        ["FTP II", "Uvula visible, tonsils not visible", "-"],
+        ["FTP III", "Soft palate visible, uvula not visible", "Tongue-base contribution likely"],
+        ["FTP IV", "Only the hard palate visible", "Poor candidate for palatal surgery alone"],
+      ],
+    },
+    {
+      heading: "Friedman clinical staging for OSA palatal surgery (Scott-Brown 8e 2018)",
+      columns: ["Stage", "Criteria", "UPPP success"],
+      rows: [
+        ["Stage I", "FTP I or II, tonsils grade 3 or 4, BMI under 40", "About 80%"],
+        ["Stage II", "FTP I-II with tonsils 0-2, or FTP III-IV with tonsils 3-4; BMI under 40", "About 38%"],
+        ["Stage III", "FTP III or IV with tonsils 0-2, or BMI 40 or more, or skeletal deformity", "About 8% - UPPP alone not advised"],
+      ],
+    },
+    {
+      heading: "Paradise criteria for tonsillectomy in recurrent tonsillitis (AAO-HNS 2019)",
+      columns: ["Criterion", "Definition", "Note"],
+      rows: [
+        ["Frequency - 1 year", "7 or more episodes in the past year", "Any one frequency criterion"],
+        ["Frequency - 2 years", "5 or more episodes per year in each of the past 2 years", "-"],
+        ["Frequency - 3 years", "3 or more episodes per year in each of the past 3 years", "-"],
+        ["Episode definition", "Sore throat plus temperature over 38.3 C, tender or large nodes, exudate, or positive GAS test", "Each episode documented in the records"],
+        ["Disability", "Episodes disabling and preventing normal functioning", "SIGN 117 adds this requirement"],
+        ["Other indications", "Two peritonsillar abscesses, suspected malignancy, OSA from tonsillar hypertrophy", "Unilateral tonsil enlargement needs biopsy"],
+      ],
+    },
+    {
+      heading: "Classification of cervical lymph node levels (Robbins, AAO-HNS, Scott-Brown 8e 2018)",
+      columns: ["Level", "Boundaries", "Drains"],
+      rows: [
+        ["Level IA - submental", "Between anterior bellies of digastric, above hyoid", "Floor of mouth, lower lip, tongue tip"],
+        ["Level IB - submandibular", "Submandibular triangle", "Oral cavity, anterior nose, face"],
+        ["Level II - upper jugular", "Skull base to hyoid; IIA front of, IIB behind accessory nerve", "Oropharynx, oral cavity, larynx, parotid"],
+        ["Level III - middle jugular", "Hyoid to lower border of cricoid", "Larynx, hypopharynx, oropharynx"],
+        ["Level IV - lower jugular", "Cricoid to clavicle", "Hypopharynx, thyroid, cervical oesophagus"],
+        ["Level V - posterior triangle", "Behind sternomastoid; VA above, VB below cricoid", "Nasopharynx, scalp"],
+        ["Level VI - central", "Hyoid to suprasternal notch, between carotids", "Thyroid, larynx, trachea"],
+        ["Level VII - superior mediastinal", "Suprasternal notch to innominate artery", "Thyroid, oesophagus"],
+      ],
+    },
+  ],
+  "eye-ent-rhinitis-sinusitis": [
+    {
+      heading: "Lund-Mackay CT score for chronic rhinosinusitis, per side (EPOS 2020)",
+      columns: ["Component", "Finding", "Points"],
+      rows: [
+        ["Maxillary sinus", "No opacification", "0"],
+        ["Maxillary sinus", "Partial opacification", "1"],
+        ["Maxillary sinus", "Total opacification", "2"],
+        ["Anterior ethmoid", "No opacification", "0"],
+        ["Anterior ethmoid", "Partial opacification", "1"],
+        ["Anterior ethmoid", "Total opacification", "2"],
+        ["Posterior ethmoid", "No opacification", "0"],
+        ["Posterior ethmoid", "Partial opacification", "1"],
+        ["Posterior ethmoid", "Total opacification", "2"],
+        ["Sphenoid sinus", "No opacification", "0"],
+        ["Sphenoid sinus", "Partial opacification", "1"],
+        ["Sphenoid sinus", "Total opacification", "2"],
+        ["Frontal sinus", "No opacification", "0"],
+        ["Frontal sinus", "Partial opacification", "1"],
+        ["Frontal sinus", "Total opacification", "2"],
+        ["Ostiomeatal complex", "Not occluded", "0"],
+        ["Ostiomeatal complex", "Occluded", "2"],
+      ],
+    },
+    {
+      heading: "Lund-Mackay CT score - interpretation (EPOS 2020)",
+      columns: ["Total", "Meaning", "Note"],
+      rows: [
+        ["Range", "0-12 per side, 0-24 both sides", "Hypoplastic or absent frontal sinus scores 0"],
+        ["Low (up to about 4)", "Often seen in people without sinus disease", "Do not diagnose CRS on CT alone"],
+        ["Higher totals", "More extensive mucosal disease", "Used for staging and surgical planning; weak link with symptoms"],
+      ],
+    },
+    {
+      heading: "Rhinosinusitis classification and diagnostic criteria (EPOS 2020)",
+      columns: ["Category", "Criteria", "Management"],
+      rows: [
+        ["Acute viral (common cold)", "Symptoms under 10 days", "Symptomatic care; no antibiotic"],
+        ["Acute post-viral", "Symptoms worsen after 5 days or persist beyond 10 days, under 12 weeks", "Intranasal steroid, saline"],
+        ["Acute bacterial", "3 of: discoloured discharge, severe local pain, fever over 38 C, raised ESR/CRP, double sickening", "Consider antibiotic"],
+        ["Recurrent acute", "4 or more episodes per year with symptom-free intervals", "Evaluate for underlying cause"],
+        ["Chronic (CRS) - symptoms", "2+ symptoms for 12 weeks+, one being blockage or discharge; plus facial pain or smell loss", "In children cough replaces smell loss"],
+        ["Chronic (CRS) - objective", "Endoscopy (polyps, middle meatal pus or oedema) and/or CT mucosal change", "Needed to confirm CRS"],
+        ["Primary diffuse CRS", "Type 2 (e.g. CRSwNP, eosinophilic) or non-type 2", "Steroid spray, rinses; surgery; biologics for severe type 2"],
+      ],
+    },
+    {
+      heading: "Endoscopic nasal polyp score grading, per side (EPOS 2020)",
+      columns: ["Grade", "Endoscopic finding", "Meaning"],
+      rows: [
+        ["Grade 0", "No polyps", "-"],
+        ["Grade 1", "Small polyps in middle meatus, not below lower edge of middle turbinate", "Mild"],
+        ["Grade 2", "Polyps reaching below the lower edge of the middle turbinate", "Moderate"],
+        ["Grade 3", "Large polyps reaching the lower edge of inferior turbinate, or medial to middle turbinate", "Severe"],
+        ["Grade 4", "Large polyps completely obstructing the inferior nasal cavity", "Severe; total 0-8 both sides"],
+      ],
+    },
+    {
+      heading: "SNOT-22 severity score bands for sinonasal symptoms (EPOS 2020)",
+      columns: ["Band", "Total (22 items, each 0-5; range 0-110)", "Meaning"],
+      rows: [
+        ["Mild", "8-20", "Mild symptom burden"],
+        ["Moderate", "Over 20 to 50", "Moderate symptom burden"],
+        ["Severe", "Over 50", "Severe symptom burden; track response to treatment"],
+        ["Meaningful change", "About 9 points or more", "Minimal clinically important difference"],
+      ],
+    },
+  ],
+  "eye-ent-epistaxis-foreign-bodies": [
+    {
+      heading: "Types of epistaxis - anterior versus posterior (Scott-Brown 8e 2018)",
+      columns: ["Type", "Site", "Typical patient", "Management"],
+      rows: [
+        ["Anterior epistaxis", "Little's area (Kiesselbach plexus) on anterior septum", "Children and young adults; nose picking, dry air", "Pinch soft nose 10-15 min, cautery, anterior pack"],
+        ["Posterior epistaxis", "Woodruff plexus or sphenopalatine artery branches", "Elderly, hypertension, anticoagulants", "Posterior pack or balloon, admit; SPA ligation or embolisation"],
+      ],
+    },
+    {
+      heading: "Grading of traumatic hyphaema (Kanski 10e 2024)",
+      columns: ["Grade", "Blood in anterior chamber", "Note"],
+      rows: [
+        ["Microhyphaema", "Circulating red cells only, no layering", "Rest, shield, steroid and cycloplegic drops"],
+        ["Grade I", "Layered blood under one-third of AC", "Check IOP daily"],
+        ["Grade II", "One-third to one-half of AC", "Watch for rebleed (days 2-5)"],
+        ["Grade III", "Over half of AC, not total", "Higher glaucoma risk"],
+        ["Grade IV", "Total hyphaema (eight-ball)", "Corneal blood staining risk - consider washout"],
+      ],
+    },
+    {
+      heading: "Birmingham Eye Trauma Terminology (BETT) classification (Kanski 10e 2024)",
+      columns: ["Type", "Definition", "Management"],
+      rows: [
+        ["Closed globe - contusion", "No full-thickness wound; blunt injury", "Treat hyphaema, commotio retinae, raised IOP"],
+        ["Closed globe - lamellar laceration", "Partial-thickness wound of eye wall", "Glue or suture if needed"],
+        ["Open globe - rupture", "Full-thickness wound from blunt force (inside-out)", "Shield, no pressure, urgent repair"],
+        ["Open globe - penetrating", "Single full-thickness entry wound from sharp object", "Urgent repair, IV antibiotics"],
+        ["Open globe - IOFB", "Penetrating injury with retained intraocular foreign body", "CT orbit (no MRI if metal), removal"],
+        ["Open globe - perforating", "Entry and exit wounds from the same object", "Urgent repair; poor prognosis"],
+      ],
+    },
+  ],
+};
 
 export default scores;
