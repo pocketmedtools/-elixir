@@ -1,6 +1,7 @@
 import { useState } from "react";
 import {
   assessBili,
+  assessTcb,
   biliThresholds,
   fmtBili,
   fromUmol,
@@ -37,11 +38,13 @@ function BiliChart({
   unit,
   point,
   prev,
+  tcb = false,
 }: {
   ga: number;
   unit: BiliUnit;
   point: { h: number; umol: number };
   prev: { h: number; umol: number } | null;
+  tcb?: boolean;
 }) {
   const W = 360, H = 250, L = 38, R = 58, T = 12, B = 30;
   const xMax = Math.min(336, Math.max(120, Math.ceil((point.h + 24) / 24) * 24));
@@ -119,24 +122,59 @@ function BiliChart({
       )}
       <line x1={x(point.h)} x2={x(point.h)} y1={T} y2={H - B} stroke="#dc2626" strokeWidth="0.8" strokeDasharray="3 2" />
       <line x1={L} x2={W - R} y1={y(point.umol)} y2={y(point.umol)} stroke="#dc2626" strokeWidth="0.8" strokeDasharray="3 2" />
-      <circle cx={x(point.h)} cy={y(point.umol)} r="5" fill="#dc2626" stroke="#fff" strokeWidth="1.5" />
+      {tcb ? (
+        <path
+          d={`M${x(point.h)},${y(point.umol) - 6}L${x(point.h) + 6},${y(point.umol)}L${x(point.h)},${y(point.umol) + 6}L${x(point.h) - 6},${y(point.umol)}Z`}
+          fill="#dc2626" stroke="#fff" strokeWidth="1.5"
+        />
+      ) : (
+        <circle cx={x(point.h)} cy={y(point.umol)} r="5" fill="#dc2626" stroke="#fff" strokeWidth="1.5" />
+      )}
     </svg>
   );
 }
 
+type AgeMode = "hours" | "datetime";
+type Measure = "tsb" | "tcb";
+
+const tabCls = (on: boolean) =>
+  `flex-1 rounded-md px-2 py-2 text-xs font-bold transition sm:text-sm ${
+    on ? "bg-yellow-900 text-white shadow" : "text-slate-700 hover:bg-white/60"
+  }`;
+
+/** Local "YYYY-MM-DDTHH:MM" for datetime-local inputs. */
+function nowLocal(): string {
+  const d = new Date();
+  d.setMinutes(d.getMinutes() - d.getTimezoneOffset());
+  return d.toISOString().slice(0, 16);
+}
+
 export default function BiliTool() {
   const [ga, setGa] = useState(38);
+  const [ageMode, setAgeMode] = useState<AgeMode>("hours");
+  const [measure, setMeasure] = useState<Measure>("tsb");
   const [age, setAge] = useState("");
   const [ageUnit, setAgeUnit] = useState<"hours" | "days">("hours");
   const [plusHours, setPlusHours] = useState("");
+  const [birthAt, setBirthAt] = useState("");
+  const [sampleAt, setSampleAt] = useState(nowLocal);
   const [bili, setBili] = useState("");
   const [unit, setUnit] = useState<BiliUnit>("mgdl");
+  const [recentPhoto, setRecentPhoto] = useState(false);
   const [prevBili, setPrevBili] = useState("");
   const [prevAge, setPrevAge] = useState("");
 
   const ageN = num(age);
-  const ageHours =
-    ageN == null ? null : ageUnit === "hours" ? ageN : ageN * 24 + (num(plusHours) ?? 0);
+  let ageHours: number | null = null;
+  let dtError: string | null = null;
+  if (ageMode === "hours") {
+    ageHours = ageN == null ? null : ageUnit === "hours" ? ageN : ageN * 24 + (num(plusHours) ?? 0);
+  } else if (birthAt && sampleAt) {
+    const diff = (new Date(sampleAt).getTime() - new Date(birthAt).getTime()) / 3_600_000;
+    if (!Number.isFinite(diff)) dtError = "Enter valid dates and times.";
+    else if (diff < 0) dtError = "Sample time is before the birth time — please check.";
+    else ageHours = Math.round(diff * 10) / 10;
+  }
   const sbr = num(bili);
   const sbrUmol = sbr == null ? null : toUmol(sbr, unit);
   const ageOk = ageHours != null && ageHours <= 28 * 24;
@@ -148,24 +186,41 @@ export default function BiliTool() {
       ? { umol: toUmol(pB, unit), ageHours: pA }
       : null;
 
-  const r = ageOk && sbrOk ? assessBili(ga, ageHours!, sbrUmol!, prev) : null;
-  const red = r && (r.zone === "exchange" || r.zone === "photo");
+  const isTcb = measure === "tcb";
+  const tcb = isTcb && ageOk && sbrOk ? assessTcb(ga, ageHours!, sbrUmol!, recentPhoto, prev) : null;
+  const r = ageOk && sbrOk ? (tcb ? tcb.estimate : assessBili(ga, ageHours!, sbrUmol!, prev)) : null;
+  const red = r && !isTcb && (r.zone === "exchange" || r.zone === "photo");
+  const mName = isTcb ? "TcB" : "TSB";
   const gaText = ga >= 38 ? "≥ 38 weeks" : `${ga} weeks`;
   const ageText =
     ageHours == null
       ? ""
-      : ageUnit === "hours"
-        ? `${ageN} h`
-        : `day ${ageN}${num(plusHours) ? ` + ${num(plusHours)} h` : ""} (${Math.round(ageHours)} h)`;
+      : ageMode === "datetime"
+        ? `${ageHours} h of life`
+        : ageUnit === "hours"
+          ? `${ageN} h`
+          : `day ${ageN}${num(plusHours) ? ` + ${num(plusHours)} h` : ""} (${Math.round(ageHours)} h)`;
 
   const hint =
-    sbr != null && !sbrOk
+    dtError ??
+    (sbr != null && !sbrOk
       ? unit === "mgdl"
         ? "That value looks like µmol/L — switch the unit to µmol/L."
         : "Check the bilirubin value."
       : ageHours != null && !ageOk
         ? "Thresholds cover the first 28 days of life."
-        : null;
+        : null);
+
+  // Card colour: TcB results are screening — amber/red only as "get a serum level".
+  const cardCls = tcb
+    ? tcb.needsSerum
+      ? r!.zone === "exchange" || r!.zone === "photo"
+        ? ZONE_STYLES.photo
+        : ZONE_STYLES.consider
+      : ZONE_STYLES.below
+    : r
+      ? ZONE_STYLES[r.zone]
+      : "";
 
   return (
     <div className="mx-auto max-w-2xl px-3 py-5 md:px-6">
@@ -175,7 +230,18 @@ export default function BiliTool() {
       </p>
 
       <section className="mt-4 rounded-lg border border-slate-200 bg-white p-4 shadow-sm">
-        <div className="grid grid-cols-2 gap-3">
+        <div className="flex rounded-lg bg-yellow-100 p-1" role="tablist" aria-label="Age entry">
+          <button type="button" role="tab" aria-selected={ageMode === "hours"}
+            onClick={() => setAgeMode("hours")} className={tabCls(ageMode === "hours")}>
+            Age in hours
+          </button>
+          <button type="button" role="tab" aria-selected={ageMode === "datetime"}
+            onClick={() => setAgeMode("datetime")} className={tabCls(ageMode === "datetime")}>
+            Birth &amp; sample time
+          </button>
+        </div>
+
+        <div className="mt-3 grid grid-cols-2 gap-3">
           <label className="block">
             <span className="text-xs font-semibold text-slate-600">Gestation at birth</span>
             <select value={ga} onChange={(e) => setGa(Number(e.target.value))}
@@ -185,29 +251,67 @@ export default function BiliTool() {
               ))}
             </select>
           </label>
-          <label className="block">
-            <span className="text-xs font-semibold text-slate-600">Age</span>
-            <div className="mt-1 flex gap-1">
-              <input type="number" inputMode="decimal" min={0} value={age}
-                onChange={(e) => setAge(e.target.value)} className={inputCls} />
-              <select value={ageUnit} onChange={(e) => setAgeUnit(e.target.value as "hours" | "days")}
-                className={selectCls} aria-label="Age unit">
-                <option value="hours">Hours</option>
-                <option value="days">Days</option>
-              </select>
-            </div>
-            {ageUnit === "days" && (
-              <div className="mt-1 flex items-center gap-1.5">
-                <span className="text-[11px] font-medium text-slate-600">+</span>
-                <input type="number" inputMode="numeric" min={0} max={23} value={plusHours}
-                  onChange={(e) => setPlusHours(e.target.value)}
-                  className="w-14 rounded-lg border border-slate-200 px-2 py-1 text-sm outline-none focus:ring-2 focus:ring-yellow-600" />
-                <span className="text-[11px] font-medium text-slate-600">h</span>
+          {ageMode === "hours" ? (
+            <label className="block">
+              <span className="text-xs font-semibold text-slate-600">Age at sample</span>
+              <div className="mt-1 flex gap-1">
+                <input type="number" inputMode="decimal" min={0} value={age}
+                  onChange={(e) => setAge(e.target.value)} className={inputCls} />
+                <select value={ageUnit} onChange={(e) => setAgeUnit(e.target.value as "hours" | "days")}
+                  className={selectCls} aria-label="Age unit">
+                  <option value="hours">Hours</option>
+                  <option value="days">Days</option>
+                </select>
               </div>
-            )}
-          </label>
+              {ageUnit === "days" && (
+                <div className="mt-1 flex items-center gap-1.5">
+                  <span className="text-[11px] font-medium text-slate-600">+</span>
+                  <input type="number" inputMode="numeric" min={0} max={23} value={plusHours}
+                    onChange={(e) => setPlusHours(e.target.value)}
+                    className="w-14 rounded-lg border border-slate-200 px-2 py-1 text-sm outline-none focus:ring-2 focus:ring-yellow-600" />
+                  <span className="text-[11px] font-medium text-slate-600">h</span>
+                </div>
+              )}
+            </label>
+          ) : (
+            <div className="text-xs font-semibold text-slate-600">
+              Age at sample
+              <p className="mt-1 rounded-lg bg-slate-50 px-3 py-2.5 text-base font-bold text-slate-900">
+                {ageHours != null ? `${ageHours} h` : "—"}
+              </p>
+            </div>
+          )}
+          {ageMode === "datetime" && (
+            <>
+              <label className="block">
+                <span className="text-xs font-semibold text-slate-600">Birth date &amp; time</span>
+                <input type="datetime-local" value={birthAt} onChange={(e) => setBirthAt(e.target.value)}
+                  className={`mt-1 ${inputCls} text-sm`} />
+              </label>
+              <label className="block">
+                <span className="text-xs font-semibold text-slate-600">Sample date &amp; time</span>
+                <input type="datetime-local" value={sampleAt} onChange={(e) => setSampleAt(e.target.value)}
+                  className={`mt-1 ${inputCls} text-sm`} />
+              </label>
+            </>
+          )}
+          <div className="col-span-2">
+            <span className="text-xs font-semibold text-slate-600">Bilirubin measured by</span>
+            <div className="mt-1 flex rounded-lg bg-yellow-100 p-1" role="tablist" aria-label="Measurement">
+              <button type="button" role="tab" aria-selected={!isTcb}
+                onClick={() => setMeasure("tsb")} className={tabCls(!isTcb)}>
+                Serum (TSB)
+              </button>
+              <button type="button" role="tab" aria-selected={isTcb}
+                onClick={() => setMeasure("tcb")} className={tabCls(isTcb)}>
+                Transcutaneous (TcB)
+              </button>
+            </div>
+          </div>
           <label className="col-span-2 block">
-            <span className="text-xs font-semibold text-slate-600">Total serum bilirubin</span>
+            <span className="text-xs font-semibold text-slate-600">
+              {isTcb ? "Transcutaneous bilirubin (TcB)" : "Total serum bilirubin (TSB)"}
+            </span>
             <div className="mt-1 flex gap-1">
               <input type="number" inputMode="decimal" min={0} value={bili}
                 onChange={(e) => setBili(e.target.value)} className={inputCls} />
@@ -218,6 +322,13 @@ export default function BiliTool() {
               </select>
             </div>
           </label>
+          {isTcb && (
+            <label className="col-span-2 flex items-center gap-2 text-sm font-medium text-slate-800">
+              <input type="checkbox" checked={recentPhoto} onChange={(e) => setRecentPhoto(e.target.checked)}
+                className="h-4 w-4 accent-yellow-800" />
+              On phototherapy now, or stopped less than 24 h ago
+            </label>
+          )}
         </div>
         <details className="mt-3 rounded-lg bg-slate-50 px-3 py-2">
           <summary className="cursor-pointer text-xs font-semibold text-slate-700">
@@ -245,15 +356,40 @@ export default function BiliTool() {
       </section>
 
       {r && (
-        <section className={`mt-4 rounded-lg border-2 p-4 shadow-sm ${ZONE_STYLES[r.zone]}`}>
+        <section className={`mt-4 rounded-lg border-2 p-4 shadow-sm ${cardCls}`}>
           <p className="text-xs font-bold uppercase tracking-widest opacity-80">
-            {gaText} · {ageText}
+            {gaText} · {ageText} · {mName}
           </p>
-          <p className={`mt-1 text-2xl font-extrabold ${red ? "text-red-700" : ""}`}>{r.label}</p>
+          {tcb ? (
+            <>
+              <p className={`mt-1 text-2xl font-extrabold ${tcb.needsSerum ? "text-red-700" : ""}`}>
+                {tcb.invalid
+                  ? "TcB NOT VALID — MEASURE SERUM BILIRUBIN"
+                  : tcb.needsSerum
+                    ? "MEASURE SERUM BILIRUBIN (TSB)"
+                    : "TcB below serum-check level"}
+              </p>
+              {!tcb.invalid && (
+                <p className="mt-1 text-sm font-semibold">
+                  TcB estimate zone: {r.label.toLowerCase()}. Treatment decisions are made on serum bilirubin.
+                </p>
+              )}
+            </>
+          ) : (
+            <p className={`mt-1 text-2xl font-extrabold ${red ? "text-red-700" : ""}`}>{r.label}</p>
+          )}
           <p className="mt-1 text-sm font-semibold">
-            Bilirubin {fmtBili(sbrUmol!, unit)}
+            {mName} {fmtBili(sbrUmol!, unit)}
             {unit === "mgdl" ? ` (${fmtBili(sbrUmol!, "umol")})` : ` (${fmtBili(sbrUmol!, "mgdl")})`}
           </p>
+
+          {tcb && tcb.reasons.length > 0 && (
+            <ul className="mt-2 list-disc space-y-1 rounded-md bg-white/70 py-2 pl-7 pr-2 text-sm font-semibold">
+              {tcb.reasons.map((t) => (
+                <li key={t}>{t}</li>
+              ))}
+            </ul>
+          )}
 
           <div className="mt-3 grid grid-cols-2 gap-2 text-xs">
             <div className="rounded-md bg-white/70 px-2 py-1.5">
@@ -292,25 +428,35 @@ export default function BiliTool() {
             unit={unit}
             point={{ h: ageHours!, umol: sbrUmol! }}
             prev={prev ? { h: prev.ageHours, umol: prev.umol } : null}
+            tcb={isTcb}
           />
           <p className="mt-1 text-[11px] opacity-80">
-            Red dot = this baby{prev ? "; grey dot = previous reading" : ""}.
+            Red {isTcb ? "diamond = this TcB" : "dot = this TSB"}{prev ? "; grey dot = previous reading" : ""}.
             {ga >= 38 ? " Dashed lines: consider phototherapy (amber) and repeat-bilirubin (grey)." : ""}
           </p>
 
-          <ul className="mt-3 list-disc space-y-1 pl-5 text-sm">
-            {r.actions.map((t) => (
-              <li key={t}>{t}</li>
-            ))}
-          </ul>
+          {(!tcb || !tcb.needsSerum) && (
+            <ul className="mt-3 list-disc space-y-1 pl-5 text-sm">
+              {(tcb
+                ? [
+                    "No serum level needed now. Repeat TcB or check clinically within 24 h if jaundice persists or deepens, and before discharge.",
+                    ...r.actions.filter((a) => a.includes("Prolonged")),
+                  ]
+                : r.actions
+              ).map((t) => (
+                <li key={t}>{t}</li>
+              ))}
+            </ul>
+          )}
         </section>
       )}
 
       <p className="mt-3 text-[11px] leading-snug text-slate-600">
         Thresholds: NICE CG98 (≥ 38 wk consensus table; 23–37 wk threshold graphs —
         phototherapy 40 → GA×10−100 µmol/L and exchange 80 → GA×10 µmol/L by 72 h).
-        1 mg/dL = 17.1 µmol/L. Use serum bilirubin under 24 h, under 35 weeks, and
-        when treating. Not a substitute for clinical judgment.
+        TcB: confirm with serum if &gt; 250 µmol/L, ≥ 15 mg/dL or within 3 mg/dL of the
+        phototherapy line; serum only under 24 h, under 35 weeks and around phototherapy.
+        1 mg/dL = 17.1 µmol/L. Not a substitute for clinical judgment.
       </p>
 
       <SaveButton
@@ -318,12 +464,14 @@ export default function BiliTool() {
         build={() =>
           r
             ? {
-                title: `Bilirubin ${fmtBili(sbrUmol!, unit)} at ${Math.round(ageHours!)} h, ${gaText} — ${r.label}`,
+                title: `${mName} ${fmtBili(sbrUmol!, unit)} at ${Math.round(ageHours!)} h, ${gaText} — ${
+                  tcb ? (tcb.needsSerum ? "measure serum bilirubin" : "below serum-check level") : r.label
+                }`,
                 detail: [
                   `Phototherapy threshold ${fmtBili(r.thresholds.photo, unit)}`,
                   `Exchange threshold ${fmtBili(r.thresholds.exchange, unit)}`,
                   ...(r.ratePerHour != null ? [`Rate of rise ${r.ratePerHour.toFixed(1)} µmol/L/h`] : []),
-                  ...r.actions,
+                  ...(tcb ? tcb.reasons : r.actions),
                 ].join(" · "),
               }
             : null
