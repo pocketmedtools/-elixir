@@ -1419,6 +1419,46 @@ section("Pediatric DB integrity");
   console.log("AAP 2022: table cells, footnote plateaus, escalation, zones, Fig 7 bands, TcB, B/A, rate of rise OK");
 }
 
+// ---------- Bili bedside plan ----------
+{
+  console.log("\n=== Bili plan suite ===");
+  const { assessAap, aapThresholds } = await import("../src/lib/aapBili");
+  const { aapPlan, nicePlan } = await import("../src/lib/biliPlan");
+  const { assessBili, assessTcb } = await import("../src/lib/biliMath");
+  const P = (tsb: number, h = 48, tcb: { invalid: boolean; needsTsb: boolean } | null = null) =>
+    aapPlan(assessAap({ gaWeeks: 40, ageHours: h, tsb, riskFactor: false }), h, tcb);
+  const t = aapThresholds(40, 48, false); // photo 17.0
+  const cases: [number, string, string][] = [
+    [t.exchange, "emergency", "every 2 h"],
+    [t.escalation, "urgent", "every 2 h"],
+    [t.photo, "treat", "within 12 h"],
+    [16.0, "watch", "4–24 h"],
+    [14.0, "watch", "4–24 h"],
+    [12.0, "ok", "1–2 days"],
+    [11.0, "ok", "within 2 days"],
+    [9.0, "ok", "within 3 days"],
+  ];
+  for (const [v, tone, rep] of cases) {
+    const p = P(v);
+    if (p.tone !== tone || !p.repeat.includes(rep)) fail(`AAP plan ${v}: ${p.tone} / ${p.repeat}`);
+  }
+  if (!P(aapThresholds(40, 20, false).photo - 1, 20).repeat.includes("4–8 h")) fail("AAP plan <24 h near line should be TSB 4–8 h");
+  if (!P(5, 10).repeat.includes("24–48 h")) fail("AAP plan <12 h should say bilirubin at 24–48 h");
+  if (P(12, 48, { invalid: false, needsTsb: true }).tone !== "check") fail("TcB needing TSB should be check tone");
+  if (!P(t.photo).steps[0].includes("15.0")) fail("stop-phototherapy value should be photo − 2 = 15.0");
+  // Every AAP value gives a plan with phototherapy + repeat text.
+  for (const ga of [35, 37, 38, 40]) for (let h = 1; h <= 336; h += 7) for (let v = 1; v <= 30; v += 0.5) {
+    const p = aapPlan(assessAap({ gaWeeks: ga, ageHours: h, tsb: v, riskFactor: false }), h, null);
+    if (!p || !p.phototherapy || !p.repeat) fail(`AAP plan missing ${ga} ${h} ${v}`);
+  }
+  // NICE (preterm) plan.
+  const n = (u: number, h = 72) => nicePlan(assessBili(32, h, u), h, null);
+  if (n(330).tone !== "emergency" || n(230).tone !== "treat" || n(200).tone !== "watch" || n(100).tone !== "ok")
+    fail("NICE plan tones wrong for 32 wk at 72 h");
+  if (nicePlan(assessBili(32, 72, 150), 72, assessTcb(32, 72, 150, false)).tone !== "check") fail("NICE TcB < 35 wk must ask for serum");
+  console.log("bedside plan: tones, repeat timing, stop value, TcB check and full coverage OK");
+}
+
 // ---------- Result ----------
 console.log("\n========== VERIFY RESULT ==========");
 if (failures.length) {
