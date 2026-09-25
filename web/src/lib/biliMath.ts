@@ -151,3 +151,53 @@ export function assessBili(
     ratePerHour,
   };
 }
+
+/**
+ * Transcutaneous bilirubin (TcB) is a screening estimate. It is confirmed
+ * with serum bilirubin (TSB) when:
+ *  - the baby is < 24 h old, < 35 weeks, or on / within 24 h of phototherapy
+ *    (TcB unreliable — NICE CG98);
+ *  - TcB > 250 µmol/L (14.6 mg/dL) (NICE CG98);
+ *  - TcB is at or within 50 µmol/L (≈ 3 mg/dL) of the phototherapy
+ *    threshold, or ≥ 15 mg/dL (AAP 2022 TcB rule).
+ */
+export interface TcbAssessment {
+  needsSerum: boolean;
+  /** TcB cannot be used at all — serum only. */
+  invalid: boolean;
+  reasons: string[];
+  estimate: BiliAssessment;
+}
+
+export function assessTcb(
+  gaWeeks: number,
+  ageHours: number,
+  tcbUmol: number,
+  recentPhototherapy: boolean,
+  prev?: { umol: number; ageHours: number } | null,
+): TcbAssessment {
+  const estimate = assessBili(gaWeeks, ageHours, tcbUmol, prev);
+  const reasons: string[] = [];
+  let invalid = false;
+  if (ageHours < 24) {
+    invalid = true;
+    reasons.push("Baby is under 24 h old — TcB is not used in the first 24 h; measure serum bilirubin.");
+  }
+  if (gaWeeks < 35) {
+    invalid = true;
+    reasons.push("Under 35 weeks' gestation — TcB is not reliable; measure serum bilirubin.");
+  }
+  if (recentPhototherapy) {
+    invalid = true;
+    reasons.push("On phototherapy or stopped < 24 h ago — skin bilirubin is bleached; TcB is not valid, use serum.");
+  }
+  if (tcbUmol > 250) reasons.push("TcB above 250 µmol/L (14.6 mg/dL) — confirm with serum bilirubin.");
+  else if (tcbUmol >= 15 * UMOL_PER_MGDL) reasons.push("TcB ≥ 15 mg/dL — confirm with serum bilirubin.");
+  if (tcbUmol >= estimate.thresholds.photo - 50)
+    reasons.push(
+      tcbUmol > estimate.thresholds.photo
+        ? "TcB is above the phototherapy threshold — measure serum bilirubin now to decide treatment."
+        : "TcB is within 50 µmol/L (≈ 3 mg/dL) of the phototherapy threshold — measure serum bilirubin.",
+    );
+  return { needsSerum: invalid || reasons.length > 0, invalid, reasons, estimate };
+}

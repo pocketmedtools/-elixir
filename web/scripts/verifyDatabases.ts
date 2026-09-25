@@ -1323,7 +1323,26 @@ section("Pediatric DB integrity");
   if (!assessBili(40, 36, 250, { umol: 150, ageHours: 24 }).actions.some((a) => a.includes("> 8.5")))
     fail("rapid rise > 8.5 should be flagged");
   if (!assessBili(38, 12, 60).actions.some((a) => a.includes("first 24 h"))) fail("<24 h jaundice flag missing");
-  console.log("NICE CG98: all 18 table rows exact, preterm lines, monotonic zones, rate of rise OK");
+  const { assessTcb } = await import("../src/lib/biliMath");
+  const mg = (v: number) => v * 17.1;
+  if (assessTcb(40, 48, mg(10), false).needsSerum) fail("TcB 10 mg/dL at 48 h term should not need serum");
+  if (!assessTcb(40, 48, mg(12), false).needsSerum) fail("TcB 12 mg/dL at 48 h (within 50 of photo 250) needs serum");
+  if (!assessTcb(40, 120, mg(15), false).needsSerum) fail("TcB 15 mg/dL needs serum");
+  if (!assessTcb(40, 120, 251, false).reasons.some((r) => r.includes("250"))) fail("TcB > 250 µmol/L rule missing");
+  if (!assessTcb(40, 20, mg(4), false).invalid) fail("TcB under 24 h must be invalid");
+  if (!assessTcb(34, 60, mg(4), false).invalid) fail("TcB under 35 wk must be invalid");
+  if (!assessTcb(40, 60, mg(4), true).invalid) fail("TcB around phototherapy must be invalid");
+  // Serum-check rule is monotonic: once a TcB needs serum, every higher TcB does too.
+  for (const ga of [35, 36, 37, 38]) for (let h = 24; h <= 336; h += 6) {
+    let seen = false;
+    for (let v = 10; v <= 500; v += 5) {
+      const n = assessTcb(ga, h, v, false).needsSerum;
+      if (seen && !n) fail(`TcB serum rule not monotonic ${ga} wk ${h} h ${v}`);
+      seen = seen || n;
+    }
+    if (!seen) fail(`TcB never triggers serum at ${ga} wk ${h} h`);
+  }
+  console.log("NICE CG98: all 18 table rows exact, preterm lines, monotonic zones, rate of rise, TcB rules OK");
 }
 
 // ---------- Result ----------
