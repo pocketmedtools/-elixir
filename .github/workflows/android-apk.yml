@@ -48,6 +48,10 @@ jobs:
 
       - name: Setup Android SDK
         uses: android-actions/setup-android@v3
+        with:
+          # The legacy 'tools' package (the action's default) was removed from
+          # Google's SDK repository; Gradle fetches platforms/build-tools itself.
+          packages: 'platform-tools'
 
       # A stable signing identity lets updates install over old versions and
       # avoids the debug-key download warning. The key lives on a dedicated
