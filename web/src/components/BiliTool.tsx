@@ -9,7 +9,22 @@ import {
   type BiliUnit,
   type BiliZone,
 } from "../lib/biliMath";
+import {
+  AAP_RISK_FACTORS,
+  aapTcbNeedsTsb,
+  aapThresholds,
+  assessAap,
+  type AapZone,
+} from "../lib/aapBili";
 import SaveButton from "./SaveButton";
+
+const AAP_STYLES: Record<AapZone, string> = {
+  exchange: "border-red-700 bg-red-100 text-red-900",
+  escalation: "border-red-600 bg-red-100 text-red-900",
+  photo: "border-red-400 bg-red-50 text-red-800",
+  below: "border-emerald-300 bg-emerald-50 text-emerald-900",
+};
+const AAP_GA = [40, 39, 38, 37, 36, 35];
 
 const ZONE_STYLES: Record<BiliZone, string> = {
   exchange: "border-red-600 bg-red-100 text-red-900",
@@ -39,7 +54,10 @@ function BiliChart({
   point,
   prev,
   tcb = false,
+  aapRf = null,
 }: {
+  /** When set, draw AAP 2022 lines (with / without neurotoxicity risk factor). */
+  aapRf?: boolean | null;
   ga: number;
   unit: BiliUnit;
   point: { h: number; umol: number };
@@ -50,7 +68,15 @@ function BiliChart({
   const xMax = Math.min(336, Math.max(120, Math.ceil((point.h + 24) / 24) * 24));
   const hours: number[] = [];
   for (let h = 0; h <= xMax; h += 2) hours.push(h);
-  const lines = hours.map((h) => ({ h, t: biliThresholds(ga, h) }));
+  type Line = { photo: number; exchange: number; escalation: number | null; consider: number | null; repeat: number | null };
+  const at = (h: number): Line => {
+    if (aapRf != null) {
+      const a = aapThresholds(ga, Math.max(h, 1), aapRf);
+      return { photo: a.photo * 17.1, exchange: a.exchange * 17.1, escalation: a.escalation * 17.1, consider: null, repeat: null };
+    }
+    return { ...biliThresholds(ga, h), escalation: null };
+  };
+  const lines = hours.map((h) => ({ h, t: at(h) }));
   const yTopUmol = Math.max(
     ...lines.map((l) => l.t.exchange),
     point.umol,
@@ -59,7 +85,7 @@ function BiliChart({
   const yTop = fromUmol(yTopUmol, unit);
   const x = (h: number) => L + (h / xMax) * (W - L - R);
   const y = (umol: number) => T + (1 - fromUmol(umol, unit) / yTop) * (H - T - B);
-  const path = (pick: (t: ReturnType<typeof biliThresholds>) => number | null) => {
+  const path = (pick: (t: Line) => number | null) => {
     let d = "";
     for (const l of lines) {
       const v = pick(l.t);
@@ -74,12 +100,14 @@ function BiliChart({
   for (let v = 0; v <= yTop; v += yStep) yTicks.push(v);
   const xTicks: number[] = [];
   for (let h = 0; h <= xMax; h += xMax > 168 ? 48 : 24) xTicks.push(h);
-  const term = ga >= 38;
+  const term = aapRf == null && ga >= 38;
 
   const series: { d: string; color: string; dash?: string; w: number; label: string; end: number | null }[] = [
     { d: path((t) => t.exchange), color: "#b91c1c", w: 2.5, label: "Exchange", end: last.exchange },
     { d: path((t) => t.photo), color: "#ea580c", w: 2.5, label: "Photo", end: last.photo },
   ];
+  if (aapRf != null)
+    series.push({ d: path((t) => t.escalation), color: "#9333ea", dash: "5 3", w: 1.8, label: "Escalate", end: last.escalation });
   if (term) {
     series.push({ d: path((t) => t.consider), color: "#d97706", dash: "5 3", w: 1.5, label: "Consider", end: last.consider });
     series.push({ d: path((t) => t.repeat), color: "#64748b", dash: "3 3", w: 1.5, label: "Repeat", end: null });
@@ -150,7 +178,10 @@ function nowLocal(): string {
 }
 
 export default function BiliTool() {
-  const [ga, setGa] = useState(38);
+  const [guideline, setGuideline] = useState<"aap" | "nice">("aap");
+  const [ga, setGa] = useState(40);
+  const [rf, setRf] = useState<boolean[]>(AAP_RISK_FACTORS.map(() => false));
+  const [albumin, setAlbumin] = useState("");
   const [ageMode, setAgeMode] = useState<AgeMode>("hours");
   const [measure, setMeasure] = useState<Measure>("tsb");
   const [age, setAge] = useState("");
@@ -187,11 +218,31 @@ export default function BiliTool() {
       : null;
 
   const isTcb = measure === "tcb";
+  const isAap = guideline === "aap";
+  const anyRf = rf.some(Boolean);
+  const aapGaOk = ga >= 35;
+  const mgdl = sbrUmol == null ? null : sbrUmol / 17.1;
+  const aap =
+    isAap && aapGaOk && ageOk && sbrOk
+      ? assessAap({
+          gaWeeks: ga,
+          ageHours: ageHours!,
+          tsb: mgdl!,
+          riskFactor: anyRf,
+          albumin: isTcb ? null : num(albumin),
+          prev: prev ? { tsb: prev.umol / 17.1, ageHours: prev.ageHours } : null,
+        })
+      : null;
+  const aapTcbReasons = aap && isTcb ? aapTcbNeedsTsb(mgdl!, aap.t.photo) : [];
+  const aapTcbInvalid = isAap && isTcb && recentPhoto;
+  const aapNeedsTsb = aapTcbInvalid || aapTcbReasons.length > 0;
+  const mgFmt = (v: number) =>
+    unit === "mgdl" ? `${v.toFixed(1)} mg/dL` : `${Math.round(v * 17.1)} µmol/L`;
   const tcb = isTcb && ageOk && sbrOk ? assessTcb(ga, ageHours!, sbrUmol!, recentPhoto, prev) : null;
   const r = ageOk && sbrOk ? (tcb ? tcb.estimate : assessBili(ga, ageHours!, sbrUmol!, prev)) : null;
   const red = r && !isTcb && (r.zone === "exchange" || r.zone === "photo");
   const mName = isTcb ? "TcB" : "TSB";
-  const gaText = ga >= 38 ? "≥ 38 weeks" : `${ga} weeks`;
+  const gaText = isAap ? (ga >= 40 ? "≥ 40 weeks" : `${ga} weeks`) : ga >= 38 ? "≥ 38 weeks" : `${ga} weeks`;
   const ageText =
     ageHours == null
       ? ""
@@ -203,6 +254,7 @@ export default function BiliTool() {
 
   const hint =
     dtError ??
+    (guideline === "aap" && ga < 35 ? "AAP 2022 covers ≥ 35 weeks — use the NICE tab for preterm babies under 35 weeks." : null) ??
     (sbr != null && !sbrOk
       ? unit === "mgdl"
         ? "That value looks like µmol/L — switch the unit to µmol/L."
@@ -226,10 +278,22 @@ export default function BiliTool() {
     <div className="mx-auto max-w-2xl px-3 py-5 md:px-6">
       <h2 className="text-xl font-bold tracking-tight text-slate-900">Neonatal Jaundice (Bili)</h2>
       <p className="mt-1 text-sm text-slate-700">
-        Phototherapy and exchange thresholds by gestation and hour of life — NICE CG98.
+        {isAap
+          ? "AAP 2022 hour-specific thresholds (the BiliTool model) — ≥ 35 weeks."
+          : "NICE CG98 thresholds — 23 weeks to term."}
       </p>
 
       <section className="mt-4 rounded-lg border border-slate-200 bg-white p-4 shadow-sm">
+        <div className="mb-3 flex rounded-lg bg-yellow-100 p-1" role="tablist" aria-label="Guideline">
+          <button type="button" role="tab" aria-selected={isAap}
+            onClick={() => setGuideline("aap")} className={tabCls(isAap)}>
+            AAP 2022 (BiliTool)
+          </button>
+          <button type="button" role="tab" aria-selected={!isAap}
+            onClick={() => setGuideline("nice")} className={tabCls(!isAap)}>
+            NICE (UK, &lt; 35 wk too)
+          </button>
+        </div>
         <div className="flex rounded-lg bg-yellow-100 p-1" role="tablist" aria-label="Age entry">
           <button type="button" role="tab" aria-selected={ageMode === "hours"}
             onClick={() => setAgeMode("hours")} className={tabCls(ageMode === "hours")}>
@@ -244,12 +308,22 @@ export default function BiliTool() {
         <div className="mt-3 grid grid-cols-2 gap-3">
           <label className="block">
             <span className="text-xs font-semibold text-slate-600">Gestation at birth</span>
-            <select value={ga} onChange={(e) => setGa(Number(e.target.value))}
-              className={`mt-1 w-full ${selectCls}`}>
-              {GA_OPTIONS.map((g) => (
-                <option key={g} value={g}>{g === 38 ? "≥ 38 wk (term)" : `${g} weeks`}</option>
-              ))}
-            </select>
+            {isAap ? (
+              <select value={aapGaOk ? Math.min(ga, 40) : ""} onChange={(e) => setGa(Number(e.target.value))}
+                className={`mt-1 w-full ${selectCls}`}>
+                {!aapGaOk && <option value="">{ga} wk — use NICE</option>}
+                {AAP_GA.map((g) => (
+                  <option key={g} value={g}>{g === 40 ? "≥ 40 weeks" : `${g} weeks`}</option>
+                ))}
+              </select>
+            ) : (
+              <select value={Math.min(ga, 38)} onChange={(e) => setGa(Number(e.target.value))}
+                className={`mt-1 w-full ${selectCls}`}>
+                {GA_OPTIONS.map((g) => (
+                  <option key={g} value={g}>{g === 38 ? "≥ 38 wk (term)" : `${g} weeks`}</option>
+                ))}
+              </select>
+            )}
           </label>
           {ageMode === "hours" ? (
             <label className="block">
@@ -330,6 +404,32 @@ export default function BiliTool() {
             </label>
           )}
         </div>
+        {isAap && (
+          <fieldset className="mt-3 rounded-lg border border-yellow-300 bg-yellow-50 px-3 py-2">
+            <legend className="px-1 text-xs font-bold text-slate-800">
+              Neurotoxicity risk factors (besides gestation &lt; 38 wk)
+            </legend>
+            {AAP_RISK_FACTORS.map((f, i) => (
+              <label key={f} className="mt-1 flex items-start gap-2 text-sm text-slate-800">
+                <input type="checkbox" checked={rf[i]}
+                  onChange={(e) => setRf(rf.map((v, j) => (j === i ? e.target.checked : v)))}
+                  className="mt-0.5 h-4 w-4 shrink-0 accent-yellow-800" />
+                {f}
+              </label>
+            ))}
+            {!isTcb && (
+              <label className="mt-2 flex items-center gap-2 text-xs font-semibold text-slate-700">
+                Serum albumin (optional, g/dL — gives B/A ratio)
+                <input type="number" inputMode="decimal" min={0} value={albumin}
+                  onChange={(e) => setAlbumin(e.target.value)}
+                  className="w-20 rounded-lg border border-slate-200 px-2 py-1 text-sm outline-none focus:ring-2 focus:ring-yellow-600" />
+              </label>
+            )}
+            {num(albumin) != null && num(albumin)! < 3 && !rf[0] && (
+              <p className="mt-1 text-xs font-semibold text-red-700">Albumin &lt; 3.0 g/dL is itself a risk factor — tick it above.</p>
+            )}
+          </fieldset>
+        )}
         <details className="mt-3 rounded-lg bg-slate-50 px-3 py-2">
           <summary className="cursor-pointer text-xs font-semibold text-slate-700">
             Previous reading (optional — gives rate of rise)
@@ -355,7 +455,103 @@ export default function BiliTool() {
         )}
       </section>
 
-      {r && (
+      {aap && (
+        <section className={`mt-4 rounded-lg border-2 p-4 shadow-sm ${
+          isTcb ? (aapNeedsTsb ? AAP_STYLES.photo : AAP_STYLES.below) : AAP_STYLES[aap.zone]
+        }`}>
+          <p className="text-xs font-bold uppercase tracking-widest opacity-80">
+            {gaText} · {ageText} · {mName}{anyRf ? " · risk factor" : ""}
+          </p>
+          <p className={`mt-1 text-2xl font-extrabold ${(isTcb ? aapNeedsTsb : aap.zone !== "below") ? "text-red-700" : ""}`}>
+            {isTcb
+              ? aapTcbInvalid
+                ? "TcB NOT VALID — MEASURE TSB"
+                : aapNeedsTsb
+                  ? "MEASURE TSB"
+                  : "TcB below TSB-check level"
+              : aap.label}
+          </p>
+          <p className="mt-1 text-sm font-semibold">
+            {mName} {mgFmt(mgdl!)}
+            {unit === "mgdl" ? ` (${Math.round(sbrUmol!)} µmol/L)` : ` (${mgdl!.toFixed(1)} mg/dL)`}
+            {aap.belowPhoto > 0
+              ? ` — ${mgFmt(aap.belowPhoto)} below phototherapy threshold`
+              : ` — ${mgFmt(-aap.belowPhoto)} at/above phototherapy threshold`}
+          </p>
+
+          {isTcb && (aapTcbInvalid || aapTcbReasons.length > 0) && (
+            <ul className="mt-2 list-disc space-y-1 rounded-md bg-white/70 py-2 pl-7 pr-2 text-sm font-semibold">
+              {aapTcbInvalid && <li>On phototherapy or stopped less than 24 h ago — use TSB (TcB is an option only ≥ 24 h after stopping).</li>}
+              {aapTcbReasons.map((t) => <li key={t}>{t}</li>)}
+            </ul>
+          )}
+
+          <div className="mt-3 grid grid-cols-3 gap-2 text-xs">
+            <div className="rounded-md bg-white/70 px-2 py-1.5">
+              <span className="font-semibold text-orange-700">Phototherapy</span>
+              <br />{mgFmt(aap.t.photo)}
+            </div>
+            <div className="rounded-md bg-white/70 px-2 py-1.5">
+              <span className="font-semibold text-purple-700">Escalation</span>
+              <br />{mgFmt(aap.t.escalation)}
+            </div>
+            <div className="rounded-md bg-white/70 px-2 py-1.5">
+              <span className="font-semibold text-red-700">Exchange</span>
+              <br />{mgFmt(aap.t.exchange)}
+            </div>
+            {aap.ratePerHour != null && (
+              <div className="col-span-3 rounded-md bg-white/70 px-2 py-1.5">
+                <span className="font-semibold">Rate of rise:</span>{" "}
+                <span className={aap.rapidRise ? "font-bold text-red-700" : ""}>
+                  {aap.ratePerHour.toFixed(2)} mg/dL/h
+                </span>
+                {aap.rapidRise ? " — rapid, suggests haemolysis" : ""}
+              </div>
+            )}
+            {aap.baRatio != null && (
+              <div className="col-span-3 rounded-md bg-white/70 px-2 py-1.5">
+                <span className="font-semibold">B/A ratio:</span>{" "}
+                <span className={aap.baExceeded != null ? "font-bold text-red-700" : ""}>{aap.baRatio.toFixed(1)}</span>
+                {" "}(mg/dL ÷ g/dL)
+              </div>
+            )}
+          </div>
+
+          <BiliChart
+            ga={ga}
+            unit={unit}
+            aapRf={anyRf}
+            point={{ h: ageHours!, umol: sbrUmol! }}
+            prev={prev ? { h: prev.ageHours, umol: prev.umol } : null}
+            tcb={isTcb}
+          />
+          <p className="mt-1 text-[11px] opacity-80">
+            Red {isTcb ? "diamond = this TcB" : "dot = this TSB"}{prev ? "; grey dot = previous reading" : ""}.
+            Purple dashed = escalation of care (exchange − 2 mg/dL).
+          </p>
+
+          {(!isTcb || !aapNeedsTsb) && aap.followUp.length > 0 && (
+            <div className="mt-3 rounded-md bg-white/70 px-3 py-2">
+              <p className="text-xs font-bold uppercase tracking-wide">Follow-up (AAP Fig 7)</p>
+              <ul className="mt-1 list-disc space-y-1 pl-5 text-sm">
+                {aap.followUp.map((t) => <li key={t}>{t}</li>)}
+              </ul>
+            </div>
+          )}
+          {!isTcb && (
+            <ul className="mt-3 list-disc space-y-1 pl-5 text-sm">
+              {aap.actions.map((t) => <li key={t}>{t}</li>)}
+            </ul>
+          )}
+          {isTcb && aapNeedsTsb && aap.zone !== "below" && (
+            <p className="mt-2 text-sm font-semibold">
+              TcB estimate is in the {aap.zone === "photo" ? "phototherapy" : aap.zone} zone — confirm with TSB urgently.
+            </p>
+          )}
+        </section>
+      )}
+
+      {!isAap && r && (
         <section className={`mt-4 rounded-lg border-2 p-4 shadow-sm ${cardCls}`}>
           <p className="text-xs font-bold uppercase tracking-widest opacity-80">
             {gaText} · {ageText} · {mName}
@@ -452,7 +648,10 @@ export default function BiliTool() {
       )}
 
       <p className="mt-3 text-[11px] leading-snug text-slate-600">
-        Thresholds: NICE CG98 (≥ 38 wk consensus table; 23–37 wk threshold graphs —
+        {isAap
+          ? "AAP 2022 (Kemper et al, Pediatrics 2022;150:e2022058859): Supplemental Tables 1–4 transcribed hour by hour; escalation of care = exchange − 2 mg/dL (KAS 17); TcB → TSB if within 3 mg/dL of the phototherapy line or ≥ 15 mg/dL (KAS 6); follow-up per Fig 7. "
+          : ""}
+        {isAap ? "" : "Thresholds: "}{isAap ? "NICE tab: " : ""}NICE CG98 (≥ 38 wk consensus table; 23–37 wk threshold graphs —
         phototherapy 40 → GA×10−100 µmol/L and exchange 80 → GA×10 µmol/L by 72 h).
         TcB: confirm with serum if &gt; 250 µmol/L, ≥ 15 mg/dL or within 3 mg/dL of the
         phototherapy line; serum only under 24 h, under 35 weeks and around phototherapy.
@@ -462,7 +661,23 @@ export default function BiliTool() {
       <SaveButton
         tool="Neonatal Jaundice"
         build={() =>
-          r
+          aap
+            ? {
+                title: `${mName} ${mgFmt(mgdl!)} at ${Math.round(ageHours!)} h, ${gaText}${anyRf ? " + risk factor" : ""} — ${
+                  isTcb ? (aapNeedsTsb ? "measure TSB" : "below TSB-check level") : aap.label
+                } (AAP 2022)`,
+                detail: [
+                  `Phototherapy ${mgFmt(aap.t.photo)}`,
+                  `Escalation ${mgFmt(aap.t.escalation)}`,
+                  `Exchange ${mgFmt(aap.t.exchange)}`,
+                  ...(aap.ratePerHour != null ? [`Rate of rise ${aap.ratePerHour.toFixed(2)} mg/dL/h`] : []),
+                  ...(aap.baRatio != null ? [`B/A ratio ${aap.baRatio.toFixed(1)}`] : []),
+                  ...aapTcbReasons,
+                  ...aap.followUp,
+                  ...(isTcb ? [] : aap.actions),
+                ].join(" · "),
+              }
+            : !isAap && r
             ? {
                 title: `${mName} ${fmtBili(sbrUmol!, unit)} at ${Math.round(ageHours!)} h, ${gaText} — ${
                   tcb ? (tcb.needsSerum ? "measure serum bilirubin" : "below serum-check level") : r.label

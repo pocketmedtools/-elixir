@@ -1345,6 +1345,80 @@ section("Pediatric DB integrity");
   console.log("NICE CG98: all 18 table rows exact, preterm lines, monotonic zones, rate of rise, TcB rules OK");
 }
 
+// ---------- AAP 2022 (BiliTool model) ----------
+{
+  console.log("\n=== AAP 2022 bilirubin suite ===");
+  const { aapThresholds, assessAap, aapTcbNeedsTsb } = await import("../src/lib/aapBili");
+  const { AAP2022 } = await import("../src/data/aap2022Bilirubin");
+  const eq = (a: number, b: number, m: string) => { if (Math.abs(a - b) > 1e-9) fail(`AAP ${m}: ${a} vs ${b}`); };
+  // Spot cells read from Supplemental Tables 1–4.
+  eq(aapThresholds(40, 1, false).photo, 8.9, "40wk h1 photo");
+  eq(aapThresholds(40, 24, false).photo, 13.3, "40wk 24h photo");
+  eq(aapThresholds(40, 48, false).photo, 17.0, "40wk 48h photo");
+  eq(aapThresholds(39, 24, false).photo, 12.8, "39wk 24h photo");
+  eq(aapThresholds(39, 48, false).photo, 16.6, "39wk 48h photo");
+  eq(aapThresholds(39, 24.9, false).photo, 12.8, "completed-hour floor");
+  eq(aapThresholds(42, 48, false).photo, 17.0, "GA > 40 uses 40+ table");
+  // Footnote plateaus.
+  eq(aapThresholds(40, 96, false).photo, 21.8, "40wk ≥96h");
+  eq(aapThresholds(40, 500, false).photo, 21.8, "40wk plateau");
+  eq(aapThresholds(39, 157, false).photo, 21.8, "39wk ≥157h");
+  eq(aapThresholds(38, 325, false).photo, 21.8, "38wk ≥325h");
+  eq(aapThresholds(38, 96, true).photo, 18.2, "≥38 RF ≥96h");
+  eq(aapThresholds(37, 151, true).photo, 18.2, "37 RF ≥151h");
+  eq(aapThresholds(40, 96, false).exchange, 27.0, "exchange ≥38 ≥96h");
+  eq(aapThresholds(39, 60, true).photo, aapThresholds(38, 60, true).photo, "RF photo ≥38 shares one table");
+  if (Object.keys(AAP2022).length !== 18) fail("AAP: expected 18 tables");
+  // Escalation = exchange − 2; ordering; monotonic in age; RF lowers thresholds.
+  for (const ga of [35, 36, 37, 38, 39, 40]) for (const rf of [false, true]) {
+    let p = aapThresholds(ga, 1, rf);
+    for (let h = 1; h <= 400; h++) {
+      const t = aapThresholds(ga, h, rf);
+      eq(t.escalation, Math.round((t.exchange - 2) * 10) / 10, `escalation ${ga} ${rf} ${h}`);
+      if (!(t.photo < t.escalation && t.escalation < t.exchange)) fail(`AAP order ${ga} ${rf} ${h}`);
+      if (t.photo < p.photo || t.exchange < p.exchange) fail(`AAP fell ${ga} ${rf} ${h}`);
+      if (rf) { const n = aapThresholds(ga, h, false); if (t.photo > n.photo || t.exchange > n.exchange) fail(`RF higher than none ${ga} ${h}`); }
+      p = t;
+      if (h % 6 === 0) {
+        const order = ["below", "photo", "escalation", "exchange"]; let last = 0;
+        for (let v = 1; v <= 35; v += 0.1) {
+          const i = order.indexOf(assessAap({ gaWeeks: ga, ageHours: h, tsb: v, riskFactor: rf }).zone);
+          if (i < last) fail(`AAP zone order ${ga} ${h} ${v}`); last = i;
+        }
+      }
+    }
+  }
+  // Boundaries: at threshold = treat (≥).
+  const t48 = aapThresholds(40, 48, false);
+  if (assessAap({ gaWeeks: 40, ageHours: 48, tsb: t48.photo, riskFactor: false }).zone !== "photo") fail("TSB = photo threshold should start phototherapy");
+  if (assessAap({ gaWeeks: 40, ageHours: 48, tsb: t48.escalation, riskFactor: false }).zone !== "escalation") fail("TSB = escalation threshold should escalate");
+  if (assessAap({ gaWeeks: 40, ageHours: 48, tsb: t48.exchange, riskFactor: false }).zone !== "exchange") fail("TSB = exchange threshold should exchange");
+  // Fig 7 band edges (photo 17.0 at 48 h, 40 wk).
+  const fu = (tsb: number, h = 48) => assessAap({ gaWeeks: 40, ageHours: h, tsb, riskFactor: false }).followUp[0] ?? "";
+  if (!fu(15.1).startsWith("0.1–1.9")) fail("Fig7 1.9 below");
+  if (!fu(15.0).startsWith("2.0–3.4")) fail("Fig7 2.0 below");
+  if (!fu(13.6).startsWith("2.0–3.4")) fail("Fig7 3.4 below");
+  if (!fu(13.5).startsWith("3.5–5.4")) fail("Fig7 3.5 below");
+  if (!fu(11.5).startsWith("5.5–6.9")) fail("Fig7 5.5 below");
+  if (!fu(10.0).startsWith("≥ 7.0")) fail("Fig7 7.0 below");
+  if (!fu(8, 10).includes("before 12 h") && !fu(8, 10).includes("Before 12 h")) fail("Fig7 <12 h note");
+  if (!assessAap({ gaWeeks: 40, ageHours: 20, tsb: aapThresholds(40, 20, false).photo - 1, riskFactor: false }).followUp[0].includes("< 24 h")) fail("Fig7 <24 h row");
+  // TcB rule (KAS 6).
+  if (aapTcbNeedsTsb(14.0, 17.0).length === 0) fail("TcB exactly 3 below photo needs TSB");
+  if (aapTcbNeedsTsb(13.9, 17.0).length !== 0) fail("TcB 3.1 below photo should not need TSB");
+  if (aapTcbNeedsTsb(15.0, 21.8).length === 0) fail("TcB ≥ 15 needs TSB");
+  // B/A cutoffs and rapid rise (KAS 7).
+  const ba = (ga: number, rf: boolean, tsb: number, alb: number) => assessAap({ gaWeeks: ga, ageHours: 72, tsb, riskFactor: rf, albumin: alb }).baExceeded;
+  if (ba(39, false, 24, 3) !== 8.0 || ba(39, false, 23.9, 3) !== null) fail("B/A 8.0 cutoff");
+  if (ba(39, true, 21.6, 3) !== 7.2) fail("B/A 7.2 (≥38 + RF)");
+  if (ba(36, false, 21.6, 3) !== 7.2) fail("B/A 7.2 (35–37)");
+  if (ba(36, true, 20.4, 3) !== 6.8) fail("B/A 6.8 (35–37 + RF)");
+  if (!assessAap({ gaWeeks: 40, ageHours: 20, tsb: 8, riskFactor: false, prev: { tsb: 5, ageHours: 10 } }).rapidRise) fail("0.3/h in first 24 h is rapid");
+  if (assessAap({ gaWeeks: 40, ageHours: 60, tsb: 12, riskFactor: false, prev: { tsb: 10.1, ageHours: 50 } }).rapidRise) fail("0.19/h after 24 h not rapid");
+  if (!assessAap({ gaWeeks: 40, ageHours: 60, tsb: 12, riskFactor: false, prev: { tsb: 10, ageHours: 50 } }).rapidRise) fail("0.2/h after 24 h is rapid");
+  console.log("AAP 2022: table cells, footnote plateaus, escalation, zones, Fig 7 bands, TcB, B/A, rate of rise OK");
+}
+
 // ---------- Result ----------
 console.log("\n========== VERIFY RESULT ==========");
 if (failures.length) {
