@@ -1,5 +1,491 @@
 import type { NoteTable } from "../../lib/types";
 
-const scores: Record<string, NoteTable[]> = {};
+const scores: Record<string, NoteTable[]> = {
+  "musculoskeletal-low-back-pain": [
+    {
+      heading: "Types of low back pain by duration (NICE NG59 2020)",
+      columns: ["Type", "Duration", "Approach"],
+      rows: [
+        ["Acute", "Under 6 weeks", "Reassure, stay active, NSAID; no imaging without red flags"],
+        ["Subacute", "6-12 weeks", "Stratify with STarT Back; physiotherapy, exercise"],
+        ["Chronic", "Over 12 weeks", "Exercise programme, CBT-informed care; avoid opioids and gabapentinoids"],
+      ],
+    },
+    {
+      heading: "STarT Back screening tool for low back pain (NICE NG59 2020)",
+      columns: ["Component", "Finding", "Points"],
+      rows: [
+        ["1 Back pain spread down leg(s) in last 2 weeks", "Agree", "1"],
+        ["2 Pain in shoulder or neck in last 2 weeks", "Agree", "1"],
+        ["3 Only walked short distances because of back pain", "Agree", "1"],
+        ["4 Dressed more slowly than usual because of back pain", "Agree", "1"],
+        ["5 Not really safe for me to be physically active", "Agree", "1"],
+        ["6 Worrying thoughts going through my mind a lot", "Agree", "1"],
+        ["7 Back pain is terrible and never going to get better", "Agree", "1"],
+        ["8 Have not enjoyed things I used to", "Agree", "1"],
+        ["9 How bothersome overall in last 2 weeks", "Not at all, slightly or moderately", "0"],
+        ["9 How bothersome overall in last 2 weeks", "Very much or extremely", "1"],
+      ],
+    },
+    {
+      heading: "STarT Back score risk groups (total 0-9; psychosocial subscore items 5-9)",
+      columns: ["Risk group", "Rule", "Management"],
+      rows: [
+        ["Low risk", "Total 0-3", "Primary care: advice, reassurance, analgesia, stay active"],
+        ["Medium risk", "Total 4 or more, subscore 3 or less", "Physiotherapy-led exercise and manual therapy"],
+        ["High risk", "Total 4 or more, subscore 4 or more", "Psychologically informed physiotherapy (CBT approach)"],
+      ],
+    },
+    {
+      heading: "Oswestry Disability Index (ODI) bands for back pain (Campbell 13e 2025)",
+      columns: ["ODI percentage", "Disability", "Implication"],
+      rows: [
+        ["0-20%", "Minimal", "Advice on lifting, sitting, exercise"],
+        ["21-40%", "Moderate", "Conservative care - physiotherapy, analgesia"],
+        ["41-60%", "Severe", "Pain is the main problem - detailed investigation"],
+        ["61-80%", "Crippled", "Back pain impinges on all aspects of life - positive intervention"],
+        ["81-100%", "Bed-bound or exaggerating", "Check for symptom magnification"],
+      ],
+    },
+    {
+      heading: "Waddell non-organic signs criteria in low back pain (Campbell 13e 2025)",
+      columns: ["Sign category", "Test", "Positive finding"],
+      rows: [
+        ["1 - Tenderness", "Light touch or deep palpation", "Superficial or non-anatomical widespread tenderness"],
+        ["2 - Simulation", "Axial loading on head; pelvis and shoulders rotated together", "Low back pain reported"],
+        ["3 - Distraction", "Seated (flip) SLR compared with supine SLR", "Marked improvement when distracted"],
+        ["4 - Regional disturbance", "Motor and sensory examination", "Non-dermatomal sensory loss or give-way weakness"],
+        ["5 - Overreaction", "Observation during examination", "Disproportionate verbal or facial pain behaviour"],
+        ["Interpretation", "3 or more of 5 categories positive", "Psychosocial component - not malingering; does not exclude organic pathology"],
+      ],
+    },
+    {
+      heading: "ACR 2016 fibromyalgia diagnostic criteria (ACR 2016 revision)",
+      columns: ["Criterion", "Requirement", "Note"],
+      rows: [
+        ["1 - WPI and SSS", "WPI 7 or more and SSS 5 or more, or WPI 4-6 and SSS 9 or more", "WPI 0-19 painful areas; SSS 0-12 (fatigue, unrefreshing sleep, cognition, somatic)"],
+        ["2 - Generalised pain", "Pain in at least 4 of 5 regions", "Jaw, chest and abdomen are not counted in region definition"],
+        ["3 - Duration", "Symptoms at a similar level for at least 3 months", "-"],
+        ["4 - Coexistence", "Diagnosis valid regardless of other diagnoses", "Does not exclude other illness"],
+      ],
+    },
+  ],
+  "musculoskeletal-knee-osteoarthritis": [
+    {
+      heading: "Kellgren-Lawrence radiographic grading of osteoarthritis (Campbell 13e 2025)",
+      columns: ["Grade", "Radiographic features", "Implication"],
+      rows: [
+        ["Grade 0", "No radiographic features of OA", "-"],
+        ["Grade 1", "Doubtful joint space narrowing, possible osteophytic lipping", "Doubtful OA"],
+        ["Grade 2", "Definite osteophytes, possible joint space narrowing", "Minimal OA - radiographic OA threshold"],
+        ["Grade 3", "Multiple moderate osteophytes, definite narrowing, some sclerosis, possible deformity", "Moderate OA"],
+        ["Grade 4", "Large osteophytes, marked narrowing, severe sclerosis, definite bone-end deformity", "Severe OA - arthroplasty if symptoms warrant"],
+      ],
+    },
+    {
+      heading: "Clinical diagnostic criteria for knee osteoarthritis (ACR 1986; NICE NG226 2022)",
+      columns: ["Criterion set", "Requirement", "Note"],
+      rows: [
+        ["NICE 2022 - diagnose clinically", "Age 45 or over, activity-related joint pain, and no or under 30 min morning stiffness", "No imaging or blood tests needed"],
+        ["ACR clinical - required", "Knee pain on most days", "Plus 3 or more of the 6 features below"],
+        ["ACR feature 1", "Age over 50 years", "-"],
+        ["ACR feature 2", "Morning stiffness under 30 minutes", "-"],
+        ["ACR feature 3", "Crepitus on active motion", "-"],
+        ["ACR feature 4", "Bony tenderness", "-"],
+        ["ACR feature 5", "Bony enlargement", "-"],
+        ["ACR feature 6", "No palpable warmth of synovium", "Sensitivity 95%, specificity 69%"],
+      ],
+    },
+    {
+      heading: "Outerbridge classification of articular cartilage lesions (Campbell 13e 2025)",
+      columns: ["Grade", "Arthroscopic appearance", "Note"],
+      rows: [
+        ["Grade 0", "Normal cartilage", "-"],
+        ["Grade I", "Softening and swelling", "Chondromalacia"],
+        ["Grade II", "Partial-thickness defect with fissures under 1.5 cm, not reaching subchondral bone", "-"],
+        ["Grade III", "Fissuring to subchondral bone over an area more than 1.5 cm", "Deep defect"],
+        ["Grade IV", "Exposed subchondral bone", "Full-thickness loss"],
+      ],
+    },
+  ],
+  "musculoskeletal-gout": [
+    {
+      heading: "ACR/EULAR 2015 gout classification criteria",
+      columns: ["Component", "Finding", "Points"],
+      rows: [
+        ["Joints involved in episodes", "Ankle or midfoot, without first MTP", "1"],
+        ["Joints involved in episodes", "First MTP involved", "2"],
+        ["Episode character: erythema, cannot bear touch, great difficulty walking", "One characteristic", "1"],
+        ["Episode character: erythema, cannot bear touch, great difficulty walking", "Two characteristics", "2"],
+        ["Episode character: erythema, cannot bear touch, great difficulty walking", "Three characteristics", "3"],
+        ["Time course (2 of: peak under 24 h, resolves by 14 days, free between)", "One typical episode", "1"],
+        ["Time course (2 of: peak under 24 h, resolves by 14 days, free between)", "Recurrent typical episodes", "2"],
+        ["Clinical tophus", "Present", "4"],
+        ["Serum urate (off urate-lowering therapy)", "Under 4 mg/dL", "-4"],
+        ["Serum urate (off urate-lowering therapy)", "4 to under 6 mg/dL", "0"],
+        ["Serum urate (off urate-lowering therapy)", "6 to under 8 mg/dL", "2"],
+        ["Serum urate (off urate-lowering therapy)", "8 to under 10 mg/dL", "3"],
+        ["Serum urate (off urate-lowering therapy)", "10 mg/dL or more", "4"],
+        ["Synovial fluid of symptomatic joint", "MSU crystal negative", "-2"],
+        ["Imaging of urate deposition", "Ultrasound double-contour sign or DECT urate", "4"],
+        ["Imaging of gout damage", "Erosion on hand or foot X-ray", "4"],
+      ],
+    },
+    {
+      heading: "ACR/EULAR 2015 gout criteria - interpretation",
+      columns: ["Step", "Rule", "Note"],
+      rows: [
+        ["Entry", "At least one episode of swelling, pain or tenderness of a peripheral joint or bursa", "-"],
+        ["Sufficient", "MSU crystals in a symptomatic joint, bursa or tophus", "Gout - no scoring needed"],
+        ["Classified as gout", "Total 8 or more (maximum 23)", "Sensitivity 92%, specificity 89%"],
+      ],
+    },
+    {
+      heading: "Clinical stages of gout (ACR 2020 gout guideline)",
+      columns: ["Stage", "Features", "Management"],
+      rows: [
+        ["Asymptomatic hyperuricaemia", "Urate over 6.8 mg/dL, no flares or tophi", "No urate-lowering therapy (ACR 2020 conditional against)"],
+        ["Acute gout flare", "Sudden monoarthritis, often first MTP at night", "Colchicine low dose, NSAID or steroid within 24 h"],
+        ["Intercritical gout", "Symptom-free intervals between flares", "ULT if 2 or more flares/year; treat to urate under 6 mg/dL"],
+        ["Chronic tophaceous gout", "Tophi, chronic arthritis, erosions", "Allopurinol start low go slow; febuxostat alternative; target under 5 mg/dL"],
+      ],
+    },
+  ],
+  "musculoskeletal-shoulder-pain": [
+    {
+      heading: "Neer stages of subacromial impingement (Rockwood 10e 2024)",
+      columns: ["Stage", "Pathology", "Typical age and course"],
+      rows: [
+        ["Stage I", "Oedema and haemorrhage of the cuff", "Under 25 years; reversible with rest and physiotherapy"],
+        ["Stage II", "Fibrosis and tendinitis", "25-40 years; recurrent pain with activity"],
+        ["Stage III", "Bone spurs and partial or full-thickness cuff tear", "Over 40 years; may need decompression or repair"],
+      ],
+    },
+    {
+      heading: "Bigliani classification of acromion morphology (Rockwood 10e 2024)",
+      columns: ["Type", "Shape", "Association"],
+      rows: [
+        ["Type I", "Flat", "Lowest impingement risk"],
+        ["Type II", "Curved", "Commonest"],
+        ["Type III", "Hooked", "Strongest association with cuff tears"],
+      ],
+    },
+    {
+      heading: "Stages of adhesive capsulitis (frozen shoulder) (Rockwood 10e 2024)",
+      columns: ["Stage", "Features", "Duration and management"],
+      rows: [
+        ["Freezing (painful)", "Diffuse pain, worse at night; loss of external rotation begins", "2-9 months; analgesia, intra-articular steroid"],
+        ["Frozen (stiff)", "Pain eases, marked global stiffness", "4-12 months; physiotherapy, hydrodilatation"],
+        ["Thawing (recovery)", "Gradual return of movement", "5-26 months; most recover; manipulation or release if not"],
+      ],
+    },
+    {
+      heading: "EULAR/ACR 2012 polymyalgia rheumatica classification criteria",
+      columns: ["Component", "Finding", "Points"],
+      rows: [
+        ["Morning stiffness", "Over 45 minutes", "2"],
+        ["Hip pain or limited range of motion", "Present", "1"],
+        ["RF and ACPA", "Both negative", "2"],
+        ["Other joint involvement", "Absent", "1"],
+        ["Ultrasound (optional) - shoulder and hip", "One shoulder bursitis/tenosynovitis/synovitis plus one hip synovitis/bursitis", "1"],
+        ["Ultrasound (optional) - both shoulders", "Both shoulders with subdeltoid bursitis, biceps tenosynovitis or synovitis", "1"],
+      ],
+    },
+    {
+      heading: "PMR 2012 criteria - interpretation",
+      columns: ["Step", "Rule", "Note"],
+      rows: [
+        ["Entry", "Age 50 or over, new bilateral shoulder aching, raised CRP and/or ESR", "-"],
+        ["PMR without ultrasound", "Total 4 or more (of 6)", "-"],
+        ["PMR with ultrasound", "Total 5 or more (of 8)", "Screen for giant cell arteritis symptoms"],
+      ],
+    },
+  ],
+  "musculoskeletal-neck-pain": [
+    {
+      heading: "Canadian C-spine rule criteria for imaging in alert trauma patients (ATLS 11e 2025)",
+      columns: ["Step", "Question", "Decision"],
+      rows: [
+        ["1 - High-risk factor", "Age 65 or over, dangerous mechanism, or limb paraesthesias?", "Yes - image (CT)"],
+        ["2 - Low-risk factor", "Simple rear-end crash, sitting in ED, ambulatory, delayed pain, no midline tenderness?", "No low-risk factor - image"],
+        ["3 - Active rotation", "Can actively rotate neck 45 degrees left and right?", "Yes - no imaging; unable - image"],
+        ["Applies to", "GCS 15, stable, blunt trauma", "Not for age under 16 or known spinal disease"],
+      ],
+    },
+    {
+      heading: "Quebec Task Force classification of whiplash-associated disorders (Campbell 13e 2025)",
+      columns: ["Grade", "Clinical presentation", "Management"],
+      rows: [
+        ["Grade 0", "No neck complaint, no physical signs", "Reassure"],
+        ["Grade I", "Neck pain, stiffness or tenderness only; no physical signs", "Reassure, stay active, simple analgesia"],
+        ["Grade II", "Neck complaint with musculoskeletal signs (reduced range, point tenderness)", "Active mobilisation, analgesia"],
+        ["Grade III", "Neck complaint with neurological signs (reflex loss, weakness, sensory deficit)", "Imaging, specialist review"],
+        ["Grade IV", "Neck complaint with fracture or dislocation", "Immobilise, spinal surgery referral"],
+      ],
+    },
+  ],
+  "musculoskeletal-osteoporosis": [
+    {
+      heading: "WHO T-score classification of bone density (IMS 2020; Harrison 22e 2025)",
+      columns: ["Category", "DXA T-score (hip or spine)", "Action"],
+      rows: [
+        ["Normal", "-1.0 or above", "Lifestyle, calcium and vitamin D"],
+        ["Low bone mass (osteopenia)", "Between -1.0 and -2.5", "Treat if FRAX 10-year hip risk 3% or more, or major 20% or more"],
+        ["Osteoporosis", "-2.5 or below", "Bisphosphonate first line (alendronate, zoledronate)"],
+        ["Severe (established) osteoporosis", "-2.5 or below plus a fragility fracture", "Consider anabolic (teriparatide) if very high risk"],
+        ["Z-score -2.0 or below", "Below expected range for age", "Use in premenopausal women and men under 50; seek secondary cause"],
+      ],
+    },
+    {
+      heading: "Genant semiquantitative grading of vertebral fractures (Harrison 22e 2025)",
+      columns: ["Grade", "Vertebral height loss", "Meaning"],
+      rows: [
+        ["Grade 0", "Normal", "-"],
+        ["Grade 1", "Mild - 20-25%", "Counts as osteoporotic fracture"],
+        ["Grade 2", "Moderate - 25-40%", "-"],
+        ["Grade 3", "Severe - over 40%", "Strongest predictor of further fracture"],
+      ],
+    },
+  ],
+  "musculoskeletal-spondyloarthropathy-sle": [
+    {
+      heading: "ACR/EULAR 2010 rheumatoid arthritis classification criteria",
+      columns: ["Component", "Finding", "Points"],
+      rows: [
+        ["Joint involvement", "1 large joint", "0"],
+        ["Joint involvement", "2-10 large joints", "1"],
+        ["Joint involvement", "1-3 small joints (with or without large)", "2"],
+        ["Joint involvement", "4-10 small joints (with or without large)", "3"],
+        ["Joint involvement", "Over 10 joints, at least 1 small", "5"],
+        ["Serology (RF, ACPA)", "Both negative", "0"],
+        ["Serology (RF, ACPA)", "Low positive RF or ACPA (up to 3 times ULN)", "2"],
+        ["Serology (RF, ACPA)", "High positive RF or ACPA (over 3 times ULN)", "3"],
+        ["Acute-phase reactants", "Normal CRP and ESR", "0"],
+        ["Acute-phase reactants", "Abnormal CRP or ESR", "1"],
+        ["Symptom duration", "Under 6 weeks", "0"],
+        ["Symptom duration", "6 weeks or more", "1"],
+      ],
+    },
+    {
+      heading: "ACR/EULAR 2010 RA criteria - interpretation (total 0-10)",
+      columns: ["Step", "Rule", "Note"],
+      rows: [
+        ["Entry", "At least 1 joint with definite clinical synovitis not better explained by another disease", "Typical erosions on X-ray allow classification directly"],
+        ["Definite RA", "6 or more of 10", "Start DMARD (methotrexate) early - window of opportunity"],
+        ["Not classifiable yet", "Under 6", "Reassess over time; may meet criteria later"],
+      ],
+    },
+    {
+      heading: "DAS28 disease activity score bands in rheumatoid arthritis (EULAR 2022 RA)",
+      columns: ["DAS28 (ESR)", "Disease activity", "Treat-to-target action"],
+      rows: [
+        ["Under 2.6", "Remission", "Continue; consider tapering if sustained"],
+        ["2.6 to 3.2", "Low", "Acceptable target if remission not feasible"],
+        ["Over 3.2 to 5.1", "Moderate", "Escalate therapy; review every 1-3 months"],
+        ["Over 5.1", "High", "Escalate - combination csDMARD or biologic/JAK inhibitor"],
+      ],
+    },
+    {
+      heading: "ACR revised functional class in rheumatoid arthritis (ACR 1991, in use 2026)",
+      columns: ["Class", "Self-care", "Vocational and avocational activity"],
+      rows: [
+        ["Class I", "Able", "Able to do both vocational and avocational"],
+        ["Class II", "Able", "Vocational able; avocational limited"],
+        ["Class III", "Able", "Limited in both"],
+        ["Class IV", "Limited", "Limited in all"],
+      ],
+    },
+    {
+      heading: "ASAS classification criteria for axial spondyloarthritis (ASAS 2009)",
+      columns: ["Arm", "Requirement", "Note"],
+      rows: [
+        ["Entry", "Back pain 3 months or more with onset before age 45", "-"],
+        ["Imaging arm", "Sacroiliitis on imaging plus 1 or more SpA feature", "MRI active inflammation, or radiographic sacroiliitis (modified New York)"],
+        ["Clinical arm", "HLA-B27 plus 2 or more other SpA features", "-"],
+        ["SpA features", "Inflammatory back pain, arthritis, heel enthesitis, uveitis, dactylitis, psoriasis, IBD", "Also good NSAID response, family history, HLA-B27, raised CRP"],
+      ],
+    },
+    {
+      heading: "ASAS classification criteria for peripheral spondyloarthritis (ASAS 2011)",
+      columns: ["Arm", "Requirement", "Note"],
+      rows: [
+        ["Entry", "Arthritis, enthesitis or dactylitis", "Without chronic back pain as main feature"],
+        ["Group A (1 or more)", "Uveitis, psoriasis, IBD, preceding infection, HLA-B27, sacroiliitis on imaging", "-"],
+        ["Group B (2 or more)", "Arthritis, enthesitis, dactylitis, inflammatory back pain ever, family history of SpA", "Features other than the entry feature"],
+      ],
+    },
+    {
+      heading: "ASAS criteria for inflammatory back pain (ASAS 2009)",
+      columns: ["Feature", "Description", "Note"],
+      rows: [
+        ["1 - Age at onset", "Under 40 years", "In chronic back pain over 3 months"],
+        ["2 - Onset", "Insidious", "-"],
+        ["3 - Exercise", "Improves with exercise", "-"],
+        ["4 - Rest", "No improvement with rest", "-"],
+        ["5 - Night pain", "Pain at night, improving on getting up", "-"],
+        ["Rule", "4 or more of 5 = inflammatory back pain", "Sensitivity 77%, specificity 92%"],
+      ],
+    },
+    {
+      heading: "Modified New York radiographic grading of sacroiliitis (Harrison 22e 2025)",
+      columns: ["Grade", "X-ray appearance", "Note"],
+      rows: [
+        ["Grade 0", "Normal", "-"],
+        ["Grade 1", "Suspicious changes", "-"],
+        ["Grade 2", "Minimal - small localised erosion or sclerosis, joint width unaltered", "Bilateral grade 2 or more = radiographic sacroiliitis"],
+        ["Grade 3", "Unequivocal - erosions, sclerosis, widening, narrowing or partial ankylosis", "Unilateral grade 3-4 also counts"],
+        ["Grade 4", "Total ankylosis", "Ankylosing spondylitis (radiographic axSpA)"],
+      ],
+    },
+    {
+      heading: "CASPAR classification criteria for psoriatic arthritis (CASPAR 2006, in use 2026)",
+      columns: ["Component", "Finding", "Points"],
+      rows: [
+        ["Evidence of psoriasis", "Current psoriasis (skin or scalp)", "2"],
+        ["Evidence of psoriasis", "Personal history of psoriasis (if no current)", "1"],
+        ["Evidence of psoriasis", "Family history in first or second degree relative (if neither)", "1"],
+        ["Psoriatic nail dystrophy", "Onycholysis, pitting, hyperkeratosis", "1"],
+        ["Rheumatoid factor", "Negative (not by latex)", "1"],
+        ["Dactylitis", "Current or recorded by a rheumatologist", "1"],
+        ["Juxta-articular new bone formation", "On hand or foot X-ray (not osteophytes)", "1"],
+      ],
+    },
+    {
+      heading: "CASPAR criteria - interpretation",
+      columns: ["Step", "Rule", "Note"],
+      rows: [
+        ["Entry", "Inflammatory articular disease - joint, spine or entheses", "-"],
+        ["Psoriatic arthritis", "3 or more points", "Specificity 99%, sensitivity 91%"],
+      ],
+    },
+    {
+      heading: "EULAR/ACR 2019 SLE classification criteria (highest item per domain counts)",
+      columns: ["Component", "Finding", "Points"],
+      rows: [
+        ["Constitutional", "Fever over 38.3 C", "2"],
+        ["Haematologic", "Leucopenia under 4000/microL", "3"],
+        ["Haematologic", "Thrombocytopenia under 100000/microL", "4"],
+        ["Haematologic", "Autoimmune haemolysis", "4"],
+        ["Neuropsychiatric", "Delirium", "2"],
+        ["Neuropsychiatric", "Psychosis", "3"],
+        ["Neuropsychiatric", "Seizure", "5"],
+        ["Mucocutaneous", "Non-scarring alopecia", "2"],
+        ["Mucocutaneous", "Oral ulcers", "2"],
+        ["Mucocutaneous", "Subacute cutaneous or discoid lupus", "4"],
+        ["Mucocutaneous", "Acute cutaneous lupus", "6"],
+        ["Serosal", "Pleural or pericardial effusion", "5"],
+        ["Serosal", "Acute pericarditis", "6"],
+        ["Musculoskeletal", "Joint involvement (synovitis or tenderness with 30 min stiffness)", "6"],
+        ["Renal", "Proteinuria over 0.5 g/24 h", "4"],
+        ["Renal", "Biopsy class II or V lupus nephritis", "8"],
+        ["Renal", "Biopsy class III or IV lupus nephritis", "10"],
+        ["Antiphospholipid antibodies", "aCL, anti-beta2GP1 or lupus anticoagulant", "2"],
+        ["Complement", "Low C3 or low C4", "3"],
+        ["Complement", "Low C3 and low C4", "4"],
+        ["SLE-specific antibodies", "Anti-dsDNA or anti-Smith", "6"],
+      ],
+    },
+    {
+      heading: "EULAR/ACR 2019 SLE criteria - interpretation",
+      columns: ["Step", "Rule", "Note"],
+      rows: [
+        ["Entry", "ANA 1:80 or higher on HEp-2 cells ever", "No ANA - not classified as SLE"],
+        ["Counting", "Criterion counts only if no likelier cause; need not be simultaneous", "Only the highest-weighted item per domain is added"],
+        ["SLE", "10 or more points with at least 1 clinical criterion", "Sensitivity 96%, specificity 93%"],
+      ],
+    },
+    {
+      heading: "Beighton score for generalised joint hypermobility (Rook 10e 2024)",
+      columns: ["Component", "Finding", "Points"],
+      rows: [
+        ["Little finger passive dorsiflexion over 90 degrees", "Right", "1"],
+        ["Little finger passive dorsiflexion over 90 degrees", "Left", "1"],
+        ["Thumb passively to flexor forearm", "Right", "1"],
+        ["Thumb passively to flexor forearm", "Left", "1"],
+        ["Elbow hyperextension over 10 degrees", "Right", "1"],
+        ["Elbow hyperextension over 10 degrees", "Left", "1"],
+        ["Knee hyperextension over 10 degrees", "Right", "1"],
+        ["Knee hyperextension over 10 degrees", "Left", "1"],
+        ["Forward flexion, knees straight", "Palms flat on the floor", "1"],
+      ],
+    },
+    {
+      heading: "Beighton score - hypermobility cut-offs (2017 EDS criteria)",
+      columns: ["Group", "Generalised hypermobility", "Note"],
+      rows: [
+        ["Prepubertal children and adolescents", "6 or more of 9", "-"],
+        ["Pubertal to age 50", "5 or more of 9", "-"],
+        ["Over 50 years", "4 or more of 9", "Hypermobile EDS needs further features beyond Beighton"],
+      ],
+    },
+  ],
+  "musculoskeletal-fractures-sports-injury": [
+    {
+      heading: "Ottawa ankle and foot rules criteria for X-ray (Rosen 10e 2022)",
+      columns: ["Rule", "X-ray if pain in zone plus any of", "Note"],
+      rows: [
+        ["Ankle series", "Pain in malleolar zone plus tenderness at posterior edge or tip of either malleolus (distal 6 cm)", "Or inability to bear weight for 4 steps both at injury and in ED"],
+        ["Foot series", "Pain in midfoot zone plus tenderness at base of fifth metatarsal or navicular", "Or inability to bear weight for 4 steps"],
+        ["Performance", "Sensitivity close to 100%", "Not validated in intoxication, multiple injuries or reduced sensation"],
+      ],
+    },
+    {
+      heading: "Ottawa knee rule criteria for X-ray after knee injury (Rosen 10e 2022)",
+      columns: ["Criterion", "Finding", "Note"],
+      rows: [
+        ["1 - Age", "55 years or over", "Any one criterion - X-ray"],
+        ["2 - Patella", "Isolated patellar tenderness", "-"],
+        ["3 - Fibula", "Tenderness at head of fibula", "-"],
+        ["4 - Flexion", "Cannot flex to 90 degrees", "-"],
+        ["5 - Weight bearing", "Cannot bear weight for 4 steps both immediately and in ED", "Limping steps count as bearing weight"],
+      ],
+    },
+    {
+      heading: "Ankle sprain grading (lateral ligament complex) (Rockwood 10e 2024)",
+      columns: ["Grade", "Injury and signs", "Management"],
+      rows: [
+        ["Grade I", "ATFL stretch or microtear; minimal swelling, no instability, weight-bearing", "RICE, early mobilisation; return in 1-2 weeks"],
+        ["Grade II", "Partial tear (ATFL torn, CFL partial); moderate swelling, mild laxity, painful weight-bearing", "Functional brace, physiotherapy; 3-6 weeks"],
+        ["Grade III", "Complete ATFL and CFL rupture; marked swelling, instability, cannot bear weight", "Brace or short immobilisation, proprioceptive rehab; surgery if chronic instability"],
+      ],
+    },
+    {
+      heading: "Muscle strain grading (Campbell 13e 2025)",
+      columns: ["Grade", "Injury and signs", "Management"],
+      rows: [
+        ["Grade I (mild)", "Few fibres torn; pain, minimal loss of strength and motion", "Rest, ice, early stretching; days to 2 weeks"],
+        ["Grade II (moderate)", "Partial tear; clear loss of strength, swelling, painful contraction", "Protected rehab; 3-6 weeks"],
+        ["Grade III (severe)", "Complete rupture; loss of function, palpable gap", "Surgical repair for some tendons (e.g. proximal hamstring avulsion)"],
+      ],
+    },
+    {
+      heading: "Mirels score for pathological fracture risk in bone metastasis (Campbell 13e 2025)",
+      columns: ["Component", "Finding", "Points"],
+      rows: [
+        ["Site", "Upper limb", "1"],
+        ["Site", "Lower limb", "2"],
+        ["Site", "Peritrochanteric", "3"],
+        ["Pain", "Mild", "1"],
+        ["Pain", "Moderate", "2"],
+        ["Pain", "Functional (with activity)", "3"],
+        ["Lesion type", "Blastic", "1"],
+        ["Lesion type", "Mixed", "2"],
+        ["Lesion type", "Lytic", "3"],
+        ["Size (fraction of cortical diameter)", "Under one-third", "1"],
+        ["Size (fraction of cortical diameter)", "One-third to two-thirds", "2"],
+        ["Size (fraction of cortical diameter)", "Over two-thirds", "3"],
+      ],
+    },
+    {
+      heading: "Mirels score - interpretation (total 4-12)",
+      columns: ["Mirels total", "Fracture risk", "Action"],
+      rows: [
+        ["7 or less", "Low (about 4%)", "Radiotherapy and observation"],
+        ["8", "Borderline (about 15%)", "Clinical judgement"],
+        ["9 or more", "High (33% or more)", "Prophylactic internal fixation before radiotherapy"],
+      ],
+    },
+  ],
+};
 
 export default scores;
