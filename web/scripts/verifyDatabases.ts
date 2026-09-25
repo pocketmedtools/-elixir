@@ -1399,6 +1399,8 @@ section("Pediatric DB integrity");
   eq(aapThresholds(39, 48, false).photo, 16.6, "39wk 48h photo");
   eq(aapThresholds(39, 24.9, false).photo, 12.8, "completed-hour floor");
   eq(aapThresholds(42, 48, false).photo, 17.0, "GA > 40 uses 40+ table");
+  eq(aapThresholds(41, 60, true).exchange, aapThresholds(38, 60, true).exchange, "41 wk + RF uses ≥38 RF exchange table");
+  eq(aapThresholds(38, 60, false).photo, AAP2022.photo_none_38[59], "38 wk (e.g. 38+4) uses the completed-week 38 table");
   // Footnote plateaus.
   eq(aapThresholds(40, 96, false).photo, 21.8, "40wk ≥96h");
   eq(aapThresholds(40, 500, false).photo, 21.8, "40wk plateau");

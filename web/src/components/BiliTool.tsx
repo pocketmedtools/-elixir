@@ -27,7 +27,7 @@ const RISK_CHIPS = [
   { short: "Unstable (24 h)", full: "Significant clinical instability in the previous 24 h" },
 ];
 
-const GA_LIST = [40, 39, 38, 37, 36, 35, 34, 33, 32, 31, 30, 29, 28, 27, 26, 25, 24, 23];
+const GA_WEEKS = [42, 41, 40, 39, 38, 37, 36, 35, 34, 33, 32, 31, 30, 29, 28, 27, 26, 25, 24, 23];
 
 const field =
   "w-full min-w-0 rounded-lg border-2 border-slate-300 bg-white px-3 py-2.5 text-base font-semibold text-slate-900 outline-none focus:border-slate-900";
@@ -119,7 +119,12 @@ function Chart({
 }
 
 export default function BiliTool() {
-  const [ga, setGa] = useState(40);
+  // Gestation as completed weeks + days (e.g. 38+4). Both AAP and NICE
+  // thresholds are set by completed weeks, so days never change the table.
+  const [ga, setGa] = useState(39);
+  const [gaDays, setGaDays] = useState(0);
+  // Risk status must be chosen explicitly (AAP): null until the user picks.
+  const [riskMode, setRiskMode] = useState<"none" | "with" | null>(null);
   const [age, setAge] = useState("");
   const [ageUnit, setAgeUnit] = useState<"hours" | "days" | "birth">("hours");
   const [plusH, setPlusH] = useState("");
@@ -135,7 +140,14 @@ export default function BiliTool() {
   const [prevAge, setPrevAge] = useState("");
 
   const isAap = ga >= 35;
-  const anyRf = rf.some(Boolean);
+  const anyRf = riskMode === "with";
+  const gaText = `${ga}+${gaDays} wk`;
+  const tableGa = isAap ? (ga >= 40 ? "≥ 40" : `${ga}`) : ga >= 38 ? "≥ 38" : `${ga}`;
+  const toggleRf = (i: number) => {
+    const next = rf.map((v, j) => (j === i ? !v : v));
+    setRf(next);
+    if (next.some(Boolean)) setRiskMode("with");
+  };
 
   // Age in hours
   let ageHours: number | null = null;
@@ -173,7 +185,8 @@ export default function BiliTool() {
   const unitTxt = unit === "mgdl" ? "mg/dL" : "µmol/L";
   let detail: string[] = [];
 
-  if (ready && isAap) {
+  const needRisk = isAap && riskMode === null;
+  if (ready && isAap && !needRisk) {
     const mg = umol! / 17.1;
     const a = assessAap({
       gaWeeks: ga,
@@ -193,7 +206,7 @@ export default function BiliTool() {
     if (a.ratePerHour != null) rate = `${a.ratePerHour.toFixed(2)} mg/dL/h${a.rapidRise ? " — fast" : ""}`;
     detail = [...a.followUp, ...a.actions];
     if (a.baRatio != null) detail.unshift(`B/A ratio ${a.baRatio.toFixed(1)}${a.baExceeded != null ? ` — at/above ${a.baExceeded}: exchange may be considered` : ""}.`);
-  } else if (ready) {
+  } else if (ready && !isAap) {
     const r = assessBili(ga, ageHours!, umol!, prev ? { umol: prev.umol, ageHours: prev.h } : null);
     const t = isTcb ? assessTcb(ga, ageHours!, umol!, onPhoto, prev ? { umol: prev.umol, ageHours: prev.h } : null) : null;
     plan = nicePlan(r, ageHours!, t);
@@ -219,15 +232,20 @@ export default function BiliTool() {
 
       {/* ---------- Inputs ---------- */}
       <section className="mt-3 space-y-3 rounded-xl border-2 border-slate-300 bg-white p-4">
-        <div className="grid grid-cols-2 gap-3">
-          <label className="block">
-            <span className="text-xs font-bold text-slate-700">Gestation</span>
-            <select value={ga} onChange={(e) => setGa(Number(e.target.value))} className={`mt-1 w-full ${sel}`}>
-              {GA_LIST.map((g) => (
-                <option key={g} value={g}>{g === 40 ? "≥ 40 wk" : `${g} wk`}</option>
-              ))}
-            </select>
-          </label>
+        <div className="grid grid-cols-1 gap-3">
+          <div>
+            <span className="text-xs font-bold text-slate-700">Gestation at birth</span>
+            <div className="mt-1 flex items-center gap-1">
+              <select value={ga} onChange={(e) => setGa(Number(e.target.value))} className={`${sel} flex-1`} aria-label="Gestation weeks">
+                {GA_WEEKS.map((g) => (<option key={g} value={g}>{g} wk</option>))}
+              </select>
+              <span className="text-lg font-black text-slate-900">+</span>
+              <select value={gaDays} onChange={(e) => setGaDays(Number(e.target.value))} className={`${sel} flex-1`} aria-label="Gestation days">
+                {[0, 1, 2, 3, 4, 5, 6].map((d) => (<option key={d} value={d}>{d} d</option>))}
+              </select>
+            </div>
+            <p className="mt-1 text-[11px] font-semibold text-slate-600">{gaText} → uses the {tableGa}-week table</p>
+          </div>
           <label className="block">
             <span className="text-xs font-bold text-slate-700">Age</span>
             <div className="mt-1 flex gap-1">
@@ -295,13 +313,33 @@ export default function BiliTool() {
 
         {isAap && (
           <div>
-            <span className="text-xs font-bold text-slate-700">Neurotoxicity risk factors <span className="font-medium text-slate-500">(tap any present)</span></span>
-            <div className="mt-1 flex flex-wrap gap-1.5">
+            <span className="text-xs font-bold text-slate-700">
+              Hyperbilirubinaemia neurotoxicity risk factors <span className="text-red-700">*</span>
+            </span>
+            <div className="mt-1 grid grid-cols-2 gap-1.5" role="radiogroup" aria-label="Risk factors">
+              <button type="button" role="radio" aria-checked={riskMode === "none"}
+                onClick={() => { setRiskMode("none"); setRf(rf.map(() => false)); }}
+                className={`rounded-lg border-2 px-2 py-2.5 text-sm font-extrabold ${riskMode === "none" ? "border-emerald-900 bg-emerald-800 text-white" : "border-slate-300 bg-white text-slate-800"}`}>
+                Without risk factors
+              </button>
+              <button type="button" role="radio" aria-checked={riskMode === "with"}
+                onClick={() => setRiskMode("with")}
+                className={`rounded-lg border-2 px-2 py-2.5 text-sm font-extrabold ${riskMode === "with" ? "border-red-950 bg-red-800 text-white" : "border-slate-300 bg-white text-slate-800"}`}>
+                With risk factors
+              </button>
+            </div>
+            {riskMode === null && (
+              <p className="mt-1 text-xs font-bold text-red-700">Choose one — it changes the AAP threshold tables.</p>
+            )}
+            <p className="mt-2 text-[11px] font-semibold text-slate-600">
+              Which ones? (optional — ticking any selects “With”). Gestation &lt; 38 wk is already built into the tables.
+            </p>
+            <div className="mt-1 grid gap-1">
               {RISK_CHIPS.map((c, i) => (
-                <button key={c.short} type="button" title={c.full} aria-pressed={rf[i]}
-                  onClick={() => setRf(rf.map((v, j) => (j === i ? !v : v)))} className={chip(rf[i])}>
-                  {rf[i] ? "✓ " : ""}{c.short}
-                </button>
+                <label key={c.short} className="flex items-start gap-2 text-sm font-semibold text-slate-800">
+                  <input type="checkbox" checked={rf[i]} onChange={() => toggleRf(i)} className="mt-0.5 h-4 w-4 shrink-0 accent-red-800" />
+                  {c.full}
+                </label>
               ))}
             </div>
           </div>
@@ -335,7 +373,7 @@ export default function BiliTool() {
         <section className="mt-4 overflow-hidden rounded-xl border-2 border-slate-900 bg-white">
           <div className={`${TONE[plan.tone]} px-4 py-3 text-white`}>
             <p className="text-[11px] font-bold uppercase tracking-widest text-white/80">
-              {ga === 40 ? "≥ 40" : ga} wk · {ageHours} h · {mName} {fmt(val)} {unitTxt}{anyRf && isAap ? " · risk factor" : ""}
+              {gaText} · {ageHours} h · {mName} {fmt(val)} {unitTxt}{isAap ? (anyRf ? " · with risk factors" : " · no risk factors") : ""}
             </p>
             <p className="mt-0.5 text-2xl font-black leading-tight">{plan.title}</p>
             <p className="mt-1 text-sm font-semibold text-white/90">
@@ -394,7 +432,11 @@ export default function BiliTool() {
       )}
 
       {!plan && !err && (
-        <p className="mt-3 text-sm font-semibold text-slate-600">Enter age and bilirubin — the plan appears instantly.</p>
+        <p className="mt-3 text-sm font-semibold text-slate-600">
+          {ready && needRisk
+            ? "Choose “Without” or “With risk factors” to see the plan."
+            : "Enter age and bilirubin — the plan appears instantly."}
+        </p>
       )}
 
       <p className="mt-3 text-[10px] leading-snug text-slate-500">
@@ -407,7 +449,7 @@ export default function BiliTool() {
         build={() =>
           plan && lineVals
             ? {
-                title: `${mName} ${fmt(val)} ${unitTxt} at ${ageHours} h, ${ga === 40 ? "≥ 40" : ga} wk — ${plan.title}`,
+                title: `${mName} ${fmt(val)} ${unitTxt} at ${ageHours} h, ${gaText}${isAap ? (anyRf ? ", with risk factors" : ", no risk factors") : ""} — ${plan.title}`,
                 detail: [
                   `Phototherapy: ${plan.phototherapy}`,
                   `Repeat: ${plan.repeat}`,
