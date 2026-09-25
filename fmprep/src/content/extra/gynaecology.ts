@@ -1,5 +1,396 @@
 import type { Topic } from "../../lib/types";
 
-const topics: Topic[] = [];
+const topics: Topic[] = [
+  {
+    id: "gynaecology-amenorrhoea-menstrual-irregularity",
+    title: "Amenorrhoea and menstrual irregularity",
+    oneLiner:
+      "**Primary amenorrhoea** is no menses by 15 years with normal secondary sexual characters (or by 13 years with none), and **secondary amenorrhoea** is cessation for 3 months after regular cycles or 6 months after irregular ones; after **excluding pregnancy**, causes are sorted by the **compartment approach** (outflow tract and uterus, ovary, pituitary, hypothalamus) using **TSH, prolactin, FSH/LH and pelvic ultrasound**, with **PCOS** the commonest cause of oligomenorrhoea.",
+    frequency: "common",
+    keywords: [
+      "primary amenorrhoea",
+      "secondary amenorrhoea",
+      "oligomenorrhoea",
+      "PCOS",
+      "Rotterdam criteria",
+      "hyperprolactinaemia",
+      "premature ovarian insufficiency",
+      "POI",
+      "Turner syndrome",
+      "MRKH syndrome",
+      "imperforate hymen",
+      "Asherman syndrome",
+      "genital tuberculosis",
+      "Sheehan syndrome",
+      "functional hypothalamic amenorrhoea",
+      "RED-S",
+      "progesterone challenge test",
+      "FIGO AUB",
+      "cabergoline",
+      "medroxyprogesterone",
+    ],
+    sections: [
+      {
+        heading: "Definitions and normal menstrual parameters",
+        points: [
+          "**Primary amenorrhoea** = no menarche by **15 years with normal growth and secondary sexual characteristics**, by **13 years with no breast development**, or **3 years after thelarche**. [ACOG CO 651 2015 reaffirmed 2024]",
+          "**Secondary amenorrhoea** = absence of menses for **3 months in a woman with previously regular cycles, or 6 months** with previously irregular cycles. [Berek and Novak 16e]",
+          "**FIGO 2018 normal cycle**: frequency **24-38 days**, cycle-to-cycle variation **7-9 days or less**, duration **8 days or less** and a volume that does not interfere with quality of life. [FIGO 2018]",
+          "**Infrequent menstruation (oligomenorrhoea)** = cycles **longer than 38 days**; frequent = shorter than 24 days; the older terms polymenorrhoea and menorrhagia are discouraged. [FIGO 2018]",
+          "Irregular cycles in the **first year after menarche** are a normal transition; **1-3 years after menarche**, cycles under 21 or over 45 days are irregular; **over 3 years after menarche**, under 21 or over 35 days, or fewer than 8 cycles a year. [PCOS Guideline 2023]",
+          "Irregular menstruation from **ovulatory dysfunction is the 'O' of FIGO PALM-COEIN** for abnormal uterine bleeding, and it is the commonest non-structural cause. [FIGO 2018]",
+          "Amenorrhoea is **physiological** before puberty, in **pregnancy and lactation**, and after menopause; the first step in every woman of reproductive age is to **exclude pregnancy**. [Berek and Novak 16e]",
+          "Secondary amenorrhoea affects about **3-5 per cent** of women in a year; primary amenorrhoea is uncommon (under 1 per cent). [Berek and Novak 16e]",
+          "**NFHS-5** shows **77 per cent of women aged 15-24 use a hygienic method of menstrual protection** and **59 per cent of girls aged 15-19 are anaemic** - both shape adolescent menstrual health in India. [NFHS-5]",
+        ],
+      },
+      {
+        heading: "Compartment approach and causes of primary amenorrhoea",
+        points: [
+          "The **compartment approach** locates the defect: **I - outflow tract and uterus; II - ovary; III - anterior pituitary; IV - hypothalamus and CNS**; plus general endocrine causes (thyroid, adrenal, PCOS). [Speroff 9e]",
+          "The commonest causes of primary amenorrhoea are **gonadal dysgenesis (about 40-50 per cent, mostly Turner syndrome)**, **Mullerian agenesis (MRKH, about 15 per cent)**, and **constitutional delay or hypothalamic causes**. [Berek and Novak 16e]",
+          "**Imperforate hymen / transverse vaginal septum** - a girl with normal secondary sexual characters, **cyclical lower abdominal pain, urinary retention** and a **bulging bluish membrane** (haematocolpos); treated by **cruciate hymenotomy** under anaesthesia. [Berek and Novak 16e]",
+          "**MRKH syndrome** - **46,XX**, normal ovaries, normal breasts and pubic hair, **absent uterus and upper two-thirds of vagina**; associated **renal (30-40 per cent) and skeletal anomalies**, so do a renal ultrasound. [Berek and Novak 16e]",
+          "MRKH management: **vaginal dilator therapy (Frank method) as first line**, vaginoplasty (McIndoe, Vecchietti, laparoscopic Davydov) if dilators fail, psychological support, and **gestational surrogacy**, which the **Surrogacy (Regulation) Act 2021** permits for absent uterus. [Berek and Novak 16e]",
+          "**Complete androgen insensitivity syndrome** - **46,XY**, normal breasts, **scanty or absent pubic and axillary hair**, blind short vagina, testes in the abdomen or inguinal canal, male-range testosterone; **gonadectomy after puberty** because of malignancy risk. [Berek and Novak 16e]",
+          "**Turner syndrome** (45,X or mosaic) - **short stature, webbed neck, shield chest, cubitus valgus, lymphoedema at birth, coarctation or bicuspid aortic valve, horseshoe kidney**, streak gonads and **high FSH**. [Turner Guideline 2024]",
+          "Turner care: **growth hormone** from early childhood, **low-dose transdermal oestradiol from 11-12 years** to induce puberty, cardiac MRI and echo, renal ultrasound, hearing, thyroid and coeliac screening. [Turner Guideline 2024]",
+          "**Swyer syndrome (46,XY pure gonadal dysgenesis)** - female phenotype with a uterus and streak gonads - needs **gonadectomy** because of a high risk of **gonadoblastoma/dysgerminoma**. [Berek and Novak 16e]",
+          "**Constitutional delay** - family history of late puberty, short stature with **delayed bone age**, low-normal gonadotrophins, and spontaneous puberty later; **Kallmann syndrome** is GnRH deficiency with **anosmia**. [Speroff 9e]",
+          "**Congenital adrenal hyperplasia (21-hydroxylase deficiency)** presents with ambiguous genitalia at birth or with hirsutism and irregular cycles later (non-classic); screen with **early-morning 17-hydroxyprogesterone**. [Berek and Novak 16e]",
+        ],
+      },
+      {
+        heading: "Causes of secondary amenorrhoea and oligomenorrhoea",
+        points: [
+          "**Pregnancy** is the commonest cause of secondary amenorrhoea - do a **urine pregnancy test** even when the woman says she is not sexually active. [Berek and Novak 16e]",
+          "**PCOS** is the commonest pathological cause of oligomenorrhoea; Indian community studies report prevalence of about **6-10 per cent by NIH criteria** and higher by Rotterdam criteria. [PCOS Guideline 2023]",
+          "**PCOS (Rotterdam, 2 of 3)**: **oligo- or anovulation, clinical or biochemical hyperandrogenism, polycystic ovarian morphology (20 or more follicles per ovary or volume 10 mL or more)** or raised AMH, after excluding other causes. [PCOS Guideline 2023]",
+          "In **adolescents** PCOS needs **both ovulatory dysfunction and hyperandrogenism**; ultrasound and AMH are **not used within 8 years of menarche**. [PCOS Guideline 2023]",
+          "**Hyperprolactinaemia** causes amenorrhoea and **galactorrhoea**; causes include **prolactinoma, drugs (risperidone, haloperidol, metoclopramide, domperidone, SSRIs)**, primary hypothyroidism, CKD and stalk compression. [Harrison 22e]",
+          "**Hypothyroidism** (menorrhagia or oligomenorrhoea) and **hyperthyroidism** (oligomenorrhoea) both disturb cycles; TSH is a first-line test. [Berek and Novak 16e]",
+          "**Premature ovarian insufficiency (POI)** - amenorrhoea or oligomenorrhoea for 4 months or more **before 40 years with FSH above 25 IU/L** (repeat in 4-6 weeks if in doubt); causes are idiopathic, **autoimmune, Turner mosaic, FMR1 premutation, chemotherapy, pelvic radiotherapy and surgery**. [ESHRE POI 2024]",
+          "**Asherman syndrome** - intrauterine adhesions after **postpartum or post-abortal curettage** or infection; in India **genital tuberculosis** is an important cause of adhesions and amenorrhoea. [Berek and Novak 16e]",
+          "**Sheehan syndrome** - pituitary necrosis after **severe postpartum haemorrhage**, presenting with **failure of lactation**, amenorrhoea, fatigue, hypothyroidism and adrenal insufficiency. [Williams 26e]",
+          "**Iatrogenic** - **DMPA, LNG-IUS, continuous COC**, post-pill amenorrhoea (usually under 6 months), antipsychotics and chemotherapy. [Berek and Novak 16e]",
+          "**Pituitary tumours and chronic illness** (CKD, liver disease, uncontrolled diabetes, TB, HIV) cause hypogonadotropic amenorrhoea. [Harrison 22e]",
+          "**Perimenopause** - STRAW+10 defines the early transition by a **persistent 7 or more day difference in consecutive cycle length**, and the late transition by **60 days or more of amenorrhoea**. [Berek and Novak 16e]",
+        ],
+      },
+      {
+        heading: "Stress, weight loss, exercise and occupational factors",
+        points: [
+          "**Functional hypothalamic amenorrhoea (FHA)** results from suppressed GnRH pulsatility due to **stress, weight loss, excessive exercise or low energy availability**, with **low or normal LH/FSH and low oestradiol**. [Endocrine Society FHA 2017]",
+          "**Relative Energy Deficiency in Sport (RED-S)**, which replaced the female athlete triad, links **low energy availability, menstrual dysfunction and low bone mineral density** with wider effects on health and performance. [IOC REDs 2023]",
+          "**Anorexia nervosa** (BMI under 17.5, fear of weight gain, distorted body image) causes amenorrhoea, bradycardia, hypotension, lanugo and osteoporosis - a psychiatric and medical emergency when severe. [Kaplan and Sadock 12e]",
+          "**Weight loss of 10-15 per cent** of body weight, or **BMI under 18.5**, is often enough to stop menstruation; **obesity** causes anovulation through insulin resistance and hyperandrogenism. [Speroff 9e]",
+          "FHA management: **restore energy balance** (increase intake, reduce training), **CBT for stress**, and treat the eating disorder; menses return in most once weight and energy recover. [Endocrine Society FHA 2017]",
+          "If FHA lasts **over 6 months** with low bone density, give **transdermal oestradiol 100 microgram/day with cyclic oral progestogen**, not COC, which does not protect bone as well. [Endocrine Society FHA 2017]",
+          "**Night-shift and rotating-shift work** disturbs circadian rhythm and is linked to irregular cycles, dysmenorrhoea and subfertility. [Park 28e]",
+          "**Occupational exposures** - organic solvents, pesticides, **lead and other heavy metals**, and endocrine disruptors such as **bisphenol A and phthalates** in plastics and factory work - are associated with menstrual irregularity. [Park 28e]",
+          "Heavy manual labour, long working hours, **lack of toilets and menstrual hygiene facilities at work**, and reduced fluid intake to avoid using them affect menstrual health of Indian women workers. [Park 28e]",
+          "The **Occupational Safety, Health and Working Conditions Code 2020** permits women's night work only with consent and safety provisions, and the family physician can advise on shift adjustment. [OSH Code 2020]",
+          "Other lifestyle factors: **sleep deprivation, smoking, high caffeine, sedentary life and psychological stress** (examinations, bereavement, migration). [Berek and Novak 16e]",
+        ],
+      },
+      {
+        heading: "History and examination",
+        points: [
+          "**History**: age at **thelarche and menarche**, cycle pattern, last menstrual period, **sexual activity and contraception**, pregnancy, breastfeeding. [Berek and Novak 16e]",
+          "Ask about **weight change, diet, exercise, stress, eating disorder symptoms**, shift work and occupational exposures. [Endocrine Society FHA 2017]",
+          "Ask about **galactorrhoea, headache and visual disturbance** (pituitary), **hot flushes and vaginal dryness** (oestrogen deficiency), **hirsutism, acne and hair loss** (hyperandrogenism). [Berek and Novak 16e]",
+          "Ask about **cyclical pelvic pain** (outflow obstruction), **previous D&C, postpartum or post-abortal infection, and tuberculosis** (Asherman), **PPH with failure of lactation** (Sheehan), chemotherapy or radiotherapy. [Berek and Novak 16e]",
+          "Ask about **drugs** - antipsychotics, antiemetics, opioids, DMPA - and chronic illness, and a **family history** of delayed puberty, early menopause or infertility. [Berek and Novak 16e]",
+          "**Examination**: height, weight, **BMI, waist**, BP, **Tanner staging** of breast and pubic hair, **Turner stigmata**, thyroid, **acanthosis nigricans** and signs of Cushing syndrome. [Berek and Novak 16e]",
+          "Score **hirsutism by the modified Ferriman-Gallwey score** (4-6 or more is abnormal, lower cut-offs in some ethnic groups), and look for **virilisation - clitoromegaly, deep voice, male-pattern baldness** - which suggests a tumour. [PCOS Guideline 2023]",
+          "Check **visual fields** (bitemporal hemianopia), **sense of smell** (Kallmann) and **expressible galactorrhoea**. [Harrison 22e]",
+          "Inspect the **external genitalia and hymen**, and assess **vaginal length** gently; a speculum or bimanual examination is done only if the woman is sexually active and consents. [Berek and Novak 16e]",
+          "Look for **inguinal or labial masses** (testes in AIS) and signs of chronic illness or eating disorder (lanugo, bradycardia, parotid enlargement). [Berek and Novak 16e]",
+        ],
+      },
+      {
+        heading: "Investigations",
+        points: [
+          "**Step 1**: **urine or serum hCG** in every case, then **TSH, prolactin, FSH, LH and oestradiol**. [Berek and Novak 16e]",
+          "**Prolactin above 25 ng/mL** should be repeated fasting and unstressed; exclude **macroprolactin**, hypothyroidism and drugs; **MRI pituitary** if persistently raised without an obvious cause. [Harrison 22e]",
+          "**High FSH (above 25 IU/L)** with low oestradiol indicates **ovarian failure** - order a **karyotype** in all women with POI or primary amenorrhoea with raised FSH, and **FMR1 premutation testing**. [ESHRE POI 2024]",
+          "**Low or normal FSH/LH with low oestradiol** indicates a **hypothalamic or pituitary cause** - MRI brain if there is no clear functional explanation, headache or visual symptoms. [Speroff 9e]",
+          "**Pelvic ultrasound (transabdominal in virgins)** shows presence of the uterus, endometrial thickness, haematocolpos, ovarian morphology and adnexal masses. [Berek and Novak 16e]",
+          "**Progestogen challenge test**: **medroxyprogesterone acetate 10 mg daily for 7-10 days**; a withdrawal bleed within 2-7 days of stopping means **adequate oestrogen (oestradiol above about 40 pg/mL) and a patent outflow tract**. [Speroff 9e]",
+          "No withdrawal bleed - give **oestrogen plus progestogen** (oestradiol valerate 2 mg or conjugated oestrogen 1.25 mg daily for 21 days with MPA 10 mg for the last 5-10 days); no bleed now means an **outflow or endometrial defect**. [Speroff 9e]",
+          "The challenge test correlates imperfectly with oestrogen status, so many clinicians rely on **oestradiol and endometrial thickness** instead. [Berek and Novak 16e]",
+          "**Hyperandrogenism**: **total testosterone** (above about 150 ng/dL or twice the upper limit suggests an ovarian or adrenal tumour), DHEAS, **17-OH progesterone**; **75 g OGTT and lipids** in PCOS. [PCOS Guideline 2023]",
+          "**Asherman or genital TB**: **hysteroscopy or HSG**, and **premenstrual endometrial biopsy for CBNAAT, TB culture and histology**. [NTEP 2022]",
+          "**DXA bone density** after **6 months or more of hypo-oestrogenic amenorrhoea**; karyotype for DSD; renal ultrasound in MRKH. [ESHRE POI 2024]",
+        ],
+      },
+      {
+        heading: "Management and referral",
+        points: [
+          "**Treat the cause** - levothyroxine for hypothyroidism, stop or change the offending drug, weight restoration in FHA, hymenotomy for imperforate hymen. [Berek and Novak 16e]",
+          "**Hyperprolactinaemia / prolactinoma**: **cabergoline 0.25-0.5 mg twice weekly** (first choice), or **bromocriptine 1.25 mg at night increased to 2.5 mg two to three times daily**, preferred when pregnancy is planned. [Harrison 22e]",
+          "**PCOS - lifestyle first**: **5-10 per cent weight loss** restores ovulation in many; diet and at least **150 minutes of moderate exercise a week**. [PCOS Guideline 2023]",
+          "**PCOS - cycle control and hirsutism**: **combined oral contraceptive** (ethinylestradiol 20-30 microgram with levonorgestrel or desogestrel) is first-line; add **metformin 500 mg increasing to 1500-2000 mg/day** for metabolic features or BMI 25 or more. [PCOS Guideline 2023]",
+          "**Endometrial protection** in chronic anovulation: at least **one withdrawal bleed every 3 months** with **MPA 10 mg daily for 12-14 days**, or an LNG-IUS, to prevent hyperplasia. [PCOS Guideline 2023]",
+          "**PCOS infertility**: **letrozole 2.5-7.5 mg daily on days 3-7** is first-line for ovulation induction, ahead of clomiphene. [PCOS Guideline 2023]",
+          "**POI and Turner**: **hormone replacement** (oestradiol 1-2 mg oral or 50-100 microgram transdermal daily with cyclic progestogen) **until the natural age of menopause (about 51 years)** for bone, heart and brain; fertility is by **donor oocyte IVF**. [ESHRE POI 2024]",
+          "**Asherman**: **hysteroscopic adhesiolysis** followed by oestrogen and early second-look hysteroscopy; **genital TB**: six-month **anti-TB treatment (2HRZE/4HRE)** under NTEP. [NTEP 2022]",
+          "**Adolescents**: irregular cycles in the first 2 years are usually anovulatory and need reassurance, a menstrual calendar, iron-folic acid and follow-up; **heavy bleeding at menarche** needs Hb and a screen for **von Willebrand disease** (present in up to 1 in 5 such girls). [Berek and Novak 16e]",
+          "**Primary dysmenorrhoea** in adolescents: **mefenamic acid 500 mg three times daily** or ibuprofen 400 mg three times daily from the day before or first day of menses for 2-3 days; COC if needed. [Berek and Novak 16e]",
+          "Use **RKSK adolescent friendly health clinics** and the **Menstrual Hygiene Scheme** for counselling, sanitary pads, IFA (weekly WIFS) and screening. [MoHFW RKSK 2024]",
+          "**Refer** all **primary amenorrhoea** after initial work-up, and **suspected pituitary tumour (visual loss, headache), POI, virilisation, DSD, Asherman or genital TB, and severe eating disorders** (BMI under 15, bradycardia under 40, electrolyte disturbance). [Berek and Novak 16e]",
+          "Give **psychological support and careful disclosure** in MRKH, Turner and AIS - the diagnosis affects identity, sexuality and fertility. [Berek and Novak 16e]",
+        ],
+      },
+    ],
+    tables: [
+      {
+        heading: "Compartment classification of amenorrhoea",
+        columns: ["Compartment", "Examples", "Key finding"],
+        rows: [
+          ["I - Outflow tract and uterus", "Imperforate hymen, transverse septum, MRKH, AIS, Asherman, genital TB", "Normal FSH and E2; no bleed after oestrogen-progestogen"],
+          ["II - Ovary", "Turner, Swyer, POI, chemotherapy or radiotherapy", "High FSH (above 25 IU/L), low E2"],
+          ["III - Anterior pituitary", "Prolactinoma, Sheehan, pituitary tumour, empty sella", "High prolactin or low FSH/LH; abnormal MRI"],
+          ["IV - Hypothalamus/CNS", "Stress, weight loss, exercise, anorexia, Kallmann, craniopharyngioma", "Low or normal FSH/LH, low E2"],
+          ["Other endocrine", "PCOS, thyroid disease, CAH, Cushing", "High LH:FSH, androgens, TSH or 17-OHP abnormal"],
+        ],
+      },
+      {
+        heading: "Primary amenorrhoea - differentiating common causes",
+        columns: ["Condition", "Karyotype", "Breasts", "Uterus", "Pubic hair", "FSH"],
+        rows: [
+          ["Turner syndrome", "45,X or mosaic", "Absent", "Present (small)", "Sparse", "High"],
+          ["MRKH", "46,XX", "Normal", "Absent", "Normal", "Normal"],
+          ["Complete AIS", "46,XY", "Normal", "Absent", "Absent or scanty", "Normal or high"],
+          ["Swyer syndrome", "46,XY", "Absent", "Present", "Sparse", "High"],
+          ["Imperforate hymen", "46,XX", "Normal", "Present, haematometra", "Normal", "Normal"],
+          ["Constitutional delay / Kallmann", "46,XX", "Absent or early", "Present", "Sparse", "Low"],
+        ],
+      },
+      {
+        heading: "Drug doses in amenorrhoea and oligomenorrhoea",
+        columns: ["Indication", "Drug and dose", "Duration"],
+        rows: [
+          ["Progestogen challenge", "Medroxyprogesterone acetate 10 mg PO daily", "7-10 days"],
+          ["Endometrial protection", "MPA 10 mg PO daily", "12-14 days every 1-3 months"],
+          ["PCOS cycle control", "COC (EE 20-30 microgram + LNG or desogestrel)", "21/7 or 24/4, long-term"],
+          ["PCOS metabolic", "Metformin 500 mg, up to 1500-2000 mg/day with meals", "Long-term"],
+          ["Prolactinoma", "Cabergoline 0.25-0.5 mg PO twice weekly", "At least 2 years, then review"],
+          ["POI / Turner HRT", "Oestradiol 2 mg PO or 100 microgram patch + cyclic progestogen", "Until about 51 years"],
+          ["Ovulation induction (PCOS)", "Letrozole 2.5-7.5 mg PO daily, days 3-7", "Up to 6 cycles"],
+        ],
+      },
+    ],
+    redFlags: [
+      "Headache, visual field loss or galactorrhoea - pituitary tumour",
+      "Rapidly progressive hirsutism, clitoromegaly or deepening voice - androgen-secreting tumour",
+      "Cyclical pelvic pain with urinary retention in a girl with no periods - haematocolpos",
+      "BMI under 15, bradycardia or syncope in amenorrhoea - severe anorexia nervosa",
+      "Hot flushes and amenorrhoea before 40 years - premature ovarian insufficiency",
+      "Failure of lactation and amenorrhoea after PPH - Sheehan syndrome with adrenal risk",
+      "Amenorrhoea with fever, weight loss or past TB - genital tuberculosis",
+      "Ambiguous genitalia or an inguinal gonad in a girl - disorder of sex development",
+    ],
+    pearls: [
+      "Every amenorrhoea is pregnancy until proven otherwise - do the UPT first.",
+      "First-line tests after hCG: TSH, prolactin, FSH/LH, oestradiol and pelvic ultrasound.",
+      "Turner syndrome is the commonest cause of primary amenorrhoea; MRKH is the commonest cause with normal breasts and absent uterus.",
+      "Normal breasts with absent pubic hair and a blind vagina means androgen insensitivity - check the karyotype.",
+      "In India, think of genital TB and curettage when amenorrhoea follows a normal menstrual history.",
+      "Adolescent PCOS needs both anovulation and hyperandrogenism; do not use ultrasound within 8 years of menarche.",
+      "Chronic anovulation needs a withdrawal bleed at least every 3 months to protect the endometrium.",
+      "POI needs HRT until the natural age of menopause - it is replacement, not treatment of menopause.",
+      "In FHA, fix energy balance first and use transdermal oestradiol rather than the pill for bone.",
+    ],
+    theory: [
+      {
+        id: "gynaecology-amenorrhoea-menstrual-irregularity-t1",
+        paper: "IV",
+        kind: "long",
+        marks: 10,
+        minutes: 18,
+        frequency: "common",
+        question:
+          "A 17-year-old girl has not attained menarche. Classify the causes of primary amenorrhoea. Outline the evaluation and management of MRKH syndrome. [4+3+3]",
+        openingLines: [
+          "Primary amenorrhoea is absence of menarche by 15 years with normal secondary sexual characters, or by 13 years without them.",
+          "Causes are classified by compartment - outflow tract and uterus, ovary, pituitary and hypothalamus - with gonadal dysgenesis and Mullerian agenesis the commonest.",
+        ],
+        answer: [
+          {
+            heading: "Classification",
+            points: [
+              "Outflow/uterus: imperforate hymen, transverse septum, MRKH, AIS.",
+              "Ovary: Turner, Swyer, POI.",
+              "Pituitary: prolactinoma, tumours; hypothalamus: constitutional delay, Kallmann, weight loss, stress.",
+              "Endocrine: CAH, thyroid, PCOS.",
+            ],
+          },
+          {
+            heading: "Evaluation",
+            points: [
+              "History and Tanner staging, height, Turner stigmata, anosmia, genitalia.",
+              "UPT, TSH, prolactin, FSH/LH, E2; pelvic ultrasound; karyotype if high FSH or absent uterus.",
+            ],
+          },
+          {
+            heading: "MRKH - diagnosis",
+            points: [
+              "46,XX, normal breasts and hair, absent uterus and upper vagina, normal ovaries.",
+              "Renal ultrasound (anomalies in 30-40 per cent); spine X-ray.",
+            ],
+          },
+          {
+            heading: "MRKH - management",
+            points: [
+              "Counselling and psychological support; vaginal dilators first line; vaginoplasty if needed.",
+              "Fertility by gestational surrogacy under Surrogacy (Regulation) Act 2021; uterine transplant experimental.",
+            ],
+          },
+        ],
+        mustDraw: ["Compartment flow chart for amenorrhoea", "Algorithm for primary amenorrhoea by breast development and uterus"],
+        markSplit: [
+          { part: "Classification", marks: 4 },
+          { part: "Evaluation", marks: 3 },
+          { part: "MRKH management", marks: 3 },
+        ],
+        keywords: ["primary amenorrhoea", "MRKH", "Turner", "compartment approach", "karyotype"],
+      },
+      {
+        id: "gynaecology-amenorrhoea-menstrual-irregularity-t2",
+        paper: "IV",
+        kind: "short-note",
+        marks: 10,
+        minutes: 18,
+        frequency: "common",
+        question:
+          "A 22-year-old obese factory worker presents with irregular periods and excess facial hair. Discuss the differential diagnosis, investigations and management. [3+3+4]",
+        openingLines: [
+          "Oligomenorrhoea with hirsutism in an obese young woman is most often polycystic ovary syndrome, diagnosed by Rotterdam criteria after excluding thyroid disease, hyperprolactinaemia, CAH and androgen-secreting tumours.",
+          "Night shifts, stress and occupational exposures can add to menstrual irregularity and should be addressed.",
+        ],
+        answer: [
+          {
+            heading: "Differential diagnosis",
+            points: [
+              "PCOS; non-classic CAH; hypothyroidism; hyperprolactinaemia; Cushing syndrome; androgen-secreting tumour; drugs.",
+              "Lifestyle and occupational: shift work, stress, solvent or lead exposure.",
+            ],
+          },
+          {
+            heading: "Investigations",
+            points: [
+              "UPT, TSH, prolactin, FSH/LH, total testosterone, 17-OHP, DHEAS if virilised.",
+              "Pelvic ultrasound (follicle count, volume); 75 g OGTT, lipids.",
+            ],
+          },
+          {
+            heading: "Management",
+            points: [
+              "Lifestyle: 5-10 per cent weight loss, diet, 150 minutes exercise weekly.",
+              "COC for cycle control and hirsutism; metformin for metabolic risk; cosmetic measures.",
+              "MPA 10 mg for 12-14 days every 1-3 months if COC not used; letrozole for fertility.",
+            ],
+          },
+          {
+            heading: "Work and follow-up",
+            points: [
+              "Advise on shift pattern, sanitation, avoiding toxic exposures; screen for diabetes and depression; long-term follow-up.",
+            ],
+          },
+        ],
+        mustDraw: ["Rotterdam criteria diagram (2 of 3)"],
+        markSplit: [
+          { part: "Differential diagnosis", marks: 3 },
+          { part: "Investigations", marks: 3 },
+          { part: "Management", marks: 4 },
+        ],
+        keywords: ["PCOS", "hirsutism", "oligomenorrhoea", "Rotterdam", "occupational"],
+      },
+    ],
+    mcqs: [
+      {
+        id: "gynaecology-amenorrhoea-menstrual-irregularity-q1",
+        stem: "A 16-year-old has well-developed breasts, absent pubic and axillary hair, a short blind vagina and no uterus on ultrasound. What is the most likely diagnosis?",
+        options: [
+          "Complete androgen insensitivity syndrome",
+          "MRKH syndrome",
+          "Turner syndrome",
+          "Imperforate hymen",
+        ],
+        answer: 0,
+        explanation:
+          "Normal breasts from aromatised testosterone, absent sexual hair from androgen resistance and absent uterus from AMH action point to complete AIS with a 46,XY karyotype. MRKH has normal pubic hair, Turner has absent breast development, and imperforate hymen has a normal uterus with haematometra.",
+        difficulty: "moderate",
+      },
+      {
+        id: "gynaecology-amenorrhoea-menstrual-irregularity-q2",
+        stem: "A 34-year-old has amenorrhoea for 6 months with hot flushes. FSH is 68 IU/L on two occasions and oestradiol is low. Which is the most appropriate long-term management?",
+        options: [
+          "Cyclical progestogen alone every 3 months",
+          "Clomiphene citrate to induce ovulation",
+          "Hormone replacement until about 51 years",
+          "Reassurance, as menses will return spontaneously",
+        ],
+        answer: 2,
+        explanation:
+          "This is premature ovarian insufficiency, and HRT until the average age of menopause protects bone, cardiovascular and cognitive health. Progestogen alone gives no oestrogen, clomiphene does not work in a failed ovary, and although intermittent ovarian activity occurs, reassurance alone leaves her hypo-oestrogenic.",
+        difficulty: "moderate",
+      },
+      {
+        id: "gynaecology-amenorrhoea-menstrual-irregularity-q3",
+        stem: "In a woman with secondary amenorrhoea, a normal TSH and prolactin, and no bleed after medroxyprogesterone, which result of the oestrogen-progestogen test points to an endometrial cause?",
+        options: [
+          "Withdrawal bleed after oestrogen-progestogen",
+          "No withdrawal bleed after oestrogen-progestogen",
+          "High FSH with bleed after oestrogen-progestogen",
+          "Low FSH with bleed after oestrogen-progestogen",
+        ],
+        answer: 1,
+        explanation:
+          "If the endometrium fails to bleed even after oestrogen priming plus progestogen, the defect lies in the outflow tract or endometrium, for example Asherman syndrome or genital TB. A bleed after oestrogen-progestogen means the uterus is normal and the problem is inadequate oestrogen, with FSH then separating ovarian (high) from central (low) causes.",
+        difficulty: "hard",
+      },
+      {
+        id: "gynaecology-amenorrhoea-menstrual-irregularity-q4",
+        stem: "Per the International PCOS Guideline 2023, which statement about diagnosing PCOS in a 15-year-old is correct?",
+        options: [
+          "Polycystic ovarian morphology on ultrasound alone is sufficient",
+          "Raised AMH can replace ultrasound in adolescents",
+          "Irregular cycles in the first year after menarche meet the criterion",
+          "Both ovulatory dysfunction and hyperandrogenism are required",
+        ],
+        answer: 3,
+        explanation:
+          "In adolescents both irregular cycles (defined for years after menarche) and hyperandrogenism are needed because multifollicular ovaries are normal at this age. Ultrasound and AMH are not recommended within 8 years of menarche, and cycle irregularity in the first post-menarchal year is a normal transition.",
+        difficulty: "moderate",
+      },
+      {
+        id: "gynaecology-amenorrhoea-menstrual-irregularity-q5",
+        stem: "A 26-year-old on risperidone has amenorrhoea and galactorrhoea. Prolactin is 62 ng/mL and TSH is normal. What is the best initial step?",
+        options: [
+          "Start cabergoline immediately",
+          "MRI of the pituitary before anything else",
+          "Discuss switching to a prolactin-sparing antipsychotic with her psychiatrist",
+          "Start the combined oral contraceptive",
+        ],
+        answer: 2,
+        explanation:
+          "Risperidone commonly causes hyperprolactinaemia; the first step is to consider switching to a prolactin-sparing drug such as aripiprazole with the psychiatrist, and to image only if prolactin stays high. Cabergoline may worsen psychosis, MRI first is premature with an obvious drug cause, and a COC does not address the cause.",
+        difficulty: "moderate",
+      },
+    ],
+    references: [
+      "Berek and Novak's Gynecology, 16th edition (2019)",
+      "Speroff's Clinical Gynecologic Endocrinology and Infertility, 9th edition (2019)",
+      "Teede HJ et al. International Evidence-based Guideline for the Assessment and Management of Polycystic Ovary Syndrome, 2023",
+      "ESHRE Guideline: Management of women with premature ovarian insufficiency, 2024",
+      "Gordon CM et al. Functional Hypothalamic Amenorrhea: An Endocrine Society Clinical Practice Guideline, 2017",
+      "Gravholt CH et al. Clinical practice guidelines for the care of girls and women with Turner syndrome, 2024",
+      "Munro MG et al. FIGO classification systems (PALM-COEIN) and terminology for AUB, revised 2018",
+      "IOC consensus statement on Relative Energy Deficiency in Sport (REDs), 2023",
+    ],
+  },
+];
 
 export default topics;

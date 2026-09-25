@@ -1,5 +1,386 @@
 import type { Topic } from "../../lib/types";
 
-const topics: Topic[] = [];
+const topics: Topic[] = [
+  {
+    id: "symptom-approach-anaemia-adult",
+    title: "Anaemia in adults: classification, iron deficiency and B12 deficiency",
+    oneLiner:
+      "Anaemia is **a haemoglobin concentration below the WHO cut-off - under 13 g/dL in men and under 12 g/dL in non-pregnant women** - and is classified by red-cell size (microcytic, normocytic, macrocytic) and mechanism (reduced production, blood loss, haemolysis); in Indian adults iron deficiency dominates, with B12 deficiency common in vegetarians and metformin users, and the work-up starts with a CBC, smear, reticulocyte count and ferritin.",
+    frequency: "core",
+    keywords: [
+      "anaemia",
+      "anemia",
+      "iron deficiency anaemia",
+      "IDA",
+      "ferritin",
+      "transferrin saturation",
+      "vitamin B12 deficiency",
+      "megaloblastic anaemia",
+      "folate",
+      "pernicious anaemia",
+      "subacute combined degeneration",
+      "ferric carboxymaltose",
+      "iron sucrose",
+      "Mentzer index",
+      "thalassaemia trait",
+      "anaemia of chronic disease",
+      "haemolytic anaemia",
+      "reticulocyte count",
+      "Anemia Mukt Bharat",
+      "blood transfusion threshold",
+    ],
+    sections: [
+      {
+        heading: "Definition, grading and Indian burden",
+        points: [
+          "WHO cut-offs: **men under 13 g/dL, non-pregnant women under 12 g/dL**, pregnant women under 11 g/dL in the first and third trimesters. [WHO Hb guideline 2024]",
+          "Severity in non-pregnant adults: **mild 11.0-11.9 (women) or 11.0-12.9 (men), moderate 8.0-10.9 and severe under 8.0 g/dL**. [WHO Hb guideline 2024]",
+          "In pregnancy, severe anaemia is **under 7 g/dL** and moderate 7.0-9.9 g/dL. [WHO Hb guideline 2024]",
+          "NFHS-5: **57 per cent of women aged 15-49 and 25 per cent of men** are anaemic - women's anaemia rose from 53 per cent in NFHS-4. [NFHS-5 2019-21]",
+          "NFHS-5: **52 per cent of pregnant women** and 59 per cent of adolescent girls are anaemic. [NFHS-5 2019-21]",
+          "About half of Indian anaemia is due to **iron deficiency**; the rest comes from B12 and folate deficiency, infection, haemoglobinopathies and inflammation. [ICMR-NIN 2023]",
+          "**Anemia Mukt Bharat (2018)** uses a 6x6x6 strategy - six target groups, six interventions and six institutional mechanisms - with Test, Treat and Talk (T4) camps. [AMB 2018]",
+          "For women of reproductive age, AMB gives **one IFA tablet (60 mg iron, 500 microgram folic acid) weekly** as prophylaxis. [AMB 2018]",
+          "Anaemia is a **sign, not a diagnosis** - every anaemic adult needs a cause, especially men and postmenopausal women. [BSG 2021]",
+        ],
+      },
+      {
+        heading: "Classification",
+        points: [
+          "**Microcytic (MCV under 80 fL):** iron deficiency, thalassaemia trait, anaemia of chronic disease (late), sideroblastic anaemia, lead poisoning. [Harrison 22e]",
+          "**Normocytic (80-100 fL):** acute blood loss, anaemia of chronic disease, CKD, haemolysis, marrow infiltration, aplastic anaemia, mixed deficiency. [Harrison 22e]",
+          "**Macrocytic (over 100 fL):** megaloblastic (B12, folate, drugs such as methotrexate) or non-megaloblastic (alcohol, liver disease, hypothyroidism, MDS, reticulocytosis). [Harrison 22e]",
+          "**Kinetic classification** uses the reticulocyte production index - **under 2 means hypoproliferative** (deficiency, marrow failure), **over 2 means blood loss or haemolysis**. [Harrison 22e]",
+          "Corrected reticulocyte count = reticulocyte per cent x (patient haematocrit / 45); RPI further divides by a maturation factor. [Harrison 22e]",
+          "**Mixed iron and B12 deficiency** is common in India and can give a normal MCV with a **high RDW** and a dimorphic smear. [Harrison 22e]",
+          "Aetiological groups: **decreased production, increased destruction and blood loss** - write this triad in every answer. [OHCM 11e]",
+          "**Pancytopenia** with macrocytosis suggests B12 deficiency, but also consider aplastic anaemia, leukaemia and hypersplenism. [Harrison 22e]",
+        ],
+      },
+      {
+        heading: "History, examination and laboratory reading",
+        points: [
+          "Ask about **fatigue, breathlessness, palpitations, pica (ice or mud), restless legs, angina and heart failure** in the elderly. [OHCM 11e]",
+          "Ask **diet** (strict vegetarian, tea with meals), **menstrual loss**, melaena, haemorrhoids, dyspepsia, weight loss and change in bowel habit. [BSG 2021]",
+          "Ask **drugs** (NSAIDs, aspirin, anticoagulants, metformin, PPIs, antiepileptics), alcohol, barefoot walking (hookworm) and family history of thalassaemia or sickle cell. [OHCM 11e]",
+          "Examine for **pallor, koilonychia, angular cheilitis, glossitis, jaundice, knuckle pigmentation, splenomegaly, lymph nodes** and do a per-rectal examination. [OHCM 11e]",
+          "Neurology - **vibration and joint position sense, Romberg, ankle jerks and plantars** - screens for B12-related cord damage. [Harrison 22e]",
+          "CBC: haemoglobin, **MCV, MCH, RDW**, RBC count, WBC and platelets - reactive thrombocytosis suggests iron deficiency or bleeding. [Harrison 22e]",
+          "Smear: **pencil cells** (iron deficiency), **target cells and basophilic stippling** (thalassaemia), **macro-ovalocytes and hypersegmented neutrophils** (megaloblastic), spherocytes and schistocytes (haemolysis). [Harrison 22e]",
+          "**Serum ferritin under 15 microgram/L** is diagnostic of iron deficiency, and under 30 microgram/L is used in primary care. [BSG 2021]",
+          "Ferritin is an acute-phase reactant - with inflammation, **ferritin under 100 microgram/L plus TSAT under 20 per cent** still suggests iron deficiency. [BSG 2021]",
+          "Iron deficiency: **low serum iron, high TIBC, TSAT under 16 per cent**; anaemia of chronic disease: low iron, **low or normal TIBC**, normal or high ferritin. [Harrison 22e]",
+          "**Mentzer index (MCV/RBC count) under 13** favours thalassaemia trait, over 13 favours iron deficiency; confirm with HPLC (HbA2 over 3.5 per cent). [Harrison 22e]",
+          "Haemolysis screen: **reticulocytosis, raised indirect bilirubin and LDH, low haptoglobin**, then direct antiglobulin test and G6PD assay. [Harrison 22e]",
+        ],
+      },
+      {
+        heading: "Iron deficiency: causes and investigation",
+        points: [
+          "Causes: **inadequate intake** (vegetarian diet high in phytates and tea), **increased demand** (pregnancy, adolescence) and **blood loss**. [Harrison 22e]",
+          "**Menstrual loss** is the commonest cause in premenopausal women - ask about clots, flooding and pad counts. [NICE CKS 2024]",
+          "**Hookworm** (Ancylostoma, Necator) causes chronic GI loss in rural India - treat with **albendazole 400 mg single dose**. [Park 28e]",
+          "Malabsorption: **coeliac disease**, H. pylori gastritis, atrophic gastritis, bariatric surgery and chronic PPI use. [BSG 2021]",
+          "**Occult GI blood loss** is the main concern in men and postmenopausal women - colorectal and gastric cancer, NSAID ulcers, angiodysplasia. [BSG 2021]",
+          "In every man and postmenopausal woman with confirmed iron deficiency, do **bidirectional endoscopy (OGD plus colonoscopy)** and coeliac serology (tTG-IgA). [BSG 2021]",
+          "Also test **urine for blood** - renal cell carcinoma and urothelial cancer can present with iron deficiency. [BSG 2021]",
+          "A **faecal immunochemical test (FIT)** helps prioritise colonoscopy when access is limited, but a negative FIT does not exclude upper GI disease. [BSG 2021]",
+          "In premenopausal women without GI symptoms, endoscopy is needed only if **age over 50, GI symptoms, family history of colorectal cancer or failure to respond**. [BSG 2021]",
+        ],
+      },
+      {
+        heading: "Iron therapy: oral and intravenous",
+        points: [
+          "**Oral iron: one tablet daily or on alternate days** - e.g. ferrous sulphate 200 mg (65 mg elemental iron), ferrous fumarate or the IFA tablet. [BSG 2021]",
+          "**Alternate-day dosing** improves fractional absorption because each dose raises hepcidin for about 24 hours, and causes fewer GI side effects. [BSG 2021]",
+          "Take on an empty stomach or with **vitamin C or orange juice**; avoid tea, coffee, milk, calcium and antacids within 1-2 hours. [BSG 2021]",
+          "Expect a **haemoglobin rise of about 2 g/dL in 3-4 weeks**; reticulocytes rise by day 7-10. [BSG 2021]",
+          "Continue iron for **3 months after haemoglobin normalises** to replenish stores, then recheck ferritin. [BSG 2021]",
+          "Oral failure: consider **non-adherence, ongoing bleeding, malabsorption (coeliac, H. pylori), wrong diagnosis (thalassaemia trait) or concurrent inflammation**. [BSG 2021]",
+          "IV iron indications: **intolerance or failure of oral iron, malabsorption, ongoing losses, CKD, IBD, severe anaemia in late pregnancy or before surgery**. [BSG 2021]",
+          "**Ferric carboxymaltose** 20 mg/kg up to **1000 mg per dose IV over 15 minutes**, repeated after a week if needed. [AMB 2018]",
+          "**Iron sucrose 200 mg IV** in 100 mL saline over 20-30 minutes, up to 3 times a week, until the calculated deficit is met. [AMB 2018]",
+          "Ganzoni deficit (mg) = **body weight (kg) x (target Hb - actual Hb in g/dL) x 2.4 + 500** mg for stores. [Harrison 22e]",
+          "Observe for **30 minutes** after IV iron for hypersensitivity; ferric carboxymaltose can cause **hypophosphataemia**. [BSG 2021]",
+        ],
+      },
+      {
+        heading: "B12 and folate deficiency",
+        points: [
+          "B12 comes only from **animal foods**, so lacto-vegetarians in India have a high prevalence of low B12. [Harrison 22e]",
+          "Other causes: **pernicious anaemia** (anti-intrinsic factor antibodies), gastrectomy, ileal resection or Crohn disease, fish tapeworm and **long-term metformin or PPIs**. [Harrison 22e]",
+          "**Metformin** users should have **periodic B12 measurement**, especially with neuropathy. [ADA 2026]",
+          "Features: glossitis, **knuckle hyperpigmentation**, mild jaundice (ineffective erythropoiesis), and neuropathy that can occur **without anaemia**. [Harrison 22e]",
+          "**Subacute combined degeneration** affects dorsal columns and corticospinal tracts - lost vibration and position sense, positive Romberg, **absent ankle jerks with extensor plantars**. [Harrison 22e]",
+          "Diagnosis: MCV over 100, hypersegmented neutrophils, **serum B12 under 200 pg/mL**; raised **methylmalonic acid** is specific for B12 and raised homocysteine occurs in both. [NICE NG239 2024]",
+          "**Cyanocobalamin 1000 microgram IM daily for 1 week, weekly for 4 weeks, then monthly** (lifelong in pernicious anaemia). [Harrison 22e]",
+          "With neurology, give **hydroxocobalamin 1 mg IM on alternate days until no further improvement**, then every 2 months. [NICE NG239 2024]",
+          "**Oral B12 1000-2000 microgram daily** is effective for dietary deficiency and maintenance even in pernicious anaemia. [Harrison 22e]",
+          "**Folic acid 5 mg PO daily for 4 months** treats folate deficiency - **never give folate alone before B12** in combined deficiency, as neurology can worsen. [NICE NG239 2024]",
+          "Watch for **hypokalaemia** in the first 48 hours of treating severe megaloblastic anaemia; reticulocytes peak at day 5-7. [Harrison 22e]",
+        ],
+      },
+      {
+        heading: "Haemolysis, thalassaemia trait, chronic disease and CKD",
+        points: [
+          "**Thalassaemia trait** gives microcytosis with near-normal haemoglobin, **RBC count over 5 million/microL**, normal RDW and normal ferritin - repeated iron is wrong. [Harrison 22e]",
+          "India has a **beta-thalassaemia carrier rate of about 3-4 per cent**, much higher in Sindhi, Punjabi, Gujarati and Bengali communities - offer partner screening. [ICMR 2023]",
+          "**Sickle cell disease** is concentrated in tribal belts of central and western India; the **National Sickle Cell Anaemia Elimination Mission (2023)** aims to eliminate it by 2047. [MoHFW 2023]",
+          "**G6PD deficiency** causes episodic haemolysis after primaquine, dapsone, nitrofurantoin or fava beans - check G6PD before primaquine radical cure. [NCVBDC 2023]",
+          "**Autoimmune haemolysis** gives spherocytes and a positive DAT - consider SLE, lymphoma and drugs. [Harrison 22e]",
+          "**Anaemia of chronic disease** results from IL-6-driven **hepcidin** excess trapping iron in macrophages - seen in TB, RA, malignancy and chronic infection. [Harrison 22e]",
+          "**CKD anaemia** is due to erythropoietin deficiency; replete iron to **ferritin over 100 microgram/L and TSAT over 20 per cent** before ESA. [Harrison 22e]",
+          "ESA target haemoglobin is **10-11.5 g/dL** - exceeding 13 g/dL raises stroke and thrombosis. [Harrison 22e]",
+          "Hypothyroidism, liver disease and alcohol cause **mild macrocytosis** without megaloblasts. [OHCM 11e]",
+        ],
+      },
+      {
+        heading: "Transfusion and referral",
+        points: [
+          "Use a **restrictive threshold: transfuse at Hb under 7 g/dL** in stable adults, and under 8 g/dL with cardiovascular disease or before orthopaedic or cardiac surgery. [AABB 2023]",
+          "Chronic anaemia is well compensated - **do not transfuse iron-deficient patients who are haemodynamically stable**; give iron instead. [AABB 2023]",
+          "Give **one unit at a time** and reassess - one unit of packed cells raises Hb by about 1 g/dL. [AABB 2023]",
+          "In severe anaemia with heart failure, transfuse **packed cells slowly with IV furosemide** to avoid circulatory overload. [Harrison 22e]",
+          "Take samples for **B12, folate, ferritin and haemoglobin electrophoresis before transfusion** - transfused cells mask the diagnosis. [OHCM 11e]",
+          "**Urgent referral:** pancytopenia, blasts on smear, Hb under 7 g/dL with symptoms, haemolysis, or B12 deficiency with neurological signs. [NICE CKS 2024]",
+          "**Suspected cancer pathway:** iron-deficiency anaemia in men and postmenopausal women for endoscopy within 2 weeks. [NICE NG12 2023]",
+          "Refer when there is **no response to oral iron in 4 weeks** despite adherence, or when myeloma is suspected (high ESR, rouleaux, bone pain). [BSG 2021]",
+          "The family physician tracks **Hb and ferritin at 4 weeks and 3 months**, treats the family for worms and counsels on diet and tea timing. [AMB 2018]",
+        ],
+      },
+    ],
+    tables: [
+      {
+        heading: "Microcytic anaemia: iron studies types",
+        columns: ["Test", "Iron deficiency", "Thalassaemia trait", "Chronic disease"],
+        rows: [
+          ["Hb", "Low, variable", "Mildly low or normal", "Mildly low"],
+          ["RBC count", "Low", "High (over 5 million)", "Low or normal"],
+          ["RDW", "High", "Normal", "Normal"],
+          ["Mentzer index", "Over 13", "Under 13", "Over 13"],
+          ["Ferritin", "Low (under 15-30)", "Normal", "Normal or high"],
+          ["TIBC", "High", "Normal", "Low or normal"],
+          ["HbA2 on HPLC", "Normal or low", "Over 3.5 per cent", "Normal"],
+        ],
+      },
+      {
+        heading: "WHO anaemia grading (g/dL)",
+        columns: ["Group", "Anaemia cut-off", "Mild", "Moderate", "Severe"],
+        rows: [
+          ["Men", "Under 13", "11.0-12.9", "8.0-10.9", "Under 8.0"],
+          ["Non-pregnant women", "Under 12", "11.0-11.9", "8.0-10.9", "Under 8.0"],
+          ["Pregnant women", "Under 11", "10.0-10.9", "7.0-9.9", "Under 7.0"],
+        ],
+      },
+      {
+        heading: "Treatment doses at a glance",
+        columns: ["Deficiency", "First line", "Duration", "Monitor"],
+        rows: [
+          ["Iron", "Elemental iron 60-65 mg daily or alternate days", "3 months after Hb normalises", "Hb at 3-4 weeks, ferritin at 3 months"],
+          ["Iron (IV)", "Ferric carboxymaltose up to 1000 mg or iron sucrose 200 mg doses", "Total deficit by Ganzoni", "Hypersensitivity, phosphate"],
+          ["B12", "Cyanocobalamin 1000 microgram IM daily 1 week, weekly 4, then monthly", "Lifelong if pernicious", "Reticulocytes day 5-7, potassium"],
+          ["Folate", "Folic acid 5 mg daily", "4 months", "Exclude B12 deficiency first"],
+        ],
+      },
+    ],
+    redFlags: [
+      "Hb under 7 g/dL with breathlessness, chest pain or heart failure - admit.",
+      "Iron deficiency in a man or postmenopausal woman - urgent GI evaluation for cancer.",
+      "Pancytopenia or blasts on the peripheral smear - urgent haematology referral.",
+      "B12 deficiency with ataxia, weakness or cognitive change - start injections the same day.",
+      "Anaemia with jaundice and dark urine after a new drug - haemolysis, stop the drug.",
+      "Anaemia with high ESR, bone pain and renal failure - myeloma.",
+      "Melaena or haematemesis with anaemia - emergency admission.",
+    ],
+    pearls: [
+      "Men under 13, women under 12, pregnancy under 11 g/dL.",
+      "Ferritin under 15 microgram/L is diagnostic of iron deficiency; under 100 with inflammation.",
+      "Mentzer under 13 means thalassaemia trait - stop blind iron.",
+      "Alternate-day oral iron works as well with fewer side effects because of hepcidin.",
+      "Every man and postmenopausal woman with iron deficiency gets upper and lower GI endoscopy.",
+      "Never give folate alone before excluding B12 deficiency.",
+      "B12 neuropathy can occur with a normal haemoglobin - check B12 in metformin users.",
+      "Absent ankle jerks with extensor plantars: think B12.",
+      "Restrictive transfusion at Hb 7 g/dL, one unit at a time.",
+      "Draw haematinics before the transfusion, not after.",
+    ],
+    mcqs: [
+      {
+        id: "symptom-approach-anaemia-adult-q1",
+        stem: "A 24-year-old Gujarati woman has Hb 10.8 g/dL, MCV 62 fL, RBC count 5.9 million/microL, RDW normal and ferritin 80 microgram/L. She has taken iron for a year without change. What is the most likely diagnosis?",
+        options: [
+          "Iron-deficiency anaemia",
+          "Anaemia of chronic disease",
+          "Beta-thalassaemia trait",
+          "Sideroblastic anaemia",
+        ],
+        answer: 2,
+        explanation:
+          "Marked microcytosis with a high RBC count, normal RDW, Mentzer index of about 10.5 and normal ferritin points to beta-thalassaemia trait, confirmed by raised HbA2 on HPLC. Iron deficiency would show low ferritin and high RDW, chronic disease is rarely this microcytic, and sideroblastic anaemia needs ring sideroblasts.",
+        difficulty: "moderate",
+      },
+      {
+        id: "symptom-approach-anaemia-adult-q2",
+        stem: "A 64-year-old man has Hb 9.2 g/dL, MCV 71 fL and ferritin 8 microgram/L. He has no GI symptoms. What is the most appropriate next step?",
+        options: [
+          "Oral iron and recheck in 3 months without further tests",
+          "Stool for ova and cysts only",
+          "Bone marrow examination",
+          "Upper GI endoscopy and colonoscopy with coeliac serology",
+        ],
+        answer: 3,
+        explanation:
+          "Iron deficiency in a man is presumed to be GI blood loss until proved otherwise, and BSG advises bidirectional endoscopy plus coeliac serology while starting iron. Treating blindly risks missing colorectal or gastric cancer, stool microscopy alone is inadequate, and marrow examination is not needed when ferritin is diagnostic.",
+        difficulty: "moderate",
+      },
+      {
+        id: "symptom-approach-anaemia-adult-q3",
+        stem: "A 58-year-old diabetic on metformin 2 g/day for 10 years complains of tingling feet and unsteadiness in the dark. He has absent ankle jerks, extensor plantars and loss of vibration sense. Hb is 12.1 g/dL. What is the most likely cause?",
+        options: [
+          "Vitamin B12 deficiency",
+          "Diabetic distal symmetric polyneuropathy",
+          "Cervical spondylotic myelopathy",
+          "Folate deficiency",
+        ],
+        answer: 0,
+        explanation:
+          "Absent ankle jerks with extensor plantars and dorsal-column loss indicate subacute combined degeneration from B12 deficiency, a known consequence of long-term metformin, and it can occur without anaemia. Diabetic neuropathy does not cause upgoing plantars, cervical myelopathy usually brisk reflexes, and folate deficiency rarely causes cord disease.",
+        difficulty: "moderate",
+      },
+      {
+        id: "symptom-approach-anaemia-adult-q4",
+        stem: "What is the main reason alternate-day oral iron dosing is now preferred over multiple daily doses?",
+        options: [
+          "Alternate-day dosing avoids the need to check ferritin",
+          "A single daily dose raises hepcidin, which blocks absorption of the next dose for about 24 hours",
+          "Iron is absorbed only in the colon on alternate days",
+          "Daily iron causes haemolysis in most adults",
+        ],
+        answer: 1,
+        explanation:
+          "An iron dose induces hepcidin for about a day, so giving iron on alternate days improves fractional absorption and reduces GI side effects. Ferritin monitoring is still required, iron is absorbed in the duodenum not the colon, and oral iron does not cause haemolysis.",
+        difficulty: "hard",
+      },
+      {
+        id: "symptom-approach-anaemia-adult-q5",
+        stem: "A haemodynamically stable 40-year-old woman with menorrhagia has Hb 7.8 g/dL and ferritin 5 microgram/L. She is walking about and has no chest pain. What is the best management?",
+        options: [
+          "Transfuse two units of packed red cells",
+          "Folic acid 5 mg daily only",
+          "Oral or IV iron and treatment of menorrhagia, without transfusion",
+          "Start erythropoietin injections",
+        ],
+        answer: 2,
+        explanation:
+          "Stable chronic iron-deficiency anaemia above 7 g/dL should be treated with iron (IV if rapid correction or intolerance) plus control of bleeding; a restrictive strategy avoids transfusion. Transfusion is not indicated here, folate alone does not replace iron, and erythropoietin is for CKD anaemia.",
+        difficulty: "easy",
+      },
+    ],
+    theory: [
+      {
+        id: "symptom-approach-anaemia-adult-t1",
+        paper: "II",
+        kind: "long",
+        marks: 10,
+        minutes: 18,
+        frequency: "core",
+        question:
+          "Classify anaemia. Describe the approach to a 55-year-old man with microcytic hypochromic anaemia and outline the management of iron-deficiency anaemia. [3+3+4]",
+        openingLines: [
+          "Anaemia is haemoglobin below 13 g/dL in men and 12 g/dL in non-pregnant women (WHO 2024).",
+          "NFHS-5 found 25 per cent of Indian men and 57 per cent of women anaemic, and iron deficiency in an older man is GI blood loss until proved otherwise.",
+        ],
+        answer: [
+          {
+            heading: "Classification",
+            points: [
+              "Morphological: microcytic, normocytic, macrocytic with examples.",
+              "Aetiological: decreased production, increased destruction, blood loss; RPI under or over 2.",
+              "Severity: mild, moderate, severe per WHO.",
+            ],
+          },
+          {
+            heading: "Approach",
+            points: [
+              "History: GI symptoms, NSAIDs, diet, weight loss, worms; exam: pallor, koilonychia, PR, abdominal mass.",
+              "CBC, smear, ferritin, TSAT, Mentzer index; HPLC if ferritin normal.",
+              "OGD plus colonoscopy, coeliac serology, urine for blood, stool for hookworm.",
+            ],
+          },
+          {
+            heading: "Management of IDA",
+            points: [
+              "Treat the cause; oral elemental iron 60-65 mg daily or alternate days with vitamin C, for 3 months after Hb normalises.",
+              "IV ferric carboxymaltose 1000 mg or iron sucrose 200 mg doses for intolerance, malabsorption or ongoing loss.",
+              "Transfuse only if Hb under 7 g/dL or symptomatic; monitor Hb at 3-4 weeks and ferritin at 3 months.",
+            ],
+          },
+        ],
+        mustDraw: ["Flow chart of anaemia by MCV", "Table differentiating IDA, thalassaemia trait and chronic disease"],
+        markSplit: [
+          { part: "Classification", marks: 3 },
+          { part: "Approach", marks: 3 },
+          { part: "Management", marks: 4 },
+        ],
+        keywords: ["anaemia", "microcytic", "iron deficiency", "endoscopy"],
+      },
+      {
+        id: "symptom-approach-anaemia-adult-t2",
+        paper: "II",
+        kind: "short-note",
+        marks: 10,
+        minutes: 18,
+        frequency: "common",
+        question:
+          "Vitamin B12 deficiency: causes, clinical features including neurological manifestations, and treatment. [3+4+3]",
+        openingLines: [
+          "Vitamin B12 deficiency causes megaloblastic anaemia and neurological damage, which can occur independently of anaemia.",
+          "It is common in Indian vegetarians and in long-term metformin and PPI users.",
+        ],
+        answer: [
+          {
+            heading: "Causes",
+            points: [
+              "Dietary (vegetarian), pernicious anaemia, gastrectomy, ileal disease, fish tapeworm, metformin, PPIs, nitrous oxide.",
+            ],
+          },
+          {
+            heading: "Clinical features",
+            points: [
+              "Anaemia, glossitis, knuckle pigmentation, mild jaundice.",
+              "Subacute combined degeneration: dorsal column loss, Romberg positive, absent ankle jerks with extensor plantars.",
+              "Peripheral neuropathy, cognitive decline, optic atrophy, depression.",
+              "Labs: MCV over 100, hypersegmented neutrophils, B12 under 200 pg/mL, raised MMA and homocysteine.",
+            ],
+          },
+          {
+            heading: "Treatment",
+            points: [
+              "Cyanocobalamin 1000 microgram IM daily 1 week, weekly 4 weeks, then monthly; oral 1000-2000 microgram daily for maintenance.",
+              "Hydroxocobalamin 1 mg alternate days with neurology; watch potassium; never folate alone.",
+            ],
+          },
+        ],
+        mustDraw: ["Spinal cord cross-section showing dorsal and lateral columns affected"],
+        markSplit: [
+          { part: "Causes", marks: 3 },
+          { part: "Clinical features", marks: 4 },
+          { part: "Treatment", marks: 3 },
+        ],
+        keywords: ["B12", "megaloblastic", "subacute combined degeneration", "metformin"],
+      },
+    ],
+    references: [
+      "WHO Guideline on Haemoglobin Cutoffs to Define Anaemia, 2024",
+      "British Society of Gastroenterology Guidelines for the Management of Iron Deficiency Anaemia in Adults, 2021",
+      "Anemia Mukt Bharat Operational Guidelines, MoHFW, 2018",
+      "National Family Health Survey (NFHS-5), 2019-21",
+      "Harrison's Principles of Internal Medicine, 22nd ed, 2025",
+      "Oxford Handbook of Clinical Medicine, 11th ed, 2024",
+      "AABB International Guidelines for Red Blood Cell Transfusion, 2023",
+      "ADA Standards of Care in Diabetes, 2026",
+    ],
+  },
+];
 
 export default topics;
