@@ -16,6 +16,7 @@ import { markSplit, repeatIndex } from "../src/lib/pyqStats";
 import { PAPER_QUESTIONS } from "../src/pyq/papers.generated";
 import { TOPICWISE_QUESTIONS } from "../src/pyq/topicwise.generated";
 import { linksFor } from "../src/pyq/link";
+import { PREDICTED } from "../src/pyq/predicted";
 import { diagramsByTopic } from "../src/diagrams/index";
 
 await ensureAll();
@@ -106,6 +107,7 @@ const data = {
       id: q.id, question: q.question, session: q.session, marks: q.marks, topicHeading: q.topicHeading,
     })),
     links,
+    predicted: PREDICTED,
   },
 };
 

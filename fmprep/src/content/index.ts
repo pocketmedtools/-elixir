@@ -234,10 +234,38 @@ const SCORE_LOADERS: Record<string, () => Promise<{ default: ScoreBank }>> = {
   "geriatrics-ethics": () => import("./scores/geriatrics-ethics"),
 };
 
-function withScores(subject: Subject, bank: ScoreBank): Subject {
+/**
+ * Topics added after a subject file was written - the must-know PG topics the
+ * past-paper analysis found missing. One file per subject, loaded with the
+ * subject's chunk and appended after its own topics.
+ */
+const EXTRA_LOADERS: Record<string, () => Promise<{ default: Topic[] }>> = {
+  "symptom-approach": () => import("./extra/symptom-approach"),
+  "fm-principles": () => import("./extra/fm-principles"),
+  cardiovascular: () => import("./extra/cardiovascular"),
+  endocrine: () => import("./extra/endocrine"),
+  respiratory: () => import("./extra/respiratory"),
+  "gastro-hepatology": () => import("./extra/gastro-hepatology"),
+  "infectious-fever": () => import("./extra/infectious-fever"),
+  neurology: () => import("./extra/neurology"),
+  "renal-urology": () => import("./extra/renal-urology"),
+  musculoskeletal: () => import("./extra/musculoskeletal"),
+  psychiatry: () => import("./extra/psychiatry"),
+  "surgery-office": () => import("./extra/surgery-office"),
+  dermatology: () => import("./extra/dermatology"),
+  "eye-ent": () => import("./extra/eye-ent"),
+  emergency: () => import("./extra/emergency"),
+  pediatrics: () => import("./extra/pediatrics"),
+  obstetrics: () => import("./extra/obstetrics"),
+  gynaecology: () => import("./extra/gynaecology"),
+  preventive: () => import("./extra/preventive"),
+  "geriatrics-ethics": () => import("./extra/geriatrics-ethics"),
+};
+
+function withScores(subject: Subject, bank: ScoreBank, extra: Topic[] = []): Subject {
   return {
     ...subject,
-    topics: subject.topics.map((t) =>
+    topics: [...subject.topics, ...extra].map((t) =>
       bank[t.id]?.length ? { ...t, tables: [...(t.tables ?? []), ...bank[t.id]] } : t,
     ),
   };
@@ -299,9 +327,10 @@ export function ensureSubject(id: string): Promise<Subject | null> {
   if (!loader) return Promise.resolve(null);
 
   const scores = SCORE_LOADERS[id]?.() ?? Promise.resolve({ default: {} as ScoreBank });
-  const promise = Promise.all([loader(), scores])
-    .then(([module, bank]) => {
-      const subject = withScores(module.default, bank.default);
+  const extra = EXTRA_LOADERS[id]?.() ?? Promise.resolve({ default: [] as Topic[] });
+  const promise = Promise.all([loader(), scores, extra])
+    .then(([module, bank, more]) => {
+      const subject = withScores(module.default, bank.default, more.default);
       loaded.set(id, subject);
       inFlight.delete(id);
       emit();

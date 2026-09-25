@@ -22,6 +22,8 @@ import {
   type TopicwiseQuestion,
 } from "../pyq/index";
 import { linksFor } from "../pyq/link";
+import { PREDICTED, type PredictedQuestion } from "../pyq/predicted";
+import { getTopic } from "../content/index";
 import type { PaperId } from "../lib/types";
 import { BackBar, Chip, Empty } from "./ui";
 import { markSplit, repeatIndex, type MarkSplit, type Repeat } from "../lib/pyqStats";
@@ -194,6 +196,63 @@ function QuestionCard({
   );
 }
 
+function predictedFor(paper: PaperId | "all"): PredictedQuestion[] {
+  const rank = { high: 0, medium: 1 };
+  return PREDICTED.filter((q) => paper === "all" || q.paper === paper).sort(
+    (a, b) => rank[a.likelihood] - rank[b.likelihood] || a.paper.localeCompare(b.paper),
+  );
+}
+
+/** A predicted question: the question as the paper would print it, why it is
+ *  expected, and the topic that answers it. */
+function PredictedCard({
+  q,
+  n,
+  onOpenTopic,
+}: {
+  q: PredictedQuestion;
+  n: number;
+  onOpenTopic: (topicId: string) => void;
+}) {
+  const shaped = useMemo(() => splitParts(q.question), [q.question]);
+  const topic = getTopic(q.topicId);
+  return (
+    <div className="rounded-xl border border-slate-200 bg-white p-3.5 shadow-sm">
+      <span className="q-head">
+        <span className="q-no">P{n}</span>
+        <span className="q-where">Paper {q.paper}</span>
+        <span className="q-marks">{q.marks} marks</span>
+        <span className={`q-likely q-likely-${q.likelihood}`}>
+          {q.likelihood === "high" ? "High" : "Medium"}
+        </span>
+      </span>
+      {shaped.stem && <span className="q-stem block">{shaped.stem}</span>}
+      {shaped.parts.length > 0 && (
+        <ul className="q-parts">
+          {shaped.parts.map((p, i) => (
+            <li key={i}>
+              <span className="q-l">{p.label}</span>
+              <span>{p.text}</span>
+              {p.marks ? <span className="q-m">{p.marks}</span> : <span />}
+            </li>
+          ))}
+        </ul>
+      )}
+      <p className="q-basis">{q.basis}</p>
+      {topic && (
+        <button
+          type="button"
+          onClick={() => onOpenTopic(q.topicId)}
+          className="mt-2.5 w-full rounded-lg border border-slate-300 bg-white px-3.5 py-2.5 text-left text-[15px] font-semibold text-slate-800 hover:bg-slate-50"
+        >
+          {topic.topic.title}
+          <span className="ml-1.5 font-normal text-slate-500">· {topic.subjectTitle}</span>
+        </button>
+      )}
+    </div>
+  );
+}
+
 export default function PyqScreen({
   onBack,
   onOpenTopic,
@@ -203,7 +262,7 @@ export default function PyqScreen({
   onOpenTopic: (id: string) => void;
   onOpenSources: () => void;
 }) {
-  const [view, setView] = useState<"sittings" | "topics" | "recurring">("sittings");
+  const [view, setView] = useState<"sittings" | "topics" | "recurring" | "predicted">("sittings");
   const [paper, setPaper] = useState<PaperId | "all">("all");
   const [session, setSession] = useState<string | "all">("all");
   const [topicQuery, setTopicQuery] = useState("");
@@ -250,7 +309,7 @@ export default function PyqScreen({
       <h1 className="mt-5 text-2xl font-bold tracking-tight text-slate-900">
         Previous-year questions
       </h1>
-      <div className="mt-4 grid grid-cols-3 gap-2">
+      <div className="mt-4 grid grid-cols-2 gap-2">
         <button type="button" onClick={() => setView("sittings")} className={tab(view === "sittings")}>
           By sitting
         </button>
@@ -264,9 +323,33 @@ export default function PyqScreen({
         >
           Repeaters
         </button>
+        <button type="button" onClick={() => setView("predicted")} className={tab(view === "predicted")}>
+          Predicted
+        </button>
       </div>
 
-      {view === "sittings" ? (
+      {view === "predicted" ? (
+        <>
+          <div className="mt-3 flex flex-wrap gap-1.5">
+            <button type="button" className={pill(paper === "all")} onClick={() => setPaper("all")}>
+              All papers
+            </button>
+            {PAPERS.map((p) => (
+              <button key={p} type="button" className={pill(paper === p)} onClick={() => setPaper(p)}>
+                Paper {p}
+              </button>
+            ))}
+          </div>
+          <p className="mt-3 text-xs text-slate-500">
+            {predictedFor(paper).length} likely questions, most likely first
+          </p>
+          <div className="mt-2 space-y-2">
+            {predictedFor(paper).map((q, i) => (
+              <PredictedCard key={q.id} q={q} n={i + 1} onOpenTopic={onOpenTopic} />
+            ))}
+          </div>
+        </>
+      ) : view === "sittings" ? (
         <>
           <div className="mt-3 flex flex-wrap gap-1.5">
             <button type="button" className={pill(paper === "all")} onClick={() => setPaper("all")}>
