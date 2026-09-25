@@ -279,7 +279,7 @@ const topics: Topic[] = [
     theory: [
       {
         id: "symptom-approach-anaemia-adult-t1",
-        paper: "II",
+        paper: "I",
         kind: "long",
         marks: 10,
         minutes: 18,
@@ -326,7 +326,7 @@ const topics: Topic[] = [
       },
       {
         id: "symptom-approach-anaemia-adult-t2",
-        paper: "II",
+        paper: "I",
         kind: "short-note",
         marks: 10,
         minutes: 18,

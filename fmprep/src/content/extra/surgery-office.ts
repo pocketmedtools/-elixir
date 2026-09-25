@@ -313,7 +313,7 @@ const topics: Topic[] = [
     theory: [
       {
         id: "surgery-office-neck-swellings-thyroid-t1",
-        paper: "III",
+        paper: "II",
         kind: "long",
         marks: 10,
         minutes: 18,
@@ -370,7 +370,7 @@ const topics: Topic[] = [
       },
       {
         id: "surgery-office-neck-swellings-thyroid-t2",
-        paper: "III",
+        paper: "II",
         kind: "short-note",
         marks: 10,
         minutes: 18,
@@ -718,7 +718,7 @@ const topics: Topic[] = [
     theory: [
       {
         id: "surgery-office-anorectal-disorders-t1",
-        paper: "III",
+        paper: "II",
         kind: "long",
         marks: 10,
         minutes: 18,
@@ -771,7 +771,7 @@ const topics: Topic[] = [
       },
       {
         id: "surgery-office-anorectal-disorders-t2",
-        paper: "III",
+        paper: "II",
         kind: "short-note",
         marks: 10,
         minutes: 18,
@@ -1104,7 +1104,7 @@ const topics: Topic[] = [
     theory: [
       {
         id: "surgery-office-varicose-veins-leg-ulcers-t1",
-        paper: "III",
+        paper: "II",
         kind: "long",
         marks: 10,
         minutes: 18,
@@ -1154,7 +1154,7 @@ const topics: Topic[] = [
       },
       {
         id: "surgery-office-varicose-veins-leg-ulcers-t2",
-        paper: "III",
+        paper: "II",
         kind: "short-note",
         marks: 10,
         minutes: 18,
@@ -1486,7 +1486,7 @@ const topics: Topic[] = [
     theory: [
       {
         id: "surgery-office-scrotal-swelling-acute-scrotum-t1",
-        paper: "III",
+        paper: "II",
         kind: "long",
         marks: 10,
         minutes: 18,
@@ -1534,7 +1534,7 @@ const topics: Topic[] = [
       },
       {
         id: "surgery-office-scrotal-swelling-acute-scrotum-t2",
-        paper: "III",
+        paper: "II",
         kind: "short-note",
         marks: 10,
         minutes: 18,
@@ -1882,7 +1882,7 @@ const topics: Topic[] = [
     theory: [
       {
         id: "surgery-office-rif-pain-appendicitis-t1",
-        paper: "III",
+        paper: "II",
         kind: "long",
         marks: 10,
         minutes: 18,
@@ -1931,7 +1931,7 @@ const topics: Topic[] = [
       },
       {
         id: "surgery-office-rif-pain-appendicitis-t2",
-        paper: "III",
+        paper: "II",
         kind: "short-note",
         marks: 10,
         minutes: 18,
@@ -2137,6 +2137,7 @@ const topics: Topic[] = [
           "Treat simple paronychia, early felon, cellulitis and **chronic paronychia** in the clinic, with review at 48 hours. [Green's Operative Hand Surgery 8e]",
           "Screen recurrent hand infections for **diabetes, HIV and occupational exposure**, and advise gloves for wet work. [Rook 10e]",
           "Educate farm and construction workers to **clean pricks and cuts promptly** and seek care early for throbbing pain. [Park 28e]",
+          "After drainage of a deep infection, arrange **hand therapy and review at 1-2 weeks** to detect stiffness early, since function, not just cure of infection, is the goal. [Green's Operative Hand Surgery 8e]",
         ],
       },
     ],
@@ -2263,7 +2264,7 @@ const topics: Topic[] = [
     theory: [
       {
         id: "surgery-office-hand-infections-t1",
-        paper: "III",
+        paper: "II",
         kind: "long",
         marks: 10,
         minutes: 18,
@@ -2313,7 +2314,7 @@ const topics: Topic[] = [
       },
       {
         id: "surgery-office-hand-infections-t2",
-        paper: "III",
+        paper: "II",
         kind: "short-note",
         marks: 10,
         minutes: 18,
@@ -2653,7 +2654,7 @@ const topics: Topic[] = [
     theory: [
       {
         id: "surgery-office-local-anaesthesia-nerve-blocks-t1",
-        paper: "III",
+        paper: "II",
         kind: "long",
         marks: 10,
         minutes: 18,
@@ -2713,7 +2714,7 @@ const topics: Topic[] = [
       },
       {
         id: "surgery-office-local-anaesthesia-nerve-blocks-t2",
-        paper: "III",
+        paper: "II",
         kind: "short-note",
         marks: 10,
         minutes: 18,

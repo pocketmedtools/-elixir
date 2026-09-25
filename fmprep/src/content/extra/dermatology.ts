@@ -284,7 +284,7 @@ const topics: Topic[] = [
     theory: [
       {
         id: "dermatology-sti-genital-ulcer-urethral-discharge-t1",
-        paper: "III",
+        paper: "II",
         kind: "long",
         marks: 10,
         minutes: 18,
@@ -335,7 +335,7 @@ const topics: Topic[] = [
       },
       {
         id: "dermatology-sti-genital-ulcer-urethral-discharge-t2",
-        paper: "I",
+        paper: "IV",
         kind: "short-note",
         marks: 10,
         minutes: 18,
@@ -652,7 +652,7 @@ const topics: Topic[] = [
     theory: [
       {
         id: "dermatology-superficial-fungal-infections-t1",
-        paper: "III",
+        paper: "II",
         kind: "long",
         marks: 10,
         minutes: 18,
@@ -706,7 +706,7 @@ const topics: Topic[] = [
       },
       {
         id: "dermatology-superficial-fungal-infections-t2",
-        paper: "III",
+        paper: "II",
         kind: "short-note",
         marks: 10,
         minutes: 18,
@@ -1029,7 +1029,7 @@ const topics: Topic[] = [
     theory: [
       {
         id: "dermatology-generalised-pruritus-t1",
-        paper: "III",
+        paper: "II",
         kind: "long",
         marks: 10,
         minutes: 18,
@@ -1077,7 +1077,7 @@ const topics: Topic[] = [
       },
       {
         id: "dermatology-generalised-pruritus-t2",
-        paper: "III",
+        paper: "II",
         kind: "short-note",
         marks: 10,
         minutes: 18,

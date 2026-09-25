@@ -205,7 +205,7 @@ const topics: Topic[] = [
     theory: [
       {
         id: "gynaecology-amenorrhoea-menstrual-irregularity-t1",
-        paper: "IV",
+        paper: "III",
         kind: "long",
         marks: 10,
         minutes: 18,
@@ -258,7 +258,7 @@ const topics: Topic[] = [
       },
       {
         id: "gynaecology-amenorrhoea-menstrual-irregularity-t2",
-        paper: "IV",
+        paper: "III",
         kind: "short-note",
         marks: 10,
         minutes: 18,
@@ -592,7 +592,7 @@ const topics: Topic[] = [
     theory: [
       {
         id: "gynaecology-ipv-sexual-assault-t1",
-        paper: "I",
+        paper: "IV",
         kind: "long",
         marks: 10,
         minutes: 18,
@@ -639,7 +639,7 @@ const topics: Topic[] = [
       },
       {
         id: "gynaecology-ipv-sexual-assault-t2",
-        paper: "IV",
+        paper: "III",
         kind: "short-note",
         marks: 10,
         minutes: 18,

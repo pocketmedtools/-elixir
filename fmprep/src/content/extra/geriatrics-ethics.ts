@@ -243,7 +243,7 @@ const topics: Topic[] = [
     theory: [
       {
         id: "geriatrics-ethics-elderly-community-health-t1",
-        paper: "I",
+        paper: "IV",
         kind: "long",
         marks: 10,
         minutes: 18,
@@ -291,7 +291,7 @@ const topics: Topic[] = [
       },
       {
         id: "geriatrics-ethics-elderly-community-health-t2",
-        paper: "I",
+        paper: "IV",
         kind: "short-note",
         marks: 10,
         minutes: 18,
@@ -601,7 +601,7 @@ const topics: Topic[] = [
     theory: [
       {
         id: "geriatrics-ethics-pressure-ulcers-t1",
-        paper: "III",
+        paper: "II",
         kind: "long",
         marks: 10,
         minutes: 18,
@@ -655,7 +655,7 @@ const topics: Topic[] = [
       },
       {
         id: "geriatrics-ethics-pressure-ulcers-t2",
-        paper: "III",
+        paper: "II",
         kind: "short-note",
         marks: 10,
         minutes: 18,
@@ -984,7 +984,7 @@ const topics: Topic[] = [
     theory: [
       {
         id: "geriatrics-ethics-medicolegal-negligence-ethics-t1",
-        paper: "I",
+        paper: "IV",
         kind: "long",
         marks: 10,
         minutes: 18,
@@ -1043,7 +1043,7 @@ const topics: Topic[] = [
       },
       {
         id: "geriatrics-ethics-medicolegal-negligence-ethics-t2",
-        paper: "I",
+        paper: "IV",
         kind: "short-note",
         marks: 10,
         minutes: 18,

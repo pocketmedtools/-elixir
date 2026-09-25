@@ -299,7 +299,7 @@ const topics: Topic[] = [
     theory: [
       {
         id: "eye-ent-eyelid-lacrimal-disorders-t1",
-        paper: "III",
+        paper: "II",
         kind: "long",
         marks: 10,
         minutes: 18,
@@ -357,7 +357,7 @@ const topics: Topic[] = [
       },
       {
         id: "eye-ent-eyelid-lacrimal-disorders-t2",
-        paper: "III",
+        paper: "II",
         kind: "short-note",
         marks: 10,
         minutes: 18,
@@ -712,7 +712,7 @@ const topics: Topic[] = [
     theory: [
       {
         id: "eye-ent-corneal-ulcer-ocular-trauma-t1",
-        paper: "III",
+        paper: "II",
         kind: "long",
         marks: 10,
         minutes: 18,
@@ -770,7 +770,7 @@ const topics: Topic[] = [
       },
       {
         id: "eye-ent-corneal-ulcer-ocular-trauma-t2",
-        paper: "III",
+        paper: "II",
         kind: "short-note",
         marks: 10,
         minutes: 18,

@@ -251,7 +251,7 @@ const topics: Topic[] = [
     theory: [
       {
         id: "infectious-fever-antimicrobial-resistance-t1",
-        paper: "I",
+        paper: "IV",
         kind: "long",
         marks: 10,
         minutes: 18,
@@ -302,7 +302,7 @@ const topics: Topic[] = [
       },
       {
         id: "infectious-fever-antimicrobial-resistance-t2",
-        paper: "I",
+        paper: "IV",
         kind: "short-note",
         marks: 10,
         minutes: 18,
@@ -602,7 +602,7 @@ const topics: Topic[] = [
     theory: [
       {
         id: "infectious-fever-tropical-fevers-zoonoses-t1",
-        paper: "II",
+        paper: "I",
         kind: "long",
         marks: 10,
         minutes: 18,
@@ -656,7 +656,7 @@ const topics: Topic[] = [
       },
       {
         id: "infectious-fever-tropical-fevers-zoonoses-t2",
-        paper: "I",
+        paper: "IV",
         kind: "short-note",
         marks: 10,
         minutes: 18,

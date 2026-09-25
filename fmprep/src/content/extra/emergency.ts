@@ -308,7 +308,7 @@ const topics: Topic[] = [
     theory: [
       {
         id: "emergency-head-injury-t1",
-        paper: "III",
+        paper: "II",
         kind: "long",
         marks: 10,
         minutes: 18,
@@ -366,7 +366,7 @@ const topics: Topic[] = [
       },
       {
         id: "emergency-head-injury-t2",
-        paper: "III",
+        paper: "II",
         kind: "short-note",
         marks: 10,
         minutes: 18,
@@ -716,7 +716,7 @@ const topics: Topic[] = [
     theory: [
       {
         id: "emergency-snake-bite-envenomation-t1",
-        paper: "III",
+        paper: "II",
         kind: "long",
         marks: 10,
         minutes: 18,
@@ -775,7 +775,7 @@ const topics: Topic[] = [
       },
       {
         id: "emergency-snake-bite-envenomation-t2",
-        paper: "III",
+        paper: "II",
         kind: "short-note",
         marks: 10,
         minutes: 18,
@@ -1109,7 +1109,7 @@ const topics: Topic[] = [
     theory: [
       {
         id: "emergency-heat-illness-t1",
-        paper: "III",
+        paper: "II",
         kind: "long",
         marks: 10,
         minutes: 18,
@@ -1162,7 +1162,7 @@ const topics: Topic[] = [
       },
       {
         id: "emergency-heat-illness-t2",
-        paper: "I",
+        paper: "IV",
         kind: "short-note",
         marks: 10,
         minutes: 18,

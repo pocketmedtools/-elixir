@@ -270,7 +270,7 @@ const topics: Topic[] = [
     theory: [
       {
         id: "pediatrics-stridor-croup-t1",
-        paper: "IV",
+        paper: "III",
         kind: "long",
         marks: 10,
         minutes: 18,
@@ -336,7 +336,7 @@ const topics: Topic[] = [
       },
       {
         id: "pediatrics-stridor-croup-t2",
-        paper: "III",
+        paper: "II",
         kind: "short-note",
         marks: 10,
         minutes: 18,
@@ -680,7 +680,7 @@ const topics: Topic[] = [
     theory: [
       {
         id: "pediatrics-exanthematous-fevers-t1",
-        paper: "IV",
+        paper: "III",
         kind: "long",
         marks: 10,
         minutes: 18,
@@ -744,7 +744,7 @@ const topics: Topic[] = [
       },
       {
         id: "pediatrics-exanthematous-fevers-t2",
-        paper: "IV",
+        paper: "III",
         kind: "short-note",
         marks: 10,
         minutes: 18,
@@ -1097,7 +1097,7 @@ const topics: Topic[] = [
     theory: [
       {
         id: "pediatrics-child-abuse-pocso-t1",
-        paper: "I",
+        paper: "IV",
         kind: "long",
         marks: 10,
         minutes: 18,
@@ -1157,7 +1157,7 @@ const topics: Topic[] = [
       },
       {
         id: "pediatrics-child-abuse-pocso-t2",
-        paper: "IV",
+        paper: "III",
         kind: "short-note",
         marks: 10,
         minutes: 18,
@@ -1496,7 +1496,7 @@ const topics: Topic[] = [
     theory: [
       {
         id: "pediatrics-adolescent-health-t1",
-        paper: "I",
+        paper: "IV",
         kind: "long",
         marks: 10,
         minutes: 18,
@@ -1554,7 +1554,7 @@ const topics: Topic[] = [
       },
       {
         id: "pediatrics-adolescent-health-t2",
-        paper: "I",
+        paper: "IV",
         kind: "short-note",
         marks: 10,
         minutes: 18,
@@ -1819,7 +1819,7 @@ const topics: Topic[] = [
     theory: [
       {
         id: "pediatrics-neonatal-seizures-common-problems-t1",
-        paper: "IV",
+        paper: "III",
         kind: "long",
         marks: 10,
         minutes: 18,
@@ -1873,7 +1873,7 @@ const topics: Topic[] = [
       },
       {
         id: "pediatrics-neonatal-seizures-common-problems-t2",
-        paper: "IV",
+        paper: "III",
         kind: "short-note",
         marks: 10,
         minutes: 18,
@@ -2208,7 +2208,7 @@ const topics: Topic[] = [
     theory: [
       {
         id: "pediatrics-genetic-disorders-haemoglobinopathies-t1",
-        paper: "IV",
+        paper: "III",
         kind: "long",
         marks: 10,
         minutes: 18,
@@ -2260,7 +2260,7 @@ const topics: Topic[] = [
       },
       {
         id: "pediatrics-genetic-disorders-haemoglobinopathies-t2",
-        paper: "I",
+        paper: "IV",
         kind: "short-note",
         marks: 10,
         minutes: 18,

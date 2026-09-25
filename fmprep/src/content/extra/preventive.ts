@@ -275,7 +275,7 @@ const topics: Topic[] = [
     theory: [
       {
         id: "preventive-concept-health-determinants-t1",
-        paper: "I",
+        paper: "IV",
         kind: "long",
         marks: 10,
         minutes: 18,
@@ -332,7 +332,7 @@ const topics: Topic[] = [
       },
       {
         id: "preventive-concept-health-determinants-t2",
-        paper: "I",
+        paper: "IV",
         kind: "short-note",
         marks: 10,
         minutes: 18,
@@ -636,7 +636,7 @@ const topics: Topic[] = [
     theory: [
       {
         id: "preventive-health-care-delivery-nhm-t1",
-        paper: "I",
+        paper: "IV",
         kind: "long",
         marks: 10,
         minutes: 18,
@@ -694,7 +694,7 @@ const topics: Topic[] = [
       },
       {
         id: "preventive-health-care-delivery-nhm-t2",
-        paper: "I",
+        paper: "IV",
         kind: "short-note",
         marks: 10,
         minutes: 18,
@@ -980,7 +980,7 @@ const topics: Topic[] = [
     theory: [
       {
         id: "preventive-ayushman-bharat-t1",
-        paper: "I",
+        paper: "IV",
         kind: "long",
         marks: 10,
         minutes: 18,
@@ -1035,7 +1035,7 @@ const topics: Topic[] = [
       },
       {
         id: "preventive-ayushman-bharat-t2",
-        paper: "I",
+        paper: "IV",
         kind: "short-note",
         marks: 10,
         minutes: 18,
@@ -1328,7 +1328,7 @@ const topics: Topic[] = [
     theory: [
       {
         id: "preventive-infant-child-mortality-t1",
-        paper: "I",
+        paper: "IV",
         kind: "long",
         marks: 10,
         minutes: 18,
@@ -1383,7 +1383,7 @@ const topics: Topic[] = [
       },
       {
         id: "preventive-infant-child-mortality-t2",
-        paper: "IV",
+        paper: "III",
         kind: "short-note",
         marks: 10,
         minutes: 18,
@@ -1690,7 +1690,7 @@ const topics: Topic[] = [
     theory: [
       {
         id: "preventive-maternal-health-mmr-t1",
-        paper: "I",
+        paper: "IV",
         kind: "long",
         marks: 10,
         minutes: 18,
@@ -1744,7 +1744,7 @@ const topics: Topic[] = [
       },
       {
         id: "preventive-maternal-health-mmr-t2",
-        paper: "I",
+        paper: "IV",
         kind: "short-note",
         marks: 10,
         minutes: 18,
@@ -2044,7 +2044,7 @@ const topics: Topic[] = [
     theory: [
       {
         id: "preventive-school-health-t1",
-        paper: "I",
+        paper: "IV",
         kind: "long",
         marks: 10,
         minutes: 18,
@@ -2094,7 +2094,7 @@ const topics: Topic[] = [
       },
       {
         id: "preventive-school-health-t2",
-        paper: "I",
+        paper: "IV",
         kind: "short-note",
         marks: 10,
         minutes: 18,
@@ -2398,7 +2398,7 @@ const topics: Topic[] = [
     theory: [
       {
         id: "preventive-cancer-screening-india-t1",
-        paper: "I",
+        paper: "IV",
         kind: "long",
         marks: 10,
         minutes: 18,
@@ -2443,7 +2443,7 @@ const topics: Topic[] = [
       },
       {
         id: "preventive-cancer-screening-india-t2",
-        paper: "IV",
+        paper: "III",
         kind: "short-note",
         marks: 10,
         minutes: 18,
@@ -2724,7 +2724,7 @@ const topics: Topic[] = [
     theory: [
       {
         id: "preventive-travel-medicine-t1",
-        paper: "I",
+        paper: "IV",
         kind: "long",
         marks: 10,
         minutes: 18,
@@ -2773,7 +2773,7 @@ const topics: Topic[] = [
       },
       {
         id: "preventive-travel-medicine-t2",
-        paper: "I",
+        paper: "IV",
         kind: "short-note",
         marks: 10,
         minutes: 18,
@@ -3060,7 +3060,7 @@ const topics: Topic[] = [
     theory: [
       {
         id: "preventive-air-pollution-environmental-health-t1",
-        paper: "I",
+        paper: "IV",
         kind: "long",
         marks: 10,
         minutes: 18,
@@ -3107,7 +3107,7 @@ const topics: Topic[] = [
       },
       {
         id: "preventive-air-pollution-environmental-health-t2",
-        paper: "I",
+        paper: "IV",
         kind: "short-note",
         marks: 10,
         minutes: 18,
@@ -3399,7 +3399,7 @@ const topics: Topic[] = [
     theory: [
       {
         id: "preventive-demography-family-planning-t1",
-        paper: "I",
+        paper: "IV",
         kind: "long",
         marks: 10,
         minutes: 18,
@@ -3441,7 +3441,7 @@ const topics: Topic[] = [
       },
       {
         id: "preventive-demography-family-planning-t2",
-        paper: "I",
+        paper: "IV",
         kind: "long",
         marks: 10,
         minutes: 18,

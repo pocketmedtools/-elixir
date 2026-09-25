@@ -263,7 +263,7 @@ const topics: Topic[] = [
     theory: [
       {
         id: "gastro-hepatology-liver-abscess-t1",
-        paper: "II",
+        paper: "I",
         kind: "long",
         marks: 10,
         minutes: 18,
@@ -321,7 +321,7 @@ const topics: Topic[] = [
       },
       {
         id: "gastro-hepatology-liver-abscess-t2",
-        paper: "III",
+        paper: "II",
         kind: "short-note",
         marks: 10,
         minutes: 18,

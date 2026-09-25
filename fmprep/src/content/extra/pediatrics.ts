@@ -296,7 +296,7 @@ const topics: Topic[] = [
     theory: [
       {
         id: "pediatrics-neonatal-jaundice-t1",
-        paper: "IV",
+        paper: "III",
         kind: "long",
         marks: 10,
         minutes: 18,
@@ -358,7 +358,7 @@ const topics: Topic[] = [
       },
       {
         id: "pediatrics-neonatal-jaundice-t2",
-        paper: "IV",
+        paper: "III",
         kind: "short-note",
         marks: 10,
         minutes: 18,
@@ -693,7 +693,7 @@ const topics: Topic[] = [
     theory: [
       {
         id: "pediatrics-low-birth-weight-preterm-kmc-t1",
-        paper: "IV",
+        paper: "III",
         kind: "long",
         marks: 10,
         minutes: 18,
@@ -753,7 +753,7 @@ const topics: Topic[] = [
       },
       {
         id: "pediatrics-low-birth-weight-preterm-kmc-t2",
-        paper: "IV",
+        paper: "III",
         kind: "short-note",
         marks: 10,
         minutes: 18,
@@ -1094,7 +1094,7 @@ const topics: Topic[] = [
     theory: [
       {
         id: "pediatrics-development-behaviour-scholastic-t1",
-        paper: "IV",
+        paper: "III",
         kind: "long",
         marks: 10,
         minutes: 18,
@@ -1147,7 +1147,7 @@ const topics: Topic[] = [
       },
       {
         id: "pediatrics-development-behaviour-scholastic-t2",
-        paper: "IV",
+        paper: "III",
         kind: "long",
         marks: 10,
         minutes: 18,
@@ -1431,7 +1431,7 @@ const topics: Topic[] = [
     theory: [
       {
         id: "pediatrics-rheumatic-fever-t1",
-        paper: "IV",
+        paper: "III",
         kind: "long",
         marks: 10,
         minutes: 18,
@@ -1488,7 +1488,7 @@ const topics: Topic[] = [
       },
       {
         id: "pediatrics-rheumatic-fever-t2",
-        paper: "I",
+        paper: "IV",
         kind: "short-note",
         marks: 10,
         minutes: 18,
@@ -1824,7 +1824,7 @@ const topics: Topic[] = [
     theory: [
       {
         id: "pediatrics-glomerular-disease-child-t1",
-        paper: "IV",
+        paper: "III",
         kind: "long",
         marks: 10,
         minutes: 18,
@@ -1877,7 +1877,7 @@ const topics: Topic[] = [
       },
       {
         id: "pediatrics-glomerular-disease-child-t2",
-        paper: "IV",
+        paper: "III",
         kind: "short-note",
         marks: 10,
         minutes: 18,
@@ -2212,7 +2212,7 @@ const topics: Topic[] = [
     theory: [
       {
         id: "pediatrics-asthma-wheeze-child-t1",
-        paper: "IV",
+        paper: "III",
         kind: "long",
         marks: 10,
         minutes: 18,
@@ -2265,7 +2265,7 @@ const topics: Topic[] = [
       },
       {
         id: "pediatrics-asthma-wheeze-child-t2",
-        paper: "IV",
+        paper: "III",
         kind: "short-note",
         marks: 10,
         minutes: 18,

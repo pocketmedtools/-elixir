@@ -218,7 +218,7 @@ const topics: Topic[] = [
     theory: [
       {
         id: "renal-urology-urinary-incontinence-t1",
-        paper: "III",
+        paper: "II",
         kind: "long",
         marks: 10,
         minutes: 18,
@@ -270,7 +270,7 @@ const topics: Topic[] = [
       },
       {
         id: "renal-urology-urinary-incontinence-t2",
-        paper: "II",
+        paper: "I",
         kind: "short-note",
         marks: 10,
         minutes: 18,

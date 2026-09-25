@@ -270,7 +270,7 @@ const topics: Topic[] = [
     theory: [
       {
         id: "fm-principles-three-stage-assessment-t1",
-        paper: "I",
+        paper: "IV",
         kind: "long",
         marks: 10,
         minutes: 18,
@@ -325,7 +325,7 @@ const topics: Topic[] = [
       },
       {
         id: "fm-principles-three-stage-assessment-t2",
-        paper: "I",
+        paper: "IV",
         kind: "short-note",
         marks: 10,
         minutes: 18,
@@ -633,7 +633,7 @@ const topics: Topic[] = [
     theory: [
       {
         id: "fm-principles-referral-system-t1",
-        paper: "I",
+        paper: "IV",
         kind: "long",
         marks: 10,
         minutes: 18,
@@ -692,7 +692,7 @@ const topics: Topic[] = [
       },
       {
         id: "fm-principles-referral-system-t2",
-        paper: "I",
+        paper: "IV",
         kind: "short-note",
         marks: 10,
         minutes: 18,
@@ -993,7 +993,7 @@ const topics: Topic[] = [
     theory: [
       {
         id: "fm-principles-breaking-bad-news-difficult-consultations-t1",
-        paper: "I",
+        paper: "IV",
         kind: "long",
         marks: 10,
         minutes: 18,
@@ -1051,7 +1051,7 @@ const topics: Topic[] = [
       },
       {
         id: "fm-principles-breaking-bad-news-difficult-consultations-t2",
-        paper: "I",
+        paper: "IV",
         kind: "short-note",
         marks: 10,
         minutes: 18,
@@ -1352,7 +1352,7 @@ const topics: Topic[] = [
     theory: [
       {
         id: "fm-principles-digital-health-emr-abdm-t1",
-        paper: "I",
+        paper: "IV",
         kind: "long",
         marks: 10,
         minutes: 18,
@@ -1403,7 +1403,7 @@ const topics: Topic[] = [
       },
       {
         id: "fm-principles-digital-health-emr-abdm-t2",
-        paper: "I",
+        paper: "IV",
         kind: "short-note",
         marks: 10,
         minutes: 18,

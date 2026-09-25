@@ -273,7 +273,7 @@ const topics: Topic[] = [
     theory: [
       {
         id: "obstetrics-preterm-labour-prom-t1",
-        paper: "IV",
+        paper: "III",
         kind: "long",
         marks: 10,
         minutes: 18,
@@ -338,7 +338,7 @@ const topics: Topic[] = [
       },
       {
         id: "obstetrics-preterm-labour-prom-t2",
-        paper: "IV",
+        paper: "III",
         kind: "short-note",
         marks: 10,
         minutes: 18,
@@ -660,7 +660,7 @@ const topics: Topic[] = [
     theory: [
       {
         id: "obstetrics-high-risk-pregnancy-fgr-t1",
-        paper: "IV",
+        paper: "III",
         kind: "long",
         marks: 10,
         minutes: 18,
@@ -718,7 +718,7 @@ const topics: Topic[] = [
       },
       {
         id: "obstetrics-high-risk-pregnancy-fgr-t2",
-        paper: "IV",
+        paper: "III",
         kind: "short-note",
         marks: 10,
         minutes: 18,
@@ -1033,7 +1033,7 @@ const topics: Topic[] = [
     theory: [
       {
         id: "obstetrics-preconception-prenatal-screening-t1",
-        paper: "IV",
+        paper: "III",
         kind: "long",
         marks: 10,
         minutes: 18,
@@ -1090,7 +1090,7 @@ const topics: Topic[] = [
       },
       {
         id: "obstetrics-preconception-prenatal-screening-t2",
-        paper: "IV",
+        paper: "III",
         kind: "short-note",
         marks: 10,
         minutes: 18,
@@ -1431,7 +1431,7 @@ const topics: Topic[] = [
     theory: [
       {
         id: "obstetrics-medical-disorders-pregnancy-t1",
-        paper: "IV",
+        paper: "III",
         kind: "long",
         marks: 10,
         minutes: 18,
@@ -1487,7 +1487,7 @@ const topics: Topic[] = [
       },
       {
         id: "obstetrics-medical-disorders-pregnancy-t2",
-        paper: "IV",
+        paper: "III",
         kind: "short-note",
         marks: 10,
         minutes: 18,
@@ -1790,7 +1790,7 @@ const topics: Topic[] = [
     theory: [
       {
         id: "obstetrics-rh-negative-pregnancy-t1",
-        paper: "IV",
+        paper: "III",
         kind: "long",
         marks: 10,
         minutes: 18,
@@ -1844,7 +1844,7 @@ const topics: Topic[] = [
       },
       {
         id: "obstetrics-rh-negative-pregnancy-t2",
-        paper: "IV",
+        paper: "III",
         kind: "short-note",
         marks: 10,
         minutes: 18,
@@ -2152,7 +2152,7 @@ const topics: Topic[] = [
     theory: [
       {
         id: "obstetrics-hyperemesis-gravidarum-t1",
-        paper: "IV",
+        paper: "III",
         kind: "long",
         marks: 10,
         minutes: 18,
@@ -2202,7 +2202,7 @@ const topics: Topic[] = [
       },
       {
         id: "obstetrics-hyperemesis-gravidarum-t2",
-        paper: "IV",
+        paper: "III",
         kind: "short-note",
         marks: 10,
         minutes: 18,
@@ -2534,7 +2534,7 @@ const topics: Topic[] = [
     theory: [
       {
         id: "obstetrics-malpresentation-twins-operative-delivery-t1",
-        paper: "IV",
+        paper: "III",
         kind: "long",
         marks: 10,
         minutes: 18,
@@ -2580,7 +2580,7 @@ const topics: Topic[] = [
       },
       {
         id: "obstetrics-malpresentation-twins-operative-delivery-t2",
-        paper: "IV",
+        paper: "III",
         kind: "short-note",
         marks: 10,
         minutes: 18,
