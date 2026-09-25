@@ -551,31 +551,60 @@ section("Specialty drugs + alternatives");
 section("ICU titrations and corrections");
 {
   const m = await import("../src/lib/icuMath");
-  const byId = Object.fromEntries(m.VASOACTIVES.map((d) => [d.id, d]));
-  const cases: [string, number, number, number][] = [
-    ["noradrenaline", 0.1, 70, 5.25],
-    ["noradrenaline", 0.05, 10, 0.38],
-    ["adrenaline", 0.1, 15, 1.13],
-    ["dopamine", 10, 10, 1.5],
-    ["dobutamine", 5, 60, 3.6],
-    ["vasopressin", 0.02, 0, 3],
-    ["ntg", 1, 50, 6],
-    ["milrinone", 0.5, 40, 6],
-    ["fentanyl-inf", 2, 20, 4],
-    ["midazolam-inf", 0.1, 30, 3],
+  const byId = Object.fromEntries(m.INFUSIONS.map((d) => [d.id, d]));
+  const rateOf = (id: string, who: "adult" | "child", dose: number, wt: number) => {
+    const d = byId[id]; const r = d[who]!;
+    return m.rateFromDose(r.unit, dose, wt, m.concentration(d.amount, d.amountUnit, d.volume, r.unit)!);
+  };
+  const cases: [string, "adult" | "child", number, number, number][] = [
+    ["noradrenaline", "adult", 0.1, 70, 5.25],   // 0.1×70×60/80
+    ["noradrenaline", "child", 0.05, 10, 0.38],
+    ["adrenaline", "child", 0.1, 15, 1.13],
+    ["dopamine", "child", 10, 10, 1.5],
+    ["dobutamine", "adult", 5, 60, 3.6],
+    ["vasopressin", "adult", 0.03, 0, 4.5],      // 0.03×60/0.4
+    ["vasopressin", "child", 1, 10, 1.5],        // 1 mU×10×60/400 mU/ml
+    ["ntg", "adult", 20, 0, 2.4],                // 20 mcg/min ×60/500
+    ["ntg", "child", 1, 20, 2.4],
+    ["milrinone", "adult", 0.5, 40, 6],
+    ["fentanyl-inf", "adult", 1, 70, 7],
+    ["fentanyl-inf", "child", 2, 20, 4],
+    ["midazolam-inf", "adult", 0.05, 70, 3.5],
+    ["midazolam-inf", "child", 0.1, 30, 3],
+    ["propofol", "adult", 1, 70, 7],             // 70 mg/h ÷ 10 mg/ml
+    ["dexmedetomidine", "adult", 0.5, 70, 8.75], // 35 mcg/h ÷ 4
   ];
   let ok = 0;
-  for (const [id, dose, wt, want] of cases) {
-    const got = m.infusionRateMlPerHour(byId[id], dose, wt);
+  for (const [id, who, dose, wt, want] of cases) {
+    const got = rateOf(id, who, dose, wt);
     if (got != null && Math.abs(got - want) < 0.02) ok++;
-    else fail(`infusion ${id} ${dose} @ ${wt}kg: got ${got} want ${want}`);
+    else fail(`infusion ${id} ${who} ${dose} @ ${wt}kg: got ${got} want ${want}`);
   }
   console.log(`infusion rate cases: ${ok}/${cases.length}`);
-  for (const d of m.VASOACTIVES) {
-    if (!(d.doseMin < d.doseMax) || !(d.concPerMl > 0) || !d.dilution || !d.titration)
-      fail(`vasoactive record incomplete: ${d.id}`);
+  // Round trip dose → rate → dose, every drug and both ages.
+  for (const d of m.INFUSIONS) {
+    for (const r of [d.adult, d.child]) {
+      if (!r) { if (!d.childNote) fail(`${d.id}: no child range and no child note`); continue; }
+      if (!(r.min < r.max) || !r.start) fail(`${d.id}: bad range`);
+      if (!d.sources.length) fail(`${d.id}: no source`);
+      const c = m.concentration(d.amount, d.amountUnit, d.volume, r.unit);
+      if (!c) { fail(`${d.id}: unit mismatch ${d.amountUnit} vs ${r.unit}`); continue; }
+      for (const dose of [r.min, (r.min + r.max) / 2, r.max]) {
+        const rate = m.rateFromDose(r.unit, dose, 25, c)!;
+        const back = m.doseFromRate(r.unit, rate, 25, c)!;
+        if (Math.abs(back - dose) / dose > 0.02) fail(`${d.id} round trip ${dose} → ${rate} → ${back}`);
+        if (!(rate > 0 && rate < 500)) fail(`${d.id} implausible rate ${rate} ml/h at ${dose}`);
+      }
+    }
   }
-
+  if (m.concentration(4, "mg", 50, "mcg/kg/min") !== 80) fail("norad 4 mg/50 ml should be 80 mcg/ml");
+  if (m.concentration(20, "U", 50, "mU/kg/min") !== 400) fail("vasopressin 20 U/50 ml should be 400 mU/ml");
+  if (m.concentration(4, "mg", 50, "U/min") !== null) fail("mass drug in unit dose must be rejected");
+  const mil: [number, number][] = [[50, -1], [40, 0.38], [30, 0.33], [25, 0.31], [10, 0.23], [3, 0.2]];
+  for (const [c, want] of mil) {
+    const got = m.milrinoneRenalMax(c);
+    if (want < 0 ? got !== null : got !== want) fail(`milrinone CrCl ${c}: ${got} want ${want}`);
+  }
   const hs: [number, number, number][] = [[8, 800, 32], [10, 1000, 40], [15, 1250, 50], [23, 1560, 63], [40, 1900, 80], [70, 2400, 110]];
   let fok = 0;
   for (const [wt, daily, hourly] of hs) {
@@ -594,7 +623,13 @@ section("ICU titrations and corrections");
     ["FWD", m.freeWaterDeficit(60, 160, "female"), 4.3],
     ["corrNa", m.correctedNa(130, 600), 138],
     ["corrCa", m.correctedCa(7, 2), 8.6],
+    ["corrNaHillier", m.correctedNa(130, 600, 2.4), 142],
+    ["NaDefElderlyF", m.sodiumDeficit(60, 118, 123, "female", false, true), 135],
+    ["AM 3% 70kg M Na120", m.naChangePerLitre(513, 120, 42), 9.1],
+    ["AM D5W 70kg M Na160", m.naChangePerLitre(0, 160, 42), -3.7],
   ];
+  if (m.tbwFactor("male", false, true) !== 0.5 || m.tbwFactor("female", false, true) !== 0.45 || m.tbwFactor("female", true) !== 0.6)
+    fail("TBW factors: elderly male 0.5, elderly female 0.45, child 0.6");
   for (const [name, got, want] of el) {
     if (got == null || Math.abs(got - want) > 0.05) fail(`${name}: got ${got} want ${want}`);
   }
@@ -778,7 +813,10 @@ section("Pediatric DB integrity");
     [3.5, "normal", "Normal"],
     [4.2, "normal", "Normal"],
     [5.0, "normal", "Normal"],
-    [5.4, "caution", "Mild hyperkalemia"],
+    [5.4, "caution", "Borderline high"],
+    [5.5, "caution", "Mild hyperkalemia"],
+    [6.0, "alert", "Moderate hyperkalemia"],
+    [6.5, "alert", "SEVERE hyperkalemia"],
     [6.2, "alert", "Moderate hyperkalemia"],
     [6.8, "alert", "SEVERE hyperkalemia"],
   ];
@@ -797,7 +835,9 @@ section("Pediatric DB integrity");
   const renal = assessPotassium(3.2, false, true);
   if (!renal || !renal.actions.some((x) => x.includes("Renal impairment")))
     fail("K renal-impairment note missing");
-  console.log("potassium bands verified across 9 levels + pediatric + renal variants");
+    if (!assessPotassium(6.8)!.actions[0].includes("30 ml")) fail("UKKA: severe hyperK calcium gluconate 10% 30 ml");
+  if (!assessPotassium(2.1, true)!.actions[0].includes("≤ 0.5 mEq/kg/h")) fail("ped IV KCl max rate 0.5 mEq/kg/h");
+  console.log("potassium bands verified across 12 levels (UKKA 5.5/6.0/6.5) + pediatric + renal variants");
 }
 
 // ---------- BMI (Indian cutoffs), eGFR, age-based BP ----------
@@ -857,7 +897,7 @@ section("Pediatric DB integrity");
   };
   const { estimateCrCl } = await import("../src/lib/creatinineClearanceMath");
   const { buildRenalDoseReport } = await import("../src/lib/renalDoseAdjust");
-  const { VASOACTIVES, infusionRateMlPerHour, correctedNa, correctedCa, sodiumDeficit, freeWaterDeficit, pedMaintenanceFluids } = await import("../src/lib/icuMath");
+  const { INFUSIONS, concentration, rateFromDose, correctedNa, correctedCa, sodiumDeficit, freeWaterDeficit, pedMaintenanceFluids } = await import("../src/lib/icuMath");
   const { calculateGestation } = await import("../src/lib/obMath");
   const { PREGNANCY_SAFETY } = await import("../src/data/pregnancySafety");
   const { PREGNANCY_CONDITION_DOSING: PCD } = await import("../src/data/pregnancyConditionDosing");
@@ -910,17 +950,17 @@ section("Pediatric DB integrity");
   check("day SBP median > night median (age basis)", pAge.p50 > bpCentiles("male", "night", "sbp", 10, "age").p50);
 
   // — ICU drips: recompute every mcg/kg/min drug by hand at min and max dose
-  for (const d of VASOACTIVES) {
-    if (d.doseUnit === "mcg/kg/min" && d.weightBased) {
-      for (const w of [10, 70]) {
-        for (const dose of [d.doseMin, d.doseMax]) {
-          const manual = Math.round(((dose * w * 60) / d.concPerMl) * 100) / 100;
-          const got = infusionRateMlPerHour(d, dose, w);
-          check(`${d.id} ${dose}@${w}kg rate matches hand calc`, got != null && Math.abs(got - manual) < 0.05);
-        }
+  for (const d of INFUSIONS) {
+    const r = d.adult;
+    const c = concentration(d.amount, d.amountUnit, d.volume, r.unit)!;
+    if (r.unit === "mcg/kg/min") {
+      for (const w of [10, 70]) for (const dose of [r.min, r.max]) {
+        const manual = Math.round(((dose * w * 60) / c) * 100) / 100;
+        const got = rateFromDose(r.unit, dose, w, c);
+        check(`${d.id} ${dose}@${w}kg rate matches hand calc`, got != null && Math.abs(got - manual) < 0.05);
       }
     } else {
-      const got = infusionRateMlPerHour(d, d.doseMin, 70);
+      const got = rateFromDose(r.unit, r.min, 70, c);
       check(`${d.id} produces finite positive rate`, got != null && got > 0 && got < 2000);
     }
   }
@@ -934,7 +974,7 @@ section("Pediatric DB integrity");
 
   // — Potassium: pediatric severe + adult moderate wording
   check("K 2.1 child uses weight-based IV", assessPotassium(2.1, true)!.actions[0].includes("mEq/kg"));
-  check("K 6.2 adult includes insulin-dextrose", assessPotassium(6.2)!.actions.join(" ").includes("Insulin 10 U"));
+  check("K 6.2 adult includes insulin-dextrose", assessPotassium(6.2)!.actions.join(" ").includes("10 U soluble insulin"));
   check("K 3.6 normal band exact boundary", assessPotassium(3.5)!.band === "normal");
 
   // — OB dating math: EDD anchored to conception + 266 d
