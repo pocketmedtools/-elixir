@@ -18,6 +18,7 @@ import {
   type ClinicalCase,
   type Frequency,
   type Mcq,
+  type NoteTable,
   type PaperId,
   type Subject,
   type TheoryQuestion,
@@ -203,6 +204,45 @@ const LOADERS: Record<string, () => Promise<{ default: Subject }>> = {
   "geriatrics-ethics": () => import("./geriatrics-ethics"),
 };
 
+/**
+ * The score bank: named scores, scales, criteria and classifications kept
+ * apart from the prose, one file per subject, keyed by topic id. Each file is
+ * pulled in with its subject's chunk and its tables are appended to the
+ * topic's own, so the chart library and the topic page both show them.
+ */
+type ScoreBank = Record<string, NoteTable[]>;
+const SCORE_LOADERS: Record<string, () => Promise<{ default: ScoreBank }>> = {
+  "symptom-approach": () => import("./scores/symptom-approach"),
+  "fm-principles": () => import("./scores/fm-principles"),
+  cardiovascular: () => import("./scores/cardiovascular"),
+  endocrine: () => import("./scores/endocrine"),
+  respiratory: () => import("./scores/respiratory"),
+  "gastro-hepatology": () => import("./scores/gastro-hepatology"),
+  "infectious-fever": () => import("./scores/infectious-fever"),
+  neurology: () => import("./scores/neurology"),
+  "renal-urology": () => import("./scores/renal-urology"),
+  musculoskeletal: () => import("./scores/musculoskeletal"),
+  psychiatry: () => import("./scores/psychiatry"),
+  "surgery-office": () => import("./scores/surgery-office"),
+  dermatology: () => import("./scores/dermatology"),
+  "eye-ent": () => import("./scores/eye-ent"),
+  emergency: () => import("./scores/emergency"),
+  pediatrics: () => import("./scores/pediatrics"),
+  obstetrics: () => import("./scores/obstetrics"),
+  gynaecology: () => import("./scores/gynaecology"),
+  preventive: () => import("./scores/preventive"),
+  "geriatrics-ethics": () => import("./scores/geriatrics-ethics"),
+};
+
+function withScores(subject: Subject, bank: ScoreBank): Subject {
+  return {
+    ...subject,
+    topics: subject.topics.map((t) =>
+      bank[t.id]?.length ? { ...t, tables: [...(t.tables ?? []), ...bank[t.id]] } : t,
+    ),
+  };
+}
+
 export const SUBJECT_GROUPS: { heading: string; subjects: SubjectMeta[] }[] = [
   "The consultation",
   "Medicine and allied",
@@ -258,12 +298,14 @@ export function ensureSubject(id: string): Promise<Subject | null> {
   const loader = LOADERS[id];
   if (!loader) return Promise.resolve(null);
 
-  const promise = loader()
-    .then((module) => {
-      loaded.set(id, module.default);
+  const scores = SCORE_LOADERS[id]?.() ?? Promise.resolve({ default: {} as ScoreBank });
+  const promise = Promise.all([loader(), scores])
+    .then(([module, bank]) => {
+      const subject = withScores(module.default, bank.default);
+      loaded.set(id, subject);
       inFlight.delete(id);
       emit();
-      return module.default;
+      return subject;
     })
     .catch(() => {
       // Offline and not yet cached: record it so the screen can say so.
