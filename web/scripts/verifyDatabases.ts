@@ -1225,6 +1225,51 @@ section("Pediatric DB integrity");
   console.log("HC anchors, chart curve ordering and child BMI cutoffs OK");
 }
 
+// ---------- Newborn weight loss ----------
+{
+  console.log("\n=== Newborn weight loss suite ===");
+  const { assessNewbornWeight } = await import("../src/lib/newbornWeightMath");
+  const cases: [number, number, number, string][] = [
+    [3000, 2850, 5.0, "normal"],
+    [3000, 2790, 7.0, "borderline"],
+    [3000, 2701, 10.0, "significant"], // 9.97 → shown 10.0 → red
+    [3000, 2700, 10.0, "significant"],
+    [3200, 2850, 10.9, "significant"],
+    [3000, 2640, 12.0, "severe"],
+    [2500, 2500, 0, "gain"],
+    [2500, 2600, -4.0, "gain"],
+  ];
+  for (const [b, t, pct, band] of cases) {
+    const r = assessNewbornWeight(b, t, null);
+    if (r.percent !== pct) fail(`NB weight ${b}->${t}: expected ${pct} %, got ${r.percent}`);
+    if (r.band !== band) fail(`NB weight ${b}->${t}: expected band ${band}, got ${r.band}`);
+  }
+  // Exhaustive: formula exact to 0.05 % and bands monotonic in loss.
+  const order = ["gain", "normal", "borderline", "significant", "severe"];
+  for (let b = 1500; b <= 4500; b += 50) {
+    let prev = 0;
+    for (let t = Math.round(b * 1.05); t >= Math.round(b * 0.8); t -= 5) {
+      const r = assessNewbornWeight(b, t, 48);
+      const exact = ((b - t) / b) * 100;
+      if (Math.abs(r.percent - exact) > 0.05 + 1e-9) fail(`NB formula off ${b}->${t}`);
+      const i = order.indexOf(r.band);
+      if (i < prev) fail(`NB band not monotonic at ${b}->${t}`);
+      prev = i;
+      if ((r.percent >= 10) !== (r.band === "significant" || r.band === "severe"))
+        fail(`NB red flag mismatch at ${r.percent} %`);
+    }
+  }
+  if (assessNewbornWeight(3000, 2000, null).mark10 !== 2700) fail("NB 10 % mark for 3000 g should be 2700 g");
+  // Age-specific advice.
+  if (!assessNewbornWeight(3000, 2820, 20).recommendations.some((x) => x.includes("first 24 h")))
+    fail("NB: >5 % in first 24 h should be flagged");
+  if (!assessNewbornWeight(3000, 2900, 15 * 24).recommendations.some((x) => x.includes("2 weeks")))
+    fail("NB: below birth weight at day 15 should be flagged");
+  if (assessNewbornWeight(3000, 2900, 48).recommendations.some((x) => x.includes("2 weeks")))
+    fail("NB: 2-week flag must not fire at 48 h");
+  console.log("newborn weight loss: formula, 7/10/12 % bands, red flag and age advice OK");
+}
+
 // ---------- Result ----------
 console.log("\n========== VERIFY RESULT ==========");
 if (failures.length) {

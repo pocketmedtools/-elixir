@@ -9,6 +9,7 @@ import GrowthCalculator from "./components/GrowthCalculator";
 import IcuTitration from "./components/IcuTitration";
 import InsulinTool from "./components/InsulinTool";
 import PediatricDosageCalculator from "./components/PediatricDosageCalculator";
+import NewbornWeightLoss from "./components/NewbornWeightLoss";
 import ObCalculator from "./components/ObCalculator";
 import RegimenAnalyzerUI from "./components/RegimenAnalyzerUI";
 import ReportIssue from "./components/ReportIssue";
@@ -114,6 +115,13 @@ export default function App() {
       idle: "bg-slate-100 text-slate-800 hover:bg-slate-200",
     },
     {
+      id: "nbWeight",
+      label: "Newborn Wt Loss",
+      shortLabel: "NB Wt",
+      active: "bg-lime-900 text-white shadow-sm",
+      idle: "bg-slate-100 text-slate-800 hover:bg-slate-200",
+    },
+    {
       id: "ob",
       label: "OB / EDD",
       shortLabel: "OB",
@@ -208,6 +216,7 @@ export default function App() {
         {tab === "pedDose" && <PediatricDosageCalculator />}
         {tab === "growth" && <GrowthCalculator />}
         {tab === "bp" && <BpCentiles />}
+        {tab === "nbWeight" && <NewbornWeightLoss />}
         {tab === "bmi" && <BmiCalculator />}
         {tab === "crCl" && <CreatinineClearance />}
         {tab === "regimen" && <RegimenAnalyzerUI />}

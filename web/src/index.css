@@ -84,6 +84,7 @@ body {
 .tool-pedDose  { --tint: #eff6ff; --tint-soft: #dbeafe; --tint-border: #bfdbfe; }
 .tool-growth   { --tint: #f5f3ff; --tint-soft: #ede9fe; --tint-border: #ddd6fe; }
 .tool-bp       { --tint: #ecfeff; --tint-soft: #cffafe; --tint-border: #a5f3fc; }
+.tool-nbWeight { --tint: #f7fee7; --tint-soft: #ecfccb; --tint-border: #d9f99d; }
 .tool-bmi      { --tint: #ecfdf5; --tint-soft: #d1fae5; --tint-border: #a7f3d0; }
 .tool-crCl     { --tint: #f0fdfa; --tint-soft: #ccfbf1; --tint-border: #99f6e4; }
 .tool-regimen  { --tint: #fff1f2; --tint-soft: #ffe4e6; --tint-border: #fecdd3; }
