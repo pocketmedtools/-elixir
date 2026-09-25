@@ -227,7 +227,7 @@ topics.push({
   theory: [
     {
       id: "psychiatry-depression-t1",
-      paper: "II",
+      paper: "I",
       kind: "long",
       marks: 10,
       minutes: 20,
@@ -328,7 +328,7 @@ topics.push({
     },
     {
       id: "psychiatry-depression-t2",
-      paper: "II",
+      paper: "I",
       kind: "short-note",
       marks: 5,
       minutes: 10,
@@ -701,7 +701,7 @@ topics.push({
   theory: [
     {
       id: "psychiatry-anxiety-t1",
-      paper: "II",
+      paper: "I",
       kind: "long",
       marks: 10,
       minutes: 20,
@@ -803,7 +803,7 @@ topics.push({
     },
     {
       id: "psychiatry-anxiety-t2",
-      paper: "II",
+      paper: "I",
       kind: "short-note",
       marks: 5,
       minutes: 10,
@@ -1199,7 +1199,7 @@ topics.push({
   theory: [
     {
       id: "psychiatry-alcohol-t1",
-      paper: "II",
+      paper: "I",
       kind: "long",
       marks: 10,
       minutes: 20,
@@ -1305,7 +1305,7 @@ topics.push({
     },
     {
       id: "psychiatry-alcohol-t2",
-      paper: "II",
+      paper: "I",
       kind: "short-note",
       marks: 5,
       minutes: 10,
@@ -1671,7 +1671,7 @@ topics.push({
   theory: [
     {
       id: "psychiatry-somatic-t1",
-      paper: "II",
+      paper: "I",
       kind: "long",
       marks: 10,
       minutes: 20,
@@ -1777,7 +1777,7 @@ topics.push({
     },
     {
       id: "psychiatry-somatic-t2",
-      paper: "II",
+      paper: "I",
       kind: "differentiate",
       marks: 5,
       minutes: 10,
@@ -2128,7 +2128,7 @@ topics.push({
   theory: [
     {
       id: "psychiatry-tobacco-t1",
-      paper: "II",
+      paper: "I",
       kind: "long",
       marks: 10,
       minutes: 20,
@@ -2215,7 +2215,7 @@ topics.push({
     },
     {
       id: "psychiatry-tobacco-t2",
-      paper: "II",
+      paper: "I",
       kind: "short-note",
       marks: 5,
       minutes: 10,
@@ -2574,7 +2574,7 @@ topics.push({
   theory: [
     {
       id: "psychiatry-insomnia-t1",
-      paper: "II",
+      paper: "I",
       kind: "long",
       marks: 10,
       minutes: 20,
@@ -2660,7 +2660,7 @@ topics.push({
     },
     {
       id: "psychiatry-insomnia-t2",
-      paper: "II",
+      paper: "I",
       kind: "short-note",
       marks: 5,
       minutes: 10,
@@ -3050,7 +3050,7 @@ topics.push({
   theory: [
     {
       id: "psychiatry-psychosis-t1",
-      paper: "II",
+      paper: "I",
       kind: "long",
       marks: 10,
       minutes: 20,
@@ -3143,7 +3143,7 @@ topics.push({
     },
     {
       id: "psychiatry-psychosis-t2",
-      paper: "II",
+      paper: "I",
       kind: "short-note",
       marks: 5,
       minutes: 10,
@@ -3564,7 +3564,7 @@ topics.push({
   theory: [
     {
       id: "psychiatry-delirium-t1",
-      paper: "II",
+      paper: "I",
       kind: "differentiate",
       marks: 10,
       minutes: 20,
@@ -3659,7 +3659,7 @@ topics.push({
     },
     {
       id: "psychiatry-delirium-t2",
-      paper: "II",
+      paper: "I",
       kind: "short-note",
       marks: 5,
       minutes: 10,
@@ -4189,7 +4189,7 @@ const subject: Subject = {
   title: "Psychiatry & Behavioural Medicine",
   blurb: "Depression, anxiety, somatic symptoms, alcohol and tobacco, psychosis, sleep and delirium.",
   icon: "Brain",
-  papers: ["II"],
+  papers: ["I"],
   topics,
   cases,
 };

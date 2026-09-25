@@ -223,7 +223,7 @@ topics.push({
   theory: [
     {
       id: "dermatology-lesion-description-t1",
-      paper: "III",
+      paper: "II",
       kind: "define-classify",
       marks: 10,
       minutes: 20,
@@ -315,7 +315,7 @@ topics.push({
     },
     {
       id: "dermatology-lesion-description-t2",
-      paper: "III",
+      paper: "II",
       kind: "short-note",
       marks: 5,
       minutes: 10,
@@ -710,7 +710,7 @@ topics.push({
   theory: [
     {
       id: "dermatology-scabies-pediculosis-t1",
-      paper: "III",
+      paper: "II",
       kind: "long",
       marks: 10,
       minutes: 20,
@@ -805,7 +805,7 @@ topics.push({
     },
     {
       id: "dermatology-scabies-pediculosis-t2",
-      paper: "III",
+      paper: "II",
       kind: "short-note",
       marks: 5,
       minutes: 10,
@@ -1190,7 +1190,7 @@ topics.push({
   theory: [
     {
       id: "dermatology-eczema-atopic-dermatitis-t1",
-      paper: "III",
+      paper: "II",
       kind: "long",
       marks: 10,
       minutes: 20,
@@ -1279,7 +1279,7 @@ topics.push({
     },
     {
       id: "dermatology-eczema-atopic-dermatitis-t2",
-      paper: "III",
+      paper: "II",
       kind: "differentiate",
       marks: 5,
       minutes: 10,
@@ -1675,7 +1675,7 @@ topics.push({
   theory: [
     {
       id: "dermatology-acne-vulgaris-t1",
-      paper: "III",
+      paper: "II",
       kind: "long",
       marks: 10,
       minutes: 20,
@@ -1760,7 +1760,7 @@ topics.push({
     },
     {
       id: "dermatology-acne-vulgaris-t2",
-      paper: "III",
+      paper: "II",
       kind: "short-note",
       marks: 5,
       minutes: 10,
@@ -2117,7 +2117,7 @@ topics.push({
   theory: [
     {
       id: "dermatology-urticaria-angioedema-t1",
-      paper: "III",
+      paper: "II",
       kind: "long",
       marks: 10,
       minutes: 20,
@@ -2197,7 +2197,7 @@ topics.push({
     },
     {
       id: "dermatology-urticaria-angioedema-t2",
-      paper: "III",
+      paper: "II",
       kind: "chart-flow",
       marks: 5,
       minutes: 10,
@@ -2593,7 +2593,7 @@ topics.push({
   theory: [
     {
       id: "dermatology-psoriasis-t1",
-      paper: "III",
+      paper: "II",
       kind: "long",
       marks: 10,
       minutes: 20,
@@ -2677,7 +2677,7 @@ topics.push({
     },
     {
       id: "dermatology-psoriasis-t2",
-      paper: "III",
+      paper: "II",
       kind: "short-note",
       marks: 5,
       minutes: 10,
@@ -3078,7 +3078,7 @@ topics.push({
   theory: [
     {
       id: "dermatology-leprosy-nlep-t1",
-      paper: "III",
+      paper: "II",
       kind: "long",
       marks: 10,
       minutes: 20,
@@ -3170,7 +3170,7 @@ topics.push({
     },
     {
       id: "dermatology-leprosy-nlep-t2",
-      paper: "III",
+      paper: "II",
       kind: "short-note",
       marks: 5,
       minutes: 10,
@@ -3567,7 +3567,7 @@ topics.push({
   theory: [
     {
       id: "dermatology-drug-eruptions-sjs-ten-t1",
-      paper: "III",
+      paper: "II",
       kind: "long",
       marks: 10,
       minutes: 20,
@@ -3661,7 +3661,7 @@ topics.push({
     },
     {
       id: "dermatology-drug-eruptions-sjs-ten-t2",
-      paper: "III",
+      paper: "II",
       kind: "differentiate",
       marks: 5,
       minutes: 10,
@@ -4185,7 +4185,7 @@ const subject: Subject = {
   title: "Dermatology",
   blurb: "Steroid-modified tinea, scabies, eczema, psoriasis, acne, drug rashes and leprosy.",
   icon: "Layers",
-  papers: ["III"],
+  papers: ["II"],
   topics,
   cases,
 };

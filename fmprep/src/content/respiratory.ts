@@ -178,7 +178,7 @@ topics.push({
   theory: [
     {
       id: "respiratory-asthma-t1",
-      paper: "II",
+      paper: "I",
       kind: "long",
       marks: 10,
       minutes: 20,
@@ -256,7 +256,7 @@ topics.push({
     },
     {
       id: "respiratory-asthma-t2",
-      paper: "II",
+      paper: "I",
       kind: "short-note",
       marks: 5,
       minutes: 10,
@@ -310,7 +310,7 @@ topics.push({
     },
     {
       id: "respiratory-asthma-t3",
-      paper: "II",
+      paper: "I",
       kind: "differentiate",
       marks: 5,
       minutes: 8,
@@ -644,7 +644,7 @@ topics.push({
   theory: [
     {
       id: "respiratory-copd-t1",
-      paper: "II",
+      paper: "I",
       kind: "long",
       marks: 10,
       minutes: 20,
@@ -723,7 +723,7 @@ topics.push({
     },
     {
       id: "respiratory-copd-t2",
-      paper: "II",
+      paper: "I",
       kind: "short-note",
       marks: 5,
       minutes: 10,
@@ -782,7 +782,7 @@ topics.push({
     },
     {
       id: "respiratory-copd-t3",
-      paper: "II",
+      paper: "I",
       kind: "enumerate",
       marks: 5,
       minutes: 8,
@@ -1145,7 +1145,7 @@ topics.push({
   theory: [
     {
       id: "respiratory-tuberculosis-ntep-t1",
-      paper: "II",
+      paper: "I",
       kind: "long",
       marks: 10,
       minutes: 20,
@@ -1225,7 +1225,7 @@ topics.push({
     },
     {
       id: "respiratory-tuberculosis-ntep-t2",
-      paper: "II",
+      paper: "I",
       kind: "short-note",
       marks: 5,
       minutes: 10,
@@ -1285,7 +1285,7 @@ topics.push({
     },
     {
       id: "respiratory-tuberculosis-ntep-t3",
-      paper: "II",
+      paper: "I",
       kind: "chart-flow",
       marks: 5,
       minutes: 8,
@@ -1664,7 +1664,7 @@ topics.push({
   theory: [
     {
       id: "respiratory-pneumonia-cap-t1",
-      paper: "II",
+      paper: "I",
       kind: "long",
       marks: 10,
       minutes: 20,
@@ -1749,7 +1749,7 @@ topics.push({
     },
     {
       id: "respiratory-pneumonia-cap-t2",
-      paper: "II",
+      paper: "I",
       kind: "short-note",
       marks: 5,
       minutes: 10,
@@ -2184,7 +2184,7 @@ topics.push({
   theory: [
     {
       id: "respiratory-acute-cough-influenza-covid-t1",
-      paper: "II",
+      paper: "I",
       kind: "long",
       marks: 10,
       minutes: 20,
@@ -2262,7 +2262,7 @@ topics.push({
     },
     {
       id: "respiratory-acute-cough-influenza-covid-t2",
-      paper: "II",
+      paper: "I",
       kind: "short-note",
       marks: 5,
       minutes: 10,
@@ -2648,7 +2648,7 @@ topics.push({
   theory: [
     {
       id: "respiratory-tb-infection-contacts-tpt-t1",
-      paper: "II",
+      paper: "I",
       kind: "long",
       marks: 10,
       minutes: 20,
@@ -2738,7 +2738,7 @@ topics.push({
     },
     {
       id: "respiratory-tb-infection-contacts-tpt-t2",
-      paper: "II",
+      paper: "I",
       kind: "short-note",
       marks: 5,
       minutes: 10,
@@ -3136,7 +3136,7 @@ topics.push({
   theory: [
     {
       id: "respiratory-pleural-effusion-t1",
-      paper: "II",
+      paper: "I",
       kind: "long",
       marks: 10,
       minutes: 20,
@@ -3219,7 +3219,7 @@ topics.push({
     },
     {
       id: "respiratory-pleural-effusion-t2",
-      paper: "II",
+      paper: "I",
       kind: "short-note",
       marks: 5,
       minutes: 10,
@@ -3596,7 +3596,7 @@ topics.push({
   theory: [
     {
       id: "respiratory-osa-t1",
-      paper: "II",
+      paper: "I",
       kind: "long",
       marks: 10,
       minutes: 20,
@@ -3691,7 +3691,7 @@ topics.push({
     },
     {
       id: "respiratory-osa-t2",
-      paper: "II",
+      paper: "I",
       kind: "short-note",
       marks: 5,
       minutes: 10,
@@ -4253,7 +4253,7 @@ const subject: Subject = {
   title: "Respiratory",
   blurb: "Asthma, COPD, tuberculosis under NTEP, pneumonia, and the cough that has lasted a fortnight.",
   icon: "Wind",
-  papers: ["II"],
+  papers: ["I"],
   topics,
   cases,
 };

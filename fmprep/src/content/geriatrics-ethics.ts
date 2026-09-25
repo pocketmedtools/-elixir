@@ -220,7 +220,7 @@ topics.push({
   theory: [
     {
       id: "geriatrics-ethics-cga-t1",
-      paper: "I",
+      paper: "IV",
       kind: "long",
       marks: 10,
       minutes: 20,
@@ -326,7 +326,7 @@ topics.push({
     },
     {
       id: "geriatrics-ethics-cga-t2",
-      paper: "I",
+      paper: "IV",
       kind: "short-note",
       marks: 5,
       minutes: 10,
@@ -377,7 +377,7 @@ topics.push({
     },
     {
       id: "geriatrics-ethics-cga-t3",
-      paper: "II",
+      paper: "I",
       kind: "enumerate",
       marks: 5,
       minutes: 8,
@@ -807,7 +807,7 @@ topics.push({
   theory: [
     {
       id: "geriatrics-ethics-falls-t1",
-      paper: "I",
+      paper: "IV",
       kind: "long",
       marks: 10,
       minutes: 20,
@@ -912,7 +912,7 @@ topics.push({
     },
     {
       id: "geriatrics-ethics-falls-t2",
-      paper: "II",
+      paper: "I",
       kind: "short-note",
       marks: 5,
       minutes: 10,
@@ -1337,7 +1337,7 @@ topics.push({
   theory: [
     {
       id: "geriatrics-ethics-polypharmacy-t1",
-      paper: "I",
+      paper: "IV",
       kind: "long",
       marks: 10,
       minutes: 20,
@@ -1448,7 +1448,7 @@ topics.push({
     },
     {
       id: "geriatrics-ethics-polypharmacy-t2",
-      paper: "II",
+      paper: "I",
       kind: "short-note",
       marks: 5,
       minutes: 10,
@@ -1903,7 +1903,7 @@ topics.push({
   theory: [
     {
       id: "geriatrics-ethics-palliative-symptom-control-t1",
-      paper: "II",
+      paper: "I",
       kind: "long",
       marks: 10,
       minutes: 20,
@@ -2015,7 +2015,7 @@ topics.push({
     },
     {
       id: "geriatrics-ethics-palliative-symptom-control-t2",
-      paper: "II",
+      paper: "I",
       kind: "short-note",
       marks: 5,
       minutes: 10,
@@ -2468,7 +2468,7 @@ topics.push({
   theory: [
     {
       id: "geriatrics-ethics-consent-capacity-records-t1",
-      paper: "I",
+      paper: "IV",
       kind: "long",
       marks: 10,
       minutes: 20,
@@ -2562,7 +2562,7 @@ topics.push({
     },
     {
       id: "geriatrics-ethics-consent-capacity-records-t2",
-      paper: "I",
+      paper: "IV",
       kind: "short-note",
       marks: 5,
       minutes: 10,
@@ -2965,7 +2965,7 @@ topics.push({
   theory: [
     {
       id: "geriatrics-ethics-dementia-caregiver-t1",
-      paper: "II",
+      paper: "I",
       kind: "long",
       marks: 10,
       minutes: 20,
@@ -3057,7 +3057,7 @@ topics.push({
     },
     {
       id: "geriatrics-ethics-dementia-caregiver-t2",
-      paper: "II",
+      paper: "I",
       kind: "short-note",
       marks: 5,
       minutes: 10,
@@ -3458,7 +3458,7 @@ topics.push({
   theory: [
     {
       id: "geriatrics-ethics-frailty-sarcopenia-nutrition-t1",
-      paper: "I",
+      paper: "IV",
       kind: "long",
       marks: 10,
       minutes: 20,
@@ -3552,7 +3552,7 @@ topics.push({
     },
     {
       id: "geriatrics-ethics-frailty-sarcopenia-nutrition-t2",
-      paper: "I",
+      paper: "IV",
       kind: "short-note",
       marks: 5,
       minutes: 10,
@@ -3947,7 +3947,7 @@ topics.push({
   theory: [
     {
       id: "geriatrics-ethics-end-of-life-death-certification-t1",
-      paper: "I",
+      paper: "IV",
       kind: "long",
       marks: 10,
       minutes: 20,
@@ -4041,7 +4041,7 @@ topics.push({
     },
     {
       id: "geriatrics-ethics-end-of-life-death-certification-t2",
-      paper: "I",
+      paper: "IV",
       kind: "short-note",
       marks: 5,
       minutes: 10,
@@ -4689,7 +4689,7 @@ const subject: Subject = {
   title: "Geriatrics, Palliative Care & Ethics",
   blurb: "Geriatric assessment, falls, deprescribing, end-of-life care, consent, records and medico-legal duties.",
   icon: "Users",
-  papers: ["I", "II"],
+  papers: ["IV", "I"],
   topics,
   cases,
 };

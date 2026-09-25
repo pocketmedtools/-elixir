@@ -238,7 +238,7 @@ topics.push({
   theory: [
     {
       id: "obstetrics-antenatal-care-t1",
-      paper: "IV",
+      paper: "III",
       kind: "long",
       marks: 10,
       minutes: 20,
@@ -340,7 +340,7 @@ topics.push({
     },
     {
       id: "obstetrics-antenatal-care-t2",
-      paper: "IV",
+      paper: "III",
       kind: "short-note",
       marks: 5,
       minutes: 10,
@@ -406,7 +406,7 @@ topics.push({
     },
     {
       id: "obstetrics-antenatal-care-t3",
-      paper: "IV",
+      paper: "III",
       kind: "enumerate",
       marks: 5,
       minutes: 8,
@@ -813,7 +813,7 @@ topics.push({
   theory: [
     {
       id: "obstetrics-anaemia-pregnancy-t1",
-      paper: "IV",
+      paper: "III",
       kind: "long",
       marks: 10,
       minutes: 20,
@@ -909,7 +909,7 @@ topics.push({
     },
     {
       id: "obstetrics-anaemia-pregnancy-t2",
-      paper: "IV",
+      paper: "III",
       kind: "short-note",
       marks: 5,
       minutes: 10,
@@ -974,7 +974,7 @@ topics.push({
     },
     {
       id: "obstetrics-anaemia-pregnancy-t3",
-      paper: "IV",
+      paper: "III",
       kind: "differentiate",
       marks: 5,
       minutes: 8,
@@ -1355,7 +1355,7 @@ topics.push({
   theory: [
     {
       id: "obstetrics-hypertensive-disorders-t1",
-      paper: "IV",
+      paper: "III",
       kind: "long",
       marks: 10,
       minutes: 20,
@@ -1447,7 +1447,7 @@ topics.push({
     },
     {
       id: "obstetrics-hypertensive-disorders-t2",
-      paper: "IV",
+      paper: "III",
       kind: "short-note",
       marks: 5,
       minutes: 10,
@@ -1504,7 +1504,7 @@ topics.push({
     },
     {
       id: "obstetrics-hypertensive-disorders-t3",
-      paper: "IV",
+      paper: "III",
       kind: "chart-flow",
       marks: 5,
       minutes: 8,
@@ -1885,7 +1885,7 @@ topics.push({
   theory: [
     {
       id: "obstetrics-gdm-t1",
-      paper: "IV",
+      paper: "III",
       kind: "long",
       marks: 10,
       minutes: 20,
@@ -1983,7 +1983,7 @@ topics.push({
     },
     {
       id: "obstetrics-gdm-t2",
-      paper: "IV",
+      paper: "III",
       kind: "short-note",
       marks: 5,
       minutes: 10,
@@ -2039,7 +2039,7 @@ topics.push({
     },
     {
       id: "obstetrics-gdm-t3",
-      paper: "IV",
+      paper: "III",
       kind: "define-classify",
       marks: 5,
       minutes: 8,
@@ -2415,7 +2415,7 @@ topics.push({
   theory: [
     {
       id: "obstetrics-labour-partograph-t1",
-      paper: "IV",
+      paper: "III",
       kind: "long",
       marks: 10,
       minutes: 20,
@@ -2506,7 +2506,7 @@ topics.push({
     },
     {
       id: "obstetrics-labour-partograph-t2",
-      paper: "IV",
+      paper: "III",
       kind: "short-note",
       marks: 5,
       minutes: 10,
@@ -2846,7 +2846,7 @@ topics.push({
   theory: [
     {
       id: "obstetrics-pph-t1",
-      paper: "IV",
+      paper: "III",
       kind: "long",
       marks: 10,
       minutes: 20,
@@ -2933,7 +2933,7 @@ topics.push({
     },
     {
       id: "obstetrics-pph-t2",
-      paper: "IV",
+      paper: "III",
       kind: "short-note",
       marks: 5,
       minutes: 10,
@@ -3320,7 +3320,7 @@ topics.push({
   theory: [
     {
       id: "obstetrics-early-pregnancy-bleeding-t1",
-      paper: "IV",
+      paper: "III",
       kind: "long",
       marks: 10,
       minutes: 20,
@@ -3392,7 +3392,7 @@ topics.push({
     },
     {
       id: "obstetrics-early-pregnancy-bleeding-t2",
-      paper: "IV",
+      paper: "III",
       kind: "short-note",
       marks: 5,
       minutes: 10,
@@ -3807,7 +3807,7 @@ topics.push({
   theory: [
     {
       id: "obstetrics-postnatal-care-t1",
-      paper: "IV",
+      paper: "III",
       kind: "long",
       marks: 10,
       minutes: 20,
@@ -3920,7 +3920,7 @@ topics.push({
     },
     {
       id: "obstetrics-postnatal-care-t2",
-      paper: "IV",
+      paper: "III",
       kind: "enumerate",
       marks: 5,
       minutes: 8,
@@ -4581,7 +4581,7 @@ const subject: Subject = {
   title: "Obstetrics",
   blurb: "Antenatal care, anaemia, hypertensive disease, gestational diabetes, labour and postpartum haemorrhage.",
   icon: "Baby",
-  papers: ["IV"],
+  papers: ["III"],
   topics,
   cases,
 };

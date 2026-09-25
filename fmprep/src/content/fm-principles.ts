@@ -190,7 +190,7 @@ topics.push({
   pearls: [
     "Family medicine is the only specialty defined by a relationship rather than by an organ, a technique or a disease - open the answer with this sentence.",
     "Quote McWhinney's first principle exactly: commitment is to the person, not to a body of knowledge; everything else follows from it.",
-    "Starfield's four Cs - first contact, continuity, comprehensiveness, coordination - are the skeleton of half the Paper I questions in this subject.",
+    "Starfield's four Cs - first contact, continuity, comprehensiveness, coordination - are the skeleton of half the family-medicine paper (Paper IV) questions.",
     "Low prevalence changes test performance, not just probability: the same investigation ordered indiscriminately in general practice generates mostly false positives.",
     "In primary care the aim is to marginalise danger, not to make a pathological diagnosis for every symptom.",
     "Every consultation is an opportunity for prevention - an opportunistic blood pressure at a fever visit is the third McWhinney principle in action.",
@@ -200,7 +200,7 @@ topics.push({
   theory: [
     {
       id: "fm-principles-definition-t1",
-      paper: "I",
+      paper: "IV",
       kind: "long",
       marks: 10,
       minutes: 20,
@@ -285,7 +285,7 @@ topics.push({
     },
     {
       id: "fm-principles-definition-t2",
-      paper: "I",
+      paper: "IV",
       kind: "short-note",
       marks: 5,
       minutes: 10,
@@ -343,7 +343,7 @@ topics.push({
     },
     {
       id: "fm-principles-definition-t3",
-      paper: "I",
+      paper: "IV",
       kind: "enumerate",
       marks: 5,
       minutes: 8,
@@ -708,7 +708,7 @@ topics.push({
   theory: [
     {
       id: "fm-principles-consultation-t1",
-      paper: "I",
+      paper: "IV",
       kind: "long",
       marks: 10,
       minutes: 20,
@@ -803,7 +803,7 @@ topics.push({
     },
     {
       id: "fm-principles-consultation-t2",
-      paper: "I",
+      paper: "IV",
       kind: "short-note",
       marks: 5,
       minutes: 10,
@@ -857,7 +857,7 @@ topics.push({
     },
     {
       id: "fm-principles-consultation-t3",
-      paper: "I",
+      paper: "IV",
       kind: "short-note",
       marks: 5,
       minutes: 10,
@@ -1238,7 +1238,7 @@ topics.push({
   theory: [
     {
       id: "fm-principles-continuity-t1",
-      paper: "I",
+      paper: "IV",
       kind: "long",
       marks: 10,
       minutes: 20,
@@ -1322,7 +1322,7 @@ topics.push({
     },
     {
       id: "fm-principles-continuity-t2",
-      paper: "I",
+      paper: "IV",
       kind: "short-note",
       marks: 5,
       minutes: 10,
@@ -1738,7 +1738,7 @@ topics.push({
   theory: [
     {
       id: "fm-principles-family-unit-t1",
-      paper: "I",
+      paper: "IV",
       kind: "long",
       marks: 10,
       minutes: 20,
@@ -1834,7 +1834,7 @@ topics.push({
     },
     {
       id: "fm-principles-family-unit-t2",
-      paper: "I",
+      paper: "IV",
       kind: "define-classify",
       marks: 5,
       minutes: 10,
@@ -1898,7 +1898,7 @@ topics.push({
     },
     {
       id: "fm-principles-family-unit-t3",
-      paper: "I",
+      paper: "IV",
       kind: "short-note",
       marks: 5,
       minutes: 10,
@@ -2305,7 +2305,7 @@ topics.push({
   theory: [
     {
       id: "fm-principles-records-audit-t1",
-      paper: "I",
+      paper: "IV",
       kind: "long",
       marks: 10,
       minutes: 20,
@@ -2388,7 +2388,7 @@ topics.push({
     },
     {
       id: "fm-principles-records-audit-t2",
-      paper: "I",
+      paper: "IV",
       kind: "short-note",
       marks: 5,
       minutes: 10,
@@ -2794,7 +2794,7 @@ topics.push({
   theory: [
     {
       id: "fm-principles-ebm-t1",
-      paper: "I",
+      paper: "IV",
       kind: "long",
       marks: 10,
       minutes: 20,
@@ -2883,7 +2883,7 @@ topics.push({
     },
     {
       id: "fm-principles-ebm-t2",
-      paper: "I",
+      paper: "IV",
       kind: "short-note",
       marks: 5,
       minutes: 10,
@@ -3329,7 +3329,7 @@ topics.push({
   theory: [
     {
       id: "fm-principles-research-thesis-t1",
-      paper: "I",
+      paper: "IV",
       kind: "long",
       marks: 10,
       minutes: 20,
@@ -3435,7 +3435,7 @@ topics.push({
     },
     {
       id: "fm-principles-research-thesis-t2",
-      paper: "I",
+      paper: "IV",
       kind: "short-note",
       marks: 5,
       minutes: 10,
@@ -3837,7 +3837,7 @@ topics.push({
   theory: [
     {
       id: "fm-principles-biostatistics-t1",
-      paper: "I",
+      paper: "IV",
       kind: "long",
       marks: 10,
       minutes: 20,
@@ -3928,7 +3928,7 @@ topics.push({
     },
     {
       id: "fm-principles-biostatistics-t2",
-      paper: "I",
+      paper: "IV",
       kind: "short-note",
       marks: 5,
       minutes: 10,
@@ -4568,7 +4568,7 @@ const subject: Subject = {
   title: "Principles of Family Medicine & Research",
   blurb: "The consultation models, the family as the unit of care, audit, evidence-based medicine and research methods.",
   icon: "Users",
-  papers: ["I"],
+  papers: ["IV"],
   topics,
   cases,
 };

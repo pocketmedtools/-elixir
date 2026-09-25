@@ -235,7 +235,7 @@ topics.push({
   theory: [
     {
       id: "symptom-approach-fatigue-t1",
-      paper: "I",
+      paper: "IV",
       kind: "long",
       marks: 10,
       minutes: 20,
@@ -328,7 +328,7 @@ topics.push({
     },
     {
       id: "symptom-approach-fatigue-t2",
-      paper: "I",
+      paper: "IV",
       kind: "short-note",
       marks: 5,
       minutes: 10,
@@ -394,7 +394,7 @@ topics.push({
     },
     {
       id: "symptom-approach-fatigue-t3",
-      paper: "II",
+      paper: "I",
       kind: "differentiate",
       marks: 5,
       minutes: 8,
@@ -773,7 +773,7 @@ topics.push({
   theory: [
     {
       id: "symptom-approach-body-ache-t1",
-      paper: "II",
+      paper: "I",
       kind: "long",
       marks: 10,
       minutes: 20,
@@ -868,7 +868,7 @@ topics.push({
     },
     {
       id: "symptom-approach-body-ache-t2",
-      paper: "I",
+      paper: "IV",
       kind: "short-note",
       marks: 5,
       minutes: 10,
@@ -935,7 +935,7 @@ topics.push({
     },
     {
       id: "symptom-approach-body-ache-t3",
-      paper: "II",
+      paper: "I",
       kind: "enumerate",
       marks: 5,
       minutes: 8,
@@ -1320,7 +1320,7 @@ topics.push({
   theory: [
     {
       id: "symptom-approach-dizziness-t1",
-      paper: "II",
+      paper: "I",
       kind: "long",
       marks: 10,
       minutes: 20,
@@ -1421,7 +1421,7 @@ topics.push({
     },
     {
       id: "symptom-approach-dizziness-t2",
-      paper: "II",
+      paper: "I",
       kind: "short-note",
       marks: 5,
       minutes: 10,
@@ -1481,7 +1481,7 @@ topics.push({
     },
     {
       id: "symptom-approach-dizziness-t3",
-      paper: "II",
+      paper: "I",
       kind: "chart-flow",
       marks: 5,
       minutes: 8,
@@ -1917,7 +1917,7 @@ topics.push({
   theory: [
     {
       id: "symptom-approach-chest-pain-t1",
-      paper: "II",
+      paper: "I",
       kind: "long",
       marks: 10,
       minutes: 20,
@@ -2015,7 +2015,7 @@ topics.push({
     },
     {
       id: "symptom-approach-chest-pain-t2",
-      paper: "I",
+      paper: "IV",
       kind: "short-note",
       marks: 5,
       minutes: 10,
@@ -2076,7 +2076,7 @@ topics.push({
     },
     {
       id: "symptom-approach-chest-pain-t3",
-      paper: "II",
+      paper: "I",
       kind: "differentiate",
       marks: 5,
       minutes: 8,
@@ -2462,7 +2462,7 @@ topics.push({
   theory: [
     {
       id: "symptom-approach-breathlessness-t1",
-      paper: "II",
+      paper: "I",
       kind: "long",
       marks: 10,
       minutes: 20,
@@ -2554,7 +2554,7 @@ topics.push({
     },
     {
       id: "symptom-approach-breathlessness-t2",
-      paper: "II",
+      paper: "I",
       kind: "short-note",
       marks: 5,
       minutes: 10,
@@ -2622,7 +2622,7 @@ topics.push({
     },
     {
       id: "symptom-approach-breathlessness-t3",
-      paper: "II",
+      paper: "I",
       kind: "differentiate",
       marks: 5,
       minutes: 8,
@@ -3017,7 +3017,7 @@ topics.push({
   theory: [
     {
       id: "symptom-approach-fever-without-focus-t1",
-      paper: "I",
+      paper: "IV",
       kind: "long",
       marks: 10,
       minutes: 20,
@@ -3107,7 +3107,7 @@ topics.push({
     },
     {
       id: "symptom-approach-fever-without-focus-t2",
-      paper: "II",
+      paper: "I",
       kind: "short-note",
       marks: 5,
       minutes: 10,
@@ -3510,7 +3510,7 @@ topics.push({
   theory: [
     {
       id: "symptom-approach-headache-t1",
-      paper: "I",
+      paper: "IV",
       kind: "long",
       marks: 10,
       minutes: 20,
@@ -3614,7 +3614,7 @@ topics.push({
     },
     {
       id: "symptom-approach-headache-t2",
-      paper: "II",
+      paper: "I",
       kind: "short-note",
       marks: 5,
       minutes: 10,
@@ -4006,7 +4006,7 @@ topics.push({
   theory: [
     {
       id: "symptom-approach-chronic-cough-t1",
-      paper: "I",
+      paper: "IV",
       kind: "long",
       marks: 10,
       minutes: 20,
@@ -4106,7 +4106,7 @@ topics.push({
     },
     {
       id: "symptom-approach-chronic-cough-t2",
-      paper: "II",
+      paper: "I",
       kind: "chart-flow",
       marks: 5,
       minutes: 10,
@@ -4518,7 +4518,7 @@ topics.push({
   theory: [
     {
       id: "symptom-approach-weight-loss-t1",
-      paper: "I",
+      paper: "IV",
       kind: "long",
       marks: 10,
       minutes: 20,
@@ -4611,7 +4611,7 @@ topics.push({
     },
     {
       id: "symptom-approach-weight-loss-t2",
-      paper: "II",
+      paper: "I",
       kind: "short-note",
       marks: 5,
       minutes: 10,
@@ -5254,7 +5254,7 @@ const subject: Subject = {
   title: "Undifferentiated Symptoms",
   blurb: "The complaint as it actually walks in: tiredness, giddiness, body ache, chest pain, fever without focus.",
   icon: "Stethoscope",
-  papers: ["I", "II"],
+  papers: ["IV", "I"],
   topics,
   cases,
 };

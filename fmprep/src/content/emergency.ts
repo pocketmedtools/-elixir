@@ -218,7 +218,7 @@ topics.push({
   theory: [
     {
       id: "emergency-cardiac-arrest-t1",
-      paper: "III",
+      paper: "II",
       kind: "long",
       marks: 10,
       minutes: 20,
@@ -313,7 +313,7 @@ topics.push({
     },
     {
       id: "emergency-cardiac-arrest-t2",
-      paper: "III",
+      paper: "II",
       kind: "differentiate",
       marks: 5,
       minutes: 10,
@@ -379,7 +379,7 @@ topics.push({
     },
     {
       id: "emergency-cardiac-arrest-t3",
-      paper: "III",
+      paper: "II",
       kind: "enumerate",
       marks: 5,
       minutes: 8,
@@ -781,7 +781,7 @@ topics.push({
   theory: [
     {
       id: "emergency-anaphylaxis-t1",
-      paper: "III",
+      paper: "II",
       kind: "long",
       marks: 10,
       minutes: 20,
@@ -878,7 +878,7 @@ topics.push({
     },
     {
       id: "emergency-anaphylaxis-t2",
-      paper: "III",
+      paper: "II",
       kind: "short-note",
       marks: 5,
       minutes: 10,
@@ -937,7 +937,7 @@ topics.push({
     },
     {
       id: "emergency-anaphylaxis-t3",
-      paper: "III",
+      paper: "II",
       kind: "differentiate",
       marks: 5,
       minutes: 8,
@@ -1296,7 +1296,7 @@ topics.push({
   theory: [
     {
       id: "emergency-shock-t1",
-      paper: "III",
+      paper: "II",
       kind: "long",
       marks: 10,
       minutes: 20,
@@ -1394,7 +1394,7 @@ topics.push({
     },
     {
       id: "emergency-shock-t2",
-      paper: "III",
+      paper: "II",
       kind: "short-note",
       marks: 5,
       minutes: 10,
@@ -1882,7 +1882,7 @@ topics.push({
   theory: [
     {
       id: "emergency-poisoning-t1",
-      paper: "III",
+      paper: "II",
       kind: "long",
       marks: 10,
       minutes: 20,
@@ -1977,7 +1977,7 @@ topics.push({
     },
     {
       id: "emergency-poisoning-t2",
-      paper: "III",
+      paper: "II",
       kind: "short-note",
       marks: 5,
       minutes: 10,
@@ -2393,7 +2393,7 @@ topics.push({
   theory: [
     {
       id: "emergency-burns-t1",
-      paper: "III",
+      paper: "II",
       kind: "long",
       marks: 10,
       minutes: 20,
@@ -2490,7 +2490,7 @@ topics.push({
     },
     {
       id: "emergency-burns-t2",
-      paper: "III",
+      paper: "II",
       kind: "enumerate",
       marks: 5,
       minutes: 8,
@@ -2902,7 +2902,7 @@ topics.push({
   theory: [
     {
       id: "emergency-trauma-primary-survey-t1",
-      paper: "III",
+      paper: "II",
       kind: "long",
       marks: 10,
       minutes: 20,
@@ -2995,7 +2995,7 @@ topics.push({
     },
     {
       id: "emergency-trauma-primary-survey-t2",
-      paper: "III",
+      paper: "II",
       kind: "short-note",
       marks: 5,
       minutes: 10,
@@ -3422,7 +3422,7 @@ topics.push({
   theory: [
     {
       id: "emergency-altered-sensorium-t1",
-      paper: "III",
+      paper: "II",
       kind: "long",
       marks: 10,
       minutes: 20,
@@ -3530,7 +3530,7 @@ topics.push({
     },
     {
       id: "emergency-altered-sensorium-t2",
-      paper: "III",
+      paper: "II",
       kind: "short-note",
       marks: 5,
       minutes: 10,
@@ -3998,7 +3998,7 @@ topics.push({
   theory: [
     {
       id: "emergency-tray-and-readiness-t1",
-      paper: "III",
+      paper: "II",
       kind: "long",
       marks: 10,
       minutes: 20,
@@ -4102,7 +4102,7 @@ topics.push({
     },
     {
       id: "emergency-tray-and-readiness-t2",
-      paper: "III",
+      paper: "II",
       kind: "short-note",
       marks: 5,
       minutes: 10,
@@ -4743,7 +4743,7 @@ topics.push({
   theory: [
     {
       id: "emergency-ards-t1",
-      paper: "II",
+      paper: "I",
       kind: "long",
       marks: 10,
       minutes: 18,
@@ -4907,7 +4907,7 @@ topics.push({
     },
     {
       id: "emergency-ards-t2",
-      paper: "II",
+      paper: "I",
       kind: "differentiate",
       marks: 5,
       minutes: 9,
@@ -5622,7 +5622,7 @@ const subject: Subject = {
   title: "Emergency & Acute Care",
   blurb: "Resuscitation, anaphylaxis, shock, poisoning, burns, trauma and what the clinic tray must hold.",
   icon: "Activity",
-  papers: ["III"],
+  papers: ["II"],
   topics,
   cases,
 };

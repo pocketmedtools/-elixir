@@ -263,7 +263,7 @@ topics.push({
   theory: [
     {
       id: "surgery-office-wound-suturing-t1",
-      paper: "III",
+      paper: "II",
       kind: "long",
       marks: 10,
       minutes: 20,
@@ -357,7 +357,7 @@ topics.push({
     },
     {
       id: "surgery-office-wound-suturing-t2",
-      paper: "III",
+      paper: "II",
       kind: "short-note",
       marks: 5,
       minutes: 10,
@@ -422,7 +422,7 @@ topics.push({
     },
     {
       id: "surgery-office-wound-suturing-t3",
-      paper: "III",
+      paper: "II",
       kind: "differentiate",
       marks: 5,
       minutes: 8,
@@ -876,7 +876,7 @@ topics.push({
   theory: [
     {
       id: "surgery-office-abscess-ssti-t1",
-      paper: "III",
+      paper: "II",
       kind: "long",
       marks: 10,
       minutes: 20,
@@ -980,7 +980,7 @@ topics.push({
     },
     {
       id: "surgery-office-abscess-ssti-t2",
-      paper: "III",
+      paper: "II",
       kind: "short-note",
       marks: 5,
       minutes: 8,
@@ -1405,7 +1405,7 @@ topics.push({
   theory: [
     {
       id: "surgery-office-diabetic-foot-t1",
-      paper: "III",
+      paper: "II",
       kind: "long",
       marks: 10,
       minutes: 20,
@@ -1517,7 +1517,7 @@ topics.push({
     },
     {
       id: "surgery-office-diabetic-foot-t2",
-      paper: "III",
+      paper: "II",
       kind: "short-note",
       marks: 5,
       minutes: 8,
@@ -1966,7 +1966,7 @@ topics.push({
   theory: [
     {
       id: "surgery-office-minor-procedures-t1",
-      paper: "III",
+      paper: "II",
       kind: "long",
       marks: 10,
       minutes: 20,
@@ -2055,7 +2055,7 @@ topics.push({
     },
     {
       id: "surgery-office-minor-procedures-t2",
-      paper: "III",
+      paper: "II",
       kind: "short-note",
       marks: 5,
       minutes: 8,
@@ -2469,7 +2469,7 @@ topics.push({
   theory: [
     {
       id: "surgery-office-hernia-t1",
-      paper: "III",
+      paper: "II",
       kind: "long",
       marks: 10,
       minutes: 20,
@@ -2564,7 +2564,7 @@ topics.push({
     },
     {
       id: "surgery-office-hernia-t2",
-      paper: "III",
+      paper: "II",
       kind: "short-note",
       marks: 5,
       minutes: 8,
@@ -2985,7 +2985,7 @@ topics.push({
   theory: [
     {
       id: "surgery-office-breast-lump-t1",
-      paper: "III",
+      paper: "II",
       kind: "long",
       marks: 10,
       minutes: 20,
@@ -3086,7 +3086,7 @@ topics.push({
     },
     {
       id: "surgery-office-breast-lump-t2",
-      paper: "III",
+      paper: "II",
       kind: "differentiate",
       marks: 5,
       minutes: 8,
@@ -3506,7 +3506,7 @@ topics.push({
   theory: [
     {
       id: "surgery-office-catheter-ngt-injection-t1",
-      paper: "III",
+      paper: "II",
       kind: "long",
       marks: 10,
       minutes: 20,
@@ -3586,7 +3586,7 @@ topics.push({
     },
     {
       id: "surgery-office-catheter-ngt-injection-t2",
-      paper: "III",
+      paper: "II",
       kind: "short-note",
       marks: 5,
       minutes: 8,
@@ -4001,7 +4001,7 @@ topics.push({
   theory: [
     {
       id: "surgery-office-preop-postop-t1",
-      paper: "III",
+      paper: "II",
       kind: "long",
       marks: 10,
       minutes: 20,
@@ -4096,7 +4096,7 @@ topics.push({
     },
     {
       id: "surgery-office-preop-postop-t2",
-      paper: "III",
+      paper: "II",
       kind: "short-note",
       marks: 5,
       minutes: 8,
@@ -4627,7 +4627,7 @@ topics.push({
   theory: [
     {
       id: "surgery-office-procedural-sedation-ketamine-t1",
-      paper: "II",
+      paper: "I",
       kind: "long",
       marks: 10,
       minutes: 20,
@@ -4781,7 +4781,7 @@ topics.push({
     },
     {
       id: "surgery-office-procedural-sedation-ketamine-t2",
-      paper: "II",
+      paper: "I",
       kind: "short-note",
       marks: 5,
       minutes: 10,
@@ -5310,7 +5310,7 @@ topics.push({
   theory: [
     {
       id: "surgery-office-spinal-anaesthesia-t1",
-      paper: "II",
+      paper: "I",
       kind: "long",
       marks: 10,
       minutes: 20,
@@ -5459,7 +5459,7 @@ topics.push({
     },
     {
       id: "surgery-office-spinal-anaesthesia-t2",
-      paper: "II",
+      paper: "I",
       kind: "long",
       marks: 10,
       minutes: 20,
@@ -6225,7 +6225,7 @@ topics.push({
   theory: [
     {
       id: "surgery-office-blood-transfusion-t1",
-      paper: "II",
+      paper: "I",
       kind: "long",
       marks: 10,
       minutes: 20,
@@ -6343,7 +6343,7 @@ topics.push({
     },
     {
       id: "surgery-office-blood-transfusion-t2",
-      paper: "II",
+      paper: "I",
       kind: "long",
       marks: 10,
       minutes: 20,
@@ -6950,7 +6950,7 @@ topics.push({
   theory: [
     {
       id: "surgery-office-tracheostomy-t1",
-      paper: "II",
+      paper: "I",
       kind: "long",
       marks: 10,
       minutes: 20,
@@ -7064,7 +7064,7 @@ topics.push({
     },
     {
       id: "surgery-office-tracheostomy-t2",
-      paper: "II",
+      paper: "I",
       kind: "short-note",
       marks: 5,
       minutes: 9,
@@ -7718,7 +7718,7 @@ const subject: Subject = {
   title: "Surgery & Office Procedures",
   blurb: "Wounds and suturing, abscesses, lumps, hernia, diabetic foot and the procedures done in the clinic.",
   icon: "Scissors",
-  papers: ["III"],
+  papers: ["II"],
   topics,
   cases,
 };

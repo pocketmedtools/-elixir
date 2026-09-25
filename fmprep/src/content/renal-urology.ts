@@ -246,7 +246,7 @@ topics.push({
   theory: [
     {
       id: "renal-urology-chronic-kidney-disease-t1",
-      paper: "II",
+      paper: "I",
       kind: "long",
       marks: 10,
       minutes: 20,
@@ -346,7 +346,7 @@ topics.push({
     },
     {
       id: "renal-urology-chronic-kidney-disease-t2",
-      paper: "II",
+      paper: "I",
       kind: "define-classify",
       marks: 5,
       minutes: 10,
@@ -400,7 +400,7 @@ topics.push({
     },
     {
       id: "renal-urology-chronic-kidney-disease-t3",
-      paper: "III",
+      paper: "II",
       kind: "short-note",
       marks: 5,
       minutes: 10,
@@ -778,7 +778,7 @@ topics.push({
   theory: [
     {
       id: "renal-urology-acute-kidney-injury-t1",
-      paper: "II",
+      paper: "I",
       kind: "long",
       marks: 10,
       minutes: 20,
@@ -868,7 +868,7 @@ topics.push({
     },
     {
       id: "renal-urology-acute-kidney-injury-t2",
-      paper: "III",
+      paper: "II",
       kind: "short-note",
       marks: 5,
       minutes: 10,
@@ -1214,7 +1214,7 @@ topics.push({
   theory: [
     {
       id: "renal-urology-urinary-tract-infection-t1",
-      paper: "II",
+      paper: "I",
       kind: "long",
       marks: 10,
       minutes: 20,
@@ -1299,7 +1299,7 @@ topics.push({
     },
     {
       id: "renal-urology-urinary-tract-infection-t2",
-      paper: "III",
+      paper: "II",
       kind: "short-note",
       marks: 5,
       minutes: 10,
@@ -1654,7 +1654,7 @@ topics.push({
   theory: [
     {
       id: "renal-urology-luts-bph-t1",
-      paper: "II",
+      paper: "I",
       kind: "long",
       marks: 10,
       minutes: 20,
@@ -1748,7 +1748,7 @@ topics.push({
     },
     {
       id: "renal-urology-luts-bph-t2",
-      paper: "III",
+      paper: "II",
       kind: "short-note",
       marks: 5,
       minutes: 10,
@@ -2104,7 +2104,7 @@ topics.push({
   theory: [
     {
       id: "renal-urology-renal-stones-t1",
-      paper: "II",
+      paper: "I",
       kind: "long",
       marks: 10,
       minutes: 20,
@@ -2194,7 +2194,7 @@ topics.push({
     },
     {
       id: "renal-urology-renal-stones-t2",
-      paper: "III",
+      paper: "II",
       kind: "differentiate",
       marks: 5,
       minutes: 10,
@@ -2540,7 +2540,7 @@ topics.push({
   theory: [
     {
       id: "renal-urology-hyponatraemia-hyperkalaemia-t1",
-      paper: "II",
+      paper: "I",
       kind: "long",
       marks: 10,
       minutes: 20,
@@ -2628,7 +2628,7 @@ topics.push({
     },
     {
       id: "renal-urology-hyponatraemia-hyperkalaemia-t2",
-      paper: "III",
+      paper: "II",
       kind: "short-note",
       marks: 5,
       minutes: 10,
@@ -2974,7 +2974,7 @@ topics.push({
   theory: [
     {
       id: "renal-urology-drug-dosing-renal-impairment-t1",
-      paper: "II",
+      paper: "I",
       kind: "long",
       marks: 10,
       minutes: 20,
@@ -3062,7 +3062,7 @@ topics.push({
     },
     {
       id: "renal-urology-drug-dosing-renal-impairment-t2",
-      paper: "III",
+      paper: "II",
       kind: "enumerate",
       marks: 5,
       minutes: 10,
@@ -3438,7 +3438,7 @@ topics.push({
   theory: [
     {
       id: "renal-urology-proteinuria-nephrotic-nephritic-t1",
-      paper: "II",
+      paper: "I",
       kind: "long",
       marks: 10,
       minutes: 20,
@@ -3547,7 +3547,7 @@ topics.push({
     },
     {
       id: "renal-urology-proteinuria-nephrotic-nephritic-t2",
-      paper: "III",
+      paper: "II",
       kind: "differentiate",
       marks: 5,
       minutes: 10,
@@ -4070,7 +4070,7 @@ const subject: Subject = {
   title: "Renal & Urology",
   blurb: "Chronic kidney disease, acute kidney injury, stones, prostate disease and electrolyte trouble.",
   icon: "Droplets",
-  papers: ["II", "III"],
+  papers: ["I", "II"],
   topics,
   cases,
 };

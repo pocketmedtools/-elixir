@@ -287,7 +287,7 @@ topics.push({
   theory: [
     {
       id: "pediatrics-newborn-care-t1",
-      paper: "IV",
+      paper: "III",
       kind: "long",
       marks: 10,
       minutes: 20,
@@ -397,7 +397,7 @@ topics.push({
     },
     {
       id: "pediatrics-newborn-care-t2",
-      paper: "IV",
+      paper: "III",
       kind: "short-note",
       marks: 5,
       minutes: 10,
@@ -468,7 +468,7 @@ topics.push({
     },
     {
       id: "pediatrics-newborn-care-t3",
-      paper: "IV",
+      paper: "III",
       kind: "chart-flow",
       marks: 5,
       minutes: 10,
@@ -917,7 +917,7 @@ topics.push({
   theory: [
     {
       id: "pediatrics-immunisation-t1",
-      paper: "IV",
+      paper: "III",
       kind: "long",
       marks: 10,
       minutes: 20,
@@ -1019,7 +1019,7 @@ topics.push({
     },
     {
       id: "pediatrics-immunisation-t2",
-      paper: "IV",
+      paper: "III",
       kind: "short-note",
       marks: 5,
       minutes: 10,
@@ -1082,7 +1082,7 @@ topics.push({
     },
     {
       id: "pediatrics-immunisation-t3",
-      paper: "IV",
+      paper: "III",
       kind: "short-note",
       marks: 5,
       minutes: 8,
@@ -1496,7 +1496,7 @@ topics.push({
   theory: [
     {
       id: "pediatrics-growth-monitoring-t1",
-      paper: "IV",
+      paper: "III",
       kind: "long",
       minutes: 20,
       marks: 10,
@@ -1599,7 +1599,7 @@ topics.push({
     },
     {
       id: "pediatrics-growth-monitoring-t2",
-      paper: "IV",
+      paper: "III",
       kind: "short-note",
       marks: 5,
       minutes: 10,
@@ -1666,7 +1666,7 @@ topics.push({
     },
     {
       id: "pediatrics-growth-monitoring-t3",
-      paper: "IV",
+      paper: "III",
       kind: "differentiate",
       marks: 5,
       minutes: 8,
@@ -2081,7 +2081,7 @@ topics.push({
   theory: [
     {
       id: "pediatrics-imnci-t1",
-      paper: "IV",
+      paper: "III",
       kind: "long",
       marks: 10,
       minutes: 20,
@@ -2192,7 +2192,7 @@ topics.push({
     },
     {
       id: "pediatrics-imnci-t2",
-      paper: "IV",
+      paper: "III",
       kind: "enumerate",
       marks: 5,
       minutes: 8,
@@ -2268,7 +2268,7 @@ topics.push({
     },
     {
       id: "pediatrics-imnci-t3",
-      paper: "IV",
+      paper: "III",
       kind: "short-note",
       marks: 5,
       minutes: 8,
@@ -2695,7 +2695,7 @@ topics.push({
   theory: [
     {
       id: "pediatrics-diarrhoea-dehydration-t1",
-      paper: "IV",
+      paper: "III",
       kind: "long",
       marks: 10,
       minutes: 20,
@@ -2804,7 +2804,7 @@ topics.push({
     },
     {
       id: "pediatrics-diarrhoea-dehydration-t2",
-      paper: "IV",
+      paper: "III",
       kind: "short-note",
       marks: 5,
       minutes: 10,
@@ -3251,7 +3251,7 @@ topics.push({
   theory: [
     {
       id: "pediatrics-severe-acute-malnutrition-t1",
-      paper: "IV",
+      paper: "III",
       kind: "long",
       marks: 10,
       minutes: 20,
@@ -3361,7 +3361,7 @@ topics.push({
     },
     {
       id: "pediatrics-severe-acute-malnutrition-t2",
-      paper: "IV",
+      paper: "III",
       kind: "short-note",
       marks: 5,
       minutes: 10,
@@ -3750,7 +3750,7 @@ topics.push({
   theory: [
     {
       id: "pediatrics-fever-febrile-seizure-t1",
-      paper: "IV",
+      paper: "III",
       kind: "long",
       marks: 10,
       minutes: 20,
@@ -3853,7 +3853,7 @@ topics.push({
     },
     {
       id: "pediatrics-fever-febrile-seizure-t2",
-      paper: "IV",
+      paper: "III",
       kind: "short-note",
       marks: 5,
       minutes: 10,
@@ -4222,7 +4222,7 @@ topics.push({
   theory: [
     {
       id: "pediatrics-anaemia-deworming-t1",
-      paper: "IV",
+      paper: "III",
       kind: "long",
       marks: 10,
       minutes: 20,
@@ -4318,7 +4318,7 @@ topics.push({
     },
     {
       id: "pediatrics-anaemia-deworming-t2",
-      paper: "IV",
+      paper: "III",
       kind: "short-note",
       marks: 5,
       minutes: 10,
@@ -4884,7 +4884,7 @@ topics.push({
   theory: [
     {
       id: "pediatrics-congenital-heart-disease-t1",
-      paper: "III",
+      paper: "II",
       kind: "long",
       marks: 10,
       minutes: 20,
@@ -4998,7 +4998,7 @@ topics.push({
     },
     {
       id: "pediatrics-congenital-heart-disease-t2",
-      paper: "III",
+      paper: "II",
       kind: "long",
       marks: 10,
       minutes: 20,
@@ -5592,7 +5592,7 @@ topics.push({
   theory: [
     {
       id: "pediatrics-nocturnal-enuresis-t1",
-      paper: "III",
+      paper: "II",
       kind: "long",
       marks: 10,
       minutes: 18,
@@ -5731,7 +5731,7 @@ topics.push({
     },
     {
       id: "pediatrics-nocturnal-enuresis-t2",
-      paper: "III",
+      paper: "II",
       kind: "long",
       marks: 10,
       minutes: 18,
@@ -6436,7 +6436,7 @@ topics.push({
   theory: [
     {
       id: "pediatrics-oral-thrush-t1",
-      paper: "III",
+      paper: "II",
       kind: "long",
       marks: 10,
       minutes: 18,
@@ -6601,7 +6601,7 @@ topics.push({
     },
     {
       id: "pediatrics-oral-thrush-t2",
-      paper: "III",
+      paper: "II",
       kind: "short-note",
       marks: 5,
       minutes: 9,
@@ -7281,7 +7281,7 @@ const subject: Subject = {
   title: "Paediatrics",
   blurb: "Newborn care, growth, immunisation, IMNCI, diarrhoea, malnutrition and the sick child under five.",
   icon: "Baby",
-  papers: ["IV"],
+  papers: ["III"],
   topics,
   cases,
 };

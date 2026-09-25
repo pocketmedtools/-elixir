@@ -262,7 +262,7 @@ topics.push({
   theory: [
     {
       id: "cardiovascular-hypertension-t1",
-      paper: "II",
+      paper: "I",
       kind: "long",
       marks: 10,
       minutes: 20,
@@ -364,7 +364,7 @@ topics.push({
     },
     {
       id: "cardiovascular-hypertension-t2",
-      paper: "II",
+      paper: "I",
       kind: "short-note",
       marks: 5,
       minutes: 10,
@@ -431,7 +431,7 @@ topics.push({
     },
     {
       id: "cardiovascular-hypertension-t3",
-      paper: "II",
+      paper: "I",
       kind: "enumerate",
       marks: 5,
       minutes: 8,
@@ -850,7 +850,7 @@ topics.push({
   theory: [
     {
       id: "cardiovascular-stable-angina-t1",
-      paper: "II",
+      paper: "I",
       kind: "long",
       marks: 10,
       minutes: 20,
@@ -951,7 +951,7 @@ topics.push({
     },
     {
       id: "cardiovascular-stable-angina-t2",
-      paper: "II",
+      paper: "I",
       kind: "differentiate",
       marks: 5,
       minutes: 10,
@@ -1365,7 +1365,7 @@ topics.push({
   theory: [
     {
       id: "cardiovascular-acs-t1",
-      paper: "II",
+      paper: "I",
       kind: "long",
       marks: 10,
       minutes: 20,
@@ -1472,7 +1472,7 @@ topics.push({
     },
     {
       id: "cardiovascular-acs-t2",
-      paper: "II",
+      paper: "I",
       kind: "enumerate",
       marks: 5,
       minutes: 10,
@@ -1539,7 +1539,7 @@ topics.push({
     },
     {
       id: "cardiovascular-acs-t3",
-      paper: "II",
+      paper: "I",
       kind: "short-note",
       marks: 5,
       minutes: 10,
@@ -2023,7 +2023,7 @@ topics.push({
   theory: [
     {
       id: "cardiovascular-heart-failure-t1",
-      paper: "II",
+      paper: "I",
       kind: "long",
       marks: 10,
       minutes: 20,
@@ -2129,7 +2129,7 @@ topics.push({
     },
     {
       id: "cardiovascular-heart-failure-t2",
-      paper: "II",
+      paper: "I",
       kind: "short-note",
       marks: 5,
       minutes: 10,
@@ -2192,7 +2192,7 @@ topics.push({
     },
     {
       id: "cardiovascular-heart-failure-t3",
-      paper: "II",
+      paper: "I",
       kind: "differentiate",
       marks: 5,
       minutes: 10,
@@ -2576,7 +2576,7 @@ topics.push({
   theory: [
     {
       id: "cardiovascular-dyslipidaemia-t1",
-      paper: "II",
+      paper: "I",
       kind: "long",
       marks: 10,
       minutes: 20,
@@ -2662,7 +2662,7 @@ topics.push({
     },
     {
       id: "cardiovascular-dyslipidaemia-t2",
-      paper: "II",
+      paper: "I",
       kind: "short-note",
       marks: 5,
       minutes: 10,
@@ -3036,7 +3036,7 @@ topics.push({
   theory: [
     {
       id: "cardiovascular-atrial-fibrillation-t1",
-      paper: "II",
+      paper: "I",
       kind: "long",
       marks: 10,
       minutes: 20,
@@ -3126,7 +3126,7 @@ topics.push({
     },
     {
       id: "cardiovascular-atrial-fibrillation-t2",
-      paper: "II",
+      paper: "I",
       kind: "short-note",
       marks: 5,
       minutes: 10,
@@ -3531,7 +3531,7 @@ topics.push({
   theory: [
     {
       id: "cardiovascular-ecg-t1",
-      paper: "II",
+      paper: "I",
       kind: "long",
       marks: 10,
       minutes: 20,
@@ -3622,7 +3622,7 @@ topics.push({
     },
     {
       id: "cardiovascular-ecg-t2",
-      paper: "II",
+      paper: "I",
       kind: "short-note",
       marks: 5,
       minutes: 10,
@@ -4001,7 +4001,7 @@ topics.push({
   theory: [
     {
       id: "cardiovascular-pad-vte-t1",
-      paper: "II",
+      paper: "I",
       kind: "long",
       marks: 10,
       minutes: 20,
@@ -4092,7 +4092,7 @@ topics.push({
     },
     {
       id: "cardiovascular-pad-vte-t2",
-      paper: "II",
+      paper: "I",
       kind: "short-note",
       marks: 5,
       minutes: 10,
@@ -4727,7 +4727,7 @@ const subject: Subject = {
   title: "Cardiovascular",
   blurb: "Hypertension, coronary disease, heart failure, atrial fibrillation, rheumatic heart disease and lipids.",
   icon: "Heart",
-  papers: ["II"],
+  papers: ["I"],
   topics,
   cases,
 };

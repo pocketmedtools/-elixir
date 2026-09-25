@@ -230,7 +230,7 @@ topics.push({
   theory: [
     {
       id: "eye-ent-red-eye-t1",
-      paper: "III",
+      paper: "II",
       kind: "differentiate",
       marks: 10,
       minutes: 20,
@@ -327,7 +327,7 @@ topics.push({
     },
     {
       id: "eye-ent-red-eye-t2",
-      paper: "III",
+      paper: "II",
       kind: "short-note",
       marks: 5,
       minutes: 10,
@@ -396,7 +396,7 @@ topics.push({
     },
     {
       id: "eye-ent-red-eye-t3",
-      paper: "III",
+      paper: "II",
       kind: "enumerate",
       marks: 5,
       minutes: 8,
@@ -827,7 +827,7 @@ topics.push({
   theory: [
     {
       id: "eye-ent-otitis-t1",
-      paper: "III",
+      paper: "II",
       kind: "long",
       marks: 10,
       minutes: 20,
@@ -932,7 +932,7 @@ topics.push({
     },
     {
       id: "eye-ent-otitis-t2",
-      paper: "III",
+      paper: "II",
       kind: "differentiate",
       marks: 5,
       minutes: 10,
@@ -1353,7 +1353,7 @@ topics.push({
   theory: [
     {
       id: "eye-ent-sore-throat-t1",
-      paper: "III",
+      paper: "II",
       kind: "long",
       marks: 10,
       minutes: 20,
@@ -1468,7 +1468,7 @@ topics.push({
     },
     {
       id: "eye-ent-sore-throat-t2",
-      paper: "III",
+      paper: "II",
       kind: "short-note",
       marks: 5,
       minutes: 10,
@@ -1891,7 +1891,7 @@ topics.push({
   theory: [
     {
       id: "eye-ent-rhinitis-sinusitis-t1",
-      paper: "III",
+      paper: "II",
       kind: "long",
       marks: 10,
       minutes: 20,
@@ -2002,7 +2002,7 @@ topics.push({
     },
     {
       id: "eye-ent-rhinitis-sinusitis-t2",
-      paper: "III",
+      paper: "II",
       kind: "short-note",
       marks: 5,
       minutes: 10,
@@ -2372,7 +2372,7 @@ topics.push({
   theory: [
     {
       id: "eye-ent-refractive-error-t1",
-      paper: "III",
+      paper: "II",
       kind: "long",
       marks: 10,
       minutes: 20,
@@ -2455,7 +2455,7 @@ topics.push({
     },
     {
       id: "eye-ent-refractive-error-t2",
-      paper: "III",
+      paper: "II",
       kind: "short-note",
       marks: 5,
       minutes: 10,
@@ -2827,7 +2827,7 @@ topics.push({
   theory: [
     {
       id: "eye-ent-cataract-dr-glaucoma-t1",
-      paper: "III",
+      paper: "II",
       kind: "long",
       marks: 10,
       minutes: 20,
@@ -2927,7 +2927,7 @@ topics.push({
     },
     {
       id: "eye-ent-cataract-dr-glaucoma-t2",
-      paper: "III",
+      paper: "II",
       kind: "short-note",
       marks: 5,
       minutes: 10,
@@ -3317,7 +3317,7 @@ topics.push({
   theory: [
     {
       id: "eye-ent-hearing-loss-t1",
-      paper: "III",
+      paper: "II",
       kind: "long",
       marks: 10,
       minutes: 20,
@@ -3418,7 +3418,7 @@ topics.push({
     },
     {
       id: "eye-ent-hearing-loss-t2",
-      paper: "III",
+      paper: "II",
       kind: "short-note",
       marks: 5,
       minutes: 10,
@@ -3793,7 +3793,7 @@ topics.push({
   theory: [
     {
       id: "eye-ent-epistaxis-foreign-bodies-t1",
-      paper: "III",
+      paper: "II",
       kind: "long",
       marks: 10,
       minutes: 20,
@@ -3890,7 +3890,7 @@ topics.push({
     },
     {
       id: "eye-ent-epistaxis-foreign-bodies-t2",
-      paper: "III",
+      paper: "II",
       kind: "short-note",
       marks: 5,
       minutes: 10,
@@ -4537,7 +4537,7 @@ const subject: Subject = {
   title: "Eye & ENT",
   blurb: "The red eye, vision screening, otitis, hearing loss, epistaxis, sore throat and oral cancer screening.",
   icon: "Eye",
-  papers: ["III"],
+  papers: ["II"],
   topics,
   cases,
 };

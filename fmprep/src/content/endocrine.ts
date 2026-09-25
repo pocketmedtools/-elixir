@@ -255,7 +255,7 @@ topics.push({
   theory: [
     {
       id: "endocrine-t2dm-diagnosis-oral-drugs-t1",
-      paper: "II",
+      paper: "I",
       kind: "long",
       marks: 10,
       minutes: 18,
@@ -348,7 +348,7 @@ topics.push({
     },
     {
       id: "endocrine-t2dm-diagnosis-oral-drugs-t2",
-      paper: "II",
+      paper: "I",
       kind: "short-note",
       marks: 5,
       minutes: 9,
@@ -413,7 +413,7 @@ topics.push({
     },
     {
       id: "endocrine-t2dm-diagnosis-oral-drugs-t3",
-      paper: "II",
+      paper: "I",
       kind: "differentiate",
       marks: 5,
       minutes: 9,
@@ -768,7 +768,7 @@ topics.push({
   theory: [
     {
       id: "endocrine-insulin-initiation-t1",
-      paper: "II",
+      paper: "I",
       kind: "long",
       marks: 10,
       minutes: 18,
@@ -859,7 +859,7 @@ topics.push({
     },
     {
       id: "endocrine-insulin-initiation-t2",
-      paper: "II",
+      paper: "I",
       kind: "short-note",
       marks: 5,
       minutes: 9,
@@ -1255,7 +1255,7 @@ topics.push({
   theory: [
     {
       id: "endocrine-diabetes-complication-screening-t1",
-      paper: "II",
+      paper: "I",
       kind: "long",
       marks: 10,
       minutes: 18,
@@ -1348,7 +1348,7 @@ topics.push({
     },
     {
       id: "endocrine-diabetes-complication-screening-t2",
-      paper: "II",
+      paper: "I",
       kind: "short-note",
       marks: 5,
       minutes: 9,
@@ -1408,7 +1408,7 @@ topics.push({
     },
     {
       id: "endocrine-diabetes-complication-screening-t3",
-      paper: "II",
+      paper: "I",
       kind: "chart-flow",
       marks: 5,
       minutes: 9,
@@ -1746,7 +1746,7 @@ topics.push({
   theory: [
     {
       id: "endocrine-hypoglycaemia-t1",
-      paper: "II",
+      paper: "I",
       kind: "long",
       marks: 10,
       minutes: 18,
@@ -1839,7 +1839,7 @@ topics.push({
     },
     {
       id: "endocrine-hypoglycaemia-t2",
-      paper: "II",
+      paper: "I",
       kind: "short-note",
       marks: 5,
       minutes: 9,
@@ -2174,7 +2174,7 @@ topics.push({
   theory: [
     {
       id: "endocrine-hypothyroidism-t1",
-      paper: "II",
+      paper: "I",
       kind: "long",
       marks: 10,
       minutes: 18,
@@ -2258,7 +2258,7 @@ topics.push({
     },
     {
       id: "endocrine-hypothyroidism-t2",
-      paper: "II",
+      paper: "I",
       kind: "short-note",
       marks: 5,
       minutes: 9,
@@ -2316,7 +2316,7 @@ topics.push({
     },
     {
       id: "endocrine-hypothyroidism-t3",
-      paper: "II",
+      paper: "I",
       kind: "short-note",
       marks: 5,
       minutes: 9,
@@ -2640,7 +2640,7 @@ topics.push({
   theory: [
     {
       id: "endocrine-diabetic-emergencies-t1",
-      paper: "II",
+      paper: "I",
       kind: "long",
       marks: 10,
       minutes: 18,
@@ -2732,7 +2732,7 @@ topics.push({
     },
     {
       id: "endocrine-diabetic-emergencies-t2",
-      paper: "II",
+      paper: "I",
       kind: "differentiate",
       marks: 5,
       minutes: 9,
@@ -3134,7 +3134,7 @@ topics.push({
   theory: [
     {
       id: "endocrine-hyperthyroidism-nodule-t1",
-      paper: "II",
+      paper: "I",
       kind: "long",
       marks: 10,
       minutes: 18,
@@ -3218,7 +3218,7 @@ topics.push({
     },
     {
       id: "endocrine-hyperthyroidism-nodule-t2",
-      paper: "II",
+      paper: "I",
       kind: "short-note",
       marks: 5,
       minutes: 9,
@@ -3275,7 +3275,7 @@ topics.push({
     },
     {
       id: "endocrine-hyperthyroidism-nodule-t3",
-      paper: "II",
+      paper: "I",
       kind: "chart-flow",
       marks: 5,
       minutes: 9,
@@ -3671,7 +3671,7 @@ topics.push({
   theory: [
     {
       id: "endocrine-obesity-metabolic-syndrome-t1",
-      paper: "II",
+      paper: "I",
       kind: "long",
       marks: 10,
       minutes: 18,
@@ -3750,7 +3750,7 @@ topics.push({
     },
     {
       id: "endocrine-obesity-metabolic-syndrome-t2",
-      paper: "II",
+      paper: "I",
       kind: "define-classify",
       marks: 5,
       minutes: 9,
@@ -3809,7 +3809,7 @@ topics.push({
     },
     {
       id: "endocrine-obesity-metabolic-syndrome-t3",
-      paper: "II",
+      paper: "I",
       kind: "short-note",
       marks: 5,
       minutes: 9,
@@ -4195,7 +4195,7 @@ topics.push({
   theory: [
     {
       id: "endocrine-vitamin-d-calcium-t1",
-      paper: "II",
+      paper: "I",
       kind: "long",
       marks: 10,
       minutes: 18,
@@ -4276,7 +4276,7 @@ topics.push({
     },
     {
       id: "endocrine-vitamin-d-calcium-t2",
-      paper: "II",
+      paper: "I",
       kind: "short-note",
       marks: 5,
       minutes: 9,
@@ -4671,7 +4671,7 @@ topics.push({
   theory: [
     {
       id: "endocrine-adrenal-disorders-t1",
-      paper: "II",
+      paper: "I",
       kind: "long",
       marks: 10,
       minutes: 18,
@@ -4755,7 +4755,7 @@ topics.push({
     },
     {
       id: "endocrine-adrenal-disorders-t2",
-      paper: "II",
+      paper: "I",
       kind: "short-note",
       marks: 5,
       minutes: 9,
@@ -5380,7 +5380,7 @@ const subject: Subject = {
   blurb:
     "Diabetes from diagnosis through insulin, complication screening and the emergencies, then thyroid disease, obesity and the metabolic syndrome, vitamin D and calcium, and the adrenal tail.",
   icon: "Activity",
-  papers: ["II"],
+  papers: ["I"],
   topics,
   cases,
 };

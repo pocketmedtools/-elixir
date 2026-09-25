@@ -263,7 +263,7 @@ topics.push({
   theory: [
     {
       id: "gastro-hepatology-acid-peptic-gerd-t1",
-      paper: "II",
+      paper: "I",
       kind: "long",
       marks: 10,
       minutes: 20,
@@ -358,7 +358,7 @@ topics.push({
     },
     {
       id: "gastro-hepatology-acid-peptic-gerd-t2",
-      paper: "II",
+      paper: "I",
       kind: "short-note",
       marks: 5,
       minutes: 10,
@@ -422,7 +422,7 @@ topics.push({
     },
     {
       id: "gastro-hepatology-acid-peptic-gerd-t3",
-      paper: "II",
+      paper: "I",
       kind: "enumerate",
       marks: 5,
       minutes: 8,
@@ -836,7 +836,7 @@ topics.push({
   theory: [
     {
       id: "gastro-hepatology-acute-diarrhoea-t1",
-      paper: "II",
+      paper: "I",
       kind: "long",
       marks: 10,
       minutes: 20,
@@ -941,7 +941,7 @@ topics.push({
     },
     {
       id: "gastro-hepatology-acute-diarrhoea-t2",
-      paper: "II",
+      paper: "I",
       kind: "short-note",
       marks: 5,
       minutes: 10,
@@ -1008,7 +1008,7 @@ topics.push({
     },
     {
       id: "gastro-hepatology-acute-diarrhoea-t3",
-      paper: "II",
+      paper: "I",
       kind: "chart-flow",
       marks: 5,
       minutes: 10,
@@ -1451,7 +1451,7 @@ topics.push({
   theory: [
     {
       id: "gastro-hepatology-jaundice-t1",
-      paper: "II",
+      paper: "I",
       kind: "long",
       marks: 10,
       minutes: 20,
@@ -1564,7 +1564,7 @@ topics.push({
     },
     {
       id: "gastro-hepatology-jaundice-t2",
-      paper: "II",
+      paper: "I",
       kind: "short-note",
       marks: 5,
       minutes: 10,
@@ -1632,7 +1632,7 @@ topics.push({
     },
     {
       id: "gastro-hepatology-jaundice-t3",
-      paper: "II",
+      paper: "I",
       kind: "differentiate",
       marks: 5,
       minutes: 8,
@@ -2072,7 +2072,7 @@ topics.push({
   theory: [
     {
       id: "gastro-hepatology-viral-hepatitis-t1",
-      paper: "II",
+      paper: "I",
       kind: "long",
       marks: 10,
       minutes: 20,
@@ -2192,7 +2192,7 @@ topics.push({
     },
     {
       id: "gastro-hepatology-viral-hepatitis-t2",
-      paper: "II",
+      paper: "I",
       kind: "short-note",
       marks: 5,
       minutes: 10,
@@ -2254,7 +2254,7 @@ topics.push({
     },
     {
       id: "gastro-hepatology-viral-hepatitis-t3",
-      paper: "II",
+      paper: "I",
       kind: "short-note",
       marks: 5,
       minutes: 10,
@@ -2692,7 +2692,7 @@ topics.push({
   theory: [
     {
       id: "gastro-hepatology-chronic-liver-disease-t1",
-      paper: "II",
+      paper: "I",
       kind: "long",
       marks: 10,
       minutes: 20,
@@ -2787,7 +2787,7 @@ topics.push({
     },
     {
       id: "gastro-hepatology-chronic-liver-disease-t2",
-      paper: "II",
+      paper: "I",
       kind: "short-note",
       marks: 5,
       minutes: 10,
@@ -3131,7 +3131,7 @@ topics.push({
   theory: [
     {
       id: "gastro-hepatology-gi-bleeding-t1",
-      paper: "II",
+      paper: "I",
       kind: "long",
       marks: 10,
       minutes: 20,
@@ -3221,7 +3221,7 @@ topics.push({
     },
     {
       id: "gastro-hepatology-gi-bleeding-t2",
-      paper: "II",
+      paper: "I",
       kind: "short-note",
       marks: 5,
       minutes: 10,
@@ -3614,7 +3614,7 @@ topics.push({
   theory: [
     {
       id: "gastro-hepatology-ibs-constipation-t1",
-      paper: "II",
+      paper: "I",
       kind: "long",
       marks: 10,
       minutes: 20,
@@ -3703,7 +3703,7 @@ topics.push({
     },
     {
       id: "gastro-hepatology-ibs-constipation-t2",
-      paper: "II",
+      paper: "I",
       kind: "short-note",
       marks: 5,
       minutes: 10,
@@ -4153,7 +4153,7 @@ topics.push({
   theory: [
     {
       id: "gastro-hepatology-acute-abdomen-pancreatitis-t1",
-      paper: "II",
+      paper: "I",
       kind: "long",
       marks: 10,
       minutes: 20,
@@ -4248,7 +4248,7 @@ topics.push({
     },
     {
       id: "gastro-hepatology-acute-abdomen-pancreatitis-t2",
-      paper: "II",
+      paper: "I",
       kind: "short-note",
       marks: 5,
       minutes: 10,
@@ -4817,7 +4817,7 @@ const subject: Subject = {
   title: "Gastroenterology & Hepatology",
   blurb: "Acid peptic disease, diarrhoea, jaundice, chronic liver disease and the acute abdomen in general practice.",
   icon: "Pill",
-  papers: ["II"],
+  papers: ["I"],
   topics,
   cases,
 };

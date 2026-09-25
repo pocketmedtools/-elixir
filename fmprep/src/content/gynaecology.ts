@@ -205,7 +205,7 @@ topics.push({
   theory: [
     {
       id: "gynaecology-abnormal-uterine-bleeding-t1",
-      paper: "IV",
+      paper: "III",
       kind: "long",
       marks: 10,
       minutes: 20,
@@ -285,7 +285,7 @@ topics.push({
     },
     {
       id: "gynaecology-abnormal-uterine-bleeding-t2",
-      paper: "IV",
+      paper: "III",
       kind: "short-note",
       marks: 5,
       minutes: 10,
@@ -343,7 +343,7 @@ topics.push({
     },
     {
       id: "gynaecology-abnormal-uterine-bleeding-t3",
-      paper: "IV",
+      paper: "III",
       kind: "enumerate",
       marks: 5,
       minutes: 8,
@@ -740,7 +740,7 @@ topics.push({
   theory: [
     {
       id: "gynaecology-contraception-t1",
-      paper: "IV",
+      paper: "III",
       kind: "long",
       marks: 10,
       minutes: 20,
@@ -810,7 +810,7 @@ topics.push({
     },
     {
       id: "gynaecology-contraception-t2",
-      paper: "IV",
+      paper: "III",
       kind: "short-note",
       marks: 5,
       minutes: 10,
@@ -876,7 +876,7 @@ topics.push({
     },
     {
       id: "gynaecology-contraception-t3",
-      paper: "IV",
+      paper: "III",
       kind: "chart-flow",
       marks: 5,
       minutes: 8,
@@ -1257,7 +1257,7 @@ topics.push({
   theory: [
     {
       id: "gynaecology-pcos-t1",
-      paper: "IV",
+      paper: "III",
       kind: "long",
       marks: 10,
       minutes: 20,
@@ -1342,7 +1342,7 @@ topics.push({
     },
     {
       id: "gynaecology-pcos-t2",
-      paper: "IV",
+      paper: "III",
       kind: "short-note",
       marks: 5,
       minutes: 10,
@@ -1400,7 +1400,7 @@ topics.push({
     },
     {
       id: "gynaecology-pcos-t3",
-      paper: "IV",
+      paper: "III",
       kind: "differentiate",
       marks: 5,
       minutes: 8,
@@ -1782,7 +1782,7 @@ topics.push({
   theory: [
     {
       id: "gynaecology-vaginal-discharge-pid-t1",
-      paper: "IV",
+      paper: "III",
       kind: "long",
       marks: 10,
       minutes: 20,
@@ -1872,7 +1872,7 @@ topics.push({
     },
     {
       id: "gynaecology-vaginal-discharge-pid-t2",
-      paper: "IV",
+      paper: "III",
       kind: "short-note",
       marks: 5,
       minutes: 10,
@@ -2255,7 +2255,7 @@ topics.push({
   theory: [
     {
       id: "gynaecology-infertility-workup-t1",
-      paper: "IV",
+      paper: "III",
       kind: "long",
       marks: 10,
       minutes: 20,
@@ -2360,7 +2360,7 @@ topics.push({
     },
     {
       id: "gynaecology-infertility-workup-t2",
-      paper: "IV",
+      paper: "III",
       kind: "short-note",
       marks: 5,
       minutes: 10,
@@ -2766,7 +2766,7 @@ topics.push({
   theory: [
     {
       id: "gynaecology-dysmenorrhoea-endometriosis-fibroids-t1",
-      paper: "IV",
+      paper: "III",
       kind: "long",
       marks: 10,
       minutes: 20,
@@ -2858,7 +2858,7 @@ topics.push({
     },
     {
       id: "gynaecology-dysmenorrhoea-endometriosis-fibroids-t2",
-      paper: "IV",
+      paper: "III",
       kind: "short-note",
       marks: 5,
       minutes: 10,
@@ -3237,7 +3237,7 @@ topics.push({
   theory: [
     {
       id: "gynaecology-cervical-cancer-screening-t1",
-      paper: "IV",
+      paper: "III",
       kind: "long",
       marks: 10,
       minutes: 20,
@@ -3313,7 +3313,7 @@ topics.push({
     },
     {
       id: "gynaecology-cervical-cancer-screening-t2",
-      paper: "IV",
+      paper: "III",
       kind: "short-note",
       marks: 5,
       minutes: 10,
@@ -3742,7 +3742,7 @@ topics.push({
   theory: [
     {
       id: "gynaecology-menopause-hormone-therapy-t1",
-      paper: "IV",
+      paper: "III",
       kind: "long",
       marks: 10,
       minutes: 20,
@@ -3851,7 +3851,7 @@ topics.push({
     },
     {
       id: "gynaecology-menopause-hormone-therapy-t2",
-      paper: "IV",
+      paper: "III",
       kind: "short-note",
       marks: 5,
       minutes: 10,
@@ -4593,7 +4593,7 @@ topics.push({
   theory: [
     {
       id: "gynaecology-uterine-prolapse-t1",
-      paper: "IV",
+      paper: "III",
       kind: "long",
       marks: 10,
       minutes: 20,
@@ -4787,7 +4787,7 @@ topics.push({
     },
     {
       id: "gynaecology-uterine-prolapse-t2",
-      paper: "IV",
+      paper: "III",
       kind: "long",
       marks: 10,
       minutes: 20,
@@ -5517,7 +5517,7 @@ const subject: Subject = {
   title: "Gynaecology",
   blurb: "Abnormal bleeding, contraception, PCOS, infertility, discharge, menopause and cancer screening.",
   icon: "HeartPulse",
-  papers: ["IV"],
+  papers: ["III"],
   topics,
   cases,
 };

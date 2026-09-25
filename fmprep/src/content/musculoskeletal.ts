@@ -234,7 +234,7 @@ topics.push({
   theory: [
     {
       id: "musculoskeletal-low-back-pain-t1",
-      paper: "II",
+      paper: "I",
       kind: "long",
       marks: 10,
       minutes: 20,
@@ -339,7 +339,7 @@ topics.push({
     },
     {
       id: "musculoskeletal-low-back-pain-t2",
-      paper: "II",
+      paper: "I",
       kind: "short-note",
       marks: 5,
       minutes: 10,
@@ -400,7 +400,7 @@ topics.push({
     },
     {
       id: "musculoskeletal-low-back-pain-t3",
-      paper: "II",
+      paper: "I",
       kind: "differentiate",
       marks: 5,
       minutes: 8,
@@ -790,7 +790,7 @@ topics.push({
   theory: [
     {
       id: "musculoskeletal-knee-osteoarthritis-t1",
-      paper: "II",
+      paper: "I",
       kind: "long",
       marks: 10,
       minutes: 20,
@@ -908,7 +908,7 @@ topics.push({
     },
     {
       id: "musculoskeletal-knee-osteoarthritis-t2",
-      paper: "II",
+      paper: "I",
       kind: "short-note",
       marks: 5,
       minutes: 10,
@@ -981,7 +981,7 @@ topics.push({
     },
     {
       id: "musculoskeletal-knee-osteoarthritis-t3",
-      paper: "III",
+      paper: "II",
       kind: "enumerate",
       marks: 5,
       minutes: 8,
@@ -1405,7 +1405,7 @@ topics.push({
   theory: [
     {
       id: "musculoskeletal-gout-t1",
-      paper: "II",
+      paper: "I",
       kind: "long",
       marks: 10,
       minutes: 20,
@@ -1494,7 +1494,7 @@ topics.push({
     },
     {
       id: "musculoskeletal-gout-t2",
-      paper: "III",
+      paper: "II",
       kind: "short-note",
       marks: 5,
       minutes: 10,
@@ -1914,7 +1914,7 @@ topics.push({
   theory: [
     {
       id: "musculoskeletal-shoulder-pain-t1",
-      paper: "II",
+      paper: "I",
       kind: "long",
       marks: 10,
       minutes: 20,
@@ -2022,7 +2022,7 @@ topics.push({
     },
     {
       id: "musculoskeletal-shoulder-pain-t2",
-      paper: "III",
+      paper: "II",
       kind: "differentiate",
       marks: 5,
       minutes: 10,
@@ -2417,7 +2417,7 @@ topics.push({
   theory: [
     {
       id: "musculoskeletal-neck-pain-t1",
-      paper: "II",
+      paper: "I",
       kind: "long",
       marks: 10,
       minutes: 20,
@@ -2517,7 +2517,7 @@ topics.push({
     },
     {
       id: "musculoskeletal-neck-pain-t2",
-      paper: "III",
+      paper: "II",
       kind: "short-note",
       marks: 5,
       minutes: 10,
@@ -2923,7 +2923,7 @@ topics.push({
   theory: [
     {
       id: "musculoskeletal-osteoporosis-t1",
-      paper: "II",
+      paper: "I",
       kind: "long",
       marks: 10,
       minutes: 20,
@@ -3033,7 +3033,7 @@ topics.push({
     },
     {
       id: "musculoskeletal-osteoporosis-t2",
-      paper: "III",
+      paper: "II",
       kind: "short-note",
       marks: 5,
       minutes: 10,
@@ -3454,7 +3454,7 @@ topics.push({
   theory: [
     {
       id: "musculoskeletal-spondyloarthropathy-sle-t1",
-      paper: "II",
+      paper: "I",
       kind: "long",
       marks: 10,
       minutes: 20,
@@ -3565,7 +3565,7 @@ topics.push({
     },
     {
       id: "musculoskeletal-spondyloarthropathy-sle-t2",
-      paper: "III",
+      paper: "II",
       kind: "short-note",
       marks: 5,
       minutes: 10,
@@ -4003,7 +4003,7 @@ topics.push({
   theory: [
     {
       id: "musculoskeletal-fractures-sports-injury-t1",
-      paper: "III",
+      paper: "II",
       kind: "long",
       marks: 10,
       minutes: 20,
@@ -4103,7 +4103,7 @@ topics.push({
     },
     {
       id: "musculoskeletal-fractures-sports-injury-t2",
-      paper: "III",
+      paper: "II",
       kind: "short-note",
       marks: 5,
       minutes: 10,
@@ -4639,7 +4639,7 @@ const subject: Subject = {
   title: "Musculoskeletal & Rheumatology",
   blurb: "Back pain, osteoarthritis, rheumatoid arthritis, gout, soft tissue rheumatism and osteoporosis.",
   icon: "Bone",
-  papers: ["II", "III"],
+  papers: ["I", "II"],
   topics,
   cases,
 };

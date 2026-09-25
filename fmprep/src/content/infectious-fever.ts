@@ -202,7 +202,7 @@ topics.push({
   theory: [
     {
       id: "infectious-fever-acute-undifferentiated-fever-t1",
-      paper: "II",
+      paper: "I",
       kind: "long",
       marks: 10,
       minutes: 20,
@@ -297,7 +297,7 @@ topics.push({
     },
     {
       id: "infectious-fever-acute-undifferentiated-fever-t2",
-      paper: "II",
+      paper: "I",
       kind: "short-note",
       marks: 5,
       minutes: 10,
@@ -357,7 +357,7 @@ topics.push({
     },
     {
       id: "infectious-fever-acute-undifferentiated-fever-t3",
-      paper: "II",
+      paper: "I",
       kind: "chart-flow",
       marks: 5,
       minutes: 10,
@@ -728,7 +728,7 @@ topics.push({
   theory: [
     {
       id: "infectious-fever-dengue-t1",
-      paper: "II",
+      paper: "I",
       kind: "long",
       marks: 10,
       minutes: 20,
@@ -836,7 +836,7 @@ topics.push({
     },
     {
       id: "infectious-fever-dengue-t2",
-      paper: "II",
+      paper: "I",
       kind: "short-note",
       marks: 5,
       minutes: 10,
@@ -898,7 +898,7 @@ topics.push({
     },
     {
       id: "infectious-fever-dengue-t3",
-      paper: "II",
+      paper: "I",
       kind: "enumerate",
       marks: 5,
       minutes: 8,
@@ -1271,7 +1271,7 @@ topics.push({
   theory: [
     {
       id: "infectious-fever-malaria-t1",
-      paper: "II",
+      paper: "I",
       kind: "long",
       marks: 10,
       minutes: 20,
@@ -1363,7 +1363,7 @@ topics.push({
     },
     {
       id: "infectious-fever-malaria-t2",
-      paper: "II",
+      paper: "I",
       kind: "short-note",
       marks: 5,
       minutes: 10,
@@ -1424,7 +1424,7 @@ topics.push({
     },
     {
       id: "infectious-fever-malaria-t3",
-      paper: "II",
+      paper: "I",
       kind: "differentiate",
       marks: 5,
       minutes: 8,
@@ -1772,7 +1772,7 @@ topics.push({
   theory: [
     {
       id: "infectious-fever-enteric-fever-t1",
-      paper: "II",
+      paper: "I",
       kind: "long",
       marks: 10,
       minutes: 20,
@@ -1866,7 +1866,7 @@ topics.push({
     },
     {
       id: "infectious-fever-enteric-fever-t2",
-      paper: "II",
+      paper: "I",
       kind: "short-note",
       marks: 5,
       minutes: 10,
@@ -1924,7 +1924,7 @@ topics.push({
     },
     {
       id: "infectious-fever-enteric-fever-t3",
-      paper: "II",
+      paper: "I",
       kind: "define-classify",
       marks: 5,
       minutes: 8,
@@ -2277,7 +2277,7 @@ topics.push({
   theory: [
     {
       id: "infectious-fever-scrub-typhus-t1",
-      paper: "II",
+      paper: "I",
       kind: "long",
       marks: 10,
       minutes: 20,
@@ -2366,7 +2366,7 @@ topics.push({
     },
     {
       id: "infectious-fever-scrub-typhus-t2",
-      paper: "II",
+      paper: "I",
       kind: "short-note",
       marks: 5,
       minutes: 10,
@@ -2703,7 +2703,7 @@ topics.push({
   theory: [
     {
       id: "infectious-fever-urinary-tract-infection-t1",
-      paper: "II",
+      paper: "I",
       kind: "long",
       marks: 10,
       minutes: 20,
@@ -2789,7 +2789,7 @@ topics.push({
     },
     {
       id: "infectious-fever-urinary-tract-infection-t2",
-      paper: "II",
+      paper: "I",
       kind: "short-note",
       marks: 5,
       minutes: 10,
@@ -3129,7 +3129,7 @@ topics.push({
   theory: [
     {
       id: "infectious-fever-skin-soft-tissue-infection-t1",
-      paper: "II",
+      paper: "I",
       kind: "long",
       marks: 10,
       minutes: 20,
@@ -3206,7 +3206,7 @@ topics.push({
     },
     {
       id: "infectious-fever-skin-soft-tissue-infection-t2",
-      paper: "II",
+      paper: "I",
       kind: "short-note",
       marks: 5,
       minutes: 10,
@@ -3526,7 +3526,7 @@ topics.push({
   theory: [
     {
       id: "infectious-fever-rabies-animal-bite-t1",
-      paper: "II",
+      paper: "I",
       kind: "long",
       marks: 10,
       minutes: 20,
@@ -3612,7 +3612,7 @@ topics.push({
     },
     {
       id: "infectious-fever-rabies-animal-bite-t2",
-      paper: "II",
+      paper: "I",
       kind: "short-note",
       marks: 5,
       minutes: 10,
@@ -4235,7 +4235,7 @@ topics.push({
   theory: [
     {
       id: "infectious-fever-hiv-art-theory-1",
-      paper: "III",
+      paper: "II",
       kind: "long",
       marks: 10,
       minutes: 18,
@@ -4335,7 +4335,7 @@ topics.push({
     },
     {
       id: "infectious-fever-hiv-art-theory-2",
-      paper: "II",
+      paper: "I",
       kind: "long",
       marks: 10,
       minutes: 18,
@@ -5048,7 +5048,7 @@ const subject: Subject = {
   title: "Fever & Infectious Disease",
   blurb: "Acute undifferentiated fever, dengue, malaria, typhoid, scrub typhus, HIV, rabies and snake bite.",
   icon: "Thermometer",
-  papers: ["II"],
+  papers: ["I"],
   topics,
   cases,
 };

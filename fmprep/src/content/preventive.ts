@@ -250,7 +250,7 @@ topics.push({
   theory: [
     {
       id: "preventive-prevention-screening-t1",
-      paper: "I",
+      paper: "IV",
       kind: "long",
       marks: 10,
       minutes: 20,
@@ -342,7 +342,7 @@ topics.push({
     },
     {
       id: "preventive-prevention-screening-t2",
-      paper: "I",
+      paper: "IV",
       kind: "define-classify",
       marks: 5,
       minutes: 10,
@@ -807,7 +807,7 @@ topics.push({
   theory: [
     {
       id: "preventive-national-health-programmes-t1",
-      paper: "IV",
+      paper: "III",
       kind: "long",
       marks: 10,
       minutes: 20,
@@ -912,7 +912,7 @@ topics.push({
     },
     {
       id: "preventive-national-health-programmes-t2",
-      paper: "IV",
+      paper: "III",
       kind: "short-note",
       marks: 5,
       minutes: 10,
@@ -982,7 +982,7 @@ topics.push({
     },
     {
       id: "preventive-national-health-programmes-t3",
-      paper: "I",
+      paper: "IV",
       kind: "enumerate",
       marks: 5,
       minutes: 8,
@@ -1432,7 +1432,7 @@ topics.push({
   theory: [
     {
       id: "preventive-immunisation-t1",
-      paper: "I",
+      paper: "IV",
       kind: "long",
       marks: 10,
       minutes: 20,
@@ -1532,7 +1532,7 @@ topics.push({
     },
     {
       id: "preventive-immunisation-t2",
-      paper: "IV",
+      paper: "III",
       kind: "short-note",
       marks: 5,
       minutes: 10,
@@ -1950,7 +1950,7 @@ topics.push({
   theory: [
     {
       id: "preventive-biostatistics-t1",
-      paper: "I",
+      paper: "IV",
       kind: "long",
       marks: 10,
       minutes: 20,
@@ -2044,7 +2044,7 @@ topics.push({
     },
     {
       id: "preventive-biostatistics-t2",
-      paper: "I",
+      paper: "IV",
       kind: "short-note",
       marks: 5,
       minutes: 10,
@@ -2105,7 +2105,7 @@ topics.push({
     },
     {
       id: "preventive-biostatistics-t3",
-      paper: "I",
+      paper: "IV",
       kind: "differentiate",
       marks: 5,
       minutes: 8,
@@ -2522,7 +2522,7 @@ topics.push({
   theory: [
     {
       id: "preventive-study-designs-t1",
-      paper: "I",
+      paper: "IV",
       kind: "differentiate",
       marks: 10,
       minutes: 20,
@@ -2610,7 +2610,7 @@ topics.push({
     },
     {
       id: "preventive-study-designs-t2",
-      paper: "I",
+      paper: "IV",
       kind: "chart-flow",
       marks: 5,
       minutes: 10,
@@ -3020,7 +3020,7 @@ topics.push({
   theory: [
     {
       id: "preventive-outbreak-investigation-t1",
-      paper: "I",
+      paper: "IV",
       kind: "long",
       marks: 10,
       minutes: 20,
@@ -3125,7 +3125,7 @@ topics.push({
     },
     {
       id: "preventive-outbreak-investigation-t2",
-      paper: "I",
+      paper: "IV",
       kind: "short-note",
       marks: 5,
       minutes: 8,
@@ -3578,7 +3578,7 @@ topics.push({
   theory: [
     {
       id: "preventive-nutrition-programmes-t1",
-      paper: "I",
+      paper: "IV",
       kind: "long",
       marks: 10,
       minutes: 20,
@@ -3681,7 +3681,7 @@ topics.push({
     },
     {
       id: "preventive-nutrition-programmes-t2",
-      paper: "IV",
+      paper: "III",
       kind: "short-note",
       marks: 5,
       minutes: 8,
@@ -4147,7 +4147,7 @@ topics.push({
   theory: [
     {
       id: "preventive-water-sanitation-vector-t1",
-      paper: "I",
+      paper: "IV",
       kind: "long",
       marks: 10,
       minutes: 20,
@@ -4221,7 +4221,7 @@ topics.push({
     },
     {
       id: "preventive-water-sanitation-vector-t2",
-      paper: "I",
+      paper: "IV",
       kind: "enumerate",
       marks: 5,
       minutes: 8,
@@ -4836,7 +4836,7 @@ topics.push({
   theory: [
     {
       id: "preventive-disaster-management-t1",
-      paper: "I",
+      paper: "IV",
       kind: "long",
       marks: 10,
       minutes: 20,
@@ -4987,7 +4987,7 @@ topics.push({
     },
     {
       id: "preventive-disaster-management-t2",
-      paper: "I",
+      paper: "IV",
       kind: "long",
       marks: 10,
       minutes: 20,
@@ -5120,7 +5120,7 @@ topics.push({
     },
     {
       id: "preventive-disaster-management-t3",
-      paper: "I",
+      paper: "IV",
       kind: "long",
       marks: 10,
       minutes: 20,
@@ -5927,7 +5927,7 @@ topics.push({
   theory: [
     {
       id: "preventive-health-planning-management-t1",
-      paper: "I",
+      paper: "IV",
       kind: "long",
       marks: 10,
       minutes: 20,
@@ -6106,7 +6106,7 @@ topics.push({
     },
     {
       id: "preventive-health-planning-management-t2",
-      paper: "I",
+      paper: "IV",
       kind: "long",
       marks: 10,
       minutes: 20,
@@ -6931,7 +6931,7 @@ topics.push({
   theory: [
     {
       id: "preventive-iec-social-marketing-t1",
-      paper: "I",
+      paper: "IV",
       kind: "long",
       marks: 10,
       minutes: 20,
@@ -7080,7 +7080,7 @@ topics.push({
     },
     {
       id: "preventive-iec-social-marketing-t2",
-      paper: "I",
+      paper: "IV",
       kind: "long",
       marks: 10,
       minutes: 20,
@@ -7225,7 +7225,7 @@ topics.push({
     },
     {
       id: "preventive-iec-social-marketing-t3",
-      paper: "I",
+      paper: "IV",
       kind: "long",
       marks: 10,
       minutes: 20,
@@ -7356,7 +7356,7 @@ topics.push({
     },
     {
       id: "preventive-iec-social-marketing-t4",
-      paper: "I",
+      paper: "IV",
       kind: "long",
       marks: 10,
       minutes: 20,
@@ -8211,7 +8211,7 @@ topics.push({
   theory: [
     {
       id: "preventive-occupational-health-t1",
-      paper: "I",
+      paper: "IV",
       kind: "enumerate",
       marks: 5,
       minutes: 9,
@@ -8308,7 +8308,7 @@ topics.push({
     },
     {
       id: "preventive-occupational-health-t2",
-      paper: "I",
+      paper: "IV",
       kind: "long",
       marks: 10,
       minutes: 18,
@@ -9059,7 +9059,7 @@ topics.push({
   theory: [
     {
       id: "preventive-climate-change-health-t1",
-      paper: "I",
+      paper: "IV",
       kind: "long",
       marks: 10,
       minutes: 20,
@@ -9222,7 +9222,7 @@ topics.push({
     },
     {
       id: "preventive-climate-change-health-t2",
-      paper: "I",
+      paper: "IV",
       kind: "short-note",
       marks: 5,
       minutes: 10,
@@ -9707,7 +9707,7 @@ topics.push({
   theory: [
     {
       id: "preventive-health-information-gis-theory-1",
-      paper: "I",
+      paper: "IV",
       kind: "long",
       marks: 10,
       minutes: 20,
@@ -9819,7 +9819,7 @@ topics.push({
     },
     {
       id: "preventive-health-information-gis-theory-2",
-      paper: "I",
+      paper: "IV",
       kind: "short-note",
       marks: 5,
       minutes: 10,
@@ -10421,7 +10421,7 @@ topics.push({
   theory: [
     {
       id: "preventive-sex-ratio-pcpndt-t1",
-      paper: "I",
+      paper: "IV",
       kind: "long",
       marks: 10,
       minutes: 18,
@@ -10542,7 +10542,7 @@ topics.push({
     },
     {
       id: "preventive-sex-ratio-pcpndt-t2",
-      paper: "I",
+      paper: "IV",
       kind: "short-note",
       marks: 5,
       minutes: 9,
@@ -11303,7 +11303,7 @@ topics.push({
   theory: [
     {
       id: "preventive-child-women-legislation-t1",
-      paper: "I",
+      paper: "IV",
       kind: "long",
       marks: 10,
       minutes: 18,
@@ -11434,7 +11434,7 @@ topics.push({
     },
     {
       id: "preventive-child-women-legislation-t2",
-      paper: "I",
+      paper: "IV",
       kind: "long",
       marks: 10,
       minutes: 18,
@@ -12032,7 +12032,7 @@ const subject: Subject = {
   title: "Preventive & Community Medicine",
   blurb: "Screening principles, the national programmes, immunisation, biostatistics and outbreak investigation.",
   icon: "ShieldPlus",
-  papers: ["I", "IV"],
+  papers: ["IV", "III"],
   topics,
   cases,
 };

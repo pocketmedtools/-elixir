@@ -338,7 +338,7 @@ topics.push({
   theory: [
     {
       id: "neurology-headache-t1",
-      paper: "II",
+      paper: "I",
       kind: "long",
       marks: 10,
       minutes: 20,
@@ -450,7 +450,7 @@ topics.push({
     },
     {
       id: "neurology-headache-t2",
-      paper: "II",
+      paper: "I",
       kind: "short-note",
       marks: 5,
       minutes: 10,
@@ -514,7 +514,7 @@ topics.push({
     },
     {
       id: "neurology-headache-t3",
-      paper: "II",
+      paper: "I",
       kind: "differentiate",
       marks: 5,
       minutes: 10,
@@ -1007,7 +1007,7 @@ topics.push({
   theory: [
     {
       id: "neurology-stroke-acute-t1",
-      paper: "II",
+      paper: "I",
       kind: "long",
       marks: 10,
       minutes: 20,
@@ -1128,7 +1128,7 @@ topics.push({
     },
     {
       id: "neurology-stroke-acute-t2",
-      paper: "II",
+      paper: "I",
       kind: "short-note",
       marks: 5,
       minutes: 10,
@@ -1208,7 +1208,7 @@ topics.push({
     },
     {
       id: "neurology-stroke-acute-t3",
-      paper: "II",
+      paper: "I",
       kind: "chart-flow",
       marks: 5,
       minutes: 10,
@@ -1644,7 +1644,7 @@ topics.push({
   theory: [
     {
       id: "neurology-tia-t1",
-      paper: "II",
+      paper: "I",
       kind: "long",
       marks: 10,
       minutes: 20,
@@ -1747,7 +1747,7 @@ topics.push({
     },
     {
       id: "neurology-tia-t2",
-      paper: "II",
+      paper: "I",
       kind: "short-note",
       marks: 5,
       minutes: 10,
@@ -2262,7 +2262,7 @@ topics.push({
   theory: [
     {
       id: "neurology-vertigo-t1",
-      paper: "II",
+      paper: "I",
       kind: "long",
       marks: 10,
       minutes: 20,
@@ -2362,7 +2362,7 @@ topics.push({
     },
     {
       id: "neurology-vertigo-t2",
-      paper: "II",
+      paper: "I",
       kind: "short-note",
       marks: 5,
       minutes: 10,
@@ -2863,7 +2863,7 @@ topics.push({
   theory: [
     {
       id: "neurology-peripheral-neuropathy-t1",
-      paper: "II",
+      paper: "I",
       kind: "long",
       marks: 10,
       minutes: 20,
@@ -2985,7 +2985,7 @@ topics.push({
     },
     {
       id: "neurology-peripheral-neuropathy-t2",
-      paper: "II",
+      paper: "I",
       kind: "short-note",
       marks: 5,
       minutes: 10,
@@ -3436,7 +3436,7 @@ topics.push({
   theory: [
     {
       id: "neurology-cns-infection-t1",
-      paper: "II",
+      paper: "I",
       kind: "long",
       marks: 10,
       minutes: 20,
@@ -3529,7 +3529,7 @@ topics.push({
     },
     {
       id: "neurology-cns-infection-t2",
-      paper: "II",
+      paper: "I",
       kind: "short-note",
       marks: 5,
       minutes: 10,
@@ -3878,7 +3878,7 @@ topics.push({
   theory: [
     {
       id: "neurology-bell-palsy-t1",
-      paper: "II",
+      paper: "I",
       kind: "long",
       marks: 10,
       minutes: 20,
@@ -3979,7 +3979,7 @@ topics.push({
     },
     {
       id: "neurology-bell-palsy-t2",
-      paper: "II",
+      paper: "I",
       kind: "short-note",
       marks: 5,
       minutes: 10,
@@ -4333,7 +4333,7 @@ topics.push({
   theory: [
     {
       id: "neurology-low-back-pain-neuro-t1",
-      paper: "II",
+      paper: "I",
       kind: "long",
       marks: 10,
       minutes: 20,
@@ -4428,7 +4428,7 @@ topics.push({
     },
     {
       id: "neurology-low-back-pain-neuro-t2",
-      paper: "II",
+      paper: "I",
       kind: "enumerate",
       marks: 5,
       minutes: 10,
@@ -4963,7 +4963,7 @@ topics.push({
   theory: [
     {
       id: "neurology-parkinsonism-t1",
-      paper: "I",
+      paper: "IV",
       kind: "long",
       marks: 10,
       minutes: 20,
@@ -5095,7 +5095,7 @@ topics.push({
     },
     {
       id: "neurology-parkinsonism-t2",
-      paper: "II",
+      paper: "I",
       kind: "short-note",
       marks: 5,
       minutes: 10,
@@ -5723,7 +5723,7 @@ topics.push({
   theory: [
     {
       id: "neurology-seizures-epilepsy-t1",
-      paper: "III",
+      paper: "II",
       kind: "long",
       marks: 10,
       minutes: 18,
@@ -5853,7 +5853,7 @@ topics.push({
     },
     {
       id: "neurology-seizures-epilepsy-t2",
-      paper: "II",
+      paper: "I",
       kind: "long",
       marks: 10,
       minutes: 18,
@@ -6581,7 +6581,7 @@ const subject: Subject = {
   title: "Neurology",
   blurb: "Headache, stroke, seizures, vertigo, neuropathy, dementia and central nervous system infection.",
   icon: "Brain",
-  papers: ["II"],
+  papers: ["I"],
   topics,
   cases,
 };
