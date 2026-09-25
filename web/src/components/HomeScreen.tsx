@@ -22,6 +22,7 @@ export const TOOL_SECTIONS: {
       { id: "growth", title: "Growth Charts" },
       { id: "bp", title: "Ped-BP" },
       { id: "nbWeight", title: "Newborn Weight Loss" },
+      { id: "bili", title: "Neonatal Jaundice (Bili)" },
     ],
   },
   {
