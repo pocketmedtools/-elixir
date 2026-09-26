@@ -846,7 +846,8 @@ section("Pediatric DB integrity");
   // BMI boundaries per Indian consensus
   if (classifyBmiIndian(22.9).band !== "normal") fail("BMI 22.9 should be normal");
   if (!classifyBmiIndian(23.0).label.includes("Overweight")) fail("BMI 23.0 should be overweight (Indian)");
-  if (!classifyBmiIndian(25.0).label.includes("Obese")) fail("BMI 25.0 should be obese (Indian)");
+  const cls: [number, string][] = [[24.9, "Overweight"], [25.0, "class I"], [29.9, "class I"], [30.0, "class II"], [34.9, "class II"], [35.0, "class III"], [48, "class III"]];
+  for (const [v, want] of cls) if (!classifyBmiIndian(v).label.includes(want)) fail(`BMI ${v} should be ${want}, got ${classifyBmiIndian(v).label}`);
   if (classifyBmiIndian(18.4).band === "normal") fail("BMI 18.4 should be underweight");
   const b = bmiValue(70, 170);
   if (b == null || Math.abs(b - 24.2) > 0.05) fail(`BMI 70kg/170cm expected 24.2, got ${b}`);
@@ -1086,8 +1087,8 @@ section("Pediatric DB integrity");
 
   // — More BMI/eGFR spots
   check("BMI 45kg/152cm = 19.5 normal", (() => { const v = bmiValue(45, 152); return v != null && Math.abs(v - 19.5) < 0.1 && classifyBmiIndian(v).band === "normal"; })());
-  check("BMI 29.9 below severe band", classifyBmiIndian(29.9).label.includes("Obese"));
-  check("BMI 36 severe obesity", classifyBmiIndian(36).label.includes("Severe"));
+  check("BMI 29.9 is obesity class I", classifyBmiIndian(29.9).label.includes("class I ("));
+  check("BMI 36 obesity class III", classifyBmiIndian(36).label.includes("class III"));
   check("gfrCategory boundaries 90/60/45/30/15", gfrCategory(90).stage === "G1" && gfrCategory(60).stage === "G2" && gfrCategory(45).stage === "G3a" && gfrCategory(30).stage === "G3b" && gfrCategory(15).stage === "G4");
 
   console.log(`complex clinical audit assertions: ${audits}`);

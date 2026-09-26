@@ -2,7 +2,9 @@
  * BMI with INDIAN cutoffs (Consensus Statement for Asian Indians, Misra et
  * al 2009 — endorsed in ICMR/API practice): overweight 23.0–24.9 kg/m²,
  * obesity ≥ 25 kg/m² (lower than WHO's 25/30 because cardiometabolic risk
- * in Indians rises at lower BMI). Abdominal obesity: waist ≥ 90 cm (men),
+ * in Indians rises at lower BMI). Obesity classes follow the WHO Asia-Pacific
+ * classification (2000): class I 25–29.9, class II ≥ 30; class III ≥ 35 per
+ * the Asia-Pacific metabolic/bariatric surgery consensus. Abdominal obesity: waist ≥ 90 cm (men),
  * ≥ 80 cm (women).
  */
 
@@ -50,19 +52,19 @@ export function classifyBmiIndian(bmi: number): BmiClass {
   if (bmi < 30)
     return {
       band: "alert",
-      label: "Obese by Indian cutoffs (≥ 25)",
-      advice: "Structured weight management; screen for diabetes, hypertension, dyslipidemia, fatty liver, OSA.",
+      label: "Obesity class I (25–29.9)",
+      advice: "Structured weight management (target 5–10% weight loss); screen for diabetes, hypertension, dyslipidaemia, fatty liver, OSA.",
     };
   if (bmi < 35)
     return {
       band: "alert",
-      label: "Obesity class II equivalent (30–34.9)",
-      advice: "Intensive lifestyle ± pharmacotherapy; comorbidity screen.",
+      label: "Obesity class II (30–34.9)",
+      advice: "Intensive lifestyle therapy ± anti-obesity medication; full comorbidity screen. Bariatric surgery may be considered if diabetes is uncontrolled.",
     };
   return {
     band: "alert",
-    label: "Severe obesity (≥ 35)",
-    advice: "Specialist obesity care; bariatric evaluation may be indicated.",
+    label: "Obesity class III (≥ 35)",
+    advice: "Specialist obesity care; bariatric surgery evaluation (Asian Indian threshold ≥ 35, or ≥ 32.5 with comorbidities).",
   };
 }
 
