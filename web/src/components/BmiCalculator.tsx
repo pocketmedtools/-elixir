@@ -177,7 +177,7 @@ export default function BmiCalculator() {
         />
       )}
       <p className="mt-2 text-xs text-slate-600">
-        Ref: Indian consensus for Asian Indians (Misra 2009) · IAP 2015 charts
+        Ref: Indian consensus for Asian Indians (Misra 2009) · WHO Asia-Pacific obesity classes (2000) · IAP 2015 charts
         for under-18s.
       </p>
     </div>

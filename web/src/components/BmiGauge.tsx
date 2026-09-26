@@ -5,14 +5,15 @@
  */
 
 const MIN = 12;
-const MAX = 40;
+const MAX = 42;
 
 const SEGS = [
-  { from: MIN, to: 18.5, color: "#3b82f6", label: "Underweight", range: "< 18.5" },
-  { from: 18.5, to: 23, color: "#22c55e", label: "Normal", range: "18.5–22.9" },
-  { from: 23, to: 25, color: "#f59e0b", label: "Overweight", range: "23–24.9" },
-  { from: 25, to: 30, color: "#f97316", label: "Obese", range: "25–29.9" },
-  { from: 30, to: MAX, color: "#dc2626", label: "Severely obese", range: "≥ 30" },
+  { from: MIN, to: 18.5, color: "#1d4ed8", label: "Under-weight", range: "< 18.5" },
+  { from: 18.5, to: 23, color: "#15803d", label: "Normal", range: "18.5–22.9" },
+  { from: 23, to: 25, color: "#ca8a04", label: "Over-weight", range: "23–24.9" },
+  { from: 25, to: 30, color: "#ea580c", label: "Obese I", range: "25–29.9" },
+  { from: 30, to: 35, color: "#dc2626", label: "Obese II", range: "30–34.9" },
+  { from: 35, to: MAX, color: "#7f1d1d", label: "Obese III", range: "≥ 35" },
 ];
 
 const CX = 120;
@@ -59,7 +60,7 @@ export default function BmiGauge({ bmi }: { bmi: number }) {
   const active = segIndex(bmi);
   const needleAngle = angleFor(bmi);
   const [tipX, tipY] = polar(needleAngle, R - 26);
-  const widths = [5, 6.2, 7.6, 9.2, 11];
+  const widths = [5, 6.2, 7.4, 8.8, 10.2, 11.6];
 
   return (
     <div className="mt-4 rounded-lg border border-slate-200 bg-white p-4 shadow-sm">
@@ -77,7 +78,7 @@ export default function BmiGauge({ bmi }: { bmi: number }) {
               opacity={i === active ? 1 : 0.55}
             />
           ))}
-          {[18.5, 23, 25, 30].map((b) => {
+          {[18.5, 23, 25, 30, 35].map((b) => {
             const [x, y] = polar(angleFor(b), R + 22);
             return (
               <text key={b} x={x} y={y} textAnchor="middle" fontSize="9" fontWeight="700" fill="#475569">
@@ -92,7 +93,7 @@ export default function BmiGauge({ bmi }: { bmi: number }) {
       </div>
       <div className="mt-1 flex items-end justify-between px-1">
         {SEGS.map((s, i) => (
-          <div key={s.label} className="flex w-1/5 flex-col items-center text-center">
+          <div key={s.label} className="flex w-1/6 flex-col items-center text-center">
             <Figure color={s.color} wide={widths[i]} active={i === active} />
             <p className={`mt-1 text-[10px] font-bold leading-tight ${i === active ? "text-slate-900" : "text-slate-400"}`}>
               {s.label}
