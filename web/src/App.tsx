@@ -7,7 +7,6 @@ import BiliTool from "./components/BiliTool";
 import BpCentiles from "./components/BpCentiles";
 import CreatinineClearance from "./components/CreatinineClearance";
 import GrowthCalculator from "./components/GrowthCalculator";
-import IcuTitration from "./components/IcuTitration";
 import InsulinTool from "./components/InsulinTool";
 import PediatricDosageCalculator from "./components/PediatricDosageCalculator";
 import NewbornWeightLoss from "./components/NewbornWeightLoss";
@@ -71,13 +70,6 @@ export default function App() {
       label: "Insulin",
       shortLabel: "Insulin",
       active: "bg-indigo-900 text-white shadow-sm",
-      idle: "bg-slate-100 text-slate-800 hover:bg-slate-200",
-    },
-    {
-      id: "icu",
-      label: "ICU Titration",
-      shortLabel: "ICU",
-      active: "bg-orange-900 text-white shadow-sm",
       idle: "bg-slate-100 text-slate-800 hover:bg-slate-200",
     },
     {
@@ -229,7 +221,6 @@ export default function App() {
         {tab === "bmi" && <BmiCalculator />}
         {tab === "crCl" && <CreatinineClearance />}
         {tab === "regimen" && <RegimenAnalyzerUI />}
-        {tab === "icu" && <IcuTitration />}
         {tab === "insulin" && <InsulinTool />}
         {tab === "ob" && <ObCalculator />}
         {tab === "report" && <ReportIssue />}

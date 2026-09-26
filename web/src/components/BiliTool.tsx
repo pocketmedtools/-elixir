@@ -139,7 +139,10 @@ export default function BiliTool() {
   const [prevBili, setPrevBili] = useState("");
   const [prevAge, setPrevAge] = useState("");
 
-  const isAap = ga >= 35;
+  const [guideline, setGuideline] = useState<"aap" | "nice">("aap");
+  const isAap = guideline === "aap";
+  // AAP 2022 covers ≥ 35 weeks only; NICE CG98 covers every gestation.
+  const aapOutOfRange = isAap && ga < 35;
   const anyRf = riskMode === "with";
   const gaText = `${ga}+${gaDays} wk`;
   const tableGa = isAap ? (ga >= 40 ? "≥ 40" : `${ga}`) : ga >= 38 ? "≥ 38" : `${ga}`;
@@ -186,7 +189,7 @@ export default function BiliTool() {
   let detail: string[] = [];
 
   const needRisk = isAap && riskMode === null;
-  if (ready && isAap && !needRisk) {
+  if (ready && isAap && !needRisk && !aapOutOfRange) {
     const mg = umol! / 17.1;
     const a = assessAap({
       gaWeeks: ga,
@@ -226,12 +229,20 @@ export default function BiliTool() {
   return (
     <div className="mx-auto max-w-xl px-3 py-5">
       <h2 className="text-xl font-extrabold tracking-tight text-slate-900">Neonatal Jaundice</h2>
-      <p className="text-xs font-semibold text-slate-600">
-        {isAap ? "AAP 2022 · ≥ 35 weeks (BiliTool model)" : "NICE CG98 · preterm < 35 weeks"}
-      </p>
 
       {/* ---------- Inputs ---------- */}
       <section className="mt-3 space-y-3 rounded-xl border-2 border-slate-300 bg-white p-4">
+        <div>
+          <span className="text-xs font-bold text-slate-700">Guideline</span>
+          <div className="mt-1 grid grid-cols-2 gap-1.5" role="radiogroup" aria-label="Guideline">
+            {(["aap", "nice"] as const).map((g) => (
+              <button key={g} type="button" role="radio" aria-checked={guideline === g} onClick={() => setGuideline(g)}
+                className={`rounded-lg border-2 px-2 py-2.5 text-sm font-extrabold ${guideline === g ? "border-slate-900 bg-slate-900 text-white" : "border-slate-300 bg-white text-slate-800"}`}>
+                {g === "aap" ? "AAP 2022" : "NICE (CG98, 2023)"}
+              </button>
+            ))}
+          </div>
+        </div>
         <div className="grid grid-cols-1 gap-3">
           <div>
             <span className="text-xs font-bold text-slate-700">Gestation at birth</span>
@@ -311,7 +322,7 @@ export default function BiliTool() {
           )}
         </div>
 
-        {isAap && (
+        {isAap && !aapOutOfRange && (
           <div>
             <span className="text-xs font-bold text-slate-700">
               Hyperbilirubinaemia neurotoxicity risk factors <span className="text-red-700">*</span>
@@ -433,15 +444,19 @@ export default function BiliTool() {
 
       {!plan && !err && (
         <p className="mt-3 text-sm font-semibold text-slate-600">
-          {ready && needRisk
-            ? "Choose “Without” or “With risk factors” to see the plan."
-            : "Enter age and bilirubin — the plan appears instantly."}
+          {aapOutOfRange
+            ? "AAP 2022 applies from 35 weeks. Choose NICE for babies under 35 weeks."
+            : ready && needRisk
+              ? "Choose “Without” or “With risk factors” to see the plan."
+              : "Enter age and bilirubin — the plan appears instantly."}
         </p>
       )}
 
       <p className="mt-3 text-[10px] leading-snug text-slate-500">
-        ≥ 35 wk: AAP 2022 (Pediatrics 2022;150:e2022058859) Supplemental Tables 1–4, Fig 7 follow-up; escalation = exchange − 2 mg/dL.
-        &lt; 35 wk: NICE CG98. Use serum bilirubin for treatment decisions. Not a substitute for clinical judgment.
+        {isAap
+          ? "AAP 2022 (Pediatrics 2022;150:e2022058859), ≥ 35 weeks. Escalation of care = exchange − 2 mg/dL."
+          : "NICE CG98 Jaundice in newborn babies under 28 days (updated 2023), all gestations."}{" "}
+        Use serum bilirubin for treatment decisions.
       </p>
 
       <SaveButton

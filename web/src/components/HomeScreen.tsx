@@ -11,7 +11,6 @@ export const TOOL_SECTIONS: {
     tools: [
       { id: "crCl", title: "Creatinine Clearance" },
       { id: "insulin", title: "Insulin" },
-      { id: "icu", title: "ICU Titration" },
       { id: "regimen", title: "Polypharm" },
       { id: "bmi", title: "BMI" },
     ],

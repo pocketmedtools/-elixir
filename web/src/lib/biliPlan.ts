@@ -173,7 +173,7 @@ export function nicePlan(r: BiliAssessment, ageHours: number, tcb: TcbAssessment
         phototherapy: "START phototherapy",
         repeat: "SBR 4–6 h after starting, then 6–12 hourly",
         steps: [
-          `Stop when SBR is below ${um(r.thresholds.photo - 50)} (50 under the line).`,
+          `Stop when SBR is below ${um(r.thresholds.photo - 50)} = ${((r.thresholds.photo - 50) / 17.1).toFixed(1)} mg/dL (50 µmol/L under the line).`,
           "Check rebound 12–18 h after stopping.",
           ...extra,
         ].slice(0, 3),
