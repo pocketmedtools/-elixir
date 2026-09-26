@@ -265,12 +265,47 @@ const EXTRA_LOADERS: Record<string, () => Promise<{ default: Topic[] }>> = {
   "geriatrics-ethics": () => import("./extra/geriatrics-ethics"),
 };
 
-function withScores(subject: Subject, bank: ScoreBank, extra: Topic[] = []): Subject {
+/**
+ * Topics rewritten to the house order - relevant classification,
+ * pathophysiology, OPD history, examination, minimal investigations,
+ * treatment in detail, follow-up. A rewrite replaces the topic's one-liner,
+ * sections and tables (its tables already hold the few scores worth keeping,
+ * so the score bank is not added again); MCQs, theory, red flags and pearls
+ * stay with the original.
+ */
+export type TopicRewrite = Pick<Topic, "sections" | "tables"> & Partial<Pick<Topic, "oneLiner" | "redFlags" | "pearls" | "references">>;
+type RewriteBank = Record<string, TopicRewrite>;
+const REWRITE_LOADERS: Record<string, () => Promise<{ default: RewriteBank }>> = {
+  "symptom-approach": () => import("./rewrite/symptom-approach"),
+  "fm-principles": () => import("./rewrite/fm-principles"),
+  cardiovascular: () => import("./rewrite/cardiovascular"),
+  endocrine: () => import("./rewrite/endocrine"),
+  respiratory: () => import("./rewrite/respiratory"),
+  "gastro-hepatology": () => import("./rewrite/gastro-hepatology"),
+  "infectious-fever": () => import("./rewrite/infectious-fever"),
+  neurology: () => import("./rewrite/neurology"),
+  "renal-urology": () => import("./rewrite/renal-urology"),
+  musculoskeletal: () => import("./rewrite/musculoskeletal"),
+  psychiatry: () => import("./rewrite/psychiatry"),
+  "surgery-office": () => import("./rewrite/surgery-office"),
+  dermatology: () => import("./rewrite/dermatology"),
+  "eye-ent": () => import("./rewrite/eye-ent"),
+  emergency: () => import("./rewrite/emergency"),
+  pediatrics: () => import("./rewrite/pediatrics"),
+  obstetrics: () => import("./rewrite/obstetrics"),
+  gynaecology: () => import("./rewrite/gynaecology"),
+  preventive: () => import("./rewrite/preventive"),
+  "geriatrics-ethics": () => import("./rewrite/geriatrics-ethics"),
+};
+
+function withScores(subject: Subject, bank: ScoreBank, extra: Topic[] = [], rewrites: RewriteBank = {}): Subject {
   return {
     ...subject,
-    topics: [...subject.topics, ...extra].map((t) =>
-      bank[t.id]?.length ? { ...t, tables: [...(t.tables ?? []), ...bank[t.id]] } : t,
-    ),
+    topics: [...subject.topics, ...extra].map((t) => {
+      const r = rewrites[t.id];
+      if (r) return { ...t, ...r };
+      return bank[t.id]?.length ? { ...t, tables: [...(t.tables ?? []), ...bank[t.id]] } : t;
+    }),
   };
 }
 
@@ -331,9 +366,10 @@ export function ensureSubject(id: string): Promise<Subject | null> {
 
   const scores = SCORE_LOADERS[id]?.() ?? Promise.resolve({ default: {} as ScoreBank });
   const extra = EXTRA_LOADERS[id]?.() ?? Promise.resolve({ default: [] as Topic[] });
-  const promise = Promise.all([loader(), scores, extra])
-    .then(([module, bank, more]) => {
-      const subject = withScores(module.default, bank.default, more.default);
+  const rewrites = REWRITE_LOADERS[id]?.() ?? Promise.resolve({ default: {} as RewriteBank });
+  const promise = Promise.all([loader(), scores, extra, rewrites])
+    .then(([module, bank, more, rw]) => {
+      const subject = withScores(module.default, bank.default, more.default, rw.default);
       loaded.set(id, subject);
       inFlight.delete(id);
       emit();
