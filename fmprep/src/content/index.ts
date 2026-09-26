@@ -287,7 +287,10 @@ const REWRITE_LOADERS: Record<string, () => Promise<{ default: RewriteBank }>> =
   "renal-urology": () => import("./rewrite/renal-urology"),
   musculoskeletal: () => import("./rewrite/musculoskeletal"),
   psychiatry: () => import("./rewrite/psychiatry"),
-  "surgery-office": () => import("./rewrite/surgery-office"),
+  "surgery-office": () =>
+    Promise.all([import("./rewrite/surgery-office"), import("./rewrite/surgery-office-b")]).then(([a, b]) => ({
+      default: { ...a.default, ...b.default },
+    })),
   dermatology: () => import("./rewrite/dermatology"),
   "eye-ent": () => import("./rewrite/eye-ent"),
   emergency: () => import("./rewrite/emergency"),
