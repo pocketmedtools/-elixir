@@ -89,7 +89,6 @@ body {
 .tool-bmi      { --tint: #ecfdf5; --tint-soft: #d1fae5; --tint-border: #a7f3d0; }
 .tool-crCl     { --tint: #f0fdfa; --tint-soft: #ccfbf1; --tint-border: #99f6e4; }
 .tool-regimen  { --tint: #fff1f2; --tint-soft: #ffe4e6; --tint-border: #fecdd3; }
-.tool-icu      { --tint: #fff7ed; --tint-soft: #ffedd5; --tint-border: #fed7aa; }
 .tool-insulin  { --tint: #eef2ff; --tint-soft: #e0e7ff; --tint-border: #c7d2fe; }
 .tool-ob       { --tint: #fdf4ff; --tint-soft: #fae8ff; --tint-border: #f5d0fe; }
 .tool-saved    { --tint: #f8fafc; --tint-soft: #f1f5f9; --tint-border: #e2e8f0; }

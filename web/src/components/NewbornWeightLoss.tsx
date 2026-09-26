@@ -66,9 +66,6 @@ export default function NewbornWeightLoss() {
   return (
     <div className="mx-auto max-w-2xl px-3 py-5 md:px-6">
       <h2 className="text-xl font-bold tracking-tight text-slate-900">Newborn Weight Loss</h2>
-      <p className="mt-1 text-sm text-slate-700">
-        % weight loss = (birth weight − today's weight) ÷ birth weight × 100
-      </p>
 
       <section className="mt-4 rounded-lg border border-slate-200 bg-white p-4 shadow-sm">
         <div className="grid grid-cols-2 gap-3">
@@ -156,7 +153,7 @@ export default function NewbornWeightLoss() {
       )}
 
       <p className="mt-3 text-[11px] leading-snug text-slate-600">
-        Bands: &lt; 7 % expected · 7–9.9 % borderline · ≥ 10 % significant · ≥ 12 % severe.
+        Weight loss % = (birth weight − today's weight) ÷ birth weight × 100. Bands: &lt; 7 % expected · 7–9.9 % borderline · ≥ 10 % significant · ≥ 12 % severe.
         Expected nadir day 3–4; weight regained by day 10–14. For healthy term and
         late-preterm babies (AAP / ABM / NICE) — preterm and NICU babies follow unit protocol.
       </p>

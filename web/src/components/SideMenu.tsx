@@ -11,7 +11,7 @@ import { APK_URL, isWebsite } from "../lib/platform";
 import ToolIcon, { TOOL_TEXT } from "./ToolIcon";
 
 export type MenuTarget =
-  | "home" | "pedDose" | "growth" | "bp" | "nbWeight" | "bili" | "bmi" | "crCl" | "regimen" | "icu" | "insulin" | "ob" | "saved" | "report";
+  | "home" | "pedDose" | "growth" | "bp" | "nbWeight" | "bili" | "bmi" | "crCl" | "regimen" | "insulin" | "ob" | "saved" | "report";
 
 const LINK_GROUPS: {
   heading: string | null;
@@ -23,7 +23,6 @@ const LINK_GROUPS: {
     links: [
       { id: "crCl", label: "Creatinine Clearance" },
       { id: "insulin", label: "Insulin" },
-      { id: "icu", label: "ICU Titration" },
       { id: "regimen", label: "Polypharm" },
       { id: "bmi", label: "BMI" },
     ],
