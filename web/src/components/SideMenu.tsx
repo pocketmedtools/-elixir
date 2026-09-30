@@ -11,7 +11,7 @@ import { APK_URL, isWebsite } from "../lib/platform";
 import ToolIcon, { TOOL_TEXT } from "./ToolIcon";
 
 export type MenuTarget =
-  | "home" | "pedDose" | "growth" | "bp" | "nbWeight" | "bili" | "bmi" | "crCl" | "regimen" | "insulin" | "ob" | "saved" | "report";
+  | "home" | "pedDose" | "growth" | "bp" | "nbWeight" | "hol" | "bili" | "bmi" | "crCl" | "regimen" | "insulin" | "ob" | "saved" | "report";
 
 const LINK_GROUPS: {
   heading: string | null;
@@ -33,6 +33,7 @@ const LINK_GROUPS: {
       { id: "pedDose", label: "Ped Dose Calculator" },
       { id: "growth", label: "Growth Charts" },
       { id: "bp", label: "Ped-BP" },
+      { id: "hol", label: "Hours of Life" },
       { id: "nbWeight", label: "Newborn Weight Loss" },
       { id: "bili", label: "Neonatal Jaundice (Bili)" },
     ],
