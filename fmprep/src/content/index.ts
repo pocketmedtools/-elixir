@@ -294,10 +294,16 @@ const REWRITE_LOADERS: Record<string, () => Promise<{ default: RewriteBank }>> =
   dermatology: () => import("./rewrite/dermatology"),
   "eye-ent": () => import("./rewrite/eye-ent"),
   emergency: () => import("./rewrite/emergency"),
-  pediatrics: () => import("./rewrite/pediatrics"),
+  pediatrics: () =>
+    Promise.all([import("./rewrite/pediatrics"), import("./rewrite/pediatrics-b")]).then(([a, b]) => ({
+      default: { ...a.default, ...b.default },
+    })),
   obstetrics: () => import("./rewrite/obstetrics"),
   gynaecology: () => import("./rewrite/gynaecology"),
-  preventive: () => import("./rewrite/preventive"),
+  preventive: () =>
+    Promise.all([import("./rewrite/preventive"), import("./rewrite/preventive-b")]).then(([a, b]) => ({
+      default: { ...a.default, ...b.default },
+    })),
   "geriatrics-ethics": () => import("./rewrite/geriatrics-ethics"),
 };
 
