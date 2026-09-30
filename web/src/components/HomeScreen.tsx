@@ -21,6 +21,7 @@ export const TOOL_SECTIONS: {
       { id: "pedDose", title: "Ped Dose Calculator" },
       { id: "growth", title: "Growth Charts" },
       { id: "bp", title: "Ped-BP" },
+      { id: "hol", title: "Hours of Life" },
       { id: "nbWeight", title: "Newborn Weight Loss" },
       { id: "bili", title: "Neonatal Jaundice (Bili)" },
     ],

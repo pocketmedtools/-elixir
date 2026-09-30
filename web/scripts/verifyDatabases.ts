@@ -1502,6 +1502,32 @@ section("Pediatric DB integrity");
   console.log("bedside plan: tones, repeat timing, stop value, TcB check and full coverage OK");
 }
 
+// ---------- Hours of life ----------
+{
+  console.log("\n=== Hours of life suite ===");
+  const { to24h, localDateTime, hoursOfLife } = await import("../src/lib/holMath");
+  const pairs: [number, "AM" | "PM", number][] = [[12, "AM", 0], [1, "AM", 1], [11, "AM", 11], [12, "PM", 12], [1, "PM", 13], [11, "PM", 23]];
+  for (const [h, p, want] of pairs) if (to24h(h, p) !== want) fail(`HOL: ${h} ${p} should be ${want}:00`);
+  if (to24h(0, "AM") !== null || to24h(13, "PM") !== null) fail("HOL: hour outside 1–12 must be rejected");
+  if (localDateTime("2026-02-30", 10, 0, "AM") !== null) fail("HOL: impossible date must be rejected");
+  const b = localDateTime("2026-09-28", 2, 30, "PM")!;
+  const cases: [string, number, number, "AM" | "PM", number, number, number, number][] = [
+    // at date, hour, min, ampm → HOL, days, remH, DOL
+    ["2026-09-28", 2, 30, "PM", 0, 0, 0, 1],
+    ["2026-09-29", 2, 29, "PM", 23, 0, 23, 1],
+    ["2026-09-29", 2, 30, "PM", 24, 1, 0, 2],
+    ["2026-09-30", 12, 15, "AM", 33, 1, 9, 2],   // 30 Sep 00:15 − 28 Sep 14:30 = 33 h 45 min
+    ["2026-10-01", 8, 0, "AM", 65, 2, 17, 3],
+  ];
+  for (const [d, h, m, p, hol, days, rem, dol] of cases) {
+    const r = hoursOfLife(b, localDateTime(d, h, m, p)!)!;
+    if (r.hours !== hol || r.days !== days || r.remHours !== rem || r.dayOfLife !== dol)
+      fail(`HOL ${d} ${h}:${m} ${p}: got ${r.hours} h (${r.days} d ${r.remHours} h, DOL ${r.dayOfLife})`);
+  }
+  if (hoursOfLife(b, localDateTime("2026-09-28", 2, 0, "PM")!) !== null) fail("HOL: time before birth must return null");
+  console.log("hours of life: AM/PM conversion, midnight/noon, day of life and future-time guard OK");
+}
+
 // ---------- Result ----------
 console.log("\n========== VERIFY RESULT ==========");
 if (failures.length) {
