@@ -31,6 +31,12 @@ export default function DocReader({
   const [blocks, setBlocks] = useState(1);
   const [query, setQuery] = useState("");
   const [imageUrl, setImageUrl] = useState<string | null>(null);
+  /* An HTML file - a page saved from Claude, a downloaded artifact - is read
+     as the page it is, with its layout, colours and working buttons. It runs
+     in a sandboxed frame with no access to the app's own storage. The text
+     view stays one tap away for searching. */
+  const [pageHtml, setPageHtml] = useState<string | null>(null);
+  const [asPage, setAsPage] = useState(true);
   const sentinel = useRef<HTMLDivElement | null>(null);
   const { readerScale, readerSerif } = getState().settings;
 
@@ -45,6 +51,7 @@ export default function DocReader({
       setDoc(found);
       setBlocks(1);
       if (found.kind === "image" && found.blob) setImageUrl(URL.createObjectURL(found.blob));
+      if (found.kind === "html" && found.blob) void found.blob.text().then((h) => alive && setPageHtml(h));
     });
     return () => {
       alive = false;
@@ -202,11 +209,40 @@ export default function DocReader({
         </p>
       )}
 
+      {pageHtml !== null && (
+        <div className="mt-4 grid grid-cols-2 gap-2">
+          <button
+            type="button"
+            onClick={() => setAsPage(true)}
+            className={`rounded-lg border px-3 py-2 text-sm font-bold ${asPage ? "border-slate-900 bg-slate-900 text-white" : "border-slate-300 bg-white text-slate-800"}`}
+          >
+            Page view
+          </button>
+          <button
+            type="button"
+            onClick={() => setAsPage(false)}
+            className={`rounded-lg border px-3 py-2 text-sm font-bold ${!asPage ? "border-slate-900 bg-slate-900 text-white" : "border-slate-300 bg-white text-slate-800"}`}
+          >
+            Text view
+          </button>
+        </div>
+      )}
+
+      {pageHtml !== null && asPage && (
+        <iframe
+          title={doc.title}
+          srcDoc={pageHtml}
+          sandbox="allow-scripts allow-popups allow-forms allow-modals allow-downloads"
+          className="mt-3 w-full rounded-xl border border-slate-200 bg-white"
+          style={{ height: "calc(100dvh - 170px)", minHeight: 480 }}
+        />
+      )}
+
       {imageUrl && (
         <img src={imageUrl} alt={doc.title} className="mt-4 w-full rounded-xl border border-slate-200" />
       )}
 
-      {doc.text && (
+      {doc.text && !(pageHtml !== null && asPage) && (
         <>
           <div className="mt-4">
             <input
