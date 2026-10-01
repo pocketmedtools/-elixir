@@ -58,6 +58,13 @@ export interface PediatricDrug {
   formulations: DrugFormulation[];
   ivAdministration?: IvAdminNote;
   neonatalNote?: string;
+  /**
+   * Fixed per-dose amounts by weight band (used instead of mg/kg when the
+   * official label doses by band, e.g. oseltamivir). Bands apply from 1 year;
+   * infants use infantMgPerKgDose.
+   */
+  weightBands?: { maxKg: number; perDoseMg: number }[];
+  infantMgPerKgDose?: number;
 }
 
 export function dosesPerDayFromFrequency(freq: string): number {
@@ -555,7 +562,7 @@ export const pediatricDrugsDB: PediatricDrug[] = [
     name: "Mefenamic Acid",
     category: "Analgesic / Antipyretic",
     recommendedDose: "4–8 mg/kg/dose every 8 hours (max often 3 doses/day). Prefer with food.",
-    defaultDoseMgPerKg: 6,
+    defaultDoseMgPerKg: 18,
     maxDosePerDayMg: 1500,
     frequencyOptions: ["q8h", "TDS"],
     defaultFrequency: "q8h",
@@ -1226,7 +1233,7 @@ export const pediatricDrugsDB: PediatricDrug[] = [
     name: "Salbutamol / Levosalbutamol (Albuterol)",
     category: "Bronchodilator",
     recommendedDose: "Prefer MDI+spacer / neb; oral syrup if used ~0.1–0.15 mg/kg/dose (salbutamol) or ~0.05 mg/kg/dose (levosalbutamol).",
-    defaultDoseMgPerKg: 0.15,
+    defaultDoseMgPerKg: 0.4,
     maxDosePerDayMg: 16,
     frequencyOptions: ["q4h", "q6h", "q8h", "TDS"],
     defaultFrequency: "q6h",
@@ -1480,9 +1487,9 @@ export const pediatricDrugsDB: PediatricDrug[] = [
     id: "midazolam",
     name: "Midazolam (rescue)",
     category: "Antiseizure - Emergency",
-    recommendedDose: "Buccal/IN/IV rescue per seizure plan (often 0.2–0.3 mg/kg buccal — protocol-specific).",
+    recommendedDose: "Buccal/IN/IV rescue per seizure plan (often 0.2–0.3 mg/kg buccal — protocol-specific). Max single dose 10 mg.",
     defaultDoseMgPerKg: 0.2,
-    maxDosePerDayMg: 20,
+    maxDosePerDayMg: 10,
     frequencyOptions: ["OD"],
     defaultFrequency: "OD",
     defaultDosesPerDay: 1,
@@ -1505,9 +1512,9 @@ export const pediatricDrugsDB: PediatricDrug[] = [
     id: "diazepam",
     name: "Diazepam (rescue)",
     category: "Antiseizure - Emergency",
-    recommendedDose: "PR/IV rescue ~0.2–0.5 mg/kg (protocol). Max single often 10 mg.",
+    recommendedDose: "PR/IV rescue ~0.2–0.5 mg/kg (protocol). Max single dose 10 mg.",
     defaultDoseMgPerKg: 0.3,
-    maxDosePerDayMg: 20,
+    maxDosePerDayMg: 10,
     frequencyOptions: ["OD"],
     defaultFrequency: "OD",
     defaultDosesPerDay: 1,
@@ -1593,6 +1600,13 @@ export const pediatricDrugsDB: PediatricDrug[] = [
     frequencyOptions: ["BD", "q12h"],
     defaultFrequency: "BD",
     defaultDosesPerDay: 2,
+    weightBands: [
+      { maxKg: 15, perDoseMg: 30 },
+      { maxKg: 23, perDoseMg: 45 },
+      { maxKg: 40, perDoseMg: 60 },
+      { maxKg: Infinity, perDoseMg: 75 },
+    ],
+    infantMgPerKgDose: 3,
     route: ["PO"],
     cautionsAndContraindications: [
       "Best within 48 h of fever onset",

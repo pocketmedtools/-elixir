@@ -116,7 +116,7 @@ function ResultCard({
  */
 export default function GrowthCalculator() {
   const [sex, setSex] = useState<Sex>("male");
-  const [ageValue, setAgeValue] = useState<number | "">(1);
+  const [ageValue, setAgeValue] = useState<number | "">("");
   const [ageUnit, setAgeUnit] = useState<"years" | "months" | "days" | "hours">("years");
   const [agePlusMonths, setAgePlusMonths] = useState<number | "">(0);
   const [weight, setWeight] = useState<number | "">("");

@@ -11,11 +11,12 @@ import {
 /** Cockcroft–Gault CrCl (mL/min) with renal drug dose adjustment lookup. */
 export default function CreatinineClearance() {
   const [sex, setSex] = useState<"Male" | "Female">("Male");
-  const [age, setAge] = useState<number | "">(60);
-  const [weight, setWeight] = useState<number | "">(60);
-  const [height, setHeight] = useState<number | "">(165);
+  // Start empty — no sample patient (it showed a CrCl for someone who doesn't exist).
+  const [age, setAge] = useState<number | "">("");
+  const [weight, setWeight] = useState<number | "">("");
+  const [height, setHeight] = useState<number | "">("");
   const [unit, setUnit] = useState<"mg/dL" | "µmol/L">("mg/dL");
-  const [creatinine, setCreatinine] = useState<number | "">(1.2);
+  const [creatinine, setCreatinine] = useState<number | "">("");
   const [drugQuery, setDrugQuery] = useState("");
   const [selectedDrugId, setSelectedDrugId] = useState<string | null>(null);
 
@@ -188,7 +189,9 @@ export default function CreatinineClearance() {
           </>
         ) : (
           <p className="mt-2 text-sm font-semibold text-amber-800">
-            {result.errors.join(" · ") || "Enter age, weight, and creatinine."}
+            {age === "" || weight === "" || creatinine === ""
+              ? "Enter age, weight, and creatinine."
+              : result.errors.join(" · ") || "Enter age, weight, and creatinine."}
           </p>
         )}
       </div>

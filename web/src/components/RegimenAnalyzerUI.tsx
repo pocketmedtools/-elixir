@@ -15,9 +15,11 @@ function severityClass(severity: string): string {
 }
 
 export default function RegimenAnalyzerUI() {
-  const [ageYears, setAgeYears] = useState(72);
-  const [weightKg, setWeightKg] = useState(68);
-  const [creatinineMgDl, setCreatinineMgDl] = useState<number | "">(1.4);
+  // Start empty — a pre-filled sample patient (72 y, 68 kg, Cr 1.4) produced
+  // geriatric and renal alerts for someone who doesn't exist.
+  const [ageYears, setAgeYears] = useState<number | "">("");
+  const [weightKg, setWeightKg] = useState<number | "">("");
+  const [creatinineMgDl, setCreatinineMgDl] = useState<number | "">("");
   const [sex, setSex] = useState<"Male" | "Female">("Female");
   const [conditions, setConditions] = useState<string[]>([]);
   const [conditionQuery, setConditionQuery] = useState("");
@@ -27,10 +29,11 @@ export default function RegimenAnalyzerUI() {
 
   const suggestions = useMemo(() => searchDrugs(drugQuery), [drugQuery]);
 
+  const patientReady = ageYears !== "" && ageYears > 0 && weightKg !== "" && weightKg > 0;
   const patient: PatientProfile = useMemo(
     () => ({
-      ageYears,
-      weightKg,
+      ageYears: ageYears === "" ? 0 : ageYears,
+      weightKg: weightKg === "" ? 0 : weightKg,
       creatinineMgDl: creatinineMgDl === "" ? undefined : Number(creatinineMgDl),
       sex,
       conditions,
@@ -39,8 +42,8 @@ export default function RegimenAnalyzerUI() {
   );
 
   const report = useMemo(
-    () => analyzeRegimen(patient, regimen),
-    [patient, regimen],
+    () => (patientReady ? analyzeRegimen(patient, regimen) : null),
+    [patient, regimen, patientReady],
   );
 
   const addDrug = (drug: DrugRecord) => {
@@ -90,7 +93,7 @@ export default function RegimenAnalyzerUI() {
                     min={0}
                     max={120}
                     value={ageYears}
-                    onChange={(e) => setAgeYears(Number(e.target.value))}
+                    onChange={(e) => setAgeYears(e.target.value === "" ? "" : Number(e.target.value))}
                     className="mt-1 w-full rounded-lg border border-slate-200 px-3 py-2 text-sm"
                   />
                 </label>
@@ -102,7 +105,7 @@ export default function RegimenAnalyzerUI() {
                     max={250}
                     step={0.1}
                     value={weightKg}
-                    onChange={(e) => setWeightKg(Number(e.target.value))}
+                    onChange={(e) => setWeightKg(e.target.value === "" ? "" : Number(e.target.value))}
                     className="mt-1 w-full rounded-lg border border-slate-200 px-3 py-2 text-sm"
                   />
                 </label>
@@ -284,6 +287,11 @@ export default function RegimenAnalyzerUI() {
           </section>
 
           {/* Section B */}
+          {!report ? (
+            <section className="rounded-lg border border-slate-200 bg-white p-4 text-sm font-semibold text-slate-700 shadow-sm">
+              Enter age and weight to start the analysis.
+            </section>
+          ) : (
           <section className="space-y-4">
             <div className="rounded-lg border border-slate-200 bg-white p-4 shadow-sm">
               <h2 className="text-sm font-bold uppercase tracking-wide text-slate-500">
@@ -637,6 +645,7 @@ export default function RegimenAnalyzerUI() {
               Ref: AGS Beers 2023 · STOPP/START v3 · drug labels.
             </p>
           </section>
+          )}
         </div>
       </div>
     </div>

@@ -26,6 +26,10 @@ jobs:
           cache: npm
           cache-dependency-path: web/package-lock.json
       - run: npm ci
+      # Clinical safety gate: database checks + independent cross-check of
+      # every calculator (also under a daylight-saving time zone).
+      - name: Verify calculators
+        run: npm test
       - run: npx tsc -b && npx vite build --base=./
       # Carry the current APK into the site so the direct download link
       # (https://<pages>/Pocket-Med.apk) survives every deploy; the APK
