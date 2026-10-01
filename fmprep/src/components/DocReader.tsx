@@ -13,6 +13,39 @@ import { BackBar, Chip, Empty } from "./ui";
 
 type Loaded = StudyDoc & { blob?: Blob };
 
+/**
+ * Full screen is a reading mode, not just a bigger frame: the page's own
+ * toolbars (anything pinned with position fixed or sticky) are hidden, and
+ * tables, images and code are made to fit the phone's width so nothing runs
+ * off the right-hand edge. The document's content itself is not changed.
+ */
+const READING_CSS = `html,body{max-width:100%!important;overflow-x:hidden!important}
+*,*::before,*::after{box-sizing:border-box}
+@media (max-width:700px){main,article,section,.container,.wrap,.wrapper,.page,.content{padding-left:12px!important;padding-right:12px!important;margin-left:0!important;margin-right:0!important;max-width:100%!important}}
+table{width:100%!important;max-width:100%!important;min-width:0!important;table-layout:auto!important;font-size:.86em!important}
+th,td{overflow-wrap:anywhere;word-break:normal;hyphens:manual;min-width:0!important;padding:6px 7px!important}
+th{letter-spacing:0!important}
+table.fm-whole th,table.fm-whole td{overflow-wrap:normal!important}
+img,svg,video,canvas,iframe{max-width:100%!important;height:auto}
+pre,code{white-space:pre-wrap!important;overflow-wrap:anywhere}`;
+
+const READING_JS = `(function(){if(!document.documentElement.lang)document.documentElement.lang='en';function strip(){var H=innerHeight;var all=document.body?document.body.getElementsByTagName('*'):[];
+for(var i=0;i<all.length;i++){var el=all[i];var cs=getComputedStyle(el);
+if((cs.position==='fixed'||cs.position==='sticky')&&el.getBoundingClientRect().height<H*0.5){el.style.setProperty('display','none','important')}}}
+function fit(){var ts=document.getElementsByTagName('table');for(var i=0;i<ts.length;i++){var t=ts[i],p=t.parentElement;if(!p)continue;var ps=getComputedStyle(p),W=p.clientWidth-parseFloat(ps.paddingLeft)-parseFloat(ps.paddingRight),s=0.92;t.classList.add('fm-whole');t.style.setProperty('font-size',s+'em','important');while(t.offsetWidth>W+1&&s>0.7){s-=0.03;t.style.setProperty('font-size',s.toFixed(2)+'em','important')}if(t.offsetWidth>W+1)t.classList.remove('fm-whole')}}function run(){strip();fit()}document.addEventListener('DOMContentLoaded',run);addEventListener('load',function(){run();setTimeout(run,600);setTimeout(run,2000)});addEventListener('resize',fit)})();`;
+
+function forReading(html: string): string {
+  const inject =
+    '<meta name="viewport" content="width=device-width, initial-scale=1">' +
+    "<style>" + READING_CSS + "</style><script>" + READING_JS + "</scr" + "ipt>";
+  const head = html.match(/<head[^>]*>/i);
+  if (head && head.index !== undefined) {
+    const at = head.index + head[0].length;
+    return html.slice(0, at) + inject + html.slice(at);
+  }
+  return inject + html;
+}
+
 /** Characters painted per block. Large enough that scrolling rarely waits. */
 const BLOCK = 24_000;
 
@@ -41,6 +74,7 @@ export default function DocReader({
      A small close button floats in the corner; the browser's fullscreen is
      asked for as well where the device allows it, to hide the status bar. */
   const [full, setFull] = useState(false);
+  const readingHtml = useMemo(() => (pageHtml !== null ? forReading(pageHtml) : null), [pageHtml]);
   const fullRef = useRef<HTMLDivElement | null>(null);
   const openFull = () => {
     setFull(true);
@@ -270,7 +304,7 @@ export default function DocReader({
         <div ref={fullRef} className="fixed inset-0 z-[300] bg-white">
           <iframe
             title={doc.title}
-            srcDoc={pageHtml}
+            srcDoc={readingHtml ?? pageHtml}
             sandbox="allow-scripts allow-popups allow-forms allow-modals allow-downloads"
             className="block h-full w-full border-0"
           />
@@ -278,15 +312,15 @@ export default function DocReader({
             type="button"
             onClick={closeFull}
             aria-label="Close full screen"
-            className="absolute right-3 top-3 flex h-10 w-10 items-center justify-center rounded-full text-lg font-bold text-white"
-            style={{ background: "rgba(0,0,0,.45)", top: "max(12px, env(safe-area-inset-top))" }}
+            className="absolute right-2 flex h-8 w-8 items-center justify-center rounded-full text-sm font-bold text-white"
+            style={{ background: "rgba(0,0,0,.3)", top: "max(8px, env(safe-area-inset-top))" }}
           >
             ✕
           </button>
         </div>
       )}
 
-      {pageHtml !== null && asPage && (
+      {pageHtml !== null && asPage && !full && (
         <iframe
           title={doc.title}
           srcDoc={pageHtml}
