@@ -1584,6 +1584,157 @@ const rewrites: Record<string, TopicRewrite> = {
       "WHO Workload Indicators of Staffing Need user manual; WHO-CHOICE cost-effectiveness guidance",
     ],
   },
+  "preventive-iec-social-marketing": {
+    oneLiner:
+      "Health communication is the planned two-way use of information, education and persuasion to change what people know, feel and do; it works in layers - **health education** (knowledge and skill), **IEC/BCC/SBCC** (segmented, pre-tested, multi-channel behaviour change), **social marketing** (commercial marketing and the **four Ps** for a **voluntary behaviour change**, Kotler and Zaltman 1971), **social mobilisation** (all feasible intersectoral partners for demand and ownership) and **advocacy** (policy) - and a campaign that uses only one layer usually fails.",
+    sections: [
+      {
+        heading: "Definition and the classification that matters",
+        points: [
+          "**Communication** is a two-way process with five elements - **sender, message, channel, receiver and feedback** - and **noise** acting at every stage; feedback is what turns an announcement into communication. [Park 28e]",
+          "**Types**: one-way (didactic - lecture, poster, TV spot) versus **two-way (Socratic - counselling, discussion, home visit)**; verbal versus non-verbal; formal versus informal; and by channel - **interpersonal, group, mass, folk and digital**. [Park 28e]",
+          "**Barriers** are **physiological** (deafness, pain, hunger), **psychological** (anxiety, prejudice, mistrust), **environmental** (noise, crowding, intimidating clinic), **linguistic** (dialect, jargon) and **cultural** (illiteracy, custom, caste, gender norms) - the cultural barrier matters most in India. [Park 28e]",
+          "The classification examiners want is the **five approaches** (table below): **health education, IEC/BCC/SBCC, social marketing, social mobilisation and advocacy** - layers of one strategy, not alternatives. [Park 28e]",
+          "**Social marketing** is the application of commercial marketing concepts and techniques to achieve a **voluntary behaviour change** for the welfare of individuals and society (**Kotler and Zaltman 1971**, from Wiebe's 1951 question of why brotherhood cannot be sold like soap). [Park 28e]",
+          "**Social mobilisation** is **bringing together all feasible and practical intersectoral partners and allies** to raise awareness of and demand for a development objective, assist delivery of resources and services, and strengthen community participation for sustainability and self-reliance - learn it verbatim. [UNICEF 2019]",
+        ],
+      },
+      {
+        heading: "Concepts in depth - how behaviour changes",
+        points: [
+          "**Knowledge is necessary but not sufficient**: the ladder runs **unaware - aware - concerned - knowledgeable - motivated - trial - sustained practice**, and mass media move people only up the first rungs while interpersonal contact moves them up the last. [Park 28e]",
+          "**Stages of adoption** (Park): **awareness, interest, evaluation, trial, adoption** - mass media for awareness and interest, interpersonal and opinion leaders for evaluation, demonstration for trial and follow-up for adoption. [Park 28e]",
+          "**Transtheoretical (stages of change) model**: precontemplation, contemplation, preparation, action, maintenance and relapse - match the message to the stage, and expect relapse. [Park 28e]",
+          "**Health Belief Model**: perceived susceptibility, severity, benefits, barriers, **cues to action** and **self-efficacy** - all perceived, so the message must address what people believe, not what is true. [Park 28e]",
+          "**Social Cognitive Theory** (modelling and self-efficacy), **Theory of Planned Behaviour** (attitude, subjective norm, perceived control) and **PRECEDE-PROCEED** (predisposing, enabling, reinforcing factors) explain why family pressure and access matter more than facts. [Park 28e]",
+          "**Diffusion of Innovation (Rogers 1962)**: innovators, early adopters, early majority, late majority, laggards - recruit **early adopters** as opinion leaders first. [Park 28e]",
+          "**BCC** starts from formative research into why people behave as they do and targets one behaviour in a segmented audience; **SBCC** adds social norms, services and policy, and UNICEF's equivalent is **Communication for Development (C4D)**. [UNICEF 2019]",
+          "The **seven Cs** of a good message: **credibility, content, context, clarity, continuity and consistency, channels and capability of the audience**. [Park 28e]",
+        ],
+      },
+      {
+        heading: "IEC in practice - materials, channels and Indian examples",
+        points: [
+          "**IEC is a programme's communication strategy**, with objectives, budget, materials, staff and evaluation - and the 'communication' (two-way) element is the one most often left out. [Park 28e]",
+          "**Print**: a poster carries **one idea, few words and a large picture legible from 3 metres**; flip charts and flash cards are the ASHA's job aids; the **MCP card** is record, job aid and IEC at once. [Park 28e]",
+          "**Radio and community radio** are the cheapest way to reach scattered rural people, and a jingle in the local dialect beats an announcement in Hindi or English; TV, film and video vans give reach and **entertainment-education**. [Park 28e]",
+          "**Folk media** - nukkad natak, puppetry, kalajatha (Karnataka), burrakatha (Andhra), jatra (Bengal, Odisha), tamasha (Maharashtra), villu pattu (Tamil Nadu) - are cheap, credible and carry sensitive topics through humour. [Park 28e]",
+          "**Interpersonal and group** channels - counselling, ASHA home visits, mothers' meetings, VHSND, demonstrations (ORS, complementary feeding, insulin), **Saathiya** peer educators - are the highest-yield and the ones the doctor controls. [Park 28e]",
+          "**Digital**: **Kilkari** (free weekly 2-minute voice calls from the second trimester to the child's first birthday), Mobile Academy for ASHAs, **Tele-MANAS 14416**, Ni-kshay and U-WIN SMS reminders, and social media for real-time rumour rebuttal. [MoHFW 2024]",
+          "Indian campaigns: **Do boond zindagi ki** (polio), Swachh Bharat (spectacles logo), **rotating pictorial tobacco warnings and the cinema spot (COTPA)**, Beti Bachao Beti Padhao, and *Do Gaz Ki Doori, Mask Hai Zaroori* (COVID-19). [Park 28e]",
+          "**Observance days** are pegs for planned activity: World TB Day 24 March, World Health Day 7 April, World No Tobacco Day 31 May, World Population Day 11 July, Breastfeeding Week 1-7 August, World Diabetes Day 14 November, World AIDS Day 1 December. [WHO 2024]",
+          "The **Central Health Education Bureau (1956)** under DGHS is the apex body, with state IEC bureaux and district IEC officers, and every NHM PIP carries an **IEC/BCC budget line** with mandatory pre-testing. [Park 28e]",
+        ],
+      },
+      {
+        heading: "How to plan a communication campaign",
+        points: [
+          "**Situation analysis and formative research** - service data, NFHS, a **KAP survey**, focus groups and observation - asking not only what people do not know but **why they behave as they do** and whom they trust. [Park 28e]",
+          "**Define one behaviour and SMART communication objectives** - mothers in these 20 villages will breastfeed within one hour of birth, from 40% to 70% in 12 months. [Park 28e]",
+          "**Segment the audience**: **primary** (the person who must change), **secondary** (husband, mother-in-law, ASHA, chemist) and **tertiary** (panchayat, religious leaders, media, policy makers) - one message for everybody persuades nobody. [Park 28e]",
+          "**Design the message**: one idea, the audience's own words, one feasible call to action and an immediate benefit; **fear appeals work only with an achievable solution**, and emotional, humour, testimonial and **positive deviance** appeals usually beat facts. [Park 28e]",
+          "**Choose a channel mix** so the same message arrives from several trusted directions, timed around harvest, school and festivals, with a budget and timeline. [Park 28e]",
+          "**Pre-test on the intended audience, not colleagues**, for attraction, comprehension, acceptability, involvement and persuasion, revise, then distribute to the last worker and train the communicators. [Park 28e]",
+          "**Monitor process** (materials distributed, sessions held, spots aired) during the campaign and **evaluate outcome** (KAP and service uptake) against a baseline, ideally with a control area, using **LQAS** for rapid small-area checks. [Park 28e]",
+        ],
+      },
+      {
+        heading: "Social marketing and social mobilisation in depth",
+        points: [
+          "Social marketing differs from health education by **consumer research, segmentation, an attractive exchange and the marketing mix** - and its competition is the **existing convenient behaviour**, not a rival brand. [Park 28e]",
+          "**Price** includes the **non-monetary price** - time, travel, waiting, pain, embarrassment, family disapproval - and reducing it is often the single most powerful intervention; a nominal money price signals value and supports the retailer. [Park 28e]",
+          "**Place and price defeat promotion nearly every time**: **Nirodh (1968)** succeeded because it was in the paan shop at a token price via soap and tea company networks, and **JSY (2005) plus JSSK (2011)** raised institutional delivery from about 39% (NFHS-3) to **88.6% (NFHS-5)** by removing cash and transport costs. [NFHS-5 2021]",
+          "Other Indian examples: **ORS sachets** (low-osmolarity, 245 mOsm/L, with zinc for 14 days), **iodised salt** (written into law and trade), LLINs, subsidised sanitary napkins and Swachh Bharat toilets. [Park 28e]",
+          "**Andreasen's six benchmarks**: behaviour-change objective, formative research, segmentation, attractive exchange, use of all four Ps, and attention to competition. [Park 28e]",
+          "**Social mobilisation steps**: situation analysis, objectives, **stakeholder mapping** (departments, panchayat, NGOs, faith leaders, SHGs, schools, chemists, media, CSR), a convened alliance with written roles, a single core message, training, implementation through partners' own channels, genuine participation, monitoring with visible indicators and institutionalisation in the VHSNC. [UNICEF 2019]",
+          "**Pulse Polio** is the classic case - UNICEF's **SMNet** worked through **ulema and imams** in UP and Bihar to overcome refusal, leading to the last wild case in **January 2011** and certification in **March 2014**. [Park 28e]",
+          "Current examples: **Swachh Bharat** (community-led total sanitation, swachhagrahis, gram sabha ODF resolutions) and **Ni-kshay Mitra under PM TB Mukt Bharat Abhiyaan (2022)**, in which individuals, corporates and panchayats adopt TB patients for nutrition support. [MoHFW 2024]",
+          "**Arnstein's ladder of participation** runs from being informed to consulted to partnership and delegated control - most programmes stop at consultation. [Park 28e]",
+        ],
+      },
+      {
+        heading: "The family physician as communicator",
+        points: [
+          "The **single consultation** is the most powerful communication event in the health system - two-way, trusted and individually relevant. [Park 28e]",
+          "Start with open questions and **ICE (ideas, concerns, expectations)**, give information in small chunks in plain language, and confirm with **teach-back** - ask the patient to say how they will take the treatment at home. [Park 28e]",
+          "Use the **5 As (ask, advise, assess, assist, arrange)** for brief opportunistic advice on tobacco, alcohol, diet and activity, and **motivational interviewing** for entrenched behaviour. [Park 28e]",
+          "Use **person-first, non-stigmatising language** - not leper, defaulter, AIDS victim - because blame drives concealment and non-attendance. [Park 28e]",
+          "In the community, speak at VHSND and school, brief the panchayat with **local data**, recruit opinion leaders before resistance appears, supervise the ASHA's messages, and in an outbreak use **one spokesperson**. [Park 28e]",
+          "**Never create demand you cannot meet** - check that the drug, the blood, the anaesthetist or the vaccine is available before launching a campaign. [Park 28e]",
+        ],
+      },
+      {
+        heading: "Evaluation and indicators",
+        points: [
+          "**Process indicators**: reach and exposure, materials distributed, sessions held, spots aired, staff trained. [Park 28e]",
+          "**Outcome indicators**: unaided and aided recall, **knowledge, attitude and practice** against baseline, and service uptake (ANC registration, institutional delivery, condom sales, treatment completion). [Park 28e]",
+          "**Impact indicators**: coverage, incidence, case fatality and mortality - slow to move and hard to attribute, so triangulate with qualitative data and always report the denominator. [Park 28e]",
+          "**Cost per behaviour changed**, not cost per person reached, is the efficiency indicator that matters - counting posters printed is not evaluation. [Park 28e]",
+        ],
+      },
+    ],
+    tables: [
+      {
+        heading: "Communication approaches - classification by unit and example",
+        columns: ["Approach", "Defining feature", "Unit of action", "Indian example"],
+        rows: [
+          ["Health education", "Planned transfer of knowledge and skill for informed choice", "Individual or small group", "ORS demonstration at VHSND; diabetic foot-care teaching"],
+          ["IEC / BCC / SBCC", "Segmented, pre-tested, multi-channel communication for one behaviour and its norms", "Defined audience plus influencers", "Do boond zindagi ki; pictorial tobacco warnings"],
+          ["Social marketing", "Four Ps and consumer research for voluntary behaviour change", "Segmented consumer", "Nirodh 1968; ORS sachets; iodised salt"],
+          ["Social mobilisation", "All feasible intersectoral partners for demand and ownership", "Whole social system", "SMNet and ulema in Pulse Polio; Ni-kshay Mitra"],
+          ["Advocacy", "Evidence and pressure for policy, law and resources", "Policy makers", "COTPA 2003; salt iodisation notification"],
+        ],
+      },
+      {
+        heading: "How to apply the marketing mix - the Ps in health",
+        columns: ["Element", "Meaning in a health programme", "Worked Indian example", "Failure if neglected"],
+        rows: [
+          ["Product", "Good, service, practice or idea, branded so the benefit is obvious", "One-litre low-osmolarity ORS sachet with zinc", "Unbranded product left on the shelf"],
+          ["Price", "Money plus non-monetary cost (time, travel, stigma, lost wages)", "JSY cash plus JSSK free delivery, drugs and transport", "Hidden costs keep women at home"],
+          ["Place", "Where and when the product or behaviour is available", "Condoms in paan shops; ASHA as depot holder", "Demand created, supply absent - credibility lost"],
+          ["Promotion", "Advertising, branding, folk media, endorsement, interpersonal persuasion", "Pulse Polio celebrity, mosque announcements, house marking", "Good product nobody has heard of"],
+          ["People, partnership, policy, purse strings", "Staff, alliances, laws and sustained funding", "Ban on non-iodised salt; IEC line in NHM PIP", "Behaviour reverses when campaign money stops"],
+        ],
+      },
+      {
+        heading: "Choosing the channel - classification by reach and use",
+        columns: ["Channel", "Reach", "Feedback", "Best use"],
+        rows: [
+          ["Interpersonal (counselling, home visit)", "Very small", "Immediate", "Persuasion, skills, stigmatised topics, adherence"],
+          ["Group (talk, mothers' meeting, VHSND)", "Small to moderate", "Good, with peer influence", "Demonstration, norm setting"],
+          ["Print (poster, flip chart, wall painting)", "Moderate", "None", "Reminders, job aids; useless alone for the illiterate"],
+          ["Radio, TV, video van", "Very large", "None unless phone-in", "Awareness, agenda setting, modelling"],
+          ["Folk media", "Local but dense", "Good", "Low-literacy audiences, sensitive topics"],
+          ["Digital (SMS, IVR, Kilkari, social media)", "Large but skewed", "Two-way and measurable", "Timed reminders, targeting, rumour rebuttal"],
+        ],
+      },
+    ],
+    redFlags: [
+      "Material never pre-tested on the intended audience - the commonest and costliest error.",
+      "Message above the audience's literacy or in the wrong language or dialect - it communicates nothing and signals the service is not for them.",
+      "A fear appeal without an achievable action - produces denial, avoidance and anger at the messenger.",
+      "Demand created for a service that is absent, unaffordable or poor - trust is lost for the next campaign.",
+      "Stigmatising or blaming words (leper, defaulter, AIDS victim) - drive concealment and non-attendance.",
+      "No feedback channel or monitoring - a misread image or a spreading rumour is discovered only at the end-line survey.",
+    ],
+    pearls: [
+      "Elements: sender, message, channel, receiver, feedback - with noise throughout; feedback makes it communication.",
+      "Seven Cs: credibility, content, context, clarity, continuity and consistency, channels, capability of audience.",
+      "Social marketing (Kotler and Zaltman 1971) = commercial marketing for voluntary behaviour change; social mobilisation = all feasible intersectoral partners.",
+      "Place and price beat promotion - Nirodh in the paan shop, JSY and JSSK for institutional delivery.",
+      "Knowledge is necessary but not sufficient; mass media for awareness, interpersonal contact for adoption.",
+      "Pre-test always, on the real audience; never create demand you cannot meet.",
+      "Evaluate process, outcome and impact - counting materials distributed is not evaluation.",
+      "In the consultation use ICE and teach-back.",
+    ],
+    references: [
+      "Park's Textbook of Preventive and Social Medicine, 28th edition, 2025 - health education and communication",
+      "Kotler P, Zaltman G. Social marketing: an approach to planned social change. Journal of Marketing 1971; Andreasen AR benchmark criteria",
+      "WHO Health Promotion Glossary of Terms, 2021; Ottawa Charter for Health Promotion, 1986",
+      "UNICEF Communication for Development and social mobilisation guidance; SMNet polio documentation",
+      "NHM IEC/BCC guidelines, MoHFW; National Family Health Survey-5 (2019-21)",
+    ],
+  },
 };
 
 export default rewrites;
