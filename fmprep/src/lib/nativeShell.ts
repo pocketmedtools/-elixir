@@ -38,3 +38,23 @@ export async function dressNativeShell(): Promise<void> {
     /* no splash plugin in this build */
   }
 }
+
+/**
+ * Full-screen reading: hide the status bar so the clock and signal icons do
+ * not sit on top of the document, and bring it back afterwards. On the web
+ * this does nothing and the browser's own fullscreen is used instead.
+ */
+export async function setImmersive(on: boolean): Promise<boolean> {
+  if (!native()) return false;
+  try {
+    const { StatusBar } = await import("@capacitor/status-bar");
+    if (on) await StatusBar.hide();
+    else {
+      await StatusBar.show();
+      await StatusBar.setOverlaysWebView({ overlay: false });
+    }
+    return true;
+  } catch {
+    return false;
+  }
+}

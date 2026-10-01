@@ -10,6 +10,7 @@ import { useEffect, useMemo, useRef, useState } from "react";
 import { getDoc, wordCount, type StudyDoc } from "../lib/docs";
 import { docPosition, getState, rememberDoc, updateSettings } from "../lib/store";
 import { BackBar, Chip, Empty } from "./ui";
+import { setImmersive } from "../lib/nativeShell";
 
 type Loaded = StudyDoc & { blob?: Blob };
 
@@ -78,7 +79,9 @@ export default function DocReader({
   const fullRef = useRef<HTMLDivElement | null>(null);
   const openFull = () => {
     setFull(true);
-    requestAnimationFrame(() => {
+    // In the app: hide the status bar. On the web: ask for browser fullscreen.
+    void setImmersive(true).then((native) => {
+      if (native) return;
       try {
         void fullRef.current?.requestFullscreen?.().catch(() => undefined);
       } catch {
@@ -88,12 +91,15 @@ export default function DocReader({
   };
   const closeFull = () => {
     setFull(false);
+    void setImmersive(false);
     try {
       if (document.fullscreenElement) void document.exitFullscreen().catch(() => undefined);
     } catch {
       /* nothing to undo */
     }
   };
+  // Leaving the reader while in full screen must still bring the bar back.
+  useEffect(() => () => void setImmersive(false), []);
   useEffect(() => {
     // Leaving the device fullscreen (back gesture) also closes the overlay.
     const onChange = () => {
@@ -301,19 +307,23 @@ export default function DocReader({
       )}
 
       {pageHtml !== null && full && (
-        <div ref={fullRef} className="fixed inset-0 z-[300] bg-white">
+        <div
+          ref={fullRef}
+          className="fixed inset-0 z-[300] flex flex-col"
+          style={{ background: "#111", paddingTop: "env(safe-area-inset-top)" }}
+        >
           <iframe
             title={doc.title}
             srcDoc={readingHtml ?? pageHtml}
             sandbox="allow-scripts allow-popups allow-forms allow-modals allow-downloads"
-            className="block h-full w-full border-0"
+            className="block w-full flex-1 border-0 bg-white"
           />
           <button
             type="button"
             onClick={closeFull}
             aria-label="Close full screen"
             className="absolute right-2 flex h-8 w-8 items-center justify-center rounded-full text-sm font-bold text-white"
-            style={{ background: "rgba(0,0,0,.3)", top: "max(8px, env(safe-area-inset-top))" }}
+            style={{ background: "rgba(0,0,0,.3)", top: "calc(env(safe-area-inset-top) + 8px)" }}
           >
             ✕
           </button>
