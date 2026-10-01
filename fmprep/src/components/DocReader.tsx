@@ -37,6 +37,37 @@ export default function DocReader({
      view stays one tap away for searching. */
   const [pageHtml, setPageHtml] = useState<string | null>(null);
   const [asPage, setAsPage] = useState(true);
+  /* Full screen: only the document, edge to edge, over the app's own bars.
+     A small close button floats in the corner; the browser's fullscreen is
+     asked for as well where the device allows it, to hide the status bar. */
+  const [full, setFull] = useState(false);
+  const fullRef = useRef<HTMLDivElement | null>(null);
+  const openFull = () => {
+    setFull(true);
+    requestAnimationFrame(() => {
+      try {
+        void fullRef.current?.requestFullscreen?.().catch(() => undefined);
+      } catch {
+        /* not supported here - the overlay alone still covers the page */
+      }
+    });
+  };
+  const closeFull = () => {
+    setFull(false);
+    try {
+      if (document.fullscreenElement) void document.exitFullscreen().catch(() => undefined);
+    } catch {
+      /* nothing to undo */
+    }
+  };
+  useEffect(() => {
+    // Leaving the device fullscreen (back gesture) also closes the overlay.
+    const onChange = () => {
+      if (!document.fullscreenElement) setFull(false);
+    };
+    document.addEventListener("fullscreenchange", onChange);
+    return () => document.removeEventListener("fullscreenchange", onChange);
+  }, []);
   const sentinel = useRef<HTMLDivElement | null>(null);
   const { readerScale, readerSerif } = getState().settings;
 
@@ -210,7 +241,7 @@ export default function DocReader({
       )}
 
       {pageHtml !== null && (
-        <div className="mt-4 grid grid-cols-2 gap-2">
+        <div className="mt-4 grid grid-cols-3 gap-2">
           <button
             type="button"
             onClick={() => setAsPage(true)}
@@ -224,6 +255,33 @@ export default function DocReader({
             className={`rounded-lg border px-3 py-2 text-sm font-bold ${!asPage ? "border-slate-900 bg-slate-900 text-white" : "border-slate-300 bg-white text-slate-800"}`}
           >
             Text view
+          </button>
+          <button
+            type="button"
+            onClick={openFull}
+            className="rounded-lg border border-slate-300 bg-white px-3 py-2 text-sm font-bold text-slate-800"
+          >
+            Full screen
+          </button>
+        </div>
+      )}
+
+      {pageHtml !== null && full && (
+        <div ref={fullRef} className="fixed inset-0 z-[300] bg-white">
+          <iframe
+            title={doc.title}
+            srcDoc={pageHtml}
+            sandbox="allow-scripts allow-popups allow-forms allow-modals allow-downloads"
+            className="block h-full w-full border-0"
+          />
+          <button
+            type="button"
+            onClick={closeFull}
+            aria-label="Close full screen"
+            className="absolute right-3 top-3 flex h-10 w-10 items-center justify-center rounded-full text-lg font-bold text-white"
+            style={{ background: "rgba(0,0,0,.45)", top: "max(12px, env(safe-area-inset-top))" }}
+          >
+            ✕
           </button>
         </div>
       )}
