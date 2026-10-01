@@ -21,10 +21,12 @@ import {
 type AgeUnit = "years" | "months" | "days" | "hours";
 
 export default function PediatricDosageCalculator() {
-  const [ageValue, setAgeValue] = useState<number | "">(3);
+  // Start empty: a pre-filled sample child (3 y, 14 kg) risked doses for a
+  // patient who doesn't exist if the user forgot to change it.
+  const [ageValue, setAgeValue] = useState<number | "">("");
   const [ageUnit, setAgeUnit] = useState<AgeUnit>("years");
   const [agePlusMonths, setAgePlusMonths] = useState<number | "">(0);
-  const [weight, setWeight] = useState<number | "">(14);
+  const [weight, setWeight] = useState<number | "">("");
   const [creatinine, setCreatinine] = useState<number | "">("");
   const [heightCm, setHeightCm] = useState<number | "">("");
   const [searchQuery, setSearchQuery] = useState("");
@@ -77,6 +79,7 @@ export default function PediatricDosageCalculator() {
         perDoseMg: 0,
         volumeMl: null as number | null,
         capped: false,
+        bandNote: null as string | null,
         valid: false,
         errors: [] as string[],
       };
@@ -87,8 +90,9 @@ export default function PediatricDosageCalculator() {
       frequency,
       drug: selectedDrug,
       formulation: selectedFormulation,
+      ageMonths,
     });
-  }, [selectedDrug, weightNum, doseNum, frequency, selectedFormulation]);
+  }, [selectedDrug, weightNum, doseNum, frequency, selectedFormulation, ageMonths]);
 
   const cappedDaily = doseCalc.dailyMg;
   const perDose = doseCalc.perDoseMg;
@@ -109,9 +113,7 @@ export default function PediatricDosageCalculator() {
       : null;
   const renalWarn =
     Boolean(selectedDrug?.renalAdjustment) && crElevated && egfr == null;
-  const weightInvalid =
-    (weight !== "" && (!(Number.isFinite(weightNum) && weightNum > 0))) ||
-    doseCalc.errors.includes("Weight must be > 0");
+  const weightInvalid = weight !== "" && !(Number.isFinite(weightNum) && weightNum > 0);
 
   const volumeMl = doseCalc.volumeMl;
   const dropsPerMl = selectedFormulation?.dropsPerMl ?? 20;
@@ -650,6 +652,9 @@ export default function PediatricDosageCalculator() {
                       {perDose.toFixed(1)} mg
                     </span>
                   </div>
+                  {doseCalc.bandNote && (
+                    <p className="mb-2 text-sm font-semibold text-emerald-950">{doseCalc.bandNote}</p>
+                  )}
                   {volumeMl != null && selectedFormulation && (
                     <div className="mt-3 border-t border-emerald-200 pt-3 text-sm text-emerald-950">
                       <p>

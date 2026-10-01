@@ -1,4 +1,5 @@
 import type { DrugRecord, PracticalInteraction } from "./types";
+import { classInteractions } from "./interactionsClass";
 import { EXTENDED_DRUGS } from "./drugsExtended";
 
 export const KNOWN_CONDITIONS = [
@@ -2933,6 +2934,10 @@ export const interactionsDB: PracticalInteraction[] = [
     isPracticallyDocumented: true,
   },
 ];
+
+// Class-level rules (SSRIs + linezolid, NSAIDs + warfarin, inducers + DOACs, QT
+// combinations …) expanded into explicit pairs; curated pairs above win.
+interactionsDB.push(...classInteractions(interactionsDB, new Set(drugsDB.map((d) => d.id))));
 
 /** Extra search aliases → drug id (Indian brand / shorthand). */
 const SEARCH_ALIASES: Record<string, string> = {

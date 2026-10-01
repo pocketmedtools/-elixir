@@ -12,7 +12,9 @@
     "lint": "oxlint",
     "preview": "vite preview",
     "stress": "tsx scripts/stressDemoPatients.ts",
-    "verify": "tsx scripts/verifyDatabases.ts"
+    "verify": "tsx scripts/verifyDatabases.ts",
+    "crosscheck": "tsx scripts/crosscheck.ts",
+    "test": "tsx scripts/verifyDatabases.ts && tsx scripts/crosscheck.ts && TZ=America/New_York tsx scripts/crosscheck.ts"
   },
   "dependencies": {
     "@capacitor/android": "^7.6.8",
@@ -32,6 +34,7 @@
     "@vitejs/plugin-react": "^6.0.4",
     "oxlint": "^1.75.0",
     "tailwindcss": "^4.3.3",
+    "tsx": "^4.23.15",
     "typescript": "~6.0.2",
     "vite": "^8.2.0"
   }

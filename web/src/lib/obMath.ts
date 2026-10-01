@@ -30,8 +30,15 @@ export type ObResult = {
 
 const DAY_MS = 86_400_000;
 
+/**
+ * Calendar-day arithmetic. Adding 24-hour blocks of milliseconds drifts by an
+ * hour across a daylight-saving change, which moved the EDD/LMP a whole day in
+ * DST time zones; setDate() always lands on local midnight of the right date.
+ */
 function addDays(d: Date, days: number): Date {
-  return new Date(d.getTime() + days * DAY_MS);
+  const x = new Date(d.getFullYear(), d.getMonth(), d.getDate());
+  x.setDate(x.getDate() + days);
+  return x;
 }
 
 function daysBetween(a: Date, b: Date): number {

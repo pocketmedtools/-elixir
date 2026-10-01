@@ -157,7 +157,11 @@ export function correctionDose(
 export function vriiiRate(grbs: number): { rate: number | null; text: string; band: "normal" | "caution" | "alert" } {
   if (!(grbs > 20) || grbs > 1500) return { rate: null, text: "Implausible glucose — recheck.", band: "alert" };
   if (grbs < 70)
-    return { rate: 0, text: "STOP insulin. Give 25 ml 25% dextrose IV (child: 2 ml/kg 10% dextrose), recheck in 15 min.", band: "alert" };
+    return {
+      rate: 0,
+      text: "STOP insulin. Give 15–20 g IV glucose over 10–15 min — 10% dextrose 150–200 ml or 25% dextrose 60–80 ml (child: 2 ml/kg 10% dextrose) — recheck in 15 min (JBDS / ADA).",
+      band: "alert",
+    };
   if (grbs <= 140) return { rate: 0.5, text: "0.5 U/h — at/near target; watch for drift down.", band: "normal" };
   if (grbs <= 180) return { rate: 1, text: "1 U/h — target band 140–180.", band: "normal" };
   if (grbs <= 250) return { rate: 2, text: "2 U/h — recheck in 1 h.", band: "caution" };

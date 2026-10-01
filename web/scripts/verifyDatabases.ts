@@ -698,7 +698,8 @@ section("300-sample ped dose/renal crosscheck");
   const seed = Number(process.env.VERIFY_SEED ?? 42);
   const weights = [6, 22, 3 + (seed % 38), 10 + ((seed * 7) % 50)];
   const gfrs = [70, 25, 8 + (seed % 80)];
-  for (const d of pediatricDrugsDB) {
+  // Band-dosed drugs (oseltamivir) are checked against their bands in crosscheck.ts.
+  for (const d of pediatricDrugsDB.filter((x) => !x.weightBands)) {
     for (const w of weights) {
       const r = calculatePediatricDose({
         weightKg: w,
