@@ -22,17 +22,17 @@ type Loaded = StudyDoc & { blob?: Blob };
 const READING_CSS = `html,body{max-width:100%!important;overflow-x:hidden!important}
 *,*::before,*::after{box-sizing:border-box}
 @media (max-width:700px){main,article,section,.container,.wrap,.wrapper,.page,.content{padding-left:12px!important;padding-right:12px!important;margin-left:0!important;margin-right:0!important;max-width:100%!important}}
-table{width:100%!important;max-width:100%!important;min-width:0!important;table-layout:auto!important;font-size:.86em!important}
-th,td{overflow-wrap:anywhere;word-break:normal;hyphens:manual;min-width:0!important;padding:6px 7px!important}
+.fm-scroll{overflow-x:auto!important;-webkit-overflow-scrolling:touch;max-width:100%!important;margin:0 0 1em}
+table{width:auto!important;min-width:100%!important;max-width:none!important;table-layout:auto!important}
+th,td{overflow-wrap:normal!important;word-break:normal!important;hyphens:manual!important;padding:6px 8px!important}
 th{letter-spacing:0!important}
-table.fm-whole th,table.fm-whole td{overflow-wrap:normal!important}
 img,svg,video,canvas,iframe{max-width:100%!important;height:auto}
 pre,code{white-space:pre-wrap!important;overflow-wrap:anywhere}`;
 
 const READING_JS = `(function(){if(!document.documentElement.lang)document.documentElement.lang='en';function strip(){var H=innerHeight;var all=document.body?document.body.getElementsByTagName('*'):[];
 for(var i=0;i<all.length;i++){var el=all[i];var cs=getComputedStyle(el);
 if((cs.position==='fixed'||cs.position==='sticky')&&el.getBoundingClientRect().height<H*0.5){el.style.setProperty('display','none','important')}}}
-function fit(){var ts=document.getElementsByTagName('table');for(var i=0;i<ts.length;i++){var t=ts[i],p=t.parentElement;if(!p)continue;var ps=getComputedStyle(p),W=p.clientWidth-parseFloat(ps.paddingLeft)-parseFloat(ps.paddingRight),s=0.92;t.classList.add('fm-whole');t.style.setProperty('font-size',s+'em','important');while(t.offsetWidth>W+1&&s>0.7){s-=0.03;t.style.setProperty('font-size',s.toFixed(2)+'em','important')}if(t.offsetWidth>W+1)t.classList.remove('fm-whole')}}function run(){strip();fit()}document.addEventListener('DOMContentLoaded',run);addEventListener('load',function(){run();setTimeout(run,600);setTimeout(run,2000)});addEventListener('resize',fit)})();`;
+function fit(){var ts=document.getElementsByTagName('table');for(var i=0;i<ts.length;i++){var t=ts[i],p=t.parentElement;if(!p)continue;if(!p.classList.contains('fm-scroll')){var w=document.createElement('div');w.className='fm-scroll';p.insertBefore(w,t);w.appendChild(t);p=w}var W=p.clientWidth,s=0.95;t.style.setProperty('font-size',s+'em','important');while(t.offsetWidth>W+1&&s>0.82){s-=0.03;t.style.setProperty('font-size',s.toFixed(2)+'em','important')}}}function run(){strip();fit()}document.addEventListener('DOMContentLoaded',run);addEventListener('load',function(){run();setTimeout(run,600);setTimeout(run,2000)});addEventListener('resize',fit)})();`;
 
 function forReading(html: string): string {
   const inject =
