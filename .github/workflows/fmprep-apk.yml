@@ -50,6 +50,10 @@ jobs:
       # answer key or an unbalanced bold marker fails the build here too.
       - name: Verify content and build the web app
         run: npm run build:apk
+        env:
+          # The build number the app compares against version.json to know
+          # when a newer version is out.
+          VITE_BUILD: ${{ github.run_number }}
 
       # `packages: ''` is load-bearing. The action's default is to install
       # `tools`, which Google has withdrawn from the SDK repository, so
@@ -145,11 +149,13 @@ jobs:
         run: |
           rm -rf /tmp/apkpub && mkdir -p /tmp/apkpub
           cp fmprep/FM-Prep.apk /tmp/apkpub/
+          # What installed apps read on opening to offer the update.
+          printf '{"build":%s,"sha":"%s","date":"%s"}\n' "${{ github.run_number }}" "${{ github.sha }}" "$(date -u +%Y-%m-%dT%H:%M:%SZ)" > /tmp/apkpub/version.json
           cd /tmp/apkpub
           git init -q -b fmprep-apk
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add FM-Prep.apk
+          git add FM-Prep.apk version.json
           git commit -q -m "FM-Prep.apk built from ${{ github.sha }}"
           git push -f "https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}.git" fmprep-apk
 
