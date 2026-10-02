@@ -51,21 +51,21 @@ export default function CentileChart({ spec }: { spec: ChartSpec }) {
         {/* grid */}
         {yTicks.map((t, i) => (
           <g key={i}>
-            <line x1={M.l} y1={py(t)} x2={W - M.r} y2={py(t)} stroke="#e2e8f0" strokeWidth="1" />
-            <text x={M.l - 4} y={py(t) + 3} textAnchor="end" fontSize="8" fill="#64748b">
+            <line x1={M.l} y1={py(t)} x2={W - M.r} y2={py(t)} stroke="#e3cda8" strokeWidth="1" />
+            <text x={M.l - 4} y={py(t) + 3} textAnchor="end" fontSize="8" fill="#6d6b67">
               {t >= 100 ? t.toFixed(0) : t.toFixed(1)}
             </text>
           </g>
         ))}
         {spec.xTicks.map((t) => (
           <g key={t.at}>
-            <line x1={px(t.at)} y1={M.t} x2={px(t.at)} y2={H - M.b} stroke="#f1f5f9" strokeWidth="1" />
-            <text x={px(t.at)} y={H - M.b + 12} textAnchor="middle" fontSize="8" fill="#64748b">
+            <line x1={px(t.at)} y1={M.t} x2={px(t.at)} y2={H - M.b} stroke="#f6e8d1" strokeWidth="1" />
+            <text x={px(t.at)} y={H - M.b + 12} textAnchor="middle" fontSize="8" fill="#6d6b67">
               {t.label}
             </text>
           </g>
         ))}
-        <text x={(M.l + W - M.r) / 2} y={H - 2} textAnchor="middle" fontSize="8" fontWeight="600" fill="#475569">
+        <text x={(M.l + W - M.r) / 2} y={H - 2} textAnchor="middle" fontSize="8" fontWeight="600" fill="#4f4d4b">
           {spec.xLabel}
         </text>
         {/* centile curves */}
@@ -74,7 +74,7 @@ export default function CentileChart({ spec }: { spec: ChartSpec }) {
             <path
               d={path(c.pts)}
               fill="none"
-              stroke={i === mid ? "#0f766e" : "#94a3b8"}
+              stroke={i === mid ? "#1a5336" : "#a8a29a"}
               strokeWidth={i === mid ? 2 : 1.1}
             />
             <text
@@ -82,16 +82,16 @@ export default function CentileChart({ spec }: { spec: ChartSpec }) {
               y={py(c.pts[c.pts.length - 1][1]) + 3}
               fontSize="8"
               fontWeight="700"
-              fill={i === mid ? "#0f766e" : "#64748b"}
+              fill={i === mid ? "#1a5336" : "#6d6b67"}
             >
               {c.label}
             </text>
           </g>
         ))}
         {/* patient crosshair + dot */}
-        <line x1={cpx} y1={M.t} x2={cpx} y2={H - M.b} stroke="#dc2626" strokeWidth="1" strokeDasharray="4 3" />
-        <line x1={M.l} y1={cpy} x2={W - M.r} y2={cpy} stroke="#dc2626" strokeWidth="1" strokeDasharray="4 3" />
-        <circle cx={cpx} cy={cpy} r="4.5" fill="#dc2626" stroke="#ffffff" strokeWidth="1.5" />
+        <line x1={cpx} y1={M.t} x2={cpx} y2={H - M.b} stroke="#a8102a" strokeWidth="1" strokeDasharray="4 3" />
+        <line x1={M.l} y1={cpy} x2={W - M.r} y2={cpy} stroke="#a8102a" strokeWidth="1" strokeDasharray="4 3" />
+        <circle cx={cpx} cy={cpy} r="4.5" fill="#a8102a" stroke="#ffffff" strokeWidth="1.5" />
       </svg>
       <p className="mt-1 rounded-md bg-red-50 px-2.5 py-1.5 text-xs font-semibold text-red-950">
         ● {spec.patient.caption}

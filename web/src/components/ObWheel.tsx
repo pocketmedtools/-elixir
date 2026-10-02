@@ -25,9 +25,9 @@ function arc(fromDay: number, toDay: number, r: number): string {
 }
 
 const TRIMESTERS = [
-  { from: 0, to: 98, color: "#38bdf8", label: "T1" },
-  { from: 98, to: 196, color: "#a78bfa", label: "T2" },
-  { from: 196, to: 280, color: "#f472b6", label: "T3" },
+  { from: 0, to: 98, color: "#318988", label: "T1" },
+  { from: 98, to: 196, color: "#9564a0", label: "T2" },
+  { from: 196, to: 280, color: "#b35c5e", label: "T3" },
 ];
 
 export default function ObWheel({
@@ -59,12 +59,12 @@ export default function ObWheel({
               fill="none"
               stroke={t.color}
               strokeWidth={i + 1 === trimester ? 28 : 20}
-              opacity={i + 1 === trimester ? 1 : 0.45}
+              opacity={i + 1 === trimester ? 1 : 0.7}
             />
           ))}
           {/* green progress arc — sweeps from week 0 to today's exact GA */}
           {clamped > 1 && (
-            <path d={arc(0, clamped, 102)} fill="none" stroke="#16a34a" strokeWidth="7" strokeLinecap="round" />
+            <path d={arc(0, clamped, 102)} fill="none" stroke="#116f39" strokeWidth="7" strokeLinecap="round" />
           )}
           {/* week ticks */}
           {Array.from({ length: 40 }, (_, i) => i + 1).map((w) => {
@@ -72,26 +72,26 @@ export default function ObWheel({
             const big = w % 4 === 0;
             const [x1, y1] = polar(day, big ? 136 : 139);
             const [x2, y2] = polar(day, 145);
-            return <line key={w} x1={x1} y1={y1} x2={x2} y2={y2} stroke="#64748b" strokeWidth={big ? 2 : 1} />;
+            return <line key={w} x1={x1} y1={y1} x2={x2} y2={y2} stroke="#6d6b67" strokeWidth={big ? 2 : 1} />;
           })}
           {/* week numbers every 4 weeks */}
           {[4, 8, 12, 16, 20, 24, 28, 32, 36, 40].map((w) => {
             const [x, y] = polar(w * 7, 158);
             return (
-              <text key={w} x={x} y={y + 3} textAnchor="middle" fontSize="11" fontWeight="700" fill="#334155">
+              <text key={w} x={x} y={y + 3} textAnchor="middle" fontSize="11" fontWeight="700" fill="#3a3733">
                 {w}
               </text>
             );
           })}
           {/* LMP / EDD anchor at the top */}
-          <polygon points={`${CX - 6},${CY - 150} ${CX + 6},${CY - 150} ${CX},${CY - 138}`} fill="#0f172a" />
+          <polygon points={`${CX - 6},${CY - 150} ${CX + 6},${CY - 150} ${CX},${CY - 138}`} fill="#1c1b19" />
           {/* needle at today's GA */}
-          <line x1={CX} y1={CY} x2={nx} y2={ny} stroke="#0f172a" strokeWidth="4" strokeLinecap="round" />
-          <circle cx={CX} cy={CY} r="42" fill="#f8fafc" stroke="#e2e8f0" />
-          <text x={CX} y={CY - 4} textAnchor="middle" fontSize="15" fontWeight="800" fill="#0f172a">
+          <line x1={CX} y1={CY} x2={nx} y2={ny} stroke="#1c1b19" strokeWidth="4" strokeLinecap="round" />
+          <circle cx={CX} cy={CY} r="42" fill="#fcf4e6" stroke="#e3cda8" />
+          <text x={CX} y={CY - 4} textAnchor="middle" fontSize="15" fontWeight="800" fill="#1c1b19">
             {gaLabel.replace(" weeks ", "w ").replace(/ days?$/, "d")}
           </text>
-          <text x={CX} y={CY + 14} textAnchor="middle" fontSize="10" fontWeight="700" fill="#64748b">
+          <text x={CX} y={CY + 14} textAnchor="middle" fontSize="10" fontWeight="700" fill="#6d6b67">
             TRIMESTER {trimester}
           </text>
         </svg>
