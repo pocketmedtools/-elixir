@@ -92,10 +92,13 @@ const BLOCK = 24_000;
 
 export default function DocReader({
   docId,
+  initialQuery,
   onBack,
   onSearchLibrary,
 }: {
   docId: string;
+  /** A phrase from the documents search: shown highlighted in the text view. */
+  initialQuery?: string;
   onBack: () => void;
   /** Take a phrase from this document into the library search. */
   onSearchLibrary: (query: string) => void;
@@ -103,7 +106,7 @@ export default function DocReader({
   const [doc, setDoc] = useState<Loaded | null>(null);
   const [missing, setMissing] = useState(false);
   const [blocks, setBlocks] = useState(1);
-  const [query, setQuery] = useState("");
+  const [query, setQuery] = useState(initialQuery ?? "");
   const [imageUrl, setImageUrl] = useState<string | null>(null);
   /* An HTML file - a page saved from Claude, a downloaded artifact - is read
      as the page it is, with its layout, colours and working buttons. It runs
@@ -111,7 +114,8 @@ export default function DocReader({
      view stays one tap away for searching. */
   const [pageHtml, setPageHtml] = useState<string | null>(null);
   const savedMode = docModeOf(docId);
-  const [asPage, setAsPageState] = useState(savedMode !== "text");
+  // Arriving from a search lands in the text view, where the words are highlighted.
+  const [asPage, setAsPageState] = useState(initialQuery ? false : savedMode !== "text");
   const setAsPage = (v: boolean) => {
     setAsPageState(v);
     setDocMode(docId, v ? "page" : "text");
@@ -181,7 +185,7 @@ export default function DocReader({
     }
   };
   // Reopened in full screen if that is how it was left.
-  const autoFull = useRef(savedMode === "full");
+  const autoFull = useRef(savedMode === "full" && !initialQuery);
   useEffect(() => {
     if (pageHtml !== null && autoFull.current) {
       autoFull.current = false;
@@ -231,6 +235,14 @@ export default function DocReader({
   // whole text is painted first and then scrolled to.
   useEffect(() => {
     if (!doc) return;
+    if (initialQuery && initialQuery.trim().length >= 2) {
+      // From a search: paint the whole text and bring the first match into view.
+      setBlocks(Math.max(1, Math.ceil(doc.text.length / BLOCK)));
+      const t = window.setTimeout(() => {
+        document.querySelector("article mark")?.scrollIntoView({ block: "center" });
+      }, 250);
+      return () => window.clearTimeout(t);
+    }
     const saved = docPosition(doc.id);
     if (saved <= 0) return;
     if (saved > document.documentElement.scrollHeight - window.innerHeight)
@@ -284,15 +296,19 @@ export default function DocReader({
 
   const matches = useMemo(() => {
     if (!doc || query.trim().length < 2) return [];
-    const q = query.trim().toLowerCase();
+    // A phrase is found as typed; failing that, each word on its own.
     const hay = doc.text.toLowerCase();
+    const phrase = query.trim().toLowerCase();
+    const terms = hay.includes(phrase) ? [phrase] : phrase.split(/\s+/).filter((w) => w.length >= 2);
     const out: number[] = [];
-    let from = 0;
-    while (out.length < 200) {
-      const at = hay.indexOf(q, from);
-      if (at < 0) break;
-      out.push(at);
-      from = at + q.length;
+    for (const q of terms) {
+      let from = 0;
+      while (out.length < 200) {
+        const at = hay.indexOf(q, from);
+        if (at < 0) break;
+        out.push(at);
+        from = at + q.length;
+      }
     }
     return out;
   }, [doc, query]);
@@ -518,15 +534,17 @@ export default function DocReader({
 
 function highlight(text: string, query: string) {
   const parts: (string | { hit: string })[] = [];
-  const lower = text.toLowerCase();
-  const q = query.toLowerCase();
+  const phrase = query.trim();
+  const words = phrase.split(/\s+/).filter((w) => w.length >= 2);
+  const terms = text.toLowerCase().includes(phrase.toLowerCase()) || words.length < 2 ? [phrase] : words;
+  const esc = terms.map((t) => t.replace(/[.*+?^${}()|[\]\\]/g, "\\$&"));
+  const re = new RegExp(esc.join("|"), "gi");
   let from = 0;
-  for (;;) {
-    const at = lower.indexOf(q, from);
-    if (at < 0) break;
+  for (const m of text.matchAll(re)) {
+    const at = m.index ?? 0;
     if (at > from) parts.push(text.slice(from, at));
-    parts.push({ hit: text.slice(at, at + q.length) });
-    from = at + q.length;
+    parts.push({ hit: m[0] });
+    from = at + m[0].length;
   }
   parts.push(text.slice(from));
   return parts.map((p, i) =>

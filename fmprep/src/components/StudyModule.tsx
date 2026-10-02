@@ -40,7 +40,7 @@ export type StudyView =
   | { name: "quizSetup" }
   | { name: "quiz"; config: QuizConfig }
   | { name: "docs" }
-  | { name: "doc"; id: string }
+  | { name: "doc"; id: string; q?: string }
   | { name: "search"; query?: string }
   | { name: "charts"; q?: string; chartId?: string }
   | { name: "progress" };
@@ -303,12 +303,13 @@ export default function StudyModule() {
 
 
     case "docs":
-      return <MyDocuments onBack={back} onOpenDoc={(id) => go({ name: "doc", id })} />;
+      return <MyDocuments onBack={back} onOpenDoc={(id, q) => go({ name: "doc", id, q })} />;
 
     case "doc":
       return (
         <DocReader
           docId={view.id}
+          initialQuery={view.q}
           onBack={back}
           onSearchLibrary={(query) => go({ name: "search", query })}
         />

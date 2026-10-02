@@ -127,6 +127,59 @@ export function collections(): string[] {
   return [...set].sort((a, b) => a.localeCompare(b));
 }
 
+/* Folders. A folder is the collection a document sits in; a folder made
+   before anything is put in it is remembered here so it does not vanish. */
+const FOLDERS_KEY = "FMPREP_FOLDERS_V1";
+
+function storedFolders(): string[] {
+  try {
+    const raw = localStorage.getItem(FOLDERS_KEY);
+    return raw ? (JSON.parse(raw) as string[]).filter((x) => typeof x === "string") : [];
+  } catch {
+    return [];
+  }
+}
+
+function saveFolders(list: string[]) {
+  try {
+    localStorage.setItem(FOLDERS_KEY, JSON.stringify([...new Set(list)]));
+  } catch {
+    /* storage blocked: folders still exist while they hold documents */
+  }
+}
+
+/** Every folder, empty ones included, A to Z. */
+export function folders(): string[] {
+  const set = new Set<string>([...storedFolders(), ...collections()]);
+  return [...set].sort((a, b) => a.localeCompare(b));
+}
+
+export function createFolder(name: string): string {
+  const clean = name.trim();
+  if (!clean) return "";
+  saveFolders([...storedFolders(), clean]);
+  emit();
+  return clean;
+}
+
+export async function renameFolder(from: string, to: string): Promise<void> {
+  const clean = to.trim();
+  if (!clean || clean === from) return;
+  saveFolders([...storedFolders().filter((f) => f !== from), clean]);
+  await renameCollection(from, clean);
+  emit();
+}
+
+/** Remove a folder. Its documents are deleted, or moved to "Unfiled". */
+export async function deleteFolder(name: string, deleteDocuments: boolean): Promise<void> {
+  saveFolders(storedFolders().filter((f) => f !== name));
+  for (const doc of cache.filter((d) => d.collection === name)) {
+    if (deleteDocuments) await deleteDoc(doc.id);
+    else await updateDoc(doc.id, { collection: "Unfiled" });
+  }
+  emit();
+}
+
 /* ------------------------------------------------------------------ */
 /* Text extraction                                                     */
 /* ------------------------------------------------------------------ */
@@ -411,6 +464,71 @@ export function searchDocs(query: string, limit = 60): DocHit[] {
     }
   }
   return hits;
+}
+
+/* Lower-cased text per document, made once and reused for every keystroke. */
+const lowered = new WeakMap<StudyDoc, { title: string; text: string }>();
+function lowerOf(doc: StudyDoc) {
+  let l = lowered.get(doc);
+  if (!l) {
+    l = { title: doc.title.toLowerCase(), text: doc.text.toLowerCase() };
+    lowered.set(doc, l);
+  }
+  return l;
+}
+
+export type DocResult = {
+  doc: StudyDoc;
+  /** The name, or the folder, matched every word. */
+  inTitle: boolean;
+  /** How many times the words occur in the text. */
+  count: number;
+  /** Text around the first match, for the result list. */
+  snippet: string;
+};
+
+/**
+ * Search every document by name, folder and contents. Every word typed must
+ * appear somewhere in the document (name, folder or text), in any order, so
+ * "burn fluid child" finds the paediatric burns note. Names that match come
+ * first, then the documents that mention the words most.
+ */
+export function searchLibrary(query: string, limit = 200): DocResult[] {
+  const words = query.toLowerCase().split(/\s+/).filter((w) => w.length >= 2);
+  if (!words.length) return [];
+  const out: DocResult[] = [];
+  for (const doc of cache) {
+    const l = lowerOf(doc);
+    const folder = doc.collection.toLowerCase();
+    let ok = true;
+    let count = 0;
+    for (const w of words) {
+      const inName = l.title.includes(w) || folder.includes(w);
+      let n = 0;
+      let from = 0;
+      while (n < 500) {
+        const at = l.text.indexOf(w, from);
+        if (at < 0) break;
+        n++;
+        from = at + w.length;
+      }
+      if (!inName && n === 0) {
+        ok = false;
+        break;
+      }
+      count += n;
+    }
+    if (!ok) continue;
+    const inTitle = words.every((w) => l.title.includes(w) || folder.includes(w));
+    const first = words.map((w) => l.text.indexOf(w)).filter((i) => i >= 0).sort((a, b) => a - b)[0];
+    const snippet =
+      first === undefined
+        ? ""
+        : `${first > 70 ? "…" : ""}${doc.text.slice(Math.max(0, first - 70), first + 140).replace(/\s+/g, " ")}…`;
+    out.push({ doc, inTitle, count, snippet });
+  }
+  out.sort((a, b) => Number(b.inTitle) - Number(a.inTitle) || b.count - a.count);
+  return out.slice(0, limit);
 }
 
 export function formatBytes(n: number): string {

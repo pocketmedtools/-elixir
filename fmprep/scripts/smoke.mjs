@@ -130,6 +130,9 @@ check("repeating topics view works", rep > 0);
 await goHome(page);
 await page.getByRole("button", { name: /My documents/i }).first().click();
 await page.waitForTimeout(1500);
+// Documents live in folders; the seeded papers are in "All documents" too.
+await page.getByRole("button", { name: /All documents/i }).first().click();
+await page.waitForTimeout(800);
 check(
   "source papers are already in the library",
   (await page.getByText(/question papers 2022 to 2025/i).count()) > 0 &&
