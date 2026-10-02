@@ -1,7 +1,7 @@
 // Pocket-Med service worker.
 // Bump CACHE_VERSION whenever the shell list below changes; activate() drops
 // every older cache, so a deploy never serves a half-stale shell.
-const CACHE_VERSION = 'pocket-med-v38'
+const CACHE_VERSION = 'pocket-med-v39'
 
 // The app is served from a sub-path on GitHub Pages, so every URL is derived
 // from where this worker actually lives rather than hard-coded to '/'.
@@ -116,6 +116,8 @@ self.addEventListener('fetch', (event) => {
 
   const url = new URL(request.url)
   if (url.origin !== self.location.origin) return
+  // The update check must always reach the network (and never fill the cache).
+  if (url.pathname === BASE + 'version.json') return
 
   if (request.mode === 'navigate') {
     event.respondWith(navigationHandler(request))
