@@ -116,13 +116,13 @@
    while every token-level check passed. One theme cannot drift.
    --------------------------------------------------------------- */
 :root {
-  --bg: #f2dab6;
-  --card: #f8e8cf;
+  --bg: #f7ead5;
+  --card: #fcf4e6;
   --ink: #1c1b19;
   --muted: #3a3733;
   --quiet: #574a3a;
-  --rule: #d9bd8f;
-  --sunk: #ecd0a6;
+  --rule: #e3cda8;
+  --sunk: #f1dfc2;
   /* Three inks, three jobs, in descending weight: a dark green heading, a
      maroon keyword, and a dark blue for the small labels that name a thing
      without being the thing - a table's column, the kind of chart, the subject
@@ -135,12 +135,12 @@
   --label: #0f3460;
   /* Pastel grounds for chart nodes and table rows: present enough to separate
      a box from the page, faint enough not to fight the letters on it. */
-  --pale: #eed4ad;
-  --cream: #f9ebd4;
+  --pale: #f2e2c7;
+  --cream: #fdf6ea;
   --mint: #eef6f1;
   --blush: #fdf0f0;
   --accent: #151311;
-  --line: #d6b98a;
+  --line: #e0c9a2;
   /* Semantic colour, fixed in every subject: these three mean safe,
      caution and danger and are never used for anything else. */
   --good: #14622f; --good-wash: #eff6f0; --good-rule: #c2ddc9;
@@ -556,7 +556,7 @@ cite.cite {
 
 
 /* ---------------------------------------------------------------
-   Book paper. The whole app sits on one warm page colour, #F2DAB6,
+   Book paper. The whole app sits on one warm page colour, a light parchment (#F7EAD5),
    like the paper of a well-made textbook. Components written with
    Tailwind's literal shades (bg-white, slate borders, slate-400/500
    type) are mapped onto the same paper family here, so no white
@@ -564,12 +564,12 @@ cite.cite {
    is darkened to stay readable on the warmer ground.
    --------------------------------------------------------------- */
 .bg-white { background-color: var(--card) !important; }
-.bg-slate-50 { background-color: #f5e2c3 !important; }
+.bg-slate-50 { background-color: #f9eedc !important; }
 .bg-slate-100 { background-color: var(--sunk) !important; }
-.bg-slate-200 { background-color: #e6c99c !important; }
-.border-slate-100 { border-color: #e2c79d !important; }
+.bg-slate-200 { background-color: #ebd7b5 !important; }
+.border-slate-100 { border-color: #ead6b4 !important; }
 .border-slate-200 { border-color: var(--rule) !important; }
-.border-slate-300 { border-color: #c9aa7a !important; }
+.border-slate-300 { border-color: #d5bb90 !important; }
 .text-slate-400 { color: #6e5f4b !important; }
 .text-slate-500 { color: #5a4c3b !important; }
 .text-slate-600 { color: #4a3e30 !important; }

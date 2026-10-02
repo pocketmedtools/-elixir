@@ -33,7 +33,7 @@ type Loaded = StudyDoc & { blob?: Blob };
  * tables, images and code are made to fit the phone's width so nothing runs
  * off the right-hand edge. The document's content itself is not changed.
  */
-const READING_CSS = `html,body{max-width:100%!important;overflow-x:hidden!important;background:#f2dab6!important}
+const READING_CSS = `html,body{max-width:100%!important;overflow-x:hidden!important;background:#f7ead5!important}
 *,*::before,*::after{box-sizing:border-box}
 @media (max-width:700px){main,article,section,.container,.wrap,.wrapper,.page,.content{padding-left:12px!important;padding-right:12px!important;margin-left:0!important;margin-right:0!important;max-width:100%!important}}
 .fm-scroll{overflow-x:auto!important;-webkit-overflow-scrolling:touch;max-width:100%!important;margin:0 0 1em}

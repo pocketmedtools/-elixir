@@ -14,7 +14,7 @@ const native = () =>
   Boolean((globalThis as { Capacitor?: { isNativePlatform?: () => boolean } }).Capacitor?.isNativePlatform?.());
 
 /** The page's own ground, so nothing the system draws fights it. */
-const PAPER = "#f2dab6";
+const PAPER = "#f7ead5";
 
 export async function dressNativeShell(): Promise<void> {
   if (!native()) return;
