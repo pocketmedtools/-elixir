@@ -33,7 +33,7 @@ type Loaded = StudyDoc & { blob?: Blob };
  * tables, images and code are made to fit the phone's width so nothing runs
  * off the right-hand edge. The document's content itself is not changed.
  */
-const READING_CSS = `html,body{max-width:100%!important;overflow-x:hidden!important}
+const READING_CSS = `html,body{max-width:100%!important;overflow-x:hidden!important;background:#f2dab6!important}
 *,*::before,*::after{box-sizing:border-box}
 @media (max-width:700px){main,article,section,.container,.wrap,.wrapper,.page,.content{padding-left:12px!important;padding-right:12px!important;margin-left:0!important;margin-right:0!important;max-width:100%!important}}
 .fm-scroll{overflow-x:auto!important;-webkit-overflow-scrolling:touch;max-width:100%!important;margin:0 0 1em}
@@ -46,7 +46,7 @@ pre,code{white-space:pre-wrap!important;overflow-wrap:anywhere}`;
 const READING_JS = `(function(){if(!document.documentElement.lang)document.documentElement.lang='en';function strip(){var H=innerHeight;var all=document.body?document.body.getElementsByTagName('*'):[];
 for(var i=0;i<all.length;i++){var el=all[i];var cs=getComputedStyle(el);
 if((cs.position==='fixed'||cs.position==='sticky')&&el.getBoundingClientRect().height<H*0.5){el.style.setProperty('display','none','important')}}}
-function fit(){var ts=document.getElementsByTagName('table');for(var i=0;i<ts.length;i++){var t=ts[i],p=t.parentElement;if(!p)continue;if(!p.classList.contains('fm-scroll')){var w=document.createElement('div');w.className='fm-scroll';p.insertBefore(w,t);w.appendChild(t);p=w}var W=p.clientWidth,s=0.95;t.style.setProperty('font-size',s+'em','important');while(t.offsetWidth>W+1&&s>0.82){s-=0.03;t.style.setProperty('font-size',s.toFixed(2)+'em','important')}}}function run(){strip();fit()}document.addEventListener('DOMContentLoaded',run);addEventListener('load',function(){run();setTimeout(run,600);setTimeout(run,2000)});addEventListener('resize',fit)})();`;
+function fit(){var ts=document.getElementsByTagName('table');for(var i=0;i<ts.length;i++){var t=ts[i],p=t.parentElement;if(!p)continue;if(!p.classList.contains('fm-scroll')){var w=document.createElement('div');w.className='fm-scroll';p.insertBefore(w,t);w.appendChild(t);p=w}var W=p.clientWidth,s=0.95;t.style.setProperty('font-size',s+'em','important');while(t.offsetWidth>W+1&&s>0.82){s-=0.03;t.style.setProperty('font-size',s.toFixed(2)+'em','important')}}}function paper(){var all=document.body?document.body.getElementsByTagName('*'):[];for(var i=0;i<all.length;i++){var el=all[i];var m=getComputedStyle(el).backgroundColor.match(/rgba?\\(([^)]+)\\)/);if(!m)continue;var c=m[1].split(',').map(parseFloat);if(c.length>3&&c[3]===0)continue;var lo=Math.min(c[0],c[1],c[2]),hi=Math.max(c[0],c[1],c[2]);if(lo>=238)el.style.setProperty('background-color','transparent','important');else if(lo>=215&&hi-lo<14)el.style.setProperty('background-color','rgba(120,80,30,.07)','important')}}function run(){strip();fit();paper()}document.addEventListener('DOMContentLoaded',run);addEventListener('load',function(){run();setTimeout(run,600);setTimeout(run,2000)});addEventListener('resize',fit)})();`;
 
 /**
  * Where the reader is inside the page. The page runs in a sandbox, so it
