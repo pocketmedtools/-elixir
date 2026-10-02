@@ -342,28 +342,38 @@ export function Empty({ title, body }: { title: string; body: string }) {
 }
 
 /** A tappable row used throughout the lists. */
+/** The seven dark inks, in turn: green, blue, maroon, purple, brown, teal, rust. */
+export const ROW_INKS = ["#14532d", "#0f3460", "#7a1220", "#4a1259", "#4a3018", "#0d4a44", "#7a2e08"];
+export const inkAt = (i: number) => ROW_INKS[((i % 7) + 7) % 7];
+
 export function RowButton({
   onClick,
   title,
   subtitle,
   left,
   right,
+  ink,
 }: {
   onClick: () => void;
   title: ReactNode;
   subtitle?: ReactNode;
   left?: ReactNode;
   right?: ReactNode;
+  /** A dark ink for the card's spine and title, so a long list reads as a sequence. */
+  ink?: string;
 }) {
   return (
     <button
       type="button"
       onClick={onClick}
-      className="flex w-full items-start gap-3.5 rounded-xl border border-slate-200 bg-white p-4 text-left shadow-sm transition hover:shadow"
+      className={`flex w-full items-start gap-3.5 rounded-xl border border-slate-200 bg-white p-4 text-left shadow-sm transition hover:shadow${ink ? " ink-spine" : ""}`}
+      style={ink ? ({ "--row-ink": ink } as CSSProperties) : undefined}
     >
       {left}
       <span className="min-w-0 flex-1">
-        <span className="block text-[17px] font-bold leading-snug text-slate-900">{title}</span>
+        <span className="block text-[17px] font-bold leading-snug text-slate-900" style={ink ? { color: ink } : undefined}>
+          {title}
+        </span>
         {subtitle && <span className="mt-1 block text-[13.5px] leading-[1.55] text-slate-600">{subtitle}</span>}
       </span>
       {right}

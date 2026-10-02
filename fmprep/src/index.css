@@ -574,3 +574,15 @@ cite.cite {
 .text-slate-500 { color: #5a4c3b !important; }
 .text-slate-600 { color: #4a3e30 !important; }
 input, textarea, select { background-color: var(--card); }
+
+/* Dark inks over the paper: the filled buttons and the chosen filter take the
+   dark green, page titles the green, section titles the blue, and the small
+   capitalised labels over a list the maroon - so a screen reads in the same
+   green / blue / maroon voice as the notes, not in black and grey. */
+.bg-slate-900 { background-color: #14532d !important; }
+.border-slate-900 { border-color: #14532d !important; }
+.hover\:bg-slate-800:hover { background-color: #0f3d22 !important; }
+h1.text-slate-900 { color: var(--head) !important; }
+h2.text-slate-900, h3.text-slate-900 { color: #0f3460 !important; }
+h2.text-slate-500, h2.text-xs.uppercase { color: #7a1220 !important; }
+.ink-spine { border-left-width: 5px !important; border-left-color: var(--row-ink) !important; }

@@ -7,7 +7,7 @@
  * document's name, folder and full text at once. Each file keeps its original
  * bytes and its complete extracted text; nothing is summarised or rewritten.
  */
-import { useEffect, useMemo, useRef, useState, useSyncExternalStore, type ReactNode } from "react";
+import { useEffect, useMemo, useRef, useState, useSyncExternalStore, type CSSProperties, type ReactNode } from "react";
 import {
   addFiles,
   addText,
@@ -28,7 +28,7 @@ import {
   type StudyDoc,
 } from "../lib/docs";
 import { getVersion as getStudyVersion, isDocRead, subscribe as subscribeStudy } from "../lib/store";
-import { BackBar, Chip, Empty, RowButton } from "./ui";
+import { BackBar, Chip, Empty, RowButton, inkAt } from "./ui";
 
 const KIND_LABEL: Record<StudyDoc["kind"], string> = {
   text: "Text",
@@ -181,15 +181,16 @@ export default function MyDocuments({
           : `${results.length} document${results.length > 1 ? "s" : ""} found`}
       </p>
       <div className="mt-2 space-y-2">
-        {results.map((r) => (
+        {results.map((r, ri) => (
           <button
             key={r.doc.id}
             type="button"
             onClick={() => onOpenDoc(r.doc.id, r.count ? query : undefined)}
-            className="block w-full rounded-xl border border-slate-200 bg-white p-3.5 text-left shadow-sm"
+            className="ink-spine block w-full rounded-xl border border-slate-200 bg-white p-3.5 text-left shadow-sm"
+            style={{ "--row-ink": inkAt(ri) } as CSSProperties}
           >
             <span className="flex items-start gap-2">
-              <span className="min-w-0 flex-1 text-[16.5px] font-bold leading-snug text-slate-900">
+              <span className="min-w-0 flex-1 text-[16.5px] font-bold leading-snug" style={{ color: inkAt(ri) }}>
                 {highlight(r.doc.title, words)}
               </span>
               {isDocRead(r.doc.id) && <ReadBadge />}
@@ -227,17 +228,19 @@ export default function MyDocuments({
       </div>
       <div className="mt-3 space-y-2">
         <RowButton
+          ink={inkAt(0)}
           onClick={() => setOpen(ALL)}
           title="All documents"
           subtitle={`${docs.length} documents · ${docs.filter((d) => isDocRead(d.id)).length} read`}
           right={<span className="text-slate-400">▸</span>}
         />
-        {allFolders.map((f) => {
+        {allFolders.map((f, fi) => {
           const list = docs.filter((d) => d.collection === f);
           const r = list.filter((d) => isDocRead(d.id)).length;
           return (
             <RowButton
               key={f}
+              ink={inkAt(fi + 1)}
               onClick={() => setOpen(f)}
               title={`📁 ${f}`}
               subtitle={
@@ -381,9 +384,10 @@ export default function MyDocuments({
         <Empty title="This folder is empty" body="Tap Add files above and pick as many files as you like." />
       ) : (
         <div className="mt-3 space-y-2">
-          {shown.map((doc) => (
+          {shown.map((doc, di) => (
             <div key={doc.id}>
               <RowButton
+                ink={inkAt(di)}
                 onClick={() => onOpenDoc(doc.id)}
                 title={doc.title}
                 subtitle={

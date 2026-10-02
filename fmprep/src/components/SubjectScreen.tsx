@@ -6,7 +6,7 @@ import { useSyncExternalStore } from "react";
 import { getSubject, topicsByFrequency } from "../content/index";
 import { getState, getVersion, subscribe } from "../lib/store";
 import { FREQUENCY_LABEL } from "../lib/types";
-import { BackBar, Chip, Empty, RowButton } from "./ui";
+import { BackBar, Chip, Empty, RowButton, inkAt } from "./ui";
 
 export default function SubjectScreen({
   subjectId,
@@ -69,8 +69,9 @@ export default function SubjectScreen({
             {FREQUENCY_LABEL[group.band]}
           </h2>
           <div className="mt-3 space-y-3">
-            {group.topics.map((topic) => (
+            {group.topics.map((topic, i) => (
               <RowButton
+                ink={inkAt(i)}
                 key={topic.id}
                 onClick={() => onOpenTopic(topic.id)}
                 title={topic.title}
@@ -96,8 +97,9 @@ export default function SubjectScreen({
         <section className="mt-10">
           <h2 className="text-xs font-bold uppercase tracking-widest text-slate-500">Cases in this subject</h2>
           <div className="mt-3 space-y-3">
-            {subject.cases.map((c) => (
+            {subject.cases.map((c, i) => (
               <RowButton
+                ink={inkAt(i + 3)}
                 key={c.id}
                 onClick={() => onOpenCase(c.id)}
                 title={c.title}

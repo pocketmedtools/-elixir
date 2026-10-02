@@ -6,7 +6,7 @@ import { useMemo, useState } from "react";
 import type { CSSProperties } from "react";
 import { allCases, getCase } from "../content/index";
 import type { CaseKind } from "../lib/types";
-import { BackBar, Callout, Chip, Empty, FrequencyChip, RowButton, SectionBlock } from "./ui";
+import { BackBar, Callout, Chip, Empty, FrequencyChip, RowButton, inkAt, SectionBlock } from "./ui";
 
 const KIND_LABEL: Record<CaseKind, string> = {
   long: "Long case",
@@ -63,8 +63,9 @@ export function CaseList({
         <Empty title="No cases of that kind yet" body="Switch the filter back to All to see every case." />
       ) : (
         <div className="mt-3 space-y-2">
-          {list.map((c) => (
+          {list.map((c, i) => (
             <RowButton
+              ink={inkAt(i)}
               key={c.clinicalCase.id}
               onClick={() => onOpenCase(c.clinicalCase.id)}
               title={c.clinicalCase.title}
