@@ -5,7 +5,7 @@
  * tab of the clinical app rather than in the browser's history. Every screen
  * is a plain component; this file only decides which one is showing.
  */
-import { Suspense, lazy, useCallback, useEffect, useState } from "react";
+import { Suspense, lazy, useCallback, useEffect, useRef, useState } from "react";
 import { mcqIndex, subjectIdForTopic } from "../content/index";
 import ContentGate from "./ContentGate";
 import { load as loadDocs, seedDocuments } from "../lib/docs";
@@ -55,9 +55,73 @@ function subjectsForTopic(topicId: string): string[] | "all" {
   return id ? [id] : "all";
 }
 
+/* The app reopens where it was left - the same screen, the same document,
+   scrolled to the same place - even days later. The screen stack and the
+   page's scroll are kept in their own key, written as the reader moves, so a
+   closed or killed app comes back exactly there. A quiz in progress is the one
+   screen not restored: its answers live in memory, not here. */
+const NAV_KEY = "FMPREP_NAV_V1";
+const RESTORABLE = new Set([
+  "home", "library", "subject", "topic", "theory", "pyq", "cases", "case", "presentation",
+  "pattern", "quizSetup", "docs", "doc", "search", "charts", "progress",
+]);
+
+function loadNav(): { stack: StudyView[]; scrollY: number } {
+  try {
+    const raw = localStorage.getItem(NAV_KEY);
+    if (!raw) return { stack: [{ name: "home" }], scrollY: 0 };
+    const parsed = JSON.parse(raw) as { stack?: StudyView[]; scrollY?: number };
+    const stack = (parsed.stack ?? []).filter((v) => v && RESTORABLE.has(v.name));
+    if (!stack.length) return { stack: [{ name: "home" }], scrollY: 0 };
+    if (stack[0].name !== "home") stack.unshift({ name: "home" });
+    return { stack, scrollY: Number(parsed.scrollY) || 0 };
+  } catch {
+    return { stack: [{ name: "home" }], scrollY: 0 };
+  }
+}
+
+function saveNav(stack: StudyView[], scrollY: number) {
+  try {
+    const keep = stack.filter((v) => RESTORABLE.has(v.name)).slice(-12);
+    localStorage.setItem(NAV_KEY, JSON.stringify({ stack: keep, scrollY: Math.round(scrollY) }));
+  } catch {
+    /* storage full or blocked: the app still works, it just starts at home */
+  }
+}
+
+const INITIAL_NAV = loadNav();
+
 export default function StudyModule() {
-  const [stack, setStack] = useState<StudyView[]>([{ name: "home" }]);
+  const [stack, setStack] = useState<StudyView[]>(INITIAL_NAV.stack);
   const view = stack[stack.length - 1];
+  const restoring = useRef(INITIAL_NAV.scrollY > 0);
+
+  // Every change of screen is written at once; the scroll a moment after it settles.
+  useEffect(() => {
+    saveNav(stack, restoring.current ? INITIAL_NAV.scrollY : window.scrollY);
+  }, [stack]);
+  useEffect(() => {
+    let timer: number | undefined;
+    const onScroll = () => {
+      window.clearTimeout(timer);
+      timer = window.setTimeout(() => {
+        if (!restoring.current) saveNav(stack, window.scrollY);
+      }, 300);
+    };
+    window.addEventListener("scroll", onScroll, { passive: true });
+    return () => {
+      window.clearTimeout(timer);
+      window.removeEventListener("scroll", onScroll);
+    };
+  }, [stack]);
+  // Closing or backgrounding the app saves the exact spot.
+  useEffect(() => {
+    const flush = () => {
+      if (document.visibilityState === "hidden" && !restoring.current) saveNav(stack, window.scrollY);
+    };
+    document.addEventListener("visibilitychange", flush);
+    return () => document.removeEventListener("visibilitychange", flush);
+  }, [stack]);
 
   // The document list is needed by search and by the home counts, so it is
   // read once when the module first mounts rather than on each screen. The
@@ -71,6 +135,26 @@ export default function StudyModule() {
   }, []);
 
   useEffect(() => {
+    if (restoring.current) {
+      // The first screen after reopening goes back to where it was read. The
+      // content may still be loading, so the scroll is retried until it
+      // holds or the reader moves on their own.
+      const target = INITIAL_NAV.scrollY;
+      let tries = 0;
+      const step = () => {
+        window.scrollTo({ top: target });
+        tries++;
+        if (Math.abs(window.scrollY - target) > 4 && tries < 12) timer = window.setTimeout(step, 250);
+        else restoring.current = false;
+      };
+      const stop = () => {
+        restoring.current = false;
+        window.clearTimeout(timer);
+      };
+      let timer = window.setTimeout(step, 120);
+      window.addEventListener("touchstart", stop, { once: true, passive: true });
+      return () => window.clearTimeout(timer);
+    }
     window.scrollTo({ top: 0 });
   }, [stack.length, view.name]);
 

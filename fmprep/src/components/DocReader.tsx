@@ -8,7 +8,20 @@
  */
 import { useEffect, useMemo, useRef, useState } from "react";
 import { getDoc, wordCount, type StudyDoc } from "../lib/docs";
-import { docPosition, getState, rememberDoc, updateSettings } from "../lib/store";
+import {
+  docModeOf,
+  docPagePosition,
+  docPosition,
+  getState,
+  isDocRead,
+  rememberDoc,
+  rememberDocPage,
+  setDocMode,
+  setDocRead,
+  subscribe,
+  updateSettings,
+  type DocMode,
+} from "../lib/store";
 import { BackBar, Chip, Empty } from "./ui";
 import { setImmersive } from "../lib/nativeShell";
 
@@ -34,6 +47,33 @@ const READING_JS = `(function(){if(!document.documentElement.lang)document.docum
 for(var i=0;i<all.length;i++){var el=all[i];var cs=getComputedStyle(el);
 if((cs.position==='fixed'||cs.position==='sticky')&&el.getBoundingClientRect().height<H*0.5){el.style.setProperty('display','none','important')}}}
 function fit(){var ts=document.getElementsByTagName('table');for(var i=0;i<ts.length;i++){var t=ts[i],p=t.parentElement;if(!p)continue;if(!p.classList.contains('fm-scroll')){var w=document.createElement('div');w.className='fm-scroll';p.insertBefore(w,t);w.appendChild(t);p=w}var W=p.clientWidth,s=0.95;t.style.setProperty('font-size',s+'em','important');while(t.offsetWidth>W+1&&s>0.82){s-=0.03;t.style.setProperty('font-size',s.toFixed(2)+'em','important')}}}function run(){strip();fit()}document.addEventListener('DOMContentLoaded',run);addEventListener('load',function(){run();setTimeout(run,600);setTimeout(run,2000)});addEventListener('resize',fit)})();`;
+
+/**
+ * Where the reader is inside the page. The page runs in a sandbox, so it
+ * reports its own scroll to the app, and is told on load where to go back to:
+ * the exact pixel when reopened in the same view, the same fraction of the
+ * page when the view has changed (full screen lays the page out differently).
+ * It stops trying the moment the reader touches the screen.
+ */
+function positionJs(y: number, f: number): string {
+  return `(function(){var Y=${Math.max(0, Math.round(y))},F=${Math.max(0, Math.min(1, f))},moved=false;
+function max(){return Math.max(1,document.documentElement.scrollHeight-innerHeight)}
+function go(){if(moved)return;var t=Y>0?Y:(F>0?F*max():0);if(t>0)scrollTo(0,t)}
+addEventListener('touchstart',function(){moved=true},{passive:true});addEventListener('wheel',function(){moved=true},{passive:true});
+addEventListener('load',function(){go();setTimeout(go,300);setTimeout(go,900);setTimeout(go,1800)});
+var tm;addEventListener('scroll',function(){clearTimeout(tm);tm=setTimeout(function(){parent.postMessage({fmScroll:Math.round(scrollY),fmFrac:scrollY/max()},'*')},250)},{passive:true});
+document.addEventListener('visibilitychange',function(){parent.postMessage({fmScroll:Math.round(scrollY),fmFrac:scrollY/max()},'*')})})();`;
+}
+
+function withPosition(html: string, y: number, f: number): string {
+  const inject = "<script>" + positionJs(y, f) + "</scr" + "ipt>";
+  const head = html.match(/<head[^>]*>/i);
+  if (head && head.index !== undefined) {
+    const at = head.index + head[0].length;
+    return html.slice(0, at) + inject + html.slice(at);
+  }
+  return inject + html;
+}
 
 function forReading(html: string): string {
   const inject =
@@ -70,15 +110,56 @@ export default function DocReader({
      in a sandboxed frame with no access to the app's own storage. The text
      view stays one tap away for searching. */
   const [pageHtml, setPageHtml] = useState<string | null>(null);
-  const [asPage, setAsPage] = useState(true);
+  const savedMode = docModeOf(docId);
+  const [asPage, setAsPageState] = useState(savedMode !== "text");
+  const setAsPage = (v: boolean) => {
+    setAsPageState(v);
+    setDocMode(docId, v ? "page" : "text");
+  };
   /* Full screen: only the document, edge to edge, over the app's own bars.
      A small close button floats in the corner; the browser's fullscreen is
      asked for as well where the device allows it, to hide the status bar. */
   const [full, setFull] = useState(false);
-  const readingHtml = useMemo(() => (pageHtml !== null ? forReading(pageHtml) : null), [pageHtml]);
+  /* Each frame is built when it is shown, carrying the position to return to,
+     so switching views or reopening the app lands on the same passage. */
+  const startAt = (mode: DocMode) => {
+    const p = docPagePosition(docId);
+    if (!p) return { y: 0, f: 0 };
+    return p.mode === mode ? { y: p.y, f: p.f } : { y: 0, f: p.f };
+  };
+  const readingHtml = useMemo(() => {
+    if (pageHtml === null || !full) return null;
+    const at = startAt("full");
+    return forReading(withPosition(pageHtml, at.y, at.f));
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [pageHtml, full]);
+  const pageSrc = useMemo(() => {
+    if (pageHtml === null || full || !asPage) return null;
+    const at = startAt("page");
+    return withPosition(pageHtml, at.y, at.f);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [pageHtml, full, asPage]);
+  const pageFrame = useRef<HTMLIFrameElement | null>(null);
+  const fullFrame = useRef<HTMLIFrameElement | null>(null);
+  useEffect(() => {
+    const onMessage = (e: MessageEvent) => {
+      const d = e.data as { fmScroll?: number; fmFrac?: number } | null;
+      if (!d || typeof d.fmScroll !== "number") return;
+      const mode: DocMode | null =
+        e.source === fullFrame.current?.contentWindow ? "full" : e.source === pageFrame.current?.contentWindow ? "page" : null;
+      if (!mode) return;
+      rememberDocPage(docId, { y: d.fmScroll, f: Math.max(0, Math.min(1, d.fmFrac ?? 0)), mode });
+    };
+    window.addEventListener("message", onMessage);
+    return () => window.removeEventListener("message", onMessage);
+  }, [docId]);
+  // Read / unread, kept in step with the store.
+  const [read, setRead] = useState(() => isDocRead(docId));
+  useEffect(() => subscribe(() => setRead(isDocRead(docId))), [docId]);
   const fullRef = useRef<HTMLDivElement | null>(null);
   const openFull = () => {
     setFull(true);
+    setDocMode(docId, "full");
     // In the app: hide the status bar. On the web: ask for browser fullscreen.
     void setImmersive(true).then((native) => {
       if (native) return;
@@ -91,6 +172,7 @@ export default function DocReader({
   };
   const closeFull = () => {
     setFull(false);
+    setDocMode(docId, "page");
     void setImmersive(false);
     try {
       if (document.fullscreenElement) void document.exitFullscreen().catch(() => undefined);
@@ -98,6 +180,15 @@ export default function DocReader({
       /* nothing to undo */
     }
   };
+  // Reopened in full screen if that is how it was left.
+  const autoFull = useRef(savedMode === "full");
+  useEffect(() => {
+    if (pageHtml !== null && autoFull.current) {
+      autoFull.current = false;
+      openFull();
+    }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [pageHtml]);
   // Leaving the reader while in full screen must still bring the bar back.
   useEffect(() => () => void setImmersive(false), []);
   useEffect(() => {
@@ -135,11 +226,23 @@ export default function DocReader({
     };
   }, [imageUrl]);
 
-  // Restore the last position once the first block is on screen.
+  // Restore the last position. A long text is painted in blocks as it is
+  // scrolled, so when the saved place lies deeper than what is painted, the
+  // whole text is painted first and then scrolled to.
   useEffect(() => {
     if (!doc) return;
     const saved = docPosition(doc.id);
-    if (saved > 0) window.scrollTo({ top: saved });
+    if (saved <= 0) return;
+    if (saved > document.documentElement.scrollHeight - window.innerHeight)
+      setBlocks(Math.max(1, Math.ceil(doc.text.length / BLOCK)));
+    let tries = 0;
+    let timer = 0;
+    const step = () => {
+      window.scrollTo({ top: saved });
+      if (Math.abs(window.scrollY - saved) > 4 && ++tries < 12) timer = window.setTimeout(step, 200);
+    };
+    timer = window.setTimeout(step, 60);
+    return () => window.clearTimeout(timer);
   }, [doc]);
 
   // Remember the position, but not on every scroll event.
@@ -272,6 +375,20 @@ export default function DocReader({
             Export the original file
           </button>
         </div>
+        <div className="mt-3">
+          <button
+            type="button"
+            onClick={() => setDocRead(docId, !read, Date.now())}
+            className="w-full rounded-lg border px-3 py-2.5 text-sm font-bold"
+            style={
+              read
+                ? { background: "#14532d", borderColor: "#14532d", color: "#fff" }
+                : { background: "#fff", borderColor: "#cbd5e1", color: "#1e293b" }
+            }
+          >
+            {read ? "✓ Read - tap to mark as not read" : "Mark as read"}
+          </button>
+        </div>
       </header>
 
       {doc.extractNote && (
@@ -314,6 +431,7 @@ export default function DocReader({
         >
           <iframe
             title={doc.title}
+            ref={fullFrame}
             srcDoc={readingHtml ?? pageHtml}
             sandbox="allow-scripts allow-popups allow-forms allow-modals allow-downloads"
             className="block w-full flex-1 border-0 bg-white"
@@ -332,8 +450,9 @@ export default function DocReader({
 
       {pageHtml !== null && asPage && !full && (
         <iframe
+          ref={pageFrame}
           title={doc.title}
-          srcDoc={pageHtml}
+          srcDoc={pageSrc ?? pageHtml}
           sandbox="allow-scripts allow-popups allow-forms allow-modals allow-downloads"
           className="mt-3 w-full rounded-xl border border-slate-200 bg-white"
           style={{ height: "calc(100dvh - 170px)", minHeight: 480 }}

@@ -8,6 +8,11 @@
  */
 import { useEffect, useMemo, useRef, useState, useSyncExternalStore } from "react";
 import {
+  getVersion as getStudyVersion,
+  isDocRead,
+  subscribe as subscribeStudy,
+} from "../lib/store";
+import {
   addFiles,
   addText,
   collections,
@@ -42,7 +47,11 @@ export default function MyDocuments({
   onOpenDoc: (id: string) => void;
 }) {
   useSyncExternalStore(subscribe, getVersion);
+  useSyncExternalStore(subscribeStudy, getStudyVersion);
   const docs = getDocs();
+  /* Read / unread: what is finished and what is still to be read. */
+  const [readFilter, setReadFilter] = useState<"all" | "unread" | "read">("all");
+  const readCount = docs.filter((d) => isDocRead(d.id)).length;
   const [collection, setCollection] = useState("FM Project");
   const [filter, setFilter] = useState<string | "all">("all");
   const [busy, setBusy] = useState<string | null>(null);
@@ -59,8 +68,12 @@ export default function MyDocuments({
 
   const names = collections();
   const shown = useMemo(
-    () => (filter === "all" ? docs : docs.filter((d) => d.collection === filter)),
-    [docs, filter],
+    () =>
+      (filter === "all" ? docs : docs.filter((d) => d.collection === filter)).filter((d) =>
+        readFilter === "all" ? true : readFilter === "read" ? isDocRead(d.id) : !isDocRead(d.id),
+      ),
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+    [docs, filter, readFilter, readCount],
   );
 
   const grouped = useMemo(() => {
@@ -229,6 +242,29 @@ export default function MyDocuments({
         </div>
       )}
 
+      {docs.length > 0 && (
+        <div className="mt-4 grid grid-cols-3 gap-2">
+          {(
+            [
+              ["all", `All (${docs.length})`],
+              ["unread", `Unread (${docs.length - readCount})`],
+              ["read", `Read (${readCount})`],
+            ] as const
+          ).map(([key, label]) => (
+            <button
+              key={key}
+              type="button"
+              onClick={() => setReadFilter(key)}
+              className={`rounded-lg border px-2 py-2 text-sm font-bold ${
+                readFilter === key ? "border-slate-900 bg-slate-900 text-white" : "border-slate-300 bg-white text-slate-800"
+              }`}
+            >
+              {label}
+            </button>
+          ))}
+        </div>
+      )}
+
       {docs.length === 0 ? (
         <Empty
           title="Nothing imported yet"
@@ -253,7 +289,18 @@ export default function MyDocuments({
                         {doc.text ? ` · ${wordCount(doc.text).toLocaleString("en-IN")} words` : " · no text extracted"}
                       </>
                     }
-                    right={<Chip>{new Date(doc.addedAt).toLocaleDateString("en-IN")}</Chip>}
+                    right={
+                      isDocRead(doc.id) ? (
+                        <span
+                          className="rounded-full px-2.5 py-1 text-xs font-bold text-white"
+                          style={{ background: "#14532d" }}
+                        >
+                          ✓ Read
+                        </span>
+                      ) : (
+                        <Chip>{new Date(doc.addedAt).toLocaleDateString("en-IN")}</Chip>
+                      )
+                    }
                   />
                   <div className="mt-1 flex flex-wrap gap-3 pl-1 text-[11px] font-semibold text-slate-500">
                     <button

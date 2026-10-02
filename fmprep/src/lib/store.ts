@@ -60,7 +60,16 @@ type State = {
   lastDocId: string | null;
   /** Scroll position per document id, so a long file reopens where it was left. */
   docPositions: Record<string, number>;
+  /** Inside an HTML document's own page: pixels, fraction of the page, and the view it was in. */
+  docPagePositions: Record<string, DocPagePosition>;
+  /** The view a document was last read in - page, text or full screen. */
+  docModes: Record<string, DocMode>;
+  /** Documents the reader has marked as finished, with the time. */
+  docRead: Record<string, number>;
 };
+
+export type DocMode = "page" | "text" | "full";
+export type DocPagePosition = { y: number; f: number; mode: DocMode };
 
 const KEY = "FMPREP_STATE_V1";
 
@@ -82,6 +91,9 @@ const EMPTY: State = {
   lastTopicId: null,
   lastDocId: null,
   docPositions: {},
+  docPagePositions: {},
+  docModes: {},
+  docRead: {},
 };
 
 let state: State = load();
@@ -206,6 +218,36 @@ export function rememberDoc(id: string, scrollTop: number) {
 
 export function docPosition(id: string): number {
   return state.docPositions[id] ?? 0;
+}
+
+export function rememberDocPage(id: string, pos: DocPagePosition) {
+  const prev = state.docPagePositions[id];
+  if (prev && prev.y === pos.y && prev.mode === pos.mode && state.lastDocId === id) return;
+  commit({ ...state, lastDocId: id, docPagePositions: { ...state.docPagePositions, [id]: pos } });
+}
+
+export function docPagePosition(id: string): DocPagePosition | undefined {
+  return state.docPagePositions[id];
+}
+
+export function setDocMode(id: string, mode: DocMode) {
+  if (state.docModes[id] === mode) return;
+  commit({ ...state, docModes: { ...state.docModes, [id]: mode } });
+}
+
+export function docModeOf(id: string): DocMode | undefined {
+  return state.docModes[id];
+}
+
+export function setDocRead(id: string, read: boolean, at: number) {
+  const next = { ...state.docRead };
+  if (read) next[id] = at;
+  else delete next[id];
+  commit({ ...state, docRead: next });
+}
+
+export function isDocRead(id: string): boolean {
+  return Boolean(state.docRead[id]);
 }
 
 export function toggleBookmark(topicId: string) {
