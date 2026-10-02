@@ -1,19 +1,124 @@
 @import "tailwindcss";
 
+/* ---------------------------------------------------------------
+   Palette shared with FM Prep: every Tailwind family the app uses is
+   folded onto one warm, deep palette (grey structure; green, ochre and
+   maroon for safe, caution and danger; plum and teal for the rest), so
+   every screen reads as one system without repainting each component.
+   --------------------------------------------------------------- */
+@theme {
+  --color-slate-50: #f7f7f6; --color-slate-100: #ededec; --color-slate-200: #dcdbda;
+  --color-slate-300: #c5c4c2; --color-slate-400: #7b7977; --color-slate-500: #6d6b67;
+  --color-slate-600: #5f5c5a; --color-slate-700: #4f4d4b; --color-slate-800: #3c3a38;
+  --color-slate-900: #292827; --color-slate-950: #171615;
+  --color-gray-50: #f7f7f6; --color-gray-100: #ededec; --color-gray-200: #dcdbda;
+  --color-gray-300: #c5c4c2; --color-gray-400: #7b7977; --color-gray-500: #6d6b67;
+  --color-gray-600: #5f5c5a; --color-gray-700: #4f4d4b; --color-gray-800: #3c3a38;
+  --color-gray-900: #292827; --color-gray-950: #171615;
+  --color-zinc-50: #f7f7f6; --color-zinc-100: #ededec; --color-zinc-200: #dcdbda;
+  --color-zinc-300: #c5c4c2; --color-zinc-400: #7b7977; --color-zinc-500: #6d6b67;
+  --color-zinc-600: #5f5c5a; --color-zinc-700: #4f4d4b; --color-zinc-800: #3c3a38;
+  --color-zinc-900: #292827; --color-zinc-950: #171615;
+  --color-neutral-50: #f7f7f6; --color-neutral-100: #ededec; --color-neutral-200: #dcdbda;
+  --color-neutral-300: #c5c4c2; --color-neutral-400: #7b7977; --color-neutral-500: #6d6b67;
+  --color-neutral-600: #5f5c5a; --color-neutral-700: #4f4d4b; --color-neutral-800: #3c3a38;
+  --color-neutral-900: #292827; --color-neutral-950: #171615;
+  --color-stone-50: #f7f7f6; --color-stone-100: #ededec; --color-stone-200: #dcdbda;
+  --color-stone-300: #c5c4c2; --color-stone-400: #7b7977; --color-stone-500: #6d6b67;
+  --color-stone-600: #5f5c5a; --color-stone-700: #4f4d4b; --color-stone-800: #3c3a38;
+  --color-stone-900: #292827; --color-stone-950: #171615;
+  --color-emerald-50: #f1f9f3; --color-emerald-100: #e2f1e6; --color-emerald-200: #cae3d0;
+  --color-emerald-300: #a7d0b0; --color-emerald-400: #4b8a5e; --color-emerald-500: #1f7f45;
+  --color-emerald-600: #116f39; --color-emerald-700: #0a5d2f; --color-emerald-800: #074722;
+  --color-emerald-900: #013215; --color-emerald-950: #001d08;
+  --color-green-50: #f1f9f3; --color-green-100: #e2f1e6; --color-green-200: #cae3d0;
+  --color-green-300: #a7d0b0; --color-green-400: #4b8a5e; --color-green-500: #1f7f45;
+  --color-green-600: #116f39; --color-green-700: #0a5d2f; --color-green-800: #074722;
+  --color-green-900: #013215; --color-green-950: #001d08;
+  --color-lime-50: #f1f9f3; --color-lime-100: #e2f1e6; --color-lime-200: #cae3d0;
+  --color-lime-300: #a7d0b0; --color-lime-400: #4b8a5e; --color-lime-500: #1f7f45;
+  --color-lime-600: #116f39; --color-lime-700: #0a5d2f; --color-lime-800: #074722;
+  --color-lime-900: #013215; --color-lime-950: #001d08;
+  --color-amber-50: #fdf6ed; --color-amber-100: #f7ebdc; --color-amber-200: #edd8bf;
+  --color-amber-300: #e0be94; --color-amber-400: #9e6f2d; --color-amber-500: #9a5b00;
+  --color-amber-600: #884d00; --color-amber-700: #734000; --color-amber-800: #583000;
+  --color-amber-900: #3f2000; --color-amber-950: #261000;
+  --color-yellow-50: #fdf6ed; --color-yellow-100: #f7ebdc; --color-yellow-200: #edd8bf;
+  --color-yellow-300: #e0be94; --color-yellow-400: #9e6f2d; --color-yellow-500: #9a5b00;
+  --color-yellow-600: #884d00; --color-yellow-700: #734000; --color-yellow-800: #583000;
+  --color-yellow-900: #3f2000; --color-yellow-950: #261000;
+  --color-orange-50: #fdf6ed; --color-orange-100: #f7ebdc; --color-orange-200: #edd8bf;
+  --color-orange-300: #e0be94; --color-orange-400: #9e6f2d; --color-orange-500: #9a5b00;
+  --color-orange-600: #884d00; --color-orange-700: #734000; --color-orange-800: #583000;
+  --color-orange-900: #3f2000; --color-orange-950: #261000;
+  --color-rose-50: #fff3f3; --color-rose-100: #ffe6e5; --color-rose-200: #f8d1cf;
+  --color-rose-300: #f1b1b0; --color-rose-400: #b35c5e; --color-rose-500: #b13e46;
+  --color-rose-600: #9d323a; --color-rose-700: #85282f; --color-rose-800: #661d23;
+  --color-rose-900: #4a1016; --color-rose-950: #2e0509;
+  --color-red-50: #fff3f3; --color-red-100: #ffe6e5; --color-red-200: #f8d1cf;
+  --color-red-300: #f1b1b0; --color-red-400: #b35c5e; --color-red-500: #b13e46;
+  --color-red-600: #9d323a; --color-red-700: #85282f; --color-red-800: #661d23;
+  --color-red-900: #4a1016; --color-red-950: #2e0509;
+  --color-violet-50: #fbf4fd; --color-violet-100: #f5e8f8; --color-violet-200: #e9d3ed;
+  --color-violet-300: #d9b6e1; --color-violet-400: #9564a0; --color-violet-500: #8e4c9d;
+  --color-violet-600: #7d408b; --color-violet-700: #693475; --color-violet-800: #50265a;
+  --color-violet-900: #391841; --color-violet-950: #220a27;
+  --color-fuchsia-50: #fbf4fd; --color-fuchsia-100: #f5e8f8; --color-fuchsia-200: #e9d3ed;
+  --color-fuchsia-300: #d9b6e1; --color-fuchsia-400: #9564a0; --color-fuchsia-500: #8e4c9d;
+  --color-fuchsia-600: #7d408b; --color-fuchsia-700: #693475; --color-fuchsia-800: #50265a;
+  --color-fuchsia-900: #391841; --color-fuchsia-950: #220a27;
+  --color-purple-50: #fbf4fd; --color-purple-100: #f5e8f8; --color-purple-200: #e9d3ed;
+  --color-purple-300: #d9b6e1; --color-purple-400: #9564a0; --color-purple-500: #8e4c9d;
+  --color-purple-600: #7d408b; --color-purple-700: #693475; --color-purple-800: #50265a;
+  --color-purple-900: #391841; --color-purple-950: #220a27;
+  --color-pink-50: #fbf4fd; --color-pink-100: #f5e8f8; --color-pink-200: #e9d3ed;
+  --color-pink-300: #d9b6e1; --color-pink-400: #9564a0; --color-pink-500: #8e4c9d;
+  --color-pink-600: #7d408b; --color-pink-700: #693475; --color-pink-800: #50265a;
+  --color-pink-900: #391841; --color-pink-950: #220a27;
+  --color-teal-50: #eff9f9; --color-teal-100: #dff1f1; --color-teal-200: #c4e3e2;
+  --color-teal-300: #9bd0ce; --color-teal-400: #318988; --color-teal-500: #007e7e;
+  --color-teal-600: #006e6e; --color-teal-700: #005d5c; --color-teal-800: #004646;
+  --color-teal-900: #003231; --color-teal-950: #001c1d;
+  --color-cyan-50: #eff9f9; --color-cyan-100: #dff1f1; --color-cyan-200: #c4e3e2;
+  --color-cyan-300: #9bd0ce; --color-cyan-400: #318988; --color-cyan-500: #007e7e;
+  --color-cyan-600: #006e6e; --color-cyan-700: #005d5c; --color-cyan-800: #004646;
+  --color-cyan-900: #003231; --color-cyan-950: #001c1d;
+  --color-sky-50: #eff9f9; --color-sky-100: #dff1f1; --color-sky-200: #c4e3e2;
+  --color-sky-300: #9bd0ce; --color-sky-400: #318988; --color-sky-500: #007e7e;
+  --color-sky-600: #006e6e; --color-sky-700: #005d5c; --color-sky-800: #004646;
+  --color-sky-900: #003231; --color-sky-950: #001c1d;
+  --color-blue-50: #eff9f9; --color-blue-100: #dff1f1; --color-blue-200: #c4e3e2;
+  --color-blue-300: #9bd0ce; --color-blue-400: #318988; --color-blue-500: #007e7e;
+  --color-blue-600: #006e6e; --color-blue-700: #005d5c; --color-blue-800: #004646;
+  --color-blue-900: #003231; --color-blue-950: #001c1d;
+  --color-indigo-50: #eff9f9; --color-indigo-100: #dff1f1; --color-indigo-200: #c4e3e2;
+  --color-indigo-300: #9bd0ce; --color-indigo-400: #318988; --color-indigo-500: #007e7e;
+  --color-indigo-600: #006e6e; --color-indigo-700: #005d5c; --color-indigo-800: #004646;
+  --color-indigo-900: #003231; --color-indigo-950: #001c1d;
+  --color-white: #ffffff;
+  --color-black: #000000;
+}
+
+
 :root {
-  --bg: #f1f5f9;
-  --card: #ffffff;
-  --ink: #0f172a;
-  --muted: #334155;
-  --accent: #0f4c81;
-  --accent-soft: #e8f1f8;
-  --warn: #b45309;
-  --warn-bg: #fff7ed;
-  --danger: #b91c1c;
-  --danger-bg: #fef2f2;
-  --ok: #166534;
-  --ok-bg: #f0fdf4;
-  --line: #dbe3ec;
+  /* Warm paper ground and cream cards (FM Prep). */
+  --bg: #f7ead5;
+  --card: #fcf4e6;
+  --card-2: #f6e8d1;
+  --ink: #1c1b19;
+  --muted: #3a3733;
+  --head: #1a5336;
+  --accent: #1a5336;
+  --accent-soft: #eef6f1;
+  --warn: #8a5200;
+  --warn-bg: #f9f3ec;
+  --danger: #a8102a;
+  --danger-bg: #fbedee;
+  --ok: #14622f;
+  --ok-bg: #eff6f0;
+  --line: #e3cda8;
+  --line-strong: #d4b887;
+  color-scheme: light;
   font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
   color: var(--ink);
   background: var(--bg);
@@ -34,11 +139,13 @@ body {
 
 .brand-ribbon {
   height: 3px;
-  background: linear-gradient(90deg, #1e3a8a, #1d4ed8 55%, #0e7490);
+  background: linear-gradient(90deg,
+    #015657, #0f3460, #800000, #5e4700, #460079, #1a5336,
+    #910127, #00545e, #3f2810, #713e00, #700168);
 }
 
 .brand-text {
-  color: #0f172a;
+  color: var(--ink);
   white-space: nowrap;
 }
 
@@ -73,32 +180,44 @@ body {
   opacity: 0.06;
   pointer-events: none;
 }
-.tool-stage {
-  background: linear-gradient(165deg, rgba(15, 23, 42, 0.03), rgba(30, 58, 138, 0.05));
+.tool-stage { background: var(--bg); }
+
+/* Every surface that was white becomes FM Prep cream, app-wide; these rules
+   are unlayered so they win over Tailwind utilities without !important. */
+.bg-white { background-color: var(--card); }
+[class*="bg-white/"] { background-color: color-mix(in srgb, var(--card) 88%, transparent); }
+.bg-slate-50, .bg-gray-50 { background-color: var(--card-2); }
+.border-slate-200, .border-gray-200 { border-color: var(--line); }
+.border-slate-300, .border-gray-300 { border-color: var(--line-strong); }
+input, select, textarea { background-color: #fffaf1; color: var(--ink); }
+/* Unselected chips and toggles: FM Prep's warm sand, not a cool grey. */
+.bg-slate-100, .bg-gray-100 { background-color: #f1e2c8; }
+.hover\:bg-slate-200:hover, .hover\:bg-slate-100:hover { background-color: #e9d5b4; }
+
+/* One deep ink per tool: the page title and the watermark carry it. */
+.tool-crCl     { --tool-ink: #015657; }
+.tool-insulin  { --tool-ink: #0f3460; }
+.tool-regimen  { --tool-ink: #800000; }
+.tool-bmi      { --tool-ink: #5e4700; }
+.tool-pedDose  { --tool-ink: #460079; }
+.tool-growth   { --tool-ink: #1a5336; }
+.tool-bp       { --tool-ink: #910127; }
+.tool-hol      { --tool-ink: #00545e; }
+.tool-nbWeight { --tool-ink: #3f2810; }
+.tool-bili     { --tool-ink: #713e00; }
+.tool-ob       { --tool-ink: #700168; }
+.tool-saved    { --tool-ink: #3a3733; }
+.tool-report   { --tool-ink: #7e2f01; }
+.tool-stage h2.text-xl { color: var(--tool-ink, var(--ink)); }
+
+/* Section labels (home + menu): FM Prep's serif small caps in dark green. */
+.section-label {
+  font-family: "Times New Roman", Times, Georgia, serif;
+  color: var(--head);
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  font-weight: 700;
 }
-
-/* Faded per-tool tint: inside a tool page, boxes that were white or
-   near-white take a soft wash of that tool's colour. These rules are
-   unlayered, so they win over the layered Tailwind utilities without
-   needing !important. Falls back to white where no tint is set (home). */
-.tool-pedDose  { --tint: #eff6ff; --tint-soft: #dbeafe; --tint-border: #bfdbfe; }
-.tool-growth   { --tint: #f5f3ff; --tint-soft: #ede9fe; --tint-border: #ddd6fe; }
-.tool-bp       { --tint: #ecfeff; --tint-soft: #cffafe; --tint-border: #a5f3fc; }
-.tool-hol      { --tint: #f0f9ff; --tint-soft: #e0f2fe; --tint-border: #bae6fd; }
-.tool-nbWeight { --tint: #f7fee7; --tint-soft: #ecfccb; --tint-border: #d9f99d; }
-.tool-bili     { --tint: #fefce8; --tint-soft: #fef9c3; --tint-border: #fef08a; }
-.tool-bmi      { --tint: #ecfdf5; --tint-soft: #d1fae5; --tint-border: #a7f3d0; }
-.tool-crCl     { --tint: #f0fdfa; --tint-soft: #ccfbf1; --tint-border: #99f6e4; }
-.tool-regimen  { --tint: #fff1f2; --tint-soft: #ffe4e6; --tint-border: #fecdd3; }
-.tool-insulin  { --tint: #eef2ff; --tint-soft: #e0e7ff; --tint-border: #c7d2fe; }
-.tool-ob       { --tint: #fdf4ff; --tint-soft: #fae8ff; --tint-border: #f5d0fe; }
-.tool-saved    { --tint: #f8fafc; --tint-soft: #f1f5f9; --tint-border: #e2e8f0; }
-.tool-report   { --tint: #fffbeb; --tint-soft: #fef3c7; --tint-border: #fde68a; }
-
-.tool-stage .bg-white { background-color: var(--tint, #ffffff); }
-.tool-stage [class*="bg-white/"] { background-color: color-mix(in srgb, var(--tint, #ffffff) 85%, #ffffff); }
-.tool-stage .bg-slate-50 { background-color: var(--tint-soft, #f8fafc); }
-.tool-stage .border-slate-200 { border-color: var(--tint-border, #e2e8f0); }
 
 /* Opening splash: the stethoscope logo rocks gently while growing and
    shrinking, and the page colour breathes through tints that match the icon
@@ -111,7 +230,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  background: #ffffff;
+  background: #fcf4e6;
   animation:
     splash-bg 2.4s ease-in-out both,
     splash-out 0.45s ease 2.3s forwards;
@@ -136,11 +255,9 @@ body {
 }
 /* Background breathes through the logo's own palette. */
 @keyframes splash-bg {
-  0% { background: #ffffff; }
-  30% { background: #e0f7fa; }
-  60% { background: #dbe7ff; }
-  85% { background: #eef6ff; }
-  100% { background: #ffffff; }
+  0% { background: #fcf4e6; }
+  50% { background: #f7ead5; }
+  100% { background: #fcf4e6; }
 }
 @keyframes splash-out {
   to { opacity: 0; visibility: hidden; }

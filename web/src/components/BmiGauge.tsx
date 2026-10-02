@@ -8,12 +8,12 @@ const MIN = 12;
 const MAX = 42;
 
 const SEGS = [
-  { from: MIN, to: 18.5, color: "#1d4ed8", label: "Under-weight", range: "< 18.5" },
-  { from: 18.5, to: 23, color: "#15803d", label: "Normal", range: "18.5–22.9" },
-  { from: 23, to: 25, color: "#ca8a04", label: "Over-weight", range: "23–24.9" },
-  { from: 25, to: 30, color: "#ea580c", label: "Obese I", range: "25–29.9" },
-  { from: 30, to: 35, color: "#dc2626", label: "Obese II", range: "30–34.9" },
-  { from: 35, to: MAX, color: "#7f1d1d", label: "Obese III", range: "≥ 35" },
+  { from: MIN, to: 18.5, color: "#006e6e", label: "Under-weight", range: "< 18.5" },
+  { from: 18.5, to: 23, color: "#116f39", label: "Normal", range: "18.5–22.9" },
+  { from: 23, to: 25, color: "#9a5b00", label: "Over-weight", range: "23–24.9" },
+  { from: 25, to: 30, color: "#b13e46", label: "Obese I", range: "25–29.9" },
+  { from: 30, to: 35, color: "#85282f", label: "Obese II", range: "30–34.9" },
+  { from: 35, to: MAX, color: "#4a1016", label: "Obese III", range: "≥ 35" },
 ];
 
 const CX = 120;
@@ -44,13 +44,13 @@ function segIndex(bmi: number): number {
 /** Simple body silhouette that widens with each category. */
 function Figure({ color, wide, active }: { color: string; wide: number; active: boolean }) {
   return (
-    <svg viewBox="0 0 40 64" className={active ? "h-14 w-9" : "h-12 w-8 opacity-40"} aria-hidden>
+    <svg viewBox="0 0 40 64" className={active ? "h-14 w-9" : "h-12 w-8 opacity-60"} aria-hidden>
       <circle cx="20" cy="9" r="7" fill={color} />
       <ellipse cx="20" cy="33" rx={wide} ry="16" fill={color} />
       <rect x={20 - wide * 0.7} y="45" width={wide * 0.55} height="17" rx="2.5" fill={color} />
       <rect x={20 + wide * 0.15} y="45" width={wide * 0.55} height="17" rx="2.5" fill={color} />
       {active && (
-        <rect x="1" y="1" width="38" height="62" rx="6" fill="none" stroke="#0f172a" strokeWidth="2" />
+        <rect x="1" y="1" width="38" height="62" rx="6" fill="none" stroke="#1c1b19" strokeWidth="2" />
       )}
     </svg>
   );
@@ -75,20 +75,20 @@ export default function BmiGauge({ bmi }: { bmi: number }) {
               stroke={s.color}
               strokeWidth={i === active ? 30 : 22}
               strokeLinecap="butt"
-              opacity={i === active ? 1 : 0.55}
+              opacity={i === active ? 1 : 0.8}
             />
           ))}
           {[18.5, 23, 25, 30, 35].map((b) => {
             const [x, y] = polar(angleFor(b), R + 22);
             return (
-              <text key={b} x={x} y={y} textAnchor="middle" fontSize="9" fontWeight="700" fill="#475569">
+              <text key={b} x={x} y={y} textAnchor="middle" fontSize="9" fontWeight="700" fill="#4f4d4b">
                 {b}
               </text>
             );
           })}
           {/* needle marking the exact BMI */}
-          <line x1={CX} y1={CY} x2={tipX} y2={tipY} stroke="#0f172a" strokeWidth="4.5" strokeLinecap="round" />
-          <circle cx={CX} cy={CY} r="9" fill="#0f172a" />
+          <line x1={CX} y1={CY} x2={tipX} y2={tipY} stroke="#1c1b19" strokeWidth="4.5" strokeLinecap="round" />
+          <circle cx={CX} cy={CY} r="9" fill="#1c1b19" />
         </svg>
       </div>
       <div className="mt-1 flex items-end justify-between px-1">

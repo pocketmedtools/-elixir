@@ -87,32 +87,32 @@ function Chart({
 
   return (
     <svg viewBox={`0 0 ${W} ${H}`} className="w-full" role="img" aria-label="Bilirubin chart">
-      <rect x={L} y={T} width={W - L - R} height={H - T - B} fill="#ffffff" />
+      <rect x={L} y={T} width={W - L - R} height={H - T - B} fill="#fffaf1" />
       {yT.map((v) => (
         <g key={`y${v}`}>
-          <line x1={L} x2={W - R} y1={y(v)} y2={y(v)} stroke="#e2e8f0" />
-          <text x={L - 4} y={y(v) + 3} textAnchor="end" fontSize="8" fill="#334155">{v}</text>
+          <line x1={L} x2={W - R} y1={y(v)} y2={y(v)} stroke="#e3cda8" />
+          <text x={L - 4} y={y(v) + 3} textAnchor="end" fontSize="8" fill="#3a3733">{v}</text>
         </g>
       ))}
       {xT.map((h) => (
-        <text key={`x${h}`} x={x(h)} y={H - B + 11} textAnchor="middle" fontSize="8" fill="#334155">{h}h</text>
+        <text key={`x${h}`} x={x(h)} y={H - B + 11} textAnchor="middle" fontSize="8" fill="#3a3733">{h}h</text>
       ))}
-      <path d={path("exchange")} fill="none" stroke="#7f1d1d" strokeWidth="2.5" />
-      {last.mid != null && <path d={path("mid")} fill="none" stroke="#6b21a8" strokeWidth="1.8" strokeDasharray="5 3" />}
-      <path d={path("photo")} fill="none" stroke="#c2410c" strokeWidth="2.5" />
-      <text x={W - R + 3} y={y(last.exchange) + 3} fontSize="8" fontWeight="700" fill="#7f1d1d">Exchange</text>
-      {last.mid != null && <text x={W - R + 3} y={y(last.mid) + 3} fontSize="8" fontWeight="700" fill="#6b21a8">Escalate</text>}
-      <text x={W - R + 3} y={y(last.photo) + 3} fontSize="8" fontWeight="700" fill="#c2410c">Photo</text>
+      <path d={path("exchange")} fill="none" stroke="#661d23" strokeWidth="2.5" />
+      {last.mid != null && <path d={path("mid")} fill="none" stroke="#693475" strokeWidth="1.8" strokeDasharray="5 3" />}
+      <path d={path("photo")} fill="none" stroke="#9a5b00" strokeWidth="2.5" />
+      <text x={W - R + 3} y={y(last.exchange) + 3} fontSize="8" fontWeight="700" fill="#661d23">Exchange</text>
+      {last.mid != null && <text x={W - R + 3} y={y(last.mid) + 3} fontSize="8" fontWeight="700" fill="#693475">Escalate</text>}
+      <text x={W - R + 3} y={y(last.photo) + 3} fontSize="8" fontWeight="700" fill="#9a5b00">Photo</text>
       {prev && (
         <>
-          <line x1={x(prev.h)} y1={y(prev.v)} x2={P.x} y2={P.y} stroke="#0f172a" strokeDasharray="2 2" />
-          <circle cx={x(prev.h)} cy={y(prev.v)} r="3.5" fill="#64748b" stroke="#fff" />
+          <line x1={x(prev.h)} y1={y(prev.v)} x2={P.x} y2={P.y} stroke="#1c1b19" strokeDasharray="2 2" />
+          <circle cx={x(prev.h)} cy={y(prev.v)} r="3.5" fill="#6d6b67" stroke="#fff" />
         </>
       )}
       {tcb ? (
-        <path d={`M${P.x},${P.y - 6}L${P.x + 6},${P.y}L${P.x},${P.y + 6}L${P.x - 6},${P.y}Z`} fill="#0f172a" stroke="#fff" strokeWidth="1.5" />
+        <path d={`M${P.x},${P.y - 6}L${P.x + 6},${P.y}L${P.x},${P.y + 6}L${P.x - 6},${P.y}Z`} fill="#1c1b19" stroke="#fff" strokeWidth="1.5" />
       ) : (
-        <circle cx={P.x} cy={P.y} r="5.5" fill="#0f172a" stroke="#fff" strokeWidth="2" />
+        <circle cx={P.x} cy={P.y} r="5.5" fill="#1c1b19" stroke="#fff" strokeWidth="2" />
       )}
     </svg>
   );

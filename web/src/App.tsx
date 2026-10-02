@@ -173,7 +173,7 @@ export default function App() {
   return (
     <div className="flex min-h-screen flex-col">
       {splashEl}
-      <header className="app-header border-b border-[var(--line)] bg-white">
+      <header className="app-header border-b border-[var(--line)]" style={{ background: "var(--card)" }}>
         <div className="mx-auto flex max-w-7xl flex-wrap items-center gap-x-3 gap-y-2 px-3 py-2.5 md:px-6">
           <div className="flex shrink-0 items-center gap-2">
             <button
@@ -202,9 +202,12 @@ export default function App() {
                 key={t.id}
                 type="button"
                 onClick={() => setTab(t.id)}
-                className={`rounded-lg px-2.5 py-1.5 text-xs font-semibold transition sm:text-sm ${
-                  tab === t.id ? t.active : t.idle
-                }`}
+                className="rounded-lg border px-2.5 py-1.5 text-xs font-semibold transition sm:text-sm"
+                style={
+                  tab === t.id
+                    ? { background: TOOL_HEX[t.id], borderColor: TOOL_HEX[t.id], color: "#ffffff" }
+                    : { background: "var(--card-2)", borderColor: "var(--line)", color: TOOL_HEX[t.id] }
+                }
               >
                 <span className="hidden sm:inline">{t.label}</span>
                 <span className="sm:hidden">{t.shortLabel}</span>
@@ -235,7 +238,7 @@ export default function App() {
         {tab === "report" && <ReportIssue />}
       </main>
 
-      <footer className="border-t border-[var(--line)] bg-white px-3 py-4 text-center text-xs leading-relaxed text-[var(--muted)] md:px-6">
+      <footer className="border-t border-[var(--line)] bg-[var(--card)] px-3 py-4 text-center text-xs leading-relaxed text-[var(--muted)] md:px-6">
         Pocket-Med is a clinical decision-support tool for licensed healthcare
         professionals. It does not replace clinical judgment, diagnosis, or
         emergency care. Verify all doses and plans before prescribing.

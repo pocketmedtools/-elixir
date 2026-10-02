@@ -103,7 +103,7 @@ export default function SideMenu({
           {LINK_GROUPS.map((group, gi) => (
             <div key={group.heading ?? `group-${gi}`} className="mb-1 last:mb-0">
               {group.heading && (
-                <p className="px-3 pb-1 pt-2 text-[11px] font-bold uppercase tracking-widest text-slate-500">
+                <p className="section-label px-3 pb-1 pt-2 text-[12px]">
                   {group.heading}
                 </p>
               )}
