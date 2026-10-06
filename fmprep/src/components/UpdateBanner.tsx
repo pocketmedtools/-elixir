@@ -1,27 +1,37 @@
 /**
- * "A new version is ready" - for everyone who has the app installed.
+ * Keeps every installed copy of FM Prep current.
  *
- * Each Android build carries its build number, and every build publishes a
- * small version.json next to the APK. When the installed app opens (or comes
- * back to the front) it reads that file; if a newer build is out, a banner
- * offers it. Android never lets an app replace itself silently outside the
- * Play Store, so the banner opens the download and the person taps Install -
- * the new version installs over the old one and keeps their documents,
- * folders, reading positions and progress.
+ * Each build publishes version.json and the web app as a zip. When the app
+ * opens (or comes back to the front) it reads version.json; a newer build is
+ * downloaded in the background and switched to automatically the next time
+ * the app is left, or at once from the banner - no new APK, nothing to
+ * install. Documents, folders, reading positions and progress stay.
+ *
+ * Only when the native shell itself changed (or this APK predates live
+ * updates) does the banner fall back to offering the APK download.
  */
 import { useEffect, useState } from "react";
+import {
+  applyNow,
+  fetchRemoteVersion,
+  hasLiveUpdates,
+  nativeBuild,
+  prepareUpdate,
+} from "../lib/liveUpdate";
 
 /** This build's number, set by the Android workflow; "dev" anywhere else. */
 export const APP_BUILD: string = (import.meta.env.VITE_BUILD as string | undefined) ?? "dev";
 
-const VERSION_URL = "https://raw.githubusercontent.com/pocketmedtools/-elixir/fmprep-apk/version.json";
 const APK_URL = "https://github.com/pocketmedtools/-elixir/releases/download/fmprep-apk-latest/FM-Prep.apk";
 /** Checked at most this often while the app stays open. */
 const EVERY_MS = 30 * 60 * 1000;
 
+type Offer = { kind: "apk" } | { kind: "ready"; id: string };
+
 export default function UpdateBanner({ native }: { native: boolean }) {
-  const [latest, setLatest] = useState<number | null>(null);
+  const [offer, setOffer] = useState<Offer | null>(null);
   const [hidden, setHidden] = useState(false);
+  const [applying, setApplying] = useState(false);
   const current = Number(APP_BUILD);
 
   useEffect(() => {
@@ -30,14 +40,17 @@ export default function UpdateBanner({ native }: { native: boolean }) {
     const check = async () => {
       if (Date.now() - last < 60_000) return;
       last = Date.now();
-      try {
-        const res = await fetch(`${VERSION_URL}?t=${Date.now()}`, { cache: "no-store" });
-        if (!res.ok) return;
-        const data = (await res.json()) as { build?: number };
-        if (typeof data.build === "number" && data.build > current) setLatest(data.build);
-      } catch {
-        /* offline: try again next time the app opens */
+      const remote = await fetchRemoteVersion();
+      if (!remote || typeof remote.build !== "number" || remote.build <= current) return;
+      const shell = await nativeBuild();
+      const shellOk =
+        hasLiveUpdates() && !!remote.web && (!remote.minNative || (Number.isFinite(shell) && shell >= remote.minNative));
+      if (!shellOk) {
+        setOffer({ kind: "apk" });
+        return;
       }
+      const id = await prepareUpdate(remote);
+      if (id) setOffer({ kind: "ready", id });
     };
     void check();
     const onVisible = () => {
@@ -51,7 +64,8 @@ export default function UpdateBanner({ native }: { native: boolean }) {
     };
   }, [native, current]);
 
-  if (latest === null || hidden) return null;
+  if (!offer || hidden) return null;
+  const ready = offer.kind === "ready";
   return (
     <div className="px-3 pt-2 md:px-6" style={{ background: "var(--bg)" }}>
       <div
@@ -60,21 +74,29 @@ export default function UpdateBanner({ native }: { native: boolean }) {
         role="status"
       >
         <p className="min-w-0 flex-1 text-[14px] font-semibold leading-snug">
-          A new version of FM Prep is ready.
+          {ready ? "New version downloaded." : "A new version of FM Prep is ready."}
           <span className="block text-[12px] font-normal opacity-90">
-            Your documents and progress stay as they are.
+            {ready
+              ? "It switches on by itself when you leave the app. Your documents and progress stay."
+              : "Your documents and progress stay as they are."}
           </span>
         </p>
         <button
           type="button"
+          disabled={applying}
           onClick={() => {
+            if (offer.kind === "ready") {
+              setApplying(true);
+              void applyNow(offer.id).catch(() => setApplying(false));
+              return;
+            }
             const w = window.open(APK_URL, "_blank");
             if (!w) window.location.href = APK_URL;
           }}
           className="shrink-0 rounded-lg px-3 py-2 text-[13px] font-bold"
           style={{ background: "#fcf4e6", color: "#14532d" }}
         >
-          Update now
+          {ready ? (applying ? "Updating…" : "Update now") : "Update now"}
         </button>
         <button
           type="button"

@@ -32,6 +32,14 @@ const config: CapacitorConfig = {
       showSpinner: false,
       androidScaleType: "CENTER_CROP",
     },
+    /* Live updates, self-hosted: the app itself checks version.json and
+       downloads the new web bundle (src/lib/liveUpdate.ts). Nothing is sent
+       to Capgo's servers. */
+    CapacitorUpdater: {
+      autoUpdate: false,
+      statsUrl: "",
+      appReadyTimeout: 15000,
+    },
     LocalNotifications: {
       smallIcon: "ic_stat_icon_config_sample",
       iconColor: "#1a5336",

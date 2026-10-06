@@ -71,6 +71,10 @@ jobs:
         run: |
           npx cap add android
           npx cap sync android
+          # The shell's version is the build number, so the live updater can
+          # tell which native build is installed (CapacitorUpdater.current()).
+          sed -i -E 's/versionCode [0-9]+/versionCode ${{ github.run_number }}/; s/versionName "[^"]*"/versionName "${{ github.run_number }}"/' android/app/build.gradle
+          grep -nE 'versionCode|versionName' android/app/build.gradle
 
       # App icon from the PWA's own 512px icon, copied as-is into every density
       # folder - Android scales a launcher PNG down itself, so no image tool is
@@ -149,13 +153,29 @@ jobs:
         run: |
           rm -rf /tmp/apkpub && mkdir -p /tmp/apkpub
           cp fmprep/FM-Prep.apk /tmp/apkpub/
-          # What installed apps read on opening to offer the update.
-          printf '{"build":%s,"sha":"%s","date":"%s"}\n' "${{ github.run_number }}" "${{ github.sha }}" "$(date -u +%Y-%m-%dT%H:%M:%SZ)" > /tmp/apkpub/version.json
+          # The web app alone, for live updates: installed apps download this
+          # and switch to it without a new APK. A new name per build, so no
+          # cache can hand out an older zip.
+          WEB="fmprep-web-${{ github.run_number }}.zip"
+          (cd fmprep/dist && zip -qr9 "/tmp/apkpub/$WEB" .)
+          # Live updates only work on a shell with the same native plugins. Any
+          # change to them (or to capacitor.config.ts) raises minNative to this
+          # build, and older apps are offered the APK instead.
+          NHASH=$( (cat fmprep/capacitor.config.ts; jq -c '[.packages | to_entries[] | select(.key|test("node_modules/@(capacitor|capgo)/")) | [.key,.value.version]]' fmprep/package-lock.json) | sha256sum | cut -c1-16)
+          PREV=$(curl -fsSL "https://raw.githubusercontent.com/${{ github.repository }}/fmprep-apk/version.json" || echo '{}')
+          MIN=$(echo "$PREV" | jq -r --arg h "$NHASH" 'if .nativeHash == $h and .minNative then .minNative else empty end' 2>/dev/null || true)
+          [ -n "$MIN" ] || MIN=${{ github.run_number }}
+          # What installed apps read on opening.
+          jq -n --argjson build ${{ github.run_number }} --argjson min "$MIN" --arg h "$NHASH" \
+            --arg sha "${{ github.sha }}" --arg date "$(date -u +%Y-%m-%dT%H:%M:%SZ)" \
+            --arg web "https://raw.githubusercontent.com/${{ github.repository }}/fmprep-apk/$WEB" \
+            '{build:$build, minNative:$min, nativeHash:$h, web:$web, sha:$sha, date:$date}' > /tmp/apkpub/version.json
+          cat /tmp/apkpub/version.json
           cd /tmp/apkpub
           git init -q -b fmprep-apk
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add FM-Prep.apk version.json
+          git add FM-Prep.apk version.json fmprep-web-*.zip
           git commit -q -m "FM-Prep.apk built from ${{ github.sha }}"
           git push -f "https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}.git" fmprep-apk
 
