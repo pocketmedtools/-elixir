@@ -18,8 +18,7 @@ import ObCalculator from "./components/ObCalculator";
 import RegimenAnalyzerUI from "./components/RegimenAnalyzerUI";
 import ReportIssue from "./components/ReportIssue";
 import ToolIcon, { TOOL_HEX } from "./components/ToolIcon";
-import AuthScreen from "./components/AuthScreen";
-import { getCurrentProfile, getVersion, subscribe } from "./lib/accounts";
+import { getVersion, subscribe } from "./lib/accounts";
 
 type AppTab = MenuTarget;
 
@@ -37,12 +36,17 @@ export default function App() {
   const clearable = !["home", "saved", "report", "timer"].includes(tab);
   const [menuOpen, setMenuOpen] = useState(false);
   useSyncExternalStore(subscribe, getVersion);
-  const profile = getCurrentProfile();
-  // "Continue without account" lasts for this session only, so the
-  // sign-in page greets every fresh open until an account is signed in.
-  const [guest, setGuest] = useState(
-    () => sessionStorage.getItem("POCKETMED_GUEST") === "1",
-  );
+  // No sign-in screen: the app opens straight onto the last calculation.
+  // Signing in (only needed to save to an account) lives in the ☰ menu; the
+  // Save button asks for it by opening the menu at the account section.
+  useEffect(() => {
+    const open = () => {
+      setMenuOpen(true);
+      window.setTimeout(() => document.getElementById("pm-account")?.scrollIntoView({ behavior: "smooth" }), 80);
+    };
+    window.addEventListener("pm-open-account", open);
+    return () => window.removeEventListener("pm-open-account", open);
+  }, []);
 
   // Inputs marked data-adv="N" jump focus to the next field once N digits
   // are typed, so a full entry never needs a manual tap on the next box.
@@ -158,16 +162,10 @@ export default function App() {
     },
   ];
 
-  const showAuth = !profile && !guest;
-  useEffect(() => {
-    if (showAuth) setMenuOpen(false);
-  }, [showAuth]);
-
-  // Animated logo splash on every open: logo beats once at the centre, the
-  // overlay fades, and the sign-in page (or Home when signed in) is beneath.
+  // Quick logo pop on open, then straight to the last tool.
   const [splash, setSplash] = useState(true);
   useEffect(() => {
-    const t = setTimeout(() => setSplash(false), 2800);
+    const t = setTimeout(() => setSplash(false), 1100);
     return () => clearTimeout(t);
   }, []);
   const splashEl = splash ? (
@@ -175,20 +173,6 @@ export default function App() {
       <img src={`${import.meta.env.BASE_URL}logo.png`} alt="" />
     </div>
   ) : null;
-
-  if (showAuth) {
-    return (
-      <>
-        {splashEl}
-        <AuthScreen
-          onGuest={() => {
-            sessionStorage.setItem("POCKETMED_GUEST", "1");
-            setGuest(true);
-          }}
-        />
-      </>
-    );
-  }
 
   return (
     <div className="flex min-h-screen flex-col">

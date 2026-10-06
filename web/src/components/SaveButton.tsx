@@ -23,7 +23,9 @@ export default function SaveButton({
     if (!payload) {
       setFlash("Nothing to save yet — complete the calculation first.");
     } else if (!profile) {
-      setFlash("Sign in from the ☰ menu to save to your account.");
+      // Signing in is only asked for here: open the menu at the account form.
+      window.dispatchEvent(new Event("pm-open-account"));
+      setFlash("Sign in (or sign up) in the menu, then tap Save again.");
     } else if (saveCalculation(tool, payload.title, payload.detail)) {
       setFlash(`Saved to ${profile.name}'s account ✓`);
     }

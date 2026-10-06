@@ -141,7 +141,12 @@ export default function SideMenu({
             </div>
           )}
         </nav>
-        <div className="border-t border-slate-200 p-4">
+        <div id="pm-account" className="border-t border-slate-200 p-4">
+          {!profile && (
+            <p className="mb-2 text-[11px] font-semibold text-slate-600">
+              Optional — only needed to save calculations to an account.
+            </p>
+          )}
           {profile ? (
             <>
               <p className="text-sm font-bold text-slate-900">{profile.phone}</p>
