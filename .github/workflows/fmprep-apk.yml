@@ -165,19 +165,35 @@ jobs:
           PREV=$(curl -fsSL "https://raw.githubusercontent.com/${{ github.repository }}/fmprep-apk/version.json" || echo '{}')
           MIN=$(echo "$PREV" | jq -r --arg h "$NHASH" 'if .nativeHash == $h and .minNative then .minNative else empty end' 2>/dev/null || true)
           [ -n "$MIN" ] || MIN=${{ github.run_number }}
-          # What installed apps read on opening.
-          jq -n --argjson build ${{ github.run_number }} --argjson min "$MIN" --arg h "$NHASH" \
-            --arg sha "${{ github.sha }}" --arg date "$(date -u +%Y-%m-%dT%H:%M:%SZ)" \
-            --arg web "https://raw.githubusercontent.com/${{ github.repository }}/fmprep-apk/$WEB" \
-            '{build:$build, minNative:$min, nativeHash:$h, web:$web, sha:$sha, date:$date}' > /tmp/apkpub/version.json
-          cat /tmp/apkpub/version.json
+          # Two commits: the files first, then version.json pointing at that
+          # first commit by SHA. A SHA URL never changes, so the jsDelivr CDN
+          # (reachable where raw.githubusercontent.com is blocked, as on some
+          # Indian networks) can never serve a stale or missing zip.
           cd /tmp/apkpub
           git init -q -b fmprep-apk
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add FM-Prep.apk version.json fmprep-web-*.zip
+          git add FM-Prep.apk fmprep-web-*.zip
           git commit -q -m "FM-Prep.apk built from ${{ github.sha }}"
-          git push -f "https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}.git" fmprep-apk
+          FILES=$(git rev-parse HEAD)
+          R="${{ github.repository }}"
+          jq -n --argjson build ${{ github.run_number }} --argjson min "$MIN" --arg h "$NHASH" \
+            --arg sha "${{ github.sha }}" --arg date "$(date -u +%Y-%m-%dT%H:%M:%SZ)" \
+            --arg web "https://raw.githubusercontent.com/$R/$FILES/$WEB" \
+            --arg cdn "https://cdn.jsdelivr.net/gh/$R@$FILES/$WEB" \
+            --arg apk "https://cdn.jsdelivr.net/gh/$R@$FILES/FM-Prep.apk" \
+            '{build:$build, minNative:$min, nativeHash:$h, webs:[$cdn, $web], web:$web, apk:$apk, sha:$sha, date:$date}' > version.json
+          cat version.json
+          git add version.json
+          git commit -q -m "version.json for build ${{ github.run_number }}"
+          git push -f "https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/$R.git" fmprep-apk
+          # Refresh the CDN's copy of version.json and warm the zip, so the
+          # first phone to ask is not the one that waits. Failures only log.
+          sleep 5
+          curl -sS -m 60 "https://purge.jsdelivr.net/gh/$R@fmprep-apk/version.json" || true
+          echo
+          curl -sS -m 300 -o /dev/null -w "jsDelivr zip: %{http_code} %{size_download} bytes\n" "https://cdn.jsdelivr.net/gh/$R@$FILES/$WEB" || true
+          curl -sS -m 60 -w "\njsDelivr version.json: %{http_code}\n" "https://cdn.jsdelivr.net/gh/$R@fmprep-apk/version.json" || true
 
       # Uploaded through the API rather than by an action. The action deleted
       # the existing asset before uploading the replacement, so an upload that

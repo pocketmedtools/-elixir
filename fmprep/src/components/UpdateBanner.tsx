@@ -81,8 +81,9 @@ export default function UpdateBanner({ native }: { native: boolean }) {
             <button
               type="button"
               onClick={() => {
-                const w = window.open(APK_URL, "_blank");
-                if (!w) window.location.href = APK_URL;
+                const url = (s.step === "needs-apk" && s.apk) || APK_URL;
+                const w = window.open(url, "_blank");
+                if (!w) window.location.href = url;
               }}
               className="shrink-0 rounded-lg px-3 py-2 text-[13px] font-bold"
               style={{ background: "#fcf4e6", color: "#14532d" }}

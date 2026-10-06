@@ -16,10 +16,16 @@
 import { Capacitor } from "@capacitor/core";
 import { CapacitorUpdater } from "@capgo/capacitor-updater";
 
-export const VERSION_URL =
-  "https://raw.githubusercontent.com/pocketmedtools/-elixir/fmprep-apk/version.json";
+const REPO = "pocketmedtools/-elixir";
+/* version.json from three hosts, newest wins. Some networks in India block
+   raw.githubusercontent.com outright, so it is never the only road. */
+const VERSION_SOURCES: { url: string; api?: boolean }[] = [
+  { url: `https://api.github.com/repos/${REPO}/contents/version.json?ref=fmprep-apk`, api: true },
+  { url: `https://cdn.jsdelivr.net/gh/${REPO}@fmprep-apk/version.json` },
+  { url: `https://raw.githubusercontent.com/${REPO}/fmprep-apk/version.json` },
+];
 
-export type RemoteVersion = { build?: number; minNative?: number; web?: string };
+export type RemoteVersion = { build?: number; minNative?: number; web?: string; webs?: string[]; apk?: string };
 
 export type UpdateState =
   | { step: "idle" }
@@ -27,7 +33,7 @@ export type UpdateState =
   | { step: "latest"; build: number }
   | { step: "downloading"; build: number; percent: number }
   | { step: "applying"; build: number }
-  | { step: "needs-apk"; build: number }
+  | { step: "needs-apk"; build: number; apk?: string }
   | { step: "failed"; message: string };
 
 let state: UpdateState = { step: "idle" };
@@ -51,10 +57,31 @@ export function markAppReady(): void {
   void CapacitorUpdater.notifyAppReady().catch(() => {});
 }
 
+async function fetchOne(src: { url: string; api?: boolean }): Promise<RemoteVersion> {
+  const ctl = new AbortController();
+  const t = setTimeout(() => ctl.abort(), 10_000);
+  try {
+    const sep = src.url.includes("?") ? "&" : "?";
+    const res = await fetch(src.api ? src.url : `${src.url}${sep}t=${Date.now()}`, {
+      cache: "no-store",
+      signal: ctl.signal,
+      headers: src.api ? { Accept: "application/vnd.github.raw+json" } : undefined,
+    });
+    if (!res.ok) throw new Error(`${new URL(src.url).host} ${res.status}`);
+    return (await res.json()) as RemoteVersion;
+  } finally {
+    clearTimeout(t);
+  }
+}
+
 async function fetchRemoteVersion(): Promise<RemoteVersion> {
-  const res = await fetch(`${VERSION_URL}?t=${Date.now()}`, { cache: "no-store" });
-  if (!res.ok) throw new Error(`version check answered ${res.status}`);
-  return (await res.json()) as RemoteVersion;
+  const got = await Promise.allSettled(VERSION_SOURCES.map(fetchOne));
+  const ok = got.flatMap((g) => (g.status === "fulfilled" && Number.isFinite(Number(g.value.build)) ? [g.value] : []));
+  if (!ok.length) {
+    const why = got.map((g) => (g.status === "rejected" ? String((g.reason as Error)?.message ?? g.reason) : "bad file"));
+    throw new Error(`could not reach the update server (${why.join("; ")})`);
+  }
+  return ok.reduce((a, b) => (Number(b.build) > Number(a.build) ? b : a));
 }
 
 /** Build number of the installed APK shell (its versionName); NaN if unknown. */
@@ -86,14 +113,15 @@ export async function checkForUpdate(current: number, force = false): Promise<vo
       setState({ step: "latest", build: current });
       return;
     }
-    if (!hasLiveUpdates() || !remote.web) {
-      setState({ step: "needs-apk", build });
+    const webs = [...(remote.webs ?? []), ...(remote.web ? [remote.web] : [])];
+    if (!hasLiveUpdates() || !webs.length) {
+      setState({ step: "needs-apk", build, apk: remote.apk });
       return;
     }
     const shell = await nativeBuild();
     // An unreadable shell version is not a reason to stop: try the update.
     if (remote.minNative && Number.isFinite(shell) && shell < remote.minNative) {
-      setState({ step: "needs-apk", build });
+      setState({ step: "needs-apk", build, apk: remote.apk });
       return;
     }
 
@@ -106,7 +134,17 @@ export async function checkForUpdate(current: number, force = false): Promise<vo
         setState({ step: "downloading", build, percent: Math.round(e.percent ?? 0) });
       });
       try {
-        bundle = await CapacitorUpdater.download({ url: remote.web, version });
+        // Each mirror in turn until one delivers.
+        let lastErr: unknown = null;
+        for (const url of webs) {
+          try {
+            bundle = await CapacitorUpdater.download({ url, version });
+            break;
+          } catch (e) {
+            lastErr = e;
+          }
+        }
+        if (!bundle) throw lastErr ?? new Error("download failed");
       } finally {
         void sub.remove();
       }
