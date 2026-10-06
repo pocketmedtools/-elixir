@@ -19,15 +19,6 @@ const LINK_GROUPS: {
 }[] = [
   { heading: null, links: [{ id: "home", label: "Home" }] },
   {
-    heading: "Medicine",
-    links: [
-      { id: "crCl", label: "Creatinine Clearance" },
-      { id: "insulin", label: "Insulin" },
-      { id: "regimen", label: "Polypharm" },
-      { id: "bmi", label: "BMI" },
-    ],
-  },
-  {
     heading: "Pediatrics",
     links: [
       { id: "pedDose", label: "Ped Dose Calculator" },
@@ -40,6 +31,15 @@ const LINK_GROUPS: {
   },
   { heading: "OBG", links: [{ id: "ob", label: "OB / EDD" }] },
   { heading: "Utilities", links: [{ id: "timer", label: "Timer / Stopwatch" }] },
+  {
+    heading: "Medicine",
+    links: [
+      { id: "crCl", label: "Creatinine Clearance" },
+      { id: "insulin", label: "Insulin" },
+      { id: "regimen", label: "Polypharm" },
+      { id: "bmi", label: "BMI" },
+    ],
+  },
   {
     heading: null,
     links: [
