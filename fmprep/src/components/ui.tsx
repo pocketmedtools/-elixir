@@ -96,7 +96,7 @@ function withQuantities(text: string, keyBase: string): ReactNode[] {
  * an eponym to attach, deep carmine otherwise - a line that decides management.
  */
 export function RichText({ text }: { text: string }) {
-  const parts = text.split(/(\*\*[^*]+\*\*)/g).filter((p) => p !== "");
+  const parts = text.split(/(\*\*(?:[^*]|\*(?!\*))+?\*\*)/g).filter((p) => p !== "");
   return (
     <>
       {parts.map((part, i) =>
@@ -282,7 +282,7 @@ export function FrequencyChip({ frequency }: { frequency: Frequency }) {
   return (
     <span
       title={FREQUENCY_LABEL[frequency]}
-      className={`rounded-full px-2.5 py-1 text-[13px] font-bold ${FREQ_CHIP[frequency]}`}
+      className={`rounded-2xl px-2.5 py-1 text-[13px] font-bold ${FREQ_CHIP[frequency]}`}
     >
       {FREQ_SHORT[frequency]}
     </span>

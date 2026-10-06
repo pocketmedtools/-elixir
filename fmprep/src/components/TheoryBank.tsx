@@ -43,7 +43,7 @@ export default function TheoryBank({
   }, [all, paper, band, subjectId]);
 
   const filterBtn = (active: boolean) =>
-    `rounded-full px-3.5 py-2 text-[13px] font-semibold transition ${
+    `rounded-2xl px-3.5 py-2 text-[13px] font-semibold transition ${
       active ? "bg-slate-900 text-white" : "bg-slate-100 text-slate-700 hover:bg-slate-200"
     }`;
 

@@ -254,7 +254,7 @@ export default function StudyHome({ onGo }: { onGo: (view: StudyView) => void })
                   // Its own colour, so the chip a reader is looking for is found
                   // before its name is read.
                   style={{ ...colorVars(meta.id), borderColor: "var(--acc-rule)", background: "var(--wash)" }}
-                  className="subject-theme rounded-full border px-3.5 py-2 text-[13.5px] font-semibold shadow-sm"
+                  className="subject-theme rounded-2xl border px-3.5 py-2 text-[13.5px] font-semibold shadow-sm"
                 >
                   <span style={{ color: "var(--acc)" }}>{meta.title}</span>
                 </button>

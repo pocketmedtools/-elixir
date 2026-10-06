@@ -189,7 +189,7 @@ export default function TopicReader({
             <a
               key={i}
               href={`#${slug(s.heading, i)}`}
-              className="rounded-full bg-slate-100 px-3 py-1.5 text-[13px] font-semibold text-slate-700 hover:bg-slate-200"
+              className="rounded-lg bg-slate-100 px-3 py-1.5 text-[13px] font-semibold leading-snug text-slate-700 hover:bg-slate-200"
             >
               {s.heading}
             </a>

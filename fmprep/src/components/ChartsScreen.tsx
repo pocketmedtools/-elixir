@@ -119,7 +119,7 @@ export default function ChartsScreen({
               type="button"
               aria-pressed={kind === k}
               onClick={() => setKind(kind === k ? null : k)}
-              className="rounded-full border-[1.5px] px-3.5 py-1.5 text-[13.5px] font-semibold"
+              className="rounded-2xl border-[1.5px] px-3.5 py-1.5 text-[13.5px] font-semibold"
               style={
                 kind === k
                   ? { background: "var(--head)", color: "#fff", borderColor: "var(--head)" }

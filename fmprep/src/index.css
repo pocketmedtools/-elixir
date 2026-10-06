@@ -598,3 +598,9 @@ h1.text-slate-900 { color: var(--head) !important; }
 h2.text-slate-900, h3.text-slate-900 { color: #0f3460 !important; }
 h2.text-slate-500, h2.text-xs.uppercase { color: #7a1220 !important; }
 .ink-spine { border-left-width: 5px !important; border-left-color: var(--row-ink) !important; }
+
+/* A flex list item's text may hold one long joined word
+   ("hyperthyroidism/hypercalcaemia/hypoadrenalism"); without min-width 0 a
+   flex child refuses to shrink below it and the line runs off the phone. */
+li.flex > *, .flex > .min-w-0 { min-width: 0; }
+li.flex > span { overflow-wrap: anywhere; }

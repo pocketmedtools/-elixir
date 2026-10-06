@@ -77,7 +77,7 @@ export function QuizSetup({
               key={s.id}
               type="button"
               onClick={() => toggle(s.id)}
-              className={`rounded-full px-3 py-1.5 text-xs font-semibold transition ${
+              className={`rounded-2xl px-3 py-1.5 text-xs font-semibold transition ${
                 selected.includes(s.id) ? "bg-teal-900 text-white" : "bg-slate-100 text-slate-700 hover:bg-slate-200"
               }`}
             >
@@ -105,7 +105,7 @@ export function QuizSetup({
                 key={n}
                 type="button"
                 onClick={() => setCount(n)}
-                className={`rounded-full px-3 py-1.5 text-xs font-semibold ${
+                className={`rounded-2xl px-3 py-1.5 text-xs font-semibold ${
                   count === n ? "bg-slate-900 text-white" : "bg-slate-100 text-slate-700"
                 }`}
               >

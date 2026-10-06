@@ -32,7 +32,7 @@ export function CaseList({
   );
 
   const btn = (active: boolean) =>
-    `rounded-full px-3 py-1.5 text-xs font-semibold transition ${
+    `rounded-2xl px-3 py-1.5 text-xs font-semibold transition ${
       active ? "bg-slate-900 text-white" : "bg-slate-100 text-slate-700 hover:bg-slate-200"
     }`;
 

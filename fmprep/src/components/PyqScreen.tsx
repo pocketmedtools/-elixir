@@ -59,7 +59,7 @@ function QuestionHistory({ repeat, split, stated }: { repeat?: Repeat; split?: M
           {split.parts.map((n, i) => (
             <span
               key={i}
-              className="inline-flex items-center gap-1.5 rounded-full border px-2.5 py-1 text-[12px] font-semibold"
+              className="inline-flex items-center gap-1.5 rounded-2xl border px-2.5 py-1 text-[12px] font-semibold"
               style={{ background: "var(--mint)", borderColor: "var(--rule)", color: "var(--label)" }}
             >
               {i + 1}
@@ -299,7 +299,7 @@ export default function PyqScreen({
       active ? "border-slate-900 bg-slate-900 text-white" : "border-slate-200 bg-white text-slate-800"
     }`;
   const pill = (active: boolean) =>
-    `rounded-full px-3 py-1.5 text-xs font-semibold transition ${
+    `rounded-2xl px-3 py-1.5 text-xs font-semibold transition ${
       active ? "bg-slate-900 text-white" : "bg-slate-100 text-slate-700 hover:bg-slate-200"
     }`;
 

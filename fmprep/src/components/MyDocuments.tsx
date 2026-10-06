@@ -76,7 +76,7 @@ function highlight(text: string, words: string[]): ReactNode {
 }
 
 const ReadBadge = () => (
-  <span className="rounded-full px-2.5 py-1 text-xs font-bold text-white" style={{ background: "#14532d" }}>
+  <span className="rounded-2xl px-2.5 py-1 text-xs font-bold text-white" style={{ background: "#14532d" }}>
     ✓ Read
   </span>
 );
