@@ -11,7 +11,7 @@ import { APK_URL, isWebsite } from "../lib/platform";
 import ToolIcon, { TOOL_TEXT } from "./ToolIcon";
 
 export type MenuTarget =
-  | "home" | "pedDose" | "growth" | "bp" | "nbWeight" | "hol" | "bili" | "bmi" | "crCl" | "regimen" | "insulin" | "ob" | "saved" | "report";
+  | "home" | "pedDose" | "growth" | "bp" | "nbWeight" | "hol" | "bili" | "bmi" | "crCl" | "regimen" | "insulin" | "ob" | "timer" | "saved" | "report";
 
 const LINK_GROUPS: {
   heading: string | null;
@@ -39,6 +39,7 @@ const LINK_GROUPS: {
     ],
   },
   { heading: "OBG", links: [{ id: "ob", label: "OB / EDD" }] },
+  { heading: "Utilities", links: [{ id: "timer", label: "Timer / Stopwatch" }] },
   {
     heading: null,
     links: [

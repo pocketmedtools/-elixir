@@ -10,6 +10,8 @@ import GrowthCalculator from "./components/GrowthCalculator";
 import InsulinTool from "./components/InsulinTool";
 import PediatricDosageCalculator from "./components/PediatricDosageCalculator";
 import HolCalculator from "./components/HolCalculator";
+import TimerTool from "./components/TimerTool";
+import TimerFloat from "./components/TimerFloat";
 import NewbornWeightLoss from "./components/NewbornWeightLoss";
 import ObCalculator from "./components/ObCalculator";
 import RegimenAnalyzerUI from "./components/RegimenAnalyzerUI";
@@ -136,6 +138,13 @@ export default function App() {
       active: "bg-fuchsia-900 text-white shadow-sm",
       idle: "bg-slate-100 text-slate-800 hover:bg-slate-200",
     },
+    {
+      id: "timer",
+      label: "Timer",
+      shortLabel: "Timer",
+      active: "bg-green-900 text-white shadow-sm",
+      idle: "bg-slate-100 text-slate-800 hover:bg-slate-200",
+    },
   ];
 
   const showAuth = !profile && !guest;
@@ -218,6 +227,7 @@ export default function App() {
         <div className="brand-ribbon" />
       </header>
 
+      <TimerFloat hidden={tab === "timer"} onOpen={() => setTab("timer")} />
       <SideMenu open={menuOpen} onClose={() => setMenuOpen(false)} onNavigate={(t) => setTab(t)} />
 
       <main className={`tool-stage tool-${tab} flex-1`}>
@@ -235,6 +245,7 @@ export default function App() {
         {tab === "regimen" && <RegimenAnalyzerUI />}
         {tab === "insulin" && <InsulinTool />}
         {tab === "ob" && <ObCalculator />}
+        {tab === "timer" && <TimerTool />}
         {tab === "report" && <ReportIssue />}
       </main>
 

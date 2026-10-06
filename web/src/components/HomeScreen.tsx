@@ -30,6 +30,10 @@ export const TOOL_SECTIONS: {
     heading: "OBG",
     tools: [{ id: "ob", title: "OB / EDD" }],
   },
+  {
+    heading: "Utilities",
+    tools: [{ id: "timer", title: "Timer / Stopwatch" }],
+  },
 ];
 
 export default function HomeScreen({ onOpen }: { onOpen: (t: MenuTarget) => void }) {
