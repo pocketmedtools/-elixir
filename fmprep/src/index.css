@@ -146,7 +146,7 @@
   --good: #14622f; --good-wash: #eff6f0; --good-rule: #c2ddc9;
   --think: #8a5200; --think-wash: #f9f3ec; --think-rule: #e6d2b6;
   --danger: #a8102a; --danger-wash: #fbedee; --danger-rule: #edc3c8;
-  color-scheme: light;
+  color-scheme: light only;
   /* One family, so a heading and the line under it sit on the same rhythm.
      Flip --font-read back to a serif stack to restore the book face. */
   --font-read: Inter, system-ui, -apple-system, "Segoe UI", Roboto,

@@ -297,7 +297,7 @@ export function Chip({ children, tone = "slate" }: { children: ReactNode; tone?:
   const accent = tone !== "slate";
   return (
     <span
-      className="rounded-full px-2.5 py-1 text-[13px] font-semibold"
+      className="inline-block max-w-full rounded-lg px-2.5 py-1 text-[13px] font-semibold leading-snug"
       style={
         accent
           ? { background: "var(--mint)", color: "var(--head)" }

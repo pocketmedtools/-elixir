@@ -70,10 +70,10 @@ export default function SearchScreen({
                     onClick={() => onOpen(r)}
                     className="block w-full rounded-xl border border-slate-200 bg-white p-4 text-left shadow-sm hover:shadow"
                   >
-                    <span className="flex items-start justify-between gap-2">
-                      <span className="text-[17px] font-bold leading-snug text-slate-900">
-                        {r.title.length > 120 ? `${r.title.slice(0, 120)}…` : r.title}
-                      </span>
+                    <span className="block text-[17px] font-bold leading-snug text-slate-900">
+                      {r.title.length > 120 ? `${r.title.slice(0, 120)}…` : r.title}
+                    </span>
+                    <span className="mt-1.5 block">
                       <Chip>{r.context}</Chip>
                     </span>
                     <span className="mt-1.5 block text-[13.5px] leading-[1.6] text-slate-600">{r.snippet}</span>

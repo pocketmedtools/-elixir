@@ -147,10 +147,21 @@ function staticIndex(): Record_[] {
   return memo;
 }
 
+/** Markdown marks and citation tags read as noise in a one-line preview. */
+function plain(text: string): string {
+  return text
+    .replace(/\*\*|__|`/g, "")
+    .replace(/(^|\s)[*_](\S)/g, "$1$2")
+    .replace(/(\S)[*_](?=\s|[.,;:)]|$)/g, "$1")
+    .replace(/\[([^\]]+)\]\([^)]+\)/g, "$1")
+    .replace(/^#+\s*/gm, "")
+    .replace(/\s*\[[A-Z][A-Za-z0-9 .,&/'-]{1,40}\b(19|20)\d\d[a-z]?\]/g, "");
+}
+
 function snippetAround(raw: string, at: number, term: number): string {
   const start = Math.max(0, at - 60);
   const end = Math.min(raw.length, at + term + 100);
-  return `${start > 0 ? "…" : ""}${raw.slice(start, end).replace(/\s+/g, " ").trim()}${end < raw.length ? "…" : ""}`;
+  return `${start > 0 ? "…" : ""}${plain(raw.slice(start, end)).replace(/\s+/g, " ").trim()}${end < raw.length ? "…" : ""}`;
 }
 
 export function search(query: string, limit = 80): SearchResult[] {
@@ -170,7 +181,7 @@ export function search(query: string, limit = 80): SearchResult[] {
     out.push({
       kind: r.kind,
       id: r.id,
-      title: r.title,
+      title: plain(r.title),
       context: r.context,
       snippet: snippetAround(r.raw, at, q.length),
       score,

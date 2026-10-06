@@ -75,6 +75,14 @@ jobs:
           # tell which native build is installed (CapacitorUpdater.current()).
           sed -i -E 's/versionCode [0-9]+/versionCode ${{ github.run_number }}/; s/versionName "[^"]*"/versionName "${{ github.run_number }}"/' android/app/build.gradle
           grep -nE 'versionCode|versionName' android/app/build.gradle
+          # Always a light app. With the phone in dark mode, the DayNight theme
+          # let the system dim the whole page grey (the "grey haze" reports);
+          # a Light theme with force-dark switched off keeps the paper colour.
+          STY=android/app/src/main/res/values/styles.xml
+          sed -i 's/Theme.AppCompat.DayNight.NoActionBar/Theme.AppCompat.Light.NoActionBar/' "$STY"
+          sed -i 's|<item name="windowActionBar">false</item>|<item name="windowActionBar">false</item>\n        <item name="android:forceDarkAllowed">false</item>|' "$STY"
+          sed -i 's|<item name="colorAccent">@color/colorAccent</item>|<item name="colorAccent">@color/colorAccent</item>\n        <item name="android:forceDarkAllowed">false</item>|' "$STY"
+          cat "$STY"
 
       # App icon from the PWA's own 512px icon, copied as-is into every density
       # folder - Android scales a launcher PNG down itself, so no image tool is
