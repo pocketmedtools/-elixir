@@ -79,10 +79,10 @@ export default function ChartsScreen({
   }, [index]);
 
   return (
-    <div>
+    <div className="mx-auto max-w-3xl px-3 pt-5 md:px-6">
       <BackBar onBack={onBack} label="Study" />
 
-      <div className="mx-auto max-w-3xl px-3 pb-16 md:px-6">
+      <div className="pb-16">
         <h2 className="mt-4 text-[1.45em] font-bold leading-tight tracking-tight">
           Charts, Scores &amp; Tables
         </h2>
