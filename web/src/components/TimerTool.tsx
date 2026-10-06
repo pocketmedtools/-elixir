@@ -20,16 +20,6 @@ function polar(deg: number, r: number): [number, number] {
   return [CX + r * Math.cos(rad), CY + r * Math.sin(rad)];
 }
 
-/** Filled pie slice from angle a0 to a1 (degrees, clockwise from 12 o'clock). */
-function slice(a0: number, a1: number, r: number): string {
-  const span = a1 - a0;
-  if (span <= 0.05) return "";
-  if (span >= 359.95) return `M ${CX} ${CY - r} A ${r} ${r} 0 1 1 ${CX - 0.01} ${CY - r} Z`;
-  const [x0, y0] = polar(a0, r);
-  const [x1, y1] = polar(a1, r);
-  return `M ${CX} ${CY} L ${x0.toFixed(2)} ${y0.toFixed(2)} A ${r} ${r} 0 ${span > 180 ? 1 : 0} 1 ${x1.toFixed(2)} ${y1.toFixed(2)} Z`;
-}
-
 function arc(a0: number, a1: number, r: number): string {
   const span = Math.min(a1 - a0, 359.95);
   if (span <= 0.05) return "";
@@ -51,38 +41,50 @@ function Dial({
   small: string;
   alert: boolean;
 }) {
-  const [hx, hy] = polar(hand, 126);
+  // A slim progress ring with clear space on both sides, so the green reads
+  // as its own band rather than merging into the face or the tick border.
+  const R = 112;
+  const [hx, hy] = polar(hand, R);
+  const span = greenTo - greenFrom;
+  const ringColor = alert ? MAROON : GREEN;
   return (
     <svg viewBox="0 0 340 340" className="mx-auto w-full max-w-[20rem]" role="img" aria-label={`${small} ${big}`}>
-      <circle cx={CX} cy={CY} r="150" fill="#fcf4e6" stroke={TRACK} strokeWidth="2" />
-      <circle cx={CX} cy={CY} r="126" fill={alert ? "#f6e1e1" : GREEN_PALE} />
-      <path d={slice(greenFrom, greenTo, 126)} fill={alert ? MAROON : GREEN} />
-      {/* outer track: minutes of the hour (stopwatch) */}
-      <circle cx={CX} cy={CY} r="138" fill="none" stroke={TRACK} strokeWidth="6" />
-      {outer != null && <path d={arc(0, outer, 138)} fill="none" stroke={GREEN_DARK} strokeWidth="6" strokeLinecap="round" />}
+      <circle cx={CX} cy={CY} r="150" fill="#fcf4e6" stroke={TRACK} strokeWidth="1.5" />
       {Array.from({ length: 60 }, (_, i) => {
         const major = i % 5 === 0;
-        const [x1, y1] = polar(i * 6, major ? 141 : 144);
-        const [x2, y2] = polar(i * 6, 149);
-        return <line key={i} x1={x1} y1={y1} x2={x2} y2={y2} stroke={MUTED} strokeWidth={major ? 2.2 : 1} />;
+        const [x1, y1] = polar(i * 6, major ? 136 : 140);
+        const [x2, y2] = polar(i * 6, 145);
+        return <line key={i} x1={x1} y1={y1} x2={x2} y2={y2} stroke={MUTED} strokeWidth={major ? 2 : 1} />;
       })}
       {mode === "stopwatch" &&
         Array.from({ length: 12 }, (_, i) => {
-          const [x, y] = polar(i * 30, 162);
+          const [x, y] = polar(i * 30, 160);
           return (
             <text key={i} x={x} y={y + 4} textAnchor="middle" fontSize="11" fontWeight="700" fill="#3a3733">
               {i * 5}
             </text>
           );
         })}
-      <line x1={CX} y1={CY} x2={hx} y2={hy} stroke={INK} strokeWidth="3.5" strokeLinecap="round" />
-      <circle cx={hx} cy={hy} r="6" fill={INK} />
-      <circle cx={CX} cy={CY} r="66" fill="#fcf4e6" stroke={TRACK} strokeWidth="2" />
-      <text x={CX} y={CY + 6} textAnchor="middle" fontSize={big.length > 8 ? 24 : 28} fontWeight="900" fill={alert ? MAROON : INK}
+      {/* track + green progress */}
+      <circle cx={CX} cy={CY} r={R} fill="none" stroke={alert ? "#f1dcdc" : GREEN_PALE} strokeWidth="10" />
+      {span >= 359.9 ? (
+        <circle cx={CX} cy={CY} r={R} fill="none" stroke={ringColor} strokeWidth="10" />
+      ) : (
+        <path d={arc(greenFrom, greenTo, R)} fill="none" stroke={ringColor} strokeWidth="10" strokeLinecap="round" />
+      )}
+      {/* stopwatch: thin inner arc for minutes of the hour */}
+      {outer != null && (
+        <>
+          <circle cx={CX} cy={CY} r="96" fill="none" stroke={TRACK} strokeWidth="2" />
+          <path d={arc(0, outer, 96)} fill="none" stroke={GREEN_DARK} strokeWidth="3" strokeLinecap="round" />
+        </>
+      )}
+      {!alert && <circle cx={hx} cy={hy} r="8" fill="#ffffff" stroke={INK} strokeWidth="3" />}
+      <text x={CX} y={CY + 8} textAnchor="middle" fontSize={big.length > 8 ? 30 : 34} fontWeight="900" fill={alert ? MAROON : INK}
         style={{ fontVariantNumeric: "tabular-nums" }}>
         {big}
       </text>
-      <text x={CX} y={CY + 28} textAnchor="middle" fontSize="11" fontWeight="800" fill={MUTED} letterSpacing="1.5">
+      <text x={CX} y={CY + 32} textAnchor="middle" fontSize="11" fontWeight="800" fill={MUTED} letterSpacing="1.5">
         {small}
       </text>
     </svg>
