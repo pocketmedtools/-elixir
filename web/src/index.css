@@ -222,8 +222,8 @@ input, select, textarea { background-color: #fffaf1; color: var(--ink); }
 
 /* Opening splash: the stethoscope logo rocks gently while growing and
    shrinking, and the page colour breathes through tints that match the icon
-   (white → cyan wash → soft navy wash). Then the overlay fades to reveal the
-   sign-in page or Home underneath. */
+   (white → cyan wash → soft navy wash). Then the overlay fades within about
+   a second to reveal the last open tool. */
 .splash {
   position: fixed;
   inset: 0;
@@ -233,16 +233,16 @@ input, select, textarea { background-color: #fffaf1; color: var(--ink); }
   justify-content: center;
   background: #fcf4e6;
   animation:
-    splash-bg 2.4s ease-in-out both,
-    splash-out 0.45s ease 2.3s forwards;
+    splash-bg 1s ease-in-out both,
+    splash-out 0.3s ease 0.8s forwards;
   pointer-events: none;
 }
 .splash img {
   height: 92px;
   width: auto;
   animation:
-    splash-in 0.6s ease-out both,
-    splash-live 1.8s ease-in-out 0.6s infinite;
+    splash-in 0.4s ease-out both,
+    splash-live 1s ease-in-out 0.4s infinite;
   filter: drop-shadow(0 6px 18px rgba(0, 200, 90, 0.25));
 }
 @keyframes splash-in {
