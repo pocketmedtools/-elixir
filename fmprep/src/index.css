@@ -314,7 +314,11 @@ cite.cite {
   border-radius: 3px;
   padding: 0.12em 0.4em;
   margin-left: 0.4em;
-  white-space: nowrap;
+  /* Short tags stay whole; a long one may wrap rather than run off a phone. */
+  white-space: normal;
+  overflow-wrap: anywhere;
+  box-decoration-break: clone;
+  -webkit-box-decoration-break: clone;
   vertical-align: 0.05em;
 }
 
