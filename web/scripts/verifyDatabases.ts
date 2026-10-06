@@ -1567,6 +1567,18 @@ section("Pediatric DB integrity");
   console.log("timer: start/pause/resume/finish, +1 min, limits, display; stopwatch: pause, laps, display OK");
 }
 
+// ---------- Remembered entries ----------
+{
+  console.log("\n=== Remembered entries suite ===");
+  const { fits } = await import("../src/lib/lastState");
+  const ok: [unknown, unknown][] = [[12, ""], ["", ""], ["38", ""], [null, null], ["with", null], [28, 28], ["", 28],
+    ["days", "hours"], [true, false], [[true, false], []], ["2026-10-01", ""]];
+  const bad: [unknown, unknown][] = [[undefined, ""], ["x", 28], [Number.NaN, 28], [{}, []], [1, false], [[], "hours"]];
+  for (const [raw, init] of ok) if (!fits(raw, init)) fail(`remembered: ${JSON.stringify(raw)} should restore into ${JSON.stringify(init)}`);
+  for (const [raw, init] of bad) if (fits(raw, init)) fail(`remembered: ${String(raw)} must not restore into ${JSON.stringify(init)}`);
+  console.log("remembered entries: type checks on restore OK");
+}
+
 // ---------- Result ----------
 console.log("\n========== VERIFY RESULT ==========");
 if (failures.length) {

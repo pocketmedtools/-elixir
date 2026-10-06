@@ -1,4 +1,5 @@
-import { useMemo, useState } from "react";
+import { useMemo } from "react";
+import { usePersist } from "../lib/lastState";
 import {
   bmiValue,
   classifyBmiIndian,
@@ -27,14 +28,14 @@ function num(v: string): number | "" {
 }
 
 export default function BmiCalculator() {
-  const [sex, setSex] = useState<"male" | "female">("male");
-  const [unit, setUnit] = useState<"cm" | "ft">("cm");
-  const [weight, setWeight] = useState<number | "">("");
-  const [heightCm, setHeightCm] = useState<number | "">("");
-  const [feet, setFeet] = useState<number | "">("");
-  const [inches, setInches] = useState<number | "">("");
-  const [age, setAge] = useState<number | "">("");
-  const [waist, setWaist] = useState<number | "">("");
+  const [sex, setSex] = usePersist<"male" | "female">("bmi", "sex", "male");
+  const [unit, setUnit] = usePersist<"cm" | "ft">("bmi", "unit", "cm");
+  const [weight, setWeight] = usePersist<number | "">("bmi", "weight", "");
+  const [heightCm, setHeightCm] = usePersist<number | "">("bmi", "heightCm", "");
+  const [feet, setFeet] = usePersist<number | "">("bmi", "feet", "");
+  const [inches, setInches] = usePersist<number | "">("bmi", "inches", "");
+  const [age, setAge] = usePersist<number | "">("bmi", "age", "");
+  const [waist, setWaist] = usePersist<number | "">("bmi", "waist", "");
 
   const effHeight = useMemo(() => {
     if (unit === "cm") return heightCm === "" ? null : Number(heightCm);

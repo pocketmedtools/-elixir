@@ -1,7 +1,8 @@
 import { useMemo, useState } from "react";
+import { usePersist, type Codec } from "../lib/lastState";
 import { analyzeRegimen } from "../clinical/AnalysisEngine";
 import SaveButton from "./SaveButton";
-import { CONDITIONS_CATALOG, KNOWN_CONDITIONS, searchDrugs } from "../clinical/clinicalData";
+import { CONDITIONS_CATALOG, KNOWN_CONDITIONS, drugsDB, searchDrugs } from "../clinical/clinicalData";
 import type { DrugRecord, PatientProfile } from "../clinical/types";
 
 function severityClass(severity: string): string {
@@ -14,16 +15,25 @@ function severityClass(severity: string): string {
   return "border-slate-200 bg-slate-50 text-slate-800";
 }
 
+// The regimen is remembered as drug ids and rebuilt from the current database.
+const REGIMEN_CODEC: Codec<DrugRecord[]> = {
+  save: (list) => list.map((d) => d.id),
+  load: (raw) =>
+    Array.isArray(raw)
+      ? raw.map((id) => drugsDB.find((d) => d.id === id)).filter((d): d is DrugRecord => !!d)
+      : undefined,
+};
+
 export default function RegimenAnalyzerUI() {
   // Start empty — a pre-filled sample patient (72 y, 68 kg, Cr 1.4) produced
   // geriatric and renal alerts for someone who doesn't exist.
-  const [ageYears, setAgeYears] = useState<number | "">("");
-  const [weightKg, setWeightKg] = useState<number | "">("");
-  const [creatinineMgDl, setCreatinineMgDl] = useState<number | "">("");
-  const [sex, setSex] = useState<"Male" | "Female">("Female");
-  const [conditions, setConditions] = useState<string[]>([]);
+  const [ageYears, setAgeYears] = usePersist<number | "">("regimen", "ageYears", "");
+  const [weightKg, setWeightKg] = usePersist<number | "">("regimen", "weightKg", "");
+  const [creatinineMgDl, setCreatinineMgDl] = usePersist<number | "">("regimen", "creatinineMgDl", "");
+  const [sex, setSex] = usePersist<"Male" | "Female">("regimen", "sex", "Female");
+  const [conditions, setConditions] = usePersist<string[]>("regimen", "conditions", []);
   const [conditionQuery, setConditionQuery] = useState("");
-  const [regimen, setRegimen] = useState<DrugRecord[]>([]);
+  const [regimen, setRegimen] = usePersist<DrugRecord[]>("regimen", "drugs", [], REGIMEN_CODEC);
   const [drugQuery, setDrugQuery] = useState("");
   const [pickerOpen, setPickerOpen] = useState(false);
 

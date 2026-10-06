@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import { usePersist } from "../lib/lastState";
 import { format12h, hoursOfLife, localDateTime, type AmPm } from "../lib/holMath";
 import SaveButton from "./SaveButton";
 
@@ -56,16 +57,16 @@ function DateTime12({
 }
 
 export default function HolCalculator() {
-  const [bDate, setBDate] = useState(todayStr);
-  const [bHour, setBHour] = useState("");
-  const [bMin, setBMin] = useState("");
-  const [bAmpm, setBAmpm] = useState<AmPm>("AM");
+  const [bDate, setBDate] = usePersist("hol", "bDate", todayStr);
+  const [bHour, setBHour] = usePersist("hol", "bHour", "");
+  const [bMin, setBMin] = usePersist("hol", "bMin", "");
+  const [bAmpm, setBAmpm] = usePersist<AmPm>("hol", "bAmpm", "AM");
 
-  const [toNow, setToNow] = useState(true);
-  const [tDate, setTDate] = useState(todayStr);
-  const [tHour, setTHour] = useState("");
-  const [tMin, setTMin] = useState("");
-  const [tAmpm, setTAmpm] = useState<AmPm>("AM");
+  const [toNow, setToNow] = usePersist("hol", "toNow", true);
+  const [tDate, setTDate] = usePersist("hol", "tDate", todayStr);
+  const [tHour, setTHour] = usePersist("hol", "tHour", "");
+  const [tMin, setTMin] = usePersist("hol", "tMin", "");
+  const [tAmpm, setTAmpm] = usePersist<AmPm>("hol", "tAmpm", "AM");
 
   // Re-render every 30 s so "till now" stays current.
   const [now, setNow] = useState(() => new Date());

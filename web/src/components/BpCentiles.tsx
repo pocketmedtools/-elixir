@@ -1,4 +1,5 @@
-import { useMemo, useState } from "react";
+import { useMemo } from "react";
+import { usePersist } from "../lib/lastState";
 import {
   BP_AGE_MAX, BP_AGE_MIN,
   assessBp,
@@ -25,16 +26,16 @@ function num(v: string): number | "" {
 }
 
 export default function BpCentiles() {
-  const [sex, setSex] = useState<BpSex>("male");
-  const [basis, setBasis] = useState<BpBasis>("height");
-  const [age, setAge] = useState<number | "">("");
-  const [bpAgeUnit, setBpAgeUnit] = useState<"years" | "months">("years");
-  const [bpAgePlusMonths, setBpAgePlusMonths] = useState<number | "">(0);
-  const [height, setHeight] = useState<number | "">("");
-  const [daySbp, setDaySbp] = useState<number | "">("");
-  const [dayDbp, setDayDbp] = useState<number | "">("");
-  const [nightSbp, setNightSbp] = useState<number | "">("");
-  const [nightDbp, setNightDbp] = useState<number | "">("");
+  const [sex, setSex] = usePersist<BpSex>("bp", "sex", "male");
+  const [basis, setBasis] = usePersist<BpBasis>("bp", "basis", "height");
+  const [age, setAge] = usePersist<number | "">("bp", "age", "");
+  const [bpAgeUnit, setBpAgeUnit] = usePersist<"years" | "months">("bp", "bpAgeUnit", "years");
+  const [bpAgePlusMonths, setBpAgePlusMonths] = usePersist<number | "">("bp", "bpAgePlusMonths", 0);
+  const [height, setHeight] = usePersist<number | "">("bp", "height", "");
+  const [daySbp, setDaySbp] = usePersist<number | "">("bp", "daySbp", "");
+  const [dayDbp, setDayDbp] = usePersist<number | "">("bp", "dayDbp", "");
+  const [nightSbp, setNightSbp] = usePersist<number | "">("bp", "nightSbp", "");
+  const [nightDbp, setNightDbp] = usePersist<number | "">("bp", "nightDbp", "");
 
   const h = height === "" ? null : Number(height);
   const heightOk = h != null && h >= 105 && h <= 200;
