@@ -7,15 +7,6 @@ export const TOOL_SECTIONS: {
   tools: { id: MenuTarget; title: string }[];
 }[] = [
   {
-    heading: "Medicine",
-    tools: [
-      { id: "crCl", title: "Creatinine Clearance" },
-      { id: "insulin", title: "Insulin" },
-      { id: "regimen", title: "Polypharm" },
-      { id: "bmi", title: "BMI" },
-    ],
-  },
-  {
     heading: "Pediatrics",
     tools: [
       { id: "pedDose", title: "Ped Dose Calculator" },
@@ -33,6 +24,15 @@ export const TOOL_SECTIONS: {
   {
     heading: "Utilities",
     tools: [{ id: "timer", title: "Timer / Stopwatch" }],
+  },
+  {
+    heading: "Medicine",
+    tools: [
+      { id: "crCl", title: "Creatinine Clearance" },
+      { id: "insulin", title: "Insulin" },
+      { id: "regimen", title: "Polypharm" },
+      { id: "bmi", title: "BMI" },
+    ],
   },
 ];
 
