@@ -114,8 +114,11 @@ export async function load(): Promise<void> {
   try {
     const all = await tx<DocRecord[]>("readonly", (store) => store.getAll() as IDBRequest<DocRecord[]>);
     cache = all.map(strip).sort((a, b) => b.addedAt - a.addedAt);
+    loaded = true;
+    emit();
+    await repairHtmlText(all);
   } catch {
-    cache = [];
+    if (!loaded) cache = [];
   }
   loaded = true;
   emit();
@@ -243,14 +246,39 @@ async function docxToText(file: File): Promise<string> {
   return result.value;
 }
 
-function htmlToText(html: string): string {
+export function htmlToText(html: string): string {
   const parsed = new DOMParser().parseFromString(html, "text/html");
-  // A parsed document has no layout, so innerText can come back empty even
-  // when there is text; textContent is the reliable read.
   const body = parsed.body;
   if (!body) return "";
-  const rendered = body.innerText?.trim();
-  return rendered && rendered.length > 0 ? body.innerText : (body.textContent ?? "");
+  // A parsed document has no layout, so innerText falls back to textContent,
+  // which includes every <style> and <script> - pages of CSS shown as the
+  // "text" of a saved Claude page. Those go before reading.
+  body.querySelectorAll("style,script,noscript,template,svg,link,meta,head").forEach((n) => n.remove());
+  // Block ends become line breaks, so paragraphs survive as paragraphs.
+  body.querySelectorAll("p,div,section,article,li,tr,h1,h2,h3,h4,h5,h6,br,table,ul,ol,blockquote,pre").forEach((n) =>
+    n.after(parsed.createTextNode("\n")),
+  );
+  return (body.textContent ?? "")
+    .replace(/[ \t\u00a0]+/g, " ")
+    .replace(/ *\n */g, "\n")
+    .replace(/\n{3,}/g, "\n\n")
+    .trim();
+}
+
+/* HTML documents stored before htmlToText dropped <style>/<script> carry
+   CSS as their text. Re-read once from the original file. */
+const HTML_TEXT_V = 2;
+async function repairHtmlText(all: (DocRecord & { textV?: number })[]): Promise<void> {
+  for (const r of all) {
+    if (r.kind !== "html" || !r.blob || (r.textV ?? 0) >= HTML_TEXT_V) continue;
+    try {
+      const fixed = { ...r, text: htmlToText(await r.blob.text()), textV: HTML_TEXT_V };
+      await tx("readwrite", (store) => store.put(fixed));
+      cache = cache.map((d) => (d.id === r.id ? strip(fixed) : d));
+    } catch {
+      /* left as it was; tried again next launch */
+    }
+  }
 }
 
 async function extract(file: File, kind: DocKind): Promise<{ text: string; pages?: number; note?: string }> {
@@ -313,6 +341,7 @@ export async function addFiles(files: File[], collection: string): Promise<Impor
         pages,
         extractNote: note,
         blob: file,
+        ...(kind === "html" ? { textV: HTML_TEXT_V } : {}),
       };
       await tx("readwrite", (store) => store.put(record));
       added.push(strip(record));

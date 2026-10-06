@@ -7,7 +7,7 @@
  * the file. Position is remembered per document.
  */
 import { useEffect, useMemo, useRef, useState } from "react";
-import { getDoc, wordCount, type StudyDoc } from "../lib/docs";
+import { getDoc, htmlToText, wordCount, type StudyDoc } from "../lib/docs";
 import {
   docModeOf,
   docPagePosition,
@@ -217,7 +217,13 @@ export default function DocReader({
       setDoc(found);
       setBlocks(1);
       if (found.kind === "image" && found.blob) setImageUrl(URL.createObjectURL(found.blob));
-      if (found.kind === "html" && found.blob) void found.blob.text().then((h) => alive && setPageHtml(h));
+      if (found.kind === "html" && found.blob)
+        void found.blob.text().then((h) => {
+          if (!alive) return;
+          setPageHtml(h);
+          // Text view from the page itself, never its CSS or scripts.
+          setDoc({ ...found, text: htmlToText(h) });
+        });
     });
     return () => {
       alive = false;
@@ -443,7 +449,7 @@ export default function DocReader({
         <div
           ref={fullRef}
           className="fixed inset-0 z-[300] flex flex-col"
-          style={{ background: "#111", paddingTop: "env(safe-area-inset-top)" }}
+          style={{ background: "#111", paddingTop: "var(--sat)" }}
         >
           <iframe
             title={doc.title}
@@ -457,7 +463,7 @@ export default function DocReader({
             onClick={closeFull}
             aria-label="Close full screen"
             className="absolute right-2 flex h-8 w-8 items-center justify-center rounded-full text-sm font-bold text-white"
-            style={{ background: "rgba(0,0,0,.3)", top: "calc(env(safe-area-inset-top) + 8px)" }}
+            style={{ background: "rgba(0,0,0,.3)", top: "calc(var(--sat) + 8px)" }}
           >
             ✕
           </button>

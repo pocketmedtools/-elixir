@@ -172,9 +172,15 @@ button, input, select, textarea, nav, .app-header, .chip, .eyebrow {
   font-family: var(--font-ui);
 }
 
+/* The status bar's height. Android 15+ draws the app edge to edge under the
+   status bar whatever the app asks for; Capacitor then reports the real inset
+   as --safe-area-inset-top, which old web views do not give as env(). */
+:root { --sat: var(--safe-area-inset-top, env(safe-area-inset-top, 0px)); }
+
 body {
   margin: 0;
   min-height: 100vh;
+  padding-top: var(--sat);
   padding-left: env(safe-area-inset-left);
   padding-right: env(safe-area-inset-right);
   padding-bottom: env(safe-area-inset-bottom);
@@ -195,7 +201,13 @@ html, body { overflow-x: hidden; max-width: 100%; }
   html, body { overflow-x: clip; }
 }
 #root { min-height: 100vh; }
-.app-header { padding-top: env(safe-area-inset-top); }
+/* A cream strip behind the clock and icons, so text scrolling up never runs
+   under them, and sticky bars stop below it. */
+body::before {
+  content: ""; position: fixed; top: 0; left: 0; right: 0; height: var(--sat);
+  background: var(--bg); z-index: 250; pointer-events: none;
+}
+.sticky.top-0 { top: var(--sat) !important; }
 
 /* The band under the header carries the whole palette at a glance, so the
    app announces that colour means something before a subject is opened. */

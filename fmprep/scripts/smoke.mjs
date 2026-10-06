@@ -37,6 +37,11 @@ const check = (name, ok, detail = "") => {
 };
 
 const NOTE = join(tmpdir(), "fmprep-smoke-note.txt");
+const PAGE = join(tmpdir(), "fmprep-smoke-page.html");
+writeFileSync(
+  PAGE,
+  "<!doctype html><html><head><style>.subj h3{font-size:18px;color:var(--acc)}</style></head><body><h1>Smoke page heading</h1><p>Asthma step one reliever.</p><script>var zzscript=1;</script></body></html>",
+);
 const FIRST = "ZZSTARTSENTINEL";
 const LAST = "ZZENDSENTINEL";
 const body = [];
@@ -157,6 +162,22 @@ await page.waitForTimeout(700);
 await page.setInputFiles('input[type="file"]', NOTE);
 await page.waitForTimeout(2000);
 check("importing your own file still works", (await page.getByText(/fmprep-smoke-note/i).count()) > 0);
+
+// A saved HTML page: its text view is the words, never its CSS or scripts
+await page.setInputFiles('input[type="file"]', PAGE);
+await page.waitForTimeout(1500);
+await page.getByRole("button", { name: /fmprep-smoke-page/i }).first().click();
+await page.waitForTimeout(1200);
+await page.getByRole("button", { name: /^Text view$/ }).first().click();
+await page.waitForTimeout(600);
+const pageText = await page.locator("article").first().innerText().catch(() => "");
+check(
+  "HTML text view has no CSS or script",
+  /Smoke page heading/.test(pageText) && !/font-size|zzscript/.test(pageText),
+  pageText.slice(0, 120),
+);
+await page.getByRole("button", { name: /^←/ }).first().click();
+await page.waitForTimeout(500);
 
 // Search spans library, papers and documents
 await goHome(page);

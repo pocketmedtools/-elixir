@@ -40,7 +40,16 @@ export default function App() {
       last = Date.now();
       void armDailyTopic(ask).catch(() => {});
     };
-    const t = setTimeout(() => arm(true), 2500);
+    // The permission prompt is shown once, on first launch; after that the
+    // reminder is re-laid silently (the home card can still ask again).
+    let asked = false;
+    try {
+      asked = localStorage.getItem("FMPREP_NOTIF_ASKED") === "1";
+      localStorage.setItem("FMPREP_NOTIF_ASKED", "1");
+    } catch {
+      /* storage blocked: ask, harmlessly */
+    }
+    const t = setTimeout(() => arm(!asked), 2500);
     const onVis = () => document.visibilityState === "visible" && arm(false);
     document.addEventListener("visibilitychange", onVis);
     return () => {
