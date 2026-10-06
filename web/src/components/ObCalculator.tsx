@@ -1,4 +1,5 @@
 import { useMemo, useState } from "react";
+import { usePersist } from "../lib/lastState";
 import { searchDrugs } from "../clinical/clinicalData";
 import { estimateCrCl } from "../lib/creatinineClearanceMath";
 import { buildRenalDoseReport } from "../lib/renalDoseAdjust";
@@ -27,21 +28,21 @@ const METHODS: { id: ObMethod; label: string; dateLabel: string }[] = [
 ];
 
 export default function ObCalculator() {
-  const [method, setMethod] = useState<ObMethod>("lmp");
+  const [method, setMethod] = usePersist<ObMethod>("ob", "method", "lmp");
   // Scan (USG) covers both entries in one place: GA read on the scan, or the
   // EDD printed on the report (which back-calculates the LMP).
-  const [scanMode, setScanMode] = useState<"ga" | "edd">("ga");
-  const [dateStr, setDateStr] = useState("");
-  const [cycle, setCycle] = useState<number | "">(28);
-  const [scanWeeks, setScanWeeks] = useState<number | "">("");
-  const [scanDays, setScanDays] = useState<number | "">(0);
-  const [lmpCompare, setLmpCompare] = useState("");
+  const [scanMode, setScanMode] = usePersist<"ga" | "edd">("ob", "scanMode", "ga");
+  const [dateStr, setDateStr] = usePersist("ob", "dateStr", "");
+  const [cycle, setCycle] = usePersist<number | "">("ob", "cycle", 28);
+  const [scanWeeks, setScanWeeks] = usePersist<number | "">("ob", "scanWeeks", "");
+  const [scanDays, setScanDays] = usePersist<number | "">("ob", "scanDays", 0);
+  const [lmpCompare, setLmpCompare] = usePersist("ob", "lmpCompare", "");
   const [q, setQ] = useState("");
-  const [manualWeeks, setManualWeeks] = useState<number | "">("");
-  const [scr, setScr] = useState<number | "">("");
-  const [momAge, setMomAge] = useState<number | "">("");
-  const [momWeight, setMomWeight] = useState<number | "">("");
-  const [selectedConds, setSelectedConds] = useState<string[]>([]);
+  const [manualWeeks, setManualWeeks] = usePersist<number | "">("ob", "manualWeeks", "");
+  const [scr, setScr] = usePersist<number | "">("ob", "scr", "");
+  const [momAge, setMomAge] = usePersist<number | "">("ob", "momAge", "");
+  const [momWeight, setMomWeight] = usePersist<number | "">("ob", "momWeight", "");
+  const [selectedConds, setSelectedConds] = usePersist<string[]>("ob", "selectedConds", []);
 
   const drugMatches = useMemo(() => {
     const query = q.trim();

@@ -1,4 +1,5 @@
-import { useMemo, useState } from "react";
+import { useMemo } from "react";
+import { usePersist } from "../lib/lastState";
 import {
   centileBandCompact,
   centileBandLabel,
@@ -115,13 +116,13 @@ function ResultCard({
  * Everything recalculates as the numbers are typed — there is no submit step.
  */
 export default function GrowthCalculator() {
-  const [sex, setSex] = useState<Sex>("male");
-  const [ageValue, setAgeValue] = useState<number | "">("");
-  const [ageUnit, setAgeUnit] = useState<"years" | "months" | "days" | "hours">("years");
-  const [agePlusMonths, setAgePlusMonths] = useState<number | "">(0);
-  const [weight, setWeight] = useState<number | "">("");
-  const [height, setHeight] = useState<number | "">("");
-  const [hc, setHc] = useState<number | "">("");
+  const [sex, setSex] = usePersist<Sex>("growth", "sex", "male");
+  const [ageValue, setAgeValue] = usePersist<number | "">("growth", "ageValue", "");
+  const [ageUnit, setAgeUnit] = usePersist<"years" | "months" | "days" | "hours">("growth", "ageUnit", "years");
+  const [agePlusMonths, setAgePlusMonths] = usePersist<number | "">("growth", "agePlusMonths", 0);
+  const [weight, setWeight] = usePersist<number | "">("growth", "weight", "");
+  const [height, setHeight] = usePersist<number | "">("growth", "height", "");
+  const [hc, setHc] = usePersist<number | "">("growth", "hc", "");
 
   const ageMonths = useMemo(() => {
     const n = ageValue === "" ? 0 : Number(ageValue);

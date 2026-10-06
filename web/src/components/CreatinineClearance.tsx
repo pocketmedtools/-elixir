@@ -1,4 +1,5 @@
-import { useMemo, useState } from "react";
+import { useMemo } from "react";
+import { usePersist } from "../lib/lastState";
 import { drugsDB } from "../clinical/clinicalData";
 import { egfrCkdEpi2021, estimateCrCl, gfrCategory } from "../lib/creatinineClearanceMath";
 import SaveButton from "./SaveButton";
@@ -10,15 +11,15 @@ import {
 
 /** Cockcroft–Gault CrCl (mL/min) with renal drug dose adjustment lookup. */
 export default function CreatinineClearance() {
-  const [sex, setSex] = useState<"Male" | "Female">("Male");
+  const [sex, setSex] = usePersist<"Male" | "Female">("crCl", "sex", "Male");
   // Start empty — no sample patient (it showed a CrCl for someone who doesn't exist).
-  const [age, setAge] = useState<number | "">("");
-  const [weight, setWeight] = useState<number | "">("");
-  const [height, setHeight] = useState<number | "">("");
-  const [unit, setUnit] = useState<"mg/dL" | "µmol/L">("mg/dL");
-  const [creatinine, setCreatinine] = useState<number | "">("");
-  const [drugQuery, setDrugQuery] = useState("");
-  const [selectedDrugId, setSelectedDrugId] = useState<string | null>(null);
+  const [age, setAge] = usePersist<number | "">("crCl", "age", "");
+  const [weight, setWeight] = usePersist<number | "">("crCl", "weight", "");
+  const [height, setHeight] = usePersist<number | "">("crCl", "height", "");
+  const [unit, setUnit] = usePersist<"mg/dL" | "µmol/L">("crCl", "unit", "mg/dL");
+  const [creatinine, setCreatinine] = usePersist<number | "">("crCl", "creatinine", "");
+  const [drugQuery, setDrugQuery] = usePersist("crCl", "drugQuery", "");
+  const [selectedDrugId, setSelectedDrugId] = usePersist<string | null>("crCl", "selectedDrugId", null);
 
   const result = useMemo(() => {
     return estimateCrCl({

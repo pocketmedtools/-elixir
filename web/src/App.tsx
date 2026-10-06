@@ -1,4 +1,5 @@
-import { useEffect, useState, useSyncExternalStore } from "react";
+import { Fragment, useEffect, useState, useSyncExternalStore } from "react";
+import { clearLast, usePersist, type Codec } from "./lib/lastState";
 import HomeScreen from "./components/HomeScreen";
 import SavedScreen from "./components/SavedScreen";
 import SideMenu, { type MenuTarget } from "./components/SideMenu";
@@ -22,8 +23,18 @@ import { getCurrentProfile, getVersion, subscribe } from "./lib/accounts";
 
 type AppTab = MenuTarget;
 
+// Only reopen a tool that still exists in this version.
+const TAB_CODEC: Codec<AppTab> = {
+  save: (t) => t,
+  load: (raw) => (typeof raw === "string" && raw in TOOL_HEX ? (raw as AppTab) : undefined),
+};
+
 export default function App() {
-  const [tab, setTab] = useState<AppTab>("home");
+  // Reopens on the tool that was open last (entries are kept per tool).
+  const [tab, setTab] = usePersist<AppTab>("app", "tab", "home", TAB_CODEC);
+  // Bumped by "New patient" to remount the open tool with empty entries.
+  const [resetKey, setResetKey] = useState(0);
+  const clearable = !["home", "saved", "report", "timer"].includes(tab);
   const [menuOpen, setMenuOpen] = useState(false);
   useSyncExternalStore(subscribe, getVersion);
   const profile = getCurrentProfile();
@@ -232,6 +243,23 @@ export default function App() {
 
       <main className={`tool-stage tool-${tab} flex-1`}>
         <ToolIcon id={tab} className="tool-watermark" strokeWidth={1} style={{ color: TOOL_HEX[tab] }} />
+        {clearable && (
+          <div className="mx-auto -mb-3 flex max-w-4xl justify-end px-3 pt-3">
+            <button
+              type="button"
+              onClick={() => {
+                if (window.confirm("Clear all entries in this tool for a new patient?")) {
+                  clearLast(tab);
+                  setResetKey((k) => k + 1);
+                }
+              }}
+              className="rounded-lg border-2 border-slate-300 bg-white px-3 py-1.5 text-xs font-extrabold text-slate-800"
+            >
+              ↺ New patient
+            </button>
+          </div>
+        )}
+        <Fragment key={resetKey}>
         {tab === "home" && <HomeScreen onOpen={(t) => setTab(t)} />}
         {tab === "saved" && <SavedScreen />}
         {tab === "pedDose" && <PediatricDosageCalculator />}
@@ -247,6 +275,7 @@ export default function App() {
         {tab === "ob" && <ObCalculator />}
         {tab === "timer" && <TimerTool />}
         {tab === "report" && <ReportIssue />}
+        </Fragment>
       </main>
 
       <footer className="border-t border-[var(--line)] bg-[var(--card)] px-3 py-4 text-center text-xs leading-relaxed text-[var(--muted)] md:px-6">

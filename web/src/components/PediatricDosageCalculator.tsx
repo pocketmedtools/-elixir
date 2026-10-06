@@ -1,10 +1,12 @@
 import { useMemo, useState } from "react";
+import { usePersist, type Codec } from "../lib/lastState";
 import {
   brandsForDrug,
   dosesPerDayFromFrequency,
   mlToDrops,
   searchPediatricDrugs,
   type DrugFormulation,
+  pediatricDrugsDB,
   type PediatricDrug,
 } from "../data/pediatricDrugs";
 import SaveButton from "./SaveButton";
@@ -20,21 +22,39 @@ import {
 
 type AgeUnit = "years" | "months" | "days" | "hours";
 
+// Remember the chosen drug and strength by id/label, so a reopen always uses
+// the current drug data rather than an old saved copy.
+const drugById = (id: unknown) => pediatricDrugsDB.find((d) => d.id === id);
+const DRUG_CODEC: Codec<PediatricDrug | null> = {
+  save: (d) => d?.id ?? null,
+  load: (id) => drugById(id) ?? null,
+};
+const FORM_CODEC: Codec<DrugFormulation | null> = {
+  save: (f) => {
+    const d = f && pediatricDrugsDB.find((x) => x.formulations.includes(f));
+    return d && f ? { drug: d.id, label: f.strengthLabel } : null;
+  },
+  load: (raw) => {
+    const r = raw as { drug?: string; label?: string } | null;
+    return drugById(r?.drug)?.formulations.find((f) => f.strengthLabel === r?.label) ?? null;
+  },
+};
+
 export default function PediatricDosageCalculator() {
   // Start empty: a pre-filled sample child (3 y, 14 kg) risked doses for a
   // patient who doesn't exist if the user forgot to change it.
-  const [ageValue, setAgeValue] = useState<number | "">("");
-  const [ageUnit, setAgeUnit] = useState<AgeUnit>("years");
-  const [agePlusMonths, setAgePlusMonths] = useState<number | "">(0);
-  const [weight, setWeight] = useState<number | "">("");
-  const [creatinine, setCreatinine] = useState<number | "">("");
-  const [heightCm, setHeightCm] = useState<number | "">("");
+  const [ageValue, setAgeValue] = usePersist<number | "">("pedDose", "ageValue", "");
+  const [ageUnit, setAgeUnit] = usePersist<AgeUnit>("pedDose", "ageUnit", "years");
+  const [agePlusMonths, setAgePlusMonths] = usePersist<number | "">("pedDose", "agePlusMonths", 0);
+  const [weight, setWeight] = usePersist<number | "">("pedDose", "weight", "");
+  const [creatinine, setCreatinine] = usePersist<number | "">("pedDose", "creatinine", "");
+  const [heightCm, setHeightCm] = usePersist<number | "">("pedDose", "heightCm", "");
   const [searchQuery, setSearchQuery] = useState("");
-  const [selectedDrug, setSelectedDrug] = useState<PediatricDrug | null>(null);
-  const [selectedFormulation, setSelectedFormulation] = useState<DrugFormulation | null>(null);
-  const [targetMgPerKgDay, setTargetMgPerKgDay] = useState<number | "">("");
-  const [frequency, setFrequency] = useState("q12h");
-  const [dehydration, setDehydration] = useState<DehydrationLevel | "">("");
+  const [selectedDrug, setSelectedDrug] = usePersist<PediatricDrug | null>("pedDose", "drug", null, DRUG_CODEC);
+  const [selectedFormulation, setSelectedFormulation] = usePersist<DrugFormulation | null>("pedDose", "formulation", null, FORM_CODEC);
+  const [targetMgPerKgDay, setTargetMgPerKgDay] = usePersist<number | "">("pedDose", "targetMgPerKgDay", "");
+  const [frequency, setFrequency] = usePersist("pedDose", "frequency", "q12h");
+  const [dehydration, setDehydration] = usePersist<DehydrationLevel | "">("pedDose", "dehydration", "");
 
   const filteredDrugs = useMemo(
     () => searchPediatricDrugs(searchQuery).slice(0, 40),

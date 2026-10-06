@@ -1,4 +1,5 @@
-import { useMemo, useState } from "react";
+import { useMemo } from "react";
+import { usePersist } from "../lib/lastState";
 import {
   REGIMEN_LABELS,
   basalTitration,
@@ -38,15 +39,15 @@ const seg = (active: boolean) =>
   }`;
 
 export default function InsulinTool() {
-  const [setting, setSetting] = useState<Setting>("adult");
-  const [mode, setMode] = useState<"opd" | "infusion">("opd");
-  const [dm, setDm] = useState<DmType>("t2");
-  const [regimen, setRegimen] = useState<Regimen>("basal");
-  const [weight, setWeight] = useState<number | "">("");
-  const [fbs, setFbs] = useState<number | "">("");
-  const [ppbs, setPpbs] = useState<number | "">("");
-  const [grbs, setGrbs] = useState<number | "">("");
-  const [egfrLow, setEgfrLow] = useState(false);
+  const [setting, setSetting] = usePersist<Setting>("insulin", "setting", "adult");
+  const [mode, setMode] = usePersist<"opd" | "infusion">("insulin", "mode", "opd");
+  const [dm, setDm] = usePersist<DmType>("insulin", "dm", "t2");
+  const [regimen, setRegimen] = usePersist<Regimen>("insulin", "regimen", "basal");
+  const [weight, setWeight] = usePersist<number | "">("insulin", "weight", "");
+  const [fbs, setFbs] = usePersist<number | "">("insulin", "fbs", "");
+  const [ppbs, setPpbs] = usePersist<number | "">("insulin", "ppbs", "");
+  const [grbs, setGrbs] = usePersist<number | "">("insulin", "grbs", "");
+  const [egfrLow, setEgfrLow] = usePersist("insulin", "egfrLow", false);
 
   const w = weight === "" ? null : Number(weight);
 

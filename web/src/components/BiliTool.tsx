@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { usePersist } from "../lib/lastState";
 import {
   assessBili,
   assessTcb,
@@ -121,25 +121,25 @@ function Chart({
 export default function BiliTool() {
   // Gestation as completed weeks + days (e.g. 38+4). Both AAP and NICE
   // thresholds are set by completed weeks, so days never change the table.
-  const [ga, setGa] = useState(39);
-  const [gaDays, setGaDays] = useState(0);
+  const [ga, setGa] = usePersist("bili", "ga", 39);
+  const [gaDays, setGaDays] = usePersist("bili", "gaDays", 0);
   // Risk status must be chosen explicitly (AAP): null until the user picks.
-  const [riskMode, setRiskMode] = useState<"none" | "with" | null>(null);
-  const [age, setAge] = useState("");
-  const [ageUnit, setAgeUnit] = useState<"hours" | "days" | "birth">("hours");
-  const [plusH, setPlusH] = useState("");
-  const [birthAt, setBirthAt] = useState("");
-  const [sampleAt, setSampleAt] = useState(nowLocal);
-  const [bili, setBili] = useState("");
-  const [unit, setUnit] = useState<BiliUnit>("mgdl");
-  const [isTcb, setIsTcb] = useState(false);
-  const [onPhoto, setOnPhoto] = useState(false);
-  const [rf, setRf] = useState<boolean[]>([false, false, false, false]);
-  const [albumin, setAlbumin] = useState("");
-  const [prevBili, setPrevBili] = useState("");
-  const [prevAge, setPrevAge] = useState("");
+  const [riskMode, setRiskMode] = usePersist<"none" | "with" | null>("bili", "riskMode", null);
+  const [age, setAge] = usePersist("bili", "age", "");
+  const [ageUnit, setAgeUnit] = usePersist<"hours" | "days" | "birth">("bili", "ageUnit", "hours");
+  const [plusH, setPlusH] = usePersist("bili", "plusH", "");
+  const [birthAt, setBirthAt] = usePersist("bili", "birthAt", "");
+  const [sampleAt, setSampleAt] = usePersist("bili", "sampleAt", nowLocal);
+  const [bili, setBili] = usePersist("bili", "bili", "");
+  const [unit, setUnit] = usePersist<BiliUnit>("bili", "unit", "mgdl");
+  const [isTcb, setIsTcb] = usePersist("bili", "isTcb", false);
+  const [onPhoto, setOnPhoto] = usePersist("bili", "onPhoto", false);
+  const [rf, setRf] = usePersist<boolean[]>("bili", "rf", [false, false, false, false]);
+  const [albumin, setAlbumin] = usePersist("bili", "albumin", "");
+  const [prevBili, setPrevBili] = usePersist("bili", "prevBili", "");
+  const [prevAge, setPrevAge] = usePersist("bili", "prevAge", "");
 
-  const [guideline, setGuideline] = useState<"aap" | "nice">("aap");
+  const [guideline, setGuideline] = usePersist<"aap" | "nice">("bili", "guideline", "aap");
   const isAap = guideline === "aap";
   // AAP 2022 covers ≥ 35 weeks only; NICE CG98 covers every gestation.
   const aapOutOfRange = isAap && ga < 35;

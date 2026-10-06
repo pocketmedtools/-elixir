@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { usePersist } from "../lib/lastState";
 import {
   assessNewbornWeight,
   plausibleNewbornGrams,
@@ -33,11 +33,11 @@ function fmtKg(g: number): string {
 }
 
 export default function NewbornWeightLoss() {
-  const [birth, setBirth] = useState("");
-  const [today, setToday] = useState("");
-  const [unit, setUnit] = useState<WtUnit>("kg");
-  const [age, setAge] = useState("");
-  const [ageUnit, setAgeUnit] = useState<"hours" | "days">("hours");
+  const [birth, setBirth] = usePersist("nbWeight", "birth", "");
+  const [today, setToday] = usePersist("nbWeight", "today", "");
+  const [unit, setUnit] = usePersist<WtUnit>("nbWeight", "unit", "kg");
+  const [age, setAge] = usePersist("nbWeight", "age", "");
+  const [ageUnit, setAgeUnit] = usePersist<"hours" | "days">("nbWeight", "ageUnit", "hours");
 
   const bG = toGrams(birth, unit);
   const tG = toGrams(today, unit);
