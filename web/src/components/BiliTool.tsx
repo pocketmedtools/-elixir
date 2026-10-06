@@ -1,4 +1,5 @@
 import { usePersist } from "../lib/lastState";
+import { DateTimeDMY } from "./DateDMY";
 import {
   assessBili,
   assessTcb,
@@ -283,14 +284,14 @@ export default function BiliTool() {
         </div>
 
         {ageUnit === "birth" && (
-          <div className="grid grid-cols-2 gap-3">
+          <div className="grid gap-3">
             <label className="block text-xs font-bold text-slate-700">
               Born at
-              <input type="datetime-local" value={birthAt} onChange={(e) => setBirthAt(e.target.value)} className={`mt-1 ${field} text-sm`} />
+              <div className="mt-1"><DateTimeDMY value={birthAt} onChange={setBirthAt} label="Born at" /></div>
             </label>
             <label className="block text-xs font-bold text-slate-700">
               Sample at
-              <input type="datetime-local" value={sampleAt} onChange={(e) => setSampleAt(e.target.value)} className={`mt-1 ${field} text-sm`} />
+              <div className="mt-1"><DateTimeDMY value={sampleAt} onChange={setSampleAt} label="Sample at" /></div>
             </label>
             {ageHours != null && (
               <p className="col-span-2 text-sm font-bold text-slate-900">Age at sample: {ageHours} h</p>

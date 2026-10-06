@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import DateDMY from "./DateDMY";
 import { usePersist } from "../lib/lastState";
 import { format12h, hoursOfLife, localDateTime, type AmPm } from "../lib/holMath";
 import SaveButton from "./SaveButton";
@@ -31,8 +32,7 @@ function DateTime12({
   return (
     <fieldset className="space-y-2">
       <legend className="text-xs font-bold text-slate-700">{label}</legend>
-      <input id={`${id}-date`} type="date" value={date} onChange={(e) => setDate(e.target.value)}
-        className={`${sel} w-full`} aria-label={`${label} date`} />
+      <DateDMY value={date} onChange={setDate} label={`${label} date`} />
       <div className="flex items-center gap-1.5">
         <select id={`${id}-hour`} value={hour} onChange={(e) => setHour(e.target.value)} className={`${sel} flex-1`} aria-label={`${label} hour`}>
           <option value="">hh</option>

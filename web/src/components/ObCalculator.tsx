@@ -1,4 +1,5 @@
 import { useMemo, useState } from "react";
+import DateDMY from "./DateDMY";
 import { usePersist } from "../lib/lastState";
 import { searchDrugs } from "../clinical/clinicalData";
 import { estimateCrCl } from "../lib/creatinineClearanceMath";
@@ -147,7 +148,7 @@ export default function ObCalculator() {
         )}
 
         <div className="mt-4 grid grid-cols-1 gap-3 sm:grid-cols-2">
-          <label className="block">
+          <div className="block">
             <span className="text-xs font-semibold text-slate-600">
               {method === "scan"
                 ? scanMode === "edd"
@@ -155,13 +156,14 @@ export default function ObCalculator() {
                   : "Scan date"
                 : active.dateLabel}
             </span>
-            <input
-              type="date"
-              value={dateStr}
-              onChange={(e) => setDateStr(e.target.value)}
-              className="mt-1 w-full rounded-lg border border-slate-200 px-3 py-2.5 text-base outline-none focus:ring-2 focus:ring-fuchsia-500"
-            />
-          </label>
+            <div className="mt-1">
+              <DateDMY
+                value={dateStr}
+                onChange={setDateStr}
+                label={method === "scan" ? (scanMode === "edd" ? "EDD on scan report" : "Scan date") : active.dateLabel}
+              />
+            </div>
+          </div>
           {method === "scan" && scanMode === "ga" && (
             <>
               <div className="grid grid-cols-2 gap-3">
@@ -184,17 +186,14 @@ export default function ObCalculator() {
                   />
                 </label>
               </div>
-              <label className="block">
+              <div className="block">
                 <span className="text-xs font-semibold text-slate-600">
                   LMP date (optional — to compare with the scan)
                 </span>
-                <input
-                  type="date"
-                  value={lmpCompare}
-                  onChange={(e) => setLmpCompare(e.target.value)}
-                  className="mt-1 w-full rounded-lg border border-slate-200 px-3 py-2.5 text-base outline-none focus:ring-2 focus:ring-slate-500"
-                />
-              </label>
+                <div className="mt-1">
+                  <DateDMY value={lmpCompare} onChange={setLmpCompare} label="LMP date to compare" />
+                </div>
+              </div>
             </>
           )}
           {method === "lmp" && (

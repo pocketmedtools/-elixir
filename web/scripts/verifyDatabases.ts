@@ -1579,6 +1579,19 @@ section("Pediatric DB integrity");
   console.log("remembered entries: type checks on restore OK");
 }
 
+// ---------- Day/month/year date entry ----------
+{
+  console.log("\n=== Date entry (DD/MM/YYYY) suite ===");
+  const { isoFromParts } = await import("../src/components/DateDMY");
+  const cases: [string, string, string, string][] = [
+    ["10", "1", "2026", "2026-01-10"], ["1", "10", "2026", "2026-10-01"], ["31", "12", "2025", "2025-12-31"],
+    ["29", "2", "2024", "2024-02-29"], ["29", "2", "2026", ""], ["31", "4", "2026", ""], ["0", "5", "2026", ""],
+    ["12", "13", "2026", ""], ["5", "5", "26", ""], ["", "5", "2026", ""], ["15", "08", "1899", ""],
+  ];
+  for (const [d, m, y, want] of cases) if (isoFromParts(d, m, y) !== want) fail(`date entry ${d}/${m}/${y} should be "${want}"`);
+  console.log("date entry: day-first order, leap years, impossible dates rejected OK");
+}
+
 // ---------- Result ----------
 console.log("\n========== VERIFY RESULT ==========");
 if (failures.length) {
