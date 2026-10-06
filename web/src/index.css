@@ -206,6 +206,7 @@ input, select, textarea { background-color: #fffaf1; color: var(--ink); }
 .tool-nbWeight { --tool-ink: #3f2810; }
 .tool-bili     { --tool-ink: #713e00; }
 .tool-ob       { --tool-ink: #700168; }
+.tool-timer    { --tool-ink: #234f1e; }
 .tool-saved    { --tool-ink: #3a3733; }
 .tool-report   { --tool-ink: #7e2f01; }
 .tool-stage h2.text-xl { color: var(--tool-ink, var(--ink)); }

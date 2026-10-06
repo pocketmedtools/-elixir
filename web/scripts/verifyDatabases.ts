@@ -1529,6 +1529,44 @@ section("Pediatric DB integrity");
   console.log("hours of life: AM/PM conversion, midnight/noon, day of life and future-time guard OK");
 }
 
+// ---------- Timer / stopwatch ----------
+{
+  console.log("\n=== Timer / stopwatch suite ===");
+  const T = await import("../src/lib/timerMath");
+  const t0 = 1_000_000;
+  // Countdown 10 min: start, pause at 3 min, resume 1 min later, end exactly on time.
+  let c = T.newCountdown(T.hmToMs(0, 10));
+  if (T.formatCountdown(T.cdRemaining(c, t0)) !== "00:10:00") fail("timer: idle should show 00:10:00");
+  c = T.cdStart(c, t0);
+  if (T.cdRemaining(c, t0 + 180000) !== 420000) fail("timer: 7 min left after 3 min");
+  c = T.cdPause(c, t0 + 180000);
+  if (c.status !== "paused" || T.cdRemaining(c, t0 + 999999) !== 420000) fail("timer: paused time must not move");
+  c = T.cdStart(c, t0 + 240000);
+  if (T.cdTick(c, t0 + 659999).status !== "running") fail("timer: must still run 1 ms before the end");
+  c = T.cdTick(c, t0 + 660000);
+  if (c.status !== "done" || T.cdRemaining(c, t0 + 660000) !== 0) fail("timer: must finish at 10 min of running time");
+  if (Math.abs(T.cdFraction(T.cdStart(T.newCountdown(600000), 0), 150000) - 0.75) > 1e-9) fail("timer: dial fraction wrong");
+  // +1 min: running extends, done restarts at 1 min.
+  const r = T.cdAdd(T.cdStart(T.newCountdown(60000), 0), 60000, 30000);
+  if (T.cdRemaining(r, 30000) !== 90000) fail("timer: +1 min while running");
+  const d = T.cdAdd(c, 60000, t0 + 700000);
+  if (d.status !== "running" || T.cdRemaining(d, t0 + 700000) !== 60000) fail("timer: +1 min after finish");
+  if (T.hmToMs(23, 59) !== T.MAX_TIMER_MS || T.hmToMs(30, 0) !== T.MAX_TIMER_MS || T.hmToMs(-1, 5) !== 300000) fail("timer: hh/mm limits");
+  if (T.formatCountdown(1) !== "00:00:01" || T.formatCountdown(3600000 + 61000) !== "01:01:01") fail("timer: display rounding");
+  if (T.cdStart(T.newCountdown(0), 0).status !== "idle") fail("timer: 0 min must not start");
+  // Stopwatch: two runs around a pause, laps, display.
+  let s = T.swStart(T.newStopwatch(), t0);
+  s = T.swLap(s, t0 + 12_300);
+  s = T.swPause(s, t0 + 20_000);
+  if (T.swElapsed(s, t0 + 500_000) !== 20_000) fail("stopwatch: paused must hold");
+  s = T.swStart(s, t0 + 30_000);
+  s = T.swLap(s, t0 + 35_000);
+  if (s.laps.join() !== "12300,25000" || T.swElapsed(s, t0 + 40_000) !== 30_000) fail("stopwatch: laps / elapsed");
+  if (T.formatStopwatch(65_430) !== "01:05.4" || T.formatStopwatch(3_725_000) !== "1:02:05.0") fail("stopwatch: display");
+  if (T.swElapsed(T.swReset(), t0) !== 0) fail("stopwatch: reset");
+  console.log("timer: start/pause/resume/finish, +1 min, limits, display; stopwatch: pause, laps, display OK");
+}
+
 // ---------- Result ----------
 console.log("\n========== VERIFY RESULT ==========");
 if (failures.length) {
