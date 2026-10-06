@@ -36,6 +36,7 @@ import type { StudyView } from "./StudyModule";
 import {} from "./ui";
 import { colorVars } from "../lib/hues";
 import DailyTopicCard from "./DailyTopicCard";
+import { UpdateStatusLine } from "./UpdateBanner";
 
 const SECTIONS: {
   id: string;
@@ -136,6 +137,7 @@ export default function StudyHome({ onGo }: { onGo: (view: StudyView) => void })
         >
           FAMILY MEDICINE EXAM PREPARATION
         </h1>
+        <UpdateStatusLine className="mt-1" />
       </header>
 
       <button

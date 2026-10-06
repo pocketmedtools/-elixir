@@ -1,71 +1,66 @@
 /**
- * Keeps every installed copy of FM Prep current.
+ * Keeps every installed copy of FM Prep current, with no APK to download.
  *
- * Each build publishes version.json and the web app as a zip. When the app
- * opens (or comes back to the front) it reads version.json; a newer build is
- * downloaded in the background and switched to automatically the next time
- * the app is left, or at once from the banner - no new APK, nothing to
- * install. Documents, folders, reading positions and progress stay.
- *
- * Only when the native shell itself changed (or this APK predates live
- * updates) does the banner fall back to offering the APK download.
+ * The check runs when the app opens, whenever it comes back to the front, and
+ * every half hour while open. A newer build is downloaded and switched to at
+ * once (src/lib/liveUpdate.ts); the banner shows the progress. Only when the
+ * native shell itself changed does it fall back to offering the APK.
  */
-import { useEffect, useState } from "react";
-import {
-  applyNow,
-  fetchRemoteVersion,
-  hasLiveUpdates,
-  nativeBuild,
-  prepareUpdate,
-} from "../lib/liveUpdate";
+import { useEffect, useState, useSyncExternalStore } from "react";
+import { checkForUpdate, subscribeUpdate, updateState, type UpdateState } from "../lib/liveUpdate";
 
 /** This build's number, set by the Android workflow; "dev" anywhere else. */
 export const APP_BUILD: string = (import.meta.env.VITE_BUILD as string | undefined) ?? "dev";
 
 const APK_URL = "https://github.com/pocketmedtools/-elixir/releases/download/fmprep-apk-latest/FM-Prep.apk";
-/** Checked at most this often while the app stays open. */
 const EVERY_MS = 30 * 60 * 1000;
 
-type Offer = { kind: "apk" } | { kind: "ready"; id: string };
+export function useUpdateState(): UpdateState {
+  return useSyncExternalStore(subscribeUpdate, updateState);
+}
+
+/** One line for the footer: what the updater last did. */
+export function updateLine(s: UpdateState): string {
+  switch (s.step) {
+    case "checking":
+      return "Checking for updates…";
+    case "latest":
+      return "Up to date";
+    case "downloading":
+      return `Downloading version ${s.build}… ${s.percent}%`;
+    case "applying":
+      return `Installing version ${s.build}…`;
+    case "needs-apk":
+      return `Version ${s.build} needs the new APK`;
+    case "failed":
+      return `Update failed: ${s.message.slice(0, 120)}`;
+    default:
+      return "";
+  }
+}
 
 export default function UpdateBanner({ native }: { native: boolean }) {
-  const [offer, setOffer] = useState<Offer | null>(null);
+  const s = useUpdateState();
   const [hidden, setHidden] = useState(false);
-  const [applying, setApplying] = useState(false);
   const current = Number(APP_BUILD);
 
   useEffect(() => {
     if (!native || !Number.isFinite(current)) return;
-    let last = 0;
-    const check = async () => {
-      if (Date.now() - last < 60_000) return;
-      last = Date.now();
-      const remote = await fetchRemoteVersion();
-      if (!remote || typeof remote.build !== "number" || remote.build <= current) return;
-      const shell = await nativeBuild();
-      const shellOk =
-        hasLiveUpdates() && !!remote.web && (!remote.minNative || (Number.isFinite(shell) && shell >= remote.minNative));
-      if (!shellOk) {
-        setOffer({ kind: "apk" });
-        return;
-      }
-      const id = await prepareUpdate(remote);
-      if (id) setOffer({ kind: "ready", id });
-    };
-    void check();
+    const t = window.setTimeout(() => void checkForUpdate(current), 1500);
     const onVisible = () => {
-      if (document.visibilityState === "visible") void check();
+      if (document.visibilityState === "visible") void checkForUpdate(current);
     };
     document.addEventListener("visibilitychange", onVisible);
-    const timer = window.setInterval(() => void check(), EVERY_MS);
+    const timer = window.setInterval(() => void checkForUpdate(current), EVERY_MS);
     return () => {
+      window.clearTimeout(t);
       document.removeEventListener("visibilitychange", onVisible);
       window.clearInterval(timer);
     };
   }, [native, current]);
 
-  if (!offer || hidden) return null;
-  const ready = offer.kind === "ready";
+  const show = s.step === "downloading" || s.step === "applying" || s.step === "needs-apk";
+  if (!show || hidden) return null;
   return (
     <div className="px-3 pt-2 md:px-6" style={{ background: "var(--bg)" }}>
       <div
@@ -74,39 +69,60 @@ export default function UpdateBanner({ native }: { native: boolean }) {
         role="status"
       >
         <p className="min-w-0 flex-1 text-[14px] font-semibold leading-snug">
-          {ready ? "New version downloaded." : "A new version of FM Prep is ready."}
+          {s.step === "needs-apk" ? "A new version of FM Prep is ready." : updateLine(s)}
           <span className="block text-[12px] font-normal opacity-90">
-            {ready
-              ? "It switches on by itself when you leave the app. Your documents and progress stay."
-              : "Your documents and progress stay as they are."}
+            {s.step === "needs-apk"
+              ? "This one needs the new app file. Your documents and progress stay."
+              : "Updating by itself - your place, documents and progress stay."}
           </span>
         </p>
-        <button
-          type="button"
-          disabled={applying}
-          onClick={() => {
-            if (offer.kind === "ready") {
-              setApplying(true);
-              void applyNow(offer.id).catch(() => setApplying(false));
-              return;
-            }
-            const w = window.open(APK_URL, "_blank");
-            if (!w) window.location.href = APK_URL;
-          }}
-          className="shrink-0 rounded-lg px-3 py-2 text-[13px] font-bold"
-          style={{ background: "#fcf4e6", color: "#14532d" }}
-        >
-          {ready ? (applying ? "Updating…" : "Update now") : "Update now"}
-        </button>
-        <button
-          type="button"
-          onClick={() => setHidden(true)}
-          aria-label="Later"
-          className="shrink-0 text-[12px] font-semibold underline opacity-90"
-        >
-          Later
-        </button>
+        {s.step === "needs-apk" && (
+          <>
+            <button
+              type="button"
+              onClick={() => {
+                const w = window.open(APK_URL, "_blank");
+                if (!w) window.location.href = APK_URL;
+              }}
+              className="shrink-0 rounded-lg px-3 py-2 text-[13px] font-bold"
+              style={{ background: "#fcf4e6", color: "#14532d" }}
+            >
+              Update now
+            </button>
+            <button
+              type="button"
+              onClick={() => setHidden(true)}
+              aria-label="Later"
+              className="shrink-0 text-[12px] font-semibold underline opacity-90"
+            >
+              Later
+            </button>
+          </>
+        )}
       </div>
+    </div>
+  );
+}
+
+/** "Version 228 · Up to date · Check now", for the home page and footer. */
+export function UpdateStatusLine({ className = "" }: { className?: string }) {
+  const s = useUpdateState();
+  const native = Boolean(
+    (globalThis as { Capacitor?: { isNativePlatform?: () => boolean } }).Capacitor?.isNativePlatform?.(),
+  );
+  if (!native) return null;
+  const line = updateLine(s);
+  return (
+    <div className={`text-[12px] text-slate-500 ${className}`}>
+      Version {APP_BUILD}
+      {line ? ` · ${line}` : ""} ·{" "}
+      <button
+        type="button"
+        onClick={() => void checkForUpdate(Number(APP_BUILD), true)}
+        className="font-semibold underline"
+      >
+        Check now
+      </button>
     </div>
   );
 }

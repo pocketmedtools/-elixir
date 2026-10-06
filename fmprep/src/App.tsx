@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import StudyModule from "./components/StudyModule";
 import { dressNativeShell } from "./lib/nativeShell";
 import { armDailyTopic } from "./lib/dailyTopic";
-import UpdateBanner, { APP_BUILD } from "./components/UpdateBanner";
+import UpdateBanner, { UpdateStatusLine } from "./components/UpdateBanner";
 
 /**
  * FM Prep — the Family Medicine exam app.
@@ -127,7 +127,7 @@ export default function App() {
         training. Verify every dose and every guideline against a current primary source before you
         act on it clinically. Examination logistics change: confirm papers, marks and dates against
         the current NBEMS information bulletin.
-        {isNative && <span className="mt-1 block opacity-80">App version {APP_BUILD}</span>}
+        <UpdateStatusLine className="mt-1" />
       </footer>
     </div>
   );
