@@ -4,13 +4,21 @@ import {
 } from "../lib/timerMath";
 import { getTimer, subscribeTimer, timerActions, type TimerMode } from "../lib/timerStore";
 
-const GREEN = "#116f39";
-const GREEN_DARK = "#0b4d27";
-const GREEN_PALE = "#e3efe6";
-const TRACK = "#e3cda8";
-const INK = "#1c1b19";
-const MUTED = "#6d6b67";
-const MAROON = "#85282f";
+// Watch-face palette: deep navy face, warm gold bezel, bright rings. Every
+// pairing is high contrast (white/amber/teal on navy).
+const FACE = "#132238";
+const FACE_EDGE = "#0b1626";
+const BEZEL = "#c9a24d";
+const TRACK = "#25385a";
+const TICK = "#7f93b2";
+const TICK_MAJOR = "#e6ecf5";
+const TEXT = "#ffffff";
+const SUB = "#a9b8cf";
+const AMBER = "#f5b83d";
+const ORANGE = "#f07c3a";
+const TEAL = "#2dd4bf";
+const SKY = "#38bdf8";
+const CORAL = "#ff6b6b";
 
 const CX = 170;
 const CY = 170;
@@ -41,50 +49,67 @@ function Dial({
   small: string;
   alert: boolean;
 }) {
-  // A slim progress ring with clear space on both sides, so the green reads
-  // as its own band rather than merging into the face or the tick border.
   const R = 112;
   const [hx, hy] = polar(hand, R);
   const span = greenTo - greenFrom;
-  const ringColor = alert ? MAROON : GREEN;
+  // Timer: amber→orange, turning coral in the last 10 % and at time-up.
+  // Stopwatch: teal→sky, with an amber inner arc for the minutes.
+  const urgent = mode === "timer" && !alert && span > 0 && span <= 36;
+  const ring = alert || urgent ? CORAL : `url(#pm-ring-${mode})`;
   return (
     <svg viewBox="0 0 340 340" className="mx-auto w-full max-w-[20rem]" role="img" aria-label={`${small} ${big}`}>
-      <circle cx={CX} cy={CY} r="150" fill="#fcf4e6" stroke={TRACK} strokeWidth="1.5" />
+      <defs>
+        <linearGradient id="pm-ring-timer" gradientUnits="userSpaceOnUse" x1="60" y1="40" x2="280" y2="300">
+          <stop offset="0" stopColor={AMBER} />
+          <stop offset="1" stopColor={ORANGE} />
+        </linearGradient>
+        <linearGradient id="pm-ring-stopwatch" gradientUnits="userSpaceOnUse" x1="60" y1="40" x2="280" y2="300">
+          <stop offset="0" stopColor={TEAL} />
+          <stop offset="1" stopColor={SKY} />
+        </linearGradient>
+        <radialGradient id="pm-face" cx="50%" cy="42%" r="60%">
+          <stop offset="0" stopColor="#1c3150" />
+          <stop offset="1" stopColor={FACE} />
+        </radialGradient>
+      </defs>
+      <circle cx={CX} cy={CY} r="162" fill={FACE_EDGE} />
+      <circle cx={CX} cy={CY} r="156" fill="url(#pm-face)" stroke={BEZEL} strokeWidth="3" />
       {Array.from({ length: 60 }, (_, i) => {
         const major = i % 5 === 0;
-        const [x1, y1] = polar(i * 6, major ? 136 : 140);
+        const [x1, y1] = polar(i * 6, major ? 134 : 139);
         const [x2, y2] = polar(i * 6, 145);
-        return <line key={i} x1={x1} y1={y1} x2={x2} y2={y2} stroke={MUTED} strokeWidth={major ? 2 : 1} />;
+        return <line key={i} x1={x1} y1={y1} x2={x2} y2={y2} stroke={major ? TICK_MAJOR : TICK} strokeWidth={major ? 2.4 : 1} strokeLinecap="round" />;
       })}
       {mode === "stopwatch" &&
         Array.from({ length: 12 }, (_, i) => {
-          const [x, y] = polar(i * 30, 160);
+          const [x, y] = polar(i * 30, 124);
           return (
-            <text key={i} x={x} y={y + 4} textAnchor="middle" fontSize="11" fontWeight="700" fill="#3a3733">
+            <text key={i} x={x} y={y + 4} textAnchor="middle" fontSize="10" fontWeight="700" fill={SUB}>
               {i * 5}
             </text>
           );
         })}
-      {/* track + green progress */}
-      <circle cx={CX} cy={CY} r={R} fill="none" stroke={alert ? "#f1dcdc" : GREEN_PALE} strokeWidth="10" />
+      <circle cx={CX} cy={CY} r={mode === "stopwatch" ? 102 : R} fill="none" stroke={TRACK} strokeWidth="10" />
       {span >= 359.9 ? (
-        <circle cx={CX} cy={CY} r={R} fill="none" stroke={ringColor} strokeWidth="10" />
+        <circle cx={CX} cy={CY} r={mode === "stopwatch" ? 102 : R} fill="none" stroke={ring} strokeWidth="10" />
       ) : (
-        <path d={arc(greenFrom, greenTo, R)} fill="none" stroke={ringColor} strokeWidth="10" strokeLinecap="round" />
+        <path d={arc(greenFrom, greenTo, mode === "stopwatch" ? 102 : R)} fill="none" stroke={ring} strokeWidth="10" strokeLinecap="round" />
       )}
-      {/* stopwatch: thin inner arc for minutes of the hour */}
       {outer != null && (
         <>
-          <circle cx={CX} cy={CY} r="96" fill="none" stroke={TRACK} strokeWidth="2" />
-          <path d={arc(0, outer, 96)} fill="none" stroke={GREEN_DARK} strokeWidth="3" strokeLinecap="round" />
+          <circle cx={CX} cy={CY} r="86" fill="none" stroke={TRACK} strokeWidth="3" />
+          <path d={arc(0, outer, 86)} fill="none" stroke={AMBER} strokeWidth="3" strokeLinecap="round" />
         </>
       )}
-      {!alert && <circle cx={hx} cy={hy} r="8" fill="#ffffff" stroke={INK} strokeWidth="3" />}
-      <text x={CX} y={CY + 8} textAnchor="middle" fontSize={big.length > 8 ? 30 : 34} fontWeight="900" fill={alert ? MAROON : INK}
+      {!alert && (() => {
+        const [kx, ky] = mode === "stopwatch" ? polar(hand, 102) : [hx, hy];
+        return <circle cx={kx} cy={ky} r="8" fill={TEXT} stroke={FACE} strokeWidth="3" />;
+      })()}
+      <text x={CX} y={CY + 8} textAnchor="middle" fontSize={big.length > 8 ? 28 : 32} fontWeight="900" fill={alert ? CORAL : TEXT}
         style={{ fontVariantNumeric: "tabular-nums" }}>
         {big}
       </text>
-      <text x={CX} y={CY + 32} textAnchor="middle" fontSize="11" fontWeight="800" fill={MUTED} letterSpacing="1.5">
+      <text x={CX} y={CY + 32} textAnchor="middle" fontSize="11" fontWeight="800" fill={alert ? CORAL : SUB} letterSpacing="1.5">
         {small}
       </text>
     </svg>
@@ -211,7 +236,7 @@ export default function TimerTool() {
                 <div className="flex flex-wrap gap-1.5">
                   {PRESETS.map((p) => (
                     <button key={p} type="button" onClick={() => timerActions.setLength(p * 60000)}
-                      className={`rounded-full border-2 px-3 py-1.5 text-sm font-extrabold ${totalMin === p ? "border-[#116f39] bg-[#116f39] text-white" : "border-slate-300 bg-white text-slate-800"}`}>
+                      className={`rounded-full border-2 px-3 py-1.5 text-sm font-extrabold ${totalMin === p ? "border-[#132238] bg-[#132238] text-[#f5b83d]" : "border-slate-300 bg-white text-slate-800"}`}>
                       {p === 60 ? "1 h" : `${p} min`}
                     </button>
                   ))}
@@ -226,10 +251,10 @@ export default function TimerTool() {
 
             <div className="mt-4 grid grid-cols-3 gap-2">
               {cd.status === "running" ? (
-                <button type="button" onClick={() => timerActions.pause()} className={`${btn} bg-[#9a5b00] text-white`}>Pause</button>
+                <button type="button" onClick={() => timerActions.pause()} className={`${btn} bg-[#f5b83d] text-[#132238]`}>Pause</button>
               ) : (
                 <button type="button" disabled={cd.status === "done" || cd.remainingMs <= 0}
-                  onClick={() => timerActions.start()} className={`${btn} bg-[#116f39] text-white`}>
+                  onClick={() => timerActions.start()} className={`${btn} bg-[#132238] text-white`}>
                   {cd.status === "paused" ? "Resume" : "Start"}
                 </button>
               )}
@@ -245,9 +270,9 @@ export default function TimerTool() {
           <>
             <div className="mt-4 grid grid-cols-2 gap-2">
               {sw.running ? (
-                <button type="button" onClick={() => timerActions.swPause()} className={`${btn} bg-[#9a5b00] text-white`}>Pause</button>
+                <button type="button" onClick={() => timerActions.swPause()} className={`${btn} bg-[#f5b83d] text-[#132238]`}>Pause</button>
               ) : (
-                <button type="button" onClick={() => timerActions.swStart()} className={`${btn} bg-[#116f39] text-white`}>
+                <button type="button" onClick={() => timerActions.swStart()} className={`${btn} bg-[#132238] text-white`}>
                   {swE > 0 ? "Resume" : "Start"}
                 </button>
               )}

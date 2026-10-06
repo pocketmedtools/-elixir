@@ -50,7 +50,7 @@ export const TOOL_BG: Record<MenuTarget, string> = {
   regimen: "bg-[#800000]",
   insulin: "bg-[#0f3460]",
   ob: "bg-[#700168]",
-  timer: "bg-[#234f1e]",
+  timer: "bg-[#132238]",
   saved: "bg-[#3a3733]",
   report: "bg-[#7e2f01]",
 };
@@ -87,7 +87,7 @@ export const TOOL_TEXT: Record<MenuTarget, string> = {
   regimen: "text-[#800000]",
   insulin: "text-[#0f3460]",
   ob: "text-[#700168]",
-  timer: "text-[#234f1e]",
+  timer: "text-[#132238]",
   saved: "text-[#3a3733]",
   report: "text-[#7e2f01]",
 };
@@ -105,7 +105,7 @@ export const TOOL_HEX: Record<MenuTarget, string> = {
   regimen: "#800000",
   insulin: "#0f3460",
   ob: "#700168",
-  timer: "#234f1e",
+  timer: "#132238",
   saved: "#3a3733",
   report: "#7e2f01",
 };
