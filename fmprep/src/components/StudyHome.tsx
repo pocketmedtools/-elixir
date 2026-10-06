@@ -35,6 +35,7 @@ import { currentStreak, getState, getVersion, subscribe } from "../lib/store";
 import type { StudyView } from "./StudyModule";
 import {} from "./ui";
 import { colorVars } from "../lib/hues";
+import DailyTopicCard from "./DailyTopicCard";
 
 const SECTIONS: {
   id: string;
@@ -165,6 +166,8 @@ export default function StudyHome({ onGo }: { onGo: (view: StudyView) => void })
           )}
         </div>
       )}
+
+      <DailyTopicCard onGo={onGo} />
 
       <section className="mt-6 grid gap-3.5 sm:grid-cols-2">
         {SECTIONS.map((s) => {

@@ -13,6 +13,7 @@ import type { SearchResult } from "../lib/search";
 import StudyHome from "./StudyHome";
 import ChartsScreen from "./ChartsScreen";
 import { onDailyChartTapped } from "../lib/dailyChart";
+import { onDailyTopicTapped } from "../lib/dailyTopic";
 import LibraryScreen from "./LibraryScreen";
 import SubjectScreen from "./SubjectScreen";
 import TopicReader from "./TopicReader";
@@ -164,6 +165,7 @@ export default function StudyModule() {
     void onDailyChartTapped((chartId) =>
       setStack((s) => [...s, { name: "charts", chartId }]),
     );
+    void onDailyTopicTapped((id) => setStack((s) => [...s, { name: "topic", id }]));
   }, []);
 
   const go = useCallback((next: StudyView) => setStack((s) => [...s, next]), []);

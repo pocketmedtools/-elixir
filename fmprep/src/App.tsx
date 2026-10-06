@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import StudyModule from "./components/StudyModule";
 import { dressNativeShell } from "./lib/nativeShell";
+import { armDailyTopic } from "./lib/dailyTopic";
 import UpdateBanner, { APP_BUILD } from "./components/UpdateBanner";
 
 /**
@@ -27,6 +28,25 @@ export default function App() {
   // The system splash is dismissed once this has painted, not on a timer.
   useEffect(() => {
     void dressNativeShell();
+  }, []);
+
+  // The daily-topic reminder is re-laid on every open (and on return to the
+  // app), so the next fortnight is always queued and follows what was read.
+  useEffect(() => {
+    if (!isNative) return;
+    let last = 0;
+    const arm = (ask: boolean) => {
+      if (Date.now() - last < 60_000) return;
+      last = Date.now();
+      void armDailyTopic(ask).catch(() => {});
+    };
+    const t = setTimeout(() => arm(true), 2500);
+    const onVis = () => document.visibilityState === "visible" && arm(false);
+    document.addEventListener("visibilitychange", onVis);
+    return () => {
+      clearTimeout(t);
+      document.removeEventListener("visibilitychange", onVis);
+    };
   }, []);
 
   return (

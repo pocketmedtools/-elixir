@@ -20,7 +20,6 @@ import {
   KIND_LABEL, type ChartEntry, type ChartKind,
 } from "../lib/chartIndex";
 import { colorVars } from "../lib/hues";
-import { armDailyChart } from "../lib/dailyChart";
 import { MANUAL_LINKS } from "../pyq/links";
 import type { Diagram } from "../lib/types";
 import DiagramBlock from "./DiagramBlock";
@@ -72,13 +71,6 @@ export default function ChartsScreen({
     [index, examWeight],
   );
 
-  /* Re-arm the fortnight of daily notifications whenever this screen is
-     opened with a full index. No-ops on the web, where a page cannot raise a
-     notification once its tab is closed. */
-  useEffect(() => {
-    if (!index.length) return;
-    void armDailyChart(index, examWeight);
-  }, [index, examWeight]);
 
   const counts = useMemo(() => {
     const c: Record<string, number> = {};
