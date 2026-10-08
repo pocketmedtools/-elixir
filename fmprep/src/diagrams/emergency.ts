@@ -334,13 +334,13 @@ const diagrams: DiagramSet = {
     {
       kind: "compare",
       heading: "Which fluid, and which never",
-      caption: "The choice of fluid changes kidney injury and death, not just the volume delivered. [SSC 2021]",
+      caption: "The choice of fluid changes kidney injury and death, not just the volume delivered. [SSC 2026]",
       columns: ["Fluid", "Place", "Reason"],
       rows: [
         ["Balanced crystalloid", "Preferred first choice", "Ringer lactate or Plasmalyte; electrolytes near plasma"],
         ["0.9% saline", "Acceptable, but not in large volume", "154 mmol/L chloride causes hyperchloraemic acidosis and kidney injury"],
         ["Starches", "Contraindicated", "More renal replacement therapy and more deaths"],
-        ["Albumin", "Not first-line", "No better than crystalloid and many times the cost"],
+        ["Albumin", "Not first-line, not routinely added", "Crystalloid alone is suggested over adding albumin; no better and many times the cost"],
       ],
     },
     {
@@ -391,7 +391,7 @@ const diagrams: DiagramSet = {
         {
           label: "Distributive",
           steps: [
-            "Septic: warm early and cold late - 30 mL/kg crystalloid, cultures, antibiotics within 1 hour",
+            "Septic: warm early and cold late - at least 30 mL/kg crystalloid, cultures, antibiotics within 1 hour",
             "Anaphylactic: warm and urticated with wheeze - adrenaline 0.5 mg IM and fluids",
             "Neurogenic: warm, dry and bradycardic - fluids then noradrenaline, atropine for the bradycardia",
           ],
@@ -441,7 +441,7 @@ const diagrams: DiagramSet = {
         {
           label: "Choose the fluid by the type of shock",
           detail:
-            "Septic 30 mL/kg over 3 h; haemorrhage 500 mL boluses while blood arrives; cardiogenic 250 mL only, stopping at the first crackle",
+            "Septic at least 30 mL/kg over 3 h; haemorrhage 500 mL boluses while blood arrives; cardiogenic 250 mL only, stopping at the first crackle",
           tone: "decision",
         },
         {
@@ -452,12 +452,12 @@ const diagrams: DiagramSet = {
         {
           label: "MAP still under 65: noradrenaline",
           detail:
-            "0.05-0.5 microgram/kg/min titrated to a mean arterial pressure of 65 mmHg; may run peripherally briefly while central access is arranged",
+            "0.05-0.5 microgram/kg/min titrated to a mean arterial pressure of 65 mmHg (60-65 if aged 65 or over); start peripherally rather than wait for central access",
         },
         {
           label: "Add an inotrope or steroid selectively",
           detail:
-            "Dobutamine 2.5-10 microgram/kg/min for low output despite filling; hydrocortisone 200 mg/day only if vasopressors persist",
+            "Dobutamine 2.5-10 microgram/kg/min for low output despite filling; hydrocortisone 200 mg/day suggested in septic shock still needing vasopressors",
         },
         {
           label: "Reassess every 15 minutes and escalate",

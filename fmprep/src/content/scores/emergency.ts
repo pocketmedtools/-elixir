@@ -32,12 +32,12 @@ const scores: Record<string, NoteTable[]> = {
       ],
     },
     {
-      heading: "qSOFA score - interpretation (Surviving Sepsis Campaign 2021)",
+      heading: "qSOFA score - interpretation (Surviving Sepsis Campaign 2026)",
       columns: ["qSOFA", "Meaning", "Action"],
       rows: [
         ["0-1", "Lower risk of poor outcome, but does not exclude sepsis", "Reassess; use clinical judgement and NEWS2"],
         ["2-3", "High risk of death or prolonged ICU stay if infection present", "Assess organ dysfunction (SOFA), lactate, cultures, antibiotics"],
-        ["Limitation", "Poor sensitivity; SSC 2021 advises against qSOFA alone as a screening tool", "Screen with NEWS2 or SIRS alongside"],
+        ["Limitation", "Poor sensitivity; SSC 2026 recommends NEWS, NEWS2, MEWS or SIRS over qSOFA as a single screening tool", "Screen with NEWS2, MEWS or SIRS; use qSOFA only for prognosis"],
       ],
     },
     {
@@ -82,7 +82,7 @@ const scores: Record<string, NoteTable[]> = {
       rows: [
         ["Sepsis", "Suspected or proven infection plus acute rise in SOFA of 2 or more (baseline 0 if unknown)", "Life-threatening organ dysfunction; about 10% hospital mortality"],
         ["Septic shock", "Sepsis needing vasopressor for MAP 65 mmHg or more and lactate over 2 mmol/L despite adequate fluid", "Hospital mortality over 40%"],
-        ["Hour-1 bundle", "Lactate, blood cultures, broad-spectrum antibiotics, 30 mL/kg crystalloid if hypotensive or lactate 4+", "Start vasopressor (noradrenaline) if MAP stays under 65 mmHg"],
+        ["Hour-1 bundle", "Lactate, blood cultures, broad-spectrum antibiotics within 1 h, at least 30 mL/kg crystalloid if hypotensive or lactate 4+ (SSC 2026)", "Start noradrenaline (peripherally if needed) if MAP stays under 65 mmHg (60-65 if aged 65 or over)"],
         ["SOFA-2 (2025)", "Updated version with revised organ cut-offs and support categories", "Sepsis-3 criteria were derived with the original SOFA above"],
       ],
     },
