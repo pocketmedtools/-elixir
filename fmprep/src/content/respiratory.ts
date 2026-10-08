@@ -91,7 +91,7 @@ topics.push({
         "Severe: **cannot finish sentences, pulse over 120, rate over 30, PEF 50% or less, SpO2 under 90%** - treat now and admit. [GINA 2024]",
         "**A normal or rising PaCO2 in a tiring asthmatic is pre-terminal** - she should be hypocapnic, so a normal gas means exhaustion. [GINA 2024]",
         "Life-threatening: **drowsiness, confusion, silent chest, cyanosis, feeble effort, bradycardia, hypotension** - prepare to ventilate. [GINA 2024]",
-        "**Oxygen to SpO2 93-95% in adults and 94-98% in children** - uncontrolled high flow worsens V/Q mismatch and CO2 retention. [GINA 2024]",
+        "**Oxygen only if SpO2 is under 92%, titrated to an upper limit of 95%** (adults, adolescents and children 6-11) - uncontrolled high flow worsens V/Q mismatch and CO2 retention. [GINA 2026]",
         "**Salbutamol 4-10 puffs by pMDI and spacer every 20 minutes for one hour** equals a nebulisation, costs less, spreads no aerosol - the spacer fixes timing. [GINA 2024]",
         "**Prednisolone 40-50 mg orally within one hour** - oral equals intravenous if she can swallow, and benefit starts only at 4 hours. [GINA 2024]",
         "Add **ipratropium 4-8 puffs or 500 microgram nebulised every 20 minutes for one hour** in severe attacks - it cuts admissions. [GINA 2024]",
@@ -279,7 +279,7 @@ topics.push({
         {
           heading: "Immediate treatment in the first hour",
           points: [
-            "**Oxygen titrated to SpO2 93-95%** by mask or prongs - do not withhold it awaiting a gas, and do not run it wide open. [GINA 2024]",
+            "**Oxygen if SpO2 is under 92%, titrated to no higher than 95%** by mask or prongs - do not withhold it awaiting a gas, and do not run it wide open. [GINA 2026]",
             "**Salbutamol 4-10 puffs by spacer or 2.5-5 mg nebulised every 20 minutes for one hour**, then hourly or continuous - later doses reach deeper airways. [GINA 2024]",
             "**Ipratropium 500 microgram nebulised or 4-8 puffs every 20 minutes in the first hour** in severe attacks - it reduces admission. [GINA 2024]",
             "**Prednisolone 40-50 mg orally, or hydrocortisone 100 mg intravenously** if she cannot swallow - benefit begins only at 4 hours. [GINA 2024]",
@@ -526,7 +526,7 @@ topics.push({
         "mMRC 3 is **stopping after about 100 metres**, and 4 is breathless dressing or leaving the house - the grade that marks housebound disease. [GOLD 2024]",
         "The cut-offs that lift a patient out of Group A are **mMRC 2 or more, or CAAT 10 or more out of 40** - above them symptoms justify dual bronchodilation. [GOLD 2026]",
         "**The CAT is now the CAAT - the Chronic Airways Assessment Test** - renamed in GOLD 2026; the questions and the scores are unchanged and interchangeable. [GOLD 2026]",
-        "**Two or more moderate exacerbations, or one hospitalisation, in the past year makes Group E** whatever the symptom score - past attacks predict the next. [GOLD 2024]",
+        "**One or more moderate exacerbations (lowered from two in GOLD 2026), or one hospitalisation, in the past year makes Group E** whatever the symptom score - past attacks predict the next. [GOLD 2026]",
         "**Group A is low symptom and low risk, Group B high symptom and low risk, Group E the exacerbator** - E replaced C and D in GOLD 2023. [GOLD 2024]",
         "Finish with a **blood eosinophil count** - it alone decides whether an inhaled corticosteroid belongs in the regimen. [GOLD 2024]",
         "Add SpO2, BMI and a radiograph, then screen what kills: **ischaemic heart disease, heart failure, lung cancer, osteoporosis, depression** - most die of these. [GOLD 2024]",
@@ -559,7 +559,7 @@ topics.push({
         "Keep small children out of the kitchen - **early biomass exposure lowers peak attained lung function**, which sets lifelong COPD risk. [GOLD 2024]",
         "**Pulmonary rehabilitation, a structured 6-8 week programme**, improves dyspnoea, exercise capacity and life quality beyond any inhaler - it retrains muscle. [GOLD 2024]",
         "Rehabilitation begun after an exacerbation **reduces readmission**; a home walking programme substitutes where none exists - deconditioning starts in days. [GOLD 2024]",
-        "Vaccinate: **annual influenza cuts exacerbations and mortality**, plus pneumococcal, COVID-19, Tdap, and RSV at 60 and over - infection triggers most attacks. [GOLD 2024]",
+        "Vaccinate: **annual influenza cuts exacerbations and mortality**, plus pneumococcal, COVID-19, Tdap, and RSV at 50 and over - infection triggers most attacks. [GOLD 2026]",
         "**Long-term oxygen prolongs survival at resting PaO2 55 mmHg or less, or SpO2 88% or less** - one of only a few mortality-changing treatments. [GOLD 2024]",
         "It also applies at **PaO2 56-59 mmHg with cor pulmonale, right heart failure or haematocrit over 55%** - vasoconstriction is what it reverses. [GOLD 2024]",
         "Oxygen needs **at least 15 hours a day** for survival benefit, prescribed on stable-state readings, not an exacerbation gas - fewer hours showed none. [GOLD 2024]",
@@ -1015,7 +1015,7 @@ topics.push({
         "**There is no Category II regimen** - streptomycin retreatment went in 2021, and retreatment cases are managed by DST. [NTEP TOG 2024]",
         "**Tuberculous meningitis and osteoarticular TB run 2HRZE + 10HRE, 12 months in all** - disseminated and spinal disease may also be extended. [NTEP TOG 2024]",
         "**Add corticosteroid in meningitis and pericarditis** - dexamethasone or prednisolone tapered over 6-8 weeks reduces death and sequelae. [WHO 2022]",
-        "**Adult fixed-dose bands start at 25 kg: 25-39 kg two tablets, 40-54 kg three, 55-69 kg four, 70 kg and above five** - re-weigh at every visit. [NTEP TOG 2024]",
+        "**Adult fixed-dose bands start at 25 kg: 25-34 kg two tablets, 35-49 kg three, 50-64 kg four, 65-75 kg five, over 75 kg six** - re-weigh at every visit. [NTEP TOG 2024]",
         "The adult intensive tablet holds **isoniazid 75 mg, rifampicin 150 mg, pyrazinamide 400 mg, ethambutol 275 mg**; HRE drops Z - Z is done by month 2. [NTEP TOG 2024]",
         "Children get dispersible FDCs in bands of **4-7, 8-11, 12-15, 16-24, 25-29 and 30-39 kg** - never split an adult tablet for a child. [NTEP TOG 2024]",
         "Paediatric daily dose: **isoniazid 10 mg/kg (7-15), rifampicin 15 (10-20), pyrazinamide 35 (30-40), ethambutol 20 (15-25)** - children clear drugs faster. [NTEP TOG 2024]",
@@ -1092,10 +1092,11 @@ topics.push({
       heading: "NTEP adult weight bands and daily fixed dose combination tablets",
       columns: ["Weight band", "Intensive phase (HRZE) tablets/day", "Continuation phase (HRE) tablets/day"],
       rows: [
-        ["25-39 kg", "2", "2"],
-        ["40-54 kg", "3", "3"],
-        ["55-69 kg", "4", "4"],
-        ["70 kg and above", "5", "5"],
+        ["25-34 kg", "2", "2"],
+        ["35-49 kg", "3", "3"],
+        ["50-64 kg", "4", "4"],
+        ["65-75 kg", "5", "5"],
+        ["Over 75 kg", "6", "6"],
       ],
     },
     {
@@ -1181,7 +1182,7 @@ topics.push({
           points: [
             "**Notify on Ni-kshay** - a legal obligation for every provider, and the step that unlocks free drugs, follow-up and benefits. [NTEP TOG 2024]",
             "Start **daily fixed dose combination therapy, 2 months of HRZE then 4 months of HRE**, dosed by weight band - daily beats thrice-weekly. [NTEP TOG 2024]",
-            "Weight bands: **25-39 kg two tablets, 40-54 kg three, 55-69 kg four, 70 kg and above five** - under-dosing by weight breeds resistance. [NTEP TOG 2024]",
+            "Weight bands: **25-34 kg two tablets, 35-49 kg three, 50-64 kg four, 65-75 kg five, over 75 kg six** - under-dosing by weight breeds resistance. [NTEP TOG 2024]",
             "Add **pyridoxine 10 mg daily**, and warn about orange urine so that he does not stop the drug in alarm. [NTEP TOG 2024]",
             "**Rifampicin inactivates oral contraceptives** - every woman of reproductive age needs an alternative method for the whole course. [NTEP TOG 2024]",
             "Arrange **a treatment supporter with 99DOTS or family-observed treatment**, and hand over the box with a treatment card - supervision is the cure. [NTEP TOG 2024]",
@@ -1352,7 +1353,7 @@ topics.push({
     },
     {
       id: "respiratory-tuberculosis-ntep-q2",
-      stem: "A 52 kg man with newly diagnosed drug-sensitive pulmonary tuberculosis is started on treatment. Which regimen and dose is correct under the current NTEP?",
+      stem: "A 45 kg man with newly diagnosed drug-sensitive pulmonary tuberculosis is started on treatment. Which regimen and dose is correct under the current NTEP?",
       options: [
         "Three FDC tablets daily: 2 months HRZE then 4 months HRE",
         "Four FDC tablets daily: 2 months HRZE then 4 months HR",
@@ -1362,7 +1363,7 @@ topics.push({
       ],
       answer: 0,
       explanation:
-        "The 40-54 kg weight band receives three fixed dose combination tablets daily, and the Indian regimen retains ethambutol in the continuation phase, so it is written 2HRZE followed by 4HRE. Four tablets belong to the 55-69 kg band, and a continuation phase of HR alone is the WHO formulation, not the Indian one. Thrice-weekly intermittent therapy was abandoned by the programme in 2017 in favour of daily therapy. Routine extension of the intensive phase to three months is no longer part of the programme.",
+        "The 35-49 kg weight band receives three fixed dose combination tablets daily, and the Indian regimen retains ethambutol in the continuation phase, so it is written 2HRZE followed by 4HRE. Four tablets belong to the 50-64 kg band, and a continuation phase of HR alone is the WHO formulation, not the Indian one. Thrice-weekly intermittent therapy was abandoned by the programme in 2017 in favour of daily therapy. Routine extension of the intensive phase to three months is no longer part of the programme.",
       difficulty: "moderate",
     },
     {

@@ -17,8 +17,8 @@ const diagrams: DiagramSet = {
           tone: "decision",
         },
         {
-          label: "Oxygen titrated to SpO2 93-95%",
-          detail: "94-98% in children; do not withhold oxygen while awaiting a blood gas",
+          label: "Oxygen if SpO2 under 92%, upper limit 95%",
+          detail: "GINA 2026: same 95% ceiling at 6-11 years, keep 92% or more at 5 and under; do not withhold oxygen while awaiting a blood gas",
         },
         {
           label: "Salbutamol every 20 min for one hour",
@@ -145,7 +145,7 @@ const diagrams: DiagramSet = {
           tone: "warn",
           steps: [
             "Any symptom level",
-            "2 or more moderate exacerbations, or 1 or more with admission",
+            "1 or more moderate exacerbations (GOLD 2026, was 2), or 1 or more with admission",
             "LABA plus LAMA to start",
             "Add an inhaled corticosteroid if blood eosinophils are 300/microlitre or more",
             "Avoid ICS if eosinophils are under 100 or there is a history of tuberculosis",
@@ -275,7 +275,7 @@ const diagrams: DiagramSet = {
         {
           label: "Sensitive: start 2HRZE then 4HRE",
           detail:
-            "Daily FDC by weight band - 25-39 kg two tablets, 40-54 kg three, 55-69 kg four, 70 kg and above five; India keeps ethambutol in the continuation phase",
+            "Daily FDC by weight band - 25-34 kg two tablets, 35-49 kg three, 50-64 kg four, 65-75 kg five, over 75 kg six; India keeps ethambutol in the continuation phase",
         },
         {
           label: "Add pyridoxine 10 mg daily",

@@ -6,7 +6,7 @@ charts added (shown at the top of each topic as "Revise in one go").
 
 | # | Subject | Status | Topics | Notes |
 |---|---------|--------|--------|-------|
-| 1 | Respiratory | in progress | | |
+| 1 | Respiratory | **done** | 8/8 | 17 guideline updates; base notes, diagrams and 1 MCQ aligned |
 | 2 | Cardiovascular | **done** | 8/8 | 17 guideline updates; 5 older diagrams aligned |
 | 3 | Endocrine & Metabolic | **done** | 10/10 | 13 guideline updates, 29 flow charts |
 | 4 | Emergency & Acute Care | in progress | | |
@@ -48,3 +48,12 @@ charts added (shown at the top of each topic as "Revise in one go").
 - AF / ECG: AHA 2025 AF cardioversion >=200 J biphasic; ERC 2025 peri-arrest doses.
 - PAD/VTE: AHA/ACC 2026 PE categories A-E.
 - Diagrams updated to match: BP ladder, emergency vs urgency, HFrEF vs HFpEF, foundational HFrEF therapy, PAD targets.
+
+### Respiratory (done)
+- Asthma: GINA 2026 - "seek care if >12 inhalations/24 h" (8 for 6-11 y); as-needed bud-form for 6-11 y Steps 1-2; O2 only if SpO2 <92%, upper limit 95%; ICS-formoterol alternative to salbutamol in mild attacks; depemokimab and biosimilar anti-IgE at Step 5.
+- COPD: GOLD 2026 - Group E from 1 moderate exacerbation; "disease activity" target of no exacerbations; RSV vaccine from 50 y.
+- TB (NTEP): five-band adult weight chart corrected; WHO Global TB Report 2025 figures; BPaLM cited to 2025 national DR-TB guidelines; one MCQ corrected to the current bands.
+- TB infection/TPT: CTD Aug 2025 - 3HP scale-up, 6Lfx or 4R for MDR/RR contacts; 1HP from 13 y.
+- CAP: ATS 2025 steroids only in severe CAP; <5 days antibiotics once stable; lung ultrasound accepted. Surviving Sepsis 2026 antibiotic timing and fluids.
+- Acute cough/influenza: WHO 2024 influenza - baloxavir for non-severe high-risk, oseltamivir for severe.
+- Pleural effusion, OSA: no change needed.
