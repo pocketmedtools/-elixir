@@ -21,6 +21,7 @@ import { BackBar, Callout, Chip, FrequencyChip, SectionBlock, TableBlock, RichTe
 import TheoryAnswer from "./TheoryAnswer";
 import DiagramBlock from "./DiagramBlock";
 import { ensureDiagrams } from "../diagrams/index";
+import { ensureRevision, type TopicRevision } from "../revision/index";
 import { colorVars } from "../lib/hues";
 import { placeVisuals } from "../lib/placeVisuals";
 
@@ -28,6 +29,32 @@ import { placeVisuals } from "../lib/placeVisuals";
 type Visual =
   | { heading: string; diagram: Diagram; table?: undefined }
   | { heading: string; table: NoteTable; diagram?: undefined };
+
+/* The whole topic in one read: the master table, then the flow charts, then
+   what changed in the latest guideline pass. Open by default - it is the
+   page a candidate comes back to the night before. */
+function RevisionBlock({ revision }: { revision: TopicRevision }) {
+  return (
+    <details open className="mt-6 rounded-xl border-2 p-3.5" style={{ borderColor: "var(--acc-rule)", background: "var(--card)" }}>
+      <summary className="cursor-pointer text-[1.1em] font-bold" style={{ color: "var(--head)" }}>
+        Revise in one go - master table and flow charts
+      </summary>
+      <div className="mt-3 flex flex-col gap-4">
+        <TableBlock table={revision.master} />
+        {revision.flows.map((d, i) => (
+          <DiagramBlock key={i} diagram={d} />
+        ))}
+        {revision.updated && revision.updated.length > 0 && (
+          <Callout
+            tone="pearl"
+            title={`Updated to the latest guidelines${revision.checked ? ` (checked ${revision.checked})` : ""}`}
+            items={revision.updated}
+          />
+        )}
+      </div>
+    </details>
+  );
+}
 
 function Visual({ visual }: { visual: Visual }) {
   return visual.diagram ? (
@@ -59,6 +86,7 @@ export default function TopicReader({
   const [openTheory, setOpenTheory] = useState<string | null>(null);
   const [showAnswers, setShowAnswers] = useState<Record<string, boolean>>({});
   const [diagrams, setDiagrams] = useState<Diagram[]>([]);
+  const [revision, setRevision] = useState<TopicRevision | null>(null);
   const topRef = useRef<HTMLDivElement | null>(null);
 
   /* Charts and tables are placed beside the section they are about rather than
@@ -86,6 +114,10 @@ export default function TopicReader({
     if (!subjectId) return;
     ensureDiagrams(subjectId).then((set) => {
       if (live) setDiagrams(set[topicId] ?? []);
+    });
+    setRevision(null);
+    ensureRevision(subjectId).then((set) => {
+      if (live) setRevision(set[topicId] ?? null);
     });
     return () => {
       live = false;
@@ -196,6 +228,8 @@ export default function TopicReader({
           ))}
         </nav>
       )}
+
+      {revision && <RevisionBlock revision={revision} />}
 
       <article className="mt-5">
         {placed.opener.length > 0 && (

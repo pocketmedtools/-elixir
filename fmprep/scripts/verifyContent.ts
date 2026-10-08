@@ -165,6 +165,39 @@ section("Diagrams");
   console.log(`diagrams: ${total} across ${Object.keys(byTopic).length} topics`);
 }
 
+/* ---------- 2c. Revision layer (master tables, flow charts) ---------- */
+section("Revision tables and flow charts");
+{
+  const { readdirSync } = await import("node:fs");
+  const dir = new URL("../src/revision/", import.meta.url);
+  const index = topicIndex();
+  let topics = 0;
+  let flows = 0;
+  for (const f of readdirSync(dir).filter((n) => n.endsWith(".ts") && n !== "index.ts")) {
+    const set = (await import(new URL(f, dir).href)).default as Record<string, import("../src/revision/index").TopicRevision>;
+    for (const [topicId, r] of Object.entries(set)) {
+      topics++;
+      const where = `revision/${f} ${topicId}`;
+      if (!index.has(topicId)) fail(`${where}: not a topic in the library`);
+      if (!r.master?.columns?.length || r.master.columns.length < 2) fail(`${where}: master table needs columns`);
+      if (!r.master?.rows?.length || r.master.rows.length < 5) fail(`${where}: master table has under 5 rows`);
+      for (const row of r.master?.rows ?? [])
+        if (row.length !== r.master.columns.length) fail(`${where}: master row has ${row.length} cells, ${r.master.columns.length} columns`);
+      if (!r.flows?.length) fail(`${where}: no flow chart`);
+      for (const d of r.flows ?? []) {
+        flows++;
+        if (d.kind === "compare") {
+          for (const row of d.rows) if (row.length !== d.columns.length) fail(`${where} / ${d.heading}: compare row width`);
+        } else if (d.kind === "branch") {
+          if (d.arms.length < 2) fail(`${where} / ${d.heading}: branch needs two arms`);
+          for (const a of d.arms) if (!a.steps.length) fail(`${where} / ${d.heading}: empty arm`);
+        } else if (d.steps.length < 2) fail(`${where} / ${d.heading}: needs two steps`);
+      }
+    }
+  }
+  console.log(`revision: ${topics} topics, ${flows} flow charts`);
+}
+
 /* ---------- 4. Theory questions ---------- */
 section("Theory question bank");
 {
