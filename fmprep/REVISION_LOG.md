@@ -9,7 +9,7 @@ charts added (shown at the top of each topic as "Revise in one go").
 | 1 | Respiratory | **done** | 8/8 | 17 guideline updates; base notes, diagrams and 1 MCQ aligned |
 | 2 | Cardiovascular | **done** | 8/8 | 17 guideline updates; 5 older diagrams aligned |
 | 3 | Endocrine & Metabolic | **done** | 10/10 | 13 guideline updates, 29 flow charts |
-| 4 | Emergency & Acute Care | in progress | | |
+| 4 | Emergency & Acute Care | **done** | 12/12 | 12 guideline updates; 36 flow charts |
 | 5 | Gastroenterology & Hepatology | pending | | |
 | 6 | Fever & Infectious Disease | pending | | |
 | 7 | Neurology | pending | | |
@@ -57,3 +57,10 @@ charts added (shown at the top of each topic as "Revise in one go").
 - CAP: ATS 2025 steroids only in severe CAP; <5 days antibiotics once stable; lung ultrasound accepted. Surviving Sepsis 2026 antibiotic timing and fluids.
 - Acute cough/influenza: WHO 2024 influenza - baloxavir for non-severe high-risk, oseltamivir for severe.
 - Pleural effusion, OSA: no change needed.
+
+### Emergency & Acute Care (done)
+- Shock/sepsis: SSC 2026 - NEWS2/MEWS/SIRS over qSOFA alone; >=30 mL/kg balanced crystalloid in 3 h; antibiotics within 1 h (shock/probable) or 3 h (possible); MAP 65 (60-65 if >=65 y); peripheral vasopressor start; capillary refill to guide; IV hydrocortisone suggested. SSC Children 2026 bolus rules.
+- Anaphylaxis: adrenaline first when asthma features coexist (GINA 2026).
+- Emergency tray: GINA 2026 oxygen target and oral prednisolone; ESC 2026 "decompensated HF" with urine-sodium-guided diuretics.
+- ARDS: SSC 2026 antibiotic timing.
+- Cardiac arrest, poisoning, burns, trauma, altered sensorium, head injury, snakebite, heat illness: already current, no change.
