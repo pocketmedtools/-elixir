@@ -7,7 +7,7 @@ charts added (shown at the top of each topic as "Revise in one go").
 | # | Subject | Status | Topics | Notes |
 |---|---------|--------|--------|-------|
 | 1 | Respiratory | in progress | | |
-| 2 | Cardiovascular | in progress | | |
+| 2 | Cardiovascular | **done** | 8/8 | 17 guideline updates; 5 older diagrams aligned |
 | 3 | Endocrine & Metabolic | **done** | 10/10 | 13 guideline updates, 29 flow charts |
 | 4 | Emergency & Acute Care | in progress | | |
 | 5 | Gastroenterology & Hepatology | pending | | |
@@ -38,3 +38,13 @@ charts added (shown at the top of each topic as "Revise in one go").
 - Hyperthyroidism: ATA 2026 - PTU when actively trying to conceive and to ~16 weeks, no preferred drug after; TRAb guides stopping.
 - Obesity: 2025 Indian redefinition (BMI >23, stage 1/2); 2024 multisociety GLP-1 RA peri-operative guidance.
 - Vitamin D & calcium: Endocrine Society 2023 hypercalcaemia of malignancy - denosumab or IV bisphosphonate, add calcitonin if Ca >14.
+
+### Cardiovascular (done)
+- Hypertension: AHA/ACC 2025 - 130/80 stage 1, target <130/80, PREVENT calculator (India diagnoses at 140/90); "urgency" -> severe hypertension without organ damage; screen all resistant HTN for primary aldosteronism.
+- Stable angina: no change needed.
+- ACS: UDMI 2026 (Fifth) - sex-specific 99th percentile troponin; primary/secondary/procedure-related MI replace types 1-5; ACC/AHA 2025 ticagrelor monotherapy from 1 month after PCI.
+- Heart failure: ESC 2026 - HFmrEF abolished (HFrEF <50%, HFpEF >=50%); foundational vs additional therapy; MRA + SGLT2i at every LVEF; semaglutide/tirzepatide for HFpEF with obesity; "decompensated" HF, stages A-D; iron deficiency TSAT <20%.
+- Dyslipidaemia: ACC/AHA 2026 - LDL goals (<100/<70/<55), PREVENT; Lp(a) once in every adult; child screening 9-11 y.
+- AF / ECG: AHA 2025 AF cardioversion >=200 J biphasic; ERC 2025 peri-arrest doses.
+- PAD/VTE: AHA/ACC 2026 PE categories A-E.
+- Diagrams updated to match: BP ladder, emergency vs urgency, HFrEF vs HFpEF, foundational HFrEF therapy, PAD targets.

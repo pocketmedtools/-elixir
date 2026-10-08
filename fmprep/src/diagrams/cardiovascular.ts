@@ -86,7 +86,7 @@ const diagrams: DiagramSet = {
         {
           label: "Target below 140/90 mmHg",
           detail:
-            "Below 130/80 if tolerated, and in diabetes, CKD with albuminuria and after stroke; over 80 years aim systolic 130-139 and never below 120",
+            "IHCI threshold for stepping up; then lower - systolic 120-129 if tolerated (ESC 2024), below 130/80 for all adults (AHA/ACC 2025); individualise if 85 or over, frail or orthostatic",
           tone: "good",
         },
       ],
@@ -94,8 +94,8 @@ const diagrams: DiagramSet = {
     {
       kind: "compare",
       heading: "Hypertensive emergency versus urgency",
-      caption: "The difference is acute target organ damage, not the height of the reading.",
-      columns: ["Feature", "Hypertensive emergency", "Hypertensive urgency"],
+      caption: "The difference is acute target organ damage, not the height of the reading. AHA/ACC 2025 drops the word urgency and calls it severe hypertension (over 180/120) without acute organ damage.",
+      columns: ["Feature", "Hypertensive emergency", "Hypertensive urgency (severe hypertension, no organ damage)"],
       rows: [
         [
           "Definition",
@@ -490,7 +490,7 @@ const diagrams: DiagramSet = {
           steps: [
             "Refractory hypotension",
             "Renal dysfunction limiting titration",
-            "Untitratable pillars mean the mortality benefit is lost",
+            "Untitratable foundational drugs mean the mortality benefit is lost",
           ],
         },
       ],
@@ -498,10 +498,10 @@ const diagrams: DiagramSet = {
     {
       kind: "compare",
       heading: "HFrEF versus HFpEF at a glance",
-      caption: "Mildly reduced ejection fraction, HFmrEF, occupies the 41-49% band between them.",
+      caption: "ESC 2026 has abolished HFmrEF - an ejection fraction of 41-49% is now classed and treated as HFrEF.",
       columns: ["Feature", "HFrEF", "HFpEF"],
       rows: [
-        ["Ejection fraction", "40% or less", "50% or more"],
+        ["Ejection fraction", "Under 50%", "50% or more"],
         [
           "Typical patient",
           "Younger man, prior myocardial infarction, dilated ventricle",
@@ -516,37 +516,37 @@ const diagrams: DiagramSet = {
         ],
         [
           "Mortality-reducing drugs",
-          "All four pillars proven",
-          "SGLT2 inhibitor; otherwise treat comorbidity and congestion",
+          "Four foundational drugs: ARNI/ACEi/ARB, beta-blocker, MRA, SGLT2 inhibitor",
+          "Foundational: SGLT2 inhibitor plus MRA; GLP-1 RA if obese; treat comorbidity and congestion",
         ],
       ],
     },
     {
       kind: "flow",
-      heading: "The four pillars of HFrEF",
+      heading: "Foundational medical therapy of HFrEF (LVEF under 50%)",
       caption:
-        "Start all four early at low dose rather than maximising one at a time - the mortality benefit appears within 30 days.",
+        "ESC 2026: start all four foundational drugs early at low dose rather than maximising one at a time - the mortality benefit appears within 30 days. MRA and SGLT2 inhibitor are foundational at every LVEF.",
       steps: [
         {
-          label: "Pillar 1: ARNI, or an ACE inhibitor",
+          label: "Foundational 1: ARNI, or an ACE inhibitor or ARB",
           detail:
             "Sacubitril/valsartan 49/51 mg twice daily up to 97/103 mg twice daily, after a 36-hour washout from any ACE inhibitor to avoid angioedema; enalapril 2.5 mg twice daily upward where cost prevents it",
         },
         {
-          label: "Pillar 2: beta-blocker",
+          label: "Foundational 2: beta-blocker",
           detail:
             "Only three are proven - carvedilol 3.125 mg twice daily to 25 mg twice daily, bisoprolol 1.25-10 mg, metoprolol succinate 12.5-200 mg. Start low, go slow, and only when euvolaemic",
           tone: "warn",
         },
         {
-          label: "Pillar 3: mineralocorticoid antagonist",
+          label: "Foundational 3: mineralocorticoid antagonist",
           detail:
             "Spironolactone 25 mg daily, or eplerenone if gynaecomastia; potassium and creatinine at 1 week, 4 weeks then 3-monthly, and stop if potassium exceeds 5.5 mmol/L or eGFR falls below 30",
         },
         {
-          label: "Pillar 4: SGLT2 inhibitor",
+          label: "Foundational 4: SGLT2 inhibitor",
           detail:
-            "Dapagliflozin 10 mg or empagliflozin 10 mg once daily irrespective of diabetes, often within the first week; counsel on genital mycotic infection and sick-day rules",
+            "Dapagliflozin 10 mg or empagliflozin 10 mg once daily irrespective of diabetes, often within the first week and in hospital once a decompensated patient is stable; counsel on genital mycotic infection and sick-day rules",
         },
         {
           label: "Congestion: diuretic to a target weight",
@@ -554,9 +554,9 @@ const diagrams: DiagramSet = {
             "Furosemide 20-40 mg once or twice daily, or torsemide 10-20 mg when gut oedema impairs absorption; fluid 1.5-2 L/day, salt under 5 g/day, daily weights with a 2 kg in 3 days rule",
         },
         {
-          label: "Add-ons once the four are in place",
+          label: "Additional medical therapy once the four are in",
           detail:
-            "Ivabradine 5 mg twice daily if sinus rhythm at 70/min or more, digoxin 0.125 mg daily for symptoms, intravenous iron if ferritin is under 100 ng/mL, hydralazine with isosorbide dinitrate if all renin-angiotensin blockade is contraindicated",
+            "Ivabradine 5 mg twice daily if sinus rhythm at 70/min or more, digoxin 0.125 mg daily for symptoms, intravenous iron if transferrin saturation is under 20% (or ferritin under 100 ng/mL), hydralazine with isosorbide dinitrate if all renin-angiotensin blockade is contraindicated",
         },
         {
           label: "Device referral after 3 months",
@@ -1111,7 +1111,7 @@ const diagrams: DiagramSet = {
         {
           label: "Blood pressure and glycaemic control",
           detail:
-            "Below 140/90 mmHg, below 130/80 with diabetes; beta-blockers are not contraindicated in PAD - a favourite examiner point - and ACE inhibitors reduce events",
+            "Systolic 120-129 mmHg if tolerated (ESC 2024); beta-blockers are not contraindicated in PAD - a favourite examiner point - and ACE inhibitors reduce events",
         },
         {
           label: "Structured exercise therapy",
