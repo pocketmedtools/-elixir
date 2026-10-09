@@ -10,7 +10,7 @@ charts added (shown at the top of each topic as "Revise in one go").
 | 2 | Cardiovascular | **done** | 8/8 | 17 guideline updates; 5 older diagrams aligned |
 | 3 | Endocrine & Metabolic | **done** | 10/10 | 13 guideline updates, 29 flow charts |
 | 4 | Emergency & Acute Care | **done** | 12/12 | 12 guideline updates; 36 flow charts |
-| 5 | Gastroenterology & Hepatology | pending | | |
+| 5 | Gastroenterology & Hepatology | **done** | 9/9 | 16 guideline updates |
 | 6 | Fever & Infectious Disease | pending | | |
 | 7 | Neurology | pending | | |
 | 8 | Renal & Urology | pending | | |
@@ -64,3 +64,12 @@ charts added (shown at the top of each topic as "Revise in one go").
 - Emergency tray: GINA 2026 oxygen target and oral prednisolone; ESC 2026 "decompensated HF" with urine-sodium-guided diuretics.
 - ARDS: SSC 2026 antibiotic timing.
 - Cardiac arrest, poisoning, burns, trauma, altered sensorium, head injury, snakebite, heat illness: already current, no change.
+
+### Gastroenterology & Hepatology (done)
+- Jaundice: AASLD DILI 2023 - RUCAM or RECAM causality.
+- Viral hepatitis: AASLD-IDSA HBV 2025 - wider treatment (immune-tolerant >40 or with fibrosis), stop NA only after HBsAg loss; TDF/TAF from 28 weeks if DNA >200000.
+- Chronic liver disease: Baveno VIII 2026 CSPH (LSM >=25 kPa, SSM >55), NSBB/carvedilol strong; ACG HE 2026 rifaximin + lactulose, PEG alternative; semaglutide 2.4 mg for MASH (FDA 2025).
+- GI bleeding: ESGE 2026 - no urgent (<=12 h) endoscopy unless unstable after resuscitation; metoclopramide if no erythromycin; OTS clip options.
+- IBS: Rome V 2026 - pain/discomfort >=3 days/month, clinical vs research criteria.
+- Acute abdomen: WSES 2025 - AIR/AAS scores, antibiotics-first for uncomplicated appendicitis, follow-up after abscess.
+- GERD/peptic, acute diarrhoea, liver abscess: no change needed.

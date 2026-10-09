@@ -940,14 +940,14 @@ const diagrams: DiagramSet = {
       caption: "IBS is diagnosed on criteria in the absence of alarm features, not by exclusion.",
       steps: [
         {
-          label: "Apply the Rome IV core criterion",
+          label: "Apply the Rome V (2026) core criterion",
           detail:
-            "Recurrent abdominal pain at least 1 day a week for 3 months with onset at least 6 months earlier; pain is required, discomfort alone is not enough",
+            "Recurrent abdominal pain or discomfort on at least 3 days a month for 3 months, not continuous (Rome IV needed pain 1 day a week)",
         },
         {
-          label: "Confirm two of the three associations",
+          label: "Confirm the bowel association",
           detail:
-            "Related to defecation, associated with a change in stool frequency, associated with a change in stool form",
+            "Related to defecation and/or a change in stool frequency or form; not solely menstrual",
         },
         {
           label: "Screen for alarm features",
