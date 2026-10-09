@@ -12,7 +12,7 @@ charts added (shown at the top of each topic as "Revise in one go").
 | 4 | Emergency & Acute Care | **done** | 12/12 | 12 guideline updates; 36 flow charts |
 | 5 | Gastroenterology & Hepatology | **done** | 9/9 | 16 guideline updates |
 | 6 | Fever & Infectious Disease | pending | | |
-| 7 | Neurology | pending | | |
+| 7 | Neurology | **done** | 10/10 | 11 guideline updates |
 | 8 | Renal & Urology | pending | | |
 | 9 | Musculoskeletal & Rheumatology | pending | | |
 | 10 | Psychiatry | pending | | |
@@ -73,3 +73,11 @@ charts added (shown at the top of each topic as "Revise in one go").
 - IBS: Rome V 2026 - pain/discomfort >=3 days/month, clinical vs research criteria.
 - Acute abdomen: WSES 2025 - AIR/AAS scores, antibiotics-first for uncomplicated appendicitis, follow-up after abscess.
 - GERD/peptic, acute diarrhoea, liver abscess: no change needed.
+
+### Neurology (done)
+- Acute stroke: AHA/ASA 2026 - tenecteplase = alteplase; lyse any disabling deficit; large-core and basilar thrombectomy to 24 h; lysis 4.5-9 h with mismatch; post-EVT BP <180/105 (not <140); glucose 140-180; DAPT for NIHSS <=5 up to 72 h.
+- TIA: DAPT window 24-72 h for high-risk TIA/minor stroke.
+- CNS infection: WHO 2025 meningitis guideline; WHO 6-month TB meningitis regimen for children.
+- Low back pain: NICE NG59 2026 withdrew CBT/combined programme recommendations.
+- Seizures: ILAE 2025 classification (focal/generalised/unknown/unclassified; "consciousness" replaces "awareness").
+- Headache, vertigo, neuropathy, Bell palsy, parkinsonism: no change needed.

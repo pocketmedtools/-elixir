@@ -274,7 +274,7 @@ const diagrams: DiagramSet = {
         },
         {
           label: "CT excludes haemorrhage",
-          detail: "Disabling deficit, quantified with the NIHSS where possible",
+          detail: "Disabling deficit, whatever the NIHSS; a non-disabling deficit gets DAPT, not lysis (AHA/ASA 2026)",
         },
         {
           label: "Bring blood pressure below 185/110 mmHg",
@@ -1643,47 +1643,47 @@ const diagrams: DiagramSet = {
     },
     {
       kind: "branch",
-      heading: "ILAE 2017 classification of seizure types",
+      heading: "ILAE 2025 classification of seizure types",
       caption:
-        "Three tiers - seizure type, then epilepsy type, then epilepsy syndrome - naming the aetiology and comorbidities at every tier. Getting focal versus generalised wrong is how juvenile myoclonic epilepsy ends up on carbamazepine.",
+        "Four classes - focal, generalised, unknown and unclassified - then epilepsy type and syndrome, naming the aetiology at every tier. Getting focal versus generalised wrong is how juvenile myoclonic epilepsy ends up on carbamazepine.",
       root: "Where did the seizure start?",
       arms: [
         {
-          label: "Focal onset",
+          label: "Focal",
           steps: [
-            "Divide first by awareness - focal aware, or focal impaired awareness",
-            "Awareness, not memory or responsiveness, is the deciding feature",
-            "Then label by the first prominent sign: motor onset or non-motor onset",
-            "A focal seizure that spreads is a focal to bilateral tonic-clonic seizure; secondarily generalised is retired",
+            "Divide by consciousness - focal preserved consciousness (FPC) or focal impaired consciousness (FIC)",
+            "Consciousness = awareness (recall) plus responsiveness; either impaired means FIC",
+            "Then describe with or without observable manifestations, in the order they occur",
+            "A focal seizure that spreads is focal to bilateral tonic-clonic (FBTC); secondarily generalised is retired",
           ],
         },
         {
-          label: "Generalised onset",
+          label: "Generalised",
           steps: [
-            "Bilateral networks from the start, with awareness almost always impaired",
-            "Motor: tonic-clonic, clonic, tonic, myoclonic, myoclonic-atonic, atonic, epileptic spasms",
-            "Non-motor (absence): typical, atypical, myoclonic absence, absence with eyelid myoclonia",
+            "Bilateral networks from the start, with consciousness almost always impaired",
+            "Absence: typical, atypical, myoclonic absence, eyelid myoclonia with absence",
+            "Generalised tonic-clonic",
+            "Other: tonic, clonic, myoclonic, myoclonic-atonic, atonic, epileptic spasms, negative myoclonus",
           ],
         },
         {
-          label: "Unknown onset",
+          label: "Unknown or unclassified",
           steps: [
-            "Used when the beginning was unwitnessed",
-            "May still be labelled motor (tonic-clonic, epileptic spasms) or non-motor (behaviour arrest)",
-            "Unclassified is only for inadequate information - never guess an onset you did not have described",
+            "Unknown (whether focal or generalised) when the beginning was unwitnessed",
+            "Unclassified is only for inadequate information - never guess a start you did not have described",
           ],
         },
       ],
     },
     {
       kind: "compare",
-      heading: "Absence, focal impaired awareness and day-dreaming",
+      heading: "Absence, focal impaired consciousness and day-dreaming",
       caption:
         "Three minutes of hyperventilation in the consulting room settles most of this, and repeated at follow-up it measures control.",
       columns: [
         "Feature",
         "Typical absence",
-        "Focal impaired awareness",
+        "Focal impaired consciousness",
         "Day-dreaming",
       ],
       rows: [
