@@ -129,7 +129,7 @@ const topics: Topic[] = [
           "Screen for **HBsAg and anti-HCV** under the National Viral Hepatitis Control Programme, and give hepatitis B vaccine (0, 1, 6 months) if non-immune. [NVHCP 2018]",
           "**HIV post-exposure prophylaxis** after a high-risk sexual exposure: tenofovir-lamivudine-dolutegravir (TLD) one tablet daily for 28 days, started ideally within 2 hours and **no later than 72 hours**. [NACO ART 2021]",
           "**Oral PrEP** with tenofovir-emtricitabine daily is recommended by WHO for people at substantial risk, and is being offered to key populations through targeted interventions. [WHO 2022]",
-          "**Doxycycline PEP** (200 mg within 72 hours of condomless sex) reduces syphilis and chlamydia in MSM and transgender women with a recent STI. [CDC Doxy-PEP 2024]",
+          "**Doxycycline PEP** (200 mg within 72 hours of condomless sex) reduces syphilis and chlamydia in MSM and transgender women with a recent STI; WHO issued its first recommendation in May 2026, prioritising recent or recurrent STIs; not yet NACO policy. [WHO Doxy-PEP 2026]",
           "**Compliance:** give the first dose under observation and explain the full course; single-dose kits exist to make compliance automatic. [NACP-V 2021]",
           "**Condoms:** demonstrate use, supply them free, and advise abstinence until 7 days after both partners complete treatment. [NACP-V 2021]",
           "**Counselling:** risk reduction, HIV testing, the nature of the infection and the need for partner treatment. [NACP-V 2021]",

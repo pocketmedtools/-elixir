@@ -17,7 +17,7 @@ charts added (shown at the top of each topic as "Revise in one go").
 | 9 | Musculoskeletal & Rheumatology | **done** | 10/10 | 13 guideline updates; 1 MCQ aligned |
 | 10 | Psychiatry | **done** | 8/8 | 7 guideline updates |
 | 11 | Surgery & Office Procedures | **done** | 19/19 | 10 guideline updates |
-| 12 | Dermatology | pending | | |
+| 12 | Dermatology | **done** | 11/11 | 9 guideline updates |
 | 13 | Eye & ENT | pending | | |
 | 14 | Paediatrics | pending | | |
 | 15 | Obstetrics | pending | | |
@@ -124,3 +124,10 @@ charts added (shown at the top of each topic as "Revise in one go").
 - Transfusion: AABB 2025 / ACC/AHA 2025 - acute MI transfuse below Hb 10.
 - Tracheostomy: DAS 2025 (scalpel-bougie-tube Plan D). Anorectal: WHO STI 2024 citation.
 - Other 12 topics: no change needed.
+
+### Dermatology (done)
+- Atopic dermatitis: NICE CG57 (2025) bathing/softener advice; AAD 2025 roflumilast 0.15% and tapinarof 1% creams; lebrikizumab and nemolizumab for moderate-severe adult AD.
+- Urticaria: International Urticaria Guideline 2026 - antihistamine up-dosing max 4x; dupilumab and remibrutinib add-ons with omalizumab; ciclosporin only if these fail; sebetralstat oral for HAE attacks.
+- STI: WHO 2026 doxy-PEP recommendation (not yet NACO policy).
+- Pruritus: 4x antihistamine cap.
+- Lesions, scabies, acne, psoriasis, leprosy, SJS/TEN, fungal: no change needed.

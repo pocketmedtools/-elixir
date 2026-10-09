@@ -350,7 +350,7 @@ const diagrams: DiagramSet = {
         {
           label: "Dupilumab",
           detail:
-            "Interleukin 4 receptor alpha antibody, 600 mg loading then 300 mg fortnightly, where available and affordable",
+            "Interleukin 4 receptor alpha antibody, 600 mg loading then 300 mg fortnightly; AAD 2025 also strongly recommends lebrikizumab and nemolizumab in adults",
         },
       ],
     },
@@ -662,12 +662,12 @@ const diagrams: DiagramSet = {
         {
           label: "Step 3 - add omalizumab",
           detail:
-            "300 mg subcutaneously every 4 weeks; response often within one to two doses, continued for at least six months before withdrawal is attempted",
+            "Omalizumab 300 mg subcutaneously every 4 weeks, continued at least six months; 2026 guideline adds dupilumab 300 mg every 2 weeks or remibrutinib 25 mg twice daily as alternatives",
         },
         {
           label: "Step 4 - add ciclosporin",
           detail:
-            "3 to 5 mg per kilogram per day for a limited period, with monthly blood pressure and creatinine",
+            "3 to 5 mg per kilogram per day for a limited period when licensed add-ons fail or are unavailable, with monthly blood pressure and creatinine",
         },
         {
           label: "Rescue only - oral prednisolone",
