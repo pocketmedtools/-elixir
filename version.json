@@ -1,0 +1,13 @@
+{
+  "build": 250,
+  "minNative": 226,
+  "nativeHash": "10a867517f2ef71f",
+  "webs": [
+    "https://cdn.jsdelivr.net/gh/pocketmedtools/-elixir@f9cf5184e32a0cfe9bee9586700a57c49ac9f01e/fmprep-web-250.zip",
+    "https://raw.githubusercontent.com/pocketmedtools/-elixir/f9cf5184e32a0cfe9bee9586700a57c49ac9f01e/fmprep-web-250.zip"
+  ],
+  "web": "https://raw.githubusercontent.com/pocketmedtools/-elixir/f9cf5184e32a0cfe9bee9586700a57c49ac9f01e/fmprep-web-250.zip",
+  "apk": "https://cdn.jsdelivr.net/gh/pocketmedtools/-elixir@f9cf5184e32a0cfe9bee9586700a57c49ac9f01e/FM-Prep.apk",
+  "sha": "cfc4d6ba3816911a37a666408a6ed8794607446f",
+  "date": "2026-10-09T21:41:14Z"
+}
