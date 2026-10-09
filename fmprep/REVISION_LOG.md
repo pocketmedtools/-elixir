@@ -11,7 +11,7 @@ charts added (shown at the top of each topic as "Revise in one go").
 | 3 | Endocrine & Metabolic | **done** | 10/10 | 13 guideline updates, 29 flow charts |
 | 4 | Emergency & Acute Care | **done** | 12/12 | 12 guideline updates; 36 flow charts |
 | 5 | Gastroenterology & Hepatology | **done** | 9/9 | 16 guideline updates |
-| 6 | Fever & Infectious Disease | pending | | |
+| 6 | Fever & Infectious Disease | **done** | 11/11 | 18 guideline updates |
 | 7 | Neurology | **done** | 10/10 | 11 guideline updates |
 | 8 | Renal & Urology | pending | | |
 | 9 | Musculoskeletal & Rheumatology | pending | | |
@@ -81,3 +81,14 @@ charts added (shown at the top of each topic as "Revise in one go").
 - Low back pain: NICE NG59 2026 withdrew CBT/combined programme recommendations.
 - Seizures: ILAE 2025 classification (focal/generalised/unknown/unclassified; "consciousness" replaces "awareness").
 - Headache, vertigo, neuropathy, Bell palsy, parkinsonism: no change needed.
+
+### Fever & Infectious Disease (done)
+- Acute fever / sepsis: SSC 2026 screening and fluids.
+- Dengue: TAK-003 (Qdenga) approved July 2026 (4-60 y, 2 doses, private sector); WHO 2025 crystalloid over colloid, no prophylactic platelets >10,000 without bleeding.
+- Malaria: WHO radical cure - G6PD test, 7-day high-dose primaquine or tafenoquine (not yet NCVBDC policy).
+- UTI: IDSA 2025 complicated-UTI definition and 5-7 / 7 / 10-14 day durations; SSC 2026 urosepsis.
+- Scrub typhus, cellulitis: SSC 2026 shock care.
+- HIV: WHO viral-load categories for U=U; long-acting cabotegravir + rilpivirine switch (NACO 2021 still national).
+- AMR: NAP-AMR 2.0 (Nov 2025); AWaRe 2025.
+- Tropical fevers: WHO 2025 chikungunya - no NSAIDs/steroids acutely; vaccine status.
+- Enteric fever, rabies: no change needed.

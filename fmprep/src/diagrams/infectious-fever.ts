@@ -277,13 +277,13 @@ const diagrams: DiagramSet = {
         {
           label: "Group C - hypotensive shock",
           detail:
-            "Crystalloid or colloid 20 mL/kg as a bolus over 15-30 minutes, then reduce to 10 mL/kg/h on improvement; oxygen and reassessment every 15-30 minutes",
+            "Isotonic crystalloid 20 mL/kg as a bolus over 15-30 minutes (WHO 2025 prefers crystalloid to colloid), then reduce to 10 mL/kg/h on improvement; oxygen and reassessment by capillary refill every 15-30 minutes",
           tone: "warn",
         },
         {
           label: "Still shocked - read the haematocrit",
           detail:
-            "Rising or still high means leakage continues, so give more fluid or switch to colloid. Falling means concealed haemorrhage, so transfuse fresh whole blood or packed cells",
+            "Rising or still high means leakage continues, so give another crystalloid bolus (colloid only for refractory shock). Falling means concealed haemorrhage, so transfuse fresh whole blood or packed cells",
           tone: "decision",
         },
         {
@@ -823,7 +823,7 @@ const diagrams: DiagramSet = {
           "Nitrofurantoin 5 days or fosfomycin single dose",
           "Ceftriaxone or amikacin then culture-guided; piperacillin-tazobactam or carbapenem if severe or ESBL",
         ],
-        ["Duration", "3-5 days cystitis, 7 days pyelonephritis", "7-14 days; 4-6 weeks if prostatitis"],
+        ["Duration", "3-5 days cystitis, 7 days pyelonephritis", "7 days if improving (IDSA 2025); 10-14 days if prostatitis suspected"],
         ["Imaging", "Not needed", "Ultrasound in all; CT if not improving at 72 hours"],
       ],
     },
@@ -847,13 +847,13 @@ const diagrams: DiagramSet = {
         {
           label: "Mild to moderate pyelonephritis",
           detail:
-            "Ceftriaxone 1-2 g IV or IM stat, or amikacin 15 mg/kg, then oral therapy guided by culture for 7-10 days. Nitrofurantoin does not reach the kidney and must not be used here",
+            "Ceftriaxone 1-2 g IV or IM stat, or amikacin 15 mg/kg, then oral therapy guided by culture - 5-7 days total of a fluoroquinolone or 7 days of another drug (IDSA 2025). Nitrofurantoin does not reach the kidney and must not be used here",
           tone: "warn",
         },
         {
           label: "Severe pyelonephritis or known ESBL",
           detail:
-            "Admit for piperacillin-tazobactam 4.5 g IV 6-hourly or amikacin 15 mg/kg daily for mild ESBL infection, for 7-14 days with an oral switch once afebrile for 48 hours",
+            "Admit for piperacillin-tazobactam 4.5 g IV 6-hourly or amikacin 15 mg/kg daily for mild ESBL infection, oral switch once afebrile for 48 hours; 7 days total if improving",
         },
         {
           label: "Sepsis or severe ESBL infection",
