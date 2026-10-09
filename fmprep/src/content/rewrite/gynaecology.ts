@@ -366,9 +366,9 @@ const rewrites: Record<string, TopicRewrite> = {
           "**Contraception** is the intentional prevention of pregnancy by temporary (reversible) or permanent methods; **effectiveness** is expressed as pregnancies per 100 women in the first year of **typical use** and **perfect use**, or as the **Pearl index** (failures x 1200 / total months of exposure). [WHO FP Handbook 2022]",
           "**Effectiveness tiers**: tier 1 (under 1 per 100) - **implant, LNG-IUS, copper IUCD, sterilisation**; tier 2 (4-7) - injectables, pills, LAM; tier 3 (13-20) - condoms, fertility awareness, withdrawal; tier 4 (about 21) - spermicides. [WHO FP Handbook 2022]",
           "**Typical-use first-year failure**: male condom 13, combined pill 7, DMPA 4, copper IUCD 0.8, LNG-IUS 0.1-0.2, implant 0.1, female sterilisation 0.5, vasectomy 0.15 - the gap between perfect and typical use is **user error**. [WHO FP Handbook 2022]",
-          "**WHO MEC categories**: **1 - no restriction**; **2 - advantages generally outweigh risks**; **3 - risks usually outweigh advantages** (use only if nothing else is acceptable, with close follow-up); **4 - unacceptable health risk, do not use**. [WHO MEC 2015]",
-          "**Simplified two-category rule** where clinical judgement is limited (ASHA, ANM): categories **1 and 2 = use**, **3 and 4 = do not use**. [WHO MEC 2015]",
-          "**Initiation versus continuation**: some conditions have separate categories - for example an IUCD is **category 4 to insert with current PID but 2 to continue** if PID develops with the device in place. [WHO MEC 2015]",
+          "**WHO MEC categories**: **1 - no restriction**; **2 - advantages generally outweigh risks**; **3 - risks usually outweigh advantages** (use only if nothing else is acceptable, with close follow-up); **4 - unacceptable health risk, do not use**. [WHO MEC 2025]",
+          "**Simplified two-category rule** where clinical judgement is limited (ASHA, ANM): categories **1 and 2 = use**, **3 and 4 = do not use**. [WHO MEC 2025]",
+          "**Initiation versus continuation**: some conditions have separate categories - for example an IUCD is **category 4 to insert with current PID but 2 to continue** if PID develops with the device in place. [WHO MEC 2025]",
           "**The national basket (India)**: free condoms (Nirodh), **Mala-N** combined pill, **Chhaya** (centchroman) weekly pill, **Antara** (DMPA 150 mg IM), Cu-IUCD 380A and 375 (including postpartum and post-abortion IUCD), emergency pill (Ezy Pill) and male and female sterilisation; the **subdermal implant and DMPA-SC** are being introduced in selected states. [MoHFW 2024]",
           "**Indian burden**: NFHS-5 modern contraceptive prevalence **56.5%**, female sterilisation **37.9%** versus vasectomy **0.3%**, and **unmet need 9.4%** - the programme aim is more spacing methods and male participation. [NFHS-5 2021]"
         ]
@@ -385,7 +385,7 @@ const rewrites: Record<string, TopicRewrite> = {
           "**Why late pills fail**: during the hormone-free interval FSH rises and follicles start to grow; **lengthening the break** (missed pills in week 1 or week 3) lets a follicle reach ovulation - hence the missed-pill rules. [FSRH 2023]",
           "**Progestogen-only methods**: traditional POPs work mainly by **thick, hostile cervical mucus** (a 24-hour effect, so tight timing), while desogestrel POP, the implant and DMPA **reliably inhibit ovulation**. [WHO FP Handbook 2022]",
           "**Oestrogen and thrombosis**: ethinylestradiol increases hepatic synthesis of **factors II, VII, VIII, X and fibrinogen** and causes **acquired activated protein C resistance**, raising VTE risk from about **2 to 5-7 per 10 000 women-years** with levonorgestrel pills (9-12 with desogestrel, gestodene or drospirenone) - still far below pregnancy. [FSRH 2023]",
-          "**Oestrogen and arteries**: ethinylestradiol raises **BP (renin-angiotensin activation)** and, with smoking or migraine aura, **ischaemic stroke and MI risk** - hence CHC category 4 for these. [WHO MEC 2015]",
+          "**Oestrogen and arteries**: ethinylestradiol raises **BP (renin-angiotensin activation)** and, with smoking or migraine aura, **ischaemic stroke and MI risk** - hence CHC category 4 for these. [WHO MEC 2025]",
           "**Enzyme induction**: rifampicin, rifabutin, carbamazepine, phenytoin, phenobarbital, topiramate and efavirenz induce **CYP3A4**, lowering ethinylestradiol and progestogen levels and causing pill and implant failure; common antibiotics do not. [FSRH 2023]",
           "**DMPA** suppresses gonadotrophins so profoundly that **oestradiol falls to early-follicular levels**, causing a reversible loss of **bone mineral density** and delayed return of ovulation (median **about 10 months** from the last injection). [WHO FP Handbook 2022]",
           "**Copper IUCD**: copper ions create a **sterile foreign-body inflammatory reaction** that is **spermicidal and ovotoxic**, preventing fertilisation - it is not an abortifacient; raised local prostaglandins and fibrinolysis cause **heavier, more painful periods**. [WHO FP Handbook 2022]",
@@ -400,13 +400,13 @@ const rewrites: Record<string, TopicRewrite> = {
         "points": [
           "**Reproductive goal**: spacing or limiting, when she wants the next child, number and age of living children, breastfeeding status and partner's views - this decides between reversible, LARC and permanent methods. [WHO FP Handbook 2022]",
           "**Exclude pregnancy with the WHO pregnancy checklist**: she is reasonably certain not pregnant if she has no pregnancy symptoms and any one of - **7 days or less since start of a normal period**, no sex since the last period, **consistent correct use of a reliable method**, 7 days or less after abortion, within 4 weeks postpartum, or fully breastfeeding, amenorrhoeic and under 6 months postpartum. [WHO FP Handbook 2022]",
-          "**Headache history**: ask specifically about **migraine with aura** (visual or sensory symptoms before the headache) - category 4 for combined methods at any age. [WHO MEC 2015]",
-          "**Cardiovascular risk**: **age 35 or over with smoking**, hypertension, diabetes with vascular disease, ischaemic heart disease, stroke and multiple risk factors all restrict oestrogen. [WHO MEC 2015]",
-          "**Thrombosis history**: past or current DVT or PE, known thrombophilia, recent major surgery with immobilisation, and **postpartum under 21 days** make combined methods category 3-4. [WHO MEC 2015]",
-          "**Cancer and liver**: current or past **breast cancer** (all hormonal methods restricted, copper IUCD category 1), severe cirrhosis, liver tumour and active hepatitis. [WHO MEC 2015]",
+          "**Headache history**: ask specifically about **migraine with aura** (visual or sensory symptoms before the headache) - category 4 for combined methods at any age. [WHO MEC 2025]",
+          "**Cardiovascular risk**: **age 35 or over with smoking**, hypertension, diabetes with vascular disease, ischaemic heart disease, stroke and multiple risk factors all restrict oestrogen. [WHO MEC 2025]",
+          "**Thrombosis history**: past or current DVT or PE, known thrombophilia, recent major surgery with immobilisation, and **postpartum under 21 days** make combined methods category 3-4. [WHO MEC 2025]",
+          "**Cancer and liver**: current or past **breast cancer** (all hormonal methods restricted, copper IUCD category 1), severe cirrhosis, liver tumour and active hepatitis. [WHO MEC 2025]",
           "**Drug history**: rifampicin (TB), anticonvulsants (carbamazepine, phenytoin, lamotrigine), ART (efavirenz) - enzyme inducers make pills and implants unreliable, and **the pill lowers lamotrigine** levels. [FSRH 2023]",
-          "**Menstrual history**: heavy or painful periods favour the LNG-IUS or COC and argue against the copper IUCD; **unexplained vaginal bleeding** must be evaluated before an IUCD or DMPA. [WHO MEC 2015]",
-          "**STI and PID risk**: new or multiple partners, discharge or pelvic pain - current purulent cervicitis, chlamydia, gonorrhoea or PID make **IUCD insertion category 4** until treated. [WHO MEC 2015]",
+          "**Menstrual history**: heavy or painful periods favour the LNG-IUS or COC and argue against the copper IUCD; **unexplained vaginal bleeding** must be evaluated before an IUCD or DMPA. [WHO MEC 2025]",
+          "**STI and PID risk**: new or multiple partners, discharge or pelvic pain - current purulent cervicitis, chlamydia, gonorrhoea or PID make **IUCD insertion category 4** until treated. [WHO MEC 2025]",
           "**Past method experience** and myths (weight gain, infertility, 'cancer', IUCD 'travelling to the heart') - address them directly because fear, not side effects, causes most discontinuation. [MoHFW 2024]",
           "**Reproductive coercion and IPV**: ask privately whether her partner controls or sabotages contraception - a **discreet method (IUCD, implant, injectable)** may be safer. [WHO FP Handbook 2022]"
         ]
@@ -445,7 +445,7 @@ const rewrites: Record<string, TopicRewrite> = {
           "**Male condom technique**: check expiry and packet, open without teeth or nails, pinch the tip to expel air and **roll on to the erect penis before any genital contact**, withdraw while still erect holding the rim, one condom per act, oil-based lubricants (petroleum jelly, coconut oil) damage latex. [WHO FP Handbook 2022]",
           "**Anticipatory guidance on bleeding changes** (spotting with pills early, irregular bleeding then amenorrhoea with DMPA and implant, heavier periods with copper) halves discontinuation. [WHO FP Handbook 2022]",
           "**Male involvement**: offer **no-scalpel vasectomy** actively - it is simpler, safer and cheaper than tubal ligation. [MoHFW 2014]",
-          "**Adolescents**: all methods are medically eligible (age alone is category 1-2), confidentiality is assured, and emergency contraception should be discussed in advance. [WHO MEC 2015]",
+          "**Adolescents**: all methods are medically eligible (age alone is category 1-2), confidentiality is assured, and emergency contraception should be discussed in advance. [WHO MEC 2025]",
           "**Programme support**: ASHA home delivery of condoms, pills and pregnancy kits, **Mission Parivar Vikas**, Nayi Pehel kits for newly married couples, and incentives for PPIUCD, sterilisation and Antara. [MoHFW 2024]"
         ]
       },
@@ -462,13 +462,13 @@ const rewrites: Record<string, TopicRewrite> = {
           "**COC benefits**: regular lighter less painful periods, less acne, and about **50% lower ovarian and endometrial cancer risk** lasting decades; a small rise in cervical and breast cancer risk falls away after stopping. [FSRH 2023]",
           "**COC with interacting drugs**: with **enzyme inducers** switch to a copper IUCD, LNG-IUS or DMPA (unaffected) rather than doubling pills; the COC lowers **lamotrigine** levels, so it is category 3 with lamotrigine monotherapy. [FSRH 2023]",
           "**Progestogen-only pill (POP)**: **levonorgestrel 30 microgram or norethisterone 350 microgram daily** without a break - late if **over 3 hours**; **desogestrel 75 microgram daily** - late if **over 12 hours**; if late, take it at once, continue and use **condoms for 2 days (48 hours)**. [FSRH 2023]",
-          "**POP use**: suits **breastfeeding women** (any time postpartum), smokers over 35, migraine with aura and women with oestrogen contraindications; the main side effect is **irregular bleeding**, and functional ovarian cysts can occur. [WHO MEC 2015]",
+          "**POP use**: suits **breastfeeding women** (any time postpartum), smokers over 35, migraine with aura and women with oestrogen contraindications; the main side effect is **irregular bleeding**, and functional ovarian cysts can occur. [WHO MEC 2025]",
           "**Centchroman (Chhaya) 30 mg**: **one tablet twice a week for the first 3 months** (for example Sunday and Wednesday, first dose on day 1 of the period), then **once a week** on the same day indefinitely; if a dose is late by over 7 days, restart the twice-weekly regimen and use condoms until the next period. [MoHFW 2024]",
           "**Centchroman safety**: non-hormonal, safe in breastfeeding and diabetes; main effect is **delayed periods** (in about 8%) - exclude pregnancy; avoid in **PCOS, cervical hyperplasia, recent jaundice, liver or renal disease, TB** and severe allergy. [MoHFW 2024]",
           "**DMPA IM (Antara) 150 mg deep IM every 3 months (13 weeks)** in the deltoid or gluteus; first dose within **7 days of period start** (no back-up) or any time if not pregnant with **7 days of condoms**; it can be given **up to 2 weeks early and up to 4 weeks late** without back-up. [WHO SPR 2016]",
           "**DMPA-SC 104 mg/0.65 mL** (Uniject) is given subcutaneously every 3 months with the same grace period and can be **self-injected at home** after training - see Devices. [WHO SPR 2016]",
           "**DMPA side effects**: irregular bleeding then **amenorrhoea (about 50% at 1 year)**, weight gain of about **1-2 kg a year**, headache, mood change, reversible **BMD loss**, and **delayed return of fertility (about 10 months)**; it does not cause permanent infertility. [WHO FP Handbook 2022]",
-          "**DMPA cautions**: category 3 with **BP 160/100 or over, vascular disease, multiple cardiovascular risk factors, unexplained vaginal bleeding** and diabetes with complications, category 4 in **current breast cancer**; it is category 2 under 18 and over 45 because of bone. [WHO MEC 2015]",
+          "**DMPA cautions**: category 3 with **BP 160/100 or over, vascular disease, multiple cardiovascular risk factors, unexplained vaginal bleeding** and diabetes with complications, category 4 in **current breast cancer**; it is category 2 under 18 and over 45 because of bone. [WHO MEC 2025]",
           "**Etonogestrel implant (68 mg, single rod)**: inhibits ovulation for **3 years** (evidence to 5); the levonorgestrel two-rod implant lasts 5 years; insert within 7 days of period start for immediate cover, otherwise 7 days of condoms. [WHO FP Handbook 2022]",
           "**Implant side effects**: unpredictable bleeding (the main reason for removal), acne, headache and breast tenderness; fertility returns **within days of removal**, and effectiveness falls with enzyme inducers. [WHO FP Handbook 2022]",
           "**Troublesome progestogen-only bleeding** (implant or DMPA): exclude infection and pregnancy, then give **mefenamic acid 500 mg twice or three times daily for 5 days** or, if eligible, a **COC for up to 3 months**. [FSRH 2023]",
@@ -504,7 +504,7 @@ const rewrites: Record<string, TopicRewrite> = {
       {
         "heading": "Special situations (postpartum, post-abortion, perimenopause) and sterilisation",
         "points": [
-          "**Postpartum**: copper IUCD within 48 hours or from 4-6 weeks; **POP, implant immediately** (DMPA from 6 weeks if breastfeeding per WHO); **COC not before 6 months if breastfeeding** (category 4 under 6 weeks, 3 at 6 weeks-6 months) or 21 days if not breastfeeding. [WHO MEC 2015]",
+          "**Postpartum**: copper IUCD within 48 hours or from 4-6 weeks; **POP, implant and now DMPA/NET-EN immediately** (breastfeeding under 6 weeks is **category 2 for all progestogen-only methods, DMPA raised from 3 to 2**); **COC not before 6 months if breastfeeding** (category 4 under 6 weeks, 3 at 6 weeks-6 months) or 21 days if not breastfeeding. [WHO MEC 2025]",
           "**Post-abortion**: ovulation returns within **2 weeks**, so start any method (IUCD, implant, pills, injectable) **the same day** after uncomplicated first-trimester abortion; IUCD is category 4 after septic abortion. [WHO SPR 2016]",
           "**Perimenopause**: continue contraception until **2 years after the last period if under 50 or 1 year if over 50**, or until age 55; COC is suitable till 50 in a healthy non-smoker, DMPA is best stopped by 50 (bone). [FSRH 2023]",
           "**HIV**: all methods are category 1-2 except that IUCD insertion is **category 3 with severe or advanced clinical disease (WHO stage 3-4)**; efavirenz-based ART lowers implant and pill efficacy, whereas dolutegravir does not. [WHO MEC 2015]",
@@ -577,7 +577,7 @@ const rewrites: Record<string, TopicRewrite> = {
             "Breastfeeding under 6 weeks",
             "4",
             "2",
-            "3 (WHO)",
+            "2 (WHO 2025; was 3)",
             "Under 48 h: 1 / 2; 48 h-4 weeks: 3 / 3"
           ],
           [
@@ -767,10 +767,11 @@ const rewrites: Record<string, TopicRewrite> = {
       "DMPA can be given up to 4 weeks late without back-up; warn about amenorrhoea, weight gain and a 10-month delay in fertility.",
       "Vasectomy needs 3 months of condoms and a semen analysis showing azoospermia before it can be relied upon.",
       "Spouse consent is not required for sterilisation in India; the woman must be 22-49 with at least one child over 1 year.",
-      "Chhaya is the non-hormonal weekly pill for a breastfeeding woman; start twice weekly for 3 months, then weekly."
+      "Chhaya is the non-hormonal weekly pill for a breastfeeding woman; start twice weekly for 3 months, then weekly.",
+      "WHO MEC 6th edition (2025) reaffirmed the 2015 categories and changed about 112 - the exam one: **DMPA in a breastfeeding woman under 6 weeks postpartum is now category 2** (was 3)."
     ],
     "references": [
-      "WHO. Medical eligibility criteria for contraceptive use, 5th edition, 2015.",
+      "WHO. Medical eligibility criteria for contraceptive use, 6th edition, 2025.",
       "WHO. Selected practice recommendations for contraceptive use, 3rd edition, 2016.",
       "WHO and Johns Hopkins CCP. Family Planning: A Global Handbook for Providers, 2022 edition.",
       "MoHFW Family Planning Division. Reference manuals for IUCD and PPIUCD services (2018), injectable MPA (2016), oral pills (2016) and female and male sterilisation (2014).",
@@ -823,7 +824,7 @@ const rewrites: Record<string, TopicRewrite> = {
           "**Drug history**: valproate, anabolic steroids, danazol and testosterone gels cause hirsutism or PCOS-like cycles. [Speroff 9e]",
           "**Family history** of type 2 diabetes, PCOS, premature cardiovascular disease and dyslipidaemia. [PCOS Guideline 2023]",
           "**Screen for mood** (PHQ-9 and GAD-7), **eating disorders**, body-image distress and snoring or daytime sleepiness (OSA). [PCOS Guideline 2023]",
-          "**Contraceptive needs and MEC factors** (migraine with aura, smoking, BP, VTE) before prescribing a COC. [WHO MEC 2015]"
+          "**Contraceptive needs and MEC factors** (migraine with aura, smoking, BP, VTE) before prescribing a COC. [WHO MEC 2025]"
         ]
       },
       {
@@ -883,7 +884,7 @@ const rewrites: Record<string, TopicRewrite> = {
           "**Letrozole in India**: its use for ovulation induction is **off-label** (DCGI 2011 advisory), so document informed consent; side effects are hot flushes, headache and fatigue, and it has no antioestrogenic effect on the endometrium or mucus. [FOGSI 2018]",
           "**Clomiphene citrate (SERM)**: blocks hypothalamic oestrogen receptors so GnRH and FSH rise; **50 mg once daily on days 2-6**, increasing to **100 then 150 mg**; maximum **6 ovulatory cycles** (12 in total); side effects are hot flushes, visual blurring (stop), multiple pregnancy (about 8-10%) and thin endometrium. [PCOS Guideline 2023]",
           "**Monitoring ovulation induction**: **follicle tracking by TVS** at least in the first cycle, **mid-luteal (day 21) progesterone over 10 nmol/L (3 ng/mL)** confirms ovulation, and intercourse every 2-3 days from day 10. [PCOS Guideline 2023]",
-          "**Second and third line**: **gonadotrophins** (low-dose step-up) or **laparoscopic ovarian drilling** for letrozole-resistant women, then **IVF** (antagonist protocol with agonist trigger to prevent OHSS) - specialist care. [PCOS Guideline 2023]",
+          "**Second and third line**: **gonadotrophins** (low-dose step-up; **WHO 2025 prefers these over laparoscopic ovarian drilling**) or ovarian drilling for letrozole-resistant women, then **IVF** (antagonist protocol with agonist trigger to prevent OHSS) - specialist care. [PCOS Guideline 2023; WHO 2025]",
           "**Treat comorbidities on merit**: statins by cardiovascular risk score, antihypertensives to target, and diabetes per standard guidelines. [PCOS Guideline 2023]"
         ]
       },
@@ -1110,7 +1111,7 @@ const rewrites: Record<string, TopicRewrite> = {
           "**Offer the STI panel** to every woman with an STI or PID: **HIV, syphilis (RPR or VDRL confirmed with TPHA)** and HBsAg, plus cervical screening if due. [NACO 2024]",
           "**For PID**: CBC, CRP or ESR, urine microscopy (exclude UTI), and **transvaginal ultrasound** if a mass or TOA is suspected or she is severely ill. [CDC 2021]",
           "**Fasting glucose or HbA1c** in recurrent candidiasis; **HIV test** if recurrent or severe. [CDC 2021]",
-          "**Do not**: treat a partner for BV or candida, repeat antibiotics for physiological discharge, or do a high vaginal swab culture for BV (Gardnerella grows in normal women too). [CDC 2021]"
+          "**Do not**: treat a partner for candida or a first episode of BV, repeat antibiotics for physiological discharge, or do a high vaginal swab culture for BV (Gardnerella grows in normal women too). [CDC 2021]"
         ]
       },
       {
@@ -1119,7 +1120,7 @@ const rewrites: Record<string, TopicRewrite> = {
           "**Reassure** women with physiological discharge, explain the normal cycle, and avoid antibiotics - over-treatment is a recognised programme failure. [NACO 2024]",
           "**Hygiene advice**: avoid douching, perfumed soaps and bubble baths; wash the vulva with plain water; loose cotton underwear; change menstrual cloths or pads 4-6 hourly and dry cloths in sunlight. [NACO 2024]",
           "**Four Cs of STI care**: **Compliance** with the full course, **Counselling** on risk reduction, **Condom** promotion and provision, and **Contact (partner) treatment**. [NACO 2024]",
-          "**Partner treatment**: treat partners of women with **trichomoniasis, cervicitis and PID** regardless of their symptoms (Kit 1 for the male partner); **do not** treat partners for BV or candidiasis. [NACO 2024]",
+          "**Partner treatment**: treat partners of women with **trichomoniasis, cervicitis and PID** regardless of their symptoms (Kit 1 for the male partner); **do not** treat partners for candidiasis or a first episode of BV; for **recurrent symptomatic BV with a male partner, consider concurrent partner therapy** (oral metronidazole plus **2% clindamycin cream to penile skin, both twice daily for 7 days**). [NACO 2024; ACOG 2025]",
           "**Abstain or use condoms** until 7 days after both partners complete treatment and symptoms resolve. [CDC 2021]",
           "**Control predisposing factors**: glucose control in diabetes, review steroids and unnecessary antibiotics, remove foreign bodies and treat atrophy with local oestrogen. [CDC 2021]",
           "**Designated STI/RTI clinics (Suraksha clinics)** provide free kits, counselling and testing; refer or link the woman there. [NACO 2024]"
@@ -1142,7 +1143,7 @@ const rewrites: Record<string, TopicRewrite> = {
           "**Doxycycline cautions**: photosensitivity, **pill oesophagitis**, GI upset; **contraindicated in pregnancy, breastfeeding and children under 8** (teeth staining, bone deposition). [CDC 2021]",
           "**PID - outpatient (mild to moderate)**: **ceftriaxone 500 mg IM single dose + doxycycline 100 mg twice daily for 14 days + metronidazole 500 mg twice daily for 14 days**; NACO Kit 6 uses **cefixime 400 mg single dose + doxycycline 100 mg BD + metronidazole 400 mg BD, both for 14 days**. [CDC 2021]",
           "**PID - inpatient**: **ceftriaxone 1 g IV every 24 hours + doxycycline 100 mg orally or IV twice daily + metronidazole 500 mg orally or IV twice daily**; or **clindamycin 900 mg IV 8-hourly + gentamicin** (2 mg/kg load then 1.5 mg/kg 8-hourly, or 3-5 mg/kg once daily) for TOA; switch to oral 24-48 hours after improvement to complete **14 days**. [CDC 2021]",
-          "**PID with an IUCD in place**: treat without removing the device; remove only if there is **no improvement in 48-72 hours**. [WHO MEC 2015]",
+          "**PID with an IUCD in place**: treat without removing the device; remove only if there is **no improvement in 48-72 hours**. [WHO MEC 2025]",
           "**PID in pregnancy** (rare, but serious): admit and give parenteral **ceftriaxone plus azithromycin** (no doxycycline); exclude ectopic first. [CDC 2021]",
           "**Analgesia**: paracetamol 1 g 6-hourly or ibuprofen 400 mg 8-hourly with food for pelvic pain. [CDC 2021]",
           "**Atrophic vaginitis**: **estriol 0.1% cream (or conjugated oestrogen cream 0.5 g) intravaginally nightly for 2 weeks, then twice weekly**; minimal systemic absorption. [NAMS 2022]"
@@ -1163,7 +1164,7 @@ const rewrites: Record<string, TopicRewrite> = {
           "**Test of cure** is not needed for uncomplicated chlamydia or gonorrhoea, but **retest at 3 months** for reinfection, and test of cure in pregnancy. [CDC 2021]",
           "**Recurrent BV or candida** (3 or more a year): confirm the diagnosis by microscopy or culture, check glucose and HIV, and start suppressive therapy. [CDC 2021]",
           "**Counsel after PID** about future infertility and ectopic risk - she should seek **early ultrasound in any future pregnancy**. [CDC 2021]",
-          "**IUCD after PID**: past PID with a later pregnancy is **WHO MEC 1**; current PID is **category 4 to insert** - treat first, insert after 3 months. [WHO MEC 2015]",
+          "**IUCD after PID**: past PID with a later pregnancy is **WHO MEC 1**; current PID is **category 4 to insert** - treat first, insert after 3 months. [WHO MEC 2025]",
           "**Refer**: TOA, suspected cervical cancer (visible growth, contact bleeding in over 35 - biopsy), non-response to two courses, children with discharge (child-protection pathway), and complicated STIs to the Suraksha clinic. [NACO 2024]"
         ]
       }
@@ -1204,7 +1205,7 @@ const rewrites: Record<string, TopicRewrite> = {
           ],
           [
             "Partner treatment",
-            "No",
+            "Not routinely; consider for recurrent BV (ACOG 2025)",
             "No",
             "Yes, always"
           ]
@@ -1337,7 +1338,7 @@ const rewrites: Record<string, TopicRewrite> = {
       "Vaginitis itches or smells with a normal cervix; cervicitis bleeds from a friable os and needs gonorrhoea-chlamydia cover.",
       "Amsel 3 of 4: thin discharge, pH over 4.5, positive whiff, clue cells over 20%.",
       "Candidiasis is the only vaginitis with a normal pH - a pH strip sorts most cases at the bedside.",
-      "Trichomoniasis is an STI (treat partner); BV and candidiasis are not (do not treat partner).",
+      "Trichomoniasis is an STI (treat partner); candidiasis and first-episode BV are not (do not treat partner) - but ACOG (Oct 2025) now advises considering male-partner therapy for **recurrent** BV.",
       "One of cervical motion, uterine or adnexal tenderness is enough to treat PID - the cost of waiting is her tubes.",
       "Write PID treatment in full: ceftriaxone 500 mg IM stat, doxycycline 100 mg BD and metronidazole 500 mg BD for 14 days (NACO Kit 6 uses cefixime).",
       "Infertility after PID: about 12% after one episode, 25% after two, 50% after three.",
@@ -1348,7 +1349,7 @@ const rewrites: Record<string, TopicRewrite> = {
       "NACO. National Technical Guidelines on STI/RTI management (colour-coded kits), MoHFW, Government of India.",
       "CDC. Sexually Transmitted Infections Treatment Guidelines, 2021.",
       "WHO. Guidelines for the management of symptomatic sexually transmitted infections, 2021.",
-      "WHO. Medical eligibility criteria for contraceptive use, 5th edition, 2015.",
+      "WHO. Medical eligibility criteria for contraceptive use, 6th edition, 2025.",
       "Berek and Novak's Gynecology, 16th edition; Shaw's Textbook of Gynaecology, 18th edition."
     ]
   },
@@ -1358,8 +1359,8 @@ const rewrites: Record<string, TopicRewrite> = {
       {
         "heading": "Definition and the classification that matters",
         "points": [
-          "**Infertility**: no clinical pregnancy after **12 months of regular (every 2-3 days) unprotected intercourse**; about **85% of couples conceive within 12 months** and a further 7% in the second year, and normal fecundability is **about 20-25% per cycle**. [NICE CG156 2017]",
-          "**Start investigating early**: after **6 months if the woman is 35 or over**, and **immediately** with amenorrhoea or oligomenorrhoea, previous PID or pelvic surgery, stage III-IV endometriosis, known male factor (undescended testes, chemotherapy) or age 38 or over. [NICE CG156 2017]",
+          "**Infertility**: no clinical pregnancy after **12 months of regular (every 2-3 days) unprotected intercourse**; about **85% of couples conceive within 12 months** and a further 7% in the second year, and normal fecundability is **about 20-25% per cycle**. [NICE NG257 2026]",
+          "**Start investigating early**: after **6 months if the woman is 35 or over**, and **immediately** with amenorrhoea or oligomenorrhoea, previous PID or pelvic surgery, stage III-IV endometriosis, known male factor (undescended testes, chemotherapy) or age 38 or over. [NICE NG257 2026]",
           "**Primary infertility** means she has never conceived; **secondary** means a previous conception however it ended - in India secondary infertility is a clue to **post-abortal or puerperal infection and genital tuberculosis**. [FOGSI 2018]",
           "**Causes (approximate)**: male factor **30-40%**, ovulatory **25-30%**, tubal and peritoneal **25-35%**, uterine and cervical 5-10%, **unexplained 10-15%**, and both partners in 20-30% - hence both are tested from the first visit. [Shaw 18e]",
           "**WHO classification of ovulatory disorders**: **Group I** hypogonadotropic hypogonadism, **Group II** normogonadotropic normo-oestrogenic anovulation (**PCOS, about 85%**), **Group III** hypergonadotropic (premature ovarian insufficiency), with hyperprolactinaemia separate. [ESHRE 2023]",
@@ -1374,7 +1375,7 @@ const rewrites: Record<string, TopicRewrite> = {
           "**Ovarian reserve**: a woman is born with about **1-2 million oocytes**, has about 400 000 at puberty, and loses them continuously; after **35 both number and quality fall** (meiotic errors cause **aneuploidy and miscarriage**), which is why age is the strongest predictor of success. [Speroff 9e]",
           "**AMH** is made by **granulosa cells of preantral and small antral follicles**, so it mirrors the remaining follicle pool; it predicts **response to stimulation, not natural conception**. [ESHRE 2023]",
           "**Tube anatomy and function**: fimbriae pick up the oocyte, the **ampulla** is the site of fertilisation, and ciliary beating and peristalsis carry the embryo to the uterus over **3-4 days**; infection (chlamydia, gonorrhoea, TB) destroys cilia and occludes the lumen, causing **infertility and ectopic pregnancy**. [Berek and Novak 16e]",
-          "**Hydrosalpinx** fluid refluxes into the cavity and is **embryotoxic**, roughly **halving IVF implantation** - hence salpingectomy or proximal occlusion before IVF. [NICE CG156 2017]",
+          "**Hydrosalpinx** fluid refluxes into the cavity and is **embryotoxic**, roughly **halving IVF implantation** - hence salpingectomy or proximal occlusion before IVF. [NICE NG257 2026]",
           "**Genital TB** spreads haematogenously from a primary focus to the **tubes (almost always, bilateral)** then the endometrium, causing **beaded 'pipe-stem' tubes, tubal blocks and intrauterine synechiae** with hypomenorrhoea or amenorrhoea. [FOGSI 2018]",
           "**Uterine factors**: **submucosal fibroids and polyps** distort the cavity and impair implantation; **Asherman syndrome** (adhesions after curettage or TB) destroys the basal endometrium; a **septate uterus** raises miscarriage. [Berek and Novak 16e]",
           "**Endometriosis** impairs fertility by **pelvic adhesions distorting tubo-ovarian anatomy**, inflammatory peritoneal fluid toxic to gametes and embryos, and endometriomas that reduce ovarian reserve. [ESHRE 2022]",
@@ -1391,16 +1392,16 @@ const rewrites: Record<string, TopicRewrite> = {
         "heading": "History in the OPD",
         "points": [
           "**See the couple together** first, then each privately; use the word 'couple', and state that infertility is **not the woman's fault** - the social burden in Indian families falls almost entirely on her. [FOGSI 2018]",
-          "**Duration and age**: years of trying, **woman's age** (the most important prognostic factor), frequency of intercourse and previous investigations or treatment. [NICE CG156 2017]",
-          "**Menstrual history**: cycle length and regularity (a regular 24-38 day cycle with premenstrual symptoms is about 95% predictive of ovulation), **hypomenorrhoea** (TB, Asherman), amenorrhoea and dysmenorrhoea. [NICE CG156 2017]",
+          "**Duration and age**: years of trying, **woman's age** (the most important prognostic factor), frequency of intercourse and previous investigations or treatment. [NICE NG257 2026]",
+          "**Menstrual history**: cycle length and regularity (a regular 24-38 day cycle with premenstrual symptoms is about 95% predictive of ovulation), **hypomenorrhoea** (TB, Asherman), amenorrhoea and dysmenorrhoea. [NICE NG257 2026]",
           "**Obstetric and pelvic history**: previous pregnancies and how they ended, **post-abortal or puerperal fever, D and C**, ectopic, PID, appendicitis with peritonitis and pelvic surgery - each scars tubes or the cavity. [Shaw 18e]",
           "**Endocrine symptoms**: galactorrhoea and headache (prolactinoma), hirsutism and acne (PCOS), heat or cold intolerance (thyroid), hot flushes (POI), weight change, and extreme exercise or eating disorder (hypothalamic). [Shaw 18e]",
           "**Endometriosis clues**: progressive dysmenorrhoea, **deep dyspareunia**, dyschezia and chronic pelvic pain. [ESHRE 2022]",
           "**TB history**: past pulmonary TB or contact, and **constitutional symptoms** - genital TB may present with infertility alone. [FOGSI 2018]",
           "**Male history**: previous paternity, **undescended testis** and age at orchidopexy, **mumps orchitis** after puberty, torsion, hernia or hydrocele surgery, STIs, erectile and ejaculatory function, and occupational heat. [EAU 2024]",
           "**Coital history (the commonest omission)**: frequency, timing, penetration, lubricants, **vaginismus or erectile dysfunction**, and long separations for work - each is easily corrected. [Shaw 18e]",
-          "**Drugs and habits in both**: **smoking and chewed tobacco**, alcohol, cannabis, **anabolic steroids or testosterone**, sulfasalazine, antipsychotics (prolactin), chemotherapy and radiotherapy. [NICE CG156 2017]",
-          "**Family history** of early menopause, genetic disorders or consanguinity, and **rubella immunity and vaccination status**. [NICE CG156 2017]"
+          "**Drugs and habits in both**: **smoking and chewed tobacco**, alcohol, cannabis, **anabolic steroids or testosterone**, sulfasalazine, antipsychotics (prolactin), chemotherapy and radiotherapy. [NICE NG257 2026]",
+          "**Family history** of early menopause, genetic disorders or consanguinity, and **rubella immunity and vaccination status**. [NICE NG257 2026]"
         ]
       },
       {
@@ -1421,27 +1422,27 @@ const rewrites: Record<string, TopicRewrite> = {
         "points": [
           "**Semen analysis first** (before any invasive test on the woman): **2-7 days of abstinence**, masturbation into a sterile wide-mouthed container (no condom or lubricant), whole sample, delivered **within 1 hour at body temperature**. [WHO 2021]",
           "**WHO 2021 lower reference limits (5th centile of fertile men)**: volume **1.4 mL**, concentration **16 million/mL**, total **39 million per ejaculate**, total motility **42%**, progressive motility **30%**, vitality **54%**, normal forms **4%** - repeat an abnormal result after **3 months** (sooner if severe). [WHO 2021]",
-          "**Confirm ovulation** in women with regular cycles by **mid-luteal progesterone taken 7 days before the expected period** (day 21 of a 28-day cycle, day 28 of a 35-day cycle); **over 3 ng/mL (10 nmol/L)** confirms ovulation, and in irregular cycles anovulation needs no proof. [NICE CG156 2017]",
-          "**Endocrine tests are targeted**: **TSH** in women with symptoms or before treatment, **prolactin** only with oligomenorrhoea, amenorrhoea or galactorrhoea, and **day 2-5 FSH, LH and oestradiol** with irregular cycles (WHO group). [NICE CG156 2017]",
-          "**Ovarian reserve**: **AMH** (any day) and **antral follicle count** (2-10 mm follicles in both ovaries on day 2-5 TVS); low values mean **refer early**, not 'cannot conceive'. [ESHRE 2023]",
-          "**Transvaginal ultrasound**: fibroids (FIGO type), polyps, adenomyosis, PCOM, endometrioma and **hydrosalpinx**. [NICE CG156 2017]",
-          "**Tubal patency - low risk**: **hysterosalpingography on days 6-11** (after bleeding stops, before ovulation), with an NSAID beforehand and doxycycline cover if PID risk; free peritoneal spill confirms patency, and a proximal block may be **cornual spasm**. [NICE CG156 2017]",
-          "**Tubal patency - high risk** (previous PID, ectopic, pelvic surgery, endometriosis): **laparoscopy with chromopertubation**, which diagnoses and treats adhesions and endometriosis, plus hysteroscopy if the cavity is abnormal. [NICE CG156 2017]",
+          "**Confirm ovulation** in women with regular cycles by **mid-luteal progesterone taken 7 days before the expected period** (day 21 of a 28-day cycle, day 28 of a 35-day cycle); **over 3 ng/mL (10 nmol/L)** confirms ovulation, and in irregular cycles anovulation needs no proof. [NICE NG257 2026]",
+          "**Endocrine tests are targeted**: **TSH** in women with symptoms or before treatment, **prolactin** only with oligomenorrhoea, amenorrhoea or galactorrhoea, and **day 2-5 FSH, LH and oestradiol** with irregular cycles (WHO group). [NICE NG257 2026]",
+          "**Ovarian reserve**: **AMH** (any day) or **antral follicle count** (2-10 mm follicles in both ovaries on day 2-5 TVS) predict ovarian response - **do not use FSH** for this; low values mean **refer early**, not 'cannot conceive'. [NICE NG257 2026]",
+          "**Transvaginal ultrasound**: fibroids (FIGO type), polyps, adenomyosis, PCOM, endometrioma and **hydrosalpinx**. [NICE NG257 2026]",
+          "**Tubal patency - low risk**: **hysterosalpingography on days 6-11** (after bleeding stops, before ovulation), with an NSAID beforehand and doxycycline cover if PID risk; free peritoneal spill confirms patency, and a proximal block may be **cornual spasm**. [NICE NG257 2026]",
+          "**Tubal patency - high risk** (previous PID, ectopic, pelvic surgery, endometriosis): **laparoscopy with chromopertubation**, which diagnoses and treats adhesions and endometriosis, plus hysteroscopy if the cavity is abnormal. [NICE NG257 2026]",
           "**Genital TB work-up** (hypomenorrhoea, synechiae, beaded tubes): **premenstrual endometrial aspirate for CBNAAT (Xpert), liquid culture and histology for granulomas**; chest X-ray. [FOGSI 2018]",
           "**Men with abnormal semen**: FSH, LH, testosterone and prolactin; **karyotype and Y-chromosome microdeletion** if concentration is **under 5 million/mL** or non-obstructive azoospermia; **CFTR** if vasa are absent; scrotal ultrasound if examination is difficult. [EAU 2024]",
           "**Preconception screening**: Hb, blood group, **rubella IgG**, HIV, HBsAg, VDRL, and glucose. [MoHFW 2024]",
-          "**Do not order routinely**: basal body temperature charts, post-coital test, anti-sperm antibodies, **Mantoux or IGRA to diagnose genital TB**, endometrial biopsy to 'date' the endometrium, or thrombophilia screens. [NICE CG156 2017]"
+          "**Do not order routinely**: basal body temperature charts, post-coital test, anti-sperm antibodies, **Mantoux or IGRA to diagnose genital TB**, endometrial biopsy to 'date' the endometrium, or thrombophilia screens. [NICE NG257 2026]"
         ]
       },
       {
         "heading": "Treatment - general measures",
         "points": [
-          "**Intercourse every 2-3 days throughout the cycle** rather than timed intercourse, which adds stress; avoid oil-based lubricants. [NICE CG156 2017]",
-          "**Weight**: aim for BMI **19-30** (Asian ideal 18.5-23); a **5-10% weight loss** in obese anovulatory women restores ovulation in many. [NICE CG156 2017]",
-          "**Stop smoking and chewed tobacco in both partners**, limit alcohol (none for the woman trying to conceive; under 3-4 units a day for men), and limit caffeine. [NICE CG156 2017]",
+          "**Intercourse every 2-3 days throughout the cycle** rather than timed intercourse, which adds stress; avoid oil-based lubricants. [NICE NG257 2026]",
+          "**Weight**: aim for BMI **19-30** (Asian ideal 18.5-23); a **5-10% weight loss** in obese anovulatory women restores ovulation in many. [NICE NG257 2026]",
+          "**Stop smoking and chewed tobacco in both partners**, limit alcohol (none for the woman trying to conceive; under 3-4 units a day for men), and limit caffeine. [NICE NG257 2026]",
           "**Men**: avoid tight underwear, hot baths, saunas, and laptops on the lap; **stop testosterone and anabolic steroids** (recovery takes 6-12 months). [EAU 2024]",
           "**Folic acid 400 microgram daily** from the first visit (**5 mg** with previous NTD, diabetes, antiepileptics or BMI over 30), and **rubella vaccination** if non-immune with 1 month of contraception after. [MoHFW 2024]",
-          "**Psychological support**: infertility causes depression, marital conflict and social stigma; offer counselling and involve both partners. [NICE CG156 2017]",
+          "**Psychological support**: infertility causes depression, marital conflict and social stigma; offer counselling and involve both partners. [NICE NG257 2026]",
           "**Law and ethics**: ART clinics must be **registered under the ART (Regulation) Act 2021**; the **Surrogacy (Regulation) Act 2021** bans commercial surrogacy; the **PC-PNDT Act 1994** bans sex selection. [ART Act 2021]"
         ]
       },
@@ -1449,11 +1450,11 @@ const rewrites: Record<string, TopicRewrite> = {
         "heading": "Treatment - drugs",
         "points": [
           "**Letrozole (aromatase inhibitor) - first-line ovulation induction in PCOS**: **2.5 mg once daily on days 3-7**, increasing by 2.5 mg per cycle to **7.5 mg** if no ovulation; higher live-birth rate than clomiphene; side effects hot flushes, fatigue, headache; **off-label in India** - document consent. [PCOS Guideline 2023]",
-          "**Clomiphene citrate (SERM)**: **50 mg once daily on days 2-6**, increasing by 50 mg to **150 mg**; **maximum 6 ovulatory cycles**; side effects hot flushes, **visual disturbance (stop the drug)**, multiple pregnancy (8-10%), thin endometrium and cervical mucus hostility. [NICE CG156 2017]",
-          "**Monitoring ovulation induction**: **follicle tracking by TVS** from day 10 in at least the first cycle (a leading follicle of **18-22 mm** is mature), mid-luteal progesterone to confirm ovulation, and **cancel if 3 or more follicles over 16 mm** because of multiple pregnancy and OHSS. [NICE CG156 2017]",
-          "**hCG trigger** (specialist): **urinary hCG 5000-10 000 IU IM or recombinant hCG 250 microgram SC** when the leading follicle reaches 18-20 mm; ovulation follows in **about 36 hours**, so time intercourse or IUI accordingly. [NICE CG156 2017]",
-          "**Metformin** (500 mg daily titrated to **1500-2000 mg/day with meals**) is an **adjunct** in obese or insulin-resistant PCOS or clomiphene resistance, not a stand-alone ovulation inducer. [PCOS Guideline 2023]",
-          "**Gonadotrophins** (specialist): **recombinant FSH or hMG 37.5-75 IU SC daily** in a low-dose step-up protocol for letrozole- or clomiphene-resistant PCOS and WHO group I; **pulsatile GnRH or hMG (FSH plus LH)** is the treatment for hypothalamic amenorrhoea. [NICE CG156 2017]",
+          "**Clomiphene citrate (SERM)**: **50 mg once daily on days 2-6**, increasing by 50 mg to **150 mg**; **maximum 6 ovulatory cycles**; side effects hot flushes, **visual disturbance (stop the drug)**, multiple pregnancy (8-10%), thin endometrium and cervical mucus hostility. [NICE NG257 2026]",
+          "**Monitoring ovulation induction**: **follicle tracking by TVS** from day 10 in at least the first cycle (a leading follicle of **18-22 mm** is mature), mid-luteal progesterone to confirm ovulation, and **cancel if 3 or more follicles over 16 mm** because of multiple pregnancy and OHSS. [NICE NG257 2026]",
+          "**hCG trigger** (specialist): **urinary hCG 5000-10 000 IU IM or recombinant hCG 250 microgram SC** when the leading follicle reaches 18-20 mm; ovulation follows in **about 36 hours**, so time intercourse or IUI accordingly. [NICE NG257 2026]",
+          "**Metformin** (500 mg daily titrated to **1500-2000 mg/day with meals**) is an **adjunct**, not a stand-alone ovulation inducer; WHO prefers **letrozole alone over letrozole plus metformin**, and where letrozole cannot be used, **clomiphene plus metformin** rather than either alone. [WHO 2025]",
+          "**Gonadotrophins** (specialist): **recombinant FSH or hMG 37.5-75 IU SC daily** in a low-dose step-up protocol for letrozole- or clomiphene-resistant PCOS (**preferred over laparoscopic ovarian drilling**, WHO 2025) and WHO group I; **pulsatile GnRH or hMG (FSH plus LH)** is the treatment for hypothalamic amenorrhoea. [NICE NG257 2026]",
           "**Hyperprolactinaemia**: **cabergoline 0.25 mg twice weekly**, increasing monthly to **0.5-1 mg twice weekly**, taken **with food at bedtime** to reduce nausea and dizziness; stop once pregnant (unless macroadenoma); **bromocriptine 1.25 mg at night increasing to 2.5 mg two or three times daily** is the alternative. [Endocrine Society 2011]",
           "**Dopamine agonist side effects**: nausea, postural hypotension, headache, and **impulse-control disorders**; high-dose cabergoline for Parkinson's causes valvulopathy (not at fertility doses, but echo if long term over 2 mg/week). [Endocrine Society 2011]",
           "**Hypothyroidism**: **levothyroxine 25-50 microgram daily**, titrated 6-weekly to **TSH under 2.5 mIU/L before conception**, taken **on an empty stomach 30-60 minutes before breakfast** and apart from iron and calcium by 4 hours; increase the dose by about **25-30% once pregnant**. [ATA 2017]",
@@ -1461,27 +1462,27 @@ const rewrites: Record<string, TopicRewrite> = {
           "**Luteal support in ART** (specialist): **micronised progesterone 200 mg vaginally three times a day or 400 mg twice daily** (or 8% gel 90 mg daily) from oocyte retrieval to about 8-10 weeks. [ESHRE 2019]",
           "**Male hypogonadotropic hypogonadism**: **hCG 1500-2000 IU SC twice weekly**, adding FSH 75-150 IU three times weekly if needed - never testosterone, which suppresses sperm production. [EAU 2024]",
           "**Male factor - other treatment**: varicocele repair only for a **clinical varicocele with abnormal semen**; antioxidants have weak evidence; severe oligozoospermia or azoospermia goes to **ICSI**, with surgical sperm retrieval (TESA, micro-TESE). [EAU 2024]",
-          "**Empirical treatments not to use**: clomiphene for unexplained infertility (no benefit), antitubercular therapy on a positive Mantoux, progesterone for 'luteal phase defect', and steroids for antisperm antibodies. [NICE CG156 2017]"
+          "**Empirical treatments not to use**: **stand-alone clomiphene or letrozole (without IUI) for unexplained infertility**, antitubercular therapy on a positive Mantoux, progesterone for 'luteal phase defect', and steroids for antisperm antibodies. [NICE NG257 2026]"
         ]
       },
       {
         "heading": "Special situations and complications of treatment",
         "points": [
           "**Ovarian hyperstimulation syndrome**: after hCG trigger, VEGF raises capillary permeability, causing **ovarian enlargement, ascites, haemoconcentration, oliguria and thrombosis**; PCOS, young age and high AMH are the main risk factors; severe OHSS (clinical ascites, **Hct over 45%**, oliguria) needs admission and thromboprophylaxis. [RCOG GTG5 2016]",
-          "**Multiple pregnancy and ectopic pregnancy** are commoner after ovulation induction and ART - an **early ultrasound at 6-7 weeks** is advised in any treated conception. [NICE CG156 2017]",
-          "**Intrauterine insemination** suits mild male factor, sexual dysfunction and unexplained infertility (with at least one patent tube); **IVF** suits tubal disease, failed IUI, endometriosis and unexplained infertility over 2 years; **ICSI** for severe male factor. [NICE CG156 2017]",
-          "**Unexplained infertility**: after 2 years of trying (including the first year), **offer IVF**; expectant management is reasonable in young women with short duration. [NICE CG156 2017]"
+          "**Multiple pregnancy and ectopic pregnancy** are commoner after ovulation induction and ART - an **early ultrasound at 6-7 weeks** is advised in any treated conception. [NICE NG257 2026]",
+          "**Intrauterine insemination** suits mild male factor, sexual dysfunction and unexplained infertility (with at least one patent tube); **IVF** suits tubal disease, failed IUI, endometriosis and unexplained infertility over 2 years; **ICSI** for severe male factor. [NICE NG257 2026]",
+          "**Unexplained infertility** (12 months, ovulation confirmed, patent tubes, normal semen): stepwise **expectant management -> stimulated IUI with clomiphene or letrozole (not gonadotrophins) -> IVF**; NICE advises a **total of 2 years of trying before treatment** and no stand-alone ovarian stimulation. [WHO 2025; NICE NG257 2026]"
         ]
       },
       {
         "heading": "Follow-up, monitoring and when to refer",
         "points": [
-          "**Complete the first-line work-up within 2 cycles** and review the couple with all results together. [NICE CG156 2017]",
-          "**During ovulation induction**: review every cycle, confirm ovulation, track follicles, and **stop after 6 ovulatory cycles** without pregnancy. [NICE CG156 2017]",
-          "**Refer at once**: woman **38 or over**, amenorrhoea, **raised FSH or very low AMH**, known tubal disease or hydrosalpinx, uterine anomaly or Asherman syndrome, stage III-IV endometriosis. [NICE CG156 2017]",
+          "**Complete the first-line work-up within 2 cycles** and review the couple with all results together. [NICE NG257 2026]",
+          "**During ovulation induction**: review every cycle, confirm ovulation, track follicles, and **stop after 6 ovulatory cycles** without pregnancy. [NICE NG257 2026]",
+          "**Refer at once**: woman **38 or over**, amenorrhoea, **raised FSH or very low AMH**, known tubal disease or hydrosalpinx, uterine anomaly or Asherman syndrome, stage III-IV endometriosis. [NICE NG257 2026]",
           "**Refer the man**: azoospermia on two samples, **concentration under 5 million/mL**, absent vasa, small testes or raised FSH - for genetic tests and ICSI planning. [EAU 2024]",
-          "**Refer after failed first-line treatment**: no conception after 6 ovulatory cycles of letrozole or clomiphene, or anovulation on maximum dose. [NICE CG156 2017]",
-          "**Refer urgently**: suspected OHSS, pituitary macroadenoma (headache, visual field loss) and suspected ectopic pregnancy after treatment. [NICE CG156 2017]"
+          "**Refer after failed first-line treatment**: no conception after 6 ovulatory cycles of letrozole or clomiphene, or anovulation on maximum dose. [NICE NG257 2026]",
+          "**Refer urgently**: suspected OHSS, pituitary macroadenoma (headache, visual field loss) and suspected ectopic pregnancy after treatment. [NICE NG257 2026]"
         ]
       }
     ],
@@ -1661,12 +1662,14 @@ const rewrites: Record<string, TopicRewrite> = {
       "HSG on days 6-11; a proximal block may be cornual spasm.",
       "AMH predicts response to stimulation, not natural fertility.",
       "Letrozole is first-line ovulation induction in PCOS; metformin is an adjunct.",
+      "WHO issued its first infertility guideline (Nov 2025) and NICE NG257 (Mar 2026) replaced CG156 - **AMH/AFC, not FSH, predict ovarian response**; unexplained infertility goes **expectant -> stimulated IUI -> IVF**.",
       "Never start ATT for infertility on a positive Mantoux - demand CBNAAT, culture or granulomas.",
       "Testosterone therapy in a man trying to conceive causes azoospermia."
     ],
     "references": [
       "WHO Laboratory Manual for the Examination and Processing of Human Semen, 6th edition, 2021.",
-      "NICE CG156. Fertility problems: assessment and treatment, 2013 (updated 2017).",
+      "NICE NG257. Fertility problems: assessment and treatment, March 2026 (replaces CG156).",
+      "WHO. Guideline for the prevention, diagnosis and treatment of infertility, November 2025.",
       "ESHRE Guideline on unexplained infertility, 2023; ESHRE Endometriosis guideline, 2022.",
       "International Evidence-based Guideline for PCOS, 2023.",
       "EAU Guidelines on Sexual and Reproductive Health (male infertility), 2024.",
@@ -1791,7 +1794,7 @@ const rewrites: Record<string, TopicRewrite> = {
           "**Definitive endometriosis surgery**: hysterectomy with bilateral salpingo-oophorectomy and excision of all visible disease only when the family is complete; afterwards give **combined oestrogen-progestogen HRT** (progestogen prevents reactivation of residual disease). [ESHRE 2022]",
           "**Fibroid surgery by FIGO type**: **hysteroscopic myomectomy for types 0-2** (often curative for bleeding), **laparoscopic or open myomectomy** to preserve fertility (recurrence 15-30%, may need caesarean if the cavity was breached), **hysterectomy** when the family is complete. [FIGO 2018]",
           "**Uterine artery embolisation** shrinks fibroids by **40-60%** and preserves the uterus, but is not preferred for women wanting pregnancy; post-embolisation pain, fever and fibroid expulsion occur. [FIGO 2018]",
-          "**Fibroids and contraception (WHO MEC)**: fibroids **without cavity distortion are category 1** for copper and LNG IUDs; **with cavity distortion category 4**. [WHO MEC 2015]",
+          "**Fibroids and contraception (WHO MEC)**: fibroids **without cavity distortion are category 1** for copper and LNG IUDs; **with cavity distortion category 4**. [WHO MEC 2025]",
           "**Fibroids in pregnancy**: raise miscarriage, malpresentation, obstructed labour, preterm birth, abruption and **postpartum haemorrhage**; **myomectomy at caesarean is avoided** except for pedunculated subserosal fibroids. [Shaw 18e]",
           "**Morcellation risk**: power morcellation of an **unsuspected leiomyosarcoma** disseminates it, so use containment bags and avoid morcellation with suspicious features. [FIGO 2018]"
         ]
@@ -2104,7 +2107,7 @@ const rewrites: Record<string, TopicRewrite> = {
           "**How to give**: **0.5 mL IM into the deltoid**; observe **seated or lying for 15 minutes** (vasovagal syncope is the commonest event in adolescents); can be co-administered with Td and other vaccines. [WHO 2022]",
           "**Vaccine side effects**: injection-site pain and swelling, fever, headache, **syncope**; anaphylaxis is very rare (contraindicated after anaphylaxis to a previous dose or yeast for quadrivalent and nonavalent). [WHO 2022]",
           "**Pregnancy**: vaccination is **deferred**, but inadvertent vaccination needs no action; **breastfeeding is not a contraindication**. [WHO 2022]",
-          "**National programme**: NTAGI (2022) recommended HPV vaccine for girls **9-14 years with a one-time catch-up**, and it is being introduced through the UIP with school-based delivery; private catch-up to **26 years**, and **27-45 years by shared decision**. [MoHFW 2024]",
+          "**National programme**: India launched the **nationwide HPV vaccination programme on 28 February 2026** - **a single dose of quadrivalent vaccine (Gardasil-4) free for girls aged 14 years** (about 1.15 crore a year), a 3-month campaign then continued on routine immunisation days at government facilities, with parental consent; private catch-up to **26 years**, and **27-45 years by shared decision**. [MoHFW 2026]",
           "**Efficacy**: over **90% protection against vaccine-type CIN2+** in HPV-naive girls, with falling cervical cancer rates in high-coverage countries - but **vaccinated women must still be screened**. [WHO 2022]",
           "**Ablation eligibility**: **type 1 transformation zone** (whole SCJ visible), lesion covering **under 75% of the ectocervix**, not extending into the canal, and **no suspicion of invasion or glandular disease**. [WHO 2021]",
           "**Thermal ablation**: probe at **100-120 C for 20-40 seconds per application** (overlapping to cover the zone), no anaesthesia needed, portable and battery-operated - the preferred ablation in screen-and-treat. [WHO 2021]",
@@ -2389,6 +2392,7 @@ const rewrites: Record<string, TopicRewrite> = {
         points: [
           "**MHT indications**: moderate-severe vasomotor symptoms, **POI and early menopause** (replacement until about 51), GSM (local oestrogen), and bone protection in a symptomatic woman under 60; MHT is **not** started to prevent heart disease or dementia. [NICE NG23 2024]",
           "**Window of opportunity**: start systemic MHT **under 60 or within 10 years of menopause**; there is **no fixed 5-year limit** - review yearly and continue at the lowest effective dose while benefits outweigh risks. [NAMS 2022]",
+          "**Label change**: the US FDA (November 2025) began **removing cardiovascular disease, breast cancer and probable dementia from the boxed warning** on MHT products, keeping the warning that **unopposed oestrogen with a uterus causes endometrial cancer** - counsel on absolute risk by age and time since menopause. [FDA 2025]",
           "**Choose the regimen by two questions - uterus present, and time since last period**: hysterectomy - oestrogen alone; uterus and within 12 months of last period - **sequential combined**; over 12 months - **continuous combined** (table below). [NICE NG23 2024]",
           "**Transdermal oestradiol** (preferred in obesity, migraine, hypertension, high triglycerides, gallstones, smokers and VTE risk): **patch 25-50 microgram/24 h changed twice weekly**, or **gel 0.75-1.5 mg (1-2 pumps) once daily**. [NICE NG23 2024]",
           "**Oral oestrogen**: **oestradiol valerate 1-2 mg once daily** or conjugated equine oestrogen 0.3-0.625 mg - start low; flushes settle in 2-4 weeks, full effect by 3 months. [Shaw 18e]",
@@ -2403,6 +2407,7 @@ const rewrites: Record<string, TopicRewrite> = {
           "**POI**: oestrogen in **higher replacement doses** (for example oestradiol 2-4 mg orally or 75-100 microgram patch) plus progestogen, or a **combined pill** if contraception is needed, continued **until at least 51**. [NICE NG23 2024]",
           "**Local vaginal oestrogen for GSM**: **estriol cream 0.5 mg or oestradiol 10 microgram vaginal tablet daily for 2 weeks, then twice weekly**; no progestogen needed, can be continued indefinitely, and may be used in many breast cancer survivors with oncology agreement. [NICE NG23 2024]",
           "**Fezolinetant** (NK3 receptor antagonist - blocks neurokinin B at the thermoregulatory centre): **45 mg once daily** reduces flushes within a week; check **LFT at baseline and monthly for 3 months** (rare liver injury); limited availability in India. [NAMS 2023]",
+          "**Elinzanetant** (dual **NK1/NK3 receptor antagonist**, US FDA approval **October 2025**) is a once-daily non-hormonal option for moderate-severe flushes; side effects are **headache, fatigue, dizziness and somnolence**, with liver enzyme monitoring; not yet marketed in India. [FDA 2025]",
           "**SSRIs and SNRIs** cut flushes by 40-60%: **venlafaxine 37.5-75 mg daily** or **escitalopram 10-20 mg daily** (both safe with tamoxifen); **paroxetine 7.5-10 mg** works but **must be avoided with tamoxifen** (CYP2D6 inhibition blocks endoxifen). [NAMS 2023]",
           "**Gabapentin 300 mg at night, up to 900 mg**, helps night sweats and sleep; side effects are dizziness and drowsiness; **clonidine 50-75 microgram twice daily** is modest, with dry mouth and rebound hypertension. [NAMS 2023]",
           "**Calcium 500 mg once or twice daily with meals** (to reach 1000-1200 mg total with diet) and **vitamin D3 800-1000 IU daily** (or 60,000 IU weekly for 8 weeks if deficient) for every postmenopausal woman at bone risk. [IMS 2020]",
@@ -2487,6 +2492,7 @@ const rewrites: Record<string, TopicRewrite> = {
     ],
     pearls: [
       "Over 45 with typical symptoms, menopause is clinical - ordering FSH is the error.",
+      "FDA (Nov 2025) removed CVD, breast cancer and dementia from the MHT boxed warning; the endometrial cancer warning for unopposed oestrogen stays. Elinzanetant (NK1/NK3) joined fezolinetant (NK3) as a non-hormonal option in Oct 2025.",
       "The uterus decides the regimen: uterus present means a progestogen; hysterectomy means oestrogen alone.",
       "Transdermal oestradiol does not raise VTE risk - default in obesity, migraine, hypertension and clot risk.",
       "Window of opportunity: under 60 or within 10 years of menopause; no fixed 5-year limit.",
@@ -2841,7 +2847,7 @@ const rewrites: Record<string, TopicRewrite> = {
         points: [
           "**Endometrial protection in chronic anovulation** (PCOS, oligomenorrhoea): induce a withdrawal bleed at least **every 3 months** with **medroxyprogesterone acetate (MPA) 10 mg daily for 12-14 days**, or use a COC or LNG-IUS, to prevent hyperplasia. [PCOS Guideline 2023]",
           "**Combined oral contraceptive** (ethinylestradiol 20-30 microgram with levonorgestrel or desogestrel) for PCOS cycle control and hirsutism: suppresses LH and ovarian androgen and raises SHBG; **one tablet daily at the same time, 21/7 or 24/4**; hirsutism improves only after **6 months**. [PCOS Guideline 2023]",
-          "**COC cautions**: check BP and BMI and exclude migraine with aura, smoking over 35, VTE history and uncontrolled hypertension (UKMEC/WHO MEC 4); warn about nausea, breakthrough bleeding and the rare VTE. [WHO MEC 2015]",
+          "**COC cautions**: check BP and BMI and exclude migraine with aura, smoking over 35, VTE history and uncontrolled hypertension (UKMEC/WHO MEC 4); warn about nausea, breakthrough bleeding and the rare VTE. [WHO MEC 2025]",
           "**Metformin** (lowers hepatic glucose output and insulin): **500 mg once daily with the evening meal, increase by 500 mg weekly to 1500-2000 mg/day** for PCOS with BMI 25 or more or metabolic features; side effects are GI upset (use extended-release) and **B12 deficiency** with long use. [PCOS Guideline 2023]",
           "**Spironolactone 50-100 mg daily** (androgen receptor blocker) may be added for hirsutism after 6 months of COC - only with **reliable contraception** (feminises a male fetus); check potassium. [PCOS Guideline 2023]",
           "**Cabergoline** (long-acting dopamine D2 agonist) for prolactinoma: **0.25 mg twice weekly, increased to 0.5-1 mg twice weekly** by prolactin; take **with food at bedtime** to reduce nausea and dizziness; continue at least 2 years then review; echo if high doses are used long term (valvulopathy). [Harrison 22e]",
@@ -3034,7 +3040,7 @@ const rewrites: Record<string, TopicRewrite> = {
         heading: "Treatment - drugs",
         points: [
           "**Emergency contraception - levonorgestrel 1.5 mg orally once** as soon as possible and **within 72 hours** (some effect to 120 hours): delays ovulation; side effects are nausea, spotting and a changed next period - **repeat the dose if she vomits within 2 hours**. [MoHFW 2014]",
-          "**Copper IUD within 5 days** is the most effective emergency contraception (over 99%) and gives ongoing contraception - offer it if she accepts a pelvic procedure. [WHO MEC 2015]",
+          "**Copper IUD within 5 days** is the most effective emergency contraception (over 99%) and gives ongoing contraception - offer it if she accepts a pelvic procedure. [WHO MEC 2025]",
           "**STI prophylaxis** at the first visit: **azithromycin 1 g orally once** (chlamydia) **plus cefixime 400 mg orally once** or **ceftriaxone 500 mg IM** (gonorrhoea), **plus metronidazole 2 g orally once** (trichomonas, BV) - metronidazole may be deferred to reduce nausea or if she has taken alcohol. [NACO 2021]",
           "**HIV PEP - mechanism and regimen**: antiretrovirals stop viral replication before infection is established; **tenofovir 300 mg + lamivudine 300 mg + dolutegravir 50 mg (TLD) one tablet once daily for 28 days**, started as soon as possible and **within 72 hours**. [NACO 2021]",
           "**PEP side effects and adherence**: nausea, headache, insomnia (dolutegravir), rarely renal toxicity; take at the same time daily, separate dolutegravir from iron or calcium by 2 hours before or 6 hours after; missing doses risks failure. [NACO 2021]",

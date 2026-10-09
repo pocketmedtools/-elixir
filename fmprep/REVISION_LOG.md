@@ -21,7 +21,7 @@ charts added (shown at the top of each topic as "Revise in one go").
 | 13 | Eye & ENT | **done** | 10/10 | 12 guideline updates |
 | 14 | Paediatrics | pending | | |
 | 15 | Obstetrics | **done** | 15/15 | 9 guideline updates |
-| 16 | Gynaecology | pending | | |
+| 16 | Gynaecology | **done** | 11/11 | 10 guideline updates |
 | 17 | Preventive & Community Medicine | pending | | |
 | 18 | Geriatrics, Palliative Care & Ethics | pending | | |
 | 19 | Undifferentiated Symptoms | pending | | |
@@ -148,3 +148,12 @@ charts added (shown at the top of each topic as "Revise in one go").
 - Hyperemesis: RCOG 2024 - ketonuria no longer a severity marker; PUQE/HELP score; ondansetron second line.
 - Caesarean: NFHS-6 27.2% (private ~54%, public ~17%).
 - Other 10 topics already current (WHO PPH 2025, ADA 2026, ESC 2025, NICE 2023).
+
+### Gynaecology (done)
+- Contraception: WHO MEC 6th ed (2025) - categories reaffirmed; DMPA/NET-EN breastfeeding <6 weeks now category 2.
+- PCOS: WHO infertility 2025 - gonadotrophins preferred over ovarian drilling second line; letrozole alone preferred.
+- Vaginal discharge: ACOG 2025 - consider treating male partner in recurrent BV.
+- Infertility: NICE NG257 (2026) replaces CG156; AMH/AFC not FSH; unexplained infertility - expectant -> IUI with clomiphene/letrozole -> IVF.
+- Cervical cancer: national HPV programme (Feb 2026) - one free dose of Gardasil-4 for girls aged 14.
+- Menopause: FDA 2025 boxed-warning changes for HRT; elinzanetant approved.
+- AUB, endometriosis/fibroids, prolapse, amenorrhoea, IPV: no change needed.

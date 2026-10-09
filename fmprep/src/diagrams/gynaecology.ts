@@ -391,7 +391,7 @@ const diagrams: DiagramSet = {
         },
         {
           label: "Clomiphene 50 mg daily, days 2-6",
-          detail: "Acceptable alternative where letrozole is unavailable, increasing to 100 and 150 mg",
+          detail: "Where letrozole cannot be used, increasing to 100 and 150 mg - WHO 2025 prefers clomiphene plus metformin over either alone",
         },
         {
           label: "Stop after about 6 ovulatory cycles",
@@ -426,7 +426,7 @@ const diagrams: DiagramSet = {
           "Motile flagellated trichomonads on saline",
         ],
         ["Sexually transmitted", "No", "No", "Yes"],
-        ["Treat the partner", "No", "No", "Yes, always"],
+        ["Treat the partner", "Not routinely; consider if recurrent", "No", "Yes, always"],
         [
           "First-line treatment",
           "Metronidazole 400 mg PO BD for 7 days",
@@ -967,7 +967,7 @@ const diagrams: DiagramSet = {
         [
           "Girls 9-14 years, the primary target",
           "Two doses at 0 and 6 months",
-          "Given before sexual debut, when antibody response is highest. WHO SAGE 2022 accepts a single dose for ages 9-20",
+          "Given before sexual debut, when antibody response is highest. WHO SAGE 2022 accepts a single dose for ages 9-20; India national programme (Feb 2026) gives one free dose of Gardasil-4 at 14 years",
         ],
         [
           "Age 15 years and above",
@@ -1083,6 +1083,10 @@ const diagrams: DiagramSet = {
         },
         { label: "Gabapentin 300-900 mg at night", detail: "Particularly useful for night sweats" },
         { label: "Clonidine", detail: "Modest efficacy with troublesome side effects" },
+        {
+          label: "Neurokinin antagonists",
+          detail: "Fezolinetant 45 mg daily (NK3) or elinzanetant (NK1/NK3, US FDA 2025) - check liver enzymes; limited availability in India",
+        },
       ],
     },
     {
