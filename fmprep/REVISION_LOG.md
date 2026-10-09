@@ -20,7 +20,7 @@ charts added (shown at the top of each topic as "Revise in one go").
 | 12 | Dermatology | **done** | 11/11 | 9 guideline updates |
 | 13 | Eye & ENT | **done** | 10/10 | 12 guideline updates |
 | 14 | Paediatrics | pending | | |
-| 15 | Obstetrics | pending | | |
+| 15 | Obstetrics | **done** | 15/15 | 9 guideline updates |
 | 16 | Gynaecology | pending | | |
 | 17 | Preventive & Community Medicine | pending | | |
 | 18 | Geriatrics, Palliative Care & Ethics | pending | | |
@@ -140,3 +140,11 @@ charts added (shown at the top of each topic as "Revise in one go").
 - Hearing loss: AAO-HNS 2024 age-related hearing loss - screen >=50, hearing aids, cochlear implant assessment.
 - Choking: ERC 2025 citation. Dry eye: TFOS DEWS III 2025 definition and criteria.
 - Red eye, otitis, corneal ulcer/trauma: no change needed.
+
+### Obstetrics (done)
+- Antenatal care: MMR 88 (SRS 2021-23); NFHS-6 ANC and institutional-birth figures (from secondary reports - verify against IIPS fact sheet).
+- Early pregnancy bleeding: ACOG 2024 - anti-D can be forgone before 12+0 weeks (FOGSI practice kept alongside).
+- Postnatal care: WHO MEC 2025 - POP, implant and DMPA category 2 before 6 weeks when breastfeeding.
+- Hyperemesis: RCOG 2024 - ketonuria no longer a severity marker; PUQE/HELP score; ondansetron second line.
+- Caesarean: NFHS-6 27.2% (private ~54%, public ~17%).
+- Other 10 topics already current (WHO PPH 2025, ADA 2026, ESC 2025, NICE 2023).
