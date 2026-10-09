@@ -675,7 +675,7 @@ const diagrams: DiagramSet = {
         [
           "The trap",
           "Never prescribe a hypnotic while it is untreated - it worsens the apnoeas",
-          "Dopamine agonists cause augmentation with long-term use",
+          "Dopamine agonists cause augmentation - AASM 2024 advises against them as standard treatment",
           "It is a prodrome of Parkinson's disease, Lewy body dementia and multiple system atrophy",
         ],
       ],

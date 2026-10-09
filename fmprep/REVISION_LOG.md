@@ -15,7 +15,7 @@ charts added (shown at the top of each topic as "Revise in one go").
 | 7 | Neurology | **done** | 10/10 | 11 guideline updates |
 | 8 | Renal & Urology | pending | | |
 | 9 | Musculoskeletal & Rheumatology | pending | | |
-| 10 | Psychiatry | pending | | |
+| 10 | Psychiatry | **done** | 8/8 | 7 guideline updates |
 | 11 | Surgery & Office Procedures | pending | | |
 | 12 | Dermatology | pending | | |
 | 13 | Eye & ENT | pending | | |
@@ -92,3 +92,11 @@ charts added (shown at the top of each topic as "Revise in one go").
 - AMR: NAP-AMR 2.0 (Nov 2025); AWaRe 2025.
 - Tropical fevers: WHO 2025 chikungunya - no NSAIDs/steroids acutely; vaccine status.
 - Enteric fever, rabies: no change needed.
+
+### Psychiatry (done)
+- Depression: NCRB 2023 suicide data (1,71,418; 12.3 per lakh).
+- Tobacco: WHO 2024 cessation guideline - cytisine first-line option.
+- Insomnia/sleep: AASM 2024 RLS - gabapentinoids first line, against dopamine agonists as standard, iron if ferritin <=75; tirzepatide for OSA with obesity (FDA 2024).
+- Psychosis: xanomeline-trospium (FDA 2024); US clozapine REMS removed 2025, ANC monitoring continues.
+- Dementia: NICE 2025 did not recommend lecanemab/donanemab (under reconsideration).
+- Anxiety, alcohol, somatic symptom disorder: no change needed.

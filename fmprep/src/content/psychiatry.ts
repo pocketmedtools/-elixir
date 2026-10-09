@@ -76,7 +76,7 @@ topics.push({
     {
       heading: "Suicide risk assessment: how to ask and what to do",
       points: [
-        "India records more than **1.7 lakh suicides a year** - most had seen a doctor in the preceding month, usually for a somatic complaint. [NCRB 2022]",
+        "India records more than **1.7 lakh suicides a year** (1,71,418 in 2023) - most had seen a doctor in the preceding month, usually for a somatic complaint. [NCRB 2023]",
         "Commonest age group **18-45 years**; commonest methods pesticide ingestion and hanging - which is why means removal is concrete. [NCRB 2022]",
         "**Asking about suicide does not increase risk** - it is the single most protective act in the consultation. [WHO mhGAP 2.0 2016]",
         "Ask in graded steps, in the patient's own language - **never a single blunt question**. [WHO mhGAP 2.0 2016]",
@@ -2510,8 +2510,8 @@ topics.push({
         "**Never prescribe a hypnotic to an untreated apnoeic patient** - it deepens the apnoea and worsens the nocturnal hypoxia. [AASM 2019]",
         "**Treat restless legs by cause first: oral iron if ferritin is below 75 ng/mL** - and correct renal failure and pregnancy-related deficiency. [IRLSSG 2018]",
         "**Stop the aggravating drugs: antihistamines, metoclopramide, SSRIs, tricyclics, antipsychotics** - and reduce caffeine and alcohol. [IRLSSG 2018]",
-        "**Gabapentin 300 mg or pregabalin 75 mg at night is now first-line** - the alpha-2-delta ligands have displaced the dopamine agonists. [IRLSSG 2018]",
-        "**Pramipexole 0.125-0.5 mg or ropinirole 0.25-2 mg at night are the alternative** - dopamine agonists are second choice, not first. [IRLSSG 2018]",
+        "**Gabapentin 300 mg or pregabalin 75 mg at night is now first-line** (strong recommendation) - the alpha-2-delta ligands have displaced the dopamine agonists. [AASM 2024]",
+        "**Pramipexole 0.125-0.5 mg or ropinirole 0.25-2 mg at night are no longer standard** - AASM 2024 advises against their routine use because of augmentation; specialist or short-term use only. [AASM 2024]",
         "**Augmentation is the long-term problem with dopamine agonists** - symptoms start earlier, grow more severe and spread to the arms. [IRLSSG 2018]",
         "**Delayed sleep-wake phase: cannot sleep before 2 a.m., cannot wake for school, normal in holidays** - a rhythm problem, not insomnia. [AASM 2015]",
         "**Treat it with an advanced fixed wake time, morning bright light and no evening screens** - plus low-dose melatonin well before bedtime. [AASM 2015]",
@@ -2769,7 +2769,7 @@ topics.push({
       ],
       answer: 1,
       explanation:
-        "The five clinical criteria for restless legs syndrome are all present, and iron deficiency is the commonest reversible cause; the accepted threshold for supplementation in restless legs is a ferritin below 75 ng/mL even when the haemoglobin is normal, as brain iron may be low despite normal peripheral indices. A dopamine agonist may be needed later but should not precede correction of iron, and it carries the risk of augmentation with long-term use. Clonazepam sedates without treating the mechanism and brings dependence and falls. This is a treatable disorder, not normal ageing. Nerve conduction studies are unnecessary when the history meets all five criteria and there are no neuropathic signs.",
+        "The five clinical criteria for restless legs syndrome are all present, and iron deficiency is the commonest reversible cause; the accepted threshold for supplementation in restless legs is a ferritin below 75 ng/mL even when the haemoglobin is normal, as brain iron may be low despite normal peripheral indices. A dopamine agonist should not precede correction of iron, and because of augmentation the AASM 2024 guideline now advises against dopamine agonists as standard treatment - gabapentin or pregabalin is the drug of choice if symptoms persist. Clonazepam sedates without treating the mechanism and brings dependence and falls. This is a treatable disorder, not normal ageing. Nerve conduction studies are unnecessary when the history meets all five criteria and there are no neuropathic signs.",
       difficulty: "moderate",
     },
     {
