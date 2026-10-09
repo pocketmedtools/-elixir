@@ -13,7 +13,7 @@ charts added (shown at the top of each topic as "Revise in one go").
 | 5 | Gastroenterology & Hepatology | **done** | 9/9 | 16 guideline updates |
 | 6 | Fever & Infectious Disease | **done** | 11/11 | 18 guideline updates |
 | 7 | Neurology | **done** | 10/10 | 11 guideline updates |
-| 8 | Renal & Urology | pending | | |
+| 8 | Renal & Urology | **done** | 9/9 | 15 guideline updates |
 | 9 | Musculoskeletal & Rheumatology | pending | | |
 | 10 | Psychiatry | **done** | 8/8 | 7 guideline updates |
 | 11 | Surgery & Office Procedures | pending | | |
@@ -100,3 +100,12 @@ charts added (shown at the top of each topic as "Revise in one go").
 - Psychosis: xanomeline-trospium (FDA 2024); US clozapine REMS removed 2025, ANC monitoring continues.
 - Dementia: NICE 2025 did not recommend lecanemab/donanemab (under reconsideration).
 - Anxiety, alcohol, somatic symptom disorder: no change needed.
+
+### Renal & Urology (done)
+- CKD: KDIGO 2026 anaemia - iron if ferritin <100 & TSAT <40% or 100-299 & TSAT <25%; Hb <11.5 on ESA; ESA preferred over HIF-PHI; ERC 2025 calcium dose.
+- AKI: SSC 2026 peripheral noradrenaline, MAP 65 (60-65 >=65 y); KDIGO 2026 AKI still draft.
+- UTI: IDSA 2025 durations (5-7 FQ / 7 other; 7 days urinary bacteraemia; 10-14 prostatitis); SSC 2026.
+- Stones: AUA 2026 - urine >=2.5 L/day, thiazide for hypercalciuria, citrate for recurrent CaOx.
+- Hyponatraemia/hyperkalaemia: ERC 2025 calcium first, no routine bicarbonate; oral bicarbonate below 18.
+- Proteinuria: KDIGO 2025 IgAN - risk from 0.5 g/day, start immune and supportive treatment together, target <0.5 (ideally <0.3).
+- BPH, drug dosing, incontinence: no change needed.

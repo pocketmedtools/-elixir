@@ -103,19 +103,19 @@ const diagrams: DiagramSet = {
         {
           label: "Replete iron before any ESA",
           detail:
-            "Target transferrin saturation above 30% and ferritin 200-500 ng/mL, usually with intravenous iron sucrose or ferric carboxymaltose because oral iron absorbs poorly in uraemia",
+            "KDIGO 2026 (non-dialysis): start iron if ferritin under 100 ng/mL with TSAT under 40%, or ferritin 100-299 with TSAT under 25%; withhold if ferritin over 700 or TSAT 40% or more. Oral or IV by preference; IV rather than oral in haemodialysis",
           tone: "warn",
         },
         {
-          label: "Start an ESA only if Hb is below 10 g/dL",
+          label: "Start an ESA by individual decision, not one number",
           detail:
-            "Epoetin alfa 50-100 units/kg subcutaneously thrice weekly, or darbepoetin weekly to fortnightly",
+            "Non-dialysis: weigh symptoms, transfusion risk and ESA harm; dialysis usually at Hb 9-10 g/dL. ESA preferred over a HIF-PHI first line. Epoetin alfa 50-100 units/kg SC thrice weekly, or darbepoetin weekly to fortnightly",
           tone: "decision",
         },
         {
-          label: "Target Hb 10-11.5 g/dL",
+          label: "Keep Hb below 11.5 g/dL on an ESA",
           detail:
-            "Never above 13 g/dL - CHOIR, CREATE and TREAT showed excess stroke, vascular access thrombosis and death at higher targets",
+            "Never aim for 13 g/dL - CHOIR, CREATE and TREAT showed excess stroke, vascular access thrombosis and death at higher targets",
           tone: "good",
         },
         {
@@ -289,7 +289,7 @@ const diagrams: DiagramSet = {
         {
           label: "Treat hyperkalaemia the moment it appears",
           detail:
-            "Potassium above 6.0 mmol/L or any ECG change: calcium gluconate 10 mL of 10% IV over 2-3 minutes, insulin 10 units with 25 g dextrose, salbutamol 10-20 mg nebulised, bicarbonate only if acidotic, a binder for the gut",
+            "Potassium above 6.0 mmol/L or any ECG change: calcium chloride 10% 10 mL IV over 5 minutes or calcium gluconate 10% 30 mL over 10 minutes, insulin 10 units with 25 g dextrose, salbutamol 10-20 mg nebulised, no routine bicarbonate outside cardiac arrest, a binder for the gut",
           tone: "warn",
         },
         {
@@ -385,7 +385,7 @@ const diagrams: DiagramSet = {
         [
           "Duration",
           "5 days, or fosfomycin 3 g as a single dose",
-          "10-14 days",
+          "7 days if prompt response (5-7 days for a fluoroquinolone); longer if slow",
         ],
         [
           "Role of nitrofurantoin",
@@ -464,7 +464,7 @@ const diagrams: DiagramSet = {
         {
           label: "Treat 7 days, or 10-14 if slow to respond",
           detail:
-            "Asymptomatic candiduria in a catheterised patient usually needs only catheter removal",
+            "IDSA 2025: 7 days (5-7 for a fluoroquinolone) if prompt response. Asymptomatic candiduria in a catheterised patient usually needs only catheter removal",
         },
         {
           label: "Get rid of the catheter if you can",
@@ -964,13 +964,13 @@ const diagrams: DiagramSet = {
         {
           label: "Step 1 - stabilise the myocardium",
           detail:
-            "Calcium gluconate 10 mL of 10% intravenously over 2-3 minutes, repeated after 5 minutes if the ECG has not improved. Acts in 1-3 minutes and lasts 30-60 minutes, and does not lower the potassium at all. Calcium chloride 10 mL of 10% has three times the calcium but needs a central line",
+            "ERC 2025: calcium chloride 10% 10 mL IV over 5 minutes (large vein), or calcium gluconate 10% 30 mL over 10 minutes; repeat if the ECG has not improved. Acts in 1-3 minutes and lasts 30-60 minutes, and does not lower the potassium at all",
           tone: "warn",
         },
         {
           label: "Step 2 - shift potassium into the cells",
           detail:
-            "10 units of regular insulin with 25 g of dextrose (50 mL of 50% or 100 mL of 25%) lowers potassium by 0.6-1.2 mmol/L in 15-30 minutes for 4-6 hours - check the glucose hourly for 6 hours. Add salbutamol 10-20 mg nebulised for a further 0.5-1.0 mmol/L; bicarbonate only if genuinely acidotic",
+            "10 units of regular insulin with 25 g of dextrose (50 mL of 50% or 100 mL of 25%) lowers potassium by 0.6-1.2 mmol/L in 15-30 minutes for 4-6 hours - check the glucose hourly for 6 hours. Add salbutamol 10-20 mg nebulised for a further 0.5-1.0 mmol/L; no routine IV bicarbonate outside cardiac arrest (ERC 2025)",
         },
         {
           label: "Step 3 - remove potassium from the body",
@@ -1331,12 +1331,12 @@ const diagrams: DiagramSet = {
         [
           "Treatment",
           "Supportive: salt and fluid restriction, a loop diuretic, antihypertensives, and penicillin to clear the organism",
-          "Supportive for at least 90 days before any immunosuppression: maximal RAS blockade, blood pressure control and an SGLT2 inhibitor",
+          "KDIGO 2025: treat the immune process and nephron loss together - maximal RAS blockade (or sparsentan), BP control and an SGLT2 inhibitor; target proteinuria under 0.5 g/day",
         ],
         [
           "Immunosuppression",
           "Not used",
-          "Only if proteinuria persists above 0.75-1 g/day at high risk of progression",
+          "Proteinuria 0.5 g/day or more = at risk: targeted-release budesonide 16 mg OD for 9 months or a guarded steroid course",
         ],
       ],
     },
