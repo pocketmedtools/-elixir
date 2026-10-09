@@ -1707,7 +1707,7 @@ const topics: Topic[] = [
           "**Laparoscopic appendicectomy** is preferred because of less wound infection, less pain, faster recovery and diagnostic view of the pelvis. [WSES Jerusalem Guidelines 2020]",
           "**Open appendicectomy** through a Lanz or gridiron (McBurney) incision remains safe and appropriate where laparoscopy is unavailable. [Bailey and Love 28e]",
           "Operating **within 24 hours of admission** does not increase perforation compared with immediate surgery, provided antibiotics have started. [WSES Jerusalem Guidelines 2020]",
-          "After appendicectomy, **no post-operative antibiotics** are needed for uncomplicated appendicitis, and **3-5 days** suffice for complicated cases with adequate source control. [WSES Jerusalem Guidelines 2020]",
+          "After appendicectomy, **no post-operative antibiotics** are needed for uncomplicated appendicitis, and a **short 2-3 day course** suffices for complicated cases with adequate source control. [WSES 2025]",
           "The **CODA trial** showed antibiotics were non-inferior to appendicectomy at 30 days, but about **3 in 10 patients needed appendicectomy by 90 days, rising to 4 in 10 with an appendicolith**. [CODA NEJM 2020]",
           "The **APPAC trial** found a **5-year recurrence of about 39 per cent** after antibiotics for CT-proven uncomplicated appendicitis. [APPAC JAMA 2018]",
           "**Antibiotics-first** suits CT-proven uncomplicated appendicitis without appendicolith in an informed adult, but not pregnancy, immunosuppression or peritonitis. [WSES Jerusalem Guidelines 2020]",
@@ -1738,7 +1738,7 @@ const topics: Topic[] = [
           "An **appendicular abscess over about 3-4 cm** is drained percutaneously under ultrasound or CT guidance with antibiotics. [WSES Jerusalem Guidelines 2020]",
           "Early laparoscopic surgery for a phlegmon by experienced surgeons is an alternative with **shorter hospital stay**. [WSES Jerusalem Guidelines 2020]",
           "**Interval appendicectomy** at 6-8 weeks is no longer routine in young adults and children, as recurrence is only about 7-12 per cent. [WSES Jerusalem Guidelines 2020]",
-          "Interval appendicectomy is advised for **recurrent symptoms, age over 40 or suspected neoplasm**, as complicated appendicitis hides a tumour in a significant minority. [WSES Jerusalem Guidelines 2020]",
+          "Interval appendicectomy is advised for **recurrent symptoms or adults aged 35 or more managed non-operatively for an abscess**, as complicated appendicitis hides a tumour in a significant minority. [WSES 2025]",
         ],
       },
       {

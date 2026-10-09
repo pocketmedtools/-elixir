@@ -1642,8 +1642,8 @@ const diagrams: DiagramSet = {
           label: "Coronary circulation at risk - 8 g/dL",
           steps: [
             "Known cardiovascular disease, acute coronary syndrome, and the perioperative setting (FOCUS)",
-            "The MINT trial 2023 found no benefit from restriction in myocardial infarction",
-            "State the 8 g/dL rule and note that many cardiologists accept nearer 10 g/dL in acute MI",
+            "After MINT (2023), AABB 2025 suggests a liberal strategy in acute myocardial infarction",
+            "State the 8 g/dL rule and the acute MI exception - transfuse below 10 g/dL",
           ],
         },
         {

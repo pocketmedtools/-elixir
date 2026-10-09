@@ -16,7 +16,7 @@ charts added (shown at the top of each topic as "Revise in one go").
 | 8 | Renal & Urology | **done** | 9/9 | 15 guideline updates |
 | 9 | Musculoskeletal & Rheumatology | **done** | 10/10 | 13 guideline updates; 1 MCQ aligned |
 | 10 | Psychiatry | **done** | 8/8 | 7 guideline updates |
-| 11 | Surgery & Office Procedures | pending | | |
+| 11 | Surgery & Office Procedures | **done** | 19/19 | 10 guideline updates |
 | 12 | Dermatology | pending | | |
 | 13 | Eye & ENT | pending | | |
 | 14 | Paediatrics | pending | | |
@@ -116,3 +116,11 @@ charts added (shown at the top of each topic as "Revise in one go").
 - RA: EULAR 2025 - biologic for all missing target on MTX, JAK only after risk review, fast steroid taper; BSR 2025 monitoring and HCQ eye screening; one MCQ updated.
 - Fractures: NOGG 2024 citation.
 - Back, knee OA, gout, shoulder, neck, soft tissue: no change needed.
+
+### Surgery & Office Procedures (done)
+- Abscess/SSTI and appendicitis: SSC 2026 balanced crystalloid, antibiotics within 1 h; WSES 2025 2-3 day post-op antibiotics, interval appendicectomy >=35 y after abscess.
+- Hernia: HerniaSurge 2023 - risk-based mesh prophylaxis; laparo-endoscopic option for primary unilateral hernia.
+- Catheter: IDSA 2025 CAUTI 7 days (5-7 with fluoroquinolone).
+- Transfusion: AABB 2025 / ACC/AHA 2025 - acute MI transfuse below Hb 10.
+- Tracheostomy: DAS 2025 (scalpel-bougie-tube Plan D). Anorectal: WHO STI 2024 citation.
+- Other 12 topics: no change needed.
