@@ -967,7 +967,7 @@ const diagrams: DiagramSet = {
         {
           label: "Severe: nephritis or neuropsychiatric",
           detail:
-            "High-dose steroid with mycophenolate mofetil 2-3 g/day or intravenous cyclophosphamide, and belimumab or rituximab if refractory, always under a rheumatologist or nephrologist",
+            "High-dose steroid with mycophenolate mofetil 2-3 g/day or intravenous cyclophosphamide; for class III/IV nephritis ACR 2024 prefers triple therapy (add belimumab or a calcineurin inhibitor); rituximab if refractory, always under a rheumatologist or nephrologist",
         },
       ],
     },

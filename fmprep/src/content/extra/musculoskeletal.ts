@@ -103,8 +103,8 @@ const topics: Topic[] = [
           "The **CDAI** (remission 2.8 or less) needs no laboratory test and suits the clinic; **SDAI** remission is 3.3 or less. [Kelley and Firestein 11e]",
           "**ACR/EULAR Boolean remission** requires tender and swollen joint counts, CRP (mg/dL) and patient global (0-10) each at 1 or less, the global threshold being relaxed to 2 in 2022. [ACR/EULAR 2022]",
           "Measure activity **every 1-3 months in active disease**; if there is no improvement by 3 months or the target is not reached by 6 months, change therapy. [EULAR 2022]",
-          "**Poor prognostic factors** - high activity, high RF or ACPA titres, early erosions and failure of two csDMARDs - favour earlier escalation to biologic or targeted therapy. [EULAR 2022]",
-          "In **sustained remission** for 6-12 months, glucocorticoids are stopped first, then DMARDs may be tapered cautiously. [EULAR 2022]",
+          "**Poor prognostic factors** - high activity, high RF or ACPA titres, early erosions and failure of two csDMARDs - predict worse outcome, but **EULAR 2025 no longer uses them to gate escalation**: if the csDMARD strategy misses target, a biologic is added. [EULAR 2025]",
+          "In **sustained remission** for 6-12 months, glucocorticoids are stopped first; EULAR 2025 prefers continuing the DMARD, though cautious dose reduction may be considered. [EULAR 2025]",
         ],
       },
       {
@@ -118,17 +118,17 @@ const topics: Topic[] = [
           "**Sulfasalazine** (enteric-coated) starts at 500 mg daily, increased weekly by 500 mg to 1 g twice daily (maximum 3 g/day); it causes orange urine, reversible oligospermia and early agranulocytosis. [BSR DMARD Guideline 2017]",
           "**Leflunomide 10-20 mg daily** is the alternative when methotrexate is contraindicated; it is teratogenic, causes hypertension and diarrhoea, and needs cholestyramine 8 g three times daily for 11 days to wash out. [BSR DMARD Guideline 2017]",
           "**Triple therapy (methotrexate, sulfasalazine and hydroxychloroquine)** is an effective, affordable escalation widely used in India. [Kelley and Firestein 11e]",
-          "**Short-term glucocorticoids** (for example prednisolone 7.5-10 mg daily, or IM methylprednisolone 80-120 mg) bridge DMARD onset and should be tapered and stopped within 3 months. [EULAR 2022]",
+          "**Short-term glucocorticoids** (for example prednisolone 7.5-10 mg daily, or IM methylprednisolone 80-120 mg) bridge DMARD onset and should be tapered and stopped as rapidly as clinically feasible, usually within 3 months. [EULAR 2025]",
           "**Intra-articular triamcinolone** controls a flare in one or two joints; NSAIDs relieve symptoms but do not modify disease. [NICE NG100 2018]",
           "**Biologic DMARDs** include TNF inhibitors (etanercept, adalimumab, infliximab and biosimilars), tocilizumab, abatacept and rituximab, usually combined with methotrexate. [EULAR 2022]",
-          "**JAK inhibitors** (tofacitinib 5 mg twice daily, baricitinib, upadacitinib) are oral and affordable in India but are avoided in people over 65, smokers and those with cardiovascular or cancer risk unless no alternative exists. [EULAR 2022]",
+          "**JAK inhibitors** (tofacitinib 5 mg twice daily, baricitinib, upadacitinib) are oral and affordable in India; EULAR 2025 places them after a biologic is considered, and they are avoided in people over 65, smokers and those with cardiovascular, VTE or cancer risk unless no alternative exists. [EULAR 2025]",
         ],
       },
       {
         heading: "Monitoring methotrexate, other DMARDs and glucocorticoids",
         points: [
           "**Baseline:** CBC, creatinine with eGFR, ALT or AST, albumin, HBV, HCV and HIV serology, chest X-ray within 6 months for methotrexate, and blood pressure and weight for leflunomide. [BSR DMARD Guideline 2017]",
-          "**Schedule for methotrexate, leflunomide and sulfasalazine:** CBC, creatinine, ALT and albumin **every 2 weeks until on a stable dose for 6 weeks, then monthly for 3 months, then at least every 12 weeks**. [BSR DMARD Guideline 2017]",
+          "**Schedule for methotrexate, leflunomide and sulfasalazine:** CBC, creatinine, ALT and albumin **at week 2, then monthly for the first 3-6 months, then every 3 months** - extended in stable low-risk patients and tightened with toxicity risk factors (CKD 3 or worse, liver disease). [BSR 2025]",
           "After any **dose increase**, return to 2-weekly tests until 6 weeks on the new stable dose. [BSR DMARD Guideline 2017]",
           "**Withhold and discuss** if WBC falls below 3.5 x 10^9/L, neutrophils below 1.6, platelets below 140, ALT or AST exceed 100 U/L, or albumin falls unexplained. [BSR DMARD Guideline 2017]",
           "**New dry cough or breathlessness** on methotrexate suggests pneumonitis - stop the drug and get a chest X-ray or HRCT urgently. [BSR DMARD Guideline 2017]",
@@ -274,16 +274,16 @@ const topics: Topic[] = [
       },
       {
         id: "musculoskeletal-rheumatoid-arthritis-q4",
-        stem: "According to BSR guidance, once a patient has been on a stable methotrexate dose for 6 weeks, blood monitoring should be:",
+        stem: "According to the 2025 BSR csDMARD guideline, once a patient without toxicity risk factors is on stable maintenance methotrexate, blood monitoring should be:",
         options: [
           "Stopped if all results have been normal",
           "Continued every 2 weeks indefinitely",
-          "Monthly for 3 months, then at least every 12 weeks",
+          "Every 3 months, extendable after individual risk review",
           "Done only annually",
         ],
         answer: 2,
         explanation:
-          "BSR recommends CBC, creatinine, ALT and albumin every 2 weeks until the dose is stable for 6 weeks, then monthly for 3 months, and thereafter at least every 12 weeks for as long as the drug is taken. Stopping or annual testing misses late marrow and liver toxicity, while indefinite 2-weekly testing is unnecessary.",
+          "BSR 2025 checks CBC, creatinine, ALT/AST and albumin at week 2, then monthly for the first 3-6 months, and then every 3 months on stable maintenance - an interval that may be extended after an individual benefit-risk review and shortened when toxicity risk factors exist. Stopping or annual testing misses late marrow and liver toxicity, while indefinite 2-weekly testing is unnecessary.",
         difficulty: "moderate",
       },
       {
@@ -330,7 +330,7 @@ const topics: Topic[] = [
             points: [
               "Target remission (DAS28 below 2.6) or low activity; measure every 1-3 months.",
               "Methotrexate 15 mg weekly escalated to 20-25 mg with folic acid, plus short-term steroid.",
-              "No improvement at 3 months or target missed at 6 months: add csDMARDs (triple therapy) or biologic or JAK inhibitor if poor prognostic factors.",
+              "No improvement at 3 months or target missed at 6 months: add a biologic (EULAR 2025); JAK inhibitor only after MACE, cancer and VTE risk review.",
             ],
           },
           {

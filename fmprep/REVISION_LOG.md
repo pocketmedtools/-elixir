@@ -14,7 +14,7 @@ charts added (shown at the top of each topic as "Revise in one go").
 | 6 | Fever & Infectious Disease | **done** | 11/11 | 18 guideline updates |
 | 7 | Neurology | **done** | 10/10 | 11 guideline updates |
 | 8 | Renal & Urology | **done** | 9/9 | 15 guideline updates |
-| 9 | Musculoskeletal & Rheumatology | pending | | |
+| 9 | Musculoskeletal & Rheumatology | **done** | 10/10 | 13 guideline updates; 1 MCQ aligned |
 | 10 | Psychiatry | **done** | 8/8 | 7 guideline updates |
 | 11 | Surgery & Office Procedures | pending | | |
 | 12 | Dermatology | pending | | |
@@ -109,3 +109,10 @@ charts added (shown at the top of each topic as "Revise in one go").
 - Hyponatraemia/hyperkalaemia: ERC 2025 calcium first, no routine bicarbonate; oral bicarbonate below 18.
 - Proteinuria: KDIGO 2025 IgAN - risk from 0.5 g/day, start immune and supportive treatment together, target <0.5 (ideally <0.3).
 - BPH, drug dosing, incontinence: no change needed.
+
+### Musculoskeletal & Rheumatology (done)
+- Osteoporosis: NOGG 2024 age-dependent FRAX thresholds (fixed 3%/20% are US BHOF); NICE NG259 (2026) risk assessment; Endocrine Society 2024 vitamin D (no routine testing in healthy adults); NICE NG249 falls.
+- SpA/SLE: ACR 2026 axSpA - TNFi = IL-17i first biologic; ACR 2025 SLE - HCQ for nearly all <=5 mg/kg, stop steroids; ACR 2024 lupus nephritis triple therapy; BSR 2025 DMARD monitoring.
+- RA: EULAR 2025 - biologic for all missing target on MTX, JAK only after risk review, fast steroid taper; BSR 2025 monitoring and HCQ eye screening; one MCQ updated.
+- Fractures: NOGG 2024 citation.
+- Back, knee OA, gout, shoulder, neck, soft tissue: no change needed.
