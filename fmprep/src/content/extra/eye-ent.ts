@@ -147,11 +147,11 @@ const topics: Topic[] = [
       {
         heading: "Dry eye and computer vision syndrome",
         points: [
-          "**TFOS DEWS II (2017)** defines dry eye as a multifactorial disease of the ocular surface with loss of tear-film homeostasis, tear hyperosmolarity, inflammation and neurosensory abnormality. [TFOS DEWS II 2017]",
+          "**TFOS DEWS III (2025)** defines dry eye as a **symptomatic**, multifactorial disease with loss of homeostasis of the tear film and/or ocular surface, with tear instability and hyperosmolarity, surface inflammation and damage, and neurosensory abnormality. [TFOS DEWS III 2025]",
           "Dry eye is **aqueous-deficient** (Sjogren and non-Sjogren) or **evaporative** (meibomian gland dysfunction, low blink rate), and most patients have both. [TFOS DEWS II 2017]",
           "Risk factors: **age, female sex, screen use, air conditioning, contact lenses, diabetes, refractive surgery** and drugs - antihistamines, antidepressants, beta blockers, isotretinoin and preserved glaucoma drops. [TFOS DEWS II 2017]",
           "Symptoms are **grittiness, burning, fluctuating vision and paradoxical watering**, worse in the evening and with reading or screens. [AAO PPP Dry Eye 2023]",
-          "Tests: **tear break-up time under 10 seconds**, Schirmer I without anaesthesia **under 5 mm in 5 minutes**, and punctate fluorescein staining of the inferior cornea. [TFOS DEWS II 2017]",
+          "Tests: symptom screen **OSDI-6 of 4 or more** plus one sign - **non-invasive tear break-up time under 10 seconds**, osmolarity 308 mOsm/L or more, or ocular surface staining (TFOS DEWS III); Schirmer I without anaesthesia **under 5 mm in 5 minutes** subtypes aqueous deficiency. [TFOS DEWS III 2025]",
           "Step 1: education, environmental change, lid hygiene and **preservative-free carboxymethylcellulose 0.5 per cent or sodium hyaluronate 0.1 per cent drops four to six times a day**. [TFOS DEWS II 2017]",
           "Use **preservative-free drops if instilling more than four times a day**, since benzalkonium chloride itself damages the epithelium. [AAO PPP Dry Eye 2023]",
           "Step 2 (by ophthalmologist): **topical cyclosporine 0.05 per cent twice daily**, a short course of loteprednol, punctal plugs, and oral doxycycline for MGD. [TFOS DEWS II 2017]",
@@ -413,7 +413,7 @@ const topics: Topic[] = [
     ],
     references: [
       "Kanski's Clinical Ophthalmology, 10th edition, 2024",
-      "TFOS DEWS II Report, Ocular Surface 2017",
+      "TFOS DEWS II Report, Ocular Surface 2017; TFOS DEWS III Reports, Am J Ophthalmol 2025",
       "American Academy of Ophthalmology Preferred Practice Pattern: Blepharitis 2023 and Dry Eye Syndrome 2023",
       "American Academy of Ophthalmology Preferred Practice Pattern: Pediatric Eye Evaluations 2022",
       "NICE Clinical Knowledge Summaries: Cellulitis - acute, and Bell palsy, 2024",

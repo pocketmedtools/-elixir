@@ -317,7 +317,7 @@ const diagrams: DiagramSet = {
     {
       kind: "compare",
       heading: "Acting on the McIsaac score",
-      caption: "McIsaac adds one point for age 3 to 14 years, none for 15 to 44, and subtracts one at 45 years or older.",
+      caption: "IDSA 2025: score first, then test. McIsaac adds one point for age 3 to 14 years, none for 15 to 44, and subtracts one at 45 or older.",
       columns: ["Score", "Chance of group A strep", "What to do"],
       rows: [
         ["0 to 1", "1 to 10%", "No test, no antibiotic; analgesia, fluids, gargles and safety-netting"],
@@ -410,8 +410,8 @@ const diagrams: DiagramSet = {
           detail: "Fluticasone or mometasone 50 microgram, 2 sprays per nostril once daily; full benefit takes 1 to 2 weeks",
         },
         {
-          label: "Add azelastine or montelukast",
-          detail: "Azelastine 1 spray per nostril twice daily; montelukast 10 mg at night is an add-on with neuropsychiatric warnings",
+          label: "Add intranasal antihistamine to the INCS",
+          detail: "Fixed azelastine-fluticasone 1 spray per nostril twice daily (ARIA 2025); montelukast 10 mg only if asthma coexists - neuropsychiatric warning",
         },
         {
           label: "Allergen immunotherapy for 3 to 5 years",
@@ -419,7 +419,7 @@ const diagrams: DiagramSet = {
         },
         {
           label: "Not on the ladder: decongestants",
-          detail: "Oxymetazoline for no more than 3 to 5 days - rhinitis medicamentosa; no oral prednisolone or depot steroid",
+          detail: "ARIA 2025: not long term or routinely with INCS; oxymetazoline at most 5 days while INCS starts; no depot steroid",
           tone: "warn",
         },
       ],
@@ -448,7 +448,7 @@ const diagrams: DiagramSet = {
         [
           "Moderate-severe persistent",
           "4 or more days a week and over 4 weeks with impairment",
-          "Intranasal corticosteroid plus azelastine; review in 2 to 4 weeks; consider immunotherapy",
+          "Intranasal corticosteroid plus intranasal antihistamine (azelastine-fluticasone); review in 2 to 4 weeks; consider immunotherapy",
         ],
       ],
     },
@@ -667,7 +667,7 @@ const diagrams: DiagramSet = {
     {
       kind: "compare",
       heading: "Glaucoma drops in primary care",
-      caption: "Teach punctal occlusion for one minute after instillation to cut systemic absorption.",
+      caption: "SLT is an equal first-line alternative to drops (EGS 2025, AAO 2026). Teach punctal occlusion for one minute after instillation.",
       columns: ["Drug", "Dose", "Main cautions"],
       rows: [
         [

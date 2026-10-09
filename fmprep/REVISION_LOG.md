@@ -18,7 +18,7 @@ charts added (shown at the top of each topic as "Revise in one go").
 | 10 | Psychiatry | **done** | 8/8 | 7 guideline updates |
 | 11 | Surgery & Office Procedures | **done** | 19/19 | 10 guideline updates |
 | 12 | Dermatology | **done** | 11/11 | 9 guideline updates |
-| 13 | Eye & ENT | pending | | |
+| 13 | Eye & ENT | **done** | 10/10 | 12 guideline updates |
 | 14 | Paediatrics | pending | | |
 | 15 | Obstetrics | pending | | |
 | 16 | Gynaecology | pending | | |
@@ -131,3 +131,12 @@ charts added (shown at the top of each topic as "Revise in one go").
 - STI: WHO 2026 doxy-PEP recommendation (not yet NACO policy).
 - Pruritus: 4x antihistamine cap.
 - Lesions, scabies, acne, psoriasis, leprosy, SJS/TEN, fungal: no change needed.
+
+### Eye & ENT (done)
+- Sore throat: IDSA 2025 Part 1 - Centor/McIsaac before testing.
+- Rhinitis: ARIA 2025 - intranasal steroid over oral antihistamine; INAH + INCS (azelastine-fluticasone); no long-term decongestants.
+- Refractive error: IMI 2025 - delay myopia onset, outdoor time.
+- Glaucoma: EGS 2025 / AAO POAG PPP 2026 - SLT first line with prostaglandins.
+- Hearing loss: AAO-HNS 2024 age-related hearing loss - screen >=50, hearing aids, cochlear implant assessment.
+- Choking: ERC 2025 citation. Dry eye: TFOS DEWS III 2025 definition and criteria.
+- Red eye, otitis, corneal ulcer/trauma: no change needed.
