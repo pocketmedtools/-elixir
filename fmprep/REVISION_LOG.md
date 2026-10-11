@@ -23,7 +23,7 @@ charts added (shown at the top of each topic as "Revise in one go").
 | 15 | Obstetrics | **done** | 15/15 | 9 guideline updates |
 | 16 | Gynaecology | **done** | 11/11 | 10 guideline updates |
 | 17 | Preventive & Community Medicine | pending | | |
-| 18 | Geriatrics, Palliative Care & Ethics | pending | | |
+| 18 | Geriatrics, Palliative Care & Ethics | **done** | 11/11 | 20 guideline updates; 1 MCQ aligned |
 | 19 | Undifferentiated Symptoms | **done** | 10/10 | 10 guideline updates; 2 diagram errors fixed |
 | 20 | Principles of Family Medicine & Research | **done** | 12/12 | 5 guideline updates |
 
@@ -181,3 +181,12 @@ charts added (shown at the top of each topic as "Revise in one go").
 - Chronic cough: WHO Global TB Report 2025 (India ~2.7 million, 21% fall since 2015).
 - Adult anaemia: KDIGO 2026 CKD anaemia; NICE NG12 2025.
 - Fatigue, body ache, chest pain, fever without focus, weight loss: no change needed.
+
+### Geriatrics, Palliative Care & Ethics (done)
+- CGA/frailty/sarcopenia: AWGS 2025 - low strength + low mass from age 50, grip <28/18 kg (65+), gait speed now an outcome; ADA 2026 HbA1c <8.0% in frailty.
+- Vaccines: ACIP 2025 pneumococcal from 50 (PCV20/21 or PCV15->PPSV23); RSV 75+ and 50-74 at risk.
+- Consent/medicolegal: DPDP Rules 2025; Supreme Court declined to refer V.P. Shantha (Nov 2024) - medical services remain under consumer law (MCQ updated).
+- Dementia: CDSCO approved donanemab (2025) and lecanemab (2026) for MCI/mild AD with amyloid.
+- Pressure ulcers: International Guideline 4th ed (2025).
+- End of life: Harish Rana v UoI (SC, March 2026) - withdrawal of clinically assisted nutrition in PVS; CMO panels.
+- Palliative symptom control: no change needed.

@@ -108,7 +108,7 @@ const diagrams: DiagramSet = {
         },
         {
           label: "Reconcile every drug against the plan",
-          detail: "Relax targets in advanced frailty - HbA1c 7.5-8.5% and blood pressure below 150/90 mmHg",
+          detail: "Relax targets in advanced frailty - HbA1c under 8.0% and blood pressure below 150/90 mmHg",
         },
         {
           label: "Name one responsible clinician and review",
@@ -351,7 +351,7 @@ const diagrams: DiagramSet = {
         [
           "Sulfonylureas and insulin",
           "Hypoglycaemia",
-          "Relax HbA1c to 7.5-8.5% in frailty and stop glibenclamide",
+          "Relax HbA1c to under 8.0% in frailty and stop glibenclamide",
         ],
         [
           "Anticoagulant in atrial fibrillation",
@@ -718,7 +718,7 @@ const diagrams: DiagramSet = {
         [
           "IMA v V.P. Shantha",
           "1995",
-          "Medical services are service under consumer law except where free to everybody; still binding, but referred for reconsideration by a larger bench in 2024",
+          "Medical services are service under consumer law except where free to everybody; still binding - the 2024 larger-bench reference was declined in Nov 2024",
         ],
         [
           "Mr X v Hospital Z",
@@ -966,7 +966,7 @@ const diagrams: DiagramSet = {
         {
           label: "Measure muscle strength - the primary criterion",
           detail:
-            "Grip under 27 kg men and under 16 kg women by EWGSOP2; under 28 kg and under 18 kg by AWGS 2019, which is what to use in India. Five-times chair stand over 15 s (EWGSOP2) or 12 s or more (AWGS)",
+            "Grip under 27 kg men and under 16 kg women by EWGSOP2; under 28 kg and under 18 kg at 65+ (under 34/20 kg at 50-64) by AWGS 2025, which is what to use in India. Five-times chair stand over 15 s (EWGSOP2) or 12 s or more (AWGS)",
           tone: "decision",
         },
         {
@@ -980,7 +980,7 @@ const diagrams: DiagramSet = {
         },
         {
           label: "Grade severity by physical performance",
-          detail: "Gait speed 0.8 m/s or less defines severe sarcopenia (EWGSOP2); AWGS uses under 1.0 m/s",
+          detail: "Gait speed 0.8 m/s or less defines severe sarcopenia (EWGSOP2); AWGS 2025 uses gait speed as an outcome only, with no severe category",
         },
         {
           label: "Treat with resistance training plus protein",

@@ -807,7 +807,7 @@ const topics: Topic[] = [
         points: [
           "**Indian Medical Association v V P Shantha (1995)** brought paid medical services within the definition of service under consumer law. [V P Shantha SC 1995]",
           "Services rendered **free of charge to all** in government hospitals are excluded; free treatment of some patients in a paying hospital is covered. [V P Shantha SC 1995]",
-          "In **Bar of Indian Lawyers v D K Gandhi (2024)** the Supreme Court excluded advocates and referred V P Shantha to a larger bench, but medical services remain covered until decided. [SC 2024]",
+          "In **Bar of Indian Lawyers v D K Gandhi (2024)** the Supreme Court excluded advocates and questioned V P Shantha, but a three-judge bench declined the reference on 7 November 2024 - medical services remain covered. [SC 2024]",
           "Pecuniary jurisdiction under the 2021 rules: **District Commission up to Rs 50 lakh, State Rs 50 lakh-2 crore, National Commission above Rs 2 crore**. [CPA Jurisdiction Rules 2021]",
           "Complaints must be filed within **2 years** of the cause of action, can be filed where the complainant lives, and online via **e-Daakhil**. [CPA 2019]",
           "No court fee barrier and no lawyer needed - which is why most negligence litigation against doctors in India is before Consumer Commissions. [CPA 2019]",
