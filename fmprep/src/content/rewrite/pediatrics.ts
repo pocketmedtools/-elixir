@@ -12,7 +12,7 @@ const rewrites: Record<string, TopicRewrite> = {
           "**Essential newborn care (ENC)** is the package every baby gets: **thermal care, immediate breastfeeding, hygienic cord and eye care, vitamin K, resuscitation when needed, weighing, birth-dose vaccines and danger-sign counselling**. [NNF 2020]",
           "Birth weight classes: **low birth weight under 2500 g, very low under 1500 g, extremely low under 1000 g**; preterm is **under 37 completed weeks** - LBW and preterm babies carry most of the deaths and get extra care (KMC, extra HBNC visits). [WHO 2022]",
           "**WHO hypothermia classification** (axillary): normal **36.5-37.5 degrees C**, **cold stress 36.0-36.4**, **moderate hypothermia 32.0-35.9**, **severe hypothermia below 32 degrees C**. [WHO 2022]",
-          "The classification examiners expect for the sick young infant is the **IMNCI/PSBI classification**: **critical illness** (convulsions, unable to feed at all, no movement at all) - must be referred; **clinical severe infection** (not feeding well, severe chest indrawing, movement only on stimulation, temperature 38 degrees C or more or under 35.5 degrees C) - refer, or simplified antibiotics if referral is refused; **fast breathing alone (60/min or more)** - in 7-59 days oral amoxicillin at home. [PSBI India 2019]",
+          "The classification examiners expect for the sick young infant is the **IMNCI/PSBI classification**: **critical illness** (convulsions, unable to feed at all, no movement at all) - must be referred; **clinical severe infection** (not feeding well, severe chest indrawing, movement only on stimulation, temperature 38 degrees C or more or under 35.5 degrees C) - refer, or simplified antibiotics if referral is refused; **fast breathing alone (60/min or more)** - in 7-59 days oral amoxicillin at home; at **0-6 days refer, and if referral is not possible give oral amoxicillin for at least 7 days**. [WHO PSBI 2024]",
           "The **seven danger signs** taught to every mother and ASHA are **not feeding well, convulsions, fast breathing 60/min or more, severe chest indrawing, movement only on stimulation or none, temperature 37.5 degrees C or more or under 35.5 degrees C, and yellow palms and soles** - any one means refer. [PSBI India 2019]",
           "**Neonatal sepsis** is **early-onset within 72 hours** (maternal, birth canal organisms) or **late-onset after 72 hours** (hospital or community acquired) - in Indian units **Klebsiella, E. coli and Acinetobacter** dominate, with group B Streptococcus less common than in the West. [NNF 2020]",
           "The **APGAR score** (table below) describes the baby at 1 and 5 minutes but **never decides resuscitation** - breathing, heart rate and tone do. [AHA-AAP NRP 2025]",
@@ -114,8 +114,9 @@ const rewrites: Record<string, TopicRewrite> = {
           "**Gentamicin** binds the **30S ribosome** and is concentration-dependent (peak kills), so it is given once daily: **5 mg/kg/dose IV or IM once daily if 2000 g or more, 4 mg/kg/dose if under 2000 g** (36-48 hourly if under 1200 g or under 30 weeks), usually stopped after 7 days - watch **urine output, nephrotoxicity and ototoxicity**, avoid with furosemide or vancomycin. [NNF 2020]",
           "**Cefotaxime** (third-generation cephalosporin, good CSF penetration) **50 mg/kg/dose IV 12-hourly in week 1 and 8-hourly after** (6-hourly for meningitis) when meningitis is suspected or gram negatives resistant to ampicillin-gentamicin are likely; **avoid ceftriaxone in neonates** - it displaces bilirubin and precipitates with calcium. [NNF 2020]",
           "**Duration**: **7-10 days** for clinical sepsis with negative culture, **10-14 days** for culture-positive sepsis, and **21 days for meningitis** (14 days after CSF sterilisation for gram negatives); stop at 48-72 hours if cultures are negative and the baby is well. [NNF 2020]",
-          "**Simplified antibiotic regimen when referral is refused (clinical severe infection, not critical illness)**: **oral amoxicillin 50 mg/kg/dose twice daily for 7 days plus IM gentamicin once daily** (**5 mg/kg if under 2 kg, 7.5 mg/kg if 2 kg or more**) for **2 days** (WHO also allows 7 days of gentamicin), with daily review for the first days and on day 8 - any deterioration means referral. [PSBI India 2019]",
-          "**Fast breathing alone in a 7-59 day infant**: **oral amoxicillin 50 mg/kg/dose twice daily for 7 days** at home, with review on day 4 - a fast-breathing baby aged 0-6 days is treated as clinical severe infection. [PSBI India 2019]",
+          "**WHO 2024 hospital regimen**: **ampicillin (or penicillin) plus gentamicin for at least 10 days** remains first choice for hospitalised young infants with suspected sepsis; **third-generation cephalosporins showed no clear benefit** and are reserved for meningitis or resistance. [WHO PSBI 2024]",
+          "**Simplified antibiotic regimen when referral is refused (clinical severe infection, not critical illness)**: **oral amoxicillin 50 mg/kg/dose twice daily for 7 days plus IM gentamicin once daily** (**5 mg/kg if under 2 kg, 7.5 mg/kg if 2 kg or more**) for **7 days (WHO 2024 preferred; 2 days may be used when 7 is not feasible, as in the India 2019 ANM regimen)**, with daily review for the first days and on day 8 - any deterioration means referral. [WHO PSBI 2024]",
+          "**Fast breathing alone in a 7-59 day infant**: **oral amoxicillin 50 mg/kg/dose twice daily for 7 days** at home, with review on day 4 - a fast-breathing baby aged **0-6 days is referred**, and only if referral is impossible gets **oral amoxicillin for at least 7 days**. [WHO PSBI 2024]",
           "**How to give oral amoxicillin to a young infant**: dispersible 250 mg tablet dissolved in a spoon of **expressed breast milk**, given slowly with a spoon or paladai; if the baby vomits within 30 minutes, repeat the dose. [PSBI India 2019]",
           "**Hypoglycaemia**: if glucose is under 45 mg/dL and the baby is symptomatic or cannot feed, give **10% dextrose 2 mL/kg IV over 1 minute** then an infusion at a **glucose infusion rate of 6-8 mg/kg/min** (80-100 mL/kg/day of 10% dextrose), rechecking in 30 minutes; if well and feeding, give a breastfeed or **expressed breast milk** and recheck. [NNF 2020]",
           "**Neonatal seizures**: correct glucose first, then **phenobarbitone 20 mg/kg IV over 20 minutes** (further 10 mg/kg doses to 40 mg/kg), maintenance **5 mg/kg/day**; **calcium gluconate 10% 2 mL/kg IV slowly under ECG** for hypocalcaemia - and never use diazepam as first-line. [NNF 2020]",
@@ -128,7 +129,7 @@ const rewrites: Record<string, TopicRewrite> = {
         heading: "Acute presentation and emergency management",
         points: [
           "**Resuscitation starts with three questions at birth**: term, good tone, breathing or crying - if all yes, routine care on the mother's chest; if any no, **warm, position the head neutral, clear the airway only if obstructed, dry and stimulate** within the first 30 seconds. [AHA-AAP NRP 2025]",
-          "**Start positive-pressure ventilation within 60 seconds (the golden minute)** if the baby is apnoeic, gasping or has a **heart rate under 100/min**: self-inflating bag and correctly sized mask covering mouth and nose, **40-60 breaths per minute**, **room air (21%) at 35 weeks or more and 21-30% oxygen below 35 weeks**. [AHA-AAP NRP 2025]",
+          "**Start positive-pressure ventilation within 60 seconds (the golden minute)** if the baby is apnoeic, gasping or has a **heart rate under 100/min**: self-inflating bag and correctly sized mask covering mouth and nose, **40-60 breaths per minute**, **room air (21%) at 35 weeks or more, 21-30% at 32-34 weeks and 30% or more below 32 weeks**, titrated to preductal SpO2. [AHA-AAP NRP 2025]",
           "A **rising heart rate** is the best sign of effective ventilation; if it does not rise within 15 seconds run the corrective steps **MR SOPA** (Mask adjust, Reposition, Suction, Open mouth, Pressure increase, Alternative airway). [AHA-AAP NRP 2025]",
           "**Chest compressions** if the heart rate stays **under 60/min after 30 seconds of effective ventilation** (preferably through an advanced airway): **two-thumb encircling technique** on the lower third of the sternum, depth one third of the AP diameter, **3 compressions to 1 breath (90:30 per minute)**, with **100% oxygen**. [AHA-AAP NRP 2025]",
           "**Adrenaline** if the heart rate stays under 60/min after 60 seconds of compressions with ventilation: **0.02 mg/kg IV or intraosseous (range 0.01-0.03 mg/kg = 0.1-0.3 mL/kg of 0.1 mg/mL, the old 1:10,000)**, flushed with 3 mL saline, every 3-5 minutes; endotracheal **0.1 mg/kg (0.05-0.1)** only while venous access is obtained. [AHA-AAP NRP 2025]",
@@ -164,13 +165,13 @@ const rewrites: Record<string, TopicRewrite> = {
           ],
           [
             "Clinical severe infection",
-            "Not feeding well, severe chest indrawing, movement only on stimulation, temperature 38 C or more or under 35.5 C, fast breathing in 0-6 days",
-            "Refer; if refused, oral amoxicillin 7 days plus IM gentamicin 2 days with close review",
+            "Not feeding well, severe chest indrawing, movement only on stimulation, temperature 38 C or more or under 35.5 C",
+            "Refer; if refused, oral amoxicillin 7 days plus IM gentamicin 7 days (2 days if 7 not feasible) with close review",
           ],
           [
-            "Fast breathing only (7-59 days)",
+            "Fast breathing only",
             "Respiratory rate 60/min or more with no other sign",
-            "Oral amoxicillin 50 mg/kg/dose twice daily for 7 days; review day 4",
+            "7-59 days: oral amoxicillin 50 mg/kg/dose twice daily for 7 days, review day 4; 0-6 days: refer, amoxicillin 7 days only if referral impossible",
           ],
           [
             "Local bacterial infection",
@@ -313,7 +314,7 @@ const rewrites: Record<string, TopicRewrite> = {
   },
   "pediatrics-immunisation": {
     oneLiner:
-      "The **Universal Immunisation Programme** gives **12 vaccines free against 12 diseases** (plus vitamin A) from birth to 16 years and to pregnant women; the IAP 2024 schedule adds optional vaccines on top, and the everyday OPD skill is catch-up: **a dose given is a dose counted - never restart**, respect minimum age and interval, give everything due today, and know the only two true contraindications.",
+      "The **Universal Immunisation Programme** gives **12 vaccines free against 12 diseases** (plus vitamin A) from birth to 16 years and to pregnant women; the IAP ACVIP 2025 schedule adds optional vaccines on top, and the everyday OPD skill is catch-up: **a dose given is a dose counted - never restart**, respect minimum age and interval, give everything due today, and know the only two true contraindications.",
     sections: [
       {
         heading: "Definition and the classification that matters",
@@ -326,7 +327,7 @@ const rewrites: Record<string, TopicRewrite> = {
           "The **IAP schedule** contains every UIP antigen and adds **hepatitis A, typhoid conjugate, varicella, MMR in place of MR, influenza, HPV, Tdap and meningococcal** vaccines for families who can pay - UIP is the floor, not the ceiling. [IAP ACVIP 2024]",
           "**True contraindications** are only two: **anaphylaxis to a previous dose or a vaccine component**, and **encephalopathy within 7 days of a pertussis-containing vaccine** (give DT/Td for the rest); live vaccines are also withheld in **severe immunodeficiency and pregnancy**. [MoHFW 2024]",
           "**AEFI** is any untoward medical event after immunisation that **does not necessarily have a causal relationship** with the vaccine; the WHO causality categories are **vaccine product-related, vaccine quality defect-related, immunisation error-related, immunisation anxiety-related and coincidental**. [AEFI Guidelines 2024]",
-          "NFHS-5 full immunisation coverage was **76.4%** at 12-23 months (62% in NFHS-4); **measles-rubella elimination needs 95% coverage with two doses** - the gap is found in urban slums, migrants and tribal blocks. [NFHS-5 2019-21]",
+          "Full immunisation at 12-23 months rose from 62% (NFHS-4) to **76.4% (NFHS-5)** and to about **87% in NFHS-6 (2023-24; 83.8% on the same indicator in NFHS-5)**; **measles-rubella elimination needs 95% coverage with two doses** - the gap is found in urban slums, migrants and tribal blocks. [NFHS-6 2023-24]",
         ],
       },
       {
@@ -415,8 +416,8 @@ const rewrites: Record<string, TopicRewrite> = {
           "**9-12 months**: **MR-1 0.5 mL subcutaneous** (right upper arm), **JE-1 0.5 mL** in endemic districts, **PCV booster**, **fIPV-3 (third dose, added in 2023)** and **vitamin A 1 lakh IU**. [MoHFW 2024]",
           "**16-24 months**: **MR-2, JE-2, DPT booster-1 (0.5 mL IM), OPV booster** and **vitamin A 2 lakh IU**, then vitamin A every 6 months to 5 years (**9 doses**); **5-6 years**: DPT booster-2; **10 and 16 years**: **Td 0.5 mL IM**. [MoHFW 2024]",
           "**IAP 2024 schedule differences**: DTwP or **DTaP-IPV-Hib-HepB (hexavalent)** at 6, 10, 14 weeks; boosters at **16-18 months and 4-6 years** with IPV and Hib; **MMR at 9 months, 15 months and 4-6 years**; PCV booster at **12-15 months**. [IAP ACVIP 2024]",
-          "**IAP additions**: **influenza** from 6 months (2 doses 4 weeks apart the first year, then **yearly to 5 years**), **typhoid conjugate vaccine single dose from 6-9 months**, **hepatitis A** from 12 months (live single dose, or inactivated 2 doses 6 months apart), **varicella** at 15 months and 3-6 months later, **Tdap at 10-12 years**, and **HPV** from 9 years. [IAP ACVIP 2024]",
-          "**HPV**: **2 doses 6-12 months apart at 9-14 years**, 3 doses (0, 1-2, 6 months) at 15 years or more or if immunocompromised; WHO now allows a **single dose** in girls 9-20 years, and the indigenous quadrivalent vaccine (Cervavac) is being introduced for girls 9-14 years in the public programme. [WHO HPV position paper 2022]",
+          "**IAP additions**: **influenza - now trivalent (A/H1N1, A/H3N2, B/Victoria; B/Yamagata dropped)** from 6 months (2 doses 4 weeks apart the first year, then **yearly to 5 years**), **typhoid conjugate vaccine single dose from 6-9 months**, **hepatitis A** from 12 months (live single dose, or inactivated 2 doses 6 months apart), **varicella** at 15 months and 3-6 months later, **Tdap at 10-12 years**, **HPV** from 9 years, and **nirsevimab (RSV monoclonal) only for high-risk infants** after discussion with parents. [IAP ACVIP 2025]",
+          "**HPV**: IAP 2025 allows a **single dose in immunocompetent girls 9-15 years** (2 doses for boys; **3 doses at 15-26 years or if immunocompromised**); WHO allows a single dose in girls 9-20 years; India launched a **free national HPV campaign on 28 February 2026 - single dose of quadrivalent vaccine (Gardasil-4) to girls aged 14**, run as a special programme alongside the UIP and continued on routine immunisation days. [IAP ACVIP 2025; MoHFW 2026]",
           "**Rule 1 of catch-up - never restart**: continue from the last documented dose, whatever the gap, and **give every due vaccine at the same visit**. [IAP ACVIP 2024]",
           "**Rule 2 - minimum ages and intervals**: pentavalent, OPV, rotavirus and PCV **not before 6 weeks**, MR **not before 9 months**; **4 weeks** between primary doses; **6 months** between the last primary dose and the first booster; a dose given 4 or fewer days early (grace period) still counts. [IAP ACVIP 2024]",
           "**Rule 3 - UIP upper age limits**: BCG up to **1 year**; pentavalent, PCV and fIPV up to **1 year**; **rotavirus first dose before 1 year** (WHO prefers by 15 weeks), otherwise omit; OPV and MR up to **5 years**; DPT up to **7 years**, after that **Td**. [MoHFW 2024]",
@@ -459,8 +460,8 @@ const rewrites: Record<string, TopicRewrite> = {
     ],
     tables: [
       {
-        heading: "UIP and IAP 2024 schedule - classification by age",
-        columns: ["Age", "UIP (free)", "IAP 2024 additions or differences"],
+        heading: "UIP and IAP 2025 schedule - classification by age",
+        columns: ["Age", "UIP (free)", "IAP 2025 additions or differences"],
         rows: [
           ["Birth", "BCG, OPV-0, hepatitis B-1 (within 24 h)", "Same"],
           [
@@ -474,12 +475,12 @@ const rewrites: Record<string, TopicRewrite> = {
             "Pentavalent-3, OPV-3, rotavirus-3, fIPV-2, PCV-2",
             "DTwP/DTaP-3, IPV-3, Hib-3, HepB-4, rotavirus-3 (if RV5), PCV-3",
           ],
-          ["6-9 months", "-", "Influenza 2 doses 4 weeks apart, then yearly to 5 years; typhoid conjugate vaccine"],
+          ["6-9 months", "-", "Trivalent influenza 2 doses 4 weeks apart, then yearly to 5 years; typhoid conjugate vaccine"],
           ["9-12 months", "MR-1, JE-1 (endemic), PCV booster, fIPV-3, vitamin A-1", "MMR-1; hepatitis A from 12 months"],
           ["12-18 months", "-", "PCV booster 12-15 months; MMR-2 and varicella-1 at 15 months; DTwP/DTaP-B1, IPV-B1, Hib-B1 at 16-18 months"],
           ["16-24 months", "MR-2, JE-2, DPT booster-1, OPV booster, vitamin A-2", "Hepatitis A-2 (inactivated), varicella-2"],
           ["4-6 years", "DPT booster-2 (5-6 years)", "DTwP/DTaP-B2, IPV-B2, MMR-3"],
-          ["9-16 years", "Td at 10 and 16 years", "HPV 2 doses at 9-14 years; Tdap at 10-12 years"],
+          ["9-16 years", "Td at 10 and 16 years; HPV single dose to girls at 14 years (national campaign 2026)", "HPV single dose in girls 9-15 years (2 doses boys); Tdap at 10-12 years"],
         ],
       },
       {
@@ -621,7 +622,7 @@ const rewrites: Record<string, TopicRewrite> = {
           "**Growth faltering** is any of: a **flat or falling weight curve over 2-3 months**, a fall across **two major centile lines**, or a new crossing **below -2 SD** - any one triggers assessment. [Park 28e]",
           "The **IAP classification by weight-for-age** (percent of the 50th centile) still appears in Indian exams: **grade I 71-80%, II 61-70%, III 51-60%, IV 50% or less**, with suffix K for oedema - but it is not used for programme decisions today. [Ghai 10e 2022]",
           "**Short stature** is height below **-2 SD (3rd centile)** for age and sex; the **growth velocity** (cm per year) and **mid-parental target height** decide whether it is normal variant or disease. [Nelson 22e]",
-          "**NFHS-5 (2019-21)**: under-fives **35.5% stunted, 19.3% wasted (7.7% severely), 32.1% underweight and 3.4% overweight**; only **11.3%** of children aged 6-23 months get a minimum acceptable diet. [NFHS-5 2019-21]",
+          "**NFHS-6 (2023-24, released 2026)**: under-fives **29.3% stunted (35.5% in NFHS-5), 19.0% wasted (severe 5.2%), 31.8% underweight** - stunting is falling but **wasting and underweight have barely moved**; in NFHS-5 only **11.3%** of children 6-23 months got a minimum acceptable diet. [NFHS-6 2023-24]",
         ],
       },
       {
@@ -938,7 +939,7 @@ const rewrites: Record<string, TopicRewrite> = {
       {
         heading: "Treatment - drugs (IMNCI doses)",
         points: [
-          "**Oral amoxicillin (pneumonia, 2-59 months)**: **40 mg/kg/dose twice daily (80 mg/kg/day) for 5 days** (3 days for fast breathing alone in low-HIV settings), using **dispersible 250 mg tablets** - 2-12 months (4-10 kg) 1 tablet twice daily, 12 months-3 years (10-14 kg) 2 tablets, 3-5 years (14-19 kg) 3 tablets twice daily. [WHO IMCI 2014]",
+          "**Oral amoxicillin (pneumonia, 2-59 months)**: **40 mg/kg/dose twice daily (80 mg/kg/day) for 5 days** (3 days for fast breathing alone in low-HIV settings), using **dispersible 250 mg tablets** - 2-12 months (4-10 kg) 1 tablet twice daily, 12 months-3 years (10-14 kg) 2 tablets, 3-5 years (14-19 kg) 3 tablets twice daily; **chest-indrawing pneumonia without danger signs - 5 days as an outpatient**. [WHO 2024]",
           "**How to give dispersible amoxicillin**: dissolve in a spoon of breast milk or clean water, give with or without food, repeat if vomited within 30 minutes, and **complete the course** even if better in 2 days; side effects are diarrhoea and rash - stop for urticaria. [WHO IMCI 2014]",
           "**Acute ear infection**: **amoxicillin 40 mg/kg/dose twice daily for 5 days** plus paracetamol and wicking; **chronic ear infection**: wicking plus **topical quinolone drops (ciprofloxacin 0.3%) 2-3 drops three times daily for 2 weeks**. [WHO IMCI 2014]",
           "**Dysentery**: **ciprofloxacin 15 mg/kg/dose twice daily for 3 days** (resistance guides alternatives - **azithromycin 10-20 mg/kg once daily for 3 days** or ceftriaxone if severe); review in 2 days and change if no better. [WHO 2024]",
@@ -948,8 +949,8 @@ const rewrites: Record<string, TopicRewrite> = {
           "**Iron for some pallor** (anaemia): **elemental iron 3 mg/kg/day** (IFA paediatric syrup or tablets under Anemia Mukt Bharat) for 3 months, with albendazole if over 1 year and not given in 6 months; review in **14 days** then monthly. [AMB MoHFW 2018]",
           "**Vitamin A** for measles or xerophthalmia: **50,000 IU under 6 months, 1 lakh IU at 6-11 months, 2 lakh IU at 12 months or more**, given on **day 1, day 2 and day 14** (the third dose for eye signs). [WHO IMCI 2014]",
           "**Salbutamol for wheeze**: inhaled by **pMDI with spacer, 2-4 puffs (100 microgram/puff)** repeated up to 3 times 20 minutes apart; reassess and classify after bronchodilator - oral salbutamol syrup is not preferred. [WHO IMCI 2014]",
-          "**Young infant with fast breathing only (7-59 days)**: oral amoxicillin **50 mg/kg/dose twice daily for 7 days**; **local bacterial infection**: gentian violet or mupirocin locally (with oral amoxicillin for 5 days in some charts). [PSBI India 2019]",
-          "**Young infant clinical severe infection when referral is refused**: **IM gentamicin 5 mg/kg (under 2 kg) or 7.5 mg/kg (2 kg or more) once daily for 2 days (or 7 days) plus oral amoxicillin 50 mg/kg/dose twice daily for 7 days**, with daily review - critical illness is never treated at home. [PSBI India 2019]",
+          "**Young infant with fast breathing only (7-59 days)**: oral amoxicillin **50 mg/kg/dose twice daily for 7 days** (at **0-6 days refer**; amoxicillin 7 days only if referral is impossible - WHO 2024); **local bacterial infection**: gentian violet or mupirocin locally (with oral amoxicillin for 5 days in some charts). [PSBI India 2019]",
+          "**Young infant clinical severe infection when referral is refused**: **IM gentamicin 5 mg/kg (under 2 kg) or 7.5 mg/kg (2 kg or more) once daily for 7 days (WHO 2024 preferred; 2 days, as in the India 2019 regimen, if 7 is not feasible) plus oral amoxicillin 50 mg/kg/dose twice daily for 7 days**, with daily review - critical illness is referred, and only if referral is impossible gets **ampicillin plus gentamicin for at least 10 days**. [WHO PSBI 2024]",
         ],
       },
       {
@@ -1419,7 +1420,7 @@ const rewrites: Record<string, TopicRewrite> = {
           "The classification that decides care is **complicated versus uncomplicated SAM** (table below): **complicated** - failed appetite test, any IMNCI danger sign, **oedema +++**, medical complication or age under 6 months with feeding failure - goes to the **NRC**; **uncomplicated** - alert, passes the appetite test, no complication - is treated in the community. [MWCD 2023]",
           "**Oedema grading**: **+ both feet**, **++ feet plus lower legs or hands/lower arms**, **+++ generalised including face** - grade +++ is always complicated. [WHO 2023]",
           "**Clinical types**: **marasmus** (severe wasting, old-man face, baggy skin, alert and hungry), **kwashiorkor** (oedema, apathy, flaky-paint dermatosis, pale sparse hair with flag sign, fatty liver, moon face) and **marasmic kwashiorkor** - oedema carries the higher mortality. [Ghai 10e 2022]",
-          "**NFHS-5**: **19.3% of Indian under-fives are wasted and 7.7% severely wasted** - about 8-9 million children with SAM at any time; undernutrition underlies about **45% of under-five deaths**. [NFHS-5 2019-21]",
+          "**NFHS-6 (2023-24)**: **19.0% of Indian under-fives are wasted and 5.2% severely wasted** (NFHS-5: 19.3% and 7.7%) - wasting has barely moved, and several million children have SAM at any time; undernutrition underlies about **45% of under-five deaths**. [NFHS-6 2023-24]",
           "Untreated SAM has a case-fatality **5-20 times** that of well-nourished children; with good NRC care mortality should be **under 5%** and recovery **over 75%**. [WHO 2023]",
         ],
       },
@@ -2005,7 +2006,7 @@ const rewrites: Record<string, TopicRewrite> = {
       "NICE NG143. Fever in under 5s: assessment and initial management, 2019 (updated 2021).",
       "American Academy of Pediatrics. Febrile Seizures: Neurodiagnostic evaluation of the child with a simple febrile seizure, Pediatrics 2011; Long-term management, Pediatrics 2008.",
       "Indian Academy of Pediatrics. Standard Treatment Guidelines 2022-2023 (fever, febrile seizures, enteric fever, scrub typhus, UTI); IAP Consensus on management of status epilepticus in children, 2022.",
-      "McCrindle BW et al. AHA Scientific Statement: Diagnosis, treatment and long-term management of Kawasaki disease (update 2024).",
+      "Jone PN et al. Update on diagnosis and management of Kawasaki disease: AHA Scientific Statement, Circulation 2024 (updates McCrindle 2017).",
       "Kliegman RM et al. Nelson Textbook of Pediatrics, 22nd edition, 2024 - fever, febrile seizures.",
       "IAP Advisory Committee on Vaccines and Immunization Practices (ACVIP) recommended schedule, 2023-24.",
     ],
@@ -2345,8 +2346,8 @@ const rewrites: Record<string, TopicRewrite> = {
         heading: "Treatment - general measures",
         points: [
           "**Nutrition for heart failure**: target **140-170 kcal/kg/day**; fortify expressed breast milk or formula to **0.8-1 kcal/mL**, give small frequent feeds and **nasogastric top-ups** when feeding itself causes distress - do not fluid-restrict, concentrate instead. [Nelson 22e]",
-          "**Immunise fully and on time** - CHD is not a contraindication to any vaccine; add **annual influenza vaccine from 6 months** and PCV; complete vaccines before elective surgery. [IAP ACVIP 2023-24]",
-          "**RSV prophylaxis** (palivizumab or nirsevimab) for haemodynamically significant CHD in the first 1-2 RSV seasons where affordable. [AAP 2023]",
+          "**Immunise fully and on time** - CHD is not a contraindication to any vaccine; add **annual (now trivalent) influenza vaccine from 6 months** and PCV; complete vaccines before elective surgery. [IAP ACVIP 2025]",
+          "**RSV prophylaxis** (palivizumab or nirsevimab) for haemodynamically significant CHD in the first 1-2 RSV seasons where affordable - IAP 2025 keeps **nirsevimab for high-risk infants only**, not universal use. [IAP ACVIP 2025]",
           "**Dental care**: twice-daily fluoride toothpaste, dental visit by 12 months then six-monthly, no night bottles or sugary syrups - oral hygiene prevents more endocarditis than antibiotic prophylaxis. [AHA 2021]",
           "**Avoid dehydration and treat fever promptly** in cyanotic children - dehydration precipitates spells and cerebral venous thrombosis; **never venesect** an iron-deficient polycythaemic child. [Nelson 22e]",
           "**Activity**: most children with small defects or good repairs need **no restriction**; restrict competitive isometric sport in severe outflow obstruction, pulmonary hypertension and unrepaired cyanosis; no scuba diving with any right-to-left shunt. [ESC 2023]",
@@ -2826,7 +2827,7 @@ const rewrites: Record<string, TopicRewrite> = {
           "Ask about **feeding**: refusal, irritability or slow feeding (painful mouth), and quantify intake and urine output - a young infant who will not suck dehydrates. [Nelson 22e]",
           "Ask the **feeding method and sterilisation practice**: bottles, teats, dummies dipped in honey or sugar, sharing of bottles. [Nelson 22e]",
           "Ask the **mother about nipple pain**: burning, shooting breast pain after feeds, shiny or flaky nipples - nipple candidiasis; but most sore nipples are poor latch or tongue-tie. [ABM 2022]",
-          "Ask about **recent antibiotics, inhaled or oral steroids** and, for inhalers, **whether the child rinses and uses a spacer**. [GINA 2025]",
+          "Ask about **recent antibiotics, inhaled or oral steroids** and, for inhalers, **whether the child rinses and uses a spacer**. [GINA 2026]",
           "Ask about **prematurity, NICU stay, central lines and recent fever or lethargy** - thrush in an unwell neonate may be invasive candidiasis. [IDSA 2016]",
           "Ask about **duration and recurrence** - thrush beyond 6-12 months of age, persistent or recurrent despite treatment, suggests HIV or immunodeficiency. [NACO 2021]",
           "Ask about **odynophagia, retrosternal pain or drooling and refusal of solids** - oesophageal candidiasis. [IDSA 2016]",
@@ -2868,7 +2869,7 @@ const rewrites: Record<string, TopicRewrite> = {
           "**Correct the predisposing factor first**, or the thrush returns - stop unnecessary antibiotics, control diabetes, correct haematinic deficiency, start ART in HIV. [IDSA 2016]",
           "**Feeding equipment**: boil teats, bottles, dummies and pump parts for **5-10 minutes daily** (or sterilise), replace teats and dummies after treatment, never share bottles, and **no honey or sugar on the dummy**. [Nelson 22e]",
           "**Continue breastfeeding** - it is protective; keep nipples clean and dry, change breast pads, and **treat the mother's nipples at the same time** if she has symptoms. [ABM 2022]",
-          "**Inhaled steroids**: use a **spacer**, **rinse, gargle and spit** after every dose (wipe the mouth in infants using a mask), and use the lowest effective dose. [GINA 2025]",
+          "**Inhaled steroids**: use a **spacer**, **rinse, gargle and spit** after every dose (wipe the mouth in infants using a mask), and use the lowest effective dose. [GINA 2026]",
           "**Oral hygiene**: wipe an infant's gums with a clean cloth; brush teeth twice daily including the tongue; avoid sugary drinks; sips of water or saliva substitutes for dry mouth. [IDSA 2016]",
           "**Dentures** (older patients): remove every night, brush with soap after meals, **soak overnight in chlorhexidine 0.2% or dilute hypochlorite** (acrylic only), and reline or remake if ill-fitting. [IDSA 2016]",
           "**Do not combine chlorhexidine with nystatin within 30 minutes** - they inactivate each other. [IDSA 2016]",
@@ -3012,7 +3013,7 @@ const rewrites: Record<string, TopicRewrite> = {
       "WHO. Consolidated guidelines on HIV prevention, testing, treatment, service delivery and monitoring, 2021 - clinical staging.",
       "NACO. National Guidelines for HIV Care and Treatment, 2021.",
       "WHO Classification of Head and Neck Tumours, 5th edition, 2022 - oral potentially malignant disorders.",
-      "Global Initiative for Asthma (GINA) 2025 - inhaled corticosteroid side effects.",
+      "Global Initiative for Asthma (GINA) 2026 - inhaled corticosteroid side effects.",
       "WHO Model List of Essential Medicines, 2023.",
     ],
   },

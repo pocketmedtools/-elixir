@@ -19,7 +19,7 @@ charts added (shown at the top of each topic as "Revise in one go").
 | 11 | Surgery & Office Procedures | **done** | 19/19 | 10 guideline updates |
 | 12 | Dermatology | **done** | 11/11 | 9 guideline updates |
 | 13 | Eye & ENT | **done** | 10/10 | 12 guideline updates |
-| 14 | Paediatrics | pending | | |
+| 14 | Paediatrics | **done** | 23/23 | 30 guideline updates |
 | 15 | Obstetrics | **done** | 15/15 | 9 guideline updates |
 | 16 | Gynaecology | **done** | 11/11 | 10 guideline updates |
 | 17 | Preventive & Community Medicine | pending | | |
@@ -163,3 +163,13 @@ charts added (shown at the top of each topic as "Revise in one go").
 - Biostatistics: India MMR 88 (SRS 2021-23).
 - Digital health: DPDP Rules 2025 - breach notice without delay, detailed report to the Board within 72 h; core duties from 13 May 2027.
 - Other 9 topics: no change needed.
+
+### Paediatrics (done)
+- Newborn: NRP 2025 starting oxygen by gestation (21% >=35 wk, 21-30% 32-34, >=30% <32); WHO PSBI 2024 young-infant regimen (gentamicin 7 days preferred, 2 if not feasible).
+- Immunisation: IAP ACVIP 2025 trivalent influenza, single-dose HPV 9-15; national HPV dose at 14 (Feb 2026); nirsevimab for high-risk infants; NFHS-6 full immunisation ~87%.
+- Growth/SAM: NFHS-6 stunting 29.3%, wasting 19.0% (severe 5.2%), underweight 31.8%.
+- IMNCI: WHO 2024 amoxicillin 5 days for chest-indrawing pneumonia.
+- Asthma: GINA 2026 as-needed bud-form 6-11, no SABA-only, O2 if SpO2 <92% (upper 95%).
+- Croup/choking: AHA 2025 infant chest thrusts with heel of hand. Kawasaki: AHA 2024 steroids for high risk, infliximab for resistance.
+- Child abuse: WHO STI 2024 regimens. Adolescent: HPV and WHO MEC 2025.
+- 8 topics: no change needed.

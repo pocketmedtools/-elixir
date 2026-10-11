@@ -31,7 +31,7 @@ const diagrams: DiagramSet = {
         {
           label: "Ventilate 40-60 breaths per minute",
           detail:
-            "Self-inflating bag of 240-500 mL with a correctly sized mask, room air in a term baby and 21-30% oxygen in a preterm, inflation pressure about 20-25 cm H2O; a rising heart rate is the primary indicator of success",
+            "Self-inflating bag of 240-500 mL with a correctly sized mask, 21% at 35 weeks or more, 21-30% at 32-34 weeks and 30% or more below 32 weeks, inflation pressure about 20-25 cm H2O; a rising heart rate is the primary indicator of success",
         },
         {
           label: "Heart rate under 100 after 15 seconds",
@@ -93,7 +93,7 @@ const diagrams: DiagramSet = {
         {
           label: "If referral is truly impossible",
           detail:
-            "Oral amoxicillin 50 mg/kg/dose twice daily for 7 days plus injection gentamicin 5-7.5 mg/kg IM once daily for 2 days, with daily review for 3 days and then on days 5 and 7",
+            "Oral amoxicillin 50 mg/kg/dose twice daily for 7 days plus injection gentamicin 5-7.5 mg/kg IM once daily for 7 days (WHO 2024; 2 days if 7 not feasible), with daily review for 3 days and then on days 5 and 7",
           tone: "decision",
         },
       ],
@@ -102,7 +102,7 @@ const diagrams: DiagramSet = {
       kind: "compare",
       heading: "PSBI antibiotics: inpatient versus the simplified regimen",
       caption:
-        "A 7-59 day old infant whose only sign is fast breathing may be treated with oral amoxicillin alone for 7 days.",
+        "A 7-59 day old infant whose only sign is fast breathing may be treated with oral amoxicillin alone for 7 days; at 0-6 days refer, and use amoxicillin only if referral is impossible (WHO 2024).",
       columns: ["Feature", "Inpatient regimen", "Simplified outpatient regimen"],
       rows: [
         ["When it is used", "Referral accepted and possible", "Referral genuinely refused or impossible"],
@@ -115,12 +115,12 @@ const diagrams: DiagramSet = {
         [
           "Aminoglycoside",
           "Gentamicin 5 mg/kg once daily if 2000 g or more, 4 mg/kg if under 2000 g",
-          "Gentamicin 5-7.5 mg/kg IM once daily for 2 days, 5 mg/kg if under 2 kg",
+          "Gentamicin 5-7.5 mg/kg IM once daily for 7 days (2 days if 7 not feasible), 5 mg/kg if under 2 kg",
         ],
         [
           "Duration",
-          "7-10 days for sepsis without meningitis, 14 days if culture-proven, 21 days for meningitis",
-          "7 days of amoxicillin, 2 days of gentamicin",
+          "7-10 days for sepsis without meningitis (WHO 2024: at least 10 days), 14 days if culture-proven, 21 days for meningitis",
+          "7 days of amoxicillin, 7 days of gentamicin (2 days acceptable)",
         ],
         [
           "If meningitis is suspected",
