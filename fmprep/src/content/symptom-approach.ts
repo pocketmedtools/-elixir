@@ -3803,7 +3803,7 @@ topics.push({
         "A cough of **2 weeks or more** defines presumptive pulmonary tuberculosis - and that alone mandates a sputum test [NTEP 2020]",
         "Fever of **2 weeks**, significant weight loss or haemoptysis of any duration also define it - so cough is not the only entry point [NTEP 2020]",
         "**Any abnormality on a chest radiograph** defines presumptive tuberculosis - 1 film alone is enough to trigger the test [NTEP 2020]",
-        "India carries about **a quarter** of the world tuberculosis - an estimated 2.8 million cases a year, which sets the pretest probability [WHO 2024]",
+        "India carries about **a quarter** of the world tuberculosis - an estimated 2.7 million cases in 2024, which sets the pretest probability [WHO 2025]",
         "In a person with HIV or a household contact, a cough of **any duration** is presumptive tuberculosis - the base rate is 10 times higher [NTEP 2020]",
         "In **diabetes, silicosis or immunosuppression** any cough is presumptive tuberculosis - 3 groups with a lower testing threshold still [NTEP 2020]",
         "Most cough beyond 2 weeks in a family clinic is **not tuberculosis** - it is post-infectious cough, asthma, upper airway syndrome or reflux [CHEST 2018]",

@@ -24,7 +24,7 @@ charts added (shown at the top of each topic as "Revise in one go").
 | 16 | Gynaecology | **done** | 11/11 | 10 guideline updates |
 | 17 | Preventive & Community Medicine | pending | | |
 | 18 | Geriatrics, Palliative Care & Ethics | pending | | |
-| 19 | Undifferentiated Symptoms | pending | | |
+| 19 | Undifferentiated Symptoms | **done** | 10/10 | 10 guideline updates; 2 diagram errors fixed |
 | 20 | Principles of Family Medicine & Research | **done** | 12/12 | 5 guideline updates |
 
 ## Changes by topic
@@ -173,3 +173,11 @@ charts added (shown at the top of each topic as "Revise in one go").
 - Croup/choking: AHA 2025 infant chest thrusts with heel of hand. Kawasaki: AHA 2024 steroids for high risk, infliximab for resistance.
 - Child abuse: WHO STI 2024 regimens. Adolescent: HPV and WHO MEC 2025.
 - 8 topics: no change needed.
+
+### Undifferentiated Symptoms (done)
+- Dizziness: AHA/ASA 2026 stroke (tenecteplase or alteplase in 4.5 h; DAPT for minor non-disabling). Vertigo diagram: betahistine removed as an acute suppressant.
+- Breathlessness: GOLD 2026 group E from 1 exacerbation; ESC 2026 HF (no HFmrEF, SGLT2i + MRA foundational).
+- Headache: AHS 2024 CGRP therapies first-line preventive option; migraine diagram corrected (sumatriptan acceptable in pregnancy).
+- Chronic cough: WHO Global TB Report 2025 (India ~2.7 million, 21% fall since 2015).
+- Adult anaemia: KDIGO 2026 CKD anaemia; NICE NG12 2025.
+- Fatigue, body ache, chest pain, fever without focus, weight loss: no change needed.

@@ -400,7 +400,7 @@ const diagrams: DiagramSet = {
         },
         {
           label: "Peripheral - sedative for 24-72 hours only",
-          detail: "Prochlorperazine 5 mg PO TDS, or betahistine 8-16 mg PO TDS, or cinnarizine 25 mg PO TDS",
+          detail: "Prochlorperazine 5 mg PO TDS or cinnarizine 25 mg PO TDS for 2-3 days only (betahistine is for Meniere disease, not an acute suppressant)",
         },
         {
           label: "Stop the sedative and mobilise",
@@ -1011,12 +1011,12 @@ const diagrams: DiagramSet = {
         },
         {
           label: "Contraindications and the monthly limit",
-          detail: "No triptan in ischaemic heart disease, uncontrolled hypertension, stroke, hemiplegic migraine or pregnancy. Fewer than 10 days a month for triptans and combinations, fewer than 15 for simple analgesics",
+          detail: "No triptan in ischaemic heart disease, uncontrolled hypertension, stroke, hemiplegic migraine. In pregnancy paracetamol first; sumatriptan acceptable if needed. Fewer than 10 days a month for triptans and combinations, fewer than 15 for simple analgesics",
           tone: "warn",
         },
         {
           label: "Preventive at 4 or more migraine days a month",
-          detail: "Propranolol 40-160 mg a day, amitriptyline 10-50 mg at night, flunarizine 10 mg at night, topiramate 50-100 mg a day, or valproate 500-1000 mg a day - not in women who could become pregnant",
+          detail: "Propranolol 40-160 mg a day, amitriptyline 10-50 mg at night, flunarizine 10 mg at night, topiramate 50-100 mg a day, or valproate 500-1000 mg a day - not in women who could become pregnant; CGRP antibodies or atogepant are now a first-line option (AHS 2024)",
         },
         {
           label: "Start low, judge at 8-12 weeks on the diary",
