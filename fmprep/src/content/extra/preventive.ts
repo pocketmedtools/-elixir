@@ -131,7 +131,7 @@ const topics: Topic[] = [
           "**QALY** weights each year of life by a utility from 0 (death) to 1 (perfect health); it is used in cost-utility analysis and health technology assessment (HTAIn). [Park 28e]",
           "**Nutritional status indicators:** anthropometry of pre-school children (weight, height, MUAC), heights of children at school entry and prevalence of **low birth weight**. [Park 28e]",
           "**Health-care delivery indicators:** doctor-population ratio, doctor-nurse ratio, population-bed ratio, population per health facility and population per trained birth attendant. [Park 28e]",
-          "**Utilisation indicators** (e.g. immunisation coverage, % institutional deliveries, CPR) show whether the services provided are actually used - institutional births were **88.6%** in NFHS-5. [NFHS-5 2019-21]",
+          "**Utilisation indicators** (e.g. immunisation coverage, % institutional deliveries, CPR) show whether the services provided are actually used - institutional births were **88.6%** in NFHS-5 and **90.6%** in NFHS-6 (2023-24). [NFHS-6 2026]",
           "Other groups: indicators of social and mental health, environmental indicators (safe water, sanitation), socio-economic indicators, **health policy indicators** (% of GNP on health) and quality of life indicators. [Park 28e]",
         ],
       },
@@ -506,7 +506,7 @@ const topics: Topic[] = [
         heading: "Challenges of primary care and suggested reforms",
         points: [
           "**Human resources:** vacant specialist and MO posts, rural reluctance, and absenteeism - Rural Health Statistics show chronic shortfall of CHC specialists. [RHS 2022-23]",
-          "**Low public spending:** government health expenditure has long been under 2% of GDP, so out-of-pocket spending was about **39% of total health expenditure in 2021-22**. [NHA 2021-22]",
+          "**Low public spending:** government health expenditure has long been under 2% of GDP, so out-of-pocket spending was **43.4% of total health expenditure in 2022-23** (record low 39.4% in 2021-22). [NHA 2026]",
           "**Private sector dominance** of outpatient care and weak regulation (Clinical Establishments Act adopted by only some states) fragment continuity. [NHP 2017]",
           "**Fragmentation of vertical programmes** - each disease programme has separate staff, registers and supply chains, duplicating effort at the SHC. [NHP 2017]",
           "**Gatekeeping is absent** - patients self-refer to tertiary hospitals, overcrowding them while PHCs are underused. [NHP 2017]",
@@ -670,7 +670,7 @@ const topics: Topic[] = [
             heading: "Challenges",
             points: [
               "Human resource vacancies especially CHC specialists; absenteeism.",
-              "Low public spend; OOPE about 39% of THE (NHA 2021-22).",
+              "Low public spend; OOPE 43.4% of THE (NHA 2022-23).",
               "Vertical programme fragmentation; no gatekeeping; private sector unregulated.",
               "Weak referral and return referral; data systems not linked.",
             ],
@@ -865,7 +865,7 @@ const topics: Topic[] = [
           "**Criticism 4:** SECC 2011 data are dated, so some eligible poor are excluded and awareness of entitlement is low among beneficiaries. [NHA 2024]",
           "**Criticism 5:** AAMs depend on the availability of CHOs and supply chains; vacancies and stock-outs reduce the promised range of services. [RHS 2022-23]",
           "**Indicators for monitoring:** number of functional AAMs, NCD screening coverage of the 30+ population, footfall, teleconsultations, wellness sessions, PM-JAY cards created, admissions authorised and claim settlement time. [MoHFW 2024]",
-          "Outcome indicators are **out-of-pocket expenditure as a share of THE** and catastrophic health expenditure - OOPE fell to about **39% in 2021-22**. [NHA 2021-22]",
+          "Outcome indicators are **out-of-pocket expenditure as a share of THE** and catastrophic health expenditure - OOPE fell from 64.2% (2013-14) to **39.4% in 2021-22, then rose to 43.4% in 2022-23**. [NHA 2026]",
         ],
       },
       {
@@ -1284,7 +1284,7 @@ const topics: Topic[] = [
         options: ["12 per 1,000 live births", "27 per 1,000 live births", "31 per 1,000 live births", "19 per 1,000 live births"],
         answer: 3,
         explanation:
-          "SRS 2021 gives NMR 19, IMR 27 and U5MR 31 per 1,000 live births. 27 is the IMR and 31 the U5MR, while 12 is the SDG 3.2 target for neonatal mortality by 2030, not the current value.",
+          "SRS 2021 gives NMR 19, IMR 27 and U5MR 31 per 1,000 live births. 27 is the IMR and 31 the U5MR, while 12 is the SDG 3.2 target for neonatal mortality by 2030, not the current value. The latest SRS (2023) gives IMR 25 and U5MR 29.",
         difficulty: "easy",
       },
       {
@@ -2269,7 +2269,7 @@ const topics: Topic[] = [
           "The **ICMR National Cancer Registry Programme** began in **1981** and is coordinated by the National Centre for Disease Informatics and Research (NCDIR), Bengaluru. [ICMR-NCRP 2020]",
           "**Uses of registries:** incidence and trends, planning of services, evaluation of screening and control programmes, and research on aetiology and survival. [Park 28e]",
           "**Tobacco control** is the single most effective cancer prevention: COTPA 2003, pictorial warnings, cessation (quitline 1800-11-2356) and mCessation. [NTCP 2023]",
-          "**HPV vaccination** of girls aged **9-14 years** prevents cervical cancer; India's indigenous quadrivalent vaccine (**Cervavac**) is being introduced, and WHO allows a single-dose schedule. [WHO HPV Position Paper 2022]",
+          "**HPV vaccination** of girls aged **9-14 years** prevents cervical cancer; India launched **free single-dose quadrivalent HPV vaccination for girls aged 14 on 28 February 2026** (indigenous **Cervavac** is also licensed), in line with WHO's single-dose schedule. [MoHFW 2026]",
           "**Hepatitis B vaccination** at birth prevents hepatocellular carcinoma - the birth dose is the oldest cancer-preventing vaccine in the UIP. [NIS MoHFW 2024]",
           "Other primary prevention: **limit alcohol**, maintain healthy weight, physical activity, diet rich in fruit and vegetables, and reduce air pollution exposure. [WHO 2023]",
         ],
@@ -2471,7 +2471,7 @@ const topics: Topic[] = [
           },
           {
             heading: "WHO elimination",
-            points: ["90-70-90 by 2030; threshold 4 per 100,000; HPV vaccine 9-14 years, single dose allowed."],
+            points: ["90-70-90 by 2030; threshold 4 per 100,000; HPV vaccine single dose - India vaccinates girls aged 14 since February 2026."],
           },
         ],
         mustDraw: ["Table comparing VIA, Pap and HPV DNA test"],
@@ -2586,7 +2586,7 @@ const topics: Topic[] = [
           "**Insulin always goes in cabin baggage** - the hold can freeze it - with glucose meter, glucose tablets and glucagon. [ADA 2026]",
           "**Eastward travel shortens the day** - the basal insulin dose may need to be reduced; **westward travel lengthens it** - an extra meal-time or correction dose may be needed. [ADA 2026]",
           "A simple rule: keep the long-acting insulin at **home time until arrival** and then shift it in steps of 2-3 hours per day, checking glucose every 4-6 hours in transit. [ADA 2026]",
-          "Patients with asthma or COPD carry their **reliever and controller inhalers, a spacer, a written action plan and a standby course of prednisolone** with the dose written. [GINA 2025]",
+          "Patients with asthma or COPD carry their **reliever and controller inhalers, a spacer, a written action plan and a standby course of prednisolone** with the dose written. [GINA 2026]",
           "Patients with **heart failure, recent MI, pneumothorax or oxygen dependence** need a fitness-to-fly assessment; patients with SpO2 below 92 per cent at rest need in-flight oxygen. [BTS Air Travel 2022]",
           "**Controlled drugs** (opioids, benzodiazepines, some ADHD and cough medicines containing codeine or pseudoephedrine) may be restricted abroad - check the destination's embassy rules before travel. [INCB 2024]",
           "Indian travellers carrying narcotic or psychotropic medicines should carry the prescription for their **personal-use quantity**, as permitted under the NDPS Act 1985. [NDPS Act 1985]",
@@ -2905,7 +2905,7 @@ const topics: Topic[] = [
           "**Very poor (301-400):** respiratory illness on prolonged exposure - avoid outdoor activity, keep windows shut, and step up controller therapy in asthma. [CPCB AQI 2014]",
           "**Severe (401-500):** affects healthy people and seriously affects those with disease - stay indoors, schools may close, and emergency GRAP measures apply. [CPCB AQI 2014]",
           "Advise patients to **check the daily AQI** (SAMEER app) before outdoor activity, and to avoid outdoor exercise during the early-morning and late-evening peaks when winter inversion traps smog. [CPCB 2023]",
-          "Patients with asthma or COPD should have a **written action plan, adequate reliever and controller**, and review during the October-January smog season. [GINA 2025]",
+          "Patients with asthma or COPD should have a **written action plan, adequate reliever and controller**, and review during the October-January smog season. [GINA 2026]",
         ],
       },
       {
@@ -2944,7 +2944,7 @@ const topics: Topic[] = [
         points: [
           "**Take an exposure history:** cooking fuel, kitchen ventilation, occupation, commute and smoking - biomass exposure is as relevant as pack-years. [GOLD 2026]",
           "Suspect **biomass COPD** in rural women with chronic cough and breathlessness who have never smoked, and do spirometry. [GOLD 2026]",
-          "**Optimise asthma and COPD control before the smog season**, and give influenza and pneumococcal vaccination to high-risk patients. [GINA 2025]",
+          "**Optimise asthma and COPD control before the smog season**, and give influenza and pneumococcal vaccination to high-risk patients. [GINA 2026]",
           "Counsel households on **switching to LPG and exclusive use**, kitchen chimneys or improved cookstoves, and keeping infants away from the chulha. [WHO HAP 2024]",
           "Advise **N95 masks** for vulnerable patients who must go out on poor-AQI days, and check fit. [WHO 2021]",
           "Recognise **carbon monoxide poisoning** (headache, vomiting, confusion in a family sleeping with an angithi) - remove from source and give 100 per cent oxygen. [Rosen 10e]",
@@ -3161,7 +3161,7 @@ const topics: Topic[] = [
     id: "preventive-demography-family-planning",
     title: "Demography, fertility indicators and the family planning programme",
     oneLiner:
-      "Demography is the scientific study of the size, composition and distribution of human populations and their changes through fertility, mortality and migration; India, the world's most populous country since 2023, has reached a replacement-level TFR of 2.0 (NFHS-5, SRS 2020) in the late expanding stage of the demographic cycle, and its family planning programme - the world's first (1952) - now offers a target-free, rights-based basket of choice including Antara, Chhaya, PPIUCD and sterilisation, evaluated by couple protection rate, unmet need and method mix.",
+      "Demography is the scientific study of the size, composition and distribution of human populations and their changes through fertility, mortality and migration; India, the world's most populous country since 2023, has a TFR of 2.0 (NFHS-5 and NFHS-6) and 1.9 (SRS 2023), now below replacement, in the late expanding stage of the demographic cycle, and its family planning programme - the world's first (1952) - now offers a target-free, rights-based basket of choice including Antara, Chhaya, PPIUCD and sterilisation, evaluated by couple protection rate, unmet need and method mix.",
     frequency: "core",
     keywords: [
       "demography",
@@ -3206,7 +3206,7 @@ const topics: Topic[] = [
           "**Census 2011:** population **121.09 crore**, decadal growth **17.7 per cent** (2001-2011) - the lowest since independence. [Census 2011]",
           "Census 2011: **sex ratio 943** females per 1,000 males, **child sex ratio (0-6) 919**, literacy **74.04 per cent** and density **382 per square km**. [Census 2011]",
           "Census 2011: **31.2 per cent urban**; the next census, delayed by COVID-19, will be India's first digital census. [Census 2011]",
-          "**SRS 2020:** crude birth rate **19.5**, crude death rate **6.0** per 1,000 population and TFR **2.0**. [SRS 2020]",
+          "**SRS 2023:** crude birth rate **18.4**, crude death rate **6.4** per 1,000 population and TFR **1.9** (SRS 2020: 19.5, 6.0 and 2.0). [SRS 2023]",
           "**NFHS-5 TFR 2.0** - below replacement (2.1) for the first time; urban 1.6, rural 2.1, with Bihar still around 3. [NFHS-5 2019-21]",
           "NFHS-5 **sex ratio of the total population 1,020** and **sex ratio at birth 929** for children born in the last five years. [NFHS-5 2019-21]",
           "NFHS-5: **23.3 per cent** of women aged 20-24 were married before 18 and **6.8 per cent** of women aged 15-19 had begun childbearing. [NFHS-5 2019-21]",
@@ -3290,12 +3290,12 @@ const topics: Topic[] = [
       {
         heading: "Role of the family doctor in family planning",
         points: [
-          "Ask every woman of reproductive age about **fertility intention** - a pregnancy wanted, not wanted, or not yet - at every opportunity. [WHO MEC 2015]",
-          "Use the **WHO Medical Eligibility Criteria** (categories 1-4) to match the method to the woman's medical conditions. [WHO MEC 2015]",
+          "Ask every woman of reproductive age about **fertility intention** - a pregnancy wanted, not wanted, or not yet - at every opportunity. [WHO MEC 2025]",
+          "Use the **WHO Medical Eligibility Criteria** (categories 1-4) to match the method to the woman's medical conditions. [WHO MEC 2025]",
           "Counsel with the **GATHER approach**: Greet, Ask, Tell, Help, Explain, Return for follow-up. [Park 28e]",
           "Offer **postpartum contraception before discharge** - PPIUCD, POP, LAM for up to 6 months, or sterilisation - since interpregnancy intervals below 24 months harm mother and baby. [MoHFW PPFP 2014]",
           "Promote **male participation and non-scalpel vasectomy**, correcting myths about loss of strength and sexual function. [MoHFW FP 2024]",
-          "Provide **emergency contraception** (levonorgestrel 1.5 mg single dose within 72 hours, or Cu-IUD within 5 days). [WHO MEC 2015]",
+          "Provide **emergency contraception** (levonorgestrel 1.5 mg single dose within 72 hours, or Cu-IUD within 5 days). [WHO MEC 2025]",
           "Link contraception with **safe abortion services under the MTP (Amendment) Act 2021**, which allows termination up to 20 weeks for contraceptive failure in any woman. [MTP Amendment Act 2021]",
           "Keep an **eligible couple list for the practice**, and monitor continuation and side effects - discontinuation from side effects is a larger gap than non-acceptance. [Park 28e]",
         ],
@@ -3489,7 +3489,7 @@ const topics: Topic[] = [
       "National Family Health Survey (NFHS-5) 2019-21",
       "National Population Policy 2000, Government of India",
       "Mission Parivar Vikas Operational Guidelines, MoHFW 2016",
-      "WHO Medical Eligibility Criteria for Contraceptive Use, 5th edition, 2015",
+      "WHO Medical Eligibility Criteria for Contraceptive Use, 6th edition, 2025",
       "United Nations World Population Prospects 2024",
     ],
   },

@@ -769,7 +769,7 @@ topics.push({
         ["Malaria (NCVBDC)", "Zero indigenous cases by 2027, elimination by 2030", "Districts categorised 0-3 by annual parasite incidence"],
         ["Kala-azar", "Fewer than 1 case per 10,000 per block", "Target achieved in all endemic blocks in 2023"],
         ["NP-NCD", "25% relative fall in premature NCD mortality", "Hypertension in 24% of men, 21% of women aged 15-49 (NFHS-5, 2019-21)"],
-        ["RCH / RMNCAH+N", "MMR below 70 and NMR below 12 by 2030 (SDG)", "MMR 97 per 100,000 live births (SRS 2018-20); IMR 27 per 1,000 (SRS 2021)"],
+        ["RCH / RMNCAH+N", "MMR below 70 and NMR below 12 by 2030 (SDG)", "MMR 88 per 100,000 live births (SRS 2021-23); IMR 25 per 1,000 (SRS 2023)"],
         ["PM-JAY", "Financial protection for the bottom 40%", "Rs 5 lakh per family per year; all aged 70+ covered from October 2024"],
       ],
     },
@@ -816,7 +816,7 @@ topics.push({
         "Describe the National Tuberculosis Elimination Programme. Discuss the role of a family physician in private practice in achieving its objectives.",
       openingLines: [
         "The National Tuberculosis Elimination Programme, renamed from RNTCP in 2020, aims to end tuberculosis in India by 2025, five years ahead of the Sustainable Development Goal target of 2030.",
-        "India notified about 25.5 lakh tuberculosis patients in 2023 with an estimated incidence of around 195 per 100,000 population, and more than half of all patients first seek care in the private sector - which makes the family physician central to the programme rather than peripheral to it.",
+        "India diagnosed about 26.2 lakh tuberculosis patients in 2024, with incidence down 21% from 237 (2015) to 187 per 100,000 (WHO Global TB Report 2025), and more than half of all patients first seek care in the private sector - which makes the family physician central to the programme rather than peripheral to it.",
       ],
       answer: [
         {
@@ -920,7 +920,7 @@ topics.push({
       question: "Write short notes on Ayushman Bharat, including both of its components and their service delivery.",
       openingLines: [
         "Ayushman Bharat, launched in 2018, is India's attempt at universal health coverage and has two mutually reinforcing components - comprehensive primary care through Health and Wellness Centres, renamed Ayushman Arogya Mandir in November 2023, and financial protection for secondary and tertiary care through PM-JAY.",
-        "The first component addresses the continuum of care at the community level; the second addresses catastrophic out-of-pocket expenditure, which still accounts for about 39.4% of total health expenditure (National Health Accounts 2021-22).",
+        "The first component addresses the continuum of care at the community level; the second addresses catastrophic out-of-pocket expenditure, which still accounts for 43.4% of total health expenditure (National Health Accounts 2022-23, up from 39.4% in 2021-22).",
       ],
       answer: [
         {
@@ -1240,7 +1240,7 @@ topics.push({
         "A **single Td booster** suffices if two doses were given in the preceding three years, since protective antibody is still present. [UIP Handbook 2023]",
         "**Vitamin A 2 lakh IU every 6 months from 16 months to 5 years** - six-monthly, because one dose stores about that much. [UIP Handbook 2023]",
         "That is **9 doses in all** counting the first at 9 months - and the ninth is where coverage usually fails. [UIP Handbook 2023]",
-        "**HPV vaccine is not yet in the national schedule** across India, so cervical cancer control still rests on VIA screening. [UIP Handbook 2023]",
+        "**Single-dose quadrivalent HPV vaccine for girls aged 14 was launched nationwide on 28 February 2026**, but it protects future cohorts only, so cervical cancer control in adult women still rests on VIA or HPV screening. [MoHFW 2026]",
         "HPV is recommended by the IAP and introduced in some states - which is why a private-practice schedule differs from the UIP. [IAP ACVIP 2023]",
         "Say exactly that in an answer on HPV - do not claim it is in the UIP.",
       ],

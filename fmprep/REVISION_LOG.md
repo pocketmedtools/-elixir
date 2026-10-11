@@ -22,7 +22,7 @@ charts added (shown at the top of each topic as "Revise in one go").
 | 14 | Paediatrics | **done** | 23/23 | 30 guideline updates |
 | 15 | Obstetrics | **done** | 15/15 | 9 guideline updates |
 | 16 | Gynaecology | **done** | 11/11 | 10 guideline updates |
-| 17 | Preventive & Community Medicine | pending | | |
+| 17 | Preventive & Community Medicine | **done** | 26/26 | 38 guideline/data updates |
 | 18 | Geriatrics, Palliative Care & Ethics | **done** | 11/11 | 20 guideline updates; 1 MCQ aligned |
 | 19 | Undifferentiated Symptoms | **done** | 10/10 | 10 guideline updates; 2 diagram errors fixed |
 | 20 | Principles of Family Medicine & Research | **done** | 12/12 | 5 guideline updates |
@@ -190,3 +190,16 @@ charts added (shown at the top of each topic as "Revise in one go").
 - Pressure ulcers: International Guideline 4th ed (2025).
 - End of life: Harish Rana v UoI (SC, March 2026) - withdrawal of clinically assisted nutrition in PVS; CMO panels.
 - Palliative symptom control: no change needed.
+
+### Preventive & Community Medicine (done)
+- Vital statistics: SRS 2023 IMR 25, U5MR 29, TFR 1.9, CBR 18.4, CDR 6.4; MMR 88 (2021-23); SRB 917; TB incidence 187/lakh (WHO 2025).
+- NFHS-6: institutional delivery 90.6%, stunting 29.3%, wasting 19.0%, underweight 31.8%, contraception any 69.1% / modern 52.7%.
+- Immunisation: national single-dose HPV for girls 14 (Feb 2026); adult pneumococcal PCV20/21 from 50 (ACIP 2025).
+- Health financing: NHA 2022-23 out-of-pocket 43.4%; NHM extended 5 years (2025).
+- Outbreaks: IHR 2024 amendments in force Sep 2025; WHO Pandemic Agreement 2025.
+- Environment: Solid Waste Management Rules 2026; COP30 Belem Health Action Plan; GINA 2026 citations.
+- Census 2027 (first digital); WHO/FIGO/ICM 2025 PPH guidance; WHO MEC 2025.
+- Biostatistics, study designs, disaster management, legislation, travel medicine: no change needed.
+
+## Summary
+All 20 subjects and 243 topics checked against guidelines current in October 2026; every topic now has a master revision table and 2-3 high-yield flow charts.

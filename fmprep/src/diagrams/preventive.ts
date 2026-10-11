@@ -174,7 +174,7 @@ const diagrams: DiagramSet = {
         {
           label: "Reproductive, child and adolescent",
           steps: [
-            "RCH - institutional delivery 88.6 per cent, MMR 97 per 100,000 (SRS 2018-20)",
+            "RCH - institutional delivery 90.6 per cent (NFHS-6), MMR 88 per 100,000 (SRS 2021-23)",
             "RBSK - birth to 18 years, the 4 Ds, 30 conditions",
             "RKSK - 10 to 19 years, six strategic areas",
           ],
@@ -303,6 +303,10 @@ const diagrams: DiagramSet = {
         {
           label: "10 years and 16 years",
           detail: "Td 0.5 mL IM - Td replaced plain TT in 2019. In pregnancy Td-1 and Td-2 four weeks apart",
+        },
+        {
+          label: "14 years (girls)",
+          detail: "HPV quadrivalent single dose 0.5 mL IM - national rollout from 28 February 2026",
         },
       ],
     },
@@ -2205,7 +2209,7 @@ const diagrams: DiagramSet = {
           "Sample-based, so no reliable district estimates; delayed publication",
         ],
         [
-          "National Family Health Survey (NFHS-5, 2019-21)",
+          "National Family Health Survey (NFHS-6, 2023-24; anaemia still from NFHS-5)",
           "Coverage, nutrition, anaemia, NCD and fertility indicators down to district level",
           "Every 4-6 years, self-reported; cannot detect an outbreak or a short-term change",
         ],
