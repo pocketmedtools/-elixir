@@ -25,7 +25,7 @@ charts added (shown at the top of each topic as "Revise in one go").
 | 17 | Preventive & Community Medicine | pending | | |
 | 18 | Geriatrics, Palliative Care & Ethics | pending | | |
 | 19 | Undifferentiated Symptoms | pending | | |
-| 20 | Principles of Family Medicine & Research | pending | | |
+| 20 | Principles of Family Medicine & Research | **done** | 12/12 | 5 guideline updates |
 
 ## Changes by topic
 
@@ -157,3 +157,9 @@ charts added (shown at the top of each topic as "Revise in one go").
 - Cervical cancer: national HPV programme (Feb 2026) - one free dose of Gardasil-4 for girls aged 14.
 - Menopause: FDA 2025 boxed-warning changes for HRT; elinzanetant approved.
 - AUB, endometriosis/fibroids, prolapse, amenorrhoea, IPV: no change needed.
+
+### Principles of Family Medicine & Research (done)
+- EBM: Cochrane Handbook 6.5 (2024).
+- Biostatistics: India MMR 88 (SRS 2021-23).
+- Digital health: DPDP Rules 2025 - breach notice without delay, detailed report to the Board within 72 h; core duties from 13 May 2027.
+- Other 9 topics: no change needed.
