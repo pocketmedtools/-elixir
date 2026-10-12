@@ -1,6 +1,6 @@
 import { usePersist } from "../lib/lastState";
 import {
-  BIOMETRY_RANGE, SCAN_SCHEDULE, SERIAL_NOTES, UA_RANGE, assessLiquor, biometryCentile, efwCentile,
+  BIOMETRY_RANGE, SCAN_SCHEDULE, lagLabel, mmFromGaEquivalent, SERIAL_NOTES, UA_RANGE, assessLiquor, biometryCentile, efwCentile,
   gaLabel, hadlockEfw, mcaPsvMoM, scanPlan, scheduleStatus, uaCentile,
   type BiometryParam, type Centile, type DvFlow, type Tone, type UaFlow,
 } from "../lib/ancScanMath";
@@ -48,7 +48,7 @@ function CentileBar({ name, value, c, note }: { name: string; value: string; c: 
           {value}
           {c && (
             <span className="ml-2 rounded-md px-1.5 py-0.5 text-xs font-black text-white" style={{ background: bandColor(c.centile) }}>
-              {c.centile < 1 ? "< 1st" : c.centile > 99 ? "> 99th" : `${Math.round(c.centile)}th`} centile
+              {c.centile < 1 ? "< 1st" : c.centile > 99 ? "> 99th" : c.centile < 10 ? `${c.centile.toFixed(1)}th` : `${Math.round(c.centile)}th`} centile
             </span>
           )}
         </span>
@@ -85,6 +85,14 @@ export default function AncScanTool() {
   const [hc, setHc] = usePersist("ancScan", "hc", "");
   const [ac, setAc] = usePersist("ancScan", "ac", "");
   const [fl, setFl] = usePersist("ancScan", "fl", "");
+  // Per parameter: entered as a size-age (weeks + days) instead of mm/cm.
+  type AgeEntry = { on: boolean; w: number; d: number };
+  const offEntry: AgeEntry = { on: false, w: 30, d: 0 };
+  const [ageEntry, setAgeEntry] = usePersist<Record<BiometryParam, AgeEntry>>("ancScan", "ageEntry", {
+    bpd: offEntry, hc: offEntry, ac: offEntry, fl: offEntry,
+  });
+  const setEntry = (p: BiometryParam, patch: Partial<AgeEntry>) =>
+    setAgeEntry((prev) => ({ ...prev, [p]: { ...(prev[p] ?? offEntry), ...patch } }));
   const [efwReport, setEfwReport] = usePersist("ancScan", "efwReport", "");
   const [prev, setPrev] = usePersist("ancScan", "prevCentile", "");
   const [sdp, setSdp] = usePersist("ancScan", "sdp", "");
@@ -103,7 +111,13 @@ export default function AncScanTool() {
     const v = num(s);
     return v == null ? undefined : unit === "cm" ? v * 10 : v;
   };
-  const vals: Record<BiometryParam, number | undefined> = { bpd: toMm(bpd), hc: toMm(hc), ac: toMm(ac), fl: toMm(fl) };
+  const fromAge = (p: BiometryParam, typed: string) => {
+    const e = ageEntry[p];
+    return e?.on ? mmFromGaEquivalent(p, e.w + e.d / 7) ?? undefined : toMm(typed);
+  };
+  const vals: Record<BiometryParam, number | undefined> = {
+    bpd: fromAge("bpd", bpd), hc: fromAge("hc", hc), ac: fromAge("ac", ac), fl: fromAge("fl", fl),
+  };
   const setters: Record<BiometryParam, [string, (v: string) => void]> = { bpd: [bpd, setBpd], hc: [hc, setHc], ac: [ac, setAc], fl: [fl, setFl] };
   const cent = (p: BiometryParam) => (vals[p] != null ? biometryCentile(p, ga, vals[p]!) : null);
 
@@ -213,13 +227,41 @@ export default function AncScanTool() {
               </div>
             </div>
             <div className="mt-2 grid grid-cols-2 gap-2">
-              {PARAMS.map((p) => (
-                <label key={p.id} className={label}>
-                  {p.label} ({unit})
-                  <input type="number" inputMode="decimal" aria-label={p.label} value={setters[p.id][0]}
-                    onChange={(e) => setters[p.id][1](e.target.value)} className={`mt-1 ${field}`} />
-                </label>
-              ))}
+              {PARAMS.map((p) => {
+                const e = ageEntry[p.id] ?? offEntry;
+                return (
+                  <div key={p.id} className={e.on ? "col-span-2" : ""}>
+                    <div className="flex items-center justify-between gap-1">
+                      <span className={label}>{p.label}</span>
+                      <div className="flex overflow-hidden rounded-md border-2 border-slate-300 text-[11px] font-black" role="radiogroup" aria-label={`${p.label} entry`}>
+                        <button type="button" role="radio" aria-checked={!e.on} onClick={() => setEntry(p.id, { on: false })}
+                          className={`px-2 py-0.5 ${!e.on ? "bg-slate-900 text-white" : "bg-white text-slate-700"}`}>{unit}</button>
+                        <button type="button" role="radio" aria-checked={e.on} onClick={() => !e.on && setEntry(p.id, { on: true, w: gaW, d: gaD })}
+                          className={`px-2 py-0.5 ${e.on ? "bg-slate-900 text-white" : "bg-white text-slate-700"}`}>wk+d</button>
+                      </div>
+                    </div>
+                    {e.on ? (
+                      <>
+                        <div className="mt-1 flex items-center gap-2">
+                          <select aria-label={`${p.label} weeks`} value={e.w} onChange={(ev) => setEntry(p.id, { w: Number(ev.target.value) })} className={sel}>
+                            {Array.from({ length: 27 }, (_, i) => i + 14).map((w) => <option key={w} value={w}>{w} wk</option>)}
+                          </select>
+                          <span className="font-black text-slate-700">+</span>
+                          <select aria-label={`${p.label} days`} value={e.d} onChange={(ev) => setEntry(p.id, { d: Number(ev.target.value) })} className={sel}>
+                            {Array.from({ length: 7 }, (_, i) => i).map((d) => <option key={d} value={d}>{d} d</option>)}
+                          </select>
+                        </div>
+                        <p className="mt-1 text-[11px] font-bold text-slate-600">
+                          ≈ {vals[p.id] != null ? Math.round(vals[p.id]! * 10) / 10 : "—"} mm · {lagLabel(e.w + e.d / 7, ga)}
+                        </p>
+                      </>
+                    ) : (
+                      <input type="number" inputMode="decimal" aria-label={p.label} value={setters[p.id][0]}
+                        onChange={(ev) => setters[p.id][1](ev.target.value)} className={`mt-1 ${field}`} />
+                    )}
+                  </div>
+                );
+              })}
               <label className={label}>
                 EFW on report (g) — optional
                 <input type="number" inputMode="numeric" aria-label="EFW on report" value={efwReport} onChange={(e) => setEfwReport(e.target.value)}
@@ -230,6 +272,12 @@ export default function AncScanTool() {
                 <input type="number" inputMode="decimal" aria-label="Previous centile" value={prev} onChange={(e) => setPrev(e.target.value)} className={`mt-1 ${field}`} />
               </label>
             </div>
+            {PARAMS.some((p) => ageEntry[p.id]?.on) && (
+              <p className="mt-2 text-[11px] font-semibold text-slate-600">
+                wk+d = the size-age printed on the report. It is converted to the INTERGROWTH-21st median size for that age, so the
+                centile is approximate — enter mm/cm when the report gives them for the exact centile.
+              </p>
+            )}
             {(ga < BIOMETRY_RANGE.min) && <p className="mt-2 text-xs font-bold text-red-700">Biometry centiles apply from 14 weeks.</p>}
           </section>
 
@@ -332,7 +380,8 @@ export default function AncScanTool() {
                       note={num(efwReport) != null ? "EFW from report" : calcEfw?.formula} />
                   )}
                   {PARAMS.map((p) => vals[p.id] != null && (
-                    <CentileBar key={p.id} name={p.label} value={`${Math.round(vals[p.id]! * 10) / 10} mm`} c={cent(p.id)} />
+                    <CentileBar key={p.id} name={p.label} value={`${Math.round(vals[p.id]! * 10) / 10} mm`} c={cent(p.id)}
+                      note={ageEntry[p.id]?.on ? `From size-age ${ageEntry[p.id].w}+${ageEntry[p.id].d} wk (${lagLabel(ageEntry[p.id].w + ageEntry[p.id].d / 7, ga)}) — approximate` : undefined} />
                   ))}
                   {uaPiN != null && (
                     <CentileBar name="UA PI" value={String(uaPiN)} c={uaC}
