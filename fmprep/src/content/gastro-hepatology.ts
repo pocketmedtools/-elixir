@@ -224,7 +224,7 @@ topics.push({
         ["Rabeprazole", "20 mg PO OD", "30-60 min before breakfast", "Same; least dependent on CYP2C19 genotype"],
         ["Esomeprazole", "40 mg PO OD", "30-60 min before breakfast", "Erosive oesophagitis and PPI-refractory reflux"],
         ["Famotidine", "20-40 mg PO at night", "Bedtime", "Nocturnal breakthrough; add-on to a PPI, or use in pregnancy"],
-        ["Sucralfate", "1 g PO QID", "1 hour before meals and at bedtime", "2-4 weeks; safe in pregnancy, binds other drugs so space by 2 hours"],
+        ["Sucralfate", "1 g PO QID", "1 hour before meals and at bedtime", "4-8 weeks; safe in pregnancy, binds other drugs so space by 2 hours"],
       ],
     },
     {
@@ -887,7 +887,7 @@ topics.push({
             "Plan C over 12 months: **30 mL/kg in 30 minutes, then 70 mL/kg over 2.5 hours** - the first bolus refills the circulation. [IMNCI MoHFW 2023]",
             "Plan C: reassess every **15-30 minutes**, start ORS once the child can drink - oral fluid returns the potassium a drip does not. [IMNCI MoHFW 2023]",
             "If a drip fails, give ORS by nasogastric tube at **20 mL/kg/hour for 6 hours** - the gut still absorbs while transfer is arranged. [IMNCI MoHFW 2023]",
-            "In severe acute malnutrition use **ReSoMal 5-10 mL/kg after each stool** - standard ORS carries too much sodium for these children. [IMNCI MoHFW 2023]",
+            "In severe acute malnutrition use **ReSoMal 5 mL/kg every 30 minutes for 2 hours, then 5-10 mL/kg/hour** - standard ORS carries too much sodium for these children. [WHO 2024]",
             "**Avoid rapid intravenous fluids in severe acute malnutrition** - risk of heart failure. [IMNCI MoHFW 2023]",
           ],
         },
@@ -1570,7 +1570,7 @@ topics.push({
       minutes: 10,
       frequency: "core",
       question:
-        "A 45-year-old man on category I anti-tuberculosis therapy for six weeks develops nausea, vomiting and jaundice. Write short notes on anti-tuberculosis drug-induced hepatitis and its management.",
+        "A 45-year-old man on first-line (HRZE) anti-tuberculosis therapy for six weeks develops nausea, vomiting and jaundice. Write short notes on anti-tuberculosis drug-induced hepatitis and its management.",
       openingLines: [
         "Anti-tuberculosis drug-induced hepatitis complicates 5-10 percent of Indian patients on isoniazid, rifampicin and pyrazinamide, and it is the commonest reason for interrupting first-line tuberculosis treatment.",
         "It is defined under NTEP as an ALT rise of more than five times the upper limit of normal without symptoms, or more than three times the upper limit of normal with symptoms such as nausea, vomiting, abdominal pain or jaundice.",
@@ -1732,7 +1732,7 @@ topics.push({
     },
     {
       id: "gastro-hepatology-jaundice-q3",
-      stem: "A 38-year-old woman on category I anti-tuberculosis therapy for five weeks presents with vomiting and jaundice. ALT is 480 U/L (normal up to 40), ALP 160 U/L (normal up to 120), total bilirubin 5.2 mg/dL, INR 1.2. Viral markers are negative and ultrasound is normal. What should be done?",
+      stem: "A 38-year-old woman on first-line (HRZE) anti-tuberculosis therapy for five weeks presents with vomiting and jaundice. ALT is 480 U/L (normal up to 40), ALP 160 U/L (normal up to 120), total bilirubin 5.2 mg/dL, INR 1.2. Viral markers are negative and ultrasound is normal. What should be done?",
       options: [
         "Continue all drugs and add a hepatoprotective agent",
         "Stop only pyrazinamide and continue isoniazid, rifampicin and ethambutol",
@@ -2214,7 +2214,7 @@ topics.push({
             "Continue maternal tenofovir **4-12 weeks postpartum** - stopping abruptly at delivery risks a postpartum hepatitis flare. [WHO HBV 2024]",
             "Maternal tenofovir if **HBV DNA is above 200000 IU/mL or HBeAg positive** - above that load infant prophylaxis alone can be breached. [WHO HBV 2024]",
             "At birth give the infant **hepatitis B immunoglobulin 0.5 mL IM within 12 hours** - antibody must be there before virus reaches hepatocytes. [WHO HBV 2024]",
-            "Give the **birth dose vaccine within 24 hours at a different site** - a separate site keeps the immunoglobulin from neutralising the vaccine. [NVHCP 2018]",
+            "Give the **birth dose vaccine with the HBIG, within 12 hours, at a different site** - a separate site keeps the immunoglobulin from neutralising the vaccine. [NVHCP 2018]",
             "Follow with pentavalent vaccine at **6, 10 and 14 weeks** - the birth dose alone does not give lasting protection. [Park 28e]",
             "**Breastfeeding is safe once the infant has had immunoprophylaxis** - so there is no reason to deny the child breast milk. [WHO HBV 2024]",
             "Check HBsAg and anti-HBs in the child at **9-12 months** - it is the only way to know whether the prophylaxis actually worked. [WHO HBV 2024]",
@@ -2375,14 +2375,14 @@ topics.push({
       stem: "A baby is born to a mother who is HBsAg and HBeAg positive. What is the correct immunoprophylaxis for the newborn?",
       options: [
         "Hepatitis B vaccine alone at 6, 10 and 14 weeks",
-        "Hepatitis B immunoglobulin within 12 hours plus hepatitis B vaccine birth dose within 24 hours at a different site",
+        "Hepatitis B immunoglobulin plus hepatitis B vaccine birth dose, both within 12 hours, at different sites",
         "Hepatitis B immunoglobulin alone within 24 hours",
         "Delay all immunisation until the infant is tested for HBsAg at 6 weeks",
         "Hepatitis B vaccine birth dose only, with immunoglobulin reserved for a positive infant HBsAg",
       ],
       answer: 1,
       explanation:
-        "Combined active and passive immunoprophylaxis - hepatitis B immunoglobulin within 12 hours and the birth dose of vaccine within 24 hours given at a separate site, followed by the pentavalent schedule - prevents about 90-95 percent of perinatal transmission, which otherwise leads to chronic infection in around 90 percent of infants. Vaccine alone, starting at 6 weeks, misses the critical window when the infant is exposed at delivery. Immunoglobulin alone gives only transient protection with no lasting immunity. Waiting to test the infant wastes the window entirely, since infection is established long before HBsAg becomes detectable.",
+        "Combined active and passive immunoprophylaxis - hepatitis B immunoglobulin 0.5 mL (100 IU) and the birth dose of vaccine, both within 12 hours and at separate sites, followed by the pentavalent schedule - prevents about 90-95 percent of perinatal transmission, which otherwise leads to chronic infection in around 90 percent of infants. Vaccine alone, starting at 6 weeks, misses the critical window when the infant is exposed at delivery. Immunoglobulin alone gives only transient protection with no lasting immunity. Waiting to test the infant wastes the window entirely, since infection is established long before HBsAg becomes detectable.",
       difficulty: "easy",
     },
     {
@@ -2397,7 +2397,7 @@ topics.push({
       ],
       answer: 1,
       explanation:
-        "Rituximab and other B-cell depleting agents carry a high risk of hepatitis B reactivation, which can present as severe hepatitis or acute liver failure, so prophylactic nucleoside or nucleotide analogue therapy is started before immunosuppression and continued for at least 12 months after rituximab. A currently normal ALT and HBV DNA do not protect against reactivation and are exactly the situation prophylaxis is designed for. Immunoglobulin has no role in this setting, and vaccinating an already HBsAg-positive patient is pointless. Waiting for the ALT to rise means waiting for the reactivation hepatitis one is trying to prevent, by which time mortality is substantial.",
+        "Rituximab and other B-cell depleting agents carry a high risk of hepatitis B reactivation, which can present as severe hepatitis or acute liver failure, so prophylactic nucleoside or nucleotide analogue therapy is started before immunosuppression and continued for at least 18 months after rituximab (12 months after other immunosuppression). A currently normal ALT and HBV DNA do not protect against reactivation and are exactly the situation prophylaxis is designed for. Immunoglobulin has no role in this setting, and vaccinating an already HBsAg-positive patient is pointless. Waiting for the ALT to rise means waiting for the reactivation hepatitis one is trying to prevent, by which time mortality is substantial.",
       difficulty: "moderate",
     },
     {
@@ -2518,7 +2518,7 @@ topics.push({
         "**Thrombocytopenia of hypersplenism is often the earliest clue** to portal hypertension - the congested spleen sequesters platelets before fluid forms. [Sleisenger 11e]",
         "**Baseline work-up**: blood count, liver function, INR, renal function, electrolytes, HBsAg, anti-HCV and alpha-fetoprotein - cause, severity and cancer. [AASLD 2021]",
         "**Ultrasound abdomen with portal vein Doppler** confirms cirrhosis, quantifies ascites and excludes portal vein thrombosis - a clot changes the whole plan. [AASLD 2021]",
-        "**Upper GI endoscopy at diagnosis to screen for varices** - primary prophylaxis only works if the varix is found before it bleeds. [Baveno VII 2022]",
+        "**Upper GI endoscopy to screen for varices unless liver stiffness is under 20 kPa with platelets over 150000, or the patient is already on carvedilol for CSPH** - primary prophylaxis only works if the varix is found before it bleeds. [Baveno VII 2022]",
       ],
     },
     {
@@ -2543,7 +2543,7 @@ topics.push({
         "Without that albumin the sequel is **renal failure and hyponatraemia** - the emptied circulation fires renin-angiotensin and vasopressin further. [AASLD 2021]",
         "**Avoid NSAIDs, aminoglycosides and ACE inhibitors or ARBs in a cirrhotic with ascites** - each precipitates acute kidney injury and diuretic resistance. [AASLD 2021]",
         "Refractory ascites is failure of or intolerance to maximal diuretics; treat with **serial large-volume paracentesis plus albumin** - more diuretic harms. [AASLD 2021]",
-        "**Refer refractory ascites for TIPS or transplantation**, and withdraw beta blockers - they lower the arterial pressure the kidney depends on. [Baveno VII 2022]",
+        "**Refer refractory ascites for TIPS or transplantation**, and reduce or stop beta blockers if systolic BP falls under 90 mmHg, sodium under 130 mmol/L or AKI develops - they lower the arterial pressure the kidney depends on. [Baveno VII 2022]",
       ],
     },
     {
@@ -2586,7 +2586,7 @@ topics.push({
         "**Lactulose 30 mL two or three times daily, titrated to 2-3 soft stools per day**, is first-line - the stool count is the dose. [AASLD 2021]",
         "Lactulose **acidifies the colon, converting ammonia to non-absorbable ammonium** - it also purges, so it clears the nitrogen load with the stool. [Harrison 21e]",
         "In grade 3-4 give it as a **retention enema of 300 mL lactulose in 700 mL water**, since the unprotected airway forbids oral dosing. [AASLD 2021]",
-        "**Add rifaximin 550 mg twice daily after a second episode or breakthrough on lactulose** - the combination cuts recurrence and hospitalisation. [AASLD 2021]",
+        "**Add rifaximin 550 mg twice daily to lactulose in acute overt HE and for recurrence on lactulose** - the combination cuts recurrence and hospitalisation. [ACG HE 2026]",
         "**L-ornithine L-aspartate and branched-chain amino acids** are used adjunctively in Indian practice - they feed the urea cycle and muscle ammonia uptake. [INASL 2023]",
         "**Protein must not be restricted** - the old teaching is wrong and is a favourite negative-marking point. [AASLD 2021]",
         "**Give 1.2-1.5 g/kg/day of protein** in frequent small meals, because cirrhotics are catabolic and sarcopenia itself worsens encephalopathy. [AASLD 2021]",
@@ -2601,9 +2601,9 @@ topics.push({
         "**Baclofen is the safest anti-craving drug in cirrhosis** - it is the one not cleared by the liver, unlike naltrexone and disulfiram. [INASL 2023]",
         "**Screen every cirrhotic for hepatocellular carcinoma with ultrasound every 6 months** - tumour doubling time means yearly scans miss the curable window. [AASLD 2021]",
         "HCC incidence is **1-6 percent per year** in cirrhosis - only surveillance-detected tumours are small enough to resect, ablate or transplant. [AASLD 2021]",
-        "**Screen for varices by upper GI endoscopy at diagnosis**; the repeat interval depends on what was seen - a large varix bleeds without warning. [Baveno VII 2022]",
-        "**No varices: repeat endoscopy in 2-3 years. Small varices: repeat in 1-2 years** - varices grow about 10 percent a year, so small ones need watching. [Baveno VII 2022]",
-        "**Medium or large varices need non-selective beta blockade or band ligation** as primary prophylaxis - either roughly halves the first bleed. [Baveno VII 2022]",
+        "**Screen for varices by upper GI endoscopy** unless stiffness is under 20 kPa with platelets over 150000 or carvedilol has already been started for CSPH; the repeat interval depends on what was seen - a large varix bleeds without warning. [Baveno VII 2022]",
+        "**No varices: repeat endoscopy in 2 years (3 if the cause is removed). Small varices: repeat in 1 year (2 if the cause is removed)** - varices grow about 10 percent a year, so small ones need watching. [Baveno VII 2022]",
+        "**Clinically significant portal hypertension (LSM 25 kPa or more) needs a non-selective beta blocker, preferably carvedilol 6.25 mg once then twice daily** to prevent decompensation (strong, Baveno VIII); medium or large varices get NSBB, or band ligation if NSBB is not tolerated. [Baveno VIII 2026]",
         "Use **propranolol or carvedilol** - carvedilol lowers the portal pressure gradient more, since its alpha blockade relaxes intrahepatic resistance too. [Baveno VII 2022]",
         "**Vaccinate against hepatitis A and B, influenza annually and pneumococcus** - in a cirrhotic an infection is a decompensation. [AASLD 2021]",
         "**Treat hepatitis B with tenofovir and hepatitis C with direct-acting antivirals whatever the fibrosis stage** - both are free under the NVHCP. [INASL 2023]",
@@ -2762,8 +2762,8 @@ topics.push({
           heading: "5. Other complications, prevention and follow-up",
           points: [
             "**Treat encephalopathy with lactulose titrated to 2-3 soft stools a day** and correct the precipitant - do not restrict protein. [AASLD 2021]",
-            "**Add rifaximin 550 mg twice daily for recurrence** - it halves rehospitalisation over lactulose alone by cutting the urease-producing flora. [AASLD 2021]",
-            "**Screen for varices by upper GI endoscopy**, giving beta blockade or banding for medium or large varices - the first bleed kills 15-20 percent. [Baveno VII 2022]",
+            "**Add rifaximin 550 mg twice daily to lactulose in acute overt HE and for recurrence** - it halves rehospitalisation over lactulose alone by cutting the urease-producing flora. [ACG HE 2026]",
+            "**Start carvedilol for CSPH and screen for varices by endoscopy unless LSM is under 20 kPa with platelets over 150000**, giving beta blockade or banding for medium or large varices - the first bleed kills 15-20 percent. [Baveno VIII 2026]",
             "**Six-monthly ultrasound surveillance for hepatocellular carcinoma**, with alpha-fetoprotein - only small tumours are curable. [AASLD 2021]",
             "**Absolute abstinence with de-addiction support and thiamine** is what changes his Child class - the alcoholic liver regains function once the toxin stops. [INASL 2023]",
             "Nutritional rehabilitation at **1.2-1.5 g/kg/day protein and 35 kcal/kg/day** with a late-evening snack - restricting protein only worsens sarcopenia. [AASLD 2021]",
@@ -2827,7 +2827,7 @@ topics.push({
             "**Identify and treat the precipitant** - stop diuretics and sedatives, correct potassium and sodium, tap for SBP, treat any bleed. [AASLD 2021]",
             "**Lactulose 30 mL two to three times daily titrated to 2-3 soft stools a day** - titrate to stool, not to ammonia. [AASLD 2021]",
             "If the patient cannot swallow, give it as a **retention enema of 300 mL in 700 mL water** - it acidifies the colon directly, so no absorption is needed. [AASLD 2021]",
-            "**Add rifaximin 550 mg twice daily for breakthrough or recurrent episodes** - it suppresses the urease-producing flora that lactulose alone leaves. [AASLD 2021]",
+            "**Add rifaximin 550 mg twice daily to lactulose in the acute episode and for breakthrough or recurrent episodes** - it suppresses the urease-producing flora that lactulose alone leaves. [ACG HE 2026]",
             "**Maintain protein at 1.2-1.5 g/kg/day with a late-evening snack** - do not restrict it, sarcopenia worsens outcome. [AASLD 2021]",
             "After recovery **continue lactulose with or without rifaximin as secondary prophylaxis** - an episode of overt encephalopathy halves one-year survival. [AASLD 2021]",
           ],
@@ -2889,7 +2889,7 @@ topics.push({
       ],
       answer: 1,
       explanation:
-        "Encephalopathy is managed by removing the precipitant - here constipation, with a search for bleeding, infection, drugs and electrolyte disturbance - and by lactulose titrated to stool frequency, which is both a cathartic and an ammonia trap. Protein restriction is obsolete and harmful because sarcopenia worsens encephalopathy; 1.2-1.5 g/kg/day is recommended. Mannitol is used for cerebral oedema in acute liver failure, not in chronic portosystemic encephalopathy. Rifaximin is an add-on to lactulose for recurrent episodes rather than first-line monotherapy. Serial ammonia levels do not correlate with grade and must not be used to titrate treatment.",
+        "Encephalopathy is managed by removing the precipitant - here constipation, with a search for bleeding, infection, drugs and electrolyte disturbance - and by lactulose titrated to stool frequency, which is both a cathartic and an ammonia trap. Protein restriction is obsolete and harmful because sarcopenia worsens encephalopathy; 1.2-1.5 g/kg/day is recommended. Mannitol is used for cerebral oedema in acute liver failure, not in chronic portosystemic encephalopathy. Rifaximin is added to lactulose (in acute overt encephalopathy and for recurrence on lactulose, ACG 2026), never used as first-line monotherapy. Serial ammonia levels do not correlate with grade and must not be used to titrate treatment.",
       difficulty: "easy",
     },
     {
@@ -2913,7 +2913,7 @@ topics.push({
       options: ["Class A", "Class B", "Class C", "Cannot be calculated without creatinine", "Cannot be calculated without sodium"],
       answer: 2,
       explanation:
-        "Scoring gives bilirubin 3.5 mg/dL 3 points (more than 3), albumin 2.6 g/dL 3 points (less than 2.8), INR 2.0 2 points (1.7 to 2.3), moderate ascites 2 points and grade 2 encephalopathy 2 points, a total of 12, which is Child class C (10-15). Class A is 5-6 points and class B is 7-9, both of which underestimate this patient. Creatinine and sodium belong to MELD and MELD-Na, not to Child-Pugh, which uses bilirubin, albumin, INR, ascites and encephalopathy only.",
+        "Scoring gives bilirubin 3.5 mg/dL 3 points (more than 3), albumin 2.6 g/dL 3 points (less than 2.8), INR 2.0 2 points (1.7 to 2.3), moderate ascites 3 points and grade 2 encephalopathy 2 points, a total of 13, which is Child class C (10-15). Class A is 5-6 points and class B is 7-9, both of which underestimate this patient. Creatinine and sodium belong to MELD and MELD-Na, not to Child-Pugh, which uses bilirubin, albumin, INR, ascites and encephalopathy only.",
       difficulty: "hard",
     },
   ],
@@ -3006,7 +3006,7 @@ topics.push({
       points: [
         "Suspect varices in haematemesis with **stigmata of chronic liver disease, splenomegaly, ascites or known cirrhosis** - terlipressin cannot wait. [Baveno VII 2022]",
         "Variceal bleeding causes **a third of cirrhosis deaths and carries a 15-20 percent six-week mortality** - death is from liver failure and sepsis. [Baveno VII 2022]",
-        "**Terlipressin 2 mg IV six-hourly before endoscopy, 1 mg six-hourly after control, for 2-5 days** - splanchnic constriction drops portal pressure. [Baveno VII 2022]",
+        "**Terlipressin 2 mg IV four-hourly until control, then 1 mg four-hourly, for 2-5 days** - splanchnic constriction drops portal pressure. [Baveno VII 2022]",
         "The vasoactive drug is started first because **it controls bleeding in most patients and cuts mortality before any scope arrives**. [Baveno VII 2022]",
         "Alternatives are **octreotide 50 microgram bolus then 50 microgram/hour**, or somatostatin - all act by splanchnic vasoconstriction. [Baveno VII 2022]",
         "**Watch terlipressin for hyponatraemia and ischaemic complications** - it is a vasopressin analogue, so limb, gut and coronary ischaemia are real risks. [Baveno VII 2022]",
@@ -3017,7 +3017,7 @@ topics.push({
         "Tamponade controls bleeding in **80-90 percent** but rebleeds on deflation - it compresses without obliterating, so it only buys time for TIPS. [Baveno VII 2022]",
         "**Pre-emptive TIPS within 72 hours improves survival in Child C 10-13, or Child B with active bleeding at endoscopy** - these fail standard care most. [Baveno VII 2022]",
         "**Rescue TIPS** is for failure of combined drug and endoscopic therapy - it is the salvage, not the opening move. [Baveno VII 2022]",
-        "Secondary prophylaxis is **non-selective beta blockade plus band ligation every 2-4 weeks until obliteration** - drug cuts pressure, bands the varix. [Baveno VII 2022]",
+        "Secondary prophylaxis is **non-selective beta blockade plus band ligation every 1-4 weeks until obliteration** - drug cuts pressure, bands the varix. [Baveno VII 2022]",
         "Both halves are needed - **the drug lowers portal pressure, the band removes the varix** - then surveillance endoscopy continues. [Baveno VII 2022]",
         "Treat the underlying liver disease and **refer for transplant assessment**, because a variceal bleed is by definition a decompensation. [AASLD 2021]",
       ],
@@ -3090,7 +3090,7 @@ topics.push({
       rows: [
         ["Background", "Stigmata of chronic liver disease, splenomegaly, ascites, alcohol or hepatitis B or C", "NSAID or aspirin use, prior dyspepsia or ulcer, Helicobacter pylori"],
         ["Bleed character", "Large-volume painless haematemesis, often with melaena and shock", "Coffee-ground vomit or melaena, often preceded by epigastric pain"],
-        ["Drug to start immediately", "Terlipressin 2 mg IV six-hourly plus ceftriaxone 1 g IV daily", "Pantoprazole 80 mg IV bolus then 8 mg/hour infusion"],
+        ["Drug to start immediately", "Terlipressin 2 mg IV four-hourly plus ceftriaxone 1 g IV daily", "Pantoprazole 80 mg IV bolus then 8 mg/hour infusion"],
         ["Endoscopy timing", "Within 12 hours of presentation", "Within 24 hours, within 12 hours if unstable"],
         ["Endoscopic therapy", "Band ligation for oesophageal varices, cyanoacrylate glue for gastric varices", "Dual therapy - adrenaline plus clip or thermal coagulation"],
         ["Rescue if it fails", "Balloon tamponade for up to 24 hours as a bridge, then TIPS", "Repeat endoscopy, then arterial embolisation or surgery"],
@@ -3195,14 +3195,14 @@ topics.push({
         {
           heading: "5. Variceal bleeding",
           points: [
-            "**Terlipressin 2 mg IV six-hourly, 1 mg six-hourly after control, for 2-5 days**; octreotide is the alternative - both cut splanchnic flow. [Baveno VII 2022]",
+            "**Terlipressin 2 mg IV four-hourly, 1 mg four-hourly after control, for 2-5 days**; octreotide is the alternative - both cut splanchnic flow. [Baveno VII 2022]",
             "**Ceftriaxone 1 g intravenously daily for up to 7 days for every cirrhotic with a GI bleed** - it reduces infection, rebleeding and mortality. [Baveno VII 2022]",
             "**Endoscopic variceal band ligation within 12 hours for oesophageal varices**; glue for fundal varices - bands slip off the wide fundal varix. [Baveno VII 2022]",
             "**Balloon tamponade for a maximum of 24 hours as a bridge**, airway secured first - the tube blocks the pharynx, so blood goes to the lungs. [Baveno VII 2022]",
             "**Early or rescue TIPS for failure of therapy, or for high-risk Child C patients** - it is the only option that survives endoscopic failure. [Baveno VII 2022]",
             "**Prevent encephalopathy with lactulose and avoid sedatives** - the blood in the gut is the protein load that precipitates it. [AASLD 2021]",
             "**Monitor for spontaneous bacterial peritonitis and hepatorenal syndrome** after the bleed - shock and gut bacterial translocation trigger both. [AASLD 2021]",
-            "Secondary prophylaxis: **non-selective beta blocker plus repeat banding every 2-4 weeks to obliteration** - untreated, most rebleed within a year. [Baveno VII 2022]",
+            "Secondary prophylaxis: **non-selective beta blocker plus repeat banding every 1-4 weeks to obliteration** - untreated, most rebleed within a year. [Baveno VII 2022]",
           ],
         },
       ],
@@ -3381,12 +3381,12 @@ topics.push({
   id: "gastro-hepatology-ibs-constipation",
   title: "Irritable bowel syndrome and chronic constipation",
   oneLiner:
-    "Irritable bowel syndrome is a disorder of gut-brain interaction defined by **the Rome IV criteria** as recurrent abdominal pain **at least one day a week** for three months associated with defecation or a change in stool frequency or form, with no structural disease, and chronic constipation is infrequent, hard or difficult defecation for at least three months; both are positive clinical diagnoses made on symptom criteria plus **the absence of alarm features**, and both are managed with a therapeutic relationship, diet, fibre and targeted drugs rather than with repeated investigation.",
+    "Irritable bowel syndrome is a disorder of gut-brain interaction defined by **the Rome V criteria (2026)** as recurrent abdominal **pain or discomfort on at least 3 days a month** for three months, not continuous, associated with defecation or a change in stool frequency or form, with no structural disease, and chronic constipation is infrequent, hard or difficult defecation for at least three months; both are positive clinical diagnoses made on symptom criteria plus **the absence of alarm features**, and both are managed with a therapeutic relationship, diet, fibre and targeted drugs rather than with repeated investigation.",
   frequency: "common",
   keywords: [
     "irritable bowel syndrome",
     "IBS",
-    "Rome IV criteria",
+    "Rome V criteria",
     "disorder of gut-brain interaction",
     "IBS-D",
     "IBS-C",
@@ -3412,14 +3412,14 @@ topics.push({
   ],
   sections: [
     {
-      heading: "Definitions and the Rome IV criteria",
+      heading: "Definitions and the Rome V criteria",
       points: [
         "**IBS is a disorder of gut-brain interaction**, no longer called functional in the pejorative sense - the renaming asserts a real mechanism. [Rome IV 2016]",
         "Mechanisms: **visceral hypersensitivity, altered motility, low-grade mucosal immune activation and altered microbiota** - so no single drug fixes it. [Rome IV 2016]",
         "Also **increased intestinal permeability and central pain processing modulated by stress** - which is why neuromodulators work at all. [Rome IV 2016]",
-        "**Rome IV: recurrent abdominal pain at least 1 day per week in the last 3 months**, onset 6 months before - chronicity separates IBS from organic disease. [Rome IV 2016]",
-        "The pain must carry **two or more of: related to defecation, a change in stool frequency, a change in stool form** - pain without bowel change is not IBS. [Rome IV 2016]",
-        "**Rome IV requires pain, not merely discomfort**, and dropped the old Rome III threshold of 3 days per month - the version change is examined. [Rome IV 2016]",
+        "**Rome V (2026): recurrent abdominal pain or discomfort on at least 3 days a month in the last 3 months, not continuous** - constant pain is centrally mediated abdominal pain, not IBS. [Rome V 2026]",
+        "The pain or discomfort must be **related to defecation and/or a change in stool frequency or form**, and not solely to menses - pain without bowel change is not IBS. [Rome V 2026]",
+        "**Rome V brings back discomfort and lowers the frequency to 3 days a month** (Rome IV demanded pain on 1 day a week), and separates short clinical criteria from research criteria - the version change is examined. [Rome V 2026]",
         "**Subtypes are assigned by Bristol stool form on days with abnormal stools**, not on all days - that qualifier is where the mark is lost. [Rome IV 2016]",
         "**IBS-C: over 25 percent of stools hard (Bristol 1-2), under 25 percent loose** - the chart is used because patients misuse the words. [Rome IV 2016]",
         "**IBS-D: over 25 percent of stools loose (Bristol 6-7), under 25 percent hard** - the subtype decides whether to slow or to soften. [Rome IV 2016]",
@@ -3459,7 +3459,7 @@ topics.push({
     {
       heading: "Investigation: how little is enough",
       points: [
-        "**IBS is a positive diagnosis on the Rome IV criteria in the absence of alarm features, not a diagnosis of exclusion** - saying so is worth a mark. [Rome IV 2016]",
+        "**IBS is a positive diagnosis on the Rome V criteria in the absence of alarm features, not a diagnosis of exclusion** - saying so is worth a mark. [Rome IV 2016]",
         "**Repeated normal investigations reinforce illness behaviour rather than reassure** - each one says the doctor is still worried. [AGA 2023]",
         "The minimum without alarm features is a **blood count with ESR or CRP** - a normal inflammatory marker argues against Crohn or colitis. [AGA 2023]",
         "Add **coeliac serology, tissue transglutaminase IgA with total IgA, in diarrhoea-predominant disease** - IgA deficiency gives a false negative. [AGA 2023]",
@@ -3469,7 +3469,7 @@ topics.push({
         "In chronic constipation check **TSH, calcium, glucose and potassium** - hypothyroidism, hypercalcaemia and diabetes all slow the gut. [AGA 2023]",
         "Those exclude **hypothyroidism, hypercalcaemia, diabetes and hypokalaemia**; a barium enema or radiograph adds nothing - since IBS has no structural lesion. [AGA 2023]",
         "**Colonoscopy is indicated for any alarm feature, new symptoms over 45-50, a raised calprotectin, or a family history of colorectal cancer** - the cancer risk. [AGA 2023]",
-        "**It is not indicated to reassure a 28-year-old whose symptoms fit Rome IV** - that is the examined negative. [AGA 2023]",
+        "**Colonoscopy is not indicated merely to reassure a 28-year-old whose symptoms fit Rome V** - that is the examined negative. [AGA 2023]",
         "Consider a **hydrogen breath test for lactose intolerance or small intestinal bacterial overgrowth** where bloating dominates - both make gas from sugar. [AGA 2023]",
         "Consider **anorectal manometry with a balloon expulsion test** where the rectal examination suggested dyssynergia - biofeedback, not laxatives, treats it. [AGA 2023]",
       ],
@@ -3545,17 +3545,17 @@ topics.push({
   ],
   tables: [
     {
-      heading: "Rome IV criteria and IBS subtypes with the Bristol stool form scale",
+      heading: "Rome V criteria and IBS subtypes with the Bristol stool form scale",
       columns: ["Item", "Definition", "Practical note"],
       rows: [
         [
-          "Rome IV core criterion",
-          "Recurrent abdominal pain at least 1 day per week for 3 months, with onset at least 6 months earlier",
-          "Pain is required; discomfort alone is not enough under Rome IV",
+          "Rome V core criterion (2026)",
+          "Recurrent abdominal pain or discomfort on at least 3 days a month for 3 months, not continuous",
+          "Rome IV needed pain at least 1 day a week; Rome V brings back discomfort",
         ],
         [
-          "Associated features (need 2 of 3)",
-          "Related to defecation; associated with a change in stool frequency; associated with a change in stool form",
+          "Associated features",
+          "Related to defecation and/or a change in stool frequency or form; not solely menstrual",
           "Pain relieved or worsened by defecation both count",
         ],
         [
@@ -3603,7 +3603,7 @@ topics.push({
     "Family history of colorectal cancer, inflammatory bowel disease or coeliac disease with new symptoms - lower the threshold for endoscopy and serology.",
   ],
   pearls: [
-    "IBS is a positive diagnosis on Rome IV criteria plus the absence of alarm features, not a diagnosis of exclusion - say this sentence in the viva.",
+    "IBS is a positive diagnosis on Rome V criteria plus the absence of alarm features, not a diagnosis of exclusion - say this sentence in the viva.",
     "Soluble fibre such as isabgol helps IBS; insoluble bran makes pain and bloating worse.",
     "Avoid lactulose in IBS - it is a FODMAP and it fuels exactly the fermentation causing the bloating.",
     "Faecal calprotectin under 50 microgram/g effectively excludes inflammatory bowel disease and saves a colonoscopy in IBS-D.",
@@ -3622,7 +3622,7 @@ topics.push({
       question:
         "A 32-year-old woman presents with recurrent lower abdominal pain, bloating and alternating loose stools and constipation for one year. Discuss your approach to diagnosis and management.",
       openingLines: [
-        "This is the classic presentation of irritable bowel syndrome, a disorder of gut-brain interaction defined by the Rome IV criteria as recurrent abdominal pain at least one day a week for three months, associated with defecation or with a change in stool frequency or form, with onset at least six months earlier.",
+        "This is the classic presentation of irritable bowel syndrome, a disorder of gut-brain interaction defined by the Rome V (2026) criteria as recurrent abdominal pain or discomfort on at least 3 days a month for three months, not continuous, associated with defecation or with a change in stool frequency or form.",
         "In a woman of 32 with no alarm features, the diagnosis is made positively on symptom criteria with a minimum of investigation, and management rests on explanation, dietary modification, targeted symptomatic drugs and continuity of care rather than on repeated endoscopy.",
       ],
       answer: [
@@ -3689,17 +3689,17 @@ topics.push({
         },
       ],
       mustDraw: [
-        "A box of the Rome IV criteria for irritable bowel syndrome with the three associated features.",
+        "A box of the Rome V criteria for irritable bowel syndrome with the associated features.",
         "The Bristol stool form scale with the subtype definitions for IBS-C, IBS-D and IBS-M.",
       ],
       markSplit: [
-        { part: "Definition and Rome IV criteria", marks: 2 },
+        { part: "Definition and Rome V criteria", marks: 2 },
         { part: "History including alarm features and diet", marks: 2 },
         { part: "Examination and rational investigation", marks: 2 },
         { part: "Explanation, diet and non-drug management", marks: 2 },
         { part: "Symptom-directed drug therapy and follow-up", marks: 2 },
       ],
-      keywords: ["irritable bowel syndrome", "Rome IV", "Bristol stool scale", "low FODMAP", "faecal calprotectin", "mebeverine"],
+      keywords: ["irritable bowel syndrome", "Rome V", "Bristol stool scale", "low FODMAP", "faecal calprotectin", "mebeverine"],
     },
     {
       id: "gastro-hepatology-ibs-constipation-t2",
@@ -3718,7 +3718,7 @@ topics.push({
           heading: "1. Evaluation",
           points: [
             "**Define what the patient means by constipation** - frequency, straining, hard stool, incomplete evacuation, the need for digital manoeuvres. [Rome IV 2016]",
-            "**Apply the Rome IV criteria** rather than taking the word at face value - patients use constipation for straining, hardness or frequency. [Rome IV 2016]",
+            "**Apply the Rome IV criteria (unchanged in Rome V)** rather than taking the word at face value - patients use constipation for straining, hardness or frequency. [Rome IV 2016]",
             "**Alarm features: new onset, rectal bleeding, weight loss, anaemia, a mass, family history of colorectal cancer** - all mandate colonoscopy. [AGA 2023]",
             "Full drug history: **opioids including tramadol, iron, calcium and aluminium antacids, calcium channel blockers** - each slows the colon, so stopping cures. [AGA 2023]",
             "Also **anticholinergics, tricyclics, antipsychotics and diuretics** - stopping one of them is often the whole treatment. [AGA 2023]",
@@ -3768,7 +3768,7 @@ topics.push({
         "A table of laxative classes with drug, dose, onset and caution.",
       ],
       markSplit: [
-        { part: "Definition and Rome IV criteria for functional constipation", marks: 1 },
+        { part: "Definition and Rome IV/V criteria for functional constipation", marks: 1 },
         { part: "Evaluation including drugs, secondary causes and rectal examination", marks: 1.5 },
         { part: "Lifestyle, toilet training and removal of cause", marks: 1 },
         { part: "Stepwise laxative therapy and special situations", marks: 1.5 },
@@ -3789,7 +3789,7 @@ topics.push({
       ],
       answer: 1,
       explanation:
-        "He meets the Rome IV criteria - recurrent abdominal pain at least one day a week for three months, related to defecation and to a change in stool form, with onset more than six months earlier - and has no alarm features, so IBS is a positive clinical diagnosis and treatment can begin at once. Colonoscopy, CT and barium enema are indicated only when alarm features are present or the patient is over 45-50, and repeated normal investigation reinforces illness behaviour rather than reassuring. Empirical anti-tubercular therapy without evidence of tuberculosis exposes him to hepatotoxicity and is a common and harmful shortcut in Indian practice.",
+        "He meets the Rome V criteria - recurrent abdominal pain on at least 3 days a month for three months, not continuous, related to defecation and to a change in stool form - and has no alarm features, so IBS is a positive clinical diagnosis and treatment can begin at once. Colonoscopy, CT and barium enema are indicated only when alarm features are present or the patient is over 45-50, and repeated normal investigation reinforces illness behaviour rather than reassuring. Empirical anti-tubercular therapy without evidence of tuberculosis exposes him to hepatotoxicity and is a common and harmful shortcut in Indian practice.",
       difficulty: "easy",
     },
     {
@@ -3854,7 +3854,7 @@ topics.push({
     },
   ],
   references: [
-    "Rome IV criteria for functional gastrointestinal disorders, Rome Foundation, 2016",
+    "Rome V - disorders of gut-brain interaction, Rome Foundation, 2026; Rome IV criteria, 2016",
     "American College of Gastroenterology clinical guideline: management of irritable bowel syndrome, 2021",
     "British Society of Gastroenterology guidelines on the management of irritable bowel syndrome, 2021",
     "NICE Clinical Guideline CG61: Irritable bowel syndrome in adults, updated 2017",
@@ -4474,7 +4474,7 @@ const cases: ClinicalCase[] = [
         heading: "Scoring the disease and staging the bleed before the summary",
         points: [
           "Put the findings together aloud: a 20-year history of hazardous drinking, stigmata of chronic liver disease, a firm liver with splenomegaly, ascites and dilated abdominal wall veins, and an upper gastrointestinal bleed - decompensated cirrhosis with portal hypertension, most probably alcohol-related, presenting with a first variceal bleed.",
-          "Give the Child-Pugh score from the bedside and the reports: bilirubin 2.8 mg/dL (2 points), albumin 2.6 g/dL (3 points), INR 1.8 (2 points), moderate ascites (2 points), no encephalopathy (1 point) - a total of 10, Child-Pugh class B - and say that the MELD-Na would be calculated once the creatinine and sodium are back.",
+          "Give the Child-Pugh score from the bedside and the reports: bilirubin 2.8 mg/dL (2 points), albumin 3.0 g/dL (2 points), INR 1.6 (1 point), moderate ascites (3 points), no encephalopathy (1 point) - a total of 9, Child-Pugh class B - and say that the MELD-Na would be calculated once the creatinine and sodium are back.",
           "State that the SAAG is expected to be more than 1.1 g/dL, confirming portal hypertension as the cause of the ascites, and that the ascitic fluid polymorph count below 250 per cubic millimetre is what allows you to say spontaneous bacterial peritonitis has been ruled out and not merely that the abdomen was non-tender.",
           "Stage the bleed: a first variceal bleed in a Child B patient, 3 days old, haemodynamically stable now, which puts him in the group with a 6-week mortality of about 15 to 20% and a rebleeding risk of 60% within a year without secondary prophylaxis.",
           "Only then give the summary statement, so that the examiner hears a diagnosis that has been reasoned to with its aetiology, its complications and its severity in the same sentence.",
@@ -4511,13 +4511,13 @@ const cases: ClinicalCase[] = [
         test: "Complete blood count, prothrombin time with INR, liver function tests and serum albumin",
         why: "Anaemia and thrombocytopenia quantify the blood loss and the hypersplenism; bilirubin, albumin and INR are three of the five Child-Pugh variables and the INR and albumin tell you the synthetic reserve.",
         expected:
-          "Haemoglobin 8.2 g/dL, MCV 104 fL, platelets 78,000 per cubic millimetre, bilirubin 2.8 mg/dL, AST 96 and ALT 42 U/L with an AST:ALT ratio above 2, GGT 320 U/L, albumin 2.6 g/dL, INR 1.8.",
+          "Haemoglobin 8.2 g/dL, MCV 104 fL, platelets 78,000 per cubic millimetre, bilirubin 2.8 mg/dL, AST 96 and ALT 42 U/L with an AST:ALT ratio above 2, GGT 320 U/L, albumin 3.0 g/dL, INR 1.6.",
       },
       {
         test: "Diagnostic paracentesis with ascitic fluid cell count and differential, albumin, protein and culture in blood culture bottles",
         why: "Every cirrhotic with ascites who is admitted, and every cirrhotic who bleeds, must have the fluid tapped: a polymorph count of 250 or more per cubic millimetre diagnoses spontaneous bacterial peritonitis, and the serum-ascites albumin gradient classifies the ascites.",
         expected:
-          "Clear straw-coloured fluid, polymorphs 40 per cubic millimetre, ascitic albumin 0.8 g/dL giving a SAAG of 1.8 g/dL, ascitic protein 1.1 g/dL, culture sterile - portal hypertensive ascites without SBP, and a low-protein fluid that carries a high risk of SBP in future.",
+          "Clear straw-coloured fluid, polymorphs 40 per cubic millimetre, ascitic albumin 0.8 g/dL giving a SAAG of 2.2 g/dL, ascitic protein 1.1 g/dL, culture sterile - portal hypertensive ascites without SBP, and a low-protein fluid that carries a high risk of SBP in future.",
       },
       {
         test: "Serum creatinine, urea, sodium and potassium",

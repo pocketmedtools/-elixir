@@ -751,7 +751,7 @@ const rewrites: Record<string, TopicRewrite> = {
         points: [
           "**Neonatal jaundice**: jaundice within 24 hours of birth is pathological (haemolysis, Rh or ABO incompatibility, G6PD) - check serum bilirubin and plot on the hour-specific nomogram for phototherapy. [AAP 2022]",
           "**Prolonged neonatal jaundice beyond 14 days (term) with pale stools or dark urine** means **biliary atresia** until proved otherwise - check conjugated bilirubin and refer urgently, because the **Kasai portoenterostomy works best before 45-60 days**. [Nelson 22e]",
-          "**Intrahepatic cholestasis of pregnancy**: itching of palms and soles in the third trimester with raised **serum bile acids (10 micromol/L or more)**; stillbirth risk rises when bile acids exceed 100 micromol/L, which guides the timing of delivery. [RCOG 2022]",
+          "**Intrahepatic cholestasis of pregnancy**: itching of palms and soles in the third trimester with raised **peak random serum bile acids (19 micromol/L or more)**; stillbirth risk rises when bile acids reach 100 micromol/L or more, which guides the timing of delivery. [RCOG 2022]",
           "**The elderly** with painless jaundice and weight loss need urgent imaging for pancreatic or biliary malignancy; drug-induced cholestasis (amoxicillin-clavulanate) is also commoner with age. [ACG DILI 2021]",
           "**HIV and TB co-treatment**: ATT, co-trimoxazole, nevirapine and efavirenz can all cause DILI - review all drugs together and involve the ART centre before stopping ART. [NTEP 2021]",
         ],
@@ -1286,7 +1286,7 @@ const rewrites: Record<string, TopicRewrite> = {
           "**Refractory ascites** (no response to maximal diuretics or unable to tolerate them) is treated by **serial large-volume paracentesis with albumin**, TIPS referral and transplant assessment - stop further diuretic escalation. [AASLD 2021]",
           "**Non-selective beta-blocker - carvedilol** (beta1, beta2 and alpha1 blocker): **6.25 mg once daily, increased after 3 days to 6.25 mg twice daily (12.5 mg a day)** - for CSPH to **prevent decompensation** and for medium or large varices; with food; side effects hypotension, fatigue, breathlessness. [Baveno VII 2022]",
           "**Baveno VIII upgraded this to a strong recommendation**: every compensated cirrhotic with CSPH gets an **NSBB, preferably carvedilol**, to prevent decompensation and improve survival (also with gastric varices); NSBBs are **not** given without CSPH, and **TIPS is not used to prevent first decompensation**. [Baveno VIII 2026]",
-          "**Propranolol** is the alternative: **20-40 mg twice daily**, titrated every 2-3 days to the maximum tolerated dose (up to 160 mg a day, or 80 mg with ascites) aiming for a **resting heart rate of 55-60**. [Baveno VII 2022]",
+          "**Propranolol** is the alternative: **20-40 mg twice daily**, titrated every 2-3 days to the maximum tolerated dose (up to 320 mg a day without ascites, 160 mg a day with ascites) aiming for a **resting heart rate of 55-60**. [Baveno VII 2022]",
           "**Reduce or stop the beta-blocker** if systolic BP falls under 90 mmHg, sodium under 130 mmol/L, or AKI, SBP or hepatorenal syndrome develops; asthma is a contraindication. [Baveno VII 2022]",
           "**Lactulose** (non-absorbed disaccharide; colonic bacteria ferment it to acids, converting NH3 to non-absorbable **NH4+**, and it purges): **20-30 mL (15-20 g) two to three times daily titrated to 2-3 soft stools a day**; in overt HE give **25 mL every 1-2 hours until a stool is passed**; side effects bloating, diarrhoea, dehydration and hyponatraemia if overused. [AASLD 2014]",
           "**ACG 2026 on lactulose**: after a first overt HE episode titrate lactulose to **2-3 soft stools a day using the Bristol stool scale** with stool count; **high-volume polyethylene glycol** is an alternative to lactulose in inpatients with overt HE; lactulose is suggested for **covert/minimal HE**. [ACG HE 2026]",
@@ -1405,7 +1405,7 @@ const rewrites: Record<string, TopicRewrite> = {
       "Serum ammonia does not diagnose or monitor encephalopathy; the precipitant does.",
       "Carvedilol 6.25 mg twice daily for clinically significant portal hypertension is now a strong Baveno VIII recommendation - it prevents decompensation, not just bleeding.",
       "Child-Pugh A 5-6, B 7-9, C 10-15; MELD 15 or more means transplant referral.",
-      "Paracetamol up to 2 g a day is safe in cirrhosis; NSAIDs, benzodiazepines and aminoglycosides are not.",
+      "Paracetamol up to 2-3 g a day is safe in cirrhosis; NSAIDs, benzodiazepines and aminoglycosides are not.",
     ],
     references: [
       "Biggins SW et al. AASLD Practice Guidance: Diagnosis, evaluation and management of ascites, spontaneous bacterial peritonitis and hepatorenal syndrome. Hepatology 2021.",
