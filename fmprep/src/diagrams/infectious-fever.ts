@@ -1041,7 +1041,7 @@ const diagrams: DiagramSet = {
           "Diabetic foot, moderate to severe",
           "Polymicrobial with Pseudomonas, anaerobes, MRSA",
           "IV piperacillin-tazobactam plus MRSA cover, debridement and off-loading",
-          "2-3 weeks; 6 weeks for osteomyelitis",
+          "1-2 weeks (longer if extensive); 6 weeks for osteomyelitis",
         ],
       ],
     },
