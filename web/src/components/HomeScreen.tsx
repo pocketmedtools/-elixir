@@ -19,7 +19,10 @@ export const TOOL_SECTIONS: {
   },
   {
     heading: "OBG",
-    tools: [{ id: "ob", title: "OB / EDD" }],
+    tools: [
+      { id: "ob", title: "OB / EDD" },
+      { id: "ancScan", title: "ANC Scan (Growth & Doppler)" },
+    ],
   },
   {
     heading: "Utilities",

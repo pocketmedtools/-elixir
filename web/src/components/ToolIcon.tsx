@@ -14,6 +14,7 @@ import {
   TrendingDown,
   TrendingUp,
   Timer,
+  ScanLine,
   type LucideIcon,
 } from "lucide-react";
 import type { MenuTarget } from "./SideMenu";
@@ -32,6 +33,7 @@ const ICONS: Record<MenuTarget, LucideIcon> = {
   insulin: Droplet,
   ob: Baby,
   timer: Timer,
+  ancScan: ScanLine,
   saved: Bookmark,
   report: Flag,
 };
@@ -51,6 +53,7 @@ export const TOOL_BG: Record<MenuTarget, string> = {
   insulin: "bg-[#0f3460]",
   ob: "bg-[#700168]",
   timer: "bg-[#132238]",
+  ancScan: "bg-[#4b3b8f]",
   saved: "bg-[#3a3733]",
   report: "bg-[#7e2f01]",
 };
@@ -70,6 +73,7 @@ export const TOOL_SOFT: Record<MenuTarget, string> = {
   insulin: "border-[#e3cda8] bg-[#fcf4e6]",
   ob: "border-[#e3cda8] bg-[#fcf4e6]",
   timer: "border-[#e3cda8] bg-[#fcf4e6]",
+  ancScan: "border-[#e3cda8] bg-[#fcf4e6]",
   saved: "border-[#e3cda8] bg-[#fcf4e6]",
   report: "border-[#e3cda8] bg-[#fcf4e6]",
 };
@@ -88,6 +92,7 @@ export const TOOL_TEXT: Record<MenuTarget, string> = {
   insulin: "text-[#0f3460]",
   ob: "text-[#700168]",
   timer: "text-[#132238]",
+  ancScan: "text-[#4b3b8f]",
   saved: "text-[#3a3733]",
   report: "text-[#7e2f01]",
 };
@@ -106,6 +111,7 @@ export const TOOL_HEX: Record<MenuTarget, string> = {
   insulin: "#0f3460",
   ob: "#700168",
   timer: "#132238",
+  ancScan: "#4b3b8f",
   saved: "#3a3733",
   report: "#7e2f01",
 };

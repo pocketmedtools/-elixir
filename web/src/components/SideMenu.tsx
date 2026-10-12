@@ -11,7 +11,7 @@ import { APK_URL, isWebsite } from "../lib/platform";
 import ToolIcon, { TOOL_TEXT } from "./ToolIcon";
 
 export type MenuTarget =
-  | "home" | "pedDose" | "growth" | "bp" | "nbWeight" | "hol" | "bili" | "bmi" | "crCl" | "regimen" | "insulin" | "ob" | "timer" | "saved" | "report";
+  | "home" | "pedDose" | "growth" | "bp" | "nbWeight" | "hol" | "bili" | "bmi" | "crCl" | "regimen" | "insulin" | "ob" | "ancScan" | "timer" | "saved" | "report";
 
 const LINK_GROUPS: {
   heading: string | null;
@@ -29,7 +29,7 @@ const LINK_GROUPS: {
       { id: "bili", label: "Neonatal Jaundice (Bili)" },
     ],
   },
-  { heading: "OBG", links: [{ id: "ob", label: "OB / EDD" }] },
+  { heading: "OBG", links: [{ id: "ob", label: "OB / EDD" }, { id: "ancScan", label: "ANC Scan (Growth & Doppler)" }] },
   { heading: "Utilities", links: [{ id: "timer", label: "Timer / Stopwatch" }] },
   {
     heading: "Medicine",

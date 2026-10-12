@@ -1592,6 +1592,90 @@ section("Pediatric DB integrity");
   console.log("date entry: day-first order, leap years, impossible dates rejected OK");
 }
 
+// ---------- ANC scan: growth, Doppler, liquor ----------
+{
+  console.log("\n=== ANC scan suite ===");
+  const A = await import("../src/lib/ancScanMath");
+  const Z = { P03: -1.880794, P05: -1.644854, P50: 0, P95: 1.644854, P97: 1.880794 };
+  // INTERGROWTH-21st Hadlock EFW standard (Stirnemann 2020), published centile table (g).
+  const efwTable: [number, number, number, number][] = [
+    [20, 271, 318, 381], [24, 530, 630, 758], [28, 925, 1119, 1364], [32, 1455, 1795, 2216],
+    [36, 2070, 2602, 3251], [38, 2379, 3017, 3789], [40, 2667, 3409, 4302],
+  ];
+  for (const [ga, p3, p50, p97] of efwTable) {
+    for (const [z, want] of [[Z.P03, p3], [Z.P50, p50], [Z.P97, p97]] as const) {
+      const got = A.efwFromZ(ga, z);
+      if (Math.abs(got - want) / want > 0.006) fail(`EFW standard ${ga} wk z=${z}: ${got.toFixed(0)} vs table ${want}`);
+    }
+  }
+  // INTERGROWTH-21st umbilical artery PI (Drukker 2020), published centile table.
+  const uaTable: [number, number, number, number][] = [
+    [24, 0.86, 1.10, 1.38], [28, 0.78, 1.03, 1.32], [32, 0.72, 0.96, 1.24], [36, 0.66, 0.88, 1.14], [40, 0.59, 0.79, 1.03],
+  ];
+  for (const [ga, p5, p50, p95] of uaTable) {
+    for (const [z, want] of [[Z.P05, p5], [Z.P50, p50], [Z.P95, p95]] as const) {
+      const got = A.uaValueAtZ("pi", ga, z);
+      if (Math.abs(got - want) > 0.006) fail(`UA PI ${ga} wk z=${z}: ${got.toFixed(3)} vs table ${want}`);
+    }
+  }
+  // Round trip value → centile.
+  if (Math.abs(A.efwCentile(32, 1795)!.centile - 50) > 1) fail("EFW 1795 g at 32 wk should be ~50th");
+  if (A.efwCentile(32, 1455)!.centile > 3.5 || A.efwCentile(32, 1455)!.centile < 2.5) fail("EFW 1455 g at 32 wk should be ~3rd");
+  if (Math.abs(A.uaCentile("pi", 30, 1.28)!.centile - 95) > 1.5) fail("UA PI 1.28 at 30 wk should be ~95th");
+  // Hadlock formula and MCA-PSV.
+  const h = A.hadlockEfw({ bpd: 77, hc: 280, ac: 260, fl: 58 })!;
+  if (h.grams < 1530 || h.grams > 1570) fail(`Hadlock 4-parameter EFW ${h.grams} should be ~1550 g`);
+  if (A.hadlockEfw({ hc: 280 }) !== null) fail("Hadlock needs AC and FL");
+  if (Math.abs(A.mcaPsvMedian(20) - 25.3) > 0.2 || Math.abs(A.mcaPsvMedian(30) - 40.0) > 0.2) fail("MCA-PSV median (Mari) wrong");
+  if (A.mcaPsvMoM(30, 61)! <= 1.5) fail("MCA-PSV 61 cm/s at 30 wk must exceed 1.5 MoM");
+  // Biometry: median input gives 50th, ±1.645 SD gives 5th/95th.
+  for (const p of ["bpd", "hc", "ac", "fl"] as const) for (const ga of [16, 20, 28, 34, 40]) {
+    const { mu, sigma } = A.igBiometryMuSigma(p, ga);
+    if (Math.abs(A.biometryCentile(p, ga, mu)!.centile - 50) > 0.2) fail(`${p} ${ga}: median not 50th`);
+    if (Math.abs(A.biometryCentile(p, ga, mu - 1.644854 * sigma)!.centile - 5) > 0.2) fail(`${p} ${ga}: −1.645 SD not 5th`);
+  }
+  if (A.biometryCentile("ac", 12, 60) !== null) fail("biometry must refuse < 14 wk");
+  // Liquor.
+  const L = (sdp?: number, afi?: number) => A.assessLiquor(sdp, afi)?.kind;
+  if (L(1.5) !== "oligo" || L(2) !== "normal" || L(7.9) !== "normal" || L(8) !== "polyMild" || L(12) !== "polyModerate" || L(16) !== "polySevere") fail("SDP bands");
+  if (L(undefined, 5) !== "oligo" || L(undefined, 5.1) !== "normal" || L(undefined, 24) !== "polyMild" || L(undefined, 35) !== "polySevere") fail("AFI bands");
+  if (L(3, 4) !== "normal") fail("SDP must take precedence over AFI");
+  // Classification (Delphi) and plans.
+  const base = { ga: 34, acCentile: 40, efwCentile: 40, efwGrams: 2300, prevCentile: null, uaPiCentile: 50, uaFlow: "normal" as const,
+    cpr: 1.6, cprLow5: false, utaHigh: false, dv: "normal" as const, liquor: null, mcaMoM: null, diabetes: false };
+  const C = (o: Partial<typeof base> & Record<string, unknown>) => A.scanPlan({ ...base, ...o } as never);
+  const cases: [string, Record<string, unknown>, string, string][] = [
+    ["AGA normal", {}, "aga", "ok"],
+    ["SGA 34 wk normal Doppler", { acCentile: 7, efwCentile: 8 }, "sga", "watch"],
+    ["late FGR <3rd", { acCentile: 2, efwCentile: 2.5 }, "fgrLate", "treat"],
+    ["late FGR 2 of 3 (AC<10 + CPR<5)", { acCentile: 8, efwCentile: 9, cprLow5: true }, "fgrLate", "treat"],
+    ["late FGR 2 of 3 (AC<10 + crossing)", { acCentile: 8, efwCentile: 12, prevCentile: 70 }, "fgrLate", "treat"],
+    ["late: AC<10 only one criterion", { acCentile: 8, efwCentile: 12, prevCentile: 40 }, "sga", "watch"],
+    ["early FGR AC<10 + UA PI>95", { ga: 28, acCentile: 6, efwCentile: 7, uaPiCentile: 97 }, "fgrEarly", "treat"],
+    ["early FGR AC<10 + UtA>95", { ga: 26, acCentile: 6, efwCentile: 7, uaPiCentile: 60, utaHigh: true }, "fgrEarly", "treat"],
+    ["early SGA without Doppler", { ga: 28, acCentile: 6, efwCentile: 7 }, "sga", "watch"],
+    ["AEDF", { ga: 30, acCentile: 2, efwCentile: 2, uaFlow: "aedf" }, "fgrEarly", "urgent"],
+    ["REDF", { ga: 29, acCentile: 1, efwCentile: 1, uaFlow: "redf" }, "fgrEarly", "urgent"],
+    ["DV a-wave absent", { ga: 28, acCentile: 1, efwCentile: 1, uaFlow: "redf", dv: "absentA" }, "fgrEarly", "emergency"],
+    ["LGA", { acCentile: 95, efwCentile: 93, efwGrams: 3100 }, "lga", "check"],
+    ["normal size, UA PI>95", { uaPiCentile: 97 }, "aga", "watch"],
+  ];
+  for (const [name, o, growth, tone] of cases) {
+    const r = C(o);
+    if (r.growth !== growth || r.tone !== tone) fail(`ANC scan "${name}": got ${r.growth}/${r.tone}, want ${growth}/${tone}`);
+    if (!r.delivery || !r.surveillance) fail(`ANC scan "${name}": missing plan text`);
+  }
+  if (!C({ ga: 30, uaFlow: "aedf", acCentile: 2, efwCentile: 2 }).actions.some((a) => a.includes("corticosteroids"))) fail("AEDF must advise steroids");
+  if (!C({ mcaMoM: 1.7 }).actions[0].includes("anaemia") || C({ mcaMoM: 1.7 }).tone !== "urgent") fail("MCA-PSV > 1.5 MoM must be urgent");
+  if (!C({ liquor: A.assessLiquor(1.5) }).actions.some((a) => a.includes("Oligohydramnios"))) fail("oligohydramnios advice missing");
+  if (!C({ acCentile: 95, efwCentile: 96, efwGrams: 4200 }).title.includes("macrosomia")) fail("EFW ≥ 4000 must flag macrosomia");
+  // Schedule.
+  const sc = (ga: number) => A.scheduleStatus(ga);
+  if (sc(12).current[0]?.id !== "nt" || sc(19).current[0]?.id !== "anomaly" || sc(30).current[0]?.id !== "growth1") fail("scan schedule windows");
+  if (sc(15).next?.id !== "anomaly" || !sc(15).missedNote) fail("scan schedule next/missed");
+  console.log("ANC scan: EFW & UA Doppler match INTERGROWTH tables; Hadlock, MCA-PSV, liquor, Delphi SGA/FGR/LGA, plans, schedule OK");
+}
+
 // ---------- Result ----------
 console.log("\n========== VERIFY RESULT ==========");
 if (failures.length) {
