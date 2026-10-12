@@ -2234,8 +2234,8 @@ topics.push({
           heading: "5. Pregnancy",
           points: [
             "**Screen all pregnant women with a TSH at the first antenatal visit**, as recommended by FOGSI and the Indian Thyroid Society. [ICMR 2018]",
-            "Trimester-specific TSH upper limits of about **2.5 mIU/L in the first trimester and 3.0 mIU/L in the second and third** - hCG suppresses TSH early. [ATA 2014]",
-            "Treat all overt hypothyroidism, and **subclinical disease above the trimester limit**, especially with anti-TPO - the fetus needs maternal T4 till 12 weeks. [ATA 2014]",
+            "Use the **laboratory's trimester-specific TSH range** - without one, about **0.1-4.0 mIU/L in the first trimester**; the old fixed 2.5 and 3.0 targets are dropped - hCG suppresses TSH early. [ATA 2026]",
+            "Treat overt hypothyroidism (TSH 6 or more with low FT4) at once; **confirm a mild abnormality within about 3 weeks** before deciding on 25-50 mcg - anti-TPO status alone no longer decides treatment. [ATA 2026]",
             "**Increase the pre-pregnancy dose by 25-30% once pregnancy is confirmed** - practically, two extra tablets per week. [ATA 2014]",
             "Monitor TSH every 4 weeks to mid-gestation, then once in the third trimester - the requirement rises early and plateaus by about 20 weeks. [ATA 2014]",
             "Revert to the pre-pregnancy dose after delivery, recheck TSH at 6 weeks, and **screen the newborn at 48-72 hours** - the birth TSH surge has settled by then. [ICMR 2018]",
@@ -2281,7 +2281,7 @@ topics.push({
           heading: "Indications to treat",
           points: [
             "**TSH 10 mIU/L or more on two occasions** - treat regardless of symptoms. [ATA 2014]",
-            "Treat a TSH of 4.5-10 mIU/L in pregnancy, planned pregnancy or infertility - the first-trimester foetal brain runs on maternal thyroxine. [ATA 2014]",
+            "Consider treating a confirmed TSH above the trimester range in pregnancy, or above range in planned pregnancy - the first-trimester foetal brain runs on maternal thyroxine; euthyroid anti-TPO positive infertility is not an indication. [ATA 2026]",
             "**TSH 4.5-10 mIU/L with positive anti-TPO antibodies, a goitre, convincing symptoms or dyslipidaemia** - antibodies predict progression to overt disease. [ATA 2014]",
             "Treat a TSH of 4.5-10 mIU/L under the age of 65 with cardiovascular risk - untreated subclinical disease worsens the lipid profile. [ATA 2014]",
             "Treat children and adolescents - progression to overt disease is likelier, and untreated hypothyroidism costs growth and schooling. [ATA 2014]",
@@ -2648,17 +2648,17 @@ topics.push({
       question:
         "A 22-year-old man is brought to your clinic with vomiting, abdominal pain and drowsiness. Capillary glucose is 468 mg/dL and urine ketones are 3+. Define diabetic ketoacidosis, discuss its precipitating factors, and describe your management including monitoring and complications.",
       openingLines: [
-        "Diabetic ketoacidosis is an acute metabolic emergency caused by absolute or relative insulin deficiency with a counter-regulatory hormone excess, defined by the triad of hyperglycaemia (usually above 250 mg/dL), ketonaemia or ketonuria, and a high anion gap metabolic acidosis with venous pH below 7.30 or bicarbonate below 18 mmol/L.",
+        "Diabetic ketoacidosis is an acute metabolic emergency caused by absolute or relative insulin deficiency with a counter-regulatory hormone excess, defined (ADA/EASD 2024) by glucose 200 mg/dL or more or known diabetes, beta-hydroxybutyrate 3.0 mmol/L or more, and a metabolic acidosis with venous pH below 7.3 and/or bicarbonate below 18 mmol/L.",
         "This young man has hyperglycaemia with heavy ketonuria and impaired consciousness, and must be treated as severe DKA pending a venous blood gas, electrolytes and beta-hydroxybutyrate.",
       ],
       answer: [
         {
           heading: "1. Definition and severity grading",
           points: [
-            "Triad: **glucose above 250 mg/dL**, beta-hydroxybutyrate 3.0 mmol/L or more or ketonuria 2+, and a raised anion gap acidosis - each alone has other causes. [ADA 2025]",
+            "D-K-A: **glucose 200 mg/dL or more or known diabetes**, beta-hydroxybutyrate 3.0 mmol/L or more or ketonuria 2+, and a raised anion gap acidosis - each alone has other causes. [ADA/EASD 2024]",
             "The acidosis is defined by **pH below 7.30 or bicarbonate below 18 mmol/L** - either suffices, because hyperventilation holds the pH while bicarbonate falls. [ADA 2025]",
-            "Mild: pH 7.25-7.30, bicarbonate 15-18, alert. Moderate: pH 7.00-7.24, bicarbonate 10-15, drowsy. **Severe: pH below 7.00, bicarbonate below 10, coma** - ICU. [ADA 2025]",
-            "**Euglycaemic DKA, with glucose below 250 mg/dL**, occurs with SGLT2 inhibitors, pregnancy, starvation and alcohol - glycosuria or low intake hides ketosis. [ADA 2025]",
+            "Mild: pH 7.25-7.30, bicarbonate 15-18, alert. Moderate: pH 7.00-7.24, bicarbonate 10 to below 15. **Severe: pH below 7.00 or bicarbonate below 10** - ICU, whatever the conscious level. [ADA/EASD 2024]",
+            "**Euglycaemic DKA, with glucose below 250 mg/dL**, occurs with SGLT2 inhibitors, pregnancy, starvation and alcohol - the 2024 criteria removed the glucose threshold for this reason. [ADA/EASD 2024]",
           ],
         },
         {
@@ -2684,15 +2684,15 @@ topics.push({
         {
           heading: "4. Management",
           points: [
-            "**Fluids first: 0.9% sodium chloride 1 litre over the first hour, 15-20 mL/kg**, then 250-500 mL/hour - volume alone lowers glucose and stress hormones. [ADA 2025]",
+            "**Fluids first: 0.9% saline or a balanced crystalloid 1-1.5 litres over the first hour, 15-20 mL/kg**, then 250-500 mL/hour - volume alone lowers glucose and stress hormones. [ADA/EASD 2024]",
             "Choose **0.45% saline if the corrected sodium is normal or high, 0.9% if low** - osmotic diuresis loses more water than salt, so free water is what is missing. [ADA 2025]",
-            "**Check potassium before insulin**: if below 3.3 mmol/L, replace at 20-40 mmol/hour and delay insulin - insulin shifts potassium inward and stops the heart. [ADA 2025]",
-            "If potassium is 3.3-5.2 mmol/L add **20-30 mmol KCl to each litre**; above 5.2 withhold and recheck in 2 hours - it falls fast once insulin and fluid start. [ADA 2025]",
-            "**Regular insulin 0.1 units/kg IV bolus then 0.1 units/kg/hour**, or 0.14 units/kg/hour with no bolus - the low dose stops ketogenesis without a crash. [ADA 2025]",
-            "Target a glucose fall of **50-75 mg/dL per hour**, doubling the rate if the fall is under 10% in the first hour - a faster fall risks cerebral oedema. [ADA 2025]",
+            "**Check potassium before insulin**: if below 3.5 mmol/L, give KCl 10-20 mmol/hour and hold insulin - insulin shifts potassium inward and stops the heart. [ADA/EASD 2024]",
+            "If potassium is 3.5-5.0 mmol/L add **20-40 mmol KCl to each litre** to keep K 4-5; above 5.0 withhold and recheck in 2 hours - it falls fast once insulin and fluid start. [ADA/EASD 2024]",
+            "**Regular insulin fixed-rate 0.1 units/kg/hour** (a 0.1 units/kg bolus is optional) - the low dose stops ketogenesis without a crash. [ADA/EASD 2024]",
+            "Target a glucose fall of **50-75 mg/dL per hour** and a ketone fall of **0.5 mmol/L per hour**; raise the rate by 1 unit/hour if not achieved - a faster glucose fall risks cerebral oedema. [ADA/EASD 2024]",
             "Where no pump is available, **hourly intramuscular regular insulin** is acceptable in mild to moderate DKA - IM absorption is steady, unlike subcutaneous. [RSSDI 2022]",
-            "**When glucose reaches 200-250 mg/dL add 5% dextrose and cut insulin to 0.02-0.05 units/kg/hour** until the gap closes - insulin, not glucose, clears ketones. [ADA 2025]",
-            "**Bicarbonate only if pH is below 6.9**: 100 mmol in 400 mL water with 20 mmol KCl over 2 hours - above that it adds hypokalaemia and delays ketone clearance. [ADA 2025]",
+            "**When glucose falls below 250 mg/dL add 5-10% dextrose and cut insulin to 0.05 units/kg/hour**, keeping glucose 150-200, until ketoacidosis resolves - insulin, not glucose, clears ketones. [ADA/EASD 2024]",
+            "**Bicarbonate only if pH is below 7.0**: 100 mmol in 400 mL water with 20 mmol KCl over 2 hours - above that it adds hypokalaemia and delays ketone clearance. [ADA/EASD 2024]",
             "**Phosphate only for severe hypophosphataemia with cardiac or respiratory compromise** - routine phosphate causes hypocalcaemia and shows no outcome benefit. [ADA 2025]",
             "Treat the precipitant with antibiotics, and give **thromboprophylaxis** where indicated - dehydration and hyperosmolality make the blood prothrombotic. [ADA 2025]",
           ],
@@ -2702,8 +2702,8 @@ topics.push({
           points: [
             "**Hourly capillary glucose and urine output**, with electrolytes and a venous gas every 2-4 hours - the insulin rate and potassium are adjusted on these. [ADA 2025]",
             "Continuous cardiac monitoring, because hypokalaemia is the lethal iatrogenic complication. [ADA 2025]",
-            "Resolution: glucose below 200 mg/dL with **two of bicarbonate 15 mmol/L or more, venous pH above 7.30, or anion gap 12 or less** - the gap marks the end. [ADA 2025]",
-            "**Transition to subcutaneous basal bolus insulin at 0.5-0.8 units/kg/day once eating**, overlapping by 1-2 hours - IV insulin vanishes in minutes. [ADA 2025]",
+            "Resolution: **beta-hydroxybutyrate below 0.6 mmol/L plus venous pH 7.3 or more or bicarbonate 18 or more** - glucose is not a resolution criterion. [ADA/EASD 2024]",
+            "**Transition to subcutaneous basal-bolus insulin at 0.5-0.6 units/kg/day once eating**, giving basal 1-2 hours before stopping the drip - IV insulin vanishes in minutes. [ADA/EASD 2024]",
             "Before discharge: identify the precipitant, **teach sick-day rules**, confirm insulin supply and review within a week - never stop insulin in illness. [RSSDI 2022]",
           ],
         },
@@ -2749,9 +2749,9 @@ topics.push({
             "Patient: **DKA in type 1 or ketosis-prone younger patients; HHS in elderly type 2** with sepsis or stroke - residual insulin prevents ketosis only. [ADA 2025]",
             "**HHS patients cannot access water freely**, which is why the osmolality reaches such extremes - thirst would otherwise replace the osmotic diuresis. [ADA 2025]",
             "Onset: **DKA over hours to a day or two; HHS insidiously over days to weeks** - ketoacidosis causes symptoms early, while hyperosmolality creeps up silently. [ADA 2025]",
-            "Glucose: **DKA usually above 250 mg/dL**, normal in euglycaemic DKA; HHS usually above 600 mg/dL - HHS runs longer with worse renal loss of water. [ADA 2025]",
-            "Ketones: **heavy ketonaemia with pH below 7.30 and bicarbonate below 18 mmol/L in DKA**; minimal, pH above 7.30, bicarbonate above 18 in HHS - insulin remains. [ADA 2025]",
-            "Osmolality: variable in DKA but **above 320 mOsm/kg in HHS**, which is what produces the altered sensorium - coma in DKA at low osmolality needs another cause. [ADA 2025]",
+            "Glucose: **DKA 200 mg/dL or more or known diabetes** (may be normal in euglycaemic DKA); **HHS 600 mg/dL or more** - HHS runs longer with worse renal loss of water. [ADA/EASD 2024]",
+            "Ketones: **beta-hydroxybutyrate 3.0 or more with pH below 7.3 and/or bicarbonate below 18 in DKA**; in HHS BHB below 3.0, pH 7.3 or more, bicarbonate 15 or more - insulin remains. [ADA/EASD 2024]",
+            "Osmolality: variable in DKA but **effective osmolality above 300 mOsm/kg (total above 320) in HHS**, which produces the altered sensorium - coma in DKA at low osmolality needs another cause. [ADA/EASD 2024]",
             "Fluid deficit and mortality: **5-7 litres and 1-5% in DKA; 8-10 litres and 5-20% in HHS** - age, comorbidity and the deeper deficit drive HHS deaths. [ADA 2025]",
           ],
         },
@@ -2759,12 +2759,12 @@ topics.push({
           heading: "How management differs",
           points: [
             "Both begin with 0.9% saline, and both need **potassium checked before insulin is started** - insulin drives potassium into cells and unmasks the deficit. [ADA 2025]",
-            "Both add **20-30 mmol of potassium per litre once potassium is 3.3-5.2 mmol/L** - total body stores are depleted whatever the serum value shows. [ADA 2025]",
+            "Both add **20-40 mmol of potassium per litre once potassium is 3.5-5.0 mmol/L** - total body stores are depleted whatever the serum value shows. [ADA/EASD 2024]",
             "**HHS needs larger volumes given more slowly** - an osmolality fall of no more than 3-8 mOsm/kg per hour avoids cerebral oedema. [ADA 2025]",
-            "Insulin may start at a lower rate in HHS, or after the first hour of fluid alone, since much of the glucose falls with rehydration. [ADA 2025]",
+            "In HHS start insulin **0.05 units/kg/hour only when glucose stops falling with fluid alone** (at once if beta-hydroxybutyrate is over 1.0 mmol/L) - much of the glucose falls with rehydration. [JBDS 2022]",
             "Titrate the infusion to a **glucose fall of 50-75 mg/dL per hour** in both - a faster fall shifts water into the brain and risks cerebral oedema. [ADA 2025]",
-            "**Dextrose is added at a glucose of 200-250 mg/dL in DKA and 250-300 mg/dL in HHS** - insulin must continue past that point, so dextrose prevents a crash. [ADA 2025]",
-            "Endpoint differs: **closure of the anion gap in DKA, normal osmolality and mental state in HHS** - each marks correction of the defining defect. [ADA 2025]",
+            "**Dextrose is added once glucose falls below 250 mg/dL** in both - insulin must continue past that point, so dextrose prevents a crash. [ADA/EASD 2024]",
+            "Endpoint differs: **BHB below 0.6 with pH 7.3 or bicarbonate 18 in DKA; osmolality below 300, glucose below 250, urine 0.5 mL/kg/h and normal mental state in HHS** - each marks correction of the defining defect. [ADA/EASD 2024]",
             "HHS carries a higher thrombosis risk, so prophylactic anticoagulation should be considered. [ADA 2025]",
           ],
         },
@@ -2782,14 +2782,14 @@ topics.push({
       id: "endocrine-diabetic-emergencies-q1",
       stem: "A 19-year-old with newly suspected type 1 diabetes has glucose 430 mg/dL, pH 7.08, bicarbonate 8 mmol/L, ketones 3+ and serum potassium 3.0 mmol/L. What should be done first?",
       options: [
-        "Give intravenous fluids with potassium chloride replacement and delay insulin until potassium is above 3.3 mmol/L",
+        "Give intravenous fluids with potassium chloride replacement and hold insulin until potassium is 3.5 mmol/L or more",
         "Start an insulin infusion at 0.1 units/kg/hour immediately",
         "Give sodium bicarbonate 100 mmol over 2 hours because the pH is below 7.1",
         "Give an insulin bolus of 0.1 units/kg and then reassess the potassium",
       ],
       answer: 0,
       explanation:
-        "Insulin drives potassium intracellularly, so starting it when the potassium is already below 3.3 mmol/L can precipitate fatal arrhythmia and respiratory muscle weakness; fluids with potassium replacement at 20-40 mmol/hour come first, and insulin is delayed until potassium exceeds 3.3 mmol/L. Starting an infusion or a bolus now is the classic fatal error. Bicarbonate is reserved for pH below 6.9 and would worsen the hypokalaemia here.",
+        "Insulin drives potassium intracellularly, so starting it when the potassium is below 3.5 mmol/L (ADA/EASD 2024; older texts said 3.3) can precipitate fatal arrhythmia and respiratory muscle weakness; fluids with potassium replacement at 10-20 mmol/hour come first, and insulin is held until potassium reaches 3.5 mmol/L. Starting an infusion or a bolus now is the classic fatal error. Bicarbonate is reserved for pH below 7.0 and would worsen the hypokalaemia here.",
       difficulty: "moderate",
     },
     {
@@ -2803,7 +2803,7 @@ topics.push({
       ],
       answer: 0,
       explanation:
-        "The anion gap remains wide and the acidosis unresolved, meaning ketogenesis is continuing; insulin must continue and dextrose is added to the fluid so that insulin can be given safely without causing hypoglycaemia. Stopping the insulin at this point, in either form, allows ketogenesis to resume and is the commonest ward error. Bicarbonate is not indicated above a pH of 6.9 and does not address ongoing ketone production.",
+        "The anion gap remains wide and the acidosis unresolved, meaning ketogenesis is continuing; insulin must continue and dextrose is added to the fluid so that insulin can be given safely without causing hypoglycaemia. Stopping the insulin at this point, in either form, allows ketogenesis to resume and is the commonest ward error. Bicarbonate is not indicated at a pH of 7.0 or above and does not address ongoing ketone production.",
       difficulty: "moderate",
     },
     {
@@ -2817,7 +2817,7 @@ topics.push({
       ],
       answer: 0,
       explanation:
-        "Effective osmolality is 2 x sodium plus glucose divided by 18, giving 296 plus 43, about 339 mOsm/kg; urea is excluded because it crosses membranes freely and does not contribute to effective tonicity. With a normal pH, a normal bicarbonate, minimal ketones and osmolality above 320 mOsm/kg, this is HHS, not DKA. The option quoting 366 wrongly includes urea and also misnames the syndrome. Calling it simple hyperglycaemia ignores the confusion and the osmolality, and bicarbonate has no role when the pH is normal.",
+        "Effective osmolality is 2 x sodium plus glucose divided by 18, giving 296 plus 43, about 339 mOsm/kg; urea is excluded because it crosses membranes freely and does not contribute to effective tonicity. With glucose over 600 mg/dL, a normal pH and bicarbonate, minimal ketones and effective osmolality above 300 mOsm/kg, this is HHS, not DKA. The option quoting 366 wrongly includes urea and also misnames the syndrome. Calling it simple hyperglycaemia ignores the confusion and the osmolality, and bicarbonate has no role when the pH is normal.",
       difficulty: "hard",
     },
     {
@@ -3188,7 +3188,7 @@ topics.push({
             "**Written safety advice: stop the drug and get a leucocyte count at once for fever, sore throat or mouth ulcers** - a verbal warning is forgotten. [ATA 2016]",
             "**Definitive therapy by radioiodine or thyroidectomy** for relapse after a full course, a large goitre or poor adherence - a second drug course rarely remits. [ATA 2016]",
             "**Render euthyroid first, and warn that hypothyroidism is the expected outcome of radioiodine**, not a complication - the dose is chosen to ablate. [ATA 2016]",
-            "**Avoid pregnancy for 6 months after radioiodine**; if she conceives, propylthiouracil in the first trimester then carbimazole - carbimazole is teratogenic. [ATA 2016]",
+            "**Avoid pregnancy for 6 months after radioiodine**; if she conceives, propylthiouracil through the first trimester (ATA 2026 no longer advises a routine switch back to carbimazole) - carbimazole is teratogenic. [ATA 2026]",
             "**Smoking cessation halves the risk of progressive orbitopathy** - refer active eye disease to ophthalmology. [ATA 2016]",
           ],
         },
@@ -3384,13 +3384,13 @@ topics.push({
       stem: "A 26-year-old woman with Graves disease is 8 weeks pregnant. She is currently on carbimazole 15 mg daily. What is the correct management?",
       options: [
         "Stop all antithyroid drugs because thyrotoxicosis remits in pregnancy",
-        "Switch to propylthiouracil for the first trimester and back to carbimazole from the second",
+        "Switch to propylthiouracil now, at the lowest dose keeping free T4 at the upper limit of normal",
         "Continue carbimazole unchanged throughout pregnancy",
         "Arrange radioiodine ablation in the second trimester",
       ],
       answer: 1,
       explanation:
-        "Carbimazole and methimazole in the first trimester are associated with aplasia cutis and choanal or oesophageal atresia, so propylthiouracil is used until organogenesis is complete and then carbimazole is resumed to avoid cumulative propylthiouracil hepatotoxicity. Stopping treatment risks maternal thyrotoxicosis with miscarriage, prematurity and storm. Continuing carbimazole through the first trimester ignores the embryopathy risk. Radioiodine is absolutely contraindicated in pregnancy because it ablates the fetal thyroid.",
+        "Carbimazole and methimazole in the first trimester are associated with aplasia cutis and choanal or oesophageal atresia, so she switches to propylthiouracil at once for the first trimester; ATA 2026 no longer recommends a routine switch back to carbimazole afterwards (each switch risks poor control), and TRAb titres guide whether drugs can be stopped. Stopping treatment risks maternal thyrotoxicosis with miscarriage, prematurity and storm. Continuing carbimazole through the first trimester ignores the embryopathy risk. Radioiodine is absolutely contraindicated in pregnancy because it ablates the fetal thyroid.",
       difficulty: "moderate",
     },
     {
