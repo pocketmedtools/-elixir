@@ -690,7 +690,7 @@ const diagrams: DiagramSet = {
         {
           label: "Record the outcome on Ni-kshay",
           detail:
-            "Completion is at least 80% of doses within 133% of the duration - 180 doses of 6H in 9 months, or 12 doses of 3HP in 16 weeks; missed doses are added at the end",
+            "Completion is at least 80% of doses within 133% of the duration - about 146 of 182 doses of 6H in about 8 months, or 11 of 12 doses of 3HP in 16 weeks; missed doses are added at the end",
         },
         {
           label: "Watch the household for 2 years",

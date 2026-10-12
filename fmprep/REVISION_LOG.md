@@ -207,3 +207,4 @@ All 20 subjects and 243 topics checked against guidelines current in October 202
 ## Round 2 - crosscheck and rapid-revision redesign
 Rapid revision moved to the END of every topic (jump link at the top), master table shown as colour-coded cards, flow charts numbered.
 Crosscheck queue (3 subjects at a time): cardiovascular, respiratory, endocrine, emergency, gastro-hepatology, infectious-fever, neurology, renal-urology, musculoskeletal, psychiatry, dermatology, eye-ent, obstetrics, gynaecology, geriatrics-ethics, symptom-approach, fm-principles, surgery-office, pediatrics, preventive.
+- Respiratory crosschecked: 63 row labels standardised; asthma diagnostic criteria row (FeNO 50/35 ppb); TPT completion rule and levofloxacin weight bands corrected; pleural effusion (BTS 2023) and OSA rows completed.
