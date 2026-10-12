@@ -30,29 +30,86 @@ type Visual =
   | { heading: string; diagram: Diagram; table?: undefined }
   | { heading: string; table: NoteTable; diagram?: undefined };
 
-/* The whole topic in one read: the master table, then the flow charts, then
-   what changed in the latest guideline pass. Open by default - it is the
-   page a candidate comes back to the night before. */
-function RevisionBlock({ revision }: { revision: TopicRevision }) {
+/* Rapid revision, at the end of the topic: the whole topic as colour-coded
+   cards (one colour per kind of fact, so the eye finds "treatment" or "red
+   flags" without reading), then the high-yield flow charts, then what changed
+   in the latest guideline pass. */
+const REV_INKS: [RegExp, string, string][] = [
+  [/latest|update|change|guideline/i, "#8a5a00", "#fbf1d9"],
+  [/pearl|one-liner|exam|remember|mnemonic/i, "#14532d", "#eaf5e4"],
+  [/red flag|refer|emergenc|complicat|danger/i, "#b42318", "#fdecea"],
+  [/defin|what it is|concept/i, "#0f3460", "#e8eef7"],
+  [/classif|staging|grad|type/i, "#4a1259", "#f2e9f4"],
+  [/aetiol|etiol|cause|risk factor|epidem|burden/i, "#4a3018", "#f5ede3"],
+  [/patho|mechan/i, "#0d4a44", "#e5f2f0"],
+  [/history|symptom|examination|sign|clinical|present/i, "#14532d", "#e8f3ec"],
+  [/investig|diagnos|criteria|test|lab|imaging|screen/i, "#7a2e08", "#fbeee4"],
+  [/treat|manag|drug|first line|second|escalat|dose|therap|device|procedure|how to/i, "#7a1220", "#f8e8ea"],
+  [/follow|monitor|prevent|programme|special|pregnan|child|elderly/i, "#1f4e79", "#e7eff7"],
+];
+function revInk(label: string): [string, string] {
+  for (const [re, ink, wash] of REV_INKS) if (re.test(label)) return [ink, wash];
+  return ["#3d3428", "#f3ece0"];
+}
+
+function RevisionBlock({ revision, title }: { revision: TopicRevision; title: string }) {
+  const cols = revision.master.columns;
   return (
-    <details open className="mt-6 rounded-xl border-2 p-3.5" style={{ borderColor: "var(--acc-rule)", background: "var(--card)" }}>
-      <summary className="cursor-pointer text-[1.1em] font-bold" style={{ color: "var(--head)" }}>
-        Revise in one go - master table and flow charts
-      </summary>
-      <div className="mt-3 flex flex-col gap-4">
-        <TableBlock table={revision.master} />
-        {revision.flows.map((d, i) => (
-          <DiagramBlock key={i} diagram={d} />
-        ))}
+    <section id="rapid-revision" className="mt-12 scroll-mt-16">
+      <div className="rounded-t-2xl px-4 py-3.5 text-white" style={{ background: "linear-gradient(135deg, #14532d, #0f3460)" }}>
+        <p className="text-[11px] font-bold uppercase tracking-[0.18em] opacity-85">Rapid revision</p>
+        <h2 className="mt-0.5 text-[1.25em] font-bold leading-snug">{title} - the whole topic in one go</h2>
+        {revision.checked && <p className="mt-1 text-[12px] opacity-85">Checked against current guidelines: {revision.checked}</p>}
+      </div>
+      <div className="rounded-b-2xl border-2 border-t-0 p-3" style={{ borderColor: "#d9c7a6", background: "var(--card)" }}>
+        <h3 className="px-1 pt-1 text-[13px] font-bold uppercase tracking-wider" style={{ color: "var(--head)" }}>
+          Master table
+        </h3>
+        <ol className="mt-2 flex flex-col gap-2">
+          {revision.master.rows.map((row, i) => {
+            const [ink, wash] = revInk(row[0]);
+            return (
+              <li key={i} className="overflow-hidden rounded-xl border" style={{ borderColor: ink + "33", background: wash }}>
+                <div className="flex items-center gap-2 px-3 py-1.5 text-white" style={{ background: ink }}>
+                  <span className="font-mono text-[11px] opacity-80">{String(i + 1).padStart(2, "0")}</span>
+                  <span className="text-[13.5px] font-bold leading-snug">{row[0]}</span>
+                </div>
+                <div className="px-3 py-2.5 text-[15px] leading-[1.6] text-slate-900">
+                  {row.slice(1).map((cell, j) => (
+                    <p key={j} className={j ? "mt-1.5" : ""}>
+                      {cols.length > 2 && <b className="mr-1 text-[12px] uppercase" style={{ color: ink }}>{cols[j + 1]}:</b>}
+                      <RichText text={cell} />
+                    </p>
+                  ))}
+                </div>
+              </li>
+            );
+          })}
+        </ol>
+
+        {revision.flows.length > 0 && (
+          <>
+            <h3 className="mt-6 px-1 text-[13px] font-bold uppercase tracking-wider" style={{ color: "var(--head)" }}>
+              High-yield flow charts
+            </h3>
+            <div className="mt-2 flex flex-col gap-4">
+              {revision.flows.map((d, i) => (
+                <div key={i} className="rounded-xl border bg-white/60 p-2" style={{ borderColor: "#e3cda8" }}>
+                  <p className="px-1 pb-1 text-[11px] font-bold uppercase tracking-wider text-slate-500">Flow chart {i + 1}</p>
+                  <DiagramBlock diagram={d} />
+                </div>
+              ))}
+            </div>
+          </>
+        )}
+
         {revision.updated && revision.updated.length > 0 && (
-          <Callout
-            tone="pearl"
-            title={`Updated to the latest guidelines${revision.checked ? ` (checked ${revision.checked})` : ""}`}
-            items={revision.updated}
-          />
+          <div className="mt-6">
+            <Callout tone="pearl" title="What changed in the latest guidelines" items={revision.updated} />
+          </div>
         )}
       </div>
-    </details>
+    </section>
   );
 }
 
@@ -229,7 +286,11 @@ export default function TopicReader({
         </nav>
       )}
 
-      {revision && <RevisionBlock revision={revision} />}
+      {revision && (
+        <a href="#rapid-revision" className="mt-4 block rounded-xl px-4 py-3 text-center text-[14px] font-bold text-white shadow-sm" style={{ background: "linear-gradient(135deg, #14532d, #0f3460)" }}>
+          Jump to rapid revision - master table and flow charts
+        </a>
+      )}
 
       <article className="mt-5">
         {placed.opener.length > 0 && (
@@ -270,6 +331,8 @@ export default function TopicReader({
         <Callout tone="danger" title="Red flags — refer or admit" items={topic.redFlags} />
         <Callout tone="pearl" title="Exam pearls" items={topic.pearls} />
       </article>
+
+      {revision && <RevisionBlock revision={revision} title={topic.title.split(":")[0]} />}
 
       {topic.theory && topic.theory.length > 0 && (
         <section className="mt-8">
