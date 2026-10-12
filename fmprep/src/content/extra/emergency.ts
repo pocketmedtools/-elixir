@@ -539,7 +539,7 @@ const topics: Topic[] = [
           "Watch for **ptosis, diplopia, dysphagia, pooling of secretions, broken neck sign (neck flexor weakness) and paradoxical breathing**, which herald respiratory failure. [MoHFW STG Snakebite 2017]",
           "Protect the airway early: position, suction, oxygen and **bag-valve-mask ventilation**, then intubate when bulbar palsy or respiratory weakness develops. [MoHFW STG Snakebite 2017]",
           "A patient with neuroparalysis **may appear comatose but is conscious**, with fixed dilated pupils from paralysis, so do not declare brain death and talk to them reassuringly. [WHO SEARO 2016]",
-          "**Neostigmine trial:** give atropine 0.6 mg IV followed by **neostigmine 1.5 mg IV** (children atropine 0.02 mg/kg and neostigmine 0.04 mg/kg). [MoHFW STG Snakebite 2017]",
+          "**Neostigmine trial:** give atropine 0.6 mg IV followed by **neostigmine 1.5 mg IV** (children atropine 0.05 mg/kg and neostigmine 0.04 mg/kg). [MoHFW STG Snakebite 2017]",
           "If ptosis, eye movements or single breath count improve within 1 hour, continue **neostigmine 0.5 mg with atropine every 30 minutes for 5 doses**, then taper at 1, 2, 6 and 12 hours. [MoHFW STG Snakebite 2017]",
           "Neostigmine is **most useful in cobra bite** (post-synaptic toxin) and usually ineffective in krait bite, where mechanical ventilation carries the patient. [Harrison 22e]",
           "Stop neostigmine if there is **no response after the trial**, since it adds bronchorrhoea and bradycardia without benefit. [MoHFW STG Snakebite 2017]",
