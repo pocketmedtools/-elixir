@@ -12,6 +12,7 @@ import InsulinTool from "./components/InsulinTool";
 import PediatricDosageCalculator from "./components/PediatricDosageCalculator";
 import HolCalculator from "./components/HolCalculator";
 import TimerTool from "./components/TimerTool";
+import AncScanTool from "./components/AncScanTool";
 import TimerFloat from "./components/TimerFloat";
 import NewbornWeightLoss from "./components/NewbornWeightLoss";
 import ObCalculator from "./components/ObCalculator";
@@ -123,6 +124,13 @@ export default function App() {
       label: "OB / EDD",
       shortLabel: "OB",
       active: "bg-fuchsia-900 text-white shadow-sm",
+      idle: "bg-slate-100 text-slate-800 hover:bg-slate-200",
+    },
+    {
+      id: "ancScan",
+      label: "ANC Scan",
+      shortLabel: "Scan",
+      active: "bg-violet-900 text-white shadow-sm",
       idle: "bg-slate-100 text-slate-800 hover:bg-slate-200",
     },
     {
@@ -257,6 +265,7 @@ export default function App() {
         {tab === "regimen" && <RegimenAnalyzerUI />}
         {tab === "insulin" && <InsulinTool />}
         {tab === "ob" && <ObCalculator />}
+        {tab === "ancScan" && <AncScanTool />}
         {tab === "timer" && <TimerTool />}
         {tab === "report" && <ReportIssue />}
         </Fragment>
