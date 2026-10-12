@@ -185,7 +185,7 @@ const diagrams: DiagramSet = {
         },
         {
           label: "Drug only if distress is extreme",
-          detail: "A single dose of lorazepam 1 mg or alprazolam 0.25-0.5 mg orally, with no repeat prescription from casualty",
+          detail: "A single dose of lorazepam 1 mg or clonazepam 0.5 mg orally, never alprazolam, with no repeat prescription from casualty",
         },
         {
           label: "Discharge with the diagnosis in writing",
@@ -348,7 +348,7 @@ const diagrams: DiagramSet = {
         },
         {
           label: "Thiamine before any glucose",
-          detail: "500 mg IV three times a day for 2-3 days, then 250 mg daily for 5 days; glucose first precipitates Wernicke encephalopathy",
+          detail: "500 mg IV three times a day for 2-3 days, then 250 mg daily for 3-5 days; glucose first precipitates Wernicke encephalopathy",
           tone: "warn",
         },
         {
@@ -384,7 +384,7 @@ const diagrams: DiagramSet = {
         ],
         [
           "Acamprosate",
-          "666 mg TDS (333 mg TDS if under 60 kg)",
+          "666 mg TDS (under 60 kg: 666 mg morning, 333 mg noon and night)",
           "Glutamate and NMDA modulation; supports abstinence, safe in liver disease",
           "Creatinine clearance under 30 mL/min; causes diarrhoea",
         ],
@@ -787,7 +787,7 @@ const diagrams: DiagramSet = {
         },
         {
           label: "Alternative injection",
-          detail: "Lorazepam 2-4 mg IM",
+          detail: "Lorazepam 1-2 mg IM alone, repeated after 30-60 minutes if needed",
         },
         {
           label: "Never IM olanzapine after a benzodiazepine",
@@ -998,7 +998,7 @@ const diagrams: DiagramSet = {
         ],
         [
           "Alzheimer's disease, moderate to severe",
-          "Memantine 5 mg with weekly increments to 10 mg twice daily, alone or with donepezil",
+          "Memantine 5 mg with weekly 5 mg increments to 20 mg once daily, alone or with donepezil",
           "Reduce in renal impairment; dizziness and confusion",
         ],
         [
