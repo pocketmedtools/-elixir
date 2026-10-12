@@ -128,7 +128,7 @@ topics.push({
         "Counsel on genital mycotic infection, and hold the SGLT2 in acute illness or fasting - the risk then is euglycaemic ketoacidosis. [KDIGO 2024]",
         "Expect no glucose lowering from an SGLT2 below an eGFR of 45, because filtered glucose load falls - but the kidney benefit persists. [KDIGO 2024]",
         "**Pillar 4 - non-steroidal MRA:** finerenone 10 mg PO OD if eGFR 25-59, 20 mg if eGFR 60 or more - it is antifibrotic, not diuretic. [KDIGO 2024]",
-        "Finerenone needs type 2 diabetes, CKD, ACR 30 mg/g or more and **potassium 5.0 mmol/L or less** - the FIDELIO-DKD and FIGARO-DKD criteria. [KDIGO 2024]",
+        "Finerenone needs type 2 diabetes, CKD, ACR 30 mg/g or more and **potassium 4.8 mmol/L or less (up to 5.0 with close monitoring)** on maximum RAS blockade - the FIDELIO-DKD and FIGARO-DKD criteria. [KDIGO 2024]",
         "Recheck potassium 4 weeks after starting finerenone and after every dose change, as hyperkalaemia is the one dose-limiting adverse effect. [KDIGO 2024]",
         "Add a **GLP-1 receptor agonist** in type 2 diabetes with CKD - the FLOW trial stopped early for a 24% cut in kidney events with semaglutide. [KDIGO 2024]",
         "**Statin for everyone with CKD aged 50 or more:** atorvastatin 20 mg, or simvastatin 20 mg with ezetimibe 10 mg - the SHARP regimen. [KDIGO 2024]",
@@ -143,10 +143,10 @@ topics.push({
       points: [
         "**Anaemia in CKD** is normocytic normochromic - erythropoietin production fails and hepcidin traps iron in stores. [Brenner and Rector 11e]",
         "Investigate anaemia when Hb falls below 12 g/dL in women or 13 g/dL in men, because CKD is a diagnosis of exclusion for anaemia. [Harrison 21e]",
-        "Correct iron first - target transferrin saturation above 30% and ferritin above 200-500 ng/mL, or an ESA will simply not work. [Brenner and Rector 11e]",
-        "Use IV iron sucrose or ferric carboxymaltose - hepcidin blocks duodenal absorption, so oral iron fails in uraemia. [Brenner and Rector 11e]",
-        "Start an erythropoiesis-stimulating agent only when **Hb is below 10 g/dL** - earlier starts gave no benefit and more harm. [Harrison 21e]",
-        "Aim Hb **10-11.5 g/dL and never above 13 g/dL** - CHOIR and TREAT showed higher targets increase stroke and death. [Brenner and Rector 11e]",
+        "Iron first - start if ferritin is under 100 ng/mL with TSAT under 40%, or ferritin 100-299 with TSAT under 25%, or an ESA will simply not work. [KDIGO 2026]",
+        "Oral iron first in non-dialysis CKD, IV iron sucrose or ferric carboxymaltose if no response in 1-3 months and routinely in haemodialysis - hepcidin blocks duodenal absorption. [KDIGO 2026]",
+        "Start an erythropoiesis-stimulating agent by **individualised decision** after iron repletion (no fixed Hb trigger in non-dialysis CKD) - early starts gave no benefit and more harm. [KDIGO 2026]",
+        "Keep Hb **below 11.5 g/dL on ESA and never aim for 13 g/dL** - CHOIR and TREAT showed higher targets increase stroke and death. [KDIGO 2026]",
         "Exclude blood loss, B12 and folate deficiency, and hypothyroidism before labelling renal anaemia, as all are commoner and cheaper to treat. [Harrison 21e]",
         "**CKD-MBD:** below an eGFR of 45 phosphate rises and calcitriol and calcium fall, so PTH rises to compensate. [KDIGO 2017]",
         "Restrict dietary phosphate - processed food, cola, dairy and organ meats, because additive phosphate is almost fully absorbed. [KDIGO 2017]",
@@ -220,7 +220,7 @@ topics.push({
         ["BP control", "Any effective regimen; sodium under 2 g/day", "All CKD", "Standardised office SBP below 120 mmHg (practical target under 130/80)"],
         ["RAS blockade", "Telmisartan 40-80 mg OD or enalapril 5-20 mg BD, maximum tolerated dose", "CKD with hypertension and ACR 30 mg/g or more", "Creatinine and potassium at 2-4 weeks; tolerate 30% creatinine rise"],
         ["SGLT2 inhibitor", "Dapagliflozin 10 mg OD or empagliflozin 10 mg OD", "eGFR 20 or more with ACR 200 mg/g or more, or heart failure, or type 2 diabetes with CKD", "Expect a reversible eGFR dip up to 30%; genital mycosis; hold in acute illness"],
-        ["Non-steroidal MRA", "Finerenone 10 mg OD (eGFR 25-59) or 20 mg OD (eGFR 60 or more)", "Type 2 diabetes, ACR 30 mg/g or more, potassium 5.0 mmol/L or less", "Potassium at 4 weeks and after each dose change"],
+        ["Non-steroidal MRA", "Finerenone 10 mg OD (eGFR 25-59) or 20 mg OD (eGFR 60 or more)", "Type 2 diabetes, ACR 30 mg/g or more, potassium 4.8 mmol/L or less (up to 5.0 with monitoring)", "Potassium at 4 weeks and after each dose change"],
       ],
     },
   ],
@@ -293,20 +293,20 @@ topics.push({
             "Recheck creatinine and potassium in 2-4 weeks and accept a **creatinine rise up to 30%** - which reflects the drug working. [KDIGO 2024]",
             "**SGLT2 inhibitor: dapagliflozin 10 mg PO OD** - he qualifies at eGFR 35 with ACR above 200 mg/g, as in DAPA-CKD. [KDIGO 2024]",
             "Warn about the reversible eGFR dip and genital mycosis, and hold the drug in acute illness - fasting risks euglycaemic ketoacidosis. [KDIGO 2024]",
-            "Finerenone 10 mg PO OD if potassium is 5.0 mmol/L or less, with a potassium check at 4 weeks - hyperkalaemia is dose-limiting. [KDIGO 2024]",
+            "Finerenone 10 mg PO OD (eGFR 25-59) if potassium is 4.8 mmol/L or less (up to 5.0 with close monitoring), with a potassium check at 4 weeks - hyperkalaemia is dose-limiting. [KDIGO 2024]",
             "Consider a GLP-1 receptor agonist for the diabetes, since FLOW showed a fall in kidney events independent of glycaemia. [KDIGO 2024]",
             "Glycaemia: individualised HbA1c around 7.0-7.5%, loosened because hypoglycaemia risk rises as renal insulin clearance falls. [KDIGO 2022]",
             "**Metformin capped at 1000 mg/day at eGFR 30-44 and stopped below 30** - accumulation risks lactic acidosis. [KDIGO 2022]",
             "Insulin requirement falls as eGFR falls, because the kidney degrades about a third of circulating insulin. [KDIGO 2022]",
             "Statin: atorvastatin 20 mg PO OD and complete tobacco cessation - he is far likelier to die of vascular disease than of uraemia. [KDIGO 2024]",
-            "Dietary protein about 0.8 g/kg/day, with sodium bicarbonate if bicarbonate is below 22 mmol/L - acidosis drives muscle catabolism. [KDIGO 2024]",
+            "Dietary protein about 0.8 g/kg/day, with sodium bicarbonate if bicarbonate is below 18 mmol/L - acidosis drives muscle catabolism. [KDIGO 2024]",
           ],
         },
         {
           heading: "4. Treating the complications",
           points: [
-            "Anaemia: correct iron to a transferrin saturation above 30% first, because an ESA cannot work without available iron. [Harrison 21e]",
-            "Then an ESA only if Hb is below 10 g/dL, targeting **10-11.5 g/dL and never above 13** - higher targets raise stroke and death. [Brenner and Rector 11e]",
+            "Anaemia: give iron first if ferritin is under 100 ng/mL with TSAT under 40%, or ferritin 100-299 with TSAT under 25%, because an ESA cannot work without available iron. [KDIGO 2026]",
+            "Then an ESA by individualised decision (nephrology), keeping **Hb below 11.5 g/dL and never aiming for 13** - higher targets raise stroke and death; ESA is preferred over HIF-PHI. [KDIGO 2026]",
             "CKD-MBD: phosphate restriction, calcium carbonate with meals as a binder, and PTH monitoring from G3b, as phosphate rises below eGFR 45. [KDIGO 2017]",
             "Hyperkalaemia: counsel against coconut water, banana, citrus, tomato, potato and potassium salt substitutes - all common in Indian diets. [KDIGO 2024]",
             "Review every contributing drug for hyperkalaemia, since trimethoprim and NSAIDs are the reversible causes. [KDIGO 2024]",
@@ -408,7 +408,7 @@ topics.push({
       question: "Write short notes on the anaemia of chronic kidney disease.",
       openingLines: [
         "The anaemia of chronic kidney disease is a normocytic normochromic anaemia caused principally by reduced erythropoietin production by the peritubular fibroblasts, appearing usually from an eGFR below 45-60 mL/min/1.73 m2.",
-        "It is investigated when haemoglobin falls below 13 g/dL in men or 12 g/dL in women, and it must never be attributed to CKD until other causes have been excluded.",
+        "It is investigated when haemoglobin falls below 13 g/dL in men or 12 g/dL in women, and it must never be attributed to CKD until other causes have been excluded; KDIGO 2026 now sets new iron-start thresholds and an Hb ceiling of 11.5 g/dL on ESA.",
       ],
       answer: [
         {
@@ -434,21 +434,21 @@ topics.push({
         {
           heading: "Treatment",
           points: [
-            "Correct iron first, to a transferrin saturation above 30% and ferritin above 200-500 ng/mL - an ESA cannot work without iron. [Harrison 21e]",
-            "Use IV iron sucrose or ferric carboxymaltose in dialysis patients, because hepcidin blocks duodenal absorption of oral iron. [Brenner and Rector 11e]",
-            "Start an ESA only when **Hb is below 10 g/dL**, having first repleted iron - early starts add harm without benefit. [Brenner and Rector 11e]",
+            "Iron first: start if **ferritin under 100 ng/mL with TSAT under 40%, or ferritin 100-299 with TSAT under 25%**; withhold if ferritin over 700 or TSAT 40% or more - an ESA cannot work without iron. [KDIGO 2026]",
+            "Oral ferrous sulfate first in non-dialysis CKD, switching to IV iron sucrose or ferric carboxymaltose if no response in 1-3 months; **IV rather than oral in haemodialysis**, because hepcidin blocks duodenal absorption. [KDIGO 2026]",
+            "Start an ESA by **individualised shared decision** in non-dialysis CKD (no fixed Hb trigger; usually Hb 9-10 g/dL on dialysis), having first repleted iron - early starts add harm without benefit. [KDIGO 2026]",
             "ESA dosing: epoetin alfa 50-100 units/kg subcutaneously thrice weekly, or darbepoetin weekly to fortnightly - darbepoetin has a longer half-life. [Harrison 21e]",
-            "Target Hb **10-11.5 g/dL and never exceed 13 g/dL**, because normalising haemoglobin does not normalise outcome. [Harrison 21e]",
-            "CHOIR, CREATE and TREAT showed excess stroke, access thrombosis and death at higher targets - which set the 13 g/dL ceiling. [Brenner and Rector 11e]",
+            "Keep Hb **below 11.5 g/dL on ESA and never aim for 13 g/dL**, because normalising haemoglobin does not normalise outcome. [KDIGO 2026]",
+            "CHOIR, CREATE and TREAT showed no benefit and excess stroke, access thrombosis and death at higher (13 g/dL) targets - hence the 11.5 g/dL ceiling. [Brenner and Rector 11e]",
             "ESA resistance: iron deficiency, infection, hyperparathyroidism, aluminium or poor dialysis - find these before raising the dose. [Brenner and Rector 11e]",
             "Also malignancy and pure red cell aplasia from anti-erythropoietin antibodies, which is why a sudden loss of response needs a smear. [Brenner and Rector 11e]",
             "Transfuse only for symptomatic or life-threatening anaemia, as each unit carries infection and iron-overload risk. [Harrison 21e]",
             "In a potential transplant recipient minimise transfusion, because allosensitisation narrows the future donor pool. [Harrison 21e]",
-            "Oral hypoxia-inducible factor prolyl hydroxylase inhibitors are an emerging alternative - they raise endogenous erythropoietin. [Brenner and Rector 11e]",
+            "Oral HIF-prolyl hydroxylase inhibitors (desidustat, daprodustat) raise endogenous erythropoietin, but **an ESA is preferred first-line** - HIF-PHIs are specialist alternatives. [KDIGO 2026]",
           ],
         },
       ],
-      mustDraw: ["A flow chart: Hb below 10 g/dL, check iron studies, replete iron, then start ESA, then target Hb 10-11.5 g/dL."],
+      mustDraw: ["A flow chart: exclude other causes, check ferritin and TSAT, replete iron (oral then IV), then ESA by shared decision, keeping Hb below 11.5 g/dL."],
       markSplit: [
         { part: "Definition and mechanisms", marks: 2 },
         { part: "Evaluation and exclusion of other causes", marks: 1 },
@@ -509,7 +509,7 @@ topics.push({
       ],
       answer: 2,
       explanation:
-        "The transferrin saturation of 14% and ferritin of 80 ng/mL show absolute iron deficiency, and KDIGO requires iron repletion - target saturation above 30% and ferritin above 200-500 ng/mL - before an erythropoiesis-stimulating agent is started, because iron deficiency is the commonest cause of ESA resistance. Intravenous iron is preferred in advanced CKD as oral absorption is impaired by hepcidin. Starting an ESA into iron deficiency wastes an expensive drug and does not raise the haemoglobin. Transfusion is reserved for symptomatic or life-threatening anaemia and causes allosensitisation in a potential transplant recipient. B12 and folate are already normal, and a microcytic anaemia with a low saturation should also prompt a search for gastrointestinal blood loss rather than watchful waiting.",
+        "The transferrin saturation of 14% and ferritin of 80 ng/mL show absolute iron deficiency, and KDIGO 2026 starts iron when ferritin is under 100 ng/mL with TSAT under 40% - before an erythropoiesis-stimulating agent is started, because iron deficiency is the commonest cause of ESA resistance. Intravenous iron is preferred in advanced CKD as oral absorption is impaired by hepcidin. Starting an ESA into iron deficiency wastes an expensive drug and does not raise the haemoglobin. Transfusion is reserved for symptomatic or life-threatening anaemia and causes allosensitisation in a potential transplant recipient. B12 and folate are already normal, and a microcytic anaemia with a low saturation should also prompt a search for gastrointestinal blood loss rather than watchful waiting.",
       difficulty: "easy",
     },
     {
@@ -548,7 +548,7 @@ topics.push({
       ],
       answer: 2,
       explanation:
-        "Finerenone should be initiated only when serum potassium is 5.0 mmol/L or less; at 5.4 mmol/L the correct action is to address the potassium - review diet, salt substitutes, NSAIDs and trimethoprim, consider a binder or a loop diuretic - and reassess. The 20 mg dose applies only when eGFR is 60 or more, so it would be wrong even if her potassium allowed treatment. Stopping telmisartan to make room for finerenone sacrifices a proven agent, as finerenone is studied as an addition to maximally tolerated RAS blockade, not a replacement. Spironolactone is a steroidal MRA with much higher rates of hyperkalaemia and gynaecomastia and lacks the CKD outcome evidence of finerenone in this setting.",
+        "Finerenone should be initiated only when serum potassium is 4.8 mmol/L or less (up to 5.0 with close monitoring); at 5.4 mmol/L the correct action is to address the potassium - review diet, salt substitutes, NSAIDs and trimethoprim, consider a binder or a loop diuretic - and reassess. The 20 mg dose applies only when eGFR is 60 or more, so it would be wrong even if her potassium allowed treatment. Stopping telmisartan to make room for finerenone sacrifices a proven agent, as finerenone is studied as an addition to maximally tolerated RAS blockade, not a replacement. Spironolactone is a steroidal MRA with much higher rates of hyperkalaemia and gynaecomastia and lacks the CKD outcome evidence of finerenone in this setting.",
       difficulty: "hard",
     },
   ],
@@ -674,7 +674,7 @@ topics.push({
         "**Adjust every remaining drug to the current creatinine clearance**, because standard doses become toxic within a day of AKI. [Brenner and Rector 11e]",
         "In evolving AKI creatinine lags behind true GFR, so dose as though the GFR were lower than the number suggests. [Harrison 21e]",
         "**Treat hyperkalaemia the moment potassium exceeds 6.0 mmol/L or the ECG changes** - death is by arrhythmia, not by the number. [KDIGO AKI 2012]",
-        "Give **10 mL of 10% calcium gluconate IV over 2-3 minutes** to stabilise the myocardium - it does not lower potassium at all. [Brenner and Rector 11e]",
+        "If the ECG has changed give **calcium gluconate 10% 30 mL IV over 10 minutes (or calcium chloride 10% 10 mL)** to stabilise the myocardium - it does not lower potassium at all. [ERC 2025]",
         "Give **10 units regular insulin with 25 g dextrose**, as 50 mL of 50% or 100 mL of 25% dextrose, to drive potassium into cells. [Harrison 21e]",
         "Add salbutamol 10-20 mg by nebuliser, bicarbonate only if acidotic, and a gut potassium binder - only the binder removes potassium. [Brenner and Rector 11e]",
         "Dialyse if hyperkalaemia is refractory, since every shifting agent wears off within hours and the potassium returns. [Harrison 21e]",
@@ -758,7 +758,7 @@ topics.push({
   ],
   redFlags: [
     "Anuria, or urine output under 0.3 mL/kg/h for more than 12 hours - stage 3 AKI; admit, exclude obstruction and assess for dialysis today.",
-    "Potassium above 6.0 mmol/L, or peaked T waves, a widened QRS or a sine wave on the ECG - give calcium gluconate immediately and arrange dialysis.",
+    "Potassium 6.5 mmol/L or more, or peaked T waves, a widened QRS or a sine wave on the ECG - IV calcium if ECG changes, insulin-glucose now, and dialysis if refractory.",
     "Pulmonary oedema with a rising creatinine and no response to intravenous furosemide - refractory overload, an emergency dialysis indication.",
     "Haemoptysis or haemoserous sputum with haematuria and a rapidly rising creatinine - pulmonary-renal syndrome; same-day nephrology referral for anti-GBM or ANCA disease.",
     "Bilateral hydronephrosis or a palpable bladder with anuria - obstructive uropathy; pass a catheter now and arrange urgent urology review or nephrostomy.",
@@ -835,7 +835,7 @@ topics.push({
             "Target urine output above 0.5 mL/kg/h, and stop fluid when the JVP rises or the lung bases become wet, as overload also lowers GFR. [Harrison 21e]",
             "Treat the cause - oral rehydration solution and zinc for the diarrhoea, an antiemetic, and antibiotics only for a septic focus. [ICMR 2023]",
             "Stop all nephrotoxins - NSAIDs, ACE inhibitors, ARBs, diuretics, metformin and herbals - and dose the rest by creatinine clearance. [Brenner and Rector 11e]",
-            "For potassium above 6.0 mmol/L or any ECG change give **calcium gluconate 10 mL of 10% IV** - then insulin 10 units with 25 g dextrose. [Harrison 21e]",
+            "For any ECG change give **calcium gluconate 10% 30 mL IV over 10 minutes (or calcium chloride 10% 10 mL)**; for potassium 6.5 or more (or ECG change) give insulin 10 units with 25 g glucose. [ERC 2025]",
             "Add nebulised salbutamol, bicarbonate if acidotic, and a gut potassium binder - only the binder actually removes potassium. [Brenner and Rector 11e]",
             "Nutrition at 20-30 kcal/kg/day with 0.8-1.0 g/kg/day protein, and do not restrict protein to postpone dialysis - which it never does. [Harrison 21e]",
             "Diuretics only for established overload, never to prevent or treat injury - and dopamine and mannitol have no role at all. [Brenner and Rector 11e]",
@@ -1026,7 +1026,7 @@ topics.push({
         "**Uncomplicated UTI:** cystitis or pyelonephritis in a non-pregnant woman with a normal urinary tract - the only group safe for 5-day oral therapy. [EAU 2024]",
         "Complicated UTI: **male sex, pregnancy, obstruction or stones, indwelling catheter or recent instrumentation** - all of which shelter organisms. [EAU 2024]",
         "Also complicated: neurogenic bladder, poor diabetic control, immunosuppression, transplant, or any anatomical anomaly - each shelters organisms. [EAU 2024]",
-        "This classification alone decides home nitrofurantoin against 10-14 days of IV therapy with imaging, so make it first. [EAU 2024]",
+        "This classification alone decides 5 days of home nitrofurantoin against culture, imaging and 5-7 days of a fluoroquinolone or 7 days of another active agent, so make it first. [IDSA 2025]",
         "**Significant bacteriuria: 10 to the power 5 CFU/mL** in a clean-catch midstream sample - the threshold that excludes contaminants. [Campbell-Walsh 12e]",
         "But 10 to the power 3 CFU/mL of one uropathogen with typical symptoms in a woman is significant, as a brisk diuresis dilutes the count. [Campbell-Walsh 12e]",
         "10 to the power 4 CFU/mL is significant in pyelonephritis and in men - and any growth from a suprapubic aspirate counts. [Campbell-Walsh 12e]",
@@ -1119,12 +1119,12 @@ topics.push({
         "**Avoid fluoroquinolones for cystitis** - Indian resistance is above 70%, so the drug is likelier to fail than to work. [ICMR 2022]",
         "Fluoroquinolones also carry FDA warnings for tendinopathy, neuropathy, aortic dissection and dysglycaemia - harms out of proportion to cystitis. [EAU 2024]",
         "A single fosfomycin dose is attractive where adherence is doubtful, since the whole course is swallowed under observation. [EAU 2024]",
-        "**Uncomplicated pyelonephritis, outpatient:** cefixime 200 mg BD, cefpodoxime 200 mg BD, or co-amoxiclav 625 mg TDS - for 10-14 days. [EAU 2024]",
+        "**Uncomplicated pyelonephritis, outpatient:** cefixime 200 mg BD, cefpodoxime 200 mg BD, or co-amoxiclav 625 mg TDS - 7 days if prompt response, 10-14 if slow. [IDSA 2025]",
         "Give an initial IV dose of ceftriaxone 1 g - and use fluoroquinolones only when culture proves sensitivity. [EAU 2024]",
         "**Pyelonephritis needing admission** - vomiting, sepsis, pregnancy or obstruction: ceftriaxone 1-2 g IV OD. [EAU 2024]",
         "Alternatives: cefoperazone-sulbactam 1.5-3 g IV BD, or amikacin 15 mg/kg IV OD - the latter needs creatinine and level monitoring. [ICMR 2022]",
         "**Escalate to a carbapenem** - meropenem 1 g IV TDS or ertapenem 1 g IV OD - if ESBL is proven or strongly suspected. [ICMR 2022]",
-        "De-escalate on culture and step down to oral therapy after 48-72 afebrile hours, completing 10-14 days - shorter courses relapse. [EAU 2024]",
+        "De-escalate on culture and step down to oral therapy after 48-72 afebrile hours - 5-7 days of a fluoroquinolone or 7 days of another active agent if prompt response, longer only if slow. [IDSA 2025]",
         "**UTI in a man: 7 days for simple cystitis, 14 days if the prostate is involved**, because prostatic tissue clears slowly. [EAU 2024]",
         "Use a drug with prostatic penetration, co-trimoxazole or a fluoroquinolone if sensitive, as nitrofurantoin never enters the prostate. [EAU 2024]",
         "Chronic bacterial prostatitis needs **4-6 weeks** of treatment, since the prostate is a poorly perfused sanctuary site. [EAU 2024]",
@@ -1170,10 +1170,10 @@ topics.push({
       columns: ["Syndrome", "First choice", "Alternative", "Duration"],
       rows: [
         ["Uncomplicated cystitis, woman", "Nitrofurantoin 100 mg PO BD", "Fosfomycin trometamol 3 g PO single dose, or cefuroxime axetil 250 mg PO BD", "5 days (fosfomycin single dose)"],
-        ["Uncomplicated pyelonephritis, outpatient", "Cefixime 200 mg PO BD after one dose of IV ceftriaxone", "Co-amoxiclav 625 mg PO TDS", "10-14 days"],
-        ["Pyelonephritis needing admission", "Ceftriaxone 1-2 g IV OD", "Cefoperazone-sulbactam 1.5-3 g IV BD, or amikacin 15 mg/kg IV OD", "10-14 days total, step down when afebrile 48-72 h"],
-        ["Suspected or proven ESBL with sepsis", "Meropenem 1 g IV TDS", "Ertapenem 1 g IV OD", "10-14 days, de-escalate on culture"],
-        ["Cystitis in a man", "Co-trimoxazole 160/800 mg PO BD if sensitive", "Fluoroquinolone if sensitive (prostatic penetration)", "7 days; 14 days if prostatitis"],
+        ["Uncomplicated pyelonephritis, outpatient", "Cefixime 200 mg PO BD after one dose of IV ceftriaxone", "Co-amoxiclav 625 mg PO TDS", "7 days if prompt response (10-14 if slow)"],
+        ["Pyelonephritis needing admission", "Ceftriaxone 1-2 g IV OD", "Cefoperazone-sulbactam 1.5-3 g IV BD, or amikacin 15 mg/kg IV OD", "7 days total if prompt response (FQ 5-7), step down when afebrile 48-72 h"],
+        ["Suspected or proven ESBL with sepsis", "Meropenem 1 g IV TDS", "Ertapenem 1 g IV OD", "7 days for bacteraemia with prompt response, de-escalate on culture"],
+        ["Cystitis in a man", "Co-trimoxazole 160/800 mg PO BD if sensitive", "Fluoroquinolone if sensitive (prostatic penetration)", "7 days; 10-14 days if febrile with suspected prostatitis"],
         ["UTI in pregnancy", "Nitrofurantoin 100 mg PO BD (not at term)", "Cefuroxime axetil 250 mg PO BD, or amoxicillin if sensitive", "5-7 days, then test of cure"],
         ["Catheter-associated UTI", "Replace catheter, then culture-directed therapy", "Ceftriaxone 1 g IV OD pending culture", "7 days if prompt response, 10-14 if delayed"],
       ],
@@ -1255,7 +1255,7 @@ topics.push({
           points: [
             "Uncomplicated cystitis: nitrofurantoin 100 mg BD for 5 days, fosfomycin 3 g once, or cefuroxime 250 mg BD - all spare the quinolones. [ICMR 2022]",
             "Avoid fluoroquinolones and co-trimoxazole empirically, as Indian E. coli resistance exceeds 70% and 50%; reserve them for proven sensitivity. [ICMR 2022]",
-            "If fever or flank pain appears, reclassify as pyelonephritis and treat 10-14 days with a cephalosporin, since nitrofurantoin cannot reach tissue. [EAU 2024]",
+            "If fever or flank pain appears, reclassify as pyelonephritis and treat with a cephalosporin - 7 days if prompt response, 10-14 if slow - since nitrofurantoin cannot reach tissue. [IDSA 2025]",
             "Begin with IV ceftriaxone 1 g if there is vomiting or systemic upset, because oral absorption is unreliable then. [EAU 2024]",
             "Paracetamol for pain, fluids of 2.5-3 litres a day, and review at 48-72 hours if not improving - non-response means a complication. [EAU 2024]",
           ],
@@ -1307,7 +1307,7 @@ topics.push({
       question: "Write short notes on catheter-associated urinary tract infection, including its prevention.",
       openingLines: [
         "Catheter-associated urinary tract infection is defined as symptoms or signs compatible with urinary infection, with no other identified source, in a patient with an indwelling catheter or one removed within the previous 48 hours, together with a urine culture growing 10 to the power 3 CFU/mL or more of one or more organisms.",
-        "It is the commonest healthcare-associated infection, and its risk rises by about 3-8% for every day the catheter remains in place, so the single most effective intervention is early removal.",
+        "It is the commonest healthcare-associated infection, and its risk rises by about 3-7% for every day the catheter remains in place, so the single most effective intervention is early removal.",
       ],
       answer: [
         {
@@ -1570,7 +1570,7 @@ topics.push({
         "Be alert to **post-obstructive diuresis, over 200 mL/h** - the recovering tubule cannot conserve salt or water. [EAU 2024]",
         "Replace roughly half to two-thirds of the output with daily electrolytes, since full replacement perpetuates the diuresis. [EAU 2024]",
         "**Start tamsulosin 0.4 mg OD at once and attempt a trial without catheter after 2-3 days** - the detrusor needs that time to recover. [EAU 2024]",
-        "An alpha blocker raises trial-without-catheter success from about 25% to 45-50%, which is why it is started at once. [EAU 2024]",
+        "An alpha blocker raises trial-without-catheter success about 1.5-fold (to about 45-60%), which is why it is started at once. [EAU 2025]",
         "If the trial fails, leave the catheter, add a 5-alpha reductase inhibitor and refer for surgery, since a second failure is likely. [EAU 2024]",
         "**Chronic retention** is painless, with a large residual, overflow incontinence and nocturnal enuresis - the bladder stretched slowly. [EAU 2024]",
         "**High-pressure chronic retention causes bilateral hydronephrosis and obstructive nephropathy** - decompress with careful monitoring. [EAU 2024]",
@@ -1616,7 +1616,7 @@ topics.push({
       rows: [
         ["Alpha-1 blocker, uroselective", "Tamsulosin 0.4 mg PO OD; silodosin 8 mg PO OD", "Days to 2 weeks", "None", "Retrograde ejaculation, dizziness, intraoperative floppy iris syndrome"],
         ["Alpha-1 blocker, non-selective", "Terazosin 2-10 mg PO nocte; doxazosin 1-8 mg PO nocte; alfuzosin 10 mg PO OD", "Days to 2 weeks", "None", "First-dose hypotension, dizziness, asthenia; useful if hypertensive"],
-        ["5-alpha reductase inhibitor", "Finasteride 5 mg PO OD; dutasteride 0.5 mg PO OD", "3-6 months", "Shrinks by 20-30%", "Reduced libido, erectile and ejaculatory dysfunction, gynaecomastia, PSA halved"],
+        ["5-alpha reductase inhibitor", "Finasteride 5 mg PO OD; dutasteride 0.5 mg PO OD", "6-12 months", "Shrinks by 20-30%", "Reduced libido, erectile and ejaculatory dysfunction, gynaecomastia, PSA halved"],
         ["Combination", "Tamsulosin 0.4 mg with dutasteride 0.5 mg PO OD", "Days for symptoms, months for size", "Shrinks by 20-30%", "Sum of both; best for large gland with severe symptoms"],
         ["PDE-5 inhibitor", "Tadalafil 5 mg PO OD", "2-4 weeks", "None", "Headache, dyspepsia, back pain; contraindicated with nitrates"],
         ["Antimuscarinic or beta-3 agonist", "Solifenacin 5 mg PO OD; mirabegron 25-50 mg PO OD", "2-4 weeks", "None", "Dry mouth, constipation, retention risk; keep post-void residual under 150 mL"],
@@ -1726,7 +1726,7 @@ topics.push({
             "Absolute indications - refractory retention or a failed trial without catheter, recurrent UTI from obstruction, or prostatic haematuria. [EAU 2024]",
             "More absolute indications - bladder stones, complicated diverticula, and renal impairment or hydronephrosis from outlet obstruction. [EAU 2024]",
             "The relative indication is symptoms not controlled by, or intolerance of, maximal medical therapy - the patient decides. [EAU 2024]",
-            "TURP is the standard for 30-80 g, TUIP for a gland under 30 g, and HoLEP or prostatectomy above 80 g - size chooses the operation. [EAU 2024]",
+            "TURP is the standard for 30-80 g, TUIP for a gland under 30 g, HoLEP for any size, and simple prostatectomy above 80 g - size chooses the operation. [EAU 2025]",
             "Alternatives: bipolar TURP, photoselective vaporisation, Rezum and prostatic urethral lift - which better preserve ejaculation. [EAU 2024]",
             "Complications - bleeding and clot retention, TURP syndrome with dilutional hyponatraemia, infection, stricture and bladder neck contracture. [EAU 2024]",
             "Also retrograde ejaculation 65-75%, erectile dysfunction 5-10%, incontinence 1-2% - and re-operation 1-2% per year. [EAU 2024]",
@@ -1788,7 +1788,7 @@ topics.push({
           heading: "Preventing recurrence",
           points: [
             "Start tamsulosin 0.4 mg PO OD at catheterisation and try a trial without catheter after 2-3 days, since the detrusor needs to recover. [EAU 2024]",
-            "The alpha blocker raises success from about 25% to 45-50%, which is why it is given before the trial, not after. [EAU 2024]",
+            "The alpha blocker raises success about 1.5-fold (to about 45-60%), which is why it is given before the trial, not after. [EAU 2025]",
             "Add finasteride 5 mg or dutasteride 0.5 mg PO OD for a large gland, since these halve the future risk of retention and surgery. [MTOPS 2003]",
             "Refer for surgery after a failed trial, a second episode, renal impairment, or a persistently large residual - none will resolve alone. [EAU 2024]",
             "Advise avoiding the precipitating drugs and alcohol, treating constipation, and early attention to infection - all are modifiable. [EAU 2024]",
@@ -1816,7 +1816,7 @@ topics.push({
       ],
       answer: 1,
       explanation:
-        "He has severe symptoms (IPSS 20-35), a gland well above 40 g and a PSA above 1.5 ng/mL, which is exactly the profile in which MTOPS and CombAT showed combination therapy to be superior to either drug alone for symptom relief and for preventing progression to retention and surgery. Watchful waiting is appropriate only for mild or non-bothersome symptoms and would leave a severely symptomatic man untreated. Finasteride alone would work eventually but takes 3-6 months, leaving him symptomatic in the interim, which is why an alpha blocker is combined with it for the rapid effect. TURP is not indicated because he has none of the absolute indications - no refractory retention, no recurrent infection or haematuria, no stones, and no renal impairment or hydronephrosis - and medical therapy has not yet been tried.",
+        "He has severe symptoms (IPSS 20-35), a gland well above 40 g and a PSA above 1.5 ng/mL, which is exactly the profile in which MTOPS and CombAT showed combination therapy to be superior to either drug alone for symptom relief and for preventing progression to retention and surgery. Watchful waiting is appropriate only for mild or non-bothersome symptoms and would leave a severely symptomatic man untreated. Finasteride alone would work eventually but takes 6-12 months, leaving him symptomatic in the interim, which is why an alpha blocker is combined with it for the rapid effect. TURP is not indicated because he has none of the absolute indications - no refractory retention, no recurrent infection or haematuria, no stones, and no renal impairment or hydronephrosis - and medical therapy has not yet been tried.",
       difficulty: "moderate",
     },
     {
@@ -2168,14 +2168,14 @@ topics.push({
         {
           heading: "5. Prevention of recurrence",
           points: [
-            "Fluid enough for a urine output above 2.5 litres a day, judged by pale straw-coloured urine - including a drink at bedtime. [AUA 2019]",
+            "Fluid enough for a urine output of 2.5 litres a day or more, judged by pale straw-coloured urine - including a drink at bedtime. [AUA 2026]",
             "Normal dietary calcium of 1000-1200 mg a day and never a low-calcium diet - which increases gut oxalate absorption. [AUA 2019]",
-            "Sodium under 2-3 g a day and animal protein 0.8-1.0 g/kg/day - restrict oxalate-rich foods only in documented hyperoxaluria. [AUA 2019]",
-            "Potassium citrate 10-20 mEq two or three times daily - for hypocitraturia, calcium oxalate, uric acid stones and distal RTA. [AUA 2019]",
-            "Monitor potassium on citrate - and add a thiazide for hypercalciuria, or allopurinol 100-300 mg OD for hyperuricosuria. [AUA 2019]",
+            "Sodium under 2.3 g a day and animal protein 0.8-1.0 g/kg/day - restrict oxalate-rich foods only in documented hyperoxaluria. [AUA 2026]",
+            "Potassium citrate 10-20 mEq two or three times daily (30-60 mEq/day) - for recurrent calcium oxalate stones, hypocitraturia, uric acid stones and distal RTA. [AUA 2026]",
+            "Monitor potassium on citrate - and offer a thiazide for recurrent calcium stones with high or relatively high urinary calcium, or allopurinol 100-300 mg OD for hyperuricosuria. [AUA 2026]",
             "Alkalinise to a pH of 6.5-7.0 to dissolve uric acid stones - and use tiopronin for resistant cystinuria. [AUA 2019]",
             "Treat the underlying cause - hyperparathyroidism, renal tubular acidosis or infection - since otherwise stones simply recur. [AUA 2019]",
-            "Follow up with annual imaging and a repeat 24-hour urine at 6 months - to prove the intervention actually worked. [AUA 2019]",
+            "Follow up with annual imaging and a repeat 24-hour urine at 3-6 months - to prove the intervention actually worked. [AUA 2026]",
           ],
         },
       ],
@@ -2212,7 +2212,7 @@ topics.push({
             "It forms in acidic to neutral urine - risks are low urine volume, hypercalciuria, hyperoxaluria, hypocitraturia and high sodium. [AUA 2019]",
             "Enteric hyperoxaluria follows bowel resection or inflammatory bowel disease, because unabsorbed fat binds calcium and frees oxalate. [AUA 2019]",
             "Prevention: urine output above 2.5 L/day, and normal dietary calcium of 1000-1200 mg/day - never restricted. [AUA 2019]",
-            "Also **sodium under 2-3 g/day, potassium citrate for hypocitraturia, and a thiazide for hypercalciuria** - sodium drags calcium into urine; citrate binds it. [AUA 2019]",
+            "Also **sodium under 2.3 g/day, potassium citrate for recurrent stones or hypocitraturia, and a thiazide for recurrent stones with high urinary calcium** - sodium drags calcium into urine; citrate binds it. [AUA 2026]",
           ],
         },
         {
@@ -2404,7 +2404,7 @@ topics.push({
     {
       heading: "Treating hyponatraemia without causing osmotic demyelination",
       points: [
-        "**Correction limit - no more than 8-10 mmol/L in the first 24 hours and no more than 18 mmol/L in 48 hours.** [ESE 2014]",
+        "**Correction limit - no more than 10 mmol/L in the first 24 hours (8 if high risk) and no more than 18 mmol/L in 48 hours.** [ESE 2014]",
         "In the high-risk patient limit the rise to **4-6 mmol/L in 24 hours**, because their brain adapts least well. [ESE 2014]",
         "High risk - sodium below 105 mmol/L, alcoholism, malnutrition, liver disease, hypokalaemia and advanced age. [ESE 2014]",
         "**Severe symptomatic hyponatraemia - seizures, coma, obtundation, or vomiting with headache - is treated at once**, whatever the chronicity. [ESE 2014]",
@@ -2452,10 +2452,10 @@ topics.push({
     {
       heading: "Treating hyperkalaemia in the right order",
       points: [
-        "**Step 1 - stabilise the myocardium: 10 mL of 10% calcium gluconate IV over 2-3 minutes**, repeated at 5 minutes if the ECG is unchanged. [ERC 2021]",
+        "**Step 1 - stabilise the myocardium: calcium gluconate 10% 30 mL IV over 10 minutes (or calcium chloride 10% 10 mL over 5 minutes)** if the ECG has changed, repeated if the ECG is unchanged. [ERC 2025]",
         "Calcium acts in 1-3 minutes and lasts 30-60 minutes, and **does not lower the potassium at all** - it raises the threshold potential. [ERC 2021]",
         "Give calcium whenever there is any ECG change or the potassium is 6.5 mmol/L or above, since arrhythmia can be the first sign. [ERC 2021]",
-        "Calcium chloride 10 mL of 10% has three times the calcium but must go through a central line, as it is sclerosant. [ERC 2021]",
+        "Calcium chloride 10% 10 mL has three times the calcium of gluconate and is preferred by ERC 2025; give it into a large vein, as it is sclerosant. [ERC 2025]",
         "In digoxin toxicity give calcium slowly and diluted - with digoxin-specific antibody where available. [ERC 2021]",
         "**Step 2 - shift potassium into the cells: 10 units regular insulin in 25 g dextrose IV**, as 50 mL of 50% or 100 mL of 25%. [ERC 2021]",
         "Insulin-dextrose lowers potassium by **0.6-1.2 mmol/L in 15-30 minutes, lasting 4-6 hours** - it drives the Na-K-ATPase. [ERC 2021]",
@@ -2465,7 +2465,7 @@ topics.push({
         "**Sodium bicarbonate helps only with genuine metabolic acidosis**, so it is not a potassium-lowering agent on its own. [ERC 2021]",
         "**Step 3 - remove potassium: furosemide 40-80 mg IV with adequate volume** in a patient who still makes urine. [ERC 2021]",
         "Binders act over hours and are now preferred, because they alone remove potassium from the body. [ERC 2021]",
-        "**Sodium zirconium cyclosilicate 10 g PO TDS for 48 hours then 5-10 g daily** - or patiromer 8.4 g PO OD. [ERC 2021]",
+        "**Sodium zirconium cyclosilicate 10 g PO TDS for up to 72 hours then 5 g daily** - or patiromer 8.4 g PO OD. [UK Kidney Association 2023]",
         "Calcium or sodium polystyrene sulphonate 15-30 g is slow and poorly evidenced - and is linked to intestinal necrosis with sorbitol. [ERC 2021]",
         "**Haemodialysis is the definitive treatment** in oliguric renal failure or refractory hyperkalaemia, because it alone removes potassium fast. [ERC 2021]",
         "**Step 4 - remove the cause:** stop or reduce the ACE inhibitor, ARB, MRA, trimethoprim or NSAID responsible. [KDIGO 2024]",
@@ -2481,7 +2481,7 @@ topics.push({
       points: [
         "**Take the sample properly:** no prolonged tourniquet, no fist clenching and prompt transport, since artefact is the commonest cause. [ERC 2021]",
         "Repeat any unexpected result in a well patient before acting on it, because treating an artefact can cause real hypokalaemia. [ERC 2021]",
-        "**Check electrolytes 1-2 weeks after starting or increasing** an ACE inhibitor, ARB, MRA, thiazide or loop diuretic - that is when they shift. [KDIGO 2024]",
+        "**Check electrolytes 2-4 weeks after starting or increasing** an ACE inhibitor, ARB, MRA, thiazide or loop diuretic - that is when they shift. [KDIGO 2024]",
         "Also check during any intercurrent illness with vomiting, diarrhoea or reduced intake - the same drugs then turn dangerous. [KDIGO 2024]",
         "**Give written sick-day rules** - hold the ACE inhibitor, ARB, diuretic, MRA, metformin and SGLT2 inhibitor in vomiting or fever. [KDIGO 2024]",
         "Tell the patient to attend for a creatinine and potassium check when unwell, since sick-day rules need a measurement to close the loop. [KDIGO 2024]",
@@ -2509,20 +2509,20 @@ topics.push({
       heading: "Emergency treatment of hyperkalaemia: agent, dose, onset and duration",
       columns: ["Agent", "Dose", "Onset", "Duration", "Effect on serum potassium"],
       rows: [
-        ["Calcium gluconate 10%", "10 mL IV over 2-3 minutes, repeat once if ECG unchanged", "1-3 minutes", "30-60 minutes", "None - it protects the myocardium only"],
+        ["Calcium gluconate 10%", "30 mL IV over 10 minutes (or chloride 10% 10 mL), repeat if ECG unchanged", "1-3 minutes", "30-60 minutes", "None - it protects the myocardium only"],
         ["Insulin with dextrose", "10 units regular insulin with 25 g dextrose IV", "15-30 minutes", "4-6 hours", "Falls by 0.6-1.2 mmol/L; monitor glucose hourly for 6 hours"],
         ["Salbutamol nebulised", "10-20 mg nebulised", "30 minutes", "2-4 hours", "Falls by 0.5-1.0 mmol/L; additive with insulin; fails on beta blockers"],
         ["Sodium bicarbonate", "50-100 mmol IV, only if acidotic", "Hours", "Variable", "Small and unreliable unless true metabolic acidosis"],
         ["Furosemide", "40-80 mg IV if urine output is preserved", "30-60 minutes", "Hours", "Removes potassium; needs adequate volume status"],
-        ["Sodium zirconium cyclosilicate or patiromer", "10 g PO TDS for 48 h then 5-10 g OD; patiromer 8.4 g PO OD", "1-6 hours", "Ongoing", "Removes potassium via the gut; suitable for chronic control"],
+        ["Sodium zirconium cyclosilicate or patiromer", "10 g PO TDS up to 72 h then 5 g OD; patiromer 8.4 g PO OD", "1-6 hours", "Ongoing", "Removes potassium via the gut; suitable for chronic control"],
         ["Haemodialysis", "As arranged", "Immediate once started", "Definitive", "The definitive treatment in oliguric or refractory cases"],
       ],
     },
   ],
   redFlags: [
     "Hyponatraemia with seizures, coma or obtundation - give 3% hypertonic saline 100-150 mL over 10-20 minutes immediately, regardless of how chronic the hyponatraemia is.",
-    "A rise in serum sodium of more than 8-10 mmol/L in 24 hours - stop correcting, give 5% dextrose and desmopressin to bring it back down and prevent osmotic demyelination.",
-    "Potassium of 6.5 mmol/L or more, or any peaked T waves, absent P waves, wide QRS or sine wave pattern - give calcium gluconate now and arrange dialysis assessment.",
+    "A rise in serum sodium of more than 10 mmol/L in 24 hours (8 if high risk) - stop correcting, give 5% dextrose and desmopressin to bring it back down and prevent osmotic demyelination.",
+    "Potassium of 6.5 mmol/L or more, or any peaked T waves, absent P waves, wide QRS or sine wave pattern - IV calcium if ECG changes, insulin-glucose now, dialysis if refractory.",
     "Hyponatraemia with hypotension, hyperkalaemia, hyperpigmentation and weight loss - primary adrenal insufficiency; give hydrocortisone 100 mg intravenously before any other treatment.",
     "Hyponatraemia after subarachnoid haemorrhage or neurosurgery with signs of volume depletion - cerebral salt wasting, where fluid restriction is dangerous and salt replacement is needed.",
     "Severe hyponatraemia in an alcoholic or malnourished patient - the highest risk group for osmotic demyelination; cap the correction at 4-6 mmol/L in 24 hours.",
@@ -2530,7 +2530,7 @@ topics.push({
   pearls: [
     "Hyponatraemia is a water problem, not a salt problem; measure serum osmolality first, then assess volume, then send urine sodium and urine osmolality before giving any fluid or diuretic.",
     "Correct hyperglycaemic hyponatraemia by treating the glucose - add 1.6-2.4 mmol/L to the sodium for every 100 mg/dL of glucose above 100 mg/dL.",
-    "Never exceed 8-10 mmol/L of sodium correction in 24 hours, or 4-6 mmol/L in the alcoholic, malnourished or hypokalaemic patient.",
+    "Never exceed 10 mmol/L of sodium correction in 24 hours, or 8 mmol/L (aiming for 4-6) in the alcoholic, malnourished or hypokalaemic patient.",
     "Overcorrection is reversible: 5% dextrose plus desmopressin will bring the sodium back down and prevent osmotic demyelination.",
     "Exclude hypothyroidism and adrenal insufficiency before diagnosing SIADH, and exclude a thiazide before anything else in an elderly woman.",
     "In hyperkalaemia, calcium gluconate buys time but lowers nothing; insulin-dextrose and salbutamol shift it; only diuresis, a binder or dialysis removes it.",
@@ -2581,7 +2581,7 @@ topics.push({
           heading: "3. Immediate management of the symptomatic patient",
           points: [
             "She has had a seizure, so treat immediately regardless of chronicity, because cerebral oedema kills within hours. [ESE 2014]",
-            "Give 3% hypertonic saline 100-150 mL IV over 10-20 minutes, up to three times - until symptoms improve or sodium rises 4-6 mmol/L. [ESE 2014]",
+            "Give 3% hypertonic saline 150 mL IV over 20 minutes (or 100 mL over 10), repeated up to twice more - until symptoms improve or sodium rises 5 mmol/L. [ESE 2014]",
             "Check sodium after each bolus then 2-hourly, secure the airway, stop the seizure with a benzodiazepine - and use a high-care bed. [ESE 2014]",
             "Stop the hydrochlorothiazide permanently and do not rechallenge, since recurrence on rechallenge is both likely and severe. [ESE 2014]",
             "Correct coexisting hypokalaemia carefully, because potassium replacement itself raises the serum sodium and can overshoot. [ESE 2014]",
@@ -2591,8 +2591,8 @@ topics.push({
         {
           heading: "4. Rate of correction and osmotic demyelination",
           points: [
-            "The ceiling is a rise of no more than 8-10 mmol/L in the first 24 hours - and no more than 18 mmol/L in 48 hours. [ESE 2014]",
-            "In high risk - sodium below 105, alcoholism, malnutrition, liver disease, hypokalaemia, advanced age - limit the rise to 4-6 mmol/L in 24 hours. [ESE 2014]",
+            "The ceiling is a rise of no more than 10 mmol/L in the first 24 hours and 8 mmol/L in each later 24 hours - 18 mmol/L in 48 hours. [ESE 2014]",
+            "In high risk - sodium 105 or less, alcoholism, malnutrition, liver disease, hypokalaemia, advanced age - limit the rise to 8 mmol/L in 24 hours and aim for 4-6. [Verbalis 2013]",
             "This woman is elderly and at 112 mmol/L, so the conservative ceiling is the one to write down. [ESE 2014]",
             "Osmotic demyelination appears 2-6 days after overcorrection - dysarthria, dysphagia, quadriparesis, pseudobulbar palsy or locked-in state. [ESE 2014]",
             "MRI changes appear late and the deficit is largely irreversible, so prevention is the only effective management. [Harrison 21e]",
@@ -2615,7 +2615,7 @@ topics.push({
       ],
       mustDraw: [
         "The three-step algorithm: serum osmolality, then volume status, then urine sodium and urine osmolality, ending in the named causes.",
-        "A time-line box showing the correction ceilings of 8-10 mmol/L in 24 hours and 4-6 mmol/L in high-risk patients.",
+        "A time-line box showing the correction ceilings of 10 mmol/L in 24 hours (8 in high-risk patients, aiming for 4-6).",
       ],
       markSplit: [
         { part: "Classification by severity, duration, tonicity and volume", marks: 2 },
@@ -2663,12 +2663,12 @@ topics.push({
         {
           heading: "Emergency management in order",
           points: [
-            "Stabilise the myocardium with **calcium gluconate 10 mL of 10% IV over 2-3 minutes**, repeated once if the ECG is unchanged - it raises threshold potential. [ERC 2021]",
+            "If the ECG has changed, stabilise the myocardium with **calcium gluconate 10% 30 mL IV over 10 minutes or calcium chloride 10% 10 mL over 5 minutes**, repeated if the ECG is unchanged - it raises threshold potential. [ERC 2025]",
             "Calcium works within 1-3 minutes for 30-60 minutes and does not lower the potassium, so a shifting agent must follow. [ERC 2021]",
             "Shift potassium into cells: **10 units regular insulin with 25 g dextrose IV**, lowering potassium 0.6-1.2 mmol/L in 15-30 minutes - it drives Na-K ATPase. [ERC 2021]",
-            "Monitor glucose hourly for 6 hours, add **nebulised salbutamol 10-20 mg** for a further 0.5-1.0 mmol/L, bicarbonate only if acidotic - late lows are common. [ERC 2021]",
+            "Monitor glucose hourly for 6 hours and add **nebulised salbutamol 10-20 mg** for a further 0.5-1.0 mmol/L - late lows are common; **no routine IV bicarbonate outside cardiac arrest**. [ERC 2025]",
             "Remove potassium with furosemide 40-80 mg IV if urine output is preserved, since shifting agents only buy hours. [ERC 2021]",
-            "Add a binder - sodium zirconium cyclosilicate 10 g TDS for 48 hours, or patiromer 8.4 g daily - and haemodialysis, which is definitive. [ERC 2021]",
+            "Add a binder - sodium zirconium cyclosilicate 10 g TDS for up to 72 hours, or patiromer 8.4 g daily - and haemodialysis, which is definitive. [UK Kidney Association 2023]",
             "**Remove the cause**: stop or reduce the ACE inhibitor, ARB, MRA, trimethoprim or NSAID, and treat the acidosis - each blocks aldosterone or traps K outside. [KDIGO 2024]",
             "Give the dietary list by name and ask what salt the household uses, because low-sodium salt is potassium chloride. [ICMR 2023]",
             "Recheck potassium within 3-7 days of any change, since rebound is common once the shifting agents wear off. [KDIGO 2024]",
@@ -2711,7 +2711,7 @@ topics.push({
       ],
       answer: 1,
       explanation:
-        "He has risen 14 mmol/L in 12 hours, far above the 8-10 mmol/L per 24 hours ceiling and enormously above the 4-6 mmol/L limit that applies to a high-risk patient who is alcoholic, malnourished and started below 105 mmol/L; the recognised rescue is to stop the correcting fluid, give 5% dextrose and desmopressin to bring the sodium back down into range, which prevents osmotic demyelination. Continuing the same fluid guarantees further overcorrection and a locked-in syndrome 2-6 days later. More hypertonic saline compounds the error and is exactly what causes demyelination. Tolvaptan raises sodium further and is contraindicated here, quite apart from being inappropriate in liver disease.",
+        "He has risen 14 mmol/L in 12 hours, already above the 10 mmol/L per 24 hours ceiling and far above the 8 mmol/L limit (aim 4-6) that applies to a high-risk patient who is alcoholic, malnourished and started below 105 mmol/L; the recognised rescue is to stop the correcting fluid, give 5% dextrose and desmopressin to bring the sodium back down into range, which prevents osmotic demyelination. Continuing the same fluid guarantees further overcorrection and a locked-in syndrome 2-6 days later. More hypertonic saline compounds the error and is exactly what causes demyelination. Tolvaptan raises sodium further and is contraindicated here, quite apart from being inappropriate in liver disease.",
       difficulty: "hard",
     },
     {
@@ -2916,7 +2916,7 @@ topics.push({
         "**Clarithromycin, azoles, diltiazem, verapamil and grapefruit inhibit CYP3A4, so they raise tacrolimus and cause nephrotoxicity.** [Aronoff 6e]",
         "Never add or stop a drug in a transplant patient without checking the interaction - and informing the transplant unit. [Aronoff 6e]",
         "**In the elderly the serum creatinine is a poor guide, because low muscle mass means low creatinine generation.** [Aronoff 6e]",
-        "A creatinine of 1.0 mg/dL in an 80-year-old 45 kg woman is a clearance of about 25 mL/min, so calculate rather than eyeball. [Aronoff 6e]",
+        "A creatinine of 1.0 mg/dL in an 80-year-old 45 kg woman is a clearance of about 30 mL/min, so calculate rather than eyeball. [Aronoff 6e]",
         "Use the lower end of every dose range in the elderly, since they also have a smaller volume of distribution for water-soluble drugs. [Aronoff 6e]",
         "**In pregnancy the GFR rises by 40-50% so creatinine falls - a creatinine of 1.0 mg/dL in pregnancy is abnormal.** [Aronoff 6e]",
         "Renally cleared drugs may need higher, not lower, doses in pregnancy - and drug choice is then governed by fetal safety. [Aronoff 6e]",
@@ -3021,7 +3021,7 @@ topics.push({
             "Between 30 and 44 the maximum is 1000 mg a day and it is not initiated there - below 30 it is contraindicated outright. [NICE CKS 2023]",
             "Glimepiride: sulfonylureas and their active metabolites accumulate, so hypoglycaemia is prolonged and often nocturnal. [Aronoff 6e]",
             "Reduce the glimepiride, or switch to linagliptin 5 mg daily - which needs no renal adjustment, or a titrated basal insulin. [Aronoff 6e]",
-            "Telmisartan: continue it, since it protects the kidney - check potassium and creatinine at 1-2 weeks and accept a rise up to 30%. [KDIGO 2024]",
+            "Telmisartan: continue it, since it protects the kidney - check potassium and creatinine at 2-4 weeks and accept a rise up to 30%. [KDIGO 2024]",
             "Hydrochlorothiazide: thiazides lose efficacy below a clearance of about 30 mL/min, because they act from the tubular lumen. [Aronoff 6e]",
             "Switch to furosemide 20-40 mg daily if a diuretic is needed - and monitor sodium closely, given her age and sex. [Aronoff 6e]",
             "Consider adding dapagliflozin 10 mg daily, indicated down to an eGFR of 20 for kidney protection - and a statin for vascular risk. [KDIGO 2024]",
@@ -3098,7 +3098,7 @@ topics.push({
           points: [
             "Hyperkalaemia from ACE inhibitors, ARBs, spironolactone, eplerenone, amiloride, trimethoprim, heparin - and beta blockers. [KDIGO 2024]",
             "Continue those where indicated but monitor, since stopping them forfeits proven kidney and heart protection. [KDIGO 2024]",
-            "Nitrofurantoin below an eGFR of 30-45, as it fails to reach a therapeutic urinary concentration and accumulates systemically. [NICE CKS 2023]",
+            "Nitrofurantoin below an eGFR of 45, as it fails to reach a therapeutic urinary concentration and accumulates systemically. [NICE CKS 2023]",
             "Thiazides below a clearance of about 30 mL/min lose diuretic efficacy, so a loop diuretic is required instead. [Aronoff 6e]",
             "Oral sodium phosphate bowel preparations - which cause acute phosphate nephropathy with irreversible calcium deposition. [KDIGO 2024]",
             "Magnesium- and aluminium-containing antacids - and potassium supplements continued after the diuretic was stopped. [Aronoff 6e]",
@@ -3120,13 +3120,13 @@ topics.push({
       stem: "An 80-year-old woman weighing 45 kg has a serum creatinine of 1.0 mg/dL, which the laboratory reports as an eGFR of 56 mL/min/1.73 m2. Which statement about dosing her drugs is correct?",
       options: [
         "Her kidney function is near normal and no dose adjustment is needed for any drug",
-        "Her Cockcroft-Gault creatinine clearance is about 25 mL/min, and renally cleared drugs must be dosed on that figure",
+        "Her Cockcroft-Gault creatinine clearance is about 30 mL/min, and renally cleared drugs must be dosed on that figure",
         "The reported eGFR is the correct number for drug dosing because it is more accurate than Cockcroft-Gault",
         "Her low body weight means the eGFR underestimates her true clearance",
       ],
       answer: 1,
       explanation:
-        "Cockcroft-Gault gives [(140 - 80) x 45] / (72 x 1.0) x 0.85, which is about 32 mL/min before rounding for her small frame and, using ideal body weight considerations in a very small elderly woman, in the region of 25-32 mL/min - far below the reported eGFR of 56, because the reported figure is normalised to a body surface area she does not have. Treating her as near normal is the classic error that leads to accumulation of gabapentin, morphine, digoxin and metformin in exactly this patient group. The reported eGFR is designed for CKD staging, not dosing, since the drug labels were written against Cockcroft-Gault clearance in mL/min. Her low body weight makes the indexed eGFR an overestimate rather than an underestimate of her actual clearance.",
+        "Cockcroft-Gault gives [(140 - 80) x 45] / (72 x 1.0) x 0.85 = 2700 / 72 x 0.85, which is about 32 mL/min - roughly 30, far below the reported eGFR of 56, because the reported figure is normalised to a body surface area she does not have. Treating her as near normal is the classic error that leads to accumulation of gabapentin, morphine, digoxin and metformin in exactly this patient group. The reported eGFR is designed for CKD staging, not dosing, since the drug labels were written against Cockcroft-Gault clearance in mL/min. Her low body weight makes the indexed eGFR an overestimate rather than an underestimate of her actual clearance.",
       difficulty: "moderate",
     },
     {
@@ -3163,7 +3163,7 @@ topics.push({
       options: ["Fosfomycin trometamol 3 g single dose", "Cefuroxime axetil with dose adjustment", "Nitrofurantoin 100 mg twice daily", "Co-amoxiclav with dose adjustment"],
       answer: 2,
       explanation:
-        "Nitrofurantoin acts only when concentrated in the urine, and at an eGFR of 22 mL/min/1.73 m2 it fails to reach a therapeutic urinary concentration while accumulating systemically, raising the risk of peripheral neuropathy and pulmonary toxicity - it is contraindicated below about 30 mL/min/1.73 m2. Fosfomycin as a single dose remains usable in reduced renal function for uncomplicated cystitis. Cefuroxime axetil is appropriate provided the dose or interval is adjusted for the clearance. Co-amoxiclav is likewise acceptable with adjustment, though it needs dose reduction at this level of function.",
+        "Nitrofurantoin acts only when concentrated in the urine, and at an eGFR of 22 mL/min/1.73 m2 it fails to reach a therapeutic urinary concentration while accumulating systemically, raising the risk of peripheral neuropathy and pulmonary toxicity - it is avoided below an eGFR of 45 (and contraindicated below 30). Fosfomycin as a single dose remains usable in reduced renal function for uncomplicated cystitis. Cefuroxime axetil is appropriate provided the dose or interval is adjusted for the clearance. Co-amoxiclav is likewise acceptable with adjustment, though it needs dose reduction at this level of function.",
       difficulty: "easy",
     },
     {
@@ -3356,7 +3356,7 @@ topics.push({
       heading: "Specific treatment, referral and follow-up",
       points: [
         "Childhood minimal change disease - **prednisolone 60 mg/m2/day, maximum 60 mg, for 6 weeks** as the initial course. [ISPN 2021]",
-        "Then **40 mg/m2 on alternate days for 6 weeks**, then taper - the ISPN and IPNA regimens, which reduce relapse. [ISPN 2021]",
+        "Then **40 mg/m2 on alternate days for 6 weeks**, then stop (8-12 weeks in total) - the ISPN and IPNA regimens, which reduce relapse. [ISPN 2021]",
         "About **80-90% of children remit within 4 weeks** of daily steroids, which is why steroid response defines the diagnosis. [ISPN 2021]",
         "Relapse: **prednisolone 60 mg/m2/day until remission**, then alternate-day therapy - rather than restarting the full course. [ISPN 2021]",
         "**Steroid-dependent or frequently relapsing disease** - levamisole, cyclophosphamide, mycophenolate, a calcineurin inhibitor or rituximab. [ISPN 2021]",
@@ -3446,7 +3446,7 @@ topics.push({
       question:
         "A 6-year-old boy is brought with 5 days of puffiness of the face on waking and swelling of the feet. Urine dipstick shows 4+ protein, blood pressure is normal and there is no haematuria. Define nephrotic syndrome, discuss its evaluation and management in a child, and list the complications.",
       openingLines: [
-        "Nephrotic syndrome is defined by the tetrad of proteinuria above 3.5 g per 1.73 m2 per day (in children, a urine protein-creatinine ratio above 2000-3000 mg/g or 3+ to 4+ protein on dipstick for 3 consecutive days), serum albumin below 3.0 g/dL, oedema, and hyperlipidaemia with lipiduria.",
+        "Nephrotic syndrome is defined by the tetrad of proteinuria above 3.5 g per 1.73 m2 per day (in children, over 40 mg/m2/h, a urine protein-creatinine ratio of 2 mg/mg (2000 mg/g) or more, or 3+ to 4+ protein on dipstick for 3 consecutive days), serum albumin below 3.0 g/dL, oedema, and hyperlipidaemia with lipiduria.",
         "In a child of 6 years with normal blood pressure, no haematuria and normal renal function, the overwhelmingly likely diagnosis is minimal change disease, which is treated with corticosteroids without a renal biopsy.",
       ],
       answer: [
@@ -3480,19 +3480,19 @@ topics.push({
             "**Biopsy is not indicated in this typical child**, because minimal change disease is the diagnosis until proven otherwise. [ISPN 2021]",
             "Biopsy if aged **under 1 year or over 12 years**, since minimal change disease is unlikely outside that range. [ISPN 2021]",
             "Biopsy if there is haematuria, hypertension, a **low C3** or impaired renal function - each is atypical. [ISPN 2021]",
-            "Biopsy if **steroid resistant** - that is, failure to remit after 4-6 weeks of daily steroids. [ISPN 2021]",
+            "Biopsy if **steroid resistant** - that is, failure to remit after 4 weeks of daily prednisolone. [KDIGO 2025]",
           ],
         },
         {
           heading: "3. Specific treatment",
           points: [
             "Initial regimen: **prednisolone 60 mg/m2/day, maximum 60 mg**, as a single daily dose for 6 weeks. [ISPN 2021]",
-            "Then **40 mg/m2 on alternate days for 6 weeks**, then taper, because alternate-day dosing spares growth. [ISPN 2021]",
+            "Then **40 mg/m2 (max 40 mg) on alternate days for 6 weeks**, then stop - a total of 8-12 weeks (KDIGO 2025); alternate-day dosing spares growth. [ISPN 2021]",
             "About **80-90% of children remit within 4 weeks**, so a non-responder at 4 weeks is already atypical. [ISPN 2021]",
-            "Steroid resistance is failure to remit after **4-6 weeks of daily steroids** - and it requires biopsy and referral. [ISPN 2021]",
+            "Steroid resistance is failure to remit after **4 weeks of daily prednisolone** - and it requires biopsy, genetic testing and referral. [KDIGO 2025]",
             "Relapse: prednisolone **60 mg/m2/day until remission for 3 consecutive days** - rather than a fixed course. [ISPN 2021]",
             "After relapse remission - **40 mg/m2 on alternate days for 4 weeks**, a shorter tail than the initial course. [ISPN 2021]",
-            "Frequently relapsing or steroid-dependent disease - levamisole, cyclophosphamide, mycophenolate, a calcineurin inhibitor or rituximab. [ISPN 2021]",
+            "Frequently relapsing (2 or more relapses in 6 months after remission or 3 or more in 12 months - KDIGO 2025) or steroid-dependent disease - levamisole, cyclophosphamide, mycophenolate, a calcineurin inhibitor or rituximab. [KDIGO 2025]",
             "Give steroid-sparing agents under a nephrologist, since each carries its own toxicity and monitoring schedule. [ISPN 2021]",
           ],
         },
@@ -3534,7 +3534,7 @@ topics.push({
       ],
       mustDraw: [
         "A table contrasting nephrotic and nephritic syndrome across proteinuria, haematuria, blood pressure, urine output and renal function.",
-        "The steroid regimen written as a timeline: 60 mg/m2/day for 6 weeks, then 40 mg/m2 alternate days for 6 weeks, then taper.",
+        "The steroid regimen written as a timeline: 60 mg/m2/day for 6 weeks, then 40 mg/m2 alternate days for 6 weeks, then stop.",
       ],
       markSplit: [
         { part: "Definition and confirmation with PCR", marks: 2 },
@@ -3819,10 +3819,10 @@ const cases: ClinicalCase[] = [
       {
         heading: "Slow progression - the four pillars",
         points: [
-          "Start an ARB (telmisartan 40 mg daily, titrated to 80 mg) or ACE inhibitor (ramipril 5 mg, titrated to 10 mg); recheck creatinine and potassium within one to two weeks and accept a creatinine rise of up to 30 percent.",
+          "Start an ARB (telmisartan 40 mg daily, titrated to 80 mg) or ACE inhibitor (ramipril 5 mg, titrated to 10 mg); recheck creatinine and potassium in two to four weeks and accept a creatinine rise of up to 30 percent.",
           "Add an SGLT2 inhibitor (dapagliflozin 10 mg or empagliflozin 10 mg daily), which is licensed down to an eGFR of 20 mL/min/1.73 m2 and slows decline independent of glucose lowering.",
           "Target blood pressure below 130/80 mmHg (KDIGO 2021 suggests systolic below 120 mmHg where tolerated); add chlorthalidone 12.5 mg or a loop diuretic for the oedema, keeping amlodipine.",
-          "Consider finerenone 10 mg daily once potassium is below 4.8 mmol/L and eGFR is above 25 mL/min/1.73 m2, and add a statin (atorvastatin 20 mg) for cardiovascular protection regardless of LDL.",
+          "Consider finerenone 10 mg daily once on maximum tolerated RAS blockade with potassium 4.8 mmol/L or less and eGFR 25 mL/min/1.73 m2 or more, and add a statin (atorvastatin 20 mg) for cardiovascular protection regardless of LDL.",
         ],
       },
       {
@@ -3837,7 +3837,7 @@ const cases: ClinicalCase[] = [
       {
         heading: "Complications, follow-up and referral",
         points: [
-          "Treat anaemia with iron first (oral or IV) and refer for erythropoietin when haemoglobin is below 10 g/dL after iron repletion; give oral bicarbonate if serum bicarbonate is below 22 mmol/L.",
+          "Treat anaemia with iron first (oral, then IV if no response in 1-3 months) when ferritin is under 100 ng/mL with TSAT under 40% or ferritin 100-299 with TSAT under 25%; refer for an ESA by shared decision, keeping haemoglobin below 11.5 g/dL (KDIGO 2026); give oral bicarbonate if serum bicarbonate is below 18 mmol/L.",
           "Vaccinate against hepatitis B (double dose schedule), influenza yearly and pneumococcus; check for hepatitis B and C serology early since dialysis planning may follow.",
           "Review three-monthly with creatinine, potassium, ACR, blood pressure, weight and drug list; plot the eGFR to detect a fall of more than 5 mL/min/1.73 m2 per year.",
           "Refer to nephrology now because eGFR is below 30 and ACR above 300 mg/g; other triggers are an eGFR fall of more than 25 percent or more than 5 per year, persistent haematuria, refractory hypertension on four drugs, potassium above 5.5 mmol/L or an unclear cause.",
@@ -4007,7 +4007,7 @@ const cases: ClinicalCase[] = [
       {
         heading: "5-alpha-reductase inhibitor for larger glands",
         points: [
-          "Finasteride 5 mg daily or dutasteride 0.5 mg daily when the prostate is above 30 to 40 mL or PSA is above 1.5 ng/mL; they shrink the gland by 20 to 25 percent over six months and reduce the risk of retention and surgery by about half.",
+          "Finasteride 5 mg daily or dutasteride 0.5 mg daily when the prostate is above 30 to 40 mL or PSA is above 1.5 ng/mL; they shrink the gland by 20 to 30 percent over six to twelve months and reduce the risk of retention and surgery by about half.",
           "Combination therapy with an alpha-blocker is superior to either alone for men with large glands (MTOPS and CombAT trials); the alpha-blocker may be withdrawn after six to nine months in some patients.",
           "Counsel about reduced libido, erectile dysfunction, gynaecomastia and the halving of PSA; women who are or may become pregnant must not handle crushed tablets.",
           "Add an antimuscarinic (solifenacin 5 mg) or mirabegron 25 to 50 mg for persistent storage symptoms once the residual volume is confirmed to be low; tadalafil 5 mg daily is an option when erectile dysfunction coexists.",
@@ -4037,7 +4037,7 @@ const cases: ClinicalCase[] = [
       },
       {
         q: "How do alpha-blockers and 5-alpha-reductase inhibitors differ?",
-        a: "Alpha-blockers relax smooth muscle at the bladder neck and prostate, work within days, and improve symptoms and flow but not gland size or long-term progression. 5-alpha-reductase inhibitors block conversion of testosterone to dihydrotestosterone, shrink the gland over six months, halve the PSA, and reduce the risk of retention and surgery; they are useful only in glands above 30 to 40 mL.",
+        a: "Alpha-blockers relax smooth muscle at the bladder neck and prostate, work within days, and improve symptoms and flow but not gland size or long-term progression. 5-alpha-reductase inhibitors block conversion of testosterone to dihydrotestosterone, shrink the gland over six to twelve months, halve the PSA, and reduce the risk of retention and surgery; they are useful only in glands above 30 to 40 mL.",
       },
       {
         q: "A man with BPH presents at your clinic unable to pass urine for 12 hours with a painful suprapubic mass. What do you do?",
