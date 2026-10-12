@@ -138,7 +138,7 @@ const rewrites: Record<string, TopicRewrite> = {
       {
         heading: "Acute presentation and emergency management",
         points: [
-          "**Thunderclap headache** - refer immediately for **CT within 6 hours**, then lumbar puncture at 12 hours if negative; give analgesia and antiemetic, but no aspirin or anticoagulant. [NICE NG228 2022]",
+          "**Thunderclap headache** - refer immediately for **non-contrast CT** - a normal CT **within 6 hours** of onset excludes SAH (no routine LP), while a normal CT **after 6 hours** needs **lumbar puncture at 12 hours or later** for xanthochromia; give analgesia and antiemetic, but no aspirin or anticoagulant. [NICE NG228 2022]",
           "**Suspected bacterial meningitis** in the OPD - give **ceftriaxone 2 g IV or IM (children 80-100 mg/kg)** before transfer; never delay the first dose for imaging or lumbar puncture. [NICE NG240 2024]",
           "**Suspected giant cell arteritis** - start **prednisolone 40-60 mg (up to 1 mg/kg) the same day**, or **IV methylprednisolone 500-1000 mg for 3 days** if visual loss has begun, and refer urgently. [BSR GCA 2020]",
           "**Severe migraine attack (status migrainosus over 72 hours) in the clinic** - IV fluids, **metoclopramide 10 mg IV**, **ketorolac 30 mg IV or diclofenac 75 mg IM**, and **dexamethasone 10 mg IV** to reduce recurrence over the next 72 hours; avoid opioids. [AHS 2021]",
@@ -218,7 +218,7 @@ const rewrites: Record<string, TopicRewrite> = {
       },
     ],
     redFlags: [
-      "**Thunderclap headache** peaking within one minute - subarachnoid haemorrhage until CT within 6 hours (or LP at 12 hours) excludes it.",
+      "**Thunderclap headache** peaking within one minute - subarachnoid haemorrhage until a normal CT within 6 hours (or, if later, CT plus LP at 12 hours or more) excludes it.",
       "**Fever, neck stiffness or purpuric rash** - bacterial meningitis; give ceftriaxone before transfer, imaging or lumbar puncture.",
       "**New headache after 50 with scalp tenderness, jaw claudication or visual symptoms** - giant cell arteritis; prednisolone the same day.",
       "**Papilloedema**, or headache worse lying flat, on waking or with cough and straining - raised intracranial pressure; image before any lumbar puncture.",
@@ -1291,7 +1291,7 @@ const rewrites: Record<string, TopicRewrite> = {
       {
         heading: "Follow-up, monitoring and when to refer",
         points: [
-          "Review every **3-6 months** (sooner after changes), scoring **motor function, Hoehn and Yahr stage, fluctuations and dyskinesia**, and using a patient **on-off diary**. [NICE NG71 2017]",
+          "Review every **6-12 months** (sooner after changes or in advanced disease), scoring **motor function, Hoehn and Yahr stage, fluctuations and dyskinesia**, and using a patient **on-off diary**. [NICE NG71 2017]",
           "At every visit ask about **impulse control disorders, hallucinations, daytime sleepiness, mood, cognition, falls, swallowing, weight, constipation and urinary symptoms**. [NICE NG71 2017]",
           "Check **postural BP**, weight and **bone health**, and for amantadine or pramipexole review **renal function**. [NICE NG71 2017]",
           "**Refer untreated suspected PD to a neurologist before starting treatment** where possible, to confirm the diagnosis. [NICE NG71 2017]",
@@ -2062,7 +2062,7 @@ const rewrites: Record<string, TopicRewrite> = {
           "**Reassure and explain**: most back pain is not serious, improves within **6 weeks**, and **hurt does not mean harm**; give written advice. [NICE NG59 2020]",
           "**Stay active** and continue normal activities and work as far as possible; **avoid bed rest** - it deconditions muscle and prolongs disability; use a graded return-to-activity plan. [NICE NG59 2020]",
           "Offer a **group exercise programme** (stretching, strengthening, aerobic, yoga or pilates) for persistent pain; add **manual therapy** only alongside exercise. [NICE NG59 2020]",
-          "NICE has **withdrawn its recommendations on psychological therapy (CBT approach) and combined physical and psychological programmes** for low back pain (July 2026, partly retracted evidence) - address yellow flags within exercise-based care and treat depression in its own right. [NICE NG59 2026]",
+          "NICE has **withdrawn its recommendations on psychological therapy (CBT approach) and combined physical and psychological programmes** for low back pain (29 July 2026, after surveillance review) - address yellow flags within exercise-based care and treat depression in its own right. [NICE NG59 2026]",
           "**Do not offer** belts or corsets, foot orthotics, traction, TENS, ultrasound, interferential therapy or acupuncture for low back pain (no benefit). [NICE NG59 2020]",
           "**Ergonomics**: lift with bent knees close to the body, avoid prolonged floor-level squatting and bending, take breaks in long drives, and a firm but comfortable mattress. [API 11e]",
           "**Weight loss and smoking cessation** help chronic back pain and disc health; address depression and sleep. [NICE NG59 2020]",
