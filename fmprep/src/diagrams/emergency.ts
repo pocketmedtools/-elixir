@@ -780,7 +780,7 @@ const diagrams: DiagramSet = {
         {
           label: "Above 150 mg/kg, or 7.5 g in an adult",
           detail:
-            "The threshold falls to 75-100 mg/kg in the malnourished, the alcoholic, in anorexia and on phenytoin, carbamazepine, rifampicin or isoniazid",
+            "UK practice assesses from 75 mg/kg with a single 100 mg/L line for all; since MHRA 2012 malnutrition, alcohol or enzyme inducers no longer change the line",
         },
         {
           label: "Charcoal 50 g if within 1 hour",
@@ -986,7 +986,7 @@ const diagrams: DiagramSet = {
         {
           label: "D - disability",
           detail:
-            "GCS, pupils, glucose. For herniation give mannitol 20% 0.25-1 g/kg over 15-20 min, or 3% saline 3-5 mL/kg, and transfer",
+            "GCS, pupils, glucose. For herniation give mannitol 20% 0.25-1 g/kg over 15-20 min, or 3% saline 2-5 mL/kg, and transfer",
         },
         {
           label: "E - exposure and environment",
@@ -1206,7 +1206,7 @@ const diagrams: DiagramSet = {
         [
           "Pinpoint pupils, sweating, fasciculations",
           "Organophosphate or carbamate poisoning",
-          "Atropine 2-5 mg IV (child 0.05 mg/kg), doubled every 5 min until the chest is clear and the skin dry, then pralidoxime",
+          "Atropine 1.8-3 mg IV (child 0.02-0.05 mg/kg), doubled every 5 min until the chest is clear and the skin dry, then pralidoxime",
         ],
         [
           "Seizure continuing for 5 minutes",
@@ -1311,7 +1311,7 @@ const diagrams: DiagramSet = {
       caption: "Applying the bradycardia ceiling to a poisoned farmer is fatal undertreatment.",
       columns: ["Item", "Symptomatic bradycardia", "Organophosphate poisoning"],
       rows: [
-        ["Adult dose", "0.5-0.6 mg IV bolus", "2-5 mg IV"],
+        ["Adult dose", "0.5-1 mg IV bolus (AHA 2025: 1 mg)", "1.8-3 mg IV"],
         ["Repeat", "Every 3-5 minutes", "Dose doubled every 5 minutes, then an infusion"],
         ["Ceiling", "Maximum total 3 mg", "There is no maximum dose"],
         [
@@ -1322,7 +1322,7 @@ const diagrams: DiagramSet = {
         [
           "Child",
           "0.02 mg/kg IV, minimum 0.1 mg, maximum single dose 0.5 mg",
-          "0.05 mg/kg IV, doubled on the same principle",
+          "0.02-0.05 mg/kg IV (min 0.1 mg), doubled on the same principle",
         ],
         ["What to stock", "A few ampoules", "At least 25 ampoules where pesticide poisoning is common"],
       ],
