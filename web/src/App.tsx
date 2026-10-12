@@ -129,7 +129,7 @@ export default function App() {
     {
       id: "ancScan",
       label: "ANC Scan",
-      shortLabel: "Scan",
+      shortLabel: "ANC Scan",
       active: "bg-violet-900 text-white shadow-sm",
       idle: "bg-slate-100 text-slate-800 hover:bg-slate-200",
     },
