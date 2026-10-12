@@ -1673,6 +1673,14 @@ section("Pediatric DB integrity");
   const sc = (ga: number) => A.scheduleStatus(ga);
   if (sc(12).current[0]?.id !== "nt" || sc(19).current[0]?.id !== "anomaly" || sc(30).current[0]?.id !== "growth1") fail("scan schedule windows");
   if (sc(15).next?.id !== "anomaly" || !sc(15).missedNote) fail("scan schedule next/missed");
+  // Size-age entry (weeks+days on the report): same age → 50th centile; lag labels.
+  for (const p of ["bpd", "hc", "ac", "fl"] as const) {
+    const mm = A.mmFromGaEquivalent(p, 32)!;
+    if (Math.abs(A.biometryCentile(p, 32, mm)!.centile - 50) > 0.5) fail(`${p}: size-age equal to GA must be ~50th`);
+    if (A.biometryCentile(p, 34, A.mmFromGaEquivalent(p, 31)!)!.centile >= 10) fail(`${p}: 3-week lag at 34 wk should be < 10th`);
+  }
+  if (A.mmFromGaEquivalent("ac", 12) !== null) fail("size-age below 14 wk must be refused");
+  if (A.lagLabel(31 + 2 / 7, 34) !== "2 wk 5 d behind gestation" || A.lagLabel(35, 34) !== "1 wk ahead of gestation" || A.lagLabel(34, 34) !== "matches gestation") fail("lag labels");
   console.log("ANC scan: EFW & UA Doppler match INTERGROWTH tables; Hadlock, MCA-PSV, liquor, Delphi SGA/FGR/LGA, plans, schedule OK");
 }
 

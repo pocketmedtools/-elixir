@@ -77,6 +77,26 @@ export function biometryCentile(param: BiometryParam, ga: number, mm: number): C
   return { z: round(z, 2), centile: round(zToPercentile(z), 1), median: round(mu, 1) };
 }
 
+/**
+ * Size written on a report as a gestational age ("AC = 31w 2d"): convert to
+ * the measurement that is the INTERGROWTH-21st median at that age. Reports
+ * usually date sizes with Hadlock, so this is close but approximate — the mm
+ * value gives the exact centile.
+ */
+export function mmFromGaEquivalent(param: BiometryParam, gaEq: number): number | null {
+  if (gaEq < BIOMETRY_RANGE.min || gaEq > BIOMETRY_RANGE.max + 6 / 7) return null;
+  return igBiometryMuSigma(param, Math.min(gaEq, BIOMETRY_RANGE.max)).mu;
+}
+
+/** "2 wk 3 d behind" / "1 wk 1 d ahead" / "matches" for size-age vs true GA. */
+export function lagLabel(gaEq: number, ga: number): string {
+  const diff = Math.round((gaEq - ga) * 7);
+  if (diff === 0) return "matches gestation";
+  const n = Math.abs(diff);
+  const txt = `${Math.floor(n / 7) ? `${Math.floor(n / 7)} wk ` : ""}${n % 7 ? `${n % 7} d` : ""}`.trim();
+  return `${txt} ${diff < 0 ? "behind" : "ahead of"} gestation`;
+}
+
 // ---------- Hadlock EFW ----------
 export interface EfwResult {
   grams: number;
