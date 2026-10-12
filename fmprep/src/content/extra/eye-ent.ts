@@ -497,7 +497,7 @@ const topics: Topic[] = [
       {
         heading: "Management of corneal ulcer",
         points: [
-          "**Fungal keratitis:** natamycin 5 per cent suspension one drop hourly day and night for the first 48-72 hours, then two-hourly, continued for 3-4 weeks after healing. [Kanski 10e]",
+          "**Fungal keratitis:** natamycin 5 per cent suspension one drop hourly day and night for the first 48-72 hours, then two-hourly, tapered over 3-4 weeks and continued 1-2 weeks after healing. [Kanski 10e]",
           "**MUTT I showed natamycin better than voriconazole** for filamentous fungal ulcers, especially Fusarium, with less perforation. [Kanski 10e]",
           "Add **voriconazole 1 per cent drops hourly** for Aspergillus or deep ulcers not responding; **MUTT II found no benefit from adding oral voriconazole**. [Kanski 10e]",
           "**Bacterial keratitis:** fortified cefazolin 5 per cent (50 mg/mL) plus fortified tobramycin 1.3 per cent (14 mg/mL) hourly around the clock for 48 hours, then taper by response. [AAO PPP Keratitis 2023]",
@@ -744,7 +744,7 @@ const topics: Topic[] = [
           {
             heading: "Management",
             points: [
-              "Fungal: natamycin 5 per cent hourly 48-72 hours then two-hourly, continued 3-4 weeks after healing; add voriconazole 1 per cent if deep or Aspergillus.",
+              "Fungal: natamycin 5 per cent hourly 48-72 hours then two-hourly, tapered over 3-4 weeks, continued 1-2 weeks after healing; add voriconazole 1 per cent if deep or Aspergillus.",
               "Bacterial: fortified cefazolin 50 mg/mL plus tobramycin 14 mg/mL hourly, or moxifloxacin 0.5 per cent for small peripheral ulcers.",
               "Supportive: atropine 1 per cent twice daily, oral analgesics, acetazolamide if pressure raised, no patching.",
               "Surgical: glue and bandage lens for perforation, therapeutic keratoplasty; refer same day.",
