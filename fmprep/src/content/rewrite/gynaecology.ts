@@ -124,7 +124,7 @@ const rewrites: Record<string, TopicRewrite> = {
           "**Exclude pregnancy complications** on the same visit - a ruptured ectopic or incomplete miscarriage can present as acute heavy bleeding. [Shaw 18e]",
           "**High-dose progestogen**: **medroxyprogesterone acetate 20 mg orally three times a day for 7 days** (or norethisterone 5-10 mg three times a day until bleeding stops, then twice daily to complete 10-21 days) stabilises the endometrium. [ACOG 2020]",
           "**High-dose COC**: a monophasic **30-35 microgram EE pill three times a day for 7 days** (then daily) re-epithelialises the denuded surface; add an antiemetic, and check VTE contraindications. [ACOG 2020]",
-          "**IV conjugated equine oestrogen 25 mg every 4-6 hours for up to 24 hours** where available, or **tranexamic acid 10 mg/kg IV (max 1 g) 8-hourly or 1.3 g orally three times a day for 5 days** as adjuncts. [ACOG 2020]",
+          "**IV conjugated equine oestrogen 25 mg every 4-6 hours for up to 24 hours** where available, or **tranexamic acid 10 mg/kg IV (max 600 mg/dose) 8-hourly or 1.3 g orally three times a day for 5 days** as adjuncts. [ACOG 2020]",
           "**If medical treatment fails**: **Foley catheter balloon tamponade** (30 mL) buys time, **suction curettage** stops acute bleeding temporarily and gives tissue, and uterine artery embolisation or hysterectomy are last resorts. [ACOG 2020]",
           "**Surgical options for chronic HMB**: **hysteroscopic polypectomy or myomectomy** (types 0-2 fibroids), **endometrial ablation** (family complete, normal cavity, uterus under 10 weeks - contraception still needed), uterine artery embolisation, myomectomy and **hysterectomy** as the definitive last resort. [NICE NG88 2021]"
         ]
@@ -474,7 +474,7 @@ const rewrites: Record<string, TopicRewrite> = {
           "**Troublesome progestogen-only bleeding** (implant or DMPA): exclude infection and pregnancy, then give **mefenamic acid 500 mg twice or three times daily for 5 days** or, if eligible, a **COC for up to 3 months**. [FSRH 2023]",
           "**Copper IUCD (Cu-T 380A 10 years, Cu 375 5 years)**: effective immediately; heavier periods and cramps in the first months are treated with **mefenamic acid 500 mg three times daily with food** or **tranexamic acid 1 g three times daily** during menses. [MoHFW 2018]",
           "**LNG-IUS 52 mg**: contraception for **up to 8 years** (5 years for HMB and 5 years as endometrial protection with HRT); expect **spotting for 3-6 months** then light or absent periods; category 4 in current breast cancer. [NICE NG88 2021]",
-          "**Emergency pill - levonorgestrel 1.5 mg single dose** as soon as possible, ideally **within 72 hours** and up to 120 hours of unprotected sex; with an enzyme inducer or **BMI over 30** use the copper IUCD or give **3 mg** (double dose). [WHO SPR 2016]",
+          "**Emergency pill - levonorgestrel 1.5 mg single dose** as soon as possible, ideally **within 72 hours** and up to 120 hours of unprotected sex; with an enzyme inducer, or **BMI over 26 or weight over 70 kg**, prefer the copper IUCD (or ulipristal) or give **3 mg** (double dose). [FSRH 2017]",
           "**Ulipristal acetate 30 mg single dose within 120 hours** is more effective than levonorgestrel on days 3-5; wait **5 days before starting a hormonal method** (progestogen blocks its action) and use condoms meanwhile. [WHO SPR 2016]",
           "**Copper IUCD within 5 days** of unprotected sex (or within 5 days of the earliest expected ovulation) is the **most effective emergency method (failure under 0.1%)** and gives ongoing contraception. [WHO SPR 2016]",
           "**After emergency contraception**: start a regular method the same day (quick start with 7 days of condoms after levonorgestrel), do a **pregnancy test in 3 weeks** if the next period is late, and remember EC is not teratogenic. [WHO SPR 2016]",
@@ -693,7 +693,7 @@ const rewrites: Record<string, TopicRewrite> = {
           [
             "Levonorgestrel EC 1.5 mg",
             "Delays LH surge and ovulation",
-            "Single dose within 72 h (up to 120 h); 3 mg if BMI over 30 or enzyme inducer",
+            "Single dose within 72 h (up to 120 h); 3 mg if BMI over 26/weight over 70 kg or enzyme inducer",
             "Nausea, spotting, delayed period",
             "Repeat if vomited within 2 h; start regular method same day"
           ],
@@ -893,7 +893,7 @@ const rewrites: Record<string, TopicRewrite> = {
         "points": [
           "**Adolescents 'at risk'**: treat symptoms (COC for irregular cycles or acne, lifestyle) without a firm label, and reassess **8 years after menarche**. [PCOS Guideline 2023]",
           "**Pregnancy**: higher risk of **gestational diabetes, pre-eclampsia, preterm birth and miscarriage** - do an early OGTT (or at booking) and screen for hypertension; metformin is not routinely continued for miscarriage prevention. [PCOS Guideline 2023]",
-          "**Ovarian hyperstimulation syndrome**: PCOS is the strongest risk factor, so gonadotrophin cycles need low doses, careful monitoring and cycle cancellation if over 3 follicles of 16 mm or more develop. [PCOS Guideline 2023]"
+          "**Ovarian hyperstimulation syndrome**: PCOS is the strongest risk factor, so gonadotrophin cycles need low doses, careful monitoring and cycle cancellation if 3 or more follicles of 16 mm or more develop. [PCOS Guideline 2023]"
         ]
       },
       {
@@ -2363,7 +2363,7 @@ const rewrites: Record<string, TopicRewrite> = {
         heading: "Minimal investigations",
         points: [
           "**Over 45 with typical symptoms - no FSH**; ordering FSH here is wasteful and misleading. [NICE NG23 2024]",
-          "**FSH only** in a woman **40-45** with symptoms and cycle change, when POI is suspected under 40 (**two values above 25 IU/L, 4-6 weeks apart**), or when the menstrual marker is absent (hysterectomy, progestogen-only method). [NICE NG23 2024]",
+          "**FSH only** in a woman **40-45** with symptoms and cycle change, when POI is suspected under 40 (**FSH above 25 IU/L - a single value suffices per ESHRE 2024**; NICE still asks for two values 4-6 weeks apart; repeat or add AMH if unclear), or when the menstrual marker is absent (hysterectomy, progestogen-only method). [ESHRE POI 2024]",
           "**Exclude pregnancy** in a perimenopausal woman with amenorrhoea. [IMS 2020]",
           "**Baseline panel**: Hb, fasting glucose or HbA1c, lipids, **TSH**, serum calcium and vitamin D where deficiency is likely - for cardiovascular risk and mimics. [IMS 2020]",
           "**POI work-up**: karyotype, **FMR1 premutation**, thyroid and adrenal antibodies, and DXA. [NICE NG23 2024]",
@@ -2407,7 +2407,7 @@ const rewrites: Record<string, TopicRewrite> = {
           "**POI**: oestrogen in **higher replacement doses** (for example oestradiol 2-4 mg orally or 75-100 microgram patch) plus progestogen, or a **combined pill** if contraception is needed, continued **until at least 51**. [NICE NG23 2024]",
           "**Local vaginal oestrogen for GSM**: **estriol cream 0.5 mg or oestradiol 10 microgram vaginal tablet daily for 2 weeks, then twice weekly**; no progestogen needed, can be continued indefinitely, and may be used in many breast cancer survivors with oncology agreement. [NICE NG23 2024]",
           "**Fezolinetant** (NK3 receptor antagonist - blocks neurokinin B at the thermoregulatory centre): **45 mg once daily** reduces flushes within a week; check **LFT at baseline and monthly for 3 months** (rare liver injury); limited availability in India. [NAMS 2023]",
-          "**Elinzanetant** (dual **NK1/NK3 receptor antagonist**, US FDA approval **October 2025**) is a once-daily non-hormonal option for moderate-severe flushes; side effects are **headache, fatigue, dizziness and somnolence**, with liver enzyme monitoring; not yet marketed in India. [FDA 2025]",
+          "**Elinzanetant** (dual **NK1/NK3 receptor antagonist**, US FDA approval **October 2025**) **120 mg once daily at bedtime** is a non-hormonal option for moderate-severe flushes; side effects are **headache, fatigue, dizziness and somnolence**, with liver enzyme monitoring; not yet marketed in India. [FDA 2025]",
           "**SSRIs and SNRIs** cut flushes by 40-60%: **venlafaxine 37.5-75 mg daily** or **escitalopram 10-20 mg daily** (both safe with tamoxifen); **paroxetine 7.5-10 mg** works but **must be avoided with tamoxifen** (CYP2D6 inhibition blocks endoxifen). [NAMS 2023]",
           "**Gabapentin 300 mg at night, up to 900 mg**, helps night sweats and sleep; side effects are dizziness and drowsiness; **clonidine 50-75 microgram twice daily** is modest, with dry mouth and rebound hypertension. [NAMS 2023]",
           "**Calcium 500 mg once or twice daily with meals** (to reach 1000-1200 mg total with diet) and **vitamin D3 800-1000 IU daily** (or 60,000 IU weekly for 8 weeks if deficient) for every postmenopausal woman at bone risk. [IMS 2020]",

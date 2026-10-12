@@ -3566,7 +3566,7 @@ topics.push({
         "In a woman **over 45** with typical vasomotor symptoms and a changing or absent cycle the diagnosis is clinical - no test needed. [NICE NG23 2024]",
         "**Ordering an FSH in a symptomatic woman over 45** is a marked error in an examination - NICE says explicitly not to. [NICE NG23 2024]",
         "Measure FSH only in a woman aged **40-45 years** with symptoms and cycle change - over 45 the diagnosis is clinical and the test wasteful. [NICE NG23 2024]",
-        "FSH is measured in a woman under 40 in whom POI is suspected - **two values above 25-40 IU/L, 4-6 weeks apart**. [NICE NG23 2024]",
+        "FSH is measured in a woman under 40 in whom POI is suspected - **above 25 IU/L** (one value suffices per ESHRE 2024; NICE asks for two, 4-6 weeks apart). [ESHRE POI 2024]",
         "**FSH is measured only when the menstrual marker is absent** - after hysterectomy, or on a progestogen-only method. [NICE NG23 2024]",
         "**Exclude pregnancy before attributing symptoms to menopause** - a perimenopausal woman can still conceive. [IMS 2020]",
         "Exclude **thyroid disease, anaemia, diabetes and chronic infection such as tuberculosis** - each mimics menopausal symptoms. [IMS 2020]",
@@ -3878,7 +3878,7 @@ topics.push({
           heading: "Diagnosis",
           points: [
             "Diagnose on **oligomenorrhoea or amenorrhoea for at least 4 months in a woman under 40** - a shorter gap is too often transient. [NICE NG23 2024]",
-            "Confirm with **two FSH values above 25-40 IU/L measured 4-6 weeks apart**, since one high FSH can occur in a normal cycle. [NICE NG23 2024]",
+            "Confirm with **FSH above 25 IU/L** - ESHRE 2024 accepts a single raised value (NICE still asks for two, 4-6 weeks apart); repeat or add AMH when the picture is unclear. [ESHRE POI 2024]",
             "**Exclude pregnancy first**, then check prolactin, thyroid function and, where indicated, testosterone - each gives a different diagnosis. [NICE NG23 2024]",
             "**AMH will be low but is not itself diagnostic**, because no threshold has been validated for making the diagnosis of POI. [NICE NG23 2024]",
             "Once confirmed: **karyotype, FMR1 testing, adrenal and thyroid autoantibodies, and baseline DXA** - each of these changes her later care. [NICE NG23 2024]",
