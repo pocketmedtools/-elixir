@@ -203,3 +203,7 @@ charts added (shown at the top of each topic as "Revise in one go").
 
 ## Summary
 All 20 subjects and 243 topics checked against guidelines current in October 2026; every topic now has a master revision table and 2-3 high-yield flow charts.
+
+## Round 2 - crosscheck and rapid-revision redesign
+Rapid revision moved to the END of every topic (jump link at the top), master table shown as colour-coded cards, flow charts numbered.
+Crosscheck queue (3 subjects at a time): cardiovascular, respiratory, endocrine, emergency, gastro-hepatology, infectious-fever, neurology, renal-urology, musculoskeletal, psychiatry, dermatology, eye-ent, obstetrics, gynaecology, geriatrics-ethics, symptom-approach, fm-principles, surgery-office, pediatrics, preventive.
