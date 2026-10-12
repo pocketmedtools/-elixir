@@ -71,7 +71,7 @@ const diagrams: DiagramSet = {
         {
           label: "Never substitute drugs or an injection",
           detail:
-            "Pregabalin, a radiograph or an epidural steroid injection treat radicular pain and waste the operative window",
+            "Neuropathic drugs, a radiograph or an epidural steroid injection treat radicular pain and waste the operative window",
           tone: "warn",
         },
       ],
@@ -127,7 +127,7 @@ const diagrams: DiagramSet = {
         {
           label: "Neuropathic agent for radicular pain",
           detail:
-            "Amitriptyline 10-25 mg PO at night, or pregabalin 75 mg at night titrated to 150 mg BD; counsel on drowsiness, weight gain and falls",
+            "Amitriptyline 10 mg PO at night titrated to 25-50 mg (or duloxetine); NICE advises no gabapentinoids, oral steroids or benzodiazepines for sciatica",
         },
         {
           label: "Tramadol only if severe and refractory",
@@ -279,7 +279,7 @@ const diagrams: DiagramSet = {
         {
           label: "Aspirate the joint first",
           detail:
-            "Send the same aspirate for Gram stain, cell count and culture as well as crystals; gout fluid is 20,000-70,000 white cells per cubic mm and overlaps with sepsis",
+            "Send the same aspirate for Gram stain, cell count and culture as well as crystals; gout fluid is 2,000-50,000 white cells per microlitre and overlaps with sepsis",
           tone: "warn",
         },
         {
@@ -385,7 +385,7 @@ const diagrams: DiagramSet = {
         ],
         [
           "Synovial white cells",
-          "20,000-70,000 per cubic mm, neutrophils",
+          "2,000-50,000 per microlitre, neutrophils",
           "Usually over 50,000, often over 100,000",
           "10,000-50,000 per cubic mm",
         ],
@@ -526,7 +526,7 @@ const diagrams: DiagramSet = {
         {
           label: "Early intra-articular steroid injection",
           detail:
-            "Triamcinolone 40 mg with 4-5 mL 1% lignocaine into the glenohumeral joint by the posterior approach, ideally ultrasound-guided; 2-3 injections at least 6 weeks apart, and warn diabetics of 5-10 days of hyperglycaemia",
+            "Triamcinolone 40 mg with 4-5 mL 1% lignocaine into the glenohumeral joint by the posterior approach, ideally ultrasound-guided; 2-3 injections at least 6 weeks apart, and warn diabetics of 3-7 days of hyperglycaemia",
         },
         {
           label: "Hydrodilatation or suprascapular block",
@@ -549,7 +549,7 @@ const diagrams: DiagramSet = {
         [
           "Glenohumeral joint for adhesive capsulitis",
           "Triamcinolone 40 mg or methylprednisolone 40 mg with 4-5 mL 1% lignocaine",
-          "Maximum 2-3 injections 6 weeks apart; hyperglycaemia for 5-10 days in diabetics; never through infected skin",
+          "Maximum 2-3 injections 6 weeks apart; hyperglycaemia for 3-7 days in diabetics; never through infected skin",
         ],
         [
           "Subacromial space for impingement",
