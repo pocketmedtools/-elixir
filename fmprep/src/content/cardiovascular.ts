@@ -1726,7 +1726,7 @@ topics.push({
   references: [
     "ESC Guidelines for the Management of Acute Coronary Syndromes, 2023",
     "STEMI-India hub-and-spoke model and Tamil Nadu STEMI programme reports, 2014-2020",
-    "Fourth Universal Definition of Myocardial Infarction, ESC/ACC/AHA/WHF, 2018",
+    "Fourth Universal Definition of Myocardial Infarction, ESC/ACC/AHA/WHF, 2018 (superseded by the Fifth Universal Definition, 2026)",
     "AHA/ACC Guideline for the Management of Patients with Acute Coronary Syndromes, 2025",
     "Standard Treatment Guidelines, MoHFW India - management of acute myocardial infarction at the first referral unit",
   ],
@@ -1736,7 +1736,7 @@ topics.push({
   id: "cardiovascular-heart-failure",
   title: "Heart failure with reduced and preserved ejection fraction",
   oneLiner:
-    "Heart failure is a clinical syndrome of **dyspnoea, fatigue and fluid overload** caused by a structural or functional cardiac abnormality, classified by ejection fraction into **HFrEF (40% or less)**, HFmrEF (41-49%) and HFpEF (50% or more), and in HFrEF **four drug pillars** - ARNI or ACE inhibitor, beta-blocker, mineralocorticoid antagonist and SGLT2 inhibitor - reduce mortality.",
+    "Heart failure is a clinical syndrome of **dyspnoea, fatigue and fluid overload** caused by a structural or functional cardiac abnormality, classified by ESC 2026 into **HFrEF (LVEF under 50%)** and **HFpEF (50% or more)** - HFmrEF is abolished; in HFrEF **four foundational drugs** - ARNI or ACE inhibitor, beta-blocker, mineralocorticoid antagonist and SGLT2 inhibitor - reduce mortality, and an MRA plus SGLT2 inhibitor is foundational at every LVEF.",
   frequency: "core",
   keywords: [
     "congestive cardiac failure",
@@ -1766,9 +1766,9 @@ topics.push({
       points: [
         "Heart failure is a syndrome caused by a **structural or functional cardiac abnormality** - a syndrome, so the cause must still be named. [UDHF 2021]",
         "The definition requires **raised natriuretic peptides** or objective congestion - symptoms and signs alone are too non-specific to stand. [UDHF 2021]",
-        "HFrEF: **LVEF 40% or less** - the only group in which all four drug pillars are proven to reduce mortality. [ESC 2021]",
-        "HFmrEF, mildly reduced: **LVEF 41-49%** - the evidence is borrowed from HFrEF, so treat it the same way. [ESC 2021]",
-        "HFpEF: **LVEF 50% or more** with objective evidence of raised filling pressures - a normal ejection fraction does not exclude failure. [ESC 2021]",
+        "HFrEF: **LVEF under 50%** (ESC 2026) - all four foundational drugs (ARNI/ACEi/ARB, beta-blocker, MRA, SGLT2 inhibitor) reduce mortality. [ESC 2026]",
+        "**HFmrEF (LVEF 41-49%) is abolished by ESC 2026** - it shares the pathophysiology and drug response of HFrEF, so it is now classed and treated as HFrEF. [ESC 2026]",
+        "HFpEF: **LVEF 50% or more** with objective evidence of raised filling pressures - a normal ejection fraction does not exclude failure; **SGLT2 inhibitor plus MRA** is its foundational therapy. [ESC 2026]",
         "NYHA class is dynamic and must be recorded at **every visit** - it is the one variable that moves with treatment. [ESC 2021]",
         "**ACC/AHA stages are not reversible**, unlike the NYHA class - staging tracks structural damage, which does not undo. [ACC/AHA 2022]",
         "Indian patients present about **a decade younger** than in the West, mean age 55-61 years by registry (59.9 nationally) - premature coronary disease. [NHFR India 2025]",
@@ -1812,12 +1812,12 @@ topics.push({
         "**Leave a 36-hour washout after an ACE inhibitor** before an ARNI - otherwise bradykinin accumulates and causes angioedema. [ESC 2021]",
         "Where cost prevents an ARNI: enalapril **2.5 mg BD up to 10-20 mg BD**, ramipril or telmisartan 40-80 mg OD - the same axis, blocked cheaply. [ESC 2021]",
         "An affordable ACE inhibitor actually taken **beats an ARNI the patient cannot refill** - adherence is part of efficacy. [ESC 2021]",
-        "Pillar 2: **only three beta-blockers are proven** in HFrEF - this is not a class effect, so the drug name matters. [ESC 2021]",
+        "Pillar 2: **only bisoprolol, carvedilol, metoprolol succinate (and nebivolol in the elderly) are proven** in HFrEF - this is not a class effect, so the drug name matters. [ESC 2021]",
         "**Start low, go slow, and only when euvolaemic** - negative inotropy given to a wet patient worsens the congestion. [ESC 2021]",
         "Pillar 3: **spironolactone 25 mg PO once daily**, or 12.5 mg if renal function is marginal - RALES cut mortality by about 30%. [ESC 2021]",
         "Eplerenone **25-50 mg once daily** if gynaecomastia is troublesome - it is selective and does not block androgen receptors. [ESC 2021]",
         "Check potassium and creatinine at **1 week, 4 weeks, then 3-monthly** on an MRA - hyperkalaemia is silent until it is fatal. [ESC 2021]",
-        "**Stop the MRA if potassium exceeds 5.5 mmol/L**, or eGFR falls below 30 mL/min/1.73 m2 - the risk then outweighs the benefit. [ESC 2021]",
+        "**Halve the MRA if potassium exceeds 5.5 mmol/L and stop it above 6.0** - and do not start it if potassium is over 5.0 or eGFR under 30 mL/min/1.73 m2. [ESC 2021]",
         "Pillar 4: **dapagliflozin 10 mg or empagliflozin 10 mg PO once daily**, irrespective of diabetes - the benefit is not glycaemic. [ESC 2021]",
         "SGLT2 inhibitors reduce cardiovascular death and heart failure hospitalisation - **DAPA-HF and EMPEROR-Reduced**. [ESC 2021]",
         "Start the SGLT2 inhibitor early, often in the **first week** - there is no titration step, so nothing is gained by waiting. [ACC/AHA 2022]",
@@ -1979,12 +1979,12 @@ topics.push({
       heading: "HFrEF versus HFpEF at a glance",
       columns: ["Feature", "HFrEF", "HFpEF"],
       rows: [
-        ["Ejection fraction", "40% or less", "50% or more"],
+        ["Ejection fraction (ESC 2026)", "Under 50% (old HFmrEF 41-49% included)", "50% or more"],
         ["Typical patient", "Younger man, prior MI, dilated ventricle", "Older woman, hypertension, obesity, diabetes, AF"],
         ["Apex beat", "Displaced, diffuse", "Sustained, heaving, not displaced"],
         ["Third heart sound", "Common (S3)", "Fourth heart sound (S4) more typical"],
         ["Echo", "Dilated LV, low EF, regional or global hypokinesia", "Normal cavity, LV hypertrophy, raised E/e prime, large left atrium"],
-        ["Mortality-reducing drugs", "All four pillars proven", "SGLT2 inhibitor; otherwise treat comorbidity and congestion"],
+        ["Foundational drugs", "All four: ARNI/ACEi/ARB, beta-blocker, MRA, SGLT2 inhibitor", "SGLT2 inhibitor plus MRA; GLP-1 RA if obese; treat comorbidity and congestion"],
       ],
     },
     {
@@ -2116,7 +2116,7 @@ topics.push({
       ],
       mustDraw: [
         "A table of the four pillars with starting and target doses.",
-        "A diagram of the Framingham major and minor criteria, or a flow chart from symptoms through natriuretic peptide and echocardiography to the HFrEF/HFmrEF/HFpEF classification.",
+        "A diagram of the Framingham major and minor criteria, or a flow chart from symptoms through natriuretic peptide and echocardiography to the ESC 2026 HFrEF (under 50%) / HFpEF (50% or more) classification.",
       ],
       markSplit: [
         { part: "History including NYHA class and precipitants", marks: 1.5 },
@@ -2154,7 +2154,7 @@ topics.push({
         {
           heading: "Drug therapy",
           points: [
-            "**Furosemide 40 mg IV** slowly, or 1-2.5 times the usual daily oral dose if already on it - tolerance means the home dose no longer works. [ESC 2021]",
+            "**Furosemide 20-40 mg IV** slowly if diuretic-naive, or 1-2 times the usual daily oral dose if already on it - tolerance means the home dose no longer works. [ESC 2021]",
             "Repeat the furosemide or use an infusion if the response is poor - an infusion keeps the tubular drug level above threshold continuously. [ESC 2021]",
             "**Nitroglycerin sublingual 0.5 mg**, or an infusion at 5-100 microgram/min, if systolic BP exceeds 110 mmHg - lower, and it risks shock. [ESC 2021]",
             "Nitrate is the fastest way to cut preload and afterload in the **hypertensive phenotype** - the lungs clear before any urine is passed. [ESC 2021]",
@@ -2200,7 +2200,7 @@ topics.push({
       question: "Differentiate heart failure with reduced ejection fraction from heart failure with preserved ejection fraction, with respect to pathophysiology, clinical profile and treatment.",
       openingLines: [
         "Both syndromes present with the same symptoms of congestion and exercise intolerance, but they differ in mechanism: HFrEF is a failure of systolic contraction with ventricular dilatation, while HFpEF is a failure of relaxation and compliance with raised filling pressures at a normal cavity size.",
-        "The cut-offs are an ejection fraction of 40% or less for HFrEF and 50% or more for HFpEF, with 41-49% designated mildly reduced (HFmrEF).",
+        "ESC 2026 uses a single cut-off - an ejection fraction under 50% is HFrEF and 50% or more is HFpEF; the old mildly reduced group (HFmrEF, 41-49%) is abolished and treated as HFrEF.",
       ],
       answer: [
         {
@@ -2237,10 +2237,10 @@ topics.push({
           points: [
             "HFrEF: **all four pillars reduce mortality** - each blocks a different arm of neurohormonal remodelling, so the benefits add up. [ESC 2021]",
             "The pillars are ARNI or ACE inhibitor, beta-blocker, MRA and SGLT2 inhibitor - four mechanisms, so four drugs beat a big dose of one. [ESC 2021]",
-            "Only **carvedilol, bisoprolol and metoprolol succinate** are proven in HFrEF - a class effect was never demonstrated for the others. [ESC 2021]",
+            "Only **carvedilol, bisoprolol, metoprolol succinate and nebivolol (elderly)** are proven in HFrEF - a class effect was never demonstrated for the others. [ESC 2021]",
             "HFrEF add-ons are ivabradine, digoxin and intravenous iron - they cut symptoms and admissions but not mortality. [ESC 2021]",
             "HFrEF devices: **ICD and CRT** by the usual criteria - drugs do not abolish the arrhythmic death risk at a low ejection fraction. [ESC 2021]",
-            "HFpEF: **SGLT2 inhibitors are the one class with clear benefit** - every other class has failed its preserved ejection fraction outcome trial. [ESC 2021]",
+            "HFpEF: **SGLT2 inhibitor plus an MRA (spironolactone or finerenone) are foundational** (ESC 2026, DELIVER, EMPEROR-Preserved, FINEARTS-HF); semaglutide or tirzepatide if obese (IIa). [ESC 2026]",
             "Otherwise HFpEF gets diuretics for congestion - they lower the filling pressure that produces the breathlessness. [ESC 2021]",
             "HFpEF also needs hypertension, atrial fibrillation, obesity and diabetes controlled - **the comorbidities are the disease**. [ACC/AHA 2022]",
             "**Beta-blockers may be harmful in HFpEF** by blunting the chronotropic response - a stiff ventricle raises output by rate, not stroke volume. [ESC 2021]",
@@ -2303,7 +2303,7 @@ topics.push({
       ],
       answer: 2,
       explanation:
-        "This is HFpEF, and the EMPEROR-Preserved and DELIVER trials showed that SGLT2 inhibitors reduce the composite of cardiovascular death and heart failure hospitalisation across the preserved ejection fraction range, making them the first-line disease-modifying therapy. Beta-blockers and ACE inhibitors have not shown benefit in HFpEF outcome trials and beta-blockers may worsen chronotropic incompetence. Digoxin does not reduce hospitalisation in HFpEF, and ivabradine works only in sinus rhythm, which she does not have.",
+        "This is HFpEF, and the EMPEROR-Preserved and DELIVER trials showed that SGLT2 inhibitors reduce the composite of cardiovascular death and heart failure hospitalisation across the preserved ejection fraction range, making them foundational therapy - ESC 2026 pairs them with an MRA at every LVEF. Beta-blockers and ACE inhibitors have not shown benefit in HFpEF outcome trials and beta-blockers may worsen chronotropic incompetence. Digoxin does not reduce hospitalisation in HFpEF, and ivabradine works only in sinus rhythm, which she does not have.",
       difficulty: "moderate",
     },
     {
@@ -2323,7 +2323,7 @@ topics.push({
     },
     {
       id: "cardiovascular-heart-failure-q5",
-      stem: "A 70-year-old man with HFrEF on spironolactone 25 mg daily and ramipril 5 mg daily returns with fatigue. Potassium is 5.9 mmol/L, creatinine 1.9 mg/dL (previously 1.3), eGFR 34 mL/min/1.73 m2. What is the correct action?",
+      stem: "A 70-year-old man with HFrEF on spironolactone 25 mg daily and ramipril 5 mg daily returns with fatigue. Potassium is 6.2 mmol/L, creatinine 1.9 mg/dL (previously 1.3), eGFR 34 mL/min/1.73 m2. What is the correct action?",
       options: [
         "Continue both drugs and repeat electrolytes in a month",
         "Stop spironolactone, review the ramipril dose and volume status, and recheck potassium in 3-7 days",
@@ -2333,7 +2333,7 @@ topics.push({
       ],
       answer: 1,
       explanation:
-        "Potassium above 5.5 mmol/L with a rising creatinine and an eGFR below 35 requires the mineralocorticoid antagonist to be stopped, since it is the drug most responsible for hyperkalaemia in this combination, followed by reassessment of the ACE inhibitor dose and volume status and an early repeat check. Continuing unchanged risks life-threatening hyperkalaemia. Dietary advice alone is inadequate at 5.9 mmol/L. Increasing the diuretic without stopping the culprit may worsen the renal impairment, and stopping the ACE inhibitor while continuing spironolactone leaves the greater hyperkalaemic driver in place.",
+        "Potassium above 6.0 mmol/L with a rising creatinine requires the mineralocorticoid antagonist to be stopped (ESC: halve at 5.5-6.0, stop above 6.0), since it is the drug most responsible for hyperkalaemia in this combination, followed by reassessment of the ACE inhibitor dose and volume status and an early repeat check. Continuing unchanged risks life-threatening hyperkalaemia. Dietary advice alone is inadequate at 6.2 mmol/L. Increasing the diuretic without stopping the culprit may worsen the renal impairment, and stopping the ACE inhibitor while continuing spironolactone leaves the greater hyperkalaemic driver in place.",
       difficulty: "moderate",
     },
     {
@@ -2838,11 +2838,12 @@ topics.push({
   id: "cardiovascular-atrial-fibrillation",
   title: "Atrial fibrillation: rate, rhythm and anticoagulation",
   oneLiner:
-    "Atrial fibrillation is an irregularly irregular supraventricular arrhythmia with **absent P waves** that raises **stroke risk fivefold**, and its management follows three parallel decisions - anticoagulate by CHA2DS2-VASc after weighing HAS-BLED, control the rate, and consider rhythm control - with the crucial Indian caveat that moderate-to-severe rheumatic mitral stenosis or a mechanical valve mandates **warfarin, never a DOAC**.",
+    "Atrial fibrillation is an irregularly irregular supraventricular arrhythmia with **absent P waves** that raises **stroke risk fivefold**, and its management follows three parallel decisions - anticoagulate by CHA2DS2-VA (ESC 2024 - the sex point removed) while correcting HAS-BLED risks, control the rate, and consider rhythm control - with the crucial Indian caveat that moderate-to-severe rheumatic mitral stenosis or a mechanical valve mandates **warfarin, never a DOAC**.",
   frequency: "common",
   keywords: [
     "AF",
     "atrial fibrillation",
+    "CHA2DS2-VA",
     "CHA2DS2-VASc",
     "HAS-BLED",
     "warfarin",
@@ -2879,14 +2880,14 @@ topics.push({
       ],
     },
     {
-      heading: "Stroke risk and the CHA2DS2-VASc score",
+      heading: "Stroke risk and the CHA2DS2-VA score",
       points: [
         "**CHA2DS2-VA: heart failure 1, hypertension 1, age 75 or over 2, diabetes 1** - ESC 2024 dropped the sex point: female sex modifies risk, not causes it. [ESC 2024]",
-        "**Stroke, TIA or thromboembolism 2, vascular disease 1, age 65-74 1, sex category female 1 - maximum 9.** [ESC 2024]",
+        "**Stroke, TIA or thromboembolism 2, vascular disease 1, age 65-74 1 - maximum 8**; there is no longer a point for female sex. [ESC 2024]",
         "**Vascular disease** means prior MI, peripheral arterial disease or aortic plaque - each marks systemic atherosclerosis, which raises embolic risk. [ESC 2024]",
-        "**Anticoagulate at 2 or more in men and 3 or more in women** - the female point counts only beside another risk factor. [ESC 2024]",
+        "**Anticoagulate at a CHA2DS2-VA of 2 or more (class I), in men and women alike** - the old 2 in men, 3 in women rule of CHA2DS2-VASc is gone. [ESC 2024]",
         "**Consider anticoagulation at a CHA2DS2-VA of 1 and give none at 0** - the sex point is gone, so the old 1 in men and 2 in women thresholds no longer apply. [ESC 2024]",
-        "**Rheumatic mitral stenosis or a mechanical valve overrides the score** - warfarin whatever the CHA2DS2-VASc value. [ESC 2024]",
+        "**Rheumatic mitral stenosis or a mechanical valve overrides the score** - warfarin whatever the CHA2DS2-VA value. [ESC 2024]",
         "**Aspirin is not an acceptable alternative to anticoagulation** - it barely prevents cardioembolic stroke yet bleeds nearly as much. [ESC 2024]",
         "Annual stroke risk is roughly **1% at a score of 1, 2-3% at 2, and above 10% at 7 or more** - anticoagulation cuts each by two-thirds. [ESC 2024]",
         "**Paroxysmal and permanent AF are anticoagulated identically** - risk follows the score, not the arrhythmia burden. [ESC 2024]",
@@ -2940,7 +2941,7 @@ topics.push({
         "**Beyond 24 hours or unknown duration, give 3 weeks of anticoagulation before cardioversion** (formerly 48) - post-shock atrial stunning sheds any clot. [ESC 2024]",
         "**Or exclude appendage thrombus on transoesophageal echo** and cardiovert under anticoagulation - transthoracic echo cannot see the appendage. [ESC 2024]",
         "**Anticoagulate at least 4 weeks after every cardioversion** - atrial stunning lets thrombus form in restored sinus rhythm. [ESC 2024]",
-        "**Haemodynamic instability mandates immediate synchronised DC cardioversion at 120-200 J biphasic**, whatever the duration - drugs are slow and lower the BP. [ESC 2024]",
+        "**Haemodynamic instability mandates immediate synchronised DC cardioversion, first shock 200 J or more biphasic**, whatever the duration - drugs are slow and lower the BP. [AHA 2025]",
         "**Instability means hypotension, pulmonary oedema, ongoing ischaemia or altered sensorium** - organ perfusion is failing, so there is no time for drugs. [ESC 2024]",
         "**Amiodarone 150 mg IV over 10 minutes, then 1 mg/min for 6 hours, then 0.5 mg/min** is safest in structural disease - class IC drugs provoke VT in scar. [ESC 2024]",
         "**Flecainide or propafenone (pill-in-the-pocket) only when there is no structural heart disease or ischaemia** - otherwise proarrhythmic. [ESC 2024]",
@@ -2975,7 +2976,7 @@ topics.push({
   ],
   tables: [
     {
-      heading: "CHA2DS2-VASc score",
+      heading: "CHA2DS2-VA score (ESC 2024)",
       columns: ["Component", "Points"],
       rows: [
         ["Congestive heart failure / LV dysfunction", "1"],
@@ -2985,8 +2986,8 @@ topics.push({
         ["Stroke / TIA / thromboembolism", "2"],
         ["Vascular disease (prior MI, PAD, aortic plaque)", "1"],
         ["Age 65-74 years", "1"],
-        ["Sex category (female)", "1"],
-        ["Threshold to anticoagulate", "2 or more in men; 3 or more in women"],
+        ["Female sex", "No point (removed in ESC 2024)"],
+        ["Threshold to anticoagulate", "2 or more; consider at 1; none at 0 - same in men and women"],
       ],
     },
     {
@@ -3027,9 +3028,9 @@ topics.push({
     "In India always ask whether the AF is valvular: moderate-to-severe rheumatic mitral stenosis or a mechanical valve means warfarin, never a DOAC (INVICTUS, RE-ALIGN).",
     "A high HAS-BLED score is a reason to correct modifiable bleeding risks and review more often, never a reason to withhold anticoagulation.",
     "Aspirin is not a substitute for anticoagulation in atrial fibrillation.",
-    "Anticoagulation depends on the CHA2DS2-VASc score, not on whether AF is paroxysmal, persistent or permanent.",
+    "Anticoagulation depends on the CHA2DS2-VA score (2 or more, consider at 1), not on whether AF is paroxysmal, persistent or permanent.",
     "Never give digoxin, verapamil, diltiazem, adenosine or a beta-blocker in pre-excited AF - use procainamide or DC shock.",
-    "The 48-hour rule: beyond 48 hours or unknown duration, either 3 weeks of anticoagulation before cardioversion or a transoesophageal echo first, and always 4 weeks of anticoagulation after.",
+    "The cardioversion rule is now 24 hours (ESC 2024, formerly 48): at 24 hours or more or unknown duration, either 3 weeks of anticoagulation before cardioversion or a transoesophageal echo first, and always 4 weeks of anticoagulation after.",
     "Digoxin controls the resting rate but not the exertional rate; a patient who feels fine sitting and terrible walking needs a beta-blocker added.",
     "Check TSH in every new AF - thyrotoxic AF will not rate-control until the thyroid is treated.",
   ],
@@ -3074,8 +3075,8 @@ topics.push({
         {
           heading: "3. Stroke prevention",
           points: [
-            "**CHA2DS2-VASc here: hypertension 1, diabetes 1, age 65-74 1, female 1 - a score of 4.** [ESC 2024]",
-            "**Four is well above the threshold of 3 for women, so anticoagulation is indicated.** [ESC 2024]",
+            "**CHA2DS2-VA here: hypertension 1, diabetes 1, age 65-74 1 - a score of 3** (female sex no longer scores). [ESC 2024]",
+            "**Three is above the threshold of 2 that now applies to men and women alike, so anticoagulation is indicated.** [ESC 2024]",
             "Calculate HAS-BLED and correct what is modifiable - blood pressure, NSAIDs, needless antiplatelets and alcohol. [ESC 2024]",
             "**Never withhold anticoagulation because the HAS-BLED score is high** - the stroke prevented outweighs the bleed. [ESC 2024]",
             "**Rheumatic mitral stenosis or a mechanical valve: warfarin 2.5-5 mg daily to an INR of 2-3, and nothing else** - DOACs failed in INVICTUS and RE-ALIGN. [ESC 2024]",
@@ -3112,17 +3113,17 @@ topics.push({
         },
       ],
       mustDraw: [
-        "The CHA2DS2-VASc table with points, and the HAS-BLED table marking the modifiable factors.",
+        "The CHA2DS2-VA table with points, and the HAS-BLED table marking the modifiable factors.",
         "A management flow chart with three branches: anticoagulation, rate control, rhythm control.",
       ],
       markSplit: [
         { part: "Assessment of stability, history and examination", marks: 2 },
         { part: "Investigations, with echocardiography central", marks: 1.5 },
-        { part: "CHA2DS2-VASc, HAS-BLED and anticoagulant choice", marks: 3 },
+        { part: "CHA2DS2-VA, HAS-BLED and anticoagulant choice", marks: 3 },
         { part: "Rate and rhythm control with doses", marks: 2 },
         { part: "Cause, education and follow-up", marks: 1.5 },
       ],
-      keywords: ["atrial fibrillation", "CHA2DS2-VASc", "HAS-BLED", "valvular AF", "rate control", "warfarin"],
+      keywords: ["atrial fibrillation", "CHA2DS2-VA", "HAS-BLED", "valvular AF", "rate control", "warfarin"],
     },
     {
       id: "cardiovascular-atrial-fibrillation-t2",
@@ -3134,7 +3135,7 @@ topics.push({
       question: "Write short notes on oral anticoagulation in atrial fibrillation, including monitoring and the management of over-anticoagulation.",
       openingLines: [
         "Atrial fibrillation increases stroke risk about fivefold, and oral anticoagulation reduces that risk by roughly two-thirds, which no antiplatelet regimen approaches.",
-        "The decision to anticoagulate rests on the CHA2DS2-VASc score, and the choice of agent rests on whether the atrial fibrillation is valvular.",
+        "The decision to anticoagulate rests on the CHA2DS2-VA score (ESC 2024), and the choice of agent rests on whether the atrial fibrillation is valvular.",
       ],
       answer: [
         {
@@ -3180,28 +3181,28 @@ topics.push({
         { part: "Drug choice, doses and monitoring", marks: 2 },
         { part: "Management of over-anticoagulation and bleeding", marks: 1.5 },
       ],
-      keywords: ["warfarin", "INR", "DOAC", "vitamin K", "prothrombin complex concentrate", "CHA2DS2-VASc"],
+      keywords: ["warfarin", "INR", "DOAC", "vitamin K", "prothrombin complex concentrate", "CHA2DS2-VA"],
     },
   ],
   mcqs: [
     {
       id: "cardiovascular-atrial-fibrillation-q1",
-      stem: "A 42-year-old woman has permanent atrial fibrillation. Echocardiography shows rheumatic mitral stenosis with a valve area of 1.1 cm2 and a dilated left atrium. She has no other risk factors, and her CHA2DS2-VASc score is 1. Which antithrombotic regimen is correct?",
+      stem: "A 42-year-old woman has permanent atrial fibrillation. Echocardiography shows rheumatic mitral stenosis with a valve area of 1.1 cm2 and a dilated left atrium. She has no other risk factors, and her CHA2DS2-VA score is 0. Which antithrombotic regimen is correct?",
       options: [
         "Aspirin 75 mg once daily",
-        "No antithrombotic therapy, since her score is only 1",
+        "No antithrombotic therapy, since her score is 0",
         "Apixaban 5 mg twice daily",
         "Warfarin titrated to an INR of 2.0-3.0",
         "Clopidogrel 75 mg once daily",
       ],
       answer: 3,
       explanation:
-        "Moderate-to-severe rheumatic mitral stenosis is valvular atrial fibrillation, where the stroke risk is very high and independent of the CHA2DS2-VASc score, so warfarin to an INR of 2-3 is mandatory and the score does not apply. Direct oral anticoagulants are contraindicated here - the INVICTUS trial showed higher mortality with rivaroxaban than with warfarin in rheumatic heart disease with AF. Aspirin and clopidogrel provide negligible protection against cardioembolic stroke, and withholding therapy on the basis of the score would be a serious error.",
+        "Moderate-to-severe rheumatic mitral stenosis is valvular atrial fibrillation, where the stroke risk is very high and independent of the CHA2DS2-VA score, so warfarin to an INR of 2-3 is mandatory and the score does not apply. Direct oral anticoagulants are contraindicated here - the INVICTUS trial showed higher mortality with rivaroxaban than with warfarin in rheumatic heart disease with AF. Aspirin and clopidogrel provide negligible protection against cardioembolic stroke, and withholding therapy on the basis of the score would be a serious error.",
       difficulty: "moderate",
     },
     {
       id: "cardiovascular-atrial-fibrillation-q2",
-      stem: "A 74-year-old man with AF, hypertension and prior TIA has a CHA2DS2-VASc score of 5 and a HAS-BLED score of 4 (hypertension, elderly, prior stroke, aspirin use). What is the correct approach?",
+      stem: "A 74-year-old man with AF, hypertension and prior TIA has a CHA2DS2-VA score of 4 and a HAS-BLED score of 4 (hypertension, elderly, prior stroke, aspirin use). What is the correct approach?",
       options: [
         "Withhold anticoagulation because HAS-BLED is high",
         "Give aspirin alone since anticoagulation is too risky",
@@ -3211,7 +3212,7 @@ topics.push({
       ],
       answer: 2,
       explanation:
-        "HAS-BLED identifies patients who need modifiable bleeding risks addressed and closer monitoring; it is explicitly not a threshold for withholding anticoagulation, and with a CHA2DS2-VASc of 5 the absolute stroke benefit far outweighs bleeding harm. Two of his HAS-BLED points - uncontrolled hypertension and concomitant aspirin - are directly correctable in the clinic. Aspirin alone leaves him largely unprotected while retaining bleeding risk, appendage occlusion is for those with genuinely unmanageable bleeding on anticoagulation, and sub-therapeutic dosing gives bleeding risk without stroke protection.",
+        "HAS-BLED identifies patients who need modifiable bleeding risks addressed and closer monitoring; it is explicitly not a threshold for withholding anticoagulation, and with a CHA2DS2-VA of 4 (hypertension 1, TIA 2, age 65-74 1) the absolute stroke benefit far outweighs bleeding harm. Two of his HAS-BLED points - uncontrolled hypertension and concomitant aspirin - are directly correctable in the clinic. Aspirin alone leaves him largely unprotected while retaining bleeding risk, appendage occlusion is for those with genuinely unmanageable bleeding on anticoagulation, and sub-therapeutic dosing gives bleeding risk without stroke protection.",
       difficulty: "moderate",
     },
     {
@@ -3241,7 +3242,7 @@ topics.push({
       ],
       answer: 1,
       explanation:
-        "AF of more than 48 hours duration carries a risk of established left atrial thrombus, so elective cardioversion requires either three weeks of therapeutic anticoagulation beforehand or exclusion of thrombus by transoesophageal echocardiography, and in every case at least four weeks of anticoagulation afterwards because atrial mechanical stunning persists after electrical restoration. Immediate cardioversion without either step risks embolic stroke. A single dose of low molecular weight heparin does not dissolve an existing thrombus, and starting anticoagulation only after the shock leaves the highest-risk period uncovered.",
+        "AF lasting 24 hours or more (the ESC 2024 threshold, formerly 48 hours) carries a risk of established left atrial thrombus, so elective cardioversion requires either three weeks of therapeutic anticoagulation beforehand or exclusion of thrombus by transoesophageal echocardiography, and in every case at least four weeks of anticoagulation afterwards because atrial mechanical stunning persists after electrical restoration. Immediate cardioversion without either step risks embolic stroke. A single dose of low molecular weight heparin does not dissolve an existing thrombus, and starting anticoagulation only after the shock leaves the highest-risk period uncovered.",
       difficulty: "moderate",
     },
     {
@@ -3756,7 +3757,7 @@ topics.push({
     },
   ],
   references: [
-    "Fourth Universal Definition of Myocardial Infarction, ESC/ACC/AHA/WHF, 2018",
+    "Fourth Universal Definition of Myocardial Infarction, ESC/ACC/AHA/WHF, 2018 (superseded by the Fifth Universal Definition, 2026)",
     "ESC Guidelines for the Management of Acute Coronary Syndromes, 2023",
     "AHA/ACCF/HRS Recommendations for the Standardization and Interpretation of the Electrocardiogram, Circulation 2009",
     "Goldberger Clinical Electrocardiography: A Simplified Approach, 9th edition, 2018",
@@ -3918,9 +3919,9 @@ topics.push({
         "**Wells above 4 means PE likely - go straight to CT pulmonary angiography.** [ESC 2019]",
         "Revised Geneva is an alternative; **V/Q scanning is preferred in pregnancy, renal impairment and contrast allergy** - it needs no iodinated contrast. [ESC 2019]",
         "**The PERC rule can avoid testing altogether in a very low risk patient meeting all eight criteria** - below 2% probability a test does more harm than good. [ESC 2019]",
-        "**High-risk or massive PE is a systolic BP below 90 mmHg, or a fall of 40 mmHg for 15 minutes** - shock means the right ventricle is failing. [ESC 2019]",
+        "**High-risk PE (ESC; AHA/ACC 2026 category E) is a systolic BP below 90 mmHg, or a fall of 40 mmHg for 15 minutes** - shock means the right ventricle is failing. [ESC 2019]",
         "**Treat high-risk PE with systemic thrombolysis: alteplase 100 mg over 2 hours, or tenecteplase** - only lysis unloads the right ventricle fast enough. [ESC 2019]",
-        "**Sub-massive PE: right ventricular strain on echo or CT with a raised troponin** needs monitored admission - some decompensate and need rescue lysis. [ESC 2019]",
+        "**Intermediate-high-risk PE (AHA/ACC 2026 category C-D): right ventricular strain on echo or CT with a raised troponin** needs monitored admission - some decompensate and need rescue lysis. [ESC 2019]",
         "**A simplified PESI score of zero marks low-risk PE that may be considered for outpatient treatment** - 30-day mortality in that group is about 1%. [ESC 2019]",
         "**Start anticoagulation on clinical suspicion when imaging will be delayed** and the bleeding risk is acceptable - early deaths are re-embolisation. [ESC 2019]",
         "**DOACs are first-line: rivaroxaban 15 mg twice daily for 21 days, then 20 mg once daily with food** - the loading phase covers the peak recurrence period. [ESC 2019]",
@@ -4414,7 +4415,7 @@ const cases: ClinicalCase[] = [
         points: [
           "Pillar 1: sacubitril/valsartan 49/51 mg PO twice daily up-titrated to 97/103 mg twice daily, with a 36-hour washout after his ramipril to avoid angioedema; where cost prevents the ARNI, restart enalapril 2.5 mg twice daily and titrate to 10-20 mg twice daily.",
           "Pillar 2: carvedilol 3.125 mg PO twice daily, started only once he is euvolaemic and doubled every 2 weeks to 25 mg twice daily, or bisoprolol 1.25 mg up to 10 mg once daily; his old metoprolol tartrate is not an evidence-based heart failure beta-blocker.",
-          "Pillar 3: spironolactone 25 mg PO once daily with potassium and creatinine at 1 and 4 weeks and then 3-monthly, stopping it if potassium exceeds 5.5 mmol/L or the eGFR falls below 30 mL/min/1.73 m2.",
+          "Pillar 3: spironolactone 25 mg PO once daily with potassium and creatinine at 1 and 4 weeks and then 3-monthly, halving it if potassium exceeds 5.5 mmol/L and stopping it above 6.0 mmol/L.",
           "Pillar 4: dapagliflozin 10 mg PO once daily from the first week, which also counts towards his diabetes treatment, with counselling on genital hygiene and sick-day rules.",
           "Continue aspirin 75 mg and increase atorvastatin to 80 mg for secondary prevention, and remember that diuretics make him feel better while the four pillars make him live longer - he must never go home on furosemide alone.",
         ],
@@ -4451,11 +4452,11 @@ const cases: ClinicalCase[] = [
     viva: [
       {
         q: "How is heart failure classified by ejection fraction and why does the classification matter?",
-        a: "Heart failure with reduced ejection fraction is 40% or less, mildly reduced is 41-49%, and preserved is 50% or more. It matters because the mortality benefit of the ARNI or ACE inhibitor, the beta-blocker and the mineralocorticoid antagonist is proven only in reduced ejection fraction, whereas SGLT2 inhibitors reduce hospitalisation across the whole range.",
+        a: "ESC 2026 has two classes: reduced ejection fraction is under 50% and preserved is 50% or more - the old mildly reduced group (41-49%) is abolished and treated as reduced. It matters because the ARNI or ACE inhibitor and the beta-blocker are foundational only in reduced ejection fraction, whereas an SGLT2 inhibitor plus an MRA is foundational at every ejection fraction.",
       },
       {
         q: "Which drugs reduce mortality in this patient and which only relieve symptoms?",
-        a: "Sacubitril/valsartan or an ACE inhibitor, one of the three proven beta-blockers, spironolactone or eplerenone, and dapagliflozin or empagliflozin all reduce mortality. Loop diuretics and digoxin relieve congestion and reduce admissions but do not reduce mortality, which is why the pillars must be added even when the diuretic has made him comfortable.",
+        a: "Sacubitril/valsartan or an ACE inhibitor, a proven beta-blocker (bisoprolol, carvedilol, metoprolol succinate, nebivolol), spironolactone or eplerenone, and dapagliflozin or empagliflozin all reduce mortality. Loop diuretics and digoxin relieve congestion and reduce admissions but do not reduce mortality, which is why the pillars must be added even when the diuretic has made him comfortable.",
       },
       {
         q: "When would you start the beta-blocker and which would you choose?",
@@ -4645,7 +4646,7 @@ const cases: ClinicalCase[] = [
         points: [
           "A loop diuretic such as furosemide 20-40 mg daily relieves pulmonary congestion and oedema, with salt restriction.",
           "A beta-blocker such as metoprolol 25-50 mg daily lengthens diastole and improves filling in symptomatic patients, particularly with exertional symptoms or a fast ventricular rate.",
-          "If atrial fibrillation develops, control the rate with a beta-blocker or digoxin and anticoagulate with warfarin to an INR of 2-3 irrespective of the CHA2DS2-VASc score; warfarin is also indicated in sinus rhythm if there is a left atrial thrombus or a previous embolus, and direct oral anticoagulants are contraindicated in moderate-to-severe rheumatic mitral stenosis.",
+          "If atrial fibrillation develops, control the rate with a beta-blocker or digoxin and anticoagulate with warfarin to an INR of 2-3 irrespective of the CHA2DS2-VA score; warfarin is also indicated in sinus rhythm if there is a left atrial thrombus or a previous embolus, and direct oral anticoagulants are contraindicated in moderate-to-severe rheumatic mitral stenosis.",
           "Maintain dental hygiene and treat streptococcal pharyngitis promptly; routine antibiotic prophylaxis for dental procedures is no longer recommended for native rheumatic valves, and anaemia and thyrotoxicosis must be corrected because a fixed output tolerates neither.",
         ],
       },
@@ -4695,7 +4696,7 @@ const cases: ClinicalCase[] = [
       },
       {
         q: "If she develops atrial fibrillation, which anticoagulant would you use and why not a direct oral anticoagulant?",
-        a: "Warfarin 2.5-5 mg daily titrated to an INR of 2-3, irrespective of her CHA2DS2-VASc score, because moderate-to-severe rheumatic mitral stenosis carries a very high embolic risk. Direct oral anticoagulants are contraindicated: the INVICTUS trial found more thromboembolic events and higher mortality with rivaroxaban than with a vitamin K antagonist in rheumatic heart disease with atrial fibrillation.",
+        a: "Warfarin 2.5-5 mg daily titrated to an INR of 2-3, irrespective of her CHA2DS2-VA score, because moderate-to-severe rheumatic mitral stenosis carries a very high embolic risk. Direct oral anticoagulants are contraindicated: the INVICTUS trial found more thromboembolic events and higher mortality with rivaroxaban than with a vitamin K antagonist in rheumatic heart disease with atrial fibrillation.",
       },
       {
         q: "What are the indications for and contraindications to balloon mitral valvotomy?",
