@@ -3,7 +3,7 @@ import type { TopicRewrite } from "../index";
 const rewrites: Record<string, TopicRewrite> = {
   "surgery-office-blood-transfusion": {
     oneLiner:
-      "Blood transfusion is the intravenous administration of a **specific blood component** (rarely whole blood) to correct a deficit that is causing or will cause harm - given on a **restrictive threshold (Hb 7 g/dL, 8 g/dL with cardiac disease or surgery), one unit at a time**, after **ABO and Rh D grouping, antibody screen and a bedside identity check**, because the commonest fatal reaction is still **the right blood given to the wrong patient**.",
+      "Blood transfusion is the intravenous administration of a **specific blood component** (rarely whole blood) to correct a deficit that is causing or will cause harm - given on a **restrictive threshold (Hb 7 g/dL; 8 g/dL with cardiovascular disease or orthopaedic surgery), one unit at a time**, after **ABO and Rh D grouping, antibody screen and a bedside identity check**, because the commonest fatal reaction is still **the right blood given to the wrong patient**.",
     sections: [
       {
         heading: "Definition and the classification that matters",
@@ -11,7 +11,7 @@ const rewrites: Record<string, TopicRewrite> = {
           "**Blood transfusion** is the therapeutic intravenous administration of whole blood or, far more usually, **a single component separated from it**, prescribed like any drug for a defined indication, dose and rate. [Bailey and Love 28e]",
           "**Component therapy is the rule**: one donation is separated into **packed red cells, fresh frozen plasma, platelets and cryoprecipitate**, so one donor treats three or four patients and each patient receives only what is missing. [NBTC 2022]",
           "**Whole blood** (450 mL plus 63 mL CPDA-1, 2-6 degrees C, 35 days) has no working platelets or factors V and VIII after 24-48 hours, so its only uses are **exchange transfusion and massive haemorrhage where components are unavailable**. [NBTC 2022]",
-          "**Restrictive red cell threshold**: transfuse at **Hb below 7 g/dL** in most stable inpatients including ICU, septic shock and upper GI bleeding, and **below 8 g/dL** with cardiovascular disease or orthopaedic and cardiac surgery (TRICC, TRISS, Villanueva, FOCUS trials). [AABB 2023]",
+          "**Restrictive red cell threshold**: transfuse at **Hb below 7 g/dL** in most stable inpatients including ICU, septic shock and upper GI bleeding, and **below 8 g/dL** with pre-existing cardiovascular disease or orthopaedic surgery, and **below 7.5 g/dL** in cardiac surgery (TRICC, TRISS, Villanueva, FOCUS, TRICS-III trials). [AABB 2023]",
           "**Acute myocardial infarction is the exception** - after the MINT trial, a **liberal strategy (transfuse when Hb is under 10 g/dL)** is now suggested in hospitalised acute MI (AABB 2025 international AMI guideline; ACC/AHA 2025 ACS class 2b: keep Hb 10 g/dL or more if not actively bleeding). [AABB 2025]",
           "**Symptomatic anaemia at any haemoglobin** (angina, syncope, dyspnoea at rest, heart failure) is an indication in its own right, and in **acute haemorrhage the decision is clinical** because the Hb lags for hours. [AABB 2023]",
           "**Massive transfusion** is replacement of **one blood volume in 24 hours, 10 units in 24 hours, or 4 units in 1 hour with ongoing bleeding** - it triggers a protocol, not unit-by-unit ordering. [ATLS 11e]",
@@ -163,7 +163,7 @@ const rewrites: Record<string, TopicRewrite> = {
         heading: "Drugs: dose, duration and side effects",
         columns: ["Drug", "Mechanism", "Dose and duration", "Side effects", "How to take"],
         rows: [
-          ["Packed red cells", "Restore oxygen-carrying capacity", "1 unit raises Hb about 1 g/dL; child 10-15 mL/kg; threshold Hb 7 g/dL (8 g/dL cardiac or surgical)", "Haemolytic, febrile, allergic reactions, TACO, iron overload", "One unit at a time over 90-120 min, within 4 h of issue; saline only in line; observe first 15 min"],
+          ["Packed red cells", "Restore oxygen-carrying capacity", "1 unit raises Hb about 1 g/dL; child 10-15 mL/kg; threshold Hb 7 g/dL (8 g/dL cardiovascular disease or orthopaedic surgery)", "Haemolytic, febrile, allergic reactions, TACO, iron overload", "One unit at a time over 90-120 min, within 4 h of issue; saline only in line; observe first 15 min"],
           ["Fresh frozen plasma", "Replaces all coagulation factors", "10-15 mL/kg (about 4 units adult) for bleeding with PT/APTT over 1.5 x normal", "TRALI, TACO, allergy", "ABO-compatible; thaw at 37 degrees C, use within 4 h; each unit over about 30 min"],
           ["Platelets (RDP or SDP)", "Replace platelets for primary haemostasis", "4-6 RDP or 1 SDP adult; child 10 mL/kg; below 10,000 prophylactic, 50,000 surgery, 100,000 neurosurgery", "Bacterial sepsis, febrile reaction, refractoriness", "Store 20-24 degrees C with agitation, never refrigerate; infuse over 30 min"],
           ["Cryoprecipitate", "Concentrated fibrinogen, factor VIII, vWF, factor XIII", "1 unit per 5-10 kg (about 10 units adult) when fibrinogen below 1.5 g/L (2 g/L obstetric)", "Allergy, volume load small", "Thaw and use within 4 h; pooled units over 30 min"],
@@ -215,7 +215,7 @@ const rewrites: Record<string, TopicRewrite> = {
       "Fever, rash, diarrhoea and pancytopenia 1-4 weeks after blood from a relative - suspect TA-GVHD.",
     ],
     pearls: [
-      "Transfuse the patient, not the number: Hb 7 g/dL for most, 8 g/dL with cardiac disease or surgery, under 10 g/dL in acute MI (AABB 2025) - and one unit at a time.",
+      "Transfuse the patient, not the number: Hb 7 g/dL for most, 8 g/dL with cardiovascular disease or orthopaedic surgery (7.5 in cardiac surgery), under 10 g/dL in acute MI (AABB 2025) - and one unit at a time.",
       "Almost every fatal reaction is a clerical error; the bedside identity check (patient states name and date of birth) prevents what no laboratory test can.",
       "Only normal saline in the line: Ringer's lactate clots the unit (calcium) and 5% dextrose haemolyses it.",
       "The major crossmatch (donor cells against recipient serum) matters; the minor crossmatch is obsolete in component therapy.",
