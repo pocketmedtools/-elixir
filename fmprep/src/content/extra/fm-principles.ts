@@ -461,7 +461,7 @@ const topics: Topic[] = [
           "**First Referral Unit (FRU)** - a CHC, sub-district or district hospital providing **24x7 emergency obstetric care including caesarean section, newborn care and blood storage**. [IPHS 2022]",
           "**Sub-district and district hospital** - secondary care, specialist services, SNCU, dialysis, trauma care. [IPHS 2022]",
           "**Medical college and tertiary centres** - super-speciality care, AIIMS and state institutes. [Park 28e]",
-          "The **Urban Ayushman Arogya Mandir and UPHC** (one per 50,000 urban population) mirror this system in cities. [MoHFW NUHM 2023]",
+          "The **Urban Ayushman Arogya Mandir** (about one per 15,000-20,000) and **UPHC** (one per 50,000 urban population) mirror this system in cities. [MoHFW NUHM 2023]",
           "Private providers and PM-JAY empanelled hospitals form a **parallel referral network**; PM-JAY covers Rs 5 lakh per family per year. [NHA 2024]",
           "**Hub-and-spoke eSanjeevani AB-HWC** links the CHO at the HWC with a doctor at the PHC or district hub for teleconsultation before physical referral. [MoHFW eSanjeevani 2024]",
         ],
