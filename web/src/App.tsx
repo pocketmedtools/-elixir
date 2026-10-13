@@ -1,4 +1,4 @@
-import { Fragment, useEffect, useState, useSyncExternalStore } from "react";
+import { Fragment, useEffect, useRef, useState, useSyncExternalStore } from "react";
 import { clearLast, usePersist, type Codec } from "./lib/lastState";
 import HomeScreen from "./components/HomeScreen";
 import SavedScreen from "./components/SavedScreen";
@@ -20,6 +20,7 @@ import RegimenAnalyzerUI from "./components/RegimenAnalyzerUI";
 import ReportIssue from "./components/ReportIssue";
 import ToolIcon, { TOOL_HEX } from "./components/ToolIcon";
 import { getVersion, subscribe } from "./lib/accounts";
+import { isNativeApp } from "./lib/liveUpdate";
 
 type AppTab = MenuTarget;
 
@@ -48,6 +49,54 @@ export default function App() {
     window.addEventListener("pm-open-account", open);
     return () => window.removeEventListener("pm-open-account", open);
   }, []);
+
+  // Back: menu open → close it; a tool open → Home; on Home → close the app.
+  // Without this the Android back gesture did nothing on Home (the app's
+  // back handler swallowed it), so the app could not be closed by swiping.
+  const tabRef = useRef(tab);
+  tabRef.current = tab;
+  const menuRef = useRef(menuOpen);
+  menuRef.current = menuOpen;
+  const native = isNativeApp();
+  const exitApp = () => {
+    import("@capacitor/app").then(({ App }) => App.exitApp()).catch(() => {});
+  };
+  useEffect(() => {
+    if (!native) return;
+    let handle: { remove: () => void } | null = null;
+    let cancelled = false;
+    import("@capacitor/app")
+      .then(({ App }) =>
+        App.addListener("backButton", () => {
+          if (menuRef.current) setMenuOpen(false);
+          else if (tabRef.current !== "home") setTab("home");
+          else App.exitApp();
+        }),
+      )
+      .then((h) => {
+        if (cancelled) h.remove();
+        else handle = h;
+      })
+      .catch(() => {});
+    return () => {
+      cancelled = true;
+      handle?.remove();
+    };
+  }, [native, setTab]);
+  // Website: the browser Back button returns from a tool to Home too.
+  useEffect(() => {
+    if (native) return;
+    const onPop = () => {
+      setMenuOpen(false);
+      setTab("home");
+    };
+    window.addEventListener("popstate", onPop);
+    return () => window.removeEventListener("popstate", onPop);
+  }, [native, setTab]);
+  useEffect(() => {
+    if (native || tab === "home") return;
+    if (!(window.history.state && window.history.state.pmTool)) window.history.pushState({ pmTool: true }, "");
+  }, [native, tab]);
 
   // Inputs marked data-adv="N" jump focus to the next field once N digits
   // are typed, so a full entry never needs a manual tap on the next box.
@@ -188,6 +237,25 @@ export default function App() {
       <header className="app-header border-b border-[var(--line)]" style={{ background: "var(--card)" }}>
         <div className="mx-auto flex max-w-7xl flex-wrap items-center gap-x-3 gap-y-2 px-3 py-2.5 md:px-6">
           <div className="flex shrink-0 items-center gap-2">
+            {tab !== "home" ? (
+              <button
+                type="button"
+                aria-label="Back to Home"
+                onClick={() => setTab("home")}
+                className="rounded-lg border-2 border-slate-300 bg-white px-2.5 py-1 text-lg font-black leading-none text-slate-800"
+              >
+                ←
+              </button>
+            ) : native ? (
+              <button
+                type="button"
+                aria-label="Close app"
+                onClick={exitApp}
+                className="rounded-lg border-2 border-slate-300 bg-white px-2.5 py-1 text-sm font-black leading-none text-slate-800"
+              >
+                ✕ Close
+              </button>
+            ) : null}
             <button
               type="button"
               aria-label="Open menu"
