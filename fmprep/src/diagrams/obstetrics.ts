@@ -345,7 +345,7 @@ const diagrams: DiagramSet = {
         ],
         [
           "Ferric carboxymaltose",
-          "1000-1500 mg in 250 mL normal saline over 15-30 min",
+          "20 mg/kg up to 1000 mg in 100-250 mL normal saline over 15-30 min",
           "Single sitting, repeat after 1 week if needed",
           "After 12-14 weeks; hypophosphataemia",
         ],
@@ -391,7 +391,7 @@ const diagrams: DiagramSet = {
       kind: "ladder",
       heading: "Escalating iron therapy in pregnancy",
       caption:
-        "Iron sucrose 600 mg per week is the ceiling set by transferrin binding capacity; ferric carboxymaltose 1000-1500 mg corrects the whole deficit in one sitting, so one visit replaces six. [AMB 2018]",
+        "Iron sucrose 600 mg per week is the ceiling set by transferrin binding capacity; ferric carboxymaltose up to 1000 mg (20 mg/kg) corrects most of the deficit in one sitting, so one visit replaces five. [AMB 2018]",
       steps: [
         {
           label: "Oral iron 120 mg elemental daily",
@@ -932,9 +932,9 @@ const diagrams: DiagramSet = {
           detail: "A full bladder is a reversible cause of atony",
         },
         {
-          label: "Oxytocin 20 units in 500 mL Ringer lactate",
+          label: "Oxytocin 20 units in 1 L Ringer lactate",
           detail:
-            "40-60 drops per minute; never a rapid IV bolus, and never more than 3 L of oxytocin-containing fluid",
+            "60 drops per minute, then 40; never a rapid IV bolus, and never more than 3 L of oxytocin-containing fluid",
           tone: "warn",
         },
         {
@@ -999,7 +999,7 @@ const diagrams: DiagramSet = {
       steps: [
         {
           label: "Massage, empty bladder, oxytocin infusion",
-          detail: "20 units in 500 mL Ringer lactate at 40-60 drops per minute",
+          detail: "20 units in 1 L Ringer lactate at 60 drops per minute",
           tone: "good",
         },
         {

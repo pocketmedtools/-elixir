@@ -36,14 +36,14 @@ type Visual =
    in the latest guideline pass. */
 const REV_INKS: [RegExp, string, string][] = [
   [/latest|update|change|guideline/i, "#8a5a00", "#fbf1d9"],
-  [/pearl|one-liner|exam|remember|mnemonic/i, "#14532d", "#eaf5e4"],
+  [/pearl|one-liner|exam one|exam tip|remember|mnemonic/i, "#14532d", "#eaf5e4"],
   [/red flag|refer|emergenc|complicat|danger/i, "#b42318", "#fdecea"],
   [/defin|what it is|concept/i, "#0f3460", "#e8eef7"],
   [/classif|staging|grad|type/i, "#4a1259", "#f2e9f4"],
   [/aetiol|etiol|cause|risk factor|epidem|burden/i, "#4a3018", "#f5ede3"],
   [/patho|mechan/i, "#0d4a44", "#e5f2f0"],
   [/history|symptom|examination|sign|clinical|present/i, "#14532d", "#e8f3ec"],
-  [/investig|diagnos|criteria|test|lab|imaging|screen/i, "#7a2e08", "#fbeee4"],
+  [/investig|diagnos|criteria|\btests?\b|\blabs?\b|imaging|screen/i, "#7a2e08", "#fbeee4"],
   [/treat|manag|drug|first line|second|escalat|dose|therap|device|procedure|how to/i, "#7a1220", "#f8e8ea"],
   [/follow|monitor|prevent|programme|special|pregnan|child|elderly/i, "#1f4e79", "#e7eff7"],
 ];
