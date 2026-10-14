@@ -237,3 +237,6 @@ Crosscheck queue (3 subjects at a time): cardiovascular, respiratory, endocrine,
 - Word (.docx) files open with headings, bold, lists, tables and images kept; page view and full screen work as for HTML.
 - Fix: pdf.js needed Map.getOrInsertComputed, missing on Android web views - polyfilled.
 - GINA 2026 oxygen made uniform across the app: oxygen only if SpO2 <92%, titrated to 92-95% (adults and 6-11 y); children <=5 y keep >=92%; pregnancy keeps >=95%. Old 93-95% / 94-98% targets removed (preventive, undifferentiated symptoms).
+
+## Round 3 - readable revision notes
+- Done: respiratory, cardiovascular, endocrine, emergency (headed short points, drug/criteria tables shown as cards, exam pearls).

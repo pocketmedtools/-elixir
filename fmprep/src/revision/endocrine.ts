@@ -2,6 +2,160 @@ import type { RevisionSet } from "./index";
 
 const revision: RevisionSet = {
   "endocrine-t2dm-diagnosis-oral-drugs": {
+    notes: {
+      sections: [
+        {
+          title: "Definition and key facts",
+          points: [
+            "Type 2 diabetes is **progressive beta-cell failure** on a background of **insulin resistance**.",
+            "About half of beta-cell function is already lost at the time of diagnosis.",
+            "India: diabetes in about **11.4%** and prediabetes in about **15.3%** of adults (ICMR-INDIAB).",
+            "Indians develop it **a decade earlier** and at a lower BMI, so a normal BMI never excludes it.",
+            "Risks: family history, **central obesity** (waist 90 cm men, 80 cm women), past GDM, PCOS, steroids, antipsychotics.",
+            "**Remission** means HbA1c below 6.5% at least 3 months after stopping all glucose-lowering drugs.",
+          ],
+        },
+        {
+          title: "Classification that matters",
+          points: [
+            "Use the **ADA aetiological classification**: type 1, type 2, specific types and gestational diabetes.",
+            "Specific types include MODY, pancreatic diabetes and drug-induced diabetes.",
+            "**LADA**: adult, lean, GAD antibody positive, fails tablets within 6-12 months.",
+            "**Fibrocalculous pancreatic diabetes**: young, very lean, pancreatic calculi and steatorrhoea.",
+            "**Ketosis-prone diabetes**: DKA at onset but later becomes insulin-independent.",
+          ],
+        },
+        {
+          title: "How it happens (pathophysiology)",
+          points: [
+            "1. Visceral fat releases free fatty acids and cytokines (TNF-alpha, IL-6).",
+            "2. These cause **IRS-1 serine phosphorylation**, so fewer GLUT4 transporters reach the cell surface.",
+            "3. The liver keeps making glucose, so fasting glucose rises.",
+            "4. Beta cells compensate by hypersecretion for years.",
+            "5. Glucotoxicity, lipotoxicity and amyloid then cause **beta-cell failure**.",
+            "6. Eight organ defects together form **DeFronzo's ominous octet**, the reason for combination therapy.",
+          ],
+        },
+        {
+          title: "History in the OPD",
+          points: [
+            "Ask the **tempo of osmotic symptoms**; rapid weight loss in a lean patient suggests insulin deficiency.",
+            "Vomiting, abdominal pain or drowsiness with high glucose suggests **DKA** and needs admission.",
+            "Screen every diabetic for **TB**: cough 2 weeks or more, fever, night sweats.",
+            "Ask about complication symptoms already present: tingling feet, blurred vision, chest pain, claudication.",
+            "Take a drug, diet, fasting and alcohol history, and ask honestly about cost and adherence.",
+          ],
+        },
+        {
+          title: "Examination",
+          points: [
+            "BMI with Asian cut-offs: **overweight 23-24.9, obese 25 or more**.",
+            "Measure waist, and BP lying and standing for autonomic neuropathy.",
+            "Look for **acanthosis nigricans**, skin tags and genital candidiasis.",
+            "Feet: **10 g monofilament**, **128 Hz tuning fork**, ankle reflexes and both foot pulses.",
+            "Dilated fundoscopy at diagnosis, and look for signs of Cushing or acromegaly.",
+          ],
+        },
+        {
+          title: "Investigations",
+          points: [
+            "**Venous FPG plus HbA1c** on one sample is the practical diagnostic pair.",
+            "Diabetes: FPG **126 mg/dL or more**, 2-hour OGTT **200 or more**, or HbA1c **6.5% or more**.",
+            "Random glucose **200 or more with symptoms** is enough on its own.",
+            "Without symptoms, **two abnormal results** are needed; use a 75 g OGTT if they disagree.",
+            "**Never diagnose on a glucometer**; capillary values are for screening only.",
+            "Check haemoglobin, because **iron deficiency falsely raises HbA1c**.",
+            "Baseline: lipids, creatinine with eGFR, **urine ACR**, ALT, urine ketones, ECG over 40.",
+          ],
+        },
+        {
+          title: "Treatment - first line",
+          points: [
+            "Lifestyle for all: plate method, **150 minutes a week** of activity, and 5-7% weight loss.",
+            "**Metformin 500 mg once or twice daily with meals**, building up to 1 g twice daily.",
+            "With ASCVD, heart failure or CKD, add an **SGLT2 inhibitor or GLP-1 agonist** from day one.",
+            "Start **dual therapy** if HbA1c is 1.5% or more above target.",
+            "Start **insulin** if HbA1c is over 10%, glucose 300 or more, or the patient is catabolic.",
+          ],
+        },
+        {
+          title: "Treatment - next steps",
+          points: [
+            "Choose the second drug **by the organ you want to protect**, not by HbA1c.",
+            "Heart failure or CKD: **dapagliflozin or empagliflozin 10 mg** once daily.",
+            "ASCVD or obesity: a **GLP-1 agonist** such as semaglutide, or tirzepatide.",
+            "When cost limits choice: **gliclazide MR or glimepiride**, or teneligliptin.",
+            "If off target at 3 months, check adherence and cost, then add a drug from a new class.",
+          ],
+        },
+        {
+          title: "Special groups",
+          points: [
+            "Pregnancy: **insulin is preferred**; stop SGLT2 inhibitors, GLP-1 agonists, gliptins and pioglitazone.",
+            "eGFR 30-45: cap metformin at 1000 mg/day; **stop metformin below eGFR 30**.",
+            "Elderly: avoid glibenclamide and relax the HbA1c target to under 8%.",
+            "Ramadan: **break the fast if glucose is under 70 or over 300 mg/dL**.",
+          ],
+        },
+        {
+          title: "Referral and follow-up",
+          points: [
+            "Review 2-4 weeks after any change, then **HbA1c 3-monthly** until at target.",
+            "Targets: **HbA1c under 7%**, BP under 130/80, LDL under 70 (under 55 with ASCVD).",
+            "Yearly: urine ACR, eGFR, lipids, dilated fundus, full foot check, B12 on metformin.",
+            "Refer suspected type 1, LADA, MODY, three-drug failure, pregnancy or eGFR under 30.",
+            "Register in **NP-NCD** at the Ayushman Arogya Mandir for free metformin and glimepiride.",
+            "Vaccinate: yearly influenza, pneumococcal (**PCV20 or PCV21 alone**), hepatitis B, zoster, RSV.",
+          ],
+        },
+      ],
+      tables: [
+        {
+          heading: "Diagnostic cut-offs (plasma glucose in mg/dL)",
+          columns: ["Category", "Fasting glucose", "2-h OGTT", "HbA1c"],
+          rows: [
+            ["Normal", "Under 100", "Under 140", "Under 5.7%"],
+            ["Prediabetes", "100-125 (IFG)", "140-199 (IGT)", "5.7-6.4%"],
+            ["Diabetes", "126 or more", "200 or more", "6.5% or more"],
+            ["Diabetes with symptoms", "Random 200 or more", "-", "-"],
+          ],
+        },
+        {
+          heading: "Oral and injectable drugs for type 2 diabetes",
+          columns: ["Drug", "Dose and route", "Duration", "Key side effects / cautions"],
+          rows: [
+            ["Metformin", "500 mg OD-BD oral with meals, up to 1 g BD", "Long-term", "GI upset, B12 deficiency; stop eGFR under 30"],
+            ["Glimepiride", "1 mg OD oral before breakfast, up to 4 mg", "Long-term", "Hypoglycaemia, weight gain; no meal, no pill"],
+            ["Gliclazide MR", "30-120 mg OD oral with breakfast", "Long-term", "Hypoglycaemia (less than glibenclamide)"],
+            ["Dapagliflozin / empagliflozin", "10 mg OD oral, morning", "Long-term", "Genital thrush, euglycaemic DKA; stop 3 days pre-op"],
+            ["Teneligliptin / sitagliptin", "20 mg / 100 mg OD oral", "Long-term", "Pancreatitis, bullous pemphigoid; sitagliptin needs renal dosing"],
+            ["Pioglitazone", "7.5-30 mg OD oral (max 45 mg)", "Long-term; acts in 6-12 weeks", "Oedema, heart failure, fractures"],
+            ["Semaglutide", "0.25 mg weekly SC for 4 weeks, then 0.5-1 mg", "Long-term", "Nausea, gallstones; avoid with MTC or MEN2"],
+            ["Tirzepatide", "2.5 mg weekly SC, up 2.5 mg every 4 weeks", "Long-term; 5-15 mg maintenance", "Nausea, vomiting, diarrhoea, gallstones"],
+          ],
+        },
+        {
+          heading: "Types of diabetes in the Indian OPD",
+          columns: ["Type", "Typical patient", "Key test", "First treatment"],
+          rows: [
+            ["Type 2", "Overweight, family history, slow onset", "FPG, HbA1c", "Lifestyle plus metformin"],
+            ["Type 1", "Young, lean, rapid weight loss, ketosis", "Low C-peptide, islet antibodies", "Basal-bolus insulin"],
+            ["LADA", "Adult, lean, fails tablets in 6-12 months", "GAD antibody positive", "Early insulin; avoid sulfonylureas"],
+            ["MODY", "Onset under 25, three generations, no ketosis", "Genetic testing (HNF1A, GCK)", "HNF1A: low-dose sulfonylurea"],
+            ["FCPD", "Very lean, abdominal pain, steatorrhoea", "Pancreatic calculi on X-ray", "Insulin plus pancreatic enzymes"],
+          ],
+        },
+      ],
+      remember: [
+        "One abnormal test is not diabetes unless the patient has symptoms.",
+        "Check haemoglobin before you trust HbA1c in India.",
+        "Second drug by organ: heart failure or CKD gets SGLT2i, ASCVD or obesity gets GLP-1 RA.",
+        "Sulfonylureas: **no meal, no pill**, and never glibenclamide in the elderly.",
+        "The early eGFR dip of 3-5 on SGLT2 inhibitors is protective; do not stop the drug.",
+        "Oral semaglutide: empty stomach, 120 mL water or less, nothing for 30 minutes.",
+        "IDPP-1: lifestyle 28.5%, metformin 26.4%, both 28.2%; combining adds nothing.",
+      ],
+    },
     checked: "2026-10",
     updated: [
       "ADA 2026: CGM now recommended from diagnosis for anyone on insulin or a hypoglycaemia-causing drug (sulfonylurea, glinide).",
@@ -74,6 +228,159 @@ const revision: RevisionSet = {
   },
 
   "endocrine-insulin-initiation": {
+    notes: {
+      sections: [
+        {
+          title: "Definition and key facts",
+          points: [
+            "Insulin therapy replaces **basal insulin** (about half of daily output) and **prandial (bolus) insulin**.",
+            "Start in type 2 when **HbA1c is over 10%** or glucose is 300 mg/dL or more.",
+            "Also start when the patient is **catabolic or ketotic**, or above target on 2-3 oral drugs.",
+            "Other indications: pregnancy, acute illness, surgery, high-dose steroids, eGFR under 30.",
+            "A **GLP-1 agonist or tirzepatide is preferred before insulin** unless the patient is catabolic.",
+            "Once-weekly basal **insulin icodec** was launched in India in July 2026.",
+          ],
+        },
+        {
+          title: "Classification that matters",
+          points: [
+            "Insulins are classified **by time-action profile**: rapid, short, intermediate, long and ultra-long.",
+            "Regimens: **basal only**, basal plus, **basal-bolus**, and premix twice or thrice daily.",
+            "Basal-bolus is the standard regimen for **type 1 diabetes**.",
+            "Indian vials come as **U-40 and U-100**; pens are always U-100.",
+          ],
+        },
+        {
+          title: "How it happens (pathophysiology)",
+          points: [
+            "1. Type 2 diabetes loses the **first-phase insulin burst** first, so post-meal glucose rises.",
+            "2. Beta-cell mass then falls a few percent every year, so most patients eventually need insulin.",
+            "3. **Glucotoxicity is reversible**: 2-4 weeks of insulin restores some beta-cell secretion.",
+            "4. Injected insulin reverses the portal gradient, causing weight gain and hypoglycaemia risk.",
+            "5. Regular insulin sits as hexamers, so it must be given **30 minutes before meals**.",
+            "6. Rapid analogues break up quickly, so they are given **0-15 minutes before** the meal.",
+          ],
+        },
+        {
+          title: "History in the OPD",
+          points: [
+            "Review the HbA1c trend on 2-3 optimised oral drugs, and confirm true failure.",
+            "Check **adherence and cost** before blaming the tablets.",
+            "Address **psychological insulin resistance**: needle fear and myths about blindness or kidney failure.",
+            "Ask the **meal pattern**, because it decides basal, premix or basal-bolus.",
+            "Ask who will inject: vision, dexterity, cognition, and whether a fridge is available.",
+            "Ask about hypoglycaemia, driving or machinery work, and pregnancy plans.",
+          ],
+        },
+        {
+          title: "Investigations",
+          points: [
+            "**HbA1c every 3 months** until stable.",
+            "On basal insulin, check **fasting glucose daily** during titration.",
+            "Take **one 3 a.m. reading** before raising evening insulin for a high fasting value.",
+            "**CGM is recommended for everyone on insulin** (ADA 2026); aim time in range over 70%.",
+            "Check creatinine and eGFR, because falling kidney function causes new hypoglycaemia.",
+          ],
+        },
+        {
+          title: "Treatment - first line",
+          points: [
+            "Start **basal insulin 10 units** (or 0.1-0.2 units/kg) once daily.",
+            "Give NPH at **bedtime, around 10 p.m.**; glargine at any fixed time daily.",
+            "Titrate by **2 units every 3 days** until fasting glucose is **80-130 mg/dL**.",
+            "Reduce by 4 units or 10-20% for any value under 70 mg/dL.",
+            "**Keep metformin**, and halve or stop the sulfonylurea when basal starts.",
+            "Teach hypoglycaemia care at the first visit: the **rule of 15**.",
+          ],
+        },
+        {
+          title: "Treatment - next steps",
+          points: [
+            "**Over-basalisation**: basal over **0.5 units/kg/day** with HbA1c still high.",
+            "Then stop raising basal and add a **GLP-1 agonist or prandial insulin**.",
+            "**Basal plus**: add 4 units rapid insulin before the largest meal.",
+            "**Basal-bolus**: 0.4-0.5 units/kg/day, half basal and half split over three meals.",
+            "**Premix 30/70**: 0.2-0.3 units/kg/day, two-thirds before breakfast and one-third before dinner.",
+            "Stop the sulfonylurea completely once prandial insulin is added.",
+          ],
+        },
+        {
+          title: "Injection technique",
+          points: [
+            "Use a **4 mm pen needle** at 90 degrees without a skin fold.",
+            "**Roll and tip 10 times** for NPH or premix until evenly milky.",
+            "Prime 2 units, inject, and **hold for 10 seconds** before withdrawing.",
+            "Rotate sites at least 1 cm apart; abdomen is fastest, thigh is slower.",
+            "Mixing in a syringe: **clear before cloudy**; never mix glargine, detemir or degludec.",
+            "Store unopened insulin at **2-8 degrees C**; in-use pen at room temperature for 28 days.",
+          ],
+        },
+        {
+          title: "Special groups",
+          points: [
+            "Sick days: **never stop basal insulin**; check ketones if glucose is over 250.",
+            "Ramadan: reduce basal by **20-40%** and give the main dose at iftar.",
+            "Night before surgery: give **75-80% of the usual basal** dose.",
+            "Pregnancy: insulin is first-line; aspart, lispro, detemir and glargine are acceptable.",
+            "Kidney disease: reduce doses as eGFR falls, often by 25-50%.",
+          ],
+        },
+        {
+          title: "Complications and red flags",
+          points: [
+            "**Hypoglycaemia** is the main side effect; reduce the dose after any unexplained low.",
+            "Weight gain of 2-4 kg, offset by metformin, SGLT2 inhibitors or GLP-1 agonists.",
+            "**Lipohypertrophy** causes erratic glucose; palpate every injection site at every visit.",
+            "When moving off a lump to fresh skin, reduce the dose by about 10-20%.",
+            "A **U-40 syringe with U-100 insulin** gives 2.5 times the intended dose.",
+            "Refer recurrent severe hypoglycaemia, unawareness, pregnancy, or doses over 1.5-2 units/kg.",
+          ],
+        },
+      ],
+      tables: [
+        {
+          heading: "Insulin types and how to give them",
+          columns: ["Drug", "Dose and route", "Duration", "Key side effects / cautions"],
+          rows: [
+            ["Regular human insulin", "SC 30 min before meal; IV 0.1 units/kg/h in DKA", "Onset 30-60 min, peak 2-4 h, lasts 6-8 h", "Late hypoglycaemia 4-6 h after meal"],
+            ["Aspart / lispro / glulisine", "SC 0-15 min before meal; 4 units with largest meal", "Onset 10-15 min, peak 1-2 h, lasts 3-5 h", "Skip if meal skipped"],
+            ["NPH (isophane)", "SC 10 units or 0.1-0.2 units/kg at bedtime", "Peak 4-8 h, lasts 12-16 h", "Nocturnal hypoglycaemia; roll before use"],
+            ["Glargine U100 / detemir", "SC 10 units once daily, same time", "Flat, 20-24 h", "Never mix with other insulin"],
+            ["Degludec / glargine U300", "SC 10 units once daily; degludec 8 h apart minimum", "Over 24-42 h", "Lowest night hypoglycaemia; cost"],
+            ["Premix human 30/70", "SC 0.2-0.3 units/kg/day, 2/3 morning, 1/3 evening", "Dual peak; given 30 min before meals", "Hypoglycaemia if a meal is missed"],
+            ["IDegAsp 70/30", "SC 10 units once daily with largest meal", "Basal plus one meal cover", "Clear; no resuspension needed"],
+          ],
+        },
+        {
+          heading: "Regimens: start and titrate",
+          columns: ["Regimen", "Best for", "Starting dose", "Titrate against"],
+          rows: [
+            ["Basal only", "Most type 2 starting insulin", "10 units at bedtime", "Fasting glucose; +2 units every 3 days"],
+            ["Basal plus", "Fasting at target, HbA1c not", "Add 4 units rapid at largest meal", "2-h value after that meal"],
+            ["Basal-bolus", "Type 1; type 2 needing flexibility", "0.4-0.5 units/kg/day, 50:50", "Pre-meal and bedtime values"],
+            ["Premix twice daily", "Fixed meals, low literacy, cost", "0.2-0.3 units/kg/day", "Morning dose by pre-dinner; evening dose by fasting"],
+          ],
+        },
+        {
+          heading: "High fasting glucose: what the 3 a.m. reading means",
+          columns: ["3 a.m. glucose", "Diagnosis", "Why it happens"],
+          rows: [
+            ["High", "Basal underdose", "Not enough overnight insulin"],
+            ["Normal, rising from about 4 a.m.", "Dawn phenomenon", "Pre-waking growth hormone and cortisol surge"],
+            ["Low (under 70)", "Somogyi rebound", "Counter-regulatory hormones after a night hypo"],
+          ],
+        },
+      ],
+      remember: [
+        "Basal 10 units at bedtime, plus 2 units every 3 days, to fasting 80-130.",
+        "Never raise evening insulin without a 3 a.m. reading.",
+        "Regular insulin 30 minutes before food; rapid analogues at the plate.",
+        "Basal over 0.5 units/kg with high HbA1c means add prandial or GLP-1, never more basal.",
+        "Halve the sulfonylurea when basal starts; stop it when prandial insulin starts.",
+        "Mixing: **clear before cloudy**.",
+        "No fridge? An earthen pot (matka) with wet sand keeps insulin cool.",
+      ],
+    },
     checked: "2026-10",
     updated: [
       "ADA 2026: CGM recommended from diagnosis and any time thereafter for all on insulin; pump/AID no longer needs C-peptide or antibody prerequisites.",
@@ -140,6 +447,167 @@ const revision: RevisionSet = {
   },
 
   "endocrine-diabetes-complication-screening": {
+    notes: {
+      sections: [
+        {
+          title: "Definition and key facts",
+          points: [
+            "**Microvascular** complications (eye, kidney, nerve) are driven mainly by glucose.",
+            "**Macrovascular** disease (heart, brain, legs) is driven as much by BP, LDL and smoking.",
+            "The **diabetic foot** is where neuropathy, ischaemia and infection meet.",
+            "Screen **type 2 from the day of diagnosis**; 15-20% already have retinopathy.",
+            "Screen **type 1 from 5 years after diagnosis**, and from puberty in children.",
+          ],
+        },
+        {
+          title: "Classification that matters",
+          points: [
+            "Retinopathy: no DR, mild, moderate and severe NPDR, then **proliferative DR**.",
+            "**4-2-1 rule** for severe NPDR: haemorrhages in 4 quadrants, beading in 2, IRMA in 1.",
+            "Macular oedema is graded separately as centre-involving or not.",
+            "Kidney disease uses **KDIGO GFR stages G1-G5** and albuminuria stages A1-A3.",
+            "Albuminuria: **A1 under 30, A2 30-300, A3 over 300 mg/g** on urine ACR.",
+            "Foot infection is graded mild, moderate or severe (IWGDF/IDSA); Wagner 0-5 describes depth.",
+          ],
+        },
+        {
+          title: "How it happens (pathophysiology)",
+          points: [
+            "1. Retina, kidney and nerve cells take up glucose via **GLUT1** and cannot limit it.",
+            "2. Excess glucose drives polyol, AGE, PKC and hexosamine pathways, all through superoxide.",
+            "3. In the retina, **pericyte loss** creates microaneurysms, the earliest sign.",
+            "4. Ischaemic retina releases **VEGF**, which grows fragile new vessels.",
+            "5. In the kidney, **hyperfiltration** and glomerular hypertension come first, then albuminuria.",
+            "6. Neuropathy affects **small fibres first**, then large fibres, in a glove-and-stocking pattern.",
+            "7. Neuropathy plus deformity plus unfelt trauma produces most foot ulcers.",
+          ],
+        },
+        {
+          title: "History in the OPD",
+          points: [
+            "Ask diabetes duration, HbA1c trend, BP, lipids and smoking.",
+            "Eyes: blurred central vision, sudden floaters, and the date of the last dilated exam.",
+            "Nerves: numbness, **burning worse at night**, and walking on cotton wool.",
+            "Feet: **previous ulcer or amputation** (strongest predictor), barefoot walking, home corn treatment.",
+            "Autonomic: dizziness on standing, early satiety, erectile dysfunction, lost hypo warnings.",
+            "Other causes of neuropathy: B12 deficiency on metformin, hypothyroidism, alcohol, **leprosy**.",
+          ],
+        },
+        {
+          title: "Examination",
+          points: [
+            "Visual acuity, then **dilated fundoscopy** or a fundus photograph.",
+            "**10 g monofilament** at the hallux and 1st, 3rd and 5th metatarsal heads.",
+            "**128 Hz tuning fork** on the great toe, plus ankle reflexes.",
+            "Feel dorsalis pedis and posterior tibial pulses; measure **ABI** if absent.",
+            "Inspect for callus, deformity and a **hot swollen foot** (Charcot).",
+            "Postural BP: a fall of **20 systolic or 10 diastolic** means autonomic neuropathy.",
+          ],
+        },
+        {
+          title: "Investigations",
+          points: [
+            "**Urine ACR yearly**; confirm albuminuria on **2 of 3 samples** over 3-6 months.",
+            "Creatinine with eGFR yearly; potassium when on ACE inhibitor, ARB or finerenone.",
+            "Fasting lipids yearly, ECG at baseline, B12 on long-term metformin.",
+            "No routine stress test or coronary CT in patients without symptoms.",
+            "Calcified arteries give a **falsely high ABI over 1.3**; use toe pressure.",
+            "Infected ulcer: foot X-ray, **deep-tissue culture** (not a swab), and probe-to-bone.",
+          ],
+        },
+        {
+          title: "Treatment - first line",
+          points: [
+            "Control everything: HbA1c under 7%, **BP under 130/80**, LDL to target, no smoking.",
+            "Lower a very high HbA1c over months, after examining the fundus first.",
+            "**Statin for everyone aged 40-75**; LDL under 70, or under 55 with ASCVD.",
+            "**ACE inhibitor or ARB** at maximum tolerated dose for albuminuria.",
+            "**SGLT2 inhibitor** for CKD with eGFR 20 or more, regardless of HbA1c.",
+            "Foot education: **never walk barefoot**, inspect soles daily, and wear proper footwear.",
+          ],
+        },
+        {
+          title: "Treatment - next steps",
+          points: [
+            "**Finerenone** if albuminuria persists on maximum RAS blockade with K 5.0 or less.",
+            "**Semaglutide 1 mg weekly** reduced kidney failure and death in diabetic CKD (FLOW).",
+            "Painful neuropathy: **pregabalin, duloxetine or amitriptyline**, chosen by comorbidity.",
+            "Retinopathy: **anti-VEGF** for macular oedema, **pan-retinal photocoagulation** for PDR.",
+            "Fenofibrate slows retinopathy but does not replace the ophthalmologist.",
+            "Neuropathic plantar ulcer: debride and offload with a **total contact cast**.",
+          ],
+        },
+        {
+          title: "Complications and red flags",
+          points: [
+            "**Macular oedema** is the commonest cause of visual loss in type 2 diabetes.",
+            "Sudden visual loss or new floaters needs same-day ophthalmology.",
+            "A **hot, red, swollen, painless foot** is acute Charcot; cast it and refer.",
+            "Foot ulcer with cellulitis, crepitus or exposed bone needs admission and debridement.",
+            "Rest pain, absent pulses or gangrene means critical ischaemia; refer urgently.",
+            "Stop RAS blockers if creatinine rises over 30% or potassium exceeds 5.5.",
+          ],
+        },
+        {
+          title: "Referral and follow-up",
+          points: [
+            "Every year: fundus, ACR, eGFR, monofilament and pulses, lipids.",
+            "Every visit: BP, weight and a quick look at the feet.",
+            "Pregnancy: eye check before conception, each trimester, and for 1 year after.",
+            "Refer to nephrology at **eGFR under 30** or rapid decline over 5 mL/min/year.",
+            "Suspect non-diabetic kidney disease with heavy proteinuria but no retinopathy.",
+          ],
+        },
+      ],
+      tables: [
+        {
+          heading: "Drugs for diabetic complications",
+          columns: ["Drug", "Dose and route", "Duration", "Key side effects / cautions"],
+          rows: [
+            ["Ramipril / telmisartan", "Ramipril 2.5-10 mg OD; telmisartan 40-80 mg OD oral", "Long-term, maximum tolerated dose", "High K, creatinine rise; K check at 1-2 weeks"],
+            ["Dapagliflozin / empagliflozin", "10 mg OD oral", "Until dialysis; start if eGFR 20 or more", "Genital thrush, euglycaemic DKA"],
+            ["Finerenone", "10 mg OD (eGFR 25-59); 20 mg OD (60 or more)", "Long-term", "Hyperkalaemia; check K at 4 weeks"],
+            ["Atorvastatin / rosuvastatin", "Moderate 10-20 / 5-10 mg; high 40-80 / 20-40 mg", "Lifelong", "Myalgia, raised ALT; stop in pregnancy"],
+            ["Pregabalin", "75 mg at night, then 75-150 mg BD (max 300 mg/day)", "Long-term; taper to stop", "Dizziness, oedema, weight gain; renal dose"],
+            ["Duloxetine", "30 mg OD for 1 week, then 60 mg OD", "Long-term", "Nausea; avoid eGFR under 30 or liver disease"],
+            ["Amitriptyline", "10-25 mg at night, up to 75 mg", "Long-term", "Anticholinergic; avoid elderly, glaucoma, IHD"],
+            ["Amoxicillin-clavulanate", "625 mg TDS oral (mild); 1.2 g IV 8-hourly", "1-2 weeks; osteomyelitis about 6 weeks", "Diarrhoea, rash, cholestatic jaundice"],
+            ["Sildenafil", "50 mg 1 hour before intercourse (25-100 mg)", "As needed", "Never with nitrates"],
+          ],
+        },
+        {
+          heading: "Diabetic retinopathy stage and action",
+          columns: ["Stage", "Findings", "Action"],
+          rows: [
+            ["No DR", "Normal fundus", "Rescreen in 1-2 years"],
+            ["Mild NPDR", "Microaneurysms only", "Optimise control; review in 12 months"],
+            ["Moderate NPDR", "More than mild, less than severe", "Ophthalmology in 3-6 months"],
+            ["Severe NPDR", "4-2-1 rule", "Refer within weeks; consider PRP"],
+            ["PDR", "New vessels, vitreous haemorrhage", "Urgent PRP, anti-VEGF or vitrectomy"],
+            ["Macular oedema", "Thickening or exudates near fovea", "Urgent OCT and anti-VEGF"],
+          ],
+        },
+        {
+          heading: "IWGDF 2023 foot risk categories",
+          columns: ["Category", "Features", "Examine feet every"],
+          rows: [
+            ["0 - very low", "No LOPS, no PAD", "12 months"],
+            ["1 - low", "LOPS or PAD", "6-12 months"],
+            ["2 - moderate", "Two of LOPS, PAD, deformity", "3-6 months"],
+            ["3 - high", "Plus past ulcer, amputation or ESRD", "1-3 months"],
+          ],
+        },
+      ],
+      remember: [
+        "Type 2 screened from diagnosis; type 1 from 5 years after.",
+        "Severe NPDR is the **4-2-1 rule**.",
+        "Never diagnose kidney disease on one ACR: confirm 2 of 3.",
+        "An early eGFR dip up to 30% on ACEi, ARB or SGLT2i is protective.",
+        "Four kidney pillars: ACEi or ARB, SGLT2i, finerenone, GLP-1 agonist.",
+        "Hot, swollen, painless foot in a neuropathic diabetic is Charcot until proved otherwise.",
+        "ABI over 1.3 is falsely reassuring; use toe pressures.",
+      ],
+    },
     checked: "2026-10",
     master: {
       heading: "Master revision table - diabetic complication screening",
@@ -205,6 +673,161 @@ const revision: RevisionSet = {
   },
 
   "endocrine-hypoglycaemia": {
+    notes: {
+      sections: [
+        {
+          title: "Definition and key facts",
+          points: [
+            "**Level 1**: glucose **below 70 mg/dL** but 54 or above; treat and review the regimen.",
+            "**Level 2**: glucose **below 54 mg/dL**; neuroglycopenia and cognitive decline begin.",
+            "**Level 3**: any episode **needing another person's help**, whatever the number.",
+            "Without diabetes, true hypoglycaemia needs **Whipple triad**: symptoms, low glucose, relief with glucose.",
+            "A previous severe low is the **strongest predictor** of the next one.",
+          ],
+        },
+        {
+          title: "Causes and risk factors",
+          points: [
+            "Too much insulin or a sulfonylurea, especially **glibenclamide**.",
+            "Missed or delayed meals, religious fasts, vomiting, and unusual exercise.",
+            "**Alcohol**, especially without food; the low often comes overnight.",
+            "**CKD** reduces insulin clearance and prolongs sulfonylurea action.",
+            "Falling insulin needs may signal new **Addison disease, hypothyroidism**, TB or cancer.",
+            "Without diabetes: insulinoma, drugs, organ failure, IGF-2 tumours, or post-bariatric surgery.",
+          ],
+        },
+        {
+          title: "How it happens (pathophysiology)",
+          points: [
+            "1. The brain depends on glucose and cannot store more than a few minutes' worth.",
+            "2. First defence: insulin secretion falls at about **80-85 mg/dL**.",
+            "3. Second defence: **glucagon** rises at 65-70 mg/dL and releases liver glycogen.",
+            "4. Third defence: **adrenaline** at 65-70 mg/dL; cortisol and growth hormone act later.",
+            "5. Warning symptoms (sweating, tremor, hunger) appear at about 55-60 mg/dL.",
+            "6. Neuroglycopenia (confusion, seizures, coma) begins below about 50 mg/dL.",
+            "7. Repeated lows blunt the adrenaline response, causing **hypoglycaemia unawareness** (HAAF).",
+          ],
+        },
+        {
+          title: "History in the OPD",
+          points: [
+            "Ask about lows **by symptom**: sweating, shaking, night sweats, nightmares, morning headache.",
+            "Fasting or night lows suggest basal insulin or long-acting sulfonylurea excess.",
+            "Ask how severe it was, and whether help, a seizure or an accident occurred.",
+            "Assess awareness: a **Gold or Clarke score of 4 or more** means impaired awareness.",
+            "Ask about interacting drugs, herbal remedies, alcohol, driving and living alone.",
+          ],
+        },
+        {
+          title: "Examination",
+          points: [
+            "In any unconscious or fitting patient, **check capillary glucose first**.",
+            "Adrenergic signs: pallor, cold sweat, tremor and tachycardia.",
+            "Check the airway and the ability to swallow; this decides oral or IV treatment.",
+            "Look for Addison pigmentation, hypothyroid signs, CKD and liver disease.",
+            "Feel injection sites for **lipohypertrophy**, which causes erratic absorption.",
+          ],
+        },
+        {
+          title: "Investigations",
+          points: [
+            "Confirm doubtful meter readings with plasma glucose in a **fluoride tube**.",
+            "Check creatinine and eGFR in every recurrent case.",
+            "Check LFTs, TSH, and **8 a.m. cortisol** if Addison disease is suspected.",
+            "Non-diabetic with Whipple triad: take a **critical sample** during the low.",
+            "Critical sample: glucose, insulin, **C-peptide**, beta-hydroxybutyrate and a sulfonylurea screen.",
+            "If no episode is captured, arrange a **supervised 72-hour fast** in hospital.",
+          ],
+        },
+        {
+          title: "Treatment - first line",
+          points: [
+            "Conscious patient: **rule of 15**, giving 15-20 g glucose and rechecking in 15 minutes.",
+            "Repeat if still under 70, then give a meal or snack.",
+            "On acarbose or voglibose, give **pure glucose**, not table sugar.",
+            "Unconscious: **25% dextrose 100 mL IV** or 50% dextrose 50 mL.",
+            "No IV access: **glucagon 1 mg IM or SC**, or nasal glucagon 3 mg.",
+            "Children: oral glucose 0.3 g/kg; IV **10% dextrose 2 mL/kg** only.",
+            "Alcoholic or malnourished: give **thiamine 100 mg IV** with glucose.",
+          ],
+        },
+        {
+          title: "Treatment - next steps",
+          points: [
+            "Sulfonylurea or long-acting insulin low: **admit for 24-72 hours** with 10% dextrose infusion.",
+            "Add **octreotide 50-100 mcg SC** every 6-12 hours for sulfonylurea lows.",
+            "Stop glibenclamide; use gliclazide MR, glimepiride, or better a gliptin, SGLT2i or GLP-1 RA.",
+            "Cut the responsible insulin dose by **10-20%** after any unexplained low.",
+            "Switch NPH to a basal analogue if night lows persist.",
+            "Relax the HbA1c target to **under 7.5-8%** with recurrent lows or frailty.",
+          ],
+        },
+        {
+          title: "Complications and red flags",
+          points: [
+            "Not awake 15-30 minutes after normal glucose: look for stroke, sepsis or head injury.",
+            "Glucagon **fails when glycogen is empty**: alcohol, starvation, liver failure.",
+            "Beta-blockers mask tremor and palpitation, but **not sweating**.",
+            "Suspected deliberate overdose needs admission and psychiatric assessment.",
+            "Never discharge a non-diabetic with Whipple triad on reassurance alone.",
+          ],
+        },
+        {
+          title: "Prevention and programmes",
+          points: [
+            "Teach the rule of 15 to the patient and a family member.",
+            "Carry glucose and a **diabetes identity card** at all times.",
+            "Do not drive if glucose is **under 90 mg/dL**.",
+            "Unawareness is reversed by **2-3 weeks of strict avoidance** of lows.",
+            "Offer **CGM with alarms**; keep time below 70 mg/dL under 4%.",
+            "Prescribe glucagon to everyone on insulin and teach the family to use it.",
+          ],
+        },
+      ],
+      tables: [
+        {
+          heading: "ADA levels of hypoglycaemia",
+          columns: ["Level", "Glucose", "Clinical state", "Action"],
+          rows: [
+            ["Level 1 (alert)", "Below 70, 54 or above", "Adrenergic symptoms or none", "15-20 g glucose, recheck in 15 min"],
+            ["Level 2 (significant)", "Below 54 mg/dL", "Neuroglycopenia likely", "Oral glucose, snack, reduce the drug"],
+            ["Level 3 (severe)", "Any value", "Needs help; seizure or coma", "IV dextrose or IM glucagon; admit if SU"],
+          ],
+        },
+        {
+          heading: "Drugs used in hypoglycaemia",
+          columns: ["Drug", "Dose and route", "Duration", "Key side effects / cautions"],
+          rows: [
+            ["Oral glucose", "15-20 g oral (child 0.3 g/kg)", "Repeat every 15 min until over 70", "Follow with a snack"],
+            ["Dextrose 25% or 50%", "25% 100 mL or 50% 50 mL IV over 3-5 min", "Bolus; then 10% at 50-100 mL/h if needed", "50% is sclerosant; child uses 10% 2 mL/kg"],
+            ["Glucagon", "1 mg IM or SC (0.5 mg under 25 kg); nasal 3 mg", "Acts in 10-15 min; may repeat once", "Vomiting; fails if glycogen depleted"],
+            ["Octreotide", "50-100 mcg SC 6-12 hourly", "24-48 hours", "Cramps, nausea; for sulfonylurea lows"],
+            ["Thiamine", "100 mg IV before or with glucose", "Single dose", "Prevents Wernicke encephalopathy"],
+            ["Diazoxide", "3-8 mg/kg/day in 2-3 doses", "Long-term, inoperable insulinoma", "Oedema, hirsutism; give with a thiazide"],
+          ],
+        },
+        {
+          heading: "Critical sample: low glucose without diabetes",
+          columns: ["Cause", "Insulin", "C-peptide", "Sulfonylurea screen"],
+          rows: [
+            ["Insulinoma", "High", "High", "Negative"],
+            ["Injected insulin", "Very high", "Suppressed", "Negative"],
+            ["Sulfonylurea ingestion", "High", "High", "Positive"],
+            ["IGF-2 tumour", "Low", "Low", "Negative"],
+            ["Adrenal failure, alcohol, starvation", "Low", "Low", "Negative"],
+          ],
+        },
+      ],
+      remember: [
+        "Below 70 alert, below 54 significant; level 3 is defined by needing help.",
+        "**Rule of 15**: 15 g glucose, wait 15 minutes, recheck.",
+        "Acarbose patient: glucose, never sugar.",
+        "High insulin with low C-peptide means injected insulin.",
+        "Every sulfonylurea low is admitted; octreotide cuts rebound lows.",
+        "Glucagon fails in alcohol and starvation: no glycogen to release.",
+        "Thiamine before glucose in the alcoholic.",
+      ],
+    },
     checked: "2026-10",
     master: {
       heading: "Master revision table - hypoglycaemia",
@@ -258,6 +881,149 @@ const revision: RevisionSet = {
   },
 
   "endocrine-hypothyroidism": {
+    notes: {
+      sections: [
+        {
+          title: "Definition and key facts",
+          points: [
+            "**Overt primary hypothyroidism**: raised TSH with a **low free T4**.",
+            "**Subclinical hypothyroidism**: raised TSH with a normal free T4.",
+            "**Central hypothyroidism**: low free T4 with a low or inappropriately normal TSH.",
+            "About **10.9% of Indian adults** are hypothyroid, and a third are undiagnosed.",
+            "Congenital hypothyroidism affects about 1 in 1000-1700 Indian newborns.",
+          ],
+        },
+        {
+          title: "Causes and risk factors",
+          points: [
+            "**Hashimoto thyroiditis** is now the commonest cause in India.",
+            "Previous thyroidectomy, radioiodine treatment or neck irradiation.",
+            "Drugs: **amiodarone, lithium**, antithyroid drugs, interferon, checkpoint inhibitors.",
+            "Transient thyroiditis, such as post-partum and subacute thyroiditis.",
+            "Other autoimmune disease: type 1 diabetes, vitiligo, pernicious anaemia, Addison disease.",
+          ],
+        },
+        {
+          title: "How it happens (pathophysiology)",
+          points: [
+            "1. In Hashimoto, T cells destroy the gland, with **anti-TPO antibodies**.",
+            "2. Falling T4 makes TSH rise steeply, so **TSH is the most sensitive test**.",
+            "3. Low T3 lowers metabolic rate, causing cold intolerance, fatigue and weight gain.",
+            "4. Glycosaminoglycans bind water in tissues, causing **non-pitting myxoedema**.",
+            "5. Fewer liver LDL receptors raise cholesterol; slow muscle gives delayed ankle-jerk relaxation.",
+            "6. In pregnancy, TBG doubles, so the levothyroxine need rises **25-50%**.",
+          ],
+        },
+        {
+          title: "History in the OPD",
+          points: [
+            "Fatigue, cold intolerance, weight gain, constipation, dry skin and hair loss.",
+            "Women: **menorrhagia**, irregular cycles, infertility or recurrent miscarriage.",
+            "Low mood, slow thinking and poor memory: a reversible cause of depression.",
+            "Hoarse voice, carpal tunnel tingling, and neck swelling.",
+            "On treatment: ask **exactly how the tablet is taken**, and with what.",
+          ],
+        },
+        {
+          title: "Examination",
+          points: [
+            "Puffy face, dry coarse skin, and loss of the outer third of the eyebrows.",
+            "Look for **bradycardia** and diastolic hypertension on pulse and BP.",
+            "**Delayed relaxation of the ankle jerk** is the most specific bedside sign.",
+            "Firm, bosselated diffuse goitre suggests Hashimoto.",
+            "Newborn: prolonged jaundice, large tongue, umbilical hernia, large posterior fontanelle.",
+          ],
+        },
+        {
+          title: "Investigations",
+          points: [
+            "**TSH first**; add free T4 only if TSH is abnormal.",
+            "**Do not order T3** to diagnose hypothyroidism.",
+            "Anti-TPO antibodies **once** to confirm autoimmune cause; never repeat.",
+            "Repeat a raised TSH after **6-12 weeks** before treating subclinical disease.",
+            "Avoid testing in acute illness; stop biotin 48-72 hours before testing.",
+            "Central disease: check **8 a.m. cortisol** and MRI pituitary before starting thyroxine.",
+          ],
+        },
+        {
+          title: "Treatment - first line",
+          points: [
+            "**Levothyroxine 1.6 mcg/kg/day** in a healthy adult under 60, at full dose.",
+            "Elderly or coronary disease: start **12.5-25 mcg** and increase every 4-6 weeks.",
+            "Take it on an empty stomach, **30-60 minutes before breakfast**.",
+            "Keep it **4 hours apart** from calcium, iron, antacids and PPIs.",
+            "Treat subclinical disease if **TSH is 10 or more**, starting at 25-50 mcg.",
+            "Do not treat asymptomatic people over 70 with TSH under 10 (TRUST).",
+          ],
+        },
+        {
+          title: "Special groups",
+          points: [
+            "Known hypothyroid and pregnant: **two extra tablets a week** from the day pregnancy is confirmed.",
+            "Return to the pre-pregnancy dose straight after delivery.",
+            "ATA 2026: keep TSH within the **trimester-specific range**; fixed 2.5 targets are dropped.",
+            "Euthyroid anti-TPO positive women with infertility are **not** given levothyroxine (ATA 2026).",
+            "Newborn: **10-15 mcg/kg/day within the first 2 weeks**, crushed in breast milk.",
+            "Central disease: titrate on free T4; give **steroid before thyroxine** if cortisol is low.",
+          ],
+        },
+        {
+          title: "Complications and red flags",
+          points: [
+            "**Myxoedema coma**: hypothermia, bradycardia, hypotension, drowsiness and low sodium.",
+            "In coma, give **hydrocortisone 100 mg IV before thyroxine**, then IV levothyroxine.",
+            "Ventilate for CO2 retention, and rewarm passively with blankets only.",
+            "Over-replacement causes atrial fibrillation and bone loss.",
+            "A rapidly growing hard goitre in Hashimoto may be **thyroid lymphoma**.",
+          ],
+        },
+        {
+          title: "Referral and follow-up",
+          points: [
+            "Recheck **TSH 6-8 weeks** after any dose change, then every 6-12 months.",
+            "Target TSH about **0.5-2.5 mIU/L**; accept 4-6 over age 70.",
+            "Pregnancy: TSH every 4 weeks until 20 weeks, and 6 weeks post-partum.",
+            "High TSH on a large dose is non-adherence or malabsorption until proved otherwise.",
+            "Refer central disease, children, cardiac disease and difficult pregnancy control.",
+          ],
+        },
+      ],
+      tables: [
+        {
+          heading: "Reading thyroid function tests",
+          columns: ["Pattern", "TSH", "Free T4", "What to do"],
+          rows: [
+            ["Overt primary", "High", "Low", "Start levothyroxine"],
+            ["Subclinical - mild", "4.5-9.9 mIU/L", "Normal", "Repeat in 6-12 weeks with anti-TPO"],
+            ["Subclinical - marked", "10 or more", "Normal", "Treat"],
+            ["Central", "Low or normal", "Low", "Pituitary work-up; cortisol first"],
+            ["Non-thyroidal illness", "Normal or low", "Normal or low (T3 low)", "Do not treat; recheck after 6 weeks"],
+            ["Poor adherence, catch-up dosing", "High", "Normal or high", "Counsel; supervised weekly dose"],
+          ],
+        },
+        {
+          heading: "Drugs in hypothyroidism",
+          columns: ["Drug", "Dose and route", "Duration", "Key side effects / cautions"],
+          rows: [
+            ["Levothyroxine (adult)", "1.6 mcg/kg/day oral; elderly 12.5-25 mcg", "Lifelong; TSH at 6-8 weeks", "AF, bone loss if over-replaced"],
+            ["Levothyroxine (subclinical)", "25-50 mcg/day oral", "Titrate by TSH", "Avoid a suppressed TSH"],
+            ["Levothyroxine (pregnancy)", "Known: +25-30%; new overt 1.6-2 mcg/kg/day", "Until delivery, then old dose", "Increase the day pregnancy is confirmed"],
+            ["Levothyroxine (newborn)", "10-15 mcg/kg/day oral, crushed", "Start within 2 weeks of birth", "Not in soy formula"],
+            ["Levothyroxine IV", "200-400 mcg load, then 50-100 mcg daily", "Myxoedema coma only", "Arrhythmia, ischaemia; after hydrocortisone"],
+            ["Hydrocortisone", "100 mg IV 8-hourly", "Until adrenal failure excluded", "Hyperglycaemia, fluid retention"],
+          ],
+        },
+      ],
+      remember: [
+        "TSH screens, free T4 confirms, T3 has no role in diagnosis.",
+        "Recheck TSH 6-8 weeks after any change.",
+        "Full dose 1.6 mcg/kg; elderly or cardiac start 12.5-25 mcg.",
+        "Pregnancy: **two extra tablets a week** the day it is confirmed.",
+        "Steroid before thyroxine in coma or pituitary failure.",
+        "Never test thyroid function during acute illness.",
+        "Iodised salt: 30 ppm at production, 15 ppm at the consumer (NIDDCP).",
+      ],
+    },
     checked: "2026-10",
     updated: [
       "ATA 2026 (pregnancy): fixed TSH targets of 2.5 (first trimester) and 3.0 dropped - keep TSH within the trimester-specific range; about 0.1-4.0 mIU/L in the first trimester if no local range.",
@@ -327,6 +1093,165 @@ const revision: RevisionSet = {
   },
 
   "endocrine-diabetic-emergencies": {
+    notes: {
+      sections: [
+        {
+          title: "Definition and key facts",
+          points: [
+            "The two **hyperglycaemic crises** are DKA and HHS; about a third of adults have a mixed picture.",
+            "**DKA**: glucose 200 mg/dL or more (or known diabetes), ketones and acidosis.",
+            "DKA ketones: **beta-hydroxybutyrate 3.0 mmol/L or more**; acidosis: pH below 7.3 or bicarbonate below 18.",
+            "**HHS**: glucose **600 mg/dL or more** with effective osmolality **above 300 mOsm/kg** and little ketosis.",
+            "**Euglycaemic DKA** has glucose below 250, typically on SGLT2 inhibitors or in pregnancy.",
+            "Mortality is under 1-2% for DKA but **5-20% for HHS**.",
+          ],
+        },
+        {
+          title: "Causes and risk factors",
+          points: [
+            "**Infection** precipitates 30-50% of crises in India.",
+            "**Insulin omission**: cost, running out, fasting, fear of lows, or pump failure.",
+            "Drugs: SGLT2 inhibitors, steroids, thiazides, antipsychotics, checkpoint inhibitors.",
+            "MI, stroke, pancreatitis, alcohol, trauma, surgery and pregnancy.",
+            "Recurrent DKA in the young: think depression, eating disorder and cost barriers.",
+          ],
+        },
+        {
+          title: "How it happens (pathophysiology)",
+          points: [
+            "1. Insulin deficiency plus high glucagon, cortisol and adrenaline, usually from infection or omission.",
+            "2. The liver overproduces glucose while muscle and fat stop taking it up.",
+            "3. Unchecked lipolysis floods the liver with fatty acids, which become **ketoacids**.",
+            "4. Ketoacids consume bicarbonate, causing a **high anion gap acidosis** and Kussmaul breathing.",
+            "5. Osmotic diuresis loses water and potassium: **5-7 L in DKA, 8-10 L in HHS**.",
+            "6. In HHS, a little insulin blocks ketosis, so glucose and osmolality climb over days.",
+            "7. Total body potassium is low even when serum potassium looks normal or high.",
+          ],
+        },
+        {
+          title: "History in the OPD",
+          points: [
+            "Polyuria, thirst and weight loss over days (DKA) or weeks (HHS).",
+            "**Vomiting, abdominal pain and breathlessness** mean acidosis until proved otherwise.",
+            "Ask about missed insulin, infection symptoms and SGLT2 inhibitor use.",
+            "Ask about facial pain, nasal blockage or black discharge for **mucormycosis**.",
+            "HHS history often comes from a carer: elderly, poor intake, confusion over days.",
+          ],
+        },
+        {
+          title: "Examination",
+          points: [
+            "ABC and GCS first; GCS under 12 or shock needs ICU.",
+            "Dehydration signs: dry mucosa, tachycardia, postural drop and hypotension.",
+            "**Kussmaul breathing** and fruity breath point to ketoacidosis.",
+            "Hypothermia in sepsis with DKA is a poor sign.",
+            "Search for infection, including nose, palate and orbits for black eschar.",
+          ],
+        },
+        {
+          title: "Investigations",
+          points: [
+            "Bedside glucose and **blood beta-hydroxybutyrate**; urine sticks miss it.",
+            "**Venous blood gas** is enough for pH and bicarbonate.",
+            "Electrolytes, urea, creatinine; calculate the **anion gap** (normal 8-12).",
+            "**Effective osmolality** = 2 x Na + glucose/18.",
+            "Corrected sodium adds **1.6 mmol/L per 100 mg/dL** of glucose above 100.",
+            "ECG, cultures, chest X-ray, and CBC in every adult.",
+          ],
+        },
+        {
+          title: "Treatment - first line",
+          points: [
+            "**Fluid first**: 1-1.5 L of 0.9% saline or Ringer's lactate in the first hour.",
+            "Then 250-500 mL/hour, replacing the deficit over 24-48 hours.",
+            "**Know potassium before insulin**; hold insulin if K is below 3.5.",
+            "Fixed-rate IV regular insulin **0.1 units/kg/hour**.",
+            "K 3.5-5.0: add 20-40 mmol KCl per litre; above 5.0, give none.",
+            "Treat the precipitant; give antibiotics within the first hour for sepsis.",
+          ],
+        },
+        {
+          title: "Treatment - next steps",
+          points: [
+            "When glucose falls **below 250 mg/dL**, add dextrose and reduce insulin to 0.05 units/kg/hour.",
+            "Keep glucose 150-200 mg/dL; **never stop insulin** because glucose is normal.",
+            "**Bicarbonate only if pH is below 7.0**.",
+            "Give **basal insulin 1-2 hours before** stopping the infusion.",
+            "HHS: fluids first; insulin at **0.05 units/kg/hour** only when glucose stops falling.",
+            "HHS: give **LMWH** prophylaxis and lower osmolality by only 3-8 mOsm/kg per hour.",
+          ],
+        },
+        {
+          title: "Complications and red flags",
+          points: [
+            "DKA resolves when ketones are **below 0.6 mmol/L** and pH 7.3 or bicarbonate 18.",
+            "Glucose is **not** a resolution criterion.",
+            "**Cerebral oedema**: headache, bradycardia and falling GCS at 4-12 hours; give mannitol at once.",
+            "Common errors: stopping insulin early, no basal overlap, hypokalaemia, hypoglycaemia, fluid overload.",
+            "ICU for pH below 7.0, K below 3.5 on arrival, GCS below 12, or osmolality above 350.",
+            "Mucormycosis: liposomal amphotericin B plus urgent surgical debridement.",
+          ],
+        },
+        {
+          title: "Referral and follow-up",
+          points: [
+            "Every DKA or HHS is managed in hospital, never at home.",
+            "Review within 1 week of discharge and again at 2-4 weeks.",
+            "After recovery, C-peptide and GAD antibodies separate type 1 from ketosis-prone type 2.",
+            "Teach **sick-day rules**: never stop basal insulin; check ketones above 250 mg/dL.",
+            "Do not restart an SGLT2 inhibitor after euglycaemic DKA without strong reason.",
+          ],
+        },
+      ],
+      tables: [
+        {
+          heading: "DKA versus HHS",
+          columns: ["Feature", "DKA", "HHS"],
+          rows: [
+            ["Typical patient", "Type 1 or ketosis-prone, younger; hours", "Elderly type 2, often septic; days"],
+            ["Glucose", "200 mg/dL or more (may be normal)", "600 mg/dL or more"],
+            ["Beta-hydroxybutyrate", "3.0 mmol/L or more", "Below 3.0 mmol/L"],
+            ["pH and bicarbonate", "pH below 7.3 or HCO3 below 18", "pH 7.3 or more, HCO3 15 or more"],
+            ["Effective osmolality", "Usually below 320", "Above 300 mOsm/kg"],
+            ["Fluid deficit and mortality", "5-7 L; under 1-2%", "8-10 L; 5-20%"],
+          ],
+        },
+        {
+          heading: "DKA severity (ADA/EASD 2024)",
+          columns: ["Severity", "pH", "Bicarbonate (mmol/L)", "Where to treat"],
+          rows: [
+            ["Mild", "7.25-7.30", "15-18", "Monitored ward"],
+            ["Moderate", "7.00-7.24", "10 to below 15", "High-dependency unit"],
+            ["Severe", "Below 7.00", "Below 10", "ICU"],
+            ["Resolved", "7.3 or more", "18 or more", "Ketones below 0.6 mmol/L"],
+          ],
+        },
+        {
+          heading: "Drugs in DKA and HHS",
+          columns: ["Drug", "Dose and route", "Duration", "Key side effects / cautions"],
+          rows: [
+            ["0.9% saline or Ringer's lactate", "IV 1-1.5 L in hour 1, then 250-500 mL/h", "Deficit over 24-48 h", "Fluid overload; small boluses in elderly"],
+            ["Regular insulin", "IV 0.1 units/kg/h (HHS 0.05)", "Until ketones below 0.6 and pH 7.3", "Hypoglycaemia, hypokalaemia"],
+            ["Rapid analogue", "SC 0.1 units/kg hourly or 0.2 units/kg 2-hourly", "Mild-moderate DKA only", "Not in shock"],
+            ["Potassium chloride", "IV 20-40 mmol/L if K 3.5-5.0", "Keep K at 4-5", "Only once urine flows; never IV push"],
+            ["Sodium bicarbonate", "IV 100 mmol over 2 h if pH below 7.0", "Repeat 2-hourly until pH 7.0", "Hypokalaemia, cerebral oedema"],
+            ["Glargine", "SC 0.15-0.3 units/kg", "Start 1-2 h before stopping drip", "Prevents rebound DKA"],
+            ["Mannitol", "IV 0.5-1 g/kg over 15 min", "Repeat if no response", "For cerebral oedema"],
+            ["Enoxaparin", "SC 40 mg daily", "During admission", "Thromboprophylaxis in HHS"],
+          ],
+        },
+      ],
+      remember: [
+        "**Fluid first, potassium before insulin**, then 0.1 units/kg/hour.",
+        "Hold insulin if K is below 3.5 (ADA/EASD 2024; older texts say 3.3).",
+        "DKA resolves on ketones and pH, not glucose.",
+        "Glucose below 250: add dextrose, halve insulin, never stop it.",
+        "Overlap basal insulin 1-2 hours before stopping the drip.",
+        "Bicarbonate only for pH below 7.0.",
+        "Euglycaemic DKA: think SGLT2 inhibitor, pregnancy, starvation, alcohol.",
+        "No pump? Hourly IM regular insulin works for mild-moderate DKA.",
+      ],
+    },
     checked: "2026-10",
     updated: [
       "Paediatric DKA fluids aligned to ISPAD 2022: 10-20 mL/kg isotonic crystalloid over 20-30 min for all, 20 mL/kg rapidly and repeated if shocked (previously stated as bolus only if shocked).",
@@ -397,6 +1322,166 @@ const revision: RevisionSet = {
   },
 
   "endocrine-hyperthyroidism-nodule": {
+    notes: {
+      sections: [
+        {
+          title: "Definition and key facts",
+          points: [
+            "**Thyrotoxicosis** is excess thyroid hormone action from any source.",
+            "**Hyperthyroidism** is the subset where the gland makes too much hormone.",
+            "Overt disease: **suppressed TSH** with raised free T4 and/or free T3.",
+            "**Graves disease** causes 60-80% of thyrotoxicosis in India.",
+            "Thyroid nodules are seen on ultrasound in up to 50-60%, but only **5-10% are malignant**.",
+          ],
+        },
+        {
+          title: "Classification that matters",
+          points: [
+            "The classification examiners expect is **by radioiodine uptake**.",
+            "**High uptake**: Graves, toxic multinodular goitre, toxic adenoma.",
+            "**Low uptake**: thyroiditis (subacute, painless, post-partum), exogenous thyroxine, iodine excess.",
+            "Nodules are graded on ultrasound by **ACR TI-RADS** (TR1-TR5).",
+            "Nodule cytology is reported by the **Bethesda system** (categories I-VI).",
+          ],
+        },
+        {
+          title: "How it happens (pathophysiology)",
+          points: [
+            "1. In Graves, **TSH receptor antibodies (TRAb)** stimulate the gland like TSH.",
+            "2. Excess T3 raises metabolic rate, causing weight loss despite good appetite.",
+            "3. T3 increases cardiac beta-receptors, causing tachycardia and **atrial fibrillation**.",
+            "4. Orbital fibroblasts swell muscles and fat, causing **proptosis and diplopia**.",
+            "5. Toxic nodules carry activating TSH receptor mutations, so they never remit on drugs.",
+            "6. Thyroiditis **releases stored hormone**, so uptake is low and thionamides are useless.",
+          ],
+        },
+        {
+          title: "History in the OPD",
+          points: [
+            "**Weight loss despite good appetite** separates thyrotoxicosis from anxiety.",
+            "Palpitations, heat intolerance, tremor, sweating, insomnia and loose stools.",
+            "Eye symptoms: grittiness, double vision, and **dull colour vision** (optic neuropathy).",
+            "Recent viral illness with neck pain, or delivery within the last year.",
+            "Drugs: amiodarone, thyroxine pills, iodine; and **smoking**, which worsens eye disease.",
+            "Nodule: rapid growth, hoarseness, stridor, neck irradiation, family history of MEN2.",
+          ],
+        },
+        {
+          title: "Examination",
+          points: [
+            "Pulse rate and rhythm for AF; fine tremor and warm moist palms.",
+            "**Lid lag and retraction** occur in any thyrotoxicosis.",
+            "Proptosis, chemosis and restricted upgaze mean **Graves orbitopathy**.",
+            "Clinical Activity Score **3 or more of 7** means active eye disease.",
+            "Diffuse goitre with bruit suggests Graves; a tender gland suggests subacute thyroiditis.",
+            "Pretibial myxoedema and acropachy are specific to Graves.",
+          ],
+        },
+        {
+          title: "Investigations",
+          points: [
+            "**TSH first**; if suppressed, send free T4 and free T3 together.",
+            "**TRAb** is the best test for Graves (sensitivity about 97%) and safe in pregnancy.",
+            "Uptake scan if TRAb is negative or nodules are present; not in pregnancy.",
+            "Baseline **CBC and LFT** before starting a thionamide.",
+            "Nodule: TSH first; **a hot nodule is almost never malignant**.",
+            "Normal TSH nodule: ultrasound, then **FNAC** by TI-RADS size thresholds.",
+          ],
+        },
+        {
+          title: "Treatment - first line",
+          points: [
+            "**Carbimazole 15-40 mg once daily**, tapered to 5-10 mg maintenance.",
+            "Continue for **12-18 months**; about half of patients remit.",
+            "Add **propranolol 10-40 mg three to four times daily** until euthyroid.",
+            "Use diltiazem for rate control in asthma.",
+            "Warn about agranulocytosis: **stop and get a count** for sore throat or fever.",
+            "Stop smoking; it doubles eye disease risk.",
+          ],
+        },
+        {
+          title: "Treatment - next steps",
+          points: [
+            "Relapse, toxic nodule or toxic MNG: **radioiodine or surgery**.",
+            "Radioiodine is 10-15 mCi orally; avoid pregnancy for 6 months.",
+            "Do not give radioiodine with active moderate-severe eye disease.",
+            "Before surgery: euthyroid on carbimazole, then **Lugol iodine for 10 days**.",
+            "Subacute thyroiditis: **NSAID or prednisolone** plus propranolol, never a thionamide.",
+            "Active moderate-severe orbitopathy: IV methylprednisolone weekly (4.5 g total) with mycophenolate.",
+          ],
+        },
+        {
+          title: "Special groups",
+          points: [
+            "Pregnancy: **PTU in the first trimester**; carbimazole is teratogenic then.",
+            "Switch to PTU when actively trying to conceive (ATA 2026).",
+            "ATA 2026: no routine switch back to carbimazole after the first trimester.",
+            "Gestational transient thyrotoxicosis needs **no antithyroid drug**.",
+            "Measure **TRAb at 18-22 weeks** in current or past Graves.",
+            "Elderly may present only with AF or heart failure: check TSH.",
+          ],
+        },
+        {
+          title: "Complications and red flags",
+          points: [
+            "**Thyroid storm**: fever, tachycardia, delirium, vomiting, jaundice; mortality 10-30%.",
+            "Burch-Wartofsky score **45 or more** is highly suggestive of storm.",
+            "Storm order: **PTU first**, then iodine at least 1 hour later.",
+            "Then propranolol and **hydrocortisone**; paracetamol for fever, never aspirin.",
+            "PTU can cause **fulminant hepatitis**; stop it for jaundice.",
+            "Dull colour vision in Graves is optic neuropathy: same-day IV methylprednisolone.",
+          ],
+        },
+      ],
+      tables: [
+        {
+          heading: "Causes of thyrotoxicosis",
+          columns: ["Type", "Clue", "Uptake scan", "First-line treatment"],
+          rows: [
+            ["Graves disease", "Diffuse goitre, bruit, eye signs, TRAb positive", "Diffusely high", "Carbimazole plus propranolol 12-18 months"],
+            ["Toxic multinodular goitre", "Older, lumpy goitre, no eye signs", "Patchy hot areas", "Radioiodine or surgery"],
+            ["Toxic adenoma", "Single nodule", "Single hot nodule", "Radioiodine or lobectomy"],
+            ["Subacute thyroiditis", "Painful tender gland after viral illness", "Very low", "NSAID or prednisolone, propranolol"],
+            ["Post-partum thyroiditis", "2-6 months after delivery", "Low", "Propranolol only"],
+            ["Exogenous thyroxine", "No goitre, low thyroglobulin", "Low", "Stop thyroxine"],
+          ],
+        },
+        {
+          heading: "Drugs in hyperthyroidism",
+          columns: ["Drug", "Dose and route", "Duration", "Key side effects / cautions"],
+          rows: [
+            ["Carbimazole", "15-40 mg OD oral, taper to 5-10 mg", "12-18 months", "Rash, agranulocytosis; teratogenic in first trimester"],
+            ["Propylthiouracil", "50-150 mg TDS oral; storm 500-1000 mg load", "First trimester, storm, intolerance", "Fulminant hepatitis, ANCA vasculitis"],
+            ["Propranolol", "10-40 mg TDS-QDS oral; storm 60-80 mg 4-hourly", "Until euthyroid", "Bronchospasm; use diltiazem in asthma"],
+            ["Lugol iodine", "5-7 drops TDS oral", "10 days before surgery", "Escape after 10-14 days; give after thionamide"],
+            ["Radioiodine I-131", "10-15 mCi single oral dose", "One dose", "Hypothyroidism, worse orbitopathy; no pregnancy 6 months"],
+            ["Prednisolone", "40 mg daily oral, tapered", "4-6 weeks (thyroiditis)", "Hyperglycaemia, TB reactivation"],
+            ["IV methylprednisolone", "0.5 g weekly x 6, then 0.25 g weekly x 6", "12 weeks (4.5 g total)", "Liver injury; check LFT each dose"],
+          ],
+        },
+        {
+          heading: "Bethesda thyroid cytology",
+          columns: ["Category", "Diagnosis", "Risk of malignancy", "Management"],
+          rows: [
+            ["I", "Non-diagnostic", "About 13%", "Repeat guided FNA"],
+            ["II", "Benign", "About 4%", "Ultrasound follow-up at 12-24 months"],
+            ["III", "Atypia of undetermined significance", "About 22%", "Repeat FNA or molecular testing"],
+            ["IV", "Follicular neoplasm", "About 30%", "Diagnostic lobectomy"],
+            ["V", "Suspicious for malignancy", "About 74%", "Surgery"],
+            ["VI", "Malignant", "About 97%", "Surgery"],
+          ],
+        },
+      ],
+      remember: [
+        "Lid lag in any thyrotoxicosis; proptosis means Graves.",
+        "Titrate on free T4 and T3; TSH stays suppressed for months.",
+        "Low uptake means release, so no thionamide.",
+        "PTU in first trimester and storm; carbimazole everywhere else.",
+        "Storm: thionamide first, iodine an hour later; never aspirin.",
+        "A hot nodule is almost never cancer.",
+        "Follicular cancer needs histology, so Bethesda IV goes to lobectomy.",
+      ],
+    },
     checked: "2026-10",
     updated: [
       "ATA 2026 (pregnancy): PTU is the preferred drug preconception (actively trying to conceive) and through the first trimester; the old advice to switch back to carbimazole in the second trimester is no longer a routine recommendation; TRAb titres guide stopping.",
@@ -464,6 +1549,161 @@ const revision: RevisionSet = {
   },
 
   "endocrine-obesity-metabolic-syndrome": {
+    notes: {
+      sections: [
+        {
+          title: "Definition and key facts",
+          points: [
+            "Obesity is **excess body fat that impairs health**.",
+            "Asian Indians carry more fat at any BMI, so **cut-offs are lower**.",
+            "The **2025 Indian redefinition** calls **BMI above 23** obesity.",
+            "**Abdominal obesity**: waist **90 cm or more in men, 80 cm or more in women**.",
+            "A **waist-height ratio above 0.5** marks risk in either sex.",
+            "About 30-35% of urban Indian adults have the metabolic syndrome.",
+          ],
+        },
+        {
+          title: "Classification that matters",
+          points: [
+            "2009 Indian classes: normal 18.0-22.9, overweight 23.0-24.9, obesity 25 or more.",
+            "2025 **stage 1**: BMI above 23 with no effect on organs or daily life.",
+            "2025 **stage 2**: BMI above 23 plus high waist, plus a comorbidity or functional limit.",
+            "Lancet Commission 2025: **clinical obesity** (organ dysfunction) is a disease; preclinical is a risk state.",
+            "**Metabolic syndrome**: any 3 of 5 criteria (harmonised 2009).",
+            "The **IDF** definition makes the waist mandatory, plus any 2 others.",
+          ],
+        },
+        {
+          title: "How it happens (pathophysiology)",
+          points: [
+            "1. Appetite is set in the hypothalamus; leptin signals fat stores, but obesity causes **leptin resistance**.",
+            "2. Visceral fat releases free fatty acids straight into the portal vein.",
+            "3. Fat in liver and muscle blocks insulin signalling, causing **insulin resistance**.",
+            "4. Inflamed fat releases TNF-alpha and IL-6, and less adiponectin.",
+            "5. The liver makes more VLDL, giving **high triglyceride and low HDL**.",
+            "6. After weight loss, hunger rises and energy use falls, so **regain is the rule**.",
+          ],
+        },
+        {
+          title: "History in the OPD",
+          points: [
+            "Weight history: onset, maximum weight, rapid recent gain, and past attempts.",
+            "24-hour diet recall: cereal portion, oil, sugar, sweet drinks, late eating.",
+            "Activity and sitting time, sleep, snoring and daytime sleepiness.",
+            "**Weight-gaining drugs**: olanzapine, valproate, steroids, insulin, sulfonylureas, pioglitazone.",
+            "Screen for binge eating and depression, and ask about **herbal fat-cutters**.",
+          ],
+        },
+        {
+          title: "Examination",
+          points: [
+            "Weight, height, BMI, and **waist midway between lowest rib and iliac crest**.",
+            "Measure BP with a **large cuff**.",
+            "**Acanthosis nigricans**, skin tags, hirsutism and acne mark insulin resistance.",
+            "Look for Cushing signs: purple striae over 1 cm, proximal weakness, bruising.",
+            "Neck over 40 cm or **STOP-BANG 3 or more** suggests sleep apnoea.",
+          ],
+        },
+        {
+          title: "Investigations",
+          points: [
+            "Fasting glucose or HbA1c in every overweight Asian Indian adult.",
+            "Fasting lipids: high triglyceride with low HDL is typical.",
+            "ALT and liver ultrasound; **FIB-4 above 1.3** needs elastography.",
+            "Creatinine and urine ACR when hypertensive or diabetic.",
+            "Screen for Cushing (1 mg dexamethasone test) only with specific features.",
+          ],
+        },
+        {
+          title: "Treatment - first line",
+          points: [
+            "Target **5-10% weight loss over 6 months**, about 0.5-1 kg per week.",
+            "Create a **deficit of 500-750 kcal/day**, mainly by cutting the cereal portion.",
+            "ICMR-NIN plate: half vegetables, a quarter whole grains, a quarter protein.",
+            "**150-300 minutes a week** of brisk walking, plus resistance training 2-3 days.",
+            "Keep protein 0.8-1.2 g/kg/day to protect muscle.",
+            "Treat **each metabolic syndrome component** separately; BP target below 130/80.",
+          ],
+        },
+        {
+          title: "Treatment - next steps",
+          points: [
+            "Add drugs at **BMI 25 or more with comorbidity, or 27 or more** without (Asian Indians).",
+            "**Semaglutide 2.4 mg** weekly gives about 15% loss and cut cardiac events by 20%.",
+            "**Tirzepatide** 5-15 mg weekly gives about 20% loss.",
+            "**Orlistat 120 mg** with each fatty meal gives 3-5% loss.",
+            "Stop a drug if loss is **under 5% after 3 months** at full dose.",
+            "Most patients regain weight after stopping, so plan long-term treatment.",
+          ],
+        },
+        {
+          title: "Special groups",
+          points: [
+            "Metabolic surgery for Asians can be offered from **BMI 27.5**.",
+            "Type 2 diabetes remits in 50-80% at 2 years after surgery.",
+            "After surgery: lifelong multivitamin, calcium, vitamin D, iron, B12 and thiamine.",
+            "Defer pregnancy for 12-18 months after bariatric surgery.",
+            "No anti-obesity drugs in pregnancy; stop semaglutide 2 months before conception.",
+          ],
+        },
+        {
+          title: "Complications and red flags",
+          points: [
+            "Back-radiating abdominal pain on a GLP-1 drug: suspect **pancreatitis** and check lipase.",
+            "GLP-1 drugs are contraindicated with **medullary thyroid cancer or MEN2**.",
+            "Tachycardia after bariatric surgery is an **anastomotic leak** until proved otherwise.",
+            "Vomiting after surgery: give **thiamine before glucose** to prevent Wernicke.",
+            "Palpitations on a herbal fat-cutter suggest hidden sibutramine or thyroxine.",
+          ],
+        },
+      ],
+      tables: [
+        {
+          heading: "BMI and waist cut-offs: Asian-Indian versus WHO",
+          columns: ["Class", "WHO BMI", "Asian-Indian BMI", "Action"],
+          rows: [
+            ["Normal", "18.5-24.9", "18.0-22.9", "Keep waist below 90/80 cm"],
+            ["Overweight", "25.0-29.9", "23.0-24.9 (2009)", "Lifestyle; screen glucose, BP, lipids"],
+            ["Obesity", "30 or more", "25 or more (2009); above 23 (2025)", "Lifestyle; drugs if criteria met"],
+            ["Abdominal obesity", "Waist 102 men, 88 women", "Waist 90 men, 80 women", "Full metabolic screen"],
+            ["Surgery threshold", "35 (30 with metabolic disease)", "27.5", "Refer to surgery centre"],
+          ],
+        },
+        {
+          heading: "Metabolic syndrome: any 3 of 5",
+          columns: ["Criterion", "Cut-off (or on treatment)"],
+          rows: [
+            ["Waist", "90 cm or more men, 80 cm or more women"],
+            ["Triglycerides", "150 mg/dL or more"],
+            ["HDL cholesterol", "Below 40 men, below 50 women"],
+            ["Blood pressure", "130/85 mmHg or more"],
+            ["Fasting glucose", "100 mg/dL or more"],
+          ],
+        },
+        {
+          heading: "Drugs for obesity and metabolic syndrome",
+          columns: ["Drug", "Dose and route", "Duration", "Key side effects / cautions"],
+          rows: [
+            ["Semaglutide 2.4 mg", "0.25 mg weekly SC, up every 4 weeks to 2.4 mg", "Long-term", "Nausea, gallstones, pancreatitis; avoid MTC or MEN2"],
+            ["Tirzepatide", "2.5 mg weekly SC, up 2.5 mg every 4 weeks", "Long-term; 5-15 mg maintenance", "As GLP-1; backup contraception if on pill"],
+            ["Liraglutide 3 mg", "0.6 mg daily SC, up 0.6 mg weekly", "Stop if under 5% loss at 12 weeks", "Nausea, diarrhoea, pancreatitis"],
+            ["Orlistat", "120 mg TDS oral with fatty meals", "Long-term", "Oily stools; vitamins at bedtime; levothyroxine 4 h apart"],
+            ["Metformin", "500 mg BD, up to 1 g BD oral", "Long-term", "GI upset, B12 deficiency"],
+            ["Telmisartan / ramipril", "40-80 mg / 5-10 mg OD oral", "Long-term", "High K; check at 1-2 weeks"],
+            ["Atorvastatin", "10-40 mg OD oral by risk", "Lifelong", "Myalgia, raised ALT; stop in pregnancy"],
+          ],
+        },
+      ],
+      remember: [
+        "Indians: obesity at BMI above 23 (2025); waist 90 men, 80 women. Quoting 25 and 30 loses the mark.",
+        "Waist beats BMI; keep the waist below half the height.",
+        "Metabolic syndrome is any 3 of 5; IDF makes waist mandatory.",
+        "No single drug treats metabolic syndrome: treat each part.",
+        "5% loss improves glucose, BP, triglyceride and liver fat.",
+        "Under 5% loss after 3 months at full dose: stop the drug.",
+        "Thiamine before glucose in any vomiting post-bariatric patient.",
+      ],
+    },
     checked: "2026-10",
     updated: [
       "2025 Indian redefinition (Misra, Diabetes Metab Syndr 2025): BMI above 23 = obesity; stage 1 (no functional or metabolic effect) and stage 2 (plus waist 90/80 cm or WHtR above 0.5 plus comorbidity or functional limitation); citation corrected from Lancet D and E.",
@@ -532,6 +1772,164 @@ const revision: RevisionSet = {
   },
 
   "endocrine-vitamin-d-calcium": {
+    notes: {
+      sections: [
+        {
+          title: "Definition and key facts",
+          points: [
+            "Vitamin D status is judged by **serum 25-hydroxyvitamin D**.",
+            "**Deficiency is below 20 ng/mL**; severe deficiency is below 12 ng/mL.",
+            "Hypocalcaemia is corrected calcium **below 8.5 mg/dL**; hypercalcaemia is **above 10.5**.",
+            "**Corrected calcium** = measured calcium + 0.8 x (4.0 - albumin).",
+            "About 50-90% of Indians are deficient despite plentiful sunshine.",
+            "Indian calcium intake is 300-500 mg/day against an ICMR need of **1000 mg/day**.",
+          ],
+        },
+        {
+          title: "Causes and risk factors",
+          points: [
+            "Indoor life, covered clothing, pollution and darker skin reduce vitamin D synthesis.",
+            "Vegetarian diet with little milk or curd.",
+            "Enzyme-inducing drugs: phenytoin, carbamazepine, rifampicin, steroids, antiretrovirals.",
+            "Malabsorption, bariatric surgery, and chronic kidney or liver disease.",
+            "Hypercalcaemia: **primary hyperparathyroidism** and **malignancy** cause most cases.",
+          ],
+        },
+        {
+          title: "How it happens (pathophysiology)",
+          points: [
+            "1. Skin UVB makes vitamin D; the liver makes 25(OH)D, and the kidney makes active calcitriol.",
+            "2. In deficiency, gut calcium absorption falls.",
+            "3. **PTH rises first** (secondary hyperparathyroidism) and keeps calcium normal.",
+            "4. PTH wastes phosphate, so **phosphate falls** and alkaline phosphatase rises.",
+            "5. Unmineralised osteoid causes bone pain, **Looser zones** and deformity.",
+            "6. Calcium falls only late, so **a normal calcium never excludes deficiency**.",
+          ],
+        },
+        {
+          title: "History in the OPD",
+          points: [
+            "Diffuse body ache, low back and pelvic pain, often mislabelled as fibromyalgia.",
+            "**Proximal weakness**: difficulty climbing stairs or rising from a squat.",
+            "Low calcium: perioral tingling, cramps, carpopedal spasm, and recent neck surgery.",
+            "High calcium: **stones, bones, groans and moans**, with polyuria and thirst.",
+            "Child: delayed walking, bowed legs, and exclusive breastfeeding without vitamin D.",
+          ],
+        },
+        {
+          title: "Examination",
+          points: [
+            "Bone tenderness over sternum, tibiae and pelvis, and a **waddling gait**.",
+            "Child: wrist widening, **rachitic rosary**, frontal bossing, bow legs.",
+            "**Trousseau sign** (carpal spasm within 3 minutes of cuff inflation) is more specific than Chvostek.",
+            "Look for a thyroidectomy scar in hypocalcaemia.",
+            "In hypercalcaemia, assess hydration and look for a neck mass or breast lump.",
+          ],
+        },
+        {
+          title: "Investigations",
+          points: [
+            "First set: calcium with albumin, phosphate, alkaline phosphatase and creatinine.",
+            "Add **magnesium** in every case of hypocalcaemia.",
+            "Measure **25(OH)D, not 1,25(OH)2D**, which is often normal in deficiency.",
+            "ES 2024: **no routine vitamin D testing** in healthy adults.",
+            "**PTH on the same sample as calcium** is the key test in any calcium disorder.",
+            "Before parathyroid surgery, a calcium-creatinine clearance ratio **below 0.01** suggests FHH.",
+          ],
+        },
+        {
+          title: "Treatment - first line",
+          points: [
+            "**Cholecalciferol 60,000 IU weekly for 8 weeks**, taken with a fatty meal or milk.",
+            "Then maintenance: **60,000 IU monthly** or 1000-2000 IU daily.",
+            "Give **elemental calcium 500-1000 mg daily** alongside.",
+            "Calcium carbonate with meals; **calcium citrate** on PPIs or after bariatric surgery.",
+            "Avoid single **6 lakh IU injections**; they cause hypercalcaemia and falls.",
+            "Sun on face, arms and legs for 15-30 minutes between 10 a.m. and 3 p.m.",
+          ],
+        },
+        {
+          title: "Treatment - next steps",
+          points: [
+            "Acute symptomatic hypocalcaemia: **10% calcium gluconate 10-20 mL IV** over 10-20 minutes.",
+            "Follow with a calcium gluconate infusion and ECG monitoring.",
+            "Low magnesium: **magnesium sulfate 2 g IV**; calcium will not correct without it.",
+            "Hypercalcaemia: **IV saline first**, then calcitonin to bridge, then zoledronic acid.",
+            "Furosemide only after rehydration, and only for fluid overload.",
+            "Granuloma, lymphoma or vitamin D toxicity: **prednisolone 20-40 mg daily**.",
+          ],
+        },
+        {
+          title: "Special groups",
+          points: [
+            "Breastfed infants: **400 IU vitamin D daily** from birth to one year.",
+            "Child with rickets: vitamin D for 12 weeks, always with **calcium 500 mg/day**.",
+            "Indian rickets is often **calcium-deficiency rickets**, so calcium is essential.",
+            "Pregnancy: **calcium 500 mg twice daily** from 14 weeks to 6 months post-partum.",
+            "Hypoparathyroidism and CKD need **calcitriol**, which bypasses the kidney step.",
+          ],
+        },
+        {
+          title: "Referral and follow-up",
+          points: [
+            "Recheck 25(OH)D and alkaline phosphatase at **3 months**, not earlier.",
+            "Correct vitamin D deficiency before giving zoledronic acid.",
+            "Parathyroidectomy if calcium over 1 mg/dL above normal, T-score -2.5, eGFR below 60, or stones.",
+            "Also operate in primary hyperparathyroidism if **age is below 50**.",
+            "Refer rickets not healing after 3 months, and hypercalcaemia with suppressed PTH.",
+          ],
+        },
+      ],
+      tables: [
+        {
+          heading: "Vitamin D status by 25(OH)D",
+          columns: ["Status", "25(OH)D", "Action"],
+          rows: [
+            ["Severe deficiency", "Below 12 ng/mL", "Loading dose plus calcium"],
+            ["Deficiency", "Below 20 ng/mL", "60,000 IU weekly x 8 weeks, then maintenance"],
+            ["Insufficiency", "20-29 ng/mL", "Maintenance dose with dietary calcium"],
+            ["Sufficiency", "30-100 ng/mL", "No treatment"],
+            ["Toxicity", "Usually above 150 with high calcium", "Stop vitamin D and calcium; hydrate"],
+          ],
+        },
+        {
+          heading: "Reading the bone biochemistry",
+          columns: ["Condition", "Calcium", "Phosphate", "ALP", "PTH"],
+          rows: [
+            ["Vitamin D deficiency", "Low or normal", "Low", "High", "High"],
+            ["Primary hyperparathyroidism", "High", "Low or normal", "Normal or high", "High or inappropriately normal"],
+            ["Hypoparathyroidism", "Low", "High", "Normal", "Low"],
+            ["CKD bone disease", "Low or normal", "High", "High", "High"],
+            ["Malignancy", "High", "Variable", "High if bone metastases", "Suppressed"],
+            ["Osteoporosis", "Normal", "Normal", "Normal", "Normal"],
+          ],
+        },
+        {
+          heading: "Drugs for vitamin D and calcium disorders",
+          columns: ["Drug", "Dose and route", "Duration", "Key side effects / cautions"],
+          rows: [
+            ["Cholecalciferol", "60,000 IU weekly oral, then monthly", "8 weeks loading, then maintenance", "Hypercalcaemia only in excess"],
+            ["Calcium carbonate", "500 mg elemental OD-BD oral with meals", "Long-term", "Constipation; 4 h from levothyroxine"],
+            ["Calcitriol", "0.25-1 mcg OD-BD oral", "Long-term", "Hypercalcaemia; weekly calcium at start"],
+            ["Calcium gluconate 10%", "10-20 mL IV over 10-20 min, then infusion", "Until symptoms settle", "Extravasation necrosis; caution with digoxin"],
+            ["Magnesium sulfate", "2 g IV over 10-20 min", "Repeat as needed", "Give before expecting calcium to correct"],
+            ["Zoledronic acid", "4 mg IV over at least 15 min", "Single dose; acts in 2-4 days", "Fever, hypocalcaemia; avoid CrCl below 30"],
+            ["Calcitonin", "4 IU/kg SC or IM 12-hourly", "48 hours maximum", "Tachyphylaxis; bridge only"],
+            ["Cinacalcet", "30 mg BD oral, up to 90 mg QID", "Long-term", "Nausea, hypocalcaemia"],
+          ],
+        },
+      ],
+      remember: [
+        "Measure 25(OH)D, not 1,25.",
+        "Normal calcium does not exclude vitamin D deficiency.",
+        "Indian rickets needs calcium as well as vitamin D.",
+        "Corrected calcium = measured + 0.8 x (4 - albumin).",
+        "Refractory low calcium: check magnesium.",
+        "High calcium plus non-suppressed PTH is primary hyperparathyroidism.",
+        "Hypercalcaemia: saline, calcitonin, zoledronic acid; furosemide only for overload.",
+        "High calcium symptoms: **stones, bones, groans and moans**.",
+      ],
+    },
     checked: "2026-10",
     updated: [
       "Endocrine Society 2023 hypercalcaemia of malignancy guideline: denosumab (slight preference) or IV bisphosphonate; for calcium above 14 mg/dL start calcitonin together with bisphosphonate or denosumab.",
@@ -600,6 +1998,163 @@ const revision: RevisionSet = {
   },
 
   "endocrine-adrenal-disorders": {
+    notes: {
+      sections: [
+        {
+          title: "Definition and key facts",
+          points: [
+            "**Cushing syndrome** is chronic glucocorticoid excess; in India it is mostly **iatrogenic**.",
+            "**Adrenal insufficiency** is deficient cortisol production.",
+            "**Adrenal crisis** is shock in adrenal insufficiency that resolves with parenteral hydrocortisone.",
+            "**Primary aldosteronism** is the commonest secondary cause of hypertension (5-10%).",
+            "**Phaeochromocytoma** is a catecholamine-secreting tumour of the adrenal medulla.",
+          ],
+        },
+        {
+          title: "Classification that matters",
+          points: [
+            "Cushing is **exogenous** (commonest) or endogenous.",
+            "Endogenous Cushing is **ACTH-dependent** (pituitary about 70%, ectopic about 10%) or adrenal.",
+            "Adrenal insufficiency is **primary** (adrenal), **secondary** (pituitary) or **tertiary** (hypothalamic).",
+            "Tertiary insufficiency is most often from **stopping long-term steroids**.",
+            "Expect suppression after **prednisolone 5 mg/day or more for 4 weeks or more**.",
+          ],
+        },
+        {
+          title: "Causes and risk factors",
+          points: [
+            "Unregulated steroid injections, herbal powders and **skin-lightening creams** cause Cushing.",
+            "In India, **tuberculosis** rivals autoimmunity as a cause of Addison disease.",
+            "Other primary causes: HIV, adrenal haemorrhage, metastases, adrenoleukodystrophy.",
+            "Secondary causes: pituitary tumour, surgery, radiotherapy and **Sheehan syndrome**.",
+            "Rifampicin, phenytoin and carbamazepine speed cortisol breakdown and can trigger crisis.",
+          ],
+        },
+        {
+          title: "How it happens (pathophysiology)",
+          points: [
+            "1. Pituitary ACTH drives cortisol, which peaks at waking and falls at midnight.",
+            "2. Excess cortisol breaks down protein, causing **wide purple striae**, bruising and weak muscles.",
+            "3. Excess cortisol also causes insulin resistance, osteoporosis and hypertension.",
+            "4. Long-term steroids suppress ACTH, so the adrenal cortex **atrophies** for months.",
+            "5. In primary disease, high ACTH and MSH cause **pigmentation**.",
+            "6. Primary disease also loses aldosterone, causing **hyperkalaemia** and salt craving.",
+            "7. Without cortisol, vessels ignore catecholamines, so shock resists fluids and pressors.",
+          ],
+        },
+        {
+          title: "History in the OPD",
+          points: [
+            "**Take a full steroid history first**: tablets, depot injections, inhalers, creams, herbal powders.",
+            "Cushing: weight gain with thin limbs, bruising, proximal weakness, fractures, early diabetes.",
+            "Insufficiency: fatigue, weight loss, vomiting, abdominal pain, salt craving, postural dizziness.",
+            "Ask about TB, other autoimmune disease, and post-partum haemorrhage (Sheehan).",
+            "Episodic headache, palpitation and sweating suggest **phaeochromocytoma**.",
+          ],
+        },
+        {
+          title: "Examination",
+          points: [
+            "Discriminating Cushing signs: **striae wider than 1 cm**, easy bruising, facial plethora, proximal myopathy.",
+            "Obesity, hypertension and diabetes do **not** discriminate Cushing.",
+            "Child with Cushing: falling height centile with rising weight.",
+            "Insufficiency: postural BP fall over 20 mmHg, dehydration and weight loss.",
+            "Pigmentation of palmar creases, knuckles, scars and **buccal mucosa** means primary disease.",
+          ],
+        },
+        {
+          title: "Investigations",
+          points: [
+            "Cushing: exclude exogenous steroid, then require **two different abnormal tests**.",
+            "**1 mg overnight dexamethasone test**: 8 a.m. cortisol **above 1.8 mcg/dL** is abnormal.",
+            "Insufficiency: **8-9 a.m. cortisol** below 3-5 mcg/dL is diagnostic; above 15-18 excludes it.",
+            "**Short synacthen test**: peak cortisol **below 18 mcg/dL** confirms insufficiency.",
+            "High ACTH means primary; low or normal ACTH means secondary or tertiary.",
+            "Phaeochromocytoma: **plasma or urine metanephrines** before any imaging.",
+          ],
+        },
+        {
+          title: "Treatment - first line",
+          points: [
+            "**Hydrocortisone 15-25 mg/day** in 2-3 doses, largest on waking.",
+            "A typical split is **10 mg on waking, 5 mg midday, 2.5-5 mg mid-afternoon**.",
+            "Add **fludrocortisone 50-100 mcg** daily in **primary** disease only.",
+            "Prednisolone 3-5 mg once daily is an acceptable cheaper alternative.",
+            "On rifampicin (ATT), **double the hydrocortisone** dose.",
+            "Titrate replacement **clinically**: weight, energy, BP and electrolytes.",
+          ],
+        },
+        {
+          title: "Treatment - next steps",
+          points: [
+            "Sick-day rule 1: **double the dose** for fever above 38 degrees C or infection.",
+            "Sick-day rule 2: with **vomiting**, inject **hydrocortisone 100 mg IM** and go to hospital.",
+            "Give every patient a **steroid card**, an emergency kit, and train a family member.",
+            "Major surgery: hydrocortisone 100 mg IV at induction, then 200 mg over 24 hours.",
+            "Stopping long-term steroids: taper to physiological dose, then check morning cortisol.",
+            "Phaeochromocytoma: **alpha blockade first** for 10-14 days; beta-blocker only after.",
+          ],
+        },
+        {
+          title: "Complications and red flags",
+          points: [
+            "Adrenal crisis: **hydrocortisone 100 mg IV or IM at once**, before any test.",
+            "Then hydrocortisone 200 mg per 24 hours, with 0.9% saline 1 L in the first hour.",
+            "Correct sodium by no more than 10 mmol/L in 24 hours.",
+            "Crisis can mimic an acute abdomen; never operate without steroid cover.",
+            "Rapid severe hypokalaemia and hypertension in a smoker suggests **ectopic ACTH**.",
+            "Newborn vomiting with low sodium and high potassium: **salt-wasting CAH**.",
+          ],
+        },
+      ],
+      tables: [
+        {
+          heading: "Types of adrenal insufficiency",
+          columns: ["Feature", "Primary (Addison)", "Secondary or tertiary"],
+          rows: [
+            ["Site", "Adrenal cortex", "Pituitary or hypothalamus"],
+            ["Common cause in India", "TB, autoimmune", "Stopping long-term steroids"],
+            ["ACTH", "High", "Low or normal"],
+            ["Aldosterone and potassium", "Low aldosterone, high potassium", "Preserved; potassium normal"],
+            ["Pigmentation", "Present", "Absent"],
+            ["Fludrocortisone", "Needed", "Not needed"],
+          ],
+        },
+        {
+          heading: "Screening tests for Cushing syndrome",
+          columns: ["Test", "How it is done", "Abnormal result"],
+          rows: [
+            ["1 mg overnight dexamethasone", "1 mg at 11 p.m., cortisol at 8 a.m.", "Above 1.8 mcg/dL"],
+            ["Late-night salivary cortisol", "11 p.m. sample on 2 nights", "Above assay limit on both"],
+            ["24-hour urinary free cortisol", "2 complete collections", "Above assay limit"],
+            ["Confirmation rule", "Exclude exogenous steroid first", "Two different abnormal tests"],
+          ],
+        },
+        {
+          heading: "Drugs in adrenal disease",
+          columns: ["Drug", "Dose and route", "Duration", "Key side effects / cautions"],
+          rows: [
+            ["Hydrocortisone oral", "15-25 mg/day in 2-3 doses", "Lifelong; double for fever", "Weight gain, diabetes if over-replaced"],
+            ["Hydrocortisone IV or IM", "100 mg stat, then 200 mg/24 h", "Crisis or major surgery", "Never wait for tests"],
+            ["Fludrocortisone", "50-200 mcg once daily oral", "Lifelong, primary only", "Oedema, hypertension, hypokalaemia"],
+            ["Prednisolone", "3-5 mg once daily oral", "Lifelong replacement", "Cushingoid if excessive"],
+            ["Phenoxybenzamine / prazosin", "10 mg BD up to 1 mg/kg/day / 1-5 mg BD-TDS", "10-14 days before surgery", "Postural hypotension; before any beta-blocker"],
+            ["Spironolactone", "25-100 mg daily oral", "Long-term (bilateral aldosteronism)", "Hyperkalaemia, gynaecomastia"],
+            ["Metyrapone", "250 mg TDS up to 1 g QDS oral", "Before surgery or if surgery fails", "Specialist use; adrenal insufficiency"],
+          ],
+        },
+      ],
+      remember: [
+        "Iatrogenic Cushing beats every other cause in India.",
+        "Cushing needs **two different abnormal tests**.",
+        "Pigmentation plus high potassium means primary; only primary needs fludrocortisone.",
+        "Synacthen peak below 18 mcg/dL confirms insufficiency.",
+        "Adrenal crisis: **treat first, test later**.",
+        "Sick-day rules: double for fever, inject 100 mg IM if vomiting.",
+        "Rifampicin doubles the hydrocortisone need.",
+        "Phaeochromocytoma: **alpha before beta**.",
+      ],
+    },
     checked: "2026-10",
     master: {
       heading: "Master revision table - Cushing syndrome and adrenal insufficiency",

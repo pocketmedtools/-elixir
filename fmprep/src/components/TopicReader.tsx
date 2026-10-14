@@ -52,6 +52,38 @@ function revInk(label: string): [string, string] {
   return ["#3d3428", "#f3ece0"];
 }
 
+/* A revision table read on a phone without swiping: each row becomes a card
+   titled by its first cell, the other columns as labelled lines. */
+function RevisionTable({ table }: { table: NoteTable }) {
+  const [ink] = revInk(table.heading);
+  return (
+    <section className="rounded-xl border bg-white/70" style={{ borderColor: "#e3cda8" }}>
+      <h4 className="rounded-t-xl px-3.5 py-2.5 text-[15.5px] font-bold text-white" style={{ background: ink }}>
+        {table.heading}
+      </h4>
+      <div className="flex flex-col gap-2 p-2.5">
+        {table.rows.map((row, i) => (
+          <div key={i} className="rounded-lg border px-3 py-2" style={{ borderColor: ink + "30", background: i % 2 ? "#fbf5ea" : "#fffdf8" }}>
+            <p className="text-[15.5px] font-bold leading-snug" style={{ color: ink }}>
+              <RichText text={row[0]} />
+            </p>
+            <dl className="mt-1 flex flex-col gap-0.5">
+              {row.slice(1).map((cell, j) => (
+                <div key={j} className="text-[14.5px] leading-[1.5] text-slate-900">
+                  <dt className="inline text-[12px] font-bold uppercase tracking-wide text-slate-500">{table.columns[j + 1]}: </dt>
+                  <dd className="inline">
+                    <RichText text={cell} />
+                  </dd>
+                </div>
+              ))}
+            </dl>
+          </div>
+        ))}
+      </div>
+    </section>
+  );
+}
+
 /* Revision notes: one heading per part of the answer, short points with
    room to breathe, then the tables. Written to be read, not decoded. */
 function RevisionNotesView({ notes }: { notes: NonNullable<TopicRevision["notes"]> }) {
@@ -79,9 +111,7 @@ function RevisionNotesView({ notes }: { notes: NonNullable<TopicRevision["notes"
         );
       })}
       {notes.tables.map((t, i) => (
-        <div key={`t${i}`} className="rounded-xl border bg-white/70 p-2" style={{ borderColor: "#e3cda8" }}>
-          <TableBlock table={t} />
-        </div>
+        <RevisionTable key={`t${i}`} table={t} />
       ))}
       {notes.remember && notes.remember.length > 0 && (
         <Callout tone="pearl" title="Remember for the exam" items={notes.remember} />

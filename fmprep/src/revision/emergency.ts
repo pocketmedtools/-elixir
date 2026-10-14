@@ -3,6 +3,167 @@ import type { RevisionSet } from "./index";
 const revision: RevisionSet = {
   "emergency-cardiac-arrest": {
     checked: "2026-10",
+    notes: {
+      sections: [
+        {
+          title: "Definition and key facts",
+          points: [
+            "Cardiac arrest is sudden loss of effective cardiac output and circulation.",
+            "Diagnose it with two findings: **unresponsive** and **not breathing normally**.",
+            "Agonal gasps occur in up to 40% early on and mean arrest, not breathing.",
+            "Do not rely on a pulse check; it is wrong in about 4 of 10 attempts.",
+            "About **80%** of sudden cardiac death is due to coronary artery disease.",
+            "Survival falls **7-10% per minute** of VF without a shock.",
+            "The clinic owns the first three links: recognition, CPR and the AED.",
+          ],
+        },
+        {
+          title: "Classification that matters",
+          points: [
+            "Classify by the presenting rhythm, because it decides shock first or drug first.",
+            "**Shockable rhythms**: ventricular fibrillation and pulseless ventricular tachycardia.",
+            "**Non-shockable rhythms**: asystole and pulseless electrical activity (PEA).",
+            "PEA is an organised rhythm without a pulse, usually from a mechanical cause.",
+            "Peri-arrest states (slow, fast or hyperkalaemic rhythms with shock) are where arrest can still be prevented.",
+          ],
+        },
+        {
+          title: "Causes and risk factors",
+          points: [
+            "Most adult arrests come from an ischaemic or scarred myocardium causing VF.",
+            "Learn the reversible causes as the **4 Hs and 4 Ts**.",
+            "4 Hs: hypoxia, hypovolaemia, hypo- or hyperkalaemia and metabolic, hypothermia.",
+            "4 Ts: thrombosis (coronary or pulmonary), tension pneumothorax, tamponade, toxins.",
+            "In an Indian clinic think hypoxia, haemorrhage, dialysis hyperkalaemia, poisoning and MI.",
+            "Children, drowning and opioid overdose cause asphyxial arrest, so ventilation matters more.",
+          ],
+        },
+        {
+          title: "How it happens (pathophysiology)",
+          points: [
+            "1. With no flow, consciousness is lost within **10-20 seconds**.",
+            "2. Irreversible brain injury begins after about **4-6 minutes** without flow.",
+            "3. Compressions give at best 25-30% of normal cardiac output.",
+            "4. Coronary perfusion pressure must exceed about **15-20 mmHg** for ROSC.",
+            "5. Every pause in compressions drops coronary perfusion pressure to zero within seconds.",
+            "6. A shock depolarises the whole myocardium so the sinus node can take over.",
+            "7. Adrenaline helps through alpha-1 vasoconstriction, which raises coronary perfusion pressure.",
+          ],
+        },
+        {
+          title: "Examination",
+          points: [
+            "Check the rhythm every **2 minutes**, keeping each pause under 10 seconds.",
+            "End-tidal CO2 under **10 mmHg** means poor compressions; change the compressor.",
+            "A sudden rise in end-tidal CO2 to 35-40 mmHg suggests ROSC.",
+            "Look for tension pneumothorax, tamponade, toxidrome and a gravid uterus.",
+            "Check **capillary glucose** and core temperature in every arrest.",
+          ],
+        },
+        {
+          title: "Treatment - first line",
+          points: [
+            "Start compressions within 10 seconds on a firm, flat surface.",
+            "Push **5-6 cm** deep at **100-120/min** and allow full recoil.",
+            "Give **30:2** compressions to breaths, each breath over 1 second.",
+            "Apply the AED as soon as it arrives and resume CPR right after the shock.",
+            "Swap the compressor every 2 minutes and keep compression fraction over 80%.",
+            "With an advanced airway, compress continuously and give one breath every 6 seconds.",
+            "Use IV first; use **intraosseous** access if IV fails twice.",
+          ],
+        },
+        {
+          title: "Treatment - next steps",
+          points: [
+            "Shockable rhythm: one shock of **150-200 J biphasic**, then CPR for 2 minutes.",
+            "After the **third shock**, give adrenaline 1 mg and amiodarone 300 mg.",
+            "Give amiodarone 150 mg after the fifth shock.",
+            "Non-shockable rhythm: give **adrenaline 1 mg** as soon as access is obtained.",
+            "Repeat adrenaline every 3-5 minutes throughout.",
+            "In refractory VF, change pad position to antero-posterior.",
+            "Consider stopping after 20 minutes of ALS with asystole and no reversible cause.",
+          ],
+        },
+        {
+          title: "Special groups",
+          points: [
+            "Children: give **5 rescue breaths** first, then 15:2 with two rescuers.",
+            "Children: shock at 4 J/kg and adrenaline 10 microgram/kg.",
+            "Infants: use the **two-thumb encircling** technique; the two-finger method is dropped.",
+            "Pregnancy over 20 weeks: manual left uterine displacement during CPR.",
+            "Pregnancy: plan **resuscitative hysterotomy within 5 minutes** if no ROSC.",
+            "Hypothermia, drowning and poisoning: continue CPR much longer.",
+          ],
+        },
+        {
+          title: "Complications and red flags",
+          points: [
+            "Post-cardiac arrest syndrome has four parts: brain injury, myocardial stunning, reperfusion response, persisting cause.",
+            "Rib fractures during CPR are common and acceptable.",
+            "Over-bagging causes gastric inflation and lowers coronary perfusion.",
+            "Treat post-ROSC seizures with levetiracetam; seizure prophylaxis is not recommended.",
+            "Dialysis patient with peaked T waves: give calcium gluconate before arrest occurs.",
+          ],
+        },
+        {
+          title: "Referral and follow-up",
+          points: [
+            "Transfer every ROSC patient by ALS ambulance with a pre-alert to cath lab and ICU.",
+            "Post-ROSC targets: SpO2 **94-98%**, PaCO2 35-45 mmHg, MAP 65 mmHg or more.",
+            "Get a **12-lead ECG within 10 minutes** of ROSC; ST elevation means primary PCI.",
+            "Keep core temperature **37.7 C or below for 72 hours** in comatose patients.",
+            "Delay neuroprognostication to at least 72 hours, using several tests.",
+            "Screen first-degree relatives of young sudden cardiac death victims.",
+          ],
+        },
+      ],
+      tables: [
+        {
+          heading: "Drugs in cardiac arrest",
+          columns: ["Drug", "Dose and route", "Duration", "Key side effects / cautions"],
+          rows: [
+            ["Adrenaline (1:10,000)", "1 mg IV/IO; child 10 microgram/kg", "Every 3-5 min", "Arrhythmia; flush 20 mL saline"],
+            ["Amiodarone", "300 mg IV; child 5 mg/kg", "After 3rd shock; 150 mg after 5th", "Hypotension, bradycardia, phlebitis"],
+            ["Lidocaine", "1-1.5 mg/kg IV, then 50 mg", "Only if no amiodarone", "Seizures, confusion; max 3 mg/kg"],
+            ["Magnesium sulphate", "2 g IV over 1-2 min", "Single dose", "Torsades or low magnesium only"],
+            ["Calcium gluconate 10%", "30 mL IV", "Single dose", "Necrosis if extravasated"],
+            ["Insulin with glucose", "Insulin 10 units with 25 g glucose IV", "Single dose", "Hypoglycaemia; check glucose hourly 6 h"],
+            ["Sodium bicarbonate 8.4%", "50 mL (50 mmol) IV", "Single dose", "Only hyperkalaemia or tricyclic overdose"],
+            ["Levetiracetam (post-ROSC)", "40-60 mg/kg IV (max 4.5 g)", "For seizures only", "No prophylaxis"],
+          ],
+        },
+        {
+          heading: "Rhythm decides the first action",
+          columns: ["Rhythm", "ECG look", "Shock?", "Adrenaline timing"],
+          rows: [
+            ["VF", "Chaotic waves, no QRS", "Yes, at once", "After 3rd shock"],
+            ["Pulseless VT", "Broad regular QRS over 150/min", "Yes, at once", "After 3rd shock"],
+            ["Asystole", "Flat line; check leads and gain", "No", "As soon as access"],
+            ["PEA", "Organised rhythm, no pulse", "No", "As soon as access"],
+          ],
+        },
+        {
+          heading: "BLS by age",
+          columns: ["Parameter", "Adult", "Child", "Infant"],
+          rows: [
+            ["Depth", "5-6 cm", "About 5 cm (one-third)", "About 4 cm (one-third)"],
+            ["Ratio", "30:2", "15:2 (two rescuers)", "15:2 (two rescuers)"],
+            ["Rescue breaths first", "No", "Yes, 5", "Yes, 5"],
+            ["Technique", "Two hands, lower sternum", "One or two hands", "Two-thumb encircling"],
+            ["Shock energy", "150-200 J biphasic", "4 J/kg", "4 J/kg"],
+          ],
+        },
+      ],
+      remember: [
+        "Unresponsive plus not breathing normally is arrest; skip the pulse hunt.",
+        "Push hard, push fast, full recoil, pauses under 10 seconds.",
+        "Arrest adrenaline 1 mg IV of 1:10,000; anaphylaxis 0.5 mg IM of 1:1000.",
+        "Shock first in VF; drug first in asystole and PEA.",
+        "No atropine in arrest; bicarbonate only for hyperkalaemia or tricyclics.",
+        "4 Hs and 4 Ts: hypoxia, hypovolaemia, potassium, hypothermia; thrombosis, tension, tamponade, toxins.",
+        "No one is dead until warm and dead.",
+      ],
+    },
     master: {
       heading: "Master revision table - Cardiac arrest (BLS and ACLS)",
       columns: ["Aspect", "High-yield points"],
@@ -71,6 +232,156 @@ const revision: RevisionSet = {
 
   "emergency-anaphylaxis": {
     checked: "2026-10",
+    notes: {
+      sections: [
+        {
+          title: "Definition and key facts",
+          points: [
+            "Anaphylaxis is a serious, **rapid-onset systemic hypersensitivity** reaction that can kill.",
+            "Death comes through airway, breathing or circulation failure.",
+            "Skin signs are **absent in up to 20%**, including fatal reactions.",
+            "Adult hypotension means systolic BP under **90 mmHg** or a fall over 30%.",
+            "**Biphasic** reactions recur in about 5%, usually within 12 hours.",
+            "Refractory anaphylaxis means no response after **two IM adrenaline** doses.",
+          ],
+        },
+        {
+          title: "Classification that matters",
+          points: [
+            "Use the **WAO 2020 criteria**; either criterion makes the diagnosis.",
+            "Criterion 1: acute skin or mucosal signs plus respiratory, circulatory or severe gut features.",
+            "Criterion 2: acute hypotension, bronchospasm or laryngeal involvement after a likely allergen.",
+            "Criterion 2 needs **no skin signs** at all.",
+          ],
+        },
+        {
+          title: "Causes and risk factors",
+          points: [
+            "Indian triggers: injectable antibiotics, diclofenac, iron sucrose, anti-snake venom, contrast and vaccines.",
+            "Bee and wasp stings and foods like peanut, prawn, egg and milk are common.",
+            "Poorly controlled **asthma** is the strongest risk factor for fatal food anaphylaxis.",
+            "**Beta-blockers** and ACE inhibitors predict severe, refractory reactions.",
+            "Co-factors include exercise, alcohol, NSAIDs, infection and menstruation.",
+          ],
+        },
+        {
+          title: "How it happens (pathophysiology)",
+          points: [
+            "1. First exposure makes allergen-specific **IgE**, which arms mast cells and basophils.",
+            "2. Re-exposure cross-links IgE and triggers degranulation within seconds (type I reaction).",
+            "3. Histamine and tryptase release at once; leukotrienes, prostaglandins and PAF follow.",
+            "4. Vasodilatation and leak can lose 35% of plasma volume within 10 minutes.",
+            "5. Mucosal oedema causes stridor; smooth muscle spasm causes wheeze and cramps.",
+            "6. Adrenaline reverses vasodilatation, bronchodilates and **stops further mast cell release**.",
+          ],
+        },
+        {
+          title: "History in the OPD",
+          points: [
+            "If any airway, breathing or circulation problem exists, **give adrenaline before more history**.",
+            "Ask what was given, eaten or stung, and how long ago.",
+            "Injected triggers act within 5-30 minutes; foods within 30 minutes to 2 hours.",
+            "Ask about previous reactions, asthma, beta-blockers, ACE inhibitors and pregnancy.",
+            "Vasovagal attack shows bradycardia, pallor, no rash and recovery lying flat.",
+          ],
+        },
+        {
+          title: "Examination",
+          points: [
+            "Airway: tongue or uvular swelling, **stridor** and hoarse voice.",
+            "Breathing: wheeze, silent chest and falling SpO2.",
+            "Circulation: tachycardia, low BP and slow capillary refill.",
+            "**Bradycardia** in a shocked patient is a late, pre-arrest sign.",
+            "Repeat ABCDE every 5 minutes to decide on another adrenaline dose.",
+          ],
+        },
+        {
+          title: "Investigations",
+          points: [
+            "No test should delay adrenaline; diagnosis is clinical.",
+            "Take **serum tryptase** soon after treatment, again at 1-2 hours, and at 24 hours.",
+            "A normal tryptase does not exclude anaphylaxis, especially with food.",
+            "Allergy tests are done at **4-6 weeks**; earlier tests may be falsely negative.",
+          ],
+        },
+        {
+          title: "Treatment - first line",
+          points: [
+            "Call for help and remove the trigger, but never delay adrenaline.",
+            "**Adrenaline 1:1000 IM** into the anterolateral mid-thigh, 0.01 mg/kg, maximum 0.5 mg.",
+            "Repeat IM adrenaline **every 5 minutes** if there is no improvement.",
+            "**Lie flat with legs raised**; never stand or walk the patient.",
+            "Give high-flow oxygen 15 L/min and a crystalloid bolus if shocked.",
+            "There is no absolute contraindication to adrenaline in anaphylaxis.",
+          ],
+        },
+        {
+          title: "Treatment - next steps",
+          points: [
+            "After two IM doses, start a monitored **low-dose IV adrenaline infusion**.",
+            "Never give 1:1000 adrenaline as an IV bolus.",
+            "Persistent wheeze: nebulised salbutamol 5 mg after adrenaline.",
+            "Beta-blocked and not responding: **glucagon 1-2 mg IV** over 5 minutes.",
+            "Antihistamines and steroids are not first-line; they do not treat shock or airway.",
+            "Call airway help early at the first sign of stridor or tongue swelling.",
+          ],
+        },
+        {
+          title: "Referral and follow-up",
+          points: [
+            "Observe **6 hours** after one dose of adrenaline.",
+            "Observe **12 hours** or admit after two doses or a severe reaction.",
+            "Discharge with **two auto-injectors** or a kit and a written action plan.",
+            "Refer every patient to an allergy clinic to confirm the trigger.",
+            "Label the allergy by name and report drug reactions to pharmacovigilance.",
+            "Prevention: ask about allergy before every injection and observe 30 minutes after.",
+          ],
+        },
+      ],
+      tables: [
+        {
+          heading: "Drugs in anaphylaxis",
+          columns: ["Drug", "Dose and route", "Duration", "Key side effects / cautions"],
+          rows: [
+            ["Adrenaline 1:1000", "0.01 mg/kg IM thigh; max 0.5 mg", "Repeat every 5 min", "Tremor, palpitations; never IV bolus"],
+            ["Adrenaline infusion", "10 microgram/mL at 0.5-1 mL/kg/h", "Titrate; refractory cases", "Arrhythmia; continuous monitoring"],
+            ["Crystalloid", "Adult 500-1000 mL; child 10 mL/kg", "Repeat to BP", "Overload in cardiac or renal disease"],
+            ["Salbutamol nebulised", "5 mg (2.5 mg under 5 years)", "Repeat as needed", "Tremor, low potassium"],
+            ["Glucagon", "1-2 mg IV over 5 min", "Repeatable, then infusion", "Vomiting; for beta-blocked patients"],
+            ["Chlorphenamine or cetirizine", "Chlorphenamine 10 mg IM; cetirizine 10 mg oral", "After stabilisation only", "Sedation; skin symptoms only"],
+            ["Hydrocortisone", "200 mg IV (child 50-100 mg)", "Once", "Not routine; refractory or asthma"],
+          ],
+        },
+        {
+          heading: "IM adrenaline dose by age",
+          columns: ["Age", "Dose of 1:1000", "Volume"],
+          rows: [
+            ["Adult and over 12 years", "0.5 mg", "0.5 mL"],
+            ["6-12 years", "0.3 mg", "0.3 mL"],
+            ["6 months to 6 years", "0.15 mg", "0.15 mL"],
+            ["Under 6 months", "0.1-0.15 mg", "0.1-0.15 mL"],
+          ],
+        },
+        {
+          heading: "Anaphylaxis and its mimics",
+          columns: ["Feature", "Anaphylaxis", "Vasovagal", "Acute asthma"],
+          rows: [
+            ["Pulse", "Fast (slow is pre-arrest)", "Slow", "Fast"],
+            ["Skin", "Urticaria, flushing (absent in 20%)", "Pale, no rash", "No rash"],
+            ["BP", "Low", "Low, recovers lying flat", "Normal"],
+            ["Airway", "Stridor, swelling possible", "Normal", "Wheeze only"],
+          ],
+        },
+      ],
+      remember: [
+        "Adrenaline 1:1000 IM thigh, 0.01 mg/kg, max 0.5 mg; repeat every 5 minutes.",
+        "No rash does not mean no anaphylaxis.",
+        "Lie flat, legs up; standing can cause empty-ventricle arrest.",
+        "Beta-blocker plus no response to adrenaline means glucagon.",
+        "Observe 6 hours after one dose; 12 hours after two.",
+        "Two auto-injectors, a written plan and an allergy referral at discharge.",
+      ],
+    },
     updated: ["GINA 2026: where features of both anaphylaxis and asthma are present, adrenaline is given first, then bronchodilators"],
     master: {
       heading: "Master revision table - Anaphylaxis",
@@ -142,6 +453,166 @@ const revision: RevisionSet = {
 
   "emergency-shock": {
     checked: "2026-10",
+    notes: {
+      sections: [
+        {
+          title: "Definition and key facts",
+          points: [
+            "Shock is acute circulatory failure where **oxygen delivery fails to meet cellular demand**.",
+            "It is a perfusion problem, not a blood pressure number.",
+            "**Hypotension is a late sign**; up to 30% of blood volume can be lost first.",
+            "Key numbers: MAP under **65 mmHg**, lactate over **2 mmol/L**, urine under 0.5 mL/kg/h.",
+            "Shock index (heart rate divided by systolic BP) over 0.9 suggests significant blood loss.",
+            "**Septic shock** needs a vasopressor for MAP 65 mmHg and lactate over 2 despite fluid.",
+          ],
+        },
+        {
+          title: "Classification that matters",
+          points: [
+            "**Hypovolaemic**: haemorrhage, diarrhoea, burns and DKA reduce circulating volume.",
+            "**Distributive**: sepsis, anaphylaxis, neurogenic shock, adrenal crisis.",
+            "**Cardiogenic**: MI, myocarditis, arrhythmia, valve failure, peripartum cardiomyopathy.",
+            "**Obstructive**: tension pneumothorax, tamponade, massive pulmonary embolism.",
+            "Stages run from compensated to decompensated to irreversible; treat early.",
+            "Shock is often mixed, so reclassify after every intervention.",
+          ],
+        },
+        {
+          title: "How it happens (pathophysiology)",
+          points: [
+            "1. Oxygen delivery depends on cardiac output and arterial oxygen content.",
+            "2. Each shock type breaks one link: preload, contractility, afterload or vessel tone.",
+            "3. Baroreceptors raise sympathetic outflow, causing tachycardia and cold, clammy skin.",
+            "4. Renin-angiotensin and ADH retain water, so urine output falls early.",
+            "5. Starved cells switch to anaerobic glycolysis and produce **lactate**.",
+            "6. Ion pumps fail, cells swell and organs fail if shock is not corrected.",
+          ],
+        },
+        {
+          title: "History in the OPD",
+          points: [
+            "Ask about bleeding: trauma, haematemesis, melaena, heavy vaginal bleeding or missed period.",
+            "Ask about fluid loss: diarrhoea, vomiting, polyuria with high sugar, burns.",
+            "Ask about fever and its day; shock on **day 4-6** suggests dengue.",
+            "Ask about chest pain, breathlessness and recent delivery for cardiogenic shock.",
+            "Ask about long-term steroids, injections, stings, poisons and snake bite.",
+          ],
+        },
+        {
+          title: "Examination",
+          points: [
+            "Capillary refill over **3 seconds** and knee mottling mean poor perfusion.",
+            "Check the three windows: skin, brain (confusion) and kidney (urine output).",
+            "**JVP plus lung fields** sorts the type of shock at the bedside.",
+            "Warm skin with bradycardia suggests **neurogenic shock**.",
+            "Look for tracheal deviation, muffled heart sounds and pulsus paradoxus over 10 mmHg.",
+            "Passive leg raise for 1 minute predicts fluid responsiveness.",
+          ],
+        },
+        {
+          title: "Investigations",
+          points: [
+            "At cannulation, draw cross-match, Hb, glucose, creatinine, electrolytes and lactate.",
+            "Take **two sets of blood cultures** before antibiotics.",
+            "Repeat lactate within **2-4 hours**; a falling value means resuscitation is working.",
+            "Do a **urine pregnancy test** in every woman of reproductive age with shock.",
+            "Get an ECG within 10 minutes and bedside ultrasound to find the type.",
+            "Never delay treatment for CVP or CT in an unstable patient.",
+          ],
+        },
+        {
+          title: "Treatment - first line",
+          points: [
+            "Lie flat, give oxygen to SpO2 94-98% and stop visible bleeding.",
+            "Insert two large-bore cannulae; use intraosseous access if two attempts fail.",
+            "Give fluid as boluses over 15-30 minutes and **reassess after each**.",
+            "**Stop fluid** when JVP rises, crackles appear or SpO2 falls.",
+            "Septic shock: at least **30 mL/kg balanced crystalloid** within 3 hours.",
+            "Septic shock: **antibiotics within 1 hour**, after blood cultures.",
+            "Catheterise and target urine at least 0.5 mL/kg/h.",
+          ],
+        },
+        {
+          title: "Treatment - next steps",
+          points: [
+            "Start **noradrenaline** early if MAP stays under 65 mmHg after 1-2 L.",
+            "Start noradrenaline peripherally in a large proximal vein; do not wait for a central line.",
+            "Add vasopressin 0.03 units/min when noradrenaline reaches 0.25-0.5 microgram/kg/min.",
+            "Add dobutamine for low cardiac output with adequate filling and MAP.",
+            "Hydrocortisone 50 mg 6-hourly is suggested in septic shock still needing vasopressor.",
+            "Dopamine is not first-line, and renal-dose dopamine protects nothing.",
+            "Control the source (drain, remove line, surgery) within 6-12 hours.",
+          ],
+        },
+        {
+          title: "Special groups",
+          points: [
+            "Haemorrhage: limit crystalloid to about 1 L, then blood in **1:1:1** ratio.",
+            "Haemorrhage: permissive hypotension (systolic 80-90 mmHg) until bleeding stops, except head injury.",
+            "Children: 10-20 mL/kg boluses; without ICU, give boluses only for hypotension (FEAST).",
+            "Cardiogenic shock from MI needs primary PCI; avoid nitrates in RV infarction.",
+            "Adrenal crisis: **hydrocortisone 100 mg IV** at once plus saline.",
+            "Severe anaemia with heart failure: transfuse slowly with furosemide cover.",
+          ],
+        },
+        {
+          title: "Referral and follow-up",
+          points: [
+            "Reassess every 15 minutes in the first hour.",
+            "Shock persisting after 30 mL/kg or needing noradrenaline means **ICU transfer**.",
+            "Transfer with escort, oxygen, running line and written notes.",
+            "Dengue: check haematocrit 4-6 hourly in the critical phase.",
+            "Steroid-dependent patients leave with sick-day rules and an emergency hydrocortisone kit.",
+          ],
+        },
+      ],
+      tables: [
+        {
+          heading: "Drugs in shock",
+          columns: ["Drug", "Dose and route", "Duration", "Key side effects / cautions"],
+          rows: [
+            ["Balanced crystalloid", "Septic: 30 mL/kg IV in 500 mL boluses", "Within 3 h, reassess each", "Pulmonary and tissue oedema"],
+            ["Noradrenaline", "0.05-0.5 microgram/kg/min IV infusion", "Titrate to MAP 65", "Extravasation necrosis, gut ischaemia"],
+            ["Vasopressin", "0.03 units/min fixed IV", "Added to noradrenaline", "Digital ischaemia, hyponatraemia"],
+            ["Adrenaline infusion", "0.05-0.5 microgram/kg/min IV", "Refractory shock", "Arrhythmia, raised lactate"],
+            ["Dobutamine", "2.5-20 microgram/kg/min IV", "Low output states", "Tachycardia, can drop BP"],
+            ["Hydrocortisone", "50 mg IV 6-hourly; crisis 100 mg stat", "While vasopressor needed", "Hyperglycaemia, infection risk"],
+            ["Tranexamic acid", "1 g IV over 10 min, then 1 g over 8 h", "Only within 3 h of injury", "Rare thrombosis, seizures"],
+            ["Ceftriaxone (sepsis)", "2 g IV", "Within 1 h; review 48-72 h", "Broaden if hospital-acquired"],
+          ],
+        },
+        {
+          heading: "Bedside types of shock",
+          columns: ["Type", "JVP and lungs", "Skin and pulse", "First action"],
+          rows: [
+            ["Hypovolaemic", "Flat JVP, clear lungs", "Cold, narrow pulse pressure", "Stop bleeding, fluid, blood"],
+            ["Septic", "Low JVP, clear or focal crackles", "Warm early, wide pulse pressure", "Cultures, antibiotics, fluid, noradrenaline"],
+            ["Neurogenic", "Flat JVP", "Warm, bradycardia", "Fluid, noradrenaline, atropine"],
+            ["Cardiogenic", "Raised JVP, crackles", "Cold, mottled", "Reperfusion, noradrenaline, dobutamine"],
+            ["Obstructive", "Raised JVP, clear lungs", "Cold, pulsus paradoxus", "Decompress, drain, thrombolyse"],
+          ],
+        },
+        {
+          heading: "Targets in the first hours",
+          columns: ["Measure", "Target"],
+          rows: [
+            ["MAP", "65 mmHg or more (60-65 if aged 65 or over)"],
+            ["Capillary refill", "Under 3 seconds"],
+            ["Urine output", "0.5 mL/kg/h adult; 1 mL/kg/h child"],
+            ["Lactate", "Falling on repeat at 2-4 hours"],
+            ["SpO2", "94-98%"],
+          ],
+        },
+      ],
+      remember: [
+        "Hypotension is late; diagnose shock by refill, sensorium, urine and lactate.",
+        "JVP plus lungs: flat is fluid, full with crackles is pump, full and clear is obstruction.",
+        "Sepsis: cultures, antibiotics in 1 hour, 30 mL/kg, noradrenaline to MAP 65.",
+        "Fluid is a drug: bolus, reassess, stop when JVP rises or crackles appear.",
+        "Neurogenic shock is the only shock with warm skin and bradycardia.",
+        "Bleeding needs haemostasis, blood 1:1:1 and TXA within 3 hours.",
+      ],
+    },
     updated: [
       "SSC 2026: NEWS2, MEWS or SIRS preferred over qSOFA as a single sepsis screening tool",
       "SSC 2026: at least 30 mL/kg crystalloid in first 3 h; balanced crystalloids suggested; crystalloid alone suggested over adding albumin",
@@ -222,6 +693,165 @@ const revision: RevisionSet = {
 
   "emergency-poisoning": {
     checked: "2026-10",
+    notes: {
+      sections: [
+        {
+          title: "Definition and key facts",
+          points: [
+            "Most adult poisoning in India is **deliberate self-poisoning with pesticides**.",
+            "Most childhood poisoning is accidental: kerosene, medicines and household chemicals.",
+            "Common poisons: organophosphates, aluminium phosphide, rodenticides, yellow oleander, corrosives, paracetamol.",
+            "A toxic paracetamol dose is **150 mg/kg or 7.5 g** or more in 24 hours.",
+            "Every poisoning in India is a **medico-legal case**.",
+          ],
+        },
+        {
+          title: "Classification that matters",
+          points: [
+            "Classify by **toxidrome**, because the bedside picture guides the first hour.",
+            "Cholinergic: pinpoint pupils, wet skin, bronchorrhoea, fasciculations.",
+            "Anticholinergic: dilated pupils, hot dry flushed skin, delirium, urinary retention.",
+            "Opioid: pinpoint pupils, coma and respiratory rate under 12.",
+            "Cardiac glycoside: bradycardia, heart block, vomiting and hyperkalaemia.",
+            "Sympathomimetic: dilated pupils, sweating, tachycardia and hyperthermia.",
+          ],
+        },
+        {
+          title: "How it happens (pathophysiology)",
+          points: [
+            "1. Organophosphates block **acetylcholinesterase**, so acetylcholine builds up at all synapses.",
+            "2. Muscarinic excess causes bronchorrhoea, which drowns the patient.",
+            "3. Nicotinic excess causes fasciculations, then weakness and paralysis.",
+            "4. The blocked enzyme 'ages' within hours to days; pralidoxime then fails.",
+            "5. Atropine blocks muscarinic receptors only, so it does not reverse weakness.",
+            "6. In paracetamol overdose, excess **NAPQI** depletes glutathione and kills zone 3 liver cells.",
+            "7. Aluminium phosphide releases phosphine, which blocks cytochrome oxidase and causes refractory shock.",
+          ],
+        },
+        {
+          title: "History in the OPD",
+          points: [
+            "Protect yourself first: gloves, remove clothing, wash the patient's skin.",
+            "Ask for the **container**; the label gives compound and concentration.",
+            "Ask how much and when; timing decides charcoal and paracetamol level timing.",
+            "Ask what a local practitioner already gave, such as atropine or lavage.",
+            "Take a psychiatric history once stable to judge suicide risk.",
+          ],
+        },
+        {
+          title: "Examination",
+          points: [
+            "Always check capillary glucose: 'don't ever forget glucose'.",
+            "In organophosphate poisoning, **the chest, not the pupils**, is the atropine end-point.",
+            "Feel the axilla: wet in cholinergic, bone dry in anticholinergic poisoning.",
+            "Test neck flexion strength daily for intermediate syndrome.",
+            "Normal lips do not exclude oesophageal burns after corrosives.",
+          ],
+        },
+        {
+          title: "Investigations",
+          points: [
+            "Take an **ECG** in every deliberate overdose.",
+            "Potassium over **5.5 mmol/L** in oleander poisoning predicts death without Fab.",
+            "Check the paracetamol level at **4 hours or later**, never earlier.",
+            "Cholinesterase confirms organophosphate exposure but never delays atropine.",
+            "Check INR at 24 and 48 hours after superwarfarin ingestion.",
+            "Do not order a blind toxicology screen routinely.",
+          ],
+        },
+        {
+          title: "Treatment - first line",
+          points: [
+            "Resuscitate first: airway, oxygen to SpO2 94-98%, IV access, fluids.",
+            "**Activated charcoal 1 g/kg** within 1 hour, only with a protected airway.",
+            "Gastric lavage is not routine; ipecac is abandoned.",
+            "Corrosives: **no emesis, no lavage, no charcoal, no neutralisation**.",
+            "Kerosene: no emesis or lavage; observe at least 6 hours.",
+            "Organophosphate: **atropine 1.8-3 mg IV**, doubled every 5 minutes until atropinised.",
+          ],
+        },
+        {
+          title: "Treatment - next steps",
+          points: [
+            "Atropinisation: clear chest, heart rate over 80, systolic over 80, dry axillae, pupils not pinpoint.",
+            "Then infuse **10-20% of the loading dose** per hour.",
+            "Atropine toxicity: stop, wait 30-60 minutes, restart at 70-80% of the rate.",
+            "Give pralidoxime only after atropine, as an infusion, never pushed fast.",
+            "Paracetamol: start **N-acetylcysteine** if the level is above the line or timing is unknown.",
+            "Aluminium phosphide has no antidote; give fluids, noradrenaline and early ICU care.",
+            "Yellow oleander: multiple-dose charcoal, atropine, then Fab or pacing; avoid IV calcium.",
+          ],
+        },
+        {
+          title: "Complications and red flags",
+          points: [
+            "Inability to lift the head at 24-96 hours means **intermediate syndrome**; ventilate.",
+            "Stridor, drooling or hoarseness after a corrosive means early intubation.",
+            "Yellow phosphorus causes liver failure at 3-5 days after a well interval.",
+            "Avoid succinylcholine, aminoglycosides and morphine in organophosphate poisoning.",
+            "Corrosive survivors develop strictures at 3-6 weeks.",
+          ],
+        },
+        {
+          title: "Referral and follow-up",
+          points: [
+            "Refer all organophosphate, phosphide, oleander, paraquat and corrosive poisonings.",
+            "Transfer with a written list of every drug, dose and clock time.",
+            "Every self-harm patient needs a **psychosocial assessment** before discharge.",
+            "Review organophosphate survivors at 2-3 weeks for delayed neuropathy.",
+            "For unfamiliar compounds, call the AIIMS poison helpline **1800-116-117**.",
+            "Prevention: locked pesticide storage and never decanting kerosene into drink bottles.",
+          ],
+        },
+      ],
+      tables: [
+        {
+          heading: "Antidotes and key drugs",
+          columns: ["Drug", "Dose and route", "Duration", "Key side effects / cautions"],
+          rows: [
+            ["Atropine", "1.8-3 mg IV; child 0.02-0.05 mg/kg", "Double every 5 min, then infusion", "Delirium, hyperthermia, ileus, retention"],
+            ["Pralidoxime", "30 mg/kg IV over 15-30 min, then 8 mg/kg/h", "Until atropine not needed 12-24 h", "Laryngospasm, weakness if pushed fast"],
+            ["N-acetylcysteine IV", "150 mg/kg over 1 h, 50 over 4 h, 100 over 16 h", "21 h; longer if ALT rising", "Flushing, wheeze: slow, do not stop"],
+            ["Naloxone", "0.4 mg IV, repeat to 2-10 mg", "Infusion for long-acting opioids", "Acute withdrawal, agitation"],
+            ["Vitamin K1", "10 mg slow IV, then 10-50 mg oral daily", "Weeks to months, by INR", "Reaction if given fast IV"],
+            ["Activated charcoal", "1 g/kg (adult 50 g) oral", "Within 1 h; repeat 4-6 h for oleander", "Aspiration; not for corrosives or kerosene"],
+            ["Digoxin-specific Fab", "5-10 vials IV empirically", "Repeat if needed", "Hypokalaemia; pacing if unavailable"],
+            ["Fomepizole (methanol)", "15 mg/kg IV, then 10 mg/kg 12-hourly", "With dialysis", "Headache, nausea"],
+          ],
+        },
+        {
+          heading: "Toxidromes at a glance",
+          columns: ["Toxidrome", "Pupils", "Skin", "Key sign", "First move"],
+          rows: [
+            ["Cholinergic", "Pinpoint", "Wet", "Bronchorrhoea, fasciculations", "Atropine, then pralidoxime"],
+            ["Anticholinergic", "Dilated", "Hot and dry", "Delirium, urinary retention", "Cooling, benzodiazepine"],
+            ["Opioid", "Pinpoint", "Normal or cool", "Breathing under 12/min", "Ventilate, naloxone"],
+            ["Cardiac glycoside", "Normal", "Normal", "Heart block, high potassium", "Charcoal, atropine, Fab"],
+            ["Sympathomimetic", "Dilated", "Wet", "Tachycardia, hyperthermia", "Benzodiazepine, cooling"],
+          ],
+        },
+        {
+          heading: "When to start NAC",
+          columns: ["Situation", "Action"],
+          rows: [
+            ["Level at 4-8 h above line (150 mg/L at 4 h)", "Start NAC"],
+            ["Over 8 h after 150 mg/kg or more", "Start NAC now, then check level"],
+            ["Staggered or unknown time", "Treat with NAC"],
+            ["ALT raised or INR over 1.3", "Continue NAC beyond 21 h"],
+            ["pH under 7.30 after resuscitation", "Urgent liver unit transfer"],
+          ],
+        },
+      ],
+      remember: [
+        "Treat the patient, not the poison: ABCDE and glucose first.",
+        "DUMBELS for muscarinic excess: diarrhoea, urination, miosis, bronchorrhoea, emesis, lacrimation, salivation.",
+        "Atropine to a dry chest, doubling every 5 minutes; no maximum dose.",
+        "Anticholinergic: hot as a hare, blind as a bat, dry as a bone, red as a beet, mad as a hatter.",
+        "NAC reaction means slow it, not stop it.",
+        "Corrosives: no emesis, no lavage, no charcoal, no neutralisation.",
+        "Preserve the container and inform police, but never delay treatment.",
+      ],
+    },
     master: {
       heading: "Master revision table - Poisoning in Indian practice",
       columns: ["Aspect", "High-yield points"],
@@ -289,6 +919,168 @@ const revision: RevisionSet = {
 
   "emergency-burns": {
     checked: "2026-10",
+    notes: {
+      sections: [
+        {
+          title: "Definition and key facts",
+          points: [
+            "A burn is tissue injury from thermal, electrical, chemical, radiation or friction energy.",
+            "In India, most are **flame burns in women** and **scalds in children**.",
+            "Extent is **% TBSA** of partial- and full-thickness burn only.",
+            "Simple erythema is **never counted** in TBSA.",
+            "Major burn: over **15% TBSA in adults** or over 10% in children, or inhalation injury.",
+            "Revised Baux score is age plus %TBSA plus 17 for inhalation injury.",
+          ],
+        },
+        {
+          title: "Classification that matters",
+          points: [
+            "Classify by **depth**, because depth decides healing and grafting.",
+            "Superficial (epidermal): red, dry, painful, heals in 5-7 days.",
+            "Superficial partial thickness: pink, moist, blistered, heals in 10-14 days.",
+            "Deep partial thickness: blotchy, reduced sensation, takes over 3 weeks.",
+            "Full thickness: white or leathery, **insensate**, heals only from the edges.",
+            "Sensation is more reliable than colour for judging depth.",
+          ],
+        },
+        {
+          title: "How it happens (pathophysiology)",
+          points: [
+            "1. Jackson's zones: central coagulation, surrounding stasis, outer hyperaemia.",
+            "2. The **zone of stasis** is salvageable for 24-48 hours; first aid aims to save it.",
+            "3. Mediators raise capillary permeability, systemically in burns over 20-30%.",
+            "4. Plasma leak is maximal in the first 8-12 hours, causing burn shock.",
+            "5. Circumferential eschar acts as a tourniquet on limbs or chest.",
+            "6. After 48 hours, hypermetabolism doubles metabolic rate and slows healing.",
+            "7. Infection and sepsis are the main cause of late death.",
+          ],
+        },
+        {
+          title: "History in the OPD",
+          points: [
+            "Note the **time of injury**; the fluid clock starts at the burn.",
+            "Ask about an enclosed space, which suggests inhalation injury.",
+            "Ask about first aid given and home remedies that need washing off.",
+            "Check **tetanus** immunisation status and give toxoid if due.",
+            "Ask a woman with a kerosene burn, alone, about assault or dowry harassment.",
+          ],
+        },
+        {
+          title: "Examination",
+          points: [
+            "Look first for **inhalation injury**: facial burns, soot, hoarse voice, stridor.",
+            "Adults: use the **Wallace rule of nines**.",
+            "Children: use a **Lund and Browder chart**; an infant's head is about 18%.",
+            "The patient's own palm with fingers is about 1% TBSA.",
+            "Check circumferential burns hourly for perfusion and pain on passive stretch.",
+            "A clean tide-mark scald or glove-and-stocking pattern suggests non-accidental injury.",
+          ],
+        },
+        {
+          title: "Investigations",
+          points: [
+            "Send Hb, electrolytes, creatinine, glucose and cross-match in major burns.",
+            "Blood gas with **carboxyhaemoglobin** in every fire victim.",
+            "Normal SpO2 does **not** exclude carbon monoxide poisoning.",
+            "Lactate over 8 mmol/L after smoke inhalation suggests cyanide.",
+            "ECG, CK and urine myoglobin in electrical burns.",
+            "Hourly urine output is the main test that steers fluids.",
+          ],
+        },
+        {
+          title: "Treatment - first line",
+          points: [
+            "Stop the burning; switch off electricity before touching the casualty.",
+            "**Cool running water for 20 minutes**, useful up to 3 hours after injury.",
+            "No ice, toothpaste, ink, turmeric, ghee or mud.",
+            "Cool the burn but **keep the patient warm**.",
+            "Cover with **cling film in strips**, never wrapped round.",
+            "Give 100% oxygen by non-rebreathing mask to every fire casualty.",
+            "Chemical burns: irrigate 20-30 minutes, 60 minutes or more for alkalis.",
+          ],
+        },
+        {
+          title: "Treatment - next steps",
+          points: [
+            "IV fluid for burns over 15% in adults or 10% in children.",
+            "**Parkland**: 4 mL x kg x %TBSA of Ringer lactate in 24 hours.",
+            "Give half in the **first 8 hours from the time of burn**.",
+            "ATLS now starts at 2 mL/kg/% adults, 3 children, 4 electrical.",
+            "Titrate to urine **0.5 mL/kg/h** in adults and 1 mL/kg/h in children under 30 kg.",
+            "Children also need maintenance dextrose fluid by the 4-2-1 rule.",
+            "Give IV morphine; no prophylactic antibiotics and no colloid in the first 8-12 hours.",
+          ],
+        },
+        {
+          title: "Complications and red flags",
+          points: [
+            "Stridor, hoarseness or soot with distress means **early intubation** before transfer.",
+            "Succinylcholine is unsafe after about 48 hours because of hyperkalaemia.",
+            "Circumferential burn with rising pain or paraesthesia needs **escharotomy**.",
+            "Early hypotension after an isolated burn means another injury.",
+            "Dark urine means myoglobinuria; raise urine target to 1-1.5 mL/kg/h.",
+            "Fluid creep causes abdominal and limb compartment syndromes.",
+          ],
+        },
+        {
+          title: "Referral and follow-up",
+          points: [
+            "Refer partial thickness over 10%, any full thickness and special sites.",
+            "Special sites: face, hands, feet, genitalia, perineum and major joints.",
+            "Also refer electrical, chemical, inhalation, circumferential burns and suspected abuse.",
+            "A wound not healed by **2-3 weeks** is deep and needs grafting.",
+            "Burns in a woman within **7 years of marriage** need police intimation.",
+            "Use pressure garments and splints to prevent hypertrophic scars and contractures.",
+          ],
+        },
+      ],
+      tables: [
+        {
+          heading: "Drugs and fluids in burns",
+          columns: ["Drug", "Dose and route", "Duration", "Key side effects / cautions"],
+          rows: [
+            ["Ringer lactate", "Parkland 4 mL/kg/%TBSA IV", "Half in 8 h, rest over 16 h", "Fluid creep, pulmonary oedema"],
+            ["Morphine", "0.1 mg/kg IV in 1-2 mg steps", "As needed", "Respiratory depression; IV not IM"],
+            ["Silver sulfadiazine 1%", "Topical, 3-5 mm layer", "Once or twice daily", "Avoid face, infants, G6PD, near term"],
+            ["Tetanus toxoid and TIG", "Td 0.5 mL IM; TIG 250 IU IM", "Single dose", "TIG if unimmunised or unknown"],
+            ["Oxygen 100%", "15 L/min non-rebreathing mask", "Until COHb under 5%", "Give regardless of SpO2"],
+            ["Hydroxocobalamin", "5 g IV over 15 min", "Repeat once", "Red skin and urine"],
+            ["Pantoprazole", "40 mg IV daily", "Until enteral feeding", "Curling ulcer prophylaxis"],
+          ],
+        },
+        {
+          heading: "Burn depth",
+          columns: ["Depth", "Look", "Feel", "Heals"],
+          rows: [
+            ["Superficial", "Red, dry, no blisters", "Painful, blanches", "5-7 days, no scar"],
+            ["Superficial partial", "Pink, moist, blisters", "Very painful, blanches", "10-14 days"],
+            ["Deep partial", "Blotchy red-white", "Reduced, sluggish blanching", "Over 3 weeks, graft"],
+            ["Full thickness", "White, waxy, leathery", "Insensate, no blanching", "Edges only, graft"],
+          ],
+        },
+        {
+          heading: "Rule of nines",
+          columns: ["Region", "Adult %", "Infant %"],
+          rows: [
+            ["Head and neck", "9", "18"],
+            ["Each arm", "9", "9"],
+            ["Front of trunk", "18", "18"],
+            ["Back of trunk", "18", "18"],
+            ["Each leg", "18", "14"],
+            ["Perineum", "1", "1"],
+          ],
+        },
+      ],
+      remember: [
+        "Cool the burn, warm the patient: 20 minutes of running water.",
+        "Erythema is not counted in TBSA.",
+        "Parkland 4 x kg x %TBSA; half in the first 8 hours from the burn.",
+        "Late arrival means faster fluid, not a later clock.",
+        "Urine output runs the drip: 0.5 adults, 1 mL/kg/h children.",
+        "Normal SpO2 does not exclude carbon monoxide.",
+        "Insensate, non-blanching, leathery skin is full thickness.",
+      ],
+    },
     master: {
       heading: "Master revision table - Burns",
       columns: ["Aspect", "High-yield points"],
@@ -356,6 +1148,160 @@ const revision: RevisionSet = {
 
   "emergency-trauma-primary-survey": {
     checked: "2026-10",
+    notes: {
+      sections: [
+        {
+          title: "Definition and key facts",
+          points: [
+            "The primary survey finds and treats injuries **in the order they kill**.",
+            "Order is **xABCDE**: exsanguination, airway, breathing, circulation, disability, exposure.",
+            "Treat each problem as you find it, then move on.",
+            "Then come adjuncts, the secondary survey and transfer.",
+            "The survey targets the early death peak of the **golden hour**.",
+            "Good Samaritan law (2016) protects bystanders who help road accident victims.",
+          ],
+        },
+        {
+          title: "Classification that matters",
+          points: [
+            "**ATLS haemorrhage classes I-IV** link blood loss to the need for blood.",
+            "Class I is under 15% loss; class IV is over 40%.",
+            "BP usually falls only in class III, after 30% loss.",
+            "Six chest killers: airway obstruction, tension, open pneumothorax, massive haemothorax, flail chest, tamponade.",
+          ],
+        },
+        {
+          title: "How it happens (pathophysiology)",
+          points: [
+            "1. Haemorrhage is the commonest preventable cause of early trauma death.",
+            "2. Blood hides in five places: floor, chest, abdomen, pelvis and long bones.",
+            "3. Injury and shock trigger coagulopathy within minutes.",
+            "4. The **lethal diamond**: hypothermia, acidosis, coagulopathy and hypocalcaemia.",
+            "5. Excess crystalloid dilutes clotting factors and dislodges fresh clot.",
+            "6. In tension pneumothorax, rising pleural pressure kinks the vena cavae and stops venous return.",
+            "7. In head injury, hypoxia or hypotension each double mortality.",
+          ],
+        },
+        {
+          title: "Examination",
+          points: [
+            "x: stop exsanguinating limb bleeding with pressure or a **tourniquet**; write the time.",
+            "A: a **normal voice** means a patent airway; use jaw thrust with in-line stabilisation.",
+            "B: look, feel, percuss and listen; give oxygen 15 L/min.",
+            "C: **hypotension in trauma is haemorrhage** until proved otherwise.",
+            "D: GCS by components, pupils and capillary glucose.",
+            "E: undress fully, log-roll with four people, then cover and keep warm.",
+            "Reassess from A after every intervention or any deterioration.",
+          ],
+        },
+        {
+          title: "Investigations",
+          points: [
+            "Draw cross-match, Hb, venous gas with lactate and a pregnancy test at cannulation.",
+            "Chest and pelvic X-ray in the resuscitation room for blunt major trauma.",
+            "**eFAST** shows free fluid, pneumothorax and pericardial blood.",
+            "Never take an unstable patient to CT.",
+            "Tension pneumothorax is a **clinical diagnosis**, never an X-ray one.",
+          ],
+        },
+        {
+          title: "Treatment - first line",
+          points: [
+            "Needle decompression: **4th or 5th intercostal space**, just anterior to mid-axillary line.",
+            "Follow needle decompression at once with a chest drain.",
+            "Open pneumothorax: occlusive dressing taped on three sides.",
+            "Pelvic binder at the **greater trochanters**, not the iliac crests.",
+            "Two large-bore cannulae; give 1 L warmed crystalloid, then assess response.",
+            "**Tranexamic acid 1 g IV** over 10 minutes within 3 hours of injury.",
+          ],
+        },
+        {
+          title: "Treatment - next steps",
+          points: [
+            "Transient or no response to fluid means bleeding; the next fluid is **blood**.",
+            "Give red cells, plasma and platelets in a **1:1:1** ratio.",
+            "Permissive hypotension: systolic **80-90 mmHg** until bleeding is controlled.",
+            "No permissive hypotension in head injury; keep systolic 110 mmHg or more.",
+            "Intubate for apnoea, GCS 8 or less, or hypoxia despite oxygen.",
+            "Open fracture: cefazolin 2 g IV within 1 hour.",
+          ],
+        },
+        {
+          title: "Special groups",
+          points: [
+            "Children compensate hard and then crash suddenly.",
+            "Children: decompress at the 2nd intercostal space, mid-clavicular line.",
+            "Pregnancy over 20 weeks: manual left uterine displacement and fetal heart check.",
+            "Elderly patients on beta-blockers cannot mount a tachycardia.",
+          ],
+        },
+        {
+          title: "Complications and red flags",
+          points: [
+            "Blood at the meatus or perineal haematoma: **no urethral catheter**.",
+            "Base-of-skull fracture signs: no nasal tube or nasopharyngeal airway.",
+            "Sudden deterioration on a ventilator: think **DOPE**.",
+            "Fixed dilated pupil or GCS fall of 2 or more means herniation.",
+            "Never start tranexamic acid after 3 hours; it increases mortality.",
+          ],
+        },
+        {
+          title: "Referral and follow-up",
+          points: [
+            "Decide to transfer early on injuries and physiology, not test results.",
+            "Never transfer with untreated tension, uncontrolled bleeding or an unprotected airway.",
+            "Carry oxygen for twice the journey time with a trained escort.",
+            "Hand over using **ATMIST**, including the time TXA was given.",
+            "Road traffic injuries are medico-legal cases.",
+          ],
+        },
+      ],
+      tables: [
+        {
+          heading: "Drugs in trauma",
+          columns: ["Drug", "Dose and route", "Duration", "Key side effects / cautions"],
+          rows: [
+            ["Tranexamic acid", "1 g IV over 10 min; child 15 mg/kg", "Then 1 g over 8 h", "Never start after 3 h"],
+            ["Crystalloid then blood", "1 L (child 20 mL/kg), then 1:1:1", "By response", "Dilution, hypothermia, low calcium"],
+            ["Morphine", "0.1 mg/kg IV in 1-2 mg steps", "As needed", "Respiratory depression; IV not IM"],
+            ["Ketamine", "0.1-0.3 mg/kg IV analgesia", "Induction 1-2 mg/kg", "Emergence reactions; keeps BP"],
+            ["Cefazolin", "2 g IV within 1 h", "8-hourly for 24-72 h", "Add gentamicin for Gustilo III"],
+            ["Tetanus toxoid and TIG", "Td 0.5 mL IM; TIG 250 IU IM", "Single dose", "Separate sites and syringes"],
+            ["Mannitol 20%", "0.25-1 g/kg IV over 15-20 min", "For herniation signs", "Diuresis, hypotension"],
+          ],
+        },
+        {
+          heading: "ATLS haemorrhage classes",
+          columns: ["Class", "Blood loss", "Key signs", "Blood needed"],
+          rows: [
+            ["I", "Under 15%", "All signs normal", "Monitor"],
+            ["II", "15-30%", "Narrow pulse pressure, anxious", "Possible"],
+            ["III", "31-40%", "Tachycardia, falling BP, confused", "Yes"],
+            ["IV", "Over 40%", "Hypotension, no urine, GCS falls", "Massive transfusion"],
+          ],
+        },
+        {
+          heading: "Chest killers at B and C",
+          columns: ["Injury", "Clue", "Immediate action"],
+          rows: [
+            ["Tension pneumothorax", "Absent breath sounds, raised JVP, shock", "Needle, then chest drain"],
+            ["Open pneumothorax", "Sucking chest wound", "Three-sided dressing, drain"],
+            ["Massive haemothorax", "Dull, shocked; over 1500 mL drained", "Drain, blood, thoracotomy"],
+            ["Flail chest", "Paradoxical segment, hypoxia", "Oxygen, analgesia, ventilate"],
+            ["Cardiac tamponade", "Beck's triad, pulsus paradoxus", "Pericardiocentesis, thoracotomy"],
+          ],
+        },
+      ],
+      remember: [
+        "xABCDE: stop the bleeding before the airway.",
+        "A patient talking normally has an airway, breathing and brain perfusion.",
+        "Blood on the floor and four more: chest, abdomen, pelvis, long bones.",
+        "TXA within 3 hours, never after.",
+        "After 1 L crystalloid, the next fluid is blood.",
+        "Beck's triad: hypotension, raised JVP, muffled heart sounds.",
+        "Handover by ATMIST: age, time, mechanism, injuries, signs, treatment.",
+      ],
+    },
     master: {
       heading: "Master revision table - Trauma primary survey and safe transfer",
       columns: ["Aspect", "High-yield points"],
@@ -426,6 +1372,166 @@ const revision: RevisionSet = {
 
   "emergency-altered-sensorium": {
     checked: "2026-10",
+    notes: {
+      sections: [
+        {
+          title: "Definition and key facts",
+          points: [
+            "Altered sensorium is an acute disturbance of **arousal or content** of consciousness.",
+            "It is a symptom, never a diagnosis.",
+            "Arousal comes from the reticular activating system; content from the cortex.",
+            "**Delirium** is an acute, fluctuating disturbance of attention from a medical cause.",
+            "Hypoactive delirium is common and commonly missed.",
+          ],
+        },
+        {
+          title: "Classification that matters",
+          points: [
+            "Record the **Glasgow Coma Scale** as E, V and M separately; maximum 15.",
+            "GCS 13-15 is mild, 9-12 moderate, 3-8 severe.",
+            "**GCS 8 or less** means an unprotected airway.",
+            "AVPU score of P or U equals a GCS of about 8 or less.",
+            "Causes are **structural** (focal signs) or **metabolic and toxic** (diffuse, symmetric).",
+          ],
+        },
+        {
+          title: "Causes and risk factors",
+          points: [
+            "Use **AEIOU TIPS** to work through causes at the bedside.",
+            "Hypoglycaemia from insulin or sulfonylurea is the commonest reversible cause.",
+            "In endemic areas think cerebral malaria, Japanese encephalitis, scrub typhus and dengue.",
+            "In the elderly look for new drugs, infection, urine retention and constipation.",
+            "Never accept alcohol or psychiatric illness as the label at first contact.",
+          ],
+        },
+        {
+          title: "How it happens (pathophysiology)",
+          points: [
+            "1. Coma needs both hemispheres affected or a brainstem reticular system lesion.",
+            "2. Metabolic causes depress neurons diffusely, so **pupil reflexes are preserved**.",
+            "3. The brain has almost no glucose stores, so hypoglycaemia quickly causes coma.",
+            "4. Glucose without thiamine in a deficient patient precipitates **Wernicke encephalopathy**.",
+            "5. Rising ICP lowers cerebral perfusion pressure (MAP minus ICP).",
+            "6. Uncal herniation compresses the third nerve, giving a fixed dilated pupil.",
+          ],
+        },
+        {
+          title: "History in the OPD",
+          points: [
+            "Ask the relative what drugs, alcohol or poison were available.",
+            "Ask about diabetes, epilepsy, liver, kidney and psychiatric illness.",
+            "Ask what happened in the last 24 hours: headache, fever, fall or seizure.",
+            "Sudden onset suggests stroke, SAH or seizure; days suggest infection or metabolic.",
+            "Sulfonylurea hypoglycaemia can relapse for **24-72 hours**.",
+          ],
+        },
+        {
+          title: "Examination",
+          points: [
+            "Check **capillary glucose in every patient**; no sign separates it from stroke.",
+            "The **motor score** carries most prognostic weight.",
+            "A unilateral fixed dilated pupil means herniation until proved otherwise.",
+            "Pinpoint pupils suggest opioid, organophosphate or pontine bleed.",
+            "Meningism may be absent in infants, the elderly and deep coma.",
+            "Chart GCS, pupils and vitals every 15 minutes with clock times.",
+          ],
+        },
+        {
+          title: "Investigations",
+          points: [
+            "Sodium, calcium, urea, creatinine, LFT, CBC and blood gas.",
+            "Malaria test, dengue test and blood cultures in febrile patients.",
+            "**CT head** for focal signs, trauma, sudden headache or unexplained coma.",
+            "Lumbar puncture for meningitis, but never delay antibiotics for it.",
+            "EEG if non-convulsive status epilepticus is suspected.",
+          ],
+        },
+        {
+          title: "Treatment - first line",
+          points: [
+            "Protect the airway; recovery position or intubation if GCS 8 or less.",
+            "Give oxygen to keep SpO2 at 94-98%.",
+            "Hypoglycaemia: **25% dextrose 100 mL IV**; child 10% dextrose 2-5 mL/kg.",
+            "Give **thiamine** before or with glucose in malnourished or alcoholic patients.",
+            "Opioid toxicity: **naloxone 0.4 mg IV**, titrated to breathing, not wakefulness.",
+            "Seizure of 5 minutes or more: lorazepam 0.1 mg/kg IV or midazolam 10 mg IM.",
+          ],
+        },
+        {
+          title: "Treatment - next steps",
+          points: [
+            "After two benzodiazepine doses, give **levetiracetam 60 mg/kg IV** (max 4500 mg).",
+            "Suspected meningitis: **ceftriaxone 2 g IV** plus dexamethasone, before CT and LP.",
+            "Cerebral malaria: **IV artesunate 2.4 mg/kg** at 0, 12 and 24 hours.",
+            "Suspected HSV encephalitis: aciclovir 10 mg/kg IV 8-hourly.",
+            "Severe hyponatraemia: 3% saline 100-150 mL; correct under 8-10 mmol/L in 24 hours.",
+            "Hepatic encephalopathy: lactulose to 2-3 soft stools daily.",
+            "Flumazenil is not given routinely; it provokes seizures.",
+          ],
+        },
+        {
+          title: "Referral and follow-up",
+          points: [
+            "Refer anyone not fully recovered, GCS 8 or less, or with focal signs.",
+            "Give first-dose antibiotic or antimalarial before transfer.",
+            "Send the timed GCS chart and every drug with dose and time.",
+            "Never send an unconscious patient in a private car with only a relative.",
+            "Describe alcohol as an odour, never certify it.",
+            "Stop or switch the sulfonylurea after severe hypoglycaemia.",
+          ],
+        },
+      ],
+      tables: [
+        {
+          heading: "Drugs in altered sensorium",
+          columns: ["Drug", "Dose and route", "Duration", "Key side effects / cautions"],
+          rows: [
+            ["Dextrose", "25% 100 mL IV; child 10% 2-5 mL/kg", "Recheck at 15 min", "Phlebitis, rebound hypoglycaemia"],
+            ["Thiamine", "200-500 mg IV; Wernicke 500 mg TDS", "Wernicke: 2-3 days, then 250 mg daily", "Rare anaphylaxis"],
+            ["Naloxone", "0.4 mg IV every 2-3 min", "Up to about 10 mg; infusion", "Withdrawal; wears off in 30-90 min"],
+            ["Lorazepam or midazolam", "Lorazepam 0.1 mg/kg IV; midazolam 10 mg IM", "Repeat once", "Respiratory depression"],
+            ["Levetiracetam", "60 mg/kg IV over 10 min (max 4500 mg)", "Single loading dose", "Somnolence"],
+            ["Ceftriaxone", "2 g IV 12-hourly", "10-14 days", "Allergy; give before LP"],
+            ["Dexamethasone", "10 mg IV 6-hourly", "4 days", "Hyperglycaemia, GI bleed"],
+            ["Artesunate", "2.4 mg/kg IV at 0, 12, 24 h, then daily", "Until oral ACT possible", "Delayed haemolysis"],
+          ],
+        },
+        {
+          heading: "AEIOU TIPS",
+          columns: ["Letter", "Causes", "First action"],
+          rows: [
+            ["A", "Alcohol, acidosis (DKA)", "Glucose, thiamine, ketones"],
+            ["E", "Epilepsy, endocrine, electrolytes", "Benzodiazepine; 3% saline if needed"],
+            ["I", "Insulin (hypoglycaemia)", "25% dextrose 100 mL IV"],
+            ["O", "Opioids, oxygen lack", "Naloxone; oxygen and ventilation"],
+            ["U", "Uraemia, hepatic encephalopathy", "Dialysis referral; lactulose"],
+            ["T", "Trauma, temperature", "Spine care, CT; cool or warm"],
+            ["I", "Infection", "Ceftriaxone, dexamethasone; artesunate"],
+            ["P", "Poisoning, psychiatric", "Antidote; psychiatric only after exclusion"],
+            ["S", "Stroke, SAH, seizures, shock, snake bite", "CT head, neurosurgery; ASV"],
+          ],
+        },
+        {
+          heading: "Glasgow Coma Scale",
+          columns: ["Component", "Best score", "Lowest score"],
+          rows: [
+            ["Eye opening (E)", "4 spontaneous", "1 none"],
+            ["Verbal (V)", "5 oriented", "1 none"],
+            ["Motor (M)", "6 obeys commands", "1 none"],
+            ["Total", "15", "3"],
+          ],
+        },
+      ],
+      remember: [
+        "Glucose first, every time; it takes 30 seconds.",
+        "Thiamine before or with dextrose in the malnourished or alcoholic.",
+        "GCS 8 or less: intubate.",
+        "Metabolic coma spares pupils; a fixed unilateral pupil means structure.",
+        "AEIOU TIPS for causes.",
+        "Antibiotics for meningitis go in before CT and LP.",
+        "Elderly delirium: check drugs, bladder, bowel and chest.",
+      ],
+    },
     master: {
       heading: "Master revision table - Altered sensorium",
       columns: ["Aspect", "High-yield points"],
@@ -491,6 +1597,168 @@ const revision: RevisionSet = {
 
   "emergency-tray-and-readiness": {
     checked: "2026-10",
+    notes: {
+      sections: [
+        {
+          title: "Definition and key facts",
+          points: [
+            "The emergency tray is one **sealed, checklist-controlled** set of drugs and equipment.",
+            "It lets any clinic treat the first minutes of an emergency without searching.",
+            "Keep it in **one fixed, unlocked place**, reachable within 30 seconds.",
+            "An item belongs on the tray only if it treats a condition that **kills within minutes**.",
+            "Readiness has three parts: the tray, the people and the referral pathway.",
+            "AEFI rules demand an anaphylaxis kit at every immunisation session.",
+          ],
+        },
+        {
+          title: "Classification that matters",
+          points: [
+            "**Manchester Triage System** has five colours with a maximum time to doctor.",
+            "Red is immediate, orange 10 minutes, yellow 60 minutes.",
+            "Green is 120 minutes and blue 240 minutes.",
+            "Indian emergency departments use a three-colour red-yellow-green triage.",
+            "NABH and IPHS 2022 require documented emergency drugs, equipment and trained staff.",
+          ],
+        },
+        {
+          title: "How it happens (pathophysiology)",
+          points: [
+            "1. Irreversible brain injury begins **4-6 minutes** after circulatory arrest.",
+            "2. Survival in VF falls **7-10% per minute** without defibrillation.",
+            "3. Anaphylaxis after an injected trigger can arrest in about **5 minutes**.",
+            "4. Seizures beyond 5 minutes rarely stop alone, so benzodiazepine works best early.",
+            "5. Heat and light turn adrenaline into inactive pink-brown adrenochrome.",
+            "6. Under stress working memory fails, so roles and charts must be pre-decided.",
+          ],
+        },
+        {
+          title: "Organising the tray",
+          points: [
+            "Seal it with a **numbered breakable tag**.",
+            "Arrange items **by indication**, not alphabetically.",
+            "Keep **1:1000 and 1:10,000 adrenaline** physically separate and clearly labelled.",
+            "Tape a laminated weight-based paediatric dose chart inside the lid.",
+            "Never store emergency drugs in the vaccine refrigerator.",
+            "Move items within **3 months of expiry** to routine use and replace them.",
+            "Match the tray to the practice: extra atropine in the pesticide belt.",
+          ],
+        },
+        {
+          title: "Treatment - first line",
+          points: [
+            "Anaphylaxis: **adrenaline 1:1000 IM thigh**, 0.5 mg adult, repeat every 5 minutes.",
+            "Cardiac arrest: **adrenaline 1 mg IV of 1:10,000** every 3-5 minutes.",
+            "Giving 1:1000 IV as if it were 1:10,000 is a **ten-fold** lethal error.",
+            "Hypoglycaemia: 25% dextrose 100 mL IV; child 10% dextrose 2-5 mL/kg.",
+            "Seizure at 5 minutes: lorazepam 0.1 mg/kg IV or midazolam 10 mg IM.",
+            "Opioid respiratory depression: naloxone 0.4 mg IV or IM.",
+          ],
+        },
+        {
+          title: "Treatment - next steps",
+          points: [
+            "Bradycardia: atropine **1 mg IV** every 3-5 minutes, maximum 3 mg.",
+            "Indian atropine ampoules are usually 0.6 mg/mL; read the strength.",
+            "Suspected MI: aspirin 300 mg chewed plus clopidogrel 300 mg.",
+            "Eclampsia: **magnesium sulphate** 4 g IV plus 5 g IM in each buttock.",
+            "Postpartum haemorrhage: oxytocin 10 IU IM and **tranexamic acid 1 g IV** within 3 hours.",
+            "Hydrocortisone is an adjunct, never instead of adrenaline.",
+          ],
+        },
+        {
+          title: "Devices",
+          points: [
+            "Oxygen cylinder with a spare, regulator and **key attached**; log pressure weekly.",
+            "Bag-valve-mask **with reservoir** gives about 90% oxygen; without it, about 50%.",
+            "Carry adult, paediatric and neonatal bags with masks sizes 0-5.",
+            "Size the oropharyngeal airway from incisors to angle of jaw; remove if the patient gags.",
+            "Suction must be **manual or foot-operated** to work in a power cut.",
+            "AED, glucometer with in-date strips, cannulae 14G-24G and an intraosseous needle.",
+          ],
+        },
+        {
+          title: "Weekly check and mock drill",
+          points: [
+            "One **named owner** checks weekly on a fixed day and signs the log.",
+            "Check adrenaline first: present, correct strength, in date, not discoloured.",
+            "Test suction with the mains off and run the AED self-test.",
+            "**Restock and reseal after every use** before the next patient.",
+            "Run an **unannounced mock drill every 3 months** with fixed roles.",
+            "Time first compression, adrenaline drawn up and ambulance called.",
+            "Renew BLS for every staff member every 2 years.",
+          ],
+        },
+        {
+          title: "Special groups",
+          points: [
+            "Immunisation: anaphylaxis kit at the table and **30-minute observation** for every vaccinee.",
+            "Vasovagal faint has bradycardia and pallor; anaphylaxis has tachycardia and urticaria.",
+            "Delivery point: oxytocin in cold chain, magnesium sulphate, calcium gluconate, TXA.",
+            "Regional blocks: keep **20% lipid emulsion** for local anaesthetic toxicity.",
+          ],
+        },
+        {
+          title: "Referral and follow-up",
+          points: [
+            "Post a written referral pathway with the hospital number and 108.",
+            "Audit weekly checks signed, target 100%.",
+            "Audit expired or missing items at unannounced checks, target zero.",
+            "A tray without a signed, dated log is presumed unchecked.",
+            "Report every AEFI and review each emergency within a week.",
+          ],
+        },
+      ],
+      tables: [
+        {
+          heading: "Drugs on the emergency tray",
+          columns: ["Drug", "Dose and route", "Duration", "Key side effects / cautions"],
+          rows: [
+            ["Adrenaline 1:1000", "0.5 mg IM thigh (0.3 mg 6-12 y; 0.15 mg 6 m-6 y)", "Repeat every 5 min", "Never IV outside monitoring"],
+            ["Adrenaline 1:10,000", "1 mg IV/IO; child 0.01 mg/kg", "Every 3-5 min in arrest", "Store apart from 1:1000"],
+            ["Atropine", "1 mg IV (max 3 mg); OP 1.8-3 mg doubled", "Bradycardia; OP to dry chest", "Ampoules usually 0.6 mg/mL"],
+            ["Dextrose", "25% 100 mL IV; child 10% 2-5 mL/kg", "Recheck at 15 min", "Thiamine first if alcoholic"],
+            ["Lorazepam or midazolam", "0.1 mg/kg IV; midazolam 10 mg IM", "Maximum two doses", "Respiratory depression"],
+            ["Naloxone", "0.4 mg IV or IM", "Repeat every 2-3 min", "Shorter acting than most opioids"],
+            ["Magnesium sulphate", "4 g IV plus 10 g IM, then 5 g IM 4-hourly", "24 h after last fit", "Check reflexes, RR, urine"],
+            ["Oxytocin and TXA", "Oxytocin 10 IU IM; TXA 1 g IV", "TXA repeat once at 30 min", "TXA never after 3 h"],
+            ["Hydrocortisone", "100-200 mg IV; child 4 mg/kg", "6-hourly if continued", "Adjunct only"],
+            ["Aspirin and clopidogrel", "Aspirin 300 mg chewed; clopidogrel 300 mg", "Single loading dose", "Clopidogrel 75 mg if over 75"],
+          ],
+        },
+        {
+          heading: "Manchester Triage System",
+          columns: ["Colour", "Name", "Max time to doctor", "Example"],
+          rows: [
+            ["Red", "Immediate", "0 min", "Airway compromise, shock, seizure"],
+            ["Orange", "Very urgent", "10 min", "Cardiac chest pain"],
+            ["Yellow", "Urgent", "60 min", "Persistent vomiting"],
+            ["Green", "Standard", "120 min", "Minor injury"],
+            ["Blue", "Non-urgent", "240 min", "Chronic problem"],
+          ],
+        },
+        {
+          heading: "Devices and common errors",
+          columns: ["Device", "Key step", "Common error"],
+          rows: [
+            ["Oxygen cylinder", "Key attached, 15 L/min, log pressure", "Empty cylinder, missing key"],
+            ["Bag-valve-mask", "Reservoir on, C-E grip, 1 s squeeze", "No reservoir, adult bag on infant"],
+            ["Oropharyngeal airway", "Size incisors to jaw angle", "Forcing it when patient gags"],
+            ["Suction", "Yankauer under vision, 10-15 s", "Electric-only, fails in power cut"],
+            ["AED", "Pads on, clear, shock, resume CPR", "Long pauses, delayed first shock"],
+            ["Glucometer", "In-date strips, weekly control", "Expired strips"],
+          ],
+        },
+      ],
+      remember: [
+        "Adrenaline is the one indefensible omission: check it first, and its concentration.",
+        "Anaphylaxis 1:1000 IM thigh: 0.5, 0.3, 0.15 mg by age band.",
+        "Arrest 1 mg IV of 1:10,000; 1:1000 IV is a ten-fold error.",
+        "A bag without its reservoir gives 50% oxygen, not 90%.",
+        "Arrange by emergency, laminate the child chart, seal with a numbered tag.",
+        "The commonest empty tray is the one just used.",
+        "Time the drill, not the discussion.",
+      ],
+    },
     updated: [
       "GINA 2026: oxygen in acute asthma only if SpO2 under 92%, titrated to no higher than 95%; oral prednisolone preferred, IV hydrocortisone if unable to swallow",
       "ESC 2026: acute heart failure now termed decompensated heart failure, with early urine sodium-guided diuretic escalation",
@@ -563,6 +1831,164 @@ const revision: RevisionSet = {
 
   "emergency-ards": {
     checked: "2026-10",
+    notes: {
+      sections: [
+        {
+          title: "Definition and key facts",
+          points: [
+            "ARDS is acute, diffuse, inflammatory **permeability** lung injury.",
+            "Berlin 2012 needs all four: timing, imaging, origin of oedema, oxygenation.",
+            "**Timing**: within 1 week of a known insult or new symptoms.",
+            "**Imaging**: bilateral opacities not explained by effusion, collapse or nodules.",
+            "**Origin**: not fully explained by cardiac failure or fluid overload.",
+            "**Oxygenation**: PaO2/FiO2 measured on PEEP or CPAP of at least 5 cmH2O.",
+            "Clinicians recognise only about 60% of cases.",
+          ],
+        },
+        {
+          title: "Classification that matters",
+          points: [
+            "Mild ARDS has a PaO2/FiO2 ratio of **201-300**.",
+            "Moderate ARDS has a PaO2/FiO2 ratio of **101-200**.",
+            "Severe ARDS has a PaO2/FiO2 ratio of **100 or less**.",
+            "Example: PaO2 60 on 60% oxygen is 60 divided by 0.6, which is 100: severe.",
+            "Berlin abolished 'acute lung injury' and the wedge pressure cut-off.",
+            "2023 global definition adds high-flow oxygen, SpO2/FiO2 315 or less and lung ultrasound.",
+          ],
+        },
+        {
+          title: "Causes and risk factors",
+          points: [
+            "**Sepsis** is the commonest cause overall, about 40%.",
+            "**Pneumonia** is the commonest direct (pulmonary) cause.",
+            "Other direct causes: aspiration, inhalation, contusion, drowning, fat embolism.",
+            "Indirect causes: trauma with shock, transfusion, pancreatitis, burns, eclampsia.",
+            "Indian precipitants: falciparum malaria, dengue, leptospirosis, scrub typhus, organophosphate, paraquat.",
+          ],
+        },
+        {
+          title: "How it happens (pathophysiology)",
+          points: [
+            "1. The insult activates macrophages, which release IL-1, IL-6, IL-8 and TNF.",
+            "2. Neutrophils damage the alveolar-capillary membrane on both sides.",
+            "3. Protein-rich exudate floods the alveoli and **hyaline membranes** form.",
+            "4. Surfactant loss collapses alveoli, creating a **shunt** that resists added oxygen.",
+            "5. The aerated 'baby lung' is small, so normal tidal volumes overdistend it.",
+            "6. Repair follows over 7-21 days; a minority progress to fibrosis.",
+          ],
+        },
+        {
+          title: "History in the OPD",
+          points: [
+            "Breathlessness worsening over hours to days after an insult.",
+            "Ask about fever, sepsis, vomiting with aspiration, trauma, pancreatitis and transfusion.",
+            "Ask about monsoon fever, pesticide ingestion and snakebite.",
+            "Prior orthopnoea, cardiac disease or missed dialysis favour cardiogenic oedema.",
+            "Inability to speak in sentences or drowsiness means exhaustion.",
+          ],
+        },
+        {
+          title: "Examination",
+          points: [
+            "Respiratory rate above 30, accessory muscles and paradoxical breathing.",
+            "SpO2 that stays low on 15 L/min oxygen means **true shunt**.",
+            "Normal JVP, no S3 and no oedema argue against cardiogenic oedema.",
+            "A normal or rising PaCO2 in an exhausted patient is pre-terminal.",
+            "Hunt for the source: abdomen, skin, eschar, fractures, pupils.",
+          ],
+        },
+        {
+          title: "Investigations",
+          points: [
+            "ABG on known FiO2 and PEEP gives the PaO2/FiO2 ratio.",
+            "Without a gas machine, use **SpO2/FiO2**; 315 equals PaO2/FiO2 of 300.",
+            "Chest X-ray: patchy bilateral peripheral opacities with a normal heart size.",
+            "BNP under 100 pg/mL argues strongly against heart failure.",
+            "Send blood cultures, malaria, dengue, scrub typhus and leptospira tests.",
+            "Never delay oxygen, antibiotics or referral for tests.",
+          ],
+        },
+        {
+          title: "Treatment - first line",
+          points: [
+            "**Treat the cause first**: antibiotics within 1 hour, source control, antidotes.",
+            "Target SpO2 **88-95%**; do not chase normal oxygenation.",
+            "High-flow nasal oxygen is preferred over conventional oxygen.",
+            "High-flow is a bridge; ROX index under 4.88 at 12 hours predicts failure.",
+            "No reflex fluid bolus to a hypoxic patient who is not hypotensive.",
+            "Phone the intensivist early; every suspected ARDS goes to ICU.",
+          ],
+        },
+        {
+          title: "Treatment - next steps",
+          points: [
+            "Tidal volume **6 mL/kg predicted body weight**, from height, never actual weight.",
+            "Plateau pressure **30 cmH2O or less**; driving pressure under 15.",
+            "Higher PEEP for moderate to severe ARDS; no staircase recruitment manoeuvres.",
+            "Permissive hypercapnia: accept pH down to about 7.20.",
+            "**Prone at least 16 hours a day** when PaO2/FiO2 is under 150.",
+            "Conservative fluids once shock resolves; dexamethasone early in moderate-severe ARDS.",
+            "VV-ECMO for very severe, reversible ARDS at an experienced centre.",
+          ],
+        },
+        {
+          title: "Referral and follow-up",
+          points: [
+            "Lung function is usually near normal by 6-12 months.",
+            "**Post-intensive care syndrome**: weakness, cognitive problems, depression, PTSD.",
+            "Only about half return to work at 1 year.",
+            "Stop ICU-started drugs such as sedatives, antipsychotics and PPIs.",
+            "Screen with PHQ-9 and GAD-7, and screen the carer too.",
+            "Vaccinate against influenza, pneumococcus and COVID-19.",
+          ],
+        },
+      ],
+      tables: [
+        {
+          heading: "Drugs in ARDS",
+          columns: ["Drug", "Dose and route", "Duration", "Key side effects / cautions"],
+          rows: [
+            ["Ceftriaxone plus azithromycin", "2 g IV daily plus 500 mg IV daily", "5-7 days", "Within 1 h after cultures"],
+            ["Piperacillin-tazobactam", "4.5 g IV 6-hourly", "De-escalate at 48-72 h", "Hospital-acquired sepsis; renal dosing"],
+            ["Doxycycline", "100 mg twice daily IV or NG", "7 days", "Scrub typhus, leptospirosis cover"],
+            ["Dexamethasone", "20 mg IV daily, then 10 mg daily", "5 days each", "Not after day 14; avoid in influenza"],
+            ["Cisatracurium", "15 mg IV, then 37.5 mg/h", "48 h", "Not routine; deep sedation needed"],
+            ["Noradrenaline", "0.05-0.5 microgram/kg/min IV", "To MAP 65", "Limit fluids alongside"],
+            ["Furosemide", "20-40 mg IV, repeated", "Once off vasopressors", "Keep perfusion preserved"],
+            ["Enoxaparin", "40 mg SC daily", "Throughout ICU stay", "Reduce if CrCl under 30"],
+          ],
+        },
+        {
+          heading: "Berlin severity",
+          columns: ["Severity", "PaO2/FiO2", "SpO2/FiO2", "What changes"],
+          rows: [
+            ["Mild", "201-300", "236-315", "High-flow, CPAP or NIV with close watch"],
+            ["Moderate", "101-200", "149-235", "Intubate, protective ventilation, higher PEEP"],
+            ["Severe", "100 or less", "148 or less", "Prone, consider paralysis, ECMO centre"],
+          ],
+        },
+        {
+          heading: "ARDS against cardiogenic oedema",
+          columns: ["Feature", "ARDS", "Cardiogenic oedema"],
+          rows: [
+            ["History", "Sepsis, pneumonia, aspiration", "Heart disease, orthopnoea, PND"],
+            ["Examination", "Normal JVP, no S3", "Raised JVP, S3, pink frothy sputum"],
+            ["Chest X-ray", "Patchy peripheral, normal heart", "Bat's wing, cardiomegaly, Kerley B"],
+            ["BNP", "Under 100 pg/mL", "Over 500 pg/mL"],
+            ["Diuretic response", "Little gain", "Rapid relief"],
+          ],
+        },
+      ],
+      remember: [
+        "Berlin TIOO: timing, imaging, origin, oxygenation on PEEP 5 or more.",
+        "60 on 60% oxygen equals a ratio of 100: severe.",
+        "Sepsis commonest overall; pneumonia commonest direct cause.",
+        "6 mL/kg predicted body weight, plateau 30 or less.",
+        "Prone 16 hours a day when the ratio is under 150; PROSEVA halved mortality.",
+        "Paraquat is the one ARDS where oxygen is restricted.",
+        "Survivors' burden is muscle, mind and mood.",
+      ],
+    },
     updated: ["SSC 2026: antibiotics within 1 h for probable sepsis or shock, within 3 h after rapid assessment when sepsis is only possible and the patient is stable"],
     master: {
       heading: "Master revision table - ARDS",
@@ -631,6 +2057,161 @@ const revision: RevisionSet = {
 
   "emergency-head-injury": {
     checked: "2026-10",
+    notes: {
+      sections: [
+        {
+          title: "Definition and key facts",
+          points: [
+            "TBI is altered brain function or brain pathology caused by an external force.",
+            "About 60% of Indian head injuries come from road crashes, mostly two-wheelers.",
+            "**Primary injury** happens at impact and cannot be reversed.",
+            "**Secondary injury** develops over hours and is the target of all early care.",
+            "Secondary causes: hypoxia, hypotension, hypercarbia, hypoglycaemia, fever, seizures, raised ICP.",
+          ],
+        },
+        {
+          title: "Classification that matters",
+          points: [
+            "Grade severity by post-resuscitation GCS: **mild 13-15, moderate 9-12, severe 3-8**.",
+            "Report GCS as E, V and M plus pupils.",
+            "Focal injuries: extradural, subdural and intracerebral haematoma, contusion.",
+            "Diffuse injuries: concussion, diffuse axonal injury, diffuse swelling.",
+            "Basal skull fracture: raccoon eyes, Battle sign, CSF leak, haemotympanum.",
+          ],
+        },
+        {
+          title: "How it happens (pathophysiology)",
+          points: [
+            "1. Monro-Kellie: brain, blood and CSF share a fixed skull.",
+            "2. A growing clot first displaces CSF and venous blood, then ICP rises steeply.",
+            "3. **CPP equals MAP minus ICP**; target CPP is 60-70 mmHg.",
+            "4. The injured brain loses autoregulation, so one hypotensive episode doubles mortality.",
+            "5. Uncal herniation compresses the third nerve, dilating the pupil on the same side.",
+            "6. Cushing triad signals brainstem compression before tonsillar herniation.",
+          ],
+        },
+        {
+          title: "History in the OPD",
+          points: [
+            "Note the mechanism: speed, helmet, fall over 1 m or 5 stairs.",
+            "Ask about loss of consciousness, amnesia and a **lucid interval**.",
+            "Ask about vomiting, worsening headache, seizure and fluid from nose or ear.",
+            "Ask about **anticoagulants**, antiplatelets and age 65 or over.",
+            "In infants, check the story fits; think non-accidental injury.",
+          ],
+        },
+        {
+          title: "Examination",
+          points: [
+            "Protect the cervical spine during xABCDE.",
+            "Score the **best motor response**; it is the most useful single number.",
+            "A newly dilated, sluggish pupil is the earliest sign of herniation.",
+            "Hypotension in head injury means **bleeding elsewhere**, except in infants.",
+            "A fall of 2 GCS points or 1 motor point needs urgent reassessment.",
+          ],
+        },
+        {
+          title: "Investigations",
+          points: [
+            "**Non-contrast CT head** is the test of choice; skull X-ray has no role.",
+            "CT within 1 hour for GCS under 13 initially or under 15 at 2 hours.",
+            "Also CT within 1 hour for seizure, focal deficit, basal fracture or vomiting more than once.",
+            "CT within 8 hours for anyone on anticoagulants, even if well.",
+            "Children: use **PECARN**; no predictors means CT is not needed.",
+          ],
+        },
+        {
+          title: "Treatment - first line",
+          points: [
+            "Intubate if **GCS 8 or less** or airway reflexes are lost.",
+            "Keep SpO2 over 94% and PaCO2 35-45 mmHg.",
+            "Keep systolic BP **100-110 mmHg or more**; no permissive hypotension.",
+            "Use isotonic saline and blood; no hypotonic or dextrose fluids.",
+            "Head up 30 degrees, neck neutral, treat fever, keep glucose normal.",
+            "**Tranexamic acid 1 g** within 3 hours in mild to moderate TBI.",
+          ],
+        },
+        {
+          title: "Treatment - next steps",
+          points: [
+            "**Steroids are contraindicated**; they increased mortality in CRASH.",
+            "Herniation signs: mannitol 20% 0.25-1 g/kg or 3% saline as a bridge to surgery.",
+            "Brief hyperventilation only for active herniation.",
+            "Severe TBI: seizure prophylaxis for 7 days with phenytoin or levetiracetam.",
+            "Reverse warfarin with 4-factor PCC plus vitamin K 5-10 mg IV.",
+            "Use paracetamol for headache; avoid sedatives that mask GCS.",
+          ],
+        },
+        {
+          title: "Complications and red flags",
+          points: [
+            "Extradural: evacuate if over **30 mL**, whatever the GCS.",
+            "Acute subdural: operate if over 10 mm thick or midline shift over 5 mm.",
+            "Only a **third** of extradurals show the classic lucid interval.",
+            "Chronic subdural causes reversible confusion in the elderly weeks after a trivial fall.",
+            "Diffuse axonal injury causes coma out of proportion to a near-normal CT.",
+          ],
+        },
+        {
+          title: "Referral and follow-up",
+          points: [
+            "Refer for a surgical lesion, GCS 8 or less, deterioration or CSF leak.",
+            "Transfer with a trained escort and speak directly to the neurosurgeon.",
+            "Discharge mild injury only to a **responsible adult** for 24 hours.",
+            "Give written return advice: drowsiness, repeated vomiting, seizure, weakness.",
+            "Concussion: rest 24-48 hours, then graded return to learning before sport.",
+            "Brainstem death: four-member board, two tests at least 6 hours apart.",
+          ],
+        },
+      ],
+      tables: [
+        {
+          heading: "Drugs in head injury",
+          columns: ["Drug", "Dose and route", "Duration", "Key side effects / cautions"],
+          rows: [
+            ["Tranexamic acid", "1 g IV over 10 min, then 1 g over 8 h", "Start within 3 h", "Mild-moderate TBI; seizures at high dose"],
+            ["Mannitol 20%", "0.25-1 g/kg IV over 15-20 min", "For herniation only", "Diuresis, hypotension, AKI"],
+            ["Hypertonic saline 3%", "2-5 mL/kg (about 250 mL) IV", "Over 10-20 min", "Hypernatraemia; preferred if hypotensive"],
+            ["Levetiracetam", "500-1000 mg 12-hourly (status 60 mg/kg)", "7 days prophylaxis", "Somnolence, irritability"],
+            ["Phenytoin", "20 mg/kg IV, then 100 mg 8-hourly", "7 days", "Hypotension, arrhythmia; in saline"],
+            ["4-factor PCC with vitamin K", "PCC 25-50 IU/kg plus vitamin K 5-10 mg IV", "Once", "Thrombosis"],
+            ["Paracetamol", "1 g 6-hourly; child 15 mg/kg", "As needed", "Max 4 g/day"],
+          ],
+        },
+        {
+          heading: "Extradural against subdural",
+          columns: ["Feature", "Extradural", "Acute subdural", "Chronic subdural"],
+          rows: [
+            ["Source", "Middle meningeal artery", "Torn bridging veins", "Bridging veins, atrophic brain"],
+            ["CT shape", "Biconvex, stops at sutures", "Crescent, crosses sutures", "Crescent, hypodense"],
+            ["Typical patient", "Young adult, temporal fracture", "High-energy injury", "Elderly, on anticoagulants"],
+            ["Course", "Lucid interval in one-third", "Unconscious from impact", "Weeks of confusion, falls"],
+            ["Prognosis", "Excellent if drained early", "Poor", "Good; recurrence 10-20%"],
+          ],
+        },
+        {
+          heading: "CT head within 1 hour (NICE NG232, adults)",
+          columns: ["Criterion", "Threshold"],
+          rows: [
+            ["GCS on first assessment", "Under 13"],
+            ["GCS at 2 hours", "Under 15"],
+            ["Skull fracture", "Suspected open, depressed or basal"],
+            ["Seizure", "Any post-traumatic seizure"],
+            ["Neurology", "Any focal deficit"],
+            ["Vomiting", "More than one episode"],
+          ],
+        },
+      ],
+      remember: [
+        "Only secondary injury is treatable: prevent hypoxia and hypotension.",
+        "EDH is biconvex and stops at sutures; SDH is a crescent that crosses them.",
+        "Dilated pupil same side as the clot; weakness opposite (beware Kernohan notch).",
+        "Steroids harm (CRASH); TXA within 3 hours helps (CRASH-3).",
+        "Cushing triad: rising BP, falling pulse, irregular breathing.",
+        "Mannitol and hyperventilation are bridges to theatre.",
+        "Chronic subdural is a reversible dementia.",
+      ],
+    },
     master: {
       heading: "Master revision table - Head injury",
       columns: ["Aspect", "High-yield points"],
@@ -699,6 +2280,162 @@ const revision: RevisionSet = {
 
   "emergency-snake-bite-envenomation": {
     checked: "2026-10",
+    notes: {
+      sections: [
+        {
+          title: "Definition and key facts",
+          points: [
+            "Envenoming is the illness caused when a venomous snake injects venom.",
+            "**Dry bites** (20-50%) inject no venom and need no ASV.",
+            "ASV is given for **envenoming, never for the bite alone**.",
+            "India has about **58,000 snakebite deaths** a year, peaking in the monsoon.",
+            "NAPSE 2024 aims to halve deaths by 2030; snakebite is notifiable since November 2024.",
+            "Helpline **15400** guides victims to ASV-stocked facilities.",
+          ],
+        },
+        {
+          title: "Classification that matters",
+          points: [
+            "Classify by **syndrome, not by snake**; the syndrome guides treatment.",
+            "**Neurotoxic**: spectacled cobra and common krait.",
+            "**Haemotoxic**: Russell's viper and saw-scaled viper.",
+            "Russell's viper also causes AKI (nephrotoxic).",
+            "Polyvalent ASV covers the big four, not hump-nosed viper, king cobra or sea snakes.",
+          ],
+        },
+        {
+          title: "How it happens (pathophysiology)",
+          points: [
+            "1. Venom spreads through **lymphatics**, so immobilising the limb slows it.",
+            "2. Cobra toxin blocks acetylcholine receptors reversibly, so neostigmine can help.",
+            "3. Krait toxin destroys the nerve terminal, so neostigmine rarely helps.",
+            "4. Paralysis starts with ptosis, then bulbar palsy, neck weakness, then breathing.",
+            "5. Viper enzymes consume clotting factors, making blood **incoagulable**.",
+            "6. After ASV, the liver restores clotting factors over about 6 hours.",
+          ],
+        },
+        {
+          title: "History in the OPD",
+          points: [
+            "Note the **time of bite**; it sets the clock for tests and ASV.",
+            "Night bite while sleeping on the floor suggests **krait**.",
+            "Krait bites are painless and cause early abdominal pain.",
+            "Ask about heavy eyelids, double vision, nasal voice and difficulty swallowing.",
+            "Ask about bleeding gums, red urine and reduced urine output.",
+            "Never delay treatment to identify or catch the snake.",
+          ],
+        },
+        {
+          title: "Examination",
+          points: [
+            "Absent fang marks do not exclude envenoming.",
+            "Mark the edge of swelling and measure limb girth hourly.",
+            "Ask the patient to look up to detect early **ptosis**.",
+            "Inability to lift the head (**broken neck sign**) precedes respiratory failure.",
+            "Single breath count under 10-15 is worrying.",
+            "A paralysed patient with fixed pupils may be **fully conscious**.",
+          ],
+        },
+        {
+          title: "Investigations",
+          points: [
+            "Do the **20-minute whole blood clotting test** in a new, clean, dry glass tube.",
+            "Blood that runs out at 20 minutes is incoagulable and needs ASV.",
+            "If normal, repeat hourly for 3 hours, then 4-6 hourly to 24 hours.",
+            "Observe every bite for at least **24 hours**.",
+            "Check creatinine, potassium and hourly urine output in viper bites.",
+            "Never delay ASV for laboratory tests.",
+          ],
+        },
+        {
+          title: "Treatment - first line",
+          points: [
+            "First aid is **Do it RIGHT**: Reassure, Immobilise, Go to Hospital, Tell the doctor.",
+            "**No tourniquet**, cutting, sucking, ice or herbs.",
+            "Release an existing tourniquet only once ASV is running and adrenaline is ready.",
+            "ASV: **8-10 vials IV over 1 hour**; children get the same dose.",
+            "No skin test; keep **adrenaline 0.5 mg IM** drawn up.",
+            "Use paracetamol for pain; no NSAIDs or IM injections.",
+          ],
+        },
+        {
+          title: "Treatment - next steps",
+          points: [
+            "Haemotoxic: repeat 20WBCT **6 hours** after each dose; give 5-10 more vials until it clots.",
+            "Neurotoxic: give a second 10 vials at **1-2 hours** if no improvement.",
+            "Beyond **20 vials** in neurotoxic bites there is no benefit; ventilate.",
+            "Neostigmine trial: atropine 0.6 mg then neostigmine 1.5 mg IV.",
+            "Stop neostigmine if no response within 1 hour, as in krait bites.",
+            "ASV reaction: stop, adrenaline IM, then restart ASV slowly.",
+            "FFP only after ASV and only for serious active bleeding.",
+          ],
+        },
+        {
+          title: "Complications and red flags",
+          points: [
+            "Russell's viper causes AKI; refer for dialysis if oliguric or potassium over 6.5.",
+            "Never perform fasciotomy while blood is incoagulable.",
+            "Serum sickness appears at 5-24 days after ASV.",
+            "Late hypopituitarism may follow Russell's viper bite with shock.",
+            "Scorpion sting can cause myocarditis and pulmonary oedema.",
+          ],
+        },
+        {
+          title: "Referral and follow-up",
+          points: [
+            "Give the **first ASV dose at the PHC** before referral.",
+            "Refer for ventilation, dialysis, persistent bleeding or no response after 20-30 vials.",
+            "Send vials given, times and 20WBCT results with the patient.",
+            "Scorpion sting: **prazosin**, not atropine; keep supine after the first dose.",
+            "Prevention: sleep on a cot under a tucked-in net, carry a torch at night.",
+          ],
+        },
+      ],
+      tables: [
+        {
+          heading: "Drugs in snake bite and scorpion sting",
+          columns: ["Drug", "Dose and route", "Duration", "Key side effects / cautions"],
+          rows: [
+            ["Polyvalent ASV (haemotoxic)", "8-10 vials IV over 1 h", "5-10 vials 6-hourly until clotting", "Anaphylaxis 10-20%; no skin test"],
+            ["Polyvalent ASV (neurotoxic)", "10 vials IV over 1 h", "Second 10 at 1-2 h; max 20", "Ventilate rather than exceed 20"],
+            ["Adrenaline 1:1000", "0.5 mg IM; child 0.01 mg/kg", "Repeat in 5-10 min", "For ASV anaphylaxis"],
+            ["Atropine then neostigmine", "0.6 mg IV, then 1.5 mg IV", "If response, 0.5 mg every 30 min x 5", "Bradycardia, secretions; stop if no response"],
+            ["Prednisolone", "5 mg 6-hourly", "5-7 days", "For serum sickness"],
+            ["Prazosin (scorpion)", "500 microgram oral; child 30 microgram/kg", "Repeat at 3 h, then 6-hourly", "First-dose hypotension"],
+            ["Paracetamol", "15 mg/kg 6-hourly", "As needed", "Only safe analgesic here"],
+          ],
+        },
+        {
+          heading: "The big four snakes",
+          columns: ["Snake", "Syndrome", "Local signs", "Key feature"],
+          rows: [
+            ["Spectacled cobra", "Neurotoxic (post-synaptic)", "Pain, swelling, necrosis", "Responds to neostigmine"],
+            ["Common krait", "Neurotoxic (pre-synaptic)", "Minimal; night bite", "Delayed paralysis, long ventilation"],
+            ["Russell's viper", "Haemotoxic, nephrotoxic", "Marked swelling", "Bleeding, shock, AKI"],
+            ["Saw-scaled viper", "Haemotoxic", "Swelling, local bleeding", "Prolonged coagulopathy"],
+          ],
+        },
+        {
+          heading: "Scorpion sting grades",
+          columns: ["Grade", "Features", "Treatment"],
+          rows: [
+            ["1", "Local pain only", "Lignocaine, paracetamol, observe 6 h"],
+            ["2", "Sweating, vomiting, priapism, tachycardia", "Prazosin; antivenom if available"],
+            ["3", "Myocarditis, pulmonary oedema", "Prazosin, nitroglycerin, dobutamine, ICU"],
+            ["4", "Multi-organ failure", "ICU with ventilation"],
+          ],
+        },
+      ],
+      remember: [
+        "Do it RIGHT: Reassure, Immobilise, Go to Hospital, Tell the doctor.",
+        "ASV for envenoming, not for the bite.",
+        "Same ASV dose for children: the snake injects the same venom.",
+        "20WBCT in a new, clean, dry glass tube; repeat 6 hours after each dose.",
+        "Neurotoxic: 10 vials, second 10 at 1-2 hours, then ventilate.",
+        "Neostigmine for cobra, rarely for krait.",
+        "Prazosin, not atropine, for scorpion sting.",
+      ],
+    },
     master: {
       heading: "Master revision table - Snake bite and scorpion sting",
       columns: ["Aspect", "High-yield points"],
@@ -768,6 +2505,160 @@ const revision: RevisionSet = {
 
   "emergency-heat-illness": {
     checked: "2026-10",
+    notes: {
+      sections: [
+        {
+          title: "Definition and key facts",
+          points: [
+            "Heat illness occurs when heat gain exceeds heat loss and core temperature rises.",
+            "**Heat stroke** is core temperature above **40 C with CNS dysfunction**.",
+            "Sweating does **not** exclude heat stroke.",
+            "**Heat exhaustion** is core 37-40 C with a **normal mental state**.",
+            "India's heat season runs March to July.",
+            "IMD heat wave in plains: maximum at least 40 C with departure 4.5-6.4 C, or 45 C actual.",
+          ],
+        },
+        {
+          title: "Classification that matters",
+          points: [
+            "Spectrum: heat rash, oedema, cramps, syncope, exhaustion and heat stroke.",
+            "Mental state, not sweating, separates exhaustion from heat stroke.",
+            "**Classic heat stroke**: elderly and chronically ill, over days of a heat wave.",
+            "**Exertional heat stroke**: fit young people, over hours of work or sport.",
+            "Exertional heat stroke brings more rhabdomyolysis, AKI and DIC.",
+          ],
+        },
+        {
+          title: "Causes and risk factors",
+          points: [
+            "Humidity stops sweat evaporating, so humid heat is more lethal.",
+            "Unacclimatised new workers are most at risk; acclimatisation takes 7-14 days.",
+            "Vulnerable: over 65, infants, pregnancy, heart failure, CKD, dementia, living alone.",
+            "Anticholinergics block sweating; diuretics and SGLT2 inhibitors deplete volume.",
+            "Beta-blockers limit cardiac output; lithium toxicity rises with dehydration.",
+          ],
+        },
+        {
+          title: "How it happens (pathophysiology)",
+          points: [
+            "1. The hypothalamus drives skin vasodilatation and sweating to lose heat.",
+            "2. When cardiac output fails, gut vessels constrict and endotoxin leaks out.",
+            "3. Cytokines produce a **sepsis-like inflammatory response**.",
+            "4. Above about 42 C, heat directly denatures proteins and damages cells.",
+            "5. Injury depends on **temperature multiplied by duration**, so cooling speed decides survival.",
+            "6. Cerebellar Purkinje cells are most sensitive, so **ataxia** appears early.",
+          ],
+        },
+        {
+          title: "History in the OPD",
+          points: [
+            "Ask about outdoor work, exertion, shade and water, especially 12 noon to 3 pm.",
+            "Any behaviour change in a hot patient is heat stroke until proved otherwise.",
+            "Ask about plain water without salt, vomiting and dark cola urine.",
+            "Review drugs: anticholinergics, diuretics, SGLT2 inhibitors, ACE inhibitors, lithium.",
+            "Ask about fever before exposure, rigors or rash; malaria and meningitis mimic heat stroke.",
+          ],
+        },
+        {
+          title: "Examination",
+          points: [
+            "Measure **rectal temperature**; oral, axillary and tympanic readings mislead.",
+            "Check GCS and cerebellar signs: ataxia, dysarthria, nystagmus.",
+            "Skin is hot and dry in classic, often sweating in exertional heat stroke.",
+            "Focal deficits or neck stiffness point away from heat stroke.",
+            "Look for muscle tenderness, petechiae and jaundice.",
+          ],
+        },
+        {
+          title: "Investigations",
+          points: [
+            "Check rectal temperature every 5 minutes during cooling.",
+            "Check capillary glucose and ECG monitoring at the bedside.",
+            "Send electrolytes, creatinine, LFT, **CK**, platelets and INR; repeat at 24-72 hours.",
+            "Do a malaria test in every febrile confused patient.",
+            "**Never delay cooling** for any test.",
+          ],
+        },
+        {
+          title: "Treatment - first line",
+          points: [
+            "**Cool first, transport second**; never send a hot patient uncooled.",
+            "Aim for **below 39 C within 30 minutes** of collapse.",
+            "**Cold water immersion** is the gold standard: ice water up to the neck.",
+            "Remove from water at **38.5-39 C** to avoid overshoot.",
+            "If immersion is impossible, use tarp-assisted or evaporative cooling with fanning.",
+            "Ice packs and cold IV saline are adjuncts only.",
+            "Heat exhaustion: cool place, ORS 200-400 mL at a time, observe.",
+          ],
+        },
+        {
+          title: "Treatment - next steps",
+          points: [
+            "**Antipyretics are contraindicated**; the hypothalamic set point is normal.",
+            "Dantrolene has no role; it is for malignant hyperthermia.",
+            "Benzodiazepines stop shivering and seizures during cooling.",
+            "Give cautious crystalloid 1-2 L in the first hour; elderly develop pulmonary oedema easily.",
+            "Rhabdomyolysis: saline to urine output 200-300 mL/hour.",
+            "Treat hyperkalaemia with calcium gluconate, insulin-glucose and salbutamol.",
+          ],
+        },
+        {
+          title: "Referral and follow-up",
+          points: [
+            "Refer every heat stroke once cooling has started; keep cooling en route.",
+            "Monitor 24-72 hours for delayed liver injury, DIC and AKI.",
+            "Report cases on **IHIP** from 1 March to 31 July under NPCCHH.",
+            "Ahmedabad 2013 was South Asia's first heat action plan.",
+            "Prevention: water often, avoid outdoor work 12-3 pm, never leave children in parked cars.",
+            "Review diuretics, SGLT2 inhibitors and ACE inhibitors before summer.",
+          ],
+        },
+      ],
+      tables: [
+        {
+          heading: "Drugs in heat illness",
+          columns: ["Drug", "Dose and route", "Duration", "Key side effects / cautions"],
+          rows: [
+            ["Midazolam or lorazepam", "Midazolam 2-5 mg IV; lorazepam 2-4 mg IV", "Repeat once", "Respiratory depression, hypotension"],
+            ["Saline or Ringer lactate", "1-2 L IV in first hour; child 10-20 mL/kg", "Guided by urine and lungs", "Pulmonary oedema in elderly"],
+            ["Noradrenaline", "0.05-0.5 microgram/kg/min IV", "After fluids and cooling", "Arrhythmia, extravasation"],
+            ["Calcium gluconate 10%", "10 mL IV over 10 min", "Repeat if ECG changes persist", "For hyperkalaemia"],
+            ["Dextrose 25%", "100 mL IV; child 10% 2-5 mL/kg", "Once, recheck", "Check glucose in all confused"],
+            ["ORS", "200-400 mL sips at a time", "Through recovery", "Not for the confused patient"],
+            ["Paracetamol, NSAIDs", "Do not use", "Not applicable", "No effect; worsen liver or kidney"],
+          ],
+        },
+        {
+          heading: "Heat illness by severity",
+          columns: ["Condition", "Core temperature", "Key features", "Treatment"],
+          rows: [
+            ["Heat cramps", "Normal", "Spasm after plain water replacement", "Rest, ORS"],
+            ["Heat syncope", "Normal or mildly raised", "Faint on standing", "Lie flat, legs up, fluids"],
+            ["Heat exhaustion", "37-40 C", "Weak, vomiting; mental state normal", "Cool place, ORS, observe"],
+            ["Heat stroke", "Above 40 C", "Confusion, ataxia, seizures, coma", "Immediate immersion, refer"],
+          ],
+        },
+        {
+          heading: "Classic against exertional heat stroke",
+          columns: ["Feature", "Classic", "Exertional"],
+          rows: [
+            ["Who", "Elderly, infants, chronically ill", "Young fit workers and athletes"],
+            ["Onset", "Days of a heat wave", "Hours of exertion"],
+            ["Sweating", "Often absent", "Often present"],
+            ["Rhabdomyolysis, AKI, DIC", "Less common", "Common"],
+            ["Mortality", "Above 50% if cooling delayed", "Near zero with immediate cooling"],
+          ],
+        },
+      ],
+      remember: [
+        "Heat stroke: above 40 C plus brain dysfunction; sweating does not exclude it.",
+        "Cool first, transport second: below 39 C within 30 minutes.",
+        "Immerse in ice water; stop at 38.5-39 C.",
+        "No antipyretics: the set point is normal.",
+        "Rectal thermometer only; others mislead.",
+        "Dantrolene is for malignant hyperthermia, not heat stroke.",
+      ],
+    },
     master: {
       heading: "Master revision table - Heat-related illness",
       columns: ["Aspect", "High-yield points"],

@@ -2,6 +2,170 @@ import type { RevisionSet } from "./index";
 
 const revision: RevisionSet = {
   "cardiovascular-hypertension": {
+    notes: {
+      sections: [
+        {
+          title: "Definition and classification",
+          points: [
+            "Hypertension is a confirmed office BP of **140/90 mmHg or more**.",
+            "Confirm with home BP **135/85 or more** or 24-hour ambulatory BP **130/80 or more**.",
+            "One visit is enough if BP is **180/110 or more** or organ damage is present.",
+            "ESC 2024 uses three categories: **non-elevated**, **elevated** and **hypertension**.",
+            "**White-coat hypertension**: high office BP but normal home BP; lifestyle and yearly review.",
+            "**Resistant hypertension**: BP above target despite three drugs, including a diuretic, at full doses.",
+            "**Emergency** means severe BP with acute organ damage; without damage it is severe hypertension.",
+          ],
+        },
+        {
+          title: "Causes and risk factors",
+          points: [
+            "Over 90% is **essential hypertension**, driven by salt, obesity, inactivity, age and genes.",
+            "South Asians are often **salt sensitive**, so high salt intake raises their BP more.",
+            "Commonest secondary causes are **CKD** and **primary aldosteronism**.",
+            "Other secondary causes: renal artery stenosis, sleep apnoea, phaeochromocytoma, Cushing syndrome, coarctation.",
+            "Drugs that raise BP: **NSAIDs**, oral contraceptives, steroids, decongestants and herbal remedies.",
+          ],
+        },
+        {
+          title: "How it happens (pathophysiology)",
+          points: [
+            "1. Salt retention resets **pressure natriuresis**, so the kidney needs a higher BP to excrete salt.",
+            "2. **Angiotensin II** constricts arterioles and releases aldosterone, which retains sodium.",
+            "3. Sympathetic overactivity and endothelial dysfunction add vasoconstriction.",
+            "4. Small arteries remodel, fixing **peripheral resistance** at a higher level.",
+            "5. The heart develops **concentric LVH** and diastolic dysfunction.",
+            "6. Organ damage follows: stroke, MI, heart failure, CKD and retinopathy.",
+            "7. Autoregulation resets upwards, so a rapid fall in BP causes ischaemia.",
+          ],
+        },
+        {
+          title: "History in the OPD",
+          points: [
+            "Most patients have **no symptoms**; headache is not a guide to BP.",
+            "Ask about organ symptoms: TIA, angina, breathlessness, claudication and frothy urine.",
+            "Take a full **drug history**, including NSAIDs, oral pills and ayurvedic remedies.",
+            "Ask about salt in the patient's words: pickle, papad, namkeen and packaged snacks.",
+            "Ask about **snoring** and daytime sleepiness, which suggest sleep apnoea.",
+            "Ask about paroxysms of headache, sweating and palpitations, which suggest phaeochromocytoma.",
+            "In women ask about **pregnancy plans**, because ACE inhibitors and ARBs are teratogenic.",
+          ],
+        },
+        {
+          title: "Examination",
+          points: [
+            "Seat the patient for 5 minutes and use a cuff covering 80% of the arm.",
+            "Take **three readings and average the last two**; check both arms at the first visit.",
+            "Check standing BP in the elderly; a fall of 20/10 is **orthostatic hypotension**.",
+            "Measure BMI and waist with Indian cut-offs: BMI 23 and waist 90/80 cm.",
+            "Feel radial and femoral pulses together for **radio-femoral delay** (coarctation).",
+            "Do **fundoscopy**; flame haemorrhages or papilloedema mean malignant hypertension.",
+          ],
+        },
+        {
+          title: "Investigations",
+          points: [
+            "**Urine albumin-creatinine ratio**: 30 mg/g or more is the earliest organ damage.",
+            "Creatinine, eGFR, sodium and potassium are needed before starting RAS blockers.",
+            "HbA1c and lipids help estimate total cardiovascular risk.",
+            "ECG for LVH: **Sokolow-Lyon over 35 mm** reclassifies the patient as high risk.",
+            "Screen for **primary aldosteronism** with aldosterone-renin ratio in all resistant hypertension.",
+            "Use the **WHO/ISH South-East Asia chart** to estimate 10-year cardiovascular risk.",
+          ],
+        },
+        {
+          title: "Treatment - first line",
+          points: [
+            "Advise salt **under 5 g a day**, DASH-style Indian diet and 150 minutes of weekly exercise.",
+            "Each kilogram of weight lost lowers BP by about 1 mmHg.",
+            "Start most patients on a **low-dose two-drug single pill**.",
+            "The pill combines a RAS blocker with a CCB or thiazide-like diuretic.",
+            "IHCI step 1 is **amlodipine 5 mg**, then add telmisartan 40 mg.",
+            "Target systolic is **120-129 mmHg** if tolerated; individualise in the frail and over 85.",
+            "Titrate every **2-4 weeks** and aim for control within 3 months.",
+          ],
+        },
+        {
+          title: "Treatment - next steps",
+          points: [
+            "Step up to amlodipine 10 mg plus telmisartan 80 mg.",
+            "Then add **chlorthalidone 12.5-25 mg** to make triple therapy.",
+            "Before adding any drug, check adherence, cuff technique, salt, NSAIDs and alcohol.",
+            "The fourth drug for resistant hypertension is **spironolactone 25 mg**.",
+            "If spironolactone is not tolerated, use eplerenone, amiloride, a beta-blocker or an alpha-blocker.",
+            "Never combine an **ACE inhibitor with an ARB**.",
+          ],
+        },
+        {
+          title: "Special groups",
+          points: [
+            "**Pregnancy**: use labetalol, nifedipine extended-release or methyldopa.",
+            "Stop ACE inhibitors, ARBs and spironolactone as soon as pregnancy is planned or confirmed.",
+            "Diabetes or CKD with albuminuria: use an ACE inhibitor or ARB, plus SGLT2 inhibitor in CKD.",
+            "Elderly with isolated systolic hypertension: a CCB or diuretic works best.",
+            "Children with hypertension need a search for **renal causes and coarctation** first.",
+          ],
+        },
+        {
+          title: "Red flags, referral and follow-up",
+          points: [
+            "Emergency: lower mean arterial pressure by **no more than 20-25%** in the first hour.",
+            "First-line emergency drug is IV labetalol, **20 mg then 20-80 mg every 10 minutes**.",
+            "Aortic dissection is the exception: systolic under 120 within 20 minutes.",
+            "**Never give sublingual nifedipine**; the uncontrolled fall causes stroke and MI.",
+            "Check creatinine and potassium **1-2 weeks** after starting a RAS blocker or diuretic.",
+            "A creatinine rise up to **30%** is expected; stop the drug if it rises more.",
+            "Refer suspected secondary hypertension: onset under 40, hypokalaemia, renal bruit or paroxysms.",
+          ],
+        },
+      ],
+      tables: [
+        {
+          heading: "Drugs for hypertension",
+          columns: ["Drug", "Dose and route", "Duration", "Key side effects / cautions"],
+          rows: [
+            ["Amlodipine (CCB)", "2.5-10 mg oral once daily", "Lifelong", "Ankle oedema (not helped by diuretic), flushing, gum hypertrophy"],
+            ["Telmisartan (ARB)", "20-80 mg oral once daily (usual 40)", "Lifelong", "Hyperkalaemia, creatinine rise; teratogenic"],
+            ["Ramipril (ACE inhibitor)", "2.5 mg oral daily, up to 10 mg", "Lifelong", "Dry cough, angioedema, hyperkalaemia; teratogenic"],
+            ["Chlorthalidone", "12.5-25 mg oral every morning", "Lifelong", "Low potassium and sodium, gout, high glucose"],
+            ["Indapamide SR", "1.5 mg oral every morning", "Lifelong", "Hyponatraemia, hypokalaemia"],
+            ["Spironolactone", "25 mg oral daily, up to 50 mg", "Resistant hypertension, long term", "Hyperkalaemia, gynaecomastia; check K at 1-2 weeks"],
+            ["Metoprolol succinate", "25-200 mg oral once daily", "Compelling indication only", "Bradycardia, fatigue; never stop abruptly"],
+            ["Labetalol", "Oral 100 mg twice daily; IV 20 mg then 20-80 mg", "Pregnancy; IV in emergency", "Postural drop, bronchospasm; IV max 300 mg"],
+            ["Nifedipine extended-release", "20-30 mg oral once or twice daily", "Pregnancy, up to 120 mg/day", "Headache, flushing; never sublingual"],
+          ],
+        },
+        {
+          heading: "ESC 2024 BP categories",
+          columns: ["Category", "Office BP (mmHg)", "Action"],
+          rows: [
+            ["Non-elevated", "Under 120/70", "Lifestyle; recheck within 3 years"],
+            ["Elevated", "120-139 / 70-89", "Lifestyle; drugs if 130/80+ and high risk"],
+            ["Hypertension", "140/90 or more", "Lifestyle plus two-drug single pill"],
+            ["Emergency", "Usually 180/110 with organ damage", "Admit, IV drugs, controlled lowering"],
+          ],
+        },
+        {
+          heading: "Emergency: target by situation",
+          columns: ["Situation", "Target", "Drug"],
+          rows: [
+            ["Malignant HT or encephalopathy", "MAP down 20-25% in 1 hour", "IV labetalol or nicardipine"],
+            ["Aortic dissection", "Systolic under 120, HR under 60 in 20 min", "IV esmolol or labetalol"],
+            ["Pulmonary oedema or ACS", "Systolic under 140", "IV nitroglycerin plus loop diuretic"],
+            ["Ischaemic stroke", "Treat only over 220/120; 185/110 before lysis", "IV labetalol"],
+            ["Severe pre-eclampsia", "Under 160/110 within 1 hour", "Nifedipine or labetalol plus MgSO4"],
+          ],
+        },
+      ],
+      remember: [
+        "India diagnoses at 140/90; home 135/85; ABPM 130/80.",
+        "Start with two drugs in one pill, not one drug titrated slowly.",
+        "Fourth drug = spironolactone 25 mg, after excluding pseudo-resistance.",
+        "Amlodipine oedema: halve the dose or add ACEi/ARB, not a diuretic.",
+        "ACEi cough: switch to ARB, never cough syrup.",
+        "Creatinine rise up to 30% on ACEi/ARB is expected; continue.",
+        "Emergency: no more than 25% fall in the first hour, except dissection.",
+      ],
+    },
     checked: "2026-10",
     updated: [
       "AHA/ACC 2025: US guideline keeps 130/80 for stage 1, target under 130/80 for all adults, PREVENT risk calculator - India still diagnoses at 140/90.",
@@ -76,6 +240,169 @@ const revision: RevisionSet = {
   },
 
   "cardiovascular-stable-angina": {
+    notes: {
+      sections: [
+        {
+          title: "Definition and key facts",
+          points: [
+            "**Chronic coronary syndrome** is coronary artery disease outside an acute coronary syndrome.",
+            "Angina is chest discomfort caused by **myocardial ischaemia**.",
+            "Classic angina is retrosternal, brought on by **exertion or emotion**.",
+            "It is relieved by **rest or nitrate within 5 minutes**.",
+            "Stable means predictable: same threshold and same duration every time.",
+            "Indians get coronary disease **about 10 years earlier**, often with diffuse multivessel disease.",
+          ],
+        },
+        {
+          title: "Classification that matters",
+          points: [
+            "**Typical angina** has all three classic features; atypical has two.",
+            "Non-anginal chest pain has one feature or none.",
+            "Severity is graded by the **Canadian Cardiovascular Society** classes I to IV.",
+            "ESC 2024 groups **clinical likelihood** of obstructive CAD from very low to very high.",
+            "New, rest, nocturnal or crescendo angina is **unstable angina**, which is an ACS.",
+            "Vasospastic (Prinzmetal) angina causes rest pain at night with transient ST elevation.",
+          ],
+        },
+        {
+          title: "How it happens (pathophysiology)",
+          points: [
+            "1. LDL enters a damaged intima and becomes **oxidised**.",
+            "2. Monocytes enter, eat the LDL and become **foam cells**.",
+            "3. Smooth muscle cells build a **fibrous cap** over a lipid core.",
+            "4. A stenosis over **70%** limits the rise in flow on exertion.",
+            "5. Demand rises with heart rate, contractility and wall tension, so ischaemia appears.",
+            "6. The **subendocardium** suffers first, so stable ischaemia shows as ST depression.",
+            "7. A thin-capped vulnerable plaque can rupture elsewhere and cause ACS.",
+          ],
+        },
+        {
+          title: "History in the OPD",
+          points: [
+            "Ask site, character, radiation, **duration 2-10 minutes**, trigger and relief.",
+            "Grade the exercise threshold in plain terms to assign the CCS class.",
+            "Ask red-flag questions: pain at rest, at night, over 20 minutes or new.",
+            "List risk factors, including **premature CAD** in a first-degree relative.",
+            "Ask about **PDE-5 inhibitors** (sildenafil, tadalafil), because nitrates are then contraindicated.",
+            "In a known patient, weekly sublingual nitrate use is the honest measure of control.",
+            "Elderly, women and diabetics often present with breathlessness or fatigue instead of pain.",
+          ],
+        },
+        {
+          title: "Examination",
+          points: [
+            "Examination is **often normal**; its job is to find risk factors and mimics.",
+            "Record BP, pulse rate, BMI and waist; these are titration targets.",
+            "Look for **pallor**, thyroid signs and xanthomas.",
+            "An ejection systolic murmur with slow-rising pulse suggests **aortic stenosis**; avoid nitrates.",
+            "Look for heart failure signs and peripheral bruits.",
+          ],
+        },
+        {
+          title: "Investigations",
+          points: [
+            "**Resting ECG** in everyone; it is normal in over half of patients.",
+            "Bloods: haemoglobin, fasting lipids, HbA1c, creatinine and TSH if suggested.",
+            "**Echocardiography** for LV function, wall motion and valve disease.",
+            "Low to moderate likelihood: **CT coronary angiography** is the preferred first test.",
+            "Moderate to high likelihood: functional imaging such as stress echo or SPECT.",
+            "Treadmill test is positive with **1 mm horizontal or downsloping ST depression**.",
+            "Very high likelihood or high-risk features: invasive coronary angiography.",
+          ],
+        },
+        {
+          title: "Treatment - first line",
+          points: [
+            "Think in two parts: drugs that **prevent events** and drugs that **relieve angina**.",
+            "Give **aspirin 75-100 mg** daily lifelong; clopidogrel 75 mg if aspirin is not tolerated.",
+            "Give a high-intensity statin to reach **LDL under 55 mg/dL** and a 50% reduction.",
+            "First anti-anginal is a **beta-blocker and/or CCB**, titrated to heart rate 55-60.",
+            "Give sublingual nitroglycerin for attacks and before known triggers.",
+            "Stop tobacco in every form; offer cardiac rehabilitation and influenza vaccine.",
+          ],
+        },
+        {
+          title: "Treatment - next steps",
+          points: [
+            "If angina persists, add amlodipine to the beta-blocker, or a long-acting nitrate.",
+            "Second-line add-ons are **ranolazine**, trimetazidine, nicorandil and ivabradine.",
+            "Add **colchicine 0.5 mg** daily to reduce events on top of statins.",
+            "If LDL is above target, add ezetimibe, then a PCSK9 inhibitor or inclisiran.",
+            "Add an ACE inhibitor or ARB with hypertension, diabetes, CKD or LVEF 40% or less.",
+            "Revascularisation is for refractory angina or high-risk anatomy such as **left main disease**.",
+          ],
+        },
+        {
+          title: "Special groups",
+          points: [
+            "In diabetes, add an **SGLT2 inhibitor or GLP-1 agonist** with proven benefit.",
+            "CABG is preferred in diabetics with multivessel disease.",
+            "Vasospastic angina: CCB plus long-acting nitrate; avoid non-selective beta-blockers.",
+            "After an elective stent: aspirin plus clopidogrel for **6 months**, then one antiplatelet.",
+          ],
+        },
+        {
+          title: "Red flags, referral and follow-up",
+          points: [
+            "Pain at rest, over 20 minutes or not relieved by 3 nitrates means **ACS**; send by ambulance.",
+            "New angina within 2 months or crescendo angina needs same-day referral.",
+            "Exertional syncope with an aortic murmur suggests severe aortic stenosis.",
+            "Never give nitrates within 24-48 hours of a **PDE-5 inhibitor**.",
+            "Review 2-4 weeks after any drug change, then every 3-6 months.",
+            "Check lipids **4-8 weeks** after starting a statin, then yearly.",
+            "Refer routinely for CCS III-IV despite two anti-anginals, or LVEF under 50%.",
+          ],
+        },
+      ],
+      tables: [
+        {
+          heading: "Drugs for stable angina",
+          columns: ["Drug", "Dose and route", "Duration", "Key side effects / cautions"],
+          rows: [
+            ["Aspirin", "75-100 mg oral once daily", "Lifelong", "Dyspepsia, GI bleed; add PPI if high risk"],
+            ["Clopidogrel", "75 mg oral once daily", "Lifelong if aspirin intolerant", "Bleeding; avoid omeprazole"],
+            ["Atorvastatin", "40-80 mg oral once daily", "Lifelong", "Myalgia, raised transaminases"],
+            ["Metoprolol succinate", "25-200 mg oral once daily", "Long term, rate 55-60", "Bradycardia, fatigue; never stop suddenly"],
+            ["Diltiazem", "60 mg three times daily or SR 90-180 mg twice daily", "Long term", "Heart block; not with beta-blocker or LVEF under 40%"],
+            ["Amlodipine", "5-10 mg oral once daily", "Long term", "Ankle oedema; safe with beta-blocker"],
+            ["Nitroglycerin", "0.4-0.5 mg sublingual, repeat every 5 min, max 3", "For attacks", "Headache, hypotension; not after PDE-5 inhibitor"],
+            ["Isosorbide mononitrate SR", "30-60 mg oral every morning", "Long term", "Needs 8-12 h nitrate-free interval"],
+            ["Ranolazine", "375-500 mg twice daily, up to 1000 mg", "Long term", "QT prolongation; avoid strong CYP3A4 inhibitors"],
+            ["Colchicine", "0.5 mg oral once daily", "Long term", "Diarrhoea; avoid eGFR under 30"],
+          ],
+        },
+        {
+          heading: "Canadian Cardiovascular Society grading",
+          columns: ["Class", "Angina comes on with", "Example"],
+          rows: [
+            ["I", "Strenuous or prolonged exertion only", "Running for a bus"],
+            ["II", "Slight limitation of ordinary activity", "Brisk stairs, uphill, after meals"],
+            ["III", "Marked limitation of ordinary activity", "1-2 blocks on level ground"],
+            ["IV", "Any activity, or at rest", "Dressing or bathing; reassess as ACS"],
+          ],
+        },
+        {
+          heading: "ESC 2024 likelihood and first test",
+          columns: ["Likelihood of obstructive CAD", "First test"],
+          rows: [
+            ["Very low (5% or less)", "No test; look for another cause"],
+            ["Low (over 5-15%)", "CT coronary angiography"],
+            ["Moderate (over 15-50%)", "CT angiography or functional imaging"],
+            ["High (over 50-85%)", "Functional imaging; TMT if imaging unavailable"],
+            ["Very high (over 85%)", "Invasive coronary angiography"],
+          ],
+        },
+      ],
+      remember: [
+        "Medicines prevent death; stents relieve symptoms in stable disease (ISCHEMIA trial).",
+        "A normal resting ECG does not exclude angina.",
+        "Titrate the beta-blocker to heart rate 55-60, not to a fixed dose.",
+        "Every long-acting nitrate needs an 8-12 hour nitrate-free interval.",
+        "Never combine verapamil or diltiazem with a beta-blocker; amlodipine is the safe partner.",
+        "Ivabradine works only in sinus rhythm.",
+        "LDL target under 55: statin, then ezetimibe, then PCSK9 inhibitor.",
+      ],
+    },
     checked: "2026-10",
     master: {
       heading: "Master revision table - Chronic coronary syndrome",
@@ -132,6 +459,183 @@ const revision: RevisionSet = {
   },
 
   "cardiovascular-acs": {
+    notes: {
+      sections: [
+        {
+          title: "Definition and key facts",
+          points: [
+            "**Acute coronary syndrome** is acute myocardial ischaemia from plaque rupture or erosion with thrombus.",
+            "The ECG at presentation splits it into **STEMI** and **NSTE-ACS**.",
+            "Troponin splits NSTE-ACS into **NSTEMI** (troponin rises) and **unstable angina** (no rise).",
+            "MI needs a **rise and/or fall of troponin** above the 99th percentile plus evidence of ischaemia.",
+            "A troponin rise alone is **myocardial injury**, not infarction.",
+            "Indians present 5-10 years younger, more often with STEMI and late arrival.",
+          ],
+        },
+        {
+          title: "Classification that matters",
+          points: [
+            "STEMI: new ST elevation of **1 mm or more in two contiguous leads**.",
+            "In V2-V3 the cut-off is 2 mm in men 40 and over, 1.5 mm in women.",
+            "STEMI equivalents include **true posterior MI** and new LBBB with ischaemic symptoms.",
+            "Fifth UDMI 2026 uses three settings: **primary**, **secondary** and **procedure-related** MI.",
+            "Secondary MI is supply-demand mismatch; treat the cause and never lyse.",
+            "**Killip class** I to IV grades heart failure and predicts mortality.",
+          ],
+        },
+        {
+          title: "How it happens (pathophysiology)",
+          points: [
+            "1. A thin fibrous cap ruptures, or the plaque surface erodes.",
+            "2. Collagen and **tissue factor** are exposed to blood.",
+            "3. Platelets adhere, activate through ADP and thromboxane, and aggregate.",
+            "4. Thrombin forms fibrin, so ACS needs **antiplatelets plus an anticoagulant**.",
+            "5. Occlusive **fibrin-rich red thrombus** causes STEMI, which lytics can dissolve.",
+            "6. Non-occlusive **platelet-rich white thrombus** causes NSTE-ACS, where lysis only harms.",
+            "7. Necrosis spreads from subendocardium to epicardium over **3-6 hours**: time is muscle.",
+          ],
+        },
+        {
+          title: "History in the OPD",
+          points: [
+            "Retrosternal heaviness **over 20 minutes**, not relieved by rest or nitrate.",
+            "It comes with sweating, nausea, breathlessness or syncope.",
+            "Note the **exact time of onset**; it decides reperfusion eligibility.",
+            "Women, elderly, diabetics and CKD patients often present atypically; give them an ECG.",
+            "Ask mimic questions: tearing back pain (dissection), pleuritic pain (PE), pericarditis.",
+            "Ask **thrombolysis contraindication** questions at once, including prior stroke and bleeding.",
+            "Ask about sildenafil in 24 hours or tadalafil in 48 hours before nitrates.",
+          ],
+        },
+        {
+          title: "Examination",
+          points: [
+            "Record pulse, BP in both arms, SpO2; keep a **defibrillator** beside the patient.",
+            "Systolic under 90 with cold peripheries and confusion is **cardiogenic shock** (Killip IV).",
+            "Crackles and S3 assign the Killip class.",
+            "Hypotension, raised JVP and clear lungs in inferior MI suggest **RV infarction**.",
+            "Arm BP difference over 20 mmHg suggests **aortic dissection**: no lysis.",
+            "A new pansystolic murmur suggests septal or papillary muscle rupture.",
+          ],
+        },
+        {
+          title: "Investigations",
+          points: [
+            "**12-lead ECG within 10 minutes**; repeat every 15-30 minutes if non-diagnostic.",
+            "Add V3R-V4R in inferior MI and V7-V9 when V1-V3 show ST depression.",
+            "**Never delay STEMI reperfusion** waiting for troponin.",
+            "High-sensitivity troponin at **0 and 1 hour** rules NSTEMI in or out.",
+            "Baseline bloods guide dosing and bleeding risk, not the reperfusion decision.",
+            "Bedside echo shows wall motion, LV function and mechanical complications.",
+          ],
+        },
+        {
+          title: "Treatment - first line",
+          points: [
+            "Give **aspirin 150-300 mg chewed**, then 75-100 mg daily lifelong.",
+            "Add a P2Y12 inhibitor: ticagrelor or prasugrel at PCI, **clopidogrel with lysis**.",
+            "Give oxygen **only if SpO2 is under 90%**.",
+            "Sublingual nitroglycerin for pain, unless hypotensive, RV infarction or PDE-5 use.",
+            "STEMI: primary PCI if possible within **120 minutes** of diagnosis.",
+            "Otherwise give **tenecteplase within 10 minutes** of diagnosis, within 12 hours of onset.",
+            "After lysis, transfer everyone for **angiography in 2-24 hours** (pharmacoinvasive).",
+          ],
+        },
+        {
+          title: "Treatment - next steps",
+          points: [
+            "Anticoagulate with enoxaparin, or **fondaparinux 2.5 mg** in NSTE-ACS, up to 8 days.",
+            "Start **atorvastatin 80 mg** from day 1; target LDL under 55 mg/dL.",
+            "Beta-blocker when stable, clearly indicated if LVEF 40% or less.",
+            "ACE inhibitor within 24 hours in anterior MI, LVEF 40% or less, diabetes or hypertension.",
+            "Add **eplerenone** if LVEF 40% or less with heart failure or diabetes.",
+            "Continue DAPT for **12 months** by default; shorter if bleeding risk is high.",
+          ],
+        },
+        {
+          title: "Complications and red flags",
+          points: [
+            "**Ventricular fibrillation** in the first hour is the main cause of pre-hospital death.",
+            "Failed lysis (ST fall under 50% at 60-90 minutes) needs **rescue PCI**, never a second lytic.",
+            "Inferior MI block is usually nodal and transient; give atropine 0.5 mg.",
+            "Anterior MI complete heart block is infranodal and needs temporary pacing.",
+            "RV infarction: give saline boluses and stop nitrates, morphine and diuretics.",
+            "Mechanical rupture peaks at **days 2-7**, when the infarct is softest.",
+            "Dressler syndrome at 2-6 weeks: high-dose aspirin plus colchicine.",
+          ],
+        },
+        {
+          title: "Referral and follow-up",
+          points: [
+            "See the patient within 1-2 weeks of discharge; write the **DAPT stop date** on the card.",
+            "Check lipids at 4-6 weeks, and creatinine and potassium after ACEi or MRA changes.",
+            "Echo at 6-12 weeks; persisting **LVEF 35% or less** needs ICD referral.",
+            "Cardiac rehabilitation, tobacco cessation and yearly influenza vaccine for every patient.",
+            "Never stop DAPT early for minor procedures without the cardiologist.",
+          ],
+        },
+      ],
+      tables: [
+        {
+          heading: "Drugs for acute coronary syndrome",
+          columns: ["Drug", "Dose and route", "Duration", "Key side effects / cautions"],
+          rows: [
+            ["Aspirin", "150-300 mg chewed, then 75-100 mg daily", "Lifelong", "GI bleed, dyspepsia"],
+            ["Ticagrelor", "180 mg load, then 90 mg twice daily", "12 months", "Dyspnoea, bleeding; not with lysis"],
+            ["Prasugrel", "60 mg load, then 10 mg daily (5 mg if 75+)", "12 months", "Bleeding; never after stroke or TIA"],
+            ["Clopidogrel", "300 mg with lysis (75 mg if over 75); 600 mg before PCI", "12 months", "Bleeding; avoid omeprazole"],
+            ["Tenecteplase", "30-50 mg single IV bolus by weight", "Once, within 12 hours", "Intracranial bleed about 1%; half dose at 75+"],
+            ["Streptokinase", "1.5 million units IV over 30-60 min", "Once only", "Hypotension, allergy; never repeat after 5 days"],
+            ["Enoxaparin", "1 mg/kg SC every 12 hours", "Up to 8 days", "Bleeding; once daily if CrCl under 30"],
+            ["Fondaparinux", "2.5 mg SC once daily", "Up to 8 days (NSTE-ACS)", "Avoid if CrCl under 20"],
+            ["Atorvastatin", "80 mg oral once daily", "Lifelong", "Myalgia, raised transaminases"],
+            ["Ramipril", "1.25-2.5 mg twice daily, up to 5 mg twice daily", "Lifelong", "Cough, hypotension, hyperkalaemia"],
+          ],
+        },
+        {
+          heading: "Tenecteplase dose by weight",
+          columns: ["Body weight", "Single IV bolus"],
+          rows: [
+            ["Under 60 kg", "30 mg"],
+            ["60-69 kg", "35 mg"],
+            ["70-79 kg", "40 mg"],
+            ["80-89 kg", "45 mg"],
+            ["90 kg or more", "50 mg"],
+            ["Age 75 or over", "Half the weight-based dose"],
+          ],
+        },
+        {
+          heading: "STEMI territory on the ECG",
+          columns: ["Leads", "Territory", "Usual artery", "Watch for"],
+          rows: [
+            ["II, III, aVF", "Inferior", "Right coronary", "RV infarction, bradycardia, AV block"],
+            ["V1-V4", "Anteroseptal", "LAD", "Pump failure, infranodal block, LV thrombus"],
+            ["I, aVL, V5-V6", "Lateral", "Circumflex", "Subtle, easily missed"],
+            ["ST depression V1-V3, tall R", "Posterior", "Circumflex or RCA", "Record V7-V9"],
+            ["V4R elevation", "Right ventricle", "Proximal RCA", "Fluids; no nitrates or diuretics"],
+          ],
+        },
+        {
+          heading: "Killip classification",
+          columns: ["Class", "Findings", "In-hospital mortality"],
+          rows: [
+            ["I", "No heart failure", "About 5%"],
+            ["II", "Basal crackles, S3, raised JVP", "About 10-15%"],
+            ["III", "Frank pulmonary oedema", "About 30-40%"],
+            ["IV", "Cardiogenic shock", "50-80%"],
+          ],
+        },
+      ],
+      remember: [
+        "ECG in 10 minutes, aspirin chewed, reperfusion decision in 10 minutes.",
+        "PCI not possible in 120 minutes? Lyse, then angiography in 2-24 hours.",
+        "Clopidogrel is the only P2Y12 inhibitor given with lytics.",
+        "Oxygen only if SpO2 under 90%.",
+        "No thrombolysis in NSTE-ACS: white thrombus, only more bleeding.",
+        "No nitrates in RV infarction or after PDE-5 inhibitors.",
+        "Mechanical complications peak at days 2-7.",
+      ],
+    },
     checked: "2026-10",
     updated: [
       "UDMI 2026 (Fifth Universal Definition): sex-specific 99th percentile troponin; troponin rise alone is injury, not infarction.",
@@ -204,6 +708,168 @@ const revision: RevisionSet = {
   },
 
   "cardiovascular-heart-failure": {
+    notes: {
+      sections: [
+        {
+          title: "Definition, causes and key facts",
+          points: [
+            "**Heart failure** is a syndrome of breathlessness, fatigue and congestion from a cardiac abnormality.",
+            "It also needs **raised natriuretic peptides** or objective evidence of congestion.",
+            "**Ischaemic heart disease** causes about 70%, then hypertension, cardiomyopathy and rheumatic disease.",
+            "One-year mortality is 20-30%, mainly because proven drugs are under-prescribed.",
+            "Reversible causes: tachycardia, alcohol, thyroid disease, severe anaemia and **thiamine deficiency**.",
+            "Think of **peripartum cardiomyopathy** in late pregnancy or the first months after delivery.",
+            "Drugs that worsen HF: **NSAIDs**, pioglitazone, verapamil and diltiazem in HFrEF.",
+          ],
+        },
+        {
+          title: "Classification that matters",
+          points: [
+            "ESC 2026 has only two types: **HFrEF (LVEF under 50%)** and **HFpEF (50% or more)**.",
+            "**HFmrEF is abolished**; LVEF 41-49% is now treated as HFrEF.",
+            "**HFimpEF** is an LVEF rise of 10 points or more to over 40%.",
+            "**NYHA class I-IV** grades symptoms and changes with treatment.",
+            "Stages A-D describe progression and never go backwards.",
+            "Decompensated HF is profiled at the bedside as **warm or cold, wet or dry**.",
+          ],
+        },
+        {
+          title: "How it happens (pathophysiology)",
+          points: [
+            "1. An index injury, such as infarction or pressure overload, reduces pumping or filling.",
+            "2. **Sympathetic activation** raises heart rate but chronic noradrenaline damages myocytes.",
+            "3. **RAAS activation** constricts arterioles and retains salt; aldosterone causes fibrosis.",
+            "4. The ventricle **remodels**, dilating from an ellipse into a sphere.",
+            "5. Left atrial pressure over 18 mmHg causes interstitial and then alveolar oedema.",
+            "6. Natriuretic peptides help, and sacubitril stops their breakdown by **neprilysin**.",
+            "7. The four drug pillars block these harmful compensations and reverse remodelling.",
+          ],
+        },
+        {
+          title: "History in the OPD",
+          points: [
+            "Grade exertional breathlessness in concrete terms to assign the **NYHA class**.",
+            "**Paroxysmal nocturnal dyspnoea** is the most specific symptom of left heart failure.",
+            "Ask about ankle swelling, weight gain, nocturia, fatigue and falling urine output.",
+            "Look for the **precipitant**: missed tablets, salt, infection, AF, ischaemia or NSAIDs.",
+            "A weight gain of **2 kg in 3 days** precedes breathlessness.",
+            "Ask about syncope and palpitations, which suggest ventricular arrhythmia.",
+          ],
+        },
+        {
+          title: "Examination",
+          points: [
+            "Record weight, pulse, BP lying and standing, respiratory rate and SpO2.",
+            "Raised **JVP** and positive hepatojugular reflux estimate high filling pressure.",
+            "A **third heart sound** is specific for raised filling pressure.",
+            "Bibasal crackles, pleural effusion, pitting oedema and tender liver show congestion.",
+            "Cold extremities, confusion and oliguria mean a **cold profile**; admit.",
+          ],
+        },
+        {
+          title: "Investigations",
+          points: [
+            "HF is unlikely if **NT-proBNP is under 125 pg/mL** in a non-acute setting.",
+            "In acute breathlessness the rule-out cut-off is **NT-proBNP under 300**.",
+            "**Echocardiography is mandatory**; LVEF decides the class and the drugs.",
+            "A completely normal ECG makes HFrEF unlikely.",
+            "Chest X-ray shows cardiomegaly, Kerley B lines and effusions.",
+            "Check **iron studies in every patient**; TSAT under 20% means iron deficiency.",
+          ],
+        },
+        {
+          title: "Treatment - first line",
+          points: [
+            "Teach daily weighing and a written rule for a 2 kg gain in 3 days.",
+            "Salt under 5 g a day; restrict fluids only in severe congestion.",
+            "HFrEF: start **all four foundational therapies** early at low dose.",
+            "The four are **ARNI (or ACEi/ARB), beta-blocker, MRA and SGLT2 inhibitor**.",
+            "Up-titrate every **1-2 weeks**; together they cut mortality by about 60%.",
+            "A **loop diuretic** relieves congestion but does not prolong life.",
+            "HFpEF: **SGLT2 inhibitor plus MRA** are foundational, with a diuretic for congestion.",
+          ],
+        },
+        {
+          title: "Treatment - next steps",
+          points: [
+            "Leave **36 hours** between the last ACE inhibitor dose and the first ARNI dose.",
+            "Accept creatinine rise up to 50% and potassium up to 5.5 on RAAS blockers.",
+            "Add **ivabradine** in sinus rhythm with rate 70 or more despite a beta-blocker.",
+            "Digoxin helps symptoms, especially with AF, but does not reduce mortality.",
+            "Give **IV ferric carboxymaltose** for iron deficiency; oral iron does not work here.",
+            "LVEF 35% or less after 3 months of therapy needs **ICD** referral; CRT if QRS 150 ms or more.",
+          ],
+        },
+        {
+          title: "Special groups",
+          points: [
+            "HFpEF with obesity: **semaglutide or tirzepatide** can be added.",
+            "Pregnancy: stop ACEi, ARB, ARNI, MRA and SGLT2 inhibitors.",
+            "In pregnancy use metoprolol, hydralazine-nitrate and furosemide instead.",
+            "Diabetes with CKD: SGLT2 inhibitor plus **finerenone** reduces HF admissions.",
+          ],
+        },
+        {
+          title: "Red flags, referral and follow-up",
+          points: [
+            "Acute pulmonary oedema: sit up, **IV furosemide 20-40 mg**, nitrate if systolic over 110.",
+            "Give oxygen only if SpO2 under 90%; use CPAP or BiPAP if breathing rate is over 25.",
+            "**Morphine is not routine** in acute heart failure.",
+            "Cardiogenic shock needs noradrenaline and dobutamine, not inotropes for simple congestion.",
+            "Review every 1-2 weeks during titration, then every 3-6 months.",
+            "Check creatinine and potassium 1-2 weeks after each RAAS or MRA change.",
+            "Refer advanced HF for transplant, LVAD or palliative care.",
+          ],
+        },
+      ],
+      tables: [
+        {
+          heading: "Drugs for heart failure",
+          columns: ["Drug", "Dose and route", "Duration", "Key side effects / cautions"],
+          rows: [
+            ["Sacubitril/valsartan", "24/26 or 49/51 mg twice daily, up to 97/103 mg", "Lifelong", "Hypotension, hyperkalaemia; 36 h after last ACEi"],
+            ["Enalapril", "2.5 mg twice daily, up to 10-20 mg twice daily", "Lifelong", "Cough, hyperkalaemia, angioedema"],
+            ["Bisoprolol", "1.25 mg daily, double every 2 weeks to 10 mg", "Lifelong", "Fatigue, bradycardia; start when dry"],
+            ["Carvedilol", "3.125 mg twice daily, up to 25 mg twice daily", "Lifelong", "Dizziness, hypotension; take with food"],
+            ["Spironolactone", "12.5-25 mg daily, up to 50 mg", "Lifelong", "Hyperkalaemia; not if K over 5.0 or eGFR under 30"],
+            ["Dapagliflozin or empagliflozin", "10 mg oral once daily, no titration", "Lifelong, any LVEF", "Genital thrush, ketoacidosis; stop on sick days"],
+            ["Furosemide", "20-40 mg once or twice daily, up to 240 mg", "Adjust to dry weight", "Low potassium and sodium, AKI, gout"],
+            ["Ivabradine", "5 mg twice daily, up to 7.5 mg", "Long term", "Sinus rhythm only; phosphenes, bradycardia"],
+            ["Digoxin", "0.0625-0.125 mg daily; level 0.5-0.9 ng/mL", "Long term", "Toxicity with low potassium, renal failure"],
+            ["Ferric carboxymaltose", "500-1000 mg IV by weight and Hb", "Repeat as needed", "Hypophosphataemia, infusion reaction"],
+          ],
+        },
+        {
+          heading: "Heart failure types (ESC 2026)",
+          columns: ["Type", "LVEF", "Treatment that improves outcome"],
+          rows: [
+            ["HFrEF", "Under 50%", "Four foundational therapies; ICD or CRT if indicated"],
+            ["HFmrEF (abolished)", "41-49%", "Now treated as HFrEF"],
+            ["HFpEF", "50% or more", "SGLT2 inhibitor plus MRA; diuretic; GLP-1 RA if obese"],
+            ["HFimpEF", "Was reduced, now over 40%", "Continue all HFrEF drugs"],
+          ],
+        },
+        {
+          heading: "NYHA functional class",
+          columns: ["Class", "Limitation", "Example"],
+          rows: [
+            ["I", "None", "Climbs stairs freely"],
+            ["II", "Slight; comfortable at rest", "Breathless on one flight or uphill"],
+            ["III", "Marked; comfortable at rest", "Breathless walking on level ground"],
+            ["IV", "Symptoms at rest", "Breathless dressing or bathing"],
+          ],
+        },
+      ],
+      remember: [
+        "Diuretics make patients feel better; the four pillars make them live longer.",
+        "Four pillars: ARNI, beta-blocker, MRA, SGLT2 inhibitor - start all early, low dose.",
+        "Only bisoprolol, carvedilol, metoprolol succinate and nebivolol are proven beta-blockers.",
+        "36 hours between the last ACE inhibitor and the first ARNI.",
+        "ESC 2026: HFmrEF is gone; MRA plus SGLT2 inhibitor at every LVEF.",
+        "If the EF recovers, keep all the drugs.",
+        "Acute HF precipitants: CHAMPIT (ACS, Hypertension, Arrhythmia, Mechanical, PE, Infection, Tamponade).",
+      ],
+    },
     checked: "2026-10",
     updated: [
       "ESC 2026: HFmrEF abolished - HFrEF is LVEF under 50%, HFpEF 50% or more; HFimpEF = rise of 10 points or more to over 40%.",
@@ -279,6 +945,168 @@ const revision: RevisionSet = {
   },
 
   "cardiovascular-dyslipidaemia": {
+    notes: {
+      sections: [
+        {
+          title: "Definition and key facts",
+          points: [
+            "**Dyslipidaemia** is any abnormal plasma lipid level that raises atherosclerotic risk.",
+            "Cut-offs: LDL 130, triglycerides 150, non-HDL 160 mg/dL or more.",
+            "Low HDL is under 40 mg/dL in men and under 50 mg/dL in women.",
+            "About **81% of Indian adults** have some dyslipidaemia; low HDL is commonest.",
+            "The Indian pattern is **atherogenic**: high triglycerides, low HDL and small dense LDL.",
+            "**Non-HDL** is total minus HDL; its target is always LDL target plus 30.",
+          ],
+        },
+        {
+          title: "Classification that matters",
+          points: [
+            "Treatment follows the **risk category**, not the lipid number.",
+            "LAI 2023 categories: low, moderate, high, very high, extreme A and extreme B.",
+            "Any established ASCVD puts the patient straight into **very high risk**.",
+            "**Primary** causes are genetic, such as familial hypercholesterolaemia (about 1 in 250).",
+            "**Secondary** causes: diabetes, hypothyroidism, nephrotic syndrome, cholestasis, alcohol and drugs.",
+            "Fredrickson types I-V are still asked but no longer guide treatment.",
+          ],
+        },
+        {
+          title: "How it happens (pathophysiology)",
+          points: [
+            "1. The liver secretes VLDL, which lipoprotein lipase turns into **LDL**.",
+            "2. LDL is cleared by the **hepatic LDL receptor**.",
+            "3. **PCSK9** destroys LDL receptors, so more PCSK9 means higher LDL.",
+            "4. LDL is trapped in the intima, oxidised and eaten by macrophages to form **foam cells**.",
+            "5. A fibrous cap forms; a thin cap ruptures and causes ACS or stroke.",
+            "6. Insulin resistance over-produces VLDL, giving high triglycerides and low HDL.",
+            "7. Triglycerides over 1000 mg/dL cause **acute pancreatitis** and eruptive xanthomas.",
+          ],
+        },
+        {
+          title: "History in the OPD",
+          points: [
+            "Most patients have no symptoms, so the history is a **risk assessment**.",
+            "Ask about angina, MI, stroke or claudication; any one means very high risk.",
+            "Record diabetes, hypertension, tobacco and CKD.",
+            "Ask about **premature coronary disease** in parents and siblings, a pointer to FH.",
+            "Ask about symptoms of hypothyroidism and nephrotic syndrome, and alcohol intake.",
+            "If a statin was stopped before, ask what happened; most intolerance is nocebo.",
+          ],
+        },
+        {
+          title: "Examination",
+          points: [
+            "Measure BMI and waist; **90 cm in men and 80 cm in women** is central obesity.",
+            "**Tendon xanthomas** are almost diagnostic of FH; feel Achilles and knuckle tendons.",
+            "**Corneal arcus before 45** suggests FH; xanthelasma is non-specific.",
+            "**Eruptive xanthomas** mean triglycerides usually above 1000 mg/dL.",
+            "Palmar crease xanthomas point to type III dysbetalipoproteinaemia.",
+          ],
+        },
+        {
+          title: "Investigations",
+          points: [
+            "**Non-fasting lipid profile** is fine for screening and follow-up.",
+            "Fast only if triglycerides are above 400; Friedewald LDL is then invalid.",
+            "Screen once for secondary causes: **TSH**, HbA1c, creatinine, ALT and urine protein.",
+            "Measure **lipoprotein(a) once** in every adult; 50 mg/dL or more raises risk.",
+            "Check CK only for muscle symptoms; routine CK is not needed.",
+            "CAC score 100 or more reclassifies intermediate risk to high risk.",
+          ],
+        },
+        {
+          title: "Treatment - first line",
+          points: [
+            "Lifestyle trial of about 3 months only in low and moderate risk.",
+            "Start a statin at once in ASCVD, diabetes over 40, CKD, or LDL 190 or more.",
+            "Cut saturated and trans fat: ghee, vanaspati, palm oil and bakery items.",
+            "For high triglycerides, stop alcohol, cut sugar and lose 5-10% weight.",
+            "**Statins are first line**: atorvastatin 40-80 mg or rosuvastatin 20-40 mg for high intensity.",
+            "Start rosuvastatin at **5-10 mg in Asians**, because blood levels are higher.",
+          ],
+        },
+        {
+          title: "Treatment - next steps",
+          points: [
+            "Doubling a statin dose adds only **about 6%** more LDL lowering.",
+            "First add-on is **ezetimibe 10 mg**, lowering LDL a further 20-25%.",
+            "Then add bempedoic acid, a **PCSK9 antibody** or inclisiran.",
+            "Triglycerides 500 or more: **fenofibrate** to prevent pancreatitis.",
+            "Never combine a statin with **gemfibrozil**; fenofibrate is the fibrate to pair.",
+            "Icosapent ethyl 2 g twice daily cuts events; ordinary fish oil does not.",
+          ],
+        },
+        {
+          title: "Special groups",
+          points: [
+            "Diabetes aged 40-75: a statin for all, at least moderate intensity.",
+            "Do not start a statin in patients **already on dialysis**, but continue an existing one.",
+            "Stop statins **1-3 months before planned pregnancy** and during breastfeeding.",
+            "Children with FH: statin from about **8-10 years** of age.",
+            "FH: score with the **Dutch Lipid Clinic Network** criteria and screen all first-degree relatives.",
+          ],
+        },
+        {
+          title: "Red flags, referral and follow-up",
+          points: [
+            "Muscle pain with dark urine or CK over 10 times normal means **rhabdomyolysis**; stop the statin.",
+            "CK under 4 times normal: stop 2-4 weeks, then rechallenge at a lower dose.",
+            "ALT over 3 times normal on two readings: stop or reduce the statin.",
+            "Triglyceride pancreatitis: nil by mouth, IV fluids and **IV insulin infusion** with dextrose.",
+            "Recheck lipids **4-12 weeks** after any change, then every 6-12 months.",
+            "Aim for the target and at least a **50% fall** in high and very high risk.",
+            "Refer suspected FH, LDL above target on maximal oral therapy, or triglycerides over 1000.",
+          ],
+        },
+      ],
+      tables: [
+        {
+          heading: "Lipid-lowering drugs",
+          columns: ["Drug", "Dose and route", "Duration", "Key side effects / cautions"],
+          rows: [
+            ["Atorvastatin", "10-20 mg (moderate) or 40-80 mg (high) daily", "Lifelong", "Myalgia, raised ALT; CYP3A4 interactions"],
+            ["Rosuvastatin", "5-10 mg (moderate) or 20-40 mg (high) daily", "Lifelong", "Myalgia; max 10 mg if eGFR under 30"],
+            ["Simvastatin", "20-40 mg at night", "Lifelong", "Myopathy; max 20 mg with amlodipine"],
+            ["Ezetimibe", "10 mg oral once daily", "Lifelong", "Rare diarrhoea; first add-on"],
+            ["Bempedoic acid", "180 mg oral once daily", "Lifelong", "Raised uric acid, gout"],
+            ["Evolocumab", "140 mg SC every 2 weeks or 420 mg monthly", "Long term", "Injection-site reaction"],
+            ["Inclisiran", "284 mg SC day 0, 3 months, then 6-monthly", "Long term", "Injection-site reaction"],
+            ["Fenofibrate", "145 mg or 160 mg daily with food", "Long term", "Creatinine rise, gallstones; avoid eGFR under 30"],
+            ["Icosapent ethyl", "2 g twice daily with meals", "Long term, on a statin", "AF, bleeding"],
+            ["Cholestyramine", "4-8 g once or twice daily, max 24 g", "As needed", "Constipation, binds drugs; safe in pregnancy"],
+          ],
+        },
+        {
+          heading: "LAI 2023 risk categories and targets",
+          columns: ["Risk category", "Example", "LDL target (mg/dL)", "Non-HDL target (mg/dL)"],
+          rows: [
+            ["Low or moderate", "0-2 major risk factors", "Under 100", "Under 130"],
+            ["High", "3+ risk factors, FH, LDL 190+, Lp(a) 50+", "Under 70", "Under 100"],
+            ["Very high", "ASCVD; diabetes with organ damage", "Under 50", "Under 80"],
+            ["Extreme A", "CAD with diabetes, FH or polyvascular disease", "Under 50 (optional 30)", "Under 80"],
+            ["Extreme B", "Recurrent ACS despite LDL under 50", "30 or less", "60 or less"],
+          ],
+        },
+        {
+          heading: "Statin intensity",
+          columns: ["Intensity", "LDL fall", "Drugs and doses"],
+          rows: [
+            ["High", "50% or more", "Atorvastatin 40-80 mg, rosuvastatin 20-40 mg"],
+            ["Moderate", "30-49%", "Atorvastatin 10-20, rosuvastatin 5-10, simvastatin 20-40 mg"],
+            ["Add-on", "Further 20-25%", "Ezetimibe 10 mg"],
+            ["Add-on", "Further 50-60%", "PCSK9 antibody or inclisiran"],
+          ],
+        },
+      ],
+      remember: [
+        "Treat the risk, not the number.",
+        "Ladder: statin, then ezetimibe, then bempedoic acid or PCSK9 agent.",
+        "Non-HDL target = LDL target plus 30, no fasting needed.",
+        "LAI LDL targets: 100, 70, 50, 30.",
+        "Fenofibrate with a statin is fine; gemfibrozil with a statin is not.",
+        "Check TSH before blaming a statin for myalgia.",
+        "Tendon xanthomas mean FH: cascade-screen every first-degree relative.",
+      ],
+    },
     checked: "2026-10",
     updated: [
       "ACC/AHA 2026 dyslipidemia guideline replaces 2018: LDL goals return (under 100, under 70 high PREVENT risk, under 55 very high-risk ASCVD); PREVENT replaces pooled cohort equations.",
@@ -340,6 +1168,170 @@ const revision: RevisionSet = {
   },
 
   "cardiovascular-atrial-fibrillation": {
+    notes: {
+      sections: [
+        {
+          title: "Definition, causes and key facts",
+          points: [
+            "**Atrial fibrillation** is chaotic atrial activity with loss of effective atrial contraction.",
+            "ECG shows **no P waves** and **irregularly irregular** R-R intervals.",
+            "Diagnosis needs a 12-lead ECG or a single-lead tracing of **30 seconds or more**.",
+            "AF raises stroke risk about **fivefold**.",
+            "In India patients are a decade younger, and **rheumatic heart disease** remains a leading cause.",
+            "Always look for **thyrotoxicosis** and sleep apnoea.",
+            "Obesity, diabetes and ageing enlarge and scar the atrium.",
+          ],
+        },
+        {
+          title: "Classification that matters",
+          points: [
+            "**Paroxysmal**: ends by itself or with treatment within 7 days.",
+            "**Persistent**: lasts over 7 days; long-standing persistent is 12 months or more.",
+            "**Permanent**: patient and doctor accept AF and stop rhythm control.",
+            "Stroke risk does **not depend on the type**; paroxysmal AF is anticoagulated the same way.",
+            "**Valvular AF** means only moderate-severe mitral stenosis or a mechanical valve.",
+          ],
+        },
+        {
+          title: "How it happens (pathophysiology)",
+          points: [
+            "1. Ectopic beats fire from the **pulmonary veins** into the left atrium.",
+            "2. A stretched, scarred atrium sustains multiple re-entrant wavelets.",
+            "3. **AF begets AF**: fast rates shorten the refractory period and cause fibrosis.",
+            "4. The AV node filters impulses, giving an irregularly irregular ventricular rate.",
+            "5. Loss of atrial kick reduces filling, worst in mitral stenosis and HFpEF.",
+            "6. Stasis in the **left atrial appendage** forms clot that embolises to the brain.",
+          ],
+        },
+        {
+          title: "History in the OPD",
+          points: [
+            "Ask about irregular palpitations, breathlessness, fatigue and reduced effort tolerance.",
+            "Many patients have no symptoms; AF is found on a routine pulse.",
+            "Grade symptoms on the **modified EHRA scale**.",
+            "Ask the CHA2DS2-VA items: heart failure, hypertension, age, diabetes, stroke, vascular disease.",
+            "Ask about **rheumatic fever** or known valve disease; this changes the anticoagulant.",
+            "Take a bleeding history and list NSAIDs, antiplatelets and alcohol.",
+          ],
+        },
+        {
+          title: "Examination",
+          points: [
+            "Feel the pulse for a full minute; any irregular pulse needs an ECG.",
+            "Count apical and radial rates together to find the **pulse deficit**.",
+            "The JVP has **no a wave**; S1 varies in intensity.",
+            "Listen for **mitral stenosis**: loud S1, opening snap and mid-diastolic rumble.",
+            "Look for heart failure, thyroid signs and neurological deficit.",
+          ],
+        },
+        {
+          title: "Investigations",
+          points: [
+            "**12-lead ECG** confirms AF and shows rate, LVH and pre-excitation.",
+            "**Echocardiography** in every new AF, to find mitral stenosis and check LVEF.",
+            "Bloods: **TSH**, haemoglobin, creatinine clearance, liver function, electrolytes and INR.",
+            "Holter monitoring for suspected paroxysmal AF and after unexplained stroke.",
+            "TOE only before early cardioversion, to exclude appendage clot.",
+            "Screen everyone **65 or older** by pulse or single-lead ECG.",
+          ],
+        },
+        {
+          title: "Treatment - first line",
+          points: [
+            "Anticoagulate if **CHA2DS2-VA is 2 or more**; consider at 1.",
+            "Choose a **DOAC over warfarin**, except in mitral stenosis or mechanical valve.",
+            "**Aspirin is not an alternative** to anticoagulation.",
+            "Dose DOACs by **Cockcroft-Gault creatinine clearance**, not eGFR.",
+            "Rate control starts with a lenient target: **resting rate under 110**.",
+            "**Beta-blockers** are first line at any LVEF; diltiazem only if LVEF over 40%.",
+            "Treat comorbidities: BP, weight loss, less alcohol and sleep apnoea.",
+          ],
+        },
+        {
+          title: "Treatment - next steps",
+          points: [
+            "Add **digoxin** in heart failure or sedentary patients; keep level under 1.2 ng/mL.",
+            "Offer **rhythm control** to symptomatic patients, ideally within 12 months of diagnosis.",
+            "**Flecainide** or propafenone only in a structurally normal heart.",
+            "**Amiodarone** is used with structural heart disease or heart failure.",
+            "Catheter ablation is a first-line option for symptomatic paroxysmal AF.",
+            "Anticoagulation continues by score, even after successful ablation.",
+          ],
+        },
+        {
+          title: "Special groups",
+          points: [
+            "Warfarin target **INR 2.0-3.0**; 2.5-3.5 for mechanical mitral valve.",
+            "Warfarin is teratogenic; switch to LMWH in pregnancy.",
+            "AF with a coronary stent: triple therapy up to **1 week**, then DOAC plus clopidogrel.",
+            "After ischaemic stroke, start a DOAC early: within 48 hours if minor or moderate.",
+          ],
+        },
+        {
+          title: "Red flags, referral and follow-up",
+          points: [
+            "Unstable AF needs **immediate synchronised DC cardioversion**, whatever the duration.",
+            "AF over 24 hours: 3 weeks of anticoagulation or TOE before cardioversion.",
+            "Anticoagulate for at least **4 weeks after** any cardioversion.",
+            "**Pre-excited AF**: never give adenosine, digoxin, verapamil or diltiazem.",
+            "Major bleed on warfarin: **vitamin K 5-10 mg IV** plus prothrombin complex concentrate.",
+            "Idarucizumab reverses dabigatran; andexanet alfa reverses factor Xa inhibitors.",
+            "Refer mitral stenosis, HFrEF, pre-excitation and symptoms despite rate control.",
+          ],
+        },
+      ],
+      tables: [
+        {
+          heading: "Drugs for atrial fibrillation",
+          columns: ["Drug", "Dose and route", "Duration", "Key side effects / cautions"],
+          rows: [
+            ["Apixaban", "5 mg twice daily (2.5 mg if 2 of 3 criteria)", "Long term while score indicates", "Bleeding; avoid CrCl under 15"],
+            ["Rivaroxaban", "20 mg daily with evening meal (15 mg if CrCl 15-49)", "Long term", "Bleeding; must take with food"],
+            ["Dabigatran", "150 mg twice daily (110 mg if 80+ or verapamil)", "Long term", "Dyspepsia; avoid CrCl under 30"],
+            ["Edoxaban", "60 mg daily (30 mg if any criterion)", "Long term", "Bleeding; avoid CrCl under 15"],
+            ["Warfarin", "2.5-5 mg each evening, to INR 2-3", "Long term", "Bleeding, many interactions; teratogenic"],
+            ["Metoprolol succinate", "25-200 mg oral once daily", "Long term", "Bradycardia, bronchospasm"],
+            ["Diltiazem", "60 mg three times daily or SR 120-360 mg", "Long term", "Only if LVEF over 40%; hypotension"],
+            ["Digoxin", "0.0625-0.25 mg once daily", "Long term", "Toxicity with low K; level under 1.2"],
+            ["Amiodarone", "200 mg three times daily, tapering to 200 mg daily", "Long term", "Thyroid, lung, liver; check TSH, LFT 6-monthly"],
+            ["Flecainide", "50-150 mg twice daily; pill-in-pocket 200-300 mg", "As needed", "Normal heart only; give with beta-blocker"],
+          ],
+        },
+        {
+          heading: "CHA2DS2-VA score (ESC 2024)",
+          columns: ["Letter", "Meaning", "Points"],
+          rows: [
+            ["C", "Chronic heart failure or LVEF 40% or less", "1"],
+            ["H", "Hypertension", "1"],
+            ["A2", "Age 75 or more", "2"],
+            ["D", "Diabetes", "1"],
+            ["S2", "Prior stroke, TIA or thromboembolism", "2"],
+            ["V", "Vascular disease (MI, PAD, aortic plaque)", "1"],
+            ["A", "Age 65-74", "1"],
+          ],
+        },
+        {
+          heading: "Rate control or rhythm: which drug when",
+          columns: ["Situation", "Preferred choice", "Avoid"],
+          rows: [
+            ["LVEF over 40%", "Beta-blocker or diltiazem or verapamil", "None specific"],
+            ["LVEF 40% or less", "Beta-blocker, add digoxin", "Diltiazem, verapamil, dronedarone"],
+            ["Normal heart, rhythm control", "Flecainide or propafenone", "Use in scarred ventricle"],
+            ["Structural heart disease", "Amiodarone", "Class IC drugs"],
+            ["Pre-excited AF (WPW)", "DC shock or procainamide", "All AV nodal blockers"],
+          ],
+        },
+      ],
+      remember: [
+        "CHA2DS2-VA: anticoagulate at 2, consider at 1, same for men and women.",
+        "Mitral stenosis or mechanical valve: warfarin, never a DOAC.",
+        "High HAS-BLED means fix bleeding risks, never withhold anticoagulation.",
+        "Aspirin is not a substitute for anticoagulation.",
+        "Cardioversion: 24-hour rule, then 4 weeks of anticoagulation afterwards.",
+        "Rivaroxaban with food; dabigatran capsules never opened.",
+        "Every new AF: TSH and echo.",
+      ],
+    },
     checked: "2026-10",
     updated: [
       "AHA 2025 ACLS: synchronised cardioversion of AF - first shock 200 J or more biphasic (replaces 120-200 J).",
@@ -410,6 +1402,173 @@ const revision: RevisionSet = {
   },
 
   "cardiovascular-ecg-interpretation": {
+    notes: {
+      sections: [
+        {
+          title: "Definition and key facts",
+          points: [
+            "The **ECG** records the heart's electrical activity from 12 viewpoints.",
+            "Standard calibration is **25 mm/s and 10 mm/mV**.",
+            "One small square is **0.04 s**; one large square is **0.20 s**.",
+            "Normal rate is 60-100, PR **0.12-0.20 s**, QRS **under 0.12 s**.",
+            "Normal QTc is under 450 ms in men and 460 ms in women.",
+            "Normal axis is **-30 to +90 degrees**.",
+          ],
+        },
+        {
+          title: "Classification that matters",
+          points: [
+            "Inferior leads are **II, III and aVF**; high lateral leads are I and aVL.",
+            "Septal leads are V1-V2, anterior V3-V4 and lateral V5-V6.",
+            "Group abnormalities as rate and rhythm, conduction blocks and chamber enlargement.",
+            "Then ischaemia and infarction, and metabolic, drug and channelopathy patterns.",
+          ],
+        },
+        {
+          title: "How it happens (pathophysiology)",
+          points: [
+            "1. The **SA node** fires and atrial depolarisation makes the P wave.",
+            "2. The **AV node** delays the impulse, forming most of the PR interval.",
+            "3. Fast His-Purkinje conduction gives a narrow QRS; a blocked branch widens it.",
+            "4. The ST segment is the plateau phase, so it is normally **isoelectric**.",
+            "5. **Subendocardial ischaemia** gives ST depression, which does not localise.",
+            "6. **Transmural injury** gives ST elevation in facing leads and reciprocal depression opposite.",
+            "7. Dead muscle is electrically silent, so a **pathological Q wave** appears.",
+          ],
+        },
+        {
+          title: "History in the OPD",
+          points: [
+            "Record an ECG **within 10 minutes** for chest pain, syncope, breathlessness or palpitations.",
+            "Note whether the patient had **pain during the recording**.",
+            "Ask about exertional syncope and sudden death under 40 in the family.",
+            "List **QT-prolonging drugs**: macrolides, quinolones, antipsychotics, ondansetron and hydroxychloroquine.",
+            "Ask about CKD, vomiting and diuretics, which upset potassium and magnesium.",
+            "Always ask for **old ECGs** to compare.",
+          ],
+        },
+        {
+          title: "Examination",
+          points: [
+            "Place **V1 and V2 in the 4th intercostal space**; too high mimics septal infarct.",
+            "Place V4 in the 5th space at the mid-clavicular line.",
+            "**Arm lead reversal** inverts lead I but keeps V6 normal.",
+            "Tremor can mimic AF or VF; **never treat an artefact**, feel the pulse.",
+            "Record **V4R in every inferior STEMI** and V7-V9 when V1-V3 show ST depression.",
+          ],
+        },
+        {
+          title: "Diagnosis - the systematic reading",
+          points: [
+            "Rate: **300 divided by large squares** between R waves.",
+            "For irregular rhythm, count QRS complexes in 10 seconds and multiply by 6.",
+            "Rhythm: is it regular, is there a P before every QRS, is QRS narrow or broad?",
+            "Axis: leads I and aVF both positive means **normal axis**.",
+            "Measure PR, QRS and **QTc (QT divided by square root of RR)**.",
+            "LVH: **Sokolow-Lyon 35 mm or more**; look for strain pattern.",
+            "Finish with one line: rhythm, rate, axis, key finding and action now.",
+          ],
+        },
+        {
+          title: "Investigations",
+          points: [
+            "High-sensitivity troponin at 0 and 1 hour diagnoses NSTEMI.",
+            "**Do not wait for troponin** when the ECG shows STEMI.",
+            "Check potassium, magnesium and calcium for peaked T, U waves or long QT.",
+            "Echo for LVH, bundle branch block, Q waves or low voltage.",
+            "Holter or event recorder for intermittent palpitations or syncope.",
+          ],
+        },
+        {
+          title: "Treatment - first line",
+          points: [
+            "STEMI: **aspirin 150-300 mg chewed**, P2Y12 load and atorvastatin 80 mg.",
+            "Primary PCI if possible **within 120 minutes**, otherwise lysis within 10 minutes.",
+            "Hyperkalaemia with ECG changes: **10% calcium gluconate 30 mL IV** before the result.",
+            "Then give 10 units insulin with 25 g glucose and nebulised salbutamol.",
+            "Narrow regular tachycardia: Valsalva, then **adenosine 6 mg, 12 mg, 18 mg** rapid IV.",
+          ],
+        },
+        {
+          title: "Treatment - next steps",
+          points: [
+            "Unstable tachycardia: **synchronised DC cardioversion**, whatever the rhythm.",
+            "Stable broad-complex tachycardia: **amiodarone 300 mg IV** over 10-20 minutes.",
+            "Bradycardia: **atropine 500 microgram IV**, repeated to 3 mg.",
+            "No response: transcutaneous pacing or adrenaline infusion.",
+            "Torsades: **magnesium sulphate 2 g IV** and stop the culprit drug.",
+          ],
+        },
+        {
+          title: "Red flags, referral and follow-up",
+          points: [
+            "**Reciprocal ST depression** is the best sign that ST elevation is a true STEMI.",
+            "Posterior MI, de Winter T waves and Sgarbossa-positive LBBB are **STEMI equivalents**.",
+            "ST elevation in aVR with depression in 6+ leads suggests **left main disease**.",
+            "**Wellens**: deep or biphasic T inversion in V2-V3 when pain-free; never stress-test.",
+            "Broad-complex tachycardia is **VT until proved otherwise**; never give verapamil.",
+            "Pre-excited AF: no adenosine, verapamil, diltiazem, digoxin or beta-blockers.",
+            "Refer same day: STEMI, Wellens, complete block, Mobitz II, QTc over 500 ms.",
+          ],
+        },
+      ],
+      tables: [
+        {
+          heading: "Emergency drugs used with the ECG",
+          columns: ["Drug", "Dose and route", "Duration", "Key side effects / cautions"],
+          rows: [
+            ["Aspirin", "150-300 mg chewed", "Then 75-100 mg daily", "GI bleed"],
+            ["Clopidogrel", "300 mg with lysis (75 mg if over 75)", "Then 75 mg daily", "Bleeding"],
+            ["Calcium gluconate 10%", "30 mL IV over 10 minutes", "Repeat if ECG changes persist", "Protects heart; does not lower potassium"],
+            ["Insulin with glucose", "10 units soluble insulin with 25 g glucose IV", "Single dose, repeat as needed", "Hypoglycaemia; monitor glucose"],
+            ["Salbutamol", "10-20 mg nebulised", "Single dose", "Tremor, tachycardia"],
+            ["Adenosine", "6 mg rapid IV, then 12 mg, then 18 mg", "Seconds", "Flushing, chest discomfort; avoid severe asthma"],
+            ["Amiodarone", "300 mg IV over 10-20 min, then 900 mg over 24 h", "24 hours", "Hypotension; QT prolongation"],
+            ["Atropine", "500 microgram IV every 3-5 min", "Up to 3 mg", "Not in heart transplant"],
+            ["Magnesium sulphate", "2 g IV over 10 minutes", "Single dose", "Flushing; keep potassium 4.5-5.0"],
+          ],
+        },
+        {
+          heading: "STEMI localisation",
+          columns: ["Territory", "Leads with ST elevation", "Culprit artery"],
+          rows: [
+            ["Anteroseptal", "V1-V4", "LAD"],
+            ["Lateral", "I, aVL, V5-V6", "Circumflex or diagonal"],
+            ["Inferior", "II, III, aVF", "Right coronary (about 80%)"],
+            ["Right ventricle", "V4R 1 mm or more", "Proximal right coronary"],
+            ["Posterior", "ST depression V1-V3; elevation V7-V9", "Circumflex or right coronary"],
+          ],
+        },
+        {
+          heading: "AV block grading",
+          columns: ["Grade", "ECG feature", "Action"],
+          rows: [
+            ["First degree", "PR over 0.20 s, every P conducted", "Usually benign; review drugs"],
+            ["Mobitz I", "PR lengthens until a beat drops", "Nodal; benign in young"],
+            ["Mobitz II", "Constant PR, sudden dropped beat", "Infranodal; pacemaker"],
+            ["Complete", "P and QRS independent", "Pace"],
+          ],
+        },
+        {
+          heading: "Hyperkalaemia on the ECG",
+          columns: ["Potassium (mmol/L)", "ECG change"],
+          rows: [
+            ["About 5.5-6.5", "Peaked narrow T waves"],
+            ["6.5-7.5", "Flat or absent P, long PR"],
+            ["Over 7.5-8", "Wide QRS, sine wave, VF or asystole"],
+          ],
+        },
+      ],
+      remember: [
+        "Same order every time: rate, rhythm, axis, intervals, P, QRS, ST, T, compare.",
+        "Reciprocal change confirms STEMI.",
+        "Inferior STEMI: V4R before nitrates.",
+        "Normal ECG never excludes ACS.",
+        "Broad-complex tachycardia = VT until proved otherwise.",
+        "PE: sinus tachycardia is commonest; S1Q3T3 is uncommon.",
+        "Hyperkalaemia: give calcium before the potassium result.",
+      ],
+    },
     checked: "2026-10",
     updated: [
       "ERC 2025: peri-arrest doses re-cited (atropine 500 microgram to 3 mg, amiodarone 300 mg over 10-20 min, procainamide 10-15 mg/kg); AF cardioversion first shock 200 J or more (AHA 2025).",
@@ -478,6 +1637,174 @@ const revision: RevisionSet = {
   },
 
   "cardiovascular-pad-vte": {
+    notes: {
+      sections: [
+        {
+          title: "Definition and key facts",
+          points: [
+            "**Peripheral arterial disease** is atherosclerotic narrowing of the leg arteries.",
+            "PAD is defined by a resting **ABI of 0.90 or less**; about half are asymptomatic.",
+            "PAD is a **coronary equivalent**: patients die of MI and stroke, not limb loss.",
+            "**Venous thromboembolism** covers deep vein thrombosis and pulmonary embolism.",
+            "VTE is **provoked**, **unprovoked** or **cancer-associated**, which sets treatment duration.",
+            "In India PAD is driven by **diabetes and tobacco** and often presents as a diabetic foot.",
+          ],
+        },
+        {
+          title: "Classification that matters",
+          points: [
+            "**Fontaine**: I asymptomatic, II claudication, III rest pain, IV ulcer or gangrene.",
+            "**Chronic limb-threatening ischaemia** is rest pain over 2 weeks, ulcer or gangrene.",
+            "Acute limb ischaemia is graded I viable, IIa and IIb threatened, III irreversible.",
+            "ABI over 1.40 means **calcified, incompressible arteries**, not normal.",
+            "**High-risk PE** has shock or systolic under 90 for 15 minutes.",
+            "Intermediate-high risk PE has **RV dysfunction plus raised troponin**.",
+          ],
+        },
+        {
+          title: "How it happens (pathophysiology)",
+          points: [
+            "1. Plaque narrows the leg arteries, most often the superficial femoral artery.",
+            "2. On walking, flow cannot rise, so lactate causes cramp: **claudication**.",
+            "3. Pain lies **one level below the block**; calf pain means femoro-popliteal disease.",
+            "4. VTE follows **Virchow's triad**: stasis, hypercoagulability and endothelial injury.",
+            "5. Calf clot propagates; **proximal DVT** is the one that embolises.",
+            "6. In PE the right ventricle dilates and fails, causing hypotension and raised troponin.",
+          ],
+        },
+        {
+          title: "History in the OPD",
+          points: [
+            "True claudication is cramp at a fixed distance, relieved within minutes by standing.",
+            "**Neurogenic claudication** is eased by sitting or bending forward, with normal pulses.",
+            "Rest pain at night, relieved by hanging the leg down, means **limb-threatening ischaemia**.",
+            "In a young smoker with cold fingers and migratory phlebitis, think **Buerger disease**.",
+            "For a swollen leg ask about surgery, plaster, travel, pregnancy, the pill and past VTE.",
+            "Ask for cancer clues in unprovoked VTE over 40.",
+          ],
+        },
+        {
+          title: "Examination",
+          points: [
+            "Look for shiny hairless skin, thick nails, ulcers on toes and heels, and gangrene.",
+            "Palpate every pulse; the level where pulses vanish maps the block.",
+            "**Buerger test**: pallor on raising the leg and rubor on hanging it down.",
+            "Measure the **ABI**: higher ankle pressure divided by higher arm pressure.",
+            "Acute limb ischaemia: the **6 Ps**; sensory loss and weakness mean immediate threat.",
+            "DVT: calf 3 cm larger, pitting oedema, tenderness; **Homans sign is unreliable**.",
+          ],
+        },
+        {
+          title: "Investigations",
+          points: [
+            "**ABI** is the first PAD test; use toe-brachial index if ABI is over 1.40.",
+            "Arterial imaging only when revascularisation is planned.",
+            "For DVT, score first with the **two-level Wells score**.",
+            "DVT unlikely: **D-dimer**; if positive, proximal compression ultrasound.",
+            "DVT likely: ultrasound first; repeat at 6-8 days if negative with raised D-dimer.",
+            "D-dimer only **rules out**; use an age-adjusted cut-off over 50 years.",
+            "PE likely (Wells over 4): **CT pulmonary angiography**; V/Q scan in pregnancy.",
+          ],
+        },
+        {
+          title: "Treatment - first line",
+          points: [
+            "**Complete tobacco cessation** halves amputation and death in PAD.",
+            "**Structured walking**: 30-60 minutes at least 3 times a week for 12 weeks.",
+            "Every PAD patient gets a **high-intensity statin**, target LDL under 55 mg/dL.",
+            "Give a single antiplatelet: **clopidogrel 75 mg** or aspirin 75-150 mg.",
+            "VTE: start anticoagulation on suspicion if imaging will be delayed.",
+            "**Apixaban** or **rivaroxaban** need no heparin lead-in.",
+            "Mobilise early after DVT; bed rest is not needed.",
+          ],
+        },
+        {
+          title: "Treatment - next steps",
+          points: [
+            "Add **cilostazol 100 mg twice daily** for claudication; stop if no gain at 3 months.",
+            "Rivaroxaban 2.5 mg twice daily plus aspirin for high-risk PAD with low bleeding risk.",
+            "Refer for revascularisation if claudication limits life after 3 months of treatment.",
+            "VTE duration: **3 months** if provoked by a major transient factor.",
+            "Unprovoked VTE: at least 3 months, then consider indefinite.",
+            "**Indefinite** for recurrent VTE, antiphospholipid syndrome and active cancer.",
+          ],
+        },
+        {
+          title: "Special groups",
+          points: [
+            "Pregnancy: **weight-based LMWH** for the rest of pregnancy and 6 weeks postpartum.",
+            "**Antiphospholipid syndrome**: warfarin to INR 2-3; avoid DOACs.",
+            "Cancer-associated VTE: a factor Xa DOAC or LMWH for at least 6 months.",
+            "Medical inpatients with **Padua score 4 or more**: enoxaparin 40 mg SC daily.",
+            "Diabetic foot: daily inspection and **never walk barefoot**.",
+          ],
+        },
+        {
+          title: "Red flags, referral and follow-up",
+          points: [
+            "Acute limb ischaemia: **IV heparin** and vascular referral within the hour.",
+            "Keep the ischaemic limb dependent; no heat, no elevation, no compression.",
+            "High-risk PE: **alteplase 100 mg IV over 2 hours**.",
+            "Intermediate-high PE: anticoagulate and lyse only if the patient deteriorates.",
+            "A massively swollen blue leg is **phlegmasia cerulea dolens**; refer at once.",
+            "VTE: review at **3 months** to decide whether to stop or extend.",
+            "Persisting breathlessness 3-6 months after PE needs echo for CTEPH.",
+          ],
+        },
+      ],
+      tables: [
+        {
+          heading: "Drugs for PAD and VTE",
+          columns: ["Drug", "Dose and route", "Duration", "Key side effects / cautions"],
+          rows: [
+            ["Clopidogrel", "75 mg oral once daily", "Lifelong in symptomatic PAD", "Bleeding, dyspepsia"],
+            ["Aspirin", "75-150 mg oral once daily", "Lifelong", "GI upset, bleeding"],
+            ["Atorvastatin", "40-80 mg oral once daily", "Lifelong", "Myalgia, raised ALT"],
+            ["Cilostazol", "100 mg twice daily, before or after meals", "Stop if no gain at 3 months", "Headache, palpitations; never in heart failure"],
+            ["Apixaban (VTE)", "10 mg twice daily 7 days, then 5 mg twice daily", "3 months or longer", "Bleeding; no heparin lead-in"],
+            ["Rivaroxaban (VTE)", "15 mg twice daily 21 days, then 20 mg daily", "3 months or longer", "Bleeding; take with food"],
+            ["Enoxaparin", "1 mg/kg SC twice daily; prophylaxis 40 mg daily", "Pregnancy, cancer, lead-in", "Bleeding, HIT; once daily if CrCl under 30"],
+            ["Warfarin", "5 mg daily with 5 days LMWH overlap", "INR 2-3; APS long term", "Bleeding, teratogenic, interactions"],
+            ["Alteplase", "100 mg IV over 2 hours", "Once, high-risk PE", "Major and intracranial bleeding"],
+          ],
+        },
+        {
+          heading: "ABI and Fontaine at a glance",
+          columns: ["Finding", "Meaning", "Action"],
+          rows: [
+            ["ABI 1.00-1.40", "Normal", "Reassure"],
+            ["ABI 0.90 or less", "PAD", "Statin, antiplatelet, tobacco stop, walking"],
+            ["ABI 0.40 or less", "Severe PAD", "Urgent vascular referral"],
+            ["ABI over 1.40", "Calcified arteries", "Toe-brachial index"],
+            ["Fontaine III-IV", "Rest pain, ulcer, gangrene", "Urgent revascularisation"],
+          ],
+        },
+        {
+          heading: "Two-level Wells score for DVT",
+          columns: ["Item", "Points"],
+          rows: [
+            ["Active cancer", "1"],
+            ["Leg paralysis or recent plaster", "1"],
+            ["Bedridden 3 days or surgery within 12 weeks", "1"],
+            ["Tenderness along deep veins", "1"],
+            ["Whole leg swollen; or calf 3 cm larger", "1 each"],
+            ["Pitting oedema; collateral superficial veins", "1 each"],
+            ["Previous DVT", "1"],
+            ["Alternative diagnosis as likely", "-2"],
+          ],
+        },
+      ],
+      remember: [
+        "PAD is a coronary equivalent: statin, antiplatelet, stop tobacco.",
+        "ABI over 1.40 is abnormal: use toe pressure.",
+        "Structured walking beats every drug; cilostazol never in heart failure.",
+        "Wells first, D-dimer only if unlikely; D-dimer never rules in.",
+        "Apixaban and rivaroxaban need no heparin lead-in; dabigatran and edoxaban do.",
+        "3 months provoked, indefinite for cancer, APS and recurrence.",
+        "LMWH in pregnancy, warfarin in APS, lysis only for high-risk PE.",
+        "Acute limb ischaemia: 6 Ps, heparin, surgeon within the hour.",
+      ],
+    },
     checked: "2026-10",
     updated: [
       "AHA/ACC 2026 PE guideline: massive/submassive replaced by clinical categories A-E; systemic lysis not routine in A-C, reasonable in E1, may be considered in D.",

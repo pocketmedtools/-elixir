@@ -3,6 +3,190 @@ import type { RevisionSet } from "./index";
 const revision: RevisionSet = {
   "respiratory-asthma": {
     checked: "2026-10",
+    notes: {
+      sections: [
+        {
+          title: "Definition and key facts",
+          points: [
+            "**Asthma** is chronic airway inflammation causing variable symptoms and **variable expiratory airflow limitation**.",
+            "Both halves are needed: typical symptoms that vary, plus measured variable airflow.",
+            "The four symptoms are **wheeze, breathlessness, chest tightness and cough**.",
+            "India has about 13% of the world's asthma but **over 40% of asthma deaths**.",
+            "**Severity is judged retrospectively** from the GINA step needed to keep asthma controlled.",
+            "**Severe asthma** stays uncontrolled despite optimised high-dose ICS-LABA, or needs it for control.",
+            "**Mild asthma is not low risk**: about 15-20% of asthma deaths occur in mild disease.",
+          ],
+        },
+        {
+          title: "Causes and risk factors",
+          points: [
+            "**Atopy** and a family history of asthma, rhinitis or eczema.",
+            "Early childhood viral wheeze with **rhinovirus or RSV**.",
+            "The **17q21 gene locus** is linked to childhood-onset allergic asthma.",
+            "Indian home triggers: **biomass smoke, mosquito coils and agarbatti**, dust mite and cockroach.",
+            "Tobacco smoke, obesity and winter smog on poor air-quality days.",
+            "Work sensitisers such as **isocyanates** in painters and flour in bakers.",
+            "Drugs: **aspirin and NSAIDs**, and non-selective beta-blockers including timolol eye drops.",
+          ],
+        },
+        {
+          title: "How it happens (pathophysiology)",
+          points: [
+            "Viruses, allergens or smoke first injure the airway epithelium.",
+            "Injured epithelium releases the **alarmins (TSLP, IL-33, IL-25)**, which start the cascade.",
+            "Alarmins switch on Th2 cells and type 2 innate lymphoid cells (ILC2).",
+            "**IL-4** makes IgE, **IL-5** brings eosinophils, and **IL-13** makes mucus and raises FeNO.",
+            "Within minutes, mast cell histamine and leukotrienes cause bronchospasm, oedema and mucus.",
+            "A **late phase** at 3-8 hours sustains obstruction, and only steroids blunt it.",
+            "Years of untreated inflammation cause **airway remodelling** and fixed airflow limitation.",
+          ],
+        },
+        {
+          title: "History in the OPD",
+          points: [
+            "Ask if symptoms **vary**, wake the patient at night, and follow colds, exercise or smoke.",
+            "Ask about past emergency visits, **ICU stay or intubation**, and steroid courses in 12 months.",
+            "Count relievers: **3 or more SABA canisters a year** raises the risk of attacks.",
+            "**One or more SABA canister a month** raises the risk of death.",
+            "Ask the patient to **show their inhaler technique** and say how often they really use it.",
+            "Symptoms better on holidays and worse at work suggest **occupational asthma**.",
+            "Always ask about **cough over 2 weeks**, fever and weight loss to exclude TB.",
+          ],
+        },
+        {
+          title: "Examination",
+          points: [
+            "Examination is often **normal between attacks**, so a clear chest never excludes asthma.",
+            "Record **respiratory rate, pulse, SpO2, speech and PEF** at every visit.",
+            "The typical sign is **bilateral polyphonic expiratory wheeze** with prolonged expiration.",
+            "A **monophonic or localised wheeze** suggests foreign body, endobronchial TB or tumour.",
+            "**Clubbing is not a feature of asthma**; it points to bronchiectasis or interstitial lung disease.",
+            "Look for oral thrush, hoarse voice and cushingoid features from steroids.",
+            "Plot height and weight on a growth chart in every child.",
+          ],
+        },
+        {
+          title: "Investigations",
+          points: [
+            "**Spirometry with a bronchodilator test** is the first test.",
+            "Withhold SABA for 4 hours and twice-daily LABA for 24 hours before the test.",
+            "**Normal spirometry does not exclude asthma**; repeat it when the patient has symptoms.",
+            "Without a spirometer, use a **2-week PEF diary**, morning and evening, best of three blows.",
+            "**Blood eosinophils of 300/microlitre or more** suggest T2 asthma and higher attack risk.",
+            "Chest X-ray is not routine; order it for atypical features or **suspected TB**.",
+            "In poorly controlled asthma, check **Aspergillus-specific IgE and total IgE** for ABPA.",
+          ],
+        },
+        {
+          title: "Diagnosis",
+          points: [
+            "Diagnose asthma on typical variable symptoms plus **documented variable airflow limitation**.",
+            "**Confirm the diagnosis before starting ICS**, because ICS removes the variability you need to prove.",
+            "Assess control with the **GINA four questions** about the last 4 weeks.",
+            "No yes answers is well controlled, 1-2 is partly controlled, 3-4 is uncontrolled.",
+            "Assess **future risk separately**: past attacks, FEV1 under 60%, no ICS, smoke exposure.",
+          ],
+        },
+        {
+          title: "Treatment - first line",
+          points: [
+            "**Never treat asthma with a SABA alone**, at any step.",
+            "**Track 1 (preferred)** uses budesonide-formoterol as the reliever; Track 2 uses SABA plus ICS.",
+            "Steps 1-2: **budesonide-formoterol 200/6, one inhalation as needed** (AIR).",
+            "Steps 3-4 MART: 200/6 **one (Step 3) or two (Step 4) inhalations twice daily**, plus one as needed.",
+            "**Seek medical care if more than 12 inhalations** are needed in 24 hours (8 at 6-11 years).",
+            "Before any step-up, check the diagnosis, **inhaler technique, adherence** and triggers.",
+            "Give a **written action plan**, teach rinse-and-spit, and stop smoke and biomass exposure.",
+          ],
+        },
+        {
+          title: "Treatment - acute attack",
+          points: [
+            "Give **oxygen only if SpO2 is under 92%**, with an upper limit of 95%.",
+            "**Salbutamol 4-10 puffs by spacer every 20 minutes** for the first hour.",
+            "Add **ipratropium** in a severe attack, for the first hours only.",
+            "Give **prednisolone 40-50 mg daily for 5-7 days** within the first hour.",
+            "Give **magnesium sulphate 2 g IV** over 20 minutes if FEV1 is under 25-30%.",
+            "Do not give sedatives, routine antibiotics or aminophylline.",
+            "Discharge on an ICS-containing controller and **review within 2-7 days**.",
+          ],
+        },
+        {
+          title: "Next steps, special groups and referral",
+          points: [
+            "Step 5: add **tiotropium 2.5 microgram, 2 puffs once daily**, and phenotype the asthma.",
+            "**Biologics** are judged after a 4-month trial; **treat Strongyloides first** in India.",
+            "**Pregnancy**: continue ICS; uncontrolled asthma, not the drugs, harms mother and baby.",
+            "**ABPA**: diagnose with Aspergillus-specific IgE and **total IgE 500 IU/mL or more**.",
+            "Refer if uncontrolled at Step 4 or needing **2 or more steroid courses a year**.",
+            "Refer after any life-threatening attack, ICU stay, or suspected occupational asthma.",
+            "Review **1-3 months after any change**, and within 1 week after an attack.",
+          ],
+        },
+      ],
+      tables: [
+        {
+          heading: "Asthma drugs at a glance",
+          columns: ["Drug", "Dose and route", "Duration", "Key side effects / cautions"],
+          rows: [
+            ["Budesonide-formoterol 200/6 (100/6 at 6-11 y)", "Inhaled; 1 as needed (AIR), or 1-2 twice daily plus as needed (MART)", "Long-term", "Thrush, hoarse voice; seek care if over 12 in 24 h (8 at 6-11)"],
+            ["Salbutamol (SABA)", "pMDI 100 microgram, 1-2 puffs; attack 4-10 puffs by spacer", "As needed; every 20 min for 1 h in attack", "Tremor, tachycardia, low potassium; never used alone"],
+            ["Low-dose ICS (budesonide)", "Inhaled 200-400 microgram a day in adults", "Daily, long-term (Track 2)", "Thrush, dysphonia; growth slows 0.5-1 cm in children"],
+            ["Fluticasone-salmeterol 125/25", "pMDI 1-2 puffs twice daily", "Long-term (Track 2 Steps 3-4)", "Controller only, never as a reliever"],
+            ["Tiotropium soft-mist (LAMA)", "2.5 microgram, 2 puffs once daily", "Long-term, Step 5 add-on", "Dry mouth, urinary retention, angle-closure glaucoma"],
+            ["Montelukast", "Oral 10 mg at night; 5 mg at 6-14 y; 4 mg at 6 months-5 y", "Daily", "Boxed warning: nightmares, depression, suicidal thoughts"],
+            ["Prednisolone", "Oral 40-50 mg once daily; child 1-2 mg/kg (max 40 mg)", "5-7 days adult; 3-5 days child", "No taper needed; repeated courses harm bone and glucose"],
+            ["Ipratropium", "Nebulised 500 microgram or 4-8 puffs every 20 min", "First hour of severe attack", "Dry mouth; glaucoma if mist enters eyes"],
+            ["Magnesium sulphate", "2 g IV over 20 min; child 40-50 mg/kg", "Single dose", "Flushing, hypotension; hospital only"],
+            ["Biologics (mepolizumab, tezepelumab)", "Mepolizumab 100 mg SC 4-weekly; tezepelumab 210 mg SC 4-weekly", "Trial 4 months (depemokimab 6 months)", "Specialist only; anaphylaxis with omalizumab; deworm first"],
+          ],
+        },
+        {
+          heading: "GINA 2026 steps - what to prescribe",
+          columns: ["Step", "Track 1, 12 years and over (preferred)", "Track 2 (SABA reliever)", "Children 6-11"],
+          rows: [
+            ["1-2", "As-needed budesonide-formoterol (AIR)", "Step 1 ICS with every SABA; Step 2 daily low-dose ICS", "Daily low-dose ICS, or as-needed budesonide-formoterol (new 2026)"],
+            ["3", "Low-dose MART, 200/6 one twice daily", "Low-dose ICS-LABA plus SABA", "Very low-dose MART 100/6 once daily"],
+            ["4", "Medium-dose MART, 200/6 two twice daily", "Medium or high-dose ICS-LABA plus SABA", "Low-dose MART 100/6 twice daily; refer"],
+            ["5", "Add tiotropium, phenotype, biologic; refer", "Add tiotropium, phenotype, biologic; refer", "Refer for phenotyping"],
+          ],
+        },
+        {
+          heading: "Tests that confirm asthma",
+          columns: ["Test", "What it shows", "When"],
+          rows: [
+            ["Spirometry with bronchodilator", "FEV1 rise over 12% and over 200 mL", "First test, before ICS"],
+            ["PEF diary for 2 weeks", "Diurnal variability over 10% adult, 13% child", "No spirometer available"],
+            ["PEF after 4 weeks of ICS", "Rise of over 20%", "Diagnosis still in doubt"],
+            ["Exercise challenge", "FEV1 fall over 10% and over 200 mL", "Exercise symptoms, normal spirometry"],
+            ["FeNO (NICE)", "50 ppb or more adult, 35 ppb or more child", "Where available; normal does not exclude"],
+            ["Blood eosinophils", "300/microlitre or more means T2 asthma", "Phenotyping, poor control"],
+          ],
+        },
+        {
+          heading: "Grading an acute attack",
+          columns: ["Feature", "Mild-moderate", "Severe", "Life-threatening"],
+          rows: [
+            ["Speech", "Phrases", "Words only", "Drowsy or confused"],
+            ["Respiratory rate", "Raised", "Over 30/min", "Feeble effort"],
+            ["Pulse", "100-120/min", "Over 120/min", "Bradycardia, hypotension"],
+            ["SpO2 on air", "90-95%", "Under 90%", "Cyanosis"],
+            ["PEF", "Over 50% of best", "50% or less", "Silent chest"],
+            ["Where to treat", "Clinic", "Start treatment, transfer to acute care", "ICU, prepare to intubate"],
+          ],
+        },
+      ],
+      remember: [
+        "No SABA-only treatment at any step - every asthmatic needs an ICS.",
+        "Formoterol relieves and controls; salmeterol only controls.",
+        "A LABA is never given without an ICS.",
+        "Variable airflow = BDR over 12% and 200 mL, or PEF variability over 10%.",
+        "Control: 4 questions, last 4 weeks - 0 well, 1-2 partly, 3-4 uncontrolled.",
+        "Silent chest or a normal-to-rising PaCO2 means exhaustion, not improvement.",
+        "Step down only after 2-3 months of control, by 25-50%; never stop ICS in an adult.",
+        "Theophylline, doxofylline and oral salbutamol syrups are not recommended.",
+      ],
+    },
     updated: [
       "GINA 2026: 'maximum 12 inhalations a day' replaced by a seek-care prompt - more than 12 budesonide-formoterol inhalations in 24 h (8 at 6-11 years) means get medical care",
       "GINA 2026: as-needed low-dose budesonide-formoterol (AIR) added as a Steps 1-2 option for children 6-11 (CARE trial)",
@@ -81,6 +265,183 @@ const revision: RevisionSet = {
 
   "respiratory-copd": {
     checked: "2026-10",
+    notes: {
+      sections: [
+        {
+          title: "Definition and key facts",
+          points: [
+            "**COPD** is persistent, often progressive airflow obstruction with chronic breathlessness, cough or sputum.",
+            "**No spirometry, no COPD**: post-bronchodilator **FEV1/FVC under 0.70** is required.",
+            "It comes from airway disease (bronchitis, bronchiolitis), alveolar destruction (emphysema), or both.",
+            "India has about **55 million people with COPD**; it is the second leading cause of death.",
+            "**Kitchen smoke in non-smoking women** drives Indian COPD as much as tobacco does.",
+            "Most COPD patients die of **heart disease or lung cancer**, not respiratory failure.",
+          ],
+        },
+        {
+          title: "Classification that matters",
+          points: [
+            "**GOLD grades 1-4** use post-bronchodilator FEV1 and describe severity and prognosis.",
+            "GOLD 1 is 80% or more, 2 is 50-79%, 3 is 30-49%, 4 is under 30%.",
+            "The **ABE groups** choose the drug, using symptoms and exacerbations in the past year.",
+            "High symptom burden means **mMRC 2 or more**, or a **CAAT score of 10 or more**.",
+            "GOLD 2026 renamed the CAT as the **CAAT (Chronic Airways Assessment Test)**.",
+            "GOLD 2026: **one moderate exacerbation is now enough** to place a patient in Group E.",
+          ],
+        },
+        {
+          title: "Causes and risk factors",
+          points: [
+            "**Tobacco**: cigarettes, **bidis, hookah and chillum**; count pack-years for every smoker.",
+            "**Biomass smoke** from wood, dung cakes or crop waste on an open chulha.",
+            "Dusty jobs: stone quarry, mining, cotton textile, construction and welding.",
+            "**Post-tuberculosis obstructive airway disease** is a common Indian cause.",
+            "Low birth weight, childhood asthma and recurrent chest infections impair lung development.",
+            "**Alpha-1 antitrypsin deficiency**: think of it when under 45, a non-smoker, or basal emphysema.",
+          ],
+        },
+        {
+          title: "How it happens (pathophysiology)",
+          points: [
+            "Inhaled smoke and dust activate alveolar macrophages and airway epithelial cells.",
+            "These cells recruit **neutrophils, CD8 T cells and macrophages**, so inflammation is mainly neutrophilic.",
+            "**Protease-antiprotease imbalance**: elastase and MMPs destroy alveolar walls, causing emphysema.",
+            "Goblet-cell hyperplasia and gland enlargement cause **chronic bronchitis** with daily sputum.",
+            "Loss of elastic recoil lets small airways collapse in expiration, causing **air trapping**.",
+            "Hyperinflation flattens the diaphragm and **dynamic hyperinflation** causes exertional breathlessness.",
+            "Chronic hypoxia causes **pulmonary hypertension, cor pulmonale** and secondary polycythaemia.",
+          ],
+        },
+        {
+          title: "History in the OPD",
+          points: [
+            "Breathlessness is **progressive, persistent and worse on exertion**; grade it on the mMRC scale.",
+            "Ask about chronic cough and sputum; large daily volumes suggest **bronchiectasis**.",
+            "Pack-years equal **cigarettes per day divided by 20, multiplied by years smoked**.",
+            "Ask every non-smoking woman about **years cooking on a chulha**.",
+            "Count **exacerbations in 12 months**: steroid or antibiotic courses, and admissions.",
+            "Ask about **haemoptysis, weight loss and night sweats** to exclude TB and lung cancer.",
+            "Ask the patient to **demonstrate their inhaler**; poor technique is the commonest failure.",
+          ],
+        },
+        {
+          title: "Examination",
+          points: [
+            "Record **SpO2 on air, weight and BMI**; BMI under 21 means poorer prognosis.",
+            "Signs appear late, so a normal chest does not exclude COPD.",
+            "Look for **pursed-lip breathing**, tripod posture, accessory muscles and Hoover sign.",
+            "Hyperinflation: barrel chest, short cricosternal distance, hyperresonance, low liver edge.",
+            "**Flapping tremor, warm peripheries and bounding pulse** mean CO2 retention.",
+            "Raised JVP, loud P2, parasternal heave and pedal oedema mean **cor pulmonale**.",
+            "**Clubbing is not a feature of COPD**; look for cancer or bronchiectasis.",
+          ],
+        },
+        {
+          title: "Investigations",
+          points: [
+            "**Spirometry after 400 microgram salbutamol** confirms COPD and gives the GOLD grade.",
+            "Large reversibility, over 400 mL, should make you reconsider asthma.",
+            "**Blood eosinophil count** decides whether ICS will help.",
+            "Chest X-ray excludes TB sequelae, cancer, bullae and heart failure; it cannot diagnose COPD.",
+            "If resting SpO2 is **92% or less**, do an arterial blood gas for oxygen need.",
+            "**Sputum NAAT** for anyone with cough over 2 weeks, fever, weight loss or haemoptysis.",
+            "ECG and echo if cor pulmonale is suspected; alpha-1 antitrypsin level in the young.",
+          ],
+        },
+        {
+          title: "Treatment - first line",
+          points: [
+            "**Stopping tobacco** is the single most effective intervention at every stage.",
+            "Use the **5 As** at every visit, and refer to the quitline **1800-11-2356**.",
+            "Switch biomass users to **LPG (Ujjwala Yojana)** or a chimney chulha.",
+            "Group A: **one long-acting bronchodilator**, a LAMA or a LABA.",
+            "Groups B and E: **LABA plus LAMA** in one inhaler.",
+            "Group E with **eosinophils 300/microlitre or more**: start triple therapy with ICS.",
+            "**Pulmonary rehabilitation** twice a week for 6-12 weeks for Groups B and E.",
+          ],
+        },
+        {
+          title: "Treatment - next steps",
+          points: [
+            "Still breathless on LABA-LAMA: check technique, then consider **ensifentrine 3 mg nebulised** twice daily.",
+            "Still exacerbating with **eosinophils 100 or more**: escalate to triple therapy.",
+            "Eosinophils under 100: add **roflumilast** (FEV1 under 50%, chronic bronchitis) or **azithromycin**.",
+            "Exacerbating on triple with eosinophils 300 or more: consider **dupilumab or mepolizumab**.",
+            "Avoid ICS after TB, NTM infection or repeated pneumonia.",
+            "**LTOT** if stable PaO2 is 55 mmHg or less, for **at least 15 hours a day**.",
+            "Low-dose oral morphine relieves refractory breathlessness in advanced disease.",
+          ],
+        },
+        {
+          title: "Exacerbations and red flags",
+          points: [
+            "Exacerbation: worse dyspnoea, cough or sputum developing over **less than 14 days**.",
+            "Give **controlled oxygen to SpO2 88-92%** by 24-28% Venturi mask.",
+            "Give **prednisolone 40 mg for 5 days**, and nebulised salbutamol with ipratropium.",
+            "Give antibiotics for 5 days only if sputum is **purulent** or the patient needs ventilation.",
+            "**pH 7.35 or less with PaCO2 over 45 mmHg** means start NIV now.",
+            "Rule out pneumothorax, pulmonary embolism, heart failure and pneumonia before blaming an exacerbation.",
+            "After discharge: rehabilitation within 4 weeks, and **review within 1-4 weeks**.",
+          ],
+        },
+      ],
+      tables: [
+        {
+          heading: "COPD drugs at a glance",
+          columns: ["Drug", "Dose and route", "Duration", "Key side effects / cautions"],
+          rows: [
+            ["Tiotropium (LAMA)", "18 microgram DPI, or soft-mist 2.5 microgram x 2, once daily", "Long-term", "Dry mouth, urinary retention, angle-closure glaucoma"],
+            ["Formoterol or salmeterol (LABA)", "Formoterol 12, salmeterol 50 microgram twice daily", "Long-term", "Tremor, palpitations, hypokalaemia; may be used without ICS"],
+            ["LABA-LAMA combination", "e.g. indacaterol-glycopyrronium 110/50 once daily", "Long-term, Groups B and E", "Combined LABA and LAMA effects"],
+            ["Triple ICS-LABA-LAMA", "e.g. fluticasone furoate-umeclidinium-vilanterol 100/62.5/25 once daily", "Long-term, eosinophil-guided", "Pneumonia, thrush, TB or NTM risk; rinse and spit"],
+            ["Salbutamol (SABA)", "100 microgram 1-2 puffs as needed; 2.5-5 mg nebulised in attack", "As needed", "Tremor, tachycardia; avoid oral tablets"],
+            ["Roflumilast", "Oral 250 microgram daily for 4 weeks, then 500 microgram", "Long-term", "Diarrhoea, weight loss, depression; avoid if underweight"],
+            ["Azithromycin", "250 mg daily or 500 mg three times a week", "1 year, review at 6-12 months", "Hearing loss, QT prolongation; exclude TB and NTM first"],
+            ["Prednisolone", "Oral 40 mg once daily", "5 days, no taper", "Hyperglycaemia, insomnia, dyspepsia"],
+            ["Amoxicillin-clavulanate or doxycycline", "625 mg three times daily, or doxycycline 100 mg twice daily", "5 days", "Only with purulent sputum; diarrhoea, photosensitivity"],
+            ["Long-term oxygen", "Concentrator 1-2 L/min to SpO2 90% or more", "At least 15 h a day", "No smoking or flame near oxygen; reassess 60-90 days"],
+          ],
+        },
+        {
+          heading: "GOLD 2026 ABE groups and starting treatment",
+          columns: ["Group", "Exacerbations in past year", "Symptoms", "Start with"],
+          rows: [
+            ["A", "None", "mMRC 0-1 and CAAT under 10", "One long-acting bronchodilator"],
+            ["B", "None", "mMRC 2 or more, or CAAT 10 or more", "LABA plus LAMA"],
+            ["E", "1 moderate or 1 needing admission", "Any", "LABA plus LAMA; triple if eosinophils 300 or more"],
+          ],
+        },
+        {
+          heading: "The eosinophil rule for ICS in COPD",
+          columns: ["Blood eosinophils (per microlitre)", "ICS decision"],
+          rows: [
+            ["300 or more", "Strongly favours adding ICS (triple therapy)"],
+            ["100-300", "Consider if exacerbations persist on LABA-LAMA"],
+            ["Under 100", "Do not add ICS; use roflumilast or azithromycin"],
+            ["Past TB, NTM or repeated pneumonia", "Avoid ICS at any count"],
+          ],
+        },
+        {
+          heading: "Long-term oxygen criteria (stable state, confirmed twice over 3 weeks)",
+          columns: ["Measure", "Prescribe LTOT when"],
+          rows: [
+            ["PaO2 alone", "55 mmHg or less"],
+            ["SaO2 alone", "88% or less"],
+            ["PaO2 55-60 mmHg plus", "Pulmonary hypertension, cor pulmonale oedema, or haematocrit over 55%"],
+          ],
+        },
+      ],
+      remember: [
+        "No spirometry, no COPD: post-bronchodilator FEV1/FVC under 0.70.",
+        "GOLD grades (FEV1) describe severity; ABE groups choose the drug.",
+        "LABA-LAMA is the default; LABA-ICS without a LAMA is no longer encouraged.",
+        "Eosinophil rule: ICS at 300 or more, consider at 100-300, avoid under 100.",
+        "Exacerbation: SpO2 88-92%, prednisolone 40 mg for 5 days, antibiotics only if purulent.",
+        "Mortality savers: quit smoking, LTOT 15 h, NIV, rehab after admission, triple in selected exacerbators.",
+        "Prognosis is the BODE index: BMI, Obstruction, Dyspnoea, Exercise capacity.",
+        "Tobacco cessation is the 5 As: Ask, Advise, Assess, Assist, Arrange.",
+      ],
+    },
     updated: [
       "GOLD 2026: Group E threshold lowered - 1 or more moderate exacerbation (was 2 or more) or 1 or more needing admission; Groups A and B now have no moderate or severe exacerbation",
       "GOLD 2026: new disease-activity section - target a low disease activity state with no exacerbations; a single moderate exacerbation should prompt consideration of escalation",
@@ -153,6 +514,172 @@ const revision: RevisionSet = {
 
   "respiratory-tuberculosis-ntep": {
     checked: "2026-10",
+    notes: {
+      sections: [
+        {
+          title: "Definition and key facts",
+          points: [
+            "**Presumptive pulmonary TB**: cough or fever for **2 weeks or more**, weight loss, haemoptysis or night sweats.",
+            "Any chest X-ray abnormality also makes a patient presumptive TB.",
+            "In PLHIV, contacts, diabetics and the malnourished, **cough of any duration** counts.",
+            "India has **about a quarter of the world's TB** and a third of MDR or RR-TB.",
+            "Incidence fell 21% from 2015 to **187 per lakh in 2024**.",
+            "**Notification on Ni-kshay is mandatory** for every doctor, laboratory and chemist.",
+          ],
+        },
+        {
+          title: "Classification that matters",
+          points: [
+            "**Microbiologically confirmed TB** has a positive smear, culture or rapid test such as CBNAAT.",
+            "**Clinically diagnosed TB** is treated on X-ray, histology or clinical grounds without confirmation.",
+            "Pulmonary TB includes miliary TB; pulmonary plus extrapulmonary disease is classed pulmonary.",
+            "**New** means never treated, or under 1 month of anti-TB drugs.",
+            "**Previously treated** includes recurrent, after failure and after loss to follow-up.",
+            "By resistance: **Hr-TB, RR-TB, MDR-TB, pre-XDR-TB and XDR-TB** decide the regimen.",
+          ],
+        },
+        {
+          title: "How it happens (pathophysiology)",
+          points: [
+            "A coughing patient spreads **droplet nuclei of 1-5 micrometres** that reach the alveoli.",
+            "Alveolar macrophages ingest bacilli, which block phagosome-lysosome fusion and multiply inside.",
+            "**Th1 cells** make interferon-gamma, which activates macrophages and builds the granuloma.",
+            "The **caseating granuloma** with Langhans giant cells walls off the bacilli in most people.",
+            "Primary TB forms the **Ghon complex**: a subpleural focus plus enlarged hilar nodes.",
+            "Reactivation favours the **upper lobe apices**, where oxygen tension is highest.",
+            "Cavities hold huge bacillary loads with resistant mutants, so TB is **always treated with several drugs**.",
+          ],
+        },
+        {
+          title: "History in the OPD",
+          points: [
+            "Ask about cough, sputum, haemoptysis, **evening fever, night sweats** and weight loss.",
+            "Nearly half of prevalent Indian cases had **no cough**, so ask about every symptom.",
+            "Ask about **contact with a TB patient** and whether that patient had drug-resistant TB.",
+            "Ask about **previous anti-TB treatment**: drugs, duration, completion and outcome.",
+            "Screen for **HIV, diabetes, tobacco, alcohol** and undernutrition.",
+            "List drugs that interact with rifampicin: **oral contraceptives, warfarin, sulfonylureas, dolutegravir**.",
+            "Ask about Aadhaar-linked bank account and social support to unlock Ni-kshay benefits.",
+          ],
+        },
+        {
+          title: "Examination",
+          points: [
+            "Record **weight and BMI** at every visit; weight decides the FDC band.",
+            "Admit if **BMI under 14, SpO2 under 94%, RR over 24**, or unable to stand.",
+            "TB nodes are **cervical, matted and non-tender**, and may form a cold abscess.",
+            "Chest signs are often few: apical post-tussive crackles, or signs of effusion or fibrosis.",
+            "Look for gibbus and leg weakness (Pott spine) and neck stiffness (TB meningitis).",
+            "Record **visual acuity and colour vision** before starting ethambutol.",
+          ],
+        },
+        {
+          title: "Investigations",
+          points: [
+            "**Upfront NAAT (CBNAAT or Truenat)** on sputum for every presumptive TB patient.",
+            "NAAT detects TB and **rifampicin resistance** in about 2 hours.",
+            "Rifampicin sensitive: send **first-line LPA** for isoniazid resistance.",
+            "Rifampicin resistant: send first and second-line LPA plus liquid culture DST.",
+            "Smear needs 5,000-10,000 bacilli/mL, so it is now mainly a **follow-up test**.",
+            "Every patient gets an **HIV test and blood sugar**, plus tobacco and alcohol screening.",
+            "**TB serology is banned**; TST and IGRA show infection only, not active disease.",
+          ],
+        },
+        {
+          title: "Treatment - first line",
+          points: [
+            "Treatment is always **daily, multidrug and by weight band** using fixed-dose combinations.",
+            "Drug-sensitive TB: **2HRZE + 4HRE, a total of 6 months**.",
+            "**CNS and bone TB: 2HRZE + 10HRE**, a total of 12 months.",
+            "Give **pyridoxine 10 mg daily** with isoniazid; 25-50 mg if high risk.",
+            "Take once daily on an empty stomach; if nauseated, take after a light meal.",
+            "Notify and link to **Ni-kshay Poshan Yojana, Rs 1,000 a month** for the whole treatment.",
+            "**Never add a single drug to a failing regimen**.",
+          ],
+        },
+        {
+          title: "Treatment - next steps",
+          points: [
+            "**Hr-TB**: 6 months of rifampicin, ethambutol, pyrazinamide and levofloxacin.",
+            "**BPaLM** for MDR or RR-TB: bedaquiline, pretomanid, linezolid and moxifloxacin for 26 weeks.",
+            "BPaLM needs age **14 or over**, no pregnancy and no CNS disease.",
+            "Fluoroquinolone resistant: drop moxifloxacin and give **BPaL**.",
+            "Others get a 9-11 month shorter oral regimen, or an 18-20 month longer regimen.",
+            "Refer any **rifampicin resistance** to the DR-TB Centre immediately.",
+          ],
+        },
+        {
+          title: "Special groups",
+          points: [
+            "**HIV**: start ART within 2 weeks of ATT; delay 4-8 weeks in TB meningitis.",
+            "On rifampicin, give **dolutegravir 50 mg twice daily**, and cotrimoxazole prophylaxis to all.",
+            "**Pregnancy**: H, R, Z and E are safe; **streptomycin is contraindicated**.",
+            "Use a **copper IUCD, DMPA or condoms**; rifampicin makes the pill fail.",
+            "**Renal failure**: give pyrazinamide and ethambutol three times a week, after dialysis.",
+            "Add **dexamethasone** in TB meningitis, and steroids in selected TB pericarditis.",
+          ],
+        },
+        {
+          title: "Complications and red flags",
+          points: [
+            "Stop H, R and Z if **ALT is over 3 times ULN with symptoms**, or over 5 times without.",
+            "Restart **rifampicin first, then isoniazid** once ALT is under 2 times ULN.",
+            "Blurred vision or red-green colour loss means **ethambutol optic neuritis**; stop it.",
+            "Massive haemoptysis: lie **bleeding side down** and refer for bronchial artery embolisation.",
+            "A **gap of 1 month or more** means lost to follow-up; repeat NAAT and DST.",
+            "Sputum at end of intensive phase and end of treatment; follow up 6-monthly for 2 years.",
+          ],
+        },
+      ],
+      tables: [
+        {
+          heading: "TB drugs at a glance",
+          columns: ["Drug", "Dose and route", "Duration", "Key side effects / cautions"],
+          rows: [
+            ["Isoniazid (H)", "Oral 5 mg/kg, max 300 mg; child 10 mg/kg", "6 months (12 in CNS, bone)", "Hepatitis, peripheral neuropathy; give pyridoxine"],
+            ["Rifampicin (R)", "Oral 10 mg/kg, max 600 mg; child 15 mg/kg", "6 months (12 in CNS, bone)", "Orange secretions, hepatitis; enzyme inducer, pill fails"],
+            ["Pyrazinamide (Z)", "Oral 25 mg/kg; child 35 mg/kg", "First 2 months only", "Most hepatotoxic; hyperuricaemia and arthralgia"],
+            ["Ethambutol (E)", "Oral 15 mg/kg; child 20 mg/kg", "6 months (kept in continuation)", "Optic neuritis, red-green loss; monthly vision check"],
+            ["Pyridoxine", "Oral 10 mg daily; 25-50 mg high risk", "Whole course", "100 mg daily to treat neuropathy"],
+            ["Bedaquiline", "400 mg daily 2 weeks, then 200 mg thrice weekly", "24 weeks within BPaLM", "QT prolongation; take with food"],
+            ["Pretomanid", "Oral 200 mg daily", "26 weeks", "Hepatotoxicity, neuropathy; never without B and L"],
+            ["Linezolid", "Oral 600 mg daily (300 mg for toxicity)", "26 weeks", "Anaemia, low platelets, optic and peripheral neuropathy"],
+            ["Moxifloxacin", "Oral 400 mg daily", "26 weeks", "QT prolongation, tendinopathy; separate from antacids"],
+          ],
+        },
+        {
+          heading: "Adult weight bands for daily FDC",
+          columns: ["Weight band", "HRZE tablets (intensive)", "HRE tablets (continuation)"],
+          rows: [
+            ["25-34 kg", "2", "2"],
+            ["35-49 kg", "3", "3"],
+            ["50-64 kg", "4", "4"],
+            ["65-75 kg", "5", "5"],
+            ["Over 75 kg", "6", "6"],
+          ],
+        },
+        {
+          heading: "Drug-resistant TB - type and regimen",
+          columns: ["Type", "Resistant to", "Regimen"],
+          rows: [
+            ["Hr-TB", "Isoniazid only", "6 months R, E, Z plus levofloxacin"],
+            ["RR or MDR-TB", "Rifampicin, with or without isoniazid", "BPaLM 6 months if eligible"],
+            ["Pre-XDR-TB", "MDR plus any fluoroquinolone", "BPaL 6 months (up to 9)"],
+            ["XDR-TB", "Pre-XDR plus bedaquiline or linezolid", "Individualised longer regimen, Nodal DR-TB Centre"],
+          ],
+        },
+      ],
+      remember: [
+        "2HRZE + 4HRE daily by weight band; CNS and bone TB get 2HRZE + 10HRE.",
+        "Adult bands: 2, 3, 4, 5, 6 tablets at 25, 35, 50, 65 and over 75 kg.",
+        "Upfront NAAT with universal DST for every presumptive TB patient.",
+        "BPaLM = Bedaquiline, Pretomanid, Linezolid, Moxifloxacin for 6 months.",
+        "Hr-TB = 6 months of R, E, Z plus levofloxacin.",
+        "ART within 2 weeks of ATT, except TB meningitis (wait 4-8 weeks).",
+        "Ni-kshay Poshan Yojana pays Rs 1,000 a month since November 2024.",
+        "Never add a single drug to a failing regimen.",
+      ],
+    },
     updated: [
       "NTEP adult FDC weight bands corrected to the current five bands: 25-34 kg 2, 35-49 kg 3, 50-64 kg 4, 65-75 kg 5, over 75 kg 6 tablets (old four-band chart removed)",
       "WHO Global TB Report 2025: India incidence 187/lakh in 2024 (21% fall from 237 in 2015), mortality 21/lakh, treatment coverage over 92%",
@@ -224,6 +751,176 @@ const revision: RevisionSet = {
 
   "respiratory-pneumonia-cap": {
     checked: "2026-10",
+    notes: {
+      sections: [
+        {
+          title: "Definition and key facts",
+          points: [
+            "**CAP** is acute lung infection acquired outside hospital, with **new shadowing on chest X-ray**.",
+            "**No new shadow, no pneumonia**: without the film it is acute bronchitis.",
+            "Hospital-acquired pneumonia starts **48 hours or more after admission**.",
+            "**Streptococcus pneumoniae** is the commonest bacterial cause at every age.",
+            "Pneumonia causes about **one in seven under-5 deaths** in India.",
+          ],
+        },
+        {
+          title: "Classification that matters",
+          points: [
+            "**CURB-65 0-1** is low severity and can be treated at home.",
+            "**CURB-65 2** is moderate severity and needs hospital-supervised treatment.",
+            "**CURB-65 3-5** is high severity; admit, and consider ICU at 4-5.",
+            "In the clinic use **CRB-65**: 0 home, 1-2 consider hospital, 3-4 urgent admission.",
+            "Child 2-59 months: **fast breathing or chest indrawing** is pneumonia.",
+            "Any **danger sign or SpO2 under 90%** in a child is severe pneumonia.",
+          ],
+        },
+        {
+          title: "How it happens (pathophysiology)",
+          points: [
+            "Organisms reach the alveoli mainly by **microaspiration** of colonised throat secretions.",
+            "Infection wins when the dose is large or defences fail, as in smoking or alcohol.",
+            "Macrophages release IL-1, TNF-alpha and IL-6, causing fever, rigors and raised CRP.",
+            "Neutrophils, fibrin and fluid fill the alveoli, producing **consolidation**.",
+            "Lobar pneumonia passes through congestion, **red then grey hepatisation**, and resolution.",
+            "Blood still flows through airless lung, so **hypoxaemia is the best severity marker**.",
+            "Atypicals lack a usable cell wall, so **beta-lactams do not work** against them.",
+          ],
+        },
+        {
+          title: "History in the OPD",
+          points: [
+            "Ask about the triad of **cough, fever and breathlessness**, and its tempo.",
+            "Rusty sputum suggests pneumococcus; foul-smelling sputum suggests anaerobes or abscess.",
+            "In the elderly, **new confusion or a fall** may be the only sign.",
+            "Ask about recent influenza, which raises the chance of **S. aureus** pneumonia.",
+            "Ask about antibiotics in the last 3 months and admission in the last 90 days.",
+            "**Cough over 2 weeks**, weight loss or haemoptysis means TB until proved otherwise.",
+            "Ask about paddy fields, floods and eschars: melioidosis, leptospirosis and scrub typhus.",
+          ],
+        },
+        {
+          title: "Examination",
+          points: [
+            "Record **RR for a full minute, pulse, BP, temperature and SpO2** on room air.",
+            "Test mental state: an **AMT score of 8 or less** counts as confusion.",
+            "Consolidation gives **dull percussion, bronchial breathing** and increased vocal resonance.",
+            "**Stony dullness** with absent breath sounds suggests effusion, not consolidation.",
+            "Look for an **eschar** in the axilla or groin (scrub typhus).",
+            "**Normal chest signs do not exclude pneumonia**, especially in the elderly.",
+          ],
+        },
+        {
+          title: "Investigations",
+          points: [
+            "**Chest X-ray (PA)** for every adult, but never delay the first antibiotic for it.",
+            "SpO2 **under 92%** (88% in COPD, 90% in a child) means admission and oxygen.",
+            "Check **urea**: over 7 mmol/L (about 42 mg/dL urea) scores a CURB-65 point.",
+            "**CRP in the OPD**: under 20 no antibiotic, 20-100 consider delayed, over 100 treat.",
+            "Send **sputum NAAT for TB** if cough lasts 2 weeks or more.",
+            "In hospital: **blood cultures before antibiotics**, urinary antigens and an HIV test.",
+          ],
+        },
+        {
+          title: "Treatment - first line",
+          points: [
+            "Give the first dose **within 4 hours**, and **within 1 hour if septic**.",
+            "Low severity: **amoxicillin 500 mg-1 g three times daily for 5 days**.",
+            "Penicillin allergy: **doxycycline 200 mg on day 1, then 100 mg** to complete 5 days.",
+            "Comorbid outpatient: **amoxicillin-clavulanate 625 mg three times daily plus azithromycin**.",
+            "Child with pneumonia: **amoxicillin 40-45 mg/kg/dose twice daily for 5 days**.",
+            "Give paracetamol and fluids; **no cough suppressants or mucolytics**.",
+            "**Review at 48-72 hours**, and return sooner if breathlessness or confusion appears.",
+          ],
+        },
+        {
+          title: "Treatment - next steps",
+          points: [
+            "CURB-65 2: **amoxicillin 1 g three times daily plus clarithromycin** or azithromycin.",
+            "High severity: **ceftriaxone 2 g IV daily plus azithromycin 500 mg IV**.",
+            "Pseudomonas risk: piperacillin-tazobactam 4.5 g IV 6-hourly replaces ceftriaxone.",
+            "Add **oseltamivir 75 mg twice daily for 5 days** if influenza is positive.",
+            "Severe CAP only: **hydrocortisone 200 mg/day** for 4-7 days; not in influenza.",
+            "Switch IV to oral once stable and improving, usually by day 2-3.",
+          ],
+        },
+        {
+          title: "Complications and red flags",
+          points: [
+            "**Never use macrolide monotherapy in India**; pneumococcal resistance exceeds 30%.",
+            "Fluoroquinolones are reserve drugs because they **mask TB**; send NAAT first.",
+            "Persistent fever with stony dullness suggests **empyema**; tap under ultrasound.",
+            "Pleural fluid **pH under 7.2** or frank pus means insert a chest drain.",
+            "No improvement by 72 hours: think TB, empyema, abscess, obstruction or wrong diagnosis.",
+            "Necrotising pneumonia after influenza suggests **S. aureus**, including MRSA.",
+          ],
+        },
+        {
+          title: "Referral and follow-up",
+          points: [
+            "Admit for CRB-65 of 3 or more, **SpO2 under 92%**, sepsis or no home support.",
+            "**Five days is enough** once afebrile for 48 hours with one instability sign or fewer.",
+            "**Repeat the X-ray at 6 weeks** in smokers and over-50s with persisting signs.",
+            "Recovery: fever 1 week, sputum 4 weeks, cough 6 weeks, tiredness 3-6 months.",
+            "Give **pneumococcal and annual influenza vaccines** after recovery.",
+          ],
+        },
+      ],
+      tables: [
+        {
+          heading: "CAP drugs at a glance",
+          columns: ["Drug", "Dose and route", "Duration", "Key side effects / cautions"],
+          rows: [
+            ["Amoxicillin", "Oral 500 mg-1 g 8-hourly; child 40-45 mg/kg/dose BD", "5 days", "Diarrhoea, rash; ask about penicillin allergy"],
+            ["Amoxicillin-clavulanate", "Oral 625 mg 8-hourly, or 1.2 g IV 8-hourly", "5-7 days", "C. difficile, cholestatic hepatitis; take with meals"],
+            ["Doxycycline", "Oral 200 mg day 1, then 100 mg daily or BD", "5 days total", "Oesophageal ulcer; avoid in pregnancy and under 8"],
+            ["Azithromycin", "Oral or IV 500 mg once daily", "3 days", "QT prolongation; never used alone in India"],
+            ["Clarithromycin", "Oral or IV 500 mg twice daily", "5 days", "CYP3A4 inhibitor; pause statins"],
+            ["Ceftriaxone", "IV or IM 1-2 g once daily; child 50-100 mg/kg", "Until oral switch, day 2-3", "Biliary sludge; under 2% penicillin cross-allergy"],
+            ["Levofloxacin (reserve)", "Oral or IV 750 mg once daily", "5 days", "Masks TB; tendon rupture, QT prolongation"],
+            ["Oseltamivir", "Oral 75 mg twice daily (30 mg if CrCl 30-60)", "5 days", "Nausea; give if influenza positive"],
+            ["Hydrocortisone", "IV 200 mg a day", "4-7 days, then taper", "Severe CAP only; hyperglycaemia; not in influenza"],
+          ],
+        },
+        {
+          heading: "CURB-65 - one point each",
+          columns: ["Letter", "Criterion"],
+          rows: [
+            ["C - Confusion", "New disorientation, or AMT 8 or less"],
+            ["U - Urea", "Over 7 mmol/L (about 42 mg/dL urea)"],
+            ["R - Respiratory rate", "30 per minute or more"],
+            ["B - Blood pressure", "Systolic under 90 or diastolic 60 or less"],
+            ["65 - Age", "65 years or more"],
+          ],
+        },
+        {
+          heading: "Childhood pneumonia, 2-59 months (SAANS)",
+          columns: ["Class", "Signs", "Action"],
+          rows: [
+            ["No pneumonia", "No fast breathing, no indrawing, no danger sign", "Home care, no antibiotic"],
+            ["Pneumonia", "Fast breathing and/or chest indrawing", "Oral amoxicillin 5 days, review day 3"],
+            ["Severe pneumonia", "Danger sign, stridor when calm, or SpO2 under 90%", "Oxygen, first IM dose, urgent referral"],
+          ],
+        },
+        {
+          heading: "Fast breathing cut-offs in children",
+          columns: ["Age", "Fast breathing"],
+          rows: [
+            ["Under 2 months", "60 or more per minute"],
+            ["2-11 months", "50 or more per minute"],
+            ["1-5 years", "40 or more per minute"],
+          ],
+        },
+      ],
+      remember: [
+        "CURB-65: Confusion, Urea over 7, RR 30 or more, BP low, age 65 or more.",
+        "CURB-65 0-1 home, 2 hospital-supervised, 3-5 admit, 4-5 think ICU.",
+        "SpO2 beats the score: under 92% means admission even at CURB-65 of 0.",
+        "Amoxicillin first; add a macrolide or doxycycline, never a macrolide alone.",
+        "Five days is enough for most CAP.",
+        "Fluoroquinolones mask TB - send sputum NAAT first.",
+        "Childhood pneumonia is counted, not heard: count RR for a full minute.",
+      ],
+    },
     updated: [
       "ATS 2025 CAP update: systemic corticosteroids suggested in severe CAP (not influenza) and strongly recommended against in non-severe CAP",
       "ATS 2025: under 5 days of antibiotics (e.g. 3 days) reasonable in non-severe CAP once clinically stable; lung ultrasound accepted as an alternative to chest X-ray",
@@ -294,6 +991,164 @@ const revision: RevisionSet = {
 
   "respiratory-acute-cough-influenza-covid": {
     checked: "2026-10",
+    notes: {
+      sections: [
+        {
+          title: "Definition and key facts",
+          points: [
+            "**Acute cough** lasts under 3 weeks; subacute 3-8 weeks; chronic over 8 weeks.",
+            "In India, **cough of 2 weeks or more is presumptive TB** and needs sputum NAAT.",
+            "Over 90% of acute cough in adults is viral and **needs no antibiotic**.",
+            "**Acute bronchitis** is cough for 1-3 weeks with no pneumonia on examination or X-ray.",
+            "**ILI** is measured fever of 38 C or more with cough, onset within 10 days.",
+            "**SARI** is the same illness needing hospital admission; both are reported to IDSP.",
+          ],
+        },
+        {
+          title: "Classification that matters",
+          points: [
+            "Influenza **Category A**: mild illness; no test and no oseltamivir.",
+            "**Category B**: high fever and severe sore throat, or any high-risk person; oseltamivir without testing.",
+            "**Category C**: breathlessness, chest pain, drowsiness or low BP; test, admit, treat at once.",
+            "COVID **mild**: no breathlessness and **SpO2 94% or more** on air.",
+            "COVID **moderate**: RR 24-30 or SpO2 90-93%; **severe**: RR over 30 or SpO2 under 90%.",
+          ],
+        },
+        {
+          title: "How it happens (pathophysiology)",
+          points: [
+            "Viruses strip ciliated epithelium and sensitise cough nerve endings, so cough outlasts the fever.",
+            "Green sputum colour comes from **neutrophil myeloperoxidase**, not from bacteria.",
+            "Influenza **neuraminidase** releases new virions; **oseltamivir blocks it** and stops spread.",
+            "**Antigenic drift** causes yearly epidemics; **antigenic shift** causes pandemics.",
+            "SARS-CoV-2 enters cells through **ACE2**, after spike cleavage by TMPRSS2.",
+            "**Silent hypoxaemia**: COVID lowers SpO2 while CO2 and lung stiffness stay normal.",
+            "Pertussis toxin raises cAMP, causing **marked lymphocytosis**; ciliary damage prolongs cough.",
+          ],
+        },
+        {
+          title: "History in the OPD",
+          points: [
+            "Ask the **duration in days**; 2 weeks or more triggers a TB sputum NAAT.",
+            "**Abrupt fever, myalgia and prostration** suggest influenza; loss of smell suggests COVID-19.",
+            "Paroxysms ending in a **whoop or vomiting**, well between bouts, suggest pertussis.",
+            "Breathlessness, rigors or pleuritic pain point to pneumonia or pulmonary embolism.",
+            "Identify **high-risk groups**: pregnancy, under 5, 65 and over, chronic disease, immunosuppression.",
+            "Ask about ACE inhibitors, cough syrups given to children, and smoke exposure.",
+          ],
+        },
+        {
+          title: "Examination",
+          points: [
+            "Record **temperature, pulse, RR, BP and SpO2** in every patient with acute cough.",
+            "**Pulse over 100, RR over 24, fever over 38 C**, focal signs or SpO2 under 94% suggest pneumonia.",
+            "With none of these discriminators, pneumonia is unlikely and no X-ray is needed.",
+            "In COVID, a **fall of 3% or more on the 6-minute walk** means hidden hypoxaemia.",
+            "In a child look for stridor (croup), unilateral wheeze (foreign body) and petechiae (pertussis).",
+          ],
+        },
+        {
+          title: "Investigations",
+          points: [
+            "**Uncomplicated acute cough needs no test**; diagnosis is clinical.",
+            "Chest X-ray only with a discriminator, cough over 3 weeks, or a smoker over 40.",
+            "**CRP**: under 20 no antibiotic, 20-100 delayed prescription, over 100 antibiotic.",
+            "Influenza RT-PCR only in **Category C**; a negative rapid test never withholds oseltamivir.",
+            "COVID rapid antigen misses cases; confirm a negative in a suspected case with **RT-PCR**.",
+            "Pertussis: **nasopharyngeal PCR** within the first 3 weeks of cough.",
+          ],
+        },
+        {
+          title: "Treatment - first line",
+          points: [
+            "Tell patients bronchitis cough lasts **about 18 days**; antibiotics shorten it by half a day.",
+            "Advise rest, warm fluids, **paracetamol**, and stopping smoking.",
+            "**Honey 2.5-5 mL at bedtime** for night cough, but **never under 1 year**.",
+            "**No cough syrups under 2 years**, and generally none under 5 years.",
+            "**Never give aspirin to children** with influenza; it causes Reye syndrome.",
+            "Salbutamol only if there is **wheeze or known asthma or COPD**.",
+          ],
+        },
+        {
+          title: "Treatment - next steps",
+          points: [
+            "**Oseltamivir 75 mg twice daily for 5 days** for Category B and C, without waiting for a test.",
+            "Oseltamivir is best within 48 hours, but give it **at any stage** if severe or high-risk.",
+            "Prophylaxis: the same dose **once daily for 10 days** in high-risk unvaccinated contacts.",
+            "Mild COVID: **no steroid, no antibiotic**, no ivermectin or vitamin cocktails.",
+            "**Dexamethasone 6 mg daily for 5-10 days only if the patient needs oxygen**.",
+            "High-risk mild COVID: **nirmatrelvir-ritonavir** within 5 days of onset; check CYP3A4 interactions.",
+            "Pertussis: **azithromycin 5 days** for the patient and the whole household.",
+          ],
+        },
+        {
+          title: "Complications and red flags",
+          points: [
+            "Fever returning after improvement suggests **secondary bacterial pneumonia** after influenza.",
+            "Necrotising post-influenza pneumonia suggests **S. aureus**; add vancomycin or linezolid.",
+            "**COVID with SpO2 under 94%** needs admission, oxygen to 92-96% and awake proning.",
+            "An **infant with pertussis** and apnoea or cyanosis needs admission.",
+            "Diabetic after COVID with nasal black eschar or proptosis: suspect **mucormycosis**, refer today.",
+          ],
+        },
+        {
+          title: "Prevention and programmes",
+          points: [
+            "**Annual influenza vaccine** for high-risk groups, health workers and **pregnant women in any trimester**.",
+            "India uses the **Southern Hemisphere vaccine in April-May**, before the monsoon peak.",
+            "Children 6 months-8 years vaccinated for the first time need **two doses 4 weeks apart**.",
+            "Egg allergy is not a contraindication to influenza vaccine.",
+            "**Tdap in every pregnancy at 27-36 weeks** protects the newborn from pertussis.",
+            "Report ILI, SARI and **clusters the same day** to IDSP through the IHIP portal.",
+          ],
+        },
+      ],
+      tables: [
+        {
+          heading: "Acute cough, influenza and COVID drugs",
+          columns: ["Drug", "Dose and route", "Duration", "Key side effects / cautions"],
+          rows: [
+            ["Paracetamol", "Oral 500 mg-1 g 6-hourly (max 4 g/day); child 15 mg/kg", "While symptomatic", "Liver toxicity in overdose; never aspirin in children"],
+            ["Honey", "2.5-5 mL at bedtime", "Few days", "Never under 1 year (botulism)"],
+            ["Oseltamivir", "Oral 75 mg BD; child 30-75 mg by weight; infant 3 mg/kg", "5 days (prophylaxis OD 10 days)", "Nausea; reduce dose if CrCl under 60"],
+            ["Amoxicillin (only if indicated)", "Oral 500 mg three times daily", "5 days", "Only for pneumonia or CRP over 100"],
+            ["Azithromycin (pertussis)", "Adult 500 mg then 250 mg; infant 10 mg/kg daily", "5 days", "QT prolongation; preferred over erythromycin in infants"],
+            ["Nirmatrelvir-ritonavir", "Oral 300/100 mg BD (150/100 if eGFR 30-60)", "5 days, start within 5 days", "Hold statins, colchicine, rivaroxaban"],
+            ["Remdesivir", "IV 200 mg day 1, then 100 mg daily", "5 days total (3 in outpatients)", "Transaminase rise, bradycardia"],
+            ["Dexamethasone", "Oral or IV 6 mg once daily", "5-10 days, only on oxygen", "Hyperglycaemia, mucormycosis risk"],
+            ["Enoxaparin", "SC 40 mg once daily", "During admission", "Bleeding; adjust if CrCl under 30"],
+          ],
+        },
+        {
+          heading: "MoHFW influenza categories",
+          columns: ["Category", "Features", "Test", "Oseltamivir and setting"],
+          rows: [
+            ["A", "Mild fever, cough, sore throat, body ache", "Not needed", "No; home care, review 24-48 h"],
+            ["B (i)", "A plus high fever, severe sore throat", "Not needed", "Yes; home isolation"],
+            ["B (ii)", "A in a high-risk person", "Not needed", "Yes, without waiting; close follow-up"],
+            ["C", "Breathlessness, chest pain, drowsiness, low BP, cyanosis", "RT-PCR swab", "Yes, immediately; admit"],
+          ],
+        },
+        {
+          heading: "COVID-19 severity (AIIMS-ICMR)",
+          columns: ["Severity", "Criteria", "Setting", "Key treatment"],
+          rows: [
+            ["Mild", "No breathlessness, SpO2 94% or more", "Home with oximeter", "Symptomatic; no steroid, no antibiotic"],
+            ["Moderate", "RR 24-30 or SpO2 90-93%", "Ward with oxygen", "Oxygen, proning, dexamethasone, enoxaparin"],
+            ["Severe", "RR over 30 or SpO2 under 90%", "HDU or ICU", "HFNO or NIV, steroid, tocilizumab if progressing"],
+          ],
+        },
+      ],
+      remember: [
+        "Acute cough is under 3 weeks, but 2 weeks makes it presumptive TB in India.",
+        "Purulent sputum is neutrophils, not bacteria.",
+        "Category B(ii) - high-risk person with ILI gets oseltamivir without a test.",
+        "Oseltamivir 75 mg BD for 5 days; prophylaxis OD for 10 days.",
+        "In COVID the steroid is only for the patient on oxygen.",
+        "Pertussis antibiotics stop transmission, not the cough - treat the household.",
+        "No cough syrups under 2 years; honey only after 1 year.",
+      ],
+    },
     updated: [
       "WHO 2024 influenza clinical guideline added: baloxavir (single dose) suggested for non-severe influenza at high risk, strong recommendation against oseltamivir in non-severe low-risk influenza, oseltamivir for severe influenza, no adjunct steroids/macrolides/NSAIDs",
     ],
@@ -360,6 +1215,160 @@ const revision: RevisionSet = {
 
   "respiratory-tb-infection-contacts-tpt": {
     checked: "2026-10",
+    notes: {
+      sections: [
+        {
+          title: "Definition and key facts",
+          points: [
+            "**TB infection** is a persistent immune response to M. tuberculosis without active disease.",
+            "The person is **asymptomatic and not infectious**; WHO no longer says 'latent TB'.",
+            "About **30-40% of Indian adults** carry TB infection, the reservoir of future cases.",
+            "TPT cuts progression to disease by **60-90%** in those who complete it.",
+            "A **household contact** shared the home for a night or more in the 3 months before treatment.",
+            "For a child with TB, **reverse contact tracing** finds the adult source.",
+          ],
+        },
+        {
+          title: "Classification that matters",
+          points: [
+            "**All PLHIV** are eligible for TPT once active TB is excluded.",
+            "**Household contacts under 5 years** get TPT with no test of infection.",
+            "Household contacts **5 years and over** get TPT, after a test of infection where available.",
+            "Other risk groups (anti-TNF, dialysis, transplant, silicosis) need a positive test first.",
+            "The **index case resistance pattern** decides the regimen for every contact.",
+          ],
+        },
+        {
+          title: "How it happens (pathophysiology)",
+          points: [
+            "Alveolar macrophages ingest inhaled bacilli that innate immunity fails to clear.",
+            "Th1 cells release **interferon-gamma**, and a granuloma holds the bacilli dormant.",
+            "Lifetime risk of disease is **5-10%, half within the first 2 years**.",
+            "Infants progress most: **40-50% under 1 year**, often to miliary or meningeal TB.",
+            "**HIV** raises the risk to about **10% per year**.",
+            "Infection holds few bacilli, so one or two drugs suffice without breeding resistance.",
+          ],
+        },
+        {
+          title: "History in the OPD",
+          points: [
+            "Find the **index case's drug resistance pattern** and treatment start date.",
+            "Ask the **four-symptom screen**: cough of any duration, fever, weight loss, night sweats.",
+            "**Any positive symptom** makes the contact presumptive TB, not a TPT candidate.",
+            "In children ask about poor weight gain, lethargy and reduced playfulness.",
+            "Ask about HIV, liver disease, alcohol, ART regimen and pregnancy.",
+          ],
+        },
+        {
+          title: "Examination",
+          points: [
+            "Record weight and plot children on a **growth chart**; faltering growth is a TB symptom.",
+            "Fever or tachypnoea in a contact means evaluation for disease, not TPT.",
+            "Examine all **lymph node groups**, the chest and the abdomen.",
+            "Look for jaundice before starting hepatotoxic drugs.",
+            "**Any abnormal finding** moves the contact to the active TB pathway.",
+          ],
+        },
+        {
+          title: "Investigations",
+          points: [
+            "**Exclude active TB first**: four-symptom screen plus chest X-ray.",
+            "Any symptom or X-ray abnormality means **sputum NAAT** before any TPT.",
+            "**Mantoux**: 0.1 mL of 2 TU PPD RT23 intradermally, read at **48-72 hours**.",
+            "Measure the **transverse induration** in millimetres, not the redness.",
+            "**IGRA and Cy-Tb** use ESAT-6 and CFP-10, so BCG does not cause false positives.",
+            "**No test of infection is needed** for under-5 contacts or PLHIV.",
+            "Baseline LFT only for those at risk: liver disease, alcohol, HIV, pregnancy, elderly.",
+          ],
+        },
+        {
+          title: "Treatment - first line",
+          points: [
+            "**3HP** for most adults and children 2 years and over: 12 weekly doses.",
+            "Adult 3HP: **isoniazid 900 mg plus rifapentine 900 mg once weekly**, with food.",
+            "**6H** where rifapentine cannot be used: under 2 years, pregnancy, PI or nevirapine ART.",
+            "6H dose: **5 mg/kg in adults, 10 mg/kg in children**, maximum 300 mg daily.",
+            "Give **pyridoxine 10-25 mg daily** with isoniazid in at-risk groups.",
+            "Supervise weekly doses on a **fixed weekday**, and line-list contacts on Ni-kshay.",
+          ],
+        },
+        {
+          title: "Treatment - next steps",
+          points: [
+            "**1HP**: isoniazid 300 mg plus rifapentine 600 mg daily for 28 days, age 13 and over.",
+            "**3HR** daily for 3 months suits young children who cannot take rifapentine.",
+            "**4R**: rifampicin daily for 4 months for isoniazid intolerance or Hr-TB index.",
+            "**MDR-TB contacts: levofloxacin daily for 6 months**, nationwide since August 2025.",
+            "Contacts of fluoroquinolone-resistant TB get 2-year clinical follow-up instead.",
+          ],
+        },
+        {
+          title: "Special groups",
+          points: [
+            "**Pregnancy**: use 6H with pyridoxine; avoid rifapentine.",
+            "**Neonate of a mother with TB**: 6H, then **BCG at the end of TPT**.",
+            "3HP works with **efavirenz and dolutegravir**, but not protease inhibitors or nevirapine.",
+            "Rifamycins make the pill fail; advise **condoms, copper IUCD or DMPA**.",
+            "BCG-vaccinated child contacts still need TPT.",
+          ],
+        },
+        {
+          title: "Referral and follow-up",
+          points: [
+            "Review monthly on 6H, and at weeks 2, 4, 8 and 12 on 3HP.",
+            "Stop TPT if **ALT is over 3 times ULN with symptoms**, or over 5 times without.",
+            "A **flu-like reaction** hours after a weekly rifapentine dose means stop 3HP and review.",
+            "**Completion = 80% of doses within 133% of the planned time**.",
+            "Follow MDR-TB contacts with **screening every 6 months for 2 years**.",
+            "Any symptom during TPT means NAAT; if TB is confirmed, start full treatment.",
+          ],
+        },
+      ],
+      tables: [
+        {
+          heading: "TPT regimens at a glance",
+          columns: ["Drug", "Dose and route", "Duration", "Key side effects / cautions"],
+          rows: [
+            ["6H - isoniazid", "Oral 5 mg/kg adult, 10 mg/kg child, max 300 mg", "Daily for 6 months", "Hepatitis, neuropathy; add pyridoxine"],
+            ["3HP - isoniazid plus rifapentine", "Adult over 30 kg: H 900 + P 900 mg weekly", "12 weekly doses", "Flu-like reaction; not in pregnancy or under 2"],
+            ["3HR - isoniazid plus rifampicin", "Child H 10 + R 15 mg/kg; adult H 5 + R 10 mg/kg", "Daily for 3 months", "Hepatitis, orange secretions"],
+            ["1HP - isoniazid plus rifapentine", "Oral H 300 + P 600 mg daily", "28 days, age 13 and over", "As 3HP; not in pregnancy"],
+            ["4R - rifampicin", "Oral 10 mg/kg, max 600 mg", "Daily for 4 months", "Hepatitis; check enzyme-inducer interactions"],
+            ["6Lfx - levofloxacin", "Adult 750 mg-1 g; child 15-20 mg/kg", "Daily for 6 months", "Tendinopathy, QT prolongation; MDR contacts only"],
+            ["Pyridoxine", "Oral 10-25 mg daily", "Throughout isoniazid TPT", "None at these doses"],
+          ],
+        },
+        {
+          heading: "Mantoux (TST) cut-offs",
+          columns: ["Induration at 48-72 hours", "Positive in", "Note"],
+          rows: [
+            ["5 mm or more", "PLHIV, severe malnutrition, immunosuppressed", "Response is blunted"],
+            ["10 mm or more", "Everyone else, including contacts and health workers", "BCG and NTM can give false positives"],
+            ["Below cut-off", "Window period, anergy, infant under 6 months", "Does not exclude infection"],
+          ],
+        },
+        {
+          heading: "Tests of infection compared",
+          columns: ["Feature", "Mantoux (TST)", "IGRA", "Cy-Tb"],
+          rows: [
+            ["Antigen", "PPD (crude mixture)", "ESAT-6 and CFP-10", "ESAT-6 and CFP-10"],
+            ["Affected by BCG", "Yes", "No", "No"],
+            ["Visits needed", "Two", "One", "Two"],
+            ["Positive at", "5 or 10 mm", "0.35 IU/mL or more", "5 mm or more"],
+            ["Diagnoses active TB", "No", "No", "No"],
+          ],
+        },
+      ],
+      remember: [
+        "Exclude active TB before TPT - symptoms plus chest X-ray, NAAT if either is abnormal.",
+        "No test of infection is needed for under-5 contacts or PLHIV.",
+        "3HP = 900 mg isoniazid + 900 mg rifapentine weekly for 12 weeks.",
+        "6H is the fallback for under-2s, pregnancy and PI or nevirapine ART.",
+        "MDR-TB contacts get 6 months of levofloxacin, plus 6-monthly screening for 2 years.",
+        "Completion = 80% of doses within 133% of planned time; add missed doses at the end.",
+        "Mantoux: transverse induration at 48-72 hours; 5 mm in PLHIV, 10 mm in others.",
+      ],
+    },
     updated: [
       "Central TB Division DO letter (6 August 2025): nationwide scale-up of 3HP for contacts aged 2-14 and DS-TB household contacts, and of 6Lfx or 4R (by index resistance pattern) for eligible MDR/RR-TB contacts after the 12-state pilot",
       "1HP (isoniazid 300 mg + rifapentine 600 mg daily x 28 days, 13 years and over) adopted by NTEP as an addendum to the PMTPT guidelines, December 2024; NACP uses 1HP for PLHIV since 2024",
@@ -417,6 +1426,165 @@ const revision: RevisionSet = {
 
   "respiratory-pleural-effusion": {
     checked: "2026-10",
+    notes: {
+      sections: [
+        {
+          title: "Definition and key facts",
+          points: [
+            "A **pleural effusion** is any abnormal collection of fluid in the pleural space.",
+            "The normal space holds only about **10-20 mL** of lubricating fluid.",
+            "In India, **tuberculosis** is the commonest cause of an exudate.",
+            "**Heart failure** is the commonest cause of an effusion overall.",
+            "A massive effusion filling the hemithorax is **malignant until proved otherwise**.",
+          ],
+        },
+        {
+          title: "Classification that matters",
+          points: [
+            "**Light's criteria** sort fluid into transudate or exudate; any one criterion makes an exudate.",
+            "**Transudates**: heart failure, cirrhosis, nephrotic syndrome and hypoalbuminaemia.",
+            "**Exudates**: TB, parapneumonic effusion, malignancy, pulmonary embolism and connective tissue disease.",
+            "**Uncomplicated parapneumonic**: free-flowing, pH 7.2 or more; antibiotics alone.",
+            "**Complicated parapneumonic**: pH under 7.2, glucose under 60 mg/dL, or loculation; drain it.",
+            "**Empyema** is frank pus in the pleural space, and always needs a drain.",
+          ],
+        },
+        {
+          title: "How it happens (pathophysiology)",
+          points: [
+            "Fluid filters from parietal pleural capillaries and drains through **parietal lymphatic stomata**.",
+            "Effusion forms when filtration rises, oncotic pressure falls, or lymphatic drainage is blocked.",
+            "Hepatic hydrothorax is **right-sided in about 85%**, as ascites crosses diaphragmatic defects.",
+            "**TB effusion** is a Th1 hypersensitivity reaction, so the fluid is lymphocytic and paucibacillary.",
+            "Activated T cells release **ADA**, which is why ADA over 40 U/L suggests TB.",
+            "In infection, bacteria consume glucose and make acid, so **low pH and glucose** mean active infection.",
+            "Fibrin septa then wall off pockets that antibiotics alone cannot sterilise.",
+          ],
+        },
+        {
+          title: "History in the OPD",
+          points: [
+            "Pleuritic pain that **eases as breathlessness worsens** means the effusion is enlarging.",
+            "Evening fever, night sweats and weight loss over weeks suggest **TB pleurisy** in a young adult.",
+            "Fever persisting despite antibiotics after pneumonia suggests **empyema**.",
+            "Smoker over 50 with weight loss, haemoptysis or hoarseness suggests **malignancy**.",
+            "Ask about orthopnoea, ascites and frothy urine for the transudate causes.",
+            "Before a tap, ask about **anticoagulants and bleeding tendency**.",
+          ],
+        },
+        {
+          title: "Examination",
+          points: [
+            "**Stony dull percussion** rising into the axilla is the hallmark sign.",
+            "**Reduced breath sounds, fremitus and vocal resonance** over the fluid.",
+            "Bronchial breathing and aegophony appear just above the fluid level.",
+            "A large effusion pushes the **trachea away** from the affected side.",
+            "Massive effusion with a central trachea suggests **underlying lung collapse** from tumour.",
+            "Signs need about 300-500 mL of fluid, so imaging decides small effusions.",
+          ],
+        },
+        {
+          title: "Investigations",
+          points: [
+            "**Chest X-ray PA** blunts the costophrenic angle at about **200 mL**.",
+            "**Thoracic ultrasound** detects 5-20 mL, shows septations and **must guide every tap**.",
+            "Tap every unilateral or unexplained effusion, but **not bilateral heart-failure effusions**.",
+            "Send **protein and LDH with paired serum**, glucose, pH, cell count, Gram stain, culture and cytology.",
+            "In India, send **ADA, Xpert Ultra and mycobacterial culture** on every lymphocytic exudate.",
+            "Contrast CT for an unexplained exudate; then **pleural biopsy**, not repeated taps.",
+          ],
+        },
+        {
+          title: "Diagnosis",
+          points: [
+            "**ADA over 40 U/L with lymphocytes over 50%** in a young adult means TB.",
+            "Mesothelial cells **under 5%** support a TB effusion.",
+            "Diuretic-treated heart failure can look like an exudate; an **albumin gradient over 1.2 g/dL** corrects it.",
+            "**Pleural NT-proBNP over 1500 pg/mL** also points to heart failure.",
+            "Bloody exudate in a smoker over 50 needs cytology and CT before empirical ATT.",
+          ],
+        },
+        {
+          title: "Treatment - first line",
+          points: [
+            "**Treat the cause**: diuretics for heart failure, ATT for TB, drainage for infection.",
+            "Heart failure effusion: **furosemide 40 mg** once daily in the morning.",
+            "TB pleurisy: **2HRZE + 4HRE for 6 months** by weight band; notify on Ni-kshay.",
+            "**Steroids are not routinely recommended** in TB pleurisy.",
+            "Empyema: **amoxicillin-clavulanate 1.2 g IV 8-hourly**, or ceftriaxone plus metronidazole.",
+            "**Avoid aminoglycosides** in empyema; they penetrate poorly and fail in acidic pus.",
+            "Give paracetamol and NSAIDs for pleuritic pain, so the patient can breathe deeply.",
+          ],
+        },
+        {
+          title: "Treatment - next steps",
+          points: [
+            "Use an **ultrasound-guided 12-14 French drain** for empyema and complicated effusion.",
+            "Insert drains in the **safe triangle**, above the upper border of the rib below.",
+            "Remove **no more than 1-1.5 L** at one therapeutic tap.",
+            "Not responding at 24-72 hours: **intrapleural tPA 10 mg plus DNase 5 mg** twice daily for 3 days.",
+            "Recurrent malignant effusion: **4 g talc pleurodesis**, or an indwelling pleural catheter.",
+            "Persistent sepsis or trapped lung: refer for **VATS decortication**.",
+            "**Never put a chest drain into a hepatic hydrothorax**.",
+          ],
+        },
+        {
+          title: "Referral and follow-up",
+          points: [
+            "Stop a tap at once for chest tightness or cough: **re-expansion pulmonary oedema**.",
+            "TB fluid clears over 6-12 weeks; residual thickening is scar, not treatment failure.",
+            "An effusion **enlarging after 2 months of adherent ATT** needs re-tap, NAAT and biopsy.",
+            "Refer the same day for empyema, massive effusion, haemothorax or post-procedure breathlessness.",
+            "Refer every **unexplained exudate** after the first tap to a chest physician.",
+          ],
+        },
+      ],
+      tables: [
+        {
+          heading: "Pleural effusion drugs at a glance",
+          columns: ["Drug", "Dose and route", "Duration", "Key side effects / cautions"],
+          rows: [
+            ["Furosemide", "Oral 40 mg once daily (20-80 mg); IV 40-80 mg", "Until fluid clears", "Hypokalaemia, AKI; check K at 1-2 weeks"],
+            ["Spironolactone (cirrhosis)", "Oral 100 mg with furosemide 40 mg, up to 400/160", "Long-term", "Hyperkalaemia, gynaecomastia"],
+            ["HRZE then HRE FDC", "Oral, 2-6 tablets by weight band, once daily", "2 months plus 4 months", "Hepatitis, neuropathy, optic neuritis; pyridoxine 10 mg"],
+            ["Amoxicillin-clavulanate", "1.2 g IV 8-hourly, then 625 mg oral TDS", "Usually 3-6 weeks total", "C. difficile, cholestatic hepatitis"],
+            ["Ceftriaxone plus metronidazole", "2 g IV daily plus 500 mg IV 8-hourly", "Usually 3-6 weeks total", "No alcohol with metronidazole"],
+            ["Clindamycin (penicillin allergy)", "600 mg IV 6-8-hourly, then 300-450 mg oral", "Usually 3-6 weeks total", "C. difficile colitis"],
+            ["Alteplase plus dornase alfa", "10 mg plus 5 mg intrapleural, twice daily", "3 days (6 doses)", "Pleural bleeding; both drugs together, not alone"],
+            ["Sterile graded talc", "4 g slurry via drain, or poudrage", "Once", "Pain, fever; fails if lung trapped"],
+          ],
+        },
+        {
+          heading: "Light's criteria - exudate if any one",
+          columns: ["Test", "Exudate if"],
+          rows: [
+            ["Fluid/serum protein ratio", "Over 0.5"],
+            ["Fluid/serum LDH ratio", "Over 0.6"],
+            ["Fluid LDH", "Over two-thirds of upper normal serum LDH"],
+            ["Correction: serum minus fluid albumin", "Over 1.2 g/dL means transudate after diuretics"],
+          ],
+        },
+        {
+          heading: "Fluid pattern by cause",
+          columns: ["Feature", "Heart failure", "Tuberculosis", "Empyema", "Malignancy"],
+          rows: [
+            ["Look", "Clear, bilateral", "Straw-coloured", "Turbid or pus", "Bloody in half"],
+            ["Cells", "Few mononuclear", "Lymphocytes over 50%", "Neutrophils", "Lymphocytes, malignant cells"],
+            ["Glucose and pH", "Normal", "Normal or mildly low", "Glucose under 60, pH under 7.2", "Normal or low"],
+            ["Deciding test", "NT-proBNP, albumin gradient", "ADA over 40 U/L", "pH, Gram stain, culture", "Cytology, CT, biopsy"],
+          ],
+        },
+      ],
+      remember: [
+        "Light's: protein ratio over 0.5, LDH ratio over 0.6, LDH over two-thirds ULN.",
+        "Diuretics fool Light's - albumin gradient over 1.2 g/dL says transudate.",
+        "Effusion: fremitus reduced; consolidation: fremitus increased.",
+        "Lymphocytic exudate with ADA over 40 in a young Indian adult is TB.",
+        "pH under 7.2, glucose under 60 or pus - put in a tube.",
+        "Never remove over 1.5 L at a sitting; never drain a hepatic hydrothorax.",
+        "Needle over the upper border of the rib below; drain in the safe triangle.",
+      ],
+    },
     master: {
       heading: "Master revision table - Pleural effusion",
       columns: ["Aspect", "High-yield points"],
@@ -471,6 +1639,169 @@ const revision: RevisionSet = {
 
   "respiratory-osa": {
     checked: "2026-10",
+    notes: {
+      sections: [
+        {
+          title: "Definition and key facts",
+          points: [
+            "**OSA** is repeated collapse of the pharyngeal airway in sleep despite continued breathing effort.",
+            "An **apnoea** is a 90% or more fall in airflow for 10 seconds or more.",
+            "A **hypopnoea** is a 30% fall for 10 seconds with a 3% desaturation or arousal.",
+            "The **AHI** is the number of apnoeas and hypopnoeas per hour of sleep.",
+            "OSA means **AHI 5 or more with symptoms or comorbidity**, or 15 or more regardless.",
+            "About **9-13% of Indian adults** have OSA, and most are never diagnosed.",
+          ],
+        },
+        {
+          title: "Classification that matters",
+          points: [
+            "Adult severity by AHI: **mild 5-14, moderate 15-29, severe 30 or more**.",
+            "In children, an **obstructive AHI over 1** is already abnormal.",
+            "**Obesity hypoventilation syndrome**: BMI 30 or more with awake PaCO2 45 mmHg or more.",
+            "**Overlap syndrome** is COPD plus OSA.",
+            "Central apnoea has **no breathing effort**, unlike obstructive events.",
+          ],
+        },
+        {
+          title: "Causes and risk factors",
+          points: [
+            "**Obesity**, especially a thick neck; neck size predicts OSA better than BMI.",
+            "**South Asians develop OSA at a lower BMI** because of a crowded craniofacial structure.",
+            "A small or retruded jaw, large tonsils, a large tongue and nasal obstruction.",
+            "Male sex and age over 50.",
+            "Hypothyroidism and acromegaly cause reversible OSA.",
+            "**Alcohol, sedatives and opioids** relax the airway and make events longer.",
+          ],
+        },
+        {
+          title: "How it happens (pathophysiology)",
+          points: [
+            "The pharynx has **no bony support** and stays open only through dilator muscle tone.",
+            "Sleep, especially **REM sleep**, removes that tone, so the airway collapses.",
+            "Collapse is worst **lying supine**, as gravity pulls the tongue and palate back.",
+            "Effort against a closed airway creates large negative chest pressures that strain the heart.",
+            "Falling oxygen triggers a **sympathetic surge and brief arousal**, ending each event with a snort.",
+            "Repeated surges cause **resistant hypertension**, AF and insulin resistance.",
+            "Fragmented sleep causes **daytime sleepiness** and a two- to threefold rise in road accidents.",
+          ],
+        },
+        {
+          title: "History in the OPD",
+          points: [
+            "**Interview the bed partner** about loud snoring, witnessed pauses, choking or gasping.",
+            "Score sleepiness with the **Epworth Sleepiness Scale**; over 10 of 24 is excessive.",
+            "Ask about **morning headache, nocturia**, dry mouth and unrefreshing sleep.",
+            "**Always ask about dozing while driving**, near-misses and commercial driving.",
+            "Ask about resistant hypertension, AF, diabetes, alcohol and sedatives.",
+            "In a child ask about snoring, mouth breathing, enuresis, hyperactivity and poor growth.",
+          ],
+        },
+        {
+          title: "Examination",
+          points: [
+            "Record **BMI and neck circumference**; over 40 cm counts on STOP-BANG.",
+            "Look at the oropharynx: **Mallampati class 3-4**, large tonsils and a long uvula.",
+            "Check the jaw profile for **retrognathia** and the nose for septal deviation.",
+            "Measure BP and check the pulse for **atrial fibrillation**.",
+            "Raised JVP, loud P2 and oedema suggest **OHS or cor pulmonale**.",
+            "A normal examination **does not exclude OSA**.",
+          ],
+        },
+        {
+          title: "Investigations",
+          points: [
+            "Screen with **STOP-BANG**: 0-2 low, 3-4 intermediate, 5-8 high risk.",
+            "STOP-BANG rules out; it **never makes the diagnosis**.",
+            "**In-lab polysomnography** is the gold standard.",
+            "**Home sleep testing** suits uncomplicated adults with high pre-test probability.",
+            "A **negative home study** in a symptomatic patient needs full polysomnography.",
+            "Check TSH, HbA1c and lipids; venous **bicarbonate 27 or more** needs a blood gas for OHS.",
+          ],
+        },
+        {
+          title: "Treatment - first line",
+          points: [
+            "**Weight loss**: a 10% loss cuts the AHI by about a quarter.",
+            "**CPAP is first-line** for moderate or severe OSA, and symptomatic mild OSA.",
+            "CPAP is a **pneumatic splint** holding the airway open; start with a nasal mask.",
+            "Adequate use is **4 hours or more on 70% of nights**, read from the machine download.",
+            "Avoid alcohol for 3-4 hours before bed, and avoid sedatives and opioids.",
+            "Advise **no driving while sleepy** until effectively treated.",
+          ],
+        },
+        {
+          title: "Treatment - next steps",
+          points: [
+            "**Mandibular advancement device** for mild-moderate OSA or CPAP refusal.",
+            "**Positional therapy** keeps the patient on their side in supine-predominant OSA.",
+            "**Tirzepatide** is approved for moderate-severe OSA with obesity, up to 10-15 mg weekly.",
+            "Intranasal steroid treats nasal blockage and **improves CPAP tolerance**.",
+            "**Modafinil** only for residual sleepiness despite documented CPAP adherence.",
+            "**Oxygen alone is not a treatment**; it can lengthen apnoeas and raise CO2.",
+            "OHS needs **BiPAP** if hypoventilation predominates, plus major weight loss.",
+          ],
+        },
+        {
+          title: "Special groups",
+          points: [
+            "**Children**: adenotonsillectomy is first-line; children are hyperactive, not sleepy.",
+            "**Pregnancy**: OSA raises pre-eclampsia risk, and **CPAP is safe** throughout.",
+            "**STOP-BANG 5 or more before surgery**: flag to the anaesthetist and minimise opioids.",
+            "Review new CPAP users at 1-2 weeks and 1 month, then every 6-12 months.",
+            "Re-study after a **weight change of 10% or more**.",
+            "Refer urgently for awake SpO2 under 90%, raised CO2 or dozing at the wheel.",
+          ],
+        },
+      ],
+      tables: [
+        {
+          heading: "OSA drugs at a glance",
+          columns: ["Drug", "Dose and route", "Duration", "Key side effects / cautions"],
+          rows: [
+            ["Tirzepatide", "SC 2.5 mg weekly, up 2.5 mg every 4 weeks to 10-15 mg", "Long-term", "Nausea, gallstones, pancreatitis; not with MTC or MEN2"],
+            ["Semaglutide", "SC 0.25 mg weekly, stepped up to 2.4 mg over 16 weeks", "Long-term", "Nausea, gallstones; not licensed for OSA itself"],
+            ["Fluticasone furoate nasal", "27.5 microgram, 2 sprays each nostril once daily", "Continuous", "Dryness, epistaxis"],
+            ["Modafinil", "Oral 100-200 mg each morning (max 400 mg)", "While sleepy on adherent CPAP", "Insomnia, raised BP, rare SJS; pill may fail"],
+            ["Levothyroxine (if hypothyroid)", "Oral 1.6 microgram/kg/day; start 25-50 in elderly", "Long-term", "Palpitations, angina if over-replaced"],
+            ["Montelukast (children)", "Oral 4 mg (2-5 y) or 5 mg (6-14 y) at bedtime", "12-16 weeks", "Nightmares, mood change (boxed warning)"],
+          ],
+        },
+        {
+          heading: "STOP-BANG - one point each",
+          columns: ["Letter", "Question"],
+          rows: [
+            ["S - Snoring", "Loud snoring, heard through a closed door"],
+            ["T - Tired", "Often tired or sleepy in the daytime"],
+            ["O - Observed", "Someone saw you stop breathing or gasp"],
+            ["P - Pressure", "High blood pressure, treated or not"],
+            ["B - BMI", "Over 35 kg/m2"],
+            ["A - Age", "Over 50 years"],
+            ["N - Neck", "Over 40 cm"],
+            ["G - Gender", "Male"],
+          ],
+        },
+        {
+          heading: "Choosing a sleep test and a treatment",
+          columns: ["Situation", "Test", "Treatment"],
+          rows: [
+            ["Uncomplicated adult, high pre-test probability", "Home sleep test", "CPAP if AHI 15 or more"],
+            ["Heart failure, COPD, opioids, stroke", "In-lab polysomnography", "CPAP; specialist review"],
+            ["Obese with bicarbonate 27 or more", "Blood gas plus polysomnography", "BiPAP if hypoventilation"],
+            ["Mild OSA or CPAP refusal", "Any study confirming AHI", "Mandibular device, positional therapy"],
+            ["Child with snoring and symptoms", "Paediatric polysomnography (AHI over 1)", "Adenotonsillectomy"],
+          ],
+        },
+      ],
+      remember: [
+        "STOP-BANG: Snoring, Tired, Observed, Pressure, BMI, Age, Neck, Gender.",
+        "STOP-BANG rules out, polysomnography rules in.",
+        "AHI: mild 5-14, moderate 15-29, severe 30 or more.",
+        "The bed partner makes the diagnosis - witnessed apnoeas, not snoring alone.",
+        "CPAP is a pneumatic splint, not oxygen; adequate use is 4 h on 70% of nights.",
+        "OSA is the commonest identifiable cause of resistant hypertension.",
+        "Children with OSA are hyperactive, not sleepy; AHI over 1 is abnormal.",
+      ],
+    },
     master: {
       heading: "Master revision table - Obstructive sleep apnoea",
       columns: ["Aspect", "High-yield points"],
