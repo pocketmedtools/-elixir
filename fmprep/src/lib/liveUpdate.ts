@@ -135,16 +135,16 @@ export async function checkForUpdate(current: number, force = false): Promise<vo
       });
       try {
         // Each mirror in turn until one delivers.
-        let lastErr: unknown = null;
+        const failed: string[] = [];
         for (const url of webs) {
           try {
             bundle = await CapacitorUpdater.download({ url, version });
             break;
-          } catch (e) {
-            lastErr = e;
+          } catch {
+            failed.push(new URL(url).host);
           }
         }
-        if (!bundle) throw lastErr ?? new Error("download failed");
+        if (!bundle) throw new Error(`could not download from ${failed.join(", ")} - check the internet connection`);
       } finally {
         void sub.remove();
       }

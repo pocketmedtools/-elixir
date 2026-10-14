@@ -185,12 +185,26 @@ jobs:
           git commit -q -m "FM-Prep.apk built from ${{ github.sha }}"
           FILES=$(git rev-parse HEAD)
           R="${{ github.repository }}"
+          # The web app also goes, unzipped, onto its own branch. GitHub then
+          # serves it as a zip from github.com/codeload - reachable on networks
+          # that block raw.githubusercontent.com and jsDelivr (some Indian
+          # mobile networks block both). The updater accepts a zip whose files
+          # sit inside one top folder, which is the shape GitHub's archive has.
+          rm -rf /tmp/webpub && mkdir -p /tmp/webpub && cp -r "$GITHUB_WORKSPACE/fmprep/dist/." /tmp/webpub/
+          (cd /tmp/webpub && git init -q -b fmprep-web && git config user.name "github-actions[bot]" \
+            && git config user.email "github-actions[bot]@users.noreply.github.com" \
+            && git add -A && git commit -q -m "FM Prep web build ${{ github.run_number }}" \
+            && git push -q -f "https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/$R.git" fmprep-web)
+          WEBSHA=$(cd /tmp/webpub && git rev-parse HEAD)
           jq -n --argjson build ${{ github.run_number }} --argjson min "$MIN" --arg h "$NHASH" \
             --arg sha "${{ github.sha }}" --arg date "$(date -u +%Y-%m-%dT%H:%M:%SZ)" \
             --arg web "https://raw.githubusercontent.com/$R/$FILES/$WEB" \
             --arg cdn "https://cdn.jsdelivr.net/gh/$R@$FILES/$WEB" \
             --arg apk "https://cdn.jsdelivr.net/gh/$R@$FILES/FM-Prep.apk" \
-            '{build:$build, minNative:$min, nativeHash:$h, webs:[$cdn, $web], web:$web, apk:$apk, sha:$sha, date:$date}' > version.json
+            --arg codeload "https://codeload.github.com/$R/zip/$WEBSHA" \
+            --arg archive "https://github.com/$R/archive/$WEBSHA.zip" \
+            --arg apizip "https://api.github.com/repos/$R/zipball/$WEBSHA" \
+            '{build:$build, minNative:$min, nativeHash:$h, webs:[$codeload, $archive, $apizip, $cdn, $web], web:$web, apk:$apk, sha:$sha, date:$date}' > version.json
           cat version.json
           git add version.json
           git commit -q -m "version.json for build ${{ github.run_number }}"
