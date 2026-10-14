@@ -9,7 +9,19 @@
  */
 import type { Diagram, NoteTable } from "../lib/types";
 
+/** Last-minute revision notes: short points under headings, real tables. */
+export type RevisionNotes = {
+  /** In exam order; each point one idea, short, plain English, **bold** key word. */
+  sections: { title: string; points: string[] }[];
+  /** Proper multi-column tables: drugs, differentials, classification, cut-offs. */
+  tables: NoteTable[];
+  /** Mnemonics and one-line exam pearls. */
+  remember?: string[];
+};
+
 export type TopicRevision = {
+  /** Readable revision notes (preferred over the master table when present). */
+  notes?: RevisionNotes;
   /** The whole topic in one table: what to write, in the order to write it. */
   master: NoteTable;
   /** High-yield flow charts: diagnosis, management, escalation. */

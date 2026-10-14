@@ -184,6 +184,22 @@ section("Revision tables and flow charts");
       for (const row of r.master?.rows ?? [])
         if (row.length !== r.master.columns.length) fail(`${where}: master row has ${row.length} cells, ${r.master.columns.length} columns`);
       if (!r.flows?.length) fail(`${where}: no flow chart`);
+      if (r.notes) {
+        if (r.notes.sections.length < 5) fail(`${where}: revision notes need at least 5 sections`);
+        for (const sec of r.notes.sections) {
+          if (!sec.points.length) fail(`${where} / ${sec.title}: empty section`);
+          for (const pt of sec.points) {
+            const words = pt.split(/\s+/).length;
+            if (words > 30) fail(`${where} / ${sec.title}: point too long (${words} words): ${pt.slice(0, 60)}`);
+            if (/->/.test(pt)) warn(`${where} / ${sec.title}: arrow chain in a point: ${pt.slice(0, 60)}`);
+          }
+        }
+        if (r.notes.tables.length < 2) fail(`${where}: revision notes need at least 2 tables`);
+        for (const t of r.notes.tables) {
+          if (t.columns.length < 2) fail(`${where} / ${t.heading}: table needs 2+ columns`);
+          for (const row of t.rows) if (row.length !== t.columns.length) fail(`${where} / ${t.heading}: row width`);
+        }
+      }
       for (const d of r.flows ?? []) {
         flows++;
         if (d.kind === "compare") {

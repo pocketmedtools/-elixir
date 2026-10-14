@@ -52,6 +52,44 @@ function revInk(label: string): [string, string] {
   return ["#3d3428", "#f3ece0"];
 }
 
+/* Revision notes: one heading per part of the answer, short points with
+   room to breathe, then the tables. Written to be read, not decoded. */
+function RevisionNotesView({ notes }: { notes: NonNullable<TopicRevision["notes"]> }) {
+  return (
+    <div className="flex flex-col gap-4">
+      {notes.sections.map((sec, i) => {
+        const [ink, wash] = revInk(sec.title);
+        return (
+          <section key={i} className="rounded-xl border bg-white/70" style={{ borderColor: ink + "40", borderLeft: `5px solid ${ink}` }}>
+            <h4 className="flex items-center gap-2 px-3.5 pt-3 text-[16px] font-bold" style={{ color: ink }}>
+              <span className="flex h-6 w-6 shrink-0 items-center justify-center rounded-full text-[12px] text-white" style={{ background: ink }}>
+                {i + 1}
+              </span>
+              {sec.title}
+            </h4>
+            <ul className="px-3.5 pb-3 pt-2">
+              {sec.points.map((pt, j) => (
+                <li key={j} className="flex gap-2.5 py-1.5 text-[15.5px] leading-[1.6] text-slate-900" style={j ? { borderTop: `1px dashed ${wash === "#f3ece0" ? "#e3cda8" : ink + "26"}` } : undefined}>
+                  <span aria-hidden className="mt-[0.62em] h-1.5 w-1.5 shrink-0 rounded-full" style={{ background: ink }} />
+                  <span className="min-w-0"><RichText text={pt} /></span>
+                </li>
+              ))}
+            </ul>
+          </section>
+        );
+      })}
+      {notes.tables.map((t, i) => (
+        <div key={`t${i}`} className="rounded-xl border bg-white/70 p-2" style={{ borderColor: "#e3cda8" }}>
+          <TableBlock table={t} />
+        </div>
+      ))}
+      {notes.remember && notes.remember.length > 0 && (
+        <Callout tone="pearl" title="Remember for the exam" items={notes.remember} />
+      )}
+    </div>
+  );
+}
+
 function RevisionBlock({ revision, title }: { revision: TopicRevision; title: string }) {
   const cols = revision.master.columns;
   return (
@@ -62,6 +100,10 @@ function RevisionBlock({ revision, title }: { revision: TopicRevision; title: st
         {revision.checked && <p className="mt-1 text-[12px] opacity-85">Checked against current guidelines: {revision.checked}</p>}
       </div>
       <div className="rounded-b-2xl border-2 border-t-0 p-3" style={{ borderColor: "#d9c7a6", background: "var(--card)" }}>
+        {revision.notes ? (
+          <RevisionNotesView notes={revision.notes} />
+        ) : (
+        <>
         <h3 className="px-1 pt-1 text-[13px] font-bold uppercase tracking-wider" style={{ color: "var(--head)" }}>
           Master table
         </h3>
@@ -86,6 +128,8 @@ function RevisionBlock({ revision, title }: { revision: TopicRevision; title: st
             );
           })}
         </ol>
+        </>
+        )}
 
         {revision.flows.length > 0 && (
           <>
