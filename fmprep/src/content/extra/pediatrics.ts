@@ -1892,7 +1892,7 @@ const topics: Topic[] = [
           {
             heading: "Pathogenesis",
             points: [
-              "Nephritogenic GAS (M49 skin, M12 throat); latency 3-6 weeks after skin, 1-2 weeks after throat.",
+              "Nephritogenic GAS (M49 skin, M12 throat); latency 3-6 weeks after skin, 1-3 weeks after throat.",
               "NAPlr and SpeB deposit; immune complexes; alternative pathway activation - low C3, normal C4; subepithelial humps.",
             ],
           },
