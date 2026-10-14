@@ -2578,7 +2578,7 @@ topics.push({
         {
           heading: "Immediate treatment",
           points: [
-            "Oxygen to a target saturation of **94-98%** - in asthma, unlike COPD, there is no carbon dioxide retention risk [GINA 2025]",
+            "Oxygen only if SpO2 is under 92%, titrated to **92-95%** (children 5 years and under: 92% or more) - avoid over-oxygenation [GINA 2026]",
             "**Salbutamol 2.5-5 mg** by nebuliser, or 4-10 puffs by metered-dose inhaler with a spacer - the two are equally effective [GINA 2025]",
             "**Repeat salbutamol every 20 minutes** for the first hour - a single dose underestimates what a severe attack needs [GINA 2025]",
             "**Ipratropium bromide 0.5 mg** by nebuliser is added in severe or life-threatening attacks - it acts on a different receptor from salbutamol [GINA 2025]",

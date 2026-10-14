@@ -704,7 +704,7 @@ const revision: RevisionSet = {
   "preventive-climate-change-health": {
     checked: "2026-10",
     updated: [
-      "GINA 2026: pollution-triggered mild asthma attack - ICS-formoterol an accepted alternative to SABA; controlled oxygen to SpO2 93-95% (children 94-98%)",
+      "GINA 2026: pollution-triggered mild asthma attack - ICS-formoterol an accepted alternative to SABA; oxygen only if SpO2 is under 92%, titrated to 92-95% (children 5 years and under: keep 92% or more)",
       "WHO 2025: Belem Health Action Plan launched on Health Day at COP30 (Belem, 13 November 2025) added to international milestones",
     ],
     master: {
@@ -721,13 +721,13 @@ const revision: RevisionSet = {
         ["Investigations", "Cool first; then glucose, Na, K, creatinine, **CK (over 5x normal = rhabdomyolysis)**, LFT (peak 24-48 h), CBC, PT/INR, urine dipstick (blood without RBC); ECG; malaria RDT, dengue NS1."],
         ["Treatment - first line", "Exhaustion: shade, **ORS 1-2 L over 2-4 h**, IV NS/RL 500 mL-1 L if vomiting. **Heat stroke: cold-water immersion** (or ice packs + spray + fan) to **under 39 C within 30 min, stop at 38.5-39 C**; no paracetamol, NSAID or dantrolene."],
         ["Treatment - escalation", "Shivering/seizures **lorazepam 2-4 mg IV**; hypoglycaemia **25% dextrose 100 mL**; rhabdomyolysis - urine 200-300 mL/h; hyperkalaemia **calcium gluconate 10 mL** then insulin-dextrose; refer to ICU/dialysis; **continue cooling in ambulance**."],
-        ["Pollution exacerbation", "**Salbutamol 4-10 puffs via spacer q20 min x 1 h** (mild asthma: **ICS-formoterol alternative to SABA - GINA 2026**), **prednisolone 40-50 mg x 5-7 days**; controlled oxygen to **SpO2 93-95%** (children 94-98%); DPI preferred for low-carbon prescribing."],
+        ["Pollution exacerbation", "**Salbutamol 4-10 puffs via spacer q20 min x 1 h** (mild asthma: **ICS-formoterol alternative to SABA - GINA 2026**), **prednisolone 40-50 mg x 5-7 days**; **oxygen only if SpO2 is under 92%, titrated to 92-95% (children 5 years and under: keep 92% or more)**; DPI preferred for low-carbon prescribing."],
         ["Indian response", "**NPCCHH 2019** (NHM, NCDC): state/district health action plans, heat illness surveillance on IHIP **1 March-31 July**, green facilities; **IMD heat wave 40 C plains/37 coast/30 hills + departure 4.5-6.4 C (or 45 C)**; **Ahmedabad HAP 2013**; NAPCC 2008 8 missions, none health."],
         ["Policy and commitments", "**NDC 2022: 45% intensity cut by 2030, 50% non-fossil power (reached 2025), net zero 2070**; NCAP 40% PM cut by 2025-26; PMUY 10 crore+; Paris 2015, Kigali 2016, **COP28 Health Day 2023**, **COP30 Belem Health Action Plan 2025**."],
         ["Family physician role", "Clinic cooling kit; **vulnerable-patient register** and drug review before summer (sick-day rules, lithium levels); report heat illness and fever clusters on IHIP; AQI counselling; green the practice; advocate."],
         ["Follow-up & monitoring", "Heat-stroke survivor review **1-2 weeks** with creatinine, LFT, neurology; return to heavy work after normal labs + re-acclimatisation; indicators - heat deaths, excess mortality, HAP coverage, AQI days."],
         ["Red flags & referral", "Core over 40 C with altered sensorium; hot dry skin in collapse; tea-coloured urine; temperature not falling; elderly on diuretics/lithium not drinking; post-flood watery diarrhoea cluster."],
-        ["Latest guideline change", "**GINA 2026 (ICS-formoterol for mild attacks; SpO2 target 93-95%)**; **COP30 Belem Health Action Plan (November 2025)**."],
+        ["Latest guideline change", "**GINA 2026 (ICS-formoterol for mild attacks; oxygen only if SpO2 <92%, target 92-95%)**; **COP30 Belem Health Action Plan (November 2025)**."],
         ["Exam one-liners", "Heat exhaustion vs stroke = sensorium; cool first, transfer second; risk multiplier not a new disease."],
       ],
     },
