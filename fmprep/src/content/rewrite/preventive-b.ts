@@ -561,7 +561,7 @@ const rewrites: Record<string, TopicRewrite> = {
           "**WHOQOL-BREF**: 26 items, 4 domains (physical, psychological, social relationships, environment), validated Hindi versions, about 10 minutes. [WHOQOL Group 1998]",
           "**Health for All by 2000** (WHA 30.43, 1977) through primary health care at **Alma-Ata 1978**; renewed by the **Declaration of Astana 2018** linking PHC to UHC. [WHO 2018]",
           "**SDG 3 (2016-2030)**: **MMR below 70**, **NMR 12 or less, U5MR 25 or less**, end AIDS, TB, malaria and NTDs, **premature NCD mortality down by one-third**, halve road deaths, universal SRH access and **UHC**. [UN 2015]",
-          "**National Health Policy 2017** targets: life expectancy 70 by 2025, **IMR 28 by 2019**, **U5MR 23 and MMR 100 by 2020**, TFR 2.1 by 2025, health spending **2.5% of GDP by 2025**. [NHP 2017]",
+          "**National Health Policy 2017** targets: life expectancy 70 by 2025, **IMR 28 by 2019**, **MMR 100 by 2020**, **U5MR 23 and NMR 16 by 2025**, TFR 2.1 by 2025, health spending **2.5% of GDP by 2025**. [NHP 2017]",
           "NITI Aayog's **SDG India Index** ranks states on SDG 3 using MMR, U5MR, immunisation, TB notification and HIV incidence. [NITI Aayog 2024]",
         ],
       },
@@ -593,7 +593,7 @@ const rewrites: Record<string, TopicRewrite> = {
         columns: ["Determinant", "What to ask or look for", "Action in practice", "Programme or link"],
         rows: [
           ["Biological", "Family history, consanguinity, age, sex", "Genetic counselling, newborn screening, age-based screening", "RBSK, NP-NCD"],
-          ["Behavioural", "Tobacco, alcohol, diet, activity, sexual behaviour", "Brief advice (5A), lifestyle counselling", "NTCP quitline 1800-11-2356, Fit India"],
+          ["Behavioural", "Tobacco, alcohol, diet, activity, sexual behaviour", "Brief advice (5A), lifestyle counselling", "NTCP quitline 1800-112-356, Fit India"],
           ["Environmental", "Water source, toilet, cooking fuel, housing, vectors", "Counsel on safe water, clean fuel, vector control", "Jal Jeevan Mission, SBM, PMUY"],
           ["Socio-economic", "Income, education, caste, debt, catastrophic spending", "Enrol in entitlements; proportionate extra visits", "PM-JAY, PDS, PMMVY, Ni-kshay Poshan"],
           ["Health services", "Access, distance, cost, immunisation gaps", "Fill gaps, refer, follow up defaulters", "Ayushman Arogya Mandir, U-WIN"],
@@ -672,7 +672,7 @@ const rewrites: Record<string, TopicRewrite> = {
         heading: "Concepts in depth - how the system evolved and why",
         points: [
           "**Bhore Committee (1946)** - the 'father' of Indian health planning - proposed the integrated preventive-curative **three-tier** system and the PHC; the **Mudaliar Committee (1962)** consolidated existing PHCs. [Park 28e]",
-          "**Kartar Singh Committee (1973)** created the **multipurpose worker** (male and female) and the norm of one sub-centre per 5000; **Srivastava Committee (1975)** proposed village health guides and the referral chain. [Park 28e]",
+          "**Kartar Singh Committee (1973)** created the **multipurpose worker** (one male and one female per sub-centre), with a PHC per 50,000 and 16 sub-centres of 3,000-3,500 each - the one-per-5000 sub-centre norm came later (Sixth Plan, NHP 1983); **Srivastava Committee (1975)** proposed village health guides and the referral chain. [Park 28e]",
           "The **National Health Policy 1983** was India's response to Alma-Ata; **NHP 2002** and **NHP 2017** followed. [Park 28e]",
           "**Referral logic**: each PHC supports about **6 SHCs**, each CHC about **4 PHCs**, and each district about one FRU per 5 lakh - care should flow up and return referral flow down. [IPHS 2022]",
           "**Gatekeeping is absent** in India: patients self-refer to tertiary hospitals, overcrowding them while PHCs are under-used - the reason for comprehensive primary care at Ayushman Arogya Mandirs. [NHP 2017]",
@@ -1276,7 +1276,7 @@ const rewrites: Record<string, TopicRewrite> = {
       {
         heading: "Current Indian programme - RBSK, AMB, NDD and SHWP",
         points: [
-          "**Rashtriya Bal Swasthya Karyakram (RBSK, February 2013)** screens children **0-18 years** for the **4Ds - Defects at birth, Deficiencies, Diseases, Developmental delays including disability** - covering **30 conditions** with free management including surgery. [RBSK 2013]",
+          "**Rashtriya Bal Swasthya Karyakram (RBSK, February 2013)** screens children **0-18 years** for the **4Ds - Defects at birth, Deficiencies, Diseases, Developmental delays including disability** - covering **32 conditions** (30 in the 2013 guidelines) with free management including surgery. [RBSK 2013]",
           "**RBSK mobile health teams** per block: **two AYUSH doctors (one male, one female), one ANM/staff nurse and one pharmacist**; schools screened **once a year**, anganwadis **twice a year**. [RBSK 2013]",
           "Positives go to the **District Early Intervention Centre (DEIC)** - paediatrics, audiology, optometry, physiotherapy, psychology, dental. [RBSK 2013]",
           "**Anemia Mukt Bharat (2018)** - **6x6x6 strategy**: **pink IFA (45 mg iron + 400 mcg folic acid) weekly for 5-9 years** and **blue IFA (60 mg + 500 mcg) weekly for 10-19 years (WIFS)**, supervised in school; target to cut anaemia by **3 percentage points a year**. [MoHFW AMB 2018]",
@@ -1365,7 +1365,7 @@ const rewrites: Record<string, TopicRewrite> = {
       "Park's aspects: appraisal, remedial care, communicable disease, environment, nutrition, first aid, mental, dental, eye, education, handicapped children, records.",
       "Classroom: 40 students, 10 sq ft each, windows 25% of floor area, light from the left.",
       "SHWP 2020: two Health and Wellness Ambassadors per school, 11 themes.",
-      "RBSK: 4Ds, 30 conditions; school once a year, anganwadi twice a year.",
+      "RBSK: 4Ds, 32 conditions; school once a year, anganwadi twice a year.",
       "Pink IFA weekly 5-9 years; blue IFA weekly 10-19 years.",
       "NDD: albendazole 400 mg on 10 February and 10 August.",
       "PM POSHAN: 450 kcal/12 g primary; 700 kcal/20 g upper primary.",
@@ -1436,7 +1436,7 @@ const rewrites: Record<string, TopicRewrite> = {
           "**WHO cervical cancer elimination (90-70-90 by 2030)**: 90% of girls vaccinated by 15, **70% of women screened with a high-performance test by 35 and 45**, 90% of detected disease treated; elimination below **4 per 1,00,000 women**. [WHO 2020]",
           "**WHO Global Breast Cancer Initiative**: cut breast cancer mortality **2.5% a year** - early diagnosis, diagnosis within **60 days**, complete treatment. [WHO 2023]",
           "**HPV vaccination** - India launched **free single-dose quadrivalent HPV vaccination (Gardasil-4) for girls aged 14 on 28 February 2026** (indigenous Cervavac is also licensed; WHO permits a single dose for 9-20 years) - and the **hepatitis B birth dose** (prevents hepatocellular carcinoma) are the cancer-preventing vaccines. [MoHFW 2026]",
-          "**Tobacco control** is the most effective cancer prevention: **COTPA 2003**, pictorial warnings, **quitline 1800-11-2356** and **mCessation**; also limit alcohol, healthy weight, activity, diet and clean air. [NTCP 2023]",
+          "**Tobacco control** is the most effective cancer prevention: **COTPA 2003**, pictorial warnings, **quitline 1800-112-356** and **mCessation**; also limit alcohol, healthy weight, activity, diet and clean air. [NTCP 2023]",
           "**Cancer registries**: **PBCR** gives incidence in a defined population; **HBCR** gives patterns of care and survival; the **ICMR NCRP (1981)** is run by **NCDIR, Bengaluru**. [ICMR-NCRP 2020]",
           "Treatment of eligible patients is free under **PM-JAY**, and the **Health Minister's Cancer Patient Fund** helps the poor. [NHA 2024]",
         ],
@@ -1852,10 +1852,10 @@ const rewrites: Record<string, TopicRewrite> = {
       {
         heading: "Treatment - contraceptive methods: how to use them",
         points: [
-          "**Combined oral pill (Mala-N: levonorgestrel 0.15 mg + ethinylestradiol 0.03 mg)** inhibits ovulation: one daily for 21 days then 7 iron tablets, start on day 1-5 of the period; **missed 1 pill** - take it at once; **2 or more** - take the latest, use condoms 7 days and ECP if in week 1 after unprotected sex. [WHO MEC 2025]",
+          "**Combined oral pill (Mala-N: levonorgestrel 0.15 mg + ethinylestradiol 0.03 mg)** inhibits ovulation: one daily for 21 days then 7 iron tablets, start on day 1-5 of the period; **missed 1-2 pills** - take one at once and continue; **3 or more** - take one at once, use condoms for 7 days, and ECP if the pills were missed in week 1 after unprotected sex (WHO SPR). [WHO MEC 2025]",
           "Combined pill **contraindications (MEC 4)**: migraine with aura, BP 160/100 or more, past VTE or stroke, smoker over 35 (15 or more a day), breastfeeding under 6 weeks, liver tumour, breast cancer. [WHO MEC 2025]",
           "**Chhaya (centchroman 30 mg)** - a non-steroidal SERM: **twice a week for the first 3 months, then once a week**; safe in breastfeeding; may delay periods. [MoHFW 2017]",
-          "**Antara (DMPA 150 mg deep IM every 3 months)** - progestogen that suppresses ovulation and thickens mucus; grace period **4 weeks** early or late; irregular bleeding, amenorrhoea, weight gain and **delayed return of fertility (up to 10 months)**. [MoHFW 2017]",
+          "**Antara (DMPA 150 mg deep IM every 3 months)** - progestogen that suppresses ovulation and thickens mucus; repeat injection up to **2 weeks early or 4 weeks late** (grace period); irregular bleeding, amenorrhoea, weight gain and **delayed return of fertility (up to 10 months)**. [MoHFW 2017]",
           "**Progestin-only pill** - one daily without a break, within **3 hours of the same time**; suitable during breastfeeding. [WHO MEC 2025]",
           "**IUCD**: **Cu-T 380A (10 years)** and **Cu 375 (5 years)**; **PPIUCD within 10 minutes of placenta or within 48 hours**, else after 6 weeks; check threads after each period; heavier periods and cramps common. [MoHFW 2018]",
           "**Emergency contraception**: **levonorgestrel 1.5 mg single dose within 72 hours** (some effect to 120 hours), or **Cu-IUD within 5 days** (most effective). [WHO MEC 2025]",

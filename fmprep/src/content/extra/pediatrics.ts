@@ -1304,7 +1304,7 @@ const topics: Topic[] = [
           "Oral alternative for eradication: **penicillin V 250 mg two to three times daily for 10 days** (500 mg for adolescents) or **amoxicillin 50 mg/kg once daily (max 1 g) for 10 days**. [WHO 2024]",
           "Penicillin allergy: **azithromycin 12 mg/kg once daily (max 500 mg) for 5 days**, or cephalexin in non-anaphylactic allergy. [Nelson 22e]",
           "**Withhold NSAIDs until the diagnosis is clear** - give paracetamol for arthralgia, because early aspirin masks migration and can make the diagnosis impossible. [Australian RHD Guideline 2020]",
-          "**Arthritis and mild carditis**: **aspirin 50-60 mg/kg/day in 4 divided doses** (up to 80-100 mg/kg/day if needed) for **2 weeks**, then 60-70 mg/kg/day tapered off over 4-6 weeks. [Nelson 22e]",
+          "**Arthritis and mild carditis**: **aspirin 50-60 mg/kg/day in 4 divided doses** (up to 80-100 mg/kg/day if needed) for **2 weeks**, then reduced (about 30-40 mg/kg/day) and tapered off over 4-6 weeks. [Nelson 22e]",
           "**Naproxen 10-20 mg/kg/day in 2 divided doses** is an acceptable and better tolerated alternative to aspirin. [Australian RHD Guideline 2020]",
           "**Moderate or severe carditis with heart failure**: **prednisolone 1-2 mg/kg/day (max 60 mg) for 2-3 weeks**, then tapered over 2-3 weeks while aspirin is started to prevent **rebound**. [Nelson 22e]",
           "Steroids suppress inflammation but have **not been proven to reduce long-term valve damage**, so they are used for symptomatic severe carditis only. [Harrison 22e]",
@@ -2341,7 +2341,7 @@ const topics: Topic[] = [
       },
       {
         id: "pediatrics-asthma-wheeze-child-q3",
-        stem: "A 9-year-old has daytime asthma symptoms 4 days a week and wakes once a week despite daily low-dose ICS with good technique and adherence. What is the preferred next step per GINA 2025?",
+        stem: "A 9-year-old has daytime asthma symptoms 4 days a week and wakes once a week despite daily low-dose ICS with good technique and adherence. What is the preferred next step per GINA 2026?",
         options: [
           "Low-dose ICS-LABA or very-low-dose budesonide-formoterol MART",
           "Add oral theophylline",

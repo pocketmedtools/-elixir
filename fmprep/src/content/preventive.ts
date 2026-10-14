@@ -1023,7 +1023,7 @@ topics.push({
           heading: "School age and adolescent",
           points: [
             "**RBSK screens birth to 18 years for the 4 Ds** - defects at birth, deficiencies, diseases, developmental delays including disability. [Park 28e]",
-            "RBSK covers 30 conditions, with free treatment through **District Early Intervention Centres** - screening without treatment is only a survey. [Park 28e]",
+            "RBSK covers 32 conditions (30 in the 2013 guidelines), with free treatment through **District Early Intervention Centres** - screening without treatment is only a survey. [Park 28e]",
             "**RKSK covers 10 to 19 years across six strategic areas** - the habits that cause adult disease are all formed in this decade. [Park 28e]",
             "RKSK works through **Adolescent Friendly Health Clinics and peer educators** - an adolescent will not take these questions to a family doctor. [Park 28e]",
             "**Weekly Iron and Folic Acid Supplementation** for adolescents - it builds iron stores before the first pregnancy, not during it. [Park 28e]",
@@ -1136,11 +1136,11 @@ topics.push({
     {
       id: "preventive-national-health-programmes-q7",
       stem: "Tele-MANAS, the national tele-mental health service launched in October 2022 under the National Mental Health Programme, is accessed on which toll-free number?",
-      options: ["104", "108", "1075", "14416", "1800-11-2356"],
+      options: ["104", "108", "1075", "14416", "1800-112-356"],
       difficulty: "easy",
       answer: 3,
       explanation:
-        "Tele-MANAS provides 24-hour free tele-mental health counselling in multiple languages on 14416 (also reachable on 1-800-891-4416), with escalation to a mental health professional and to the District Mental Health Programme where needed. 104 is the state health helpline, 108 is the emergency ambulance service, 1075 was the national COVID-19 helpline, and 1800-11-2356 is the national tobacco quitline - the last is worth knowing separately because tobacco cessation counselling is examined alongside mental health.",
+        "Tele-MANAS provides 24-hour free tele-mental health counselling in multiple languages on 14416 (also reachable on 1-800-891-4416), with escalation to a mental health professional and to the District Mental Health Programme where needed. 104 is the state health helpline, 108 is the emergency ambulance service, 1075 was the national COVID-19 helpline, and 1800-112-356 is the national tobacco quitline - the last is worth knowing separately because tobacco cessation counselling is examined alongside mental health.",
     },
   ],
   references: [
@@ -1291,7 +1291,7 @@ topics.push({
         "**All serious AEFIs must be reported and investigated**, because rumour fills the gap faster than any investigation can. [AEFI Guidelines 2024]",
         "**Report to the Medical Officer and District Immunisation Officer within 24 hours** - the vial and syringe must be kept, not discarded. [AEFI Guidelines 2024]",
         "**Begin the preliminary investigation within 48 hours**, since memories of the session and the cold chain log degrade fast. [AEFI Guidelines 2024]",
-        "**Preliminary report within 7 days, final case investigation form within 21 days** - causality is settled before the community reaches its verdict. [AEFI Guidelines 2024]",
+        "**Preliminary case investigation form within 10 days, final case investigation form within 70 days of notification** - causality is settled before the community reaches its verdict. [AEFI Guidelines 2024]",
         "The **district AEFI committee performs causality assessment** with state review - a committee, so no single officer can be pressured. [AEFI Guidelines 2024]",
         "All serious cases go to the **National AEFI Secretariat**, because a batch defect shows only when districts are pooled. [AEFI Guidelines 2024]",
         "**Anaphylaxis: adrenaline 1:1000, 0.01 mL/kg IM into the anterolateral thigh** - thigh, since absorption there is fastest. [AEFI Guidelines 2024]",
@@ -1495,7 +1495,7 @@ topics.push({
             "**Serious AEFI: death, life-threatening illness, hospitalisation or its prolongation** - objective criteria no reporter can dispute. [AEFI Guidelines 2024]",
             "**Serious also: persistent disability, congenital anomaly, or a cluster** - a cluster implies error rather than chance. [AEFI Guidelines 2024]",
             "**Report within 24 hours** to the Medical Officer and District Immunisation Officer - the vial and syringe must be kept, not discarded. [AEFI Guidelines 2024]",
-            "**Preliminary investigation within 48 hours, its report in 7 days, final case investigation form in 21 days** - rumour outruns any slower enquiry. [AEFI Guidelines 2024]",
+            "**Preliminary investigation within 48 hours, PCIF in 10 days, final case investigation form within 70 days of notification** - rumour outruns any slower enquiry. [AEFI Guidelines 2024]",
             "Causality assessment by district and state committees using the **WHO algorithm** - a fixed algorithm keeps the verdict defensible. [WHO AEFI 2019]",
           ],
         },
@@ -5688,7 +5688,7 @@ topics.push({
         "Jungalwalla required a unified cadre with common seniority and **equal pay for equal work** - divided cadres had blocked integration. [Park 28e]",
         "Jungalwalla also required special pay for special work and **no private practice** - private practice diverts the public doctor's time. [Park 28e]",
         "**Kartar Singh Committee, 1973** - the Committee on Multipurpose Workers, the origin of today's frontline cadre. [Park 28e]",
-        "Kartar Singh: **one male and one female health worker per 5,000 population, 3,000 in hilly and tribal areas** - terrain limits coverage. [Park 28e]",
+        "Kartar Singh: **one male and one female health worker per sub-centre of 3,000-3,500 population** (about 16 sub-centres per PHC); the later 5,000/3,000 sub-centre norm came with the Sixth Plan and NHP 1983. [Park 28e]",
         "Kartar Singh: **a health supervisor for every four workers, and a PHC for every 50,000** - supervision is what makes field work happen. [Park 28e]",
         "Under Kartar Singh the ANM became the female health worker - and malaria and vaccination staff became the male health worker. [Park 28e]",
         "**Shrivastav Committee, 1975** - the Group on Medical Education and Support Manpower. [Park 28e]",
@@ -5920,7 +5920,7 @@ topics.push({
     "PERT is **probabilistic, event-oriented and time-based**, for novel projects; CPM is **deterministic, activity-oriented and time-cost-based**, for repetitive projects and it alone allows **crashing**. Three contrasts, three marks.",
     "In SWOT, strengths and weaknesses are **internal and present**, opportunities and threats are **external and future**. Drug shortage in my PHC is a weakness; delay in the state supply chain is a threat. Misfiling items across that line is the commonest error in the answer book.",
     "A SWOT that stops at four lists is half an answer - finish it with the **TOWS pairings, SO, WO, ST and WT** (Weihrich, 1982), each converted into an action with an owner, a date and an indicator.",
-    "Committee one-liners: **Bhore 1946** - PHC and the social physician; **Mudaliar 1962** - consolidate, do not multiply; **Chadha 1963** - basic health worker per 10,000 for malaria vigilance; **Kartar Singh 1973** - multipurpose worker per 5,000; **Shrivastav 1975** - community health workers and the referral complex; **Bajaj 1986** - health manpower planning and an educational commission for health sciences.",
+    "Committee one-liners: **Bhore 1946** - PHC and the social physician; **Mudaliar 1962** - consolidate, do not multiply; **Chadha 1963** - basic health worker per 10,000 for malaria vigilance; **Kartar Singh 1973** - multipurpose worker pair per 3,000-3,500, PHC per 50,000; **Shrivastav 1975** - community health workers and the referral complex; **Bajaj 1986** - health manpower planning and an educational commission for health sciences.",
     "Date the changes: the **Planning Commission was replaced by NITI Aayog on 1 January 2015** and the **Twelfth Five-Year Plan (2012-17) was the last**. Describing five-year plans as the current instrument of health planning dates the whole answer.",
     "Monitoring watches **inputs and process continuously and internally to correct now**; evaluation judges **outcome and impact periodically against the original objectives to decide what next**. One sentence, two marks, asked as a differentiate question in its own right.",
   ],
@@ -6315,7 +6315,7 @@ topics.push({
       answer: 3,
       difficulty: "easy",
       explanation:
-        "The Kartar Singh Committee (Committee on Multipurpose Workers under Health and Family Planning, 1973) recommended converting the single-purpose workers into male and female multipurpose health workers, one per 5,000 population (3,000 in hilly and tribal areas), with one health supervisor per four workers and a PHC for every 50,000. The Chadha Committee (1963) had earlier proposed basic health workers, one per 10,000, for malaria vigilance in the maintenance phase, and it failed from overload; the Mukherjee Committee (1965) reversed that by separating family planning staff again. The Jungalwalla Committee (1967) defined integrated health services with a unified cadre and no private practice, and the Shrivastav Committee (1975) recommended community health workers drawn from the community and a referral services complex, leading to the Rural Health Scheme of 1977.",
+        "The Kartar Singh Committee (Committee on Multipurpose Workers under Health and Family Planning, 1973) recommended converting the single-purpose workers into male and female multipurpose health workers, one male and one female worker per sub-centre of 3,000-3,500 population, with one health supervisor per four workers and a PHC for every 50,000. The Chadha Committee (1963) had earlier proposed basic health workers, one per 10,000, for malaria vigilance in the maintenance phase, and it failed from overload; the Mukherjee Committee (1965) reversed that by separating family planning staff again. The Jungalwalla Committee (1967) defined integrated health services with a unified cadre and no private practice, and the Shrivastav Committee (1975) recommended community health workers drawn from the community and a referral services complex, leading to the Rural Health Scheme of 1977.",
     },
     {
       id: "preventive-health-planning-management-q6",
@@ -11910,7 +11910,7 @@ const cases: ClinicalCase[] = [
         points: [
           "An adverse event following immunisation is any untoward medical occurrence after immunisation, whether or not caused by the vaccine; the cause-specific categories are vaccine product-related, vaccine quality defect-related, immunisation error-related, immunisation anxiety-related and coincidental.",
           "Operationally, minor events such as fever, local pain and irritability are managed and recorded; severe events that need hospitalisation and serious events that cause death, disability or a cluster are reported within 24 hours to the medical officer and the district immunisation officer.",
-          "The first information report is filed by the MO within 24 hours, the preliminary case investigation form within 10 days by the district AEFI committee, and the detailed investigation report within 50 days; the state and national committees then do causality assessment.",
+          "The first information report is filed by the MO within 24 hours, the preliminary case investigation form within 10 days by the district AEFI committee, and the final case investigation form within 70 days of notification; the state and national committees then do causality assessment.",
           "Counsel the mother before she leaves about expected fever and local tenderness, give paracetamol for fever, and observe the child for 30 minutes after vaccination with an emergency tray and adrenaline at hand.",
         ],
       },
@@ -12010,7 +12010,7 @@ const cases: ClinicalCase[] = [
       },
       {
         q: "How are AEFIs classified and reported?",
-        a: "By cause: vaccine product-related, quality defect-related, immunisation error-related, immunisation anxiety-related and coincidental. By severity: minor, severe and serious. Serious and severe events are reported within 24 hours on the first information report, investigated with a preliminary report in 10 days and a detailed report in 50 days, and causality is assessed by the state and national AEFI committees.",
+        a: "By cause: vaccine product-related, quality defect-related, immunisation error-related, immunisation anxiety-related and coincidental. By severity: minor, severe and serious. Serious and severe events are reported within 24 hours on the first information report, investigated with a preliminary case investigation form in 10 days and a final form within 70 days, and causality is assessed by the state and national AEFI committees.",
       },
     ],
     pitfalls: [

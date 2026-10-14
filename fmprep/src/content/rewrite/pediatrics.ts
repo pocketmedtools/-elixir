@@ -16,7 +16,7 @@ const rewrites: Record<string, TopicRewrite> = {
           "The **seven danger signs** taught to every mother and ASHA are **not feeding well, convulsions, fast breathing 60/min or more, severe chest indrawing, movement only on stimulation or none, temperature 37.5 degrees C or more or under 35.5 degrees C, and yellow palms and soles** - any one means refer. [PSBI India 2019]",
           "**Neonatal sepsis** is **early-onset within 72 hours** (maternal, birth canal organisms) or **late-onset after 72 hours** (hospital or community acquired) - in Indian units **Klebsiella, E. coli and Acinetobacter** dominate, with group B Streptococcus less common than in the West. [NNF 2020]",
           "The **APGAR score** (table below) describes the baby at 1 and 5 minutes but **never decides resuscitation** - breathing, heart rate and tone do. [AHA-AAP NRP 2025]",
-          "India's **neonatal mortality rate is about 20 per 1000 live births** (SRS 2020), and the national target under INAP and SDG 3.2 is **single-digit NMR by 2030** - prematurity, birth asphyxia and sepsis are the three big killers. [MoHFW 2024]",
+          "India's **neonatal mortality rate is about 19 per 1000 live births** (SRS 2021), and the national target under INAP and SDG 3.2 is **single-digit NMR by 2030** - prematurity, birth asphyxia and sepsis are the three big killers. [MoHFW 2024]",
         ],
       },
       {
@@ -100,7 +100,7 @@ const rewrites: Record<string, TopicRewrite> = {
           "**Common breastfeeding problems**: fix attachment for **sore nipples** (apply hind milk after feeds), feed often with warm compress before and cold after for **engorgement**, and treat **perceived insufficient milk** by observing a feed and fixing latch - not with formula or galactagogues. [ABM 2022]",
           "**Breastfeeding continues** in maternal tuberculosis (mother on treatment, masked, baby on isoniazid preventive therapy), hepatitis B (after birth dose and HBIG), and HIV (**exclusive breastfeeding for 6 months with maternal ART and infant nevirapine prophylaxis**, avoiding mixed feeding). [NACO 2021]",
           "**Kangaroo mother care** for every baby **under 2000 g**: continuous skin-to-skin on the mother's bare chest with cap, nappy and socks, **started as soon as possible after birth** (even before full stabilisation), for **8-24 hours a day**, with exclusive breast milk and early discharge with follow-up - it cuts mortality by about a quarter. [WHO 2022]",
-          "**Feeding the LBW baby**: 34 weeks or more and over 1800 g - direct breastfeeding; 30-34 weeks or 1200-1800 g - **expressed breast milk by paladai or katori-spoon**; under 30 weeks or under 1200 g - gavage and often IV fluids first; start at **60-80 mL/kg/day** and advance by **15-20 mL/kg/day** to 150-180 mL/kg/day. [NNF 2020]",
+          "**Feeding the LBW baby**: 34 weeks or more - direct breastfeeding; 32-33 weeks - **expressed breast milk by paladai or katori-spoon**; 28-31 weeks - orogastric tube feeds; under 28 weeks - IV fluids with trophic feeds; start at **60-80 mL/kg/day** and advance by **20-30 mL/kg/day** (15-20 if under 1000 g) to 150-180 mL/kg/day. [NNF 2020]",
           "Teach the family the **seven danger signs**, keeping the baby warm, handwashing before handling, avoiding visitors with infections, safe sleep on the back, and the **HBNC and 6-week vaccination** dates - the family becomes the monitor after discharge. [HBNC MoHFW 2014]",
         ],
       },
@@ -118,7 +118,7 @@ const rewrites: Record<string, TopicRewrite> = {
           "**Simplified antibiotic regimen when referral is refused (clinical severe infection, not critical illness)**: **oral amoxicillin 50 mg/kg/dose twice daily for 7 days plus IM gentamicin once daily** (**5 mg/kg if under 2 kg, 7.5 mg/kg if 2 kg or more**) for **7 days (WHO 2024 preferred; 2 days may be used when 7 is not feasible, as in the India 2019 ANM regimen)**, with daily review for the first days and on day 8 - any deterioration means referral. [WHO PSBI 2024]",
           "**Fast breathing alone in a 7-59 day infant**: **oral amoxicillin 50 mg/kg/dose twice daily for 7 days** at home, with review on day 4 - a fast-breathing baby aged **0-6 days is referred**, and only if referral is impossible gets **oral amoxicillin for at least 7 days**. [WHO PSBI 2024]",
           "**How to give oral amoxicillin to a young infant**: dispersible 250 mg tablet dissolved in a spoon of **expressed breast milk**, given slowly with a spoon or paladai; if the baby vomits within 30 minutes, repeat the dose. [PSBI India 2019]",
-          "**Hypoglycaemia**: if glucose is under 45 mg/dL and the baby is symptomatic or cannot feed, give **10% dextrose 2 mL/kg IV over 1 minute** then an infusion at a **glucose infusion rate of 6-8 mg/kg/min** (80-100 mL/kg/day of 10% dextrose), rechecking in 30 minutes; if well and feeding, give a breastfeed or **expressed breast milk** and recheck. [NNF 2020]",
+          "**Hypoglycaemia**: if glucose is under 45 mg/dL and the baby is symptomatic or cannot feed, give **10% dextrose 2 mL/kg IV over 1 minute** then an infusion at a **glucose infusion rate of 6-8 mg/kg/min** (about 86-115 mL/kg/day of 10% dextrose), rechecking in 30 minutes; if well and feeding, give a breastfeed or **expressed breast milk** and recheck. [NNF 2020]",
           "**Neonatal seizures**: correct glucose first, then **phenobarbitone 20 mg/kg IV over 20 minutes** (further 10 mg/kg doses to 40 mg/kg), maintenance **5 mg/kg/day**; **calcium gluconate 10% 2 mL/kg IV slowly under ECG** for hypocalcaemia - and never use diazepam as first-line. [NNF 2020]",
           "**Ophthalmia neonatorum**: gonococcal - **ceftriaxone 25-50 mg/kg (max 125 mg) IM single dose** (cefotaxime 100 mg/kg in jaundiced or preterm babies); chlamydial - **oral azithromycin 20 mg/kg once daily for 3 days**; plus frequent saline eye cleaning. [Nelson 22e]",
           "**Pustules under 10** and umbilical redness limited to the stump are local bacterial infections: clean with boiled cooled water, apply **gentian violet 0.5% or mupirocin 2% twice daily for 5 days**, and review in 2 days. [PSBI India 2019]",
@@ -314,7 +314,7 @@ const rewrites: Record<string, TopicRewrite> = {
   },
   "pediatrics-immunisation": {
     oneLiner:
-      "The **Universal Immunisation Programme** gives **12 vaccines free against 12 diseases** (plus vitamin A) from birth to 16 years and to pregnant women; the IAP ACVIP 2025 schedule adds optional vaccines on top, and the everyday OPD skill is catch-up: **a dose given is a dose counted - never restart**, respect minimum age and interval, give everything due today, and know the only two true contraindications.",
+      "The **Universal Immunisation Programme** gives free vaccines against **12 diseases** (plus vitamin A) from birth to 16 years and to pregnant women; the IAP ACVIP 2025 schedule adds optional vaccines on top, and the everyday OPD skill is catch-up: **a dose given is a dose counted - never restart**, respect minimum age and interval, give everything due today, and know the only two true contraindications.",
     sections: [
       {
         heading: "Definition and the classification that matters",
@@ -709,7 +709,7 @@ const rewrites: Record<string, TopicRewrite> = {
           "There is **no drug for nutritional growth faltering** - appetite stimulants (cyproheptadine), 'tonics' and protein powders are not recommended; treat the cause and fix the diet. [Ghai 10e 2022]",
           "**Vitamin D3 400 IU orally once daily** from birth to 1 year for breastfed infants; for **nutritional rickets** give **2000 IU daily for at least 12 weeks** (or single-dose stoss therapy 1-5 lakh IU by age, rarely needed) with **calcium 500 mg/day** from diet or supplement. [Global Rickets Consensus 2016]",
           "**Prophylactic iron** under **Anemia Mukt Bharat**: **IFA syrup 1 mL (20 mg elemental iron and 100 microgram folic acid) twice a week from 6 to 59 months**, with an auto-dispenser; give **1 hour before or 2 hours after milk**, and warn that stools turn black and teeth may stain (wipe them). [AMB MoHFW 2018]",
-          "**Therapeutic iron** for anaemia: **elemental iron 3 mg/kg/day orally** as one dose or two divided doses for at least **3 months** after Hb normalises (about 2 months to correct, 1 more to refill stores) - covered in detail under anaemia. [AMB MoHFW 2018]",
+          "**Therapeutic iron** for anaemia: **elemental iron 3 mg/kg/day orally** once daily for about **3 months in total**, continuing **2-3 months after Hb normalises** to refill stores - covered in detail under anaemia. [AMB MoHFW 2018]",
           "**Vitamin A**: **1 lakh IU at 9 months**, then **2 lakh IU every 6 months to 5 years** (9 doses); treatment for xerophthalmia is three doses on **day 1, day 2 and day 14**. [MoHFW 2024]",
           "**Deworming**: **albendazole 200 mg (half tablet or 5 mL suspension) at 1-2 years and 400 mg over 2 years** every 6 months on **National Deworming Days** (10 February and 10 August) - chew and swallow with water after food. [NDD MoHFW 2024]",
           "**Zinc** is given for **14 days (10 mg under 6 months, 20 mg from 6 months)** in every diarrhoea episode, which also helps catch-up growth - routine zinc supplements outside diarrhoea are not used in the programme. [MoHFW 2024]",
@@ -1252,7 +1252,7 @@ const rewrites: Record<string, TopicRewrite> = {
           "**No IV access and facility over 30 minutes away**: **ORS by nasogastric tube 20 mL/kg/hour for 6 hours (120 mL/kg)**, or by mouth if the child can drink; reassess every 1-2 hours, slow for vomiting or distension, and refer if not better after 3 hours. [STOP Diarrhoea MoHFW 2024]",
           "Throughout, **prevent hypoglycaemia** (glucose check, dextrose in fluids or sugar orally), **keep the child warm**, and continue breastfeeding as soon as possible. [WHO 2024]",
           "**SAM with diarrhoea**: **do not use Plan C unless the child is in shock**; rehydrate orally or by nasogastric tube with **ReSoMal 5 mL/kg every 30 minutes for 2 hours, then 5-10 mL/kg/hour for up to 10 hours**, because the atrophic heart fails with standard boluses. [WHO 2023]",
-          "**SAM in shock**: **10-15 mL/kg over 1 hour** of half-strength Darrow's or Ringer lactate with 5% dextrose, repeat once if improving, then switch to ReSoMal - and if not improving, treat as septic shock and transfuse. [WHO 2023]",
+          "**SAM in shock**: **15 mL/kg over 1 hour** of half-strength Darrow's or Ringer lactate with 5% dextrose, repeat once if improving, then switch to ReSoMal - and if not improving, treat as septic shock and transfuse. [WHO 2023]",
           "**Refer** after starting fluids: severe dehydration without IV facility, **young infant**, SAM, severe persistent diarrhoea, dysentery with toxicity or convulsions, suspected **HUS** or surgical abdomen. [WHO IMCI 2014]",
         ],
       },
@@ -1795,7 +1795,7 @@ const rewrites: Record<string, TopicRewrite> = {
           "**Febrile seizure first aid** taught to parents: stay calm, **note the time**, lay the child on the side, clear vomit, **do not restrain, do not put anything in the mouth**, no onion or shoe-smelling, and give rescue midazolam if the fit passes 5 minutes. [Nelson 22e]",
           "**Counselling is the treatment**: febrile seizures are common, frightening and harmless - quote **recurrence 1 in 3** (1 in 2 if first fit under 12 months), **epilepsy 1-2%** after a simple fit and **no brain damage**. [AAP 2008]",
           "**Vaccinations continue on schedule** after a febrile seizure - post-DPT or MMR fever is not a contraindication; keep paracetamol at home for the day of vaccination. [IAP ACVIP 2023-24]",
-          "**Prevention**: complete Hib, PCV, measles-rubella, **typhoid conjugate vaccine** (9-12 months) and influenza vaccine where available; mosquito control and bed nets in malaria and dengue areas. [IAP ACVIP 2023-24]",
+          "**Prevention**: complete Hib, PCV, measles-rubella, **typhoid conjugate vaccine** (from 6-9 months) and influenza vaccine where available; mosquito control and bed nets in malaria and dengue areas. [IAP ACVIP 2023-24]",
         ],
       },
       {
@@ -2131,7 +2131,7 @@ const rewrites: Record<string, TopicRewrite> = {
           "**Packed red cells**: only for **Hb under 4 g/dL, or under 6 g/dL with heart failure, shock or distress** - **10 mL/kg over 3-4 hours**, or **5 mL/kg with furosemide 1 mg/kg IV** if the heart is failing. [WHO 2023]",
           "**Iron poisoning**: refer if over **20 mg/kg elemental** ingested; serum iron at 4-6 hours; **IV desferrioxamine 15 mg/kg/hour** for shock, acidosis, severe GI symptoms or iron over 500 micrograms/dL. [Nelson 22e]",
           "**Prophylactic IFA under Anemia Mukt Bharat** (see table) is stopped while the child is on treatment doses and restarted after cure - the two schedules never run together. [Anemia Mukt Bharat 2018]",
-          "**LBW and preterm babies**: **elemental iron 2 mg/kg/day from 2 weeks to 1 year** (3-4 mg/kg if under 1500 g); term breastfed infants with delayed complementary feeding 1 mg/kg/day from 4-6 months. [IAP 2023]",
+          "**LBW and preterm babies**: **elemental iron 2 mg/kg/day (3 mg/kg if under 1500 g, max 15 mg) from 2-6 weeks to 1 year**; term breastfed infants with delayed complementary feeding 1 mg/kg/day from 4-6 months. [IAP 2023]",
         ],
       },
       {

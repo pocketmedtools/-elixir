@@ -1335,7 +1335,7 @@ const topics: Topic[] = [
           "**Menstrual Hygiene Scheme (2011)** supplies subsidised sanitary napkins to rural adolescent girls through ASHAs, alongside **Jan Aushadhi Suvidha pads at Re 1 each**. [MoHFW 2024]",
           "The **Scheme for Adolescent Girls (formerly SABLA, 2010)** under Mission Saksham Anganwadi and Poshan 2.0 gives out-of-school girls **supplementary nutrition, IFA, health check-ups and life skills** via anganwadis. [MWCD 2022]",
           "The **School Health and Wellness Programme (2020)** under Ayushman Bharat trains **two Health and Wellness Ambassadors per school** to deliver 11 themes including emotional well-being and safe internet use. [MoHFW 2020]",
-          "**RBSK Mobile Health Teams** screen children 0-18 for the **4 Ds - defects at birth, diseases, deficiencies and developmental delays** - visiting schools twice a year. [MoHFW RBSK 2024]",
+          "**RBSK Mobile Health Teams** screen children 0-18 for the **4 Ds - defects at birth, diseases, deficiencies and developmental delays** - visiting Anganwadi centres twice a year and schools once a year. [MoHFW RBSK 2024]",
           "A school health visit covers **growth and BMI, vision, hearing, dental check, Hb, BP, immunisation catch-up, deworming and health education**. [Park 28e]",
           "Children identified at school are referred to **District Early Intervention Centres (DEIC)** for free treatment. [MoHFW RBSK 2024]",
         ],

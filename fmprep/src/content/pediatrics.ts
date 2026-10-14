@@ -83,7 +83,7 @@ topics.push({
         "Advance feeds by **15-20 mL/kg/day** towards 150-180 mL/kg/day - faster advancement raises the risk of necrotising enterocolitis. [NNF 2020]",
         "Feed order of choice: **expressed breast milk**, then donor milk from a human milk bank, and formula last - each step down loses immune protection. [NNF 2020]",
         "Oral vitamin D **400 IU daily to every infant from birth** - breast milk is low in vitamin D and Indian infants get little sun on the skin. [NNF 2020]",
-        "Elemental iron **2 mg/kg/day from 2 weeks of age** in low birth weight babies, continued to 1 year - they are born with smaller iron stores. [NNF 2020]",
+        "Elemental iron **2 mg/kg/day (3 mg/kg if under 1500 g) from 2-6 weeks of age** in low birth weight babies, continued to 1 year - they are born with smaller iron stores. [NNF 2020]",
         "Start the iron at **6-8 weeks** in stable preterms - earlier iron adds oxidative stress while erythropoiesis is still suppressed. [NNF 2020]",
       ],
     },
@@ -728,7 +728,7 @@ topics.push({
         "The IAP schedule contains everything in the UIP and adds vaccines a family may choose to pay for - UIP is the floor, not the ceiling. [IAP ACVIP 2023-24]",
         "Know both schedules and which vaccines are free - a standard examiner demand. [IAP ACVIP 2023-24]",
         "Extra IAP vaccine: **hepatitis A, 2 doses from 12 months** - as sanitation improves, first infection shifts to an age when it is symptomatic. [IAP 2023]",
-        "Extra IAP vaccine: **typhoid conjugate vaccine, single dose from 9-12 months** with a booster - conjugation works under 2 years, plain Vi did not. [IAP 2023]",
+        "Extra IAP vaccine: **typhoid conjugate vaccine, single dose from 6-9 months** - conjugation works under 2 years, plain Vi did not. [IAP 2023]",
         "Extra IAP vaccine: **varicella, 2 doses from 15 months** - one dose leaves enough breakthrough varicella to keep transmission going. [IAP ACVIP 2023-24]",
         "Extra IAP vaccine: **influenza, annually from 6 months** - repeated yearly because circulating strains and the vaccine composition change. [IAP ACVIP 2023-24]",
         "HPV for immunocompetent girls aged **9-15 years may be a single dose** (IAP 2025; 2 doses for boys) - the younger response is strong enough that extra doses add little. [IAP ACVIP 2025]",
@@ -1153,7 +1153,7 @@ topics.push({
   mcqs: [
     {
       id: "pediatrics-immunisation-q1",
-      stem: "A 14-month-old boy has an immunisation card showing BCG, OPV-0 and hepatitis B at birth and pentavalent-1, OPV-1 at 6 weeks only. He is well. What is the most appropriate action today?",
+      stem: "An 11-month-old boy has an immunisation card showing BCG, OPV-0 and hepatitis B at birth and pentavalent-1, OPV-1 at 6 weeks only. He is well. What is the most appropriate action today?",
       options: [
         "Restart the primary series from the beginning with pentavalent-1",
         "Give pentavalent-2, OPV-2, MR-1 and vitamin A today, and complete the remaining doses at 4-week intervals",
@@ -1163,7 +1163,7 @@ topics.push({
       ],
       answer: 1,
       explanation:
-        "A schedule is never restarted, and all due vaccines can be given at the same visit at different sites, so pentavalent-2, OPV-2, MR-1 (due from 9 months) and vitamin A should all be given today with the rest completed at minimum intervals. Restarting wastes doses and delays protection. Deferring to 18 months leaves him unprotected through the highest-risk period. Giving one injection per visit multiplies visits and is the classic route to another default. Under UIP pentavalent may still be used up to 1 year and, where a child has just crossed it, programme practice is to complete the pentavalent series where available rather than to strip out the hepatitis B and Hib components, which he still needs.",
+        "A schedule is never restarted, and all due vaccines can be given at the same visit at different sites, so pentavalent-2, OPV-2, MR-1 (due from 9 months) and vitamin A should all be given today with the rest completed at minimum intervals. Restarting wastes doses and delays protection. Deferring to 18 months leaves him unprotected through the highest-risk period. Giving one injection per visit multiplies visits and is the classic route to another default. At 11 months he is still inside the UIP 1-year limit for pentavalent, so the series is completed with pentavalent; switching to DPT and dropping the hepatitis B and Hib components is the rule only when catch-up starts after the first birthday.",
       difficulty: "moderate",
     },
     {
@@ -1213,17 +1213,17 @@ topics.push({
     },
     {
       id: "pediatrics-immunisation-q5",
-      stem: "A 4-month-old infant, whose only vaccination is BCG at birth, is brought for catch-up. Which vaccine can NOT be given as part of the catch-up plan?",
+      stem: "A 4-month-old infant, whose only vaccination is BCG at birth, is brought to a government clinic for catch-up. What is the correct plan under the UIP?",
       options: [
-        "Pentavalent",
-        "Oral polio vaccine",
-        "Fractional inactivated polio vaccine",
-        "Rotavirus vaccine",
-        "Pneumococcal conjugate vaccine",
+        "Omit rotavirus vaccine because the first dose is past 15 weeks, and give the other vaccines",
+        "Restart with BCG because there is no scar, then begin the primary series",
+        "Give pentavalent-1, OPV-1, rotavirus-1, fIPV-1 and PCV-1 today and continue at 4-week intervals",
+        "Wait until 6 months and give all the primary doses together then",
+        "Give only the oral vaccines today and the injections one at a time at monthly visits",
       ],
-      answer: 3,
+      answer: 2,
       explanation:
-        "Rotavirus vaccine is the exception in the schedule with a hard age ceiling driven by the intussusception signal: WHO caps the first dose at 15 weeks and the Indian programme requires the first dose before 1 year, so a first dose at 4 months falls outside the classical window and in strict practice the vaccine is omitted rather than started late. Pentavalent, OPV, fIPV and PCV all have no upper limit within the first year and are given at minimum 4-week intervals to complete the primary series. This question tests the one vaccine that is dropped rather than delayed.",
+        "A schedule is never restarted and every due vaccine is given at the same visit: pentavalent, OPV, rotavirus, fIPV and PCV can all be started at 4 months and repeated at minimum 4-week intervals. Rotavirus does have an age ceiling because of the intussusception signal, but under the UIP it is the first dose before 1 year (WHO prefers by 15 weeks), so a 4-month-old still gets it - omitting it is the error being tested. BCG is not repeated for a missing scar. Waiting until 6 months, or splitting injections over monthly visits, prolongs the period without protection and multiplies the chances of default.",
       difficulty: "hard",
     },
     {
@@ -1780,7 +1780,7 @@ topics.push({
       ],
       answer: 1,
       explanation:
-        "Prematurity is corrected by subtracting the weeks short of 40 from the chronological age - ten weeks here, giving a corrected age of about 3.5 months - and weight is corrected until 1 year, length until 18 months and head circumference until 18-24 months. Diagnosing growth failure from an uncorrected plot is the classic error and leads to unnecessary investigation and formula. There is no adult chart for infants, correction is not abandoned at 3 months, and starting fortified feeds on an uncorrected plot medicalises a normally growing ex-preterm.",
+        "Prematurity is corrected by subtracting the weeks short of 40 from the chronological age - ten weeks here, giving a corrected age of about 3.5 months - and correction is continued for weight, length and head circumference until 2 years of age. Diagnosing growth failure from an uncorrected plot is the classic error and leads to unnecessary investigation and formula. There is no adult chart for infants, correction is not abandoned at 3 months, and starting fortified feeds on an uncorrected plot medicalises a normally growing ex-preterm.",
       difficulty: "moderate",
     },
     {
@@ -2167,9 +2167,9 @@ topics.push({
             "Rule 3: when to return immediately. Rule 4: when to return for follow-up - the mother becomes the **monitor** the moment the child leaves. [WHO 2023]",
             "Return immediately if the child cannot drink or breastfeed, or becomes sicker - both are **danger signs**, which reclassify the child as pink. [WHO 2023]",
             "Return immediately if he develops fever, or fast or difficult breathing - **fast breathing** is how a cold declares it has become pneumonia. [WHO 2023]",
-            "**Follow up pneumonia in 2 days** - an effective antibiotic slows the respiratory rate and settles the fever within that time. [WHO 2023]",
+            "**Follow up pneumonia in 3 days** (2 days in the older Indian chart) - an effective antibiotic slows the respiratory rate and settles the fever within that time. [WHO 2023]",
             "If breathing has slowed and the fever settled, complete the course - stopping early leaves a **partially treated** pneumococcus. [WHO 2023]",
-            "If unchanged, change the antibiotic or refer - **no improvement at 48 hours** means resistance, an empyema or the wrong diagnosis. [WHO 2023]",
+            "If unchanged, change the antibiotic or refer - **no improvement by day 3** means resistance, an empyema or the wrong diagnosis. [WHO 2023]",
             "If worse, or a danger sign has appeared, refer urgently - the child has crossed from yellow to **pink** and needs a parenteral first dose. [WHO 2023]",
             "Use checking questions - ask the mother to say back what she will do. [WHO 2023]",
             "Demonstrate the first dose in the clinic - **what the mother has seen done** she can repeat at home. [WHO 2023]",
@@ -2358,14 +2358,14 @@ topics.push({
       stem: "In a calm 8-month-old with cough, the respiratory rate counted over a full minute is 54 per minute. There is no chest indrawing, no stridor and no general danger sign. What is the IMNCI classification and treatment?",
       options: [
         "No pneumonia - cough or cold; home remedies and advice",
-        "Pneumonia; oral amoxicillin 40 mg/kg/dose twice daily for 5 days and follow-up in 2 days",
+        "Pneumonia; oral amoxicillin 40 mg/kg/dose twice daily for 5 days and follow-up in 3 days",
         "Severe pneumonia; refer after the first dose of injectable antibiotic",
         "Bronchiolitis; nebulised salbutamol and review",
         "Asthma; inhaled salbutamol via a spacer",
       ],
       answer: 1,
       explanation:
-        "At 2-11 months the fast-breathing cut-off is 50 per minute or more, so 54 with no indrawing, stridor or danger sign is the yellow classification of pneumonia, treated at home with oral amoxicillin 40 mg/kg/dose twice daily for 5 days and review in 2 days. Calling it cough and cold ignores the fast breathing and is the classic under-treatment error. Severe pneumonia requires a danger sign, stridor in a calm child or a saturation below 90%. IMNCI is syndromic and does not offer bronchiolitis or asthma as classifications at this level, and neither salbutamol nor referral is indicated here.",
+        "At 2-11 months the fast-breathing cut-off is 50 per minute or more, so 54 with no indrawing, stridor or danger sign is the yellow classification of pneumonia, treated at home with oral amoxicillin 40 mg/kg/dose twice daily for 5 days and review in 3 days. Calling it cough and cold ignores the fast breathing and is the classic under-treatment error. Severe pneumonia requires a danger sign, stridor in a calm child or a saturation below 90%. IMNCI is syndromic and does not offer bronchiolitis or asthma as classifications at this level, and neither salbutamol nor referral is indicated here.",
       difficulty: "easy",
     },
     {
@@ -3595,7 +3595,7 @@ topics.push({
         "**Do not rely on the Widal test in the first week** - antibody has not yet risen, so a negative result is meaningless. [IAP 2023]",
         "Enteric fever: **azithromycin 20 mg/kg daily for 7 days**, or cefixime 20 mg/kg/day for 14 days - azithromycin reaches the intracellular organism. [IAP 2023]",
         "The toxic or vomiting child gets **ceftriaxone 75-100 mg/kg/day** until oral therapy is tolerated - absorption is unreliable when vomiting. [IAP 2023]",
-        "**Typhoid conjugate vaccine at 9-12 months** is the prevention - it is the only typhoid vaccine that works under 2 years. [IAP ACVIP 2023-24]",
+        "**Typhoid conjugate vaccine from 6-9 months** is the prevention - it is the only typhoid vaccine that works under 2 years. [IAP ACVIP 2023-24]",
         "**Dengue is fever with flushing, retro-orbital pain, myalgia and a positive tourniquet test** - and paracetamol is the only antipyretic allowed. [WHO 2023]",
         "**Dengue warning signs mark the critical phase on days 3-6, as the fever falls**: abdominal pain, persistent vomiting, mucosal bleeding, lethargy. [WHO 2023]",
         "**Hepatomegaly, a rising haematocrit and a falling platelet count** are the signs of plasma leak - admit before shock appears. [WHO 2023]",
@@ -3960,7 +3960,7 @@ topics.push({
       id: "pediatrics-fever-febrile-seizure-q4",
       stem: "A mother asks for a fever medicine for her 10 kg 2-year-old, who has a viral fever of 39 degrees C and is irritable. Which prescription is correct?",
       options: [
-        "Paracetamol 150 mg (6 mL of 125 mg/5 mL syrup) every 4-6 hours as needed, not more than 5 doses in 24 hours",
+        "Paracetamol 150 mg (6 mL of 125 mg/5 mL syrup) every 6 hours as needed, not more than 4 doses in 24 hours",
         "Nimesulide 50 mg twice daily for 3 days",
         "Aspirin 100 mg 6-hourly",
         "Paracetamol 5 mg/kg alternating with ibuprofen 20 mg/kg every 2 hours",
@@ -3968,7 +3968,7 @@ topics.push({
       ],
       answer: 0,
       explanation:
-        "Paracetamol 15 mg/kg per dose - 150 mg for a 10 kg child, which is 6 mL of the 125 mg/5 mL syrup - every 4-6 hours as needed, with a ceiling of 5 doses a day, is the standard and safe prescription, written in millilitres against the stated concentration. Nimesulide is banned in India below 12 years for hepatotoxicity. Aspirin is avoided in febrile children because of Reye syndrome and would be dangerous if this were dengue or varicella. The alternating regimen uses a subtherapeutic paracetamol dose, a double ibuprofen dose and a dangerous frequency. Intramuscular NSAID injections have no place in the management of fever.",
+        "Paracetamol 15 mg/kg per dose - 150 mg for a 10 kg child, which is 6 mL of the 125 mg/5 mL syrup - every 6 hours as needed (never more often than 4-hourly), with a ceiling of 4 doses or 60 mg/kg a day, is the standard and safe prescription, written in millilitres against the stated concentration. Nimesulide is banned in India below 12 years for hepatotoxicity. Aspirin is avoided in febrile children because of Reye syndrome and would be dangerous if this were dengue or varicella. The alternating regimen uses a subtherapeutic paracetamol dose, a double ibuprofen dose and a dangerous frequency. Intramuscular NSAID injections have no place in the management of fever.",
       difficulty: "easy",
     },
     {
@@ -4160,7 +4160,7 @@ topics.push({
       points: [
         "**Delayed cord clamping for 1-3 minutes** is the first iron intervention - it transfers a large share of the newborn's iron endowment. [WHO 2023]",
         "**Exclusive breastfeeding for 6 months, then iron-rich complementary foods** are the other two infant interventions - stores run out at 6 months. [WHO 2023]",
-        "**Low birth weight and preterm babies get elemental iron 2 mg/kg/day from 2 weeks of age until 1 year** - their stores were never laid down. [IAP 2023]",
+        "**Low birth weight and preterm babies get elemental iron 2 mg/kg/day (3 mg/kg if under 1500 g) from 2-6 weeks of age until 1 year** - their stores were never laid down. [IAP 2023]",
         "**A term breastfed infant whose complementary feeding is delayed benefits from 1 mg/kg/day from 4-6 months** - the fetal store is finite. [IAP 2023]",
         "**The mother's anaemia is the child's** - iron stores at birth mirror maternal status. [Anemia Mukt Bharat 2018]",
         "So **antenatal IFA, deworming and treating maternal anaemia are paediatric prevention** - the store is built in utero. [Anemia Mukt Bharat 2018]",
@@ -6709,7 +6709,7 @@ topics.push({
       ],
       answer: 0,
       explanation:
-        "A plaque that scrapes off to leave a raw, bleeding base is pseudomembranous candidiasis, not milk curds - milk curds wipe away leaving normal pink mucosa with no erythema, so option C is wrong. In a well, immunocompetent infant the first-line agent is a topical polyene: nystatin oral suspension 100,000 units/mL, 1 mL four times daily, given after feeds and applied to the whole mucosa, for 7-14 days and at least 48 hours beyond clinical cure. Systemic fluconazole is reserved for moderate to severe disease, immunosuppression, oesophageal involvement or failure of topical therapy, so option B over-treats. Miconazole oral gel is effective but the adult or over-2-years dose is 2.5 mL; the dose from 1 month to 1 year is 1.25 mL, and UK and EU guidance contraindicates the gel under 4 months because of the choking risk, so option D is both the wrong dose and the wrong age. Gentian violet is at most a last-resort agent in a setting with no alternative, is used at 0.5-1% and not 2%, and stronger solutions ulcerate the mucosa.",
+        "A plaque that scrapes off to leave a raw, bleeding base is pseudomembranous candidiasis, not milk curds - milk curds wipe away leaving normal pink mucosa with no erythema, so option C is wrong. In a well, immunocompetent infant the first-line agent is a topical polyene: nystatin oral suspension 100,000 units/mL, 1 mL four times daily, given after feeds and applied to the whole mucosa, for 7-14 days and at least 48 hours beyond clinical cure. Systemic fluconazole is reserved for moderate to severe disease, immunosuppression, oesophageal involvement or failure of topical therapy, so option B over-treats. Miconazole oral gel is effective but the adult or over-2-years dose is 2.5 mL; the dose from 4 months to 2 years is 1.25 mL, and UK and EU guidance contraindicates the gel under 4 months because of the choking risk, so option D is both the wrong dose and the wrong age. Gentian violet is at most a last-resort agent in a setting with no alternative, is used at 0.5-1% and not 2%, and stronger solutions ulcerate the mucosa.",
       difficulty: "easy",
     },
     {
@@ -7084,7 +7084,7 @@ const cases: ClinicalCase[] = [
         heading: "Assess and classify the main symptoms",
         points: [
           "Cough: 4 days, so under 14 days. Count breaths for one full minute with the child calm - 46 per minute at 18 months is fast breathing because the cut-off from 12 months to 5 years is 40 (it is 50 from 2 to 12 months) - look for lower chest indrawing with the child lying quietly, listen for stridor in a calm child, and listen for wheeze; if there is wheeze, give salbutamol by MDI with spacer or nebuliser up to three times 15-20 minutes apart and count again before classifying.",
-          "No danger sign, no chest indrawing, no stridor, fast breathing present: this is pneumonia, a yellow classification - oral amoxicillin, a safe remedy to soothe the throat, the signs to return immediately, and follow-up in 2 days; chest indrawing or stridor in a calm child is severe pneumonia or very severe disease in the Indian chart booklet and is pink.",
+          "No danger sign, no chest indrawing, no stridor, fast breathing present: this is pneumonia, a yellow classification - oral amoxicillin, a safe remedy to soothe the throat, the signs to return immediately, and follow-up in 3 days; stridor in a calm child or a saturation under 90% is severe pneumonia (pink), while chest indrawing without a danger sign is pneumonia treated with oral amoxicillin under WHO 2014/2024 (the older Indian chart booklet classed it pink).",
           "Diarrhoea: 3 days, so acute, and no blood. Assess the four signs - she is restless and irritable, her eyes are sunken, she drinks eagerly and is thirsty, and the skin pinch goes back slowly - and with two or more signs from the middle column this is some dehydration, yellow: Plan B at the facility, zinc, and continued feeding.",
           "Fever: 38.2 degrees C axillary for 3 days, so under 7 days. Decide the malaria risk of the area, do a rapid diagnostic test and a smear for every fever in a risk area, look for stiff neck, a runny nose, a measles rash with cough, red eyes or coryza, and any other obvious cause; no stiff neck and no danger sign excludes very severe febrile disease, and a negative test with a runny nose and pneumonia as the cause makes this fever - malaria unlikely, with paracetamol for 38.5 degrees C or more and review in 2 days if the fever persists.",
           "Ear problem: ask about ear pain and discharge and feel behind the ears; no pain, no discharge and no tender swelling over the mastoid is no ear infection, and you should still say that you asked.",
@@ -7115,7 +7115,7 @@ const cases: ClinicalCase[] = [
         points: [
           "Teach and then check with open questions: how many times a day and for how many days the amoxicillin is given, how to prepare ORS (one full sachet in one litre of clean water, used within 24 hours), how to give zinc, and what to feed during and after the illness - more frequent breastfeeds and an extra meal a day for 2 weeks after recovery.",
           "State the signs for immediate return in the mother's words: not able to drink or breastfeed, becomes sicker, develops fever, fast or difficult breathing, blood in the stool, or drinking poorly - and write them on the card.",
-          "Give the follow-up dates: 2 days for the pneumonia and the fever, 5 days for the diarrhoea if it is not improving, 14 days for the anaemia and 30 days for the feeding problem - and the earliest date is the one written on the card.",
+          "Give the follow-up dates: 3 days for the pneumonia, 2 days for the fever if it persists, 5 days for the diarrhoea if it is not improving and for the feeding problem, and 14 days for the anaemia and the low weight - and the earliest date is the one written on the card.",
           "If she had had any pink classification, the pre-referral steps would be the first dose of intramuscular ampicillin 50 mg/kg and gentamicin 7.5 mg/kg, intramuscular artesunate (2.4 mg/kg by the national programme, 3 mg/kg for a child under 20 kg by WHO 2015) in a malaria-risk area with very severe febrile disease, treatment of hypoglycaemia with sugar water or 10% dextrose, keeping the child warm, sips of ORS on the way, a referral note and, where possible, the 108 ambulance rather than telling the family to go.",
         ],
       },
@@ -7127,7 +7127,7 @@ const cases: ClinicalCase[] = [
         diagnosis: "Pneumonia (yellow) rather than severe pneumonia or very severe disease (pink)",
         forIt: "Cough for 4 days with fast breathing at 46 per minute, above the cut-off of 40 for a child of 12 months to 5 years.",
         againstIt:
-          "No general danger sign, no chest indrawing, no stridor in a calm child and, where a pulse oximeter is available, an oxygen saturation of 90% or more; any one of these would make her pink.",
+          "No general danger sign, no stridor in a calm child and, where a pulse oximeter is available, an oxygen saturation of 90% or more; any one of these would make her pink (chest indrawing without a danger sign would still be yellow pneumonia under WHO 2014/2024).",
       },
       {
         diagnosis: "Bronchiolitis or wheeze-associated lower respiratory illness",
@@ -7207,7 +7207,7 @@ const cases: ClinicalCase[] = [
       {
         heading: "Follow-up visits and what to do at each",
         points: [
-          "Pneumonia at 2 days: a danger sign, chest indrawing or stridor means urgent referral with the first dose of injectable antibiotics; fast breathing that is unchanged means changing to the second-line antibiotic or referring, and referral in any child who has had measles in the last 3 months; slower breathing, less fever and better eating means completing the 5 days.",
+          "Pneumonia at 3 days: a danger sign, chest indrawing or stridor means urgent referral with the first dose of injectable antibiotics; fast breathing that is unchanged means changing to the second-line antibiotic or referring, and referral in any child who has had measles in the last 3 months; slower breathing, less fever and better eating means completing the 5 days.",
           "Fever at 2 days if it persists: repeat the malaria test, reassess for a stiff neck and a new cause, and refer if it has lasted 7 days.",
           "Anaemia at 14 days: continue iron for 2-3 months if the pallor is improving, and refer if pallor persists after 2 months of iron or worsens at any visit.",
           "Feeding and moderate acute malnutrition at 30 days: reweigh and remeasure MUAC, repeat the feeding assessment, and refer for severe acute malnutrition or if she has lost weight; the Anganwadi weighs her monthly in between.",
