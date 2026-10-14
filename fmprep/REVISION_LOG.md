@@ -231,3 +231,8 @@ Crosscheck queue (3 subjects at a time): cardiovascular, respiratory, endocrine,
 - Paediatrics crosschecked (23 topics): MCQ q1 and q5 immunisation keys rewritten correctly; TCV 6-9 months; fIPV 3rd dose; newborn feeding and dextrose volumes; IMNCI 3-day pneumonia follow-up; paracetamol 6-hourly max 4 doses; LBW iron; Kawasaki echo timing; WHO PSBI gentamicin doses.
 - Preventive crosschecked (26 topics): AEFI forms 10 and 70 days; NTEP LTFU 1 month; Kartar Singh 1973 norms; NHP 2017 targets; RBSK 32 conditions; quitline 1800-112-356; WHO missed-pill rule (3 or more); DMPA window; HPV screening in HIV from 25.
 - ALL 20 SUBJECTS CROSSCHECKED.
+
+## Documents
+- PDFs now open as their real pages (layout, figures, tables as printed), drawn as you scroll, with zoom, full screen and the last page remembered; Text view stays for searching.
+- Word (.docx) files open with headings, bold, lists, tables and images kept; page view and full screen work as for HTML.
+- Fix: pdf.js needed Map.getOrInsertComputed, missing on Android web views - polyfilled.

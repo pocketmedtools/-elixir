@@ -179,6 +179,39 @@ check(
 await page.getByRole("button", { name: /^←/ }).first().click();
 await page.waitForTimeout(500);
 
+// A PDF is shown as its real pages; a Word file keeps headings and tables
+{
+  const maker = await browser.newPage();
+  await maker.setContent('<h1>Smoke PDF Title</h1><p style="page-break-after:always">One</p><p>Two</p>');
+  const PDF = join(tmpdir(), "fmprep-smoke-pdf.pdf");
+  await maker.pdf({ path: PDF });
+  await maker.close();
+  const WORD = new URL("./fixtures/fmprep-smoke-word.docx", import.meta.url).pathname;
+  await page.setInputFiles('input[type="file"]', [PDF, WORD]);
+  await page.waitForTimeout(2500);
+  await page.getByRole("button", { name: /fmprep-smoke-pdf/i }).first().click();
+  await page.waitForTimeout(3000);
+  const drawn = await page.evaluate(() =>
+    [...document.querySelectorAll("canvas")].some((c) => {
+      const ctx = c.getContext("2d");
+      if (!ctx || !c.width) return false;
+      const d = ctx.getImageData(0, 0, Math.min(c.width, 400), Math.min(c.height, 200)).data;
+      for (let i = 0; i < d.length; i += 4) if (d[i] < 128) return true;
+      return false;
+    }),
+  );
+  check("PDF opens as drawn pages", drawn);
+  await page.getByRole("button", { name: /^←/ }).first().click();
+  await page.waitForTimeout(600);
+  await page.getByRole("button", { name: /fmprep-smoke-word/i }).first().click();
+  await page.waitForTimeout(2500);
+  const h1 = await page.frameLocator("iframe").first().locator("h1").innerText().catch(() => "");
+  const cells = await page.frameLocator("iframe").first().locator("td").count().catch(() => 0);
+  check("Word file keeps headings and tables", /Smoke Word Heading/.test(h1) && cells === 2, h1);
+  await page.getByRole("button", { name: /^←/ }).first().click();
+  await page.waitForTimeout(500);
+}
+
 // Search spans library, papers and documents
 await goHome(page);
 await page.getByRole("button", { name: /Search notes/i }).first().click();

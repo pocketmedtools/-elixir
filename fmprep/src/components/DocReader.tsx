@@ -6,8 +6,9 @@
  * instead of freezing the phone, and the last block is still the last word of
  * the file. Position is remembered per document.
  */
-import { useEffect, useMemo, useRef, useState } from "react";
-import { getDoc, htmlToText, wordCount, type StudyDoc } from "../lib/docs";
+import { useCallback, useEffect, useMemo, useRef, useState } from "react";
+import { docxToHtml, getDoc, htmlToText, wordCount, type StudyDoc } from "../lib/docs";
+import PdfPages from "./PdfPages";
 import {
   docModeOf,
   docPagePosition,
@@ -124,6 +125,31 @@ export default function DocReader({
      A small close button floats in the corner; the browser's fullscreen is
      asked for as well where the device allows it, to hide the status bar. */
   const [full, setFull] = useState(false);
+  /* A PDF is shown as its real pages (layout, figures, tables as printed),
+     with the extracted text one tap away for searching. */
+  const pageKey = `FMPREP_PDFPAGE_${docId}`;
+  const [pdfPage, setPdfPage] = useState(() => {
+    try {
+      return Number(localStorage.getItem(pageKey)) || 1;
+    } catch {
+      return 1;
+    }
+  });
+  const startPdfPage = useRef(pdfPage);
+  const [zoom, setZoom] = useState(1);
+  const fullScroll = useRef<HTMLDivElement | null>(null);
+  const [fullScrollEl, setFullScrollEl] = useState<HTMLDivElement | null>(null);
+  const notePage = useCallback(
+    (n: number) => {
+      setPdfPage(n);
+      try {
+        localStorage.setItem(pageKey, String(n));
+      } catch {
+        /* storage blocked */
+      }
+    },
+    [pageKey],
+  );
   /* Each frame is built when it is shown, carrying the position to return to,
      so switching views or reopening the app lands on the same passage. */
   const startAt = (mode: DocMode) => {
@@ -187,12 +213,13 @@ export default function DocReader({
   // Reopened in full screen if that is how it was left.
   const autoFull = useRef(savedMode === "full" && !initialQuery);
   useEffect(() => {
-    if (pageHtml !== null && autoFull.current) {
+    const ready = pageHtml !== null || (doc?.kind === "pdf" && !!doc.blob);
+    if (ready && autoFull.current) {
       autoFull.current = false;
       openFull();
     }
     // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [pageHtml]);
+  }, [pageHtml, doc]);
   // Leaving the reader while in full screen must still bring the bar back.
   useEffect(() => () => void setImmersive(false), []);
   useEffect(() => {
@@ -217,6 +244,11 @@ export default function DocReader({
       setDoc(found);
       setBlocks(1);
       if (found.kind === "image" && found.blob) setImageUrl(URL.createObjectURL(found.blob));
+      // A Word file keeps its headings, tables and images: shown as a page.
+      if (found.kind === "docx" && found.blob)
+        void docxToHtml(found.blob, found.title)
+          .then((h) => alive && setPageHtml(h))
+          .catch(() => undefined);
       if (found.kind === "html" && found.blob)
         void found.blob.text().then((h) => {
           if (!alive) return;
@@ -337,6 +369,9 @@ export default function DocReader({
     );
   }
 
+  const isPdf = doc.kind === "pdf" && !!doc.blob;
+  const hasPage = pageHtml !== null || isPdf;
+
   const download = () => {
     if (!doc.blob) return;
     const url = URL.createObjectURL(doc.blob);
@@ -419,7 +454,7 @@ export default function DocReader({
         </p>
       )}
 
-      {pageHtml !== null && (
+      {hasPage && (
         <div className="mt-4 grid grid-cols-3 gap-2">
           <button
             type="button"
@@ -443,6 +478,38 @@ export default function DocReader({
             Full screen
           </button>
         </div>
+      )}
+
+      {isPdf && full && doc.blob && (
+        <div ref={fullRef} className="fixed inset-0 z-[300] flex flex-col" style={{ background: "#3a3530", paddingTop: "var(--sat)" }}>
+          <div
+            ref={(el) => {
+              fullScroll.current = el;
+              setFullScrollEl(el);
+            }}
+            className="flex-1 overflow-y-auto px-1 pb-10"
+          >
+            <PdfPages blob={doc.blob} zoom={zoom} startPage={pdfPage} onPage={notePage} scrollRoot={fullScrollEl} />
+          </div>
+          <div className="absolute right-2 flex gap-1.5" style={{ top: "calc(var(--sat) + 8px)" }}>
+            <button type="button" onClick={() => setZoom((z) => Math.max(1, +(z - 0.25).toFixed(2)))} className="h-8 w-8 rounded-full text-sm font-bold text-white" style={{ background: "rgba(0,0,0,.45)" }}>-</button>
+            <button type="button" onClick={() => setZoom((z) => Math.min(3, +(z + 0.25).toFixed(2)))} className="h-8 w-8 rounded-full text-sm font-bold text-white" style={{ background: "rgba(0,0,0,.45)" }}>+</button>
+            <button type="button" onClick={closeFull} aria-label="Close full screen" className="h-8 w-8 rounded-full text-sm font-bold text-white" style={{ background: "rgba(0,0,0,.45)" }}>✕</button>
+          </div>
+        </div>
+      )}
+
+      {isPdf && asPage && !full && doc.blob && (
+        <>
+          <div className="mt-3 flex items-center justify-between text-[13px] text-slate-600">
+            <span>Page {pdfPage}{doc.pages ? ` of ${doc.pages}` : ""}</span>
+            <span className="flex gap-1.5">
+              <button type="button" onClick={() => setZoom((z) => Math.max(1, +(z - 0.25).toFixed(2)))} className="rounded-lg border border-slate-300 bg-white px-2.5 py-1 font-bold">Zoom -</button>
+              <button type="button" onClick={() => setZoom((z) => Math.min(3, +(z + 0.25).toFixed(2)))} className="rounded-lg border border-slate-300 bg-white px-2.5 py-1 font-bold">Zoom +</button>
+            </span>
+          </div>
+          <PdfPages blob={doc.blob} zoom={zoom} startPage={startPdfPage.current} onPage={notePage} />
+        </>
       )}
 
       {pageHtml !== null && full && (
@@ -485,7 +552,7 @@ export default function DocReader({
         <img src={imageUrl} alt={doc.title} className="mt-4 w-full rounded-xl border border-slate-200" />
       )}
 
-      {doc.text && !(pageHtml !== null && asPage) && (
+      {doc.text && !(hasPage && asPage) && (
         <>
           <div className="mt-4">
             <input

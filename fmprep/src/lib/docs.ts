@@ -207,15 +207,38 @@ function kindFor(file: { name: string; type: string }): DocKind {
   return "other";
 }
 
+let pdfjsReady: Promise<typeof import("pdfjs-dist")> | null = null;
+/** pdf.js with its worker, loaded once on demand. */
+export function loadPdfjs(): Promise<typeof import("pdfjs-dist")> {
+  if (!pdfjsReady) {
+    pdfjsReady = (async () => {
+      // Loaded on demand so the reader's first paint never waits for the PDF engine.
+      const pdfjs = await import("pdfjs-dist");
+      // The worker is an ES module, so it is handed over as a live port built by
+      // the bundler rather than as a script URL, which would be loaded classically
+      // and fail.
+      const PdfWorker = (await import("pdfjs-dist/build/pdf.worker.min.mjs?worker")).default;
+      pdfjs.GlobalWorkerOptions.workerPort = new PdfWorker();
+      return pdfjs;
+    })();
+  }
+  return pdfjsReady;
+}
+
+/** A Word file as an HTML page, keeping headings, lists, tables, bold and images. */
+export async function docxToHtml(blob: Blob, title: string): Promise<string> {
+  const mammoth = await import("mammoth/mammoth.browser");
+  const result = await mammoth.convertToHtml({ arrayBuffer: await blob.arrayBuffer() });
+  const esc = title.replace(/[<&>]/g, "");
+  return `<!doctype html><html><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>${esc}</title>
+<style>body{font-family:Georgia,"Times New Roman",serif;line-height:1.6;color:#1f1a14;max-width:820px;margin:0 auto;padding:18px 16px 48px;font-size:17px;overflow-wrap:break-word}
+h1,h2,h3,h4{font-family:system-ui,sans-serif;color:#14532d;line-height:1.3}table{border-collapse:collapse;width:100%;margin:12px 0}
+td,th{border:1px solid #c9b38f;padding:6px 8px;vertical-align:top}th{background:#efe3cc}img{max-width:100%;height:auto}</style></head>
+<body>${result.value}</body></html>`;
+}
+
 async function pdfToText(file: File): Promise<{ text: string; pages: number }> {
-  // Loaded on demand so the reader's first paint never waits for the PDF engine.
-  const pdfjs = await import("pdfjs-dist");
-  // The worker is an ES module, so it is handed over as a live port built by
-  // the bundler rather than as a script URL, which would be loaded classically
-  // and fail. Extraction then runs off the main thread and the page stays
-  // responsive while a long PDF is read.
-  const PdfWorker = (await import("pdfjs-dist/build/pdf.worker.min.mjs?worker")).default;
-  pdfjs.GlobalWorkerOptions.workerPort = new PdfWorker();
+  const pdfjs = await loadPdfjs();
   const data = new Uint8Array(await file.arrayBuffer());
   const doc = await pdfjs.getDocument({ data }).promise;
   const chunks: string[] = [];
