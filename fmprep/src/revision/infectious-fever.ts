@@ -2,6 +2,170 @@ import type { RevisionSet } from "./index";
 
 const revision: RevisionSet = {
   "infectious-fever-acute-undifferentiated-fever": {
+    notes: {
+      sections: [
+        {
+          title: "Definition and key facts",
+          points: [
+            "**Fever** is an oral temperature of **38.0 C or more** from a raised hypothalamic set-point.",
+            "**Acute undifferentiated fever** is fever of **under 14 days with no localising focus**.",
+            "It is a working label that must be replaced by a cause within 5-7 days.",
+            "**Malaria, dengue, scrub typhus, enteric fever and leptospirosis** cause almost all the deaths.",
+            "AUF peaks after the monsoon, **July to November**, filling 20-40% of OPD attendances.",
+            "About **30-40% stay undiagnosed**; most are self-limiting viral fevers needing follow-up only.",
+          ],
+        },
+        {
+          title: "Classification that matters",
+          points: [
+            "Classify by syndrome: **fever plus what**.",
+            "Syndromes are fever alone, or with thrombocytopenia, rash, jaundice, altered sensorium, ARDS or AKI.",
+            "By duration: acute under 2 weeks, prolonged fever 2-3 weeks.",
+            "**Pyrexia of unknown origin** is over 38.3 C for over 3 weeks, undiagnosed after basic work-up.",
+            "Fever with shock, bleeding, breathlessness, drowsiness, oliguria or jaundice is **sepsis or severe tropical fever**.",
+          ],
+        },
+        {
+          title: "How it happens (pathophysiology)",
+          points: [
+            "Microbial products (PAMPs) bind **Toll-like receptors** on monocytes and macrophages.",
+            "These cells release the pyrogens **IL-1, IL-6 and TNF-alpha**.",
+            "In the OVLT, endothelial **COX-2** makes **PGE2**, which acts on hypothalamic EP3 receptors.",
+            "The set-point rises, so vasoconstriction, shivering and rigors push the core temperature up.",
+            "When the set-point falls, vasodilatation and sweating break the fever.",
+            "**Paracetamol** lowers brain PGE2 without blocking platelets, so it is safe in dengue.",
+          ],
+        },
+        {
+          title: "History in the OPD",
+          points: [
+            "Fix the **day of illness** and write it on every prescription.",
+            "Ask the fever pattern: abrupt with retro-orbital pain, rigors, step-ladder, or a second spike.",
+            "Ask exposure: grass for scrub, **flood water or paddy** for leptospirosis, travel for malaria.",
+            "Ask about cluster cases in the lane; report clusters under **IDSP**.",
+            "Ask for self-medication with antibiotics, NSAIDs, and any new drug in 3 weeks (drug fever).",
+            "Ask immune status, diabetes, steroids, chemotherapy, and the **LMP** in every woman aged 15-49.",
+            "Fever beyond 2 weeks with weight loss or cough moves **TB, HIV and kala-azar** up.",
+          ],
+        },
+        {
+          title: "Examination",
+          points: [
+            "Screen for sepsis with **NEWS2, MEWS or SIRS**, not qSOFA alone (SSC 2026).",
+            "A pulse pressure of **20 mmHg or less** and cold peripheries mean compensated dengue shock.",
+            "**Undress and search for an eschar** in axilla, groin, waistband and under the breasts.",
+            "Look for **conjunctival suffusion** and calf tenderness in leptospirosis.",
+            "Rash on palms and soles suggests rickettsia; purpura suggests meningococcaemia, an emergency.",
+            "**Relative bradycardia (Faget sign)** points to enteric fever, leptospirosis or rickettsia.",
+            "**Repeat the examination daily**; eschar, rash and spleen often appear by day 4-5.",
+          ],
+        },
+        {
+          title: "Investigations",
+          points: [
+            "Day 1-3 panel: **CBC with haematocrit, malaria RDT plus smear, dengue NS1, urine**.",
+            "Send **two blood cultures before the first antibiotic** in toxic or prolonged fever.",
+            "Send **IgM ELISA from day 5**; an earlier IgM is a falsely reassuring negative.",
+            "Leucopenia suggests dengue, malaria or typhoid; neutrophilia suggests leptospirosis or sepsis.",
+            "In sepsis, a **lactate of 2 or more** is abnormal and 4 or more is high risk.",
+            "**Do not send a single Widal test**; it has no role in endemic India.",
+          ],
+        },
+        {
+          title: "Treatment - first line",
+          points: [
+            "Give **paracetamol only** until dengue is excluded; no NSAIDs, aspirin or IM injections.",
+            "Advise oral fluids **2.5-3 L a day** and passing urine at least every 6 hours.",
+            "**Withhold antibiotics for 3 days** in a well patient without a focus.",
+            "After day 3-5, give **doxycycline 100 mg twice daily for 7 days** for suspected scrub or lepto.",
+            "Use **azithromycin 500 mg once daily for 5 days** in pregnancy or doxycycline intolerance.",
+            "Give a **written safety-net** and review in **24-48 hours**, especially at defervescence.",
+          ],
+        },
+        {
+          title: "Treatment - next steps",
+          points: [
+            "Suspected enteric fever: **azithromycin 1 g once daily for 7 days**, or cefixime for 14 days.",
+            "Sepsis with no focus: **ceftriaxone 2 g IV plus doxycycline** within 1 hour, after cultures.",
+            "Sepsis fluids: **at least 30 mL/kg balanced crystalloid**, Ringer lactate preferred over saline.",
+            "Start noradrenaline to keep **MAP 65 mmHg** if hypotension persists after fluids.",
+            "Dengue shock is different: titrated crystalloid **5-10 or 20 mL/kg**, not the sepsis block.",
+            "Use **meropenem** only for hospital-onset sepsis, ESBL carriage or failure at 48-72 hours.",
+            "**Do not start steroids** in undiagnosed fever; they mask TB, lymphoma and enteric fever.",
+          ],
+        },
+        {
+          title: "Special groups",
+          points: [
+            "Pregnancy: paracetamol is safe; use **azithromycin instead of doxycycline**.",
+            "Admit any pregnant woman with dengue or malaria.",
+            "Children: short doxycycline courses (21 days or less) **do not stain teeth**.",
+            "Liver disease or malnutrition: reduce paracetamol to **2-3 g a day**.",
+            "High-risk febrile neutropenia (MASCC under 21): **piperacillin-tazobactam 4.5 g IV 6-hourly** within 1 hour.",
+            "Drowsy patient: **check capillary glucose first** and correct hypoglycaemia.",
+          ],
+        },
+        {
+          title: "Referral and follow-up",
+          points: [
+            "Admit for shock, bleeding, **SpO2 under 94%**, altered sensorium, oliguria or jaundice.",
+            "Repeat CBC with haematocrit **daily from day 3** if dengue is possible.",
+            "Scrub typhus settles **within 48 hours of doxycycline**; enteric fever within 5-7 days.",
+            "No response means wrong diagnosis, resistance or a complication; re-evaluate, do not escalate blindly.",
+            "Refer fever beyond 2 weeks without diagnosis for a structured PUO work-up.",
+            "**Notify** malaria, dengue, scrub, lepto, enteric clusters and JE/AES on the **IHIP** portal.",
+          ],
+        },
+      ],
+      tables: [
+        {
+          heading: "AUF drugs at a glance",
+          columns: ["Drug", "Dose and route", "Duration", "Key side effects / cautions"],
+          rows: [
+            ["Paracetamol", "500-1000 mg oral 6-hourly, max 4 g/day; child 15 mg/kg", "Only while symptomatic", "Liver toxicity; 2-3 g/day in liver disease"],
+            ["Doxycycline", "100 mg oral BD; child 2.2 mg/kg BD", "7 days", "Pill oesophagitis, photosensitivity; avoid in pregnancy"],
+            ["Azithromycin (scrub, rickettsia)", "500 mg oral OD; child 10 mg/kg", "5 days", "Diarrhoea, QT prolongation; safe in pregnancy"],
+            ["Azithromycin (enteric)", "1 g oral OD; child 20 mg/kg, max 1 g", "7 days", "Diarrhoea, QT prolongation"],
+            ["Cefixime (enteric)", "20 mg/kg/day oral in 2 doses", "14 days", "Diarrhoea; slower defervescence"],
+            ["Ceftriaxone", "2 g IV OD; child 50-75 mg/kg/day", "10-14 days", "Biliary sludge, C. difficile; add doxycycline in sepsis"],
+            ["Meropenem", "1 g IV 8-hourly", "As per culture", "Only hospital-onset, ESBL or failure"],
+            ["Piperacillin-tazobactam", "4.5 g IV 6-hourly", "Until neutropenia recovers", "High-risk febrile neutropenia, within 1 hour"],
+          ],
+        },
+        {
+          heading: "Which test on which day",
+          columns: ["Test", "What it shows", "When"],
+          rows: [
+            ["Malaria RDT plus smear", "Malaria, species and parasite density", "Any day; repeat 12-hourly x 3 if suspicious"],
+            ["Dengue NS1 antigen", "Current dengue", "Days 1-5"],
+            ["Blood culture, 2 sets", "Enteric fever or bacteraemia with sensitivity", "Before any antibiotic, best in week 1"],
+            ["IgM ELISA (dengue, scrub, lepto)", "Recent infection", "Day 5 onwards"],
+            ["LFT, RFT, electrolytes, chest X-ray, lactate", "Organ dysfunction, not the organism", "Unwell or fever beyond 7 days"],
+          ],
+        },
+        {
+          heading: "Fever plus what - syndromic differential",
+          columns: ["Syndrome", "Think of", "Key clue"],
+          rows: [
+            ["Fever with thrombocytopenia", "Dengue, malaria, scrub, lepto, enteric, sepsis", "Leucopenia versus leucocytosis"],
+            ["Fever with rash", "Dengue, chikungunya, spotted fever, meningococcaemia", "Palms and soles - rickettsia"],
+            ["Fever with jaundice", "Falciparum, leptospirosis, hepatitis A and E", "Bilirubin far above transaminases"],
+            ["Fever with altered sensorium", "Cerebral malaria, meningitis, JE/AES, scrub", "Check glucose and sodium first"],
+            ["Fever with breathlessness", "Pneumonia, scrub ARDS, lepto lung haemorrhage", "Haemoptysis - lepto; eschar - scrub"],
+            ["Fever with AKI", "Leptospirosis, falciparum, scrub, sepsis", "Non-oliguric hypokalaemic AKI - lepto"],
+          ],
+        },
+      ],
+      remember: [
+        "Write the **day of illness** on every fever prescription.",
+        "Undress every febrile patient and **hunt the eschar**.",
+        "Doxycycline covers scrub, rickettsia and lepto; ceftriaxone covers none of them.",
+        "NS1 and smear early, IgM from day 5, culture before antibiotic.",
+        "Paracetamol only until dengue is excluded: no NSAIDs, no IM injections, no steroids.",
+        "Worsening as the fever settles means the **dengue critical phase**, not recovery.",
+        "Faget sign (relative bradycardia): enteric, lepto, rickettsia, brucella, drug fever.",
+      ],
+    },
     checked: "2026-10",
     updated: [
       "SSC 2026: screen for sepsis with NEWS2, MEWS or SIRS rather than qSOFA as a single tool.",
@@ -72,6 +236,171 @@ const revision: RevisionSet = {
   },
 
   "infectious-fever-dengue": {
+    notes: {
+      sections: [
+        {
+          title: "Definition and key facts",
+          points: [
+            "**Dengue** is a flavivirus fever with **four serotypes (DENV 1-4)**.",
+            "It is spread by the day-biting **Aedes aegypti** mosquito.",
+            "Incubation is **4-10 days**, so fever starting over 14 days after exposure is not dengue.",
+            "The illness has **febrile, critical and recovery phases**.",
+            "Patients die of **plasma leak around defervescence**, not of the platelet count.",
+            "India's cases peak **August to November**; deaths stay under 1% with good fluid care.",
+          ],
+        },
+        {
+          title: "Classification that matters",
+          points: [
+            "Use the **WHO 2009 classification**, kept in WHO 2025 and NCVBDC guidelines.",
+            "Three grades: **without warning signs, with warning signs, and severe dengue**.",
+            "Severe dengue means **shock or breathlessness from leak, severe bleeding, or organ failure**.",
+            "Organ involvement includes **AST or ALT 1000 or more**, encephalopathy, myocarditis or AKI.",
+            "Disposal groups: **A home, B admit, C emergency** care.",
+            "The old DF and DHF grades I-IV are historical only.",
+          ],
+        },
+        {
+          title: "How it happens (pathophysiology)",
+          points: [
+            "The virus infects dendritic cells, monocytes and macrophages, then spreads to marrow and endothelium.",
+            "Cytokines cause the febrile phase: high fever, retro-orbital pain and **break-bone** myalgia.",
+            "Secreted **NS1** sheds the endothelial glycocalyx and makes capillaries leaky.",
+            "Leak lasts **24-48 hours around defervescence (day 3-7)** into pleura and peritoneum.",
+            "Haemoconcentration, effusions and falling preload narrow the pulse pressure, then cause shock.",
+            "**Antibody-dependent enhancement** in a second serotype explains why secondary dengue is more severe.",
+            "In recovery, leaked fluid returns, so continued IV fluid causes **pulmonary oedema**.",
+          ],
+        },
+        {
+          title: "History in the OPD",
+          points: [
+            "Fix the **day of illness**: days 1-3 febrile, **days 3-7 critical**, then recovery.",
+            "Ask about abrupt high fever, severe headache, retro-orbital pain and body aches.",
+            "Ask every **warning-sign question** at every visit.",
+            "Ask about drinking, and whether urine has been passed in the **last 6 hours**.",
+            "Ask about NSAIDs, aspirin, steroids or IM injections already taken.",
+            "Ask about pregnancy, age over 60, comorbidity and **living alone**, which mean admission.",
+            "A previous dengue infection makes this one secondary, with higher risk.",
+          ],
+        },
+        {
+          title: "Examination",
+          points: [
+            "Record **pulse pressure** at every visit; it is the earliest sign of shock.",
+            "**Compensated shock**: pulse pressure **20 mmHg or less**, capillary refill over 2 seconds, normal systolic BP.",
+            "**Hypotensive shock**: systolic BP below 90 mmHg or unrecordable; this is an emergency.",
+            "**Tourniquet test**: cuff for 5 minutes, positive with **10 or more petechiae per square inch**.",
+            "Look for tender liver over 2 cm, ascites and **right pleural effusion**.",
+            "In recovery look for fluid overload: puffy face, raised JVP and basal crackles.",
+            "Record **weight** at admission, because every fluid rate is in mL/kg.",
+          ],
+        },
+        {
+          title: "Investigations",
+          points: [
+            "**CBC with haematocrit** on day 1 as baseline, then daily from day 3.",
+            "In Groups B and C repeat haematocrit **4-6 hourly**; the trend guides fluid.",
+            "**NS1 antigen on days 1-5** confirms current dengue.",
+            "**IgM MAC-ELISA from day 5**; free at NCVBDC sentinel hospitals.",
+            "Never diagnose current dengue on **IgG alone or a rapid combo card**.",
+            "Ultrasound shows effusion, ascites and **gall bladder wall over 3 mm**, the proof of leak.",
+            "Always send a **malaria smear or RDT**, as co-infection is common.",
+          ],
+        },
+        {
+          title: "Treatment - first line",
+          points: [
+            "**There is no antiviral**; care is supportive.",
+            "Group A: oral fluids **2.5-3 L a day** with ORS, coconut water, soups and buttermilk.",
+            "**Paracetamol only**, 500-1000 mg 6-hourly, maximum 4 g a day.",
+            "**No NSAIDs, aspirin, steroids, IM injections or papaya leaf**.",
+            "Review **daily from day 3** until 48 hours after the fever settles.",
+            "Teach the family: **worsening as the fever settles is danger, not recovery**.",
+          ],
+        },
+        {
+          title: "Treatment - next steps",
+          points: [
+            "Group B fluid: crystalloid **5-7, then 3-5, then 2-3 mL/kg/hour**, rechecking haematocrit.",
+            "Compensated shock: crystalloid **5-10 mL/kg over 1 hour**, then step down.",
+            "Hypotensive shock: **20 mL/kg crystalloid over 15-30 minutes**; WHO 2025 prefers crystalloid to colloid.",
+            "Rising haematocrit with shock means continuing leak: give a second crystalloid bolus.",
+            "**Falling haematocrit with shock means bleeding**: give whole blood or packed cells.",
+            "Platelets only for significant bleeding, or prophylactically **below 10,000** (NCVBDC).",
+            "Step fluids down early and **stop by 24-48 hours** to avoid overload.",
+          ],
+        },
+        {
+          title: "Complications and red flags",
+          points: [
+            "Seven warning signs: **abdominal pain, persistent vomiting, fluid accumulation, mucosal bleeding**.",
+            "The other three: **lethargy or restlessness, liver over 2 cm, rising haematocrit with falling platelets**.",
+            "Unresponsive shock: correct **ABCS - acidosis, bleeding, calcium, sugar**.",
+            "Recovery overload: stop the drip; furosemide only once the leak has ended.",
+            "Expanded dengue syndrome: encephalopathy, myocarditis, liver failure, AKI or HLH.",
+          ],
+        },
+        {
+          title: "Referral and follow-up",
+          points: [
+            "Admit (Group B) for warning signs, pregnancy, infancy, age over 60, comorbidity or social risk.",
+            "Refer (Group C) for shock, severe bleeding, organ failure or SpO2 under 94%.",
+            "Give the first bolus and paracetamol before transfer.",
+            "Discharge: **48 hours afebrile** without antipyretic and stable haematocrit off fluids for 24 hours.",
+            "Also needed before discharge: good urine output and **platelets rising above 50,000**.",
+            "Prevention is **source reduction**: a weekly dry day, emptied coolers and covered tanks.",
+            "**TAK-003 (Qdenga)** approved July 2026 for ages **4-60**, two doses 3 months apart.",
+          ],
+        },
+      ],
+      tables: [
+        {
+          heading: "Dengue drugs and fluids at a glance",
+          columns: ["Drug", "Dose and route", "Duration", "Key side effects / cautions"],
+          rows: [
+            ["Paracetamol", "Adult 500-1000 mg oral 6-hourly, max 4 g/day; child 10-15 mg/kg", "Only when over 38.5 C", "Liver toxicity; 3 g/day in liver disease"],
+            ["ORS and oral fluids", "Adult 2.5-3 L/day", "Through the critical phase", "Vomiting if given too fast"],
+            ["Crystalloid, Group B", "IV 5-7, then 3-5, then 2-3 mL/kg/h", "Stop by 24-48 h", "Overload; titrate to haematocrit"],
+            ["Crystalloid, shock", "5-10 mL/kg over 1 h, or 20 mL/kg over 15-30 min", "Then step down", "Reassess after every bolus"],
+            ["Colloid (dextran, gelatin, albumin)", "10-20 mL/kg over 30-60 min", "Refractory shock only", "Allergy, coagulopathy, renal injury"],
+            ["Whole blood or packed cells", "Whole blood 10-20 mL/kg; PRBC 5-10 mL/kg", "Once, then reassess", "For falling haematocrit with shock"],
+            ["Platelets", "1 unit per 10 kg", "Bleeding, or below 10,000", "No benefit when given for a number"],
+            ["Furosemide", "0.5-1 mg/kg IV", "Recovery overload only", "Precipitates shock if leak continues"],
+          ],
+        },
+        {
+          heading: "Dengue groups A, B and C",
+          columns: ["Feature", "Group A", "Group B", "Group C"],
+          rows: [
+            ["Who", "No warning sign, drinking well", "Warning sign, comorbidity or social risk", "Severe dengue"],
+            ["Where", "Home, daily review from day 3", "Admit", "Emergency, HDU or ICU"],
+            ["Fluid", "Oral fluids and ORS", "Crystalloid 5-7, 3-5, 2-3 mL/kg/h", "Bolus by shock type"],
+            ["Monitoring", "Daily CBC and warning signs", "Haematocrit 4-6 hourly", "Vitals every 15-30 min"],
+          ],
+        },
+        {
+          heading: "Dengue tests",
+          columns: ["Test", "What it shows", "When"],
+          rows: [
+            ["NS1 antigen", "Current dengue", "Days 1-5"],
+            ["IgM MAC-ELISA", "Recent dengue", "Day 5 onwards"],
+            ["RT-PCR", "Confirms and gives serotype", "Days 1-5, reference use"],
+            ["IgG or combo card", "Past infection only", "Not for confirmation"],
+            ["Serial haematocrit", "Leak if rising 20% or more", "Daily from day 3"],
+          ],
+        },
+      ],
+      remember: [
+        "Critical phase starts **as the fever falls**.",
+        "People die of leak, not of the platelet count.",
+        "Shock with **falling haematocrit = bleeding**: give blood, not crystalloid.",
+        "Never transfuse platelets for a number alone.",
+        "NS1 for days 1-5, IgM from day 5; never IgG alone.",
+        "Unresponsive shock, think **ABCS**: acidosis, bleeding, calcium, sugar.",
+        "Paracetamol only: no NSAIDs, steroids, IM injections or papaya leaf.",
+      ],
+    },
     checked: "2026-10",
     updated: [
       "CDSCO July 2026: TAK-003 (Qdenga) approved as India's first dengue vaccine, ages 4-60, two doses 3 months apart (private sector).",
@@ -132,6 +461,172 @@ const revision: RevisionSet = {
   },
 
   "infectious-fever-malaria": {
+    notes: {
+      sections: [
+        {
+          title: "Definition and key facts",
+          points: [
+            "**Malaria** is Plasmodium infection spread by the **female Anopheles** mosquito.",
+            "India has almost only **P. vivax and P. falciparum**, roughly half each.",
+            "Incubation is about **12 days for falciparum** and **14 days for vivax**.",
+            "Programme rule: **test, treat, track**; never treat without an RDT or smear.",
+            "India aims for **zero indigenous cases by 2027** and elimination by 2030.",
+            "Classify as **uncomplicated or severe**; any one WHO criterion makes it severe.",
+          ],
+        },
+        {
+          title: "How it happens (pathophysiology)",
+          points: [
+            "Sporozoites multiply silently in the **liver** for 6-15 days.",
+            "Vivax leaves dormant **hypnozoites** that cause relapse; only primaquine kills them.",
+            "Merozoites invade red cells; **schizont rupture every 48 hours** causes the paroxysm.",
+            "Vivax invades only **reticulocytes (Duffy)**, so parasitaemia stays under 2%.",
+            "Falciparum **PfEMP1** sticks red cells to ICAM-1, CD36 and placental CSA.",
+            "This **sequestration** in brain, kidney and placenta causes severe disease.",
+            "Artesunate kills young rings **before they sequester**, so it saves more lives than quinine.",
+          ],
+        },
+        {
+          title: "History in the OPD",
+          points: [
+            "Ask about fever with chills and rigors, but **test every fever** in endemic areas.",
+            "Ask about travel or residence in a malarious area, forest, mine or migrant work.",
+            "Ask about past malaria and whether the **14-day primaquine** was completed.",
+            "Ask danger questions: drowsiness, fits, **prostration**, dark urine, jaundice, breathlessness.",
+            "Ask the **LMP** in every woman aged 15-49; pregnancy changes the drug.",
+            "Ask about **G6PD deficiency** or past dark urine with drugs.",
+          ],
+        },
+        {
+          title: "Examination",
+          points: [
+            "Record GCS (Blantyre in children) and **capillary glucose** in anyone drowsy.",
+            "Look for pallor, icterus and a soft tender **spleen**.",
+            "Test for **prostration**: unable to sit or feed unaided.",
+            "Look for acidotic breathing, crackles and hypoxia; these are lethal markers.",
+            "**Cerebral malaria has no neck stiffness**; meningism means look for meningitis.",
+            "Check for **cola-coloured urine** (blackwater) and record urine output.",
+          ],
+        },
+        {
+          title: "Investigations",
+          points: [
+            "**Bivalent RDT** (HRP2 plus pan-pLDH) gives a result in 15-20 minutes.",
+            "**Thick and thin smear** is the gold standard: detection, species and parasite count.",
+            "If negative with high suspicion, **repeat the smear 12-hourly for 48 hours**.",
+            "**Never judge cure with an HRP2 RDT**; it stays positive 2-4 weeks.",
+            "In the unwell, check Hb, glucose, creatinine, bilirubin and lactate.",
+            "Test **G6PD** before 14-day primaquine where available.",
+          ],
+        },
+        {
+          title: "Treatment - first line",
+          points: [
+            "**Vivax**: chloroquine **25 mg/kg over 3 days** (10, 10, 5 mg/kg).",
+            "Plus **primaquine 0.25 mg/kg daily for 14 days** for radical cure.",
+            "**Falciparum**: artesunate 3 days **plus SP** on day 1 (ACT-SP).",
+            "In the **North-East**, use **artemether-lumefantrine** because of SP resistance.",
+            "Add **single-dose primaquine 0.75 mg/kg** for falciparum to block transmission.",
+            "**Mixed infection**: ACT as for falciparum plus 14-day primaquine.",
+            "Give the first dose under observation; repeat any dose vomited within 30 minutes.",
+          ],
+        },
+        {
+          title: "Treatment - next steps",
+          points: [
+            "**Severe malaria: IV artesunate 2.4 mg/kg** at 0, 12 and 24 hours, then daily.",
+            "Use **3 mg/kg per dose** in children under 20 kg.",
+            "Always follow with a **full 3-day oral ACT**; never end on artesunate alone.",
+            "If artesunate is unavailable: IM artemether, arteether, or IV quinine with a loading dose.",
+            "Pre-referral: **IM artesunate**, or **rectal artesunate 10 mg/kg** in children under 6.",
+            "Give **restrictive fluids**; large boluses cause pulmonary oedema.",
+            "Avoid steroids, mannitol and heparin in cerebral malaria.",
+          ],
+        },
+        {
+          title: "Special groups",
+          points: [
+            "Pregnancy, first-trimester falciparum: NCVBDC uses **quinine 7 days**; WHO also allows AL.",
+            "Pregnancy, second and third trimesters: **ACT** as for other adults.",
+            "**Severe malaria in pregnancy**: IV artesunate in all trimesters.",
+            "Vivax in pregnancy: chloroquine; **defer primaquine** until after breastfeeding.",
+            "No primaquine under 1 year; in G6PD deficiency give **0.75 mg/kg weekly for 8 weeks**.",
+            "Travellers: **doxycycline 100 mg daily** short stay, or **mefloquine 250 mg weekly** long stay.",
+          ],
+        },
+        {
+          title: "Complications and red flags",
+          points: [
+            "**Hypoglycaemia**, especially in children, pregnancy and on quinine; check glucose 4-hourly.",
+            "Treat glucose under 40 mg/dL with **25% dextrose 2 mL/kg** in children.",
+            "**Transfuse** for Hb under 7 g/dL in adults or under 5 g/dL in children.",
+            "Lactic acidosis predicts death better than coma.",
+            "**Severe vivax is real**: it can cause ARDS, AKI, anaemia and splenic rupture.",
+            "**Post-artesunate delayed haemolysis** appears 1-3 weeks later; check Hb on days 7, 14, 28.",
+          ],
+        },
+        {
+          title: "Referral and follow-up",
+          points: [
+            "Parasites should fall **75% or more by 48 hours** on ACT.",
+            "Follow-up smears on **days 3, 7, 14 and 28** detect recrudescence.",
+            "Day-3 positivity over 10% of baseline suggests **artemisinin partial resistance**.",
+            "Supervise primaquine through the **ASHA** and watch for dark urine.",
+            "Notify every case; the team does an **active fever survey** around it.",
+            "Prevention: **LLIN** every night, indoor residual spraying and larvivorous fish.",
+          ],
+        },
+      ],
+      tables: [
+        {
+          heading: "Malaria drugs at a glance",
+          columns: ["Drug", "Dose and route", "Duration", "Key side effects / cautions"],
+          rows: [
+            ["Chloroquine (vivax)", "Oral 10, 10, 5 mg base/kg; adult 600, 600, 300 mg", "3 days", "Nausea, itching; safe in pregnancy"],
+            ["Primaquine (vivax)", "Oral 0.25 mg/kg daily; adult 15 mg", "14 days", "G6PD haemolysis; not pregnancy, lactation, under 1 year"],
+            ["Primaquine (falciparum)", "Oral 0.75 mg/kg; adult 45 mg", "Single dose, day 2", "Blocks transmission; not pregnancy or under 1 year"],
+            ["Artesunate + SP (ACT-SP)", "AS 4 mg/kg daily; SP 25/1.25 mg/kg day 1", "3 days", "SP rash; avoid SP in first trimester"],
+            ["Artemether-lumefantrine", "Oral twice daily by weight band", "3 days (6 doses)", "Take with fatty food or milk; North-East"],
+            ["Artesunate IV or IM", "2.4 mg/kg at 0, 12, 24 h, then daily", "At least 24 h, then full ACT", "Delayed haemolysis at 1-3 weeks"],
+            ["Quinine IV", "20 mg salt/kg loading, then 10 mg/kg 8-hourly", "7 days total with doxycycline", "Hypoglycaemia, cinchonism, QT prolongation"],
+            ["Doxycycline (prophylaxis)", "100 mg oral daily", "2 days before to 4 weeks after", "Photosensitivity; not in pregnancy"],
+            ["Mefloquine (prophylaxis)", "250 mg oral weekly", "2 weeks before to 4 weeks after", "Neuropsychiatric effects; avoid in epilepsy"],
+          ],
+        },
+        {
+          heading: "Vivax versus falciparum",
+          columns: ["Feature", "P. vivax", "P. falciparum"],
+          rows: [
+            ["Red cells invaded", "Reticulocytes only; under 2%", "All ages; can exceed 10%"],
+            ["Hypnozoites", "Yes, relapse", "No"],
+            ["Sequestration", "Minimal", "Brain, kidney, placenta"],
+            ["Smear clues", "Large cells, Schuffner dots", "Multiple rings, banana gametocytes"],
+            ["Treatment in India", "Chloroquine plus 14-day primaquine", "ACT-SP (AL in North-East) plus single primaquine"],
+          ],
+        },
+        {
+          heading: "WHO severe malaria criteria",
+          columns: ["Domain", "Criterion"],
+          rows: [
+            ["Neurological", "GCS under 11, prostration, over 2 convulsions in 24 h"],
+            ["Metabolic", "Glucose under 40 mg/dL; lactate 5 mmol/L or more"],
+            ["Blood", "Hb 7 g/dL or less adult, 5 or less child; bleeding"],
+            ["Kidney and liver", "Creatinine over 3 mg/dL; bilirubin over 3 mg/dL"],
+            ["Heart and lung", "Pulmonary oedema, SpO2 under 92%; SBP under 80 mmHg"],
+            ["Parasite load", "Falciparum over 10% (over 5% in travellers)"],
+          ],
+        },
+      ],
+      remember: [
+        "**Test before you treat**: bivalent RDT or smear first.",
+        "Chloroquine clears vivax blood; only **14-day primaquine** stops relapse.",
+        "ACT-SP everywhere except the **North-East**, where it is AL.",
+        "AL needs **fatty food or milk** for absorption.",
+        "Severe malaria: **IV artesunate**, then always a full oral ACT.",
+        "No primaquine in pregnancy, lactation, infancy or severe G6PD deficiency.",
+        "Cerebral malaria has no neck stiffness.",
+      ],
+    },
     checked: "2026-10",
     updated: [
       "WHO 2024-2025 malaria guideline: after a near-patient G6PD test, high-dose primaquine (1 mg/kg/day x 7 days) or single-dose tafenoquine 300 mg with chloroquine are radical-cure options (not yet NCVBDC policy).",
@@ -201,6 +696,163 @@ const revision: RevisionSet = {
   },
 
   "infectious-fever-enteric-fever": {
+    notes: {
+      sections: [
+        {
+          title: "Definition and key facts",
+          points: [
+            "**Enteric fever** is systemic infection with **Salmonella Typhi or Paratyphi A, B, C**.",
+            "Humans are the only reservoir; spread is by **faecally contaminated water and food**.",
+            "Incubation is **7-14 days**; peak age is **2-15 years**.",
+            "**Paratyphi A causes 20-25%** of Indian cases.",
+            "Untreated mortality is 10-20%, falling to **under 1%** with the right antibiotic.",
+            "A **chronic carrier** excretes Typhi for over 12 months, usually from a stone-filled gall bladder.",
+          ],
+        },
+        {
+          title: "Classification that matters",
+          points: [
+            "Clinically: **uncomplicated versus complicated**; this decides oral or IV treatment.",
+            "Complicated means bleeding, perforation, encephalopathy, shock, myocarditis or jaundice.",
+            "**MDR**: resistant to chloramphenicol, ampicillin and cotrimoxazole.",
+            "**Fluoroquinolone non-susceptibility** is near universal in India.",
+            "**XDR**: MDR plus fluoroquinolone and ceftriaxone resistance, from Pakistan.",
+          ],
+        },
+        {
+          title: "How it happens (pathophysiology)",
+          points: [
+            "Typhi crosses the ileum through **M cells over Peyer patches**.",
+            "The **Vi capsule** hides it from the immune system, so diarrhoea is uncommon.",
+            "It survives **inside macrophages** and spreads to liver, spleen and marrow.",
+            "A sustained secondary bacteraemia causes the **step-ladder fever** of week 1.",
+            "Bile re-seeds the Peyer patches, which ulcerate in week 2-3.",
+            "Ileal ulcers lie **along the long axis on the antimesenteric border** and perforate in **week 3**.",
+            "Longitudinal ulcers rarely stricture, unlike transverse tuberculous ulcers.",
+          ],
+        },
+        {
+          title: "History in the OPD",
+          points: [
+            "Ask about fever **rising day by day** in week 1, with headache and dry cough.",
+            "Adults often have **constipation**; young children and HIV patients get diarrhoea.",
+            "Ask about unsafe water, street food and a **household or canteen cluster**.",
+            "Ask about **travel to Pakistan**, which suggests XDR typhoid.",
+            "Ask about antibiotics already taken; they lower culture yield.",
+            "Ask about occupation: **food handlers** must stay off work until cleared.",
+          ],
+        },
+        {
+          title: "Examination",
+          points: [
+            "A toxic, apathetic patient with a **coated tongue and clean red edges**.",
+            "**Relative bradycardia (Faget sign)**: pulse lower than expected for the fever.",
+            "**Rose spots** on the trunk in 5-30%.",
+            "Soft, mildly tender **splenomegaly** and hepatomegaly.",
+            "Examine daily in week 3 for **peritonism and loss of liver dullness**.",
+            "Muttering delirium or **coma vigil** marks severe typhoid.",
+          ],
+        },
+        {
+          title: "Investigations",
+          points: [
+            "**Blood culture before the first antibiotic** is the key test.",
+            "Blood culture is positive in **60-80% in week 1**, falling by week 3.",
+            "**Bone marrow culture** is positive in **80-95%**, even after antibiotics.",
+            "CBC shows low or normal WBC with **aneosinophilia** and mild thrombocytopenia.",
+            "**Never treat on a single Widal**; it needs a fourfold rise on paired sera.",
+            "Typhidot and Tubex are only 70-80% accurate; never the sole proof.",
+            "Pefloxacin or nalidixic acid resistance predicts **fluoroquinolone failure**.",
+          ],
+        },
+        {
+          title: "Treatment - first line",
+          points: [
+            "Culture first, then treat by severity; **no empirical fluoroquinolones** in India.",
+            "Uncomplicated: **azithromycin 1 g once daily for 7 days** (child 20 mg/kg).",
+            "Oral alternative: **cefixime 20 mg/kg/day** in two doses for **14 days**.",
+            "Complicated or admitted: **ceftriaxone 2 g IV** once or twice daily for **10-14 days**.",
+            "Switch to oral azithromycin or cefixime once afebrile to finish the course.",
+            "Give a soft high-calorie diet; avoid NSAIDs, purgatives and enemas.",
+            "Pregnancy: **ceftriaxone or azithromycin** are safe; avoid fluoroquinolones.",
+          ],
+        },
+        {
+          title: "Treatment - next steps",
+          points: [
+            "**Defervescence takes 3-5 days**; do not switch drugs on day 2.",
+            "Slow response on ceftriaxone: re-culture, look for abscess, and **add azithromycin**.",
+            "XDR or Pakistan travel: **meropenem 1 g IV 8-hourly plus azithromycin**.",
+            "Severe typhoid with delirium or shock: **high-dose dexamethasone** for 48 hours.",
+            "Perforation: resuscitate, NG tube, ceftriaxone plus metronidazole, and **early surgery**.",
+            "**Relapse** in 5-10% at 1-3 weeks: re-culture and re-treat.",
+          ],
+        },
+        {
+          title: "Referral and follow-up",
+          points: [
+            "Admit for peritonism, GI bleeding, altered sensorium, shock or persistent vomiting.",
+            "Refer fever beyond **7 days on treatment** to look for abscess or resistance.",
+            "Food handlers return after **three negative stool cultures**.",
+            "Notify clusters under **IDSP** so the water source can be traced.",
+          ],
+        },
+        {
+          title: "Prevention and programmes",
+          points: [
+            "**Safe water**, sanitation and handwashing are the lasting prevention.",
+            "**Typhoid conjugate vaccine**: single 0.5 mL IM dose from **6 months**.",
+            "TCV gives about 80% protection for at least 4-5 years.",
+            "Vi polysaccharide vaccine works only **from 2 years** and needs a booster every 3 years.",
+            "**No vaccine covers Paratyphi A**.",
+            "Chronic carrier: **4 weeks** of an effective drug; cholecystectomy if gallstones persist.",
+          ],
+        },
+      ],
+      tables: [
+        {
+          heading: "Enteric fever drugs at a glance",
+          columns: ["Drug", "Dose and route", "Duration", "Key side effects / cautions"],
+          rows: [
+            ["Azithromycin", "1 g oral OD; child 20 mg/kg, max 1 g", "7 days", "GI upset, QT prolongation; first-line uncomplicated"],
+            ["Cefixime", "20 mg/kg/day oral in 2 doses; adult 200-400 mg BD", "14 days", "Diarrhoea; slower response, more relapse"],
+            ["Ceftriaxone", "2 g IV OD or BD; child 75-100 mg/kg/day", "10-14 days", "Biliary sludge, C. difficile; complicated disease"],
+            ["Meropenem", "1 g IV 8-hourly; child 20-40 mg/kg", "10-14 days, with azithromycin", "XDR only; reduce in renal failure"],
+            ["Dexamethasone", "3 mg/kg IV, then 1 mg/kg 6-hourly", "48 hours (8 doses)", "Only delirium, coma or shock"],
+            ["Ciprofloxacin (carrier)", "750 mg oral BD", "28 days", "Only if pefloxacin susceptible; tendinopathy"],
+          ],
+        },
+        {
+          heading: "Week by week",
+          columns: ["Week", "Features", "Best test"],
+          rows: [
+            ["Week 1", "Step-ladder fever, headache, relative bradycardia", "Blood culture"],
+            ["Week 2", "Toxaemia, rose spots, coated tongue, splenomegaly", "Blood and marrow culture"],
+            ["Week 3", "Ileal bleeding, perforation, encephalopathy", "Marrow culture; erect chest X-ray"],
+            ["Week 4 on", "Recovery; relapse 5-10%; carriage 1-4%", "Stool and urine culture"],
+          ],
+        },
+        {
+          heading: "Resistance types",
+          columns: ["Type", "Resistant to", "Use instead"],
+          rows: [
+            ["MDR", "Chloramphenicol, ampicillin, cotrimoxazole", "Azithromycin or ceftriaxone"],
+            ["Fluoroquinolone non-susceptible", "Ciprofloxacin, ofloxacin", "Azithromycin or ceftriaxone"],
+            ["Ceftriaxone resistant (ESBL)", "Third-generation cephalosporins", "Azithromycin or meropenem"],
+            ["XDR", "All of the above", "Meropenem plus azithromycin"],
+          ],
+        },
+      ],
+      remember: [
+        "**Culture before antibiotic**; a single Widal proves nothing.",
+        "Azithromycin for uncomplicated, **ceftriaxone for complicated**.",
+        "No empirical fluoroquinolones in India.",
+        "Fever takes **3-5 days** to settle on the right drug.",
+        "Faget sign, aneosinophilia and low WBC in week 2: enteric until proved otherwise.",
+        "Ulcers along the long axis: perforate in week 3, rarely stricture.",
+        "TCV from 6 months; nothing covers Paratyphi A.",
+      ],
+    },
     checked: "2026-10",
     master: {
       heading: "Master revision table - Enteric fever",
@@ -255,6 +907,159 @@ const revision: RevisionSet = {
   },
 
   "infectious-fever-scrub-typhus": {
+    notes: {
+      sections: [
+        {
+          title: "Definition and key facts",
+          points: [
+            "**Scrub typhus** is caused by **Orientia tsutsugamushi**, an obligate intracellular bacterium.",
+            "It is spread by the bite of the **larval trombiculid mite (chigger)**.",
+            "Incubation is **6-21 days**, usually about 10.",
+            "It peaks **August to January**, after the monsoon.",
+            "Untreated mortality is 6-35%, falling to **under 2% with early doxycycline**.",
+            "Immunity is strain-specific, so **reinfection is common** and there is no vaccine.",
+          ],
+        },
+        {
+          title: "Classification that matters",
+          points: [
+            "**Uncomplicated**: oral doxycycline in the OPD.",
+            "**Severe**: ARDS, shock, meningoencephalitis, AKI, jaundice, myocarditis or platelets under 50,000.",
+            "DHR-ICMR: **probable** case has an eschar, positive IgM ELISA or Weil-Felix OX-K 1:80.",
+            "**Confirmed** case needs IgM seroconversion, fourfold rise, IFA or PCR.",
+            "Scrub typhus is one of four Indian **rickettsial diseases**, all treated with doxycycline.",
+          ],
+        },
+        {
+          title: "How it happens (pathophysiology)",
+          points: [
+            "The chigger feeds painlessly on **moist skin folds** under tight clothing.",
+            "Orientia multiplies at the bite and forms the **eschar**.",
+            "It spreads to regional nodes, then the bloodstream.",
+            "It invades endothelium and causes a **disseminated small-vessel vasculitis**.",
+            "Vasculitis explains pneumonitis, **ARDS**, meningoencephalitis, hepatitis, AKI and myocarditis.",
+            "Orientia **lacks peptidoglycan** and lives inside cells, so **beta-lactams do not work**.",
+          ],
+        },
+        {
+          title: "History in the OPD",
+          points: [
+            "Ask about abrupt fever, **severe headache, myalgia** and red eyes.",
+            "Ask about farm, forest or plantation work, or **sitting on grass**, 1-3 weeks earlier.",
+            "Ask about a painless sore or scab in the armpit, groin or under the breasts.",
+            "Fever persisting on **ceftriaxone or amoxicillin** is a strong clue.",
+            "Ask danger questions: breathlessness, confusion, seizures, low urine, jaundice.",
+            "Ask about **pregnancy**, which changes the drug to azithromycin.",
+          ],
+        },
+        {
+          title: "Examination",
+          points: [
+            "**Undress fully and search for the eschar**: axilla, groin, perineum, waistband, behind ears.",
+            "The eschar is a **painless black crust with a red rim**, 5-20 mm.",
+            "Feel for **tender nodes near the eschar** and generalised lymphadenopathy.",
+            "Look for conjunctival injection, a maculopapular rash and hepatosplenomegaly.",
+            "Record **SpO2 and respiratory rate**; pneumonitis is often silent early.",
+            "Check for shock, irregular pulse, neck stiffness and altered sensorium.",
+          ],
+        },
+        {
+          title: "Investigations",
+          points: [
+            "**Do not wait for serology**; an eschar or typical picture is enough to treat.",
+            "CBC: normal or **raised WBC with neutrophilia** and thrombocytopenia.",
+            "LFT: transaminases 2-5 times, high ALP and low albumin; check sodium.",
+            "**IgM ELISA from day 5-7** is the confirmatory test in India.",
+            "**PCR (56 kDa gene) on an eschar swab** is best in week 1.",
+            "**Weil-Felix** has only 30-50% sensitivity; a negative excludes nothing.",
+            "Always run malaria and dengue tests alongside; co-infection is common.",
+          ],
+        },
+        {
+          title: "Treatment - first line",
+          points: [
+            "**Doxycycline 100 mg twice daily for 7 days** is the drug of choice.",
+            "Child: **2.2 mg/kg twice daily**, maximum 100 mg per dose.",
+            "Short courses **do not stain teeth** and are safe at any age.",
+            "Take with water and food, upright; keep 2-3 hours from milk, iron and antacids.",
+            "Complete **7 days** even after the fever settles, or it relapses.",
+            "Expect the fever to settle **within 24-48 hours**; this is a diagnostic test.",
+          ],
+        },
+        {
+          title: "Treatment - next steps",
+          points: [
+            "Pregnancy or intolerance: **azithromycin 500 mg once daily for 5 days**.",
+            "Severe disease: **IV doxycycline plus IV azithromycin** for 7 days (INTREST trial, Vellore).",
+            "No IV doxycycline: use IV azithromycin, or oral doxycycline by nasogastric tube.",
+            "**Chloramphenicol** is third line because of aplastic anaemia.",
+            "**Never use beta-lactams or fluoroquinolones** for scrub typhus.",
+            "ARDS: oxygen, lung-protective ventilation and **conservative fluids**.",
+          ],
+        },
+        {
+          title: "Referral and follow-up",
+          points: [
+            "Review at **48 hours**; fever beyond 72 hours on doxycycline means rethink the diagnosis.",
+            "Admit for hypotension, **SpO2 under 94%**, confusion, or creatinine over 2 mg/dL.",
+            "Also admit for jaundice, bleeding, **platelets under 50,000** or pregnancy.",
+            "Give the **first dose before referral**; delay drives mortality.",
+            "Notify cases and clusters on **IDSP/IHIP**.",
+          ],
+        },
+        {
+          title: "Prevention and programmes",
+          points: [
+            "Wear full sleeves with trousers tucked into socks, and **permethrin-treated clothing**.",
+            "Use **DEET** on exposed skin and avoid sitting on grass.",
+            "Bathe and change clothes after field work.",
+            "Weekly **doxycycline 200 mg** prophylaxis only for soldiers or expeditions.",
+          ],
+        },
+      ],
+      tables: [
+        {
+          heading: "Scrub typhus drugs at a glance",
+          columns: ["Drug", "Dose and route", "Duration", "Key side effects / cautions"],
+          rows: [
+            ["Doxycycline", "100 mg oral BD; child 2.2 mg/kg BD", "7 days", "Pill oesophagitis, photosensitivity; not in pregnancy"],
+            ["Doxycycline IV (severe)", "100 mg IV 12-hourly", "7 days, with azithromycin", "Switch to oral when able"],
+            ["Azithromycin", "500 mg oral OD; child 10 mg/kg", "5 days", "QT prolongation; drug of choice in pregnancy"],
+            ["Azithromycin IV (severe)", "500 mg IV OD", "7 days, with doxycycline", "QT prolongation"],
+            ["Chloramphenicol", "500 mg QID; child 50-75 mg/kg/day", "7 days", "Aplastic anaemia, grey baby; third line"],
+            ["Doxycycline prophylaxis", "200 mg oral once weekly", "During intense exposure", "Soldiers, expeditions only"],
+          ],
+        },
+        {
+          heading: "Rickettsial diseases of India",
+          columns: ["Disease", "Organism", "Vector", "Clue"],
+          rows: [
+            ["Scrub typhus", "Orientia tsutsugamushi", "Larval mite (chigger)", "Eschar, nodes, ARDS"],
+            ["Indian tick typhus", "Rickettsia conorii", "Dog and cattle ticks", "Rash on palms and soles"],
+            ["Murine typhus", "Rickettsia typhi", "Rat flea", "Milder fever, rat contact"],
+            ["Epidemic typhus", "Rickettsia prowazekii", "Body louse", "Overcrowding; Brill-Zinsser relapse"],
+          ],
+        },
+        {
+          heading: "Scrub typhus tests",
+          columns: ["Test", "What it shows", "When"],
+          rows: [
+            ["IgM ELISA", "Recent infection; kit-specific cut-off", "Day 5-7 onwards"],
+            ["PCR (56 kDa gene)", "Organism DNA", "Week 1, eschar swab or blood"],
+            ["IFA on paired sera", "Gold standard serology", "Reference laboratory"],
+            ["Weil-Felix OX-K", "Weak support only", "Negative never excludes"],
+          ],
+        },
+      ],
+      remember: [
+        "Post-monsoon fever, **eschar**, neutrophilia, low platelets: scrub until proved otherwise.",
+        "The eschar is painless: you only find it by **undressing** the patient.",
+        "Fever settling within **48 hours of doxycycline** confirms the diagnosis.",
+        "No peptidoglycan, inside cells: **ceftriaxone does nothing**.",
+        "Short doxycycline is safe in children; **azithromycin in pregnancy**.",
+        "Severe: **IV doxycycline plus azithromycin** (INTREST).",
+      ],
+    },
     checked: "2026-10",
     updated: [
       "SSC 2026: shock in severe scrub typhus - balanced crystalloid guided by dynamic measures, then noradrenaline for MAP 65.",
@@ -311,6 +1116,170 @@ const revision: RevisionSet = {
   },
 
   "infectious-fever-urinary-tract-infection": {
+    notes: {
+      sections: [
+        {
+          title: "Definition and key facts",
+          points: [
+            "**UTI** is symptomatic infection of the urinary tract with significant bacteriuria.",
+            "**Cystitis** is bladder infection; **acute pyelonephritis** involves the kidney.",
+            "**E. coli causes 70-80%** of community UTI.",
+            "In India **over 60% of E. coli make ESBL** and over 70% resist fluoroquinolones.",
+            "**Nitrofurantoin and fosfomycin** still keep over 90% activity.",
+            "Kass criterion: **10^5 CFU/mL** of one organism in a midstream sample.",
+          ],
+        },
+        {
+          title: "Classification that matters",
+          points: [
+            "**Uncomplicated**: a non-pregnant pre-menopausal woman with a normal tract.",
+            "**Complicated**: men, pregnancy, children, diabetes, catheter, stones, obstruction or immunosuppression.",
+            "IDSA 2025 defines complicated by site: **any infection beyond the bladder**.",
+            "**Recurrent UTI**: 2 or more in 6 months, or 3 or more in 12 months.",
+            "**Relapse** is the same organism within 2 weeks; **reinfection** is a new organism later.",
+            "**Asymptomatic bacteriuria** is treated only in **pregnancy** and before urological procedures.",
+          ],
+        },
+        {
+          title: "How it happens (pathophysiology)",
+          points: [
+            "Gut E. coli colonises the perineum and vaginal introitus.",
+            "It **ascends the short female urethra**, helped by intercourse.",
+            "**Type 1 fimbriae** bind the bladder; **P fimbriae** bind renal epithelium.",
+            "Stasis, residual urine, oestrogen loss and spermicides defeat normal defences.",
+            "Reflux or ascent carries organisms to the kidney, causing pyelonephritis.",
+            "Obstruction turns pyelonephritis into **pyonephrosis**, which needs drainage.",
+          ],
+        },
+        {
+          title: "History in the OPD",
+          points: [
+            "Dysuria and frequency **without vaginal discharge** make UTI over 90% likely.",
+            "**Fever, rigors and flank pain** mean pyelonephritis, which changes the drug.",
+            "Ask about discharge or itching; vaginitis, cervicitis and PID mimic UTI.",
+            "Ask **pregnancy status**: it forbids quinolones and needs a test-of-cure culture.",
+            "Ask about diabetes, stones, prostate symptoms, catheter and recent antibiotics.",
+            "In the elderly, **do not blame confusion on a positive dipstick** alone.",
+          ],
+        },
+        {
+          title: "Examination",
+          points: [
+            "Screen for urosepsis with **NEWS2 or SIRS**, not qSOFA alone.",
+            "Feel for **suprapubic tenderness** and a palpable bladder.",
+            "Elicit **renal angle tenderness** for pyelonephritis.",
+            "In men, a **boggy, very tender prostate** on gentle DRE means acute prostatitis.",
+            "Cervical motion tenderness means **PID, not UTI**.",
+            "In children check BP, growth, spine, phimosis and a palpable bladder.",
+          ],
+        },
+        {
+          title: "Investigations",
+          points: [
+            "**Uncomplicated cystitis needs no culture**; symptoms or dipstick are enough.",
+            "**Nitrite is about 95% specific**; leucocyte esterase is sensitive.",
+            "**Culture before the first dose** in pyelonephritis, men, pregnancy, children and recurrence.",
+            "Three or more organisms on culture means **contamination**; repeat the sample.",
+            "**Ultrasound** for men, pregnancy, diabetes, stones, or fever beyond 48-72 hours.",
+            "Child: **ultrasound after the first febrile UTI**; DMSA at 4-6 months for scarring.",
+            "Sterile pyuria: **three early-morning urines** for AFB and CBNAAT.",
+          ],
+        },
+        {
+          title: "Treatment - first line",
+          points: [
+            "Cystitis: **nitrofurantoin 100 mg twice daily for 5 days**.",
+            "Or **fosfomycin 3 g single dose**, at bedtime after emptying the bladder.",
+            "**No empirical ciprofloxacin, cefixime or cotrimoxazole** in India.",
+            "**Nitrofurantoin never treats pyelonephritis** or prostatitis.",
+            "Avoid nitrofurantoin if **eGFR under 30**, in G6PD deficiency and after 36 weeks.",
+            "Advise 2-3 litres of fluid, complete voiding and **voiding after intercourse**.",
+          ],
+        },
+        {
+          title: "Treatment - next steps",
+          points: [
+            "OPD pyelonephritis: one dose of **ceftriaxone 1-2 g or amikacin 15 mg/kg**.",
+            "Then an oral drug by culture: **7 days** total, or 5-7 days of a fluoroquinolone.",
+            "Admit for sepsis, vomiting, pregnancy, obstruction or known ESBL.",
+            "IV options: **piperacillin-tazobactam**, or **meropenem or ertapenem** for severe ESBL.",
+            "Complicated UTI that improves: **7 days**, even in men and bacteraemia.",
+            "Suspected prostatitis needs 10-14 days; acute bacterial prostatitis 2-4 weeks.",
+            "Urosepsis with obstruction needs **nephrostomy or stent the same day**.",
+          ],
+        },
+        {
+          title: "Special groups",
+          points: [
+            "**Screen every pregnancy** with a urine culture at the first visit.",
+            "Pregnancy: nitrofurantoin, cephalexin, amoxicillin-clavulanate or fosfomycin for 5-7 days.",
+            "Avoid quinolones and tetracyclines in pregnancy; avoid cotrimoxazole in first trimester and near term.",
+            "**Admit pyelonephritis in pregnancy** for IV ceftriaxone.",
+            "Infants under 3 months or toxic children: **IV ceftriaxone 50-75 mg/kg** daily.",
+            "CAUTI: **replace the catheter** before culture; never treat asymptomatic catheter bacteriuria.",
+          ],
+        },
+        {
+          title: "Referral and follow-up",
+          points: [
+            "Uncomplicated cystitis needs **no routine repeat culture**.",
+            "Fever at 48-72 hours means **image for obstruction or abscess**.",
+            "Pregnancy: **test-of-cure culture** 1-2 weeks after treatment.",
+            "Every man with febrile UTI: look for obstruction, stones or prostate disease.",
+            "Recurrent UTI: vaginal oestrogen after menopause, or **methenamine hippurate 1 g twice daily**.",
+            "Long-term nitrofurantoin: check creatinine, LFT and lungs every 6 months.",
+          ],
+        },
+      ],
+      tables: [
+        {
+          heading: "UTI drugs at a glance",
+          columns: ["Drug", "Dose and route", "Duration", "Key side effects / cautions"],
+          rows: [
+            ["Nitrofurantoin", "100 mg oral BD", "5 days", "Avoid eGFR under 30, G6PD, after 36 weeks"],
+            ["Fosfomycin trometamol", "3 g oral sachet", "Single dose", "Diarrhoea, vaginitis; ESBL active"],
+            ["Amoxicillin-clavulanate", "625 mg oral TDS", "5-7 days", "Diarrhoea; culture-guided; safe in pregnancy"],
+            ["Cephalexin", "500 mg oral BD-QID", "5-7 days", "Rash; safe in pregnancy"],
+            ["Ceftriaxone", "1-2 g IV/IM OD; child 50-75 mg/kg", "Stat, then oral by culture", "Fails against ESBL"],
+            ["Amikacin", "15 mg/kg IV/IM OD", "Stat or short course", "Nephrotoxicity, ototoxicity; avoid in pregnancy"],
+            ["Piperacillin-tazobactam", "4.5 g IV 6-8-hourly", "7 days total if improving", "Carbapenem-sparing for mild ESBL"],
+            ["Meropenem or ertapenem", "1 g IV 8-hourly; ertapenem 1 g OD", "7 days total if improving", "Reserve for severe ESBL or urosepsis"],
+            ["Ciprofloxacin or levofloxacin", "500 mg BD; levo 750 mg OD", "7 days; levo 5 days", "Only if susceptible; tendon rupture, QT"],
+            ["Methenamine hippurate", "1 g oral BD", "Long term", "Non-antibiotic prophylaxis; not in CKD"],
+          ],
+        },
+        {
+          heading: "Significant bacteriuria cut-offs",
+          columns: ["Sample and setting", "Significant count (CFU/mL)", "Note"],
+          rows: [
+            ["Midstream urine (Kass)", "10^5 or more", "Single organism"],
+            ["Symptomatic woman, cystitis", "10^3 or more", "Culture not routine"],
+            ["Acute pyelonephritis", "10^4 or more", "Always culture"],
+            ["Asymptomatic bacteriuria", "10^5 in 2 samples (women)", "Treat only in pregnancy"],
+            ["Suprapubic aspirate", "Any growth", "Gold standard in infants"],
+          ],
+        },
+        {
+          heading: "Uncomplicated versus complicated",
+          columns: ["Feature", "Uncomplicated", "Complicated"],
+          rows: [
+            ["Who", "Healthy non-pregnant woman, normal tract", "Men, pregnancy, children, diabetes, catheter, obstruction"],
+            ["Culture", "Not needed for cystitis", "Before the first dose"],
+            ["Drug", "Nitrofurantoin or fosfomycin", "By culture; IV if unwell"],
+            ["Duration", "5 days or single dose", "7 days if improving"],
+            ["Imaging", "None", "Ultrasound"],
+          ],
+        },
+      ],
+      remember: [
+        "Cystitis in India: **nitrofurantoin 5 days or fosfomycin 3 g once**.",
+        "Nitrofurantoin only reaches the bladder, **never the kidney**.",
+        "Treat asymptomatic bacteriuria only in **pregnancy** and before urological surgery.",
+        "Fever plus hydronephrosis is a **drainage problem**, not an antibiotic problem.",
+        "Sterile pyuria in India: **genitourinary TB** until proved otherwise.",
+        "Ultrasound after the **first febrile UTI** in every child.",
+      ],
+    },
     checked: "2026-10",
     updated: [
       "IDSA 2025 cUTI: complicated UTI defined by site (beyond the bladder), not sex - afebrile cystitis in men may be treated as uncomplicated.",
@@ -380,6 +1349,168 @@ const revision: RevisionSet = {
   },
 
   "infectious-fever-skin-soft-tissue-infection": {
+    notes: {
+      sections: [
+        {
+          title: "Definition and key facts",
+          points: [
+            "**SSTI** is infection of the epidermis, dermis, fat, fascia or muscle.",
+            "**Purulent infection is Staphylococcus aureus**; non-purulent cellulitis is **Streptococcus pyogenes**.",
+            "About **40% of Indian S. aureus is MRSA**.",
+            "Community MRSA with **PVL toxin** causes recurrent boils and household clusters.",
+            "Almost every SSTI starts with a **barrier breach** such as tinea pedis, a cut or a bite.",
+          ],
+        },
+        {
+          title: "Classification that matters",
+          points: [
+            "By depth: impetigo and folliculitis, then **erysipelas and cellulitis**, then abscess, then necrotising infection.",
+            "IDSA: **purulent versus non-purulent**, each graded mild, moderate or severe.",
+            "**Moderate** means systemic signs: temperature over 38 C, HR over 90, RR over 24.",
+            "**Severe** means hypotension, failed oral therapy, immunocompromise, bullae or rapid spread.",
+            "Necrotising fasciitis: **type I polymicrobial**, **type II streptococcal**, type III clostridial or Vibrio.",
+          ],
+        },
+        {
+          title: "How it happens (pathophysiology)",
+          points: [
+            "Streptococcal **hyaluronidase and streptokinase** spread infection diffusely, without pus.",
+            "**Erysipelas** is upper dermis with lymphatics, so it is raised with a **sharp margin**.",
+            "Cellulitis is deeper, so its **margin is indistinct**.",
+            "Staphylococcal **coagulase** walls infection off, forming a localised abscess.",
+            "Pus is avascular, so antibiotics penetrate poorly; **drainage cures the abscess**.",
+            "In necrotising fasciitis, organisms race along the fascia and **thrombose perforating vessels**.",
+            "Deep ischaemia causes **pain out of proportion** before the skin changes.",
+          ],
+        },
+        {
+          title: "History in the OPD",
+          points: [
+            "Ask **how fast it spreads** and how painful it is.",
+            "Ask about **pus or a boil**; purulence means S. aureus and drainage.",
+            "Ask about fever, vomiting or confusion, which raise the severity grade.",
+            "Ask the portal: injury, insect bite, **itchy toe webs**, scabies, injection.",
+            "Ask about bites, water exposure, diabetes and immunosuppression.",
+            "Ask about **tetanus vaccination** and penicillin allergy.",
+          ],
+        },
+        {
+          title: "Examination",
+          points: [
+            "**Mark the edge of erythema with a pen**, with date and time.",
+            "Feel for **fluctuation**; use bedside ultrasound if unsure.",
+            "Necrotising signs: **tense oedema beyond the redness, dusky skin, bullae, anaesthesia, crepitus**.",
+            "Check the **toe webs for tinea pedis** and look for lymphoedema.",
+            "Exclude mimics: DVT, venous stasis dermatitis, gout; **bilateral cellulitis is rare**.",
+            "Diabetic foot: **probe-to-bone test**, pulses, ABI and monofilament.",
+            "Around the eye, proptosis or painful eye movement means **orbital cellulitis**.",
+          ],
+        },
+        {
+          title: "Investigations",
+          points: [
+            "**Diagnosis is clinical**; mild cellulitis needs no tests.",
+            "Swabs of intact cellulitic skin are useless.",
+            "**Culture pus** from every drained abscess.",
+            "Check **glucose or HbA1c** in recurrent boils and every foot infection.",
+            "**LRINEC of 8 or more** means high risk, but a low score never excludes necrotising fasciitis.",
+            "**Imaging must never delay surgery** in suspected necrotising infection.",
+          ],
+        },
+        {
+          title: "Treatment - first line",
+          points: [
+            "Abscess: **incision and drainage** is the treatment; culture the pus.",
+            "Limited impetigo: **mupirocin or fusidic acid 2%** three times daily for 5 days.",
+            "Mild cellulitis: **amoxicillin 500 mg TDS or cephalexin 500 mg QID for 5 days**.",
+            "Penicillin allergy: **clindamycin 300-450 mg** three to four times daily.",
+            "Elevate the limb and treat the portal, such as tinea pedis.",
+            "**Never squeeze a boil** in the nose and upper-lip danger area.",
+          ],
+        },
+        {
+          title: "Treatment - next steps",
+          points: [
+            "Purulent infection needing antibiotic: **MRSA-active cotrimoxazole or doxycycline** for 5-7 days.",
+            "Moderate cellulitis: IV **cefazolin, ceftriaxone or cloxacillin**.",
+            "Severe or MRSA sepsis: **vancomycin 15-20 mg/kg IV** or linezolid 600 mg twice daily.",
+            "Necrotising fasciitis: **piperacillin-tazobactam or meropenem plus clindamycin plus vancomycin**.",
+            "**Immediate surgical debridement** is the only thing that improves survival.",
+            "Clindamycin is added to **switch off toxin production**.",
+          ],
+        },
+        {
+          title: "Special groups",
+          points: [
+            "Bites: **amoxicillin-clavulanate**, because cloxacillin and cephalexin miss Pasteurella.",
+            "Bite prophylaxis lasts 3-5 days; infected bites need 7-14 days.",
+            "Diabetic foot soft tissue: **1-2 weeks**; osteomyelitis without resection: **6 weeks**.",
+            "Diabetic foot also needs off-loading, debridement, glucose control and vascular review.",
+            "Recurrent boils: **nasal mupirocin and chlorhexidine wash** for the whole household.",
+            "Recurrent cellulitis: **penicillin V 250 mg twice daily for 12 months**.",
+          ],
+        },
+        {
+          title: "Referral and follow-up",
+          points: [
+            "Review cellulitis at **48-72 hours** against the pen mark.",
+            "Spread beyond 24 hours means failure: look for abscess, necrosis or MRSA.",
+            "Refer the same day for necrotising infection, orbital cellulitis or flexor tenosynovitis.",
+            "Tetanus-prone wound with under 3 doses: **Td plus tetanus immunoglobulin 250 IU**.",
+            "After impetigo, check for oedema and haematuria at 2-3 weeks for **post-streptococcal GN**.",
+          ],
+        },
+      ],
+      tables: [
+        {
+          heading: "SSTI drugs at a glance",
+          columns: ["Drug", "Dose and route", "Duration", "Key side effects / cautions"],
+          rows: [
+            ["Mupirocin or fusidic acid 2%", "Topical TDS", "5 days, never over 10", "Resistance with long use"],
+            ["Amoxicillin", "500 mg oral TDS", "5 days", "Rash; non-purulent cellulitis"],
+            ["Cephalexin", "500 mg oral QID", "5-7 days", "GI upset, rash"],
+            ["Cloxacillin", "500 mg oral QID; IV 1-2 g 6-hourly", "5-7 days", "Empty stomach; flucloxacillin cholestasis"],
+            ["Clindamycin", "300-450 mg oral TDS-QID; 600-900 mg IV", "5-7 days", "C. difficile diarrhoea"],
+            ["Cotrimoxazole DS", "1-2 tablets oral BD", "5-7 days", "Rash, SJS, hyperkalaemia; MRSA cover"],
+            ["Doxycycline", "100 mg oral BD", "5-7 days", "Photosensitivity; not in pregnancy"],
+            ["Amoxicillin-clavulanate", "625 mg oral TDS", "Bites 3-5 days; infected 7-14", "Diarrhoea, cholestatic hepatitis"],
+            ["Vancomycin", "15-20 mg/kg IV 8-12-hourly", "Until oral switch", "Nephrotoxicity, red man reaction"],
+            ["Linezolid", "600 mg oral or IV BD", "Short courses", "Low platelets after 2 weeks; avoid with SSRIs"],
+          ],
+        },
+        {
+          heading: "Purulent versus non-purulent",
+          columns: ["Feature", "Purulent", "Non-purulent"],
+          rows: [
+            ["Organism", "Staphylococcus aureus", "Streptococcus pyogenes"],
+            ["Lesions", "Furuncle, carbuncle, abscess", "Cellulitis, erysipelas"],
+            ["Mild", "Incision and drainage", "Oral amoxicillin or cephalexin, 5 days"],
+            ["Moderate", "Drainage plus cotrimoxazole or doxycycline", "IV penicillin, ceftriaxone or cefazolin"],
+            ["Severe", "Drainage plus vancomycin or linezolid", "Explore surgically; broad IV cover"],
+          ],
+        },
+        {
+          heading: "LRINEC score",
+          columns: ["Component", "Finding", "Points"],
+          rows: [
+            ["CRP", "150 mg/L or more", "4"],
+            ["WBC", "15,000-25,000 (over 25,000 scores 2)", "1"],
+            ["Haemoglobin", "11-13.5 g/dL (under 11 scores 2)", "1"],
+            ["Sodium", "Under 135 mmol/L", "2"],
+            ["Creatinine", "Over 1.6 mg/dL", "2"],
+            ["Glucose", "Over 180 mg/dL", "1"],
+          ],
+        },
+      ],
+      remember: [
+        "**Pus = staph, no pus = strep**: this one rule picks the antibiotic.",
+        "An abscess is cured by a **scalpel**; the antibiotic is the adjunct.",
+        "Five days of amoxicillin or cephalexin is enough for simple cellulitis.",
+        "**Pain out of proportion** means necrotising fasciitis: surgeon tonight.",
+        "Probe every diabetic foot ulcer: touching bone means **osteomyelitis**.",
+        "Skin strep causes glomerulonephritis but **not rheumatic fever**.",
+      ],
+    },
     checked: "2026-10",
     updated: [
       "SSC 2026: sepsis from cellulitis - at least 30 mL/kg balanced crystalloid and prolonged beta-lactam infusion after the loading dose.",
@@ -436,6 +1567,161 @@ const revision: RevisionSet = {
   },
 
   "infectious-fever-rabies-animal-bite": {
+    notes: {
+      sections: [
+        {
+          title: "Definition and key facts",
+          points: [
+            "**Rabies** is an almost always fatal encephalomyelitis caused by a **Lyssavirus** (Rhabdoviridae).",
+            "It spreads in the saliva of a rabid animal; **dogs cause about 96%** of Indian cases.",
+            "India has about **36% of world rabies deaths**; 40% of victims are children.",
+            "Rodents, squirrels, rabbits and birds need **no PEP** in India.",
+            "Rabies is **completely preventable** with wound washing, vaccine and immunoglobulin.",
+          ],
+        },
+        {
+          title: "Classification that matters",
+          points: [
+            "**Category I**: touching, feeding, licks on intact skin; no PEP.",
+            "**Category II**: nibbling, minor scratches **without bleeding**; wash and vaccinate.",
+            "**Category III**: bites, scratches with blood, licks on broken skin, mucosa, **any bat contact**.",
+            "Category III needs wash, vaccine **and RIG or monoclonal antibody**.",
+            "Category II in an **immunocompromised** person is managed as category III.",
+            "Clinical forms: **furious (80%)** with hydrophobia, or **paralytic (20%)**.",
+          ],
+        },
+        {
+          title: "How it happens (pathophysiology)",
+          points: [
+            "Virus first replicates in **muscle at the wound**; washing and RIG act here.",
+            "It binds the **acetylcholine receptor** and enters peripheral nerves, beyond antibody reach.",
+            "It travels to the brain by **retrograde axonal transport**.",
+            "Incubation is usually **20-90 days**, shorter for face, hand and multiple bites.",
+            "Brainstem and limbic infection cause **hydrophobia, aerophobia** and agitation.",
+            "**Negri bodies** are found in hippocampal and Purkinje cells.",
+            "A rabid dog or cat dies within about **10 days** of shedding virus.",
+          ],
+        },
+        {
+          title: "History in the OPD",
+          points: [
+            "Ask **which animal** and exactly what happened: lick, scratch or bite.",
+            "Ask **did it bleed**; blood makes it category III.",
+            "Ask site and number of wounds; face, hands and genitals carry most risk.",
+            "Ask about **previous complete rabies vaccination**; it changes the regimen.",
+            "Ask about immunosuppression, chloroquine or steroids, which blunt vaccine response.",
+            "Pregnancy and breastfeeding are **never contraindications**.",
+          ],
+        },
+        {
+          title: "Examination",
+          points: [
+            "**Undress and examine every wound**; count, measure and grade each one.",
+            "Grade the category from the **worst wound** and record it on the card.",
+            "Check tendon, nerve, joint and vessel injury in hand and face wounds.",
+            "Record **weight** for the RIG dose; the vaccine dose is not weight-based.",
+            "In clinical rabies, look for **hydrophobia, aerophobia** and hypersalivation.",
+            "Use **barrier precautions**; saliva and tears contain virus.",
+          ],
+        },
+        {
+          title: "Investigations",
+          points: [
+            "**No test is needed to start PEP**; the decision is clinical.",
+            "Do not check routine antibody titres in healthy people.",
+            "Check **RFFIT titre** in the immunocompromised; **0.5 IU/mL or more** is protective.",
+            "If the animal dies, send its brain for **dFAT** testing.",
+            "Human diagnosis: **nuchal skin biopsy**, saliva RT-PCR, corneal smear.",
+          ],
+        },
+        {
+          title: "Treatment - first line",
+          points: [
+            "**Wash every wound with soap and running water for 15 minutes**.",
+            "Then apply **povidone iodine or 70% alcohol**; never chilli, turmeric or oil.",
+            "**Do not suture**; if unavoidable, infiltrate RIG first and suture loosely later.",
+            "**Start vaccine on day 0**, however late the patient presents.",
+            "IM dose is **one full vial at any age**, into deltoid or thigh, **never gluteal**.",
+            "Category III: infiltrate **RIG or monoclonal antibody into every wound**.",
+          ],
+        },
+        {
+          title: "Treatment - next steps",
+          points: [
+            "**ERIG 40 IU/kg** (max 3000 IU) or **HRIG 20 IU/kg** (max 1500 IU).",
+            "Monoclonal: **Rabishield 3.33 IU/kg** or **Twinrab 40 IU/kg**.",
+            "Give RIG once, **up to day 7** after the first vaccine dose, never later.",
+            "No skin test before ERIG; keep **adrenaline** ready and observe 30-60 minutes.",
+            "Dilute RIG with saline if the volume is too small for many wounds.",
+            "No RIG available: start vaccine and **refer the same day**.",
+            "Bite prophylaxis: **amoxicillin-clavulanate 3-5 days**; Td if no dose in 5 years.",
+          ],
+        },
+        {
+          title: "Special groups",
+          points: [
+            "Previously fully vaccinated: **two doses on days 0 and 3**, and no RIG.",
+            "Immunocompromised: RIG for category II and III, full course, then titre check.",
+            "**Pre-exposure prophylaxis** for vets, animal handlers, lab staff and high-risk children.",
+            "Clinical rabies is virtually always fatal: **palliative care** in a quiet, dim room.",
+            "Staff or family with saliva exposure to broken skin need PEP.",
+          ],
+        },
+        {
+          title: "Referral and follow-up",
+          points: [
+            "Observe the dog for **10 days**, but never delay PEP for observation.",
+            "A **missed dose is resumed**, not restarted.",
+            "Warn ERIG recipients about **serum sickness at 7-14 days**.",
+            "Refer severe, multiple or facial bites and any suspected clinical rabies.",
+            "Report bites on **IDSP/IHIP**; NAPRE aims at **70% dog vaccination coverage**.",
+          ],
+        },
+      ],
+      tables: [
+        {
+          heading: "Rabies PEP drugs at a glance",
+          columns: ["Drug", "Dose and route", "Duration", "Key side effects / cautions"],
+          rows: [
+            ["Cell culture vaccine (IM)", "1 full vial IM, deltoid or thigh", "Essen or Zagreb schedule", "Local pain, fever; never gluteal"],
+            ["Cell culture vaccine (ID)", "0.1 mL at 2 sites", "Days 0, 3, 7, 28", "Must raise a bleb; vial within 6-8 h"],
+            ["Equine RIG", "40 IU/kg, max 3000 IU, into wounds", "Once, day 0 to day 7", "Anaphylaxis rare; serum sickness"],
+            ["Human RIG", "20 IU/kg, max 1500 IU, into wounds", "Once, day 0 to day 7", "Never same site as vaccine"],
+            ["Monoclonal antibody", "Rabishield 3.33 IU/kg; Twinrab 40 IU/kg", "Once, day 0 to day 7", "Not for previously vaccinated"],
+            ["Amoxicillin-clavulanate", "625 mg oral TDS", "3-5 days; 7-14 if infected", "Diarrhoea, rash"],
+            ["Td with or without TIG", "Td 0.5 mL IM; TIG 250 IU IM", "Single dose", "TIG if under 3 doses or unknown"],
+          ],
+        },
+        {
+          heading: "WHO exposure categories",
+          columns: ["Category", "Contact", "Action"],
+          rows: [
+            ["I", "Touching, feeding, licks on intact skin", "Wash skin; no PEP"],
+            ["II", "Nibbling, scratches without bleeding", "Wash and vaccinate"],
+            ["III", "Bites, bleeding scratches, mucosa, bats", "Wash, vaccinate and RIG"],
+          ],
+        },
+        {
+          heading: "Vaccine schedules",
+          columns: ["Regimen", "Dose", "Days"],
+          rows: [
+            ["Essen IM", "1 vial", "0, 3, 7, 14, 28"],
+            ["Zagreb IM (2-1-1)", "1 vial per site", "Two on day 0, one each on days 7 and 21"],
+            ["Thai Red Cross ID", "0.1 mL at 2 sites", "0, 3, 7, 28"],
+            ["Re-exposure after full course", "1 vial IM or 0.1 mL ID", "0 and 3; no RIG"],
+            ["Pre-exposure (NRCP)", "1 vial IM or 0.1 mL ID", "0, 7, 21 or 28"],
+          ],
+        },
+      ],
+      remember: [
+        "**15 minutes of soap and running water** halves the rabies risk.",
+        "**Blood at the wound = category III**: vaccine plus RIG.",
+        "One full vial IM at any age; **never the buttock**.",
+        "Essen **0-3-7-14-28**; Zagreb **2-1-1**; ID 2 sites on 0-3-7-28.",
+        "Previously vaccinated: days 0 and 3, **no RIG**.",
+        "**No time limit, no contraindication**; a missed dose is resumed, not restarted.",
+      ],
+    },
     checked: "2026-10",
     master: {
       heading: "Master revision table - Animal bite and rabies PEP",
@@ -492,6 +1778,174 @@ const revision: RevisionSet = {
   },
 
   "infectious-fever-hiv-art": {
+    notes: {
+      sections: [
+        {
+          title: "Definition and key facts",
+          points: [
+            "**HIV** is a chronic retroviral infection that progressively destroys **CD4 T cells**.",
+            "**AIDS** is a WHO stage 4 condition or **CD4 below 200 cells/mm3**.",
+            "India has about **2.5 million** people living with HIV; adult prevalence about 0.2%.",
+            "Sexual spread is commonest; needlestick risk is about **0.3%** per exposure.",
+            "**TB is the commonest opportunistic infection** and killer in Indian PLHIV.",
+            "**Undetectable equals untransmittable (U=U)** for sexual transmission.",
+          ],
+        },
+        {
+          title: "Classification that matters",
+          points: [
+            "**WHO clinical stages 1-4** work without a laboratory; patients never move back down.",
+            "**Advanced HIV disease**: CD4 under 200 or stage 3-4, and **every child under 5**.",
+            "Advanced disease triggers CrAg screen, TB-LAM, cotrimoxazole, TB preventive therapy and rapid ART.",
+            "CD4 under 200: Pneumocystis; under 100: toxoplasma and cryptococcus; under 50: CMV.",
+            "Window period: about **2-4 weeks** for fourth-generation tests, 10-14 days for NAT.",
+          ],
+        },
+        {
+          title: "How it happens (pathophysiology)",
+          points: [
+            "**gp120 binds CD4** and the CCR5 or CXCR4 co-receptor; gp41 fuses the membranes.",
+            "Error-prone **reverse transcriptase** makes DNA, so resistance arises fast and three drugs are needed.",
+            "**Integrase** inserts viral DNA into the host genome; dolutegravir blocks this step.",
+            "Acute infection causes a **mononucleosis-like seroconversion illness** at peak infectivity.",
+            "Untreated, CD4 falls about **50-100 cells a year**; AIDS follows in 8-10 years.",
+            "A **latent reservoir** in resting memory cells makes ART **lifelong**.",
+            "**IRIS** is paradoxical worsening as recovering immunity reacts to TB or cryptococcus.",
+          ],
+        },
+        {
+          title: "History in the OPD",
+          points: [
+            "Ask risk exposures **non-judgementally**, including the spouse's HIV status.",
+            "Ask about weight loss, **fever or diarrhoea over 1 month**, thrush and shingles.",
+            "Ask the **four-symptom TB screen** at every visit: cough, fever, weight loss, night sweats.",
+            "Ask about headache and confusion (meningitis) and **visual floaters** (CMV retinitis).",
+            "Take a full drug history: **rifampicin, antacids, iron, anticonvulsants, metformin** interact.",
+            "Ask about adherence; **over 95%** adherence decides success.",
+            "Ask about hepatitis B and renal disease, which change the regimen.",
+          ],
+        },
+        {
+          title: "Examination",
+          points: [
+            "Record **weight** every visit; loss over 10% is stage 3.",
+            "Look for **oral candida** and **oral hairy leukoplakia** on the lateral tongue.",
+            "Feel for generalised lymphadenopathy; a matted node suggests TB or lymphoma.",
+            "Check SpO2 at rest and after walking; **PCP desaturates on exertion**.",
+            "Dilated **fundoscopy** if CD4 is under 50 or vision changes.",
+            "Children: **parotid enlargement**, linear gingival erythema and clubbing are paediatric staging signs.",
+          ],
+        },
+        {
+          title: "Investigations",
+          points: [
+            "Diagnose by **NACO three-test strategy**: all three reactive means positive.",
+            "Testing needs **informed consent** and counselling under the HIV/AIDS Act 2017.",
+            "Under **18 months**, use **DNA-PCR** at 6 weeks, 6 months and 12 months.",
+            "Baseline: **CD4**, CBC, creatinine, LFT, glucose, HBsAg, anti-HCV, VDRL, chest X-ray.",
+            "CD4 under 200: **serum CrAg** and **urine TB-LAM**.",
+            "**Viral load at 6 and 12 months**, then yearly, is the monitoring test.",
+            "**Failure**: viral load 1000 or more on two tests **3 months apart**, after adherence counselling.",
+          ],
+        },
+        {
+          title: "Treatment - first line",
+          points: [
+            "**Treat all**, regardless of CD4, stage, age or pregnancy.",
+            "Start the **same day or within 7 days** of diagnosis.",
+            "Adults: **TLD - tenofovir 300 + lamivudine 300 + dolutegravir 50 mg**, once daily.",
+            "Take TLD 2 hours before or 6 hours after **antacids, iron or calcium**.",
+            "Avoid tenofovir if **CrCl under 50**; use zidovudine or abacavir.",
+            "Hepatitis B co-infection: **never stop tenofovir and lamivudine** abruptly.",
+            "Children from 4 weeks and 3 kg: **abacavir + lamivudine + dolutegravir** by weight band.",
+          ],
+        },
+        {
+          title: "Treatment - next steps",
+          points: [
+            "**With rifampicin**, add an extra **dolutegravir 50 mg 12 hours later**.",
+            "Continue the extra dose for **2 weeks after rifampicin** stops.",
+            "With a protease inhibitor, replace rifampicin with **rifabutin**.",
+            "TB: start ATT, then **ART within 2 weeks**; TB meningitis: defer 4-8 weeks.",
+            "**Cryptococcal meningitis: defer ART 4-6 weeks** after antifungals start.",
+            "Second line after confirmed failure: **boosted protease inhibitor** with zidovudine and lamivudine.",
+            "Cap metformin at **1000 mg a day** with dolutegravir.",
+          ],
+        },
+        {
+          title: "Prevention and programmes",
+          points: [
+            "**Cotrimoxazole DS daily** for CD4 under 350, stage 3-4, or any HIV-TB.",
+            "Stop cotrimoxazole when CD4 is **over 350 twice**, 6 months apart, on ART.",
+            "**TB preventive therapy**: isoniazid 300 mg with pyridoxine for 6 months, or 3HP.",
+            "**PEP: TLD for 28 days**, ideally within 2 hours, never after 72 hours.",
+            "PEP follow-up HIV tests at **6 weeks, 3 months and 6 months**.",
+            "**PrEP**: daily tenofovir plus emtricitabine cuts infection by **over 90%**.",
+            "After starting ART, review at **2 and 4 weeks**, then monthly until stable.",
+          ],
+        },
+        {
+          title: "Special groups",
+          points: [
+            "Every HIV-positive pregnant woman starts **lifelong TLD immediately**.",
+            "Viral load **under 1000 at 36 weeks: vaginal delivery**; otherwise caesarean at 38 weeks.",
+            "Low-risk infant: **nevirapine syrup daily for 6 weeks**.",
+            "High-risk infant: nevirapine 12 weeks plus zidovudine 6 weeks.",
+            "**Exclusive breastfeeding for 6 months** with mother on ART; never mixed feeding.",
+            "A **positive infant DNA-PCR** means same-day ART.",
+          ],
+        },
+      ],
+      tables: [
+        {
+          heading: "HIV drugs at a glance",
+          columns: ["Drug", "Dose and route", "Duration", "Key side effects / cautions"],
+          rows: [
+            ["TLD (TDF + 3TC + DTG)", "300/300/50 mg oral OD", "Lifelong; PEP 28 days", "Weight gain, insomnia; TDF kidney and bone"],
+            ["TLE (with efavirenz)", "Efavirenz 400 mg at bedtime", "Lifelong, if DTG unsuitable", "Vivid dreams, depression, rash"],
+            ["Abacavir + lamivudine", "600/300 mg OD; child by weight band", "Lifelong", "Hypersensitivity; never rechallenge"],
+            ["Zidovudine", "300 mg oral BD", "Lifelong", "Anaemia; avoid if Hb under 8"],
+            ["Atazanavir/r or lopinavir/r", "300/100 mg OD; 400/100 mg BD", "Second line", "Jaundice (ATV), diarrhoea (LPV); no rifampicin"],
+            ["Nevirapine (infant)", "10 mg OD (2000-2499 g); 15 mg (2500 g+)", "6 weeks; 12 if high risk", "Rash, hepatitis in adults"],
+            ["Cotrimoxazole DS", "800/160 mg oral OD", "Until CD4 over 350 twice", "Rash, SJS, cytopenias"],
+            ["Isoniazid (TPT)", "300 mg OD with pyridoxine", "6 months", "Hepatitis, neuropathy"],
+            ["Fluconazole (CrAg positive)", "800 mg, then 400 mg, then 200 mg", "2 weeks, 8 weeks, then maintenance", "Hepatitis, QT prolongation"],
+            ["Tenofovir + emtricitabine (PrEP)", "One tablet oral daily", "While at risk", "HIV test every 3 months"],
+          ],
+        },
+        {
+          heading: "WHO clinical stages (adults)",
+          columns: ["Stage", "Examples"],
+          rows: [
+            ["1", "Asymptomatic; persistent generalised lymphadenopathy"],
+            ["2", "Weight loss under 10%, zoster, recurrent URTI, oral ulcers"],
+            ["3", "Weight loss over 10%, oral candida, hairy leukoplakia, pulmonary TB"],
+            ["4", "PCP, oesophageal candida, extrapulmonary TB, cryptococcus, toxoplasma, Kaposi"],
+          ],
+        },
+        {
+          heading: "Exposure and PEP action",
+          columns: ["Exposure", "Risk", "Action"],
+          rows: [
+            ["Deep needlestick with visible blood", "About 0.3%", "TLD 28 days, within 2-72 hours"],
+            ["Mucosal splash or superficial scratch", "About 0.09%", "TLD 28 days; stop if source negative"],
+            ["Sexual assault", "0.1% vaginal, 1.4% anal per act", "TLD, emergency contraception, STI cover"],
+            ["Partner with sustained suppression", "Effectively zero", "No PEP"],
+            ["Intact skin, fluids without blood", "None", "Wash and reassure"],
+            ["After 72 hours", "PEP ineffective", "Test and consider PrEP"],
+          ],
+        },
+      ],
+      remember: [
+        "**Treat all, same day**: TLD, one tablet once daily.",
+        "Wait only for **cryptococcal (4-6 weeks)** and **TB meningitis (4-8 weeks)**.",
+        "Rifampicin: **extra dolutegravir 50 mg** 12 hours later.",
+        "One high viral load is **non-adherence** until proved otherwise.",
+        "PEP: TLD **28 days**, ideally 2 hours, never after 72.",
+        "Never stop tenofovir and lamivudine abruptly in **hepatitis B**.",
+        "Under 18 months, **DNA-PCR**; the antibody belongs to the mother.",
+      ],
+    },
     checked: "2026-10",
     updated: [
       "WHO 2023: viral load classed as undetectable (zero sexual transmission), suppressed but detectable up to 1000 copies/mL (almost zero) and unsuppressed over 1000.",
@@ -561,6 +2015,151 @@ const revision: RevisionSet = {
   },
 
   "infectious-fever-antimicrobial-resistance": {
+    notes: {
+      sections: [
+        {
+          title: "Definition and key facts",
+          points: [
+            "**AMR** is a microbe's ability to survive a drug that once killed or inhibited it.",
+            "Bacterial AMR caused **1.27 million deaths directly** worldwide in 2019.",
+            "India has the **highest national AMR death toll** and very high antibiotic use.",
+            "Over **60% of Indian E. coli make ESBL**; about **40% of S. aureus is MRSA**.",
+            "**NDM-1** carbapenemase, first described in 2008, is endemic in Indian hospitals.",
+            "**Stewardship** means the right drug, dose, route, duration and timing.",
+          ],
+        },
+        {
+          title: "Classification that matters",
+          points: [
+            "**MDR**: non-susceptible to at least one agent in **three or more categories**.",
+            "**XDR**: susceptible in only **one or two categories**.",
+            "**PDR**: non-susceptible to **all agents in all categories**.",
+            "**WHO AWaRe**: Access, Watch and Reserve antibiotic groups.",
+            "TB differs: **MDR-TB** is isoniazid plus rifampicin resistance.",
+            "**Intrinsic** resistance is natural; **acquired** resistance comes by mutation or gene transfer.",
+          ],
+        },
+        {
+          title: "How it happens (pathophysiology)",
+          points: [
+            "**Selection pressure**: each course kills susceptible flora and leaves resistant bacteria to multiply.",
+            "Chromosomal mutations alter targets, such as **gyrA** in typhoid and **rpoB** in TB.",
+            "**Plasmid conjugation** spreads resistance genes between species.",
+            "**ESBLs** destroy third-generation cephalosporins; **carbapenemases** (NDM, OXA-48) destroy carbapenems.",
+            "**mecA** makes PBP2a, so MRSA resists all beta-lactams.",
+            "Porin loss and **efflux pumps** cause multidrug resistance.",
+            "Resistance moves between humans, animals, sewage and drug factory effluent (**One Health**).",
+          ],
+        },
+        {
+          title: "Causes and risk factors",
+          points: [
+            "**Over-the-counter sale** is the biggest community driver.",
+            "**Self-medication** with leftover antibiotics and informal providers.",
+            "Antibiotics for **viral URI, watery diarrhoea and undiagnosed fever**.",
+            "**Irrational fixed-dose combinations** such as cefixime-ofloxacin.",
+            "Antibiotics as **growth promoters** in poultry and aquaculture.",
+            "Poor sanitation, weak hospital infection control and limited laboratories.",
+          ],
+        },
+        {
+          title: "Treatment - first line",
+          points: [
+            "Ask: is it bacterial, does it need an antibiotic, which **narrowest Access drug**, how few days.",
+            "**No antibiotic** for colds, acute bronchitis, most sore throats and early sinusitis.",
+            "Use **back-up (delayed) prescribing** when unsure; it cuts use safely.",
+            "Strep throat: **amoxicillin 500 mg TDS for 10 days** or benzathine penicillin once.",
+            "Cystitis: **nitrofurantoin 5 days or fosfomycin 3 g once**.",
+            "CAP without comorbidity: **amoxicillin 1 g TDS for 5 days**.",
+            "Watery diarrhoea: **ORS and zinc**, not antibiotics.",
+          ],
+        },
+        {
+          title: "Treatment - next steps",
+          points: [
+            "**Shorter courses** work: 5 days for CAP and cellulitis, 3-5 for cystitis.",
+            "Dose by weight and kidney function; switch **IV to oral** when stable.",
+            "**De-escalate** to the narrowest drug once culture returns.",
+            "Surgical prophylaxis: **cefazolin 2 g single dose** within 60 minutes before incision.",
+            "**Reserve drugs** like colistin and ceftazidime-avibactam are hospital-only, specialist-authorised.",
+            "NDM is not inhibited by avibactam, so **add aztreonam**.",
+          ],
+        },
+        {
+          title: "Prevention and programmes",
+          points: [
+            "**NAP-AMR 2017**: One Health plan with **six strategic priorities**.",
+            "**NAP-AMR 2.0 (2025-2029)** gives each ministry its own budgeted plan.",
+            "Kerala's **KARSAP (2018)** was the first state AMR plan.",
+            "**Schedule H1** register is kept for **3 years**.",
+            "The **Red Line** marks prescription-only antibiotic packs.",
+            "Colistin was **banned as an animal growth promoter in 2019** (mcr-1).",
+            "World AMR Awareness Week is **18-24 November**.",
+          ],
+        },
+        {
+          title: "Special groups",
+          points: [
+            "**Hand hygiene** at the WHO five moments is the top infection-control measure.",
+            "Use care bundles and **remove devices early** in hospital patients.",
+            "Hospital AMS: local antibiogram, audit, and **pre-authorisation of Reserve drugs**.",
+            "Vaccines (PCV, Hib, TCV, influenza) **cut antibiotic use**.",
+          ],
+        },
+        {
+          title: "Referral and follow-up",
+          points: [
+            "Audit yourself: antibiotics in **under 30%** of OPD encounters.",
+            "Target **at least 70% Access** use by 2030 (UNGA 2024).",
+            "Refer sepsis after repeated courses; **culture before antibiotics**.",
+            "Refer UTI not better at 48 hours and typhoid not settling by day 5.",
+            "Report clusters of neonatal or post-operative infection.",
+          ],
+        },
+      ],
+      tables: [
+        {
+          heading: "Access-first antibiotics at a glance",
+          columns: ["Drug", "Dose and route", "Duration", "Key side effects / cautions"],
+          rows: [
+            ["Amoxicillin (pharyngitis)", "500 mg oral TDS; child 40-50 mg/kg/day", "10 days", "Rash, diarrhoea"],
+            ["Amoxicillin (CAP)", "1 g oral TDS", "5 days", "Rash, diarrhoea"],
+            ["Benzathine penicillin", "1.2 million units IM; 600,000 under 27 kg", "Single dose", "Rare anaphylaxis; observe 30 min"],
+            ["Nitrofurantoin", "100 mg oral BD", "5 days", "Avoid eGFR under 30"],
+            ["Cephalexin", "500 mg oral QID", "5 days", "GI upset, rash"],
+            ["Doxycycline", "100 mg oral BD", "5-7 days", "Photosensitivity; not in pregnancy"],
+            ["Azithromycin (Watch)", "500 mg-1 g oral OD", "Dysentery 3 days; enteric 7", "QT prolongation; specific indications only"],
+            ["Cefazolin", "2 g IV (3 g if over 120 kg)", "Single dose before incision", "Redose only if surgery over 4 h"],
+          ],
+        },
+        {
+          heading: "WHO AWaRe groups",
+          columns: ["Group", "Examples", "Use"],
+          rows: [
+            ["Access", "Amoxicillin, cephalexin, doxycycline, nitrofurantoin, cotrimoxazole", "Most common infections"],
+            ["Watch", "Azithromycin, ciprofloxacin, cefixime, ceftriaxone, meropenem", "Specific indications only"],
+            ["Reserve", "Colistin, linezolid, tigecycline, ceftazidime-avibactam", "Hospital only, confirmed MDR"],
+          ],
+        },
+        {
+          heading: "MDR, XDR and PDR",
+          columns: ["Type", "Definition", "Example"],
+          rows: [
+            ["MDR", "Non-susceptible in 3 or more categories", "ESBL E. coli"],
+            ["XDR", "Susceptible in only 1-2 categories", "Acinetobacter sensitive only to colistin"],
+            ["PDR", "Resistant to all agents", "Pan-resistant Klebsiella"],
+          ],
+        },
+      ],
+      remember: [
+        "MDR **3 or more** categories; XDR only **1-2** left; PDR none.",
+        "**Access, Watch, Reserve**: at least 70% Access by 2030.",
+        "NAP-AMR 2017: **six priorities**, One Health; 2.0 covers 2025-2029.",
+        "Schedule H1 register **3 years**; Red Line on prescription-only packs.",
+        "Surgical prophylaxis: **one dose** of cefazolin within 60 minutes.",
+        "Antibiotics do not treat fever; **diagnosis does**.",
+      ],
+    },
     checked: "2026-10",
     updated: [
       "NAP-AMR 2.0 (2025-2029) launched 18 November 2025: ministry-wise budgeted plans, private-sector engagement, wastewater surveillance of AMR and residues.",
@@ -616,6 +2215,169 @@ const revision: RevisionSet = {
   },
 
   "infectious-fever-tropical-fevers-zoonoses": {
+    notes: {
+      sections: [
+        {
+          title: "Definition and key facts",
+          points: [
+            "**Zoonoses** are infections naturally transmitted between vertebrate animals and humans.",
+            "About **60% of known and 75% of emerging** human infections are zoonotic.",
+            "Key Indian zoonoses: **leptospirosis, scrub typhus, JE, KFD, Nipah, brucellosis, anthrax, plague**.",
+            "**AES** is acute fever with altered mental status or new seizures.",
+            "**One Health** links human, animal and environmental health.",
+          ],
+        },
+        {
+          title: "Classification that matters",
+          points: [
+            "**Direct zoonoses**: one vertebrate host, such as rabies, brucellosis, anthrax.",
+            "**Cyclozoonoses**: two vertebrate hosts, such as hydatid and Taenia.",
+            "**Metazoonoses**: need an invertebrate vector, such as plague, JE, KFD, scrub typhus.",
+            "**Saprozoonoses**: soil or plant reservoir, such as larva migrans.",
+            "By direction: anthropozoonoses, zooanthroponoses and amphixenoses.",
+          ],
+        },
+        {
+          title: "How it happens (pathophysiology)",
+          points: [
+            "**Leptospira** in rat or cattle urine enters through **abraded skin** from water.",
+            "Leptospiral vasculitis causes **calf tenderness, conjunctival suffusion**, jaundice and AKI.",
+            "**Weil disease**: deep jaundice, **non-oliguric hypokalaemic AKI** and bleeding.",
+            "**Chikungunya** alphavirus infects synovium, causing severe symmetric polyarthralgia.",
+            "**JE**: Culex mosquitoes; **pigs amplify**, ardeid birds maintain, humans are dead-end hosts.",
+            "**KFD**: tick-borne, **monkey deaths** are the sentinel; first seen in Shimoga, 1957.",
+            "**Nipah**: fruit bats; spreads by contaminated fruit or palm sap, then **person to person**.",
+          ],
+        },
+        {
+          title: "History in the OPD",
+          points: [
+            "Ask **occupation**: paddy farming, sewage work, dairy, abattoir, forest work.",
+            "Ask about **floodwater or wading** in the last 2-4 weeks, and rats.",
+            "Ask about **raw milk** (brucellosis) and handling a **dead animal** (anthrax).",
+            "Ask about **rat falls** (plague), pigs (JE), bats or palm sap (Nipah).",
+            "Ask about forest visits and **monkey deaths** (KFD).",
+            "Ask about clusters, pregnancy, and JE vaccination.",
+          ],
+        },
+        {
+          title: "Examination",
+          points: [
+            "**Conjunctival suffusion plus calf tenderness** strongly suggests leptospirosis.",
+            "Search for an **eschar**: scrub typhus; painless eschar with massive oedema: anthrax.",
+            "Look for icterus, bleeding, oliguria and hypotension.",
+            "Check SpO2; haemoptysis suggests **leptospiral pulmonary haemorrhage**.",
+            "Small-joint swelling suggests chikungunya; sacroiliac tenderness suggests brucellosis.",
+            "A **painful bubo** in groin or axilla suggests plague.",
+            "Check **capillary glucose** in every child with AES.",
+          ],
+        },
+        {
+          title: "Investigations",
+          points: [
+            "First test for **malaria and dengue**, with CBC, LFT, creatinine and urine.",
+            "Leptospirosis: **IgM ELISA after day 5**; **MAT** is the gold standard.",
+            "Chikungunya: **RT-PCR on days 1-5**, IgM after day 5.",
+            "JE: **IgM MAC-ELISA in CSF**; also test for scrub typhus.",
+            "Nipah and KFD: **RT-PCR at NIV Pune** with full biosafety.",
+            "Brucellosis: prolonged blood culture and **SAT 1:160 or more**.",
+            "**Do not wait for serology** to treat a suspected bacterial zoonosis.",
+          ],
+        },
+        {
+          title: "Treatment - first line",
+          points: [
+            "Paracetamol and fluids; **no NSAIDs until dengue is excluded**.",
+            "Mild leptospirosis: **doxycycline 100 mg twice daily for 7 days**.",
+            "Alternatives: amoxicillin for 7 days, or **azithromycin 500 mg for 3 days** in pregnancy.",
+            "Malaria and dengue negative, no focus: empirical **doxycycline** covers scrub and lepto.",
+            "Chikungunya: **paracetamol** first; no steroids in the acute phase.",
+            "Viral zoonoses (JE, KFD, Nipah, chikungunya) need **supportive care only**.",
+          ],
+        },
+        {
+          title: "Treatment - next steps",
+          points: [
+            "Severe leptospirosis: **IV penicillin G or ceftriaxone** for 7 days.",
+            "Watch for a **Jarisch-Herxheimer reaction** after the first dose.",
+            "Weil disease: replace potassium and start **early dialysis** when needed.",
+            "Brucellosis: **doxycycline 6 weeks plus gentamicin 7 days**, or plus rifampicin.",
+            "Plague: **gentamicin or streptomycin**; contacts get doxycycline for 7 days.",
+            "Cutaneous anthrax: ciprofloxacin or doxycycline 7-10 days; **never incise the eschar**.",
+            "Chronic chikungunya arthritis: **hydroxychloroquine** or methotrexate under rheumatology.",
+          ],
+        },
+        {
+          title: "Complications and red flags",
+          points: [
+            "Jaundice with oliguria or bleeding after floodwater: **Weil disease**.",
+            "Haemoptysis in leptospirosis: pulmonary haemorrhage, **mortality over 50%**.",
+            "Child with fever and seizures: **AES**; check glucose and refer.",
+            "Encephalitis cluster with bat exposure: **suspect Nipah**; isolate and notify.",
+            "Painful bubo or rapid pneumonia in a rat-fall area: **plague**.",
+          ],
+        },
+        {
+          title: "Prevention and programmes",
+          points: [
+            "Weekly **doxycycline 200 mg** protects during flood relief or paddy planting.",
+            "**JE vaccine SA 14-14-2** at **9-12 and 16-24 months** in endemic districts.",
+            "In plague, **kill the fleas before the rats**.",
+            "Gumboots and gloves for farmers; **boiled or pasteurised milk**.",
+            "Nipah: avoid bat-bitten fruit and raw palm sap; monitor contacts **21 days**.",
+            "Notify on **IHIP using S, P and L forms**.",
+          ],
+        },
+      ],
+      tables: [
+        {
+          heading: "Zoonosis drugs at a glance",
+          columns: ["Drug", "Dose and route", "Duration", "Key side effects / cautions"],
+          rows: [
+            ["Doxycycline (lepto, scrub)", "100 mg oral BD; child 2.2 mg/kg", "7 days", "Photosensitivity; not in pregnancy"],
+            ["Doxycycline (prophylaxis)", "200 mg oral once weekly", "During exposure", "Start 1-2 days before"],
+            ["Azithromycin", "500 mg oral OD", "3 days lepto; 5 days scrub", "QT prolongation; choice in pregnancy"],
+            ["Penicillin G or ceftriaxone", "1.5 MU IV 6-hourly; ceftriaxone 1-2 g IV OD", "7 days", "Jarisch-Herxheimer reaction"],
+            ["Doxycycline + gentamicin (brucella)", "100 mg BD + gentamicin 5 mg/kg IV OD", "6 weeks; gentamicin 7 days", "Nephro- and ototoxicity"],
+            ["Gentamicin (plague)", "5 mg/kg IV OD", "10 days", "Check creatinine"],
+            ["Paracetamol", "500-1000 mg 6-8-hourly, max 3-4 g/day", "While symptomatic", "First choice in all tropical fevers"],
+            ["Naproxen", "250-500 mg oral BD", "Subacute chikungunya arthritis", "Only after dengue excluded"],
+            ["Hydroxychloroquine", "200-400 mg oral daily", "Chronic chikungunya arthritis", "Retinopathy; eye checks"],
+          ],
+        },
+        {
+          heading: "Fever clues: which zoonosis?",
+          columns: ["Disease", "Clue", "Test"],
+          rows: [
+            ["Leptospirosis", "Floodwater, calf tenderness, red eyes, jaundice with low-K AKI", "IgM ELISA; MAT"],
+            ["Scrub typhus", "Eschar, nodes, post-monsoon", "IgM ELISA, eschar PCR"],
+            ["Chikungunya", "Severe symmetric joint pain, rash", "RT-PCR day 1-5; IgM later"],
+            ["Brucellosis", "Raw milk, sweats, sacroiliitis, orchitis", "Blood culture, SAT"],
+            ["JE / AES", "Fever with confusion or seizures, paddy area", "CSF JE IgM"],
+            ["KFD", "Forest, monkey deaths, bleeding", "RT-PCR"],
+          ],
+        },
+        {
+          heading: "Zoonoses by transmission cycle",
+          columns: ["Type", "Hosts", "Examples"],
+          rows: [
+            ["Direct", "One vertebrate host", "Rabies, brucellosis, anthrax, leptospirosis"],
+            ["Cyclozoonoses", "Two vertebrate hosts", "Hydatid, Taenia solium"],
+            ["Metazoonoses", "Vertebrate plus vector", "Plague, JE, KFD, scrub typhus"],
+            ["Saprozoonoses", "Soil or plant reservoir", "Larva migrans"],
+          ],
+        },
+      ],
+      remember: [
+        "**Red eyes plus calf tenderness** after floodwater: leptospirosis.",
+        "Lepto AKI is **non-oliguric with low potassium**; jaundice deep, enzymes modest.",
+        "**MAT** is the lepto gold standard; doxycycline 200 mg weekly prevents it.",
+        "JE: **pigs amplify**, birds maintain, humans are dead-end hosts.",
+        "AES: always **check sugar** and cover scrub typhus.",
+        "KFD: Shimoga 1957; **monkey deaths** are the warning.",
+        "Plague: **kill fleas before rats**.",
+      ],
+    },
     checked: "2026-10",
     updated: [
       "WHO 2025 arboviral guideline: no NSAIDs while dengue is possible and no corticosteroids in acute chikungunya; prednisolone kept only for disabling subacute tenosynovitis.",
