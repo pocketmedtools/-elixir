@@ -3,6 +3,166 @@ import type { RevisionSet } from "./index";
 const revision: RevisionSet = {
   "symptom-approach-fatigue": {
     checked: "2026-10",
+    notes: {
+      sections: [
+        {
+          title: "Definition and key facts",
+          points: [
+            "**Fatigue** is a sustained lack of physical or mental energy that interferes with usual activity.",
+            "It is **not relieved by a night or two of rest**, unlike ordinary tiredness.",
+            "Tiredness is the main complaint in **5-10% of primary care consultations**.",
+            "Indian patients say **kamzori, thakan** or sharir mein jaan nahi; unpack what they mean.",
+            "The **one-third rule**: one third physical, one third psychological, one third no definable cause.",
+          ],
+        },
+        {
+          title: "Classification that matters",
+          points: [
+            "First separate fatigue from **true weakness**, which is loss of power on MRC 0-5 testing.",
+            "Also separate it from **daytime sleepiness** (Epworth over 10) and exertional breathlessness.",
+            "**Recent** fatigue lasts under 1 month: post-infective, drugs or stress.",
+            "**Prolonged** fatigue lasts 1-6 months; this is the window where organic disease is found.",
+            "**Chronic** fatigue lasts over 6 months: mood, deconditioning or ME/CFS.",
+          ],
+        },
+        {
+          title: "Causes and risk factors",
+          points: [
+            "Reduced oxygen delivery: **anaemia**, heart failure and COPD.",
+            "Metabolic and endocrine: **diabetes, hypothyroidism**, CKD, liver disease and Addison disease.",
+            "Inflammatory and infective: **TB, HIV**, post-viral states, autoimmune disease and cancer.",
+            "Central: **depression**, anxiety, **sleep apnoea**, sleep debt, alcohol and drugs.",
+            "Neuromuscular: hypokalaemia, myopathy and myasthenia, which cause true weakness.",
+            "Drugs: beta-blockers, sedating antihistamines, benzodiazepines, statins; metformin and PPIs lower B12.",
+          ],
+        },
+        {
+          title: "How it happens (pathophysiology)",
+          points: [
+            "Peripheral fatigue: muscle ATP supply fails, so phosphate and hydrogen ions impair contraction.",
+            "Central fatigue: brainstem and hypothalamic arousal networks reduce the drive to make an effort.",
+            "Cytokines (IL-1, IL-6, TNF) act on the hypothalamus to cause **sickness behaviour**.",
+            "IL-6 raises **hepcidin**, which traps iron and adds anaemia of inflammation.",
+            "Anaemia lowers oxygen content, so muscles turn anaerobic early and effort feels heavy.",
+            "Iron deficiency without anaemia still tires, because mitochondrial enzymes and myoglobin need iron.",
+            "In **ME/CFS**, abnormal response to exertion causes post-exertional malaise; hence pacing.",
+          ],
+        },
+        {
+          title: "History in the OPD",
+          points: [
+            "Ask the patient to **describe a typical day**; this sorts fatigue from its look-alikes.",
+            "Fatigue **worst on waking** suggests depression; worse after effort suggests organic disease.",
+            "Screen for anaemia: heavy periods, piles, melaena, **pica**, vegetarian diet, tea with meals.",
+            "Screen for diabetes, thyroid disease, and sleep apnoea with **STOP-BANG** (3 or more is high risk).",
+            "Screen mood with **PHQ-2**; if positive, complete PHQ-9 and ask about self-harm.",
+            "Ask about drugs, alcohol, tonics, steroid powders, sleep hours and night shifts.",
+            "Ask **ideas, concerns and expectations**, and record baseline function in numbers.",
+          ],
+        },
+        {
+          title: "Examination",
+          points: [
+            "Record **weight and BMI**; loss over 5% in 6 months changes the problem to weight loss.",
+            "Check **lying and standing BP** at 3 minutes; a 20 mmHg systolic fall is significant.",
+            "Look for **pallor, koilonychia**, jaundice, goitre and pigmentation of buccal mucosa (Addison).",
+            "Palpate all lymph nodes, liver and spleen, and examine the heart and chest.",
+            "Screen for weakness: **rise from a squat** without hands and sustained upgaze for 60 seconds.",
+            "A normal examination with stable weight makes serious organic disease unlikely.",
+          ],
+        },
+        {
+          title: "Investigations",
+          points: [
+            "Order **one panel, all together**, if fatigue lasts over 1 month or a red flag exists.",
+            "The panel is **CBC with smear, HbA1c, TSH, creatinine, ALT and urine** routine.",
+            "Add ferritin in women; **ferritin under 30 ng/mL** means iron deficiency even with normal Hb.",
+            "Order chest X-ray, sputum NAAT, HIV, calcium or B12 only on clinical clues.",
+            "Do not order ANA, tumour markers or vitamin panels routinely.",
+            "**Do not repeat a normal panel** at 4 weeks without new features.",
+          ],
+        },
+        {
+          title: "Treatment - first line",
+          points: [
+            "**There is no drug for fatigue itself**; no tonics, stimulants or steroids.",
+            "Explain what the tests excluded, name the likely mechanism, and say the symptom is real.",
+            "Sleep hygiene: fixed wake time, 7-9 hours in bed, no caffeine or screens after 6 pm.",
+            "**Graded activity**: start at a bad-day level and increase by about 10% a week.",
+            "Iron deficiency: **ferrous sulphate 200 mg** once daily or on alternate days.",
+            "Hypothyroidism: levothyroxine **1.6 microgram/kg/day**, but 25-50 microgram if over 60 or cardiac.",
+          ],
+        },
+        {
+          title: "Treatment - next steps",
+          points: [
+            "Depression with **PHQ-9 of 10 or more**: escitalopram 5-10 mg or sertraline 50 mg daily.",
+            "Continue the SSRI for **6 months after remission**, then taper slowly.",
+            "If oral iron fails, give **IV ferric carboxymaltose** 20 mg/kg, maximum 1000 mg.",
+            "In **ME/CFS use pacing**, not graded exercise, as NICE NG206 advises.",
+            "Sleep apnoea needs CPAP referral; sedatives and alcohol make it worse.",
+          ],
+        },
+        {
+          title: "Referral and follow-up",
+          points: [
+            "Refer urgently for **weight loss over 5% in 6 months**, nodes or an abnormal blood film.",
+            "Refer the same day for Hb under 7 g/dL, suicidal thoughts or progressive weakness.",
+            "**Postural hypotension with pigmentation** suggests adrenal insufficiency; refer urgently.",
+            "Iron deficiency anaemia in a man or postmenopausal woman needs endoscopy.",
+            "Book a **named review at 4-6 weeks** and write the safety net on the prescription.",
+            "At review compare baseline function numbers, weight, PHQ-9 and haemoglobin.",
+            "Consider ME/CFS when disabling fatigue with post-exertional malaise lasts over 3 months.",
+          ],
+        },
+      ],
+      tables: [
+        {
+          heading: "Drugs used for the causes of fatigue",
+          columns: ["Drug", "Dose and route", "Duration", "Key side effects / cautions"],
+          rows: [
+            ["Ferrous sulphate", "200 mg oral (65 mg iron), daily or alternate days", "3 months after Hb normalises", "Nausea, constipation, black stools; avoid tea"],
+            ["Ferric carboxymaltose", "20 mg/kg IV, max 1000 mg over 15 minutes", "Single infusion", "Hypophosphataemia, rare anaphylaxis"],
+            ["Cyanocobalamin or hydroxocobalamin", "1000 microgram IM alternate days", "2 weeks, then every 1-3 months", "Early hypokalaemia in severe anaemia"],
+            ["Folic acid", "5 mg oral once daily", "4 months", "Only after B12 deficiency excluded or treated"],
+            ["Levothyroxine", "1.6 microgram/kg/day oral; 25-50 microgram if elderly", "Titrate by TSH every 6 weeks", "AF and bone loss if over-replaced"],
+            ["Cholecalciferol", "60,000 IU oral weekly", "8 weeks, then monthly", "Hypercalcaemia if overdosed"],
+            ["Escitalopram", "5-10 mg oral daily, max 20 mg", "6 months after remission", "Nausea, hyponatraemia, QT; max 10 mg over 65"],
+            ["Sertraline", "50 mg oral daily, max 200 mg", "6 months after remission", "Nausea, jitteriness; do not stop abruptly"],
+            ["Metformin", "500 mg daily, up to 1 g twice daily", "Long term", "GI upset, B12 deficiency; avoid eGFR under 30"],
+          ],
+        },
+        {
+          heading: "Fatigue by mechanism",
+          columns: ["Mechanism", "Common causes", "Clue", "First test"],
+          rows: [
+            ["Reduced oxygen delivery", "Iron deficiency anaemia, heart failure, COPD", "Effort fatigue, pallor, oedema", "CBC, ferritin, ECG"],
+            ["Metabolic and endocrine", "Diabetes, hypothyroidism, CKD, Addison", "Polyuria, cold intolerance, postural drop", "HbA1c, TSH, creatinine"],
+            ["Inflammatory and infective", "TB, HIV, post-viral, cancer", "Fever, night sweats, weight loss, nodes", "CRP, chest X-ray, NAAT, HIV"],
+            ["Central and psychological", "Depression, sleep apnoea, alcohol, drugs", "Worst on waking, snoring", "PHQ-9, STOP-BANG"],
+            ["Neuromuscular", "Hypokalaemia, myopathy, myasthenia", "Cannot rise from squat, ptosis", "Potassium, CK, TSH"],
+          ],
+        },
+        {
+          heading: "Organic versus depression versus ME/CFS",
+          columns: ["Feature", "Organic disease", "Depression", "ME/CFS"],
+          rows: [
+            ["Daily pattern", "Worse through the day and after effort", "Worst on waking", "Crash after exertion"],
+            ["Clues", "Weight loss, pallor, abnormal panel", "PHQ-9 10 or more, anhedonia", "Unrefreshing sleep, brain fog"],
+            ["Management", "Treat the cause", "SSRI and behavioural activation", "Pacing, no graded exercise"],
+          ],
+        },
+      ],
+      remember: [
+        "One third physical, one third psychological, one third unexplained.",
+        "Worst on waking is depression; worse after effort is organic.",
+        "Ferritin under 30 ng/mL is iron deficiency even with normal haemoglobin.",
+        "Alternate-day iron absorbs better and causes fewer side effects.",
+        "Never give folic acid alone in B12 deficiency.",
+        "ME/CFS is managed by pacing, not graded exercise.",
+        "No tonics: a named review date is the treatment.",
+      ],
+    },
     master: {
       heading: "Master revision table - fatigue and tiredness",
       columns: ["Aspect", "High-yield points"],
@@ -53,6 +213,167 @@ const revision: RevisionSet = {
 
   "symptom-approach-body-ache": {
     checked: "2026-10",
+    notes: {
+      sections: [
+        {
+          title: "Definition and key facts",
+          points: [
+            "**Generalised body ache** is diffuse pain in muscles, joints or bones in several regions.",
+            "It is a symptom, not a diagnosis; Indian patients call it **badan dard**.",
+            "First **map the pain**: ask the patient to point, as much of it is regional.",
+            "Acute ache with fever is usually viral or vector-borne infection.",
+            "In India, distress, overuse and **vitamin D deficiency** explain most chronic ache.",
+          ],
+        },
+        {
+          title: "Classification that matters",
+          points: [
+            "**Acute** ache lasts under 2 weeks and is usually infective.",
+            "**Chronic** ache lasts over 6 weeks, or 3 months for widespread pain.",
+            "**Inflammatory pain**: morning stiffness over 30-60 minutes, eases with use, visible swelling.",
+            "**Mechanical pain**: stiffness under 30 minutes and worse with use.",
+            "**Fibromyalgia** (ACR 2016): widespread pain 3 months or more, **WPI 7 or more and SSS 5 or more**.",
+            "**Somatic symptom disorder** is a positive diagnosis of excessive thoughts and behaviours about symptoms.",
+          ],
+        },
+        {
+          title: "Causes and risk factors",
+          points: [
+            "Acute infective: **dengue, chikungunya**, influenza, scrub typhus and leptospirosis.",
+            "Muscle: statins, hypothyroidism, hypokalaemia, myositis and rhabdomyolysis.",
+            "Bone: **osteomalacia**, myeloma and metastasis.",
+            "Systemic inflammatory: **polymyalgia rheumatica**, RA, SLE and spondyloarthritis.",
+            "Central: fibromyalgia, somatic distress, depression and occupational overuse.",
+          ],
+        },
+        {
+          title: "How it happens (pathophysiology)",
+          points: [
+            "Overloaded muscle releases bradykinin and **prostaglandin E2**, which fire pain fibres; NSAIDs block this.",
+            "Viral cytokines (interferon, IL-6, TNF) induce muscle PGE2 and protein breakdown.",
+            "Low vitamin D raises PTH, so osteoid is **not mineralised** and swells under the periosteum.",
+            "Statins reduce coenzyme Q10 in muscle mitochondria, causing myalgia.",
+            "PMR is IL-6 inflammation of shoulder and hip **bursae**, not muscle.",
+            "Fibromyalgia is **central sensitisation**: dorsal horn wind-up and failed descending inhibition.",
+            "Poor sleep and distress lower the pain threshold the next day.",
+          ],
+        },
+        {
+          title: "History in the OPD",
+          points: [
+            "Ask about **fever** first in acute ache, with rash, eschar or calf pain.",
+            "Monsoon fever with myalgia and retro-orbital pain is **dengue** until proved otherwise.",
+            "Ask for inflammatory features: **morning stiffness over 1 hour** and visible swelling.",
+            "Over 50, ask about girdle stiffness, headache, jaw claudication and visual symptoms.",
+            "Ask about bone pain at night and **proximal weakness** (rising from a squat).",
+            "Ask about statins, anti-TB drugs, steroid tablets and repeated vitamin D injections.",
+            "Screen sleep and mood with PHQ-9, GAD-7 and PHQ-15, and ask the patient's own belief.",
+          ],
+        },
+        {
+          title: "Examination",
+          points: [
+            "In febrile ache check pulse, BP, capillary refill and a **tourniquet test**.",
+            "Look for rash, **eschar** (scrub typhus) and conjunctival suffusion (leptospirosis).",
+            "Examine each joint for **objective synovitis**; a positive squeeze test suggests RA.",
+            "Test proximal power and press the sternum, tibia and pelvis for bone tenderness.",
+            "Normal joints, power and reflexes with widespread tenderness supports fibromyalgia.",
+          ],
+        },
+        {
+          title: "Investigations",
+          points: [
+            "Acute febrile ache: CBC with **platelets and haematocrit**, dengue NS1 or IgM, malaria test.",
+            "Dengue **NS1 is useful on days 1-5**; IgM after day 5.",
+            "Chronic ache panel: CBC, **ESR or CRP**, HbA1c, TSH, creatinine, calcium, phosphate, ALP, vitamin D.",
+            "Osteomalacia shows low phosphate, **raised ALP** and raised PTH; Looser zones on X-ray.",
+            "CK for weakness or statin use; RF and anti-CCP only for synovitis over 6 weeks.",
+            "**Do not screen with ANA, RF or uric acid**; false positives create lifelong labels.",
+          ],
+        },
+        {
+          title: "Treatment - first line",
+          points: [
+            "Explain the physiology: stress, poor sleep and posture make real pain worse.",
+            "Use **reattribution**: make the patient feel understood, broaden the agenda, then link.",
+            "**Graded aerobic exercise** building towards 150 minutes a week is the best-evidenced treatment.",
+            "**Paracetamol** 500-1000 mg every 6 hours, maximum 4 g a day, is first-line.",
+            "In dengue give **paracetamol only**, oral fluids 2.5-3 L a day, and no NSAIDs.",
+            "Vitamin D deficiency: **cholecalciferol 60,000 IU weekly** for 8 weeks, then monthly.",
+          ],
+        },
+        {
+          title: "Treatment - next steps",
+          points: [
+            "Fibromyalgia: **amitriptyline 10 mg at night**, titrated to 25-50 mg.",
+            "If depression coexists or amitriptyline fails, use **duloxetine** 30 mg then 60 mg daily.",
+            "Pregabalin suits pain with poor sleep; maximum 450 mg a day.",
+            "**No opioids or tramadol** in fibromyalgia; NSAIDs do not work there either.",
+            "PMR: **prednisolone 12.5-25 mg** daily (usually 15 mg), tapered over 1-2 years.",
+            "Statin myalgia: stop for 2-4 weeks, then rechallenge at lower dose or switch.",
+          ],
+        },
+        {
+          title: "Referral and follow-up",
+          points: [
+            "Dengue warning signs (bleeding, vomiting, abdominal pain, lethargy) need admission.",
+            "Bone pain with **ESR over 50** in someone over 50 suggests myeloma.",
+            "Girdle stiffness with headache or visual symptoms is **giant cell arteritis**; steroids today.",
+            "Muscle pain with **dark urine** suggests rhabdomyolysis; check CK and creatinine today.",
+            "Review chronic ache at **4-6 weeks**; PMR at 1 week, as **no response to 15 mg** means rethink.",
+            "Refer early to rheumatology for **synovitis over 6 weeks** (the DMARD window).",
+            "Somatic distress: book **time-based visits** with one named doctor.",
+          ],
+        },
+      ],
+      tables: [
+        {
+          heading: "Drugs for body ache",
+          columns: ["Drug", "Dose and route", "Duration", "Key side effects / cautions"],
+          rows: [
+            ["Paracetamol", "500-1000 mg oral every 6 hours, max 4 g/day", "As needed for flares", "3 g max if under 50 kg or liver risk"],
+            ["Ibuprofen", "400 mg oral three times daily after food", "Shortest course, usually 5-7 days", "Never in dengue, CKD, heart failure"],
+            ["Naproxen", "250-500 mg oral twice daily", "Usually 5-7 days", "GI bleed, AKI; PPI if over 65"],
+            ["Diclofenac 1% gel", "Thin layer 3-4 times a day", "For localised pain", "Far less systemic risk"],
+            ["Amitriptyline", "10 mg at night, titrate to 25-50 mg", "Takes 2-4 weeks to help", "Dry mouth, drowsiness; avoid glaucoma, heart block"],
+            ["Duloxetine", "30 mg daily, then 60 mg daily", "Taper when stopping", "Nausea, insomnia, raised BP"],
+            ["Pregabalin", "75 mg at night, up to 450 mg/day", "Do not stop abruptly", "Dizziness, oedema, misuse; reduce in CKD"],
+            ["Cholecalciferol", "60,000 IU oral weekly, with a fatty meal", "8 weeks, then monthly", "No repeated megadose injections"],
+            ["Prednisolone (PMR)", "12.5-25 mg oral each morning", "Taper over 1-2 years", "Diabetes, osteoporosis; give bone protection"],
+          ],
+        },
+        {
+          heading: "Body ache by mechanism",
+          columns: ["Mechanism", "Key causes", "Clue", "First test"],
+          rows: [
+            ["Acute infective", "Dengue, chikungunya, scrub typhus", "Fever, rash, eschar, calf pain", "CBC with platelets, NS1 or IgM"],
+            ["Muscle", "Statins, hypothyroidism, myositis", "Proximal weakness, dark urine", "CK, TSH, potassium"],
+            ["Bone", "Osteomalacia, myeloma, metastasis", "Night pain, bone tenderness", "Calcium, phosphate, ALP, vitamin D"],
+            ["Systemic inflammatory", "PMR, RA, SLE", "Stiffness over 1 hour, swelling", "ESR, CRP, then RF or ANA"],
+            ["Central or distress", "Fibromyalgia, somatic symptom disorder", "Widespread pain, normal examination", "Basic panel, PHQ-9, WPI"],
+          ],
+        },
+        {
+          heading: "Vitamin D levels and action",
+          columns: ["25-OH vitamin D", "Status", "Action"],
+          rows: [
+            ["Under 10 ng/mL", "Severe deficiency", "60,000 IU weekly for 8 weeks plus calcium"],
+            ["10-19 ng/mL", "Deficiency", "60,000 IU weekly for 6-8 weeks, then monthly"],
+            ["20-29 ng/mL", "Insufficiency", "60,000 IU monthly or 1000 IU daily"],
+            ["30 ng/mL or more", "Sufficient", "No treatment; look for another cause"],
+          ],
+        },
+      ],
+      remember: [
+        "Ask the patient to point to the pain.",
+        "Stiffness over an hour that eases with use is inflammatory.",
+        "Monsoon fever with myalgia is dengue: paracetamol only, no NSAIDs.",
+        "Low vitamin D explains the ache only if replacement relieves it.",
+        "Never screen body ache with ANA, RF or uric acid.",
+        "PMR responds to 15 mg prednisolone within a week.",
+        "Somatic distress: book by the calendar, not by the symptom.",
+      ],
+    },
     master: {
       heading: "Master revision table - generalised body ache",
       columns: ["Aspect", "High-yield points"],
@@ -104,6 +425,165 @@ const revision: RevisionSet = {
 
   "symptom-approach-dizziness": {
     checked: "2026-10",
+    notes: {
+      sections: [
+        {
+          title: "Definition and key facts",
+          points: [
+            "**Dizziness** is an impaired sense of spatial orientation; patients call it chakkar or giddiness.",
+            "**Vertigo** is an illusion of movement and comes from the vestibular system.",
+            "**Presyncope** is a feeling of about to faint, from low cerebral blood flow.",
+            "**Disequilibrium** is unsteadiness on the feet from failed balance inputs.",
+            "**Non-specific lightheadedness** is floating or woozy, from anxiety, hyperventilation or drugs.",
+            "Ask about **timing and triggers**, not what it feels like.",
+          ],
+        },
+        {
+          title: "Classification that matters",
+          points: [
+            "**TiTrATE** stands for Timing, Triggers And Targeted Examination.",
+            "**Acute vestibular syndrome**: continuous vertigo for days; neuritis or stroke.",
+            "**Triggered episodic**: seconds to a minute on head movement or standing; BPPV or orthostatic hypotension.",
+            "**Spontaneous episodic**: minutes to hours with no trigger; vestibular migraine, Meniere disease or TIA.",
+            "**Chronic**: weeks to months; PPPD, drugs or multisensory deficit of old age.",
+            "**Orthostatic hypotension**: fall of 20 mmHg systolic or 10 diastolic within 3 minutes of standing.",
+          ],
+        },
+        {
+          title: "How it happens (pathophysiology)",
+          points: [
+            "Balance combines **vestibular, visual and proprioceptive** inputs in the brainstem and cerebellum.",
+            "Vertigo arises from **asymmetry** between the two vestibular nerves.",
+            "In **BPPV**, loose otoconia float into the posterior canal (85-90%) and move with gravity.",
+            "That explains BPPV latency of 2-20 seconds, duration under 1 minute, and fatigability.",
+            "**Vestibular neuritis** is viral inflammation of the vestibular nerve with no hearing loss.",
+            "**Meniere disease** is endolymphatic hydrops with fluctuating low-frequency hearing loss.",
+            "The brain **compensates** over days to weeks; vestibular sedatives slow this down.",
+          ],
+        },
+        {
+          title: "History in the OPD",
+          points: [
+            "Ask how long each episode lasts: seconds, minutes to hours, days, or months.",
+            "Ask what brings it on: turning in bed, standing up, exertion, crowds or nothing.",
+            "Ask about hearing loss, tinnitus, headache, palpitations and perioral tingling.",
+            "Ask central red-flag questions: **double vision, slurred speech**, swallowing trouble, weakness.",
+            "Ask about recent **neck manipulation**; vertebral dissection causes stroke under 45.",
+            "Take a full drug history; in the elderly, five or more drugs explain much dizziness.",
+            "Ask about driving and work at heights; stop these until assessed.",
+          ],
+        },
+        {
+          title: "Examination",
+          points: [
+            "Measure **BP lying and standing** at 1 and 3 minutes in every patient.",
+            "Check glucose in anyone on insulin or sulfonylureas, and listen for a murmur.",
+            "Do a neurological screen, and test whether the patient can **sit and walk unaided**.",
+            "**Dix-Hallpike**: upbeating torsional nystagmus after 2-20 seconds, lasting under 1 minute, confirms BPPV.",
+            "Use **HINTS only in acute continuous vertigo** with nystagmus.",
+            "Add **HINTS-plus**: new one-sided hearing loss may be AICA stroke.",
+          ],
+        },
+        {
+          title: "Investigations",
+          points: [
+            "**Classical BPPV** with a normal neurological examination needs no investigation.",
+            "Presyncope needs a **12-lead ECG**, haemoglobin, glucose and electrolytes.",
+            "Look on the ECG for **AV block, QTc over 480 ms**, WPW, Brugada or LVH.",
+            "Order **MRI with diffusion imaging** for any central sign.",
+            "**CT misses most posterior fossa strokes** in the first 24-48 hours.",
+            "Do not order cervical spine X-rays for so-called cervical vertigo.",
+          ],
+        },
+        {
+          title: "Treatment - first line",
+          points: [
+            "**BPPV is treated by the Epley manoeuvre**, not a drug; it cures 80-90%.",
+            "Horizontal canal BPPV uses the **Lempert (barbecue) roll**.",
+            "**Vestibular rehabilitation** is the main treatment for neuritis and PPPD; start within days.",
+            "Orthostatic hypotension: stop the culprit drug, add fluids and salt, rise in stages.",
+            "Meniere disease: salt under 2 g sodium a day, and avoid caffeine and alcohol.",
+            "Suppressants such as **prochlorperazine** are for the first **24-72 hours** of vomiting only.",
+          ],
+        },
+        {
+          title: "Treatment - next steps",
+          points: [
+            "Meniere disease: **betahistine** 16 mg three times daily, reviewed at 3 months.",
+            "If Meniere attacks continue, add hydrochlorothiazide and refer to ENT.",
+            "Vestibular migraine prophylaxis: propranolol, amitriptyline or flunarizine for 2-3 months.",
+            "Orthostatic hypotension: fludrocortisone 100 microgram or midodrine if simple steps fail.",
+            "PPPD and panic: an SSRI with rehabilitation and CBT for 6-12 months.",
+            "Suspected stroke: refer within 4.5 hours for **tenecteplase 0.25 mg/kg** if disabling.",
+          ],
+        },
+        {
+          title: "Special groups",
+          points: [
+            "In older adults dizziness is often **a drug list plus small deficits**.",
+            "Do a **Timed Up and Go**; over 12 seconds predicts falls.",
+            "**Avoid long-term cinnarizine or flunarizine** in the elderly; they cause parkinsonism.",
+            "Falls prevention: medication review, balance training, cataract surgery and home safety.",
+          ],
+        },
+        {
+          title: "Complications and red flags",
+          points: [
+            "A **normal head impulse test** in acute continuous vertigo is the dangerous result.",
+            "Inability to sit or walk unaided suggests **cerebellar stroke**.",
+            "New severe headache or neck pain with vertigo suggests vertebral artery dissection.",
+            "**Sudden hearing loss** with vertigo is an ENT emergency; steroids within 72 hours.",
+            "Syncope on exertion, lying down or with palpitations is **cardiac** until proved otherwise.",
+          ],
+        },
+      ],
+      tables: [
+        {
+          heading: "Drugs for dizziness",
+          columns: ["Drug", "Dose and route", "Duration", "Key side effects / cautions"],
+          rows: [
+            ["Prochlorperazine", "12.5 mg IM stat, then 5-10 mg oral 2-3 times daily", "Up to 3 days", "Dystonia, parkinsonism; avoid in Parkinson disease"],
+            ["Cinnarizine", "25-30 mg oral three times daily", "Up to 3 days", "Drowsiness; parkinsonism if long-term"],
+            ["Promethazine", "25 mg oral at night to three times daily", "Up to 3 days", "Drowsiness, dry mouth; no driving"],
+            ["Betahistine", "16 mg three times or 24 mg twice daily", "Review at 3 months", "Meniere only; not for BPPV"],
+            ["Prednisolone", "1 mg/kg (max 60 mg) oral daily", "5-14 days, then taper", "Hyperglycaemia; within 72 hours for hearing loss"],
+            ["Propranolol", "20-40 mg twice daily, up to 80 mg", "2-3 month trial", "Avoid in asthma; do not stop abruptly"],
+            ["Fludrocortisone", "100 microgram oral each morning", "Long term with review", "Hypokalaemia, oedema, supine hypertension"],
+            ["Midodrine", "2.5-10 mg oral three times daily", "Daytime only", "Supine hypertension; last dose before 6 pm"],
+          ],
+        },
+        {
+          heading: "TiTrATE: timing and trigger",
+          columns: ["Syndrome", "Timing and trigger", "Benign cause", "Dangerous cause", "Key action"],
+          rows: [
+            ["Acute vestibular", "Continuous for days", "Vestibular neuritis", "Posterior circulation stroke", "HINTS-plus; MRI if central"],
+            ["Triggered episodic", "Seconds, on head movement or standing", "BPPV, orthostatic hypotension", "Arrhythmia, central positional", "Dix-Hallpike, lying-standing BP, ECG"],
+            ["Spontaneous episodic", "Minutes to hours, no trigger", "Vestibular migraine, Meniere", "TIA, hypoglycaemia", "Audiometry, ECG, glucose"],
+            ["Chronic", "Weeks to months", "PPPD, drugs, old age", "Posterior fossa tumour", "Drug review, rehabilitation"],
+          ],
+        },
+        {
+          heading: "HINTS in acute continuous vertigo",
+          columns: ["Component", "Peripheral (reassuring)", "Central (dangerous)"],
+          rows: [
+            ["Head impulse", "Abnormal, with corrective saccade", "Normal, no saccade"],
+            ["Nystagmus", "One direction, horizontal", "Direction-changing or vertical"],
+            ["Test of skew", "No skew", "Skew deviation present"],
+            ["Hearing (plus)", "Preserved", "New one-sided loss"],
+            ["Gait", "Walks unaided", "Cannot sit or stand unaided"],
+          ],
+        },
+      ],
+      remember: [
+        "Ask timing and triggers, not what it feels like (TiTrATE).",
+        "HINTS is only for continuous vertigo with nystagmus.",
+        "A normal head impulse test in acute vertigo is the frightening result.",
+        "CT is normal in most posterior fossa strokes in the first 48 hours.",
+        "BPPV is cured by Epley; betahistine for BPPV is wasted.",
+        "Stop vestibular sedatives by 72 hours.",
+        "Vestibular migraine is commoner than Meniere disease.",
+      ],
+    },
     updated: [
       "AHA/ASA 2026 acute ischaemic stroke guideline: IV tenecteplase 0.25 mg/kg (max 25 mg) or alteplase within 4.5 h for disabling stroke; minor non-disabling stroke gets dual antiplatelet therapy rather than thrombolysis (replaces AHA/ASA 2019 tag)",
     ],
@@ -160,6 +640,168 @@ const revision: RevisionSet = {
 
   "symptom-approach-chest-pain": {
     checked: "2026-10",
+    notes: {
+      sections: [
+        {
+          title: "Definition and key facts",
+          points: [
+            "**Chest pain** is any discomfort between the neck and the upper abdomen.",
+            "In general practice, **ACS is only 1-3%** of chest pain; in casualty it is 15-25%.",
+            "Chest wall pain (25-35%), reflux (10-20%) and panic (7-15%) dominate in the clinic.",
+            "Exclude the **five killers**: ACS, aortic dissection, PE, tension pneumothorax, oesophageal rupture.",
+            "Indians have their first MI **5-10 years earlier** than Europeans.",
+          ],
+        },
+        {
+          title: "Classification that matters",
+          points: [
+            "First decide: **acute and possibly life-threatening**, or stable and recurrent.",
+            "Angina has three features: constricting discomfort, brought on by exertion, relieved within 5 minutes.",
+            "All three is **typical angina**; two is atypical; one or none is non-anginal.",
+            "**STEMI** has persistent ST elevation and needs reperfusion now.",
+            "**NSTEMI** has a troponin rise and fall without ST elevation.",
+            "**Unstable angina** is rest or crescendo angina with normal troponin.",
+          ],
+        },
+        {
+          title: "How it happens (pathophysiology)",
+          points: [
+            "Heart, aorta and oesophagus share **T1-T5 afferents**, so their pain is diffuse and referred.",
+            "Pleura, chest wall and pericardium have somatic nerves, so their pain is sharp and localised.",
+            "Stable angina is supply-demand mismatch across a **fixed stenosis over about 70%**.",
+            "ACS starts with **plaque rupture or erosion**, then platelet activation and thrombus.",
+            "An occlusive thrombus gives ST elevation; necrosis begins within 20-30 minutes.",
+            "Diabetes, old age and female sex blunt pain, giving **silent or atypical infarcts**.",
+            "Nitrates also relax oesophageal muscle, so **nitrate relief proves nothing**.",
+          ],
+        },
+        {
+          title: "History in the OPD",
+          points: [
+            "Ask onset: **sudden and maximal** suggests dissection, PE or pneumothorax.",
+            "Ischaemic pain is heavy or tight, shown with a clenched fist (**Levine sign**).",
+            "Tearing pain to the back suggests dissection; burning after meals suggests reflux.",
+            "Ask coronary risk factors: diabetes, hypertension, tobacco, lipids and family history.",
+            "Ask PE risk: surgery, immobility, travel, pregnancy, contraceptive pill, cancer.",
+            "Ask about **sildenafil or tadalafil**, which forbid nitrates for 24-48 hours.",
+            "Score the **Marburg Heart Score**; 0-2 makes coronary disease very unlikely.",
+          ],
+        },
+        {
+          title: "Examination",
+          points: [
+            "Check pulse, BP, respiratory rate, SpO2 and consciousness first.",
+            "Measure **BP in both arms**; a difference over 20 mmHg suggests dissection.",
+            "Look for raised JVP, new murmurs, a pericardial rub and pulsus paradoxus.",
+            "Examine the chest for pneumothorax, pneumonia and subcutaneous emphysema.",
+            "Chest wall tenderness lowers probability but is present in about 1 in 20 infarcts.",
+            "Use the **Wells score** for PE: over 4 is likely, 4 or less is unlikely.",
+          ],
+        },
+        {
+          title: "Investigations",
+          points: [
+            "Record a **12-lead ECG within 10 minutes**; repeat at 15-30 minutes if pain persists.",
+            "**A normal ECG does not exclude ACS**; up to a third of NSTEMIs start normal.",
+            "**High-sensitivity troponin at 0 and 1-2 hours** shows the rise and fall.",
+            "Chest X-ray shows pneumothorax or pneumonia; a normal film does not exclude dissection.",
+            "Stable pain: choose the test by **clinical likelihood**; 5% or less needs no test.",
+            "Likelihood 15-50% needs **CT coronary angiography**; 50-85% needs functional imaging.",
+          ],
+        },
+        {
+          title: "Treatment - first line",
+          points: [
+            "Suspected ACS: **aspirin 300 mg chewed**, GTN if SBP over 90, and ambulance transfer.",
+            "Give **oxygen only if SpO2 is under 90%**.",
+            "STEMI: primary PCI if possible within **120 minutes**, otherwise fibrinolysis within 10 minutes.",
+            "Stable angina: a **beta-blocker or calcium channel blocker** first.",
+            "Every angina patient gets aspirin, a **high-intensity statin** and a GTN plan.",
+            "Reflux-type pain: pantoprazole 40 mg before breakfast for 4-8 weeks.",
+          ],
+        },
+        {
+          title: "Treatment - next steps",
+          points: [
+            "Second-line anti-anginals: isosorbide mononitrate, nicorandil, ranolazine or ivabradine.",
+            "Leave a **nitrate-free interval** to prevent tolerance.",
+            "After ACS give **dual antiplatelet therapy for 12 months**.",
+            "Target **LDL under 55 mg/dL** with over 50% reduction.",
+            "Acute pericarditis: ibuprofen plus **colchicine for 3 months**; avoid steroids first line.",
+            "Panic disorder: an SSRI with CBT; avoid long-term benzodiazepines.",
+          ],
+        },
+        {
+          title: "Complications and red flags",
+          points: [
+            "**Suspected dissection**: no aspirin, anticoagulant or lysis; transfer for CT angiography.",
+            "Tension pneumothorax: **needle decompression before any X-ray**.",
+            "Pleuritic pain with sudden breathlessness and hypoxia suggests pulmonary embolism.",
+            "Hypotension, raised JVP and pulsus paradoxus suggest tamponade; urgent echo.",
+            "Crescendo angina or new rest angina is unstable angina; same-day referral.",
+          ],
+        },
+        {
+          title: "Referral and follow-up",
+          points: [
+            "**Never send chest pain home without a plan** and a written safety net.",
+            "Review new low-risk pain at 48-72 hours.",
+            "Refer stable suspected angina for testing within 2 weeks.",
+            "Review known coronary disease every **3-6 months**: angina, BP, LDL, HbA1c, tobacco.",
+          ],
+        },
+      ],
+      tables: [
+        {
+          heading: "Drugs in chest pain",
+          columns: ["Drug", "Dose and route", "Duration", "Key side effects / cautions"],
+          rows: [
+            ["Aspirin", "300 mg chewed, then 75-100 mg daily", "Lifelong in CAD", "GI bleed; never in suspected dissection"],
+            ["Clopidogrel", "300-600 mg load, then 75 mg daily", "12 months after ACS", "Bleeding; use pantoprazole, not omeprazole"],
+            ["Ticagrelor", "180 mg load, then 90 mg twice daily", "12 months after ACS", "Bleeding, dyspnoea, bradycardia"],
+            ["GTN sublingual", "0.4-0.5 mg or 400 microgram spray, every 5 min", "Up to 3 doses", "Not if SBP under 90, RV infarct, sildenafil"],
+            ["Tenecteplase", "Single IV bolus 30-50 mg by weight", "Once; half dose if 75 or older", "Bleeding, intracranial haemorrhage"],
+            ["Metoprolol succinate", "25-200 mg oral once daily", "Long term", "Bradycardia, bronchospasm; never stop abruptly"],
+            ["Amlodipine", "5-10 mg oral once daily", "Long term", "Ankle oedema, flushing"],
+            ["Atorvastatin", "40-80 mg oral once daily", "Lifelong", "Myalgia, raised transaminases"],
+            ["Pantoprazole", "40 mg oral before breakfast", "4-8 weeks, then step down", "Long-term B12 and magnesium deficiency"],
+            ["Colchicine (pericarditis)", "0.5 mg twice daily (once if under 70 kg)", "3 months", "Diarrhoea; interacts with clarithromycin"],
+          ],
+        },
+        {
+          heading: "Chest pain by mechanism",
+          columns: ["Mechanism", "Causes", "Share in general practice", "Key clue"],
+          rows: [
+            ["Ischaemic", "Angina, ACS", "Stable CAD 8-12%; ACS 1-3%", "Effort pain eased by rest; rest pain over 20 min"],
+            ["Other cardiovascular", "Dissection, pericarditis", "Rare", "Tearing to back; better sitting forward"],
+            ["Pulmonary and pleural", "PE, pneumothorax, pneumonia", "5-10%", "Pleuritic with breathlessness, hypoxia"],
+            ["Gastro-oesophageal", "Reflux, spasm, Boerhaave", "10-20%", "Burning after meals or lying"],
+            ["Musculoskeletal and neural", "Costochondritis, zoster", "25-35%", "Reproduced by pressing; dermatomal burning"],
+            ["Psychogenic", "Panic disorder", "7-15%", "Peaks in 10 minutes with tingling"],
+          ],
+        },
+        {
+          heading: "Marburg Heart Score (1 point each)",
+          columns: ["Component", "Finding", "Points"],
+          rows: [
+            ["Age and sex", "Men 55 or more, women 65 or more", "1"],
+            ["Known vascular disease", "Coronary, cerebral or peripheral", "1"],
+            ["Exertion", "Pain worse with exercise", "1"],
+            ["Palpation", "Pain not reproducible by pressing", "1"],
+            ["Patient belief", "Patient thinks it is the heart", "1"],
+          ],
+        },
+      ],
+      remember: [
+        "The order is fixed: five killers, then probability, then test or treat.",
+        "ACS is 1-3% of chest pain in the clinic but 15-25% in casualty.",
+        "Marburg Heart Score 0-2 has an NPV of 97-98%.",
+        "A normal ECG does not exclude ACS.",
+        "Nitrate relief proves nothing; GTN relaxes the oesophagus too.",
+        "Consider dissection before giving any antithrombotic.",
+        "Indians get their first MI 5-10 years earlier.",
+      ],
+    },
     master: {
       heading: "Master revision table - chest pain in general practice",
       columns: ["Aspect", "High-yield points"],
@@ -213,6 +855,168 @@ const revision: RevisionSet = {
 
   "symptom-approach-breathlessness": {
     checked: "2026-10",
+    notes: {
+      sections: [
+        {
+          title: "Definition and key facts",
+          points: [
+            "**Dyspnoea** is an uncomfortable awareness of breathing.",
+            "It has three distinct sensations: **work or effort, chest tightness and air hunger**.",
+            "The first question is **speed of onset**: minutes, days or months.",
+            "Anaemia affects over half of Indian women and is an easily missed cause.",
+            "**Chronic breathlessness syndrome** persists despite optimal treatment and is treated as a symptom.",
+          ],
+        },
+        {
+          title: "Classification that matters",
+          points: [
+            "**Minutes**: pneumothorax, PE, anaphylaxis, acute LV failure, arrhythmia, acute severe asthma.",
+            "**Hours to days**: pneumonia, asthma or COPD exacerbation, heart failure, effusion, DKA.",
+            "**Weeks to months**: anaemia, COPD, ILD, chronic heart failure, TB, obesity, deconditioning.",
+            "Grade chronic breathlessness on the **mMRC scale 0-4**; grade 2 or more is significant.",
+            "**Type 1 respiratory failure**: PaO2 under 60 mmHg with normal or low PaCO2.",
+            "**Type 2 respiratory failure**: PaCO2 over 45 mmHg from hypoventilation.",
+          ],
+        },
+        {
+          title: "How it happens (pathophysiology)",
+          points: [
+            "Central and peripheral chemoreceptors sense CO2, low oxygen and acid, and drive breathing.",
+            "Breathlessness is felt when actual breathing **does not match the brain's command**.",
+            "In asthma and COPD, air trapping causes **dynamic hyperinflation** and flattens the diaphragm.",
+            "In heart failure, high pulmonary venous pressure pushes fluid into the interstitium and alveoli.",
+            "Lying flat returns 250-500 mL of blood to the chest, causing **orthopnoea**.",
+            "Anaemia lowers oxygen content with a **normal SpO2**, because oximetry measures saturation only.",
+            "Metabolic acidosis causes deep sighing **Kussmaul breathing** with clear lungs.",
+          ],
+        },
+        {
+          title: "History in the OPD",
+          points: [
+            "Ask speed of onset first, then what the patient can do (mMRC grade).",
+            "Ask the cardiac trio: **orthopnoea, PND** and evening ankle swelling.",
+            "Ask about wheeze, night symptoms and triggers, which suggest asthma.",
+            "Ask about smoking, bidi use, and **years of cooking on a chulha** in never-smoking women.",
+            "Ask about occupation: stone crushing, mining, textile mills.",
+            "Ask about rheumatic fever, previous TB, heavy periods and PE risk factors.",
+            "Check drugs: beta-blockers including **timolol eye drops**, NSAIDs, amiodarone, methotrexate.",
+          ],
+        },
+        {
+          title: "Examination",
+          points: [
+            "Count the respiratory rate for a **full minute**.",
+            "Measure **SpO2 at rest and after walking**; a fall of 4% or more is real disease.",
+            "Severe signs: cannot complete sentences, RR over 30, cyanosis, **silent chest**, confusion.",
+            "Look for pallor, clubbing, raised JVP, a third heart sound and murmurs.",
+            "Fine basal Velcro crackles suggest ILD; bibasal crackles with S3 suggest heart failure.",
+            "Measure **peak expiratory flow** when asthma or COPD is suspected.",
+          ],
+        },
+        {
+          title: "Investigations",
+          points: [
+            "Tier 1: haemoglobin, glucose, **ECG, chest X-ray** and SpO2.",
+            "**Post-bronchodilator FEV1/FVC under 0.70** defines COPD.",
+            "An FEV1 rise of **over 12% and 200 mL** supports asthma.",
+            "**NT-proBNP under 125 pg/mL** rules out heart failure in the clinic.",
+            "Sputum **NAAT (Truenat or CBNAAT)** for cough over 2 weeks.",
+            "For PE, use **Wells score then D-dimer**; never D-dimer without a pretest probability.",
+          ],
+        },
+        {
+          title: "Treatment - first line",
+          points: [
+            "Stop tobacco and switch from biomass to **LPG (Ujjwala Yojana)**.",
+            "Acute bronchospasm: **salbutamol 4-10 puffs** via spacer every 20 minutes for 1 hour.",
+            "Acute asthma: **prednisolone 40-50 mg** daily for 5-7 days.",
+            "Asthma maintenance: as-needed budesonide-formoterol; **never SABA alone**.",
+            "COPD with mMRC 2 or more: a **LAMA or LABA-LAMA**.",
+            "Oxygen target **88-92% in COPD** and 94-98% in others.",
+            "Acute pulmonary oedema: sit up, **furosemide 40 mg IV**, GTN if SBP over 110, transfer.",
+          ],
+        },
+        {
+          title: "Treatment - next steps",
+          points: [
+            "HFrEF has **four pillars**: ARNI or ACE inhibitor, beta-blocker, MRA, SGLT2 inhibitor.",
+            "SGLT2 inhibitors and MRAs are now foundational across the whole ejection fraction range.",
+            "Titrate heart failure drugs every 2-4 weeks; check potassium and creatinine in 1-2 weeks.",
+            "COPD **GOLD E**: 1 or more moderate or severe exacerbation in the past year.",
+            "Add ICS in COPD if blood eosinophils are **300 per microlitre** or more.",
+            "Pulmonary rehabilitation for 6-12 weeks helps COPD, ILD and post-TB lung disease.",
+            "Advanced disease: low-dose oral morphine, a **hand-held fan** and positioning.",
+          ],
+        },
+        {
+          title: "Complications and red flags",
+          points: [
+            "**SpO2 under 92%** on air, RR over 30 or SBP under 90 needs same-day admission.",
+            "Tension pneumothorax: **needle decompression now**, never wait for an X-ray.",
+            "Stridor, urticaria or angioedema: **adrenaline 0.5 mg IM** into the thigh at once.",
+            "Kussmaul breathing in a diabetic is DKA until proved otherwise.",
+            "Breathlessness in pregnancy with a mid-diastolic murmur suggests **mitral stenosis**.",
+          ],
+        },
+        {
+          title: "Referral and follow-up",
+          points: [
+            "Review acute episodes within 2-7 days and chronic disease every 3-6 months.",
+            "**Check inhaler technique at every visit**; up to two in three use it wrongly.",
+            "Long-term oxygen in COPD needs SpO2 88% or less twice, used 15 hours a day.",
+            "Never use a **paper bag** for hyperventilation.",
+          ],
+        },
+      ],
+      tables: [
+        {
+          heading: "Drugs for breathlessness",
+          columns: ["Drug", "Dose and route", "Duration", "Key side effects / cautions"],
+          rows: [
+            ["Salbutamol", "4-10 puffs via spacer or 5 mg nebulised", "Every 20 min for 1 hour", "Tremor, tachycardia, hypokalaemia"],
+            ["Ipratropium", "500 microgram nebulised", "Every 20 min for 1 hour, then 4-6 hourly", "Dry mouth; protect eyes in glaucoma"],
+            ["Prednisolone", "40-50 mg oral each morning (COPD 40 mg)", "5-7 days asthma; 5 days COPD", "Hyperglycaemia; no taper needed"],
+            ["Amoxicillin (COPD or pneumonia)", "500 mg (to 1 g) oral three times daily", "5 days", "COPD: only if sputum purulent"],
+            ["Furosemide", "40 mg IV acutely; 20-40 mg oral daily", "Adjust to daily weight", "Hypokalaemia, AKI; no mortality benefit"],
+            ["Sacubitril-valsartan", "24/26 mg up to 97/103 mg twice daily", "Lifelong", "36 hours after stopping ACE inhibitor"],
+            ["Bisoprolol", "1.25 mg daily, up to 10 mg", "Lifelong", "Start when euvolaemic; never stop abruptly"],
+            ["Dapagliflozin or empagliflozin", "10 mg oral once daily", "Lifelong", "Genital infection; stop during acute illness"],
+            ["Adrenaline (anaphylaxis)", "0.5 mg IM thigh; child 0.01 mg/kg", "Repeat every 5 minutes", "Tachycardia, tremor"],
+            ["Morphine (advanced disease)", "1-2.5 mg oral every 4 hours as needed", "Max about 30 mg a day", "Constipation; give a laxative"],
+          ],
+        },
+        {
+          heading: "Breathlessness by speed of onset",
+          columns: ["Onset", "Cardiac", "Respiratory", "Other", "First action"],
+          rows: [
+            ["Minutes", "Acute LV failure, arrhythmia, ACS", "Pneumothorax, PE, severe asthma", "Anaphylaxis, panic", "SpO2, ECG, treat and transfer"],
+            ["Hours to days", "Decompensated heart failure", "Pneumonia, COPD exacerbation, effusion", "DKA", "Chest X-ray, glucose, Hb, ECG"],
+            ["Weeks to months", "Chronic heart failure, mitral stenosis", "COPD, ILD, post-TB lung, TB", "Anaemia, thyroid, obesity", "Hb, spirometry, NT-proBNP, walking SpO2"],
+          ],
+        },
+        {
+          heading: "mMRC dyspnoea grade",
+          columns: ["Grade", "What the patient can do"],
+          rows: [
+            ["0", "Breathless only on strenuous exercise"],
+            ["1", "Breathless hurrying on the level or up a slight hill"],
+            ["2", "Walks slower than peers or stops at own pace"],
+            ["3", "Stops after about 100 metres on the level"],
+            ["4", "Too breathless to leave the house or dress"],
+          ],
+        },
+      ],
+      remember: [
+        "Speed of onset is the first branch point.",
+        "Walk the patient with the oximeter.",
+        "Ask about the chulha in every never-smoking woman with COPD.",
+        "NT-proBNP under 125 pg/mL rules out heart failure.",
+        "Oximetry measures saturation, not oxygen content.",
+        "Oxygen target 88-92% in COPD.",
+        "HFrEF four pillars: ARNI or ACEI, beta-blocker, MRA, SGLT2 inhibitor.",
+        "Never a paper bag for hyperventilation.",
+      ],
+    },
     updated: [
       "GOLD 2026: group E now 1 or more moderate or severe exacerbation in the past year (was 2 moderate or 1 hospitalised); start LABA-LAMA, add ICS if eosinophils 300/microlitre or more; mepolizumab added after dupilumab for persistent exacerbations",
       "ESC 2026 heart failure guideline replaces ESC 2021 and 2023 update: HFmrEF dropped, HFrEF now LVEF under 50%; SGLT2 inhibitor and MRA foundational across the whole ejection fraction range",
@@ -282,6 +1086,168 @@ const revision: RevisionSet = {
 
   "symptom-approach-fever-without-focus": {
     checked: "2026-10",
+    notes: {
+      sections: [
+        {
+          title: "Definition and key facts",
+          points: [
+            "**Fever** is a raised hypothalamic set point with oral temperature **38 C (100.4 F) or more**.",
+            "**Hyperthermia** is a rise without a set-point change and does not respond to antipyretics.",
+            "**Fever without a focus** has no localising symptom or sign after full history and examination.",
+            "Under 14 days it is called **acute undifferentiated febrile illness (AUFI)**.",
+            "Most AUFI is self-limiting viral fever, but malaria, dengue and scrub typhus hide in it.",
+          ],
+        },
+        {
+          title: "Classification that matters",
+          points: [
+            "**Under 7 days**: mostly viral fever, dengue and malaria.",
+            "**7-14 days**: enteric fever, scrub typhus, leptospirosis or an occult focus.",
+            "**Over 3 weeks** is fever of unknown origin; in India **TB** leads the list.",
+            "WHO dengue: **without warning signs, with warning signs, and severe dengue**.",
+            "Dengue and chikungunya peak **August to November**; leptospirosis follows floods.",
+            "The **day of illness** matters more than the fever pattern, because it decides the test.",
+          ],
+        },
+        {
+          title: "How it happens (pathophysiology)",
+          points: [
+            "Microbial products make macrophages release **IL-1, IL-6, TNF and interferons**.",
+            "These cytokines induce **COX-2 and PGE2** in the hypothalamus, raising the set point.",
+            "The body shivers and vasoconstricts to reach the new set point, causing chills and rigors.",
+            "In dengue, **plasma leakage begins as the fever falls**, on days 3-7.",
+            "Scrub typhus organisms infect endothelium and cause widespread vasculitis.",
+            "Scrub typhus organisms are intracellular, so **beta-lactams do not work**.",
+            "In enteric fever, **blood culture is positive in week 1**; Widal rises only in week 2.",
+          ],
+        },
+        {
+          title: "History in the OPD",
+          points: [
+            "Establish the **day of fever** and the highest documented temperature.",
+            "Ask the focus questions: cough, dysuria, sore throat, diarrhoea, headache, rash, joints.",
+            "Retro-orbital pain, severe myalgia and rash suggest **dengue**.",
+            "Flood water exposure with red eyes and calf pain suggests **leptospirosis**.",
+            "Ask about chemist antibiotics, NSAIDs and steroid injections already taken.",
+            "From day 3 ask about **dengue warning signs**: abdominal pain, vomiting, bleeding, lethargy.",
+            "Identify high-risk hosts: pregnancy, infants, elderly, diabetes, CKD, HIV, immunosuppression.",
+          ],
+        },
+        {
+          title: "Examination",
+          points: [
+            "Record pulse, BP, **pulse pressure**, respiratory rate, SpO2 and capillary refill.",
+            "**Pulse pressure 20 mmHg or less** or cold extremities is dengue shock until proved otherwise.",
+            "**Search skin folds for an eschar**: axilla, groin, under breasts, waistband, behind ears.",
+            "Look for conjunctival suffusion, jaundice, rash, nodes, liver and spleen.",
+            "**Tourniquet test**: 10 or more petechiae in a 2.5 cm square is positive.",
+            "Search for the missed focus: urine infection, pneumonia, abscess, new murmur, meningism.",
+          ],
+        },
+        {
+          title: "Investigations",
+          points: [
+            "**Every fever gets a malaria test** (smear and RDT) at the first visit.",
+            "Days 1-3: CBC with platelets and haematocrit, malaria test, **dengue NS1** in season.",
+            "Days 4-7: dengue IgM, scrub typhus and leptospira IgM, and **blood culture before antibiotics**.",
+            "**A single Widal is not diagnostic**; it needs a fourfold rise on paired sera.",
+            "Do not send a full fever panel on day 2; it wastes money and misleads.",
+            "Test **G6PD** before the 14-day primaquine course.",
+          ],
+        },
+        {
+          title: "Treatment - first line",
+          points: [
+            "**No antibiotic for fever under 3 days** without a focus; explain this as a decision.",
+            "**Paracetamol** is the only antipyretic until dengue is excluded.",
+            "Avoid NSAIDs, aspirin and IM injections in suspected dengue.",
+            "Give oral fluids of **2.5-3 L a day** and use tepid sponging for comfort.",
+            "Write dengue warning signs on the prescription and book a **review on day 3**.",
+            "Vivax: chloroquine 25 mg/kg over 3 days plus **primaquine 0.25 mg/kg for 14 days**.",
+            "Falciparum: **ACT** (artesunate plus SP) with single-dose primaquine on day 2.",
+          ],
+        },
+        {
+          title: "Treatment - next steps",
+          points: [
+            "Rural fever over 5 days with negative malaria and dengue tests: **empirical doxycycline**.",
+            "**Azithromycin** replaces doxycycline in pregnancy and young children.",
+            "Enteric fever: **cefixime for 14 days** or azithromycin for 7 days.",
+            "Fluoroquinolones are **no longer first line** for enteric fever in India.",
+            "Severe malaria: **IV or IM artesunate 2.4 mg/kg** at 0, 12 and 24 hours.",
+            "Dengue with warning signs: IV crystalloid **5-7 mL/kg/hour** in hospital.",
+            "Do not start empirical anti-TB treatment or steroids for PUO.",
+          ],
+        },
+        {
+          title: "Complications and red flags",
+          points: [
+            "Cold extremities, capillary refill over 2 seconds or SBP under 90 means shock.",
+            "Any **dengue warning sign**, especially as the fever settles.",
+            "Altered sensorium or seizures with fever: cerebral malaria or meningoencephalitis.",
+            "Jaundice with reduced urine suggests severe malaria or **Weil disease**.",
+            "Admit dengue with **platelets under 20,000**, or haematocrit rise of 20% or more.",
+          ],
+        },
+        {
+          title: "Referral and follow-up",
+          points: [
+            "In dengue check **platelets and haematocrit daily** from day 3 until 48 hours afebrile.",
+            "Re-examine fever crossing 7 days from the beginning; do not add another antibiotic.",
+            "Watch for dark urine during primaquine, which suggests haemolysis.",
+            "**Notify** malaria, dengue, scrub typhus, leptospirosis and enteric fever to IDSP/IHIP.",
+          ],
+        },
+      ],
+      tables: [
+        {
+          heading: "Drugs in acute undifferentiated fever",
+          columns: ["Drug", "Dose and route", "Duration", "Key side effects / cautions"],
+          rows: [
+            ["Paracetamol", "Adult 500-1000 mg every 6 hours; child 15 mg/kg", "Max 4 g a day", "Only antipyretic until dengue excluded"],
+            ["Chloroquine", "25 mg/kg base oral (adult 600-600-300 mg)", "3 days", "Itching, nausea"],
+            ["Primaquine (vivax)", "0.25 mg/kg (adult 15 mg) oral daily", "14 days", "Haemolysis in G6PD deficiency; not in pregnancy"],
+            ["Artesunate plus SP (ACT)", "Artesunate 4 mg/kg daily; SP on day 1", "3 days", "Use artemether-lumefantrine in north-east"],
+            ["Artesunate IV or IM", "2.4 mg/kg at 0, 12, 24 hours, then daily", "Until oral ACT possible", "Delayed haemolysis"],
+            ["Doxycycline", "100 mg oral twice daily", "7 days", "Pill oesophagitis; take upright with water"],
+            ["Azithromycin", "Scrub 500 mg daily; enteric 20 mg/kg daily", "Scrub 5 days; enteric 7 days", "GI upset, QT prolongation"],
+            ["Cefixime", "20 mg/kg/day oral in 2 doses", "14 days", "Diarrhoea, rash"],
+            ["Ceftriaxone", "2 g IV once or twice daily", "10-14 days (enteric)", "Allergy, biliary sludge"],
+          ],
+        },
+        {
+          heading: "Fever without focus: clue, test and treatment",
+          columns: ["Cause", "Clue", "Best test and timing", "First-line treatment"],
+          rows: [
+            ["Viral fever", "Under 3 days, normal examination", "Malaria test only", "Paracetamol, fluids, day-3 review"],
+            ["Dengue", "Retro-orbital pain, rash, falling platelets", "NS1 days 1-5; IgM from day 5", "Fluids, paracetamol only"],
+            ["Malaria", "Rigors, sweats, splenomegaly", "Smear and RDT at first visit", "Chloroquine plus primaquine, or ACT"],
+            ["Scrub typhus", "Eschar, nodes, rural exposure", "IgM ELISA from day 5-7", "Doxycycline 7 days"],
+            ["Enteric fever", "Fever over 5-7 days, relative bradycardia", "Blood culture in week 1", "Cefixime or azithromycin"],
+            ["Leptospirosis", "Flood exposure, calf pain, red eyes", "IgM ELISA from day 5", "Doxycycline; ceftriaxone if severe"],
+            ["Chikungunya", "Disabling small-joint pain", "IgM from day 5", "Paracetamol, NSAID after dengue excluded"],
+          ],
+        },
+        {
+          heading: "WHO dengue severity",
+          columns: ["Category", "Features", "Where managed"],
+          rows: [
+            ["Without warning signs", "Fever with aches, rash, leucopenia", "Group A: home with daily review"],
+            ["With warning signs", "Abdominal pain, vomiting, bleeding, lethargy, liver over 2 cm", "Group B: admit for IV fluids"],
+            ["Severe dengue", "Shock, severe bleeding or organ failure", "Group C: emergency and ICU"],
+          ],
+        },
+      ],
+      remember: [
+        "Every fever in India gets a malaria test at the first visit.",
+        "Let the day of fever choose the test.",
+        "In dengue the fall of fever is the start of danger.",
+        "Look in the skin folds for an eschar.",
+        "Beta-lactams do not treat scrub typhus; doxycycline does.",
+        "Blood culture before the first antibiotic beats any Widal.",
+        "Paracetamol only, no NSAIDs, no IM injections until dengue is excluded.",
+      ],
+    },
     master: {
       heading: "Master revision table - fever without focus (AUFI)",
       columns: ["Aspect", "High-yield points"],
@@ -336,6 +1302,172 @@ const revision: RevisionSet = {
 
   "symptom-approach-headache": {
     checked: "2026-10",
+    notes: {
+      sections: [
+        {
+          title: "Definition and key facts",
+          points: [
+            "ICHD-3 divides headache into **primary** (the headache is the disease) and **secondary** (a symptom).",
+            "Over **90%** of headaches in general practice are primary.",
+            "A serious secondary cause is found in **under 1-2%**.",
+            "In India, tension-type headache affects about **35%** and migraine about **25%** of adults.",
+            "Most self-diagnosed **sinus headache is migraine**; refractive error rarely causes chronic headache.",
+            "Hypertension causes headache only in emergencies **above 180/120**.",
+          ],
+        },
+        {
+          title: "Classification that matters",
+          points: [
+            "**Migraine**: unilateral, pulsating, 4-72 hours, with nausea or light and sound sensitivity.",
+            "**Tension-type**: bilateral pressing band, mild to moderate, no nausea.",
+            "**Cluster**: strictly one-sided orbital pain, 15-180 minutes, with tearing and a blocked nose.",
+            "**Medication-overuse headache**: headache on **15 or more days a month** with drug overuse.",
+            "Overuse means simple analgesics on 15 or more days, or **triptans on 10 or more**.",
+            "Chronic headache means **15 or more headache days a month** over 3 months.",
+          ],
+        },
+        {
+          title: "How it happens (pathophysiology)",
+          points: [
+            "The brain itself feels no pain; pain comes from **meninges, venous sinuses and large arteries**.",
+            "Migraine starts in the hypothalamus and brainstem with a **premonitory phase** of yawning and cravings.",
+            "**Aura** is cortical spreading depolarisation moving at 3-5 mm per minute.",
+            "The pain phase releases **CGRP** from trigeminal nerves, causing neurogenic inflammation.",
+            "Central sensitisation then causes allodynia, so **triptans work best taken early**.",
+            "Frequent analgesic use sensitises the brain, causing **medication-overuse headache**.",
+            "Raised intracranial pressure causes headache worse lying, on waking and on straining.",
+          ],
+        },
+        {
+          title: "History in the OPD",
+          points: [
+            "Ask **how many different headaches** the patient has, and take each separately.",
+            "**Time to peak** is the key question; under 1 minute is a **thunderclap**.",
+            "Ask behaviour in the attack: lies still (migraine), carries on (tension), paces (cluster).",
+            "**ID Migraine**: nausea, light sensitivity, disability; 2 of 3 gives PPV over 90%.",
+            "Ask for **headache-free days** a month, and count acute drug days by name.",
+            "Ask **SNOOP** red-flag questions every time.",
+            "Ask about the combined pill, and about a **smoky chulha or generator** (carbon monoxide).",
+          ],
+        },
+        {
+          title: "Examination",
+          points: [
+            "Check temperature, BP and BMI.",
+            "Do **fundoscopy in every patient**; papilloedema means imaging first, no lumbar puncture.",
+            "Look for neck stiffness, Kernig sign and a purpuric rash.",
+            "A third nerve palsy with a dilated pupil suggests a **posterior communicating aneurysm**.",
+            "Over 50, feel the **temporal arteries** for tenderness or thickening.",
+            "A normal examination with a typical history is itself part of the treatment.",
+          ],
+        },
+        {
+          title: "Investigations",
+          points: [
+            "A typical headache with **no red flag and normal examination needs no test**.",
+            "Check **ESR and CRP in every new headache after 50** for giant cell arteritis.",
+            "Thunderclap: **non-contrast CT within 6 hours**; if negative later, LP at 12 hours.",
+            "MRI for papilloedema, focal deficit, progressive pattern or new headache after 50.",
+            "Do not order EEG, sinus X-rays or cervical spine X-rays routinely.",
+          ],
+        },
+        {
+          title: "Treatment - first line",
+          points: [
+            "**Name the headache and write it down**; it reassures more than a scan.",
+            "Start a **headache diary** from the first visit.",
+            "Regular sleep and meals, steady caffeine, and exercise are migraine treatment.",
+            "Acute migraine: **aspirin 900 mg, ibuprofen, naproxen or paracetamol at onset**.",
+            "Add **domperidone 10 mg** or metoclopramide 10 mg for nausea and gastric stasis.",
+            "If simple analgesia fails on 2 attacks, use **sumatriptan 50-100 mg** at the start of pain.",
+          ],
+        },
+        {
+          title: "Treatment - next steps",
+          points: [
+            "Start a preventive for **4 or more migraine days a month**.",
+            "Options are **propranolol, amitriptyline**, flunarizine or topiramate, chosen by comorbidity.",
+            "Judge a preventive at **8-12 weeks**; continue 6-12 months, then taper.",
+            "CGRP antibodies and gepants are now a first-line option (AHS 2024), specialist prescribed.",
+            "Medication overuse: **stop the overused drug** and start a preventive at once.",
+            "Cluster attack: **100% oxygen 12-15 L/min** or sumatriptan 6 mg SC.",
+            "Cluster prevention: **verapamil**, with an ECG before each dose increase.",
+          ],
+        },
+        {
+          title: "Special groups",
+          points: [
+            "**No combined pill in migraine with aura**, because of stroke risk.",
+            "**Never valproate** in women who could become pregnant; topiramate needs contraception.",
+            "In pregnancy, paracetamol is first line; propranolol or amitriptyline for prevention.",
+            "Menstrual migraine: naproxen 500 mg twice daily around the period.",
+          ],
+        },
+        {
+          title: "Referral and follow-up",
+          points: [
+            "**Thunderclap headache** is subarachnoid haemorrhage until CT says otherwise.",
+            "Fever with neck stiffness: give **ceftriaxone 2 g IV** before transfer if delayed.",
+            "New headache after 50 with jaw claudication: **prednisolone 40-60 mg today** for GCA.",
+            "Late pregnancy headache with BP 140/90 or more suggests pre-eclampsia.",
+            "Review at **4-8 weeks** and target a **50% fall** in headache days.",
+            "Refer routinely after **failure of 2-3 preventives**, cluster headache or suspected IIH.",
+            "A change in an established headache pattern is itself a red flag.",
+          ],
+        },
+      ],
+      tables: [
+        {
+          heading: "Drugs for headache",
+          columns: ["Drug", "Dose and route", "Duration", "Key side effects / cautions"],
+          rows: [
+            ["Aspirin, ibuprofen or naproxen", "900 mg, 400-600 mg or 500-550 mg oral", "Per attack, under 15 days a month", "GI bleed; avoid after 20 weeks pregnancy"],
+            ["Paracetamol", "1 g oral per attack, max 4 g a day", "Under 15 days a month", "First choice in pregnancy"],
+            ["Domperidone", "10 mg oral, max 30 mg a day", "With the analgesic", "QT prolongation"],
+            ["Sumatriptan", "50-100 mg oral or 6 mg SC", "Max 300 mg a day; under 10 days a month", "Not in IHD, stroke or uncontrolled BP"],
+            ["Propranolol", "40-160 mg a day oral", "6-12 months", "Avoid in asthma; never stop abruptly"],
+            ["Amitriptyline", "10 mg at night, up to 25-50 mg", "6-12 months", "Drowsiness, dry mouth, weight gain"],
+            ["Flunarizine", "5-10 mg oral at night", "Review at 3-6 months", "Weight gain, depression, parkinsonism"],
+            ["Topiramate", "25 mg at night, up to 50-100 mg a day", "6-12 months", "Teratogenic; paraesthesiae, kidney stones"],
+            ["Verapamil (cluster)", "80 mg three times daily, up to 480 mg a day", "During the bout", "Heart block; ECG before each increase"],
+            ["Prednisolone (GCA)", "40-60 mg oral once daily", "Taper over 12-18 months", "Give PPI, calcium, vitamin D, bone protection"],
+          ],
+        },
+        {
+          heading: "Primary headache at a glance",
+          columns: ["Feature", "Migraine", "Tension-type", "Cluster"],
+          rows: [
+            ["Site", "Unilateral in 60%", "Bilateral band", "Strictly one-sided orbital"],
+            ["Character", "Pulsating, worse with activity", "Pressing, mild to moderate", "Boring, excruciating"],
+            ["Duration", "4-72 hours", "30 minutes to 7 days", "15-180 minutes"],
+            ["Accompaniments", "Nausea, light and sound sensitivity, aura", "No nausea", "Tearing, blocked nose, ptosis"],
+            ["Behaviour", "Lies still in the dark", "Carries on", "Paces and rocks"],
+            ["Acute treatment", "Early NSAID plus domperidone; triptan", "Simple analgesic", "100% oxygen or SC sumatriptan"],
+          ],
+        },
+        {
+          heading: "SNOOP red flags",
+          columns: ["Flag", "Feature", "Think of", "Action"],
+          rows: [
+            ["S - Systemic", "Fever, neck stiffness, cancer, HIV", "Meningitis, metastasis", "Same-day referral; ceftriaxone if delay"],
+            ["N - Neurological", "Focal deficit, papilloedema, seizure", "Mass, raised ICP, CVT", "Urgent imaging; no LP first"],
+            ["O - Onset", "Thunderclap, or on exertion, cough or sex", "SAH, dissection", "CT within 6 hours"],
+            ["O - Older", "New after 50, jaw claudication", "Giant cell arteritis", "ESR, CRP; prednisolone today"],
+            ["P - Pattern", "Progressive, positional, pregnancy, painkiller overuse", "Raised ICP, CVT, overuse", "MRI; BP and urine protein"],
+          ],
+        },
+      ],
+      remember: [
+        "SNOOP: Systemic, Neurological, Onset sudden, Older, Pattern change.",
+        "Time to peak under 1 minute is a thunderclap: CT within 6 hours.",
+        "Sinus headache is migraine until proved otherwise.",
+        "Treat early: the same tablet at onset works twice as well.",
+        "Triptans under 10 days a month, simple analgesics under 15.",
+        "Preventive for 4 or more migraine days a month.",
+        "No combined pill in migraine with aura.",
+        "Cluster: oxygen or SC sumatriptan; oral drugs are too slow.",
+      ],
+    },
     updated: [
       "AHS 2024: CGRP-targeting therapies (monthly mAbs, atogepant 60 mg OD) are a first-line preventive option; NICE still funds mAbs after 3 failed preventives (replaces 'after failure of 3 preventives' only, AHS 2021)",
     ],
@@ -403,6 +1535,171 @@ const revision: RevisionSet = {
 
   "symptom-approach-chronic-cough": {
     checked: "2026-10",
+    notes: {
+      sections: [
+        {
+          title: "Definition and key facts",
+          points: [
+            "In India, **cough for 2 weeks or more is presumptive TB** under NTEP.",
+            "Test with **upfront sputum NAAT and a chest X-ray** before any trial.",
+            "India has about a quarter of the world's TB, about **2.7 million cases in 2024**.",
+            "A missed TB case infects **10-15 people a year**.",
+            "Most cough beyond 2 weeks is still not TB: post-infectious, UACS, asthma or reflux.",
+          ],
+        },
+        {
+          title: "Classification that matters",
+          points: [
+            "Adults: **acute under 3 weeks**, subacute 3-8 weeks, **chronic over 8 weeks**.",
+            "In children, chronic cough means **over 4 weeks**.",
+            "Presumptive TB also includes fever 2 weeks or more, weight loss, haemoptysis or abnormal X-ray.",
+            "In **PLHIV, contacts, diabetics** and the immunosuppressed, cough of any duration counts.",
+            "Non-smoker, normal film, no ACE inhibitor: **UACS, asthma or reflux** in over 90%.",
+            "A quarter of chronic cough patients have **more than one cause**.",
+          ],
+        },
+        {
+          title: "How it happens (pathophysiology)",
+          points: [
+            "Vagal afferents in the airway, nose, oesophagus and ear send signals to the medullary cough centre.",
+            "In chronic cough these pathways become **sensitised**, so talking or cold air triggers cough.",
+            "In UACS, postnasal secretions stimulate throat afferents; old antihistamines dry them.",
+            "In cough-variant asthma, **Th2 eosinophilic inflammation** sensitises airway nerves; worse at 2-4 am.",
+            "ACE inhibitors stop bradykinin breakdown; bradykinin sensitises airway nerve fibres.",
+            "TB forms caseating granulomas and **upper lobe cavities** that erode bronchi.",
+            "Post-infectious cough reflects temporary airway hyperresponsiveness lasting 3-8 weeks.",
+          ],
+        },
+        {
+          title: "History in the OPD",
+          points: [
+            "Record the **date the 2-week threshold was crossed**.",
+            "Ask the TB cluster: evening fever, night sweats, weight loss, haemoptysis, contact.",
+            "Ask TB risk multipliers: diabetes, HIV, alcohol, tobacco, **silica exposure**, malnutrition.",
+            "Nocturnal or exercise cough suggests asthma; cough after meals or lying suggests reflux.",
+            "Ask about **ACE inhibitors**, even if started months ago.",
+            "Ask about smoking, bidi, **biomass chulha smoke** and occupational dust.",
+            "Ask what was tried: **fluoroquinolones** and steroid injections both mask TB.",
+          ],
+        },
+        {
+          title: "Examination",
+          points: [
+            "Record weight and BMI; a **5% fall** is itself a red flag.",
+            "Look for **clubbing**: bronchiectasis, lung cancer, ILD; not COPD or simple TB.",
+            "Feel cervical and **supraclavicular nodes**; a node needs FNAC, not another antibiotic.",
+            "Look in the nose and throat for pale mucosa, polyps and pharyngeal cobblestoning.",
+            "A **fixed monophonic wheeze** suggests an obstructing lesion; bronchoscopy, not a bronchodilator.",
+          ],
+        },
+        {
+          title: "Investigations",
+          points: [
+            "**Sputum NAAT (CBNAAT or Truenat)** detects TB and rifampicin resistance in about 2 hours.",
+            "NAAT sensitivity is **85-90%**, against 50-60% for smear; it is free under NTEP.",
+            "A normal film with negative NAAT closes the TB question in immunocompetent adults.",
+            "Test **HIV and blood glucose** in every TB patient.",
+            "Spirometry: FEV1 rise of **12% and 200 mL** supports asthma; normal spirometry does not exclude it.",
+            "Blood eosinophils over 300 per microlitre predict a response to inhaled steroids.",
+            "**CT chest for a smoker over 40** with changed cough or haemoptysis, even with a normal X-ray.",
+          ],
+        },
+        {
+          title: "Treatment - first line",
+          points: [
+            "**Sputum, not syrup**: the visit ends with a sample, a film request and a review date.",
+            "**Never a fluoroquinolone trial** where TB is possible; no steroid injections either.",
+            "Run **sequential full-length trials** once TB is excluded; keep what works.",
+            "ACE inhibitor cough: switch to **losartan 50 mg** and review at 4 weeks.",
+            "UACS: **chlorpheniramine 4 mg** at night or a nasal steroid for 2-4 weeks.",
+            "Asthma: **budesonide-formoterol 200/6** as needed or maintenance for 4-8 weeks.",
+            "Honey in warm water works as well as most syrups; not under 1 year.",
+          ],
+        },
+        {
+          title: "Treatment - next steps",
+          points: [
+            "Reflux cough: **pantoprazole 40 mg twice daily for 8-12 weeks**, only with reflux symptoms.",
+            "Eosinophilic bronchitis: inhaled budesonide 400 microgram twice daily for 4-8 weeks.",
+            "Pertussis: **azithromycin** for 5 days, within 3 weeks of onset.",
+            "Drug-sensitive TB: daily **2HRZE then 4HRE** by weight band, with pyridoxine 10 mg.",
+            "Rifampicin-resistant TB goes to the district DR-TB centre for **BPaLM**.",
+            "Refractory cough (specialist): gabapentin or low-dose morphine.",
+          ],
+        },
+        {
+          title: "Complications and red flags",
+          points: [
+            "**Haemoptysis of any amount** needs NAAT and X-ray the same day.",
+            "Smoker over 40 with changed cough or **hoarseness over 3 weeks**: suspect lung cancer.",
+            "SpO2 under 94% or RR over 24 needs assessment today.",
+            "Sudden cough with choking in a child suggests a **foreign body**.",
+            "Jaundice or blurred vision on TB drugs: stop and review; orange urine is expected.",
+          ],
+        },
+        {
+          title: "Referral and follow-up",
+          points: [
+            "Review at **2 weeks** for the NAAT and film, then at 4-8 weeks for each trial.",
+            "**Notify every TB case on Ni-kshay**; it unlocks free drugs and Rs 1000 a month nutrition support.",
+            "Screen household contacts and offer **TB preventive treatment** (3HP or 6H).",
+            "Refer to a chest clinic if cough persists after three full trials.",
+          ],
+        },
+      ],
+      tables: [
+        {
+          heading: "Drugs for chronic cough",
+          columns: ["Drug", "Dose and route", "Duration", "Key side effects / cautions"],
+          rows: [
+            ["Losartan (replaces ACE inhibitor)", "50 mg oral once daily", "Long term; review at 4 weeks", "Hyperkalaemia; check creatinine"],
+            ["Chlorpheniramine", "4 mg at night, up to 8-hourly", "1-3 weeks", "Drowsiness; avoid elderly, glaucoma, prostatism"],
+            ["Fluticasone nasal", "2 sprays each nostril once daily", "2-4 weeks or longer", "Nasal dryness, epistaxis"],
+            ["Budesonide-formoterol", "200/6 microgram, 1 inhalation as needed", "4-8 week trial", "Thrush; rinse mouth"],
+            ["Montelukast", "10 mg oral at night", "Add-on", "Sleep and mood changes"],
+            ["Pantoprazole", "40 mg twice daily before meals", "8-12 weeks", "Only with reflux symptoms"],
+            ["Azithromycin (pertussis)", "500 mg day 1, then 250 mg days 2-5", "5 days", "QT prolongation; treat within 3 weeks"],
+            ["Dextromethorphan", "10-20 mg every 4 hours, max 120 mg/day", "Short term, adults", "Serotonin syndrome with SSRIs"],
+            ["HRZE fixed-dose combination", "2-6 tablets daily by weight band", "2HRZE then 4HRE", "Hepatitis, neuropathy, optic neuritis"],
+          ],
+        },
+        {
+          heading: "Cough beyond 2 weeks by cause",
+          columns: ["Cause", "Clue", "Confirming test or trial"],
+          rows: [
+            ["Pulmonary TB", "Evening fever, weight loss, haemoptysis, contact", "Sputum NAAT and chest X-ray"],
+            ["Post-infectious or pertussis", "Began with a cold; whoop or vomiting", "Resolves in 3-8 weeks; pertussis PCR"],
+            ["Upper airway cough syndrome", "Postnasal drip, throat clearing", "2-4 week antihistamine or nasal steroid"],
+            ["Asthma or cough-variant asthma", "Night, exercise or cold air cough", "Spirometry, PEF diary, 4-8 week ICS"],
+            ["Reflux", "Heartburn, cough after meals or lying", "8-12 week twice-daily PPI"],
+            ["ACE inhibitor", "Dry tickly cough after enalapril", "Settles 1-4 weeks after switching"],
+            ["COPD, bronchiectasis, cancer", "Smoke exposure, purulent sputum, haemoptysis", "Spirometry, HRCT, CT and bronchoscopy"],
+          ],
+        },
+        {
+          heading: "NTEP TB case definitions",
+          columns: ["Term", "Definition", "Action"],
+          rows: [
+            ["Presumptive TB", "Cough or fever 2 weeks or more, weight loss, haemoptysis", "Same-day NAAT, X-ray, HIV, glucose"],
+            ["Microbiologically confirmed", "Positive smear, culture or NAAT", "Notify, treat, screen contacts"],
+            ["Clinically diagnosed", "Diagnosed by medical officer without microbiology", "Notify and treat; keep seeking proof"],
+            ["New case", "Never treated, or under 1 month", "Daily 2HRZE/4HRE"],
+            ["Previously treated", "Treated 1 month or more before", "NAAT and culture with DST first"],
+            ["Rifampicin-resistant", "Resistance on NAAT or culture", "Refer to DR-TB centre"],
+          ],
+        },
+      ],
+      remember: [
+        "Two weeks, not three: the NTEP threshold for testing cough.",
+        "Sputum, not syrup.",
+        "Upfront NAAT, not smear: nearly twice the yield.",
+        "Never a fluoroquinolone trial where TB is possible.",
+        "Big three in non-smokers: UACS, asthma, reflux.",
+        "Normal spirometry does not exclude cough-variant asthma.",
+        "Every TB patient gets HIV and sugar tests.",
+        "About 1 in 10 lung cancers has a normal chest X-ray.",
+      ],
+    },
     updated: [
       "WHO Global TB Report 2025: India about 2.7 million cases in 2024 (25% of global burden, incidence 187 per lakh, down 21% since 2015) - replaces 2.8 million (WHO 2024)",
     ],
@@ -458,6 +1755,163 @@ const revision: RevisionSet = {
 
   "symptom-approach-weight-loss": {
     checked: "2026-10",
+    notes: {
+      sections: [
+        {
+          title: "Definition and key facts",
+          points: [
+            "**Unintentional weight loss** is **5% or more over 6-12 months**, or 10% at any time.",
+            "A 60 kg adult who loses 3 kg without trying qualifies.",
+            "**Weigh before you investigate**; about half of self-reported losses are not confirmed.",
+            "A 5% loss predicts admission, functional decline and death, especially in the elderly.",
+            "Children are judged on growth charts and **SAM criteria**, not the 5% rule.",
+          ],
+        },
+        {
+          title: "Classification that matters",
+          points: [
+            "Causes come in thirds: **malignancy 15-35%**, non-malignant organic disease 30-40%.",
+            "Psychiatric or social causes make up 10-25%; no cause is found in 10-25%.",
+            "In India **TB, diabetes, thyrotoxicosis and HIV** lead the organic causes.",
+            "**Appetite preserved**: diabetes, thyrotoxicosis, malabsorption, worms.",
+            "**Appetite reduced**: cancer, chronic infection, depression, uraemia, drugs.",
+            "**GLIM malnutrition**: one phenotypic plus one aetiologic criterion; Asian BMI under 18.5.",
+          ],
+        },
+        {
+          title: "How it happens (pathophysiology)",
+          points: [
+            "Weight falls when intake is below expenditure; **1 kg of tissue is about 7000 kcal**.",
+            "In simple starvation the body spares protein, and food fully reverses it.",
+            "In **cachexia**, TNF, IL-1 and IL-6 break down muscle despite feeding.",
+            "Uncontrolled diabetes loses **500-1000 kcal a day** in the urine as glycosuria.",
+            "Thyrotoxicosis raises metabolic rate, so weight falls **with increased appetite**.",
+            "TB and undernutrition feed each other in a two-way cycle.",
+            "**Refeeding** drives phosphate, potassium and magnesium into cells and uses up thiamine.",
+          ],
+        },
+        {
+          title: "History in the OPD",
+          points: [
+            "Quantify the loss, its timing, and the earlier recorded weight.",
+            "**Ask about appetite first**; it splits the differential in two.",
+            "Malignancy cluster: **dysphagia**, early satiety, bowel change, bleeding, lumps, jaundice.",
+            "Infection cluster: fever, night sweats, **cough over 2 weeks**, HIV risk.",
+            "Endocrine cluster: polyuria, palpitations, heat intolerance, pigmentation.",
+            "Screen mood with **PHQ-2**, memory in the elderly, and SCOFF in adolescents.",
+            "Ask about drugs, tobacco, alcohol, teeth, money and who cooks.",
+          ],
+        },
+        {
+          title: "Examination",
+          points: [
+            "Measure weight, height, **BMI and MUAC**, and record them for the trend.",
+            "Look for temporal wasting, pallor, jaundice and the **left supraclavicular (Virchow) node**.",
+            "Check the mouth, thyroid, skin pigmentation and acanthosis nigricans.",
+            "Examine the abdomen for masses, organ enlargement and a **Courvoisier gallbladder**.",
+            "Do not skip **breasts, testes and rectal examination**.",
+          ],
+        },
+        {
+          title: "Investigations",
+          points: [
+            "Order **tier 1 in one draw** at the first visit, not in stages.",
+            "Tier 1: **CBC, ESR, CRP, HbA1c, TSH, renal and liver tests, calcium, urine**.",
+            "Also: stool occult blood, **HIV, chest X-ray, abdominal ultrasound**; sputum NAAT if cough.",
+            "Tier 2 follows clues: endoscopy, colonoscopy, contrast CT, protein electrophoresis.",
+            "**Do not screen with tumour markers** or whole-body CT or PET.",
+            "Normal examination plus normal tier 1 allows **monthly weights for 3-6 months**.",
+          ],
+        },
+        {
+          title: "Treatment - first line",
+          points: [
+            "**Treat the cause**; weight usually returns within 4-8 weeks.",
+            "**Feed in parallel** with the work-up, using energy-dense familiar foods.",
+            "Elderly need **protein 1.0-1.2 g/kg/day** and about 30 kcal/kg/day.",
+            "Give supplements **between meals**, not instead of them.",
+            "Stop weight-losing drugs, fix dentures, and treat nausea and constipation.",
+            "Link to PDS, Anganwadi and **Ni-kshay Poshan Yojana** for food poverty.",
+          ],
+        },
+        {
+          title: "Treatment - next steps",
+          points: [
+            "Appetite stimulants are **added to food, never used instead**, and never before diagnosis.",
+            "**Mirtazapine 7.5-15 mg** at night suits the depressed elderly with poor appetite.",
+            "Megestrol or dexamethasone only for cancer or HIV cachexia, short term.",
+            "Thyrotoxicosis: **carbimazole 20-40 mg** daily plus propranolol for symptoms.",
+            "Avoid cyproheptadine and weight-gain tonics, which may hide steroids.",
+          ],
+        },
+        {
+          title: "Special groups",
+          points: [
+            "Elderly: check **teeth, tablets, mood and money** before the pancreas.",
+            "Use **MEALS ON WHEELS** to list causes in older adults.",
+            "Stop low-salt and diabetic diets in the frail elderly with weight loss.",
+            "Anorexia nervosa: admit if **pulse under 50**, temperature under 35.5 C or BMI under 15.",
+            "HIV wasting (over 10% loss with diarrhoea or fever) is **WHO stage 4**.",
+            "Refeeding risk: give **thiamine first** and start at 10 kcal/kg/day.",
+          ],
+        },
+        {
+          title: "Referral and follow-up",
+          points: [
+            "**Weigh at every contact** and write it down.",
+            "A further **2 kg fall or a new symptom** triggers tier 2.",
+            "Refer on the 2-week pathway for a mass, node, dysphagia or iron deficiency anaemia.",
+            "New diabetes after 50 with weight loss and back pain: **image the pancreas**.",
+          ],
+        },
+      ],
+      tables: [
+        {
+          heading: "Drugs in weight loss",
+          columns: ["Drug", "Dose and route", "Duration", "Key side effects / cautions"],
+          rows: [
+            ["Mirtazapine", "7.5-15 mg oral at night, up to 30 mg", "Review at 4-6 weeks", "Sedation, hyponatraemia; check sodium"],
+            ["Megestrol acetate", "160-800 mg daily (specialist)", "Cancer or HIV cachexia", "Thromboembolism, adrenal suppression"],
+            ["Dexamethasone", "2-4 mg oral each morning", "1-3 weeks", "Hyperglycaemia, myopathy, insomnia"],
+            ["Carbimazole", "20-40 mg daily, taper to 5-15 mg", "12-18 months", "Agranulocytosis: stop if sore throat"],
+            ["Basal insulin", "10 units at bedtime, up 2 units every 3 days", "Until glucose controlled", "Hypoglycaemia"],
+            ["Pancreatin", "25,000-50,000 units lipase per meal", "Long term", "Take with first mouthful of food"],
+            ["Thiamine (refeeding)", "200-300 mg daily oral or IV", "Before and for 10 days of feeding", "Replace phosphate, potassium, magnesium"],
+            ["Albendazole", "400 mg oral single dose", "Repeat at 2 weeks if heavy", "Avoid in first trimester"],
+            ["Oral nutritional supplement", "At least 400 kcal and 30 g protein a day", "1 month or more", "Between meals, not instead"],
+          ],
+        },
+        {
+          heading: "Weight loss by appetite",
+          columns: ["Appetite", "Mechanism", "Typical causes", "First tests"],
+          rows: [
+            ["Preserved or increased", "Calories lost or burned", "Diabetes, thyrotoxicosis, malabsorption, worms", "HbA1c, TSH, stool tests, anti-tTG"],
+            ["Reduced", "Cytokine anorexia, pain, mood, drugs", "Cancer, TB, HIV, depression, CKD", "CBC, ESR, X-ray, HIV, ultrasound"],
+            ["Deliberately restricted", "Fear of weight gain", "Anorexia nervosa, laxative misuse", "SCOFF, electrolytes, ECG"],
+          ],
+        },
+        {
+          heading: "Investigation tiers",
+          columns: ["Tier", "Tests", "When"],
+          rows: [
+            ["Tier 1", "CBC, ESR, HbA1c, TSH, renal, liver, calcium, HIV, X-ray, ultrasound", "First visit, one draw"],
+            ["Tier 2", "Endoscopy, colonoscopy, contrast CT, electrophoresis", "Abnormal tier 1 or a clue"],
+            ["Geriatric tier", "Drug review, teeth, PHQ-9, Mini-Cog, B12", "Every older adult"],
+            ["Watchful waiting", "Monthly weight and repeat history", "Normal examination and tier 1"],
+            ["Not indicated", "Tumour markers, whole-body CT or PET", "Never as a first step"],
+          ],
+        },
+      ],
+      remember: [
+        "Weigh before you investigate.",
+        "Ask appetite first: good appetite means diabetes, thyroid or malabsorption.",
+        "Causes come in thirds: cancer, organic disease, psychosocial.",
+        "Tier 1 in one draw at the first visit.",
+        "Tumour markers follow a known cancer; they do not find one.",
+        "Elderly: teeth, tablets, mood and money before the pancreas.",
+        "Refeeding: thiamine first, start low, replace phosphate.",
+      ],
+    },
     master: {
       heading: "Master revision table - unintentional weight loss",
       columns: ["Aspect", "High-yield points"],
@@ -509,6 +1963,165 @@ const revision: RevisionSet = {
 
   "symptom-approach-anaemia-adult": {
     checked: "2026-10",
+    notes: {
+      sections: [
+        {
+          title: "Definition and key facts",
+          points: [
+            "WHO 2024: anaemia is Hb **under 13 g/dL in men** and **under 12 in non-pregnant women**.",
+            "In pregnancy it is **under 11 g/dL**, or under 10.5 in the second trimester.",
+            "Anaemia is a sign, not a diagnosis; always look for the cause.",
+            "NFHS-5: **57% of women** aged 15-49 and 25% of men are anaemic.",
+            "About half of Indian anaemia is **iron deficiency**; often more than one cause coexists.",
+          ],
+        },
+        {
+          title: "Classification that matters",
+          points: [
+            "Severity in non-pregnant adults: **moderate 8.0-10.9**, severe under 8.0 g/dL.",
+            "**Microcytic (MCV under 80)**: iron deficiency, thalassaemia trait, chronic disease, lead.",
+            "**Normocytic (80-100)**: blood loss, inflammation, CKD, haemolysis, marrow failure.",
+            "**Macrocytic (over 100)**: B12 or folate deficiency, alcohol, liver disease, hypothyroidism.",
+            "Reticulocyte production index **under 2 means production failure**; over 2-3 means loss or haemolysis.",
+          ],
+        },
+        {
+          title: "How it happens (pathophysiology)",
+          points: [
+            "Iron is absorbed in the **duodenum**; vitamin C helps, while tea, phytates and calcium block it.",
+            "An iron dose raises **hepcidin for about 24 hours**, so split daily doses are wasted.",
+            "Iron deficiency runs in stages: low ferritin first, then low saturation, then microcytic anaemia.",
+            "In inflammation, **IL-6 raises hepcidin**, so ferritin is normal or high and oral iron fails.",
+            "B12 needs **intrinsic factor** and is absorbed in the terminal ileum; stores last 3-5 years.",
+            "B12 lack stops DNA synthesis, giving megaloblasts and **hypersegmented neutrophils**.",
+            "B12 lack also damages the dorsal columns (**subacute combined degeneration**), even without anaemia.",
+          ],
+        },
+        {
+          title: "History in the OPD",
+          points: [
+            "Ask about fatigue, exertional breathlessness, palpitations and angina, and how fast they came.",
+            "Ask about **pica**, restless legs and brittle nails, which suggest iron deficiency.",
+            "Ask women about **heavy periods**, pregnancies and short birth intervals.",
+            "Ask about **melaena**, bowel change and weight loss, especially in men and older women.",
+            "Ask about diet, tea with meals, barefoot farm work, NSAIDs, **metformin and PPIs**.",
+            "Ask about tingling feet and unsteadiness in the dark, which suggest B12 neuropathy.",
+          ],
+        },
+        {
+          title: "Examination",
+          points: [
+            "Grade pallor; **palmar crease pallor** suggests Hb under about 7 g/dL.",
+            "Look for heart failure: raised JVP, basal crackles and oedema.",
+            "Iron signs: **koilonychia**, angular cheilitis, atrophic glossitis.",
+            "B12 signs: beefy tongue, lemon-yellow tint, knuckle pigmentation.",
+            "Feel for spleen, liver and nodes, and do a **rectal examination** in iron deficiency.",
+            "**Absent ankle jerks with extensor plantars** suggests subacute combined degeneration.",
+          ],
+        },
+        {
+          title: "Investigations",
+          points: [
+            "Start with **CBC with indices, smear, reticulocytes and ferritin**.",
+            "**Ferritin under 15** is diagnostic; under 30 microgram/L is used in primary care.",
+            "With inflammation, ferritin up to 100 with **TSAT under 20%** still means iron deficiency.",
+            "**B12 under 180 ng/L** is deficiency; 180-350 needs methylmalonic acid.",
+            "Microcytosis with normal ferritin needs **HPLC; HbA2 over 3.5%** is beta-thalassaemia trait.",
+            "Every man and postmenopausal woman with iron deficiency needs **OGD plus colonoscopy**.",
+            "**Draw haematinics before any transfusion**.",
+          ],
+        },
+        {
+          title: "Treatment - first line",
+          points: [
+            "**Treat the cause**: stop NSAIDs, treat heavy periods, worms, H. pylori and coeliac disease.",
+            "**Ferrous sulphate 200 mg** once daily or on alternate days.",
+            "Take iron on an empty stomach with water or orange juice, **not with tea or milk**.",
+            "Expect Hb to rise about **2 g/dL in 3-4 weeks**.",
+            "Continue iron for **3 months after Hb normalises** to refill stores.",
+            "B12 deficiency: **hydroxocobalamin 1 mg IM** three times a week for 2 weeks.",
+            "**Never give folic acid alone** before treating B12 deficiency.",
+          ],
+        },
+        {
+          title: "Treatment - next steps",
+          points: [
+            "If oral iron fails, check adherence, ongoing loss, malabsorption and the diagnosis.",
+            "**IV ferric carboxymaltose** 20 mg/kg, up to 1000 mg per dose, over 15 minutes.",
+            "Give IV iron where adrenaline is available, and observe for 30 minutes.",
+            "B12 with neurological signs: **injections the same day**, alternate days until no further gain.",
+            "Heavy periods: tranexamic acid 1 g three times a day during menses.",
+            "CKD anaemia: replace iron first; nephrology starts an ESA at Hb about 9-10.",
+          ],
+        },
+        {
+          title: "Complications and red flags",
+          points: [
+            "Hb under 7 g/dL with chest pain, breathlessness at rest or heart failure: admit.",
+            "**Restrictive transfusion** at Hb under 7 g/dL, one unit at a time.",
+            "Pancytopenia or blasts on the smear need urgent haematology referral.",
+            "Jaundice and dark urine after a new drug suggests haemolysis; stop the drug.",
+            "High ESR, bone pain and renal failure suggest myeloma.",
+          ],
+        },
+        {
+          title: "Prevention and programmes",
+          points: [
+            "**Anemia Mukt Bharat** uses a 6x6x6 strategy, including T4 camps (Test, Treat, Talk).",
+            "Women of reproductive age get **one IFA tablet weekly** (60 mg iron, 500 microgram folic acid).",
+            "Pregnant women get one IFA tablet daily for **180 days**, continued 180 days postpartum.",
+            "Fortified rice in PDS, deworming, footwear and bed nets complete prevention.",
+          ],
+        },
+      ],
+      tables: [
+        {
+          heading: "Drugs for anaemia",
+          columns: ["Drug", "Dose and route", "Duration", "Key side effects / cautions"],
+          rows: [
+            ["Ferrous sulphate", "200 mg oral (65 mg iron), daily or alternate days", "3 months after Hb normal", "Nausea, constipation, black stools"],
+            ["Ferric carboxymaltose", "20 mg/kg IV, max 1000 mg over 15 min", "Repeat after 1 week to total deficit", "Hypophosphataemia; not in first trimester"],
+            ["Iron sucrose", "200 mg IV over 20-30 minutes", "Up to 3 times a week", "Hypotension, rare hypersensitivity"],
+            ["Hydroxocobalamin", "1 mg IM three times a week", "2 weeks, then every 2-3 months for life", "Check potassium at 48 hours"],
+            ["Cyanocobalamin oral", "1000-2000 microgram daily", "Long term", "Rare"],
+            ["Folic acid", "5 mg oral once daily", "4 months", "Only after B12 excluded or treated"],
+            ["Albendazole", "400 mg chewed single dose", "Repeat at 2 weeks if heavy", "Avoid first trimester"],
+            ["Tranexamic acid", "1 g oral three times daily", "Up to 4-5 days of menses", "Avoid with past thrombosis"],
+          ],
+        },
+        {
+          heading: "WHO 2024 anaemia severity (g/dL)",
+          columns: ["Group", "Anaemia below", "Mild", "Moderate", "Severe"],
+          rows: [
+            ["Men", "13.0", "11.0-12.9", "8.0-10.9", "Under 8.0"],
+            ["Non-pregnant women", "12.0", "11.0-11.9", "8.0-10.9", "Under 8.0"],
+            ["Pregnant women", "11.0 (10.5 in 2nd trimester)", "10.0-10.9", "7.0-9.9", "Under 7.0"],
+          ],
+        },
+        {
+          heading: "Microcytic anaemia: which one?",
+          columns: ["Feature", "Iron deficiency", "Thalassaemia trait", "Anaemia of inflammation"],
+          rows: [
+            ["RBC count", "Low", "High", "Low or normal"],
+            ["RDW", "High", "Normal", "Normal"],
+            ["Mentzer index", "Over 13", "Under 13", "Over 13"],
+            ["Ferritin", "Low", "Normal", "Normal or high"],
+            ["HbA2 on HPLC", "Normal or low", "Over 3.5%", "Normal"],
+            ["Oral iron response", "Hb up 2 g/dL in 3-4 weeks", "None", "Poor"],
+          ],
+        },
+      ],
+      remember: [
+        "Men under 13, women under 12, pregnancy under 11 g/dL.",
+        "Microcytic causes, TAILS: Thalassaemia, Anaemia of chronic disease, Iron deficiency, Lead, Sideroblastic.",
+        "Ferritin under 30 is iron deficiency in primary care.",
+        "One iron tablet daily or alternate days; hepcidin wastes split doses.",
+        "Mentzer under 13 with normal ferritin: think thalassaemia trait.",
+        "Never folate alone before B12.",
+        "Every man and postmenopausal woman with iron deficiency gets OGD and colonoscopy.",
+        "Transfuse at Hb under 7, one unit at a time; draw haematinics first.",
+      ],
+    },
     updated: [
       "KDIGO 2026 anaemia in CKD (replaces KDIGO 2012): correct iron first (TSAT 30% or less and ferritin 500 or less; IV iron preferred on haemodialysis); ESA started by symptoms at Hb about 9-10 g/dL (8.5-10 non-dialysis); no ESA to keep Hb 11.5 g/dL or more; HIF-PHI an alternative, avoided with active cancer or recent CV or thrombotic event",
       "NICE NG12 tag updated to 2025 for urgent endoscopy referral in iron deficiency anaemia",
