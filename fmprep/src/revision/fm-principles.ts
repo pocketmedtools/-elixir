@@ -3,6 +3,150 @@ import type { RevisionSet } from "./index";
 const revision: RevisionSet = {
   "fm-principles-definition": {
     checked: "2026-10",
+    notes: {
+      sections: [
+        {
+          title: "Definition and key facts",
+          points: [
+            "WONCA Europe 2023: an **academic and scientific discipline** and a clinical specialty oriented to primary care.",
+            "McWhinney: the only discipline defined by **a relationship**, not by an organ, disease or technique.",
+            "AAFP: continuing, comprehensive care of individual and family, **not limited by age, sex or organ**.",
+            "Leeuwenhorst 1974 first described the GP as giving **personal, primary and continuing care**.",
+            "Family medicine is therefore never a residual specialty of what others leave behind.",
+          ],
+        },
+        {
+          title: "Classification that matters",
+          points: [
+            "Starfield's **four core attributes**: first contact, continuity, comprehensiveness and coordination.",
+            "Continuity is also called **longitudinality**: a regular source of care over time.",
+            "Three derivative attributes follow: **family-centredness, community orientation and cultural competence**.",
+            "WONCA lists **six core competencies**, from primary care management to a holistic approach.",
+            "Primary health care is the whole-of-society strategy; **primary care** is the clinical service within it.",
+          ],
+        },
+        {
+          title: "McWhinney's nine principles",
+          points: [
+            "Principle 1: **committed to the person**, not to a body of knowledge or a technique.",
+            "Principle 2: seeks to understand **the context of the illness** - family, work, money and beliefs.",
+            "Principle 3: sees **every contact as a chance for prevention**.",
+            "Principle 4: views the practice as a **population at risk** and thinks in denominators.",
+            "Principle 5: works as part of a **community-wide network**, including ASHA, ANM and anganwadi worker.",
+            "Principles 6 and 7: shares the patients' habitat and **sees patients in their homes**.",
+            "Principles 8 and 9: values the **subjective aspects of medicine** and is a **manager of resources**.",
+          ],
+        },
+        {
+          title: "Core concepts",
+          points: [
+            "**Biopsychosocial model (Engel 1977)**: disease, illness experience and social context are handled together.",
+            "Marinker: the GP **tolerates uncertainty, explores probability and marginalises danger**.",
+            "Prior probability is low at first contact, so a positive test is **more often a false positive**.",
+            "**Time as a diagnostic tool**: watchful waiting is safe only with a clear safety net.",
+            "**Inverse care law (Tudor Hart 1971)**: good care is least available where need is greatest.",
+            "**Quaternary prevention (Jamoulle)**: protecting patients from overdiagnosis and needless tests.",
+          ],
+        },
+        {
+          title: "Ecology and the iceberg",
+          points: [
+            "White 1961: of **1000 adults a month**, 750 have symptoms and 250 consult a doctor.",
+            "Of these, **9 are admitted, 5 referred and only 1** reaches a teaching hospital.",
+            "Green 2001 found almost the same proportions forty years later.",
+            "Teaching hospitals see the **least representative slice** of illness, which breeds over-investigation.",
+            "**Iceberg of disease (Last 1963)**: diagnosed cases are only the visible tip.",
+          ],
+        },
+        {
+          title: "Applying the principles in one OPD visit",
+          points: [
+            "See any problem at any age without demanding a referral: **open access**.",
+            "Let the patient speak, then elicit **ideas, concerns and expectations (ICE)**.",
+            "List the likely cause and the **dangerous must-not-miss cause**.",
+            "If no red flag, treat or wait with a **dated review and safety net**.",
+            "Add chronic problems and prevention: BP, sugar, tobacco and vaccines due.",
+            "Consider family and context, share the plan, then **record the problem list and review date**.",
+          ],
+        },
+        {
+          title: "Implementation in India",
+          points: [
+            "About **70-80% of first contacts** in India are with the private sector.",
+            "**Ayushman Arogya Mandirs** (renamed 2023) deliver **12 service packages**, led by a community health officer.",
+            "NCD screening from **age 30** covers hypertension, diabetes, and oral, breast and cervical cancer.",
+            "**NHP 2017** gives up to two-thirds of public health spending to primary care.",
+            "Out-of-pocket spending is still about **40%** of total health expenditure (NHA 2021-22).",
+            "Task-sharing with ASHA, ANM, anganwadi worker and CHO makes them the family physician's team.",
+          ],
+        },
+        {
+          title: "Complications and red flags",
+          points: [
+            "**Child abuse disclosure** must be reported under POCSO 2012; it cannot stay a family confidence.",
+            "Assault, poisoning, burns or road accident is a **medico-legal case**: treat first, then inform police.",
+            "Notify tuberculosis, measles, dengue and acute flaccid paralysis through **IHIP and Ni-kshay**.",
+            "**Suicidal ideation** disclosed in a routine visit needs same-day help and a safety plan.",
+            "Watchful waiting **without a safety net** is unsafe practice.",
+          ],
+        },
+        {
+          title: "Pitfalls and measures of good primary care",
+          points: [
+            "Do not apply specialist decision rules at first contact; testing cascades cause harm.",
+            "A firm diagnosis exists for only **about half** of new symptoms; aim to marginalise danger.",
+            "Measures include continuity index, preventive coverage, **referral rate** and avoidable admissions.",
+            "Strong primary care systems give **lower costs, better equity and better health** (Starfield).",
+          ],
+        },
+      ],
+      tables: [
+        {
+          heading: "Starfield's core attributes of primary care",
+          columns: ["Attribute", "Meaning", "Simple indicator"],
+          rows: [
+            ["First contact", "Usual entry point for each new need", "New problems seen first by the FP"],
+            ["Continuity (longitudinality)", "Regular source of care over time", "Usual provider of care index"],
+            ["Comprehensiveness", "Most needs met within primary care", "Proportion managed without referral"],
+            ["Coordination", "Linking care given elsewhere", "Referral replies received and acted on"],
+            ["Derivative attributes", "Family, community and cultural competence", "Home visits and register coverage"],
+          ],
+        },
+        {
+          heading: "Family practice versus specialist practice",
+          columns: ["Feature", "Family practice", "Specialist practice"],
+          rows: [
+            ["Patient at presentation", "Undifferentiated, early, often self-limiting", "Filtered and already labelled"],
+            ["Prior probability of serious disease", "Low", "High"],
+            ["Unit of care", "Person and family over time", "Organ or disease episode"],
+            ["Main diagnostic tools", "History, relationship and time", "Investigation and procedure"],
+            ["End point of a visit", "Safe plan, safety net, review date", "A definitive diagnosis"],
+            ["Relationship", "Continuous and open-ended", "Episodic, bounded by referral"],
+          ],
+        },
+        {
+          heading: "Key names and dates to quote",
+          columns: ["Concept", "Author and year", "One-line meaning"],
+          rows: [
+            ["Biopsychosocial model", "Engel 1977", "Disease, illness and context together"],
+            ["Ecology of medical care", "White 1961, Green 2001", "1000-750-250-9-5-1 per month"],
+            ["Iceberg of disease", "Last 1963", "Most disease lies below the waterline"],
+            ["Inverse care law", "Tudor Hart 1971", "Care varies inversely with need"],
+            ["Quaternary prevention", "Jamoulle", "Protect from overdiagnosis and overtreatment"],
+            ["Core attributes", "Starfield 1998", "First contact, continuity, comprehensiveness, coordination"],
+          ],
+        },
+      ],
+      remember: [
+        "Open with: family medicine is **the only specialty defined by a relationship**.",
+        "Starfield's **four Cs**: first Contact, Continuity, Comprehensiveness, Coordination.",
+        "McWhinney principle 1, **commitment to the person**, is the root of all the others.",
+        "Marinker: tolerate uncertainty, explore probability, **marginalise danger**.",
+        "Ecology of care: **1000-750-250-9-5-1**.",
+        "Low prevalence lowers PPV, so blanket testing in primary care gives false positives.",
+        "Arogya Mandirs deliver **12 service packages** of comprehensive primary care.",
+      ],
+    },
     master: {
       heading: "Master revision table - definition and principles of family medicine",
       columns: ["Aspect", "High-yield points"],
@@ -54,6 +198,148 @@ const revision: RevisionSet = {
 
   "fm-principles-consultation": {
     checked: "2026-10",
+    notes: {
+      sections: [
+        {
+          title: "Definition and key facts",
+          points: [
+            "The **consultation** is the central procedure of family medicine.",
+            "It turns a problem into a **shared plan**, covering both disease and illness.",
+            "Communication is **a clinical skill, not a personality trait** (Kurtz); it can be taught and assessed.",
+            "Good skill improves accuracy, adherence and satisfaction, and reduces complaints and litigation.",
+            "The average Indian primary care consultation lasts **about 2 minutes** (Irving 2017).",
+          ],
+        },
+        {
+          title: "Classification that matters",
+          points: [
+            "**Descriptive** model: Byrne and Long 1976, six phases from 2500 recorded consultations.",
+            "**Task-based** models: Stott and Davis 1979 and Pendleton 1984.",
+            "**Flow and self-care** model: Neighbour 1987, five checkpoints.",
+            "**Teaching and assessment** model: Calgary-Cambridge, Kurtz and Silverman 1996.",
+            "**Relationship** model: Balint 1957; brief tools are BATHE and SPIKES.",
+          ],
+        },
+        {
+          title: "Calgary-Cambridge guide",
+          points: [
+            "Five stages: **initiating, gathering information, examination, explanation and planning, closing**.",
+            "Two threads run throughout: **providing structure** and **building the relationship**.",
+            "Draw it as five boxes with two vertical bars alongside.",
+            "Gathering moves along the **open-to-closed cone** of questions.",
+            "Explanation uses **chunking and checking**, with teach-back to confirm understanding.",
+          ],
+        },
+        {
+          title: "Pendleton, Stott and Davis, Neighbour, Balint",
+          points: [
+            "Pendleton task 1: the reason for attendance, with **ICE and effects** on life.",
+            "Stott and Davis four areas include **help-seeking behaviour** and **opportunistic health promotion**.",
+            "Neighbour's checkpoints end with **housekeeping**, the doctor clearing emotions before the next patient.",
+            "Balint: the **doctor as a drug**, with a dose and side effects.",
+            "Balint's **collusion of anonymity**: responsibility diffuses among many specialists.",
+            "Balint's **entry ticket**: the presenting complaint may hide the real problem.",
+          ],
+        },
+        {
+          title: "Opening and ICE",
+          points: [
+            "Doctors interrupt after **11-18 seconds**; uninterrupted patients finish in **about 90 seconds**.",
+            "This uninterrupted opening is called the **golden minute**.",
+            "Ask 'is there anything else?' early to prevent the **door-handle complaint**.",
+            "**Ideas**: 'What do you think is causing this?'",
+            "**Concerns**: 'Is there anything in particular you are worried about?'",
+            "**Expectations**: 'What were you hoping we could do today?'",
+            "Weave ICE into the history with genuine curiosity; never recite it as a script.",
+          ],
+        },
+        {
+          title: "Closing and safety netting",
+          points: [
+            "Close with a summary, the next steps and a final check for other concerns.",
+            "Safety net covers **what to expect, what is unexpected, what to do, where and by when**.",
+            "An **unrecorded safety net** cannot be proved if the outcome is challenged.",
+            "Add one preventive item: BP, sugar, tobacco or vaccine due.",
+          ],
+        },
+        {
+          title: "Behaviour change tools",
+          points: [
+            "**BATHE**: Background, Affect, Trouble, Handling, Empathy - a one-minute psychosocial screen.",
+            "Motivational interviewing uses **OARS**: open questions, affirmations, reflections, summaries.",
+            "MI principles: express empathy, develop discrepancy, roll with resistance, support self-efficacy.",
+            "**Stages of change** (Prochaska and DiClemente) decide the clinician's task at each visit.",
+            "Transactional analysis: aim for **adult-to-adult** transactions, not parent-child.",
+          ],
+        },
+        {
+          title: "Special groups",
+          points: [
+            "**Family members** usually attend; confirm the patient is the decision maker.",
+            "Use a trained interpreter, not a child, and confirm by teach-back.",
+            "**Somatising patient**: accept symptoms are real and explain a mechanism.",
+            "If family asks to withhold a diagnosis, explore why; **never lie to a patient who asks**.",
+            "Teleconsultation follows **Telemedicine Practice Guidelines 2020**: identify, consent and record.",
+          ],
+        },
+        {
+          title: "Complications and red flags",
+          points: [
+            "A serious complaint raised at the door must be **dealt with now**, not deferred.",
+            "Suicidal intent or plan needs **same-day mental health assessment**.",
+            "Repeated childhood injuries that do not fit the story need reporting under **POCSO**.",
+            "Threatened violence: leave, summon help and record the incident.",
+          ],
+        },
+      ],
+      tables: [
+        {
+          heading: "Consultation models at a glance",
+          columns: ["Model", "Author and year", "Structure", "Best used for"],
+          rows: [
+            ["Six phases", "Byrne and Long, 1976", "Relating to terminating", "Describing what happens"],
+            ["Four areas", "Stott and Davis, 1979", "Presenting, help-seeking, continuing, promotion", "Opportunistic prevention"],
+            ["Seven tasks", "Pendleton, 1984", "Reason with ICE to relationship", "Setting consultation goals"],
+            ["Five checkpoints", "Neighbour, 1987", "Connect, summarise, hand over, safety net, housekeeping", "Flow and doctor self-care"],
+            ["Calgary-Cambridge", "Kurtz and Silverman, 1996", "Five stages plus two threads", "Teaching and OSCE"],
+            ["BATHE", "Stuart and Lieberman", "Background, affect, trouble, handling, empathy", "One-minute psychosocial screen"],
+          ],
+        },
+        {
+          heading: "A 10-minute consultation step by step",
+          columns: ["Stage", "Key phrase", "Common error"],
+          rows: [
+            ["Initiate", "What brings you in today?", "Interrupting within 20 seconds"],
+            ["Agenda", "Is there anything else today?", "Real reason surfaces at the door"],
+            ["Gather", "What were you worried it might be?", "Only closed questions"],
+            ["Summarise", "Let me check I have this right", "Examining the wrong thing"],
+            ["Explain and plan", "Which of these would suit you?", "Jargon, ignoring cost"],
+            ["Close", "Come back at once if...", "Vague or unrecorded safety net"],
+          ],
+        },
+        {
+          heading: "Stages of change and the clinician's task",
+          columns: ["Stage", "Patient's position", "Clinician task"],
+          rows: [
+            ["Precontemplation", "No intention in next 6 months", "Raise awareness, 5 Rs for tobacco"],
+            ["Contemplation", "Ambivalent, intends within 6 months", "Motivational interviewing, pros and cons"],
+            ["Preparation", "Intends to act within 30 days", "Agree a date and plan"],
+            ["Action", "Changed for under 6 months", "Support, drugs, coping skills"],
+            ["Maintenance", "Sustained over 6 months", "Relapse prevention"],
+            ["Relapse", "Back to old behaviour", "Normalise and re-enter the cycle"],
+          ],
+        },
+      ],
+      remember: [
+        "Calgary-Cambridge: **five boxes, two vertical bars** (structure and relationship).",
+        "ICE = **Ideas, Concerns, Expectations**, plus effects on daily life.",
+        "Golden minute: interrupted at 11-18 seconds, would have finished in about 90.",
+        "BATHE: **Background, Affect, Trouble, Handling, Empathy**.",
+        "MI uses **OARS**: Open questions, Affirmations, Reflections, Summaries.",
+        "Neighbour's **housekeeping** is the model's answer to burnout.",
+        "Collusion of anonymity is the argument for continuity.",
+      ],
+    },
     master: {
       heading: "Master revision table - the consultation, models and communication skills",
       columns: ["Aspect", "High-yield points"],
@@ -107,6 +393,132 @@ const revision: RevisionSet = {
 
   "fm-principles-continuity": {
     checked: "2026-10",
+    notes: {
+      sections: [
+        {
+          title: "Definition and key facts",
+          points: [
+            "**First contact**: any new problem reaches the practice without referral or filter.",
+            "**Continuity (longitudinality)**: a regular source of care used over time by a defined population.",
+            "**Comprehensiveness**: services wide enough to meet all common needs across the life cycle.",
+            "**Coordination**: integrating all care received elsewhere into one plan one doctor owns.",
+            "Together these are **Starfield's four Cs** of primary care.",
+          ],
+        },
+        {
+          title: "Classification that matters",
+          points: [
+            "Haggerty's **three types of continuity**: informational, management and relational.",
+            "**Informational**: the data travel, through one cumulative record and problem list.",
+            "**Management**: a consistent, agreed plan across providers, through protocols and letters.",
+            "**Relational**: an ongoing personal relationship; this one is **unique to family medicine**.",
+            "Penchansky's **five As of access**: availability, accessibility, affordability, accommodation, acceptability.",
+          ],
+        },
+        {
+          title: "Why continuity matters",
+          points: [
+            "Higher continuity gave **lower mortality in 18 of 22 studies** (Pereira Gray 2018).",
+            "It also brings fewer admissions, better adherence and **lower cost**.",
+            "The benefit **grows with the length of the relationship**.",
+            "Continuity makes **time a safe test**, because review is against the same baseline.",
+            "Collusion of anonymity: with many specialists, **no one owns the decision**.",
+          ],
+        },
+        {
+          title: "First contact and comprehensiveness",
+          points: [
+            "First contact is a **triage task** on unsorted, low-prevalence problems.",
+            "**Gatekeeping** cuts costs without worse outcomes, but only when the gate is truly open.",
+            "Wider scope of the family physician links to **lower spending and fewer admissions**.",
+            "A **very high referral rate** signals poor comprehensiveness.",
+            "About one in four Indians over 60 has **two or more chronic diseases** (LASI).",
+          ],
+        },
+        {
+          title: "Making the four Cs work",
+          points: [
+            "**Register the population** with family folders so you have a denominator.",
+            "Keep one record per family and one problem list per person, with a **drug list on page one**.",
+            "Give every chronic patient a **named doctor**; keep **open access** for acute illness.",
+            "Keep **recall registers** for antenatal, immunisation, diabetes, hypertension and TB defaulters.",
+            "Refer with a structured letter, file the reply and act on it.",
+            "**Reconcile medicines within a week** of every discharge.",
+          ],
+        },
+        {
+          title: "Implementation in India",
+          points: [
+            "First contact is often a **chemist or informal provider**; compete on availability, cost and trust.",
+            "Arogya Mandirs deliver **12 service packages**, with enumeration and the **CBAC** checklist.",
+            "Continuity tools include MCP card, NCD portal, **Ni-kshay**, **U-WIN** and the **ABHA** number.",
+            "Staff rotation, transfers, migration and walk-in clinics threaten continuity.",
+            "**Acceptability** (female attendant, language, respect) is often the real barrier.",
+          ],
+        },
+        {
+          title: "Complications and red flags",
+          points: [
+            "Transitions of care (discharge, transfer) are **the danger points** for drug errors.",
+            "A **TB patient interrupting treatment** must be traced through Ni-kshay the same week.",
+            "Missed immunisation or antenatal visits need **defaulter tracing** as a programme duty.",
+            "A referral with no reply must be chased; open loops lose cancers and results.",
+            "Rigid continuity must never delay a sick child's acute care.",
+          ],
+        },
+        {
+          title: "Referral and follow-up",
+          points: [
+            "Audit one C each year, such as the **usual provider of care index**.",
+            "UPC index = **visits with the usual doctor divided by all visits**.",
+            "Example: 7 of 10 visits with Dr A gives a UPC index of **0.70**.",
+            "Audit the share of discharges **reconciled within 7 days**.",
+            "In multimorbidity, agree priorities, **deprescribe**, and set one combined review.",
+          ],
+        },
+      ],
+      tables: [
+        {
+          heading: "Three types of continuity",
+          columns: ["Type", "What travels", "Practical tool", "Failure looks like"],
+          rows: [
+            ["Informational", "History, drugs, results", "One record, problem list, ABHA-linked EMR", "Every clinician restarts the history"],
+            ["Management", "A consistent agreed plan", "Protocols, care plan, back-referral letters", "Contradictory advice, duplicate tests"],
+            ["Relational", "The person who knows the patient", "Named doctor, personal list, family folder", "Different doctor each visit, no baseline"],
+          ],
+        },
+        {
+          heading: "Building the four Cs into a practice",
+          columns: ["Attribute", "Practical step", "Indicator to audit"],
+          rows: [
+            ["First contact", "Walk-in sick slots, evening hours, teleconsult", "Waiting time, new problems seen here"],
+            ["Continuity", "Named doctor for every chronic patient", "UPC index against a target (e.g. 0.75)"],
+            ["Comprehensiveness", "Offer all 12 packages with kit and drugs", "Referral rate against case mix"],
+            ["Coordination", "Structured referral and discharge reconciliation", "Discharges reconciled within 7 days"],
+          ],
+        },
+        {
+          heading: "Penchansky's five As of access",
+          columns: ["Dimension", "Meaning", "Indian example"],
+          rows: [
+            ["Availability", "Enough services and staff", "Doctor posted and present at the PHC"],
+            ["Accessibility", "Distance and travel", "Arogya Mandir within the village"],
+            ["Affordability", "Cost to the family", "Free drugs, no lost daily wage"],
+            ["Accommodation", "Hours and appointment system", "Evening OPD for working patients"],
+            ["Acceptability", "Gender, language, caste, stigma", "Female attendant, local language, privacy"],
+          ],
+        },
+      ],
+      remember: [
+        "Four Cs: **first Contact, Continuity, Comprehensiveness, Coordination**.",
+        "Continuity types: **I M R** - Informational, Management, Relational.",
+        "Continuity saves lives: **lower mortality in 18 of 22 studies**.",
+        "UPC index = visits with usual doctor divided by all visits.",
+        "Comprehensiveness is measured by **what you do not refer**.",
+        "Named doctor for chronic care, **open access for acute illness**.",
+        "Medication reconciliation after discharge is the highest-yield coordination act.",
+      ],
+    },
     master: {
       heading: "Master revision table - continuity, comprehensiveness, coordination, first contact",
       columns: ["Aspect", "High-yield points"],
@@ -155,6 +567,150 @@ const revision: RevisionSet = {
 
   "fm-principles-family-unit": {
     checked: "2026-10",
+    notes: {
+      sections: [
+        {
+          title: "Definition and key facts",
+          points: [
+            "A **family** is a group related by blood, marriage or adoption, usually sharing a household.",
+            "It is the **primary unit of care** because health habits and illness behaviour are learned there.",
+            "The family shapes **exposure, behaviour, adherence and support**.",
+            "Family support is the **strongest single predictor of adherence** in chronic disease.",
+            "The standard set is **genogram, life cycle, APGAR and SCREEM**.",
+          ],
+        },
+        {
+          title: "Classification that matters",
+          points: [
+            "Types (Park): **nuclear, joint, three-generation, extended, single-parent and blended**.",
+            "A **skipped-generation family** has grandparents raising children after parents migrate.",
+            "Many Indian homes are nominally nuclear but **function within a joint network**.",
+            "Life cycle: **Duvall's eight stages**, or Carter and McGoldrick's six stages.",
+            "Socio-economic class: **modified Kuppuswamy** for urban, **modified BG Prasad** for rural families.",
+          ],
+        },
+        {
+          title: "How family affects health",
+          points: [
+            "**Shared exposure**: genes, kitchen, water, smoke and infection are common to all members.",
+            "A smear-positive TB case means household contacts need screening and **TB preventive treatment**.",
+            "**Shared behaviour**: the person who cooks controls the diabetic diet.",
+            "Illness burden shifts to **whoever has least power**, such as a daughter leaving school.",
+            "The family can also harm through **violence, abuse, neglect and dowry stress**.",
+          ],
+        },
+        {
+          title: "Stress and crisis models",
+          points: [
+            "**Horizontal stressors** are predictable transitions such as birth, marriage and retirement.",
+            "**Vertical stressors** are inherited patterns, secrets and myths.",
+            "A crisis usually occurs **where horizontal and vertical stressors meet**.",
+            "**Hill's ABCX**: stressor (A), resources (B) and perception (C) produce the crisis (X).",
+            "McCubbin's **double ABCX** adds pile-up of stressors and adaptation over time.",
+            "Holmes and Rahe: **over 300 life-change units** in a year raises illness risk.",
+          ],
+        },
+        {
+          title: "Family APGAR and SCREEM",
+          points: [
+            "**Family APGAR (Smilkstein 1978)**: Adaptation, Partnership, Growth, Affection, Resolve.",
+            "Each item scores **2, 1 or 0**, giving a total of 0-10.",
+            "**7-10 functional, 4-6 moderately dysfunctional, 0-3 severely dysfunctional**.",
+            "APGAR measures **satisfaction, not safety**; it does not detect violence.",
+            "**SCREEM**: Social, Cultural, Religious, Economic, Educational, Medical.",
+            "Each SCREEM domain is marked **resource or pathology**, never given a number.",
+          ],
+        },
+        {
+          title: "Family assessment step by step",
+          points: [
+            "Draw a **three-generation genogram** with standard symbols, ages inside, and index patient marked.",
+            "Enclose the household with a **dotted line**; date it and name the informant.",
+            "Place the family on the **life cycle** and list the expected problems of that stage.",
+            "Draw a **family life line** linking life events to symptom onset.",
+            "Score APGAR, run through SCREEM, and classify socio-economic status with current slabs.",
+            "**Screen the caregiver** for burden and depression at the same visit.",
+            "Write a **family diagnosis and plan** with named tasks and a review date.",
+          ],
+        },
+        {
+          title: "Other tools",
+          points: [
+            "**Ecomap**: family in a central circle with lines to school, work, temple and PHC.",
+            "**Family circle (Thrower)** records the patient's own view of closeness.",
+            "**PRACTICE**: Presenting problem, Roles, Affect, Communication, Time, Illness, Coping, Ecology.",
+            "Family psychoeducation in schizophrenia **roughly halves relapse**.",
+          ],
+        },
+        {
+          title: "Complications and red flags",
+          points: [
+            "Child abuse or neglect must be reported under **POCSO 2012** and the Juvenile Justice Act.",
+            "Intimate partner violence: **no joint family conference**; assess danger and offer PWDVA help.",
+            "A minor girl being married: involve the **Child Marriage Prohibition Officer**.",
+            "Any request to know fetal sex is illegal under the **PCPNDT Act 1994**.",
+            "Neglect of an elder is reported under the **Senior Citizens Act 2007**.",
+          ],
+        },
+        {
+          title: "Pitfalls",
+          points: [
+            "Describing a genogram instead of **drawing it**; fewer than three generations shows no pattern.",
+            "Treating the APGAR score as a diagnosis; a low score means **explore**.",
+            "Using **out-of-date Kuppuswamy slabs**, which misclassify families upward.",
+            "Assuming a big family always means more support.",
+          ],
+        },
+      ],
+      tables: [
+        {
+          heading: "Family APGAR (Smilkstein)",
+          columns: ["Component", "Satisfied with how my family...", "Score"],
+          rows: [
+            ["Adaptation", "helps me when I turn to them", "2, 1 or 0"],
+            ["Partnership", "talks things over and shares problems", "2, 1 or 0"],
+            ["Growth", "supports new activities or directions", "2, 1 or 0"],
+            ["Affection", "expresses affection and responds to emotions", "2, 1 or 0"],
+            ["Resolve", "shares time together with me", "2, 1 or 0"],
+            ["Total 7-10 / 4-6 / 0-3", "Functional / moderate / severe dysfunction", "Out of 10"],
+          ],
+        },
+        {
+          heading: "Duvall's family life cycle",
+          columns: ["Stage", "Family position", "Health issues and guidance"],
+          rows: [
+            ["1", "Couple without children", "Preconception care, contraception, infertility"],
+            ["2", "Childbearing (oldest 0-30 months)", "Antenatal care, postpartum depression, immunisation"],
+            ["3", "Preschool (2.5-6 years)", "Diarrhoea, respiratory infection, malnutrition, injuries"],
+            ["4", "School children (6-13 years)", "Anaemia, worms, vision, school problems"],
+            ["5", "Teenagers (13-20 years)", "Substance use, sexual health, mental health"],
+            ["6", "Launching", "Empty-nest depression, menopause, early NCDs"],
+            ["7", "Middle-aged parents", "Hypertension, diabetes, cancer screening, elder care"],
+            ["8", "Ageing family", "Dementia, falls, polypharmacy, bereavement"],
+          ],
+        },
+        {
+          heading: "Genogram conventions",
+          columns: ["Item", "Convention", "Common error"],
+          rows: [
+            ["Index patient", "Double outline or arrow; square male, circle female", "Index patient not marked"],
+            ["Children", "Below marriage line, eldest on the left", "Birth order scrambled"],
+            ["Separation and divorce", "One stroke separation, two strokes divorce", "Breaks left out"],
+            ["Death", "Cross in the symbol with age at death", "Age at death omitted"],
+            ["Household", "Dotted line around those living together", "Missing in a joint family"],
+            ["Label", "Key, date drawn, informant", "Undated genogram"],
+          ],
+        },
+      ],
+      remember: [
+        "Genogram: **three generations, ages inside, index marked, household dotted, dated**.",
+        "APGAR: **Adaptation, Partnership, Growth, Affection, Resolve** - 7-10, 4-6, 0-3.",
+        "SCREEM is **resource or pathology** in six domains, never a number.",
+        "Crisis = **horizontal stressor meeting vertical stressor**.",
+        "**Kuppuswamy urban, BG Prasad rural**, both revised yearly with the CPI.",
+        "The **caregiver is a patient too**.",
+      ],
+    },
     master: {
       heading: "Master revision table - family as the unit of care",
       columns: ["Aspect", "High-yield points"],
@@ -207,6 +763,133 @@ const revision: RevisionSet = {
 
   "fm-principles-records-audit": {
     checked: "2026-10",
+    notes: {
+      sections: [
+        {
+          title: "Definition and key facts",
+          points: [
+            "A **medical record** is a contemporaneous, legible, dated, timed and signed account of each contact.",
+            "It carries **continuity, communication, medico-legal defence** and the practice denominator.",
+            "**Clinical audit** systematically reviews care against **explicit criteria** and implements change.",
+            "A **criterion** says what should happen; a **standard** says how often and by when.",
+            "Example: 'every diabetic has an HbA1c in 6 months'; standard **90%**.",
+          ],
+        },
+        {
+          title: "Classification that matters",
+          points: [
+            "**Weed's POMR (1968)** has four parts: database, problem list, initial plans, progress notes.",
+            "**Donabedian (1966)** classifies criteria as **structure, process and outcome**.",
+            "The audit cycle has **five stages**, and repeated loops form an **audit spiral**.",
+            "Standards may be minimum, ideal or optimum; **never set them at 100%**.",
+          ],
+        },
+        {
+          title: "The problem-oriented record",
+          points: [
+            "The **database** is collected once and updated, not repeated each visit.",
+            "The **problem list** is the index page: numbered, dated, never erased.",
+            "Each problem is held at the **highest level of certainty currently justified**.",
+            "A problem can be a symptom, abnormal result, disability or **social issue**.",
+            "Initial plans have three headings: **diagnostic, therapeutic and patient education**.",
+            "Progress notes are written as **SOAP**: Subjective, Objective, Assessment, Plan.",
+          ],
+        },
+        {
+          title: "Coding and digital standards",
+          points: [
+            "**ICD-11** was adopted by WHO in 2019 and is in force from 2022.",
+            "**ICPC-2 (WONCA)** codes the reason for encounter, not only the diagnosis.",
+            "ICPC-2 is biaxial: **17 chapters by body system and 7 components**.",
+            "India's **EHR Standards 2016** specify SNOMED CT, LOINC and HL7 FHIR.",
+          ],
+        },
+        {
+          title: "Running an audit step by step",
+          points: [
+            "Choose a topic of **high volume, risk or cost**, such as HbA1c monitoring.",
+            "Set the criterion and standard from a guideline.",
+            "Measure **50-100 consecutive records**, not just the memorable patients.",
+            "Example first cycle: 31 of 50 = **62%**, a gap of 28 points from 90%.",
+            "Analyse causes: no recall list, test cost, no prompt on the card.",
+            "Make **specific, owned, dated changes** such as a named nurse's recall register.",
+            "**Re-audit** with the same method: 46 of 50 = **92%**, standard met.",
+          ],
+        },
+        {
+          title: "Related quality tools",
+          points: [
+            "**Process criteria are preferred** in a small practice: smaller samples, less confounding.",
+            "**Significant event analysis** examines one serious case in structured, blame-free detail.",
+            "**PDSA cycles** (Plan-Do-Study-Act) are small rapid tests of change.",
+            "Audit asks 'are we doing what is right?'; research asks **'what is right?'**.",
+            "Research needs **ethics committee approval and consent**; audit needs institutional approval.",
+          ],
+        },
+        {
+          title: "Law and systems in India",
+          points: [
+            "**IMC Regulations 2002, clause 1.3**: keep records **3 years**, give copies within **72 hours**.",
+            "Under the **Consumer Protection Act 2019**, if it is not written, it was not done.",
+            "Correct errors with a single line, initials and date; **never overwrite or backdate**.",
+            "The **DPDP Act 2023** covers health data: individual logins and audit trails.",
+            "NQAS and NABH entry-level standards require audits, cold-chain logs and BMW segregation.",
+          ],
+        },
+        {
+          title: "Complications and red flags",
+          points: [
+            "Release records to police or insurers only on **court summons or written consent**.",
+            "Never disclose HIV, mental illness or abortion details to family without consent.",
+            "Altering notes after an adverse event turns a defensible case into **misconduct**.",
+            "An audit that randomises or adds an intervention **has become research**.",
+          ],
+        },
+      ],
+      tables: [
+        {
+          heading: "Weed's problem-oriented medical record",
+          columns: ["Component", "What it contains", "Value in family practice"],
+          rows: [
+            ["Database", "History, drugs, allergies, immunisation, social data", "Collected once and updated"],
+            ["Problem list", "Numbered, dated active and inactive problems", "Index page readable in 2 minutes"],
+            ["Initial plans", "Diagnostic, therapeutic and education plan", "Shows reasoning and what patient was told"],
+            ["Progress notes", "SOAP entries against numbered problems", "One problem followed across years"],
+          ],
+        },
+        {
+          heading: "Donabedian criteria - diabetes example",
+          columns: ["Type", "Example criterion", "Suggested standard"],
+          rows: [
+            ["Structure", "Calibrated glucometer with in-date strips", "100% of clinic days"],
+            ["Process", "HbA1c recorded in the last 6 months", "90%"],
+            ["Process", "Documented annual foot examination", "80% within 12 months"],
+            ["Outcome", "HbA1c under 7%", "50% within 12 months"],
+            ["Outcome", "New foot ulcer in the audit year", "Under 2% per year"],
+          ],
+        },
+        {
+          heading: "One complete audit cycle",
+          columns: ["Stage", "Worked example", "Common error"],
+          rows: [
+            ["1. Topic", "HbA1c monitoring in type 2 diabetes", "Topic too broad to finish"],
+            ["2. Criterion and standard", "HbA1c in last 6 months; 90%", "Standard set at 100%"],
+            ["3. Measure", "31 of 50 = 62%", "Choosing remembered patients"],
+            ["4. Analyse", "No recall list, test cost", "Blaming individuals"],
+            ["5. Change", "Named nurse recall list, card field", "A notice on the wall"],
+            ["6. Re-audit", "46 of 50 = 92%", "Never re-auditing"],
+          ],
+        },
+      ],
+      remember: [
+        "**The mark is in re-audit**: without it, an audit is only a survey.",
+        "POMR: **Database, Problem list, Initial plans, Progress notes**.",
+        "**SOAP**: Subjective, Objective, Assessment, Plan.",
+        "Donabedian: **Structure, Process, Outcome**; prefer process in a small practice.",
+        "ICPC-2: **17 chapters x 7 components**.",
+        "IMC 2002: keep **3 years**, copy within **72 hours**.",
+      ],
+    },
     master: {
       heading: "Master revision table - medical records and the clinical audit cycle",
       columns: ["Aspect", "High-yield points"],
@@ -257,6 +940,156 @@ const revision: RevisionSet = {
 
   "fm-principles-ebm": {
     checked: "2026-10",
+    notes: {
+      sections: [
+        {
+          title: "Definition and key facts",
+          points: [
+            "Sackett 1996: the **conscientious, explicit and judicious use of current best evidence** for individual patients.",
+            "The **three-legged stool**: research evidence, clinical expertise and **patient values**.",
+            "Omitting patient values loses the applied mark.",
+            "EBM is **not cookbook medicine** and not cost-cutting.",
+          ],
+        },
+        {
+          title: "Classification that matters",
+          points: [
+            "The **five As**: Ask, Acquire, Appraise, Apply, Assess.",
+            "**Oxford CEBM** ranks evidence in levels 1-5, with grades A-D.",
+            "**GRADE** rates certainty as **high, moderate, low or very low**.",
+            "GRADE recommendations are **strong ('we recommend')** or **conditional ('we suggest')**.",
+            "RCTs start high in GRADE; observational studies start low.",
+            "Level describes the study; **grade describes what you should do**.",
+          ],
+        },
+        {
+          title: "Asking and acquiring",
+          points: [
+            "**Background questions** are answered from a textbook.",
+            "**Foreground questions** concern a decision and take **PICO** form.",
+            "PICO: **Patient, Intervention, Comparison, Outcome**; add T for time.",
+            "Choose a **patient-important outcome**, not a surrogate like albumin excretion.",
+            "Search pre-appraised sources first: Cochrane, NICE, WHO, **ICMR Standard Treatment Workflows**.",
+            "Match design to question: therapy needs an RCT; prognosis needs an **inception cohort**.",
+          ],
+        },
+        {
+          title: "Appraising a trial",
+          points: [
+            "Check true randomisation, **allocation concealment** and blinding.",
+            "Allocation concealment is **most strongly linked to exaggerated effects**.",
+            "**Intention-to-treat** analysis preserves randomisation; per-protocol reintroduces bias.",
+            "**Attrition over 20%** seriously threatens validity.",
+            "Check the 95% CI, CTRI registration and **CONSORT** reporting.",
+            "Distrust subgroup analyses and trials **stopped early for benefit**.",
+          ],
+        },
+        {
+          title: "Diagnostic test numbers",
+          points: [
+            "Sensitivity and specificity **belong to the test**.",
+            "PPV and NPV **depend on prevalence**, so they fall apart in low-prevalence clinics.",
+            "**SnNout**: a sensitive test, when negative, rules out.",
+            "**SpPin**: a specific test, when positive, rules in.",
+            "LR+ over **10** or LR- under **0.1** shifts probability conclusively.",
+            "Post-test odds = **pre-test odds x likelihood ratio**; Fagan's nomogram does it graphically.",
+          ],
+        },
+        {
+          title: "Treatment effect numbers",
+          points: [
+            "**ARR = CER - EER**; **NNT = 1/ARR**, rounded up, with outcome and time.",
+            "Example: 20% vs 15% gives **ARR 5%, RRR 25%, NNT 20**.",
+            "Relative measures **hide baseline risk**; always convert to ARR and NNT.",
+            "**Odds ratio = ad/bc**, close to RR only when the outcome is rare.",
+            "A 95% CI crossing **1 for ratios** or **0 for differences** is not significant.",
+          ],
+        },
+        {
+          title: "Systematic reviews and the forest plot",
+          points: [
+            "Reviews follow **PRISMA 2020** and are registered on PROSPERO.",
+            "Each horizontal line is one study's CI; **square size is its weight**.",
+            "The **diamond** is the pooled estimate; touching the line of no effect means not significant.",
+            "I-squared **75-100%** means considerable heterogeneity.",
+            "An **asymmetric funnel plot** suggests publication bias.",
+          ],
+        },
+        {
+          title: "Implementation in India",
+          points: [
+            "Indian pre-appraised sources: **ICMR STWs**, national programme guidelines and the **NLEM**.",
+            "**CTRI registration** is mandatory for trials in India.",
+            "Check **indirectness** before applying evidence from high-income populations.",
+            "Drug promotion often quotes **RRR, surrogates or subgroups**; read the primary paper.",
+          ],
+        },
+        {
+          title: "Pitfalls",
+          points: [
+            "Treating **surrogate outcomes** as if they were death, stroke or fracture.",
+            "Quoting RRR without ARR is **the commonest way evidence misleads**.",
+            "Confusing statistical with clinical significance; **read the CI**.",
+            "Rare harms cannot be found by RCTs; they need **pharmacovigilance**.",
+          ],
+        },
+      ],
+      tables: [
+        {
+          heading: "Key EBM formulas with worked values",
+          columns: ["Measure", "Formula", "Worked value", "Say it to the patient"],
+          rows: [
+            ["Relative risk reduction", "(CER - EER) / CER", "(20 - 15) / 20 = 25%", "Lowers your risk by a quarter"],
+            ["Absolute risk reduction", "CER - EER", "20% - 15% = 5%", "5 fewer events per 100 over 4 years"],
+            ["Number needed to treat", "1 / ARR", "1 / 0.05 = 20", "Treat 20 for 4 years to help one"],
+            ["Number needed to harm", "1 / absolute risk increase", "1 / 0.02 = 50", "One in 50 gets the side effect"],
+            ["Likelihood ratio positive", "Sens / (1 - spec)", "0.90 / 0.20 = 4.5", "Raises chance from 1 in 10 to 1 in 3"],
+            ["Likelihood ratio negative", "(1 - sens) / spec", "0.10 / 0.80 = 0.125", "A negative lowers the chance moderately"],
+          ],
+        },
+        {
+          heading: "Worked 2x2 table (1000 patients, prevalence 10%)",
+          columns: ["Measure", "Formula", "Result"],
+          rows: [
+            ["Sensitivity", "TP / (TP + FN) = 90/100", "90%"],
+            ["Specificity", "TN / (TN + FP) = 720/900", "80%"],
+            ["Positive predictive value", "TP / (TP + FP) = 90/270", "33%"],
+            ["Negative predictive value", "TN / (TN + FN) = 720/730", "99%"],
+          ],
+        },
+        {
+          heading: "Oxford CEBM levels of evidence",
+          columns: ["Level", "Type of evidence", "Grade"],
+          rows: [
+            ["1", "Systematic review of RCTs or RCT with narrow CI", "A"],
+            ["2", "Cohort study or low-quality RCT", "B"],
+            ["3", "Case-control study or its review", "B"],
+            ["4", "Case series, poor cohort or case-control", "C"],
+            ["5", "Expert opinion, physiology, bench research", "D"],
+          ],
+        },
+        {
+          heading: "Question type and best design",
+          columns: ["Question", "Best design", "Appraisal focus"],
+          rows: [
+            ["Therapy", "Systematic review of RCTs or RCT", "Concealment, blinding, ITT, follow-up"],
+            ["Diagnosis", "Cross-sectional, consecutive patients vs reference", "Reference standard in all, blinded"],
+            ["Prognosis", "Inception cohort", "Uniform start, complete follow-up"],
+            ["Harm", "Cohort; case-control if rare", "Comparable groups, confounders"],
+            ["Patient experience", "Qualitative study", "Saturation, reflexivity, triangulation"],
+          ],
+        },
+      ],
+      remember: [
+        "Open with **Sackett 1996**, then the three-legged stool.",
+        "Five As: **Ask, Acquire, Appraise, Apply, Assess**.",
+        "**SnNout and SpPin**.",
+        "Sensitivity and specificity belong to the test; **predictive values to the population**.",
+        "**NNT = 1/ARR**, always with outcome and time period.",
+        "Forest plot: **diamond touching the line** means not significant.",
+        "GRADE: certainty high to very low; recommendations **strong or conditional**.",
+      ],
+    },
     updated: [
       "Cochrane Handbook version 6.5 (2024) replaces 6.4 as the citation for meta-analysis, forest plot and I-squared bands (content unchanged).",
     ],
@@ -311,6 +1144,159 @@ const revision: RevisionSet = {
 
   "fm-principles-research-thesis": {
     checked: "2026-10",
+    notes: {
+      sections: [
+        {
+          title: "Definition and key facts",
+          points: [
+            "**Research** is a systematic, ethically approved study that produces **generalisable knowledge**.",
+            "Audit checks local practice against an existing standard; research finds the standard.",
+            "Most DNB family medicine theses are **cross-sectional**.",
+            "**Thesis acceptance** is a precondition for the final examination.",
+          ],
+        },
+        {
+          title: "Classification that matters",
+          points: [
+            "**Descriptive**: case report, case series, cross-sectional survey, ecological study.",
+            "**Analytical observational**: case-control and cohort studies.",
+            "**Experimental**: RCT, field and community trials; only these **assign the exposure**.",
+            "**Case-control for rare diseases; cohort for rare exposures**.",
+            "RCT variants include crossover, factorial, non-inferiority and **cluster-randomised** trials.",
+            "Qualitative research uses interviews and focus groups of **6-12**, analysed to saturation.",
+          ],
+        },
+        {
+          title: "Sampling",
+          points: [
+            "Define the reference population, **sampling frame** and sampling unit first.",
+            "**Simple random** needs a full list; **systematic** takes every kth after a random start.",
+            "**Stratified** is more precise; **cluster** is cheapest but needs a design effect.",
+            "Non-probability samples (convenience, purposive, snowball) **cannot be generalised** statistically.",
+            "**Snowball** sampling reaches hidden groups such as people who inject drugs.",
+          ],
+        },
+        {
+          title: "Bias and confounding",
+          points: [
+            "A larger sample reduces random error but **never reduces bias**.",
+            "**Berkson's bias**: hospital controls are admitted at different rates.",
+            "**Recall bias**: cases remember exposures better than controls.",
+            "A **confounder** is linked to exposure, causes the outcome, and is **not on the causal pathway**.",
+            "Only **randomisation controls unknown confounders**.",
+            "Type I error is a false positive; **power = 1 - beta**, usually 80%.",
+          ],
+        },
+        {
+          title: "Sample size",
+          points: [
+            "For a prevalence, **n = 4pq/d squared** at 95% confidence.",
+            "Prevalence 20%, precision 5%: n = 4 x 20 x 80 / 25 = **256**.",
+            "Add 10% non-response: 256 / 0.9 = **285**.",
+            "For a mean, **n = 4 x SD squared / d squared**; SD 10, precision 2 gives 100.",
+            "Cluster sampling needs a **design effect**, usually 1.5-2.",
+            "An **underpowered study is unethical**, not merely weak.",
+          ],
+        },
+        {
+          title: "Ethics and consent",
+          points: [
+            "**ICMR National Ethical Guidelines 2017** govern all human research in India.",
+            "**NDCT Rules 2019** govern drug trials, including compensation for injury.",
+            "The ethics committee has **at least 7 members**, an outside chair and a lay person.",
+            "Consent needs **information, comprehension and voluntariness**, with the right to withdraw.",
+            "Use an **impartial witness** for illiterate participants; **assent from children aged 7-18**.",
+            "Register trials in **CTRI before the first participant**.",
+          ],
+        },
+        {
+          title: "Writing the protocol and thesis",
+          points: [
+            "Objectives use measurable verbs like 'to estimate'; **never 'to study'**.",
+            "Objectives, tools, analysis and tables must correspond **one to one**.",
+            "Write the thesis in **IMRAD**: Introduction, Methods, Results, Discussion.",
+            "Report by **STROBE** (observational), **CONSORT 2025** (trials), **PRISMA 2020** (reviews).",
+            "UGC 2018: similarity **up to 10%** carries no penalty.",
+            "ICMJE authorship needs **all four** criteria, including accountability.",
+          ],
+        },
+        {
+          title: "Telemedicine practice",
+          points: [
+            "**Telemedicine Practice Guidelines (25 March 2020)** bind every registered practitioner.",
+            "Consent is **implied when the patient initiates**, explicit when anyone else does.",
+            "**List O** drugs by any mode; **List A** at first video consult or refill.",
+            "**List B** add-ons only at follow-up of a condition diagnosed in person.",
+            "**Schedule X and NDPS drugs** are never prescribed by teleconsultation.",
+            "Arrange an in-person visit if examination is essential or it is an emergency.",
+          ],
+        },
+        {
+          title: "Complications and red flags",
+          points: [
+            "A serious adverse event is reported to ethics committee and CDSCO **within 24 hours**.",
+            "Recruiting before IEC approval cannot be fixed afterwards.",
+            "A notifiable disease found in a survey must still be notified through **IHIP and Ni-kshay**.",
+            "Plagiarism, gift authorship and fabricated data are **misconduct** whatever the intention.",
+          ],
+        },
+      ],
+      tables: [
+        {
+          heading: "Study designs compared",
+          columns: ["Feature", "Cross-sectional", "Case-control", "Cohort", "RCT"],
+          rows: [
+            ["Starting point", "Exposure and outcome together", "Outcome", "Exposure", "Random allocation"],
+            ["Measure", "Prevalence", "Odds ratio", "Incidence, RR, attributable risk", "RR, ARR, NNT"],
+            ["Temporality", "Not established", "Inferred backwards", "Established", "Established"],
+            ["Best for", "Burden, planning", "Rare disease, long latency", "Rare exposure", "Therapy, prevention"],
+            ["Main weakness", "No causal inference", "Recall bias", "Cost, loss to follow-up", "Cost, generalisability"],
+          ],
+        },
+        {
+          heading: "Sample size formulas",
+          columns: ["Purpose", "Formula", "Worked example"],
+          rows: [
+            ["Prevalence, absolute precision", "n = 4pq / d squared", "4 x 20 x 80 / 25 = 256"],
+            ["Prevalence, relative precision", "d = 20% of p", "p 20, d 4: n = 400"],
+            ["Non-response", "n / (1 - non-response)", "256 / 0.9 = 285"],
+            ["Finite population", "n / (1 + (n - 1)/N)", "N 1000: 256 becomes 204"],
+            ["Estimating a mean", "n = 4 x SD squared / d squared", "SD 10, d 2: n = 100"],
+            ["Two proportions", "7.84 x (p1q1 + p2q2) / (p1 - p2) squared", "30% vs 15%: 118 per group"],
+          ],
+        },
+        {
+          heading: "Bias and its control",
+          columns: ["Type", "Example", "Control"],
+          rows: [
+            ["Berkson's (selection)", "Hospital controls admitted at different rates", "Community controls"],
+            ["Neyman's (prevalence-incidence)", "Rapidly fatal cases missed", "Use incident cases"],
+            ["Non-response and attrition", "Defaulters differ from attenders", "Trace defaulters, compare groups"],
+            ["Recall (information)", "Mothers of malformed babies recall drugs", "Records, blind interviewers"],
+            ["Confounding", "Smoking distorts alcohol and lung cancer", "Randomise, restrict, match, stratify"],
+          ],
+        },
+        {
+          heading: "Phases of drug trials",
+          columns: ["Phase", "Participants", "Purpose"],
+          rows: [
+            ["0", "Microdose", "Pharmacokinetics"],
+            ["I", "20-80 healthy volunteers", "Safety and dose"],
+            ["II", "100-300 patients", "Efficacy signal"],
+            ["III", "Large RCTs", "Approval"],
+            ["IV", "Post-marketing", "Rare and late harms"],
+          ],
+        },
+      ],
+      remember: [
+        "**Case-control for rare diseases; cohort for rare exposures**.",
+        "Bias is **not reduced by a bigger sample**; random error is.",
+        "Only **randomisation** controls unknown confounders.",
+        "**n = 4pq/d squared**: p 20%, d 5% gives 256; plus 10% gives 285.",
+        "IEC: **at least 7 members, outside chair, lay person, both sexes**.",
+        "Telemedicine: consent implied if patient initiates; **Schedule X and NDPS never**.",
+      ],
+    },
     master: {
       heading: "Master revision table - research methodology, DNB thesis and telemedicine",
       columns: ["Aspect", "High-yield points"],
@@ -363,6 +1349,144 @@ const revision: RevisionSet = {
 
   "fm-principles-biostatistics": {
     checked: "2026-10",
+    notes: {
+      sections: [
+        {
+          title: "Definition and key facts",
+          points: [
+            "**Biostatistics** collects, summarises and draws inferences from data on living beings.",
+            "**Biological variation** makes every measured value uncertain.",
+            "Naming the **type of variable** first decides both the summary and the test.",
+            "Measure at the highest scale and **categorise only at analysis**.",
+          ],
+        },
+        {
+          title: "Classification that matters",
+          points: [
+            "**Nominal** data have no order, such as sex or blood group.",
+            "**Ordinal** data are ranked with unequal gaps, such as NYHA class.",
+            "**Discrete** data are counts; **continuous** data take any value, like haemoglobin.",
+            "Scales: nominal, ordinal, **interval** (arbitrary zero) and **ratio** (true zero).",
+          ],
+        },
+        {
+          title: "Central tendency and spread",
+          points: [
+            "**Mean for normal data, median for skewed data, mode for nominal data**.",
+            "In a **right skew, mean > median > mode**.",
+            "Quote the median with the **interquartile range** (middle 50%).",
+            "**Coefficient of variation = SD/mean x 100**; it is unit-free.",
+            "Normal curve: **68.3%** within 1 SD, **95%** within 1.96 SD, **99.7%** within 3 SD.",
+          ],
+        },
+        {
+          title: "SD, SE and confidence intervals",
+          points: [
+            "**SD describes the spread of individuals**; it does not shrink with sample size.",
+            "**SEM = SD / square root of n**; it describes the precision of the estimate.",
+            "**95% CI = estimate plus or minus 1.96 SE**.",
+            "A CI including **0 for a difference** or **1 for a ratio** is not significant.",
+            "A wide CI means an imprecise, underpowered study.",
+          ],
+        },
+        {
+          title: "Hypothesis testing",
+          points: [
+            "The **null hypothesis** states there is no difference.",
+            "The **p value** is the chance of a result this extreme **if the null were true**.",
+            "**Type I error** (alpha, 0.05) is a false positive; **type II** (beta, 0.2) a false negative.",
+            "**Power = 1 - beta**, usually 80%.",
+            "Twenty tests at 0.05 expect one false positive; use **Bonferroni** correction.",
+          ],
+        },
+        {
+          title: "Choosing a test",
+          points: [
+            "Ask four questions: **type of outcome, number of groups, paired or not, normal or not**.",
+            "**Parametric** tests (t test, ANOVA) need roughly normal continuous data.",
+            "**Non-parametric** tests (Mann-Whitney, Wilcoxon, Kruskal-Wallis) use ranks.",
+            "Use **Fisher's exact test** if over 20% of cells have expected counts under 5.",
+            "**r squared is the variance explained**; correlation is not causation.",
+            "**Kappa** measures agreement beyond chance; **0.61-0.80** is substantial.",
+          ],
+        },
+        {
+          title: "Rates and ratios",
+          points: [
+            "A **rate** adds time and a multiplier, such as per 1000 per year.",
+            "**Prevalence = incidence x average duration**.",
+            "**IMR per 1000 live births**; **MMR per 100,000 live births**.",
+            "India's MMR is **88** in SRS 2021-23, down from 93.",
+            "Case fatality rate measures **severity, not frequency**.",
+            "Compare populations of different ages only after **standardisation**; indirect gives the SMR.",
+          ],
+        },
+        {
+          title: "Data display",
+          points: [
+            "**Bar chart** for nominal data, with gaps between bars.",
+            "**Histogram** for continuous data, with no gaps; area equals frequency.",
+            "**Scatter diagram** for two continuous variables; line graph for trends.",
+          ],
+        },
+        {
+          title: "Pitfalls",
+          points: [
+            "Using the **mean for skewed data**, such as hospital stay.",
+            "Quoting **SEM where SD is meant** to make data look tight.",
+            "Giving a p value **without effect size or CI**.",
+            "**Absence of evidence is not evidence of absence**.",
+            "Repeated t tests across three groups instead of **ANOVA**.",
+          ],
+        },
+      ],
+      tables: [
+        {
+          heading: "Type of variable, summary and usual test",
+          columns: ["Type of data", "Example", "Central tendency", "Dispersion", "Usual test"],
+          rows: [
+            ["Nominal", "Blood group, sex", "Mode", "Proportions", "Chi-square or Fisher's exact"],
+            ["Ordinal", "NYHA class, pain grade", "Median", "Range, IQR", "Mann-Whitney or Kruskal-Wallis"],
+            ["Continuous, normal", "Height, haemoglobin, BP", "Mean", "SD", "t test or ANOVA"],
+            ["Continuous, skewed", "Income, hospital stay", "Median", "IQR", "Mann-Whitney or Kruskal-Wallis"],
+          ],
+        },
+        {
+          heading: "Choosing a test of significance",
+          columns: ["Comparison", "Parametric", "Non-parametric", "Categorical outcome"],
+          rows: [
+            ["Two independent groups", "Unpaired t test", "Mann-Whitney U", "Chi-square or Fisher's"],
+            ["Two paired measurements", "Paired t test", "Wilcoxon signed-rank", "McNemar's test"],
+            ["Three or more independent groups", "One-way ANOVA", "Kruskal-Wallis", "Chi-square r x c"],
+            ["Three or more paired", "Repeated-measures ANOVA", "Friedman", "Cochran's Q"],
+            ["Two continuous variables", "Pearson r", "Spearman rho", "Logistic regression (binary)"],
+            ["Time to event", "Cox regression", "Kaplan-Meier, log-rank", "Not applicable"],
+          ],
+        },
+        {
+          heading: "Key formulas with worked examples",
+          columns: ["Calculation", "Formula", "Worked example"],
+          rows: [
+            ["Standard error of mean", "SD / square root of n", "SD 20, n 100: SE = 2"],
+            ["95% CI of a mean", "Mean plus or minus 1.96 SE", "140 plus or minus 3.9 = 136 to 144"],
+            ["Chi-square", "Sum of (O - E) squared / E", "4.0 with 1 df, above 3.84"],
+            ["Kappa", "(Po - Pe) / (1 - Pe)", "(0.85 - 0.50) / 0.50 = 0.70"],
+            ["Prevalence", "Incidence x duration", "10 per 1000 x 5 years = 50 per 1000"],
+            ["IMR", "Infant deaths / live births x 1000", "24 / 1200 x 1000 = 20"],
+            ["SMR", "Observed / expected deaths x 100", "30 / 20 x 100 = 150"],
+          ],
+        },
+      ],
+      remember: [
+        "**SD describes the data; SE describes the estimate**.",
+        "Mean for normal, **median for skewed**, mode for nominal.",
+        "1.96 SD covers 95% of individuals; **1.96 SE gives the 95% CI**.",
+        "p is computed **assuming the null is true**.",
+        "**Prevalence = incidence x duration**.",
+        "IMR per 1000; **MMR per 100,000** live births.",
+        "Chi-square needs expected counts of 5 or more, else **Fisher's exact**.",
+      ],
+    },
     updated: [
       "SRS Special Bulletin 2021-23 (released 2025): India MMR 88 per 100,000 live births, replacing 93 (SRS 2019-21).",
     ],
@@ -419,6 +1543,143 @@ const revision: RevisionSet = {
 
   "fm-principles-three-stage-assessment": {
     checked: "2026-10",
+    notes: {
+      sections: [
+        {
+          title: "Definition and key facts",
+          points: [
+            "**Triaxial diagnosis** states every problem in **physical, psychological and social** terms.",
+            "It was codified by the **RCGP in 1972** (The Future General Practitioner).",
+            "It rests on **Engel's biopsychosocial model (1977)**.",
+            "About **one-third** of primary care visits carry a significant psychosocial component.",
+            "In India the **family is effectively a fourth axis** of decision-making.",
+          ],
+        },
+        {
+          title: "Classification that matters",
+          points: [
+            "**Physical axis**: diagnosis with severity, complications, comorbidities, drugs and red flags.",
+            "**Psychological axis**: ICE, mood, illness behaviour, beliefs, substance use and cognition.",
+            "**Social axis**: family, work, income, entitlements, literacy, access, housing and violence.",
+            "The **flags system**: red, yellow, orange, blue and black flags.",
+          ],
+        },
+        {
+          title: "Patient-centred clinical method",
+          points: [
+            "Stewart's method has **four components** in its current version.",
+            "First, explore disease and the **illness experience (FIFE)**: feelings, ideas, function, expectations.",
+            "Second, understand the **whole person in context**.",
+            "Third, **find common ground**; fourth, enhance the relationship.",
+            "The older six-part version added prevention and being realistic about time.",
+            "**Patient-centred is not patient-directed**; unsafe requests are declined.",
+          ],
+        },
+        {
+          title: "Making each axis safe",
+          points: [
+            "**Murtagh's safe strategy** begins with the probability diagnosis.",
+            "Then ask about **serious disorders not to be missed** and common pitfalls.",
+            "Consider **masquerades**: depression, diabetes, drugs, anaemia, thyroid, spinal dysfunction, UTI.",
+            "Screen mood with **PHQ-2 then PHQ-9**; a PHQ-9 of **10 or more** is likely depression.",
+            "Use **GAD-2/GAD-7**, AUDIT-C for alcohol and **Mini-Cog** for cognition.",
+            "Ask about suicide directly; **asking does not raise risk**.",
+          ],
+        },
+        {
+          title: "Red and yellow flags",
+          points: [
+            "**Red flags** suggest serious pathology that must be ruled out.",
+            "Back pain red flags include **saddle anaesthesia, sphincter disturbance** and progressive deficit.",
+            "Headache red flags follow **SNNOOP10**, including thunderclap onset and onset over 50.",
+            "**Yellow flags** (fear-avoidance, catastrophising, low mood) predict chronicity.",
+            "Yellow flags are screened with the **STarT Back tool**.",
+            "**Do not image** back pain with yellow flags and no red flags.",
+          ],
+        },
+        {
+          title: "Assessment step by step",
+          points: [
+            "Assess the physical axis, including all drugs, OTC and AYUSH.",
+            "Assess the psychological axis with **ICE in the patient's own words**.",
+            "Assess the social axis, with a **private question about violence**.",
+            "Mark the flags, then write a **numbered problem list** across all axes.",
+            "Agree **one action per axis**, with a safety net and review date.",
+          ],
+        },
+        {
+          title: "Worked example: TB in a migrant worker",
+          points: [
+            "Physical: sputum NAAT positive, rifampicin-sensitive, **BMI 16.5**; check HIV and sugar.",
+            "Psychological: stigma, fear of job loss and alcohol use.",
+            "Social: shares one room with six workers.",
+            "Plan: **2HRZE/4HRE**, contact screening and TB preventive treatment.",
+            "Add **Ni-kshay Poshan Yojana (Rs 1000 a month by DBT)** and a workplace treatment supporter.",
+          ],
+        },
+        {
+          title: "Referral and follow-up",
+          points: [
+            "Send **red flags** to the specialist and **orange flags** to psychiatry.",
+            "Send social problems to the ASHA, social worker or legal aid.",
+            "**Tele-MANAS (14416)** supports the psychological axis where specialists are far.",
+            "**Re-assess all three axes** at each follow-up.",
+          ],
+        },
+        {
+          title: "Complications and red flags",
+          points: [
+            "**Saddle anaesthesia or urinary retention** with back pain needs same-day MRI.",
+            "**Thunderclap headache** peaking within a minute suggests subarachnoid haemorrhage.",
+            "New headache after 50 with jaw claudication: check ESR, CRP and **start steroids**.",
+            "Suicidal intent or plan needs **same-day mental health assessment**.",
+          ],
+        },
+      ],
+      tables: [
+        {
+          heading: "Types of flags",
+          columns: ["Flag", "What it signals", "Example (back pain)", "Action"],
+          rows: [
+            ["Red", "Serious pathology", "Saddle anaesthesia, urinary retention", "Emergency MRI, same-day referral"],
+            ["Yellow", "Psychosocial risk of chronicity", "Fear-avoidance, catastrophising", "Reassure, graded activity, CBT-informed physio"],
+            ["Orange", "Psychiatric disorder", "Major depression, substance misuse", "Mental health referral"],
+            ["Blue", "Perceptions of work", "Low job control, blames workplace", "Workplace dialogue, modified duties"],
+            ["Black", "System and policy obstacles", "Compensation claim, rigid leave rules", "Liaise with employer or social worker"],
+          ],
+        },
+        {
+          heading: "Triaxial assessment: diabetic foot ulcer in a farmer",
+          columns: ["Axis", "Worked finding", "Plan action"],
+          rows: [
+            ["Physical", "HbA1c 10%, Wagner 2 ulcer, neuropathy", "Offloading, debridement, antibiotic, insulin, Doppler"],
+            ["Psychological", "Fears amputation; thinks insulin causes blindness", "Correct the myth, screen low mood"],
+            ["Social", "Barefoot farmer, sole earner, 25 km away", "PM-JAY admission, footwear"],
+            ["Family (fourth axis)", "Son decides admission; wife cooks", "Family meeting, diet counselling with wife"],
+          ],
+        },
+        {
+          heading: "Psychological screening tools",
+          columns: ["Tool", "Screens for", "Use"],
+          rows: [
+            ["PHQ-2 then PHQ-9", "Depression", "PHQ-9 of 10 or more is likely depression"],
+            ["GAD-2 then GAD-7", "Anxiety", "Two-step screen in the OPD"],
+            ["AUDIT-C", "Alcohol use", "Brief alcohol screen"],
+            ["Mini-Cog", "Cognitive impairment", "Elderly patients"],
+            ["STarT Back", "Risk of chronic back pain", "Low, medium or high risk"],
+          ],
+        },
+      ],
+      remember: [
+        "A family medicine diagnosis is complete only on **three axes**.",
+        "**ICE** is the psychological axis in three words.",
+        "**Red flags** say what to rule out; **yellow flags** say who will not get better.",
+        "**Every axis needs an action** in the plan.",
+        "Patient-centred is **not patient-directed**.",
+        "Patient-centred method explores illness as **FIFE**: Feelings, Ideas, Function, Expectations.",
+        "In India the **family is a fourth axis**.",
+      ],
+    },
     master: {
       heading: "Master revision table - triaxial assessment, patient-centred method and flags",
       columns: ["Aspect", "High-yield points"],
@@ -471,6 +1732,155 @@ const revision: RevisionSet = {
 
   "fm-principles-referral-system": {
     checked: "2026-10",
+    notes: {
+      sections: [
+        {
+          title: "Definition and key facts",
+          points: [
+            "**Referral** transfers responsibility for a defined problem to another clinician or level.",
+            "**Consultation** seeks advice while the family physician **keeps responsibility**.",
+            "**Collateral consultation** (seen once, returned with advice) is the most useful model.",
+            "**Shared care** is joint responsibility under an agreed protocol, such as antenatal care or ART.",
+            "Whatever the form, the family physician **remains the continuing doctor**.",
+          ],
+        },
+        {
+          title: "Classification that matters",
+          points: [
+            "**Vertical** referral goes up a level; **horizontal** goes to another discipline at the same level.",
+            "**Reverse or back-referral** returns the patient down a level for continuing care.",
+            "By urgency: **emergency, urgent and elective**.",
+            "By purpose: **diagnostic, therapeutic, opinion only, or community** referral.",
+          ],
+        },
+        {
+          title: "When to refer",
+          points: [
+            "Refer for diagnostic uncertainty after reasonable work-up.",
+            "Refer for **red flags** such as suspected cancer, cauda equina or stroke in the window.",
+            "Refer for treatment failure, complications, high-risk pregnancy, or care **beyond your competence**.",
+            "Programme referrals include **DR-TB**, HIV to the ART centre and **RBSK 4D** children.",
+          ],
+        },
+        {
+          title: "Gatekeeping and two-way referral",
+          points: [
+            "**Gatekeeping** lowers costs and tests, but high thresholds can **delay cancer diagnosis**.",
+            "**India has no formal gatekeeping**, so tertiary OPDs fill with stable chronic disease.",
+            "**Back-referral is the weakest link** in the Indian system.",
+            "Very high referral rates signal poor comprehensiveness; very low rates may signal danger.",
+          ],
+        },
+        {
+          title: "Referring step by step",
+          points: [
+            "Decide urgency and **exactly what you need** from the receiving clinician.",
+            "Choose the nearest facility that **can actually do it**, such as an FRU for caesarean section.",
+            "Consent and explain; record any refusal (LAMA/DAMA) after assessing capacity.",
+            "**Stabilise before transfer** and give the pre-referral dose.",
+            "Call **108** for emergencies; **102** gives free transport for mothers and infants under **JSSK**.",
+            "Write a letter with a **specific question**, drugs with dose and time, and allergies.",
+            "Confirm arrival by phone or ASHA, and act on the reply.",
+          ],
+        },
+        {
+          title: "Implementation in India",
+          points: [
+            "**Sub-centre Arogya Mandir**: 5000 population (3000 hilly), run by a CHO.",
+            "**PHC**: 30,000 (20,000 hilly), medical officer, **6 beds**.",
+            "**CHC**: 120,000 (80,000 hilly), **30 beds** and four specialists.",
+            "An **FRU** offers 24x7 caesarean section, newborn care and blood storage.",
+            "**PM-JAY** covers **Rs 5 lakh** per family per year; since 2024, everyone aged 70 and over.",
+            "**eSanjeevani** teleconsultation avoids many physical referrals.",
+          ],
+        },
+        {
+          title: "Law and ethics",
+          points: [
+            "**Duty of care continues** until the receiving clinician accepts the patient.",
+            "**Parmanand Katara (1989)**: give emergency care without waiting for legal formalities.",
+            "Delay in referral is a ground for negligence under the **Consumer Protection Act 2019**.",
+            "**Fee-splitting** or commission for referral is professional misconduct.",
+            "Share HIV status or mental illness only with **specific consent**.",
+          ],
+        },
+        {
+          title: "Complications and red flags",
+          points: [
+            "Never send an **unstable patient alone** or without pre-referral treatment.",
+            "**Stroke within 4.5 hours** goes directly to a stroke-ready hospital.",
+            "A **sick neonate** gets a pre-referral antibiotic, warmth and transport to the SNCU.",
+            "Refusal of life-saving referral: assess capacity and **record a signed refusal**.",
+          ],
+        },
+        {
+          title: "Referral audit",
+          points: [
+            "Audit **referral rate per 1000 consultations**, appropriateness and urgency grading.",
+            "Audit letter completeness, such as **90%** containing allergies and current drugs.",
+            "Run a **significant event analysis** after any delayed referral.",
+          ],
+        },
+      ],
+      tables: [
+        {
+          heading: "Pre-referral treatment before transfer",
+          columns: ["Situation", "Pre-referral treatment", "Transfer to"],
+          rows: [
+            ["Severe pre-eclampsia or eclampsia", "MgSO4 4 g IV plus 10 g IM; nifedipine 10 mg oral", "FRU by 108 with escort"],
+            ["Suspected acute coronary syndrome", "Aspirin 300 mg chewed, ECG", "PCI or thrombolysis centre"],
+            ["Sick neonate with danger signs", "First-dose antibiotic, keep warm", "SNCU by 102 or 108"],
+            ["Stroke within 4.5 hours", "Do not wait for tests", "Stroke-ready hospital"],
+            ["Medico-legal injury", "Life-saving care first, record injuries", "Inform police before transfer"],
+          ],
+        },
+        {
+          heading: "Types of referral",
+          columns: ["Type", "Direction or timing", "Example"],
+          rows: [
+            ["Vertical", "Lower to higher level", "PHC to FRU for caesarean section"],
+            ["Horizontal", "Same level, another discipline", "To physiotherapist or dentist"],
+            ["Back-referral", "Higher to lower level", "Stable post-MI patient to Arogya Mandir"],
+            ["Self", "Patient bypasses primary care", "Walk-in to cardiology OPD"],
+            ["Emergency", "Within the hour, stabilised, escorted", "Eclampsia after MgSO4"],
+            ["Urgent", "Within days", "Suspected breast cancer"],
+            ["Elective", "Planned", "Cataract or hernia surgery"],
+          ],
+        },
+        {
+          heading: "Tiered public facilities (IPHS norms)",
+          columns: ["Level", "Population (plains / hilly)", "Key capacity"],
+          rows: [
+            ["SC Arogya Mandir", "5000 / 3000", "CHO, 12 service packages, teleconsultation"],
+            ["PHC", "30,000 / 20,000", "Medical officer, 6 beds, normal delivery"],
+            ["CHC (often FRU)", "120,000 / 80,000", "30 beds, 4 specialists, EmOC, blood storage"],
+            ["District hospital", "District", "Specialists, SNCU, dialysis, trauma"],
+            ["Medical college", "Region", "Super-speciality and teaching"],
+          ],
+        },
+        {
+          heading: "The referral letter",
+          columns: ["Section", "What to include", "Common error"],
+          rows: [
+            ["Identifiers", "Name, age, phone, ABHA; your registration number", "No contact number for reply"],
+            ["Urgency and question", "What exactly you want done", "'Kindly see and do the needful'"],
+            ["Clinical summary", "History, findings, working diagnosis", "No diagnosis offered"],
+            ["Treatment given", "Drugs with dose and time", "Doses or times missing"],
+            ["Background", "Allergies, current drugs, social context", "Allergy status blank"],
+            ["Request back", "Reply and back-referral plan", "No request for reply"],
+          ],
+        },
+      ],
+      remember: [
+        "**Refer with a question, not a patient**.",
+        "Referral transfers responsibility; **consultation keeps it**.",
+        "Types: **vertical, horizontal, back-referral, self**; emergency, urgent, elective.",
+        "Population norms: **SC 5000, PHC 30,000, CHC 120,000**.",
+        "**108** for emergencies; **102** for mothers and infants under JSSK.",
+        "**Back-referral** is the weakest link in India.",
+        "Parmanand Katara 1989: **emergency care first**, formalities later.",
+      ],
+    },
     master: {
       heading: "Master revision table - referral and the Indian referral system",
       columns: ["Aspect", "High-yield points"],
@@ -521,6 +1931,146 @@ const revision: RevisionSet = {
 
   "fm-principles-breaking-bad-news-difficult-consultations": {
     checked: "2026-10",
+    notes: {
+      sections: [
+        {
+          title: "Definition and key facts",
+          points: [
+            "**Bad news** is information that drastically and negatively alters a person's view of their future.",
+            "How bad it is is **judged by the patient**, not the doctor (Buckman).",
+            "Examples include cancer, HIV, miscarriage, dementia, a disabled child and a death.",
+            "Poor delivery is a leading cause of **complaints, litigation and doctor distress**.",
+            "**Most patients want to know** their diagnosis, including in India.",
+          ],
+        },
+        {
+          title: "Classification that matters",
+          points: [
+            "The expected protocol is **SPIKES (Baile and Buckman 2000)**, six steps in order.",
+            "Alternatives: **Buckman's six steps**, **ABCDE** (Rabow and McPhee) and **BREAKS**.",
+            "Difficult consultations: **collusion, the angry patient, the heartsink patient**.",
+            "Also examined: news by **telephone** and news to **children**.",
+          ],
+        },
+        {
+          title: "SPIKES step by step",
+          points: [
+            "**Setting**: private room, sit at eye level, phone silent, tissues, ask who should be present.",
+            "**Perception**: 'What have you understood about why we did the biopsy?'",
+            "**Invitation**: 'Would you like the results in detail, or just the main points?'",
+            "**Knowledge**: give a **warning shot**, then the news in small plain chunks, then stop.",
+            "**Emotions**: name and acknowledge the emotion, and **allow silence**.",
+            "**Strategy and summary**: next steps, a named contact and **follow-up within days**.",
+          ],
+        },
+        {
+          title: "Responding to emotion",
+          points: [
+            "**NURSE**: Name, Understand, Respect, Support, Explore.",
+            "Example of Name: 'It sounds as if you are frightened.'",
+            "**Never say 'nothing more can be done'**; hope is redirected, not removed.",
+            "Kubler-Ross reactions are **not sequential** and may recur.",
+            "Early denial is protective and **should not be forcibly broken**.",
+            "**Prolonged grief disorder** (ICD-11): longing over **6 months** with impaired function.",
+          ],
+        },
+        {
+          title: "Family collusion",
+          points: [
+            "**Collusion** is an agreement, usually with family, to withhold information from the patient.",
+            "It arises from **love and fear**, and is very common in Indian families.",
+            "Explore the family's fear: 'What are you worried will happen if she knows?'",
+            "Do not force information on her, but **never lie if she asks**.",
+            "Ask the patient how much she wants to know; **delegating to family can be autonomy**.",
+            "**Therapeutic privilege** is narrow, exceptional and must be documented.",
+          ],
+        },
+        {
+          title: "The angry patient",
+          points: [
+            "Anger is usually a **secondary emotion** covering fear, pain, waiting, cost or error.",
+            "Keep a **clear exit**, sit, speak slowly and let the patient finish.",
+            "Name the feeling and **apologise for the experience** without admitting negligence.",
+            "Find what is needed now and act on it; then document.",
+            "**CALMER (Pickering)** is a structured approach for the angry patient.",
+            "If threats escalate, **end the consultation, leave and call security**.",
+          ],
+        },
+        {
+          title: "Heartsink and frequent attenders",
+          points: [
+            "**Heartsink patients (O'Dowd)** evoke exasperation; the problem lies partly in the relationship.",
+            "**Groves' types**: dependent clingers, entitled demanders, manipulative help-rejecters, self-destructive deniers.",
+            "Look beneath for **depression, somatisation, abuse or social crisis**.",
+            "Use one named doctor and **regular scheduled brief visits**, not symptom-driven ones.",
+            "Avoid repeated reassurance tests; **Balint groups** help the doctor.",
+          ],
+        },
+        {
+          title: "Special groups",
+          points: [
+            "**Telephone news**: confirm identity, check they can talk and who is with them.",
+            "**Children**: honest language for their age; never promise secrecy you cannot keep.",
+            "Under the **Mental Healthcare Act 2017**, a nominated representative may receive information.",
+            "Offer **early palliative care** at the time of bad news, not only at the end.",
+          ],
+        },
+        {
+          title: "Complications and red flags",
+          points: [
+            "**Suicidal ideation** after bad news needs same-day mental health assessment.",
+            "Acute confusion or collapse is a **medical emergency**, not an emotional reaction.",
+            "Violence during epidemics is **cognisable and non-bailable** (Epidemic Diseases Amendment Act 2020).",
+            "A doctor may decline a violent patient **except in an emergency**.",
+            "**Document** who was present, what was said and the patient's information preference.",
+          ],
+        },
+      ],
+      tables: [
+        {
+          heading: "SPIKES with phrases and common errors",
+          columns: ["Step", "Example phrase", "Common error"],
+          rows: [
+            ["S - Setting", "Would you like anyone with you?", "Corridor or standing at the bedside"],
+            ["P - Perception", "What have you been told about the scan?", "Telling before asking"],
+            ["I - Invitation", "How much detail would you like?", "Assuming everyone wants everything"],
+            ["K - Knowledge", "I am sorry, the biopsy shows a cancer.", "Jargon or information dump"],
+            ["E - Emotions", "I can see this is a terrible shock.", "Filling silence with treatment details"],
+            ["S - Strategy and summary", "Let us meet on Friday to plan.", "No follow-up date or contact"],
+          ],
+        },
+        {
+          heading: "Handling difficult consultations",
+          columns: ["Situation", "What lies beneath", "What to do", "What to avoid"],
+          rows: [
+            ["Family collusion", "Love and fear", "Explore fear, ask patient's preference, never lie", "Lying, or overruling abruptly"],
+            ["Angry patient", "Fear, pain, waiting, cost", "Sit, listen, name feeling, apologise, act", "Arguing, pointing, touching"],
+            ["Escalating threat", "Loss of control, intoxication", "Leave, call security, document", "Staying alone in the room"],
+            ["Heartsink attender", "Depression, somatisation, abuse", "Named doctor, scheduled brief visits", "Repeated reassurance tests"],
+            ["Telephone news", "Shock with no one present", "Confirm identity, check support", "Telling the wrong person"],
+          ],
+        },
+        {
+          heading: "Bad news protocols compared",
+          columns: ["Protocol", "Stands for"],
+          rows: [
+            ["SPIKES", "Setting, Perception, Invitation, Knowledge, Emotions, Strategy and summary"],
+            ["ABCDE", "Advance preparation, Build environment, Communicate, Deal with reactions, Encourage emotions"],
+            ["BREAKS", "Background, Rapport, Explore, Announce, Kindling, Summarise"],
+            ["NURSE", "Name, Understand, Respect, Support, Explore"],
+          ],
+        },
+      ],
+      remember: [
+        "Bad news is defined by **the patient's view of their future**.",
+        "**Ask before you tell**: perception and invitation before knowledge.",
+        "**Warning shot and silence** are the most powerful tools in the room.",
+        "**NURSE**: Name, Understand, Respect, Support, Explore.",
+        "Collusion: explore the family's fear; **never lie to the patient**.",
+        "Never say **'nothing more can be done'**.",
+        "Heartsink: **scheduled brief visits** beat symptom-driven ones.",
+      ],
+    },
     master: {
       heading: "Master revision table - breaking bad news and difficult consultations",
       columns: ["Aspect", "High-yield points"],
@@ -571,6 +2121,155 @@ const revision: RevisionSet = {
 
   "fm-principles-digital-health-emr-abdm": {
     checked: "2026-10",
+    notes: {
+      sections: [
+        {
+          title: "Definition and key facts",
+          points: [
+            "**Digital health** (WHO) is the use of digital technology for health.",
+            "**ABDM** was launched nationally on **27 September 2021**, run by the National Health Authority.",
+            "Telemedicine follows the **Telemedicine Practice Guidelines (25 March 2020)**.",
+            "Data protection follows the **Digital Personal Data Protection Act 2023**.",
+            "The registered doctor **remains accountable** for any AI-supported decision.",
+          ],
+        },
+        {
+          title: "Classification that matters",
+          points: [
+            "**EMR**: one provider's chart, belonging to the clinic.",
+            "**EHR**: a longitudinal, standards-based record shared across providers.",
+            "**PHR**: controlled by the patient, such as the ABHA app.",
+            "Interoperability needs **identifiers, terminologies and message standards**.",
+            "Standards: **SNOMED CT, LOINC, ICD** and **HL7 FHIR R4**.",
+          ],
+        },
+        {
+          title: "ABDM building blocks",
+          points: [
+            "**ABHA** is a voluntary **14-digit health ID** with an ABHA address.",
+            "**HPR** registers professionals; **HFR** registers facilities.",
+            "Records move **only with the patient's digital consent** through the consent manager.",
+            "Data stay with providers (federated); there is **no central store**.",
+            "Tools include **Scan and Share**, UHI, **NHCX** for claims and the Digital Health Incentive Scheme.",
+            "Software milestones: **M1** create ABHA, **M2** link records, **M3** fetch with consent.",
+          ],
+        },
+        {
+          title: "Coding and the EMR",
+          points: [
+            "An **uncoded EMR** is only a digital paper chart: no registers, recall or audit.",
+            "**ICD-11** came into effect on **1 January 2022**.",
+            "**ICPC-2** codes the **reason for encounter** with 17 chapters and 7 components.",
+            "SNOMED CT is **free in India**, with a release centre at C-DAC Pune.",
+            "EMR challenges include cost, power, internet, data-entry time and **cyber-attacks**.",
+          ],
+        },
+        {
+          title: "Teleconsultation rules",
+          points: [
+            "Consent is **implied when the patient initiates**, explicit when the doctor initiates.",
+            "Modes are video, audio and text; **video gives the most information**.",
+            "**List O** (paracetamol, ORS, antacids) may be prescribed by any mode.",
+            "**List A** at a first consultation **only by video**, or as a refill.",
+            "**List B** add-ons only at follow-up of a condition diagnosed in person.",
+            "**Schedule X and NDPS drugs** are prohibited by telemedicine.",
+            "Switch to in-person care when **examination is essential** or in an emergency.",
+          ],
+        },
+        {
+          title: "eSanjeevani and programme apps",
+          points: [
+            "**eSanjeevani AB-HWC** is provider-to-provider: CHO to hub doctor.",
+            "**eSanjeevani OPD** is patient-to-doctor.",
+            "Programme apps include **Ni-kshay, 99DOTS, U-WIN**, the NCD app and ANMOL.",
+            "Information systems include HMIS, RCH portal and **IHIP**.",
+          ],
+        },
+        {
+          title: "Data protection",
+          points: [
+            "Under DPDP the clinic is a **data fiduciary**; the patient is the **data principal**.",
+            "Consent must be **free, specific, informed and unambiguous**.",
+            "Exceptions include **medical emergencies and epidemics**.",
+            "Children **under 18** need verifiable parental consent.",
+            "After a breach, send the Board a **detailed report within 72 hours**.",
+            "Report cyber incidents to **CERT-In within 6 hours**.",
+            "Core fiduciary duties apply from **13 May 2027** under the DPDP Rules 2025.",
+          ],
+        },
+        {
+          title: "AI in primary care",
+          points: [
+            "Uses include diabetic retinopathy screening and **computer-aided TB detection** on chest X-ray.",
+            "Risks include bias from non-Indian data, opacity and **automation bias**.",
+            "**ICMR AI Guidelines 2023** require human oversight and accountability.",
+            "Do not act on AI output that **conflicts with clinical findings**.",
+          ],
+        },
+        {
+          title: "Complications and red flags",
+          points: [
+            "Chest pain or stroke symptoms on a teleconsult: **direct to 108**, do not continue remotely.",
+            "Suicidal intent online: keep them engaged, get the **location** and alert services.",
+            "Never share patient data on **personal WhatsApp groups** or shared logins.",
+            "Keep **offline backups**; ransomware can wipe years of records.",
+          ],
+        },
+      ],
+      tables: [
+        {
+          heading: "Types of digital health record",
+          columns: ["Type", "Who controls", "Scope", "Indian example"],
+          rows: [
+            ["EMR", "Single provider", "One practice's chart", "Clinic OPD software"],
+            ["EHR", "Many providers via standards", "Longitudinal, shared with consent", "ABDM-linked hospital records"],
+            ["PHR", "Patient", "Patient-curated summary", "ABHA app, DigiLocker health locker"],
+          ],
+        },
+        {
+          heading: "Telemedicine prescribing lists (TPG 2020)",
+          columns: ["List", "Examples", "When allowed"],
+          rows: [
+            ["O", "Paracetamol, ORS, antacids, lozenges", "Any mode, any consultation"],
+            ["A", "Relatively safe, low-abuse drugs", "First consult only by video; or refill"],
+            ["B", "Add-ons for condition diagnosed in person", "Follow-up consultation only"],
+            ["Prohibited", "Schedule X and NDPS drugs", "Never by telemedicine"],
+          ],
+        },
+        {
+          heading: "A safe teleconsultation",
+          columns: ["Step", "What to do", "Common error"],
+          rows: [
+            ["1. Identify", "Confirm patient; give your name and registration number", "Treating an unidentified caller"],
+            ["2. Consent", "Implied if patient called; explicit if you initiated", "No consent recorded"],
+            ["3. Judge suitability", "Is the mode enough? Any emergency?", "Continuing despite red flags"],
+            ["4. Assess", "History, video inspection, home readings", "Skipping history for time"],
+            ["5. Prescribe", "Only within List O, A, B rules", "List A by audio at first contact"],
+            ["6. Record", "E-prescription with registration number, review date", "No record or follow-up"],
+          ],
+        },
+        {
+          heading: "ABDM registries and timelines",
+          columns: ["Item", "What it is", "Key fact"],
+          rows: [
+            ["ABHA", "Patient health ID", "Voluntary, 14 digits"],
+            ["HPR", "Professionals registry", "Verifies doctors and nurses"],
+            ["HFR", "Facility registry", "Unique ID per facility"],
+            ["Breach report", "To Data Protection Board", "Detailed report within 72 hours"],
+            ["CERT-In report", "Cyber incident", "Within 6 hours"],
+          ],
+        },
+      ],
+      remember: [
+        "**EMR belongs to the clinic, EHR follows the patient, PHR is controlled by the patient**.",
+        "ABHA is a **voluntary 14-digit ID**; data move only with consent.",
+        "**HPR** registers professionals; **HFR** registers facilities.",
+        "**List O any mode; List A first by video; List B follow-up only; X and NDPS never**.",
+        "Consent **implied if patient initiates**, explicit if doctor initiates.",
+        "eSanjeevani **AB-HWC is doctor-to-doctor**; OPD is patient-to-doctor.",
+        "Under DPDP the clinic is a **data fiduciary**; AI supports, the doctor stays accountable.",
+      ],
+    },
     updated: [
       "DPDP Rules 2025 (notified 13 November 2025): breach - inform affected persons and the Data Protection Board without delay, detailed report to the Board within 72 hours; core fiduciary duties in force from 13 May 2027.",
     ],
