@@ -3,6 +3,166 @@ import type { RevisionSet } from "./index";
 const revision: RevisionSet = {
   "obstetrics-antenatal-care": {
     checked: "2026-10",
+    notes: {
+      sections: [
+        {
+          title: "Definition and key facts",
+          points: [
+            "**Antenatal care** is planned supervision from conception to labour, aiming at a safe institutional birth.",
+            "Register every pregnancy **before 12 weeks** and issue the MCP card.",
+            "India's minimum is **4 ANC visits**; WHO recommends **8 contacts**.",
+            "**PMSMA** gives a free specialist check on the **9th of every month** in the 2nd and 3rd trimesters.",
+            "Extended PMSMA (2022) adds at least three visits for high-risk women, up to 45 days postpartum.",
+            "India's MMR is **87 per 100,000 live births** (SRS 2022-24), still above the SDG target of 70.",
+            "Haemorrhage, hypertension, sepsis and anaemia lead maternal deaths, and all are detectable in ANC.",
+          ],
+        },
+        {
+          title: "Classification that matters",
+          points: [
+            "The only classification needed is **low-risk versus high-risk pregnancy**.",
+            "High risk includes age under 18 or over 35 and **height under 145 cm**.",
+            "Also high risk: **Hb under 7 g/dL**, previous caesarean, hypertension, diabetes or heart disease.",
+            "Twins, malpresentation and a previous stillbirth also make a pregnancy high risk.",
+            "High-risk women are flagged red on the MCP card and delivered where there is **blood and an operating theatre**.",
+          ],
+        },
+        {
+          title: "How it happens (pathophysiology)",
+          points: [
+            "Plasma volume rises 40-50% but red cells only 20-30%, causing **physiological haemodilution**.",
+            "So anaemia in pregnancy is **Hb under 11 g/dL**, or under 10.5 in the second trimester.",
+            "Cardiac output rises 30-50% while vascular resistance falls, so **140/90 is never physiological**.",
+            "GFR rises about 50%, so a serum **creatinine of 1.0 mg/dL is abnormal**.",
+            "Progesterone drives breathing, so **PaCO2 falls to about 30 mmHg**.",
+            "Raised clotting factors make VTE risk 4-5 times higher, and about **20 times higher postpartum**.",
+            "Placental hormones cut insulin sensitivity by half, unmasking **gestational diabetes** in weak beta cells.",
+          ],
+        },
+        {
+          title: "History in the OPD",
+          points: [
+            "Calculate the EDD by **Naegele's rule: LMP plus 9 months plus 7 days**.",
+            "Write the obstetric formula **G P L A** and the outcome of each past pregnancy.",
+            "Ask about previous caesarean, PPH, pre-eclampsia, GDM, stillbirth and preterm birth.",
+            "Ask about chronic disease and **teratogenic drugs** such as valproate, warfarin and ACE inhibitors.",
+            "Ask about folic acid use, consanguinity, thalassaemia and the partner's blood group.",
+            "Ask about Td history, tobacco, mood (Whooley questions) and, alone with her, **domestic violence**.",
+          ],
+        },
+        {
+          title: "Examination",
+          points: [
+            "Record height, **BMI and weight gain**, pallor and oedema of the face and hands.",
+            "Measure BP seated with the correct cuff, using **Korotkoff V** for diastolic.",
+            "From 24-36 weeks **SFH in cm equals weeks**; a lag over 3 cm needs a growth scan.",
+            "**Leopold 1** finds the fundal pole, **2** the back, **3 (Pawlik)** the presenting part.",
+            "**Leopold 4** assesses engagement; engaged means **2/5 or less** palpable above the brim.",
+            "Count the fetal heart for a full minute; normal is **110-160 beats per minute**.",
+            "**Never do a digital PV in bleeding after 20 weeks** until placenta praevia is excluded.",
+          ],
+        },
+        {
+          title: "Investigations",
+          points: [
+            "Booking tests: **Hb, blood group and Rh, urine**, HIV, syphilis, HBsAg and TSH.",
+            "**DIPSI test**: 75 g glucose non-fasting; a 2-hour value of **140 mg/dL or more is GDM**.",
+            "Repeat DIPSI at **24-28 weeks** if the first test was normal.",
+            "Repeat Hb at every visit and always at **28-30 and 36 weeks**.",
+            "Dating scan by CRL, **NT scan at 11-13+6 weeks**, anomaly scan at **18-20 weeks**.",
+            "Every scan needs a signed **Form F** under the PCPNDT Act.",
+          ],
+        },
+        {
+          title: "Treatment - first line",
+          points: [
+            "Advise an extra **350 kcal a day** in the second and third trimesters.",
+            "**Folic acid 400 microgram** daily from 1 month before conception to 12 weeks.",
+            "**IFA 60 mg iron with 500 microgram folic acid** daily from 14 weeks for 180 days.",
+            "**Calcium 500 mg with D3** twice daily from 14 weeks, at least 2 hours apart from iron.",
+            "Give **albendazole 400 mg** once after the first trimester and **Td** two doses 4 weeks apart.",
+            "Make a written **birth preparedness plan** with 102/108 number, money, donors and facility.",
+          ],
+        },
+        {
+          title: "Special groups",
+          points: [
+            "High-risk women get **aspirin 150 mg at bedtime** from 12 weeks (before 16) to 36 weeks.",
+            "Rh-negative women get **anti-D 300 microgram at 28 weeks** and within 72 hours of birth.",
+            "Switch to **labetalol or nifedipine**, insulin or metformin, LMWH and levetiracetam or lamotrigine.",
+            "Raise **levothyroxine by 25-30%** as soon as pregnancy is confirmed.",
+            "**Live vaccines are contraindicated**; give MMR postpartum to non-immune women.",
+          ],
+        },
+        {
+          title: "Complications and red flags",
+          points: [
+            "Refer the same day for **BP 160/110**, or 140/90 with proteinuria or symptoms.",
+            "Refer for **bleeding after 20 weeks**, leaking fluid, or fever with abdominal pain.",
+            "**Reduced fetal movements** after 28 weeks need same-day CTG and ultrasound.",
+            "Breathlessness at rest or a diastolic murmur suggests rheumatic heart disease.",
+            "**Hb under 7 g/dL** at any gestation needs IV iron or transfusion and an equipped facility.",
+          ],
+        },
+        {
+          title: "Prevention and programmes",
+          points: [
+            "**JSSK** gives free care, **JSY** gives cash for institutional birth.",
+            "**PMMVY** gives Rs 5000 for the first child and Rs 6000 for a second girl child.",
+            "Offer a membrane sweep at 40-41 weeks and **induction at 41 weeks**.",
+            "Every referral is written, to a named facility, with the MCP card and a phone call ahead.",
+            "NFHS-6: **65.2% had 4 or more ANC visits** and **90.6% institutional births**.",
+          ],
+        },
+      ],
+      tables: [
+        {
+          heading: "Routine antenatal drugs and vaccines",
+          columns: ["Drug", "Dose and route", "Duration", "Key side effects / cautions"],
+          rows: [
+            ["Folic acid", "400 microgram oral OD (5 mg if high risk)", "1 month preconception to 12 weeks", "Can mask B12 deficiency"],
+            ["IFA (red tablet)", "60 mg iron + 500 microgram FA oral OD", "From 14 weeks, 180 days; 180 days postpartum", "Nausea, constipation, black stools; not with tea or calcium"],
+            ["Calcium + vitamin D3", "500 mg + 250 IU oral BD", "14 weeks to 6 months postpartum", "Constipation; 2 hours apart from IFA"],
+            ["Albendazole", "400 mg oral single dose", "Once, second trimester", "Not in first trimester"],
+            ["Td vaccine", "0.5 mL IM deltoid", "Two doses 4 weeks apart, or one booster", "Local pain, low fever"],
+            ["Aspirin (high risk)", "150 mg oral at bedtime", "12 (before 16) to 36 weeks", "Dyspepsia, bleeding; stop at 36 weeks"],
+            ["Anti-D immunoglobulin", "300 microgram IM", "28 weeks and within 72 h of birth", "Only if ICT negative"],
+            ["Doxylamine-pyridoxine", "10/10 mg, 2 at bedtime, max 4/day", "As needed for nausea", "Drowsiness, dry mouth"],
+            ["Nitrofurantoin (bacteriuria)", "100 mg oral BD", "5 days", "Avoid near term; neonatal haemolysis"],
+          ],
+        },
+        {
+          heading: "Visit schedule: India versus WHO",
+          columns: ["Visit", "India minimum", "WHO 2016", "Key action"],
+          rows: [
+            ["1", "Within 12 weeks", "Up to 12 weeks", "Register, booking tests, dating scan, Td1"],
+            ["2", "14-26 weeks", "20 and 26 weeks", "IFA, calcium, albendazole, Td2, anomaly scan"],
+            ["3", "28-34 weeks", "30 and 34 weeks", "Hb, OGTT, anti-D at 28 weeks, birth plan"],
+            ["4", "36 weeks to term", "36, 38 and 40 weeks", "Presentation, Hb, danger signs, induction plan"],
+          ],
+        },
+        {
+          heading: "Pregnancy cut-offs that differ from non-pregnant values",
+          columns: ["Parameter", "Pregnancy value", "Why it matters"],
+          rows: [
+            ["Haemoglobin", "Anaemia under 11 g/dL (10.5 second trimester)", "Haemodilution lowers normal Hb"],
+            ["Serum creatinine", "1.0 mg/dL is abnormal", "GFR rises about 50%"],
+            ["PaCO2", "About 30 mmHg", "40 means fatigue in asthma"],
+            ["TSH", "Upper limit about 4.0 in first trimester", "hCG suppresses TSH early"],
+            ["SFH", "cm equals weeks from 24-36", "Lag over 3 cm needs growth scan"],
+          ],
+        },
+      ],
+      remember: [
+        "India 4 visits, WHO 8 contacts, PMSMA on the 9th of every month.",
+        "CRL beats LMP; once dated early, the EDD is never changed.",
+        "Leopold: 1 fundus, 2 back, 3 presenting part, 4 engagement and flexion.",
+        "Engaged means 2/5 or less of the head palpable above the brim.",
+        "Iron and calcium together is a wasted prescription - separate by 2 hours.",
+        "Aspirin 150 mg at bedtime from 12 weeks prevents most preterm pre-eclampsia.",
+        "PCPNDT restricts sex disclosure, not scans - always complete Form F.",
+      ],
+    },
     updated: [
       "SRS 2022-24 (released 2026): India's MMR is 87 per 100,000 live births (88 in SRS 2020-22 and 2021-23, 93 in 2019-21) - a near-plateau, still above the SDG 3.1 target of 70 nationally.",
       "NFHS-6 (2023-24, fact sheets 2026): 4 or more ANC visits 65.2%, first-trimester registration 76.2%, institutional births 90.6% (replacing the NFHS-5 figures of 58% and 89%).",
@@ -72,6 +232,160 @@ const revision: RevisionSet = {
 
   "obstetrics-anaemia-pregnancy": {
     checked: "2026-10",
+    notes: {
+      sections: [
+        {
+          title: "Definition and key facts",
+          points: [
+            "**Anaemia in pregnancy** is Hb **below 11 g/dL** (below 10.5 in the second trimester, WHO 2024).",
+            "The Indian programme uses **below 11 g/dL** throughout pregnancy.",
+            "Postpartum anaemia is Hb **below 10 g/dL**; the non-pregnant cut-off is 12 g/dL.",
+            "**Physiological haemodilution never takes Hb below 10 g/dL**.",
+            "**52.2% of Indian pregnant women are anaemic** (NFHS-5), still the latest national figure.",
+            "Anaemia kills directly through heart failure and indirectly by making PPH and sepsis unsurvivable.",
+          ],
+        },
+        {
+          title: "Classification that matters",
+          points: [
+            "**Mild**: Hb 10.0-10.9 g/dL.",
+            "**Moderate**: Hb 7.0-9.9 g/dL.",
+            "**Severe**: Hb under 7.0 g/dL; very severe is under 4 g/dL.",
+            "Grade and gestation, not symptoms, decide oral iron, IV iron or transfusion.",
+            "By cell size: microcytic (iron, thalassaemia), macrocytic (folate, B12) and **dimorphic** (both).",
+            "**Iron deficiency** causes over half; **hookworm**, thalassaemia trait and malaria are other causes.",
+          ],
+        },
+        {
+          title: "How it happens (pathophysiology)",
+          points: [
+            "A pregnancy needs about **1000 mg of iron**, rising to 6-7 mg a day by the third trimester.",
+            "A vegetarian Indian diet supplies only 1-2 mg of absorbed iron a day.",
+            "**Tea, phytates, calcium and antacids** block iron absorption; vitamin C helps it.",
+            "First stores fall (**ferritin under 30 ng/mL**), then iron-deficient red cell production follows.",
+            "Finally Hb falls and cells become **microcytic and hypochromic** with a high RDW.",
+            "Each oral iron dose raises **hepcidin for 24 hours**, the basis of alternate-day dosing.",
+            "At very low Hb the hyperdynamic circulation turns into **high-output heart failure**.",
+          ],
+        },
+        {
+          title: "History in the OPD",
+          points: [
+            "Ask about fatigue, breathlessness on exertion and palpitations, which appear late.",
+            "**Breathlessness at rest or orthopnoea** means anaemic heart failure and needs admission.",
+            "Take a diet history, ask about **tea with meals** and **pica** (clay, chalk, ice).",
+            "Ask honestly how many IFA tablets were taken last week; **non-adherence** is the commonest failure.",
+            "Ask about blood loss, worm risk, malaria, and family history of thalassaemia or sickle cell.",
+          ],
+        },
+        {
+          title: "Examination",
+          points: [
+            "Check **pallor** of conjunctiva, tongue, palms and nail beds; always confirm with measured Hb.",
+            "Look for **koilonychia**, angular stomatitis and glossitis of iron deficiency.",
+            "Jaundice or splenomegaly suggests haemolysis, malaria or a haemoglobinopathy.",
+            "**Basal crackles, raised JVP and gallop rhythm** mean anaemic heart failure.",
+            "SFH lagging behind dates suggests **fetal growth restriction** from chronic anaemia.",
+          ],
+        },
+        {
+          title: "Investigations",
+          points: [
+            "Measure **Hb at every visit** with a digital haemoglobinometer (**Test-Treat-Talk**).",
+            "CBC and smear: **MCV under 80 fL** and high RDW suggest iron deficiency.",
+            "**Serum ferritin under 30 ng/mL** confirms iron deficiency; it is falsely normal in infection.",
+            "**Mentzer index under 13** suggests thalassaemia trait; confirm with **HbA2 over 3.5%** on HPLC.",
+            "Stool for ova, malaria test, and B12 and folate only when the smear is megaloblastic.",
+          ],
+        },
+        {
+          title: "Treatment - first line",
+          points: [
+            "Prophylaxis: **1 IFA tablet daily from 14 weeks** for 180 days, and 180 days postpartum.",
+            "Mild anaemia: **2 IFA tablets daily**, continued 3 months after Hb normalises.",
+            "Take iron on an empty stomach or at bedtime, **2 hours apart from calcium** and tea.",
+            "Expect Hb to rise about **1 g/dL in 2-3 weeks**; less than 1 g/dL in 4 weeks is oral failure.",
+            "Give **albendazole 400 mg** once after the first trimester.",
+          ],
+        },
+        {
+          title: "Treatment - next steps",
+          points: [
+            "Give **IV iron** for moderate or severe anaemia after **12-14 weeks**, or oral failure.",
+            "Also give IV iron when anaemia is first found **after 30 weeks**.",
+            "Calculate the deficit by **Ganzoni: 2.4 x weight x (target minus actual Hb) + 500 mg**.",
+            "**Transfuse packed cells** for Hb under 5 at any time, or under 7 after 34 weeks or in labour.",
+            "Transfusion corrects the number, not the stores, so **always follow with iron**.",
+          ],
+        },
+        {
+          title: "Complications and red flags",
+          points: [
+            "In severe anaemia in labour, prop up, give oxygen and restrict IV fluids.",
+            "**Avoid methylergometrine** in heart failure; use oxytocin 10 IU IM for the third stage.",
+            "Shorten the second stage with forceps or vacuum to avoid prolonged pushing.",
+            "Watch for **pulmonary oedema in the first hour postpartum** from autotransfusion.",
+            "Wheeze or hypotension during IV iron: stop it and give **adrenaline 0.5 mg IM**.",
+          ],
+        },
+        {
+          title: "Prevention and programmes",
+          points: [
+            "**Anemia Mukt Bharat** covers IFA, deworming, testing and fortified foods.",
+            "Weekly IFA (WIFS) for adolescents and deworming twice a year prevent anaemia before pregnancy.",
+            "**Delayed cord clamping for 1-3 minutes** gives the newborn months of iron.",
+            "Advise birth spacing of **at least 24 months** so stores can refill.",
+            "Target **Hb of at least 10 g/dL by 36 weeks**, and deliver anaemic women at an FRU.",
+          ],
+        },
+      ],
+      tables: [
+        {
+          heading: "Drugs for anaemia in pregnancy",
+          columns: ["Drug", "Dose and route", "Duration", "Key side effects / cautions"],
+          rows: [
+            ["IFA (60 mg iron + 500 microgram FA)", "1 tablet OD prophylaxis; 2 daily for mild anaemia", "180 days; or 3 months after Hb normal", "Nausea, constipation, black stools"],
+            ["Ferric carboxymaltose", "20 mg/kg up to 1000 mg IV over 15 min", "Max 1000 mg/week; after 12-14 weeks", "Hypophosphataemia, staining, rare anaphylaxis"],
+            ["Iron sucrose", "200 mg IV over 20-30 min, alternate days", "Max 600 mg/week until deficit given", "Hypotension, phlebitis; never large single dose"],
+            ["Folic acid", "5 mg oral OD", "Megaloblastic anaemia or thalassaemia trait", "Masks B12 deficiency; add B12 if unsure"],
+            ["Vitamin B12", "1000 microgram IM", "Daily 1 week, weekly 4 weeks, then monthly", "Injection pain, rare allergy"],
+            ["Albendazole", "400 mg oral single dose", "Once, after first trimester", "Mild abdominal pain"],
+            ["Packed red cells", "1 unit over 3-4 hours", "Hb under 5, or under 7 after 34 weeks", "Volume overload; furosemide 20-40 mg IV"],
+          ],
+        },
+        {
+          heading: "Grade of anaemia and what to do",
+          columns: ["Grade", "Hb (g/dL)", "Treatment", "Where"],
+          rows: [
+            ["Mild", "10.0-10.9", "2 IFA tablets daily, recheck in 4 weeks", "Sub-centre or PHC"],
+            ["Moderate", "7.0-9.9", "IV iron after 12-14 weeks or oral failure", "PHC or CHC with resuscitation"],
+            ["Severe", "Under 7.0", "IV iron to 34 weeks; transfuse after 34 weeks", "FRU or district hospital"],
+            ["Very severe", "Under 4-5", "Admit, slow transfusion, treat heart failure", "Tertiary care"],
+          ],
+        },
+        {
+          heading: "Iron deficiency versus thalassaemia trait",
+          columns: ["Feature", "Iron deficiency", "Beta-thalassaemia trait"],
+          rows: [
+            ["RBC count", "Low", "Normal or high"],
+            ["RDW", "High (over 15%)", "Normal"],
+            ["Mentzer index", "Over 13", "Under 13"],
+            ["Serum ferritin", "Under 30 ng/mL", "Normal or high"],
+            ["HbA2 on HPLC", "Normal or low", "Over 3.5%"],
+            ["Response to iron", "Hb up 1 g/dL in 2-4 weeks", "None"],
+          ],
+        },
+      ],
+      remember: [
+        "Cut-offs: 11 in pregnancy, 10 postpartum, 12 non-pregnant.",
+        "Haemodilution never takes Hb below 10 g/dL.",
+        "Moderate anaemia after 12-14 weeks means IV iron, not another strip of tablets.",
+        "Ganzoni: 2.4 x weight x Hb deficit + 500 mg.",
+        "FCM up to 1000 mg per sitting; iron sucrose only 200 mg per dose.",
+        "Mentzer under 13 with high RBC count: order HPLC, test the husband, stop iron.",
+        "The first postpartum hour is when the anaemic heart fails.",
+      ],
+    },
     updated: [
       "NFHS-6 fact sheets (2026) omitted anaemia pending an ICMR venous-blood survey - NFHS-5 (52.2% of pregnant women anaemic) remains the latest national figure.",
     ],
@@ -142,6 +456,171 @@ const revision: RevisionSet = {
 
   "obstetrics-hypertensive-disorders": {
     checked: "2026-10",
+    notes: {
+      sections: [
+        {
+          title: "Definition and key facts",
+          points: [
+            "Hypertension in pregnancy is **BP 140/90 mmHg or more**, using Korotkoff V, confirmed on repeat.",
+            "**Severe hypertension is 160/110 or more**, and must be treated within **30-60 minutes**.",
+            "**Pre-eclampsia** is hypertension after 20 weeks plus proteinuria or maternal organ or placental dysfunction.",
+            "**Proteinuria is not essential** for pre-eclampsia under ISSHP 2021.",
+            "**Eclampsia** is new generalised seizures in pre-eclampsia, up to 6 weeks postpartum.",
+            "Intracerebral haemorrhage is the **commonest cause of death**.",
+          ],
+        },
+        {
+          title: "Classification that matters",
+          points: [
+            "**Chronic hypertension**: present before pregnancy or before 20 weeks.",
+            "**Gestational hypertension**: new after 20 weeks, without proteinuria or organ dysfunction.",
+            "**Pre-eclampsia**: after 20 weeks, with proteinuria, organ dysfunction, or FGR and abnormal Doppler.",
+            "**Superimposed pre-eclampsia** on chronic hypertension has the worst outcomes.",
+            "**HELLP**: haemolysis, elevated liver enzymes and **low platelets under 100,000**.",
+            "High risk: **previous pre-eclampsia**, chronic hypertension, diabetes, CKD, SLE or APS, twins.",
+            "Moderate risk: first pregnancy, age 40 or over, BMI 35 or over, IVF.",
+          ],
+        },
+        {
+          title: "How it happens (pathophysiology)",
+          points: [
+            "Trophoblast fails to remodel the **spiral arteries**, which stay narrow and high-resistance.",
+            "The poorly perfused placenta suffers oxidative stress and infarcts.",
+            "It releases **sFlt-1 and soluble endoglin**, which trap VEGF and lower **PlGF**.",
+            "Widespread **endothelial dysfunction** causes vasospasm, hypertension and capillary leak.",
+            "The kidney shows **glomerular endotheliosis**, causing proteinuria.",
+            "Brain oedema (**PRES**) causes headache, visual loss and fits.",
+            "Only **delivery of the placenta** cures the disease.",
+          ],
+        },
+        {
+          title: "History in the OPD",
+          points: [
+            "**Headache not relieved by paracetamol** means severe disease and imminent eclampsia.",
+            "Ask about **visual blurring**, flashing lights or sudden loss of vision.",
+            "**Epigastric or right upper quadrant pain** suggests HELLP, often mistaken for acidity.",
+            "Ask about breathlessness, reduced urine, sudden facial swelling and fetal movements.",
+            "Ask about current drugs; **ACE inhibitors, ARBs and atenolol** must be switched.",
+          ],
+        },
+        {
+          title: "Examination",
+          points: [
+            "Measure BP seated after rest, using a **large cuff if the arm is over 33 cm**.",
+            "Check **reflexes and clonus**; 3 or more beats of clonus means cerebral irritability.",
+            "Look for **facial oedema**; pedal oedema alone is not a criterion.",
+            "Check fundus, epigastric tenderness, basal crackles and petechiae.",
+            "A **tense, woody, tender uterus** means abruption.",
+          ],
+        },
+        {
+          title: "Investigations",
+          points: [
+            "**Urine protein-creatinine ratio 30 mg/mmol or more** is significant; do not repeat once confirmed.",
+            "CBC with platelets, creatinine, **ALT, AST and LDH** at diagnosis and twice weekly.",
+            "**sFlt-1/PlGF ratio of 38 or less** rules out pre-eclampsia for the next week.",
+            "Ultrasound for growth and liquor, **umbilical artery Doppler**, and CTG.",
+            "Brain imaging only for focal signs or fits despite magnesium.",
+          ],
+        },
+        {
+          title: "Treatment - first line",
+          points: [
+            "Start antihypertensives at **140/90 or more**, aiming for diastolic about 85 mmHg.",
+            "**Labetalol** is first line; **nifedipine** is the choice in asthma.",
+            "Methyldopa is third choice and is stopped within 2 days of delivery.",
+            "Restrict total fluids to about **80 mL per hour** to prevent pulmonary oedema.",
+            "Bed rest and salt restriction are **not** recommended.",
+          ],
+        },
+        {
+          title: "Treatment - next steps",
+          points: [
+            "For 160/110 give **oral nifedipine IR 10 mg**, then 20 mg at 20 and 40 minutes.",
+            "Or give **IV labetalol 20, 40, then 80 mg** every 10 minutes, maximum 300 mg.",
+            "Give **magnesium sulphate** for eclampsia and pre-eclampsia with severe features.",
+            "Continue magnesium for **24 hours after delivery or the last fit**, whichever is later.",
+            "Steroids if delivery before 34 weeks is likely, but **never delay delivery** for them in eclampsia.",
+            "Deliver at **37 weeks** without severe features and at **34 weeks** with severe features.",
+          ],
+        },
+        {
+          title: "Complications and red flags",
+          points: [
+            "Eclampsia drill: **left lateral, airway, oxygen**, two IV lines and magnesium loading dose.",
+            "Fetal bradycardia after a fit usually recovers in 3-10 minutes, so **stabilise then deliver**.",
+            "Before each magnesium dose check **patellar reflex, RR 16 or more and urine 30 mL/h**.",
+            "Magnesium toxicity: give **calcium gluconate 10%, 10 mL IV** over 10 minutes.",
+            "**Never give methylergometrine** in hypertension; use oxytocin for the third stage.",
+          ],
+        },
+        {
+          title: "Referral and follow-up",
+          points: [
+            "Give the **MgSO4 loading dose and oral nifedipine before transfer** from a PHC.",
+            "Check BP 4 times a day for **72 hours postpartum**, then on day 3-5 and 7-10.",
+            "**Enalapril** is safe in breastfeeding for postpartum hypertension.",
+            "Hypertension persisting beyond **12 weeks postpartum** is chronic hypertension.",
+            "Pre-eclampsia **doubles lifetime heart disease and stroke risk**; check BP yearly.",
+          ],
+        },
+      ],
+      tables: [
+        {
+          heading: "Drugs in hypertensive disorders of pregnancy",
+          columns: ["Drug", "Dose and route", "Duration", "Key side effects / cautions"],
+          rows: [
+            ["Labetalol (oral)", "100 mg BD, up to 2400 mg/day", "Until delivery, taper postpartum", "Bronchospasm; avoid in asthma; neonatal hypoglycaemia"],
+            ["Labetalol (IV)", "20, 40, then 80 mg every 10 min", "Max 300 mg cumulative", "Bradycardia, hypotension"],
+            ["Nifedipine", "IR 10 mg PO, then 20 mg at 20 and 40 min", "Maintenance ER 20-60 mg/day, max 120", "Headache, flushing; never sublingual"],
+            ["Methyldopa", "250 mg BD-TDS, up to 3 g/day", "Stop within 2 days postpartum", "Sedation, depression, raised LFT"],
+            ["Hydralazine", "5 mg IV, then 5-10 mg every 20 min", "Max 20 mg", "Tachycardia, sudden hypotension; preload fluid"],
+            ["Magnesium sulphate", "Pritchard or Zuspan (see table)", "24 h after delivery or last fit", "Loss of reflexes, respiratory depression"],
+            ["Calcium gluconate 10%", "10 mL (1 g) IV over 10 min", "For magnesium toxicity", "Keep drawn up at bedside"],
+            ["Aspirin (prevention)", "150 mg oral at bedtime", "12 (before 16) to 36 weeks", "Dyspepsia, bleeding"],
+          ],
+        },
+        {
+          heading: "Magnesium sulphate regimens",
+          columns: ["Regimen", "Loading dose", "Maintenance", "Notes"],
+          rows: [
+            ["Pritchard (IM)", "4 g of 20% IV plus 10 g of 50% deep IM", "5 g of 50% IM every 4 h", "No pump needed; used before referral"],
+            ["Zuspan (IV)", "4 g IV over 15-20 min", "1 g per hour by pump", "Needs pump and 1:1 nursing"],
+            ["Recurrent fit", "2 g of 20% IV over 5 min", "Continue maintenance", "4 g if over 70 kg"],
+          ],
+        },
+        {
+          heading: "Classification and timing of delivery",
+          columns: ["Category", "Onset", "Key feature", "Deliver at"],
+          rows: [
+            ["Chronic hypertension", "Before 20 weeks", "BP 140/90 or more", "38-39+6 weeks (37-39+6 on drugs)"],
+            ["Gestational hypertension", "After 20 weeks", "No proteinuria or organ dysfunction", "37 weeks"],
+            ["Pre-eclampsia", "After 20 weeks", "Proteinuria or organ or placental dysfunction", "37 weeks"],
+            ["Pre-eclampsia, severe features", "After 20 weeks", "160/110, platelets under 100,000, symptoms", "34 weeks"],
+            ["Eclampsia or worsening HELLP", "Any time", "Fits, or haemolysis and low platelets", "After stabilisation"],
+          ],
+        },
+        {
+          heading: "Magnesium levels and toxicity",
+          columns: ["Level (mEq/L)", "Effect"],
+          rows: [
+            ["4-7", "Therapeutic range"],
+            ["About 10", "Patellar reflex lost"],
+            ["12-15", "Respiratory depression and paralysis"],
+            ["Over 25", "Cardiac arrest"],
+          ],
+        },
+      ],
+      remember: [
+        "Magnesium prevents fits but does not lower BP - always add an antihypertensive.",
+        "Pritchard: 4 g IV + 10 g IM, then 5 g IM 4-hourly for 24 hours.",
+        "Before each dose: reflex present, RR 16 or more, urine 30 mL/h.",
+        "Nifedipine is swallowed, never sublingual; IV labetalol stops at 300 mg.",
+        "HELLP: Haemolysis, Elevated Liver enzymes, Low Platelets.",
+        "Fluids 80 mL/h - iatrogenic pulmonary oedema is a preventable death.",
+        "No methylergometrine in any hypertensive woman.",
+      ],
+    },
     master: {
       heading: "Master revision table - hypertensive disorders of pregnancy",
       columns: ["Aspect", "High-yield points"],
@@ -207,6 +686,158 @@ const revision: RevisionSet = {
 
   "obstetrics-gdm": {
     checked: "2026-10",
+    notes: {
+      sections: [
+        {
+          title: "Definition and key facts",
+          points: [
+            "**GDM** is hyperglycaemia first detected in pregnancy that does not meet overt diabetes criteria.",
+            "**Overt diabetes**: fasting 126 mg/dL or more, or **HbA1c 6.5% or more**.",
+            "GDM affects about **10-14% of Indian pregnancies**.",
+            "Asian Indian women carry high risk at a low BMI, so India screens **every woman**.",
+            "About **half develop type 2 diabetes** within 5-10 years.",
+          ],
+        },
+        {
+          title: "Classification that matters",
+          points: [
+            "**A1GDM** is controlled on diet alone.",
+            "**A2GDM** needs metformin or insulin and has higher stillbirth risk.",
+            "**DIPSI** (India): 2-hour value of **140 mg/dL or more** after 75 g glucose, non-fasting.",
+            "A DIPSI value of 120-139 is decreased glucose tolerance: diet advice and retest.",
+            "**IADPSG/WHO 2013**: fasting 92, 1-hour 180 or 2-hour 153 mg/dL, any one value.",
+            "Risk factors: previous GDM, **previous baby 3.5 kg or more**, family history and PCOS.",
+          ],
+        },
+        {
+          title: "How it happens (pathophysiology)",
+          points: [
+            "Placental hormones such as **human placental lactogen** halve insulin sensitivity from mid-pregnancy.",
+            "A normal woman doubles or triples her insulin output to compensate.",
+            "GDM occurs when **beta cells cannot compensate**, the same defect behind type 2 diabetes.",
+            "Maternal glucose crosses the placenta but **insulin does not** (Pedersen hypothesis).",
+            "Fetal hyperinsulinaemia causes **macrosomia**, so shoulders outgrow the head.",
+            "Fetal polyuria causes **polyhydramnios**.",
+            "After birth fetal hyperinsulinism persists, causing **neonatal hypoglycaemia**.",
+          ],
+        },
+        {
+          title: "History in the OPD",
+          points: [
+            "Most women have **no symptoms**, so diagnosis depends on testing.",
+            "Ask about previous GDM, big babies, stillbirth, polyhydramnios and shoulder dystocia.",
+            "Take a **diet history** of her real meals: rice, sugar in tea, sweets and juice.",
+            "On treatment, review the **glucose diary** and ask about hypoglycaemia episodes.",
+            "Ask about **reduced fetal movements**, which need same-day assessment.",
+          ],
+        },
+        {
+          title: "Examination",
+          points: [
+            "Record **weight and BMI** at booking and weight gain at every visit.",
+            "Look for **acanthosis nigricans** and signs of PCOS.",
+            "Check **BP and urine protein** every visit; pre-eclampsia risk doubles.",
+            "SFH larger than dates suggests **macrosomia or polyhydramnios**.",
+            "Examine injection sites for **lipohypertrophy** in insulin users.",
+          ],
+        },
+        {
+          title: "Investigations",
+          points: [
+            "**DIPSI at the first visit**, and again at **24-28 weeks** if the first was normal.",
+            "Use **venous plasma glucose** for diagnosis; a glucometer is only for monitoring.",
+            "Targets: **fasting under 95, 1-hour under 140, 2-hour under 120 mg/dL**.",
+            "Check urine ketones if vomiting or on a very restrictive diet.",
+            "Anomaly scan at 18-20 weeks, then growth and liquor every 3-4 weeks from 28 weeks.",
+          ],
+        },
+        {
+          title: "Treatment - first line",
+          points: [
+            "**Medical nutrition therapy for 2 weeks** controls about 80% of GDM.",
+            "Give about **30 kcal/kg ideal body weight** daily, with 40-50% carbohydrate.",
+            "Keep carbohydrate at least **175 g a day** to avoid starvation ketosis.",
+            "Swap polished rice and sugar for millets, dal, vegetables and whole fruit.",
+            "**Walk 15-20 minutes after each main meal**.",
+          ],
+        },
+        {
+          title: "Treatment - next steps",
+          points: [
+            "Start a drug if the **2-hour value stays 120 mg/dL or more** after 2 weeks of diet.",
+            "**Metformin** is accepted first in mild hyperglycaemia; add insulin if targets are not met.",
+            "**Insulin** is most effective and **does not cross the placenta**.",
+            "Bedtime **NPH** treats high fasting values; pre-meal regular insulin treats post-meal peaks.",
+            "Antenatal steroids raise glucose for 3-5 days, so **increase insulin**.",
+            "**Stop all GDM drugs** after delivery of the placenta.",
+          ],
+        },
+        {
+          title: "Complications and red flags",
+          points: [
+            "**DKA** occurs at lower glucose in pregnancy, even under 200 mg/dL.",
+            "**Macrosomia** with EFW 4500 g or more: offer caesarean.",
+            "A **sudden fall in insulin need** in late pregnancy may signal placental insufficiency.",
+            "Hypoglycaemia: **rule of 15** - 15 g fast sugar, recheck after 15 minutes.",
+            "In labour omit morning insulin and keep glucose **70-110 mg/dL** hourly.",
+          ],
+        },
+        {
+          title: "Referral and follow-up",
+          points: [
+            "Deliver diet-controlled GDM at **39-40+6 weeks**, and medication-treated at 39-39+6 weeks.",
+            "Breastfeed **within the first hour** and check baby's glucose before feeds for 24 hours.",
+            "Do a **75 g OGTT at 6-12 weeks postpartum**, not HbA1c.",
+            "Then screen **every 1-3 years for life**, yearly if prediabetes.",
+            "Refer for overt diabetes, insulin above 1 unit/kg, DKA, macrosomia or hypertension.",
+          ],
+        },
+      ],
+      tables: [
+        {
+          heading: "Drugs in gestational diabetes",
+          columns: ["Drug", "Dose and route", "Duration", "Key side effects / cautions"],
+          rows: [
+            ["Metformin", "500 mg oral OD, up 500 mg weekly; max 2000-2500 mg/day", "Until delivery; stop after placenta", "Nausea, diarrhoea, B12 deficiency; crosses placenta"],
+            ["NPH insulin", "0.1-0.2 U/kg SC at 10 pm", "Titrate 2 U every 3 days", "Nocturnal hypoglycaemia, weight gain"],
+            ["Regular human insulin", "2-4 U SC, 30 min before meal", "Titrate 2 U every 2-3 days", "Hypoglycaemia"],
+            ["Aspart or lispro", "2-4 U SC, 0-15 min before meal", "Titrate to post-meal targets", "Hypoglycaemia"],
+            ["Premixed 30/70 insulin", "0.1-0.2 U/kg/day SC, two-thirds morning", "Before breakfast and dinner", "Hypoglycaemia before lunch and at night"],
+            ["Glibenclamide (second line)", "2.5-5 mg oral, max 20 mg/day", "Only if insulin refused", "Neonatal hypoglycaemia, macrosomia"],
+          ],
+        },
+        {
+          heading: "Diagnostic criteria: DIPSI versus IADPSG",
+          columns: ["Feature", "DIPSI (India)", "IADPSG / WHO 2013"],
+          rows: [
+            ["Fasting needed", "No", "Yes, 8-hour fast"],
+            ["Load", "75 g glucose in 300 mL water", "75 g glucose"],
+            ["Samples", "One at 2 hours", "Fasting, 1 hour and 2 hours"],
+            ["GDM if", "2-hour 140 mg/dL or more", "92, 180 or 153 mg/dL, any one"],
+            ["When", "First visit and 24-28 weeks", "24-28 weeks"],
+          ],
+        },
+        {
+          heading: "Glucose targets and key cut-offs",
+          columns: ["Measure", "Value", "Meaning"],
+          rows: [
+            ["Fasting", "Under 95 mg/dL", "Target on treatment"],
+            ["1-hour post-meal", "Under 140 mg/dL", "Target on treatment"],
+            ["2-hour post-meal", "Under 120 mg/dL", "Target; 120 or more after MNT means drugs"],
+            ["Intrapartum", "70-110 mg/dL", "Hourly check in labour"],
+            ["Neonatal glucose", "Under 45 mg/dL", "Treat the baby"],
+          ],
+        },
+      ],
+      remember: [
+        "DIPSI: 75 g glucose regardless of last meal, one 2-hour sample, 140 or more is GDM.",
+        "Test every woman twice: booking and 24-28 weeks.",
+        "Targets 95 / 140 / 120 - fasting, 1-hour, 2-hour.",
+        "Insulin does not cross the placenta; metformin and glibenclamide do.",
+        "Omit morning insulin in labour; stop all drugs after the placenta.",
+        "Postpartum OGTT at 6-12 weeks, then every 1-3 years for life.",
+      ],
+    },
     master: {
       heading: "Master revision table - gestational diabetes (DIPSI, FOGSI)",
       columns: ["Aspect", "High-yield points"],
@@ -260,6 +891,164 @@ const revision: RevisionSet = {
 
   "obstetrics-labour-partograph": {
     checked: "2026-10",
+    notes: {
+      sections: [
+        {
+          title: "Definition and key facts",
+          points: [
+            "**Labour** is regular painful contractions causing **progressive cervical dilatation** and descent.",
+            "**Cervical change, not pain, proves labour**.",
+            "Normal labour: spontaneous onset at **37-42 weeks**, single vertex, no complications.",
+            "**False labour** shows no cervical change on two examinations 4 hours apart.",
+            "LaQshya and Dakshata mandate a **real-time partograph** and the Safe Childbirth Checklist.",
+          ],
+        },
+        {
+          title: "Classification that matters",
+          points: [
+            "**Latent first stage**: up to 5 cm, with no fixed time limit and no need to intervene.",
+            "**Active first stage**: from **5 cm** to full dilatation (WHO 2018).",
+            "Active phase usually lasts **under 12 hours in a first labour** and under 10 later.",
+            "**Second stage**: up to 3 hours in a nullipara and 2 hours in a multipara.",
+            "**Third stage** is prolonged if over **30 minutes**; the fourth stage is the first 1-2 hours.",
+          ],
+        },
+        {
+          title: "How it happens (pathophysiology)",
+          points: [
+            "**Functional progesterone withdrawal** removes the brake on the uterus.",
+            "Oxytocin receptors rise 100-200 fold and **gap junctions** couple muscle cells.",
+            "**Prostaglandins** contract the myometrium and ripen the cervix.",
+            "Myometrium **retracts**, thickening the upper segment and thinning the lower segment.",
+            "A **well-flexed head** presents the smallest diameter, suboccipito-bregmatic 9.5 cm.",
+            "In obstruction, the lower segment thins until it ruptures; **Bandl's ring** rises.",
+          ],
+        },
+        {
+          title: "History in the OPD",
+          points: [
+            "Ask when pains began, how often they come, and whether they are getting stronger.",
+            "Ask about **leaking fluid**: time, colour and smell; over **18 hours** needs antibiotics.",
+            "**Fresh bleeding forbids digital PV** until placenta praevia is excluded.",
+            "Ask about fetal movements, gestational age and a **previous caesarean**.",
+            "Ask about headache, blurred vision or fits, which need magnesium first.",
+          ],
+        },
+        {
+          title: "Examination",
+          points: [
+            "Record pulse, BP and temperature; **pulse over 100** suggests dehydration, bleeding or infection.",
+            "Palpate descent in fifths; **2/5 or less palpable is engaged**.",
+            "Count contractions for 10 minutes; adequate is **3-5 in 10 minutes**, 40-60 seconds each.",
+            "Listen to FHR **every 30 minutes** in active labour and **every 5 minutes** in the second stage.",
+            "PV every **4 hours**: dilatation, station, position, liquor colour, caput and moulding.",
+            "**Bishop score 8 or more** is favourable; **6 or less** needs ripening first.",
+          ],
+        },
+        {
+          title: "Investigations",
+          points: [
+            "Check booking Hb, group, HIV, syphilis and HBsAg; do rapid tests if missing.",
+            "Dipstick urine for **protein and ketones** at each void.",
+            "**Intermittent auscultation** is the standard for low-risk labour.",
+            "**Admission CTG is not recommended** for low-risk women.",
+            "Use continuous CTG for high-risk labour, read with **FIGO 2015** categories.",
+          ],
+        },
+        {
+          title: "Diagnosis",
+          points: [
+            "The **WHO Labour Care Guide (2020)** starts at **5 cm** with an alert for every parameter.",
+            "LCG time alerts: **5 cm 6 h, 6 cm 5 h, 7 cm 3 h, 8 cm 2.5 h, 9 cm 2 h**.",
+            "The **modified partograph** starts at 4 cm with an alert line at 1 cm per hour.",
+            "The **action line** lies **4 hours to the right** of the alert line.",
+            "Crossing the alert line where there is no caesarean facility means **refer now**.",
+            "**Moulding +++** with poor descent means cephalopelvic disproportion.",
+          ],
+        },
+        {
+          title: "Treatment - first line",
+          points: [
+            "Allow a **birth companion**, mobility, oral fluids and light food.",
+            "Let her **push with the urge** and choose her position; **no fundal pressure**.",
+            "**Routine episiotomy is not recommended**.",
+            "Give **oxytocin 10 IU IM within 1 minute of birth** after excluding a second twin.",
+            "Newborn: delayed cord clamping 1-3 minutes, skin-to-skin, **breastfeed within 1 hour**.",
+          ],
+        },
+        {
+          title: "Treatment - next steps",
+          points: [
+            "For slow active labour, exclude disproportion, then **amniotomy plus oxytocin**.",
+            "Augment only **where a caesarean can be done**.",
+            "Oxytocin **tachysystole** (over 5 in 10 minutes): stop, left lateral, terbutaline 0.25 mg SC.",
+            "**Never give misoprostol for induction to a scarred uterus**; use a Foley catheter.",
+            "Membranes ruptured over 18 hours or fever: **ampicillin 2 g IV**.",
+          ],
+        },
+        {
+          title: "Complications and red flags",
+          points: [
+            "**Cord prolapse**: knee-chest position, push the presenting part up, immediate caesarean.",
+            "**Shoulder dystocia**: McRoberts plus suprapubic pressure first, never fundal pressure.",
+            "**Obstructed labour**: no oxytocin, catheterise, antibiotics and urgent transfer.",
+            "Abnormal FHR: stop oxytocin, left lateral, IV fluid, expedite delivery.",
+            "Retained placenta over 30 minutes: empty bladder, oxytocin, then **manual removal**.",
+            "Fourth stage: check pulse, BP, tone and bleeding **every 15 minutes for the first hour**.",
+            "A referral is complete only with **IV line running, chart sent and a phone call ahead**.",
+          ],
+        },
+      ],
+      tables: [
+        {
+          heading: "Drugs in labour",
+          columns: ["Drug", "Dose and route", "Duration", "Key side effects / cautions"],
+          rows: [
+            ["Oxytocin (AMTSL)", "10 IU IM", "Once, within 1 min of birth", "Exclude second twin first"],
+            ["Oxytocin infusion", "5 IU in 500 mL RL; start 1-2 mIU/min", "Raise every 30 min, max 32 mIU/min", "Tachysystole, rupture, water intoxication"],
+            ["Carbetocin", "100 microgram IM or slow IV", "Once after birth", "Prevention only, not induction"],
+            ["Misoprostol", "25 microgram oral 2-hourly (induction); 600 microgram oral (PPH prevention)", "Induction max usually 6 doses", "Shivering, fever; never with uterine scar"],
+            ["Dinoprostone gel", "0.5 mg intracervical", "6-hourly, max 1.5 mg in 24 h", "Tachysystole; oxytocin 6 h after last dose"],
+            ["Ergometrine", "0.2 mg IM", "Repeat after 15 min, max 1 mg", "Avoid in hypertension and heart disease"],
+            ["Pethidine", "50-100 mg IM with antiemetic", "4-hourly", "Neonatal respiratory depression; avoid near birth"],
+            ["Ampicillin", "2 g IV, then 1 g 4-hourly", "Until delivery", "Add gentamicin 5 mg/kg for chorioamnionitis"],
+          ],
+        },
+        {
+          heading: "Partograph versus Labour Care Guide",
+          columns: ["Feature", "Modified partograph", "WHO Labour Care Guide 2020"],
+          rows: [
+            ["Starts at", "4 cm", "5 cm"],
+            ["Progress rule", "Alert line at 1 cm per hour", "Time limit at each centimetre"],
+            ["Action trigger", "Action line 4 hours right of alert", "Any circled alert value"],
+            ["Extra content", "FHR, liquor, moulding, vitals", "Adds supportive care and shared decisions"],
+            ["Use in India", "SBA and Dakshata training", "WHO current standard"],
+          ],
+        },
+        {
+          heading: "Key Labour Care Guide alert values",
+          columns: ["Parameter", "Alert threshold"],
+          rows: [
+            ["Baseline FHR", "Under 110 or 160 or more"],
+            ["Liquor", "Thick meconium or blood-stained"],
+            ["Maternal pulse", "Under 60 or 120 or more"],
+            ["Blood pressure", "Systolic 140 or more, or diastolic 90 or more"],
+            ["Temperature", "37.5 C or more"],
+            ["Contractions", "2 or fewer, or more than 5 in 10 min"],
+            ["Second stage", "3 h nullipara, 2 h multipara"],
+          ],
+        },
+      ],
+      remember: [
+        "Cervical change on two examinations 4 hours apart separates true from false labour.",
+        "Active phase starts at 5 cm; 1 cm per hour alone is no longer a trigger.",
+        "LCG limits: 5-6-7-8-9 cm for 6-5-3-2.5-2 hours.",
+        "Action line is 4 hours right of the alert line - the built-in transfer time.",
+        "Oxytocin 10 IU IM within 1 minute of birth is the single most effective act.",
+        "Shoulder dystocia: McRoberts plus suprapubic pressure; never fundal pressure.",
+        "Bishop 8 or more favourable, 6 or less needs ripening.",
+      ],
+    },
     master: {
       heading: "Master revision table - labour, partograph and Labour Care Guide",
       columns: ["Aspect", "High-yield points"],
@@ -324,6 +1113,159 @@ const revision: RevisionSet = {
 
   "obstetrics-pph": {
     checked: "2026-10",
+    notes: {
+      sections: [
+        {
+          title: "Definition and key facts",
+          points: [
+            "**PPH** is blood loss of **500 mL or more within 24 hours** of birth.",
+            "**Severe PPH** is **1000 mL or more**.",
+            "WHO 2025 starts treatment at **300 mL with abnormal vital signs**.",
+            "**Secondary PPH** is abnormal bleeding from 24 hours to 12 weeks after birth.",
+            "PPH causes about **a quarter of maternal deaths in India**, mostly within 2-4 hours.",
+            "Two-thirds of women with PPH have **no risk factor**.",
+            "Visual estimates miss 30-50%; use a **calibrated under-buttock drape**.",
+          ],
+        },
+        {
+          title: "Classification that matters",
+          points: [
+            "**Tone** (atony) causes about **70%**.",
+            "**Trauma** (tears, haematoma, rupture, inversion) causes about **20%**.",
+            "**Tissue** (retained placenta, accreta) causes about **10%**.",
+            "**Thrombin** (coagulopathy, DIC) causes under 1%.",
+            "Examine in the same order: tone, trauma, tissue, thrombin.",
+          ],
+        },
+        {
+          title: "How it happens (pathophysiology)",
+          points: [
+            "At term the uterus receives **500-750 mL of blood per minute**.",
+            "After the placenta separates, contracting fibres clamp the vessels as **living ligatures**.",
+            "Overdistension, long labour, infection and relaxant drugs stop the uterus contracting.",
+            "Fibrinolysis rises within an hour of birth, so **tranexamic acid** helps every cause.",
+            "Fibrinogen **under 2 g/L** predicts severe haemorrhage.",
+            "Pregnancy blood volume hides loss, so **tachycardia appears before hypotension**.",
+          ],
+        },
+        {
+          title: "History in the OPD",
+          points: [
+            "Antenatally ask about **previous PPH**, which recurs in 10-15%.",
+            "Ask about previous caesarean; **praevia over a scar** raises accreta risk.",
+            "Check Hb; correcting anaemia makes a PPH survivable.",
+            "At the bedside ask about labour length, oxytocin use and **placental completeness**.",
+            "Perineal pain with stable lochia suggests a **vulval or paravaginal haematoma**.",
+          ],
+        },
+        {
+          title: "Examination",
+          points: [
+            "Check vitals every 5-15 minutes and calculate the **shock index** (pulse divided by systolic).",
+            "A shock index of **0.9 or more** predicts poor outcome.",
+            "A **soft, boggy uterus** is atony; a firm uterus with bleeding is trauma.",
+            "An absent fundus with shock out of proportion to loss means **uterine inversion**.",
+            "**Bedside clotting test**: no clot in 7 minutes means coagulopathy.",
+          ],
+        },
+        {
+          title: "Investigations",
+          points: [
+            "**Never delay treatment for tests**.",
+            "Send Hb, platelets, group and cross-match of 2-4 units.",
+            "PT, aPTT and **fibrinogen**; under 2 g/L needs cryoprecipitate.",
+            "In secondary PPH, ultrasound for retained products and swabs before antibiotics.",
+          ],
+        },
+        {
+          title: "Treatment - first line",
+          points: [
+            "Prevent with **oxytocin 10 IU IM within 1 minute of birth** for every woman.",
+            "Treat with the **MOTIVE bundle within 15 minutes**, all at once.",
+            "MOTIVE: **Massage, Oxytocic, Tranexamic acid, IV fluids, Examine, Escalate**.",
+            "Oxytocin infusion: **20 IU in 1 litre at 60 drops/min**, never a fast bolus.",
+            "**Tranexamic acid 1 g IV over 10 minutes** within 3 hours; repeat after 30 minutes if needed.",
+            "Call for help, two wide-bore cannulae, warm fluids, oxygen and a catheter.",
+          ],
+        },
+        {
+          title: "Treatment - next steps",
+          points: [
+            "Add **methylergometrine 0.2 mg IM** if BP is normal.",
+            "Or **carboprost 250 microgram IM** every 15 minutes if there is no asthma.",
+            "Or **misoprostol 800 microgram sublingual** when injectables are unavailable.",
+            "**Bimanual compression** or **condom-catheter balloon** with 300-500 mL saline.",
+            "Then surgery: B-Lynch suture, artery ligation, and **hysterectomy** without delay.",
+            "Retained placenta: one attempt at cord traction, then **manual removal under anaesthesia**.",
+          ],
+        },
+        {
+          title: "Complications and red flags",
+          points: [
+            "**Ergometrine never in hypertension**; carboprost never in asthma.",
+            "**Carbetocin prevents but does not treat** PPH.",
+            "Over 3.5 litres of clear fluid before blood causes **dilutional coagulopathy**.",
+            "The **lethal triad** is hypothermia, acidosis and coagulopathy.",
+            "Failed lactation after big PPH means **Sheehan syndrome** until proved otherwise.",
+          ],
+        },
+        {
+          title: "Referral and follow-up",
+          points: [
+            "Refer when first-line measures fail, with **compression or balloon in place** during transfer.",
+            "Send a note of times, estimated loss and drugs given.",
+            "Observe 24 hours in high dependency; check **Hb at 24-48 hours** and 6 weeks.",
+            "Give IV iron for Hb 7-10 g/dL and **thromboprophylaxis** once bleeding stops.",
+            "Flag the next pregnancy for delivery at a **CEmOC facility with blood**.",
+          ],
+        },
+      ],
+      tables: [
+        {
+          heading: "Uterotonics and drugs in PPH",
+          columns: ["Drug", "Dose and route", "Duration", "Key side effects / cautions"],
+          rows: [
+            ["Oxytocin (prevention)", "10 IU IM", "Once, within 1 min of birth", "First line for every birth"],
+            ["Oxytocin (treatment)", "20 IU in 1 L at 60, then 40 drops/min", "Max 3 L of oxytocin fluid", "Hypotension if fast bolus; water intoxication"],
+            ["Tranexamic acid", "1 g IV over 10 min", "Within 3 h; repeat 1 g after 30 min", "Hypotension if fast; useless after 3 h"],
+            ["Methylergometrine", "0.2 mg IM or slow IV", "Repeat at 15 min, max 1 mg/24 h", "Never in hypertension or heart disease"],
+            ["Carboprost", "250 microgram deep IM", "Every 15 min, max 8 doses", "Never in asthma; diarrhoea, fever"],
+            ["Misoprostol", "800 microgram sublingual (treatment)", "Once", "Shivering, fever"],
+            ["Carbetocin", "100 microgram IM or slow IV", "Once after birth", "Prevention only, not treatment"],
+            ["Ferric carboxymaltose", "20 mg/kg up to 1000 mg IV", "Single dose postpartum", "Hypophosphataemia, rare anaphylaxis"],
+          ],
+        },
+        {
+          heading: "The four Ts",
+          columns: ["Cause", "Share", "Clue", "First step"],
+          rows: [
+            ["Tone", "About 70%", "Soft boggy uterus", "Massage, oxytocin, TXA"],
+            ["Trauma", "About 20%", "Firm uterus, bright bleeding", "Speculum, light, repair"],
+            ["Tissue", "About 10%", "Incomplete or retained placenta", "Manual removal under anaesthesia"],
+            ["Thrombin", "Under 1%", "Oozing, no clot in 7 min", "FFP, cryoprecipitate, platelets"],
+          ],
+        },
+        {
+          heading: "Severity of haemorrhagic shock",
+          columns: ["Class", "Blood loss", "Signs", "Shock index"],
+          rows: [
+            ["Compensated", "500-1000 mL", "BP normal, mild tachycardia", "Under 0.9"],
+            ["Mild", "1000-1500 mL", "Systolic 80-100, pulse 100-120", "0.9-1.2"],
+            ["Moderate", "1500-2000 mL", "Systolic 70-80, pulse over 120, oliguria", "1.2-1.5"],
+            ["Severe", "Over 2000 mL", "Systolic under 70, collapse", "Over 1.5"],
+          ],
+        },
+      ],
+      remember: [
+        "500 mL in 24 hours; severe 1000 mL; act at 300 mL with abnormal vitals.",
+        "Four Ts: tone 70, trauma 20, tissue 10, thrombin 1 per cent.",
+        "MOTIVE within 15 minutes: Massage, Oxytocic, TXA, IV fluids, Examine, Escalate.",
+        "TXA 1 g IV within 3 hours - benefit falls 10% every 15 minutes of delay.",
+        "Ergometrine never in hypertension; carboprost never in asthma.",
+        "Condom-catheter balloon stops over 85% of atonic bleeding.",
+        "No lactation after big PPH: think Sheehan syndrome.",
+      ],
+    },
     master: {
       heading: "Master revision table - postpartum haemorrhage",
       columns: ["Aspect", "High-yield points"],
@@ -379,6 +1321,166 @@ const revision: RevisionSet = {
 
   "obstetrics-early-pregnancy-bleeding": {
     checked: "2026-10",
+    notes: {
+      sections: [
+        {
+          title: "Definition and key facts",
+          points: [
+            "Bleeding before 20 weeks is **miscarriage, ectopic or molar pregnancy** until proved otherwise.",
+            "**Miscarriage** is pregnancy loss before **20 weeks**, in 10-20% of clinical pregnancies.",
+            "**Ectopic pregnancy** is implantation outside the uterine cavity; **95% are tubal**.",
+            "**Pregnancy of unknown location** is a positive test with no pregnancy seen on scan.",
+            "**Recurrent pregnancy loss** is two or more (ESHRE) or three or more (RCOG) losses.",
+            "Ectopic risks: **previous ectopic**, PID or genital TB, tubal surgery, IUCD and IVF.",
+          ],
+        },
+        {
+          title: "Classification that matters",
+          points: [
+            "**Threatened**: slight bleeding, os closed, viable pregnancy.",
+            "**Inevitable** and **incomplete**: os open, heavy bleeding; incomplete has retained products.",
+            "**Complete**: bleeding settled, os closed, uterus empty.",
+            "**Missed**: os closed, no heart on scan, symptoms fading.",
+            "**Septic**: fever, foul discharge and a tender uterus.",
+            "Moles: **complete (46,XX, no fetus)** and **partial (69,XXY triploid, fetal parts)**.",
+          ],
+        },
+        {
+          title: "How it happens (pathophysiology)",
+          points: [
+            "**Chromosomal abnormality** causes 50-60% of first-trimester miscarriages.",
+            "hCG keeps the corpus luteum making progesterone until the placenta takes over at 7-9 weeks.",
+            "In a viable pregnancy hCG rises at least **35-50% in 48 hours**.",
+            "Once the os opens, bleeding continues until the uterus is empty.",
+            "Products stuck in the cervix cause **cervical shock**: bradycardia and hypotension.",
+            "The tube has no decidua, so trophoblast erodes vessels and the tube **ruptures**.",
+            "Blood under the diaphragm causes **shoulder-tip pain**.",
+          ],
+        },
+        {
+          title: "History in the OPD",
+          points: [
+            "Do a **urine pregnancy test** in every woman of reproductive age with pain or fainting.",
+            "Ask how many pads are soaked per hour and whether **tissue was passed**.",
+            "**Unilateral sharp pain** with scanty dark bleeding suggests ectopic.",
+            "Fainting or shoulder-tip pain means **ruptured ectopic** until proved otherwise.",
+            "Ask gently about any pills or procedures taken to end the pregnancy.",
+            "Ask whether the pregnancy is wanted, and about contraception plans.",
+          ],
+        },
+        {
+          title: "Examination",
+          points: [
+            "**Check for shock first**; a pulse over 100 is an early warning.",
+            "Look for guarding, rigidity and shifting dullness of haemoperitoneum.",
+            "On speculum, note whether the **os is open or closed**.",
+            "**Remove products from the os** with sponge forceps to stop bleeding and cervical shock.",
+            "Cervical motion tenderness and an adnexal mass suggest ectopic.",
+            "Uterus larger than dates with no fetal parts suggests **mole**.",
+          ],
+        },
+        {
+          title: "Investigations",
+          points: [
+            "**Transvaginal ultrasound** with serum beta-hCG is the key pairing.",
+            "Miscarriage is confirmed by **CRL 7 mm or more with no heart**.",
+            "Or by **mean sac diameter 25 mm or more** with no embryo.",
+            "An empty uterus with hCG above **1500-2000 mIU/mL** is ectopic until located.",
+            "In PUL, hCG rising **over 63%** in 48 hours suggests intrauterine pregnancy.",
+            "A fall over 50% suggests failing pregnancy; anything between is **ectopic until excluded**.",
+          ],
+        },
+        {
+          title: "Treatment - first line",
+          points: [
+            "Threatened: reassure; **bed rest does not prevent miscarriage**.",
+            "Give **vaginal progesterone 400 mg BD** to 16 weeks only after a previous miscarriage.",
+            "Incomplete: **misoprostol 600 microgram oral** or MVA.",
+            "Missed: **mifepristone 200 mg**, then **misoprostol 800 microgram** 24-48 hours later.",
+            "**MVA** is the surgical method of choice; sharp curettage should be abandoned.",
+            "Offer **post-abortion contraception** at the same visit.",
+          ],
+        },
+        {
+          title: "Treatment - next steps",
+          points: [
+            "**Methotrexate 50 mg/m2 IM** for a stable, unruptured ectopic under 35 mm.",
+            "Methotrexate needs **no cardiac activity** and hCG under 1500 IU/L as first line.",
+            "Check hCG on **days 4 and 7**; a fall of 15% or more is success.",
+            "Surgery (**laparoscopic salpingectomy**) for rupture, instability, heartbeat or hCG over 5000.",
+            "Mole: **suction evacuation**, then hCG follow-up until normal.",
+            "Septic abortion: **ampicillin, gentamicin and metronidazole IV**, then evacuation within hours.",
+          ],
+        },
+        {
+          title: "Special groups",
+          points: [
+            "MTP Act 2021: **one RMP up to 20 weeks**.",
+            "**Two RMPs from 20 to 24 weeks** for Rule 3B categories only.",
+            "Rule 3B includes rape survivors, minors, widowed or divorced, disability, and fetal malformation.",
+            "Beyond 24 weeks a **State Medical Board** decides, for substantial fetal abnormality.",
+            "Only the woman's consent is needed; **the husband's consent is never required**.",
+            "Rh-negative women get **anti-D 50 microgram before 12 weeks**, 300 microgram after (India).",
+          ],
+        },
+        {
+          title: "Complications and red flags",
+          points: [
+            "**Ruptured ectopic**: two lines, fluids and theatre; do not wait for a scan.",
+            "Worsening pain or falling Hb after methotrexate means **rupture**, not separation pain.",
+            "Haemoptysis or irregular bleeding after a mole suggests **choriocarcinoma**; check hCG.",
+            "After a mole, **avoid an IUCD** until hCG is normal.",
+          ],
+        },
+      ],
+      tables: [
+        {
+          heading: "Drugs in early pregnancy bleeding",
+          columns: ["Drug", "Dose and route", "Duration", "Key side effects / cautions"],
+          rows: [
+            ["Misoprostol", "600 microgram oral or 400 SL (incomplete)", "Once", "Cramps, bleeding, shivering, fever"],
+            ["Mifepristone", "200 mg oral", "Once, misoprostol 24-48 h later", "Not in ectopic or adrenal failure"],
+            ["Methotrexate (ectopic)", "50 mg/m2 IM", "Single dose; repeat if hCG fall under 15%", "Stomatitis; stop folic acid; no pregnancy 3 months"],
+            ["Micronised progesterone", "400 mg vaginal BD", "Until 16 weeks", "Only after a previous miscarriage"],
+            ["Anti-D immunoglobulin", "50 microgram IM before 12 weeks; 300 after", "Within 72 hours", "Only if Rh negative and ICT negative"],
+            ["Ampicillin + gentamicin + metronidazole", "2 g IV 6-hourly + 5 mg/kg daily + 500 mg 8-hourly", "Until afebrile 48 h", "Gentamicin nephro- and ototoxicity"],
+            ["Doxycycline (prophylaxis)", "200 mg oral", "Once before MVA", "Oesophagitis; take upright with water"],
+          ],
+        },
+        {
+          heading: "Types of miscarriage",
+          columns: ["Type", "Os", "Ultrasound", "Management"],
+          rows: [
+            ["Threatened", "Closed", "Viable pregnancy", "Reassure; progesterone if prior loss"],
+            ["Inevitable", "Open", "Sac low or in cervix", "Misoprostol or MVA"],
+            ["Incomplete", "Open", "Retained products", "Misoprostol 600 microgram or MVA"],
+            ["Complete", "Closed", "Empty uterus", "Confirm; exclude ectopic"],
+            ["Missed", "Closed", "No heart, CRL 7 mm or more", "Mifepristone then misoprostol, or MVA"],
+            ["Septic", "Open, tender uterus", "Retained products", "IV antibiotics and evacuation"],
+          ],
+        },
+        {
+          heading: "MTP (Amendment) Act 2021",
+          columns: ["Gestation", "Opinion needed", "Conditions"],
+          rows: [
+            ["Up to 20 weeks", "One RMP", "Any ground, including contraceptive failure"],
+            ["20-24 weeks", "Two RMPs", "Rule 3B categories only"],
+            ["Beyond 24 weeks", "State Medical Board", "Substantial fetal abnormality"],
+            ["Any gestation", "One RMP (Section 5)", "To save the woman's life"],
+            ["Medical abortion", "RMP", "Up to 9 weeks (63 days)"],
+          ],
+        },
+      ],
+      remember: [
+        "Pregnancy test first in every woman of reproductive age with pain or fainting.",
+        "Discriminatory zone 1500-2000: empty uterus above it is ectopic until located.",
+        "Miscarriage confirmed: CRL 7 mm without heart, or MSD 25 mm without embryo.",
+        "Methotrexate 50 mg/m2 once; hCG days 4 and 7; 15% fall is success.",
+        "Progesterone helps only if she miscarried before (PRISM).",
+        "MTP 2021: 1 RMP to 20, 2 RMPs to 24, Medical Board beyond.",
+        "Husband's consent is never required for MTP.",
+      ],
+    },
     updated: [
       "ACOG 2024 (clinical practice update): routine Rh testing and anti-D can be forgone for spontaneous, medical or surgical loss/abortion before 12+0 weeks, decided individually; India (FOGSI) still gives 50 microgram before 12 weeks.",
     ],
@@ -448,6 +1550,162 @@ const revision: RevisionSet = {
 
   "obstetrics-postnatal-care": {
     checked: "2026-10",
+    notes: {
+      sections: [
+        {
+          title: "Definition and key facts",
+          points: [
+            "The **puerperium** lasts from delivery of the placenta to **6 weeks (42 days)**.",
+            "Most maternal and over half of neonatal deaths occur in the **first week**.",
+            "India: **48-hour facility stay**, then HBNC visits on **days 3, 7, 14, 21, 28 and 42**.",
+            "Add a **day 1** visit after a home birth.",
+            "WHO: at least four contacts - **24 hours, 48-72 hours, 7-14 days and 6 weeks**.",
+            "**Puerperal pyrexia** is a temperature of **38 C or more**.",
+          ],
+        },
+        {
+          title: "Classification that matters",
+          points: [
+            "**Postpartum blues**: 50-80%, days 3-5, settle by 2 weeks.",
+            "**Postpartum depression**: 10-20%, within the first year.",
+            "**Postpartum psychosis**: 1-2 per 1000, within 2 weeks; an emergency.",
+            "Lochia: **rubra** (days 1-4), **serosa** (days 5-9), **alba** (up to 3-6 weeks).",
+          ],
+        },
+        {
+          title: "How it happens (pathophysiology)",
+          points: [
+            "The uterus shrinks from about 1000 g to 60-80 g by **autolysis** over 6 weeks.",
+            "The fundus falls about **1 cm a day** and is impalpable by **day 10-14**.",
+            "**Autotransfusion of about 500 mL** after birth makes the first hours risky in mitral stenosis.",
+            "**VTE risk is highest** in the first 3-6 weeks, about 20 times non-pregnant risk.",
+            "Falling progesterone lets **prolactin** start full milk production on days 2-3.",
+            "Suckling releases **oxytocin** for let-down; pain and anxiety block it.",
+          ],
+        },
+        {
+          title: "History in the OPD",
+          points: [
+            "Review the delivery record: mode, blood loss, tears, and complications.",
+            "Ask about bleeding returning after the first week, which means **secondary PPH**.",
+            "Ask about fever, foul lochia, headache, calf pain and breathlessness.",
+            "Ask how often she feeds, aiming for **8-12 feeds in 24 hours**.",
+            "Screen mood with the **Whooley questions**, and ask alone about self-harm and violence.",
+            "Ask about contraception plans before 6 weeks.",
+          ],
+        },
+        {
+          title: "Examination",
+          points: [
+            "Check temperature, pulse and BP; **pulse over 100** suggests bleeding, sepsis or VTE.",
+            "Examine breasts for engorgement, cracked nipples, **mastitis** or abscess.",
+            "A **bulky, tender uterus** with foul lochia means endometritis or retained products.",
+            "Inspect perineum and caesarean wound, and legs for DVT.",
+            "Observe a feed for the **four signs of good attachment**.",
+            "Weigh the baby; birth weight should be regained by **10-14 days**.",
+          ],
+        },
+        {
+          title: "Investigations",
+          points: [
+            "Check **Hb** after PPH and at 6 weeks after antenatal anaemia.",
+            "Cord blood group and DCT if the mother is Rh negative.",
+            "**75 g OGTT at 6-12 weeks** after GDM.",
+            "Puerperal fever: CBC, blood culture, high vaginal swab, urine culture, ultrasound.",
+            "**EPDS 13 or more** is probable depression; any self-harm answer needs same-day review.",
+          ],
+        },
+        {
+          title: "Treatment - first line",
+          points: [
+            "**Early ambulation**, fluids, perineal hygiene and Kegel exercises.",
+            "Extra **600 kcal a day** during the first 6 months of lactation.",
+            "**IFA daily for 180 days** and **calcium with D3 for 6 months** postpartum.",
+            "**Paracetamol and ibuprofen** are safe; **avoid codeine and tramadol** in breastfeeding.",
+            "**Anti-D 300 microgram IM within 72 hours** for an Rh-negative mother of Rh-positive baby.",
+            "Breastfeed within 1 hour, on demand, and **exclusively for 6 months**.",
+          ],
+        },
+        {
+          title: "Treatment - next steps",
+          points: [
+            "**Mastitis**: keep feeding plus **flucloxacillin 500 mg 6-hourly** for 10-14 days.",
+            "Mild endometritis: **amoxicillin-clavulanate plus metronidazole** for 7 days.",
+            "Postpartum hypertension: nifedipine, labetalol, amlodipine or **enalapril**; stop methyldopa.",
+            "Postpartum depression: **sertraline 50 mg daily**, continued 6-12 months after remission.",
+            "Postpartum psychosis: **emergency admission**, never left alone with the baby.",
+            "Thromboprophylaxis: **enoxaparin 40 mg SC daily** for 10 days or 6 weeks by risk.",
+          ],
+        },
+        {
+          title: "Special groups",
+          points: [
+            "**LAM** works only with amenorrhoea, exclusive feeding and a baby under 6 months.",
+            "**PPIUCD** within 10 minutes of placenta or 48 hours, otherwise after 4-6 weeks.",
+            "**DMPA, POP and implants** can start at delivery in breastfeeding women.",
+            "**No combined pill before 6 weeks** in a breastfeeding woman (MEC 4).",
+            "Sterilisation needs only **her own consent**; spousal consent is not required.",
+            "HIV-positive mothers on ART **breastfeed exclusively** in India.",
+          ],
+        },
+        {
+          title: "Referral and follow-up",
+          points: [
+            "Refer same day for heavy bleeding, fever with tender uterus, or BP 160/110.",
+            "Refer for fits, calf swelling, breathlessness, breast abscess or suicidal thoughts.",
+            "Refer the baby to **SNCU** for poor feeding, fast breathing or jaundice on palms and soles.",
+            "At 6 weeks check BP, Hb, EPDS, contraception and the baby's vaccines.",
+          ],
+        },
+      ],
+      tables: [
+        {
+          heading: "Postnatal drugs",
+          columns: ["Drug", "Dose and route", "Duration", "Key side effects / cautions"],
+          rows: [
+            ["Iron-folic acid", "60 mg iron + 500 microgram FA oral OD", "180 days", "Constipation; not with tea or calcium"],
+            ["Paracetamol / ibuprofen", "1 g 6-hourly / 400 mg 8-hourly oral", "As needed", "Both safe in breastfeeding; no codeine"],
+            ["Flucloxacillin (mastitis)", "500 mg oral 6-hourly", "10-14 days", "Keep feeding; abscess if no better at 48 h"],
+            ["Amoxicillin-clavulanate + metronidazole", "625 mg + 400 mg oral TDS", "7 days", "Mild endometritis; no alcohol"],
+            ["Enoxaparin", "40 mg SC daily (prophylaxis)", "10 days or 6 weeks by risk", "Bleeding; safe in breastfeeding"],
+            ["Sertraline", "50 mg oral daily, up to 200 mg", "6-12 months after remission", "Nausea; watch baby for sleepiness"],
+            ["Anti-D immunoglobulin", "300 microgram IM", "Within 72 h of birth", "Only if ICT negative"],
+            ["DMPA (Antara)", "150 mg deep IM", "Every 3 months, 4-week grace", "Irregular bleeding, weight gain"],
+            ["Cabergoline (suppression)", "1 mg oral once", "Within 24 h of birth", "Avoid in pre-eclampsia"],
+          ],
+        },
+        {
+          heading: "Postpartum mood disorders",
+          columns: ["Feature", "Blues", "Depression", "Psychosis"],
+          rows: [
+            ["Frequency", "50-80%", "10-20%", "1-2 per 1000"],
+            ["Onset", "Days 3-5", "Within first year", "Within 2 weeks"],
+            ["Features", "Tearful, labile, functioning", "Low mood, anhedonia, EPDS 13+", "Confusion, delusions about baby"],
+            ["Action", "Reassure and support", "Support; sertraline if moderate-severe", "Emergency admission"],
+          ],
+        },
+        {
+          heading: "Postpartum contraception timing",
+          columns: ["Method", "When to start", "Note"],
+          rows: [
+            ["LAM", "Birth to 6 months", "All three criteria needed"],
+            ["PPIUCD (Cu-T 380A)", "Within 48 h, or after 4-6 weeks", "Never between 48 h and 4 weeks"],
+            ["Sterilisation", "Within 7 days or after 6 weeks", "Woman's own consent"],
+            ["DMPA, POP, implant", "From delivery", "No effect on milk"],
+            ["Combined pill", "Not before 6 weeks if breastfeeding", "Oestrogen reduces milk"],
+          ],
+        },
+      ],
+      remember: [
+        "Fundus falls 1 cm a day and is impalpable by day 10-14.",
+        "HBNC visits: days 3, 7, 14, 21, 28 and 42.",
+        "Attachment: chin to breast, mouth wide, lower lip out, more areola above.",
+        "LAM needs all three: amenorrhoea, exclusive feeding, baby under 6 months.",
+        "PPIUCD within 48 hours or after 4-6 weeks - never in between.",
+        "Blues settle by 2 weeks; psychosis in the first fortnight is an emergency.",
+        "Stop methyldopa within 2 days of birth - it worsens depression.",
+      ],
+    },
     updated: [
       "WHO MEC 6th edition (2025): POP, implant and DMPA are all category 2 before 6 weeks in breastfeeding women (DMPA moved down from category 3), category 1 thereafter.",
     ],
@@ -516,6 +1774,159 @@ const revision: RevisionSet = {
 
   "obstetrics-preterm-labour-prom": {
     checked: "2026-10",
+    notes: {
+      sections: [
+        {
+          title: "Definition and key facts",
+          points: [
+            "**Preterm birth** is birth before **37 completed weeks**.",
+            "**Preterm labour** is regular contractions with **progressive cervical change** before 37 weeks.",
+            "**PPROM** is membrane rupture before labour and before 37 weeks.",
+            "**Prolonged rupture** is more than **18 hours** before delivery.",
+            "India has the **most preterm births in the world**; prematurity is the leading neonatal killer.",
+          ],
+        },
+        {
+          title: "Classification that matters",
+          points: [
+            "**Extremely preterm**: under 28 weeks.",
+            "**Very preterm**: 28 to 31+6 weeks.",
+            "**Moderate preterm**: 32 to 33+6 weeks.",
+            "**Late preterm**: 34 to 36+6 weeks, about 70% of preterm births.",
+            "**Threatened preterm labour** has contractions without cervical change.",
+          ],
+        },
+        {
+          title: "Causes and risk factors",
+          points: [
+            "**Previous spontaneous preterm birth** is the strongest predictor.",
+            "Cone biopsy or LEEP, uterine anomaly and painless second-trimester loss.",
+            "Twins, polyhydramnios and a **short cervix** on scan.",
+            "Bacteriuria, malaria, anaemia, tobacco, age under 18 and short birth interval.",
+          ],
+        },
+        {
+          title: "How it happens (pathophysiology)",
+          points: [
+            "Four pathways: **infection, decidual bleeding, overdistension and stress**.",
+            "Ascending bacteria trigger cytokines such as **IL-1, IL-6 and TNF-alpha**.",
+            "Cytokines switch on **prostaglandins**, which cause contractions and cervical ripening.",
+            "**Matrix metalloproteinases** digest membrane collagen, causing PPROM.",
+            "Fetal inflammation damages white matter and lungs, causing cerebral palsy.",
+            "Surfactant is adequate only by **34 weeks**, so earlier babies get RDS.",
+          ],
+        },
+        {
+          title: "History in the OPD",
+          points: [
+            "Confirm **gestational age** from the earliest scan; it decides every drug.",
+            "Ask about contractions, **low backache and pelvic pressure**.",
+            "Ask the time, colour and smell of any **leaking fluid**.",
+            "Bleeding with contractions means **abruption or praevia** until excluded.",
+            "Ask about fever, foul discharge and urinary symptoms.",
+          ],
+        },
+        {
+          title: "Examination",
+          points: [
+            "Fever with maternal or fetal tachycardia suggests **chorioamnionitis**.",
+            "Check uterine tenderness, contractions, lie and presentation.",
+            "**Sterile speculum** shows pooling of liquor; ask her to cough.",
+            "**No digital examination in PPROM** unless she is in established labour.",
+            "Dilatation of **2 cm or more with contractions** confirms preterm labour.",
+          ],
+        },
+        {
+          title: "Investigations",
+          points: [
+            "Obvious pooling needs no test; otherwise use **IGFBP-1 or PAMG-1**.",
+            "Cervical length **over 15 mm** at 30 weeks or more makes birth within 48 hours unlikely.",
+            "**Fetal fibronectin under 50 ng/mL** makes birth within 7-14 days unlikely.",
+            "Ultrasound for presentation, weight, liquor and placental site.",
+            "High vaginal swab, urine culture, CBC and CRP as baseline.",
+          ],
+        },
+        {
+          title: "Treatment - first line",
+          points: [
+            "**Dexamethasone 6 mg IM 12-hourly for 4 doses** at 24-34 weeks.",
+            "Give steroids only where **newborn care is available** and there is no maternal infection.",
+            "**Nifedipine** tocolysis buys 48 hours for steroids and transfer.",
+            "**Magnesium sulphate below 32 weeks** protects the baby's brain.",
+            "PPROM: **erythromycin 250 mg 6-hourly for 10 days**.",
+            "**Transfer in utero** to a centre with SNCU or NICU before 34 weeks.",
+          ],
+        },
+        {
+          title: "Treatment - next steps",
+          points: [
+            "**Never co-amoxiclav in PPROM**, because it increases NEC.",
+            "**No maintenance tocolysis** after 48 hours, and **no tocolysis in PPROM**.",
+            "Beta-agonists such as isoxsuprine are **not recommended** for tocolysis.",
+            "Chorioamnionitis: **ampicillin plus gentamicin IV** and expedite delivery.",
+            "PPROM without infection: expectant care **to 37 weeks** is preferred.",
+            "Preterm labour, GBS positive or unknown: **benzylpenicillin IV** until birth.",
+          ],
+        },
+        {
+          title: "Prevention and programmes",
+          points: [
+            "**Vaginal progesterone 200 mg nightly** for a singleton with cervix 25 mm or less.",
+            "**17-OHPC injections are no longer recommended**.",
+            "**History-indicated cerclage** at 12-14 weeks after three or more losses.",
+            "Ultrasound-indicated cerclage for cervix **25 mm or less before 24 weeks** after previous loss.",
+            "Bed rest does not prevent preterm birth; treat bacteriuria and stop tobacco.",
+            "At birth: delayed cord clamping and **kangaroo mother care** under 2000 g.",
+          ],
+        },
+      ],
+      tables: [
+        {
+          heading: "Drugs in preterm labour and PPROM",
+          columns: ["Drug", "Dose and route", "Duration", "Key side effects / cautions"],
+          rows: [
+            ["Dexamethasone", "6 mg IM 12-hourly", "4 doses, 24-34 weeks", "Maternal hyperglycaemia; raise insulin"],
+            ["Betamethasone", "12 mg IM 24 h apart", "2 doses", "One rescue course at most"],
+            ["Nifedipine", "20 mg oral, then 10-20 mg 6-8-hourly", "Up to 48 h, max 160 mg/day", "Hypotension, headache; never sublingual"],
+            ["Atosiban", "6.75 mg IV, then 18 mg/h, then 6 mg/h", "Up to 48 h", "Costly; preferred in cardiac disease, twins"],
+            ["Indomethacin", "50-100 mg, then 25 mg 6-hourly", "48 h, under 32 weeks only", "Ductal constriction, oligohydramnios"],
+            ["Magnesium sulphate", "4 g IV, then 1 g/h", "24 h or until birth, under 32 weeks", "Reflex loss; calcium gluconate antidote"],
+            ["Erythromycin", "250 mg oral 6-hourly", "10 days (PPROM)", "Nausea; never co-amoxiclav"],
+            ["Benzylpenicillin", "3 g IV, then 1.5 g IV 4-hourly", "Until birth", "Clindamycin if penicillin allergic"],
+            ["Vaginal progesterone", "200 mg PV nightly", "From 16-24 to 34-36 weeks", "No benefit in twins"],
+          ],
+        },
+        {
+          heading: "Gestation and what to give",
+          columns: ["Category", "Gestation", "Main neonatal problem", "Key drugs"],
+          rows: [
+            ["Extremely preterm", "Under 28 weeks", "Survival, IVH, BPD, ROP", "Steroids from 24 weeks, magnesium, tocolysis"],
+            ["Very preterm", "28 to 31+6 weeks", "RDS, sepsis, NEC", "Steroids, magnesium, tocolysis"],
+            ["Moderate preterm", "32 to 33+6 weeks", "RDS, feeding, temperature", "Steroids, tocolysis"],
+            ["Late preterm", "34 to 36+6 weeks", "Hypoglycaemia, jaundice", "Steroids not routine; no tocolysis"],
+          ],
+        },
+        {
+          heading: "Types of cervical cerclage",
+          columns: ["Type", "Timing", "Indication"],
+          rows: [
+            ["History-indicated", "12-14 weeks", "Three or more second-trimester losses or preterm births"],
+            ["Ultrasound-indicated", "Before 24 weeks", "Cervix 25 mm or less after previous loss"],
+            ["Rescue", "16 to 27+6 weeks", "Dilated cervix, exposed membranes, no infection"],
+            ["Transabdominal", "Pre-pregnancy or 10-14 weeks", "Failed vaginal cerclage"],
+          ],
+        },
+      ],
+      remember: [
+        "Dexamethasone 6 mg IM 12-hourly x 4 at 24-34 weeks (ACTION-I: 16% fewer deaths).",
+        "Tocolysis buys 48 hours - nifedipine first, no maintenance, none in PPROM.",
+        "Magnesium below 32 weeks protects the brain: 4 g IV then 1 g/hour.",
+        "Erythromycin for PPROM; never co-amoxiclav (NEC).",
+        "No finger in PPROM - sterile speculum only.",
+        "Short cervix: vaginal progesterone 200 mg nightly; 17-OHPC is gone.",
+        "Transfer the baby in the uterus, not in an incubator.",
+      ],
+    },
     master: {
       heading: "Master revision table - preterm labour and PROM",
       columns: ["Aspect", "High-yield points"],
@@ -569,6 +1980,159 @@ const revision: RevisionSet = {
 
   "obstetrics-high-risk-pregnancy-fgr": {
     checked: "2026-10",
+    notes: {
+      sections: [
+        {
+          title: "Definition and key facts",
+          points: [
+            "A **high-risk pregnancy** has a factor raising risk of death or serious illness above average.",
+            "Risk is **dynamic** and must be reassessed at every visit.",
+            "**SGA** is EFW or AC **below the 10th centile**; most are small and healthy.",
+            "**FGR** is a pathological failure to reach growth potential, usually placental.",
+            "**Post-term** is 42 weeks or more; the commonest cause is **wrong dates**.",
+            "About **18% of Indian babies** are low birth weight (NFHS-5).",
+          ],
+        },
+        {
+          title: "Classification that matters",
+          points: [
+            "**Early FGR** (before 32 weeks): AC or EFW under 3rd centile, or **absent end-diastolic flow**.",
+            "**Late FGR** (32 weeks or more): AC or EFW under 3rd centile, or Doppler and growth criteria.",
+            "Early FGR is **umbilical artery disease**, often with pre-eclampsia.",
+            "Late FGR has a normal umbilical Doppler but **low CPR** (brain sparing).",
+            "**Symmetrical** FGR is an early insult; **asymmetrical** FGR spares the head.",
+            "Causes: placental insufficiency, hypertension, **anaemia and undernutrition**, tobacco, aneuploidy, CMV.",
+          ],
+        },
+        {
+          title: "How it happens (pathophysiology)",
+          points: [
+            "Narrow spiral arteries damage the villi with infarcts and oxidative stress.",
+            "**Umbilical artery PI rises** when about 30% of placental vessels are lost.",
+            "End-diastolic flow becomes **absent at 60-70%** loss, then **reversed**.",
+            "The hypoxic fetus dilates brain vessels (**brain sparing**), so CPR falls.",
+            "Poor kidney flow causes **oligohydramnios**; poor liver glycogen gives a small AC.",
+            "Finally the **ductus venosus a-wave** becomes absent or reversed, just before death.",
+          ],
+        },
+        {
+          title: "History in the OPD",
+          points: [
+            "Confirm dating; a **first-trimester CRL** prevents false diagnoses.",
+            "Ask about a previous FGR baby, stillbirth or early pre-eclampsia.",
+            "Ask about **tobacco in any form**, diet, weight gain and heavy work.",
+            "Ask whether **aspirin and calcium** were started and are taken correctly.",
+            "**Reduced fetal movements** need same-day CTG and ultrasound.",
+          ],
+        },
+        {
+          title: "Examination",
+          points: [
+            "Record weight gain; poor gain suggests undernutrition and FGR risk.",
+            "Check **BP and urine protein**; a small fetus with new hypertension is pre-eclampsia.",
+            "**SFH lag over 3 cm** or a static value needs a growth scan.",
+            "SFH is unreliable with obesity, fibroids, polyhydramnios or twins.",
+            "Easily felt fetal parts in a small uterus suggest **oligohydramnios**.",
+          ],
+        },
+        {
+          title: "Investigations",
+          points: [
+            "Growth scans should be **at least 2 weeks apart**.",
+            "**Umbilical artery Doppler** is the main surveillance test in FGR.",
+            "Add **MCA-PI and CPR** after 32 weeks, and ductus venosus in early FGR.",
+            "Deepest pool **under 2 cm** is oligohydramnios.",
+            "Severe early FGR: anomaly scan, karyotype or microarray, CMV and toxoplasma tests.",
+          ],
+        },
+        {
+          title: "Treatment - first line",
+          points: [
+            "Mark high risk in **red on the MCP card** and track under extended PMSMA.",
+            "**Aspirin 150 mg at bedtime** from 11-16 weeks to 36 weeks for high-risk women.",
+            "Give **calcium 500 mg twice daily** and IFA from 14 weeks.",
+            "Stop tobacco, treat anaemia and malaria, and add 350 kcal a day.",
+            "**Bed rest, sildenafil and heparin** (without APS) do not help FGR.",
+          ],
+        },
+        {
+          title: "Treatment - next steps",
+          points: [
+            "SGA with normal Doppler: deliver at **38-39 weeks**.",
+            "EFW under 3rd centile or low CPR: deliver by **37 weeks**.",
+            "**Absent EDF**: deliver by **32-34 weeks**, usually by caesarean.",
+            "**Reversed EDF**: deliver by **30-32 weeks** after steroids and magnesium.",
+            "Abnormal ductus venosus: deliver once viable, after steroids.",
+            "Use a **Foley balloon** for induction in FGR and in a scarred uterus.",
+          ],
+        },
+        {
+          title: "Special groups",
+          points: [
+            "Post-term: offer a **membrane sweep at 39-41 weeks**.",
+            "**Induce at 41 weeks**; stillbirth risk roughly doubles from 41 to 42 weeks.",
+            "One previous caesarean: offer **TOLAC** where caesarean and blood are immediately available.",
+            "VBAC succeeds in 72-75%, with rupture risk about **0.5%**.",
+            "**Misoprostol is never used** for a scarred uterus.",
+          ],
+        },
+        {
+          title: "Referral and follow-up",
+          points: [
+            "Refer for EFW under 10th centile, abnormal UA Doppler or oligohydramnios.",
+            "FGR newborn: early feeds, **glucose checks for 24-48 hours** and warmth.",
+            "Send the placenta for histology and screen for APS after severe early FGR.",
+            "Start **aspirin before 16 weeks** in the next pregnancy.",
+          ],
+        },
+      ],
+      tables: [
+        {
+          heading: "Drugs in high-risk pregnancy and FGR",
+          columns: ["Drug", "Dose and route", "Duration", "Key side effects / cautions"],
+          rows: [
+            ["Aspirin", "150 mg oral at bedtime", "11-16 weeks to 36 weeks", "Dyspepsia; start before 16 weeks"],
+            ["Calcium + vitamin D3", "500 mg oral BD", "14 weeks to 6 months postpartum", "2 hours apart from iron"],
+            ["Enoxaparin (APS only)", "40 mg SC daily with aspirin", "Pregnancy and 6 weeks postpartum", "Bleeding; not for unexplained FGR"],
+            ["Dexamethasone", "6 mg IM 12-hourly", "4 doses, delivery at 24-34 weeks", "Maternal hyperglycaemia"],
+            ["Magnesium sulphate", "4 g IV, then 1 g/h", "Under 32 weeks before delivery", "Reflex loss; hourly checks"],
+            ["Misoprostol", "25 microgram oral 2-hourly", "For induction", "Never with a uterine scar"],
+            ["Oxytocin", "Start 1-2 mIU/min, raise every 30 min", "Max 20-32 mIU/min", "Tachysystole; continuous CTG in FGR"],
+          ],
+        },
+        {
+          heading: "Doppler stage and timing of delivery",
+          columns: ["Stage", "Surveillance", "Deliver by"],
+          rows: [
+            ["SGA, normal Doppler", "Growth and Doppler every 2 weeks", "38-39 weeks"],
+            ["EFW under 3rd or low CPR", "Weekly to twice weekly", "37 weeks"],
+            ["Absent end-diastolic flow", "Daily DV and CTG, steroids", "32-34 weeks"],
+            ["Reversed end-diastolic flow", "Inpatient daily monitoring", "30-32 weeks"],
+            ["Abnormal ductus venosus", "Delivery decision", "Once viable, after steroids"],
+          ],
+        },
+        {
+          heading: "SGA versus FGR",
+          columns: ["Feature", "SGA (constitutional)", "FGR (pathological)"],
+          rows: [
+            ["Size", "Under 10th centile", "Often under 3rd centile"],
+            ["Doppler", "Normal", "Abnormal UA or low CPR"],
+            ["Liquor", "Normal", "Often reduced"],
+            ["Growth velocity", "Steady along a centile", "Falling across centiles"],
+            ["Outcome", "Usually healthy", "Risk of stillbirth and acidosis"],
+          ],
+        },
+      ],
+      remember: [
+        "SGA is a size; FGR is a disease - Doppler separates them.",
+        "Under 3rd centile or absent EDF is FGR on its own (Delphi).",
+        "Cascade: raised UA-PI, absent EDF, reversed EDF, abnormal DV, death.",
+        "Absent EDF 32-34 weeks; reversed EDF 30-32 weeks.",
+        "Aspirin works only if started before 16 weeks.",
+        "Sweep at 39-41 weeks, induce at 41 weeks.",
+        "Foley balloon, not misoprostol, for a scarred uterus.",
+      ],
+    },
     master: {
       heading: "Master revision table - high-risk pregnancy, FGR and post-term",
       columns: ["Aspect", "High-yield points"],
@@ -621,6 +2185,157 @@ const revision: RevisionSet = {
 
   "obstetrics-preconception-prenatal-screening": {
     checked: "2026-10",
+    notes: {
+      sections: [
+        {
+          title: "Definition and key facts",
+          points: [
+            "**Preconception care** is health care given to a woman and her partner **before conception**.",
+            "About **half of pregnancies are unplanned**, so every contact is an opportunity.",
+            "Ask the **One Key Question**: would you like to become pregnant in the next year?",
+            "The neural tube closes by **day 28 after conception**, before most women book.",
+            "India's NTD prevalence of **4-5 per 1000 births** is among the world's highest.",
+          ],
+        },
+        {
+          title: "Classification that matters",
+          points: [
+            "**Screening tests** (combined, quadruple, NIPT) give a **risk**, not a diagnosis.",
+            "**Diagnostic tests** (CVS, amniocentesis) give a karyotype or microarray answer.",
+            "Aneuploidy screening is **offered to all women regardless of age**.",
+            "A result is a risk ratio compared with a cut-off such as **1 in 250**.",
+          ],
+        },
+        {
+          title: "How it happens (pathophysiology)",
+          points: [
+            "Folate supplies one-carbon units for DNA synthesis during neural tube closure.",
+            "Periconceptional folic acid cuts NTDs by about **70%**.",
+            "High glucose at conception causes **cardiac defects, NTDs and caudal regression**.",
+            "Trisomy 21 mostly comes from **maternal non-disjunction**, which rises with age.",
+            "In Down syndrome, **hCG and inhibin rise** while **PAPP-A, AFP and estriol fall**.",
+            "**NIPT** analyses placental cell-free DNA, so placental mosaicism causes false positives.",
+            "Two carrier parents give a **25% risk** of an affected child each pregnancy.",
+          ],
+        },
+        {
+          title: "History in the OPD",
+          points: [
+            "Ask about **pregnancy intention** and current contraception.",
+            "Ask about past miscarriage, stillbirth, pre-eclampsia, GDM and any baby with an anomaly.",
+            "Review all drugs for **teratogens** such as valproate, warfarin and isotretinoin.",
+            "Take a three-generation family history and ask about **consanguinity**.",
+            "Ask about rubella, hepatitis B and varicella vaccination.",
+            "Ask about **tobacco in any form**, alcohol and occupational exposures.",
+          ],
+        },
+        {
+          title: "Examination",
+          points: [
+            "Aim for **BMI 18.5-24.9** before conception; obesity raises NTD and GDM risk.",
+            "Check BP, pallor, thyroid and heart murmurs.",
+            "Look for **acanthosis nigricans** suggesting undiagnosed diabetes or PCOS.",
+            "Offer cervical screening and a dental check if due.",
+          ],
+        },
+        {
+          title: "Investigations",
+          points: [
+            "Preconception: Hb with **MCV and MCH**, group, TSH, HbA1c, HIV, HBsAg, VDRL.",
+            "**MCV under 80 fL** without iron deficiency needs **HPLC**; if carrier, test the partner.",
+            "**Combined test at 11-13+6 weeks**: NT, free beta-hCG, PAPP-A; detects 85-90%.",
+            "**NT over 3.5 mm** needs specialist review whatever the calculated risk.",
+            "**Quadruple test at 15-20 weeks** for late bookers; detects about 80%.",
+            "**NIPT** detects over 99% of trisomy 21 but must be **confirmed** by CVS or amniocentesis.",
+            "**Anomaly scan at 18-20 weeks**, within MTP time limits.",
+          ],
+        },
+        {
+          title: "Treatment - first line",
+          points: [
+            "**Folic acid 400 microgram daily** from at least 1 month before conception to 12 weeks.",
+            "**Folic acid 5 mg** after a previous NTD, on antiepileptics, with diabetes or BMI 30 or more.",
+            "Give **MR vaccine** to a rubella non-immune woman, then contraception for 1 month.",
+            "Stop tobacco and alcohol in both partners; offer the quitline.",
+            "Keep an **interpregnancy interval of at least 18-24 months**.",
+          ],
+        },
+        {
+          title: "Treatment - next steps",
+          points: [
+            "Diabetes: aim for **HbA1c under 6.5%**; defer pregnancy if over 10%.",
+            "Hypertension: switch ACE inhibitors and ARBs to **labetalol or nifedipine**.",
+            "Epilepsy: switch **valproate to lamotrigine or levetiracetam**, never abruptly.",
+            "Hypothyroidism: aim for TSH under 2.5 before conception.",
+            "Washout: **isotretinoin 1 month, methotrexate 3 months**, mycophenolate 6 weeks.",
+            "Depression: continue the antidepressant; **sertraline** is preferred.",
+          ],
+        },
+        {
+          title: "Special groups",
+          points: [
+            "**Carrier couples** need genetic counselling and **CVS at 11-13 weeks** in every pregnancy.",
+            "Consanguinity roughly **doubles** the risk of autosomal recessive disease.",
+            "**mWHO IV heart disease**: advise against pregnancy.",
+            "PCPNDT Act: **never disclose fetal sex**, and complete **Form F** for every obstetric scan.",
+          ],
+        },
+        {
+          title: "Referral and follow-up",
+          points: [
+            "Review the planning couple at **3 months**, then stop contraception.",
+            "Book pregnancy **before 12 weeks** to catch the combined test window.",
+            "Refer for a high-risk screen, positive NIPT, NT over 3.5 mm or any anomaly.",
+            "Refer before conception for HbA1c over 10%, CKD 3 or more, or valproate use.",
+          ],
+        },
+      ],
+      tables: [
+        {
+          heading: "Preconception drugs and vaccines",
+          columns: ["Drug", "Dose and route", "Duration", "Key side effects / cautions"],
+          rows: [
+            ["Folic acid (standard)", "400 microgram oral OD", "1-3 months before conception to 12 weeks", "None significant"],
+            ["Folic acid (high dose)", "5 mg oral OD", "Same; whole pregnancy in sickle cell or thalassaemia", "May mask B12 deficiency"],
+            ["Elemental iron", "60-120 mg oral daily or alternate days", "3 months after Hb normal", "Nausea, constipation; not with tea or calcium"],
+            ["MR or MMR vaccine", "0.5 mL SC once", "If rubella non-immune", "Avoid pregnancy for 1 month"],
+            ["Labetalol", "100-200 mg oral BD", "Replaces ACE inhibitor or ARB", "Avoid in asthma"],
+            ["Nicotine replacement", "Patch 15-21 mg or 2 mg gum", "8-12 weeks", "Skin irritation; remove patch at night"],
+          ],
+        },
+        {
+          heading: "Prenatal screening and diagnostic tests",
+          columns: ["Test", "Timing", "Components", "Detection for T21"],
+          rows: [
+            ["Combined test", "11+0 to 13+6 weeks", "NT, free beta-hCG, PAPP-A, age", "85-90%"],
+            ["Quadruple test", "15-20 weeks", "AFP, hCG, estriol, inhibin A", "About 80%"],
+            ["NIPT", "From 10 weeks", "Placental cell-free DNA", "Over 99% (screening only)"],
+            ["CVS", "11-14 weeks", "Chorionic villi karyotype", "Diagnostic; loss 0.2-0.5%"],
+            ["Amniocentesis", "From 15 weeks", "Amniocyte karyotype", "Diagnostic; loss 0.2-0.5%"],
+          ],
+        },
+        {
+          heading: "Serum markers in aneuploidy",
+          columns: ["Marker", "Trisomy 21", "Trisomy 18"],
+          rows: [
+            ["hCG", "High", "Low"],
+            ["PAPP-A", "Low", "Low"],
+            ["AFP", "Low", "Low"],
+            ["Unconjugated estriol", "Low", "Low"],
+            ["Inhibin A", "High", "Normal or low"],
+          ],
+        },
+      ],
+      remember: [
+        "Neural tube closes by day 28 - before most women know they are pregnant.",
+        "Folic acid 400 microgram for all; 5 mg for the high-risk list.",
+        "Rubella vaccine, then contraception for 1 month.",
+        "Down syndrome: hCG and inhibin up, everything else down.",
+        "NIPT is screening, not diagnosis.",
+        "Commonest cause of an abnormal serum screen is wrong dates.",
+        "Form F for every obstetric ultrasound.",
+      ],
+    },
     master: {
       heading: "Master revision table - preconception care and prenatal screening",
       columns: ["Aspect", "High-yield points"],
@@ -682,6 +2397,163 @@ const revision: RevisionSet = {
 
   "obstetrics-medical-disorders-pregnancy": {
     checked: "2026-10",
+    notes: {
+      sections: [
+        {
+          title: "Definition and key facts",
+          points: [
+            "Medical disorders are the leading **indirect causes of maternal death**; heart disease is the largest.",
+            "In India **rheumatic mitral stenosis** is the commonest cardiac lesion in pregnancy.",
+            "**Never stop essential drugs abruptly** because a woman is pregnant.",
+            "Drug letter categories were replaced by **FDA PLLR (2015)** narrative labels.",
+            "Organogenesis, **3-8 weeks after conception**, carries maximum structural risk.",
+          ],
+        },
+        {
+          title: "Classification that matters",
+          points: [
+            "Heart disease uses the **modified WHO (mWHO) classes I to IV**.",
+            "**mWHO IV** means pregnancy is contraindicated.",
+            "mWHO IV: **pulmonary hypertension**, EF under 30%, severe MS, severe symptomatic AS.",
+            "Use **trimester-specific TSH**; upper limit about **4.0 mIU/L** without a local range.",
+            "Jaundice: viral hepatitis (commonest), **ICP, AFLP, HELLP**, or chronic liver disease.",
+          ],
+        },
+        {
+          title: "How it happens (pathophysiology)",
+          points: [
+            "Cardiac output rises **30-50%**, so stenotic lesions decompensate.",
+            "In MS, **tachycardia shortens diastole** and causes pulmonary oedema.",
+            "**Autotransfusion of 500 mL** after delivery makes the first 72 hours the riskiest.",
+            "Oestrogen doubles binding globulin, so hypothyroid women need **25-50% more levothyroxine**.",
+            "Drug clearance rises, so **lamotrigine levels fall** in pregnancy.",
+            "In **ICP**, high bile acids cause fetal arrhythmia and sudden stillbirth.",
+            "**Hepatitis E** is fulminant in the third trimester, with 15-25% maternal mortality.",
+          ],
+        },
+        {
+          title: "History in the OPD",
+          points: [
+            "Review every drug at the first visit, ideally **preconception**.",
+            "Mild breathlessness and a soft systolic murmur are normal; **orthopnoea is not**.",
+            "Ask about past rheumatic fever and **NYHA class**.",
+            "**Itching of palms and soles worse at night** without rash suggests ICP.",
+            "Any seizure after 20 weeks is **eclampsia until proved otherwise**.",
+            "Ask whether she stopped her inhaler or antidepressant on learning she was pregnant.",
+          ],
+        },
+        {
+          title: "Examination",
+          points: [
+            "Check pulse rhythm, BP and SpO2; **AF or SpO2 under 95%** needs cardiac review.",
+            "Mitral stenosis: **loud S1, opening snap and mid-diastolic rumble** at the apex.",
+            "Check lung bases for crackles, especially in the first 72 hours after delivery.",
+            "Eye signs or a thyroid bruit point to **Graves disease**.",
+            "Excoriations without a primary rash point to ICP.",
+          ],
+        },
+        {
+          title: "Investigations",
+          points: [
+            "Booking: Hb, **TSH**, urine culture, **HIV, HBsAg and syphilis**.",
+            "Suspected heart disease: ECG and **echocardiography**, which sets the mWHO class.",
+            "ICP: **serum bile acids 19 micromol/L or more** with LFT.",
+            "Jaundice: LFT, viral markers, platelets, LDH, **glucose and INR**.",
+            "HBsAg positive: check **HBV DNA**; HIV positive: CD4 and viral load.",
+          ],
+        },
+        {
+          title: "Treatment - first line",
+          points: [
+            "Mitral stenosis: **metoprolol** to keep heart rate under 90, plus furosemide if congested.",
+            "Hypothyroid woman who conceives: add **2 extra tablets a week** straight away.",
+            "Graves: **PTU in the first trimester**, then **carbimazole** from the second.",
+            "Epilepsy: **lamotrigine or levetiracetam** with folic acid 5 mg.",
+            "ICP: **ursodeoxycholic acid 10-15 mg/kg/day** for itch.",
+            "Asthma: continue inhaled steroids; uncontrolled asthma is the greater risk.",
+          ],
+        },
+        {
+          title: "Treatment - next steps",
+          points: [
+            "Hepatitis B: **tenofovir 300 mg from 28 weeks** if HBV DNA over 200,000 IU/mL.",
+            "Baby of HBsAg mother: **birth-dose vaccine plus HBIG** within 12 hours.",
+            "HIV: **TLD one tablet daily for life**, regardless of CD4 or gestation.",
+            "Vivax malaria: chloroquine; **primaquine is contraindicated** in pregnancy.",
+            "Severe malaria: **IV artesunate** in any trimester.",
+            "Perinatal depression: **sertraline 50 mg daily**.",
+          ],
+        },
+        {
+          title: "Special groups",
+          points: [
+            "Mechanical valve: warfarin if 5 mg/day or less, or **LMWH** in weeks 6-12.",
+            "Switch to LMWH or heparin at **36 weeks** to avoid fetal bleeding at delivery.",
+            "**Valproate** must not be started in women who can conceive unless no alternative.",
+            "TB: standard HRZE is safe; **streptomycin is contraindicated**.",
+            "Peripartum cardiomyopathy: heart failure drugs plus **bromocriptine**.",
+          ],
+        },
+        {
+          title: "Complications and red flags",
+          points: [
+            "Labour in heart disease: **early epidural**, restrict fluids, shorten the second stage.",
+            "**No ergometrine** in heart disease; give oxytocin as a slow infusion.",
+            "Jaundice with vomiting and **hypoglycaemia** suggests AFLP: stabilise and deliver.",
+            "ICP with bile acids **100 or more**: deliver at 35-36 weeks.",
+            "Sore throat on carbimazole or PTU: check neutrophils for **agranulocytosis**.",
+            "Postpartum confusion or delusions: **postpartum psychosis**, a psychiatric emergency.",
+          ],
+        },
+      ],
+      tables: [
+        {
+          heading: "Key drugs in medical disorders of pregnancy",
+          columns: ["Drug", "Dose and route", "Duration", "Key side effects / cautions"],
+          rows: [
+            ["Metoprolol (MS)", "25-100 mg oral BD", "Through pregnancy; target HR under 90", "Fatigue, fetal growth restriction"],
+            ["Enoxaparin (mechanical valve)", "1 mg/kg SC BD", "Anti-Xa peak 0.8-1.2", "Bleeding; stop 24 h before delivery"],
+            ["Levothyroxine", "1.6 microgram/kg/day oral", "Add 25-30% on conception", "4 hours apart from iron and calcium"],
+            ["PTU then carbimazole", "PTU 50-150 mg TDS; carbimazole 10-30 mg OD", "PTU first trimester only", "Agranulocytosis; PTU hepatotoxic"],
+            ["Levetiracetam", "500-1500 mg oral BD", "Throughout; never stop abruptly", "Mood change"],
+            ["Ursodeoxycholic acid", "10-15 mg/kg/day in 2-3 doses", "Until delivery", "Diarrhoea; does not cut stillbirth"],
+            ["Tenofovir (HBV)", "300 mg oral OD", "28 weeks to 12 weeks postpartum", "ALT flare on stopping"],
+            ["TLD (HIV)", "One tablet oral OD", "Lifelong", "Dolutegravir 2 h before iron or calcium"],
+            ["Artesunate IV", "2.4 mg/kg at 0, 12, 24 h, then daily", "Then full oral ACT", "Delayed haemolysis"],
+            ["Sertraline", "50 mg oral OD, up to 200 mg", "6 months after remission", "Nausea, agitation"],
+          ],
+        },
+        {
+          heading: "Modified WHO cardiac risk classes",
+          columns: ["mWHO class", "Examples", "Risk and care"],
+          rows: [
+            ["I", "Small PDA, mild PS, repaired simple lesions", "No added risk"],
+            ["II", "Unrepaired ASD or VSD, repaired tetralogy", "Review each trimester"],
+            ["II-III", "Mild LV impairment, native valve disease", "Review every 2 months"],
+            ["III", "Mechanical valve, Fontan, moderate MS", "Expert centre, monthly review"],
+            ["IV", "PAH, EF under 30%, severe MS or AS", "Pregnancy contraindicated"],
+          ],
+        },
+        {
+          heading: "Jaundice in the third trimester",
+          columns: ["Feature", "Viral hepatitis", "ICP", "AFLP", "HELLP"],
+          rows: [
+            ["Key clue", "Prodrome, very high ALT", "Itch of palms and soles", "Vomiting, hypoglycaemia", "Hypertension, RUQ pain"],
+            ["Key test", "IgM HEV, IgM HAV, HBsAg", "Raised bile acids", "High INR and ammonia", "LDH over 600, low platelets"],
+            ["Management", "Supportive, ICU if failure", "UDCA, timed delivery", "Stabilise and deliver", "MgSO4, BP control, deliver"],
+          ],
+        },
+      ],
+      remember: [
+        "Never stop an antiepileptic, inhaler, levothyroxine or antidepressant because she is pregnant.",
+        "Mitral stenosis: beta-blocker, diuretic, valvotomy if needed.",
+        "Riskiest time for the cardiac mother is just after delivery.",
+        "PTU first trimester, carbimazole thereafter.",
+        "Hypothyroid and pregnant: 2 extra tablets a week, TSH every 4 weeks to 20 weeks.",
+        "Valproate worst; lamotrigine and levetiracetam safest.",
+        "No primaquine in pregnancy; IV artesunate for severe malaria in any trimester.",
+      ],
+    },
     master: {
       heading: "Master revision table - medical disorders in pregnancy",
       columns: ["Aspect", "High-yield points"],
@@ -743,6 +2615,146 @@ const revision: RevisionSet = {
 
   "obstetrics-rh-negative-pregnancy": {
     checked: "2026-10",
+    notes: {
+      sections: [
+        {
+          title: "Definition and key facts",
+          points: [
+            "**Rh alloimmunisation** is maternal IgG anti-D formed after RhD-positive fetal cells enter an RhD-negative woman.",
+            "The antibody crosses the placenta later and causes **haemolytic disease of the fetus and newborn**.",
+            "About **5% of Indian women** are RhD-negative.",
+            "Without prophylaxis about **16%** become sensitised after an RhD-positive birth.",
+            "Antenatal plus postnatal anti-D cuts this to about **0.1-0.3%**.",
+          ],
+        },
+        {
+          title: "Classification that matters",
+          points: [
+            "**Unsensitised**: needs anti-D prophylaxis in primary care.",
+            "**Sensitised**: needs fetal medicine surveillance; anti-D prophylaxis is useless.",
+            "**Weak D** women are managed as RhD-positive; **partial D** as RhD-negative.",
+            "**Anti-c and anti-Kell** cause severe disease and have no prophylaxis.",
+          ],
+        },
+        {
+          title: "How it happens (pathophysiology)",
+          points: [
+            "Fetal cells cross at delivery, abortion, procedures or trauma; **0.1 mL** can sensitise.",
+            "The first response is slow **IgM**, which cannot cross the placenta, so the first baby is spared.",
+            "In the next pregnancy a brisk **IgG** response crosses the placenta.",
+            "Coated fetal red cells are destroyed in the **fetal spleen**, causing anaemia.",
+            "Severe anaemia (Hb about 5-7 g/dL) causes **hydrops fetalis**.",
+            "Anti-D works by clearing fetal cells **before the mother's immune system responds**.",
+            "**ABO incompatibility protects** by destroying fetal cells early.",
+          ],
+        },
+        {
+          title: "History in the OPD",
+          points: [
+            "Confirm the woman's blood group by test, not memory.",
+            "Ask the **husband's blood group**; if RhD-negative with certain paternity, no anti-D is needed.",
+            "Ask about every previous abortion, MTP, ectopic and birth, and **whether anti-D was given**.",
+            "Missed anti-D after an early MTP is the **commonest cause** of sensitisation in India.",
+            "Ask about previous jaundiced babies, exchange transfusion, hydrops and past transfusion.",
+          ],
+        },
+        {
+          title: "Examination",
+          points: [
+            "After trauma, look for abruption; a large fetomaternal bleed is likely.",
+            "SFH larger than dates in a sensitised woman suggests **hydrops with polyhydramnios**.",
+            "A **sinusoidal CTG** means severe fetal anaemia.",
+            "Newborn jaundice **within 24 hours** means haemolytic disease until proved otherwise.",
+          ],
+        },
+        {
+          title: "Investigations",
+          points: [
+            "**Blood group and antibody screen (ICT)** at booking for every woman.",
+            "Repeat ICT at **28 weeks** before giving anti-D.",
+            "Cord blood: baby's group, **DCT**, Hb and bilirubin.",
+            "**Kleihauer test** measures fetomaternal haemorrhage after 20 weeks.",
+            "If sensitised, anti-D level over **4 IU/mL (titre 1:16)** starts Doppler surveillance.",
+            "**MCA-PSV over 1.5 MoM** predicts moderate-severe fetal anaemia.",
+          ],
+        },
+        {
+          title: "Treatment - first line",
+          points: [
+            "**Anti-D 300 microgram IM at 28 weeks** for every unsensitised RhD-negative woman.",
+            "**Anti-D 300 microgram within 72 hours** of birth of an RhD-positive baby.",
+            "If 72 hours is missed, **still give it**; it may protect up to 10 days.",
+            "Before 12 weeks give **50 microgram** after a sensitising event (Indian practice).",
+            "After 12 weeks give **300 microgram** after any sensitising event.",
+            "Inject deep IM into the **deltoid**; record date, dose and batch.",
+          ],
+        },
+        {
+          title: "Treatment - next steps",
+          points: [
+            "Large bleed: extra **300 microgram for every 30 mL** of fetal whole blood.",
+            "Sensitised woman: refer to fetal medicine by **20 weeks**.",
+            "**Intrauterine transfusion** of O-negative cells treats severe fetal anaemia.",
+            "Newborn: intensive **phototherapy**, IVIG, and exchange transfusion if needed.",
+            "Watch the baby for **late anaemia at 2-6 weeks**.",
+          ],
+        },
+        {
+          title: "Complications and red flags",
+          points: [
+            "Antenatal anti-D gives a **weakly positive ICT for up to 12 weeks**; do not call it sensitisation.",
+            "**Anti-Kell** suppresses red cell production, so monitor with Doppler at any titre.",
+            "**Mirror syndrome** is maternal oedema mirroring fetal hydrops.",
+            "Neonatal lethargy, hypertonia or arching means bilirubin encephalopathy: **immediate exchange**.",
+          ],
+        },
+      ],
+      tables: [
+        {
+          heading: "Drugs and treatments in Rh-negative pregnancy",
+          columns: ["Drug", "Dose and route", "Duration", "Key side effects / cautions"],
+          rows: [
+            ["Anti-D (antenatal)", "300 microgram (1500 IU) IM", "Once at 28 weeks", "Draw 28-week ICT first"],
+            ["Anti-D (postnatal)", "300 microgram IM", "Within 72 h, up to 10 days", "Useless if already sensitised"],
+            ["Anti-D (event under 12 weeks)", "50 microgram (250 IU) IM", "Within 72 h", "ACOG 2024 allows omission"],
+            ["Anti-D (large FMH)", "Extra 300 microgram per 30 mL", "Guided by Kleihauer", "Recheck after 48-72 h"],
+            ["IVIG (neonatal)", "0.5-1 g/kg IV over 2 h", "Repeat after 12 h if needed", "Volume overload, thrombosis"],
+            ["IVIG (maternal)", "1 g/kg IV weekly", "From 12-14 weeks", "Fetal medicine unit only"],
+          ],
+        },
+        {
+          heading: "Anti-D dose by event",
+          columns: ["Event", "Dose", "Timing"],
+          rows: [
+            ["Loss or MTP under 12 weeks", "50 microgram", "Within 72 h"],
+            ["Any event after 12 weeks", "300 microgram, plus Kleihauer after 20 weeks", "Within 72 h"],
+            ["Routine antenatal", "300 microgram", "28 weeks"],
+            ["Birth of RhD-positive baby", "300 microgram", "Within 72 h"],
+            ["Recurrent bleeding after 20 weeks", "300 microgram", "At least every 6 weeks"],
+          ],
+        },
+        {
+          heading: "Rh versus ABO haemolytic disease",
+          columns: ["Feature", "Rh HDFN", "ABO HDFN"],
+          rows: [
+            ["Mother", "RhD-negative, sensitised", "Group O"],
+            ["First pregnancy", "Usually spared", "Can be affected"],
+            ["Severity", "Moderate to severe, hydrops", "Mild"],
+            ["DCT", "Strongly positive", "Weak or negative"],
+            ["Prevention", "Anti-D immunoglobulin", "None"],
+          ],
+        },
+      ],
+      remember: [
+        "Group and antibody screen for every woman at booking.",
+        "300 microgram anti-D covers 30 mL of fetal whole blood.",
+        "Within 72 hours - but late is better than never, up to 10 days.",
+        "Anti-D prevents; it cannot treat existing sensitisation.",
+        "Kleihauer: FMH in mL equals percentage of fetal cells x 50.",
+        "MCA-PSV over 1.5 MoM replaced Liley charts.",
+        "Anti-Kell: monitor at any titre.",
+      ],
+    },
     master: {
       heading: "Master revision table - Rh-negative pregnancy and alloimmunisation",
       columns: ["Aspect", "High-yield points"],
@@ -806,6 +2818,155 @@ const revision: RevisionSet = {
 
   "obstetrics-hyperemesis-gravidarum": {
     checked: "2026-10",
+    notes: {
+      sections: [
+        {
+          title: "Definition and key facts",
+          points: [
+            "**Nausea and vomiting of pregnancy** affects up to 80% and peaks about 9 weeks.",
+            "**Hyperemesis gravidarum** is severe NVP with **over 5% weight loss, dehydration and electrolyte imbalance**.",
+            "Windsor 2024 definition: onset **before 16 weeks** and inability to eat or drink normally.",
+            "HG affects about 0.3-3.6% of pregnancies.",
+            "HG is a **diagnosis of exclusion** and is **not psychological**.",
+          ],
+        },
+        {
+          title: "Classification that matters",
+          points: [
+            "Grade severity with the **PUQE-24 score** (3-15 points).",
+            "**Mild 6 or less**, **moderate 7-11**, **severe 12 or more**.",
+            "**Ketonuria is not used** to grade severity or decide admission.",
+            "Vomiting starting **after 10-11 weeks** points to another cause.",
+            "Risk factors: **twins, molar pregnancy**, previous HG, family history and migraine.",
+          ],
+        },
+        {
+          title: "How it happens (pathophysiology)",
+          points: [
+            "The placenta secretes **GDF15**, which acts on the **area postrema** to cause nausea.",
+            "**hCG** peaks at 9-12 weeks, matching the peak of symptoms.",
+            "Very high hCG stimulates the TSH receptor, causing **gestational transient thyrotoxicosis**.",
+            "Vomiting causes **hypochloraemic hypokalaemic metabolic alkalosis**.",
+            "Thiamine stores last only 2-3 weeks; glucose without thiamine causes **Wernicke encephalopathy**.",
+            "Dehydration and immobility raise **VTE risk**.",
+          ],
+        },
+        {
+          title: "History in the OPD",
+          points: [
+            "Ask when vomiting started and score the last 24 hours with **PUQE**.",
+            "Ask about fluid intake, dark scanty urine, postural dizziness and weight loss.",
+            "**Abdominal pain is not part of HG**; think ectopic, torsion or appendicitis.",
+            "Ask about confusion, double vision or unsteadiness of **Wernicke**.",
+            "Ask about **iron tablets**, which worsen nausea, and screen mood and violence.",
+          ],
+        },
+        {
+          title: "Examination",
+          points: [
+            "Weigh her against pre-pregnancy weight; **over 5% loss** meets the definition.",
+            "Check pulse, postural BP, mucous membranes and capillary refill.",
+            "**Fever and localised tenderness** point away from HG.",
+            "Uterus **larger than dates** suggests twins or mole.",
+            "Check for **nystagmus, ophthalmoplegia and ataxia**.",
+          ],
+        },
+        {
+          title: "Investigations",
+          points: [
+            "**Midstream urine culture** in every woman with HG.",
+            "Sodium, potassium, urea and creatinine; **potassium under 3** needs admission.",
+            "CBC, glucose and LFT; mild transaminase rises are common.",
+            "**Pelvic ultrasound** to exclude twins and molar pregnancy.",
+            "TSH and FT4 only if clinically hyperthyroid.",
+          ],
+        },
+        {
+          title: "Treatment - first line",
+          points: [
+            "Validate symptoms and **treat early**.",
+            "Small, frequent dry carbohydrate meals; fluids between meals.",
+            "**Pause iron tablets** in the acute phase; continue folic acid.",
+            "**Doxylamine-pyridoxine 10/10 mg**, 2 at bedtime, up to 4 a day.",
+            "Or **cyclizine 50 mg** or **promethazine 12.5-25 mg**.",
+          ],
+        },
+        {
+          title: "Treatment - next steps",
+          points: [
+            "Second line: **ondansetron 4-8 mg** 8-hourly, after counselling on a tiny cleft risk.",
+            "Or **metoclopramide 10 mg** 8-hourly, for **no more than 5 days**.",
+            "Third line: **hydrocortisone 100 mg IV BD**, then prednisolone 40-50 mg, tapered.",
+            "IV **0.9% saline with 20 mmol KCl per litre**; avoid dextrose until thiamine is given.",
+            "**Thiamine 100 mg** for every woman with prolonged vomiting.",
+            "**Enoxaparin 40 mg SC daily** while admitted.",
+          ],
+        },
+        {
+          title: "Complications and red flags",
+          points: [
+            "Confusion, nystagmus or ataxia: **high-dose IV thiamine** before any glucose.",
+            "Raise sodium **no more than 10 mmol/L in 24 hours** to avoid osmotic demyelination.",
+            "Haematemesis suggests a **Mallory-Weiss tear**.",
+            "Pain, fainting or shoulder-tip pain in early pregnancy is a **ruptured ectopic**.",
+            "Low TSH with high FT4 in HG needs **no antithyroid drugs**.",
+          ],
+        },
+        {
+          title: "Referral and follow-up",
+          points: [
+            "Admit if she cannot keep fluids or tablets down, or is dehydrated despite antiemetics.",
+            "Review within **24-48 hours** using PUQE, weight and hydration.",
+            "**Never offer termination** until every treatment option has been tried.",
+            "Start **pre-emptive antiemetics** early in the next pregnancy.",
+          ],
+        },
+      ],
+      tables: [
+        {
+          heading: "Drugs in hyperemesis gravidarum",
+          columns: ["Drug", "Dose and route", "Duration", "Key side effects / cautions"],
+          rows: [
+            ["Doxylamine-pyridoxine", "10/10 mg, 2 at bedtime, max 4/day oral", "As needed", "Drowsiness, dry mouth"],
+            ["Cyclizine", "50 mg PO, IM or IV 8-hourly", "As needed", "Drowsiness, blurred vision"],
+            ["Promethazine", "12.5-25 mg 4-8-hourly", "Max 100 mg/day", "Sedation"],
+            ["Metoclopramide", "10 mg 8-hourly", "Max 5 days", "Dystonia; procyclidine treats it"],
+            ["Ondansetron", "4-8 mg PO 8-hourly or 8 mg IV 12-hourly", "As needed", "Constipation, QT prolongation"],
+            ["Hydrocortisone, then prednisolone", "100 mg IV BD, then 40-50 mg PO daily", "Taper to lowest dose", "Hyperglycaemia, hypertension"],
+            ["Thiamine", "100 mg PO 2-3 times daily, or IV", "Before any dextrose", "Rare anaphylaxis with IV"],
+            ["Enoxaparin", "40 mg SC daily", "While admitted", "Bleeding, bruising"],
+          ],
+        },
+        {
+          heading: "PUQE-24 severity",
+          columns: ["Score", "Severity", "Usual care"],
+          rows: [
+            ["6 or less", "Mild", "Diet advice, first-line antiemetic"],
+            ["7-11", "Moderate", "Antiemetics; ambulatory IV fluids"],
+            ["12 or more", "Severe", "Admit if dehydrated; IV fluids, thiamine, LMWH"],
+          ],
+        },
+        {
+          heading: "Acute abdominal pain at 6-10 weeks",
+          columns: ["Condition", "Clue", "Key test"],
+          rows: [
+            ["Ectopic pregnancy", "Pain, spotting, shoulder-tip pain", "TVS plus serial hCG"],
+            ["Miscarriage", "Bleeding with cramps", "TVS"],
+            ["Ovarian torsion", "Sudden unilateral pain, vomiting, mass", "Ultrasound; laparoscopy"],
+            ["Appendicitis", "Pain moving to right iliac fossa, fever", "Ultrasound, then MRI"],
+            ["Pyelonephritis", "Fever, loin pain, dysuria", "Urine culture"],
+          ],
+        },
+      ],
+      remember: [
+        "HG triad: over 5% weight loss, dehydration, electrolyte imbalance.",
+        "PUQE: 6 or less mild, 7-11 moderate, 12 or more severe.",
+        "Ultrasound every woman with HG for twins and mole.",
+        "Saline with KCl, not dextrose; thiamine before glucose.",
+        "Metoclopramide no more than 5 days.",
+        "Pain in early pregnancy is ectopic until proved otherwise.",
+      ],
+    },
     updated: [
       "RCOG Green-top 69 (2nd edition, 2024) replaces the 2016 edition as the citation for all NVP/HG statements.",
       "RCOG 2024: ketonuria is not an indicator of dehydration or severity - removed as an admission criterion and as a monitoring tool; admission now on dehydration or over 5% weight loss despite oral antiemetics.",
@@ -875,6 +3036,157 @@ const revision: RevisionSet = {
 
   "obstetrics-malpresentation-twins-operative-delivery": {
     checked: "2026-10",
+    notes: {
+      sections: [
+        {
+          title: "Definition and key facts",
+          points: [
+            "**Malpresentation** is any presentation other than vertex at term.",
+            "**Breech** is 20% at 28 weeks but only **3-4% at term**.",
+            "Transverse lie is about 1 in 300; face 1 in 600; brow 1 in 1500.",
+            "NFHS-6 caesarean rate is **27.2%**: about 54% private, 17% public.",
+            "Second-stage delay: no birth after **2 hours pushing (nullipara)** or **1 hour (multipara)**.",
+          ],
+        },
+        {
+          title: "Classification that matters",
+          points: [
+            "Breech: **frank** (commonest), **complete**, and **footling** (highest cord prolapse risk).",
+            "Twins by chorionicity: **DCDA, MCDA, MCMA and conjoined**.",
+            "Assisted birth by station: **outlet, low and mid-cavity**; never high-cavity.",
+            "Caesarean **category 1** within 30 minutes; **category 2** within 75 minutes.",
+            "**Robson ten groups** audit caesarean rates; groups 1, 2 and 5 contribute most.",
+          ],
+        },
+        {
+          title: "Causes and risk factors",
+          points: [
+            "Prematurity and **multiparity with a lax uterus**.",
+            "Poly- or oligohydramnios and **placenta praevia**.",
+            "Uterine anomalies, fibroids, contracted pelvis and fetal anomalies.",
+            "Twins: ART and ovulation induction raise dizygotic twinning.",
+          ],
+        },
+        {
+          title: "How it happens (pathophysiology)",
+          points: [
+            "Most fetuses turn cephalic because the bulkier breech fits the roomier fundus.",
+            "**Brow** presents the **mentovertical 13.5 cm**, too big for a normal pelvis.",
+            "**Face mentum posterior** cannot deliver because the neck is already fully extended.",
+            "Breech is a poor dilator, risking **head entrapment** and cord prolapse.",
+            "Monozygotic splitting day sets type: **0-3 DCDA, 4-8 MCDA, 8-12 MCMA**.",
+            "Shared placental vessels in monochorionic twins cause **TTTS**.",
+            "A lower segment transverse scar ruptures in about **0.5%** of labours.",
+          ],
+        },
+        {
+          title: "History in the OPD",
+          points: [
+            "Confirm gestation; breech before 36 weeks needs only reassessment.",
+            "Ask about APH, leaking and reduced movements, which bar ECV.",
+            "For a previous caesarean, get the **operative note**: incision, indication, interval.",
+            "In twins ask about ART, breathlessness and a rapidly growing abdomen.",
+            "Ask Rh status; an Rh-negative woman needs anti-D after ECV.",
+          ],
+        },
+        {
+          title: "Examination",
+          points: [
+            "A hard, round, ballotable head in the fundus means **breech**.",
+            "An empty pelvis with the head in a flank means **transverse lie**.",
+            "Before any instrument: head **1/5 or less palpable**, full dilatation, known position.",
+            "Severe caput and moulding or a Bandl ring means **obstruction**: no instrument.",
+            "In VBAC labour watch for **scar tenderness**, bleeding and loss of station.",
+          ],
+        },
+        {
+          title: "Investigations",
+          points: [
+            "**Ultrasound at 36 weeks** for suspected breech: type, placenta, liquor, weight.",
+            "**Chorionicity scan at 11-14 weeks**: lambda sign is DCDA, **T sign is MCDA**.",
+            "DCDA growth scans every 4 weeks from 20 weeks.",
+            "MCDA scans **every 2 weeks from 16 weeks** for TTTS.",
+            "**X-ray pelvimetry is not useful**.",
+          ],
+        },
+        {
+          title: "Treatment - first line",
+          points: [
+            "Offer **ECV at 36 weeks (nullipara) or 37 weeks (multipara)**; success about 50%.",
+            "Give **terbutaline 0.25 mg SC** before ECV to relax the uterus.",
+            "Term Breech Trial: planned caesarean **1.6% versus 5.0%** adverse outcome.",
+            "Vaginal twin birth is fine when **twin 1 is cephalic**.",
+            "Plan twin birth: **DCDA 37, MCDA 36, MCMA 32-34 weeks**.",
+          ],
+        },
+        {
+          title: "Treatment - next steps",
+          points: [
+            "Transverse lie in labour needs **caesarean**, even if the fetus is dead.",
+            "VBAC succeeds in **72-75%**, with rupture risk about **0.5%**.",
+            "For VBAC induction prefer a **Foley catheter**; prostaglandins raise rupture risk most.",
+            "Caesarean: **cefazolin 2 g IV** before skin incision.",
+            "After assisted birth: **amoxicillin-clavulanate 1.2 g IV** once (ANODE).",
+            "Abandon the instrument after **three pulls** without birth.",
+          ],
+        },
+        {
+          title: "Complications and red flags",
+          points: [
+            "**Cord prolapse**: elevate the presenting part, fill the bladder, category 1 caesarean.",
+            "**Abnormal CTG** is the commonest first sign of scar rupture.",
+            "Rapid abdominal growth in MCDA twins suggests **TTTS**.",
+            "Vacuum risks scalp injury and **subgaleal haemorrhage**; forceps risk anal sphincter tears.",
+            "Avoid vacuum **below 32 weeks**.",
+          ],
+        },
+      ],
+      tables: [
+        {
+          heading: "Drugs in malpresentation, twins and operative delivery",
+          columns: ["Drug", "Dose and route", "Duration", "Key side effects / cautions"],
+          rows: [
+            ["Terbutaline", "0.25 mg SC", "Once before ECV or for cord prolapse", "Tachycardia, tremor; avoid in heart disease"],
+            ["Anti-D after ECV", "500-1500 IU IM", "Within 72 hours", "More per Kleihauer"],
+            ["Betamethasone", "12 mg IM, 24 h apart", "2 doses, 24-34 weeks", "Maternal hyperglycaemia"],
+            ["Magnesium sulphate", "4 g IV over 20 min, then 1 g/h", "Up to 24 h, under 32 weeks", "Loss of reflexes, respiratory depression"],
+            ["Oxytocin (twins)", "10 IU IM, then 40 IU in 500 mL", "125 mL/h for 4 hours", "Hypotension with bolus"],
+            ["Cefazolin", "2 g IV (3 g if over 120 kg)", "Single dose before incision", "Allergy"],
+            ["Amoxicillin-clavulanate", "1.2 g IV", "Single dose within 6 h of assisted birth", "Allergy, diarrhoea"],
+            ["Enoxaparin", "40 mg SC daily", "10 days or 6 weeks", "Bleeding; 4 h after spinal"],
+          ],
+        },
+        {
+          heading: "Twin chorionicity",
+          columns: ["Type", "Splitting day", "Ultrasound sign", "Surveillance", "Planned birth"],
+          rows: [
+            ["DCDA", "0-3 (or all dizygotic)", "Lambda sign", "Every 4 weeks from 20 weeks", "37 weeks"],
+            ["MCDA", "4-8", "T sign", "Every 2 weeks from 16 weeks", "36 weeks"],
+            ["MCMA", "8-12", "No dividing membrane", "Specialist unit", "32-34 weeks, caesarean"],
+            ["Conjoined", "13 or later", "Fused bodies", "Tertiary centre", "Planned caesarean"],
+          ],
+        },
+        {
+          heading: "Head presentations and diameters",
+          columns: ["Presentation", "Diameter", "Size", "Delivery"],
+          rows: [
+            ["Well-flexed vertex", "Suboccipitobregmatic", "9.5 cm", "Vaginal"],
+            ["Face, mentum anterior", "Submentobregmatic", "9.5 cm", "Vaginal possible"],
+            ["Face, mentum posterior", "Neck fully extended", "Cannot flex", "Caesarean"],
+            ["Brow", "Mentovertical", "13.5 cm", "Caesarean"],
+          ],
+        },
+      ],
+      remember: [
+        "Breech 20% at 28 weeks, 3-4% at term; ECV at 36-37 weeks.",
+        "Lambda sign DCDA, T sign MCDA - decide at 11-14 weeks.",
+        "Twin birth: DCDA 37, MCDA 36, MCMA 32-34 weeks.",
+        "Brow 13.5 cm needs caesarean; mentum anterior face can deliver.",
+        "Instrument: head 1/5 or less, full dilatation, known position, empty bladder.",
+        "Vacuum fails more; forceps tear more.",
+        "VBAC success 72-75%, rupture 0.5%.",
+      ],
+    },
     updated: [
       "NFHS-6 (2023-24): caesarean rate 27.2% (NFHS-5 21.5%), about 54% in private and 17% in public facilities.",
     ],
