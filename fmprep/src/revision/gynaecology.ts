@@ -2,6 +2,172 @@ import type { RevisionSet } from "./index";
 
 const revision: RevisionSet = {
   "gynaecology-abnormal-uterine-bleeding": {
+    notes: {
+      sections: [
+        {
+          title: "Definition and key facts",
+          points: [
+            "AUB is uterine-corpus bleeding abnormal in **frequency, regularity, duration or volume**.",
+            "It applies only to a non-pregnant woman of reproductive age.",
+            "Normal cycle (FIGO 2018): every **24-38 days**, lasting **8 days or less**.",
+            "Cycle-to-cycle variation of 7-9 days or less is normal.",
+            "**Heavy menstrual bleeding** is loss that impairs her quality of life, not a fixed 80 mL.",
+            "Drop menorrhagia, metrorrhagia and DUB; say HMB, intermenstrual bleeding and AUB-O.",
+            "NFHS-5: **57% of Indian women** aged 15-49 are anaemic, so HMB quickly causes iron deficiency.",
+          ],
+        },
+        {
+          title: "Classification that matters",
+          points: [
+            "Use **FIGO PALM-COEIN**: PALM is structural, COEIN is non-structural.",
+            "PALM: Polyp, Adenomyosis, Leiomyoma, Malignancy and hyperplasia.",
+            "COEIN: Coagulopathy, Ovulatory, Endometrial, Iatrogenic, Not otherwise classified.",
+            "Only **submucosal fibroids (types 0-2)** reliably cause bleeding.",
+            "A woman can carry two labels at once, for example AUB-L(SM); C.",
+            "Bleeding in pregnancy, before menarche or after menopause is **not AUB**.",
+          ],
+        },
+        {
+          title: "How it happens (pathophysiology)",
+          points: [
+            "1. In AUB-O there is no ovulation, so no corpus luteum and no progesterone.",
+            "2. **Unopposed oestrogen** builds a thick, fragile endometrium.",
+            "3. The lining outgrows its blood supply and breaks down piecemeal, giving irregular bleeding.",
+            "4. Over years, unopposed oestrogen leads to **hyperplasia** and cancer.",
+            "5. In AUB-E, excess local **fibrinolysis and prostaglandin E2** cause heavy regular periods.",
+            "6. This is why **tranexamic acid and NSAIDs** work in ovulatory HMB.",
+            "7. About **13% of HMB** is an inherited bleeding disorder, usually von Willebrand disease.",
+          ],
+        },
+        {
+          title: "History in the OPD",
+          points: [
+            "Ask about pregnancy first and do a **urine pregnancy test**.",
+            "Quantify loss: night changes, flooding, **clots larger than a 1-rupee coin**, days missed.",
+            "**Regular heavy** periods suggest L, A, C or E; **irregular** bleeding suggests AUB-O.",
+            "Intermenstrual or postcoital bleeding points to the cervix or a polyp.",
+            "Coagulopathy screen: heavy **since menarche**, PPH, or surgical or dental bleeding.",
+            "Note drugs (IUCD, DMPA, warfarin, DOACs, tamoxifen) and her fertility wish.",
+          ],
+        },
+        {
+          title: "Examination",
+          points: [
+            "Check pulse, BP, **pallor**, BMI, thyroid, acanthosis, hirsutism and bruising.",
+            "Feel the abdomen for a pelvic mass you cannot get below.",
+            "On speculum, **biopsy any visible cervical lesion**; a normal smear is not reassurance.",
+            "A **bulky, soft, tender uterus** suggests adenomyosis.",
+            "An **irregular, firm uterus** suggests fibroids.",
+            "Skip speculum in a virgo intacta and use ultrasound instead.",
+          ],
+        },
+        {
+          title: "Investigations",
+          points: [
+            "**UPT and full blood count** for every woman with HMB.",
+            "Add ferritin if the FBC suggests iron deficiency; **under 15 microgram/L** means depleted.",
+            "TSH and prolactin only if symptoms or irregular cycles point to them.",
+            "**Transvaginal ultrasound** if the uterus is enlarged, a mass is felt or treatment fails.",
+            "**Pipelle endometrial biopsy** at **45 or over**, or younger with unopposed-oestrogen risk.",
+            "Postmenopausal endometrium of **4 mm or less** has an NPV for cancer of about 99%.",
+            "**D and C is not a diagnostic test**; it misses focal lesions.",
+          ],
+        },
+        {
+          title: "Treatment - first line",
+          points: [
+            "**LNG-IUS 52 mg** is first-line if there is no cavity distortion; it cuts loss 70-95%.",
+            "Expect irregular spotting for 3-6 months after insertion.",
+            "If LNG-IUS is declined, use **tranexamic acid** or **mefenamic acid** during periods.",
+            "These non-hormonal options suit the woman **trying to conceive**.",
+            "Hormonal options: combined pill, or norethisterone 5 mg TDS from **day 5 to 26**.",
+            "For AUB-O, give **MPA 10 mg daily for 12-14 days** each month to protect the endometrium.",
+            "Correct anaemia with oral iron, 60-120 mg elemental iron daily or alternate days.",
+          ],
+        },
+        {
+          title: "Treatment - next steps",
+          points: [
+            "Review at **3 months** with a bleeding diary and her own quality-of-life rating.",
+            "DMPA, ormeloxifene or a GnRH agonist are second-line options.",
+            "**Leuprolide** is used only before surgery; add tibolone add-back beyond 3 months.",
+            "Procedures: hysteroscopic resection, endometrial ablation, uterine artery embolisation, myomectomy.",
+            "**Hysterectomy is last**, only after an LNG-IUS trial and endometrial assessment.",
+          ],
+        },
+        {
+          title: "Complications and red flags",
+          points: [
+            "Acute AUB with shock or **Hb under 7 g/dL**: two cannulae, cross-match, transfuse, admit.",
+            "Acute bleed drugs: **MPA 20 mg TDS for 7 days** or a monophasic COC TDS for 7 days.",
+            "Positive pregnancy test with bleeding and pain is **ectopic** until excluded.",
+            "Postmenopausal bleeding is endometrial cancer until proved otherwise.",
+            "A fibroid growing after menopause suggests **sarcoma**; refer to gynae-oncology.",
+          ],
+        },
+        {
+          title: "Referral and follow-up",
+          points: [
+            "**Urgent 2-week referral**: postmenopausal bleeding at 55 or over, cervical lesion, suspicious mass.",
+            "Refer to gynaecology for failed treatment at 3-6 months or fibroids over 3 cm.",
+            "Refer **atypical hyperplasia** on biopsy and a positive vWD screen to specialists.",
+            "Recheck Hb 4 weeks after starting iron; expect a rise of 1-2 g/dL.",
+          ],
+        },
+      ],
+      tables: [
+        {
+          heading: "Drugs for heavy and abnormal uterine bleeding",
+          columns: ["Drug", "Dose and route", "Duration", "Key side effects / cautions"],
+          rows: [
+            ["LNG-IUS 52 mg", "Intrauterine, releases about 20 microgram/day", "5 years for HMB", "Spotting 3-6 months, mild acne"],
+            ["Tranexamic acid", "1 g oral three times daily", "Up to 4 days from day 1", "Avoid in active VTE; halve in renal impairment"],
+            ["Mefenamic acid", "500 mg oral three times daily with food", "3-5 days per period", "Dyspepsia, GI bleed; stop after 3 failed cycles"],
+            ["Combined pill (EE 30 + LNG 150)", "1 tablet oral daily", "21/7 or continuous", "VTE, BP rise; check WHO MEC"],
+            ["Norethisterone", "5 mg oral three times daily", "Day 5-26 each cycle", "Bloating, mood change; luteal-only regimen useless"],
+            ["Medroxyprogesterone (AUB-O)", "10 mg oral daily", "12-14 days each month", "Bloating, breast tenderness"],
+            ["DMPA", "150 mg deep IM or 104 mg SC", "Every 12 weeks", "Irregular bleeding, delayed fertility"],
+            ["Ormeloxifene", "60 mg oral twice weekly, then weekly", "12 weeks each phase", "Delayed periods; avoid in PCOS, liver disease"],
+            ["Leuprolide", "3.75 mg IM monthly", "3-6 months, preoperative only", "Hot flushes, bone loss; tibolone add-back"],
+            ["Ferric carboxymaltose", "20 mg/kg IV, max 1000 mg", "Single dose, may repeat weekly", "Hypersensitivity, hypophosphataemia"],
+          ],
+        },
+        {
+          heading: "PALM-COEIN at a glance",
+          columns: ["Category", "Typical pattern", "Confirming test"],
+          rows: [
+            ["Polyp", "Intermenstrual and postcoital bleeding", "Hysteroscopy or sonohysterography"],
+            ["Adenomyosis", "Heavy painful periods, bulky tender uterus", "TVS or MRI (junctional zone over 12 mm)"],
+            ["Leiomyoma", "Heavy regular periods, pressure symptoms", "TVS with FIGO type 0-8"],
+            ["Malignancy and hyperplasia", "Intermenstrual or postmenopausal bleeding", "Endometrial biopsy"],
+            ["Coagulopathy", "Heavy since menarche, bruising", "vWF antigen, ristocetin cofactor, factor VIII"],
+            ["Ovulatory dysfunction", "Irregular, unpredictable, prolonged", "Clinical pattern, TSH, prolactin"],
+            ["Endometrial", "Regular heavy, no lesion", "Diagnosis of exclusion"],
+            ["Iatrogenic", "Breakthrough bleeding", "Drug and device history"],
+            ["Not otherwise classified", "Post-caesarean niche, AV malformation", "Doppler TVS, hysteroscopy"],
+          ],
+        },
+        {
+          heading: "FIGO 2018 normal menstruation",
+          columns: ["Parameter", "Normal", "Abnormal"],
+          rows: [
+            ["Frequency", "24-38 days", "Under 24 or over 38 days"],
+            ["Regularity", "Variation 7-9 days or less", "Variation 10 days or more"],
+            ["Duration", "8 days or less", "Over 8 days"],
+            ["Volume", "Normal for the woman", "HMB: affects quality of life"],
+          ],
+        },
+      ],
+      remember: [
+        "**PALM-COEIN**: PALM structural, COEIN non-structural; two labels can coexist.",
+        "Urine pregnancy test before everything in a reproductive-age woman.",
+        "**Biopsy at 45**, or younger with obesity, PCOS or chronic anovulation.",
+        "LNG-IUS is first-line for HMB.",
+        "Norethisterone runs **day 5 to 26**; the luteal-only regimen is the classic wrong answer.",
+        "Trying to conceive: tranexamic acid or mefenamic acid only.",
+        "13% of HMB is a bleeding disorder; screen before surgery.",
+      ],
+    },
     checked: "2026-10",
     master: {
       heading: "Master revision table - abnormal uterine bleeding (PALM-COEIN)",
@@ -68,6 +234,167 @@ const revision: RevisionSet = {
   },
 
   "gynaecology-contraception": {
+    notes: {
+      sections: [
+        {
+          title: "Definition and key facts",
+          points: [
+            "Contraception is the intentional prevention of pregnancy by **reversible or permanent** methods.",
+            "Effectiveness is pregnancies per 100 women in the first year, typical versus perfect use.",
+            "The gap between perfect and typical use is **user error**.",
+            "**LARC** (implant, LNG-IUS, copper IUCD) is most effective because it removes user error.",
+            "NFHS-5: female sterilisation **37.9%** versus vasectomy **0.3%**; unmet need 9.4%.",
+            "National basket: Nirodh, **Mala-N**, **Chhaya**, **Antara**, Cu-IUCD, emergency pill, sterilisation.",
+          ],
+        },
+        {
+          title: "Classification that matters",
+          points: [
+            "**WHO MEC category 1**: no restriction on use.",
+            "**Category 2**: advantages generally outweigh the risks.",
+            "**Category 3**: risks usually outweigh advantages; use only if nothing else is acceptable.",
+            "**Category 4**: unacceptable health risk; do not use.",
+            "At ASHA or ANM level, categories 1-2 mean use and 3-4 mean do not use.",
+            "Some conditions differ for starting and continuing; IUCD with current PID is 4 to insert, 2 to continue.",
+          ],
+        },
+        {
+          title: "How it happens (pathophysiology)",
+          points: [
+            "1. Oestrogen suppresses FSH, so no dominant follicle is selected.",
+            "2. Progestogen suppresses the **LH surge** and thickens cervical mucus.",
+            "3. Together they abolish ovulation; the 7 pill-free days are the weak point.",
+            "4. Copper ions are **spermicidal and ovotoxic**; the IUCD is not an abortifacient.",
+            "5. Sperm survive up to 5 days, so emergency contraception within 120 hours still works.",
+            "6. Ethinylestradiol raises clotting factors, explaining **VTE risk** with combined pills.",
+          ],
+        },
+        {
+          title: "History in the OPD",
+          points: [
+            "Ask her goal: **spacing or limiting**, breastfeeding status and partner's views.",
+            "Use the **WHO pregnancy checklist** to be reasonably sure she is not pregnant.",
+            "Ask specifically about **migraine with aura**; it is category 4 for combined methods.",
+            "Note smoking at 35 or over, hypertension, past DVT and breast cancer.",
+            "Ask about enzyme inducers: rifampicin, carbamazepine, phenytoin, efavirenz.",
+            "Ask privately about partner control of contraception (reproductive coercion).",
+          ],
+        },
+        {
+          title: "Examination",
+          points: [
+            "**Blood pressure** is the one essential check before the combined pill.",
+            "No pelvic, breast or Pap examination is needed before pills, injectables or implants.",
+            "Before an IUCD, do a speculum and **bimanual examination** for size, position and tenderness.",
+            "Sound the uterus; a normal depth is **6-9 cm**.",
+            "An unrecognised **retroverted uterus** is the classic setting for perforation.",
+          ],
+        },
+        {
+          title: "Investigations",
+          points: [
+            "No routine blood tests are needed before any method in a healthy woman.",
+            "Urine pregnancy test only when the WHO checklist cannot exclude pregnancy.",
+            "Missing IUCD threads: pregnancy test, then **ultrasound**, then abdominal X-ray.",
+            "After vasectomy, **semen analysis at 12 weeks** must show azoospermia.",
+          ],
+        },
+        {
+          title: "Treatment - first line",
+          points: [
+            "Counsel with **GATHER** or BCS+; quote effectiveness first, then let her choose.",
+            "**Mala-N**: one tablet daily, 21 hormonal and 7 iron, no break between packs.",
+            "Start the pill on days 1-5 with no back-up; otherwise use condoms for 7 days.",
+            "Missed pills: **1-2 missed**, take one and continue; **3 or more**, add condoms 7 days.",
+            "**Antara (DMPA) 150 mg** deep IM every 13 weeks; up to 4 weeks late without back-up.",
+            "**Chhaya 30 mg** twice weekly for 3 months, then once weekly; safe in breastfeeding.",
+            "**Cu-T 380A** lasts 10 years; LNG-IUS gives contraception up to 8 years.",
+          ],
+        },
+        {
+          title: "Treatment - next steps",
+          points: [
+            "**Copper IUCD within 5 days** is the most effective emergency contraception.",
+            "**Levonorgestrel 1.5 mg** single dose ideally within 72 hours, up to 120 hours.",
+            "With BMI over 26, weight over 70 kg or enzyme inducers, give 3 mg or prefer IUCD.",
+            "**Ulipristal 30 mg** within 120 hours; wait 5 days before a hormonal method.",
+            "With enzyme inducers, switch to IUCD, LNG-IUS or DMPA rather than doubling pills.",
+          ],
+        },
+        {
+          title: "Special groups",
+          points: [
+            "Postpartum: POP, implant and DMPA can start **immediately** (DMPA now category 2).",
+            "Breastfeeding: no combined pill before 6 months.",
+            "IUCD postpartum within 48 hours or from 4-6 weeks; **48 hours to 4 weeks is category 3**.",
+            "Post-abortion: ovulation returns within 2 weeks, so start any method **the same day**.",
+            "Perimenopause: continue until 2 years after the last period if under 50, 1 year if over 50.",
+            "Sterilisation: woman 22-49, one child over 1 year; **spouse consent is not required**.",
+          ],
+        },
+        {
+          title: "Complications and red flags",
+          points: [
+            "Pill warning signs **ACHES**: abdominal pain, chest pain, headache, eye problems, severe leg pain.",
+            "Pelvic pain with a late period in an IUCD user is **ectopic** until proved otherwise.",
+            "PID with an IUCD: treat without removing it; remove if no response in 48-72 hours.",
+            "Pregnancy with an IUCD under 12 weeks with visible threads: **remove the device**.",
+            "Vasectomy needs condoms for 3 months until azoospermia is confirmed.",
+          ],
+        },
+      ],
+      tables: [
+        {
+          heading: "Contraceptive methods and doses",
+          columns: ["Drug", "Dose and route", "Duration", "Key side effects / cautions"],
+          rows: [
+            ["Mala-N (LNG 0.15 + EE 0.03 mg)", "1 tablet oral daily, 21 + 7 iron", "Continuous packs", "Nausea, spotting, VTE, BP rise"],
+            ["Desogestrel POP 75 microgram", "1 tablet oral daily", "No break; late if over 12 h", "Irregular bleeding, ovarian cysts"],
+            ["Centchroman (Chhaya) 30 mg", "Oral twice weekly, then weekly", "3 months, then indefinitely", "Delayed periods; avoid in PCOS, liver disease"],
+            ["DMPA (Antara) 150 mg", "Deep IM", "Every 13 weeks", "Amenorrhoea, weight gain, BMD loss, delayed fertility"],
+            ["DMPA-SC 104 mg", "SC, self-injection possible", "Every 13 weeks", "As DMPA IM; do not rub site"],
+            ["Etonogestrel implant 68 mg", "Subdermal, inner non-dominant arm", "3 years", "Unpredictable bleeding, acne"],
+            ["Copper IUCD 380A", "Intrauterine", "10 years", "Heavier painful periods, expulsion, perforation"],
+            ["LNG-IUS 52 mg", "Intrauterine", "Up to 8 years", "Spotting 3-6 months; category 4 in breast cancer"],
+            ["Levonorgestrel EC 1.5 mg", "Oral single dose", "Within 72 h, up to 120 h", "Nausea; 3 mg if BMI over 26"],
+            ["Ulipristal acetate 30 mg", "Oral single dose", "Within 120 h", "Wait 5 days before hormonal method"],
+          ],
+        },
+        {
+          heading: "WHO MEC categories for common conditions",
+          columns: ["Condition", "Combined pill", "POP / implant", "DMPA", "Cu-IUCD"],
+          rows: [
+            ["Migraine with aura", "4", "2", "2", "1"],
+            ["Age 35 or over, 15 or more cigarettes a day", "4", "1", "1", "1"],
+            ["BP 160/100 or over", "4", "2", "3", "1"],
+            ["History of DVT or PE", "4", "2", "2", "1"],
+            ["Breastfeeding under 6 weeks", "4", "2", "2 (was 3)", "Under 48 h: 1"],
+            ["Current breast cancer", "4", "4", "4", "1"],
+            ["Rifampicin or enzyme-inducing anticonvulsants", "3", "3 (implant 2)", "1", "1"],
+            ["Current PID or purulent cervicitis", "1", "1", "1", "4 to insert"],
+          ],
+        },
+        {
+          heading: "Effectiveness tiers (typical-use failure per 100 in year 1)",
+          columns: ["Tier", "Methods", "Failure rate"],
+          rows: [
+            ["Tier 1", "Implant, LNG-IUS, copper IUCD, sterilisation", "Under 1"],
+            ["Tier 2", "Injectables, pills, LAM", "4-7"],
+            ["Tier 3", "Condoms, fertility awareness, withdrawal", "13-20"],
+            ["Tier 4", "Spermicides", "About 21"],
+          ],
+        },
+      ],
+      remember: [
+        "MEC: **1-2 use, 3-4 do not use** at peripheral level.",
+        "Migraine with aura: combined pill category 4, copper IUCD category 1.",
+        "Most effective emergency contraception is the **copper IUCD within 5 days**.",
+        "Only BP is needed before the combined pill; no pelvic exam or blood test.",
+        "**ACHES** are the pill warning signs.",
+        "WHO MEC 2025: DMPA in breastfeeding under 6 weeks is now **category 2**.",
+        "Vasectomy: condoms 3 months and azoospermia on semen analysis at 12 weeks.",
+      ],
+    },
     checked: "2026-10",
     updated: [
       "WHO MEC 6th edition (2025): about 2000 recommendations reaffirmed and 112 new or updated - tags moved from WHO MEC 2015 to WHO MEC 2025.",
@@ -138,6 +465,152 @@ const revision: RevisionSet = {
   },
 
   "gynaecology-pcos": {
+    notes: {
+      sections: [
+        {
+          title: "Definition and key facts",
+          points: [
+            "PCOS is a lifelong **endocrine-metabolic disorder**, not just an ovarian cyst.",
+            "**Rotterdam criteria**: any **2 of 3** after excluding mimics.",
+            "The three are ovulatory dysfunction, hyperandrogenism, and PCOM on ultrasound or raised AMH.",
+            "Irregular cycles in adults: under 21 or over 35 days, or fewer than 8 a year.",
+            "**PCOM**: 20 or more follicles of 2-9 mm, or ovarian volume 10 mL or more.",
+            "India: prevalence **3.7-22.5%**; use Asian cut-offs (BMI 23, 25; waist over 80 cm).",
+          ],
+        },
+        {
+          title: "Classification that matters",
+          points: [
+            "**Phenotype A**: all three features, with the worst metabolic risk.",
+            "**Phenotype B**: hyperandrogenism plus anovulation.",
+            "**Phenotype C**: hyperandrogenism plus PCOM, still ovulating.",
+            "**Phenotype D**: anovulation plus PCOM without hyperandrogenism, the mildest.",
+            "Adolescents need **both** irregular cycles and hyperandrogenism; otherwise label them 'at risk'.",
+            "No ultrasound or AMH for diagnosis **within 8 years of menarche**.",
+          ],
+        },
+        {
+          title: "How it happens (pathophysiology)",
+          points: [
+            "1. Fast **GnRH pulses** favour LH over FSH.",
+            "2. LH drives over-active theca cells to make excess androgen.",
+            "3. **Insulin resistance** (50-70%, even lean women) causes hyperinsulinaemia, which acts like LH.",
+            "4. Insulin lowers **SHBG**, so free testosterone rises.",
+            "5. Androgens and high AMH arrest follicles at 2-9 mm; no dominant follicle, no ovulation.",
+            "6. No progesterone means **unopposed oestrogen**, giving hyperplasia and endometrial cancer risk.",
+          ],
+        },
+        {
+          title: "History in the OPD",
+          points: [
+            "Take a menstrual history since menarche, including the longest gap without a period.",
+            "Ask about excess hair, acne, scalp thinning and how she removes hair.",
+            "**Rapid onset** with voice change or clitoral enlargement suggests an androgen-secreting tumour.",
+            "Ask her **fertility plans**; this decides the COC versus ovulation induction.",
+            "Look for mimics: galactorrhoea, hypothyroid symptoms, striae and bruising.",
+            "Screen mood (PHQ-9, GAD-7), eating disorders and snoring.",
+          ],
+        },
+        {
+          title: "Examination",
+          points: [
+            "Record **BMI, waist** and blood pressure at every visit.",
+            "**Modified Ferriman-Gallwey score**: nine areas graded 0-4; 4-6 or more is hirsutism in South Asians.",
+            "**Acanthosis nigricans** on the neck and axillae marks insulin resistance.",
+            "**Virilisation** (clitoromegaly, deep voice, temporal balding) is not PCOS; work up for tumour.",
+            "Look for Cushingoid features: purple striae, proximal myopathy, bruising.",
+          ],
+        },
+        {
+          title: "Investigations",
+          points: [
+            "Exclude mimics with **TSH, prolactin and morning 17-OHP**; beta-hCG if amenorrhoeic.",
+            "17-OHP over 2 ng/mL needs an ACTH stimulation test for non-classical CAH.",
+            "Total testosterone with SHBG to calculate the free androgen index.",
+            "Testosterone **over 150 ng/dL** or DHEAS over twice normal: image ovaries and adrenals.",
+            "**75 g OGTT** at diagnosis and every 1-3 years; HbA1c misses IGT.",
+            "Fasting lipid profile at diagnosis.",
+            "Do not order the **LH:FSH ratio** or fasting insulin.",
+          ],
+        },
+        {
+          title: "Treatment - first line",
+          points: [
+            "**Lifestyle first**: 5-10% weight loss within 6 months often restores ovulation.",
+            "Diet deficit of 500-750 kcal/day; no special PCOS diet is superior.",
+            "Exercise at least 150 minutes a week of moderate activity.",
+            "**COC** is first-line for cycles and hirsutism; it lowers LH and raises SHBG.",
+            "**Metformin** for metabolic features, titrated to 1500-2000 mg/day with meals.",
+            "Not on a COC: **MPA 10 mg for 12-14 days** every 1-3 months to protect the endometrium.",
+          ],
+        },
+        {
+          title: "Treatment - next steps",
+          points: [
+            "Add **spironolactone 25-100 mg** if hirsutism persists after 6 months of COC.",
+            "Spironolactone needs reliable contraception because it feminises a male fetus.",
+            "**Letrozole 2.5 mg days 3-7** is first-line ovulation induction, up to 7.5 mg.",
+            "Clomiphene 50 mg days 2-6 is the alternative, up to 150 mg, maximum 6 ovulatory cycles.",
+            "Confirm ovulation with mid-luteal progesterone over 10 nmol/L and follicle tracking.",
+            "Third line: gonadotrophins (WHO 2025 prefers them over ovarian drilling), then IVF.",
+          ],
+        },
+        {
+          title: "Special groups",
+          points: [
+            "Adolescents 'at risk': treat symptoms and reassess 8 years after menarche.",
+            "Pregnancy: higher risk of **GDM**, pre-eclampsia and preterm birth; do an early OGTT.",
+            "PCOS is the strongest risk factor for **OHSS** during gonadotrophin cycles.",
+            "Letrozole for ovulation induction is **off-label in India**; document consent.",
+          ],
+        },
+        {
+          title: "Referral and follow-up",
+          points: [
+            "Weight, waist, BP and mood every 6-12 months.",
+            "Ensure a withdrawal bleed **at least every 3 months** if not on a COC.",
+            "Refer urgently for rapid virilisation or suspected Cushing syndrome.",
+            "Refer to fertility services after 6 ovulatory cycles without pregnancy.",
+          ],
+        },
+      ],
+      tables: [
+        {
+          heading: "Drugs in PCOS",
+          columns: ["Drug", "Dose and route", "Duration", "Key side effects / cautions"],
+          rows: [
+            ["COC (EE 30 + LNG 150)", "1 tablet oral daily", "Review hirsutism at 6 months", "Nausea, BP rise, VTE; check WHO MEC"],
+            ["Metformin", "500 mg oral daily, titrate to 1500-2000 mg/day", "Long term", "GI upset, B12 deficiency; stop if eGFR under 30"],
+            ["Medroxyprogesterone acetate", "10 mg oral daily", "12-14 days every 1-3 months", "Bloating; not contraceptive"],
+            ["Spironolactone", "25-100 mg oral daily", "After 6 months of COC", "Hyperkalaemia; needs contraception"],
+            ["Eflornithine 11.5% cream", "Topical to face twice daily", "Effect in 6-8 weeks", "Burning, acne, rash"],
+            ["Letrozole", "2.5 mg oral days 3-7, up to 7.5 mg", "Up to 6 ovulatory cycles", "Hot flushes, headache; off-label in India"],
+            ["Clomiphene citrate", "50 mg oral days 2-6, up to 150 mg", "Max 6 ovulatory cycles", "Visual blurring (stop), multiple pregnancy"],
+          ],
+        },
+        {
+          heading: "Rotterdam criteria and exclusions",
+          columns: ["Element", "How it is established", "Note"],
+          rows: [
+            ["Ovulatory dysfunction", "Cycles under 21 or over 35 days", "Or fewer than 8 a year"],
+            ["Hyperandrogenism", "mFG 4-6 or more, acne, free androgen index", "Clinical or biochemical is enough"],
+            ["PCOM or AMH", "20 follicles 2-9 mm or volume 10 mL", "Not within 8 years of menarche"],
+            ["Exclude thyroid and prolactin", "TSH, prolactin", "Both mimic PCOS"],
+            ["Exclude non-classical CAH", "Morning follicular 17-OHP", "Over 2 ng/mL needs ACTH test"],
+            ["Exclude tumour or Cushing", "Testosterone, DHEAS, dexamethasone test", "Triggered by rapid virilisation"],
+          ],
+        },
+      ],
+      remember: [
+        "Rotterdam = **2 of 3** and a diagnosis of exclusion (TSH, prolactin, 17-OHP).",
+        "Never order the LH:FSH ratio; it is not a criterion.",
+        "PCOM is now **20 follicles or 10 mL**.",
+        "5-10% weight loss before any drug.",
+        "**Letrozole beats clomiphene** for live birth in PCOS.",
+        "OGTT at diagnosis and every 1-3 years.",
+        "Refuses the pill? Still protect the endometrium with progestogen or LNG-IUS.",
+      ],
+    },
     checked: "2026-10",
     updated: [
       "WHO infertility guideline (Nov 2025): after failed letrozole, gonadotrophins preferred over laparoscopic ovarian drilling; letrozole alone preferred over letrozole plus metformin.",
@@ -193,6 +666,162 @@ const revision: RevisionSet = {
   },
 
   "gynaecology-vaginal-discharge-pid": {
+    notes: {
+      sections: [
+        {
+          title: "Definition and key facts",
+          points: [
+            "**Physiological discharge** is clear or white, non-offensive and varies with the cycle.",
+            "Pathological discharge changes in colour, odour, amount or consistency, or causes symptoms.",
+            "Many Indian women report 'white discharge' with backache or stress and no infection.",
+            "Untreated chlamydia is **asymptomatic in about 70%** and silently damages the tubes.",
+            "Foul discharge over 35 may be **cervical cancer**; always look at the cervix.",
+          ],
+        },
+        {
+          title: "Classification that matters",
+          points: [
+            "**Vaginitis**: bacterial vaginosis, candidiasis, trichomoniasis.",
+            "**Cervicitis**: chlamydia, gonorrhoea, Mycoplasma genitalium.",
+            "**Upper-tract infection**: pelvic inflammatory disease (PID).",
+            "Only cervicitis and PID need gonorrhoea-chlamydia cover and partner treatment.",
+            "**Amsel criteria (3 of 4)** for BV: thin grey discharge, pH over 4.5, positive whiff, clue cells.",
+            "**Recurrent candidiasis** is 3 or more symptomatic episodes in a year.",
+          ],
+        },
+        {
+          title: "How it happens (pathophysiology)",
+          points: [
+            "1. Oestrogen loads vaginal cells with glycogen.",
+            "2. **Lactobacilli** turn glycogen into lactic acid, keeping pH 3.8-4.5.",
+            "3. In BV, lactobacilli are lost and Gardnerella and anaerobes form a biofilm (clue cells).",
+            "4. Anaerobic **amines** smell fishy, especially after sex or menses.",
+            "5. Menses, IUCD insertion, abortion or delivery breach the cervical barrier.",
+            "6. Infection ascends to endometrium, tubes and ovaries, causing PID.",
+            "7. Tubal scarring causes **infertility** and a 6-10 fold ectopic risk.",
+          ],
+        },
+        {
+          title: "History in the OPD",
+          points: [
+            "Ask colour, consistency and odour, and whether worse after sex or periods.",
+            "**Itch** points to candida; **fishy odour without itch** points to BV.",
+            "Pelvic pain, deep dyspareunia, fever or postcoital bleeding point to cervicitis or PID.",
+            "Ask the LMP; pelvic pain with a missed period is **ectopic** until proved otherwise.",
+            "Take a private sexual history and ask about recent IUCD insertion or abortion.",
+            "Ask about diabetes, antibiotics, steroids and douching.",
+          ],
+        },
+        {
+          title: "Examination",
+          points: [
+            "Check temperature; **over 38.3 C** supports PID.",
+            "On speculum, see whether discharge comes from the **vaginal walls or the os**.",
+            "**Mucopurulent discharge** and a friable cervix that bleeds on swabbing mean cervicitis.",
+            "Test pH from the lateral vaginal wall: **over 4.5** suggests BV or trichomonas.",
+            "Do the whiff test and saline and KOH wet mounts at the bedside.",
+            "On bimanual, **cervical motion, uterine or adnexal tenderness** suggests PID.",
+          ],
+        },
+        {
+          title: "Investigations",
+          points: [
+            "**Urine pregnancy test** in every woman with pelvic pain.",
+            "Bedside pH, whiff test and wet mounts separate the three vaginitides.",
+            "**NAAT (PCR)** for chlamydia and gonorrhoea is the test of choice where available.",
+            "Offer HIV, syphilis (RPR or VDRL with TPHA) and HBsAg to every woman with an STI.",
+            "For PID: CBC, CRP, urine microscopy and TVS if a mass or abscess is suspected.",
+            "Check glucose and HIV in recurrent candidiasis.",
+          ],
+        },
+        {
+          title: "Diagnosis",
+          points: [
+            "Vaginitis itches or smells with a normal cervix.",
+            "Cervicitis gives a friable, bleeding os with pus.",
+            "**PID (CDC minimum criteria)**: pelvic pain plus any one of cervical motion, uterine or adnexal tenderness.",
+            "One finding is enough to treat PID; waiting costs her tubes.",
+          ],
+        },
+        {
+          title: "Treatment - first line",
+          points: [
+            "Where tests are unavailable, use **NACO colour-coded kits**.",
+            "**Kit 2 (green)** for vaginitis: secnidazole 2 g plus fluconazole 150 mg, single doses.",
+            "**Kit 1 (grey)** for cervicitis: azithromycin 1 g plus cefixime 400 mg.",
+            "**BV**: metronidazole 400-500 mg twice daily for 7 days.",
+            "**Candida**: fluconazole 150 mg single dose or clotrimazole 500 mg pessary.",
+            "**Trichomonas**: metronidazole 500 mg twice daily for 7 days and treat all partners.",
+            "**PID outpatient**: ceftriaxone 500 mg IM once, then doxycycline and metronidazole for 14 days.",
+          ],
+        },
+        {
+          title: "Treatment - next steps",
+          points: [
+            "**Admit PID** if surgical emergency not excluded, abscess, pregnancy, severe illness or 72-hour failure.",
+            "Inpatient PID: ceftriaxone 1 g IV daily plus doxycycline and metronidazole.",
+            "Drain a tubo-ovarian abscess over 7 cm or not improving in 48-72 hours.",
+            "Recurrent candidiasis: fluconazole 150 mg every 72 hours for 3 doses, then weekly for 6 months.",
+            "Use the **four Cs**: compliance, counselling, condoms and contact treatment.",
+          ],
+        },
+        {
+          title: "Special groups",
+          points: [
+            "Pregnancy: use **topical clotrimazole for 7 days**; avoid oral fluconazole.",
+            "Pregnancy: no doxycycline; use **azithromycin** and admit for PID.",
+            "IUCD with PID: treat without removing; remove if no response in 48-72 hours.",
+            "Discharge in a prepubertal girl: think foreign body or **sexual abuse**.",
+          ],
+        },
+      ],
+      tables: [
+        {
+          heading: "Drugs for discharge and PID",
+          columns: ["Drug", "Dose and route", "Duration", "Key side effects / cautions"],
+          rows: [
+            ["Metronidazole", "400-500 mg oral twice daily", "7 days (BV, trichomonas); 14 days PID", "Metallic taste; no alcohol till 24 h after"],
+            ["Secnidazole", "2 g oral single dose", "Once (Kit 2)", "Nausea; no alcohol 72 h"],
+            ["Fluconazole", "150 mg oral single dose", "Recurrent: weekly for 6 months", "Avoid in pregnancy; raises warfarin"],
+            ["Clotrimazole pessary", "500 mg vaginal once, or 100 mg nightly", "1 day, or 6-7 days", "Local burning; 7 days in pregnancy"],
+            ["Ceftriaxone", "500 mg IM single; 1 g IV daily inpatient", "Once, or until improving", "Injection pain, allergy"],
+            ["Cefixime", "400 mg oral single dose", "Once", "Diarrhoea; kit alternative to ceftriaxone"],
+            ["Doxycycline", "100 mg oral twice daily", "7 days chlamydia; 14 days PID", "Oesophagitis; not in pregnancy or under 8"],
+            ["Azithromycin", "1 g oral single dose", "Once", "GI upset, QT; chlamydia choice in pregnancy"],
+          ],
+        },
+        {
+          heading: "Telling the three vaginitides apart",
+          columns: ["Feature", "Bacterial vaginosis", "Candidiasis", "Trichomoniasis"],
+          rows: [
+            ["Discharge", "Thin, grey-white, homogeneous", "Thick, curdy white", "Frothy, greenish-yellow"],
+            ["Main symptom", "Fishy odour, no itch", "Intense itch, soreness", "Soreness, dysuria"],
+            ["Vaginal pH", "Over 4.5", "4.5 or below", "Over 4.5"],
+            ["Microscopy", "Clue cells over 20%", "Hyphae, budding yeast on KOH", "Motile trichomonads"],
+            ["Partner treatment", "Consider only if recurrent", "No", "Yes, always"],
+          ],
+        },
+        {
+          heading: "NACO syndromic kits for women",
+          columns: ["Kit", "Syndrome", "Contents"],
+          rows: [
+            ["Kit 1 - Grey", "Cervicitis", "Azithromycin 1 g + cefixime 400 mg"],
+            ["Kit 2 - Green", "Vaginitis", "Secnidazole 2 g + fluconazole 150 mg"],
+            ["Kit 6 - Yellow", "Lower abdominal pain (PID)", "Cefixime, then metronidazole + doxycycline 14 days"],
+            ["Kit 5 - Red", "Herpetic genital ulcer", "Acyclovir 400 mg TDS 7 days"],
+          ],
+        },
+      ],
+      remember: [
+        "Candida is the only vaginitis with a **normal pH**.",
+        "Amsel 3 of 4: thin discharge, pH over 4.5, whiff, clue cells.",
+        "Trichomonas: always treat the partner; candida and first BV: do not.",
+        "One tender finding is enough to treat PID.",
+        "PID: **ceftriaxone + doxycycline + metronidazole**, 14 days.",
+        "Infertility after PID: 12% after one, 25% after two, 50% after three episodes.",
+        "Pelvic pain with positive UPT is ectopic, never PID.",
+      ],
+    },
     checked: "2026-10",
     updated: [
       "ACOG Clinical Practice Update (Oct 2025): consider concurrent male-partner therapy (oral metronidazole plus 2% clindamycin cream to penile skin, 7 days) for recurrent symptomatic BV; no routine partner treatment for candidiasis or first-episode BV.",
@@ -262,6 +891,168 @@ const revision: RevisionSet = {
   },
 
   "gynaecology-infertility-workup": {
+    notes: {
+      sections: [
+        {
+          title: "Definition and key facts",
+          points: [
+            "Infertility is no pregnancy after **12 months** of regular unprotected intercourse.",
+            "Investigate after **6 months** if the woman is 35 or over.",
+            "Investigate **at once** with amenorrhoea, known tubal disease, known male factor or age 38 or over.",
+            "About 85% of couples conceive within 12 months; fecundability is 20-25% per cycle.",
+            "The woman's **age** is the strongest predictor of success.",
+            "Infertility is a problem of the **couple**; test both from the first visit.",
+          ],
+        },
+        {
+          title: "Classification that matters",
+          points: [
+            "**Primary**: never conceived; **secondary**: a previous conception however it ended.",
+            "Causes: male 30-40%, ovulatory 25-30%, tubal and peritoneal 25-35%, unexplained 10-15%.",
+            "**WHO group I**: low FSH, hypothalamic amenorrhoea.",
+            "**WHO group II**: normal FSH, mostly PCOS (about 85% of anovulation).",
+            "**WHO group III**: high FSH, premature ovarian insufficiency.",
+            "Genital TB causes **5-15%** of female infertility in Indian series.",
+          ],
+        },
+        {
+          title: "How it happens (pathophysiology)",
+          points: [
+            "1. Conception needs an egg, enough sperm, patent tubes and a receptive endometrium.",
+            "2. After 35, egg number and quality fall, raising aneuploidy and miscarriage.",
+            "3. Infection or TB destroys tubal cilia and blocks the lumen.",
+            "4. **Hydrosalpinx** fluid is embryotoxic and roughly halves IVF implantation.",
+            "5. Spermatogenesis takes about **64-74 days**, so semen reflects the last 3 months.",
+            "6. **Exogenous testosterone** suppresses FSH and LH and can cause azoospermia.",
+          ],
+        },
+        {
+          title: "History in the OPD",
+          points: [
+            "See the couple together and say infertility is **not the woman's fault**.",
+            "Ask duration of trying, the woman's age and coital frequency.",
+            "A regular 24-38 day cycle is about 95% predictive of ovulation.",
+            "Ask about post-abortal or puerperal fever, PID, D and C and past TB.",
+            "Male history: undescended testis, mumps orchitis, erectile function, testosterone or steroids.",
+            "**Coital history** is the commonest omission: frequency, penetration, vaginismus.",
+          ],
+        },
+        {
+          title: "Examination",
+          points: [
+            "Woman: BMI, thyroid, galactorrhoea, hirsutism and acanthosis.",
+            "A **fixed retroverted uterus** with uterosacral nodules suggests endometriosis.",
+            "Man: testicular volume by orchidometer; **under 15 mL** suggests impaired spermatogenesis.",
+            "Palpate both vasa; an **absent vas** means obstructive azoospermia and CFTR testing.",
+            "Examine for varicocele standing, with Valsalva.",
+          ],
+        },
+        {
+          title: "Investigations",
+          points: [
+            "**Semen analysis first**, before any invasive test on the woman.",
+            "Repeat an abnormal semen result after **3 months**.",
+            "Confirm ovulation with **mid-luteal progesterone 7 days before the expected period**.",
+            "Progesterone **over 3 ng/mL (10 nmol/L)** confirms ovulation.",
+            "**AMH or antral follicle count**, not FSH, predict ovarian response.",
+            "**HSG on days 6-11** for low-risk women; laparoscopy with dye if high risk.",
+            "Genital TB: endometrial **CBNAAT, culture and histology**, never Mantoux alone.",
+          ],
+        },
+        {
+          title: "Treatment - first line",
+          points: [
+            "Advise intercourse **every 2-3 days** through the cycle.",
+            "Aim for BMI 19-30; 5-10% weight loss restores ovulation in many obese women.",
+            "Both partners stop smoking and tobacco; men stop testosterone and steroids.",
+            "**Folic acid 400 microgram** daily from the first visit (5 mg if high risk).",
+            "Rubella vaccinate if non-immune, with 1 month of contraception after.",
+            "**Letrozole 2.5 mg days 3-7** is first-line ovulation induction in PCOS.",
+          ],
+        },
+        {
+          title: "Treatment - next steps",
+          points: [
+            "Clomiphene 50 mg days 2-6, up to 150 mg, maximum 6 ovulatory cycles.",
+            "Track follicles; cancel if **3 or more follicles over 16 mm**.",
+            "Hyperprolactinaemia: **cabergoline 0.25 mg twice weekly**, with food at bedtime.",
+            "Hypothyroidism: levothyroxine to **TSH under 2.5** before conception.",
+            "Unexplained infertility goes stepwise: expectant, then stimulated IUI, then IVF.",
+            "Tubal disease goes to IVF; severe male factor goes to **ICSI**.",
+          ],
+        },
+        {
+          title: "Complications and red flags",
+          points: [
+            "**OHSS**: pain, ascites, breathlessness or oliguria after hCG trigger; admit if severe.",
+            "Severe OHSS includes clinical ascites, haematocrit over 45% and oliguria.",
+            "Treated conceptions need an **early scan at 6-7 weeks** for ectopic and multiples.",
+            "Galactorrhoea with headache or field loss: urgent MRI for macroadenoma.",
+          ],
+        },
+        {
+          title: "Referral and follow-up",
+          points: [
+            "Complete the first-line work-up within **2 cycles**.",
+            "Refer at once: age 38 or over, amenorrhoea, low AMH, tubal disease, severe endometriosis.",
+            "Refer the man with azoospermia, count under 5 million/mL or absent vasa.",
+            "Refer after 6 ovulatory cycles without pregnancy.",
+            "ART clinics must be registered under the **ART (Regulation) Act 2021**.",
+          ],
+        },
+      ],
+      tables: [
+        {
+          heading: "Drugs used in the infertility work-up",
+          columns: ["Drug", "Dose and route", "Duration", "Key side effects / cautions"],
+          rows: [
+            ["Letrozole", "2.5 mg oral days 3-7, up to 7.5 mg", "Up to 6 ovulatory cycles", "Hot flushes, headache; off-label in India"],
+            ["Clomiphene citrate", "50 mg oral days 2-6, up to 150 mg", "Max 6 ovulatory cycles", "Visual blurring (stop), twins, thin endometrium"],
+            ["hCG trigger", "5000-10 000 IU IM once", "When lead follicle is 18-20 mm", "OHSS; ovulation in about 36 h"],
+            ["Cabergoline", "0.25 mg oral twice weekly, up to 1 mg", "Stop once pregnant", "Nausea, postural hypotension"],
+            ["Levothyroxine", "25-50 microgram oral daily", "Titrate 6-weekly", "Empty stomach; 4 h from iron, calcium"],
+            ["Metformin", "500 mg oral, up to 1500-2000 mg/day", "Adjunct only", "GI upset, B12 deficiency"],
+            ["Folic acid", "400 microgram oral daily (5 mg high risk)", "Until 12 weeks of pregnancy", "None significant"],
+            ["ATT for genital TB", "2HRZE + 4HRE weight-band FDC", "6 months", "Hepatotoxicity; give pyridoxine"],
+          ],
+        },
+        {
+          heading: "WHO 2021 semen analysis lower limits",
+          columns: ["Parameter", "Lower limit", "Term if below"],
+          rows: [
+            ["Volume", "1.4 mL", "Hypospermia"],
+            ["Concentration", "16 million/mL", "Oligozoospermia"],
+            ["Total number", "39 million per ejaculate", "Oligozoospermia"],
+            ["Total motility", "42%", "Asthenozoospermia"],
+            ["Progressive motility", "30%", "Asthenozoospermia"],
+            ["Vitality", "54% live", "Necrozoospermia"],
+            ["Normal forms", "4%", "Teratozoospermia"],
+          ],
+        },
+        {
+          heading: "First-line work-up of the couple",
+          columns: ["Test", "What it shows", "When"],
+          rows: [
+            ["Semen analysis", "Male factor", "First, 2-7 days abstinence"],
+            ["Mid-luteal progesterone", "Ovulation", "7 days before expected period"],
+            ["AMH or antral follicle count", "Ovarian reserve and response", "Any day (AFC day 2-5)"],
+            ["TSH, prolactin", "Thyroid, prolactin causes", "If symptoms or irregular cycles"],
+            ["Transvaginal ultrasound", "Fibroids, PCOM, hydrosalpinx", "At first work-up"],
+            ["HSG", "Tubal patency", "Days 6-11, low-risk women"],
+            ["Laparoscopy and dye", "Tubes, adhesions, endometriosis", "High-risk women"],
+          ],
+        },
+      ],
+      remember: [
+        "12 months, **6 if 35 or over**, at once with amenorrhoea or tubal disease.",
+        "**Semen before HSG**; the reverse is the classic sequencing error.",
+        "WHO 2021: 1.4 mL, 16 million/mL, 39 million, 42%, 30%, 4%.",
+        "Progesterone 7 days before the period, not always day 21.",
+        "AMH predicts response to stimulation, not natural fertility.",
+        "Never start ATT on a positive Mantoux alone.",
+        "Testosterone in a man trying to conceive causes azoospermia.",
+      ],
+    },
     checked: "2026-10",
     updated: [
       "NICE NG257 (Mar 2026) replaced CG156: use AMH or antral follicle count, not FSH, to predict ovarian response; tags moved to NICE NG257 2026.",
@@ -331,6 +1122,166 @@ const revision: RevisionSet = {
   },
 
   "gynaecology-dysmenorrhoea-endometriosis-fibroids": {
+    notes: {
+      sections: [
+        {
+          title: "Definition and key facts",
+          points: [
+            "**Primary dysmenorrhoea** is period pain with no pelvic pathology, starting 6-24 months after menarche.",
+            "It affects 50-90% of adolescents and young women.",
+            "**Secondary dysmenorrhoea** has a cause: endometriosis, adenomyosis, fibroids, chronic PID.",
+            "**Endometriosis** is endometrial-like tissue outside the uterus, in about 10% of women.",
+            "**Adenomyosis** is endometrial tissue within the myometrium.",
+            "**Fibroids** are benign smooth-muscle tumours, clinically evident in 20-40% of women.",
+          ],
+        },
+        {
+          title: "Classification that matters",
+          points: [
+            "Endometriosis types: superficial peritoneal, ovarian endometrioma, deep (over 5 mm).",
+            "**Revised ASRM stages I-IV** predict fertility, not pain.",
+            "Fibroids use **FIGO types 0-8** by position.",
+            "Only **types 0-2 (submucosal)** reliably cause heavy bleeding and infertility.",
+            "Suspect secondary pain with onset after 25, progressive pain or failed NSAID plus COC.",
+          ],
+        },
+        {
+          title: "How it happens (pathophysiology)",
+          points: [
+            "1. Progesterone withdrawal releases arachidonic acid in the endometrium.",
+            "2. COX converts it to **PGF2-alpha**, causing strong dysrhythmic contractions.",
+            "3. Contractions occlude vessels, giving ischaemic 'uterine angina'.",
+            "4. NSAIDs block COX, so they remove the cause if started early.",
+            "5. Endometriosis follows **Sampson's retrograde menstruation**, with immune and genetic factors.",
+            "6. Lesions make their own oestrogen (aromatase) and resist progesterone.",
+            "7. Bleeding deposits cause inflammation, fibrosis and adhesions that fix the uterus.",
+          ],
+        },
+        {
+          title: "History in the OPD",
+          points: [
+            "Primary pain starts with the flow and lasts **8-72 hours**.",
+            "Secondary pain starts days before and continues after the period.",
+            "Ask about **deep dyspareunia**, dyschezia and cyclical rectal bleeding or haematuria.",
+            "Heavy regular periods with clots suggest fibroids or adenomyosis.",
+            "Pressure symptoms: frequency, retention, constipation, leg swelling.",
+            "Ask her **fertility plans** before choosing any treatment.",
+          ],
+        },
+        {
+          title: "Examination",
+          points: [
+            "In virgins, examine only the abdomen and vulva.",
+            "**Endometriosis**: fixed retroverted uterus, tender nodular uterosacral ligaments.",
+            "**Adenomyosis**: symmetrically bulky, globular, soft, tender uterus.",
+            "**Fibroid**: firm, irregular, non-tender mass that moves with the cervix.",
+            "Cyclical pain with primary amenorrhoea: look for a **bulging bluish membrane** (imperforate hymen).",
+          ],
+        },
+        {
+          title: "Investigations",
+          points: [
+            "Typical primary dysmenorrhoea with a normal examination needs no tests.",
+            "Pregnancy test and chlamydia-gonorrhoea NAAT if sexually active.",
+            "**Transvaginal ultrasound** first: fibroid FIGO type, adenomyosis, ground-glass endometrioma.",
+            "A normal scan **does not exclude** peritoneal endometriosis.",
+            "MRI for deep endometriosis or a junctional zone of **12 mm or more** (adenomyosis).",
+            "**Do not use CA-125** to diagnose or exclude endometriosis.",
+            "Laparoscopy is no longer needed before treatment.",
+          ],
+        },
+        {
+          title: "Treatment - first line",
+          points: [
+            "Local heat and exercise help; heat at 40 C matches an NSAID.",
+            "**NSAID 1-2 days before** the period, taken regularly for 2-3 days.",
+            "Try at least 3 cycles and another NSAID before calling it a failure.",
+            "Add a **COC**, continuous for endometriosis, or an LNG-IUS.",
+            "**Dienogest 2 mg daily** continuously is first-line for endometriosis pain.",
+            "**LNG-IUS** is first-line for adenomyosis.",
+            "Fibroid bleeding: tranexamic acid and mefenamic acid; these do not shrink fibroids.",
+          ],
+        },
+        {
+          title: "Treatment - next steps",
+          points: [
+            "**GnRH agonist** with add-back from the start, limited to 6 months.",
+            "Bone density falls about 6% in 6 months without add-back.",
+            "Endometrioma: **excise the capsule** rather than drain, though it lowers AMH.",
+            "Endometriosis with infertility: surgery, stimulated IUI, then IVF; hormones do not help fertility.",
+            "Fibroids by FIGO type: **hysteroscopic resection for types 0-2**, myomectomy, or hysterectomy.",
+            "Uterine artery embolisation shrinks fibroids 40-60%; not preferred if pregnancy is wanted.",
+          ],
+        },
+        {
+          title: "Complications and red flags",
+          points: [
+            "A fibroid growing after menopause suggests **leiomyosarcoma**; refer and avoid morcellation.",
+            "Red degeneration in mid-pregnancy: pain and fever; analgesia, no surgery.",
+            "Sudden pain with vomiting and a tender mass suggests torsion; same-hour referral.",
+            "Hydronephrosis or urinary retention from a fibroid needs urgent referral.",
+            "Fibroids with cavity distortion are **WHO MEC 4** for IUDs.",
+          ],
+        },
+        {
+          title: "Referral and follow-up",
+          points: [
+            "Review primary dysmenorrhoea after **3 cycles**; failure means scan and rethink.",
+            "Review endometriosis on hormones at 3-6 months; recurrence is up to 50% at 5 years.",
+            "Asymptomatic fibroids need no treatment; check Hb and review yearly.",
+            "Refer deep endometriosis, endometrioma, infertility and failed medical treatment.",
+          ],
+        },
+      ],
+      tables: [
+        {
+          heading: "Drugs for dysmenorrhoea, endometriosis and fibroids",
+          columns: ["Drug", "Dose and route", "Duration", "Key side effects / cautions"],
+          rows: [
+            ["Mefenamic acid", "500 mg oral three times daily with food", "2-3 days, start 1-2 days early", "Dyspepsia, GI bleed, renal impairment"],
+            ["Ibuprofen", "400 mg oral three times daily", "2-3 days per period", "Dyspepsia; avoid in peptic ulcer"],
+            ["Naproxen", "500 mg, then 250 mg every 6-8 hours", "2-3 days per period", "Dyspepsia, fluid retention"],
+            ["COC (EE 30 + LNG 150)", "1 tablet oral daily", "Cyclic or continuous", "VTE, spotting; check WHO MEC"],
+            ["Dienogest", "2 mg oral daily", "Continuous", "Irregular bleeding, low mood, acne"],
+            ["LNG-IUS 52 mg", "Intrauterine", "Up to 5 years", "Spotting 3-6 months; not if cavity distorted"],
+            ["Leuprolide", "3.75 mg IM monthly or 11.25 mg 3-monthly", "Up to 6 months", "Hot flushes, bone loss; add-back tibolone 2.5 mg"],
+            ["Tranexamic acid", "1 g oral three times daily", "Up to 4 days per period", "Avoid in active VTE"],
+          ],
+        },
+        {
+          heading: "Causes of painful periods compared",
+          columns: ["Feature", "Primary", "Endometriosis", "Adenomyosis", "Fibroid"],
+          rows: [
+            ["Typical woman", "Adolescent", "25-35, infertility", "Parous, 35-50", "30-45"],
+            ["Pain pattern", "With flow, 8-72 hours", "Before and after flow, dyspareunia", "Heavy painful periods", "Bleeding; pain if degenerating"],
+            ["Pelvis", "Normal", "Fixed retroverted, nodular uterosacrals", "Bulky, globular, tender", "Firm, irregular, non-tender"],
+            ["Imaging", "None", "Ground-glass endometrioma", "Junctional zone 12 mm or more", "TVS with FIGO type"],
+            ["First treatment", "NSAID early, then COC", "NSAID + COC or dienogest", "LNG-IUS", "Tranexamic acid, NSAID"],
+          ],
+        },
+        {
+          heading: "FIGO fibroid types and approach",
+          columns: ["Type", "Location", "Usual approach"],
+          rows: [
+            ["0", "Pedunculated intracavitary", "Hysteroscopic resection"],
+            ["1", "Submucosal, under 50% intramural", "Hysteroscopic resection"],
+            ["2", "Submucosal, 50% or more intramural", "Hysteroscopic or abdominal"],
+            ["3-4", "Intramural", "Myomectomy if symptomatic"],
+            ["5-7", "Subserosal, 7 is pedunculated", "Laparoscopic myomectomy; 7 can twist"],
+            ["8", "Cervical, broad ligament, parasitic", "Individualised"],
+          ],
+        },
+      ],
+      remember: [
+        "NSAID **before** the pain, regularly; 'as needed' is the commonest failure.",
+        "Pain before and after the flow with deep dyspareunia is secondary.",
+        "Treat endometriosis empirically; no laparoscopy needed first.",
+        "**CA-125 never diagnoses endometriosis**.",
+        "Hormone suppression does not treat endometriosis infertility.",
+        "GnRH agonist: 6 months maximum, with add-back.",
+        "Only FIGO types 0-2 fibroids reliably cause HMB.",
+      ],
+    },
     checked: "2026-10",
     master: {
       heading: "Master revision table - dysmenorrhoea, endometriosis and fibroids",
@@ -383,6 +1334,159 @@ const revision: RevisionSet = {
   },
 
   "gynaecology-cervical-cancer-screening": {
+    notes: {
+      sections: [
+        {
+          title: "Definition and key facts",
+          points: [
+            "Cervical cancer is caused by **persistent high-risk HPV** infection.",
+            "Its **10-20 year precancerous phase** is what screening exploits.",
+            "It is the **second commonest cancer** in Indian women, about 77 000 deaths a year.",
+            "**Screening** is for asymptomatic women; a symptomatic woman needs examination and biopsy.",
+            "WHO **90-70-90** targets for 2030: vaccinate, screen, treat.",
+            "Elimination means incidence under 4 per 100 000 women-years.",
+          ],
+        },
+        {
+          title: "Classification that matters",
+          points: [
+            "**CIN1 (LSIL)** involves the lower third and usually regresses.",
+            "**CIN2 and CIN3 (HSIL)** are the treatment threshold.",
+            "Cytology uses **Bethesda 2014**: NILM, ASC-US, ASC-H, LSIL, HSIL, AGC.",
+            "Transformation zone **type 1** is fully visible; **type 3** is not fully visible.",
+            "Invasive cancer is staged by **FIGO 2018**, which allows imaging and pathology.",
+          ],
+        },
+        {
+          title: "How it happens (pathophysiology)",
+          points: [
+            "1. HPV enters basal cells of the **transformation zone** through micro-abrasions.",
+            "2. **80-90% of infections clear** within 2 years.",
+            "3. In persistent infection, viral DNA integrates into the host genome.",
+            "4. **E6 degrades p53** and **E7 inactivates Rb**, so damaged cells keep dividing.",
+            "5. CIN2-3 develops and progresses to invasion over 10-20 years.",
+            "6. HPV 16 and 18 cause **over 80%** of cancers in India.",
+            "7. Smoking, HIV, high parity and long COC use aid persistence.",
+          ],
+        },
+        {
+          title: "History in the OPD",
+          points: [
+            "Ask every woman 30 or over when she was last screened and the result.",
+            "**Postcoital bleeding**, intermenstrual or postmenopausal bleeding means diagnosis, not screening.",
+            "Backache, leg swelling or urinary symptoms suggest advanced disease.",
+            "Note HIV status, past treatment, vaccination and hysterectomy type.",
+            "Address barriers: fear, embarrassment, need for a female provider.",
+          ],
+        },
+        {
+          title: "Examination",
+          points: [
+            "Use a speculum warmed with water only; **no gel**, which spoils cytology and HPV tests.",
+            "**VIA**: apply 5% acetic acid, wait **1 minute**, inspect the transformation zone.",
+            "**VIA positive**: dense, opaque, well-defined acetowhite area **touching the SCJ**.",
+            "A cauliflower growth or ulcer is **suspicious for cancer**; biopsy, do not screen.",
+            "**VIA is invalid after menopause** because the SCJ recedes into the canal.",
+            "HPV self-sampling raises uptake in women who decline a speculum.",
+          ],
+        },
+        {
+          title: "Investigations",
+          points: [
+            "**HPV DNA** is the best primary test (sensitivity 90-95%); NPV over 99%.",
+            "VIA sensitivity is 60-70%; single cytology is 50-60%.",
+            "An HPV-positive woman is triaged by VIA, cytology or colposcopy.",
+            "Colposcopy notes transformation zone type and takes a **directed punch biopsy**.",
+            "Do not HPV-test under 30 or screen with cytology under 25.",
+          ],
+        },
+        {
+          title: "Treatment - first line",
+          points: [
+            "Offer **same-visit screen-and-treat**; 40-60% do not return in multi-visit pathways.",
+            "**Thermal ablation** at 100-120 C for 20-40 seconds per application, no anaesthesia.",
+            "Ablation needs a **type 1 zone**, lesion under 75% of the ectocervix, no invasion suspicion.",
+            "Cryotherapy uses a double freeze-thaw: 3 minutes freeze, 5 thaw, 3 freeze.",
+            "Counsel that HPV may be years old; partner testing is not indicated.",
+          ],
+        },
+        {
+          title: "Treatment - next steps",
+          points: [
+            "**LLETZ** for lesions not fit for ablation: type 2-3 zone, large, glandular or recurrent.",
+            "Cold knife cone for suspected microinvasion or adenocarcinoma in situ.",
+            "**Hysterectomy is never the primary treatment for CIN**.",
+            "After treatment, avoid intercourse and tampons for 4 weeks.",
+            "Deep or repeat LLETZ raises preterm birth risk.",
+          ],
+        },
+        {
+          title: "Special groups",
+          points: [
+            "Women living with HIV: HPV test **from 25, every 3-5 years**, always triaged.",
+            "Pregnancy: screening is safe; defer CIN treatment to 6 weeks postpartum.",
+            "Stop at 65 after two negatives, or after total hysterectomy for benign disease.",
+            "Continue screening after **subtotal hysterectomy**.",
+            "Vaccinated women still need screening.",
+          ],
+        },
+        {
+          title: "Prevention and programmes",
+          points: [
+            "**India**: VIA every 5 years for women **30-65** at Ayushman Arogya Mandirs.",
+            "**WHO**: HPV DNA from 30, every 5-10 years.",
+            "National HPV programme launched **28 February 2026**: single dose of Gardasil-4 for girls aged 14.",
+            "WHO 2022: girls 9-14 need **1 or 2 doses**; immunocompromised need at least 2, preferably 3.",
+            "Give 0.5 mL IM deltoid and observe 15 minutes for syncope.",
+            "Test of cure with HPV test at **12 months** after treatment.",
+          ],
+        },
+      ],
+      tables: [
+        {
+          heading: "Vaccines and agents in cervical screening",
+          columns: ["Drug", "Dose and route", "Duration", "Key side effects / cautions"],
+          rows: [
+            ["Bivalent HPV vaccine (16, 18)", "0.5 mL IM deltoid", "9-14 y: 1-2 doses; 15 and over: 3", "Injection pain, fever, syncope"],
+            ["Quadrivalent HPV vaccine (incl. Cervavac)", "0.5 mL IM deltoid", "Programme: single dose at 14", "Syncope; yeast allergy caution"],
+            ["Nonavalent HPV vaccine", "0.5 mL IM deltoid", "9-14 y: 2 doses; HIV: 3 doses", "As above; defer in pregnancy"],
+            ["Acetic acid 5%", "Applied to cervix", "Read at 1 minute", "Mild stinging; prepare fresh"],
+            ["Lugol iodine", "Applied to cervix (VILI)", "Read at once", "Avoid in iodine allergy"],
+            ["Lidocaine 2% with adrenaline", "Cervical block 5-10 mL", "Before LLETZ", "Palpitations, tremor"],
+          ],
+        },
+        {
+          heading: "Screening tests compared",
+          columns: ["Test", "Sensitivity for CIN2+", "Interval", "Main limitation"],
+          rows: [
+            ["VIA", "60-70%", "5 years (India)", "Subjective; invalid after menopause"],
+            ["Cytology (Pap)", "50-60% single test", "3 years", "Needs laboratory and cytologists"],
+            ["HPV DNA", "90-95%", "5-10 years", "Cost; positives need triage; not under 30"],
+          ],
+        },
+        {
+          heading: "Bethesda 2014 and the next step",
+          columns: ["Category", "Meaning", "Next step"],
+          rows: [
+            ["NILM", "Negative", "Routine interval"],
+            ["ASC-US", "Atypical squamous cells, unclear", "Reflex HPV; colposcopy if positive"],
+            ["ASC-H", "Cannot exclude HSIL", "Colposcopy"],
+            ["LSIL", "CIN1, HPV effect", "Colposcopy or HPV follow-up"],
+            ["HSIL", "CIN2-3", "Colposcopy or see-and-treat LLETZ"],
+            ["AGC", "Atypical glandular cells", "Colposcopy; endometrial sampling if 35 or over"],
+          ],
+        },
+      ],
+      remember: [
+        "WHO **90-70-90**: vaccinate 90% by 15, screen 70% by 35 and 45, treat 90%.",
+        "VIA positive = dense acetowhite **touching the SCJ**.",
+        "Postcoital bleeding or a visible lesion: **biopsy, do not screen**.",
+        "HPV test NPV over 99% buys the 5-10 year interval.",
+        "Ablation needs type 1 zone, under 75% of ectocervix, no invasion; else LLETZ.",
+        "Vaccine is prophylactic, never therapeutic, and never cancels screening.",
+        "HIV: screen from 25, every 3-5 years.",
+      ],
+    },
     checked: "2026-10",
     updated: [
       "India launched the nationwide HPV vaccination programme on 28 February 2026: a single free dose of quadrivalent vaccine (Gardasil-4) for girls aged 14 years, campaign then routine immunisation days.",
@@ -441,6 +1545,167 @@ const revision: RevisionSet = {
   },
 
   "gynaecology-menopause-hormone-therapy": {
+    notes: {
+      sections: [
+        {
+          title: "Definition and key facts",
+          points: [
+            "Menopause is permanent cessation of menses from **loss of ovarian follicles**.",
+            "It is a clinical diagnosis after **12 months of amenorrhoea**; no blood test makes it.",
+            "Mean age in Indian women is **46-47 years**, earlier than the Western 51.",
+            "**POI** is menopause before 40; early menopause is 40-45.",
+            "Both POI and early menopause need hormone replacement **until about 51**.",
+            "Vasomotor symptoms affect about 75% and last a median of 7.4 years.",
+          ],
+        },
+        {
+          title: "Classification that matters",
+          points: [
+            "Use **STRAW+10** staging: reproductive, menopausal transition, postmenopause.",
+            "Early transition (-2): cycle lengths differ by 7 days or more.",
+            "Late transition (-1): amenorrhoea of 60 days or more, FSH over 25 IU/L.",
+            "Stage 0 is the final period, confirmed after 12 months.",
+            "Menopause Rating Scale: 17 or more is severe.",
+          ],
+        },
+        {
+          title: "How it happens (pathophysiology)",
+          points: [
+            "1. Follicles fall from 1-2 million at birth to about 1000 at menopause.",
+            "2. Inhibin B falls first, so FSH rises while oestradiol swings widely.",
+            "3. Oestrogen loss makes **KNDy neurons** overactive in the hypothalamus.",
+            "4. **Neurokinin B** on NK3 receptors narrows the thermoneutral zone, causing flushes.",
+            "5. Vaginal epithelium thins and pH rises, giving **genitourinary syndrome (GSM)**.",
+            "6. Loss of oestrogen frees osteoclasts; bone falls 2-5% a year for 5-7 years.",
+          ],
+        },
+        {
+          title: "History in the OPD",
+          points: [
+            "Ask age, LMP, cycle change, flushes, night sweats, mood and sleep.",
+            "Indian women often lead with **body aches, burning feet and palpitations**.",
+            "Ask directly about vaginal dryness, dyspareunia and recurrent UTI.",
+            "**Any bleeding after 12 months** needs endometrial assessment before hormones.",
+            "Screen MHT risks: breast cancer, VTE, stroke, migraine with aura, liver disease.",
+            "Contraception is still needed: **12 months after last period if over 50, 24 if under 50**.",
+          ],
+        },
+        {
+          title: "Examination",
+          points: [
+            "Record weight, BP and height; **height loss over 4 cm** suggests vertebral fracture.",
+            "Check thyroid and pulse to exclude thyrotoxicosis.",
+            "**Breast examination** before starting MHT.",
+            "Pelvis: pale, thin, dry mucosa with loss of rugae; look for prolapse.",
+            "Do cervical screening if due.",
+          ],
+        },
+        {
+          title: "Investigations",
+          points: [
+            "**Over 45 with typical symptoms: no FSH**.",
+            "FSH only at 40-45, suspected POI, or when periods cannot be judged.",
+            "POI: FSH over 25 IU/L; ESHRE 2024 accepts a single value, NICE asks for two.",
+            "Baseline Hb, glucose, lipids, TSH and vitamin D where deficiency is likely.",
+            "**DXA** for risk factors; osteoporosis is a T score of -2.5 or below.",
+            "Postmenopausal bleeding: TVS; endometrium **over 4 mm** needs sampling.",
+            "POI work-up: karyotype, **FMR1 premutation**, autoimmune screen and DXA.",
+          ],
+        },
+        {
+          title: "Treatment - first line",
+          points: [
+            "Lifestyle: 150 minutes of exercise a week, stop smoking, limit alcohol.",
+            "Offer **CBT** for flush bother, low mood and anxiety.",
+            "**MHT** is most effective when started **under 60 or within 10 years** of menopause.",
+            "**Uterus present** means add a progestogen; hysterectomy means oestrogen alone.",
+            "**Transdermal oestradiol** does not raise VTE risk; prefer it in obesity, migraine, hypertension.",
+            "**Micronised progesterone** is the preferred progestogen, taken at bedtime.",
+            "There is **no fixed 5-year limit**; review yearly at the lowest effective dose.",
+          ],
+        },
+        {
+          title: "Treatment - next steps",
+          points: [
+            "GSM: **local vaginal oestrogen**, no progestogen needed, continue indefinitely.",
+            "Non-hormonal: venlafaxine, escitalopram, gabapentin, clonidine.",
+            "**Fezolinetant 45 mg** daily (NK3 antagonist); check LFT monthly for 3 months.",
+            "Elinzanetant (NK1/NK3) was FDA-approved in October 2025; not yet in India.",
+            "On tamoxifen, avoid **paroxetine**; use venlafaxine or escitalopram.",
+            "Osteoporosis: **alendronate 70 mg weekly**; zoledronic acid or denosumab as alternatives.",
+            "**POI**: higher-dose oestrogen plus progestogen, or a combined pill, until at least 51.",
+          ],
+        },
+        {
+          title: "Complications and red flags",
+          points: [
+            "Absolute contraindications: undiagnosed bleeding, breast cancer, VTE, active arterial disease.",
+            "Bleeding beyond 6 months of continuous combined MHT needs TVS and biopsy.",
+            "Stop oestrogen at once for calf pain, chest pain or sudden severe headache.",
+            "Breast risk is mainly from the progestogen: 1 extra per 1000 per year after 5 years.",
+            "FDA (November 2025) removed CVD, breast cancer and dementia from the MHT boxed warning.",
+          ],
+        },
+        {
+          title: "Referral and follow-up",
+          points: [
+            "Review **3 months** after starting or changing MHT, then yearly.",
+            "Taper MHT over 3-6 months rather than stopping abruptly.",
+            "Refer urgently for postmenopausal bleeding or a breast lump.",
+            "Refer POI and women with contraindications who still have severe symptoms.",
+          ],
+        },
+      ],
+      tables: [
+        {
+          heading: "Drugs in menopause",
+          columns: ["Drug", "Dose and route", "Duration", "Key side effects / cautions"],
+          rows: [
+            ["Transdermal oestradiol", "Patch 25-50 microgram/24 h twice weekly, or gel 0.75-1.5 mg daily", "Review yearly", "Skin irritation; no VTE excess"],
+            ["Oestradiol valerate", "1-2 mg oral daily (POI 2-4 mg)", "Review yearly; POI until 51", "VTE, gallstones, stroke over 60"],
+            ["Micronised progesterone", "100 mg nightly, or 200 mg nightly 12-14 days a month", "With oestrogen if uterus present", "Drowsiness; take at bedtime"],
+            ["Tibolone", "2.5 mg oral daily", "Over 12 months postmenopause", "Stroke over 60, breast cancer recurrence"],
+            ["Vaginal estriol or oestradiol", "Estriol 0.5 mg or E2 10 microgram vaginally", "Daily 2 weeks, then twice weekly", "Minimal systemic effect; no progestogen"],
+            ["Fezolinetant", "45 mg oral daily", "Long term", "Rare liver injury; LFT monthly for 3 months"],
+            ["Venlafaxine", "37.5-75 mg oral daily", "Effect within 2 weeks; taper to stop", "Nausea, BP rise; safe with tamoxifen"],
+            ["Gabapentin", "300 mg at night, up to 900 mg", "Long term", "Dizziness, drowsiness"],
+            ["Alendronate", "70 mg oral weekly, fasting, upright 30 min", "Review after 5 years", "Oesophagitis, rare ONJ"],
+            ["Calcium + vitamin D3", "Calcium 500-1000 mg + D3 800-1000 IU daily", "Long term", "Constipation"],
+          ],
+        },
+        {
+          heading: "Choosing the MHT regimen",
+          columns: ["Situation", "Regimen", "Key point"],
+          rows: [
+            ["Uterus, within 12 months of last period", "Sequential combined", "Monthly bleed; needs contraception"],
+            ["Uterus, over 12 months since last period", "Continuous combined", "Bleed-free; bleeding after 6 months needs tests"],
+            ["After hysterectomy", "Oestrogen alone", "No progestogen"],
+            ["GSM only", "Local vaginal oestrogen", "No progestogen; continue indefinitely"],
+            ["POI (under 40)", "Full replacement or combined pill", "Continue to at least 51"],
+          ],
+        },
+        {
+          heading: "STRAW+10 stages",
+          columns: ["Stage", "Phase", "Defining criteria"],
+          rows: [
+            ["-2", "Early transition", "Cycle lengths differ by 7 days or more"],
+            ["-1", "Late transition", "Amenorrhoea 60 days or more; FSH over 25"],
+            ["0", "Final menstrual period", "Confirmed after 12 months"],
+            ["+1", "Early postmenopause", "First 6 years; flushes most likely"],
+            ["+2", "Late postmenopause", "Genitourinary symptoms increase"],
+          ],
+        },
+      ],
+      remember: [
+        "Over 45 with typical symptoms, **ordering FSH is the error**.",
+        "The **uterus decides** the regimen: uterus means add progestogen.",
+        "Transdermal oestradiol has no VTE excess.",
+        "Window: under 60 or within 10 years; no fixed 5-year limit.",
+        "POI is replacement until at least 51, not optional.",
+        "GSM never improves alone: local oestrogen, indefinitely.",
+        "On tamoxifen: never paroxetine.",
+      ],
+    },
     checked: "2026-10",
     updated: [
       "US FDA (Nov 2025): cardiovascular disease, breast cancer and probable dementia removed from the boxed warning on menopausal hormone therapy; endometrial cancer warning for unopposed oestrogen retained.",
@@ -500,6 +1765,175 @@ const revision: RevisionSet = {
   },
 
   "gynaecology-uterine-prolapse": {
+    notes: {
+      sections: [
+        {
+          title: "Definition and key facts",
+          points: [
+            "Prolapse is descent of a vaginal wall, the uterus or the vault **towards or through the introitus**.",
+            "Describe it **by compartment**: anterior, apical or posterior.",
+            "Anterior: urethrocele and cystocele; apical: uterine or vault descent, enterocele.",
+            "Posterior: rectocele and deficient perineum.",
+            "Lifetime risk of surgery for prolapse or incontinence is **12-20%**.",
+            "In India it presents a decade earlier: high parity, unattended births, early heavy work.",
+          ],
+        },
+        {
+          title: "Classification that matters",
+          points: [
+            "**POP-Q** measures points in cm from the hymen on maximum Valsalva.",
+            "Stages 0-IV are set by the **leading edge**.",
+            "Clinic use: **Baden-Walker** halfway system, grades 1-4.",
+            "Indian wards: **Shaw's degrees**; third degree is procidentia.",
+            "**Cervical elongation** (C minus D over 4 cm) is not true descent.",
+            "**Round and broad ligaments are not supports**; naming them loses the mark.",
+            "The **cardinal (Mackenrodt) ligament** is the strongest single mechanical support.",
+          ],
+        },
+        {
+          title: "How it happens (pathophysiology)",
+          points: [
+            "1. The **levator ani** keeps the levator plate horizontal and the hiatus closed.",
+            "2. Childbirth tears or denervates the levator (S3-S4, pudendal nerve).",
+            "3. The plate sags and the genital hiatus widens; **muscle fails before ligament**.",
+            "4. Cardinal and uterosacral ligaments then stretch and give way.",
+            "5. Raised abdominal pressure (cough, constipation, load carrying) drives descent further.",
+            "6. Oestrogen loss after menopause weakens fascia and thins the epithelium.",
+          ],
+        },
+        {
+          title: "History in the OPD",
+          points: [
+            "Cardinal symptom: **'something coming down'**, worse by evening, gone on lying down.",
+            "Dragging discomfort and sacral backache relieved by lying flat.",
+            "Urinary: frequency, stress leak, poor stream, **pushing the lump back to void**.",
+            "Bowel: incomplete emptying and need to **digitate** suggest rectocele.",
+            "Ask whether she wishes to keep **coital function** and to have more children.",
+            "Rapid onset with weight loss or ascites suggests a tumour pushing from above.",
+          ],
+        },
+        {
+          title: "Examination",
+          points: [
+            "Examine the abdomen first for a mass or ascites.",
+            "Use a **Sims speculum** in left lateral to display each compartment.",
+            "Grade each compartment and note genital hiatus, perineal body and vaginal length.",
+            "**Reduce the prolapse and do a cough test** to unmask occult stress incontinence.",
+            "An ulcer with **rolled edges or induration** needs biopsy.",
+            "Rate pelvic floor strength on the modified Oxford scale 0-5.",
+          ],
+        },
+        {
+          title: "Investigations",
+          points: [
+            "Urine dipstick and culture, since residual urine invites infection.",
+            "**Post-void residual**; over about 100 mL means incomplete emptying.",
+            "Hb, glucose and **creatinine**; obstructive uropathy is easily missed.",
+            "**Renal ultrasound** is mandatory in procidentia or a large residual.",
+            "Urodynamics are **not routine**; only for complex symptoms or planned continence surgery.",
+          ],
+        },
+        {
+          title: "Treatment - first line",
+          points: [
+            "Reassure: it is common, benign and treatable.",
+            "**Supervised pelvic floor training for at least 16 weeks** for stage I-II.",
+            "Teach 8-12 maximal holds of 6-10 seconds, three times a day.",
+            "Reduce load: weight loss, stop smoking, treat cough and constipation.",
+            "**Vaginal oestrogen** treats atrophy and ulcers, not the prolapse.",
+            "**Ring pessary** for women unfit for or declining surgery, or wanting more children.",
+          ],
+        },
+        {
+          title: "Treatment - next steps",
+          points: [
+            "**Hysterectomy alone is not a prolapse operation**; always re-suspend the vault.",
+            "Vaginal hysterectomy with repair and **McCall culdoplasty** once the family is complete.",
+            "**Manchester repair** for cervical elongation when the uterus is to be kept.",
+            "Sacrocolpopexy is the most durable option for vault or recurrent prolapse.",
+            "**Colpocleisis** for the frail elderly woman not wanting coital function.",
+            "Transvaginal mesh is restricted; abdominal mesh and mid-urethral slings are still allowed.",
+          ],
+        },
+        {
+          title: "Complications and red flags",
+          points: [
+            "Procidentia with retention: **catheterise, reduce**, check creatinine and refer urgently.",
+            "Hydronephrosis occurs in up to a third of long-standing procidentia.",
+            "Decubitus ulcer heals in 2-3 weeks with reduction and oestrogen; operate on healed tissue.",
+            "A neglected pessary can cause impaction and **fistula**.",
+            "Prolapse in a nulliparous woman: look for a mass, ascites or connective tissue disease.",
+          ],
+        },
+        {
+          title: "Referral and follow-up",
+          points: [
+            "Pessary review at 1-2 weeks, then **every 3-6 months**; never fit without booked follow-up.",
+            "No heavy lifting for 6-12 weeks after surgery.",
+            "Refer stage III-IV, failed conservative care, young women and recurrence.",
+            "Prevent it: no pushing before full dilatation, repair tears, birth spacing.",
+          ],
+        },
+      ],
+      tables: [
+        {
+          heading: "Drugs and devices in prolapse care",
+          columns: ["Drug", "Dose and route", "Duration", "Key side effects / cautions"],
+          rows: [
+            ["Estriol vaginal cream", "0.5 mg vaginally at bedtime", "Daily 2 weeks, then twice weekly", "Local irritation; no progestogen needed"],
+            ["Oestradiol vaginal tablet", "10 microgram vaginally at bedtime", "Daily 2 weeks, then twice weekly", "Spotting, local irritation"],
+            ["Ispaghula husk", "3.5 g oral once or twice daily in water", "Long term", "Bloating; obstruction if taken dry"],
+            ["Lactulose or PEG", "Lactulose 15 mL twice daily or PEG 17 g daily", "Titrate to soft stool", "Bloating, cramps"],
+            ["Mirabegron", "25-50 mg oral daily", "Long term", "Raises BP; check BP"],
+            ["Nitrofurantoin MR", "100 mg oral twice daily", "3 days", "Avoid if eGFR under 45"],
+            ["Cefazolin", "2 g IV within 60 min before incision", "Single dose", "Allergy"],
+            ["Enoxaparin", "40 mg SC daily from 6-12 h after surgery", "Until mobile", "Bleeding, bruising"],
+            ["Ring pessary", "Vaginal device, usually 60-75 mm", "Clean or change every 3-6 months", "Discharge, erosion, fistula if neglected"],
+          ],
+        },
+        {
+          heading: "POP-Q stages and management",
+          columns: ["Stage", "Leading edge", "Older grade", "Usual management"],
+          rows: [
+            ["0", "No descent", "Baden-Walker 0", "Reassure"],
+            ["I", "More than 1 cm above hymen", "First degree", "Supervised PFMT 16 weeks"],
+            ["II", "Within 1 cm of hymen", "Second degree", "PFMT, oestrogen, pessary"],
+            ["III", "More than 1 cm below hymen", "Baden-Walker 3", "Pessary or surgery"],
+            ["IV", "Complete eversion", "Procidentia", "Reduce, renal scan, surgery"],
+          ],
+        },
+        {
+          heading: "DeLancey levels of support",
+          columns: ["Level", "Support", "Failure gives"],
+          rows: [
+            ["I - apex", "Cardinal-uterosacral complex", "Uterine or vault descent, enterocele"],
+            ["II - mid-vagina", "Pubocervical and rectovaginal fascia to white line", "Cystocele, rectocele"],
+            ["III - distal", "Perineal body, perineal membrane", "Urethrocele, deficient perineum"],
+          ],
+        },
+        {
+          heading: "Choosing the operation",
+          columns: ["Operation", "Best indication", "Main caveat"],
+          rows: [
+            ["Vaginal hysterectomy + McCall", "Uterovaginal prolapse, family complete", "Vault must be re-suspended"],
+            ["Manchester repair", "Cervical elongation, keep uterus", "Stenosis, subfertility"],
+            ["Sacrospinous fixation", "Vault prolapse by vaginal route", "Buttock pain; pudendal injury"],
+            ["Anterior colporrhaphy", "Cystocele", "Highest recurrence"],
+            ["Sacrocolpopexy", "Vault or recurrent prolapse", "Most durable, most morbid"],
+            ["Colpocleisis", "Frail elderly, no coitus", "Irreversible"],
+          ],
+        },
+      ],
+      remember: [
+        "**Round ligament is not a support**; it only keeps anteversion.",
+        "Ligaments are the moorings, the levator plate is the berth.",
+        "DeLancey: **I apex, II mid-vagina, III perineum**.",
+        "Hysterectomy alone is not a prolapse operation.",
+        "Reduce and cough: occult stress incontinence in a fifth to a third.",
+        "C minus D over 4 cm: Manchester repair, not hysterectomy.",
+        "Water under the bridge: ureter under the uterine artery.",
+      ],
+    },
     checked: "2026-10",
     master: {
       heading: "Master revision table - pelvic organ prolapse",
@@ -552,6 +1986,166 @@ const revision: RevisionSet = {
   },
 
   "gynaecology-amenorrhoea-menstrual-irregularity": {
+    notes: {
+      sections: [
+        {
+          title: "Definition and key facts",
+          points: [
+            "**Primary amenorrhoea**: no menses by **15 years** with normal secondary sexual characters.",
+            "Also primary: no menses by **13** with no breasts, or 3 years after thelarche.",
+            "**Secondary amenorrhoea**: no menses for **3 months** after regular or 6 months after irregular cycles.",
+            "**Pregnancy** is the commonest cause of secondary amenorrhoea.",
+            "Cycles over 38 days are infrequent and fall under **AUB-O** of PALM-COEIN.",
+            "Irregularity in the first year after menarche is normal.",
+          ],
+        },
+        {
+          title: "Classification that matters",
+          points: [
+            "Use the **compartment approach**: I outflow tract, II ovary, III pituitary, IV hypothalamus.",
+            "Add other endocrine causes: PCOS, thyroid, non-classic CAH, Cushing.",
+            "Primary: **Turner (40-50%)**, MRKH (about 15%), constitutional delay.",
+            "Secondary: PCOS, hypothalamic, hyperprolactinaemia, POI, thyroid, Asherman, genital TB.",
+            "In India, think of **genital TB and curettage** after previously normal periods.",
+          ],
+        },
+        {
+          title: "How it happens (pathophysiology)",
+          points: [
+            "1. A period needs pulsatile GnRH, pituitary FSH and LH, a working ovary and a patent outflow.",
+            "2. Menstruation is **progesterone withdrawal** from an oestrogen-primed endometrium.",
+            "3. Stress, low energy and weight loss slow GnRH pulses, giving **hypothalamic amenorrhoea**.",
+            "4. **Prolactin suppresses GnRH**; dopamine-blocking drugs raise prolactin.",
+            "5. Ovarian failure removes feedback, so **FSH rises above 25 IU/L**.",
+            "6. Curettage or TB destroys the basal endometrium, causing **Asherman syndrome**.",
+          ],
+        },
+        {
+          title: "History in the OPD",
+          points: [
+            "Ask thelarche, menarche, LMP and, privately, sexual activity and contraception.",
+            "Ask weight change, diet, exercise, stress and eating-disorder symptoms.",
+            "Galactorrhoea, headache or visual disturbance suggest a pituitary tumour.",
+            "Hirsutism and acne suggest PCOS; **rapid virilisation** suggests a tumour.",
+            "Cyclical pain with retention in a girl without periods suggests outflow obstruction.",
+            "Ask about D and C, TB, **PPH with failed lactation** (Sheehan) and drugs.",
+          ],
+        },
+        {
+          title: "Examination",
+          points: [
+            "Record height, BMI and BP; short stature suggests Turner.",
+            "**Tanner staging**: absent breasts mean no oestrogen ever.",
+            "**Normal breasts with no pubic hair** suggest androgen insensitivity.",
+            "Look for Turner stigmata: webbed neck, shield chest, cubitus valgus.",
+            "Check visual fields, smell (Kallmann) and galactorrhoea.",
+            "Inspect for a bulging bluish membrane (imperforate hymen) or short blind vagina.",
+          ],
+        },
+        {
+          title: "Investigations",
+          points: [
+            "**Step 1: hCG** in every case, even if she denies sexual activity.",
+            "**Step 2: TSH, prolactin, FSH, LH, oestradiol** and pelvic ultrasound.",
+            "Prolactin over 25 ng/mL: repeat, exclude drugs and hypothyroidism, then MRI pituitary.",
+            "**High FSH with low oestradiol**: karyotype, FMR1 premutation, autoimmune screen.",
+            "Low or normal FSH with low oestradiol: hypothalamic or pituitary cause.",
+            "Renal ultrasound in MRKH; endometrial CBNAAT if genital TB is suspected.",
+            "DXA after 6 months or more of low-oestrogen amenorrhoea.",
+          ],
+        },
+        {
+          title: "Treatment - first line",
+          points: [
+            "**Treat the cause**: stop the drug, give levothyroxine, open an imperforate hymen.",
+            "PCOS: **5-10% weight loss** and at least 150 minutes of exercise a week.",
+            "Hypothalamic amenorrhoea: restore energy balance and offer CBT.",
+            "Chronic anovulation: withdrawal bleed **at least every 3 months** with MPA 10 mg for 12-14 days.",
+            "PCOS cycle control: a **COC**; hirsutism improves only after 6 months.",
+            "Prolactinoma: **cabergoline 0.25 mg twice weekly**, with food at bedtime.",
+          ],
+        },
+        {
+          title: "Treatment - next steps",
+          points: [
+            "**POI and Turner**: oestradiol plus cyclic progestogen **until about 51**.",
+            "Turner puberty induction with low-dose transdermal oestradiol from 11-12 years.",
+            "Hypothalamic amenorrhoea with low bone density: transdermal oestradiol, not the pill.",
+            "PCOS infertility: **letrozole 2.5 mg days 3-7** is first line.",
+            "Genital TB: 2HRZE/4HRE under NTEP for 6 months.",
+            "MRKH: **vaginal dilators** first; surrogacy permitted under the 2021 Act.",
+          ],
+        },
+        {
+          title: "Special groups",
+          points: [
+            "Adolescents: irregular cycles in the first 2 years are usually anovulatory; reassure.",
+            "Adolescent PCOS needs both anovulation and hyperandrogenism.",
+            "**Swyer syndrome** (46,XY, streak gonads) needs gonadectomy for tumour risk.",
+            "Disclose MRKH, Turner and AIS diagnoses carefully with counselling.",
+          ],
+        },
+        {
+          title: "Complications and red flags",
+          points: [
+            "Headache with field loss: pituitary tumour.",
+            "BMI under 15, pulse under 40 or syncope: severe anorexia; admit.",
+            "Failed lactation and amenorrhoea after PPH: **Sheehan**, with adrenal crisis risk.",
+            "Ambiguous genitalia or an inguinal gonad: disorder of sex development.",
+            "Refer **all primary amenorrhoea** after the initial work-up.",
+          ],
+        },
+      ],
+      tables: [
+        {
+          heading: "Drugs in amenorrhoea and irregular cycles",
+          columns: ["Drug", "Dose and route", "Duration", "Key side effects / cautions"],
+          rows: [
+            ["Medroxyprogesterone acetate", "10 mg oral daily", "12-14 days every 1-3 months", "Bloating; bleed 2-7 days after stopping"],
+            ["Combined oral contraceptive", "EE 20-30 microgram, 1 tablet daily", "Long term", "BP rise, rare VTE; check MEC"],
+            ["Metformin", "500 mg oral, up to 1500-2000 mg/day", "Long term", "GI upset, B12 deficiency"],
+            ["Cabergoline", "0.25-1 mg oral twice weekly", "At least 2 years", "Nausea, dizziness"],
+            ["Bromocriptine", "1.25 mg at night, up to 2.5 mg BD-TDS", "Preferred if pregnancy planned", "Nausea, postural hypotension"],
+            ["Letrozole", "2.5-7.5 mg oral days 3-7", "Up to 6 cycles", "Hot flushes; needs follicle tracking"],
+            ["Oestradiol (POI, Turner)", "2 mg oral or 100 microgram patch daily", "Until about 51, with progestogen", "VTE with oral; never unopposed with uterus"],
+            ["Spironolactone", "50-100 mg oral daily", "After 6 months of COC", "Hyperkalaemia; teratogenic"],
+            ["Levothyroxine", "1.6 microgram/kg/day oral", "Recheck TSH at 6 weeks", "Empty stomach before breakfast"],
+          ],
+        },
+        {
+          heading: "Compartment classification",
+          columns: ["Compartment", "Examples", "Key finding"],
+          rows: [
+            ["I - Outflow and uterus", "Imperforate hymen, MRKH, AIS, Asherman, TB", "Normal FSH and oestradiol"],
+            ["II - Ovary", "Turner, Swyer, POI", "FSH over 25 IU/L, low oestradiol"],
+            ["III - Pituitary", "Prolactinoma, Sheehan", "High prolactin or low FSH and LH"],
+            ["IV - Hypothalamus", "Stress, weight loss, anorexia, Kallmann", "Low or normal FSH, low oestradiol"],
+            ["Other endocrine", "PCOS, thyroid, CAH, Cushing", "High LH, androgens, abnormal TSH"],
+          ],
+        },
+        {
+          heading: "Primary amenorrhoea: telling causes apart",
+          columns: ["Condition", "Karyotype", "Breasts and hair", "Uterus", "FSH"],
+          rows: [
+            ["Turner", "45,X", "Absent breasts", "Present, small", "High"],
+            ["MRKH", "46,XX", "Normal", "Absent", "Normal"],
+            ["Complete AIS", "46,XY", "Breasts normal, hair scanty", "Absent", "Normal or high"],
+            ["Swyer", "46,XY", "Absent breasts", "Present", "High"],
+            ["Imperforate hymen", "46,XX", "Normal", "Present, haematometra", "Normal"],
+            ["Constitutional delay or Kallmann", "46,XX", "Absent or early", "Present", "Low"],
+          ],
+        },
+      ],
+      remember: [
+        "Every amenorrhoea is **pregnancy until proved otherwise**.",
+        "After hCG: TSH, prolactin, FSH/LH, oestradiol, ultrasound.",
+        "Turner is the commonest cause of primary amenorrhoea.",
+        "Normal breasts, no pubic hair, blind vagina: **androgen insensitivity**.",
+        "Y chromosome with streak gonads: gonadectomy.",
+        "Chronic anovulation: a bleed at least every 3 months.",
+        "POI: HRT until about 51.",
+      ],
+    },
     checked: "2026-10",
     master: {
       heading: "Master revision table - amenorrhoea and menstrual irregularity",
@@ -606,6 +2200,164 @@ const revision: RevisionSet = {
   },
 
   "gynaecology-ipv-sexual-assault": {
+    notes: {
+      sections: [
+        {
+          title: "Definition and key facts",
+          points: [
+            "**IPV** is physical, sexual, emotional or economic abuse or controlling behaviour by a partner.",
+            "NFHS-5: **29% of ever-married women** aged 18-49 reported spousal physical or sexual violence.",
+            "Only **14%** of them ever sought help.",
+            "**Rape** is a legal term decided by a court, not by the doctor.",
+            "Risk rises with husband's **alcohol use**, dowry demands, pregnancy and separation.",
+          ],
+        },
+        {
+          title: "Classification that matters",
+          points: [
+            "**Physical**: slapping, beating, burning, strangling, acid attack.",
+            "**Sexual**: rape, forced sex by a partner, harassment, child sexual abuse.",
+            "**Emotional**: insults, threats, isolation, control.",
+            "**Economic**: denying money, taking earnings, dowry demands, eviction.",
+            "Structural: child marriage, honour crimes, trafficking, dowry deaths.",
+          ],
+        },
+        {
+          title: "How it happens (pathophysiology)",
+          points: [
+            "1. IPV is a pattern of **power and control**, not isolated quarrels.",
+            "2. The **cycle of violence**: tension, acute assault, then reconciliation.",
+            "3. Economic dependence, children, stigma and fear explain why women stay.",
+            "4. Chronic threat keeps the HPA axis active, causing pain, insomnia and hypertension.",
+            "5. IPV roughly **doubles the risk of depression** and causes PTSD.",
+            "6. **Freezing** during assault is involuntary, so no struggle does not mean consent.",
+          ],
+        },
+        {
+          title: "History in the OPD",
+          points: [
+            "Suspect it with inconsistent injuries, delay, repeat visits or a partner who answers for her.",
+            "**Ask only when she is alone**, in private, after explaining confidentiality.",
+            "Ask directly: 'Has anyone at home ever hit or hurt you?'",
+            "Screening tools: **HITS** (Hurt, Insult, Threaten, Scream) or **HARK**.",
+            "Danger signs: threats to kill, weapons, **strangulation**, violence in pregnancy, separation.",
+            "Ask what she wants and **respect her decisions**; an adult woman decides on reporting.",
+          ],
+        },
+        {
+          title: "Examination",
+          points: [
+            "**Treat life-threatening injuries first**; evidence comes second.",
+            "Take separate consent for examination, evidence and police intimation; **12 or older can consent**.",
+            "Any registered doctor must examine; a female doctor is preferred but care is never delayed.",
+            "Record each injury on a **body map** with size, shape and site.",
+            "**The two-finger test is banned**; the Supreme Court called it misconduct (2022).",
+            "**Absence of injury does not rule out assault**.",
+          ],
+        },
+        {
+          title: "Investigations",
+          points: [
+            "Urine pregnancy test before emergency contraception.",
+            "Baseline **HIV, HBsAg, anti-HCV and syphilis**, repeated at 6 weeks, 3 and 6 months.",
+            "Creatinine before tenofovir PEP, without delaying the first dose.",
+            "Forensic evidence best within **96 hours**, with chain of custody.",
+            "Image the neck after strangulation with neurological symptoms.",
+            "Never order tests to 'prove' virginity.",
+          ],
+        },
+        {
+          title: "Treatment - first line",
+          points: [
+            "**LIVES**: Listen, Inquire, Validate, Enhance safety, Support.",
+            "Do not blame her, push her to leave or suggest **couple counselling**.",
+            "Make a **safety plan**: safe place, emergency bag, code word, helpline numbers.",
+            "Document in her own words, register an MLC and give her a free copy.",
+            "Link to the **One Stop Centre (Sakhi)**, **181**, 112 and the Protection Officer.",
+          ],
+        },
+        {
+          title: "Treatment - next steps",
+          points: [
+            "Within 72 hours give **three time-critical drugs**: EC, STI prophylaxis and HIV PEP.",
+            "**Levonorgestrel 1.5 mg** once; repeat if vomited within 2 hours.",
+            "STI cover: azithromycin 1 g plus cefixime 400 mg plus metronidazole 2 g.",
+            "**PEP: TLD one tablet daily for 28 days**, started within 72 hours.",
+            "Hepatitis B vaccine if not immune; Td if wounds.",
+            "Pregnancy from rape: MTP allowed **up to 24 weeks**; preserve fetal tissue for DNA.",
+          ],
+        },
+        {
+          title: "Special groups",
+          points: [
+            "Children under 18: **POCSO reporting is mandatory** (section 19).",
+            "Burns in a young married woman suggest **dowry violence**; arrange a dying declaration if needed.",
+            "Violence in pregnancy causes abruption, preterm labour and fetal injury.",
+            "Children who witness IPV carry the cycle into adulthood.",
+          ],
+        },
+        {
+          title: "Referral and follow-up",
+          points: [
+            "**PWDVA 2005** is civil law: protection, residence and monetary orders.",
+            "**BNSS section 397**: every hospital must treat rape survivors free and inform police.",
+            "**No FIR is needed** to examine or treat a survivor; BNS 200 punishes refusal.",
+            "Review after assault at 2 weeks, 6 weeks, 3 months and 6 months.",
+            "After IPV disclosure, book follow-up on a **safe pretext** such as a BP check.",
+            "Suicidal ideation: do not leave her alone; same-day psychiatry or Tele-MANAS 14416.",
+          ],
+        },
+      ],
+      tables: [
+        {
+          heading: "Drugs after sexual assault",
+          columns: ["Drug", "Dose and route", "Duration", "Key side effects / cautions"],
+          rows: [
+            ["Levonorgestrel (EC)", "1.5 mg oral once", "Within 72 h (some effect to 120 h)", "Nausea; repeat if vomited within 2 h"],
+            ["Copper IUD (EC)", "Intrauterine insertion", "Within 5 days; can stay 10 years", "Pain, heavier periods"],
+            ["Azithromycin", "1 g oral once", "Single dose", "Nausea, diarrhoea"],
+            ["Cefixime or ceftriaxone", "400 mg oral once, or 500 mg IM", "Single dose", "Allergy, diarrhoea"],
+            ["Metronidazole", "2 g oral once", "Single dose; may defer", "No alcohol for 48 h"],
+            ["TLD (tenofovir, lamivudine, dolutegravir)", "1 tablet oral daily", "28 days, start within 72 h", "Nausea, insomnia; separate from iron, calcium"],
+            ["Hepatitis B vaccine ± HBIG", "IM deltoid; HBIG 0.06 mL/kg", "0, 1, 6 months", "Local soreness"],
+            ["Ondansetron", "4 mg oral", "30 min before prophylaxis", "Headache, constipation"],
+            ["Sertraline", "50 mg oral daily, up to 200 mg", "6 months after recovery", "Nausea, agitation; review at 2 weeks"],
+          ],
+        },
+        {
+          heading: "Legal duties of the family physician",
+          columns: ["Law", "Key provision", "Doctor's duty"],
+          rows: [
+            ["PWDVA 2005", "Civil protection and residence orders", "Give medical aid; report to Protection Officer on request"],
+            ["BNSS 2023 s397", "Free immediate care for rape and acid-attack survivors", "Treat free; inform police"],
+            ["BNS 2023 s200", "Punishment for not treating", "Never refuse or delay care"],
+            ["BNSS 2023 s184", "Examination with consent", "Examine within 24 hours"],
+            ["POCSO Act 2012 s19, s21", "Mandatory reporting of child abuse", "Report every case under 18"],
+            ["BNS 2023 s72", "Survivor identity protected", "Maintain confidentiality"],
+          ],
+        },
+        {
+          heading: "Helplines and services",
+          columns: ["Service", "Number or place", "What it gives"],
+          rows: [
+            ["One Stop Centre (Sakhi)", "Every district", "Medical, police, legal aid, counselling, shelter 5 days"],
+            ["Women Helpline", "181", "24x7 support and referral"],
+            ["Emergency", "112", "Police for imminent danger"],
+            ["Child Helpline", "1098", "Child protection"],
+            ["Tele-MANAS", "14416", "Mental health support"],
+          ],
+        },
+      ],
+      remember: [
+        "**LIVES**: Listen, Inquire, Validate, Enhance safety, Support.",
+        "Ask alone, ask directly, believe her, never blame.",
+        "Couple counselling is contraindicated while violence continues.",
+        "**Two-finger test is banned**; absence of injury is not absence of assault.",
+        "72 hours: **EC, STI prophylaxis, PEP (TLD 28 days)**.",
+        "No FIR needed for care; BNSS 397 mandates free treatment.",
+        "POCSO reporting is mandatory under 18.",
+      ],
+    },
     checked: "2026-10",
     master: {
       heading: "Master revision table - IPV and sexual assault",
