@@ -3,6 +3,163 @@ import type { RevisionSet } from "./index";
 const revision: RevisionSet = {
   "dermatology-lesion-description": {
     checked: "2026-10",
+    notes: {
+      sections: [
+        {
+          title: "Definition and key facts",
+          points: [
+            "**Morphology** is describing a lesion so precisely that another doctor could redraw it.",
+            "**Describe first, diagnose second** - the marks are given for the description.",
+            "Erythroderma means over **90% of body surface** red and scaling - always admit.",
+            "The pattern name narrows hundreds of skin diseases down to about five.",
+          ],
+        },
+        {
+          title: "Classification that matters",
+          points: [
+            "**Primary lesions** come from the disease itself; **secondary lesions** from evolution, scratching or treatment.",
+            "The **1 cm rule**: macule or patch, papule or plaque or nodule, vesicle or bulla.",
+            "A **wheal** resolves within 24 hours without leaving a mark.",
+            "**Petechiae are under 3 mm**; palpable purpura means vasculitis until proved otherwise.",
+            "An **erosion heals without a scar**; an ulcer reaches the dermis and scars.",
+            "Patterns: papulosquamous, eczematous, vesiculobullous, urticarial, pustular, granulomatous, pigmentary, ulcerative.",
+          ],
+        },
+        {
+          title: "How it happens (pathophysiology)",
+          points: [
+            "Epidermal turnover takes **28 days**, falling to **3-5 days in psoriasis**, so scale piles up.",
+            "**Spongiosis** (intercellular oedema) is the hallmark of eczema and gives vesicles and oozing.",
+            "**Acantholysis** in pemphigus gives a flaccid bulla and a positive Nikolsky sign.",
+            "Antibodies at the dermoepidermal junction (BP180, BP230) give **tense subepidermal bullae** of pemphigoid.",
+            "**Interface dermatitis** drops melanin into the dermis, leaving slate-grey pigment incontinence.",
+            "Histamine on postcapillary venules gives the wheal; deeper oedema gives non-itchy angioedema.",
+          ],
+        },
+        {
+          title: "History in the OPD",
+          points: [
+            "Ask duration: hours to days suggests urticaria, drug or infection; months suggests chronic disease.",
+            "Ask **who else itches** - nocturnal itch in the family is scabies until proved otherwise.",
+            "Take a **drug history for the last 8 weeks**, including ayurvedic and homoeopathic preparations.",
+            "Ask exactly which creams were used - **OTC steroid combination creams** cause tinea incognito.",
+            "Ask about pain or numbness - numbness in a patch suggests leprosy.",
+            "Take a sexual history when palms, soles, genitals or mouth are involved.",
+          ],
+        },
+        {
+          title: "Examination",
+          points: [
+            "Examine the **whole skin in daylight** after consent, with a chaperone for intimate areas.",
+            "Never omit scalp, nails, palms, soles, mucosae and web spaces.",
+            "Use **ten headings**: number, site, size, shape, surface, margin, colour, consistency, arrangement, secondary change.",
+            "Test **sensation over every hypopigmented patch** with eyes closed; temperature is lost earliest.",
+            "Palpate peripheral nerves bilaterally: ulnar, radial cutaneous, common peroneal, posterior tibial, great auricular.",
+            "**Diascopy**: erythema blanches, purpura does not, granuloma shows apple-jelly colour.",
+            "Close with two positive features, one negative feature and the one test that settles it.",
+          ],
+        },
+        {
+          title: "Investigations",
+          points: [
+            "**KOH mount** - 10% for skin, 20-40% for nails - from the active edge before any antifungal.",
+            "**Wood's lamp (365 nm)**: coral-red erythrasma, golden-yellow pityriasis versicolor, blue-white vitiligo.",
+            "**Tzanck smear** shows giant cells in herpes and acantholytic cells in pemphigus.",
+            "Slit-skin smear positive for AFB makes the patient multibacillary regardless of lesion count.",
+            "Biopsy: **4 mm punch**; blisters need perilesional skin for direct immunofluorescence.",
+            "Suspected melanoma needs **excision biopsy with 2 mm margin**, never a shave.",
+          ],
+        },
+        {
+          title: "Treatment - first line",
+          points: [
+            "**If it is wet, dry it; if dry, wet it** - morphology chooses the vehicle.",
+            "Oozing lesions get **KMnO4 1:10,000** soaks, pale pink, 10-15 minutes, 3-4 times daily.",
+            "Apply emollients liberally within 3 minutes of bathing, at least twice a day.",
+            "Stop irrational steroid-antifungal-antibiotic combination creams and explain why.",
+            "Measure and photograph lesions with a scale at the first visit.",
+          ],
+        },
+        {
+          title: "Treatment - next steps",
+          points: [
+            "One **fingertip unit (0.5 g)** covers two adult palms, about 2% body surface.",
+            "The patient's own palm with fingers is about **1% of body surface**.",
+            "Mild steroid on face, flexures and infants; super-potent only on palms, soles, thick plaques.",
+            "Keep clobetasol **under 50 g a week** in adults to avoid HPA suppression.",
+            "**Never put a steroid on an undiagnosed annular scaly rash** - do KOH first.",
+          ],
+        },
+        {
+          title: "Complications and red flags",
+          points: [
+            "Pain out of proportion, dusky skin or crepitus means **necrotising soft tissue infection**.",
+            "Nikolsky sign with mucosal erosions and a new drug means **SJS/TEN** - admit today.",
+            "Palpable purpura with systemic features needs urine analysis and same-day referral.",
+            "A non-healing ulcer in an old burn scar is a **Marjolin ulcer** - biopsy urgently.",
+            "Vesicles on the nose tip mean **herpes zoster ophthalmicus** - antiviral and eye referral.",
+          ],
+        },
+        {
+          title: "Referral and follow-up",
+          points: [
+            "Screen pigmented lesions with **ABCDE** and the ugly duckling sign; evolution is most sensitive.",
+            "A weighted 7-point checklist score of **3 or more** needs urgent referral.",
+            "Acral and subungual melanoma is common in Indians; look for **Hutchinson sign**.",
+            "Review in **2-4 weeks** with the same measurement and photograph.",
+            "Biopsy any lesion not fitting a pattern after 4-6 weeks of correct treatment.",
+            "Notify leprosy under NLEP and report adverse drug reactions to **PvPI**.",
+          ],
+        },
+      ],
+      tables: [
+        {
+          heading: "Primary lesions by the 1 cm rule",
+          columns: ["Content", "Under 1 cm", "1 cm or more", "Typical example"],
+          rows: [
+            ["Flat colour change", "Macule", "Patch", "Vitiligo, leprosy patch"],
+            ["Solid elevation", "Papule", "Plaque or nodule", "Lichen planus, psoriasis"],
+            ["Clear fluid", "Vesicle", "Bulla", "Zoster, pemphigus, pemphigoid"],
+            ["Pus", "Pustule", "Abscess", "Acne, pustular psoriasis"],
+            ["Transient oedema", "Wheal", "Giant wheal or angioedema", "Urticaria"],
+            ["Extravasated blood", "Petechia (under 3 mm)", "Ecchymosis", "Vasculitis, thrombocytopenia"],
+          ],
+        },
+        {
+          heading: "Bedside tests and what they show",
+          columns: ["Test", "What it shows", "When"],
+          rows: [
+            ["Diascopy", "Purpura does not blanch; apple-jelly granuloma", "Red or granulomatous lesions"],
+            ["Nikolsky sign", "Epidermis shears off normal skin", "Pemphigus, SJS/TEN, scalded skin"],
+            ["Grattage and Auspitz sign", "Silvery scale, pinpoint bleeding", "Suspected psoriasis"],
+            ["Darier sign", "Rubbed brown lesion forms a wheal", "Mastocytosis"],
+            ["Dermographism", "Firm stroke raises a linear wheal", "Itch without visible rash"],
+            ["Wood's lamp", "Fluorescence colour by organism; vitiligo blue-white", "Pigment change, erythrasma, tinea capitis"],
+            ["KOH mount", "Septate hyphae; spaghetti and meatballs", "Any scaly annular rash"],
+          ],
+        },
+        {
+          heading: "Drugs: topical agents chosen by morphology",
+          columns: ["Drug", "Dose and route", "Duration", "Key side effects / cautions"],
+          rows: [
+            ["Potassium permanganate 1:10,000", "Soak 10-15 min, 3-4 times daily", "2-3 days", "Stains brown; crystals burn"],
+            ["Calamine lotion", "Topical, 3-4 times daily", "As needed", "Dries already dry skin"],
+            ["Emollient (white soft paraffin)", "Liberally, at least twice daily", "Long term", "Folliculitis; flammable in bulk"],
+            ["Hydrocortisone 1% cream", "Thin layer once or twice daily", "Up to 2-4 weeks", "Minimal; face, flexures, infants"],
+            ["Clobetasol propionate 0.05%", "Once or twice daily, under 50 g/week", "Maximum 2-4 weeks", "Atrophy, rosacea, tinea incognito, HPA suppression"],
+          ],
+        },
+      ],
+      remember: [
+        "Describe first, diagnose second.",
+        "Hypopigmented with sensory loss is leprosy; chalk-white with normal sensation is vitiligo.",
+        "Erosion heals without a scar; ulcer always scars.",
+        "Flaccid bulla is intraepidermal (pemphigus); tense bulla is subepidermal (pemphigoid).",
+        "One FTU (0.5 g) covers two adult palms; patient's palm is 1% BSA.",
+        "ABCDE: Asymmetry, Border, Colour, Diameter over 6 mm, Evolving.",
+        "Itchy is a symptom; excoriation is the sign.",
+      ],
+    },
     master: {
       heading: "Master revision table - Describing a skin lesion",
       columns: ["Aspect", "High-yield points"],
@@ -52,6 +209,167 @@ const revision: RevisionSet = {
 
   "dermatology-scabies-pediculosis": {
     checked: "2026-10",
+    notes: {
+      sections: [
+        {
+          title: "Definition and key facts",
+          points: [
+            "Scabies is infestation of the stratum corneum by **Sarcoptes scabiei var. hominis**.",
+            "Spread is by **prolonged skin-to-skin contact** of about 15-20 minutes.",
+            "The itch is a **type IV hypersensitivity** to the mite, not a bite.",
+            "An ordinary patient carries only **10-15 mites**; crusted scabies carries thousands to millions.",
+            "Scabies has been a **WHO neglected tropical disease** since 2017.",
+          ],
+        },
+        {
+          title: "Classification that matters",
+          points: [
+            "**IACS 2020**: A confirmed, B clinical, C suspected scabies.",
+            "Variants: classical, nodular, **crusted (Norwegian)**, incognito, bullous and infantile.",
+            "Pediculosis: capitis (head), corporis (body, lives in clothing seams), pubis (crab, sexually transmitted).",
+            "Only the **body louse** transmits typhus, trench fever and relapsing fever.",
+          ],
+        },
+        {
+          title: "Causes and risk factors",
+          points: [
+            "Overcrowding, shared beds, hostels, prisons and old-age homes drive spread.",
+            "Crusted scabies follows failed cell immunity: **HIV, HTLV-1**, lepromatous leprosy, malnutrition, long-term steroids.",
+            "Patients who cannot scratch (dementia, paralysis) also develop crusted scabies.",
+            "OTC steroid combination creams cause **scabies incognito**.",
+          ],
+        },
+        {
+          title: "How it happens (pathophysiology)",
+          points: [
+            "The female mite burrows about **2 mm a day** and lays 2-3 eggs daily.",
+            "Larvae hatch in 3-4 days and mature in about 10-14 days.",
+            "A **first infestation is silent for 4-6 weeks** while sensitisation develops.",
+            "Re-infestation itches within 1-4 days, so quiet contacts are already infested.",
+            "Excoriations admit streptococci, causing impetigo and later **post-streptococcal glomerulonephritis**.",
+            "The mite dies within **2-3 days off the host** and above 50 degrees C.",
+          ],
+        },
+        {
+          title: "History in the OPD",
+          points: [
+            "**Nocturnal itch** disturbing sleep is the classic symptom.",
+            "Ask whether **anyone else at home itches** - the strongest clue.",
+            "Ask how the previous scabicide was applied, repeated and whether contacts were treated.",
+            "Ask about creams used, living conditions, sexual contacts and immunosuppression.",
+            "In a child ask about **puffy eyes and smoky urine** 2-3 weeks after sores.",
+          ],
+        },
+        {
+          title: "Examination",
+          points: [
+            "Look for the **burrow**: a 3-10 mm grey serpiginous line with a dot at one end.",
+            "Sites: finger webs, wrists, axillae, waist, buttocks, genitalia; adults spare head and neck.",
+            "Papules or nodules on the **penis or scrotum** are almost diagnostic.",
+            "**Infants** have lesions on palms, soles, scalp and face.",
+            "**Thick warty crusts** with nail dystrophy and little itch mean crusted scabies.",
+            "Look for impetigo and cellulitis; in children check **BP and urine**.",
+          ],
+        },
+        {
+          title: "Investigations",
+          points: [
+            "Scabies is a **clinical diagnosis** - treat without waiting for a test.",
+            "Skin scraping with oil or 10% KOH confirms; a negative excludes nothing.",
+            "Dermoscopy shows the **delta-wing jet sign**.",
+            "Crusted scabies needs **HIV, HTLV-1, glucose and CBC**.",
+            "Child with impetiginised scabies needs a **urine dipstick** and BP.",
+          ],
+        },
+        {
+          title: "Treatment - first line",
+          points: [
+            "**Permethrin 5% cream** from the jawline down, left on **8-14 hours**.",
+            "**Repeat on day 7** because the drug does not kill all eggs.",
+            "Use about **30 g per adult** application; include webs, under nails and genitalia.",
+            "Apply to face and scalp too in infants, the elderly and immunosuppressed.",
+            "**Treat all household contacts the same day**, whether or not they itch.",
+            "Wash clothes and bedding of the last 3 days at **60 degrees C** or seal for 72 hours.",
+          ],
+        },
+        {
+          title: "Treatment - next steps",
+          points: [
+            "**Ivermectin 200 microgram/kg** with a fatty meal, repeated on day 7.",
+            "Ivermectin suits outbreaks, crusted scabies, failure and unsupervised treatment.",
+            "**Crusted scabies**: keratolytic, permethrin daily for 7 days, then twice weekly.",
+            "Add ivermectin on **days 1, 2, 8, 9 and 15** (plus 22 and 29 if severe).",
+            "**Post-scabetic itch** lasts 2-4 weeks - emollient, mometasone, hydroxyzine, never more scabicide.",
+            "Nodules need potent steroid or **intralesional triamcinolone**.",
+            "**Lindane is no longer recommended**; crotamiton is the weakest scabicide.",
+          ],
+        },
+        {
+          title: "Special groups",
+          points: [
+            "Permethrin is safe in **pregnancy, lactation** and infants over 2 months.",
+            "**Sulphur 5-10%** (2-5% infants) is safest under 2 months.",
+            "Ivermectin is avoided **under 15 kg** and in pregnancy and lactation.",
+            "Eyelash lice: **white soft paraffin twice daily for 8-10 days**, never a pediculicide.",
+            "Eyelash lice in a prepubertal child raise suspicion of abuse - follow **POCSO**.",
+          ],
+        },
+        {
+          title: "Referral and follow-up",
+          points: [
+            "Review at **2 and 4 weeks**; new burrows after 2 weeks mean failure or re-infestation.",
+            "Before calling resistance check **untreated contacts, wrong application, no decontamination**.",
+            "Refer crusted scabies, cellulitis and suspected nephritis.",
+            "Institutional outbreaks need mass treatment of everyone on **one day**.",
+            "Children may return to school after the first full treatment.",
+          ],
+        },
+      ],
+      tables: [
+        {
+          heading: "Drugs for scabies and lice",
+          columns: ["Drug", "Dose and route", "Duration", "Key side effects / cautions"],
+          rows: [
+            ["Permethrin 5% cream", "Jawline down, 8-14 h; about 30 g adult", "Repeat day 7", "Burning, stinging; age over 2 months"],
+            ["Ivermectin oral", "200 microgram/kg with fatty meal", "Repeat day 7", "Not under 15 kg, pregnancy, lactation"],
+            ["Benzyl benzoate 25%", "Neck down; 12.5% child, 6.25% infant", "3 consecutive nights", "Severe stinging, irritant dermatitis"],
+            ["Sulphur 5-10% ointment", "Neck down; 2-5% in infants", "3 consecutive nights", "Smell, staining; safest under 2 months"],
+            ["Permethrin 1% cream rinse", "Towel-dried hair, 10 minutes", "Repeat day 7-9", "Scalp itch; add wet combing"],
+            ["Dimeticone 4% lotion", "Head lice, left 8 hours", "Repeat as for permethrin", "Physical action, no resistance"],
+            ["Hydroxyzine", "10-25 mg at night; child 0.5-1 mg/kg/day", "2-4 weeks", "Drowsiness; avoid driving"],
+            ["Mometasone 0.1% cream", "Once daily for post-scabetic eczema", "1-2 weeks", "Atrophy if misused"],
+          ],
+        },
+        {
+          heading: "IACS 2020 criteria for scabies",
+          columns: ["Level", "Criteria (any one)", "Meaning"],
+          rows: [
+            ["A - Confirmed", "Mites, eggs or faeces seen on microscopy or dermoscopy", "Parasitological proof"],
+            ["B - Clinical", "Burrows, male genital lesions, or typical lesions plus both history features", "Treat as scabies"],
+            ["C - Suspected", "Typical lesions plus one history feature", "Treat if no better diagnosis"],
+            ["History features", "Itch; close contact who itches", "Used with B and C"],
+          ],
+        },
+        {
+          heading: "Types of pediculosis",
+          columns: ["Feature", "Head louse", "Body louse", "Pubic louse"],
+          rows: [
+            ["Lives in", "Scalp hair", "Clothing seams", "Pubic hair, eyelashes"],
+            ["Key sign", "Nits within 1 cm of scalp", "Vagabond pigmentation", "Maculae ceruleae"],
+            ["Disease spread", "None", "Typhus, trench fever, relapsing fever", "Marker of STI risk"],
+            ["Treatment", "Permethrin 1% or dimeticone, wet combing", "Hot wash or discard clothing", "Permethrin, treat partners"],
+          ],
+        },
+      ],
+      remember: [
+        "Treat everyone the same day, repeat on day 7, hot-wash bedding.",
+        "Night itch plus an itching household member is scabies until proved otherwise.",
+        "Adults are spared above the neck; infants are not.",
+        "Crusted scabies does not itch and infests the whole ward.",
+        "Post-scabetic itch lasts 2-4 weeks - do not repeat scabicide.",
+        "Nits alone do not mean active head lice.",
+      ],
+    },
     master: {
       heading: "Master revision table - Scabies and pediculosis",
       columns: ["Aspect", "High-yield points"],
@@ -105,6 +423,177 @@ const revision: RevisionSet = {
 
   "dermatology-eczema-atopic-dermatitis": {
     checked: "2026-10",
+    notes: {
+      sections: [
+        {
+          title: "Definition and key facts",
+          points: [
+            "**Eczema and dermatitis are synonyms**; the histological hallmark is **spongiosis**.",
+            "**Itch is the defining symptom** of every eczema.",
+            "Atopic dermatitis starts in the first year in 60% and before 5 years in 85%.",
+            "About two-thirds of children clear by adolescence.",
+            "Diagnose with the **UK Working Party criteria**: itch plus 3 or more of 5.",
+          ],
+        },
+        {
+          title: "Classification that matters",
+          points: [
+            "**Endogenous**: atopic, seborrhoeic, nummular, asteatotic, stasis, pompholyx, lichen simplex chronicus.",
+            "**Exogenous**: irritant contact, allergic contact, photo-contact and infective eczema.",
+            "**Acute** eczema oozes with papulovesicles; subacute scales; **chronic** shows lichenification.",
+            "The stage chooses the vehicle, not only the drug.",
+            "Severity is judged by extent, intensity and **impact on sleep and school**.",
+          ],
+        },
+        {
+          title: "How it happens (pathophysiology)",
+          points: [
+            "**Filaggrin loss** and low ceramides raise water loss, causing dry skin.",
+            "The leaky barrier lets allergens, irritants and Staphylococcus aureus in.",
+            "Alarmins (**TSLP, IL-33, IL-25**) from injured keratinocytes start the type 2 response.",
+            "**IL-4 and IL-13** further suppress filaggrin and drive IgE - a vicious cycle.",
+            "**IL-31** acts directly on itch nerves, so atopic itch is largely non-histaminergic.",
+            "Scratching thickens skin into **lichenification**, completing the itch-scratch cycle.",
+          ],
+        },
+        {
+          title: "History in the OPD",
+          points: [
+            "Ask age of onset: early childhood suggests atopy; adult onset suggests contact, scabies or lymphoma.",
+            "Ask about **sleep loss and school** - disability drives escalation more than area.",
+            "Ask personal and family history of asthma, rhinitis and food allergy.",
+            "Take a contact history: **hair dye (PPD)**, cement, nickel, footwear, bindi, parthenium.",
+            "Ask **how much emollient and steroid** is actually used - undertreatment is common.",
+            "Ask about sudden painful weeping with fever - think **eczema herpeticum**.",
+          ],
+        },
+        {
+          title: "Examination",
+          points: [
+            "Eczema has an **ill-defined margin**; psoriasis is sharp, tinea has a raised edge.",
+            "Infants: cheeks, scalp and extensors with **napkin sparing**.",
+            "Children: **antecubital and popliteal fossae**, wrists, ankles and neck.",
+            "Atopic stigmata: **Dennie-Morgan folds**, palmar hyperlinearity, pityriasis alba, keratosis pilaris.",
+            "Look for infection, steroid damage, and burrows of missed scabies.",
+            "Plot height and weight in children with severe disease.",
+          ],
+        },
+        {
+          title: "Investigations",
+          points: [
+            "Atopic dermatitis is a **clinical diagnosis** - no routine blood test.",
+            "**KOH** any annular or unilateral plaque to exclude tinea incognito.",
+            "**Patch testing** (read at 48 and 96 hours) for chronic hand, face or foot eczema.",
+            "Food IgE tests only with a clear **immediate reaction** history.",
+            "Biopsy refractory adult eczema to exclude **mycosis fungoides**.",
+            "Before systemic therapy: CBC, LFT, creatinine, BP, hepatitis, HIV and TB screen.",
+          ],
+        },
+        {
+          title: "Treatment - first line",
+          points: [
+            "**Emollients** at least twice daily: **250-500 g/week adults**, 150-250 g/week children.",
+            "Use a soap substitute and apply emollient within 3 minutes of bathing.",
+            "Topical steroid **once daily** to inflamed skin until **48 hours after** the flare settles.",
+            "Mild steroid on face and flexures; potent on trunk, limbs and lichenified skin.",
+            "**Proactive twice-weekly** steroid or tacrolimus on old sites prevents relapse.",
+            "**Tacrolimus or pimecrolimus** for face, eyelids and flexures - no atrophy.",
+          ],
+        },
+        {
+          title: "Treatment - next steps",
+          points: [
+            "Newer topicals: **roflumilast 0.15%** and **tapinarof 1%** once daily, strongly recommended in adults.",
+            "**Narrowband UVB** 2-3 times weekly for extensive moderate-severe disease.",
+            "**Ciclosporin 3-5 mg/kg/day** is the fastest systemic agent.",
+            "Methotrexate, azathioprine (after TPMT) and **dupilumab** are steroid-sparing options.",
+            "Lebrikizumab, tralokinumab and **nemolizumab** are now strongly recommended in adults.",
+            "**Oral JAK inhibitors** stop itch within days; avoid in over-65s, smokers and thrombosis risk.",
+            "**Oral steroids are not maintenance** - at most a 3-7 day course.",
+          ],
+        },
+        {
+          title: "Special groups",
+          points: [
+            "In **pregnancy**, emollients and mild-to-moderate steroids are safe.",
+            "**Ciclosporin** is the systemic drug of choice in pregnancy.",
+            "Methotrexate and JAK inhibitors are **contraindicated in pregnancy**.",
+            "Vaccines are not contraindicated in eczema; avoid live vaccines on immunosuppressants.",
+            "Indian skin shows more follicular papules, lichenification and post-inflammatory pigmentation.",
+          ],
+        },
+        {
+          title: "Complications and red flags",
+          points: [
+            "**Eczema herpeticum**: punched-out erosions with fever - start aciclovir the same day.",
+            "Golden crusts and weeping mean **S. aureus** infection.",
+            "Over 90% of skin red and scaling is **erythroderma** - admit.",
+            "Recurrent deep infections or failure to thrive suggest **primary immunodeficiency**.",
+            "Atrophy and perioral dermatitis follow months of OTC combination creams.",
+          ],
+        },
+        {
+          title: "Referral and follow-up",
+          points: [
+            "Review **2-4 weeks** after starting; check grams used per week and technique.",
+            "Refer if **1-2 weeks of potent steroid** fails or systemic therapy is needed.",
+            "On ciclosporin check BP and creatinine **every 2 weeks** initially.",
+            "Refer suspected contact allergy for patch tests and children with faltering growth.",
+          ],
+        },
+      ],
+      tables: [
+        {
+          heading: "Drugs for eczema",
+          columns: ["Drug", "Dose and route", "Duration", "Key side effects / cautions"],
+          rows: [
+            ["Emollient", "Twice daily; 250-500 g/week adult", "Indefinitely", "Folliculitis; flammable on fabric"],
+            ["Hydrocortisone 1% cream", "Once daily to face, flexures, infants", "Until 48 h after clearing", "Minimal"],
+            ["Mometasone furoate 0.1%", "Once daily to trunk and limbs", "1-2 weeks, then twice weekly", "Atrophy, striae, tinea incognito"],
+            ["Clobetasol propionate 0.05%", "Once daily; max 50 g/week", "Up to 2 weeks", "Never face, flexures or children"],
+            ["Tacrolimus 0.03% or 0.1% ointment", "Twice daily; 0.03% from 2 y, 0.1% from 16 y", "Then twice weekly", "Burning first week; not on infected skin"],
+            ["Ciclosporin oral", "3-5 mg/kg/day in 2 doses", "Up to 1 year", "Hypertension, nephrotoxicity; BP and creatinine"],
+            ["Methotrexate oral or SC", "7.5-25 mg once weekly plus folic acid 5 mg weekly", "Onset 8-12 weeks", "Cytopenia, hepatotoxicity, teratogenic"],
+            ["Dupilumab SC", "600 mg loading, then 300 mg every 2 weeks", "Long term", "Conjunctivitis, injection-site reaction"],
+            ["Hydroxyzine oral", "10-25 mg at night; child 0.5-1 mg/kg/day", "1-2 weeks in flares", "Drowsiness, QT prolongation"],
+            ["Aciclovir (eczema herpeticum)", "400 mg five times daily; IV 5-10 mg/kg 8-hourly", "7-10 days", "Start same day; refer if periocular"],
+          ],
+        },
+        {
+          heading: "Topical steroid potency and where to use",
+          columns: ["Potency", "Example", "Where to use", "Maximum duration"],
+          rows: [
+            ["Mild", "Hydrocortisone 1%", "Face, eyelids, flexures, infants", "Weeks, repeat for flares"],
+            ["Moderate", "Clobetasone butyrate 0.05%", "Trunk and limbs, children and adults", "2-4 weeks, then proactive"],
+            ["Potent", "Mometasone 0.1%, betamethasone valerate 0.1%", "Adult trunk, limbs, lichenified plaques", "Up to 2-4 weeks"],
+            ["Very potent", "Clobetasol propionate 0.05%", "Palms, soles, thick plaques", "2 weeks; never on face"],
+            ["Steroid-sparing", "Tacrolimus, pimecrolimus", "Face, eyelids, maintenance", "Long-term twice weekly"],
+          ],
+        },
+        {
+          heading: "UK Working Party criteria for atopic dermatitis",
+          columns: ["Criterion", "Requirement"],
+          rows: [
+            ["Essential", "An itchy skin condition"],
+            ["1 - Flexural history", "Skin crease involvement (cheeks if under 10)"],
+            ["2 - Atopy", "Personal asthma or hay fever (relative if under 4)"],
+            ["3 - Dry skin", "Generally dry skin in the past year"],
+            ["4 - Visible flexural eczema", "Seen on examination"],
+            ["5 - Early onset", "Before age 2 (not used if under 4)"],
+            ["Diagnosis", "Essential plus 3 or more of 1 to 5"],
+          ],
+        },
+      ],
+      remember: [
+        "The margin decides: eczema ill defined, psoriasis sharp, tinea raised active edge.",
+        "Emollient in grams per week; steroid in fingertip units.",
+        "Mild on face, potent on body, very potent only on palms and soles.",
+        "Proactive twice-weekly therapy halves relapses.",
+        "Atopic itch is IL-31 driven - non-sedating antihistamines do little.",
+        "Systemic steroids buy a week and cost a rebound.",
+        "Punched-out erosions with fever mean eczema herpeticum.",
+      ],
+    },
     updated: [
       "NICE CG57 (amended September 2025): once-daily bathing or showering is fine; bathing less often, ion-exchange water softeners and silk clothing give no benefit",
       "AAD 2025 focused update: roflumilast 0.15% cream and tapinarof 1% cream added as strongly recommended non-steroid topicals for adult AD (crisaborole remains an option)",
@@ -166,6 +655,172 @@ const revision: RevisionSet = {
 
   "dermatology-acne-vulgaris": {
     checked: "2026-10",
+    notes: {
+      sections: [
+        {
+          title: "Definition and key facts",
+          points: [
+            "Acne is chronic inflammation of the **pilosebaceous unit** on face, chest and back.",
+            "It affects **over 80% of adolescents** and often persists in adult women.",
+            "**No comedone, no acne** - the comedone separates acne from its mimics.",
+            "Record **scarring and psychological impact** separately; either justifies stepping up.",
+          ],
+        },
+        {
+          title: "Classification that matters",
+          points: [
+            "**IADVL grading**: Grade 1 comedonal, Grade 2 papular, Grade 3 pustular, Grade 4 nodulocystic.",
+            "The grade, not the photograph, decides topical, oral or isotretinoin therapy.",
+            "**Acne conglobata** has interconnecting nodules and sinuses.",
+            "**Acne fulminans** is acute nodular acne with fever, arthralgia and bone lesions.",
+            "Other variants: adult female hormonal, mechanica, pomade, cosmetic and drug-induced acne.",
+          ],
+        },
+        {
+          title: "How it happens (pathophysiology)",
+          points: [
+            "Step 1: **follicular hyperkeratinisation** forms the microcomedone - the target of retinoids.",
+            "Step 2: **androgen-driven sebum excess** via dihydrotestosterone on sebocytes.",
+            "Step 3: **Cutibacterium acnes** splits sebum into irritant free fatty acids.",
+            "Step 4: **inflammation** through TLR-2 and IL-1 beta gives papules and pustules.",
+            "Follicle rupture into the dermis gives deep nodules that scar.",
+            "In Indian skin, **post-inflammatory hyperpigmentation** often outlasts the acne.",
+          ],
+        },
+        {
+          title: "History in the OPD",
+          points: [
+            "Ask age of onset; acne after 25 in a woman suggests hormonal acne.",
+            "Ask about deep painful lumps, sinuses and new scars - these mean isotretinoin.",
+            "Ask exactly what was used and how - wrong use is not drug failure.",
+            "Ask about **OTC steroid and fairness creams**, gym supplements and drugs.",
+            "In women ask about irregular periods, hirsutism and weight gain - **PCOS**.",
+            "Ask about **mood and suicidal thoughts** and pregnancy plans.",
+          ],
+        },
+        {
+          title: "Examination",
+          points: [
+            "Examine face, neck, chest, shoulders and back in good light.",
+            "Stretch the skin to find **closed comedones** - the lesions that rupture.",
+            "**Nodules are over 5 mm**, deep, tender and scarring.",
+            "Record scar type: ice-pick, boxcar, rolling, hypertrophic or keloidal.",
+            "Look for hyperandrogenism: hirsutism, alopecia, acanthosis nigricans, virilisation.",
+            "Exclude mimics: rosacea, perioral dermatitis, Malassezia folliculitis, steroid acne.",
+          ],
+        },
+        {
+          title: "Investigations",
+          points: [
+            "**Ordinary acne needs no investigation.**",
+            "Suspected PCOS: testosterone, DHEAS, LH, FSH, prolactin, TSH, 17-hydroxyprogesterone, pelvic ultrasound.",
+            "Very high androgens with rapid virilisation suggest a **tumour** - refer urgently.",
+            "Before isotretinoin: **fasting lipids, ALT and pregnancy test**.",
+            "Repeat lipids and ALT at **4-8 weeks**; pregnancy test **monthly**.",
+          ],
+        },
+        {
+          title: "Treatment - first line",
+          points: [
+            "**Topical retinoid is the backbone** for every grade; adapalene 0.1% is first choice.",
+            "Apply a **pea-sized amount** to the whole face at night, 20 minutes after washing.",
+            "**Benzoyl peroxide 2.5-5%** kills C. acnes with no resistance.",
+            "**Adapalene plus benzoyl peroxide** fixed combination is first line for Grades 2-3.",
+            "**Topical clindamycin is never used alone** - always with benzoyl peroxide.",
+            "Judge any regimen only after **8-12 weeks**.",
+          ],
+        },
+        {
+          title: "Treatment - next steps",
+          points: [
+            "**Doxycycline 100 mg daily for 8-12 weeks**, maximum 3-4 months, with retinoid and BPO.",
+            "Take doxycycline with water and food, upright, away from iron, calcium and milk.",
+            "Women with hormonal acne: **combined pill** with drospirenone or cyproterone, or **spironolactone**.",
+            "**Isotretinoin** for nodulocystic, scarring or resistant acne, or severe distress.",
+            "Isotretinoin dose: 0.5 mg/kg/day, then up to 1 mg/kg/day, to **120-150 mg/kg cumulative**.",
+            "Take isotretinoin **with a fatty meal**; low dose 0.25-0.4 mg/kg/day is also effective.",
+            "**Maintenance retinoid for 6-12 months** after clearance prevents relapse.",
+          ],
+        },
+        {
+          title: "Special groups",
+          points: [
+            "**Isotretinoin is a potent teratogen** - two contraceptives from 1 month before to 1 month after.",
+            "In pregnancy use azelaic acid, benzoyl peroxide, clindamycin with BPO, or azithromycin.",
+            "All retinoids, tetracyclines and spironolactone are **avoided in pregnancy**.",
+            "Tetracyclines are contraindicated **under 8 years** because of tooth staining.",
+            "In PCOS, **5-10% weight loss** improves acne.",
+          ],
+        },
+        {
+          title: "Complications and red flags",
+          points: [
+            "**Acne fulminans**: prednisolone 0.5-1 mg/kg/day first, then low-dose isotretinoin.",
+            "Triglycerides **over 500 mg/dL** on isotretinoin - stop it; pancreatitis risk.",
+            "**Isotretinoin plus tetracycline** causes benign intracranial hypertension - never combine.",
+            "A missed period on isotretinoin means stop the drug and test the same day.",
+            "Suicidal thoughts need urgent mental health assessment.",
+          ],
+        },
+        {
+          title: "Referral and follow-up",
+          points: [
+            "Review at **8-12 weeks** with photographs; count new inflammatory lesions.",
+            "Stop oral antibiotics by **3-4 months** whether or not clear.",
+            "On isotretinoin review **monthly**: pregnancy test, mood, side effects, cumulative dose.",
+            "Refer for isotretinoin, fulminans, conglobata, failure of two courses and scar revision.",
+          ],
+        },
+      ],
+      tables: [
+        {
+          heading: "Drugs for acne",
+          columns: ["Drug", "Dose and route", "Duration", "Key side effects / cautions"],
+          rows: [
+            ["Adapalene 0.1% gel", "Pea-size to whole face at night", "Months; maintenance 6-12 months", "Dryness, peeling, early flare; not in pregnancy"],
+            ["Benzoyl peroxide 2.5-5%", "Topical once or twice daily", "Long term", "Irritation, bleaches hair and fabric"],
+            ["Clindamycin 1% gel", "Once or twice daily, only with BPO", "Up to 12 weeks", "Resistance if used alone"],
+            ["Azelaic acid 15-20%", "Topical twice daily", "Months", "Mild burning; safe in pregnancy"],
+            ["Doxycycline", "100 mg once daily orally", "8-12 weeks, max 3-4 months", "Photosensitivity, oesophagitis; not pregnancy or under 8"],
+            ["Azithromycin", "500 mg three times weekly orally", "8-12 weeks", "GI upset, QT prolongation"],
+            ["Combined pill (drospirenone or cyproterone)", "Daily orally", "Judge at 3-6 months", "VTE; stop cyproterone 3 months after control"],
+            ["Spironolactone", "50-100 mg daily (25-200 mg)", "Months", "Menstrual irregularity; contraception needed; women only"],
+            ["Isotretinoin", "0.5 then up to 1 mg/kg/day with fatty meal", "To 120-150 mg/kg, 6-8 months", "Teratogen, cheilitis, raised lipids and ALT, mood"],
+            ["Prednisolone (acne fulminans)", "0.5-1 mg/kg/day orally", "About 4 weeks, then taper", "Start before low-dose isotretinoin"],
+          ],
+        },
+        {
+          heading: "IADVL acne grading and treatment ladder",
+          columns: ["Grade", "Lesions", "First line", "Add-on or alternative"],
+          rows: [
+            ["Grade 1", "Comedones only", "Topical retinoid at night", "BPO, azelaic or salicylic acid"],
+            ["Grade 2", "Papules with comedones", "Adapalene plus BPO combination", "Topical clindamycin with BPO"],
+            ["Grade 3", "Pustules, often truncal", "Doxycycline 8-12 weeks plus retinoid and BPO", "Azithromycin; pill or spironolactone"],
+            ["Grade 4", "Nodulocystic or scarring", "Isotretinoin to 120-150 mg/kg", "Prednisolone first in fulminans"],
+            ["After clearance", "Clear or almost clear", "Retinoid maintenance 6-12 months", "Add BPO if lesions recur"],
+          ],
+        },
+        {
+          heading: "Acne versus its mimics",
+          columns: ["Feature", "Acne", "Rosacea", "Steroid acne", "Malassezia folliculitis"],
+          rows: [
+            ["Comedones", "Present", "Absent", "Absent", "Absent"],
+            ["Lesions", "Polymorphic", "Papules on central erythema", "Monomorphic pustules", "Itchy monomorphic papules"],
+            ["Site", "Face, chest, back", "Central face", "Where steroid applied", "Upper trunk"],
+            ["Clue", "Starts at puberty", "Telangiectasia, flushing", "Steroid cream history", "KOH shows yeasts"],
+          ],
+        },
+      ],
+      remember: [
+        "No comedone, no acne.",
+        "Four steps, four drug groups: plug, sebum, C. acnes, inflammation.",
+        "Benzoyl peroxide must accompany every antibiotic; topical antibiotics never alone.",
+        "Doxycycline maximum 3-4 months, always with retinoid and BPO.",
+        "Isotretinoin with a fatty meal to 120-150 mg/kg; cheilitis proves adherence.",
+        "Never combine isotretinoin with a tetracycline.",
+        "Treat the acne to treat the pigmentation.",
+      ],
+    },
     master: {
       heading: "Master revision table - Acne vulgaris",
       columns: ["Aspect", "High-yield points"],
@@ -219,6 +874,161 @@ const revision: RevisionSet = {
 
   "dermatology-urticaria-angioedema": {
     checked: "2026-10",
+    notes: {
+      sections: [
+        {
+          title: "Definition and key facts",
+          points: [
+            "A **wheal** is an itchy oedematous swelling that **resolves within 24 hours** leaving normal skin.",
+            "**Angioedema** is deeper oedema - tingling or painful, not itchy - lasting **up to 72 hours**.",
+            "About **20% of people** have urticaria at some time; CSU affects about 1%.",
+            "About half of chronic spontaneous urticaria resolves within **1-2 years**.",
+          ],
+        },
+        {
+          title: "Classification that matters",
+          points: [
+            "**Acute urticaria** lasts 6 weeks or less; **chronic** lasts over 6 weeks.",
+            "Chronic is **spontaneous (CSU)** or **inducible (CIndU)** with a physical trigger.",
+            "**Dermographism** is the commonest inducible type; others are cold, pressure, cholinergic, solar.",
+            "Angioedema is **histaminergic** (with wheals) or **bradykinin-mediated** (without wheals or itch).",
+            "Activity is scored by **UAS7 (0-42)**; 16 or more on 4-fold antihistamine suggests omalizumab.",
+          ],
+        },
+        {
+          title: "How it happens (pathophysiology)",
+          points: [
+            "**Mast cell degranulation** is the final common pathway, releasing histamine and leukotrienes.",
+            "Histamine on H1 receptors leaks plasma into the superficial dermis, forming the wheal.",
+            "In CSU, **IgE autoantibodies** (anti-TPO, IL-24) or IgG against the IgE receptor activate mast cells.",
+            "**NSAIDs** worsen up to 30% of CSU by shunting arachidonic acid to leukotrienes.",
+            "**ACE inhibitors** raise bradykinin; in HAE, low C1 inhibitor lets bradykinin rise.",
+            "Bradykinin acts on **B2 receptors** with no mast cell involvement, so no itch or wheal.",
+          ],
+        },
+        {
+          title: "History in the OPD",
+          points: [
+            "Ask **how long one wheal lasts** - over 24 hours suggests urticarial vasculitis.",
+            "Ask about tongue or throat swelling, voice change and breathing difficulty.",
+            "Ask about food, drug or sting in the 2 hours before an acute episode.",
+            "Take a drug history: **NSAIDs, codeine, ACE inhibitors**, oestrogen pills.",
+            "Ask about angioedema without wheals, abdominal attacks and family history - **HAE**.",
+            "Check how antihistamines were taken - on-demand use explains most failure.",
+          ],
+        },
+        {
+          title: "Examination",
+          points: [
+            "Wheals are well demarcated with **normal skin between - no scale or scar**.",
+            "Patients **rub rather than scratch**, so excoriations suggest another diagnosis.",
+            "Stroke the back firmly - a linear wheal in 5-10 minutes is **dermographism**.",
+            "Check lips, tongue, stridor, wheeze, SpO2 and BP to exclude **anaphylaxis**.",
+            "Residual purpura or pigmentation points to **urticarial vasculitis**.",
+            "Ice cube test for 5 minutes confirms **cold urticaria**.",
+          ],
+        },
+        {
+          title: "Investigations",
+          points: [
+            "**Acute urticaria needs no routine tests.**",
+            "CSU needs only **CBC with differential and CRP or ESR**, plus anti-TPO and IgE if available.",
+            "Do **not** order food allergy panels or elimination diets in CSU.",
+            "Wheals over 24 hours: **biopsy**, complement, ANA and urinalysis.",
+            "Angioedema without wheals: **C4 is the screening test** for HAE.",
+            "After anaphylaxis, **serum tryptase** at 1-2 hours confirms mast cell activation.",
+          ],
+        },
+        {
+          title: "Treatment - first line",
+          points: [
+            "Step 1: a **second-generation H1 antihistamine daily**, not on demand.",
+            "Options: cetirizine 10 mg, levocetirizine 5 mg, fexofenadine 180 mg, bilastine 20 mg.",
+            "Step 2: after 2-4 weeks, **up-dose the same drug to 4 times** the standard dose.",
+            "First-generation sedating antihistamines are **not recommended**.",
+            "Avoid NSAIDs and use **paracetamol**; stop ACE inhibitors after angioedema.",
+          ],
+        },
+        {
+          title: "Treatment - next steps",
+          points: [
+            "Step 3: **omalizumab 300 mg SC every 4 weeks**, assess by 6 months.",
+            "**Dupilumab** and oral **remibrutinib 25 mg twice daily** are now step 3 alternatives.",
+            "Step 4: **ciclosporin 3.5-5 mg/kg/day** with BP and creatinine monitoring.",
+            "**Prednisolone** only as 3-7 day rescue; never long-term.",
+            "HAE attack: **icatibant 30 mg SC**, C1-INH concentrate or fresh frozen plasma.",
+            "In HAE, **adrenaline, antihistamines and steroids do not work**.",
+          ],
+        },
+        {
+          title: "Complications and red flags",
+          points: [
+            "Anaphylaxis: **adrenaline 0.5 mg IM** (1 mg/mL) into the anterolateral thigh.",
+            "Children: 0.3 mg at 6-12 years, 0.15 mg at 6 months-6 years; repeat after 5 minutes.",
+            "Lay the patient flat with legs raised; **never stand or walk** them.",
+            "Observe at least 6 hours; 12 hours or admit if more than one dose.",
+            "Tongue or laryngeal ACE-inhibitor or HAE angioedema - **secure the airway early**.",
+          ],
+        },
+        {
+          title: "Referral and follow-up",
+          points: [
+            "Review CSU **every 2-4 weeks** using UAS7; aim for complete control.",
+            "After 3 months of control, **step down** one tablet every 2-4 weeks.",
+            "Refer when 4-fold antihistamine fails, or for vasculitis or suspected HAE.",
+            "Refer everyone after anaphylaxis; screen first-degree relatives in HAE.",
+          ],
+        },
+      ],
+      tables: [
+        {
+          heading: "Drugs for urticaria and angioedema",
+          columns: ["Drug", "Dose and route", "Duration", "Key side effects / cautions"],
+          rows: [
+            ["Levocetirizine or cetirizine", "5 mg or 10 mg daily; up to 4 times daily", "Regularly until controlled", "Mild drowsiness; reduce in renal impairment"],
+            ["Fexofenadine", "180 mg daily; up to 2-3 times daily", "Regularly", "Not with fruit juice or antacids"],
+            ["Bilastine", "20 mg daily on empty stomach", "Regularly", "Headache; least sedating"],
+            ["Omalizumab", "300 mg SC every 4 weeks; age 12 and above", "Assess by 6 months", "Injection-site reaction; rare anaphylaxis"],
+            ["Remibrutinib", "25 mg twice daily orally (adults)", "Add-on after antihistamine failure", "Stop 3-7 days before surgery (bleeding)"],
+            ["Ciclosporin", "3.5-5 mg/kg/day in 2 doses", "Limited months", "Hypertension, nephrotoxicity; BP and creatinine"],
+            ["Prednisolone", "0.5 mg/kg (20-50 mg) daily", "3-7 days rescue only", "Rebound; never long term"],
+            ["Adrenaline 1 mg/mL IM", "0.5 mg adult, anterolateral thigh", "Repeat after 5 minutes", "Tachycardia, tremor; no absolute contraindication"],
+            ["Icatibant", "30 mg SC for HAE attack", "Repeat after 6 h if needed", "Injection-site pain; bradykinin angioedema only"],
+          ],
+        },
+        {
+          heading: "Types of urticaria and angioedema",
+          columns: ["Type", "Trigger or mechanism", "Key clue", "Treatment"],
+          rows: [
+            ["Acute urticaria", "Virus, drug, food, sting", "Under 6 weeks", "Remove trigger; daily antihistamine"],
+            ["Chronic spontaneous", "Autoimmune mast cell activation", "Over 6 weeks, no trigger", "Antihistamine ladder, omalizumab, ciclosporin"],
+            ["Chronic inducible", "Friction, cold, heat, pressure, sweat", "Reproduced by provocation", "Avoid trigger plus antihistamine"],
+            ["Urticarial vasculitis", "Immune complex venulitis", "Over 24 h, burns, purpura", "Dapsone, colchicine, steroids"],
+            ["Bradykinin angioedema", "ACE inhibitor or C1-INH deficiency", "No wheals, no itch; low C4", "Stop ACEI; icatibant, C1-INH, FFP"],
+          ],
+        },
+        {
+          heading: "UAS7 activity bands",
+          columns: ["UAS7 score", "Activity", "Meaning"],
+          rows: [
+            ["0", "Urticaria-free", "Target of treatment"],
+            ["1-6", "Well controlled", "Consider stepping down"],
+            ["7-15", "Mild", "Optimise antihistamine"],
+            ["16-27", "Moderate", "On 4-fold dose: omalizumab"],
+            ["28-42", "Severe", "Step up promptly"],
+          ],
+        },
+      ],
+      remember: [
+        "Ask how long one wheal lasts - over 24 hours is vasculitis until biopsied.",
+        "Urticaria is rubbed, not scratched.",
+        "Up-dose one antihistamine to 4 times before adding anything else.",
+        "Ladder: antihistamine, 4-fold, omalizumab, ciclosporin.",
+        "Angioedema without wheals is bradykinin - adrenaline and steroids fail.",
+        "Low C4 is the screening test for hereditary angioedema.",
+        "Anaphylaxis: IM adrenaline in the thigh first; everything else is adjunct.",
+      ],
+    },
     updated: [
       "International Urticaria Guideline 2026 (GA2LEN/EuroGuiDerm/APAAACI, Allergy 2026): dupilumab and remibrutinib added as add-on options alongside omalizumab after failure of 4-fold antihistamine (conditional); never exceed 4-fold up-dosing",
       "International Urticaria Guideline 2026: ciclosporin positioned for when licensed add-ons (omalizumab, dupilumab, remibrutinib) fail or are unavailable",
@@ -279,6 +1089,182 @@ const revision: RevisionSet = {
 
   "dermatology-psoriasis": {
     checked: "2026-10",
+    notes: {
+      sections: [
+        {
+          title: "Definition and key facts",
+          points: [
+            "Psoriasis is a chronic **IL-23 and Th17-driven** disease of skin, nails and joints.",
+            "It affects about **0.5-1.5% of Indians**, with onset before or after 40 years.",
+            "**Psoriatic arthritis** affects 10-30% and is diagnosed by the **CASPAR criteria**.",
+            "It is a **systemic disease** linked to metabolic syndrome, fatty liver, heart disease and depression.",
+          ],
+        },
+        {
+          title: "Classification that matters",
+          points: [
+            "**Chronic plaque** psoriasis makes up about 90% of cases.",
+            "Other types: guttate, inverse, scalp, palmoplantar, nail, erythrodermic and pustular.",
+            "**Rule of tens**: BSA, PASI or DLQI over 10 means moderate-to-severe disease.",
+            "Face, scalp, palms, soles, genitals or nails **upgrade mild disease**.",
+            "Erythrodermic and generalised pustular psoriasis are **emergencies**.",
+          ],
+        },
+        {
+          title: "How it happens (pathophysiology)",
+          points: [
+            "Genetic susceptibility, chiefly **HLA-C*06:02**, lowers the threshold for inflammation.",
+            "Injured keratinocytes release **LL-37**, which activates dendritic cells.",
+            "Dendritic cells secrete **IL-23**, which expands Th17 cells.",
+            "Th17 cells release **IL-17 and TNF-alpha**, driving keratinocyte proliferation in a loop.",
+            "Turnover falls from 28 days to **3-5 days**, giving silvery parakeratotic scale.",
+            "Dilated capillaries under thin epidermis explain the **Auspitz sign**.",
+          ],
+        },
+        {
+          title: "Causes and risk factors",
+          points: [
+            "**Guttate psoriasis** follows streptococcal sore throat by 2-3 weeks.",
+            "Drugs: **beta-blockers, lithium, antimalarials**, NSAIDs, ACE inhibitors, terbinafine.",
+            "**Systemic steroid withdrawal** triggers pustular or erythrodermic flares.",
+            "HIV, smoking, alcohol, obesity, stress and trauma (Koebner) also trigger disease.",
+          ],
+        },
+        {
+          title: "History in the OPD",
+          points: [
+            "Ask age of onset, family history and recent sore throat.",
+            "Ask about **oral or injected steroids**, including from quacks.",
+            "Screen for arthritis: morning stiffness, heel pain, **dactylitis**, back pain.",
+            "Record **DLQI**; a score over 10 alone justifies systemic therapy.",
+            "Before systemic drugs ask about TB, hepatitis, HIV, liver and kidney disease.",
+            "Ask pregnancy plans in both sexes - methotrexate and acitretin are teratogenic.",
+          ],
+        },
+        {
+          title: "Examination",
+          points: [
+            "Well-defined plaques with **silvery micaceous scale** on extensors, scalp and sacrum.",
+            "Show **grattage, Berkeley membrane and Auspitz sign** in order on one plaque.",
+            "Look for **Koebner phenomenon** - plaques along scratches or scars.",
+            "Examine scalp, ears, umbilicus, natal cleft, genitalia and nails.",
+            "Nails: **pits, oil-drop sign**, onycholysis and subungual hyperkeratosis.",
+            "Record BSA, PASI, weight, waist and blood pressure.",
+          ],
+        },
+        {
+          title: "Investigations",
+          points: [
+            "Psoriasis is a **clinical diagnosis**; biopsy only if atypical.",
+            "KOH for possible tinea; **VDRL** if palms and soles are involved.",
+            "Screen glucose, lipids, LFT and BP for comorbidity.",
+            "Before methotrexate: CBC, LFT, creatinine, hepatitis B and C, HIV, pregnancy test.",
+            "Before biologics: **TB screening** with IGRA or tuberculin test plus chest X-ray.",
+          ],
+        },
+        {
+          title: "Treatment - first line",
+          points: [
+            "Remove scale first with **salicylic acid 3-6%**, then apply the active drug.",
+            "**Calcipotriol plus betamethasone** once daily for 4 weeks, then twice weekly.",
+            "Calcipotriol maximum **100 g per week**; salicylic acid inactivates it.",
+            "Potent steroid on body; mild steroid or tacrolimus on face and flexures.",
+            "Coal tar and short-contact **dithranol** are cheap alternatives.",
+            "**Never use systemic corticosteroids** for psoriasis.",
+          ],
+        },
+        {
+          title: "Treatment - next steps",
+          points: [
+            "**NB-UVB (311 nm)** 2-3 times weekly is first line for extensive disease.",
+            "**Methotrexate 7.5-25 mg once weekly** with folic acid 5 mg on another day.",
+            "Methotrexate is the choice when **psoriatic arthritis** coexists.",
+            "**Ciclosporin 2.5-5 mg/kg/day** gives rapid control; limit to 1 year.",
+            "**Acitretin** suits pustular, palmoplantar and HIV patients - it is not immunosuppressive.",
+            "**Apremilast 30 mg twice daily**, then biologics after failed standard systemic therapy.",
+          ],
+        },
+        {
+          title: "Special groups",
+          points: [
+            "**Pregnancy**: emollients, topical steroids, NB-UVB, ciclosporin or certolizumab.",
+            "Never methotrexate or acitretin in pregnancy.",
+            "Acitretin needs **contraception for 3 years** after stopping and no alcohol.",
+            "**Children**: topicals, NB-UVB, methotrexate, etanercept or adalimumab.",
+            "**HIV**: antiretroviral therapy, phototherapy and acitretin first.",
+          ],
+        },
+        {
+          title: "Complications and red flags",
+          points: [
+            "**Erythroderma** over 90% BSA - admit for warmth, fluids and electrolytes.",
+            "**Generalised pustular psoriasis**: fever, pus lakes, low calcium and albumin - admit.",
+            "Mouth ulcers or fever on methotrexate - stop it and give **folinic acid**.",
+            "New cough or fever on a biologic means **TB reactivation** until excluded.",
+            "**Impetigo herpetiformis** in pregnancy needs urgent admission.",
+          ],
+        },
+        {
+          title: "Referral and follow-up",
+          points: [
+            "Review topicals at **4 weeks**; aim for **PASI 75** and DLQI 0-1 on systemic therapy.",
+            "Methotrexate: CBC, LFT, creatinine every 1-2 weeks for a month, then 2-3 monthly.",
+            "Ciclosporin: BP and creatinine every 2 weeks for 3 months.",
+            "Check cardiovascular risk yearly; refer suspected arthritis to rheumatology.",
+          ],
+        },
+      ],
+      tables: [
+        {
+          heading: "Drugs for psoriasis",
+          columns: ["Drug", "Dose and route", "Duration", "Key side effects / cautions"],
+          rows: [
+            ["Calcipotriol plus betamethasone", "Topical once daily; calcipotriol max 100 g/week", "4 weeks, then twice weekly", "Irritation; not with salicylic acid"],
+            ["Clobetasol propionate 0.05%", "Topical once daily, palms, soles, scalp", "2-4 weeks, then taper", "Atrophy; rebound if stopped abruptly"],
+            ["Dithranol", "Short contact 0.1-3% for 10-30 min", "Daily, increasing strength", "Burning, purple-brown staining"],
+            ["NB-UVB (311 nm)", "2-3 sessions weekly", "About 20-30 sessions", "Erythema, burning; safe in pregnancy"],
+            ["Methotrexate", "7.5-25 mg once weekly plus folic acid 5 mg", "Response in 8-12 weeks", "Cytopenia, liver fibrosis; never daily"],
+            ["Ciclosporin", "2.5-5 mg/kg/day in 2 doses", "Maximum 1 year", "Hypertension, nephrotoxicity"],
+            ["Acitretin", "25-50 mg daily with fatty meal", "Response in 2-3 months", "Teratogen for 3 years; raised lipids"],
+            ["Apremilast", "Titrate to 30 mg twice daily", "Long term", "Diarrhoea, weight loss, depression"],
+            ["Adalimumab", "80 mg SC, then 40 mg every 2 weeks", "Assess at 12-16 weeks", "TB reactivation, heart failure"],
+            ["Secukinumab", "300 mg SC weekly for 5 weeks, then monthly", "Assess at 12-16 weeks", "Candidiasis, IBD flare"],
+          ],
+        },
+        {
+          heading: "Rule of tens - severity and treatment",
+          columns: ["Severity", "Criteria", "Treatment"],
+          rows: [
+            ["Mild", "BSA, PASI and DLQI all 10 or less", "Topicals and emollients"],
+            ["Moderate to severe", "Any one over 10", "NB-UVB or standard systemic drugs"],
+            ["Upgraded", "Special site or topical failure", "Treat as moderate to severe"],
+            ["Biologic candidate", "PASI 10+, DLQI over 10, failed systemic", "Anti-TNF, IL-17, IL-23, IL-12/23"],
+            ["Emergency", "Erythroderma or generalised pustular", "Admit; ciclosporin, infliximab, acitretin"],
+          ],
+        },
+        {
+          heading: "Types of psoriasis",
+          columns: ["Type", "Key features", "Preferred treatment"],
+          rows: [
+            ["Chronic plaque", "Silvery plaques on extensors, scalp, sacrum", "Topicals; UVB or systemic if extensive"],
+            ["Guttate", "Drop-like trunk papules after strep throat", "Treat strep, topicals, NB-UVB"],
+            ["Inverse", "Shiny red plaques without scale in folds", "Mild steroid, tacrolimus"],
+            ["Palmoplantar pustulosis", "Sterile pustules on palms and soles", "Stop smoking; acitretin, PUVA"],
+            ["Generalised pustular", "Fever, sterile pustule sheets, low calcium", "Admit; acitretin, ciclosporin, spesolimab"],
+            ["Erythrodermic", "Over 90% BSA, systemically unwell", "Admit; ciclosporin or infliximab"],
+          ],
+        },
+      ],
+      remember: [
+        "Never give systemic steroids in psoriasis - withdrawal flare can kill.",
+        "Grattage, Berkeley membrane, Auspitz sign - in that order.",
+        "Rule of tens: BSA, PASI or DLQI over 10 means systemic therapy.",
+        "Methotrexate once weekly on a fixed day; daily dosing kills.",
+        "Salicylic acid inactivates calcipotriol.",
+        "Acitretin: not immunosuppressive, but 3 years of contraception.",
+        "Screen TB, hepatitis and HIV before any biologic.",
+      ],
+    },
     master: {
       heading: "Master revision table - Psoriasis",
       columns: ["Aspect", "High-yield points"],
@@ -332,6 +1318,180 @@ const revision: RevisionSet = {
 
   "dermatology-leprosy-nlep": {
     checked: "2026-10",
+    notes: {
+      sections: [
+        {
+          title: "Definition and key facts",
+          points: [
+            "Leprosy is chronic infection of **skin and peripheral nerves** by Mycobacterium leprae.",
+            "Disability comes from **nerve damage**; the disease is **curable with MDT**.",
+            "Diagnosis needs **any one cardinal sign** of the three.",
+            "Cardinal signs: **anaesthetic patch**, thickened nerve with deficit, positive slit-skin smear.",
+            "India reports **over half the world's new cases**, about 1 lakh a year.",
+          ],
+        },
+        {
+          title: "Classification that matters",
+          points: [
+            "**PB**: 1-5 skin lesions, no or one nerve trunk, smear negative.",
+            "**MB**: 6 or more lesions, more than one nerve trunk, or smear positive.",
+            "**A positive smear always means MB.**",
+            "Ridley-Jopling spectrum: TT, BT, BB, BL, LL; borderline forms are unstable and react.",
+            "WHO disability: **Grade 0** none, **Grade 1** sensory loss, **Grade 2** visible deformity.",
+          ],
+        },
+        {
+          title: "How it happens (pathophysiology)",
+          points: [
+            "M. leprae cannot be cultured and doubles every **12-14 days**, so incubation is years.",
+            "Spread is by **nasal droplets** from untreated MB patients; over 95% of exposed people are immune.",
+            "It prefers **cool tissues** - skin, superficial nerves, nose, earlobes, testes.",
+            "It invades **Schwann cells**, so sensory and autonomic loss come before motor loss.",
+            "Strong Th1 immunity gives **tuberculoid** disease; anergy gives **lepromatous** disease.",
+            "Nerves thicken where superficial or in tunnels - ulnar at elbow, common peroneal at fibular neck.",
+          ],
+        },
+        {
+          title: "History in the OPD",
+          points: [
+            "Ask whether the patch is **numb, dry or does not sweat**.",
+            "Ask about tingling, weakness, painless burns and foot drop.",
+            "New nerve pain or swelling of old patches suggests a **reaction**.",
+            "Fever with crops of painful nodules suggests **ENL**.",
+            "Ask about contacts, previous MDT, G6PD deficiency, pregnancy and stigma.",
+          ],
+        },
+        {
+          title: "Examination",
+          points: [
+            "Examine the whole body in daylight and **count the lesions**.",
+            "Test sensation with **eyes closed** using cotton, pin and warm and cold tubes.",
+            "Temperature is lost first, then touch, then pain.",
+            "Use a **10 g monofilament** on palms and soles for protective sensation.",
+            "Palpate nerves bilaterally: great auricular, ulnar, radial cutaneous, common peroneal, posterior tibial.",
+            "Do **voluntary muscle testing**: eye closure, little finger, thumb, wrist, ankle dorsiflexion.",
+            "Record the **disability grade** for each eye, hand and foot.",
+          ],
+        },
+        {
+          title: "Investigations",
+          points: [
+            "Leprosy is a **clinical diagnosis** - start MDT without waiting for tests.",
+            "**Slit-skin smear** from both earlobes, forehead and the most active lesion edge.",
+            "Report the **bacteriological index** on a log scale of 0 to 6+.",
+            "Check haemoglobin and, where available, **G6PD** before dapsone.",
+            "Before long steroids: glucose, BP, TB screen and **albendazole** for Strongyloides.",
+            "The lepromin test is **not diagnostic**; it only classifies.",
+          ],
+        },
+        {
+          title: "Treatment - first line",
+          points: [
+            "India gives **three-drug MDT** to both PB and MB patients.",
+            "Adult monthly supervised: **rifampicin 600 mg plus clofazimine 300 mg** (plus dapsone 100 mg).",
+            "Adult daily: **clofazimine 50 mg plus dapsone 100 mg**.",
+            "**PB 6 months** (6 packs within 9 months); **MB 12 months** (12 packs within 18 months).",
+            "Rifampicin on an empty stomach; clofazimine with food or milk.",
+            "**Never stop MDT** for a reaction, pregnancy or lactation.",
+          ],
+        },
+        {
+          title: "Treatment - next steps",
+          points: [
+            "Mild reaction: continue MDT with rest and analgesics.",
+            "Type 1 reaction or neuritis: **prednisolone 40 mg daily tapered over 12 weeks**.",
+            "Splint and rest the affected limb during neuritis.",
+            "Severe ENL: **prednisolone 40-60 mg** tapered over 12-20 weeks.",
+            "Recurrent ENL: add **clofazimine 100 mg three times daily** up to 3 months.",
+            "**Thalidomide** for severe ENL at referral level only; never in women who could conceive.",
+          ],
+        },
+        {
+          title: "Special groups",
+          points: [
+            "Child 10-14 years: rifampicin 450 mg and clofazimine 150 mg monthly, dapsone 50 mg daily.",
+            "Child under 10 years: **dose by weight**, never an adult pack.",
+            "MDT is safe in **pregnancy and breastfeeding**.",
+            "With TB, give full anti-TB treatment plus clofazimine and dapsone.",
+            "Rifampicin weakens oral contraceptives and steroids - increase the prednisolone dose.",
+          ],
+        },
+        {
+          title: "Complications and red flags",
+          points: [
+            "New weakness or nerve pain is **acute neuritis** - start prednisolone the same day.",
+            "Inability to close the eye or a red painful eye needs urgent eye referral.",
+            "Fever, rash and jaundice within 6 weeks means **dapsone hypersensitivity** - stop it for life.",
+            "Clofazimine causes **red-brown skin pigmentation**, the commonest cause of default.",
+            "Plantar ulcers need offloading; probing to bone means osteomyelitis.",
+          ],
+        },
+        {
+          title: "Prevention and programmes",
+          points: [
+            "Patients are **non-infectious within days** of rifampicin - no isolation needed.",
+            "Contacts aged **2 years and above** get single-dose rifampicin (SDR-PEP).",
+            "Self-care for anaesthetic limbs: **soak, scrape, oil and inspect** daily.",
+            "NLEP aims to **interrupt transmission by 2027** (National Strategic Plan 2023-2027).",
+            "Programme tools: ABSULS, Leprosy Case Detection Campaigns, Sparsh campaign, Nikusth 2.0.",
+          ],
+        },
+        {
+          title: "Referral and follow-up",
+          points: [
+            "See monthly for the supervised dose; do **VMT and sensory testing** every visit.",
+            "Regular testing catches **silent neuritis** - painless loss of nerve function.",
+            "After release, review for **2 years (PB)** and **5 years (MB)**.",
+            "**Relapse** is slow and painless; a **reaction** is sudden, painful and steroid-responsive.",
+          ],
+        },
+      ],
+      tables: [
+        {
+          heading: "Drugs for leprosy and reactions",
+          columns: ["Drug", "Dose and route", "Duration", "Key side effects / cautions"],
+          rows: [
+            ["Rifampicin", "600 mg monthly, supervised, oral", "6 (PB) or 12 (MB) months", "Orange urine, hepatitis; enzyme inducer"],
+            ["Clofazimine", "300 mg monthly plus 50 mg daily", "6 or 12 months", "Red-brown pigmentation, dry skin"],
+            ["Dapsone", "100 mg daily, oral", "6 or 12 months", "Haemolysis in G6PD deficiency; hypersensitivity"],
+            ["Prednisolone (type 1, neuritis)", "40 mg daily, morning, tapered", "12 weeks", "Hyperglycaemia, TB reactivation; give albendazole first"],
+            ["Prednisolone (ENL)", "40-60 mg daily, tapered", "12-20 weeks or longer", "As above; never stop suddenly"],
+            ["Clofazimine (ENL)", "100 mg three times daily", "Up to 3 months, then taper", "Crystal enteropathy at high dose"],
+            ["Thalidomide (ENL)", "100-400 mg nightly, referral level", "Taper to 50-100 mg", "Phocomelia; never if pregnancy possible"],
+            ["Rifampicin SDR-PEP", "Single dose 600 mg adult", "Once", "Exclude leprosy, TB, pregnancy first"],
+          ],
+        },
+        {
+          heading: "NLEP classification and MDT",
+          columns: ["Group", "Criteria", "Adult MDT", "Completion"],
+          rows: [
+            ["Paucibacillary", "1-5 lesions, up to 1 nerve, smear negative", "Three-drug MDT", "6 packs within 9 months"],
+            ["Multibacillary", "6+ lesions, 2+ nerves, or smear positive", "Three-drug MDT", "12 packs within 18 months"],
+            ["Pure neuritic", "Nerve involvement, no skin lesion", "PB if one nerve, MB if more", "As PB or MB"],
+          ],
+        },
+        {
+          heading: "Lepra reactions compared",
+          columns: ["Feature", "Type 1 (reversal)", "Type 2 (ENL)"],
+          rows: [
+            ["Mechanism", "Type IV, rising cell immunity", "Type III immune complex, high TNF"],
+            ["Patients", "Borderline: BT, BB, BL", "BL and LL"],
+            ["Skin", "Old patches red and swollen", "Crops of tender new nodules"],
+            ["Systemic", "Little fever; acute neuritis", "Fever, iritis, orchitis, arthritis"],
+            ["Treatment", "Prednisolone 40 mg over 12 weeks", "Prednisolone, clofazimine; thalidomide at referral"],
+          ],
+        },
+      ],
+      remember: [
+        "One cardinal sign is enough for diagnosis.",
+        "A positive smear makes it MB regardless of lesion count.",
+        "Leprosy patch: hypopigmented, dry, hairless, anaesthetic; vitiligo is chalk-white with normal sensation.",
+        "Temperature goes first, then touch, then pain.",
+        "Three-drug MDT for all: PB 6 months, MB 12 months.",
+        "Never stop MDT for a reaction, pregnancy or lactation.",
+        "Self-care mnemonic: soak, scrape, oil, inspect.",
+      ],
+    },
     master: {
       heading: "Master revision table - Leprosy under NLEP",
       columns: ["Aspect", "High-yield points"],
@@ -386,6 +1546,176 @@ const revision: RevisionSet = {
 
   "dermatology-drug-eruptions-sjs-ten": {
     checked: "2026-10",
+    notes: {
+      sections: [
+        {
+          title: "Definition and key facts",
+          points: [
+            "Drug rashes affect about **2-3% of hospitalised patients**; over 90% are benign exanthems.",
+            "**Type A** reactions are dose-dependent; **type B** are immunological and unpredictable.",
+            "All the dangerous rashes are **type B** reactions.",
+            "**Withdrawing the culprit drug** is the single act that most changes mortality.",
+          ],
+        },
+        {
+          title: "Classification that matters",
+          points: [
+            "Benign: morbilliform, urticarial, fixed and photosensitive eruptions.",
+            "**Severe cutaneous adverse reactions (SCAR)**: SJS and TEN, DRESS, AGEP.",
+            "Detached plus detachable skin: **SJS under 10%**, overlap 10-30%, **TEN over 30%**.",
+            "**Erythema multiforme major** is separate - typical acral targets, usually after herpes simplex.",
+            "Onset: AGEP 1-4 days, exanthem 4-14 days, **SJS-TEN 4-28 days**, DRESS 2-8 weeks.",
+            "Mortality: AGEP under 5%, DRESS about 10%, SJS 5-10%, **TEN 30% or more**.",
+          ],
+        },
+        {
+          title: "How it happens (pathophysiology)",
+          points: [
+            "Drugs act as **haptens** or bind HLA directly (p-i concept), so first exposure can react.",
+            "The 4-28 day latency is the time to prime drug-specific T cells.",
+            "In SJS-TEN, **CD8 T cells and NK cells** release **granulysin**, the main effector.",
+            "Mass keratinocyte apoptosis gives **full-thickness epidermal necrosis**, so skin slides off.",
+            "Loss of barrier causes fluid loss, heat loss and **sepsis**, the leading cause of death.",
+            "In DRESS, IL-5 drives eosinophilia and **HHV-6 reactivation** prolongs the course.",
+          ],
+        },
+        {
+          title: "Causes and risk factors",
+          points: [
+            "High-risk drugs: **carbamazepine, phenytoin, lamotrigine, allopurinol, cotrimoxazole**, dapsone, nevirapine.",
+            "Also oxicam NSAIDs, anti-tubercular drugs and fluoroquinolones.",
+            "**HLA-B*15:02** with carbamazepine; **HLA-B*58:01** with allopurinol; HLA-B*57:01 with abacavir.",
+            "**HIV** raises SJS-TEN risk up to 100-fold.",
+            "Aromatic anticonvulsants **cross-react** with each other.",
+          ],
+        },
+        {
+          title: "History in the OPD",
+          points: [
+            "Make a **drug chart for the last 8 weeks** against the date of rash onset.",
+            "Include OTC, ayurvedic, homoeopathic and injected drugs.",
+            "**Skin pain** out of proportion to the rash is the earliest warning.",
+            "Same lesion at the same site after a tablet means **fixed drug eruption**.",
+            "Ask about eye pain, painful swallowing, painful urination and breathlessness.",
+          ],
+        },
+        {
+          title: "Examination",
+          points: [
+            "Record pulse, BP, temperature, SpO2 and urine output first.",
+            "SJS-TEN shows **dusky flat atypical targets** and flaccid bullae.",
+            "Elicit the **Nikolsky sign**; count only detached or Nikolsky-positive skin, never erythema.",
+            "Two or more eroded **mucosal sites** make a SCAR likely.",
+            "DRESS triad: **facial oedema, lymph nodes, liver**.",
+            "Examine the eyes on day 1 for pseudomembrane and early symblepharon.",
+          ],
+        },
+        {
+          title: "Investigations",
+          points: [
+            "CBC: eosinophilia over 700 supports DRESS; neutrophilia supports AGEP.",
+            "Glucose, urea, bicarbonate and electrolytes feed **SCORTEN**.",
+            "LFT, urine; in DRESS add troponin, ECG, TSH and lipase.",
+            "Swabs and blood cultures at baseline; chest X-ray and SpO2.",
+            "**Frozen section** separates TEN from staphylococcal scalded skin within hours.",
+            "**Never rechallenge** or skin-test after SJS-TEN or DRESS.",
+          ],
+        },
+        {
+          title: "Treatment - first line",
+          points: [
+            "**Stop the culprit and all non-essential drugs immediately.**",
+            "Assign causality with the **ALDEN algorithm** (Naranjo for other reactions).",
+            "Transfer to burns unit or ICU if **detachment over 10% or SCORTEN 2 or more**.",
+            "Nurse at **25-28 C**; leave detached epidermis in place as a dressing.",
+            "Use paraffin emollients; **avoid silver sulfadiazine** - it is a sulfonamide.",
+            "Fluids about **2 mL/kg per % BSA** over 24 hours; aim urine 0.5-1 mL/kg/hour.",
+          ],
+        },
+        {
+          title: "Treatment - next steps",
+          points: [
+            "**Ciclosporin 3-5 mg/kg/day** for 7-10 days has the most consistent survival benefit.",
+            "**Etanercept 50 mg SC** single dose is an alternative.",
+            "Short early steroids only **within 72 hours**, for 3-5 days, then rapid taper.",
+            "IVIG alone has **not shown consistent benefit**.",
+            "DRESS with organ involvement: **prednisolone 0.5-1 mg/kg/day** tapered over 6-12 weeks.",
+            "AGEP needs drug withdrawal and topical steroid - **no antibiotics**.",
+            "Paracetamol and opioids for pain; **avoid NSAIDs**.",
+          ],
+        },
+        {
+          title: "Complications and red flags",
+          points: [
+            "Stridor, hypoxia or haemoptysis means bronchial involvement - **intubate early**.",
+            "Daily ophthalmology from day 1 - **symblepharon** forms within days.",
+            "Sepsis from S. aureus and Pseudomonas - antibiotics only when proven.",
+            "Late sequelae: dry eye, strictures, nail loss, bronchiolitis obliterans.",
+            "DRESS can cause late **autoimmune thyroiditis** and diabetes.",
+          ],
+        },
+        {
+          title: "Referral and follow-up",
+          points: [
+            "Refer same day for skin pain, mucosal erosion, blisters, Nikolsky sign or facial oedema.",
+            "**Lifelong avoidance** of the culprit and its cross-reacting class.",
+            "Give a **drug alert card** and report to **PvPI** (helpline 1800-180-3024).",
+            "In DRESS check TSH and glucose at 3, 6 and 12 months.",
+            "After carbamazepine SJS use **levetiracetam or valproate**.",
+          ],
+        },
+      ],
+      tables: [
+        {
+          heading: "Drugs in drug eruptions and SJS-TEN",
+          columns: ["Drug", "Dose and route", "Duration", "Key side effects / cautions"],
+          rows: [
+            ["Cetirizine", "10 mg once daily orally", "1-2 weeks", "Drowsiness; benign exanthem only"],
+            ["Mometasone 0.1% cream", "Once daily, topical", "5-7 days", "Not on eroded skin"],
+            ["Adrenaline 1 mg/mL", "0.5 mg IM thigh; child 0.01 mg/kg", "Repeat every 5 minutes", "Tachycardia, arrhythmia"],
+            ["Ciclosporin", "3-5 mg/kg/day in 2 doses", "7-10 days, then taper", "Nephrotoxicity; daily creatinine and BP"],
+            ["Etanercept", "50 mg SC once (25 mg if under 65 kg)", "Single dose", "Infection"],
+            ["Prednisolone (DRESS)", "0.5-1 mg/kg/day orally", "Taper over 6-12 weeks or more", "Relapse if tapered fast"],
+            ["Carboxymethylcellulose 0.5% drops", "Every 1-2 hours, preservative-free", "Acute phase", "Transient blur"],
+            ["Enoxaparin", "40 mg SC once daily", "While immobile", "Bleeding; check platelets"],
+          ],
+        },
+        {
+          heading: "Severe cutaneous adverse reactions compared",
+          columns: ["Feature", "SJS-TEN", "DRESS", "AGEP"],
+          rows: [
+            ["Onset after drug", "4-28 days", "2-8 weeks", "1-4 days"],
+            ["Skin", "Dusky targets, Nikolsky positive", "Infiltrated rash, facial oedema", "Pinhead sterile pustules"],
+            ["Mucosa", "Two or more sites eroded", "Mild or spared", "Usually spared"],
+            ["Blood", "Lymphopenia", "Eosinophilia, atypical lymphocytes", "Neutrophilia"],
+            ["Organs", "Eye, lung, kidney", "Liver, kidney, heart", "Rarely"],
+            ["Mortality", "SJS 5-10%, TEN 30%+", "About 10%", "Under 5%"],
+          ],
+        },
+        {
+          heading: "SCORTEN (within 24 hours and on day 3)",
+          columns: ["Component", "Finding", "Points"],
+          rows: [
+            ["Age", "40 years or more", "1"],
+            ["Malignancy", "Present", "1"],
+            ["Heart rate", "120 per minute or more", "1"],
+            ["Detachment on day 1", "Over 10% body surface", "1"],
+            ["Serum urea", "Over 10 mmol/L", "1"],
+            ["Serum bicarbonate", "Under 20 mmol/L", "1"],
+            ["Serum glucose", "Over 14 mmol/L (252 mg/dL)", "1"],
+          ],
+        },
+      ],
+      remember: [
+        "First treatment of SJS-TEN is stopping the culprit drug.",
+        "SJS under 10%, overlap 10-30%, TEN over 30% - count detached skin, not erythema.",
+        "Onset: AGEP 1-4 days, SJS-TEN 4-28 days, DRESS 2-8 weeks.",
+        "SCORTEN 2 or more means ICU; 5 or more predicts about 90% mortality.",
+        "No silver sulfadiazine - it is a sulfonamide.",
+        "Fixed drug eruption: same site, within hours, slate-grey pigment.",
+        "Never rechallenge after SJS-TEN or DRESS.",
+      ],
+    },
     master: {
       heading: "Master revision table - Drug eruptions and SJS/TEN",
       columns: ["Aspect", "High-yield points"],
@@ -440,6 +1770,173 @@ const revision: RevisionSet = {
 
   "dermatology-sti-genital-ulcer-urethral-discharge": {
     checked: "2026-10",
+    notes: {
+      sections: [
+        {
+          title: "Definition and key facts",
+          points: [
+            "NACO estimates about **3-3.5 crore STI and RTI episodes** a year in India.",
+            "An STI raises the risk of acquiring HIV **two- to five-fold**.",
+            "**Herpes** is now the commonest cause of genital ulcer in India.",
+            "Services run through **Suraksha clinics** and targeted interventions, with free kits.",
+          ],
+        },
+        {
+          title: "Classification that matters",
+          points: [
+            "India uses **syndromic case management** with colour-coded kits.",
+            "Syndromes: urethral discharge, genital ulcer, vaginal discharge, lower abdominal pain, bubo, scrotal swelling.",
+            "Genital ulcer causes: **herpes, syphilis, chancroid, LGV, donovanosis**.",
+            "Urethritis is **gonococcal** (profuse pus, 2-5 days) or **non-gonococcal** (scanty, 1-3 weeks).",
+            "Syphilis stages: primary, secondary, early latent, late latent, tertiary; neurosyphilis at any stage.",
+          ],
+        },
+        {
+          title: "How it happens (pathophysiology)",
+          points: [
+            "**Treponema pallidum** divides slowly (30-33 hours), so treatment needs long penicillin levels.",
+            "Endarteritis with plasma cells makes the chancre **indurated, clean and painless**.",
+            "**Haemophilus ducreyi** toxin gives a soft, painful, undermined ulcer.",
+            "**Herpes** becomes latent in sacral ganglia, so it recurs and is never cured.",
+            "Most herpes spreads through **asymptomatic shedding** without visible lesions.",
+            "Chlamydia provokes little inflammation, so **most infections are silent**.",
+          ],
+        },
+        {
+          title: "History in the OPD",
+          points: [
+            "Take a private sexual history using the **5 Ps**: partners, practices, protection, past STI, pregnancy.",
+            "Ask the date of last contact and symptom onset to estimate incubation.",
+            "Ask whether the ulcer is **painful** and whether it began as **blisters**.",
+            "Recurrent ulcers at one site suggest herpes or **fixed drug eruption**.",
+            "Sudden severe testicular pain is **torsion** until proved otherwise.",
+            "Ask about HIV status, **penicillin allergy** and the partner's pregnancy.",
+          ],
+        },
+        {
+          title: "Examination",
+          points: [
+            "Examine with consent, privacy and a chaperone; retract the prepuce.",
+            "Describe the ulcer: number, edge, base, **induration and tenderness**.",
+            "Nodes: rubbery bilateral (syphilis), suppurating bubo (chancroid), **groove sign** (LGV).",
+            "**Milk the urethra** after 2-4 hours without voiding if no discharge is visible.",
+            "Look at palms, soles and mouth for **secondary syphilis**.",
+            "Look for warts, molluscum, scabies and signs of HIV.",
+          ],
+        },
+        {
+          title: "Investigations",
+          points: [
+            "Gram stain: **Gram-negative intracellular diplococci** mean gonorrhoea.",
+            "**RPR or VDRL plus TPHA** for every STI patient.",
+            "RPR alone reactive suggests a **biological false positive**; TPHA stays positive for life.",
+            "Record the **quantitative RPR titre** before treatment.",
+            "Offer **HIV, HBsAg and anti-HCV** testing to every patient.",
+            "Biopsy any ulcer not healed after **4-6 weeks** of correct treatment.",
+          ],
+        },
+        {
+          title: "Treatment - first line",
+          points: [
+            "**Kit 1 (grey)** for discharge: cefixime 400 mg plus azithromycin 1 g, single dose.",
+            "WHO 2024 prefers **ceftriaxone 1 g IM** for gonorrhoea and doxycycline 7 days for chlamydia.",
+            "**Kit 3 (white)** for non-herpetic ulcer: benzathine penicillin 2.4 MU IM plus azithromycin 1 g.",
+            "**Kit 5 (red)** for herpes: aciclovir 400 mg three times daily for 7 days.",
+            "**Kit 4 (blue)** for penicillin allergy: doxycycline 15 days plus azithromycin.",
+            "**Kit 7 (black)** for bubo: doxycycline 21 days plus azithromycin 1 g.",
+          ],
+        },
+        {
+          title: "Treatment - next steps",
+          points: [
+            "**Early syphilis**: benzathine penicillin 2.4 MU IM once; late latent weekly for 3 weeks.",
+            "Keep **adrenaline ready** during penicillin injection.",
+            "**Jarisch-Herxheimer reaction** within 2-24 hours is not allergy - give paracetamol.",
+            "**Neurosyphilis**: aqueous penicillin 18-24 MU a day IV for 10-14 days.",
+            "Herpes suppression with aciclovir 400 mg twice daily for 6 or more recurrences a year.",
+            "Persistent urethritis: metronidazole 2 g, then cover Mycoplasma genitalium.",
+          ],
+        },
+        {
+          title: "Special groups",
+          points: [
+            "**Syphilis in pregnancy** is treated the same day with penicillin; desensitise if allergic.",
+            "Doxycycline is **contraindicated in pregnancy**; use azithromycin instead.",
+            "Herpes near term: **aciclovir from 36 weeks**; caesarean if lesions in labour.",
+            "Congenital syphilis: aqueous penicillin 50,000 units/kg IV for 10 days.",
+            "**STI in a child** is abuse until proved otherwise - report under **POCSO**.",
+          ],
+        },
+        {
+          title: "Prevention and programmes",
+          points: [
+            "The **4 Cs**: compliance, condoms, counselling, contact tracing.",
+            "Treat partners of the last **60 days (discharge)** or **90 days (ulcer)**.",
+            "No sex until 7 days after both partners finish treatment.",
+            "Offer hepatitis B vaccine, **PrEP** for high risk, and HIV PEP within 72 hours.",
+            "Universal antenatal syphilis screening under **EVTHS**.",
+            "Confidentiality is protected under the **HIV and AIDS Act 2017**.",
+          ],
+        },
+        {
+          title: "Referral and follow-up",
+          points: [
+            "Review all syndromic cases at **7 days**.",
+            "RPR at 6 and 12 months; a **fourfold fall** means cure.",
+            "Retest for gonorrhoea and chlamydia at **3 months**.",
+            "Refer torsion to surgery urgently; **aspirate a bubo**, never incise it.",
+          ],
+        },
+      ],
+      tables: [
+        {
+          heading: "Drugs for genital ulcer and urethral discharge",
+          columns: ["Drug", "Dose and route", "Duration", "Key side effects / cautions"],
+          rows: [
+            ["Benzathine penicillin G", "2.4 MU deep IM (1.2 MU each buttock)", "Once; weekly x 3 for late latent", "Jarisch-Herxheimer, rare anaphylaxis"],
+            ["Ceftriaxone", "1 g IM single dose (WHO 2024)", "Once", "Injection pain; dilute in lidocaine"],
+            ["Cefixime", "400 mg orally", "Single dose", "Diarrhoea, rash"],
+            ["Azithromycin", "1 g orally, empty stomach", "Single dose", "Nausea, QT prolongation"],
+            ["Doxycycline", "100 mg twice daily orally", "7 days chlamydia; 21 days LGV", "Oesophagitis, photosensitivity; not pregnancy"],
+            ["Aciclovir", "400 mg three times daily orally", "7-10 days first; 5 days recurrence", "Reduce in renal impairment"],
+            ["Metronidazole", "2 g orally after food", "Single dose", "No alcohol for 48 hours"],
+            ["Aqueous penicillin G", "18-24 MU a day IV", "10-14 days (neurosyphilis)", "Specialist care"],
+          ],
+        },
+        {
+          heading: "Genital ulcers compared",
+          columns: ["Feature", "Syphilis", "Chancroid", "Herpes", "LGV", "Donovanosis"],
+          rows: [
+            ["Ulcer", "Single, clean, indurated", "Soft, ragged, undermined", "Grouped vesicles, erosions", "Transient papule", "Beefy-red, bleeds"],
+            ["Pain", "Painless", "Painful", "Painful", "Painless", "Painless"],
+            ["Nodes", "Bilateral rubbery", "Unilateral suppurating bubo", "Bilateral tender", "Groove sign", "Pseudobubo"],
+            ["Confirm", "Dark-ground, RPR plus TPHA", "Gram stain, culture", "Tzanck, HSV PCR", "NAAT L1-L3", "Donovan bodies"],
+          ],
+        },
+        {
+          heading: "NACO colour-coded kits",
+          columns: ["Kit and colour", "Syndrome", "Contents"],
+          rows: [
+            ["Kit 1 Grey", "Urethral or cervical discharge", "Cefixime 400 mg plus azithromycin 1 g"],
+            ["Kit 2 Green", "Vaginitis", "Secnidazole 2 g plus fluconazole 150 mg"],
+            ["Kit 3 White", "Non-herpetic genital ulcer", "Benzathine penicillin 2.4 MU plus azithromycin 1 g"],
+            ["Kit 4 Blue", "Ulcer with penicillin allergy", "Doxycycline 15 days plus azithromycin 1 g"],
+            ["Kit 5 Red", "Herpetic ulcer", "Aciclovir 400 mg three times daily, 7 days"],
+            ["Kit 6 Yellow", "Lower abdominal pain (PID)", "Cefixime, metronidazole and doxycycline 14 days"],
+            ["Kit 7 Black", "Inguinal bubo", "Doxycycline 21 days plus azithromycin 1 g"],
+          ],
+        },
+      ],
+      remember: [
+        "Herpes is now the commonest genital ulcer in India.",
+        "Painless indurated ulcer is syphilis; painful soft undermined ulcer is chancroid.",
+        "Groove sign means LGV; bleeding beefy-red ulcer means donovanosis.",
+        "RPR for screening and follow-up; TPHA confirms and stays positive for life.",
+        "One benzathine injection cures early syphilis; three weekly for late latent.",
+        "Kits: grey discharge, white ulcer, blue allergy, red herpes, yellow PID, black bubo.",
+        "The 4 Cs: compliance, condoms, counselling, contact tracing.",
+      ],
+    },
     updated: [
       "WHO 2026: first recommendation on doxycycline PEP (200 mg within 72 h of condomless sex) for MSM and transgender women, prioritising recent or recurrent STIs, with AMR monitoring; not yet NACO programme policy",
     ],
@@ -497,6 +1994,162 @@ const revision: RevisionSet = {
 
   "dermatology-superficial-fungal-infections": {
     checked: "2026-10",
+    notes: {
+      sections: [
+        {
+          title: "Definition and key facts",
+          points: [
+            "Superficial mycoses infect only **stratum corneum, hair and nails**.",
+            "Three groups: **dermatophytes** (tinea), **Candida** and **Malassezia**.",
+            "India's epidemic strain is **Trichophyton indotineae**, often terbinafine-resistant.",
+            "Drivers: **steroid-antifungal combination creams**, under-dosing and family spread.",
+            "Topical steroids have been **Schedule H** since 2018 - not to be sold over the counter.",
+          ],
+        },
+        {
+          title: "Classification that matters",
+          points: [
+            "By site: tinea corporis, cruris, pedis, manuum, faciei, capitis, barbae and unguium.",
+            "**Tinea incognito** is steroid-modified tinea without a clear edge.",
+            "**Chronic** lasts over 6 months to 1 year; **recurrent** relapses within weeks of cure.",
+            "**Recalcitrant** means no response despite adequate dose and duration.",
+            "By source: anthropophilic, **zoophilic** (more inflammatory) and geophilic.",
+          ],
+        },
+        {
+          title: "How it happens (pathophysiology)",
+          points: [
+            "Dermatophytes digest keratin and cannot grow at 37 C in living tissue.",
+            "Hyphae grow outwards, so the **active edge** is scaly and the centre clears.",
+            "**Topical steroids** suppress local immunity, so tinea spreads without an edge.",
+            "Heat, humidity, sweat and tight synthetic clothing favour infection.",
+            "**Terbinafine** blocks squalene epoxidase; T. indotineae carries **SQLE mutations**.",
+            "**Itraconazole** concentrates in keratin but needs **acid and a fatty meal** to absorb.",
+          ],
+        },
+        {
+          title: "History in the OPD",
+          points: [
+            "Ask exactly **which creams** were used and ask to see the tubes.",
+            "Ask previous oral antifungal: drug, dose, brand and duration.",
+            "Ask whether **family members or roommates itch**.",
+            "Ask about diabetes, **SGLT2 inhibitors**, HIV, steroids and obesity.",
+            "In a child with scalp patches, ask about **pets** and siblings.",
+            "Check liver disease, heart failure and interacting drugs before azoles.",
+          ],
+        },
+        {
+          title: "Examination",
+          points: [
+            "Examine whole skin, scalp, nails, feet, groin and buttocks.",
+            "Tinea corporis: annular plaque with **raised scaly active edge** and central clearing.",
+            "**Tinea cruris spares the scrotum**; scrotal involvement with satellite pustules is Candida.",
+            "Tinea incognito: no clear edge, pustules, atrophy and striae.",
+            "Tinea capitis: black dots, scaly patches or a boggy **kerion** - never incise it.",
+            "Pityriasis versicolor: fine-scaly macules on upper trunk; **evoked scale sign**.",
+          ],
+        },
+        {
+          title: "Investigations",
+          points: [
+            "**KOH mount is mandatory** before systemic therapy - 10% for skin, 20-40% for nails.",
+            "Scrape the active edge; stop topical antifungals for 1 week before.",
+            "**Spaghetti and meatballs** on KOH means pityriasis versicolor.",
+            "Wood's lamp: green in Microsporum, yellow-orange in PV; T. tonsurans does not fluoresce.",
+            "Culture and susceptibility for chronic, recurrent or failed cases.",
+            "Check **blood glucose** in extensive tinea and HIV when atypical.",
+          ],
+        },
+        {
+          title: "Treatment - first line",
+          points: [
+            "**Stop all steroid-containing creams** and explain why.",
+            "Topical azole or terbinafine 1% to lesion plus **2 cm margin**, twice daily.",
+            "Continue **2-4 weeks after the skin looks clear**.",
+            "Treat **all affected family members together**; hot-wash clothes and towels.",
+            "Loose cotton clothes, dry folds, separate towels.",
+            "Levocetirizine at night for itch so patients do not return to steroids.",
+          ],
+        },
+        {
+          title: "Treatment - next steps",
+          points: [
+            "Extensive or chronic tinea: **itraconazole 200 mg daily** for 4-8 weeks, plus topical.",
+            "Take itraconazole right after a fatty meal; **avoid PPIs and antacids**.",
+            "**Terbinafine 250 mg** once daily (often twice daily in India) for 4-6 weeks.",
+            "No response after 2-4 weeks of full-dose terbinafine - **switch to itraconazole**.",
+            "Onychomycosis: terbinafine 6 weeks (fingers) or 12 weeks (toes), or itraconazole pulses.",
+            "PV: **ketoconazole 2% shampoo** daily for 5 days; oral terbinafine does not work.",
+          ],
+        },
+        {
+          title: "Special groups",
+          points: [
+            "**Tinea capitis**: griseofulvin 20-25 mg/kg/day for 6-8 weeks for Microsporum.",
+            "Terbinafine for 4 weeks by weight is best for **Trichophyton** capitis.",
+            "Add ketoconazole shampoo twice weekly for the child and family.",
+            "**Pregnancy**: topical clotrimazole or miconazole only; defer nail treatment.",
+            "Itraconazole is **contraindicated in heart failure**.",
+          ],
+        },
+        {
+          title: "Referral and follow-up",
+          points: [
+            "Review at **2-4 weeks**; the end point is clinical cure plus 2-4 weeks.",
+            "Check LFT if therapy exceeds 6 weeks or with liver disease or alcohol.",
+            "Refer if no response after 4 weeks of full-dose itraconazole.",
+            "Toenails take **12-18 months** to grow out - judge by new clear nail.",
+            "At each recurrence recheck steroid use, adherence, contacts and sugar.",
+          ],
+        },
+      ],
+      tables: [
+        {
+          heading: "Drugs for superficial fungal infections",
+          columns: ["Drug", "Dose and route", "Duration", "Key side effects / cautions"],
+          rows: [
+            ["Clotrimazole 1% or luliconazole 1%", "Topical twice daily (luliconazole once)", "2-4 weeks after clearance", "Local irritation"],
+            ["Itraconazole", "100 mg twice daily or 200 mg daily, after fatty meal", "4-8 weeks", "Hepatitis; heart failure; CYP3A4 interactions"],
+            ["Terbinafine", "250 mg once (or twice) daily", "4-6 weeks; toenails 12 weeks", "Taste loss, hepatotoxicity"],
+            ["Griseofulvin", "20-25 mg/kg/day (microsize) with milk", "6-8 weeks (capitis)", "Photosensitivity; not in pregnancy"],
+            ["Fluconazole", "150-300 mg once weekly", "2-6 weeks", "Choice for Candida; avoid in pregnancy"],
+            ["Ketoconazole 2% shampoo", "Leave 5 minutes, then rinse", "PV daily for 5 days", "Scalp dryness"],
+            ["Amorolfine 5% nail lacquer", "Once weekly after filing", "6-12 months", "Adjunct to oral therapy"],
+            ["Levocetirizine", "5 mg at night", "While itching", "Drowsiness"],
+          ],
+        },
+        {
+          heading: "Types of dermatophytosis and treatment",
+          columns: ["Type", "Key feature", "First-line treatment", "Duration"],
+          rows: [
+            ["Corporis or cruris, limited", "Annular plaque, scrotum spared", "Topical azole or terbinafine", "Clear plus 2-4 weeks"],
+            ["Corporis or cruris, extensive", "Multisite, recurrent, steroid-modified", "Itraconazole plus topical", "4-8 weeks"],
+            ["Capitis", "Black dots, kerion; children", "Griseofulvin or terbinafine plus shampoo", "6-8 weeks or 4 weeks"],
+            ["Onychomycosis", "Thick nail, subungual debris", "Terbinafine or itraconazole pulses plus lacquer", "Fingers 6, toes 12 weeks"],
+            ["Pedis", "Fourth web maceration, moccasin", "Topical terbinafine; oral if moccasin", "2-6 weeks"],
+          ],
+        },
+        {
+          heading: "Hypopigmented patch - fungus or not",
+          columns: ["Feature", "Pityriasis versicolor", "Vitiligo", "Leprosy"],
+          rows: [
+            ["Colour", "Hypo or hyperpigmented", "Milky chalk-white", "Hypopigmented, never depigmented"],
+            ["Surface", "Fine scale", "No scale", "Dry, hairless"],
+            ["Sensation", "Normal", "Normal", "Lost"],
+            ["Key test", "KOH spaghetti and meatballs", "Wood's lamp chalk-white", "Sensation, nerves, slit-skin smear"],
+          ],
+        },
+      ],
+      remember: [
+        "No systemic antifungal without a KOH.",
+        "Tinea cruris spares the scrotum; Candida does not.",
+        "Never prescribe a steroid-antifungal combination cream.",
+        "Apply 2 cm beyond the edge; continue 2-4 weeks after clearance.",
+        "Itraconazole needs food and acid - no PPIs.",
+        "Griseofulvin for Microsporum, terbinafine for Trichophyton capitis.",
+        "Nails: fingers 6 weeks or 2 pulses, toes 12 weeks or 3 pulses.",
+      ],
+    },
     master: {
       heading: "Master revision table - Superficial fungal infections",
       columns: ["Aspect", "High-yield points"],
@@ -549,6 +2202,173 @@ const revision: RevisionSet = {
 
   "dermatology-generalised-pruritus": {
     checked: "2026-10",
+    notes: {
+      sections: [
+        {
+          title: "Definition and key facts",
+          points: [
+            "**Pruritus** is an unpleasant sensation that provokes the desire to scratch.",
+            "**Chronic pruritus** lasts **6 weeks or more**.",
+            "**Xerosis** is the commonest cause in people over 65.",
+            "Lymphoma, polycythaemia and cholestasis can itch **months to years** before diagnosis.",
+            "Generalised itch on normal skin is **systemic until the blood panel says otherwise**.",
+          ],
+        },
+        {
+          title: "Classification that matters",
+          points: [
+            "**IFSI Group I**: itch on inflamed skin with a primary rash.",
+            "**IFSI Group II**: itch on normal-looking skin with only scratch marks.",
+            "**IFSI Group III**: chronic scratch lesions - prurigo nodularis, lichen simplex chronicus.",
+            "Cause categories: dermatological, systemic, neurological, psychogenic, mixed, undetermined.",
+          ],
+        },
+        {
+          title: "How it happens (pathophysiology)",
+          points: [
+            "Itch travels in **unmyelinated C fibres** to the dorsal horn and spinothalamic tract.",
+            "**Histaminergic itch** (urticaria, bites) is the only itch reliably helped by antihistamines.",
+            "Most chronic itch is **non-histaminergic**, driven by proteases, IL-31, IL-4 and IL-13.",
+            "Scratching causes pain, which switches off itch - but damages the barrier.",
+            "Mu-opioid activity causes itch; **kappa agonists** and naltrexone relieve it.",
+            "Cholestatic itch follows **autotaxin and LPA**, not bile acid levels.",
+          ],
+        },
+        {
+          title: "Causes and risk factors",
+          points: [
+            "Skin causes: **scabies**, eczema, urticaria, xerosis, lichen planus, bullous pemphigoid.",
+            "Systemic causes: **CKD, cholestasis**, thyroid disease, iron deficiency.",
+            "Haematological causes: **polycythaemia vera** and Hodgkin lymphoma.",
+            "Also HIV, opioids, chloroquine and cholestatic drugs.",
+            "Neuropathic causes: **brachioradial pruritus** and notalgia paraesthetica.",
+          ],
+        },
+        {
+          title: "History in the OPD",
+          points: [
+            "Score severity on a **0-10 scale** to follow response.",
+            "Family members itching at night means **scabies** until proved otherwise.",
+            "Itch within minutes of water contact suggests **polycythaemia vera**.",
+            "Ask every drug of the last 3 months, including ayurvedic remedies.",
+            "Ask about jaundice, B symptoms, dialysis, thyroid symptoms and menorrhagia.",
+            "Palm and sole itch in the third trimester suggests **cholestasis of pregnancy**.",
+          ],
+        },
+        {
+          title: "Examination",
+          points: [
+            "First decide: **primary rash, or only scratch changes**.",
+            "The **butterfly sign** - spared mid-back - proves itch without a primary rash.",
+            "Look for **burrows** and genital papules of scabies.",
+            "Look for xerosis with crazy-paving shins and tense blisters in the elderly.",
+            "Check pallor, jaundice, plethora, nodes, liver, spleen and thyroid.",
+          ],
+        },
+        {
+          title: "Investigations",
+          points: [
+            "With a clear primary rash, **treat it first** - no blood tests needed.",
+            "Normal skin: **CBC with eosinophils, ESR, ferritin, LFT, creatinine, TSH, glucose**.",
+            "Add HIV and hepatitis serology; chest X-ray for persistent unexplained itch.",
+            "High haemoglobin with aquagenic itch - send **JAK2 V617F**.",
+            "In pregnancy, **bile acids 19 micromol/L or more** confirm ICP.",
+            "Repeat the panel at **6-12 months** if itch stays unexplained.",
+          ],
+        },
+        {
+          title: "Treatment - first line",
+          points: [
+            "**Emollients are the foundation**: soak and seal within 3 minutes of bathing.",
+            "Short lukewarm baths and soap substitutes; avoid hot water and wool.",
+            "Stop or change any suspected culprit drug.",
+            "**Treat the cause** - iron, thyroid control, dialysis, phlebotomy, lymphoma treatment.",
+            "**Menthol 1-2%** in aqueous cream cools and is safe in the elderly.",
+            "Non-sedating antihistamines help urticaria, **not most chronic itch**.",
+          ],
+        },
+        {
+          title: "Treatment - next steps",
+          points: [
+            "CKD itch: **gabapentin 100 mg after each dialysis** or difelikefalin IV.",
+            "Cholestatic ladder: **cholestyramine, then rifampicin, then naltrexone, then sertraline**.",
+            "SSRIs or **mirtazapine 7.5-15 mg** at night for paraneoplastic and nocturnal itch.",
+            "Polycythaemia: phlebotomy, **aspirin 75-100 mg**, ruxolitinib if resistant.",
+            "Capsaicin cream for localised neuropathic itch.",
+            "Narrowband UVB helps uraemic, HIV and prurigo itch.",
+          ],
+        },
+        {
+          title: "Special groups",
+          points: [
+            "**ICP**: palm and sole itch, no rash, third trimester; resolves after delivery.",
+            "ICP bile acids **100 or more**: consider birth at 35-36 weeks.",
+            "Ursodeoxycholic acid may ease ICP itch but does not reduce stillbirth.",
+            "**Elderly**: treat xerosis first; **avoid sedating antihistamines** (Beers criteria).",
+            "Crusted scabies in institutions: ivermectin plus permethrin, and treat everyone.",
+          ],
+        },
+        {
+          title: "Referral and follow-up",
+          points: [
+            "Review in **2-4 weeks** with itch score, sleep and mood (PHQ-9).",
+            "Refer to haematology for nodes, B symptoms, splenomegaly or high haemoglobin.",
+            "Refer elderly patients with urticarial plaques or tense blisters - **bullous pemphigoid**.",
+            "Refer pregnant women with palm and sole itch the **same week**.",
+            "Refer delusional infestation and suicidal thoughts to psychiatry.",
+          ],
+        },
+      ],
+      tables: [
+        {
+          heading: "Drugs for chronic itch",
+          columns: ["Drug", "Dose and route", "Duration", "Key side effects / cautions"],
+          rows: [
+            ["Emollient", "Liberally twice daily, after bath", "Long term", "Folliculitis"],
+            ["Menthol 1-2% aqueous cream", "Topical 2-3 times daily", "As needed", "Stings broken skin"],
+            ["Cetirizine or fexofenadine", "10 mg or 180 mg once daily", "While histaminergic itch", "Little help in chronic itch"],
+            ["Gabapentin", "100 mg after each dialysis; 100-300 mg at night", "Titrate", "Dizziness, falls; adjust to eGFR"],
+            ["Cholestyramine", "4 g once or twice daily, max 16 g", "Ongoing", "Bloating; other drugs 4 h apart"],
+            ["Rifampicin", "150-300 mg daily orally", "LFT at 2, 6, 12 weeks", "Hepatitis, orange secretions, interactions"],
+            ["Naltrexone", "12.5 mg rising to 50 mg daily", "Ongoing", "Withdrawal-like reaction; not with opioids"],
+            ["Sertraline", "50-100 mg once daily", "Ongoing", "Hyponatraemia in elderly"],
+            ["Mirtazapine", "7.5-15 mg at night", "Ongoing", "Weight gain, sedation"],
+          ],
+        },
+        {
+          heading: "Systemic causes - clue and first test",
+          columns: ["Cause", "Clue", "First test"],
+          rows: [
+            ["CKD", "Worse at night or around dialysis", "Creatinine, calcium, phosphate, PTH"],
+            ["Cholestasis", "Palms and soles first, jaundice", "LFT with ALP and GGT, ultrasound"],
+            ["Iron deficiency", "Pallor, koilonychia, menorrhagia", "CBC, ferritin"],
+            ["Thyroid disease", "Weight change, tremor or dry skin", "TSH"],
+            ["Polycythaemia vera", "Itch after water, plethora, spleen", "CBC, JAK2 V617F"],
+            ["Hodgkin lymphoma", "Nodes, night sweats, weight loss", "CBC, ESR, chest X-ray, node biopsy"],
+            ["Cholestasis of pregnancy", "Third trimester palms and soles", "Bile acids, LFT"],
+          ],
+        },
+        {
+          heading: "IFSI groups of chronic pruritus",
+          columns: ["Group", "Skin appearance", "Examples"],
+          rows: [
+            ["Group I", "Inflamed skin, primary rash", "Scabies, eczema, urticaria, pemphigoid"],
+            ["Group II", "Normal skin, scratch marks only", "CKD, cholestasis, thyroid, iron, lymphoma"],
+            ["Group III", "Chronic scratch lesions", "Prurigo nodularis, lichen simplex chronicus"],
+          ],
+        },
+      ],
+      remember: [
+        "Chronic itch is 6 weeks or more; classify by IFSI group first.",
+        "Itch on normal skin is systemic until the blood panel says otherwise.",
+        "Family itching at night means scabies.",
+        "Butterfly sign means no primary rash.",
+        "Cholestatic ladder: cholestyramine, rifampicin, naltrexone, sertraline.",
+        "Aquagenic itch means check JAK2.",
+        "Iron deficiency can itch without anaemia.",
+        "In the elderly: emollient first, no sedating antihistamines.",
+      ],
+    },
     updated: [
       "International Urticaria Guideline 2026: antihistamine up-dosing in urticaria capped at 4 times the standard dose (citation updated from the 2021/2022 edition)",
     ],
