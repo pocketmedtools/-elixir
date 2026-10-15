@@ -2,6 +2,168 @@ import type { RevisionSet } from "./index";
 
 const revision: RevisionSet = {
   "eye-ent-red-eye": {
+    notes: {
+      sections: [
+        {
+          title: "Definition and key facts",
+          points: [
+            "A red eye is dilatation of **conjunctival, episcleral or ciliary vessels**.",
+            "The layer of vessels that is dilated names the diagnosis.",
+            "About **80% of red eyes** in general practice are conjunctivitis.",
+            "Conjunctivitis is a **diagnosis of exclusion** once the eye is painful or vision falls.",
+            "Red eye with normal vision and no true pain is treated in the OPD.",
+            "Red eye with **reduced vision, pain or photophobia** is referred the same day.",
+          ],
+        },
+        {
+          title: "Classification that matters",
+          points: [
+            "**Conjunctival injection** is brightest in the fornices, moves and blanches: surface disease.",
+            "**Ciliary injection** is a deep flush at the limbus: cornea, iris or ciliary body.",
+            "Conjunctivitis is classified by cause: bacterial, viral, chlamydial, allergic and toxic.",
+            "**Ophthalmia neonatorum** is any conjunctivitis in the first 28 days of life.",
+            "Uveitis is graded anatomically by **SUN**; primary care mainly sees acute anterior uveitis.",
+            "India was validated by WHO as **trachoma-free in 2024**; trichiasis surveillance continues.",
+          ],
+        },
+        {
+          title: "How it happens (pathophysiology)",
+          points: [
+            "1. Surface inflammation dilates conjunctival vessels, causing grittiness and discharge.",
+            "2. Loss of corneal epithelium exposes nerves, so pain is severe and **fluorescein stains**.",
+            "3. Inflamed iris and ciliary muscle hurt when light makes them contract: **photophobia**.",
+            "4. In uveitis, protein and cells leak into aqueous as **flare and cells**.",
+            "5. In angle closure, **pupillary block** pushes the iris forward and closes the angle.",
+            "6. IOP rises to **40-80 mmHg**, causing corneal oedema, a fixed pupil and vomiting.",
+          ],
+        },
+        {
+          title: "History in the OPD",
+          points: [
+            "Ask five questions: **blurred vision**, true pain, discharge type, photophobia, one or both eyes.",
+            "Itch means **allergy**; infection does not itch.",
+            "Purulent discharge with lids stuck on waking suggests bacterial conjunctivitis.",
+            "Watery discharge with a cold and a tender node suggests **adenovirus**.",
+            "Ask about **contact lens wear** and trauma with vegetable matter.",
+            "Ask about **over-the-counter steroid drops** and home remedies already used.",
+            "Haloes, brow ache and vomiting in an older long-sighted patient suggest **angle closure**.",
+          ],
+        },
+        {
+          title: "Examination",
+          points: [
+            "Check **visual acuity first**, each eye separately, with a pinhole if below 6/6.",
+            "Do the **oblique torch shadow test** for a shallow chamber before dilating.",
+            "Evert the upper lid in any foreign-body sensation.",
+            "**Fluorescein** with cobalt-blue light: a branching dendrite with terminal bulbs means herpes simplex.",
+            "Pupil small and irregular suggests uveitis; mid-dilated, oval and fixed suggests angle closure.",
+            "Digital tension: a **stony hard eye** suggests angle closure.",
+            "**Phenylephrine 2.5%** blanches episcleritis but not scleritis.",
+          ],
+        },
+        {
+          title: "Investigations",
+          points: [
+            "**Simple conjunctivitis needs no test**; the diagnosis is clinical.",
+            "Swab neonates for Gram stain, culture and chlamydia NAAT.",
+            "**Gram-negative intracellular diplococci** mean gonococcus; treat systemically the same day.",
+            "The ophthalmologist takes a **corneal scraping with KOH** before any drop in an ulcer.",
+            "Tonometry in angle closure typically reads **over 40 mmHg**.",
+            "Recurrent uveitis: HLA-B27, chest X-ray, IGRA and VDRL as history suggests.",
+          ],
+        },
+        {
+          title: "Treatment - first line",
+          points: [
+            "Bacterial: **chloramphenicol 0.5%** two-hourly for 2 days, then four times daily for 5 days.",
+            "Contact lens wearers get **moxifloxacin 0.5%** three times daily for 7 days.",
+            "Adenovirus: preservative-free lubricants and cold compresses; antibiotics do not help.",
+            "Allergic: **olopatadine 0.1%** twice daily; start cromoglicate before the season.",
+            "Hygiene: wash hands, separate towels, no shared drops; adenovirus is contagious **10-14 days**.",
+            "**Never start steroid drops** in an undiagnosed red eye.",
+          ],
+        },
+        {
+          title: "Treatment - next steps",
+          points: [
+            "Gonococcal: **ceftriaxone 1 g IM** single dose in adults.",
+            "Neonatal gonococcal: ceftriaxone 25-50 mg/kg, maximum 125 mg, plus hourly saline lavage.",
+            "Chlamydial: azithromycin 1 g adult; neonate oral erythromycin for 14 days.",
+            "Herpes simplex keratitis: **acyclovir 3% ointment** five times daily for 14 days.",
+            "Uveitis (ophthalmologist): prednisolone acetate 1% with a cycloplegic, tapered over 4-6 weeks.",
+          ],
+        },
+        {
+          title: "Complications and red flags",
+          points: [
+            "Gonococcus can **perforate the cornea** within 24-48 hours.",
+            "Steroid drops cause **raised IOP**, cataract and spread of herpes or fungal ulcers.",
+            "A painful red eye in a lens wearer is **Pseudomonas or Acanthamoeba** until proved otherwise.",
+            "Hypopyon, hyphaema or loss of red reflex needs immediate referral.",
+            "Red painful eye within 6 weeks of surgery is **endophthalmitis**.",
+            "The fellow eye in angle closure has a **40-80% risk** without laser iridotomy.",
+          ],
+        },
+        {
+          title: "Referral and follow-up",
+          points: [
+            "Refer **within hours**: angle closure, chemical injury after irrigation, endophthalmitis, penetrating injury.",
+            "Chemical splash: irrigate with 1-2 litres for **at least 30 minutes** before anything else.",
+            "Angle closure first aid: **acetazolamide 500 mg**, timolol, brimonidine, then pilocarpine once IOP falls.",
+            "Review bacterial conjunctivitis at **5-7 days** and adenoviral at 2-3 weeks.",
+            "Anyone on topical steroid over 2 weeks needs an **IOP check**.",
+          ],
+        },
+      ],
+      tables: [
+        {
+          heading: "Five causes of red eye at the bedside",
+          columns: ["Feature", "Conjunctivitis", "Keratitis", "Anterior uveitis", "Angle closure"],
+          rows: [
+            ["Vision", "Normal", "Reduced", "Mildly reduced", "Markedly reduced, haloes"],
+            ["Pain", "Gritty only", "Severe", "Aching, photophobia", "Severe, with vomiting"],
+            ["Injection", "Conjunctival", "Ciliary", "Ciliary", "Mixed"],
+            ["Cornea", "Clear", "Infiltrate, stains", "Keratic precipitates", "Hazy, oedematous"],
+            ["Pupil", "Normal", "Normal or small", "Small, irregular", "Mid-dilated, oval, fixed"],
+            ["Tension", "Normal", "Normal", "Normal or low", "Stony hard"],
+            ["Action", "Treat in OPD", "Refer same day", "Refer same day", "Treat, refer within hours"],
+          ],
+        },
+        {
+          heading: "Drugs in red eye",
+          columns: ["Drug", "Dose and route", "Duration", "Key side effects / cautions"],
+          rows: [
+            ["Chloramphenicol 0.5% drops", "1 drop 2-hourly x 2 days, then QID", "5 days; 1% ointment at night", "Cheap first line; stinging"],
+            ["Moxifloxacin 0.5% drops", "1 drop three times daily", "7 days", "Keep for lens wearers, severe cases"],
+            ["Olopatadine 0.1% drops", "1 drop twice daily", "Through the season", "Brief stinging, headache"],
+            ["Ceftriaxone", "1 g IM once (neonate 25-50 mg/kg, max 125 mg)", "Single dose", "Avoid in jaundiced or premature neonates"],
+            ["Azithromycin", "1 g oral once (trachoma 20 mg/kg)", "Single dose", "Treat sexual partners in chlamydia"],
+            ["Acyclovir 3% ointment", "5 times daily", "14 days", "Punctate keratopathy; no steroid"],
+            ["Prednisolone acetate 1% drops", "1 drop 1-2 hourly (uveitis)", "Taper over 4-6 weeks", "Raised IOP, cataract; ophthalmologist only"],
+            ["Acetazolamide", "500 mg IV/oral, then 250 mg 6-hourly", "Acute attack", "Avoid in sulpha allergy, sickle cell, renal failure"],
+            ["Timolol 0.5% drops", "1 drop stat, then twice daily", "Acute attack", "Not in asthma, COPD, heart block"],
+          ],
+        },
+        {
+          heading: "Ophthalmia neonatorum by day of onset",
+          columns: ["Day of onset", "Cause", "Treatment"],
+          rows: [
+            ["Day 1", "Chemical", "Supportive care"],
+            ["Days 2-5", "Gonococcal", "Ceftriaxone, saline lavage, admit"],
+            ["Days 5-14", "Chlamydial", "Oral erythromycin 14 days; treat parents"],
+          ],
+        },
+      ],
+      remember: [
+        "**Acuity before anything** - normal acuity almost excludes sight-threatening causes.",
+        "Itch means allergy; photophobia means cornea or iris.",
+        "Never prescribe a steroid drop without a slit lamp.",
+        "Never send a patient home with a topical anaesthetic.",
+        "Vomiting with one-sided headache in the elderly - look at the pupil.",
+        "One drop is enough - the sac holds only 7-10 microlitres.",
+        "Treat the fellow eye in angle closure with laser iridotomy.",
+      ],
+    },
     checked: "2026-10",
     master: {
       heading: "Master revision table - The red eye",
@@ -70,6 +232,168 @@ const revision: RevisionSet = {
   },
 
   "eye-ent-otitis": {
+    notes: {
+      sections: [
+        {
+          title: "Definition and key facts",
+          points: [
+            "**AOM** is rapid-onset middle ear inflammation with an effusion.",
+            "AOM is diagnosed by a **moderate or severe bulging drum** or new otorrhoea.",
+            "**OME (glue ear)** is fluid behind an intact drum with no acute inflammation.",
+            "**Otitis externa** is canal inflammation under 6 weeks with pain on tragal pressure.",
+            "**CSOM** is a perforated drum discharging for **more than 2 weeks** (WHO).",
+            "**Recurrent AOM** is 3 episodes in 6 months or 4 in 12 months.",
+          ],
+        },
+        {
+          title: "Classification that matters",
+          points: [
+            "**Mucosal CSOM** (tubotympanic, safe) has a central perforation with a rim all round.",
+            "**Squamous CSOM** (atticoantral, unsafe) has cholesteatoma with an attic or marginal perforation.",
+            "Each type is active (discharging) or inactive.",
+            "Only the squamous type erodes bone and causes intracranial complications.",
+            "**Malignant otitis externa** is Pseudomonas skull-base osteomyelitis in elderly diabetics.",
+            "AOM organisms: **S. pneumoniae, non-typeable H. influenzae and Moraxella**.",
+            "AOM risks: age 6-24 months, **supine bottle feeding**, day care, smoke, cleft palate.",
+          ],
+        },
+        {
+          title: "How it happens (pathophysiology)",
+          points: [
+            "1. A cold or big adenoids **block the Eustachian tube**, which is short and horizontal in infants.",
+            "2. Middle ear air is absorbed, creating negative pressure and a retracted drum.",
+            "3. Fluid collects and nasopharyngeal bacteria multiply in it.",
+            "4. Pus builds up, giving a **red bulging drum**, severe pain and fever.",
+            "5. The drum may perforate; sudden pain relief with discharge means perforation, not cure.",
+            "6. About **80% settle within 3 days** without antibiotics.",
+          ],
+        },
+        {
+          title: "History in the OPD",
+          points: [
+            "Throbbing earache after a cold with fever suggests **AOM**.",
+            "Pain worse on chewing after swimming or cotton buds suggests **otitis externa**.",
+            "Infants show ear tugging, irritability, night waking and poor feeding.",
+            "Profuse odourless mucoid discharge suggests **safe CSOM**.",
+            "Scanty **foul-smelling discharge** suggests cholesteatoma.",
+            "Always ask about vertigo, facial weakness, headache and neck stiffness.",
+          ],
+        },
+        {
+          title: "Examination",
+          points: [
+            "Pull the pinna **up and back in adults**, down and back in infants.",
+            "**Tragal tenderness** is the key sign of otitis externa.",
+            "Look at the **attic last and always**; that is where cholesteatoma hides.",
+            "**Pneumatic otoscopy**: an immobile drum confirms effusion; best bedside test.",
+            "A red drum in a crying child proves nothing.",
+            "Check the facial nerve; any weakness with ear disease is an emergency.",
+          ],
+        },
+        {
+          title: "Investigations",
+          points: [
+            "AOM and uncomplicated otitis externa are **clinical diagnoses**; no tests needed.",
+            "**Tympanometry type B** (flat) with normal volume means effusion.",
+            "Pure tone audiometry for OME lasting 3 months and before CSOM surgery.",
+            "Blood sugar or HbA1c in recurrent otitis externa and every malignant otitis externa.",
+            "**HRCT temporal bone** for unsafe CSOM and any complication.",
+          ],
+        },
+        {
+          title: "Treatment - first line",
+          points: [
+            "**Analgesia first**: paracetamol 15 mg/kg or ibuprofen 10 mg/kg, by the clock.",
+            "Immediate antibiotic if **under 6 months**, bilateral under 2 years, otorrhoea or severe.",
+            "Severe means moderate-severe pain, pain over 48 hours or temperature 39 C or more.",
+            "Others: observe 48-72 hours with a **delayed (back-up) prescription**.",
+            "**Amoxicillin 80-90 mg/kg/day** in 2 doses; high dose beats pneumococcal resistance.",
+            "Otitis externa: **aural toilet plus ciprofloxacin-dexamethasone drops**; no oral antibiotic.",
+            "OME: watchful waiting for **3 months**; no decongestants, antihistamines or antibiotics.",
+          ],
+        },
+        {
+          title: "Treatment - next steps",
+          points: [
+            "Use **co-amoxiclav** if amoxicillin in the last 30 days or failure at 48-72 hours.",
+            "Failure of two antibiotics: **ceftriaxone 50 mg/kg** once daily for 1-3 days.",
+            "Active mucosal CSOM: daily dry mopping plus **quinolone ear drops** for 10-14 days.",
+            "Otomycosis: suction clearance, then **clotrimazole 1% drops**; stop antibacterial drops.",
+            "Malignant otitis externa: admit, control sugar, antipseudomonal antibiotics for **6-8 weeks**.",
+            "**Grommets** for OME over 3 months with hearing worse than 25-30 dB or speech delay.",
+          ],
+        },
+        {
+          title: "Complications and red flags",
+          points: [
+            "**Acute mastoiditis**: postaural swelling with the pinna pushed down, out and forward.",
+            "Fever, headache, neck stiffness or drowsiness means an **intracranial complication**; admit.",
+            "Vertigo or positive fistula test means a **labyrinthine fistula**; do not syringe.",
+            "Never put **aminoglycoside drops through a perforation**; they are ototoxic.",
+            "Unilateral effusion in an adult needs exclusion of **nasopharyngeal carcinoma**.",
+          ],
+        },
+        {
+          title: "Prevention and programmes",
+          points: [
+            "Exclusive breastfeeding for 6 months and **feeding the infant upright**.",
+            "Avoid household tobacco and biomass smoke.",
+            "**PCV** and annual influenza vaccine reduce AOM episodes.",
+            "Dry-ear care: no swimming, vaseline cotton while bathing, no oil or cotton buds.",
+            "School screening under the **NPPCD** detects hidden conductive loss.",
+          ],
+        },
+      ],
+      tables: [
+        {
+          heading: "Types of otitis at the bedside",
+          columns: ["Feature", "AOM", "Otitis externa", "Safe CSOM", "Unsafe CSOM"],
+          rows: [
+            ["Pain", "Severe, eases on perforation", "Severe, on chewing", "Usually painless", "Painless; pain means complication"],
+            ["Tragal tenderness", "Absent", "Present", "Absent", "Absent"],
+            ["Discharge", "Only after perforation", "Scanty, no mucus", "Profuse, mucoid, odourless", "Scanty, foul, may bleed"],
+            ["Drum", "Red, bulging, immobile", "Intact, hidden by oedema", "Central perforation", "Attic or marginal perforation, keratin"],
+            ["Treatment", "Analgesia; amoxicillin by rule", "Toilet, steroid-quinolone drops", "Toilet, quinolone drops, tympanoplasty", "HRCT, mastoidectomy"],
+          ],
+        },
+        {
+          heading: "Drugs in otitis",
+          columns: ["Drug", "Dose and route", "Duration", "Key side effects / cautions"],
+          rows: [
+            ["Paracetamol", "15 mg/kg 6-hourly oral (max 60 mg/kg/day)", "48-72 hours by the clock", "Liver toxicity in overdose"],
+            ["Ibuprofen", "10 mg/kg 8-hourly after food", "48-72 hours", "Avoid in dehydration, peptic ulcer"],
+            ["Amoxicillin", "80-90 mg/kg/day oral in 2 doses", "10 d under 2 y; 7 d at 2-5 y; 5-7 d from 6 y", "Diarrhoea, rash"],
+            ["Co-amoxiclav", "90/6.4 mg/kg/day in 2 doses", "10 days", "Diarrhoea; take at start of meal"],
+            ["Azithromycin", "10 mg/kg once daily", "3 days", "Penicillin anaphylaxis only; QT prolongation"],
+            ["Ceftriaxone", "50 mg/kg IM or IV once daily", "1-3 days", "After two antibiotic failures"],
+            ["Ciprofloxacin 0.3% + dexamethasone ear drops", "4 drops twice daily", "7-10 days", "Safe through perforation"],
+            ["Ofloxacin 0.3% ear drops", "10 drops twice daily (CSOM)", "14 days", "Non-ototoxic; after aural toilet"],
+            ["Clotrimazole 1% ear drops", "3-4 drops three times daily", "14 days after symptoms settle", "Local burning"],
+          ],
+        },
+        {
+          heading: "Tympanometry patterns",
+          columns: ["Type", "What it shows", "Meaning"],
+          rows: [
+            ["Type A", "Normal peak", "Normal middle ear"],
+            ["Type B, normal volume", "Flat trace", "Effusion (OME or AOM)"],
+            ["Type B, large volume", "Flat trace", "Perforation or patent grommet"],
+            ["Type C", "Negative pressure peak", "Eustachian tube dysfunction"],
+            ["Type As / Ad", "Shallow / very high peak", "Otosclerosis / ossicular discontinuity"],
+          ],
+        },
+      ],
+      remember: [
+        "Redness proves nothing - a **bulging, immobile drum** proves AOM.",
+        "Tragal pain is otitis externa; pain relieved by discharge is perforated AOM.",
+        "First prescription in AOM is **regular analgesia**.",
+        "The **dose of amoxicillin**, not a newer drug, beats resistance.",
+        "Central perforation with mucoid discharge is safe; attic with foul discharge is unsafe.",
+        "Never aminoglycoside drops through a perforation.",
+        "Warm ear drops in the palm - cold drops cause giddiness.",
+        "Earache with a normal ear is referred - check teeth, TMJ, tonsil, larynx.",
+      ],
+    },
     checked: "2026-10",
     master: {
       heading: "Master revision table - AOM, otitis externa, OME and CSOM",
@@ -135,6 +459,169 @@ const revision: RevisionSet = {
   },
 
   "eye-ent-sore-throat": {
+    notes: {
+      sections: [
+        {
+          title: "Definition and key facts",
+          points: [
+            "**Acute pharyngitis** is inflammation of the pharynx and tonsils, usually lasting under a week.",
+            "Most sore throats are **viral**: 70-85% in adults and 60-70% in children.",
+            "**GABHS** causes 15-30% in children aged 5-15 and 5-15% in adults.",
+            "In India we treat GABHS to **prevent rheumatic fever**, not for symptom relief.",
+            "Antibiotics shorten the sore throat by only about **16 hours**.",
+            "GABHS is uncommon under 3 years, so routine testing there is not needed.",
+          ],
+        },
+        {
+          title: "Classification that matters",
+          points: [
+            "The key split is **viral versus GABHS**.",
+            "**McIsaac score** decides who is tested (IDSA 2025).",
+            "McIsaac **0-1**: no test, no antibiotic.",
+            "McIsaac **2-3**: rapid antigen test or culture; treat only if positive.",
+            "McIsaac **4-5**: test, or treat empirically in high rheumatic fever settings like India.",
+            "Recurrent tonsillitis for surgery uses the **Paradise criteria (7-5-3)**.",
+          ],
+        },
+        {
+          title: "How it happens (pathophysiology)",
+          points: [
+            "1. Viruses inflame the whole airway, so they bring **cough, coryza and hoarseness**.",
+            "2. GABHS sticks to pharyngeal cells; its **M protein** resists phagocytosis.",
+            "3. Pyrogenic exotoxins act as superantigens and cause the **scarlet fever** rash.",
+            "4. Two to four weeks later, **molecular mimicry** causes rheumatic fever.",
+            "5. Treatment **within 9 days** of onset still prevents rheumatic fever.",
+            "6. Post-streptococcal glomerulonephritis is **not prevented** by antibiotics.",
+          ],
+        },
+        {
+          title: "History in the OPD",
+          points: [
+            "**Inability to swallow saliva** or drooling means airway or deep neck space.",
+            "Cough, coryza, hoarseness and conjunctivitis point to a **virus**.",
+            "Sudden onset, headache, abdominal pain and sandpaper rash favour GABHS.",
+            "Ask **immunisation status**; diphtheria still occurs in India.",
+            "Ask about **carbimazole, clozapine or methotrexate**: sore throat may be agranulocytosis.",
+            "Adult smoker with persistent **one-sided** sore throat: cancer until proved otherwise.",
+          ],
+        },
+        {
+          title: "Examination",
+          points: [
+            "**Assess the airway first**; with stridor or drooling, do not use a spatula.",
+            "Look for exudate, tonsil size and **tender anterior cervical nodes**.",
+            "Posterior nodes with splenomegaly suggest **EBV**.",
+            "Trismus, palatal bulge and **uvula pushed to the opposite side** mean quinsy.",
+            "Grey membrane that **bleeds on removal** with bull neck means diphtheria.",
+            "Neck stiffness with a posterior pharyngeal bulge in a young child: retropharyngeal abscess.",
+          ],
+        },
+        {
+          title: "Investigations",
+          points: [
+            "**No test for McIsaac 0-1** or a clear viral picture.",
+            "Rapid antigen test is specific; a **negative RADT in a child needs a culture**.",
+            "**Throat culture** on blood agar is the gold standard.",
+            "**ASO titre has no role** in acute pharyngitis; it rises 2-3 weeks later.",
+            "Urgent CBC for neutrophils in anyone on a drug that can cause agranulocytosis.",
+            "Never wait for diphtheria swab results before giving **antitoxin**.",
+          ],
+        },
+        {
+          title: "Treatment - first line",
+          points: [
+            "**Regular analgesia by the clock**: paracetamol or ibuprofen.",
+            "Warm saline gargles, fluids and soft cool foods.",
+            "**Penicillin V** is first line for GABHS, for **10 days**.",
+            "**Amoxicillin 50 mg/kg once daily** (max 1 g) for 10 days is the practical alternative.",
+            "Finish all 10 days even when better by day 3.",
+            "**Benzathine penicillin** single IM dose if adherence is doubtful.",
+            "Never prescribe cephalosporins, quinolones or co-amoxiclav for simple pharyngitis.",
+          ],
+        },
+        {
+          title: "Treatment - next steps",
+          points: [
+            "Non-anaphylactic penicillin allergy: **cephalexin** for 10 days.",
+            "Anaphylactic allergy: **azithromycin for 5 days** or clindamycin for 10 days.",
+            "**Never give amoxicillin** when infectious mononucleosis is possible; 80-90% get a rash.",
+            "Quinsy: **aspiration or drainage** plus IV antibiotics the same day.",
+            "Diphtheria: **antitoxin** plus erythromycin or penicillin for 14 days; isolate and notify.",
+            "After rheumatic fever: **benzathine penicillin 1.2 MU every 3 weeks** in India.",
+          ],
+        },
+        {
+          title: "Complications and red flags",
+          points: [
+            "**Epiglottitis**: drooling, stridor, tripod posture; no spatula, secure the airway.",
+            "**Lemierre syndrome**: sore throat, rigors, neck tenderness, pleuritic pain.",
+            "Sore throat with fever on carbimazole or clozapine: treat as **febrile neutropenia** if neutrophils low.",
+            "Watch for **rheumatic fever at 2-4 weeks** and glomerulonephritis at 1-2 weeks.",
+            "No contact sport for **4-6 weeks** after infectious mononucleosis (splenic rupture).",
+          ],
+        },
+        {
+          title: "Referral and follow-up",
+          points: [
+            "Review at **48-72 hours** if not improving; penicillin failure means wrong diagnosis or non-adherence.",
+            "**Document each episode**; Paradise criteria need documented episodes.",
+            "Tonsillectomy for Paradise criteria, **two quinsy episodes** or obstructive sleep apnoea.",
+            "Refer adults with persistent **unilateral tonsil enlargement** for biopsy.",
+            "Return to school **24 hours after** starting an effective antibiotic.",
+          ],
+        },
+      ],
+      tables: [
+        {
+          heading: "McIsaac score",
+          columns: ["Component", "Finding", "Points"],
+          rows: [
+            ["Tonsils", "Exudate or swelling", "1"],
+            ["Anterior cervical nodes", "Tender or enlarged", "1"],
+            ["Fever", "Over 38 C", "1"],
+            ["Cough", "Absent", "1"],
+            ["Age", "3-14 years", "1"],
+            ["Age", "15-44 years", "0"],
+            ["Age", "45 years or older", "-1"],
+          ],
+        },
+        {
+          heading: "Drugs in sore throat",
+          columns: ["Drug", "Dose and route", "Duration", "Key side effects / cautions"],
+          rows: [
+            ["Paracetamol", "Adult 0.5-1 g 6-hourly; child 15 mg/kg", "2-3 days by the clock", "Liver damage in overdose"],
+            ["Ibuprofen", "Adult 400 mg 8-hourly; child 10 mg/kg", "2-3 days, after food", "Avoid if dehydrated, asthma, CKD"],
+            ["Penicillin V", "Adult 500 mg BD; under 27 kg 250 mg BD-TDS", "10 days", "1 hour before food; rash"],
+            ["Amoxicillin", "50 mg/kg once daily, max 1 g", "10 days", "Florid rash in EBV"],
+            ["Benzathine penicillin G", "1.2 MU IM (600,000 U under 27 kg)", "Single dose; RF prophylaxis 3-weekly", "Anaphylaxis rare; adrenaline ready"],
+            ["Cephalexin", "20 mg/kg BD, max 500 mg a dose", "10 days", "Non-anaphylactic allergy only"],
+            ["Azithromycin", "12 mg/kg once daily, max 500 mg", "5 days", "QT prolongation; rising resistance"],
+            ["Diphtheria antitoxin", "20,000-100,000 units IV by severity", "Single dose", "Sensitivity test first"],
+          ],
+        },
+        {
+          heading: "Dangerous sore throats",
+          columns: ["Condition", "Clue", "Immediate action"],
+          rows: [
+            ["Quinsy", "Trismus, hot potato voice, uvular deviation", "Drainage plus IV antibiotics today"],
+            ["Epiglottitis", "Drooling, stridor, tripod posture", "No spatula; secure airway"],
+            ["Retropharyngeal abscess", "Young child, neck stiffness, torticollis", "Admit, CT, drainage"],
+            ["Diphtheria", "Bleeding grey membrane, bull neck", "Antitoxin, isolate, notify"],
+            ["Infectious mononucleosis", "Membrane, posterior nodes, spleen", "No amoxicillin; CBC, monospot"],
+            ["Agranulocytosis", "Fever on carbimazole or clozapine", "Stop drug; urgent CBC"],
+          ],
+        },
+      ],
+      remember: [
+        "Cough, coryza and hoarseness argue for a **virus**.",
+        "S. pyogenes has **never been resistant to penicillin**.",
+        "Treat GABHS within 9 days and you still prevent rheumatic fever.",
+        "Antibiotics prevent rheumatic fever, **not glomerulonephritis**.",
+        "**No amoxicillin** if glandular fever is possible.",
+        "Trismus with sore throat is **quinsy** until proved otherwise.",
+        "Tonsillectomy by **Paradise 7-5-3**, with documented episodes.",
+      ],
+    },
     checked: "2026-10",
     updated: [
       "IDSA 2025 guideline update (Part 1): a clinical score (Centor or McIsaac) is now recommended in children and adults to decide who needs a GAS test; treatment advice of IDSA 2012 unchanged pending Part 2",
@@ -203,6 +690,165 @@ const revision: RevisionSet = {
   },
 
   "eye-ent-rhinitis-sinusitis": {
+    notes: {
+      sections: [
+        {
+          title: "Definition and key facts",
+          points: [
+            "**Allergic rhinitis** is IgE-mediated nasal inflammation: sneeze, itch, watery discharge, blockage.",
+            "**Itch** separates allergic rhinitis from a cold.",
+            "**Rhinosinusitis** is blockage or discharge plus facial pain or reduced smell.",
+            "Acute rhinosinusitis lasts under 12 weeks; **chronic** lasts 12 weeks or more.",
+            "Over 98% of acute rhinosinusitis is viral; only **0.5-2% of colds** become bacterial.",
+            "About 80% of asthmatics have rhinitis: **one airway, one disease**.",
+          ],
+        },
+        {
+          title: "Classification that matters",
+          points: [
+            "**ARIA intermittent**: under 4 days a week or under 4 consecutive weeks.",
+            "**ARIA persistent**: 4 or more days a week and over 4 weeks.",
+            "**Moderate-severe** if any of sleep, school, work, sport or daily activity is impaired.",
+            "Acute rhinosinusitis is viral, post-viral or **acute bacterial (ABRS)**.",
+            "Chronic rhinosinusitis is with or without polyps, confirmed by **endoscopy or CT**.",
+          ],
+        },
+        {
+          title: "How it happens (pathophysiology)",
+          points: [
+            "1. Inhaled allergen drives **Th2 cells** (IL-4, IL-5, IL-13), and B cells make IgE.",
+            "2. IgE binds to mast cells in the nasal mucosa.",
+            "3. Early phase: **histamine** causes itch, sneezing and watery discharge within minutes.",
+            "4. Late phase (4-8 hours): **eosinophils** cause persistent blockage and loss of smell.",
+            "5. Steroids switch off the late phase, so they best relieve blockage.",
+            "6. In sinusitis, mucosal swelling blocks the **ostiomeatal complex** and secretions stagnate.",
+          ],
+        },
+        {
+          title: "History in the OPD",
+          points: [
+            "Ask which symptom dominates: **sneezers-runners** versus **blockers**.",
+            "Ask about sleep, school or work days lost and sport to grade severity.",
+            "Screen for **asthma**: wheeze, night cough, exercise breathlessness.",
+            "Ask about decongestant drops used for more than 5-7 days.",
+            "Sinusitis: over 10 days, **double sickening**, or fever over 39 C suggests bacteria.",
+            "Any **unilateral** blockage, bloody discharge or facial numbness is a red flag.",
+          ],
+        },
+        {
+          title: "Examination",
+          points: [
+            "Look for allergic shiners, transverse nasal crease and adenoid facies.",
+            "Allergic inferior turbinates are **pale, boggy and bluish**.",
+            "A polyp is **pale, grape-like, insensitive** and does not bleed; a turbinate is sensitive.",
+            "A unilateral, red or bleeding mass is not an allergic polyp.",
+            "In every sinusitis check **eye movements, acuity and proptosis**.",
+            "Look at the palate for a **black eschar** in diabetics.",
+          ],
+        },
+        {
+          title: "Investigations",
+          points: [
+            "**Allergic rhinitis is a clinical diagnosis**; start treatment without tests.",
+            "Skin prick test or specific IgE only before **immunotherapy** or if diagnosis unclear.",
+            "Total IgE and eosinophil count do not diagnose allergic rhinitis.",
+            "**Acute sinusitis needs no X-ray**; Waters view does not change management.",
+            "**Contrast CT** for orbital or intracranial complications or unilateral disease.",
+            "Suspected mucormycosis: blood sugar, ketones and urgent **KOH and biopsy**.",
+          ],
+        },
+        {
+          title: "Treatment - first line",
+          points: [
+            "Allergen avoidance: mattress covers, **wash bedding weekly at 60 C**, avoid smoke.",
+            "Saline spray or irrigation with boiled-and-cooled or bottled water.",
+            "Mild intermittent: oral or intranasal **antihistamine as needed**.",
+            "Moderate-severe or persistent: **intranasal corticosteroid**, preferred over oral antihistamines (ARIA 2025).",
+            "Steroid sprays take **1-2 weeks**; aim away from the septum.",
+            "Viral sinusitis: paracetamol, fluids, steam and saline; lasts **7-10 days**.",
+          ],
+        },
+        {
+          title: "Treatment - next steps",
+          points: [
+            "Severe persistent: add **azelastine-fluticasone** combination spray.",
+            "Montelukast only as an add-on when **asthma coexists**.",
+            "**Allergen immunotherapy for 3 years** is the only disease-modifying treatment.",
+            "ABRS: **amoxicillin or co-amoxiclav for 5-7 days** in adults.",
+            "Penicillin allergy: **doxycycline 100 mg twice daily**; azithromycin is a poor choice.",
+            "CRS with polyps: INCS, short oral steroid courses, FESS, then biologics.",
+          ],
+        },
+        {
+          title: "Complications and red flags",
+          points: [
+            "**Orbital cellulitis**: proptosis, painful restricted eye movements, diplopia; admit for IV antibiotics and CT.",
+            "Preseptal cellulitis has lid swelling with normal vision and free eye movements.",
+            "**Mucormycosis**: diabetic or steroid-treated with black eschar; debridement and amphotericin B.",
+            "Pott puffy tumour is boggy forehead swelling from frontal osteomyelitis.",
+            "Decongestant drops beyond **5 days** cause rhinitis medicamentosa.",
+            "Never give **depot steroid injections** for hay fever.",
+          ],
+        },
+        {
+          title: "Referral and follow-up",
+          points: [
+            "Review allergic rhinitis at **2-4 weeks**; check spray technique before adding drugs.",
+            "Refer for immunotherapy if moderate-severe despite steroid plus antihistamine.",
+            "Refer within 2 weeks for **unilateral** blockage, bloody discharge, mass or loose teeth.",
+            "Unilateral foul discharge in a child is a **foreign body** until removed.",
+            "Reassess ABRS at 3-7 days and reconsider dental source or polyps.",
+          ],
+        },
+      ],
+      tables: [
+        {
+          heading: "ARIA classification and first-line treatment",
+          columns: ["Category", "Definition", "First-line treatment"],
+          rows: [
+            ["Mild intermittent", "Under 4 days/week or 4 weeks; no impairment", "Antihistamine as needed, saline"],
+            ["Moderate-severe intermittent", "Under 4 days/week or 4 weeks; impaired", "Intranasal steroid"],
+            ["Mild persistent", "4+ days/week and over 4 weeks; no impairment", "Intranasal steroid or regular antihistamine"],
+            ["Moderate-severe persistent", "4+ days/week and over 4 weeks; impaired", "Steroid plus azelastine spray; consider immunotherapy"],
+          ],
+        },
+        {
+          heading: "Drugs in rhinitis and sinusitis",
+          columns: ["Drug", "Dose and route", "Duration", "Key side effects / cautions"],
+          rows: [
+            ["Mometasone nasal spray 50 mcg", "2 sprays each nostril once daily (3-11 y: 1)", "Continuous in persistent AR", "Dryness, epistaxis, rare septal perforation"],
+            ["Fluticasone propionate spray 50 mcg", "2 sprays each nostril daily, then 1", "Continuous; full effect 1-2 weeks", "Epistaxis, crusting"],
+            ["Azelastine-fluticasone spray", "1 spray each nostril twice daily (12 y+)", "Persistent severe AR", "Bitter taste, mild sedation"],
+            ["Levocetirizine", "5 mg oral once daily, at night", "As needed or seasonal", "Mild sedation; halve in renal impairment"],
+            ["Fexofenadine", "120-180 mg oral once daily", "As needed or seasonal", "Not with fruit juice or antacids"],
+            ["Montelukast", "10 mg at night (6-14 y: 5 mg)", "Add-on with asthma", "Boxed warning: nightmares, mood change"],
+            ["Oxymetazoline 0.05% drops", "2-3 drops each nostril twice daily", "Maximum 5 days", "Rhinitis medicamentosa; not under 2 years"],
+            ["Amoxicillin / co-amoxiclav", "500 mg TDS / 625 mg TDS oral", "5-7 days adult; child 10-14 days", "Diarrhoea, rash; ABRS criteria only"],
+            ["Doxycycline", "100 mg oral twice daily", "5-7 days", "Not in pregnancy or under 8 years"],
+          ],
+        },
+        {
+          heading: "Preseptal versus orbital cellulitis",
+          columns: ["Feature", "Preseptal", "Orbital"],
+          rows: [
+            ["Lid swelling", "Present", "Present"],
+            ["Visual acuity", "Normal", "May be reduced, RAPD"],
+            ["Eye movements", "Full, painless", "Painful, restricted, diplopia"],
+            ["Proptosis, chemosis", "Absent", "Present"],
+            ["Management", "Oral co-amoxiclav, review 24 h", "Admit, IV ceftriaxone plus metronidazole, CT"],
+          ],
+        },
+      ],
+      remember: [
+        "Itch means allergy; blockage means the patient needs a steroid spray.",
+        "Check spray technique before changing the drug.",
+        "Spray with the **opposite hand**, aim at the outer eye, away from the septum.",
+        "Colour of discharge does not mean bacteria; the **time course** does.",
+        "Decongestant drops beyond 5 days cause rebound blockage.",
+        "Any **unilateral nasal sign**: tumour in adults, foreign body in children.",
+        "Lid swelling with painful eye movement means orbital cellulitis - admit.",
+      ],
+    },
     checked: "2026-10",
     updated: [
       "ARIA 2025 (ARIA-EAACI 2024-2025 revision): INCS strongly recommended over oral H1-antihistamines; conditional recommendation for INCS plus intranasal antihistamine over INCS alone when monotherapy is insufficient",
@@ -274,6 +920,166 @@ const revision: RevisionSet = {
   },
 
   "eye-ent-refractive-error": {
+    notes: {
+      sections: [
+        {
+          title: "Definition and key facts",
+          points: [
+            "**Refractive error** is failure to focus parallel light on the retina with accommodation relaxed.",
+            "It is the **leading cause of visual impairment** worldwide and fully correctable.",
+            "**Presenting acuity** is acuity with whatever glasses the patient walks in with.",
+            "India defines **blindness as presenting acuity worse than 3/60** in the better eye since 2017.",
+            "**Near vision impairment** is worse than N6 at 40 cm with existing correction.",
+            "**Amblyopia** is reduced best-corrected acuity from abnormal visual development in childhood.",
+          ],
+        },
+        {
+          title: "Classification that matters",
+          points: [
+            "**Myopia** focuses in front of the retina; corrected by a **concave (minus) lens**.",
+            "High myopia is **-6.00 D or more** or axial length over 26 mm.",
+            "**Hypermetropia** focuses behind the retina; corrected by a **convex (plus) lens**.",
+            "**Astigmatism** has no single focus; regular needs a cylinder, irregular a rigid lens.",
+            "**Presbyopia** is age-related loss of accommodation from about **40 years**.",
+            "**Anisometropia** is a difference of 2 D or more between the eyes.",
+          ],
+        },
+        {
+          title: "How it happens (pathophysiology)",
+          points: [
+            "1. The cornea gives about 43 D and the lens about 17-20 D of power.",
+            "2. Each **1 mm change in axial length** alters refraction by about 3 D.",
+            "3. Childhood myopia is mostly **axial**: the eye grows too long.",
+            "4. Bright outdoor light releases **retinal dopamine**, which slows eye elongation.",
+            "5. Hypermetropes over-accommodate, which drives convergence and **accommodative esotropia**.",
+            "6. In presbyopia the lens hardens, so the near point recedes beyond reading distance.",
+            "7. In amblyopia the brain **suppresses the blurred eye** during the critical period.",
+          ],
+        },
+        {
+          title: "History in the OPD",
+          points: [
+            "Ask whether **distance, near or both** are blurred.",
+            "**Sudden loss of vision** is never a refraction problem.",
+            "Frontal headache after reading, absent on waking, suggests uncorrected error.",
+            "Children: sitting close to the board, squinting, head tilt, falling school marks.",
+            "Ask about **daily outdoor time** and screen time in children.",
+            "Ask about flashes, floaters or a curtain, especially in **high myopes**.",
+            "Ask about diabetes and **topiramate**; both can shift refraction.",
+          ],
+        },
+        {
+          title: "Examination",
+          points: [
+            "Snellen chart at **6 metres**, one eye at a time, first with existing glasses.",
+            "**Pinhole**: improvement means refractive error; no improvement means refer.",
+            "Near acuity with an **N-notation chart at 40 cm**.",
+            "Children 3-5 years: **Tumbling E, Lea symbols** or matching tests.",
+            "**Bruckner red reflex test**: dull, white or unequal reflex needs referral.",
+            "Hirschberg and **cover-uncover test** for squint.",
+          ],
+        },
+        {
+          title: "Investigations",
+          points: [
+            "**Refraction** by optometrist or ophthalmologist; autorefraction alone is not a prescription.",
+            "**Cycloplegic refraction is mandatory in children**, since accommodation hides hypermetropia.",
+            "Dilated fundus **every year in high myopia**.",
+            "IOP and disc check from 40 years and in high myopia.",
+            "Keratometry or topography for increasing astigmatism to detect **keratoconus**.",
+            "Check sugar if refraction fluctuates; defer refraction until glucose is stable.",
+          ],
+        },
+        {
+          title: "Treatment - first line",
+          points: [
+            "**Spectacles are the mainstay**: cheap, safe and reversible.",
+            "Ready-made readers are fine for presbyopia with equal eyes and little astigmatism.",
+            "**Glasses do not weaken the eyes**, and under-correction does not slow myopia.",
+            "Myopia prevention: **2 hours outdoors daily**, breaks from near work, less screen time.",
+            "**20-20-20 rule** for screen users relieves strain but does not change refraction.",
+            "Amblyopia: full-time glasses first, then **patching or atropine penalisation**.",
+          ],
+        },
+        {
+          title: "Treatment - next steps",
+          points: [
+            "Progressive childhood myopia: **atropine 0.01-0.05%** at bedtime for at least 2 years.",
+            "**0.05% is the most effective** low-dose atropine; taper rather than stop.",
+            "Optical myopia control: defocus spectacles, dual-focus lenses or **orthokeratology**.",
+            "Patching: **2 hours daily for moderate**, 6 hours for severe amblyopia.",
+            "Refractive surgery needs age over 18 and **stable refraction for a year**.",
+            "Low vision aids when best-corrected acuity stays poor.",
+          ],
+        },
+        {
+          title: "Complications and red flags",
+          points: [
+            "High myopia brings **retinal detachment**, myopic maculopathy and glaucoma.",
+            "**Leukocoria** in a child means retinoblastoma or cataract until proved otherwise.",
+            "Topiramate with sudden bilateral blur and pain: **myopic shift and angle closure**.",
+            "Red painful eye in a contact lens wearer: microbial keratitis; same-day referral.",
+            "Cyclopentolate can cause **hallucinations and ataxia** in children.",
+          ],
+        },
+        {
+          title: "Prevention and programmes",
+          points: [
+            "**NPCB began in 1976**; renamed NPCBVI in 2017.",
+            "NPCBVI gives **free school spectacles** and free presbyopic glasses for the elderly.",
+            "Teachers screen schoolchildren with a **6/9 cut-off**.",
+            "**RBSK** screens children 0-18 years for the 4Ds.",
+            "**Vitamin A**: 100,000 IU at 9 months, then 200,000 IU 6-monthly to 5 years (9 doses).",
+            "Refer children with acuity worse than 6/9 or a **two-line difference** between eyes.",
+          ],
+        },
+      ],
+      tables: [
+        {
+          heading: "Types of refractive error",
+          columns: ["Type", "Where light focuses", "Correction", "Key symptom"],
+          rows: [
+            ["Myopia", "In front of retina", "Concave (minus) lens", "Distance blur"],
+            ["Hypermetropia", "Behind retina", "Convex (plus) lens", "Near strain, esotropia in children"],
+            ["Astigmatism", "No single point", "Cylinder; rigid lens if irregular", "Blur at all distances"],
+            ["Presbyopia", "Near point recedes", "Convex near addition", "Near blur after 40"],
+          ],
+        },
+        {
+          heading: "WHO visual impairment categories (better eye)",
+          columns: ["Category", "Presenting acuity", "Action"],
+          rows: [
+            ["Mild", "Worse than 6/12 to 6/18", "Pinhole; refract"],
+            ["Moderate", "Worse than 6/18 to 6/60", "Refract; find cause"],
+            ["Severe", "Worse than 6/60 to 3/60", "Refer; low vision services"],
+            ["Blindness", "Worse than 3/60 or field under 10 degrees", "Refer; disability certificate"],
+            ["Near impairment", "Worse than N6 at 40 cm", "Near addition"],
+          ],
+        },
+        {
+          heading: "Drugs in refraction and myopia control",
+          columns: ["Drug", "Dose and route", "Duration", "Key side effects / cautions"],
+          rows: [
+            ["Cyclopentolate 1% (0.5% infants)", "1 drop, repeat after 5-10 min", "Refract at 30-45 min; lasts 24 h", "Hallucinations, ataxia in children"],
+            ["Atropine 1% ointment", "Twice daily for 3 days before refraction", "Effect lasts 7-14 days", "Fever, flushing, delirium"],
+            ["Atropine 0.01-0.05% drops", "1 drop each eye at bedtime", "At least 2 years", "Photophobia, near blur; taper"],
+            ["Atropine 1% (penalisation)", "1 drop in better eye daily or weekends", "Under ophthalmologist", "Photophobia, systemic effects"],
+            ["Tropicamide 1% + phenylephrine 2.5%", "1 drop, repeat after 5 min", "Dilation lasts 4-6 h", "No driving; avoid if shallow chamber"],
+            ["Carboxymethylcellulose 0.5%", "1 drop 3-4 times daily", "As needed", "Transient blur"],
+            ["Vitamin A", "100,000 IU at 9 months, then 200,000 IU", "6-monthly to 5 years", "Raised ICP in overdose"],
+          ],
+        },
+      ],
+      remember: [
+        "The **pinhole** is the cheapest test: improves means refractive, no improvement means refer.",
+        "Never refract a child **without cycloplegia**.",
+        "A child never complains of one bad eye - amblyopia is found by screening.",
+        "Treat amblyopia **before 7-8 years**.",
+        "Two hours outdoors delays myopia; low-dose atropine slows it.",
+        "**Second sight** in the elderly is nuclear cataract, not recovery.",
+        "India: blindness is presenting acuity **worse than 3/60** (since 2017).",
+      ],
+    },
     checked: "2026-10",
     updated: [
       "IMI 2025 Digest: delaying myopia onset in pre-myopic children made a priority (each year of delay worth about 2-3 years of progression control); outdoor time remains the strongest protective factor",
@@ -343,6 +1149,166 @@ const revision: RevisionSet = {
   },
 
   "eye-ent-cataract-dr-glaucoma": {
+    notes: {
+      sections: [
+        {
+          title: "Definition and key facts",
+          points: [
+            "The family physician's job in these three diseases is to **detect and refer**, not treat.",
+            "**Cataract** is any opacity of the lens; it causes about **66% of blindness** in Indians over 50.",
+            "**Diabetic retinopathy** is microvascular retinal damage from chronic hyperglycaemia.",
+            "**Glaucoma** is a progressive optic neuropathy with cupping and matching field loss.",
+            "Raised IOP is the main modifiable risk, but **not required** for diagnosis.",
+            "Over **90% of glaucoma** in India is undiagnosed.",
+          ],
+        },
+        {
+          title: "Classification that matters",
+          points: [
+            "Cataract by morphology: **nuclear, cortical, posterior subcapsular**.",
+            "DR grades: no DR, mild, moderate, severe NPDR, and **proliferative DR**.",
+            "**Severe NPDR 4-2-1 rule**: haemorrhages in 4 quadrants, venous beading in 2, IRMA in 1.",
+            "Macular oedema is graded separately; **centre-involving** needs urgent treatment.",
+            "Glaucoma is **open-angle** or **angle-closure**, decided by gonioscopy.",
+            "**Ocular hypertension**: IOP over 21 mmHg with normal disc, field and open angle.",
+          ],
+        },
+        {
+          title: "How it happens (pathophysiology)",
+          points: [
+            "1. Cataract: oxidative damage makes **crystallin proteins** clump and scatter light.",
+            "2. Glaucoma: pressure bows the **lamina cribrosa** and blocks axoplasmic flow.",
+            "3. Ganglion cells die, so the cup enlarges and the rim thins.",
+            "4. Field loss starts with **arcuate scotomas and a nasal step**; central vision survives till late.",
+            "5. DR: **pericyte loss** weakens capillaries, causing microaneurysms, the first sign.",
+            "6. Leaking vessels cause **macular oedema** and hard exudates.",
+            "7. Ischaemic retina releases **VEGF**, which drives new vessels that bleed and pull.",
+          ],
+        },
+        {
+          title: "History in the OPD",
+          points: [
+            "Cataract: gradual painless blur, **glare** around headlights, faded colours.",
+            "**Second sight** (reading without glasses) suggests nuclear cataract.",
+            "Sudden or painful loss of vision is **never cataract**.",
+            "Ask **how vision limits daily life**: reading, faces, cooking, driving, falls.",
+            "Ask diabetics the date and result of the **last retinal screen**.",
+            "Glaucoma risks: over 40, **first-degree family history**, myopia, diabetes, steroids.",
+            "Ask about **tamsulosin** before cataract surgery (floppy iris).",
+          ],
+        },
+        {
+          title: "Examination",
+          points: [
+            "Acuity with **pinhole**: no improvement means lens, retina or nerve disease.",
+            "Red reflex: lens opacities show as **black shadows**; white reflex in a child is retinoblastoma.",
+            "Do the **oblique torch shadow test** before dilating any pupil.",
+            "Dilate with **tropicamide 1%**; it acts in 20-30 minutes.",
+            "Disc: **cup-disc ratio 0.6 or more** or asymmetry over 0.2 is suspicious.",
+            "Look for disc haemorrhage and rim notching against the **ISNT rule**.",
+          ],
+        },
+        {
+          title: "Investigations",
+          points: [
+            "DR screening needs **dilated fundus exam or retinal photography**.",
+            "**Undilated direct ophthalmoscopy** is not an adequate DR screen.",
+            "Diabetics also need HbA1c, lipids, eGFR, urine ACR and haemoglobin.",
+            "Glaucoma workup: tonometry, pachymetry, **gonioscopy**, OCT and automated perimetry.",
+            "Before cataract surgery: biometry, sugar and BP; routine ECG and X-ray are not needed.",
+          ],
+        },
+        {
+          title: "Treatment - first line",
+          points: [
+            "**Cataract has no medical treatment**; surgery when vision limits daily life.",
+            "Surgery is phaco or **MSICS with IOL**; reading glasses are still needed.",
+            "DR at every stage: control HbA1c, **BP under 130/80**, statin, stop smoking.",
+            "Glaucoma: lower IOP by **20-30%** to a target pressure.",
+            "**Latanoprost 0.005%** once at night is the first-line drop.",
+            "**SLT laser** is now first-line on a par with prostaglandin drops.",
+          ],
+        },
+        {
+          title: "Treatment - next steps",
+          points: [
+            "Add or switch drops: **timolol**, brimonidine, dorzolamide or fixed combinations.",
+            "Angle-closure disease: **laser peripheral iridotomy** in both eyes.",
+            "Centre-involving DME: **intravitreal anti-VEGF** injections.",
+            "PDR: **panretinal photocoagulation** or anti-VEGF; vitrectomy for non-clearing bleeds.",
+            "**Fenofibrate** may slow DR progression in type 2 diabetes.",
+            "Review retina before and after rapid HbA1c lowering with insulin or GLP-1 agonists.",
+          ],
+        },
+        {
+          title: "Complications and red flags",
+          points: [
+            "Sudden painless loss, floaters or a curtain: detachment or vitreous haemorrhage; same day.",
+            "Painful red eye with a **hypermature cataract** means lens-induced glaucoma.",
+            "Pain and falling vision within 6 weeks of surgery is **endophthalmitis**.",
+            "**Timolol** can cause fatal bronchospasm; ask about asthma and check pulse.",
+            "Posterior capsular opacification in **10-30%**, treated by Nd:YAG capsulotomy.",
+          ],
+        },
+        {
+          title: "Referral and follow-up",
+          points: [
+            "Screen **type 2 at diagnosis**, type 1 at 5 years, then yearly.",
+            "Pregnancy with pre-existing diabetes: screen each trimester; **gestational diabetes needs no screen**.",
+            "Refer glaucoma suspects within weeks; check IOP **4-6 weeks** after a new drop.",
+            "Screen **first-degree relatives** of glaucoma patients from 40 years.",
+            "**NPCBVI** gives free cataract surgery and DR and glaucoma screening.",
+          ],
+        },
+      ],
+      tables: [
+        {
+          heading: "Diabetic retinopathy grades and action",
+          columns: ["Grade", "Fundus findings", "Action"],
+          rows: [
+            ["No DR", "Normal", "Rescreen in 12 months"],
+            ["Mild NPDR", "Microaneurysms only", "Rescreen 6-12 months; tighten control"],
+            ["Moderate NPDR", "More than mild, less than severe", "Ophthalmology within 3-6 months"],
+            ["Severe NPDR", "4-2-1 rule, no new vessels", "Ophthalmology within weeks"],
+            ["PDR", "New vessels, vitreous haemorrhage", "Urgent: PRP or anti-VEGF"],
+            ["Centre-involving DME", "Thickening or exudates at fovea", "Urgent anti-VEGF"],
+          ],
+        },
+        {
+          heading: "Drugs in glaucoma and DR",
+          columns: ["Drug", "Dose and route", "Duration", "Key side effects / cautions"],
+          rows: [
+            ["Latanoprost 0.005%", "1 drop once daily at night", "Lifelong", "Red eye, iris darkening, lash growth"],
+            ["Timolol 0.5%", "1 drop twice daily", "Lifelong", "Bronchospasm, bradycardia; not in asthma, COPD, block"],
+            ["Brimonidine 0.2%", "1 drop 2-3 times daily", "Lifelong", "Allergy, dry mouth; not under 2 years"],
+            ["Dorzolamide 2%", "1 drop three times daily", "Lifelong", "Stinging, bitter taste; sulpha allergy"],
+            ["Acetazolamide", "250 mg oral 6-8 hourly", "Short term only", "Hypokalaemia, acidosis, stones"],
+            ["Anti-VEGF (ranibizumab, aflibercept, bevacizumab)", "Intravitreal, monthly loading", "Then treat-and-extend", "Endophthalmitis, IOP rise"],
+            ["Prednisolone acetate 1% (post-cataract)", "4 times daily", "Taper over 4-6 weeks", "IOP rise; never stop abruptly"],
+            ["Fenofibrate", "145-160 mg oral once daily", "Long term", "Adjust for renal function"],
+          ],
+        },
+        {
+          heading: "Cataract types and symptoms",
+          columns: ["Type", "Typical symptom", "Clue"],
+          rows: [
+            ["Nuclear", "Poor distance vision, second sight", "Index myopia, frequent glasses change"],
+            ["Posterior subcapsular", "Glare and near blur in bright light", "Steroids, diabetes"],
+            ["Cortical", "Glare from oncoming headlights", "Spoke-like opacities"],
+            ["Intumescent / hypermature", "Painful red eye", "Lens-induced glaucoma; urgent surgery"],
+          ],
+        },
+      ],
+      remember: [
+        "Refer cataract when it **limits the patient's life**, not at a fixed Snellen line.",
+        "Half of glaucoma patients have a **normal single IOP** - disc and field diagnose it.",
+        "Glaucoma drops prevent further loss but **never restore vision**.",
+        "Screen type 2 at diagnosis, type 1 at 5 years; gestational diabetes needs no screen.",
+        "Macular oedema can occur at **any grade** of retinopathy.",
+        "Check chamber depth before dilating any pupil.",
+        "Tell the surgeon about tamsulosin - floppy iris.",
+      ],
+    },
     checked: "2026-10",
     updated: [
       "EGS 2025 (6th edition) and AAO POAG PPP 2026: SLT is a first-line option on a par with prostaglandin drops in POAG and ocular hypertension; trabeculectomy remains the benchmark for low targets",
@@ -413,6 +1379,169 @@ const revision: RevisionSet = {
   },
 
   "eye-ent-hearing-loss": {
+    notes: {
+      sections: [
+        {
+          title: "Definition and key facts",
+          points: [
+            "**Conductive loss** arises between the pinna and the stapes footplate; maximum about **60 dB**.",
+            "**Sensorineural loss** arises in the cochlea or cochlear nerve and is usually permanent.",
+            "**Mixed loss** has both, as in long-standing CSOM or presbycusis with wax.",
+            "**Sudden SNHL**: loss of 30 dB or more over 3 frequencies within **72 hours**.",
+            "**Asymmetric SNHL** is a vestibular schwannoma until MRI proves otherwise.",
+            "WHO calls loss over **35 dB in the better ear** disabling.",
+          ],
+        },
+        {
+          title: "Causes and risk factors",
+          points: [
+            "Conductive: **wax**, OME, CSOM, otosclerosis and perforation.",
+            "Sensorineural: **presbycusis**, noise, ototoxic drugs, Meniere disease, schwannoma.",
+            "**Noise over 85 dB(A)** for 8 hours damages the cochlea.",
+            "Ototoxic drugs: **aminoglycosides**, cisplatin, loop diuretics, high-dose aspirin, quinine.",
+            "Congenital: **GJB2 (connexin 26)** is the commonest genetic cause; **CMV** the commonest non-genetic.",
+            "OME is the commonest acquired conductive cause in children.",
+          ],
+        },
+        {
+          title: "How it happens (pathophysiology)",
+          points: [
+            "1. The middle ear boosts sound pressure about 22 times, so its damage causes conductive loss.",
+            "2. The cochlear base detects **high frequencies**; noise, ageing and drugs hit it first.",
+            "3. **Outer hair cells** amplify soft sounds and produce otoacoustic emissions.",
+            "4. **Inner hair cells** transduce sound and carry about 95% of nerve fibres.",
+            "5. Noise damage produces a characteristic **4 kHz notch**.",
+            "6. Otosclerosis fixes the stapes footplate, giving a **Carhart notch at 2 kHz**.",
+            "7. Meniere disease is **endolymphatic hydrops** with vertigo, fluctuating loss and fullness.",
+          ],
+        },
+        {
+          title: "History in the OPD",
+          points: [
+            "Sudden onset over hours to 3 days means **refer today**.",
+            "Bilateral symmetrical loss fits presbycusis or noise; **unilateral needs explanation**.",
+            "Ask about tinnitus, vertigo, discharge and aural fullness.",
+            "Take a **noise history**: occupation, protection, earphones and firecrackers.",
+            "Ask about past **aminoglycoside** use, including TB injections.",
+            "In infants ask about NICU stay, jaundice, TORCH infection and speech milestones.",
+            "A **parent who thinks the child does not hear** is usually right.",
+          ],
+        },
+        {
+          title: "Examination",
+          points: [
+            "Otoscopy after wax removal: perforation, effusion, cholesteatoma or normal drum.",
+            "Use a **512 Hz fork** struck on the elbow or knee.",
+            "**Rinne negative** (BC better than AC) means conductive loss of at least 15-20 dB.",
+            "**Weber** goes to the conductive ear and away from the sensorineural ear.",
+            "A **false negative Rinne** in a dead ear is exposed by Weber going to the good ear.",
+            "Check the **corneal reflex**; early loss suggests acoustic neuroma.",
+            "Examine the postnasal space in any **unilateral effusion in an adult**.",
+          ],
+        },
+        {
+          title: "Investigations",
+          points: [
+            "**Pure tone audiometry**: an air-bone gap over 10 dB means conductive loss.",
+            "Tympanometry: **type B** flat in effusion; type As in otosclerosis.",
+            "Newborns: **OAE** at the cot side, plus **automated ABR** for high-risk babies.",
+            "OAE misses auditory neuropathy, so high-risk babies need ABR.",
+            "**Gadolinium MRI** of the internal auditory meatus for asymmetric SNHL or SSNHL.",
+            "Child with SNHL: **CMV PCR** within 3 weeks, GJB2 testing and ECG for long QT.",
+          ],
+        },
+        {
+          title: "Treatment - first line",
+          points: [
+            "Treat the cause: remove wax, manage OME and CSOM, offer stapedotomy or aid in otosclerosis.",
+            "**SSNHL**: prednisolone **1 mg/kg/day (max 60 mg)** for 7-14 days, then taper.",
+            "Start steroids **within 72 hours**; benefit is greatest in the first 2 weeks.",
+            "Hearing aids from **moderate loss (35 dB or more)**; binaural for bilateral loss.",
+            "Vitamins, vasodilators and nerve tonics **do not restore hearing**.",
+            "Families should speak clearly at normal volume and **not shout**.",
+          ],
+        },
+        {
+          title: "Treatment - next steps",
+          points: [
+            "Failed oral steroid in SSNHL: **intratympanic steroid** within 2-6 weeks.",
+            "Meniere attacks: prochlorperazine or cinnarizine for **no more than 3 days**.",
+            "Meniere maintenance: salt restriction, **betahistine**, diuretic, then intratympanic treatment.",
+            "**Cochlear implant** for severe-to-profound loss with little benefit from aids.",
+            "Implant congenital deafness **by 12-24 months** for the best speech outcome.",
+            "Symptomatic congenital CMV: **valganciclovir** for 6 months, started in the first month.",
+          ],
+        },
+        {
+          title: "Complications and red flags",
+          points: [
+            "Sudden loss with vertigo, facial weakness or ataxia may be **AICA stroke**.",
+            "Hearing loss after head injury with CSF in the canal: **temporal bone fracture**; no syringing.",
+            "New tinnitus during aminoglycoside or cisplatin therapy: stop or change the drug.",
+            "Rapidly progressive bilateral loss over weeks suggests **autoimmune inner ear disease**.",
+            "Hearing loss is the largest modifiable risk factor for **dementia**.",
+          ],
+        },
+        {
+          title: "Prevention and programmes",
+          points: [
+            "**1-3-6 rule**: screen by 1 month, diagnose by 3, intervene by 6 months.",
+            "Use ear plugs or muffs above 85 dB(A); **60/60 rule** for personal devices.",
+            "Vaccinate: measles-rubella, pneumococcal and Hib.",
+            "**NPPCD** gives screening and free hearing aids; ADIP funds cochlear implants.",
+            "Screen every adult **aged 50 and over** for age-related hearing loss.",
+            "RPwD Act: benchmark disability of **40%** unlocks entitlements.",
+          ],
+        },
+      ],
+      tables: [
+        {
+          heading: "Tuning fork tests (512 Hz)",
+          columns: ["Type", "Rinne", "Weber", "Absolute bone conduction"],
+          rows: [
+            ["Normal", "Positive", "Central", "Normal"],
+            ["Conductive loss", "Negative", "To affected ear", "Normal"],
+            ["Sensorineural loss", "Positive, both reduced", "To better ear", "Reduced"],
+            ["Dead ear", "False negative", "To better ear", "Reduced; mask with Barany box"],
+            ["Mixed loss", "Negative", "Variable", "Reduced"],
+          ],
+        },
+        {
+          heading: "WHO grades of hearing loss (better ear)",
+          columns: ["Grade", "Threshold", "Practical consequence"],
+          rows: [
+            ["Normal", "Under 20 dB", "No difficulty"],
+            ["Mild", "20-34 dB", "Difficulty with soft speech, noise"],
+            ["Moderate", "35-49 dB", "Hearing aid usually needed"],
+            ["Moderately severe", "50-64 dB", "Difficulty even with raised voice"],
+            ["Severe", "65-79 dB", "Hears only loud speech"],
+            ["Profound", "80-94 dB", "Consider cochlear implant"],
+            ["Complete", "95 dB or more", "Implant or sign language"],
+          ],
+        },
+        {
+          heading: "Drugs in hearing loss",
+          columns: ["Drug", "Dose and route", "Duration", "Key side effects / cautions"],
+          rows: [
+            ["Prednisolone (SSNHL)", "1 mg/kg/day oral, max 60 mg, morning", "7-14 days, then taper", "Check sugar and BP; screen TB"],
+            ["Dexamethasone intratympanic", "10-24 mg/mL, 0.4-0.8 mL", "3-4 injections over 2 weeks", "Pain, vertigo, perforation"],
+            ["Sodium bicarbonate 5% ear drops", "3-4 drops 2-3 times daily", "3-5 days", "Not with known perforation"],
+            ["Prochlorperazine", "5-10 mg oral up to TDS", "Maximum 3 days", "Drowsiness, dystonia, parkinsonism"],
+            ["Betahistine", "16 mg TDS or 24 mg BD with food", "Review at 3-6 months", "Not in phaeochromocytoma; caution asthma"],
+            ["Valganciclovir (congenital CMV)", "16 mg/kg oral twice daily", "6 months", "Neutropenia; regular counts"],
+          ],
+        },
+      ],
+      remember: [
+        "Use a **512 Hz fork** - 256 Hz is felt rather than heard.",
+        "Weber goes **to the conductive ear**, away from the sensorineural ear.",
+        "Conductive loss never exceeds about 60 dB.",
+        "A **4 kHz notch** is noise-induced loss.",
+        "Sudden SNHL is a **stroke of the ear** - steroids within 72 hours.",
+        "Asymmetric SNHL needs MRI, not just a hearing aid.",
+        "**1-3-6**: screen by 1 month, diagnose by 3, intervene by 6.",
+      ],
+    },
     checked: "2026-10",
     updated: [
       "AAO-HNS Age-Related Hearing Loss guideline 2024: screen adults aged 50 and over, refer a positive screen to audiology, fit hearing aids, cochlear implant evaluation when aids give limited benefit",
@@ -480,6 +1609,164 @@ const revision: RevisionSet = {
   },
 
   "eye-ent-epistaxis-foreign-bodies": {
+    notes: {
+      sections: [
+        {
+          title: "Definition and key facts",
+          points: [
+            "**Epistaxis** is bleeding from the nasal cavity or nasopharynx.",
+            "About **90% is anterior** from Little's area and stops with pinching.",
+            "About 5-10% is **posterior**, from sphenopalatine branches, in elderly or anticoagulated patients.",
+            "**Hypertension prolongs bleeding** but rarely starts it; stop the bleed first.",
+            "**Button batteries and magnets** are emergencies wherever they lodge.",
+            "Most foreign bodies occur in children under 5, peaking at **1-3 years**.",
+          ],
+        },
+        {
+          title: "Causes and risk factors",
+          points: [
+            "Local: nose picking, dry air, rhinitis, septal spur, steroid spray aimed at the septum.",
+            "Systemic: **anticoagulants and antiplatelets**, thrombocytopenia, liver and kidney disease.",
+            "Bleeding disorders: haemophilia, von Willebrand disease and **HHT**.",
+            "Adolescent boy with recurrent unilateral bleeds: **juvenile angiofibroma**.",
+            "Fever with epistaxis: think **dengue**; check platelets first.",
+          ],
+        },
+        {
+          title: "How it happens (pathophysiology)",
+          points: [
+            "1. **Little's area** is where four arteries meet on the anterior-inferior septum.",
+            "2. They are anterior ethmoidal, sphenopalatine, greater palatine and superior labial arteries.",
+            "3. Dry air causes crusting; picking tears the thin mucosa over the plexus.",
+            "4. Posterior bleeds run into the pharynx and **cannot be reached by pinching**.",
+            "5. Septal cartilage depends on its mucosa, so **cautery of both sides perforates it**.",
+            "6. A button battery makes **hydroxide** at the mucosa, causing necrosis within hours.",
+          ],
+        },
+        {
+          title: "History in the OPD",
+          points: [
+            "Estimate the amount, side, and whether blood runs **down the throat**.",
+            "Take a full drug history: **warfarin, DOACs, aspirin, clopidogrel**, NSAIDs.",
+            "Ask about gum bleeding, bruising and menorrhagia for a bleeding disorder.",
+            "Foreign body: what it was, when, which side, and previous attempts.",
+            "**Unilateral foul nasal discharge** in a child is a foreign body.",
+            "A **choking episode** while eating nuts justifies bronchoscopy on its own.",
+          ],
+        },
+        {
+          title: "Examination",
+          points: [
+            "In heavy bleeding, **resuscitate first**: pulse, BP, postural drop, blood in the pharynx.",
+            "Blow out clots, insert a vasoconstrictor pledget, then look with headlight and speculum.",
+            "No anterior point and blood in the pharynx means a **posterior bleed**.",
+            "Look for telangiectasia, petechiae, liver stigmata and splenomegaly.",
+            "Always check the **other ear and both nostrils**; children insert more than one.",
+            "Unilateral wheeze or reduced air entry in a toddler is not asthma.",
+          ],
+        },
+        {
+          title: "Investigations",
+          points: [
+            "A single minor anterior bleed in a healthy patient needs **no tests**.",
+            "Severe or anticoagulated: Hb, platelets, **INR**, group and save.",
+            "Suspected angiofibroma: **contrast CT and MRI**, never clinic biopsy.",
+            "Suspected button battery: X-ray shows a **double-ring halo sign**.",
+            "Chest X-ray is often normal in inhaled foreign body; strong history means **rigid bronchoscopy**.",
+          ],
+        },
+        {
+          title: "Treatment - first line",
+          points: [
+            "**Sit forward and pinch the soft nose** for 10-15 minutes by the clock.",
+            "Do not tilt the head back; spit out blood.",
+            "If pressure fails: **oxymetazoline** or a lidocaine-adrenaline pledget for 5-10 minutes.",
+            "**Silver nitrate cautery** for 5-10 seconds, one side of the septum only.",
+            "Then an **anterior nasal tampon** along the floor, removed in 24-48 hours.",
+            "Do not stop anticoagulants reflexively; local measures usually work.",
+          ],
+        },
+        {
+          title: "Treatment - next steps",
+          points: [
+            "**Tranexamic acid**: topical pledget, oral 1 g three times daily, or IV 1 g.",
+            "Posterior bleed: **balloon or Foley posterior pack**, admit with oxygen and ECG monitoring.",
+            "Refractory: **endoscopic sphenopalatine artery ligation** is first choice.",
+            "Warfarin with life-threatening bleed: **vitamin K 5 mg IV plus PCC**.",
+            "Dabigatran is reversed with **idarucizumab 5 g IV**.",
+            "After cautery: chlorhexidine-neomycin cream; avoid it in peanut allergy.",
+          ],
+        },
+        {
+          title: "Complications and red flags",
+          points: [
+            "Button battery in the oesophagus: remove **within 2 hours**.",
+            "Swallowed battery, child over 1 year: **honey 10 mL every 10 minutes**, up to 6 doses, en route.",
+            "Choking infant under 1 year: **5 back blows, then 5 chest thrusts**.",
+            "Choking child over 1 year: 5 back blows, then 5 abdominal thrusts.",
+            "Never do **blind finger sweeps**.",
+            "Two or more swallowed magnets cause bowel necrosis; urgent removal.",
+          ],
+        },
+        {
+          title: "Referral and follow-up",
+          points: [
+            "Foreign body: **one or two attempts only**, then refer.",
+            "Use a **hook behind a round object**; forceps push it deeper.",
+            "Never syringe a **vegetable foreign body**, a battery, or an ear with a perforation.",
+            "Refer recurrent **unilateral** epistaxis or obstruction for nasal endoscopy.",
+            "After a bleed: no nose blowing or straining for **7 days**; petroleum jelly to the septum.",
+          ],
+        },
+      ],
+      tables: [
+        {
+          heading: "Anterior versus posterior epistaxis",
+          columns: ["Feature", "Anterior", "Posterior"],
+          rows: [
+            ["Proportion", "About 90%", "About 5-10%"],
+            ["Source", "Little's area", "Sphenopalatine branches, Woodruff's plexus"],
+            ["Typical patient", "Children, young adults", "Elderly, hypertensive, anticoagulated"],
+            ["Direction", "Out of one nostril", "Into pharynx, swallowed"],
+            ["Pinching", "Usually works", "Ineffective"],
+            ["Management", "Pressure, cautery, anterior pack", "Posterior pack, admit, SPA ligation"],
+          ],
+        },
+        {
+          heading: "Drugs in epistaxis and foreign bodies",
+          columns: ["Drug", "Dose and route", "Duration", "Key side effects / cautions"],
+          rows: [
+            ["Oxymetazoline 0.05% spray", "2 sprays into bleeding side", "Once, before examination", "BP rise; rebound if used for days"],
+            ["Lidocaine 4% with adrenaline", "Pledget in the nose", "5-10 minutes", "Keep lidocaine under 3 mg/kg"],
+            ["Silver nitrate 75% stick", "Touch around, then on, the point", "5-10 seconds, one side", "Septal perforation if both sides"],
+            ["Tranexamic acid", "Oral 1 g TDS; IV 1 g; topical 500 mg", "Oral 5-7 days", "Avoid in active thrombosis"],
+            ["Chlorhexidine-neomycin cream", "Inside nostril four times daily", "10 days", "Not in peanut allergy"],
+            ["Vitamin K", "5 mg IV with PCC in major bleed", "Single dose", "Give IV slowly"],
+            ["Honey (button battery)", "10 mL oral every 10 minutes", "Up to 6 doses within 12 h", "Only over 1 year; do not delay"],
+          ],
+        },
+        {
+          heading: "Foreign bodies by site",
+          columns: ["Site", "Key point", "Action"],
+          rows: [
+            ["Ear", "Round objects stick at the isthmus", "Hook behind; no syringing of seeds"],
+            ["Ear, live insect", "Drown it first", "Lidocaine or oil, then remove"],
+            ["Nose", "Unilateral foul discharge", "Mother's kiss or hook; never push back"],
+            ["Oesophagus", "Coin lies flat on AP film", "Endoscopy; battery within 2 hours"],
+            ["Airway", "Right main bronchus commonest", "Rigid bronchoscopy even if X-ray normal"],
+          ],
+        },
+      ],
+      remember: [
+        "**Sit forward, pinch the soft nose**, 10-15 minutes, no peeping.",
+        "Little's area: anterior ethmoidal, sphenopalatine, greater palatine, superior labial.",
+        "Cauterise **one side at a time**.",
+        "Stop the bleed first, then treat the BP.",
+        "Never syringe a vegetable, a battery, or a perforated ear.",
+        "The **first attempt is the best attempt**; refer after two failures.",
+        "No clinic biopsy in an adolescent boy with recurrent unilateral bleeds.",
+      ],
+    },
     checked: "2026-10",
     updated: [
       "ERC 2025 replaces ERC 2021 as the citation for choking first aid; sequence unchanged (back blows then abdominal thrusts over 1 year, chest thrusts in infants, no blind finger sweep)",
@@ -549,6 +1836,166 @@ const revision: RevisionSet = {
   },
 
   "eye-ent-eyelid-lacrimal-disorders": {
+    notes: {
+      sections: [
+        {
+          title: "Definition and key facts",
+          points: [
+            "A **stye (hordeolum)** is an acute S. aureus abscess of a lid gland.",
+            "A **chalazion** is a chronic sterile lipogranuloma of a blocked meibomian gland.",
+            "**Pain is the best discriminator**: stye hurts, chalazion does not.",
+            "**Blepharitis** is chronic lid-margin inflammation; it is controlled, not cured.",
+            "**Dry eye** is a symptomatic disease of an unstable, hyperosmolar tear film.",
+            "**Dacryocystitis** is infection of the lacrimal sac behind a blocked nasolacrimal duct.",
+          ],
+        },
+        {
+          title: "Classification that matters",
+          points: [
+            "**External stye** points at the lash line; **internal stye** points on the conjunctival side.",
+            "Blepharitis is **anterior** (lash base) or **posterior** (meibomian gland dysfunction).",
+            "Dry eye is **aqueous-deficient** or **evaporative**; MGD is the commonest cause.",
+            "**Chandler**: preseptal, orbital cellulitis, subperiosteal abscess, orbital abscess, cavernous sinus thrombosis.",
+            "Lid malpositions: **entropion**, ectropion, trichiasis and ptosis.",
+          ],
+        },
+        {
+          title: "How it happens (pathophysiology)",
+          points: [
+            "1. **Meibomian glands** make the tear lipid layer that slows evaporation.",
+            "2. Blocked ducts and thick meibum cause **meibomian gland dysfunction**.",
+            "3. Bacterial lipases split meibum into irritant fatty acids.",
+            "4. Tear **hyperosmolarity** triggers surface inflammation and goblet cell loss.",
+            "5. This **vicious circle** keeps dry eye going; lubricants and anti-inflammatories break it.",
+            "6. A persistent membrane at the **valve of Hasner** causes congenital duct block.",
+          ],
+        },
+        {
+          title: "History in the OPD",
+          points: [
+            "Acute painful lump for days is a stye; painless lump for weeks is a chalazion.",
+            "Ask about **blurred vision, double vision and pain on eye movement**.",
+            "Dry eye: burning, grittiness, worse in evening and with screens, **paradoxical watering**.",
+            "Ask about drying drugs: antihistamines, antidepressants, **isotretinoin**, preserved glaucoma drops.",
+            "Dry mouth and joint pain suggest **Sjogren syndrome**.",
+            "Ptosis worse in the evening suggests **myasthenia**.",
+          ],
+        },
+        {
+          title: "Examination",
+          points: [
+            "Check **acuity and pupils** in every swollen eye.",
+            "Proptosis, painful restricted movement, low vision or RAPD mean **orbital cellulitis**.",
+            "Express meibomian glands: **toothpaste-like** secretion means MGD.",
+            "Cylindrical sleeves on the lashes mean **Demodex**.",
+            "Pressure over the sac with **regurgitation of mucopus (ROPLAS)** means chronic dacryocystitis.",
+            "Lash loss, ulceration or margin distortion suggests **malignancy**.",
+          ],
+        },
+        {
+          title: "Investigations",
+          points: [
+            "Stye, chalazion and blepharitis are **clinical diagnoses**.",
+            "Blood sugar for recurrent styes, dacryocystitis or suspected mucormycosis.",
+            "**Lacrimal syringing**: regurgitation through the upper punctum means duct block.",
+            "**Schirmer test under 5 mm** in 5 minutes means aqueous deficiency.",
+            "**Contrast CT** of orbits and sinuses for suspected orbital cellulitis.",
+            "Biopsy every **recurrent chalazion over 50**.",
+          ],
+        },
+        {
+          title: "Treatment - first line",
+          points: [
+            "**Warm compresses** 5-10 minutes, 3-4 times a day.",
+            "**Never squeeze a stye**; valveless veins drain to the cavernous sinus.",
+            "Topical antibiotics are **not needed** for an uncomplicated stye.",
+            "Chalazion: compress and massage twice daily for **4-6 weeks**.",
+            "Blepharitis: compress, massage, then **diluted baby shampoo scrub** twice daily.",
+            "Dry eye: **carboxymethylcellulose 0.5%** 4-6 times daily; preservative-free if over 4 times.",
+            "Congenital duct block: **Crigler massage**, 10 strokes four times a day.",
+          ],
+        },
+        {
+          title: "Treatment - next steps",
+          points: [
+            "Stye spreading as preseptal cellulitis: **oral co-amoxiclav** 625 mg three times daily for 7 days.",
+            "Chalazion over 6 weeks: **triamcinolone injection** via conjunctiva, or incision and curettage.",
+            "Moderate MGD or rosacea: **oral doxycycline 100 mg daily** for 6-12 weeks.",
+            "In pregnancy and under 8 years, use **azithromycin** instead of doxycycline.",
+            "Severe dry eye (ophthalmologist): **ciclosporin 0.05%** for at least 3-6 months.",
+            "Acute dacryocystitis: oral co-amoxiclav; **no syringing or probing** in the acute phase.",
+          ],
+        },
+        {
+          title: "Complications and red flags",
+          points: [
+            "Orbital cellulitis: admit for **IV ceftriaxone** and contrast CT.",
+            "Black eschar on nose or palate in a diabetic: **rhino-orbital mucormycosis**.",
+            "Recurrent chalazion in the elderly: **sebaceous gland carcinoma** until biopsy.",
+            "Ptosis with a dilated pupil: **third nerve palsy**; emergency CT angiography.",
+            "Infant watering eye with photophobia and large cornea: **congenital glaucoma**.",
+            "Never give steroid drops without slit-lamp examination.",
+          ],
+        },
+        {
+          title: "Referral and follow-up",
+          points: [
+            "Review preseptal cellulitis at **24-48 hours**; admit under 1 year or unwell.",
+            "Congenital duct block: over 90% resolve; **probe at about 12 months** if watering persists.",
+            "Chronic dacryocystitis needs **DCR**, and treatment before any cataract surgery.",
+            "Review dry eye and blepharitis at **4-6 weeks**.",
+            "Screen users: **20-20-20 rule** and screen top at or below eye level.",
+          ],
+        },
+      ],
+      tables: [
+        {
+          heading: "Lid swellings at the bedside",
+          columns: ["Type", "Pain", "Key sign", "First-line care"],
+          rows: [
+            ["External stye", "Painful", "Points at lash line", "Warm compress, epilate lash"],
+            ["Internal stye", "Very painful", "Points on conjunctival side", "Compress; antibiotic only if cellulitis"],
+            ["Chalazion", "Painless", "Firm nodule away from margin", "Compress 4-6 weeks, then injection"],
+            ["Acute dacryocystitis", "Very tender", "Swelling below medial canthus", "Oral co-amoxiclav; later DCR"],
+            ["Sebaceous gland carcinoma", "Painless", "Recurrent chalazion, lash loss, elderly", "Urgent biopsy"],
+          ],
+        },
+        {
+          heading: "Chandler stages of orbital infection",
+          columns: ["Stage", "Name", "Key finding", "Management"],
+          rows: [
+            ["I", "Preseptal cellulitis", "Normal vision and eye movement", "Oral co-amoxiclav, review 24-48 h"],
+            ["II", "Orbital cellulitis", "Proptosis, painful restricted movement", "Admit, IV antibiotics, CT"],
+            ["III", "Subperiosteal abscess", "Globe displaced away", "IV antibiotics; drain if large"],
+            ["IV", "Orbital abscess", "Ophthalmoplegia, vision loss", "Urgent drainage"],
+            ["V", "Cavernous sinus thrombosis", "Bilateral signs, cranial nerve palsies", "ICU, IV antibiotics"],
+          ],
+        },
+        {
+          heading: "Drugs in lid and lacrimal disorders",
+          columns: ["Drug", "Dose and route", "Duration", "Key side effects / cautions"],
+          rows: [
+            ["Chloramphenicol 1% ointment", "Twice daily, lid margin at night", "5-7 days; blepharitis 2-4 weeks", "Stinging, blur"],
+            ["Co-amoxiclav", "Adult 625 mg oral TDS", "7-10 days", "Diarrhoea, rash; take with food"],
+            ["Doxycycline", "100 mg oral once daily", "6-12 weeks", "Photosensitivity; not in pregnancy or under 8"],
+            ["Azithromycin 1% eye drops", "Lid margin BD 2 days, then daily", "2-4 weeks", "Irritation, blur"],
+            ["Carboxymethylcellulose 0.5%", "1 drop 4-6 times daily", "Long term", "Preservative-free if over 4 times daily"],
+            ["Ciclosporin 0.05% emulsion", "1 drop twice daily", "At least 3-6 months", "Burning on instillation"],
+            ["Triamcinolone 40 mg/mL", "0.1-0.2 mL intralesional", "Once; repeat after 2-4 weeks", "Skin depigmentation; inject via conjunctiva"],
+            ["Ceftriaxone (orbital cellulitis)", "Adult 2 g IV twice daily", "Inpatient course", "Add metronidazole or vancomycin as needed"],
+          ],
+        },
+      ],
+      remember: [
+        "Stye is **painful at the lash line**; chalazion is painless and away from the margin.",
+        "Chalazion incision is **vertical on the conjunctival side**.",
+        "Recurrent chalazion in the elderly - **biopsy** for sebaceous carcinoma.",
+        "**ROPLAS** means duct block - fix it before cataract surgery.",
+        "Any of proptosis, painful ophthalmoplegia, low vision or RAPD means orbital cellulitis.",
+        "Doxycycline works on **lipase**, not bacteria, in blepharitis.",
+        "Preservative-free drops if needed **more than four times a day**.",
+      ],
+    },
     checked: "2026-10",
     updated: [
       "TFOS DEWS III 2025: dry eye redefined as a symptomatic, multifactorial disease with loss of homeostasis of the tear film and/or ocular surface",
@@ -616,6 +2063,167 @@ const revision: RevisionSet = {
   },
 
   "eye-ent-corneal-ulcer-ocular-trauma": {
+    notes: {
+      sections: [
+        {
+          title: "Definition and key facts",
+          points: [
+            "**Infective keratitis** is a fluorescein-staining epithelial defect over a white stromal infiltrate.",
+            "It causes pain, photophobia, reduced vision and **ciliary congestion**.",
+            "In South India **fungal keratitis is 40-50%** of culture-positive ulcers.",
+            "Classic history: **paddy leaf, sugarcane or twig** injury at harvest.",
+            "Corneal opacity is the **second commonest cause of blindness** over 50 in India.",
+            "Eye injuries peak at harvest, **Diwali** and Holi; lime burns are typically Indian.",
+          ],
+        },
+        {
+          title: "Classification that matters",
+          points: [
+            "Keratitis by organism: **bacterial, fungal, viral (HSV, zoster), Acanthamoeba**.",
+            "**BETT**: closed globe (contusion, lamellar) versus open globe.",
+            "Open globe: rupture, penetrating, perforating and **intraocular foreign body**.",
+            "**Roper-Hall** grades chemical injury by corneal clarity and limbal ischaemia.",
+            "Hyphaema grades I-IV; grade IV is a total **eight-ball hyphaema**.",
+          ],
+        },
+        {
+          title: "How it happens (pathophysiology)",
+          points: [
+            "1. Most organisms need an **epithelial breach** from trauma, lens wear or dry eye.",
+            "2. Bacterial enzymes digest stroma; Pseudomonas can **perforate within 48 hours**.",
+            "3. Fungi grow slowly along lamellae, giving **feathery margins and satellite lesions**.",
+            "4. HSV reactivates from the trigeminal ganglion to form a **dendritic ulcer**.",
+            "5. Steroids suppress defence, spread fungus and turn a dendrite **geographic**.",
+            "6. **Alkali saponifies** membranes and penetrates deeply; acid coagulates and limits itself.",
+            "7. Loss of **limbal stem cells** decides the prognosis in chemical injury.",
+          ],
+        },
+        {
+          title: "History in the OPD",
+          points: [
+            "In a chemical splash, **irrigate before taking any history**.",
+            "Ask the mechanism: vegetative matter, **hammering metal on metal**, chemical, blunt object.",
+            "Ask about **contact lens wear**, overnight use and tap water.",
+            "Ask what was put in the eye: **OTC steroid drops**, anaesthetic drops, herbal juices.",
+            "Progression in hours suggests bacteria; days suggests fungus; recurrent suggests herpes.",
+            "Ask about **tetanus immunisation** after any penetrating injury.",
+          ],
+        },
+        {
+          title: "Examination",
+          points: [
+            "Record **visual acuity first**; it is the medicolegal baseline.",
+            "**Fluorescein with cobalt-blue light**: dendrite with terminal bulbs means HSV.",
+            "**Multiple vertical linear abrasions** mean a subtarsal foreign body; evert the lid.",
+            "Test **corneal sensation** before anaesthetic; reduced sensation suggests HSV.",
+            "Open globe signs: **peaked pupil**, uveal prolapse, positive Seidel test, hypotony.",
+            "If open globe is suspected, **stop examining**; no pressure on the eye.",
+            "Diplopia on upgaze with infraorbital numbness suggests **orbital floor fracture**.",
+          ],
+        },
+        {
+          title: "Investigations",
+          points: [
+            "**Fluorescein staining** is the first test in every painful red eye and injury.",
+            "**Corneal scraping** for Gram stain, KOH and culture before starting treatment.",
+            "**KOH mount** shows fungal hyphae within minutes.",
+            "**Litmus paper** after irrigation; continue until pH is 7.0-7.2.",
+            "X-ray or CT for intraocular foreign body; **never MRI** if iron is possible.",
+          ],
+        },
+        {
+          title: "Treatment - first line",
+          points: [
+            "Chemical injury: irrigate **1-2 litres over 15-30 minutes**, sweep the fornices.",
+            "Open globe: **rigid shield without pressure**, no drops, nil by mouth, antiemetic.",
+            "Corneal abrasion: **chloramphenicol 1% ointment** four times daily for 3-5 days.",
+            "Lens wearer abrasion: **moxifloxacin 0.5%** and stop lens wear.",
+            "Fungal: **natamycin 5% hourly** day and night for 48-72 hours.",
+            "HSV epithelial: **ganciclovir 0.15% gel** or oral aciclovir; no steroid.",
+          ],
+        },
+        {
+          title: "Treatment - next steps",
+          points: [
+            "Severe bacterial: **fortified cefazolin plus tobramycin** hourly round the clock.",
+            "Add **voriconazole 1% drops** for Aspergillus or deep fungal ulcers.",
+            "Oral voriconazole adds no benefit (**MUTT II**).",
+            "Recurrent HSV: **oral aciclovir 400 mg twice daily** for 12 months.",
+            "Acanthamoeba: **PHMB or chlorhexidine 0.02%** for 6-12 months.",
+            "Open globe: **oral moxifloxacin 400 mg** daily and repair within 24 hours.",
+          ],
+        },
+        {
+          title: "Complications and red flags",
+          points: [
+            "Untreated ulcers scar as **nebula, macula or leucoma**, or perforate.",
+            "Pain out of proportion in a lens wearer is **Acanthamoeba**.",
+            "Hyphaema can **rebleed at 2-5 days**; avoid aspirin and NSAIDs.",
+            "Angle recession after hyphaema can cause **glaucoma years later**.",
+            "Penetrating injury can cause **sympathetic ophthalmia** in the other eye.",
+            "Never send a patient home with **topical anaesthetic drops**; never pad an infected eye.",
+          ],
+        },
+        {
+          title: "Referral and follow-up",
+          points: [
+            "Review an abrasion at **24-48 hours**; any infiltrate means referral.",
+            "**Same-day referral** for infiltrate, hypopyon, open globe, chemical injury or hyphaema.",
+            "Tetanus: **Td 0.5 mL IM** if last dose over 5 years; immunoglobulin if unimmunised.",
+            "Write a **medicolegal note** for assault and workplace injury.",
+            "Promote **eye donation**; National Eye Donation Fortnight is 25 August-8 September.",
+          ],
+        },
+      ],
+      tables: [
+        {
+          heading: "Types of infective keratitis",
+          columns: ["Type", "Setting", "Lesion", "Test and first drug"],
+          rows: [
+            ["Bacterial", "Lens wear; hours to 1-2 days", "Dense infiltrate, mobile sterile hypopyon", "Gram stain; fortified drops or moxifloxacin"],
+            ["Fungal", "Vegetative trauma, farmer, steroid misuse", "Feathery edge, satellites, thick hypopyon", "KOH mount; natamycin 5%"],
+            ["Herpes simplex", "Recurrent; reduced sensation", "Dendrite with terminal bulbs", "Clinical; ganciclovir gel or aciclovir"],
+            ["Acanthamoeba", "Lens wear with tap or pool water", "Pain out of proportion, ring infiltrate", "Non-nutrient agar; PHMB or chlorhexidine"],
+          ],
+        },
+        {
+          heading: "BETT classification of mechanical injury",
+          columns: ["Type", "Mechanism", "Example"],
+          rows: [
+            ["Closed - contusion", "Blunt force, no wound", "Cricket ball, fist; hyphaema"],
+            ["Closed - lamellar", "Partial-thickness wound", "Abrasion, superficial foreign body"],
+            ["Open - rupture", "Blunt force at weakest point", "Bull horn, fall onto a stick"],
+            ["Open - penetrating", "Sharp object, entry wound only", "Knife, glass, arrow"],
+            ["Open - perforating", "Entry and exit wounds", "Pellet gun"],
+            ["Open - IOFB", "Retained fragment", "Hammer and chisel, firecracker"],
+          ],
+        },
+        {
+          heading: "Drugs in corneal ulcer and trauma",
+          columns: ["Drug", "Dose and route", "Duration", "Key side effects / cautions"],
+          rows: [
+            ["Natamycin 5% suspension", "Hourly day and night, then 2-hourly", "3-4 weeks, 1-2 weeks after healing", "Irritation; shake well"],
+            ["Fortified cefazolin 5% + tobramycin 1.3%", "Every 5 min x 5, then hourly", "24-48 h, then taper", "Epithelial toxicity; refrigerate"],
+            ["Moxifloxacin 0.5% drops", "Hourly (ulcer) or QID (abrasion)", "Taper; abrasion 5 days", "Stinging, rising resistance"],
+            ["Chloramphenicol 1% ointment", "Four times daily", "3-5 days", "Blur, stinging"],
+            ["Ganciclovir 0.15% gel", "Five times daily till healed, then TDS", "Plus 7 days", "Blur"],
+            ["Aciclovir oral", "400 mg five times daily", "7-10 days", "Reduce in renal impairment"],
+            ["Atropine 1%", "Twice daily", "While ulcer or iritis active", "Near blur, glare"],
+            ["Acetazolamide", "250 mg oral four times daily", "Short term", "Avoid in sickle cell, sulpha allergy"],
+            ["Oral moxifloxacin (open globe)", "400 mg once daily", "Until repair", "QT prolongation, tendinopathy"],
+          ],
+        },
+      ],
+      remember: [
+        "Feathery margins and satellites after vegetative trauma - **fungus; do KOH**.",
+        "**Natamycin** is first-line for filamentous fungal keratitis (MUTT I).",
+        "Dendrite with reduced sensation is HSV - **no steroid**.",
+        "Lens wearer abrasion needs **moxifloxacin**, not chloramphenicol.",
+        "Chemical injury: **irrigate first**, until pH 7.0-7.2; alkali is worse than acid.",
+        "Open globe: **shield without pressure**, no drops, nil by mouth.",
+        "Iron foreign body possible - **never MRI**.",
+      ],
+    },
     checked: "2026-10",
     master: {
       heading: "Master revision table - Corneal ulcer and ocular trauma",
