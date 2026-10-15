@@ -2,6 +2,166 @@ import type { RevisionSet } from "./index";
 
 const revision: RevisionSet = {
   "psychiatry-depression": {
+    notes: {
+      sections: [
+        {
+          title: "Definition and key facts",
+          points: [
+            "**Major depression** needs 5 of 9 symptoms for **at least 2 weeks**.",
+            "One of the five must be **depressed mood or anhedonia** (loss of interest or pleasure).",
+            "It must cause distress or loss of function and not be due to a substance or illness.",
+            "There must **never have been mania or hypomania**; if there has, it is bipolar disorder.",
+            "In India, depression affects **2.7% now**, with a treatment gap above 85%.",
+            "Most patients present to the GP with **bodily complaints**, not with sadness.",
+          ],
+        },
+        {
+          title: "Classification that matters",
+          points: [
+            "Severity decides treatment: **mild, moderate, severe, and severe with psychotic features**.",
+            "NICE 2022 simply splits **less severe (PHQ-9 under 16)** from more severe (16 or more).",
+            "Useful specifiers are melancholic, psychotic, anxious distress, **peripartum onset** and seasonal.",
+            "**Dysthymia** is low mood on most days for **2 years**, often mislabelled as personality.",
+            "**Grief** comes in waves with self-esteem preserved; depression brings pervasive worthlessness.",
+          ],
+        },
+        {
+          title: "How it happens (pathophysiology)",
+          points: [
+            "Genes (heritability **35-40%**) and childhood adversity set the stage; a recent loss triggers.",
+            "Chronic stress drives **CRH, ACTH and cortisol** that fail to switch off by feedback.",
+            "High cortisol lowers **BDNF**, so synapses are lost in hippocampus and prefrontal cortex.",
+            "Synaptic **serotonin, noradrenaline and dopamine** tone falls, giving low mood, fatigue and anhedonia.",
+            "The amygdala becomes overactive while the **dorsolateral prefrontal cortex** becomes underactive.",
+            "SSRIs raise serotonin in hours, but **5-HT1A autoreceptors desensitise only over 2-4 weeks**.",
+            "That desensitisation, plus rising BDNF, explains the **2-4 week antidepressant lag**.",
+          ],
+        },
+        {
+          title: "History in the OPD",
+          points: [
+            "Screen with the **PHQ-2**; a score of **3 or more out of 6** needs the full PHQ-9.",
+            "Screen those with unexplained bodily symptoms, frequent visits, chronic disease or recent delivery.",
+            "Ask about **function** at work, home and self-care; impairment sets treatment intensity.",
+            "**Ask directly about suicide** in graded steps; asking does not plant the idea.",
+            "**Ask about past mania** before any antidepressant, and check with the family.",
+            "Ask about culprit drugs such as **steroids, isotretinoin, interferon and levetiracetam**, and about alcohol.",
+            "Check drugs that interact with SSRIs: **tramadol, triptans and linezolid**.",
+          ],
+        },
+        {
+          title: "Examination",
+          points: [
+            "Look for poor eye contact, tearfulness, stooped posture and **psychomotor retardation**.",
+            "Speech is low, monotonous and slow to start; mood is low and affect restricted.",
+            "**Hopelessness** predicts suicide better than sadness does.",
+            "**Nihilistic delusions** (my intestines have rotted) mean psychotic depression, called Cotard syndrome.",
+            "Effortless 'I don't know' answers suggest **depressive pseudodementia** rather than true dementia.",
+            "Look for **self-harm scars or ligature marks**, thyroid swelling, pallor and BMI.",
+          ],
+        },
+        {
+          title: "Investigations",
+          points: [
+            "Depression is a **clinical diagnosis**; tests only exclude mimics and set a baseline.",
+            "Every first episode: **CBC, fasting glucose or HbA1c, and TSH**.",
+            "**Serum sodium** at baseline and 2-4 weeks if over 65 or on diuretics starting an SSRI.",
+            "**ECG** before a TCA or high-dose citalopram or escitalopram, or in heart disease.",
+            "CT or MRI is not routine; reserve it for focal signs or late-onset cognitive decline.",
+          ],
+        },
+        {
+          title: "Treatment - first line",
+          points: [
+            "Less severe: **behavioural activation**, exercise 3 times a week, guided self-help or CBT.",
+            "Give a drug when **PHQ-9 is 10 or more**, or mild illness persists beyond 4-6 weeks.",
+            "First choice is **escitalopram 10 mg** or **sertraline 50 mg** once daily, plus psychological support.",
+            "Warn that antidepressants are **not habit-forming** and take 2-4 weeks to work.",
+            "Warn of early nausea and jitteriness, which settle in 1-2 weeks.",
+            "Review at **1-2 weeks**, and weekly if under 25 or at suicide risk.",
+          ],
+        },
+        {
+          title: "Treatment - next steps",
+          points: [
+            "An adequate trial is **4 weeks at a therapeutic dose** (6-8 weeks in the elderly).",
+            "Under **20-25% improvement at 3-4 weeks**: check adherence and alcohol, then raise the dose.",
+            "Still no response: **switch** to another SSRI, an SNRI or mirtazapine, or add mirtazapine.",
+            "After **two failed adequate trials**, refer for augmentation with aripiprazole, quetiapine or lithium.",
+            "**Psychotic depression** needs an antidepressant plus an antipsychotic, or ECT, under a specialist.",
+            "**Modified ECT** is for stupor, food refusal or high suicide risk; MHCA requires anaesthesia.",
+          ],
+        },
+        {
+          title: "Special groups",
+          points: [
+            "**Pregnancy and breastfeeding**: sertraline is preferred, and paroxetine is avoided.",
+            "**Adolescents**: fluoxetine 10 mg for 1 week, then 20 mg, with weekly review.",
+            "**Elderly**: start escitalopram 5 mg or sertraline 25 mg, check sodium, avoid TCAs.",
+            "**Heart disease**: sertraline is the safest choice.",
+            "**Postpartum**: screen with EPDS; **13 or more** is positive at the 6-week visit.",
+          ],
+        },
+        {
+          title: "Referral and follow-up",
+          points: [
+            "Repeat the **PHQ-9 at 4 weeks**: response is a **50% fall**, remission a score **under 5**.",
+            "Continue **6-9 months after remission**, or **2 years** after a second episode.",
+            "Taper over **at least 4 weeks**; fluoxetine 20 mg can usually stop abruptly.",
+            "At suicide risk, give **1-2 weeks' supply** at a time or let a relative hold tablets.",
+            "**MHCA section 115**: a person who attempts suicide shall not be tried or punished.",
+            "Refer for high suicide risk, psychosis, bipolar features, two failed trials or a child under 12.",
+            "Tele-MANAS **14416** gives free 24-hour support in regional languages.",
+          ],
+        },
+      ],
+      tables: [
+        {
+          heading: "Antidepressants - doses and cautions",
+          columns: ["Drug", "Dose and route", "Duration", "Key side effects / cautions"],
+          rows: [
+            ["Escitalopram (SSRI)", "10 mg oral OD, max 20 mg; 5 mg start elderly", "6-9 months after remission", "Nausea, jitteriness, hyponatraemia; max 10 mg over 65 (QT)"],
+            ["Sertraline (SSRI)", "50 mg oral OD, up to 200 mg", "6-9 months after remission", "Loose stools; choice in heart disease, pregnancy, breastfeeding"],
+            ["Fluoxetine (SSRI)", "20 mg oral OD, up to 60 mg", "6-9 months after remission", "Activating; adolescents 10 mg then 20 mg"],
+            ["Venlafaxine XR (SNRI)", "75 mg oral OD, up to 225 mg", "Second line after SSRI failure", "Raised BP; severe discontinuation syndrome"],
+            ["Duloxetine (SNRI)", "60 mg oral OD, max 120 mg", "Second line; good with pain", "Raised BP; avoid in liver disease, heavy drinkers"],
+            ["Mirtazapine", "15 mg oral at night, up to 45 mg", "Switch or add-on option", "Sedation, weight gain; rare agranulocytosis"],
+            ["Amitriptyline (TCA)", "25-50 mg at night, up to 75-150 mg", "Rarely used now", "Anticholinergic; lethal in overdose; avoid at suicide risk"],
+            ["Bupropion XL", "150 mg oral morning, up to 300 mg", "Second line", "No sexual dysfunction; contraindicated in seizures"],
+          ],
+        },
+        {
+          heading: "PHQ-9 score and the action",
+          columns: ["PHQ-9", "Severity", "Action"],
+          rows: [
+            ["0-4", "None or minimal", "No treatment; rescreen later"],
+            ["5-9", "Mild", "Behavioural activation, exercise; review in 2 weeks"],
+            ["10-14", "Moderate", "SSRI plus psychological support"],
+            ["15-19", "Moderately severe", "SSRI without delay; suicide enquiry every visit"],
+            ["20-27", "Severe", "SSRI, same-day suicide assessment, involve family, refer"],
+          ],
+        },
+        {
+          heading: "Suicide risk and the response",
+          columns: ["Risk level", "Features", "What to do"],
+          rows: [
+            ["Low", "Fleeting passive thoughts, no plan", "Treat, safety plan, weekly review"],
+            ["Moderate", "Active ideation without plan or intent", "Remove means, written safety plan, review 48-72 hours"],
+            ["High", "Plan, means, intent or recent attempt", "Do not leave alone; same-day psychiatry; admit"],
+          ],
+        },
+      ],
+      remember: [
+        "**PHQ-2 screens, PHQ-9 grades**; 10 or more is the drug threshold.",
+        "Response is a 50% fall in PHQ-9; remission is a score under 5.",
+        "Asking about suicide does not plant the idea; never use SAD PERSONS to decide discharge.",
+        "**Never a TCA at suicide risk**: a fortnight's supply can kill.",
+        "Sertraline for the heart, pregnancy and breastfeeding; mirtazapine for insomnia; duloxetine for pain.",
+        "Screen for mania before every antidepressant.",
+        "Serotonin syndrome: clonus and fever after adding tramadol, linezolid or a triptan to an SSRI.",
+        "Pseudodementia lifts with treatment; dementia does not.",
+      ],
+    },
     checked: "2026-10",
     updated: [
       "NCRB ADSI 2023 (released 2025): 1,71,418 suicides in 2023, rate 12.3 per lakh, about 73% men - replaces the 2022 figure.",
@@ -71,6 +231,167 @@ const revision: RevisionSet = {
   },
 
   "psychiatry-anxiety": {
+    notes: {
+      sections: [
+        {
+          title: "Definition and key facts",
+          points: [
+            "An **anxiety disorder** is fear or worry that is excessive, persistent and impairing.",
+            "It must not be due to a substance, a drug or a medical illness.",
+            "Anxiety affects about **3% of Indian adults**, women twice as often as men.",
+            "Patients present as **ghabrahat**, palpitations, gas or giddiness, rarely as anxiety.",
+            "Depression coexists in over half, so every anxious patient gets a suicide question.",
+          ],
+        },
+        {
+          title: "Classification that matters",
+          points: [
+            "**GAD**: uncontrollable worry about several areas for **at least 6 months**.",
+            "GAD also needs **3 of 6** symptoms: restlessness, fatigue, poor concentration, irritability, tension, poor sleep.",
+            "**Panic attack**: intense fear **peaking within about 10 minutes** with 4 of 13 symptoms.",
+            "**Panic disorder**: recurrent unexpected attacks plus **1 month** of worry or avoidance.",
+            "**Agoraphobia**: fear of 2 of 5 situations where escape is hard, for 6 months.",
+            "Social anxiety and specific phobia complete the group; **OCD and PTSD** are now separate chapters.",
+          ],
+        },
+        {
+          title: "How it happens (pathophysiology)",
+          points: [
+            "The **amygdala** is hyper-reactive and fires to harmless or ambiguous cues.",
+            "The medial prefrontal cortex fails to calm the amygdala, so worry runs on.",
+            "Amygdala output triggers a **noradrenaline surge** from the locus coeruleus: palpitations, tremor, sweating.",
+            "In panic, a brainstem **suffocation alarm** is oversensitive to carbon dioxide.",
+            "**Hyperventilation** causes respiratory alkalosis, low ionised calcium, tingling and carpopedal spasm.",
+            "A harmless sensation is **catastrophically misinterpreted** as a heart attack, and fear feeds the symptom.",
+            "**Avoidance** stops the fear from extinguishing, so avoidance spreads; graded exposure breaks this.",
+          ],
+        },
+        {
+          title: "History in the OPD",
+          points: [
+            "Screen with the **GAD-2**; a score of **3 or more** leads to the full GAD-7.",
+            "Suspect anxiety after **repeated visits and normal tests** for palpitations, chest tightness or giddiness.",
+            "Panic builds over minutes and fades in 20-30; **abrupt on-off palpitations over 150/min** suggest SVT.",
+            "Ask if attacks are unexpected or cued by crowds, scrutiny or one object.",
+            "Ask about **alcohol, alprazolam, caffeine** and morning tremor relieved by a drink or tablet.",
+            "Check drugs: **salbutamol, theophylline, excess thyroxine**, and tramadol or triptans before an SSRI.",
+            "Ask about past elated mood, because an SSRI can precipitate mania.",
+          ],
+        },
+        {
+          title: "Examination",
+          points: [
+            "Look for **sweaty palms, tremor, sighing respiration** and restlessness.",
+            "Affect is anxious but reactive; a flat or sad affect suggests coexisting depression.",
+            "**Derealisation** during panic is common and is not psychosis.",
+            "Check pulse, BP and weight, and look for **goitre, lid lag and fine tremor**.",
+            "During an attack, check **SpO2 and capillary glucose**.",
+            "Look for signs of **alcohol or benzodiazepine withdrawal**; these patients need detoxification, not an SSRI.",
+          ],
+        },
+        {
+          title: "Investigations",
+          points: [
+            "Anxiety is a **clinical diagnosis**; tests exclude mimics and are done **once**.",
+            "**TSH** in every new case: hyperthyroidism is the commonest treatable mimic.",
+            "**Haemoglobin and blood glucose**, especially in patients on insulin or a sulphonylurea.",
+            "**ECG** for palpitations, chest pain, syncope or a first attack over 45.",
+            "Plasma metanephrines only for paroxysmal hypertension with headache and sweating.",
+            "Then stop testing and **write the diagnosis down**; repeated tests make panic chronic.",
+          ],
+        },
+        {
+          title: "Treatment - first line",
+          points: [
+            "Name the illness confidently and explain the **fight-or-flight response**.",
+            "**CBT** works as well as drugs, and its benefit lasts after stopping.",
+            "**Graded exposure**: climb a written hierarchy, staying until anxiety halves.",
+            "**Slow breathing**: in for 4, out for 6, at 6-8 breaths a minute.",
+            "Drug threshold is **GAD-7 of 10 or more** with impairment; an SSRI is the long-term drug.",
+            "Start at **half the depression dose**: escitalopram 5 mg or sertraline 25 mg for 1 week.",
+            "Warn about **first-week jitteriness**; judge the full effect at **8-12 weeks**.",
+          ],
+        },
+        {
+          title: "Treatment - next steps",
+          points: [
+            "Under-dosing explains most non-response; anxiety often needs the **upper dose**.",
+            "No response at 8-12 weeks: switch to another SSRI or to **venlafaxine XR**.",
+            "**Pregabalin** is the next option for GAD and acts within a week, but can be misused.",
+            "**Benzodiazepines** are only a **2-4 week bridge** with a written stop date.",
+            "**Avoid alprazolam**: it causes the commonest iatrogenic dependence in India.",
+            "**Propranolol** before a performance blocks tremor and palpitations but not worry.",
+            "Continue the SSRI **12 months after response**, then taper over 4-8 weeks.",
+          ],
+        },
+        {
+          title: "Special groups",
+          points: [
+            "**Pregnancy and breastfeeding**: CBT first; if a drug is needed, sertraline.",
+            "Avoid regular benzodiazepines near term because of floppy infant and neonatal withdrawal.",
+            "**Elderly**: start escitalopram 5 mg or sertraline 25 mg, check sodium, avoid benzodiazepines.",
+            "**Children**: CBT first; fluoxetine or sertraline only under specialist advice.",
+            "Reduce the pregabalin dose in patients with **renal impairment**.",
+          ],
+        },
+        {
+          title: "Complications and red flags",
+          points: [
+            "First panic-like attack over 45, exertional chest pain or syncope: **rule out cardiac disease**.",
+            "Weight loss, tremor and goitre: **thyrotoxicosis**; send TSH before an SSRI.",
+            "Morning tremor relieved by alcohol or a tablet: withdrawal, which can cause seizures.",
+            "Escalating benzodiazepine doses or early refills mean **dependence**; refer for a supervised taper.",
+            "Refer after **two failed adequate trials**, or for OCD, PTSD, bipolar features or suicidal ideation.",
+          ],
+        },
+      ],
+      tables: [
+        {
+          heading: "Anxiolytic drugs - doses and cautions",
+          columns: ["Drug", "Dose and route", "Duration", "Key side effects / cautions"],
+          rows: [
+            ["Escitalopram (SSRI)", "5 mg oral OD for 1 week, then 10-20 mg", "12 months after response", "Early jitteriness; max 10 mg over 65 (QT)"],
+            ["Sertraline (SSRI)", "25 mg oral OD for 1 week, then 50-200 mg", "12 months after response", "Loose stools; choice in heart disease, pregnancy"],
+            ["Venlafaxine XR (SNRI)", "37.5-75 mg oral OD, up to 225 mg", "12 months after response", "Raised BP; check BP each visit"],
+            ["Pregabalin", "75 mg oral BD, up to 300 mg BD", "Third line for GAD", "Dizziness, weight gain, misuse; reduce in renal failure"],
+            ["Clonazepam", "0.25-0.5 mg oral BD", "2-4 weeks only", "Sedation, falls, dependence; no driving"],
+            ["Lorazepam", "1 mg oral once for a severe attack", "Single dose", "Never a repeat prescription from casualty"],
+            ["Propranolol", "10-40 mg oral, 30-60 min before performance", "As needed", "Contraindicated in asthma and heart block"],
+            ["Buspirone", "5 mg oral BD-TDS, up to 30-60 mg/day", "Takes 2-4 weeks", "No dependence; useless for panic"],
+          ],
+        },
+        {
+          heading: "Types of anxiety disorder",
+          columns: ["Disorder", "Core feature", "Duration", "First-line treatment"],
+          rows: [
+            ["Generalised anxiety disorder", "Uncontrollable worry plus 3 of 6 symptoms", "6 months or more", "CBT; SSRI or SNRI"],
+            ["Panic disorder", "Unexpected attacks peaking within minutes", "1 month of worry or avoidance", "CBT; SSRI; short benzodiazepine bridge"],
+            ["Agoraphobia", "Fear of 2 of 5 situations", "6 months", "Graded exposure; SSRI if panic"],
+            ["Social anxiety disorder", "Fear of scrutiny and embarrassment", "6 months", "CBT; SSRI; propranolol for one performance"],
+            ["Specific phobia", "Fear of one object or situation", "6 months", "Exposure therapy"],
+          ],
+        },
+        {
+          heading: "GAD-7 score and the action",
+          columns: ["GAD-7", "Severity", "Action"],
+          rows: [
+            ["0-4", "Minimal", "Reassure; cut caffeine and alcohol"],
+            ["5-9", "Mild", "Psychoeducation, breathing, exercise; review 4 weeks"],
+            ["10-14", "Moderate", "CBT plus SSRI at half dose; review 2 weeks"],
+            ["15-21", "Severe", "SSRI or SNRI plus CBT; refer if no response by 12 weeks"],
+          ],
+        },
+      ],
+      remember: [
+        "**GAD-2 screens, GAD-7 grades**; 10 or more is the treatment threshold.",
+        "GAD lasts 6 months; panic disorder needs 1 month of fear after attacks.",
+        "Start the SSRI at **half dose** and warn about first-week jitteriness.",
+        "Benzodiazepines: a 2-4 week bridge, never alprazolam, never in alcohol users or the elderly.",
+        "Slow breathing, not a paper bag, for hyperventilation.",
+        "TSH, glucose, haemoglobin and ECG once, then write the diagnosis down.",
+        "Continue the SSRI 12 months after response; relapse is near 50% if stopped early.",
+      ],
+    },
     checked: "2026-10",
     master: {
       heading: "Master revision table - anxiety disorders and panic",
@@ -136,6 +457,166 @@ const revision: RevisionSet = {
   },
 
   "psychiatry-alcohol-use-disorder": {
+    notes: {
+      sections: [
+        {
+          title: "Definition and key facts",
+          points: [
+            "**Alcohol use disorder** is 2 or more of **11 DSM-5-TR criteria within 12 months**.",
+            "A **standard drink is about 10 g** of ethanol; one 30 mL peg of whisky is one drink.",
+            "**Hazardous drinking** is over 14 drinks a week for men or 7 for women.",
+            "A binge is more than 4 drinks (men) or 3 (women) on one occasion.",
+            "About **19% of Indian men** drink, and over 85% with the disorder are untreated.",
+          ],
+        },
+        {
+          title: "Classification that matters",
+          points: [
+            "Severity by criteria: **mild 2-3, moderate 4-5, severe 6 or more**.",
+            "Severe AUD corresponds roughly to ICD-11 **alcohol dependence**.",
+            "AUDIT zones: **0-7 low risk, 8-15 hazardous, 16-19 harmful, 20-40 possible dependence**.",
+            "**AUDIT-C** is positive at **4 or more in men** and 3 or more in women.",
+          ],
+        },
+        {
+          title: "How it happens (pathophysiology)",
+          points: [
+            "Alcohol **boosts GABA-A** inhibition and **blocks NMDA** glutamate receptors.",
+            "It releases endorphins that drive dopamine reward; **naltrexone** blocks this.",
+            "With daily drinking, GABA-A receptors fall and NMDA receptors rise: **tolerance**.",
+            "Stopping suddenly leaves **too little GABA and too much glutamate**: withdrawal.",
+            "Each withdrawal lowers the threshold for the next (**kindling**), so past seizures predict more.",
+            "Benzodiazepines are **cross-tolerant at GABA-A** and replace the missing inhibition.",
+            "Thiamine is used up by a glucose load, causing **Wernicke encephalopathy** in the mammillary bodies.",
+          ],
+        },
+        {
+          title: "History in the OPD",
+          points: [
+            "Screen every adult man and at-risk woman with **AUDIT-C**.",
+            "Screen in resistant hypertension, new AF, raised GGT, macrocytosis, injuries and TB defaulters.",
+            "Quantify the drinking: type, number of pegs, days a week, converted to standard drinks.",
+            "Ask the **time of the last drink** and about the **morning eye-opener**.",
+            "**Past withdrawal seizures or delirium tremens** mean inpatient detoxification.",
+            "Assess the **stage of change**, from pre-contemplation to maintenance.",
+            "Interview the **spouse** with consent, as the drinker minimises.",
+          ],
+        },
+        {
+          title: "Examination",
+          points: [
+            "In withdrawal look for **sweating, restlessness and tremor** of outstretched hands.",
+            "Hallucinations with a **clear sensorium** mean alcoholic hallucinosis; with confusion, delirium tremens.",
+            "**Wernicke check**: nystagmus or eye palsy, ataxia, confusion; one feature is enough.",
+            "Look for stigmata of liver disease: jaundice, palmar erythema, spider naevi, asterixis.",
+            "Look for **head injury** in every confused drinker, because subdural haematoma is common.",
+            "Score the **CIWA-Ar** (maximum 67) at baseline and repeatedly during withdrawal.",
+          ],
+        },
+        {
+          title: "Investigations",
+          points: [
+            "**GGT** rises with heavy drinking and falls within 2-6 weeks of abstinence.",
+            "**MCV over 100** supports heavy drinking and normalises within 3 months.",
+            "**AST:ALT above 2** suggests alcoholic liver disease; check albumin and INR.",
+            "Glucose, sodium, potassium, **magnesium** and phosphate before detoxification.",
+            "Creatinine decides acamprosate; LFT decides naltrexone.",
+            "**CT head** for a first, focal or late seizure, head injury or persistent confusion.",
+          ],
+        },
+        {
+          title: "Treatment - first line",
+          points: [
+            "**Brief intervention** for AUDIT 8-19 using **FRAMES**, taking 5-10 minutes.",
+            "**Abstinence** is the goal in dependence, liver disease, pregnancy and epilepsy.",
+            "Never tell a dependent drinker to stop abruptly without cover.",
+            "Home detox only if **CIWA-Ar under 15**, no past seizure or DT, and a reliable adult.",
+            "Use a **long-acting benzodiazepine** taper over 5-7 days: chlordiazepoxide or diazepam.",
+            "Use **lorazepam** in liver disease and the elderly, as it does not accumulate.",
+            "**Thiamine before glucose, always**: 100 mg IM or IV daily for 3-5 days.",
+          ],
+        },
+        {
+          title: "Treatment - next steps",
+          points: [
+            "Start a relapse-prevention drug **before discharge**; over 70% relapse within a year otherwise.",
+            "**Naltrexone** reduces heavy drinking; avoid in liver failure or with opioids.",
+            "**Acamprosate** supports abstinence and is **safe in liver disease**.",
+            "**Disulfiram** only for a motivated patient, supervised by a relative, with consent.",
+            "**Baclofen** is the anti-craving choice in **cirrhosis**.",
+            "Add motivational interviewing, CBT and **Alcoholics Anonymous**, with Al-Anon for the family.",
+            "Re-assess depression after **2-4 weeks of abstinence**; most secondary low mood lifts.",
+          ],
+        },
+        {
+          title: "Complications and red flags",
+          points: [
+            "**Withdrawal seizure** at 12-48 hours: IV lorazepam 2-4 mg; **do not start phenytoin**.",
+            "**Delirium tremens** at 48-96 hours: confusion, hallucinations, fever and autonomic storm.",
+            "Untreated DT mortality is **up to 25%**, falling to 1-5% with treatment.",
+            "In DT, load benzodiazepine to light sedation and give **thiamine 500 mg IV three times daily**.",
+            "Haloperidol is **only an adjunct** in DT; alone it lowers the seizure threshold.",
+            "Jaundice, ascites, haematemesis or asterixis means decompensated liver disease: admit.",
+          ],
+        },
+        {
+          title: "Referral and follow-up",
+          points: [
+            "During home detox, contact the patient **daily** and rescore CIWA-Ar.",
+            "After detox, review weekly for a month, then monthly for 6-12 months.",
+            "Repeat GGT and MCV at 4-8 weeks and show the patient the fall.",
+            "Treat a **lapse as a learning event** and restart the plan the same week.",
+            "Refer for past seizures or DT, Wernicke-Korsakoff, decompensated liver disease or polysubstance use.",
+          ],
+        },
+      ],
+      tables: [
+        {
+          heading: "Alcohol withdrawal and relapse-prevention drugs",
+          columns: ["Drug", "Dose and route", "Duration", "Key side effects / cautions"],
+          rows: [
+            ["Chlordiazepoxide", "50 mg oral QDS day 1, tapering", "Stop after day 6", "Sedation; accumulates in liver disease"],
+            ["Diazepam", "10-20 mg oral QDS day 1, cut 20-25% daily", "5-7 days", "Sedation; withhold if drowsy"],
+            ["Lorazepam", "1-2 mg oral 6-8 hourly; 2-4 mg IV for seizures", "Taper over 5-7 days", "Choice in liver disease and elderly"],
+            ["Thiamine", "100 mg IM or IV daily", "3-5 days in every detox", "Give before glucose; rare anaphylaxis"],
+            ["Thiamine for Wernicke", "500 mg IV three times daily", "2-3 days, then 250 mg daily", "Correct magnesium too"],
+            ["Naltrexone", "25 mg oral OD for 3 days, then 50 mg OD", "3-6 months or longer", "Not in liver failure or with opioids"],
+            ["Acamprosate", "666 mg oral TDS if 60 kg or more", "6-12 months", "Diarrhoea; avoid if CrCl under 30"],
+            ["Disulfiram", "250 mg oral OD, 24 h after last drink", "Supervised, long term", "Not in heart disease or psychosis; hepatotoxic"],
+            ["Baclofen", "5 mg oral TDS, up to 10-20 mg TDS", "Long term", "Sedation; taper to stop"],
+          ],
+        },
+        {
+          heading: "Alcohol withdrawal timeline",
+          columns: ["Time from last drink", "Syndrome", "Key feature", "Action"],
+          rows: [
+            ["6-12 hours", "Minor withdrawal", "Tremor, sweating, anxiety", "CIWA-Ar, benzodiazepine taper, thiamine"],
+            ["12-24 hours", "Alcoholic hallucinosis", "Hallucinations, clear sensorium", "Increase benzodiazepine"],
+            ["12-48 hours", "Withdrawal seizures", "Generalised, single or brief cluster", "IV lorazepam; no phenytoin"],
+            ["48-96 hours", "Delirium tremens", "Confusion, fever, autonomic storm", "Admit; load benzodiazepine; IV thiamine"],
+          ],
+        },
+        {
+          heading: "AUDIT score and the action",
+          columns: ["AUDIT", "Zone", "Action"],
+          rows: [
+            ["0-7", "Low risk", "Education; rescreen yearly"],
+            ["8-15", "Hazardous", "Brief intervention (FRAMES)"],
+            ["16-19", "Harmful", "Brief intervention, counselling, GGT follow-up"],
+            ["20-40", "Possible dependence", "Assisted withdrawal, relapse-prevention drug, refer"],
+          ],
+        },
+      ],
+      remember: [
+        "**FRAMES**: Feedback, Responsibility, Advice, Menu, Empathy, Self-efficacy.",
+        "Withdrawal clock: tremor 6-12 h, hallucinosis 12-24 h, seizures 12-48 h, DT 48-96 h.",
+        "**Thiamine before glucose**, always.",
+        "Treat Wernicke on any one feature: confusion, eye signs or ataxia.",
+        "Benzodiazepines prevent withdrawal seizures; phenytoin does not.",
+        "Lorazepam in liver disease; chlordiazepoxide or diazepam if the liver is normal.",
+        "Naltrexone for heavy drinking, acamprosate in liver disease, baclofen in cirrhosis.",
+      ],
+    },
     checked: "2026-10",
     master: {
       heading: "Master revision table - alcohol use disorder and withdrawal",
@@ -199,6 +680,162 @@ const revision: RevisionSet = {
   },
 
   "psychiatry-somatic-symptom-disorder": {
+    notes: {
+      sections: [
+        {
+          title: "Definition and key facts",
+          points: [
+            "**Somatic symptom disorder** is one or more distressing bodily symptoms lasting **more than 6 months**.",
+            "It also needs **disproportionate thoughts**, high health anxiety, or excessive time spent on the symptom.",
+            "It is a **positive diagnosis** based on the psychological response, not on unexplained symptoms.",
+            "It can coexist with real disease and can be made at the first visit.",
+            "Unexplained symptoms make up **15-30% of primary care consultations**.",
+            "Indian idioms of distress include body ache, burning feet, gas, kamzori and **dhat**.",
+          ],
+        },
+        {
+          title: "Classification that matters",
+          points: [
+            "Severity: **mild** with one feature of criterion B, **moderate** with two or more.",
+            "**Severe** means two or more features plus many complaints or one very severe symptom.",
+            "ICD-11 calls it **bodily distress disorder**.",
+            "**Illness anxiety disorder** is fear of serious illness with minimal or no symptoms.",
+            "Somatic disorders are unintentional; **factitious disorder** is intentional, to gain the sick role.",
+            "**Malingering** is intentional for external gain and is not a mental disorder.",
+          ],
+        },
+        {
+          title: "How it happens (pathophysiology)",
+          points: [
+            "**The symptoms are real**: normal body signals are processed abnormally, not imagined.",
+            "The **anterior insula and cingulate** are overactive, so ordinary sensations feel loud.",
+            "A strong prior belief of illness overrides normal sensory input, as in the nocebo effect.",
+            "**Central sensitisation** and weak descending pain inhibition cause pain without new tissue damage.",
+            "**Catastrophic misinterpretation** leads to checking and reassurance-seeking, which reinforce the loop.",
+            "Rest and avoidance cause **deconditioning**, poor sleep and more pain.",
+            "Repeated tests and fragmented care by many doctors are the strongest drivers of chronicity.",
+          ],
+        },
+        {
+          title: "History in the OPD",
+          points: [
+            "Let the patient give the **full symptom list** in their own words at the first visit.",
+            "Ask the **specific fear**: what do you think is causing this?",
+            "Ask what has been happening in their life since the symptoms started.",
+            "Measure criterion B: hours spent checking, number of doctors and tests, days off work.",
+            "Screen everyone with **PHQ-9, GAD-7** and a direct suicide question.",
+            "Ask about analgesics, **tramadol, benzodiazepines** and injections already taken.",
+            "Ask **red-flag questions** each time: weight loss, fever, bleeding, night pain, focal weakness.",
+          ],
+        },
+        {
+          title: "Examination",
+          points: [
+            "**Examine carefully and visibly at every visit**; the examination itself is therapeutic.",
+            "Look for depressed or anxious mood hidden behind the bodily complaints.",
+            "Check the belief is **not delusional**: fixed infestation or rotting organs means psychosis.",
+            "**Hoover sign** and give-way weakness are positive signs of functional neurological disorder.",
+            "Dissociative seizures have **eyes closed**, side-to-side head movement and no post-ictal confusion.",
+          ],
+        },
+        {
+          title: "Investigations",
+          points: [
+            "Plan **one defined panel once** and say in advance what it will exclude.",
+            "Typical panel: CBC, ESR or CRP, glucose, TSH, renal and liver function, calcium, urinalysis.",
+            "Add **vitamin B12 and vitamin D** for fatigue, burning feet or body ache.",
+            "Do not repeat endoscopy, MRI or CT for the same complaint; incidental findings start new cycles.",
+            "**Write in the notes** what has been excluded and when.",
+          ],
+        },
+        {
+          title: "Treatment - first line",
+          points: [
+            "**One doctor, one plan**: be the single point of contact.",
+            "**Timed appointments**: a fixed 15 minutes every 2-4 weeks, whether symptoms are bad or not.",
+            "**Reattribution** has three stages: feeling understood, broadening the agenda, making the link.",
+            "Give a **physiological explanation**, never 'it is all in your mind'.",
+            "**CBT** has the best evidence; graded activity and pacing build function.",
+            "Set **functional goals**, such as walking 20 minutes, rather than cure.",
+          ],
+        },
+        {
+          title: "Treatment - next steps",
+          points: [
+            "Drugs treat the **comorbidity and the pain**, not the belief; explain them honestly.",
+            "**SSRI** (escitalopram or sertraline) for coexisting depression, anxiety or illness anxiety.",
+            "**Amitriptyline 10 mg at night**, rising to 25-50 mg, for pain-predominant disorder.",
+            "**Duloxetine 60 mg** for functional pain or pain with depression.",
+            "**Do not prescribe** opioids, benzodiazepines, vitamin injections or tonics.",
+            "**Somatic delusions** need an antipsychotic such as risperidone 1-2 mg, and referral.",
+          ],
+        },
+        {
+          title: "Special groups",
+          points: [
+            "**Dhat syndrome**: the belief that semen loss causes weakness; educate without ridicule.",
+            "In dhat, treat the underlying anxiety, depression or erectile difficulty.",
+            "**Elderly**: avoid TCAs and start escitalopram 5 mg.",
+            "**Pregnancy**: prefer sertraline; **children**: CBT and family work first.",
+          ],
+        },
+        {
+          title: "Referral and follow-up",
+          points: [
+            "Keep fixed reviews every 2-4 weeks, widening to 6-8 weeks as function improves.",
+            "Track **PHQ-15, PHQ-9 and GAD-7** at each visit.",
+            "Assess any **new symptom pattern on its merits**; these patients also get organic disease.",
+            "New multiple symptoms after **50** suggest occult disease, not a new somatic disorder.",
+            "Refer for suicidal ideation, somatic delusions, functional neurological disorder or refractory illness.",
+            "Refer **once with a specific question**, and take the patient back afterwards.",
+          ],
+        },
+      ],
+      tables: [
+        {
+          heading: "Drugs in somatic symptom disorder",
+          columns: ["Drug", "Dose and route", "Duration", "Key side effects / cautions"],
+          rows: [
+            ["Escitalopram (SSRI)", "5-10 mg oral OD, up to 20 mg", "6-12 months after response", "Early nausea and jitteriness; taper over 4 weeks"],
+            ["Sertraline (SSRI)", "25-50 mg oral OD, up to 200 mg", "6-12 months after response", "Loose stools; preferred in heart disease, pregnancy"],
+            ["Fluoxetine (SSRI)", "20-40 mg oral OD", "6-12 months after response", "Evidence in illness anxiety; activating"],
+            ["Amitriptyline (TCA)", "10 mg at night, up to 25-50 mg (max 75)", "Works in 1-2 weeks for pain", "Drowsiness, dry mouth; lethal in overdose"],
+            ["Duloxetine (SNRI)", "30 mg oral OD for 1-2 weeks, then 60 mg", "Long term for pain", "Nausea, raised BP; avoid in liver disease"],
+            ["Risperidone", "1-2 mg oral", "Specialist-led", "Only for somatic delusions, not SSD"],
+          ],
+        },
+        {
+          heading: "Somatic and related disorders by intent",
+          columns: ["Disorder", "Intentional?", "Motivation", "Management"],
+          rows: [
+            ["Somatic symptom disorder", "No", "None; distress is genuine", "One doctor, timed visits, CBT"],
+            ["Illness anxiety disorder", "No", "None", "CBT, SSRI, reduce checking"],
+            ["Functional neurological disorder", "No", "None", "Show positive signs; physiotherapy"],
+            ["Factitious disorder", "Yes", "To assume the sick role", "Avoid confrontation; psychiatry"],
+            ["Malingering", "Yes", "External gain (money, leave)", "Not a mental disorder; document"],
+          ],
+        },
+        {
+          heading: "PHQ-15 score and the action",
+          columns: ["PHQ-15", "Somatic burden", "Action"],
+          rows: [
+            ["0-4", "Minimal", "Explanation and reassurance"],
+            ["5-9", "Low", "Positive explanation; PHQ-9 and GAD-7; review at 4 weeks"],
+            ["10-14", "Medium", "Timed 2-4 weekly visits; treat comorbidity; graded activity"],
+            ["15-30", "High", "One named doctor, drug as indicated, CBT, consider referral"],
+          ],
+        },
+      ],
+      remember: [
+        "SSD is a **positive diagnosis**: disproportionate thoughts, anxiety or time for over 6 months.",
+        "The best single intervention is the **timed appointment** with one named doctor.",
+        "Give a mechanism, never a negation: 'I know what is causing this'.",
+        "Depression or anxiety coexists in **50-70%**; screen with PHQ-9 and GAD-7.",
+        "Reattribution: feel understood, broaden the agenda, make the link.",
+        "Unintentional is SSD; intentional for sick role is factitious; for gain is malingering.",
+        "Never opioids or benzodiazepines for functional symptoms.",
+      ],
+    },
     checked: "2026-10",
     master: {
       heading: "Master revision table - somatic symptom disorder and unexplained symptoms",
@@ -249,6 +886,167 @@ const revision: RevisionSet = {
   },
 
   "psychiatry-tobacco-cessation": {
+    notes: {
+      sections: [
+        {
+          title: "Definition and key facts",
+          points: [
+            "**Tobacco dependence** is a chronic relapsing disorder driven by nicotine.",
+            "**28.6% of Indian adults** use tobacco: 21.4% smokeless and 10.7% smoked.",
+            "Tobacco kills **over 1.3 million Indians a year**.",
+            "India leads the world in **oral cancer and oral submucous fibrosis** from smokeless tobacco and areca.",
+            "Withdrawal starts within **24 hours**, peaks at 2-3 days and settles over 2-4 weeks.",
+            "Help raises 1-year abstinence from **3-5% unaided to 25-30%**.",
+          ],
+        },
+        {
+          title: "Classification that matters",
+          points: [
+            "Dependence is graded with the **Fagerstrom test (FTND, 0-10)**.",
+            "FTND: **0-2 very low, 3-4 low, 5 medium, 6-7 high, 8-10 very high**.",
+            "Two questions matter most: **time to first use** after waking and **number per day**.",
+            "First use **within 30 minutes** or **more than 10 a day** means a drug is needed.",
+            "Smoked forms include cigarette, **bidi** and hookah; smokeless include khaini, gutkha, zarda and mawa.",
+          ],
+        },
+        {
+          title: "How it happens (pathophysiology)",
+          points: [
+            "Smoked nicotine reaches the brain in **10-20 seconds**, the most reinforcing route.",
+            "Nicotine binds **alpha4-beta2 nicotinic receptors** on dopamine neurons of the VTA.",
+            "Dopamine release in the **nucleus accumbens** rewards each puff or chew.",
+            "Repeated use **increases the number of receptors**, which resensitise overnight.",
+            "That causes the craving for the **first cigarette of the morning**.",
+            "Cues like tea, meals and stress become linked to reward, so craving outlasts withdrawal.",
+            "Smoke hydrocarbons (not nicotine) **induce CYP1A2**, so some drug levels rise on quitting.",
+          ],
+        },
+        {
+          title: "History in the OPD",
+          points: [
+            "**Ask every patient at every visit** and record tobacco as a vital sign.",
+            "Ask about **khaini, gutkha and paan** too; smokeless users say no to 'do you smoke'.",
+            "Quantify type, amount per day and duration; pack-years for cigarettes.",
+            "Assess readiness: are you willing to quit in the **next 30 days**?",
+            "Ask about past quit attempts; **under-dosed NRT** is the usual reason for failure.",
+            "Ask about seizures, eating disorder and alcohol withdrawal before bupropion.",
+            "Note **clozapine, olanzapine, theophylline and warfarin**, which need dose review on quitting.",
+          ],
+        },
+        {
+          title: "Examination",
+          points: [
+            "Look for nicotine-stained fingers, **clubbing**, pallor and cachexia.",
+            "Record BP, BMI and waist to track weight gain after quitting.",
+            "**Examine the mouth** of every smokeless user under good light.",
+            "**Leukoplakia** is a white patch that cannot be scraped off.",
+            "**Erythroplakia**, a red velvety patch, carries the highest malignant risk.",
+            "**Submucous fibrosis** shows blanched mucosa, fibrous bands and mouth opening under 3 fingers.",
+          ],
+        },
+        {
+          title: "Investigations",
+          points: [
+            "Dependence needs **no test for diagnosis**; history and FTND are enough.",
+            "**Exhaled carbon monoxide** above about 10 ppm confirms recent smoking.",
+            "**Spirometry** in smokers over 35-40 with symptoms; FEV1/FVC under 0.7 confirms COPD.",
+            "Chest X-ray and **sputum CBNAAT** for cough over 2-3 weeks, haemoptysis or weight loss.",
+            "**Biopsy** any oral lesion persisting beyond 2-3 weeks after removing irritants.",
+          ],
+        },
+        {
+          title: "Treatment - first line",
+          points: [
+            "Follow the **5 A's**: Ask, Advise, Assess, Assist, Arrange.",
+            "**Advise** in one strong, personal sentence; brief advice under 3 minutes adds 2-3% quitting.",
+            "**Assist**: set a quit date **within 2 weeks** and stop completely that day.",
+            "Teach the **4 D's** for craving: Delay, Deep breathing, Drink water, Distract.",
+            "Offer **varenicline or combination NRT** (patch plus gum or lozenge) to dependent users.",
+            "**Arrange** follow-up at week 1, week 2, 1 month and monthly for 3 months.",
+            "Give the **quitline 1800-11-2356** and the mCessation missed-call number.",
+          ],
+        },
+        {
+          title: "Treatment - next steps",
+          points: [
+            "For the patient not ready, use the **5 R's**: Relevance, Risks, Rewards, Roadblocks, Repetition.",
+            "**Bupropion** suits the depressed quitter or one who fears weight gain.",
+            "**Cytisine** is now a WHO first-line option, cheap where available.",
+            "For the very dependent, combine varenicline or bupropion with NRT under close follow-up.",
+            "On quitting, **reduce clozapine and olanzapine by about 25-30%** and watch INR.",
+            "**E-cigarettes are banned in India** under the 2019 Act and cannot be recommended.",
+          ],
+        },
+        {
+          title: "Special groups",
+          points: [
+            "**Pregnancy**: behavioural support first, then intermittent NRT (gum or lozenge).",
+            "Varenicline and bupropion are **not used in pregnancy**.",
+            "**Heart disease**: NRT is safe in stable disease and far safer than tobacco.",
+            "Use only short-acting NRT under supervision within **2 weeks of MI** or in unstable angina.",
+            "**Smokeless users**: 4 mg gum or lozenge for high dependence, or varenicline.",
+            "**Adolescents**: counselling first; NRT from 12 years under supervision.",
+          ],
+        },
+        {
+          title: "Referral and follow-up",
+          points: [
+            "**Under-dosing and stopping too early** cause most failures; raise NRT if craving persists.",
+            "Treat a **lapse as information**, not failure, so it does not become relapse.",
+            "Stop varenicline or bupropion the same day for new agitation, low mood or suicidal thoughts.",
+            "Refer urgently any oral ulcer over **3 weeks**, red patch, induration or restricted mouth opening.",
+            "**COTPA section 6** bans sale to under-18s and within 100 yards of schools.",
+          ],
+        },
+      ],
+      tables: [
+        {
+          heading: "Tobacco cessation drugs",
+          columns: ["Drug", "Dose and route", "Duration", "Key side effects / cautions"],
+          rows: [
+            ["Nicotine patch", "21 mg/24 h (14 mg if 10 or fewer a day)", "21 mg 6 weeks, 14 mg 2 weeks, 7 mg 2 weeks", "Skin irritation, vivid dreams; rotate sites"],
+            ["Nicotine gum", "2 mg, or 4 mg if first use within 30 min", "6-12 weeks, then taper", "Chew and park; no tea or cola for 15 min"],
+            ["Nicotine lozenge", "2 mg or 4 mg, one every 1-2 hours", "6-12 weeks, then taper", "Dissolve slowly; do not chew or swallow"],
+            ["Varenicline", "0.5 mg OD days 1-3, 0.5 mg BD days 4-7, then 1 mg BD", "12 weeks, plus 12 if abstinent", "Nausea in 30%; eGFR under 30 max 0.5 mg BD"],
+            ["Bupropion SR", "150 mg OD for 3 days, then 150 mg BD", "7-12 weeks", "Seizures 1 in 1000; not in epilepsy or eating disorder"],
+            ["Cytisine", "1.5 mg tablets, 6 a day tapering", "25-day course", "Nausea, dry mouth; quit by day 5"],
+          ],
+        },
+        {
+          heading: "The 5 A's and the 5 R's",
+          columns: ["Step", "What to do"],
+          rows: [
+            ["Ask", "Record tobacco use, smoked and smokeless, at every visit"],
+            ["Advise", "One clear, strong, personal sentence to quit"],
+            ["Assess", "Willing to quit in 30 days? Score dependence"],
+            ["Assist", "Quit date within 2 weeks, drug, trigger plan"],
+            ["Arrange", "Follow up week 1, week 2, then monthly"],
+            ["5 R's (not ready)", "Relevance, Risks, Rewards, Roadblocks, Repetition"],
+          ],
+        },
+        {
+          heading: "Choosing the drug",
+          columns: ["Patient", "Best choice", "Avoid"],
+          rows: [
+            ["Highly dependent, cost allows", "Varenicline or combination NRT", "Single short-acting NRT alone"],
+            ["Depression or fear of weight gain", "Bupropion SR", "Bupropion if seizures or eating disorder"],
+            ["Pregnancy", "Behavioural support, then gum or lozenge", "Varenicline, bupropion"],
+            ["Stable heart disease", "NRT", "No need to avoid NRT"],
+            ["Smokeless tobacco user", "4 mg gum or lozenge, or varenicline", "Ignoring smokeless use"],
+          ],
+        },
+      ],
+      remember: [
+        "**5 A's**: Ask, Advise, Assess, Assist, Arrange.",
+        "**5 R's**: Relevance, Risks, Rewards, Roadblocks, Repetition.",
+        "**4 D's** for craving: Delay, Deep breathing, Drink water, Distract.",
+        "First use within 30 minutes or more than 10 a day means pharmacotherapy.",
+        "Varenicline is an alpha4-beta2 partial agonist: it eases craving and blunts a lapse.",
+        "EAGLES found no excess serious neuropsychiatric events with varenicline or bupropion.",
+        "Quitting removes CYP1A2 induction: reduce clozapine and theophylline.",
+        "COTPA section 7 mandates pictorial warnings over 85% of the pack.",
+      ],
+    },
     checked: "2026-10",
     updated: [
       "WHO Tobacco Cessation 2024: cytisine listed as a recommended first-line option alongside varenicline, NRT and bupropion (low-cost choice).",
@@ -304,6 +1102,166 @@ const revision: RevisionSet = {
   },
 
   "psychiatry-insomnia-sleep": {
+    notes: {
+      sections: [
+        {
+          title: "Definition and key facts",
+          points: [
+            "**Insomnia** is difficulty falling asleep, staying asleep, or waking early, with **daytime impairment**.",
+            "**Chronic insomnia** occurs **3 nights a week for 3 months**; shorter is short-term insomnia.",
+            "It occurs **despite adequate opportunity** to sleep; a night-shift worker is sleep-deprived instead.",
+            "A person who sleeps 5 hours and functions well is a **short sleeper**, not a patient.",
+            "Chronic insomnia affects **10-15% of adults**, more often women, the elderly and shift workers.",
+            "Insomnia usually coexists with other illness and is treated in its own right.",
+          ],
+        },
+        {
+          title: "Classification that matters",
+          points: [
+            "ICSD-3-TR has seven groups, including insomnia, **sleep apnoea**, narcolepsy and circadian disorders.",
+            "Parasomnias (such as **REM behaviour disorder**) and movement disorders (**restless legs**) complete the list.",
+            "Grade severity with the **Insomnia Severity Index (0-28)**; treat from **15**.",
+            "OSA severity by AHI: **5-14 mild, 15-29 moderate, 30 or more severe**.",
+          ],
+        },
+        {
+          title: "How it happens (pathophysiology)",
+          points: [
+            "**Adenosine** builds up during waking and creates sleep pressure (Process S).",
+            "The **suprachiasmatic nucleus** sets the clock and triggers melatonin in darkness (Process C).",
+            "Caffeine blocks adenosine receptors, and **naps** discharge sleep pressure.",
+            "Insomniacs show **24-hour hyperarousal**: higher cortisol, heart rate and metabolic rate.",
+            "Lying awake in bed links the bed with alertness: **conditioned arousal**.",
+            "Long time in bed, naps and clock-watching **perpetuate** insomnia (Spielman 3P model).",
+            "Alcohol speeds sleep onset but **fragments the second half** of the night.",
+          ],
+        },
+        {
+          title: "History in the OPD",
+          points: [
+            "Ask whether the problem is **falling asleep, staying asleep, or waking early**.",
+            "Ask for a **2-week sleep diary**, as patients overestimate time awake.",
+            "**Always ask the bed partner** about snoring, apnoeas, kicking legs and dream enactment.",
+            "Early waking suggests **depression**; a racing mind at sleep onset suggests anxiety.",
+            "**Reduced need for sleep** with high energy is mania, not insomnia.",
+            "Ask about caffeine, alcohol, tobacco and drugs such as **steroids, SSRIs and beta-blockers**.",
+            "Ask about medical causes: pain, reflux, **orthopnoea**, nocturia and hot flushes.",
+          ],
+        },
+        {
+          title: "Examination",
+          points: [
+            "Check **BMI and neck circumference**; over 40 cm points to sleep apnoea.",
+            "Look at the airway for retrognathia, large tonsils and a crowded oropharynx.",
+            "Check BP and rhythm, as resistant hypertension and AF suggest OSA.",
+            "Score **STOP-BANG**: 5-8 is high risk for OSA and needs a sleep study.",
+            "**Epworth score over 10** means excessive daytime sleepiness.",
+            "Look for parkinsonism in REM behaviour disorder and pallor in restless legs.",
+          ],
+        },
+        {
+          title: "Investigations",
+          points: [
+            "Insomnia is a **clinical diagnosis**; polysomnography is not needed routinely.",
+            "The sleep diary gives **sleep efficiency**: total sleep time divided by time in bed.",
+            "Check TSH, CBC and glucose only when the history points to them.",
+            "In restless legs, check **ferritin**; give iron if it is **75 ng/mL or less**.",
+            "Order a **sleep study** when STOP-BANG is 5 or more or OSA is suspected.",
+          ],
+        },
+        {
+          title: "Treatment - first line",
+          points: [
+            "**CBT-I is first line** and beats hypnotics at 6-12 months.",
+            "**Stimulus control**: bed only for sleep and sex; get up if not asleep in **20 minutes**.",
+            "Keep a **fixed rising time** and take **no daytime naps**.",
+            "**Sleep restriction**: time in bed equals diary sleep time, but **never under 5 hours**.",
+            "Add **15-20 minutes** when sleep efficiency stays above **85-90% for a week**.",
+            "Do not use sleep restriction in bipolar disorder, epilepsy, untreated OSA or professional drivers.",
+            "**Sleep hygiene** is necessary but is **not a treatment on its own**.",
+          ],
+        },
+        {
+          title: "Treatment - next steps",
+          points: [
+            "Hypnotics are **second line**, always alongside CBT-I.",
+            "Limit any hypnotic to **2-4 weeks**, used intermittently, with a written stop date.",
+            "**Zolpidem** 5 mg (women, elderly) to 10 mg (men), taken immediately at bedtime.",
+            "Stop Z-drugs permanently for **sleep-walking or sleep-driving**.",
+            "Avoid benzodiazepines, sedating antihistamines and quetiapine as hypnotics.",
+            "**OSA**: weight loss, no sedatives, and **CPAP** for AHI 15 or more.",
+            "**Restless legs**: iron, then **gabapentin or pregabalin**; avoid dopamine agonists as standard.",
+          ],
+        },
+        {
+          title: "Special groups",
+          points: [
+            "**Elderly**: CBT-I, **doxepin 3 mg** or melatonin; benzodiazepines are on the Beers list.",
+            "**Pregnancy**: CBT-I and sleep hygiene; avoid hypnotics where possible.",
+            "**Children**: behavioural measures first; a snoring child with mouth breathing needs ENT referral.",
+            "**Drivers** with excessive sleepiness must not drive until treated.",
+          ],
+        },
+        {
+          title: "Referral and follow-up",
+          points: [
+            "Review every 1-2 weeks during CBT-I and adjust time in bed from the diary.",
+            "Repeat the **ISI at 4-8 weeks**; under 8 means remission.",
+            "Review any hypnotic at **2-4 weeks** to stop it.",
+            "Taper long-term benzodiazepines by **10-25% every 2-4 weeks**; never stop abruptly.",
+            "Refer suspected OSA, narcolepsy, **REM behaviour disorder** and refractory insomnia.",
+            "REM behaviour disorder in a man over 50 can precede **Parkinson disease**.",
+          ],
+        },
+      ],
+      tables: [
+        {
+          heading: "Sleep drugs - doses and cautions",
+          columns: ["Drug", "Dose and route", "Duration", "Key side effects / cautions"],
+          rows: [
+            ["Zolpidem", "5 mg (women, elderly) to 10 mg (men) at bedtime", "2-4 weeks, intermittent", "Amnesia, complex sleep behaviours, dependence"],
+            ["Zopiclone", "3.75 mg (elderly) to 7.5 mg at bedtime", "2-4 weeks", "Metallic taste, next-day sedation"],
+            ["Doxepin (low dose)", "3-6 mg at night", "For sleep maintenance", "Safe in elderly; not within 3 hours of a meal"],
+            ["Melatonin PR", "2 mg 1-2 hours before bed", "Up to 13 weeks (over 55)", "Headache; best in jet lag and shift work"],
+            ["Mirtazapine", "7.5-15 mg at night", "When depression coexists", "Weight gain, sedation"],
+            ["Trazodone", "25-100 mg at night", "Off-label, with depression", "Postural hypotension, rare priapism"],
+            ["Pregabalin (restless legs)", "75 mg, up to 300 mg, before bed", "Long term", "Dizziness, misuse; give iron first"],
+            ["Gabapentin (restless legs)", "300 mg, up to 1200-1800 mg, before bed", "Long term", "Sedation; reduce in renal impairment"],
+          ],
+        },
+        {
+          heading: "Sleep disorders - clues and first treatment",
+          columns: ["Disorder", "Key clue", "First treatment"],
+          rows: [
+            ["Chronic insomnia", "3 nights a week for 3 months, daytime impairment", "CBT-I"],
+            ["Obstructive sleep apnoea", "Snoring, witnessed apnoeas, thick neck, sleepiness", "Weight loss, no sedatives, CPAP"],
+            ["Restless legs syndrome", "Evening urge to move legs, relieved by moving", "Iron if ferritin 75 or less; gabapentin"],
+            ["Circadian rhythm disorder", "Cannot sleep before 2 a.m.; fine on holidays", "Fixed wake time, morning light, melatonin"],
+            ["Narcolepsy", "Sleep attacks, cataplexy with laughter", "Refer for MSLT; scheduled naps"],
+            ["REM behaviour disorder", "Acting out dreams, man over 50", "Bedroom safety; melatonin; refer"],
+          ],
+        },
+        {
+          heading: "Insomnia Severity Index and the action",
+          columns: ["ISI", "Category", "Action"],
+          rows: [
+            ["0-7", "No clinical insomnia", "Reassure; sleep hygiene"],
+            ["8-14", "Subthreshold", "Sleep hygiene, stimulus control, diary"],
+            ["15-21", "Moderate", "Full CBT-I; short hypnotic only if needed"],
+            ["22-28", "Severe", "CBT-I; screen for depression and OSA; refer if refractory"],
+          ],
+        },
+      ],
+      remember: [
+        "Chronic insomnia: **3 nights a week for 3 months** with daytime impairment.",
+        "**CBT-I first**; sleep hygiene alone is not a treatment.",
+        "The **20-minute rule**, a fixed rising time and no naps.",
+        "Ask the bed partner: snoring, kicking legs and dream enactment are invisible to the patient.",
+        "Never give a hypnotic in untreated sleep apnoea.",
+        "**STOP-BANG**: Snoring, Tired, Observed apnoea, Pressure, BMI over 35, Age over 50, Neck over 40 cm, Gender male.",
+        "Restless legs: ferritin 75 or less means iron; gabapentin or pregabalin before dopamine agonists.",
+      ],
+    },
     checked: "2026-10",
     updated: [
       "AASM 2024 RLS guideline: alpha2-delta ligands (gabapentin, pregabalin) strong first line; conditional recommendation against standard use of dopamine agonists (augmentation); iron if ferritin 75 ng/mL or less, IV ferric carboxymaltose strong recommendation.",
@@ -373,6 +1331,173 @@ const revision: RevisionSet = {
   },
 
   "psychiatry-psychosis-schizophrenia": {
+    notes: {
+      sections: [
+        {
+          title: "Definition and key facts",
+          points: [
+            "**Psychosis** is loss of contact with reality: delusions, hallucinations or disorganised speech and behaviour.",
+            "**Schizophrenia** needs **2 of 5 domains for 1 month**, with **6 months** of total disturbance.",
+            "At least one domain must be **delusions, hallucinations or disorganised speech**.",
+            "**Negative symptoms** (blunted affect, alogia, avolition) cause most disability and respond least to drugs.",
+            "Lifetime prevalence is about **1%**; onset is late teens in men, about 5 years later in women.",
+            "In India the treatment gap for psychosis is about **75%**.",
+          ],
+        },
+        {
+          title: "Classification that matters",
+          points: [
+            "**Brief psychotic disorder** lasts 1 day to under 1 month, with full recovery.",
+            "**Schizophreniform disorder** lasts 1 to under 6 months.",
+            "**Schizophrenia** lasts 6 months or more.",
+            "**Delusional disorder** is delusions alone for at least 1 month.",
+            "**Schizoaffective disorder** adds 2 weeks of psychosis without mood symptoms.",
+            "ICD-11 needs only 1 month and has **dropped the old subtypes** like paranoid and hebephrenic.",
+          ],
+        },
+        {
+          title: "How it happens (pathophysiology)",
+          points: [
+            "Excess **mesolimbic dopamine** gives ordinary events false importance, causing delusions and hallucinations.",
+            "Low **mesocortical dopamine** causes negative and cognitive symptoms.",
+            "**NMDA glutamate hypofunction** drives the dopamine excess; ketamine reproduces the illness.",
+            "Blocking **nigrostriatal** D2 receptors causes extrapyramidal side effects.",
+            "Blocking **tuberoinfundibular** D2 receptors raises prolactin.",
+            "Treatment needs **65-70% D2 occupancy**; above 80% causes EPS.",
+            "Heritability is about **80%**, and heavy adolescent **cannabis** use raises risk.",
+          ],
+        },
+        {
+          title: "History in the OPD",
+          points: [
+            "**Interview the patient and family separately**; the family dates the decline.",
+            "Ask about voices without arguing; **command hallucinations** raise risk.",
+            "Ask about mood, because psychotic mania and psychotic depression are treated differently.",
+            "Take a substance history: **cannabis (ganja, bhang)**, alcohol and stimulants.",
+            "Ask about drugs: **steroid psychosis** is the commonest iatrogenic cause.",
+            "Assess risk at every visit: suicide, violence, self-neglect and access to pesticide or weapons.",
+            "Ask about recent delivery; **postpartum psychosis** starts within days to 2 weeks.",
+          ],
+        },
+        {
+          title: "Examination",
+          points: [
+            "Look for self-neglect and **hallucinatory behaviour**, such as muttering or smiling to self.",
+            "Check thought form: derailment, neologisms and **thought block**.",
+            "Affect is often **blunted or incongruent** in schizophrenia.",
+            "Orientation is **usually intact**; disorientation means **delirium** until proved otherwise.",
+            "Prominent **visual or tactile hallucinations** suggest delirium, drugs or organic disease.",
+            "Record a **metabolic baseline**: BMI, waist and BP.",
+            "Under 40 with tremor or dystonia, look for **Kayser-Fleischer rings** (Wilson disease).",
+          ],
+        },
+        {
+          title: "Investigations",
+          points: [
+            "First-episode panel: **CBC, glucose, electrolytes, calcium, renal and liver function, TSH, B12**.",
+            "Add HIV, VDRL and a **urine drug screen** where risk exists.",
+            "Before any antipsychotic: weight, waist, BP, **fasting glucose or HbA1c, lipids and prolactin**.",
+            "**ECG** before haloperidol; a QTc over **500 ms** means stop the QT drug.",
+            "Image the brain for focal signs, seizures, confusion or a **first episode after 40**.",
+            "Do not delay treatment waiting for a perfect work-up.",
+          ],
+        },
+        {
+          title: "Treatment - first line",
+          points: [
+            "**Shorten the duration of untreated psychosis**; start treatment or refer the same week.",
+            "Use **one antipsychotic**, start low, and choose by side-effect profile.",
+            "**Risperidone 2-4 mg** is cheap and supplied free through the DMHP.",
+            "**Aripiprazole 10-15 mg** is weight-neutral and spares prolactin; good for young women.",
+            "An adequate trial is **4-6 weeks** at a therapeutic dose.",
+            "**Family intervention** reduces expressed emotion and halves relapse.",
+            "Without medication, relapse at 1 year is **60-80%**; with it, 15-25%.",
+          ],
+        },
+        {
+          title: "Treatment - next steps",
+          points: [
+            "**Treatment resistance** is failure of two adequate trials with confirmed adherence.",
+            "**Clozapine** is the only drug proven better in resistant illness, and it reduces suicide.",
+            "Clozapine needs a **CBC weekly for 18 weeks**, then fortnightly to 1 year, then monthly.",
+            "Stop clozapine if neutrophils fall **below 1.5 x 10^9/L**.",
+            "Use **depot injections** for relapse due to non-adherence.",
+            "Continue **1-2 years after a first episode**, and long term after two or more.",
+          ],
+        },
+        {
+          title: "Complications and red flags",
+          points: [
+            "**Acute dystonia**: oculogyric crisis or torticollis; give **promethazine 25-50 mg IM**.",
+            "**Akathisia** looks like worse psychosis and drives suicide; reduce the dose and add propranolol.",
+            "**Tardive dyskinesia** is worsened by anticholinergics; stop them.",
+            "**NMS**: fever, lead-pipe rigidity, confusion and high CK; stop the drug and admit.",
+            "Fever or sore throat on clozapine needs an **urgent blood count**.",
+            "Stopping smoking can **double clozapine levels**; reduce the dose by 25-30%.",
+            "Weight gain, diabetes and dyslipidaemia are worst with **olanzapine and clozapine**.",
+          ],
+        },
+        {
+          title: "Referral and follow-up",
+          points: [
+            "For agitation, de-escalate first, then give **haloperidol 5 mg plus promethazine 25-50 mg IM**.",
+            "Never give IM olanzapine within 1 hour of a parenteral benzodiazepine.",
+            "Weigh weekly for 6 weeks; check glucose, lipids and BP at **12 weeks** and yearly.",
+            "**MHCA section 89**: supported admission up to **30 days** on two opinions.",
+            "MHCA bans **chaining and unmodified ECT**.",
+            "Refer every first episode, resistance, NMS, catatonia, postpartum psychosis and high risk.",
+          ],
+        },
+      ],
+      tables: [
+        {
+          heading: "Antipsychotics - doses and cautions",
+          columns: ["Drug", "Dose and route", "Duration", "Key side effects / cautions"],
+          rows: [
+            ["Risperidone", "1-2 mg oral at night, up to 2-4 mg", "1-2 years after first episode", "Prolactin rise; EPS above 6 mg"],
+            ["Olanzapine", "5-10 mg oral at night, up to 20 mg", "1-2 years after first episode", "Worst weight gain, diabetes, lipids"],
+            ["Aripiprazole", "10-15 mg oral morning, up to 30 mg", "1-2 years after first episode", "Akathisia; weight-neutral, prolactin-sparing"],
+            ["Quetiapine", "25-50 mg at night, up to 300-600 mg/day", "1-2 years after first episode", "Sedation; least EPS, good in Parkinson disease"],
+            ["Haloperidol", "1.5-5 mg oral at night; 5 mg IM for agitation", "As needed", "Highest EPS and tardive dyskinesia; ECG first"],
+            ["Clozapine", "12.5 mg day 1, to 300 mg by 2-3 weeks", "Long term, specialist", "Agranulocytosis, myocarditis, constipation, seizures"],
+            ["Paliperidone palmitate", "150 mg IM day 1, 100 mg day 8, then monthly", "Long term depot", "EPS, prolactin rise"],
+            ["Haloperidol decanoate", "Test 25 mg, then 50-100 mg IM 4-weekly", "Long term depot", "EPS, tardive dyskinesia"],
+          ],
+        },
+        {
+          heading: "Psychotic disorders by duration",
+          columns: ["Disorder", "Duration", "Key point"],
+          rows: [
+            ["Brief psychotic disorder", "1 day to under 1 month", "Full recovery; often after stress"],
+            ["Schizophreniform disorder", "1 to under 6 months", "Two-thirds progress to schizophrenia"],
+            ["Schizophrenia", "6 months or more", "2 of 5 domains with functional decline"],
+            ["Delusional disorder", "1 month or more", "Delusions only; function preserved"],
+            ["Schizoaffective disorder", "Mood episodes plus 2 weeks psychosis alone", "Mood symptoms for most of the illness"],
+          ],
+        },
+        {
+          heading: "Antipsychotic movement disorders",
+          columns: ["Type", "Onset", "Treatment"],
+          rows: [
+            ["Acute dystonia", "Hours to days", "Promethazine IM or trihexyphenidyl 2 mg"],
+            ["Akathisia", "Days to weeks", "Reduce dose; propranolol"],
+            ["Parkinsonism", "Weeks", "Reduce dose or switch; trihexyphenidyl short term"],
+            ["Tardive dyskinesia", "Months to years", "Stop anticholinergics; switch to clozapine"],
+            ["Neuroleptic malignant syndrome", "24-72 hours", "Stop drug, ICU, cool, fluids, lorazepam"],
+          ],
+        },
+      ],
+      remember: [
+        "Schizophrenia: **2 of 5 domains for 1 month**, 6 months in all.",
+        "Under 1 month is brief psychotic disorder; 1-6 months is schizophreniform.",
+        "Dopamine pathways: mesolimbic treats, nigrostriatal gives EPS, tuberoinfundibular raises prolactin.",
+        "Disorientation means delirium, not schizophrenia.",
+        "**Clozapine after two failed trials**; CBC weekly for 18 weeks.",
+        "Anticholinergics help dystonia but worsen tardive dyskinesia.",
+        "TREC-India: **haloperidol plus promethazine IM** for agitation.",
+        "MHCA 2017: supported admission up to 30 days; chaining is banned.",
+      ],
+    },
     checked: "2026-10",
     updated: [
       "FDA September 2024: xanomeline-trospium (M1/M4 muscarinic agonist) approved - first schizophrenia drug without D2 blockade; not yet available in India.",
@@ -442,6 +1567,170 @@ const revision: RevisionSet = {
   },
 
   "psychiatry-delirium-dementia": {
+    notes: {
+      sections: [
+        {
+          title: "Definition and key facts",
+          points: [
+            "**Delirium** is an acute, fluctuating disturbance of **attention and awareness** over hours to days.",
+            "Delirium is a **medical emergency** caused by illness, drugs or withdrawal.",
+            "**Dementia** is insidious, progressive cognitive decline that **impairs independence**, with clear consciousness.",
+            "**Mild cognitive impairment** leaves independence intact; 10-15% a year progress to dementia.",
+            "Delirium affects 20-30% of older inpatients and **up to 50% after hip fracture surgery**.",
+            "Dementia affects about **7.4% of Indians aged 60 and over**.",
+            "**Any sudden change in a person with dementia is delirium** until proved otherwise.",
+          ],
+        },
+        {
+          title: "Classification that matters",
+          points: [
+            "Delirium subtypes: **hypoactive** (quiet, most missed, worst prognosis), hyperactive and mixed.",
+            "Dementia by cause: **Alzheimer about 60%**, **vascular 20-30%**, Lewy body, frontotemporal and mixed.",
+            "**Reversible causes**: B12 deficiency, hypothyroidism, NPH, subdural haematoma, neurosyphilis and depression.",
+            "Onset, attention, consciousness and course separate delirium from dementia.",
+            "About **45% of dementia** is linked to 14 modifiable risk factors (Lancet 2024).",
+          ],
+        },
+        {
+          title: "How it happens (pathophysiology)",
+          points: [
+            "Delirium is **acetylcholine deficiency** with relative dopamine excess.",
+            "Infection or surgery releases cytokines that activate **primed microglia** in the ageing brain.",
+            "Delirium occurs when a **precipitating insult** exceeds the patient's predisposing vulnerability.",
+            "In Alzheimer disease, **amyloid-beta 42** forms extracellular plaques.",
+            "Hyperphosphorylated **tau** forms tangles, spreading from the hippocampus outward.",
+            "Loss of cholinergic neurons in the **nucleus basalis of Meynert** is why cholinesterase inhibitors help.",
+            "Lewy body dementia has **severe neuroleptic sensitivity** from nigrostriatal loss.",
+          ],
+        },
+        {
+          title: "History in the OPD",
+          points: [
+            "**Collateral history is essential**: what was the patient like a week ago?",
+            "Onset over hours to days suggests delirium; insidious over years suggests Alzheimer disease.",
+            "Ask about new drugs, falls, fever, poor intake, and **constipation or urinary retention**.",
+            "Review all drugs, especially **anticholinergics, benzodiazepines and opioids**, and anything just stopped.",
+            "**Instrumental ADLs** like money and medicines fail first, then basic ADLs.",
+            "Visual hallucinations, parkinsonism and dream enactment suggest **Lewy body dementia**.",
+            "Ask about **carer strain** and elder abuse.",
+          ],
+        },
+        {
+          title: "Examination",
+          points: [
+            "**Test attention**: months of the year backwards; 7 or more correct is normal.",
+            "**4AT of 4 or more** means possible delirium; it takes 2 minutes.",
+            "**CAM**: acute fluctuating onset **and** inattention, **plus** disorganised thinking **or** altered consciousness.",
+            "In dementia use **MMSE, Hindi MSE or MoCA**, correcting for education.",
+            "Check **capillary glucose and SpO2 immediately**.",
+            "Palpate the bladder and do a **rectal examination** for retention and impaction.",
+            "Look for parkinsonism (Lewy body) and **gait apraxia** (NPH).",
+          ],
+        },
+        {
+          title: "Investigations",
+          points: [
+            "Delirium: CBC, renal function, **sodium, calcium**, LFT, CRP, urine, ECG and chest X-ray.",
+            "In India, add **malaria, dengue and typhoid** tests where relevant.",
+            "**Medication reconciliation** is itself an investigation.",
+            "Dementia screen: **TSH, B12, folate, calcium**, glucose, renal and liver function.",
+            "**CT or MRI once** in every new dementia, to exclude subdural haematoma, tumour and NPH.",
+            "**ECG** before a cholinesterase inhibitor if pulse is under 60 or there is syncope.",
+          ],
+        },
+        {
+          title: "Treatment - first line",
+          points: [
+            "In delirium, **treating the cause is the treatment**; use **PINCH ME**.",
+            "Reorient with a clock, calendar and a **familiar relative** at the bedside.",
+            "Restore **spectacles and hearing aids**; keep nights dark and quiet.",
+            "Avoid restraints and catheters; mobilise early.",
+            "In dementia, manage **BPSD without drugs first**: look for pain, constipation and retention.",
+            "**Donepezil 5 mg at night** for 4-6 weeks, then 10 mg, for mild to moderate Alzheimer disease.",
+          ],
+        },
+        {
+          title: "Treatment - next steps",
+          points: [
+            "**Antipsychotics do not treat delirium**; use them only for danger or severe distress.",
+            "**Haloperidol 0.25-0.5 mg**, with a maximum of 2-3 mg in 24 hours in the elderly.",
+            "**Benzodiazepines worsen delirium**, except in alcohol or benzodiazepine withdrawal.",
+            "Add **memantine** (up to 20 mg) in moderate to severe Alzheimer disease.",
+            "**Vascular dementia** has no cognitive drug; control BP, diabetes, lipids and AF.",
+            "In BPSD, antipsychotics raise **stroke and death risk**; use risperidone briefly, then taper.",
+          ],
+        },
+        {
+          title: "Special groups",
+          points: [
+            "**Lewy body or Parkinson disease**: never haloperidol or risperidone; use quetiapine.",
+            "Lewy body dementia responds well to **cholinesterase inhibitors**.",
+            "**Frontotemporal dementia**: cholinesterase inhibitors are not recommended; SSRIs or trazodone may help.",
+            "**Alcohol withdrawal delirium**: benzodiazepine, with **thiamine before glucose**.",
+          ],
+        },
+        {
+          title: "Referral and follow-up",
+          points: [
+            "Reassess cognition **4-8 weeks after delirium**; it often unmasks dementia.",
+            "Review dementia **every 6 months**: cognition, function, pulse, falls and carer strain.",
+            "Review antipsychotics every **6-12 weeks** and taper to stop.",
+            "Refer young-onset (under 65), rapidly progressive, Lewy body or frontotemporal dementia, and NPH.",
+            "Support the carer through **ARDSI**, respite and RPwD disability certification.",
+          ],
+        },
+      ],
+      tables: [
+        {
+          heading: "Drugs in delirium and dementia",
+          columns: ["Drug", "Dose and route", "Duration", "Key side effects / cautions"],
+          rows: [
+            ["Haloperidol (delirium)", "0.25-0.5 mg oral or IM; max 2-3 mg/24 h", "Days; review daily", "EPS, QTc; never in Lewy body dementia"],
+            ["Quetiapine", "12.5-25 mg once or twice daily", "Shortest time", "Sedation, falls; choice in Parkinson disease"],
+            ["Donepezil", "5 mg at night, then 10 mg after 4-6 weeks", "While benefit continues", "Nausea, bradycardia, vivid dreams"],
+            ["Rivastigmine", "1.5 mg BD to 3-6 mg BD, or patch 4.6-9.5 mg/24 h", "While benefit continues", "GI upset (less with patch), bradycardia"],
+            ["Galantamine", "PR 8 mg OD, then 16 mg (max 24 mg)", "While benefit continues", "Nausea, bradycardia"],
+            ["Memantine", "5 mg OD, up 5 mg weekly to 20 mg", "Moderate to severe disease", "Dizziness, headache; 10 mg if CrCl 5-29"],
+            ["Risperidone (BPSD)", "0.25 mg BD, up to 1 mg BD", "Up to 6 weeks", "Stroke and death risk; avoid in Lewy body"],
+            ["Lorazepam", "0.5-1 mg 6-8 hourly, tapering", "Withdrawal delirium only", "Worsens other delirium; thiamine first"],
+          ],
+        },
+        {
+          heading: "Delirium versus dementia versus depression",
+          columns: ["Feature", "Delirium", "Dementia", "Depression"],
+          rows: [
+            ["Onset", "Hours to days", "Months to years", "Weeks, often after a loss"],
+            ["Course in the day", "Fluctuates, worse at night", "Stable", "Worse in the morning"],
+            ["Attention", "Impaired, the key sign", "Normal until late", "Distractible but testable"],
+            ["Consciousness", "Altered", "Clear", "Clear"],
+            ["Hallucinations", "Common, visual", "Uncommon, except Lewy body", "Rare"],
+            ["Answers", "Rambling, inconsistent", "Near-miss, tries hard", "'I don't know', poor effort"],
+            ["Reversibility", "Reversible; find the cause", "Progressive", "Reversible with treatment"],
+          ],
+        },
+        {
+          heading: "4AT score for delirium",
+          columns: ["Item", "Abnormal finding", "Points"],
+          rows: [
+            ["Alertness", "Clearly abnormal", "4"],
+            ["AMT4 (age, birth date, place, year)", "2 or more mistakes", "2"],
+            ["Attention (months backwards)", "Under 7 correct or refuses", "1"],
+            ["Acute change or fluctuation", "Yes, in past 2 weeks", "4"],
+            ["Total", "4 or more possible delirium; 1-3 possible cognitive impairment", "0-12"],
+          ],
+        },
+      ],
+      remember: [
+        "Delirium is **yes, yes, yes**: sudden onset, impaired attention, altered consciousness.",
+        "**PINCH ME**: Pain, Infection, Nutrition, Constipation, Hydration, Medication, Environment.",
+        "Hypoactive delirium is the commonest, most missed and most deadly form.",
+        "Never haloperidol or risperidone in Lewy body dementia or Parkinson disease.",
+        "Benzodiazepines only for withdrawal delirium.",
+        "Cholinesterase inhibitors are vagotonic: check the pulse.",
+        "Define dementia by **loss of independence**, not by the test score.",
+        "Reassess cognition 4-8 weeks after a delirium resolves.",
+      ],
+    },
     checked: "2026-10",
     updated: [
       "NICE 2025 (final draft, under reconsideration after 2026 appeals): lecanemab and donanemab not recommended for NHS use - benefit about 4-6 months' delay, high cost, ARIA and MRI burden.",
