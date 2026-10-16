@@ -25,7 +25,15 @@ const VERSION_SOURCES: { url: string; api?: boolean }[] = [
   { url: `https://raw.githubusercontent.com/${REPO}/fmprep-apk/version.json` },
 ];
 
-export type RemoteVersion = { build?: number; minNative?: number; web?: string; webs?: string[]; apk?: string };
+export type RemoteVersion = {
+  build?: number;
+  minNative?: number;
+  web?: string;
+  webs?: string[];
+  /** SHA-256 of each zip by URL; the updater refuses a download without one. */
+  sums?: Record<string, string>;
+  apk?: string;
+};
 
 export type UpdateState =
   | { step: "idle" }
@@ -113,7 +121,8 @@ export async function checkForUpdate(current: number, force = false): Promise<vo
       setState({ step: "latest", build: current });
       return;
     }
-    const webs = [...(remote.webs ?? []), ...(remote.web ? [remote.web] : [])];
+    const sums = remote.sums ?? {};
+    const webs = [...new Set([...(remote.webs ?? []), ...(remote.web ? [remote.web] : [])])].filter((u) => sums[u]);
     if (!hasLiveUpdates() || !webs.length) {
       setState({ step: "needs-apk", build, apk: remote.apk });
       return;
@@ -138,13 +147,14 @@ export async function checkForUpdate(current: number, force = false): Promise<vo
         const failed: string[] = [];
         for (const url of webs) {
           try {
-            bundle = await CapacitorUpdater.download({ url, version });
+            bundle = await CapacitorUpdater.download({ url, version, checksum: sums[url] });
             break;
-          } catch {
-            failed.push(new URL(url).host);
+          } catch (e) {
+            const why = String((e as Error)?.message ?? e).replace(/^Failed to download from: \S+\s*/, "");
+            failed.push(`${new URL(url).host}${why ? ` (${why.slice(0, 60)})` : ""}`);
           }
         }
-        if (!bundle) throw new Error(`could not download from ${failed.join(", ")} - check the internet connection`);
+        if (!bundle) throw new Error(`could not download from ${failed.join(", ")}`);
       } finally {
         void sub.remove();
       }

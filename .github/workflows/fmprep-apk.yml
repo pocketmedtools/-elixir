@@ -196,7 +196,27 @@ jobs:
             && git add -A && git commit -q -m "FM Prep web build ${{ github.run_number }}" \
             && git push -q -f "https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/$R.git" fmprep-web)
           WEBSHA=$(cd /tmp/webpub && git rev-parse HEAD)
+          # The updater refuses a zip without its SHA-256 ("Checksum
+          # required"), and each host serves different bytes (GitHub's
+          # archives name their top folder differently), so every URL gets its
+          # own sum. A host that cannot be fetched here is left without one and
+          # the app skips it.
+          sleep 5
+          SUMS='{}'
+          addsum() {
+            local s
+            s=$(curl -fsSL --retry 3 -m 300 "$1" | sha256sum | cut -d' ' -f1) || return 0
+            [ "$s" = "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855" ] && return 0
+            SUMS=$(echo "$SUMS" | jq -c --arg u "$1" --arg s "$s" '. + {($u): $s}')
+          }
+          addsum "https://codeload.github.com/$R/zip/$WEBSHA"
+          addsum "https://github.com/$R/archive/$WEBSHA.zip"
+          addsum "https://api.github.com/repos/$R/zipball/$WEBSHA"
+          LOCAL=$(sha256sum "$WEB" | cut -d' ' -f1)
+          SUMS=$(echo "$SUMS" | jq -c --arg a "https://cdn.jsdelivr.net/gh/$R@$FILES/$WEB" \
+            --arg b "https://raw.githubusercontent.com/$R/$FILES/$WEB" --arg s "$LOCAL" '. + {($a): $s, ($b): $s}')
           jq -n --argjson build ${{ github.run_number }} --argjson min "$MIN" --arg h "$NHASH" \
+            --argjson sums "$SUMS" \
             --arg sha "${{ github.sha }}" --arg date "$(date -u +%Y-%m-%dT%H:%M:%SZ)" \
             --arg web "https://raw.githubusercontent.com/$R/$FILES/$WEB" \
             --arg cdn "https://cdn.jsdelivr.net/gh/$R@$FILES/$WEB" \
@@ -204,7 +224,7 @@ jobs:
             --arg codeload "https://codeload.github.com/$R/zip/$WEBSHA" \
             --arg archive "https://github.com/$R/archive/$WEBSHA.zip" \
             --arg apizip "https://api.github.com/repos/$R/zipball/$WEBSHA" \
-            '{build:$build, minNative:$min, nativeHash:$h, webs:[$codeload, $archive, $apizip, $cdn, $web], web:$web, apk:$apk, sha:$sha, date:$date}' > version.json
+            '{build:$build, minNative:$min, nativeHash:$h, webs:[$codeload, $archive, $apizip, $cdn, $web], sums:$sums, web:$web, apk:$apk, sha:$sha, date:$date}' > version.json
           cat version.json
           git add version.json
           git commit -q -m "version.json for build ${{ github.run_number }}"
