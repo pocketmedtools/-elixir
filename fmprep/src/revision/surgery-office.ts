@@ -2,6 +2,164 @@ import type { RevisionSet } from "./index";
 
 const revision: RevisionSet = {
   "surgery-office-wound-suturing": {
+    notes: {
+      sections: [
+        {
+          title: "Definition and key facts",
+          points: [
+            "A **wound** is a break in the continuity of skin or mucosa and the tissue below.",
+            "Mechanism types: incised, lacerated, abrasion, puncture, crush, avulsion and bite.",
+            "The mechanism predicts how much contamination and dead tissue to expect.",
+            "**Golden period** for primary closure is about **6 hours** on limbs and trunk.",
+            "Face and scalp can be closed up to **12-24 hours** because of the rich blood supply.",
+          ],
+        },
+        {
+          title: "Classification that matters",
+          points: [
+            "**CDC wound class I-IV**: clean, clean-contaminated, contaminated and dirty or infected.",
+            "Any fresh traumatic wound is **class III (contaminated)**, with 10-17% infection risk.",
+            "Healing is by **primary, secondary or tertiary (delayed primary)** intention.",
+            "A **tetanus-prone wound** is over 6 hours old, a puncture, crush, burn, bite or soil-contaminated.",
+            "**WHO rabies category III** means transdermal bites, licks on broken skin or any bat exposure.",
+          ],
+        },
+        {
+          title: "How it happens (pathophysiology)",
+          points: [
+            "1. **Haemostasis** (minutes): vessel spasm, platelet plug and fibrin clot.",
+            "2. **Inflammation** (days 1-4): neutrophils, then macrophages, the key cell, clear debris.",
+            "3. **Proliferation** (day 4 to week 3): type III collagen and granulation tissue form.",
+            "4. Epithelium seals a sutured wound in about **48 hours**, so keep it dry for 2 days.",
+            "5. **Remodelling**: type I collagen replaces type III; scar has **20% strength at 3 weeks**.",
+            "6. A mature scar never regains more than about **80%** of normal strength.",
+          ],
+        },
+        {
+          title: "History in the OPD",
+          points: [
+            "Write down the **exact time of injury**; it decides primary versus delayed closure.",
+            "Ask the mechanism; a **high-pressure injection** injury is an emergency however small.",
+            "Ask about glass, wood or metal at the scene; retained foreign body stops healing.",
+            "For bites, ask which animal, provoked or not, and whether it can be observed 10 days.",
+            "A small wound over a knuckle after a fight is a **clenched-fist human bite**.",
+            "Ask the **tetanus vaccination history** and date of the last dose.",
+            "Ask about diabetes, steroids, anticoagulants, keloid tendency and drug allergies.",
+          ],
+        },
+        {
+          title: "Examination",
+          points: [
+            "Control bleeding with **direct pressure and elevation** for 10 minutes; never clamp blindly.",
+            "**Examine nerve, tendon and circulation before injecting** the local anaesthetic.",
+            "Normal **two-point discrimination** at the finger pulp is under 6 mm.",
+            "Test **FDP** by blocking the PIP joint and **FDS** by holding the other fingers straight.",
+            "Explore the wound in a bloodless field through the **full range of movement**.",
+            "Pain out of proportion, crepitus or bullae suggest **necrotising infection**.",
+          ],
+        },
+        {
+          title: "Investigations",
+          points: [
+            "Most simple lacerations need **no investigation**; diagnosis is by exploration.",
+            "**X-ray in two planes** for glass or metal, fracture or air in a joint.",
+            "**Ultrasound** finds wood and thorn, which a normal X-ray does not exclude.",
+            "Check **capillary glucose** in any adult with a slow-healing or infected wound.",
+            "Send a pus swab only from an infected wound, before antibiotics.",
+          ],
+        },
+        {
+          title: "Treatment - first line",
+          points: [
+            "**Irrigation** prevents infection: **50-100 mL saline per cm** through a 20 mL syringe and 18 G cannula.",
+            "Do not pour hydrogen peroxide or spirit into the wound; they kill fibroblasts.",
+            "**Debride** dead and crushed tissue back to bleeding edges, sparingly on the face.",
+            "Close primarily only if the wound is **clean and under 6 hours** old (face 24 hours).",
+            "Calculate local anaesthetic in mg: **lignocaine 3 mg/kg plain, 7 mg/kg with adrenaline**.",
+            "Use **simple interrupted** nylon sutures; enter at 90 degrees with equal bites.",
+            "Tissue adhesive suits clean, straight, low-tension wounds under 5 cm, especially in children.",
+          ],
+        },
+        {
+          title: "Treatment - next steps",
+          points: [
+            "Contaminated, puncture, crush and cat or human bite wounds are left open.",
+            "**Delayed primary closure on day 3-5** is the answer for a contaminated wound.",
+            "Wash every animal bite with soap and running water for **15 minutes**.",
+            "No antibiotic is needed for a clean, well-irrigated laceration.",
+            "Give antibiotics for bites, hand wounds, open fractures, crush wounds and diabetes.",
+            "Give **Td**, tetanus immunoglobulin and rabies prophylaxis as the tables below decide.",
+          ],
+        },
+        {
+          title: "Complications and red flags",
+          points: [
+            "Early: infection, dehiscence, missed tendon or nerve injury, retained foreign body.",
+            "Late: hypertrophic scar or **keloid**; use silicone gel and sunscreen for months.",
+            "**LAST** starts with circumoral tingling, metallic taste, tinnitus and twitching.",
+            "For LAST, stop injecting, give oxygen, midazolam for fits and **20% lipid 1.5 mL/kg**.",
+            "Trismus or neck stiffness after a neglected wound means **tetanus**; admit to ICU.",
+          ],
+        },
+        {
+          title: "Referral and follow-up",
+          points: [
+            "Refer before closing any wound with **tendon, nerve or vessel injury** or an open joint.",
+            "Also refer clenched-fist injury, high-pressure injection and eyelid margin or vermilion wounds.",
+            "Review bites and contaminated wounds at **24-48 hours** for infection.",
+            "Remove sutures: face 4-5 days, trunk 7-10, palm and over joints 12-14.",
+            "Write the next tetanus and rabies dose dates on the patient's card.",
+          ],
+        },
+      ],
+      tables: [
+        {
+          heading: "Drugs for wounds and suturing",
+          columns: ["Drug", "Dose and route", "Duration", "Key side effects / cautions"],
+          rows: [
+            ["Lignocaine 1% (10 mg/mL)", "Max 3 mg/kg plain; 7 mg/kg with adrenaline", "Lasts 30-60 min plain", "LAST; aspirate before injecting"],
+            ["Bupivacaine 0.25-0.5%", "Max 2 mg/kg (150 mg)", "Lasts 4-8 hours", "Most cardiotoxic; never Bier block"],
+            ["Amoxicillin-clavulanate", "625 mg oral TDS after food", "3-5 days for bites", "Diarrhoea, rare cholestatic jaundice"],
+            ["Doxycycline plus metronidazole", "100 mg BD plus 400 mg TDS oral", "5 days (penicillin allergy)", "Not in pregnancy or under 8 years"],
+            ["Td vaccine", "0.5 mL IM deltoid", "Booster by wound type", "Separate site from immunoglobulin"],
+            ["Tetanus immunoglobulin", "250 IU IM (500 IU if over 24 h)", "Single dose", "Only if under 3 or unknown doses"],
+            ["Anti-rabies vaccine", "IM days 0, 3, 7, 14, 28 or ID 2-2-2-0-2", "Full schedule", "Never in the gluteal region"],
+            ["Rabies immunoglobulin", "hRIG 20 IU/kg or eRIG 40 IU/kg", "Once, into the wounds", "Category III only"],
+            ["20% lipid emulsion", "1.5 mL/kg IV, then 0.25 mL/kg/min", "Max about 12 mL/kg", "Only for LA toxicity"],
+          ],
+        },
+        {
+          heading: "Tetanus prophylaxis",
+          columns: ["Wound and vaccine history", "Td booster", "Tetanus immunoglobulin"],
+          rows: [
+            ["Clean wound, 3 or more doses", "Only if 10 years or more", "No"],
+            ["Clean wound, under 3 or unknown", "Start full course", "No"],
+            ["Tetanus-prone, 3 or more doses", "Only if 5 years or more", "No"],
+            ["Tetanus-prone, under 3 or unknown", "Start full course", "Yes, 250 IU, different site"],
+          ],
+        },
+        {
+          heading: "Suture size and removal by site",
+          columns: ["Site", "Suture", "Remove on day"],
+          rows: [
+            ["Face and eyelid", "5-0 or 6-0 nylon", "4-5"],
+            ["Scalp", "3-0 nylon or staples", "7-10"],
+            ["Trunk", "3-0 nylon", "7-10"],
+            ["Upper limb and hand", "4-0 nylon", "10"],
+            ["Palm, sole, over a joint", "3-0 or 4-0 nylon", "12-14"],
+            ["Lower limb", "3-0 or 4-0 nylon", "10-14"],
+          ],
+        },
+      ],
+      remember: [
+        "Three questions decide everything: how long ago, how dirty, is anything divided.",
+        "1% lignocaine is 10 mg/mL; say the dose in mg, not mL.",
+        "Irrigation volume, not the antibiotic, prevents wound infection.",
+        "Contaminated wound: delayed primary closure on day 3-5, never primary closure.",
+        "Never inject local anaesthetic into pus; block around it instead.",
+        "Category III bite: wash 15 minutes, RIG into the wound, vaccinate, leave it open.",
+      ],
+    },
     checked: "2026-10",
     master: {
       heading: "Master revision table - wounds, local anaesthesia and suturing",
@@ -53,6 +211,161 @@ const revision: RevisionSet = {
     ],
   },
   "surgery-office-abscess-ssti": {
+    notes: {
+      sections: [
+        {
+          title: "Definition and key facts",
+          points: [
+            "An **abscess** is a localised collection of pus walled off by a pyogenic membrane.",
+            "The rule is **ubi pus, ibi evacua**: where there is pus, let it out.",
+            "**Cellulitis** is spreading infection of deep dermis and fat with an indistinct edge.",
+            "**Erysipelas** involves upper dermis and lymphatics, with a sharp raised edge.",
+            "A **carbuncle** is necrosis of several adjacent hair follicles, classically on a diabetic's nape.",
+          ],
+        },
+        {
+          title: "Classification that matters",
+          points: [
+            "IDSA first splits **purulent** (boil, carbuncle, abscess) from **non-purulent** (cellulitis, erysipelas).",
+            "Then grade **mild, moderate or severe**; moderate means systemic (SIRS) features.",
+            "Severe means failed oral therapy, immunosuppression, hypotension or deeper infection.",
+            "Purulent usually means staphylococcus and a knife; non-purulent means streptococcus and an antibiotic.",
+            "Necrotising infection: **type I polymicrobial**, type II group A strep, type III clostridial or Vibrio.",
+          ],
+        },
+        {
+          title: "How it happens (pathophysiology)",
+          points: [
+            "1. Staphylococcus enters through a breach such as a hair follicle or injection site.",
+            "2. Its **coagulase** lays down fibrin that walls the organisms off.",
+            "3. Neutrophils die and their enzymes liquefy tissue into **pus**.",
+            "4. The rim becomes an **avascular pyogenic membrane**, so antibiotics cannot reach the pus.",
+            "5. Streptococcal hyaluronidase and streptokinase let infection spread diffusely as cellulitis.",
+            "6. Local anaesthetic fails in pus because the **acid pH** keeps the drug ionised.",
+          ],
+        },
+        {
+          title: "History in the OPD",
+          points: [
+            "A throbbing lump over 2-5 days suggests a collection; spreading redness suggests cellulitis.",
+            "**Pain out of proportion** to what you see is necrotising fasciitis until proved otherwise.",
+            "Look for the portal of entry: scratch, injection, foot fissure, tinea or ulcer.",
+            "Ask about fever, rigors and confusion, which move the grade to moderate or severe.",
+            "Ask about **diabetes**; an abscess or carbuncle is a common first presentation.",
+            "Recurrent boils or family clusters suggest **CA-MRSA carriage**.",
+          ],
+        },
+        {
+          title: "Examination",
+          points: [
+            "Check vital signs, mental state and capillary glucose before touching the lump.",
+            "Test **fluctuation** in two planes at right angles; it may be absent when deep.",
+            "Feel and listen for **pulsation** near a major vessel; never incise an aneurysm.",
+            "**Mark the cellulitis margin** with a skin pen and write the date and time.",
+            "Necrotising signs: **woody oedema beyond the erythema**, bullae, skin anaesthesia and crepitus.",
+            "In every leg cellulitis, look between the toes for tinea and fissures.",
+          ],
+        },
+        {
+          title: "Investigations",
+          points: [
+            "**Capillary glucose and HbA1c** in every abscess, carbuncle and recurrent infection.",
+            "**Bedside ultrasound** shows a hypoechoic cavity with swirling debris if pus is present.",
+            "Send pus for culture in recurrent, diabetic, facial, hand or failed cases.",
+            "**LRINEC 6 or more** raises suspicion of necrotising fasciitis; a low score never excludes it.",
+            "Never delay surgery for imaging when necrotising infection is suspected.",
+            "Aspirate a cold abscess for ZN stain and **CBNAAT**.",
+          ],
+        },
+        {
+          title: "Treatment - first line",
+          points: [
+            "**Incision and drainage** is the treatment of an abscess; antibiotics alone cannot cure it.",
+            "Use a **field block** in healthy tissue 1-2 cm outside the red area, never into the cavity.",
+            "Incise at the most dependent point along Langer lines; deroof a large cavity.",
+            "**Hilton method**: blade through skin only, then open closed forceps to break loculi.",
+            "Irrigate, **pack loosely**, and review at 24-48 hours; it heals by secondary intention.",
+            "No antibiotic is needed for a simple drained abscess in a well patient.",
+            "For cellulitis, **elevate the limb**, mark the margin and give oral amoxicillin or cloxacillin.",
+          ],
+        },
+        {
+          title: "Treatment - next steps",
+          points: [
+            "Add an antibiotic for surrounding cellulitis over 2 cm, systemic features, face or hand sites.",
+            "Suspected MRSA abscess: **co-trimoxazole DS or doxycycline**; clindamycin covers MRSA and streptococci.",
+            "Moderate cellulitis: IV cefazolin, ceftriaxone or clindamycin; switch to oral when improving.",
+            "Recurrent boils: **mupirocin nasal** for 5 days, chlorhexidine wash and treat household contacts.",
+            "Treat the portal of entry, such as **clotrimazole** for interdigital tinea.",
+          ],
+        },
+        {
+          title: "Special groups",
+          points: [
+            "**Lactational breast abscess** under 5 cm: ultrasound-guided aspiration and continue breastfeeding.",
+            "**Perianal abscess**: drain in theatre near the verge; one third form a fistula.",
+            "**Felon**: drain early through a high lateral incision; fish-mouth incision is obsolete.",
+            "**Danger area of the face**: never squeeze; risk of cavernous sinus thrombosis.",
+            "A neonate with a skin abscess needs treatment as possible sepsis.",
+          ],
+        },
+        {
+          title: "Complications and red flags",
+          points: [
+            "**Necrotising fasciitis**: resuscitate, give the first antibiotic within 1 hour and refer for debridement.",
+            "Give at least **30 mL/kg balanced crystalloid in 3 hours** if hypotensive or lactate 4 or more.",
+            "**Kanavel signs** mean flexor tenosynovitis and need same-day surgery.",
+            "**Fournier gangrene** is necrotising infection of perineum and scrotum in a diabetic man.",
+            "A sinus discharging for weeks needs a cause: foreign body, TB, osteomyelitis or cancer.",
+          ],
+        },
+      ],
+      tables: [
+        {
+          heading: "Drugs for abscess and skin infection",
+          columns: ["Drug", "Dose and route", "Duration", "Key side effects / cautions"],
+          rows: [
+            ["Cloxacillin", "500 mg oral QID", "5-7 days", "Take 1 hour before food"],
+            ["Cephalexin", "500 mg oral QID", "5-7 days", "Safe in pregnancy; small penicillin cross-reaction"],
+            ["Amoxicillin-clavulanate", "625 mg oral TDS after food", "5-7 days", "Diarrhoea, cholestatic jaundice"],
+            ["Amoxicillin or penicillin V", "500 mg TDS or 500 mg QID", "5 days for cellulitis", "Targets streptococci only"],
+            ["Clindamycin", "300-450 mg oral TDS-QID", "5-7 days", "C. difficile colitis; stop if diarrhoea"],
+            ["Co-trimoxazole DS", "1-2 tablets BD", "5-7 days", "Rash, SJS, hyperkalaemia; poor strep cover"],
+            ["Doxycycline", "100 mg BD", "5-7 days", "Oesophagitis; not in pregnancy or under 8"],
+            ["Mupirocin 2% nasal", "Both nostrils BD", "5 days", "Resistance with repeated courses"],
+            ["Piperacillin-tazobactam plus clindamycin", "4.5 g IV 6-8-hourly plus 600-900 mg IV", "With debridement", "For necrotising infection only"],
+          ],
+        },
+        {
+          heading: "IDSA severity and plan",
+          columns: ["Grade", "Purulent", "Non-purulent"],
+          rows: [
+            ["Mild", "Incision and drainage alone", "Oral penicillin V, amoxicillin or cephalexin"],
+            ["Moderate", "Drain, culture, oral anti-MRSA antibiotic", "IV cefazolin, ceftriaxone or clindamycin"],
+            ["Severe", "Drain plus IV vancomycin or linezolid", "Emergency debridement plus broad IV antibiotics"],
+          ],
+        },
+        {
+          heading: "Skin infections compared",
+          columns: ["Feature", "Erysipelas", "Cellulitis", "Abscess", "Necrotising fasciitis"],
+          rows: [
+            ["Layer", "Upper dermis, lymphatics", "Deep dermis and fat", "Pus cavity", "Superficial fascia"],
+            ["Organism", "Strep pyogenes", "Strep, Staph", "Staph aureus", "Polymicrobial or group A strep"],
+            ["Clue", "Sharp raised edge", "Indistinct edge", "Fluctuant, collection on ultrasound", "Pain out of proportion, crepitus"],
+            ["Treatment", "Penicillin, elevation", "Amoxicillin or cloxacillin", "Incision and drainage", "Debridement plus IV antibiotics"],
+          ],
+        },
+      ],
+      remember: [
+        "Ubi pus, ibi evacua: no antibiotic crosses the pyogenic membrane.",
+        "Purulent means staph and a knife; non-purulent means strep and an antibiotic.",
+        "Hilton method for any abscess near nerves and vessels.",
+        "Never inject local anaesthetic into pus; block around it.",
+        "One in three perianal abscesses becomes a fistula-in-ano.",
+        "Pain out of proportion is the earliest sign of necrotising fasciitis.",
+        "Every carbuncle gets a glucose and HbA1c.",
+      ],
+    },
     checked: "2026-10",
     updated: [
       "SSC 2026: necrotising infection with sepsis - at least 30 mL/kg crystalloid in 3 h, balanced crystalloid preferred over 0.9% saline, antibiotic within 1 hour.",
@@ -105,6 +418,166 @@ const revision: RevisionSet = {
     ],
   },
   "surgery-office-diabetic-foot": {
+    notes: {
+      sections: [
+        {
+          title: "Definition and key facts",
+          points: [
+            "A **diabetic foot ulcer** is a skin break below the ankles in a person with diabetes.",
+            "The triad is **neuropathy, ischaemia and infection**; infection is a complication, not the cause.",
+            "Ulcers are **neuropathic, ischaemic or neuroischaemic**; neuroischaemic is now the commonest.",
+            "Neuropathic ulcer: warm foot, pulses present, painless, plantar under callus.",
+            "Ischaemic ulcer: cold, pulseless, painful, on toe tips, heel or foot borders.",
+          ],
+        },
+        {
+          title: "Classification that matters",
+          points: [
+            "**Meggitt-Wagner grade 0-5**: from at-risk intact skin to whole-foot gangrene.",
+            "**IWGDF/IDSA infection grade 1-4**: uninfected, mild, moderate and severe (with SIRS).",
+            "Add the suffix **O** when osteomyelitis is present.",
+            "**SINBAD score** of 3 or more means refer to a multidisciplinary foot team.",
+            "IWGDF risk 3 (previous ulcer, amputation or dialysis) needs review every 1-3 months.",
+          ],
+        },
+        {
+          title: "How it happens (pathophysiology)",
+          points: [
+            "1. Hyperglycaemia damages nerves, giving a **stocking-distribution** neuropathy.",
+            "2. **Sensory loss** removes pain, so the patient keeps walking on a wound.",
+            "3. **Motor loss** wastes small foot muscles, causing claw toes and prominent metatarsal heads.",
+            "4. **Autonomic loss** dries and cracks the skin, letting bacteria in.",
+            "5. **Callus** raises local pressure and an ulcer forms beneath it.",
+            "6. Distal tibial artery disease starves the wound of oxygen.",
+            "7. High glucose impairs neutrophils, so infection spreads with muted signs.",
+          ],
+        },
+        {
+          title: "History in the OPD",
+          points: [
+            "Ask how the ulcer began: new footwear, burn, barefoot walking or home callus cutting.",
+            "Numbness, burning or losing chappals unnoticed suggest **loss of protective sensation**.",
+            "**Rest pain** relieved by hanging the leg down means critical ischaemia.",
+            "**Sudden loss of glucose control** is often the first sign of deep infection.",
+            "A **previous ulcer or amputation** is the strongest predictor of a new ulcer.",
+            "A hot, swollen, little-painful foot after a minor twist suggests **Charcot foot**.",
+          ],
+        },
+        {
+          title: "Examination",
+          points: [
+            "Remove shoes and socks in every diabetic and look **between the toes**.",
+            "**10 g monofilament** at the hallux and 1st, 3rd and 5th metatarsal heads.",
+            "Failure to feel the monofilament at any one site means loss of protective sensation.",
+            "Feel dorsalis pedis and posterior tibial pulses; both absent means PAD.",
+            "**ABI under 0.9** is PAD; over 1.3 is unreliable, so use toe pressure.",
+            "**Probe-to-bone** positive makes osteomyelitis highly likely.",
+            "Up to half of severe infections have **no fever** and a normal white count.",
+          ],
+        },
+        {
+          title: "Investigations",
+          points: [
+            "Glucose, HbA1c, ketones, creatinine and electrolytes in every infected foot.",
+            "**ESR over 70 mm/hour** strongly supports osteomyelitis.",
+            "Culture **deep tissue** from the debrided base, never a surface swab.",
+            "**Plain X-ray** for every deep or infected ulcer; repeat at 2-4 weeks.",
+            "**MRI** is the imaging of choice for osteomyelitis; bone biopsy is definitive.",
+            "**Arterial duplex** when pulses are absent or toe pressure is under 30 mmHg.",
+          ],
+        },
+        {
+          title: "Treatment - first line",
+          points: [
+            "**Offloading** is the single most important treatment for a plantar neuropathic ulcer.",
+            "The **total contact cast** (non-removable, knee-high) is the gold standard.",
+            "**Sharp debridement** of callus and slough to a bleeding base at every visit.",
+            "Never debride a **dry black eschar on an ischaemic foot**; paint it and refer.",
+            "Choose dressings by exudate; no dressing is superior for healing.",
+            "**No antibiotic for an uninfected ulcer**; colonisation is not infection.",
+            "Mild infection: oral **amoxicillin-clavulanate** for 1-2 weeks.",
+          ],
+        },
+        {
+          title: "Treatment - next steps",
+          points: [
+            "Moderate infection: often IV, such as ceftriaxone plus metronidazole, for 1-3 weeks.",
+            "Severe infection: **piperacillin-tazobactam** or meropenem, plus vancomycin if MRSA risk.",
+            "Osteomyelitis: **6 weeks** if infected bone is retained; 2-5 days if fully resected.",
+            "Critical ischaemia needs **revascularisation** before or with any minor amputation.",
+            "Give insulin during infection and pause SGLT2 inhibitors and metformin in sepsis.",
+            "Statin and antiplatelet for PAD; stop smoking.",
+          ],
+        },
+        {
+          title: "Complications and red flags",
+          points: [
+            "Wet gangrene, plantar abscess or gas needs **same-day surgical drainage**.",
+            "Plantar pus tracks proximally along tendon sheaths instead of pointing.",
+            "**Acute Charcot foot**: immobilise in a cast now; do not treat as cellulitis.",
+            "An ulcer not 50% smaller after 4 weeks needs reassessment and possible biopsy.",
+          ],
+        },
+        {
+          title: "Referral and follow-up",
+          points: [
+            "Measure and photograph the ulcer at every visit.",
+            "Refer to a foot team for SINBAD 3 or more, exposed bone or PAD with ulcer.",
+            "Healed means **remission**: about 40% recur within 1 year.",
+            "Lifelong therapeutic footwear, worn over 80% of the day, prevents recurrence.",
+            "Annual monofilament, pulse and foot checks for every diabetic prevent amputations.",
+          ],
+        },
+      ],
+      tables: [
+        {
+          heading: "Drugs for the diabetic foot",
+          columns: ["Drug", "Dose and route", "Duration", "Key side effects / cautions"],
+          rows: [
+            ["Amoxicillin-clavulanate", "625 mg oral TDS or 1.2 g IV 8-hourly", "1-2 weeks (mild)", "Diarrhoea, cholestatic jaundice"],
+            ["Cephalexin", "500 mg oral QID", "1-2 weeks (mild)", "Gram-positive cover only"],
+            ["Clindamycin", "300-450 mg oral TDS; 600 mg IV", "1-2 weeks (mild)", "C. difficile colitis"],
+            ["Ceftriaxone plus metronidazole", "1-2 g IV OD plus 500 mg 8-hourly", "1-3 weeks (moderate)", "Metronidazole: no alcohol"],
+            ["Piperacillin-tazobactam", "4.5 g IV 6-8-hourly", "2-4 weeks (severe)", "Renal dose adjustment"],
+            ["Vancomycin or linezolid", "15-20 mg/kg IV or 600 mg BD", "With severe regimen if MRSA", "Nephrotoxicity; linezolid low platelets"],
+            ["Levofloxacin", "750 mg oral OD", "Up to 6 weeks for bone", "Tendon rupture; exclude TB first"],
+            ["Aspirin plus atorvastatin", "75-150 mg OD plus 40-80 mg OD", "Lifelong", "Gastric bleeding; myalgia"],
+            ["Pregabalin", "75 mg BD, up to 300 mg/day", "Long term", "Dizziness, oedema; reduce in CKD"],
+          ],
+        },
+        {
+          heading: "Meggitt-Wagner grades",
+          columns: ["Grade", "Description", "Management"],
+          rows: [
+            ["0", "Intact skin, at-risk foot", "Education, footwear, callus care"],
+            ["1", "Superficial ulcer", "Debride, offload, dress"],
+            ["2", "Deep to tendon, capsule or bone", "Debride, X-ray, deep culture"],
+            ["3", "Abscess, osteomyelitis or joint sepsis", "Admit, drain, bone biopsy"],
+            ["4", "Forefoot or heel gangrene", "Revascularise, toe or ray amputation"],
+            ["5", "Whole-foot gangrene", "Below-knee amputation"],
+          ],
+        },
+        {
+          heading: "IWGDF/IDSA infection grade",
+          columns: ["Grade", "Clinical picture", "Route"],
+          rows: [
+            ["1 Uninfected", "No signs of infection", "No antibiotic"],
+            ["2 Mild", "Erythema 0.5-2 cm, skin only", "Oral, outpatient"],
+            ["3 Moderate", "Erythema over 2 cm or deeper tissue", "Often IV initially"],
+            ["4 Severe", "Any infection with SIRS", "Admit, IV, urgent surgery"],
+          ],
+        },
+      ],
+      remember: [
+        "Offloading heals the ulcer, not the dressing.",
+        "Pare the callus before grading; the ulcer beneath is always bigger.",
+        "ABI over 1.3 is not normal; use toe pressure under 30 mmHg.",
+        "Probe-to-bone positive is close to diagnostic of osteomyelitis.",
+        "Deep tissue for culture, never a surface swab.",
+        "Never debride dry black eschar on an ischaemic foot.",
+        "Healed means remission: lifelong footwear and review.",
+      ],
+    },
     checked: "2026-10",
     master: {
       heading: "Master revision table - diabetic foot ulcer",
@@ -155,6 +628,161 @@ const revision: RevisionSet = {
     ],
   },
   "surgery-office-minor-procedures": {
+    notes: {
+      sections: [
+        {
+          title: "Definition and key facts",
+          points: [
+            "**Office surgery** means LA procedures on superficial, clinically benign lesions without theatre.",
+            "Typical lesions: lipoma, epidermoid cyst, ingrown toenail, skin tag, wart and diagnostic biopsy.",
+            "A **lipoma** is mature fat in a thin fibrous capsule.",
+            "An **epidermoid cyst** is keratin in a squamous-lined cyst, tethered to skin at a punctum.",
+            "Every specimen removed goes for **histopathology**, and every report is chased.",
+          ],
+        },
+        {
+          title: "Classification that matters",
+          points: [
+            "The key decision is **office versus refer**.",
+            "Refer any lump **over 5 cm, deep to fascia, growing fast, painful or recurrent**.",
+            "Refer lumps in the parotid, anterior neck, groin, scrotum or midline scalp and spine.",
+            "**Heifetz stage 1** ingrown nail is treated conservatively; stages 2-3 need partial avulsion.",
+            "Biopsy types: **punch, shave, incisional and excisional**; every suspected melanoma is excisional.",
+            "**Glasgow 7-point score of 3 or more** means suspected-melanoma referral.",
+          ],
+        },
+        {
+          title: "How it happens (pathophysiology)",
+          points: [
+            "1. A lipoma shells out bloodlessly through the **avascular plane** around its capsule.",
+            "2. Retained capsule, cyst wall or nail matrix causes **recurrence**.",
+            "3. An epidermoid cyst forms when a hair follicle opening is blocked or implanted.",
+            "4. The ingrown nail edge provokes a foreign-body reaction and then granulation tissue.",
+            "5. The **lateral horns of the nail matrix** regrow the spike unless destroyed by phenol.",
+            "6. Liposarcoma arises de novo in deep sites; enucleation contaminates the compartment.",
+          ],
+        },
+        {
+          title: "History in the OPD",
+          points: [
+            "**Rapid growth** over weeks or regrowth after excision suggests sarcoma.",
+            "Cheesy foul discharge through a pore means an epidermoid cyst.",
+            "For a mole, ask about change in size, shape or colour, itching and bleeding.",
+            "Before nail surgery ask about **diabetes, PAD and smoking**.",
+            "Ask about anticoagulants, pacemaker (bipolar only), allergy and keloid tendency.",
+          ],
+        },
+        {
+          title: "Examination",
+          points: [
+            "Lipoma: lobulated, **positive slip sign**, skin freely pinchable, pseudofluctuant.",
+            "Epidermoid cyst: **punctum** in about half, tethered to skin, mobile over deep tissue.",
+            "Contract the underlying muscle; a subfascial lump becomes fixed or disappears.",
+            "Never incise a pulsatile lump or one with a **cough impulse**.",
+            "Check pedal pulses and monofilament before any toe surgery in a diabetic.",
+            "Paring a wart shows **black dots**; a corn shows a central core.",
+          ],
+        },
+        {
+          title: "Investigations",
+          points: [
+            "Histopathology of every specimen in **10% formalin**, about ten times its volume.",
+            "Ultrasound for a lump of uncertain nature or depth.",
+            "**MRI and sarcoma referral** before any biopsy of a large, deep or growing lump.",
+            "Image any **midline scalp or lumbosacral** swelling before excision.",
+            "Immunofluorescence specimens go in Michel medium or saline, never formalin.",
+            "No routine blood tests for minor procedures; INR only if on warfarin.",
+          ],
+        },
+        {
+          title: "Treatment - first line",
+          points: [
+            "Take written consent **before** injecting local anaesthetic.",
+            "Mark a lipoma with the patient **sitting**, then operate lying down.",
+            "Lipoma: incise over the summit and deliver the capsule intact by blunt dissection.",
+            "Cyst: elliptical incision **including the punctum**; remove the wall intact.",
+            "Never excise an **infected cyst**; drain it and excise 6-8 weeks later.",
+            "Stage 1 ingrown nail: cut **straight across**, pack cotton under the corner, saline soaks.",
+          ],
+        },
+        {
+          title: "Treatment - next steps",
+          points: [
+            "Ingrown nail stage 2-3: **partial avulsion with phenol matricectomy**.",
+            "Use a ring block with **plain 1% lignocaine**, 2-3 mL each side of the toe.",
+            "Apply **80-88% phenol** for 30 seconds three times; recurrence under 5%.",
+            "Simple whole-nail avulsion alone recurs in **over 60%**.",
+            "Warts: **salicylic acid** nightly up to 12 weeks, or cryotherapy every 2-3 weeks.",
+            "Suspected melanoma: excision biopsy with **1-3 mm margin**; never shave or curette.",
+          ],
+        },
+        {
+          title: "Complications and red flags",
+          points: [
+            "**Haematoma and seroma** are commonest after lipoma excision; use a pressure dressing.",
+            "A **forgotten digital tourniquet** causes toe gangrene; note its time.",
+            "Unexpected malignancy on histology means recall and wide re-excision.",
+            "Wart plume carries viable HPV; wear an N95 mask and use a smoke evacuator.",
+            "Perioral tingling during injection is early **LA toxicity**; stop and get lipid ready.",
+          ],
+        },
+        {
+          title: "Referral and follow-up",
+          points: [
+            "Review nail surgery at **48 hours**; phenolised groove drains for 2-4 weeks.",
+            "Remove sutures: face 5 days, trunk 7-10, lower limb 10-14.",
+            "Refer warts that are extensive, facial or not cleared after 3-4 cryotherapy sessions.",
+            "Refer a non-healing wart-like lesion in a scar or sinus as possible SCC.",
+          ],
+        },
+      ],
+      tables: [
+        {
+          heading: "Drugs for minor procedures",
+          columns: ["Drug", "Dose and route", "Duration", "Key side effects / cautions"],
+          rows: [
+            ["Lignocaine 1%", "Max 3 mg/kg plain; 7 mg/kg with adrenaline", "Single procedure", "LAST; plain LA if digit ischaemic"],
+            ["Bupivacaine 0.25-0.5%", "Max 2 mg/kg (150 mg)", "Lasts 4-8 hours", "Cardiotoxic; never IV"],
+            ["EMLA cream", "Under occlusion 60 min before", "Single use", "Methaemoglobinaemia in infants"],
+            ["Salicylic acid 12-26%", "Nightly after soaking and paring", "Up to 12 weeks", "Avoid face, genitals, diabetic feet"],
+            ["Imiquimod 5% cream", "Bedtime 3 times a week", "Up to 16 weeks", "Erosions; not in pregnancy"],
+            ["Phenol 80-88%", "30 seconds x 3 to nail matrix", "Once", "Chemical burn; protect skin"],
+            ["Cephalexin or cloxacillin", "500 mg oral QID", "5 days (infected cyst or nail)", "Not routine after clean surgery"],
+            ["Paracetamol plus ibuprofen", "1 g 6-hourly plus 400 mg TDS", "2-3 days", "Ibuprofen after food"],
+          ],
+        },
+        {
+          heading: "Lipoma versus epidermoid cyst",
+          columns: ["Feature", "Lipoma", "Epidermoid cyst"],
+          rows: [
+            ["Contents", "Mature fat", "Cheesy keratin"],
+            ["Skin", "Freely pinchable", "Tethered at punctum"],
+            ["Sign", "Slip sign, lobulated edge", "Punctum in about half"],
+            ["Sites", "Back, shoulder, neck, arm", "Scalp, face, back; never palms or soles"],
+            ["Recurrence from", "Retained capsule", "Retained cyst wall"],
+            ["Trap", "Over 5 cm or deep may be sarcoma", "Cock's peculiar tumour mimics SCC"],
+          ],
+        },
+        {
+          heading: "Choosing a skin biopsy",
+          columns: ["Type", "Use for", "Avoid for"],
+          rows: [
+            ["Punch 3-4 mm", "Rashes and inflammatory disease", "Suspected melanoma"],
+            ["Shave", "Skin tag, seborrhoeic keratosis", "Any possible melanoma"],
+            ["Incisional", "Large lesion, panniculitis", "Small excisable lesion"],
+            ["Excisional", "Every suspected melanoma, 1-3 mm margin", "Large lesions needing reconstruction"],
+          ],
+        },
+      ],
+      remember: [
+        "Slip sign and pinchable skin is a lipoma; punctum and tethered skin is a cyst.",
+        "Recurrence means residual tissue: capsule, cyst wall or nail matrix.",
+        "Never excise an infected cyst; drain first, excise 6-8 weeks later.",
+        "Phenol 30 seconds three times: ingrown nail recurrence under 5%.",
+        "Never shave a possible melanoma; Breslow thickness is lost.",
+        "Over 5 cm, deep or growing: MRI and sarcoma referral, never enucleate.",
+      ],
+    },
     checked: "2026-10",
     master: {
       heading: "Master revision table - office minor procedures",
@@ -203,6 +831,158 @@ const revision: RevisionSet = {
     ],
   },
   "surgery-office-hernia": {
+    notes: {
+      sections: [
+        {
+          title: "Definition and key facts",
+          points: [
+            "A **hernia** is protrusion of a viscus through an abnormal opening in its containing wall.",
+            "It has three parts: the **sac**, its coverings and its contents.",
+            "Constriction occurs at the **neck** of the sac.",
+            "Inguinal hernias are **70-75%** of all hernias; indirect is commonest in both sexes.",
+            "**Divarication of recti** has no fascial defect and is not a hernia.",
+          ],
+        },
+        {
+          title: "Classification that matters",
+          points: [
+            "By site: inguinal, femoral, umbilical, paraumbilical, epigastric and incisional.",
+            "By state: **reducible, irreducible, obstructed and strangulated**.",
+            "**Indirect** hernia lies lateral to the inferior epigastric vessels, through the deep ring.",
+            "**Direct** hernia bulges medial to them, through Hesselbach triangle.",
+            "**Richter hernia** traps part of the bowel wall and strangulates without obstructing.",
+            "EHS groin classification: primary or recurrent; lateral, medial or femoral; defect size 1-3.",
+          ],
+        },
+        {
+          title: "How it happens (pathophysiology)",
+          points: [
+            "1. A weak wall: patent processus vaginalis, ageing, obesity, scars or smoking.",
+            "2. Raised pressure: chronic cough, constipation, prostatic straining or ascites.",
+            "3. Contents push into the sac through the defect.",
+            "4. A tight neck first blocks **venous and lymphatic return**.",
+            "5. Contents swell, the neck tightens further and **arterial inflow stops**.",
+            "6. Gangrene and perforation follow within hours.",
+          ],
+        },
+        {
+          title: "History in the OPD",
+          points: [
+            "Ask whether the lump **disappears on lying down** and returns on coughing.",
+            "Sudden constant severe pain with a lump that no longer goes back means **strangulation**.",
+            "Colicky pain, vomiting and constipation suggest an obstructed hernia.",
+            "Ask about cough, constipation and **prostatic symptoms**, which cause recurrence.",
+            "A new hernia with weight loss or rectal bleeding needs colorectal cancer excluded.",
+          ],
+        },
+        {
+          title: "Examination",
+          points: [
+            "Examine **standing first, then lying**, both groins, scrotum and abdomen.",
+            "**Neck of an inguinal hernia is above and medial** to the pubic tubercle.",
+            "**Neck of a femoral hernia is below and lateral** to the pubic tubercle.",
+            "If you cannot get above a scrotal lump, it is coming from the abdomen.",
+            "**Deep ring occlusion test** controls an indirect hernia but not a direct one.",
+            "Tense, tender, irreducible lump with **no cough impulse** means strangulation.",
+            "Do a rectal examination for prostate size and rectal tumour.",
+          ],
+        },
+        {
+          title: "Investigations",
+          points: [
+            "Diagnosis of a groin hernia is **clinical**; no imaging is needed if typical.",
+            "**Dynamic ultrasound** for an uncertain lump or groin pain without a lump.",
+            "**CT** for obturator, Spigelian or complex incisional hernias.",
+            "Look for the cause: PSA, chest X-ray, sputum for TB, colonoscopy if needed.",
+            "In strangulation, imaging must never delay surgical referral.",
+          ],
+        },
+        {
+          title: "Treatment - first line",
+          points: [
+            "**Every femoral hernia** is referred for surgery at diagnosis.",
+            "Symptomatic inguinal hernias are referred for elective **tension-free mesh repair**.",
+            "Watchful waiting suits a minimally symptomatic inguinal hernia in a man.",
+            "About **70%** of watched hernias cross over to surgery within 5-10 years.",
+            "Treat cough, constipation and prostatism; stop smoking 4 weeks before surgery.",
+            "Infant umbilical hernia: reassure, no strapping or coins; most close by 4-5 years.",
+          ],
+        },
+        {
+          title: "Treatment - next steps",
+          points: [
+            "**Lichtenstein mesh repair** is the gold-standard open repair, possible under local anaesthesia.",
+            "**Laparoscopic repair (TEP or TAPP)** for bilateral, recurrent-after-open and female hernias.",
+            "Children need **herniotomy alone**, with no mesh.",
+            "Inguinal hernias in women are repaired because many are actually femoral.",
+            "A truss is obsolete except in patients unfit for any operation.",
+          ],
+        },
+        {
+          title: "Complications and red flags",
+          points: [
+            "**Never attempt taxis** of a tender hernia; gangrenous bowel may be reduced.",
+            "Resuscitate a strangulated hernia: nil by mouth, IV fluids, NG tube and antibiotics.",
+            "Richter hernia: toxic patient with a femoral lump but no vomiting.",
+            "Thin elderly woman with obstruction and medial thigh pain suggests **obturator hernia**.",
+            "After repair: chronic groin pain in 10-12% and recurrence in 1-5%.",
+          ],
+        },
+        {
+          title: "Referral and follow-up",
+          points: [
+            "Refer the same hour for a strangulated, obstructed or tender irreducible hernia.",
+            "Refer within days for femoral hernias and inguinal hernias in infants or girls.",
+            "After repair, sedentary work in 1-2 weeks and heavy lifting at about 4-6 weeks.",
+            "Repair a recurrence by the approach not used before.",
+          ],
+        },
+      ],
+      tables: [
+        {
+          heading: "Drugs around hernia care",
+          columns: ["Drug", "Dose and route", "Duration", "Key side effects / cautions"],
+          rows: [
+            ["Paracetamol", "1 g oral 6-hourly, max 4 g/day", "3-7 days after repair", "Liver toxicity in overdose"],
+            ["Ibuprofen or diclofenac", "400 mg TDS or 50 mg BD-TDS", "3-5 days", "Gastritis, AKI; avoid in CKD"],
+            ["Lignocaine and bupivacaine", "Max 3 mg/kg and 2 mg/kg", "During repair", "Calculate combined dose; LAST"],
+            ["Cefazolin", "2 g IV within 60 min of incision", "Single dose", "Only high-risk patients or settings"],
+            ["Lactulose or PEG", "15-20 mL BD or 17 g OD", "4-6 weeks", "Bloating"],
+            ["Tamsulosin", "0.4 mg OD after a meal", "Long term", "Postural hypotension, floppy iris"],
+            ["Ceftriaxone plus metronidazole", "2 g IV plus 500 mg IV 8-hourly", "Emergency, before transfer", "Metronidazole: no alcohol"],
+          ],
+        },
+        {
+          heading: "Indirect, direct and femoral hernia",
+          columns: ["Feature", "Indirect", "Direct", "Femoral"],
+          rows: [
+            ["Typical patient", "Any age, children, young men", "Older men", "Elderly multiparous women"],
+            ["Epigastric vessels", "Lateral", "Medial", "Below inguinal ligament"],
+            ["Neck and pubic tubercle", "Above and medial", "Above and medial", "Below and lateral"],
+            ["Shape", "Pear-shaped, into scrotum", "Globular, rarely scrotal", "Small upper-thigh lump"],
+            ["Strangulation risk", "Moderate", "Low", "Highest"],
+          ],
+        },
+        {
+          heading: "Hernia by state",
+          columns: ["State", "Features", "Action"],
+          rows: [
+            ["Reducible", "Soft, cough impulse, goes back lying down", "Elective repair"],
+            ["Irreducible", "Non-tender lump that will not reduce", "Urgent referral"],
+            ["Obstructed", "Colic, vomiting, distension, constipation", "Emergency: NBM, IV fluids, NG tube"],
+            ["Strangulated", "Tense, tender, no cough impulse, toxic", "Emergency surgery; never taxis"],
+          ],
+        },
+      ],
+      remember: [
+        "Judge the neck, not the fundus, against the pubic tubercle.",
+        "Loss of cough impulse in a tender lump means strangulation.",
+        "Richter hernia strangulates without obstructing.",
+        "Never taxis a tender hernia.",
+        "Every femoral hernia gets surgery; 40% present as emergencies.",
+        "Children get herniotomy alone; adults get tension-free mesh.",
+      ],
+    },
     checked: "2026-10",
     updated: [
       "HerniaSurge 2023: antibiotic prophylaxis for open mesh repair is risk-tiered - not for average-risk patients in low-infection settings, suggested in high-risk patients, recommended for all in high-infection-risk environments.",
@@ -257,6 +1037,162 @@ const revision: RevisionSet = {
     ],
   },
   "surgery-office-breast-lump": {
+    notes: {
+      sections: [
+        {
+          title: "Definition and key facts",
+          points: [
+            "A **breast lump** is a discrete swelling distinct from surrounding nodularity and the other breast.",
+            "The question is always **benign or malignant**, answered only by triple assessment.",
+            "**Triple assessment** is clinical examination, imaging and core biopsy, each scored 1-5.",
+            "A lump is benign only when **all three arms are concordantly benign**.",
+            "Sensitivity exceeds **99%** when all three arms agree.",
+          ],
+        },
+        {
+          title: "Classification that matters",
+          points: [
+            "Benign disease is grouped as **ANDI**: development, cyclical change and involution.",
+            "**BI-RADS 3** is probably benign (2% or less); 4 is suspicious and needs biopsy.",
+            "Core biopsy **B3** (uncertain potential) must be excised.",
+            "**B5a** is in situ and **B5b** is invasive carcinoma.",
+            "TNM: T1 up to 2 cm, T2 over 2-5 cm, T3 over 5 cm, T4 chest wall or skin.",
+          ],
+        },
+        {
+          title: "How it happens (pathophysiology)",
+          points: [
+            "1. Most lesions arise in the **terminal duct lobular unit**.",
+            "2. Cumulative unopposed oestrogen exposure raises cancer risk.",
+            "3. **BRCA1 and BRCA2** mutations give a lifetime risk up to 70%.",
+            "4. Invasive cancer breaks the basement membrane and becomes hard and fixed.",
+            "5. Tumour shortens **Cooper ligaments**, causing skin dimpling.",
+            "6. Blocked dermal lymphatics cause **peau d'orange**.",
+            "7. About **75% of lymph drains to the axilla**, the rest to internal mammary nodes.",
+          ],
+        },
+        {
+          title: "History in the OPD",
+          points: [
+            "A painless, hard, steadily growing lump suggests carcinoma.",
+            "A lump that swells premenstrually and settles suggests ANDI; re-examine after the period.",
+            "**Spontaneous single-duct blood-stained discharge** suggests papilloma or carcinoma.",
+            "Ask about **family history** of breast or ovarian cancer and age at diagnosis.",
+            "Ask about menarche, menopause, parity, breastfeeding, HRT and chest irradiation.",
+            "Trauma suggests fat necrosis but never excuses a biopsy.",
+          ],
+        },
+        {
+          title: "Examination",
+          points: [
+            "Use a female chaperone and examine the **normal breast first**.",
+            "Inspect with arms by the side, **arms raised** and **hands pressed on hips**.",
+            "Palpate with the **flat of the fingers**, including the axillary tail.",
+            "Test fixity to skin, to pectoralis major (hand on hip) and to chest wall.",
+            "Examine all axillary groups and the **supraclavicular fossa**.",
+            "Paget disease starts **on the nipple**; eczema starts on the areola.",
+          ],
+        },
+        {
+          title: "Investigations",
+          points: [
+            "**Ultrasound under 40 years**, and in pregnancy and lactation at any age.",
+            "**Mammography plus ultrasound at 40 and over**.",
+            "**Core needle biopsy** (14-16 G) gives invasion, grade and ER, PR, HER2 status.",
+            "A normal mammogram never overrules a suspicious lump; 10-15% of cancers are occult.",
+            "Cyst aspiration is benign only if the lump disappears, fluid is not bloody and it does not refill.",
+            "Bilateral milky discharge: pregnancy test, **prolactin and TSH**.",
+          ],
+        },
+        {
+          title: "Treatment - first line",
+          points: [
+            "**Fibroadenoma** under 3 cm in a woman under 30, concordantly benign: observe.",
+            "Cyclical mastalgia: reassure, supportive bra and **topical diclofenac 1% gel**.",
+            "Evening primrose oil is **no longer recommended**.",
+            "Symptomatic simple cyst: aspirate and review in 4-6 weeks.",
+            "**Lactational mastitis**: continue breastfeeding and give cloxacillin for 10-14 days.",
+            "Periductal mastitis in a smoker: amoxicillin-clavulanate and stop smoking.",
+          ],
+        },
+        {
+          title: "Treatment - next steps",
+          points: [
+            "**Phyllodes tumour** needs wide excision with at least a 1 cm margin.",
+            "Single-duct bloody discharge from papilloma needs **microdochectomy**.",
+            "Cancer: breast conservation plus radiotherapy equals mastectomy for survival.",
+            "**Sentinel node biopsy** for a clinically node-negative axilla.",
+            "ER-positive: **tamoxifen** premenopausal, **aromatase inhibitor** postmenopausal, for 5-10 years.",
+            "HER2-positive: **trastuzumab** for 1 year with 3-monthly echocardiography.",
+          ],
+        },
+        {
+          title: "Special groups",
+          points: [
+            "A lump in pregnancy is assessed by ultrasound and core biopsy, not ignored.",
+            "**Inflammatory carcinoma** mimics mastitis; biopsy if not settling in 1-2 weeks.",
+            "**Tuberculous mastitis** shows a chronic lump with sinus; core biopsy and CBNAAT.",
+            "Male breast: concentric disc is **gynaecomastia**; eccentric hard lump may be cancer.",
+          ],
+        },
+        {
+          title: "Referral and follow-up",
+          points: [
+            "Urgent referral for an unexplained lump at **30 or over**.",
+            "Urgent referral for unilateral nipple change at 50 or over, or suspicious skin change.",
+            "India NP-NCD: **clinical breast examination every 5 years** for women 30-65.",
+            "After cancer: annual mammography, bone health and lymphoedema care.",
+            "Postmenopausal bleeding on tamoxifen must be reported at once.",
+          ],
+        },
+      ],
+      tables: [
+        {
+          heading: "Drugs in breast disease",
+          columns: ["Drug", "Dose and route", "Duration", "Key side effects / cautions"],
+          rows: [
+            ["Diclofenac 1% gel", "Apply TDS to tender area", "Painful phase", "Local irritation"],
+            ["Cloxacillin", "500 mg oral QID, before food", "10-14 days (mastitis)", "Safe in breastfeeding"],
+            ["Amoxicillin-clavulanate", "625 mg oral TDS", "7-10 days (periductal)", "Diarrhoea"],
+            ["Cabergoline", "0.25 mg twice weekly, up to 1 mg", "Until prolactin normal", "Nausea; valvulopathy at high dose"],
+            ["Tamoxifen", "20 mg oral OD", "5-10 years", "VTE, endometrial cancer, hot flushes"],
+            ["Letrozole or anastrozole", "2.5 mg or 1 mg oral OD", "5-10 years", "Arthralgia, osteoporosis"],
+            ["Zoledronic acid", "4 mg IV every 6 months", "3 years", "Jaw osteonecrosis; check calcium"],
+            ["Trastuzumab", "IV or SC every 3 weeks", "1 year", "Cardiotoxicity"],
+          ],
+        },
+        {
+          heading: "Triple assessment",
+          columns: ["Arm", "What is done", "Score"],
+          rows: [
+            ["Clinical", "Inspection, palpation of breast, axilla, neck", "P1-P5"],
+            ["Imaging", "Ultrasound under 40; mammogram plus ultrasound 40+", "U1-U5 or M1-M5"],
+            ["Pathology", "Image-guided core biopsy", "B1-B5"],
+            ["Concordance", "Compare all three", "Any discordance means excision"],
+          ],
+        },
+        {
+          heading: "Common breast lumps",
+          columns: ["Lump", "Typical age", "Feel", "Plan"],
+          rows: [
+            ["Fibroadenoma", "15-30", "Smooth, highly mobile", "Observe if small and concordant"],
+            ["Cyst", "35-55", "Smooth, tense, sudden", "Aspirate"],
+            ["Carcinoma", "Over 40", "Hard, irregular, tethered", "Urgent referral"],
+            ["Fat necrosis", "Any, after trauma", "Hard, mimics cancer", "Biopsy"],
+            ["Phyllodes", "40-50", "Large, rapidly growing", "Wide excision, 1 cm margin"],
+          ],
+        },
+      ],
+      remember: [
+        "Benign only if all three arms are benign.",
+        "Ultrasound under 40; mammography plus ultrasound at 40 and over.",
+        "Core biopsy beats FNAC: it shows invasion and receptor status.",
+        "A normal mammogram never overrules a suspicious lump.",
+        "Paget disease starts on the nipple; eczema spares it.",
+        "Cyst rules: disappears, not bloody, does not refill.",
+        "Tamoxifen before menopause, aromatase inhibitor after.",
+      ],
+    },
     checked: "2026-10",
     master: {
       heading: "Master revision table - breast lump and triple assessment",
@@ -307,6 +1243,163 @@ const revision: RevisionSet = {
     ],
   },
   "surgery-office-catheter-ngt-injection": {
+    notes: {
+      sections: [
+        {
+          title: "Definition and key facts",
+          points: [
+            "Every procedure follows one sequence: indication, consent, chaperone, asepsis, size, anatomy, confirmation, record.",
+            "Catheter indications are therapeutic, diagnostic and perioperative.",
+            "**French size = circumference in mm**; divide by 3 for diameter.",
+            "Use **14-16 Fr** for adults, 8-10 Fr for children, **20-24 Fr three-way** for clots.",
+            "Injection routes: intradermal 0.1 mL, subcutaneous 1-2 mL, IM up to 3-4 mL ventrogluteal.",
+          ],
+        },
+        {
+          title: "Classification that matters",
+          points: [
+            "The one absolute contraindication to urethral catheter is **suspected urethral injury**.",
+            "Signs of urethral injury: blood at the meatus, butterfly haematoma, high-riding prostate.",
+            "Catheters: short-term under 14 days, long-term silicone up to 12 weeks, or intermittent self-catheterisation.",
+            "NG tubes: wide-bore **Ryle 14-18 Fr** for drainage; fine-bore 8-12 Fr for feeding.",
+            "No nasal tube with **base-of-skull fracture**; use the orogastric route.",
+          ],
+        },
+        {
+          title: "How it happens (pathophysiology)",
+          points: [
+            "1. The male urethra is 18-20 cm with a fixed subpubic and a mobile prepubic curve.",
+            "2. Holding the penis upright at 90 degrees straightens the prepubic curve.",
+            "3. Forcing against the external sphincter creates a **false passage**.",
+            "4. Bacteria ascend along the catheter and form a **biofilm** within days.",
+            "5. CAUTI risk rises **3-7% per catheter-day**.",
+            "6. Gastric aspirate is acidic, so **pH 5.5 or less** confirms the stomach.",
+            "7. The **sciatic nerve** lies near the dorsogluteal site but not the ventrogluteal site.",
+          ],
+        },
+        {
+          title: "History in the OPD",
+          points: [
+            "Retention: time since last void, prostatic symptoms and drugs such as anticholinergics.",
+            "Ask about pelvic trauma, stricture and previous difficult catheterisation.",
+            "Ask about **latex** allergy; use silicone catheters if present.",
+            "Before NG: head injury, CSF leak, facial fracture, corrosive ingestion or varices.",
+            "Before injection: check the seven rights, allergy and anticoagulant use.",
+            "Ask whether the injection is needed at all; oral drugs often suffice.",
+          ],
+        },
+        {
+          title: "Examination",
+          points: [
+            "Retention: a dull suprapubic mass you cannot get below.",
+            "Look for urethral injury signs before any catheter.",
+            "Before NG: check nasal patency, **Battle sign, raccoon eyes** and gag reflex.",
+            "**Ventrogluteal landmark**: palm on greater trochanter, index finger on ASIS; inject in the V.",
+            "Deltoid site: 2-3 finger-breadths below the acromion, avoiding axillary and radial nerves.",
+            "Anaphylaxis has hypotension, wheeze and urticaria; vasovagal has bradycardia and quick recovery.",
+          ],
+        },
+        {
+          title: "Investigations",
+          points: [
+            "**Bladder scan** before catheterising uncertain retention.",
+            "Creatinine and electrolytes after relieving chronic retention.",
+            "**Retrograde urethrogram** first if urethral injury is suspected.",
+            "Culture catheter urine only if symptomatic; never routinely dipstick catheter urine.",
+            "NG position: **aspirate pH 5.5 or less**, or X-ray if no aspirate or pH higher.",
+            "Never confirm NG position by the **whoosh test**, litmus or bubbling.",
+          ],
+        },
+        {
+          title: "Treatment - first line",
+          points: [
+            "Instil **10-20 mL lignocaine 2% gel** in men and wait 3-5 minutes.",
+            "**Advance to the hilt and see urine** before inflating the balloon.",
+            "Inflate with **10 mL sterile water**; stop if painful.",
+            "**Replace the foreskin** after catheterisation to prevent paraphimosis.",
+            "NG: measure **NEX** (nose, earlobe, xiphisternum), pass along the nasal floor, advance with swallows.",
+            "IM: 23 G needle at 90 degrees into the ventrogluteal site; do not massage.",
+          ],
+        },
+        {
+          title: "Treatment - next steps",
+          points: [
+            "Start **tamsulosin 0.4 mg** 2-3 days before a trial without catheter.",
+            "Treat symptomatic CAUTI for **7 days** (non-fluoroquinolone), after changing an old catheter.",
+            "Do not treat asymptomatic bacteriuria or give prophylaxis at catheter change.",
+            "Use the **Z-track** technique for irritant IM drugs.",
+            "Consider **PEG** if tube feeding is needed beyond 4-6 weeks.",
+            "Give thiamine before feeding a malnourished patient to prevent refeeding syndrome.",
+          ],
+        },
+        {
+          title: "Complications and red flags",
+          points: [
+            "Pain on balloon inflation means it is in the urethra; deflate at once.",
+            "**Post-obstructive diuresis** over 200 mL/hour needs electrolytes and partial fluid replacement.",
+            "Coughing or voice change while passing NG means the airway; withdraw.",
+            "Foot drop after a gluteal injection means **sciatic nerve injury**.",
+            "**Anaphylaxis**: lie flat, **adrenaline 0.5 mg IM** into the thigh, repeat every 5 minutes.",
+            "Needle-stick: wash, do not squeeze, and start **TLD within 2 hours**, for 28 days.",
+          ],
+        },
+        {
+          title: "Referral and follow-up",
+          points: [
+            "Review every indwelling catheter's need daily; early removal prevents CAUTI.",
+            "Refer to urology for failed catheterisation, false passage or failed TWOC twice.",
+            "Needle-stick follow-up tests at 6 weeks, 3 months and 6 months.",
+            "Observe for 30 minutes after vaccines with adrenaline ready.",
+          ],
+        },
+      ],
+      tables: [
+        {
+          heading: "Drugs for catheter, NG tube and injection work",
+          columns: ["Drug", "Dose and route", "Duration", "Key side effects / cautions"],
+          rows: [
+            ["Lignocaine 2% gel", "10-20 mL men, 5-6 mL women, urethral", "Wait 3-5 min", "Absorption from torn urethra"],
+            ["Tamsulosin", "0.4 mg oral OD after a meal", "From 2-3 days before TWOC", "Postural hypotension, floppy iris"],
+            ["Cephalexin or ceftriaxone", "500 mg oral 12-hourly or 1-2 g IV OD", "7 days for CAUTI", "Only if symptomatic"],
+            ["Oxybutynin", "2.5-5 mg oral BD-TDS", "For catheter spasm", "Confusion in elderly; avoid in dementia"],
+            ["Adrenaline 1:1000", "0.5 mg IM thigh (6-12 y 0.3 mg; under 6 y 0.15 mg)", "Repeat every 5 min", "Never undiluted IV bolus"],
+            ["TLD (tenofovir, lamivudine, dolutegravir)", "1 tablet oral OD", "28 days", "Start within 2 h, not after 72 h"],
+            ["Hepatitis B immunoglobulin", "0.06 mL/kg IM (about 500 IU)", "Within 24 h, plus vaccine", "Different site from vaccine"],
+            ["Thiamine", "200-300 mg oral daily", "First 10 days of refeeding", "Give before feeds start"],
+          ],
+        },
+        {
+          heading: "Injection routes",
+          columns: ["Route", "Site", "Needle and angle", "Volume"],
+          rows: [
+            ["IM ventrogluteal", "Centre of V on the hip", "23 G, 90 degrees", "Up to 3-4 mL"],
+            ["IM deltoid", "2-3 fingers below acromion", "23-25 G, 90 degrees", "1-2 mL"],
+            ["IM vastus lateralis", "Anterolateral mid-thigh", "23-25 G, 90 degrees", "1 mL infant"],
+            ["Subcutaneous", "Abdomen, thigh, back of arm", "4-6 mm pen needle, 90 degrees", "1-2 mL"],
+            ["Intradermal", "Forearm; left deltoid for BCG", "26-27 G, bevel up, 10-15 degrees", "0.1 mL"],
+          ],
+        },
+        {
+          heading: "Catheters and tubes",
+          columns: ["Device", "Use", "Key error to avoid"],
+          rows: [
+            ["Two-way Foley 14-16 Fr", "Routine drainage and retention", "Inflating in the urethra"],
+            ["Three-way Foley 20-24 Fr", "Clot retention and irrigation", "Using a two-way that blocks"],
+            ["Coude tip", "Large prostate", "Rotating the tip"],
+            ["Suprapubic catheter", "Urethral injury or failed urethral route", "Inserting through a lower abdominal scar"],
+            ["Ryle tube 14-18 Fr", "Decompression and drainage", "Confirming by auscultation"],
+          ],
+        },
+      ],
+      remember: [
+        "Advance to the hilt and see urine before inflating; replace the foreskin.",
+        "Inflate with sterile water; deflate passively, never cut the catheter.",
+        "French size divided by 3 equals diameter in mm.",
+        "NG position: pH 5.5 or less, or X-ray, never the whoosh test.",
+        "Ventrogluteal is the safest IM site; vaccines never in the buttock.",
+        "Anaphylaxis: adrenaline 0.5 mg IM thigh first; antihistamines are not first line.",
+      ],
+    },
     checked: "2026-10",
     updated: [
       "IDSA cUTI 2025: symptomatic CAUTI (a complicated UTI) - once improving, 7 days of a non-fluoroquinolone or 5-7 days of a fluoroquinolone, not the old 10-14 days.",
@@ -359,6 +1452,163 @@ const revision: RevisionSet = {
     ],
   },
   "surgery-office-preop-postop": {
+    notes: {
+      sections: [
+        {
+          title: "Definition and key facts",
+          points: [
+            "Pre-operative assessment weighs **physiological reserve** against the size of the operation.",
+            "Its aims: optimise disease, quantify risk, plan drugs and fasting, and support consent.",
+            "**Fitness is always relative** to the planned operation.",
+            "Tests are **directed, not routine**; ASA I minor surgery needs none.",
+            "After surgery, the post-operative day of a symptom narrows its cause.",
+          ],
+        },
+        {
+          title: "Classification that matters",
+          points: [
+            "**ASA I-VI**, with suffix E for emergency, which roughly doubles or trebles risk.",
+            "Surgical risk: low under 1%, intermediate 1-5%, high over 5% cardiac events.",
+            "**RCRI (Lee)** gives one point each for six risk factors.",
+            "RCRI 2 or more with poor functional capacity prompts cardiac assessment.",
+            "Climbing **two flights of stairs = 4 METs** or more; DASI 34 or less flags poor reserve.",
+            "**Clavien-Dindo I-V** grades post-operative complications.",
+          ],
+        },
+        {
+          title: "How it happens (pathophysiology)",
+          points: [
+            "1. Surgery triggers a **stress response** with cortisol, catecholamines and insulin resistance.",
+            "2. ADH and aldosterone retain salt and water for 2-3 days.",
+            "3. Cytokines cause fever in the first 48 hours and a CRP peak at 48-72 hours.",
+            "4. **Virchow triad** is complete after surgery, so VTE risk is high.",
+            "5. Anastomoses are weakest on **days 5-7**, when leaks appear.",
+            "6. ACE inhibitors cause refractory hypotension; SGLT2 inhibitors cause euglycaemic ketoacidosis.",
+          ],
+        },
+        {
+          title: "History in the OPD",
+          points: [
+            "Ask about angina, breathlessness, previous MI and **coronary stent type and date**.",
+            "Ask **exercise tolerance** in flights of stairs.",
+            "Screen for sleep apnoea with **STOP-BANG**; 5 or more is high risk.",
+            "Take a full drug history, including herbal remedies, SGLT2 inhibitors and GLP-1 agonists.",
+            "Ask about difficult intubation and **family history of malignant hyperthermia**.",
+            "Ask about escort and a responsible adult at home for day surgery.",
+          ],
+        },
+        {
+          title: "Examination",
+          points: [
+            "Defer elective surgery if BP is **180/110 mmHg or more**.",
+            "An ejection systolic murmur to the carotids suggests **aortic stenosis**; get an echo.",
+            "Assess the airway: mouth opening, **Mallampati class** and thyromental distance.",
+            "Screen frailty with the **Clinical Frailty Scale**; 5 or more is frail.",
+            "After surgery, examine the wound with the dressing off, the abdomen, chest and calves.",
+          ],
+        },
+        {
+          title: "Investigations",
+          points: [
+            "Full blood count before major surgery; treat **pre-operative anaemia with iron**.",
+            "**HbA1c under 8.5%** before elective surgery in diabetics.",
+            "**ECG** at 65 and over for intermediate or high-risk surgery or cardiac disease.",
+            "Echocardiography only for an unexplained murmur, dyspnoea or suspected heart failure.",
+            "Coagulation tests only with liver disease, anticoagulants or a bleeding history.",
+            "Post-op: rising CRP after day 3 suggests a complication; CT for leak.",
+          ],
+        },
+        {
+          title: "Treatment - first line",
+          points: [
+            "**Continue beta-blockers, statins and aspirin** with a sip of water.",
+            "**Omit ACE inhibitors, ARBs and metformin** on the day of surgery.",
+            "**Stop SGLT2 inhibitors 3 days before**; ertugliflozin 4 days.",
+            "**Fasting 6-4-2**: solids 6 hours, breast milk 4 hours, clear fluids 2 hours.",
+            "Give **cefazolin 2 g IV within 60 minutes** before incision; stop within 24 hours.",
+            "Stop smoking ideally 4-8 weeks before surgery.",
+          ],
+        },
+        {
+          title: "Treatment - next steps",
+          points: [
+            "**Warfarin**: stop 5 days before; bridge only for very high thrombotic risk.",
+            "**DOACs**: stop 24 hours (low bleed risk) or 48 hours (high) before; no bridging.",
+            "Insulin: give **80% of basal dose**; use IV insulin if more than one meal is missed.",
+            "**Stress-dose hydrocortisone 100 mg IV** for patients on prednisolone 5 mg or more over 4 weeks.",
+            "**Enoxaparin 40 mg SC daily** until mobile; 28 days after major abdominopelvic cancer surgery.",
+            "Defer elective surgery 60 days after MI and 6 months after a drug-eluting stent.",
+          ],
+        },
+        {
+          title: "Complications and red flags",
+          points: [
+            "Fever timetable: **wind, water, walking, wound, wonder drugs**.",
+            "**Persistent tachycardia** on day 5-7 after bowel surgery is a leak until proved otherwise.",
+            "**Pink serosanguinous discharge** around day 7-10 warns of burst abdomen.",
+            "Cover a burst abdomen with warm saline packs and refer as an emergency.",
+            "Sudden breathlessness and hypoxia in the first weeks suggest **pulmonary embolism**.",
+            "A dusky, crepitant wound under 48 hours means necrotising infection.",
+          ],
+        },
+        {
+          title: "Referral and follow-up",
+          points: [
+            "Postpone for cardiac opinion with unstable angina, decompensated failure or severe aortic stenosis.",
+            "Never stop dual antiplatelet therapy after a recent stent without the cardiologist.",
+            "At the first post-op visit, reconcile medicines and restart held drugs on time.",
+            "Chase the operation note and the **histopathology report**.",
+          ],
+        },
+      ],
+      tables: [
+        {
+          heading: "Peri-operative drugs",
+          columns: ["Drug", "Dose and route", "Duration", "Key side effects / cautions"],
+          rows: [
+            ["Cefazolin", "2 g IV (3 g if 120 kg+) within 60 min", "Stop by 24 hours", "Clindamycin 900 mg if allergic"],
+            ["Enoxaparin", "40 mg SC OD", "Until mobile; 28 days after cancer surgery", "Bleeding, HIT; 20 mg if CrCl under 30"],
+            ["Warfarin", "Stop 5 days before", "Restart evening of surgery", "Vitamin K 1-2 mg oral if INR 1.5+"],
+            ["Apixaban or rivaroxaban", "Stop 24-48 h before", "Restart 24-72 h after", "No bridging needed"],
+            ["SGLT2 inhibitor", "Stop 3 days before", "Restart when eating normally", "Euglycaemic ketoacidosis"],
+            ["Hydrocortisone", "100 mg IV at induction, then 200 mg/24 h", "Until eating; then double oral dose", "Hyperglycaemia"],
+            ["Dexamethasone plus ondansetron", "4-8 mg IV plus 4 mg IV", "Single doses for PONV", "Hyperglycaemia; QT prolongation"],
+            ["Paracetamol plus ibuprofen", "1 g 6-hourly plus 400 mg 8-hourly", "3-5 days", "Laxative with any opioid"],
+          ],
+        },
+        {
+          heading: "ASA physical status",
+          columns: ["Class", "Meaning", "Example"],
+          rows: [
+            ["I", "Healthy", "Fit non-smoker"],
+            ["II", "Mild systemic disease", "Controlled hypertension, smoker"],
+            ["III", "Severe disease, functional limit", "Poorly controlled diabetes, COPD"],
+            ["IV", "Constant threat to life", "Recent MI, sepsis"],
+            ["V", "Moribund", "Ruptured aortic aneurysm"],
+          ],
+        },
+        {
+          heading: "Post-operative fever timetable",
+          columns: ["Day", "Cause", "Clue"],
+          rows: [
+            ["0-2 (wind)", "Atelectasis, inflammatory response", "Reduced basal breath sounds"],
+            ["3-5 (water)", "Urinary infection", "Catheter in place"],
+            ["4-6 (walking)", "DVT or PE", "Calf swelling, tachycardia"],
+            ["5-7 (wound)", "Wound infection, leak, collection", "Wound redness, tachycardia"],
+            ["After 7 (wonder drugs)", "Drug fever, line sepsis, C. difficile", "Diarrhoea, cannula site"],
+          ],
+        },
+      ],
+      remember: [
+        "Fitness is relative to the operation.",
+        "Two flights of stairs means 4 METs or more.",
+        "Fasting 6-4-2.",
+        "Omit ACE inhibitor and metformin on the day; stop SGLT2 inhibitor 3 days before.",
+        "Antibiotic prophylaxis: one dose within 60 minutes, stop within 24 hours.",
+        "Wind, water, walking, wound, wonder drugs.",
+        "Persistent tachycardia after bowel surgery is a leak until proved otherwise.",
+      ],
+    },
     checked: "2026-10",
     master: {
       heading: "Master revision table - pre-operative fitness and post-operative care",
@@ -410,6 +1660,159 @@ const revision: RevisionSet = {
     ],
   },
   "surgery-office-procedural-sedation-ketamine": {
+    notes: {
+      sections: [
+        {
+          title: "Definition and key facts",
+          points: [
+            "**Procedural sedation** relieves anxiety and pain while the patient keeps airway, breathing and circulation.",
+            "It complements local anaesthesia; it never replaces it.",
+            "The sedationist must be able to **rescue from one level deeper** than intended.",
+            "**Ketamine** gives analgesia, sedation and amnesia with preserved airway, breathing and BP.",
+            "Office sedation is for **ASA I and II** patients only.",
+          ],
+        },
+        {
+          title: "Classification that matters",
+          points: [
+            "**ASA continuum**: minimal, moderate, deep and general anaesthesia.",
+            "Moderate: purposeful response to voice or light touch; airway needs no help.",
+            "Deep: purposeful response only to repeated or painful stimulus.",
+            "**Withdrawal from pain is not purposeful**; it means deep sedation.",
+            "**Dissociative sedation** with ketamine sits outside the continuum and is all-or-none.",
+          ],
+        },
+        {
+          title: "How it happens (pathophysiology)",
+          points: [
+            "1. Ketamine is a **non-competitive NMDA receptor antagonist**.",
+            "2. It separates the thalamocortical system from the limbic system, causing **dissociation**.",
+            "3. The patient looks awake with eyes open and nystagmus, but feels no pain.",
+            "4. Sympathetic stimulation raises heart rate and BP; it is also a bronchodilator.",
+            "5. **Hypersalivation** on a reactive larynx explains laryngospasm (about 1 in 300).",
+            "6. Midazolam plus fentanyl is **synergistic for respiratory depression**.",
+            "7. **Capnography** detects apnoea before pulse oximetry does.",
+          ],
+        },
+        {
+          title: "History in the OPD",
+          points: [
+            "Take an **AMPLE** history, including last oral intake time and type.",
+            "Ask about heart disease, uncontrolled hypertension and aortic aneurysm.",
+            "Ask about snoring, sleep apnoea and recent chest infection (laryngospasm risk).",
+            "**Schizophrenia** is an absolute contraindication to ketamine.",
+            "**Age under 3 months** is also an absolute contraindication.",
+            "Confirm a responsible adult escort and supervision for 24 hours.",
+          ],
+        },
+        {
+          title: "Examination",
+          points: [
+            "Record baseline pulse, BP, respiratory rate, SpO2 and weight for dosing.",
+            "Assess the airway: mouth opening, **Mallampati class** and thyromental distance.",
+            "In children, check tonsil size, nasal obstruction and wheeze.",
+            "During sedation, record vital signs and depth **every 5 minutes**.",
+          ],
+        },
+        {
+          title: "Investigations",
+          points: [
+            "**No routine tests** are needed in ASA I-II patients.",
+            "Check capillary glucose in diabetics and long-fasted children.",
+            "Monitoring is the essential test: oximetry, BP and **waveform capnography**.",
+            "Do not delay an emergency procedure for tests that will not change management.",
+          ],
+        },
+        {
+          title: "Treatment - first line",
+          points: [
+            "Take written consent and warn parents about the **vacant stare and nystagmus**.",
+            "Have **two trained people**: the operator and a dedicated sedationist.",
+            "Do a **SOAPME** check: suction, oxygen, airway, pharmacy, monitors, equipment.",
+            "**Ketamine IV**: child 1.5-2 mg/kg, adult 1-1.5 mg/kg over 30-60 seconds.",
+            "**Ketamine IM**: 4-5 mg/kg into the thigh or deltoid.",
+            "Always combine with good local anaesthesia to reduce the sedative dose.",
+          ],
+        },
+        {
+          title: "Treatment - next steps",
+          points: [
+            "Top up ketamine IV with 0.5-1 mg/kg every 5-10 minutes if needed.",
+            "Sub-dissociative analgesia: **0.1-0.3 mg/kg** by slow infusion, never a rapid bolus.",
+            "Give **midazolam 1-2 mg IV** for adult emergence reactions; not routinely in children.",
+            "Routine anticholinergic is no longer advised; use only for troublesome secretions.",
+            "Reverse opioids with **naloxone** and benzodiazepines with **flumazenil**.",
+            "There is **no antidote** for ketamine or propofol.",
+          ],
+        },
+        {
+          title: "Complications and red flags",
+          points: [
+            "**Laryngospasm**: stop, suction, oxygen, jaw thrust with **Larson manoeuvre**, then CPAP.",
+            "If laryngospasm persists, give **succinylcholine 0.5-1 mg/kg IV** with atropine in children.",
+            "Apnoea usually follows a **rapid IV push**; ventilate with bag and mask.",
+            "Vomiting happens in 8-12%, usually in recovery; turn to the side and suction.",
+            "Emergence reactions affect 10-30% of adults but only 1-2% of children.",
+          ],
+        },
+        {
+          title: "Referral and follow-up",
+          points: [
+            "Discharge when back to baseline and stable for **30 minutes after the last dose**.",
+            "No driving, machinery, alcohol or legal decisions for 24 hours.",
+            "Refer ASA III or above, difficult airway, severe OSA or infants to an anaesthetist.",
+            "Keep ketamine locked with a stock register; it is a controlled drug in India.",
+          ],
+        },
+      ],
+      tables: [
+        {
+          heading: "Drugs for procedural sedation",
+          columns: ["Drug", "Dose and route", "Duration", "Key side effects / cautions"],
+          rows: [
+            ["Ketamine IV", "Child 1.5-2 mg/kg, adult 1-1.5 mg/kg over 30-60 s", "Effect 5-10 min", "Laryngospasm, vomiting, emergence reactions"],
+            ["Ketamine IM", "4-5 mg/kg; top-up 2-2.5 mg/kg", "Effect 15-30 min", "More vomiting, longer recovery"],
+            ["Ketamine analgesic", "0.1-0.3 mg/kg IV over 10-15 min", "Single dose or infusion", "Dysphoria if pushed fast"],
+            ["Midazolam", "0.5-1 mg IV steps to 2.5-5 mg adult", "Titrate", "Respiratory depression with opioids"],
+            ["Fentanyl", "1-1.5 microgram/kg IV", "Repeat 0.5 microgram/kg", "Respiratory depression, chest rigidity"],
+            ["Naloxone", "0.1-0.4 mg IV (child 0.01 mg/kg)", "Repeat every 2-3 min", "Short-acting; observe 2 hours"],
+            ["Flumazenil", "0.2 mg IV, then 0.1 mg/min to 1 mg", "Titrate", "Seizures in chronic benzodiazepine users"],
+            ["Ondansetron", "0.1-0.15 mg/kg IV, max 4 mg", "Single dose", "QT prolongation"],
+            ["Succinylcholine", "0.5-1 mg/kg IV or 3-4 mg/kg IM", "For laryngospasm", "Hyperkalaemia, bradycardia"],
+          ],
+        },
+        {
+          heading: "Depth of sedation",
+          columns: ["Level", "Response", "Airway", "Breathing"],
+          rows: [
+            ["Minimal", "Normal to voice", "Unaffected", "Unaffected"],
+            ["Moderate", "Purposeful to voice or light touch", "No intervention", "Adequate"],
+            ["Deep", "Purposeful only to pain", "May need support", "May be inadequate"],
+            ["General anaesthesia", "Unrousable", "Often needs support", "Often inadequate"],
+            ["Dissociative (ketamine)", "Trance, eyes open", "Reflexes preserved", "Usually preserved"],
+          ],
+        },
+        {
+          heading: "Laryngospasm rescue steps",
+          columns: ["Step", "Action"],
+          rows: [
+            ["1", "Stop the procedure and suction the pharynx"],
+            ["2", "100% oxygen with jaw thrust and Larson manoeuvre"],
+            ["3", "Bag-valve-mask with CPAP"],
+            ["4", "Succinylcholine 0.5-1 mg/kg IV with atropine in children"],
+            ["5", "Ventilate or intubate and transfer"],
+          ],
+        },
+      ],
+      remember: [
+        "Be able to rescue from one level deeper than intended.",
+        "Withdrawal from pain is not a purposeful response.",
+        "Give IV ketamine over 30-60 seconds; a rapid push causes apnoea.",
+        "Ketamine: IV 1-2 mg/kg, IM 4-5 mg/kg.",
+        "Absolute contraindications: under 3 months and schizophrenia.",
+        "SOAPME before every sedation: suction, oxygen, airway, pharmacy, monitors, equipment.",
+      ],
+    },
     checked: "2026-10",
     master: {
       heading: "Master revision table - procedural sedation and ketamine",
@@ -459,6 +1862,163 @@ const revision: RevisionSet = {
     ],
   },
   "surgery-office-spinal-anaesthesia": {
+    notes: {
+      sections: [
+        {
+          title: "Definition and key facts",
+          points: [
+            "**Spinal anaesthesia** is local anaesthetic injected into lumbar CSF below the end of the cord.",
+            "Standard drug: **0.5% hyperbaric bupivacaine 10-15 mg**.",
+            "It gives a rapid, dense block for surgery **below the umbilicus**.",
+            "The anaesthetist gives it; the family physician assesses, counsels and manages after-care.",
+            "The **spinal cord ends at L1-L2** in adults and L3 in neonates.",
+          ],
+        },
+        {
+          title: "Classification that matters",
+          points: [
+            "Neuraxial blocks: **spinal, epidural, combined spinal-epidural and caudal**.",
+            "By baricity: **hyperbaric** sinks, isobaric stays, hypobaric rises.",
+            "Dermatomes: **T4 nipple, T6 xiphisternum, T10 umbilicus**, L1 inguinal ligament.",
+            "Caesarean section needs a **T4** block; perianal surgery needs only S2-S5 (saddle).",
+            "Motor block is graded on the **modified Bromage scale 0-3**.",
+          ],
+        },
+        {
+          title: "How it happens (pathophysiology)",
+          points: [
+            "1. The drug blocks sodium channels in nerve roots bathed in CSF.",
+            "2. **Sympathetic fibres block first**, 2-6 segments above the sensory level.",
+            "3. Venous pooling lowers preload, causing **hypotension**.",
+            "4. A block reaching T1-T4 cardioaccelerator fibres causes **bradycardia**.",
+            "5. The diaphragm (C3-C5) is spared, so breathing is preserved in a normal spinal.",
+            "6. A CSF leak through the dural hole makes the brain sag, causing **PDPH**.",
+          ],
+        },
+        {
+          title: "History in the OPD",
+          points: [
+            "**Patient refusal** is an absolute contraindication; correct fears of paralysis.",
+            "Record the exact **time of the last antithrombotic dose**.",
+            "Ask about bleeding tendency, liver disease and family bleeding disorders.",
+            "Screen for **severe aortic stenosis**, HOCM and mitral stenosis (fixed cardiac output).",
+            "Ask about raised intracranial pressure symptoms and infection over the back.",
+            "Chronic backache and previous simple back surgery are **not contraindications**.",
+          ],
+        },
+        {
+          title: "Examination",
+          points: [
+            "Uncorrected **hypovolaemia or shock** is an absolute contraindication.",
+            "A resting pulse under 60 predicts bradycardia after the block.",
+            "Listen for an aortic stenosis murmur; get an echo if present.",
+            "Inspect the back for infection, scoliosis and scars.",
+            "Record a **baseline leg neurological examination** before the block.",
+          ],
+        },
+        {
+          title: "Investigations",
+          points: [
+            "No routine coagulation screen in a healthy patient with a negative bleeding history.",
+            "Check **platelets** in pre-eclampsia, sepsis or liver disease; 70,000 or more is generally acceptable.",
+            "**INR 1.4 or less** is needed after stopping warfarin.",
+            "Check creatinine for patients on dabigatran or therapeutic LMWH.",
+            "Bleeding time is obsolete; spine X-ray is not needed.",
+          ],
+        },
+        {
+          title: "Treatment - first line",
+          points: [
+            "Large-bore IV cannula, monitoring and full resuscitation kit before the block.",
+            "Sit or lie the patient with **maximal lumbar flexion**.",
+            "Full asepsis with cap, mask and gown; let **chlorhexidine dry fully**.",
+            "Inject at **L3-L4 or L4-L5**, never above L2, with a 25-27G pencil-point needle.",
+            "Inject only after **free flow of clear CSF**; withdraw if there is leg paraesthesia.",
+            "Lie the patient flat, with **left uterine tilt** in pregnancy, and check BP every 1-2 minutes.",
+          ],
+        },
+        {
+          title: "Treatment - next steps",
+          points: [
+            "Hypotension: **phenylephrine** first line at caesarean; ephedrine if bradycardic.",
+            "Give a **crystalloid co-load** of 10-15 mL/kg as the spinal goes in.",
+            "Bradycardia: **atropine 0.6 mg** and ephedrine; give adrenaline early if worsening.",
+            "Intrathecal fentanyl adds analgesia; intrathecal morphine needs **12 hours of hourly monitoring**.",
+            "A failed block before incision is converted to general anaesthesia, not covered by sedation.",
+          ],
+        },
+        {
+          title: "Complications and red flags",
+          points: [
+            "**Nausea on the table is hypotension** until proved otherwise.",
+            "Hand tingling, weak voice or breathlessness means a **high spinal**; prepare to intubate.",
+            "**PDPH** is postural and fronto-occipital; a pencil-point needle prevents it.",
+            "Treat PDPH with analgesics and caffeine; an **epidural blood patch** cures it.",
+            "Severe back pain with prolonged block or new weakness suggests **vertebral canal haematoma**.",
+            "Haematoma needs MRI and decompression **within 8-12 hours**.",
+          ],
+        },
+        {
+          title: "Referral and follow-up",
+          points: [
+            "Discharge after day surgery at **Bromage 0**, walking and passing urine.",
+            "Review headache, voiding, fever and leg power on day 1-2.",
+            "Refer for blood patch if PDPH is moderate-severe or lasts over 24-48 hours.",
+            "Refer the same day for fever with back pain or new leg weakness.",
+          ],
+        },
+      ],
+      tables: [
+        {
+          heading: "Drugs around spinal anaesthesia",
+          columns: ["Drug", "Dose and route", "Duration", "Key side effects / cautions"],
+          rows: [
+            ["Bupivacaine 0.5% hyperbaric", "Caesarean 10-12.5 mg; lower limb 12.5-17.5 mg intrathecal", "Sensory block 1.5-3 h", "Hypotension, bradycardia, high spinal"],
+            ["Fentanyl intrathecal", "10-25 microgram", "Adds 1-1.5 h", "Pruritus, nausea"],
+            ["Morphine intrathecal", "100 microgram (50-150)", "12-24 h analgesia", "Delayed respiratory depression at 6-12 h"],
+            ["Phenylephrine", "25-50 microgram/min or 50-100 microgram IV bolus", "During the block", "Reflex bradycardia"],
+            ["Ephedrine", "6 mg IV boluses", "Repeat as needed", "Fetal acidosis with large doses"],
+            ["Atropine", "0.6 mg IV, repeat to 1.2 mg", "As needed", "Tachycardia, confusion in elderly"],
+            ["20% lipid emulsion", "1.5 mL/kg IV, then 0.25 mL/kg/min", "Max about 12 mL/kg", "For LA toxicity only"],
+            ["Caffeine (PDPH)", "300 mg oral once or twice daily", "24-48 hours", "Max 900 mg/day; 300 mg if breastfeeding"],
+            ["Paracetamol plus ibuprofen", "1 g 6-hourly plus 400 mg 8-hourly", "3-5 days", "Ibuprofen after food"],
+          ],
+        },
+        {
+          heading: "Spinal versus epidural",
+          columns: ["Feature", "Spinal", "Epidural"],
+          rows: [
+            ["End point", "Free flow of CSF", "Loss of resistance"],
+            ["Needle", "25-27G pencil-point", "16-18G Tuohy with catheter"],
+            ["Dose", "Small, 10-15 mg bupivacaine", "Large, 15-20 mL"],
+            ["Onset", "2-5 minutes", "15-20 minutes"],
+            ["Duration", "Fixed, 1.5-3 h", "Extendable via catheter"],
+            ["PDPH", "0.5-2%", "Rare unless dura punctured"],
+          ],
+        },
+        {
+          heading: "Antithrombotic intervals before a spinal (ASRA)",
+          columns: ["Drug", "Stop before puncture"],
+          rows: [
+            ["Aspirin or NSAID alone", "No need to stop"],
+            ["Subcutaneous heparin 5000 units", "4-6 hours"],
+            ["Prophylactic LMWH", "12 hours"],
+            ["Therapeutic LMWH", "24 hours"],
+            ["Warfarin", "5 days, INR 1.4 or less"],
+            ["Clopidogrel or ticagrelor", "5-7 days"],
+            ["Rivaroxaban, apixaban, edoxaban", "72 hours"],
+          ],
+        },
+      ],
+      remember: [
+        "Cord ends at L1-L2: inject at L3-L4 or L4-L5, never above L2.",
+        "Sympathetic block is 2-6 segments above the sensory level.",
+        "Nausea on the table is hypotension until proved otherwise.",
+        "Phenylephrine first at caesarean; ephedrine if bradycardic.",
+        "Hyperbaric block can be steered by posture only for 15-20 minutes.",
+        "PDPH: pencil-point needle prevents, blood patch cures, bed rest does nothing.",
+      ],
+    },
     checked: "2026-10",
     master: {
       heading: "Master revision table - spinal anaesthesia",
@@ -509,6 +2069,168 @@ const revision: RevisionSet = {
     ],
   },
   "surgery-office-blood-transfusion": {
+    notes: {
+      sections: [
+        {
+          title: "Definition and key facts",
+          points: [
+            "**Blood transfusion** is IV administration of a specific blood component, prescribed like a drug.",
+            "**Component therapy** is the rule: red cells, FFP, platelets and cryoprecipitate.",
+            "Whole blood is used only for exchange transfusion or massive bleeding without components.",
+            "The commonest fatal reaction is still **the right blood to the wrong patient**.",
+            "One unit of red cells raises Hb by about **1 g/dL** in a 70 kg adult.",
+          ],
+        },
+        {
+          title: "Classification that matters",
+          points: [
+            "**Restrictive threshold: Hb below 7 g/dL** for most stable inpatients.",
+            "Use **8 g/dL** with cardiovascular disease or orthopaedic surgery; 7.5 in cardiac surgery.",
+            "Acute MI is the exception: transfuse when **Hb is under 10 g/dL** (AABB 2025).",
+            "Symptomatic anaemia at any Hb is an indication in its own right.",
+            "**Massive transfusion**: one blood volume in 24 hours, 10 units in 24 hours, or 4 in 1 hour.",
+            "Reactions are classified by timing (acute or delayed) and mechanism (immune or not).",
+          ],
+        },
+        {
+          title: "How it happens (pathophysiology)",
+          points: [
+            "1. Everyone has natural **IgM anti-A or anti-B** against the ABO antigen they lack.",
+            "2. In ABO mismatch, IgM fixes complement and lyses donor cells inside vessels.",
+            "3. As little as **10-15 mL** causes fever, loin pain, hypotension and DIC.",
+            "4. Free haemoglobin causes haemoglobinuria and acute tubular necrosis.",
+            "5. **Delayed haemolysis** (3-14 days) is an IgG anamnestic response to Kidd, Rh, Kell or Duffy.",
+            "6. **TRALI** is donor antibody injuring lung capillaries; **TACO** is volume overload.",
+            "7. Each unit carries 200-250 mg iron, with no excretory route, so overload follows.",
+          ],
+        },
+        {
+          title: "History in the OPD",
+          points: [
+            "Ask why transfusion is considered: symptoms, active bleeding or planned surgery.",
+            "Chronic iron deficiency in a stable patient is treated with **iron, not blood**.",
+            "Ask about previous transfusions, reactions and any **antibody card**.",
+            "A D-negative woman of childbearing age must never get D-positive red cells.",
+            "Heart failure, renal failure and age over 70 predict **TACO**.",
+            "Ask about religious objection early and plan alternatives.",
+          ],
+        },
+        {
+          title: "Examination",
+          points: [
+            "Look for pallor, jaundice and signs of bleeding.",
+            "Assess shock; **class III-IV shock** (over 30% loss) needs red cells.",
+            "Check for heart failure before transfusing; give one slow unit with furosemide.",
+            "Record baseline vitals, then at **15 minutes**, hourly, at the end and 4 hours after.",
+            "Watch the patient directly for the first 15 minutes.",
+          ],
+        },
+        {
+          title: "Investigations",
+          points: [
+            "**ABO and Rh D grouping** by forward and reverse grouping, which must agree.",
+            "**Antibody screen** by the indirect antiglobulin test.",
+            "Major crossmatch: donor cells against recipient serum; the minor crossmatch is obsolete.",
+            "**DAT** detects antibody already on red cells, as in haemolytic reactions.",
+            "After a reaction: repeat group, DAT, LDH, bilirubin, urine Hb and cultures of patient and pack.",
+            "Chest X-ray and BNP separate TACO (raised BNP) from TRALI (normal BNP).",
+          ],
+        },
+        {
+          title: "Treatment - first line",
+          points: [
+            "Prescribe **one unit at a time**, then reassess.",
+            "Label the sample at the bedside; never pre-label tubes.",
+            "Do the **bedside identity check**: the patient states full name and date of birth.",
+            "Start within 30 minutes of issue and finish within **4 hours**.",
+            "Only **0.9% saline** in the line; Ringer's lactate clots and dextrose haemolyses.",
+            "Use a 170-200 micron filter set and run the first 15 minutes slowly.",
+          ],
+        },
+        {
+          title: "Treatment - next steps",
+          points: [
+            "**FFP 10-15 mL/kg** for bleeding with PT or APTT over 1.5 times normal.",
+            "Platelets: give below **10,000 prophylactically**, below 50,000 for surgery.",
+            "**Cryoprecipitate** when fibrinogen is below 1.5 g/L with bleeding (2 g/L obstetric).",
+            "Massive haemorrhage: red cells, FFP and platelets **1:1:1** with tranexamic acid within 3 hours.",
+            "Reverse warfarin bleeding with **4-factor PCC plus vitamin K**.",
+            "Irradiate components for the immunosuppressed and every donation from a relative.",
+          ],
+        },
+        {
+          title: "Complications and red flags",
+          points: [
+            "Any reaction: **stop**, keep the vein open with saline via a new set, recheck identity.",
+            "Acute haemolysis: fluids to keep urine above **1-1.5 mL/kg/hour**, treat DIC, report.",
+            "**Anaphylaxis**: adrenaline 0.5 mg IM first; later use washed or IgA-deficient products.",
+            "**TRALI**: oxygen and ventilation, **no diuretic**; **TACO**: sit up, furosemide 40 mg IV.",
+            "Simple urticaria is the only reaction where the same unit may be restarted.",
+            "Fever, rash and pancytopenia after blood from a relative suggests **TA-GVHD**.",
+          ],
+        },
+        {
+          title: "Prevention and programmes",
+          points: [
+            "India mandates five tests: **HIV, HBsAg, HCV, syphilis and malaria**.",
+            "Professional (paid) donation is illegal; blood is a drug under law.",
+            "Donor Hb must be **12.5 g/dL** or more; weight 45 kg for 350 mL.",
+            "Report every reaction to the **Haemovigilance Programme of India**.",
+            "Patient blood management: treat anaemia with iron, minimise loss, tolerate anaemia.",
+          ],
+        },
+      ],
+      tables: [
+        {
+          heading: "Blood components and key drugs",
+          columns: ["Drug", "Dose and route", "Duration", "Key side effects / cautions"],
+          rows: [
+            ["Packed red cells", "1 unit IV; child 10-15 mL/kg", "90-120 min, within 4 h", "Reactions, TACO, iron overload"],
+            ["Fresh frozen plasma", "10-15 mL/kg IV", "Within 4 h of thawing", "TRALI, TACO; not a volume expander"],
+            ["Platelets", "4-6 RDP or 1 SDP IV", "Over 30 min", "Bacterial sepsis; never refrigerate"],
+            ["Cryoprecipitate", "1 unit per 5-10 kg IV", "Within 4 h of thawing", "For low fibrinogen"],
+            ["Tranexamic acid", "1 g IV over 10 min, then 1 g over 8 h", "Start within 3 h of injury", "Avoid in active thrombosis"],
+            ["4-factor PCC plus vitamin K", "25-50 IU/kg IV plus 5-10 mg IV", "Single dose", "Thrombosis"],
+            ["Furosemide", "20-40 mg IV", "Between units for TACO risk", "Never in TRALI"],
+            ["Adrenaline 1:1000", "0.5 mg IM thigh", "Repeat every 5 min", "First drug in anaphylaxis"],
+            ["Calcium gluconate 10%", "10 mL IV over 10 min", "Keep ionised Ca above 1.1", "Separate line from blood"],
+            ["Deferasirox", "20-40 mg/kg oral OD", "When ferritin over 1000", "Renal and liver toxicity"],
+          ],
+        },
+        {
+          heading: "Transfusion reactions",
+          columns: ["Reaction", "Timing", "Key feature", "Action"],
+          rows: [
+            ["Acute haemolytic", "Minutes", "Loin pain, hypotension, dark urine", "Stop, fluids, DAT, report"],
+            ["Febrile non-haemolytic", "Within 4 h", "Temperature rise, no shock", "Slow, paracetamol, exclude haemolysis"],
+            ["Urticarial", "Minutes to hours", "Hives only", "Antihistamine, restart slowly"],
+            ["Anaphylaxis", "Minutes", "Stridor, wheeze, shock", "IM adrenaline"],
+            ["TRALI", "Within 6 h", "Hypoxia, normal JVP", "Oxygen, no diuretic"],
+            ["TACO", "Within 6-12 h", "Raised JVP, hypertension", "Sit up, furosemide"],
+            ["Delayed haemolytic", "3-14 days", "Falling Hb, jaundice, positive DAT", "Antibody screen and card"],
+          ],
+        },
+        {
+          heading: "ABO compatibility",
+          columns: ["Recipient", "Red cells", "Plasma"],
+          rows: [
+            ["O", "O only", "O, A, B, AB"],
+            ["A", "A, O", "A, AB"],
+            ["B", "B, O", "B, AB"],
+            ["AB", "AB, A, B, O", "AB only"],
+          ],
+        },
+      ],
+      remember: [
+        "Transfuse the patient, not the number: Hb 7, or 8 with heart disease.",
+        "One unit at a time, then reassess.",
+        "Almost every fatal reaction is a clerical error at the bedside.",
+        "Only normal saline in the blood line.",
+        "TRALI has normal JVP and no diuretic; TACO has raised JVP and furosemide.",
+        "Always irradiate blood donated by a relative.",
+        "India tests every unit for HIV, HBV, HCV, syphilis and malaria.",
+      ],
+    },
     checked: "2026-10",
     updated: [
       "AABB 2025 (international AMI guideline) and ACC/AHA 2025 ACS: in acute myocardial infarction a liberal strategy - transfuse when Hb is under 10 g/dL - replaces the restrictive threshold.",
@@ -564,6 +2286,159 @@ const revision: RevisionSet = {
     ],
   },
   "surgery-office-tracheostomy": {
+    notes: {
+      sections: [
+        {
+          title: "Definition and key facts",
+          points: [
+            "**Tracheostomy** is an opening in the anterior tracheal wall brought to the skin as a stoma.",
+            "**Tracheotomy** strictly means the incision into the trachea itself.",
+            "The standard site is the **2nd-3rd tracheal rings**.",
+            "It is an elective or semi-elective operation, ideally over a secured airway.",
+            "The true emergency surgical airway is **cricothyroidotomy**, converted within 3-7 days.",
+          ],
+        },
+        {
+          title: "Classification that matters",
+          points: [
+            "By site: high (1st ring, condemned), **mid (2nd-3rd rings, standard)**, low (4th ring or below).",
+            "By urgency: emergency or elective; by duration: temporary or permanent.",
+            "By technique: open surgical or **percutaneous dilatational** at the ICU bedside.",
+            "Indications: upper airway obstruction, prolonged ventilation, bronchial toilet, head and neck surgery.",
+            "**Prolonged ventilation** is now the commonest indication.",
+          ],
+        },
+        {
+          title: "How it happens (pathophysiology)",
+          points: [
+            "1. A tracheostomy cuts dead space by **70-100 mL** and reduces work of breathing.",
+            "2. It bypasses the nose, so air is not warmed, humidified or filtered.",
+            "3. Secretions thicken into crusts and plugs; **humidification is treatment**.",
+            "4. The glottis cannot close, so cough is weak and voice is lost.",
+            "5. Cuff pressure over **30 cmH2O** exceeds mucosal perfusion and causes stenosis or fistula.",
+            "6. The stoma tract takes **5-7 days** to mature; before that, a tube pushed back may make a false passage.",
+          ],
+        },
+        {
+          title: "History in the OPD",
+          points: [
+            "Ask why the tracheostomy was done and whether that cause has resolved.",
+            "Find out if the patient is a **laryngectomee**; then the mouth does not connect to the lungs.",
+            "Note tube type, size and date of last change.",
+            "Suction needed more than 3-4 hourly means not ready for decannulation.",
+            "**Any bleed after 48 hours** may be a sentinel bleed from the innominate artery.",
+            "Coughing on swallowing or food in secretions suggests aspiration or fistula.",
+          ],
+        },
+        {
+          title: "Examination",
+          points: [
+            "**Agitation and desaturation** mean a blocked or displaced tube until proved otherwise.",
+            "Check the flange is centred and tapes admit **one finger**.",
+            "A suction catheter that passes freely means the tube is patent.",
+            "Measure cuff pressure with a **manometer**; target 20-30 cmH2O.",
+            "A tube that **pulsates with the heartbeat** warns of impending innominate fistula.",
+            "Look for surgical emphysema and granulation at the stoma.",
+          ],
+        },
+        {
+          title: "Investigations",
+          points: [
+            "**Waveform capnography** confirms the tube is in the airway faster than any X-ray.",
+            "**Chest X-ray** after every new tracheostomy for pneumothorax and tube position.",
+            "Check platelets, INR and APTT before an elective tracheostomy.",
+            "Culture sputum only for clinical infection; colonisation is universal.",
+            "Flexible laryngoscopy before decannulation to confirm a patent upper airway.",
+          ],
+        },
+        {
+          title: "Treatment - first line",
+          points: [
+            "**Humidify every patient**: heated humidifier, HME or moist stoma bib.",
+            "Suction **on demand**, no more than 10-15 seconds and three passes.",
+            "Clean the **inner cannula** at least twice daily; never leave the outer tube without it.",
+            "Change tapes with **two people**, one holding the flange throughout.",
+            "Keep a spare tube of the **same size and one smaller** at the bedside.",
+            "Nebulise **0.9% saline 3-5 mL** every 4-6 hours to loosen crusts.",
+          ],
+        },
+        {
+          title: "Treatment - next steps",
+          points: [
+            "Tenacious secretions: hypertonic saline 3% or acetylcysteine, after salbutamol.",
+            "Treat stoma infection only for cellulitis; colonised stomas need no antibiotics.",
+            "Granulation tissue: **silver nitrate** to the granulation only.",
+            "A **speaking valve** goes on only with the cuff fully deflated.",
+            "First tube change at **day 5-7** (7-10 after percutaneous).",
+          ],
+        },
+        {
+          title: "Complications and red flags",
+          points: [
+            "**Blocked tube** is the commonest killer early on.",
+            "Emergency steps: oxygen to face and stoma, remove inner cannula, pass a suction catheter.",
+            "If the catheter will not pass, deflate the cuff, then remove the tube.",
+            "Sentinel or massive bleed: **hyperinflate the cuff**, then finger pressure through the stoma.",
+            "Late complications: stenosis, tracheomalacia, granuloma and fistulae.",
+          ],
+        },
+        {
+          title: "Referral and follow-up",
+          points: [
+            "Decannulate stepwise: cuff deflation, downsize, then **cap for 24 hours** including sleep.",
+            "After removal, the stoma usually closes in **5-7 days**.",
+            "Refer the same day for bleeding, aspiration, emphysema or a pulsating tube.",
+            "Refer to ENT for stridor on capping or after decannulation.",
+          ],
+        },
+      ],
+      tables: [
+        {
+          heading: "Drugs in tracheostomy care",
+          columns: ["Drug", "Dose and route", "Duration", "Key side effects / cautions"],
+          rows: [
+            ["Lidocaine 1% with adrenaline", "5-10 mL infiltration; max 7 mg/kg", "During procedure", "Systemic toxicity"],
+            ["Lidocaine 4% topical", "2-3 mL into trachea", "Before opening", "Count in total dose"],
+            ["0.9% saline nebulised", "3-5 mL", "Every 4-6 hours", "Nil significant"],
+            ["Hypertonic saline 3%", "4 mL nebulised", "2-4 times daily", "Bronchospasm; salbutamol first"],
+            ["N-acetylcysteine", "600 mg oral OD or 3-5 mL 10% nebulised", "As needed", "Bronchospasm when nebulised"],
+            ["Salbutamol", "2.5-5 mg nebulised", "4-6 hourly as needed", "Tremor, tachycardia"],
+            ["Glycopyrrolate", "200 microgram IV/SC 6-8 hourly", "Review at 1 week", "Dry mouth, thick secretions"],
+            ["Amoxicillin-clavulanate", "625 mg oral 8-hourly", "5-7 days for stomal cellulitis", "Not for colonisation"],
+          ],
+        },
+        {
+          heading: "Complications by timing",
+          columns: ["Timing", "Complications", "Key prevention"],
+          rows: [
+            ["Immediate", "Bleeding, pneumothorax, false passage, nerve injury", "Strict midline dissection, chest X-ray"],
+            ["Early (day 1-7)", "Blocked tube, displacement, emphysema, infection", "Humidify, suction, secure tapes"],
+            ["Late", "Stenosis, granulation, innominate or oesophageal fistula", "2nd-3rd ring, cuff 20-30 cmH2O"],
+          ],
+        },
+        {
+          heading: "Tube types",
+          columns: ["Tube", "Use", "Caution"],
+          rows: [
+            ["Metal Jackson's tube", "Long-term home care in India", "Cannot be ventilated"],
+            ["Cuffed PVC", "Ventilated or aspirating patients", "Check cuff pressure each shift"],
+            ["Uncuffed PVC", "Children, safe swallowers", "Keep a smaller spare"],
+            ["Fenestrated", "Weaning and speech", "Plain inner tube for suction"],
+            ["Double-lumen with inner cannula", "All ward and home patients", "Remove inner cannula first if blocked"],
+          ],
+        },
+      ],
+      remember: [
+        "Window is the 2nd-3rd ring: too high causes stenosis, too low hits the innominate artery.",
+        "Cricothyroidotomy, not tracheostomy, is the emergency surgical airway.",
+        "Humidification is treatment, not comfort.",
+        "Cuff pressure 20-30 cmH2O.",
+        "In a breathing emergency, remove the inner cannula first.",
+        "Speaking valve only with the cuff fully deflated.",
+        "Any bleed after 48 hours is a sentinel bleed until proved otherwise.",
+        "Child: vertical slit, stay sutures, uncuffed tube, no cartilage removed.",
+      ],
+    },
     checked: "2026-10",
     updated: [
       "DAS 2025 (unanticipated difficult intubation): scalpel-bougie-tube cricothyroidotomy remains the preferred Plan D emergency front-of-neck airway.",
@@ -616,6 +2491,163 @@ const revision: RevisionSet = {
     ],
   },
   "surgery-office-neck-swellings-thyroid": {
+    notes: {
+      sections: [
+        {
+          title: "Definition and key facts",
+          points: [
+            "A neck swelling is diagnosed by its **triangle**, its movement and the patient's **age**.",
+            "**Goitre** is any enlargement of the thyroid gland.",
+            "Over 40 years, a lateral neck mass is **malignant until proved otherwise**.",
+            "In India, a chronic cervical node is **tuberculosis** until FNAC and CBNAAT say otherwise.",
+            "A hard node in a tobacco user is **metastatic squamous carcinoma** until proved otherwise.",
+          ],
+        },
+        {
+          title: "Classification that matters",
+          points: [
+            "**WHO goitre grade**: 0 not palpable, 1 palpable not visible, 2 visible.",
+            "Goitre types: simple, toxic, inflammatory and neoplastic.",
+            "Sites: midline, anterior triangle, posterior triangle and supraclavicular.",
+            "Node levels **I-VI** each drain a predictable primary site.",
+            "**ACR TI-RADS** TR1-TR5 grades nodule ultrasound and sets FNAC size cut-offs.",
+            "**Bethesda I-VI** reports thyroid FNAC with a risk and an action for each.",
+          ],
+        },
+        {
+          title: "How it happens (pathophysiology)",
+          points: [
+            "1. Iodine deficiency lowers thyroid hormone, so **TSH rises** and drives gland growth.",
+            "2. Cycles of hyperplasia and involution form a **multinodular goitre**.",
+            "3. Some nodules become autonomous, causing toxic multinodular goitre in the elderly.",
+            "4. In Graves disease, **TSH-receptor antibodies** stimulate the gland and orbital tissue.",
+            "5. The thyroid moves with swallowing because pretracheal fascia binds it to the larynx.",
+            "6. A thyroglossal cyst is tethered to the tongue, so it rises on **tongue protrusion**.",
+          ],
+        },
+        {
+          title: "History in the OPD",
+          points: [
+            "Sudden pain in a nodule suggests **haemorrhage into a cyst**.",
+            "A painful tender goitre after a viral illness suggests **de Quervain thyroiditis**.",
+            "**Hoarseness** with a nodule suggests nerve invasion by cancer.",
+            "Ask about pressure symptoms, hyper- or hypothyroid symptoms and weight loss.",
+            "Ask about childhood neck irradiation and family history of thyroid cancer or MEN 2.",
+            "Ask about tobacco, alcohol, dysphagia, otalgia and voice change in a hard node.",
+          ],
+        },
+        {
+          title: "Examination",
+          points: [
+            "Give a **sip of water**: the thyroid and thyroglossal cyst rise on swallowing.",
+            "Ask the patient to **protrude the tongue**: only a thyroglossal cyst rises.",
+            "Palpate from behind; if the lower border is not reached, suspect **retrosternal goitre**.",
+            "**Pemberton sign**: facial plethora and stridor with arms raised.",
+            "**Berry sign**: absent carotid pulse beside a thyroid mass suggests malignancy.",
+            "For any hard node, examine the mouth, tonsils, larynx, nasopharynx and left supraclavicular fossa.",
+          ],
+        },
+        {
+          title: "Investigations",
+          points: [
+            "**TSH first** in every thyroid swelling.",
+            "Low TSH: isotope scan; a **hot nodule is almost never malignant**.",
+            "**Ultrasound** every nodule and grade it by TI-RADS.",
+            "Ultrasound-guided **FNAC** at TI-RADS size thresholds, reported in Bethesda.",
+            "Chronic node: **FNAC with ZN stain and CBNAAT**, plus chest X-ray and HIV test.",
+            "Follicular carcinoma **cannot be diagnosed on FNAC**; it needs histology.",
+          ],
+        },
+        {
+          title: "Treatment - first line",
+          points: [
+            "**Iodised salt**: 30 ppm at production, 15 ppm at the household.",
+            "Physiological goitre of puberty and pregnancy needs only reassurance.",
+            "Benign (Bethesda II) nodule: repeat ultrasound at **12-24 months**.",
+            "**Levothyroxine suppression** of benign nodules is not recommended.",
+            "Graves: **carbimazole** 15-40 mg daily, tapering to maintenance, for 12-18 months.",
+            "**Propranolol** controls tremor and palpitations until euthyroid.",
+          ],
+        },
+        {
+          title: "Treatment - next steps",
+          points: [
+            "Use **PTU** in the first trimester and thyroid storm.",
+            "**Radioiodine** for toxic multinodular goitre, toxic adenoma and relapsed Graves.",
+            "Before thyroidectomy for Graves: euthyroid first, then **Lugol's iodine for 10 days**.",
+            "Thyroidectomy for pressure, malignancy, retrosternal goitre or failed medical treatment.",
+            "TB lymphadenitis: **2HRZE/4HRE** daily for 6 months by weight band.",
+            "Infected thyroglossal or branchial cyst: antibiotic and aspirate, **never incise**.",
+          ],
+        },
+        {
+          title: "Complications and red flags",
+          points: [
+            "**Agranulocytosis** on carbimazole: stop it and check neutrophils for sore throat or fever.",
+            "Neck swelling and stridor after thyroidectomy: **open the wound at the bedside**.",
+            "Post-thyroidectomy tetany: **calcium gluconate 10% 10-20 mL IV** over 10 minutes.",
+            "Bilateral nerve palsy gives **stridor with a good voice**; unilateral gives hoarseness.",
+            "Thyroid storm: PTU, then iodine 1 hour later, propranolol and hydrocortisone.",
+          ],
+        },
+        {
+          title: "Referral and follow-up",
+          points: [
+            "Urgent referral for stridor, rapid growth, hard fixed mass or hoarseness with a nodule.",
+            "Same-day referral for thyroid storm or sight-threatening Graves eye disease.",
+            "Levothyroxine: check TSH **6-8 weeks** after any change, then yearly.",
+            "Never start empirical anti-TB treatment without cytological or microbiological proof.",
+          ],
+        },
+      ],
+      tables: [
+        {
+          heading: "Drugs for thyroid and neck swellings",
+          columns: ["Drug", "Dose and route", "Duration", "Key side effects / cautions"],
+          rows: [
+            ["Carbimazole", "15-40 mg oral daily; maintenance 5-15 mg", "12-18 months in Graves", "Agranulocytosis; avoid in first trimester"],
+            ["Propylthiouracil", "100-150 mg oral 8-hourly", "First trimester, thyroid storm", "Fulminant hepatotoxicity"],
+            ["Propranolol", "40 mg oral 8-hourly", "Until euthyroid", "Avoid in asthma; use atenolol"],
+            ["Lugol's iodine", "3-5 drops 8-hourly", "10 days before surgery", "Escape if prolonged"],
+            ["Levothyroxine", "1.6 microgram/kg/day; elderly 25-50 microgram", "Lifelong if hypothyroid", "AF, osteoporosis if over-replaced"],
+            ["Prednisolone", "40 mg daily, tapered", "4-6 weeks (de Quervain)", "Hyperglycaemia"],
+            ["Calcium gluconate 10%", "10-20 mL IV over 10 min", "For tetany", "Arrhythmia if given fast"],
+            ["HRZE fixed-dose combination", "By weight band (50-64 kg: 4 tablets)", "2 months HRZE, 4 months HRE", "Hepatitis; give pyridoxine"],
+          ],
+        },
+        {
+          heading: "Bethesda thyroid cytology",
+          columns: ["Category", "Diagnosis", "Malignancy risk", "Action"],
+          rows: [
+            ["I", "Nondiagnostic", "About 13%", "Repeat FNA"],
+            ["II", "Benign", "About 4%", "Follow-up"],
+            ["III", "Atypia (AUS)", "About 22%", "Repeat FNA or lobectomy"],
+            ["IV", "Follicular neoplasm", "About 30%", "Diagnostic lobectomy"],
+            ["V", "Suspicious", "About 74%", "Surgery"],
+            ["VI", "Malignant", "About 97%", "Surgery by stage"],
+          ],
+        },
+        {
+          heading: "Neck swellings by site",
+          columns: ["Site", "Swellings", "Clinching sign"],
+          rows: [
+            ["Midline", "Thyroglossal cyst, dermoid, isthmus nodule", "Thyroglossal cyst rises on tongue protrusion"],
+            ["Anterior triangle", "Thyroid, branchial cyst, carotid body tumour", "Carotid body tumour moves only side to side"],
+            ["Posterior triangle", "TB nodes, cystic hygroma, nasopharyngeal metastasis", "Cystic hygroma transilluminates"],
+            ["Supraclavicular", "Virchow node, lymphoma", "Left side suggests abdominal cancer"],
+          ],
+        },
+      ],
+      remember: [
+        "Tongue protrusion clinches a thyroglossal cyst; Sistrunk removes the central hyoid.",
+        "TSH first: a hot nodule is almost never malignant.",
+        "Follicular carcinoma cannot be diagnosed on FNAC.",
+        "Bilateral nerve palsy: stridor with a good voice.",
+        "Never open-biopsy a suspected metastatic node; FNAC and panendoscopy first.",
+        "Levothyroxine on an empty stomach, 4 hours from calcium and iron.",
+        "Never needle a carotid body tumour.",
+      ],
+    },
     checked: "2026-10",
     master: {
       heading: "Master revision table - neck swellings, goitre and thyroid nodule",
@@ -664,6 +2696,160 @@ const revision: RevisionSet = {
     ],
   },
   "surgery-office-anorectal-disorders": {
+    notes: {
+      sections: [
+        {
+          title: "Definition and key facts",
+          points: [
+            "Most anal complaints are **piles, fissure, abscess-fistula, pilonidal disease or pruritus**.",
+            "Diagnosis is by inspection, **digital rectal examination and proctoscopy**.",
+            "**Haemorrhoids** are enlarged, displaced normal anal vascular cushions.",
+            "**Anal fissure** is a tear in the anoderm, **90% in the posterior midline**.",
+            "Never call rectal bleeding piles in a patient with cancer red flags without colonoscopy.",
+          ],
+        },
+        {
+          title: "Classification that matters",
+          points: [
+            "**Goligher grade I-IV** for internal piles: bleeding only, up to permanent prolapse.",
+            "A fissure is **chronic after 6 weeks**, or with sentinel pile, papilla and exposed sphincter.",
+            "Abscess spaces: **perianal (commonest)**, ischiorectal, intersphincteric and supralevator.",
+            "**Parks fistula types**: intersphincteric, trans-sphincteric, suprasphincteric, extrasphincteric.",
+            "Complex fistula: over 30% of external sphincter, anterior in women, recurrent or Crohn.",
+          ],
+        },
+        {
+          title: "How it happens (pathophysiology)",
+          points: [
+            "1. Above the **dentate line** there is no pain sensation, so banding is painless.",
+            "2. Below it, somatic nerves make tears and thrombosed piles very painful.",
+            "3. Straining and hard stools engorge the cushions and break their supports.",
+            "4. In fissure, pain causes **internal sphincter spasm**, which makes the midline ischaemic.",
+            "5. Ischaemia stops healing, so treatment must **lower sphincter pressure**.",
+            "6. Abscess and fistula start in infected **anal glands** (cryptoglandular theory).",
+          ],
+        },
+        {
+          title: "History in the OPD",
+          points: [
+            "Ask the five questions: **bleeding, pain, lump, discharge and itch**.",
+            "Bright red blood on the paper after stool is outlet bleeding from piles or fissure.",
+            "Tearing pain during and for **1-2 hours after stool** suggests fissure.",
+            "Painless bleeding suggests internal piles; constant throbbing pain with fever suggests abscess.",
+            "Red flags: age 50+, weight loss, anaemia, change in bowel habit, family history.",
+            "Ask about diabetes, HIV, Crohn symptoms, TB and sexual history.",
+          ],
+        },
+        {
+          title: "Examination",
+          points: [
+            "Examine in the **left lateral position** with a chaperone.",
+            "Gentle inspection diagnoses most fissures, with a **sentinel pile** below.",
+            "**Avoid DRE and proctoscopy on an acute fissure**; it is agonising.",
+            "Prolapsed piles show radial clefts; rectal prolapse shows **concentric folds**.",
+            "**Goodsall rule**: anterior openings run straight; posterior ones curve to the midline.",
+            "Never probe a fistula forcibly in the clinic.",
+          ],
+        },
+        {
+          title: "Investigations",
+          points: [
+            "Most benign anorectal disease needs **no test** beyond examination.",
+            "**Colonoscopy** for rectal bleeding at 50 or over, or with any red flag.",
+            "Check glucose and HIV in every perianal abscess.",
+            "**MRI pelvis** is the gold standard for complex or recurrent fistula.",
+            "Biopsy any **lateral**, multiple or painless fissure.",
+          ],
+        },
+        {
+          title: "Treatment - first line",
+          points: [
+            "**Fibre 25-30 g a day** with 2-3 litres of fluid for every pile and fissure.",
+            "Limit toilet sitting to **3-5 minutes**; use a footstool; no straining.",
+            "**Warm sitz baths** 10-15 minutes, 2-3 times a day and after stool.",
+            "Chronic fissure: **diltiazem 2% ointment** twice daily for 6-8 weeks.",
+            "Topical lidocaine before stool relieves fissure pain.",
+            "Drain a perianal abscess **the same day**; do not wait for fluctuation.",
+          ],
+        },
+        {
+          title: "Treatment - next steps",
+          points: [
+            "**Rubber band ligation** for grade I-III piles, at least 1 cm above the dentate line.",
+            "Excise, do not incise, a **thrombosed external pile** within 72 hours.",
+            "Fissure failing 8 weeks: botulinum toxin or **lateral internal sphincterotomy**.",
+            "Grade III-IV piles: excisional haemorrhoidectomy.",
+            "Simple low fistula: fistulotomy; complex: seton, LIFT or flap.",
+            "Antibiotics after abscess drainage only for cellulitis, diabetes or immunosuppression.",
+          ],
+        },
+        {
+          title: "Complications and red flags",
+          points: [
+            "Severe pain, fever or retention after banding suggests **pelvic sepsis**.",
+            "**Fournier gangrene**: pain out of proportion and crepitus; debride within hours.",
+            "About **one-third** of drained abscesses form a fistula.",
+            "Massive rectal bleeding with shock: treat as upper GI bleeding until excluded.",
+            "Never divide the **anorectal ring** or lay open a Crohn fistula.",
+          ],
+        },
+        {
+          title: "Referral and follow-up",
+          points: [
+            "Review piles and fissure at **6-8 weeks**.",
+            "Urgent referral for bleeding at 50+, a rectal mass or iron deficiency anaemia.",
+            "Refer every fistula-in-ano and chronic pilonidal disease electively.",
+            "Pilonidal disease: keep the natal cleft free of hair.",
+          ],
+        },
+      ],
+      tables: [
+        {
+          heading: "Drugs for anorectal disorders",
+          columns: ["Drug", "Dose and route", "Duration", "Key side effects / cautions"],
+          rows: [
+            ["Ispaghula husk", "3.5 g sachet in water once or twice daily", "Long term", "Not at bedtime; never dry"],
+            ["Polyethylene glycol 3350", "17 g in 250 mL water OD", "As needed", "Bloating, diarrhoea"],
+            ["MPFF (diosmin-hesperidin)", "3 tablets/day 4 days, then 2/day 3 days", "Acute attack", "GI upset"],
+            ["Lidocaine 2-5% topical", "To anal verge before stool", "1-2 weeks", "Contact sensitisation"],
+            ["Diltiazem 2% ointment", "Pea-sized amount twice daily", "6-8 weeks", "Perianal itch"],
+            ["GTN 0.2-0.4% ointment", "2.5 cm strip twice daily", "6-8 weeks", "Headache; never with sildenafil"],
+            ["Botulinum toxin A", "20-25 units into internal sphincter", "Once", "Transient flatus incontinence"],
+            ["Amoxicillin-clavulanate", "625 mg oral 8-hourly", "5-7 days, high-risk only", "Diarrhoea"],
+            ["Albendazole", "400 mg single dose, repeat at 2 weeks", "Whole household", "Avoid in pregnancy"],
+          ],
+        },
+        {
+          heading: "Goligher grades of internal piles",
+          columns: ["Grade", "Prolapse", "Treatment"],
+          rows: [
+            ["I", "Bleeds, no prolapse", "Fibre, banding or sclerotherapy"],
+            ["II", "Prolapses, reduces by itself", "Banding"],
+            ["III", "Needs manual reduction", "Banding, then surgery if it fails"],
+            ["IV", "Permanently prolapsed", "Excisional haemorrhoidectomy"],
+          ],
+        },
+        {
+          heading: "Parks types of fistula-in-ano",
+          columns: ["Type", "Course", "Operation"],
+          rows: [
+            ["Intersphincteric", "Between the sphincters", "Fistulotomy"],
+            ["Trans-sphincteric", "Across external sphincter", "Fistulotomy if low; seton if high"],
+            ["Suprasphincteric", "Above puborectalis", "Seton or flap"],
+            ["Extrasphincteric", "Rectum above levators to skin", "Treat cause; often stoma"],
+          ],
+        },
+      ],
+      remember: [
+        "Piles at 3, 7 and 11 o'clock; fissure at 6 o'clock.",
+        "Band above the dentate line, never below it.",
+        "A lateral fissure is never idiopathic; biopsy it.",
+        "Diltiazem heals fissure as well as GTN with fewer headaches.",
+        "Drain a perianal abscess the day it is seen.",
+        "Goodsall rule: anterior straight, posterior curved.",
+        "No DRE, no diagnosis.",
+      ],
+    },
     checked: "2026-10",
     updated: [
       "WHO STI 2024: STI proctitis regimen re-cited to the 2024 WHO update - ceftriaxone 1 g IM single dose (gonorrhoea) plus doxycycline 100 mg BD 7 days (21 days for LGV); syphilis benzathine penicillin 2.4 MU.",
@@ -716,6 +2902,166 @@ const revision: RevisionSet = {
     ],
   },
   "surgery-office-varicose-veins-leg-ulcers": {
+    notes: {
+      sections: [
+        {
+          title: "Definition and key facts",
+          points: [
+            "**Varicose veins** are tortuous superficial veins **3 mm or more** wide when standing.",
+            "Reticular veins are 1-3 mm; telangiectasias are under 1 mm.",
+            "About **70% of chronic leg ulcers** are venous.",
+            "A venous ulcer sits in the **gaiter area** above the medial malleolus.",
+            "**No compression without an ABPI**; it excludes arterial disease first.",
+          ],
+        },
+        {
+          title: "Classification that matters",
+          points: [
+            "**CEAP**: Clinical, Etiology, Anatomy and Pathophysiology.",
+            "C classes run from **C0 no signs** to **C6 active ulcer**.",
+            "Primary varicose veins are commonest; secondary follow DVT or a pelvic mass.",
+            "ABPI **0.8-1.3**: full compression is safe.",
+            "ABPI 0.5-0.8: reduced compression under a specialist; **below 0.5: none**, refer urgently.",
+            "ABPI over 1.3 means calcified vessels; use toe pressure.",
+          ],
+        },
+        {
+          title: "How it happens (pathophysiology)",
+          points: [
+            "1. Walking squeezes the **calf muscle pump**, lowering venous pressure to 20-30 mmHg.",
+            "2. Valve failure or deep obstruction keeps pressure high: **ambulatory venous hypertension**.",
+            "3. High pressure distends capillaries and traps activated leucocytes.",
+            "4. Leaked red cells deposit **haemosiderin**, staining the skin brown.",
+            "5. Chronic inflammation causes eczema and **lipodermatosclerosis**.",
+            "6. Hypoxic, fibrosed skin breaks down into an ulcer.",
+          ],
+        },
+        {
+          title: "History in the OPD",
+          points: [
+            "Aching, heaviness and swelling **worse at day's end**, relieved by elevation.",
+            "Ask about prolonged standing at work, pregnancies, obesity and family history.",
+            "Previous DVT suggests secondary, post-thrombotic disease.",
+            "Claudication or **rest pain** points to arterial disease; compression may be unsafe.",
+            "Ask about diabetes, neuropathy and leprosy for sole ulcers.",
+            "**Nicorandil** can itself cause leg ulcers.",
+          ],
+        },
+        {
+          title: "Examination",
+          points: [
+            "Examine **standing**, groin to foot, front and back.",
+            "**Saphena varix** has a cough impulse and disappears on lying down.",
+            "**Trendelenburg I** (release) tests the saphenofemoral junction.",
+            "**Trendelenburg II** (hold) tests perforator incompetence.",
+            "**Perthes positive** means deep vein obstruction; do not strip superficial veins.",
+            "Venous ulcer edge slopes; arterial is punched out; malignant is rolled and everted.",
+            "Measure **ABPI** in every patient with skin change or ulcer.",
+          ],
+        },
+        {
+          title: "Investigations",
+          points: [
+            "**ABPI** by hand-held Doppler before any compression.",
+            "**Duplex ultrasound** before intervention; reflux over 0.5 s superficial, over 1 s deep.",
+            "Duplex for thrombophlebitis; a quarter have coexisting DVT.",
+            "Check glucose, haemoglobin, albumin and creatinine in chronic ulcers.",
+            "Swab only clinically infected ulcers; all are colonised.",
+            "**Biopsy the edge** of an atypical ulcer or one not healed by 12 weeks.",
+          ],
+        },
+        {
+          title: "Treatment - first line",
+          points: [
+            "Elevate legs above the heart and raise the foot of the bed at night.",
+            "Walk, do calf raises, and avoid long standing.",
+            "**Graduated compression stockings**: 20-30 mmHg for C2-C3, 30-40 mmHg for C4-C6.",
+            "Active ulcer: **four-layer bandage** giving about 40 mmHg, changed weekly.",
+            "Clean ulcers with tap water or saline under a simple non-adherent dressing.",
+            "Emollients for dry skin; avoid neomycin and lanolin creams.",
+          ],
+        },
+        {
+          title: "Treatment - next steps",
+          points: [
+            "**Endovenous thermal ablation** is first line for truncal saphenous reflux.",
+            "Ablate within 2 weeks of ulcer presentation to speed healing (**EVRA trial**).",
+            "Correcting reflux after healing roughly halves recurrence (**ESCHAR trial**).",
+            "**Pentoxifylline 400 mg TDS** with compression improves ulcer healing.",
+            "Foam sclerotherapy for tributaries; liquid sclerotherapy for thread veins.",
+            "Stripping, if done, goes only to the knee to spare the saphenous nerve.",
+          ],
+        },
+        {
+          title: "Complications and red flags",
+          points: [
+            "**Bleeding varix**: lie flat, elevate the leg and press firmly for 10 minutes.",
+            "Thrombophlebitis 5 cm or more: **fondaparinux 2.5 mg** daily for 45 days.",
+            "Thrombus within 3 cm of the saphenofemoral junction is treated as DVT.",
+            "Blue, numb or painful toes under a bandage: remove it at once.",
+            "A rolled, bleeding edge in a chronic ulcer suggests **Marjolin ulcer**.",
+          ],
+        },
+        {
+          title: "Referral and follow-up",
+          points: [
+            "Review ulcers weekly; under 40% smaller in 4 weeks needs reassessment.",
+            "Repeat ABPI every 3-6 months on compression.",
+            "After healing, **lifelong compression**; ulcers recur in up to two-thirds without it.",
+            "Refer all symptomatic C2 and all C3-C6 disease for duplex and intervention.",
+          ],
+        },
+      ],
+      tables: [
+        {
+          heading: "Drugs for varicose veins and leg ulcers",
+          columns: ["Drug", "Dose and route", "Duration", "Key side effects / cautions"],
+          rows: [
+            ["MPFF (diosmin-hesperidin)", "1000 mg oral OD with meals", "Review at 2-3 months", "GI upset, headache"],
+            ["Pentoxifylline", "400 mg oral TDS with food", "Up to 6 months with compression", "Nausea; caution with anticoagulants"],
+            ["Sulodexide", "250 LSU oral BD", "2-3 months", "Bleeding risk"],
+            ["Ibuprofen", "400 mg oral 8-hourly", "7-14 days (thrombophlebitis)", "GI bleed, renal impairment"],
+            ["Fondaparinux", "2.5 mg SC OD", "45 days (SVT 5 cm or more)", "Avoid if CrCl under 20"],
+            ["Rivaroxaban", "DVT 15 mg BD 21 days, then 20 mg OD", "At least 3 months", "Bleeding; take with food"],
+            ["Cloxacillin", "500 mg oral 6-hourly", "5-7 days (cellulitis)", "Take 1 hour before food"],
+            ["Clobetasone 0.05%", "Topical once daily on eczema", "1-2 weeks", "Not on the ulcer bed"],
+            ["Polidocanol", "0.25-0.5% liquid or 1-3% foam", "Per session, max 2 mg/kg/day", "Pigmentation, DVT, visual aura"],
+          ],
+        },
+        {
+          heading: "CEAP clinical classes",
+          columns: ["Class", "Sign", "Action"],
+          rows: [
+            ["C0", "No signs", "Reassure"],
+            ["C1", "Thread or reticular veins", "Sclerotherapy if cosmetic"],
+            ["C2", "Varicose veins 3 mm or more", "Duplex; ablate if symptomatic"],
+            ["C3", "Oedema", "Compression"],
+            ["C4", "Pigmentation, eczema, lipodermatosclerosis", "Compression; refer"],
+            ["C5", "Healed ulcer", "Lifelong compression"],
+            ["C6", "Active ulcer", "ABPI, four-layer bandage, early ablation"],
+          ],
+        },
+        {
+          heading: "Leg ulcer types",
+          columns: ["Feature", "Venous", "Arterial", "Neuropathic"],
+          rows: [
+            ["Site", "Gaiter area, medial", "Toes, heel, lateral malleolus", "Sole, metatarsal heads"],
+            ["Edge", "Sloping", "Punched out", "Punched out with callus"],
+            ["Pain", "Mild, eased by elevation", "Severe, eased by dependency", "Painless"],
+            ["ABPI", "0.8 or more", "Under 0.8", "May exceed 1.3"],
+            ["Treatment", "Compression", "Revascularise, no compression", "Offloading"],
+          ],
+        },
+      ],
+      remember: [
+        "No compression without an ABPI.",
+        "Venous ulcer medial gaiter; arterial ulcer toes, heel and lateral malleolus.",
+        "Trendelenburg I release tests the junction; II hold tests perforators.",
+        "Perthes positive: do not strip the superficial veins.",
+        "Endovenous ablation has replaced stripping for truncal reflux.",
+        "After healing, lifelong compression stockings.",
+      ],
+    },
     checked: "2026-10",
     master: {
       heading: "Master revision table - varicose veins and chronic leg ulcer",
@@ -766,6 +3112,163 @@ const revision: RevisionSet = {
     ],
   },
   "surgery-office-scrotal-swelling-acute-scrotum": {
+    notes: {
+      sections: [
+        {
+          title: "Definition and key facts",
+          points: [
+            "**Acute scrotum** is sudden pain, swelling or tenderness of the scrotum or its contents.",
+            "In a boy or young man it is **testicular torsion until the scrotum is explored**.",
+            "Salvage is **over 90% within 6 hours** and under 10% after 24 hours.",
+            "Painless swellings are sorted by three questions, then by transillumination.",
+            "Office problems also include undescended testis, phimosis, paraphimosis and hernias.",
+          ],
+        },
+        {
+          title: "Classification that matters",
+          points: [
+            "Acute scrotum: **testicular torsion, appendage torsion and epididymo-orchitis**.",
+            "Torsion is **extravaginal** in neonates and **intravaginal** (bell-clapper) in adolescents.",
+            "Cannot get above it: **inguinoscrotal hernia**.",
+            "Testis not separate: **hydrocele** (transilluminates) or **tumour** (does not).",
+            "Testis separate: **epididymal cyst** or **varicocele** (bag of worms).",
+            "Varicocele grades I-III; undescended testis is palpable or impalpable.",
+          ],
+        },
+        {
+          title: "How it happens (pathophysiology)",
+          points: [
+            "1. In the **bell-clapper deformity**, the testis hangs free with a horizontal lie.",
+            "2. Cremaster contraction during sleep, cold or sport spins the testis.",
+            "3. Twisting first blocks veins, then arterial inflow stops and the testis infarcts.",
+            "4. A **patent processus vaginalis** causes childhood hernia and hydrocele.",
+            "5. Left varicocele is common: the left vein enters the renal vein at a right angle.",
+            "6. The testis drains to **para-aortic nodes**; scrotal skin drains to inguinal nodes.",
+          ],
+        },
+        {
+          title: "History in the OPD",
+          points: [
+            "**Sudden severe pain**, often waking from sleep, with vomiting suggests torsion.",
+            "Adolescents may report only lower abdominal pain; always examine the testes.",
+            "Gradual pain over days with fever and dysuria suggests epididymo-orchitis.",
+            "Ask about sexual history, instrumentation and recent mumps.",
+            "A **painless hard heavy testis** suggests tumour.",
+            "Ask if the swelling reduces on lying down or varies during the day.",
+          ],
+        },
+        {
+          title: "Examination",
+          points: [
+            "Examine standing and lying, with cough and Valsalva.",
+            "**Can you get above it?** If not, it is an inguinoscrotal hernia.",
+            "**Transilluminate**: hydrocele and epididymal cyst glow; tumour does not.",
+            "Torsion: **high-riding testis, horizontal lie, absent cremasteric reflex**.",
+            "**Prehn sign is unreliable** and must not be used to exclude torsion.",
+            "Appendage torsion: tender upper-pole nodule with a **blue dot** sign.",
+          ],
+        },
+        {
+          title: "Investigations",
+          points: [
+            "Suspected torsion needs **no investigation**; TWIST 5 or more goes straight to theatre.",
+            "TWIST 3-4: urgent Doppler, with a low threshold to explore.",
+            "Epididymo-orchitis: **first-void urine NAAT** and urine culture.",
+            "Scrotal ultrasound for any intratesticular mass or impalpable testis in a hydrocele.",
+            "Tumour: **AFP, beta-hCG and LDH** before orchidectomy.",
+            "No ultrasound for undescended testis before referral.",
+          ],
+        },
+        {
+          title: "Treatment - first line",
+          points: [
+            "Torsion: analgesia, nil by mouth, **immediate surgical exploration**.",
+            "At surgery, untwist and fix the testis, and **always fix the other side**.",
+            "Manual detorsion is outward, **like opening a book**, but exploration is still needed.",
+            "Sexually acquired epididymitis: **ceftriaxone 500 mg IM plus doxycycline** for 10 days.",
+            "Enteric epididymitis in older men: **levofloxacin 500 mg** daily for 10 days.",
+            "Scrotal support, ice and NSAIDs for epididymo-orchitis.",
+          ],
+        },
+        {
+          title: "Treatment - next steps",
+          points: [
+            "Tumour: **radical inguinal orchidectomy**; never a scrotal incision or biopsy.",
+            "Undescended testis: **orchidopexy at 6-12 months**, by 18 months at the latest.",
+            "Hormonal therapy for undescended testis is **not recommended**.",
+            "Infant hydrocele usually closes by 1-2 years; operate if it persists.",
+            "Paediatric inguinal hernia: prompt **herniotomy**.",
+            "Treat varicocele only for infertility, adolescent hypotrophy or persistent pain.",
+          ],
+        },
+        {
+          title: "Special groups",
+          points: [
+            "Physiological phimosis: reassure; **never forcibly retract** the foreskin.",
+            "Symptomatic phimosis: **betamethasone cream** twice daily for 4-8 weeks.",
+            "**Lichen sclerosus** (BXO) is the absolute indication for circumcision.",
+            "**Paraphimosis**: compress the glans, then reduce; dorsal slit if it fails.",
+            "Bilateral impalpable testes in a newborn suggest a disorder of sex development.",
+          ],
+        },
+        {
+          title: "Complications and red flags",
+          points: [
+            "Fournier gangrene: crepitus and dusky skin; **debride within hours**.",
+            "Scrotal trauma with haematocele needs exploration within 72 hours.",
+            "Right-sided or non-emptying varicocele suggests renal tumour.",
+            "Epididymitis not improving by 3 days: think abscess, torsion, tumour or TB.",
+          ],
+        },
+      ],
+      tables: [
+        {
+          heading: "Drugs for scrotal and penile conditions",
+          columns: ["Drug", "Dose and route", "Duration", "Key side effects / cautions"],
+          rows: [
+            ["Ceftriaxone", "500 mg IM single dose", "Once", "Rash, rare anaphylaxis"],
+            ["Doxycycline", "100 mg oral BD", "10 days", "Oesophagitis; not in pregnancy"],
+            ["Levofloxacin", "500 mg oral OD", "10 days", "Tendon rupture, QT prolongation"],
+            ["Ibuprofen plus paracetamol", "400 mg 8-hourly plus 1 g 6-hourly", "5-7 days", "GI bleed, renal impairment"],
+            ["Morphine", "0.1 mg/kg IV titrated", "Before transfer", "Never excludes torsion"],
+            ["Betamethasone 0.05% cream", "Twice daily to preputial ring", "4-8 weeks", "Relapse possible"],
+            ["Clotrimazole 1% cream", "Twice daily", "7-14 days", "Check glucose in adults"],
+            ["Lidocaine 1% plain", "2-5 mL each side, max 3 mg/kg", "Penile block", "Never with adrenaline"],
+            ["IDA (ivermectin, DEC, albendazole)", "200 microgram/kg, 6 mg/kg, 400 mg", "Once yearly (MDA)", "Not in pregnancy or under 2"],
+          ],
+        },
+        {
+          heading: "Acute scrotum compared",
+          columns: ["Feature", "Torsion", "Appendage torsion", "Epididymo-orchitis"],
+          rows: [
+            ["Age and onset", "Teens; sudden, vomiting", "7-12 years; over hours", "Sexually active or older; over days"],
+            ["Signs", "High horizontal testis", "Blue dot, upper-pole nodule", "Tender epididymis, fever"],
+            ["Cremasteric reflex", "Absent", "Present", "Present"],
+            ["Doppler flow", "Absent or reduced", "Normal", "Increased"],
+            ["Action", "Explore and fix both", "Analgesia, rest", "Antibiotics, support"],
+          ],
+        },
+        {
+          heading: "TWIST score",
+          columns: ["Finding", "Points"],
+          rows: [
+            ["Testicular swelling", "2"],
+            ["Hard testis", "1"],
+            ["Absent cremasteric reflex", "1"],
+            ["Nausea or vomiting", "1"],
+            ["High-riding testis", "1"],
+          ],
+        },
+      ],
+      remember: [
+        "Time is testis: over 90% salvage within 6 hours.",
+        "TWIST 5 or more: straight to theatre without Doppler.",
+        "Always fix the other testis; the bell-clapper is bilateral.",
+        "You cannot get above a hernia; you can get above a hydrocele.",
+        "Never approach a testicular tumour through the scrotum.",
+        "Orchidopexy by 6-12 months, 18 months at the latest.",
+      ],
+    },
     checked: "2026-10",
     master: {
       heading: "Master revision table - scrotal swelling and acute scrotum",
@@ -814,6 +3317,170 @@ const revision: RevisionSet = {
     ],
   },
   "surgery-office-rif-pain-appendicitis": {
+    notes: {
+      sections: [
+        {
+          title: "Definition and key facts",
+          points: [
+            "**Acute appendicitis** is acute inflammation of the vermiform appendix.",
+            "It is the **commonest emergency abdominal operation**; peak age 10-30 years.",
+            "Lifetime risk is about **7-8%**.",
+            "Perforation occurs in 20-30%, and in over half of under-5s and the elderly.",
+            "**McBurney point**: junction of lateral third and medial two-thirds of the spinoumbilical line.",
+          ],
+        },
+        {
+          title: "Classification that matters",
+          points: [
+            "**Uncomplicated versus complicated** decides treatment.",
+            "Complicated means gangrene, perforation, mass, abscess or generalised peritonitis.",
+            "**Alvarado (MANTRELS)**: 4 or less unlikely, 5-6 equivocal, 7 or more probable.",
+            "WSES prefers the **AIR score** and Adult Appendicitis Score in adults.",
+            "Paediatric Appendicitis Score of 6 or more suggests appendicitis.",
+            "No score replaces **serial examination** by the same doctor.",
+          ],
+        },
+        {
+          title: "How it happens (pathophysiology)",
+          points: [
+            "1. An **appendicolith** or lymphoid hyperplasia blocks the lumen.",
+            "2. Mucus collects and intraluminal pressure rises.",
+            "3. Lymphatic, then venous, flow stops and the wall becomes ischaemic.",
+            "4. Bacteria invade; the **end-artery** supply makes the tip gangrenous first.",
+            "5. Early pain is **periumbilical** (visceral, T10); it shifts to the RIF when parietal peritoneum is involved.",
+            "6. After 3-5 days, omentum may wall it off as an **appendicular mass**.",
+          ],
+        },
+        {
+          title: "History in the OPD",
+          points: [
+            "**Murphy sequence**: periumbilical pain, then anorexia and vomiting, then RIF pain, then fever.",
+            "**Vomiting before pain** suggests gastroenteritis instead.",
+            "A hungry patient rarely has appendicitis.",
+            "In women, ask the last period, discharge and sudden pain with vomiting.",
+            "In children, ask about sore throat, red-currant-jelly stool and scrotal pain.",
+            "In India, ask about typhoid-like fever, TB symptoms and dysentery.",
+          ],
+        },
+        {
+          title: "Examination",
+          points: [
+            "**McBurney point tenderness with guarding** is the most reliable sign.",
+            "**Rovsing sign**: pressing the left iliac fossa hurts the right.",
+            "**Psoas sign** suggests a retrocaecal appendix; **obturator sign** a pelvic one.",
+            "Pain on coughing or heel-drop shows peritoneal irritation.",
+            "Examine the **testes in every boy** and the hernial orifices.",
+            "Rigidity, rebound everywhere and tachycardia mean generalised peritonitis.",
+          ],
+        },
+        {
+          title: "Investigations",
+          points: [
+            "**Pregnancy test first** in every woman of reproductive age.",
+            "Raised white count and CRP support it; both normal make it unlikely.",
+            "**Ultrasound** first in children, young women and pregnancy; non-compressible appendix over 6 mm.",
+            "**Low-dose CT** for equivocal adults and the elderly.",
+            "MRI without contrast if ultrasound is inconclusive in pregnancy.",
+            "Never give purgatives or enemas; do not delay referral for imaging.",
+          ],
+        },
+        {
+          title: "Treatment - first line",
+          points: [
+            "Nil by mouth, IV fluids and **early analgesia**; it does not mask signs.",
+            "Start IV **ceftriaxone plus metronidazole** once the diagnosis is made.",
+            "**Laparoscopic appendicectomy** is preferred; open surgery is safe where needed.",
+            "Surgery within 24 hours of admission is safe once antibiotics have started.",
+            "No post-operative antibiotics for uncomplicated appendicitis.",
+            "Give **2-3 days** of antibiotics after surgery for complicated disease.",
+          ],
+        },
+        {
+          title: "Treatment - next steps",
+          points: [
+            "**Antibiotics-first** suits CT-proven uncomplicated disease without an appendicolith.",
+            "About **3 in 10** need appendicectomy by 90 days after antibiotics-first.",
+            "Appendicular mass: **Ochsner-Sherren regimen** with daily marking of the mass.",
+            "Abandon conservative care if pulse, pain or the mass increase.",
+            "Abscess over 3-4 cm: image-guided drainage plus antibiotics.",
+            "Colonoscopy or interval CT for older patients after a mass.",
+          ],
+        },
+        {
+          title: "Special groups",
+          points: [
+            "**Pregnancy**: the appendix moves upward; perforation raises fetal loss to 20-35%.",
+            "Laparoscopic appendicectomy is safe in **all trimesters**.",
+            "Avoid NSAIDs after 20 weeks of pregnancy.",
+            "Children under 5 perforate early because the omentum is underdeveloped.",
+            "Elderly patients have blunted signs; consider caecal carcinoma.",
+          ],
+        },
+        {
+          title: "Complications and red flags",
+          points: [
+            "Perforation with peritonitis: **30 mL/kg** crystalloid if hypotensive and antibiotics within 1 hour.",
+            "Positive pregnancy test with RIF pain and shock means **ruptured ectopic**.",
+            "Swinging fever with tenesmus at day 5-10 suggests **pelvic abscess**.",
+            "Rigors and jaundice suggest **pylephlebitis**.",
+            "Always read the histology for neuroendocrine or mucinous tumours.",
+          ],
+        },
+      ],
+      tables: [
+        {
+          heading: "Drugs in appendicitis",
+          columns: ["Drug", "Dose and route", "Duration", "Key side effects / cautions"],
+          rows: [
+            ["Paracetamol", "1 g IV or oral 6-hourly; child 15 mg/kg", "As needed", "Max 4 g/day"],
+            ["Morphine", "0.1 mg/kg IV titrated", "As needed", "Respiratory depression; naloxone ready"],
+            ["Ondansetron", "4 mg IV 8-hourly", "As needed", "QT prolongation"],
+            ["Ceftriaxone plus metronidazole", "1-2 g IV OD plus 500 mg IV 8-hourly", "Pre-op; 2-3 days if complicated", "No alcohol with metronidazole"],
+            ["Amoxicillin-clavulanate", "1.2 g IV 8-hourly, then 625 mg oral", "Step-down", "Cholestatic jaundice"],
+            ["Piperacillin-tazobactam", "4.5 g IV 6-8 hourly", "2-3 days after source control", "C. difficile, hypokalaemia"],
+            ["Ertapenem", "1 g IV OD", "1-3 days, then oral to 7-10 days", "For antibiotics-first"],
+            ["Ibuprofen", "400 mg oral 8-hourly", "3-5 days after surgery", "Avoid after 20 weeks pregnancy"],
+            ["Enoxaparin", "40 mg SC OD", "Until mobile", "Bleeding"],
+          ],
+        },
+        {
+          heading: "Alvarado (MANTRELS) score",
+          columns: ["Component", "Points"],
+          rows: [
+            ["Migration of pain to RIF", "1"],
+            ["Anorexia", "1"],
+            ["Nausea or vomiting", "1"],
+            ["Tenderness in RIF", "2"],
+            ["Rebound tenderness", "1"],
+            ["Elevated temperature 37.3 or more", "1"],
+            ["Leucocytosis over 10,000", "2"],
+            ["Shift to left (neutrophils over 75%)", "1"],
+          ],
+        },
+        {
+          heading: "Mimics of appendicitis",
+          columns: ["Group", "Diagnosis", "Clue"],
+          rows: [
+            ["Child", "Mesenteric adenitis", "Recent sore throat, high fever"],
+            ["Infant", "Intussusception", "Red-currant-jelly stool"],
+            ["Boy", "Testicular torsion", "Scrotal pain, high testis"],
+            ["Young woman", "Ectopic pregnancy", "Positive pregnancy test, shock"],
+            ["Young woman", "Ovarian torsion or PID", "Sudden pain or discharge"],
+            ["Any adult", "Ureteric colic", "Loin-to-groin colic, haematuria"],
+            ["Elderly", "Caecal carcinoma", "Anaemia, weight loss, mass"],
+          ],
+        },
+      ],
+      remember: [
+        "Pregnancy test first in every woman of reproductive age.",
+        "Pain before vomiting is appendicitis; vomiting before pain is gastroenteritis.",
+        "Psoas sign retrocaecal; obturator sign pelvic.",
+        "The appendicular artery is an end artery; the tip dies first.",
+        "Find the base where the three taeniae converge.",
+        "Analgesia does not mask appendicitis.",
+        "Mnemonic MANTRELS for the Alvarado score.",
+      ],
+    },
     checked: "2026-10",
     updated: [
       "SSC 2026: perforated appendicitis with sepsis - at least 30 mL/kg balanced crystalloid, antibiotic within 1 hour.",
@@ -869,6 +3536,162 @@ const revision: RevisionSet = {
     ],
   },
   "surgery-office-hand-infections": {
+    notes: {
+      sections: [
+        {
+          title: "Definition and key facts",
+          points: [
+            "Hand infections spread along **closed anatomical compartments**.",
+            "**Pus in the hand needs a knife**, not just antibiotics.",
+            "Paronychia and felon are drained in the clinic under digital block.",
+            "Flexor tenosynovitis, deep space infection and fight bites are **surgical emergencies**.",
+            "The usual organism is **Staphylococcus aureus**, increasingly MRSA in India.",
+          ],
+        },
+        {
+          title: "Classification that matters",
+          points: [
+            "**Superficial**: acute and chronic paronychia, felon, subcuticular abscess.",
+            "**Deep**: flexor tenosynovitis, web, thenar, midpalmar and hypothenar spaces.",
+            "Also radial and ulnar bursae, **Parona space**, septic arthritis and bites.",
+            "**Chronic paronychia** lasts over 6 weeks and is mainly a wet-work dermatitis.",
+            "**Kanavel signs**: flexed posture, fusiform swelling, sheath tenderness, pain on passive extension.",
+          ],
+        },
+        {
+          title: "How it happens (pathophysiology)",
+          points: [
+            "1. A minor breach (hangnail, thorn, lancet) lets bacteria into a closed space.",
+            "2. Pulp septa trap pus, so pressure rises and causes **throbbing pain**.",
+            "3. Pressure thromboses pulp vessels, causing distal phalanx osteomyelitis that spares the base.",
+            "4. Pus in a tendon sheath destroys the tendon's gliding surface within hours.",
+            "5. Thumb and little finger sheaths join the bursae, allowing a **horseshoe abscess**.",
+            "6. Palmar lymph drains dorsally, so **palmar infections swell the dorsum**.",
+          ],
+        },
+        {
+          title: "History in the OPD",
+          points: [
+            "Ask the mechanism: thorn, fish bone, glucometer lancet, manicure, punch or bite.",
+            "**Throbbing pain that stops sleep** means pus under pressure.",
+            "A cut over a knuckle after a fight is a **fight bite** until proved otherwise.",
+            "Ask about diabetes, CKD, HIV, steroids and IV drug use.",
+            "Wet work suggests chronic paronychia; tingling then vesicles suggest herpetic whitlow.",
+            "Check tetanus status and, after a bite, rabies history and the animal's status.",
+          ],
+        },
+        {
+          title: "Examination",
+          points: [
+            "Localise by the **point of maximal tenderness**, not the swelling.",
+            "Felon: tense pulp with swelling stopping at the **DIP crease**.",
+            "Check all four **Kanavel signs**; pain on passive extension is most useful.",
+            "Web space: fingers held **abducted**; midpalmar: **loss of palmar concavity**.",
+            "Examine a fight bite **with the fist clenched**.",
+            "Pain out of proportion, bullae and crepitus suggest necrotising fasciitis.",
+          ],
+        },
+        {
+          title: "Investigations",
+          points: [
+            "**Capillary glucose and HbA1c** in every hand infection.",
+            "Pus for Gram stain and culture from every drained collection.",
+            "**X-ray** for fight bites, foreign bodies, gas and suspected osteomyelitis.",
+            "Ultrasound finds wood or thorn and sheath fluid.",
+            "HSV PCR or Tzanck smear for suspected herpetic whitlow.",
+          ],
+        },
+        {
+          title: "Treatment - first line",
+          points: [
+            "**Elevate in a high arm sling** and splint in the position of safety.",
+            "Position of safety: wrist extended 20-30, **MCP flexed 70-90**, IP joints straight.",
+            "Acute paronychia: soaks, **cephalexin or cloxacillin**, lift the fold if pus.",
+            "Felon: **high lateral incision on the non-pinch side**, or volar midline if pointing.",
+            "Never use a fish-mouth incision; never inject anaesthetic into infected tissue.",
+            "All hand bites: wash 15 minutes and give **amoxicillin-clavulanate for 5 days**.",
+          ],
+        },
+        {
+          title: "Treatment - next steps",
+          points: [
+            "Flexor tenosynovitis: admit, **IV cefazolin**, splint and reassess at 12 hours.",
+            "No improvement in 24 hours means **theatre irrigation** of the sheath.",
+            "MRSA risk: co-trimoxazole, clindamycin or doxycycline; vancomycin IV if severe.",
+            "Fight bite: X-ray and **same-day exploration and joint washout**; never suture.",
+            "Chronic paronychia: keep dry, **topical steroid** plus azole if Candida.",
+            "Herpetic whitlow: **acyclovir 400 mg TDS** for 7 days; never incise.",
+          ],
+        },
+        {
+          title: "Complications and red flags",
+          points: [
+            "Delay in tenosynovitis causes tendon necrosis, adhesions and amputation.",
+            "Distal forearm swelling after thumb or little finger infection means **Parona space** spread.",
+            "Tropical diabetic hand sepsis needs insulin, IV antibiotics and early debridement.",
+            "Necrotising fasciitis: resuscitate and debride as an emergency.",
+            "A single persistent nail fold lesion may be **SCC or amelanotic melanoma**.",
+          ],
+        },
+        {
+          title: "Referral and follow-up",
+          points: [
+            "Review every treated hand infection at **24-48 hours**.",
+            "Refer the same day for tenosynovitis, deep space infection, fight bite or cat bite.",
+            "Arrange hand therapy after any deep infection; function is the goal.",
+            "Complete the rabies schedule and tetanus prophylaxis.",
+          ],
+        },
+      ],
+      tables: [
+        {
+          heading: "Drugs for hand infections",
+          columns: ["Drug", "Dose and route", "Duration", "Key side effects / cautions"],
+          rows: [
+            ["Cephalexin", "500 mg oral 6-hourly", "5-7 days", "Diarrhoea, rash"],
+            ["Cloxacillin", "500 mg oral 6-hourly, before food", "5-7 days", "Cholestatic jaundice"],
+            ["Amoxicillin-clavulanate", "625 mg oral 8-hourly; IV 1.2 g", "5 days bite prophylaxis; 10-14 if infected", "Diarrhoea"],
+            ["Co-trimoxazole DS", "1 tablet BD", "5-7 days (MRSA)", "Hyperkalaemia; avoid in G6PD deficiency"],
+            ["Clindamycin", "300-450 mg oral 8-hourly", "5-7 days", "C. difficile; not alone for bites"],
+            ["Cefazolin", "2 g IV 8-hourly", "10-14 days total", "Phlebitis"],
+            ["Vancomycin", "15-20 mg/kg IV 8-12 hourly", "With deep MRSA infection", "Nephrotoxicity; infuse over 60 min"],
+            ["Acyclovir", "400 mg oral TDS", "7 days", "Start within 48-72 hours"],
+            ["Lidocaine 1-2% plain", "Digital block 4-6 mL, max 3 mg/kg", "Single use", "Never into infected tissue"],
+            ["Rabies immunoglobulin", "Human 20 IU/kg or equine 40 IU/kg", "Day 0, category III", "Infiltrate into the wound"],
+          ],
+        },
+        {
+          heading: "Hand infections by space",
+          columns: ["Type", "Key sign", "Management"],
+          rows: [
+            ["Acute paronychia", "Red fold with pus", "Lift fold, partial nail removal"],
+            ["Chronic paronychia", "Lost cuticle, wet work", "Keep dry, topical steroid"],
+            ["Felon", "Tense pulp to DIP crease", "High lateral or volar incision"],
+            ["Flexor tenosynovitis", "Four Kanavel signs", "IV antibiotics, theatre irrigation"],
+            ["Web space", "Fingers abducted", "Separate palmar and dorsal incisions"],
+            ["Thenar space", "Thumb abducted, thenar ballooning", "Theatre drainage"],
+            ["Midpalmar space", "Loss of palmar concavity", "Theatre drainage"],
+          ],
+        },
+        {
+          heading: "Bite injuries of the hand",
+          columns: ["Bite", "Organisms", "Key action"],
+          rows: [
+            ["Human (fight bite)", "Oral anaerobes, Eikenella", "X-ray, explore joint, never suture"],
+            ["Cat", "Pasteurella", "Early antibiotics; infection within 12-24 h"],
+            ["Dog", "Pasteurella, Capnocytophaga", "Wash, leave open, rabies PEP"],
+          ],
+        },
+      ],
+      remember: [
+        "Pus in the hand needs a knife.",
+        "Kanavel: flexed, fusiform, sheath tenderness, pain on passive extension.",
+        "Palmar infections swell the dorsum; do not incise the back.",
+        "Felon: non-pinch side, never a fish-mouth.",
+        "Examine a fight bite with the fist clenched; never suture it.",
+        "Never incise a herpetic whitlow.",
+      ],
+    },
     checked: "2026-10",
     master: {
       heading: "Master revision table - hand infections",
@@ -918,6 +3741,163 @@ const revision: RevisionSet = {
     ],
   },
   "surgery-office-local-anaesthesia-nerve-blocks": {
+    notes: {
+      sections: [
+        {
+          title: "Definition and key facts",
+          points: [
+            "A **local anaesthetic** reversibly blocks nerve conduction where it is applied.",
+            "It has an aromatic ring, an **ester or amide link**, and a tertiary amine.",
+            "**1% = 10 mg/mL**, 2% = 20 mg/mL, 0.5% = 5 mg/mL.",
+            "Adrenaline **1:200,000 = 5 microgram/mL**.",
+            "Lignocaine and bupivacaine are on India's essential medicines list.",
+          ],
+        },
+        {
+          title: "Classification that matters",
+          points: [
+            "**Esters** (procaine, chloroprocaine, tetracaine, benzocaine) are broken down in plasma to PABA.",
+            "**Amides** (lignocaine, bupivacaine, ropivacaine, prilocaine) are metabolised in the liver.",
+            "Amides have an **'i' before -caine**; esters and amides do not cross-react.",
+            "By duration: short (chloroprocaine), intermediate (lignocaine), long (bupivacaine).",
+            "Techniques: topical, infiltration, field block, nerve block, Bier's block and neuraxial.",
+          ],
+        },
+        {
+          title: "How it happens (pathophysiology)",
+          points: [
+            "1. The unionised base crosses the axon membrane.",
+            "2. Inside, it re-ionises and blocks the **sodium channel from the inner side**.",
+            "3. **pKa decides onset**, lipid solubility potency, protein binding duration.",
+            "4. Pain and autonomic fibres block first; motor fibres block last.",
+            "5. Acidic pus keeps the drug ionised, so **LA fails in infected tissue**.",
+            "6. Rising plasma levels affect the brain first, then the heart.",
+            "7. **Bupivacaine** leaves cardiac sodium channels slowly, so arrest is resistant.",
+          ],
+        },
+        {
+          title: "History in the OPD",
+          points: [
+            "Fainting or palpitations after dental injection are usually **vasovagal or adrenaline**, not allergy.",
+            "Weigh the patient; doses are per kg of lean body weight.",
+            "Heart failure, liver disease, old age and pregnancy lower the safe dose.",
+            "Ask about Raynaud, PAD or Buerger disease before using adrenaline in digits.",
+            "Ask about **G6PD deficiency** before prilocaine, EMLA or benzocaine.",
+            "Lie every patient down for injections.",
+          ],
+        },
+        {
+          title: "Examination",
+          points: [
+            "Record pulse, BP and SpO2 before larger blocks.",
+            "Never inject through cellulitis; block proximally through clean skin.",
+            "Check digit circulation and **capillary refill** before using adrenaline.",
+            "Document **two-point discrimination** and nerve function before the block.",
+            "Palpate landmarks: palmaris longus, flexor carpi ulnaris, malleoli, Achilles tendon.",
+          ],
+        },
+        {
+          title: "Treatment - first line",
+          points: [
+            "**Lignocaine max 3 mg/kg plain** (200 mg), **7 mg/kg with adrenaline** (500 mg).",
+            "**Bupivacaine max 2 mg/kg** (150 mg), with or without adrenaline.",
+            "Write the maximum dose in mg and mL before drawing up.",
+            "**Aspirate before injecting** and every 3-5 mL; inject slowly in increments.",
+            "Buffer with **8.4% bicarbonate 1 mL per 10 mL** lignocaine to reduce sting.",
+            "Wait 5-10 minutes for lignocaine and 15-20 minutes for bupivacaine.",
+          ],
+        },
+        {
+          title: "Treatment - next steps",
+          points: [
+            "Digital ring block: 4-6 mL total, at the dorsolateral base on both sides.",
+            "Wrist block: median nerve **between palmaris longus and FCR**, 3-5 mL.",
+            "Ankle block: five nerves, **only two deep** (posterior tibial and deep peroneal).",
+            "**Bier's block**: 0.5% prilocaine 3 mg/kg; cuff up at least 20 minutes.",
+            "**Never bupivacaine for Bier's block** and never adrenaline in a penile block.",
+            "Intercostal block gives the **highest plasma level** of any block.",
+          ],
+        },
+        {
+          title: "Special groups",
+          points: [
+            "Children: **EMLA** 60 minutes before needles; LAT gel for face lacerations.",
+            "Infants under 3 months: EMLA no more than 1 g for 1 hour.",
+            "Pregnancy: lignocaine and bupivacaine are safe at reduced doses.",
+            "Count dental cartridges in children; toxic doses come quickly.",
+            "Never send patients home with anaesthetic eye drops.",
+          ],
+        },
+        {
+          title: "Complications and red flags",
+          points: [
+            "Early **LAST**: circumoral numbness, metallic taste, tinnitus and twitching.",
+            "Late LAST: seizures, broad QRS, ventricular arrhythmia and asystole.",
+            "Stop, airway, oxygen, **midazolam** for fits and **20% lipid 1.5 mL/kg**.",
+            "In LAST arrest, use small adrenaline doses and continue CPR for an hour.",
+            "Methaemoglobinaemia: **methylene blue 1-2 mg/kg** unless G6PD deficient.",
+            "White digit after 20-30 minutes: warm, remove tourniquet, **phentolamine 1 mg** locally.",
+          ],
+        },
+        {
+          title: "Referral and follow-up",
+          points: [
+            "Protect the numb part from heat and injury until feeling returns.",
+            "Start oral analgesia before a bupivacaine block wears off.",
+            "Numbness or weakness beyond 48 hours needs review and referral.",
+            "Admit after any LAST event, anaphylaxis or methaemoglobinaemia.",
+          ],
+        },
+      ],
+      tables: [
+        {
+          heading: "Local anaesthetics and rescue drugs",
+          columns: ["Drug", "Dose and route", "Duration", "Key side effects / cautions"],
+          rows: [
+            ["Lignocaine 1-2%", "Max 3 mg/kg plain; 7 mg/kg with adrenaline", "30-60 min plain; 1-3 h with adrenaline", "LAST; aspirate first"],
+            ["Bupivacaine 0.25-0.5%", "Max 2 mg/kg (150 mg)", "4-8 hours or more", "Most cardiotoxic; never Bier's block"],
+            ["Prilocaine 0.5%", "Max 6 mg/kg; Bier's 3 mg/kg", "Intermediate", "Methaemoglobinaemia over about 600 mg"],
+            ["EMLA cream", "1-2 g per site under occlusion", "Apply 60 min before", "Methaemoglobinaemia in infants"],
+            ["LAT gel", "1-3 mL into wound", "20-30 min", "Not on mucosa or end-arteries"],
+            ["20% lipid emulsion", "1.5 mL/kg IV, then 0.25 mL/kg/min", "Max about 12 mL/kg", "For LAST only"],
+            ["Midazolam", "0.05-0.1 mg/kg IV", "For LAST seizures", "Respiratory depression"],
+            ["Methylene blue 1%", "1-2 mg/kg IV over 5 min", "Repeat after 1 h if needed", "Haemolysis in G6PD deficiency"],
+            ["Phentolamine", "1 mg in 1-10 mL saline locally", "Once", "Hypotension"],
+            ["Adrenaline 1:1000", "0.5 mg IM thigh", "Repeat after 5 min", "For anaphylaxis"],
+          ],
+        },
+        {
+          heading: "Esters versus amides",
+          columns: ["Feature", "Esters", "Amides"],
+          rows: [
+            ["Examples", "Procaine, chloroprocaine, tetracaine, benzocaine", "Lignocaine, bupivacaine, prilocaine, ropivacaine"],
+            ["Metabolism", "Plasma pseudocholinesterase", "Liver"],
+            ["Allergy", "More common (PABA)", "Rare"],
+            ["Spelling clue", "No 'i' before -caine", "'i' before -caine"],
+          ],
+        },
+        {
+          heading: "Ankle block nerves",
+          columns: ["Nerve", "Territory", "Landmark", "Volume"],
+          rows: [
+            ["Posterior tibial (deep)", "Sole", "Behind medial malleolus, behind artery", "5-7 mL"],
+            ["Deep peroneal (deep)", "First web space", "Between EHL and tibialis anterior", "3-5 mL"],
+            ["Superficial peroneal", "Dorsum of foot", "Tibial crest to lateral malleolus", "5 mL"],
+            ["Saphenous", "Medial ankle", "Medial malleolus to tibialis anterior", "3-5 mL"],
+            ["Sural", "Lateral foot", "Lateral malleolus to Achilles tendon", "3-5 mL"],
+          ],
+        },
+      ],
+      remember: [
+        "1% is 10 mg/mL; lignocaine 3 or 7 mg/kg; bupivacaine 2 mg/kg.",
+        "Amides have an 'i' before -caine.",
+        "pKa onset, lipid solubility potency, protein binding duration.",
+        "Local anaesthetic fails in pus; block proximally.",
+        "Never bupivacaine for Bier's block; prilocaine is the choice.",
+        "LAST: stop, oxygen, benzodiazepine, lipid 1.5 mL/kg.",
+        "Ankle block: five nerves, two deep.",
+      ],
+    },
     checked: "2026-10",
     master: {
       heading: "Master revision table - local anaesthetics and nerve blocks",
