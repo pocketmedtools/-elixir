@@ -186,6 +186,7 @@ section("Revision tables and flow charts");
       if (!r.flows?.length) fail(`${where}: no flow chart`);
       if (r.notes) {
         if (r.notes.sections.length < 5) fail(`${where}: revision notes need at least 5 sections`);
+        if (r.notes.sections.length > 10) fail(`${where}: revision notes have more than 10 sections (merge related ones)`);
         for (const sec of r.notes.sections) {
           if (!sec.points.length) fail(`${where} / ${sec.title}: empty section`);
           for (const pt of sec.points) {

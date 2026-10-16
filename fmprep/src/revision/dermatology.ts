@@ -222,20 +222,14 @@ const revision: RevisionSet = {
           ],
         },
         {
-          title: "Classification that matters",
+          title: "Classification and risk factors",
           points: [
             "**IACS 2020**: A confirmed, B clinical, C suspected scabies.",
             "Variants: classical, nodular, **crusted (Norwegian)**, incognito, bullous and infantile.",
             "Pediculosis: capitis (head), corporis (body, lives in clothing seams), pubis (crab, sexually transmitted).",
             "Only the **body louse** transmits typhus, trench fever and relapsing fever.",
-          ],
-        },
-        {
-          title: "Causes and risk factors",
-          points: [
             "Overcrowding, shared beds, hostels, prisons and old-age homes drive spread.",
-            "Crusted scabies follows failed cell immunity: **HIV, HTLV-1**, lepromatous leprosy, malnutrition, long-term steroids.",
-            "Patients who cannot scratch (dementia, paralysis) also develop crusted scabies.",
+            "Crusted scabies: **HIV, HTLV-1**, lepromatous leprosy, malnutrition, long-term steroids, or inability to scratch (dementia, paralysis).",
             "OTC steroid combination creams cause **scabies incognito**.",
           ],
         },
@@ -523,22 +517,15 @@ const revision: RevisionSet = {
           ],
         },
         {
-          title: "Complications and red flags",
+          title: "Red flags, referral and follow-up",
           points: [
             "**Eczema herpeticum**: punched-out erosions with fever - start aciclovir the same day.",
             "Golden crusts and weeping mean **S. aureus** infection.",
             "Over 90% of skin red and scaling is **erythroderma** - admit.",
-            "Recurrent deep infections or failure to thrive suggest **primary immunodeficiency**.",
+            "Recurrent deep infections or failure to thrive suggest **primary immunodeficiency** - refer children with faltering growth.",
             "Atrophy and perioral dermatitis follow months of OTC combination creams.",
-          ],
-        },
-        {
-          title: "Referral and follow-up",
-          points: [
-            "Review **2-4 weeks** after starting; check grams used per week and technique.",
-            "Refer if **1-2 weeks of potent steroid** fails or systemic therapy is needed.",
-            "On ciclosporin check BP and creatinine **every 2 weeks** initially.",
-            "Refer suspected contact allergy for patch tests and children with faltering growth.",
+            "Review **2-4 weeks** after starting; check grams per week and technique; ciclosporin needs BP and creatinine **every 2 weeks**.",
+            "Refer if **1-2 weeks of potent steroid** fails, systemic therapy is needed, or contact allergy needs patch tests.",
           ],
         },
       ],
@@ -753,21 +740,14 @@ const revision: RevisionSet = {
           ],
         },
         {
-          title: "Complications and red flags",
+          title: "Red flags, referral and follow-up",
           points: [
             "**Acne fulminans**: prednisolone 0.5-1 mg/kg/day first, then low-dose isotretinoin.",
             "Triglycerides **over 500 mg/dL** on isotretinoin - stop it; pancreatitis risk.",
             "**Isotretinoin plus tetracycline** causes benign intracranial hypertension - never combine.",
-            "A missed period on isotretinoin means stop the drug and test the same day.",
             "Suicidal thoughts need urgent mental health assessment.",
-          ],
-        },
-        {
-          title: "Referral and follow-up",
-          points: [
-            "Review at **8-12 weeks** with photographs; count new inflammatory lesions.",
-            "Stop oral antibiotics by **3-4 months** whether or not clear.",
-            "On isotretinoin review **monthly**: pregnancy test, mood, side effects, cumulative dose.",
+            "Review at **8-12 weeks** with photographs, counting new inflammatory lesions; stop oral antibiotics by **3-4 months** whether or not clear.",
+            "On isotretinoin review **monthly** (pregnancy test, mood, side effects, cumulative dose); a missed period means stop and test that day.",
             "Refer for isotretinoin, fulminans, conglobata, failure of two courses and scar revision.",
           ],
         },
@@ -1101,13 +1081,15 @@ const revision: RevisionSet = {
           ],
         },
         {
-          title: "Classification that matters",
+          title: "Classification and triggers",
           points: [
-            "**Chronic plaque** psoriasis makes up about 90% of cases.",
-            "Other types: guttate, inverse, scalp, palmoplantar, nail, erythrodermic and pustular.",
+            "**Chronic plaque** psoriasis is about 90%; others are guttate, inverse, scalp, palmoplantar, nail, erythrodermic and pustular.",
             "**Rule of tens**: BSA, PASI or DLQI over 10 means moderate-to-severe disease.",
             "Face, scalp, palms, soles, genitals or nails **upgrade mild disease**.",
-            "Erythrodermic and generalised pustular psoriasis are **emergencies**.",
+            "Erythrodermic and generalised pustular psoriasis are **emergencies**, often after **systemic steroid withdrawal**.",
+            "**Guttate psoriasis** follows streptococcal sore throat by 2-3 weeks.",
+            "Drugs: **beta-blockers, lithium, antimalarials**, NSAIDs, ACE inhibitors, terbinafine.",
+            "HIV, smoking, alcohol, obesity, stress and trauma (Koebner) also trigger disease.",
           ],
         },
         {
@@ -1119,15 +1101,6 @@ const revision: RevisionSet = {
             "Th17 cells release **IL-17 and TNF-alpha**, driving keratinocyte proliferation in a loop.",
             "Turnover falls from 28 days to **3-5 days**, giving silvery parakeratotic scale.",
             "Dilated capillaries under thin epidermis explain the **Auspitz sign**.",
-          ],
-        },
-        {
-          title: "Causes and risk factors",
-          points: [
-            "**Guttate psoriasis** follows streptococcal sore throat by 2-3 weeks.",
-            "Drugs: **beta-blockers, lithium, antimalarials**, NSAIDs, ACE inhibitors, terbinafine.",
-            "**Systemic steroid withdrawal** triggers pustular or erythrodermic flares.",
-            "HIV, smoking, alcohol, obesity, stress and trauma (Koebner) also trigger disease.",
           ],
         },
         {
@@ -1195,21 +1168,14 @@ const revision: RevisionSet = {
           ],
         },
         {
-          title: "Complications and red flags",
+          title: "Red flags, referral and follow-up",
           points: [
             "**Erythroderma** over 90% BSA - admit for warmth, fluids and electrolytes.",
-            "**Generalised pustular psoriasis**: fever, pus lakes, low calcium and albumin - admit.",
+            "**Generalised pustular psoriasis** (fever, pus lakes, low calcium and albumin) or **impetigo herpetiformis** in pregnancy - admit urgently.",
             "Mouth ulcers or fever on methotrexate - stop it and give **folinic acid**.",
             "New cough or fever on a biologic means **TB reactivation** until excluded.",
-            "**Impetigo herpetiformis** in pregnancy needs urgent admission.",
-          ],
-        },
-        {
-          title: "Referral and follow-up",
-          points: [
             "Review topicals at **4 weeks**; aim for **PASI 75** and DLQI 0-1 on systemic therapy.",
-            "Methotrexate: CBC, LFT, creatinine every 1-2 weeks for a month, then 2-3 monthly.",
-            "Ciclosporin: BP and creatinine every 2 weeks for 3 months.",
+            "Methotrexate: CBC, LFT, creatinine every 1-2 weeks for a month, then 2-3 monthly; ciclosporin: BP, creatinine 2-weekly for 3 months.",
             "Check cardiovascular risk yearly; refer suspected arthritis to rheumatology.",
           ],
         },
@@ -1388,11 +1354,12 @@ const revision: RevisionSet = {
           title: "Treatment - first line",
           points: [
             "India gives **three-drug MDT** to both PB and MB patients.",
-            "Adult monthly supervised: **rifampicin 600 mg plus clofazimine 300 mg** (plus dapsone 100 mg).",
-            "Adult daily: **clofazimine 50 mg plus dapsone 100 mg**.",
+            "Adult: monthly supervised **rifampicin 600 mg plus clofazimine 300 mg**; daily **clofazimine 50 mg plus dapsone 100 mg**.",
             "**PB 6 months** (6 packs within 9 months); **MB 12 months** (12 packs within 18 months).",
             "Rifampicin on an empty stomach; clofazimine with food or milk.",
-            "**Never stop MDT** for a reaction, pregnancy or lactation.",
+            "MDT is safe in **pregnancy and breastfeeding**; **never stop MDT** for a reaction, pregnancy or lactation.",
+            "Child 10-14 years: rifampicin 450 mg and clofazimine 150 mg monthly, dapsone 50 mg daily; under 10, **dose by weight**, never an adult pack.",
+            "With TB, give full anti-TB treatment plus clofazimine and dapsone.",
           ],
         },
         {
@@ -1404,26 +1371,19 @@ const revision: RevisionSet = {
             "Severe ENL: **prednisolone 40-60 mg** tapered over 12-20 weeks.",
             "Recurrent ENL: add **clofazimine 100 mg three times daily** up to 3 months.",
             "**Thalidomide** for severe ENL at referral level only; never in women who could conceive.",
-          ],
-        },
-        {
-          title: "Special groups",
-          points: [
-            "Child 10-14 years: rifampicin 450 mg and clofazimine 150 mg monthly, dapsone 50 mg daily.",
-            "Child under 10 years: **dose by weight**, never an adult pack.",
-            "MDT is safe in **pregnancy and breastfeeding**.",
-            "With TB, give full anti-TB treatment plus clofazimine and dapsone.",
             "Rifampicin weakens oral contraceptives and steroids - increase the prednisolone dose.",
           ],
         },
         {
-          title: "Complications and red flags",
+          title: "Red flags, referral and follow-up",
           points: [
             "New weakness or nerve pain is **acute neuritis** - start prednisolone the same day.",
             "Inability to close the eye or a red painful eye needs urgent eye referral.",
             "Fever, rash and jaundice within 6 weeks means **dapsone hypersensitivity** - stop it for life.",
-            "Clofazimine causes **red-brown skin pigmentation**, the commonest cause of default.",
             "Plantar ulcers need offloading; probing to bone means osteomyelitis.",
+            "See monthly for the supervised dose; **VMT and sensory testing** every visit catch **silent neuritis**.",
+            "After release, review for **2 years (PB)** and **5 years (MB)**.",
+            "**Relapse** is slow and painless; a **reaction** is sudden, painful and steroid-responsive.",
           ],
         },
         {
@@ -1434,15 +1394,6 @@ const revision: RevisionSet = {
             "Self-care for anaesthetic limbs: **soak, scrape, oil and inspect** daily.",
             "NLEP aims to **interrupt transmission by 2027** (National Strategic Plan 2023-2027).",
             "Programme tools: ABSULS, Leprosy Case Detection Campaigns, Sparsh campaign, Nikusth 2.0.",
-          ],
-        },
-        {
-          title: "Referral and follow-up",
-          points: [
-            "See monthly for the supervised dose; do **VMT and sensory testing** every visit.",
-            "Regular testing catches **silent neuritis** - painless loss of nerve function.",
-            "After release, review for **2 years (PB)** and **5 years (MB)**.",
-            "**Relapse** is slow and painless; a **reaction** is sudden, painful and steroid-responsive.",
           ],
         },
       ],
@@ -1490,6 +1441,7 @@ const revision: RevisionSet = {
         "Three-drug MDT for all: PB 6 months, MB 12 months.",
         "Never stop MDT for a reaction, pregnancy or lactation.",
         "Self-care mnemonic: soak, scrape, oil, inspect.",
+        "Clofazimine's red-brown skin pigmentation is the commonest cause of default.",
       ],
     },
     master: {
@@ -1549,12 +1501,15 @@ const revision: RevisionSet = {
     notes: {
       sections: [
         {
-          title: "Definition and key facts",
+          title: "Definition, key facts and culprits",
           points: [
             "Drug rashes affect about **2-3% of hospitalised patients**; over 90% are benign exanthems.",
-            "**Type A** reactions are dose-dependent; **type B** are immunological and unpredictable.",
-            "All the dangerous rashes are **type B** reactions.",
+            "**Type A** reactions are dose-dependent; **type B** are immunological, unpredictable, and include all the dangerous rashes.",
             "**Withdrawing the culprit drug** is the single act that most changes mortality.",
+            "High-risk drugs: **carbamazepine, phenytoin, lamotrigine, allopurinol, cotrimoxazole**, dapsone, nevirapine, oxicam NSAIDs, anti-tubercular drugs, fluoroquinolones.",
+            "**HLA-B*15:02** with carbamazepine; **HLA-B*58:01** with allopurinol; HLA-B*57:01 with abacavir.",
+            "**HIV** raises SJS-TEN risk up to 100-fold.",
+            "Aromatic anticonvulsants **cross-react** with each other.",
           ],
         },
         {
@@ -1577,16 +1532,6 @@ const revision: RevisionSet = {
             "Mass keratinocyte apoptosis gives **full-thickness epidermal necrosis**, so skin slides off.",
             "Loss of barrier causes fluid loss, heat loss and **sepsis**, the leading cause of death.",
             "In DRESS, IL-5 drives eosinophilia and **HHV-6 reactivation** prolongs the course.",
-          ],
-        },
-        {
-          title: "Causes and risk factors",
-          points: [
-            "High-risk drugs: **carbamazepine, phenytoin, lamotrigine, allopurinol, cotrimoxazole**, dapsone, nevirapine.",
-            "Also oxicam NSAIDs, anti-tubercular drugs and fluoroquinolones.",
-            "**HLA-B*15:02** with carbamazepine; **HLA-B*58:01** with allopurinol; HLA-B*57:01 with abacavir.",
-            "**HIV** raises SJS-TEN risk up to 100-fold.",
-            "Aromatic anticonvulsants **cross-react** with each other.",
           ],
         },
         {
@@ -1773,19 +1718,12 @@ const revision: RevisionSet = {
     notes: {
       sections: [
         {
-          title: "Definition and key facts",
+          title: "Definition and classification",
           points: [
-            "NACO estimates about **3-3.5 crore STI and RTI episodes** a year in India.",
+            "NACO estimates about **3-3.5 crore STI and RTI episodes** a year, managed through **Suraksha clinics** and targeted interventions with free kits.",
             "An STI raises the risk of acquiring HIV **two- to five-fold**.",
             "**Herpes** is now the commonest cause of genital ulcer in India.",
-            "Services run through **Suraksha clinics** and targeted interventions, with free kits.",
-          ],
-        },
-        {
-          title: "Classification that matters",
-          points: [
-            "India uses **syndromic case management** with colour-coded kits.",
-            "Syndromes: urethral discharge, genital ulcer, vaginal discharge, lower abdominal pain, bubo, scrotal swelling.",
+            "India uses **syndromic case management** with colour-coded kits: urethral discharge, genital ulcer, vaginal discharge, lower abdominal pain, bubo, scrotal swelling.",
             "Genital ulcer causes: **herpes, syphilis, chancroid, LGV, donovanosis**.",
             "Urethritis is **gonococcal** (profuse pus, 2-5 days) or **non-gonococcal** (scanty, 1-3 weeks).",
             "Syphilis stages: primary, secondary, early latent, late latent, tertiary; neurosyphilis at any stage.",
@@ -2215,12 +2153,15 @@ const revision: RevisionSet = {
           ],
         },
         {
-          title: "Classification that matters",
+          title: "Classification and causes",
           points: [
-            "**IFSI Group I**: itch on inflamed skin with a primary rash.",
-            "**IFSI Group II**: itch on normal-looking skin with only scratch marks.",
+            "**IFSI Group I**: itch on inflamed skin with a primary rash; **Group II**: normal-looking skin with only scratch marks.",
             "**IFSI Group III**: chronic scratch lesions - prurigo nodularis, lichen simplex chronicus.",
             "Cause categories: dermatological, systemic, neurological, psychogenic, mixed, undetermined.",
+            "Skin causes: **scabies**, eczema, urticaria, xerosis, lichen planus, bullous pemphigoid.",
+            "Systemic causes: **CKD, cholestasis**, thyroid disease, iron deficiency.",
+            "Haematological: **polycythaemia vera** and Hodgkin lymphoma; also HIV, opioids, chloroquine and cholestatic drugs.",
+            "Neuropathic causes: **brachioradial pruritus** and notalgia paraesthetica.",
           ],
         },
         {
@@ -2232,16 +2173,6 @@ const revision: RevisionSet = {
             "Scratching causes pain, which switches off itch - but damages the barrier.",
             "Mu-opioid activity causes itch; **kappa agonists** and naltrexone relieve it.",
             "Cholestatic itch follows **autotaxin and LPA**, not bile acid levels.",
-          ],
-        },
-        {
-          title: "Causes and risk factors",
-          points: [
-            "Skin causes: **scabies**, eczema, urticaria, xerosis, lichen planus, bullous pemphigoid.",
-            "Systemic causes: **CKD, cholestasis**, thyroid disease, iron deficiency.",
-            "Haematological causes: **polycythaemia vera** and Hodgkin lymphoma.",
-            "Also HIV, opioids, chloroquine and cholestatic drugs.",
-            "Neuropathic causes: **brachioradial pruritus** and notalgia paraesthetica.",
           ],
         },
         {
