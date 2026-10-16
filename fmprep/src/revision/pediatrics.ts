@@ -228,23 +228,14 @@ const revision: RevisionSet = {
     notes: {
       sections: [
         {
-          title: "Definition and key facts",
+          title: "Definition and classification",
           points: [
-            "The **Universal Immunisation Programme** gives free vaccines against 12 diseases, plus vitamin A.",
-            "UIP covers BCG, OPV, fIPV, hepatitis B, pentavalent, rotavirus, PCV, MR, JE, DPT and Td.",
+            "The **Universal Immunisation Programme** gives free vaccines against 12 diseases, plus vitamin A; **UIP is the floor, not the ceiling**.",
             "A **fully immunised child** (12-23 months) has BCG, three pentavalent, three OPV and MR-1.",
-            "The IAP schedule adds optional vaccines; **UIP is the floor, not the ceiling**.",
             "Full immunisation is about **87% in NFHS-6**; measles elimination needs 95% with two doses.",
-            "AEFI is any untoward event after a vaccine, **not necessarily caused by it**.",
-          ],
-        },
-        {
-          title: "Classification that matters",
-          points: [
             "**Live vaccines**: BCG, OPV, MR or MMR, rotavirus, varicella, live hepatitis A, live JE.",
             "**Inactivated vaccines**: pertussis, toxoids, hepatitis B, Hib, IPV, PCV, typhoid conjugate, HPV.",
-            "Conjugate vaccines (Hib, PCV, TCV) are **T-cell dependent**, so they work in infancy.",
-            "Plain polysaccharide vaccines give no memory and no response under 2 years.",
+            "Conjugate vaccines (Hib, PCV, TCV) are **T-cell dependent** and work in infancy; plain polysaccharides do not under 2.",
             "Two live injectable vaccines go on the **same day or 4 weeks apart**.",
           ],
         },
@@ -328,6 +319,7 @@ const revision: RevisionSet = {
         {
           title: "Complications and red flags",
           points: [
+            "AEFI is any untoward event after a vaccine, **not necessarily caused by it**.",
             "True contraindications: **anaphylaxis** to a dose or component, and encephalopathy within 7 days of pertussis vaccine.",
             "Anaphylaxis: **adrenaline 1 mg/mL, 0.01 mL/kg IM** in the thigh, repeat every 5-15 minutes.",
             "A faint has a **slow pulse** and recovers lying flat; it needs no adrenaline.",
@@ -902,8 +894,10 @@ const revision: RevisionSet = {
             "**Diarrhoea** is 3 or more loose or watery stools in 24 hours.",
             "Consistency matters more than number; pasty stools of a breastfed baby are normal.",
             "Children die of **water and salt loss**, so rehydration is the core treatment.",
-            "Diarrhoea causes about **8-9% of under-five deaths** in India.",
-            "NFHS-5: only about 60% got ORS and about 30% got zinc.",
+            "Diarrhoea causes about **8-9% of under-five deaths**; NFHS-5: only 60% got ORS, 30% zinc.",
+            "**Rotavirus** is the commonest cause of severe dehydrating diarrhoea under 2 years.",
+            "ETEC, cholera, norovirus and Giardia cause other watery episodes; **Shigella** causes most dysentery.",
+            "Risk of death: age under 1, no breastfeeding, malnutrition, **recent measles**, HIV.",
           ],
         },
         {
@@ -915,15 +909,6 @@ const revision: RevisionSet = {
             "Severe dehydration (10% or more deficit) gets **Plan C**.",
             "Some dehydration (5-10%) gets **Plan B**; no dehydration gets **Plan A**.",
             "Each classification needs **two signs in the same column**.",
-          ],
-        },
-        {
-          title: "Causes and risk factors",
-          points: [
-            "**Rotavirus** is the commonest cause of severe dehydrating diarrhoea under 2 years.",
-            "ETEC, cholera, Cryptosporidium, norovirus and Giardia cause most other watery episodes.",
-            "**Shigella** causes most dysentery; amoeba is uncommon in young children.",
-            "Risk of death: age under 1, no breastfeeding, malnutrition, **recent measles**, HIV.",
           ],
         },
         {
@@ -1004,22 +989,15 @@ const revision: RevisionSet = {
           ],
         },
         {
-          title: "Complications and red flags",
+          title: "Complications, red flags and prevention",
           points: [
             "Lethargy, cannot drink or very slow skin pinch means severe dehydration.",
             "Pallor, oedema and low urine a week after bloody diarrhoea means **HUS**.",
             "Abdominal distension with absent bowel sounds suggests **hypokalaemic ileus**.",
             "Puffy eyelids during ORS mean **overhydration**; pause ORS.",
             "Convulsions need immediate glucose and sodium checks.",
-          ],
-        },
-        {
-          title: "Prevention and programmes",
-          points: [
-            "Exclusive breastfeeding, **rotavirus and measles vaccines**, handwashing with soap.",
-            "Safe water, safe food and toilet use under Swachh Bharat.",
-            "**STOP Diarrhoea Campaign** (1 July to 31 August) pre-positions ORS in homes.",
-            "Notify cholera and clusters of watery diarrhoea the same day under IDSP.",
+            "Prevent with exclusive breastfeeding, **rotavirus and measles vaccines**, handwashing, safe water and toilets.",
+            "**STOP Diarrhoea Campaign** (1 July-31 August) pre-positions ORS; notify cholera clusters the same day.",
           ],
         },
       ],
@@ -2616,12 +2594,13 @@ const revision: RevisionSet = {
         {
           title: "Definition and key facts",
           points: [
-            "**Low birth weight** is under 2500 g at birth, whatever the gestation.",
-            "VLBW is under 1500 g; ELBW is under 1000 g.",
-            "**Preterm** is birth before 37 completed weeks.",
-            "**SGA** is birth weight below the 10th centile for gestation.",
-            "NFHS-5 recorded about **18% LBW** in India.",
+            "**Low birth weight** is under 2500 g whatever the gestation; VLBW under 1500 g, ELBW under 1000 g.",
+            "**Preterm** is birth before 37 weeks; **SGA** is weight below the 10th centile for gestation.",
+            "NFHS-5: about **18% LBW**; prematurity and LBW are the **leading cause of neonatal death**.",
             "**Most Indian LBW babies are term but growth restricted**, so maternal nutrition matters most.",
+            "Preterm birth: previous preterm birth, twins, PPROM, infection, cervical insufficiency.",
+            "Growth restriction: maternal undernutrition, anaemia, pre-eclampsia and tobacco.",
+            "A mother who was LBW herself continues the **intergenerational cycle**.",
           ],
         },
         {
@@ -2632,15 +2611,6 @@ const revision: RevisionSet = {
             "Preterm grades: extremely under 28 weeks, very 28-31, moderate to late 32-36.",
             "**Symmetrical IUGR** starts early; head, length and weight are all small.",
             "**Asymmetrical IUGR** starts late from placental insufficiency, with head sparing.",
-          ],
-        },
-        {
-          title: "Causes and risk factors",
-          points: [
-            "Preterm birth: previous preterm birth, twins, PPROM, infection, cervical insufficiency.",
-            "Growth restriction: maternal undernutrition, anaemia, pre-eclampsia and tobacco.",
-            "A mother who was LBW herself continues the **intergenerational cycle**.",
-            "Prematurity and LBW are the **leading cause of neonatal death** in India.",
           ],
         },
         {
@@ -3469,22 +3439,14 @@ const revision: RevisionSet = {
     notes: {
       sections: [
         {
-          title: "Definition and key facts",
+          title: "Definition and classification",
           points: [
             "**Asthma** is chronic airway inflammation with **variable airflow limitation** and variable symptoms.",
-            "**Wheeze** is a musical, mainly expiratory sound from intrathoracic airway narrowing.",
-            "**Stridor** is inspiratory and comes from the upper airway; do not confuse them.",
-            "Nearly **1 in 3 children wheezes before age 3**, but most outgrow it.",
-            "Asthma is the **commonest chronic disease of childhood**; most Indian cases go undiagnosed.",
-          ],
-        },
-        {
-          title: "Classification that matters",
-          points: [
+            "**Wheeze** is musical, expiratory and intrathoracic; **stridor** is inspiratory, from the upper airway.",
+            "Asthma is the **commonest chronic childhood disease**; 1 in 3 wheeze before 3, most outgrow it.",
             "Under 5: **episodic viral wheeze** (only with colds) versus **multiple-trigger wheeze** (likely asthma).",
             "Treatment uses **GINA steps 1-5** in three age bands: 5 and under, 6-11, 12 and over.",
-            "Control uses four questions: day symptoms, night waking, reliever use, activity limit.",
-            "None of the four is well controlled; 1-2 partly; 3-4 uncontrolled.",
+            "Control asks day symptoms, night waking, reliever use, activity limit: none well, 1-2 partly, 3-4 uncontrolled.",
             "Acute attacks are graded mild-moderate, severe or life-threatening.",
           ],
         },
@@ -4010,23 +3972,15 @@ const revision: RevisionSet = {
           ],
         },
         {
-          title: "Complications and red flags",
+          title: "Complications, red flags and prevention",
           points: [
             "Measles: **pneumonia** is the commonest killer; also blindness and late SSPE.",
             "Congenital rubella: **Gregg's triad** of cataract, PDA and deafness.",
             "Varicella: secondary skin infection, cerebellar ataxia, **necrotising fasciitis**.",
-            "Kawasaki untreated: **coronary aneurysm** in about 25%.",
-            "Dengue warning signs: abdominal pain, vomiting, bleeding, rising haematocrit.",
-          ],
-        },
-        {
-          title: "Prevention and programmes",
-          points: [
-            "**MR vaccine at 9-12 and 16-24 months** under UIP.",
-            "Varicella vaccine (IAP): 2 doses from 15 months; not in UIP.",
-            "Notify every suspected measles-rubella case under IDSP.",
+            "Untreated Kawasaki: **coronary aneurysm** in about 25%; dengue warning signs include abdominal pain, bleeding and rising haematocrit.",
+            "**MR vaccine at 9-12 and 16-24 months** under UIP; varicella vaccine (IAP only) 2 doses from 15 months.",
+            "Notify every suspected measles-rubella case under IDSP; trace zero-dose children via Mission Indradhanush.",
             "Check rubella immunity before pregnancy.",
-            "Trace zero-dose children through Mission Indradhanush and U-WIN.",
           ],
         },
       ],
@@ -4789,24 +4743,15 @@ const revision: RevisionSet = {
     notes: {
       sections: [
         {
-          title: "Definition and key facts",
+          title: "Definition and classification",
           points: [
-            "India's commonest preventable genetic disorders are the **haemoglobinopathies**.",
-            "Beta-thalassaemia carrier rate is about **3-4%**, higher in some communities.",
-            "India has 10,000-15,000 new thalassaemia major births a year.",
+            "**Haemoglobinopathies** are India's commonest preventable genetic disorders and are disabilities under the **RPwD Act 2016**.",
+            "Beta-thalassaemia carrier rate is about **3-4%**, with 10,000-15,000 new major births a year.",
             "Sickle cell carrier rates reach **1-40% in tribal groups** of central India.",
-            "**Down syndrome** occurs in about 1 in 800 live births.",
-            "Thalassaemia and sickle cell disease are disabilities under the **RPwD Act 2016**.",
-          ],
-        },
-        {
-          title: "Classification that matters",
-          points: [
             "Genetic disorders: **chromosomal, autosomal dominant, autosomal recessive, X-linked, multifactorial, mitochondrial**.",
             "Thalassaemia: **trait**, **non-transfusion-dependent (NTDT)** and **transfusion-dependent (TDT)**.",
-            "Sickle cell disease: HbSS, HbS-beta thalassaemia, HbSC and HbSD.",
-            "**Sickle cell trait** (HbAS) is a carrier state, not a disease.",
-            "Down syndrome: **95% free trisomy 21**, 3-4% translocation, 1-2% mosaic.",
+            "SCD includes HbSS, HbS-beta thalassaemia, HbSC and HbSD; **sickle trait (HbAS)** is a carrier state.",
+            "**Down syndrome** is about 1 in 800: **95% free trisomy 21**, 3-4% translocation, 1-2% mosaic.",
           ],
         },
         {
