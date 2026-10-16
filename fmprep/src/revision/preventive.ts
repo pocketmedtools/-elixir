@@ -3,6 +3,139 @@ import type { RevisionSet } from "./index";
 const revision: RevisionSet = {
   "preventive-prevention-screening": {
     checked: "2026-10",
+    notes: {
+      sections: [
+        {
+          title: "Definition and key facts",
+          points: [
+            "**Prevention** is any action that interrupts the natural history of disease.",
+            "The level of prevention is named by **where in the natural history** it acts.",
+            "**Screening** (CCI 1951): presumptive identification of unrecognised disease in apparently healthy people.",
+            "Screening **sorts, it never diagnoses**, so every positive needs a confirmatory test.",
+            "Screening is a form of **secondary prevention**.",
+          ],
+        },
+        {
+          title: "Classification that matters",
+          points: [
+            "**Primordial**: stops the risk factor itself appearing, mainly through policy and childhood habit.",
+            "**Primary**: risk factor present, disease absent; health promotion plus specific protection.",
+            "**Secondary**: early diagnosis and prompt treatment, including screening and case finding.",
+            "**Tertiary**: established disease; disability limitation and rehabilitation.",
+            "**Quaternary** (Jamoulle, WONCA): protects the patient from overmedicalisation; the family physician's own level.",
+            "The level depends on the **stage of disease in that patient**, not on the drug used.",
+            "Health education is **a tool at every level**, not a level of its own.",
+          ],
+        },
+        {
+          title: "Key concepts",
+          points: [
+            "**Iceberg phenomenon**: visible cases are the tip; undiagnosed and subclinical cases lie below.",
+            "**DPCP** (detectable preclinical phase) must be long enough, and early treatment must help.",
+            "**Rose's population strategy** shifts the whole distribution and acts on causes of incidence.",
+            "**Rose's high-risk strategy** treats the tail and acts on causes of cases.",
+            "**Prevention paradox**: big community benefit, but little benefit to each individual.",
+            "A risk factor is causal and modifiable; a **risk marker** (age, sex) is not.",
+          ],
+        },
+        {
+          title: "Classification of screening",
+          points: [
+            "By use: case detection, disease control, research and educational opportunity.",
+            "**Mass screening** covers a whole population; **selective screening** targets high-risk groups.",
+            "**Multiphasic screening** applies several tests at one sitting.",
+            "**Opportunistic screening (case finding)** is the commonest type in family practice.",
+          ],
+        },
+        {
+          title: "Test performance",
+          points: [
+            "**Sensitivity and specificity** belong to the test.",
+            "**Predictive values** belong to the population tested; PPV falls as prevalence falls.",
+            "**Series testing** raises specificity and PPV; parallel testing raises sensitivity.",
+            "Use a sensitive test when missing a case is dangerous, for example HIV.",
+            "**ROC curve** with the Youden index (Sn + Sp - 1) picks the best cut-off.",
+            "Reliability (repeatability) is measured by **kappa**; yield is highest in the first round.",
+          ],
+        },
+        {
+          title: "Screening criteria and biases",
+          points: [
+            "**Wilson and Jungner (WHO 1968)** gave ten criteria: disease, test, treatment and programme.",
+            "**Andermann 2008** added defined target, evidence, informed choice, equity, quality assurance, benefit over harm.",
+            "**Lead time bias**: earlier diagnosis inflates survival without postponing death.",
+            "**Length time bias**: screening picks up slow tumours; aggressive ones appear as interval cancers.",
+            "**Overdiagnosis**: finding disease that would never have caused symptoms or death.",
+            "Only an **RCT of invitation** with disease-specific mortality escapes all these biases.",
+          ],
+        },
+        {
+          title: "Prevention and programmes",
+          points: [
+            "**NP-NCD** screens everyone aged **30 and over** at the Ayushman Arogya Mandir.",
+            "ASHA fills the **CBAC**; a score above 4 means priority, but all get BP and glucose.",
+            "Cervix: **VIA with 3-5% acetic acid**, women 30-65, every 5 years, screen-and-treat.",
+            "Breast: **clinical breast examination**; oral: oral visual examination; both every 5 years from 30.",
+            "National **single-dose quadrivalent HPV vaccine** for girls aged 14 launched 28 February 2026.",
+            "TB: symptom screen with **upfront NAAT**; sickle cell mission screens 7 crore aged 0-40.",
+            "Antenatal: HIV, syphilis, HBsAg, and GDM by **DIPSI 75 g** (2-hour 140 mg/dL or more).",
+          ],
+        },
+        {
+          title: "Referral and follow-up",
+          points: [
+            "Write every measure as **level, intervention and deliverer**.",
+            "**Close the loop**: each positive needs a named confirmatory test, date and responsible person.",
+            "Suspicious cervix, oral lesion over 2 weeks or hard breast lump: **biopsy within the week**.",
+            "BP 180/110 or more, or RBS over 250 with symptoms: **treat the same day**.",
+            "A symptomatic person needs diagnosis, not screening.",
+            "Track coverage, follow-up completion, control rates and stage at diagnosis.",
+          ],
+        },
+      ],
+      tables: [
+        {
+          heading: "Levels of prevention - diabetes example",
+          columns: ["Level", "Point in natural history", "Mode of intervention", "Diabetes example"],
+          rows: [
+            ["Primordial", "Before the risk factor appears", "Policy, childhood habits", "School nutrition policy, sugar tax"],
+            ["Primary", "Risk factor, no disease", "Health promotion, specific protection", "Weight loss, 150 min/week activity"],
+            ["Secondary", "Early or subclinical disease", "Early diagnosis, prompt treatment", "CBAC and RBS at 30, metformin"],
+            ["Tertiary", "Established disease", "Disability limitation, rehabilitation", "Annual eye and foot checks"],
+            ["Quaternary", "Risk of overmedicalisation", "Avoid needless tests and treatment", "Deprescribe sulfonylurea in a frail elder"],
+          ],
+        },
+        {
+          heading: "Screening tests under NP-NCD",
+          columns: ["Condition", "Target and interval", "Test", "If positive"],
+          rows: [
+            ["Hypertension", "All 30 and over, yearly", "BP, 2 seated readings", "140/90 or more: confirm at PHC"],
+            ["Diabetes", "All 30 and over, yearly", "Random capillary glucose", "140 mg/dL or more: fasting or HbA1c"],
+            ["Cervical cancer", "Women 30-65, every 5 years", "VIA (HPV DNA if available)", "Thermal ablation or colposcopy, biopsy"],
+            ["Breast and oral cancer", "30 and over, every 5 years", "CBE; oral visual examination", "Imaging or biopsy within 2 weeks"],
+            ["Tuberculosis", "All attendees, vulnerable groups", "Symptom screen, chest X-ray", "Upfront NAAT; notify on Ni-kshay"],
+          ],
+        },
+        {
+          heading: "Biases in judging a screening programme",
+          columns: ["Bias", "What happens", "How to avoid"],
+          rows: [
+            ["Lead time", "Survival looks longer, death not delayed", "Use disease-specific mortality"],
+            ["Length time", "Slow tumours over-detected", "Count interval cancers"],
+            ["Overdiagnosis", "Harmless disease labelled and treated", "RCT of invitation"],
+            ["Volunteer (selection)", "Attenders are healthier", "Intention-to-screen analysis"],
+          ],
+        },
+      ],
+      remember: [
+        "Level is set by the **stage of disease**, not the drug: iron can be primary, secondary or tertiary.",
+        "**SnNout, SpPin**: a sensitive negative rules out, a specific positive rules in.",
+        "Sn and Sp belong to the test; **PPV falls with prevalence**.",
+        "Series raises specificity; **parallel raises sensitivity**.",
+        "Quote **Andermann 2008** after Wilson-Jungner for extra marks.",
+        "Screening alone never controls an NCD; it does not move the population mean.",
+      ],
+    },
     updated: [
       "MoHFW 2026: national single-dose quadrivalent HPV vaccination (Gardasil-4) for girls aged 14 launched 28 February 2026 - replaces the 2024 'announced for 9-14' statement",
     ],
@@ -66,6 +199,142 @@ const revision: RevisionSet = {
   },
   "preventive-national-health-programmes": {
     checked: "2026-10",
+    notes: {
+      sections: [
+        {
+          title: "Definition and key facts",
+          points: [
+            "A **national health programme** has a goal, target, standard protocol, free drugs and a reporting system.",
+            "The **district is the unit of implementation**; states run the programmes.",
+            "Vertical strategies are now delivered on **one horizontal primary care platform** under NHM.",
+            "**NHM** combines NRHM (2005) and NUHM (2013).",
+            "**National Health Policy 2017**: public health spending of 2.5% of GDP by 2025.",
+          ],
+        },
+        {
+          title: "Classification that matters",
+          points: [
+            "**Communicable**: NTEP, NCVBDC, NLEP, NACP, IDSP, NRCP and UIP.",
+            "**Non-communicable**: NP-NCD, NMHP, NPCBVI, NPHCE, NPPC, NTCP, NPPCF and NOHP.",
+            "**RMNCAH+N**: JSY, JSSK, PMSMA, RBSK, RKSK and POSHAN.",
+            "**Health system**: NHM, Ayushman Bharat and PM-ABHIM.",
+            "**Control** means an acceptable level; **eradication** means global zero, as with smallpox.",
+            "**Elimination as a public health problem** meets a threshold, for example leprosy under 1 per 10,000.",
+          ],
+        },
+        {
+          title: "The delivery platform",
+          points: [
+            "IPHS 2022 norms: **ASHA 1,000, sub-centre 5,000, PHC 30,000, CHC 1,20,000**.",
+            "Hilly and tribal areas use lower norms: 3,000, 20,000 and 80,000.",
+            "Sub-centres and PHCs became **Ayushman Arogya Mandirs** (renamed 2023) with **12 service packages**.",
+            "The sub-centre AAM is led by a **Community Health Officer**, with e-Sanjeevani teleconsultation.",
+            "**PM-ABHIM** (2021) builds infrastructure: block units, district labs and critical care blocks.",
+            "When a programme fails, check **staff vacancy, stock-outs and the referral loop** first.",
+          ],
+        },
+        {
+          title: "Communicable disease programmes",
+          points: [
+            "**NTEP** pillars are **Detect, Treat, Prevent, Build**; upfront NAAT and universal drug susceptibility testing.",
+            "TB incidence fell from **237 to 187 per lakh** (2015 to 2024), a 21% decline.",
+            "**Ni-kshay Poshan Yojana** was raised to **Rs 1,000 per month** in November 2024.",
+            "Malaria: zero indigenous cases by **2027**, elimination by **2030**; test-treat-track strategy.",
+            "Kala-azar reached under 1 per 10,000 in all endemic blocks in **2023**.",
+            "Leprosy NSP 2023-27 aims at **zero transmission by 2027**, with single-dose rifampicin for contacts.",
+            "**NACP-V** targets 95-95-95, with test and treat since 2017.",
+          ],
+        },
+        {
+          title: "Treatment - first line",
+          points: [
+            "Drug-sensitive TB: **2 months HRZE then 4 months HRE**, daily, by weight band.",
+            "Give **pyridoxine 10 mg daily** with TB treatment; the thrice-weekly regimen is abandoned.",
+            "TB preventive treatment: **6H** or **3HP** (12 weekly doses) after excluding active TB.",
+            "Drug-resistant TB: **BPaLM for 6 months** for MDR or RR-TB aged 14 and over.",
+            "Leprosy MDT uses three drugs: **6 months for PB and 12 months for MB**.",
+            "HIV first line: **TLD once daily**, started the same day regardless of CD4.",
+          ],
+        },
+        {
+          title: "Treatment - next steps",
+          points: [
+            "Hypertension (IHCI): start **amlodipine 5 mg** or telmisartan 40 mg once daily.",
+            "Step up every 4 weeks, then add **chlorthalidone 12.5 mg**; refer if still above 140/90.",
+            "Diabetes: **metformin 500 mg** with meals, up to 1 g twice daily, then add glimepiride.",
+            "Severe malaria: give **pre-referral rectal or IM artesunate** at the PHC and refer.",
+            "Kala-azar: **single-dose liposomal amphotericin B 10 mg/kg** IV; PKDL needs miltefosine for 12 weeks.",
+          ],
+        },
+        {
+          title: "NCD, mental health and RMNCAH+N",
+          points: [
+            "**NP-NCD** screens everyone 30 and over; the **75/25 initiative** targets 75 million on standard care.",
+            "**Tele-MANAS** helpline is **14416**; Mental Healthcare Act 2017 decriminalised attempted suicide.",
+            "NTCP enforces **COTPA 2003**; tobacco quitline is 1800-112-356.",
+            "**PMSMA** gives an assured antenatal check on the **9th of every month**.",
+            "**RBSK** screens 0-18 years for the 4 Ds; **RKSK** serves adolescents 10-19 years.",
+            "PM-JAY covers **Rs 5 lakh per family per year**; everyone aged 70 and over since October 2024.",
+          ],
+        },
+        {
+          title: "Referral and follow-up",
+          points: [
+            "The family physician's five duties: **detect, treat by protocol, refer, record and notify**.",
+            "Notify TB on **Ni-kshay** (legal duty since 2018), leprosy on Nikusth, outbreaks on IHIP.",
+            "Jaundice on anti-TB drugs: **stop all hepatotoxic drugs** and refer.",
+            "Leprosy **grade 2 disability** or a child case means late detection and ongoing transmission.",
+            "NTEP treatment success target is **90% or more**; NP-NCD tracks the proportion controlled.",
+          ],
+        },
+      ],
+      tables: [
+        {
+          heading: "Programme drugs",
+          columns: ["Drug", "Dose and route", "Duration", "Key side effects / cautions"],
+          rows: [
+            ["HRZE fixed-dose combination", "Oral, 2-6 tablets daily by weight band", "2 months HRZE, then 4 months HRE", "Hepatitis, neuropathy (H), optic neuritis (E), gout (Z)"],
+            ["Leprosy MDT (adult)", "R 600 + C 300 mg monthly; C 50 + D 100 mg daily", "PB 6 months, MB 12 months", "Skin pigmentation (C), haemolysis and DRESS (D)"],
+            ["Single-dose rifampicin (leprosy PEP)", "600 mg oral, 15 years and over", "Once", "Exclude leprosy and TB first"],
+            ["Chloroquine plus primaquine (P. vivax)", "CQ 25 mg/kg; PQ 0.25 mg/kg daily", "CQ 3 days; PQ 14 days", "No PQ in pregnancy, under 6 months, G6PD deficiency"],
+            ["Artesunate plus SP (P. falciparum)", "AS 4 mg/kg daily; SP on day 1", "3 days; PQ 0.75 mg/kg day 2", "AL used in north-east; SP rash"],
+            ["IV artesunate (severe malaria)", "2.4 mg/kg at 0, 12, 24 h, then daily", "Until oral intake, then full ACT", "Rare delayed haemolysis"],
+            ["Liposomal amphotericin B (kala-azar)", "10 mg/kg IV infusion", "Single dose", "Infusion reactions"],
+            ["DEC plus albendazole (filaria MDA)", "DEC 100, 200 or 300 mg by age; albendazole 400 mg", "Single annual dose", "Not under 2 years or in pregnancy"],
+            ["TLD (HIV)", "One tablet once daily", "Lifelong", "Start same day if ready"],
+          ],
+        },
+        {
+          heading: "Facility norms (IPHS 2022)",
+          columns: ["Facility", "Plain areas", "Hilly or tribal", "Key staff"],
+          rows: [
+            ["ASHA", "1,000", "Habitation-based", "Incentive-based link worker"],
+            ["Sub-centre AAM", "5,000", "3,000", "CHO, ANM, male health worker"],
+            ["PHC AAM", "30,000", "20,000", "Medical officer, nurses, pharmacist, lab technician"],
+            ["CHC (FRU)", "1,20,000", "80,000", "Four specialists, 30 beds"],
+          ],
+        },
+        {
+          heading: "Key programmes with targets",
+          columns: ["Programme", "Target", "Key indicator"],
+          rows: [
+            ["NTEP", "End TB (SDG 2030)", "Treatment success 90% or more"],
+            ["NCVBDC malaria", "Elimination by 2030", "Annual parasite incidence, ABER"],
+            ["NLEP", "Zero transmission by 2027", "Grade 2 disability per million"],
+            ["NACP-V", "95-95-95", "Viral suppression on ART"],
+            ["NP-NCD", "25% fall in premature NCD deaths", "Proportion with BP controlled"],
+          ],
+        },
+      ],
+      remember: [
+        "Facility ladder: **1,000 - 5,000 - 30,000 - 1,20,000** (3,000, 20,000, 80,000 in hilly areas).",
+        "Ayushman Bharat: **AAM (12 packages) plus PM-JAY (Rs 5 lakh)**; PM-ABHIM is infrastructure.",
+        "Ni-kshay Poshan is now **Rs 1,000 a month**; BPaLM is 6 months.",
+        "Leprosy MDT: three drugs for both; **PB 6, MB 12 months**.",
+        "Five duties: **detect, treat, refer, record, notify**.",
+        "End every programme answer with **indicators and the portal**.",
+      ],
+    },
     updated: [
       "WHO Global TB Report 2025: India TB incidence 187 per lakh in 2024 (237 in 2015, a 21% fall); mortality 28 to 21 per lakh; about 26.2 lakh diagnosed in 2024 - replaces 195 per lakh (2023)",
       "SRS 2021-23 / SRS 2023: MMR 88 per lakh live births, IMR 25, U5MR 29 - replaces MMR 93 and IMR 27",
@@ -131,6 +400,149 @@ const revision: RevisionSet = {
   },
   "preventive-immunisation": {
     checked: "2026-10",
+    notes: {
+      sections: [
+        {
+          title: "Definition and key facts",
+          points: [
+            "**Active immunity**: the vaccine makes the person's own antibody and memory; slow onset, long lasting.",
+            "**Passive immunity**: ready-made antibody such as immunoglobulin; immediate but short lived.",
+            "The **UIP** gives free vaccines against **12 diseases**; EPI 1978 became UIP in 1985.",
+            "Herd immunity threshold is **1 - 1/R0**; measles needs 92-95% coverage.",
+            "**Tetanus has no herd immunity** because its spores live in the environment.",
+          ],
+        },
+        {
+          title: "Classification that matters",
+          points: [
+            "**Live attenuated**: BCG, OPV, MR, rotavirus, live JE and yellow fever.",
+            "**Inactivated**: IPV and inactivated JE; **toxoids**: tetanus and diphtheria.",
+            "**Subunit or recombinant**: hepatitis B and HPV; **conjugate**: Hib and PCV.",
+            "Live vaccines are avoided in **pregnancy and severe immunosuppression**.",
+            "Conjugate vaccines recruit T cells, so they **work under 2 years** and give memory.",
+          ],
+        },
+        {
+          title: "How vaccines work",
+          points: [
+            "The first dose gives a slow **primary response**, mainly IgM.",
+            "Later doses trigger a fast, high-titre **secondary (anamnestic) response** from memory cells.",
+            "Keep a **minimum 4-week interval** between primary doses.",
+            "An interrupted schedule is **resumed, never restarted**.",
+            "Measles starts at **9 months** because maternal antibody would neutralise it earlier.",
+            "OPV gives **gut IgA** and blocks transmission; IPV gives serum immunity against paralysis.",
+            "Live vaccines not given the same day need a **4-week gap**.",
+          ],
+        },
+        {
+          title: "Schedule and latest changes",
+          points: [
+            "Visits: **birth, 6, 10, 14 weeks, 9-12 months, 16-24 months, 5-6 years, 10 and 16 years**.",
+            "A **third fIPV dose at 9-12 months** was added from January 2023.",
+            "PCV follows a **2+1 schedule**: 6 weeks, 14 weeks and 9-12 months.",
+            "**Single-dose quadrivalent HPV vaccine** for girls aged 14 launched nationally on 28 February 2026.",
+            "**U-WIN** records every dose; **eVIN** tracks stock and cold chain temperature.",
+            "Full immunisation rose from **62% to 76.4%** (NFHS-4 to NFHS-5).",
+            "India was certified **polio-free in March 2014**; measles-rubella elimination target is 2026.",
+          ],
+        },
+        {
+          title: "Cold chain",
+          points: [
+            "ILR keeps vaccines at **+2 to +8 degrees C**; deep freezer at -15 to -25 makes ice packs.",
+            "**OPV is the most heat-sensitive**; BCG and MR are also light-sensitive.",
+            "**Adsorbed vaccines** (HepB, Penta, DPT, Td, PCV, IPV) are destroyed by freezing.",
+            "**VVM**: use at stages 1-2, discard at stages 3-4; it shows heat, not freezing.",
+            "The **shake test** detects freezing by comparing sedimentation with a frozen control.",
+            "**Open vial policy**: 28 days for OPV, HepB, Penta, Td, DPT, PCV and fIPV.",
+            "Reconstituted **BCG, MR and JE** are discarded after **4 hours** or at session end.",
+          ],
+        },
+        {
+          title: "AEFI and contraindications",
+          points: [
+            "**AEFI** is any untoward event after immunisation, not necessarily caused by the vaccine.",
+            "WHO causes: product, quality defect, **immunisation error**, anxiety and coincidental.",
+            "Report a serious AEFI to the District Immunisation Officer **within 24 hours**.",
+            "PCIF within **10 days**; FCIF within **70 days**.",
+            "A cluster at one session is an **immunisation error until proved otherwise**.",
+            "True contraindication: **anaphylaxis to a previous dose**; encephalopathy within 7 days of pertussis vaccine.",
+            "Minor illness, malnutrition and prematurity are **false contraindications**.",
+          ],
+        },
+        {
+          title: "Adult and post-exposure vaccines",
+          points: [
+            "**Influenza** yearly for pregnant women, 65 and over, chronic disease and health workers.",
+            "Pneumococcal for all **50 and over**: PCV20 or PCV21 once, or PCV15 then PPSV23.",
+            "Hepatitis B at **0, 1 and 6 months**; anti-HBs 10 mIU/mL or more is protective.",
+            "Tetanus-prone wound: Td if last dose over 5 years; add **HTIG 250 IU** if course incomplete.",
+            "Rabies category III: wash, vaccinate and give **RIG** into the wound.",
+            "**Yellow fever**: one dose is valid for life; meningococcal ACWY required for Hajj.",
+          ],
+        },
+        {
+          title: "Referral and follow-up",
+          points: [
+            "**Check the card at every visit**; missed opportunities are the commonest cause of drop-out.",
+            "Drop-out rate is **(BCG - MR-1) / BCG x 100**; under 10% is acceptable.",
+            "Notify AFP under 15 years and fever with rash on **IHIP** immediately.",
+            "Observe every child for **30 minutes** after vaccination.",
+          ],
+        },
+      ],
+      tables: [
+        {
+          heading: "Vaccines and immunobiologicals",
+          columns: ["Drug", "Dose and route", "Duration", "Key side effects / cautions"],
+          rows: [
+            ["BCG", "0.05 mL ID left upper arm (0.1 mL after 1 month)", "Once, birth up to 1 year", "Ulcer and scar normal; avoid in symptomatic HIV"],
+            ["OPV", "2 drops oral", "Birth, 6, 10, 14 weeks, booster", "Most heat-sensitive; rare VAPP"],
+            ["Hepatitis B birth dose", "0.5 mL IM thigh", "Within 24 hours of birth", "Never freeze"],
+            ["Pentavalent", "0.5 mL IM left thigh", "6, 10, 14 weeks", "Fever, pain; never freeze"],
+            ["fIPV", "0.1 mL ID right upper arm", "6 weeks, 14 weeks, 9-12 months", "Local nodule"],
+            ["PCV", "0.5 mL IM right thigh", "6 weeks, 14 weeks, 9-12 months", "Never freeze"],
+            ["Measles-rubella", "0.5 mL SC right upper arm", "9-12 and 16-24 months", "Fever and rash at 5-12 days; discard at 4 h"],
+            ["HPV (quadrivalent)", "0.5 mL IM deltoid", "Single dose, girls aged 14", "Does not replace screening from 30"],
+            ["Rabies vaccine plus RIG", "ID 0.1 mL at 2 sites; HRIG 20 IU/kg", "Days 0, 3, 7, 28", "Wash wound 15 minutes first"],
+            ["Adrenaline (anaphylaxis)", "1:1000, 0.01 mL/kg IM thigh", "Repeat every 5-15 minutes", "Max 0.5 mL adult, 0.3 mL child"],
+          ],
+        },
+        {
+          heading: "National Immunisation Schedule by visit",
+          columns: ["Age", "Vaccines"],
+          rows: [
+            ["Birth", "BCG, OPV-0, hepatitis B birth dose"],
+            ["6 weeks", "Penta-1, OPV-1, RVV-1, fIPV-1, PCV-1"],
+            ["10 weeks", "Penta-2, OPV-2, RVV-2"],
+            ["14 weeks", "Penta-3, OPV-3, RVV-3, fIPV-2, PCV-2"],
+            ["9-12 months", "MR-1, JE-1, PCV booster, fIPV-3, vitamin A"],
+            ["16-24 months", "MR-2, JE-2, DPT booster-1, OPV booster"],
+            ["5-6 years", "DPT booster-2"],
+            ["10 and 16 years", "Td"],
+            ["14 years (girls)", "HPV, single dose"],
+            ["Pregnancy", "Td-1 and Td-2 four weeks apart, or booster"],
+          ],
+        },
+        {
+          heading: "Rabies exposure categories (WHO)",
+          columns: ["Category", "Exposure", "Action"],
+          rows: [
+            ["I", "Touching, licks on intact skin", "Wash only"],
+            ["II", "Nibbling, minor scratch without bleeding", "Wash and vaccinate"],
+            ["III", "Bleeding bite, licks on broken skin, bat contact", "Wash, vaccinate and give RIG"],
+          ],
+        },
+      ],
+      remember: [
+        "**Left arm BCG, right arm fIPV and MR**; left thigh Penta, right thigh PCV.",
+        "**VVM shows heat, shake test shows freezing.**",
+        "Open vial 28 days, but **BCG, MR, JE discarded at 4 hours**.",
+        "Never restart a schedule; **resume** where it stopped.",
+        "Herd immunity = **1 - 1/R0**; tetanus has none.",
+        "Category III bite without RIG is a **fatal omission**.",
+      ],
+    },
     updated: [
       "MoHFW 2026: national single-dose quadrivalent HPV vaccination (Gardasil-4, 0.5 mL IM) for girls aged 14 from 28 February 2026, registered on U-WIN - added to schedule table and pearls",
       "ACIP 2025: pneumococcal for all adults 50 and over (and high-risk 19-49) - PCV20 or PCV21 once, or PCV15 then PPSV23; PCV13 no longer used in adults",
@@ -196,6 +608,136 @@ const revision: RevisionSet = {
   },
   "preventive-biostatistics": {
     checked: "2026-10",
+    notes: {
+      sections: [
+        {
+          title: "Definition and key facts",
+          points: [
+            "**Biostatistics** applies statistical methods to biological and medical data.",
+            "**Descriptive statistics** summarise data; **inferential statistics** generalise from sample to population.",
+            "The **type of data** decides the summary, the graph and the statistical test.",
+          ],
+        },
+        {
+          title: "Classification that matters",
+          points: [
+            "**Qualitative**: nominal (blood group) or ordinal (pain grade, NYHA class).",
+            "**Quantitative**: discrete (number of children) or continuous (BP, Hb).",
+            "**Parametric tests** assume a normal distribution: t test, ANOVA, Pearson.",
+            "**Non-parametric tests** use ranks for skewed or ordinal data: Mann-Whitney, Wilcoxon, Spearman.",
+          ],
+        },
+        {
+          title: "Describing data",
+          points: [
+            "**Mean** for symmetrical data, **median** for skewed data, **mode** for nominal data.",
+            "In a normal curve, mean, median and mode **coincide**.",
+            "Positive skew: mean is greater than median, which is greater than mode.",
+            "Mean plus or minus **1, 2 and 3 SD** covers 68%, 95% and 99.7%.",
+            "**Standard error = SD divided by square root of n**; it shrinks as n grows.",
+            "**95% CI = mean plus or minus 1.96 SE**; it shows size and precision.",
+            "**Coefficient of variation = SD / mean x 100** compares variability across units.",
+          ],
+        },
+        {
+          title: "Diagnostic test indices",
+          points: [
+            "Set the 2x2 table with **disease across the top, test down the side**.",
+            "**Sensitivity = a/(a+c)**; **specificity = d/(b+d)**; read down the columns.",
+            "**PPV = a/(a+b)**; **NPV = d/(c+d)**; read across the rows.",
+            "As prevalence falls, **PPV falls** and NPV rises.",
+            "At 1% prevalence, a 90% sensitive and specific test has a **PPV of about 8%**.",
+            "**Likelihood ratios** do not change with prevalence; LR+ over 10 is decisive.",
+            "**Post-test odds = pre-test odds x LR** (Fagan nomogram).",
+          ],
+        },
+        {
+          title: "Risk and effect measures",
+          points: [
+            "**Relative risk = Ie / Iu**, used in cohort studies and trials.",
+            "**Odds ratio = ad/bc**, used in case-control studies.",
+            "OR approximates RR only when the outcome is **rare, under about 10%**.",
+            "**NNT = 1 / ARR**, rounded up, always quoted with the follow-up period.",
+            "Events falling from 10% to 6% give ARR 4%, RRR 40%, **NNT 25**.",
+            "**Population attributable risk** depends on how common the exposure is.",
+          ],
+        },
+        {
+          title: "Hypothesis testing",
+          points: [
+            "The **p value** is the chance of the result if the null were true.",
+            "p is **not** the probability that the null hypothesis is true.",
+            "**Type I error (alpha)** is a false positive claim, set at 0.05.",
+            "**Type II error (beta)** misses a real difference; **power = 1 - beta**, usually 80-90%.",
+            "A 95% CI that **includes 1 for a ratio**, or 0 for a difference, is not significant.",
+            "Prevalence survey sample size: **n = 4pq / L squared**, then add non-response and design effect.",
+          ],
+        },
+        {
+          title: "Sampling",
+          points: [
+            "**Simple random, systematic, stratified, cluster and multistage** are probability methods.",
+            "The WHO **30 x 7 cluster survey** estimates immunisation coverage with 210 children.",
+            "Convenience, purposive, quota and snowball samples **cannot be generalised**.",
+            "Sampling error shrinks with size; **bias does not**.",
+          ],
+        },
+        {
+          title: "Pitfalls in practice",
+          points: [
+            "A test validated in a specialist centre **loses PPV in primary care**.",
+            "Demand **absolute figures and NNT**, not relative risk reduction alone.",
+            "Explain risk to patients in **natural frequencies**, such as 4 in 100.",
+            "Confusing **SD with SE** is the commonest thesis error.",
+            "An underpowered negative study **proves nothing**.",
+          ],
+        },
+      ],
+      tables: [
+        {
+          heading: "Key formulas",
+          columns: ["Measure", "Formula", "Used in", "Meaning"],
+          rows: [
+            ["Sensitivity", "a/(a+c)", "Diagnostic test", "True positives found among the diseased"],
+            ["Specificity", "d/(b+d)", "Diagnostic test", "True negatives among the healthy"],
+            ["Relative risk", "Ie / Iu", "Cohort, RCT", "1 means no effect"],
+            ["Odds ratio", "ad/bc", "Case-control", "Approximates RR if outcome rare"],
+            ["NNT", "1 / ARR", "RCT", "Treated to prevent one event"],
+            ["LR+", "Sn / (1 - Sp)", "Diagnostic test", "Over 10 is decisive"],
+            ["Youden index", "Sn + Sp - 1", "Cut-off choice", "Best balance on ROC"],
+          ],
+        },
+        {
+          heading: "Choosing a statistical test",
+          columns: ["Outcome data", "Two independent groups", "Two paired groups", "Three or more groups"],
+          rows: [
+            ["Continuous, normal", "Unpaired t test", "Paired t test", "One-way ANOVA"],
+            ["Skewed or ordinal", "Mann-Whitney U", "Wilcoxon signed-rank", "Kruskal-Wallis"],
+            ["Proportions", "Chi-square (Fisher if cell under 5)", "McNemar", "Chi-square r x c"],
+            ["Time to event", "Log-rank test", "Not applicable", "Cox regression"],
+          ],
+        },
+        {
+          heading: "Which graph for which data",
+          columns: ["Data", "Graph"],
+          rows: [
+            ["Categorical", "Bar chart, pie chart"],
+            ["Continuous", "Histogram, frequency polygon"],
+            ["Trend over time", "Line graph"],
+            ["Two continuous variables", "Scatter diagram"],
+            ["Median and IQR", "Box plot"],
+          ],
+        },
+      ],
+      remember: [
+        "**Data type first**: it decides summary, graph and test.",
+        "**SnNout, SpPin**; likelihood ratios travel between populations.",
+        "NNT = 1 / ARR, rounded up, **with the time period**.",
+        "1.96 SD covers individuals; **1.96 SE gives the CI of the mean**.",
+        "CI crossing **1 (ratios) or 0 (differences)** is non-significant.",
+        "**Fisher's exact** when an expected cell is under 5; McNemar for paired proportions.",
+      ],
+    },
     master: {
       heading: "Master revision table - Biostatistics for the paper",
       columns: ["Aspect", "High-yield points"],
@@ -246,6 +788,137 @@ const revision: RevisionSet = {
   },
   "preventive-study-designs": {
     checked: "2026-10",
+    notes: {
+      sections: [
+        {
+          title: "Definition and key facts",
+          points: [
+            "**Epidemiology** studies the distribution and determinants of health states in populations.",
+            "Designs are classified by **whether the investigator assigns the exposure**.",
+            "Descriptive studies **generate hypotheses**; analytical studies **test them**.",
+            "Hierarchy runs from meta-analysis of RCTs down to expert opinion; **GRADE** rates quality, not just design.",
+          ],
+        },
+        {
+          title: "Classification that matters",
+          points: [
+            "**Descriptive**: case report, case series, cross-sectional survey and ecological study.",
+            "**Analytical**: case-control (outcome to exposure) and cohort (exposure to outcome).",
+            "**Experimental**: RCT, field trial (healthy individuals) and community trial (whole communities).",
+            "Cohorts may be **prospective, retrospective or ambidirectional**.",
+          ],
+        },
+        {
+          title: "Measures of disease frequency",
+          points: [
+            "**Incidence**: new cases in a period over population at risk; used for aetiology.",
+            "**Prevalence**: all existing cases over population; used for planning services.",
+            "**P = I x D**: ART and insulin raised prevalence without raising incidence.",
+            "**Incidence density** uses person-time as the denominator.",
+            "**Secondary attack rate** excludes the primary case and measures infectiousness.",
+            "**Case fatality rate** measures killing power; proportional mortality only ranks causes.",
+          ],
+        },
+        {
+          title: "Descriptive and cross-sectional studies",
+          points: [
+            "Describe disease by **time, place and person**.",
+            "Time trends: short-term, **cyclic**, **seasonal** and **secular**.",
+            "**Migrant studies** separate genetic from environmental causes.",
+            "A **cross-sectional study** gives prevalence but **cannot show temporality**.",
+            "**Ecological fallacy**: assuming a group association holds for each person.",
+          ],
+        },
+        {
+          title: "Case-control studies",
+          points: [
+            "Start with cases and controls; look **back** for exposure.",
+            "Best for **rare diseases with long latency** and many exposures.",
+            "Measure is the **odds ratio (ad/bc)**; incidence and RR cannot be calculated.",
+            "Signature bias is **recall bias**; reduce it with blinded interviewers.",
+            "**Berkson bias** comes from hospital controls; Neyman bias from prevalent survivors.",
+            "Classic example: **Doll and Hill 1950**, smoking and lung cancer.",
+          ],
+        },
+        {
+          title: "Cohort studies",
+          points: [
+            "Start with exposed and unexposed people **free of disease**; follow forward.",
+            "Gives **incidence, relative risk and attributable risk** directly.",
+            "Best for **rare exposures** and several outcomes; temporality is secure.",
+            "Signature bias is **loss to follow-up**; over 20% loss makes results doubtful.",
+            "**Healthy worker effect** understates occupational hazards.",
+            "Classic examples: **Framingham 1948** and the British Doctors Study.",
+          ],
+        },
+        {
+          title: "Randomised controlled trials",
+          points: [
+            "Randomisation controls **known and unknown confounders**.",
+            "**Allocation concealment** prevents bias before entry; **blinding** prevents bias after entry.",
+            "**Intention-to-treat** keeps everyone in their randomised arm and preserves randomisation.",
+            "Field trial example: **Salk polio vaccine 1954**; community trial: Newburgh-Kingston fluoridation.",
+            "Phases: I safety, II efficacy, III large comparison before licence, IV post-marketing.",
+            "India: **CTRI registration mandatory since 2009**; serious adverse events reported within 24 hours.",
+          ],
+        },
+        {
+          title: "Bias, confounding and causation",
+          points: [
+            "**Bias** is systematic error and is **not reduced by a larger sample**.",
+            "A **confounder** links to exposure and outcome but is not on the causal pathway.",
+            "Control confounding by randomisation, restriction, matching, stratification or regression.",
+            "**Effect modification** is reported stratum by stratum, never adjusted away.",
+            "**Bradford Hill**: nine viewpoints; **temporality is the only essential one**.",
+            "Reporting: **CONSORT** (RCT), STROBE (observational), STARD (diagnostic), PRISMA (reviews).",
+          ],
+        },
+      ],
+      tables: [
+        {
+          heading: "Case-control, cohort and RCT compared",
+          columns: ["Feature", "Case-control", "Cohort", "RCT"],
+          rows: [
+            ["Starting point", "Outcome", "Exposure", "Allocated intervention"],
+            ["Measure", "Odds ratio", "Incidence, RR, AR", "RR, ARR, NNT"],
+            ["Best for", "Rare disease, long latency", "Rare exposure, many outcomes", "Efficacy of one intervention"],
+            ["Signature bias", "Recall, Berkson", "Loss to follow-up", "Bias if unblinded"],
+            ["Cost and time", "Low, quick", "High, long", "Highest"],
+            ["Classic example", "Doll and Hill 1950", "Framingham 1948", "Salk trial 1954"],
+          ],
+        },
+        {
+          heading: "Measures of disease frequency",
+          columns: ["Measure", "Numerator", "Denominator", "Use"],
+          rows: [
+            ["Incidence", "New cases in a period", "Population at risk", "Aetiology"],
+            ["Point prevalence", "All cases at one time", "Population at that time", "Planning"],
+            ["Incidence density", "New cases", "Person-time at risk", "Unequal follow-up"],
+            ["Secondary attack rate", "Cases among contacts", "Susceptible contacts, primary excluded", "Infectiousness"],
+            ["Case fatality rate", "Deaths from the disease", "Cases of the disease", "Virulence"],
+          ],
+        },
+        {
+          heading: "Which design for which question",
+          columns: ["Question", "Design"],
+          rows: [
+            ["How common is it?", "Cross-sectional"],
+            ["Cause of a rare disease?", "Case-control"],
+            ["Effects of a rare exposure?", "Cohort"],
+            ["Does a treatment work?", "RCT"],
+            ["Does a programme work?", "Cluster or community trial"],
+          ],
+        },
+      ],
+      remember: [
+        "Incidence for aetiology, **prevalence for planning**, P = I x D.",
+        "Case-control gives **OR**; cohort gives **RR**; only an RCT allocates exposure.",
+        "Concealment before entry, **blinding after entry**.",
+        "Bigger samples do not cure **bias**.",
+        "**Temporality** is the only essential Bradford Hill viewpoint.",
+        "Exclude the primary case from **both parts** of the secondary attack rate.",
+      ],
+    },
     master: {
       heading: "Master revision table - Study designs and disease frequency",
       columns: ["Aspect", "High-yield points"],
@@ -295,6 +968,140 @@ const revision: RevisionSet = {
   },
   "preventive-outbreak-investigation": {
     checked: "2026-10",
+    notes: {
+      sections: [
+        {
+          title: "Definition and key facts",
+          points: [
+            "An **epidemic** is disease **clearly in excess of normal expectancy** for that place and season.",
+            "An **outbreak** is a localised epidemic; a **pandemic** crosses international boundaries.",
+            "**Endemic** is the usual constant presence that sets the baseline.",
+            "Hyperendemic means intense transmission; **sporadic** means scattered unlinked cases.",
+            "IDSP epidemic threshold is the **mean plus 2 SD** of the previous 3-5 years.",
+          ],
+        },
+        {
+          title: "Classification that matters",
+          points: [
+            "**Point source**: sharp rise and fall, all cases within one incubation period.",
+            "**Continuous common source**: a plateau while exposure lasts, as in Delhi hepatitis E 1955-56.",
+            "**Propagated**: slow rise with peaks about **one incubation period apart**.",
+            "**Mixed**: common source followed by person-to-person spread.",
+            "**Slow (modern) epidemics** are NCDs rising over decades.",
+            "In a point-source outbreak, the **median case marks the median incubation period**.",
+          ],
+        },
+        {
+          title: "Key concepts",
+          points: [
+            "A **case definition** has three tiers: suspected, probable and confirmed.",
+            "Keep the case definition **sensitive early**, then tighten it.",
+            "The food vehicle shows the **largest difference in attack rate**, not the highest rate.",
+            "Vomiting at **1-6 hours** suggests preformed toxin (S. aureus, B. cereus).",
+            "Fever and diarrhoea at **12-72 hours** suggest Salmonella.",
+            "Triggers include **one confirmed cholera case** and any AFP under 15 years.",
+          ],
+        },
+        {
+          title: "Steps 1 to 5",
+          points: [
+            "Step 1: **verify the diagnosis**, taking specimens before treatment.",
+            "Step 2: **confirm the epidemic** by comparing observed with expected cases.",
+            "Step 3: **define the population at risk** with a map and denominators.",
+            "Step 4: **search for all cases** house to house and record them on a **line list**.",
+            "Step 5: **describe by time, place and person**: epidemic curve, spot map and attack rates.",
+          ],
+        },
+        {
+          title: "Steps 6 to 10",
+          points: [
+            "Step 6: **form a hypothesis** naming agent, source, mode of spread and people at risk.",
+            "Step 7: **test it** by retrospective cohort (enumerable group) or case-control (scattered cases).",
+            "Step 8: **study the environment**: water, residual chlorine, kitchens and food handlers.",
+            "Step 9: further population studies such as serosurvey or carrier search.",
+            "Step 10: **write the report**: preliminary within 24 hours, then final with recommendations.",
+          ],
+        },
+        {
+          title: "Treatment - first line",
+          points: [
+            "**Control starts on day one**, in parallel with investigation.",
+            "Treat cases first; cholera **CFR over 1%** means case management has failed.",
+            "**Superchlorinate** the source; keep residual chlorine **at least 0.5 mg/L** after 30 minutes.",
+            "**Measles vaccine within 72 hours** of exposure for children 6 months to 5 years.",
+            "Give **vitamin A to every measles case**.",
+            "Chemoprophylaxis is only for **defined close contacts**.",
+          ],
+        },
+        {
+          title: "IDSP and the legal framework",
+          points: [
+            "**IDSP** began in November 2004; reports on **IHIP** since April 2021.",
+            "**S form** by health workers, **P form** by medical officers, **L form** by laboratories.",
+            "Reporting week is Monday to Sunday; **nil reports are compulsory**.",
+            "Trigger events are phoned in **immediately**; the Rapid Response Team arrives within 24 hours.",
+            "IHR 2005: tell WHO **within 24 hours**; 2024 amendments added a **pandemic emergency** level.",
+            "Epidemic Diseases Act 1897 was amended in 2020 to protect health workers.",
+          ],
+        },
+        {
+          title: "Referral and follow-up",
+          points: [
+            "The family physician is the **first sensor**; phone the district unit the same day.",
+            "**Declare the outbreak over** after two maximum incubation periods without a new case.",
+            "That means **10 days for cholera** and **42 days for measles**.",
+            "Surveillance targets: timeliness and completeness **80% or more**.",
+            "Non-polio AFP rate of **at least 2 per lakh** children under 15.",
+          ],
+        },
+      ],
+      tables: [
+        {
+          heading: "Outbreak drugs",
+          columns: ["Drug", "Dose and route", "Duration", "Key side effects / cautions"],
+          rows: [
+            ["Doxycycline (cholera)", "300 mg oral", "Single dose", "Not in pregnancy or under 8 years"],
+            ["Doxycycline (plague contacts)", "100 mg oral twice daily", "7 days", "Photosensitivity, oesophageal ulcer"],
+            ["Azithromycin (cholera)", "Child 20 mg/kg, adult 1 g oral", "Single dose", "Preferred in children and pregnancy"],
+            ["Ciprofloxacin (meningococcal contacts)", "500 mg oral", "Single dose", "Tendinopathy"],
+            ["Rifampicin (meningococcal contacts)", "600 mg (child 10 mg/kg) twice daily", "2 days", "Orange secretions; reduces pill efficacy"],
+            ["Vitamin A (measles)", "2 lakh IU oral if 12 months or over", "Day 1 and day 2", "Lower doses under 1 year"],
+            ["MR vaccine (contacts)", "0.5 mL SC", "Within 72 hours of exposure", "Dose at 6-8 months does not count"],
+          ],
+        },
+        {
+          heading: "Types of epidemic curve",
+          columns: ["Type", "Curve shape", "Example"],
+          rows: [
+            ["Point source", "Sharp rise and fall", "Food poisoning at a feast, Bhopal"],
+            ["Continuous source", "Plateau", "Delhi hepatitis E 1955-56"],
+            ["Propagated", "Successive peaks", "Measles, hepatitis A"],
+            ["Mixed", "Common source then secondary spread", "Cholera then household spread"],
+            ["Slow (modern)", "Rise over years", "Coronary heart disease, diabetes"],
+          ],
+        },
+        {
+          heading: "Food-borne agents by incubation period",
+          columns: ["Agent", "Incubation", "Main feature"],
+          rows: [
+            ["Chemicals", "Minutes to 1 hour", "Vomiting, neurological signs"],
+            ["S. aureus, B. cereus toxin", "1-6 hours", "Vomiting, no fever"],
+            ["C. perfringens", "8-16 hours", "Watery diarrhoea, cramps"],
+            ["Salmonella", "12-72 hours", "Fever, diarrhoea"],
+            ["Vibrio cholerae", "Usually 1-2 days", "Painless rice-water stools"],
+            ["Hepatitis A and E", "15-60 days", "Jaundice"],
+          ],
+        },
+      ],
+      remember: [
+        "**Verify the diagnosis first, confirm the epidemic second.**",
+        "Point source: all cases within **one incubation period**.",
+        "Vehicle = **largest difference** in attack rate between eaters and non-eaters.",
+        "Nobody waits for a culture to **chlorinate a well**.",
+        "IDSP: **S by worker, P by doctor, L by lab**; nil reports compulsory.",
+        "Over after **two maximum incubation periods**: cholera 10 days, measles 42 days.",
+      ],
+    },
     updated: [
       "WHO 2025: IHR 2024 amendments entered into force 19 September 2025 - 'pandemic emergency' alert level and National IHR Authorities; WHO Pandemic Agreement adopted at WHA78, May 2025",
     ],
@@ -359,6 +1166,143 @@ const revision: RevisionSet = {
   },
   "preventive-nutrition-programmes": {
     checked: "2026-10",
+    notes: {
+      sections: [
+        {
+          title: "Definition and key facts",
+          points: [
+            "**Malnutrition** covers undernutrition and overweight, obesity and diet-related NCDs.",
+            "Both together in one population or person is the **double burden of malnutrition**.",
+            "NFHS-6 under-fives: **29.3% stunted, 19.0% wasted, 31.8% underweight**.",
+            "Anaemia baseline (NFHS-5): **67.1% of children** and 57.0% of women.",
+            "The **first 1,000 days** decide stunting, which is largely irreversible after 2 years.",
+          ],
+        },
+        {
+          title: "Classification that matters",
+          points: [
+            "**Wasting**: weight-for-height below -2 SD; reflects acute undernutrition.",
+            "**Stunting**: height-for-age below -2 SD; reflects chronic undernutrition.",
+            "**Underweight**: weight-for-age below -2 SD; a composite measure.",
+            "**SAM**: weight-for-height below -3 SD, **MUAC under 11.5 cm**, or bilateral pitting oedema.",
+            "**MAM**: weight-for-height -3 to -2 SD, or MUAC 11.5-12.4 cm.",
+            "Asian adults: BMI **23-24.9 overweight**, 25 or more obese; waist 90 cm men, 80 cm women.",
+          ],
+        },
+        {
+          title: "Nutritional assessment",
+          points: [
+            "Weigh every child **monthly at the anganwadi** and plot on the MCP card growth chart.",
+            "Act on a **flattening curve** before a Z-score line is crossed.",
+            "Measure **MUAC on the left arm**, midway between acromion and olecranon.",
+            "Press both feet for **3 seconds** to check for bilateral pitting oedema.",
+            "An **appetite test** that is passed allows community management.",
+            "WHO 2024 anaemia cut-off: **10.5 g/dL at 6-23 months** and in the second trimester.",
+          ],
+        },
+        {
+          title: "Requirements and diet",
+          points: [
+            "ICMR-NIN 2020: pregnancy needs **+350 kcal**; lactation **+600 kcal**.",
+            "Protein requirement is **0.83 g/kg/day**.",
+            "Cereals and millets should give **no more than 45% of energy**.",
+            "Eat at least **400 g vegetables and fruit**; keep **salt under 5 g** a day.",
+            "Cereal plus pulse in about **3:1** completes protein quality.",
+          ],
+        },
+        {
+          title: "Prevention and programmes",
+          points: [
+            "**ICDS** (2 October 1975) now runs as **Saksham Anganwadi and Poshan 2.0**.",
+            "Anganwadi gives **six services** to children under 6, mothers and adolescent girls.",
+            "Supplementary nutrition: **500 kcal** children, **800 kcal** SAM, **600 kcal** pregnant and lactating.",
+            "**PM POSHAN**: 450 kcal (primary) and 700 kcal (upper primary) hot cooked meal.",
+            "**Anaemia Mukt Bharat** runs the **6x6x6 strategy**.",
+            "**National Deworming Day**: 10 February and 10 August, ages 1-19 years.",
+            "**Iodised salt**: 30 ppm at production, 15 ppm at consumer level.",
+          ],
+        },
+        {
+          title: "Treatment - first line",
+          points: [
+            "Pregnancy: **one red IFA tablet daily** from the fourth month for at least 180 days.",
+            "Mild to moderate anaemia: **two IFA tablets daily for 3 months**; recheck Hb at 1 month.",
+            "Children with anaemia: **3 mg/kg/day elemental iron** for 2-3 months.",
+            "Take iron between meals with vitamin C, **not with tea, milk or calcium**.",
+            "Uncomplicated SAM: managed **at the anganwadi** with amoxicillin and weekly follow-up.",
+          ],
+        },
+        {
+          title: "Treatment - next steps",
+          points: [
+            "Admit SAM with **any complication** or age under 6 months to the **NRC**.",
+            "Follow the **WHO ten steps**, starting with hypoglycaemia, hypothermia and dehydration.",
+            "Start **F-75 slowly**, then F-100 or RUTF for catch-up growth.",
+            "Use **ReSoMal**, not standard ORS, for dehydration in SAM.",
+            "Give **iron only once the child is gaining weight**.",
+            "Discharge when weight-for-height is **above -2 SD** or MUAC 12.5 cm or more.",
+          ],
+        },
+        {
+          title: "Complications and red flags",
+          points: [
+            "**Refeeding syndrome** in week one: low phosphate, low potassium and heart failure.",
+            "Bitot spots or corneal haze: **give vitamin A at once** and refer.",
+            "Hb under 7 g/dL in pregnancy: refer for **IV iron or transfusion**.",
+            "Family oedema after new mustard oil: **epidemic dropsy** from Argemone; notify.",
+            "A child not gaining weight on treatment: search for **TB, HIV and UTI**.",
+          ],
+        },
+      ],
+      tables: [
+        {
+          heading: "Nutrition supplements and drugs",
+          columns: ["Drug", "Dose and route", "Duration", "Key side effects / cautions"],
+          rows: [
+            ["IFA syrup (6-59 months)", "1 mL (20 mg iron) oral", "Twice weekly", "Black stools, constipation"],
+            ["IFA pink or blue tablet", "Pink weekly 5-9 years; blue weekly 10-19", "Ongoing", "Nausea; take at night"],
+            ["IFA red tablet (pregnancy)", "60 mg iron, 500 microgram folic acid daily", "180 days in pregnancy and after", "Not with tea, milk or calcium"],
+            ["Iron (treatment)", "Two red tablets daily; child 3 mg/kg/day", "3 months; child 2-3 months", "IV iron if severe or late pregnancy"],
+            ["Albendazole", "200 mg at 1-2 years; 400 mg at 2-19 years", "Twice yearly", "Not in a sick child or first trimester"],
+            ["Vitamin A (prophylaxis)", "1 lakh IU at 9 months, then 2 lakh IU", "6-monthly to 5 years, 9 doses", "Bulging fontanelle, vomiting"],
+            ["Vitamin A (treatment)", "2 lakh IU oral (less under 1 year)", "Days 1, 2 and 14", "Record dose to avoid toxicity"],
+            ["Amoxicillin (SAM)", "15 mg/kg oral 8-hourly", "5-7 days", "Rash, diarrhoea"],
+            ["F-75 then F-100 or RUTF", "F-75 about 130 mL/kg/day in 8-12 feeds", "Stabilisation, then catch-up", "Refeeding syndrome if advanced fast"],
+          ],
+        },
+        {
+          heading: "Anthropometric classification in under-fives",
+          columns: ["Index", "Cut-off", "Term", "What it reflects"],
+          rows: [
+            ["Weight-for-height", "Below -2 SD (-3 severe)", "Wasting", "Acute undernutrition"],
+            ["Height-for-age", "Below -2 SD (-3 severe)", "Stunting", "Chronic undernutrition"],
+            ["Weight-for-age", "Below -2 SD (-3 severe)", "Underweight", "Acute plus chronic"],
+            ["MUAC", "Under 11.5 cm; 11.5-12.4 cm", "SAM; MAM", "Age-independent screen"],
+            ["Bilateral pitting oedema", "Present", "Oedematous SAM", "Kwashiorkor at any weight"],
+          ],
+        },
+        {
+          heading: "Anaemia cut-offs (WHO 2024, g/dL)",
+          columns: ["Group", "Anaemia below", "Severe"],
+          rows: [
+            ["Children 6-23 months", "10.5", "Under 7.0"],
+            ["Children 24-59 months", "11.0", "Under 7.0"],
+            ["Children 5-11 years", "11.5", "Under 8.0"],
+            ["Non-pregnant women", "12.0", "Under 8.0"],
+            ["Men", "13.0", "Under 8.0"],
+            ["Pregnancy (2nd trimester 10.5)", "11.0", "Under 7.0"],
+          ],
+        },
+      ],
+      remember: [
+        "SAM = **WHZ below -3, MUAC under 11.5, or oedema**: any one.",
+        "Stunting chronic, **wasting acute**, underweight both.",
+        "AMB colours: **syrup, pink, blue, red**.",
+        "**No iron in SAM stabilisation**; start once gaining weight.",
+        "Vitamin A: **9 doses** from 9 months to 5 years.",
+        "SNP calories: **500, 800, 600**; PM POSHAN 450 and 700.",
+      ],
+    },
     updated: [
       "NFHS-6 (2023-24, fact sheet May 2026): under-five stunting 29.3% (from 35.5%), wasting 19.0% (severe 5.2%), underweight 31.8% - anaemia not reported, so NFHS-5 remains the anaemia baseline",
     ],
@@ -414,6 +1358,135 @@ const revision: RevisionSet = {
   },
   "preventive-water-sanitation-vector": {
     checked: "2026-10",
+    notes: {
+      sections: [
+        {
+          title: "Definition and key facts",
+          points: [
+            "**Safe water** is free of pathogens and harmful chemicals and pleasant to drink.",
+            "Standard: **no E. coli in any 100 mL sample**.",
+            "Large-scale purification: **storage, filtration and chlorination**.",
+            "Target: **free residual chlorine 0.5 mg/L after 1 hour** of contact.",
+            "At least **0.2 mg/L at the consumer's tap** proves the pipeline is safe.",
+          ],
+        },
+        {
+          title: "Classification that matters",
+          points: [
+            "**Water-borne**: cholera, typhoid, hepatitis A and E, rotavirus.",
+            "**Water-washed**: scabies, trachoma and shigellosis, from too little water.",
+            "**Water-based**: guinea worm and schistosomiasis.",
+            "**Water-related vector**: malaria, dengue, filaria and JE.",
+            "Vector control: **environmental, biological, chemical, personal and legal**.",
+          ],
+        },
+        {
+          title: "Water quality standards",
+          points: [
+            "IS 10500: **fluoride 1.0 mg/L acceptable, 1.5 permissible**.",
+            "**Arsenic 0.01 mg/L**; **nitrate 45 mg/L**; pH 6.5-8.5.",
+            "Excess fluoride causes dental then **skeletal fluorosis**; Nalgonda technique removes it.",
+            "Nitrate in shallow wells causes **infant methaemoglobinaemia** (blue baby).",
+            "A sanitary well is **at least 15 m from a latrine**, with parapet, platform and hand pump.",
+          ],
+        },
+        {
+          title: "Purification",
+          points: [
+            "**Slow sand filter** works through the **vital layer (Schmutzdecke)** and is cleaned by scraping.",
+            "**Rapid sand filter** needs **alum coagulation** and is cleaned by back-washing.",
+            "Chlorine acts as **hypochlorous acid**, best below pH 7.",
+            "Chlorine **does not kill spores, cysts or ova**, so filtration cannot be skipped.",
+            "**Break-point chlorination** is the dose after which free residual chlorine appears.",
+            "Residual chlorine is tested by the **orthotolidine (OT) test**.",
+          ],
+        },
+        {
+          title: "Household and well disinfection",
+          points: [
+            "**Boil** at a rolling boil for 1 minute; store covered and use a long-handled ladle.",
+            "**NaDCC tablet 0.5 g for 20 litres**, with 30 minutes' contact.",
+            "Bleaching powder has about **33% available chlorine** when fresh.",
+            "**Horrock's apparatus**: first distinct blue cup gives the dose.",
+            "Each cup number means **2.5 g bleaching powder per 455 litres**.",
+            "Well volume = **pi r squared x water depth x 1,000** litres.",
+          ],
+        },
+        {
+          title: "Sanitation and waste",
+          points: [
+            "A sanitary latrine must not contaminate water and must keep out **flies and animals**.",
+            "Rural standard: **twin-pit pour-flush latrine** with a 20 mm water seal.",
+            "**SBM** declared rural India **ODF on 2 October 2019**; Phase II targets ODF Plus.",
+            "**Jal Jeevan Mission** aims at **55 litres per capita per day** by household tap.",
+            "**SWM Rules 2026** need four-stream segregation: wet, dry, sanitary and special care.",
+          ],
+        },
+        {
+          title: "Biomedical waste in the clinic",
+          points: [
+            "**BMW Rules 2016** apply to every generator, even a single-doctor clinic.",
+            "Segregate **at the point of generation**; store no more than **48 hours**.",
+            "**Never recap needles**; vaccinate all staff against hepatitis B.",
+            "Needle-stick: wash, report, and start **HIV PEP within 2 hours**, never beyond 72.",
+          ],
+        },
+        {
+          title: "Vector control",
+          points: [
+            "**Aedes aegypti** is a day-biting container breeder; source reduction and a **weekly dry day**.",
+            "**Temephos 1 ppm** is the only larvicide safe for drinking water.",
+            "Biological control uses **Gambusia, guppy fish and Bti**.",
+            "IRS: **DDT 1 g/m2** (2 rounds) or **malathion 2 g/m2** (3 rounds).",
+            "**LLIN**: one net per two people, effective about 3 years.",
+            "**Breteau index over 5** or house index over 10 signals dengue risk.",
+          ],
+        },
+      ],
+      tables: [
+        {
+          heading: "Disinfectants and insecticides",
+          columns: ["Drug", "Dose and route", "Duration", "Key side effects / cautions"],
+          rows: [
+            ["Bleaching powder (wells)", "Cup number x 2.5 g per 455 litres", "1 hour contact, preferably overnight", "Loses strength in air and light"],
+            ["NaDCC tablet", "0.5 g per 20 litres", "30 minutes before drinking", "Settle turbid water first"],
+            ["Temephos (Abate)", "1 ppm in containers", "Weekly in outbreaks", "Only larvicide for drinking water"],
+            ["DDT 50% WP (IRS)", "1 g/m2 on walls", "2 rounds a year", "Check local resistance"],
+            ["Malathion 25% WP (IRS)", "2 g/m2 on walls", "3 rounds a year", "Do not wash walls"],
+            ["Alphacypermethrin 5% WP (IRS)", "25 mg/m2", "2 rounds a year", "Spray before transmission season"],
+            ["LLIN", "One net per two people", "About 3 years", "Avoid frequent washing"],
+          ],
+        },
+        {
+          heading: "Biomedical waste colour coding",
+          columns: ["Colour", "Waste", "Disposal"],
+          rows: [
+            ["Yellow bag", "Anatomical waste, soiled dressings, expired drugs", "Incineration or deep burial"],
+            ["Red bag", "Contaminated recyclable plastics, tubing, gloves", "Autoclave, shred, recycle"],
+            ["White translucent container", "Sharps, needles, blades", "Autoclave, shred"],
+            ["Blue cardboard box", "Glass vials, ampoules, metal implants", "Disinfect and recycle"],
+          ],
+        },
+        {
+          heading: "Vector indices",
+          columns: ["Index", "Formula", "Threshold"],
+          rows: [
+            ["API", "Confirmed malaria cases per 1,000 per year", "Under 1 = elimination phase"],
+            ["ABER", "Slides examined per 100 population per year", "10% or more"],
+            ["House index", "Houses with Aedes larvae per 100 inspected", "Over 10 = high risk"],
+            ["Breteau index", "Positive containers per 100 houses", "Over 5 = transmission risk"],
+          ],
+        },
+      ],
+      remember: [
+        "Residual chlorine **0.5 mg/L at 1 hour**; 0.2 mg/L at the tap.",
+        "**Vital layer** = slow sand filter; alum and back-wash = rapid sand filter.",
+        "Horrock's: each cup = **2.5 g per 455 litres**.",
+        "Fluoride **1.0 acceptable, 1.5 permissible**.",
+        "**Yellow burns, red recycles plastic, white is sharps, blue is glass.**",
+        "API under 1 = elimination; **Breteau over 5** = dengue risk.",
+      ],
+    },
     updated: [
       "MoEFCC 2026: Solid Waste Management Rules 2026 (in force 1 April 2026) replace the 2016 Rules - four-stream segregation at source: wet, dry, sanitary and special care waste; bulk generators process wet waste on site",
     ],
@@ -478,6 +1551,137 @@ const revision: RevisionSet = {
   },
   "preventive-disaster-management": {
     checked: "2026-10",
+    notes: {
+      sections: [
+        {
+          title: "Definition and key facts",
+          points: [
+            "A **disaster** is beyond the **coping capacity of the affected community** (DM Act 2005).",
+            "An emergency uses existing resources; a **mass casualty incident** overwhelms one facility.",
+            "**Risk = hazard x vulnerability / capacity**.",
+            "We rarely change the hazard, so we **lower vulnerability or raise capacity**.",
+            "About **58.6% of India** is earthquake-prone and 12% is flood-prone.",
+          ],
+        },
+        {
+          title: "Classification that matters",
+          points: [
+            "Natural: **geophysical, hydrological, meteorological, climatological and biological**.",
+            "Man-made: **technological** (Bhopal 1984), transport, conflict and CBRN.",
+            "**L0** is normal time; **L1** district; **L2** state; **L3** national assistance.",
+            "Levels are graded by **resources needed**, not by deaths.",
+            "The Act has **no provision to declare a national disaster**.",
+          ],
+        },
+        {
+          title: "The disaster cycle",
+          points: [
+            "Four stages: **mitigation, preparedness, response and recovery**.",
+            "**Structural mitigation**: seismic codes, embankments, cyclone shelters, mangroves.",
+            "**Non-structural mitigation**: zoning, hazard mapping, insurance and early warning.",
+            "**Preparedness** is a written and **rehearsed** plan with stockpiles and drills.",
+            "**Recovery** means rehabilitation and reconstruction: **build back better**.",
+            "Most survivors are rescued **in the first hours by neighbours**.",
+          ],
+        },
+        {
+          title: "Institutions in India",
+          points: [
+            "**NDMA** is chaired by the Prime Minister; **SDMA** by the Chief Minister.",
+            "**DDMA** is chaired by the District Magistrate, with the CMO as a member.",
+            "**MHA is the nodal ministry**; MoHFW is nodal for biological disasters.",
+            "**DM Amendment Act 2025** gives statutory status to the NCMC and allows urban authorities.",
+            "**NDRF** (the Force) has 16 battalions; Aapda Mitra trains community volunteers.",
+            "**Sendai Framework 2015-2030**: four priorities and seven targets (A-G).",
+          ],
+        },
+        {
+          title: "Preparedness at the CHC",
+          points: [
+            "Keep a **village-wise vulnerability line list**: pregnancies, infants, elderly, dialysis, ART, insulin.",
+            "Write a facility plan with an **incident commander** and drill it twice a year.",
+            "Stockpile ORS, chlorine tablets, antibiotics, **anti-snake venom**, MR vaccine and vitamin A.",
+            "Raise the drug store above the flood line and **protect the cold chain**.",
+            "Arrange **redundant communication**: mobile, landline, radio and runner.",
+          ],
+        },
+        {
+          title: "Response - triage and casualty care",
+          points: [
+            "Triage aims at **the greatest good for the greatest number**.",
+            "**Red** immediate, **yellow** delayed, **green** walking wounded, **black** expectant or dead.",
+            "**START (30-2-Can do)**: RR over 30, refill over 2 seconds, or cannot obey = red.",
+            "Only two interventions during triage: **open the airway and stop bleeding**.",
+            "**JumpSTART** for children gives 5 rescue breaths and uses RR 15-45.",
+            "Crush injury: **start IV fluids before extrication**.",
+          ],
+        },
+        {
+          title: "Camp health",
+          points: [
+            "Priorities: water, sanitation, shelter, food and **measles vaccine with vitamin A**.",
+            "Measles vaccine covers children **6 months to 15 years**.",
+            "Start **daily syndromic surveillance on IHIP** from day one.",
+            "Flood leptospirosis prophylaxis: **doxycycline 200 mg weekly** for heavily exposed people only.",
+            "**Dead bodies do not cause epidemics**; identify each body.",
+            "Offer **psychological first aid**; single-session debriefing is not recommended.",
+          ],
+        },
+        {
+          title: "Complications and red flags",
+          points: [
+            "**Crude mortality over 1 per 10,000 per day** means the operation is failing.",
+            "One case of fever with rash: isolate and start **camp-wide measles vaccination**.",
+            "Three or more watery diarrhoea cases in 24 hours: **treat as cholera**.",
+            "Interrupted ART, ATT, insulin or antiepileptics cause a **wave of late deaths**.",
+            "Write an **after-action report** to the DDMA.",
+          ],
+        },
+      ],
+      tables: [
+        {
+          heading: "Drugs and vaccines in disasters",
+          columns: ["Drug", "Dose and route", "Duration", "Key side effects / cautions"],
+          rows: [
+            ["Doxycycline (leptospirosis prophylaxis)", "200 mg oral", "Once weekly during exposure", "Heavily exposed groups only"],
+            ["Doxycycline or azithromycin (cholera)", "Single oral dose", "Household contacts only", "No mass prophylaxis"],
+            ["Measles-rubella vaccine", "0.5 mL SC", "All aged 6 months-15 years", "Give with vitamin A"],
+            ["Vitamin A", "Oral, by age", "With measles vaccine", "Avoid double dosing"],
+            ["Td", "0.5 mL IM", "For wounds as needed", "Add immunoglobulin if course incomplete"],
+            ["Polyvalent anti-snake venom", "IV", "As per protocol", "Stockpile before floods"],
+          ],
+        },
+        {
+          heading: "Triage categories",
+          columns: ["Colour", "Meaning", "Example", "Action"],
+          rows: [
+            ["Red", "Immediate, salvageable", "Shock, tension pneumothorax", "Treat and evacuate first"],
+            ["Yellow", "Delayed, can wait 2-4 hours", "Long-bone fracture", "Stabilise and re-triage"],
+            ["Green", "Walking wounded", "Abrasions, sprains", "First aid; use as helpers"],
+            ["Black", "Expectant or dead", "Unsurvivable injury", "Comfort care; re-triage later"],
+          ],
+        },
+        {
+          heading: "Sphere minimum standards for camps",
+          columns: ["Need", "Minimum standard", "Warning sign"],
+          rows: [
+            ["Water", "15 litres per person per day", "Residual chlorine under 0.5 mg/L"],
+            ["Sanitation", "20 people per latrine, 30 m from water", "Diarrhoea cluster"],
+            ["Shelter", "3.5 square metres per person", "Measles or ARI cases"],
+            ["Food", "2,100 kcal per person per day", "MUAC under 12.5 cm"],
+            ["Health", "1 health unit per 10,000", "CMR over 1 per 10,000 per day"],
+          ],
+        },
+      ],
+      remember: [
+        "**Risk = hazard x vulnerability / capacity**.",
+        "Definition mark: **beyond the coping capacity** of the community.",
+        "**START = 30-2-Can do.**",
+        "**Dead bodies do not cause epidemics**; crowded survivors do.",
+        "Camp vaccine: **measles plus vitamin A, 6 months-15 years**.",
+        "**NDMA (PM), SDMA (CM), DDMA (DM).**",
+      ],
+    },
     master: {
       heading: "Master revision table - Disaster management",
       columns: ["Aspect", "High-yield points"],
@@ -527,6 +1731,142 @@ const revision: RevisionSet = {
   },
   "preventive-health-planning-management": {
     checked: "2026-10",
+    notes: {
+      sections: [
+        {
+          title: "Definition and key facts",
+          points: [
+            "**Health planning (WHO)**: defining problems, identifying unmet needs, surveying resources, setting priority goals.",
+            "It ends with **projecting administrative action**; quote the definition verbatim.",
+            "**Management** gets things done **through and with people**.",
+            "Planning is **a function of management**, not a synonym for it.",
+            "**POSDCORB**: Planning, Organising, Staffing, Directing, Coordinating, Reporting, Budgeting.",
+          ],
+        },
+        {
+          title: "Classification that matters",
+          points: [
+            "**Strategic** planning covers policy over 5-20 years.",
+            "**Tactical** planning covers programmes over 1-5 years.",
+            "**Operational** planning covers days to a year, like the PHC roster.",
+            "A **goal** is broad; an **objective** is measurable; a **target** has a number and a date.",
+            "Objectives must be **SMART**: specific, measurable, achievable, relevant, time-bound.",
+            "Theorists: **Fayol** (14 principles), Taylor, Mayo (Hawthorne effect), **Drucker** (MBO).",
+          ],
+        },
+        {
+          title: "The planning cycle",
+          points: [
+            "Step 1: **situation analysis**, ending in a problem statement with baselines.",
+            "Step 2: **objectives** written as outcomes, not activities.",
+            "Step 3: **assess resources** before fixing targets.",
+            "Step 4: **fix priorities** using Hanlon's BPR or the PEARL test.",
+            "Steps 5 and 6: **write the plan**, then implement with intersectoral and community action.",
+            "Step 7: **monitoring** tracks inputs and process continuously.",
+            "Step 8: **evaluation** judges outcome and impact and feeds the next cycle.",
+          ],
+        },
+        {
+          title: "Economic and management techniques",
+          points: [
+            "**Cost-benefit analysis** values both cost and benefit in money.",
+            "**Cost-effectiveness analysis** finds the cheapest way to reach the same objective.",
+            "**Cost-utility analysis** uses QALYs or DALYs to compare unlike programmes.",
+            "WHO-CHOICE: under **1 x GDP per capita per DALY averted** is highly cost-effective.",
+            "**WISN** sets staffing by workload; **queuing models** reduce OPD waiting time.",
+            "India appraises health technologies through **HTAIn (2017)**.",
+          ],
+        },
+        {
+          title: "Network analysis",
+          points: [
+            "The **critical path is the longest path** and gives the shortest project time.",
+            "Activities on the critical path have **zero float**.",
+            "**PERT** (1958) is probabilistic and event-oriented, with three time estimates.",
+            "PERT expected time: **te = (to + 4tm + tp) / 6**.",
+            "**CPM** (1957) is deterministic and activity-oriented; only CPM allows **crashing**.",
+            "Crash the critical activity with the **lowest cost slope** first.",
+          ],
+        },
+        {
+          title: "SWOT and TOWS",
+          points: [
+            "**Strengths and weaknesses** are internal and present.",
+            "**Opportunities and threats** are external and future.",
+            "Drug shortage in my PHC is a **weakness**; state supply delay is a **threat**.",
+            "Always state an objective first; otherwise SWOT lists mean nothing.",
+            "**TOWS (Weihrich 1982)** turns the matrix into SO, WO, ST and WT strategies.",
+            "Follow SWOT with **fishbone, five whys and Pareto** analysis.",
+          ],
+        },
+        {
+          title: "Planning in India",
+          points: [
+            "**Bhore Committee (1946)**: integrated care, a PHC per 40,000, the social physician.",
+            "**Kartar Singh (1973)**: multipurpose workers; **Shrivastav (1975)**: community health workers.",
+            "**NITI Aayog** replaced the Planning Commission on 1 January 2015.",
+            "**NHP 2017**: government health spending 2.5% of GDP by 2025.",
+            "NHA 2022-23: government spending about **1.4-1.5% of GDP**; out-of-pocket **43.4%**.",
+            "NHM district plans feed the **State PIP**; funding 60:40 (90:10 in north-east).",
+          ],
+        },
+        {
+          title: "Quality and monitoring",
+          points: [
+            "**Donabedian**: structure, process and outcome.",
+            "**NQAS** assesses **eight areas of concern** with a **70% pass mark**.",
+            "**Kayakalp** rewards cleanliness; **LaQshya** improves labour rooms; **MusQan** is child-friendly care.",
+            "Improvement runs on **PDSA cycles** with supportive supervision.",
+            "WHO evaluation: relevance, adequacy, progress, efficiency, effectiveness and impact.",
+          ],
+        },
+      ],
+      tables: [
+        {
+          heading: "The eight-step planning cycle",
+          columns: ["Step", "Question", "Product"],
+          rows: [
+            ["1. Situation analysis", "Where are we?", "Problem statement with baselines"],
+            ["2. Objectives", "Where do we want to be?", "SMART objectives with targets"],
+            ["3. Resources", "What do we have?", "Resource and gap list"],
+            ["4. Priorities", "What first?", "Ranked problem list"],
+            ["5. Plan write-up", "Who, what, when, cost?", "Plan with indicators"],
+            ["6. Implementation", "How on the ground?", "Schedules, indents, minutes"],
+            ["7. Monitoring", "On track now?", "Monthly progress and correction"],
+            ["8. Evaluation", "Did it work?", "Report feeding next cycle"],
+          ],
+        },
+        {
+          heading: "PERT and CPM compared",
+          columns: ["Feature", "PERT", "CPM"],
+          rows: [
+            ["Origin", "US Navy Polaris, 1958", "DuPont, 1957"],
+            ["Time estimates", "Probabilistic, three estimates", "Deterministic, one estimate"],
+            ["Orientation", "Event-oriented", "Activity-oriented"],
+            ["Controls", "Time only", "Time and cost; crashing"],
+            ["Best for", "Novel one-off projects", "Repetitive projects"],
+          ],
+        },
+        {
+          heading: "TOWS strategies",
+          columns: ["Cell", "Meaning", "PHC example"],
+          rows: [
+            ["SO", "Strengths seize opportunities", "Full staff plus NHM budget: start NQAS"],
+            ["WO", "Opportunities fix weaknesses", "Consultant writes SOPs, trains staff"],
+            ["ST", "Strengths blunt threats", "Advertise 24x7 labour room"],
+            ["WT", "Minimise both", "Two-month buffer stock"],
+          ],
+        },
+      ],
+      remember: [
+        "Quote the **WHO definition** verbatim; expand **POSDCORB** letter by letter.",
+        "Draw the planning cycle as a **circle**.",
+        "Critical path = **longest path = shortest project time**.",
+        "te = **(to + 4tm + tp) / 6**; only CPM allows crashing.",
+        "**Weakness is internal, threat is external**; finish SWOT with TOWS.",
+        "Monitoring = **inputs and process**; evaluation = **outcome and impact**.",
+      ],
+    },
     updated: [
       "NHA 2022-23 (released May 2026): government health expenditure about 1.4-1.5% of GDP; out-of-pocket 43.4% of THE (up from the 39.4% low of 2021-22) - replaces the 2021-22 figures",
     ],
@@ -585,6 +1925,136 @@ const revision: RevisionSet = {
   },
   "preventive-iec-social-marketing": {
     checked: "2026-10",
+    notes: {
+      sections: [
+        {
+          title: "Definition and key facts",
+          points: [
+            "**Communication** has five elements: **sender, message, channel, receiver and feedback**.",
+            "**Noise** acts at every stage; **feedback** turns an announcement into communication.",
+            "**Social marketing** applies commercial marketing to achieve **voluntary behaviour change** (Kotler and Zaltman 1971).",
+            "**Social mobilisation** brings together **all feasible intersectoral partners** for demand and ownership.",
+            "**Advocacy** uses evidence and pressure to change policy, law and resources.",
+          ],
+        },
+        {
+          title: "Classification that matters",
+          points: [
+            "Five approaches: **health education, IEC and BCC, social marketing, social mobilisation, advocacy**.",
+            "They are **layers of one strategy**, not alternatives.",
+            "**One-way (didactic)**: lecture, poster, TV spot.",
+            "**Two-way (Socratic)**: counselling, discussion, home visit.",
+            "Barriers: physiological, psychological, environmental, linguistic and **cultural** (most important in India).",
+          ],
+        },
+        {
+          title: "How behaviour changes",
+          points: [
+            "**Knowledge is necessary but not sufficient** for behaviour change.",
+            "Mass media move people to awareness; **interpersonal contact** moves them to adoption.",
+            "Stages of adoption: **awareness, interest, evaluation, trial, adoption**.",
+            "**Health Belief Model**: susceptibility, severity, benefits, barriers, cues to action, self-efficacy.",
+            "**Stages of change**: precontemplation to maintenance; expect relapse.",
+            "**Diffusion of Innovation (Rogers)**: recruit **early adopters** first.",
+          ],
+        },
+        {
+          title: "IEC in practice",
+          points: [
+            "A poster carries **one idea**, few words and a large picture.",
+            "**Folk media** such as nukkad natak and puppetry carry sensitive topics cheaply.",
+            "**Kilkari** gives free weekly voice calls from pregnancy to the first birthday.",
+            "Classic campaign: **Do boond zindagi ki** for polio.",
+            "The **Central Health Education Bureau (1956)** is the apex body.",
+            "Seven Cs: **credibility, content, context, clarity, continuity, channels, capability**.",
+          ],
+        },
+        {
+          title: "Planning a campaign",
+          points: [
+            "Start with **formative research**: KAP survey, focus groups, observation.",
+            "Define **one behaviour** and a SMART communication objective.",
+            "Segment the audience into **primary, secondary and tertiary** groups.",
+            "Fear appeals work **only with an achievable solution**.",
+            "**Pre-test on the intended audience**, not on colleagues.",
+            "Monitor process, then **evaluate outcome** against a baseline.",
+          ],
+        },
+        {
+          title: "Social marketing and mobilisation",
+          points: [
+            "The competition is the **existing convenient behaviour**, not a rival brand.",
+            "**Price** includes time, travel, stigma and lost wages.",
+            "**Place and price beat promotion**: Nirodh (1968) sold in paan shops.",
+            "**JSY plus JSSK** raised institutional delivery to **90.6%** (NFHS-6).",
+            "**Pulse Polio** used SMNet and imams to overcome refusal.",
+            "**Ni-kshay Mitra** lets individuals and corporates adopt TB patients.",
+          ],
+        },
+        {
+          title: "The family physician as communicator",
+          points: [
+            "The **single consultation** is the most powerful communication event.",
+            "Elicit **ICE** (ideas, concerns, expectations) and confirm with **teach-back**.",
+            "Use the **5 As**: ask, advise, assess, assist, arrange.",
+            "Use **person-first, non-stigmatising language**.",
+            "**Never create demand you cannot meet**.",
+          ],
+        },
+        {
+          title: "Evaluation",
+          points: [
+            "**Process**: reach, materials, sessions and staff trained.",
+            "**Outcome**: knowledge, attitude, practice and service uptake.",
+            "**Impact**: coverage, incidence and mortality.",
+            "Use **cost per behaviour changed**, not cost per person reached.",
+          ],
+        },
+      ],
+      tables: [
+        {
+          heading: "Five communication approaches",
+          columns: ["Approach", "Defining feature", "Indian example"],
+          rows: [
+            ["Health education", "Knowledge and skill for informed choice", "ORS demonstration at VHSND"],
+            ["IEC, BCC, SBCC", "Segmented, pre-tested, multi-channel", "Do boond zindagi ki"],
+            ["Social marketing", "Four Ps for voluntary change", "Nirodh 1968, ORS sachets"],
+            ["Social mobilisation", "All intersectoral partners", "SMNet in Pulse Polio"],
+            ["Advocacy", "Policy, law and resources", "COTPA 2003"],
+          ],
+        },
+        {
+          heading: "The marketing mix in health",
+          columns: ["Element", "Meaning", "Indian example"],
+          rows: [
+            ["Product", "Good, service or practice, branded", "Low-osmolarity ORS sachet with zinc"],
+            ["Price", "Money plus time, travel, stigma", "JSY cash plus JSSK free delivery"],
+            ["Place", "Where and when available", "Condoms in paan shops"],
+            ["Promotion", "Advertising, folk media, endorsement", "Pulse Polio celebrity, mosque announcements"],
+          ],
+        },
+        {
+          heading: "Choosing a channel",
+          columns: ["Channel", "Reach", "Best use"],
+          rows: [
+            ["Interpersonal", "Very small", "Persuasion, skills, stigmatised topics"],
+            ["Group", "Small to moderate", "Demonstration, norm setting"],
+            ["Print", "Moderate", "Reminders and job aids"],
+            ["Radio and TV", "Very large", "Awareness, agenda setting"],
+            ["Folk media", "Local but dense", "Low-literacy audiences"],
+            ["Digital", "Large but skewed", "Timed reminders, rumour rebuttal"],
+          ],
+        },
+      ],
+      remember: [
+        "**Feedback** makes it communication.",
+        "Social marketing = **Kotler and Zaltman 1971**, voluntary behaviour change.",
+        "**Place and price beat promotion.**",
+        "Mass media for awareness; **interpersonal for adoption**.",
+        "**Pre-test always**, on the real audience.",
+        "Never create demand you **cannot meet**.",
+      ],
+    },
     updated: [
       "NFHS-6 (2023-24): institutional delivery 90.6% quoted for the JSY/JSSK 'price and place' example (was 88.6%, NFHS-5)",
     ],
@@ -637,6 +2107,167 @@ const revision: RevisionSet = {
   },
   "preventive-occupational-health": {
     checked: "2026-10",
+    notes: {
+      sections: [
+        {
+          title: "Definition and key facts",
+          points: [
+            "Occupational health (ILO and WHO 1950, revised 1995) promotes the highest well-being of all workers.",
+            "It ends with **the adaptation of work to man and of each man to his job**.",
+            "**Pneumoconiosis** (ILO 1971): accumulation of dust in the lungs and the tissue reaction to it.",
+            "About **90% of Indian workers** are in the unorganised sector.",
+            "Long working hours of **55 or more a week** are the largest occupational killer.",
+          ],
+        },
+        {
+          title: "Classification that matters",
+          points: [
+            "Hazards: **physical, chemical, biological, mechanical, ergonomic and psychosocial**.",
+            "Chemical hazards are the largest group; they enter by **inhalation, skin and ingestion**.",
+            "**Fibrogenic dusts**: silica, asbestos and coal.",
+            "**Inert dusts**: iron (siderosis), tin and barium; function stays normal.",
+            "**Organic dusts**: cotton (byssinosis), bagasse and mouldy hay.",
+            "An **occupational disease** is listed; a **work-related disease** is multifactorial.",
+          ],
+        },
+        {
+          title: "How it happens (pathophysiology)",
+          points: [
+            "Particles of **0.5-5 micrometre** reach the alveoli.",
+            "Macrophages ingest **free crystalline silica** and their lysosomes rupture.",
+            "Released cytokines drive fibroblasts to form **whorled collagen nodules** in the upper zones.",
+            "Dying macrophages release silica again, so **silicosis progresses after exposure stops**.",
+            "Long asbestos fibres cause **frustrated phagocytosis** and lower-zone fibrosis.",
+            "Byssinosis is **bronchoconstriction**, not fibrosis: the **Monday chest tightness**.",
+            "Noise destroys outer hair cells, giving a **4000 Hz notch**.",
+          ],
+        },
+        {
+          title: "History in the OPD",
+          points: [
+            "Ask **Ramazzini's question**: what is your occupation?",
+            "Take a **job-by-job history from the first job**; long-latency disease comes from past jobs.",
+            "Ask whether symptoms are **better on holidays** and worse on return.",
+            "Ask whether **co-workers have similar illness**; two or more is a cluster.",
+            "Ask about **home and bystander exposure**, such as washing dusty work clothes.",
+            "Ask about smoking, which **multiplies asbestos lung cancer risk**.",
+          ],
+        },
+        {
+          title: "Examination and investigations",
+          points: [
+            "Lead: pallor, **Burton's blue line** and wrist drop.",
+            "Asbestosis: **clubbing and bibasal crackles**; check SpO2 after a 6-minute walk.",
+            "Chest X-ray by **ILO classification**; profusion 1/0 or more is positive.",
+            "**Egg-shell hilar calcification** suggests silicosis; pleural plaques mark asbestos.",
+            "Spirometry is restrictive in most pneumoconioses but **obstructive in byssinosis**.",
+            "**Serial peak flow** comparing work and rest days diagnoses occupational asthma.",
+            "Sputum **NAAT** for every silicotic with cough, fever or weight loss.",
+          ],
+        },
+        {
+          title: "Treatment - first line",
+          points: [
+            "**Remove the worker from exposure first**; it matters more than any drug.",
+            "Chelate adults with **blood lead 80 microgram/dL or more**, or 50 or more with symptoms.",
+            "Organophosphate: decontaminate, then **atropine 1.8-3 mg IV**, doubling every 5 minutes.",
+            "Atropinised means clear chest, HR over 80, SBP over 80, dry axillae.",
+            "Carbon monoxide: **100% oxygen** by tight non-rebreather mask; pulse oximeter reads falsely normal.",
+            "Silicotuberculosis: standard **NTEP daily regimen**; offer TB preventive therapy to silicotics.",
+          ],
+        },
+        {
+          title: "Treatment - next steps",
+          points: [
+            "Lead encephalopathy: give **dimercaprol 4 hours before EDTA**.",
+            "**Dimercaprol is contraindicated in methylmercury** poisoning.",
+            "Watch OP patients for **intermediate syndrome at 24-96 hours**: neck flexor weakness.",
+            "**Hyperbaric oxygen** for CO with unconsciousness, neurological signs or COHb over 25%.",
+            "Needle-stick: **TLD for 28 days**, started within 72 hours (ideally 2 hours).",
+          ],
+        },
+        {
+          title: "Prevention and programmes",
+          points: [
+            "**Hierarchy of control**: elimination, substitution, engineering, administrative, then PPE.",
+            "**PPE ranks last** because it fails silently and protects only the wearer.",
+            "**Pre-placement examination** places the worker; it does not reject him.",
+            "Noise limit: **90 dB(A) for 8 hours** with a 5 dB exchange rate.",
+            "IARC Group 1 includes **silica, benzene and asbestos**; Group 4 was abolished in 2019.",
+            "Sentinel tumours: **mesothelioma, liver angiosarcoma, sinonasal adenocarcinoma**.",
+          ],
+        },
+        {
+          title: "Legislation",
+          points: [
+            "**OSH Code and Social Security Code 2020** came into force on **21 November 2025**.",
+            "OSH Code factory: **20 or more workers with power, 40 without**.",
+            "Factories Act **section 89**: every doctor must notify Third Schedule diseases.",
+            "**ESI** covers wages up to **Rs 21,000 a month**; contributions 0.75% and 3.25%.",
+            "ESI maternity benefit is **full wages for 26 weeks**.",
+            "**Employees' Compensation Act 1923** covers injury arising out of and in the course of employment.",
+          ],
+        },
+        {
+          title: "Referral and follow-up",
+          points: [
+            "Start **silicosis certification** for every confirmed case.",
+            "Treat **two or more similar cases** from one workplace as an outbreak.",
+            "Painless haematuria in a dye or rubber worker: **cytology and cystoscopy**.",
+            "Pleural mass after asbestos exposure: suspect **mesothelioma**; refer for CT and biopsy.",
+            "Follow silicotics **yearly** with X-ray, spirometry and TB symptom screen.",
+          ],
+        },
+      ],
+      tables: [
+        {
+          heading: "Drugs and antidotes",
+          columns: ["Drug", "Dose and route", "Duration", "Key side effects / cautions"],
+          rows: [
+            ["Succimer (DMSA)", "10 mg/kg oral 8-hourly, then 12-hourly", "5 days, then 14 days", "GI upset, raised enzymes, neutropenia"],
+            ["Calcium disodium EDTA", "1000 mg/m2/day continuous IV", "5 days", "Nephrotoxic; never disodium EDTA"],
+            ["Dimercaprol (BAL)", "75 mg/m2 deep IM 4-hourly", "5 days", "Peanut allergy; not in methylmercury"],
+            ["Atropine", "1.8-3 mg IV, double every 5 minutes", "Then infusion 10-20% of load per hour", "Delirium, hyperthermia, ileus"],
+            ["Pralidoxime", "30 mg/kg IV, then 8 mg/kg/hour", "Until recovery", "Never replaces atropine"],
+            ["Oxygen 100%", "Non-rebreather at 15 L/min", "6 hours or until symptom-free", "Hyperbaric if severe"],
+            ["TLD (HIV PEP)", "One tablet oral once daily", "28 days", "Start within 72 hours"],
+            ["Isoniazid (TPT in silicosis)", "300 mg oral daily with pyridoxine", "6 months", "Hepatitis, neuropathy"],
+          ],
+        },
+        {
+          heading: "Dust diseases at a glance",
+          columns: ["Disease", "Exposure", "X-ray and function", "Key complication"],
+          rows: [
+            ["Silicosis", "Quarry, stone cutting, sandblasting", "Upper-zone nodules; restrictive", "Silicotuberculosis"],
+            ["Coal workers' pneumoconiosis", "Underground coal mining", "Upper-zone small opacities", "PMF, Caplan syndrome"],
+            ["Asbestosis", "Cement sheets, insulation, brakes", "Lower-zone fibrosis, plaques; restrictive", "Lung cancer, mesothelioma"],
+            ["Byssinosis", "Cotton blowing and card rooms", "Normal X-ray; obstructive", "Chronic airflow limitation"],
+            ["Bagassosis, farmer's lung", "Mouldy bagasse or hay", "Diffuse mottling; restrictive", "Fibrosis if exposure continues"],
+            ["Siderosis", "Iron, welding", "Dense opacities, normal function", "None; benign"],
+          ],
+        },
+        {
+          heading: "Occupational cancers",
+          columns: ["Carcinogen", "Tumour", "Industry"],
+          rows: [
+            ["Benzene", "Acute myeloid leukaemia", "Rubber, shoe adhesive, petrochemical"],
+            ["Asbestos", "Mesothelioma, lung cancer", "Insulation, shipbreaking"],
+            ["Vinyl chloride", "Liver angiosarcoma", "PVC manufacture"],
+            ["Aromatic amines", "Bladder cancer", "Aniline dye, rubber, leather"],
+            ["Soot and mineral oil", "Scrotal and skin cancer", "Chimney sweeps, coke ovens"],
+            ["Hardwood and leather dust", "Sinonasal adenocarcinoma", "Furniture, shoe making"],
+          ],
+        },
+      ],
+      remember: [
+        "**Adaptation of work to man and of each man to his job.**",
+        "All pneumoconioses restrictive **except byssinosis** (Monday feeling).",
+        "**Egg-shell = silica; plaques = asbestos; melanoptysis = coal.**",
+        "Mesothelioma has **no link to smoking**; asbestos plus smoking is about 50-fold.",
+        "Hierarchy: **eliminate, substitute, engineer, administer, PPE**.",
+        "**BAL before EDTA** in lead encephalopathy; no BAL in methylmercury.",
+      ],
+    },
     updated: [
       "GINA 2026: tag updated for occupational asthma management (ICS-formoterol per current asthma guideline); Labour Codes in force 21 November 2025 already incorporated",
     ],
@@ -703,6 +2334,161 @@ const revision: RevisionSet = {
   },
   "preventive-climate-change-health": {
     checked: "2026-10",
+    notes: {
+      sections: [
+        {
+          title: "Definition and key facts",
+          points: [
+            "**Climate change** (UNFCCC 1992) is a change attributed to human activity, beyond natural variability.",
+            "Weather is hours to days; **climate** is the average over **30 years or more**.",
+            "Climate change is a **risk multiplier**; it rarely creates new diseases.",
+            "**Risk = hazard x exposure x vulnerability**.",
+            "2024 was the warmest year and the **first calendar year above 1.5 degrees C**.",
+          ],
+        },
+        {
+          title: "Classification that matters",
+          points: [
+            "**Direct pathway**: heat, floods, cyclones, drought and wildfire.",
+            "**Ecosystem-mediated**: vector-, water- and food-borne disease, air pollution, undernutrition.",
+            "**Socially mediated**: livelihood loss, displacement, conflict and mental illness.",
+            "**Mitigation** cuts emissions; **adaptation** reduces harm already locked in.",
+            "**Co-benefits** are immediate health gains from climate action.",
+          ],
+        },
+        {
+          title: "How it happens (pathophysiology)",
+          points: [
+            "Above about 35 degrees C, the body loses heat **almost only by sweating**.",
+            "Sweating fails in high humidity, so **wet-bulb temperature** sets the danger.",
+            "Heat exhaustion is **volume depletion with a normal brain**.",
+            "In **heat stroke**, core temperature over 40 degrees C denatures proteins.",
+            "Gut endotoxin and cytokines cause **rhabdomyolysis, AKI, liver failure and DIC**.",
+            "**Antipyretics do not work** because the hypothalamic set point is normal.",
+            "Warming **shortens the extrinsic incubation period** in mosquitoes.",
+          ],
+        },
+        {
+          title: "History and examination",
+          points: [
+            "Ask occupation, **hours outdoors**, shade, water and rest breaks.",
+            "Any **change in sensorium** in the heat is heat stroke until proved otherwise.",
+            "Review drugs: **diuretics, SGLT2 inhibitors, lithium, anticholinergics, antipsychotics**.",
+            "Exclude **malaria, dengue, leptospirosis and meningitis**, which can mimic heat stroke.",
+            "Measure **core temperature rectally**; never delay cooling to find a thermometer.",
+            "Ask about **biomass cooking fuel**, a common missed cause of COPD in women.",
+          ],
+        },
+        {
+          title: "Investigations",
+          points: [
+            "Start cooling **before** any test.",
+            "Send glucose, electrolytes, creatinine, **CK**, LFT, CBC and INR.",
+            "Dipstick blood with **no red cells** on microscopy means myoglobinuria.",
+            "Transaminases peak at **24-48 hours**; repeat labs then.",
+            "**ECG** for hyperkalaemia; malaria RDT and dengue NS1 in endemic season.",
+          ],
+        },
+        {
+          title: "Treatment - first line",
+          points: [
+            "**Cool first, transfer second**.",
+            "**Cold-water immersion** is fastest, especially in exertional heat stroke.",
+            "Otherwise use **ice packs to neck, axillae and groins** with spray and fanning.",
+            "Aim below **39 degrees C within 30 minutes**; stop cooling at 38.5-39.",
+            "Heat exhaustion: shade, cooling and **ORS 1-2 litres over 2-4 hours**.",
+            "**No paracetamol, NSAIDs or dantrolene** in heat stroke.",
+          ],
+        },
+        {
+          title: "Treatment - next steps",
+          points: [
+            "Shivering or seizures: **lorazepam 2-4 mg IV**.",
+            "Rhabdomyolysis: IV fluids to keep **urine 200-300 mL an hour** in adults.",
+            "Hyperkalaemia with ECG changes: **calcium gluconate 10% 10 mL IV**.",
+            "Catheterise, then **refer to a unit with ICU and dialysis**.",
+            "Pollution-triggered asthma: **salbutamol** via spacer, then prednisolone 40-50 mg for 5-7 days.",
+          ],
+        },
+        {
+          title: "Special groups",
+          points: [
+            "**Elderly people** have blunted thirst and often live alone.",
+            "**Infants** have immature thermoregulation and depend on carers.",
+            "**Pregnant women**: heat is linked to preterm birth and stillbirth.",
+            "**Outdoor workers** lose wages if they stop work.",
+            "**Slum dwellers** live in tin-roofed rooms in the urban heat island.",
+            "Women cooking on biomass suffer **household air pollution**.",
+          ],
+        },
+        {
+          title: "Prevention and programmes",
+          points: [
+            "**NPCCHH** was launched in **2019** under NHM, run by NCDC.",
+            "Heat illness surveillance on **IHIP daily from 1 March to 31 July**.",
+            "IMD heat wave: **40 degrees C plains, 37 coast, 30 hills**, plus departure from normal.",
+            "**Ahmedabad (2013)** made South Asia's first Heat Action Plan.",
+            "**NAPCC 2008** has eight missions and **health is not one**.",
+            "India aims at **net zero by 2070**; NCAP targets 40% less particulate matter.",
+          ],
+        },
+        {
+          title: "Referral and follow-up",
+          points: [
+            "Keep a **vulnerable-patient register** before summer and review their drugs.",
+            "Advise **sick-day rules**: hold diuretics, SGLT2 inhibitors, metformin, ACE inhibitors when dehydrated.",
+            "At **AQI poor (201-300) or worse**, at-risk people avoid outdoor exertion.",
+            "Review heat-stroke survivors at **1-2 weeks** with creatinine and LFT.",
+            "Prefer **dry-powder inhalers** where suitable; health care emits 4-5% of global emissions.",
+          ],
+        },
+      ],
+      tables: [
+        {
+          heading: "Drugs and fluids in heat and pollution illness",
+          columns: ["Drug", "Dose and route", "Duration", "Key side effects / cautions"],
+          rows: [
+            ["Low-osmolarity ORS", "Adults 1-2 L oral in sips", "Over 2-4 hours", "Vomiting if drunk fast"],
+            ["Saline or Ringer's lactate", "500 mL-1 L IV", "Over 30-60 minutes, reassess", "Smaller boluses in elderly, heart failure"],
+            ["Lorazepam", "2-4 mg IV (child 0.1 mg/kg)", "Repeat once after 10 minutes", "Respiratory depression"],
+            ["Dextrose 25%", "100 mL IV (child 10%, 2-5 mL/kg)", "Once, recheck in 15 minutes", "Thrombophlebitis"],
+            ["Calcium gluconate 10%", "10 mL IV", "Over 5-10 minutes", "Bradycardia; ECG monitoring"],
+            ["Salbutamol pMDI", "4-10 puffs via spacer", "Every 20 minutes for 1 hour", "Tremor, tachycardia"],
+            ["Prednisolone", "40-50 mg oral (child 1-2 mg/kg)", "5-7 days (child 3-5)", "Hyperglycaemia, gastritis"],
+          ],
+        },
+        {
+          heading: "Heat-related illness by severity",
+          columns: ["Type", "Features", "Management"],
+          rows: [
+            ["Heat rash and oedema", "Itchy papules, ankle swelling", "Cool clothes, elevate legs"],
+            ["Heat cramps", "Painful spasms after sweating", "Shade and ORS"],
+            ["Heat syncope", "Brief faint, quick recovery", "Lie flat, raise legs, fluids"],
+            ["Heat exhaustion", "37-40 C, sensorium normal", "Cooling, ORS or IV fluids"],
+            ["Heat stroke", "Over 40 C with altered sensorium", "Cool immediately, ABC, refer"],
+          ],
+        },
+        {
+          heading: "Three pathways from climate to health",
+          columns: ["Pathway", "Health example", "Most affected"],
+          rows: [
+            ["Direct: heat", "Heat stroke, AKI, cardiac deaths", "Elderly, outdoor workers"],
+            ["Direct: extreme events", "Drowning, trauma, interrupted care", "Coastal and hill communities"],
+            ["Ecosystem: vectors", "Dengue, malaria, JE", "Newly exposed areas"],
+            ["Ecosystem: water and food", "Cholera, hepatitis, leptospirosis", "Households without safe water"],
+            ["Socially mediated", "Undernutrition, depression, suicide", "The poor, women, migrants"],
+          ],
+        },
+      ],
+      remember: [
+        "Climate change is a **risk multiplier**, not a new disease.",
+        "Three pathways: **direct, ecosystem-mediated, socially mediated**.",
+        "Exhaustion versus stroke = **the sensorium**.",
+        "**Cool first, transfer second**; stop at 38.5-39 C.",
+        "**No antipyretics** in heat stroke.",
+        "NAPCC has eight missions; **health is not one**.",
+      ],
+    },
     updated: [
       "GINA 2026: pollution-triggered mild asthma attack - ICS-formoterol an accepted alternative to SABA; oxygen only if SpO2 is under 92%, titrated to 92-95% (children 5 years and under: keep 92% or more)",
       "WHO 2025: Belem Health Action Plan launched on Health Day at COP30 (Belem, 13 November 2025) added to international milestones",
@@ -769,6 +2555,136 @@ const revision: RevisionSet = {
   },
   "preventive-health-information-gis": {
     checked: "2026-10",
+    notes: {
+      sections: [
+        {
+          title: "Definition and key facts",
+          points: [
+            "A **health information system** turns data into **information for action**.",
+            "It is one of the **six WHO health-system building blocks**.",
+            "**GIS** is a computer system to capture, store, query, analyse and display **spatially referenced data**.",
+            "**GPS collects position, remote sensing collects imagery, GIS integrates and analyses.**",
+            "The **HMN framework (2008)** has six components, from resources to dissemination and use.",
+          ],
+        },
+        {
+          title: "Classification that matters",
+          points: [
+            "Sources: **census, CRS, SRS, notification, hospital records, registers and surveys**.",
+            "Five GIS components: **hardware, software, data, people and methods**.",
+            "Data are the costliest component; **trained people** are the limiting one.",
+            "**Vector data**: points, lines and polygons.",
+            "**Raster data**: a grid of cells, such as satellite imagery or rainfall.",
+          ],
+        },
+        {
+          title: "Key concepts",
+          points: [
+            "Good data are **complete, timely, accurate, reliable, representative and comparable**.",
+            "A **nil report is still a report**.",
+            "**ICD-11** came into effect in January 2022.",
+            "The **layer concept**: one area held as a stack of thematic layers.",
+            "Spatial and attribute data are joined by a common key such as the **LGD code**.",
+            "**Geocoding** turns an address into co-ordinates.",
+          ],
+        },
+        {
+          title: "Maps and analysis",
+          points: [
+            "A **spot map** plots each case, as in **John Snow's 1854** Broad Street pump map.",
+            "A **choropleth** shades areas by a **rate, never a raw count**.",
+            "**Buffering** asks what lies within a set distance.",
+            "**Overlay** asks where conditions coincide.",
+            "**Network analysis** measures real road travel time.",
+            "Clusters need a test such as **SaTScan**, not the eye.",
+          ],
+        },
+        {
+          title: "Pitfalls",
+          points: [
+            "**Ecological fallacy**: area associations do not apply to individuals.",
+            "**MAUP** has a scale effect and a zoning effect.",
+            "**Spatial autocorrelation**: near things are more alike, so p values are falsely small.",
+            "A pale area may mean **no reporting, not no disease**.",
+          ],
+        },
+        {
+          title: "Sources in India",
+          points: [
+            "**Census 2027** is India's first digital census; reference date 1 March 2027.",
+            "**CRS** runs under the RBD Act 1969, amended 2023; register within **21 days**.",
+            "**SRS** (since 1964-65) is a **dual-record system** giving official IMR, MMR and TFR.",
+            "**NFHS-6** fact sheet (May 2026) omitted anaemia; NFHS-5 is still used for that.",
+            "**HMIS** holds monthly facility aggregate data and cannot follow individuals.",
+            "**IDSP** began November 2004; case-based on **IHIP since April 2021**.",
+          ],
+        },
+        {
+          title: "Ayushman Bharat Digital Mission",
+          points: [
+            "**ABDM** launched nationally on **27 September 2021**, run by the National Health Authority.",
+            "Each person gets a **14-digit ABHA number**.",
+            "Building blocks: professionals registry, facility registry, ABHA, consent manager and UHI.",
+            "**Consent** is the legal basis under the DPDP Act 2023.",
+            "Free tools: **QGIS, Bhuvan, SaTScan and data.gov.in**.",
+          ],
+        },
+        {
+          title: "Referral and follow-up",
+          points: [
+            "**Report every notifiable case** to IHIP and Ni-kshay on time.",
+            "Write a correct **MCCD**; no modes of dying such as cardiac arrest.",
+            "Keep a **spot map of the practice population** as a follow-up list.",
+            "**Never map identifiable patients**; aggregate and suppress small numbers.",
+            "Reporting completeness and timeliness target is **over 80%**.",
+          ],
+        },
+      ],
+      tables: [
+        {
+          heading: "GIS functions",
+          columns: ["Function", "Question", "Example", "Common error"],
+          rows: [
+            ["Thematic mapping", "Where are the cases?", "Choropleth of district IMR", "Mapping counts, not rates"],
+            ["Buffering", "What lies within a distance?", "Population within 5 km of a CHC", "Wrong projection"],
+            ["Overlay", "Where do conditions coincide?", "Arsenic aquifer over hand pumps", "Reading causation"],
+            ["Network analysis", "Real travel time?", "108 ambulance siting", "Straight-line distance"],
+            ["Interpolation", "Value between points?", "Fluoride surface from sampled wells", "Too few points"],
+            ["Cluster detection", "More than chance?", "Dengue hotspot", "Untested visual cluster"],
+          ],
+        },
+        {
+          heading: "Sources of health information in India",
+          columns: ["Source", "Provides", "Limitation"],
+          rows: [
+            ["Census", "Denominators", "Ten-yearly; projections drift"],
+            ["CRS", "Legal birth and death record", "Incomplete medical certification"],
+            ["SRS", "Official IMR, MMR, TFR", "No district estimates"],
+            ["NFHS", "District coverage and nutrition", "Every 5-6 years, self-reported"],
+            ["HMIS", "Monthly facility data", "Aggregate; private sector missing"],
+            ["IDSP on IHIP", "Near real-time epidemic data", "Private under-reporting"],
+          ],
+        },
+        {
+          heading: "GIS, GPS and remote sensing",
+          columns: ["Feature", "GIS", "GPS", "Remote sensing"],
+          rows: [
+            ["Question", "What is where and why?", "Where is this?", "What is the surface?"],
+            ["Output", "Layered maps", "Latitude and longitude", "Imagery, land use"],
+            ["Health use", "Hotspots, microplans", "Geo-tagging households", "Predicting breeding sites"],
+            ["Indian example", "QGIS dengue maps", "NavIC", "IRS satellites on Bhuvan"],
+          ],
+        },
+      ],
+      remember: [
+        "Open with the **GIS definition**: capture, store, query, analyse, display.",
+        "Five components: **hardware, software, data, people, methods**.",
+        "**John Snow 1854** opens every uses-of-GIS answer.",
+        "Two traps: **ecological fallacy and MAUP**.",
+        "SRS gives rates; **Census gives denominators**.",
+        "ABDM: **27 September 2021**, 14-digit ABHA.",
+      ],
+    },
     updated: [
       "MHA 2026: Census 2027 is India's first digital census (app-based and online self-enumeration); houselisting April-September 2026, population enumeration February 2027, reference date 1 March 2027",
       "NFHS-6 (2023-24) fact sheet released 29 May 2026 - now quoted as the district coverage source; it omitted anaemia and sex ratio at birth, so NFHS-5 remains the source for those",
@@ -824,6 +2740,134 @@ const revision: RevisionSet = {
   },
   "preventive-sex-ratio-pcpndt": {
     checked: "2026-10",
+    notes: {
+      sections: [
+        {
+          title: "Definition and key facts",
+          points: [
+            "In India, **sex ratio = females per 1000 males**; elsewhere, males per 100 females.",
+            "**Child sex ratio** = girls per 1000 boys aged **0-6 years**, from the census only.",
+            "**Sex ratio at birth** is the better indicator for action; the natural SRB is **about 950**.",
+            "Census 2011: sex ratio **943**, child sex ratio **918**, lowest since independence.",
+            "Latest SRS SRB is **917 (2021-23)**; NFHS-6 did not report SRB.",
+          ],
+        },
+        {
+          title: "Classification that matters",
+          points: [
+            "**Pre-birth causes**: sex selection before or after conception.",
+            "**Post-birth causes**: excess female child mortality, neglect and infanticide.",
+            "**Statistical causes**: under-enumeration of girls.",
+            "Highest sex ratio: **Kerala 1084**; lowest: **Haryana 879**.",
+            "Worst child sex ratio: **Haryana 834, Punjab 846**.",
+          ],
+        },
+        {
+          title: "Why the ratio fell",
+          points: [
+            "**Son preference** is the root cause: inheritance, dowry, old-age security, last rites.",
+            "**Cheap ultrasound** from the mid-1980s is the permissive cause.",
+            "**Falling fertility plus son preference**: with two children desired, couples select.",
+            "So ratios are **worst in richer, literate, low-fertility** households.",
+            "The ratio worsens sharply with **birth order** after one or two daughters.",
+            "Economic Survey 2017-18 estimated **63 million missing women**.",
+          ],
+        },
+        {
+          title: "Consequences",
+          points: [
+            "**Marriage squeeze** two decades later.",
+            "**Bride buying and trafficking** from eastern states.",
+            "More violence and coerced repeated pregnancies for women.",
+            "The deficit persists in each cohort for **60-70 years**.",
+          ],
+        },
+        {
+          title: "The PCPNDT Act",
+          points: [
+            "PNDT Act 1994, in force **1 January 1996**; amended **14 February 2003** after CEHAT case.",
+            "**Section 3A** prohibits sex selection before or after conception.",
+            "**Sections 5 and 6** forbid communicating foetal sex by **words, signs or any manner**.",
+            "**Section 4(3)** indications: over 35, two or more abortions, teratogens, family history.",
+            "**Section 24** presumes the woman was **compelled**; she is treated as a victim.",
+            "Offences are **cognizable, non-bailable and non-compoundable**.",
+          ],
+        },
+        {
+          title: "Forms and authorities",
+          points: [
+            "Register on **Form A**; certificate **Form B** is valid 5 years and displayed.",
+            "**Form F before every obstetric scan**; keep it 2 years.",
+            "Monthly returns reach the Appropriate Authority **by the 5th**.",
+            "**Central Supervisory Board** is chaired by the Union Health Minister.",
+            "District Appropriate Authority is the **CMO or Civil Surgeon**.",
+          ],
+        },
+        {
+          title: "Prevention and programmes",
+          points: [
+            "**Beti Bachao Beti Padhao** launched **22 January 2015 at Panipat**.",
+            "BBBP now runs under the **Sambal vertical of Mission Shakti**.",
+            "**Sukanya Samriddhi Yojana**: savings for a girl under 10; matures at 21.",
+            "**Apni Beti Apna Dhan** (Haryana 1994) was the first state cash transfer.",
+            "**National Girl Child Day is 24 January**.",
+          ],
+        },
+        {
+          title: "Referral and follow-up",
+          points: [
+            "**Never disclose foetal sex**, not even by a gesture or coloured slip.",
+            "Refuse sex determination calmly and **explore coercion**; offer One Stop Centre and 181.",
+            "Report clinics or advertisements to the **district Appropriate Authority** in writing.",
+            "PCPNDT does **not** restrict lawful abortion under the **MTP Act 2021**.",
+            "District Task Force reviews **SRB monthly** from CRS and HMIS.",
+          ],
+        },
+      ],
+      tables: [
+        {
+          heading: "PCPNDT penalties",
+          columns: ["Offender", "First conviction", "Subsequent conviction"],
+          rows: [
+            ["Doctor, owner or employee", "Up to 3 years and Rs 10,000", "Up to 5 years and Rs 50,000"],
+            ["Doctor - Medical Council", "Name removed 5 years", "Name removed permanently"],
+            ["Person seeking sex selection", "Up to 3 years and Rs 50,000", "Up to 5 years and Rs 1,00,000"],
+            ["Advertisement", "Up to 3 years and Rs 10,000", "Same"],
+            ["Other contravention (e.g. Form F)", "Up to 3 months or Rs 1000", "Plus Rs 500 per day"],
+            ["Pregnant woman", "Presumed compelled; not punished", "Same"],
+          ],
+        },
+        {
+          heading: "PCPNDT compliance in an ultrasound practice",
+          columns: ["Step", "What to do", "Form"],
+          rows: [
+            ["Register", "Premises, machine and sonologist; renew every 5 years", "Form A, Form B"],
+            ["Display", "Board in English and local language", "Rule 17"],
+            ["Consent", "Written consent for invasive tests", "Form G"],
+            ["Record", "Before every obstetric scan", "Form F"],
+            ["Report", "Monthly returns by the 5th", "Rule 9"],
+          ],
+        },
+        {
+          heading: "Sex ratio by census",
+          columns: ["Census", "Overall sex ratio", "Child sex ratio"],
+          rows: [
+            ["1961", "941", "976"],
+            ["1991", "927", "945"],
+            ["2001", "933", "927"],
+            ["2011", "943", "918"],
+          ],
+        },
+      ],
+      remember: [
+        "India: **females per 1000 males**.",
+        "2011: **943 and 918**; natural SRB about 950.",
+        "**Falling fertility plus son preference** drives selection.",
+        "**Form F before every scan**, kept 2 years, returns by the 5th.",
+        "PCPNDT bans **sex selection, not abortion**.",
+        "BBBP: **22 January 2015, Panipat**.",
+      ],
+    },
     updated: [
       "SRS 2023: sex ratio at birth 917 (2021-23), up from 907 (2018-20) and 914 (2020-22); Chhattisgarh highest (974); NFHS-6 fact sheet did not report SRB",
     ],
@@ -875,6 +2919,141 @@ const revision: RevisionSet = {
   },
   "preventive-child-women-legislation": {
     checked: "2026-10",
+    notes: {
+      sections: [
+        {
+          title: "Definition and key facts",
+          points: [
+            "A **child** is anyone **below 18** under the JJ Act, POCSO and UNCRC.",
+            "The Child Labour Act uses **below 14 (child)** and **14-18 (adolescent)**.",
+            "**Art 15(3)** allows special provision for women and children.",
+            "**Art 21A** gives education 6-14; **Art 24** bars child labour below 14 in hazardous work.",
+            "**BNS, BNSS and BSA** replaced IPC, CrPC and Evidence Act from **1 July 2024**.",
+          ],
+        },
+        {
+          title: "Classification that matters",
+          points: [
+            "Child laws: **JJ, POCSO, Child Labour, PCMA, RTE and IMS**.",
+            "Women's laws: **PWDVA, POSH, Dowry, Maternity Benefit, MTP and PCPNDT**.",
+            "**Child in conflict with law** goes to the **Juvenile Justice Board**.",
+            "**Child in need of care and protection** goes to the **Child Welfare Committee**.",
+            "JJ offences: **petty, serious and heinous** (minimum 7 years).",
+          ],
+        },
+        {
+          title: "The Juvenile Justice Act",
+          points: [
+            "Uniform juvenile age of **18 for both sexes** since the 2000 Act.",
+            "**Age is reckoned on the date of the offence**.",
+            "Board: **magistrate plus two social workers**, at least one a woman.",
+            "CWC: **chairperson plus four members**; it alone declares a child free for adoption.",
+            "**Five absolute bars**: no death, no life without release, no jail, no joint trial, no identity.",
+            "A 16-18-year-old accused of a heinous offence gets a **preliminary assessment within 3 months**.",
+            "Since 2022 the **District Magistrate** issues adoption orders.",
+          ],
+        },
+        {
+          title: "POCSO and other child laws",
+          points: [
+            "**POCSO 2012** is gender-neutral; consent is irrelevant below 18.",
+            "**Section 19**: reporting is **mandatory for every person**, including doctors.",
+            "**Section 21** punishes failure to report with **up to 6 months**.",
+            "A girl is examined by a **woman doctor**, even without an FIR.",
+            "**Child Labour Act 2016**: total ban below 14; adolescents barred from hazardous work.",
+            "**PCMA 2006**: legal marriage age **18 for females, 21 for males**.",
+            "**IMS Act** bans promotion of infant milk substitutes up to 2 years.",
+          ],
+        },
+        {
+          title: "Laws protecting women",
+          points: [
+            "**PWDVA 2005** is a civil law covering physical, sexual, verbal, emotional and **economic** abuse.",
+            "PWDVA gives **protection and residence orders**; the Protection Officer files the DIR.",
+            "**POSH Act 2013**: Internal Complaints Committee at **10 or more employees**, half women.",
+            "**Dowry death** within 7 years of marriage is now **BNS Section 80**.",
+            "**Maternity Benefit 2017**: **26 weeks** for first two children; **creche at 50+** employees.",
+            "**MTP Act 2021**: one doctor to 20 weeks; two doctors 20-24 weeks; Medical Board beyond 24.",
+          ],
+        },
+        {
+          title: "Policy and programmes",
+          points: [
+            "**NPEW 2001** is still in force; the 2016 draft was never notified.",
+            "NPEW strategies include **gender budgeting** since 2005-06.",
+            "**Mission Vatsalya** runs child protection and **Childline 1098**.",
+            "**Mission Shakti**: One Stop Centres (Sakhi), **181 helpline** and PMMVY.",
+            "**PMMVY**: Rs 5,000 for the first child; Rs 6,000 for a second girl child.",
+          ],
+        },
+        {
+          title: "The doctor's mandatory duties",
+          points: [
+            "Report every suspected **sexual offence against a child** to police under POCSO.",
+            "A **pregnant girl below 18** is proof of a POCSO offence; report it.",
+            "Give **free treatment** to every rape or acid attack victim; refusal is punishable.",
+            "Report an **abandoned child within 24 hours** to 1098, police or CWC.",
+            "For domestic violence, **police reporting is the woman's choice**, unlike POCSO.",
+            "Never write 'rape' on a certificate; **record findings and consistency**.",
+          ],
+        },
+        {
+          title: "Complications and red flags",
+          points: [
+            "STI in a prepubertal child or genital injury: **mandatory POCSO report**.",
+            "Injuries inconsistent with history: **admit for safety** and inform CWC.",
+            "Married girl under 18: inform the **Child Marriage Prohibition Officer**.",
+            "NFHS-5: **23.3% of women 20-24** married before 18.",
+          ],
+        },
+      ],
+      tables: [
+        {
+          heading: "Mandatory duties on the doctor",
+          columns: ["Law", "Trigger", "Doctor must", "Penalty"],
+          rows: [
+            ["POCSO Sec 19 and 21", "Sexual offence on anyone below 18", "Report to police or SJPU", "Up to 6 months"],
+            ["JJ Act 2015", "Abandoned or separated child", "Inform 1098 or CWC within 24 hours", "Up to 6 months"],
+            ["Criminal Law Amendment 2013", "Rape or acid attack victim", "Free treatment; inform police", "Up to 1 year"],
+            ["PCPNDT", "Request for foetal sex", "Never disclose; Form F", "Up to 3 years"],
+            ["MTP Act Sec 5A", "Any termination", "Keep identity confidential", "Up to 1 year"],
+            ["PWDVA", "Woman reports violence", "Medical aid; DIR if she wishes", "Professional misconduct"],
+          ],
+        },
+        {
+          heading: "Acts at a glance",
+          columns: ["Act", "Year", "Key provision"],
+          rows: [
+            ["Juvenile Justice Act", "2015, amended 2021", "Preliminary assessment for 16-18 heinous"],
+            ["POCSO", "2012, amended 2019", "Mandatory reporting"],
+            ["Child Labour Act", "1986, amended 2016", "Total ban below 14"],
+            ["Prohibition of Child Marriage", "2006", "18 girls, 21 boys"],
+            ["RTE Act", "2009", "Free education 6-14; 25% private seats"],
+            ["PWDVA", "2005", "Civil remedy, residence order"],
+            ["POSH Act", "2013", "ICC at 10+ employees"],
+            ["Maternity Benefit", "1961, amended 2017", "26 weeks; creche at 50+"],
+          ],
+        },
+        {
+          heading: "Juvenile Justice bodies",
+          columns: ["Body", "Composition", "Function"],
+          rows: [
+            ["Juvenile Justice Board", "Magistrate plus 2 social workers", "Child in conflict with law"],
+            ["Child Welfare Committee", "Chairperson plus 4 members", "Child in need of care"],
+            ["SJPU", "Trained police officer", "Produce child within 24 hours"],
+            ["CARA", "Statutory apex body", "Adoption and foster care"],
+          ],
+        },
+      ],
+      remember: [
+        "Juvenile age **18 for both sexes**; age on the date of the offence.",
+        "Two streams: **conflict with law to JJB, care and protection to CWC**.",
+        "POCSO **Section 19 binds the doctor**; Section 21 punishes silence.",
+        "NPEW **2001 is still in force**.",
+        "Maternity: **26 weeks**, 12 from third child; creche at 50.",
+        "IPC 304B and 498A are now **BNS 80 and 85-86**.",
+      ],
+    },
     master: {
       heading: "Master revision table - Legislation for children and women",
       columns: ["Aspect", "High-yield points"],
@@ -924,6 +3103,139 @@ const revision: RevisionSet = {
   },
   "preventive-concept-health-determinants": {
     checked: "2026-10",
+    notes: {
+      sections: [
+        {
+          title: "Definition and key facts",
+          points: [
+            "**WHO 1948**: a state of complete physical, mental and social well-being, not merely absence of disease.",
+            "The WHO Constitution came into force on **7 April 1948** (World Health Day).",
+            "Operational addition: able to lead a **socially and economically productive life**.",
+            "Criticisms: 'complete' is **unattainable, static and unmeasurable**.",
+            "**Huber (2011)**: health is the ability to adapt and to self-manage.",
+          ],
+        },
+        {
+          title: "Classification that matters",
+          points: [
+            "Concepts: **biomedical, ecological, psychosocial and holistic**.",
+            "Dimensions: **physical, mental, social and spiritual**, plus emotional and vocational.",
+            "**Positive health** is an ideal; the **spectrum of health** is the working model.",
+            "Indicators: mortality, morbidity, disability, nutritional, health-care delivery, utilisation, composite.",
+          ],
+        },
+        {
+          title: "Key concepts",
+          points: [
+            "**Standard of living** is the usual scale of expenditure.",
+            "**Level of living** (UN) has 9 components, from health to human rights.",
+            "**Spectrum of health** runs from positive health to death and is dynamic.",
+            "**Iceberg of disease**: subclinical and undiagnosed cases lie below; justification for screening.",
+            "Large submerged part: **hypertension, diabetes, anaemia**; almost none in **rabies**.",
+            "**Quality of life (WHO)** is the person's own perception of their position in life.",
+          ],
+        },
+        {
+          title: "Determinants of health",
+          points: [
+            "**Biological**: genes, age and sex.",
+            "**Behavioural**: tobacco, alcohol, diet and inactivity; dominant drivers of NCDs.",
+            "**Environmental**: water, sanitation, housing, air pollution and cooking fuel.",
+            "**Socio-economic**: income, occupation and especially **female literacy**.",
+            "**Health services**: access, affordability and quality.",
+            "In India, **caste, gender and rural residence** are key structural determinants.",
+          ],
+        },
+        {
+          title: "Social determinants",
+          points: [
+            "Conditions in which people are **born, grow, live, work and age**.",
+            "Marmot called them **the causes of the causes**.",
+            "**CSDH 2008**: improve daily living conditions and tackle unequal **power, money and resources**.",
+            "**Dahlgren-Whitehead rainbow**: individual core, then lifestyle, community, living conditions, society.",
+            "**Rio Declaration 2011** committed states to **Health in All Policies**.",
+            "Health is a **State subject**; family planning is on the **Concurrent List**.",
+          ],
+        },
+        {
+          title: "Indicators and indices",
+          points: [
+            "An ideal indicator is **valid, reliable, sensitive, specific, feasible and relevant**.",
+            "**IMR is the most sensitive single indicator**: India **25 (SRS 2023)**.",
+            "MMR **88 per lakh** (SRS 2021-23); life expectancy **70.0 years** (2016-20).",
+            "**PQLI** = IMR, life expectancy at age 1 and literacy, scaled 0-100.",
+            "**HDI** = geometric mean of health, education and income; India **0.685, rank 130**.",
+            "**DALY = YLL + YLD**; one DALY is one lost healthy year.",
+            "**Sullivan index** = life expectancy minus duration of disability.",
+          ],
+        },
+        {
+          title: "Health for All and SDG 3",
+          points: [
+            "**Alma-Ata 1978** launched primary health care for Health for All by 2000.",
+            "**Astana 2018** linked primary health care to UHC.",
+            "SDG 3 by 2030: **MMR below 70**, NMR 12 or less, U5MR 25 or less.",
+            "SDG 3 also aims to cut **premature NCD mortality by one-third**.",
+            "NHP 2017: health spending **2.5% of GDP** by 2025.",
+          ],
+        },
+        {
+          title: "Referral and follow-up",
+          points: [
+            "**Take a social history every time**: income, housing, fuel, violence.",
+            "**Link patients to entitlements**: PM-JAY, PMMVY, Ni-kshay Poshan, ration card.",
+            "Keep a **family folder** for every household.",
+            "Practise **proportionate universalism**: care for all, more for the disadvantaged.",
+            "Out-of-pocket spending is **43.4%** of total health expenditure (2022-23).",
+          ],
+        },
+      ],
+      tables: [
+        {
+          heading: "Composite indices",
+          columns: ["Index", "Components", "Range", "Origin"],
+          rows: [
+            ["PQLI", "IMR, life expectancy at 1, literacy", "0-100, simple average", "Morris 1979"],
+            ["HDI", "Life expectancy, schooling, GNI per capita", "0-1, geometric mean", "UNDP 1990"],
+            ["DALY", "YLL plus YLD", "1 = one healthy year lost", "World Bank and WHO 1993"],
+            ["QALY", "Life years x utility weight", "0 (death) to 1", "Health economics"],
+            ["WHOQOL-BREF", "26 items, 4 domains", "Domain scores", "WHO 1998"],
+          ],
+        },
+        {
+          heading: "Indicators of health (Park)",
+          columns: ["Group", "Examples", "Comment"],
+          rows: [
+            ["Mortality", "CDR, IMR, MMR, life expectancy", "IMR most sensitive"],
+            ["Morbidity", "Incidence, prevalence, admissions", "Burden that does not kill"],
+            ["Disability", "Work-loss days, Sullivan index, DALY", "Quality of life"],
+            ["Nutritional", "Under-five anthropometry, low birth weight", "Food and infection"],
+            ["Health-care delivery", "Doctor-population, population-bed ratio", "Inputs, not outcomes"],
+            ["Utilisation", "Immunisation, institutional births", "Whether services are used"],
+            ["Composite", "PQLI, HDI, MPI", "Several dimensions in one"],
+          ],
+        },
+        {
+          heading: "Acting on each determinant",
+          columns: ["Determinant", "Action", "Programme link"],
+          rows: [
+            ["Biological", "Genetic counselling, newborn screening", "RBSK, NP-NCD"],
+            ["Behavioural", "Brief advice, lifestyle counselling", "NTCP quitline"],
+            ["Environmental", "Safe water, clean fuel", "Jal Jeevan Mission, PMUY"],
+            ["Socio-economic", "Enrol in entitlements", "PM-JAY, PDS, PMMVY"],
+            ["Gender and violence", "Private screening, safety plan", "One Stop Centre, 181"],
+          ],
+        },
+      ],
+      remember: [
+        "Quote **WHO 1948 verbatim**, then the criticisms.",
+        "**IMR** is the most sensitive indicator of community health.",
+        "**PQLI = IMR + life expectancy at 1 + literacy.**",
+        "**DALY = YLL + YLD.**",
+        "Social determinants are **the causes of the causes**.",
+        "SDG 3: **MMR below 70, NMR 12, U5MR 25**.",
+      ],
+    },
     updated: [
       "SRS 2023 / SRS 2021-23: IMR 25, U5MR 29, MMR 88, CDR 6.4 - replaces IMR 27, U5MR 31, MMR 93 (SRS 2021)",
       "NFHS-6 (2023-24): institutional births 90.6%, stunting 29.3%, wasting 19.0%, TFR 2.0 for district comparison (anaemia still NFHS-5)",
@@ -978,6 +3290,133 @@ const revision: RevisionSet = {
   },
   "preventive-health-care-delivery-nhm": {
     checked: "2026-10",
+    notes: {
+      sections: [
+        {
+          title: "Definition and key facts",
+          points: [
+            "**Primary health care (Alma-Ata 1978)** is essential care, universally accessible, at affordable cost.",
+            "It is the **first level of contact** with the health system.",
+            "Four principles: **equitable distribution, community participation, intersectoral coordination, appropriate technology**.",
+            "Eight elements by the mnemonic **ELEMENTS**.",
+            "**Astana 2018** renewed PHC as the cornerstone of UHC and the SDGs.",
+          ],
+        },
+        {
+          title: "Classification that matters",
+          points: [
+            "**Primary level**: sub-health centre and PHC.",
+            "**Secondary level**: CHC, sub-district and district hospital.",
+            "**Tertiary level**: medical colleges and specialised institutes.",
+            "**Selective PHC (GOBI-FFF)** was criticised for narrowing comprehensive PHC.",
+          ],
+        },
+        {
+          title: "How the system evolved",
+          points: [
+            "**Bhore Committee (1946)** proposed the integrated three-tier system and the PHC.",
+            "**Kartar Singh Committee (1973)** created the **multipurpose worker**.",
+            "**NHP 1983** was India's response to Alma-Ata; NHP 2002 and 2017 followed.",
+            "India has **no gatekeeping**, so tertiary hospitals overcrowd while PHCs are under-used.",
+            "CHCs lack about **80% of required specialists** (RHS 2022-23).",
+          ],
+        },
+        {
+          title: "The three tiers (IPHS 2022)",
+          points: [
+            "**ASHA** one per **1000**; selected by the gram sabha.",
+            "**SHC-AAM** per **5000 plains, 3000 hilly**; led by a **Community Health Officer**.",
+            "**PHC** per **30,000 or 20,000**; MBBS officer and **6 beds**.",
+            "**CHC** per **1,20,000 or 80,000**; four specialists plus anaesthetist and **30 beds**.",
+            "IPHS 2022 defines **essential and desirable** services for the 12 AAM packages.",
+            "Free drugs: about **105 at SHC-AAM and 172 at PHC-AAM**.",
+          ],
+        },
+        {
+          title: "Frontline workers and FRU",
+          points: [
+            "ASHA is **activist, facilitator and provider**; one facilitator per 20 ASHAs.",
+            "ASHA does **HBNC and HBYC** home visits and fills the CBAC form.",
+            "CHO is a BSc Nursing or BAMS graduate with a **6-month certificate**.",
+            "**FRU** needs **caesarean section, newborn care and 24-hour blood storage**.",
+            "FRU norm is **one per 5 lakh**; missing one criterion means not an FRU.",
+            "MBBS doctors are trained in **EmOC (16 weeks)** and **LSAS (18 weeks)**.",
+          ],
+        },
+        {
+          title: "National Health Mission",
+          points: [
+            "**NRHM** launched **12 April 2005**; **NUHM** in 2013; together the NHM.",
+            "NHM was extended for **another five years in January 2025**.",
+            "Core strategies: ASHA, IPHS upgrade, **district PIPs, untied funds**, Rogi Kalyan Samiti.",
+            "Funding **60:40**, or **90:10** for north-eastern and Himalayan states.",
+            "Schemes include **JSY, JSSK, RBSK, RKSK, 108 ambulances** and dialysis.",
+            "Urban: **UPHC per 50,000**; Mahila Arogya Samiti in slums.",
+          ],
+        },
+        {
+          title: "Quality and finance",
+          points: [
+            "**NQAS** certification and **Kayakalp** awards measure quality.",
+            "**LaQshya** improves labour rooms; **MusQan** gives child-friendly care.",
+            "Out-of-pocket spending was **43.4%** of total health expenditure in 2022-23.",
+            "**NHP 2017**: 2.5% of GDP by 2025; **two-thirds to primary care**.",
+          ],
+        },
+        {
+          title: "Referral and follow-up",
+          points: [
+            "Eclampsia or PPH: stabilise and send by **108 to the nearest functional FRU**.",
+            "Sick newborn goes to the **SNCU or NBSU**.",
+            "Give **return referral notes** and keep family folders.",
+            "Judge an FRU by **caesareans and blood units issued per month**.",
+            "Caesarean rate in WHO acceptable range is **5-15%**.",
+          ],
+        },
+      ],
+      tables: [
+        {
+          heading: "Public health facilities (IPHS 2022)",
+          columns: ["Facility", "Population plains or hilly", "Staff and beds", "Refers to"],
+          rows: [
+            ["ASHA", "1 per 1000", "Village woman, incentives", "SHC-AAM"],
+            ["SHC-AAM", "5000 or 3000", "CHO, MPW female and male", "PHC"],
+            ["PHC-AAM", "30,000 or 20,000", "MBBS MO, nurses; 6 beds", "CHC or FRU"],
+            ["CHC", "1,20,000 or 80,000", "Four specialists, anaesthetist; 30 beds", "District hospital"],
+            ["FRU", "1 per 5 lakh", "Obstetrician, anaesthetist, blood storage", "District hospital"],
+            ["UPHC", "50,000 urban", "MO, nurses, lab", "UCHC"],
+          ],
+        },
+        {
+          heading: "NRHM and NUHM",
+          columns: ["Feature", "NRHM", "NUHM"],
+          rows: [
+            ["Launched", "12 April 2005", "2013"],
+            ["Population", "Rural; 18 high-focus states", "Towns above 50,000"],
+            ["Primary unit", "SHC and PHC", "UPHC, Urban AAM"],
+            ["Community link", "ASHA; VHSNC", "Urban ASHA; Mahila Arogya Samiti"],
+          ],
+        },
+        {
+          heading: "Committees that shaped the system",
+          columns: ["Committee", "Year", "Key contribution"],
+          rows: [
+            ["Bhore", "1946", "Three-tier system and PHC"],
+            ["Mudaliar", "1962", "Consolidate existing PHCs"],
+            ["Kartar Singh", "1973", "Multipurpose workers"],
+            ["Srivastava", "1975", "Village health guides, referral chain"],
+          ],
+        },
+      ],
+      remember: [
+        "Alma-Ata: **equity, participation, intersectoral, appropriate technology**.",
+        "Mnemonic **ELEMENTS** for the eight elements.",
+        "Norms: **5000, 30,000, 1,20,000** (3000, 20,000, 80,000 hilly).",
+        "FRU = **caesarean + newborn care + 24-hour blood**.",
+        "NRHM **12 April 2005**; NUHM 2013.",
+        "Bhore 1946 three-tier; **Kartar Singh 1973** multipurpose worker.",
+      ],
+    },
     updated: [
       "MoHFW 2025: Union Cabinet (January 2025) approved continuation of NHM for another five years - replaces 'extended to March 2026'",
       "NHA 2022-23: OOPE 43.4% of THE, GHE about 1.4-1.5% of GDP - replaces 39% (2021-22)",
@@ -1031,6 +3470,131 @@ const revision: RevisionSet = {
   },
   "preventive-ayushman-bharat": {
     checked: "2026-10",
+    notes: {
+      sections: [
+        {
+          title: "Definition and key facts",
+          points: [
+            "**Universal health coverage**: everyone gets needed quality care **without financial hardship**.",
+            "**Ayushman Bharat** was announced in the **Union Budget 2018-19** to deliver the NHP 2017 vision.",
+            "First HWC opened at **Jangla, Bijapur, on 14 April 2018**.",
+            "**PM-JAY** was launched at **Ranchi on 23 September 2018**.",
+            "Hospitalisation was the largest driver of **catastrophic out-of-pocket spending**.",
+          ],
+        },
+        {
+          title: "Classification that matters",
+          points: [
+            "**Two pillars**: Ayushman Arogya Mandir (primary care) and PM-JAY (hospital care).",
+            "**Two enablers**: ABDM (digital) and PM-ABHIM (infrastructure), both 2021.",
+            "It shifts care from selective to **comprehensive primary health care**.",
+            "PM-JAY replaced fragmented insurance such as **RSBY 2008** (Rs 30,000 cover).",
+          ],
+        },
+        {
+          title: "Key concepts",
+          points: [
+            "**Continuum of care**: AAM to PHC, CHC or hospital and back, linked by ABHA.",
+            "**Population empanelment**: everyone 30 and above completes the **CBAC** with the ASHA.",
+            "**Task sharing**: the medical officer starts treatment; the **CHO continues** it in the village.",
+            "**Strategic purchasing** buys care at **bundled package rates**.",
+            "PM-JAY covers **only in-patient care**, while outpatient drugs drive most out-of-pocket spending.",
+          ],
+        },
+        {
+          title: "Ayushman Arogya Mandir",
+          points: [
+            "Sub-centres and PHCs were upgraded; renamed **Ayushman Arogya Mandir in 2023**.",
+            "Over **1.75 lakh** are now functional.",
+            "**12 service packages**: RCH, disease control, NCDs, oral, eye, ENT, elderly, emergency, mental health.",
+            "Led by a **Community Health Officer** with fixed salary plus performance pay.",
+            "**eSanjeevani** teleconsultation has crossed 30 crore consultations.",
+            "**Jan Arogya Samitis** manage untied funds; wellness includes yoga and tobacco cessation.",
+          ],
+        },
+        {
+          title: "PM-JAY",
+          points: [
+            "**Rs 5 lakh per family per year**, cashless and paperless.",
+            "Eligibility from **SECC 2011** deprivation and occupational criteria; about **12 crore families**.",
+            "**No cap on family size or age**; pre-existing conditions covered from day one.",
+            "Covers **3 days before and 15 days after** hospitalisation; nationally portable.",
+            "**Health Benefit Package 2022**: about 1949 procedures in 27 specialities.",
+            "Run by the **National Health Authority** and State Health Agencies; helpline **14555**.",
+          ],
+        },
+        {
+          title: "Vay Vandana, ABDM and PM-ABHIM",
+          points: [
+            "**Vay Vandana (29 October 2024)**: all aged **70 and above**, regardless of income.",
+            "Eligible families get an **extra Rs 5 lakh top-up** for members 70 and above.",
+            "**ABDM** gives a **14-digit ABHA**; records stay federated and move only with consent.",
+            "**PM-ABHIM** (Rs 64,180 crore) builds IPHLs, BPHUs and **critical care blocks**.",
+            "PM-ABHIM also creates the **National Institute for One Health**.",
+          ],
+        },
+        {
+          title: "Criticisms and indicators",
+          points: [
+            "**No outpatient cover** under PM-JAY.",
+            "**Uneven private empanelment**, concentrated in southern and western cities.",
+            "**Dated SECC 2011** lists exclude some poor families.",
+            "Out-of-pocket share fell to 39.4% in 2021-22 but rose to **43.4% in 2022-23**.",
+            "AAM performance depends on **CHO posts, supply chains and diagnostics**.",
+          ],
+        },
+        {
+          title: "Referral and follow-up",
+          points: [
+            "Register on the **Health Professionals and Health Facility Registries**.",
+            "**Check eligibility** and refer to empanelled hospitals.",
+            "Help everyone 70 and over create the **Vay Vandana card** before admission.",
+            "Trace **CBAC screen-positives** not yet confirmed or treated.",
+            "Report any **informal charge** for a covered package to **14555**.",
+          ],
+        },
+      ],
+      tables: [
+        {
+          heading: "Ayushman Bharat components",
+          columns: ["Component", "Launched", "Provides", "Family physician action"],
+          rows: [
+            ["Ayushman Arogya Mandir", "April 2018, renamed 2023", "12 packages, free drugs and tests", "Teleconsultation hub, trace positives"],
+            ["PM-JAY", "23 September 2018", "Rs 5 lakh per family per year", "Check eligibility, refer, follow up"],
+            ["Vay Vandana", "29 October 2024", "Cover for all aged 70+", "Help e-KYC and card creation"],
+            ["ABDM", "27 September 2021", "ABHA, registries, consent exchange", "Register, create ABHA"],
+            ["PM-ABHIM", "25 October 2021", "IPHLs, BPHUs, critical care blocks", "Use IPHL tests; report to IHIP"],
+          ],
+        },
+        {
+          heading: "The 12 AAM service packages",
+          columns: ["Packages", "Services", "Phase"],
+          rows: [
+            ["1-4", "Pregnancy, newborn, child and adolescent, family planning", "First"],
+            ["5-7", "Communicable disease, acute illness, NCD screening", "First"],
+            ["8-9", "Oral health, eye and ENT", "Later"],
+            ["10-12", "Elderly and palliative, emergency, mental health", "Later"],
+          ],
+        },
+        {
+          heading: "Free drugs and tests at AAMs",
+          columns: ["Level", "Drugs", "Tests"],
+          rows: [
+            ["SHC-AAM", "About 105", "About 14"],
+            ["PHC-AAM", "About 172", "About 63"],
+            ["Team at SHC-AAM", "CHO, two MPWs, 5-6 ASHAs", "Point-of-care tests"],
+          ],
+        },
+      ],
+      remember: [
+        "Two pillars: **AAM and PM-JAY**; enablers **ABDM and PM-ABHIM**.",
+        "**Rs 5 lakh** per family per year; no cap on size or age.",
+        "**Jangla, Bijapur, 14 April 2018**; Ranchi, 23 September 2018.",
+        "**Vay Vandana**: 70 and above from 29 October 2024.",
+        "ABHA is **14 digits**.",
+        "Main criticism: **no outpatient cover**.",
+      ],
+    },
     updated: [
       "NHA 2022-23 (May 2026): OOPE share rose to 43.4% of THE after the 2021-22 low of 39.4% - replaces 'about 39%' as the financial protection indicator",
     ],
@@ -1084,6 +3648,142 @@ const revision: RevisionSet = {
   },
   "preventive-infant-child-mortality": {
     checked: "2026-10",
+    notes: {
+      sections: [
+        {
+          title: "Definition and key facts",
+          points: [
+            "**IMR** = deaths under 1 year per 1000 live births in the same year.",
+            "IMR is the **most sensitive single indicator** of community health and level of living.",
+            "India (SRS 2023): **IMR 25, U5MR 29**; NMR about **19** (2022).",
+            "Kerala IMR **5**; Madhya Pradesh, Chhattisgarh and Uttar Pradesh **37**.",
+            "**Neonatal deaths are about 70%** of infant deaths.",
+          ],
+        },
+        {
+          title: "Classification that matters",
+          points: [
+            "**NMR**: deaths under 28 days; early neonatal 0-6 days, late 7-27 days.",
+            "**Post-neonatal**: 28 days to under 1 year; reflects environment and infection.",
+            "**Perinatal rate**: stillbirths 28 weeks+ plus deaths 0-6 days, over **total births**.",
+            "**Stillbirth rate** also uses total births; IMR and U5MR use live births.",
+            "**U5MR** is UNICEF's leading indicator.",
+          ],
+        },
+        {
+          title: "Causes and risk factors",
+          points: [
+            "Neonatal deaths: **prematurity and LBW, asphyxia, and sepsis or pneumonia**.",
+            "About **half of neonatal deaths** happen in the first 48 hours.",
+            "After the newborn period, **pneumonia and diarrhoea** lead; undernutrition underlies nearly half.",
+            "**Low birth weight** (under 2500 g, about 18%) is the strongest predictor of neonatal death.",
+            "Maternal risks: age under 19 or over 35, **birth interval under 2 years**, anaemia.",
+            "Cultural risks: **prelacteal feeds, discarding colostrum**, early bathing, son preference.",
+          ],
+        },
+        {
+          title: "RMNCH+A continuum of care",
+          points: [
+            "**RMNCH+A (2013)** runs a life-cycle and home-community-facility continuum.",
+            "Space births **3 years apart**; give antenatal corticosteroids in preterm labour.",
+            "Essential newborn care: dry, **delayed cord clamping**, skin-to-skin, breastfeed within 1 hour.",
+            "Facility tiers: **Newborn Care Corner, NBSU at FRU, SNCU at district hospital**.",
+            "**HBNC**: ASHA visits on days **3, 7, 14, 21, 28 and 42**.",
+            "**HBYC**: ASHA visits at **3, 6, 9, 12 and 15 months**.",
+            "WHO 2022: **immediate KMC from birth** for low birth weight babies.",
+          ],
+        },
+        {
+          title: "Treatment - first line",
+          points: [
+            "**Vitamin K 1 mg IM** at birth (0.5 mg if under 1000 g).",
+            "Antenatal **dexamethasone 6 mg IM 12-hourly x 4** at 24-34 weeks.",
+            "Diarrhoea: **low-osmolarity ORS plus zinc 20 mg for 14 days**.",
+            "Never give antidiarrhoeals to children.",
+            "Pneumonia: **amoxicillin 40-45 mg/kg twice daily for 5 days**.",
+          ],
+        },
+        {
+          title: "Treatment - next steps",
+          points: [
+            "PSBI with no referral: **gentamicin IM once daily plus oral amoxicillin** for 7 days.",
+            "ASHA gives a **pre-referral dose** for chest indrawing under SAANS.",
+            "Plan B dehydration: **ORS 75 mL/kg over 4 hours**.",
+            "Vitamin A in measles on **day 1 and day 2**.",
+            "SAM with complications goes to the **NRC**.",
+          ],
+        },
+        {
+          title: "Complications and red flags",
+          points: [
+            "Newborn not feeding or moving only on stimulation: **PSBI, refer now**.",
+            "**RR 60/min or more** or severe chest indrawing in a young infant.",
+            "Temperature **below 35.5 C or 37.5 C or above**.",
+            "**Jaundice in the first 24 hours**.",
+            "Birth weight **under 1800 g** or under 34 weeks needs facility care.",
+          ],
+        },
+        {
+          title: "Prevention and programmes",
+          points: [
+            "**INAP 2014**: single-digit NMR and stillbirth rate by 2030.",
+            "**SDG 3.2**: NMR 12 or less, U5MR 25 or less by 2030.",
+            "**SAANS (2019)** for pneumonia; **STOP Diarrhoea** campaign from 2024.",
+            "Full immunisation **76.4%**; early breastfeeding only **41.8%** (NFHS-5).",
+            "Institutional births **90.6%** (NFHS-6).",
+            "Counsel **24 months from birth to next conception**.",
+          ],
+        },
+      ],
+      tables: [
+        {
+          heading: "Drugs in newborn and child survival",
+          columns: ["Drug", "Dose and route", "Duration", "Key side effects / cautions"],
+          rows: [
+            ["Vitamin K1", "1 mg IM (0.5 mg if under 1000 g)", "Once at birth", "Local pain"],
+            ["Dexamethasone (antenatal)", "6 mg IM 12-hourly", "4 doses, 24-34 weeks", "Maternal hyperglycaemia"],
+            ["Low-osmolarity ORS", "50-100 mL per stool under 2 years", "Until diarrhoea stops", "Vomiting if given fast"],
+            ["Zinc", "20 mg oral daily (10 mg under 6 months)", "14 days", "Vomiting, metallic taste"],
+            ["Amoxicillin (pneumonia)", "40-45 mg/kg oral twice daily", "5 days", "Rash, diarrhoea"],
+            ["Amoxicillin (PSBI)", "50 mg/kg oral twice daily", "7 days", "With gentamicin"],
+            ["Gentamicin", "5-7.5 mg/kg IM once daily", "2-7 days per protocol", "Nephro- and ototoxicity"],
+            ["Vitamin A", "1 lakh IU at 9 months, then 2 lakh IU", "6-monthly to 5 years", "Bulging fontanelle"],
+            ["IFA syrup", "1 mL (20 mg iron) oral", "Twice weekly, 6-59 months", "With 6-monthly albendazole"],
+          ],
+        },
+        {
+          heading: "Childhood mortality indicators",
+          columns: ["Indicator", "Numerator", "Denominator", "India"],
+          rows: [
+            ["NMR", "Deaths under 28 days", "1000 live births", "19 (2022)"],
+            ["IMR", "Deaths under 1 year", "1000 live births", "25 (2023)"],
+            ["U5MR", "Deaths under 5 years", "1000 live births", "29 (2023)"],
+            ["PMR", "Stillbirths plus deaths 0-6 days", "1000 total births", "SRS annual"],
+            ["SBR", "Fetal deaths 28 weeks+", "1000 total births", "Target single digit"],
+          ],
+        },
+        {
+          heading: "Newborn and child programmes",
+          columns: ["Programme", "Year", "Core activity"],
+          rows: [
+            ["HBNC", "2011", "Home visits days 3 to 42"],
+            ["INAP", "2014", "Single-digit NMR and SBR by 2030"],
+            ["MAA", "2016", "Breastfeeding promotion"],
+            ["HBYC", "2018", "Home visits 3-15 months"],
+            ["SAANS", "2019", "Pneumonia detection and treatment"],
+            ["STOP Diarrhoea", "2024", "ORS-zinc and WASH"],
+          ],
+        },
+      ],
+      remember: [
+        "**IMR 25, U5MR 29** (SRS 2023); always quote the year.",
+        "Neonatal deaths are **about 70%** of infant deaths.",
+        "Stillbirth and perinatal rates use **total births**.",
+        "HBNC **3, 7, 14, 21, 28, 42**; HBYC 3, 6, 9, 12, 15 months.",
+        "Diarrhoea = **ORS plus zinc 20 mg for 14 days**.",
+        "**Kerala 5 versus MP 37** shows social determinants.",
+      ],
+    },
     updated: [
       "SRS 2023: IMR 25 (26 in 2022), U5MR 29; Kerala 5 lowest, MP/Chhattisgarh/UP 37 highest - replaces IMR 27, U5MR 31, Kerala 6, MP 43 (SRS 2021)",
       "NFHS-6 (2023-24): institutional births 90.6%, under-five stunting 29.3% added to coverage indicators",
@@ -1139,6 +3839,138 @@ const revision: RevisionSet = {
   },
   "preventive-maternal-health-mmr": {
     checked: "2026-10",
+    notes: {
+      sections: [
+        {
+          title: "Definition and key facts",
+          points: [
+            "**Maternal death**: death in pregnancy or **within 42 days**, from causes related to pregnancy.",
+            "Accidental or incidental causes are **excluded**.",
+            "**MMR** = maternal deaths per **1,00,000 live births**; it measures obstetric care quality.",
+            "India MMR **88 (SRS 2021-23)**; SDG 3.1 target is **below 70** by 2030.",
+            "**Maternal mortality rate** uses women aged 15-49 as the denominator.",
+          ],
+        },
+        {
+          title: "Classification that matters",
+          points: [
+            "**Direct obstetric deaths**: haemorrhage, hypertension, sepsis, obstructed labour, unsafe abortion.",
+            "**Indirect deaths**: anaemia, heart disease, hepatitis, malaria and TB aggravated by pregnancy.",
+            "**Late maternal death**: after 42 days but within 1 year.",
+            "**Maternal near miss** is 5-10 times commoner than death and a surviving witness.",
+          ],
+        },
+        {
+          title: "Causes and risk factors",
+          points: [
+            "**Haemorrhage (38%)** is the commonest cause in India.",
+            "Sepsis 11%, abortion 8%, obstructed labour 5%, hypertensive disorders 5%.",
+            "**Most deaths occur within 24 hours** of birth; PPH can kill within 2 hours.",
+            "**Anaemia** affects 52.2% of pregnant women and amplifies every haemorrhage.",
+            "Highest MMR: **Assam, Madhya Pradesh, Uttar Pradesh**; lowest **Kerala 19**.",
+          ],
+        },
+        {
+          title: "The three delays",
+          points: [
+            "**Delay 1**: deciding to seek care, from unrecognised danger signs or cost.",
+            "**Delay 2**: reaching a facility, from distance and transport.",
+            "**Delay 3**: receiving adequate care, from no staff, blood or theatre.",
+            "Indian reviews repeatedly find **delay 3 and multiple referrals**.",
+            "About **15% of women** need emergency obstetric care; complications cannot be predicted.",
+          ],
+        },
+        {
+          title: "Emergency obstetric care",
+          points: [
+            "**BEmOC** has seven signal functions, from antibiotics to newborn resuscitation.",
+            "**CEmOC** adds **caesarean section and blood transfusion** (nine in all).",
+            "**FRU** needs **caesarean, anaesthesia and 24-hour blood storage**, all three.",
+            "UN norm: **5 EmOC facilities per 5 lakh**, including 1 comprehensive.",
+            "Caesarean rate of **5-15%** of all births is the acceptable range.",
+            "Make a **birth preparedness plan**: facility, money, transport, blood donor.",
+          ],
+        },
+        {
+          title: "Treatment - first line",
+          points: [
+            "**IFA**: 60 mg iron plus 500 mcg folic acid daily, 180 days before and after birth.",
+            "**Calcium 500 mg twice daily** from 14 weeks; keep 2 hours apart from iron.",
+            "**Aspirin 75-150 mg at night** from 12 to 36 weeks if at high risk of pre-eclampsia.",
+            "**Oxytocin 10 IU IM** within 1 minute of birth (AMTSL).",
+            "**Misoprostol 600 mcg orally** where oxytocin is unavailable.",
+          ],
+        },
+        {
+          title: "Treatment - next steps",
+          points: [
+            "PPH: **tranexamic acid 1 g IV** within 3 hours of birth.",
+            "WHO 2025: act at **300 mL plus abnormal vital signs**, measured with a calibrated drape.",
+            "Give the **MOTIVE bundle** at once: massage, oxytocic, tranexamic acid, IV fluids, examination, escalation.",
+            "Eclampsia: **MgSO4 4 g IV plus 10 g IM**, then 5 g IM 4-hourly for 24 hours.",
+            "Check **knee jerk, RR over 16, urine over 30 mL/h**; antidote calcium gluconate 1 g IV.",
+            "Give the **MgSO4 loading dose before referral**.",
+          ],
+        },
+        {
+          title: "Prevention and programmes",
+          points: [
+            "**JSY (2005)** gives cash for institutional delivery.",
+            "**JSSK (2011)** makes delivery and caesarean free, with transport both ways.",
+            "**PMSMA** gives specialist ANC on the **9th of every month**; E-PMSMA tracks high-risk women.",
+            "**LaQshya (2017)** improves labour rooms with respectful care and a birth companion.",
+            "**SUMAN (2019)** guarantees **zero denial** of services.",
+            "**MDSR**: notify every maternal death **within 24 hours**; non-punitive review chaired by the DM.",
+          ],
+        },
+      ],
+      tables: [
+        {
+          heading: "Drugs in safe motherhood",
+          columns: ["Drug", "Dose and route", "Duration", "Key side effects / cautions"],
+          rows: [
+            ["IFA", "60 mg iron + 500 mcg folic acid oral daily", "180 days antenatal and postnatal", "Not with tea, milk or calcium"],
+            ["Folic acid", "400 mcg oral daily", "Preconception to 12 weeks", "Prevents neural tube defects"],
+            ["Calcium carbonate", "500 mg oral twice daily", "14 weeks to 6 months postpartum", "2 hours apart from iron"],
+            ["Aspirin (high risk)", "75-150 mg oral at night", "12 to 36 weeks", "For pre-eclampsia prevention"],
+            ["Oxytocin", "10 IU IM; 20-40 IU in 1 L for PPH", "Within 1 minute of birth", "Store at 2-8 C"],
+            ["Misoprostol", "600 mcg oral", "Once after birth", "Shivering, fever"],
+            ["Tranexamic acid", "1 g IV over 10 minutes", "Repeat once after 30 minutes", "Useless after 3 hours"],
+            ["Magnesium sulphate", "4 g IV + 10 g IM, then 5 g IM 4-hourly", "24 hours", "Check reflexes, RR, urine"],
+            ["Nifedipine or labetalol", "Nifedipine 10 mg oral", "If BP 160/110 or more", "Give before referral"],
+          ],
+        },
+        {
+          heading: "Safe motherhood schemes and the delay they fix",
+          columns: ["Scheme", "Year", "Entitlement", "Delay"],
+          rows: [
+            ["JSY", "2005", "Cash for institutional delivery", "Delay 1"],
+            ["JSSK", "2011", "Free delivery, drugs, blood, transport", "Delays 1 and 2"],
+            ["PMSMA", "2016", "Specialist ANC on the 9th", "Delay 1"],
+            ["LaQshya", "2017", "Quality labour room", "Delay 3"],
+            ["SUMAN", "2019", "Zero denial of service", "Delays 2 and 3"],
+            ["MDSR", "2017", "Review every maternal death", "All three"],
+          ],
+        },
+        {
+          heading: "Levels of emergency obstetric care",
+          columns: ["Level", "Facility", "Functions"],
+          rows: [
+            ["L1", "SHC-AAM", "Normal delivery, AMTSL, refer"],
+            ["BEmOC (L2)", "24x7 PHC", "Seven signal functions"],
+            ["CEmOC (L3)", "FRU", "Seven plus caesarean and transfusion"],
+          ],
+        },
+      ],
+      remember: [
+        "MMR per **1,00,000 live births**; MMRate per women 15-49.",
+        "India MMR **88 (2021-23)**; SDG target below 70.",
+        "**Haemorrhage 38%** is the commonest cause.",
+        "Three delays: **deciding, reaching, receiving**.",
+        "FRU = **caesarean + anaesthesia + blood storage**.",
+        "MgSO4 **4 g IV + 10 g IM**; antidote calcium gluconate.",
+      ],
+    },
     updated: [
       "SRS Special Bulletin 2021-23: MMR 88 per lakh live births (88 also in 2020-22) - replaces 93 (2019-21) as the latest figure",
       "WHO/FIGO/ICM 2025 PPH guideline: calibrated drape, act at 300 mL with abnormal vital signs (or 500 mL), MOTIVE first-response bundle (E-MOTIVE trial)",
@@ -1204,6 +4036,134 @@ const revision: RevisionSet = {
   },
   "preventive-school-health": {
     checked: "2026-10",
+    notes: {
+      sections: [
+        {
+          title: "Definition and key facts",
+          points: [
+            "**School health service** is an economical, powerful way to raise community health.",
+            "School-age children are about **a quarter of India's population**.",
+            "The **School Health Committee (1960, Renuka Ray)** first recommended the service.",
+            "Habits formed at school **last into adult life**.",
+          ],
+        },
+        {
+          title: "Classification that matters",
+          points: [
+            "Park's aspects: **appraisal, remedial care, communicable disease control, healthful environment**.",
+            "Also **nutrition, first aid, mental, dental and eye health**.",
+            "Also **health education, handicapped children and school health records**.",
+            "Problems are classified **by age band**: 5-9, 10-14 and 15-19 years.",
+          ],
+        },
+        {
+          title: "Health problems of school children",
+          points: [
+            "Commonest: **malnutrition, infections, worms, dental caries, eye, ear and skin disease**.",
+            "Anaemia **lowers attention, learning and attendance**.",
+            "**Suicide** is a leading cause of death in adolescents; exam stress is a trigger.",
+            "About **1 in 12 students aged 13-15** use tobacco (GYTS-4).",
+            "Use **BMI-for-age z-scores** in children; never adult BMI cut-offs.",
+            "**Screening without remedial care** is the commonest failure.",
+          ],
+        },
+        {
+          title: "Appraisal and environment",
+          points: [
+            "Examine at **school entry and every 4 years**; teachers do daily morning inspection.",
+            "Appraise **teachers too**; a teacher with open TB can infect a class.",
+            "Refer vision worse than **6/9** in either eye.",
+            "Classroom: **no more than 40 students**, at least 10 sq ft each.",
+            "Windows at least **25% of floor area**; light from the **left**.",
+            "**1 urinal per 60 and 1 latrine per 100**; separate girls' toilets.",
+            "**COTPA Section 6** bans tobacco sale within 100 yards of schools.",
+          ],
+        },
+        {
+          title: "Nutrition",
+          points: [
+            "**PM POSHAN (2021)** gives a hot cooked meal in classes 1-8.",
+            "Primary: **450 kcal and 12 g protein**; upper primary **700 kcal and 20 g protein**.",
+            "A school meal is a **supplement, not a substitute**.",
+            "It should give **one-third of energy and half of protein** needs.",
+            "**FSSAI 2020** restricts junk food on campus and within 50 metres.",
+          ],
+        },
+        {
+          title: "Prevention and programmes",
+          points: [
+            "**RBSK (2013)** screens 0-18 years for the **4Ds**: defects, deficiencies, diseases, developmental delays.",
+            "RBSK covers **32 conditions**; schools once a year, anganwadis twice a year.",
+            "RBSK team: **two AYUSH doctors, an ANM and a pharmacist**; positives go to the **DEIC**.",
+            "**SHWP (2020)**: **two Health and Wellness Ambassadors** per school and **11 themes**.",
+            "**National Deworming Day**: 10 February and 10 August, ages 1-19.",
+            "**RKSK (2014)** runs Adolescent Friendly Health Clinics.",
+          ],
+        },
+        {
+          title: "Treatment - first line",
+          points: [
+            "**Albendazole 400 mg chewed** once (200 mg at 1-2 years), twice a year.",
+            "**Pink IFA** weekly for 5-9 years; **blue IFA** weekly for 10-19 years.",
+            "Give IFA **after a meal**, supervised by the teacher.",
+            "**Hb below 8 g/dL** needs treatment dose and referral, not weekly prophylaxis.",
+            "**Td at 10 and 16 years**; single-dose HPV for girls aged 14.",
+          ],
+        },
+        {
+          title: "Referral and follow-up",
+          points: [
+            "Keep a **referral tracking register** and close the loop for every referred child.",
+            "Obese child: measure BP, look for **acanthosis nigricans**.",
+            "Advise **60 minutes of activity daily** and under 2 hours of recreational screen time.",
+            "Suicidal talk or self-harm marks: **same-day mental health referral**.",
+            "Vomiting cluster after the school meal: **stop the meal and notify**.",
+            "Signs of abuse: **mandatory POCSO report**.",
+          ],
+        },
+      ],
+      tables: [
+        {
+          heading: "Drugs and vaccines in school",
+          columns: ["Drug", "Dose and route", "Duration", "Key side effects / cautions"],
+          rows: [
+            ["Albendazole", "400 mg chewed (200 mg at 1-2 years)", "10 February and 10 August", "Skip if the child is sick"],
+            ["Pink IFA", "45 mg iron + 400 mcg folic acid oral", "Weekly, 5-9 years", "Nausea, black stools"],
+            ["Blue IFA", "60 mg iron + 500 mcg folic acid oral", "Weekly, 10-19 years", "Take after a meal"],
+            ["Td vaccine", "0.5 mL IM deltoid", "At 10 and 16 years", "Local pain, fever"],
+            ["HPV vaccine (quadrivalent)", "0.5 mL IM deltoid", "Single dose, girls aged 14", "Syncope; observe 30 minutes"],
+          ],
+        },
+        {
+          heading: "Problems by age band",
+          columns: ["Age band", "Main problems", "School action"],
+          rows: [
+            ["5-9 years", "Worms, anaemia, caries, scabies", "Deworming, pink IFA, screening"],
+            ["10-14 years", "Refractive error, ADHD, learning disability", "Blue IFA, Snellen screen"],
+            ["15-19 years", "Obesity, depression, substance use", "SHWP sessions, counselling, AFHC"],
+          ],
+        },
+        {
+          heading: "School health components",
+          columns: ["Component", "Who delivers", "Frequency"],
+          rows: [
+            ["RBSK screening", "Mobile health team", "Once a year"],
+            ["Weekly IFA", "Teacher", "Weekly"],
+            ["Deworming", "Teacher with ANM", "Twice a year"],
+            ["SHWP sessions", "Two ambassadors", "Weekly"],
+            ["PM POSHAN", "Cook-cum-helpers", "Every school day"],
+          ],
+        },
+      ],
+      remember: [
+        "Classroom: **40 students, 10 sq ft each, light from the left**.",
+        "SHWP: **two ambassadors, 11 themes**.",
+        "RBSK: **4Ds, 32 conditions**.",
+        "**Pink 5-9, blue 10-19**, weekly.",
+        "Deworming on **10 February and 10 August**.",
+        "Measure **referral completion**, not just screening.",
+      ],
+    },
     updated: [
       "NFHS-6 (2023-24): under-five stunting 29.3%, wasting 19.0% - replaces NFHS-5 35.5% and 19.3% (anaemia still NFHS-5)",
       "MoHFW 2026: single-dose quadrivalent HPV vaccine for girls aged 14 nationally from 28 February 2026 - replaces 'planned for 9-14 years'",
@@ -1257,6 +4217,131 @@ const revision: RevisionSet = {
   },
   "preventive-cancer-screening-india": {
     checked: "2026-10",
+    notes: {
+      sections: [
+        {
+          title: "Definition and key facts",
+          points: [
+            "**Screening** searches for unrecognised disease in apparently healthy people; it sorts, never diagnoses.",
+            "India had about **13.9 lakh new cancers in 2020**, projected 15.7 lakh in 2025.",
+            "Men: **lung and mouth** lead; women: **breast, then cervix**.",
+            "**Tobacco-related cancers** form about 27% of the burden.",
+            "Coverage is tiny: only **1.9% of women 30-49** ever had a cervical examination.",
+          ],
+        },
+        {
+          title: "Classification that matters",
+          points: [
+            "**Mass** versus **high-risk (selective)** screening.",
+            "**Opportunistic** (attending for another reason) versus **organised** (call-recall, quality control).",
+            "**Multiphasic** screening applies several tests at one sitting.",
+            "Wilson-Jungner: important problem, latent stage, acceptable test, effective early treatment.",
+          ],
+        },
+        {
+          title: "Natural history and biases",
+          points: [
+            "Screening needs a **detectable pre-clinical phase** where treatment changes outcome.",
+            "**Lead-time bias**: survival looks longer only because diagnosis is earlier.",
+            "**Length-time bias**: slow-growing tumours are over-detected.",
+            "**Overdiagnosis** is the main harm of PSA and mammography.",
+            "Benefit must be proved by **falling mortality**, not survival.",
+            "Persistent **HPV 16 and 18** infection causes CIN and cancer over 10-20 years.",
+          ],
+        },
+        {
+          title: "Indian trial evidence",
+          points: [
+            "**Trivandrum OVE trial** cut oral cancer deaths in tobacco and alcohol users.",
+            "**Mumbai VIA trial** cut cervical cancer mortality about **31%**.",
+            "**Osmanabad trial**: a single HPV test beat cytology and VIA.",
+            "**Mumbai CBE trial** cut breast cancer mortality in women 50 and over.",
+          ],
+        },
+        {
+          title: "Examination",
+          points: [
+            "**Oral visual examination**: good light, remove dentures, inspect all surfaces, palpate the neck.",
+            "**Leukoplakia** is the commonest premalignant lesion; **erythroplakia** has the highest malignant potential.",
+            "**CBE**: inspect in three arm positions, then palpate in a **vertical strip pattern**.",
+            "**VIA**: apply **3-5% acetic acid**; look after 1 minute for an acetowhite area.",
+            "A breast lump needs **triple assessment**: examination, imaging and core biopsy.",
+            "Imaging: **ultrasound under 35, mammography over 35**.",
+          ],
+        },
+        {
+          title: "Treatment - first line",
+          points: [
+            "**Screen-and-treat**: thermal ablation or cryotherapy at the same visit.",
+            "Refer for colposcopy and **LEEP** if the lesion covers over 75% of the zone or enters the canal.",
+            "Never ablate a visible growth; **refer for biopsy**.",
+            "Oral lesion: stop tobacco, then **biopsy** at the district NCD clinic.",
+          ],
+        },
+        {
+          title: "Prevention and programmes",
+          points: [
+            "**NP-NCD** screens all adults **30 and over** at Ayushman Arogya Mandirs.",
+            "Oral, breast and cervical screening **once every 5 years**; women 30-65.",
+            "WHO 2021: **HPV DNA from 30, every 5-10 years**; WLHIV from 25, every 3-5 years.",
+            "**Self-collected HPV samples** raise coverage.",
+            "WHO elimination target **90-70-90 by 2030**; below 4 per 1,00,000 women.",
+            "**Single-dose HPV vaccine** for girls aged 14 since 28 February 2026.",
+            "PSA, mammography, colonoscopy and low-dose CT are **not national screens**.",
+          ],
+        },
+        {
+          title: "Referral and follow-up",
+          points: [
+            "Ask **tobacco and areca nut** use and examine the mouth in every user over 30.",
+            "**Never screen a symptomatic woman**; postcoital bleeding needs colposcopy and biopsy.",
+            "Keep a **practice register** with recall, and track positives to treatment start.",
+            "Counsel about **false positives and overdiagnosis**; consent before PSA.",
+            "Track **coverage, VIA positivity (5-10%), stage at diagnosis and mortality**.",
+          ],
+        },
+      ],
+      tables: [
+        {
+          heading: "NP-NCD cancer screening",
+          columns: ["Cancer", "Test", "Who and interval", "Next step if positive"],
+          rows: [
+            ["Oral", "Oral visual examination", "All 30+, every 5 years", "Stop tobacco; biopsy"],
+            ["Breast", "Clinical breast examination", "Women 30-65, every 5 years", "Triple assessment"],
+            ["Cervix", "VIA with 3-5% acetic acid", "Women 30-65, every 5 years", "Thermal ablation or colposcopy"],
+            ["Cervix (HPV)", "HPV DNA, clinician or self-sample", "30-65 every 5-10 years", "VIA triage, then treat"],
+          ],
+        },
+        {
+          heading: "Biases in cancer screening",
+          columns: ["Bias", "What happens", "Remedy"],
+          rows: [
+            ["Lead-time", "Survival seems longer", "Use mortality"],
+            ["Length-time", "Slow tumours over-represented", "Randomised trials"],
+            ["Overdiagnosis", "Harmless cancers treated", "Restrict ages, shared decisions"],
+            ["Selection", "Healthy volunteers attend", "Compare randomised arms"],
+          ],
+        },
+        {
+          heading: "Screens not offered nationally in India",
+          columns: ["Cancer", "Test (USPSTF)", "Why not national"],
+          rows: [
+            ["Breast", "Mammography", "Cost, dense breasts, few machines"],
+            ["Colorectal", "FIT or colonoscopy 45-75", "Not a national programme"],
+            ["Prostate", "PSA, shared decision 55-69", "Overdiagnosis"],
+            ["Lung", "Low-dose CT 50-80, 20 pack-years", "TB nodules give false positives"],
+          ],
+        },
+      ],
+      remember: [
+        "NP-NCD: **30+, oral, breast, cervix, every 5 years**.",
+        "**Erythroplakia** most malignant; leukoplakia commonest.",
+        "Prove benefit by **mortality, never survival**.",
+        "HPV DNA **from 30, every 5-10 years**.",
+        "WHO **90-70-90** by 2030.",
+        "**Never screen the symptomatic.**",
+      ],
+    },
     updated: [
       "MoHFW 2026: free single-dose quadrivalent HPV vaccination (Gardasil-4) for girls aged 14 launched 28 February 2026 - replaces 'girls 9-14, Cervavac being introduced'",
     ],
@@ -1319,6 +4404,132 @@ const revision: RevisionSet = {
   },
   "preventive-travel-medicine": {
     checked: "2026-10",
+    notes: {
+      sections: [
+        {
+          title: "Definition and key facts",
+          points: [
+            "**Travel medicine** prevents and manages health problems of travellers by risk assessment.",
+            "See the traveller ideally **4-8 weeks before departure**.",
+            "**Road injuries and drowning**, not infections, kill most travellers.",
+            "**VFR travellers** carry the highest malaria and typhoid risk.",
+          ],
+        },
+        {
+          title: "Classification that matters",
+          points: [
+            "Vaccines are **routine, required or recommended**.",
+            "**Required**: yellow fever, polio, and meningococcal ACWY for Hajj and Umrah.",
+            "**Recommended**: hepatitis A, typhoid, rabies, JE and cholera.",
+            "Malaria prevention is **ABCD**: Awareness, Bite avoidance, Chemoprophylaxis, Diagnosis.",
+          ],
+        },
+        {
+          title: "History in the OPD",
+          points: [
+            "**Traveller profile**: age, pregnancy, chronic disease, immunosuppression, medicines, allergies.",
+            "**Trip profile**: itinerary, season, duration, urban or rural, activities.",
+            "Flights over **4 hours** raise DVT risk.",
+            "Altitude above **2500 m** risks AMS, HACE and HAPE.",
+            "Traveller's diarrhoea is mostly **enterotoxigenic E. coli**.",
+          ],
+        },
+        {
+          title: "Vaccines and advice",
+          points: [
+            "**Yellow fever**: one dose, lifelong, valid from **10 days after vaccination**.",
+            "India **quarantines up to 6 days** arrivals from endemic areas without a certificate.",
+            "Polio: travellers from affected countries need a dose **4 weeks to 12 months** before leaving.",
+            "Meningococcal ACWY at least **10 days before** arriving for Hajj.",
+            "Rabies pre-exposure: **days 0 and 7**.",
+            "Bite avoidance: **DEET 20-50%**, permethrin clothing and treated nets.",
+            "Food rule: **boil it, cook it, peel it or forget it**.",
+          ],
+        },
+        {
+          title: "Treatment - first line",
+          points: [
+            "**Atovaquone-proguanil** daily: start 1-2 days before, stop **7 days after**.",
+            "**Doxycycline 100 mg** daily: start 1-2 days before, stop **4 weeks after**.",
+            "**Mefloquine 250 mg weekly**: start 2-3 weeks before; choice if a pregnant woman must travel.",
+            "Never use **chloroquine** for sub-Saharan Africa.",
+            "Diarrhoea: ORS first; **standby azithromycin** for moderate-severe or bloody diarrhoea.",
+          ],
+        },
+        {
+          title: "Treatment - next steps",
+          points: [
+            "**Acetazolamide 125 mg twice daily** from the day before ascent prevents AMS.",
+            "HACE: **descend**, oxygen and **dexamethasone 8 mg then 4 mg 6-hourly**.",
+            "HAPE: descend, oxygen and **nifedipine SR 30 mg twice daily**.",
+            "High-risk DVT: **compression stockings or one LMWH dose** before the flight.",
+            "Bite abroad: wash **15 minutes** and start PEP the same day.",
+          ],
+        },
+        {
+          title: "Special groups",
+          points: [
+            "Carry **twice the medicine supply** with a doctor's letter.",
+            "**Insulin in cabin baggage**; eastward reduce basal, westward may need extra.",
+            "**SpO2 below 92%** at rest needs fitness-to-fly assessment.",
+            "Pregnancy: avoid malaria and Zika areas; flying usually allowed to **36 weeks**.",
+            "Students: MMR, meningococcal ACWY, HPV; **TB chest X-ray** for UK, Canada, Australia visas.",
+          ],
+        },
+        {
+          title: "Referral and follow-up",
+          points: [
+            "Fever within a year of a malarious area is **malaria until proven otherwise**.",
+            "Need **three negative smears or RDTs** over 24-48 hours to exclude it.",
+            "Fever **over 21 days after return** excludes dengue and VHF, not malaria.",
+            "VHF area plus bleeding within 21 days: **isolate and notify**.",
+            "Eosinophilia after travel suggests **schistosomiasis or strongyloides**.",
+          ],
+        },
+      ],
+      tables: [
+        {
+          heading: "Travel drugs",
+          columns: ["Drug", "Dose and route", "Duration", "Key side effects / cautions"],
+          rows: [
+            ["Atovaquone-proguanil", "250/100 mg oral daily with food", "1-2 days before to 7 days after", "GI upset; avoid severe renal impairment"],
+            ["Doxycycline", "100 mg oral daily", "1-2 days before to 4 weeks after", "Photosensitivity, oesophagitis; not in pregnancy"],
+            ["Mefloquine", "250 mg oral weekly", "2-3 weeks before to 4 weeks after", "Avoid psychiatric illness, epilepsy"],
+            ["Azithromycin (standby)", "1 g single dose, or 500 mg daily", "Once, or 3 days", "Nausea, QT prolongation"],
+            ["Loperamide", "4 mg, then 2 mg per loose stool", "Max 16 mg a day", "Not with fever or blood"],
+            ["Acetazolamide", "125 mg oral twice daily", "Day before ascent onwards", "Paraesthesia; sulfonamide allergy"],
+            ["Dexamethasone (HACE)", "8 mg, then 4 mg 6-hourly", "With descent", "Hyperglycaemia"],
+            ["Nifedipine SR (HAPE)", "30 mg oral twice daily", "With descent", "Hypotension"],
+          ],
+        },
+        {
+          heading: "Travel vaccines",
+          columns: ["Category", "Vaccines", "Why"],
+          rows: [
+            ["Routine", "MMR, Td, varicella, hepatitis B, influenza", "Update adult immunisation"],
+            ["Required", "Yellow fever, polio, meningococcal ACWY", "Legal entry requirement"],
+            ["Recommended", "Hepatitis A, typhoid, rabies, JE, cholera", "Destination and activity risk"],
+          ],
+        },
+        {
+          heading: "Fever after return",
+          columns: ["Timing after return", "Still possible", "Excluded"],
+          rows: [
+            ["Within 21 days", "All, including dengue and VHF", "None"],
+            ["Over 21 days", "Malaria, typhoid, hepatitis, TB, amoebic abscess", "Dengue, chikungunya, rickettsia, VHF"],
+            ["Up to 1 year", "Malaria", "Treat as malaria until excluded"],
+          ],
+        },
+      ],
+      remember: [
+        "Yellow fever: **one dose, lifelong, valid after 10 days**.",
+        "Malaria **ABCD**.",
+        "After leaving: **A-P 7 days; doxy and mefloquine 4 weeks**.",
+        "Mefloquine if a **pregnant woman must travel**.",
+        "**Insulin in the cabin.**",
+        "Road accidents kill **more travellers than infections**.",
+      ],
+    },
     master: {
       heading: "Master revision table - Travel medicine: the pre-travel consultation",
       columns: ["Aspect", "High-yield points"],
@@ -1368,6 +4579,137 @@ const revision: RevisionSet = {
   },
   "preventive-air-pollution-environmental-health": {
     checked: "2026-10",
+    notes: {
+      sections: [
+        {
+          title: "Definition and key facts",
+          points: [
+            "**Air pollution**: substances in the air at concentrations harmful to man or environment.",
+            "It caused about **1.67 million Indian deaths in 2019**, 17.8% of all deaths.",
+            "**PM2.5** reaches the alveoli and blood and best predicts harm.",
+            "Outdoor air pollution and particulate matter are **IARC Group 1 carcinogens**.",
+            "Only **58.6% of households** used clean cooking fuel (NFHS-5).",
+          ],
+        },
+        {
+          title: "Classification that matters",
+          points: [
+            "**Ambient (outdoor)** versus **household (indoor)** pollution.",
+            "**Primary pollutants** are emitted directly: PM, SO2, NOx, CO.",
+            "**Secondary pollutants** form in air: ozone and secondary aerosols.",
+            "**PM10** lodges in upper airways; **PM2.5** reaches the alveoli.",
+            "Indian AQI has **six categories** from up to **eight pollutants**; the worst sub-index sets it.",
+          ],
+        },
+        {
+          title: "How it happens (pathophysiology)",
+          points: [
+            "Deposited PM2.5 causes **oxidative stress** and airway inflammation.",
+            "Inflammation spreads systemically and injures the **endothelium**.",
+            "Autonomic imbalance and a **prothrombotic state** follow.",
+            "So one exposure links to **asthma, MI, stroke and diabetes**.",
+            "**CO** binds haemoglobin 200-250 times more avidly than oxygen.",
+          ],
+        },
+        {
+          title: "Sources and health effects",
+          points: [
+            "Urban: **vehicles, road dust, industry, power plants** and waste burning.",
+            "Rural: **chulha smoke**, crop residue burning and brick kilns.",
+            "North India smog: **stubble burning plus winter inversion** in October-November.",
+            "**Biomass COPD** occurs in never-smoking rural women.",
+            "Pregnancy: **low birth weight, preterm birth and stillbirth**.",
+            "Noise causes a **4 kHz notch**, sleep disturbance and hypertension.",
+          ],
+        },
+        {
+          title: "Standards and control",
+          points: [
+            "WHO 2021 PM2.5: **5 annual, 15 daily** microgram/m3.",
+            "India NAAQS 2009 PM2.5: **40 annual, 60 daily** microgram/m3.",
+            "Legal base: **Air Act 1981** and Environment Protection Act 1986.",
+            "Control: **containment, replacement, dilution and legislation**.",
+            "A fitted **N95** filters most PM2.5; cloth masks give little protection.",
+            "Occupational noise action level: **85 dB(A) over 8 hours**.",
+          ],
+        },
+        {
+          title: "Treatment - first line",
+          points: [
+            "Optimise asthma and COPD **before the October-January smog season**.",
+            "Give a written action plan and **influenza and pneumococcal vaccines**.",
+            "At AQI very poor, **step up the asthma controller** and avoid outdoor activity.",
+            "CO poisoning: remove from source and give **100% oxygen**.",
+            "Refer severe or pregnant CO cases for **hyperbaric oxygen**.",
+          ],
+        },
+        {
+          title: "Prevention and programmes",
+          points: [
+            "**NCAP (2019)**: 131 non-attainment cities; target **40% PM10 cut by 2025-26**.",
+            "**PMUY (2016)** gave over 10 crore LPG connections to poor women.",
+            "**GRAP** escalates Delhi-NCR measures by AQI stage, enforced by CAQM.",
+            "**BS-VI** fuel and vehicles from April 2020.",
+            "**NPCCHH** runs air-pollution illness surveillance in sentinel hospitals.",
+            "Noise Rules 2000: residential **55 day, 45 night**; silence zone 50 and 40.",
+          ],
+        },
+        {
+          title: "Referral and follow-up",
+          points: [
+            "Take an **exposure history**: cooking fuel, ventilation, occupation, commute.",
+            "Do **spirometry** in non-smoking rural women with chronic cough.",
+            "Counsel **exclusive LPG use**; keep infants away from the chulha.",
+            "SpO2 below 92% on a high-AQI day: **treat and refer**.",
+            "Family with headache and vomiting near an angithi: **suspect CO poisoning**.",
+          ],
+        },
+      ],
+      tables: [
+        {
+          heading: "Treatment in pollution-related illness",
+          columns: ["Drug", "Dose and route", "Duration", "Key side effects / cautions"],
+          rows: [
+            ["Oxygen 100% (CO poisoning)", "Non-rebreather mask", "Until symptom-free", "Hyperbaric if severe or pregnant"],
+            ["Reliever inhaler", "As per action plan", "On bad-AQI days", "Keep supply ready"],
+            ["Asthma controller", "Stepped up per action plan", "Through smog season", "Check adherence"],
+            ["Influenza vaccine", "Yearly", "Before smog season", "For asthma and COPD"],
+            ["Pneumococcal vaccine", "As per adult schedule", "Once", "For chronic lung disease"],
+          ],
+        },
+        {
+          heading: "Indian AQI and advice",
+          columns: ["AQI", "Category", "Advice"],
+          rows: [
+            ["0-50", "Good", "Normal activity"],
+            ["51-100", "Satisfactory", "Sensitive groups watch symptoms"],
+            ["101-200", "Moderately polluted", "Sensitive groups limit outdoor exertion"],
+            ["201-300", "Poor", "Everyone reduces outdoor exercise"],
+            ["301-400", "Very poor", "Avoid outdoors; N95 if outside"],
+            ["401-500", "Severe", "Stay indoors; GRAP emergency"],
+          ],
+        },
+        {
+          heading: "WHO 2021 versus Indian NAAQS 2009",
+          columns: ["Pollutant", "WHO 2021", "India NAAQS"],
+          rows: [
+            ["PM2.5 annual", "5", "40"],
+            ["PM2.5 24-hour", "15", "60"],
+            ["PM10 annual", "15", "60"],
+            ["PM10 24-hour", "45", "100"],
+            ["NO2 annual", "10", "40"],
+          ],
+        },
+      ],
+      remember: [
+        "**PM2.5** matters most: alveoli and blood.",
+        "**1.67 million deaths** in India in 2019.",
+        "PM2.5: WHO **5 and 15**; India **40 and 60**.",
+        "AQI: **six categories, eight pollutants**.",
+        "**Biomass COPD** in non-smoking women is missed.",
+        "Noise: residential **55 day, 45 night**.",
+      ],
+    },
     updated: [
       "GINA 2026: tag updated for pre-smog-season asthma optimisation (current asthma guideline)",
     ],
@@ -1421,6 +4763,140 @@ const revision: RevisionSet = {
   },
   "preventive-demography-family-planning": {
     checked: "2026-10",
+    notes: {
+      sections: [
+        {
+          title: "Definition and key facts",
+          points: [
+            "**Demography** studies population size, composition and distribution.",
+            "Population changes through **fertility, mortality and migration**.",
+            "India became the **most populous country in 2023**.",
+            "TFR **2.0 (NFHS-6)** and **1.9 (SRS 2023)**: below replacement.",
+            "India launched the **world's first family planning programme in 1952**.",
+          ],
+        },
+        {
+          title: "Classification that matters",
+          points: [
+            "Demographic cycle: **high stationary, early expanding, late expanding, low stationary, declining**.",
+            "India is in **stage 3, late expanding**.",
+            "**1921** is the year of the great divide.",
+            "**Spacing methods**: barrier, hormonal, Chhaya, IUCD, natural and LAM.",
+            "**Terminal methods**: tubectomy and vasectomy.",
+          ],
+        },
+        {
+          title: "Key numbers and indicators",
+          points: [
+            "Census 2011: **121.09 crore**, decadal growth 17.7%, literacy 74.04%.",
+            "SRS 2023: **CBR 18.4, CDR 6.4**; life expectancy 70.0 years.",
+            "**TFR** is the sum of age-specific fertility rates.",
+            "**NRR 1 = replacement**, about TFR 2.1 and **CPR above 60%**.",
+            "**Pearl index**: failures per 100 woman-years.",
+            "**Population momentum** keeps numbers rising; India peaks around 2060.",
+            "Demographic dividend window lasts to the **mid-2050s**.",
+          ],
+        },
+        {
+          title: "Policy and programme",
+          points: [
+            "Renamed **Family Welfare Programme in 1977**; target-free approach in **1996**.",
+            "**NPP 2000**: TFR to replacement by 2010; **stable population by 2045**.",
+            "**Eligible couple**: wife aged **15-45**; 150-180 per 1000 population.",
+            "Counsel with **GATHER**; choose by **WHO MEC** categories 1-4.",
+            "Camps were replaced by fixed-day services after **Devika Biswas (2016)**.",
+            "**Mission Parivar Vikas (2016)**: 146 districts in 7 states with TFR 3 or more.",
+          ],
+        },
+        {
+          title: "Treatment - first line",
+          points: [
+            "**Mala-N**: one daily for 21 days, then 7 iron tablets; start on day 1-5.",
+            "Missed 3 or more pills: take one, **use condoms for 7 days**.",
+            "**Chhaya**: twice weekly for 3 months, then weekly; safe in breastfeeding.",
+            "**Antara (DMPA 150 mg)** deep IM every 3 months; fertility returns slowly.",
+            "Progestin-only pill: daily **within 3 hours** of the same time.",
+            "**Cu-T 380A** lasts 10 years; **Cu 375** lasts 5 years.",
+          ],
+        },
+        {
+          title: "Treatment - next steps",
+          points: [
+            "**PPIUCD** within 10 minutes of placenta or within 48 hours.",
+            "Emergency: **levonorgestrel 1.5 mg within 72 hours**, or Cu-IUD within 5 days.",
+            "**LAM** protects up to 6 months if exclusively breastfeeding and amenorrhoeic.",
+            "After **vasectomy**, use condoms until semen shows azoospermia.",
+            "Combined pill is **MEC 4** in migraine with aura, past VTE, smokers over 35.",
+          ],
+        },
+        {
+          title: "Complications and red flags",
+          points: [
+            "Fever or severe pain after sterilisation: **peritonitis or bowel injury**.",
+            "Missed period after tubectomy: **exclude ectopic pregnancy**.",
+            "Pain or heavy bleeding with IUCD: **expulsion, perforation or PID**.",
+            "Leg swelling or chest pain on the pill: **thrombosis**.",
+            "Indemnity: **Rs 4 lakh** for death within 7 days; Rs 60,000 for failure.",
+          ],
+        },
+        {
+          title: "Referral and follow-up",
+          points: [
+            "Ask **fertility intention** at every contact; keep an eligible couple list.",
+            "Offer **postpartum contraception before discharge**.",
+            "**Promote male participation** and non-scalpel vasectomy.",
+            "Follow up continuation at **1 and 3 months**.",
+            "Unmet need **9.4%**; female sterilisation **37.9% versus male 0.3%** (NFHS-5).",
+            "NFHS-6: modern method use **fell to 52.7%**.",
+          ],
+        },
+      ],
+      tables: [
+        {
+          heading: "Contraceptives",
+          columns: ["Drug", "Dose and route", "Duration", "Key side effects / cautions"],
+          rows: [
+            ["Combined pill (Mala-N)", "1 tablet oral daily for 21 days, then 7 iron", "Every cycle", "Nausea, spotting; rare VTE"],
+            ["Progestin-only pill", "1 tablet oral daily, no break", "Continuous", "Irregular bleeding"],
+            ["Chhaya (centchroman 30 mg)", "Oral twice weekly, then weekly", "3 months, then ongoing", "Delayed periods"],
+            ["Antara (DMPA 150 mg)", "Deep IM", "Every 3 months, 4-week grace", "Amenorrhoea, weight gain, delayed fertility"],
+            ["Levonorgestrel ECP", "1.5 mg oral single dose", "Within 72 hours", "Nausea; not a regular method"],
+            ["Cu-T 380A IUCD", "Inserted once", "10 years (Cu 375: 5)", "Heavier periods, expulsion"],
+          ],
+        },
+        {
+          heading: "Demographic cycle",
+          columns: ["Stage", "Birth rate", "Death rate", "Example"],
+          rows: [
+            ["1 High stationary", "High", "High", "India before 1921"],
+            ["2 Early expanding", "High", "Falling", "Many African countries"],
+            ["3 Late expanding", "Falling", "Falls further", "India now"],
+            ["4 Low stationary", "Low", "Low", "Europe"],
+            ["5 Declining", "Below death rate", "Low", "Japan, Germany"],
+          ],
+        },
+        {
+          heading: "Fertility indicators",
+          columns: ["Indicator", "Meaning"],
+          rows: [
+            ["CBR", "Live births per 1000 mid-year population"],
+            ["GFR", "Live births per 1000 women 15-44 or 15-49"],
+            ["TFR", "Children per woman over reproductive life"],
+            ["GRR", "Daughters per woman, ignoring mortality"],
+            ["NRR", "Daughters per newborn girl; 1 = replacement"],
+            ["CPR", "Per cent of eligible couples protected"],
+          ],
+        },
+      ],
+      remember: [
+        "India is **late expanding**; 1921 the great divide.",
+        "**NRR 1 = TFR 2.1 = CPR above 60%.**",
+        "Eligible couple: wife **15-45**.",
+        "NPP 2000: **stable population by 2045**.",
+        "**Chhaya twice weekly then weekly; Antara every 3 months.**",
+        "Counsel with **GATHER**.",
+      ],
+    },
     updated: [
       "SRS 2023: TFR 1.9 (below replacement), CBR 18.4, CDR 6.4 - replaces SRS 2021 (TFR 2.0, CBR 19.3, CDR 7.5)",
       "NFHS-6 (2023-24): TFR 2.0, any method 69.1%, modern methods fell to 52.7%, traditional 16.4%, female sterilisation 36.5%",
