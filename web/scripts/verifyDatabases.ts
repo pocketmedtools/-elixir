@@ -1694,12 +1694,11 @@ section("Pediatric DB integrity");
   // 2 cm (1) + length 1–2 cm (2) + station −1 (2) + soft (2) + mid (1) = 8
   if (B.bishopTotal(all([1, 2, 2, 2, 1])) !== 8) fail("Bishop worked example should be 8");
   for (let t = 0; t <= 13; t++) {
-    const p = B.bishopPlan(t, false);
-    const want = t <= 6 ? "unfavourable" : t === 7 ? "intermediate" : "favourable";
-    if (p.band !== want || !p.steps.length) fail(`Bishop ${t}: band ${p.band}, want ${want}`);
+    const p = B.bishopPlan(t);
+    if (p.band !== (t <= 6 ? "unfavourable" : "favourable") || !p.action) fail(`Bishop ${t}: band ${p.band}`);
   }
-  if (!B.bishopPlan(4, true).steps[0].includes("balloon") || !B.bishopPlan(4, true).steps[0].includes("avoid misoprostol")) fail("previous CS must steer to balloon, no misoprostol");
-  console.log("modified Bishop: 0–13 range, worked example, bands (≤6 / 7 / ≥8), previous-CS advice OK");
+  if (!B.bishopPlan(4).note.includes("balloon") || !B.bishopPlan(4).note.includes("avoid misoprostol")) fail("unfavourable must carry previous-CS advice");
+  console.log("modified Bishop: 0–13 range, worked example, NICE bands (≤6 / >6), previous-CS advice OK");
 }
 
 // ---------- Result ----------
