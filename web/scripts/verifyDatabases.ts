@@ -1684,6 +1684,24 @@ section("Pediatric DB integrity");
   console.log("ANC scan: EFW & UA Doppler match INTERGROWTH tables; Hadlock, MCA-PSV, liquor, Delphi SGA/FGR/LGA, plans, schedule OK");
 }
 
+// ---------- Modified Bishop score ----------
+{
+  console.log("\n=== Modified Bishop suite ===");
+  const B = await import("../src/lib/bishopMath");
+  const all = (i: number[]) => ({ dilation: i[0], length: i[1], station: i[2], consistency: i[3], position: i[4] });
+  if (B.bishopTotal(all([0, 0, 0, 0, 0])) !== 0 || B.bishopTotal(all([3, 3, 3, 2, 2])) !== 13) fail("Bishop range must be 0–13");
+  if (B.bishopTotal({ dilation: 1, length: 1 }) !== null) fail("Bishop must wait for all five items");
+  // 2 cm (1) + length 1–2 cm (2) + station −1 (2) + soft (2) + mid (1) = 8
+  if (B.bishopTotal(all([1, 2, 2, 2, 1])) !== 8) fail("Bishop worked example should be 8");
+  for (let t = 0; t <= 13; t++) {
+    const p = B.bishopPlan(t, false);
+    const want = t <= 6 ? "unfavourable" : t === 7 ? "intermediate" : "favourable";
+    if (p.band !== want || !p.steps.length) fail(`Bishop ${t}: band ${p.band}, want ${want}`);
+  }
+  if (!B.bishopPlan(4, true).steps[0].includes("balloon") || !B.bishopPlan(4, true).steps[0].includes("avoid misoprostol")) fail("previous CS must steer to balloon, no misoprostol");
+  console.log("modified Bishop: 0–13 range, worked example, bands (≤6 / 7 / ≥8), previous-CS advice OK");
+}
+
 // ---------- Result ----------
 console.log("\n========== VERIFY RESULT ==========");
 if (failures.length) {
