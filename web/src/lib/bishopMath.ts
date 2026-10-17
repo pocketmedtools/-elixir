@@ -13,6 +13,7 @@
  *    2 h or vaginal every 6 h) or balloon catheter for an unripe cervix.
  *  - Previous caesarean: avoid misoprostol (uterine rupture); a balloon
  *    catheter is preferred for ripening (NICE NG207, ACOG PB 205).
+ *  - Dilatation "closed" means < 1 cm (Calder's table: 0 cm).
  */
 
 export interface BishopItem {
@@ -26,7 +27,7 @@ export const BISHOP_ITEMS: BishopItem[] = [
     id: "dilation",
     label: "Dilatation (cm)",
     options: [
-      { label: "Closed / < 1", points: 0 },
+      { label: "Closed", points: 0 },
       { label: "1–2", points: 1 },
       { label: "3–4", points: 2 },
       { label: "≥ 5", points: 3 },
@@ -34,7 +35,7 @@ export const BISHOP_ITEMS: BishopItem[] = [
   },
   {
     id: "length",
-    label: "Cervical length (cm)",
+    label: "Length (cm)",
     options: [
       { label: "> 4", points: 0 },
       { label: "2–4", points: 1 },
@@ -44,7 +45,7 @@ export const BISHOP_ITEMS: BishopItem[] = [
   },
   {
     id: "station",
-    label: "Station (vs ischial spines)",
+    label: "Station",
     options: [
       { label: "−3", points: 0 },
       { label: "−2", points: 1 },
@@ -86,45 +87,26 @@ export function bishopTotal(a: BishopAnswers): number | null {
 }
 
 export interface BishopPlan {
-  band: "unfavourable" | "intermediate" | "favourable";
+  band: "unfavourable" | "favourable";
   title: string;
-  steps: string[];
+  action: string;
+  note: string;
 }
 
-export function bishopPlan(total: number, prevCaesarean: boolean): BishopPlan {
+/** NICE NG207 (2021): Bishop score ≤ 6 unfavourable, > 6 favourable. */
+export function bishopPlan(total: number): BishopPlan {
   if (total <= 6) {
     return {
       band: "unfavourable",
-      title: "Unfavourable cervix (≤ 6) — cervical ripening first",
-      steps: prevCaesarean
-        ? [
-            "Previous caesarean: balloon catheter (Foley / double balloon) preferred; avoid misoprostol (NICE NG207, ACOG).",
-            "Dinoprostone only with senior input and continuous CTG; discuss risk of uterine rupture.",
-            "Reassess Bishop score after ripening, then amniotomy + oxytocin when favourable.",
-          ]
-        : [
-            "Ripening options: vaginal dinoprostone (gel or insert), oral misoprostol 25 µg every 2 h, or balloon catheter (NICE NG207; WHO 2022).",
-            "CTG before and after prostaglandin; review if hyperstimulation.",
-            "Reassess Bishop score after ripening, then amniotomy + oxytocin when favourable.",
-          ],
-    };
-  }
-  if (total <= 7) {
-    return {
-      band: "intermediate",
-      title: "Favourable by NICE (> 6)",
-      steps: [
-        "Amniotomy and IV oxytocin (NICE NG207).",
-        "Score ≥ 8 gives the best chance of vaginal birth (ACOG); consider ripening if amniotomy is not feasible.",
-      ],
+      title: "Unfavourable cervix",
+      action: "Cervical ripening: vaginal dinoprostone, oral misoprostol 25 µg 2-hourly, or balloon catheter; reassess, then amniotomy + oxytocin.",
+      note: "Previous caesarean: use a balloon catheter; avoid misoprostol.",
     };
   }
   return {
     band: "favourable",
-    title: "Favourable cervix (≥ 8)",
-    steps: [
-      "Amniotomy and IV oxytocin; likelihood of vaginal birth similar to spontaneous labour (ACOG).",
-      prevCaesarean ? "Previous caesarean: oxytocin with caution and continuous CTG." : "Continuous assessment of progress; CTG as indicated.",
-    ],
+    title: "Favourable cervix",
+    action: "Amniotomy and IV oxytocin.",
+    note: total >= 8 ? "Score ≥ 8: chance of vaginal birth similar to spontaneous labour." : "Score 7: favourable by NICE; ≥ 8 is most favourable.",
   };
 }
