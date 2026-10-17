@@ -22,6 +22,7 @@ export const TOOL_SECTIONS: {
     tools: [
       { id: "ob", title: "OB / EDD" },
       { id: "ancScan", title: "ANC Scan (Growth & Doppler)" },
+      { id: "bishop", title: "Modified Bishop Score" },
     ],
   },
   {

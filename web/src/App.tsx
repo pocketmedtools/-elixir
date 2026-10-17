@@ -13,6 +13,7 @@ import PediatricDosageCalculator from "./components/PediatricDosageCalculator";
 import HolCalculator from "./components/HolCalculator";
 import TimerTool from "./components/TimerTool";
 import AncScanTool from "./components/AncScanTool";
+import BishopScore from "./components/BishopScore";
 import TimerFloat from "./components/TimerFloat";
 import NewbornWeightLoss from "./components/NewbornWeightLoss";
 import ObCalculator from "./components/ObCalculator";
@@ -23,6 +24,13 @@ import { getVersion, subscribe } from "./lib/accounts";
 import { isNativeApp } from "./lib/liveUpdate";
 
 type AppTab = MenuTarget;
+
+// Recently used tools (most recent first), keeping only tools that still exist.
+const RECENT_CODEC: Codec<AppTab[]> = {
+  save: (list) => list,
+  load: (raw) =>
+    Array.isArray(raw) ? (raw.filter((t) => typeof t === "string" && t in TOOL_HEX) as AppTab[]).slice(0, 4) : undefined,
+};
 
 // Only reopen a tool that still exists in this version.
 const TAB_CODEC: Codec<AppTab> = {
@@ -183,6 +191,13 @@ export default function App() {
       idle: "bg-slate-100 text-slate-800 hover:bg-slate-200",
     },
     {
+      id: "bishop",
+      label: "Bishop Score",
+      shortLabel: "Bishop",
+      active: "bg-rose-900 text-white shadow-sm",
+      idle: "bg-slate-100 text-slate-800 hover:bg-slate-200",
+    },
+    {
       id: "timer",
       label: "Timer",
       shortLabel: "Timer",
@@ -219,6 +234,16 @@ export default function App() {
     },
   ];
 
+  // Top bar shows only the 4 most recently used tools.
+  const [recent, setRecent] = usePersist<AppTab[]>("app", "recent", [], RECENT_CODEC);
+  useEffect(() => {
+    if (tab === "home" || tab === "saved" || tab === "report") return;
+    setRecent((prev) => (prev[0] === tab ? prev : [tab, ...prev.filter((x) => x !== tab)].slice(0, 4)));
+  }, [tab, setRecent]);
+  const recentTabs = recent
+    .map((id) => tabs.find((t) => t.id === id))
+    .filter((t): t is (typeof tabs)[number] => !!t);
+
   // Quick logo pop on open, then straight to the last tool.
   const [splash, setSplash] = useState(true);
   useEffect(() => {
@@ -237,7 +262,7 @@ export default function App() {
       <header className="app-header border-b border-[var(--line)]" style={{ background: "var(--card)" }}>
         <div className="mx-auto flex max-w-7xl flex-wrap items-center gap-x-3 gap-y-2 px-3 py-2.5 md:px-6">
           <div className="flex shrink-0 items-center gap-2">
-            {tab !== "home" ? (
+            {tab !== "home" && (
               <button
                 type="button"
                 aria-label="Back to Home"
@@ -246,16 +271,7 @@ export default function App() {
               >
                 ←
               </button>
-            ) : native ? (
-              <button
-                type="button"
-                aria-label="Close app"
-                onClick={exitApp}
-                className="rounded-lg border-2 border-slate-300 bg-white px-2.5 py-1 text-sm font-black leading-none text-slate-800"
-              >
-                ✕ Close
-              </button>
-            ) : null}
+            )}
             <button
               type="button"
               aria-label="Open menu"
@@ -276,24 +292,36 @@ export default function App() {
               />
             </button>
           </div>
-          <nav className="flex w-full flex-wrap gap-1.5 lg:ml-auto lg:w-auto lg:justify-end" aria-label="Main navigation">
-            {tabs.map((t) => (
-              <button
-                key={t.id}
-                type="button"
-                onClick={() => setTab(t.id)}
-                className="rounded-lg border px-2.5 py-1.5 text-xs font-semibold transition sm:text-sm"
-                style={
-                  tab === t.id
-                    ? { background: TOOL_HEX[t.id], borderColor: TOOL_HEX[t.id], color: "#ffffff" }
-                    : { background: "var(--card-2)", borderColor: "var(--line)", color: TOOL_HEX[t.id] }
-                }
-              >
-                <span className="hidden sm:inline">{t.label}</span>
-                <span className="sm:hidden">{t.shortLabel}</span>
-              </button>
-            ))}
-          </nav>
+          {native && (
+            <button
+              type="button"
+              aria-label="Close app"
+              onClick={exitApp}
+              className="ml-auto rounded-lg border-2 border-slate-300 bg-white px-2.5 py-1 text-lg font-black leading-none text-slate-800"
+            >
+              ✕
+            </button>
+          )}
+          {recentTabs.length > 0 && (
+            <nav className="flex w-full flex-wrap items-center gap-1.5" aria-label="Recently used tools">
+              {recentTabs.map((t) => (
+                <button
+                  key={t.id}
+                  type="button"
+                  onClick={() => setTab(t.id)}
+                  className="rounded-lg border px-2.5 py-1.5 text-xs font-semibold transition sm:text-sm"
+                  style={
+                    tab === t.id
+                      ? { background: TOOL_HEX[t.id], borderColor: TOOL_HEX[t.id], color: "#ffffff" }
+                      : { background: "var(--card-2)", borderColor: "var(--line)", color: TOOL_HEX[t.id] }
+                  }
+                >
+                  <span className="hidden sm:inline">{t.label}</span>
+                  <span className="sm:hidden">{t.shortLabel}</span>
+                </button>
+              ))}
+            </nav>
+          )}
         </div>
         <div className="brand-ribbon" />
       </header>
@@ -334,6 +362,7 @@ export default function App() {
         {tab === "insulin" && <InsulinTool />}
         {tab === "ob" && <ObCalculator />}
         {tab === "ancScan" && <AncScanTool />}
+        {tab === "bishop" && <BishopScore />}
         {tab === "timer" && <TimerTool />}
         {tab === "report" && <ReportIssue />}
         </Fragment>

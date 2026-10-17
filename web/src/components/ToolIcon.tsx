@@ -15,6 +15,7 @@ import {
   TrendingUp,
   Timer,
   ScanLine,
+  Gauge,
   type LucideIcon,
 } from "lucide-react";
 import type { MenuTarget } from "./SideMenu";
@@ -34,6 +35,7 @@ const ICONS: Record<MenuTarget, LucideIcon> = {
   ob: Baby,
   timer: Timer,
   ancScan: ScanLine,
+  bishop: Gauge,
   saved: Bookmark,
   report: Flag,
 };
@@ -54,6 +56,7 @@ export const TOOL_BG: Record<MenuTarget, string> = {
   ob: "bg-[#700168]",
   timer: "bg-[#132238]",
   ancScan: "bg-[#4b3b8f]",
+  bishop: "bg-[#7a2e52]",
   saved: "bg-[#3a3733]",
   report: "bg-[#7e2f01]",
 };
@@ -74,6 +77,7 @@ export const TOOL_SOFT: Record<MenuTarget, string> = {
   ob: "border-[#e3cda8] bg-[#fcf4e6]",
   timer: "border-[#e3cda8] bg-[#fcf4e6]",
   ancScan: "border-[#e3cda8] bg-[#fcf4e6]",
+  bishop: "border-[#e3cda8] bg-[#fcf4e6]",
   saved: "border-[#e3cda8] bg-[#fcf4e6]",
   report: "border-[#e3cda8] bg-[#fcf4e6]",
 };
@@ -93,6 +97,7 @@ export const TOOL_TEXT: Record<MenuTarget, string> = {
   ob: "text-[#700168]",
   timer: "text-[#132238]",
   ancScan: "text-[#4b3b8f]",
+  bishop: "text-[#7a2e52]",
   saved: "text-[#3a3733]",
   report: "text-[#7e2f01]",
 };
@@ -112,6 +117,7 @@ export const TOOL_HEX: Record<MenuTarget, string> = {
   ob: "#700168",
   timer: "#132238",
   ancScan: "#4b3b8f",
+  bishop: "#7a2e52",
   saved: "#3a3733",
   report: "#7e2f01",
 };
