@@ -6,7 +6,7 @@ import { getTimer, subscribeTimer, timerActions } from "../lib/timerStore";
  * On every other screen: a "Time's up" bar when the timer ends, and a small
  * chip with the time left while it runs (tap to open the timer).
  */
-export default function TimerFloat({ onOpen, hidden }: { onOpen: () => void; hidden: boolean }) {
+export default function TimerFloat({ onOpen, hidden, raised = false }: { onOpen: () => void; hidden: boolean; raised?: boolean }) {
   const st = useSyncExternalStore(subscribeTimer, getTimer);
   const running = st.cd.status === "running";
   const [now, setNow] = useState(() => Date.now());
@@ -31,7 +31,7 @@ export default function TimerFloat({ onOpen, hidden }: { onOpen: () => void; hid
   if (!running) return null;
   return (
     <button type="button" onClick={onOpen} aria-label="Open timer"
-      className="fixed bottom-3 left-3 z-[55] rounded-full bg-[#1f2a44] px-3.5 py-2 text-sm font-black text-white shadow-lg"
+      className={`fixed ${raised ? "bottom-28" : "bottom-3"} left-3 z-[55] rounded-full bg-[#1f2a44] px-3.5 py-2 text-sm font-black text-white shadow-lg`}
       style={{ fontVariantNumeric: "tabular-nums" }}>
       ⏲ {formatCountdown(cdRemaining(st.cd, now))}
     </button>

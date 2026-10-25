@@ -364,7 +364,7 @@ export default function App() {
         <div className="brand-ribbon" />
       </header>
 
-      <TimerFloat hidden={tab === "timer"} onOpen={() => setTab("timer")} />
+      <TimerFloat hidden={tab === "timer"} raised={tab === "notes" || tab === "calc"} onOpen={() => setTab("timer")} />
       <SideMenu open={menuOpen} onClose={() => setMenuOpen(false)} onNavigate={(t) => setTab(t)} />
 
       <main className={`tool-stage tool-${tab} flex-1`}>
