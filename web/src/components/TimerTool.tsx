@@ -11,6 +11,8 @@ const PURPLE = "#7e22ce";
 const INK = "#1c1b19";
 const TICK = "#b9b9bf";
 const CORAL = "#e0464f";
+// Seconds digits: deep teal — pairs with the purple hand without matching it.
+const DIGITS = "#0f6e6a";
 
 const CX = 170;
 const CY = 170;
@@ -73,12 +75,6 @@ function Dial({
           </text>
         );
       })}
-      <text x={CX} y={CY - 42} textAnchor="middle" fontSize={digitsA.length + digitsB.length > 8 ? 22 : 26} fontWeight="800"
-        style={{ fontVariantNumeric: "tabular-nums" }}>
-        <tspan fill={INK}>{digitsA}</tspan>
-        <tspan fill={accent}>{digitsB}</tspan>
-      </text>
-      <text x={CX} y={CY - 24} textAnchor="middle" fontSize="9" fontWeight="800" fill="#6d6b67" letterSpacing="1.5">{label}</text>
       {subHand != null && (
         <g>
           {Array.from({ length: 30 }, (_, i) => {
@@ -102,6 +98,15 @@ function Dial({
       <circle cx={CX} cy={CY} r="8" fill={INK} />
       <circle cx={CX} cy={CY} r="4" fill={accent} />
       <circle cx={CX} cy={CY} r="1.8" fill="#fff" />
+      {/* Time drawn above the hand with a face-coloured halo so the hand never
+          cuts through it; seconds in deep teal, distinct from the purple hand. */}
+      <text x={CX} y={CY - 42} textAnchor="middle" fontSize={digitsA.length + digitsB.length > 8 ? 22 : 26} fontWeight="800"
+        stroke="#f6f6f8" strokeWidth="5" strokeLinejoin="round" paintOrder="stroke" style={{ fontVariantNumeric: "tabular-nums" }}>
+        <tspan fill={INK}>{digitsA}</tspan>
+        <tspan fill={alert ? CORAL : DIGITS}>{digitsB}</tspan>
+      </text>
+      <text x={CX} y={CY - 24} textAnchor="middle" fontSize="9" fontWeight="800" fill="#6d6b67" letterSpacing="1.5"
+        stroke="#f6f6f8" strokeWidth="4" strokeLinejoin="round" paintOrder="stroke">{label}</text>
     </svg>
   );
 }
