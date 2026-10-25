@@ -209,6 +209,7 @@ input, select, textarea { background-color: #fffaf1; color: var(--ink); }
 .tool-timer    { --tool-ink: #7e22ce; }
 .tool-calc     { --tool-ink: #3a3733; }
 .tool-calendar { --tool-ink: #2a7f7f; }
+.tool-notes    { --tool-ink: #1c1c1e; }
 .tool-ancScan  { --tool-ink: #4b3b8f; }
 .tool-bishop   { --tool-ink: #7a2e52; }
 .tool-saved    { --tool-ink: #3a3733; }

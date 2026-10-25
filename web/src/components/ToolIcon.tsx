@@ -18,6 +18,7 @@ import {
   Gauge,
   Calculator,
   CalendarDays,
+  NotebookPen,
   type LucideIcon,
 } from "lucide-react";
 import type { MenuTarget } from "./SideMenu";
@@ -40,6 +41,7 @@ const ICONS: Record<MenuTarget, LucideIcon> = {
   bishop: Gauge,
   calc: Calculator,
   calendar: CalendarDays,
+  notes: NotebookPen,
   saved: Bookmark,
   report: Flag,
 };
@@ -63,6 +65,7 @@ export const TOOL_BG: Record<MenuTarget, string> = {
   bishop: "bg-[#7a2e52]",
   calc: "bg-[#3a3733]",
   calendar: "bg-[#2a7f7f]",
+  notes: "bg-[#1c1c1e]",
   saved: "bg-[#3a3733]",
   report: "bg-[#7e2f01]",
 };
@@ -86,6 +89,7 @@ export const TOOL_SOFT: Record<MenuTarget, string> = {
   bishop: "border-[#e3cda8] bg-[#fcf4e6]",
   calc: "border-[#e3cda8] bg-[#fcf4e6]",
   calendar: "border-[#e3cda8] bg-[#fcf4e6]",
+  notes: "border-[#e3cda8] bg-[#fcf4e6]",
   saved: "border-[#e3cda8] bg-[#fcf4e6]",
   report: "border-[#e3cda8] bg-[#fcf4e6]",
 };
@@ -108,6 +112,7 @@ export const TOOL_TEXT: Record<MenuTarget, string> = {
   bishop: "text-[#7a2e52]",
   calc: "text-[#3a3733]",
   calendar: "text-[#2a7f7f]",
+  notes: "text-[#1c1c1e]",
   saved: "text-[#3a3733]",
   report: "text-[#7e2f01]",
 };
@@ -130,6 +135,7 @@ export const TOOL_HEX: Record<MenuTarget, string> = {
   bishop: "#7a2e52",
   calc: "#3a3733",
   calendar: "#2a7f7f",
+  notes: "#1c1c1e",
   saved: "#3a3733",
   report: "#7e2f01",
 };

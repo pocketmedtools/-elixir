@@ -40,6 +40,7 @@ export const TOOL_SECTIONS: {
       { id: "timer", title: "Timer / Stopwatch" },
       { id: "calc", title: "Calculator" },
       { id: "calendar", title: "Calendar" },
+      { id: "notes", title: "Notes" },
     ],
   },
 ];
