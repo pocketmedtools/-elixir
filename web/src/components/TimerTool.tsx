@@ -35,8 +35,10 @@ function sector(a0: number, a1: number, r: number): string {
 }
 
 function Dial({
-  hand, fill, digitsA, digitsB, label, subHand, alert,
+  hand, fill, digitsA, digitsB, label, subHand, alert, arcs = [],
 }: {
+  /** Sub-timer arcs on the rim (degrees from 12 o'clock). */
+  arcs?: { from: number; to: number; color: string }[];
   hand: number;
   /** Coloured countdown sector (timer only). */
   fill: { from: number; to: number; color: string } | null;
@@ -63,6 +65,17 @@ function Dial({
       {fill && fill.to - fill.from > 0.05 && (
         <path d={sector(fill.from, fill.to, 104)} fill={fill.color} fillOpacity="0.22" stroke={fill.color} strokeOpacity="0.55" strokeWidth="1.5" />
       )}
+      {arcs.map((a, i) => {
+        const span = Math.min(a.to - a.from, 359.5);
+        if (span <= 0.3) {
+          const [x, y] = polar(a.from, 131);
+          return <circle key={i} cx={x} cy={y} r="3" fill={a.color} />;
+        }
+        const [x0, y0] = polar(a.from, 131);
+        const [x1, y1] = polar(a.from + span, 131);
+        return <path key={i} d={`M ${x0.toFixed(2)} ${y0.toFixed(2)} A 131 131 0 ${span > 180 ? 1 : 0} 1 ${x1.toFixed(2)} ${y1.toFixed(2)}`}
+          fill="none" stroke={a.color} strokeWidth="6" strokeLinecap="round" />;
+      })}
       {Array.from({ length: 60 }, (_, i) => {
         const major = i % 5 === 0;
         const [x1, y1] = polar(i * 6, major ? 136 : 140);
@@ -112,6 +125,14 @@ function Dial({
     </svg>
   );
 }
+
+/** One colour per sub-timer (calendar-style palette; never the hand's orange). */
+const SUB_COLORS: [string, string][] = [
+  ["#1f6feb", "#e3edfd"], ["#2a9d8f", "#dcf1ee"], ["#52a447", "#e3f2df"], ["#c99700", "#fbf1d2"],
+  ["#d6589a", "#fbe3ef"], ["#7048e8", "#ebe5fd"], ["#0b7285", "#d9eef2"], ["#c2185b", "#f8dce7"],
+  ["#8d6e63", "#f1e8e4"], ["#495057", "#e7e9ec"],
+];
+const subColor = (i: number) => SUB_COLORS[i % SUB_COLORS.length];
 
 const pad2 = (n: number) => String(n).padStart(2, "0");
 
@@ -175,7 +196,11 @@ export default function TimerTool() {
         fill={alert ? { from: 0, to: 360, color: CORAL } : cd.totalMs > 0 ? { from: elapsedDeg, to: 360, color: urgent ? CORAL : PURPLE } : null}
         digitsA={t.slice(0, t.length - 2)} digitsB={t.slice(-2)}
         label={alert ? "TIME'S UP" : cd.status === "paused" ? "PAUSED" : cd.status === "running" ? "REMAINING" : "SET"}
-        subHand={null} alert={alert} />
+        subHand={null} alert={alert}
+        arcs={cd.totalMs > 0 ? st.segs.map((x, i) => {
+          const deg = (ms: number) => Math.min(360, (ms / cd.totalMs) * 360);
+          return { from: deg(x.start), to: deg(x.end ?? runElapsed(st.run, now)), color: subColor(i)[0] };
+        }) : []} />
     );
   } else {
     const e = swElapsed(sw, now);
@@ -285,13 +310,15 @@ export default function TimerTool() {
                   </div>
                   {open ? (
                     <button type="button" onClick={() => timerActions.subStop()}
-                      className={`${btn} mt-2 flex w-full items-center justify-between bg-[#e8590c] text-white`}>
+                      style={{ background: subColor(st.segs.length - 1)[0] }}
+                      className={`${btn} mt-2 flex w-full items-center justify-between text-white`}>
                       <span>■ Stop sub-timer {st.segs.length}</span>
                       <span className="tabular-nums">{formatDuration(segDuration(open, at))}</span>
                     </button>
                   ) : (
                     <button type="button" disabled={cd.status === "done"} onClick={() => timerActions.subStart()}
-                      className={`${btn} mt-2 w-full border-2 border-[#e8590c] bg-white text-[#c2410c]`}>
+                      style={{ borderColor: subColor(st.segs.length)[0], color: subColor(st.segs.length)[0] }}
+                      className={`${btn} mt-2 w-full border-2 bg-white`}>
                       ▶ Start sub-timer {st.segs.length + 1}
                     </button>
                   )}
@@ -303,13 +330,15 @@ export default function TimerTool() {
                             <th className="py-1 text-left">#</th><th className="text-left">From</th><th className="text-left">To</th><th className="text-right">Duration</th>
                           </tr>
                         </thead>
-                        <tbody className="divide-y divide-slate-200">
+                        <tbody className="divide-y-4 divide-white">
                           {st.segs.map((x, i) => (
-                            <tr key={i} className={x.end == null ? "text-[#c2410c]" : "text-slate-900"}>
-                              <td className="py-1.5 font-bold">{i + 1}</td>
+                            <tr key={i} style={{ background: subColor(i)[1] }} className="text-slate-900">
+                              <td className="py-1.5 pl-2 font-bold">
+                                <span className="inline-flex h-6 w-6 items-center justify-center rounded-full text-xs font-black text-white" style={{ background: subColor(i)[0] }}>{i + 1}</span>
+                              </td>
                               <td className="font-semibold">{formatPosition(x.start)}</td>
                               <td className="font-semibold">{x.end == null ? "running…" : formatPosition(x.end)}</td>
-                              <td className="text-right font-extrabold">{formatDuration(segDuration(x, at))}</td>
+                              <td className="pr-2 text-right font-extrabold" style={{ color: subColor(i)[0] }}>{formatDuration(segDuration(x, at))}</td>
                             </tr>
                           ))}
                         </tbody>
