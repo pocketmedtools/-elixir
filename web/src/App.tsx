@@ -17,6 +17,9 @@ import BishopScore from "./components/BishopScore";
 import CalculatorTool from "./components/CalculatorTool";
 import CalendarTool from "./components/CalendarTool";
 import TimerFloat from "./components/TimerFloat";
+import NotesTool from "./components/NotesTool";
+import ToolHistory from "./components/ToolHistory";
+import { setActiveTool } from "./lib/calcHistory";
 import NewbornWeightLoss from "./components/NewbornWeightLoss";
 import ObCalculator from "./components/ObCalculator";
 import RegimenAnalyzerUI from "./components/RegimenAnalyzerUI";
@@ -45,7 +48,7 @@ export default function App() {
   const [tab, setTab] = usePersist<AppTab>("app", "tab", "home", TAB_CODEC);
   // Bumped by "New patient" to remount the open tool with empty entries.
   const [resetKey, setResetKey] = useState(0);
-  const clearable = !["home", "saved", "report", "timer", "calc", "calendar"].includes(tab);
+  const clearable = !["home", "saved", "report", "timer", "calc", "calendar", "notes"].includes(tab);
   const [menuOpen, setMenuOpen] = useState(false);
   useSyncExternalStore(subscribe, getVersion);
   // No sign-in screen: the app opens straight onto the last calculation.
@@ -214,6 +217,13 @@ export default function App() {
       idle: "bg-slate-100 text-slate-800 hover:bg-slate-200",
     },
     {
+      id: "notes",
+      label: "Notes",
+      shortLabel: "Notes",
+      active: "bg-slate-900 text-white shadow-sm",
+      idle: "bg-slate-100 text-slate-800 hover:bg-slate-200",
+    },
+    {
       id: "timer",
       label: "Timer",
       shortLabel: "Timer",
@@ -250,6 +260,7 @@ export default function App() {
     },
   ];
 
+  setActiveTool(tab);
   // Top bar shows only the 4 most recently used tools.
   const [recent, setRecent] = usePersist<AppTab[]>("app", "recent", [], RECENT_CODEC);
   useEffect(() => {
@@ -308,16 +319,26 @@ export default function App() {
               />
             </button>
           </div>
-          {native && (
+          <div className="ml-auto flex items-center gap-2">
             <button
               type="button"
-              aria-label="Close app"
-              onClick={exitApp}
-              className="ml-auto rounded-lg border-2 border-slate-300 bg-white px-2.5 py-1 text-lg font-black leading-none text-slate-800"
+              aria-label="Notes"
+              onClick={() => setTab("notes")}
+              className={`rounded-lg border-2 px-2.5 py-1 text-lg leading-none ${tab === "notes" ? "border-black bg-black text-white" : "border-slate-300 bg-white text-slate-800"}`}
             >
-              ✕
+              📝
             </button>
-          )}
+            {native && (
+              <button
+                type="button"
+                aria-label="Close app"
+                onClick={exitApp}
+                className="rounded-lg border-2 border-slate-300 bg-white px-2.5 py-1 text-lg font-black leading-none text-slate-800"
+              >
+                ✕
+              </button>
+            )}
+          </div>
           {recentTabs.length > 0 && (
             <nav className="flex w-full flex-wrap items-center gap-1.5" aria-label="Recently used tools">
               {recentTabs.map((t) => (
@@ -348,7 +369,8 @@ export default function App() {
       <main className={`tool-stage tool-${tab} flex-1`}>
         <ToolIcon id={tab} className="tool-watermark" strokeWidth={1} style={{ color: TOOL_HEX[tab] }} />
         {clearable && (
-          <div className="mx-auto -mb-3 flex max-w-4xl justify-end px-3 pt-3">
+          <div className="mx-auto -mb-3 flex max-w-4xl justify-between gap-2 px-3 pt-3" style={{ position: "relative", zIndex: 30 }}>
+            <ToolHistory tool={tab} />
             <button
               type="button"
               onClick={() => {
@@ -381,13 +403,14 @@ export default function App() {
         {tab === "bishop" && <BishopScore />}
         {tab === "timer" && <TimerTool />}
         {tab === "calc" && <CalculatorTool />}
+        {tab === "notes" && <NotesTool />}
         {tab === "calendar" && <CalendarTool />}
         {tab === "report" && <ReportIssue />}
         </Fragment>
       </main>
 
       {/* Clinical disclaimer: not shown on the general tools (calculator, timer, calendar). */}
-      {!["calc", "timer", "calendar"].includes(tab) && (
+      {!["calc", "timer", "calendar", "notes"].includes(tab) && (
         <footer className="border-t border-[var(--line)] bg-[var(--card)] px-3 py-4 text-center text-xs leading-relaxed text-[var(--muted)] md:px-6">
           Pocket-Med is a clinical decision-support tool for licensed healthcare
           professionals. It does not replace clinical judgment, diagnosis, or
