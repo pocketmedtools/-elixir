@@ -15,6 +15,7 @@ import {
   calculateGestation,
   diffDays,
   formatDate,
+  naegeleEdd,
   type ObMethod,
 } from "../lib/obMath";
 import SaveButton from "./SaveButton";
@@ -83,6 +84,13 @@ export default function ObCalculator() {
       gaAtScan ?? undefined,
     );
   }, [effMethod, dateStr, cycle, gaAtScan]);
+
+  // Naegele's calendar rule alongside the 280-day EDD (LMP method only).
+  const naegele = useMemo(() => {
+    if (effMethod !== "lmp" || !result || !dateStr) return null;
+    const date = naegeleEdd(new Date(dateStr + "T00:00:00"), cycle === "" ? 28 : Number(cycle));
+    return { date, diff: diffDays(result.edd, date) };
+  }, [effMethod, result, dateStr, cycle]);
 
   // LMP vs scan comparison per ACOG CO 700 when both are entered.
   const redating = useMemo(() => {
@@ -233,6 +241,14 @@ export default function ObCalculator() {
               <dd className="text-lg font-bold text-slate-900">
                 {formatDate(result.edd)}
               </dd>
+              {naegele && (
+                <dd className="mt-0.5 text-[11px] font-semibold leading-snug text-slate-600">
+                  LMP + 280 days (standard).{" "}
+                  {naegele.diff === 0
+                    ? "Naegele's rule (+9 months +7 days) gives the same date."
+                    : `Naegele's rule (+9 months +7 days) gives ${formatDate(naegele.date)} — ${Math.abs(naegele.diff)} day${Math.abs(naegele.diff) === 1 ? "" : "s"} ${naegele.diff > 0 ? "later" : "earlier"}, because months differ in length.`}
+                </dd>
+              )}
             </div>
             <div className="rounded-md bg-white/80 px-3 py-2">
               <dt className="text-[11px] font-semibold uppercase tracking-wide text-slate-500">

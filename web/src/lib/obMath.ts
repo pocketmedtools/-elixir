@@ -141,6 +141,23 @@ export function acogRedatingThresholdDays(gaAtScanDays: number): {
   return { threshold: 21, window: "≥ 28w0d" };
 }
 
+/**
+ * Naegele's calendar rule: LMP + 7 days − 3 months + 1 year (+ cycle − 28
+ * days). Months have unequal lengths, so this can differ from the standard
+ * LMP + 280 days by up to ±3 days; the app's EDD uses the 280-day rule
+ * (ACOG CO 700, RCOG, WHO, FOGSI). A day that does not exist in the target
+ * month (e.g. 31 → February) is clamped to that month's last day.
+ */
+export function naegeleEdd(lmp: Date, cycleLengthDays = 28): Date {
+  const plus7 = addDays(lmp, 7);
+  const y = plus7.getFullYear() + (plus7.getMonth() >= 3 ? 1 : 0);
+  const m = (plus7.getMonth() + 9) % 12;
+  const last = new Date(y, m + 1, 0).getDate();
+  const base = new Date(y, m, Math.min(plus7.getDate(), last));
+  const cycle = Math.min(Math.max(cycleLengthDays || 28, 20), 45);
+  return addDays(base, cycle - 28);
+}
+
 export function diffDays(a: Date, b: Date): number {
   return daysBetween(a, b);
 }

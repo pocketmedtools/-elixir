@@ -31,6 +31,16 @@ import { orsPlan, zincDose } from "../src/lib/orsMath";
 import { schwartzEgfr, gfrStage } from "../src/lib/pedRenal";
 import { analyzeRegimen } from "../src/clinical/AnalysisEngine";
 import { drugsDB, getDrugById, interactionsDB } from "../src/clinical/clinicalData";
+import { naegeleEdd } from "../src/lib/obMath";
+import {
+  biometryCentile, igBiometryMuSigma, hadlockEfw, efwCentile, efwFromZ, uaCentile, uaValueAtZ,
+  mcaPsvMoM, assessLiquor, classifyGrowth, scanPlan, scheduleStatus, mmFromGaEquivalent,
+} from "../src/lib/ancScanMath";
+import { IG_BIOMETRY_TABLES } from "./data/igBiometryTables";
+import { BISHOP_ITEMS, bishopTotal, bishopPlan } from "../src/lib/bishopMath";
+import { evaluate } from "../src/lib/calcMath";
+import { isoFromParts } from "../src/components/DateDMY";
+import { cdAdd, cdPause, cdRemaining, cdStart, cdTick, newCountdown, newStopwatch, swElapsed, swLap, swPause, swStart } from "../src/lib/timerMath";
 
 // ---------- harness ----------
 let seed = 20261001;
@@ -449,6 +459,217 @@ tool("Polypharmacy — drug interactions (reference pairs + every stored pair)",
       const hit = sev([...new Set(order)]).some((f) => f.interaction === x);
       check(hit, () => `stored pair ${x.drugAId} + ${x.drugBId} not detected (order ${order.join(",")})`);
     }
+  }
+});
+
+// ---------- OB dating: every day over 5 years ----------
+tool("OB dating — every LMP 2023–2027 × cycle, EDD/scan/IVF round trips, Naegele", (check) => {
+  const utcDays = (y: number, m: number, d: number) => Date.UTC(y, m, d) / 86400000;
+  const fromUtc = (n: number) => { const x = new Date(n * 86400000); return [x.getUTCFullYear(), x.getUTCMonth(), x.getUTCDate()]; };
+  const same = (a: Date, ymd: number[]) => a.getFullYear() === ymd[0] && a.getMonth() === ymd[1] && a.getDate() === ymd[2];
+  for (let n = utcDays(2023, 0, 1); n <= utcDays(2027, 11, 31); n++) {
+    const [y, m, d] = fromUtc(n);
+    const lmp = new Date(y, m, d);
+    const cycle = 21 + Math.floor(rnd() * 25);
+    const daysOn = Math.floor(rnd() * 300);
+    const [ty, tm, td] = fromUtc(n + daysOn);
+    const today = new Date(ty, tm, td, 15, 30);
+    const r = calculateGestation("lmp", lmp, today, cycle);
+    const eddWant = fromUtc(n + 280 + cycle - 28);
+    const ga = daysOn - (cycle - 28);
+    if (ga < 0 || ga > 315) { check(r === null, () => `LMP ${y}-${m + 1}-${d} c${cycle}: GA ${ga} should be refused`); continue; }
+    check(!!r && same(r.edd, eddWant) && r.gaWeeks * 7 + r.gaDays === ga,
+      () => `LMP ${y}-${m + 1}-${d} c${cycle} +${daysOn}d: EDD ${r?.edd.toDateString()} GA ${r?.gaLabel}, want ${eddWant.join("-")} / ${ga}d`);
+    check(!!r && r.trimester === (ga < 98 ? 1 : ga < 196 ? 2 : 3), () => `trimester ${y}-${m + 1}-${d} ga ${ga}`);
+    // EDD-anchored and scan-anchored dating must give the same pregnancy back.
+    if (r) {
+      const e = calculateGestation("edd", r.edd, today);
+      check(!!e && e.gaWeeks * 7 + e.gaDays === ga && same(e.edd, eddWant), () => `EDD round trip ${y}-${m + 1}-${d}`);
+      if (ga >= 35 && ga <= 294) {
+        const s = calculateGestation("scan", today, today, 28, ga);
+        check(!!s && same(s.edd, eddWant), () => `scan round trip ${y}-${m + 1}-${d} ga ${ga}`);
+      }
+      const ivf = calculateGestation("ivf5", new Date(...fromUtc(n + cycle - 14 + 5) as [number, number, number]), today);
+      check(!!ivf && same(ivf.edd, eddWant), () => `IVF day-5 round trip ${y}-${m + 1}-${d}`);
+    }
+    // Naegele: +7 d, +9 months (−3 months +1 year), clamp to month end, + cycle shift.
+    const p7 = fromUtc(n + 7);
+    let ny = p7[0], nm = p7[1] + 9;
+    if (nm > 11) { nm -= 12; ny += 1; }
+    const last = new Date(Date.UTC(ny, nm + 1, 0)).getUTCDate();
+    const nWant = fromUtc(utcDays(ny, nm, Math.min(p7[2], last)) + cycle - 28);
+    const ng = naegeleEdd(lmp, cycle);
+    check(same(ng, nWant), () => `Naegele ${y}-${m + 1}-${d} c${cycle}: ${ng.toDateString()} want ${nWant.join("-")}`);
+    const gap = utcDays(ng.getFullYear(), ng.getMonth(), ng.getDate()) - (n + 280 + cycle - 28);
+    check(Math.abs(gap) <= 3, () => `Naegele vs 280 days gap ${gap} for ${y}-${m + 1}-${d}`);
+  }
+});
+
+// ---------- ANC scan ----------
+tool("ANC scan — INTERGROWTH biometry tables, EFW/UA round trips, Hadlock, liquor, Delphi", (check) => {
+  const Z = [-1.880794, -1.644854, -1.281552, 0, 1.281552, 1.644854, 1.880794];
+  for (const p of ["hc", "bpd", "ac", "fl"] as const) {
+    for (const row of IG_BIOMETRY_TABLES[p]) {
+      const ga = row[0] / 7;
+      const { mu, sigma } = igBiometryMuSigma(p, ga);
+      Z.forEach((z, i) => check(Math.abs(mu + z * sigma - row[i + 1]) <= 0.15,
+        () => `${p} ${ga} wk centile col ${i}: ${(mu + z * sigma).toFixed(2)} vs IG table ${row[i + 1]}`));
+      // A table value must read back at its own centile.
+      const c50 = biometryCentile(p, ga, row[4])!.centile, c3 = biometryCentile(p, ga, row[1])!.centile, c97 = biometryCentile(p, ga, row[7])!.centile;
+      check(Math.abs(c50 - 50) < 2 && Math.abs(c3 - 3) < 0.6 && Math.abs(c97 - 97) < 0.6, () => `${p} ${ga} wk read-back ${c3}/${c50}/${c97}`);
+      check(Math.abs(biometryCentile(p, ga, mmFromGaEquivalent(p, ga)!)!.centile - 50) < 0.01, () => `${p} size-age ${ga}`);
+    }
+  }
+  const phi = (z: number) => { // independent normal CDF (Zelen & Severo 26.2.17)
+    const t = 1 / (1 + 0.2316419 * Math.abs(z));
+    const d = 0.3989423 * Math.exp(-z * z / 2);
+    const q = d * t * (0.3193815 + t * (-0.3565638 + t * (1.781478 + t * (-1.821256 + t * 1.330274))));
+    return 100 * (z > 0 ? 1 - q : q);
+  };
+  for (let i = 0; i < 400; i++) {
+    const ga = uni(18, 41.8), z = uni(-3, 3);
+    const g = efwFromZ(Math.min(ga, 41), z);
+    const c = efwCentile(ga, g)!;
+    check(Math.abs(c.z - z) < 0.011 && Math.abs(c.centile - phi(z)) < 0.15, () => `EFW round trip ga ${ga.toFixed(2)} z ${z.toFixed(2)} → ${c.z}`);
+    const gu = uni(24, 40.8), zu = uni(-2.5, 2.5);
+    const v = uaValueAtZ("pi", Math.min(gu, 40), zu);
+    const u = uaCentile("pi", gu, v)!;
+    check(Math.abs(u.z - zu) < 0.011, () => `UA PI round trip ${gu.toFixed(2)} ${zu.toFixed(2)} → ${u.z}`);
+  }
+  for (let i = 0; i < 400; i++) {
+    const bpd = uni(40, 100), hc = uni(150, 360), ac = uni(130, 400), fl = uni(25, 80);
+    const cm = { b: bpd / 10, h: hc / 10, a: ac / 10, f: fl / 10 };
+    const want = Math.round(10 ** (1.3596 - 0.00386 * cm.a * cm.f + 0.0064 * cm.h + 0.00061 * cm.b * cm.a + 0.0424 * cm.a + 0.174 * cm.f));
+    const got = hadlockEfw({ bpd, hc, ac, fl })!;
+    check(got.grams === want, () => `Hadlock ${bpd},${hc},${ac},${fl}: ${got.grams} vs ${want}`);
+    const want2 = Math.round(10 ** (1.304 + 0.05281 * cm.a + 0.1938 * cm.f - 0.004 * cm.a * cm.f));
+    check(hadlockEfw({ ac, fl })!.grams === want2, () => `Hadlock AC/FL ${ac},${fl}`);
+    const ga = uni(18, 40), psv = uni(10, 90);
+    check(near(mcaPsvMoM(ga, psv), psv / Math.exp(2.31 + 0.046 * ga), 0.006), () => `MCA MoM ${ga} ${psv}`);
+    const sdp = Math.round(uni(0, 20) * 10) / 10, afi = Math.round(uni(0, 40) * 10) / 10;
+    const ks = sdp < 2 ? "oligo" : sdp >= 16 ? "polySevere" : sdp >= 12 ? "polyModerate" : sdp >= 8 ? "polyMild" : "normal";
+    const ka = afi <= 5 ? "oligo" : afi >= 35 ? "polySevere" : afi >= 30 ? "polyModerate" : afi >= 24 ? "polyMild" : "normal";
+    check(assessLiquor(sdp)?.kind === ks && assessLiquor(undefined, afi)?.kind === ka && assessLiquor(sdp, afi)?.kind === ks, () => `liquor sdp ${sdp} afi ${afi}`);
+  }
+  // Delphi consensus oracle (Gordijn 2016) written independently.
+  for (let i = 0; i < 1500; i++) {
+    const ga = uni(20, 41);
+    const ac = rnd() < 0.15 ? null : uni(0.5, 99.5), efw = rnd() < 0.15 ? null : uni(0.5, 99.5);
+    const prev = rnd() < 0.5 ? null : uni(1, 99);
+    const ua = rnd() < 0.3 ? null : uni(1, 99.9);
+    const flow = pick(["normal", "normal", "normal", "aedf", "redf"] as const);
+    const cpr = rnd() < 0.4 ? null : uni(0.6, 2.5);
+    const cprLow5 = rnd() < 0.2, utaHigh = rnd() < 0.2;
+    const inp = { ga, acCentile: ac, efwCentile: efw, efwGrams: rnd() < 0.5 ? null : uni(500, 4800), prevCentile: prev, uaPiCentile: ua,
+      uaFlow: flow, cpr, cprLow5, utaHigh, dv: "normal" as const, liquor: null, mcaMoM: null, diabetes: false };
+    const low = ac == null ? efw : efw == null ? ac : Math.min(ac, efw);
+    const high = Math.max(ac ?? -1, efw ?? -1);
+    const uaHigh = ua != null && ua > 95;
+    let want: string;
+    if (low == null) want = "unknown";
+    else if (ga < 32 && (low < 3 || flow !== "normal" || (low < 10 && (utaHigh || uaHigh)))) want = "fgrEarly";
+    else if (ga >= 32 && (low < 3 || flow !== "normal" ||
+      [low < 10, prev != null && prev - low > 50, cprLow5 || (cpr != null && cpr < 1) || uaHigh].filter(Boolean).length >= 2)) want = "fgrLate";
+    else if (low < 10) want = "sga";
+    else if (high > 90) want = "lga";
+    else want = "aga";
+    const got = classifyGrowth(inp).growth;
+    check(got === want, () => `Delphi ga ${ga.toFixed(1)} ac ${ac?.toFixed(1)} efw ${efw?.toFixed(1)} prev ${prev?.toFixed(0)} ua ${ua?.toFixed(1)} ${flow} cpr ${cpr?.toFixed(2)} low5 ${cprLow5} uta ${utaHigh}: ${got} want ${want}`);
+    const plan = scanPlan(inp);
+    const wantTone = flow === "redf" || flow === "aedf" ? "urgent" : null;
+    if (wantTone) check(plan.tone === wantTone && plan.delivery.includes(flow === "redf" ? "30+0" : "32+0"), () => `plan ${flow} tone ${plan.tone}`);
+    if (want === "sga" && flow === "normal" && !uaHigh) check(plan.tone === "watch" && plan.delivery.includes("38+0"), () => `SGA plan ${plan.tone}`);
+    if ((want === "fgrEarly" || want === "fgrLate") && flow === "normal") check(plan.tone === "treat" && plan.delivery.includes("37+0"), () => `FGR plan ${plan.tone} ${plan.delivery}`);
+  }
+  for (let w = 4; w <= 43; w += 0.5) {
+    const s = scheduleStatus(w);
+    for (const c of s.current) check(w >= c.from && w < c.to, () => `schedule ${w} in ${c.id}`);
+    check(s.next == null || s.next.from > w, () => `schedule next ${w}`);
+  }
+});
+
+// ---------- Modified Bishop: every combination ----------
+tool("Modified Bishop — all 576 combinations", (check) => {
+  const counts = BISHOP_ITEMS.map((it) => it.options.length);
+  const pts: Record<string, number[]> = {
+    dilation: [0, 1, 2, 3], length: [0, 1, 2, 3], station: [0, 1, 2, 3], consistency: [0, 1, 2], position: [0, 1, 2],
+  };
+  const total = counts.reduce((a, b) => a * b, 1);
+  for (let n = 0; n < total; n++) {
+    let k = n;
+    const ans: Record<string, number> = {};
+    let want = 0;
+    BISHOP_ITEMS.forEach((it, i) => { const idx = k % counts[i]; k = Math.floor(k / counts[i]); ans[it.id] = idx; want += pts[it.id][idx]; });
+    const got = bishopTotal(ans);
+    check(got === want, () => `Bishop ${JSON.stringify(ans)}: ${got} want ${want}`);
+    check(bishopPlan(want).band === (want <= 6 ? "unfavourable" : "favourable"), () => `Bishop band ${want}`);
+  }
+});
+
+// ---------- Calculator ----------
+tool("Calculator — 500 random expressions vs reference evaluation", (check) => {
+  const num = () => String(rnd() < 0.3 ? Math.round(uni(0, 99) * 100) / 100 : Math.floor(uni(0, 999)));
+  for (let i = 0; i < 500; i++) {
+    const parts: string[] = [];
+    const n = 2 + Math.floor(rnd() * 5);
+    let js = "";
+    let disp = "";
+    for (let j = 0; j < n; j++) {
+      let a = num();
+      let aj = a;
+      if (rnd() < 0.15) { aj = `(${a}/100)`; a = `${a}%`; }
+      if (j && rnd() < 0.2) { const b = num(); a = `(${a}+${b})`; aj = `(${aj}+${b})`; }
+      disp += a; js += aj;
+      if (j < n - 1) { const op = pick(["+", "−", "×", "÷"]); disp += op; js += ({ "+": "+", "−": "-", "×": "*", "÷": "/" } as Record<string, string>)[op]; }
+      parts.push(a);
+    }
+    const ref = Function(`"use strict"; return (${js});`)() as number;
+    const got = evaluate(disp);
+    if (!Number.isFinite(ref)) check(got === null, () => `calc ${disp} should be invalid`);
+    else check(got != null && Math.abs(got - ref) <= Math.max(1e-9, Math.abs(ref) * 1e-11), () => `calc ${disp}: ${got} vs ${ref}`);
+  }
+});
+
+// ---------- DD/MM/YYYY date entry ----------
+tool("Date entry (DD/MM/YYYY) — every day 2000–2040 + invalid days", (check) => {
+  for (let n = Date.UTC(2000, 0, 1) / 86400000; n <= Date.UTC(2040, 11, 31) / 86400000; n++) {
+    const x = new Date(n * 86400000);
+    const d = x.getUTCDate(), m = x.getUTCMonth() + 1, y = x.getUTCFullYear();
+    const want = `${y}-${String(m).padStart(2, "0")}-${String(d).padStart(2, "0")}`;
+    check(isoFromParts(String(d), String(m), String(y)) === want && isoFromParts(String(d).padStart(2, "0"), String(m).padStart(2, "0"), String(y)) === want,
+      () => `date ${d}/${m}/${y}`);
+  }
+  for (let y = 2000; y <= 2040; y++) for (let m = 1; m <= 12; m++) {
+    const days = new Date(Date.UTC(y, m, 0)).getUTCDate();
+    check(isoFromParts(String(days + 1), String(m), String(y)) === "", () => `invalid ${days + 1}/${m}/${y}`);
+  }
+});
+
+// ---------- Timer / stopwatch ----------
+tool("Timer & stopwatch — 300 random start/pause/+1 min sequences", (check) => {
+  for (let i = 0; i < 300; i++) {
+    const total = Math.floor(uni(1, 120)) * 60000;
+    let c = newCountdown(total);
+    let t = 1e9, left = total, running = false;
+    let s = newStopwatch(), swT = 0, swRun = false;
+    for (let step = 0; step < 12; step++) {
+      const action = pick(["start", "pause", "wait", "add", "wait"]);
+      if (action === "start") { c = cdStart(c, t); if (left > 0 && c.status !== "done") running = true; s = swStart(s, t); swRun = true; }
+      if (action === "pause") { c = cdPause(c, t); running = false; s = swPause(s, t); swRun = false; }
+      if (action === "add") { const was = c.status; c = cdAdd(c, 60000, t); if (was === "done") { left = 60000; running = true; } else left = Math.min(left + 60000, 1439 * 60000); }
+      if (action === "wait") {
+        const dt = Math.floor(uni(0, 30 * 60000));
+        if (running) left = Math.max(0, left - dt);
+        if (swRun) swT += dt;
+        t += dt;
+        c = cdTick(c, t);
+        if (running && left === 0) running = false;
+      }
+      check(cdRemaining(c, t) === left, () => `timer seq ${i} step ${step} (${action}): ${cdRemaining(c, t)} vs ${left}`);
+      check(swElapsed(s, t) === swT, () => `stopwatch seq ${i} step ${step}`);
+    }
+    s = swLap(swStart(s, t), t);
+    check(s.laps[s.laps.length - 1] === swT, () => `lap ${i}`);
   }
 });
 
