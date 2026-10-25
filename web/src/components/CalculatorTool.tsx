@@ -1,12 +1,13 @@
+import { useState } from "react";
 import { usePersist } from "../lib/lastState";
 import { evaluate, formatResult } from "../lib/calcMath";
 
 const KEYS: { k: string; kind?: "op" | "fn" | "eq" }[][] = [
-  [{ k: "AC", kind: "fn" }, { k: "( )", kind: "fn" }, { k: "%", kind: "fn" }, { k: "÷", kind: "op" }],
+  [{ k: "AC", kind: "fn" }, { k: "⌫", kind: "fn" }, { k: "%", kind: "fn" }, { k: "÷", kind: "op" }],
   [{ k: "7" }, { k: "8" }, { k: "9" }, { k: "×", kind: "op" }],
   [{ k: "4" }, { k: "5" }, { k: "6" }, { k: "−", kind: "op" }],
   [{ k: "1" }, { k: "2" }, { k: "3" }, { k: "+", kind: "op" }],
-  [{ k: "0" }, { k: "." }, { k: "⌫", kind: "fn" }, { k: "=", kind: "eq" }],
+  [{ k: "( )", kind: "fn" }, { k: "0" }, { k: "." }, { k: "=", kind: "eq" }],
 ];
 
 // Number keys use the calendar's pastel day colours, each with a dark ink
@@ -25,6 +26,13 @@ export default function CalculatorTool() {
   const [history, setHistory] = usePersist<string[]>("calc", "history", []);
 
   const live = expr ? evaluate(expr) : null;
+  // Brief "pop" on the key just tapped (plus a tiny vibration) so every tap is confirmed.
+  const [tapped, setTapped] = useState<{ k: string; n: number } | null>(null);
+  const tap = (k: string) => {
+    setTapped((t) => ({ k, n: (t?.n ?? 0) + 1 }));
+    try { navigator.vibrate?.(12); } catch { /* not supported */ }
+    press(k);
+  };
 
   const press = (k: string) => {
     if (k === "AC") return setExpr("");
@@ -73,11 +81,11 @@ export default function CalculatorTool() {
             );
           })()}
         </div>
-        <div className="mt-3 grid grid-cols-4 gap-2">
+        <div className="mt-3 grid grid-cols-4 gap-3">
           {KEYS.flat().map(({ k, kind }) => (
-            <button key={k} type="button" aria-label={k === "⌫" ? "Backspace" : k} onClick={() => press(k)}
+            <button key={tapped?.k === k ? `${k}-${tapped.n}` : k} type="button" aria-label={k === "⌫" ? "Backspace" : k} onClick={() => tap(k)}
               style={!kind && TINTS[k] ? { background: TINTS[k][0], color: TINTS[k][1] } : undefined}
-              className={`h-14 rounded-xl text-xl font-black transition active:scale-95 ${
+              className={`calc-key aspect-square w-full rounded-full ${!kind ? "text-[2rem]" : "text-[1.7rem]"} font-bold leading-none transition active:scale-90 ${tapped?.k === k ? "calc-pop" : ""} ${
                 kind === "eq" ? "bg-[#7e22ce] text-white"
                   : kind === "op" ? "bg-[#efe3fb] text-[#7e22ce]"
                   : kind === "fn" ? "bg-[#f1e2c8] text-slate-800"
