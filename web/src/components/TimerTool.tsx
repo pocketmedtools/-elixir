@@ -1,18 +1,20 @@
 import { useEffect, useState, useSyncExternalStore } from "react";
 import {
   cdFraction, cdRemaining, formatCountdown, formatStopwatch, hmToMs, swElapsed,
+  formatDuration, formatPosition, openSegment, runElapsed, segDuration,
 } from "../lib/timerMath";
 import { getTimer, subscribeTimer, timerActions } from "../lib/timerStore";
 
 // Classic stopwatch face (like the phone's Clock app): white dial, bold
 // 05–60 numerals, a long purple hand and a small minutes sub-dial. The timer
 // shows the time left as a coloured sector inside the dial.
-const PURPLE = "#7e22ce";
+// Premium chronograph palette: orange hand + countdown shading, deep navy time.
+const PURPLE = "#e8590c"; // hand & countdown sector (chronograph orange)
 const INK = "#1c1b19";
 const TICK = "#b9b9bf";
-const CORAL = "#e0464f";
+const CORAL = "#c92a2a"; // time-up red
 // Seconds digits: deep teal — pairs with the purple hand without matching it.
-const DIGITS = "#0f6e6a";
+const DIGITS = "#1f2a44"; // whole time in one deep navy
 
 const CX = 170;
 const CY = 170;
@@ -102,7 +104,7 @@ function Dial({
           cuts through it; seconds in deep teal, distinct from the purple hand. */}
       <text x={CX} y={CY - 42} textAnchor="middle" fontSize={digitsA.length + digitsB.length > 8 ? 22 : 26} fontWeight="800"
         stroke="#f6f6f8" strokeWidth="5" strokeLinejoin="round" paintOrder="stroke" style={{ fontVariantNumeric: "tabular-nums" }}>
-        <tspan fill={INK}>{digitsA}</tspan>
+        <tspan fill={alert ? CORAL : DIGITS}>{digitsA}</tspan>
         <tspan fill={alert ? CORAL : DIGITS}>{digitsB}</tspan>
       </text>
       <text x={CX} y={CY - 24} textAnchor="middle" fontSize="9" fontWeight="800" fill="#6d6b67" letterSpacing="1.5"
@@ -242,7 +244,7 @@ export default function TimerTool() {
                 <div className="flex flex-wrap gap-1.5">
                   {PRESETS.map((p) => (
                     <button key={p} type="button" onClick={() => timerActions.setLength(p * 60000)}
-                      className={`rounded-full border-2 px-3 py-1.5 text-sm font-extrabold ${totalMin === p ? "border-[#7e22ce] bg-[#7e22ce] text-white" : "border-slate-300 bg-white text-slate-800"}`}>
+                      className={`rounded-full border-2 px-3 py-1.5 text-sm font-extrabold ${totalMin === p ? "border-[#1f2a44] bg-[#1f2a44] text-white" : "border-slate-300 bg-white text-slate-800"}`}>
                       {p === 60 ? "1 h" : `${p} min`}
                     </button>
                   ))}
@@ -257,10 +259,10 @@ export default function TimerTool() {
 
             <div className="mt-4 grid grid-cols-3 gap-2">
               {cd.status === "running" ? (
-                <button type="button" onClick={() => timerActions.pause()} className={`${btn} bg-white text-[#7e22ce] border-2 border-[#7e22ce]`}>Pause</button>
+                <button type="button" onClick={() => timerActions.pause()} className={`${btn} bg-white text-[#1f2a44] border-2 border-[#1f2a44]`}>Pause</button>
               ) : (
                 <button type="button" disabled={cd.status === "done" || cd.remainingMs <= 0}
-                  onClick={() => timerActions.start()} className={`${btn} bg-[#7e22ce] text-white`}>
+                  onClick={() => timerActions.start()} className={`${btn} bg-[#1f2a44] text-white`}>
                   {cd.status === "paused" ? "Resume" : "Start"}
                 </button>
               )}
@@ -269,6 +271,62 @@ export default function TimerTool() {
               <button type="button" onClick={() => timerActions.reset()} disabled={cd.status === "idle"}
                 className={`${btn} border-2 border-slate-300 bg-white text-slate-900`}>Reset</button>
             </div>
+
+            {/* Sub-timers: start/stop as many as needed within the running countdown. */}
+            {cd.status !== "idle" && (() => {
+              const at = runElapsed(st.run, now);
+              const open = openSegment(st.segs);
+              const done = st.segs.filter((x) => x.end != null);
+              return (
+                <div className="mt-4 rounded-xl border-2 border-slate-200 p-3">
+                  <div className="flex items-center justify-between gap-2">
+                    <p className="text-sm font-extrabold text-slate-900">Sub-timers</p>
+                    <p className="text-xs font-bold text-slate-500">Timer at {formatPosition(at)}</p>
+                  </div>
+                  {open ? (
+                    <button type="button" onClick={() => timerActions.subStop()}
+                      className={`${btn} mt-2 flex w-full items-center justify-between bg-[#e8590c] text-white`}>
+                      <span>■ Stop sub-timer {st.segs.length}</span>
+                      <span className="tabular-nums">{formatDuration(segDuration(open, at))}</span>
+                    </button>
+                  ) : (
+                    <button type="button" disabled={cd.status === "done"} onClick={() => timerActions.subStart()}
+                      className={`${btn} mt-2 w-full border-2 border-[#e8590c] bg-white text-[#c2410c]`}>
+                      ▶ Start sub-timer {st.segs.length + 1}
+                    </button>
+                  )}
+                  {st.segs.length > 0 && (
+                    <>
+                      <table className="mt-3 w-full text-sm" style={{ fontVariantNumeric: "tabular-nums" }}>
+                        <thead>
+                          <tr className="text-[11px] font-black uppercase tracking-wide text-slate-500">
+                            <th className="py-1 text-left">#</th><th className="text-left">From</th><th className="text-left">To</th><th className="text-right">Duration</th>
+                          </tr>
+                        </thead>
+                        <tbody className="divide-y divide-slate-200">
+                          {st.segs.map((x, i) => (
+                            <tr key={i} className={x.end == null ? "text-[#c2410c]" : "text-slate-900"}>
+                              <td className="py-1.5 font-bold">{i + 1}</td>
+                              <td className="font-semibold">{formatPosition(x.start)}</td>
+                              <td className="font-semibold">{x.end == null ? "running…" : formatPosition(x.end)}</td>
+                              <td className="text-right font-extrabold">{formatDuration(segDuration(x, at))}</td>
+                            </tr>
+                          ))}
+                        </tbody>
+                      </table>
+                      {done.length > 1 && (
+                        <p className="mt-2 text-right text-xs font-bold text-slate-600">
+                          Total of {done.length}: {formatDuration(done.reduce((sum, x) => sum + segDuration(x, at), 0))}
+                        </p>
+                      )}
+                      {done.length > 0 && (
+                        <button type="button" onClick={() => timerActions.subClear()} className="mt-1 text-xs font-bold text-slate-500 underline">Clear sub-timers</button>
+                      )}
+                    </>
+                  )}
+                </div>
+              );
+            })()}
           </>
         )}
 
@@ -276,9 +334,9 @@ export default function TimerTool() {
           <>
             <div className="mt-4 grid grid-cols-2 gap-2">
               {sw.running ? (
-                <button type="button" onClick={() => timerActions.swPause()} className={`${btn} bg-white text-[#7e22ce] border-2 border-[#7e22ce]`}>Pause</button>
+                <button type="button" onClick={() => timerActions.swPause()} className={`${btn} bg-white text-[#1f2a44] border-2 border-[#1f2a44]`}>Pause</button>
               ) : (
-                <button type="button" onClick={() => timerActions.swStart()} className={`${btn} bg-[#7e22ce] text-white`}>
+                <button type="button" onClick={() => timerActions.swStart()} className={`${btn} bg-[#1f2a44] text-white`}>
                   {swE > 0 ? "Resume" : "Start"}
                 </button>
               )}

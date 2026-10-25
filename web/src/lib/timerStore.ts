@@ -6,6 +6,7 @@
 import {
   cdAdd, cdPause, cdReset, cdStart, cdTick, newCountdown, newStopwatch,
   swLap, swPause, swReset, swStart, type Countdown, type Stopwatch,
+  newRunClock, runElapsed, runStart, runStop, segStart, segStop, type RunClock, type Segment,
 } from "./timerMath";
 
 export type TimerMode = "timer" | "stopwatch";
@@ -16,6 +17,10 @@ export interface TimerState {
   sw: Stopwatch;
   /** True while the finished-timer alarm is sounding. */
   alarm: boolean;
+  /** Running time of the countdown (for sub-timers). */
+  run: RunClock;
+  /** Sub-timers recorded during the countdown. */
+  segs: Segment[];
 }
 
 const KEY = "POCKETMED_TIMER";
@@ -25,12 +30,12 @@ function load(): TimerState {
     const raw = localStorage.getItem(KEY);
     if (raw) {
       const s = JSON.parse(raw) as TimerState;
-      if (s && s.cd && s.sw) return { ...s, alarm: false };
+      if (s && s.cd && s.sw) return { ...s, alarm: false, run: s.run ?? newRunClock(), segs: Array.isArray(s.segs) ? s.segs : [] };
     }
   } catch {
     /* fall through to a fresh state */
   }
-  return { mode: "timer", cd: newCountdown(5 * 60000), sw: newStopwatch(), alarm: false };
+  return { mode: "timer", cd: newCountdown(5 * 60000), sw: newStopwatch(), alarm: false, run: newRunClock(), segs: [] };
 }
 
 let state: TimerState = load();
@@ -111,10 +116,17 @@ function stopAlarmSound(): void {
 // ---------- ticker: notices the end of a running countdown on any screen ----------
 let ticker: number | null = null;
 
+/** Countdown just finished: stop its running clock at the exact end and close any open sub-timer. */
+function finished(prev: Countdown, next: Countdown, alarm: boolean): TimerState {
+  const endAt = prev.endAt ?? Date.now();
+  const run = runStop(state.run, endAt);
+  return { ...state, cd: next, alarm, run, segs: segStop(state.segs, runElapsed(run, endAt)) };
+}
+
 function check(): void {
   const next = cdTick(state.cd, Date.now());
   if (next !== state.cd) {
-    set({ ...state, cd: next, alarm: true });
+    set(finished(state.cd, next, true));
     startAlarm();
   }
 }
@@ -132,7 +144,7 @@ if (typeof window !== "undefined") {
   syncTicker();
   // A timer that ended while the app was closed: show it as finished, quietly.
   const ended = cdTick(state.cd, Date.now());
-  if (ended !== state.cd) set({ ...state, cd: ended, alarm: false });
+  if (ended !== state.cd) set(finished(state.cd, ended, false));
   document.addEventListener("visibilitychange", () => {
     if (document.visibilityState === "visible") check();
   });
@@ -145,23 +157,39 @@ export const timerActions = {
   },
   setLength(totalMs: number) {
     if (state.cd.status === "running") return;
-    set({ ...state, cd: newCountdown(totalMs), alarm: false });
+    set({ ...state, cd: newCountdown(totalMs), alarm: false, run: newRunClock(), segs: [] });
   },
   start() {
     unlockAudio();
-    set({ ...state, cd: cdStart(state.cd, Date.now()) });
+    const now = Date.now();
+    const cd = cdStart(state.cd, now);
+    set({ ...state, cd, run: cd.status === "running" ? runStart(state.run, now) : state.run });
   },
   pause() {
-    set({ ...state, cd: cdPause(state.cd, Date.now()) });
+    const now = Date.now();
+    set({ ...state, cd: cdPause(state.cd, now), run: runStop(state.run, now) });
   },
   reset() {
     stopAlarmSound();
-    set({ ...state, cd: cdReset(state.cd), alarm: false });
+    set({ ...state, cd: cdReset(state.cd), alarm: false, run: newRunClock(), segs: [] });
   },
   addMinute() {
     unlockAudio();
     stopAlarmSound();
-    set({ ...state, cd: cdAdd(state.cd, 60000, Date.now()), alarm: false });
+    const now = Date.now();
+    const cd = cdAdd(state.cd, 60000, now);
+    set({ ...state, cd, alarm: false, run: cd.status === "running" ? runStart(state.run, now) : state.run });
+  },
+  /** Start a sub-timer at the countdown's current running time. */
+  subStart() {
+    if (state.cd.status !== "running" && state.cd.status !== "paused") return;
+    set({ ...state, segs: segStart(state.segs, runElapsed(state.run, Date.now())) });
+  },
+  subStop() {
+    set({ ...state, segs: segStop(state.segs, runElapsed(state.run, Date.now())) });
+  },
+  subClear() {
+    set({ ...state, segs: state.segs.filter((x) => x.end == null) });
   },
   dismissAlarm() {
     stopAlarmSound();

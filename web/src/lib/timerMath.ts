@@ -122,3 +122,61 @@ export function formatStopwatch(ms: number): string {
   const body = `${pad(Math.floor((s % 3600) / 60))}:${pad(s % 60)}.${tenths}`;
   return h > 0 ? `${h}:${body}` : body;
 }
+
+// ---------- Sub-timers inside a running countdown ----------
+/**
+ * Running time of the main countdown (pauses excluded) — the clock that
+ * sub-timers are measured against, e.g. "2:00 → 2:50 of a 5-minute timer".
+ */
+export interface RunClock {
+  baseMs: number;
+  since: number | null;
+}
+
+export const newRunClock = (): RunClock => ({ baseMs: 0, since: null });
+export const runElapsed = (c: RunClock, now: number): number => c.baseMs + (c.since != null ? Math.max(0, now - c.since) : 0);
+export const runStart = (c: RunClock, now: number): RunClock => (c.since != null ? c : { ...c, since: now });
+export const runStop = (c: RunClock, now: number): RunClock => (c.since == null ? c : { baseMs: runElapsed(c, now), since: null });
+
+/** One sub-timer: start and end on the main timer's running clock (ms). */
+export interface Segment {
+  start: number;
+  end: number | null;
+}
+
+export const openSegment = (segs: Segment[]): Segment | null => {
+  const last = segs[segs.length - 1];
+  return last && last.end == null ? last : null;
+};
+
+export function segStart(segs: Segment[], at: number): Segment[] {
+  return openSegment(segs) ? segs : [...segs, { start: at, end: null }];
+}
+
+export function segStop(segs: Segment[], at: number): Segment[] {
+  const open = openSegment(segs);
+  if (!open) return segs;
+  return [...segs.slice(0, -1), { start: open.start, end: Math.max(at, open.start) }];
+}
+
+export const segDuration = (s: Segment, at: number): number => Math.max(0, (s.end ?? at) - s.start);
+
+/** "2:50" style position on the main timer (minutes:seconds, hours if needed). */
+export function formatPosition(ms: number): string {
+  const t = Math.floor(Math.max(0, ms) / 1000);
+  const h = Math.floor(t / 3600);
+  const m = Math.floor((t % 3600) / 60);
+  const s = String(t % 60).padStart(2, "0");
+  return h ? `${h}:${String(m).padStart(2, "0")}:${s}` : `${m}:${s}`;
+}
+
+/** "50 s", "1 min 05 s", "1 h 02 min 05 s" (whole seconds). */
+export function formatDuration(ms: number): string {
+  const t = Math.round(Math.max(0, ms) / 1000);
+  const h = Math.floor(t / 3600);
+  const m = Math.floor((t % 3600) / 60);
+  const s = t % 60;
+  if (h) return `${h} h ${String(m).padStart(2, "0")} min ${String(s).padStart(2, "0")} s`;
+  if (m) return `${m} min ${String(s).padStart(2, "0")} s`;
+  return `${s} s`;
+}
