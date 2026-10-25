@@ -9,6 +9,15 @@ const KEYS: { k: string; kind?: "op" | "fn" | "eq" }[][] = [
   [{ k: "0" }, { k: "." }, { k: "⌫", kind: "fn" }, { k: "=", kind: "eq" }],
 ];
 
+// Number keys use the calendar's pastel day colours, each with a dark ink
+// of the same hue for clear contrast.
+const TINTS: Record<string, [string, string]> = {
+  "7": ["#dbe7f3", "#1f3b73"], "8": ["#dcefea", "#1b6b62"], "9": ["#e3eff7", "#2b6a91"],
+  "4": ["#e2f0dc", "#2f6b28"], "5": ["#f8efcf", "#7a5c00"], "6": ["#f8e1ea", "#9c3a64"],
+  "1": ["#f5d9e3", "#8e1244"], "2": ["#dbe7f3", "#1f3b73"], "3": ["#dcefea", "#1b6b62"],
+  "0": ["#e2f0dc", "#2f6b28"], ".": ["#f8efcf", "#7a5c00"],
+};
+
 const isOp = (c: string) => "+−×÷".includes(c);
 
 export default function CalculatorTool() {
@@ -67,11 +76,12 @@ export default function CalculatorTool() {
         <div className="mt-3 grid grid-cols-4 gap-2">
           {KEYS.flat().map(({ k, kind }) => (
             <button key={k} type="button" aria-label={k === "⌫" ? "Backspace" : k} onClick={() => press(k)}
+              style={!kind && TINTS[k] ? { background: TINTS[k][0], color: TINTS[k][1] } : undefined}
               className={`h-14 rounded-xl text-xl font-black transition active:scale-95 ${
                 kind === "eq" ? "bg-[#7e22ce] text-white"
                   : kind === "op" ? "bg-[#efe3fb] text-[#7e22ce]"
                   : kind === "fn" ? "bg-[#f1e2c8] text-slate-800"
-                  : "border-2 border-slate-200 bg-white text-slate-900"
+                  : "border border-white/70 shadow-sm"
               }`}>
               {k}
             </button>
