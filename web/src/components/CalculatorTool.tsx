@@ -1,4 +1,5 @@
-import { useEffect, useRef, useState } from "react";
+import { useState } from "react";
+import { useFitHeight } from "../lib/useFitHeight";
 import { usePersist } from "../lib/lastState";
 import { evaluate, formatResult } from "../lib/calcMath";
 
@@ -60,26 +61,7 @@ export default function CalculatorTool() {
   const main = result ?? (expr || "0");
   // Panel runs from just under the header to the very bottom of the screen;
   // keys sit at the bottom, so all the space above is for long sums.
-  const panel = useRef<HTMLElement>(null);
-  const [height, setHeight] = useState<number | null>(null);
-  useEffect(() => {
-    const fit = () => {
-      const el = panel.current;
-      if (!el) return;
-      const top = el.getBoundingClientRect().top + window.scrollY;
-      setHeight(Math.max(420, window.innerHeight - top - 6));
-    };
-    fit();
-    window.addEventListener("resize", fit);
-    // The header can grow after mount (recent-tools row), so re-fit on its size changes.
-    const header = document.querySelector("header");
-    const ro = header && typeof ResizeObserver !== "undefined" ? new ResizeObserver(fit) : null;
-    if (header && ro) ro.observe(header);
-    return () => {
-      window.removeEventListener("resize", fit);
-      ro?.disconnect();
-    };
-  }, []);
+  const { ref: panel, height } = useFitHeight<HTMLElement>(420);
   return (
     <div className="mx-auto max-w-md px-2 pt-2">
       <h2 className="sr-only">Calculator</h2>

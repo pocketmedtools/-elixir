@@ -5,6 +5,7 @@ import {
   type Attachment, type Note,
 } from "../lib/notesDb";
 import { isNativeApp, LIVE_SITE } from "../lib/liveUpdate";
+import { useFitHeight } from "../lib/useFitHeight";
 
 /**
  * Quick notes (black theme). Opening Notes goes straight to a blank note to
@@ -41,10 +42,14 @@ export default function NotesTool() {
     return q ? saved.filter((n) => n.text.toLowerCase().includes(q)) : saved;
   }, [saved, query]);
 
+  // The black panel is sized to the screen, so the toolbar is always fully
+  // visible at the bottom; only the note area scrolls.
+  const fit = useFitHeight<HTMLElement>(380);
   return (
     <div className="mx-auto max-w-xl px-2 pt-2">
       <h2 className="sr-only">Notes</h2>
-      <section className="flex min-h-[calc(100dvh-7.5rem)] flex-col rounded-t-[2rem] rounded-b-[1.5rem] bg-black px-4 pb-4 pt-4 text-white">
+      <section ref={fit.ref} style={fit.height ? { height: fit.height } : undefined}
+        className={`flex ${fit.height ? "" : "min-h-[calc(100dvh-7.5rem)]"} flex-col overflow-hidden rounded-t-[2rem] rounded-b-[1.5rem] bg-black px-4 pb-4 pt-4 text-white`}>
         {mode === "edit" ? (
           <Editor key={current.id} note={current} savedCount={saved.length}
             onChange={refresh} onAll={() => { refresh(); setMode("list"); }} onNew={newNote} />
@@ -65,7 +70,7 @@ export default function NotesTool() {
             {shown.length === 0 ? (
               <p className="mt-10 text-center text-sm text-[#8e8e93]">{query ? "No notes match." : "No saved notes yet."}</p>
             ) : (
-              <ul className="mt-4 space-y-2">
+              <ul className="mt-4 min-h-0 flex-1 space-y-2 overflow-y-auto">
                 {shown.map((n) => {
                   const lines = n.text.trim().split("\n");
                   const count = (k: Attachment["kind"]) => n.attachments.filter((a) => a.kind === k).length;
@@ -101,11 +106,20 @@ export default function NotesTool() {
   );
 }
 
-function ToolButton({ label, onClick, children }: { label: string; onClick: () => void; children: React.ReactNode }) {
+// Each toolbar action has its own soft colour with a darker icon of the same hue.
+const TINT = {
+  Camera: ["#cfe6ff", "#0b4a7a"],
+  Gallery: ["#d3f3df", "#14633a"],
+  Video: ["#e6dcff", "#4b2a8a"],
+  Voice: ["#ffe1cf", "#9a3b0b"],
+} as const;
+
+function ToolButton({ label, onClick, children }: { label: keyof typeof TINT; onClick: () => void; children: React.ReactNode }) {
+  const [bg, ink] = TINT[label];
   return (
     <button type="button" onClick={onClick} aria-label={label}
-      className="flex flex-1 flex-col items-center gap-1 rounded-2xl py-2.5 text-[11px] font-semibold text-white transition active:scale-90"
-      style={{ background: "#1c1c1e" }}>
+      className="flex flex-1 flex-col items-center gap-1 rounded-2xl py-2.5 text-[11px] font-bold transition active:scale-90"
+      style={{ background: bg, color: ink }}>
       {children}
       {label}
     </button>
@@ -250,8 +264,8 @@ function Editor({ note, savedCount, onChange, onAll, onNew }: {
   const media = draft.attachments.filter((a) => a.kind !== "image");
 
   return (
-    <div className="flex flex-1 flex-col">
-      <div className="flex items-center justify-between">
+    <div className="flex min-h-0 flex-1 flex-col">
+      <div className="flex shrink-0 items-center justify-between">
         <button type="button" onClick={async () => { await flush(); onAll(); }}
           className="flex items-center gap-0.5 text-base font-semibold transition active:opacity-60" style={{ color: ORANGE }}>
           <ChevronLeft size={22} /> All notes{savedCount ? ` (${savedCount})` : ""}
@@ -272,14 +286,15 @@ function Editor({ note, savedCount, onChange, onAll, onNew }: {
             className="rounded-full p-2 transition active:scale-90" style={{ color: ORANGE }}><Plus size={24} /></button>
         </div>
       </div>
-      <p className="mt-1 text-center text-xs text-[#8e8e93]">
+      <p className="mt-1 shrink-0 text-center text-xs text-[#8e8e93]">
         {new Date(draft.updatedAt).toLocaleString("en-IN", { day: "numeric", month: "short", year: "numeric", hour: "2-digit", minute: "2-digit", hour12: true })}
       </p>
 
+      <div className="mt-2 min-h-0 flex-1 overflow-y-auto">
       <textarea value={draft.text} autoFocus onChange={(e) => update({ text: e.target.value }, false)}
         placeholder="Start writing…" aria-label="Note text"
         style={{ background: "transparent", color: "#fff" }}
-        className="mt-2 min-h-[28vh] w-full flex-1 resize-none text-lg leading-relaxed placeholder:text-[#636366] outline-none" />
+        className="block h-[60%] min-h-[9rem] w-full resize-none text-lg leading-relaxed placeholder:text-[#636366] outline-none" />
 
       {images.length > 0 && (
         <div className="mt-2 grid grid-cols-3 gap-2">
@@ -315,7 +330,9 @@ function Editor({ note, savedCount, onChange, onAll, onNew }: {
         </div>
       )}
 
-      <div className="mt-3">
+      </div>
+
+      <div className="mt-3 shrink-0">
         {rec ? (
           <div className="flex items-center gap-3 rounded-2xl px-4 py-3" style={{ background: "#2c1414" }}>
             <span className="relative flex h-3.5 w-3.5">
