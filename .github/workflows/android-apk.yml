@@ -86,6 +86,41 @@ jobs:
       - name: Build release APK (signed)
         run: cd android && chmod +x gradlew && ./gradlew assembleRelease --no-daemon
 
+      # Key rotation: the original key above is public, so the APK is re-signed
+      # with the private key kept in the POCKETMED_SIGNING_KEY secret
+      # ("<password>.<base64 PKCS12>"), plus a signed proof (lineage) that the
+      # old key handed over to the new one. Phones with the current app accept
+      # the update and keep their data; on Android 9+ updates signed only with
+      # the old public key are refused from then on (rollback is not allowed).
+      # Without the secret the build keeps the original key, as before.
+      - name: Rotate to the private signing key
+        env:
+          SIGNING_KEY: ${{ secrets.POCKETMED_SIGNING_KEY }}
+        run: |
+          OUT=android/app/build/outputs/apk/release
+          if [ -z "$SIGNING_KEY" ]; then
+            echo "::warning::POCKETMED_SIGNING_KEY secret not set - APK signed with the original public key"
+            exit 0
+          fi
+          export NEW_PASS="${SIGNING_KEY%%.*}"
+          printf '%s' "${SIGNING_KEY#*.}" | base64 -d > "$RUNNER_TEMP/new.p12"
+          BT=$(ls -d "$ANDROID_HOME"/build-tools/* | sort -V | tail -1)
+          echo "Using $BT"
+          OLD="--ks android/keystore/pocketmed-release.keystore --ks-key-alias pocketmed --ks-pass pass:pocketmed --key-pass pass:pocketmed"
+          NEW="--ks $RUNNER_TEMP/new.p12 --ks-key-alias pocketmed --ks-pass env:NEW_PASS --key-pass env:NEW_PASS"
+          "$BT/apksigner" rotate --out "$RUNNER_TEMP/lineage" --old-signer $OLD --new-signer $NEW
+          "$BT/apksigner" sign $OLD --next-signer $NEW --lineage "$RUNNER_TEMP/lineage" \
+            --rotation-min-sdk-version 28 --out "$OUT/rotated.apk" "$OUT/app-release.apk"
+          # Refuse to publish unless both keys and the hand-over check out.
+          "$BT/apksigner" verify -v --print-certs "$OUT/rotated.apk" | tee "$RUNNER_TEMP/verify.txt"
+          "$BT/apksigner" lineage --in "$OUT/rotated.apk" --print-certs | tee "$RUNNER_TEMP/lineage.txt"
+          NEW_SHA=$(keytool -list -v -keystore "$RUNNER_TEMP/new.p12" -storepass "$NEW_PASS" | grep 'SHA256:' | head -1 | awk '{print $2}' | tr -d ':' | tr 'A-F' 'a-f')
+          grep -qi "$NEW_SHA" "$RUNNER_TEMP/lineage.txt" || { echo "::error::New key missing from lineage"; exit 1; }
+          [ "$(grep -ci 'SHA-256 digest' "$RUNNER_TEMP/lineage.txt")" -ge 2 ] || { echo "::error::Lineage lacks the old key"; exit 1; }
+          grep -q "Verified using v3 scheme (APK Signature Scheme v3): true" "$RUNNER_TEMP/verify.txt" || { echo "::error::v3 signature missing"; exit 1; }
+          mv "$OUT/rotated.apk" "$OUT/app-release.apk"
+          rm -f "$RUNNER_TEMP/new.p12"
+
       - name: Rename APK
         run: cp android/app/build/outputs/apk/release/app-release.apk android/app/build/outputs/apk/release/Pocket-Med.apk
 

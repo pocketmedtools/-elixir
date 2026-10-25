@@ -1,0 +1,88 @@
+name: Weekly health check and backup
+
+# Every week: install from scratch, run all 84,000+ calculator checks and build
+# the site, so a breakage (an npm package, Node, a GitHub change) shows up as a
+# failed run - GitHub emails the owner. Then a self-contained backup is stored
+# as a GitHub release "backup-YYYY-MM" (one per month, refreshed weekly):
+#   pocket-med-source.bundle   full git history (restore: git clone <file> pocket-med)
+#   pocket-med-source.zip      plain source files of the current version
+#   pocket-med-npm-cache.tgz   every npm package needed, for an offline rebuild
+#   pocket-med-site.zip        the built website, ready to host anywhere
+#   Pocket-Med.apk             the current Android app
+# See RESTORE.md. Also runs on pull requests as a test gate.
+
+on:
+  schedule:
+    - cron: "23 3 * * 1" # Mondays 03:23 UTC
+  workflow_dispatch:
+  pull_request:
+
+permissions:
+  contents: write
+
+jobs:
+  health-and-backup:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version-file: .nvmrc
+
+      - name: Clean install (fresh npm cache)
+        working-directory: web
+        run: npm ci --cache "$RUNNER_TEMP/npm-cache"
+
+      - name: All calculator checks
+        working-directory: web
+        run: npm test
+
+      - name: Build website
+        working-directory: web
+        run: npx tsc -b && npx vite build --base=./
+
+      - name: Package backup
+        if: github.event_name != 'pull_request'
+        run: |
+          mkdir -p "$RUNNER_TEMP/backup"
+          B="$RUNNER_TEMP/backup"
+          git bundle create "$B/pocket-med-source.bundle" --all
+          git archive --format=zip -o "$B/pocket-med-source.zip" HEAD
+          tar -czf "$B/pocket-med-npm-cache.tgz" -C "$RUNNER_TEMP" npm-cache
+          (cd web/dist && zip -qr "$B/pocket-med-site.zip" .)
+          curl -fL -o "$B/Pocket-Med.apk" "https://github.com/${{ github.repository }}/releases/download/apk-latest/Pocket-Med.apk" || echo "no APK yet"
+          echo "TAG=backup-$(date -u +%Y-%m)" >> "$GITHUB_ENV"
+          echo "STAMP=$(date -u '+%Y-%m-%d %H:%M UTC')" >> "$GITHUB_ENV"
+          ls -la "$B"
+
+      - name: Store backup as a release
+        if: github.event_name != 'pull_request'
+        uses: softprops/action-gh-release@v2
+        with:
+          tag_name: ${{ env.TAG }}
+          name: Backup ${{ env.TAG }}
+          body: |
+            Automatic backup, last refreshed ${{ env.STAMP }} from commit ${{ github.sha }}.
+            All calculator checks passed before this backup was made.
+            How to restore: see RESTORE.md in this repository (or inside pocket-med-source.zip).
+          files: ${{ runner.temp }}/backup/*
+
+      # GitHub pauses scheduled workflows after 60 days without commits; a
+      # tiny monthly heartbeat commit keeps this backup running for years.
+      # "[skip ci]" stops it from triggering any other build.
+      - name: Keep the schedule alive
+        if: github.event_name == 'schedule'
+        run: |
+          F=.github/backup-heartbeat.txt
+          M=$(date -u +%Y-%m)
+          if ! grep -qx "$M" "$F" 2>/dev/null; then
+            echo "$M" > "$F"
+            git config user.name "github-actions[bot]"
+            git config user.email "github-actions[bot]@users.noreply.github.com"
+            git add "$F"
+            git commit -m "Backup heartbeat $M [skip ci]"
+            git push origin HEAD:${{ github.event.repository.default_branch }} || echo "heartbeat push skipped"
+          fi

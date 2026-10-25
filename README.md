@@ -1,5 +1,7 @@
 # Smart-Elixir
 
+> **Backup & one-command rebuild:** see [RESTORE.md](./RESTORE.md) — `./rebuild.sh`
+
 ## New app (use this)
 
 React clinical suite in **`web/`**. Docs: **[`NEW_SMART_ELIXIR/README.md`](./NEW_SMART_ELIXIR/README.md)**
