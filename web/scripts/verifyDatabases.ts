@@ -1564,6 +1564,21 @@ section("Pediatric DB integrity");
   if (s.laps.join() !== "12300,25000" || T.swElapsed(s, t0 + 40_000) !== 30_000) fail("stopwatch: laps / elapsed");
   if (T.formatStopwatch(65_430) !== "01:05.4" || T.formatStopwatch(3_725_000) !== "1:02:05.0") fail("stopwatch: display");
   if (T.swElapsed(T.swReset(), t0) !== 0) fail("stopwatch: reset");
+  // Sub-timers on the countdown's running clock (pauses excluded).
+  let rc = T.runStart(T.newRunClock(), t0);
+  let segs: { start: number; end: number | null }[] = [];
+  segs = T.segStart(segs, T.runElapsed(rc, t0 + 120000));           // 2:00
+  segs = T.segStop(segs, T.runElapsed(rc, t0 + 170000));            // 2:50 → 50 s
+  rc = T.runStop(rc, t0 + 180000);                                  // pause at 3:00 for 60 s
+  rc = T.runStart(rc, t0 + 240000);
+  segs = T.segStart(segs, T.runElapsed(rc, t0 + 250000));           // 3:10 of running time
+  segs = T.segStart(segs, T.runElapsed(rc, t0 + 255000));           // second start ignored while one is open
+  segs = T.segStop(segs, T.runElapsed(rc, t0 + 270000));            // 3:30 → 20 s
+  if (segs.length !== 2 || T.formatPosition(segs[0].start) !== "2:00" || T.formatPosition(segs[0].end!) !== "2:50"
+    || T.formatDuration(T.segDuration(segs[0], 0)) !== "50 s" || T.formatPosition(segs[1].start) !== "3:10"
+    || T.formatPosition(segs[1].end!) !== "3:30" || T.formatDuration(T.segDuration(segs[1], 0)) !== "20 s") fail(`sub-timers: ${JSON.stringify(segs)}`);
+  if (T.segStop(segs, 999) !== segs || T.openSegment(segs) !== null) fail("sub-timers: stop with none open must do nothing");
+  if (T.formatDuration(65000) !== "1 min 05 s" || T.formatDuration(3725000) !== "1 h 02 min 05 s" || T.formatPosition(3725000) !== "1:02:05") fail("sub-timer formats");
   console.log("timer: start/pause/resume/finish, +1 min, limits, display; stopwatch: pause, laps, display OK");
 }
 

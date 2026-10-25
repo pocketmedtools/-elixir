@@ -31,7 +31,7 @@ export default function TimerFloat({ onOpen, hidden }: { onOpen: () => void; hid
   if (!running) return null;
   return (
     <button type="button" onClick={onOpen} aria-label="Open timer"
-      className="fixed bottom-3 left-3 z-[55] rounded-full bg-[#7e22ce] px-3.5 py-2 text-sm font-black text-white shadow-lg"
+      className="fixed bottom-3 left-3 z-[55] rounded-full bg-[#1f2a44] px-3.5 py-2 text-sm font-black text-white shadow-lg"
       style={{ fontVariantNumeric: "tabular-nums" }}>
       ⏲ {formatCountdown(cdRemaining(st.cd, now))}
     </button>
