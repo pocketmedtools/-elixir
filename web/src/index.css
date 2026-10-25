@@ -269,10 +269,10 @@ input, select, textarea { background-color: #fffaf1; color: var(--ink); }
 }
 
 /* Calculator: big round keys; the tapped key pops and flashes a ring. */
-.calc-key { box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08); }
+.calc-key { -webkit-tap-highlight-color: transparent; }
 @keyframes calc-pop {
-  0% { transform: scale(0.86); box-shadow: 0 0 0 0 rgba(126, 34, 206, 0.55); filter: brightness(0.9); }
-  60% { transform: scale(1.06); box-shadow: 0 0 0 8px rgba(126, 34, 206, 0); }
+  0% { transform: scale(0.86); box-shadow: 0 0 0 0 rgba(255, 255, 255, 0.6); filter: brightness(1.45); }
+  60% { transform: scale(1.05); box-shadow: 0 0 0 9px rgba(255, 255, 255, 0); }
   100% { transform: scale(1); filter: none; }
 }
 .calc-pop { animation: calc-pop 0.28s ease-out; }

@@ -10,15 +10,6 @@ const KEYS: { k: string; kind?: "op" | "fn" | "eq" }[][] = [
   [{ k: "( )", kind: "fn" }, { k: "0" }, { k: "." }, { k: "=", kind: "eq" }],
 ];
 
-// Number keys use the calendar's pastel day colours, each with a dark ink
-// of the same hue for clear contrast.
-const TINTS: Record<string, [string, string]> = {
-  "7": ["#dbe7f3", "#1f3b73"], "8": ["#dcefea", "#1b6b62"], "9": ["#e3eff7", "#2b6a91"],
-  "4": ["#e2f0dc", "#2f6b28"], "5": ["#f8efcf", "#7a5c00"], "6": ["#f8e1ea", "#9c3a64"],
-  "1": ["#f5d9e3", "#8e1244"], "2": ["#dbe7f3", "#1f3b73"], "3": ["#dcefea", "#1b6b62"],
-  "0": ["#e2f0dc", "#2f6b28"], ".": ["#f8efcf", "#7a5c00"],
-};
-
 const isOp = (c: string) => "+−×÷".includes(c);
 
 export default function CalculatorTool() {
@@ -62,56 +53,44 @@ export default function CalculatorTool() {
     setExpr(expr + k);
   };
 
+  // Phone-calculator look: black body, dark-grey digits, light-grey
+  // functions, orange operators; fills the screen below the app header.
+  const plain = /^-?\d*\.?\d+$/.test(expr);
+  const result = live != null && !plain ? formatResult(live) : null;
+  const main = result ?? (expr || "0");
   return (
-    <div className="mx-auto max-w-sm px-3 py-5">
-      <h2 className="text-xl font-extrabold tracking-tight text-slate-900">Calculator</h2>
-
-      <section className="mt-3 rounded-2xl border-2 border-slate-300 bg-white p-4">
-        <div className="min-h-[5.5rem] text-right" aria-live="polite">
-          <p className={`break-all ${/^-?\d*\.?\d+$/.test(expr) ? `font-black text-slate-900 ${expr.length > 12 ? "text-3xl" : "text-4xl"}` : `font-bold text-slate-700 ${expr.length > 16 ? "text-xl" : "text-2xl"}`}`} style={{ fontVariantNumeric: "tabular-nums" }}>{expr || "0"}</p>
-          {(() => {
-            // After "=" the expression is just the answer: don't repeat it.
-            const plain = /^-?\d*\.?\d+$/.test(expr);
-            const txt = live != null && !plain ? `= ${formatResult(live)}` : "\u00a0";
-            return (
-              <p className={`mt-1 break-all font-black text-slate-900 ${txt.length > 14 ? "text-2xl" : txt.length > 10 ? "text-3xl" : "text-4xl"}`}
-                style={{ fontVariantNumeric: "tabular-nums" }}>
-                {txt}
-              </p>
-            );
-          })()}
+    <div className="mx-auto max-w-md px-2 pt-2">
+      <h2 className="sr-only">Calculator</h2>
+      <section className="flex min-h-[calc(100dvh-7.5rem)] flex-col rounded-[2rem] bg-black px-4 pb-5 pt-4 text-white">
+        {history.length > 0 && (
+          <div className="flex items-start justify-between gap-2 text-sm text-[#8e8e93]" style={{ fontVariantNumeric: "tabular-nums" }}>
+            <button type="button" onClick={() => setHistory([])} className="text-xs font-semibold underline">Clear</button>
+            <ul className="space-y-0.5 text-right">
+              {history.slice(0, 3).map((h, i) => (
+                <li key={i}>
+                  <button type="button" className="text-right" onClick={() => setExpr(h.split(" = ")[0])}>{h}</button>
+                </li>
+              ))}
+            </ul>
+          </div>
+        )}
+        <div className="mt-auto pb-3 text-right" aria-live="polite" style={{ fontVariantNumeric: "tabular-nums" }}>
+          <p className={`min-h-[1.75rem] break-all text-2xl font-light text-[#a5a5aa] ${result ? "" : "invisible"}`}>{expr || "0"}</p>
+          <p className={`break-all font-light leading-none ${main.length > 14 ? "text-4xl" : main.length > 9 ? "text-5xl" : "text-7xl"}`}>{main}</p>
         </div>
-        <div className="mt-3 grid grid-cols-4 gap-3">
+        <div className="grid grid-cols-4 gap-3">
           {KEYS.flat().map(({ k, kind }) => (
             <button key={tapped?.k === k ? `${k}-${tapped.n}` : k} type="button" aria-label={k === "⌫" ? "Backspace" : k} onClick={() => tap(k)}
-              style={!kind && TINTS[k] ? { background: TINTS[k][0], color: TINTS[k][1] } : undefined}
-              className={`calc-key aspect-square w-full rounded-full ${!kind ? "text-[2rem]" : "text-[1.7rem]"} font-bold leading-none transition active:scale-90 ${tapped?.k === k ? "calc-pop" : ""} ${
-                kind === "eq" ? "bg-[#7e22ce] text-white"
-                  : kind === "op" ? "bg-[#efe3fb] text-[#7e22ce]"
-                  : kind === "fn" ? "bg-[#f1e2c8] text-slate-800"
-                  : "border border-white/70 shadow-sm"
+              className={`calc-key aspect-square w-full rounded-full leading-none transition active:brightness-125 ${tapped?.k === k ? "calc-pop" : ""} ${
+                kind === "eq" || kind === "op" ? "bg-[#ff9f0a] text-[2.2rem] font-medium text-white"
+                  : kind === "fn" ? "bg-[#a5a5a5] text-[1.6rem] font-semibold text-black"
+                  : "bg-[#333333] text-[2.2rem] font-normal text-white"
               }`}>
               {k}
             </button>
           ))}
         </div>
       </section>
-
-      {history.length > 0 && (
-        <section className="mt-3 rounded-xl border-2 border-slate-200 bg-white p-3">
-          <div className="flex items-center justify-between">
-            <p className="text-xs font-black uppercase tracking-wide text-slate-500">Recent</p>
-            <button type="button" onClick={() => setHistory([])} className="text-xs font-bold text-slate-500 underline">Clear</button>
-          </div>
-          <ul className="mt-1 space-y-1 text-right text-sm font-semibold text-slate-700" style={{ fontVariantNumeric: "tabular-nums" }}>
-            {history.map((h, i) => (
-              <li key={i}>
-                <button type="button" className="w-full text-right" onClick={() => setExpr(h.split(" = ")[0])}>{h}</button>
-              </li>
-            ))}
-          </ul>
-        </section>
-      )}
     </div>
   );
 }
