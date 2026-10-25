@@ -15,6 +15,7 @@ import TimerTool from "./components/TimerTool";
 import AncScanTool from "./components/AncScanTool";
 import BishopScore from "./components/BishopScore";
 import CalculatorTool from "./components/CalculatorTool";
+import CalendarTool from "./components/CalendarTool";
 import TimerFloat from "./components/TimerFloat";
 import NewbornWeightLoss from "./components/NewbornWeightLoss";
 import ObCalculator from "./components/ObCalculator";
@@ -44,7 +45,7 @@ export default function App() {
   const [tab, setTab] = usePersist<AppTab>("app", "tab", "home", TAB_CODEC);
   // Bumped by "New patient" to remount the open tool with empty entries.
   const [resetKey, setResetKey] = useState(0);
-  const clearable = !["home", "saved", "report", "timer", "calc"].includes(tab);
+  const clearable = !["home", "saved", "report", "timer", "calc", "calendar"].includes(tab);
   const [menuOpen, setMenuOpen] = useState(false);
   useSyncExternalStore(subscribe, getVersion);
   // No sign-in screen: the app opens straight onto the last calculation.
@@ -203,6 +204,13 @@ export default function App() {
       label: "Calculator",
       shortLabel: "Calc",
       active: "bg-slate-900 text-white shadow-sm",
+      idle: "bg-slate-100 text-slate-800 hover:bg-slate-200",
+    },
+    {
+      id: "calendar",
+      label: "Calendar",
+      shortLabel: "Calendar",
+      active: "bg-teal-900 text-white shadow-sm",
       idle: "bg-slate-100 text-slate-800 hover:bg-slate-200",
     },
     {
@@ -373,6 +381,7 @@ export default function App() {
         {tab === "bishop" && <BishopScore />}
         {tab === "timer" && <TimerTool />}
         {tab === "calc" && <CalculatorTool />}
+        {tab === "calendar" && <CalendarTool />}
         {tab === "report" && <ReportIssue />}
         </Fragment>
       </main>

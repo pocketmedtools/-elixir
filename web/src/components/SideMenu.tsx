@@ -11,7 +11,7 @@ import { APK_URL, isWebsite } from "../lib/platform";
 import ToolIcon, { TOOL_TEXT } from "./ToolIcon";
 
 export type MenuTarget =
-  | "home" | "pedDose" | "growth" | "bp" | "nbWeight" | "hol" | "bili" | "bmi" | "crCl" | "regimen" | "insulin" | "ob" | "ancScan" | "bishop" | "calc" | "timer" | "saved" | "report";
+  | "home" | "pedDose" | "growth" | "bp" | "nbWeight" | "hol" | "bili" | "bmi" | "crCl" | "regimen" | "insulin" | "ob" | "ancScan" | "bishop" | "calc" | "calendar" | "timer" | "saved" | "report";
 
 const LINK_GROUPS: {
   heading: string | null;
@@ -30,7 +30,7 @@ const LINK_GROUPS: {
     ],
   },
   { heading: "OBG", links: [{ id: "ob", label: "OB / EDD" }, { id: "ancScan", label: "ANC Scan (Growth & Doppler)" }, { id: "bishop", label: "Modified Bishop Score" }] },
-  { heading: "Utilities", links: [{ id: "timer", label: "Timer / Stopwatch" }, { id: "calc", label: "Calculator" }] },
+  { heading: "Utilities", links: [{ id: "timer", label: "Timer / Stopwatch" }, { id: "calc", label: "Calculator" }, { id: "calendar", label: "Calendar" }] },
   {
     heading: "Medicine",
     links: [
