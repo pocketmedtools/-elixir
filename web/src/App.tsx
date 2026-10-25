@@ -386,11 +386,14 @@ export default function App() {
         </Fragment>
       </main>
 
-      <footer className="border-t border-[var(--line)] bg-[var(--card)] px-3 py-4 text-center text-xs leading-relaxed text-[var(--muted)] md:px-6">
-        Pocket-Med is a clinical decision-support tool for licensed healthcare
-        professionals. It does not replace clinical judgment, diagnosis, or
-        emergency care. Verify all doses and plans before prescribing.
-      </footer>
+      {/* Clinical disclaimer: not shown on the general tools (calculator, timer, calendar). */}
+      {!["calc", "timer", "calendar"].includes(tab) && (
+        <footer className="border-t border-[var(--line)] bg-[var(--card)] px-3 py-4 text-center text-xs leading-relaxed text-[var(--muted)] md:px-6">
+          Pocket-Med is a clinical decision-support tool for licensed healthcare
+          professionals. It does not replace clinical judgment, diagnosis, or
+          emergency care. Verify all doses and plans before prescribing.
+        </footer>
+      )}
     </div>
   );
 }

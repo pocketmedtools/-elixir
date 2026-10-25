@@ -88,6 +88,7 @@ export function evaluate(src: string): number | null {
 
 /** Indian-style digit grouping with up to 10 decimals, e.g. 1,23,456.5 */
 export function formatResult(n: number): string {
-  if (Math.abs(n) >= 1e15 || (Math.abs(n) < 1e-9 && n !== 0)) return n.toExponential(6);
+  // Very large/small: scientific notation with all 12 significant digits kept.
+  if (Math.abs(n) >= 1e15 || (Math.abs(n) < 1e-9 && n !== 0)) return Number(n.toPrecision(12)).toExponential();
   return n.toLocaleString("en-IN", { maximumFractionDigits: 10 });
 }
