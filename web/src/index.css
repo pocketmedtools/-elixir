@@ -277,3 +277,7 @@ input, select, textarea { background-color: #fffaf1; color: var(--ink); }
   100% { transform: scale(1); filter: none; }
 }
 .calc-pop { animation: calc-pop 0.28s ease-out; }
+
+/* Notes: animated waveform while recording a voice note. */
+.notes-wave span { width: 3px; border-radius: 2px; background: #ff453a; animation: notes-wave 0.9s ease-in-out infinite; height: 30%; }
+@keyframes notes-wave { 0%, 100% { height: 25%; } 50% { height: 100%; } }
