@@ -26,20 +26,20 @@ export const TOOL_SECTIONS: {
     ],
   },
   {
-    heading: "Utilities",
-    tools: [
-      { id: "timer", title: "Timer / Stopwatch" },
-      { id: "calc", title: "Calculator" },
-      { id: "calendar", title: "Calendar" },
-    ],
-  },
-  {
     heading: "Medicine",
     tools: [
       { id: "crCl", title: "Creatinine Clearance" },
       { id: "insulin", title: "Insulin" },
       { id: "regimen", title: "Polypharm" },
       { id: "bmi", title: "BMI" },
+    ],
+  },
+  {
+    heading: "General",
+    tools: [
+      { id: "timer", title: "Timer / Stopwatch" },
+      { id: "calc", title: "Calculator" },
+      { id: "calendar", title: "Calendar" },
     ],
   },
 ];
