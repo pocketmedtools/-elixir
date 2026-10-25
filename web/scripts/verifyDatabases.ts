@@ -1618,6 +1618,17 @@ section("Pediatric DB integrity");
       if (Math.abs(got - want) > 0.006) fail(`UA PI ${ga} wk z=${z}: ${got.toFixed(3)} vs table ${want}`);
     }
   }
+  // INTERGROWTH-21st UA RI and S/D published tables (P05 / P50 / P95).
+  const riSd: [ "ri" | "sd", number, number, number, number][] = [
+    ["ri", 24, 0.60, 0.69, 0.78], ["ri", 32, 0.52, 0.63, 0.73], ["ri", 40, 0.44, 0.55, 0.65],
+    ["sd", 24, 2.46, 3.23, 4.46], ["sd", 32, 2.07, 2.68, 3.67], ["sd", 40, 1.80, 2.19, 2.81],
+  ];
+  for (const [idx, ga, p5, p50, p95] of riSd) {
+    for (const [z, want] of [[Z.P05, p5], [Z.P50, p50], [Z.P95, p95]] as const) {
+      const got = A.uaValueAtZ(idx, ga, z);
+      if (Math.abs(got - want) > 0.006) fail(`UA ${idx} ${ga} wk z=${z}: ${got.toFixed(3)} vs ${want}`);
+    }
+  }
   // Round trip value → centile.
   if (Math.abs(A.efwCentile(32, 1795)!.centile - 50) > 1) fail("EFW 1795 g at 32 wk should be ~50th");
   if (A.efwCentile(32, 1455)!.centile > 3.5 || A.efwCentile(32, 1455)!.centile < 2.5) fail("EFW 1455 g at 32 wk should be ~3rd");

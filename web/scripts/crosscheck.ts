@@ -535,6 +535,10 @@ tool("ANC scan — INTERGROWTH biometry tables, EFW/UA round trips, Hadlock, liq
     const v = uaValueAtZ("pi", Math.min(gu, 40), zu);
     const u = uaCentile("pi", gu, v)!;
     check(Math.abs(u.z - zu) < 0.011, () => `UA PI round trip ${gu.toFixed(2)} ${zu.toFixed(2)} → ${u.z}`);
+    for (const idx of ["ri", "sd"] as const) {
+      const vv = uaValueAtZ(idx, Math.min(gu, 40), zu);
+      check(Math.abs(uaCentile(idx, gu, vv)!.z - zu) < 0.011, () => `UA ${idx} round trip ${gu.toFixed(2)} ${zu.toFixed(2)}`);
+    }
   }
   for (let i = 0; i < 400; i++) {
     const bpd = uni(40, 100), hc = uni(150, 360), ac = uni(130, 400), fl = uni(25, 80);

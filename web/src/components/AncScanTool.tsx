@@ -69,6 +69,17 @@ function CentileBar({ name, value, c, note }: { name: string; value: string; c: 
   );
 }
 
+/** One Doppler vessel: full name, plain-language purpose, its inputs. */
+function Vessel({ title, hint, children }: { title: string; hint: string; children: React.ReactNode }) {
+  return (
+    <div className="mt-3 rounded-lg border-2 border-slate-200 bg-[#fffaf1] p-3">
+      <p className="text-sm font-black text-slate-900">{title}</p>
+      <p className="mb-2 text-[11px] font-semibold text-slate-600">{hint}</p>
+      {children}
+    </div>
+  );
+}
+
 const PARAMS: { id: BiometryParam; label: string }[] = [
   { id: "bpd", label: "BPD" },
   { id: "hc", label: "HC" },
@@ -102,7 +113,15 @@ export default function AncScanTool() {
   const [mcaPi, setMcaPi] = usePersist("ancScan", "mcaPi", "");
   const [cprLow5, setCprLow5] = usePersist("ancScan", "cprLow5", false);
   const [utaHigh, setUtaHigh] = usePersist("ancScan", "utaHigh", false);
-  const [dv, setDv] = usePersist<DvFlow>("ancScan", "dv", "normal");
+  const [uaRi, setUaRi] = usePersist("ancScan", "uaRi", "");
+  const [uaSd, setUaSd] = usePersist("ancScan", "uaSd", "");
+  const [utaR, setUtaR] = usePersist("ancScan", "utaR", "");
+  const [utaL, setUtaL] = usePersist("ancScan", "utaL", "");
+  const [dvPi, setDvPi] = usePersist("ancScan", "dvPi", "");
+  const [dvWave, setDvWave] = usePersist<"positive" | "absent" | "reversed">("ancScan", "dvWave", "positive");
+  const [dvPiHigh, setDvPiHigh] = usePersist("ancScan", "dvPiHigh", false);
+  // Ductus venosus finding used by the plan: a-wave loss outranks a high PI.
+  const dv: DvFlow = dvWave !== "positive" ? "absentA" : dvPiHigh ? "highPi" : "normal";
   const [psv, setPsv] = usePersist("ancScan", "psv", "");
   const [diabetes, setDiabetes] = usePersist("ancScan", "diabetes", false);
 
@@ -126,6 +145,11 @@ export default function AncScanTool() {
   const efwC = efwG != null ? efwCentile(ga, efwG) : null;
   const uaPiN = num(uaPi);
   const uaC = uaPiN != null ? uaCentile("pi", ga, uaPiN) : null;
+  const uaRiN = num(uaRi), uaSdN = num(uaSd);
+  const uaRiC = uaRiN != null ? uaCentile("ri", ga, uaRiN) : null;
+  const uaSdC = uaSdN != null ? uaCentile("sd", ga, uaSdN) : null;
+  const utaRN = num(utaR), utaLN = num(utaL);
+  const utaMean = utaRN != null && utaLN != null ? Math.round(((utaRN + utaLN) / 2) * 100) / 100 : utaRN ?? utaLN ?? null;
   const mcaPiN = num(mcaPi);
   const cpr = uaPiN && mcaPiN ? Math.round((mcaPiN / uaPiN) * 100) / 100 : null;
   const liquor = assessLiquor(num(sdp), num(afi));
@@ -138,7 +162,8 @@ export default function AncScanTool() {
     efwCentile: efwC?.centile ?? null,
     efwGrams: efwG,
     prevCentile: num(prev) ?? null,
-    uaPiCentile: uaC?.centile ?? null,
+    // PI is the standard index; use RI or S/D only when the report gives no PI.
+    uaPiCentile: uaC?.centile ?? uaRiC?.centile ?? uaSdC?.centile ?? null,
     uaFlow,
     cpr,
     cprLow5,
@@ -148,7 +173,7 @@ export default function AncScanTool() {
     mcaMoM: mom,
     diabetes,
   });
-  const anyInput = acC != null || efwC != null || uaFlow !== "normal" || dv !== "normal" || liquor != null || mom != null || uaC != null;
+  const anyInput = acC != null || efwC != null || uaFlow !== "normal" || dv !== "normal" || liquor != null || mom != null || uaC != null || uaRiC != null || uaSdC != null;
   const sched = scheduleStatus(ga);
 
   return (
@@ -299,45 +324,89 @@ export default function AncScanTool() {
           {/* Doppler */}
           <section className={`mt-3 ${card}`}>
             <p className="section-label text-[13px]">Doppler</p>
-            <div className="mt-2 grid grid-cols-2 gap-2">
-              <label className={label}>
-                Umbilical artery PI
-                <input type="number" inputMode="decimal" aria-label="UA PI" value={uaPi} onChange={(e) => setUaPi(e.target.value)} className={`mt-1 ${field}`} />
-              </label>
-              <label className={label}>
-                MCA PI
-                <input type="number" inputMode="decimal" aria-label="MCA PI" value={mcaPi} onChange={(e) => setMcaPi(e.target.value)} className={`mt-1 ${field}`} />
-              </label>
-            </div>
-            <span className={`mt-3 block ${label}`}>UA end-diastolic flow</span>
-            <div className="mt-1 grid grid-cols-3 gap-1.5" role="radiogroup" aria-label="UA end-diastolic flow">
-              {([["normal", "Present"], ["aedf", "Absent"], ["redf", "Reversed"]] as const).map(([v, t]) => (
-                <button key={v} type="button" role="radio" aria-checked={uaFlow === v} onClick={() => setUaFlow(v)} className={seg(uaFlow === v)}>{t}</button>
-              ))}
-            </div>
-            <span className={`mt-3 block ${label}`}>Ductus venosus</span>
-            <div className="mt-1 grid grid-cols-3 gap-1.5" role="radiogroup" aria-label="Ductus venosus">
-              {([["normal", "Normal / not done"], ["highPi", "PI > 95th"], ["absentA", "a-wave absent/rev"]] as const).map(([v, t]) => (
-                <button key={v} type="button" role="radio" aria-checked={dv === v} onClick={() => setDv(v)} className={`${seg(dv === v)} text-xs`}>{t}</button>
-              ))}
-            </div>
-            <div className="mt-3 space-y-2">
-              <label className="flex items-start gap-2 text-sm font-semibold text-slate-800">
+            <p className="mt-1 text-[11px] font-semibold text-slate-600">
+              Fill only what the report gives. PI = pulsatility index · RI = resistance index · S/D = systolic/diastolic ratio.
+            </p>
+
+            <Vessel title="Umbilical artery (UA)" hint="Placental resistance — the key test in growth restriction.">
+              <div className="grid grid-cols-3 gap-2">
+                <label className={label}>PI
+                  <input type="number" inputMode="decimal" aria-label="UA PI" value={uaPi} onChange={(e) => setUaPi(e.target.value)} className={`mt-1 ${field}`} />
+                </label>
+                <label className={label}>RI
+                  <input type="number" inputMode="decimal" aria-label="UA RI" value={uaRi} onChange={(e) => setUaRi(e.target.value)} className={`mt-1 ${field}`} />
+                </label>
+                <label className={label}>S/D ratio
+                  <input type="number" inputMode="decimal" aria-label="UA S/D" value={uaSd} onChange={(e) => setUaSd(e.target.value)} className={`mt-1 ${field}`} />
+                </label>
+              </div>
+              <span className={`mt-3 block ${label}`}>End-diastolic flow (EDF)</span>
+              <div className="mt-1 grid grid-cols-3 gap-1.5" role="radiogroup" aria-label="UA end-diastolic flow">
+                {([["normal", "Present", "normal"], ["aedf", "Absent", "AEDF"], ["redf", "Reversed", "REDF"]] as const).map(([v, t, sub]) => (
+                  <button key={v} type="button" role="radio" aria-checked={uaFlow === v} onClick={() => setUaFlow(v)} className={seg(uaFlow === v)}>
+                    {t}<span className="block text-[10px] font-bold opacity-75">{sub}</span>
+                  </button>
+                ))}
+              </div>
+            </Vessel>
+
+            <Vessel title="Middle cerebral artery (MCA)" hint="Brain blood flow — low PI means 'brain sparing'. PSV (peak systolic velocity) rises in fetal anaemia.">
+              <div className="grid grid-cols-2 gap-2">
+                <label className={label}>PI
+                  <input type="number" inputMode="decimal" aria-label="MCA PI" value={mcaPi} onChange={(e) => setMcaPi(e.target.value)} className={`mt-1 ${field}`} />
+                </label>
+                <label className={label}>PSV (cm/s)
+                  <input type="number" inputMode="decimal" aria-label="MCA PSV" value={psv} onChange={(e) => setPsv(e.target.value)} className={`mt-1 ${field}`} />
+                </label>
+              </div>
+              {cpr != null && (
+                <p className="mt-2 text-xs font-bold text-slate-700">
+                  CPR (cerebroplacental ratio = MCA PI ÷ UA PI) = <span className={cpr < 1 ? "text-red-700" : "text-slate-900"}>{cpr}</span>
+                </p>
+              )}
+              <label className="mt-2 flex items-start gap-2 text-sm font-semibold text-slate-800">
                 <input type="checkbox" checked={cprLow5} onChange={(e) => setCprLow5(e.target.checked)} className="mt-1 h-4 w-4" />
-                Report says CPR or MCA PI below the 5th centile
+                Report says CPR or MCA PI is below the 5th centile
               </label>
-              <label className="flex items-start gap-2 text-sm font-semibold text-slate-800">
+            </Vessel>
+
+            <Vessel title="Uterine arteries (UtA)" hint="Mother's side of the placenta — high PI predicts pre-eclampsia and FGR.">
+              <div className="grid grid-cols-2 gap-2">
+                <label className={label}>Right PI
+                  <input type="number" inputMode="decimal" aria-label="Right uterine artery PI" value={utaR} onChange={(e) => setUtaR(e.target.value)} className={`mt-1 ${field}`} />
+                </label>
+                <label className={label}>Left PI
+                  <input type="number" inputMode="decimal" aria-label="Left uterine artery PI" value={utaL} onChange={(e) => setUtaL(e.target.value)} className={`mt-1 ${field}`} />
+                </label>
+              </div>
+              {utaMean != null && <p className="mt-2 text-xs font-bold text-slate-700">Mean UtA PI = {utaMean}</p>}
+              <label className="mt-2 flex items-start gap-2 text-sm font-semibold text-slate-800">
                 <input type="checkbox" checked={utaHigh} onChange={(e) => setUtaHigh(e.target.checked)} className="mt-1 h-4 w-4" />
-                Mean uterine artery PI above the 95th centile
+                Report says mean UtA PI is above the 95th centile
               </label>
-              <label className="flex items-start gap-2 text-sm font-semibold text-slate-800">
-                <input type="checkbox" checked={diabetes} onChange={(e) => setDiabetes(e.target.checked)} className="mt-1 h-4 w-4" />
-                Mother has diabetes (GDM / pre-existing)
+            </Vessel>
+
+            <Vessel title="Ductus venosus (DV)" hint="Fetal heart's filling — abnormal DV means the baby is decompensating.">
+              <label className={label}>PI (optional)
+                <input type="number" inputMode="decimal" aria-label="DV PI" value={dvPi} onChange={(e) => setDvPi(e.target.value)} className={`mt-1 ${field}`} />
               </label>
-            </div>
-            <label className={`mt-3 block ${label}`}>
-              MCA peak systolic velocity (cm/s) — if anaemia suspected (Rh/alloimmunisation, parvovirus)
-              <input type="number" inputMode="decimal" aria-label="MCA PSV" value={psv} onChange={(e) => setPsv(e.target.value)} className={`mt-1 ${field}`} />
+              <span className={`mt-3 block ${label}`}>a-wave</span>
+              <div className="mt-1 grid grid-cols-3 gap-1.5" role="radiogroup" aria-label="Ductus venosus a-wave">
+                {([["positive", "Positive", "normal"], ["absent", "Absent", "abnormal"], ["reversed", "Reversed", "abnormal"]] as const).map(([v, t, sub]) => (
+                  <button key={v} type="button" role="radio" aria-checked={dvWave === v} onClick={() => setDvWave(v)} className={seg(dvWave === v)}>
+                    {t}<span className="block text-[10px] font-bold opacity-75">{sub}</span>
+                  </button>
+                ))}
+              </div>
+              <label className="mt-2 flex items-start gap-2 text-sm font-semibold text-slate-800">
+                <input type="checkbox" checked={dvPiHigh} onChange={(e) => setDvPiHigh(e.target.checked)} className="mt-1 h-4 w-4" />
+                Report says DV PI is above the 95th centile
+              </label>
+            </Vessel>
+
+            <label className="mt-4 flex items-start gap-2 text-sm font-semibold text-slate-800">
+              <input type="checkbox" checked={diabetes} onChange={(e) => setDiabetes(e.target.checked)} className="mt-1 h-4 w-4" />
+              Mother has diabetes (GDM / pre-existing)
             </label>
           </section>
 
@@ -384,8 +453,24 @@ export default function AncScanTool() {
                       note={ageEntry[p.id]?.on ? `From size-age ${ageEntry[p.id].w}+${ageEntry[p.id].d} wk (${lagLabel(ageEntry[p.id].w + ageEntry[p.id].d / 7, ga)}) — approximate` : undefined} />
                   ))}
                   {uaPiN != null && (
-                    <CentileBar name="UA PI" value={String(uaPiN)} c={uaC}
+                    <CentileBar name="UA PI (umbilical artery)" value={String(uaPiN)} c={uaC}
                       note={ga < UA_RANGE.min ? "UA Doppler centiles apply from 24 weeks." : undefined} />
+                  )}
+                  {uaRiN != null && <CentileBar name="UA RI" value={String(uaRiN)} c={uaRiC} />}
+                  {uaSdN != null && <CentileBar name="UA S/D" value={String(uaSdN)} c={uaSdC} />}
+                  {utaMean != null && (
+                    <div className="flex items-baseline justify-between py-2 text-sm">
+                      <span className="font-extrabold text-slate-900">Mean uterine artery PI</span>
+                      <span className="font-black text-slate-900">{utaMean}{utaHigh ? " — > 95th (report)" : ""}</span>
+                    </div>
+                  )}
+                  {(dvPi !== "" || dvWave !== "positive") && (
+                    <div className="flex items-baseline justify-between gap-3 py-2 text-sm">
+                      <span className="font-extrabold text-slate-900">Ductus venosus</span>
+                      <span className={`text-right font-black ${dv !== "normal" ? "text-red-700" : "text-slate-900"}`}>
+                        {dvPi !== "" ? `PI ${dvPi} · ` : ""}a-wave {dvWave}
+                      </span>
+                    </div>
                   )}
                   {cpr != null && (
                     <div className="flex items-baseline justify-between py-2 text-sm">
