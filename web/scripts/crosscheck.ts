@@ -40,7 +40,10 @@ import { IG_BIOMETRY_TABLES } from "./data/igBiometryTables";
 import { BISHOP_ITEMS, bishopTotal, bishopPlan } from "../src/lib/bishopMath";
 import { evaluate } from "../src/lib/calcMath";
 import { isoFromParts } from "../src/components/DateDMY";
-import { cdAdd, cdPause, cdRemaining, cdStart, cdTick, newCountdown, newStopwatch, swElapsed, swLap, swPause, swStart } from "../src/lib/timerMath";
+import { cdAdd, cdPause, cdRemaining, cdStart, cdTick, newCountdown, newStopwatch, swElapsed, swLap, swPause, swStart,
+  newRunClock, runElapsed, runStart, runStop, segStart, segStop, segDuration, openSegment, formatDuration, formatPosition } from "../src/lib/timerMath";
+import { fits } from "../src/lib/lastState";
+import { addHistory, getHistory, clearHistory } from "../src/lib/calcHistory";
 
 // ---------- harness ----------
 let seed = 20261001;
@@ -674,6 +677,73 @@ tool("Timer & stopwatch — 300 random start/pause/+1 min sequences", (check) =>
     }
     s = swLap(swStart(s, t), t);
     check(s.laps[s.laps.length - 1] === swT, () => `lap ${i}`);
+  }
+});
+
+// ---------- Sub-timers within a countdown ----------
+tool("Sub-timers — 500 random runs (pauses, overlapping taps, formats)", (check) => {
+  for (let i = 0; i < 500; i++) {
+    let rc = newRunClock();
+    let segs: { start: number; end: number | null }[] = [];
+    let t = 5e8, run = 0, running = false;
+    const want: { start: number; end: number | null }[] = [];
+    for (let step = 0; step < 16; step++) {
+      const a = pick(["go", "stop", "wait", "wait", "segS", "segE", "segS"]);
+      if (a === "go") { rc = runStart(rc, t); running = true; }
+      if (a === "stop") { rc = runStop(rc, t); running = false; }
+      if (a === "wait") { const dt = Math.floor(uni(0, 90000)); t += dt; if (running) run += dt; }
+      if (a === "segS") { segs = segStart(segs, runElapsed(rc, t)); if (!want.length || want[want.length - 1].end != null) want.push({ start: run, end: null }); }
+      if (a === "segE") { segs = segStop(segs, runElapsed(rc, t)); const o = want[want.length - 1]; if (o && o.end == null) o.end = run; }
+      check(runElapsed(rc, t) === run, () => `run clock seq ${i} step ${step}`);
+      check(JSON.stringify(segs) === JSON.stringify(want), () => `segments seq ${i} step ${step}: ${JSON.stringify(segs)} vs ${JSON.stringify(want)}`);
+    }
+    const open = openSegment(segs);
+    check((open == null) === (want.every((x) => x.end != null)), () => `open segment ${i}`);
+    for (const x of segs) check(segDuration(x, run) === (x.end ?? run) - x.start && segDuration(x, run) >= 0, () => `duration ${i}`);
+  }
+  for (let k = 0; k < 300; k++) {
+    const ms = Math.floor(uni(0, 3 * 3600000));
+    const sec = Math.round(ms / 1000), h = Math.floor(sec / 3600), m = Math.floor((sec % 3600) / 60), s2 = sec % 60;
+    const wantD = h ? `${h} h ${String(m).padStart(2, "0")} min ${String(s2).padStart(2, "0")} s` : m ? `${m} min ${String(s2).padStart(2, "0")} s` : `${s2} s`;
+    check(formatDuration(ms) === wantD, () => `formatDuration ${ms}: ${formatDuration(ms)} want ${wantD}`);
+    const fs = Math.floor(ms / 1000), fh = Math.floor(fs / 3600), fm = Math.floor((fs % 3600) / 60);
+    const wantP = fh ? `${fh}:${String(fm).padStart(2, "0")}:${String(fs % 60).padStart(2, "0")}` : `${fm}:${String(fs % 60).padStart(2, "0")}`;
+    check(formatPosition(ms) === wantP, () => `formatPosition ${ms}`);
+  }
+});
+
+// ---------- Saved entries / Last 5 history ----------
+tool("Remembered entries + Last 5 history — 800 random values and calculations", (check) => {
+  const mem = new Map<string, string>();
+  (globalThis as { localStorage?: unknown }).localStorage = {
+    getItem: (k: string) => (mem.has(k) ? mem.get(k)! : null),
+    setItem: (k: string, v: string) => { mem.set(k, String(v)); },
+    removeItem: (k: string) => { mem.delete(k); },
+  };
+  const samples: [unknown, unknown, boolean][] = [];
+  for (let i = 0; i < 300; i++) {
+    const init = pick(["", 28, null, "hours", false, [] as unknown[]]);
+    const raw = pick([undefined, "", 12, 2.5, Number.NaN, "x", null, true, [1], {}]);
+    let want: boolean;
+    if (raw === undefined) want = false;
+    else if (Array.isArray(init)) want = Array.isArray(raw);
+    else if (init === null || init === "") want = raw === null || ["string", "number", "boolean"].includes(typeof raw);
+    else if (typeof init === "number") want = (typeof raw === "number" && Number.isFinite(raw)) || raw === "";
+    else want = typeof raw === typeof init;
+    samples.push([raw, init, want]);
+  }
+  for (const [raw, init, want] of samples) check(fits(raw, init) === want, () => `fits(${String(raw)}, ${JSON.stringify(init)})`);
+  // History: newest first, max 5, identical result moves to top, per tool.
+  const oracle: Record<string, { title: string; detail: string }[]> = {};
+  for (let i = 0; i < 500; i++) {
+    const toolId = pick(["bmi", "ob", "bili", "crCl"]);
+    const title = `R${Math.floor(rnd() * 8)}`, detail = `d${Math.floor(rnd() * 2)}`;
+    addHistory(toolId, title, detail, 1000 + i);
+    const list = (oracle[toolId] ?? []).filter((e) => !(e.title === title && e.detail === detail));
+    oracle[toolId] = [{ title, detail }, ...list].slice(0, 5);
+    const got = getHistory(toolId).map((e) => ({ title: e.title, detail: e.detail }));
+    check(JSON.stringify(got) === JSON.stringify(oracle[toolId]), () => `history ${toolId} step ${i}`);
+    if (i % 97 === 96) { clearHistory(toolId); oracle[toolId] = []; check(getHistory(toolId).length === 0, () => "history clear"); }
   }
 });
 

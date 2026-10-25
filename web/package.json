@@ -17,7 +17,7 @@
     "test": "tsx scripts/verifyDatabases.ts && tsx scripts/crosscheck.ts && TZ=America/New_York tsx scripts/crosscheck.ts"
   },
   "dependencies": {
-    "@capacitor/android": "^7.6.8",
+    "@capacitor/android": "^7.6.9",
     "@capacitor/app": "^7.1.2",
     "@capacitor/cli": "^7.6.8",
     "@capacitor/core": "^7.6.8",
