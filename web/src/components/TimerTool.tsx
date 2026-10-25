@@ -73,12 +73,12 @@ function Dial({
           </text>
         );
       })}
-      <text x={CX} y={CY - 40} textAnchor="middle" fontSize={digitsA.length + digitsB.length > 8 ? 28 : 34} fontWeight="900"
+      <text x={CX} y={CY - 42} textAnchor="middle" fontSize={digitsA.length + digitsB.length > 8 ? 22 : 26} fontWeight="800"
         style={{ fontVariantNumeric: "tabular-nums" }}>
         <tspan fill={INK}>{digitsA}</tspan>
         <tspan fill={accent}>{digitsB}</tspan>
       </text>
-      <text x={CX} y={CY - 18} textAnchor="middle" fontSize="10" fontWeight="800" fill="#6d6b67" letterSpacing="1.5">{label}</text>
+      <text x={CX} y={CY - 24} textAnchor="middle" fontSize="9" fontWeight="800" fill="#6d6b67" letterSpacing="1.5">{label}</text>
       {subHand != null && (
         <g>
           {Array.from({ length: 30 }, (_, i) => {
