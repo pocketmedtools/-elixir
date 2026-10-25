@@ -1725,6 +1725,8 @@ section("Pediatric DB integrity");
     const got = evaluate(e);
     if (want == null ? got !== null : got == null || Math.abs(got - want) > 1e-9) fail(`calc ${e}: ${got} want ${want}`);
   }
+  const { formatResult } = await import("../src/lib/calcMath");
+  if (formatResult(2566110058871442) !== "2.56611005887e+15" || formatResult(1234567.5) !== "12,34,567.5" || formatResult(0.3) !== "0.3") fail("calculator display formatting");
   console.log("calculator: precedence, brackets, unary minus, %, float rounding, invalid input OK");
 }
 

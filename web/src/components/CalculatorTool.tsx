@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import { usePersist } from "../lib/lastState";
 import { evaluate, formatResult } from "../lib/calcMath";
 
@@ -58,10 +58,33 @@ export default function CalculatorTool() {
   const plain = /^-?\d*\.?\d+$/.test(expr);
   const result = live != null && !plain ? formatResult(live) : null;
   const main = result ?? (expr || "0");
+  // Panel runs from just under the header to the very bottom of the screen;
+  // keys sit at the bottom, so all the space above is for long sums.
+  const panel = useRef<HTMLElement>(null);
+  const [height, setHeight] = useState<number | null>(null);
+  useEffect(() => {
+    const fit = () => {
+      const el = panel.current;
+      if (!el) return;
+      const top = el.getBoundingClientRect().top + window.scrollY;
+      setHeight(Math.max(420, window.innerHeight - top - 6));
+    };
+    fit();
+    window.addEventListener("resize", fit);
+    // The header can grow after mount (recent-tools row), so re-fit on its size changes.
+    const header = document.querySelector("header");
+    const ro = header && typeof ResizeObserver !== "undefined" ? new ResizeObserver(fit) : null;
+    if (header && ro) ro.observe(header);
+    return () => {
+      window.removeEventListener("resize", fit);
+      ro?.disconnect();
+    };
+  }, []);
   return (
     <div className="mx-auto max-w-md px-2 pt-2">
       <h2 className="sr-only">Calculator</h2>
-      <section className="flex min-h-[calc(100dvh-7.5rem)] flex-col rounded-[2rem] bg-black px-4 pb-5 pt-4 text-white">
+      <section ref={panel} style={height ? { height } : undefined}
+        className={`flex ${height ? "" : "min-h-[calc(100dvh-7.5rem)]"} flex-col rounded-t-[2rem] rounded-b-[1.5rem] bg-black px-4 pb-4 pt-4 text-white`}>
         {history.length > 0 && (
           <div className="flex items-start justify-between gap-2 text-sm text-[#8e8e93]" style={{ fontVariantNumeric: "tabular-nums" }}>
             <button type="button" onClick={() => setHistory([])} className="text-xs font-semibold underline">Clear</button>
@@ -74,9 +97,9 @@ export default function CalculatorTool() {
             </ul>
           </div>
         )}
-        <div className="mt-auto pb-3 text-right" aria-live="polite" style={{ fontVariantNumeric: "tabular-nums" }}>
+        <div className="mt-auto min-h-0 overflow-y-auto pb-3 text-right" aria-live="polite" style={{ fontVariantNumeric: "tabular-nums" }}>
           <p className={`min-h-[1.75rem] break-all text-2xl font-light text-[#a5a5aa] ${result ? "" : "invisible"}`}>{expr || "0"}</p>
-          <p className={`break-all font-light leading-none ${main.length > 14 ? "text-4xl" : main.length > 9 ? "text-5xl" : "text-7xl"}`}>{main}</p>
+          <p className={`break-all font-light leading-none ${main.length > 24 ? "text-3xl" : main.length > 14 ? "text-4xl" : main.length > 9 ? "text-5xl" : "text-7xl"}`}>{main}</p>
         </div>
         <div className="grid grid-cols-4 gap-3">
           {KEYS.flat().map(({ k, kind }) => (
