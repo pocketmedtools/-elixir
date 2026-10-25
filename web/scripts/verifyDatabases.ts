@@ -1701,6 +1701,22 @@ section("Pediatric DB integrity");
   console.log("modified Bishop: 0–13 range, worked example, NICE bands (≤6 / >6), previous-CS advice OK");
 }
 
+// ---------- Calculator ----------
+{
+  console.log("\n=== Calculator suite ===");
+  const { evaluate } = await import("../src/lib/calcMath");
+  const cases: [string, number | null][] = [
+    ["2+3×4", 14], ["(2+3)×4", 20], ["10÷4", 2.5], ["0.1+0.2", 0.3], ["−5+2", -3], ["2×−3", -6],
+    ["50%", 0.5], ["200×15%", 30], ["7−2−1", 4], ["8÷2÷2", 2], ["1÷0", null], ["2+", null], ["(1+2", null],
+    ["1.2.3", null], ["3×(2+(1+1))", 12], ["70÷1.75÷1.75", 22.8571428571],
+  ];
+  for (const [e, want] of cases) {
+    const got = evaluate(e);
+    if (want == null ? got !== null : got == null || Math.abs(got - want) > 1e-9) fail(`calc ${e}: ${got} want ${want}`);
+  }
+  console.log("calculator: precedence, brackets, unary minus, %, float rounding, invalid input OK");
+}
+
 // ---------- Result ----------
 console.log("\n========== VERIFY RESULT ==========");
 if (failures.length) {

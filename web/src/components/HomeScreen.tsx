@@ -27,7 +27,11 @@ export const TOOL_SECTIONS: {
   },
   {
     heading: "Utilities",
-    tools: [{ id: "timer", title: "Timer / Stopwatch" }],
+    tools: [
+      { id: "timer", title: "Timer / Stopwatch" },
+      { id: "calc", title: "Calculator" },
+      { id: "calendar", title: "Calendar" },
+    ],
   },
   {
     heading: "Medicine",

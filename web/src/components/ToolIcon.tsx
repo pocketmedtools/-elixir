@@ -16,6 +16,8 @@ import {
   Timer,
   ScanLine,
   Gauge,
+  Calculator,
+  CalendarDays,
   type LucideIcon,
 } from "lucide-react";
 import type { MenuTarget } from "./SideMenu";
@@ -36,6 +38,8 @@ const ICONS: Record<MenuTarget, LucideIcon> = {
   timer: Timer,
   ancScan: ScanLine,
   bishop: Gauge,
+  calc: Calculator,
+  calendar: CalendarDays,
   saved: Bookmark,
   report: Flag,
 };
@@ -54,9 +58,11 @@ export const TOOL_BG: Record<MenuTarget, string> = {
   regimen: "bg-[#800000]",
   insulin: "bg-[#0f3460]",
   ob: "bg-[#700168]",
-  timer: "bg-[#132238]",
+  timer: "bg-[#7e22ce]",
   ancScan: "bg-[#4b3b8f]",
   bishop: "bg-[#7a2e52]",
+  calc: "bg-[#3a3733]",
+  calendar: "bg-[#2a7f7f]",
   saved: "bg-[#3a3733]",
   report: "bg-[#7e2f01]",
 };
@@ -78,6 +84,8 @@ export const TOOL_SOFT: Record<MenuTarget, string> = {
   timer: "border-[#e3cda8] bg-[#fcf4e6]",
   ancScan: "border-[#e3cda8] bg-[#fcf4e6]",
   bishop: "border-[#e3cda8] bg-[#fcf4e6]",
+  calc: "border-[#e3cda8] bg-[#fcf4e6]",
+  calendar: "border-[#e3cda8] bg-[#fcf4e6]",
   saved: "border-[#e3cda8] bg-[#fcf4e6]",
   report: "border-[#e3cda8] bg-[#fcf4e6]",
 };
@@ -95,9 +103,11 @@ export const TOOL_TEXT: Record<MenuTarget, string> = {
   regimen: "text-[#800000]",
   insulin: "text-[#0f3460]",
   ob: "text-[#700168]",
-  timer: "text-[#132238]",
+  timer: "text-[#7e22ce]",
   ancScan: "text-[#4b3b8f]",
   bishop: "text-[#7a2e52]",
+  calc: "text-[#3a3733]",
+  calendar: "text-[#2a7f7f]",
   saved: "text-[#3a3733]",
   report: "text-[#7e2f01]",
 };
@@ -115,9 +125,11 @@ export const TOOL_HEX: Record<MenuTarget, string> = {
   regimen: "#800000",
   insulin: "#0f3460",
   ob: "#700168",
-  timer: "#132238",
+  timer: "#7e22ce",
   ancScan: "#4b3b8f",
   bishop: "#7a2e52",
+  calc: "#3a3733",
+  calendar: "#2a7f7f",
   saved: "#3a3733",
   report: "#7e2f01",
 };
