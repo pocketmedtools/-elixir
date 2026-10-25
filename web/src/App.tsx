@@ -18,6 +18,7 @@ import CalculatorTool from "./components/CalculatorTool";
 import CalendarTool from "./components/CalendarTool";
 import TimerFloat from "./components/TimerFloat";
 import NotesTool from "./components/NotesTool";
+import { NotebookPen } from "lucide-react";
 import ToolHistory from "./components/ToolHistory";
 import { setActiveTool } from "./lib/calcHistory";
 import NewbornWeightLoss from "./components/NewbornWeightLoss";
@@ -324,9 +325,9 @@ export default function App() {
               type="button"
               aria-label="Notes"
               onClick={() => setTab("notes")}
-              className={`rounded-lg border-2 px-2.5 py-1 text-lg leading-none ${tab === "notes" ? "border-black bg-black text-white" : "border-slate-300 bg-white text-slate-800"}`}
+              className={`rounded-lg border-2 px-2.5 py-1.5 leading-none transition active:scale-90 ${tab === "notes" ? "border-black bg-black text-white" : "border-slate-300 bg-white text-slate-800"}`}
             >
-              📝
+              <NotebookPen size={20} strokeWidth={2.2} />
             </button>
             {native && (
               <button
