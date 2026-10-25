@@ -1,0 +1,20 @@
+# Monthly update proposals (as pull requests, never merged automatically) so
+# Capacitor/Android support and build tools keep up with new phones. Every
+# proposal is tested by the "Weekly health check and backup" workflow.
+version: 2
+updates:
+  - package-ecosystem: npm
+    directory: /web
+    schedule:
+      interval: monthly
+    open-pull-requests-limit: 3
+    groups:
+      all-packages:
+        patterns: ["*"]
+  - package-ecosystem: github-actions
+    directory: /
+    schedule:
+      interval: monthly
+    groups:
+      all-actions:
+        patterns: ["*"]
