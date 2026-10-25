@@ -30,7 +30,6 @@ const LINK_GROUPS: {
     ],
   },
   { heading: "OBG", links: [{ id: "ob", label: "OB / EDD" }, { id: "ancScan", label: "ANC Scan (Growth & Doppler)" }, { id: "bishop", label: "Modified Bishop Score" }] },
-  { heading: "Utilities", links: [{ id: "timer", label: "Timer / Stopwatch" }, { id: "calc", label: "Calculator" }, { id: "calendar", label: "Calendar" }] },
   {
     heading: "Medicine",
     links: [
@@ -40,6 +39,7 @@ const LINK_GROUPS: {
       { id: "bmi", label: "BMI" },
     ],
   },
+  { heading: "General", links: [{ id: "timer", label: "Timer / Stopwatch" }, { id: "calc", label: "Calculator" }, { id: "calendar", label: "Calendar" }] },
   {
     heading: null,
     links: [
