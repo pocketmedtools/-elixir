@@ -175,3 +175,73 @@ export function deleteEntry(id: string) {
   write(ENTRIES_KEY, entries.filter((e) => e.id !== id));
   emit();
 }
+
+// ---------- Forgot password: phone number + 4-digit code ----------
+/**
+ * Accounts live on this device, so there is no server to send an SMS from.
+ * `requestPasswordReset` is the seam: today it hands the code back to the screen;
+ * with an SMS provider (e.g. Firebase Phone Auth) it would text it instead.
+ */
+const CODE_TTL_MS = 5 * 60000;
+const MAX_TRIES = 5;
+
+type PendingReset = { phone: string; code: string; expires: number; tries: number; verified: boolean };
+let pending: PendingReset | null = null;
+
+function fourDigits(): string {
+  const n = new Uint32Array(1);
+  crypto.getRandomValues(n);
+  return String(n[0] % 10000).padStart(4, "0");
+}
+
+export type ResetStart =
+  | { ok: true; code: string; expiresInMin: number }
+  | { ok: false; error: string };
+
+/** Step 1: phone number must belong to an account on this device. */
+export function requestPasswordReset(phone: string, now = Date.now()): ResetStart {
+  const ph = phone.trim();
+  if (!getProfiles().some((p) => p.phone === ph))
+    return { ok: false, error: "No account with this phone number on this device." };
+  pending = { phone: ph, code: fourDigits(), expires: now + CODE_TTL_MS, tries: 0, verified: false };
+  return { ok: true, code: pending.code, expiresInMin: CODE_TTL_MS / 60000 };
+}
+
+/** Step 2: check the 4-digit code (5 tries, valid 5 minutes). */
+export function verifyResetCode(phone: string, code: string, now = Date.now()): { ok: true } | { ok: false; error: string } {
+  const ph = phone.trim();
+  if (!pending || pending.phone !== ph) return { ok: false, error: "Request a new code first." };
+  if (now > pending.expires) {
+    pending = null;
+    return { ok: false, error: "Code expired — tap Resend code." };
+  }
+  if (pending.tries >= MAX_TRIES) {
+    pending = null;
+    return { ok: false, error: "Too many wrong tries — tap Resend code." };
+  }
+  if (code.trim() !== pending.code) {
+    pending.tries++;
+    const left = MAX_TRIES - pending.tries;
+    if (left <= 0) pending = null;
+    return { ok: false, error: left > 0 ? `Wrong code — ${left} ${left === 1 ? "try" : "tries"} left.` : "Too many wrong tries — tap Resend code." };
+  }
+  pending.verified = true;
+  return { ok: true };
+}
+
+/** Step 3: set the new password (only after the code was verified) and sign in. */
+export async function resetPassword(phone: string, newPassword: string, now = Date.now()): Promise<AuthResult> {
+  const ph = phone.trim();
+  if (!pending || pending.phone !== ph || !pending.verified || now > pending.expires + CODE_TTL_MS)
+    return { ok: false, error: "Verify the code first." };
+  if (newPassword.length < 6)
+    return { ok: false, error: "Password must be at least 6 digits or characters." };
+  const profile = getProfiles().find((p) => p.phone === ph);
+  if (!profile) return { ok: false, error: "No account with this phone number on this device." };
+  const updated = { ...profile, passHash: await hashPassword(ph, newPassword) };
+  write(PROFILES_KEY, getProfiles().map((p) => (p.id === profile.id ? updated : p)));
+  write(CURRENT_KEY, profile.id);
+  pending = null;
+  emit();
+  return { ok: true, profile: updated };
+}

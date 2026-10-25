@@ -2,10 +2,13 @@ import { useState, useSyncExternalStore } from "react";
 import {
   getCurrentProfile,
   getVersion,
+  requestPasswordReset,
+  resetPassword,
   signIn,
   signOut,
   signUp,
   subscribe,
+  verifyResetCode,
 } from "../lib/accounts";
 import { APK_URL, isWebsite } from "../lib/platform";
 import ToolIcon, { TOOL_TEXT } from "./ToolIcon";
@@ -63,7 +66,7 @@ export default function SideMenu({
 }) {
   useSyncExternalStore(subscribe, getVersion);
   const profile = getCurrentProfile();
-  const [mode, setMode] = useState<"signin" | "signup">("signin");
+  const [mode, setMode] = useState<"signin" | "signup" | "forgot">("signin");
   const [phone, setPhone] = useState("");
   const [password, setPassword] = useState("");
   const [err, setErr] = useState<string | null>(null);
@@ -161,6 +164,11 @@ export default function SideMenu({
                 Sign out
               </button>
             </>
+          ) : mode === "forgot" ? (
+            <ForgotPassword
+              initialPhone={phone}
+              onDone={() => { setPhone(""); setPassword(""); setErr(null); setMode("signin"); }}
+            />
           ) : (
             <>
               <div className="flex rounded-lg bg-slate-100 p-1 text-xs font-semibold">
@@ -195,6 +203,15 @@ export default function SideMenu({
                 className={inputCls}
               />
               {err && <p className="mt-1 text-xs text-red-700">{err}</p>}
+              {mode === "signin" && (
+                <button
+                  type="button"
+                  onClick={() => { setErr(null); setMode("forgot"); }}
+                  className="mt-1.5 text-xs font-bold text-sky-800 underline"
+                >
+                  Forgot password?
+                </button>
+              )}
               <button
                 type="button"
                 onClick={submit}
@@ -213,3 +230,93 @@ export default function SideMenu({
     </div>
   );
 }
+
+/** Forgot password: phone number → 4-digit code → new password. */
+function ForgotPassword({ initialPhone, onDone }: { initialPhone: string; onDone: () => void }) {
+  const [step, setStep] = useState<"phone" | "code" | "newpass">("phone");
+  const [phone, setPhone] = useState(initialPhone);
+  const [code, setCode] = useState("");
+  const [shown, setShown] = useState<string | null>(null);
+  const [pw, setPw] = useState("");
+  const [pw2, setPw2] = useState("");
+  const [err, setErr] = useState<string | null>(null);
+  const [busy, setBusy] = useState(false);
+
+  const send = () => {
+    setErr(null);
+    setCode("");
+    const r = requestPasswordReset(phone);
+    if (!r.ok) { setErr(r.error); return; }
+    setShown(r.code);
+    setStep("code");
+  };
+  const check = () => {
+    const r = verifyResetCode(phone, code);
+    if (!r.ok) { setErr(r.error); return; }
+    setErr(null);
+    setStep("newpass");
+  };
+  const save = async () => {
+    if (pw !== pw2) { setErr("The two passwords don't match."); return; }
+    setBusy(true);
+    const r = await resetPassword(phone, pw);
+    setBusy(false);
+    if (!r.ok) { setErr(r.error); return; }
+    onDone();
+  };
+
+  return (
+    <div>
+      <p className="text-sm font-black text-slate-900">Reset password</p>
+      <p className="mt-0.5 text-[11px] font-semibold text-slate-500">
+        Step {step === "phone" ? 1 : step === "code" ? 2 : 3} of 3 —{" "}
+        {step === "phone" ? "your phone number" : step === "code" ? "enter the 4-digit code" : "choose a new password"}
+      </p>
+
+      {step === "phone" && (
+        <>
+          <input value={phone} onChange={(e) => setPhone(e.target.value)} placeholder="Registered phone number"
+            inputMode="tel" className={inputCls} />
+          {err && <p className="mt-1 text-xs text-red-700">{err}</p>}
+          <button type="button" onClick={send} className={primaryCls}>Send code</button>
+        </>
+      )}
+
+      {step === "code" && (
+        <>
+          {shown && (
+            <div className="mt-2 rounded-lg border-2 border-sky-200 bg-sky-50 px-3 py-2">
+              <p className="text-[11px] font-bold text-sky-900">Your code for {phone}</p>
+              <p className="text-2xl font-black tracking-[0.4em] text-sky-950" data-testid="reset-code">{shown}</p>
+              <p className="text-[10px] leading-snug text-sky-900">Valid 5 minutes. Accounts are kept on this phone only, so the code is shown here.</p>
+            </div>
+          )}
+          <input value={code} onChange={(e) => setCode(e.target.value.replace(/\D/g, "").slice(0, 4))}
+            placeholder="• • • •" inputMode="numeric" autoComplete="one-time-code" maxLength={4} aria-label="4-digit code"
+            className={`${inputCls} text-center text-xl font-black tracking-[0.5em]`} />
+          {err && <p className="mt-1 text-xs text-red-700">{err}</p>}
+          <button type="button" onClick={check} disabled={code.length !== 4} className={primaryCls}>Verify code</button>
+          <button type="button" onClick={send} className="mt-1.5 text-xs font-bold text-sky-800 underline">Resend code</button>
+        </>
+      )}
+
+      {step === "newpass" && (
+        <>
+          <input value={pw} onChange={(e) => setPw(e.target.value)} placeholder="New password (min 6)" type="password"
+            inputMode="numeric" className={inputCls} />
+          <input value={pw2} onChange={(e) => setPw2(e.target.value)} placeholder="Repeat new password" type="password"
+            inputMode="numeric" className={inputCls} />
+          {err && <p className="mt-1 text-xs text-red-700">{err}</p>}
+          <button type="button" onClick={save} disabled={busy} className={primaryCls}>Save & sign in</button>
+        </>
+      )}
+
+      <button type="button" onClick={onDone} className="mt-2 block text-xs font-semibold text-slate-600 underline">
+        ← Back to sign in
+      </button>
+    </div>
+  );
+}
+
+const primaryCls =
+  "mt-2 w-full rounded-lg bg-slate-900 px-3 py-2 text-sm font-semibold text-white hover:bg-slate-800 disabled:opacity-50";
