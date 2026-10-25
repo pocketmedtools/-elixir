@@ -3,7 +3,7 @@ import { usePersist } from "../lib/lastState";
 import { evaluate, formatResult } from "../lib/calcMath";
 
 const KEYS: { k: string; kind?: "op" | "fn" | "eq" }[][] = [
-  [{ k: "AC", kind: "fn" }, { k: "⌫", kind: "fn" }, { k: "%", kind: "fn" }, { k: "÷", kind: "op" }],
+  [{ k: "⌫", kind: "fn" }, { k: "AC", kind: "fn" }, { k: "%", kind: "fn" }, { k: "÷", kind: "op" }],
   [{ k: "7" }, { k: "8" }, { k: "9" }, { k: "×", kind: "op" }],
   [{ k: "4" }, { k: "5" }, { k: "6" }, { k: "−", kind: "op" }],
   [{ k: "1" }, { k: "2" }, { k: "3" }, { k: "+", kind: "op" }],
