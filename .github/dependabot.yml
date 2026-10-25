@@ -8,6 +8,11 @@ updates:
     schedule:
       interval: monthly
     open-pull-requests-limit: 3
+    # Major versions (e.g. a new Capacitor) change the Android app and need a
+    # planned, tested upgrade - not an automatic proposal.
+    ignore:
+      - dependency-name: "*"
+        update-types: ["version-update:semver-major"]
     groups:
       all-packages:
         patterns: ["*"]
@@ -15,6 +20,9 @@ updates:
     directory: /
     schedule:
       interval: monthly
+    ignore:
+      - dependency-name: "*"
+        update-types: ["version-update:semver-major"]
     groups:
       all-actions:
         patterns: ["*"]
