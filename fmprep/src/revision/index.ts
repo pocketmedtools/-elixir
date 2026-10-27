@@ -39,25 +39,30 @@ for (const [path, load] of Object.entries(MODULES)) LOADERS[path.slice(2, -3)] =
 
 const loaded = new Map<string, RevisionSet>();
 
+/** A subject's modules: "<subject>.ts" plus any "<subject>--<part>.ts" (master-library topics). */
+function loadersFor(subjectId: string) {
+  return Object.entries(LOADERS)
+    .filter(([key]) => key === subjectId || key.startsWith(`${subjectId}--`))
+    .map(([, load]) => load);
+}
+
 export async function ensureRevision(subjectId: string): Promise<RevisionSet> {
   const cached = loaded.get(subjectId);
   if (cached) return cached;
-  const load = LOADERS[subjectId];
-  if (!load) return {};
-  try {
-    const mod = await load();
-    loaded.set(subjectId, mod.default);
-    return mod.default;
-  } catch {
-    loaded.set(subjectId, {});
-    return {};
-  }
+  const loads = loadersFor(subjectId);
+  if (!loads.length) return {};
+  const parts = await Promise.all(loads.map((load) => load().then((m) => m.default).catch(() => ({}) as RevisionSet)));
+  const set: RevisionSet = Object.assign({}, ...parts);
+  loaded.set(subjectId, set);
+  return set;
 }
 
 export async function allRevision(): Promise<Record<string, TopicRevision>> {
   const out: Record<string, TopicRevision> = {};
   await Promise.all(
-    Object.keys(LOADERS).map(async (id) => Object.assign(out, await ensureRevision(id))),
+    [...new Set(Object.keys(LOADERS).map((k) => k.split("--")[0]))].map(async (id) =>
+      Object.assign(out, await ensureRevision(id)),
+    ),
   );
   return out;
 }

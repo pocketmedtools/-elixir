@@ -266,6 +266,15 @@ const EXTRA_LOADERS: Record<string, () => Promise<{ default: Topic[] }>> = {
 };
 
 /**
+ * The master library: the full textbook-depth topic list for a subject
+ * (Harrison-level coverage, OPD and IPD), written in batches under
+ * library/<subject>/ and appended after the subject's own and extra topics.
+ */
+const LIBRARY_LOADERS: Record<string, () => Promise<{ default: Topic[] }>> = {
+  cardiovascular: () => import("./library/cardiovascular"),
+};
+
+/**
  * Topics rewritten to the house order - relevant classification,
  * pathophysiology, OPD history, examination, minimal investigations,
  * treatment in detail, follow-up. A rewrite replaces the topic's one-liner,
@@ -374,7 +383,10 @@ export function ensureSubject(id: string): Promise<Subject | null> {
   if (!loader) return Promise.resolve(null);
 
   const scores = SCORE_LOADERS[id]?.() ?? Promise.resolve({ default: {} as ScoreBank });
-  const extra = EXTRA_LOADERS[id]?.() ?? Promise.resolve({ default: [] as Topic[] });
+  const extra = Promise.all([
+    EXTRA_LOADERS[id]?.() ?? Promise.resolve({ default: [] as Topic[] }),
+    LIBRARY_LOADERS[id]?.() ?? Promise.resolve({ default: [] as Topic[] }),
+  ]).then(([a, b]) => ({ default: [...a.default, ...b.default] }));
   const rewrites = REWRITE_LOADERS[id]?.() ?? Promise.resolve({ default: {} as RewriteBank });
   const promise = Promise.all([loader(), scores, extra, rewrites])
     .then(([module, bank, more, rw]) => {
