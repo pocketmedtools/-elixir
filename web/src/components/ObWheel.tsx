@@ -1,4 +1,4 @@
-import { formatDate } from "../lib/obMath";
+import { formatDMY } from "../lib/obMath";
 
 /**
  * Pregnancy wheel drawn from the patient's own dates: a 40-week dial with
@@ -32,12 +32,14 @@ const TRIMESTERS = [
 
 export default function ObWheel({
   lmp,
+  lmpLabel = "LMP (wk 0)",
   edd,
   gaDays,
   gaLabel,
   trimester,
 }: {
   lmp: Date;
+  lmpLabel?: string;
   edd: Date;
   gaDays: number;
   gaLabel: string;
@@ -98,8 +100,8 @@ export default function ObWheel({
       </div>
       <div className="mt-2 grid grid-cols-3 gap-2 text-center text-xs">
         <div className="rounded-md bg-sky-50 px-2 py-1.5">
-          <p className="font-bold text-sky-900">LMP (wk 0)</p>
-          <p className="text-slate-700">{formatDate(lmp)}</p>
+          <p className="font-bold text-sky-900">{lmpLabel}</p>
+          <p className="text-slate-700">{formatDMY(lmp)}</p>
         </div>
         <div className="rounded-md bg-slate-100 px-2 py-1.5">
           <p className="font-bold text-slate-900">Today</p>
@@ -107,7 +109,7 @@ export default function ObWheel({
         </div>
         <div className="rounded-md bg-pink-50 px-2 py-1.5">
           <p className="font-bold text-pink-900">EDD (wk 40)</p>
-          <p className="text-slate-700">{formatDate(edd)}</p>
+          <p className="text-slate-700">{formatDMY(edd)}</p>
         </div>
       </div>
       <p className="mt-2 text-xs text-slate-600">

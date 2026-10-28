@@ -1,4 +1,4 @@
-import { useMemo, useState } from "react";
+import { useEffect, useMemo, useState } from "react";
 import DateDMY from "./DateDMY";
 import { usePersist } from "../lib/lastState";
 import { searchDrugs } from "../clinical/clinicalData";
@@ -15,7 +15,10 @@ import {
   calculateGestation,
   diffDays,
   formatDate,
+  formatDMY,
+  isValidCycle,
   naegeleEdd,
+  scanGaDays,
   type ObMethod,
 } from "../lib/obMath";
 import SaveButton from "./SaveButton";
@@ -29,7 +32,36 @@ const METHODS: { id: ObMethod; label: string; dateLabel: string }[] = [
   { id: "ovulation", label: "Ovulation / IUI", dateLabel: "Ovulation / IUI date" },
 ];
 
+/**
+ * Today's date that moves on at midnight (and when the app comes back to the
+ * front), so a screen left open overnight never shows yesterday's GA.
+ */
+function useToday(): Date {
+  const key = () => new Date().toDateString();
+  const [day, setDay] = useState(key);
+  useEffect(() => {
+    const check = () => setDay((d) => (d === key() ? d : key()));
+    const t = window.setInterval(check, 30000);
+    document.addEventListener("visibilitychange", check);
+    return () => {
+      window.clearInterval(t);
+      document.removeEventListener("visibilitychange", check);
+    };
+  }, []);
+  return useMemo(() => new Date(day), [day]);
+}
+
+const METHOD_NAMES: Record<ObMethod, string> = {
+  lmp: "LMP",
+  scan: "Scan — GA on the scan",
+  edd: "Scan — EDD printed on the report",
+  ivf5: "IVF day-5 transfer",
+  ivf3: "IVF day-3 transfer",
+  ovulation: "Ovulation / IUI",
+};
+
 export default function ObCalculator() {
+  const today = useToday();
   const [method, setMethod] = usePersist<ObMethod>("ob", "method", "lmp");
   // Scan (USG) covers both entries in one place: GA read on the scan, or the
   // EDD printed on the report (which back-calculates the LMP).
@@ -68,34 +100,43 @@ export default function ObCalculator() {
     return r.valid ? r.crCl : null;
   }, [momAge, momWeight, scr]);
 
-  const gaAtScan =
-    scanWeeks === "" ? null : Number(scanWeeks) * 7 + (scanDays === "" ? 0 : Number(scanDays));
-
   const effMethod: ObMethod = method === "scan" && scanMode === "edd" ? "edd" : method;
+
+  const scanGa = effMethod === "scan" ? scanGaDays(scanWeeks, scanDays) : null;
+  const gaAtScan = scanGa && "days" in scanGa ? scanGa.days : null;
+  const scanError = scanGa && "error" in scanGa ? scanGa.error : null;
+
+  // Blank cycle = standard 28 days; anything else must be a whole 20–45.
+  const cycleDays = cycle === "" ? 28 : cycle;
+  const cycleError =
+    effMethod === "lmp" && !isValidCycle(cycleDays)
+      ? "Cycle length must be a whole number of days from 20 to 45 — no EDD until corrected."
+      : null;
 
   const result = useMemo(() => {
     if (!dateStr) return null;
     if (effMethod === "scan" && gaAtScan == null) return null;
+    if (cycleError) return null;
     return calculateGestation(
       effMethod,
       new Date(dateStr + "T00:00:00"),
-      new Date(),
-      cycle === "" ? 28 : Number(cycle),
+      today,
+      cycleDays,
       gaAtScan ?? undefined,
     );
-  }, [effMethod, dateStr, cycle, gaAtScan]);
+  }, [effMethod, dateStr, cycleDays, cycleError, gaAtScan, today]);
 
   // Naegele's calendar rule alongside the 280-day EDD (LMP method only).
   const naegele = useMemo(() => {
     if (effMethod !== "lmp" || !result || !dateStr) return null;
-    const date = naegeleEdd(new Date(dateStr + "T00:00:00"), cycle === "" ? 28 : Number(cycle));
+    const date = naegeleEdd(new Date(dateStr + "T00:00:00"), cycleDays);
     return { date, diff: diffDays(result.edd, date) };
-  }, [effMethod, result, dateStr, cycle]);
+  }, [effMethod, result, dateStr, cycleDays]);
 
   // LMP vs scan comparison per ACOG CO 700 when both are entered.
   const redating = useMemo(() => {
     if (effMethod !== "scan" || !result || !lmpCompare || gaAtScan == null) return null;
-    const lmpRes = calculateGestation("lmp", new Date(lmpCompare + "T00:00:00"), new Date(), 28);
+    const lmpRes = calculateGestation("lmp", new Date(lmpCompare + "T00:00:00"), today, 28);
     if (!lmpRes) return null;
     const diff = Math.abs(diffDays(lmpRes.edd, result.edd));
     const { threshold, window } = acogRedatingThresholdDays(gaAtScan);
@@ -107,7 +148,7 @@ export default function ObCalculator() {
       window,
       useScan: diff > threshold,
     };
-  }, [effMethod, result, lmpCompare, gaAtScan]);
+  }, [effMethod, result, lmpCompare, gaAtScan, today]);
 
   const active = METHODS.find((m) => m.id === method)!;
 
@@ -220,16 +261,37 @@ export default function ObCalculator() {
                   const v = e.target.value;
                   setCycle(v === "" ? "" : Number(v));
                 }}
-                className="mt-1 w-full rounded-lg border border-slate-200 px-3 py-2.5 text-base outline-none focus:ring-2 focus:ring-fuchsia-500"
+                className={`mt-1 w-full rounded-lg border px-3 py-2.5 text-base outline-none focus:ring-2 focus:ring-fuchsia-500 ${
+                  cycleError ? "border-red-500 bg-red-50" : cycleDays !== 28 ? "border-amber-500 bg-amber-50" : "border-slate-200"
+                }`}
               />
+              {cycleError && <span className="mt-1 block text-xs font-bold text-red-700">{cycleError}</span>}
             </label>
+          )}
+          {scanError && (
+            <p className="text-xs font-bold text-red-700 sm:col-span-2">{scanError} No EDD until corrected.</p>
           )}
         </div>
       </section>
 
       {result ? (
         <div className="mt-4 rounded-lg border border-slate-200 bg-white p-4 shadow-sm">
-          <p className="text-sm font-semibold text-slate-700">Today</p>
+          <p className="rounded-md bg-slate-100 px-3 py-2 text-xs font-bold text-slate-800" data-testid="ob-dated-from">
+            Calculated from: {METHOD_NAMES[effMethod]}{" "}
+            {formatDMY(new Date(dateStr + "T00:00:00"))}
+            {effMethod === "lmp" && ` · ${cycleDays}-day cycle`}
+            {effMethod === "scan" && gaAtScan != null && ` · ${Math.floor(gaAtScan / 7)}w${gaAtScan % 7}d on that day`}
+          </p>
+          {effMethod === "lmp" && cycleDays !== 28 && (
+            <div className="mt-2 rounded-md border-2 border-amber-400 bg-amber-50 px-3 py-2 text-xs font-semibold text-amber-950">
+              EDD moved {cycleDays > 28 ? "later" : "earlier"} by {Math.abs(cycleDays - 28)} day
+              {Math.abs(cycleDays - 28) === 1 ? "" : "s"} for a {cycleDays}-day cycle.{" "}
+              <button type="button" onClick={() => setCycle(28)} className="font-black text-amber-900 underline">
+                Regular 28-day cycle? Reset
+              </button>
+            </div>
+          )}
+          <p className="mt-3 text-sm font-semibold text-slate-700">Today ({formatDMY(today)})</p>
           <p className="mt-1 text-3xl font-bold text-slate-900">
             {result.gaLabel}
           </p>
@@ -238,15 +300,16 @@ export default function ObCalculator() {
               <dt className="text-[11px] font-semibold uppercase tracking-wide text-slate-500">
                 EDD
               </dt>
-              <dd className="text-lg font-bold text-slate-900">
-                {formatDate(result.edd)}
+              <dd className="text-xl font-black text-slate-900" data-testid="ob-edd">
+                {formatDMY(result.edd)}
               </dd>
+              <dd className="text-xs font-semibold text-slate-600">{formatDate(result.edd)}</dd>
               {naegele && (
                 <dd className="mt-0.5 text-[11px] font-semibold leading-snug text-slate-600">
                   LMP + 280 days (standard).{" "}
                   {naegele.diff === 0
                     ? "Naegele's rule (+9 months +7 days) gives the same date."
-                    : `Naegele's rule (+9 months +7 days) gives ${formatDate(naegele.date)} — ${Math.abs(naegele.diff)} day${Math.abs(naegele.diff) === 1 ? "" : "s"} ${naegele.diff > 0 ? "later" : "earlier"}, because months differ in length.`}
+                    : `Naegele's rule (+9 months +7 days) gives ${formatDMY(naegele.date)} — ${Math.abs(naegele.diff)} day${Math.abs(naegele.diff) === 1 ? "" : "s"} ${naegele.diff > 0 ? "later" : "earlier"}, because months differ in length.`}
                 </dd>
               )}
             </div>
@@ -264,7 +327,7 @@ export default function ObCalculator() {
                 Conception (est.)
               </dt>
               <dd className="text-lg font-bold text-slate-900">
-                {formatDate(result.conceptionDate)}
+                {formatDMY(result.conceptionDate)}
               </dd>
             </div>
             {method !== "lmp" && (
@@ -275,14 +338,14 @@ export default function ObCalculator() {
                     : "Working LMP (calculated)"}
                 </dt>
                 <dd className="text-lg font-bold text-slate-900">
-                  {formatDate(result.derivedLmp)}
+                  {formatDMY(result.derivedLmp)}
                 </dd>
               </div>
             )}
           </dl>
           {(effMethod === "scan" || effMethod === "edd") && (
             <p className="mt-2 text-xs text-slate-600">
-              LMP unknown? Use this calculated LMP ({formatDate(result.derivedLmp)})
+              LMP unknown? Use this calculated LMP ({formatDMY(result.derivedLmp)})
               as the working LMP for records and gestational charting —{" "}
               {effMethod === "edd"
                 ? "it is the EDD minus 280 days (Naegele reversed)."
@@ -306,14 +369,15 @@ export default function ObCalculator() {
       )}
       {result && (
         <ObWheel
-          lmp={result.derivedLmp}
+          lmp={effMethod === "lmp" ? new Date(dateStr + "T00:00:00") : result.derivedLmp}
+          lmpLabel={effMethod === "lmp" ? (cycleDays === 28 ? "LMP (wk 0)" : "LMP entered") : "LMP (calculated)"}
           edd={result.edd}
           gaDays={result.gaWeeks * 7 + result.gaDays}
           gaLabel={result.gaLabel}
           trimester={result.trimester}
         />
       )}
-      {dateStr !== "" && !result && (
+      {dateStr !== "" && !result && !cycleError && !scanError && !(effMethod === "scan" && gaAtScan == null) && (
         <p className="mt-4 rounded-lg border border-amber-200 bg-amber-50 p-3 text-sm text-amber-900">
           That date doesn't give a plausible ongoing pregnancy (negative or
           &gt; 45 weeks). Check the date and method.
@@ -326,8 +390,8 @@ export default function ObCalculator() {
           build={() =>
             result
               ? {
-                  title: `GA ${result.gaLabel}`,
-                  detail: `EDD ${formatDate(result.edd)} · trimester ${result.trimester} · ${result.note}`,
+                  title: `GA ${result.gaLabel} · EDD ${formatDMY(result.edd)}`,
+                  detail: `From ${METHOD_NAMES[effMethod]} ${formatDMY(new Date(dateStr + "T00:00:00"))}${effMethod === "lmp" ? ` (${cycleDays}-day cycle)` : ""} · EDD ${formatDMY(result.edd)} · trimester ${result.trimester} · ${result.note}`,
                 }
               : null
           }
@@ -346,11 +410,11 @@ export default function ObCalculator() {
           <div className="mt-3 grid grid-cols-2 gap-2 text-sm">
             <div className="rounded-md bg-slate-50 px-3 py-2">
               <p className="text-[11px] font-semibold uppercase tracking-wide text-slate-500">EDD by LMP</p>
-              <p className="font-bold text-slate-900">{formatDate(redating.lmpEdd)}</p>
+              <p className="font-bold text-slate-900">{formatDMY(redating.lmpEdd)}</p>
             </div>
             <div className="rounded-md bg-slate-50 px-3 py-2">
               <p className="text-[11px] font-semibold uppercase tracking-wide text-slate-500">EDD by scan</p>
-              <p className="font-bold text-slate-900">{formatDate(redating.scanEdd)}</p>
+              <p className="font-bold text-slate-900">{formatDMY(redating.scanEdd)}</p>
             </div>
           </div>
           <p

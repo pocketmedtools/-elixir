@@ -31,7 +31,7 @@ import { orsPlan, zincDose } from "../src/lib/orsMath";
 import { schwartzEgfr, gfrStage } from "../src/lib/pedRenal";
 import { analyzeRegimen } from "../src/clinical/AnalysisEngine";
 import { drugsDB, getDrugById, interactionsDB } from "../src/clinical/clinicalData";
-import { naegeleEdd } from "../src/lib/obMath";
+import { naegeleEdd, isValidCycle, scanGaDays, formatDMY } from "../src/lib/obMath";
 import {
   biometryCentile, igBiometryMuSigma, hadlockEfw, efwCentile, efwFromZ, uaCentile, uaValueAtZ,
   mcaPsvMoM, assessLiquor, classifyGrowth, scanPlan, scheduleStatus, mmFromGaEquivalent,
@@ -505,6 +505,36 @@ tool("OB dating — every LMP 2023–2027 × cycle, EDD/scan/IVF round trips, Na
     check(same(ng, nWant), () => `Naegele ${y}-${m + 1}-${d} c${cycle}: ${ng.toDateString()} want ${nWant.join("-")}`);
     const gap = utcDays(ng.getFullYear(), ng.getMonth(), ng.getDate()) - (n + 280 + cycle - 28);
     check(Math.abs(gap) <= 3, () => `Naegele vs 280 days gap ${gap} for ${y}-${m + 1}-${d}`);
+  }
+});
+
+// ---------- OB input safety: impossible entries give no EDD, never a guessed one ----------
+tool("OB input safety — cycle, scan GA, DD/MM/YYYY display", (check) => {
+  const lmp = new Date(2026, 0, 10), today = new Date(2026, 5, 1);
+  for (let c = -5; c <= 80; c++) {
+    const r = calculateGestation("lmp", lmp, today, c);
+    const ok = c >= 20 && c <= 45;
+    check(isValidCycle(c) === ok, () => `isValidCycle(${c})`);
+    check(ok ? !!r && r.edd.getTime() === new Date(2026, 0, 10 + 280 + c - 28).getTime() : r === null, () => `cycle ${c} must ${ok ? "give LMP+280+(c−28)" : "be refused"}`);
+  }
+  for (const c of [27.5, 28.4, NaN, Infinity]) check(calculateGestation("lmp", lmp, today, c) === null, () => `cycle ${c} must be refused`);
+  for (let w = 0; w <= 50; w++) for (let d = -1; d <= 8; d++) {
+    const r = scanGaDays(w, d);
+    const ok = w >= 5 && w <= 42 && d >= 0 && d <= 6 && w * 7 + d <= 294;
+    check(ok ? !!r && "days" in r && r.days === w * 7 + d : !!r && "error" in r, () => `scan GA ${w}w${d}d`);
+  }
+  check(scanGaDays("", 3) === null, () => "blank weeks = no entry");
+  const blank = scanGaDays(12, "");
+  check(!!blank && "days" in blank && blank.days === 84, () => "blank days = 0");
+  for (const [w, d] of [[12.5, 0], [12, 2.5]]) { const r = scanGaDays(w, d); check(!!r && "error" in r, () => `fractional ${w}w${d}d refused`); }
+  check(calculateGestation("scan", lmp, today, 28, 87.5) === null, () => "fractional scan GA refused");
+  // formatDMY: every day 2024–2028 reads back to the same calendar date.
+  const WD = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"];
+  for (let n = Date.UTC(2024, 0, 1) / 86400000; n <= Date.UTC(2028, 11, 31) / 86400000; n++) {
+    const u = new Date(n * 86400000);
+    const d = new Date(u.getUTCFullYear(), u.getUTCMonth(), u.getUTCDate());
+    const want = `${WD[u.getUTCDay()]} ${String(u.getUTCDate()).padStart(2, "0")}/${String(u.getUTCMonth() + 1).padStart(2, "0")}/${u.getUTCFullYear()}`;
+    check(formatDMY(d) === want, () => `formatDMY ${want} got ${formatDMY(d)}`);
   }
 });
 
