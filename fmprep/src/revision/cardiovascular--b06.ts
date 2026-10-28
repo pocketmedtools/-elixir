@@ -667,6 +667,222 @@ const revision: RevisionSet = {
       ],
     },
   },
+  "cardiovascular-pericardial-effusion-tamponade-constriction": {
+    checked: "2026-10",
+    updated: [
+      "ESC 2025 myocarditis and pericarditis guideline: effusion triage, effusive-constrictive and transient constriction defined",
+      "ESC 2025: CT and CMR (pericardial LGE) to identify reversible inflammatory constriction before pericardiectomy",
+      "ESC 2025: anti-inflammatory drugs not for isolated effusion without systemic inflammation",
+      "WHO 2022 and IMPI 2014: adjunctive steroids in TB pericarditis reduce constriction",
+    ],
+    master: {
+      heading: "Master revision table - Pericardial effusion, tamponade and constriction",
+      columns: ["Heading", "What to write"],
+      rows: [
+        ["Definitions", "Effusion over 10-50 mL (mild under 10 mm, moderate 10-20, **large over 20 mm**); **tamponade** = compression impairing filling; **constriction** = rigid pericardium; effusive-constrictive."],
+        ["Causes", "**TB (India)**, malignancy, idiopathic, uraemia, hypothyroid; haemopericardium - trauma, MI rupture, **type A dissection**, procedures; constriction - TB, surgery, radiation, idiopathic."],
+        ["Pathophysiology", "Speed over volume; equal diastolic pressures; **interdependence** gives pulsus paradoxus; tamponade loses y descent; constriction - dip-and-plateau, Kussmaul."],
+        ["Tamponade signs", "**Beck triad** (hypotension, raised JVP, muffled sounds), **pulsus paradoxus over 10 mmHg**, tachycardia; absent pulsus with ASD, AR, high LVEDP, ventilation."],
+        ["Constriction signs", "Raised JVP with **Friedreich y descent**, **Kussmaul sign**, **pericardial knock**, ascites out of proportion, hepatomegaly, Broadbent sign."],
+        ["ECG and CXR", "Low voltage, **electrical alternans**; water-bottle heart; pericardial calcification (TB constriction)."],
+        ["Echo", "**RA late diastolic and RV early diastolic collapse**, plethoric IVC, mitral variation over 25%; constriction - septal shift, **medial e' 9+**, expiratory hepatic vein reversal."],
+        ["Fluid analysis", "Exudate by Light criteria; **ADA 40+**, Xpert/Truenat, culture, cytology, haematocrit, triglycerides over 500."],
+        ["Tamponade management", "**Urgent pericardiocentesis**; no diuretics, vasodilators or ventilation first; 250-500 mL bolus as bridge; surgery for dissection, rupture, purulent, loculated."],
+        ["Pericardiocentesis", "Echo-guided subxiphoid, 30-45 degrees, needle to **left shoulder**, 15-30 degrees; saline contrast; pigtail; under 1 L at a time; remove when under 25-30 mL/day."],
+        ["Constriction treatment", "Diuretics; **radical pericardiectomy** (mortality 6-12%); TB - ATT, surgery if no improvement in **4-8 weeks**; transient - anti-inflammatory 2-3 months."],
+        ["Constriction vs restriction", "Constriction: thick pericardium, normal e', low BNP, PASP under 50, discordance; restriction: opposite."],
+        ["Prognosis", "Survival after pericardiectomy: idiopathic 88%, post-surgical 66%, **radiation 27%** at 7 years; malignant effusions recur."],
+        ["Latest", "ESC 2025: imaging-guided constriction care, extended catheter drainage, no anti-inflammatories for non-inflammatory effusion."],
+      ],
+    },
+    flows: [
+      {
+        kind: "flow",
+        heading: "Suspected tamponade: from bedside to drainage",
+        steps: [
+          { label: "Hypotension, raised JVP, tachycardia", detail: "Check pulsus paradoxus over 10 mmHg; muffled sounds" },
+          { label: "Bedside echo now", detail: "Effusion, RA/RV collapse, plethoric IVC, inflow variation", tone: "decision" },
+          { label: "Dissection, rupture or trauma?", detail: "Surgery; only small controlled drainage if delayed", tone: "warn" },
+          { label: "No diuretics, no vasodilators, delay ventilation", detail: "250-500 mL saline only if hypovolaemic", tone: "warn" },
+          { label: "Echo-guided pericardiocentesis", detail: "Subxiphoid or apical; pigtail; under 1 L at a time" },
+          { label: "Send fluid", detail: "Cells, protein, LDH, ADA, Xpert, culture, cytology" },
+          { label: "Extended drainage and treat cause", detail: "Remove when under 25-30 mL/day; ATT if TB", tone: "good" },
+        ],
+      },
+      {
+        kind: "flow",
+        heading: "Constrictive pericarditis: work-up and treatment",
+        steps: [
+          { label: "Right heart failure with raised JVP", detail: "Kussmaul sign, knock, ascites, past TB/surgery/radiation" },
+          { label: "Echo", detail: "Septal shift plus medial e' 9+ or hepatic vein reversal ratio 0.79+", tone: "decision" },
+          { label: "CT and CMR", detail: "Pericardium 4 mm+, calcification; LGE = active inflammation" },
+          { label: "Catheterisation if unclear", detail: "Equal diastolic pressures, discordance, PASP under 50" },
+          { label: "Inflammatory or recent", detail: "Anti-inflammatory 2-3 months; ATT if TB", tone: "decision" },
+          { label: "Chronic fibrocalcific", detail: "Radical pericardiectomy before end-stage", tone: "good" },
+        ],
+      },
+      {
+        kind: "compare",
+        heading: "Tamponade versus constriction versus restriction",
+        columns: ["Feature", "Tamponade", "Constriction", "Restriction"],
+        rows: [
+          ["y descent", "Absent", "Steep", "Steep"],
+          ["Kussmaul sign", "Usually absent", "Present", "Often present"],
+          ["Pulsus paradoxus", "Usual", "One-third", "Rare"],
+          ["Extra sound", "Muffled", "Knock", "S3"],
+          ["Medial e'", "Not used", "Normal or high", "Low"],
+          ["BNP", "Variable", "Near normal", "High"],
+          ["Treatment", "Pericardiocentesis", "Pericardiectomy", "Disease-specific"],
+        ],
+      },
+    ],
+    notes: {
+      sections: [
+        {
+          title: "Definition and key facts",
+          points: [
+            "Normal pericardial fluid is **10-50 mL**; large effusion is over 20 mm on echo.",
+            "**Tamponade**: fluid pressure stops the heart filling, so output falls.",
+            "**Speed matters more than volume**: 150 mL fast can kill.",
+            "**Constriction**: rigid pericardium causing right heart failure; TB is commonest in India.",
+            "**Effusive-constrictive**: right atrial pressure stays high after drainage.",
+          ],
+        },
+        {
+          title: "Causes and risk factors",
+          points: [
+            "Effusion: **TB**, cancer, viral, uraemia, hypothyroidism, autoimmune disease.",
+            "Blood in pericardium: trauma, **MI rupture**, aortic dissection, procedures, anticoagulants.",
+            "Constriction: TB, cardiac surgery, **radiation**, idiopathic.",
+            "Constriction risk is **20-30% after bacterial or TB** pericarditis.",
+          ],
+        },
+        {
+          title: "Pathophysiology",
+          points: [
+            "Pericardial pressure rises to equal **all diastolic pressures**.",
+            "Inspiration fills the RV and pushes the septum left: **pulsus paradoxus**.",
+            "Tamponade abolishes the **y descent**; constriction makes it steep.",
+            "Constriction stops filling abruptly: **dip-and-plateau** and pericardial knock.",
+          ],
+        },
+        {
+          title: "Clinical features",
+          points: [
+            "**Beck triad**: hypotension, raised JVP, muffled heart sounds.",
+            "**Pulsus paradoxus**: inspiratory systolic fall over 10 mmHg.",
+            "Pulsus may be absent with ASD, aortic regurgitation or ventilation.",
+            "Constriction: **Kussmaul sign**, knock, ascites more than leg oedema.",
+            "Always check the **JVP in ascites** to avoid missing constriction.",
+          ],
+        },
+        {
+          title: "Investigations",
+          points: [
+            "ECG: low voltage and **electrical alternans**.",
+            "Chest X-ray: water-bottle heart; **calcified pericardium** in TB constriction.",
+            "Echo: **RV early diastolic collapse**, RA collapse, plethoric IVC.",
+            "Fluid: protein, LDH, **ADA 40 U/L or more**, Xpert, culture, cytology.",
+            "Constriction: septal shift, **normal medial e'**, thick pericardium on CT.",
+          ],
+        },
+        {
+          title: "Treatment - first line",
+          points: [
+            "Tamponade: **urgent pericardiocentesis** under echo guidance.",
+            "**Never give diuretics or vasodilators** in tamponade.",
+            "Small saline bolus only as a bridge if hypovolaemic.",
+            "Small effusion without inflammation: find cause, repeat echo; no NSAIDs.",
+            "TB effusion or constriction: **6 months ATT**.",
+          ],
+        },
+        {
+          title: "Treatment - next steps",
+          points: [
+            "Pericardiocentesis: subxiphoid, needle towards **left shoulder** at 15-30 degrees.",
+            "Drain **under 1 L at a time**; keep catheter until under 25-30 mL/day.",
+            "Recurrent malignant effusion: **pericardial window** or intrapericardial cisplatin.",
+            "Chronic constriction: **radical pericardiectomy** before end-stage.",
+            "TB constriction: pericardiectomy if no improvement after **4-8 weeks** of ATT.",
+          ],
+        },
+        {
+          title: "Inpatient / emergency care",
+          points: [
+            "**Aortic dissection or rupture**: surgery, not a needle.",
+            "Delay **intubation** until drained; ventilation can cause arrest.",
+            "Purulent pericarditis: **surgical drainage**, antibiotics, fibrinolysis.",
+            "Watch for **decompression syndrome** after large-volume drainage.",
+          ],
+        },
+        {
+          title: "Referral and follow-up",
+          points: [
+            "Echo at **24-48 hours**, 1-2 weeks and 1 month after drainage.",
+            "TB: echo at end of intensive phase and end of ATT for **constriction**.",
+            "Register TB on **Nikshay**; nutrition support through Ni-kshay Poshan Yojana.",
+            "Post-pericardiectomy survival is worst after **radiation**.",
+          ],
+        },
+        {
+          title: "Latest updates",
+          points: [
+            "**ESC 2025**: CT and CMR guide constriction care; LGE suggests reversible disease.",
+            "ESC 2025: no anti-inflammatories for effusion **without inflammation**.",
+            "**Extended catheter drainage** remains recommended to prevent recurrence.",
+            "**WHO 2022**: adjunctive steroids may be used in TB pericarditis.",
+          ],
+        },
+      ],
+      tables: [
+        {
+          heading: "Drugs and procedures",
+          columns: ["Drug", "Dose and route", "Duration", "Key side effects / cautions"],
+          rows: [
+            ["Normal saline bolus", "250-500 mL IV", "Once, as bridge", "Only if hypovolaemic"],
+            ["Pericardiocentesis", "Echo-guided, under 1 L at a time", "Catheter until under 25-30 mL/day", "RV or coronary puncture, arrhythmia"],
+            ["HRZE then HRE", "Weight-band fixed-dose combination daily", "2 + 4 months", "Hepatitis, neuropathy, optic neuritis"],
+            ["Prednisolone (TB)", "120 mg/day tapering weekly to 5 mg", "6 weeks", "Avoid in HIV with low CD4"],
+            ["Furosemide", "20-80 mg oral or IV", "Before surgery in constriction", "Never in tamponade"],
+            ["Intrapericardial urokinase", "Via catheter", "Repeated as needed", "Bleeding"],
+            ["Colchicine", "0.5 mg once or twice daily", "3 months, inflammatory cases only", "Diarrhoea"],
+          ],
+        },
+        {
+          heading: "Echo signs of tamponade",
+          columns: ["Sign", "What it means", "Value"],
+          rows: [
+            ["RA late diastolic collapse", "Pericardial pressure exceeds RA pressure", "Sensitive"],
+            ["RV early diastolic collapse", "Pressure exceeds RV diastolic pressure", "Specific"],
+            ["Plethoric IVC", "High right atrial pressure", "Very sensitive"],
+            ["Mitral E variation over 25-30%", "Ventricular interdependence", "Supportive"],
+            ["Swinging heart", "Large free effusion", "Causes electrical alternans"],
+          ],
+        },
+        {
+          heading: "Pericardial fluid analysis",
+          columns: ["Test", "Result", "Meaning"],
+          rows: [
+            ["Protein and LDH", "Exudate by Light criteria", "Inflammatory, TB, cancer"],
+            ["ADA", "40 U/L or more", "TB likely"],
+            ["Xpert MTB/RIF", "Positive", "TB with rifampicin status"],
+            ["Cytology", "Malignant cells", "Malignant effusion"],
+            ["Haematocrit", "Near blood", "Haemopericardium"],
+            ["Triglycerides", "Over 500 mg/dL", "Chylopericardium"],
+          ],
+        },
+      ],
+      remember: [
+        "**Beck triad**: low BP, high JVP, quiet heart.",
+        "**Tamponade kills the y descent**; constriction sharpens it.",
+        "**Speed beats size** in tamponade.",
+        "**No diuretics** in tamponade.",
+        "**Dissection or rupture = surgeon, not needle**.",
+        "**Knock + Kussmaul + calcified pericardium** = TB constriction.",
+        "Needle **towards the left shoulder** from below the xiphoid.",
+      ],
+    },
+  },
 };
 
 export default revision;
