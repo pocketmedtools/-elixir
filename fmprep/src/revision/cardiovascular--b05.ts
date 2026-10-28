@@ -217,6 +217,411 @@ const revision: RevisionSet = {
       ],
     },
   },
+  "cardiovascular-chronic-hf-optimisation": {
+    checked: "2026-10",
+    updated: [
+      "ESC 2026 HF: HFrEF under 50%, HFpEF 50% or more; HFmrEF abolished; stages A-D; 'foundational medical therapy'.",
+      "ESC 2026: MRA Class I at any LVEF; semaglutide or tirzepatide IIa in obese HFpEF; SBP under 130 in stage B.",
+      "ESC 2026: digoxin/digitoxin upgraded to IIa after DIGIT-HF.",
+      "ESC 2023 focused update: SGLT2i Class I across LVEF; IV iron IIa to reduce HF admissions.",
+      "FINEARTS-HF 2024 (finerenone in HFpEF) and SUMMIT 2024 (tirzepatide).",
+      "2024 ACC Expert Consensus Decision Pathway: rapid sequencing of four drugs.",
+    ],
+    master: {
+      heading: "Master revision table - Chronic HF optimisation",
+      columns: ["Heading", "What to write"],
+      rows: [
+        ["Definition and goal", "All eligible patients on **four foundational drugs at target or maximum tolerated dose** plus indicated devices within 3-6 months; four drugs roughly halve CV death or HF admission."],
+        ["Classification", "**ESC 2026**: HFrEF under 50%, HFpEF 50% or more, HFimpEF (rise 10 points to over 40%); stages A-D; NYHA I-IV; advanced HF - I NEED HELP."],
+        ["Four pillars", "**Sacubitril-valsartan** 24/26-49/51 to 97/103 mg BD; **bisoprolol** 1.25 to 10 mg; **spironolactone** 12.5-25 to 50 mg; **dapagliflozin/empagliflozin 10 mg**."],
+        ["Titration", "Start all four within 2-4 weeks at low dose; order by profile; one step every 1-2 weeks; target by 3-6 months; STRONG-HF after admission."],
+        ["Monitoring", "K and creatinine 1-2 weeks after each change; creatinine up 50% acceptable, doubling stop; **K over 5.5 halve MRA, 6.0 stop**; SGLT2i eGFR dip expected."],
+        ["Additional drugs", "Ivabradine (sinus, HR 70 or more, LVEF 35% or less); digoxin 0.5-0.9 ng/mL (IIa ESC 2026); vericiguat after worsening; hydralazine-ISDN; **IV iron** if ferritin under 100 or 100-299 with TSAT under 20%."],
+        ["HFpEF", "**SGLT2i + MRA** (spironolactone or finerenone - FINEARTS-HF); semaglutide/tirzepatide if obese; BP under 130, AF, diuretic; LVEF 41-49% follows HFrEF."],
+        ["Devices", "ICD: LVEF 35% or less after 3 months OMT (ischaemic recommended, non-ischaemic consider), not within 40 days of MI; **CRT: LBBB QRS 150 ms or more** (130-149 consider), never under 130."],
+        ["Non-drug", "HF clinic Class I; daily weights; salt under 5 g; fluid limit only if severe; rehab Class I; influenza and pneumococcal vaccines; no NSAIDs."],
+        ["Special groups", "Elderly: start low, standing BP; CKD: SGLT2i to eGFR 20; pregnancy: stop ACEi/ARNI/MRA/SGLT2i/ivabradine; COPD: cardioselective beta-blocker fine."],
+        ["Palliative", "Advance care planning, ICD shock deactivation, low-dose morphine for breathlessness, deprescribe statins; NPPC and oral morphine access."],
+        ["Exam traps", "36 h ACEi washout before ARNI; only four beta-blockers; don't stop drugs in HFimpEF (TRED-HF); oral iron fails (IRONOUT-HF)."],
+      ],
+    },
+    flows: [
+      {
+        kind: "flow",
+        heading: "HFrEF: from diagnosis to device decision",
+        steps: [
+          { label: "HFrEF confirmed (LVEF under 50%)", detail: "Treat cause; diuretic if congested" },
+          { label: "Start four pillars at low dose within 2-4 weeks", detail: "ARNI/ACEi, beta-blocker, MRA, SGLT2i; order by HR, BP, K" },
+          { label: "Titrate one step every 1-2 weeks", detail: "K and creatinine 1-2 weeks after each change", tone: "decision" },
+          { label: "Add-ons as indicated", detail: "IV iron, ivabradine, digoxin, vericiguat, hydralazine-ISDN" },
+          { label: "Echo after 3 months of optimal therapy", detail: "LVEF 35% or less?", tone: "decision" },
+          { label: "ICD and/or CRT; refer stage D", detail: "CRT if LBBB QRS 150 ms or more", tone: "good" },
+        ],
+      },
+      {
+        kind: "branch",
+        heading: "Titration barriers and fixes",
+        root: "Problem during titration",
+        arms: [
+          { label: "Low BP", tone: "warn", steps: ["Asymptomatic SBP 90-100: continue", "Stop nitrates/CCB", "Reduce diuretic if dry"] },
+          { label: "High potassium", tone: "warn", steps: ["Up to 5.5 acceptable", "Over 5.5 halve MRA", "6.0 or more stop; consider binder"] },
+          { label: "Rising creatinine", tone: "decision", steps: ["Up to 50% acceptable", "Over 50% halve RAASi", "Doubling: stop"] },
+          { label: "Bradycardia", tone: "decision", steps: ["Stop digoxin/ivabradine first", "Halve beta-blocker if symptomatic under 50"] },
+        ],
+      },
+      {
+        kind: "compare",
+        heading: "HFrEF vs HFpEF treatment (ESC 2026)",
+        columns: ["Feature", "HFrEF (under 50%)", "HFpEF (50% or more)"],
+        rows: [
+          ["Foundational drugs", "ARNI/ACEi, beta-blocker, MRA, SGLT2i", "SGLT2i, MRA"],
+          ["MRA choice", "Spironolactone or eplerenone", "Spironolactone or finerenone"],
+          ["Obesity", "Weight loss", "Semaglutide or tirzepatide (IIa)"],
+          ["Devices", "ICD, CRT", "None specific"],
+          ["Diuretic", "For congestion", "For congestion"],
+        ],
+      },
+    ],
+    notes: {
+      sections: [
+        {
+          title: "Definition and key facts",
+          points: [
+            "Optimisation means **all four foundational drugs** at target dose plus indicated devices.",
+            "ESC 2026: **HFrEF under 50%**, HFpEF 50% or more; HFmrEF abolished.",
+            "**HFimpEF**: LVEF rises 10 points to over 40%; keep all therapy.",
+            "Four drugs together roughly **halve** CV death or HF admission.",
+          ],
+        },
+        {
+          title: "Pathophysiology",
+          points: [
+            "Chronic **RAAS and sympathetic** activation drives remodelling.",
+            "ARNI adds **neprilysin inhibition**, raising natriuretic peptides.",
+            "Beta-blockers cause **reverse remodelling** over months.",
+            "SGLT2 inhibitors work within weeks, with or without diabetes.",
+          ],
+        },
+        {
+          title: "Treatment - first line",
+          points: [
+            "**Sacubitril-valsartan** 49/51 mg twice daily to 97/103 mg; 36 hours after ACE inhibitor.",
+            "**Bisoprolol** 1.25 mg to 10 mg, or carvedilol 3.125 mg to 25 mg twice daily.",
+            "**Spironolactone** 12.5-25 mg to 50 mg if potassium 5.0 or less.",
+            "**Dapagliflozin or empagliflozin** 10 mg daily, no titration.",
+            "Start all four within weeks; titrate every **1-2 weeks**.",
+            "Diuretics relieve symptoms but **do not prolong life**.",
+          ],
+        },
+        {
+          title: "Investigations",
+          points: [
+            "Check **potassium and creatinine** 1-2 weeks after every change.",
+            "Iron deficiency: **ferritin under 100**, or 100-299 with TSAT under 20%.",
+            "Repeat echo **3-6 months** after optimisation for device decisions.",
+            "Not improving: check adherence, ischaemia, AF, valves, iron, alcohol, thyroid.",
+          ],
+        },
+        {
+          title: "Treatment - next steps",
+          points: [
+            "Creatinine rise **up to 50%** is acceptable; doubling means stop.",
+            "Potassium over 5.5: **halve MRA**; 6.0 or more: stop.",
+            "**Ivabradine** if sinus rhythm, HR 70 or more, LVEF 35% or less.",
+            "**Digoxin** level 0.5-0.9 ng/mL; IIa in ESC 2026.",
+            "**IV iron**, never oral, for iron deficiency.",
+            "Hydralazine plus nitrate if RAAS blockers cannot be used.",
+          ],
+        },
+        {
+          title: "Classification that matters",
+          points: [
+            "**ICD**: LVEF 35% or less after 3 months of optimal therapy; not within 40 days of MI.",
+            "**CRT**: LVEF 35% or less, LBBB, QRS 150 ms or more.",
+            "Never CRT if **QRS under 130 ms** unless pacing is needed.",
+            "Need for ventricular pacing in HFrEF: choose **CRT over RV pacing**.",
+          ],
+        },
+        {
+          title: "Special groups",
+          points: [
+            "**HFpEF**: SGLT2 inhibitor plus MRA; finerenone from FINEARTS-HF.",
+            "Obese HFpEF: **semaglutide or tirzepatide**.",
+            "Pregnancy planning: stop ACE inhibitor, ARNI, MRA, SGLT2 inhibitor, ivabradine.",
+            "COPD is not a reason to withhold **cardioselective beta-blockers**.",
+          ],
+        },
+        {
+          title: "Referral and follow-up",
+          points: [
+            "HF clinic and nurse-led titration are **Class I**.",
+            "Daily weights; act on **2 kg gain in 3 days**.",
+            "Salt **under 5 g a day**; fluid limit only for severe congestion.",
+            "Annual **influenza** and pneumococcal vaccination.",
+            "Review every 1-2 weeks while titrating, then **3-6 monthly**.",
+          ],
+        },
+        {
+          title: "Complications and red flags",
+          points: [
+            "**I NEED HELP** flags advanced HF needing referral.",
+            "Palliative care runs **alongside** GDMT in stage D.",
+            "Discuss **ICD shock deactivation** at end of life.",
+            "Low-dose oral **morphine** for refractory breathlessness.",
+          ],
+        },
+        {
+          title: "Latest updates",
+          points: [
+            "ESC 2026: **MRA Class I at any LVEF**.",
+            "ESC 2026: GLP-1-based therapy **IIa** in obese HFpEF.",
+            "ESC 2026: digoxin or digitoxin **IIa** after DIGIT-HF.",
+            "ESC 2023: SGLT2 inhibitor **Class I** at every LVEF.",
+          ],
+        },
+      ],
+      tables: [
+        {
+          heading: "Drugs for chronic HF",
+          columns: ["Drug", "Dose and route", "Duration", "Key side effects / cautions"],
+          rows: [
+            ["Sacubitril-valsartan", "24/26-49/51 to 97/103 mg oral BD", "Lifelong", "Hypotension, high K; 36 h ACEi washout"],
+            ["Enalapril", "2.5 mg BD to 10-20 mg BD oral", "Lifelong", "Cough, angioedema, high K"],
+            ["Bisoprolol", "1.25 to 10 mg oral daily", "Lifelong", "Bradycardia, fatigue"],
+            ["Carvedilol", "3.125 to 25 mg oral BD", "Lifelong", "Hypotension, bradycardia"],
+            ["Spironolactone", "12.5-25 to 50 mg oral daily", "Lifelong", "High K, gynaecomastia"],
+            ["Dapagliflozin / empagliflozin", "10 mg oral daily", "Lifelong", "Genital infection, ketoacidosis"],
+            ["Ivabradine", "2.5-5 to 7.5 mg oral BD", "Lifelong", "Phosphenes; sinus rhythm only"],
+            ["Ferric carboxymaltose", "1000 mg IV over 15 min", "Repeat by iron indices", "Hypophosphataemia"],
+          ],
+        },
+        {
+          heading: "Monitoring thresholds",
+          columns: ["Parameter", "Acceptable", "Halve", "Stop"],
+          rows: [
+            ["Creatinine", "Rise up to 50%", "Rise over 50%", "Doubled or over 3.5 mg/dL"],
+            ["Potassium", "Up to 5.5", "Over 5.5", "6.0 or more"],
+            ["Heart rate", "50-60", "Under 50 with symptoms", "High-grade block"],
+          ],
+        },
+        {
+          heading: "Device criteria",
+          columns: ["Device", "Criteria", "Strength"],
+          rows: [
+            ["ICD primary, ischaemic", "LVEF 35% or less, NYHA II-III, 3 months OMT", "Recommended"],
+            ["ICD primary, non-ischaemic", "Same criteria", "Should be considered"],
+            ["CRT", "LBBB QRS 150 ms or more, LVEF 35% or less", "Recommended"],
+            ["CRT", "LBBB 130-149 or non-LBBB 150 or more", "Should be considered"],
+          ],
+        },
+      ],
+      remember: [
+        "**Four pillars, low and early, then titrate.**",
+        "Potassium **5.0 start, 5.5 halve, 6.0 stop**.",
+        "**36 hours** from ACE inhibitor to ARNI.",
+        "Only **four beta-blockers** count in HFrEF.",
+        "CRT = **35, LBBB, 150**.",
+        "HFimpEF is **not cured** - keep treating.",
+        "Iron: **ferritin under 100 or TSAT under 20%** - give IV.",
+      ],
+    },
+  },
+  "cardiovascular-dilated-cardiomyopathy": {
+    checked: "2026-10",
+    updated: [
+      "ESC 2023 cardiomyopathy guideline: phenotype classification, NDLVC category, CMR and genetic testing Class I, family screening intervals.",
+      "ESC 2025 pregnancy guideline: Pregnancy Heart Team; PPCM managed with BOARD, bromocriptine with anticoagulation.",
+      "ESC 2022 cardio-oncology: CTRCD grading by LVEF, GLS and biomarkers.",
+      "ESC 2022 VA guideline and LMNA risk score for ICD selection.",
+      "ESC 2026 HF guideline: LVEF under 50% is HFrEF; ICD in non-ischaemic HFrEF should be considered.",
+    ],
+    master: {
+      heading: "Master revision table - Dilated cardiomyopathy and peripartum cardiomyopathy",
+      columns: ["Heading", "What to write"],
+      rows: [
+        ["Definition", "LV/biventricular **dilatation + systolic dysfunction not explained by loading conditions or CAD** (ESC 2023); NDLVC = scar or hypokinesia without dilatation."],
+        ["Burden", "1 in 250-500; **30-40% familial**; second commonest HF cause in India (NHFR); commonest transplant indication."],
+        ["Causes", "Genetic (**TTN** commonest, **LMNA** malignant); alcohol over 80 g/day for 5 years; tachycardia/PVC over 10%; peripartum; anthracycline; myocarditis; thiamine; thyroid; iron overload; dystrophies; Chagas (not India)."],
+        ["Clinical", "HF in a young adult, AF, syncope, embolism; displaced apex, S3, functional MR; pedigree for sudden death; clues - weakness, bronze skin, neuropathy."],
+        ["Investigations", "ECG (AV block - LMNA/sarcoid), echo, NT-proBNP, TSH, ferritin, CK; **exclude CAD**; **CMR** (mid-wall LGE, T2*); Holter; **genetic testing Class I**."],
+        ["Treatment", "Four-pillar GDMT + cause: abstinence, ablation, thiamine, chelation; anticoagulate AF/LV thrombus; ICD after 3 months if LVEF 35% or less (consider), LMNA score 10% or more; CRT."],
+        ["PPCM definition", "**LVEF under 45%**, end of pregnancy to months postpartum, no other cause; prolactin 16-kDa fragment, sFlt-1."],
+        ["PPCM treatment", "**BOARD**: bromocriptine 2.5 mg daily 1 week (or BD 2 weeks then daily 6 weeks if severe) **with LMWH**; pregnancy: beta-blocker, hydralazine-nitrate, diuretic; postpartum: enalapril."],
+        ["PPCM prognosis", "About half recover; avoid ICD early (wearable defibrillator); discourage pregnancy if LVEF not 50% or more."],
+        ["Family screening", "Cascade genetics; ECG + echo every 1-3 years in children (from about 10), 3-5 years in adults; discharge genotype-negative relatives."],
+        ["Exam traps", "Exclude CAD before 'idiopathic'; no early ICD in reversible DCM; bromocriptine never without LMWH; ARNI not while breastfeeding."],
+      ],
+    },
+    flows: [
+      {
+        kind: "flow",
+        heading: "Work-up of a dilated, poorly contracting LV",
+        steps: [
+          { label: "Echo: dilated LV, reduced LVEF", detail: "Check valves, LV thrombus, RV" },
+          { label: "Exclude loading conditions and CAD", detail: "BP history, valve disease, angiography or CT", tone: "decision" },
+          { label: "Search secondary causes", detail: "Alcohol, tachycardia, pregnancy, chemo, thiamine, TSH, ferritin, CK" },
+          { label: "CMR and Holter", detail: "LGE pattern, T2*, PVC burden, NSVT" },
+          { label: "Genetic testing and pedigree", detail: "TTN, LMNA, FLNC; cascade testing", tone: "good" },
+        ],
+      },
+      {
+        kind: "ladder",
+        heading: "Peripartum cardiomyopathy management (BOARD)",
+        steps: [
+          { label: "Diuretics and vasodilators for congestion", detail: "Furosemide; hydralazine-nitrate in pregnancy" },
+          { label: "Oral HF therapy", detail: "Beta-blocker; enalapril after delivery; MRA postpartum" },
+          { label: "Anticoagulation", detail: "LMWH prophylaxis; therapeutic for thrombus or AF", tone: "warn" },
+          { label: "Bromocriptine", detail: "2.5 mg daily 1 week; BD 2 weeks then daily 6 weeks if severe" },
+          { label: "Shock: levosimendan, MCS, delivery", detail: "Avoid catecholamines where possible", tone: "warn" },
+        ],
+      },
+      {
+        kind: "branch",
+        heading: "Causes of DCM",
+        root: "Dilated cardiomyopathy",
+        arms: [
+          { label: "Genetic", steps: ["TTN", "LMNA", "FLNC, DSP, RBM20", "Dystrophinopathies"] },
+          { label: "Toxic", tone: "warn", steps: ["Alcohol", "Anthracyclines", "Cocaine", "Iron overload"] },
+          { label: "Reversible states", tone: "good", steps: ["Tachycardia/PVC", "Peripartum", "Thiamine deficiency", "Thyroid disease"] },
+          { label: "Inflammatory", steps: ["Post-myocarditis", "Sarcoidosis", "HIV"] },
+        ],
+      },
+    ],
+    notes: {
+      sections: [
+        {
+          title: "Definition and key facts",
+          points: [
+            "DCM is LV dilatation with systolic dysfunction **not due to loading or CAD**.",
+            "ESC 2023 added **non-dilated LV cardiomyopathy** (NDLVC).",
+            "About **30-40%** of DCM is familial.",
+            "DCM is the second commonest cause of HF admission in India.",
+          ],
+        },
+        {
+          title: "Causes and risk factors",
+          points: [
+            "**TTN** truncation is the commonest gene; **LMNA** is the most arrhythmic.",
+            "**Alcohol** over 80 g a day for over 5 years.",
+            "**PVC burden** over 10% or persistent fast AF can cause cardiomyopathy.",
+            "Others: anthracyclines, myocarditis, thiamine deficiency, thyroid disease, iron overload, dystrophies.",
+            "Chagas disease is a global cause but **not seen in India**.",
+          ],
+        },
+        {
+          title: "Pathophysiology",
+          points: [
+            "Dilatation raises **wall stress** and oxygen demand.",
+            "Annular stretch causes **functional mitral regurgitation**.",
+            "**Mid-wall scar** on CMR is the substrate for VT.",
+            "PPCM: cleaved **prolactin fragment** damages endothelium and myocytes.",
+          ],
+        },
+        {
+          title: "Clinical features",
+          points: [
+            "Usually **heart failure** in a young or middle-aged adult.",
+            "Syncope with AV block suggests **LMNA or sarcoid**.",
+            "Ask about alcohol, pregnancy, chemotherapy and palpitations.",
+            "Draw a **three-generation pedigree** for sudden death.",
+          ],
+        },
+        {
+          title: "Investigations",
+          points: [
+            "Always **exclude CAD** with angiography or CT before calling it idiopathic.",
+            "**CMR** shows LGE pattern and T2* iron.",
+            "**Genetic testing** is Class I in DCM.",
+            "Holter for AF, NSVT and **PVC burden**.",
+            "Check TSH, ferritin, CK and HIV.",
+          ],
+        },
+        {
+          title: "Treatment - first line",
+          points: [
+            "Give full **four-pillar GDMT** for HFrEF.",
+            "Treat the cause: **abstinence**, ablation, thiamine, chelation.",
+            "Anticoagulate for AF or **LV thrombus**.",
+            "ICD only after **3 months** of GDMT if LVEF stays 35% or less.",
+            "LMNA: ICD if 5-year risk score is **10% or more**.",
+          ],
+        },
+        {
+          title: "Special groups",
+          points: [
+            "PPCM: **LVEF under 45%** late pregnancy to months after delivery.",
+            "PPCM treatment is **BOARD**: bromocriptine, oral HF drugs, anticoagulation, vasodilators, diuretics.",
+            "**Bromocriptine** always with LMWH.",
+            "Enalapril is safe while **breastfeeding**; avoid ARNI and SGLT2 inhibitors.",
+            "Discourage pregnancy if LVEF has **not recovered** to 50%.",
+          ],
+        },
+        {
+          title: "Referral and follow-up",
+          points: [
+            "Refer every new DCM for **CMR and genetics**.",
+            "Relatives: ECG and echo every **1-3 years** in children, 3-5 years in adults.",
+            "Genotype-negative relatives can be **discharged**.",
+            "Echo at **3-6 months** after GDMT, then yearly.",
+          ],
+        },
+        {
+          title: "Latest updates",
+          points: [
+            "**ESC 2023**: first unified cardiomyopathy guideline with NDLVC.",
+            "**ESC 2025**: pregnancy heart team and BOARD for PPCM.",
+            "**ESC 2022**: cardio-oncology grading of cardiotoxicity.",
+          ],
+        },
+      ],
+      tables: [
+        {
+          heading: "Drugs in DCM and PPCM",
+          columns: ["Drug", "Dose and route", "Duration", "Key side effects / cautions"],
+          rows: [
+            ["Sacubitril-valsartan", "24/26-49/51 to 97/103 mg oral BD", "Lifelong", "Not in pregnancy or breastfeeding"],
+            ["Enalapril", "2.5 mg BD to 10-20 mg BD oral", "Lifelong", "Safe in breastfeeding; not in pregnancy"],
+            ["Metoprolol succinate", "12.5-25 to 200 mg oral daily", "Lifelong", "Bradycardia; usable in pregnancy"],
+            ["Spironolactone", "12.5-25 to 50 mg oral daily", "Lifelong", "High K; avoid in pregnancy"],
+            ["Bromocriptine", "2.5 mg oral daily or BD", "1 week, or 8 weeks if severe", "Thrombosis; stops lactation"],
+            ["Enoxaparin", "40 mg SC daily", "With bromocriptine", "Bleeding"],
+            ["Thiamine", "100 mg IV/IM daily", "Until recovery", "Rare anaphylaxis"],
+          ],
+        },
+        {
+          heading: "Secondary causes and specific treatment",
+          columns: ["Cause", "Clue", "Treatment"],
+          rows: [
+            ["Alcohol", "Heavy long-term use", "Total abstinence"],
+            ["Tachycardia/PVC", "Fast AF, PVC over 10%", "Rate control or ablation"],
+            ["Peripartum", "Late pregnancy to postpartum", "BOARD"],
+            ["Anthracycline", "Chemotherapy history", "ACEi + beta-blocker"],
+            ["Thiamine deficiency", "Alcohol, polished rice", "IV thiamine"],
+            ["Iron overload", "Thalassaemia, T2* under 20 ms", "Intensive chelation"],
+          ],
+        },
+        {
+          heading: "DCM versus look-alikes",
+          columns: ["Condition", "Key feature", "Test"],
+          rows: [
+            ["DCM", "Global hypokinesia, mid-wall LGE", "CMR"],
+            ["Ischaemic cardiomyopathy", "Regional defects, subendocardial LGE", "Angiography"],
+            ["Myocarditis", "Acute, troponin rise, subepicardial LGE", "CMR"],
+            ["Athlete's heart", "Normal LVEF on exercise", "Stress echo"],
+          ],
+        },
+      ],
+      remember: [
+        "DCM: **not loading, not CAD**.",
+        "**TTN** commonest, **LMNA** deadliest.",
+        "PPCM = **45%, late pregnancy to postpartum, no other cause**.",
+        "**BOARD** for PPCM; bromocriptine plus LMWH.",
+        "PVC burden **over 10%** - think ablation.",
+        "Wait before ICD in **reversible** DCM.",
+        "Genotype-negative relative - **discharge**.",
+      ],
+    },
+  },
 };
 
 export default revision;

@@ -439,6 +439,420 @@ const revision: RevisionSet = {
       ],
     },
   },
+
+  "cardiovascular-aortic-dissection-aneurysm": {
+    checked: "2026-10",
+    updated: [
+      "ESC 2024 Peripheral Arterial and Aortic Diseases replaces ESC 2014 aorta guideline.",
+      "ESC 2024: ADD-RS plus D-dimer to triage suspected acute aortic syndrome.",
+      "ESC 2024: TEM classification and non-A non-B dissection adopted.",
+      "ESC 2024: sex-specific AAA repair thresholds (55 mm men, 50 mm women) and size-based surveillance intervals.",
+      "ESC 2024: pre-emptive TEVAR may be considered in uncomplicated type B with high-risk features.",
+      "ACC/AHA 2022 aortic disease: ascending aneurysm surgery at 55 mm (50 mm at experienced centres).",
+    ],
+    master: {
+      heading: "Master revision table - Aortic dissection and aneurysm",
+      columns: ["Heading", "What to write"],
+      rows: [
+        ["Definition", "Dissection: intimal tear, **true and false lumen**; acute aortic syndrome = dissection, IMH, PAU; AAA = infrarenal diameter **30 mm or more**."],
+        ["Risk factors", "**Hypertension**, Marfan/Loeys-Dietz/vEDS, bicuspid valve, Turner, cocaine, pregnancy, iatrogenic; AAA: **smoking**, male, age 65+, family history."],
+        ["Classification", "**Stanford A** (ascending) vs **B**; DeBakey I, II, III; non-A non-B; acute under 14 days; complicated B = rupture, malperfusion, refractory pain/BP."],
+        ["Clinical features", "Abrupt tearing pain, **pulse deficit/BP difference over 20**, AR murmur, tamponade, stroke, paraplegia; ruptured AAA = pain, shock, pulsatile mass."],
+        ["Investigations", "**ADD-RS 0-1 + D-dimer under 500** = unlikely; **CT aortography** first-line; bedside TTE/TOE; ECG for RCA involvement; lactate, creatinine."],
+        ["Impulse control", "Morphine; **esmolol or labetalol** to **HR under 60, SBP 100-120**; vasodilator (nicardipine, nitroprusside) only after beta-blockade."],
+        ["Type A", "**Emergency surgery**; no pericardiocentesis; untreated mortality 1-2% per hour."],
+        ["Type B", "Uncomplicated: medical, CT at 7-14 days, pre-emptive TEVAR if high-risk; complicated: **TEVAR**."],
+        ["AAA screening and surveillance", "Ultrasound men 65+; 30-39 mm 3-yearly, 40-49 yearly, 50-54 six-monthly; stop smoking, statin, BP."],
+        ["AAA repair", "**55 mm men, 50 mm women**, growth 10 mm/year, symptoms; EVAR (lifelong imaging) vs open."],
+        ["Thoracic thresholds", "Ascending **55 mm**; Marfan 50 (45 with risk factors); bicuspid 55 (50 with risk factors); descending TEVAR about 55 mm."],
+        ["Special groups", "Marfan: beta-blocker/losartan, Ghent criteria; pregnancy avoided if root over 45 mm; avoid fluoroquinolones."],
+        ["Follow-up", "BP under 130/80, CT at 1, 6, 12 months then yearly; family screening for HTAD; avoid isometric exercise."],
+        ["Exam traps", "Vasodilator before beta-blocker; lysis for 'STEMI' with pulse deficit; 'renal colic' in hypotensive old man."],
+      ],
+    },
+    flows: [
+      {
+        kind: "flow",
+        heading: "Suspected acute aortic syndrome",
+        steps: [
+          { label: "Abrupt severe chest, back or abdominal pain", detail: "Check both-arm BP, pulses, AR murmur, neurology" },
+          { label: "Unstable?", detail: "Shock or tamponade: bedside echo, straight to theatre or CT", tone: "decision" },
+          { label: "Stable: calculate ADD-RS", detail: "Condition, pain, signs - 1 point each category" },
+          { label: "ADD-RS 0-1 and D-dimer under 500", detail: "Dissection unlikely; seek other cause", tone: "good" },
+          { label: "ADD-RS 2-3 or D-dimer positive: CT aortography", detail: "Withhold antithrombotics until result" },
+          { label: "Dissection confirmed: impulse control and type", detail: "Esmolol to HR under 60, SBP 100-120", tone: "warn" },
+        ],
+      },
+      {
+        kind: "branch",
+        heading: "Management by Stanford type",
+        root: "Acute aortic dissection",
+        arms: [
+          { label: "Type A", tone: "warn", steps: ["Emergency surgery", "No pericardiocentesis", "Impulse control while transferring"] },
+          { label: "Type B uncomplicated", tone: "good", steps: ["IV then oral beta-blocker", "CT at 7-14 days", "Pre-emptive TEVAR if high-risk"] },
+          { label: "Type B complicated", tone: "decision", steps: ["Malperfusion, rupture, refractory pain", "TEVAR first-line", "Open surgery if unsuitable"] },
+        ],
+      },
+      {
+        kind: "ladder",
+        heading: "AAA surveillance ladder (ESC 2024)",
+        steps: [
+          { label: "Screen: ultrasound men 65+", detail: "Women 65+ who smoke; first-degree relatives" },
+          { label: "30-39 mm", detail: "Ultrasound every 3 years; stop smoking, statin" },
+          { label: "40-49 mm", detail: "Yearly ultrasound (women 6-monthly from 45 mm)" },
+          { label: "50-54 mm men", detail: "Every 6 months; refer vascular surgeon", tone: "decision" },
+          { label: "55 mm men / 50 mm women or 10 mm/year growth", detail: "EVAR or open repair", tone: "warn" },
+        ],
+      },
+    ],
+    notes: {
+      sections: [
+        {
+          title: "Definition and key facts",
+          points: [
+            "**Aortic dissection** is an intimal tear creating a true and false lumen.",
+            "Acute aortic syndrome includes dissection, **intramural haematoma** and penetrating ulcer.",
+            "**AAA** is an infrarenal aortic diameter of 30 mm or more.",
+            "Untreated type A dissection kills about **1-2% per hour** early on.",
+          ],
+        },
+        {
+          title: "Causes and risk factors",
+          points: [
+            "**Hypertension** is the commonest risk factor for dissection.",
+            "Heritable causes: **Marfan**, Loeys-Dietz, vascular Ehlers-Danlos and Turner syndrome.",
+            "Bicuspid aortic valve, cocaine and pregnancy also predispose.",
+            "AAA risk: **smoking**, male sex, age over 65 and family history.",
+          ],
+        },
+        {
+          title: "Classification that matters",
+          points: [
+            "**Stanford A** involves the ascending aorta; type B does not.",
+            "DeBakey I is ascending and beyond, II ascending only, III descending only.",
+            "Complicated type B means **rupture, malperfusion** or refractory pain or hypertension.",
+            "Acute dissection is under **14 days** from onset.",
+          ],
+        },
+        {
+          title: "Clinical features",
+          points: [
+            "Pain is **abrupt, severe and tearing**, in chest or between the shoulders.",
+            "Look for **pulse deficit** or arm BP difference over 20 mmHg.",
+            "New **aortic regurgitation** murmur or tamponade suggests type A.",
+            "Ruptured AAA: **pain, shock and a pulsatile mass**, often mistaken for renal colic.",
+          ],
+        },
+        {
+          title: "Investigations",
+          points: [
+            "**ADD-RS** 0-1 with D-dimer under 500 makes dissection unlikely.",
+            "**CT aortography** is the first-line test.",
+            "Bedside echo shows flap, effusion and aortic regurgitation.",
+            "Chest X-ray may show a **widened mediastinum**, but can be normal.",
+            "AAA is screened and followed with **abdominal ultrasound**.",
+          ],
+        },
+        {
+          title: "Inpatient / emergency care",
+          points: [
+            "Give **morphine** and IV esmolol or labetalol first.",
+            "Targets: **heart rate under 60** and systolic 100-120 mmHg.",
+            "Add a vasodilator only **after beta-blockade**.",
+            "Type A needs **emergency surgery**; avoid pericardiocentesis.",
+            "Complicated type B is treated with **TEVAR**.",
+            "Withhold aspirin, heparin and thrombolysis until dissection is excluded.",
+          ],
+        },
+        {
+          title: "Treatment - next steps",
+          points: [
+            "Screen **all men at 65** with one abdominal ultrasound.",
+            "Repair AAA at **55 mm in men, 50 mm in women**, or 10 mm yearly growth.",
+            "Stop smoking, give a **statin** and control BP; no drug slows growth.",
+            "Ascending aorta repair at 55 mm; **Marfan at 50 mm**.",
+          ],
+        },
+        {
+          title: "Special groups",
+          points: [
+            "Marfan: **beta-blocker or losartan**, yearly echo, family screening.",
+            "Marfan women with root **over 45 mm** should avoid pregnancy.",
+            "Dissection risk peaks in the **third trimester** and postpartum.",
+            "Avoid **fluoroquinolones** in patients with aneurysm.",
+          ],
+        },
+        {
+          title: "Referral and follow-up",
+          points: [
+            "After dissection keep BP **under 130/80** with a beta-blocker.",
+            "Image the aorta at **1, 6 and 12 months**, then yearly.",
+            "After EVAR or TEVAR, imaging is **lifelong** to detect endoleak.",
+            "Screen first-degree relatives of patients with heritable aortic disease.",
+          ],
+        },
+        {
+          title: "Latest updates",
+          points: [
+            "**ESC 2024** combined peripheral arterial and aortic disease guidelines.",
+            "ADD-RS with D-dimer is now formally recommended.",
+            "Sex-specific AAA thresholds and **pre-emptive TEVAR** option for high-risk type B.",
+          ],
+        },
+      ],
+      tables: [
+        {
+          heading: "Drugs in aortic dissection",
+          columns: ["Drug", "Dose and route", "Duration", "Key side effects / cautions"],
+          rows: [
+            ["Esmolol", "500 µg/kg IV bolus, then 50-300 µg/kg/min", "Acute phase", "Bradycardia, bronchospasm"],
+            ["Labetalol", "20 mg IV, then 20-80 mg every 10 min", "Acute phase, then oral", "Bronchospasm, heart block"],
+            ["Diltiazem", "0.25 mg/kg IV over 2 min", "If beta-blocker contraindicated", "Hypotension"],
+            ["Nicardipine", "5-15 mg/h IV", "After beta-blockade", "Reflex tachycardia"],
+            ["Sodium nitroprusside", "0.3-10 µg/kg/min IV", "Short term, after beta-blocker", "Cyanide toxicity"],
+            ["Losartan (Marfan)", "25-100 mg oral daily", "Lifelong", "Hyperkalaemia; teratogenic"],
+          ],
+        },
+        {
+          heading: "Stanford and DeBakey classification",
+          columns: ["Type", "Extent", "Treatment"],
+          rows: [
+            ["Stanford A / DeBakey I", "Ascending, arch and beyond", "Surgery"],
+            ["Stanford A / DeBakey II", "Ascending only", "Surgery"],
+            ["Stanford B / DeBakey III", "Descending only", "Medical; TEVAR if complicated"],
+            ["Non-A non-B", "Arch without ascending", "Individualised"],
+          ],
+        },
+        {
+          heading: "AAA surveillance and repair",
+          columns: ["Diameter", "Interval", "Action"],
+          rows: [
+            ["30-39 mm", "Every 3 years", "Risk-factor control"],
+            ["40-49 mm", "Yearly", "Statin, stop smoking"],
+            ["50-54 mm (men)", "Every 6 months", "Vascular referral"],
+            ["55 mm men / 50 mm women", "Repair", "EVAR or open"],
+          ],
+        },
+      ],
+      remember: [
+        "Stanford A = Ascending = Always surgery.",
+        "Beta-blocker before vasodilator: HR under 60, SBP 100-120.",
+        "ADD-RS 0-1 plus negative D-dimer = dissection unlikely.",
+        "Inferior STEMI with tearing pain: think type A dissection.",
+        "No pericardiocentesis in type A tamponade.",
+        "AAA repair: 55 men, 50 women.",
+        "Old man, renal colic, hypotension = ruptured AAA.",
+      ],
+    },
+  },
+
+  "cardiovascular-acute-limb-ischaemia": {
+    checked: "2026-10",
+    updated: [
+      "ESC 2024 PAD and aortic: toe pressures in diabetes/CKD, statin to LDL under 55 mg/dL, rivaroxaban 2.5 mg twice daily plus aspirin after revascularisation.",
+      "ESVS 2020 ALI: immediate heparin, Rutherford-based urgency, CTA first-line, liberal fasciotomy.",
+      "Global Vascular Guidelines 2019: CLTI term, WIfI and GLASS staging.",
+      "BEST-CLI 2022: vein bypass better when good saphenous vein exists; BASIL-2 2023: endovascular first for infrapopliteal disease.",
+      "IWGDF 2023: assess PAD in every diabetic foot ulcer; toe pressure under 30 or TcPO2 under 25 needs urgent revascularisation.",
+    ],
+    master: {
+      heading: "Master revision table - Acute limb ischaemia and CLTI",
+      columns: ["Heading", "What to write"],
+      rows: [
+        ["Definition", "ALI: sudden fall in limb perfusion **under 2 weeks** threatening viability; CLTI: PAD with **rest pain over 2 weeks or tissue loss**."],
+        ["Causes", "Embolism (**AF**, LV thrombus, rheumatic MS) or thrombosis on PAD, graft, **popliteal aneurysm**; dissection, trauma, HIT, APS; CLTI: diabetes, smoking, CKD, Buerger."],
+        ["Pathophysiology", "Nerve then muscle injury; **muscle necrosis after 4-6 hours**; reperfusion releases K, myoglobin - AKI and compartment syndrome."],
+        ["Clinical features", "**6 Ps**; embolic = sudden, AF, normal other leg; thrombotic = claudicant, absent other pulses; CLTI rest pain eased by dependency."],
+        ["Rutherford ALI", "I viable; **IIa** toe numbness, no weakness; **IIb** sensory loss beyond toes + weakness; **III** paralysis, both Dopplers absent."],
+        ["Chronic staging", "Fontaine I-IV (III rest pain, IV ulcer/gangrene); Rutherford 4-6; **WIfI** wound, ischaemia, foot infection."],
+        ["Investigations", "Bedside Doppler; CTA if no delay; K, CK, lactate; ECG/echo for source; **ABI 0.90 or less** = PAD, over 1.40 = calcified; **toe pressure under 30** = CLTI."],
+        ["ALI management", "**UFH 5000 units IV bolus then infusion**, analgesia, same-day referral; IIb theatre now; embolectomy (Fogarty) or catheter lysis/bypass; III amputation."],
+        ["After revascularisation", "Fasciotomy if long ischaemia; monitor K, urine, CK; anticoagulate cardiac emboli; antiplatelet and statin for atherosclerosis."],
+        ["CLTI management", "Vascular team; endovascular vs vein bypass (BEST-CLI, BASIL-2); clopidogrel, statin, **rivaroxaban 2.5 mg twice daily + aspirin**; wound care, offloading."],
+        ["Amputation", "Rutherford III, life-threatening sepsis, unreconstructable intractable pain, non-ambulant with contracture; **below-knee preferred**."],
+        ["Diabetic foot", "Neuropathy masks pain; ABI falsely high; toe pressure; daily foot care; foot exam every NP-NCD visit."],
+        ["Exam traps", "Waiting for imaging in IIb; trusting ABI in diabetics; missing compartment syndrome; Buerger in young bidi smoker."],
+      ],
+    },
+    flows: [
+      {
+        kind: "flow",
+        heading: "Acute limb ischaemia: from bedside to theatre",
+        steps: [
+          { label: "Sudden painful, cold, pulseless limb", detail: "Check the 6 Ps and the other leg" },
+          { label: "IV UFH bolus now", detail: "5000 units (80 units/kg) then infusion; analgesia", tone: "warn" },
+          { label: "Grade with sensation, power and Doppler", detail: "Rutherford I, IIa, IIb, III", tone: "decision" },
+          { label: "IIb: immediate revascularisation", detail: "Embolectomy or bypass, on-table angiography", tone: "warn" },
+          { label: "I/IIa: CT angiography, then treatment", detail: "Catheter lysis, thrombectomy, angioplasty or surgery" },
+          { label: "After reperfusion", detail: "Fasciotomy if needed; K, CK, urine output; find source", tone: "good" },
+        ],
+      },
+      {
+        kind: "ladder",
+        heading: "CLTI management ladder",
+        steps: [
+          { label: "Confirm CLTI", detail: "Rest pain over 2 weeks or tissue loss; toe pressure under 30 mmHg" },
+          { label: "Best medical therapy", detail: "Stop tobacco, statin LDL under 55, clopidogrel, BP, glucose" },
+          { label: "Wound care and infection control", detail: "Debride, offload, culture-directed antibiotics" },
+          { label: "Revascularise", detail: "Vein bypass if good GSV (BEST-CLI); endovascular for infrapopliteal (BASIL-2)", tone: "decision" },
+          { label: "No option or unsalvageable", detail: "Below-knee amputation or palliation", tone: "warn" },
+        ],
+      },
+      {
+        kind: "compare",
+        heading: "Embolic versus thrombotic ALI",
+        columns: ["Feature", "Embolic", "Thrombotic"],
+        rows: [
+          ["Onset", "Sudden", "Gradual"],
+          ["Source", "AF, MI, valve", "Pre-existing PAD"],
+          ["Claudication before", "No", "Yes"],
+          ["Other leg pulses", "Normal", "Often absent"],
+          ["Treatment", "Fogarty embolectomy", "Lysis, angioplasty, bypass"],
+        ],
+      },
+    ],
+    notes: {
+      sections: [
+        {
+          title: "Definition and key facts",
+          points: [
+            "**Acute limb ischaemia** is a sudden loss of limb perfusion, under 2 weeks old.",
+            "**CLTI** is PAD with rest pain over 2 weeks, ulcer or gangrene.",
+            "ALI carries about **10-15% amputation** and 15-20% mortality at 30 days.",
+            "Diabetic foot disease is India's leading cause of **non-traumatic amputation**.",
+          ],
+        },
+        {
+          title: "Causes and risk factors",
+          points: [
+            "**Embolism** mostly comes from the heart, especially atrial fibrillation.",
+            "**Thrombosis** occurs on atherosclerotic plaque, grafts, stents or popliteal aneurysms.",
+            "CLTI risk factors: **diabetes**, smoking, CKD and older age.",
+            "**Buerger disease** affects young male smokers, including bidi smokers.",
+          ],
+        },
+        {
+          title: "Clinical features",
+          points: [
+            "Remember the **6 Ps**: pain, pallor, pulselessness, paraesthesia, paralysis, perishing cold.",
+            "Embolism is sudden, with **AF** and normal pulses in the other leg.",
+            "Thrombosis follows **claudication** and often has absent pulses in both legs.",
+            "CLTI rest pain is **relieved by hanging the foot down**.",
+            "Diabetic ischaemic ulcers may be **painless** because of neuropathy.",
+          ],
+        },
+        {
+          title: "Classification that matters",
+          points: [
+            "**Rutherford I**: viable, no sensory loss or weakness.",
+            "**IIa**: numb toes only; revascularise within hours.",
+            "**IIb**: sensory loss beyond toes plus weakness; operate immediately.",
+            "**III**: paralysis and both Doppler signals absent; amputate.",
+            "Chronic: Fontaine III rest pain, IV tissue loss; **WIfI** stages the foot.",
+          ],
+        },
+        {
+          title: "Investigations",
+          points: [
+            "**Bedside Doppler**: absent arterial with present venous signal means threatened limb.",
+            "CT angiography if it does not delay treatment.",
+            "Check **potassium, CK**, creatinine and lactate; ECG and echo for source.",
+            "ABI **0.90 or less** is PAD; over 1.40 means calcified arteries.",
+            "**Toe pressure under 30 mmHg** supports CLTI.",
+          ],
+        },
+        {
+          title: "Inpatient / emergency care",
+          points: [
+            "Give **IV heparin 5000 units** at once, then an infusion.",
+            "Give opioid analgesia and refer to vascular surgery the same day.",
+            "Embolus: **Fogarty balloon embolectomy**.",
+            "Thrombosis: catheter-directed thrombolysis, angioplasty or bypass.",
+            "After long ischaemia, do **fasciotomy** and watch potassium and urine.",
+          ],
+        },
+        {
+          title: "Treatment - next steps",
+          points: [
+            "Stop **tobacco** in every form completely.",
+            "Give clopidogrel 75 mg and a statin to **LDL under 55 mg/dL**.",
+            "Consider **rivaroxaban 2.5 mg twice daily** plus aspirin after revascularisation.",
+            "Vein bypass if good saphenous vein; endovascular first for **below-knee** disease.",
+            "Anticoagulate lifelong if the embolus came from **AF**.",
+          ],
+        },
+        {
+          title: "Complications and red flags",
+          points: [
+            "Pain on passive stretch after reperfusion means **compartment syndrome**.",
+            "Reperfusion causes **hyperkalaemia**, acidosis and myoglobinuric kidney injury.",
+            "Wet gangrene with sepsis needs urgent debridement or amputation.",
+            "Prefer **below-knee amputation** to preserve walking.",
+          ],
+        },
+        {
+          title: "Special groups",
+          points: [
+            "Diabetes: ABI may be falsely normal; use **toe pressures**.",
+            "Young patients: think trauma, Takayasu, Buerger and thrombophilia.",
+            "Frail elderly: weigh revascularisation against life expectancy and walking status.",
+          ],
+        },
+        {
+          title: "Latest updates",
+          points: [
+            "**ESC 2024** combined PAD and aortic guidelines.",
+            "**BEST-CLI 2022** favours vein bypass when saphenous vein is adequate.",
+            "**BASIL-2 2023** favours endovascular first for infrapopliteal disease.",
+            "**IWGDF 2023**: check perfusion in every diabetic foot ulcer.",
+          ],
+        },
+      ],
+      tables: [
+        {
+          heading: "Drugs in limb ischaemia",
+          columns: ["Drug", "Dose and route", "Duration", "Key side effects / cautions"],
+          rows: [
+            ["Unfractionated heparin", "5000 units IV bolus, then 18 units/kg/h", "Until revascularisation", "Bleeding, HIT; avoid in dissection"],
+            ["Alteplase (catheter)", "Low-dose intra-thrombus infusion", "Up to 24-48 h", "Bleeding; not for IIb with weakness"],
+            ["Clopidogrel", "75 mg oral daily", "Lifelong", "Bleeding"],
+            ["Rivaroxaban", "2.5 mg oral twice daily with aspirin", "After revascularisation", "Bleeding"],
+            ["Atorvastatin", "40-80 mg oral daily", "Lifelong", "Myalgia"],
+            ["Cilostazol", "100 mg oral twice daily", "Claudication only", "Contraindicated in heart failure"],
+          ],
+        },
+        {
+          heading: "Rutherford classes of ALI",
+          columns: ["Class", "Sensory / motor", "Doppler", "Action"],
+          rows: [
+            ["I", "Normal / normal", "Arterial and venous audible", "Urgent imaging"],
+            ["IIa", "Toes numb / normal", "Arterial often absent, venous present", "Revascularise within hours"],
+            ["IIb", "Beyond toes / weak", "Arterial absent, venous present", "Immediate surgery"],
+            ["III", "Anaesthetic / paralysed", "Both absent", "Amputation"],
+          ],
+        },
+        {
+          heading: "Embolic versus thrombotic ALI",
+          columns: ["Feature", "Embolic", "Thrombotic"],
+          rows: [
+            ["Onset", "Sudden", "Gradual"],
+            ["Source", "AF, MI, valve disease", "Pre-existing PAD"],
+            ["Other leg", "Normal pulses", "Absent pulses"],
+            ["Treatment", "Embolectomy, anticoagulate", "Lysis, angioplasty, bypass"],
+          ],
+        },
+      ],
+      remember: [
+        "6 Ps: pain, pallor, pulseless, paraesthesia, paralysis, perishing cold.",
+        "Sensory loss or weakness means theatre now.",
+        "Heparin first, then imaging.",
+        "Arterial Doppler gone, venous present: threatened; both gone: irreversible.",
+        "Muscle dies after about 6 hours.",
+        "Diabetic with gangrene and normal ABI: measure toe pressure.",
+        "Buerger: young smoker, distal disease; stopping tobacco is the cure.",
+      ],
+    },
+  },
 };
 
 export default revision;

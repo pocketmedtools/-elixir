@@ -233,4 +233,435 @@ revision["cardiovascular-cv-examination"] = {
   },
 };
 
+revision["cardiovascular-cardiac-investigations"] = {
+  checked: "2026-10",
+  updated: [
+    "ESC 2024 CCS: RF-CL likelihood model; CCTA for over 5-50%, functional imaging for over 15-85%, invasive angiography over 85%; ANOCA/INOCA testing.",
+    "ESC 2023 ACS: hs-troponin 0/1-hour or 0/2-hour algorithm; radial access default; CCTA option in low-intermediate NSTE-ACS.",
+    "ESC 2023 endocarditis: cardiac CT and FDG-PET/CT as major imaging criteria.",
+    "ESC 2022 PH: mean PA pressure over 20 mmHg and PVR over 2 Wood units; echo TR-velocity probability bands.",
+    "ESC 2024 AF: wearable alerts need ECG confirmation (12-lead or 30-second single-lead).",
+    "ASE 2025 diastolic function update: LA strain added to filling-pressure assessment.",
+  ],
+  master: {
+    heading: "Master revision table - Cardiac investigations",
+    columns: ["Heading", "What to write"],
+    rows: [
+      ["Principle", "Test only if the result **changes management**; Bayes - most useful at **intermediate pre-test likelihood**."],
+      ["Likelihood model", "ESC 2024 RF-CL: very low 5% or less defer; **over 5-50% CCTA**; **over 15-85% functional imaging**; over 85% invasive angiography."],
+      ["Chest X-ray", "**CTR over 0.5** on PA; LA enlargement (double right border, wide carina); upper lobe diversion, Kerley B, bat-wing; boot, egg-on-string, snowman, figure-3."],
+      ["Troponin", "Injury above **99th percentile**; MI needs rise/fall plus ischaemia; hs-cTnT 0/1 h rule out under 5, rule in 52 or delta 5; non-ACS causes."],
+      ["NT-proBNP", "Rule out **under 125** (chronic), **under 300** (acute); age rule-in 450/900/1800; low in obesity; valid on sacubitril."],
+      ["Echo", "EF 40% or less HFrEF; **E/e' over 14**, LAVI over 34; **PASP = 4V squared + RAP**; TAPSE under 17; severe AS 4 m/s, 40 mmHg, under 1.0 cm2."],
+      ["Treadmill", "Bruce; 1 mm horizontal/downsloping ST; **Duke score** -11 or less high risk; uninterpretable in LBBB, pacing, WPW, digoxin; contraindicated in ACS, severe symptomatic AS."],
+      ["Stress imaging", "Stress echo, SPECT (reversible = ischaemia), PET, stress CMR; high risk = **10% or more of LV** ischaemic; vasodilator for LBBB."],
+      ["CT", "Calcium score 0 = power of zero, 100+ statin; CCTA NPV near 99%, needs HR under 60-65; CAD-RADS 2.0; CT-FFR."],
+      ["CMR", "Reference for EF; LGE subendocardial = infarct, subepicardial = myocarditis, mid-wall = DCM; **T2-star under 20 ms** = iron."],
+      ["Ambulatory ECG", "Holter daily; patch or loop weekly to monthly; **ILR rare** syncope; wearable AF needs 30-second ECG."],
+      ["Invasive", "Radial access; **FFR 0.80 or less** significant; IVUS/OCT for complex PCI; RHC: mPAP over 20 defines PH; contrast AKI prevention with saline."],
+      ["Special groups", "Pregnancy - echo, CMR without gadolinium; women - imaging over TMT; CKD - dynamic troponin; LBBB - vasodilator perfusion."],
+      ["Viva pitfalls", "TMT in LBBB or acute pain, any troponin = MI, CCTA in fast AF, forgetting RAP in PASP."],
+    ],
+  },
+  flows: [
+    {
+      kind: "flow",
+      heading: "Suspected chronic coronary syndrome: choosing the test",
+      steps: [
+        { label: "History, ECG, echo, basic bloods", detail: "Exclude ACS, valve disease, LV dysfunction" },
+        { label: "Estimate clinical likelihood (RF-CL)", detail: "Age, sex, symptoms, risk factors; calcium score may reclassify", tone: "decision" },
+        { label: "Very low (5% or less)", detail: "Defer testing; treat risk factors", tone: "good" },
+        { label: "Over 5-50%: CT coronary angiography", detail: "Heart rate under 60-65, eGFR checked" },
+        { label: "Over 15-85%: functional imaging", detail: "Stress echo, SPECT, PET or stress CMR" },
+        { label: "High-risk result or over 85% likelihood", detail: "Invasive angiography with FFR/iFR", tone: "warn" },
+      ],
+    },
+    {
+      kind: "flow",
+      heading: "Breathlessness: is it heart failure?",
+      steps: [
+        { label: "Clinical suspicion of HF", detail: "Orthopnoea, raised JVP, S3, oedema" },
+        { label: "ECG and NT-proBNP", detail: "Rule out under 125 (chronic) or under 300 pg/mL (acute)", tone: "decision" },
+        { label: "Normal ECG and low NT-proBNP", detail: "HF unlikely - look for lung, anaemia, thyroid causes", tone: "good" },
+        { label: "Abnormal - echocardiography", detail: "EF, valves, diastolic markers, PASP" },
+        { label: "Classify by EF", detail: "40% or less HFrEF; 41-49% HFmrEF; 50% or more HFpEF" },
+        { label: "Find the cause", detail: "CCTA or angiography for ischaemia; CMR for cardiomyopathy", tone: "warn" },
+      ],
+    },
+    {
+      kind: "compare",
+      heading: "Ambulatory monitor by symptom frequency",
+      columns: ["Symptom frequency", "Device", "Duration"],
+      rows: [
+        ["Daily", "Holter", "24-48 hours"],
+        ["Weekly", "Patch monitor", "7-14 days"],
+        ["Weekly to monthly", "External loop or event recorder", "2-4 weeks"],
+        ["Rare, recurrent syncope", "Implantable loop recorder", "Up to about 3 years"],
+        ["Patient-captured episodes", "Smartwatch or phone ECG", "On demand, 30 s tracing"],
+      ],
+    },
+  ],
+  notes: {
+    sections: [
+      {
+        title: "Definition and key facts",
+        points: [
+          "Order a test only if its result will **change management**.",
+          "Tests help most at **intermediate pre-test likelihood**; extremes give misleading results.",
+          "ICMR-INDIAB 2023: **diabetes 11.4%** and hypertension 35.5% of Indian adults.",
+          "Indians develop coronary disease about **ten years earlier** than Western populations.",
+          "ECG first; this topic covers what follows the ECG.",
+        ],
+      },
+      {
+        title: "Pathophysiology",
+        points: [
+          "**Ischaemic cascade**: perfusion defect, diastolic dysfunction, wall-motion change, ECG change, then pain.",
+          "So **stress imaging** is more sensitive than the treadmill ECG.",
+          "**Troponin** comes from injured myocytes; **NT-proBNP** from stretched ventricular walls.",
+          "Doppler gradient = **4V squared** (simplified Bernoulli).",
+          "**FFR** shows whether a stenosis actually limits flow.",
+        ],
+      },
+      {
+        title: "Classification that matters",
+        points: [
+          "ESC 2024 likelihood: very low **5% or less**, low over 5-15%, moderate over 15-50%.",
+          "High over 50-85%; **very high over 85%** goes to invasive angiography.",
+          "**CCTA** for over 5-50%; **functional imaging** for over 15-85%.",
+          "LVEF: **40% or less** HFrEF, 41-49% mildly reduced, 50% or more preserved.",
+          "Duke treadmill score: **+5 or more** low risk, **-11 or less** high risk.",
+        ],
+      },
+      {
+        title: "Investigations",
+        points: [
+          "**Chest X-ray**: CTR over 0.5 on PA film means cardiomegaly.",
+          "Kerley B lines mean interstitial oedema; bat-wing shadowing means alveolar oedema.",
+          "**hs-troponin** rule-in needs a rise or fall above the 99th percentile.",
+          "**NT-proBNP** under 125 (chronic) or under 300 pg/mL (acute) makes HF unlikely.",
+          "Echo: **E/e' over 14** and LA volume over 34 mL/m2 mean raised filling pressure.",
+          "**PASP = 4V squared + RAP**; TR velocity over 3.4 m/s means high PH probability.",
+          "Severe AS: velocity **4 m/s**, mean gradient 40 mmHg, area under 1.0 cm2.",
+        ],
+      },
+      {
+        title: "Treatment - first line",
+        points: [
+          "TMT positive: **1 mm horizontal or downsloping** ST depression.",
+          "No TMT in **LBBB**, paced rhythm, WPW, digoxin or resting ST depression.",
+          "Stop TMT for ST elevation, **BP fall**, sustained VT or severe angina.",
+          "Stress imaging high risk: ischaemia in **10% or more** of the LV.",
+          "Vasodilator perfusion imaging suits **LBBB** and those unable to exercise.",
+        ],
+      },
+      {
+        title: "Treatment - next steps",
+        points: [
+          "**Calcium score 0** allows deferring a statin in many intermediate-risk adults.",
+          "CCTA needs heart rate **under 60-65** and adequate eGFR.",
+          "CMR LGE: **subendocardial** infarct, **subepicardial** myocarditis, mid-wall DCM.",
+          "**T2-star under 20 ms** means myocardial iron in thalassaemia.",
+          "Holter for daily symptoms; **loop recorder** monthly; **ILR** for rare syncope.",
+          "Invasive angiography by **radial access**; FFR 0.80 or less means significant.",
+        ],
+      },
+      {
+        title: "Special groups",
+        points: [
+          "**Pregnancy**: echo first; CMR without gadolinium preferred over CT.",
+          "**Women**: treadmill gives false positives; prefer imaging.",
+          "**CKD**: troponin often chronically raised; look for a dynamic change.",
+          "**Obesity**: lowers NT-proBNP and degrades echo windows.",
+          "**Trastuzumab**: echo with strain every 3 months during treatment.",
+        ],
+      },
+      {
+        title: "Complications and red flags",
+        points: [
+          "Contrast AKI: give isotonic saline **1 mL/kg/h** around the procedure in CKD.",
+          "Hold **metformin** if eGFR under 30 or AKI; restart after 48 hours.",
+          "Holter pauses **over 3 seconds** awake or complete heart block need same-day referral.",
+          "Large effusion with **RV diastolic collapse** means tamponade.",
+          "Widened mediastinum with chest pain: suspect **aortic dissection**.",
+        ],
+      },
+      {
+        title: "Latest updates",
+        points: [
+          "**ESC 2024 CCS**: likelihood bands decide CCTA, functional imaging or angiography.",
+          "**ESC 2023 ACS**: 0/1-hour hs-troponin and radial access by default.",
+          "**ESC 2023 IE**: FDG-PET/CT and cardiac CT are major imaging criteria.",
+          "**ESC 2022 PH**: mean PA pressure over 20 mmHg defines PH.",
+          "**ESC 2024 AF**: wearable alerts need a 30-second ECG to confirm AF.",
+        ],
+      },
+    ],
+    tables: [
+      {
+        heading: "Drugs used during cardiac testing",
+        columns: ["Drug", "Dose and route", "Duration", "Key side effects / cautions"],
+        rows: [
+          ["Adenosine", "140 mcg/kg/min IV", "4-6 minutes", "Bronchospasm, AV block; avoid in asthma"],
+          ["Regadenoson", "0.4 mg IV bolus", "Single dose", "Dyspnoea, headache; reverse with aminophylline"],
+          ["Dobutamine", "5 rising to 40 mcg/kg/min IV", "3-minute stages", "Arrhythmia; avoid in LVOT obstruction"],
+          ["Atropine", "0.25-0.5 mg IV, up to 2 mg", "If target rate not reached", "Glaucoma, urinary retention"],
+          ["Metoprolol before CCTA", "50-100 mg oral 1 h before", "Single dose", "Bradycardia, bronchospasm"],
+          ["Glyceryl trinitrate", "0.4-0.8 mg sublingual", "Just before CCTA", "Hypotension; avoid with PDE5 inhibitors"],
+          ["Isotonic saline", "1 mL/kg/h IV (0.5 if EF 35% or less)", "12 h before, 24 h after", "Fluid overload"],
+        ],
+      },
+      {
+        heading: "Key cut-offs",
+        columns: ["Test", "Cut-off", "Meaning"],
+        rows: [
+          ["NT-proBNP", "Under 125 / under 300 pg/mL", "HF unlikely (chronic / acute)"],
+          ["LVEF", "40% or less", "HFrEF"],
+          ["E/e'", "Over 14", "Raised filling pressure"],
+          ["TR velocity", "Over 3.4 m/s", "High PH probability"],
+          ["TAPSE", "Under 17 mm", "RV dysfunction"],
+          ["Duke score", "-11 or less", "High risk"],
+          ["FFR", "0.80 or less", "Significant stenosis"],
+          ["CTR", "Over 0.5", "Cardiomegaly"],
+        ],
+      },
+      {
+        heading: "CMR LGE patterns",
+        columns: ["Pattern", "Diagnosis"],
+        rows: [
+          ["Subendocardial, coronary territory", "Infarction"],
+          ["Subepicardial, inferolateral", "Myocarditis"],
+          ["Mid-wall septal", "Dilated cardiomyopathy"],
+          ["Patchy in thick segments", "HCM"],
+          ["Diffuse subendocardial", "Amyloidosis"],
+        ],
+      },
+    ],
+    remember: [
+      "Ischaemic cascade: perfusion, diastole, wall motion, ECG, pain.",
+      "Troponin means injury; infarction needs rise or fall plus ischaemia.",
+      "NT-proBNP: 125 chronic, 300 acute.",
+      "PASP = 4V squared + RAP.",
+      "FFR 0.80 or less: treat; above: defer.",
+      "Holter daily, loop monthly, ILR rare.",
+      "No treadmill diagnosis in LBBB.",
+    ],
+  },
+};
+
+revision["cardiovascular-palpitations"] = {
+  checked: "2026-10",
+  updated: [
+    "ESC 2022 ventricular arrhythmias: ablation first-line for symptomatic RVOT and fascicular PVCs; PVC burden over 10% prompts echo.",
+    "ESC 2024 AF: CHA2DS2-VA score and ECG confirmation (30-second single-lead) of wearable-detected AF.",
+    "ACC/AHA/ACCP/HRS 2023 AF: staged AF with risk-factor modification.",
+    "ESC 2019 SVT (current): modified Valsalva, adenosine, ablation first-line for recurrent SVT.",
+  ],
+  master: {
+    heading: "Master revision table - Palpitations",
+    columns: ["Heading", "What to write"],
+    rows: [
+      ["Definition", "Unpleasant **awareness of the heartbeat**; diagnosis by **symptom-rhythm correlation**."],
+      ["Causes", "Cardiac about 43%, psychiatric 31%, systemic/drugs 10%, unexplained 16%; ectopics, SVT, AF, VT; thyroid, anaemia, caffeine, panic."],
+      ["EHRA types", "Extrasystolic, tachycardic, anxiety-related, pulsating."],
+      ["History", "**Tap the rhythm**; abrupt vs gradual; vagal termination; triggers; syncope; drugs; family history of sudden death under 40."],
+      ["Examination", "ECG now if symptomatic; pulse deficit, cannon waves, murmurs, pallor, goitre; postural rise 30/min = POTS."],
+      ["Resting ECG", "**Pre-excitation**, long QTc (470 men/480 women), Brugada type 1, ARVC, LVH, Q waves, AV block."],
+      ["Tests", "Hb, TSH, K, Mg, Ca, glucose; echo if structural; Holter daily, loop weekly-monthly, ILR rare; 30-s phone ECG."],
+      ["Ectopics", "Reassure, cut caffeine/alcohol; **beta-blocker** or verapamil; burden over 10% echo; ablation for RVOT PVCs or falling EF."],
+      ["Acute SVT", "Unstable: **DC cardioversion**; stable: **modified Valsalva**, adenosine 6-12-18 mg, then verapamil 5 mg IV; ablation over 95% cure."],
+      ["Danger rhythms", "Broad = **VT** until proved otherwise; pre-excited AF - no AV-node blockers; procainamide or cardioversion."],
+      ["Special groups", "Pregnancy - adenosine, metoprolol; elderly - AF, thyroid, drugs; young - WPW, channelopathy; athletes - exclude HCM, ARVC."],
+      ["Red flags", "Syncope, exertion, chest pain, structural disease, abnormal ECG, family SCD, HR over 150 or under 40."],
+      ["Latest", "ESC 2022 VA, ESC 2024 AF (CHA2DS2-VA), ACC/AHA 2023 AF stages, ESC 2019 SVT."],
+    ],
+  },
+  flows: [
+    {
+      kind: "flow",
+      heading: "Palpitations in the OPD",
+      steps: [
+        { label: "Symptomatic now?", detail: "Pulse, BP, SpO2, immediate 12-lead ECG", tone: "decision" },
+        { label: "Unstable or broad-complex", detail: "Shock, syncope, chest pain: cardiovert; treat broad as VT", tone: "warn" },
+        { label: "History and examination", detail: "Tap rhythm, onset/offset, triggers, drugs, family history" },
+        { label: "Resting ECG and bloods", detail: "Pre-excitation, QTc, Brugada; Hb, TSH, K, Mg, glucose" },
+        { label: "Red flags?", detail: "Syncope, exertion, structural disease, abnormal ECG, family SCD", tone: "decision" },
+        { label: "Monitor by frequency", detail: "Holter daily, loop weekly-monthly, ILR rare" },
+        { label: "Benign rhythm correlated", detail: "Reassure, lifestyle, beta-blocker if needed", tone: "good" },
+      ],
+    },
+    {
+      kind: "ladder",
+      heading: "Stable regular narrow-complex tachycardia",
+      steps: [
+        { label: "Modified Valsalva", detail: "Strain 15 s at 40 mmHg, then lie flat, legs up 45 degrees" },
+        { label: "Adenosine IV", detail: "6 mg rapid bolus, then 12 mg, then 18 mg; avoid in severe asthma" },
+        { label: "Verapamil or beta-blocker IV", detail: "Verapamil 5 mg over 2 min; never if broad or pre-excited", tone: "warn" },
+        { label: "Synchronised DC cardioversion", detail: "If drugs fail or patient becomes unstable", tone: "warn" },
+        { label: "Refer for catheter ablation", detail: "Cure over 95% for AVNRT and AVRT", tone: "good" },
+      ],
+    },
+    {
+      kind: "compare",
+      heading: "SVT versus panic attack",
+      columns: ["Feature", "SVT", "Panic attack"],
+      rows: [
+        ["Onset and offset", "Abrupt", "Gradual over minutes"],
+        ["Rate", "150-250/min, fixed", "Usually under 140/min"],
+        ["Clues", "Neck pounding, stops with Valsalva, polyuria after", "Fear, tingling, air hunger, trembling"],
+        ["ECG", "Narrow regular, hidden P waves", "Sinus tachycardia"],
+        ["Treatment", "Vagal, adenosine, ablation", "CBT, SSRI"],
+      ],
+    },
+  ],
+  notes: {
+    sections: [
+      {
+        title: "Definition and key facts",
+        points: [
+          "Palpitations are an unpleasant **awareness of the heartbeat**.",
+          "Diagnosis needs **symptom-rhythm correlation**: an ECG during symptoms.",
+          "Most are benign: **ectopics**, sinus tachycardia or anxiety.",
+          "SVT is often wrongly labelled **panic disorder**.",
+          "NFHS-5: about **57% of Indian women** are anaemic, a common cause.",
+        ],
+      },
+      {
+        title: "Causes and risk factors",
+        points: [
+          "Arrhythmias: **ectopics**, AVNRT, AVRT, AF, flutter, VT.",
+          "Systemic: **thyrotoxicosis**, anaemia, fever, pregnancy, hypoglycaemia, phaeochromocytoma.",
+          "Substances: **caffeine**, energy drinks, alcohol, nicotine, salbutamol, thyroxine, stimulants.",
+          "QT drugs: azithromycin, ondansetron, domperidone, haloperidol.",
+          "POTS and inappropriate sinus tachycardia in young women.",
+        ],
+      },
+      {
+        title: "Clinical features",
+        points: [
+          "Ask the patient to **tap the rhythm** on the table.",
+          "**Abrupt** onset and offset suggests SVT; **gradual** suggests sinus tachycardia.",
+          "Stopping with Valsalva points to an **AV-node-dependent** SVT.",
+          "Regular neck pounding (**frog sign**) suggests AVNRT.",
+          "A skip then a **thump** is an ectopic with its compensatory pause.",
+          "Ask about **family sudden death** under 40 and syncope.",
+        ],
+      },
+      {
+        title: "Examination",
+        points: [
+          "If symptomatic now, take a **12-lead ECG** immediately.",
+          "Irregular pulse with **pulse deficit** suggests AF.",
+          "Look for murmurs, heart failure, **pallor**, goitre and tremor.",
+          "Standing heart-rate rise of **30/min** or more suggests POTS.",
+        ],
+      },
+      {
+        title: "Investigations",
+        points: [
+          "Resting ECG: **pre-excitation**, long QT, Brugada, ARVC, LVH, Q waves.",
+          "Bloods: **Hb, TSH**, potassium, magnesium, calcium, glucose.",
+          "Echo if murmur, abnormal ECG, frequent PVCs or family history.",
+          "Holter for **daily**, loop recorder for **monthly**, ILR for rare symptoms.",
+          "PVC burden **over 10%** needs echo and follow-up.",
+          "Smartwatch AF must be confirmed by a **30-second ECG**.",
+        ],
+      },
+      {
+        title: "Treatment - first line",
+        points: [
+          "Explain and **reassure** when benign ectopics are documented.",
+          "Cut **caffeine**, alcohol and tobacco; treat anaemia and thyroid disease.",
+          "Persistent symptoms: **metoprolol 25-100 mg** twice daily or bisoprolol 2.5-10 mg.",
+          "Alternative: **verapamil** 40-120 mg three times daily.",
+          "Thyrotoxicosis: **propranolol** 10-40 mg three to four times daily.",
+        ],
+      },
+      {
+        title: "Inpatient / emergency care",
+        points: [
+          "Unstable tachycardia: **synchronised DC cardioversion**.",
+          "Stable narrow regular: **modified Valsalva**, then adenosine 6, 12, 18 mg.",
+          "Broad-complex tachycardia: treat as **VT**.",
+          "Pre-excited AF: **no AV-node blockers**; cardiovert or give procainamide.",
+          "Recurrent SVT: refer for **ablation**, over 95% cure.",
+        ],
+      },
+      {
+        title: "Special groups",
+        points: [
+          "**Pregnancy**: adenosine is safe; metoprolol preferred; avoid atenolol.",
+          "**Elderly**: AF, thyroid disease, drug interactions and sick sinus syndrome.",
+          "**Young**: think of WPW, long QT and Brugada.",
+          "**Athletes** with exertional symptoms need HCM and ARVC excluded.",
+        ],
+      },
+      {
+        title: "Complications and red flags",
+        points: [
+          "Red flag: palpitations with **syncope**, especially on exertion.",
+          "Red flag: chest pain, breathlessness, hypotension or **structural heart disease**.",
+          "High PVC burden can cause **PVC-induced cardiomyopathy**.",
+          "Pre-excited AF can degenerate into **VF**.",
+          "Incessant fast rhythms cause **tachycardia cardiomyopathy**.",
+        ],
+      },
+      {
+        title: "Latest updates",
+        points: [
+          "**ESC 2022 VA**: ablation first-line for symptomatic outflow-tract PVCs.",
+          "**ESC 2024 AF**: CHA2DS2-VA and ECG confirmation of wearable alerts.",
+          "**ACC/AHA 2023 AF**: AF stages and risk-factor modification.",
+        ],
+      },
+    ],
+    tables: [
+      {
+        heading: "Drugs for palpitations",
+        columns: ["Drug", "Dose and route", "Duration", "Key side effects / cautions"],
+        rows: [
+          ["Metoprolol", "25-100 mg oral twice daily", "As needed or long term", "Bradycardia, bronchospasm; avoid in pre-excited AF"],
+          ["Bisoprolol", "2.5-10 mg oral once daily", "Long term", "Bradycardia, fatigue"],
+          ["Propranolol", "10-40 mg oral three to four times daily", "Until euthyroid", "Bronchospasm; masks hypoglycaemia"],
+          ["Verapamil", "40-120 mg oral three times daily; 5 mg IV", "Titrate", "Never in broad-complex, pre-excited AF or HFrEF"],
+          ["Adenosine", "6 mg, then 12 mg, then 18 mg rapid IV", "Seconds", "Flushing, chest tightness; avoid in severe asthma"],
+          ["Flecainide", "50-150 mg oral twice daily", "Specialist", "Contraindicated in structural heart disease"],
+          ["Ivabradine", "2.5-7.5 mg oral twice daily", "IST or POTS", "Phosphenes; avoid in pregnancy"],
+        ],
+      },
+      {
+        heading: "Rhythm clues",
+        columns: ["Rhythm", "History clue", "ECG clue"],
+        rows: [
+          ["Ectopics", "Skips and thumps at rest", "Isolated premature beats"],
+          ["AVNRT", "Abrupt, neck pounding, Valsalva stops it", "Narrow regular, hidden P"],
+          ["WPW", "Young, abrupt regular", "Short PR, delta wave"],
+          ["AF", "Irregular, elderly, alcohol", "Irregular, no P waves"],
+          ["VT", "Prior MI, syncope", "Broad regular, AV dissociation"],
+        ],
+      },
+      {
+        heading: "ECG red flags at rest",
+        columns: ["Finding", "Criterion"],
+        rows: [
+          ["Pre-excitation", "PR under 120 ms with delta wave"],
+          ["Long QT", "QTc 470 ms or more (men), 480 ms or more (women)"],
+          ["Brugada type 1", "Coved ST elevation in V1-V2"],
+          ["ARVC", "T inversion V1-V3, epsilon wave"],
+          ["High-grade AV block", "Mobitz II or complete block"],
+        ],
+      },
+    ],
+    remember: [
+      "ECG during symptoms beats any history.",
+      "Tap it out: skips, fast regular, fast irregular.",
+      "Abrupt on and off plus Valsalva response = SVT.",
+      "Frog sign = AVNRT.",
+      "Broad and fast = VT until proved otherwise.",
+      "Pre-excited AF: no AV-node blockers.",
+      "Check Hb and TSH in everyone.",
+    ],
+  },
+};
+
 export default revision;
