@@ -70,7 +70,7 @@ export function calculateGestation(
       // Anchor = scan date; GA at scan supplies the offset. Ultrasound
       // dating (CRL < 14 wk) is the most accurate method after IVF (ACOG
       // Committee Opinion 700).
-      if (gaAtScanDays == null || gaAtScanDays < 35 || gaAtScanDays > 294) return null;
+      if (gaAtScanDays == null || !Number.isInteger(gaAtScanDays) || gaAtScanDays < 35 || gaAtScanDays > 294) return null;
       conception = addDays(anchorDate, 14 - gaAtScanDays);
       const w = Math.floor(gaAtScanDays / 7);
       const d = gaAtScanDays % 7;
@@ -78,7 +78,10 @@ export function calculateGestation(
       break;
     }
     case "lmp": {
-      const cycle = Math.min(Math.max(cycleLengthDays || 28, 20), 45);
+      // Never guess: an impossible cycle length gives no result instead of a
+      // silently clamped (wrong) EDD.
+      if (!isValidCycle(cycleLengthDays)) return null;
+      const cycle = cycleLengthDays;
       const ovulationOffset = cycle - 14;
       conception = addDays(anchorDate, ovulationOffset);
       note =
@@ -156,6 +159,33 @@ export function naegeleEdd(lmp: Date, cycleLengthDays = 28): Date {
   const base = new Date(y, m, Math.min(plus7.getDate(), last));
   const cycle = Math.min(Math.max(cycleLengthDays || 28, 20), 45);
   return addDays(base, cycle - 28);
+}
+
+/** Usual cycle length the LMP method accepts: whole days, 20–45. */
+export function isValidCycle(c: unknown): c is number {
+  return typeof c === "number" && Number.isInteger(c) && c >= 20 && c <= 45;
+}
+
+/**
+ * GA read on a scan as weeks + days → total days, or an error message.
+ * Weeks must be whole 5–42, days whole 0–6 (blank days = 0).
+ */
+export function scanGaDays(weeks: number | "", days: number | ""): { days: number } | { error: string } | null {
+  if (weeks === "") return null;
+  const d = days === "" ? 0 : days;
+  if (!Number.isInteger(weeks) || weeks < 5 || weeks > 42) return { error: "Weeks must be a whole number from 5 to 42." };
+  if (!Number.isInteger(d) || d < 0 || d > 6) return { error: "Days must be a whole number from 0 to 6." };
+  const total = weeks * 7 + d;
+  if (total > 294) return { error: "GA on the scan cannot be more than 42w0d." };
+  return { days: total };
+}
+
+const WEEKDAYS = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"];
+
+/** "Sat 10/10/2026" — day/month/year with the weekday. */
+export function formatDMY(d: Date): string {
+  const p = (n: number) => String(n).padStart(2, "0");
+  return `${WEEKDAYS[d.getDay()]} ${p(d.getDate())}/${p(d.getMonth() + 1)}/${d.getFullYear()}`;
 }
 
 export function diffDays(a: Date, b: Date): number {
