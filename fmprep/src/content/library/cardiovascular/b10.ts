@@ -198,7 +198,7 @@ topics.push({
       ],
     },
     {
-      heading: "Complications and prognosis",
+      heading: "Complications, prognosis and prevention",
       points: [
         "Untreated symptomatic complete heart block has a poor outlook - in historical series about **half of patients died within a year** - and pacing restores near-normal survival when the heart is otherwise healthy. [Harrison 22e]",
         "**Pacing improves survival in AV block**, but in **SND it relieves symptoms without prolonging life**. [ESC 2021]",
@@ -207,6 +207,9 @@ topics.push({
         "**Early pacing complications**: pneumothorax, pocket haematoma, **lead dislodgement (mostly in the first weeks)**, cardiac perforation and tamponade. [ESC 2021]",
         "**Late complications**: **device infection** (higher at generator replacement), erosion, venous occlusion, lead fracture, tricuspid regurgitation and **twiddler syndrome** (patient rotates the generator, retracting the leads). [ESC 2021]",
         "**Pacing-induced cardiomyopathy** develops in about **10-20%** of patients with a high RV pacing burden (over 20-40%), and responds to upgrade to CRT or conduction system pacing. [HRS/APHRS/LAHRS 2023]",
+        "**Prevent drug-induced bradycardia**: avoid beta-blocker plus verapamil or diltiazem, dose digoxin by renal function, and check potassium after starting RAS blockers or spironolactone in NP-NCD clinics. [ESC 2021]",
+        "**Diphtheria immunisation** under the **Universal Immunization Programme** (pentavalent at 6, 10, 14 weeks, DPT boosters at 16-24 months and 5 years, Td at 10 and 16 years) prevents diphtheritic heart block. [UIP, MoHFW]",
+        "Check the **pulse and ECG in every elderly faller** and in patients with unexplained syncope at the Ayushman Arogya Mandir before labelling them as giddiness or epilepsy. [ESC 2021]",
       ],
     },
     {
@@ -222,18 +225,6 @@ topics.push({
         "**Magnet response**: on a pacemaker it forces **asynchronous pacing** (VOO/DOO); on an **ICD it suspends shocks only** and does not change pacing. [ESC 2021]",
         "**Pocket infection or Staphylococcus aureus bacteraemia** in a device patient needs blood cultures, TOE and **complete system extraction** - antibiotics alone or incising the pocket fail. [EHRA 2020, ESC 2021]",
         "**Daily life**: keep mobile phones **15 cm** from the device (opposite ear), walk normally through security gates, avoid arc welding, carry the device card, and have **MRI only with an MR-conditional system** under protocol. [ESC 2021]",
-      ],
-    },
-    {
-      heading: "Prevention, counselling and programme links",
-      points: [
-        "**Prevent drug-induced bradycardia**: avoid beta-blocker plus verapamil or diltiazem, dose digoxin by renal function, and check potassium after starting RAS blockers or spironolactone in NP-NCD clinics. [ESC 2021]",
-        "**Diphtheria immunisation** under the **Universal Immunization Programme** (pentavalent at 6, 10, 14 weeks, DPT boosters at 16-24 months and 5 years, Td at 10 and 16 years) prevents diphtheritic heart block. [UIP, MoHFW]",
-        "**Rheumatic fever** prevention and secondary prophylaxis reduce rheumatic carditis; PR prolongation is a minor Jones criterion (see the RHD topic). [AHA 2015 Jones]",
-        "Check the **pulse and ECG in every elderly faller** and in patients with unexplained syncope at the Ayushman Arogya Mandir before labelling them as giddiness or epilepsy. [ESC 2021]",
-        "Counsel paced patients to report **dizziness, syncope, breathlessness, hiccups, pocket redness, discharge or fever** promptly and to keep the device identification card. [ESC 2021]",
-        "**Cascade screening and genetic counselling** for relatives of patients with early-onset conduction disease (SCN5A, LMNA). [ESC 2021]",
-        "Pacemaker implantation is covered under **Ayushman Bharat PM-JAY** packages, which has improved access for elderly patients with complete block. [PM-JAY HBP]",
       ],
     },
     {
@@ -703,11 +694,9 @@ topics.push({
         "**Stable regular narrow-complex**: record a 12-lead ECG, then **vagal manoeuvres** - preferably the **modified Valsalva** with leg elevation (Class I). [ESC 2019]",
         "**Modified Valsalva (REVERT)**: semi-recumbent patient **strains for 15 s** (blowing into a 10 mL syringe enough to move the plunger, about 40 mmHg), then is **laid flat with legs raised to 45 degrees for 15 s**; conversion about **43% versus 17%** with standard Valsalva. [REVERT, Lancet 2015]",
         "**Carotid sinus massage** (5-10 s, one side, after auscultating for bruits) is an alternative in younger patients; avoid in the elderly or with prior TIA or stroke; **eyeball pressure is abandoned**. [ESC 2019]",
-        "**Adenosine 6 mg rapid IV bolus** through a large antecubital vein with a **20 mL saline flush**, then **12 mg** and, per ESC, **18 mg** if needed; warn of transient chest tightness, flushing and a sense of doom, and record a rhythm strip throughout. [ESC 2019]",
-        "**Reduce adenosine to 3 mg** with a central line, after heart transplant, or with dipyridamole or carbamazepine; theophylline and caffeine blunt it; avoid in **severe asthma**. [ESC 2019]",
-        "If adenosine fails or is contraindicated: **verapamil 5 mg IV over 2 min** (0.075-0.15 mg/kg, repeat after 15-30 min, maximum 20 mg) or **diltiazem 0.25 mg/kg IV over 2 min** (IIa), or **metoprolol 2.5-5 mg IV** every 5 min to 15 mg or esmolol (IIa). [ESC 2019]",
+        "**Adenosine 6 mg rapid IV bolus** through a large antecubital vein with a **20 mL saline flush**, then **12 mg** and, per ESC, **18 mg** if needed; warn of transient chest tightness, flushing and a sense of doom; use **3 mg** via a central line or after heart transplant. [ESC 2019]",
+        "If adenosine fails or is contraindicated: **verapamil 5 mg IV over 2 min** (0.075-0.15 mg/kg, repeat after 15-30 min, maximum 20 mg) or **diltiazem 0.25 mg/kg IV over 2 min** (IIa), or **metoprolol 2.5-5 mg IV** every 5 min to 15 mg or esmolol (IIa); if drugs fail, **synchronised cardioversion** (Class I). [ESC 2019]",
         "**Never give verapamil** for broad-complex tachycardia, pre-excited AF, hypotension, HFrEF, after IV beta-blocker, or in infants. [ESC 2019]",
-        "If drugs fail, **synchronised cardioversion** (Class I); recurrent episodes in the same visit suggest a trigger (thyroid, stimulants) or a need for early ablation. [ESC 2019]",
         "**Pre-excited AF**: unstable - **immediate synchronised cardioversion**; stable - **IV ibutilide or procainamide** (IIa) or flecainide/propafenone (IIb), or elective cardioversion; **adenosine, verapamil, diltiazem, beta-blockers and digoxin are contraindicated**, and IV amiodarone is best avoided as it has precipitated VF. [ESC 2019]",
         "**Atrial flutter acute**: rate control with diltiazem, verapamil or beta-blocker; rhythm control by **low-energy synchronised cardioversion**, ibutilide, or rapid atrial pacing; anticoagulate as for AF before elective cardioversion if over 48 h. [ESC 2019]",
         "**Admit** if unstable, refractory, pre-excited AF, recurrent episodes despite treatment, tachycardiomyopathy, pregnancy with compromise, or significant structural heart disease. [ESC 2019]",
