@@ -272,6 +272,7 @@ const EXTRA_LOADERS: Record<string, () => Promise<{ default: Topic[] }>> = {
  */
 const LIBRARY_LOADERS: Record<string, () => Promise<{ default: Topic[] }>> = {
   cardiovascular: () => import("./library/cardiovascular"),
+  respiratory: () => import("./library/respiratory"),
 };
 
 /**
