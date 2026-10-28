@@ -664,4 +664,215 @@ revision["cardiovascular-palpitations"] = {
   },
 };
 
+revision["cardiovascular-syncope"] = {
+  checked: "2026-10",
+  updated: [
+    "ESC 2018 syncope (current): initial evaluation, risk stratification, early ILR, syncope units.",
+    "ESC 2021 pacing: closed-loop stimulation pacing for reflex syncope over 40 with documented asystole.",
+    "ESC 2022 ventricular arrhythmias: unexplained syncope with structural disease or channelopathy treated as arrhythmic.",
+    "ESC 2024 hypertension: check orthostatic BP; relax targets in frail elderly with symptomatic OH.",
+    "ESC/EACTS 2025 VHD: syncope remains an intervention trigger in severe AS.",
+  ],
+  master: {
+    heading: "Master revision table - Syncope and orthostatic hypotension",
+    columns: ["Heading", "What to write"],
+    rows: [
+      ["Definition", "**TLOC due to cerebral hypoperfusion**, rapid onset, short, spontaneous complete recovery (ESC 2018)."],
+      ["Classification", "**Reflex** (vasovagal, situational, carotid sinus), **orthostatic** (drugs, volume, autonomic failure), **cardiac** (arrhythmic, structural, cardiopulmonary)."],
+      ["Mechanism", "BP = CO x resistance; 6-8 s of no cerebral flow causes LOC; vasodepressor and cardioinhibitory reflex; neurogenic OH lacks heart-rate rise."],
+      ["History", "**Before, during, after** with witness; prodrome, trigger, posture, exertion, palpitations, drugs, family SCD."],
+      ["Examination", "**Lying and standing BP** (20/10 within 3 min; 30 if supine HT); murmurs (AS, HCM); neuro signs; carotid sinus massage if over 40."],
+      ["Differential", "Seizure (lateral tongue bite, prolonged confusion), pseudosyncope (eyes closed), hypoglycaemia, falls, TIA rarely."],
+      ["Risk", "ESC high-risk features; **CHESS** San Francisco rule; Canadian score -3 to -2 very low, 6 or more very high."],
+      ["Tests", "**ECG for all**; Hb, glucose as indicated; echo if structural; Holter, loop, **ILR**; tilt; exercise test; no routine CT/EEG."],
+      ["Reflex syncope", "Education, fluids and salt, **counter-pressure manoeuvres**, stop hypotensives; fludrocortisone or midodrine; no beta-blockers; pacing over 40 with asystole."],
+      ["OH", "Stop culprit drugs; 2-3 L water, 10 g salt, head-up bed, binders; **midodrine** 2.5-10 mg tds by day; fludrocortisone 0.1-0.3 mg."],
+      ["Admission", "Exertional or supine syncope, structural disease, abnormal ECG, SBP under 90, bleeding, injury."],
+      ["Special groups", "Pregnancy - aortocaval compression; elderly - OH, carotid sinus, drugs; young - LQT, HCM, WPW; diabetes and Parkinson - autonomic failure."],
+      ["Driving", "Single reflex - no restriction; recurrent severe or arrhythmic - only after effective treatment; India Form 1 and 1A."],
+    ],
+  },
+  flows: [
+    {
+      kind: "flow",
+      heading: "Transient loss of consciousness: initial evaluation",
+      steps: [
+        { label: "Was it TLOC, and was it syncope?", detail: "Exclude seizure, pseudosyncope, hypoglycaemia, falls", tone: "decision" },
+        { label: "History before, during, after", detail: "Witness account, drugs, family history" },
+        { label: "Examination with lying and standing BP", detail: "Fall of 20/10 within 3 min = OH" },
+        { label: "12-lead ECG", detail: "Block, pauses, VT, pre-excitation, long QT, Brugada" },
+        { label: "High-risk features?", detail: "Exertional or supine, structural disease, abnormal ECG, SBP under 90", tone: "decision" },
+        { label: "High risk - admit and monitor", detail: "Echo, telemetry, cause-specific treatment", tone: "warn" },
+        { label: "Low risk - discharge with education", detail: "ILR if recurrent and unexplained", tone: "good" },
+      ],
+    },
+    {
+      kind: "ladder",
+      heading: "Orthostatic hypotension: management ladder",
+      steps: [
+        { label: "Stop or reduce culprit drugs", detail: "Alpha-blockers, diuretics, nitrates, antidepressants" },
+        { label: "Fluids and salt", detail: "2-3 L water and about 10 g salt daily; 500 mL bolus" },
+        { label: "Physical measures", detail: "Head-up bed over 10 degrees, binders, stockings, counter-manoeuvres" },
+        { label: "Midodrine", detail: "2.5-10 mg three times daily; last dose 4 h before bed", tone: "warn" },
+        { label: "Fludrocortisone", detail: "0.1-0.3 mg daily; check potassium and supine BP", tone: "warn" },
+        { label: "Pyridostigmine, specialist review", detail: "Neurogenic OH, supine hypertension" },
+      ],
+    },
+    {
+      kind: "branch",
+      heading: "ESC classification of syncope",
+      root: "Syncope",
+      arms: [
+        { label: "Reflex", tone: "good", steps: ["Vasovagal", "Situational", "Carotid sinus syndrome", "Atypical"] },
+        { label: "Orthostatic", steps: ["Drug-induced", "Volume depletion", "Primary autonomic failure", "Secondary autonomic failure"] },
+        { label: "Cardiac", tone: "warn", steps: ["Bradyarrhythmia", "Tachyarrhythmia", "Structural: AS, HCM, MI", "PE, dissection, PH"] },
+      ],
+    },
+  ],
+  notes: {
+    sections: [
+      {
+        title: "Definition and key facts",
+        points: [
+          "Syncope is **TLOC from cerebral hypoperfusion** with spontaneous complete recovery.",
+          "Up to **4 in 10 people** faint at least once in life.",
+          "**Reflex syncope** is the commonest cause at all ages.",
+          "**Cardiac syncope** is less common but carries the worst prognosis.",
+          "OH affects about **1 in 5** adults over 65.",
+        ],
+      },
+      {
+        title: "Classification that matters",
+        points: [
+          "**Reflex**: vasovagal, situational, carotid sinus syndrome.",
+          "**Orthostatic**: drugs, volume depletion, autonomic failure.",
+          "**Cardiac**: brady or tachyarrhythmia, AS, HCM, MI, PE, dissection.",
+          "**Initial OH** within 15 s; classical within 3 min; delayed after 3 min.",
+        ],
+      },
+      {
+        title: "Pathophysiology",
+        points: [
+          "Six to eight seconds without cerebral flow causes **loss of consciousness**.",
+          "Vasovagal reflex causes **vasodilatation** and/or **bradycardia**.",
+          "Neurogenic OH: BP falls **without** a compensatory heart-rate rise.",
+          "Brief **myoclonic jerks** are common in syncope.",
+        ],
+      },
+      {
+        title: "Clinical features",
+        points: [
+          "Take history **before, during and after**, with a witness.",
+          "Reflex: trigger plus **prodrome** of nausea, sweating and pallor.",
+          "Cardiac: **exertional or supine**, no prodrome, palpitations, chest pain.",
+          "Elderly often have **amnesia** and report only a fall.",
+          "Always take a full **drug history**.",
+        ],
+      },
+      {
+        title: "Examination",
+        points: [
+          "**Lying and standing BP**: OH is a fall of 20/10 within 3 minutes.",
+          "Use a 30 mmHg systolic fall when **supine hypertension** is present.",
+          "Listen for **AS and HCM** murmurs.",
+          "Carotid sinus massage over 40: asystole **over 3 s** or SBP fall over 50.",
+        ],
+      },
+      {
+        title: "Differential diagnosis",
+        points: [
+          "**Seizure**: lateral tongue bite, cyanosis, prolonged confusion.",
+          "**Pseudosyncope**: eyes closed, long duration, frequent attacks.",
+          "**Hypoglycaemia** does not recover without glucose.",
+          "TIA rarely causes loss of consciousness.",
+        ],
+      },
+      {
+        title: "Investigations",
+        points: [
+          "Everyone: history, examination, lying and standing BP and **12-lead ECG**.",
+          "**Echo** if structural heart disease is suspected.",
+          "Holter for frequent symptoms; **ILR** for recurrent unexplained syncope.",
+          "**Tilt test** for suspected reflex syncope, delayed OH or pseudosyncope.",
+          "CT head and EEG are **not routine**.",
+          "Scores: **CHESS** and the Canadian Syncope Risk Score support judgement.",
+        ],
+      },
+      {
+        title: "Treatment - first line",
+        points: [
+          "Reflex: **education**, fluids, salt and counter-pressure manoeuvres.",
+          "Stop or reduce **hypotensive drugs**.",
+          "OH: 2-3 L water, about **10 g salt**, head-up bed and binders.",
+          "**Midodrine** 2.5-10 mg three times daily; last dose 4 h before bed.",
+          "**Fludrocortisone** 0.1-0.3 mg daily; watch potassium and oedema.",
+          "**Beta-blockers** do not help vasovagal syncope.",
+        ],
+      },
+      {
+        title: "Inpatient / emergency care",
+        points: [
+          "Admit **high-risk** patients: exertional, supine, structural disease, abnormal ECG.",
+          "Discharge **low-risk** reflex syncope with education.",
+          "Bradycardia: **atropine 1 mg IV**, up to 3 mg, then pacing.",
+          "Pacing for patients over 40 with documented **asystole of 3 s** or more.",
+          "Torsades: **magnesium sulphate 2 g IV**.",
+        ],
+      },
+      {
+        title: "Special groups",
+        points: [
+          "**Pregnancy**: aortocaval compression; lie in left lateral position.",
+          "**Elderly**: OH, carotid sinus hypersensitivity and polypharmacy coexist.",
+          "**Young** with exertional syncope: exclude long QT, HCM and WPW.",
+          "**Driving**: no restriction after a single reflex faint; arrhythmia needs treatment first.",
+        ],
+      },
+    ],
+    tables: [
+      {
+        heading: "Drugs in syncope and orthostatic hypotension",
+        columns: ["Drug", "Dose and route", "Duration", "Key side effects / cautions"],
+        rows: [
+          ["Midodrine", "2.5-10 mg oral three times daily", "Daytime; last dose 4 h before bed", "Supine hypertension, urinary retention, scalp tingling"],
+          ["Fludrocortisone", "0.1-0.3 mg oral once daily", "Review in 2-4 weeks", "Hypokalaemia, oedema, heart failure"],
+          ["Pyridostigmine", "30-60 mg oral two to three times daily", "Long term", "Cramps, diarrhoea, bradycardia"],
+          ["Salt and water", "About 10 g salt and 2-3 L water daily", "Daily", "Avoid in heart failure and hypertension"],
+          ["Atropine", "1 mg IV every 3-5 min, maximum 3 mg", "Acute bradycardia", "Ineffective in infranodal block"],
+          ["Magnesium sulphate", "2 g IV over 10 minutes", "Torsades", "Caution in renal failure"],
+        ],
+      },
+      {
+        heading: "Syncope versus seizure",
+        columns: ["Feature", "Syncope", "Seizure"],
+        rows: [
+          ["Trigger", "Standing, pain, heat", "Often none, sleep"],
+          ["Colour", "Pale", "Cyanosed"],
+          ["Movements", "Brief jerks under 15 s", "Tonic-clonic over 1 min"],
+          ["Tongue bite", "Rare, tip", "Lateral"],
+          ["Recovery", "Rapid, oriented", "Prolonged confusion"],
+        ],
+      },
+      {
+        heading: "Risk scores",
+        columns: ["Score", "Components", "Meaning"],
+        rows: [
+          ["San Francisco (CHESS)", "CHF, Hct under 30%, ECG abnormal, SOB, SBP under 90", "Any positive = higher 7-day risk"],
+          ["Canadian Syncope Risk Score", "Vasovagal history, heart disease, SBP, troponin, QRS, QTc, ED diagnosis", "-3 to -2 very low; 6 or more very high"],
+          ["ESC high-risk features", "Exertional or supine, palpitations, structural disease, abnormal ECG", "Admit or urgent evaluation"],
+        ],
+      },
+    ],
+    remember: [
+      "Syncope = TLOC + hypoperfusion + spontaneous full recovery.",
+      "History, lying-standing BP and ECG diagnose most cases.",
+      "Exertional or supine syncope is cardiac until proved otherwise.",
+      "OH = 20/10 fall within 3 minutes of standing.",
+      "CHESS = San Francisco Syncope Rule.",
+      "Beta-blockers do not help vasovagal syncope.",
+      "Midodrine by day, never at bedtime.",
+    ],
+  },
+};
+
 export default revision;

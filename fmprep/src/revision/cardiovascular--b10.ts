@@ -621,6 +621,205 @@ const revision: RevisionSet = {
       ],
     },
   },
+  "cardiovascular-channelopathies-qt": {
+    checked: "2026-10",
+    updated: [
+      "ESC 2022 VA/SCD guideline: LQTS diagnosed at QTc 480 ms or more or risk score over 3; mexiletine for LQT3; LCSD for refractory LQTS and CPVT.",
+      "ESC 2022: only spontaneous type 1 Brugada is diagnostic alone; induced type 1 needs clinical features; ICD IIa for type 1 with arrhythmic syncope.",
+      "ESC 2022: short QT (360 ms or less with features, or 320 ms or less) and ER syndrome criteria; molecular autopsy Class I.",
+      "AHA 2020 drug-induced arrhythmia statement: QTc over 500 ms or rise over 60 ms means stop or change the drug.",
+      "NTEP 2024 BPaLM regimen: QTcF monitoring; stop QT drugs if QTcF over 500 ms confirmed.",
+    ],
+    master: {
+      heading: "Master revision table - Long QT, Brugada and drug-induced QT prolongation",
+      columns: ["Heading", "What to write"],
+      rows: [
+        ["Definition", "Inherited ion-channel disease in a **structurally normal heart** causing polymorphic VT, VF and sudden death; acquired long QT from drugs and electrolytes."],
+        ["QT measurement", "Lead II or V5, tangent method; **Bazett QT/square root RR**, **Fridericia QT/cube root RR** (preferred at fast rates and in NTEP)."],
+        ["Cut-offs", "Prolonged **450 men, 460 women**; LQTS diagnosis **480 ms or more**; danger **over 500 ms or rise over 60 ms**; short QT 360 or less."],
+        ["LQTS types", "**LQT1 KCNQ1 - swimming/exercise**, **LQT2 KCNH2 - noise/postpartum**, **LQT3 SCN5A - sleep**; JLN with deafness; Romano-Ward dominant."],
+        ["Acquired causes", "Low K, Mg, Ca; macrolides, quinolones, azoles, antimalarials, **domperidone**, ondansetron, haloperidol, citalopram, methadone, **bedaquiline**; bradycardia, hypothyroidism, SAH, organophosphates."],
+        ["Torsades", "Defibrillate if pulseless; **magnesium sulfate 2 g IV**; **K to 4.5-5.0**; stop drugs; overdrive pacing or isoprenaline (acquired only); no amiodarone."],
+        ["LQTS long term", "Avoid QT drugs (**CredibleMeds**), **propranolol or nadolol**, mexiletine in LQT3, ICD after arrest or breakthrough, LCSD."],
+        ["Brugada", "**Coved ST elevation 2 mm or more with negative T in V1-V2**; triggers fever, sleep, alcohol, sodium-channel blockers; treat fever; ICD for arrest or syncope; quinidine."],
+        ["CPVT", "Normal resting ECG, **bidirectional VT on exercise**, RYR2; beta-blocker plus flecainide, exercise restriction, LCSD."],
+        ["Short QT and ER", "Short QT: ICD survivors, quinidine; ER pattern common and benign; ER syndrome needs ICD."],
+        ["Differential", "Brugada phenocopies (hyperkalaemia, RV ischaemia, PE, ARVC); polymorphic VT with normal QT means ischaemia; seizures may be arrhythmic syncope."],
+        ["Family screening", "ECG with high leads, exercise test, Holter, **cascade genetic testing**, counselling, CPR training."],
+        ["Exam traps", "No amiodarone for torsades; no isoprenaline in congenital LQT1/2; Bazett over-corrects at fast rates; type 2 Brugada not diagnostic."],
+      ],
+    },
+    flows: [
+      {
+        kind: "flow",
+        heading: "Prolonged QT on an ECG: what to do",
+        steps: [
+          { label: "Measure QT manually, correct with Fridericia", detail: "Lead II or V5, tangent method, average 3-5 beats" },
+          { label: "QTc over 500 ms or rise over 60 ms?", detail: "High torsades risk", tone: "decision" },
+          { label: "Yes - stop QT drugs, monitor", detail: "Check K, Mg, Ca; keep K 4.5-5.0", tone: "warn" },
+          { label: "Search for acquired causes", detail: "Drugs, electrolytes, bradycardia, thyroid, SAH, organophosphate" },
+          { label: "Persists after correction or syncope?", detail: "Think congenital LQTS; Schwartz score", tone: "decision" },
+          { label: "Refer inherited arrhythmia clinic", detail: "Exercise test, genetics, beta-blocker, family screening", tone: "good" },
+        ],
+      },
+      {
+        kind: "ladder",
+        heading: "Torsades de pointes: escalation",
+        steps: [
+          { label: "Pulseless - unsynchronised defibrillation", tone: "warn" },
+          { label: "Magnesium sulfate 2 g IV", detail: "Over 10-15 min; repeat once; infusion if recurring" },
+          { label: "Potassium to 4.5-5.0 mmol/L", detail: "Stop all QT-prolonging drugs" },
+          { label: "Raise heart rate", detail: "Overdrive pacing 90-110 bpm or isoprenaline (acquired only)" },
+          { label: "Lidocaine; avoid amiodarone and sotalol", detail: "Monitor until QTc under 500 ms", tone: "good" },
+        ],
+      },
+      {
+        kind: "compare",
+        heading: "Long QT versus Brugada versus CPVT",
+        columns: ["Feature", "Long QT", "Brugada", "CPVT"],
+        rows: [
+          ["Gene", "KCNQ1, KCNH2, SCN5A gain", "SCN5A loss (20-25%)", "RYR2, CASQ2"],
+          ["Resting ECG", "QTc 480 ms or more", "Coved ST elevation V1-V2", "Normal"],
+          ["Trigger", "Exercise, noise, sleep by type", "Fever, sleep, alcohol, sodium blockers", "Exercise, emotion"],
+          ["Arrhythmia", "Torsades", "Polymorphic VT, VF at rest", "Bidirectional VT"],
+          ["Treatment", "Beta-blocker, avoid QT drugs", "Avoid triggers, treat fever, ICD", "Beta-blocker plus flecainide"],
+        ],
+      },
+    ],
+    notes: {
+      sections: [
+        {
+          title: "Definition and key facts",
+          points: [
+            "**Channelopathies** cause sudden death in structurally normal hearts.",
+            "Congenital long QT and Brugada each affect about 1 in 2000.",
+            "Drug-induced QT prolongation is far commoner than congenital LQTS.",
+            "Brugada is about **8-10 times** commoner in men.",
+          ],
+        },
+        {
+          title: "Causes and risk factors",
+          points: [
+            "**LQT1** KCNQ1 - swimming; **LQT2** KCNH2 - noise; **LQT3** SCN5A - sleep.",
+            "Jervell and Lange-Nielsen: long QT with **congenital deafness**.",
+            "Acquired: low potassium, magnesium, calcium, bradycardia, hypothyroidism.",
+            "Drugs: macrolides, quinolones, antimalarials, domperidone, haloperidol, **bedaquiline**.",
+            "Torsades risk rises with female sex, age, heart failure and drug combinations.",
+          ],
+        },
+        {
+          title: "Classification that matters",
+          points: [
+            "QTc **480 ms or more** diagnoses LQTS (ESC 2022).",
+            "QTc **over 500 ms** or rise over 60 ms: stop the drug.",
+            "Brugada **type 1 coved** pattern is diagnostic; type 2 saddleback is not.",
+            "Short QT: QTc 360 ms or less with features.",
+            "Early repolarisation pattern is common and usually benign.",
+          ],
+        },
+        {
+          title: "Clinical features",
+          points: [
+            "Syncope, seizures, nocturnal agonal breathing or sudden death in the young.",
+            "Arrhythmic syncope is often **misdiagnosed as epilepsy**.",
+            "Brugada events occur at rest, in sleep and with **fever**.",
+            "CPVT presents with exercise syncope and a normal resting ECG.",
+          ],
+        },
+        {
+          title: "Investigations",
+          points: [
+            "Measure QT manually; use **Fridericia** at fast heart rates.",
+            "Check potassium, magnesium, calcium and TSH.",
+            "Exercise test for LQT1 and **CPVT**.",
+            "High precordial leads or drug challenge unmask Brugada.",
+            "Genetic testing with counselling, then cascade testing of relatives.",
+          ],
+        },
+        {
+          title: "Inpatient / emergency care",
+          points: [
+            "Pulseless torsades: **unsynchronised defibrillation**.",
+            "**Magnesium sulfate 2 g IV**, even if serum magnesium is normal.",
+            "Raise potassium to 4.5-5.0 mmol/L and stop QT drugs.",
+            "Overdrive pacing or isoprenaline for acquired pause-dependent torsades.",
+            "Never give **amiodarone or sotalol** for torsades.",
+          ],
+        },
+        {
+          title: "Treatment - next steps",
+          points: [
+            "LQTS: **propranolol or nadolol** lifelong and avoid QT drugs.",
+            "LQT3: add **mexiletine**.",
+            "ICD after cardiac arrest or events despite beta-blockers.",
+            "Brugada: treat fever, avoid sodium-channel blockers; ICD if arrest or syncope.",
+            "CPVT: beta-blocker plus **flecainide**, limit strenuous exercise.",
+          ],
+        },
+        {
+          title: "Special groups",
+          points: [
+            "Pregnancy: continue beta-blockers, especially **postpartum** in LQT2.",
+            "DR-TB patients on bedaquiline need **QTcF monitoring** under NTEP.",
+            "Elderly inpatients: multiple QT drugs plus diuretics cause torsades.",
+            "Brugada with dengue or malaria: treat fever early.",
+          ],
+        },
+        {
+          title: "Referral and follow-up",
+          points: [
+            "Refer any young person with exertional, noise-related or nocturnal syncope.",
+            "Screen first-degree relatives with ECG, exercise test and genetics.",
+            "Give a written list of **drugs to avoid**.",
+            "Teach families CPR and AED use.",
+          ],
+        },
+      ],
+      tables: [
+        {
+          heading: "Drugs in channelopathies",
+          columns: ["Drug", "Dose and route", "Duration", "Key side effects / cautions"],
+          rows: [
+            ["Magnesium sulfate", "2 g IV over 10-15 min", "Repeat once, then infusion", "Flushing, hypotension; caution in renal failure"],
+            ["Isoprenaline", "2-10 micrograms/min IV", "Until pacing or drug washout", "Not in congenital LQT1/LQT2 or ischaemia"],
+            ["Propranolol", "2-4 mg/kg/day oral in divided doses", "Lifelong in LQTS and CPVT", "Bradycardia, bronchospasm"],
+            ["Nadolol", "1-2 mg/kg/day oral once daily", "Lifelong", "Bradycardia; limited availability in India"],
+            ["Mexiletine", "150-200 mg oral three times daily", "Lifelong in LQT3", "Nausea, tremor"],
+            ["Flecainide", "100-150 mg oral twice daily", "Add-on in CPVT", "Never in Brugada or structural disease"],
+            ["Quinidine", "600-1200 mg/day oral divided", "Brugada, short QT", "Diarrhoea, thrombocytopenia"],
+          ],
+        },
+        {
+          heading: "LQTS subtypes",
+          columns: ["Type", "Gene", "Trigger", "T wave"],
+          rows: [
+            ["LQT1", "KCNQ1", "Exercise, swimming", "Broad-based"],
+            ["LQT2", "KCNH2", "Sudden noise, postpartum", "Notched, low amplitude"],
+            ["LQT3", "SCN5A", "Sleep, rest", "Late-onset, long ST"],
+          ],
+        },
+        {
+          heading: "Brugada patterns",
+          columns: ["Pattern", "ECG in V1-V2", "Meaning"],
+          rows: [
+            ["Type 1 coved", "ST elevation 2 mm or more, coved, negative T", "Diagnostic if spontaneous"],
+            ["Type 2 saddleback", "Saddleback ST, positive or flat T", "Not diagnostic; consider drug challenge"],
+            ["Phenocopy", "Similar pattern with hyperkalaemia, RV ischaemia, PE", "Resolves with treating the cause"],
+          ],
+        },
+      ],
+      remember: [
+        "Swimming, Sound, Sleep - LQT1, LQT2, LQT3.",
+        "Torsades: magnesium first, potassium to 4.5-5.0.",
+        "No amiodarone for torsades.",
+        "Over 500 ms or up 60 ms - stop the drug.",
+        "Coved is Brugada; saddleback is not enough.",
+        "Fever triggers Brugada - give paracetamol early.",
+        "Deafness plus long QT: Jervell and Lange-Nielsen.",
+        "CPVT: normal ECG at rest, bidirectional VT on the treadmill.",
+      ],
+    },
+  },
 };
 
 export default revision;

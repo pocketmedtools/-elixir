@@ -625,6 +625,211 @@ const revision: RevisionSet = {
       ],
     },
   },
+
+  "cardiovascular-aortic-stenosis": {
+    checked: "2026-10",
+    updated: [
+      "ESC/EACTS 2025: TAVI recommended from age 70 (was 75) for tricuspid AS with suitable anatomy",
+      "ESC/EACTS 2025: early intervention in asymptomatic severe high-gradient AS - new class IIa (EARLY TAVR 2024)",
+      "DEDICATE 2024: TAVI non-inferior to SAVR in low-intermediate risk",
+      "LANDMARK 2024: Indian Myval valve non-inferior to contemporary TAVI valves",
+      "ESC 2022 non-cardiac surgery: AVR before elective surgery in symptomatic severe AS",
+    ],
+    master: {
+      heading: "Master revision table - Aortic stenosis",
+      columns: ["Heading", "What to write"],
+      rows: [
+        ["Definition", "Fixed LV outflow obstruction at the aortic valve; normal AVA **3-4 cm²**; severe **Vmax 4 m/s, MG 40 mmHg, AVA 1.0 cm²**."],
+        ["Causes", "**Calcific** tricuspid (over 65; Lp(a), HT, smoking), **bicuspid** (1-2%, aortopathy, coarctation, Turner), **rheumatic** (with MS), sub/supravalvular (Williams)."],
+        ["Pathophysiology", "Pressure overload, **concentric LVH**, diastolic dysfunction; subendocardial ischaemia, fixed output, afterload mismatch; **Heyde** (acquired vWD 2A)."],
+        ["Symptoms", "**Syncope (3 y), angina (5 y), dyspnoea (2 y)** survival without AVR; early clue is reduced exercise tolerance."],
+        ["Signs", "**Slow-rising low-volume pulse**, narrow PP, heaving non-displaced apex, S4, **ESM to carotids**, soft A2, reversed split; click in bicuspid; Gallavardin."],
+        ["Severity", "Late-peaking murmur, soft A2; echo Vmax, MG, AVA (indexed 0.6), velocity ratio 0.25; very severe **5 m/s / 60 mmHg**."],
+        ["Low-gradient AS", "AVA 1.0 or less, MG under 40, SVi 35 or less: **dobutamine echo** if EF low; **CT calcium** (men 2000, women 1200 AU) if EF normal."],
+        ["Investigations", "ECG LVH strain, CXR post-stenotic dilatation, **echo**, exercise test only if asymptomatic, BNP, coronary assessment, TAVI-CT."],
+        ["AVR indications", "Symptoms; LVEF under 50%; positive exercise test; Vmax 5, rapid progression, high BNP; with CABG; **asymptomatic severe low-risk - IIa (2025)**."],
+        ["TAVI vs SAVR", "ESC 2025: **TAVI 70 or older**, SAVR under 70 low risk; ACC/AHA 2020: SAVR under 65, 65-80 shared, TAVI over 80; SAVR for bicuspid aortopathy, CABG."],
+        ["Medical care", "No drug alters course; treat HT carefully; **avoid nitrates, over-diuresis**; DOAC allowed for AF; statins not for valve."],
+        ["After TAVI", "Single antiplatelet lifelong; OAC alone if AF; pacemaker risk; IE prophylaxis; echo baseline then yearly."],
+        ["Pre-op", "Symptomatic severe AS: **AVR before elective surgery**; avoid hypotension, tachycardia, spinal block."],
+        ["Follow-up", "Echo: mild 3-5 y, moderate 1-2 y, **severe 6-12 months**; new symptom = urgent referral."],
+      ],
+    },
+    flows: [
+      {
+        kind: "flow",
+        heading: "Ejection murmur to AS decision",
+        steps: [
+          { label: "Ejection systolic murmur, slow-rising pulse, soft A2", detail: "Ask about syncope, angina, dyspnoea" },
+          { label: "Echo: Vmax, mean gradient, AVA, LVEF, SVi", detail: "Severe: 4 m/s, 40 mmHg, 1.0 cm²", tone: "decision" },
+          { label: "AVA severe but gradient low?", detail: "EF low: dobutamine echo; EF normal: CT calcium score", tone: "decision" },
+          { label: "Symptomatic or LVEF under 50%", detail: "Refer to Heart Team for AVR", tone: "warn" },
+          { label: "Asymptomatic severe", detail: "Exercise test; early AVR IIa if low risk; else echo 6-12 monthly" },
+          { label: "TAVI 70 or older; SAVR under 70 low risk", detail: "Bicuspid with aortopathy or CABG: SAVR", tone: "good" },
+        ],
+      },
+      {
+        kind: "branch",
+        heading: "Low-gradient severe-area AS",
+        root: "AVA 1.0 cm² or less, mean gradient under 40 mmHg",
+        arms: [
+          { label: "LVEF under 50% (classical)", tone: "warn", steps: ["Dobutamine echo", "MG 40+ with AVA 1.0 or less: true severe, AVR", "AVA over 1.0: pseudo-severe, GDMT"] },
+          { label: "LVEF 50% or more, SVi 35 or less (paradoxical)", steps: ["CT calcium: men 2000, women 1200 AU", "Confirmed and symptomatic: AVR"] },
+          { label: "Normal flow", tone: "good", steps: ["Recheck LVOT diameter", "Usually moderate AS - surveillance"] },
+        ],
+      },
+      {
+        kind: "compare",
+        heading: "AS versus HOCM at the bedside",
+        columns: ["Feature", "Aortic stenosis", "HOCM"],
+        rows: [
+          ["Pulse", "Slow-rising, low volume", "Jerky, bisferiens"],
+          ["Murmur site", "Right 2nd ICS to carotids", "Left sternal edge, no carotid radiation"],
+          ["Valsalva / standing", "Softer", "Louder"],
+          ["Squatting / handgrip", "Louder or unchanged", "Softer"],
+          ["A2 and click", "Soft A2; click if bicuspid", "Normal A2; no click"],
+        ],
+      },
+    ],
+    notes: {
+      sections: [
+        {
+          title: "Definition and key facts",
+          points: [
+            "Severe AS: **Vmax 4 m/s**, mean gradient 40 mmHg, valve area 1.0 cm².",
+            "About **3.4%** of people over 75 have severe AS.",
+            "**Bicuspid valves** affect 1-2% and present a decade or two earlier.",
+            "Untreated symptomatic severe AS: about **half die within 2 years**.",
+          ],
+        },
+        {
+          title: "Causes and risk factors",
+          points: [
+            "**Calcific** degeneration of a tricuspid valve after 65.",
+            "**Bicuspid** valve with aortopathy, coarctation or Turner syndrome.",
+            "**Rheumatic** AS comes with mitral disease.",
+            "Lipoprotein(a), hypertension, smoking and CKD speed calcification; statins do not slow it.",
+          ],
+        },
+        {
+          title: "Pathophysiology",
+          points: [
+            "Pressure overload causes **concentric LVH** and stiff ventricle.",
+            "Angina from subendocardial ischaemia, even with normal coronaries.",
+            "Exertional syncope from **fixed output** with exercise vasodilatation.",
+            "**Heyde syndrome**: shear destroys large von Willebrand multimers, causing GI bleeding.",
+          ],
+        },
+        {
+          title: "Clinical features",
+          points: [
+            "Triad: **syncope, angina, dyspnoea**; survival about 3, 5 and 2 years.",
+            "**Slow-rising pulse**, heaving apex, ejection murmur to carotids.",
+            "Severity: **late-peaking murmur**, soft A2, reversed split S2.",
+            "**Gallavardin**: AS murmur heard at the apex mimics MR.",
+            "In heart failure the murmur may become **soft**.",
+          ],
+        },
+        {
+          title: "Investigations",
+          points: [
+            "ECG: **LVH with strain**; echo gives Vmax, gradient and area.",
+            "Low gradient with low EF: **dobutamine stress echo**.",
+            "Low gradient with normal EF: **CT calcium score** (men 2000, women 1200 AU).",
+            "Exercise test only in **asymptomatic** patients.",
+          ],
+        },
+        {
+          title: "Treatment - first line",
+          points: [
+            "No drug changes the course; refer at the **first symptom**.",
+            "Treat hypertension gently; avoid **nitrates** and over-diuresis.",
+            "AF: rate control and anticoagulation; **DOACs are allowed**.",
+            "Symptomatic severe AS needs **valve replacement**.",
+          ],
+        },
+        {
+          title: "Treatment - next steps",
+          points: [
+            "ESC 2025: **TAVI from age 70** with tricuspid valve and femoral access.",
+            "SAVR under 70 at low risk, or with bicuspid aortopathy or CABG.",
+            "ACC/AHA 2020: SAVR under 65, shared 65-80, TAVI over 80.",
+            "After TAVI: **single antiplatelet** lifelong; anticoagulant alone if AF.",
+            "Balloon valvuloplasty is only a **bridge**.",
+          ],
+        },
+        {
+          title: "Special groups",
+          points: [
+            "Symptomatic severe AS: **valve replacement before** elective non-cardiac surgery.",
+            "Avoid spinal anaesthesia; prevent hypotension and tachycardia.",
+            "Severe symptomatic AS in pregnancy is **mWHO class IV**; treat before conception.",
+            "Bicuspid aorta: operate at **55 mm**, or 50 mm with risk factors.",
+          ],
+        },
+        {
+          title: "Referral and follow-up",
+          points: [
+            "Echo: mild every 3-5 years, moderate 1-2 years, **severe 6-12 months**.",
+            "Any new symptom means **urgent referral**, not the next routine echo.",
+            "After valve replacement, give endocarditis prophylaxis for dental work.",
+          ],
+        },
+        {
+          title: "Latest updates",
+          points: [
+            "**ESC/EACTS 2025** lowered the TAVI age threshold to 70.",
+            "Early intervention in asymptomatic severe AS is now **class IIa**.",
+            "**EARLY TAVR**: events 26.8% with early TAVI versus 45.3% with surveillance.",
+            "**LANDMARK 2024**: Indian Myval valve non-inferior.",
+          ],
+        },
+      ],
+      tables: [
+        {
+          heading: "Drugs in aortic stenosis",
+          columns: ["Drug", "Dose and route", "Duration", "Key side effects / cautions"],
+          rows: [
+            ["Furosemide", "20-40 mg oral or IV", "Lowest effective dose", "Over-diuresis drops output"],
+            ["Telmisartan", "20-80 mg oral daily, start low", "Long term for hypertension", "Hypotension, high K"],
+            ["Apixaban (AF)", "5 mg oral twice daily", "Long term", "Bleeding; not with mechanical valve"],
+            ["Aspirin (after TAVI)", "75-100 mg oral daily", "Lifelong", "Bleeding; do not add to anticoagulant"],
+            ["Warfarin (mechanical aortic valve)", "2-5 mg oral daily, titrated", "INR 2.5, lifelong", "Bleeding, interactions"],
+            ["Amoxicillin (dental prophylaxis after AVR)", "2 g oral 30-60 min before", "Single dose", "Allergy: azithromycin 500 mg"],
+          ],
+        },
+        {
+          heading: "AS severity grading",
+          columns: ["Parameter", "Mild", "Moderate", "Severe"],
+          rows: [
+            ["Vmax", "2.6-2.9 m/s", "3.0-3.9 m/s", "4.0 m/s or more"],
+            ["Mean gradient", "Under 20 mmHg", "20-39 mmHg", "40 mmHg or more"],
+            ["Valve area", "Over 1.5 cm²", "1.0-1.5 cm²", "1.0 cm² or less"],
+            ["Indexed area", "Over 0.85 cm²/m²", "0.60-0.85 cm²/m²", "0.6 cm²/m² or less"],
+          ],
+        },
+        {
+          heading: "TAVI or SAVR",
+          columns: ["Factor", "TAVI", "SAVR"],
+          rows: [
+            ["Age (ESC 2025)", "70 or older", "Under 70, low risk"],
+            ["Valve", "Tricuspid", "Bicuspid with unfavourable anatomy"],
+            ["Other surgery needed", "No", "CABG, mitral or aortic root"],
+            ["Patient", "Frail, porcelain aorta, prior sternotomy", "Endocarditis, poor femoral access"],
+          ],
+        },
+      ],
+      remember: [
+        "Severe AS: **4-40-1** (4 m/s, 40 mmHg, 1.0 cm²).",
+        "**SAD**: syncope 3, angina 5, dyspnoea 2 years.",
+        "Severity: **late peak, soft A2**, not loudness.",
+        "**Heyde**: AS plus angiodysplasia plus acquired vWD.",
+        "Never exercise-test **symptomatic** severe AS.",
+        "**TAVI from 70** (ESC/EACTS 2025).",
+        "Low EF low gradient: **dobutamine**; normal EF: **calcium score**.",
+      ],
+    },
+  },
 };
 
 export default revision;

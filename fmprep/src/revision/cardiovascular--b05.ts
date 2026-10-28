@@ -622,6 +622,210 @@ const revision: RevisionSet = {
       ],
     },
   },
+  "cardiovascular-hcm": {
+    checked: "2026-10",
+    updated: [
+      "AHA/ACC 2024 HCM guideline: cardiac myosin inhibitor Class I for symptomatic obstructive HCM; liberalised sport; major SCD markers.",
+      "ESC 2023 cardiomyopathy guideline: mavacamten IIa; LGE 15% or more, LVEF under 50%, apical aneurysm as ICD modifiers.",
+      "Aficamten FDA approval December 2025 (SEQUOIA-HCM, MAPLE-HCM).",
+      "ODYSSEY-HCM 2025: mavacamten no benefit in non-obstructive HCM.",
+      "Mavacamten launched in India in 2025 (import licence).",
+    ],
+    master: {
+      heading: "Master revision table - Hypertrophic cardiomyopathy",
+      columns: ["Heading", "What to write"],
+      rows: [
+        ["Definition", "LV wall **15 mm or more (13 mm in a relative)** not explained by loading; about **1 in 500**; commonest inherited heart disease."],
+        ["Genetics", "Autosomal dominant; **MYH7, MYBPC3** about 70% of positives; phenocopies Fabry, Danon, PRKAG2, amyloid, Noonan."],
+        ["Pathophysiology", "Hypercontractility, disarray, fibrosis; **SAM** causes dynamic LVOT obstruction and posterior MR; diastolic dysfunction; ischaemia; VT substrate."],
+        ["Classification", "Obstructive **30 mmHg or more** (50 significant), labile, non-obstructive; septal, apical (Yamaguchi), mid-ventricular; end-stage LVEF under 50%."],
+        ["Clinical", "Dyspnoea, angina, exertional syncope, sudden death; bifid pulse, double apical impulse, S4; murmur **louder with Valsalva/standing, softer with squat/handgrip**."],
+        ["Investigations", "ECG (LVH, dagger Q, giant T apical); echo with Valsalva and exercise gradient; **CMR LGE**; 48-h Holter; CPET; genetic testing."],
+        ["Drugs", "**Beta-blocker** first, then verapamil/diltiazem, disopyramide, **mavacamten/aficamten**; avoid nitrates, vasodilators, digoxin, high-dose diuretics."],
+        ["Invasive", "Gradient 50 or more + NYHA III-IV on drugs: **myectomy (LBBB)** or **alcohol ablation (RBBB, CHB 10-20%)**."],
+        ["SCD and ICD", "HCM Risk-SCD (age, wall, LA, gradient, family SCD, NSVT, syncope): **under 4% no, 4-6% may, 6% or more should**; modifiers LGE 15%, LVEF under 50%, aneurysm, wall 30 mm."],
+        ["AF and HF", "AF - **anticoagulate regardless of score**; end-stage - HFrEF GDMT; hypotension - fluids and phenylephrine."],
+        ["Special", "Moderate exercise for all, competitive sport after shared decision; pregnancy usually tolerated, stop myosin inhibitors; 50% offspring risk."],
+        ["Family screening", "Cascade genetics; relatives ECG + echo from 10-12 years every 1-2 years, adults 3-5 years; genotype-negative discharged."],
+      ],
+    },
+    flows: [
+      {
+        kind: "flow",
+        heading: "Suspected HCM: diagnostic pathway",
+        steps: [
+          { label: "Murmur, syncope, abnormal ECG or family history", detail: "Young patient or athlete" },
+          { label: "Echo: wall 15 mm or more, SAM, gradient", detail: "Rest, Valsalva and standing; exercise echo if under 50 mmHg", tone: "decision" },
+          { label: "Exclude loading and phenocopies", detail: "BP, AS, athlete's heart, amyloid, Fabry" },
+          { label: "CMR, Holter, CPET, genetics", detail: "LGE extent, NSVT, AF, variant" },
+          { label: "SCD risk and family cascade screening", detail: "HCM Risk-SCD; relatives", tone: "good" },
+        ],
+      },
+      {
+        kind: "ladder",
+        heading: "Treatment ladder for symptomatic obstructive HCM",
+        steps: [
+          { label: "Avoid triggers and vasodilators", detail: "Hydration, small meals, no nitrates or PDE-5 inhibitors" },
+          { label: "Non-vasodilating beta-blocker", detail: "Propranolol, metoprolol, bisoprolol to HR about 60" },
+          { label: "Verapamil or diltiazem", detail: "If beta-blocker fails or intolerant" },
+          { label: "Disopyramide or cardiac myosin inhibitor", detail: "Mavacamten 5 mg (echo-guided); aficamten" },
+          { label: "Septal reduction therapy", detail: "Gradient 50 mmHg or more with NYHA III-IV", tone: "warn" },
+        ],
+      },
+      {
+        kind: "compare",
+        heading: "Murmur dynamics: HCM vs aortic stenosis",
+        columns: ["Manoeuvre", "HCM", "AS"],
+        rows: [
+          ["Valsalva / standing", "Louder", "Softer"],
+          ["Squatting / leg raise", "Softer", "Louder"],
+          ["Handgrip", "Softer", "Softer or same"],
+          ["Carotid radiation", "No", "Yes"],
+          ["Pulse", "Brisk, bifid", "Slow-rising"],
+        ],
+      },
+    ],
+    notes: {
+      sections: [
+        {
+          title: "Definition and key facts",
+          points: [
+            "HCM is LV wall **15 mm or more**, or 13 mm in a relative, not due to loading.",
+            "Prevalence about **1 in 500**; commonest inherited heart disease.",
+            "Leading cause of **sudden death** in young athletes in many series.",
+            "About **two-thirds** have LVOT obstruction at rest or on provocation.",
+          ],
+        },
+        {
+          title: "Causes and risk factors",
+          points: [
+            "Autosomal dominant **sarcomere** variants; MYH7 and MYBPC3 commonest.",
+            "Phenocopies: **Fabry**, Danon, PRKAG2, amyloid, Noonan.",
+            "Each child of an affected parent has a **50%** risk.",
+          ],
+        },
+        {
+          title: "Pathophysiology",
+          points: [
+            "**SAM** of the mitral leaflet causes dynamic outflow obstruction.",
+            "Obstruction worsens with **low preload**, low afterload and high contractility.",
+            "SAM causes **posteriorly directed** mitral regurgitation.",
+            "Disarray and fibrosis are the substrate for **VT and VF**.",
+          ],
+        },
+        {
+          title: "Clinical features",
+          points: [
+            "Exertional breathlessness, angina, **syncope** and palpitations.",
+            "Brisk **bifid pulse** and double apical impulse.",
+            "Murmur **louder with Valsalva** and standing.",
+            "Murmur **softer with squatting** and handgrip.",
+          ],
+        },
+        {
+          title: "Investigations",
+          points: [
+            "ECG: LVH, **dagger Q waves**, giant T inversion in apical HCM.",
+            "Echo gradient at rest and with **Valsalva**; exercise echo if needed.",
+            "**CMR** shows wall thickness and LGE extent.",
+            "48-hour **Holter** for NSVT and AF.",
+            "Genetic testing in the proband enables **cascade testing**.",
+          ],
+        },
+        {
+          title: "Treatment - first line",
+          points: [
+            "**Non-vasodilating beta-blocker** first.",
+            "Then **verapamil or diltiazem** if beta-blocker fails.",
+            "Add **disopyramide** or a myosin inhibitor for persistent symptoms.",
+            "**Mavacamten** needs echo checks; hold if LVEF falls under 50%.",
+            "Avoid **nitrates, vasodilators, digoxin** and high-dose diuretics.",
+          ],
+        },
+        {
+          title: "Treatment - next steps",
+          points: [
+            "Septal reduction if gradient **50 mmHg or more** with NYHA III-IV.",
+            "**Myectomy** causes LBBB; alcohol ablation causes RBBB and heart block.",
+            "ICD after arrest or if HCM Risk-SCD is **6% or more**.",
+            "AF: **anticoagulate** regardless of CHA2DS2-VA.",
+          ],
+        },
+        {
+          title: "Special groups",
+          points: [
+            "Regular **moderate exercise** suits everyone with HCM.",
+            "Competitive sport only after **shared decision** with an expert.",
+            "Pregnancy usually tolerated; **stop myosin inhibitors** before conception.",
+            "Treat hypotension with **fluids and phenylephrine**, not inotropes.",
+          ],
+        },
+        {
+          title: "Referral and follow-up",
+          points: [
+            "Review with ECG and echo every **1-2 years**.",
+            "Repeat Holter and SCD risk every **1-2 years**.",
+            "Screen relatives from **10-12 years**, then every 1-2 years in childhood.",
+            "Genotype-negative relatives can be **discharged**.",
+          ],
+        },
+        {
+          title: "Latest updates",
+          points: [
+            "**AHA/ACC 2024**: myosin inhibitor Class I for symptomatic obstruction.",
+            "**ESC 2023**: LGE, low LVEF and aneurysm modify ICD decisions.",
+            "**Aficamten** approved by FDA in December 2025.",
+          ],
+        },
+      ],
+      tables: [
+        {
+          heading: "Drugs in HCM",
+          columns: ["Drug", "Dose and route", "Duration", "Key side effects / cautions"],
+          rows: [
+            ["Propranolol", "40-80 mg oral TDS", "Lifelong", "Bradycardia, fatigue"],
+            ["Metoprolol succinate", "50-200 mg oral daily", "Lifelong", "Bradycardia"],
+            ["Verapamil", "40-80 mg TDS; SR to 480 mg/day", "Lifelong", "AV block; avoid with high gradient and low BP"],
+            ["Disopyramide", "100-200 mg oral TDS-QID", "Add-on", "Anticholinergic, QT prolongation"],
+            ["Mavacamten", "5 mg oral daily (2.5-15 mg)", "Echo-guided", "Low LVEF, teratogenic, CYP interactions"],
+            ["Aficamten", "5 mg oral daily to 20 mg", "Echo-guided", "Low LVEF"],
+            ["Apixaban (AF)", "5 mg oral BD", "Lifelong", "Bleeding"],
+          ],
+        },
+        {
+          heading: "SCD risk and ICD",
+          columns: ["Category", "Criterion", "ICD"],
+          rows: [
+            ["Secondary prevention", "Arrest, VF, sustained VT", "Recommended"],
+            ["HCM Risk-SCD", "Under 4%", "Generally not"],
+            ["HCM Risk-SCD", "4-6%", "May be considered"],
+            ["HCM Risk-SCD", "6% or more", "Should be considered"],
+            ["Major markers (AHA)", "Family SCD, wall 30 mm, syncope, aneurysm, LVEF under 50%", "Reasonable"],
+          ],
+        },
+        {
+          heading: "HCM versus athlete's heart",
+          columns: ["Feature", "HCM", "Athlete's heart"],
+          rows: [
+            ["Wall thickness", "Over 15 mm, asymmetric", "13-15 mm or less, symmetric"],
+            ["LV cavity", "Small", "Large, over 55 mm"],
+            ["Diastolic function", "Abnormal", "Normal"],
+            ["CMR LGE", "Often present", "Absent"],
+            ["Detraining", "No regression", "Regresses"],
+          ],
+        },
+      ],
+      remember: [
+        "**15 mm, or 13 mm in a relative**.",
+        "**Valsalva up, squat down** - the HCM murmur.",
+        "Obstruction: **30 defines, 50 treats**.",
+        "Avoid **nitrates, digoxin, vasodilators, inotropes**.",
+        "Risk-SCD: **4% and 6%** thresholds.",
+        "**Myectomy LBBB, ablation RBBB**.",
+        "AF in HCM: **anticoagulate all**.",
+      ],
+    },
+  },
 };
 
 export default revision;
