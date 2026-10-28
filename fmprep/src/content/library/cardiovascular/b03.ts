@@ -1600,6 +1600,13 @@ topics.push({
       ],
       answer: [
         {
+          heading: "Definitions and timing",
+          points: [
+            "True aneurysm: scarred, thinned full-thickness wall that bulges in systole; forms over weeks to months.",
+            "Pseudoaneurysm: free wall rupture sealed by pericardium and thrombus; forms in days to weeks.",
+          ],
+        },
+        {
           heading: "Anatomy and site",
           points: [
             "True: wide neck, myocardial wall, anterior or apical.",
@@ -1640,6 +1647,519 @@ topics.push({
     "2025 ESC Guidelines for the management of myocarditis and pericarditis. European Heart Journal 2025",
     "Moller JE et al. Microaxial flow pump or standard care in infarct-related cardiogenic shock (DanGer Shock). NEJM 2024",
     "Cardiological Society of India: position statement for the management of ST elevation myocardial infarction in India. Indian Heart Journal 2017",
+  ],
+});
+
+topics.push({
+  id: "cardiovascular-post-mi-rehab",
+  title: "After the MI: secondary prevention and cardiac rehabilitation",
+  frequency: "core",
+  oneLiner:
+    "**Secondary prevention after MI** is the lifelong bundle that halves recurrent events: **DAPT** (default 12 months), a **high-intensity statin** to an **LDL under 55 mg/dL with a 50% reduction**, **ACE inhibitor**, **beta-blocker** (clearly for LVEF 40% or less; REDUCE-AMI and REBOOT show no benefit when LVEF is preserved), **MRA and SGLT2 inhibitor** when LVEF is reduced or HF or diabetes is present, tobacco cessation, and **structured cardiac rehabilitation** (phase I in hospital, phase II supervised exercise, phase III lifelong maintenance) with planned return to work, driving and sex.",
+  keywords: [
+    "secondary prevention",
+    "cardiac rehabilitation",
+    "DAPT",
+    "high-intensity statin",
+    "LDL target 55",
+    "ezetimibe",
+    "PCSK9 inhibitor",
+    "beta-blocker after MI",
+    "REDUCE-AMI",
+    "REBOOT",
+    "BETAMI-DANBLOCK",
+    "eplerenone",
+    "SGLT2 inhibitor",
+    "colchicine",
+    "Yoga-CaRe",
+    "return to work",
+    "driving after MI",
+    "post-MI depression",
+    "ABCDE",
+  ],
+  sections: [
+    {
+      heading: "Definition and epidemiology",
+      points: [
+        "**Secondary prevention** is drug and lifestyle therapy that reduces recurrent MI, stroke, heart failure and death in patients who have had an MI. [ESC 2023 ACS]",
+        "**Recurrence risk is front-loaded**: about **1 in 5 MI survivors** has another cardiovascular event within a year, with the highest risk in the first months. [Braunwald 12e]",
+        "**Cardiac rehabilitation** is a multidisciplinary programme of exercise training, risk factor management, education and psychosocial support that is **Class I** after ACS. [ESC 2023 ACS]",
+        "**PURE** found that in lower-income countries, including India, only a small minority of patients with coronary disease took statins, aspirin and ACE inhibitors - **under 5% were on statins** in low-income countries. [PURE, Lancet 2011]",
+        "**Cardiac rehabilitation uptake in India is very low** (well under 10%), because few programmes exist and travel and wage loss are barriers. [Yoga-CaRe, JACC 2020]",
+        "**Adherence falls quickly**: up to half of patients stop at least one secondary-prevention drug within a year, especially statins. [ESC 2023 ACS]",
+        "Indians have MI younger (INTERHEART South Asia mean age 53), so **decades of secondary prevention** and return to productive work are at stake. [INTERHEART South Asia, JAMA 2007]",
+      ],
+    },
+    {
+      heading: "Risk factors for recurrence",
+      points: [
+        "**Persisting tobacco use** roughly doubles the risk of reinfarction and death; stopping is the most effective single measure. [ESC 2023 ACS]",
+        "**LDL cholesterol** is causal: every **39 mg/dL (1 mmol/L) reduction** lowers major vascular events by about **22%** (CTT). [CTT Collaboration, Lancet 2010]",
+        "**Diabetes, hypertension, CKD, obesity and inactivity** each raise recurrent risk and need targeted treatment. [ESC 2023 ACS]",
+        "**Low LVEF and residual ischaemia** predict heart failure, arrhythmic death and recurrent events. [Harrison 22e]",
+        "**Depression, low social support and poverty** independently worsen outcomes and adherence. [AHA 2014 Statement]",
+        "**Lipoprotein(a)** is high in many South Asians and predicts recurrence; measure it once. [CSI Dyslipidaemia 2024]",
+        "**Polyvascular disease** (PAD, stroke) and recurrent events within 2 years define **extreme risk**. [ESC/EAS 2019 Dyslipidaemia]",
+      ],
+    },
+    {
+      heading: "Pathophysiology - why each drug works",
+      points: [
+        "**Aspirin and P2Y12 inhibitors** prevent thrombosis on other vulnerable plaques and in new stents - DAPT protects both stent and non-stent territories. [Goodman and Gilman 14e]",
+        "**Statins** lower LDL by inhibiting HMG-CoA reductase and up-regulating LDL receptors, and **stabilise plaque** (thicker cap, less inflammation). [Harrison 22e]",
+        "**ACE inhibitors** block angiotensin II-driven **remodelling**, fibrosis and afterload, preserving LV function and reducing death after large infarcts. [Braunwald 12e]",
+        "**Beta-blockers** reduce heart rate, oxygen demand and catecholamine-driven arrhythmia - the benefit was proved before reperfusion, when infarcts were large and LVEF low. [Braunwald 12e]",
+        "**MRAs** block aldosterone-mediated fibrosis and sodium retention; eplerenone reduced mortality after MI with LVEF 40% or less and heart failure or diabetes (EPHESUS). [Harrison 22e]",
+        "**Colchicine** inhibits neutrophil microtubules and the **NLRP3 inflammasome**, targeting residual inflammatory risk. [ESC 2024 CCS]",
+        "**Exercise training** improves endothelial function, peak oxygen uptake, insulin sensitivity, BP and autonomic balance. [EAPC 2021]",
+      ],
+    },
+    {
+      heading: "Classification - risk tiers and rehabilitation phases",
+      points: [
+        "**Phase I (inpatient)**: early mobilisation, education, risk factor counselling and referral, in the first days after MI. [AACVPR 6e]",
+        "**Phase II (early outpatient, supervised)**: begins about 1-3 weeks after discharge, typically **36 sessions over about 12 weeks**, with ECG-monitored exercise for higher-risk patients. [AACVPR 6e]",
+        "**Phase III (maintenance)**: lifelong self-directed exercise and risk-factor control, in the community or at home (some describe this as phases III-IV). [AACVPR 6e]",
+        "**Exercise risk stratification (AACVPR)**: low risk (LVEF 50% or more, no complex arrhythmia or ischaemia), intermediate (LVEF 40-49%) and high risk (LVEF under 40%, complex arrhythmia, survivor of arrest) - decides monitoring intensity. [AACVPR 6e]",
+        "**LDL targets by risk**: very high risk (all post-MI) **under 55 mg/dL and 50% reduction**; recurrent event within 2 years **under 40 mg/dL**. [ESC/EAS 2019 Dyslipidaemia]",
+        "**Lipid Association of India** sets **under 50 mg/dL** for extreme risk (category A) and **30 mg/dL or less** for category B (recurrent events or polyvascular disease). [LAI 2023]",
+        "**LVEF categories** decide drugs: 40% or less (beta-blocker, ACE inhibitor, MRA, SGLT2 inhibitor all Class I), 41-49% and 50% or more (individualised). [ESC 2023 ACS]",
+      ],
+    },
+    {
+      heading: "Clinical review - history at follow-up",
+      points: [
+        "Ask about **angina** (CCS class), breathlessness (NYHA class), palpitations, syncope and ankle swelling at every visit. [ESC 2024 CCS]",
+        "Check **adherence** drug by drug - what, when and why missed (cost, side effects, belief that the stent cured the disease). [ESC 2023 ACS]",
+        "Ask about **bleeding** on DAPT: gum bleeds, bruising, black stools, haematuria. [ESC 2023 ACS]",
+        "Take a **tobacco history in all forms** (cigarette, bidi, gutka, khaini) and second-hand smoke at home or work. [ESC 2023 ACS]",
+        "Screen for **depression** with PHQ-2 (and PHQ-9 if positive), and ask about sleep, anxiety and sexual concerns. [AHA 2014 Statement]",
+        "Ask about **work type, driving, physical activity and diet** in the patient's own terms (oil, ghee, salt, fried snacks, sweets). [ICMR STW ACS]",
+        "Ask about **erectile dysfunction** and use of PDE5 inhibitors, which interact dangerously with nitrates. [AHA Sexual Activity Statement 2012]",
+      ],
+    },
+    {
+      heading: "Examination and monitoring at follow-up",
+      points: [
+        "**BP target** under 130/80 mmHg if tolerated (systolic 120-129 in ESC 2024); check orthostatic BP in the elderly on several drugs. [ESC 2024 Hypertension]",
+        "**Resting heart rate** around 55-70 per minute on beta-blocker; bradycardia under 50 with symptoms needs dose reduction. [ESC 2024 CCS]",
+        "**Weight, BMI and waist** with Indian cut-offs (BMI 23, waist 90 cm men and 80 cm women). [ICMR STW]",
+        "**Signs of heart failure**: raised JVP, crackles, S3, oedema - prompt echo and GDMT review. [ESC 2023 ACS]",
+        "**Radial or femoral puncture site** at the first visit for haematoma, pseudoaneurysm or radial occlusion. [ESC 2023 ACS]",
+        "**Statin side effects**: muscle symptoms (check CK only if symptomatic) and liver enzymes. [ESC/EAS 2019 Dyslipidaemia]",
+      ],
+    },
+    {
+      heading: "Differential diagnosis of symptoms after MI",
+      points: [
+        "**Recurrent chest pain**: stent thrombosis or restenosis, new lesion, pericarditis, Dressler, musculoskeletal pain or anxiety. [ESC 2023 ACS]",
+        "**Breathlessness**: heart failure, ticagrelor dyspnoea (benign, early), anaemia from bleeding, beta-blocker bronchospasm and deconditioning. [ESC 2023 ACS]",
+        "**Fatigue**: beta-blocker, depression, anaemia, hypothyroidism, poor sleep and deconditioning. [Harrison 22e]",
+        "**Muscle pain on statin**: true statin myopathy (rare), vitamin D deficiency, hypothyroidism or nocebo effect - rechallenge rather than stop permanently. [ESC/EAS 2019 Dyslipidaemia]",
+        "**Dry cough**: ACE inhibitor (switch to ARB) versus heart failure or lung disease. [Goodman and Gilman 14e]",
+        "**Palpitations or syncope**: scar-related VT, AF, bradycardia from drugs or conduction disease - ECG and Holter. [Harrison 22e]",
+      ],
+    },
+    {
+      heading: "Investigations and follow-up tests",
+      points: [
+        "**Echocardiography** before discharge; repeat at **6-12 weeks** if LVEF was 40% or less to decide ICD and GDMT. [ESC 2023 ACS]",
+        "**Lipid profile 4-6 weeks** after starting or changing lipid therapy, then every 3-12 months until at target, then yearly. [ESC 2023 ACS]",
+        "**Creatinine and potassium** 1-2 weeks after starting or up-titrating ACE inhibitor, ARB or MRA. [ESC 2023 HF]",
+        "**HbA1c** at discharge and every 3-6 months in diabetics; screen non-diabetics because many have undiagnosed diabetes. [ESC 2023 ACS]",
+        "**Lipoprotein(a)** once in every patient, especially young or with family history. [CSI Dyslipidaemia 2024]",
+        "**Symptom-limited exercise test** before phase II training or return to strenuous work, to set the exercise prescription and look for ischaemia. [AACVPR 6e]",
+        "**Haemoglobin** on DAPT if any bleeding symptoms; ECG at each visit for rhythm and conduction. [ESC 2023 ACS]",
+      ],
+    },
+    {
+      heading: "Discharge bundle - drugs with doses",
+      points: [
+        "**DAPT**: aspirin 75-100 mg plus ticagrelor 90 mg twice daily, prasugrel 10 mg or clopidogrel 75 mg, default **12 months**; shorten (1-3 months, then single agent) in high bleeding risk - see the Antiplatelet therapy topic. [ESC 2023 ACS]",
+        "**High-intensity statin** for all: **atorvastatin 40-80 mg** or **rosuvastatin 20-40 mg**, regardless of baseline LDL. [ESC 2023 ACS]",
+        "If LDL is not at target after 4-6 weeks add **ezetimibe 10 mg**, then a **PCSK9 inhibitor** (or inclisiran); ESC/EAS 2025 favours **early statin-ezetimibe combination** when the target is unlikely to be reached with a statin alone. [ESC/EAS 2025 Lipid update]",
+        "**ACE inhibitor** (ramipril 2.5 mg twice daily titrated to 5 mg twice daily) for LVEF 40% or less, heart failure, diabetes, hypertension or CKD (Class I) and reasonable for all; **ARB** (valsartan) if intolerant. [ESC 2023 ACS]",
+        "**Beta-blocker** (metoprolol succinate 25-200 mg or bisoprolol 1.25-10 mg daily) is **Class I for LVEF 40% or less**; for preserved LVEF the 2025 trials question routine use - see the next section. [ESC 2023 ACS]",
+        "**MRA** (eplerenone 25-50 mg or spironolactone 25 mg daily) for LVEF 40% or less with heart failure or diabetes, if creatinine under 2.5 mg/dL and potassium under 5.0 mmol/L. [ESC 2023 ACS]",
+        "**SGLT2 inhibitor** (dapagliflozin or empagliflozin 10 mg daily) for heart failure, LVEF 40% or less, diabetes or CKD; EMPACT-MI (2024) did not show benefit as routine therapy for every MI, though it reduced HF admissions. [EMPACT-MI, NEJM 2024]",
+        "**Colchicine 0.5 mg once daily** may be considered (ESC 2023 IIb; ESC 2024 CCS IIa), but **CLEAR SYNERGY (2025)** found no reduction in events after MI, and ACC/AHA 2025 rates routine use as uncertain. [ACC/AHA 2025 ACS]",
+        "**PPI** with DAPT if high GI bleeding risk, **annual influenza vaccination** (Class I), and **sublingual nitrate** to carry for angina. [ESC 2023 ACS]",
+      ],
+    },
+    {
+      heading: "Beta-blockers after MI - current evidence",
+      points: [
+        "**LVEF 40% or less**: long-term beta-blocker remains **Class I** in all guidelines - reduces death and sudden death. [ESC 2023 ACS]",
+        "**REDUCE-AMI (2024)**: in 5020 patients with LVEF **50% or more** after revascularised MI, beta-blockers did not reduce death or reinfarction. [REDUCE-AMI, NEJM 2024]",
+        "**REBOOT (2025)**: in about 8500 patients with LVEF **over 40%**, beta-blockers did not reduce death, reinfarction or HF admission; a sub-analysis suggested possible harm in women with normal LVEF. [REBOOT, NEJM 2025]",
+        "**BETAMI-DANBLOCK (2025)**: in LVEF **40% or more**, beta-blockers modestly reduced a composite driven by **recurrent MI**, so the evidence is not uniform. [BETAMI-DANBLOCK, NEJM 2025]",
+        "A **2025 individual-patient meta-analysis** of these trials showed benefit in **mildly reduced LVEF (40-49%)**, supporting beta-blockers in this group. [Lancet 2025 meta-analysis]",
+        "**Practical approach**: give beta-blockers for LVEF under 50%, angina, arrhythmia or hypertension; in **LVEF 50% or more without these**, routine long-term use is optional and may be reviewed or stopped. [ACC/AHA 2025 ACS]",
+        "**ABYSS (2024)**: interrupting beta-blockers in stable patients long after MI did not prove non-inferior (more cardiovascular admissions), so stopping should be individualised, not automatic. [ABYSS, NEJM 2024]",
+      ],
+    },
+    {
+      heading: "Cardiac rehabilitation and lifestyle prescription",
+      points: [
+        "**Refer every ACS patient** to cardiac rehabilitation before discharge (Class I); CR reduces recurrent MI and hospital admissions, and cardiovascular death in longer follow-up. [Cochrane 2021]",
+        "**Exercise prescription (FITT)**: aerobic exercise **3-5 days a week**, moderate intensity (**40-60% heart rate reserve**, Borg RPE 11-14 or the talk test), **20-60 minutes**, plus resistance training 2-3 days a week. [AACVPR 6e]",
+        "On beta-blockers, use **perceived exertion** rather than a heart rate target; overall aim **150-300 minutes a week** of moderate activity. [ESC 2024 CCS]",
+        "**Yoga-CaRe** (3959 Indian patients) found yoga-based rehabilitation did not significantly reduce major events but **improved quality of life and return to pre-infarct activities** - a culturally suited, low-cost option. [Yoga-CaRe, JACC 2020]",
+        "**Home-based and hybrid rehabilitation** (phone or app supervision) is effective and suits patients who cannot attend a centre. [ESC 2023 ACS]",
+        "**Diet**: Mediterranean-style or Indian heart-healthy plate - more vegetables, fruit, pulses, whole grains, nuts and fish; limit saturated fat (ghee, vanaspati, coconut oil excess), **avoid trans fat**, salt under 5 g a day. [ESC 2021 Prevention]",
+        "**Tobacco cessation**: counselling plus **varenicline** (0.5 mg daily titrated to 1 mg twice daily for 12 weeks), nicotine replacement or bupropion; the national quitline is **1800-112-356**; e-cigarettes are banned in India. [ESC 2023 ACS]",
+        "**Alcohol**: no safe amount for cardiovascular protection; advise to stop or keep to a minimum. [ESC 2021 Prevention]",
+      ],
+    },
+    {
+      heading: "Return to work, driving, sex and travel",
+      points: [
+        "**Return to work**: sedentary work after about **2-4 weeks** for uncomplicated MI with complete revascularisation; heavy manual work after a satisfactory exercise test, often 6-12 weeks. [ESC 2024 CCS]",
+        "**Driving (UK DVLA guidance, used in the absence of Indian rules)**: private car after **1 week** if successful PCI, LVEF over 40% and no other disqualifying condition, otherwise **4 weeks**; bus or lorry drivers stop for at least **6 weeks** and need functional testing. [DVLA 2025]",
+        "**Sexual activity** is reasonable **1 week or more** after uncomplicated MI if the patient can manage mild-moderate exertion (about 3-5 METs, such as climbing two flights of stairs) without symptoms. [AHA Sexual Activity Statement 2012]",
+        "**PDE5 inhibitors** are safe in stable patients but **never within 24 hours of sildenafil or vardenafil, or 48 hours of tadalafil, of a nitrate**. [AHA Sexual Activity Statement 2012]",
+        "**Air travel**: low-risk patients (successful revascularisation, LVEF over 45%, no complications) may fly after about **3 days**; others after about 10 days or when stable. [BCS Fitness to Fly 2010]",
+        "Give **written advice** in the patient's language - families in India often enforce excessive rest, which delays recovery and return to earning. [ICMR STW ACS]",
+      ],
+    },
+    {
+      heading: "Special situations",
+      points: [
+        "**Diabetes**: SGLT2 inhibitor or **GLP-1 receptor agonist** with proven cardiovascular benefit regardless of HbA1c; HbA1c target around 7% - see the Cardiometabolic protection topic. [ESC 2023 Diabetes]",
+        "**CKD**: statin (avoid high-dose rosuvastatin in severe CKD), ACE inhibitor or ARB with potassium checks, SGLT2 inhibitor if eGFR 20 or more, and dose-adjusted antithrombotics. [KDIGO 2024]",
+        "**Elderly and frail**: same targets where possible, but start low, watch orthostatic hypotension and bleeding, and use clopidogrel when bleeding risk is high. [ESC 2023 ACS]",
+        "**Women**: lower referral and attendance at rehabilitation; actively refer and address caregiving barriers. [ESC 2023 ACS]",
+        "**Patients on oral anticoagulant**: OAC plus clopidogrel for up to 12 months after a short triple phase, then OAC alone - see the Anticoagulants topic. [ESC 2023 ACS]",
+        "**Low-resource setting**: a generic polypill or NLEM drugs (aspirin, clopidogrel, atorvastatin, ramipril or enalapril, metoprolol) from Jan Aushadhi Kendras keep monthly cost low and improve adherence. [ESC 2023 ACS]",
+        "**Young MI**: test for familial hypercholesterolaemia (LDL over 190 mg/dL), Lp(a), substance use and thrombophilia where indicated, and screen first-degree relatives. [CSI Dyslipidaemia 2024]",
+      ],
+    },
+    {
+      heading: "Psychosocial care, follow-up schedule and prognosis",
+      points: [
+        "**Depression affects about 1 in 5** MI survivors and roughly doubles mortality; screen at discharge and follow-up with PHQ-2 then PHQ-9. [AHA 2014 Statement]",
+        "**SSRIs are safe** after MI: **sertraline** (SADHART) or **escitalopram** (EsDEPACS, which also reduced cardiac events); avoid tricyclics, and limit citalopram to 20-40 mg because of QT prolongation. [ESC 2025 Mental Health Statement]",
+        "**Follow-up schedule**: review at **1-2 weeks**, lipids at **4-6 weeks**, echo at 6-12 weeks if LVEF was low, then every 3 months in the first year and every 6-12 months thereafter. [ESC 2023 ACS]",
+        "**Annual review**: lipids, HbA1c, creatinine and potassium, ECG, BMI, BP, tobacco status, vaccination and DAPT plan. [ESC 2024 CCS]",
+        "**After 12 months** stop the P2Y12 inhibitor and continue single antiplatelet therapy lifelong, unless extended DAPT is chosen for high ischaemic and low bleeding risk. [ESC 2023 ACS]",
+        "**Prognosis** depends on LVEF, completeness of revascularisation, adherence and risk-factor control; comprehensive secondary prevention cuts recurrent events by roughly half or more. [Braunwald 12e]",
+      ],
+    },
+    {
+      heading: "Latest guideline updates (2023-2026)",
+      points: [
+        "**ESC 2023 ACS**: routine beta-blocker for all ACS IIa (Class I if LVEF 40% or less), ACE inhibitor for all reasonable, colchicine IIb, influenza vaccination Class I, cardiac rehabilitation Class I. [ESC 2023 ACS]",
+        "**ACC/AHA 2025 ACS**: add non-statin therapy if LDL stays **70 mg/dL or more** (Class 1) or **55-69 mg/dL** (2a) on maximal statin; routine colchicine uncertain; cardiac rehabilitation Class 1. [ACC/AHA 2025 ACS]",
+        "**REDUCE-AMI (2024), REBOOT and BETAMI-DANBLOCK (2025)** have narrowed beta-blocker indications in preserved LVEF; expect guideline downgrades for LVEF 50% or more. [REBOOT, NEJM 2025]",
+        "**CLEAR SYNERGY (2025)**: neither colchicine nor spironolactone reduced events when given routinely after MI. [CLEAR SYNERGY, NEJM 2025]",
+        "**ESC/EAS 2025 focused update** on dyslipidaemia supports early combination lipid-lowering and adds bempedoic acid for statin-intolerant patients. [ESC/EAS 2025 Lipid update]",
+        "**CSI 2024 dyslipidaemia guideline** sets LDL under 55 mg/dL and non-HDL under 85 mg/dL for very high risk Indian patients and recommends measuring Lp(a). [CSI Dyslipidaemia 2024]",
+        "**EMPACT-MI (2024)** and **DAPA-MI (2023)** showed SGLT2 inhibitors should be used for HF, low LVEF, diabetes or CKD after MI rather than for every patient. [EMPACT-MI, NEJM 2024]",
+      ],
+    },
+    {
+      heading: "Exam and viva angle",
+      points: [
+        "Classic questions: **'Secondary prevention after MI'**, **'Cardiac rehabilitation - phases and components'** and **'Counselling a patient at discharge after MI'**. [DNB FM papers]",
+        "**ABCDE mnemonic**: Antiplatelets and ACE inhibitor, Beta-blocker and BP, Cholesterol and Cigarettes, Diet and Diabetes, Education and Exercise. [ACC/AHA mnemonic]",
+        "State the **LDL target precisely**: under 55 mg/dL and at least 50% reduction; under 40 mg/dL if a second event within 2 years. [ESC/EAS 2019 Dyslipidaemia]",
+        "**Beta-blocker viva**: 'essential if LVEF 40% or less; REDUCE-AMI and REBOOT show no benefit in preserved LVEF' - shows current reading. [REBOOT, NEJM 2025]",
+        "**Common mistakes**: stopping the statin because LDL is 'normal', stopping DAPT early for dental work, and forgetting to refer for rehabilitation. [ESC 2023 ACS]",
+        "**Nitrate plus PDE5 inhibitor** within 24-48 hours causes profound hypotension - always ask. [AHA Sexual Activity Statement 2012]",
+      ],
+    },
+  ],
+  tables: [
+    {
+      heading: "Discharge drugs after MI",
+      columns: ["Drug", "Dose and route", "Duration/titration", "Key adverse effects / contraindications"],
+      rows: [
+        ["Aspirin", "75-100 mg oral daily", "Lifelong", "GI bleeding; PPI if high risk"],
+        ["Ticagrelor", "90 mg oral twice daily", "12 months (monotherapy after 1 month per ACC/AHA 2025)", "Dyspnoea, bleeding; avoid with prior ICH"],
+        ["Clopidogrel", "75 mg oral daily", "12 months; with OAC or high bleeding risk", "Bleeding; avoid omeprazole"],
+        ["Atorvastatin", "40-80 mg oral daily", "Lifelong; lipids at 4-6 weeks", "Myalgia, raised transaminases"],
+        ["Rosuvastatin", "20-40 mg oral daily", "Lifelong", "Myalgia; reduce in severe CKD"],
+        ["Ezetimibe", "10 mg oral daily", "Add if LDL above target", "Rarely myalgia, GI upset"],
+        ["PCSK9 inhibitor (evolocumab)", "140 mg SC every 2 weeks or 420 mg monthly", "If LDL above target on statin plus ezetimibe", "Injection-site reactions; cost"],
+        ["Ramipril", "2.5 mg twice daily, titrate to 5 mg twice daily", "Lifelong; creatinine and K at 1-2 weeks", "Cough, angioedema, hyperkalaemia; pregnancy"],
+        ["Metoprolol succinate", "25 mg daily, titrate to 200 mg", "Lifelong if LVEF 40% or less; review if preserved", "Bradycardia, fatigue, bronchospasm"],
+        ["Eplerenone", "25 mg daily, titrate to 50 mg", "If LVEF 40% or less with HF or diabetes", "Hyperkalaemia; avoid K over 5.0, creatinine over 2.5"],
+        ["Dapagliflozin or empagliflozin", "10 mg oral daily", "If HF, LVEF 40% or less, diabetes or CKD", "Genital infection, volume depletion, rare euglycaemic ketoacidosis"],
+        ["Colchicine", "0.5 mg oral daily", "Optional, long term", "Diarrhoea; avoid with strong CYP3A4 inhibitors and severe CKD"],
+        ["Varenicline", "0.5 mg daily for 3 days, twice daily to day 7, then 1 mg twice daily", "12 weeks (extend to 24)", "Nausea, vivid dreams"],
+        ["Sertraline", "25-50 mg daily, up to 200 mg", "At least 6-12 months for depression", "GI upset, hyponatraemia, bleeding with antiplatelets"],
+      ],
+    },
+    {
+      heading: "Phases of cardiac rehabilitation",
+      columns: ["Phase", "When", "Setting", "Main content"],
+      rows: [
+        ["Phase I", "Days in hospital", "Ward", "Mobilise from 12-24 h, education, smoking advice, referral"],
+        ["Phase II", "1-3 weeks after discharge, about 12 weeks", "Hospital or supervised home-based", "Monitored aerobic and resistance exercise, risk factors, psychology"],
+        ["Phase III", "After phase II, lifelong", "Community or home", "Self-directed exercise, diet, adherence, annual review"],
+        ["Core components", "All phases", "Multidisciplinary", "Assessment, exercise, diet, tobacco, BP, lipids, diabetes, psychosocial, return to work"],
+      ],
+    },
+    {
+      heading: "Beta-blocker after MI by LVEF",
+      columns: ["LVEF", "Evidence", "Recommendation"],
+      rows: [
+        ["40% or less", "Pre-reperfusion trials, HFrEF trials", "Class I, lifelong"],
+        ["41-49%", "2025 individual-patient meta-analysis shows benefit", "Recommended"],
+        ["50% or more", "REDUCE-AMI and REBOOT neutral; BETAMI-DANBLOCK modest benefit", "Optional unless angina, arrhythmia or hypertension"],
+        ["Stable years after MI", "ABYSS: interruption not non-inferior", "Individualise any decision to stop"],
+      ],
+    },
+    {
+      heading: "Targets after MI",
+      columns: ["Parameter", "Target", "Source"],
+      rows: [
+        ["LDL cholesterol", "Under 55 mg/dL and 50% reduction; under 40 if recurrent within 2 years", "ESC/EAS 2019, CSI 2024"],
+        ["Non-HDL cholesterol", "Under 85 mg/dL", "CSI 2024"],
+        ["Blood pressure", "Under 130/80 (systolic 120-129 if tolerated)", "ESC 2024"],
+        ["HbA1c (diabetes)", "About 7% (individualised)", "ESC 2023 Diabetes"],
+        ["BMI and waist (Indian)", "BMI under 23; waist under 90 cm men, 80 cm women", "ICMR"],
+        ["Physical activity", "150-300 min/week moderate", "ESC 2021 Prevention"],
+        ["Tobacco", "Complete cessation, including smokeless", "ESC 2023 ACS"],
+      ],
+    },
+    {
+      heading: "Return to activity after uncomplicated MI",
+      columns: ["Activity", "Typical timing", "Condition"],
+      rows: [
+        ["Walking", "From day 1-2 in hospital, increasing daily", "No symptoms"],
+        ["Sexual activity", "1 week or more", "Can climb two flights of stairs without symptoms"],
+        ["Car driving (DVLA)", "1 week if PCI and LVEF over 40%; else 4 weeks", "No angina or arrhythmia"],
+        ["Bus or lorry driving (DVLA)", "6 weeks or more", "Functional test passed"],
+        ["Sedentary work", "2-4 weeks", "Uncomplicated course"],
+        ["Heavy manual work", "6-12 weeks", "Satisfactory exercise test"],
+        ["Air travel", "About 3 days (low risk) to 10 days", "Stable, LVEF over 45% for early travel"],
+      ],
+    },
+  ],
+  redFlags: [
+    "New or recurrent chest pain at rest after discharge - possible stent thrombosis or reinfarction, ECG and urgent referral",
+    "Breathlessness, orthopnoea or oedema - new heart failure, echo and GDMT review",
+    "Syncope or sustained palpitations - ventricular arrhythmia, especially if LVEF 35% or less",
+    "Black stools, haematemesis or major bleeding on DAPT - do not stop antiplatelets without cardiology input; resuscitate and refer",
+    "Potassium over 5.5 mmol/L or creatinine rise over 30% on ACE inhibitor or MRA",
+    "Suicidal thoughts or severe depression after MI",
+    "Planned surgery or dental extraction within 6-12 months of stenting - discuss DAPT with cardiology, do not stop on your own",
+  ],
+  pearls: [
+    "**ABCDE** of secondary prevention: Antiplatelet/ACE inhibitor, Beta-blocker/BP, Cholesterol/Cigarettes, Diet/Diabetes, Education/Exercise.",
+    "**LDL under 55 and halve it**; under 40 if a second event within 2 years.",
+    "**Beta-blocker is a must at LVEF 40% or less, a maybe at 50% or more** (REDUCE-AMI, REBOOT).",
+    "**Lipids at 4-6 weeks**, echo at 6-12 weeks if LVEF was low.",
+    "**Rehabilitation is Class I** - refer before the patient leaves the ward.",
+    "**36 sessions over 12 weeks** is the classic phase II programme.",
+    "**Two flights of stairs = ready for sex** (about 3-5 METs).",
+    "**Sertraline or escitalopram** for post-MI depression; avoid tricyclics.",
+    "**Never stop DAPT for a dental extraction** without discussing with cardiology.",
+  ],
+  mcqs: [
+    {
+      id: "cardiovascular-post-mi-rehab-q1",
+      stem: "Six weeks after an anterior STEMI treated with PCI, a 54-year-old man on atorvastatin 80 mg has an LDL of 82 mg/dL. What is the next step per ESC guidance?",
+      options: [
+        "Continue the same therapy; LDL under 100 mg/dL is adequate",
+        "Switch to rosuvastatin 10 mg",
+        "Add ezetimibe 10 mg daily",
+        "Add fenofibrate 145 mg daily",
+      ],
+      answer: 2,
+      explanation:
+        "After MI the target is LDL under 55 mg/dL with at least a 50% reduction; on maximal statin the next step is ezetimibe, then a PCSK9 inhibitor if still above target. Under 100 mg/dL is an outdated goal, rosuvastatin 10 mg is a lower-intensity statin than atorvastatin 80 mg, and fibrates do not lower LDL meaningfully or reduce events on top of statins.",
+      difficulty: "easy",
+    },
+    {
+      id: "cardiovascular-post-mi-rehab-q2",
+      stem: "A 60-year-old woman had an inferior NSTEMI treated with complete PCI. LVEF is 58%, BP is controlled and there is no angina or arrhythmia. What does the current evidence say about long-term beta-blockers?",
+      options: [
+        "Mandatory lifelong because they halve mortality in all MI patients",
+        "Contraindicated in women",
+        "Required only for the first 7 days",
+        "No proven benefit for death or reinfarction in preserved LVEF; use is optional",
+      ],
+      answer: 3,
+      explanation:
+        "REDUCE-AMI (LVEF 50% or more) and REBOOT (LVEF over 40%) found no reduction in death or reinfarction with routine beta-blockers after revascularised MI, so their long-term use is optional when LVEF is preserved and no other indication exists. The mortality benefit came from older trials of large infarcts with low LVEF; women are not a contraindication (REBOOT only hinted at possible harm), and there is no 7-day rule.",
+      difficulty: "moderate",
+    },
+    {
+      id: "cardiovascular-post-mi-rehab-q3",
+      stem: "Which of the following is the phase II component of cardiac rehabilitation?",
+      options: [
+        "Supervised outpatient exercise training with risk-factor education over about 12 weeks",
+        "Bedside mobilisation and education during the hospital stay",
+        "Lifelong unsupervised community exercise",
+        "Pre-discharge coronary angiography",
+      ],
+      answer: 0,
+      explanation:
+        "Phase II is early outpatient, supervised (centre- or home-based) exercise training with education and psychosocial support, classically 36 sessions over about 12 weeks. Bedside mobilisation in hospital is phase I, lifelong self-directed maintenance is phase III, and angiography is part of acute management, not rehabilitation.",
+      difficulty: "easy",
+    },
+    {
+      id: "cardiovascular-post-mi-rehab-q4",
+      stem: "Two months after MI, a man on DAPT and statin asks about sildenafil. He uses sublingual nitroglycerin occasionally. What is the correct advice?",
+      options: [
+        "Sildenafil is absolutely contraindicated for life after MI",
+        "Sildenafil may be used, but no nitrate within 24 hours of it",
+        "Sildenafil is safe with nitrates if the dose is halved",
+        "Stop DAPT before taking sildenafil",
+      ],
+      answer: 1,
+      explanation:
+        "In a stable patient after MI, PDE5 inhibitors are safe, but nitrates must not be taken within 24 hours of sildenafil or vardenafil (48 hours for tadalafil) because of severe hypotension. MI itself is not a lifelong contraindication, halving the dose does not remove the interaction, and DAPT has nothing to do with sildenafil safety.",
+      difficulty: "moderate",
+    },
+    {
+      id: "cardiovascular-post-mi-rehab-q5",
+      stem: "Which statement about the Yoga-CaRe trial in India is correct?",
+      options: [
+        "It showed a 50% reduction in mortality with yoga-based rehabilitation",
+        "It compared yoga with primary PCI",
+        "It improved quality of life and return to pre-infarct activities without a significant reduction in major events",
+        "It was stopped early for harm",
+      ],
+      answer: 2,
+      explanation:
+        "Yoga-CaRe randomised 3959 Indian patients after MI to yoga-based cardiac rehabilitation or enhanced standard care; major events were not significantly reduced, but quality of life and return to pre-infarct activities improved, making it a low-cost, acceptable option. It did not show a mortality reduction, did not involve PCI comparison, and was not stopped for harm.",
+      difficulty: "hard",
+    },
+  ],
+  theory: [
+    {
+      id: "cardiovascular-post-mi-rehab-t1",
+      paper: "I",
+      kind: "long",
+      marks: 10,
+      minutes: 18,
+      frequency: "core",
+      question:
+        "A 50-year-old man is being discharged after STEMI treated with primary PCI. Describe his secondary prevention, cardiac rehabilitation and follow-up plan.",
+      openingLines: [
+        "Secondary prevention is lifelong drug and lifestyle therapy that reduces recurrent MI, stroke, heart failure and death after an MI.",
+        "It rests on the discharge bundle (DAPT, high-intensity statin, ACE inhibitor, beta-blocker as indicated), risk-factor control and Class I referral to cardiac rehabilitation.",
+      ],
+      answer: [
+        {
+          heading: "Discharge drugs",
+          points: [
+            "Aspirin 75-100 mg plus ticagrelor 90 mg twice daily for 12 months (shorter if high bleeding risk).",
+            "Atorvastatin 80 mg; LDL under 55 mg/dL with 50% reduction; ezetimibe then PCSK9 inhibitor if needed.",
+            "Ramipril titrated; beta-blocker if LVEF under 50% or angina; MRA and SGLT2 inhibitor if LVEF 40% or less, HF or diabetes.",
+            "PPI if GI risk, influenza vaccine, SL nitrate.",
+          ],
+        },
+        {
+          heading: "Current beta-blocker evidence",
+          points: [
+            "Class I at LVEF 40% or less; REDUCE-AMI and REBOOT show no benefit in preserved LVEF.",
+          ],
+        },
+        {
+          heading: "Lifestyle and risk factors",
+          points: [
+            "Complete tobacco cessation with varenicline or NRT; quitline 1800-112-356.",
+            "Indian heart-healthy diet, salt under 5 g, weight and waist targets, BP under 130/80, HbA1c about 7%.",
+          ],
+        },
+        {
+          heading: "Cardiac rehabilitation",
+          points: [
+            "Phase I in hospital, phase II supervised 12 weeks (FITT: 3-5 days, 40-60% HRR, 20-60 min), phase III lifelong.",
+            "Yoga-based or home-based options; psychosocial support.",
+          ],
+        },
+        {
+          heading: "Return to normal life",
+          points: [
+            "Sex after 1 week if two flights of stairs tolerated; no nitrate with PDE5 inhibitors.",
+            "Driving after 1-4 weeks; sedentary work 2-4 weeks, heavy work after exercise test.",
+          ],
+        },
+        {
+          heading: "Depression and follow-up",
+          points: [
+            "PHQ-2/PHQ-9; sertraline or escitalopram.",
+            "Review at 1-2 weeks, lipids at 4-6 weeks, echo at 6-12 weeks if LVEF low, then 3-monthly in year 1.",
+          ],
+        },
+      ],
+      mustDraw: [
+        "ABCDE table of secondary prevention",
+        "Flow chart of the three phases of cardiac rehabilitation",
+      ],
+      markSplit: [
+        { part: "Discharge drugs with doses", marks: 3 },
+        { part: "Beta-blocker evidence", marks: 1 },
+        { part: "Lifestyle and targets", marks: 2 },
+        { part: "Cardiac rehabilitation", marks: 2 },
+        { part: "Return to activity, depression and follow-up", marks: 2 },
+      ],
+      keywords: ["DAPT", "LDL under 55", "high-intensity statin", "REDUCE-AMI", "REBOOT", "cardiac rehabilitation", "FITT", "ABCDE"],
+    },
+    {
+      id: "cardiovascular-post-mi-rehab-t2",
+      paper: "I",
+      kind: "short-note",
+      marks: 5,
+      minutes: 9,
+      frequency: "common",
+      question: "Write a short note on cardiac rehabilitation after myocardial infarction.",
+      openingLines: [
+        "Cardiac rehabilitation is a multidisciplinary programme of exercise, education, risk-factor control and psychosocial support after a cardiac event.",
+        "It is a Class I recommendation after ACS and reduces recurrent MI and hospital admissions.",
+      ],
+      answer: [
+        {
+          heading: "Phases",
+          points: [
+            "Phase I inpatient; phase II supervised outpatient (about 36 sessions, 12 weeks); phase III lifelong maintenance.",
+          ],
+        },
+        {
+          heading: "Components",
+          points: [
+            "Exercise (FITT), diet, tobacco cessation, BP, lipids, diabetes, weight, psychosocial care, return to work.",
+            "Exercise risk stratification by LVEF, arrhythmia and ischaemia.",
+          ],
+        },
+        {
+          heading: "Evidence",
+          points: [
+            "Cochrane 2021: fewer MIs and admissions; Yoga-CaRe India 2020: better quality of life.",
+          ],
+        },
+        {
+          heading: "Barriers in India and solutions",
+          points: [
+            "Few centres, distance, wage loss, low awareness.",
+            "Home-based, app or phone-supported and yoga-based programmes.",
+          ],
+        },
+      ],
+      mustDraw: ["Three-phase rehabilitation diagram with timing and content"],
+      markSplit: [
+        { part: "Definition and phases", marks: 1.5 },
+        { part: "Components", marks: 1.5 },
+        { part: "Evidence", marks: 1 },
+        { part: "Indian barriers and solutions", marks: 1 },
+      ],
+      keywords: ["cardiac rehabilitation", "phase II", "FITT", "Yoga-CaRe", "home-based"],
+    },
+  ],
+  references: [
+    "Byrne RA et al. 2023 ESC Guidelines for the management of acute coronary syndromes. European Heart Journal 2023;44:3720-3826",
+    "Rao SV et al. 2025 ACC/AHA/ACEP/NAEMSP/SCAI Guideline for the Management of Patients With Acute Coronary Syndromes. Circulation/JACC 2025",
+    "Vrints C et al. 2024 ESC Guidelines for the management of chronic coronary syndromes. European Heart Journal 2024",
+    "Mach F et al. 2025 Focused Update of the 2019 ESC/EAS Guidelines for the management of dyslipidaemias. European Heart Journal 2025",
+    "Cardiological Society of India Clinical Practice Guidelines for Dyslipidaemia Management, 2024",
+    "Yndigegn T et al. REDUCE-AMI (NEJM 2024) and Ibanez B et al. REBOOT (NEJM 2025) - beta-blockers after MI with preserved ejection fraction",
+    "Prabhakaran D et al. Effectiveness of an Indian yoga-based cardiac rehabilitation program (Yoga-CaRe). JACC 2020",
+    "AACVPR Guidelines for Cardiac Rehabilitation Programs, 6th edition; Harrison's Principles of Internal Medicine, 22nd edition, 2025",
   ],
 });
 

@@ -438,4 +438,424 @@ revision["cardiovascular-nste-acs"] = {
   },
 };
 
+revision["cardiovascular-mi-complications"] = {
+  checked: "2026-10",
+  updated: [
+    "ESC 2023 ACS: culprit-only PCI in shock, no routine IABP, MCS bridge and individualised surgical timing for mechanical complications, OAC 3-6 months for LV thrombus",
+    "DanGer Shock (2024) and ACC/AHA 2025 ACS: microaxial flow pump 2a in selected STEMI shock",
+    "ECLS-SHOCK (2023): no benefit from routine VA-ECMO",
+    "ESC 2025 Myocarditis and Pericarditis: Dressler grouped as post-cardiac injury syndrome, aspirin plus colchicine",
+  ],
+  master: {
+    heading: "Master revision table - Complications of MI",
+    columns: ["Heading", "What to write"],
+    rows: [
+      ["Classification", "**DARTH VADER**: Death, Arrhythmia, Rupture, Tamponade, Heart failure, Valve, Aneurysm, Dressler, Embolism, Recurrence."],
+      ["Timing", "**Hours**: VF, VT, block; **days 1-3**: pericarditis, AF; **days 3-7**: ruptures; **2 weeks**: LV thrombus; **weeks**: Dressler; **months**: aneurysm, HF, scar VT."],
+      ["Epidemiology", "Shock **5-10%** of STEMI (mortality 40-50%); VT/VF 6-8%; AF 5-20%; mechanical **under 1%** but 40-90% mortality; RV involved in up to half of inferior MI."],
+      ["Arrhythmias", "Defibrillate VF; **amiodarone** and beta-blocker for recurrent VT; K 4-5, correct Mg; no prophylactic lidocaine; **AIVR benign**."],
+      ["AV block", "**Inferior**: nodal, narrow escape, atropine, transient; **anterior**: infranodal, wide escape, pacing; permanent pacing only if block persists **5 days**."],
+      ["RV infarction", "Hypotension, raised JVP, **clear lungs**, V4R elevation; **fluids, no nitrates or diuretics**, dobutamine, AV synchrony, reperfusion."],
+      ["Cardiogenic shock", "SBP under 90 for 30 min with hypoperfusion; **immediate culprit-only PCI**, norepinephrine, dobutamine; no routine IABP or ECMO; Impella in selected."],
+      ["VSR", "Days 3-5, **loud pansystolic murmur with thrill** at left sternal edge, O2 step-up; bridge with IABP/MCS, surgery or device; 40% surgical mortality."],
+      ["Papillary muscle rupture", "**Posteromedial** (single PDA supply), small inferior MI, **soft murmur, flash pulmonary oedema**; emergency mitral surgery."],
+      ["Free wall rupture", "First 24 h or days 3-7; tamponade, PEA; pericardiocentesis bridge to surgery; **pseudoaneurysm narrow neck - urgent surgery**."],
+      ["LV thrombus", "Anterior apical akinesis, 5-15%; contrast echo or CMR; **OAC 3-6 months**, reimage; short triple therapy with clopidogrel."],
+      ["Aneurysm", "Large anterior MI, **persistent ST elevation beyond 4-6 weeks**, HF, VT, embolism; aneurysmectomy if refractory."],
+      ["Pericarditis and Dressler", "Early (days 1-3) and Dressler (1-6 weeks): **high-dose aspirin plus colchicine**; avoid other NSAIDs and steroids."],
+      ["Latest updates", "ESC 2023; **DanGer Shock 2024** pump 2a (ACC/AHA 2025); ECLS-SHOCK 2023 neutral; ESC 2025 pericarditis."],
+    ],
+  },
+  flows: [
+    {
+      kind: "flow",
+      heading: "Hypotension after MI: finding the cause",
+      steps: [
+        { label: "SBP under 90 mmHg after MI", detail: "Check rhythm, perfusion, lactate" },
+        { label: "Brady- or tachyarrhythmia?", detail: "Atropine, pacing, cardioversion", tone: "decision" },
+        { label: "Raised JVP with clear lungs?", detail: "RV infarct: V4R, fluids, no nitrates", tone: "decision" },
+        { label: "New murmur or effusion on echo?", detail: "VSR, papillary rupture, free wall rupture", tone: "warn" },
+        { label: "Crackles, low output - LV pump failure", detail: "Cardiogenic shock: immediate PCI, norepinephrine" },
+        { label: "Dry, vomited, drug effect or bleeding", detail: "Fluids, stop nitrates, check Hb", tone: "good" },
+      ],
+    },
+    {
+      kind: "ladder",
+      heading: "Cardiogenic shock escalation",
+      steps: [
+        { label: "Immediate culprit-only PCI", detail: "Regardless of time from onset", tone: "good" },
+        { label: "Norepinephrine to MAP 65 mmHg", detail: "0.05-0.5 microgram/kg/min" },
+        { label: "Add dobutamine for low output", detail: "2.5-10 microgram/kg/min" },
+        { label: "Microaxial pump in selected patients", detail: "DanGer Shock; not comatose OHCA", tone: "decision" },
+        { label: "No routine IABP or VA-ECMO", detail: "IABP-SHOCK II, ECLS-SHOCK", tone: "warn" },
+      ],
+    },
+    {
+      kind: "compare",
+      heading: "VSR versus papillary muscle rupture",
+      columns: ["Feature", "VSR", "Papillary muscle rupture"],
+      rows: [
+        ["Infarct", "Anterior or inferior, often large", "Small inferior or posterior"],
+        ["Murmur", "Loud, harsh, left sternal edge, thrill", "Soft or absent, apex"],
+        ["Picture", "Biventricular failure", "Flash pulmonary oedema"],
+        ["Catheter", "O2 step-up RA to PA", "Giant v waves in wedge"],
+        ["Treatment", "Bridge then surgery or device closure", "Emergency mitral surgery"],
+      ],
+    },
+  ],
+  notes: {
+    sections: [
+      {
+        title: "Definition and key facts",
+        points: [
+          "Complications are **electrical, pump, mechanical, embolic and inflammatory**.",
+          "**Cardiogenic shock** occurs in 5-10% of STEMI and kills 40-50%.",
+          "Mechanical complications are now **under 1%** but very lethal.",
+          "Late presentation in India keeps ruptures and aneurysms common.",
+        ],
+      },
+      {
+        title: "Pathophysiology",
+        points: [
+          "First hours: unstable ischaemic muscle causes **VF**.",
+          "Days 3-7: the necrotic wall is **softest**, so ruptures peak.",
+          "Weeks: scar forms and may bulge into an **aneurysm**.",
+          "RV infarction underfills the LV, so the patient is **preload-dependent**.",
+          "RCA supplies the AV node, so inferior MI block is **nodal and transient**.",
+        ],
+      },
+      {
+        title: "Classification that matters",
+        points: [
+          "**DARTH VADER** lists the complications.",
+          "**Killip**: I none, II crackles, III pulmonary oedema, IV shock.",
+          "**Forrester** uses cardiac index 2.2 and wedge pressure 18 mmHg.",
+          "**SCAI stages** A to E grade shock severity.",
+        ],
+      },
+      {
+        title: "Clinical features and examination",
+        points: [
+          "**Loud murmur with thrill** at left sternal edge suggests VSR.",
+          "**Soft murmur with flash pulmonary oedema** suggests papillary muscle rupture.",
+          "**Sudden PEA** on day 3-5 suggests free wall rupture.",
+          "Hypotension, raised JVP and **clear lungs** suggest RV infarction.",
+          "Fever and rub at 1-6 weeks suggest **Dressler syndrome**.",
+        ],
+      },
+      {
+        title: "Investigations",
+        points: [
+          "**ECG monitoring** for at least 24 hours after STEMI.",
+          "**Echo** diagnoses every mechanical complication and LV thrombus.",
+          "Contrast echo or **cardiac MRI** finds thrombus best.",
+          "V4R ST elevation of **0.5 mm** or more confirms RV infarction.",
+          "Persistent ST elevation beyond **4-6 weeks** suggests aneurysm.",
+        ],
+      },
+      {
+        title: "Treatment - first line",
+        points: [
+          "VF: **defibrillate**; recurrent VT: amiodarone, beta-blocker, revascularise.",
+          "Keep potassium **4-5 mmol/L**; no prophylactic lidocaine.",
+          "Bradycardia: **atropine 0.5-1 mg IV**, then temporary pacing.",
+          "RV infarct: **fluids**, no nitrates or diuretics, dobutamine if needed.",
+          "Shock: **immediate culprit-only PCI** and norepinephrine.",
+        ],
+      },
+      {
+        title: "Treatment - next steps",
+        points: [
+          "VSR: bridge with **IABP or pump**, then surgery or device closure.",
+          "Papillary rupture: **emergency mitral surgery**.",
+          "Free wall rupture: pericardiocentesis bridge to **emergency surgery**.",
+          "LV thrombus: **anticoagulate 3-6 months** and reimage.",
+          "Permanent pacing only if block lasts beyond **5 days**.",
+        ],
+      },
+      {
+        title: "Complications and red flags",
+        points: [
+          "Any **new murmur** after MI needs same-day echo.",
+          "Anterior MI with Mobitz II or complete block needs **pacing**.",
+          "Avoid **NSAIDs and steroids** early after MI; they promote rupture.",
+          "Dressler: **aspirin 500-1000 mg** every 6-8 hours plus colchicine.",
+          "Stroke after anterior MI: suspect **LV thrombus**.",
+        ],
+      },
+      {
+        title: "Latest updates",
+        points: [
+          "**Routine IABP** is not recommended in shock.",
+          "**DanGer Shock 2024**: microaxial pump lowered mortality in selected shock.",
+          "**ECLS-SHOCK 2023**: routine VA-ECMO gave no benefit.",
+          "**ESC 2025** calls Dressler a post-cardiac injury syndrome.",
+        ],
+      },
+    ],
+    tables: [
+      {
+        heading: "Drugs for MI complications",
+        columns: ["Drug", "Dose and route", "Duration", "Key side effects / cautions"],
+        rows: [
+          ["Amiodarone", "300 mg IV in arrest; 150 mg over 10 min for VT", "Short course", "Hypotension, bradycardia, QT"],
+          ["Atropine", "0.5-1 mg IV, max 3 mg", "Bridge to pacing", "Useless in infranodal block"],
+          ["Norepinephrine", "0.05-0.5 microgram/kg/min IV", "Titrate to MAP 65", "Arrhythmia, ischaemia"],
+          ["Dobutamine", "2.5-10 microgram/kg/min IV", "Titrate to perfusion", "Tachycardia, arrhythmia"],
+          ["Warfarin", "Dose to INR 2-3", "3-6 months for LV thrombus", "Bleeding with antiplatelets"],
+          ["Aspirin (pericarditis)", "500-1000 mg every 6-8 h", "1-2 weeks then taper", "GI bleed; add PPI"],
+          ["Colchicine", "0.5 mg twice daily (once if under 70 kg)", "About 3 months", "Diarrhoea; reduce in CKD"],
+        ],
+      },
+      {
+        heading: "Timing of complications",
+        columns: ["Time", "Complication"],
+        rows: [
+          ["Hours to 48 h", "VF, VT, AIVR, bradycardia, AV block"],
+          ["Days 1-3", "Shock, RV infarct, pericarditis, AF"],
+          ["Days 3-7", "Free wall, septal and papillary muscle rupture"],
+          ["Up to 2 weeks", "LV thrombus and embolism"],
+          ["Weeks 1-6", "Dressler syndrome"],
+          ["Months", "Aneurysm, heart failure, scar VT, depression"],
+        ],
+      },
+      {
+        heading: "AV block: inferior versus anterior MI",
+        columns: ["Feature", "Inferior MI", "Anterior MI"],
+        rows: [
+          ["Level", "AV node", "Below the node"],
+          ["Escape", "Narrow, 40-60/min", "Wide, under 40/min"],
+          ["Atropine", "Often works", "Rarely works"],
+          ["Course", "Transient", "Often permanent"],
+          ["Prognosis", "Good", "Poor"],
+        ],
+      },
+    ],
+    remember: [
+      "**DARTH VADER** for the list of complications.",
+      "**Hours electrical, days 3-7 ruptures, weeks Dressler, months aneurysm.**",
+      "**RV infarct**: fluids yes, nitrates no.",
+      "**Posteromedial papillary muscle** has one artery, so it ruptures more.",
+      "**Pseudoaneurysm**: narrow neck, pericardial wall, urgent surgery.",
+      "**AIVR is good news**; never suppress it.",
+      "**Aspirin, not ibuprofen or steroids**, for pericarditis after MI.",
+    ],
+  },
+};
+
+revision["cardiovascular-post-mi-rehab"] = {
+  checked: "2026-10",
+  updated: [
+    "REDUCE-AMI (2024), REBOOT and BETAMI-DANBLOCK (2025): beta-blocker optional when LVEF is preserved; Class I stays at LVEF 40% or less",
+    "ACC/AHA 2025 ACS: non-statin at LDL 70 mg/dL or more (1) or 55-69 (2a); routine colchicine uncertain; ticagrelor monotherapy after 1 month",
+    "CLEAR SYNERGY (2025): routine colchicine and spironolactone after MI neutral",
+    "EMPACT-MI (2024): SGLT2 inhibitor for HF, low LVEF, diabetes or CKD rather than every MI",
+    "ESC/EAS 2025 lipid focused update and CSI 2024 dyslipidaemia guideline (LDL under 55, non-HDL under 85, Lp(a) once)",
+  ],
+  master: {
+    heading: "Master revision table - After the MI",
+    columns: ["Heading", "What to write"],
+    rows: [
+      ["Definition", "Lifelong drug and lifestyle therapy plus **cardiac rehabilitation** to prevent recurrent MI, stroke, HF and death."],
+      ["Burden", "1 in 5 have an event within a year; PURE: few Indians on statins; **rehab uptake under 10%** in India."],
+      ["Antiplatelets", "**Aspirin 75-100 mg** lifelong plus ticagrelor, prasugrel or clopidogrel for **12 months**; shorten if high bleeding risk."],
+      ["Lipids", "**Atorvastatin 40-80 or rosuvastatin 20-40**; LDL **under 55 mg/dL and 50% fall**; ezetimibe then PCSK9i; lipids at 4-6 weeks."],
+      ["ACE inhibitor", "Class I if LVEF 40% or less, HF, diabetes, HT, CKD; reasonable for all; ARB if cough."],
+      ["Beta-blocker", "**Class I at LVEF 40% or less**; benefit at 41-49%; **optional at 50%+** (REDUCE-AMI, REBOOT)."],
+      ["MRA and SGLT2i", "**Eplerenone** if LVEF 40% or less with HF or diabetes; **SGLT2i** for HF, low LVEF, diabetes, CKD."],
+      ["Other", "Colchicine 0.5 mg optional (CLEAR SYNERGY neutral); **influenza vaccine**; PPI with DAPT if GI risk; SL nitrate."],
+      ["Rehab phases", "**I inpatient**, **II supervised 12 weeks (36 sessions)**, **III lifelong**; FITT 3-5 days, 40-60% HRR, 20-60 min."],
+      ["Lifestyle", "Tobacco cessation (varenicline, quitline 1800-112-356), Indian heart-healthy diet, salt under 5 g, 150-300 min/week."],
+      ["Return to life", "Sex at **1 week** (two flights of stairs); car 1-4 weeks (DVLA); desk work 2-4 weeks; no nitrate with PDE5i."],
+      ["Depression", "1 in 5; **PHQ-2 then PHQ-9**; sertraline or escitalopram; avoid tricyclics."],
+      ["Follow-up", "**1-2 weeks**, lipids 4-6 weeks, echo 6-12 weeks if LVEF low, 3-monthly year 1, then 6-12 monthly."],
+      ["Latest updates", "**REBOOT 2025**, CLEAR SYNERGY 2025, EMPACT-MI 2024, ACC/AHA 2025 LDL thresholds, CSI 2024."],
+    ],
+  },
+  flows: [
+    {
+      kind: "flow",
+      heading: "Discharge checklist after MI",
+      steps: [
+        { label: "Echo before discharge: LVEF", detail: "Decides beta-blocker, MRA, SGLT2i, ICD review" },
+        { label: "Antiplatelets: aspirin plus P2Y12", detail: "12 months default; assess bleeding risk", tone: "decision" },
+        { label: "High-intensity statin", detail: "Atorvastatin 80 mg; LDL under 55 mg/dL" },
+        { label: "ACE inhibitor, beta-blocker as indicated", detail: "Beta-blocker Class I if LVEF 40% or less" },
+        { label: "LVEF 40% or less, HF or diabetes?", detail: "Add eplerenone and SGLT2 inhibitor", tone: "decision" },
+        { label: "Tobacco, diet, vaccine, depression screen", detail: "Varenicline, PHQ-2, influenza vaccine" },
+        { label: "Rehab referral and review at 1-2 weeks", detail: "Lipids 4-6 weeks", tone: "good" },
+      ],
+    },
+    {
+      kind: "ladder",
+      heading: "LDL lowering ladder after MI",
+      steps: [
+        { label: "High-intensity statin", detail: "Atorvastatin 40-80 or rosuvastatin 20-40 mg", tone: "good" },
+        { label: "Add ezetimibe 10 mg", detail: "If LDL 55 mg/dL or more at 4-6 weeks" },
+        { label: "Add PCSK9 inhibitor or inclisiran", detail: "If still above target" },
+        { label: "Bempedoic acid if statin intolerant", detail: "ESC/EAS 2025 update", tone: "decision" },
+        { label: "Recurrent event within 2 years", detail: "Target under 40 mg/dL", tone: "warn" },
+      ],
+    },
+    {
+      kind: "compare",
+      heading: "Cardiac rehabilitation phases",
+      columns: ["Phase", "When", "What"],
+      rows: [
+        ["I", "In hospital", "Mobilise, educate, refer"],
+        ["II", "1-3 weeks after discharge, 12 weeks", "Supervised exercise, risk factors, psychology"],
+        ["III", "Lifelong", "Self-directed exercise and adherence"],
+      ],
+    },
+  ],
+  notes: {
+    sections: [
+      {
+        title: "Definition and key facts",
+        points: [
+          "**Secondary prevention** is lifelong therapy that stops a second MI.",
+          "About **1 in 5** survivors have another event within a year.",
+          "**Cardiac rehabilitation** is Class I, but under 10% in India get it.",
+          "Up to half stop a drug within a year; **check adherence** every visit.",
+        ],
+      },
+      {
+        title: "Causes and risk factors",
+        points: [
+          "Continued **tobacco** use doubles the risk of reinfarction.",
+          "Each 39 mg/dL fall in **LDL** cuts major events by about 22%.",
+          "Diabetes, hypertension, CKD, depression and poverty raise recurrence.",
+          "Measure **lipoprotein(a)** once; it is often high in South Asians.",
+        ],
+      },
+      {
+        title: "Investigations",
+        points: [
+          "**Echo** before discharge; repeat at 6-12 weeks if LVEF 40% or less.",
+          "**Lipids at 4-6 weeks** after starting or changing therapy.",
+          "Creatinine and potassium **1-2 weeks** after ACE inhibitor or MRA.",
+          "HbA1c in all; exercise test before phase II or heavy work.",
+        ],
+      },
+      {
+        title: "Treatment - first line",
+        points: [
+          "**Aspirin 75-100 mg** lifelong plus a P2Y12 inhibitor for 12 months.",
+          "**Atorvastatin 80 mg** or rosuvastatin 20-40 mg for everyone.",
+          "LDL target **under 55 mg/dL** and at least 50% reduction.",
+          "**ACE inhibitor** such as ramipril, titrated to 5 mg twice daily.",
+          "**Beta-blocker** is essential when LVEF is 40% or less.",
+          "Influenza vaccine, PPI if GI risk, sublingual nitrate to carry.",
+        ],
+      },
+      {
+        title: "Treatment - next steps",
+        points: [
+          "LDL above target: add **ezetimibe**, then a PCSK9 inhibitor.",
+          "LVEF 40% or less with HF or diabetes: add **eplerenone**.",
+          "HF, low LVEF, diabetes or CKD: add an **SGLT2 inhibitor**.",
+          "**Colchicine 0.5 mg** is optional; CLEAR SYNERGY was neutral.",
+          "Preserved LVEF: beta-blocker is **optional** after REDUCE-AMI and REBOOT.",
+        ],
+      },
+      {
+        title: "Cardiac rehabilitation and lifestyle",
+        points: [
+          "**Phase I** in hospital, **phase II** supervised for 12 weeks, **phase III** lifelong.",
+          "Exercise **3-5 days a week**, 20-60 minutes, moderate intensity, plus resistance work.",
+          "On beta-blockers use **perceived exertion** (Borg 11-14) or the talk test.",
+          "**Yoga-CaRe** improved quality of life in Indian patients.",
+          "Stop tobacco with **varenicline** or NRT; quitline 1800-112-356.",
+          "Salt **under 5 g**, avoid trans fats, more pulses, vegetables and whole grains.",
+        ],
+      },
+      {
+        title: "Special groups",
+        points: [
+          "**Diabetes**: SGLT2 inhibitor or GLP-1 receptor agonist regardless of HbA1c.",
+          "**CKD**: watch potassium and adjust statin and antithrombotic doses.",
+          "**On anticoagulant**: OAC plus clopidogrel, then OAC alone after 12 months.",
+          "**Young MI**: check for familial hypercholesterolaemia and Lp(a); screen relatives.",
+          "Low-cost **Jan Aushadhi** generics improve adherence.",
+        ],
+      },
+      {
+        title: "Return to normal life",
+        points: [
+          "**Sex** after about 1 week if two flights of stairs cause no symptoms.",
+          "No **nitrate** within 24 hours of sildenafil or 48 hours of tadalafil.",
+          "**Car driving** after 1-4 weeks (DVLA); heavy vehicles after 6 weeks and testing.",
+          "**Desk work** after 2-4 weeks; heavy work after an exercise test.",
+          "Low-risk patients may **fly** after about 3 days.",
+        ],
+      },
+      {
+        title: "Referral and follow-up",
+        points: [
+          "Screen for **depression** with PHQ-2; treat with sertraline or escitalopram.",
+          "Review at **1-2 weeks**, then 3-monthly in year one.",
+          "Rest pain, syncope or heart failure after discharge needs **urgent referral**.",
+          "Never stop **DAPT** for dental work without cardiology advice.",
+        ],
+      },
+      {
+        title: "Latest updates",
+        points: [
+          "**REBOOT 2025**: no benefit from beta-blockers when LVEF is over 40%.",
+          "**ACC/AHA 2025**: add non-statin if LDL stays 70 mg/dL or more.",
+          "**EMPACT-MI 2024**: SGLT2 inhibitors not routine for every MI.",
+          "**CSI 2024**: LDL under 55 and non-HDL under 85 for very high risk.",
+        ],
+      },
+    ],
+    tables: [
+      {
+        heading: "Discharge drugs after MI",
+        columns: ["Drug", "Dose and route", "Duration", "Key side effects / cautions"],
+        rows: [
+          ["Aspirin", "75-100 mg oral daily", "Lifelong", "GI bleed"],
+          ["Ticagrelor", "90 mg oral twice daily", "12 months", "Dyspnoea, bleeding"],
+          ["Atorvastatin", "40-80 mg oral daily", "Lifelong", "Myalgia, raised enzymes"],
+          ["Ezetimibe", "10 mg oral daily", "If LDL above target", "Well tolerated"],
+          ["Ramipril", "2.5 mg twice daily to 5 mg twice daily", "Lifelong", "Cough, hyperkalaemia, angioedema"],
+          ["Metoprolol succinate", "25-200 mg oral daily", "Lifelong if LVEF 40% or less", "Bradycardia, fatigue"],
+          ["Eplerenone", "25-50 mg oral daily", "If LVEF 40% or less with HF or diabetes", "Hyperkalaemia"],
+          ["Dapagliflozin", "10 mg oral daily", "If HF, diabetes or CKD", "Genital infection, dehydration"],
+          ["Varenicline", "Titrate to 1 mg twice daily", "12 weeks", "Nausea, vivid dreams"],
+        ],
+      },
+      {
+        heading: "Beta-blocker by LVEF",
+        columns: ["LVEF", "Recommendation"],
+        rows: [
+          ["40% or less", "Class I, lifelong"],
+          ["41-49%", "Recommended (2025 meta-analysis)"],
+          ["50% or more", "Optional unless angina, arrhythmia or hypertension"],
+        ],
+      },
+      {
+        heading: "Targets after MI",
+        columns: ["Parameter", "Target"],
+        rows: [
+          ["LDL", "Under 55 mg/dL and 50% fall (under 40 if recurrent in 2 years)"],
+          ["Non-HDL", "Under 85 mg/dL"],
+          ["BP", "Under 130/80 mmHg"],
+          ["HbA1c", "About 7%"],
+          ["Exercise", "150-300 minutes a week"],
+          ["Tobacco", "Zero, including smokeless"],
+        ],
+      },
+    ],
+    remember: [
+      "**ABCDE**: Antiplatelet and ACE inhibitor, Beta-blocker and BP, Cholesterol and Cigarettes, Diet and Diabetes, Education and Exercise.",
+      "**LDL under 55 and halve it.**",
+      "**Beta-blocker: must at 40% or less, maybe at 50% or more.**",
+      "**Lipids at 4-6 weeks, echo at 6-12 weeks.**",
+      "**36 sessions in 12 weeks** for phase II.",
+      "**Two flights of stairs** means ready for sex.",
+      "**Sertraline or escitalopram**, never tricyclics, after MI.",
+    ],
+  },
+};
+
 export default revision;
