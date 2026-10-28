@@ -229,6 +229,228 @@ const revision: RevisionSet = {
       ],
     },
   },
+  "cardiovascular-right-sided-valve": {
+    checked: "2026-10",
+    updated: [
+      "ESC/EACTS 2025 valvular guideline: TR typed as primary, secondary ventricular, secondary atrial and CIED-related",
+      "ESC/EACTS 2025: wider role for transcatheter tricuspid therapy (T-TEER, transcatheter replacement) in symptomatic severe TR unsuitable for surgery",
+      "TRILUMINATE Pivotal 2023, TRISCEND II 2024 and Tri.fr 2024 trials: better quality of life after transcatheter tricuspid therapy",
+      "TRI-SCORE adopted for surgical risk in isolated tricuspid surgery",
+      "ESC 2023 endocarditis guideline: right-sided IE surgery criteria",
+      "ENETS 2022 guidance: NT-proBNP and echo screening for carcinoid heart disease",
+      "ESC/ERS 2022 PH guideline: PH defined as mean PA pressure over 20 mmHg",
+    ],
+    master: {
+      heading: "Tricuspid and pulmonary valve disease on one page",
+      columns: ["Heading", "What to write"],
+      rows: [
+        ["Definitions", "TR systolic RV-to-RA backflow; TS diastolic RA-RV obstruction; PS RV outflow obstruction; PR diastolic PA-to-RV backflow"],
+        ["Key fact", "80-90% of significant TR is secondary (functional); severe TR lowers survival"],
+        ["TR types", "Primary, secondary ventricular (left heart disease, PH), secondary atrial (AF, HFpEF), CIED-related"],
+        ["Primary TR causes", "Rheumatic, endocarditis (injecting drug use), carcinoid, Ebstein, prolapse, trauma, endomyocardial fibrosis"],
+        ["TR signs", "Large cv wave, systolic hepatic pulsation, RV heave, pansystolic murmur lower left sternal edge louder on inspiration (Carvallo)"],
+        ["TS", "Rheumatic with MS; giant a wave, slow y descent, presystolic liver pulsation; severe if mean gradient 5 mmHg or more"],
+        ["PS", "Congenital; ejection click softer on inspiration, wide split S2; severe over 64 mmHg; balloon valvuloplasty"],
+        ["PR", "Graham Steell in PH; severe PR after Tetralogy repair; replace valve if RVEDVi 160 or RVESVi 80 mL/m² or more"],
+        ["Severe TR on echo", "Vena contracta 7 mm or more, EROA 0.40 cm² or more, RVol 45 mL or more, hepatic vein systolic reversal"],
+        ["Investigations", "ECG, CXR, TTE with RV function (TAPSE), TOE/3D, CMR, CT, right heart catheter before intervention, LFT, 5-HIAA"],
+        ["Medical treatment", "Salt restriction, loop diuretic (torsemide or furosemide) plus spironolactone; treat cause; AF rhythm control"],
+        ["Surgery", "Severe TR at left-sided surgery: repair; annulus 40 mm or more: repair; isolated severe TR before RV failure"],
+        ["Transcatheter", "T-TEER (TriClip, PASCAL), EVOQUE replacement for high-risk symptomatic severe TR; TRI-SCORE for risk"],
+        ["Carcinoid", "Liver metastases; lungs protect left heart; octreotide or lanreotide; valve replacement under IV octreotide cover"],
+      ],
+    },
+    flows: [
+      {
+        kind: "flow",
+        heading: "Working up tricuspid regurgitation",
+        steps: [
+          { label: "Raised JVP with cv waves, pulsatile liver, ascites", detail: "Murmur louder on inspiration; may be silent if torrential" },
+          { label: "ECG, chest X-ray, LFT, creatinine, NT-proBNP" },
+          { label: "Transthoracic echo", detail: "Mechanism, severity, annulus size, RV function, PASP" },
+          { label: "Which type of TR?", detail: "Primary, ventricular, atrial or lead-related", tone: "decision" },
+          { label: "Find and treat the cause", detail: "Mitral disease, PH, AF, LV failure, pacemaker lead" },
+          { label: "Severe and symptomatic?", detail: "TOE/3D, CMR, right heart catheterisation", tone: "decision" },
+          { label: "Heart Valve Centre decision", detail: "Surgery, transcatheter therapy or medical care", tone: "good" },
+        ],
+      },
+      {
+        kind: "ladder",
+        heading: "Treatment ladder in severe TR",
+        steps: [
+          { label: "Salt restriction and loop diuretic", detail: "Furosemide 20-80 mg or torsemide 10-40 mg daily" },
+          { label: "Add spironolactone", detail: "25-50 mg daily; check K and creatinine" },
+          { label: "Treat the cause", detail: "Mitral intervention, HF GDMT, PH therapy, AF rhythm control" },
+          { label: "Surgery if at left-sided surgery or before RV failure", detail: "Ring annuloplasty; bioprosthesis if replaced", tone: "decision" },
+          { label: "Transcatheter therapy if high surgical risk", detail: "T-TEER or EVOQUE; TRI-SCORE guides choice", tone: "good" },
+          { label: "Avoid intervention in severe PH or end-stage RV", detail: "Palliative diuretics", tone: "warn" },
+        ],
+      },
+      {
+        kind: "compare",
+        heading: "Right-sided lesions at the bedside",
+        columns: ["Feature", "TR", "TS", "PS", "PR"],
+        rows: [
+          ["JVP", "Large cv wave", "Giant a wave, slow y", "Prominent a wave", "Normal unless RV fails"],
+          ["Murmur", "Pansystolic, lower left sternal edge", "Mid-diastolic, lower left sternal edge", "Ejection systolic, left 2nd space", "Early diastolic, left 2nd space"],
+          ["Inspiration", "Louder", "Louder", "Click softer", "Louder"],
+          ["Liver", "Systolic pulsation", "Presystolic pulsation", "Not pulsatile", "Not pulsatile"],
+          ["Main treatment", "Treat cause, diuretics, repair", "Surgery with mitral repair", "Balloon valvuloplasty", "Treat PH; valve replacement after Tetralogy"],
+        ],
+      },
+    ],
+    notes: {
+      sections: [
+        {
+          title: "Definition and key facts",
+          points: [
+            "**Tricuspid regurgitation** is systolic backflow from the RV into the right atrium.",
+            "About **80-90%** of significant TR is secondary, with normal leaflets.",
+            "Severe TR is **not benign**; survival falls with each grade.",
+            "**Tricuspid stenosis** is rare and almost always rheumatic, with mitral stenosis.",
+            "**Pulmonary stenosis** is congenital in nearly all cases.",
+            "Important **pulmonary regurgitation** follows pulmonary hypertension or Tetralogy repair.",
+          ],
+        },
+        {
+          title: "Causes and risk factors",
+          points: [
+            "Secondary ventricular TR: **left heart disease**, pulmonary hypertension, RV infarction.",
+            "Secondary atrial TR: long-standing **AF** and HFpEF with a normal RV.",
+            "**Pacemaker or ICD leads** cause their own type of TR.",
+            "Primary TR: rheumatic, **endocarditis**, carcinoid, Ebstein anomaly, prolapse, trauma.",
+            "**Endomyocardial fibrosis** in south India causes TR with restrictive physiology.",
+            "PS: dome valve, **Noonan** dysplastic valve, Williams syndrome, rubella, carcinoid.",
+          ],
+        },
+        {
+          title: "Pathophysiology",
+          points: [
+            "1. The non-fibrous **annulus dilates** along the free wall as the RV or RA enlarges.",
+            "2. Leaflets are pulled apart and tethered: **TR begets TR**.",
+            "3. RV volume overload causes RV failure and septal shift into the LV.",
+            "4. Venous congestion causes **hepatopathy**, ascites, gut oedema and cardiorenal syndrome.",
+            "5. Inspiration increases RV filling, so right-sided murmurs get louder.",
+            "6. **Torrential TR** has a laminar jet, so Doppler underestimates PA pressure.",
+          ],
+        },
+        {
+          title: "Clinical features",
+          points: [
+            "Fatigue, leg swelling, abdominal distension, right upper quadrant ache and early satiety.",
+            "Patients often present late with **ascites**, jaundice or cachexia.",
+            "Ask about rheumatic fever, AF, pacemakers, drug injection and **flushing with diarrhoea**.",
+            "In TS, congestion is out of proportion to breathlessness in a patient with MS.",
+          ],
+        },
+        {
+          title: "Examination",
+          points: [
+            "TR: **large cv wave** with a steep y descent and lost x descent.",
+            "Liver pulsation is **systolic in TR** and presystolic in TS.",
+            "TR murmur is pansystolic at the lower left sternal edge, **louder on inspiration**.",
+            "PS: ejection click that **softens on inspiration**, wide split S2, soft P2.",
+            "PR in pulmonary hypertension: **Graham Steell** early diastolic murmur with loud P2.",
+          ],
+        },
+        {
+          title: "Investigations",
+          points: [
+            "ECG: **P pulmonale**, AF, RBBB; giant P waves and pre-excitation in Ebstein.",
+            "Echo: mechanism, severity, annulus size, RV function by **TAPSE**, PA pressure.",
+            "Severe TR: vena contracta **7 mm or more** and hepatic vein systolic reversal.",
+            "Severe PS: peak velocity **over 4 m/s** (gradient over 64 mmHg).",
+            "Use CMR for RV volumes and **right heart catheterisation** before tricuspid intervention.",
+            "Check LFT, creatinine, NT-proBNP; urinary **5-HIAA** if carcinoid is suspected.",
+          ],
+        },
+        {
+          title: "Treatment - first line",
+          points: [
+            "Restrict salt to **under 5 g a day** and weigh daily.",
+            "Use a **loop diuretic**; torsemide is better absorbed when the gut is oedematous.",
+            "Add **spironolactone 25-50 mg** and check potassium and creatinine.",
+            "Avoid **over-diuresis**: the RV depends on preload.",
+            "Treat the cause: mitral disease, heart failure, pulmonary hypertension and AF.",
+          ],
+        },
+        {
+          title: "Treatment - next steps",
+          points: [
+            "Repair severe TR **during left-sided valve surgery** (Class I).",
+            "Repair moderate TR if the annulus is **40 mm or more** at mitral surgery.",
+            "Operate on isolated severe TR **before RV failure**; prefer ring annuloplasty.",
+            "High surgical risk: **T-TEER** or transcatheter replacement improves quality of life.",
+            "Severe PS: **balloon valvuloplasty**, even without symptoms.",
+            "Repaired Tetralogy with severe PR and RV dilatation: **pulmonary valve replacement**.",
+          ],
+        },
+        {
+          title: "Inpatient / emergency care",
+          points: [
+            "Give IV furosemide at **1-2 times** the oral daily dose.",
+            "Spot urine sodium **under 50-70 mmol/L** at 2 hours means double the dose.",
+            "Add acetazolamide or metolazone for **diuretic resistance**.",
+            "Right-sided IE: blood cultures, then **cloxacillin 2 g IV 4-hourly**.",
+            "Critical neonatal PS: start **prostaglandin E1** and transfer.",
+          ],
+        },
+        {
+          title: "Latest updates",
+          points: [
+            "**ESC/EACTS 2025** sorts TR into primary, ventricular, atrial and lead-related types.",
+            "Transcatheter tricuspid therapy has a larger role after **TRILUMINATE** and **TRISCEND II**.",
+            "**TRI-SCORE** predicts risk of isolated tricuspid surgery.",
+            "**ENETS 2022** advises NT-proBNP and echo screening in carcinoid syndrome.",
+          ],
+        },
+      ],
+      tables: [
+        {
+          heading: "Drugs in right-sided valve disease",
+          columns: ["Drug", "Dose and route", "Duration", "Key side effects / cautions"],
+          rows: [
+            ["Furosemide", "20-80 mg oral once or twice daily; IV in decompensation", "Titrate to weight", "Low K and Na, AKI"],
+            ["Torsemide", "10-40 mg oral once daily", "Long term", "Electrolyte loss, hypotension"],
+            ["Spironolactone", "25-50 mg oral daily", "Long term", "Hyperkalaemia; avoid if eGFR under 30"],
+            ["Acetazolamide", "500 mg IV daily", "Days, for diuretic resistance", "Acidosis, low K"],
+            ["Octreotide LAR", "20-30 mg IM every 4 weeks", "Long term in carcinoid", "Gallstones, hyperglycaemia"],
+            ["Lanreotide", "120 mg deep SC every 4 weeks", "Long term in carcinoid", "Gallstones, abdominal pain"],
+            ["Cloxacillin", "2 g IV every 4 hours", "Per endocarditis protocol", "Phlebitis, hepatitis; penicillin allergy"],
+          ],
+        },
+        {
+          heading: "Types of TR",
+          columns: ["Type", "Cause", "Treatment"],
+          rows: [
+            ["Primary", "Rheumatic, endocarditis, carcinoid, Ebstein", "Repair or replace the valve"],
+            ["Secondary ventricular", "Left heart disease, pulmonary hypertension", "Treat cause; surgery only without severe PH"],
+            ["Secondary atrial", "AF, HFpEF", "Rhythm control, annuloplasty, transcatheter repair"],
+            ["CIED-related", "Pacemaker or ICD lead", "Device team; lead extraction or leadless pacing"],
+          ],
+        },
+        {
+          heading: "Severity cut-offs",
+          columns: ["Lesion", "Severe if"],
+          rows: [
+            ["Tricuspid regurgitation", "Vena contracta 7 mm or more, EROA 0.40 cm² or more, RVol 45 mL or more"],
+            ["Tricuspid stenosis", "Mean gradient 5 mmHg or more, area 1.0 cm² or less"],
+            ["Pulmonary stenosis", "Peak velocity over 4 m/s, gradient over 64 mmHg"],
+            ["Pulmonary regurgitation", "Pressure half-time under 100 ms, branch PA flow reversal"],
+          ],
+        },
+      ],
+      remember: [
+        "**Carvallo sign**: TR murmur louder on inspiration; lost when the RV fails.",
+        "**Systolic liver pulsation = TR; presystolic = TS.**",
+        "The **pulmonary ejection click** is the only right-sided sound softer on inspiration.",
+        "**Annulus 40 mm or more**: repair the tricuspid at mitral surgery.",
+        "**Carcinoid spares the left heart** because the lungs inactivate serotonin.",
+        "Primary TR causes **CREEPS**: Carcinoid, Rheumatic, Ebstein, Endocarditis, Prolapse, Stimulator lead.",
+        "**Repaired Tetralogy**: QRS 180 ms or more predicts sudden death.",
+      ],
+    },
+  },
 };
 
 export default revision;

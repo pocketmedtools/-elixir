@@ -1,5 +1,245 @@
 import type { RevisionSet } from "./index";
 
-const revision: RevisionSet = {};
+const revision: RevisionSet = {
+  "cardiovascular-takayasu-vasculitis": {
+    checked: "2026-10",
+    updated: [
+      "ACR/EULAR 2022: new TAK classification criteria - age 60 or less, imaging mandatory, score 5 or more.",
+      "ACR/EULAR 2022: GCA criteria - age 50 or more, score 6 or more, halo sign scores like a positive biopsy.",
+      "EULAR 2022 LVV update (2024): non-glucocorticoid agent for all TAK; prednisolone 5 mg or less after 1 year; interventions in remission.",
+      "EULAR 2023 imaging in LVV: MRI first in suspected TAK; temporal plus axillary ultrasound first in GCA.",
+      "ACR/VF 2021: TNF inhibitors preferred over tocilizumab for refractory TAK; serial non-invasive imaging.",
+      "SELECT-GCA (NEJM 2025): upadacitinib 15 mg approved for giant cell arteritis.",
+      "ESC 2024 CCS: ANOCA/INOCA, acetylcholine coronary function testing, CCB first line for vasospastic angina.",
+      "EULAR 2023 SSc update (2025): CCB and PDE5 inhibitor first line for Raynaud; IV iloprost for severe; bosentan for ulcers.",
+    ],
+    master: {
+      heading: "Master table - Takayasu arteritis, Raynaud and vasospastic disorders",
+      columns: ["Heading", "What to write"],
+      rows: [
+        ["Definition", "TAK: granulomatous **large-vessel vasculitis** of the aorta, its branches and pulmonary arteries, women under 40; 'pulseless disease'."],
+        ["Epidemiology", "Asia (Japan, India); incidence 1-3 per million; India: **abdominal aorta and renal arteries**, hypertension commonest; Buerger 45-63% of PAD in classic Indian series."],
+        ["Aetiology", "Unknown; HLA-B52; TB over-represented, not causal; RP primary vs secondary (SSc over 90%), drugs; Buerger = tobacco; VSA = smoking, cocaine, 5-FU."],
+        ["Pathophysiology", "Adventitial vasa vasorum inflammation, Th1/Th17 granuloma, **IL-6** (CRP) and TNF; stenosis more than aneurysm; HT from renal artery stenosis, middle aortic syndrome, stiff aorta."],
+        ["Classification", "Phases: systemic, inflammatory, burnt-out; **Numano I-V** (+C, +P); **ACR/EULAR 2022**: age 60 or less, imaging, score 5 or more."],
+        ["Clinical features", "Fever, PUO, arm claudication, syncope (subclavian steal), visual blur, angina, AR, haemoptysis, abdominal angina, carotidynia."],
+        ["Examination", "Absent pulses, **four-limb BP** (inter-arm 20+), reversed coarctation, bruits (carotid, subclavian, renal), AR murmur, Uyama retinopathy."],
+        ["Investigations", "CBC, ESR/CRP (may be normal), creatinine, echo; Doppler (macaroni sign), **MRA first** (EULAR 2023), CTA, PET-CT; TB and HBV screen."],
+        ["Treatment - TAK", "**Prednisolone 40-60 mg** then taper (15-20 mg by 3 months, 5 mg or less by 1 year) **plus methotrexate 15-25 mg weekly**; refractory: tocilizumab or TNF inhibitor."],
+        ["Treatment - supportive", "BP control (care with ACEi in bilateral RAS); aspirin only for critical cranial or coronary disease; **revascularise in remission**."],
+        ["Raynaud", "White-blue-red; primary benign; secondary: ulcers, abnormal capillaries, ANA; warmth, no smoking, **nifedipine/amlodipine**, sildenafil, iloprost, bosentan."],
+        ["Buerger", "Young male smoker, distal, veins and arms; corkscrew collaterals; **stop all tobacco**; iloprost, sympathectomy, conservative amputation."],
+        ["Vasospastic angina", "Night rest angina, transient ST elevation; **COVADIS**; acetylcholine test; **CCB first**, nitrates; avoid propranolol; ICD after arrest."],
+        ["Red flags and follow-up", "Visual loss, stroke, critical digital ischaemia, creatinine rise on ACEi; review 1-3 monthly when active; periodic imaging even in remission."],
+      ],
+    },
+    flows: [
+      {
+        kind: "flow",
+        heading: "Young patient with pulse deficit or hypertension: Takayasu work-up",
+        steps: [
+          { label: "Young hypertensive, absent pulse or arm claudication", detail: "Woman under 40; or PUO with raised ESR" },
+          { label: "Feel all pulses, BP in four limbs, listen for bruits", detail: "Inter-arm gap 20 mmHg or more; leg BP far above arm", tone: "decision" },
+          { label: "First-line tests", detail: "CBC, ESR/CRP, creatinine, urine, ECG, echo, carotid and renal Doppler" },
+          { label: "MR angiography (CTA if MRI unavailable)", detail: "Wall thickening, enhancement, stenosis; PET-CT if activity unclear" },
+          { label: "Apply ACR/EULAR 2022 criteria", detail: "Age 60 or less plus imaging; score 5 or more", tone: "decision" },
+          { label: "Exclude mimics", detail: "Atherosclerosis, FMD, coarctation, syphilis, TB aortitis, GCA if over 50", tone: "warn" },
+          { label: "Screen before treatment", detail: "IGRA or Mantoux, chest X-ray, HBV, HCV, HIV, pregnancy test" },
+          { label: "Takayasu confirmed: grade activity and type", detail: "NIH criteria or ITAS2010; Numano type", tone: "good" },
+        ],
+      },
+      {
+        kind: "ladder",
+        heading: "Takayasu treatment ladder (EULAR 2022)",
+        steps: [
+          { label: "Step 1: prednisolone plus methotrexate", detail: "Prednisolone 40-60 mg/day; MTX 15-25 mg weekly plus folic acid 5 mg weekly" },
+          { label: "Step 2: taper the steroid", detail: "15-20 mg/day by 2-3 months; 5 mg or less after 1 year" },
+          { label: "Step 3: switch csDMARD if MTX fails or not tolerated", detail: "Azathioprine 2 mg/kg, MMF 2-3 g/day, leflunomide 20 mg" },
+          { label: "Step 4: relapsing or refractory - add a biologic", detail: "Tocilizumab 8 mg/kg IV 4-weekly or TNF inhibitor; screen TB first", tone: "warn" },
+          { label: "Step 5: revascularise in stable remission", detail: "Renal angioplasty or bypass; urgent only for critical ischaemia or dissection", tone: "good" },
+        ],
+      },
+      {
+        kind: "branch",
+        heading: "Raynaud phenomenon: primary or secondary?",
+        root: "Cold-induced white, blue, red fingers",
+        arms: [
+          { label: "Primary (Raynaud disease)", tone: "good", steps: ["Onset 15-30, symmetric", "No ulcers or gangrene", "Normal capillaroscopy, ANA negative", "Warmth, gloves; CCB if attacks frequent"] },
+          { label: "Secondary (connective tissue disease)", tone: "warn", steps: ["Onset after 30-40, asymmetric, painful", "Ulcers, pits, sclerodactyly", "Abnormal capillaries, ANA positive", "Treat cause; CCB, PDE5 inhibitor, iloprost; refer"] },
+          { label: "Occupational or drug-induced", tone: "decision", steps: ["Vibrating tools, cold work", "Beta-blockers, ergots, chemotherapy", "Remove the exposure"] },
+        ],
+      },
+    ],
+    notes: {
+      sections: [
+        {
+          title: "Definition and key facts",
+          points: [
+            "**Takayasu arteritis** is a granulomatous vasculitis of the aorta, its branches and pulmonary arteries.",
+            "About **80-90%** are women, usually under 40; it is commonest in Asia, including India.",
+            "Indian patients often have **abdominal aortic and renal artery** disease with hypertension.",
+            "**Giant cell arteritis** affects people over 50 and is rare in India.",
+            "**Raynaud phenomenon** is reversible cold-induced spasm of digital arteries in 3-5% of people.",
+            "**Buerger disease** is inflammatory occlusion of distal limb arteries and veins in young tobacco users.",
+            "**Vasospastic angina** is rest angina from coronary spasm with transient ST elevation.",
+          ],
+        },
+        {
+          title: "Causes and risk factors",
+          points: [
+            "TAK cause is unknown; **HLA-B52** is linked and TB is over-represented.",
+            "Antitubercular therapy does **not** treat TAK unless TB is proven.",
+            "Secondary Raynaud: **systemic sclerosis** (over 90%), SLE, MCTD, vibrating tools and drugs.",
+            "Raynaud-provoking drugs: beta-blockers, ergots, triptans, bleomycin, cisplatin and amphetamines.",
+            "Buerger needs **tobacco**: bidis, cigarettes, chewing tobacco or cannabis.",
+            "VSA triggers: **smoking**, cold, cocaine, triptans, 5-fluorouracil and hyperventilation.",
+          ],
+        },
+        {
+          title: "Classification that matters",
+          points: [
+            "TAK phases: **systemic**, vascular inflammatory and burnt-out fibrotic.",
+            "**Numano** types I-V; type IV is abdominal aorta and renal arteries; type V is the whole aorta.",
+            "Add **C(+)** for coronary and **P(+)** for pulmonary artery involvement.",
+            "**ACR/EULAR 2022**: age 60 or less plus imaging, then a score of 5 or more.",
+            "Activity: **NIH (Kerr) criteria** or the Indian **ITAS2010** score.",
+            "**COVADIS** defines vasospastic angina: nitrate response, ECG change, documented spasm.",
+          ],
+        },
+        {
+          title: "Clinical features",
+          points: [
+            "Early **systemic phase**: fever, weight loss and arthralgia; may present as PUO.",
+            "**Arm claudication**, cold hands and leg claudication follow arterial narrowing.",
+            "Syncope on arm exercise suggests **subclavian steal**.",
+            "Angina, breathlessness, haemoptysis and post-prandial abdominal pain show organ ischaemia.",
+            "Raynaud colours are **white, blue, red**: spasm, deoxygenation, reperfusion.",
+            "Buerger: **instep claudication**, rest pain, toe ulcers and migratory thrombophlebitis.",
+            "VSA: rest pain from **midnight to dawn**, relieved by nitrate within minutes.",
+          ],
+        },
+        {
+          title: "Examination",
+          points: [
+            "Feel **every pulse** on both sides; an absent radial or carotid pulse is the hallmark.",
+            "Measure BP in **all four limbs**; an inter-arm difference of 20 mmHg or more counts.",
+            "Leg BP far above arm BP is **reversed coarctation** from bilateral subclavian stenosis.",
+            "Listen for **bruits** over carotids, subclavians, abdomen and renal areas.",
+            "Look for **aortic regurgitation**, LVH and a loud P2.",
+            "Fundus: **Uyama** Takayasu retinopathy or, commoner in India, hypertensive retinopathy.",
+            "In Raynaud check nailfold capillaries; in Buerger do the **Allen test**.",
+          ],
+        },
+        {
+          title: "Investigations",
+          points: [
+            "CBC, **ESR and CRP**; normal markers do not exclude active TAK.",
+            "Doppler shows the carotid **macaroni sign**; renal PSV over 180-200 cm/s means stenosis.",
+            "**MR angiography** is the first imaging test for suspected TAK (EULAR 2023).",
+            "CTA and **PET-CT** help with the aorta and with uncertain activity.",
+            "Screen for **TB, hepatitis B and C and HIV** before steroids and biologics.",
+            "Raynaud: ANA, SSc antibodies, TSH and **nailfold capillaroscopy**.",
+            "VSA: Holter ST elevation, angiography and intracoronary **acetylcholine** testing.",
+          ],
+        },
+        {
+          title: "Treatment - first line",
+          points: [
+            "TAK: **prednisolone 40-60 mg/day**, tapered to 15-20 mg by 3 months.",
+            "Add **methotrexate 15-25 mg weekly** with folic acid from the start.",
+            "Control BP with amlodipine; use ACE inhibitors carefully in **bilateral renal stenosis**.",
+            "Raynaud: keep the whole body warm, stop smoking, then **nifedipine or amlodipine**.",
+            "Buerger: **stop all tobacco**; varenicline or bupropion help.",
+            "VSA: **diltiazem, nifedipine or amlodipine** plus sublingual nitrate for attacks.",
+            "In VSA **avoid propranolol**; unopposed alpha tone worsens spasm.",
+          ],
+        },
+        {
+          title: "Treatment - next steps",
+          points: [
+            "Refractory TAK: **tocilizumab** or a TNF inhibitor after TB screening.",
+            "Alternatives to methotrexate: azathioprine, mycophenolate or leflunomide.",
+            "**Revascularise in remission**; angioplasty of inflamed arteries restenoses.",
+            "Severe Raynaud: sildenafil, **IV iloprost**, bosentan for ulcers, botulinum toxin.",
+            "Buerger: iloprost, sympathectomy, wound care and conservative minor amputation.",
+            "VSA: add a long-acting nitrate or a second CCB; consider an **ICD** after cardiac arrest.",
+            "Pregnancy in TAK: stop methotrexate, MMF and leflunomide; prednisolone and azathioprine can continue.",
+          ],
+        },
+        {
+          title: "Complications and red flags",
+          points: [
+            "TAK complications: **renovascular hypertension**, stroke, AR, heart failure, aneurysm and CKD.",
+            "Ishikawa: 15-year survival falls from **96% to 66%** with a major complication.",
+            "Red flag: **visual loss** or TIA needs same-day steroids and referral.",
+            "Red flag: **critical digital ischaemia** needs admission for iloprost.",
+            "Creatinine rise over 30% on an ACE inhibitor suggests **bilateral renal artery stenosis**.",
+            "Persistent ST elevation is treated as **STEMI** until angiography shows spasm.",
+          ],
+        },
+        {
+          title: "Latest updates",
+          points: [
+            "**ACR/EULAR 2022**: TAK age limit raised to 60; imaging is mandatory.",
+            "**EULAR 2022**: steroid-sparing drug for all TAK; prednisolone 5 mg or less after 1 year.",
+            "**EULAR 2023 imaging**: MRI first for TAK; temporal and axillary ultrasound for GCA.",
+            "**SELECT-GCA 2025**: upadacitinib approved for giant cell arteritis.",
+            "**ESC 2024 CCS**: ANOCA/INOCA and acetylcholine testing; CCB first line for VSA.",
+          ],
+        },
+      ],
+      tables: [
+        {
+          heading: "Drugs to know",
+          columns: ["Drug", "Dose and route", "Duration", "Key side effects / cautions"],
+          rows: [
+            ["Prednisolone", "40-60 mg oral once daily", "Taper to 15-20 mg by 3 months, 5 mg or less by 1 year", "Diabetes, osteoporosis, infection; never stop abruptly"],
+            ["Methotrexate", "15-25 mg oral/SC once weekly plus folic acid 5 mg weekly", "1-2 years or longer", "Cytopenia, liver toxicity; teratogenic"],
+            ["Tocilizumab", "8 mg/kg IV 4-weekly or 162 mg SC weekly", "Refractory TAK", "Infection, neutropenia; CRP falsely normal"],
+            ["Nifedipine retard", "10-20 mg oral twice daily", "Winter or long term", "Headache, flushing, ankle oedema"],
+            ["Sildenafil", "20 mg oral three times daily", "Raynaud second line", "Hypotension; never with nitrates"],
+            ["Iloprost", "0.5-2 ng/kg/min IV over 6 hours daily", "3-5 days; up to 4 weeks in Buerger", "Headache, flushing, hypotension"],
+            ["Diltiazem SR", "90-180 mg oral twice daily", "Long term in VSA", "Bradycardia, AV block, constipation"],
+            ["Glyceryl trinitrate", "0.4-0.5 mg sublingual every 5 min, max 3", "During attacks", "Headache, hypotension"],
+          ],
+        },
+        {
+          heading: "Numano types of Takayasu arteritis",
+          columns: ["Type", "Vessels involved"],
+          rows: [
+            ["I", "Aortic arch branches only"],
+            ["IIa", "Ascending aorta, arch and branches"],
+            ["IIb", "IIa plus descending thoracic aorta"],
+            ["III", "Descending thoracic and abdominal aorta and/or renal arteries"],
+            ["IV", "Abdominal aorta and/or renal arteries (common in India)"],
+            ["V", "IIb plus IV - whole aorta (common in India)"],
+          ],
+        },
+        {
+          heading: "Primary versus secondary Raynaud",
+          columns: ["Feature", "Primary", "Secondary"],
+          rows: [
+            ["Onset", "15-30 years", "Over 30-40 years"],
+            ["Symmetry", "Symmetric", "Often asymmetric"],
+            ["Tissue loss", "Never", "Ulcers, pits, gangrene"],
+            ["Capillaroscopy", "Normal", "Giant loops, dropout"],
+            ["ANA / ESR", "Negative / normal", "Positive / may be raised"],
+            ["Treatment", "Warmth, CCB if needed", "Treat cause; CCB, PDE5 inhibitor, iloprost"],
+          ],
+        },
+      ],
+      remember: [
+        "Young hypertensive woman: feel both radials and a femoral, and take **four-limb BP**.",
+        "India = Numano **IV and V**: renal arteries and abdominal aorta.",
+        "TAK treatment = **steroid plus methotrexate**; biologic if refractory; operate in remission.",
+        "Tocilizumab makes **CRP useless** for judging activity.",
+        "Raynaud **WBR**: White (spasm), Blue (cyanosis), Red (reperfusion).",
+        "Tissue loss is **never primary** Raynaud.",
+        "Buerger: young **bidi** smoker, instep claudication, corkscrew collaterals; the cure is quitting.",
+        "Prinzmetal: night rest pain, ST elevation; **CCB yes, propranolol no**.",
+      ],
+    },
+  },
+};
 
 export default revision;

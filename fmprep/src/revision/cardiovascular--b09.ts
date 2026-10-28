@@ -221,6 +221,223 @@ const revision: RevisionSet = {
       ],
     },
   },
+  "cardiovascular-pulmonary-hypertension": {
+    checked: "2026-10",
+    updated: [
+      "ESC/ERS 2022: PH is mPAP over 20 mmHg; pre-capillary PVR over 2 WU; exercise PH slope over 3 mmHg/L/min.",
+      "ESC/ERS 2022: TAPSE/sPAP added to echo probability; 4-strata follow-up risk model; initial dual oral therapy, monotherapy if comorbid.",
+      "ESC/ERS 2022: severe PH in groups 2 and 3 defined as PVR over 5 WU; inhaled treprostinil in PH-ILD (IIb).",
+      "WSPH 2024: definitions kept; sotatercept added to the algorithm (STELLAR 2023, ZENITH and HYPERION 2025).",
+      "ESC 2025 pregnancy: PAH remains mWHO class IV.",
+    ],
+    master: {
+      heading: "Master revision table - Pulmonary hypertension and cor pulmonale",
+      columns: ["Heading", "What to write"],
+      rows: [
+        ["Definition", "**mPAP over 20 mmHg** at rest on RHC; pre-capillary = **PAWP 15 or less + PVR over 2 WU**; post-capillary PAWP over 15; cor pulmonale = RV change from lung disease."],
+        ["Burden", "1% of world, 10% over 65; **group 2 commonest**, then group 3; PAH about 50 per million; India - RHD, COPD (biomass), post-TB, CHD, altitude."],
+        ["Groups", "1 PAH, 2 left heart, 3 lung/hypoxia, 4 **CTEPH**/PA obstruction, 5 multifactorial (sickle, sarcoid, dialysis)."],
+        ["Pathophysiology", "Low **NO and prostacyclin**, high **endothelin**, BMPR2-activin imbalance; plexiform lesion; RV hypertrophy, dilatation, failure; hypoxic vasoconstriction in cor pulmonale."],
+        ["Symptoms", "Exertional dyspnoea, fatigue, **exertional syncope**, chest pain, oedema; Ortner hoarseness; diagnosis delayed over 2 years."],
+        ["Signs", "**Loud P2**, RV heave, TR louder on inspiration (Carvallo), **Graham Steell**, JVP a and v waves; clubbing means CHD/ILD/PVOD."],
+        ["First tests", "ECG (RAD, RVH, P pulmonale), X-ray (big PAs, pruning), **NT-proBNP**, spirometry, SpO2/ABG."],
+        ["Echo probability", "TRV **2.8 or less low, 2.9-3.4 intermediate, over 3.4 high**; signs: RV/LV over 1, flat septum, TAPSE/sPAP under 0.55, IVC over 21 mm."],
+        ["Confirm", "**RHC** before PAH drugs; vasoreactivity in IPAH (fall 10 to 40 or less); **V/Q scan** for CTEPH (normal excludes)."],
+        ["PAH treatment", "General: exercise, vaccines, diuretics, O2 if PO2 under 60; responders - **high-dose CCB**; others **ERA + PDE5i**; high risk triple with IV prostacyclin; **sotatercept** add-on."],
+        ["Groups 2-4", "Group 2 treat heart (PTMC, GDMT), **no PAH drugs**; group 3 O2, CPAP/NIV; CTEPH **lifelong anticoagulation, PEA**, BPA, riociguat."],
+        ["Cor pulmonale", "**LTOT 15 h/day** if PaO2 55 or less (or 55-60 with oedema/Hct over 55%); cautious diuretic; exacerbation O2 88-92%, NIV if pH under 7.35."],
+        ["Follow-up", "Every 3-6 months: WHO-FC, **6MWD, NT-proBNP**, echo - aim for low risk; monthly LFT on bosentan; pregnancy contraindicated (mWHO IV)."],
+        ["Exam traps", "Writing 25 mmHg; PDE5i with nitrate or riociguat; verapamil for vasoreactive PAH; PAH drugs in HFpEF."],
+      ],
+    },
+    flows: [
+      {
+        kind: "flow",
+        heading: "Suspected PH: from symptoms to catheter (ESC/ERS 2022)",
+        steps: [
+          { label: "Unexplained exertional dyspnoea, syncope or RV signs", detail: "Ask about heart, lung, VTE, SSc, liver, HIV, drugs" },
+          { label: "First-line tests in primary care", detail: "ECG, chest X-ray, NT-proBNP, spirometry, SpO2" },
+          { label: "Echo probability by TR velocity", detail: "2.8 or less low; 2.9-3.4 intermediate; over 3.4 high", tone: "decision" },
+          { label: "Left heart or lung disease explains it?", detail: "Treat the cause; refer if PVR likely over 5 WU", tone: "decision" },
+          { label: "Fast track if syncope, RV failure or low output", tone: "warn" },
+          { label: "PH centre: V/Q scan, HRCT, DLCO, serology", detail: "Normal V/Q excludes CTEPH" },
+          { label: "Right heart catheter", detail: "mPAP over 20, PAWP 15 or less, PVR over 2 WU = pre-capillary", tone: "good" },
+        ],
+      },
+      {
+        kind: "ladder",
+        heading: "PAH treatment ladder by risk",
+        steps: [
+          { label: "General measures for all", detail: "Exercise training, vaccines, diuretics, O2 if PO2 under 60, iron, contraception" },
+          { label: "Vasoreactive (about 10% of IPAH)", detail: "Nifedipine 120-240 mg/day or diltiazem 240-720 mg/day; never verapamil" },
+          { label: "Low/intermediate risk: ERA + PDE5i", detail: "Ambrisentan 10 mg + tadalafil 40 mg; monotherapy if comorbid" },
+          { label: "Intermediate-low on follow-up", detail: "Add selexipag or switch PDE5i to riociguat; consider sotatercept" },
+          { label: "High or intermediate-high risk", detail: "IV/SC prostacyclin (epoprostenol, treprostinil) in triple therapy", tone: "warn" },
+          { label: "Refractory - lung transplant", tone: "good" },
+        ],
+      },
+      {
+        kind: "branch",
+        heading: "Treat by WHO group",
+        root: "Pulmonary hypertension confirmed",
+        arms: [
+          { label: "Group 1 PAH", tone: "decision", steps: ["PH centre", "Risk-based combination", "CCB only if vasoreactive"] },
+          { label: "Group 2 left heart", steps: ["GDMT, BP, AF control", "Valve repair or PTMC", "No PAH drugs"] },
+          { label: "Group 3 lung/hypoxia", steps: ["Treat lung disease", "LTOT, CPAP or NIV", "Inhaled treprostinil in PH-ILD"] },
+          { label: "Group 4 CTEPH", tone: "good", steps: ["Lifelong anticoagulation", "Pulmonary endarterectomy", "BPA or riociguat if inoperable"] },
+          { label: "Group 5", steps: ["Treat underlying disease", "Individual decision"] },
+        ],
+      },
+    ],
+    notes: {
+      sections: [
+        {
+          title: "Definition and key facts",
+          points: [
+            "PH is **mPAP over 20 mmHg** at rest on right heart catheter.",
+            "**Pre-capillary PH** adds PAWP 15 or less and PVR over 2 Wood units.",
+            "**Cor pulmonale** is RV hypertrophy or failure caused by lung disease.",
+            "**Left heart disease** is the commonest cause, then lung disease.",
+            "PAH is rare: about **50 per million** adults.",
+          ],
+        },
+        {
+          title: "Causes and classification",
+          points: [
+            "**Group 1** PAH: idiopathic, BMPR2, drugs, scleroderma, HIV, portal hypertension, CHD.",
+            "**Group 2** left heart disease, including rheumatic mitral stenosis.",
+            "**Group 3** lung disease: COPD, ILD, OSA, post-TB, high altitude.",
+            "**Group 4** CTEPH follows about 2-4% of acute PE.",
+            "**Group 5** multifactorial: sickle cell, thalassaemia, sarcoidosis, dialysis.",
+          ],
+        },
+        {
+          title: "Pathophysiology",
+          points: [
+            "PAH has low **nitric oxide** and prostacyclin and high endothelin.",
+            "**Activin excess** with weak BMPR2 signalling drives vessel remodelling.",
+            "The RV hypertrophies, then dilates; **RV failure** causes death.",
+            "In lung disease, **hypoxic vasoconstriction** is the reversible element.",
+          ],
+        },
+        {
+          title: "Clinical features and examination",
+          points: [
+            "**Exertional dyspnoea** and fatigue come first; diagnosis is often delayed 2 years.",
+            "**Exertional syncope** means fixed low output and high risk.",
+            "Signs: **loud P2**, RV heave, TR murmur, raised JVP, oedema.",
+            "**Graham Steell** murmur is pulmonary regurgitation.",
+            "**Clubbing** points away from idiopathic PAH.",
+          ],
+        },
+        {
+          title: "Investigations",
+          points: [
+            "ECG: right axis, RVH, **P pulmonale**; normal ECG does not exclude PH.",
+            "Echo **TR velocity over 3.4 m/s** means high probability.",
+            "**TAPSE/sPAP under 0.55** supports PH on echo.",
+            "**V/Q scan** screens for CTEPH; a normal scan excludes it.",
+            "**Right heart catheter** is mandatory before PAH drugs.",
+            "Vasoreactive: mPAP falls **10 mmHg to 40 or less** with stable output.",
+          ],
+        },
+        {
+          title: "Treatment - first line",
+          points: [
+            "All PAH: **exercise training**, vaccines, diuretics, oxygen if PO2 under 60.",
+            "Vasoreactive PAH: **high-dose nifedipine or diltiazem**, never verapamil.",
+            "Most PAH: **ERA plus PDE5 inhibitor** from the start.",
+            "Comorbid elderly PAH: start **monotherapy**.",
+            "Group 2: treat the heart; **no PAH drugs**.",
+          ],
+        },
+        {
+          title: "Treatment - next steps",
+          points: [
+            "Intermediate-low risk: add **selexipag** or switch to riociguat.",
+            "High risk: **IV prostacyclin** and transplant referral.",
+            "**Sotatercept** is a new add-on that reduces clinical worsening.",
+            "CTEPH: **lifelong anticoagulation** and pulmonary endarterectomy.",
+            "Inoperable CTEPH: **balloon angioplasty** or riociguat.",
+          ],
+        },
+        {
+          title: "Cor pulmonale and inpatient care",
+          points: [
+            "**Oxygen 15 hours daily** improves survival if PaO2 is 55 or less.",
+            "Use diuretics gently; **alkalosis** depresses breathing.",
+            "Exacerbation: oxygen target **88-92%**, NIV if pH under 7.35.",
+            "Decompensated RV: diurese, **noradrenaline** for BP, avoid fluid boluses.",
+            "Avoid intubation if possible; it can cause **cardiac arrest**.",
+          ],
+        },
+        {
+          title: "Special groups and red flags",
+          points: [
+            "**Pregnancy in PAH** is mWHO IV; advise against it.",
+            "**Bosentan** weakens hormonal contraception; use two methods.",
+            "Screen **scleroderma** patients yearly for PAH.",
+            "Red flags: **syncope**, RV failure, new AF, haemoptysis.",
+          ],
+        },
+        {
+          title: "Referral, follow-up and latest updates",
+          points: [
+            "Review PAH **every 3-6 months** with 6-minute walk and NT-proBNP.",
+            "Aim for **low risk**: 6MWD over 440 m and NT-proBNP under 300.",
+            "Check **liver tests monthly** on bosentan.",
+            "**ESC/ERS 2022** lowered thresholds to mPAP 20 and PVR 2.",
+            "**WSPH 2024** added sotatercept to the treatment algorithm.",
+          ],
+        },
+      ],
+      tables: [
+        {
+          heading: "PAH drugs",
+          columns: ["Drug", "Dose and route", "Duration", "Key side effects / cautions"],
+          rows: [
+            ["Sildenafil", "20 mg oral TDS", "Long-term", "Headache, flushing; never with nitrates or riociguat"],
+            ["Tadalafil", "40 mg oral OD", "Long-term", "Headache, myalgia; reduce in renal impairment"],
+            ["Bosentan", "62.5 mg BD for 4 weeks, then 125 mg BD", "Long-term", "Liver toxicity (monthly LFT), teratogenic"],
+            ["Ambrisentan", "5-10 mg oral OD", "Long-term", "Oedema, anaemia; avoid in IPF"],
+            ["Riociguat", "1 mg TDS up to 2.5 mg TDS", "Long-term; CTEPH", "Hypotension; never with PDE5i"],
+            ["Selexipag", "200 mcg BD up to 1600 mcg BD", "Long-term", "Headache, diarrhoea, jaw pain"],
+            ["Sotatercept", "0.3 then 0.7 mg/kg SC every 3 weeks", "Add-on", "High Hb, low platelets, bleeding"],
+          ],
+        },
+        {
+          heading: "Haemodynamic definitions",
+          columns: ["Type", "mPAP", "PAWP", "PVR"],
+          rows: [
+            ["Pre-capillary", "Over 20", "15 or less", "Over 2 WU"],
+            ["Isolated post-capillary", "Over 20", "Over 15", "2 WU or less"],
+            ["Combined", "Over 20", "Over 15", "Over 2 WU"],
+            ["Severe (groups 2, 3)", "Over 20", "Any", "Over 5 WU"],
+          ],
+        },
+        {
+          heading: "Echo probability",
+          columns: ["TR velocity", "Other PH signs", "Probability"],
+          rows: [
+            ["2.8 m/s or less", "Absent", "Low"],
+            ["2.8 m/s or less", "Present", "Intermediate"],
+            ["2.9-3.4 m/s", "Absent", "Intermediate"],
+            ["2.9-3.4 m/s", "Present", "High"],
+            ["Over 3.4 m/s", "Not needed", "High"],
+          ],
+        },
+      ],
+      remember: [
+        "Twenty, fifteen, two: mPAP over 20, PAWP 15 or less, PVR over 2.",
+        "Echo suspects, catheter confirms.",
+        "V/Q normal means no CTEPH.",
+        "CTEPH is the curable PH.",
+        "CCB only for vasoreactive; never verapamil.",
+        "PAH targets: NO, prostacyclin, endothelin and activin.",
+        "Oxygen 15 hours is the survival drug of cor pulmonale.",
+      ],
+    },
+  },
 };
 
 export default revision;

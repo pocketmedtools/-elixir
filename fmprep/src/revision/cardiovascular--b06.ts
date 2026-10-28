@@ -1,5 +1,242 @@
 import type { RevisionSet } from "./index";
 
-const revision: RevisionSet = {};
+const revision: RevisionSet = {
+  "cardiovascular-restrictive-infiltrative": {
+    checked: "2026-10",
+    updated: [
+      "ESC 2023 cardiomyopathy guideline: phenotype-first classification and the non-biopsy ATTR algorithm",
+      "ACC 2023 Expert Consensus Decision Pathway on cardiac amyloidosis: drug cautions and AF anticoagulation regardless of score",
+      "ATTRibute-CM 2024: acoramidis added as a second TTR stabiliser (FDA 2024, EMA 2025)",
+      "HELIOS-B 2024: vutrisiran added as a TTR silencer for cardiomyopathy (FDA 2025)",
+      "ANDROMEDA 2021: daratumumab-VCd as first-line AL therapy",
+      "InterTAK 2018 criteria and ESC 2023 ACS (MINOCA working diagnosis) for Takotsubo",
+    ],
+    master: {
+      heading: "Master revision table - Restrictive and infiltrative cardiomyopathy, amyloid and Takotsubo",
+      columns: ["Heading", "What to write"],
+      rows: [
+        ["Definition", "**RCM**: restrictive filling with normal or small volumes and normal wall thickness; infiltrative disease gives **thick walls with restrictive physiology**; ESC 2023 classifies by phenotype then cause."],
+        ["Epidemiology", "ATTRwt in **13% of elderly HFpEF** and 1 in 6 TAVI patients; AL 10-12 per million/year; **EMF in Kerala**; thalassaemia major 10,000-15,000 births/year in India; Takotsubo **1-3% of suspected ACS**, 90% postmenopausal women."],
+        ["Causes", "Infiltrative (AL, ATTR, sarcoid), storage (iron, Fabry, glycogen), endomyocardial (EMF, HES, carcinoid, radiation), idiopathic or familial (TNNI3)."],
+        ["Pathophysiology", "Stiff ventricle - **dip-and-plateau**, biatrial enlargement, HR-dependent output; amyloid fibrils bind Congo red (apple-green); TTR tetramer dissociates; AL light chains toxic."],
+        ["Amyloid red flags", "**Thick walls + low voltage**, bilateral carpal tunnel, biceps rupture, lumbar stenosis, neuropathy, BP 'cured', intolerance of antihypertensives, apical sparing, AV block, raised troponin."],
+        ["Examination", "Raised JVP with y descent, **Kussmaul sign (also in RCM)**, S3, absent S4 in amyloid, orthostatic fall; macroglossia and periorbital purpura (AL); Tinel sign (ATTR)."],
+        ["Investigations", "ECG low voltage, echo wall 12 mm+, **E/A over 2, DT under 150 ms**, apical-sparing strain; **FLC + serum and urine immunofixation**; **Tc-99m PYP grade 2-3**; CMR ECV over 40%; T2* under 20 ms = iron."],
+        ["Diagnostic rule", "**No monoclonal protein + Perugini 2-3 = ATTR without biopsy**; monoclonal protein = biopsy with typing; TTR gene in all ATTR."],
+        ["Staging", "ATTR (NAC): NT-proBNP over 3000, eGFR under 45 - survival 69/47/24 months; AL (Mayo 2004): NT-proBNP 332, TnT 0.035; IIIb NT-proBNP over 8500."],
+        ["Treatment - general", "Loop diuretic to weight; **avoid verapamil and diltiazem**; low-dose or no beta-blocker/ACEi; SGLT2i and MRA reasonable; **anticoagulate AF regardless of score**; pacing, ICD, transplant."],
+        ["Treatment - specific", "**Tafamidis 61 mg daily** (ATTR-ACT); acoramidis 712 mg BD; vutrisiran 25 mg SC 3-monthly; AL - Dara-VCd; sarcoid - prednisolone 30 mg; iron - chelation; EMF - endocardiectomy."],
+        ["Takotsubo", "InterTAK 2018 criteria; ECG: no V1 STE, aVR ST depression; angiography + LV gram; **LVOTO: fluids + esmolol**; shock: levosimendan or MCS, avoid catecholamines; ACEi long term."],
+        ["Complications and prognosis", "AL IIIb survival months; cardioembolism; PEA death; Takotsubo in-hospital mortality **about 4%**, recurrence 1.8%/year; iron cardiomyopathy reversible."],
+        ["Latest updates", "ESC 2023 cardiomyopathy, ACC ECDP 2023, ATTRibute-CM 2024, HELIOS-B 2024; AHA/ACC tafamidis NYHA I-III vs ESC NYHA I-II."],
+      ],
+    },
+    flows: [
+      {
+        kind: "flow",
+        heading: "Suspected cardiac amyloidosis: the non-biopsy algorithm",
+        steps: [
+          { label: "Heart failure or LV wall 12 mm+ with a red flag", detail: "Low voltage, carpal tunnel, biceps rupture, AS, apical sparing, BP intolerance" },
+          { label: "Send all three light-chain tests", detail: "Serum free light chain ratio plus serum and urine immunofixation", tone: "decision" },
+          { label: "Bone scintigraphy with SPECT", detail: "Tc-99m PYP, DPD or HMDP - never MDP" },
+          { label: "Monoclonal protein present", detail: "Same-week haematology; biopsy with typing - AL until proved otherwise", tone: "warn" },
+          { label: "No monoclonal protein and Perugini grade 2-3", detail: "ATTR cardiomyopathy diagnosed without biopsy", tone: "good" },
+          { label: "No monoclonal protein and grade 0-1", detail: "Amyloid unlikely; CMR or EMB if suspicion persists", tone: "decision" },
+          { label: "TTR gene sequencing in every ATTR", detail: "Separates wild-type from hereditary; cascade screen relatives" },
+          { label: "Stage and treat", detail: "NAC stage (NT-proBNP 3000, eGFR 45); tafamidis 61 mg daily", tone: "good" },
+        ],
+      },
+      {
+        kind: "flow",
+        heading: "Takotsubo: from STEMI-like presentation to recovery",
+        steps: [
+          { label: "Chest pain with ST elevation after stress", detail: "Treat as STEMI: aspirin, heparin, primary PCI pathway", tone: "warn" },
+          { label: "Coronary angiography with LV ventriculogram", detail: "No culprit occlusion; ballooning beyond one territory", tone: "decision" },
+          { label: "Echo for LVOTO, MR, RV and thrombus", detail: "Basal hyperkinesis with SAM means outflow obstruction" },
+          { label: "Shock with LVOTO", detail: "IV fluids plus esmolol; stop inotropes, nitrates, diuretics", tone: "warn" },
+          { label: "Shock without LVOTO", detail: "Levosimendan or Impella/VA-ECMO; avoid catecholamines", tone: "warn" },
+          { label: "Monitor rhythm and QTc", detail: "Avoid QT-prolonging drugs; correct potassium and magnesium" },
+          { label: "CMR confirms", detail: "Oedema without significant LGE" },
+          { label: "Discharge on ACE inhibitor or ARB", detail: "Repeat imaging to confirm recovery; recurrence 1.8% per year", tone: "good" },
+        ],
+      },
+      {
+        kind: "compare",
+        heading: "Restrictive cardiomyopathy versus constrictive pericarditis",
+        columns: ["Feature", "Restrictive", "Constrictive"],
+        rows: [
+          ["Pericardium", "Normal", "Thick (4 mm+) or calcified"],
+          ["Extra sound", "S3; S4 absent in amyloid", "Pericardial knock"],
+          ["Mitral E respiratory variation", "Minimal", "Over 25%"],
+          ["Septum", "Normal motion", "Bounce and respiratory shift"],
+          ["Medial e'", "Under 6-7 cm/s", "9 cm/s or more; annulus reversus"],
+          ["BNP", "Markedly raised", "Normal or mildly raised"],
+          ["PA systolic pressure", "Often over 50 mmHg", "Usually under 50 mmHg"],
+          ["Cath", "Concordant; LVEDP-RVEDP over 5", "Discordant; diastolic pressures equal"],
+          ["Treatment", "Disease-specific, transplant", "Pericardiectomy"],
+        ],
+      },
+    ],
+    notes: {
+      sections: [
+        {
+          title: "Definition and key facts",
+          points: [
+            "**Restrictive cardiomyopathy**: stiff ventricle, restrictive filling, normal or small volumes, near-normal systolic function.",
+            "Infiltrative disease gives **thick walls but low voltage**, unlike true hypertrophy.",
+            "Commonest adult cause is **cardiac amyloidosis**; in the tropics, endomyocardial fibrosis.",
+            "**ATTRwt** is present in about 13% of elderly HFpEF with thick walls.",
+            "**Takotsubo**: transient apical ballooning after stress, mostly postmenopausal women, mimics STEMI.",
+          ],
+        },
+        {
+          title: "Causes and risk factors",
+          points: [
+            "Infiltrative: **AL and ATTR amyloid**, sarcoidosis.",
+            "Storage: **haemochromatosis**, transfusional iron in thalassaemia, Fabry disease.",
+            "Endomyocardial: **EMF (Kerala)**, hypereosinophilic syndrome, carcinoid, radiation.",
+            "ATTRwt: elderly men with **bilateral carpal tunnel** and lumbar stenosis years earlier.",
+            "Takotsubo triggers: bereavement, surgery, sepsis, asthma, stroke, phaeochromocytoma; none in a quarter.",
+          ],
+        },
+        {
+          title: "Pathophysiology",
+          points: [
+            "Stiff ventricle fills fast then stops, giving the **dip-and-plateau** pressure trace.",
+            "High filling pressure dilates **both atria**, causing AF and congestion.",
+            "Fixed small stroke volume makes output **heart-rate dependent**.",
+            "Amyloid fibrils bind **Congo red** with apple-green birefringence.",
+            "TTR tetramer splits into misfolding monomers; **stabilisers** hold it together.",
+            "Takotsubo: catecholamine surge stuns the apex, which has the most beta receptors.",
+          ],
+        },
+        {
+          title: "Clinical features",
+          points: [
+            "Breathlessness, fatigue, oedema, ascites with a **raised JVP** and normal-sized heart.",
+            "**Kussmaul sign** occurs in restriction as well as constriction.",
+            "Amyloid clue: hypertensive patient whose **BP normalises** and who cannot tolerate antihypertensives.",
+            "AL signs: **macroglossia**, periorbital purpura, nephrotic syndrome.",
+            "Sarcoid: young patient with **complete heart block** or VT.",
+            "EMF: young Keralite with **ascites out of proportion** to oedema and giant right atrium.",
+          ],
+        },
+        {
+          title: "Investigations",
+          points: [
+            "ECG **low voltage** with echo wall 12 mm or more is the key mismatch.",
+            "Echo: biatrial enlargement, **apical-sparing strain**, E/A over 2, short deceleration time.",
+            "Always send **free light chains plus serum and urine immunofixation**.",
+            "**Tc-99m PYP grade 2-3** with no monoclonal protein diagnoses ATTR without biopsy.",
+            "CMR: diffuse subendocardial LGE, **ECV over 40%**; T2* under 20 ms means iron.",
+            "TTR gene sequencing in **every** ATTR patient, whatever the age.",
+          ],
+        },
+        {
+          title: "Treatment - first line",
+          points: [
+            "**Loop diuretic** titrated to daily weight; avoid over-diuresis.",
+            "**Avoid verapamil and diltiazem**; beta-blockers and ACE inhibitors only if tolerated.",
+            "AF in amyloid: **anticoagulate regardless of CHA2DS2-VA**; amiodarone for rhythm.",
+            "SGLT2 inhibitors and MRAs are reasonable; low-dose digoxin with caution.",
+            "Pacemaker for high-grade AV block.",
+          ],
+        },
+        {
+          title: "Treatment - next steps",
+          points: [
+            "ATTR: **tafamidis 61 mg once daily**, best started in NYHA I-II.",
+            "Alternatives: **acoramidis** 712 mg twice daily or **vutrisiran** 25 mg SC every 3 months.",
+            "AL: same-week haematology for **Dara-VCd** and stem-cell transplant if eligible.",
+            "Sarcoid: **prednisolone 30 mg** daily after excluding TB, with methotrexate.",
+            "Iron: intensify chelation; **deferiprone** removes cardiac iron best.",
+            "EMF: anticoagulation, diuretics and **endocardiectomy** with valve repair.",
+          ],
+        },
+        {
+          title: "Inpatient / emergency care",
+          points: [
+            "Takotsubo: treat as **STEMI until angiography** shows no culprit lesion.",
+            "Check echo for **LVOT obstruction** before giving any inotrope.",
+            "LVOTO: **IV fluids and esmolol**; stop nitrates, diuretics and inotropes.",
+            "Shock without LVOTO: **levosimendan** or mechanical support, not catecholamines.",
+            "Monitor QTc; anticoagulate LV thrombus for about **3 months**.",
+            "Thalassaemia with T2* under 10 ms: **continuous IV deferoxamine** plus deferiprone.",
+          ],
+        },
+        {
+          title: "Complications and red flags",
+          points: [
+            "Syncope, AV block or VT in infiltrative disease: **admit**.",
+            "Any **monoclonal protein** with thick walls: same-week haematology referral.",
+            "Amyloid complications: cardioembolic stroke, AV block, sudden **PEA death**.",
+            "Takotsubo in-hospital mortality is **about 4%**; recurrence 1.8% per year.",
+            "Iron cardiomyopathy is **reversible** with intensive chelation.",
+          ],
+        },
+        {
+          title: "Latest updates",
+          points: [
+            "**ESC 2023**: phenotype-first cardiomyopathy classification and the non-biopsy ATTR pathway.",
+            "**ATTRibute-CM 2024**: acoramidis reduced cardiovascular hospitalisation and death composite.",
+            "**HELIOS-B 2024**: vutrisiran reduced death and cardiovascular events in ATTR cardiomyopathy.",
+            "AHA/ACC gives tafamidis for **NYHA I-III**; ESC recommends it for NYHA I-II.",
+            "**ESC 2023 ACS**: Takotsubo is a cause behind a MINOCA working diagnosis.",
+          ],
+        },
+      ],
+      tables: [
+        {
+          heading: "Drugs in restrictive and infiltrative cardiomyopathy and Takotsubo",
+          columns: ["Drug", "Dose and route", "Duration", "Key side effects / cautions"],
+          rows: [
+            ["Tafamidis", "61 mg (or 80 mg meglumine) oral once daily", "Lifelong", "Well tolerated; very costly; avoid in pregnancy"],
+            ["Acoramidis", "712 mg oral twice daily", "Lifelong", "Diarrhoea; small creatinine rise"],
+            ["Vutrisiran", "25 mg SC every 3 months", "Lifelong", "Low vitamin A - supplement"],
+            ["Furosemide / torsemide", "20-80 mg / 10-40 mg oral daily", "Titrate to weight", "Hypotension, AKI, low potassium"],
+            ["Apixaban", "5 mg oral twice daily", "Lifelong for AF in amyloid", "Bleeding; dose-reduce by criteria"],
+            ["Prednisolone (sarcoid)", "30 mg oral daily", "4 weeks, then slow taper over 1-2 years", "Exclude TB; diabetes, bone loss"],
+            ["Deferiprone", "75-100 mg/kg/day oral in 3 doses", "Long term", "Agranulocytosis - weekly count"],
+            ["Deferoxamine", "50-60 mg/kg/day continuous IV for cardiac iron", "Until T2* over 20 ms", "Ototoxicity, eye toxicity, Yersinia"],
+            ["Esmolol (Takotsubo LVOTO)", "500 µg/kg IV, then 50-300 µg/kg/min", "Until gradient falls", "Bradycardia, hypotension"],
+            ["Levosimendan (Takotsubo shock)", "0.05-0.2 µg/kg/min IV", "24 hours", "Hypotension, AF"],
+          ],
+        },
+        {
+          heading: "AL versus ATTR amyloidosis",
+          columns: ["Feature", "AL", "ATTRwt", "ATTRv"],
+          rows: [
+            ["Protein", "Monoclonal light chain", "Normal TTR", "Mutant TTR"],
+            ["Patient", "50-70, either sex", "Man over 70", "Family history, variable age"],
+            ["Extracardiac", "Kidney, tongue, bruising", "Carpal tunnel, spinal stenosis", "Neuropathy, autonomic failure"],
+            ["Course", "Months", "Years", "Variable"],
+            ["Scintigraphy", "Usually grade 0-1", "Grade 2-3", "Grade 2-3"],
+            ["Treatment", "Dara-VCd, stem-cell transplant", "Tafamidis, acoramidis, vutrisiran", "Same plus neuropathy drugs"],
+          ],
+        },
+        {
+          heading: "Takotsubo versus anterior STEMI versus myocarditis",
+          columns: ["Feature", "Takotsubo", "Anterior STEMI", "Myocarditis"],
+          rows: [
+            ["Patient", "Postmenopausal woman after stress", "Adult with risk factors", "Young adult after viral illness"],
+            ["ECG", "No V1 STE, aVR ST depression, long QT", "Territorial STE with reciprocal change", "Diffuse ST-T change, arrhythmia"],
+            ["Wall motion", "Apical ballooning beyond one territory", "LAD territory", "Patchy, inferolateral"],
+            ["Coronaries", "No culprit", "Occluded LAD", "Normal"],
+            ["CMR", "Oedema, no LGE", "Subendocardial LGE", "Subepicardial LGE plus oedema"],
+          ],
+        },
+      ],
+      remember: [
+        "**Thick walls, small voltage** = amyloid until proved otherwise.",
+        "**Carpal tunnel + HFpEF in an old man** = ATTRwt.",
+        "**No M-protein + PYP grade 2-3** = ATTR without biopsy.",
+        "**Never verapamil or diltiazem** in amyloid.",
+        "Constriction keeps **e' normal**; restriction lowers it.",
+        "Takotsubo = **octopus pot**; check LVOTO before any inotrope.",
+        "**T2* under 10 ms** = severe cardiac iron; deferiprone is best for the heart.",
+      ],
+    },
+  },
+};
 
 export default revision;

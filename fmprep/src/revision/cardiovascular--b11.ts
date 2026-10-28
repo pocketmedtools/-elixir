@@ -224,6 +224,221 @@ const revision: RevisionSet = {
       ],
     },
   },
+
+  "cardiovascular-pulmonary-embolism": {
+    checked: "2026-10",
+    updated: [
+      "ESC 2019 (with ERS) remains the current ESC PE guideline: four risk classes, age-adjusted D-dimer, DOACs first-line, early discharge for low risk.",
+      "CHEST 2021: reduced-dose extended DOAC; surveillance for low-risk isolated subsegmental PE.",
+      "NICE NG158 (updated 2023): apixaban or rivaroxaban first-line; outpatient care of low-risk PE using PESI or Hestia.",
+      "ESC/ERS 2022 PH: CTEPH defined at mean PAP over 20 mmHg and PVR over 2 Wood units; V/Q scan to screen.",
+      "ESC 2025 pregnancy: pregnancy-adapted YEARS pathway; therapeutic LMWH; no DOAC or warfarin in pregnancy.",
+      "PEERLESS 2024: large-bore mechanical thrombectomy reduced deterioration and ICU use versus catheter thrombolysis in intermediate-risk PE.",
+    ],
+    master: {
+      heading: "Master revision table - Pulmonary embolism",
+      columns: ["Heading", "What to write"],
+      rows: [
+        ["Definition", "Obstruction of pulmonary arteries, usually by **thrombus from leg/pelvic veins**; with DVT = VTE; third commonest acute CV syndrome; incidence 39-115/100,000/year."],
+        ["Risk factors", "Virchow triad; strong: fracture, joint replacement, major trauma, previous VTE; moderate: **cancer, OCP/HRT, postpartum**, chemotherapy, HF; weak: travel, obesity, pregnancy."],
+        ["Pathophysiology", "Raised PVR, **RV dilatation**, septal shift, low LV filling, RV ischaemia (troponin), obstructive shock; hypoxia from V/Q mismatch and PFO shunt."],
+        ["Clinical features", "Dyspnoea, pleuritic pain, haemoptysis, **syncope** (large clot); tachypnoea commonest sign; DVT signs; raised JVP, loud P2, RV heave."],
+        ["Probability and D-dimer", "**Wells over 4 = likely**; PERC (8 items) in low gestalt; YEARS (D-dimer 1000/500); **age-adjusted D-dimer = age x 10** over 50; no D-dimer if probability high."],
+        ["Imaging", "**CTPA** first-line (RV/LV 1.0+); V/Q in pregnancy/CKD; leg ultrasound confirms VTE; echo in shock (McConnell, 60/60, TAPSE under 16 mm)."],
+        ["ECG and X-ray", "Sinus tachycardia commonest; S1Q3T3, RBBB, T inversion V1-V4; X-ray: Westermark, Hampton hump, Fleischner - mainly to exclude mimics."],
+        ["Risk classes (ESC 2019)", "**High** = shock/hypotension/arrest; **intermediate-high** = sPESI 1+ with RV dysfunction AND troponin; intermediate-low = one or neither; **low** = sPESI 0."],
+        ["sPESI and Hestia", "sPESI: age over 80, cancer, heart/lung disease, HR 110+, SBP under 100, SaO2 under 90; 0 = 1% mortality; Hestia all 'no' = outpatient."],
+        ["Initial anticoagulation", "LMWH (enoxaparin 1 mg/kg 12-hourly) or **DOAC** (apixaban 10 mg twice daily 7 days then 5 mg; rivaroxaban 15 mg twice daily 21 days then 20 mg); UFH if shock, lysis, CrCl under 30."],
+        ["High-risk PE", "**UFH 80 units/kg bolus + alteplase 100 mg over 2 h** (streptokinase 1.5 MU over 2 h); fluids max 500 mL, norepinephrine; embolectomy or catheter therapy if lysis contraindicated."],
+        ["Intermediate-high", "Anticoagulate, HDU 48-72 h, **rescue lysis** on deterioration; routine lysis raised haemorrhagic stroke to 2% (PEITHO); PERT decision."],
+        ["Duration", "Minimum 3 months; provoked = stop at 3 months; **unprovoked = extended** (apixaban 2.5 mg twice daily after 6 months); APS = indefinite warfarin; cancer = while active."],
+        ["Pregnancy and follow-up", "Pregnancy-adapted YEARS, **therapeutic LMWH**, 6 weeks postpartum; review at 3-6 months; **CTEPH 2-4%** - V/Q scan, RHC mPAP over 20, PVR over 2 WU."],
+      ],
+    },
+    flows: [
+      {
+        kind: "flow",
+        heading: "Suspected PE in a stable patient: diagnostic pathway",
+        steps: [
+          { label: "Suspected PE, haemodynamically stable", detail: "Dyspnoea, pleuritic pain, tachycardia, hypoxia" },
+          { label: "Clinical probability: Wells or YEARS", detail: "PERC if gestalt under 15%: all 8 absent - stop", tone: "decision" },
+          { label: "PE unlikely: D-dimer", detail: "Cut-off 500, or age x 10 over 50; YEARS 1000 if no items" },
+          { label: "D-dimer negative: PE excluded", detail: "Look for another cause", tone: "good" },
+          { label: "PE likely or D-dimer positive: CTPA", detail: "Start LMWH while waiting; V/Q if pregnant or CKD" },
+          { label: "PE confirmed: stratify risk", detail: "sPESI, RV on CT/echo, troponin", tone: "warn" },
+        ],
+      },
+      {
+        kind: "ladder",
+        heading: "Treatment by ESC risk class",
+        steps: [
+          { label: "Low risk (sPESI 0, Hestia negative)", detail: "DOAC, early discharge within 24-48 h", tone: "good" },
+          { label: "Intermediate-low", detail: "Admit, LMWH or DOAC, ward monitoring" },
+          { label: "Intermediate-high (RV dysfunction + troponin)", detail: "LMWH/UFH, HDU 48-72 h, no routine lysis", tone: "decision" },
+          { label: "Deterioration on anticoagulation", detail: "Rescue thrombolysis or catheter-directed therapy", tone: "warn" },
+          { label: "High risk (shock or arrest)", detail: "UFH 80 U/kg + alteplase 100 mg over 2 h; embolectomy/ECMO if lysis fails", tone: "warn" },
+        ],
+      },
+      {
+        kind: "branch",
+        heading: "How long to anticoagulate after PE",
+        root: "PE treated for 3 months",
+        arms: [
+          { label: "Major transient factor", tone: "good", steps: ["Surgery, trauma, immobilisation", "Stop at 3 months", "Recurrence under 3%/year"] },
+          { label: "Unprovoked or persistent factor", tone: "decision", steps: ["Extended anticoagulation", "Apixaban 2.5 mg twice daily after 6 months", "Review bleeding yearly"] },
+          { label: "Cancer, APS or recurrent VTE", tone: "warn", steps: ["Indefinite", "Cancer: LMWH or DOAC", "APS: warfarin INR 2-3"] },
+        ],
+      },
+    ],
+    notes: {
+      sections: [
+        {
+          title: "Definition and key facts",
+          points: [
+            "**Pulmonary embolism** is blockage of pulmonary arteries, usually by clot from leg veins.",
+            "PE and DVT together form **venous thromboembolism**.",
+            "It is the **third commonest** acute cardiovascular syndrome after MI and stroke.",
+            "Early death is driven by **right ventricular failure**.",
+            "In India PE is **under-diagnosed** and hospital prophylaxis is under-used.",
+          ],
+        },
+        {
+          title: "Causes and risk factors",
+          points: [
+            "**Virchow triad**: stasis, vessel injury and hypercoagulability.",
+            "Strong factors: fracture, joint replacement, major trauma and **previous VTE**.",
+            "Moderate factors: cancer, oral contraceptives, **postpartum state**, chemotherapy and heart failure.",
+            "Thrombophilia: protein C, S and antithrombin deficiency, and **antiphospholipid syndrome**.",
+          ],
+        },
+        {
+          title: "Clinical features",
+          points: [
+            "**Dyspnoea** and pleuritic chest pain are the commonest symptoms.",
+            "**Syncope** suggests a large clot with RV failure.",
+            "**Tachypnoea** is the commonest sign; the chest is often clear.",
+            "Look for a swollen calf, raised JVP, loud P2 and RV heave.",
+            "Hypotension or cold peripheries mean **high-risk PE**.",
+          ],
+        },
+        {
+          title: "Investigations",
+          points: [
+            "Assess probability with **Wells** (over 4 = likely) or YEARS.",
+            "Low gestalt and all eight **PERC** items absent: no test needed.",
+            "D-dimer only if PE unlikely; use **age x 10** after 50.",
+            "**CTPA** is first-line imaging; V/Q in pregnancy, CKD and contrast allergy.",
+            "Commonest ECG finding is **sinus tachycardia**; S1Q3T3 is uncommon.",
+            "In shock, **bedside echo** showing RV dilatation justifies treatment.",
+          ],
+        },
+        {
+          title: "Classification that matters",
+          points: [
+            "**High risk**: shock, persistent hypotension or cardiac arrest.",
+            "**Intermediate-high**: sPESI 1 or more with RV dysfunction and raised troponin.",
+            "**Intermediate-low**: sPESI 1 or more with one or neither marker.",
+            "**Low risk**: sPESI 0, normal RV and troponin; treat at home.",
+            "Clot size does not define risk; **haemodynamics** do.",
+          ],
+        },
+        {
+          title: "Treatment - first line",
+          points: [
+            "Start **LMWH** while awaiting imaging if probability is high.",
+            "Prefer a **DOAC**: apixaban 10 mg twice daily for 7 days, then 5 mg.",
+            "Rivaroxaban: **15 mg twice daily** for 21 days, then 20 mg daily.",
+            "Use **UFH** in shock, before lysis or with creatinine clearance under 30.",
+            "Low-risk patients can go home within **24-48 hours**.",
+          ],
+        },
+        {
+          title: "Inpatient / emergency care",
+          points: [
+            "High-risk PE: **UFH bolus** then alteplase 100 mg over 2 hours.",
+            "Streptokinase alternative: **1.5 million IU** over 2 hours.",
+            "Give no more than **500 mL** fluid; use norepinephrine for hypotension.",
+            "If lysis is contraindicated, use **surgical embolectomy** or catheter therapy.",
+            "Intermediate-high: anticoagulate, monitor in HDU, **rescue lysis** only on deterioration.",
+            "In PE cardiac arrest, continue CPR **60-90 minutes** after lysis.",
+          ],
+        },
+        {
+          title: "Treatment - next steps",
+          points: [
+            "Every patient gets at least **3 months** of anticoagulation.",
+            "Provoked by surgery or trauma: **stop at 3 months**.",
+            "Unprovoked: consider **extended** therapy with apixaban 2.5 mg twice daily.",
+            "Antiphospholipid syndrome needs **lifelong warfarin**, not a DOAC.",
+            "Cancer: LMWH or DOAC for at least **6 months**, while cancer is active.",
+          ],
+        },
+        {
+          title: "Special groups",
+          points: [
+            "Pregnancy: use the **pregnancy-adapted YEARS** pathway.",
+            "Treat pregnancy PE with **therapeutic LMWH**; no warfarin or DOAC.",
+            "Continue until at least **6 weeks postpartum** and 3 months in total.",
+            "Elderly: use age-adjusted D-dimer; do not withhold treatment for age.",
+          ],
+        },
+        {
+          title: "Referral and follow-up",
+          points: [
+            "Review at **3-6 months** to decide stopping or extending treatment.",
+            "Up to half of survivors have persistent breathlessness.",
+            "**CTEPH** affects 2-4%; screen with echo and V/Q scan.",
+            "Give **enoxaparin 40 mg** daily prophylaxis to at-risk inpatients (Padua 4 or more).",
+          ],
+        },
+      ],
+      tables: [
+        {
+          heading: "Drugs in pulmonary embolism",
+          columns: ["Drug", "Dose and route", "Duration", "Key side effects / cautions"],
+          rows: [
+            ["Enoxaparin", "1 mg/kg SC 12-hourly", "Initial; whole pregnancy", "Bleeding; adjust if CrCl under 30"],
+            ["Unfractionated heparin", "80 units/kg IV bolus, then 18 units/kg/h", "Until stable or after lysis", "HIT, bleeding; aPTT 1.5-2.5 x"],
+            ["Apixaban", "10 mg twice daily 7 days, then 5 mg twice daily", "3 months or extended (2.5 mg)", "Bleeding; not in pregnancy or APS"],
+            ["Rivaroxaban", "15 mg twice daily 21 days, then 20 mg daily", "3 months or extended (10 mg)", "Take with food; not if CrCl under 30"],
+            ["Warfarin", "Start 5 mg; INR 2-3", "Overlap LMWH 5+ days; APS lifelong", "Bleeding, interactions; teratogenic"],
+            ["Alteplase", "100 mg IV over 2 hours", "Single course", "Intracranial bleeding"],
+            ["Streptokinase", "1.5 million IU IV over 2 hours", "Single course", "Hypotension, allergy; stop UFH"],
+          ],
+        },
+        {
+          heading: "ESC 2019 risk classes",
+          columns: ["Class", "Defining features", "Management"],
+          rows: [
+            ["High", "Shock, hypotension or arrest", "UFH plus thrombolysis"],
+            ["Intermediate-high", "sPESI 1+, RV dysfunction and troponin", "Anticoagulate, HDU, rescue lysis"],
+            ["Intermediate-low", "sPESI 1+, one or neither marker", "Admit, anticoagulate"],
+            ["Low", "sPESI 0, normal RV and troponin", "Home on DOAC"],
+          ],
+        },
+        {
+          heading: "Clinical decision rules",
+          columns: ["Rule", "Key items", "Use"],
+          rows: [
+            ["Wells", "DVT signs 3, PE most likely 3, HR over 100, surgery, prior VTE, haemoptysis, cancer", "Over 4 = CTPA"],
+            ["PERC", "Age 50+, HR 100+, SpO2 under 95%, leg swelling, haemoptysis, surgery, prior VTE, hormones", "All absent = no test"],
+            ["YEARS", "DVT signs, haemoptysis, PE most likely", "D-dimer 1000 if none, 500 if any"],
+            ["sPESI", "Age over 80, cancer, heart/lung disease, HR 110+, SBP under 100, SaO2 under 90%", "0 = low risk"],
+          ],
+        },
+      ],
+      remember: [
+        "PERC = HAD CLOTS.",
+        "Age-adjusted D-dimer = age x 10.",
+        "Risk is haemodynamic, not clot size.",
+        "Intermediate-high = RV dysfunction plus troponin; keep lysis for rescue.",
+        "Alteplase 100 mg over 2 hours.",
+        "Fluids under 500 mL; norepinephrine first.",
+        "Provoked 3 months; unprovoked extended; APS warfarin.",
+        "Breathless 3 months after PE: think CTEPH, do V/Q.",
+      ],
+    },
+  },
 };
 
 export default revision;

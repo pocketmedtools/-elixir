@@ -225,4 +225,217 @@ revision["cardiovascular-stemi-reperfusion"] = {
   },
 };
 
+revision["cardiovascular-nste-acs"] = {
+  checked: "2026-10",
+  updated: [
+    "ESC 2023 ACS: early invasive within 24 h downgraded to IIa, 72-hour category removed, no routine P2Y12 pretreatment, prasugrel preferred for PCI, MINOCA pathway with CMR Class I",
+    "ACC/AHA 2025 ACS: GRACE over 140 early invasive 2a, invasive in older adults reasonable, ticagrelor monotherapy after 1 month, non-statin at LDL 70 (1) or 55-69 (2a)",
+    "SENIOR-RITA (2024): invasive strategy at 75+ reduces non-fatal MI, not cardiovascular death",
+    "ESC 2023 0/1-hour and 0/2-hour hs-troponin algorithms with assay-specific cut-offs",
+  ],
+  master: {
+    heading: "Master revision table - NSTE-ACS",
+    columns: ["Heading", "What to write"],
+    rows: [
+      ["Definition", "Acute ischaemia **without persistent ST elevation**; **NSTEMI** = dynamic troponin above 99th percentile; **unstable angina** = no troponin rise."],
+      ["Epidemiology", "Outnumbers STEMI in the West; **CREATE India about 39% of ACS**, 30-day mortality 3.7%; older, diabetic, CKD; long-term mortality equals STEMI."],
+      ["Pathophysiology", "Platelet-rich **non-occlusive white thrombus**, microembolisation, subendocardial ischaemia; **no role for fibrinolysis**."],
+      ["MI types (UDMI-4)", "1 atherothrombotic, **2 supply-demand**, 3 sudden death, 4a PCI (5x URL), 4b stent thrombosis, 4c restenosis, 5 CABG (10x URL)."],
+      ["ECG", "ST depression, T inversion, transient ST elevation, **Wellens** (critical LAD), aVR elevation with diffuse depression; may be normal - repeat."],
+      ["hs-troponin 0/1 h", "Rule out: very low 0 h (pain over 3 h) or low with small delta; rule in: high 0 h or large delta; **hs-cTnT under 5 / 52 ng/L**; observe zone repeat at 3 h."],
+      ["Risk scores", "**GRACE over 140 high**; TIMI 7 items; HEART 0-3 low; bleeding: ARC-HBR, PRECISE-DAPT, CRUSADE."],
+      ["Timing of angiography", "**Very high: under 2 h** (shock, refractory pain, arrhythmia, mechanical, acute HF, intermittent STE); **high: under 24 h** (NSTEMI, dynamic ST, GRACE over 140); else selective."],
+      ["Antiplatelets", "Aspirin 150-300 mg then 75-100; **ticagrelor 180/90 bd or prasugrel 60/10** (after anatomy); clopidogrel with OAC; no routine pretreatment."],
+      ["Anticoagulants", "**Fondaparinux 2.5 mg SC** if no early angiography (UFH bolus at PCI), enoxaparin 1 mg/kg bd, UFH; stop after PCI."],
+      ["Anti-ischaemic", "Nitrates (not with PDE5i, SBP under 90), oral beta-blocker within 24 h if no HF, **CCB for spasm**, oxygen if SpO2 under 90%."],
+      ["MINOCA and type 2 MI", "MINOCA: **CMR Class I**, treat cause (CCB for spasm, conservative SCAD); type 2: **fix trigger, no routine DAPT**."],
+      ["Special groups", "Elderly invasive reasonable with dose care; CKD adjust enoxaparin, fondaparinux off under 20; AF: short triple then DOAC + clopidogrel."],
+      ["Latest updates", "ESC 2023 early invasive IIa; **ACC/AHA 2025** ticagrelor monotherapy after 1 month; SENIOR-RITA 2024."],
+    ],
+  },
+  flows: [
+    {
+      kind: "flow",
+      heading: "ESC 0/1-hour hs-troponin algorithm",
+      steps: [
+        { label: "Suspected NSTE-ACS, no ST elevation", detail: "ECG within 10 min; hs-troponin at 0 h" },
+        { label: "Very high-risk features?", detail: "Shock, refractory pain, VT/VF, acute HF", tone: "warn" },
+        { label: "0 h very low and pain over 3 h?", detail: "hs-cTnT under 5 ng/L", tone: "decision" },
+        { label: "Repeat at 1 hour", detail: "Low 0 h with small delta rules out" },
+        { label: "High 0 h or large delta - rule in NSTEMI", detail: "hs-cTnT 52 or more, or delta 5 or more", tone: "warn" },
+        { label: "Neither - observe zone", detail: "Repeat at 3 h, echo, consider CTCA", tone: "decision" },
+        { label: "Ruled out - outpatient evaluation", detail: "NPV over 99%", tone: "good" },
+      ],
+    },
+    {
+      kind: "ladder",
+      heading: "Timing of invasive strategy by risk",
+      steps: [
+        { label: "Not high risk: selective invasive", detail: "Stress imaging or CTCA; angiography if ischaemia", tone: "good" },
+        { label: "High risk: angiography within 24 hours", detail: "Confirmed NSTEMI, dynamic ST/T, transient STE, GRACE over 140" },
+        { label: "Very high risk: angiography within 2 hours", detail: "Shock, refractory pain, arrhythmia, mechanical, acute HF, intermittent STE", tone: "warn" },
+      ],
+    },
+    {
+      kind: "branch",
+      heading: "Troponin rise: what kind is it?",
+      root: "Troponin above 99th percentile",
+      arms: [
+        { label: "Rise or fall plus ischaemia, thrombus", tone: "warn", steps: ["Type 1 MI", "DAPT, anticoagulant", "Angiography by risk"] },
+        { label: "Rise or fall plus clear trigger", tone: "decision", steps: ["Type 2 MI", "Anaemia, tachycardia, hypotension, hypoxia", "Treat trigger, no routine DAPT"] },
+        { label: "Rise without ischaemia", tone: "neutral", steps: ["Acute non-ischaemic injury", "Myocarditis, PE, sepsis"] },
+        { label: "Stable raised value, no delta", tone: "good", steps: ["Chronic injury", "CKD, heart failure"] },
+      ],
+    },
+  ],
+  notes: {
+    sections: [
+      {
+        title: "Definition and key facts",
+        points: [
+          "**NSTE-ACS** is acute ischaemia without persistent ST elevation.",
+          "**NSTEMI** has a rising or falling troponin; **unstable angina** has none.",
+          "In India about **4 in 10 ACS** are NSTE-ACS (CREATE).",
+          "Patients are older and more diabetic; long-term mortality equals STEMI.",
+          "**Fibrinolysis is never given** in NSTE-ACS.",
+        ],
+      },
+      {
+        title: "Causes and pathophysiology",
+        points: [
+          "**Type 1**: plaque rupture with a platelet-rich, partly occlusive thrombus.",
+          "**Type 2**: supply-demand mismatch from anaemia, fast AF, hypotension or hypoxia.",
+          "Non-ischaemic injury: myocarditis, PE, sepsis, CKD, heart failure.",
+          "About a quarter of NSTEMI have an **occluded artery**, often circumflex.",
+          "SCAD causes ACS in **young women**, especially around pregnancy.",
+        ],
+      },
+      {
+        title: "Clinical features",
+        points: [
+          "Rest, **new-onset** or **crescendo** angina over 20 minutes.",
+          "Atypical in elderly, women, diabetics and CKD: breathlessness or epigastric pain.",
+          "Examination is often normal; look for heart failure, new murmur and precipitants.",
+          "Ask about **sildenafil or tadalafil** before giving nitrates.",
+        ],
+      },
+      {
+        title: "Investigations",
+        points: [
+          "ECG within **10 minutes**; repeat during pain; a normal ECG does not exclude ACS.",
+          "**Wellens T waves** mean critical LAD stenosis; avoid stress testing.",
+          "**0/1-hour hs-troponin**: rule out, rule in or observe; cut-offs are assay-specific.",
+          "Roche hs-cTnT: under **5** rules out if pain over 3 hours; **52** or more rules in.",
+          "Point-of-care troponin: repeat at **3-6 hours**; one early negative is not enough.",
+          "Echo for all; CTCA when troponin and ECG are non-diagnostic.",
+        ],
+      },
+      {
+        title: "Classification that matters",
+        points: [
+          "**GRACE over 140** means high risk.",
+          "**Very high risk**: shock, refractory pain, VT or VF, mechanical complication, acute HF, intermittent ST elevation.",
+          "Very high risk: angiography **within 2 hours**.",
+          "High risk (confirmed NSTEMI, dynamic ST, GRACE over 140): **within 24 hours**.",
+          "Others: **selective** invasive after non-invasive testing.",
+        ],
+      },
+      {
+        title: "Treatment - first line",
+        points: [
+          "**Aspirin 150-300 mg** chewed, then 75-100 mg daily.",
+          "**Ticagrelor 180 mg** then 90 mg twice daily, or **prasugrel 60 mg** after anatomy known.",
+          "No routine P2Y12 **pretreatment** if angiography is within 24 hours.",
+          "**Fondaparinux 2.5 mg SC** daily if angiography is delayed; add UFH bolus at PCI.",
+          "Nitrates for pain, beta-blocker within 24 hours if no heart failure, **atorvastatin 80 mg**.",
+          "Oxygen only if SpO2 is **under 90%**.",
+        ],
+      },
+      {
+        title: "Treatment - next steps",
+        points: [
+          "PCI for most; **CABG** for left main or diabetic multivessel disease.",
+          "Stop parenteral anticoagulant **after PCI** unless another indication exists.",
+          "Default **DAPT 12 months**; ACC/AHA 2025 allows ticagrelor alone after 1 month.",
+          "PPI for patients on DAPT with high GI bleeding risk.",
+          "Discharge with statin, ACE inhibitor, rehab referral; review at **1-2 weeks**.",
+        ],
+      },
+      {
+        title: "Special groups",
+        points: [
+          "**MINOCA**: no 50% stenosis; cardiac MRI finds myocarditis, Takotsubo or true MI.",
+          "Coronary spasm: use **calcium-channel blockers**, avoid beta-blockers.",
+          "**Type 2 MI**: treat the trigger; no routine DAPT or heparin.",
+          "**Elderly**: invasive care still helps; avoid prasugrel 10 mg, reduce enoxaparin.",
+          "**CKD**: enoxaparin once daily under eGFR 30; avoid fondaparinux under 20.",
+        ],
+      },
+      {
+        title: "Complications and red flags",
+        points: [
+          "Refractory pain or shock means **immediate angiography**.",
+          "**Bleeding** raises mortality; use radial access, right doses and PPI.",
+          "Watch for arrhythmia, heart failure and contrast kidney injury.",
+          "Refer every confirmed NSTEMI to a **PCI-capable centre**.",
+        ],
+      },
+      {
+        title: "Latest updates",
+        points: [
+          "**ESC 2023**: early invasive within 24 hours is now IIa, not I.",
+          "ESC 2023 removed the **72-hour** intermediate-risk window.",
+          "**ACC/AHA 2025**: ticagrelor monotherapy after 1 month of DAPT is Class 1.",
+          "ACC/AHA 2025: add non-statin if LDL stays **70 mg/dL** or more.",
+          "**SENIOR-RITA 2024**: invasive care at 75+ reduces non-fatal MI.",
+        ],
+      },
+    ],
+    tables: [
+      {
+        heading: "Drugs in NSTE-ACS",
+        columns: ["Drug", "Dose and route", "Duration", "Key side effects / cautions"],
+        rows: [
+          ["Aspirin", "150-300 mg chewed, then 75-100 mg daily", "Lifelong", "GI bleed"],
+          ["Ticagrelor", "180 mg, then 90 mg twice daily", "12 months (or monotherapy after 1 month)", "Dyspnoea, bleeding"],
+          ["Prasugrel", "60 mg, then 10 mg daily (5 mg if 75+ or under 60 kg)", "12 months", "Not after stroke or TIA"],
+          ["Clopidogrel", "300-600 mg, then 75 mg daily", "12 months; choice with OAC", "Variable response"],
+          ["Fondaparinux", "2.5 mg SC daily", "Up to 8 days", "UFH bolus at PCI; avoid eGFR under 20"],
+          ["Enoxaparin", "1 mg/kg SC 12-hourly", "Up to 8 days or PCI", "Once daily if eGFR under 30"],
+          ["Nitroglycerin", "0.4 mg SL x 3; IV 5-10 microgram/min", "Symptomatic", "Hypotension; no PDE5 inhibitors"],
+          ["Atorvastatin", "80 mg daily", "Lifelong", "Myalgia"],
+        ],
+      },
+      {
+        heading: "Risk groups and timing of angiography (ESC 2023)",
+        columns: ["Group", "Features", "Timing"],
+        rows: [
+          ["Very high", "Shock, refractory pain, VT/VF, mechanical complication, acute HF, intermittent STE", "Under 2 hours"],
+          ["High", "Confirmed NSTEMI, dynamic ST/T, transient STE, GRACE over 140", "Under 24 hours"],
+          ["Not high", "None of these", "Selective, after non-invasive test"],
+        ],
+      },
+      {
+        heading: "Type 1 versus type 2 MI",
+        columns: ["Feature", "Type 1", "Type 2"],
+        rows: [
+          ["Mechanism", "Plaque rupture with thrombus", "Supply-demand mismatch"],
+          ["Setting", "Typical ACS", "Sepsis, bleeding, fast AF, surgery"],
+          ["Treatment", "DAPT, anticoagulant, angiography", "Correct the trigger"],
+          ["Prognosis", "Depends on LV function", "Worse, due to comorbidity"],
+        ],
+      },
+    ],
+    remember: [
+      "**Troponin is about the delta**, not the single number.",
+      "**0/1-hour single-sample rule-out** needs pain onset over 3 hours earlier.",
+      "**SHARP-E** very high risk: Shock, Heart failure, Arrhythmia, Refractory pain, Papillary or mechanical, Elevation that comes and goes.",
+      "**GRACE over 140** means angiography within 24 hours.",
+      "**Fondaparinux plus UFH at PCI** - the OASIS-5 lesson.",
+      "**Type 2 MI: fix the trigger, not the platelets.**",
+      "**No lysis for NSTE-ACS.**",
+    ],
+  },
+};
+
 export default revision;
