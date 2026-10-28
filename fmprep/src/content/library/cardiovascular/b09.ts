@@ -726,19 +726,11 @@ topics.push({
       ],
     },
     {
-      heading: "Complications and prognosis",
+      heading: "Complications, prognosis, referral and follow-up",
       points: [
         "**RV failure** is the usual cause of death; others are **sudden death**, haemoptysis, PA dissection and **left main compression** by a dilated PA. [ESC/ERS 2022 PH]",
         "**Atrial flutter and AF** are poorly tolerated and precipitate decompensation - aim for sinus rhythm. [ESC/ERS 2022 PH]",
         "**Untreated IPAH** had a median survival of about **2.8 years** in the NIH registry; modern combination therapy has substantially improved survival, with low-risk patients having a one-year mortality under 5%. [Harrison 22e]",
-        "**Group 2 and 3 PH** are markers of worse outcome in heart failure, COPD and ILD; combined pre- and post-capillary PH carries the poorest outlook in group 2. [ESC/ERS 2022 PH]",
-        "**CTEPH after successful endarterectomy** often has near-normal haemodynamics and good long-term survival; residual PH occurs in a minority. [ESC/ERS 2022 PH]",
-        "**Cor pulmonale in COPD**: the appearance of oedema and hypoxaemia predicts poor survival, which **long-term oxygen** improves (NOTT, MRC trials). [GOLD 2025]",
-      ],
-    },
-    {
-      heading: "Referral, follow-up and monitoring",
-      points: [
         "**Refer to a PH centre** any patient with intermediate or high echo probability **without** obvious left heart or lung disease, any suspected PAH or CTEPH, and severe PH in group 2 or 3. [ESC/ERS 2022 PH]",
         "**Fast-track (immediate) referral**: rapidly progressive symptoms, **syncope, signs of RV failure, low cardiac output** or arrhythmia. [ESC/ERS 2022 PH]",
         "**After acute PE**, review at **3-6 months**; persistent dyspnoea or functional limitation needs **echo and V/Q scan** to detect CTEPH or chronic thromboembolic pulmonary disease. [ESC/ERS 2022 PH]",

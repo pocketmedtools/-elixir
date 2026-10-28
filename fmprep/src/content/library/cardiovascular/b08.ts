@@ -1263,30 +1263,18 @@ topics.push({
       ],
     },
     {
-      heading: "Empirical antibiotic therapy",
+      heading: "Antibiotic therapy: empirical and definitive",
       points: [
-        "**Start empirical therapy after cultures** in acutely ill patients; stable patients with subacute illness can wait for culture results. [ESC 2023 IE]",
-        "**Community-acquired native valve IE or late PVE**: **ampicillin 12 g/day IV in 4-6 doses plus ceftriaxone 4 g/day IV in 2 doses**, or ampicillin plus **cloxacillin 12 g/day IV in 4-6 doses** plus **gentamicin 3 mg/kg/day IV once daily**. [ESC 2023 IE]",
+        "**Start after cultures** - **community-acquired native valve IE or late PVE**: **ampicillin 12 g/day IV in 4-6 doses plus ceftriaxone 4 g/day IV in 2 doses**, or ampicillin plus **cloxacillin 12 g/day IV in 4-6 doses** plus **gentamicin 3 mg/kg/day IV once daily**. [ESC 2023 IE]",
         "**Penicillin allergy (community)**: **vancomycin 30 mg/kg/day IV in 2 doses** (with cefazolin or gentamicin per local guidance). [ESC 2023 IE]",
         "**Early PVE (within 1 year) or healthcare-associated IE**: **vancomycin 30 mg/kg/day IV in 2 doses** (or daptomycin 10 mg/kg/day) plus **gentamicin 3 mg/kg/day** plus **rifampicin 900-1200 mg/day** in 2-3 doses, starting rifampicin 3-5 days later. [ESC 2023 IE]",
-        "Add gram-negative cover when nosocomial gram-negative infection is likely, following the local antibiogram. [ESC 2023 IE]",
-        "**Therapeutic monitoring**: vancomycin trough 15-20 mg/L (or AUC-guided), gentamicin trough under 1 mg/L, creatinine twice weekly and audiometry on prolonged aminoglycoside. [ESC 2023 IE]",
-        "**Narrow to definitive therapy** as soon as the organism and its MIC are known. [ESC 2023 IE]",
-      ],
-    },
-    {
-      heading: "Definitive antibiotic regimens by organism",
-      points: [
         "**Penicillin-susceptible oral streptococci and S. gallolyticus (MIC 0.125 mg/L or less)**: **penicillin G 12-18 million units/day IV** in 4-6 doses, or amoxicillin 100-200 mg/kg/day IV, or **ceftriaxone 2 g IV once daily** - **4 weeks** native, **6 weeks** prosthetic. [ESC 2023 IE]",
         "**Two-week regimen** for uncomplicated native valve streptococcal IE with normal renal function: penicillin, amoxicillin or ceftriaxone **plus gentamicin 3 mg/kg/day** for 2 weeks. [ESC 2023 IE]",
-        "**Relatively resistant streptococci (MIC over 0.125 to 2 mg/L)**: higher-dose penicillin or amoxicillin, or ceftriaxone, for 4 weeks (6 for PVE) **plus gentamicin for the first 2 weeks**. [ESC 2023 IE]",
         "**MSSA native valve**: **cloxacillin 12 g/day IV in 4-6 doses** (or cefazolin 6 g/day in 3 doses) for **4-6 weeks**; gentamicin is no longer added (nephrotoxicity without benefit). [ESC 2023 IE]",
         "**MRSA or penicillin allergy**: **vancomycin 30-60 mg/kg/day IV in 2-3 doses** or **daptomycin 10 mg/kg/day IV once daily** for 4-6 weeks. [ESC 2023 IE]",
         "**Staphylococcal PVE**: cloxacillin (MSSA) or vancomycin (MRSA) for **6 weeks or more**, plus **rifampicin 900 mg/day** for 6 weeks or more, plus **gentamicin for 2 weeks**. [ESC 2023 IE]",
         "**Enterococcus faecalis**: **amoxicillin 200 mg/kg/day IV plus ceftriaxone 4 g/day IV (2 g 12-hourly) for 6 weeks** - preferred, effective against high-level aminoglycoside resistance and kinder to kidneys; amoxicillin plus gentamicin for 2 weeks is the alternative. [ESC 2023 IE]",
         "**HACEK**: **ceftriaxone 2 g/day IV** for 4 weeks (native) or 6 weeks (prosthetic). [ESC 2023 IE]",
-        "**Candida IE**: **liposomal amphotericin B 3-5 mg/kg/day** with or without flucytosine, or a high-dose echinocandin, plus surgery, then long-term oral fluconazole suppression. [ESC 2023 IE]",
-        "**Counting duration**: from the first day of effective therapy with negative cultures, or restart from the day of surgery if the excised valve culture is positive. [ESC 2023 IE]",
       ],
     },
     {
@@ -1300,6 +1288,7 @@ topics.push({
         "**POET switch criteria**: afebrile, falling CRP and WBC, negative cultures, no abscess on TOE and no need for surgery; examples include **amoxicillin 1 g four times daily plus moxifloxacin 400 mg daily** for streptococci. [ESC 2023 IE]",
         "**OPAT** (outpatient parenteral therapy) suits stable patients after the **first 2 weeks**, with no heart failure, no surgical indication, reliable IV access, home support and close review - **ceftriaxone 2 g once daily** is the classic OPAT drug in India. [ESC 2023 IE]",
         "**OPAT monitoring**: weekly clinical review, CBC, creatinine and CRP, a plan for any new symptom, and a named team to call. [ESC 2023 IE]",
+        "**Counting duration**: from the first day of effective therapy with negative cultures, or restart from the day of surgery if the excised valve culture is positive. [ESC 2023 IE]",
       ],
     },
     {
@@ -1330,25 +1319,17 @@ topics.push({
       ],
     },
     {
-      heading: "Complications and prognosis",
+      heading: "Complications, prognosis, referral and follow-up",
       points: [
         "**Heart failure** is the commonest complication and the main reason for surgery, especially with aortic involvement. [ESC 2023 IE]",
         "**Embolic events** occur in about 20-50% of patients - brain and spleen most often in left-sided IE, lungs in right-sided IE. [ESC 2023 IE]",
         "**Neurological complications** (ischaemic stroke, haemorrhage, abscess, meningitis, mycotic aneurysm) occur in about 15-30% and drive mortality. [ESC 2023 IE]",
         "**Perivalvular extension** (abscess, fistula, heart block) is commoner in aortic and prosthetic IE and usually needs surgery. [ESC 2023 IE]",
-        "**Renal**: immune-complex glomerulonephritis, infarction and drug toxicity (aminoglycosides, vancomycin) cause AKI. [Harrison 22e]",
         "**Prognosis**: in-hospital mortality is about **15-30%**; worse with S. aureus, fungi, prosthetic valves, heart failure, stroke, diabetes and old age. [ESC 2023 IE]",
-        "**Recurrence**: relapse or reinfection occurs in a minority, mostly in drug users, dialysis patients and those with prosthetic valves. [ESC 2023 IE]",
-      ],
-    },
-    {
-      heading: "Referral, follow-up and monitoring",
-      points: [
         "**Refer same day**: any patient with fever and a prosthetic valve, device or known valve disease, or with S. aureus bacteraemia. [ESC 2023 IE]",
         "**During treatment**: daily temperature, blood cultures every 24-48 hours until negative, weekly CRP and CBC, twice-weekly creatinine and electrolytes, drug levels and ECG for PR interval. [ESC 2023 IE]",
         "**At the end of therapy**: TTE as a new baseline for valve and ventricular function, and dental review to clear residual foci. [ESC 2023 IE]",
         "**After discharge**: review at 1, 3, 6 and 12 months; teach the patient to report fever and to have blood cultures before any antibiotic. [ESC 2023 IE]",
-        "**Late valve surgery** may still be needed for residual regurgitation causing symptoms or LV dilatation. [ESC 2023 IE]",
         "**Lifelong prophylaxis status**: everyone who has had IE is in the **highest-risk group** for future dental procedures. [ESC 2023 IE]",
       ],
     },
