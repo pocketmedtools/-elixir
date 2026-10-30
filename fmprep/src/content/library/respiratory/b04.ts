@@ -196,7 +196,7 @@ topics.push({
       ],
     },
     {
-      heading: "Referral, follow-up and monitoring",
+      heading: "Referral, follow-up, prevention and counselling",
       points: [
         "**Refer to a chest physician** for confirmation of diagnosis, aetiology work-up, frequent exacerbations (3 or more a year), chronic Pseudomonas, MRSA, NTM, haemoptysis, or decline in lung function. [BTS 2019]",
         "**Mild disease**: review yearly in primary care; **moderate-severe**: every 3-6 months in specialist care. [BTS 2019]",
@@ -204,17 +204,10 @@ topics.push({
         "On macrolides: **ECG and audiology if symptomatic**, liver function, and **sputum for NTM every 6-12 months**; review benefit after 6-12 months. [BTS 2019]",
         "Refer for **surgical resection** if disease is **localised** with uncontrolled symptoms or recurrent haemoptysis despite best medical care. [BTS 2019]",
         "Refer for **lung transplant assessment** at FEV1 under 30% predicted with rapid decline, hypoxaemia, hypercapnia or pulmonary hypertension. [ISHLT 2021]",
-      ],
-    },
-    {
-      heading: "Prevention and counselling",
-      points: [
         "**Prevent the commonest Indian cause**: early TB diagnosis, full ATT adherence and **post-TB follow-up** under NTEP to detect post-TB lung disease. [NTEP 2023]",
         "**Childhood immunisation** (measles-rubella, pertussis under UIP, PCV) prevents post-infective bronchiectasis. [UIP 2024]",
         "**Teach airway clearance** as a daily habit like brushing teeth; review technique at every visit. [BTS 2019]",
         "**Smoking cessation** and reducing **biomass smoke** (LPG under Ujjwala) reduce exacerbations. [NP-NCD 2023]",
-        "Explain that cough and sputum will not disappear, that the goal is **fewer exacerbations**, and to send sputum early when it changes colour or volume. [BTS 2019]",
-        "**Genetic counselling** for PCD and CF families, and fertility advice for men with PCD or CF. [ERS PCD 2017]",
       ],
     },
     {
