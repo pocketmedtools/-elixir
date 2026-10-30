@@ -1,5 +1,6 @@
 import type { RevisionSet } from "./index";
 
-const revision: RevisionSet = {};
+const revision: RevisionSet = {
+};
 
 export default revision;
