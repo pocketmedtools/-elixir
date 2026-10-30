@@ -932,4 +932,911 @@ topics.push({
   ],
 });
 
+topics.push({
+  id: "respiratory-tb-special-situations",
+  title: "TB in special situations: HIV, diabetes, pregnancy, liver and kidney disease, and ATT adverse effects",
+  frequency: "core",
+  oneLiner:
+    "TB in **special situations** needs the standard **2HRZE/4HRE** backbone adjusted for the host: **ART within 2 weeks** with rifampicin-compatible drugs (**dolutegravir 50 mg twice daily**) and **cotrimoxazole** in HIV, **bidirectional TB-diabetes screening**, unchanged first-line drugs in **pregnancy**, **thrice-weekly pyrazinamide and ethambutol** in renal failure, stepwise **reintroduction after drug-induced liver injury**, and **nutritional support** (Ni-kshay Poshan Yojana, RATIONS trial) for the undernourished.",
+  keywords: [
+    "HIV-TB",
+    "TB-DM",
+    "bidirectional screening",
+    "ART timing",
+    "dolutegravir",
+    "rifabutin",
+    "cotrimoxazole prophylaxis",
+    "IRIS",
+    "DILI",
+    "drug-induced hepatitis",
+    "rechallenge",
+    "TB in pregnancy",
+    "renal dosing",
+    "Ni-kshay Poshan Yojana",
+    "RATIONS trial",
+    "Ni-kshay Mitra",
+    "pyridoxine",
+    "ATT adverse effects",
+  ],
+  sections: [
+    {
+      heading: "Why special situations matter: burden and risk factors",
+      points: [
+        "India has the **world's largest TB burden**, about a quarter of global cases; **undernutrition is the largest population-attributable risk factor** for TB in India, ahead of alcohol, smoking, diabetes and HIV. [WHO Global TB Report 2024]",
+        "**HIV** raises the risk of TB about **18-fold**, and TB is the **leading cause of death in people with HIV**. [WHO 2024]",
+        "**Diabetes triples the risk of TB**, worsens outcomes (delayed culture conversion, failure, relapse, death), and TB worsens glycaemic control. [Harrison 22e]",
+        "Indian studies show **diabetes in roughly 15-25% of people with TB**, many undiagnosed until TB screening. [NTEP-NPNCD Framework 2017]",
+        "**Pregnancy and the postpartum period** raise TB risk and TB in pregnancy increases maternal death, prematurity and low birth weight. [WHO 2022]",
+        "**Chronic liver and kidney disease, alcohol use and old age** increase drug toxicity, so the regimen must be adapted rather than abandoned. [Harrison 22e]",
+      ],
+    },
+    {
+      heading: "Pharmacology behind the adjustments",
+      points: [
+        "**Rifampicin is a potent inducer of CYP3A4, CYP2C9, UGT1A1 and P-glycoprotein** - it lowers levels of protease inhibitors, dolutegravir, oral contraceptives, warfarin, sulfonylureas, azoles, methadone and corticosteroids. [Goodman and Gilman 14e]",
+        "**Rifabutin** is a weaker inducer and is used in place of rifampicin when **boosted protease inhibitors** are essential. [WHO 2021]",
+        "**Isoniazid** is acetylated by **NAT2**; slow acetylators (common in Indians) have higher levels and more neuropathy and hepatotoxicity; it also causes **pyridoxine deficiency**. [Harrison 22e]",
+        "**Isoniazid, rifampicin and pyrazinamide are hepatotoxic**; pyrazinamide's toxicity is dose-related and the least likely to be tolerated on rechallenge. [ATS 2006]",
+        "**Ethambutol and pyrazinamide are renally excreted**, so they accumulate in CKD; isoniazid and rifampicin are hepatically cleared and need no renal adjustment. [WHO 2022]",
+        "**Streptomycin crosses the placenta** and causes fetal eighth-nerve damage - the only first-line drug avoided in pregnancy. [WHO 2022]",
+      ],
+    },
+    {
+      heading: "HIV-associated TB: presentation and diagnosis",
+      points: [
+        "With **CD4 over 350**, TB looks like typical cavitary disease; with **low CD4** it is often **smear-negative, extrapulmonary, disseminated, with lower-zone infiltrates or a normal chest X-ray**. [Harrison 22e]",
+        "Screen every PLHIV at every visit with the **WHO four-symptom screen** (current cough, fever, weight loss, night sweats), plus chest X-ray or CRP where available. [WHO 2021]",
+        "Test with **NAAT (Xpert Ultra or Truenat)** as the initial test; add **urine LF-LAM** if CD4 is 200 or less, the patient is seriously ill, or an inpatient with symptoms. [WHO 2024]",
+        "Every TB patient is offered **HIV testing** (single-window ICTC services); every PLHIV without TB is offered **TB preventive treatment** - see the TB infection and TPT topic. [NTEP 2023]",
+        "**TB-IRIS**: worsening fever, nodes or infiltrates after ART starts, usually in the first 2-8 weeks, commoner with **low CD4 and early ART**. [WHO 2021]",
+      ],
+    },
+    {
+      heading: "HIV-associated TB: treatment",
+      points: [
+        "Treat TB with the **same 6-month daily 2HRZE/4HRE regimen**; give pyridoxine. [NTEP 2023]",
+        "**Start ART within 2 weeks of ATT** regardless of CD4 count; in **TB meningitis delay ART 4-8 weeks**. [WHO 2021]",
+        "Preferred ART: **TLD (tenofovir, lamivudine, dolutegravir)** with an **extra dolutegravir 50 mg dose 12 hours later (50 mg BD)** while on rifampicin and for **2 weeks after** rifampicin stops. [NACO 2021]",
+        "**Efavirenz 600 mg** can be used with rifampicin without dose change; **boosted lopinavir or atazanavir** need **rifabutin 150 mg daily** instead of rifampicin. [WHO 2021]",
+        "**Cotrimoxazole preventive therapy (960 mg once daily)** for all HIV-TB patients, which reduces mortality. [NACO 2021]",
+        "**Prednisone 1.5 mg/kg/day for 2 weeks then 0.75 mg/kg/day for 2 weeks** reduces paradoxical TB-IRIS when ART starts within 30 days in patients with CD4 of 100 or less (PredART), except in rifampicin resistance or Kaposi sarcoma. [PredART NEJM 2018]",
+        "Moderate IRIS is managed with **NSAIDs or prednisolone** while **continuing both ATT and ART**. [WHO 2021]",
+      ],
+    },
+    {
+      heading: "TB and diabetes",
+      points: [
+        "**Bidirectional screening** under the **NTEP-NP-NCD collaborative framework**: every TB patient is tested for diabetes (RBS, FBS or HbA1c) and every person with diabetes is screened for TB symptoms at each visit. [NTEP-NPNCD Framework 2017]",
+        "Interpret glucose with care: **TB causes stress hyperglycaemia**, so re-test after 2-3 months of ATT before labelling new diabetes. [WHO-IUATLD 2011]",
+        "**Insulin** is preferred when glucose is markedly high or the patient is sick; **metformin** is suitable for most (watch lactic acidosis and GI upset), and DPP-4 inhibitors have little interaction. [ICMR STW 2023]",
+        "**Rifampicin lowers sulfonylurea levels** - doses may need increasing and then decreasing when rifampicin stops. [Goodman and Gilman 14e]",
+        "The ATT regimen and duration are **unchanged** in diabetes under NTEP; extension is individualised for slow responders. [NTEP 2023]",
+        "Diabetes adds to **isoniazid neuropathy** - give pyridoxine and examine feet. [NTEP 2023]",
+      ],
+    },
+    {
+      heading: "Pregnancy, breastfeeding and the newborn",
+      points: [
+        "**H, R, Z and E are safe in pregnancy** and the standard 6-month regimen is used; give **pyridoxine 10-25 mg daily**. [WHO 2022]",
+        "**Avoid streptomycin and other aminoglycosides** (fetal ototoxicity); ethionamide is avoided in DR-TB. [WHO 2022]",
+        "**Rifampicin makes combined oral contraceptives unreliable** - advise a copper IUD, DMPA or barrier method. [WHO 2021]",
+        "**Breastfeeding should continue**; drug levels in milk are low and do not treat or harm the baby. [WHO 2022]",
+        "Newborn of a mother with infectious TB: exclude active TB, then give **TB preventive treatment (6 months isoniazid)** followed by **BCG**; mother wears a mask while infectious. [NTEP 2021]",
+        "Give **vitamin K to the newborn** when the mother received rifampicin late in pregnancy. [WHO 2022]",
+      ],
+    },
+    {
+      heading: "Drug-induced liver injury (DILI): definition and stopping rules",
+      points: [
+        "Check baseline **LFT** in those at risk: alcohol use, chronic hepatitis B or C, HIV, pregnancy and postpartum, elderly, malnutrition, pre-existing liver disease. [NTEP 2023]",
+        "**Stop hepatotoxic drugs (H, R, Z)** if **ALT is over 3 times ULN with symptoms** (nausea, vomiting, abdominal pain) or jaundice, or **over 5 times ULN without symptoms**. [ATS 2006]",
+        "**Bilirubin over 2-3 mg/dL** or clinical jaundice also mandates stopping. [ATS 2006]",
+        "While liver tests recover, if the patient is very ill or sputum positive, give a **non-hepatotoxic bridging regimen: ethambutol plus levofloxacin** (with streptomycin or amikacin if needed). [NTEP 2023]",
+        "Exclude **viral hepatitis A, B, C and E**, alcohol, and other hepatotoxins before blaming ATT. [ATS 2006]",
+        "Isolated mild ALT rise (under 3 times ULN) is common, usually transient, and needs only **monitoring**, not stopping. [ATS 2006]",
+      ],
+    },
+    {
+      heading: "DILI: reintroduction",
+      points: [
+        "Reintroduce when **ALT falls below 2 times ULN and bilirubin is normal**, one drug at a time with LFT checks. [NTEP 2023]",
+        "**Rifampicin first** (with ethambutol), at full dose; after **3-7 days add isoniazid**; recheck ALT. [ATS 2006]",
+        "If the injury was **severe (jaundice)**, do **not reintroduce pyrazinamide**; treat with **2HRE plus 7HRE (9 months total)**. [ATS 2006]",
+        "If rifampicin is the culprit, use a rifampicin-free regimen such as **H, E, levofloxacin for 12-18 months** under specialist care. [WHO 2022]",
+        "**Pre-existing chronic liver disease**: use fewer hepatotoxic drugs - for example **9 months of rifampicin, isoniazid and ethambutol (no pyrazinamide)**, or one hepatotoxic drug plus ethambutol and a fluoroquinolone in decompensated cirrhosis. [WHO 2022]",
+      ],
+    },
+    {
+      heading: "Kidney disease and dialysis",
+      points: [
+        "**Creatinine clearance under 30 mL/min or on haemodialysis**: **pyrazinamide 25 mg/kg and ethambutol 15 mg/kg three times a week**; isoniazid and rifampicin at usual daily doses. [WHO 2022]",
+        "Give the doses **after dialysis** on dialysis days. [ATS/CDC/IDSA 2016]",
+        "Give **pyridoxine** routinely - CKD and dialysis increase isoniazid neuropathy. [ATS/CDC/IDSA 2016]",
+        "**Avoid aminoglycosides**; if unavoidable, dose by levels and audiometry. [WHO 2022]",
+        "Renal transplant: rifampicin drastically lowers **tacrolimus, cyclosporine and steroid levels** - increase immunosuppressant doses with level monitoring, or use rifabutin. [ATS/CDC/IDSA 2016]",
+      ],
+    },
+    {
+      heading: "Other ATT adverse effects and their management",
+      points: [
+        "**Peripheral neuropathy (isoniazid)**: prevent with pyridoxine 10 mg daily; treat with **pyridoxine 50-100 mg daily**. [NTEP 2023]",
+        "**Optic neuritis (ethambutol)**: reduced acuity and **red-green colour loss**; stop ethambutol and refer; test colour vision monthly in children and CKD. [WHO 2022]",
+        "**Arthralgia and hyperuricaemia (pyrazinamide)**: NSAIDs; acute gout needs specialist review. [WHO 2022]",
+        "**Rifampicin**: orange urine and tears (stains soft lenses), flu-like syndrome, **thrombocytopenia and haemolysis** - immune reactions mean rifampicin must never be restarted. [Harrison 22e]",
+        "**Cutaneous reactions**: itch without rash - antihistamine and continue; **rash - stop all drugs**, then rechallenge one at a time; **SJS/TEN** - never rechallenge the culprit. [WHO 2022]",
+        "**GI upset** is commonest: give drugs with a light meal or at bedtime and exclude hepatitis. [NTEP 2023]",
+      ],
+    },
+    {
+      heading: "Nutrition and social support",
+      points: [
+        "**Undernutrition (BMI under 18.5)** doubles TB mortality and raises relapse; all patients get **nutritional assessment at diagnosis**. [NTEP 2023]",
+        "**Ni-kshay Poshan Yojana** pays **Rs 1000 per month** by direct benefit transfer for the duration of treatment (raised from Rs 500 in November 2024). [MoHFW 2024]",
+        "**Energy-dense nutritional supplementation** is given for the first 2 months to underweight patients (BMI under 18.5) under the 2024 NTEP scheme. [MoHFW 2024]",
+        "**Pradhan Mantri TB Mukt Bharat Abhiyaan (2022)**: **Ni-kshay Mitra** donors provide monthly food baskets and support. [MoHFW 2022]",
+        "**RATIONS trial (Jharkhand, Lancet 2023)**: food baskets to **household contacts reduced TB incidence by about 40-50%**, and early weight gain in patients was linked to **lower mortality**. [Lancet 2023]",
+        "Screen and treat **alcohol use and tobacco**; refer to tobacco cessation (quitline 1800-11-2356) and de-addiction services. [NTEP 2023]",
+      ],
+    },
+    {
+      heading: "Inpatient care and red flags",
+      points: [
+        "Admit for **jaundice or hepatic encephalopathy**, severe IRIS, **respiratory failure**, BMI under 14 or inability to walk, SJS/TEN, and uncontrolled diabetes with ketosis. [NTEP 2023]",
+        "Severely undernourished patients need **refeeding precautions** (phosphate, potassium, thiamine). [WHO 2013]",
+        "**Differentiated TB care** (2024): triage every patient at diagnosis for severity - BMI, oedema, respiratory rate, SpO2 and ability to stand - and admit high-risk patients. [NTEP 2024]",
+        "In fulminant hepatitis, coordinate with hepatology and give the **non-hepatotoxic bridging regimen**. [ATS 2006]",
+      ],
+    },
+    {
+      heading: "Follow-up and monitoring",
+      points: [
+        "Review **every 2-4 weeks in the intensive phase** in high-risk groups, checking symptoms of hepatitis, weight and adherence. [NTEP 2023]",
+        "**LFT monthly** in chronic liver disease, HIV, alcohol use and after DILI rechallenge. [ATS/CDC/IDSA 2016]",
+        "**HbA1c every 3 months** in TB-DM; **CD4 and viral load** per NACO schedule in HIV. [NACO 2021]",
+        "Monthly weight and BMI; a **weight gain of 5% or more in 2 months** predicts better outcome. [Lancet 2023]",
+        "After cure, follow up for **post-TB lung disease** and recurrence - see the NTM and post-TB lung disease topic. [NTEP 2023]",
+      ],
+    },
+    {
+      heading: "Latest guideline updates",
+      points: [
+        "**NTEP 2024 differentiated TB care** with severity triage at diagnosis and admission of high-risk patients. [MoHFW 2024]",
+        "**Ni-kshay Poshan Yojana raised to Rs 1000/month and energy-dense nutrition for underweight patients (2024)**. [MoHFW 2024]",
+        "**WHO 2024** recommends **urine LF-LAM** for PLHIV with CD4 200 or less or serious illness, and Xpert Ultra as the initial test. [WHO 2024]",
+        "**WHO 2022 Module 4 update**: first-line regimen unchanged in pregnancy, with explicit guidance on renal and hepatic modifications. [WHO 2022]",
+        "**RATIONS trial (2023)** provided the trial evidence behind food support for patients and contacts. [Lancet 2023]",
+      ],
+    },
+    {
+      heading: "Exam and viva angle",
+      points: [
+        "**ART within 2 weeks** - except **TBM, 4-8 weeks** - is the most asked fact. [WHO 2021]",
+        "**Dolutegravir 50 mg BD with rifampicin**, continued for 2 weeks after rifampicin stops. [NACO 2021]",
+        "DILI stopping rule **'3 with symptoms, 5 without'** and reintroduction order **R, then H, Z last or never**. [ATS 2006]",
+        "Renal dosing: **'Z and E thrice weekly; H and R unchanged'**. [WHO 2022]",
+        "**Streptomycin is the only first-line drug contraindicated in pregnancy**. [WHO 2022]",
+      ],
+    },
+  ],
+  tables: [
+    {
+      heading: "First-line ATT and key adjunct drugs: dosing and adverse effects",
+      columns: ["Drug", "Dose and route", "Duration/titration", "Key adverse effects / contraindications"],
+      rows: [
+        ["Isoniazid", "5 mg/kg oral daily (max 300 mg)", "6 months", "Hepatitis, peripheral neuropathy, drug-induced lupus; give pyridoxine"],
+        ["Rifampicin", "10 mg/kg oral daily (max 600 mg)", "6 months", "Hepatitis, orange secretions, flu-like illness, thrombocytopenia; CYP induction"],
+        ["Pyrazinamide", "25 mg/kg oral daily; CKD 25 mg/kg thrice weekly", "2 months", "Hepatitis (dose-related), hyperuricaemia, arthralgia"],
+        ["Ethambutol", "15 mg/kg oral daily; CKD 15 mg/kg thrice weekly", "6 months", "Optic neuritis, red-green colour loss"],
+        ["Rifabutin", "150 mg oral daily with boosted PI", "Replaces rifampicin", "Uveitis, neutropenia; fewer interactions"],
+        ["Dolutegravir (with rifampicin)", "50 mg oral BD", "Until 2 weeks after rifampicin stops", "Insomnia, weight gain"],
+        ["Cotrimoxazole", "960 mg oral OD", "Throughout ATT and beyond per CD4", "Rash, SJS, cytopenias, hyperkalaemia"],
+        ["Pyridoxine", "10 mg daily (prevention); 50-100 mg (treatment of neuropathy)", "Throughout", "Very high doses cause sensory neuropathy"],
+      ],
+    },
+    {
+      heading: "Regimen modifications by situation",
+      columns: ["Situation", "Key change", "Watch for"],
+      rows: [
+        ["HIV", "Same ATT; ART within 2 weeks (TBM 4-8 weeks); DTG 50 mg BD; CPT", "IRIS, drug interactions"],
+        ["Diabetes", "Same ATT; bidirectional screening; insulin if uncontrolled", "Neuropathy, slow conversion, sulfonylurea failure"],
+        ["Pregnancy", "Same ATT; no streptomycin; pyridoxine", "OCP failure; newborn TPT then BCG"],
+        ["CKD / dialysis", "Z and E thrice weekly after dialysis; H, R unchanged", "Neuropathy, ototoxicity"],
+        ["Chronic liver disease", "Fewer hepatotoxic drugs (e.g. 9 HRE, no Z)", "Monthly LFT, decompensation"],
+        ["DILI on ATT", "Stop H, R, Z; bridge with E + Lfx; reintroduce R then H", "Omit Z if severe; 9 months HRE"],
+      ],
+    },
+    {
+      heading: "DILI: criteria and actions",
+      columns: ["Finding", "Action"],
+      rows: [
+        ["ALT under 3 times ULN, no symptoms", "Continue ATT, repeat LFT in 1-2 weeks"],
+        ["ALT over 3 times ULN with symptoms or jaundice", "Stop H, R, Z"],
+        ["ALT over 5 times ULN without symptoms", "Stop H, R, Z"],
+        ["Patient ill or infectious after stopping", "Bridge with ethambutol plus levofloxacin (plus aminoglycoside if needed)"],
+        ["ALT under 2 times ULN and bilirubin normal", "Reintroduce rifampicin, then isoniazid after 3-7 days"],
+        ["Severe DILI with jaundice", "Do not reintroduce pyrazinamide; give 9 months HRE"],
+      ],
+    },
+    {
+      heading: "Rifampicin drug interactions in practice",
+      columns: ["Drug", "Effect of rifampicin", "What to do"],
+      rows: [
+        ["Dolutegravir", "Levels fall", "Increase to 50 mg BD"],
+        ["Boosted protease inhibitors", "Levels fall sharply", "Use rifabutin 150 mg daily"],
+        ["Combined oral contraceptive", "Contraceptive failure", "Copper IUD, DMPA or barrier"],
+        ["Warfarin", "INR falls", "Frequent INR; dose increase"],
+        ["Sulfonylureas", "Glucose rises", "Increase dose or use insulin/metformin"],
+        ["Prednisolone", "Levels halve", "Double the steroid dose"],
+        ["Tacrolimus / cyclosporine", "Levels fall, rejection risk", "Level monitoring or rifabutin"],
+      ],
+    },
+  ],
+  redFlags: [
+    "Jaundice, persistent vomiting or right upper quadrant pain on ATT (stop H, R, Z and check LFT)",
+    "Confusion, asterixis or bleeding on ATT (acute liver failure)",
+    "Mucosal involvement, blistering or skin peeling (SJS/TEN)",
+    "Fall in visual acuity or colour vision on ethambutol",
+    "New fever, breathlessness or enlarging nodes soon after starting ART with low CD4 (IRIS versus new infection)",
+    "BMI under 14, inability to stand, or SpO2 under 94% at diagnosis (high-risk TB, admit)",
+    "Diabetic ketoacidosis or uncontrolled hyperglycaemia during ATT",
+  ],
+  pearls: [
+    "**ART within 2 weeks of ATT**, but **4-8 weeks in TBM**.",
+    "**Dolutegravir 50 mg BD** while on rifampicin and for 2 weeks after.",
+    "**Bidirectional screening**: every TB patient for diabetes, every diabetic for TB.",
+    "DILI: **3 with symptoms, 5 without** - stop H, R, Z.",
+    "Reintroduce **rifampicin first, isoniazid next, pyrazinamide last or never**.",
+    "CKD: **Z and E thrice weekly after dialysis**; H and R unchanged.",
+    "**Streptomycin** is the only first-line drug banned in pregnancy.",
+    "Rifampicin **doubles the steroid requirement** and defeats the pill.",
+    "**RATIONS**: food for families cut TB incidence by about 40-50%.",
+  ],
+  mcqs: [
+    {
+      id: "respiratory-tb-special-situations-q1",
+      stem: "A 32-year-old man with newly diagnosed pulmonary TB is HIV-positive with CD4 180 cells/microlitre. He starts 2HRZE. Which ART plan is correct?",
+      options: [
+        "Start TLD after completing ATT",
+        "Start TLD within 2 weeks with an extra dolutegravir 50 mg dose 12 hours later",
+        "Start TLD at 8 weeks because CD4 is under 200",
+        "Start lopinavir-ritonavir with rifampicin at standard doses",
+      ],
+      answer: 1,
+      explanation:
+        "WHO and NACO advise ART within 2 weeks of ATT regardless of CD4 for non-meningeal TB, and rifampicin halves dolutegravir levels, so dolutegravir is given 50 mg twice daily. Delaying until after ATT or to 8 weeks increases mortality, and boosted lopinavir cannot be given with rifampicin at standard doses - rifabutin is needed instead.",
+      difficulty: "moderate",
+    },
+    {
+      id: "respiratory-tb-special-situations-q2",
+      stem: "Three weeks into 2HRZE, a patient has ALT 280 U/L (ULN 40), bilirubin 3.5 mg/dL and vomiting. Sputum was smear-positive. What is the best immediate management?",
+      options: [
+        "Stop isoniazid, rifampicin and pyrazinamide and give ethambutol with levofloxacin until liver tests recover",
+        "Continue all drugs and repeat LFT in 2 weeks",
+        "Stop only pyrazinamide and continue the rest",
+        "Stop all drugs and restart all four together when ALT is normal",
+      ],
+      answer: 0,
+      explanation:
+        "Symptomatic ALT over 3 times ULN with jaundice is DILI, so all three hepatotoxic drugs are stopped. A smear-positive patient should not be left untreated, so a non-hepatotoxic bridge (ethambutol plus levofloxacin) is given. Continuing risks liver failure, stopping only pyrazinamide is unsafe because the culprit is unknown, and restarting all four together cannot identify the culprit.",
+      difficulty: "moderate",
+    },
+    {
+      id: "respiratory-tb-special-situations-q3",
+      stem: "A man on maintenance haemodialysis is diagnosed with pulmonary TB. Which dosing schedule is correct?",
+      options: [
+        "All four drugs at half dose daily",
+        "Isoniazid and rifampicin thrice weekly; pyrazinamide and ethambutol daily",
+        "Avoid pyrazinamide and ethambutol and give 9 months of isoniazid and rifampicin",
+        "Isoniazid and rifampicin daily; pyrazinamide 25 mg/kg and ethambutol 15 mg/kg thrice weekly after dialysis",
+      ],
+      answer: 3,
+      explanation:
+        "Pyrazinamide and ethambutol are renally cleared, so in CrCl under 30 or dialysis they are given at full dose three times weekly after dialysis, while hepatically cleared isoniazid and rifampicin stay daily. Halving doses lowers peak levels and efficacy, the reversed schedule makes no pharmacological sense, and dropping both drugs is unnecessary.",
+      difficulty: "easy",
+    },
+    {
+      id: "respiratory-tb-special-situations-q4",
+      stem: "A 26-year-old woman, 20 weeks pregnant, has smear-positive pulmonary TB. Which statement is correct?",
+      options: [
+        "Delay ATT until after delivery",
+        "Use streptomycin in place of ethambutol to protect vision",
+        "Give standard 2HRZE/4HRE with pyridoxine; breastfeeding can continue after delivery",
+        "Omit pyrazinamide and treat for 9 months",
+      ],
+      answer: 2,
+      explanation:
+        "First-line H, R, Z and E are safe in pregnancy, and untreated TB is far more harmful than the drugs; pyridoxine is added, and breastfeeding continues. Streptomycin is the one drug contraindicated because it causes fetal ototoxicity, delaying treatment raises maternal and fetal risk, and current WHO guidance does not require omitting pyrazinamide.",
+      difficulty: "easy",
+    },
+    {
+      id: "respiratory-tb-special-situations-q5",
+      stem: "The RATIONS trial in Jharkhand showed that providing food baskets to household contacts of TB patients:",
+      options: [
+        "Had no effect on TB incidence but improved weight",
+        "Reduced TB incidence among contacts by about 40-50%",
+        "Increased drug-resistant TB among contacts",
+        "Replaced the need for TB preventive treatment",
+      ],
+      answer: 1,
+      explanation:
+        "RATIONS (Lancet 2023) was a cluster-randomised trial in which nutritional support to household contacts cut incident TB by roughly 40-50%, and patient weight gain was linked to lower mortality. It did not replace TPT, and there was no signal of increased drug resistance; the weight-only result misstates the main finding.",
+      difficulty: "moderate",
+    },
+  ],
+  theory: [
+    {
+      id: "respiratory-tb-special-situations-t1",
+      paper: "I",
+      kind: "long",
+      marks: 10,
+      minutes: 18,
+      frequency: "core",
+      question:
+        "Discuss the management of HIV-TB co-infection. Add a note on the management of drug-induced hepatitis during antitubercular treatment.",
+      openingLines: [
+        "TB is the leading cause of death in people with HIV, and HIV raises the risk of TB about 18-fold.",
+        "Management rests on early diagnosis, the standard ATT regimen, ART within 2 weeks with rifampicin-compatible drugs, cotrimoxazole prophylaxis and watchfulness for IRIS and hepatotoxicity.",
+      ],
+      answer: [
+        {
+          heading: "Diagnosis in HIV",
+          points: [
+            "Four-symptom screen at every visit; Xpert Ultra as initial test; urine LF-LAM if CD4 200 or less or seriously ill.",
+            "Atypical presentation at low CD4: smear-negative, extrapulmonary, normal CXR.",
+          ],
+        },
+        {
+          heading: "ATT and ART",
+          points: [
+            "2HRZE/4HRE daily with pyridoxine.",
+            "ART within 2 weeks; TBM 4-8 weeks.",
+            "TLD with dolutegravir 50 mg BD; efavirenz acceptable; rifabutin with boosted PIs.",
+          ],
+        },
+        {
+          heading: "Prophylaxis and IRIS",
+          points: [
+            "Cotrimoxazole 960 mg OD for all.",
+            "IRIS: continue ATT and ART; NSAIDs or prednisolone; prophylactic prednisone if CD4 100 or less (PredART).",
+          ],
+        },
+        {
+          heading: "DILI - recognition",
+          points: [
+            "ALT over 3 times ULN with symptoms or jaundice, or over 5 times without.",
+            "Exclude viral hepatitis and alcohol.",
+          ],
+        },
+        {
+          heading: "DILI - management",
+          points: [
+            "Stop H, R, Z; bridge with ethambutol plus levofloxacin if ill or infectious.",
+            "Reintroduce when ALT under 2 times ULN: rifampicin, then isoniazid after 3-7 days.",
+            "Omit pyrazinamide after severe DILI; 9 months HRE.",
+          ],
+        },
+        {
+          heading: "Programme support",
+          points: ["Single-window ICTC-NTEP services, Ni-kshay Poshan Yojana Rs 1000/month, TPT for PLHIV without TB."],
+        },
+      ],
+      mustDraw: ["DILI management flow chart from stopping to reintroduction", "Table of rifampicin interactions with ART"],
+      markSplit: [
+        { part: "Diagnosis in HIV", marks: 2 },
+        { part: "ATT, ART timing and interactions", marks: 3 },
+        { part: "CPT and IRIS", marks: 1 },
+        { part: "Drug-induced hepatitis", marks: 4 },
+      ],
+      keywords: ["HIV-TB", "ART timing", "dolutegravir", "rifabutin", "CPT", "IRIS", "DILI", "reintroduction"],
+    },
+    {
+      id: "respiratory-tb-special-situations-t2",
+      paper: "I",
+      kind: "short-note",
+      marks: 5,
+      minutes: 9,
+      frequency: "common",
+      question: "Write a short note on TB and diabetes: bidirectional screening and management.",
+      openingLines: [
+        "Diabetes triples the risk of TB and worsens TB outcomes, while TB worsens glycaemic control.",
+        "India's NTEP-NP-NCD collaborative framework mandates bidirectional screening of both conditions.",
+      ],
+      answer: [
+        {
+          heading: "Burden",
+          points: ["Diabetes in roughly 15-25% of Indian TB patients; many newly detected."],
+        },
+        {
+          heading: "Bidirectional screening",
+          points: ["Every TB patient: RBS, FBS or HbA1c; every diabetic: TB symptom screen each visit, NAAT if positive."],
+        },
+        {
+          heading: "Management",
+          points: [
+            "Standard ATT; insulin if uncontrolled; metformin suitable; rifampicin lowers sulfonylureas.",
+            "Pyridoxine for neuropathy; HbA1c every 3 months.",
+          ],
+        },
+        {
+          heading: "Outcomes",
+          points: ["Delayed conversion, failure, relapse, death; recheck glucose after 2-3 months for stress hyperglycaemia."],
+        },
+      ],
+      mustDraw: ["Bidirectional screening flow chart between NTEP and NP-NCD clinics"],
+      markSplit: [
+        { part: "Burden and interaction", marks: 1 },
+        { part: "Bidirectional screening", marks: 2 },
+        { part: "Management", marks: 2 },
+      ],
+      keywords: ["TB-DM", "bidirectional screening", "NP-NCD", "insulin", "rifampicin", "HbA1c"],
+    },
+  ],
+  references: [
+    "Harrison's Principles of Internal Medicine, 22nd edition, 2025 - Tuberculosis and HIV",
+    "WHO consolidated guidelines on tuberculosis, Module 4: Treatment, 2022 update and 2025 consolidation",
+    "Technical and Operational Guidelines for TB Control in India, NTEP, MoHFW, 2023",
+    "National Guidelines for HIV Care and Treatment, NACO, 2021",
+    "National Framework for Joint TB-Diabetes Collaborative Activities, NTEP and NPCDCS (NP-NCD), 2017",
+    "ATS Official Statement: Hepatotoxicity of Antituberculosis Therapy, 2006; ATS/CDC/IDSA Treatment of Drug-Susceptible TB, 2016",
+    "Bhargava A et al. RATIONS trial, Lancet 2023",
+    "Meintjes G et al. PredART trial, N Engl J Med 2018",
+  ],
+});
+
+topics.push({
+  id: "respiratory-ntm-post-tb",
+  title: "Non-tuberculous mycobacteria and post-tuberculosis lung disease",
+  frequency: "less-common",
+  oneLiner:
+    "**Non-tuberculous mycobacteria (NTM)** are environmental mycobacteria (chiefly **M. avium complex and M. abscessus**) that cause chronic lung disease in damaged lungs, diagnosed only when **clinical, radiological and microbiological criteria (ATS/ERS/ESCMID/IDSA 2020)** are all met and treated with **macrolide-based multidrug regimens for 12 months after culture conversion**; **post-tuberculosis lung disease (PTLD)** is chronic respiratory abnormality attributable at least in part to previous TB - airway, parenchymal, pleural and vascular - that needs **assessment at the end of treatment, rehabilitation and prevention of misdiagnosis as recurrent TB**.",
+  keywords: [
+    "NTM",
+    "atypical mycobacteria",
+    "MOTT",
+    "MAC",
+    "Mycobacterium avium complex",
+    "M. abscessus",
+    "M. kansasii",
+    "Lady Windermere syndrome",
+    "Runyon classification",
+    "amikacin liposome inhalation",
+    "PTLD",
+    "post-TB lung disease",
+    "post-TB sequelae",
+    "destroyed lung",
+    "tuberculous bronchiectasis",
+    "MPT64",
+    "pulmonary rehabilitation",
+  ],
+  sections: [
+    {
+      heading: "Definitions and epidemiology",
+      points: [
+        "**NTM** are mycobacteria other than the *M. tuberculosis* complex and *M. leprae*; more than **190 species** exist in soil and water, and they are **not transmitted person to person** in general (possible exception: M. abscessus in cystic fibrosis). [Harrison 22e]",
+        "NTM lung disease is rising worldwide, especially in **older adults, women with bronchiectasis, COPD and post-TB lungs**; MAC is the commonest pathogen globally. [ATS/ERS/ESCMID/IDSA 2020]",
+        "In India NTM are isolated in a small but important proportion of **smear-positive, NAAT-negative** samples and among patients labelled 'treatment failure' or 'presumptive MDR-TB'; many are **misdiagnosed and treated as TB**. [ICMR 2022]",
+        "**Post-TB lung disease (PTLD)** is defined as **evidence of chronic respiratory abnormality, with or without symptoms, attributable at least in part to previous pulmonary TB**. [International Post-TB Symposium 2019]",
+        "About **half of people cured of pulmonary TB have abnormal lung function**, and TB survivors have about **three times the mortality** of the general population, much of it respiratory. [Lancet Respir Med 2021]",
+        "With about 2.5 million TB patients treated each year, India has the **largest population of TB survivors** and so the largest PTLD burden in the world. [WHO Global TB Report 2024]",
+      ],
+    },
+    {
+      heading: "Organisms and risk factors",
+      points: [
+        "**Slow growers**: **M. avium complex (M. avium, M. intracellulare, M. chimaera)**, **M. kansasii**, M. xenopi, M. malmoense. [ATS/ERS/ESCMID/IDSA 2020]",
+        "**Rapid growers (colonies in under 7 days)**: **M. abscessus**, M. fortuitum, M. chelonae - also cause skin and post-surgical wound infections (laparoscopy ports, cosmetic procedures). [Harrison 22e]",
+        "**Runyon classification**: I photochromogens (**M. kansasii**, M. marinum), II scotochromogens (M. scrofulaceum, M. gordonae), III non-chromogens (**MAC**), IV rapid growers. [Harrison 22e]",
+        "Host risks: **bronchiectasis, previous TB, COPD, cystic fibrosis, silicosis, GERD**, thoracic skeletal abnormalities, and immune defects (**HIV with CD4 under 50, anti-TNF therapy, anti-interferon-gamma autoantibodies**). [ATS/ERS/ESCMID/IDSA 2020]",
+        "Risk factors for PTLD: **extensive or cavitary disease, delayed diagnosis, multiple TB episodes, MDR-TB, smoking, biomass smoke, HIV and diabetes**. [PTLD Clinical Standards 2021]",
+      ],
+    },
+    {
+      heading: "Pathophysiology",
+      points: [
+        "NTM are inhaled from **aerosols of water** (showers, hot tubs, municipal supply biofilms) and soil; they colonise damaged airways where mucociliary clearance is poor. [Harrison 22e]",
+        "Host defence depends on the **IL-12/interferon-gamma axis** - defects in this axis (genetic or autoantibodies) explain disseminated NTM in apparently healthy adults. [Harrison 22e]",
+        "**Nodular-bronchiectatic MAC** in slender postmenopausal women (**Lady Windermere syndrome**) is linked to pectus excavatum, scoliosis, mitral valve prolapse and habitual cough suppression. [Harrison 22e]",
+        "**PTLD** arises because TB heals by **fibrosis and cavitation**: matrix metalloproteinases destroy lung matrix, granulomas fibrose, and airways distort - causing bronchiectasis, obstruction and restriction. [PTLD Clinical Standards 2021]",
+        "Residual cavities are colonised by **Aspergillus (aspergilloma, chronic pulmonary aspergillosis)** and NTM, and **bronchial artery hypertrophy** causes haemoptysis; **Rasmussen aneurysm** is a pulmonary artery aneurysm in a cavity wall. [Harrison 22e]",
+        "Long-standing destruction leads to **hypoxaemia, pulmonary hypertension and cor pulmonale**. [PTLD Clinical Standards 2021]",
+      ],
+    },
+    {
+      heading: "Classification: NTM phenotypes and the PTLD spectrum",
+      points: [
+        "NTM lung disease patterns: **fibrocavitary** (older male smokers, upper-lobe cavities like TB), **nodular-bronchiectatic** (middle lobe and lingula, tree-in-bud), **hypersensitivity-like ('hot tub lung')** and **disseminated** (advanced HIV). [ATS/ERS/ESCMID/IDSA 2020]",
+        "PTLD **airway** disease: obstructive airflow limitation, **traction bronchiectasis**, tracheobronchial stenosis and broncholithiasis. [PTLD Clinical Standards 2021]",
+        "PTLD **parenchymal** disease: residual cavities, fibrosis, volume loss and **destroyed lung** (a whole lobe or lung non-functional). [PTLD Clinical Standards 2021]",
+        "PTLD **pleural** disease: pleural thickening, **fibrothorax**, chronic empyema and bronchopleural fistula. [PTLD Clinical Standards 2021]",
+        "PTLD **vascular** disease: **pulmonary hypertension**, bronchial artery hypertrophy and Rasmussen aneurysm. [PTLD Clinical Standards 2021]",
+        "**Complications** that cut across: chronic pulmonary aspergillosis, NTM infection, **TB recurrence** and lung cancer. [PTLD Clinical Standards 2021]",
+      ],
+    },
+    {
+      heading: "Clinical features",
+      points: [
+        "NTM lung disease: **chronic productive cough, fatigue, weight loss, low-grade fever and haemoptysis** over months - indistinguishable from TB on symptoms. [ATS/ERS/ESCMID/IDSA 2020]",
+        "Suspect NTM when **sputum is AFB smear-positive but NAAT negative for MTB**, when 'TB' fails to respond despite adherence and susceptible DST, or in recurrent 'TB' with bronchiectasis. [ICMR 2022]",
+        "PTLD: **persistent breathlessness, cough and sputum after cure**, recurrent chest infections, haemoptysis, and reduced exercise tolerance. [PTLD Clinical Standards 2021]",
+        "Many PTLD patients are **labelled COPD or 'TB relapse'** and given repeated empirical ATT without microbiological proof. [PTLD Clinical Standards 2021]",
+        "Disseminated MAC in advanced HIV: **fever, night sweats, weight loss, diarrhoea, hepatosplenomegaly and anaemia**. [Harrison 22e]",
+      ],
+    },
+    {
+      heading: "Examination findings",
+      points: [
+        "**Clubbing** suggests bronchiectasis, chronic suppuration or associated lung cancer - not TB itself. [OHCM 11e]",
+        "**Tracheal shift towards a fibrosed upper lobe**, flattening of the chest, crowded ribs and coarse crackles indicate post-TB fibrosis. [OHCM 11e]",
+        "**Amphoric breath sounds** over a large cavity; dull percussion and absent breath sounds with fibrothorax. [OHCM 11e]",
+        "**Loud P2, raised JVP, parasternal heave and pedal oedema** indicate cor pulmonale. [Harrison 22e]",
+        "A **slender woman with pectus excavatum or scoliosis** and chronic cough suggests nodular-bronchiectatic MAC. [Harrison 22e]",
+        "Record **SpO2 at rest and on exertion** and BMI - both guide oxygen and rehabilitation. [PTLD Clinical Standards 2021]",
+      ],
+    },
+    {
+      heading: "Differential diagnosis",
+      points: [
+        "**Recurrent TB versus PTLD**: recurrence needs **NAAT and culture positive for MTB**; residual imaging changes and old scars alone are not recurrence. [NTEP 2023]",
+        "**Xpert can remain positive from dead bacilli for years** after successful treatment; a positive 'trace' or low result in a previously treated person needs **culture confirmation**. [WHO 2024]",
+        "**NTM versus TB**: NAAT negative for MTB, culture grows mycobacteria that are **MPT64 antigen negative**, and line probe or species identification confirms NTM. [ICMR 2022]",
+        "**Chronic pulmonary aspergillosis**: cavity with a fungal ball or pericavitary thickening, **Aspergillus IgG positive** - see the Aspergillosis topic. [ERS/ESCMID 2016]",
+        "**COPD versus post-TB obstruction**: post-TB obstruction occurs in non-smokers with radiological sequelae and may respond poorly to bronchodilators. [PTLD Clinical Standards 2021]",
+        "**Lung cancer in a scar**: a new mass, rising cavity wall thickness or persistent haemoptysis in a smoker needs CT and biopsy. [Harrison 22e]",
+      ],
+    },
+    {
+      heading: "Investigations",
+      points: [
+        "**ATS/ERS/ESCMID/IDSA clinical criteria**: pulmonary symptoms, **nodular or cavitary opacities on chest X-ray, or bronchiectasis with multiple small nodules on HRCT**, and appropriate exclusion of other diagnoses. [ATS/ERS/ESCMID/IDSA 2020]",
+        "**Microbiological criteria**: positive culture from **at least two separate expectorated sputum samples**, or **one bronchial wash or lavage**, or a lung biopsy with granulomas or AFB plus a positive culture from biopsy, sputum or wash. [ATS/ERS/ESCMID/IDSA 2020]",
+        "**Species identification** (molecular line probe, sequencing) is essential - M. gordonae is usually a contaminant, while MAC, M. kansasii and M. abscessus are true pathogens. [ATS/ERS/ESCMID/IDSA 2020]",
+        "**Susceptibility testing**: **macrolide and amikacin** for MAC; macrolide (including **inducible erm(41) resistance**) and amikacin for M. abscessus; **rifampicin** for M. kansasii. [ATS/ERS/ESCMID/IDSA 2020]",
+        "**HRCT** shows tree-in-bud nodules and bronchiectasis in the middle lobe and lingula (nodular-bronchiectatic) or thick-walled upper-lobe cavities (fibrocavitary). [Harrison 22e]",
+        "PTLD assessment at the **end of TB treatment**: symptoms, **spirometry**, **SpO2**, **6-minute walk test**, chest X-ray, and quality-of-life score (e.g. St George's Respiratory Questionnaire). [PTLD Clinical Standards 2021]",
+        "PTLD extended work-up: HRCT for bronchiectasis and cavities, **Aspergillus IgG**, sputum for NTM, **echocardiography** for pulmonary hypertension, and ABG if SpO2 is low. [PTLD Clinical Standards 2021]",
+      ],
+    },
+    {
+      heading: "Treatment of NTM lung disease",
+      points: [
+        "**Not every positive culture needs treatment**: weigh symptoms, progression, species and comorbidity; a period of **watchful waiting** is reasonable in mild nodular-bronchiectatic MAC. [ATS/ERS/ESCMID/IDSA 2020]",
+        "**Macrolide-susceptible nodular-bronchiectatic MAC**: **azithromycin 500 mg (or clarithromycin 1000 mg), rifampicin 600 mg and ethambutol 25 mg/kg, three times a week**. [ATS/ERS/ESCMID/IDSA 2020]",
+        "**Cavitary or severe MAC**: **daily azithromycin 250-500 mg, rifampicin 450-600 mg and ethambutol 15 mg/kg**, plus **IV amikacin or streptomycin for the first 2-3 months**. [ATS/ERS/ESCMID/IDSA 2020]",
+        "Continue MAC treatment for **at least 12 months after sputum culture conversion**; **never use a macrolide alone** - it selects resistance quickly. [ATS/ERS/ESCMID/IDSA 2020]",
+        "**Refractory MAC** (culture positive after 6 months): add **amikacin liposome inhalation suspension (ALIS) 590 mg once daily**. [ATS/ERS/ESCMID/IDSA 2020]",
+        "**M. kansasii**: **rifampicin, ethambutol and either isoniazid or azithromycin** for a fixed **12 months** - it behaves much like TB and responds well. [ATS/ERS/ESCMID/IDSA 2020]",
+        "**M. abscessus**: intensive phase of **IV amikacin plus imipenem or cefoxitin or tigecycline**, with a macrolide only if there is no inducible resistance, then oral/inhaled agents (clofazimine, linezolid, inhaled amikacin); cure rates are low and **surgery** may be needed. [ATS/ERS/ESCMID/IDSA 2020]",
+        "**Disseminated MAC in HIV**: clarithromycin or azithromycin plus ethambutol (with or without rifabutin) and prompt ART. [NACO 2021]",
+      ],
+    },
+    {
+      heading: "Management of post-TB lung disease",
+      points: [
+        "**Smoking and biomass smoke cessation** are the first intervention; offer brief advice and quitline referral (1800-11-2356). [PTLD Clinical Standards 2021]",
+        "**Pulmonary rehabilitation** (exercise training, education, breathing techniques) improves 6MWT and quality of life in PTLD - see the Pulmonary rehabilitation topic. [PTLD Clinical Standards 2021]",
+        "**Obstructive PTLD**: a trial of **long-acting bronchodilators (LAMA or LABA)**; use ICS cautiously because they raise the risk of **TB recurrence, NTM and pneumonia**. [PTLD Clinical Standards 2021]",
+        "**Bronchiectatic PTLD**: airway clearance, treatment of exacerbations based on sputum culture, and long-term macrolides only after **excluding NTM** (macrolide monotherapy breeds resistant MAC). [BTS 2019]",
+        "**Haemoptysis**: tranexamic acid for minor bleeds; **bronchial artery embolisation** for massive haemoptysis - see the Haemoptysis topic. [Harrison 22e]",
+        "**Chronic pulmonary aspergillosis**: **itraconazole 200 mg BD for at least 6 months**; surgery for simple aspergilloma with recurrent bleeding. [ERS/ESCMID 2016]",
+        "**Long-term oxygen** if resting PaO2 is 55 mmHg or less (or 56-59 with cor pulmonale), and **vaccination against influenza, pneumococcus and COVID-19**. [PTLD Clinical Standards 2021]",
+        "Severe localised destroyed lung with recurrent infection or bleeding may need **pneumonectomy or lobectomy** after optimisation. [Harrison 22e]",
+      ],
+    },
+    {
+      heading: "Special situations",
+      points: [
+        "**HIV**: disseminated MAC when CD4 is under 50; **primary prophylaxis is not needed if ART is started at once**. [NACO 2021]",
+        "**Anti-TNF and biologic therapy**: screen for latent TB and assess NTM in bronchiectasis before starting. [ATS/ERS/ESCMID/IDSA 2020]",
+        "**Pregnancy**: avoid aminoglycosides; azithromycin and ethambutol are acceptable; specialist care. [ATS/ERS/ESCMID/IDSA 2020]",
+        "**Children**: NTM cause **cervical lymphadenitis in children aged 1-5**, treated by **surgical excision** rather than ATT. [Harrison 22e]",
+        "**Elderly**: drug toxicity (ethambutol optic neuropathy, amikacin ototoxicity and nephrotoxicity, macrolide QT and hearing loss) needs closer monitoring. [ATS/ERS/ESCMID/IDSA 2020]",
+      ],
+    },
+    {
+      heading: "Complications and prognosis",
+      points: [
+        "Fibrocavitary MAC has **5-year mortality of about 25-40%** if untreated; nodular-bronchiectatic disease progresses slowly. [Harrison 22e]",
+        "**M. abscessus** has the poorest cure rates (often under 50%) and frequent relapse. [ATS/ERS/ESCMID/IDSA 2020]",
+        "PTLD complications: **recurrent infections, massive haemoptysis, chronic respiratory failure, cor pulmonale, CPA, lung cancer** and early death. [PTLD Clinical Standards 2021]",
+        "PTLD causes **lost productivity and catastrophic costs**, and a large share of the lifetime TB disease burden occurs after cure. [Lancet Respir Med 2021]",
+      ],
+    },
+    {
+      heading: "Referral, follow-up and monitoring",
+      points: [
+        "Refer suspected NTM to a **chest physician** with access to species identification and DST; do not start empirical anti-NTM therapy on a single sputum. [ATS/ERS/ESCMID/IDSA 2020]",
+        "On NTM therapy: **monthly sputum culture**, visual acuity and colour vision (ethambutol), audiometry and creatinine (amikacin), and ECG (macrolides with other QT drugs). [ATS/ERS/ESCMID/IDSA 2020]",
+        "PTLD: assess at **end of TB treatment** and again at **12 months**; NTEP also schedules post-treatment review every 6 months for 2 years. [PTLD Clinical Standards 2021]",
+        "Refer for **haemoptysis over 100-200 mL/day**, worsening hypoxaemia, suspected cancer, CPA or surgery assessment. [Harrison 22e]",
+        "Before any repeat ATT, insist on **microbiological confirmation (NAAT plus culture)** to avoid treating PTLD as recurrence. [NTEP 2023]",
+      ],
+    },
+    {
+      heading: "Prevention and programme link",
+      points: [
+        "The best prevention of PTLD is **early TB diagnosis** (active case finding, chest X-ray screening) and full adherence to treatment. [PTLD Clinical Standards 2021]",
+        "NTEP **post-treatment follow-up** and Ni-kshay records give an opportunity to screen survivors for symptoms and lung function. [NTEP 2023]",
+        "Patients with PTLD and obstruction can be linked to **NP-NCD chronic respiratory disease services** at Ayushman Arogya Mandirs. [MoHFW 2023]",
+        "Reduce exposure to **biomass smoke** (Ujjwala LPG) and tobacco in TB survivors. [MoHFW 2023]",
+        "NTM prevention is limited: **hot-water heaters set above 55 degrees C**, avoid hot tubs in bronchiectasis, and sterile technique in procedures. [ATS/ERS/ESCMID/IDSA 2020]",
+      ],
+    },
+    {
+      heading: "Latest guideline updates",
+      points: [
+        "**ATS/ERS/ESCMID/IDSA 2020** NTM guideline: three-times-weekly regimen for non-cavitary MAC, **azithromycin preferred over clarithromycin**, ALIS for refractory MAC, and fixed 12-month regimens for M. kansasii. [ATS/ERS/ESCMID/IDSA 2020]",
+        "**Clinical standards for PTLD (Migliori et al., 2021)** recommend assessment of every patient at the end of TB treatment with spirometry, SpO2 and 6MWT. [PTLD Clinical Standards 2021]",
+        "The **2nd International Post-TB Symposium (2023)** widened the focus to **post-TB health and wellbeing**, including mental health, economic and cardiovascular consequences. [IJTLD 2023]",
+        "**WHO 2024** notes that molecular tests may stay positive after cure, and recommends culture to confirm recurrence in previously treated patients. [WHO 2024]",
+        "The **British Thoracic Society 2017** NTM guideline remains a widely cited companion reference. [BTS 2017]",
+      ],
+    },
+    {
+      heading: "Exam and viva angle",
+      points: [
+        "Know the **NTM diagnostic criteria**: clinical plus radiological plus **two positive sputum cultures** (or one BAL). [ATS/ERS/ESCMID/IDSA 2020]",
+        "**Lady Windermere syndrome** = nodular-bronchiectatic MAC in the middle lobe and lingula of slender older women. [Harrison 22e]",
+        "**Never give macrolide monotherapy** for MAC; treat for **12 months after culture conversion**. [ATS/ERS/ESCMID/IDSA 2020]",
+        "**Smear positive, NAAT negative = think NTM**. [ICMR 2022]",
+        "PTLD definition: chronic respiratory abnormality attributable at least in part to previous TB - **not recurrence**. [International Post-TB Symposium 2019]",
+      ],
+    },
+  ],
+  tables: [
+    {
+      heading: "Drugs for NTM lung disease (adult)",
+      columns: ["Drug", "Dose and route", "Duration/titration", "Key adverse effects / contraindications"],
+      rows: [
+        ["Azithromycin", "500 mg oral thrice weekly (nodular) or 250-500 mg daily (cavitary)", "Until 12 months after culture conversion", "QT prolongation, hearing loss, GI upset; never as monotherapy"],
+        ["Clarithromycin (alternative)", "1000 mg thrice weekly or 500 mg BD", "As above", "More interactions (CYP3A4 inhibitor), bitter taste, QT"],
+        ["Rifampicin", "600 mg thrice weekly or 450-600 mg daily", "As above", "Hepatitis, interactions, lowers clarithromycin levels"],
+        ["Ethambutol", "25 mg/kg thrice weekly or 15 mg/kg daily", "As above", "Optic neuritis - monthly vision check"],
+        ["Amikacin IV", "15 mg/kg daily or 25 mg/kg thrice weekly", "First 2-3 months in cavitary MAC or M. abscessus", "Ototoxicity, nephrotoxicity; audiometry and creatinine"],
+        ["Amikacin liposome inhalation (ALIS)", "590 mg inhaled once daily", "Added for refractory MAC", "Dysphonia, cough, bronchospasm, allergic alveolitis"],
+        ["Itraconazole (CPA in PTLD)", "200 mg oral BD", "At least 6 months", "Hepatotoxicity, heart failure, interactions; check levels"],
+      ],
+    },
+    {
+      heading: "NTM species and their behaviour",
+      columns: ["Species", "Growth / Runyon group", "Typical disease", "Treatment backbone"],
+      rows: [
+        ["M. avium complex", "Slow, non-chromogen (III)", "Fibrocavitary, nodular-bronchiectatic, disseminated in HIV", "Macrolide + rifampicin + ethambutol (± amikacin)"],
+        ["M. kansasii", "Slow, photochromogen (I)", "Upper-lobe cavitary disease like TB", "Rifampicin + ethambutol + isoniazid or azithromycin, 12 months"],
+        ["M. abscessus", "Rapid (IV)", "Bronchiectasis, cystic fibrosis, skin and wound infection", "IV amikacin + imipenem/cefoxitin/tigecycline ± macrolide"],
+        ["M. fortuitum / M. chelonae", "Rapid (IV)", "Post-surgical and injection-site infection", "Two active drugs by susceptibility; debridement"],
+        ["M. gordonae", "Slow, scotochromogen (II)", "Usually a contaminant", "Rarely treated"],
+      ],
+    },
+    {
+      heading: "TB, NTM and PTLD - telling them apart",
+      columns: ["Feature", "Active / recurrent TB", "NTM lung disease", "Post-TB lung disease"],
+      rows: [
+        ["Smear", "Positive or negative", "Often positive", "Negative"],
+        ["NAAT for MTB", "Positive", "Negative", "Negative, or positive from dead bacilli (needs culture)"],
+        ["Culture", "MTB, MPT64 positive", "Mycobacteria, MPT64 negative, species identified", "Negative"],
+        ["Imaging", "New infiltrate or cavity", "Nodular-bronchiectatic or fibrocavitary", "Stable fibrosis, bronchiectasis, old cavities"],
+        ["Treatment", "ATT under NTEP", "Species-specific multidrug regimen", "Rehabilitation, bronchodilators, airway clearance"],
+      ],
+    },
+    {
+      heading: "ATS/ERS/ESCMID/IDSA 2020 criteria for NTM lung disease",
+      columns: ["Domain", "Requirement"],
+      rows: [
+        ["Clinical", "Pulmonary or systemic symptoms"],
+        ["Radiological", "Nodular or cavitary opacities on CXR, or bronchiectasis with multiple small nodules on HRCT"],
+        ["Exclusion", "Appropriate exclusion of other diagnoses (TB, cancer, CPA)"],
+        ["Microbiological", "Positive culture from 2 or more separate sputa, or 1 bronchial wash/BAL, or biopsy with granulomas/AFB plus positive culture"],
+      ],
+    },
+    {
+      heading: "PTLD assessment at the end of TB treatment",
+      columns: ["Test", "Finding to look for", "Action"],
+      rows: [
+        ["Symptom review and quality of life (SGRQ)", "Breathlessness, cough, sputum, haemoptysis", "Plan rehabilitation"],
+        ["Spirometry", "Obstructive, restrictive or mixed pattern", "Bronchodilator trial if obstructive"],
+        ["SpO2 at rest and exercise; 6MWT", "Desaturation, reduced distance", "Rehabilitation; oxygen assessment"],
+        ["Chest X-ray / HRCT", "Cavities, bronchiectasis, fibrosis, destroyed lung", "Airway clearance; CPA and NTM work-up"],
+        ["Echocardiography (if indicated)", "Pulmonary hypertension", "Oxygen; specialist referral"],
+      ],
+    },
+  ],
+  redFlags: [
+    "Haemoptysis over 100-200 mL in 24 hours or with hypoxaemia",
+    "Resting SpO2 under 90% or signs of cor pulmonale",
+    "New mass or thickening cavity wall in a TB scar in a smoker (cancer)",
+    "Sputum smear-positive but MTB-NAAT negative in a patient about to start or continue ATT",
+    "Fever, weight loss and new cavity after TB cure (recurrence, NTM or CPA - needs culture)",
+    "Hearing loss or visual change on amikacin or ethambutol",
+  ],
+  pearls: [
+    "**Smear positive, NAAT negative - think NTM.**",
+    "NTM diagnosis needs **two positive sputum cultures** plus clinical and radiological criteria.",
+    "**Lady Windermere**: slender older woman, middle lobe and lingula MAC.",
+    "**Azithromycin + rifampicin + ethambutol** for MAC; 12 months after conversion.",
+    "**Never macrolide monotherapy** - including 'bronchiectasis azithromycin' before excluding NTM.",
+    "**M. abscessus** is the hardest NTM to cure; check erm(41).",
+    "PTLD is **chronic abnormality after TB - not recurrence**; culture before repeating ATT.",
+    "Xpert can **stay positive for years** after cure.",
+    "Assess every TB patient at **end of treatment**: spirometry, SpO2, 6MWT.",
+  ],
+  mcqs: [
+    {
+      id: "respiratory-ntm-post-tb-q1",
+      stem: "A 62-year-old thin woman has 2 years of chronic cough. HRCT shows bronchiectasis and tree-in-bud nodules in the right middle lobe and lingula. Two sputum samples are AFB smear-positive, Xpert MTB/RIF is negative, and both cultures grow M. avium complex. Which is the most appropriate treatment?",
+      options: [
+        "Standard 2HRZE/4HRE under NTEP",
+        "Azithromycin alone 250 mg daily long term",
+        "Azithromycin, rifampicin and ethambutol three times weekly until 12 months after culture conversion",
+        "BPaLM for 26 weeks",
+      ],
+      answer: 2,
+      explanation:
+        "This is nodular-bronchiectatic MAC meeting ATS/ERS/ESCMID/IDSA 2020 criteria; macrolide-susceptible non-cavitary disease is treated with thrice-weekly azithromycin, rifampicin and ethambutol for 12 months after conversion. Standard ATT omits the macrolide that MAC depends on, azithromycin alone breeds macrolide resistance, and BPaLM is a regimen for drug-resistant M. tuberculosis.",
+      difficulty: "moderate",
+    },
+    {
+      id: "respiratory-ntm-post-tb-q2",
+      stem: "Under ATS/ERS/ESCMID/IDSA 2020 criteria, which microbiological finding is sufficient (with clinical and radiological criteria) to diagnose NTM lung disease?",
+      options: [
+        "One positive culture from a single expectorated sputum",
+        "Positive cultures from two separate expectorated sputum samples",
+        "A positive tuberculin skin test",
+        "A single positive smear without culture",
+      ],
+      answer: 1,
+      explanation:
+        "Because NTM are environmental and can contaminate a single sample, the criteria require positive cultures from at least two separate expectorated sputa, or one bronchial wash or lavage, or a biopsy with compatible histology and culture. One sputum or a smear alone is insufficient, and the tuberculin test cannot tell NTM disease from TB infection.",
+      difficulty: "easy",
+    },
+    {
+      id: "respiratory-ntm-post-tb-q3",
+      stem: "A 45-year-old man completed treatment for pulmonary TB 3 years ago. He has stable breathlessness, scarring on chest X-ray and a positive Xpert MTB/RIF Ultra with a 'trace' result. Sputum culture is pending. What is the best course?",
+      options: [
+        "Await liquid culture and assess for post-TB lung disease before restarting ATT",
+        "Restart 2HRZE/4HRE immediately as recurrent TB",
+        "Start a DR-TB regimen because of previous treatment",
+        "Ignore the result and discharge him",
+      ],
+      answer: 0,
+      explanation:
+        "Xpert can detect DNA from non-viable bacilli for years after cure, so a trace result in a previously treated patient with stable symptoms needs culture confirmation, while his breathlessness is assessed as possible post-TB lung disease. Empirical ATT risks unnecessary toxicity, a DR-TB regimen has no basis without resistance, and ignoring a positive result could miss true recurrence.",
+      difficulty: "hard",
+    },
+    {
+      id: "respiratory-ntm-post-tb-q4",
+      stem: "Which rapidly growing NTM is notorious for inducible macrolide resistance through the erm(41) gene?",
+      options: ["M. kansasii", "M. gordonae", "M. avium", "M. abscessus"],
+      answer: 3,
+      explanation:
+        "M. abscessus subspecies abscessus and bolletii carry a functional erm(41) gene, so they may appear macrolide-susceptible initially but become resistant on extended incubation. M. kansasii and M. avium are slow growers without this mechanism, and M. gordonae is usually a contaminant.",
+      difficulty: "moderate",
+    },
+    {
+      id: "respiratory-ntm-post-tb-q5",
+      stem: "A man cured of TB has a large left upper-lobe cavity and recurrent small haemoptysis. Aspergillus-specific IgG is strongly positive and HRCT shows a fungal ball with pericavitary thickening. What is the most appropriate first treatment?",
+      options: [
+        "Repeat ATT for 6 months",
+        "Oral itraconazole 200 mg twice daily for at least 6 months",
+        "Inhaled corticosteroid-LABA",
+        "Long-term azithromycin",
+      ],
+      answer: 1,
+      explanation:
+        "This is chronic pulmonary aspergillosis in a post-TB cavity; oral itraconazole 200 mg twice daily for at least 6 months is first-line, with surgery or bronchial artery embolisation for serious bleeding. Repeat ATT needs microbiological proof, ICS may worsen fungal and mycobacterial infection, and azithromycin does not treat Aspergillus.",
+      difficulty: "moderate",
+    },
+  ],
+  theory: [
+    {
+      id: "respiratory-ntm-post-tb-t1",
+      paper: "I",
+      kind: "long",
+      marks: 10,
+      minutes: 18,
+      frequency: "less-common",
+      question:
+        "Define post-tuberculosis lung disease. Describe its spectrum, assessment and management, and how you would differentiate it from recurrent TB and NTM disease.",
+      openingLines: [
+        "Post-TB lung disease is evidence of chronic respiratory abnormality, with or without symptoms, attributable at least in part to previous pulmonary TB.",
+        "About half of TB survivors have abnormal lung function, and India, with the largest number of TB survivors, carries the largest PTLD burden.",
+      ],
+      answer: [
+        {
+          heading: "Definition and burden",
+          points: ["International Post-TB Symposium 2019 definition; about 50% abnormal lung function; three times higher mortality."],
+        },
+        {
+          heading: "Spectrum",
+          points: [
+            "Airway: obstruction, bronchiectasis, stenosis, broncholithiasis.",
+            "Parenchymal: cavities, fibrosis, destroyed lung; pleural: fibrothorax, empyema.",
+            "Vascular: pulmonary hypertension, Rasmussen aneurysm; complications: CPA, NTM, cancer, recurrence.",
+          ],
+        },
+        {
+          heading: "Assessment at end of treatment",
+          points: ["Symptoms, SGRQ, spirometry, SpO2, 6MWT, chest X-ray; HRCT, Aspergillus IgG, echo when indicated."],
+        },
+        {
+          heading: "Management",
+          points: [
+            "Smoking and biomass cessation; pulmonary rehabilitation; vaccines.",
+            "Bronchodilators; cautious ICS; airway clearance; itraconazole for CPA; BAE for haemoptysis; LTOT; surgery for destroyed lung.",
+          ],
+        },
+        {
+          heading: "Differentiating recurrence and NTM",
+          points: [
+            "Recurrence needs NAAT plus culture; Xpert can stay positive after cure.",
+            "NTM: smear positive, NAAT negative, MPT64 negative, species identification; ATS/ERS 2020 criteria.",
+          ],
+        },
+        {
+          heading: "Prevention and programme",
+          points: ["Early diagnosis; adherence; NTEP post-treatment follow-up 2 years; link to NP-NCD respiratory services."],
+        },
+      ],
+      mustDraw: ["Spectrum diagram of PTLD (airway, parenchyma, pleura, vessels, complications)", "Table comparing recurrent TB, NTM and PTLD"],
+      markSplit: [
+        { part: "Definition and burden", marks: 1 },
+        { part: "Spectrum", marks: 2 },
+        { part: "Assessment", marks: 2 },
+        { part: "Management", marks: 3 },
+        { part: "Differentiation", marks: 2 },
+      ],
+      keywords: ["PTLD", "post-TB", "spirometry", "pulmonary rehabilitation", "CPA", "recurrence", "NTM"],
+    },
+    {
+      id: "respiratory-ntm-post-tb-t2",
+      paper: "I",
+      kind: "short-note",
+      marks: 5,
+      minutes: 9,
+      frequency: "less-common",
+      question: "Write a short note on pulmonary disease due to Mycobacterium avium complex.",
+      openingLines: [
+        "Mycobacterium avium complex is a slow-growing environmental non-tuberculous mycobacterium and the commonest cause of NTM lung disease.",
+        "It is diagnosed by the ATS/ERS/ESCMID/IDSA 2020 criteria and treated with a macrolide-based three-drug regimen.",
+      ],
+      answer: [
+        {
+          heading: "Phenotypes",
+          points: ["Fibrocavitary (older male smokers, COPD), nodular-bronchiectatic (Lady Windermere), hot tub lung, disseminated (HIV CD4 under 50)."],
+        },
+        {
+          heading: "Diagnosis",
+          points: ["Symptoms, CXR or HRCT findings, two positive sputum cultures or one BAL; macrolide and amikacin susceptibility."],
+        },
+        {
+          heading: "Treatment",
+          points: [
+            "Nodular: azithromycin, rifampicin, ethambutol thrice weekly; cavitary: daily plus amikacin 2-3 months.",
+            "12 months after conversion; ALIS if refractory; never macrolide monotherapy.",
+          ],
+        },
+        {
+          heading: "Monitoring",
+          points: ["Monthly culture, vision, audiometry, ECG."],
+        },
+      ],
+      mustDraw: ["Treatment table for nodular versus cavitary MAC"],
+      markSplit: [
+        { part: "Phenotypes", marks: 1 },
+        { part: "Diagnosis", marks: 2 },
+        { part: "Treatment and monitoring", marks: 2 },
+      ],
+      keywords: ["MAC", "Lady Windermere", "azithromycin", "ethambutol", "ALIS", "ATS/ERS 2020"],
+    },
+  ],
+  references: [
+    "Harrison's Principles of Internal Medicine, 22nd edition, 2025 - Nontuberculous Mycobacterial Infections",
+    "Daley CL et al. Treatment of Nontuberculous Mycobacterial Pulmonary Disease: an official ATS/ERS/ESCMID/IDSA clinical practice guideline, 2020",
+    "Haworth CS et al. British Thoracic Society guidelines for the management of NTM pulmonary disease, Thorax 2017",
+    "Migliori GB et al. Clinical standards for the assessment, management and rehabilitation of post-TB lung disease, Int J Tuberc Lung Dis 2021",
+    "Allwood BW et al. Post-tuberculosis lung health: perspectives from the First International Symposium, Int J Tuberc Lung Dis 2020",
+    "Nightingale R et al. Post-TB health and wellbeing (Second International Post-Tuberculosis Symposium), Int J Tuberc Lung Dis 2023",
+    "Technical and Operational Guidelines for TB Control in India, NTEP, MoHFW, 2023",
+  ],
+});
+
 export default topics;

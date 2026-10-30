@@ -981,4 +981,965 @@ topics.push({
   ],
 });
 
+topics.push({
+  id: "respiratory-ards",
+  title: "Acute respiratory distress syndrome",
+  frequency: "common",
+  oneLiner:
+    "**ARDS** is acute, diffuse, **inflammatory lung injury** with increased alveolar-capillary permeability, giving **bilateral opacities** and **hypoxaemia not explained by cardiac failure** within **1 week** of an insult; the **2023 global definition** extends Berlin to **HFNO, SpO2/FiO2 and lung ultrasound**, and only **lung-protective ventilation (6 mL/kg PBW, plateau 30 or less) and prone positioning** clearly save lives.",
+  keywords: [
+    "ARDS",
+    "acute lung injury",
+    "Berlin definition",
+    "global definition 2023",
+    "PaO2/FiO2",
+    "SpO2/FiO2",
+    "lung-protective ventilation",
+    "low tidal volume",
+    "plateau pressure",
+    "driving pressure",
+    "PEEP",
+    "prone positioning",
+    "ECMO",
+    "diffuse alveolar damage",
+    "VILI",
+    "ARDSNet",
+    "dexamethasone",
+    "conservative fluid strategy",
+  ],
+  sections: [
+    {
+      heading: "Definition and epidemiology",
+      points: [
+        "**ARDS** is acute diffuse inflammatory lung injury with increased pulmonary vascular permeability and loss of aerated tissue, causing hypoxaemia, bilateral opacities, increased shunt and dead space and reduced compliance. [Global Definition 2023]",
+        "**Berlin definition (2012)**: onset within **1 week** of a known insult or new/worsening symptoms; **bilateral opacities** not fully explained by effusion, collapse or nodules; respiratory failure **not fully explained by cardiac failure or fluid overload**; and PaO2/FiO2 300 or less on **PEEP or CPAP 5 cmH2O or more**. [Berlin 2012]",
+        "**LUNG SAFE (50 countries, 2016)**: ARDS was **10% of ICU admissions and 23% of ventilated patients**; it was **under-recognised (about 60% identified by clinicians)**; hospital mortality **35% mild, 40% moderate, 46% severe**. [LUNG SAFE 2016]",
+        "Global incidence is uncertain because resource-limited ICUs often lack ABG and CT - one driver of the **2023 global definition**. [Global Definition 2023]",
+        "**COVID-19** caused the largest ARDS burden in history, including India's 2021 delta wave, and showed that many patients meet ARDS criteria while on **HFNO** before intubation. [Global Definition 2023]",
+        "In India, **tropical infections** - severe falciparum malaria, **scrub typhus, leptospirosis**, dengue, influenza H1N1 - are prominent causes alongside sepsis and pneumonia; Indian ICU series report high mortality (often 40-60%). [ISCCM]",
+        "Overall ARDS mortality is about **35-45%**; most deaths are from sepsis and multi-organ failure rather than refractory hypoxaemia. [Harrison 22e]",
+      ],
+    },
+    {
+      heading: "Aetiology and risk factors",
+      points: [
+        "**Direct (pulmonary) injury**: **pneumonia (commonest cause overall)**, aspiration of gastric contents, inhalation injury, pulmonary contusion, near drowning, COVID-19 and influenza. [Harrison 22e]",
+        "**Indirect (extrapulmonary) injury**: **sepsis (commonest indirect cause)**, severe trauma with shock, **acute pancreatitis**, multiple transfusions (**TRALI**), burns, drug overdose, cardiopulmonary bypass. [Harrison 22e]",
+        "**Indian tropical causes**: falciparum and vivax malaria, scrub typhus, leptospirosis (pulmonary haemorrhage), dengue, hantavirus, organophosphate and paraquat poisoning, snake bite with sepsis. [ISCCM]",
+        "**Risk modifiers**: chronic alcohol use (raises risk), smoking, hypoalbuminaemia, obesity, older age, high-volume ventilation, positive fluid balance; **diabetes is associated with lower risk** in some cohorts. [Harrison 22e]",
+        "**Drugs**: aspirin overdose, opioids, chemotherapy (bleomycin), immune checkpoint inhibitors, amiodarone. [Harrison 22e]",
+        "**Ventilator-induced lung injury** can cause or worsen ARDS - so even patients without ARDS benefit from lower tidal volumes. [ATS 2024]",
+      ],
+    },
+    {
+      heading: "Pathophysiology - the 'why'",
+      points: [
+        "**Exudative phase (days 1-7)**: injury to **alveolar epithelium (type I cells) and capillary endothelium**, neutrophil influx, cytokines (IL-1, IL-6, IL-8, TNF), protein-rich oedema and **hyaline membranes - diffuse alveolar damage (DAD)**. [Harrison 22e]",
+        "**Proliferative phase (days 7-21)**: type II pneumocytes proliferate and clear oedema; most survivors recover here. [Harrison 22e]",
+        "**Fibrotic phase (after 3 weeks)** in some: fibrosis, bullae and long-term restriction and low DLCO. [Harrison 22e]",
+        "**Hypoxaemia is mainly shunt** from flooded and collapsed alveoli - so it **responds poorly to oxygen** and needs **PEEP** to recruit alveoli. [Harrison 22e]",
+        "**Baby lung concept**: the aerated lung may be only the size of a child's lung, so a 'normal' tidal volume over-distends it - the basis for **6 mL/kg predicted body weight**. [Gattinoni]",
+        "**VILI mechanisms**: **volutrauma** (over-distension), **barotrauma** (high pressure, pneumothorax), **atelectrauma** (cyclic opening and closing) and **biotrauma** (cytokine release spreading to other organs). [ATS 2024]",
+        "**Driving pressure** (plateau minus PEEP = tidal volume / compliance) reflects strain on the baby lung; values **over 15 cmH2O are linked to higher mortality**. [Amato NEJM 2015]",
+        "**Gravity-dependent collapse** of dorsal lung in the supine patient explains why **prone positioning** improves V/Q matching and spreads stress more evenly. [PROSEVA 2013]",
+        "**Increased dead space** (microthrombi, capillary loss) causes hypercapnia and is an independent predictor of death. [Harrison 22e]",
+      ],
+    },
+    {
+      heading: "Classification - Berlin and the 2023 global definition",
+      points: [
+        "**Berlin severity (PEEP 5 or more)**: **mild PaO2/FiO2 201-300, moderate 101-200, severe 100 or less**; mortality rises with each band. [Berlin 2012]",
+        "**2023 global definition** keeps Berlin's core and adds three categories: **non-intubated ARDS, intubated ARDS and modified definition for resource-limited settings**. [Global Definition 2023]",
+        "**Non-intubated ARDS**: PaO2/FiO2 300 or less, or **SpO2/FiO2 315 or less (with SpO2 97% or less)**, on **HFNO 30 L/min or more** or NIV/CPAP with end-expiratory pressure 5 cmH2O or more. [Global Definition 2023]",
+        "**Intubated ARDS severity**: **mild** P/F 201-300 or S/F 236-315; **moderate** P/F 101-200 or S/F 149-235; **severe** P/F 100 or less or S/F 148 or less. [Global Definition 2023]",
+        "**Imaging** may now be **chest X-ray, CT or lung ultrasound** (bilateral B-lines and/or consolidations by a trained operator). [Global Definition 2023]",
+        "**Resource-limited modification**: neither PEEP nor a minimum oxygen flow is required; **SpO2/FiO2 315 or less** with bilateral opacities on X-ray or ultrasound suffices. [Global Definition 2023]",
+        "**Kigali modification (2016)** was the forerunner, using S/F 315 or less and ultrasound in Rwanda. [Riviello 2016]",
+        "**Murray Lung Injury Score** (CXR quadrants, P/F, PEEP, compliance) over 3 is still used for **ECMO referral**. [Murray 1988]",
+      ],
+    },
+    {
+      heading: "Clinical features - history",
+      points: [
+        "**Rapidly progressive breathlessness** within hours to 1 week of the insult - typically **12-72 hours** after sepsis, aspiration or trauma. [Harrison 22e]",
+        "The history is that of the **cause**: fever and cough (pneumonia), abdominal pain (pancreatitis), transfusion within 6 hours (TRALI), febrile illness with eschar (scrub typhus). [Harrison 22e]",
+        "Early on there is **tachypnoea and anxiety** with surprisingly clear lungs on auscultation despite marked hypoxaemia. [Harrison 22e]",
+        "**Silent hypoxaemia** (low SpO2 with little distress) was characteristic of early COVID pneumonia - monitor oximetry not symptoms. [WHO 2023]",
+        "Ask about **orthopnoea, PND, chest pain and cardiac history** to weigh cardiogenic pulmonary oedema. [Harrison 22e]",
+      ],
+    },
+    {
+      heading: "Examination findings",
+      points: [
+        "**Tachypnoea (often over 30/min), tachycardia, use of accessory muscles, cyanosis** and SpO2 that barely rises with oxygen. [Harrison 22e]",
+        "**Bilateral crackles**, sometimes bronchial breathing over consolidation. [Harrison 22e]",
+        "Signs of the cause: **eschar** (scrub typhus), **jaundice with conjunctival suffusion** (leptospirosis), Grey Turner or Cullen sign (pancreatitis), shock (sepsis). [ISCCM]",
+        "**Absence of raised JVP, S3 and peripheral oedema** favours ARDS over cardiac failure, but they do not exclude coexisting overload. [Harrison 22e]",
+        "**Ventilated patient**: high plateau pressures and low compliance (often under 40 mL/cmH2O). [ATS 2024]",
+      ],
+    },
+    {
+      heading: "Differential diagnosis",
+      points: [
+        "**Cardiogenic pulmonary oedema**: history of heart disease, raised JVP, S3, cardiomegaly, **raised BNP**, LV dysfunction on echo, rapid response to diuretics. [ESC 2021]",
+        "**Diffuse alveolar haemorrhage**: haemoptysis (may be absent), falling haemoglobin, haemorrhagic BAL; vasculitis, leptospirosis - see the Diffuse alveolar haemorrhage topic. [Harrison 22e]",
+        "**Acute eosinophilic pneumonia**: BAL eosinophils over 25%, often new smokers; steroid-responsive. [Harrison 22e]",
+        "**Acute interstitial pneumonia (Hamman-Rich)** and **acute exacerbation of IPF**: DAD without a known trigger. [ATS/ERS 2022]",
+        "**Bilateral pneumonia without ARDS physiology**, PCP in HIV, miliary TB, and **cryptogenic organising pneumonia**. [Harrison 22e]",
+        "**Volume overload in AKI** - fluid balance, urine output and response to ultrafiltration help. [KDIGO 2024]",
+      ],
+    },
+    {
+      heading: "Investigations",
+      points: [
+        "**ABG**: PaO2/FiO2 ratio (on PEEP 5 or more), PaCO2, lactate; **SpO2/FiO2** when ABG is unavailable (valid only when SpO2 is 97% or less). [Global Definition 2023]",
+        "**Chest X-ray**: bilateral patchy or confluent opacities with air bronchograms, often sparing costophrenic angles; may lag behind the clinical picture by 12-24 hours. [Harrison 22e]",
+        "**Lung ultrasound**: bilateral B-lines, subpleural consolidations, irregular pleural line and spared areas - helps separate from cardiogenic oedema (smooth pleural line, homogeneous B-lines). [Global Definition 2023]",
+        "**CT thorax**: dependent consolidation with ventral ground glass - the gravity gradient. [Harrison 22e]",
+        "**Echocardiography** to assess LV function and **acute cor pulmonale** (RV dilatation, present in about 20-25% of moderate-severe ARDS). [ATS 2024]",
+        "**Find the cause**: blood cultures, procalcitonin, sputum or tracheal aspirate culture, CBNAAT, influenza/COVID PCR, malaria antigen, scrub typhus IgM ELISA, leptospira IgM, lipase. [ISCCM]",
+        "**NT-proBNP under 300 pg/mL** makes acute heart failure unlikely; a high value does not exclude ARDS. [ESC 2021]",
+        "**BAL** when infection or alternative diagnosis (DAH, eosinophilic pneumonia) is uncertain. [ATS 2024]",
+      ],
+    },
+    {
+      heading: "Initial management at district hospital and before ICU",
+      points: [
+        "**Recognise early**: tachypnoea with SpO2 under 92% on oxygen and bilateral infiltrates after an insult means likely ARDS - **call for ICU transfer early**. [WHO 2023]",
+        "**Oxygen** to SpO2 **92-96%** (avoid both hypoxaemia and hyperoxia); escalate quickly to **HFNO** if available. [ESICM 2023]",
+        "**Treat the cause within the hour**: sepsis bundle with blood cultures and **empirical antibiotics** (e.g. ceftriaxone 2 g IV daily plus azithromycin 500 mg IV daily for CAP; add **doxycycline 100 mg twice daily** when scrub typhus is suspected). [SSC 2021]",
+        "**Awake prone positioning** for COVID-related AHRF on HFNO reduces intubation; evidence is weaker for non-COVID causes. [ESICM 2023]",
+        "**Avoid fluid overload**: give fluid only for hypoperfusion, then aim for neutral or negative balance once shock resolves. [SSC 2021]",
+        "**Do not delay intubation** in deteriorating patients: rising RR, falling ROX index, exhaustion or altered sensorium. [ESICM 2023]",
+      ],
+    },
+    {
+      heading: "ICU management - ventilation and adjuncts",
+      points: [
+        "**Low tidal volume 4-8 mL/kg (start 6) of predicted body weight** - PBW men = 50 + 0.91 x (height cm - 152.4); women = 45.5 + 0.91 x (height cm - 152.4) - reduced mortality by about 9% absolute in ARMA. [ARDSNet 2000]",
+        "**Plateau pressure 30 cmH2O or less**; aim for **driving pressure under 15 cmH2O**. [ATS 2024]",
+        "**Higher PEEP** (without prolonged recruitment manoeuvres) is suggested for **moderate-severe ARDS**; avoid prolonged high-pressure recruitment manoeuvres (ART trial harm). [ATS 2024]",
+        "**Permissive hypercapnia** accepting pH 7.20 or more; oxygen target **SpO2 88-95% or PaO2 55-80 mmHg**. [ARDSNet 2000]",
+        "**Prone positioning for 12 hours or more a day (PROSEVA used about 16 hours)** in **severe ARDS (P/F under 150)** - mortality fell from 33% to 16%. [ATS 2024]",
+        "**Neuromuscular blockade**: not routine; ATS 2024 suggests against routine continuous NMBA (ROSE trial), reserving it for ventilator dyssynchrony or refractory hypoxaemia. [ATS 2024]",
+        "**Corticosteroids**: ATS 2024 suggests corticosteroids for ARDS (conditional); **dexamethasone 6 mg daily for 10 days** in COVID-19 needing oxygen; DEXA-ARDS regimen **20 mg IV daily days 1-5, then 10 mg days 6-10**; ESICM 2023 makes no recommendation for non-COVID ARDS. [ATS 2024]",
+        "**Conservative fluid strategy** once shock has resolved (FACTT) - more ventilator-free days without more kidney failure. [ARDSNet FACTT 2006]",
+        "**VV-ECMO** in selected severe ARDS at an experienced centre - EOLIA criteria: P/F under 50 for 3 hours, under 80 for 6 hours, or pH under 7.25 with PaCO2 60 mmHg or more for 6 hours despite optimal care. [ATS 2024]",
+        "**Do not use** high-frequency oscillatory ventilation (OSCILLATE harm), routine inhaled nitric oxide, beta-agonists or statins for ARDS. [ESICM 2023]",
+      ],
+    },
+    {
+      heading: "Special situations",
+      points: [
+        "**Pregnancy**: target PaO2 70 mmHg or more (SpO2 95% or more) for fetal oxygenation, left lateral tilt, avoid excessive permissive hypercapnia; prone is possible with padding; deliver if it improves maternal status. [SMFM 2022]",
+        "**Elderly**: higher mortality; discuss goals of care early and document ceiling of treatment. [ESICM 2023]",
+        "**CKD/AKI**: fluid removal by ultrafiltration when diuretic-resistant; dose antimicrobials by eGFR. [KDIGO 2024]",
+        "**Children**: use **PALICC-2 (2023)** paediatric ARDS criteria using oxygenation index (OI) or OSI. [PALICC-2 2023]",
+        "**Resource-limited**: use **SpO2/FiO2 and ultrasound** to diagnose, simple ventilators with PBW tidal volumes, prone positioning (cheap, needs only staff), and transfer early. [Global Definition 2023]",
+        "**Obesity**: tidal volume still by **PBW, not actual weight**; often higher PEEP needed for chest wall load. [ATS 2024]",
+      ],
+    },
+    {
+      heading: "Complications and prognosis",
+      points: [
+        "**Barotrauma** (pneumothorax, pneumomediastinum), **VAP**, catheter infections, DVT/PE, stress ulcer bleeding, delirium. [Harrison 22e]",
+        "**Multi-organ failure and sepsis** cause most deaths; refractory hypoxaemia causes only about 10-15%. [Harrison 22e]",
+        "**Survivors**: **ICU-acquired weakness**, reduced 6-minute walk at 5 years, **post-intensive care syndrome** (cognitive impairment, depression, PTSD), though lung function often returns near normal with mild DLCO reduction. [Herridge NEJM 2011]",
+        "**Poor prognostic factors**: age, severe P/F, high dead-space fraction, high driving pressure, chronic liver disease, immunosuppression, multi-organ failure. [Harrison 22e]",
+        "**Fibroproliferative ARDS** after 2-3 weeks has worse survival and long-term restriction. [Harrison 22e]",
+      ],
+    },
+    {
+      heading: "Referral, follow-up and monitoring",
+      points: [
+        "**Refer/transfer to ICU** when SpO2 cannot be held at 92% or more on 6 L/min or more of oxygen, RR over 30, or ROX index falling. [ESICM 2023]",
+        "**Refer to an ECMO centre early** - before multiorgan failure and before 7 days of injurious ventilation. [ELSO 2021]",
+        "**Monitoring in ICU**: plateau and driving pressure every shift, ABG, fluid balance, lactate, daily sedation interruption and **spontaneous breathing trial**. [ATS 2024]",
+        "**After discharge**: follow-up clinic at 6-12 weeks - spirometry, DLCO, 6-minute walk, mood and cognition screening, rehabilitation. [ESICM 2023]",
+        "Family physician role: **PICS screening**, physiotherapy, return-to-work planning and caregiver support. [SCCM]",
+      ],
+    },
+    {
+      heading: "Prevention",
+      points: [
+        "**Lung-protective ventilation for all ventilated patients**, even without ARDS (theatre and ICU). [ATS 2024]",
+        "**Early sepsis recognition and antibiotics**, restrictive transfusion (haemoglobin threshold 7 g/dL), and judicious fluids. [SSC 2021]",
+        "**Aspiration prevention**: head-of-bed elevation, careful sedation, swallowing assessment after stroke. [Harrison 22e]",
+        "**Vaccination**: influenza, pneumococcal and COVID-19 in at-risk adults. [ACIP 2024]",
+        "**Vector and infection control** in India: malaria (NCVBDC), scrub typhus awareness and early doxycycline, leptospirosis prophylaxis in floods (doxycycline 200 mg weekly). [NCVBDC]",
+      ],
+    },
+    {
+      heading: "Latest guideline updates (2023-2025)",
+      points: [
+        "**Global definition of ARDS (2023, published 2024)**: adds non-intubated ARDS on HFNO 30 L/min or more, SpO2/FiO2 cut-offs, ultrasound imaging and a resource-limited version. [Global Definition 2023]",
+        "**ESICM 2023 ARDS guideline**: HFNO recommended over conventional oxygen in AHRF; low tidal volume and prone positioning for moderate-severe ARDS; **against routine NMBA infusion and against prolonged recruitment manoeuvres**; dexamethasone for COVID-ARDS; no recommendation on steroids in non-COVID ARDS. [ESICM 2023]",
+        "**ATS 2024 update**: conditional recommendations **for corticosteroids**, **for VV-ECMO in selected severe ARDS**, **against routine NMBA**, and for **higher PEEP without prolonged recruitment** in moderate-severe ARDS. [ATS 2024]",
+        "**PALICC-2 (2023)** updates paediatric ARDS definitions and ventilation. [PALICC-2 2023]",
+        "**Severe CAP**: hydrocortisone 200 mg/day for 4-7 days (CAPE COD) reduced mortality - relevant to pneumonia-related ARDS. [ATS 2024]",
+      ],
+    },
+    {
+      heading: "Exam and viva angle",
+      points: [
+        "**Classic question**: define ARDS (Berlin), list causes, and describe lung-protective ventilation - **6 mL/kg PBW, plateau 30 or less, PEEP, prone**.",
+        "**What reduces mortality?** Low tidal volume, prone positioning in severe ARDS, conservative fluids (ventilator days); ECMO in selected cases; corticosteroids (conditional).",
+        "**Common mistake**: calculating tidal volume from actual body weight in an obese patient.",
+        "**Common mistake**: using PaO2/FiO2 off PEEP, or SpO2/FiO2 when SpO2 is 98-100% (the curve is flat).",
+        "**Shunt** is the main mechanism - hence poor response to oxygen and need for PEEP.",
+        "**Know PBW formula**: men 50 + 0.91 x (height - 152.4), women 45.5 + 0.91 x (height - 152.4).",
+      ],
+    },
+  ],
+  tables: [
+    {
+      heading: "Berlin 2012 vs global definition 2023",
+      columns: ["Criterion", "Berlin 2012", "Global 2023"],
+      rows: [
+        ["Timing", "Within 1 week of insult or new symptoms", "Same"],
+        ["Imaging", "Bilateral opacities on CXR or CT", "CXR, CT or lung ultrasound (bilateral B-lines/consolidation)"],
+        ["Origin of oedema", "Not fully explained by cardiac failure or fluid overload", "Same; can coexist with overload"],
+        ["Oxygenation", "P/F 300 or less on PEEP/CPAP 5 or more", "P/F 300 or less or S/F 315 or less (SpO2 97% or less)"],
+        ["Support required", "Invasive or non-invasive PEEP/CPAP", "Also HFNO 30 L/min or more; none in resource-limited version"],
+        ["Severity", "Mild 201-300, moderate 101-200, severe 100 or less", "Same bands for intubated; S/F 315, 235, 148 equivalents"],
+      ],
+    },
+    {
+      heading: "Lung-protective ventilation targets",
+      columns: ["Parameter", "Target", "Note"],
+      rows: [
+        ["Tidal volume", "6 mL/kg PBW (4-8)", "PBW from height and sex, not actual weight"],
+        ["Plateau pressure", "30 cmH2O or less", "Reduce Vt to 4 mL/kg if higher"],
+        ["Driving pressure", "Under 15 cmH2O", "Plateau minus PEEP"],
+        ["PEEP", "Higher PEEP in moderate-severe", "ARDSNet FiO2-PEEP table"],
+        ["Oxygen", "SpO2 88-95%, PaO2 55-80 mmHg", "Avoid hyperoxia"],
+        ["pH", "7.20 or more", "Permissive hypercapnia; raise RR up to 35"],
+        ["Prone", "12-16 hours/day if P/F under 150", "Start early (within 36 hours)"],
+      ],
+    },
+    {
+      heading: "Drugs and adjuncts in ARDS",
+      columns: ["Drug", "Dose and route", "Duration/titration", "Key adverse effects / contraindications"],
+      rows: [
+        ["Dexamethasone (COVID-19 on oxygen)", "6 mg IV or orally once daily", "Up to 10 days", "Hyperglycaemia, secondary infection, mucormycosis"],
+        ["Dexamethasone (DEXA-ARDS regimen)", "20 mg IV daily days 1-5, then 10 mg days 6-10", "10 days", "Hyperglycaemia, neuromyopathy"],
+        ["Hydrocortisone (severe CAP)", "200 mg/day IV infusion", "4-7 days then taper over 8-14 days", "Hyperglycaemia; avoid in influenza pneumonia"],
+        ["Cisatracurium", "15 mg IV bolus then 37.5 mg/hour (ACURASYS)", "Up to 48 hours, only if needed", "ICU-acquired weakness; needs deep sedation"],
+        ["Furosemide", "20-40 mg IV, titrated or infusion", "Until neutral/negative balance", "Hypokalaemia, AKI, ototoxicity"],
+        ["Enoxaparin (prophylaxis)", "40 mg SC once daily", "Throughout immobility", "Bleeding; reduce in CrCl under 30"],
+        ["Doxycycline (scrub typhus cause)", "100 mg orally or via NG twice daily", "7 days", "GI upset; use azithromycin in pregnancy"],
+      ],
+    },
+    {
+      heading: "ARDS vs cardiogenic pulmonary oedema",
+      columns: ["Feature", "ARDS", "Cardiogenic oedema"],
+      rows: [
+        ["History", "Sepsis, pneumonia, trauma, pancreatitis", "IHD, valve disease, hypertension"],
+        ["JVP, S3", "Normal, absent", "Raised, present"],
+        ["X-ray", "Patchy peripheral, normal heart, few effusions", "Cardiomegaly, upper lobe diversion, Kerley B, effusions"],
+        ["Ultrasound", "Patchy B-lines, irregular pleural line, consolidations", "Homogeneous B-lines, smooth pleural line"],
+        ["BNP", "Usually under 100 pg/mL", "Raised"],
+        ["Oedema protein", "High (fluid/plasma protein over 0.7)", "Low (under 0.6)"],
+        ["Response to diuretic", "Slow", "Rapid"],
+      ],
+    },
+    {
+      heading: "Causes - direct vs indirect",
+      columns: ["Direct (pulmonary)", "Indirect (extrapulmonary)", "Indian tropical"],
+      rows: [
+        ["Pneumonia (bacterial, viral, COVID)", "Sepsis", "Falciparum malaria"],
+        ["Aspiration of gastric contents", "Severe trauma, shock", "Scrub typhus"],
+        ["Inhalation injury", "Acute pancreatitis", "Leptospirosis"],
+        ["Pulmonary contusion", "Massive transfusion (TRALI)", "Dengue, H1N1 influenza"],
+        ["Near drowning", "Burns, drug overdose", "Paraquat, organophosphate"],
+      ],
+    },
+  ],
+  redFlags: [
+    "SpO2 under 92% despite 6 L/min or more of oxygen, or rising oxygen needs - transfer to ICU",
+    "Respiratory rate over 30/min, accessory muscle use or exhaustion",
+    "ROX index under 3.85 at 12 hours on HFNO (or falling) - prepare for intubation",
+    "Altered sensorium, shock or rising lactate",
+    "Refractory hypoxaemia P/F under 80 despite optimal ventilation and prone - refer for ECMO",
+    "New hypotension in a ventilated patient - exclude pneumothorax",
+  ],
+  pearls: [
+    "Berlin: 1 week, bilateral opacities, not cardiac, P/F 300 or less on PEEP 5.",
+    "Global 2023: adds HFNO 30 L/min, S/F 315 or less, and lung ultrasound.",
+    "Mild 300-200-100: moderate and severe bands at 200 and 100.",
+    "Tidal volume 6 mL/kg PBW, plateau 30 or less, driving pressure under 15.",
+    "Prone 16 hours in severe ARDS (PROSEVA) - cheapest life-saving ICU therapy.",
+    "Hypoxaemia in ARDS is shunt - it needs PEEP, not just more oxygen.",
+    "Avoid HFOV, routine NMBA and prolonged recruitment manoeuvres.",
+    "PBW not actual weight - the obese patient gets the same Vt as a lean one of equal height.",
+  ],
+  mcqs: [
+    {
+      id: "respiratory-ards-q1",
+      stem: "A 40-year-old man with severe falciparum malaria develops bilateral infiltrates 48 hours after admission. On mechanical ventilation with PEEP 10 cmH2O and FiO2 0.8, PaO2 is 72 mmHg; echocardiography is normal. How is this ARDS graded by the Berlin definition?",
+      options: [
+        "Mild ARDS",
+        "Moderate ARDS",
+        "Not ARDS because malaria is an indirect cause",
+        "Severe ARDS",
+      ],
+      answer: 3,
+      explanation:
+        "PaO2/FiO2 = 72/0.8 = 90, which is 100 or less on PEEP of at least 5, making it severe ARDS. Mild is 201-300 and moderate 101-200; the cause, direct or indirect, does not affect whether the definition is met - sepsis and malaria are recognised indirect causes, and a normal echo removes cardiac failure as the explanation.",
+      difficulty: "easy",
+    },
+    {
+      id: "respiratory-ards-q2",
+      stem: "A woman 160 cm tall weighing 95 kg is ventilated for ARDS. What initial tidal volume is appropriate?",
+      options: [
+        "About 315 mL",
+        "About 570 mL",
+        "About 760 mL",
+        "About 950 mL",
+      ],
+      answer: 0,
+      explanation:
+        "Tidal volume is set by predicted body weight: women 45.5 + 0.91 x (160 - 152.4) = about 52.4 kg, and 6 mL/kg gives about 315 mL. Using actual weight gives 570 mL at 6 mL/kg or 760 mL at 8 mL/kg and over-distends the baby lung; 950 mL is 10 mL/kg of actual weight, the old injurious practice that ARMA showed increased mortality.",
+      difficulty: "moderate",
+    },
+    {
+      id: "respiratory-ards-q3",
+      stem: "Under the 2023 global definition of ARDS, which patient can be diagnosed with ARDS without intubation?",
+      options: [
+        "A patient on 2 L/min nasal oxygen with unilateral consolidation",
+        "A patient on HFNO 40 L/min with bilateral opacities and SpO2/FiO2 of 200 within 3 days of pneumonia, normal echo",
+        "A patient with bilateral opacities explained entirely by acute LV failure on NIV",
+        "A patient with bilateral opacities 3 weeks after an insult on HFNO",
+      ],
+      answer: 1,
+      explanation:
+        "The 2023 global definition adds non-intubated ARDS: HFNO 30 L/min or more (or NIV/CPAP 5 or more), SpO2/FiO2 315 or less, bilateral opacities, onset within 1 week and not fully explained by cardiac failure. Unilateral disease on low-flow oxygen fails the imaging and support criteria; opacities fully explained by LV failure are excluded; onset 3 weeks after the insult fails the 1-week timing.",
+      difficulty: "moderate",
+    },
+    {
+      id: "respiratory-ards-q4",
+      stem: "A patient with ARDS has P/F ratio 110 on FiO2 0.7 and PEEP 12 after 12 hours of optimised low tidal volume ventilation. Which intervention has the strongest evidence for reducing mortality at this point?",
+      options: [
+        "High-frequency oscillatory ventilation",
+        "Inhaled nitric oxide",
+        "Prone positioning for at least 12-16 hours a day",
+        "Routine continuous cisatracurium infusion for 48 hours",
+      ],
+      answer: 2,
+      explanation:
+        "In severe ARDS with P/F under 150, prone positioning for prolonged sessions halved 28-day mortality in PROSEVA and is strongly recommended. HFOV increased mortality in OSCILLATE; inhaled nitric oxide improves oxygenation transiently without survival benefit; routine NMBA showed no benefit in ROSE and is not recommended routinely by ESICM 2023 or ATS 2024.",
+      difficulty: "moderate",
+    },
+    {
+      id: "respiratory-ards-q5",
+      stem: "What is the main mechanism of hypoxaemia in early ARDS?",
+      options: [
+        "Intrapulmonary shunt through flooded and collapsed alveoli",
+        "Alveolar hypoventilation",
+        "Diffusion impairment from thickened membranes",
+        "Low inspired oxygen",
+      ],
+      answer: 0,
+      explanation:
+        "In early ARDS blood perfuses alveoli filled with protein-rich fluid or collapsed, so it passes without gas exchange - a shunt, which is why hypoxaemia responds poorly to raising FiO2 and improves with PEEP and prone positioning that recruit alveoli. Hypoventilation causes hypercapnia with a normal A-a gradient; diffusion limitation contributes little at rest; low inspired oxygen is an altitude cause.",
+      difficulty: "easy",
+    },
+  ],
+  theory: [
+    {
+      id: "respiratory-ards-t1",
+      paper: "I",
+      kind: "long",
+      marks: 10,
+      minutes: 18,
+      frequency: "common",
+      question:
+        "Define acute respiratory distress syndrome. Discuss its causes, pathophysiology, diagnostic criteria (Berlin and 2023 global definition) and management.",
+      openingLines: [
+        "ARDS is acute diffuse inflammatory lung injury with increased alveolar-capillary permeability, producing bilateral opacities and hypoxaemia not fully explained by cardiac failure, within one week of an insult.",
+        "Its mortality is 35-45%, and lung-protective ventilation and prone positioning are the interventions proven to reduce it.",
+      ],
+      answer: [
+        {
+          heading: "Causes",
+          points: [
+            "Direct: pneumonia, aspiration, inhalation, contusion, drowning, COVID.",
+            "Indirect: sepsis, trauma, pancreatitis, TRALI, burns; Indian: malaria, scrub typhus, leptospirosis, dengue.",
+          ],
+        },
+        {
+          heading: "Pathophysiology",
+          points: [
+            "Exudative (DAD, hyaline membranes), proliferative, fibrotic phases.",
+            "Shunt-driven hypoxaemia, low compliance, baby lung, VILI (volutrauma, barotrauma, atelectrauma, biotrauma).",
+          ],
+        },
+        {
+          heading: "Diagnostic criteria",
+          points: [
+            "Berlin: 1 week, bilateral opacities, not cardiac, P/F 300 or less on PEEP 5; mild/moderate/severe 300/200/100.",
+            "Global 2023: non-intubated on HFNO 30 L/min or more, S/F 315 or less, ultrasound, resource-limited version.",
+          ],
+        },
+        {
+          heading: "Investigations",
+          points: [
+            "ABG, CXR, ultrasound, CT, echo, BNP; cause work-up: cultures, CBNAAT, malaria, scrub typhus, lipase.",
+          ],
+        },
+        {
+          heading: "Management",
+          points: [
+            "Treat cause; oxygen/HFNO; early ICU; Vt 6 mL/kg PBW, plateau 30 or less, driving pressure under 15, higher PEEP.",
+            "Prone 12-16 h if P/F under 150; conservative fluids; steroids (conditional); ECMO for refractory; avoid HFOV, routine NMBA.",
+          ],
+        },
+        {
+          heading: "Prognosis and follow-up",
+          points: [
+            "Mortality 35-45%; survivors have ICU-acquired weakness and PICS; follow-up with PFT, 6MWT and rehabilitation.",
+          ],
+        },
+      ],
+      mustDraw: ["Flow chart of ARDS phases", "Table of Berlin vs global 2023 criteria", "Ventilation targets box"],
+      markSplit: [
+        { part: "Definition and causes", marks: 2 },
+        { part: "Pathophysiology", marks: 2 },
+        { part: "Diagnostic criteria", marks: 2 },
+        { part: "Management", marks: 3 },
+        { part: "Prognosis", marks: 1 },
+      ],
+      keywords: ["ARDS", "Berlin", "global definition", "lung-protective ventilation", "prone", "ECMO"],
+    },
+    {
+      id: "respiratory-ards-t2",
+      paper: "I",
+      kind: "short-note",
+      marks: 5,
+      minutes: 9,
+      frequency: "common",
+      question: "Lung-protective ventilation in ARDS.",
+      openingLines: [
+        "Lung-protective ventilation limits tidal volume and pressure to avoid ventilator-induced lung injury in the small aerated 'baby lung' of ARDS.",
+        "It is the only ventilator strategy proven to reduce mortality (ARMA trial: 39.8% to 31%).",
+      ],
+      answer: [
+        {
+          heading: "Targets",
+          points: [
+            "Vt 6 mL/kg PBW (4-8), plateau 30 or less, driving pressure under 15, PEEP by FiO2-PEEP table (higher in moderate-severe).",
+            "SpO2 88-95%, PaO2 55-80, pH 7.20 or more (permissive hypercapnia).",
+          ],
+        },
+        {
+          heading: "Adjuncts",
+          points: [
+            "Prone 12-16 h for P/F under 150; NMBA only if dyssynchrony; avoid prolonged recruitment manoeuvres and HFOV.",
+            "Conservative fluids, daily sedation hold and SBT; ECMO if refractory.",
+          ],
+        },
+      ],
+      mustDraw: ["PBW formula and ventilation target box"],
+      markSplit: [
+        { part: "Rationale (VILI, baby lung)", marks: 1 },
+        { part: "Targets", marks: 2 },
+        { part: "Adjuncts", marks: 2 },
+      ],
+      keywords: ["low tidal volume", "plateau pressure", "driving pressure", "PEEP", "prone"],
+    },
+  ],
+  references: [
+    "Matthay MA et al. A new global definition of acute respiratory distress syndrome, Am J Respir Crit Care Med 2024 (consensus 2023)",
+    "ARDS Definition Task Force. Acute respiratory distress syndrome: the Berlin definition, JAMA 2012",
+    "Grasselli G et al. ESICM guidelines on acute respiratory distress syndrome: definition, phenotyping and respiratory support strategies, Intensive Care Med 2023",
+    "Qadir N et al. An update on management of adult patients with ARDS: an official ATS clinical practice guideline, Am J Respir Crit Care Med 2024",
+    "Harrison's Principles of Internal Medicine, 22nd edition, 2025 - Acute Respiratory Distress Syndrome",
+    "ARDS Network. Ventilation with lower tidal volumes (ARMA), NEJM 2000; Guerin C et al. PROSEVA, NEJM 2013",
+    "Bellani G et al. LUNG SAFE, JAMA 2016",
+    "Evans L et al. Surviving Sepsis Campaign international guidelines 2021",
+  ],
+});
+
+topics.push({
+  id: "respiratory-respiratory-failure-oxygen",
+  title: "Respiratory failure, oxygen therapy and high-flow nasal oxygen",
+  frequency: "core",
+  oneLiner:
+    "**Respiratory failure** is failure of gas exchange - **type 1 (hypoxaemic): PaO2 under 60 mmHg (8 kPa) with normal or low PaCO2**, **type 2 (hypercapnic): PaCO2 over 45 mmHg (6 kPa)** - and **oxygen is a prescribed drug** titrated to a **target saturation of 94-98%**, or **88-92%** in those at risk of hypercapnia, with **HFNO** and **NIV** as the next steps before intubation.",
+  keywords: [
+    "respiratory failure",
+    "type 1 respiratory failure",
+    "type 2 respiratory failure",
+    "hypoxaemia",
+    "hypercapnia",
+    "A-a gradient",
+    "oxygen therapy",
+    "target saturation",
+    "Venturi mask",
+    "non-rebreather mask",
+    "HFNC",
+    "HFNO",
+    "ROX index",
+    "NIV",
+    "BiPAP",
+    "CPAP",
+    "oxygen toxicity",
+    "absorption atelectasis",
+    "oxygen-induced hypercapnia",
+    "oxygen concentrator",
+  ],
+  sections: [
+    {
+      heading: "Definition and epidemiology",
+      points: [
+        "**Respiratory failure** is the inability of the respiratory system to maintain adequate gas exchange: **PaO2 under 60 mmHg (8 kPa)** and/or **PaCO2 over 45 mmHg (6 kPa)** breathing air at sea level. [Harrison 22e]",
+        "**Type 1 (hypoxaemic)**: low PaO2, normal or low PaCO2 - a gas-exchange (lung) failure. **Type 2 (hypercapnic, ventilatory)**: high PaCO2, usually with low PaO2 - a pump failure. [Harrison 22e]",
+        "**Acute, chronic and acute-on-chronic**: acute hypercapnia lowers pH (under 7.35); chronic hypercapnia has a near-normal pH with raised bicarbonate; acute-on-chronic shows high PaCO2, high bicarbonate and low pH. [BTS 2017]",
+        "Two further types are sometimes taught: **type 3 (perioperative, atelectasis)** and **type 4 (shock, hypoperfusion)**. [Harrison 22e]",
+        "**Acute hypoxaemic respiratory failure** is the commonest reason for ICU admission; COVID-19 exposed the need for oxygen at scale, with India's 2021 second wave creating a national oxygen crisis. [MoHFW 2021]",
+        "**Oxygen is an essential medicine** in the **WHO Model List** and **India's NLEM 2022**; hundreds of **PSA oxygen plants** were installed in Indian public hospitals after 2021 (PM CARES). [NLEM 2022]",
+        "Audits show oxygen is often given **without prescription or target**, and over-oxygenation is common - both linked to harm. [BTS 2017]",
+      ],
+    },
+    {
+      heading: "Causes",
+      points: [
+        "**Type 1 causes**: pneumonia, ARDS, pulmonary oedema, pulmonary embolism, asthma, ILD, pneumothorax, COVID-19, atelectasis. [Harrison 22e]",
+        "**Type 2 - lung/airway**: **COPD exacerbation** (commonest), severe life-threatening asthma, bronchiectasis, cystic fibrosis, upper airway obstruction. [BTS 2017]",
+        "**Type 2 - central drive**: opioid or benzodiazepine overdose, brainstem stroke, encephalitis, **obesity hypoventilation**, hypothyroidism. [Harrison 22e]",
+        "**Type 2 - neuromuscular**: Guillain-Barre syndrome, myasthenic crisis, **organophosphate poisoning and snake-bite (neurotoxic krait/cobra)** - important in rural India, motor neurone disease, high cervical cord injury - see the Neuromuscular causes topic. [ICMR STW]",
+        "**Type 2 - chest wall**: kyphoscoliosis, post-TB thoracoplasty and fibrothorax (common in India), flail chest, morbid obesity. [Harrison 22e]",
+        "**Iatrogenic hypercapnia**: excessive oxygen in COPD, sedatives, opioids and residual neuromuscular blockade. [BTS 2017]",
+      ],
+    },
+    {
+      heading: "Pathophysiology - the five mechanisms of hypoxaemia",
+      points: [
+        "**Alveolar gas equation**: PAO2 = FiO2 x (Patm - 47) - PaCO2/0.8; on room air at sea level about 150 - PaCO2/0.8; **normal A-a gradient** is about 5-10 mmHg in the young and roughly **(age/4) + 4**. [Harrison 22e]",
+        "**V/Q mismatch** - the commonest cause (COPD, asthma, pneumonia, PE); raised A-a gradient; **corrects well with oxygen**. [Harrison 22e]",
+        "**Shunt** (ARDS, lobar consolidation, intracardiac shunt, hepatopulmonary syndrome); raised A-a gradient; **poor response to oxygen** - needs PEEP or recruitment. [Harrison 22e]",
+        "**Hypoventilation** (drugs, neuromuscular disease) - **normal A-a gradient**, PaCO2 high; corrects with ventilation, and oxygen alone masks it. [Harrison 22e]",
+        "**Diffusion impairment** (ILD, emphysema) - mainly on exercise; and **low inspired PO2** (high altitude, e.g. Leh, Sikkim) with normal A-a gradient. [Harrison 22e]",
+        "**Oxyhaemoglobin dissociation curve**: SpO2 90% corresponds to PaO2 about 60 mmHg - the 'shoulder' below which saturation falls steeply; above 97%, large PaO2 changes barely alter SpO2. [Harrison 22e]",
+        "**Hypercapnia** arises when alveolar ventilation falls: PaCO2 = k x VCO2 / VA; the load (resistance, elastance, dead space) exceeds the pump (drive, muscles), and the pump fatigues. [Harrison 22e]",
+        "**Why oxygen raises PaCO2 in COPD**: mainly **worsened V/Q matching from release of hypoxic pulmonary vasoconstriction** and the **Haldane effect** (oxygenated haemoglobin carries less CO2), with only a small part from reduced hypoxic drive. [BTS 2017]",
+      ],
+    },
+    {
+      heading: "Classification and oxygen targets",
+      points: [
+        "**BTS 2017 targets**: **94-98%** for most acutely ill adults; **88-92%** for those at risk of hypercapnic failure; review if target cannot be held. [BTS 2017]",
+        "**At risk of hypercapnia**: COPD, **morbid obesity (OHS)**, cystic fibrosis, **chest wall deformity** (kyphoscoliosis, thoracoplasty), **neuromuscular disease**, bronchiectasis with fixed obstruction, and previous hypercapnic failure. [BTS 2017]",
+        "**Other guidelines**: TSANZ 2022 suggests **92-96%** for most and 88-92% for hypercapnic risk; BMJ Rapid Recommendation 2018 advises **stopping oxygen at SpO2 over 96%** (and not starting at 93% or more in most). [TSANZ 2022]",
+        "**Over-oxygenation kills**: the IOTA meta-analysis showed liberal oxygen (SpO2 above about 96%) increased mortality in acutely ill adults. [Lancet IOTA 2018]",
+        "**Acute MI or stroke**: give oxygen only if **SpO2 under 90%** (MI) or under 94% (stroke) - routine oxygen gives no benefit (AVOID, DETO2X, SO2S). [ESC 2023]",
+        "**Exceptions needing high oxygen regardless of SpO2**: **carbon monoxide poisoning**, cyanide, cluster headache, pneumothorax (in hypoxaemic patients), sickle crisis with hypoxaemia, cardiac arrest during CPR. [BTS 2017]",
+        "**Pulse oximetry limitations**: overestimates SpO2 in **darker skin** (occult hypoxaemia), unreliable with poor perfusion, nail polish, carboxyhaemoglobin (falsely normal) and methaemoglobin (reads about 85%). [FDA 2025]",
+      ],
+    },
+    {
+      heading: "Clinical features",
+      points: [
+        "**Hypoxaemia**: breathlessness, tachypnoea, tachycardia, restlessness, confusion, central cyanosis (needs about 5 g/dL deoxygenated haemoglobin - absent in anaemia). [Harrison 22e]",
+        "**Hypercapnia**: headache (morning), drowsiness, **flapping tremor (asterixis)**, warm peripheries, bounding pulse, papilloedema, and **CO2 narcosis** (coma). [Harrison 22e]",
+        "**Respiratory muscle fatigue**: **paradoxical abdominal movement**, accessory muscle use, inability to complete sentences, rising RR then sudden slowing - a pre-arrest sign. [Harrison 22e]",
+        "**Neuromuscular weakness**: low single-breath count, weak cough, staccato speech; forced vital capacity under 20 mL/kg warns of failure. [Harrison 22e]",
+        "**History**: chronic lung disease, home oxygen, sleep disordered breathing, sedative drugs, poisoning, snake bite, recent surgery. [ICMR STW]",
+      ],
+    },
+    {
+      heading: "Examination",
+      points: [
+        "**Count respiratory rate for a full minute** - the most sensitive early warning sign; RR over 24 is abnormal, over 30 severe (NEWS2). [NEWS2 2017]",
+        "**SpO2 with FiO2**: the same SpO2 of 94% means something different on air and on 15 L/min - always record the oxygen being given. [BTS 2017]",
+        "**Signs of the cause**: wheeze (asthma, COPD), crackles (pneumonia, oedema, ILD), silent chest, tracheal shift (pneumothorax), pin-point pupils (opioids), fasciculations and miosis (organophosphate), ptosis (krait bite, myasthenia). [Harrison 22e]",
+        "**Cor pulmonale**: raised JVP, loud P2, ankle oedema - suggests chronic hypoxaemia. [Harrison 22e]",
+        "**GCS** and ability to protect the airway decide between NIV and intubation. [BTS/ICS 2016]",
+      ],
+    },
+    {
+      heading: "Differential diagnosis of the breathless hypoxaemic patient",
+      points: [
+        "**Normal A-a gradient with high PaCO2** = hypoventilation - look at drive, nerves, muscles, chest wall. [Harrison 22e]",
+        "**Raised A-a gradient that corrects with oxygen** = V/Q mismatch (airways, PE, pneumonia). [Harrison 22e]",
+        "**Raised A-a gradient not correcting with 100% oxygen** = shunt (ARDS, consolidation, AV malformation, intracardiac). [Harrison 22e]",
+        "**Breathless with normal SpO2**: metabolic acidosis (DKA Kussmaul breathing), anaemia, anxiety/panic, early PE, CO poisoning (falsely normal SpO2). [Harrison 22e]",
+        "**Cyanosis with normal PaO2**: methaemoglobinaemia (dapsone, nitrites, aniline dyes) - chocolate-brown blood, SpO2 around 85%; treat with methylene blue 1-2 mg/kg IV. [Harrison 22e]",
+        "**Platypnoea-orthodeoxia** (worse sitting up): hepatopulmonary syndrome, PFO - see The lung in systemic disease topic. [Harrison 22e]",
+      ],
+    },
+    {
+      heading: "Investigations",
+      points: [
+        "**Pulse oximetry** to screen and titrate, with **ABG** for all patients with SpO2 below target, at risk of hypercapnia, unwell, or with suspected acidosis - see the Arterial blood gas topic. [BTS 2017]",
+        "**Repeat ABG 30-60 minutes** after any change in oxygen in patients at risk of hypercapnia. [BTS 2017]",
+        "**Venous blood gas**: venous pH is close to arterial and a **venous PCO2 under 45 mmHg** helps rule out hypercapnia, but VBG cannot replace ABG for PaO2. [BTS 2017]",
+        "**Chest X-ray, ECG, lung ultrasound**; CBC, electrolytes, glucose; troponin and BNP; D-dimer/CTPA where PE is suspected. [Harrison 22e]",
+        "**Neuromuscular disease**: serial **FVC (under 20 mL/kg or a 30% fall)**, negative inspiratory force (weaker than -30 cmH2O) and single breath count - the '20/30/40 rule'. [Harrison 22e]",
+        "**P/F ratio** on ABG and **S/F ratio** from oximetry quantify type 1 failure; **ROX index** on HFNO. [Global Definition 2023]",
+      ],
+    },
+    {
+      heading: "Oxygen therapy - devices and practice in OPD, ward and district hospital",
+      points: [
+        "**Nasal cannula 1-4 L/min**: FiO2 about **24-40%** (roughly +3-4% per litre); comfortable, allows eating; actual FiO2 varies with breathing pattern. [BTS 2017]",
+        "**Simple face mask 5-10 L/min**: FiO2 about **35-60%**; never under 5 L/min (CO2 rebreathing). [BTS 2017]",
+        "**Venturi (fixed-performance) mask**: **24% (2-4 L/min), 28% (4-6 L/min), 35% (8-10 L/min), 40% (10-12 L/min), 60% (15 L/min)** - accurate FiO2, the device of choice in COPD; increase flow by 50% if RR over 30. [BTS 2017]",
+        "**Non-rebreather (reservoir) mask 15 L/min**: FiO2 about **60-90%** - for critical illness, shock, CO poisoning, major trauma; switch down as soon as stable. [BTS 2017]",
+        "**Start**: critically ill - 15 L/min reservoir mask; most hypoxaemic patients - nasal cannula 2-6 L/min or face mask 5-10 L/min; **COPD/hypercapnic risk - 24% or 28% Venturi or 1-2 L/min nasal cannula** targeting 88-92%. [BTS 2017]",
+        "**Prescribe** oxygen on the drug chart with the **target range, device and flow**; nurses titrate within the range and record on the observation chart. [BTS 2017]",
+        "**Weaning**: step down when stable at the upper end of target; stop when SpO2 stays in range on the lowest flow for two observations. [BTS 2017]",
+        "**Never stop oxygen abruptly in hypercapnic patients** - rebound hypoxaemia; step down to 24-28%. [BTS 2017]",
+        "**Humidification** is not needed for short-term low-flow oxygen; consider it for prolonged high flow or tracheostomy. [BTS 2017]",
+        "**Oxygen concentrators** give 5-10 L/min at about **90-95% purity**; in India cylinders are **black with a white shoulder**, and remaining duration (minutes) = cylinder contents in litres x (current pressure / full pressure) / flow in L/min. [MoHFW 2021]",
+      ],
+    },
+    {
+      heading: "High-flow nasal oxygen, ROX index and NIV vs HFNO",
+      points: [
+        "**HFNO** delivers heated (37 degrees C), fully humidified gas at **30-60 L/min** with **FiO2 0.21-1.0**, matching or exceeding the patient's inspiratory flow so FiO2 is precise. [ERS 2022]",
+        "**Mechanisms**: **washout of nasopharyngeal dead space**, a small **PEEP effect (about 1 cmH2O per 10 L/min with mouth closed)**, reduced work of breathing, better secretion clearance and comfort. [ERS 2022]",
+        "**Evidence**: FLORALI (2015) - in non-hypercapnic AHRF HFNO reduced 90-day mortality versus standard oxygen or NIV and reduced intubation in P/F 200 or less. [FLORALI 2015]",
+        "**ROX index = (SpO2/FiO2) / respiratory rate**; **4.88 or more at 2, 6 or 12 hours predicts HFNO success**; **under 2.85 at 2 h, 3.47 at 6 h or 3.85 at 12 h predicts failure** - escalate and consider intubation. [Roca 2019]",
+        "**NIV (BiPAP)** is first-line for **acute hypercapnic failure in COPD with pH under 7.35 and PaCO2 over 45 mmHg** after initial medical therapy, and **CPAP/NIV for cardiogenic pulmonary oedema** - see the AECOPD and NIV topic. [ERS/ATS 2017]",
+        "**HFNO vs NIV**: HFNO is suggested over NIV for **de novo hypoxaemic failure**; NIV over HFNO for **hypercapnic COPD**, with HFNO as an alternative if NIV is not tolerated; HFNO post-extubation in low-risk patients and NIV/HFNO in high-risk. [ERS 2022]",
+        "**Delayed intubation harms**: failing HFNO or NIV beyond 48 hours is linked to higher mortality - set a review time and failure criteria (ROX, HACOR score over 5 at 1 hour for NIV). [ESICM 2023]",
+        "**Intubation criteria**: inability to protect airway, GCS falling, exhaustion, haemodynamic instability, refractory hypoxaemia (SpO2 under 88% on FiO2 1.0), worsening acidosis despite NIV. [BTS/ICS 2016]",
+      ],
+    },
+    {
+      heading: "Special situations",
+      points: [
+        "**COPD exacerbation in an ambulance or OPD**: 28% Venturi or 1-2 L/min cannula to 88-92%; pre-hospital titrated oxygen halved mortality versus high-flow oxygen (Austin 2010). [BMJ 2010]",
+        "**Pregnancy**: target **94-98%**; left lateral tilt; fetal oxygenation depends on maternal PaO2 - escalate early. [BTS 2017]",
+        "**Children**: target 94-98% in most acute illness; WHO recommends oxygen at **SpO2 under 90%** in resource-limited settings, nasal prongs 0.5-1 L/min in infants. [WHO 2016]",
+        "**Neuromuscular disease**: oxygen alone may mask hypoventilation - measure PaCO2 and FVC, consider NIV early. [BTS 2017]",
+        "**Paraquat poisoning, bleomycin and amiodarone lung**: high FiO2 worsens injury - give oxygen only for SpO2 under about 88-90%. [BTS 2017]",
+        "**High altitude (Ladakh, Sikkim, Himalayan treks)**: SpO2 is physiologically lower; oxygen 2-4 L/min and descent for HAPE. [WMS 2024]",
+        "**Resource-limited setting**: concentrators with flow splitters, oximeters and the WHO Oxygen Access Scale-up; use bubble CPAP in children where HFNO is unavailable. [WHO 2023]",
+      ],
+    },
+    {
+      heading: "Complications - oxygen toxicity and hypercapnia risk",
+      points: [
+        "**Oxygen-induced hypercapnia and acidosis** in COPD and other at-risk groups - avoid by targeting 88-92% and using Venturi masks. [BTS 2017]",
+        "**Absorption atelectasis**: high FiO2 (over 0.6) washes out nitrogen, so poorly ventilated alveoli collapse - increases shunt. [Harrison 22e]",
+        "**Pulmonary oxygen toxicity (Lorrain Smith effect)**: reactive oxygen species cause tracheobronchitis and DAD after prolonged **FiO2 over 0.6 for more than 24-48 hours**. [Harrison 22e]",
+        "**CNS oxygen toxicity (Paul Bert effect)**: seizures in hyperbaric oxygen above about 2 atmospheres. [Harrison 22e]",
+        "**Retinopathy of prematurity** and bronchopulmonary dysplasia in preterm infants. [WHO 2016]",
+        "**Hyperoxia in MI and post-cardiac arrest** increases infarct size and harms - titrate. [ESC 2023]",
+        "**Fire hazard**: no smoking or open flame near oxygen; burns from smoking on home oxygen. [BTS 2015]",
+        "**Nasal dryness, epistaxis, pressure sores** from masks and cannulae. [BTS 2017]",
+      ],
+    },
+    {
+      heading: "Referral, follow-up and monitoring",
+      points: [
+        "**Refer to HDU/ICU** when SpO2 cannot be held in target on FiO2 0.4-0.5 or 6 L/min or more, RR over 30, NEWS2 7 or more, or pH under 7.25 in hypercapnic failure. [NEWS2 2017]",
+        "**Monitor**: SpO2 continuously in acute failure, RR and NEWS2 at least 4-hourly, ABG after changes, and ROX at 2, 6 and 12 hours on HFNO. [BTS 2017]",
+        "**Before discharge**: off oxygen or assessed for **long-term oxygen therapy** - LTOT needs stable PaO2 55 mmHg or less (or under 60 with cor pulmonale or polycythaemia) on two ABGs 3 weeks apart - see the Pulmonary rehabilitation and long-term home oxygen topic. [BTS 2015]",
+        "Do not prescribe **home oxygen at discharge** without reassessing 6-8 weeks later - many no longer qualify. [BTS 2015]",
+        "Give **oxygen alert cards** to patients with previous hypercapnic failure stating their target range. [BTS 2017]",
+      ],
+    },
+    {
+      heading: "Prevention, programme and system issues in India",
+      points: [
+        "**Prevent the causes**: smoking cessation, COPD and asthma control, vaccination, early pneumonia treatment, snake-bite and organophosphate poisoning first aid. [ICMR STW]",
+        "**Medical oxygen** is in **NLEM 2022** and was declared an essential drug with price capping of oxygen and concentrators (NPPA 2021). [NLEM 2022]",
+        "**PSA plants, liquid medical oxygen tanks and concentrators** were scaled up nationally after 2021; facility oxygen audits and trained 'oxygen stewards' are recommended. [MoHFW 2021]",
+        "**Pulse oximeters at Ayushman Arogya Mandirs** allow community detection of hypoxaemia in pneumonia and COVID. [MoHFW]",
+        "**Rational oxygen use**: prescribe with a target, avoid wasteful flows, and wean promptly to conserve supply. [MoHFW 2021]",
+      ],
+    },
+    {
+      heading: "Latest guideline updates (2022-2025)",
+      points: [
+        "**BTS 2017 emergency oxygen guideline** (O'Driscoll, with 2019-2023 targeted updates) remains the UK standard: **94-98% / 88-92%**, prescription with target. [BTS 2017]",
+        "**ERS 2022 HFNC guideline**: HFNO over conventional oxygen in AHRF; over NIV in AHRF (conditional); NIV first in hypercapnic COPD; HFNO post-extubation. [ERS 2022]",
+        "**ESICM 2023**: recommends HFNO over conventional oxygen for non-COVID AHRF to reduce intubation; no recommendation for or against NIV over HFNO in non-COVID AHRF. [ESICM 2023]",
+        "**TSANZ 2022** oxygen guideline: SpO2 **92-96%** general target. [TSANZ 2022]",
+        "**Pulse oximetry and skin pigmentation**: FDA draft guidance 2025 requires testing across skin tones - interpret 'normal' SpO2 cautiously in dark-skinned patients. [FDA 2025]",
+        "**ICU oxygen trials** (e.g. Mega-ROX) have not shown a clear advantage of very conservative over usual targets in ventilated adults - avoid both extremes. [Mega-ROX 2025]",
+      ],
+    },
+    {
+      heading: "Exam and viva angle",
+      points: [
+        "**Classic question**: 'oxygen therapy - indications, devices, targets, complications' - draw the device-FiO2 table and say 94-98 / 88-92.",
+        "**Venturi mask colours vary by manufacturer** - always quote the percentage and the flow printed on the valve.",
+        "**Common mistake**: giving 15 L/min non-rebreather to a COPD patient and not repeating the ABG.",
+        "**Common mistake**: assuming SpO2 99% is safe - in CO poisoning it is falsely normal; in hypercapnic patients it can hide a PaCO2 of 90.",
+        "**ROX index** - know the formula and the 4.88 cut-off.",
+        "**Why oxygen causes hypercapnia** - V/Q mismatch and Haldane effect, not just 'loss of hypoxic drive'.",
+        "**Normal A-a gradient + high CO2** = hypoventilation - examiners love this.",
+      ],
+    },
+  ],
+  tables: [
+    {
+      heading: "Type 1 vs type 2 respiratory failure",
+      columns: ["Feature", "Type 1 (hypoxaemic)", "Type 2 (hypercapnic)"],
+      rows: [
+        ["Definition", "PaO2 under 60 mmHg, PaCO2 normal or low", "PaCO2 over 45 mmHg, PaO2 usually low"],
+        ["Mechanism", "V/Q mismatch, shunt, diffusion", "Alveolar hypoventilation (pump failure)"],
+        ["A-a gradient", "Raised", "Normal if pure hypoventilation; raised in COPD"],
+        ["Examples", "Pneumonia, ARDS, oedema, PE, ILD", "COPD, OHS, GBS, myasthenia, opioids, kyphoscoliosis"],
+        ["Oxygen target", "94-98%", "88-92%"],
+        ["Support", "Oxygen, HFNO, CPAP, intubation", "Controlled oxygen, NIV, intubation"],
+      ],
+    },
+    {
+      heading: "Oxygen devices and FiO2",
+      columns: ["Device", "Flow", "Approximate FiO2", "Best use"],
+      rows: [
+        ["Nasal cannula", "1-4 L/min", "24-40%", "Mild hypoxaemia, long-term, COPD at 1-2 L/min"],
+        ["Simple face mask", "5-10 L/min", "35-60%", "Moderate hypoxaemia, not hypercapnic"],
+        ["Venturi mask", "2-15 L/min by valve", "24, 28, 35, 40, 60% fixed", "Hypercapnic risk - precise FiO2"],
+        ["Non-rebreather reservoir mask", "15 L/min", "60-90%", "Critical illness, CO poisoning, trauma"],
+        ["HFNO", "30-60 L/min", "21-100%", "AHRF, post-extubation, NIV intolerance"],
+        ["CPAP/NIV", "Pressure-set", "Up to 100%", "Cardiogenic oedema (CPAP); hypercapnic COPD (BiPAP)"],
+      ],
+    },
+    {
+      heading: "Drugs and doses (oxygen as a drug and reversal agents)",
+      columns: ["Drug", "Dose and route", "Duration/titration", "Key adverse effects / contraindications"],
+      rows: [
+        ["Oxygen (most acute illness)", "Device and flow to SpO2 94-98%", "Wean as improves; stop when stable on air", "Hyperoxia harm; fire risk"],
+        ["Oxygen (hypercapnic risk)", "24-28% Venturi or 1-2 L/min cannula to 88-92%", "ABG at 30-60 min; titrate", "CO2 retention if over-titrated; never stop abruptly"],
+        ["Naloxone (opioid hypoventilation)", "0.4 mg IV/IM, repeat every 2-3 min up to 2 mg (titrate 0.1 mg in dependence)", "Infusion if long-acting opioid", "Withdrawal, pulmonary oedema; short half-life"],
+        ["Flumazenil (benzodiazepine)", "0.2 mg IV, repeat 0.1 mg to max 1 mg", "Single use", "Seizures in mixed overdose or chronic use - avoid routinely"],
+        ["Atropine (organophosphate)", "1.8-3 mg IV, double every 5 min until chest clear, HR over 80, SBP over 80", "Infusion 10-20% of loading dose per hour", "Atropine toxicity: delirium, hyperthermia, ileus"],
+        ["Neostigmine + atropine (cobra bite)", "Neostigmine 1.5-2 mg IM (adult) with atropine 0.6 mg IV", "If response, 0.5 mg every 30 min with ASV", "Bradycardia, secretions; krait neurotoxicity responds poorly"],
+        ["Methylene blue (methaemoglobinaemia)", "1-2 mg/kg IV over 5 min", "Repeat once after 1 hour if needed", "Avoid in G6PD deficiency, serotonergic drugs"],
+      ],
+    },
+    {
+      heading: "ROX index and HFNO decisions",
+      columns: ["Time on HFNO", "ROX predicting success", "ROX predicting failure", "Action"],
+      rows: [
+        ["2 hours", "4.88 or more", "Under 2.85", "Failure: prepare to intubate"],
+        ["6 hours", "4.88 or more", "Under 3.47", "Failure: escalate"],
+        ["12 hours", "4.88 or more", "Under 3.85", "Failure: intubate"],
+        ["Between thresholds", "Uncertain", "Uncertain", "Reassess in 1-2 hours; senior review"],
+      ],
+    },
+    {
+      heading: "Mechanisms of hypoxaemia",
+      columns: ["Mechanism", "A-a gradient", "Response to oxygen", "Example"],
+      rows: [
+        ["V/Q mismatch", "Raised", "Good", "COPD, asthma, PE, pneumonia"],
+        ["Shunt", "Raised", "Poor", "ARDS, lobar collapse, AVM"],
+        ["Hypoventilation", "Normal", "Good (but CO2 rises)", "Opioids, GBS, OHS"],
+        ["Diffusion impairment", "Raised (exercise)", "Good", "ILD, emphysema"],
+        ["Low inspired oxygen", "Normal", "Good", "High altitude"],
+      ],
+    },
+  ],
+  redFlags: [
+    "SpO2 below target despite FiO2 0.4-0.5 (or 6 L/min or more), or RR over 30 - escalate to HDU/ICU",
+    "pH under 7.35 with PaCO2 over 45 mmHg after initial therapy - start NIV; pH under 7.25 needs ICU",
+    "Drowsiness, confusion, flapping tremor or falling GCS - CO2 narcosis or exhaustion",
+    "Paradoxical abdominal breathing or slowing RR in a tiring patient - impending arrest",
+    "ROX index under 3.85 at 12 hours on HFNO",
+    "FVC under 20 mL/kg or a fall of 30% in neuromuscular weakness (GBS, myasthenia, krait bite)",
+    "Normal SpO2 with headache and multiple family members affected - suspect carbon monoxide",
+  ],
+  pearls: [
+    "Oxygen is a drug: prescribe device, flow and target range.",
+    "94-98% for most; 88-92% if at risk of hypercapnia (BTS 2017).",
+    "Venturi = fixed FiO2; 24 and 28% for COPD.",
+    "ROX = (SpO2/FiO2)/RR; 4.88 or more means HFNO is working.",
+    "Normal A-a gradient with high PaCO2 = hypoventilation.",
+    "Shunt does not correct with oxygen - needs PEEP.",
+    "Oxygen-induced hypercapnia is mostly V/Q mismatch and Haldane effect.",
+    "Never stop oxygen abruptly in a CO2 retainer - step down.",
+  ],
+  mcqs: [
+    {
+      id: "respiratory-respiratory-failure-oxygen-q1",
+      stem: "A 68-year-old with known COPD arrives with an exacerbation; SpO2 is 82% on air. What is the most appropriate initial oxygen prescription before the ABG result?",
+      options: [
+        "15 L/min via non-rebreather mask targeting 98-100%",
+        "28% Venturi mask targeting SpO2 88-92%",
+        "Simple face mask at 2 L/min",
+        "No oxygen until the ABG is available",
+      ],
+      answer: 1,
+      explanation:
+        "BTS 2017 advises starting a 24% or 28% Venturi mask (or 1-2 L/min nasal cannula) with a target of 88-92% in patients at risk of hypercapnia, then checking an ABG. High-flow reservoir oxygen risks oxygen-induced hypercapnia and acidosis; a face mask under 5 L/min causes CO2 rebreathing; withholding oxygen in severe hypoxaemia is dangerous.",
+      difficulty: "easy",
+    },
+    {
+      id: "respiratory-respiratory-failure-oxygen-q2",
+      stem: "A patient on HFNO at 50 L/min with FiO2 0.6 has SpO2 93% and respiratory rate 36/min at 12 hours. What is the ROX index and its implication?",
+      options: [
+        "About 7.5 - HFNO success likely",
+        "About 2.6 - meets the 2-hour success threshold",
+        "About 4.3 - continue unchanged as the patient is improving",
+        "About 4.3 - falls below 4.88 and needs close review for escalation",
+      ],
+      answer: 3,
+      explanation:
+        "ROX = (SpO2/FiO2)/RR = (93/0.6)/36 = 155/36, about 4.3. A value of 4.88 or more predicts HFNO success; at 12 hours under 3.85 predicts failure, so 4.3 lies in the uncertain zone and requires close reassessment and readiness to intubate rather than complacency. The other calculated values are arithmetic errors.",
+      difficulty: "hard",
+    },
+    {
+      id: "respiratory-respiratory-failure-oxygen-q3",
+      stem: "A 25-year-old found unresponsive after a heroin overdose has PaO2 55 mmHg and PaCO2 70 mmHg on room air at sea level. What is the A-a gradient and the mechanism?",
+      options: [
+        "About 8 mmHg - pure hypoventilation",
+        "About 40 mmHg - shunt",
+        "About 40 mmHg - V/Q mismatch from aspiration",
+        "About 95 mmHg - diffusion impairment",
+      ],
+      answer: 0,
+      explanation:
+        "PAO2 = 150 - 70/0.8 = 150 - 87.5 = 62.5 mmHg; A-a gradient = 62.5 - 55, about 8 mmHg, which is normal, so hypoxaemia is fully explained by alveolar hypoventilation from opioid-induced drive failure. A raised gradient would point to shunt, V/Q mismatch (for example from aspiration) or diffusion impairment; treatment is ventilation and naloxone, not just oxygen.",
+      difficulty: "moderate",
+    },
+    {
+      id: "respiratory-respiratory-failure-oxygen-q4",
+      stem: "What is the main reason PaCO2 rises when a patient with COPD receives uncontrolled high-concentration oxygen?",
+      options: [
+        "Loss of hypoxic ventilatory drive is the sole mechanism",
+        "Increased CO2 production from oxygen metabolism",
+        "Worsened V/Q matching from release of hypoxic pulmonary vasoconstriction, plus the Haldane effect",
+        "Absorption atelectasis of the whole lung",
+      ],
+      answer: 2,
+      explanation:
+        "Oxygen relieves hypoxic pulmonary vasoconstriction, diverting blood to poorly ventilated units and increasing dead space, while the Haldane effect reduces haemoglobin's CO2 carriage; these dominate over the modest fall in ventilatory drive. Oxygen does not increase CO2 production; absorption atelectasis causes shunt rather than hypercapnia; reduced drive contributes but is not the sole mechanism.",
+      difficulty: "moderate",
+    },
+    {
+      id: "respiratory-respiratory-failure-oxygen-q5",
+      stem: "A family of four presents with headache and vomiting after sleeping in a closed room with a coal brazier (angithi). The SpO2 reads 98% on air. What is the correct oxygen management?",
+      options: [
+        "No oxygen because SpO2 is normal",
+        "Titrate oxygen to SpO2 94-98%",
+        "Nasal cannula 2 L/min for comfort",
+        "100% oxygen via non-rebreather mask at 15 L/min regardless of SpO2",
+      ],
+      answer: 3,
+      explanation:
+        "Carbon monoxide poisoning gives a falsely normal SpO2 because standard oximeters read carboxyhaemoglobin as oxyhaemoglobin; high-concentration oxygen shortens COHb half-life from about 4-5 hours to about 60-90 minutes and is indicated regardless of SpO2, with hyperbaric oxygen considered in severe cases. Titrating to SpO2 or giving low-flow oxygen undertreats the poisoning.",
+      difficulty: "easy",
+    },
+  ],
+  theory: [
+    {
+      id: "respiratory-respiratory-failure-oxygen-t1",
+      paper: "I",
+      kind: "long",
+      marks: 10,
+      minutes: 18,
+      frequency: "core",
+      question:
+        "Define and classify respiratory failure. Discuss the principles of oxygen therapy including devices, target saturations, high-flow nasal oxygen and complications.",
+      openingLines: [
+        "Respiratory failure is failure of pulmonary gas exchange with PaO2 under 60 mmHg (type 1) or PaCO2 over 45 mmHg (type 2) breathing air at sea level.",
+        "Oxygen is a drug and must be prescribed with a target range - 94-98% for most and 88-92% for those at risk of hypercapnia (BTS 2017).",
+      ],
+      answer: [
+        {
+          heading: "Classification and causes",
+          points: [
+            "Type 1: pneumonia, ARDS, oedema, PE, ILD; type 2: COPD, OHS, neuromuscular, drugs, chest wall; acute, chronic, acute-on-chronic.",
+          ],
+        },
+        {
+          heading: "Pathophysiology",
+          points: [
+            "Five mechanisms of hypoxaemia with A-a gradient; hypercapnia from load-pump imbalance; oxygen-induced hypercapnia mechanism.",
+          ],
+        },
+        {
+          heading: "Assessment",
+          points: [
+            "Clinical signs of hypoxaemia and hypercapnia; SpO2 with FiO2; ABG and repeat; FVC in neuromuscular disease.",
+          ],
+        },
+        {
+          heading: "Oxygen therapy",
+          points: [
+            "Devices and FiO2: nasal cannula, face mask, Venturi, reservoir mask; prescribe target; titrate and wean; special cases (CO, MI, paraquat).",
+          ],
+        },
+        {
+          heading: "HFNO and NIV",
+          points: [
+            "HFNO mechanisms (dead space washout, PEEP, humidity); FLORALI; ROX index; NIV for hypercapnic COPD; intubation criteria.",
+          ],
+        },
+        {
+          heading: "Complications",
+          points: [
+            "Hypercapnia, absorption atelectasis, pulmonary and CNS toxicity, ROP, fire; prevention by targeting.",
+          ],
+        },
+      ],
+      mustDraw: ["Table of oxygen devices with flow and FiO2", "Oxyhaemoglobin dissociation curve", "Escalation ladder: cannula to HFNO/NIV to intubation"],
+      markSplit: [
+        { part: "Definition and classification", marks: 2 },
+        { part: "Pathophysiology", marks: 2 },
+        { part: "Oxygen devices and targets", marks: 3 },
+        { part: "HFNO, ROX and NIV", marks: 2 },
+        { part: "Complications", marks: 1 },
+      ],
+      keywords: ["respiratory failure", "oxygen therapy", "target saturation", "Venturi", "HFNO", "ROX index", "oxygen toxicity"],
+    },
+    {
+      id: "respiratory-respiratory-failure-oxygen-t2",
+      paper: "I",
+      kind: "short-note",
+      marks: 5,
+      minutes: 9,
+      frequency: "common",
+      question: "High-flow nasal oxygen: mechanism, indications and the ROX index.",
+      openingLines: [
+        "High-flow nasal oxygen delivers heated humidified gas at 30-60 L/min with FiO2 up to 1.0 through wide-bore nasal cannulae.",
+        "It reduces intubation in acute hypoxaemic respiratory failure and is monitored with the ROX index.",
+      ],
+      answer: [
+        {
+          heading: "Mechanisms",
+          points: [
+            "Precise FiO2, dead-space washout, PEEP effect about 1 cmH2O per 10 L/min, humidity aids secretions, less work of breathing.",
+          ],
+        },
+        {
+          heading: "Indications",
+          points: [
+            "De novo AHRF (FLORALI), post-extubation, NIV intolerance in COPD, pre-oxygenation, palliative breathlessness.",
+          ],
+        },
+        {
+          heading: "ROX index",
+          points: [
+            "(SpO2/FiO2)/RR; 4.88 or more predicts success; under 2.85 (2 h), 3.47 (6 h), 3.85 (12 h) predicts failure - escalate.",
+          ],
+        },
+      ],
+      mustDraw: ["Box of ROX thresholds over time"],
+      markSplit: [
+        { part: "Mechanisms", marks: 2 },
+        { part: "Indications", marks: 1 },
+        { part: "ROX index and failure criteria", marks: 2 },
+      ],
+      keywords: ["HFNO", "HFNC", "ROX index", "FLORALI", "dead space"],
+    },
+  ],
+  references: [
+    "O'Driscoll BR et al. BTS guideline for oxygen use in adults in healthcare and emergency settings, Thorax 2017",
+    "Oczkowski S et al. ERS clinical practice guidelines: high-flow nasal cannula in acute respiratory failure, Eur Respir J 2022",
+    "Grasselli G et al. ESICM guidelines on ARDS: definition, phenotyping and respiratory support strategies, Intensive Care Med 2023",
+    "Rochwerg B et al. Official ERS/ATS clinical practice guidelines: noninvasive ventilation for acute respiratory failure, Eur Respir J 2017",
+    "Harrison's Principles of Internal Medicine, 22nd edition, 2025 - Approach to the Patient with Respiratory Failure",
+    "Roca O et al. An index combining respiratory rate and oxygenation to predict outcome of nasal high-flow therapy (ROX), Am J Respir Crit Care Med 2019",
+    "Barnett A et al. Thoracic Society of Australia and New Zealand position statement on acute oxygen use in adults, Respirology 2022",
+    "Ministry of Health and Family Welfare, Government of India: National Guidelines on rational use of oxygen, 2021; National List of Essential Medicines 2022",
+  ],
+});
+
 export default topics;

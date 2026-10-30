@@ -390,6 +390,205 @@ const revision: RevisionSet = {
       ],
     },
   },
+  "respiratory-neuromuscular-chest-wall": {
+    checked: "2026-10",
+    updated: [
+      "CHEST 2023 neuromuscular weakness guideline: NIV may start at FVC under 80% with symptoms; cough assist recommended",
+      "EAN/PNS 2023 GBS guideline: IVIg or PLEX, no steroids, no second IVIg dose; EGRIS",
+      "FDA 2023-2024: FcRn blockers and C5 inhibitors for generalised myasthenia",
+      "FDA 2023: tofersen for SOD1-ALS; 2024 withdrawal of sodium phenylbutyrate-taurursodiol",
+      "FDA 2023-2024: vamorolone and givinostat for DMD",
+    ],
+    master: {
+      heading: "Neuromuscular and chest wall respiratory failure",
+      columns: ["Heading", "What to write"],
+      rows: [
+        ["Definition", "Hypercapnic pump failure with normal lungs and normal A-a gradient"],
+        ["Causes", "Cord, anterior horn (ALS), nerve (GBS), junction (MG, snake, OP), muscle (DMD), chest wall (kyphoscoliosis)"],
+        ["Mechanism", "Rapid shallow breathing, REM hypoventilation first, weak cough, chronic CO2 with high bicarbonate"],
+        ["Symptoms", "Orthopnoea, morning headache, somnolence, bulbar symptoms"],
+        ["Signs", "Paradoxical abdomen, single breath count under 20, neck flexor weakness"],
+        ["20-30-40 rule", "VC under 20 mL/kg, MIP weaker than -30, MEP under 40 cmH2O = intubate"],
+        ["Diaphragm", "Supine VC fall over 25%; sniff test; ultrasound thickening fraction under 20%"],
+        ["Chronic thresholds", "FVC under 50% (or 80% with symptoms), PaCO2 45+, SNIP under 40 = home NIV"],
+        ["Cough", "PCF under 270 L/min = cough assist; under 160 ineffective"],
+        ["GBS treatment", "IVIg 0.4 g/kg/day x 5 or PLEX; no steroids; avoid NIV"],
+        ["Myasthenic crisis", "IVIg 2 g/kg or PLEX, hold pyridostigmine, NIV possible if no bulbar failure"],
+        ["Indian causes", "Krait and cobra bite, organophosphate intermediate syndrome, hypokalaemia, thoracoplasty"],
+        ["Oxygen", "Target 88-92%; high-flow oxygen without CO2 check causes narcosis"],
+      ],
+    },
+    flows: [
+      {
+        kind: "flow",
+        heading: "Acute weakness with breathing risk",
+        steps: [
+          { label: "Bedside VC, MIP, MEP every 4-6 hours", detail: "Plus bulbar check and neck flexion", tone: "neutral" },
+          { label: "Meets 20-30-40 or bulbar failure?", tone: "decision" },
+          { label: "Yes: ICU and elective intubation", detail: "Avoid suxamethonium", tone: "warn" },
+          { label: "No: monitor in HDU, treat cause", detail: "GBS IVIg or PLEX; MG IVIg or PLEX", tone: "neutral" },
+          { label: "Recovery: wean with VC and MIP trends", tone: "good" },
+        ],
+      },
+      {
+        kind: "ladder",
+        heading: "Chronic neuromuscular disease: escalation",
+        steps: [
+          { label: "3-6 monthly FVC, SNIP, PCF, bicarbonate", tone: "neutral" },
+          { label: "Vaccines, physiotherapy, action plan", tone: "neutral" },
+          { label: "Cough assist", detail: "PCF under 270 L/min", tone: "decision" },
+          { label: "Nocturnal bilevel NIV", detail: "FVC under 50%, PaCO2 45+, SNIP under 40", tone: "good" },
+          { label: "Tracheostomy ventilation", detail: "NIV over 16-20 h/day or bulbar failure", tone: "warn" },
+        ],
+      },
+      {
+        kind: "compare",
+        heading: "GBS versus myasthenic crisis",
+        columns: ["Feature", "GBS", "Myasthenic crisis"],
+        rows: [
+          ["Pattern", "Ascending", "Fatigable ocular-bulbar"],
+          ["Reflexes", "Absent", "Normal"],
+          ["Sensory", "Involved", "Spared"],
+          ["Steroids", "No", "Yes, after IVIg/PLEX"],
+          ["NIV", "Avoid", "May try"],
+        ],
+      },
+    ],
+    notes: {
+      sections: [
+        {
+          title: "Definition and key facts",
+          points: [
+            "**Pump failure**: weak muscles or stiff chest wall with normal lungs.",
+            "Cardinal finding is **hypercapnia with normal A-a gradient**.",
+            "**GBS** needs ventilation in 20-30% of patients.",
+            "Respiratory failure is the usual cause of death in **ALS**.",
+          ],
+        },
+        {
+          title: "Causes and risk factors",
+          points: [
+            "**Nerve**: GBS, phrenic injury; **junction**: myasthenia, botulism.",
+            "Indian causes: **krait and cobra bites**, organophosphate intermediate syndrome.",
+            "**Muscle**: DMD, Pompe, hypokalaemia, hypophosphataemia.",
+            "**Chest wall**: kyphoscoliosis, post-TB thoracoplasty, fibrothorax.",
+            "Crisis triggers: infection, surgery, **aminoglycosides and fluoroquinolones** in myasthenia.",
+          ],
+        },
+        {
+          title: "Pathophysiology",
+          points: [
+            "Rapid **shallow breathing** raises dead space and CO2.",
+            "**REM sleep hypoventilation** comes before daytime hypercapnia.",
+            "Weak diaphragm causes **orthopnoea** and paradoxical abdominal movement.",
+            "Weak cough leads to **aspiration** and mucus plugging.",
+          ],
+        },
+        {
+          title: "Clinical features",
+          points: [
+            "Orthopnoea, **morning headache**, daytime sleepiness, choking on fluids.",
+            "**Single breath count** under 20 suggests low VC.",
+            "**Neck flexor weakness** mirrors diaphragm weakness.",
+            "Look for flap, drowsiness and **cor pulmonale**.",
+          ],
+        },
+        {
+          title: "Investigations",
+          points: [
+            "**20-30-40 rule**: VC under 20 mL/kg, MIP weaker than -30, MEP under 40.",
+            "**Supine VC fall over 25%** means diaphragm weakness.",
+            "**SNIP under 40** cmH2O predicts hypoventilation in ALS.",
+            "**Sniff test** and ultrasound confirm diaphragm paralysis.",
+            "**SpO2 and ABG are late** markers in acute weakness.",
+          ],
+        },
+        {
+          title: "Inpatient / emergency care",
+          points: [
+            "ICU and **elective intubation** when thresholds are met.",
+            "GBS: **IVIg 0.4 g/kg/day for 5 days** or plasma exchange; no steroids.",
+            "Myasthenic crisis: **IVIg or plasma exchange**, hold pyridostigmine.",
+            "Snake bite: **ASV** plus ventilation; neostigmine helps cobra.",
+            "Oxygen target **88-92%** in chronic hypercapnia.",
+          ],
+        },
+        {
+          title: "Treatment - next steps",
+          points: [
+            "Home **bilevel NIV** for FVC under 50% or daytime PaCO2 45+.",
+            "**Cough assist** when peak cough flow is under 270 L/min.",
+            "ALS: **riluzole 50 mg twice daily**, early gastrostomy.",
+            "DMD: daily **deflazacort** and cardiac care.",
+            "**Tracheostomy** if NIV needed over 16-20 hours a day.",
+          ],
+        },
+        {
+          title: "Referral and follow-up",
+          points: [
+            "Review FVC, SNIP and PCF **every 3-6 months**.",
+            "Early **advance care planning** in ALS and DMD.",
+            "Rare disease funding under **National Policy for Rare Diseases 2021**.",
+          ],
+        },
+        {
+          title: "Latest updates",
+          points: [
+            "**CHEST 2023**: NIV can start at FVC under 80% with symptoms.",
+            "**EAN/PNS 2023**: no second IVIg dose in GBS.",
+            "New MG drugs: **FcRn blockers and C5 inhibitors**.",
+          ],
+        },
+      ],
+      tables: [
+        {
+          heading: "Drugs",
+          columns: ["Drug", "Dose and route", "Duration", "Key side effects / cautions"],
+          rows: [
+            ["IVIg (GBS)", "0.4 g/kg/day IV", "5 days", "Headache, thrombosis, renal injury"],
+            ["Plasma exchange", "5 exchanges", "1-2 weeks", "Hypotension, line sepsis"],
+            ["Pyridostigmine", "30-60 mg oral 4-6 hourly", "Long-term; hold in crisis", "Cholinergic effects"],
+            ["Riluzole", "50 mg oral twice daily", "Long-term", "Raised liver enzymes"],
+            ["Deflazacort", "0.9 mg/kg oral daily", "Long-term", "Weight gain, cataract, bone loss"],
+            ["Anti-snake venom", "10 vials IV over 1 hour", "Repeat per protocol", "Anaphylactoid reaction"],
+          ],
+        },
+        {
+          heading: "Thresholds",
+          columns: ["Measure", "Threshold", "Action"],
+          rows: [
+            ["VC", "Under 20 mL/kg", "ICU, intubate"],
+            ["MIP", "Weaker than -30 cmH2O", "ICU, intubate"],
+            ["Supine VC fall", "Over 25%", "Diaphragm weakness"],
+            ["FVC chronic", "Under 50%", "Home NIV"],
+            ["SNIP", "Under 40 cmH2O", "Home NIV"],
+            ["Peak cough flow", "Under 270 L/min", "Cough assist"],
+          ],
+        },
+        {
+          heading: "Causes by level",
+          columns: ["Level", "Examples"],
+          rows: [
+            ["Cord", "C3-C5 injury, transverse myelitis"],
+            ["Anterior horn", "ALS, SMA, post-polio"],
+            ["Nerve", "GBS, phrenic palsy"],
+            ["Junction", "Myasthenia, botulism, snake bite, organophosphate"],
+            ["Muscle", "DMD, Pompe, hypokalaemia"],
+            ["Chest wall", "Kyphoscoliosis, thoracoplasty"],
+          ],
+        },
+      ],
+      remember: [
+        "**20-30-40** rule for intubation.",
+        "**C3, 4, 5 keeps the diaphragm alive.**",
+        "**REM fails first.**",
+        "**SpO2 lies** in neuromuscular weakness - measure VC.",
+        "**No NIV, no steroids in GBS.**",
+        "**Krait: night, floor, painless, ptosis.**",
+        "**PCF under 270** - cough assist.",
+      ],
+    },
+  },
 };
 
 export default revision;

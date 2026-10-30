@@ -410,4 +410,204 @@ revision["respiratory-pft-spirometry"] = {
   },
 };
 
+revision["respiratory-abg-interpretation"] = {
+  checked: "2026-10",
+  updated: [
+    "ADA/EASD/JBDS/AACE/DTS 2024 hyperglycaemic crises consensus: DKA criteria, euglycaemic DKA, bicarbonate only if pH under 7.0.",
+    "Global ARDS definition 2023/2024: SpO2/FiO2 315 or less allowed in place of P/F.",
+    "KDIGO CKD 2024: alkali therapy when bicarbonate persistently under 18 mmol/L.",
+    "Surviving Sepsis 2021: no bicarbonate for lactic acidaemia with pH 7.2 or more; consider below 7.2 with AKI.",
+    "FDA 2025 draft oximeter guidance: confirm borderline SpO2 with ABG in darker skin.",
+  ],
+  master: {
+    heading: "ABG interpretation - what to write",
+    columns: ["Heading", "What to write"],
+    rows: [
+      ["Normal values", "pH 7.35-7.45, PaCO2 35-45, HCO3 22-26, PaO2 80-100 mmHg, BE -2 to +2"],
+      ["Sampling", "Radial, modified Allen, dry heparin, no bubbles, analyse within 30 min, record FiO2"],
+      ["Oxygenation", "P/F ratio; A-a gradient with PAO2 = 150 - 1.25 x PaCO2; normal about age/4 + 4"],
+      ["Primary disorder", "pH and PaCO2 opposite = respiratory; pH and HCO3 same = metabolic"],
+      ["Compensation", "Winter 1.5 x HCO3 + 8; alkalosis 0.7 x HCO3 + 21; resp acid 1 and 3.5; resp alk 2 and 4-5"],
+      ["Anion gap", "Na - (Cl + HCO3), 8-12; add 2.5 per g/dL albumin below 4"],
+      ["Delta ratio", "Under 0.4 NAGMA; 0.4-0.8 mixed; 1-2 pure HAGMA; over 2 plus metabolic alkalosis"],
+      ["Osmolar gap", "Over 10 - methanol, ethylene glycol"],
+      ["HAGMA causes", "GOLD MARK"],
+      ["NAGMA causes", "Diarrhoea, RTA, saline, acetazolamide, ureteric diversion; urine anion gap"],
+      ["Alkalosis", "Urine Cl under 20 saline-responsive; over 20 mineralocorticoid, Bartter, Gitelman, current diuretic"],
+      ["VBG", "pH 0.03 lower, HCO3 1-2 higher; PvCO2 under 45 excludes hypercapnia; PvO2 useless"],
+      ["Treatment", "Treat cause; controlled O2 88-92% if hypercapnia risk; NIV pH under 7.35 + PaCO2 over 49; bicarbonate selectively"],
+    ],
+  },
+  flows: [
+    {
+      kind: "flow",
+      heading: "Stepwise ABG interpretation",
+      caption: "Write each step with the numbers.",
+      steps: [
+        { label: "Oxygenation: PaO2, FiO2, P/F, A-a gradient", detail: "PAO2 = 150 - 1.25 x PaCO2 on room air" },
+        { label: "pH: acidaemia or alkalaemia?", detail: "Normal pH with abnormal values = mixed", tone: "decision" },
+        { label: "Primary disorder: respiratory or metabolic", detail: "Look at direction of PaCO2 and HCO3", tone: "decision" },
+        { label: "Is compensation appropriate?", detail: "Winter 1.5 x HCO3 + 8 plus or minus 2; outside range = second disorder" },
+        { label: "Anion gap, corrected for albumin", detail: "Over 12 = high-AG acidosis" },
+        { label: "Delta ratio and osmolar gap", detail: "Hidden NAGMA or alkalosis; osmolar gap over 10 = toxic alcohol", tone: "warn" },
+        { label: "Name disorder, cause and next test", tone: "good" },
+      ],
+    },
+    {
+      kind: "branch",
+      heading: "Metabolic acidosis by anion gap",
+      root: "Low pH, low HCO3",
+      arms: [
+        { label: "High anion gap", tone: "warn", steps: ["GOLD MARK", "Check lactate, ketones, renal function", "Osmolar gap over 10 - methanol or glycol"] },
+        { label: "Normal anion gap", steps: ["Diarrhoea, RTA, saline, acetazolamide", "Urine anion gap negative - GI loss", "Urine anion gap positive - distal RTA"] },
+      ],
+    },
+    {
+      kind: "compare",
+      heading: "Acute versus chronic respiratory acidosis",
+      columns: ["Feature", "Acute", "Chronic"],
+      rows: [
+        ["HCO3 rise per 10 mmHg PaCO2", "1 mmol/L", "3.5-4 mmol/L"],
+        ["pH fall per 10 mmHg PaCO2", "About 0.08", "About 0.03"],
+        ["Time course", "Minutes to hours", "3-5 days of renal compensation"],
+        ["Example", "Opioid overdose, acute asthma", "Stable COPD, obesity hypoventilation"],
+      ],
+    },
+  ],
+  notes: {
+    sections: [
+      {
+        title: "Definition and key facts",
+        points: [
+          "Normal: **pH 7.35-7.45, PaCO2 35-45, HCO3 22-26, PaO2 80-100** mmHg.",
+          "**Type 1 failure**: PaO2 under 60 with normal or low PaCO2.",
+          "**Type 2 failure**: PaO2 under 60 with PaCO2 over 45-50.",
+          "pH depends on the **ratio** of HCO3 to PaCO2 (Henderson-Hasselbalch).",
+          "Always record **FiO2**; PaO2 means nothing without it.",
+        ],
+      },
+      {
+        title: "Pathophysiology",
+        points: [
+          "Respiratory compensation takes **12-24 hours**; renal compensation takes **3-5 days**.",
+          "**Compensation never overcorrects** the pH.",
+          "**A-a gradient** is normal in hypoventilation and raised in lung disease.",
+          "**Shunt** does not correct with oxygen; V/Q mismatch does.",
+          "Acidaemia raises serum **potassium**; correcting it lowers potassium.",
+        ],
+      },
+      {
+        title: "Classification that matters",
+        points: [
+          "**Winter**: expected PaCO2 = 1.5 x HCO3 + 8, plus or minus 2.",
+          "**Metabolic alkalosis**: expected PaCO2 = 0.7 x HCO3 + 21.",
+          "**Respiratory acidosis**: HCO3 up 1 (acute) or 3.5-4 (chronic) per 10 mmHg.",
+          "**Respiratory alkalosis**: HCO3 down 2 (acute) or 4-5 (chronic) per 10 mmHg.",
+          "**Anion gap** = Na - (Cl + HCO3); add 2.5 per g/dL albumin below 4.",
+        ],
+      },
+      {
+        title: "Causes and risk factors",
+        points: [
+          "**High AG**: glycols, oxoproline, lactate, methanol, aspirin, renal failure, ketoacidosis.",
+          "**Normal AG**: diarrhoea, RTA, saline, acetazolamide, ureteric diversion.",
+          "**Alkalosis**: vomiting and diuretics (urine Cl under 20) or mineralocorticoid excess (over 20).",
+          "**Respiratory acidosis**: opioids, neuromuscular weakness, COPD, obesity hypoventilation.",
+          "**Respiratory alkalosis**: anxiety, sepsis, PE, pregnancy, altitude, early salicylate.",
+        ],
+      },
+      {
+        title: "Investigations",
+        points: [
+          "**Delta ratio** over 2 hides a metabolic alkalosis; under 0.4 hides a normal-AG acidosis.",
+          "**Osmolar gap** over 10 with high AG suggests methanol or ethylene glycol.",
+          "**Urine anion gap** negative in diarrhoea, positive in distal RTA.",
+          "**VBG** is fine for pH, HCO3, lactate and K; venous PO2 is useless.",
+          "**Venous PCO2 under 45** excludes arterial hypercapnia.",
+          "**Lactate over 4** with hypotension marks high-risk sepsis.",
+        ],
+      },
+      {
+        title: "Treatment - first line",
+        points: [
+          "**Treat the cause**: fluids and insulin in DKA, source control in sepsis.",
+          "Target **SpO2 88-92%** with a Venturi mask in those at risk of hypercapnia.",
+          "**NIV** if pH under 7.35 and PaCO2 over 49 mmHg in COPD.",
+          "**Naloxone** for opioid hypoventilation; oxygen alone is not enough.",
+        ],
+      },
+      {
+        title: "Treatment - next steps",
+        points: [
+          "**Bicarbonate** only for pH 7.2 or less with AKI, DKA with pH under 7.0, or bicarbonate loss.",
+          "**Methanol**: fomepizole or ethanol, folinic acid, bicarbonate and early dialysis.",
+          "**Saline-responsive alkalosis**: 0.9% saline with potassium chloride.",
+          "Lower chronic hypercapnia **slowly** to avoid post-hypercapnic alkalosis.",
+        ],
+      },
+      {
+        title: "Special groups",
+        points: [
+          "**Pregnancy**: normal PaCO2 is 28-32; a PaCO2 of 40 is a danger sign.",
+          "**Elderly**: normal A-a gradient is about age/4 + 4.",
+          "**SGLT2 inhibitors**: euglycaemic DKA with near-normal glucose.",
+          "**CKD**: oral bicarbonate when HCO3 persistently under 18 (KDIGO 2024).",
+        ],
+      },
+      {
+        title: "Latest updates",
+        points: [
+          "**ADA 2024** DKA: ketones 3.0 or more, pH under 7.3 or HCO3 under 18.",
+          "**Global ARDS 2023** allows SpO2/FiO2 315 or less without an ABG.",
+          "**FDA 2025**: oximeters may overestimate SpO2 in darker skin.",
+        ],
+      },
+    ],
+    tables: [
+      {
+        heading: "Drugs in acid-base and blood gas disorders",
+        columns: ["Drug", "Dose and route", "Duration", "Key side effects / cautions"],
+        rows: [
+          ["Sodium bicarbonate 8.4%", "50-100 mmol IV over 30-60 min", "Repeat by gas; aim pH over 7.2", "Hypernatraemia, overload, low K, raised PaCO2"],
+          ["Potassium chloride", "IV 10-20 mmol/h peripherally", "Titrate to K 4-5", "Never bolus; phlebitis"],
+          ["Acetazolamide", "250-500 mg IV or oral once or twice daily", "1-3 days", "Hypokalaemia; sulfonamide allergy"],
+          ["Fomepizole", "15 mg/kg IV load, then 10 mg/kg 12-hourly", "Until alcohol cleared", "Ethanol is the alternative"],
+          ["Naloxone", "0.4-2 mg IV, repeat every 2-3 min", "Infusion for long-acting opioids", "Withdrawal, pulmonary oedema"],
+          ["Venturi oxygen", "24-28% mask", "Target SpO2 88-92%; ABG within 60 min", "Uncontrolled oxygen worsens hypercapnia"],
+        ],
+      },
+      {
+        heading: "Compensation formulas",
+        columns: ["Primary disorder", "Expected compensation"],
+        rows: [
+          ["Metabolic acidosis", "PaCO2 = 1.5 x HCO3 + 8 plus or minus 2"],
+          ["Metabolic alkalosis", "PaCO2 = 0.7 x HCO3 + 21 plus or minus 2"],
+          ["Acute respiratory acidosis", "HCO3 up 1 per 10 mmHg"],
+          ["Chronic respiratory acidosis", "HCO3 up 3.5-4 per 10 mmHg"],
+          ["Acute respiratory alkalosis", "HCO3 down 2 per 10 mmHg"],
+          ["Chronic respiratory alkalosis", "HCO3 down 4-5 per 10 mmHg"],
+        ],
+      },
+      {
+        heading: "Delta ratio interpretation",
+        columns: ["Delta ratio", "Meaning"],
+        rows: [
+          ["Under 0.4", "Pure normal-AG acidosis"],
+          ["0.4-0.8", "High-AG plus normal-AG acidosis (renal failure)"],
+          ["1-2", "Pure high-AG acidosis (lactic about 1.6, DKA about 1)"],
+          ["Over 2", "High-AG acidosis plus metabolic alkalosis or chronic respiratory acidosis"],
+        ],
+      },
+    ],
+    remember: [
+      "**GOLD MARK** for high anion gap acidosis.",
+      "PaCO2 roughly equals the **last two digits of pH** in compensated metabolic acidosis.",
+      "Normal A-a gradient with hypoxaemia = **hypoventilation**.",
+      "**Salicylate** = respiratory alkalosis plus high-AG acidosis.",
+      "Never skip the **albumin correction** of the anion gap.",
+      "High COPD bicarbonate is usually **compensation**, not alkalosis.",
+    ],
+  },
+};
+
 export default revision;

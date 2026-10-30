@@ -595,7 +595,7 @@ topics.push({
     {
       heading: "Pathophysiology",
       points: [
-        "**Gastric acid at pH under 2.5 and volume over about 0.3 mL/kg** causes a chemical burn of the airways and alveoli within minutes, with neutrophilic inflammation, capillary leak and sometimes **ARDS**. [Mandell NEJM 2001]",
+        "**Gastric acid at pH under 2.5 and volume over about 0.3 mL/kg** causes a chemical burn of the airways and alveoli within minutes, with neutrophilic inflammation, capillary leak and sometimes **ARDS**. [Marik NEJM 2001]",
         "Aspiration pneumonitis is **initially sterile**; bacterial superinfection may follow, so antibiotics are not automatically needed. [Mandell NEJM 2019]",
         "**Gravity decides the site**: supine aspiration goes to the **posterior segment of the right upper lobe and the superior (apical) segments of the lower lobes**; upright aspiration goes to the **basal segments**; the right side is favoured because the right main bronchus is wider and more vertical. [Harrison 22e]",
         "Anaerobic pneumonitis evolves over **7-14 days** into tissue **necrosis**, and when the necrotic area communicates with a bronchus the pus drains, leaving a **cavity with an air-fluid level** and foul **putrid sputum**. [Harrison 22e]",
@@ -613,7 +613,6 @@ topics.push({
         "**Light's 7 classes**: 1 non-significant (under 10 mm on decubitus), 2 typical parapneumonic, 3 borderline complicated (pH 7.0-7.2 or LDH over 1000 IU/L), 4 simple complicated, 5 complex complicated (loculated), 6 simple empyema, 7 complex empyema (multiloculated pus). [Light Chest 2006]",
         "**ACCP categories (2000)** combine anatomy (size, loculation), bacteriology and chemistry (pH under 7.20) into categories 1-4; **categories 3 and 4 need drainage**. [ACCP 2000]",
         "**RAPID score** predicts 3-month mortality in pleural infection from **R**enal (urea), **A**ge, **P**urulence (non-purulent fluid scores higher), **I**nfection source (hospital-acquired) and **D**ietary factors (low albumin): 0-2 low, 3-4 medium, 5-7 high risk. [Rahman Chest 2014]",
-        "The **MIST3 and RAPID-validation (PILOT) data** confirm RAPID separates low from high-risk patients, but it is not yet used to choose surgery over drainage. [Corcoran Lancet Respir Med 2024]",
       ],
     },
     {
@@ -646,7 +645,7 @@ topics.push({
         "**Cavitating carcinoma (squamous)**: older smoker, thick irregular wall over 15 mm, eccentric cavity, no fever response; needs bronchoscopy. [Harrison 22e]",
         "**Infected bulla or cyst**: thin wall, air-fluid level, patient often less ill; previous films show the bulla. [Harrison 22e]",
         "**Granulomatosis with polyangiitis and septic emboli**: multiple cavitating nodules; check ANCA, blood cultures and echo. [Harrison 22e]",
-        "**Empyema with bronchopleural fistula vs lung abscess**: empyema is **lenticular, has obtuse angles with the chest wall, compresses lung and its air-fluid level differs in length on PA and lateral views**; abscess is spherical with equal air-fluid levels. [Fraser and Pare]",
+        "**Empyema with bronchopleural fistula vs lung abscess**: empyema is **lenticular, has obtuse angles with the chest wall, compresses lung and its air-fluid level differs in length on PA and lateral views**; abscess is spherical with equal air-fluid levels. [Fraser and Pare 4e]",
         "**Pulmonary infarction, aspergilloma, hydatid cyst (water-lily sign) and melioidosis** are other causes of cavities in Indian practice. [API Textbook 2022]",
       ],
     },
@@ -693,7 +692,7 @@ topics.push({
     {
       heading: "Special situations",
       points: [
-        "**Pregnancy**: Mendelson syndrome is the classic obstetric risk - prevent with fasting, **H2 blockers or PPIs, sodium citrate** before general anaesthesia and regional anaesthesia where possible; amoxicillin-clavulanate and clindamycin are safe. [RCOG 2020]",
+        "**Pregnancy**: Mendelson syndrome is the classic obstetric risk - prevent with fasting, **H2 blockers or PPIs, sodium citrate** before general anaesthesia and regional anaesthesia where possible; amoxicillin-clavulanate and clindamycin are safe. [Williams Obstetrics 26e]",
         "**Elderly and stroke**: silent aspiration is common; screen swallow, keep upright, treat dental disease, and review sedatives and antipsychotics. [NICE 2019]",
         "**Diabetes**: Klebsiella, S aureus and **melioidosis** abscesses are more common; check HbA1c and treat melioidosis with **ceftazidime or meropenem** (see the Tropical pneumonias topic). [ICMR 2022]",
         "**CKD**: adjust beta-lactam and carbapenem doses; avoid repeated contrast; **intrapleural tPA** has low systemic absorption. [BNF 2025]",
@@ -705,7 +704,7 @@ topics.push({
     {
       heading: "Complications and prognosis",
       points: [
-        "**Aspiration pneumonitis** may progress to **ARDS** in a minority; mortality depends on volume and acidity of the aspirate. [Mandell NEJM 2001]",
+        "**Aspiration pneumonitis** may progress to **ARDS** in a minority; mortality depends on volume and acidity of the aspirate. [Marik NEJM 2001]",
         "**Lung abscess complications**: **empyema and bronchopleural fistula**, massive haemoptysis, spread to other lobes, brain abscess, and residual bronchiectasis or cavity. [Harrison 22e]",
         "**Mortality of primary lung abscess** is about **5-10%** with modern antibiotics, but much higher in secondary abscess with tumour, immunosuppression or S aureus/Klebsiella. [Harrison 22e]",
         "**Empyema complications**: trapped lung with restrictive defect, bronchopleural fistula, **empyema necessitans**, sepsis and death; **pleural thickening** may persist. [BTS Pleural 2023]",
@@ -1050,6 +1049,507 @@ topics.push({
     "Mandell LA, Niederman MS. Aspiration pneumonia. N Engl J Med 2019",
     "Light RW. Parapneumonic effusions and empyema. Proc Am Thorac Soc 2006",
     "ICMR Treatment Guidelines for Antimicrobial Use in Common Syndromes, 2nd edition, 2022",
+  ],
+});
+
+topics.push({
+  id: "respiratory-hap-vap",
+  title: "Hospital-acquired and ventilator-associated pneumonia",
+  frequency: "common",
+  oneLiner:
+    "**Hospital-acquired pneumonia (HAP)** is pneumonia not incubating at admission that develops **48 hours or more after admission**, and **ventilator-associated pneumonia (VAP)** develops **48 hours or more after endotracheal intubation**; in India they are dominated by **carbapenem-resistant Acinetobacter, Klebsiella and Pseudomonas**, so empirical therapy follows the **local antibiogram**, is de-escalated on culture and usually stopped at **7 days**.",
+  keywords: [
+    "HAP",
+    "VAP",
+    "nosocomial pneumonia",
+    "ventilator-associated events",
+    "VAE",
+    "CPIS",
+    "MDR risk factors",
+    "carbapenem-resistant Acinetobacter",
+    "CRE",
+    "NDM",
+    "colistin",
+    "polymyxin B",
+    "ceftazidime-avibactam",
+    "aztreonam",
+    "cefiderocol",
+    "sulbactam-durlobactam",
+    "de-escalation",
+    "VAP bundle",
+    "ICMR AMRSN",
+    "IDSA/ATS 2016",
+  ],
+  sections: [
+    {
+      heading: "Definition and epidemiology",
+      points: [
+        "**HAP**: pneumonia not incubating at the time of admission and occurring **48 hours or more after admission**; **VAP**: pneumonia **48 hours or more after endotracheal intubation**. [IDSA/ATS 2016]",
+        "The old category **healthcare-associated pneumonia (HCAP)** was **removed** in 2016 because it overestimated MDR risk and drove unnecessary broad-spectrum therapy; such patients are now treated as CAP with individual MDR assessment. [IDSA/ATS 2016]",
+        "**Ventilated HAP** is HAP that needs intubation after onset - it has the worst prognosis, worse than VAP. [ERS/ESICM/ESCMID/ALAT 2017]",
+        "HAP occurs in about **5-10 per 1000 admissions** and is the **commonest hospital-acquired infection causing death**; VAP affects roughly **10-25% of ventilated patients** depending on definition. [Harrison 22e]",
+        "**Attributable mortality of VAP is about 13%**, higher in surgical and mid-severity patients, though crude mortality is 20-50%. [Melsen Lancet Infect Dis 2013]",
+        "**Indian ICUs report device-associated VAP rates several-fold higher than US NHSN benchmarks**, with Gram-negative non-fermenters predominant (INICC and ICMR-AIIMS surveillance). [ICMR HAI Surveillance 2023]",
+        "The **ICMR Antimicrobial Resistance Surveillance Network (AMRSN)** reports **carbapenem resistance in over 80% of Acinetobacter baumannii**, around **half of Klebsiella pneumoniae**, and about a third of Pseudomonas aeruginosa from ICU isolates. [ICMR AMRSN 2023]",
+      ],
+    },
+    {
+      heading: "Aetiology and risk factors",
+      points: [
+        "**Organisms**: Gram-negative bacilli - **Acinetobacter baumannii, Klebsiella pneumoniae, Pseudomonas aeruginosa, E coli, Enterobacter** - and **S aureus (MSSA and MRSA)**; in India Gram-negatives account for the large majority. [ICMR AMRSN 2023]",
+        "**Early-onset HAP/VAP (under 5 days)** without risk factors may involve community organisms (S pneumoniae, H influenzae, MSSA), but in Indian ICUs MDR organisms are common even early. [ICMR 2022]",
+        "**MDR risk factors for VAP**: **IV antibiotics in the previous 90 days**, **septic shock at the time of VAP**, **ARDS preceding VAP**, **5 or more days of hospitalisation before VAP**, and **acute renal replacement therapy before VAP**. [IDSA/ATS 2016]",
+        "**MDR risk for HAP**: **IV antibiotics in the previous 90 days**; MRSA risk adds a unit MRSA prevalence over 20% (or unknown) and high mortality risk (ventilatory support for HAP or septic shock). [IDSA/ATS 2016]",
+        "**Host factors**: age over 70, COPD, reduced consciousness, supine position, dysphagia, malnutrition, recent surgery (thoracic, upper abdominal), immunosuppression. [Harrison 22e]",
+        "**Device and care factors**: intubation and **re-intubation**, prolonged ventilation, deep sedation, nasogastric tubes, contaminated respiratory equipment and hands of staff. [Harrison 22e]",
+        "**Acid suppression** may modestly increase pneumonia, though REVISE (2024) found pantoprazole did not significantly raise VAP in ventilated patients. [REVISE NEJM 2024]",
+      ],
+    },
+    {
+      heading: "Pathophysiology",
+      points: [
+        "Within days of admission, the **oropharynx is colonised by hospital Gram-negative bacilli**, driven by illness, antibiotics and loss of fibronectin on epithelial cells. [Harrison 22e]",
+        "The **endotracheal tube bypasses glottic defences**: secretions pool above the cuff and leak through **micro-channels in the cuff folds** into the lower airway (micro-aspiration). [Harrison 22e]",
+        "A **biofilm** forms on the inner tube surface within hours, which ventilation and suctioning dislodge into distal airways - a reservoir that antibiotics cannot sterilise. [Harrison 22e]",
+        "**Impaired cough, mucociliary clearance and sedation**, and critical-illness immunoparalysis, reduce clearance of inoculated bacteria. [Harrison 22e]",
+        "**Gastric colonisation** under acid suppression and enteral feeding can seed the oropharynx in a retrograde manner. [Harrison 22e]",
+        "**Resistance mechanisms in India**: **ESBLs** (CTX-M), **carbapenemases - NDM (metallo-beta-lactamase) and OXA-48-like** in Enterobacterales, **OXA-23** in Acinetobacter, and efflux and porin loss in Pseudomonas - these decide which new drug works. [ICMR AMRSN 2023]",
+        "**Metallo-beta-lactamases (NDM)** are not inhibited by avibactam, so **ceftazidime-avibactam must be combined with aztreonam** (which MBLs cannot hydrolyse) for NDM producers. [IDSA AMR Guidance 2024]",
+      ],
+    },
+    {
+      heading: "Classification and diagnostic criteria",
+      points: [
+        "**Clinical diagnosis (IDSA/ATS 2016)**: **new or progressive infiltrate** plus clinical signs of infection - **new fever, purulent sputum, leucocytosis or leucopenia, and worsening oxygenation**. [IDSA/ATS 2016]",
+        "**Clinical Pulmonary Infection Score (CPIS)** scores temperature, WBC, secretions, PaO2/FiO2, CXR and culture; **over 6 suggests VAP**, but its accuracy is poor and it is not recommended for decisions. [IDSA/ATS 2016]",
+        "**CDC/NHSN Ventilator-Associated Events (VAE)** - a surveillance, not clinical, definition: **VAC** (sustained rise in daily minimum PEEP of 3 cmH2O or more, or FiO2 of 0.20 or more, for 2 or more days after 2 days of stability), then **IVAC** (plus infection signs and new antibiotics), then **possible VAP** (plus positive respiratory specimen). [CDC NHSN 2024]",
+        "**Early vs late onset**: under 5 days vs 5 days or more of hospitalisation; IDSA 2016 no longer uses it alone to choose therapy, but ICMR uses it with MDR risk. [ICMR 2022]",
+        "**Ventilator-associated tracheobronchitis (VAT)**: fever and purulent secretions with positive culture but **no new infiltrate**; routine antibiotics are not recommended. [ERS/ESICM 2017]",
+        "**High mortality risk** in HAP: need for ventilatory support due to HAP, or septic shock - drives double Gram-negative and MRSA cover. [IDSA/ATS 2016]",
+      ],
+    },
+    {
+      heading: "Clinical features",
+      points: [
+        "**New fever (38 degrees C or more) or hypothermia**, new or increased purulent secretions, cough and breathlessness in a ward patient. [IDSA/ATS 2016]",
+        "In the ventilated patient: **rising FiO2 or PEEP needs**, increasing suction requirement, tachypnoea on spontaneous modes, new crackles or bronchial breathing. [IDSA/ATS 2016]",
+        "**Atypical presentations** in the elderly: confusion, falls, reduced oral intake, new AF or hypotension without fever. [Harrison 22e]",
+        "**Sepsis features**: hypotension, rising lactate, oliguria, thrombocytopenia - assess with SOFA. [SSC 2021]",
+        "Look for alternative fever sources: **line infection, catheter-associated UTI, C difficile, sinusitis, drug fever, DVT**. [Harrison 22e]",
+      ],
+    },
+    {
+      heading: "Examination findings",
+      points: [
+        "**Tachypnoea, tachycardia and falling SpO2** are the earliest signs; record trends rather than single values. [IDSA/ATS 2016]",
+        "**Focal crackles, bronchial breathing or dullness** over a dependent zone; in ventilated patients auscultation is often unhelpful. [Harrison 22e]",
+        "**Purulent endotracheal secretions** - volume, colour and frequency of suction matter. [IDSA/ATS 2016]",
+        "**Stony dullness** suggests parapneumonic effusion or empyema, which needs a tap. [BTS Pleural 2023]",
+        "Check **lines, wounds, catheter, calves and sacrum** for other infection sources and complications. [Harrison 22e]",
+      ],
+    },
+    {
+      heading: "Differential diagnosis",
+      points: [
+        "**Atelectasis and lobar collapse** from mucus plugging: volume loss, no fever pattern, improves with physiotherapy or bronchoscopy. [Harrison 22e]",
+        "**Cardiogenic pulmonary oedema / fluid overload**: bilateral infiltrates, raised BNP, positive balance, responds to diuresis. [Harrison 22e]",
+        "**ARDS** of another cause: bilateral opacities with P/F under 300 within a week of a known insult (Berlin / global definition 2023). [ATS 2023]",
+        "**Pulmonary embolism**: sudden hypoxia with clear lungs; CT pulmonary angiography. [ESC 2019]",
+        "**Aspiration pneumonitis**: witnessed aspiration, rapid onset, often settles in 48 hours. [Mandell NEJM 2019]",
+        "**Drug fever, transfusion reaction (TRALI), pulmonary haemorrhage** and tumour progression. [Harrison 22e]",
+      ],
+    },
+    {
+      heading: "Investigations",
+      points: [
+        "**Respiratory sample before antibiotics**: sputum, or in VAP a **semi-quantitative endotracheal aspirate** - IDSA prefers non-invasive sampling to bronchoscopy. [IDSA/ATS 2016]",
+        "**Quantitative thresholds** if used: **endotracheal aspirate 10^5-10^6 CFU/mL, BAL 10^4 CFU/mL, protected specimen brush 10^3 CFU/mL**. [ERS/ESICM 2017]",
+        "**Blood cultures** (2 sets) in all; positive in about 15% and identify bacteraemia from other sources. [IDSA/ATS 2016]",
+        "**Rapid molecular panels** (multiplex PCR for organisms and resistance genes such as NDM, KPC, OXA-48, mecA) allow earlier targeted therapy where available. [IDSA AMR Guidance 2024]",
+        "**Procalcitonin is not recommended to decide whether to start** antibiotics, but a falling PCT with clinical improvement supports **stopping**. [IDSA/ATS 2016]",
+        "**Chest X-ray** daily is not needed; **lung ultrasound** (dynamic air bronchograms) and **CT** help in uncertain cases. [ERS/ESICM 2017]",
+        "**ABG, lactate, CBC, renal and liver function** for severity and dosing; **antibiogram** of the unit for empirical choice. [ICMR 2022]",
+        "**Request carbapenemase typing** (NDM vs OXA-48 vs KPC) from the lab on carbapenem-resistant isolates - it decides between ceftazidime-avibactam alone and the aztreonam combination. [IDSA AMR Guidance 2024]",
+      ],
+    },
+    {
+      heading: "Empirical management - IDSA/ATS 2016 and ICMR 2022",
+      points: [
+        "**Start empirical antibiotics promptly after cultures**, choosing by **MDR risk, mortality risk and the local unit antibiogram** - every hospital should publish its own. [IDSA/ATS 2016]",
+        "**HAP without MDR risk or high mortality risk**: one agent active against MSSA and Pseudomonas - **piperacillin-tazobactam 4.5 g IV every 6 hours**, **cefepime 2 g IV every 8 hours**, or **levofloxacin 750 mg daily**. [IDSA/ATS 2016]",
+        "**MDR risk or high mortality risk**: **two antipseudomonal agents of different classes** (for example a beta-lactam plus amikacin 15-20 mg/kg daily or a fluoroquinolone) plus **MRSA cover**. [IDSA/ATS 2016]",
+        "**MRSA cover**: **vancomycin 15 mg/kg IV every 8-12 hours** (loading 25-30 mg/kg in severe illness, target AUC 400-600) or **linezolid 600 mg IV every 12 hours**. [IDSA/ATS 2016]",
+        "**ICMR 2022 approach for late-onset or MDR-risk HAP/VAP in Indian ICUs**: **meropenem 1 g IV every 8 hours (extended infusion)** where carbapenem resistance is low, or **colistin or polymyxin B-based therapy** where carbapenem-resistant Acinetobacter or Enterobacterales predominate. [ICMR 2022]",
+        "**Colistin (colistimethate)**: **loading 9 million units** then **4.5 million units every 12 hours**, adjusted for renal function; **polymyxin B** 2.5-3 mg/kg/day in 2 doses (loading 2-2.5 mg/kg) needs no renal adjustment and is preferred for non-urinary infections. [International Consensus Polymyxins 2019]",
+        "**Extended or continuous infusion of beta-lactams** (meropenem over 3 hours, piperacillin-tazobactam over 4 hours) improves target attainment; BLING III (2024) showed a non-significant mortality reduction and meta-analysis a significant one. [BLING III JAMA 2024]",
+        "**Inhaled antibiotics** (amikacin or colistin) as **adjunct** are suggested only for VAP due to organisms susceptible only to aminoglycosides or polymyxins. [IDSA/ATS 2016]",
+      ],
+    },
+    {
+      heading: "Targeted therapy for resistant organisms (IDSA AMR Guidance 2024)",
+      points: [
+        "**ESBL Enterobacterales**: **meropenem** (or ertapenem when not critically ill); piperacillin-tazobactam is not preferred even if reported susceptible (MERINO). [IDSA AMR Guidance 2024]",
+        "**KPC or OXA-48 carbapenem-resistant Enterobacterales**: **ceftazidime-avibactam 2.5 g IV every 8 hours** over 2 hours; alternatives meropenem-vaborbactam (KPC) and imipenem-relebactam (KPC). [IDSA AMR Guidance 2024]",
+        "**NDM (metallo-beta-lactamase) CRE - common in India**: **ceftazidime-avibactam plus aztreonam (2 g IV every 8 hours) given together**, or **cefiderocol 2 g IV every 8 hours** over 3 hours. [IDSA AMR Guidance 2024]",
+        "**Difficult-to-treat Pseudomonas**: **ceftolozane-tazobactam 3 g IV every 8 hours** for pneumonia, ceftazidime-avibactam, imipenem-relebactam or cefiderocol, guided by testing. [IDSA AMR Guidance 2024]",
+        "**Carbapenem-resistant Acinetobacter baumannii (CRAB)**: **sulbactam-durlobactam (1 g/1 g IV every 6 hours) plus a carbapenem** is preferred; alternative **high-dose ampicillin-sulbactam (6-9 g sulbactam/day)** combined with polymyxin B, minocycline, tigecycline or cefiderocol. [IDSA AMR Guidance 2024]",
+        "**Avoid tigecycline monotherapy** for pneumonia - low serum and lung levels and excess mortality in trials. [IDSA AMR Guidance 2024]",
+        "Cefepime-enmetazobactam (approved 2024) and Indian-developed **cefepime-zidebactam** are emerging options; use only with microbiology and stewardship input. [ICMR AMRSN 2023]",
+      ],
+    },
+    {
+      heading: "De-escalation, duration and monitoring",
+      points: [
+        "**Review at 48-72 hours**: de-escalate to the narrowest active agent once culture and sensitivity are known; stop MRSA cover if cultures and nasal MRSA PCR are negative. [IDSA/ATS 2016]",
+        "**Duration: 7 days for both HAP and VAP**, including non-fermenters, if clinical response is good. [IDSA/ATS 2016]",
+        "The PneumA trial (Chastre 2003) showed **8 days equivalent to 15 days** overall, with more recurrence for non-fermenters but no excess mortality; iDIAPASON (2022) could not prove 8 days non-inferior for **Pseudomonas VAP**, so some clinicians extend selected cases. [iDIAPASON Lancet Respir Med 2022]",
+        "**Clinical response** is judged at 48-72 hours by fever, oxygenation, secretions, haemodynamics and WBC - not by the chest X-ray, which lags. [IDSA/ATS 2016]",
+        "**Non-response at 72 hours**: re-culture, consider resistant organism, empyema, abscess, other infection site, non-infective mimic, and under-dosing. [ERS/ESICM 2017]",
+        "**Therapeutic drug monitoring** for vancomycin (AUC 400-600) and aminoglycosides (trough under 1-2 mg/L), and daily creatinine for colistin. [ASHP/IDSA 2020]",
+        "**Antimicrobial stewardship** - prospective audit and feedback, ICMR AMSP guidance - reduces carbapenem and colistin use without worse outcomes. [ICMR AMSP 2018]",
+      ],
+    },
+    {
+      heading: "Special situations",
+      points: [
+        "**CKD and AKI**: adjust beta-lactams, carbapenems and colistin to creatinine clearance; **polymyxin B and linezolid need no renal adjustment**; avoid combining vancomycin with piperacillin-tazobactam where possible (AKI). [Sanford 2025]",
+        "**Augmented renal clearance** (young trauma, sepsis with CrCl over 130 mL/min) leads to under-dosing of beta-lactams - use extended infusions or higher doses. [ESICM 2024]",
+        "**Pregnancy**: beta-lactams, carbapenems and vancomycin are acceptable; avoid aminoglycosides, tetracyclines and fluoroquinolones unless no alternative. [Sanford 2025]",
+        "**Elderly**: atypical presentation, aspiration, and higher risk of C difficile and linezolid thrombocytopenia with longer courses. [Harrison 22e]",
+        "**Immunocompromised**: broaden the differential to PCP, CMV, fungi and nocardia (see the immunocompromised lung infection topic). [ATS 2020]",
+        "**Resource-limited ICU**: use the local antibiogram, polymyxin B and old drugs wisely, and invest in hand hygiene and bundles - prevention is cheaper than reserve antibiotics. [ICMR 2022]",
+      ],
+    },
+    {
+      heading: "Complications and prognosis",
+      points: [
+        "**Septic shock, ARDS, empyema, lung abscess** and prolonged ventilation and ICU stay. [Harrison 22e]",
+        "**Drug toxicity**: colistin nephrotoxicity (up to 40-60%) and neurotoxicity, vancomycin AKI, linezolid thrombocytopenia and serotonin syndrome, C difficile infection. [Sanford 2025]",
+        "**Mortality** is highest with CRAB, CRE and ventilated HAP; crude ICU mortality with CRAB pneumonia in Indian ICUs often exceeds 50%. [ICMR AMRSN 2023]",
+        "**Recurrence and superinfection** with more resistant organisms follow long or broad courses. [IDSA/ATS 2016]",
+        "**Post-ICU syndrome**: weakness, cognitive and psychological sequelae in survivors. [SCCM 2023]",
+      ],
+    },
+    {
+      heading: "Prevention - VAP and HAP bundles",
+      points: [
+        "**Avoid intubation** where possible with **NIV or high-flow nasal oxygen**, and avoid re-intubation. [SHEA/IDSA/APIC 2022]",
+        "**Minimise sedation**, with **daily spontaneous awakening and breathing trials** to extubate early. [SHEA/IDSA/APIC 2022]",
+        "**Head of bed elevated 30-45 degrees**, early mobilisation, and changing ventilator circuits only when soiled. [SHEA/IDSA/APIC 2022]",
+        "**Subglottic secretion drainage tubes** in patients expected to be ventilated over 48-72 hours, and **cuff pressure 20-30 cmH2O**. [SHEA/IDSA/APIC 2022]",
+        "**Oral care with tooth brushing**; **routine chlorhexidine mouthwash is no longer recommended** because of a possible mortality signal. [SHEA/IDSA/APIC 2022]",
+        "**Hand hygiene, contact precautions for MDR carriers, and environmental cleaning** cut cross-transmission of Acinetobacter and Klebsiella. [WHO 2022]",
+        "**Non-ventilated HAP prevention**: oral care, dysphagia screening, upright position, early mobility and incentive spirometry after surgery. [SHEA/IDSA/APIC 2022]",
+        "**National programme link**: the **National Action Plan on AMR (NAP-AMR 2.0, 2025)**, Kayakalp hospital standards and ICMR AMSP support stewardship and infection control. [MoHFW 2025]",
+      ],
+    },
+    {
+      heading: "Latest guideline updates (2023-2026)",
+      points: [
+        "**IDSA Guidance on treatment of antimicrobial-resistant Gram-negative infections (2024 version)** recommends **sulbactam-durlobactam** for CRAB and **ceftazidime-avibactam plus aztreonam or cefiderocol** for MBL producers. [IDSA AMR Guidance 2024]",
+        "**SHEA/IDSA/APIC Compendium 2022** dropped routine chlorhexidine oral care and made **avoiding intubation, sedation minimisation and SAT/SBT** essential practices. [SHEA/IDSA/APIC 2022]",
+        "**BLING III (2024)** and its meta-analysis support **continuous or extended beta-lactam infusion** in critically ill sepsis, including pneumonia. [BLING III JAMA 2024]",
+        "**ICMR AMRSN annual reports (2023-2024)** document rising carbapenem resistance and falling colistin susceptibility in Klebsiella - empirical colistin is not a guarantee. [ICMR AMRSN 2023]",
+        "**ICMR Treatment Guidelines 2022** remain the Indian reference for empirical HAP/VAP, emphasising the unit antibiogram and stewardship. [ICMR 2022]",
+        "**REVISE (2024)**: pantoprazole in ventilated patients reduced clinically important GI bleeding without a significant increase in VAP. [REVISE NEJM 2024]",
+      ],
+    },
+    {
+      heading: "Exam and viva angle",
+      points: [
+        "Define **HAP and VAP with the 48-hour rule**, and explain why **HCAP was dropped**.",
+        "List the **five MDR risk factors for VAP** (IV antibiotics in 90 days, septic shock, ARDS, 5 or more days in hospital, acute RRT).",
+        "Know the **7-day course** and the evidence (PneumA).",
+        "Know why **ceftazidime-avibactam fails against NDM** and is paired with **aztreonam**.",
+        "Recite the **VAP bundle** - head up, sedation hold, SBT, subglottic drainage, cuff pressure, oral care, hand hygiene.",
+        "Common mistake: **treating a positive tracheal culture without clinical pneumonia** (colonisation) or continuing empirical MRSA cover after negative cultures.",
+      ],
+    },
+  ],
+  tables: [
+    {
+      heading: "Drugs for HAP/VAP",
+      columns: ["Drug", "Dose and route", "Duration/titration", "Key adverse effects / contraindications"],
+      rows: [
+        ["Piperacillin-tazobactam", "4.5 g IV 6-hourly (extended 4-hour infusion)", "7 days", "AKI with vancomycin, hypokalaemia; not for ESBL bacteraemia"],
+        ["Cefepime", "2 g IV 8-hourly", "7 days", "Neurotoxicity (encephalopathy, myoclonus) in renal failure"],
+        ["Meropenem", "1-2 g IV 8-hourly (3-hour infusion)", "7 days", "Seizures (less than imipenem), C difficile; valproate interaction"],
+        ["Amikacin", "15-20 mg/kg IV once daily", "Short (3-5 days) in combination", "Nephro- and ototoxicity; trough monitoring"],
+        ["Levofloxacin", "750 mg IV/oral daily", "7 days", "QT, tendinopathy, dysglycaemia; masks TB"],
+        ["Vancomycin", "15-20 mg/kg IV 8-12-hourly; load 25-30 mg/kg", "Stop if MRSA excluded", "AKI, red man syndrome; AUC 400-600"],
+        ["Linezolid", "600 mg IV/oral 12-hourly", "7 days", "Thrombocytopenia, serotonin syndrome, lactic acidosis"],
+        ["Colistimethate", "9 MU load, then 4.5 MU IV 12-hourly", "7 days; adjust to CrCl", "Nephrotoxicity, neurotoxicity; resistance rising"],
+        ["Polymyxin B", "2-2.5 mg/kg load, then 1.25-1.5 mg/kg IV 12-hourly", "7 days", "Nephrotoxicity, skin pigmentation; no renal adjustment"],
+        ["Ceftazidime-avibactam (+ aztreonam for NDM)", "2.5 g IV 8-hourly over 2 hours (+ aztreonam 2 g 8-hourly)", "7 days", "Avibactam does not inhibit MBL; adjust in renal failure"],
+        ["Cefiderocol", "2 g IV 8-hourly over 3 hours", "7 days", "Higher mortality signal in CRAB (CREDIBLE-CR); costly"],
+        ["Sulbactam-durlobactam", "1 g/1 g IV 6-hourly over 3 hours, with imipenem or meropenem", "7-14 days", "Only for CRAB; limited availability in India"],
+      ],
+    },
+    {
+      heading: "MDR and MRSA risk factors (IDSA/ATS 2016)",
+      columns: ["Setting", "Risk factor for MDR Gram-negatives", "Risk factor for MRSA"],
+      rows: [
+        ["VAP", "IV antibiotics within 90 days; septic shock; ARDS before VAP; 5 or more days in hospital; acute RRT", "IV antibiotics within 90 days; unit MRSA over 10-20% or unknown"],
+        ["HAP", "IV antibiotics within 90 days; high mortality risk (ventilation for HAP, septic shock)", "IV antibiotics within 90 days; unit MRSA over 20% or unknown; high mortality risk"],
+        ["Unit level", "Over 10% of Gram-negatives resistant to the planned monotherapy", "MRSA prevalence among S aureus isolates"],
+      ],
+    },
+    {
+      heading: "Empirical regimen by risk",
+      columns: ["Situation", "Regimen", "Add"],
+      rows: [
+        ["HAP, no MDR risk, not high mortality", "Pip-taz or cefepime or levofloxacin (one agent)", "Nothing"],
+        ["HAP or VAP with MDR risk", "Antipseudomonal beta-lactam + amikacin or fluoroquinolone", "Vancomycin or linezolid if MRSA risk"],
+        ["Indian ICU with high carbapenem resistance", "Meropenem (extended) +/- polymyxin B or colistin per antibiogram", "MRSA cover if risk"],
+        ["Known NDM-CRE", "Ceftazidime-avibactam + aztreonam, or cefiderocol", "De-escalate as soon as possible"],
+        ["Known CRAB", "Sulbactam-durlobactam + carbapenem, or high-dose sulbactam + polymyxin B", "Infectious disease input"],
+      ],
+    },
+    {
+      heading: "Diagnostic thresholds and tools",
+      columns: ["Test", "Threshold", "Comment"],
+      rows: [
+        ["Endotracheal aspirate (quantitative)", "10^5-10^6 CFU/mL", "Non-invasive sampling preferred"],
+        ["Bronchoalveolar lavage", "10^4 CFU/mL", "When diagnosis uncertain"],
+        ["Protected specimen brush", "10^3 CFU/mL", "Rarely used"],
+        ["CPIS", "Over 6", "Poor accuracy; not for decisions"],
+        ["Procalcitonin", "Falling or under 0.5 ng/mL", "Support stopping, not starting"],
+        ["VAE (VAC)", "PEEP rise 3 cmH2O or FiO2 rise 0.20 for 2 days", "Surveillance only"],
+      ],
+    },
+    {
+      heading: "VAP prevention bundle (SHEA/IDSA/APIC 2022)",
+      columns: ["Element", "Target", "Why it works"],
+      rows: [
+        ["Avoid intubation", "NIV or HFNO where appropriate", "No tube, no VAP"],
+        ["Sedation minimisation with SAT and SBT", "Daily", "Shorter ventilation"],
+        ["Head of bed elevation", "30-45 degrees", "Less aspiration"],
+        ["Subglottic secretion drainage", "If ventilation over 48-72 hours", "Removes pooled secretions above cuff"],
+        ["Cuff pressure", "20-30 cmH2O", "Prevents leakage and tracheal injury"],
+        ["Oral care", "Tooth brushing; no routine chlorhexidine", "Reduces oral bacterial load"],
+        ["Early mobilisation and hand hygiene", "Every patient", "Less cross-infection and deconditioning"],
+      ],
+    },
+  ],
+  redFlags: [
+    "**Septic shock** - vasopressors needed, lactate over 2 mmol/L.",
+    "**Rising FiO2 or PEEP needs** in a ventilated patient.",
+    "**Need for intubation** after HAP onset (ventilated HAP - highest mortality).",
+    "**No clinical improvement at 72 hours** despite appropriate empirical therapy.",
+    "**Carbapenem-resistant organism isolated** - immediate infectious disease and stewardship input.",
+    "**Parapneumonic effusion or cavity** on imaging.",
+    "**AKI on colistin or vancomycin** - adjust drug and dose.",
+  ],
+  pearls: [
+    "**48 hours after admission = HAP; 48 hours after intubation = VAP.**",
+    "**HCAP is dead** (IDSA/ATS 2016).",
+    "**7 days is enough** for most HAP/VAP.",
+    "**NDM? Ceftazidime-avibactam plus aztreonam** - avibactam cannot inhibit metallo-enzymes.",
+    "**CRAB? Sulbactam-durlobactam plus a carbapenem** (IDSA 2024).",
+    "**Procalcitonin helps you stop, not start.**",
+    "**Polymyxin B for lung, colistin for urine** - colistimethate is excreted as active drug in urine.",
+    "**Chlorhexidine mouthwash is out; tooth brushing is in.**",
+    "Know your **unit antibiogram** - the best empirical guideline is local.",
+  ],
+  mcqs: [
+    {
+      id: "respiratory-hap-vap-q1",
+      stem: "Which of the following is listed by IDSA/ATS 2016 as a risk factor for multidrug-resistant VAP?",
+      options: [
+        "Age over 65 years",
+        "Diabetes mellitus",
+        "Acute renal replacement therapy before VAP onset",
+        "Admission from home",
+      ],
+      answer: 2,
+      explanation:
+        "The five MDR risk factors for VAP are IV antibiotics in the previous 90 days, septic shock at VAP, ARDS preceding VAP, 5 or more days of hospitalisation and acute renal replacement therapy before VAP. Age, diabetes and admission from home are not among the validated MDR risk factors.",
+      difficulty: "moderate",
+    },
+    {
+      id: "respiratory-hap-vap-q2",
+      stem: "A ventilated patient has VAP due to a Klebsiella pneumoniae producing NDM-1 carbapenemase. Which regimen is most appropriate?",
+      options: [
+        "Ceftazidime-avibactam alone",
+        "Meropenem-vaborbactam",
+        "Tigecycline monotherapy",
+        "Ceftazidime-avibactam combined with aztreonam",
+      ],
+      answer: 3,
+      explanation:
+        "NDM is a metallo-beta-lactamase that avibactam and vaborbactam cannot inhibit, but it cannot hydrolyse aztreonam; avibactam protects aztreonam from co-produced ESBLs, so the combination works. Ceftazidime-avibactam or meropenem-vaborbactam alone fail against MBLs, and tigecycline monotherapy is avoided in pneumonia because of low lung levels and excess mortality.",
+      difficulty: "hard",
+    },
+    {
+      id: "respiratory-hap-vap-q3",
+      stem: "What is the recommended duration of antibiotic therapy for most patients with VAP who respond clinically?",
+      options: ["7 days", "3 days", "14 days", "21 days"],
+      answer: 0,
+      explanation:
+        "IDSA/ATS 2016 recommends 7 days for HAP and VAP, based on trials such as PneumA where 8 days matched 15 days with less resistance emergence. Three days is too short for confirmed VAP, and 14-21 days increases toxicity, cost and resistance without better outcomes.",
+      difficulty: "easy",
+    },
+    {
+      id: "respiratory-hap-vap-q4",
+      stem: "Which practice was removed from routine VAP prevention recommendations in the SHEA/IDSA/APIC 2022 compendium?",
+      options: [
+        "Daily spontaneous awakening and breathing trials",
+        "Routine chlorhexidine oral care",
+        "Head-of-bed elevation to 30-45 degrees",
+        "Avoiding intubation with non-invasive ventilation where safe",
+      ],
+      answer: 1,
+      explanation:
+        "Chlorhexidine oral care is no longer recommended routinely because meta-analyses suggested a possible increase in mortality without clear VAP benefit; tooth brushing is preferred. Sedation interruption with breathing trials, head elevation and avoiding intubation remain essential practices.",
+      difficulty: "moderate",
+    },
+    {
+      id: "respiratory-hap-vap-q5",
+      stem: "Regarding procalcitonin in HAP and VAP, which statement reflects IDSA/ATS 2016?",
+      options: [
+        "A procalcitonin under 0.5 ng/mL rules out VAP and antibiotics should be withheld",
+        "Procalcitonin should replace cultures in the ICU",
+        "Procalcitonin plus clinical criteria can guide discontinuation of antibiotics",
+        "Procalcitonin above 2 ng/mL mandates adding MRSA cover",
+      ],
+      answer: 2,
+      explanation:
+        "IDSA/ATS recommends against using procalcitonin to decide whether to start antibiotics but suggests using it with clinical criteria to stop them. A low value does not rule out VAP, it never replaces cultures, and it does not indicate the organism or need for MRSA cover.",
+      difficulty: "moderate",
+    },
+  ],
+  theory: [
+    {
+      id: "respiratory-hap-vap-t1",
+      paper: "I",
+      kind: "long",
+      marks: 10,
+      minutes: 18,
+      frequency: "common",
+      question:
+        "Define hospital-acquired and ventilator-associated pneumonia. Discuss the risk factors for multidrug-resistant pathogens, empirical antibiotic therapy in the Indian context, and prevention.",
+      openingLines: [
+        "HAP is pneumonia occurring 48 hours or more after admission and not incubating at admission; VAP occurs 48 hours or more after endotracheal intubation (IDSA/ATS 2016).",
+        "In Indian ICUs they are dominated by carbapenem-resistant Gram-negative bacilli, so empirical therapy must follow the local antibiogram and be de-escalated within 72 hours.",
+      ],
+      answer: [
+        {
+          heading: "Definitions and burden",
+          points: [
+            "HAP, VAP, ventilated HAP; HCAP removed in 2016.",
+            "VAP attributable mortality about 13%; Indian VAP rates several-fold higher than US benchmarks.",
+            "ICMR AMRSN: carbapenem resistance over 80% in Acinetobacter, about half in Klebsiella.",
+          ],
+        },
+        {
+          heading: "Pathogenesis",
+          points: [
+            "Oropharyngeal colonisation, micro-aspiration past the cuff, ETT biofilm, impaired clearance.",
+          ],
+        },
+        {
+          heading: "MDR risk factors",
+          points: [
+            "VAP: IV antibiotics in 90 days, septic shock, ARDS, 5 or more days in hospital, acute RRT.",
+            "MRSA: IV antibiotics in 90 days, unit MRSA over 20%, high mortality risk.",
+          ],
+        },
+        {
+          heading: "Diagnosis",
+          points: [
+            "New infiltrate plus fever, purulent secretions, leucocytosis, worsening oxygenation.",
+            "Endotracheal aspirate and blood cultures before antibiotics; PCT to stop, not start.",
+          ],
+        },
+        {
+          heading: "Empirical therapy",
+          points: [
+            "Low risk: one antipseudomonal agent (pip-taz, cefepime, levofloxacin).",
+            "MDR risk: two antipseudomonal agents plus vancomycin or linezolid if MRSA risk.",
+            "Indian ICU: meropenem extended infusion +/- polymyxin B per antibiogram (ICMR 2022).",
+            "Targeted: NDM - ceftazidime-avibactam + aztreonam; CRAB - sulbactam-durlobactam.",
+            "Review at 48-72 hours, de-escalate, total 7 days.",
+          ],
+        },
+        {
+          heading: "Prevention",
+          points: [
+            "Avoid intubation, sedation hold and SBT, head up 30-45 degrees, subglottic drainage, cuff 20-30 cmH2O, tooth brushing, hand hygiene.",
+            "Stewardship under NAP-AMR and ICMR AMSP.",
+          ],
+        },
+      ],
+      mustDraw: ["Flow chart: suspected HAP/VAP, cultures, risk assessment, empirical regimen, 48-72 hour review, de-escalation, 7 days"],
+      markSplit: [
+        { part: "Definitions and burden", marks: 1 },
+        { part: "Pathogenesis and MDR risk factors", marks: 2 },
+        { part: "Diagnosis", marks: 1 },
+        { part: "Empirical and targeted therapy", marks: 4 },
+        { part: "Prevention bundle", marks: 2 },
+      ],
+      keywords: ["HAP", "VAP", "MDR", "antibiogram", "de-escalation", "VAP bundle"],
+    },
+    {
+      id: "respiratory-hap-vap-t2",
+      paper: "I",
+      kind: "short-note",
+      marks: 5,
+      minutes: 9,
+      frequency: "common",
+      question: "Write a short note on the VAP prevention bundle.",
+      openingLines: [
+        "VAP is the commonest ICU-acquired infection in ventilated patients, and most of it is preventable with a bundle of simple, evidence-based measures.",
+        "The SHEA/IDSA/APIC 2022 compendium lists essential and additional practices, and it no longer recommends routine chlorhexidine oral care.",
+      ],
+      answer: [
+        {
+          heading: "Avoid and shorten ventilation",
+          points: [
+            "NIV or HFNO to avoid intubation; avoid re-intubation.",
+            "Minimise sedation; daily spontaneous awakening and breathing trials.",
+            "Early mobilisation.",
+          ],
+        },
+        {
+          heading: "Reduce aspiration",
+          points: [
+            "Head of bed 30-45 degrees.",
+            "Subglottic secretion drainage tubes if ventilation over 48-72 hours.",
+            "Cuff pressure 20-30 cmH2O.",
+          ],
+        },
+        {
+          heading: "Reduce contamination",
+          points: [
+            "Oral care with tooth brushing; no routine chlorhexidine.",
+            "Change circuits only when soiled; hand hygiene; contact precautions for MDR carriers.",
+          ],
+        },
+        {
+          heading: "Audit",
+          points: [
+            "Bundle compliance checklist and VAE surveillance (CDC NHSN).",
+          ],
+        },
+      ],
+      mustDraw: ["Table of bundle elements with target and rationale"],
+      markSplit: [
+        { part: "Avoid and shorten ventilation", marks: 2 },
+        { part: "Reduce aspiration", marks: 2 },
+        { part: "Contamination and audit", marks: 1 },
+      ],
+      keywords: ["VAP bundle", "subglottic drainage", "sedation hold", "head elevation", "oral care"],
+    },
+  ],
+  references: [
+    "Harrison's Principles of Internal Medicine, 22nd edition, 2025 - Health care-associated pneumonia chapter",
+    "Kalil AC et al. Management of adults with hospital-acquired and ventilator-associated pneumonia: IDSA/ATS clinical practice guidelines. Clin Infect Dis 2016",
+    "Torres A et al. International ERS/ESICM/ESCMID/ALAT guidelines for HAP and VAP. Eur Respir J 2017",
+    "ICMR Treatment Guidelines for Antimicrobial Use in Common Syndromes, 2nd edition, 2022",
+    "ICMR Antimicrobial Resistance Research and Surveillance Network Annual Report, 2023",
+    "Tamma PD et al. IDSA 2024 Guidance on the Treatment of Antimicrobial-Resistant Gram-Negative Infections. Clin Infect Dis 2024",
+    "Klompas M et al. Strategies to prevent ventilator-associated pneumonia, ventilator-associated events and nonventilator hospital-acquired pneumonia: 2022 update (SHEA/IDSA/APIC). Infect Control Hosp Epidemiol 2022",
+    "Dulhunty JM et al. Continuous vs intermittent beta-lactam infusion in sepsis (BLING III). JAMA 2024",
   ],
 });
 

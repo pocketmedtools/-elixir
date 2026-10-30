@@ -1115,4 +1115,495 @@ topics.push({
   ],
 });
 
+topics.push({
+  id: "respiratory-solitary-pulmonary-nodule",
+  title: "Solitary pulmonary nodule and incidental lung nodules",
+  frequency: "common",
+  oneLiner:
+    "A **solitary pulmonary nodule (SPN)** is a single, well-defined, round opacity **up to 3 cm** surrounded by aerated lung, without collapse, hilar enlargement or effusion; its management depends on **size, density (solid, part-solid, ground-glass), morphology and clinical risk** - using the **Fleischner 2017** rules for incidental nodules, the **Brock (or Mayo) model** to estimate cancer probability and **Lung-RADS v2022** in screening - while in India **tuberculous granulomas** are the commonest mimic.",
+  keywords: [
+    "SPN",
+    "coin lesion",
+    "incidental nodule",
+    "Fleischner 2017",
+    "Brock model",
+    "PanCan",
+    "Mayo model",
+    "Herder model",
+    "Lung-RADS v2022",
+    "ground-glass nodule",
+    "part-solid nodule",
+    "subsolid nodule",
+    "volume doubling time",
+    "tuberculoma",
+    "hamartoma",
+    "PET-CT",
+    "CT-guided biopsy",
+    "navigational bronchoscopy",
+  ],
+  sections: [
+    {
+      heading: "Definition and epidemiology",
+      points: [
+        "A **pulmonary nodule** is a rounded opacity, well or poorly defined, **3 cm or less** in diameter; a lesion **over 3 cm is a mass** and is presumed malignant until proved otherwise. [Fleischner Glossary 2024]",
+        "**Micronodule** is under 3 mm; nodules are described by **density**: **solid**, **part-solid** (ground-glass with a solid component) and **pure ground-glass** (lung markings seen through it); part-solid and ground-glass together are **subsolid**. [Fleischner 2017]",
+        "Incidental nodules are found on up to a **third of chest CTs** and in about **half of screening LDCTs** in smokers; the great majority are benign. [Harrison 22e]",
+        "The **malignancy risk is under 1% for solid nodules under 6 mm**, even in high-risk patients, and rises with size - roughly 1-2% at 6-8 mm and higher above 8 mm. [Fleischner 2017]",
+        "**Part-solid nodules carry the highest cancer risk** of any nodule of equal size (up to 60% or more if persistent), usually adenocarcinoma spectrum, though they grow slowly. [Fleischner 2017]",
+        "In India, **tuberculous granulomas (tuberculomas)** are the commonest benign cause and the main reason PET-CT and growth rules perform less well than in Western data. [Lung India]",
+        "Lung cancer presenting as an SPN is usually **stage IA** with **5-year survival of about 80-90%** after resection - the reason nodules are worth chasing. [IASLC TNM 9]",
+      ],
+    },
+    {
+      heading: "Aetiology: what a nodule can be",
+      points: [
+        "**Malignant**: primary lung cancer (adenocarcinoma commonest), **solitary metastasis** (colon, kidney, breast, sarcoma, melanoma, germ-cell), **carcinoid**, lymphoma. [Harrison 22e]",
+        "**Infective granulomas**: **tuberculoma**, non-tuberculous mycobacteria, histoplasmosis and cryptococcosis, **aspergilloma/aspergillus nodule**, and **hydatid cyst**. [Fishman 6e]",
+        "**Benign neoplasm**: **hamartoma** (commonest benign lung tumour, with fat and popcorn calcification), lipoma, chondroma. [Harrison 22e]",
+        "**Inflammatory**: **rheumatoid nodule**, granulomatosis with polyangiitis (often cavitating, multiple), sarcoid, organising pneumonia, round pneumonia (children). [Harrison 22e]",
+        "**Vascular**: **pulmonary AV malformation** (feeding artery and draining vein), infarct, haematoma. [Fishman 6e]",
+        "**Other**: intrapulmonary lymph node (perifissural, triangular), **rounded atelectasis** (asbestos, comet-tail sign), mucoid impaction, bronchogenic cyst, and skin or nipple shadows on CXR. [Fleischner 2017]",
+        "**Clinical risk factors for malignancy**: older age, **smoking**, prior cancer, family history of lung cancer, emphysema or fibrosis, and exposure to asbestos, radon or uranium. [ACCP 2013]",
+      ],
+    },
+    {
+      heading: "Pathophysiology: why size, density and growth predict cancer",
+      points: [
+        "Malignant nodules grow at a measurable pace: **volume doubling time (VDT) of about 20-400 days for solid cancers**; VDT **under 400 days** is suspicious, **over 600 days** favours benign. [BTS 2015]",
+        "A **solid nodule stable for 2 years** is traditionally benign, but **subsolid nodules may take 3-5 years** to grow because adenocarcinoma in situ and minimally invasive adenocarcinoma double in 2-3 years. [Fleischner 2017]",
+        "A **doubling of volume is only a 26% increase in diameter**, so small changes in diameter matter - hence volumetry and same-technique thin-section CT. [BTS 2015]",
+        "Very rapid growth (VDT **under 20 days**) suggests infection, inflammation or haemorrhage rather than cancer. [Harrison 22e]",
+        "**Ground-glass to part-solid evolution** follows the adenocarcinoma spectrum: atypical adenomatous hyperplasia, **adenocarcinoma in situ**, minimally invasive (solid part 5 mm or less), then invasive adenocarcinoma - the **solid part corresponds to invasion**. [WHO 2021]",
+        "**Spiculation** (corona radiata) reflects tumour infiltrating along interlobular septa and lymphatics, and **pleural retraction** reflects desmoplastic fibrosis. [Fishman 6e]",
+        "**Benign calcification** (central, diffuse, laminated, popcorn) reflects dystrophic calcification of healed granulomas or cartilage in hamartomas - cancers rarely calcify in these patterns. [Fishman 6e]",
+        "**FDG-PET uptake** reflects high glucose metabolism; active granulomas (TB, fungal) also take up FDG, and slow-growing adenocarcinoma in situ and carcinoid may not. [Harrison 22e]",
+      ],
+    },
+    {
+      heading: "Classification: Fleischner 2017 for incidental nodules",
+      points: [
+        "**Applies to**: incidental nodules in adults **35 years or older**; **not** to lung cancer screening, immunocompromised patients or patients with known cancer. [Fleischner 2017]",
+        "**Solid single, under 6 mm (under 100 mm3)**: low risk - no routine follow-up; high risk - optional CT at 12 months. [Fleischner 2017]",
+        "**Solid single, 6-8 mm (100-250 mm3)**: low risk - CT at 6-12 months, then consider CT at 18-24 months; high risk - CT at 6-12 months and again at 18-24 months. [Fleischner 2017]",
+        "**Solid single, over 8 mm (over 250 mm3)**: consider **CT at 3 months, PET-CT or tissue sampling**, whatever the risk. [Fleischner 2017]",
+        "**Multiple solid nodules**: under 6 mm - no routine follow-up (optional 12-month CT if high risk); 6 mm or more - CT at 3-6 months, then consider 18-24 months; manage by the **most suspicious nodule**. [Fleischner 2017]",
+        "**Pure ground-glass single**: under 6 mm - no routine follow-up; **6 mm or more - CT at 6-12 months to confirm persistence, then every 2 years until 5 years**. [Fleischner 2017]",
+        "**Part-solid single**: under 6 mm - no routine follow-up; **6 mm or more - CT at 3-6 months**; if persistent and solid part under 6 mm, **annual CT for 5 years**; a **solid component of 6 mm or more is highly suspicious**. [Fleischner 2017]",
+        "**Size is the average of long and short axes** on thin-section (1 mm) CT, rounded to the nearest millimetre; volumetry is preferred where software exists. [Fleischner 2017]",
+      ],
+    },
+    {
+      heading: "Risk models and other classifications",
+      points: [
+        "**Brock (PanCan) model**: age, sex, family history of lung cancer, emphysema, nodule size, **type (part-solid scores highest)**, upper-lobe location, number of nodules and spiculation - **recommended by BTS 2015** for initial risk. [BTS 2015]",
+        "**Mayo Clinic model**: age, smoking, prior extrathoracic cancer over 5 years ago, diameter, spiculation and upper-lobe location - endorsed by **ACCP 2013**. [ACCP 2013]",
+        "**ACCP 2013 thresholds**: probability **under 5% - CT surveillance**; **5-65% - PET-CT and/or non-surgical biopsy**; **over 65% - proceed to surgery** (after staging) in a fit patient. [ACCP 2013]",
+        "**BTS 2015 pathway**: under 5 mm (under 80 mm3) - discharge; 5-6 mm - CT at 1 year; 6 mm or more with **Brock under 10% - volumetric CT surveillance**; 8 mm or more with **Brock 10% or more - PET-CT** then **Herder model**. [BTS 2015]",
+        "**Herder model** adds PET uptake to Mayo: **under 10% - surveillance; 10-70% - image-guided biopsy; over 70% - excision or non-surgical treatment**. [BTS 2015]",
+        "**Lung-RADS v2022 (ACR)** is used only for screening LDCT: categories **1 (negative), 2 (benign), 3 (probably benign), 4A, 4B and 4X (suspicious)**, plus S for significant other findings. [ACR Lung-RADS 2022]",
+        "**Caution in India**: these models were derived in low-TB populations and **overestimate the benign-cancer separation of PET**; clinical judgment and TB testing remain essential. [Lung India]",
+      ],
+    },
+    {
+      heading: "Clinical features - history",
+      points: [
+        "Most SPNs are **asymptomatic and incidental** - found on CXR or CT done for trauma, pre-operative screening, COVID-19, or cardiac imaging. [Harrison 22e]",
+        "Ask **age, smoking pack-years, bidi use, biomass exposure**, asbestos and silica work, and family history of lung cancer. [ACCP 2013]",
+        "Ask **past TB, contact with TB**, and fever, cough, weight loss - an active process needs NAAT, not surveillance. [NTEP 2023]",
+        "Ask **past cancer** - a new nodule in a patient with known malignancy is a metastasis until proved otherwise, and Fleischner rules do not apply. [Fleischner 2017]",
+        "Ask about **immunosuppression** (HIV, transplant, steroids, biologics, chemotherapy) - nodules then suggest fungal, nocardia or mycobacterial infection. [Harrison 22e]",
+        "Ask about **rheumatoid arthritis, sinusitis and haematuria** (GPA), **epistaxis and telangiectasia** (HHT and AVM), and **rearing dogs or sheep** (hydatid). [Harrison 22e]",
+        "Most important single step: **obtain all previous chest images** - a nodule unchanged for 2 years (solid) needs no further work-up. [ACCP 2013]",
+      ],
+    },
+    {
+      heading: "Examination findings",
+      points: [
+        "**Examination is usually normal** - its purpose is to look for clues to cause and to fitness for surgery. [Harrison 22e]",
+        "**Clubbing**, cachexia and supraclavicular nodes suggest malignancy (and supraclavicular node biopsy may give the stage). [Harrison 22e]",
+        "**Rheumatoid hands and subcutaneous nodules** suggest rheumatoid lung nodules; **telangiectasia** suggests AVM. [Harrison 22e]",
+        "**Breast, thyroid, skin (melanoma), testes and abdomen** - search for a primary in suspected metastasis. [Harrison 22e]",
+        "**Skin and nipple shadows**: on CXR, a nipple marker or repeat film settles a 'nodule' in the lower zones. [Fishman 6e]",
+        "**Functional status**: ECOG performance status, breathlessness and comorbidity, which decide whether surgery or SBRT is an option. [ACCP 2013]",
+      ],
+    },
+    {
+      heading: "Differential diagnosis: features on CT",
+      points: [
+        "**Favouring benign**: size under 6 mm, **benign calcification (central, diffuse, laminated, popcorn)**, **fat** (hamartoma), smooth margins, **perifissural triangular shape** (intrapulmonary lymph node), stability over 2 years (solid). [Fleischner 2017]",
+        "**Favouring malignant**: size over 8 mm, **spiculation**, lobulation, pleural retraction, **upper lobe**, part-solid density, **air bronchogram or bubbly lucencies**, growth, and **cavity wall over 15 mm**. [Fishman 6e]",
+        "**Tuberculoma**: upper lobe or superior segment of lower lobe, **satellite nodules**, central or laminated calcification, calcified hilar nodes; may be PET-avid. [Fishman 6e]",
+        "**Hamartoma**: smooth, lobulated, **fat density (-40 to -120 HU)** and popcorn calcification in about a third. [Fishman 6e]",
+        "**AV malformation**: feeding artery and draining vein on CT, enhances like vessels; never biopsy. [Fishman 6e]",
+        "**Rounded atelectasis**: pleural-based, next to pleural thickening, with the **comet-tail sign** of vessels swirling in - asbestos exposure. [Fishman 6e]",
+        "**Hydatid cyst**: smooth, water-density; ruptured cyst shows the **water-lily (camalote) sign**; do not needle it (anaphylaxis). [API Textbook 12e]",
+      ],
+    },
+    {
+      heading: "Investigations - first line",
+      points: [
+        "**Compare with previous imaging** first - free and decisive. [ACCP 2013]",
+        "A nodule seen on CXR needs a **thin-section (1 mm) non-contrast CT chest** to confirm it is real, measure it and characterise density and calcification. [Fleischner 2017]",
+        "**Sputum or BAL NAAT for TB** if there are symptoms, cavitation or a tree-in-bud pattern; a tuberculoma itself is often paucibacillary and NAAT-negative. [NTEP 2023]",
+        "**Blood tests**: CBC, ESR or CRP, HIV, glucose; **rheumatoid factor/anti-CCP and ANCA** when the history suggests them. [Harrison 22e]",
+        "**Hydatid serology** (ELISA) and ultrasound abdomen when a cyst is suspected. [API Textbook 12e]",
+        "**Spirometry and DLCO** before any decision about surgery or biopsy. [ACCP 2013]",
+      ],
+    },
+    {
+      heading: "Investigations - advanced: PET, biopsy and surgery",
+      points: [
+        "**PET-CT** is useful for **solid nodules 8 mm or more** with intermediate risk; sensitivity is about **90-95%** but specificity is lower in TB-endemic regions because **granulomas take up FDG**. [ACCP 2013]",
+        "**False-negative PET**: nodules under 8 mm, **ground-glass and part-solid adenocarcinoma**, adenocarcinoma in situ, carcinoid and mucinous tumours. [ACCP 2013]",
+        "**CT-guided transthoracic needle biopsy**: diagnostic yield about **90%** for peripheral nodules; **pneumothorax in about 15-25%**, needing a drain in about 5%; small haemoptysis is common. [BTS 2015]",
+        "**Bronchoscopic biopsy**: **radial EBUS, electromagnetic navigation or robotic bronchoscopy** reach peripheral nodules with yields of about 70-80% and fewer pneumothoraces; a **bronchus sign** on CT predicts success. [CHEST 2023]",
+        "**EBUS-TBNA** samples enlarged or PET-avid mediastinal nodes, which stages and diagnoses in one step. [ACCP 2013]",
+        "**VATS wedge resection** is both diagnostic and therapeutic for high-probability nodules; frozen section then completion lobectomy or segmentectomy if malignant. [ACCP 2013]",
+        "A **non-diagnostic biopsy does not exclude cancer** - only a specific benign diagnosis (e.g. granuloma with AFB, hamartoma) is reassuring; otherwise repeat, resect or follow closely. [ACCP 2013]",
+      ],
+    },
+    {
+      heading: "Management in OPD and primary care",
+      points: [
+        "Step 1: **Is it a real nodule?** Repeat CXR with nipple markers or get CT for any CXR nodule. [Fleischner 2017]",
+        "Step 2: **Is it benign by definition?** Benign calcification, fat, typical perifissural node, or 2-year stability (solid) - **no follow-up**. [Fleischner 2017]",
+        "Step 3: **Estimate risk** (clinical risk factors plus Brock or Mayo) and **apply Fleischner 2017** for size and density. [BTS 2015]",
+        "Step 4: **Document a clear plan** - date and type of next CT - in the report and patient record, and give the patient a written copy; lost follow-up is the commonest failure. [ACCP 2013]",
+        "**Do not start empirical ATT** for an isolated asymptomatic nodule without bacteriological or histological evidence of TB. [NTEP 2023]",
+        "**Smoking cessation** advice at every visit - nodule detection is a 'teachable moment'. [USPSTF 2021]",
+        "**Explain uncertainty honestly**: most nodules are benign, but follow-up matters; patient anxiety is a recognised harm of surveillance. [ACCP 2013]",
+      ],
+    },
+    {
+      heading: "Management in hospital / specialist",
+      points: [
+        "**Low probability (under 5%)**: CT surveillance per Fleischner or BTS intervals. [ACCP 2013]",
+        "**Intermediate probability (5-65%)**: PET-CT for solid nodules 8 mm or more, then biopsy (CT-guided or navigational) or surgical biopsy depending on location and patient choice. [ACCP 2013]",
+        "**High probability (over 65%)**: **stage with PET-CT** and proceed to **surgical resection** (lobectomy or segmentectomy for peripheral tumours 2 cm or less) without preoperative biopsy in a fit patient. [ACCP 2013]",
+        "**Unfit for surgery**: **SBRT** after biopsy confirmation, or empirically when probability is high and biopsy is unsafe (multidisciplinary decision). [BTS 2015]",
+        "**Persistent part-solid nodule with solid part 6 mm or more** or growing: resection is usually advised (often sublobar). [Fleischner 2017]",
+        "**Persistent pure GGN**: surveillance for 5 years is safe; growth or new solid component prompts resection. [Fleischner 2017]",
+        "**Multidisciplinary nodule clinic** (pulmonologist, radiologist, thoracic surgeon, oncologist) improves adherence and reduces unnecessary biopsies. [BTS 2015]",
+      ],
+    },
+    {
+      heading: "Special situations",
+      points: [
+        "**Lung cancer screening LDCT**: use **Lung-RADS v2022**, not Fleischner (see the Lung cancer topic). [ACR Lung-RADS 2022]",
+        "**Known extrathoracic cancer**: treat new nodules as metastases until proven otherwise; follow the oncology staging protocol. [Fleischner 2017]",
+        "**Immunocompromised**: nodules often mean infection (fungal, nocardia, TB) - **early biopsy or BAL**, not surveillance (see the Immunocompromised lung infections topic). [Harrison 22e]",
+        "**Under 35 years**: cancer is rare; nodules are usually infective - manage case by case. [Fleischner 2017]",
+        "**Pregnancy**: defer non-urgent CT surveillance until after delivery unless highly suspicious. [Fleischner 2017]",
+        "**TB-endemic India**: PET-avid nodules frequently prove to be **granulomas**, so **tissue diagnosis is favoured before surgery** where feasible, and a **short-interval CT after treating any active infection** helps. [Lung India]",
+        "**Post-COVID CT nodules**: many are inflammatory and resolve; re-image at about 3 months before invasive work-up. [Fleischner 2020]",
+      ],
+    },
+    {
+      heading: "Complications, prognosis and follow-up",
+      points: [
+        "**Missed or delayed follow-up** is the main harm - a stage IA cancer can become unresectable. [ACCP 2013]",
+        "**Over-investigation harms**: radiation, biopsy pneumothorax and bleeding, surgery for benign disease, and anxiety. [USPSTF 2021]",
+        "**Growth definition in Lung-RADS v2022**: an increase in mean diameter of **more than 1.5 mm within 12 months**. [ACR Lung-RADS 2022]",
+        "**Stage IA resected adenocarcinoma** has **5-year survival around 80-90%**; adenocarcinoma in situ and minimally invasive adenocarcinoma are close to **100% disease-specific survival**. [IASLC TNM 9]",
+        "**Follow-up CT**: same scanner and protocol if possible, low dose, thin sections, and **volumetric comparison**. [BTS 2015]",
+        "**Stop surveillance** when a solid nodule is stable for 2 years (or volumetric stability for 1 year per BTS), or a subsolid nodule for 5 years. [BTS 2015]",
+      ],
+    },
+    {
+      heading: "Latest guideline updates and exam angle",
+      points: [
+        "**ACR Lung-RADS v2022** (released late 2022): adds **airway nodules and atypical pulmonary cysts**, **stepped management** (category 3 stable at 6 months becomes 2; 4A stable at 3 months becomes 3), and clarifies inflammatory/infectious findings. [ACR Lung-RADS 2022]",
+        "**Fleischner 2017** remains current: raised the size threshold to **6 mm**, gave volume equivalents, and lengthened subsolid follow-up to **5 years**. [Fleischner 2017]",
+        "**BTS 2015** remains the UK standard (Brock, volumetry, Herder); **IASLC TNM 9 (2024)** stages part-solid tumours by the **size of the solid (invasive) component**. [IASLC TNM 9]",
+        "**Screening eligibility** widened (USPSTF 2021; ACS 2023 drops years-since-quit), so more screen-detected nodules now reach primary care. [ACS 2023]",
+        "**AI-assisted nodule detection and volumetry** is increasingly used; it supports but does not replace radiologist review. [Fleischner 2024]",
+        "Viva: **'Define SPN; list benign calcification patterns; how do you follow a 7 mm solid nodule in a smoker?'** - CT at 6-12 months and 18-24 months. [Fleischner 2017]",
+        "Common mistakes: applying Fleischner to screening or cancer patients, calling eccentric calcification benign, and **starting ATT for a nodule without proof**. [Fleischner 2017]",
+      ],
+    },
+  ],
+  tables: [
+    {
+      heading: "Fleischner 2017 - incidental solitary nodule (adults 35+)",
+      columns: ["Nodule type", "Under 6 mm", "6-8 mm", "Over 8 mm"],
+      rows: [
+        ["Solid, low risk", "No routine follow-up", "CT 6-12 months, consider CT 18-24 months", "Consider CT at 3 months, PET-CT or tissue"],
+        ["Solid, high risk", "Optional CT at 12 months", "CT 6-12 months and 18-24 months", "Consider CT at 3 months, PET-CT or tissue"],
+        ["Pure ground-glass", "No routine follow-up", "6 mm or more: CT 6-12 months, then every 2 years to 5 years", "Same as 6 mm or more"],
+        ["Part-solid", "No routine follow-up", "6 mm or more: CT 3-6 months; if solid part under 6 mm, annual CT for 5 years", "Solid part 6 mm or more: highly suspicious - PET, biopsy or resection"],
+      ],
+    },
+    {
+      heading: "Benign versus malignant features",
+      columns: ["Feature", "Favours benign", "Favours malignant"],
+      rows: [
+        ["Size", "Under 6 mm", "Over 8 mm; over 3 cm is a mass"],
+        ["Calcification", "Central, diffuse, laminated, popcorn", "Eccentric or stippled (indeterminate)"],
+        ["Margin", "Smooth, well defined", "Spiculated, lobulated, pleural tail"],
+        ["Density", "Fat (hamartoma), fully calcified", "Part-solid; solid part 6 mm or more"],
+        ["Growth", "Stable 2 years (solid), 5 years (subsolid)", "VDT 20-400 days"],
+        ["Location", "Lower lobe, perifissural", "Upper lobe"],
+        ["Cavity wall", "4 mm or less", "Over 15 mm"],
+      ],
+    },
+    {
+      heading: "Lung-RADS v2022 (screening LDCT)",
+      columns: ["Category", "Typical finding (solid nodule)", "Management", "Malignancy probability"],
+      rows: [
+        ["1 Negative", "No nodule or benign calcification", "Annual LDCT", "Under 1%"],
+        ["2 Benign", "Solid under 6 mm baseline; GGN under 30 mm", "Annual LDCT", "Under 1%"],
+        ["3 Probably benign", "Solid 6 to under 8 mm baseline; new 4 to under 6 mm", "LDCT at 6 months", "1-2%"],
+        ["4A Suspicious", "Solid 8 to under 15 mm baseline; new 6 to under 8 mm", "LDCT at 3 months; PET-CT if solid part 8 mm or more", "5-15%"],
+        ["4B Very suspicious", "Solid 15 mm or more; new or growing 8 mm or more", "Diagnostic CT, PET-CT, tissue sampling", "Over 15%"],
+        ["4X", "Category 3-4 plus suspicious features (spiculation, nodes)", "As 4B", "Over 15%"],
+      ],
+    },
+    {
+      heading: "Tools for the nodule work-up",
+      columns: ["Tool", "Use", "Limitations / complications"],
+      rows: [
+        ["Thin-section CT (1 mm)", "Confirm, measure, characterise", "Inter-reader variation; use same protocol"],
+        ["Brock / Mayo / Herder models", "Estimate cancer probability", "Derived in low-TB populations"],
+        ["PET-CT", "Solid nodule 8 mm or more, intermediate risk", "False positive in TB; false negative in GGN, carcinoid"],
+        ["CT-guided needle biopsy", "Peripheral nodules", "Pneumothorax 15-25%, drain about 5%"],
+        ["Navigational / robotic bronchoscopy", "Peripheral nodule with bronchus sign", "Yield 70-80%; availability"],
+        ["VATS wedge resection", "High probability; diagnosis and cure", "Surgical risk; may remove benign nodules"],
+      ],
+    },
+    {
+      heading: "Medicines relevant to the nodule pathway",
+      columns: ["Drug", "Dose and route", "Duration/titration", "Key adverse effects / contraindications"],
+      rows: [
+        ["Lidocaine (biopsy local anaesthesia)", "1-2% up to 3 mg/kg (4.5 mg/kg = about 300 mg max without adrenaline) subcutaneous", "Single procedure", "Toxicity: perioral numbness, seizures, arrhythmia"],
+        ["Midazolam (bronchoscopy sedation)", "1-2 mg IV, titrated in 0.5-1 mg steps", "Procedure only", "Respiratory depression; reverse with flumazenil"],
+        ["Albendazole (hydatid, peri-operative)", "400 mg orally twice daily with fatty meal", "1-6 months around surgery", "Hepatotoxicity, neutropenia; avoid in early pregnancy"],
+        ["Varenicline (smoking cessation)", "0.5 mg OD days 1-3, 0.5 mg BD days 4-7, then 1 mg BD", "12 weeks", "Nausea, vivid dreams; adjust in CKD"],
+        ["Nicotine replacement (patch/gum)", "Patch 21 mg/24 h if 10 or more cigarettes/day; gum 2-4 mg as needed", "8-12 weeks, then taper", "Skin irritation, sleep disturbance"],
+      ],
+    },
+  ],
+  redFlags: [
+    "Any nodule over 3 cm (mass) - presume cancer",
+    "Growing solid nodule or new solid component in a subsolid nodule",
+    "Spiculated nodule over 8 mm in a smoker or ex-smoker",
+    "Nodule with haemoptysis, weight loss, hoarseness or supraclavicular node",
+    "New nodule in a patient with known cancer",
+    "Nodules in an immunocompromised patient with fever",
+    "Pneumothorax with breathlessness after CT-guided biopsy",
+  ],
+  pearls: [
+    "Old films first - stability is the cheapest test.",
+    "Under 6 mm solid in a low-risk adult: no follow-up (Fleischner 2017).",
+    "Over 8 mm solid: CT at 3 months, PET-CT or biopsy.",
+    "Solid stable 2 years = benign; subsolid needs 5 years.",
+    "Part-solid nodules are the most likely to be cancer; the solid part is the invasive part.",
+    "Benign calcification: central, diffuse, laminated, popcorn.",
+    "PET lies in India: TB lights up, adenocarcinoma in situ stays dark.",
+    "Fleischner is for incidental nodules; Lung-RADS is for screening.",
+    "A non-diagnostic biopsy is not a benign biopsy.",
+  ],
+  mcqs: [
+    {
+      id: "respiratory-solitary-pulmonary-nodule-q1",
+      stem: "A 52-year-old non-smoker has a 4 mm solid nodule found incidentally on a CT abdomen. There is no history of cancer. According to Fleischner 2017, the recommended follow-up is:",
+      options: [
+        "CT at 3 months",
+        "PET-CT now",
+        "No routine follow-up",
+        "CT-guided biopsy",
+      ],
+      answer: 2,
+      explanation:
+        "A solid nodule under 6 mm in a low-risk patient carries a malignancy risk well under 1%, so Fleischner 2017 recommends no routine follow-up. CT at 3 months is for solid nodules over 8 mm, and PET-CT and biopsy are not reliable or justified for a nodule this small.",
+      difficulty: "easy",
+    },
+    {
+      id: "respiratory-solitary-pulmonary-nodule-q2",
+      stem: "Which calcification pattern in a pulmonary nodule is NOT considered a benign pattern?",
+      options: [
+        "Popcorn calcification",
+        "Eccentric calcification",
+        "Laminated (concentric) calcification",
+        "Diffuse solid calcification",
+      ],
+      answer: 1,
+      explanation:
+        "Central, diffuse, laminated and popcorn calcification are benign patterns (granuloma or hamartoma). Eccentric or stippled calcification is indeterminate because a cancer can engulf a pre-existing granuloma or calcify dystrophically, so it does not exclude malignancy.",
+      difficulty: "easy",
+    },
+    {
+      id: "respiratory-solitary-pulmonary-nodule-q3",
+      stem: "A 60-year-old ex-smoker has a 14 mm persistent part-solid nodule in the right upper lobe; the solid component measures 8 mm. What is the most appropriate approach?",
+      options: [
+        "Annual CT for 5 years",
+        "No follow-up, as subsolid nodules are indolent",
+        "Empirical anti-tuberculosis treatment for 6 months",
+        "Consider PET-CT and tissue diagnosis or resection",
+      ],
+      answer: 3,
+      explanation:
+        "A persistent part-solid nodule with a solid component of 6 mm or more is highly suspicious for invasive adenocarcinoma, so Fleischner advises PET-CT and biopsy or resection. Annual CT for 5 years is only for part-solid nodules whose solid part stays under 6 mm, ignoring it misses cancer, and empirical ATT has no place without evidence of TB.",
+      difficulty: "moderate",
+    },
+    {
+      id: "respiratory-solitary-pulmonary-nodule-q4",
+      stem: "PET-CT of a 12 mm spiculated nodule in a patient from Bihar shows SUVmax 6.2. Which statement is most accurate?",
+      options: [
+        "The nodule is definitely malignant and needs no tissue diagnosis",
+        "A tuberculous granuloma can produce this degree of uptake, so tissue confirmation is advisable",
+        "High SUV excludes adenocarcinoma in situ, so it must be a carcinoid",
+        "PET-CT is unreliable for nodules over 8 mm",
+      ],
+      answer: 1,
+      explanation:
+        "In TB-endemic regions active granulomas take up FDG avidly, so PET specificity falls and tissue confirmation before surgery is favoured. PET is most useful for solid nodules 8 mm or more, not unreliable for them. Carcinoid and adenocarcinoma in situ typically show low uptake, so a high SUV does not point to carcinoid.",
+      difficulty: "moderate",
+    },
+    {
+      id: "respiratory-solitary-pulmonary-nodule-q5",
+      stem: "According to ACCP 2013, a fit patient with a solid nodule whose estimated probability of malignancy is 75% should usually be managed by:",
+      options: [
+        "Surgical resection after staging",
+        "CT surveillance at 3, 9 and 24 months",
+        "PET-CT and then CT surveillance if PET is negative",
+        "Sputum cytology on three samples",
+      ],
+      answer: 0,
+      explanation:
+        "ACCP thresholds are under 5% for surveillance, 5-65% for PET and/or non-surgical biopsy, and over 65% for surgical diagnosis and treatment after staging. A negative PET does not lower a 75% pre-test probability enough to justify surveillance, and sputum cytology has very low yield for peripheral nodules.",
+      difficulty: "hard",
+    },
+  ],
+  theory: [
+    {
+      id: "respiratory-solitary-pulmonary-nodule-t1",
+      paper: "I",
+      kind: "long",
+      marks: 10,
+      minutes: 18,
+      frequency: "common",
+      question:
+        "Define solitary pulmonary nodule. Enumerate its causes and describe the approach to an incidentally detected lung nodule, including the Fleischner 2017 recommendations.",
+      openingLines: [
+        "A solitary pulmonary nodule is a single, well-circumscribed, round opacity up to 3 cm in diameter, surrounded by aerated lung, without atelectasis, hilar enlargement or effusion.",
+        "Most are benign - in India commonly tuberculous granulomas - but an SPN may be an early, curable lung cancer.",
+      ],
+      answer: [
+        {
+          heading: "Causes",
+          points: [
+            "Malignant: primary lung cancer, solitary metastasis, carcinoid, lymphoma.",
+            "Infective: tuberculoma, fungal granuloma, aspergilloma, hydatid cyst.",
+            "Benign tumour: hamartoma; inflammatory: rheumatoid nodule, GPA; vascular: AVM, infarct; others: intrapulmonary node, rounded atelectasis.",
+          ],
+        },
+        {
+          heading: "Clinical risk assessment",
+          points: [
+            "Age, smoking, prior cancer, family history, emphysema, occupational exposure, TB history, immune status.",
+            "Compare with previous imaging.",
+          ],
+        },
+        {
+          heading: "CT characterisation",
+          points: [
+            "Size (average of axes), density (solid, part-solid, GGN), margins, calcification pattern, fat, location, growth (VDT).",
+            "Benign: calcification central, diffuse, laminated, popcorn; fat; stable 2 years.",
+          ],
+        },
+        {
+          heading: "Fleischner 2017",
+          points: [
+            "Solid under 6 mm: no follow-up (optional 12-month CT if high risk).",
+            "Solid 6-8 mm: CT 6-12 months, then 18-24 months.",
+            "Solid over 8 mm: CT 3 months, PET-CT or tissue.",
+            "GGN 6 mm or more: CT 6-12 months then 2-yearly to 5 years; part-solid 6 mm or more: CT 3-6 months, annual to 5 years; solid part 6 mm or more suspicious.",
+          ],
+        },
+        {
+          heading: "Probability-based management",
+          points: [
+            "Brock or Mayo model; under 5% surveillance, 5-65% PET/biopsy, over 65% surgery.",
+            "CT-guided or navigational biopsy; VATS wedge; SBRT if unfit.",
+          ],
+        },
+        {
+          heading: "Indian context and follow-up",
+          points: [
+            "TB granulomas give PET false positives; prefer tissue before surgery; no empirical ATT.",
+            "Document the plan; smoking cessation; Lung-RADS for screening CT.",
+          ],
+        },
+      ],
+      mustDraw: [
+        "Flow chart: incidental nodule - old films, CT characterisation, risk estimate, Fleischner pathway, PET/biopsy/surgery",
+        "Diagram of benign versus suspicious calcification patterns",
+      ],
+      markSplit: [
+        { part: "Definition and causes", marks: 2 },
+        { part: "Risk and CT features", marks: 2 },
+        { part: "Fleischner 2017", marks: 3 },
+        { part: "Further management and Indian context", marks: 3 },
+      ],
+      keywords: ["SPN", "Fleischner 2017", "Brock model", "PET-CT", "ground-glass nodule", "tuberculoma", "volume doubling time"],
+    },
+    {
+      id: "respiratory-solitary-pulmonary-nodule-t2",
+      paper: "I",
+      kind: "short-note",
+      marks: 5,
+      minutes: 9,
+      frequency: "less-common",
+      question: "Write a short note on Lung-RADS.",
+      openingLines: [
+        "Lung-RADS is the American College of Radiology system for reporting and managing findings on lung cancer screening low-dose CT; the current version is v2022.",
+        "It standardises nodule categories, follow-up intervals and expected malignancy risk, and is not used for incidental nodules (Fleischner applies there).",
+      ],
+      answer: [
+        {
+          heading: "Categories",
+          points: [
+            "0 incomplete; 1 negative; 2 benign (solid under 6 mm, GGN under 30 mm) - annual LDCT.",
+            "3 probably benign (solid 6 to under 8 mm) - LDCT 6 months.",
+            "4A suspicious (8 to under 15 mm) - LDCT 3 months or PET-CT.",
+            "4B (15 mm or more, new or growing 8 mm or more) and 4X - diagnostic CT, PET-CT, biopsy.",
+            "S modifier for significant other findings.",
+          ],
+        },
+        {
+          heading: "v2022 changes",
+          points: [
+            "Airway nodules and atypical cysts added.",
+            "Stepped management: stable category 3 becomes 2; stable 4A becomes 3.",
+            "Growth defined as over 1.5 mm increase in mean diameter in 12 months.",
+          ],
+        },
+        {
+          heading: "Use and limits",
+          points: [
+            "Screening population only (USPSTF 2021 eligibility); India has no national screening; TB causes false positives.",
+          ],
+        },
+      ],
+      mustDraw: ["Lung-RADS category table with management"],
+      markSplit: [
+        { part: "Definition", marks: 1 },
+        { part: "Categories", marks: 2.5 },
+        { part: "v2022 changes and limits", marks: 1.5 },
+      ],
+      keywords: ["Lung-RADS v2022", "LDCT", "category 4A", "stepped management", "screening"],
+    },
+  ],
+  references: [
+    "MacMahon H et al. Guidelines for Management of Incidental Pulmonary Nodules Detected on CT Images: From the Fleischner Society 2017. Radiology 2017",
+    "Callister MEJ et al. British Thoracic Society guidelines for the investigation and management of pulmonary nodules. Thorax 2015",
+    "Gould MK et al. Evaluation of individuals with pulmonary nodules: ACCP evidence-based clinical practice guidelines, 3rd edition. Chest 2013",
+    "American College of Radiology. Lung-RADS v2022 assessment categories, 2022",
+    "Harrison's Principles of Internal Medicine, 22nd edition, 2025 - Neoplasms of the lung and approach to the pulmonary nodule",
+    "Fishman's Pulmonary Diseases and Disorders, 6th edition, 2023",
+    "US Preventive Services Task Force. Screening for Lung Cancer, 2021",
+    "IASLC Staging Manual in Thoracic Oncology, TNM 9th edition, 2024",
+  ],
+});
+
 export default topics;

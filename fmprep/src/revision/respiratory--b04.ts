@@ -214,6 +214,209 @@ const revision: RevisionSet = {
       ],
     },
   },
+  "respiratory-lung-abscess-aspiration": {
+    checked: "2026-10",
+    updated: [
+      "BTS Guideline for Pleural Disease 2023: drain at pH under 7.2; consider at pH 7.2-7.4 with LDH over 900 IU/L",
+      "ERS/EACTS statement on pleural infection 2023: MIST2 regimen, early surgical opinion, RAPID score",
+      "ATS/IDSA CAP 2019 (current): no routine anaerobic cover for aspiration pneumonia without abscess or empyema",
+      "MIST3 feasibility trial (2024): early VATS vs intrapleural therapy - no change to routine practice yet",
+    ],
+    master: {
+      heading: "Aspiration, lung abscess and empyema on one page",
+      columns: ["Heading", "What to write"],
+      rows: [
+        ["Pneumonitis", "Sterile chemical injury from acidic gastric contents (Mendelson); supportive care, no routine antibiotics or steroids"],
+        ["Aspiration pneumonia", "Infection from oropharyngeal flora in dysphagia or low consciousness; treat as CAP"],
+        ["Lung abscess", "Necrotic cavity over 2 cm with pus; acute under 4-6 weeks; primary (aspiration) or secondary"],
+        ["Organisms", "Anaerobes (Peptostreptococcus, Prevotella, Fusobacterium), S anginosus; S aureus, Klebsiella, melioidosis"],
+        ["Sites", "Supine: posterior RUL, superior lower lobe; upright: basal segments; right more than left"],
+        ["Clinical", "Subacute fever, weight loss, putrid sputum, poor dentition, clubbing if chronic"],
+        ["Imaging", "Thick-walled cavity with air-fluid level; CT split pleura sign in empyema"],
+        ["Abscess treatment", "Co-amoxiclav or clindamycin IV then oral, 3-6 weeks; drainage or surgery rarely"],
+        ["Empyema stages", "Exudative, fibrinopurulent, organising; Light 7 classes"],
+        ["Drain if", "Pus, organisms, pH under 7.2, loculation; consider if pH 7.2-7.4 and LDH over 900"],
+        ["Intrapleural", "MIST2: tPA 10 mg + DNase 5 mg twice daily for 3 days; neither alone"],
+        ["Surgery", "VATS decortication if sepsis persists at 5-7 days; Eloesser flap in frail"],
+        ["Prognosis", "RAPID score: Renal, Age, Purulence, Infection source, Dietary albumin"],
+        ["Pitfalls", "Metronidazole alone; aminoglycosides for empyema; missing tumour in edentulous smoker"],
+      ],
+    },
+    flows: [
+      {
+        kind: "flow",
+        heading: "Pneumonia with pleural effusion (BTS 2023)",
+        steps: [
+          { label: "Febrile pneumonia with effusion", detail: "Do not leave an effusion untapped" },
+          { label: "Thoracic ultrasound and diagnostic tap", detail: "pH on blood-gas analyser, glucose, LDH, Gram stain, culture, ADA" },
+          { label: "Pus, organisms or pH under 7.2?", detail: "Consider if pH 7.2-7.4 with LDH over 900 IU/L", tone: "decision" },
+          { label: "Small-bore chest drain plus antibiotics", detail: "12-14 F, saline flush 6-hourly" },
+          { label: "Poor drainage: intrapleural tPA + DNase", detail: "10 mg + 5 mg twice daily for 3 days", tone: "warn" },
+          { label: "Sepsis persists at 5-7 days: VATS", detail: "Decortication; open window in the frail", tone: "good" },
+        ],
+      },
+      {
+        kind: "ladder",
+        heading: "Lung abscess treatment ladder",
+        steps: [
+          { label: "IV beta-lactam/beta-lactamase inhibitor or clindamycin", detail: "Co-amoxiclav 1.2 g 8-hourly or clindamycin 600 mg 8-hourly" },
+          { label: "Broaden if severe or hospital-acquired", detail: "Pip-taz 4.5 g or meropenem 1 g; add MRSA cover if needed" },
+          { label: "Oral step-down when afebrile", detail: "Total 3-6 weeks, until cavity closes" },
+          { label: "Bronchoscopy if no response or cancer risk", detail: "Edentulous, smoker over 45, atypical site", tone: "decision" },
+          { label: "CT-guided percutaneous drainage", detail: "Large abscess over 6-8 cm failing antibiotics" },
+          { label: "Lobectomy", detail: "Failure, massive haemoptysis, suspected cancer", tone: "warn" },
+        ],
+      },
+      {
+        kind: "compare",
+        heading: "Lung abscess vs empyema on imaging",
+        columns: ["Feature", "Lung abscess", "Empyema"],
+        rows: [
+          ["Shape", "Spherical", "Lenticular"],
+          ["Angle with chest wall", "Acute", "Obtuse"],
+          ["Air-fluid level on two views", "Equal", "Unequal"],
+          ["Wall", "Thick, irregular", "Thin, smooth"],
+          ["CT", "Cavity in lung", "Split pleura sign, compressed lung"],
+          ["Needs drain", "Rarely", "Yes"],
+        ],
+      },
+    ],
+    notes: {
+      sections: [
+        {
+          title: "Definition and key facts",
+          points: [
+            "**Aspiration pneumonitis** is a sterile chemical injury from acidic gastric contents.",
+            "**Aspiration pneumonia** is infection from inhaled oropharyngeal bacteria.",
+            "**Lung abscess** is a necrotic cavity over 2 cm containing pus.",
+            "**Empyema** is pus or organisms in the pleural space.",
+            "About 5-10% of pneumonia effusions become **complicated or empyema**.",
+          ],
+        },
+        {
+          title: "Causes and risk factors",
+          points: [
+            "Low consciousness: **alcohol, seizures, stroke**, sedatives, anaesthesia.",
+            "**Dysphagia**, oesophageal disease and tube feeding.",
+            "**Poor dentition** raises the anaerobic load of saliva.",
+            "Organisms: **anaerobes and S anginosus**; also S aureus, Klebsiella, melioidosis.",
+            "Secondary abscess: **tumour, foreign body, septic emboli**, Lemierre syndrome.",
+          ],
+        },
+        {
+          title: "Pathophysiology",
+          points: [
+            "Supine aspiration reaches the **posterior right upper and superior lower segments**.",
+            "Upright aspiration reaches the **basal segments**.",
+            "Necrosis over **1-2 weeks** forms a cavity that drains via a bronchus.",
+            "Pleural infection moves from **exudative to fibrinopurulent to organising**.",
+            "Bacteria consume glucose and make acid, so **pH and glucose fall**.",
+          ],
+        },
+        {
+          title: "Clinical features",
+          points: [
+            "Pneumonitis: breathless and hypoxic **2-5 hours** after witnessed aspiration.",
+            "Abscess: weeks of fever, weight loss and **putrid sputum**.",
+            "Empyema: **fever persisting** despite antibiotics for pneumonia.",
+            "Signs: foul breath, stony dullness, clubbing if chronic.",
+          ],
+        },
+        {
+          title: "Investigations",
+          points: [
+            "CXR: **thick-walled cavity with air-fluid level** in abscess.",
+            "CT: **split pleura sign** and compressed lung in empyema.",
+            "**Ultrasound-guided tap**; measure pH on a blood-gas analyser.",
+            "Drain if **pus, organisms, or pH under 7.2**.",
+            "Consider drain if **pH 7.2-7.4 with LDH over 900** (BTS 2023).",
+            "**Bronchoscopy** if edentulous, smoker over 45 or not improving.",
+          ],
+        },
+        {
+          title: "Treatment - first line",
+          points: [
+            "Pneumonitis: oxygen and suction; **no routine antibiotics or steroids**.",
+            "Aspiration pneumonia: treat as CAP; **no routine extra anaerobic cover**.",
+            "Abscess: **co-amoxiclav or clindamycin**, IV then oral for 3-6 weeks.",
+            "**Metronidazole alone fails**; always pair it with a beta-lactam.",
+            "Empyema: drain plus co-amoxiclav or **ceftriaxone with metronidazole**.",
+          ],
+        },
+        {
+          title: "Inpatient / emergency care",
+          points: [
+            "Use a **small-bore 12-14 F drain** with regular saline flushes.",
+            "Poor drainage: **tPA 10 mg plus DNase 5 mg** twice daily for 3 days.",
+            "Persisting sepsis at **5-7 days**: VATS decortication.",
+            "Avoid **aminoglycosides** in empyema: poor penetration and inactivated by acid.",
+            "Large failing abscess: **CT-guided drainage**; lobectomy rarely.",
+          ],
+        },
+        {
+          title: "Complications and red flags",
+          points: [
+            "**Bronchopleural fistula**, haemoptysis and brain abscess from lung abscess.",
+            "**Trapped lung** and pleural thickening after empyema.",
+            "Abscess mortality is about **5-10%**, higher in secondary abscess.",
+            "**RAPID score** predicts empyema mortality.",
+          ],
+        },
+        {
+          title: "Referral and follow-up",
+          points: [
+            "Refer any febrile pneumonia with **effusion or cavity**.",
+            "Surgeon if drainage fails at **5-7 days**.",
+            "**Chest X-ray at 6-8 weeks**; persisting shadow in a smoker needs CT and bronchoscopy.",
+            "Prevent recurrence: **dental care, swallow assessment**, alcohol de-addiction.",
+          ],
+        },
+      ],
+      tables: [
+        {
+          heading: "Drugs for abscess and empyema",
+          columns: ["Drug", "Dose and route", "Duration", "Key side effects / cautions"],
+          rows: [
+            ["Co-amoxiclav", "1.2 g IV 8-hourly; 625 mg oral 8-hourly", "3-6 weeks (abscess)", "Cholestasis, rash; penicillin allergy"],
+            ["Clindamycin", "600 mg IV 8-hourly; 300-450 mg oral 6-hourly", "3-6 weeks", "C difficile colitis"],
+            ["Ceftriaxone + metronidazole", "2 g IV daily + 500 mg 8-hourly", "3-6 weeks (empyema)", "Neuropathy, disulfiram reaction"],
+            ["Meropenem", "1 g IV 8-hourly", "Severe or ESBL", "Seizures, C difficile"],
+            ["tPA intrapleural", "10 mg twice daily", "3 days with DNase", "Pleural bleeding"],
+            ["DNase intrapleural", "5 mg twice daily", "3 days with tPA", "Useless alone"],
+          ],
+        },
+        {
+          heading: "Pneumonitis vs pneumonia",
+          columns: ["Feature", "Pneumonitis", "Pneumonia"],
+          rows: [
+            ["Aspirate", "Sterile gastric acid", "Oropharyngeal bacteria"],
+            ["Onset", "2-5 hours", "Days"],
+            ["Typical patient", "Young, overdose, anaesthesia", "Elderly, dysphagia"],
+            ["Antibiotics", "Only if over 48 hours", "Yes"],
+          ],
+        },
+        {
+          heading: "Light's classes in brief",
+          columns: ["Class", "Key finding", "Action"],
+          rows: [
+            ["1-2", "Small or pH over 7.2", "Antibiotics only"],
+            ["3", "pH 7.0-7.2 or LDH over 1000", "Repeat tap"],
+            ["4-5", "pH under 7.0, glucose under 40, or organisms", "Drain; tPA-DNase if loculated"],
+            ["6-7", "Frank pus", "Drain; often VATS"],
+          ],
+        },
+      ],
+      remember: [
+        "**Pneumonitis sterile, pneumonia infected.**",
+        "**Putrid sputum means anaerobes.**",
+        "**pH under 7.2: drain.**",
+        "**MIST2: tPA plus DNase, never alone.**",
+        "**Abscess round, empyema lens-shaped.**",
+        "**RAPID**: Renal, Age, Purulence, Infection source, Dietary albumin.",
+        "No teeth with an abscess: **think cancer**.",
+      ],
+    },
+  },
 };
 
 export default revision;

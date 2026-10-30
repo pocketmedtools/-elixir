@@ -416,4 +416,413 @@ revision["respiratory-alveolar-haemorrhage-vasculitis"] = {
   },
 };
 
+revision["respiratory-eosinophilic-lung"] = {
+  checked: "2026-10",
+  updated: [
+    "ACR/EULAR 2022 EGPA classification criteria: eosinophils 1000 or more +5, asthma +3, nasal polyps +3; threshold 6.",
+    "EULAR 2022 AAV: mepolizumab for relapsing or refractory non-severe EGPA; CYC or RTX for severe.",
+    "MANDARA 2024: benralizumab non-inferior to mepolizumab in EGPA.",
+    "NCVBDC 2024: triple-drug IDA mass drug administration; LF elimination target 2027.",
+  ],
+  master: {
+    heading: "Master revision table - Eosinophilic lung disease",
+    columns: ["Heading", "What to write"],
+    rows: [
+      ["Definition", "Lung infiltrates with **AEC over 500/microlitre** or **BAL eosinophils over 25%**."],
+      ["Classification", "Known cause (parasites, drugs, ABPA); lung-only (AEP, CEP); systemic (EGPA, HES)."],
+      ["TPE", "Filarial hypersensitivity; nocturnal cough, **AEC over 3000, IgE over 1000**, no microfilariae in blood."],
+      ["TPE treatment", "**DEC 6 mg/kg/day in 3 doses for 21 days**; repeat for relapse; steroids if persistent."],
+      ["Loeffler", "Transient migratory infiltrates from Ascaris larvae; stool ova only at 6-8 weeks; albendazole."],
+      ["AEP", "Young new smoker, ARDS-like, BAL eosinophils over 25%, **blood eosinophils normal**; IV steroids 2 weeks."],
+      ["CEP", "Middle-aged woman with asthma; **photographic negative of pulmonary oedema**; prednisolone taper 6 months; relapse 50%."],
+      ["EGPA", "Asthma, polyps, eosinophilia, mononeuritis; MPO-ANCA 30-40%; heart is main killer."],
+      ["EGPA treatment", "Severe: pulse steroids + CYC or RTX; non-severe/relapsing: steroids + **mepolizumab 300 mg 4-weekly**."],
+      ["Drugs", "Nitrofurantoin, NSAIDs, sulfonamides, daptomycin, antiepileptics, DRESS - stop the drug."],
+      ["Safety", "Exclude **Strongyloides** (ivermectin) before steroids or biologics."],
+      ["Investigations", "AEC, stool x3, IgE, filarial antibody, X-ray/HRCT, PFT, BAL, ANCA, cardiac work-up in EGPA."],
+      ["Prevention", "NCVBDC MDA (DA/IDA), vector control, National Deworming Day, stop smoking/vaping."],
+      ["Latest updates", "ACR/EULAR 2022 EGPA criteria; EULAR 2022; MANDARA 2024; LF elimination 2027."],
+    ],
+  },
+  flows: [
+    {
+      kind: "flow",
+      heading: "Infiltrates with eosinophilia: work-up",
+      steps: [
+        { label: "Infiltrates + AEC over 500 or BAL eos over 25%" },
+        { label: "Drug history", detail: "Nitrofurantoin, NSAIDs, sulfonamides, antiepileptics: stop drug", tone: "decision" },
+        { label: "Parasites", detail: "Stool x3, Strongyloides serology, filarial antibody, IgE" },
+        { label: "Asthma with bronchiectasis?", detail: "Aspergillus IgE for ABPA", tone: "decision" },
+        { label: "Systemic features?", detail: "Neuropathy, purpura, haematuria, cardiac: ANCA, troponin, echo for EGPA", tone: "warn" },
+        { label: "Tempo", detail: "Under 1 month with hypoxaemia: AEP; weeks to months, peripheral: CEP" },
+        { label: "Diagnosis made; treat cause", tone: "good" },
+      ],
+    },
+    {
+      kind: "ladder",
+      heading: "EGPA treatment ladder",
+      steps: [
+        { label: "Non-severe", detail: "Prednisolone 0.5-1 mg/kg tapered" },
+        { label: "Relapsing or steroid-dependent", detail: "Add mepolizumab 300 mg SC 4-weekly or benralizumab 30 mg" },
+        { label: "Severe (FFS 1 or more, organ-threatening)", detail: "Pulse methylprednisolone + cyclophosphamide or rituximab", tone: "warn" },
+        { label: "Maintenance", detail: "Rituximab, azathioprine or methotrexate; mepolizumab; inhaled asthma therapy", tone: "good" },
+      ],
+    },
+    {
+      kind: "compare",
+      heading: "AEP vs CEP vs TPE",
+      columns: ["Feature", "AEP", "CEP", "TPE"],
+      rows: [
+        ["Patient", "Young new smoker", "Middle-aged woman, asthma", "Young man, filarial area"],
+        ["Onset", "Under 1 month", "Weeks to months", "Weeks to months, nocturnal"],
+        ["Blood AEC", "Normal at first", "Over 1000", "Over 3000"],
+        ["Imaging", "Bilateral GGO, effusions", "Peripheral consolidation", "Miliary or reticulonodular"],
+        ["Treatment", "IV steroids 2 weeks", "Prednisolone 6 months", "DEC 21 days"],
+        ["Relapse", "Rare", "About 50%", "12-20%"],
+      ],
+    },
+  ],
+  notes: {
+    sections: [
+      {
+        title: "Definition and key facts",
+        points: [
+          "Eosinophilic lung disease: infiltrates plus **AEC over 500** or **BAL eosinophils over 25%**.",
+          "India carries about **40% of global filariasis**, the setting for TPE.",
+          "TPE affects **under 1%** of infected people, mostly young men.",
+          "EGPA is the rarest ANCA vasculitis, about **1-3 per million** a year.",
+        ],
+      },
+      {
+        title: "Causes and risk factors",
+        points: [
+          "**Parasites**: filaria (TPE), Ascaris and hookworm (Loeffler), Strongyloides, Toxocara.",
+          "**Drugs**: nitrofurantoin, NSAIDs, sulfonamides, daptomycin, antiepileptics.",
+          "**New smoking or vaping** triggers acute eosinophilic pneumonia.",
+          "**Systemic**: EGPA, hypereosinophilic syndrome, lymphoma.",
+        ],
+      },
+      {
+        title: "Pathophysiology",
+        points: [
+          "**IL-5** drives eosinophil growth and survival.",
+          "Eosinophil **major basic protein** damages lung, heart and nerves.",
+          "TPE: microfilariae trapped in lung; **blood is clear** of microfilariae.",
+          "Untreated TPE ends in **interstitial fibrosis**.",
+        ],
+      },
+      {
+        title: "Clinical features",
+        points: [
+          "TPE: **nocturnal paroxysmal cough** and wheeze, weight loss, misdiagnosed as asthma or TB.",
+          "AEP: fever and **rapid respiratory failure** in a young new smoker.",
+          "CEP: weeks of cough, weight loss, sweats in a **woman with asthma**.",
+          "EGPA: adult-onset asthma, polyps, then **foot drop**, purpura, myocarditis.",
+        ],
+      },
+      {
+        title: "Investigations",
+        points: [
+          "**AEC**: TPE over 3000; CEP over 1000; AEP often normal at first.",
+          "**IgE over 1000** and filarial antibodies in TPE.",
+          "**Stool x3** and Strongyloides serology in every case.",
+          "CEP X-ray: **photographic negative** of pulmonary oedema.",
+          "BAL eosinophils **over 25%** confirm eosinophilic pneumonia.",
+        ],
+      },
+      {
+        title: "Treatment - first line",
+        points: [
+          "TPE: **DEC 6 mg/kg/day** in 3 doses for 21 days.",
+          "Loeffler: self-limiting; **albendazole 400 mg** once.",
+          "Drug-induced: **stop the drug**; steroids if hypoxaemic.",
+          "CEP: **prednisolone 0.5 mg/kg** for 2 weeks, taper over 6 months.",
+          "AEP: **methylprednisolone** IV, then oral taper over 2 weeks; stop smoking.",
+        ],
+      },
+      {
+        title: "Treatment - next steps",
+        points: [
+          "Severe EGPA: **pulse steroids** plus cyclophosphamide or rituximab.",
+          "Relapsing EGPA: **mepolizumab 300 mg** SC every 4 weeks.",
+          "**Benralizumab 30 mg** is non-inferior to mepolizumab (MANDARA).",
+          "Give **ivermectin** before steroids in endemic areas.",
+        ],
+      },
+      {
+        title: "Complications and red flags",
+        points: [
+          "Late TPE leaves **restrictive fibrosis**.",
+          "EGPA **myocarditis** causes about half of deaths.",
+          "Steroids can trigger **Strongyloides hyperinfection**.",
+          "Red flags: hypoxaemia, neuropathy, chest pain, haematuria, **AEC over 5000**.",
+        ],
+      },
+      {
+        title: "Latest updates",
+        points: [
+          "**ACR/EULAR 2022**: eosinophils 1000 or more score +5 for EGPA.",
+          "**EULAR 2022**: mepolizumab for relapsing or refractory EGPA.",
+          "**NCVBDC**: IDA mass drug administration; filariasis elimination target **2027**.",
+        ],
+      },
+    ],
+    tables: [
+      {
+        heading: "Drugs for eosinophilic lung disease",
+        columns: ["Drug", "Dose and route", "Duration", "Key side effects / cautions"],
+        rows: [
+          ["DEC", "6 mg/kg/day oral in 3 doses", "21 days", "Fever, myalgia; avoid in pregnancy"],
+          ["Albendazole", "400 mg oral", "Single dose", "Avoid first trimester"],
+          ["Ivermectin", "200 microgram/kg oral", "1-2 days", "Avoid in pregnancy"],
+          ["Prednisolone", "0.5 mg/kg/day oral", "Taper over 6 months (CEP)", "Diabetes, bone loss, infection"],
+          ["Methylprednisolone", "60-125 mg IV 6-hourly", "Until better, then 2-week taper", "Hyperglycaemia"],
+          ["Mepolizumab", "300 mg SC every 4 weeks", "12 months or more", "Herpes zoster, injection reaction"],
+          ["Cyclophosphamide", "15 mg/kg IV pulses", "3-6 months", "Cytopenia, cystitis, infertility"],
+        ],
+      },
+      {
+        heading: "Syndromes compared",
+        columns: ["Syndrome", "Clue", "AEC", "Treatment"],
+        rows: [
+          ["TPE", "Endemic area, nocturnal cough", "Over 3000", "DEC 21 days"],
+          ["Loeffler", "Transient, mild", "Moderate", "Albendazole"],
+          ["AEP", "New smoker, ARDS-like", "Normal at first", "IV steroids"],
+          ["CEP", "Woman with asthma, peripheral shadows", "Over 1000", "Prednisolone 6 months"],
+          ["EGPA", "Asthma, polyps, neuropathy", "Over 1500", "Steroids + mepolizumab or CYC/RTX"],
+        ],
+      },
+      {
+        heading: "ACR/EULAR 2022 EGPA criteria",
+        columns: ["Item", "Score"],
+        rows: [
+          ["Obstructive airway disease", "+3"],
+          ["Nasal polyps", "+3"],
+          ["Mononeuritis multiplex", "+1"],
+          ["Eosinophils 1000/microlitre or more", "+5"],
+          ["Eosinophilic inflammation on biopsy", "+2"],
+          ["c-ANCA or PR3 positive", "-3"],
+          ["Haematuria", "-1"],
+        ],
+      },
+    ],
+    remember: [
+      "TPE: **3000 eosinophils, 1000 IgE, 21 days of DEC**.",
+      "CEP: **photographic negative** of pulmonary oedema.",
+      "AEP: BAL full of eosinophils, **blood normal**.",
+      "Loeffler: stool ova appear only at **6-8 weeks**.",
+      "EGPA: the **heart kills**; ANCA in only one-third.",
+      "**Ivermectin before steroids** in Indian eosinophilia.",
+      "Causes mnemonic **PLATE-D**: Parasites, Lymphoma/HES, ABPA, Toxic smoke, EGPA, Drugs.",
+    ],
+  },
+};
+
+revision["respiratory-opportunistic-lung"] = {
+  checked: "2026-10",
+  updated: [
+    "NIH/CDC/IDSA OI guidelines (updated 2024): cotrimoxazole 15-20 mg/kg/day x 21 days; steroids if PaO2 under 70; ART within 2 weeks.",
+    "WHO 2022 cryptococcal guideline: single-dose liposomal amphotericin 10 mg/kg + flucytosine + fluconazole; CrAg screening at CD4 under 200.",
+    "Letermovir 2023: extended to day 200 in high-risk HSCT and approved for D+/R- kidney transplant prophylaxis.",
+    "IDSA 2023 febrile neutropenia update: risk-stratified empirical therapy and early CT for moulds.",
+  ],
+  master: {
+    heading: "Master revision table - Lung infections in the immunocompromised",
+    columns: ["Heading", "What to write"],
+    rows: [
+      ["Definition", "Lung infection in a host with impaired immunity; organism predicted by the **immune defect**."],
+      ["Neutropenia", "Pseudomonas, Enterobacterales, S. aureus; after 7-10 days **Aspergillus, Mucorales**."],
+      ["T-cell defect", "HIV, transplant, steroids: **PJP, CMV, TB, Nocardia, Cryptococcus, Histoplasma, Talaromyces**."],
+      ["Humoral / asplenia", "Encapsulated bacteria: pneumococcus, H. influenzae, meningococcus."],
+      ["HIV CD4", "Any: TB, bacteria; under 200 PJP; under 100 Crypto, Toxo; under 50 CMV, MAC."],
+      ["SOT timeline", "Month 1 hospital bugs; **1-6 months opportunists**; after 6 months community."],
+      ["PJP clinical", "Subacute dry cough, **exertional desaturation**, normal chest, LDH and beta-D-glucan raised, HRCT GGO."],
+      ["PJP treatment", "**Cotrimoxazole 15-20 mg/kg/day TMP x 21 days**; prednisolone if PaO2 under 70 (40 BD x5, 40 OD x5, 20 OD x11)."],
+      ["PJP alternatives", "Clindamycin + primaquine (**G6PD first**), IV pentamidine 4 mg/kg, atovaquone."],
+      ["CMV", "Plasma PCR, BAL PCR, owl's-eye inclusions; **ganciclovir 5 mg/kg 12-hourly**; valganciclovir or letermovir prophylaxis."],
+      ["Nocardia", "Branching, beaded, **weakly acid-fast**; image the brain; cotrimoxazole +/- imipenem 6-12 months."],
+      ["Fungi", "Crypto: CrAg + **LP**, L-AmB 10 mg/kg single dose + 5FC + fluconazole; Histo/Talaromyces: L-AmB then itraconazole 12 months."],
+      ["Prophylaxis", "Cotrimoxazole (HIV CD4 under 350 NACO; transplant; steroids 20 mg x 4 weeks + another drug); CrAg screen; TPT; vaccines."],
+      ["Latest updates", "NIH OI 2024; WHO 2022 crypto; letermovir 2023; IDSA 2023 neutropenia."],
+    ],
+  },
+  flows: [
+    {
+      kind: "flow",
+      heading: "Immunocompromised patient with a new infiltrate",
+      steps: [
+        { label: "Fever, cough or hypoxaemia + infiltrate", tone: "warn" },
+        { label: "Define the immune defect", detail: "ANC, CD4, transplant date, steroid dose, biologics", tone: "decision" },
+        { label: "First-line tests", detail: "CBC, LDH, blood cultures, sputum CBNAAT, urine LF-LAM, exertional SpO2" },
+        { label: "HRCT early", detail: "GGO: PJP/CMV/virus; nodules: moulds, Nocardia, Crypto; miliary: TB, histo" },
+        { label: "Biomarkers", detail: "Beta-D-glucan, galactomannan, CrAg, CMV PCR, Histoplasma antigen" },
+        { label: "Bronchoscopy with BAL", detail: "PCR, IF, cultures, cytology; biopsy if non-diagnostic", tone: "decision" },
+        { label: "Targeted therapy and reduce immunosuppression", tone: "good" },
+      ],
+    },
+    {
+      kind: "ladder",
+      heading: "PJP treatment by severity",
+      steps: [
+        { label: "Mild (PaO2 70 or more)", detail: "Oral cotrimoxazole 2 DS 8-hourly x 21 days" },
+        { label: "Moderate-severe (PaO2 under 70)", detail: "IV cotrimoxazole 15-20 mg/kg/day TMP + prednisolone 40 BD", tone: "warn" },
+        { label: "Intolerant or failing", detail: "Clindamycin + primaquine (G6PD) or IV pentamidine 4 mg/kg" },
+        { label: "Respiratory failure", detail: "HFNO, NIV or ventilation; watch for pneumothorax", tone: "warn" },
+        { label: "Secondary prophylaxis", detail: "Cotrimoxazole until immune recovery; ART within 2 weeks", tone: "good" },
+      ],
+    },
+    {
+      kind: "branch",
+      heading: "Immune defect predicts the organism",
+      root: "Type of immune defect",
+      arms: [
+        { label: "Neutropenia", tone: "warn", steps: ["Pseudomonas, Enterobacterales", "S. aureus", "Aspergillus, Mucorales"] },
+        { label: "T-cell defect", steps: ["PJP, CMV", "TB, Nocardia", "Cryptococcus, Histoplasma, Talaromyces"] },
+        { label: "Humoral or asplenia", steps: ["S. pneumoniae", "H. influenzae", "N. meningitidis"] },
+      ],
+    },
+  ],
+  notes: {
+    sections: [
+      {
+        title: "Definition and key facts",
+        points: [
+          "The **type of immune defect** predicts the organism better than the X-ray.",
+          "India has about **25 lakh** people living with HIV; **TB** is their commonest lung OI.",
+          "Non-HIV PJP has **30-60% mortality**, far higher than in HIV.",
+          "Steroids of **20 mg or more for 4 weeks** carry PJP risk.",
+        ],
+      },
+      {
+        title: "Causes and risk factors",
+        points: [
+          "**Neutropenia**: gram-negatives, S. aureus, Aspergillus, Mucorales.",
+          "**T-cell defect**: PJP, CMV, TB, Nocardia, Cryptococcus, Histoplasma.",
+          "**Humoral or asplenia**: encapsulated bacteria.",
+          "Transplant **1-6 months**: peak opportunist window.",
+          "India: **Histoplasma** in Gangetic plains; **Talaromyces** in Manipur.",
+        ],
+      },
+      {
+        title: "Clinical features",
+        points: [
+          "PJP: **subacute dry cough**, exertional breathlessness, oral thrush.",
+          "Desaturation of **4% or more on exertion** with a normal chest suggests PJP.",
+          "Nocardia: cavitating pneumonia plus **brain abscess**; mimics TB.",
+          "Cryptococcus: lung nodule with silent **meningitis**.",
+          "Talaromyces: **umbilicated facial papules** in advanced HIV.",
+        ],
+      },
+      {
+        title: "Investigations",
+        points: [
+          "CBC, **CD4**, LDH, blood cultures, CBNAAT, urine LF-LAM.",
+          "**HRCT early**; normal HRCT makes PJP unlikely.",
+          "**Beta-D-glucan** for PJP; galactomannan for Aspergillus.",
+          "**Serum CrAg** positive means lumbar puncture.",
+          "**BAL** with PCR is the key tertiary test.",
+        ],
+      },
+      {
+        title: "Treatment - first line",
+        points: [
+          "PJP: **cotrimoxazole 15-20 mg/kg/day** trimethoprim for 21 days.",
+          "**Prednisolone** if PaO2 under 70: 40 BD x5, 40 OD x5, 20 OD x11.",
+          "CMV: **ganciclovir 5 mg/kg** IV 12-hourly, then valganciclovir.",
+          "Nocardia: **cotrimoxazole** for 6-12 months; add imipenem if severe.",
+          "Crypto meningitis: **L-AmB 10 mg/kg once** plus flucytosine and fluconazole.",
+        ],
+      },
+      {
+        title: "Treatment - next steps",
+        points: [
+          "Sulfa intolerance: **clindamycin plus primaquine** after G6PD test.",
+          "Severe intolerance: **IV pentamidine** 4 mg/kg daily.",
+          "Histoplasmosis: **L-AmB 3 mg/kg** then itraconazole 12 months.",
+          "Start **ART within 2 weeks**; delay 4-6 weeks in crypto meningitis.",
+        ],
+      },
+      {
+        title: "Special groups",
+        points: [
+          "**Pregnancy**: cotrimoxazole still first choice; avoid primaquine and flucytosine.",
+          "**Transplant**: azoles raise **tacrolimus**; rifampicin lowers it.",
+          "**Kidney disease**: halve cotrimoxazole at CrCl 15-30.",
+          "**Rheumatology**: rituximab plus steroids needs PJP prophylaxis.",
+        ],
+      },
+      {
+        title: "Complications and red flags",
+        points: [
+          "PJP **pneumothorax** and day 3-5 worsening.",
+          "**IRIS** after ART: new fever and infiltrates.",
+          "Drug toxicity: cotrimoxazole **hyperkalaemia**, ganciclovir neutropenia, amphotericin hypokalaemia.",
+          "Red flags: hypoxaemia, **neutropenic fever**, neurological signs.",
+        ],
+      },
+      {
+        title: "Referral and follow-up",
+        points: [
+          "Prophylaxis: **cotrimoxazole daily** in HIV CD4 under 350 (NACO) or WHO stage 3-4.",
+          "Non-HIV prophylaxis for **transplant, HSCT, ALL** and heavy steroids.",
+          "**CrAg screening** at CD4 under 200 with pre-emptive fluconazole.",
+          "**Valganciclovir or letermovir** prevent CMV after transplant.",
+          "Check CBC, potassium, creatinine on long-term cotrimoxazole.",
+        ],
+      },
+      {
+        title: "Latest updates",
+        points: [
+          "**NIH OI 2024**: standard PJP dose and steroid rule unchanged.",
+          "**WHO 2022**: single-dose liposomal amphotericin for crypto meningitis.",
+          "**Letermovir 2023**: longer HSCT use and kidney transplant approval.",
+        ],
+      },
+    ],
+    tables: [
+      {
+        heading: "Drugs for opportunistic lung infections",
+        columns: ["Drug", "Dose and route", "Duration", "Key side effects / cautions"],
+        rows: [
+          ["Cotrimoxazole", "15-20 mg/kg/day TMP IV/oral in 3-4 doses", "21 days (PJP)", "Rash, hyperkalaemia, marrow suppression"],
+          ["Prednisolone", "40 mg BD, then 40 mg OD, then 20 mg OD", "21 days", "Hyperglycaemia, other OIs"],
+          ["Clindamycin + primaquine", "600-900 mg IV 8-hourly + 30 mg oral daily", "21 days", "Haemolysis in G6PD deficiency"],
+          ["Ganciclovir", "5 mg/kg IV 12-hourly", "2-3 weeks", "Neutropenia; renal dosing"],
+          ["Liposomal amphotericin B", "10 mg/kg once (crypto); 3 mg/kg/day (histo)", "Single dose or 1-2 weeks", "Hypokalaemia, nephrotoxicity"],
+          ["Fluconazole", "400-1200 mg/day oral", "Months", "Hepatitis, QT, raises tacrolimus"],
+          ["Itraconazole", "200 mg BD oral", "12 months or more", "Hepatitis, interactions"],
+        ],
+      },
+      {
+        heading: "Immune defect and pathogens",
+        columns: ["Defect", "Setting", "Pathogens"],
+        rows: [
+          ["Neutropenia", "Chemotherapy", "Pseudomonas, Aspergillus, Mucorales"],
+          ["T-cell", "HIV, transplant, steroids", "PJP, CMV, TB, Nocardia, Crypto"],
+          ["Humoral", "Myeloma, rituximab, splenectomy", "Pneumococcus, H. influenzae"],
+        ],
+      },
+      {
+        heading: "CD4 thresholds in HIV",
+        columns: ["CD4", "Pathogens", "Action"],
+        rows: [
+          ["Any", "TB, bacterial pneumonia", "TPT, vaccines"],
+          ["Under 200", "PJP, Cryptococcus", "Cotrimoxazole, CrAg screen"],
+          ["Under 100", "Toxoplasma, Histoplasma, Talaromyces", "Cotrimoxazole, early ART"],
+          ["Under 50", "CMV, MAC", "Fundoscopy, ART"],
+        ],
+      },
+    ],
+    remember: [
+      "Name the **immune defect** before the bug.",
+      "PJP: **hypoxaemia out of proportion** to chest signs.",
+      "Steroids if **PaO2 under 70**: 40 BD x5, 40 OD x5, 20 OD x11.",
+      "**G6PD** before primaquine or dapsone.",
+      "Nocardia: **weakly acid-fast**, branching, loves the brain.",
+      "Positive CrAg means **lumbar puncture**.",
+      "CD4 **2-1-5**: 200 PJP, 100 Crypto/Toxo, 50 CMV/MAC.",
+    ],
+  },
+};
+
 export default revision;

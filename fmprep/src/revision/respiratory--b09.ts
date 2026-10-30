@@ -394,6 +394,200 @@ const revision: RevisionSet = {
       ],
     },
   },
+  "respiratory-preop-pulmonary": {
+    checked: "2026-10",
+    updated: [
+      "AHA/ACC 2024 perioperative cardiovascular guideline for non-cardiac surgery (cardiac side of assessment)",
+      "ESAIC 2023 neuromuscular block guideline: quantitative monitoring, TOF ratio 0.9 or more",
+      "Multisociety GLP-1 RA perioperative guidance 2024: continue most, 24-hour clear liquids",
+      "GINA 2025 and GOLD 2025 perioperative advice",
+    ],
+    master: {
+      heading: "Pre-operative pulmonary evaluation on one page",
+      columns: ["Heading", "What to write"],
+      rows: [
+        ["Definition", "PPCs: atelectasis, pneumonia, respiratory failure, bronchospasm, aspiration, effusion, COPD exacerbation"],
+        ["Burden", "About 5% overall, 20-40% upper abdominal/thoracic; mortality 19.5% with PPC vs 0.5% (ARISCAT)"],
+        ["Patient risks", "Age over 60, ASA 2+, COPD, CHF, dependence, albumin under 3.5, low SpO2, recent infection, anaemia, smoking, OSA"],
+        ["Procedure risks", "Upper abdominal/thoracic/AAA, over 2-3 h, emergency, GA, residual blockade"],
+        ["Not major", "Obesity alone, controlled asthma"],
+        ["Mechanism", "FRC falls 20% under GA, diaphragm dysfunction, pain splinting, poor cough, opioids"],
+        ["Scores", "ARISCAT (under 26 / 26-44 / 45+); STOP-BANG (0-2 / 3-4 / 5-8)"],
+        ["Tests", "No routine spirometry or CXR; spirometry for resection or unexplained dyspnoea; albumin, Hb"],
+        ["Lung resection", "ppo = value x (1 - segments/19); 60% and 30%; stair 22 m, SWT 400 m; VO2max 20 and 10"],
+        ["Optimise", "Stop smoking 4-8 weeks, inhalers continued, steroid if asthma FEV1 under 80% best, treat infection, prehab"],
+        ["Intra-op", "6-8 mL/kg PBW, PEEP, low FiO2, TOF 0.9 or more, regional analgesia, laparoscopy"],
+        ["Post-op", "I COUGH, early mobilisation, multimodal analgesia, CPAP for OSA, selective NG, VTE prophylaxis"],
+      ],
+    },
+    flows: [
+      {
+        kind: "flow",
+        heading: "Pre-operative pulmonary assessment in OPD",
+        steps: [
+          { label: "History: exercise tolerance, lung disease, smoking, infection", tone: "neutral" },
+          { label: "Examination and resting SpO2", tone: "neutral" },
+          { label: "Score ARISCAT and STOP-BANG", tone: "decision" },
+          { label: "Active infection or exacerbation?", detail: "Postpone elective surgery about 4 weeks", tone: "warn" },
+          { label: "Selective tests only", detail: "Spirometry if unexplained dyspnoea; albumin; bicarbonate if obese", tone: "neutral" },
+          { label: "Optimise and write risk with recommendations", detail: "Smoking, inhalers, prehab, CPAP plan", tone: "good" },
+        ],
+      },
+      {
+        kind: "flow",
+        heading: "ACCP 2013 lung resection algorithm",
+        steps: [
+          { label: "Cardiac risk (ThRCRI)", detail: "Cardiology if over 1.5", tone: "neutral" },
+          { label: "Measure FEV1 and DLCO; calculate ppo values", detail: "x (1 - segments/19)", tone: "neutral" },
+          { label: "Both over 60%: proceed", tone: "good" },
+          { label: "Either 30-60%: stair climb or shuttle walk", detail: "Over 22 m or over 400 m: proceed", tone: "decision" },
+          { label: "Either under 30% or failed walk: CPET", tone: "decision" },
+          { label: "VO2max under 10 mL/kg/min: high risk", detail: "Sublobar, SBRT or non-surgical", tone: "warn" },
+        ],
+      },
+      {
+        kind: "ladder",
+        heading: "PPC prevention across the surgical journey",
+        steps: [
+          { label: "Weeks before: stop smoking, prehabilitation, nutrition", detail: "Cessation 4-8 weeks", tone: "neutral" },
+          { label: "Days before: optimise COPD/asthma, treat infection", detail: "Prednisolone if FEV1 under 80% best", tone: "neutral" },
+          { label: "In theatre: protective ventilation, full reversal", detail: "6-8 mL/kg PBW; TOF 0.9+", tone: "decision" },
+          { label: "After: I COUGH, mobilise day 0-1, regional analgesia", tone: "good" },
+          { label: "High risk: CPAP/NIV or HFNO after extubation", tone: "warn" },
+        ],
+      },
+    ],
+    notes: {
+      sections: [
+        {
+          title: "Definition and key facts",
+          points: [
+            "**PPCs** include atelectasis, pneumonia, respiratory failure, bronchospasm and aspiration.",
+            "About **5%** overall, up to **20-40%** after upper abdominal or thoracic surgery.",
+            "PPCs are as common and as deadly as **cardiac complications**.",
+          ],
+        },
+        {
+          title: "Causes and risk factors",
+          points: [
+            "**Procedure** matters most: upper abdominal, thoracic, long, emergency surgery.",
+            "Patient: **age over 60**, ASA 2+, COPD, heart failure, dependence, albumin under 3.5.",
+            "Also low **SpO2**, recent chest infection, anaemia, smoking and OSA.",
+            "**Obesity alone** and controlled asthma are not major independent risks.",
+          ],
+        },
+        {
+          title: "Pathophysiology",
+          points: [
+            "General anaesthesia drops **FRC by 20%** and causes basal atelectasis.",
+            "Upper abdominal surgery causes **diaphragm dysfunction** for 1-2 weeks.",
+            "Pain stops deep breaths and **coughing**, so secretions stay.",
+            "**Residual blockade** and opioids weaken the airway and breathing drive.",
+          ],
+        },
+        {
+          title: "Classification that matters",
+          points: [
+            "**ARISCAT**: age, SpO2, infection, anaemia, incision, duration, emergency.",
+            "ARISCAT bands: **under 26 low**, 26-44 intermediate, 45 or more high.",
+            "**STOP-BANG** 5-8 means high risk of moderate-severe OSA.",
+          ],
+        },
+        {
+          title: "Investigations",
+          points: [
+            "**No routine spirometry** or CXR before non-thoracic surgery.",
+            "Spirometry for **lung resection** or unexplained breathlessness.",
+            "Check **albumin and haemoglobin**; bicarbonate in obese high STOP-BANG.",
+            "Test sputum for **TB** if cough over 2 weeks.",
+          ],
+        },
+        {
+          title: "Lung resection evaluation",
+          points: [
+            "Measure **FEV1 and DLCO** in every candidate.",
+            "**ppo value** equals preop value times (1 minus segments removed over 19).",
+            "Both over **60%**: proceed; under **30%**: CPET.",
+            "**Stair climb over 22 m** or shuttle walk over 400 m means low risk.",
+            "**VO2max** over 20 safe; under 10 mL/kg/min high risk.",
+          ],
+        },
+        {
+          title: "Treatment - first line",
+          points: [
+            "Stop smoking **4-8 weeks** before; any stop helps.",
+            "Continue inhalers; **prednisolone 40-50 mg** for 5 days if asthma FEV1 under 80% best.",
+            "**Prehabilitation**: exercise, nutrition and breathing training for 2-6 weeks.",
+            "Postpone elective surgery for **active infection** or exacerbation.",
+          ],
+        },
+        {
+          title: "Inpatient / emergency care",
+          points: [
+            "Protective ventilation: **6-8 mL/kg** predicted body weight with PEEP.",
+            "Full reversal to **TOF ratio 0.9** or more.",
+            "**I COUGH** bundle and walking on day 0-1.",
+            "Regional analgesia; continue **CPAP** in known OSA.",
+          ],
+        },
+        {
+          title: "Latest updates",
+          points: [
+            "**AHA/ACC 2024** perioperative guideline covers the cardiac half of assessment.",
+            "**ESAIC 2023** requires quantitative neuromuscular monitoring.",
+            "**GLP-1 RA 2024** guidance: continue most, clear liquids for 24 hours.",
+          ],
+        },
+      ],
+      tables: [
+        {
+          heading: "Perioperative drugs",
+          columns: ["Drug", "Dose and route", "Duration", "Key side effects / cautions"],
+          rows: [
+            ["Salbutamol", "2.5-5 mg nebulised before induction", "Pre-op and as needed", "Tremor, tachycardia, low potassium"],
+            ["Prednisolone", "40-50 mg orally daily", "5 days pre-op if asthma FEV1 under 80% best", "High sugars"],
+            ["Hydrocortisone", "100 mg IV at induction, then 200 mg/24 h", "1-3 days, taper", "Hyperglycaemia"],
+            ["Varenicline", "Titrate to 1 mg twice daily", "12 weeks", "Nausea, dreams"],
+            ["Sugammadex", "2-4 mg/kg IV", "End of surgery", "Rare anaphylaxis; contraception fails 7 days"],
+            ["Enoxaparin", "40 mg SC daily", "Until mobile", "Bleeding; adjust in CKD"],
+          ],
+        },
+        {
+          heading: "ARISCAT points",
+          columns: ["Factor", "Points"],
+          rows: [
+            ["Age 51-80 / over 80", "3 / 16"],
+            ["SpO2 91-95% / 90% or less", "8 / 24"],
+            ["Infection in last month", "17"],
+            ["Hb 10 g/dL or less", "11"],
+            ["Upper abdominal / intrathoracic", "15 / 24"],
+            ["Duration 2-3 h / over 3 h", "16 / 23"],
+            ["Emergency", "8"],
+          ],
+        },
+        {
+          heading: "Postoperative hypoxaemia: differential",
+          columns: ["Cause", "Timing", "Clue"],
+          rows: [
+            ["Atelectasis", "Day 0-3", "Basal dullness, low fever"],
+            ["Opioid or residual blockade", "Recovery", "Drowsy, shallow breathing"],
+            ["Pneumonia", "Day 3-7", "Fever, sputum, infiltrate"],
+            ["Pulmonary embolism", "Day 3-14", "Sudden breathlessness, clear CXR"],
+            ["Pulmonary oedema", "Day 0-3", "Fluid overload, crackles"],
+          ],
+        },
+      ],
+      remember: [
+        "**The operation predicts PPCs more than the patient.**",
+        "**ARISCAT** = Age, SpO2, Infection, Anaemia, Incision, Duration, Emergency.",
+        "**60 / 30** for ppo values; **20 / 10** for VO2max.",
+        "**22 m stairs, 400 m shuttle** = low risk.",
+        "**I COUGH**: Incentive spirometry, Cough, Oral care, Understanding, Get up, Head up.",
+        "Smoking: stop **4-8 weeks** before - later is still better than never.",
+        "Spirometry **never alone denies** non-thoracic surgery.",
+      ],
+    },
+  },
 };
 
 export default revision;

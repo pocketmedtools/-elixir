@@ -967,4 +967,493 @@ topics.push({
   ],
 });
 
+topics.push({
+  id: "respiratory-sarcoidosis",
+  title: "Sarcoidosis",
+  frequency: "less-common",
+  oneLiner:
+    "**Sarcoidosis** is a multisystem disease of unknown cause characterised by **non-necrotising (non-caseating) epithelioid granulomas**, most often in the **lungs and hilar lymph nodes**; diagnosis needs a **compatible clinical picture, granulomas on biopsy and exclusion of other causes - above all tuberculosis in India** (ATS 2020), and many patients need no treatment, while those with organ-threatening disease receive **prednisolone 20-40 mg/day, with methotrexate as the steroid-sparing agent** (ERS 2021).",
+  keywords: [
+    "sarcoid",
+    "non-caseating granuloma",
+    "bilateral hilar lymphadenopathy",
+    "BHL",
+    "Scadding stage",
+    "Lofgren syndrome",
+    "Heerfordt syndrome",
+    "lupus pernio",
+    "erythema nodosum",
+    "serum ACE",
+    "EBUS-TBNA",
+    "cardiac sarcoidosis",
+    "neurosarcoidosis",
+    "uveitis",
+    "hypercalcaemia",
+    "methotrexate",
+    "infliximab",
+    "CD4/CD8 ratio",
+    "FDG-PET",
+  ],
+  sections: [
+    {
+      heading: "Definition and epidemiology",
+      points: [
+        "**Sarcoidosis** is a systemic granulomatous disease of unknown cause; the lungs or intrathoracic nodes are involved in **over 90%** of patients. [Harrison 22e]",
+        "Incidence varies about tenfold: roughly **10-20 per 100,000 per year in northern Europe and up to 35-70 in African-American women**, lower in East Asia. [Harrison 22e]",
+        "Peak onset is **20-50 years**, with a second peak in women over 50; women are slightly more affected. [Harrison 22e]",
+        "In India sarcoidosis was once thought rare, but tertiary centres now report it regularly and it formed a distinct share of the **ILD-India registry**; true prevalence is unknown. [ILD-India registry 2017]",
+        "In India the main problem is **misdiagnosis as tuberculosis**: many patients receive one or more ATT courses before the diagnosis is made. [Indian J Chest Dis Allied Sci]",
+        "About **half to two-thirds** of patients remit within 2-5 years; **10-30%** develop chronic progressive disease. [Harrison 22e]",
+      ],
+    },
+    {
+      heading: "Aetiology and risk factors",
+      points: [
+        "Cause unknown; the leading theory is an **exaggerated Th1/Th17 immune response to an unidentified antigen** in a genetically susceptible host. [Harrison 22e]",
+        "**Candidate antigens**: mycobacterial proteins (mKatG, ESAT-6), Propionibacterium acnes, and inorganic dusts - mycobacterial DNA is found in some granulomas but the disease is not infectious. [Harrison 22e]",
+        "**Genetic factors**: HLA-DRB1 alleles; **HLA-DRB1*03 is linked to Lofgren syndrome** and a good prognosis; family clustering raises risk several-fold. [Harrison 22e]",
+        "**Exposures** linked in studies: agricultural dust, insecticides, moulds, metal dust, firefighting and World Trade Center dust. [Harrison 22e]",
+        "**Beryllium** causes chronic beryllium disease, a sarcoid mimic - always ask about aerospace, electronics and dental alloy work. [Harrison 22e]",
+        "**Non-smokers** are affected more than smokers. [Harrison 22e]",
+        "**Drug-induced sarcoid-like reactions** occur with checkpoint inhibitors, interferon, anti-TNF agents and antiretroviral immune reconstitution. [ERS 2021]",
+      ],
+    },
+    {
+      heading: "Pathophysiology",
+      points: [
+        "Antigen-presenting cells present antigen via HLA class II to **CD4+ Th1 cells**, which release **IFN-gamma, IL-2 and TNF-alpha**, recruiting macrophages that become epithelioid cells and giant cells. [Harrison 22e]",
+        "The **granuloma** is tightly formed and **non-necrotising**, with a rim of lymphocytes and may contain **Schaumann and asteroid bodies** (not specific). [Harrison 22e]",
+        "**TNF-alpha** sustains granulomas - which is why **infliximab** works, and why anti-TNF therapy can reactivate TB. [ERS 2021]",
+        "Activated granuloma macrophages express **1-alpha hydroxylase**, converting 25(OH)D to **1,25(OH)2D** without feedback - causing **hypercalciuria (common) and hypercalcaemia (about 10%)**. [Harrison 22e]",
+        "Granuloma epithelioid cells produce **ACE**, so serum ACE reflects total granuloma load, not diagnosis. [Harrison 22e]",
+        "Compartmentalisation of CD4 cells in the lung lowers peripheral CD4 counts and causes **cutaneous anergy** (negative tuberculin test). [Harrison 22e]",
+        "Lung granulomas follow **lymphatics** (bronchovascular bundles, interlobular septa, subpleura, fissures), giving the perilymphatic CT pattern; persistent granulomas heal by **fibrosis** in upper zones. [Fleischner Society 2018]",
+      ],
+    },
+    {
+      heading: "Classification - Scadding stages and syndromes",
+      points: [
+        "**Scadding staging** is based on the chest X-ray, not on severity: **stage 0** normal, **I** bilateral hilar lymphadenopathy (BHL) only, **II** BHL plus parenchymal infiltrates, **III** infiltrates without BHL, **IV** fibrosis. [Harrison 22e]",
+        "Spontaneous remission falls with stage: about **55-90% in stage I, 40-70% in stage II, 10-20% in stage III and 0% in stage IV**. [Harrison 22e]",
+        "**Lofgren syndrome**: acute **erythema nodosum, BHL, fever and polyarthralgia or ankle periarthritis** - over 90% remit within 2 years and biopsy is not needed. [ATS 2020]",
+        "**Heerfordt syndrome (uveoparotid fever)**: **uveitis, parotid enlargement, facial nerve palsy and fever**. [Harrison 22e]",
+        "**Organ involvement** is graded with the **WASOG 2014 organ assessment instrument** (highly probable, at least probable, possible). [WASOG 2014]",
+        "**Cardiac sarcoidosis** is classified by HRS 2014 or JCS 2016 criteria (histology, or extracardiac sarcoid plus imaging or ECG features). [HRS 2014]",
+      ],
+    },
+    {
+      heading: "Clinical features - history",
+      points: [
+        "Up to **30-50% are asymptomatic**, found by BHL on a routine or pre-employment chest X-ray. [Harrison 22e]",
+        "**Respiratory**: dry cough, exertional breathlessness, chest discomfort; wheeze from endobronchial disease; haemoptysis is rare (think TB or aspergilloma in fibrotic cavities). [Harrison 22e]",
+        "**Constitutional**: fatigue (very common and disabling), low-grade fever, weight loss and night sweats - easily mistaken for TB. [ERS 2021]",
+        "**Eyes**: redness, pain, photophobia or blurred vision (anterior uveitis), floaters (posterior uveitis); dry eyes - eye involvement in about 20-30%. [Harrison 22e]",
+        "**Heart**: palpitations, syncope, heart block or sudden death - clinically in about 5% but found at autopsy in about 25%. [HRS 2014]",
+        "**Nervous system** (about 5-10%): facial palsy, other cranial neuropathies, aseptic meningitis, hypothalamic-pituitary disease (diabetes insipidus), and small-fibre neuropathy. [Harrison 22e]",
+        "**Calcium**: polyuria, thirst, renal colic and kidney stones from hypercalciuria. [Harrison 22e]",
+        "**Joints and skin**: ankle swelling, painful red shins (erythema nodosum), skin plaques, papules or changes in old scars and tattoos. [Harrison 22e]",
+      ],
+    },
+    {
+      heading: "Examination findings",
+      points: [
+        "Chest is often **clear despite marked X-ray changes** - a classic dissociation; crackles are uncommon except in fibrosis. [Harrison 22e]",
+        "**Clubbing is rare** in sarcoidosis; its presence suggests another diagnosis or advanced fibrosis. [Harrison 22e]",
+        "**Erythema nodosum**: tender red nodules on the shins (non-specific, also TB, streptococcal, drugs, IBD, leprosy). [Harrison 22e]",
+        "**Lupus pernio**: violaceous indurated plaques on nose, cheeks and ears - associated with chronic disease, upper-airway and bone involvement. [Harrison 22e]",
+        "**Peripheral lymphadenopathy** (non-tender, rubbery), **hepatosplenomegaly**, parotid swelling, and **lacrimal gland** enlargement. [Harrison 22e]",
+        "Eye signs: ciliary flush, keratic precipitates, iris nodules on slit lamp; facial nerve palsy (LMN). [Harrison 22e]",
+        "Cardiac: bradycardia or irregular pulse; signs of heart failure or right heart strain in sarcoid-associated PH. [HRS 2014]",
+      ],
+    },
+    {
+      heading: "Differential diagnosis",
+      points: [
+        "**Tuberculosis** is the first exclusion in India: **necrotising granulomas**, AFB/CBNAAT or culture positive, asymmetrical or necrotic nodes, and usually a strongly positive tuberculin or IGRA. [NTEP 2024]",
+        "**Lymphoma**: B symptoms, bulky asymmetrical anterior mediastinal nodes, raised LDH; diagnose by core or excision biopsy, not FNA alone. [Harrison 22e]",
+        "**Metastatic carcinoma** and **sarcoid-like reaction** in nodes draining a cancer. [Harrison 22e]",
+        "**Fungal infection** (histoplasmosis, cryptococcosis), **brucellosis** and **leprosy** cause granulomas - do special stains and cultures. [Harrison 22e]",
+        "**Hypersensitivity pneumonitis**: poorly formed granulomas, exposure history, no nodes. [ATS/JRS/ALAT 2020]",
+        "**Chronic beryllium disease, silicosis** (eggshell nodes) and **GPA** (necrotising granulomas with vasculitis, ANCA). [Harrison 22e]",
+        "**Drug-induced sarcoid-like reaction** (checkpoint inhibitors, interferon) and **CVID** (granulomatous-lymphocytic ILD with low immunoglobulins). [ERS 2021]",
+      ],
+    },
+    {
+      heading: "Investigations",
+      points: [
+        "**Chest X-ray**: symmetrical BHL with right paratracheal node - the **1-2-3 (Garland) sign**; reticulonodular upper-zone shadows. [Harrison 22e]",
+        "**HRCT/CECT thorax**: **perilymphatic nodules** along bronchovascular bundles, fissures and subpleura, upper-mid zone predominance, symmetrical hilar and mediastinal nodes (may calcify), and upper-lobe fibrosis with hilar retraction in stage IV. [Fleischner Society 2018]",
+        "**Tissue diagnosis**: **EBUS-TBNA** of mediastinal nodes is suggested over mediastinoscopy (yield about 80-90% in stage I-II); add **transbronchial or endobronchial biopsy**; easiest sites are **skin, peripheral nodes, conjunctiva or salivary glands**. [ATS 2020]",
+        "**Every biopsy in India needs AFB smear, CBNAAT (Xpert MTB/RIF Ultra) and mycobacterial culture**, plus fungal stains, before calling granulomas sarcoid. [NTEP 2024]",
+        "**Serum ACE** is raised in about 60% but lacks sensitivity and specificity (also raised in TB, leprosy, silicosis, HP, hyperthyroidism, diabetes, Gaucher) and falls with ACE inhibitors - **ATS 2020 does not support it for diagnosis**. [ATS 2020]",
+        "**Baseline tests recommended by ATS 2020**: serum **calcium**, creatinine and **alkaline phosphatase**, CBC, **12-lead ECG** for all, and an **eye examination** for all. [ATS 2020]",
+        "Check **24-hour urine calcium**, and measure both **25(OH)D and 1,25(OH)2D** before giving vitamin D. [ATS 2020]",
+        "**BAL**: lymphocytosis with **CD4/CD8 ratio over 3.5** is fairly specific (about 90%) but only about 50% sensitive. [Harrison 22e]",
+        "**PFT**: restriction or obstruction (endobronchial disease or fibrosis) and reduced DLCO; **6MWT**; echo for PH. [ERS 2021]",
+        "**Cardiac work-up** if ECG, Holter or symptoms are abnormal: **cardiac MRI (late gadolinium enhancement)** first, or **FDG-PET** with a ketogenic diet preparation; **FDG-PET-CT** also finds a biopsy site and active disease. [ATS 2020]",
+      ],
+    },
+    {
+      heading: "Management in OPD",
+      points: [
+        "**Treat to prevent death or permanent organ damage, or to improve quality of life** - not to normalise the X-ray; many stage I and asymptomatic stage II patients need only observation. [ERS 2021]",
+        "**Lofgren syndrome**: NSAIDs (e.g. **naproxen 250-500 mg twice daily**) for arthralgia and erythema nodosum; short low-dose prednisolone if severe. [ERS 2021]",
+        "**Pulmonary sarcoidosis needing treatment**: **prednisolone 20-40 mg/day** (about 0.3-0.5 mg/kg) for **2-6 weeks**, then taper to **5-10 mg/day**, total about **6-12 months**; higher doses add toxicity, not benefit. [ERS 2021]",
+        "**Methotrexate 10-20 mg once weekly** with **folic acid 5 mg weekly** (on another day) is the first steroid-sparing agent if disease persists or steroid toxicity occurs; it takes about 6 months to act. [ERS 2021]",
+        "**Alternatives**: azathioprine 50-150 mg/day, leflunomide 10-20 mg/day, mycophenolate 1-1.5 g twice daily; **hydroxychloroquine 200-400 mg/day** for skin disease and hypercalcaemia. [ERS 2021]",
+        "**Infliximab 3-5 mg/kg IV** at weeks 0, 2 and then every 4-8 weeks for refractory pulmonary, cardiac, neurological or lupus pernio disease - **screen for latent TB (IGRA, CXR) and hepatitis B first**. [ERS 2021]",
+        "**Inhaled steroids** are not effective for parenchymal disease but may help cough or airway hyperreactivity. [ERS 2021]",
+        "**Hypercalcaemia**: hydration, avoid vitamin D supplements and sunlight excess, and prednisolone (usually responds within days); hydroxychloroquine or ketoconazole if steroids fail. [ERS 2021]",
+        "**Fatigue**: exclude hypothyroidism, depression, OSA and small-fibre neuropathy; **pulmonary rehabilitation** and a trial of methylphenidate are suggested. [ERS 2021]",
+        "**Anterior uveitis**: topical steroid and cycloplegic under an ophthalmologist; posterior uveitis needs systemic therapy. [Harrison 22e]",
+      ],
+    },
+    {
+      heading: "Management in IPD",
+      points: [
+        "**Admit** for complete heart block, ventricular tachycardia, syncope, **severe hypercalcaemia (over 3 mmol/L or 12 mg/dL)** with AKI, neurosarcoidosis or respiratory failure. [ERS 2021]",
+        "**Cardiac sarcoidosis**: prednisolone (often 30-40 mg/day) with or without methotrexate; infliximab for persistent disease; **pacemaker or ICD** for high-grade block or VT/ reduced EF - heart block in a young person (under 60) should prompt a search for sarcoid. [HRS 2014, ERS 2021]",
+        "**Neurosarcoidosis**: high-dose steroids (IV methylprednisolone pulses for severe disease), methotrexate, and **infliximab is recommended** for persistent disease. [ERS 2021]",
+        "**Severe hypercalcaemia**: IV normal saline, bisphosphonate if needed, and prednisolone 20-40 mg/day. [Harrison 22e]",
+        "**Haemoptysis in fibrocystic stage IV**: look for **aspergilloma** and TB; bronchial artery embolisation if massive (see the Haemoptysis topic). [Harrison 22e]",
+      ],
+    },
+    {
+      heading: "Special situations",
+      points: [
+        "**India and TB**: tuberculin is often negative (anergy) but IGRA may be positive from latent infection; consider **TB preventive treatment** before high-dose steroids or anti-TNF in IGRA-positive patients. [NTEP 2024]",
+        "**Never give an empirical 'ATT trial'** to diagnose sarcoidosis - it delays diagnosis and causes drug toxicity; get tissue and microbiology instead. [ATS 2020]",
+        "**Pregnancy**: sarcoidosis often improves in pregnancy and may relapse postpartum; prednisolone, azathioprine and hydroxychloroquine are acceptable; **methotrexate and leflunomide are contraindicated** (stop 3 months before conception; leflunomide needs washout). [ERS 2021]",
+        "**Diabetes and osteoporosis**: use the lowest steroid dose, add bone protection, and consider early methotrexate. [ERS 2021]",
+        "**Vitamin D**: avoid blind supplementation - check 1,25(OH)2D and urinary calcium first. [ATS 2020]",
+        "**Elderly and immunosuppressed**: lymphoma and TB are more likely mimics; biopsy is mandatory. [Harrison 22e]",
+      ],
+    },
+    {
+      heading: "Complications and prognosis",
+      points: [
+        "Overall mortality is about **1-5%**, mainly from **pulmonary fibrosis with pulmonary hypertension** and **cardiac sarcoidosis** (heart block, VT, sudden death). [Harrison 22e]",
+        "**Sarcoid-associated pulmonary hypertension** (group 5) in about 5-20% of chronic disease, with poor survival. [ESC/ERS 2022]",
+        "**Stage IV fibrocystic disease**: bronchiectasis, **aspergilloma**, chronic pulmonary aspergillosis and recurrent infection. [Harrison 22e]",
+        "**Nephrocalcinosis, kidney stones and CKD** from hypercalciuria; **blindness** from untreated uveitis or glaucoma. [Harrison 22e]",
+        "**Poor prognostic factors**: age over 40 at onset, **lupus pernio**, chronic uveitis, cardiac or neuro involvement, nephrocalcinosis, stage III-IV, and African ancestry. [Harrison 22e]",
+        "Relapse after stopping steroids occurs in about **20-70%**, usually within the first year. [ERS 2021]",
+      ],
+    },
+    {
+      heading: "Referral, follow-up and monitoring",
+      points: [
+        "**Refer** suspected sarcoidosis to a chest physician for EBUS-TBNA and TB exclusion; refer all patients for a **baseline eye examination**. [ATS 2020]",
+        "Untreated patients: review **every 3-6 months for 2 years** with symptoms, CXR, **spirometry and DLCO**, calcium and creatinine. [ERS 2021]",
+        "On treatment: PFT at 3 months; **methotrexate needs CBC, LFT and creatinine every 4-12 weeks**; avoid alcohol. [ERS 2021]",
+        "**Annual ECG and eye examination**, plus urinary calcium and renal function. [ATS 2020]",
+        "Refer **refractory, cardiac, neuro, ocular posterior or PH cases** to tertiary centres; transplant referral for advanced fibrosis or PH. [ISHLT 2021]",
+      ],
+    },
+    {
+      heading: "Prevention and counselling",
+      points: [
+        "No primary prevention exists; explain that **most patients recover without treatment** and that it is **not infectious and not cancer**. [Harrison 22e]",
+        "Counsel to **report palpitations, fainting, eye redness or visual change immediately**. [ERS 2021]",
+        "Avoid **unprescribed vitamin D and calcium supplements** and excessive sun exposure if calcium is high. [ATS 2020]",
+        "On steroids: **sick-day rules**, bone protection, glucose checks, and vaccines (influenza, pneumococcal; avoid live vaccines on high-dose immunosuppression). [ACIP 2024]",
+        "Avoid occupational dusts and smoking; consider beryllium exposure in at-risk workers. [Harrison 22e]",
+      ],
+    },
+    {
+      heading: "Latest guideline updates",
+      points: [
+        "**ATS 2020 diagnosis and detection guideline**: diagnosis rests on three criteria; **no node sampling needed in Lofgren, lupus pernio or Heerfordt**; EBUS-TBNA preferred over mediastinoscopy; baseline calcium, creatinine, ALP, ECG and eye exam for all. [ATS 2020]",
+        "**ERS 2021 treatment guideline**: glucocorticoids for symptomatic pulmonary disease at risk; **methotrexate** as second line; **infliximab** for persistent disease; treatment for cardiac, neuro and fatigue defined. [ERS 2021]",
+        "**BTS Clinical Statement on pulmonary sarcoidosis (2021)** supports the same thresholds and a low initial steroid dose. [BTS 2021]",
+        "**2025**: the phase 3 EFZO-FIT trial of efzofitimod for pulmonary sarcoidosis did not meet its primary steroid-sparing endpoint - steroids and methotrexate remain the mainstay. [aTyr Pharma 2025]",
+        "Growing evidence supports **methotrexate as an alternative first-line drug** in selected patients to reduce steroid exposure, though steroids remain the standard first line. [ERS 2021]",
+      ],
+    },
+    {
+      heading: "Exam and viva angle",
+      points: [
+        "Viva: '**How will you differentiate sarcoidosis from TB in India?**' - necrosis, microbiology (CBNAAT, culture), node pattern, ACE limits, response to steroids is NOT a diagnostic test.",
+        "List **causes of BHL**: sarcoidosis, TB, lymphoma, metastasis, fungal, silicosis, berylliosis, HIV.",
+        "Know the **Scadding stages with their remission rates**.",
+        "Know **Lofgren and Heerfordt syndromes** and why Lofgren needs no biopsy.",
+        "**Common mistake**: treating an asymptomatic stage I patient with steroids.",
+        "**Common mistake**: giving vitamin D to a sarcoid patient with low 25(OH)D without checking calcium and 1,25(OH)2D.",
+      ],
+    },
+  ],
+  tables: [
+    {
+      heading: "Drugs in sarcoidosis (ERS 2021)",
+      columns: ["Drug", "Dose and route", "Duration/titration", "Key adverse effects / contraindications"],
+      rows: [
+        ["Prednisolone", "20-40 mg/day orally", "2-6 weeks, taper to 5-10 mg; total 6-12 months", "Weight gain, diabetes, osteoporosis, TB reactivation, cataract"],
+        ["Methotrexate", "10-20 mg orally or SC once weekly + folic acid 5 mg weekly", "At least 6-12 months; effect by 6 months", "Hepatotoxicity, cytopenia, pneumonitis; teratogenic; avoid alcohol"],
+        ["Azathioprine", "50-150 mg/day orally (2 mg/kg)", "Long term", "Marrow suppression (TPMT), hepatitis, pancreatitis"],
+        ["Leflunomide", "10-20 mg/day orally", "Long term", "Diarrhoea, hepatotoxicity, hypertension; teratogenic"],
+        ["Hydroxychloroquine", "200-400 mg/day orally (max 5 mg/kg)", "Months to years", "Retinopathy - annual eye check after 5 years"],
+        ["Infliximab", "3-5 mg/kg IV weeks 0, 2, then every 4-8 weeks", "Refractory disease", "TB reactivation, infections, heart failure worsening; screen IGRA and HBV"],
+        ["Naproxen (Lofgren)", "250-500 mg BD orally", "Weeks", "Dyspepsia, renal impairment"],
+      ],
+    },
+    {
+      heading: "Scadding chest X-ray stages",
+      columns: ["Stage", "Chest X-ray", "Approximate spontaneous remission"],
+      rows: [
+        ["0", "Normal (extrapulmonary disease)", "Not applicable"],
+        ["I", "Bilateral hilar lymphadenopathy only", "55-90%"],
+        ["II", "BHL with parenchymal infiltrates", "40-70%"],
+        ["III", "Parenchymal infiltrates without BHL", "10-20%"],
+        ["IV", "Fibrosis, volume loss, cysts, hilar retraction", "0%"],
+      ],
+    },
+    {
+      heading: "Sarcoidosis versus tuberculosis",
+      columns: ["Feature", "Sarcoidosis", "Tuberculosis"],
+      rows: [
+        ["Granuloma", "Tight, non-necrotising", "Caseating (necrotising)"],
+        ["Microbiology", "AFB, CBNAAT, culture negative", "AFB, CBNAAT or culture positive"],
+        ["Nodes", "Symmetrical BHL with right paratracheal", "Often unilateral, necrotic, rim-enhancing"],
+        ["Lung parenchyma", "Perilymphatic nodules, upper zone", "Tree-in-bud, cavities, consolidation"],
+        ["Tuberculin test", "Often negative (anergy)", "Usually positive"],
+        ["Clinical well-being", "Often well despite big X-ray", "Unwell, weight loss, fever"],
+        ["Response", "Steroids (not diagnostic)", "ATT"],
+      ],
+    },
+    {
+      heading: "Baseline and organ screening tests (ATS 2020)",
+      columns: ["Test", "Why", "Abnormal result / action"],
+      rows: [
+        ["Serum calcium, 24-h urine calcium", "Granuloma 1,25(OH)2D production", "Hypercalcaemia or hypercalciuria - treat; avoid vitamin D"],
+        ["Creatinine, ALP", "Renal and hepatic involvement", "Raised - look for nephrocalcinosis or hepatic granulomas"],
+        ["12-lead ECG (all)", "Screen cardiac sarcoid", "Any block or arrhythmia - Holter, echo, cardiac MRI or FDG-PET"],
+        ["Ophthalmology exam (all)", "Uveitis may be silent", "Uveitis - topical or systemic therapy"],
+        ["Spirometry and DLCO", "Pulmonary severity", "Restriction, obstruction, low DLCO - consider treatment"],
+        ["Serum ACE", "Granuloma load", "Not for diagnosis; may help follow-up"],
+        ["Echocardiography", "Pulmonary hypertension", "Raised PASP - right heart catheter"],
+      ],
+    },
+    {
+      heading: "Indications for treatment (ERS 2021)",
+      columns: ["Organ", "Treat when", "First line"],
+      rows: [
+        ["Lung", "Symptomatic with impaired or falling PFT, or at risk of mortality or disability", "Prednisolone 20-40 mg/day"],
+        ["Heart", "Any confirmed cardiac sarcoid", "Steroids with or without methotrexate; device therapy"],
+        ["Nervous system", "Any significant neurosarcoidosis", "Steroids, then methotrexate or infliximab"],
+        ["Eye", "Anterior uveitis / posterior uveitis", "Topical steroid / systemic therapy"],
+        ["Calcium", "Hypercalcaemia or nephrocalcinosis", "Prednisolone; hydroxychloroquine"],
+        ["Skin", "Lupus pernio or disfiguring lesions", "Hydroxychloroquine, methotrexate, infliximab"],
+      ],
+    },
+  ],
+  redFlags: [
+    "Syncope, palpitations or heart block on ECG - cardiac sarcoidosis",
+    "Serum calcium over 3 mmol/L (12 mg/dL) or acute kidney injury",
+    "Red painful eye or visual loss",
+    "Facial palsy, seizures, headache or polyuria - neurosarcoidosis",
+    "Falling FVC/DLCO or rising PASP on echo",
+    "Fever, weight loss and necrotic nodes - TB or lymphoma not yet excluded",
+    "Haemoptysis in stage IV disease - aspergilloma",
+  ],
+  pearls: [
+    "**Sarcoidosis is a diagnosis of exclusion - in India exclude TB on every biopsy (AFB, CBNAAT, culture).**",
+    "**Well patient, big X-ray** - classic sarcoid dissociation.",
+    "**1-2-3 (Garland) sign**: right paratracheal plus both hila.",
+    "**Lofgren = EN + BHL + fever + ankle arthritis**; good prognosis, no biopsy.",
+    "**Heerfordt = uveitis + parotid + facial palsy + fever.**",
+    "**ACE is neither sensitive nor specific**; do not diagnose or exclude with it.",
+    "**ECG and eye exam for every patient** (ATS 2020).",
+    "**Prednisolone 20-40 mg is enough**; methotrexate is the steroid-sparer; infliximab for refractory (screen TB).",
+    "**Never an empirical ATT trial** - get tissue.",
+  ],
+  mcqs: [
+    {
+      id: "respiratory-sarcoidosis-q1",
+      stem: "A 34-year-old woman has painful red nodules on both shins, fever, swollen ankles and bilateral hilar lymphadenopathy on chest X-ray. What is the most appropriate management?",
+      options: [
+        "EBUS-TBNA of mediastinal nodes before any treatment",
+        "Start four-drug antitubercular therapy",
+        "NSAIDs and observation, without biopsy",
+        "Prednisolone 1 mg/kg for 1 year",
+      ],
+      answer: 2,
+      explanation:
+        "This is Lofgren syndrome (erythema nodosum, BHL, fever and ankle periarthritis), which has a high spontaneous remission rate; ATS 2020 suggests no lymph node sampling, and NSAIDs with follow-up are adequate. Node biopsy adds risk without changing care. ATT without microbiological evidence is inappropriate, and high-dose year-long steroids are unnecessary and toxic.",
+      difficulty: "moderate",
+    },
+    {
+      id: "respiratory-sarcoidosis-q2",
+      stem: "Hypercalcaemia in sarcoidosis is mainly caused by:",
+      options: [
+        "Parathyroid hormone-related peptide from granulomas",
+        "Extrarenal 1-alpha hydroxylase activity in granuloma macrophages",
+        "Bone destruction by granulomas",
+        "Secondary hyperparathyroidism",
+      ],
+      answer: 1,
+      explanation:
+        "Activated macrophages in granulomas express 1-alpha hydroxylase that converts 25(OH)D to 1,25(OH)2D without normal feedback, increasing gut calcium absorption and causing hypercalciuria and hypercalcaemia. PTHrP is the mechanism in squamous cancers; bony sarcoid is uncommon and not the main cause; PTH is suppressed, not raised.",
+      difficulty: "easy",
+    },
+    {
+      id: "respiratory-sarcoidosis-q3",
+      stem: "A 45-year-old man with biopsy-proven pulmonary sarcoidosis is found to have a new second-degree Mobitz II block on ECG. Which is the most appropriate next investigation?",
+      options: [
+        "Repeat serum ACE level",
+        "Cardiac MRI with late gadolinium enhancement",
+        "Spirometry",
+        "Tuberculin skin test",
+      ],
+      answer: 1,
+      explanation:
+        "Heart block in a patient with sarcoidosis suggests cardiac involvement; cardiac MRI (or FDG-PET) is the recommended imaging and guides steroids and device therapy (pacemaker or ICD). Serum ACE reflects granuloma load but not cardiac involvement. Spirometry assesses the lung only, and a tuberculin test does not evaluate the conduction defect.",
+      difficulty: "moderate",
+    },
+    {
+      id: "respiratory-sarcoidosis-q4",
+      stem: "Regarding serum ACE in sarcoidosis, which statement is correct?",
+      options: [
+        "A normal level excludes sarcoidosis",
+        "A raised level is diagnostic in a patient with BHL",
+        "Levels may be raised in TB, silicosis and hyperthyroidism and fall with ACE inhibitors",
+        "It is recommended by ATS 2020 as the first diagnostic test",
+      ],
+      answer: 2,
+      explanation:
+        "Serum ACE is raised in only about 60% of sarcoidosis and also in TB, leprosy, silicosis, HP, hyperthyroidism and diabetes, and ACE inhibitors lower it, so it neither confirms nor excludes the diagnosis. A normal value does not exclude disease, a raised value with BHL is still non-diagnostic, and ATS 2020 does not support using it to diagnose sarcoidosis.",
+      difficulty: "easy",
+    },
+    {
+      id: "respiratory-sarcoidosis-q5",
+      stem: "A patient with symptomatic stage II pulmonary sarcoidosis has relapsed twice when prednisolone was tapered below 10 mg/day and now has steroid-induced diabetes. According to ERS 2021, the preferred next agent is:",
+      options: [
+        "Infliximab",
+        "Inhaled budesonide",
+        "Cyclophosphamide",
+        "Methotrexate",
+      ],
+      answer: 3,
+      explanation:
+        "ERS 2021 suggests methotrexate as the steroid-sparing second-line drug for persistent disease or steroid toxicity, usually 10-20 mg weekly with folic acid. Infliximab is reserved for disease persisting despite steroids and methotrexate (third line, after TB screening). Inhaled steroids do not control parenchymal sarcoid, and cyclophosphamide is reserved for refractory neuro or cardiac disease.",
+      difficulty: "hard",
+    },
+  ],
+  theory: [
+    {
+      id: "respiratory-sarcoidosis-t1",
+      paper: "I",
+      kind: "long",
+      marks: 10,
+      minutes: 18,
+      frequency: "less-common",
+      question:
+        "Describe the clinical features, diagnosis and management of sarcoidosis. How will you differentiate it from tuberculosis in India?",
+      openingLines: [
+        "Sarcoidosis is a multisystem disease of unknown cause with non-necrotising granulomas, involving the lungs and intrathoracic nodes in over 90%.",
+        "Diagnosis needs a compatible picture, non-necrotising granulomas and exclusion of other causes - especially TB in India (ATS 2020).",
+      ],
+      answer: [
+        {
+          heading: "Pathogenesis and staging",
+          points: [
+            "Th1 response, TNF-alpha, epithelioid granulomas; 1-alpha hydroxylase and ACE production.",
+            "Scadding stages 0-IV with remission rates.",
+          ],
+        },
+        {
+          heading: "Clinical features",
+          points: [
+            "Asymptomatic BHL; cough, dyspnoea, fatigue; eye, skin (EN, lupus pernio), heart, nervous system, calcium, joints.",
+            "Lofgren and Heerfordt syndromes.",
+          ],
+        },
+        {
+          heading: "Diagnosis",
+          points: [
+            "CXR (1-2-3 sign), HRCT perilymphatic nodules; EBUS-TBNA; skin or node biopsy.",
+            "AFB, CBNAAT and culture on every specimen; calcium, creatinine, ALP, ECG, eye exam; ACE limited; BAL CD4/CD8 over 3.5.",
+          ],
+        },
+        {
+          heading: "Sarcoidosis vs TB",
+          points: [
+            "Necrosis, microbiology, node pattern, tuberculin anergy, general well-being; no empirical ATT trial.",
+          ],
+        },
+        {
+          heading: "Management",
+          points: [
+            "Observe stage I and asymptomatic; NSAIDs for Lofgren.",
+            "Prednisolone 20-40 mg/day tapered over 6-12 months; methotrexate second line; infliximab third line after TB screening.",
+            "Cardiac: steroids plus devices; hypercalcaemia: hydration, steroids; uveitis: topical/systemic.",
+          ],
+        },
+        {
+          heading: "Follow-up and prognosis",
+          points: [
+            "PFT, calcium, ECG and eye exam; mortality 1-5% from fibrosis-PH and heart.",
+          ],
+        },
+      ],
+      mustDraw: ["Scadding stages table", "Sarcoidosis vs TB comparison table"],
+      markSplit: [
+        { part: "Definition, pathogenesis and staging", marks: 2 },
+        { part: "Clinical features", marks: 2 },
+        { part: "Diagnosis and TB differentiation", marks: 3 },
+        { part: "Management and follow-up", marks: 3 },
+      ],
+      keywords: ["sarcoidosis", "non-caseating granuloma", "EBUS-TBNA", "Scadding", "methotrexate", "TB"],
+    },
+    {
+      id: "respiratory-sarcoidosis-t2",
+      paper: "I",
+      kind: "short-note",
+      marks: 5,
+      minutes: 9,
+      frequency: "less-common",
+      question: "Write a short note on bilateral hilar lymphadenopathy.",
+      openingLines: [
+        "Bilateral hilar lymphadenopathy is symmetrical enlargement of hilar nodes on chest imaging; in India the main causes are sarcoidosis and tuberculosis.",
+        "Tissue diagnosis by EBUS-TBNA with microbiology is the key step.",
+      ],
+      answer: [
+        {
+          heading: "Causes",
+          points: [
+            "Sarcoidosis, TB, lymphoma, metastatic carcinoma, fungal infection, silicosis (eggshell), berylliosis, HIV, drug-induced sarcoid-like reaction.",
+          ],
+        },
+        {
+          heading: "Approach",
+          points: [
+            "History of fever, weight loss, EN, uveitis, occupation; CECT thorax; EBUS-TBNA with AFB, CBNAAT, culture, cytology, flow cytometry.",
+          ],
+        },
+        {
+          heading: "Pointers",
+          points: [
+            "Symmetrical with right paratracheal and well patient: sarcoid; necrotic rim-enhancing: TB; bulky anterior mediastinal with B symptoms: lymphoma.",
+          ],
+        },
+      ],
+      mustDraw: ["Flow: BHL to CECT to EBUS-TBNA with microbiology"],
+      markSplit: [
+        { part: "Causes", marks: 2 },
+        { part: "Approach and investigations", marks: 2 },
+        { part: "Discriminating features", marks: 1 },
+      ],
+      keywords: ["BHL", "sarcoidosis", "tuberculosis", "lymphoma", "EBUS"],
+    },
+  ],
+  references: [
+    "Crouser ED et al. Diagnosis and Detection of Sarcoidosis: An Official ATS Clinical Practice Guideline. Am J Respir Crit Care Med 2020",
+    "Baughman RP et al. ERS Clinical Practice Guidelines on Treatment of Sarcoidosis. Eur Respir J 2021",
+    "Thillai M et al. BTS Clinical Statement on Pulmonary Sarcoidosis. Thorax 2021",
+    "Harrison's Principles of Internal Medicine, 22nd edition, 2025 - Sarcoidosis",
+    "Birnie DH et al. HRS Expert Consensus Statement on the Diagnosis and Management of Arrhythmias Associated With Cardiac Sarcoidosis, 2014",
+    "Judson MA et al. The WASOG Sarcoidosis Organ Assessment Instrument, 2014",
+    "National TB Elimination Programme (NTEP), Training Modules and Guidelines for Programmatic Management, MoHFW 2024",
+  ],
+});
+
 export default topics;

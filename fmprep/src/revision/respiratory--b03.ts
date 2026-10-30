@@ -419,6 +419,206 @@ const revision: RevisionSet = {
       ],
     },
   },
+  "respiratory-abpa-fungal": {
+    checked: "2026-10",
+    updated: [
+      "ISHAM-AWG 2024: A. fumigatus-specific IgE replaces skin test as the ABPA screening test",
+      "ISHAM-AWG 2024: essentials are specific IgE and total IgE 500; two of IgG, CT, eosinophils 500",
+      "ISHAM-AWG 2024: prednisolone 0.5 mg/kg or itraconazole monotherapy for acute ABPA; ABPM recognised",
+      "ERS/ESCMID 2016 CPA guideline still current; Indian RCT supports 12 months of itraconazole to reduce relapse",
+      "WHO Fungal Priority Pathogens List 2022: A. fumigatus critical, Mucorales high priority",
+    ],
+    master: {
+      heading: "Aspergillus and Mucor in the lung - the whole answer in one table",
+      columns: ["Heading", "What to write"],
+      rows: [
+        ["Spectrum", "Hypersensitivity (ABPA), saprophytic (aspergilloma), chronic invasive (CPA), invasive (IA) - set by host immunity"],
+        ["ABPA burden", "About 2.5% of adult asthma; India about 1.4 million cases"],
+        ["ABPA criteria", "Asthma/CF + specific IgE 0.35 + total IgE 500; plus 2 of IgG, CT, eosinophils 500"],
+        ["ABPA CT", "Central bronchiectasis, mucus plugs, high-attenuation mucus (pathognomonic)"],
+        ["ABPA treatment", "Prednisolone 0.5 mg/kg 2 weeks then taper over 3-4 months, or itraconazole 200 mg BD 4 months"],
+        ["ABPA monitoring", "IgE every 6-8 weeks; response 20% fall; exacerbation 50% rise"],
+        ["CPA", "Cavity 3 months or more + Aspergillus IgG, usually post-TB; itraconazole or voriconazole 6-12 months"],
+        ["Aspergilloma", "Fungal ball in old cavity; haemoptysis; observe or resect; BAE for bleeding"],
+        ["Invasive aspergillosis", "Neutropenia, transplant, ICU; halo sign; galactomannan; voriconazole or isavuconazole"],
+        ["Mucormycosis", "Diabetes, DKA, steroids; black eschar; broad right-angle hyphae; reverse halo"],
+        ["Mucor treatment", "Liposomal amphotericin 5-10 mg/kg + debridement + glucose control; step-down posaconazole"],
+        ["Traps", "Do not treat as TB without proof; voriconazole does not cover Mucor"],
+      ],
+    },
+    flows: [
+      {
+        kind: "flow",
+        heading: "Screening an asthmatic for ABPA (ISHAM-AWG 2024)",
+        steps: [
+          { label: "Asthma in specialist care or poorly controlled", detail: "Also CF, bronchiectasis, COPD" },
+          { label: "A. fumigatus-specific IgE", detail: "0.35 kUA/L or more is positive", tone: "decision" },
+          { label: "Total IgE", detail: "500 IU/mL or more essential", tone: "decision" },
+          { label: "Need 2 of 3 supporting", detail: "Specific IgG raised; CT bronchiectasis/plugs/HAM; eosinophils 500 or more" },
+          { label: "ABPA confirmed: classify S, B, HAM, CPF", detail: "Exclude TB with CBNAAT", tone: "good" },
+        ],
+      },
+      {
+        kind: "ladder",
+        heading: "ABPA treatment ladder",
+        steps: [
+          { label: "Stage 0 / ABPA-S, asthma controlled", detail: "Optimise asthma, monitor IgE" },
+          { label: "Acute ABPA", detail: "Prednisolone 0.5 mg/kg 2 weeks, taper over 3-4 months; or itraconazole 200 mg BD 4 months" },
+          { label: "Recurrent exacerbations", detail: "Prednisolone plus itraconazole; voriconazole if itraconazole fails", tone: "decision" },
+          { label: "Steroid-dependent", detail: "Biologics: omalizumab, mepolizumab, benralizumab, dupilumab", tone: "warn" },
+          { label: "Persistent lobar collapse", detail: "Bronchoscopic removal of mucus plugs", tone: "warn" },
+        ],
+      },
+      {
+        kind: "compare",
+        heading: "Invasive aspergillosis versus mucormycosis",
+        columns: ["Feature", "Aspergillosis", "Mucormycosis"],
+        rows: [
+          ["Host", "Neutropenia, transplant, ICU", "Diabetes, DKA, steroids, iron overload"],
+          ["Hyphae", "Narrow, septate, 45 degree branching", "Broad, aseptate, right-angle branching"],
+          ["CT", "Halo, air-crescent", "Reverse halo, effusion"],
+          ["Galactomannan", "Positive", "Negative"],
+          ["Drug", "Voriconazole, isavuconazole", "Liposomal amphotericin plus surgery"],
+        ],
+      },
+    ],
+    notes: {
+      sections: [
+        {
+          title: "Definition and key facts",
+          points: [
+            "Aspergillus disease depends on the **host**: allergy, old cavity or immunosuppression.",
+            "**ABPA** is hypersensitivity to Aspergillus in asthma or cystic fibrosis.",
+            "**CPA** is slow invasive disease in old cavities, mostly after TB.",
+            "**Mucormycosis** is angio-invasive; India has about 70 times the global rate.",
+            "The 2021 COVID wave caused **over 45,000 mucormycosis cases** in India.",
+          ],
+        },
+        {
+          title: "Causes and risk factors",
+          points: [
+            "ABPA: **asthma, cystic fibrosis**, bronchiectasis, COPD.",
+            "CPA and aspergilloma: **healed TB cavities**, COPD, sarcoidosis, NTM.",
+            "Invasive aspergillosis: **neutropenia**, transplant, high-dose steroids, ICU influenza.",
+            "Mucormycosis: **uncontrolled diabetes, DKA, steroids**, deferoxamine.",
+          ],
+        },
+        {
+          title: "Pathophysiology",
+          points: [
+            "ABPA is a **Th2 response** with high IgE and eosinophils, not invasion.",
+            "Mucus plugs cause **central bronchiectasis** and collapse.",
+            "Aspergilloma bleeds from **hypertrophied bronchial arteries**.",
+            "Invasive moulds **invade vessels**, causing infarction and necrosis.",
+            "Acidosis frees **iron**, which feeds Mucorales in DKA.",
+          ],
+        },
+        {
+          title: "Classification that matters",
+          points: [
+            "**ABPA essentials**: specific IgE 0.35 or more and total IgE 500 or more.",
+            "Plus **2 of 3**: specific IgG, compatible CT, eosinophils 500 or more.",
+            "ABPA types: **S, B, HAM, CPF**; HAM is the most severe.",
+            "CPA: **cavity for 3 months or more** with raised Aspergillus IgG.",
+            "Invasive fungal disease is **proven, probable or possible** (EORTC/MSGERC).",
+          ],
+        },
+        {
+          title: "Clinical features",
+          points: [
+            "ABPA: uncontrolled asthma, **brown mucus plugs**, fleeting shadows.",
+            "Aspergilloma: often silent; **haemoptysis** is the main symptom.",
+            "CPA: weight loss and cough in a treated TB patient, **sputum negative**.",
+            "Mucor: **black nasal discharge, palatal eschar**, proptosis, vision loss.",
+          ],
+        },
+        {
+          title: "Investigations",
+          points: [
+            "**Specific IgE** screens every uncontrolled asthmatic for ABPA.",
+            "**HRCT**: central bronchiectasis and **high-attenuation mucus**.",
+            "**Aspergillus IgG** is the key test for CPA.",
+            "Galactomannan: serum **0.5 or more**, BAL **1.0 or more** for invasive aspergillosis.",
+            "Mucor: **KOH mount** shows broad right-angle hyphae; MRI for orbit and brain.",
+            "Always exclude TB with **CBNAAT and culture**.",
+          ],
+        },
+        {
+          title: "Treatment - first line",
+          points: [
+            "Acute ABPA: **prednisolone 0.5 mg/kg** for 2 weeks, taper over 3-4 months.",
+            "Or **itraconazole 200 mg twice daily** for 4 months, with food.",
+            "CPA: **itraconazole or voriconazole** for 6-12 months.",
+            "Simple aspergilloma with bleeding: **surgical resection** if fit.",
+            "Invasive aspergillosis: **voriconazole** or isavuconazole.",
+          ],
+        },
+        {
+          title: "Inpatient / emergency care",
+          points: [
+            "Mucor: **liposomal amphotericin 5 mg/kg/day** (10 with CNS disease).",
+            "Plus urgent **surgical debridement** and glucose and ketoacidosis control.",
+            "Step down to **posaconazole or isavuconazole** for months.",
+            "Give **saline pre-load** and check K, Mg, creatinine daily on amphotericin.",
+            "Haemoptysis in aspergilloma: tranexamic acid, then **bronchial artery embolisation**.",
+          ],
+        },
+        {
+          title: "Special groups and follow-up",
+          points: [
+            "**Pregnancy**: avoid azoles; amphotericin is the safe antifungal.",
+            "**Heart failure**: avoid itraconazole (negative inotrope).",
+            "**Rifampicin** lowers azole levels in TB-CPA overlap.",
+            "ABPA: check **IgE every 6-8 weeks**; CPA: CT and IgG at 3-6 months.",
+            "Prevent mucor with **careful steroid use and glucose control**.",
+          ],
+        },
+      ],
+      tables: [
+        {
+          heading: "Drugs for Aspergillus and Mucorales",
+          columns: ["Drug", "Dose and route", "Duration", "Key side effects / cautions"],
+          rows: [
+            ["Prednisolone (ABPA)", "0.5 mg/kg/day oral 2 weeks, then taper", "3-4 months total", "Hyperglycaemia, osteoporosis"],
+            ["Itraconazole", "200 mg oral twice daily with food", "4 months ABPA; 6-12 months CPA", "Liver injury, heart failure, interactions"],
+            ["Voriconazole", "6 mg/kg IV 12-hourly x2, then 4 mg/kg; oral 200 mg BD", "6-12 weeks IA; 6-12 months CPA", "Visual change, photosensitivity, liver; no Mucor cover"],
+            ["Isavuconazole", "200 mg 8-hourly x6, then 200 mg daily", "Weeks to months", "Fewer side effects; covers Mucor"],
+            ["Posaconazole", "300 mg BD day 1, then 300 mg daily", "Months as step-down", "Liver, QTc"],
+            ["Liposomal amphotericin B", "5 mg/kg/day IV (10 in CNS)", "3-6 weeks then step-down", "Nephrotoxicity, low K and Mg"],
+          ],
+        },
+        {
+          heading: "ISHAM-AWG 2024 ABPA criteria",
+          columns: ["Part", "Requirement"],
+          rows: [
+            ["Predisposition", "Asthma, CF, bronchiectasis, COPD"],
+            ["Essential", "Specific IgE 0.35 kUA/L or more"],
+            ["Essential", "Total IgE 500 IU/mL or more"],
+            ["2 of 3", "Specific IgG; CT bronchiectasis or plugs; eosinophils 500 or more"],
+          ],
+        },
+        {
+          heading: "Aspergillosis spectrum",
+          columns: ["Entity", "Host", "Treatment"],
+          rows: [
+            ["ABPA", "Asthma, CF", "Prednisolone or itraconazole"],
+            ["Aspergilloma", "Old cavity", "Observe or resect"],
+            ["CPA", "Post-TB, COPD", "Azole 6-12 months"],
+            ["Invasive", "Neutropenia, transplant", "Voriconazole"],
+          ],
+        },
+      ],
+      remember: [
+        "**ABPA = 2 essentials + 2 of 3**.",
+        "**High-attenuation mucus** is pathognomonic of ABPA.",
+        "Response = **IgE falls 20%**; exacerbation = **IgE rises 50%**.",
+        "CPA = **3-month cavity + Aspergillus IgG**.",
+        "**Halo early, crescent late**; reverse halo means Mucor.",
+        "Mucor triad: **amphotericin, debridement, glucose control**.",
+        "**Voriconazole misses Mucor**.",
+      ],
+    },
+  },
 };
 
 export default revision;

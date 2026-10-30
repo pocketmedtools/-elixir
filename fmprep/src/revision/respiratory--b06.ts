@@ -213,6 +213,402 @@ const revision: RevisionSet = {
       ],
     },
   },
+  "respiratory-hypersensitivity-pneumonitis": {
+    checked: "2026-10",
+    updated: [
+      "ATS/JRS/ALAT 2020: non-fibrotic vs fibrotic HP replaces acute/subacute/chronic",
+      "ATS/JRS/ALAT 2020: HRCT typical/compatible/indeterminate and diagnostic confidence levels",
+      "CHEST 2021 HP diagnosis guideline",
+      "ATS/ERS/JRS/ALAT 2022: progressive fibrotic HP managed as PPF with nintedanib",
+      "FIBRONEER-ILD 2025: nerandomilast effective in PPF including fibrotic HP",
+    ],
+    master: {
+      heading: "Hypersensitivity pneumonitis on one page",
+      columns: ["Heading", "What to write"],
+      rows: [
+        ["Definition", "Immune-mediated ILD from inhaled antigen in a sensitised host"],
+        ["India", "Commonest ILD (about 47%, ILD-India registry); birds and air coolers"],
+        ["Antigens", "Avian proteins, moulds, thermophilic actinomycetes (farmer's lung, bagassosis), isocyanates"],
+        ["Mechanism", "Type III plus type IV; cellular bronchiolitis, interstitial pneumonia, poorly formed granulomas"],
+        ["Classification", "Non-fibrotic vs fibrotic (ATS/JRS/ALAT 2020)"],
+        ["Clinical", "Flu-like episodes 4-8 h after exposure, or insidious dyspnoea; crackles, squeaks"],
+        ["HRCT", "Centrilobular nodules, GGO, mosaic, air trapping; fibrotic: three-density sign, mid-upper fibrosis"],
+        ["BAL and serology", "BAL lymphocytes 30% or more; specific IgG shows exposure only"],
+        ["Diagnosis", "Exposure + HRCT + BAL +/- biopsy at MDD; confidence definite to low"],
+        ["Treatment", "Antigen avoidance first; prednisolone 0.5 mg/kg taper; MMF or azathioprine"],
+        ["Progressive fibrotic HP", "Nintedanib 150 mg BD; transplant referral"],
+        ["Prognosis", "Non-fibrotic reversible; fibrotic with honeycombing like IPF; unidentified antigen worse"],
+      ],
+    },
+    flows: [
+      {
+        kind: "flow",
+        heading: "Diagnosing HP",
+        steps: [
+          { label: "ILD with cough, dyspnoea, episodes after exposure", tone: "neutral" },
+          { label: "Detailed exposure history and home survey", detail: "Birds, feathers, coolers, damp, AC, farming, bagasse", tone: "decision" },
+          { label: "HRCT with expiratory images", detail: "Typical / compatible / indeterminate for HP" },
+          { label: "Exclude TB and CTD", detail: "CBNAAT, ANA, RF, anti-CCP, myositis panel" },
+          { label: "BAL lymphocyte count; specific IgG", detail: "Lymphocytes 30% or more supports HP" },
+          { label: "Biopsy if still uncertain; MDD", detail: "Assign confidence level", tone: "good" },
+        ],
+      },
+      {
+        kind: "ladder",
+        heading: "Treatment ladder in HP",
+        steps: [
+          { label: "Complete antigen avoidance", detail: "Remove birds and feathers, clean or replace cooler, fix damp", tone: "good" },
+          { label: "Prednisolone if persistent or severe", detail: "0.5 mg/kg/day for 4-8 weeks, taper over 3-6 months" },
+          { label: "Steroid-sparing agent", detail: "MMF 1-1.5 g BD or azathioprine 1-2 mg/kg/day" },
+          { label: "Nintedanib for progressive fibrosis", detail: "150 mg BD; PPF criteria met", tone: "decision" },
+          { label: "Oxygen, rehab, transplant referral", tone: "warn" },
+        ],
+      },
+      {
+        kind: "branch",
+        heading: "ATS/JRS/ALAT 2020 classification",
+        root: "Hypersensitivity pneumonitis",
+        arms: [
+          { label: "Non-fibrotic HP", tone: "good", steps: ["Centrilobular nodules, GGO, mosaic", "BAL lymphocytes often over 40%", "Reversible with avoidance"] },
+          { label: "Fibrotic HP", tone: "warn", steps: ["Reticulation, traction bronchiectasis, three-density sign", "Partly irreversible", "May become PPF; nintedanib"] },
+        ],
+      },
+    ],
+    notes: {
+      sections: [
+        {
+          title: "Definition and key facts",
+          points: [
+            "**HP** is immune-mediated ILD caused by inhaled antigens in a sensitised person.",
+            "It is the **commonest ILD in India**, about 47% in the ILD-India registry.",
+            "Classified as **non-fibrotic or fibrotic** (ATS/JRS/ALAT 2020).",
+            "No antigen is found in **30-60%** of patients.",
+            "**Non-smokers** get HP more often than smokers.",
+          ],
+        },
+        {
+          title: "Causes and risk factors",
+          points: [
+            "**Birds**: pigeons, parrots, feather pillows and duvets.",
+            "**Desert air coolers** with stagnant water grow moulds: air cooler lung.",
+            "**Farmer's lung** from mouldy hay; **bagassosis** from mouldy sugarcane.",
+            "Damp walls, humidifiers, AC units and **isocyanates** in paint workers.",
+          ],
+        },
+        {
+          title: "Pathophysiology",
+          points: [
+            "Small particles reach **bronchioles and alveoli**, so disease centres on small airways.",
+            "**Type III and type IV** hypersensitivity reactions both contribute.",
+            "Histology triad: **cellular bronchiolitis**, interstitial pneumonia, **poorly formed granulomas**.",
+            "Continued exposure leads to **fibrosis**.",
+          ],
+        },
+        {
+          title: "Clinical features",
+          points: [
+            "**Fever, chills and cough 4-8 hours** after heavy exposure, settling in 1-2 days.",
+            "Or **insidious breathlessness** and dry cough over months.",
+            "**Better away from home**, worse on return, worse in cooler season.",
+            "Crackles and **mid-inspiratory squeaks**; clubbing is uncommon.",
+          ],
+        },
+        {
+          title: "Investigations",
+          points: [
+            "HRCT: **centrilobular nodules, ground-glass and mosaic attenuation** with air trapping.",
+            "Fibrotic HP: **three-density sign** and mid-upper zone fibrosis.",
+            "**BAL lymphocytes 30% or more** support HP.",
+            "**Specific IgG** shows exposure, not disease.",
+            "Always exclude **TB with CBNAAT** before steroids.",
+          ],
+        },
+        {
+          title: "Treatment - first line",
+          points: [
+            "**Antigen avoidance** is the most important treatment.",
+            "Clean house dust well; **feathers persist for months**.",
+            "Drain and dry **cooler tanks weekly**, change pads, or switch to a fan.",
+            "**Prednisolone 0.5 mg/kg/day** for 4-8 weeks, then slow taper.",
+          ],
+        },
+        {
+          title: "Treatment - next steps",
+          points: [
+            "**Mycophenolate 1-1.5 g BD** or azathioprine to spare steroids.",
+            "**Nintedanib 150 mg BD** for progressive fibrotic HP.",
+            "Give **PJP prophylaxis** and bone protection with long immunosuppression.",
+            "Admit for **SpO2 under 90%**, rest dyspnoea or uncertain fever with infiltrates.",
+          ],
+        },
+        {
+          title: "Complications and red flags",
+          points: [
+            "Fibrotic HP with honeycombing has a prognosis **close to IPF**.",
+            "**Unidentified antigen** and continued exposure predict a worse outcome.",
+            "Watch for **pulmonary hypertension** and opportunistic infection on steroids.",
+          ],
+        },
+        {
+          title: "Referral and follow-up",
+          points: [
+            "Review **4-12 weeks** after avoidance or steroids with FVC and DLCO.",
+            "Then every **3-6 months** with PFT, glucose, blood count and LFT.",
+            "Refer **progressive fibrotic HP** for antifibrotics and transplant review.",
+          ],
+        },
+        {
+          title: "Latest updates",
+          points: [
+            "**ATS/JRS/ALAT 2020** replaced acute/subacute/chronic with non-fibrotic and fibrotic.",
+            "Diagnosis uses **confidence levels** from definite to low.",
+            "**2022 PPF guidance** includes progressive fibrotic HP for nintedanib.",
+          ],
+        },
+      ],
+      tables: [
+        {
+          heading: "Drugs in HP",
+          columns: ["Drug", "Dose and route", "Duration", "Key side effects / cautions"],
+          rows: [
+            ["Prednisolone", "0.5 mg/kg/day oral", "4-8 weeks then taper over 3-6 months", "Diabetes, osteoporosis, TB reactivation"],
+            ["Mycophenolate mofetil", "1-1.5 g oral BD", "1-2 years or more", "Diarrhoea, cytopenia; teratogenic"],
+            ["Azathioprine", "1-2 mg/kg/day oral", "Long term", "Marrow suppression, hepatitis"],
+            ["Nintedanib", "150 mg oral BD", "Lifelong", "Diarrhoea, raised ALT; not in pregnancy"],
+          ],
+        },
+        {
+          heading: "Antigens and diseases",
+          columns: ["Disease", "Source", "Antigen"],
+          rows: [
+            ["Bird fancier's lung", "Pigeons, parrots, feather pillows", "Avian proteins"],
+            ["Air cooler lung", "Desert coolers", "Moulds, actinomycetes"],
+            ["Farmer's lung", "Mouldy hay", "Saccharopolyspora rectivirgula"],
+            ["Bagassosis", "Mouldy sugarcane", "Thermoactinomyces sacchari"],
+            ["Hot tub lung", "Hot tubs", "Mycobacterium avium complex"],
+          ],
+        },
+        {
+          heading: "HP versus IPF versus sarcoidosis",
+          columns: ["Feature", "HP", "IPF", "Sarcoidosis"],
+          rows: [
+            ["CT zone", "Mid-upper, diffuse", "Basal subpleural", "Upper, perilymphatic"],
+            ["Key CT sign", "Mosaic, centrilobular nodules", "Honeycombing", "Hilar nodes"],
+            ["BAL", "Lymphocytes over 30%", "Lymphocytes under 30%", "CD4/CD8 over 3.5"],
+            ["Granuloma", "Poorly formed", "None", "Well formed"],
+          ],
+        },
+      ],
+      remember: [
+        "**Avoidance is the treatment** - steroids only help recovery.",
+        "**HP is India's commonest ILD**: ask about birds and coolers.",
+        "**Three-density sign** = fibrotic HP.",
+        "**Precipitins = exposure, not disease.**",
+        "**Squeaks** point to bronchiolitis and HP.",
+        "**Smokers are protected** from HP.",
+      ],
+    },
+  },
+  "respiratory-sarcoidosis": {
+    checked: "2026-10",
+    updated: [
+      "ATS 2020: three diagnostic criteria; no node biopsy in Lofgren, lupus pernio, Heerfordt; EBUS-TBNA preferred",
+      "ATS 2020: baseline calcium, creatinine, ALP, ECG and eye exam for all; ACE not diagnostic",
+      "ERS 2021: prednisolone 20-40 mg/day; methotrexate second line; infliximab for persistent disease",
+      "BTS Clinical Statement on pulmonary sarcoidosis 2021",
+      "EFZO-FIT 2025: efzofitimod missed its primary endpoint",
+    ],
+    master: {
+      heading: "Sarcoidosis on one page",
+      columns: ["Heading", "What to write"],
+      rows: [
+        ["Definition", "Multisystem disease of unknown cause with non-necrotising granulomas; lungs and nodes in over 90%"],
+        ["India", "Often misdiagnosed as TB; ATT trials common and wrong"],
+        ["Mechanism", "Th1 response, TNF-alpha; 1-alpha hydroxylase (calcium); ACE from granulomas"],
+        ["Scadding stages", "0 normal, I BHL, II BHL + infiltrates, III infiltrates, IV fibrosis; remission 55-90% to 0%"],
+        ["Syndromes", "Lofgren (EN, BHL, fever, ankles); Heerfordt (uveitis, parotid, facial palsy, fever)"],
+        ["Organs", "Eye 20-30%, skin, heart (5% clinical, 25% autopsy), nerves, calcium, liver"],
+        ["Diagnosis", "Compatible clinical picture + non-necrotising granuloma + exclusion (ATS 2020)"],
+        ["Tissue", "EBUS-TBNA; skin/node biopsy; AFB, CBNAAT, culture on every sample"],
+        ["Baseline tests", "Calcium, creatinine, ALP, CBC, ECG, eye exam; ACE not diagnostic; BAL CD4/CD8 over 3.5"],
+        ["Treatment", "Observe if mild; prednisolone 20-40 mg/day for 6-12 months; methotrexate; infliximab"],
+        ["Emergencies", "Heart block, VT, severe hypercalcaemia, neurosarcoid, uveitis"],
+        ["Prognosis", "Mortality 1-5%: fibrosis with PH and cardiac disease"],
+      ],
+    },
+    flows: [
+      {
+        kind: "flow",
+        heading: "Diagnosing suspected sarcoidosis",
+        steps: [
+          { label: "BHL or perilymphatic nodules on CXR/CT", tone: "neutral" },
+          { label: "Lofgren, lupus pernio or Heerfordt?", detail: "Yes: clinical diagnosis, no node biopsy", tone: "decision" },
+          { label: "Tissue: EBUS-TBNA, skin or node biopsy", detail: "Look for non-necrotising granulomas" },
+          { label: "Exclude TB, fungus, lymphoma", detail: "AFB smear, CBNAAT, culture, cytology", tone: "warn" },
+          { label: "Organ screen", detail: "Calcium, creatinine, ALP, ECG, eye exam, PFT" },
+          { label: "Sarcoidosis confirmed; decide on treatment", tone: "good" },
+        ],
+      },
+      {
+        kind: "ladder",
+        heading: "Treatment ladder (ERS 2021)",
+        steps: [
+          { label: "Observe: asymptomatic or stage I", detail: "Review 3-6 monthly", tone: "good" },
+          { label: "Prednisolone 20-40 mg/day", detail: "Taper to 5-10 mg; total 6-12 months" },
+          { label: "Methotrexate 10-20 mg weekly + folic acid", detail: "Relapse or steroid toxicity" },
+          { label: "Infliximab 3-5 mg/kg IV", detail: "Persistent disease; screen TB and HBV first", tone: "decision" },
+          { label: "Transplant or PH therapy for end-stage", tone: "warn" },
+        ],
+      },
+      {
+        kind: "compare",
+        heading: "Sarcoidosis versus TB",
+        columns: ["Feature", "Sarcoidosis", "Tuberculosis"],
+        rows: [
+          ["Granuloma", "Non-necrotising", "Caseating"],
+          ["Microbiology", "Negative", "AFB, CBNAAT or culture positive"],
+          ["Nodes", "Symmetrical BHL", "Asymmetric, necrotic"],
+          ["Tuberculin", "Often negative", "Usually positive"],
+          ["Patient", "Often well", "Unwell, weight loss"],
+        ],
+      },
+    ],
+    notes: {
+      sections: [
+        {
+          title: "Definition and key facts",
+          points: [
+            "**Sarcoidosis** is multisystem disease with **non-necrotising granulomas** of unknown cause.",
+            "Lungs and hilar nodes are involved in **over 90%**.",
+            "Peak age **20-50 years**; often asymptomatic BHL on X-ray.",
+            "In India it is often **mistaken for TB**.",
+          ],
+        },
+        {
+          title: "Pathophysiology",
+          points: [
+            "Th1 cells release **TNF-alpha and IFN-gamma**, forming tight granulomas.",
+            "Granuloma macrophages make **1,25(OH)2D**, causing hypercalciuria and hypercalcaemia.",
+            "Granulomas make **ACE**, so ACE reflects granuloma load only.",
+          ],
+        },
+        {
+          title: "Classification that matters",
+          points: [
+            "**Scadding stage I** BHL; **II** BHL plus infiltrates; **III** infiltrates; **IV** fibrosis.",
+            "Remission falls from **55-90% in stage I to 0% in stage IV**.",
+            "**Lofgren**: erythema nodosum, BHL, fever, ankle arthritis; excellent prognosis.",
+            "**Heerfordt**: uveitis, parotid swelling, facial palsy and fever.",
+          ],
+        },
+        {
+          title: "Clinical features",
+          points: [
+            "Dry cough, breathlessness and **marked fatigue**.",
+            "Chest often **clear despite a big X-ray**; clubbing is rare.",
+            "**Uveitis** in 20-30%; skin lesions and **lupus pernio**.",
+            "**Cardiac** disease: heart block, VT, sudden death.",
+            "**Neuro**: facial palsy, meningitis, diabetes insipidus.",
+          ],
+        },
+        {
+          title: "Investigations",
+          points: [
+            "CXR **1-2-3 sign**; CT perilymphatic nodules along fissures and bronchovascular bundles.",
+            "**EBUS-TBNA** is the preferred node biopsy.",
+            "Send every sample for **AFB, CBNAAT and culture**.",
+            "Baseline **calcium, creatinine, ALP, ECG and eye exam** for all.",
+            "**ACE** is neither sensitive nor specific; BAL **CD4/CD8 over 3.5** supports.",
+          ],
+        },
+        {
+          title: "Treatment - first line",
+          points: [
+            "**Observe** stage I and asymptomatic patients.",
+            "**NSAIDs** for Lofgren syndrome.",
+            "**Prednisolone 20-40 mg/day**, taper to 5-10 mg over months.",
+            "Total course about **6-12 months**.",
+          ],
+        },
+        {
+          title: "Treatment - next steps",
+          points: [
+            "**Methotrexate 10-20 mg weekly** with folic acid for relapse or steroid toxicity.",
+            "**Infliximab** for persistent disease after TB and hepatitis B screening.",
+            "**Hydroxychloroquine** for skin disease and hypercalcaemia.",
+            "Cardiac: steroids plus **pacemaker or ICD** as needed.",
+          ],
+        },
+        {
+          title: "Special groups",
+          points: [
+            "**Pregnancy**: often improves; stop methotrexate 3 months before conception.",
+            "Check **1,25(OH)2D and urine calcium** before giving vitamin D.",
+            "**IGRA-positive** patients need TB preventive treatment before high-dose immunosuppression.",
+          ],
+        },
+        {
+          title: "Complications and red flags",
+          points: [
+            "Mortality **1-5%**, from fibrosis with PH and **cardiac sarcoid**.",
+            "Red flags: **syncope, heart block, calcium over 3 mmol/L**, red eye.",
+            "Stage IV cavities can harbour **aspergilloma**.",
+          ],
+        },
+        {
+          title: "Referral and follow-up",
+          points: [
+            "Review **every 3-6 months** with PFT, calcium and creatinine.",
+            "**Annual ECG and eye exam** for all patients.",
+            "Methotrexate needs **CBC, LFT and creatinine** every 4-12 weeks.",
+          ],
+        },
+      ],
+      tables: [
+        {
+          heading: "Drugs in sarcoidosis",
+          columns: ["Drug", "Dose and route", "Duration", "Key side effects / cautions"],
+          rows: [
+            ["Prednisolone", "20-40 mg/day oral", "6-12 months with taper", "Diabetes, osteoporosis, TB reactivation"],
+            ["Methotrexate", "10-20 mg weekly oral + folic acid 5 mg weekly", "At least 6-12 months", "Liver toxicity, cytopenia; teratogenic"],
+            ["Hydroxychloroquine", "200-400 mg/day oral", "Months", "Retinopathy"],
+            ["Infliximab", "3-5 mg/kg IV wk 0, 2, then 4-8 weekly", "Refractory disease", "TB reactivation; screen IGRA, HBV"],
+            ["Naproxen", "250-500 mg BD oral", "Weeks (Lofgren)", "Gastritis, renal impairment"],
+          ],
+        },
+        {
+          heading: "Scadding stages",
+          columns: ["Stage", "X-ray", "Remission"],
+          rows: [
+            ["I", "BHL only", "55-90%"],
+            ["II", "BHL + infiltrates", "40-70%"],
+            ["III", "Infiltrates only", "10-20%"],
+            ["IV", "Fibrosis", "0%"],
+          ],
+        },
+        {
+          heading: "Causes of bilateral hilar lymphadenopathy",
+          columns: ["Cause", "Pointer"],
+          rows: [
+            ["Sarcoidosis", "Symmetrical, well patient, EN or uveitis"],
+            ["Tuberculosis", "Fever, weight loss, necrotic nodes"],
+            ["Lymphoma", "B symptoms, bulky anterior mediastinal nodes"],
+            ["Silicosis", "Eggshell calcification, stone work"],
+            ["Metastasis", "Known primary, asymmetry"],
+          ],
+        },
+      ],
+      remember: [
+        "**Exclude TB on every biopsy** - AFB, CBNAAT, culture.",
+        "**Well patient, big X-ray** suggests sarcoidosis.",
+        "**Lofgren needs no biopsy**; it usually remits.",
+        "**ACE does not diagnose sarcoidosis.**",
+        "**ECG and eye exam for everyone.**",
+        "**Never an empirical ATT trial.**",
+        "Ladder: **steroid, methotrexate, infliximab**.",
+      ],
+    },
+  },
 };
 
 export default revision;

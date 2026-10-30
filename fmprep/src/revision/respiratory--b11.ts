@@ -408,6 +408,214 @@ const revision: RevisionSet = {
       ],
     },
   },
+  "respiratory-upper-airway": {
+    checked: "2026-10",
+    updated: [
+      "ERS/ELS/ACCP 2017 statement (current): inducible laryngeal obstruction replaces the term vocal cord dysfunction; laryngoscopy during symptoms is the standard",
+      "ERC 2021 first aid: back blows then abdominal thrusts for severe choking; chest thrusts in pregnancy and obesity; CPR if unresponsive",
+      "Resuscitation Council UK 2021: IM adrenaline is the only first-line anaphylaxis drug; antihistamines and steroids removed from initial treatment",
+      "WAO/EAACI HAE guideline 2021 revision: on-demand C1-INH or icatibant for every attack; FFP only where these are unavailable",
+      "GINA 2025: exclude inducible laryngeal obstruction before labelling difficult or severe asthma",
+    ],
+    master: {
+      heading: "Master revision table - Upper airway obstruction in adults",
+      columns: ["Heading", "What to write"],
+      rows: [
+        ["Definition", "Narrowing of pharynx, larynx, trachea or main bronchi; **stridor** = harsh monophonic noise from turbulent flow; exertional dyspnoea at about 8 mm lumen, **rest stridor at about 5 mm**"],
+        ["Causes - acute", "**Foreign body, anaphylaxis, angioedema** (allergic, ACE inhibitor, hereditary), **supraglottitis**, Ludwig angina, diphtheria, burns, post-extubation oedema, neck haematoma"],
+        ["Causes - chronic", "**Post-intubation/tracheostomy stenosis**, laryngeal and tracheal tumours, goitre, bilateral cord palsy, **GPA**, relapsing polychondritis, TB, idiopathic subglottic stenosis (women); dynamic - **ILO**, malacia"],
+        ["Pathophysiology", "Resistance rises with **fourth power of falling radius**; **variable extrathoracic - inspiratory**, **variable intrathoracic - expiratory**, **fixed - biphasic**; cuff over 30 cmH2O exceeds mucosal perfusion"],
+        ["Classification", "By site and behaviour; **Myer-Cotton grade I 0-50%, II 51-70%, III 71-99%, IV no lumen**; simple versus complex stenosis; angioedema histaminergic versus bradykinin"],
+        ["History", "Stridor, exertional dyspnoea; **weeks-months after intubation**; ILO - throat tightness, abrupt, exercise or odour; choking episode; **ACE inhibitor**; odynophagia and muffled voice; hoarseness and weight loss"],
+        ["Examination", "Louder over neck than chest; **severity - drooling, recession, cyanosis, falling consciousness**; tracheostomy scar, goitre (Pemberton), unilateral monophonic wheeze; SpO2 often normal"],
+        ["Investigations", "**Airway first**; **flow-volume loop** (flat inspiratory, flat expiratory, or box); **Empey index over 10**; nasendoscopy; **laryngoscopy during exercise for ILO**; CT with 3D; bronchoscopy; C4, C1-INH"],
+        ["OPD management", "New adult stridor - same-day referral; **ILO - speech therapy breathing techniques**, treat reflux and rhinitis; **stop ACE inhibitor permanently**; flow-volume loop for non-responding asthma"],
+        ["Emergency management", "Sit up, oxygen, call anaesthesia/ENT; **nebulised adrenaline 5 mL of 1 mg/mL**, **dexamethasone 8-10 mg IV**, **heliox**; anaphylaxis **adrenaline 0.5 mg IM**; bradykinin **icatibant 30 mg SC or FFP**; CICO - **scalpel cricothyroidotomy**"],
+        ["Foreign body", "Conscious severe choking: **5 back blows + 5 abdominal thrusts**; chest thrusts in pregnancy/obesity; CPR if unconscious; adults - right bronchus; flexible bronchoscopy, **rigid if large, sharp or failed**"],
+        ["Tracheal stenosis", "Dilatation, radial laser incisions, **mitomycin C**, silicone stent (simple); **resection and end-to-end anastomosis** (complex); prevent with **cuff pressure 20-30 cmH2O**"],
+        ["Complications", "Asphyxia, **negative-pressure pulmonary oedema**, post-obstructive pneumonia, bronchiectasis, recurrence of stenosis; ILO harm from misdiagnosis"],
+        ["Latest updates", "ERS/ELS 2017 ILO terminology; ERC 2021 choking; RCUK 2021 anaphylaxis; WAO/EAACI HAE 2021; GINA 2025 exclude ILO"],
+      ],
+    },
+    flows: [
+      {
+        kind: "flow",
+        heading: "Adult with stridor - emergency pathway",
+        caption: "Airway before investigations",
+        steps: [
+          { label: "Sit up, high-flow oxygen, call anaesthesia and ENT", tone: "warn" },
+          { label: "Anaphylaxis signs?", detail: "Urticaria, hypotension: adrenaline 0.5 mg IM, repeat at 5 min", tone: "decision" },
+          { label: "Bradykinin angioedema?", detail: "ACE inhibitor, no urticaria: icatibant 30 mg SC or FFP 2 units", tone: "decision" },
+          { label: "Temporise oedema", detail: "Nebulised adrenaline 5 mL of 1 mg/mL; dexamethasone 8-10 mg IV; heliox" },
+          { label: "Secure airway in theatre if worsening", detail: "Awake fibreoptic intubation or tracheostomy" },
+          { label: "CICO", detail: "Scalpel-bougie-tube cricothyroidotomy", tone: "warn" },
+          { label: "Once safe: nasendoscopy, CT, bronchoscopy", tone: "good" },
+        ],
+      },
+      {
+        kind: "ladder",
+        heading: "Choking adult - first aid ladder",
+        caption: "ERC 2021",
+        steps: [
+          { label: "Effective cough", detail: "Encourage coughing, observe", tone: "good" },
+          { label: "Ineffective cough, conscious", detail: "Up to 5 back blows", tone: "decision" },
+          { label: "Still obstructed", detail: "Up to 5 abdominal thrusts; chest thrusts if pregnant or obese" },
+          { label: "Alternate back blows and thrusts", detail: "Until relieved or unconscious" },
+          { label: "Unconscious", detail: "Call for help, start CPR; remove only a visible object", tone: "warn" },
+          { label: "Hospital", detail: "Flexible or rigid bronchoscopy for retained object" },
+        ],
+      },
+      {
+        kind: "compare",
+        heading: "Flow-volume loop patterns",
+        columns: ["Pattern", "Loop", "Stridor", "Example"],
+        rows: [
+          ["Variable extrathoracic", "Flat inspiratory limb", "Inspiratory", "Vocal cord palsy, ILO"],
+          ["Variable intrathoracic", "Flat expiratory limb", "Expiratory", "Tracheomalacia, tumour"],
+          ["Fixed", "Both limbs flat (box)", "Biphasic", "Post-intubation stenosis"],
+          ["Small-airway disease", "Scooped expiratory limb", "None (wheeze)", "Asthma, COPD"],
+        ],
+      },
+    ],
+    notes: {
+      sections: [
+        {
+          title: "Definition and key facts",
+          points: [
+            "**Upper airway obstruction** narrows the larynx, trachea or main bronchi.",
+            "**Stridor** is a harsh monophonic noise from turbulent flow in a large airway.",
+            "**Rest stridor** means a lumen of about 5 mm - a critical airway.",
+            "Many cases are wrongly labelled **asthma** for months.",
+          ],
+        },
+        {
+          title: "Causes and risk factors",
+          points: [
+            "Acute: **foreign body, angioedema, anaphylaxis, supraglottitis**, diphtheria and burns.",
+            "Chronic: **post-intubation stenosis**, tumours, goitre and vocal cord palsy.",
+            "Inflammatory: **GPA**, relapsing polychondritis and laryngeal TB.",
+            "Stenosis risk: **cuff pressure over 30 cmH2O** and intubation over 7-10 days.",
+            "**ILO** is commoner in young women and athletes.",
+          ],
+        },
+        {
+          title: "Pathophysiology",
+          points: [
+            "Resistance rises with the **fourth power** of a falling radius.",
+            "**Extrathoracic** lesions narrow on inspiration, giving inspiratory stridor.",
+            "**Intrathoracic** lesions narrow on expiration, giving expiratory stridor.",
+            "**Fixed** lesions limit both phases, giving biphasic stridor.",
+            "**Bradykinin angioedema** has no urticaria and ignores adrenaline.",
+          ],
+        },
+        {
+          title: "Clinical features",
+          points: [
+            "Post-intubation stenosis appears **3-6 weeks or later** after extubation.",
+            "**ILO**: throat tightness, noisy breathing in, abrupt start and stop.",
+            "**Supraglottitis**: severe throat pain, drooling, muffled voice, normal-looking pharynx.",
+            "**Unilateral monophonic wheeze** suggests a foreign body or tumour.",
+            "SpO2 is often **normal** until late.",
+          ],
+        },
+        {
+          title: "Investigations",
+          points: [
+            "**Secure the airway** before any investigation.",
+            "**Flow-volume loop** localises and grades the obstruction.",
+            "**Empey index** (FEV1 mL divided by PEF L/min) over 10 suggests upper airway obstruction.",
+            "**Laryngoscopy during exercise** confirms ILO.",
+            "**CT with 3D reconstruction** measures stenosis length and width.",
+            "**Low C4** suggests hereditary angioedema.",
+          ],
+        },
+        {
+          title: "Treatment - first line",
+          points: [
+            "**ILO**: speech and language therapy, treat reflux and rhinitis.",
+            "**Stop the ACE inhibitor** for life after angioedema.",
+            "Choking: **5 back blows, then 5 abdominal thrusts**, alternating.",
+            "Use **chest thrusts** in pregnancy, obesity and infants.",
+            "Unconscious choking victim: **start CPR**, no blind finger sweep.",
+          ],
+        },
+        {
+          title: "Inpatient / emergency care",
+          points: [
+            "Keep the patient **sitting up**; call anaesthesia and ENT early.",
+            "**Nebulised adrenaline** and **dexamethasone 8-10 mg IV** reduce oedema.",
+            "**Heliox** reduces turbulent flow as a bridge.",
+            "Anaphylaxis: **adrenaline 0.5 mg IM**, repeat after 5 minutes.",
+            "Bradykinin angioedema: **icatibant 30 mg SC** or FFP 2 units.",
+            "CICO: **scalpel-bougie-tube cricothyroidotomy**.",
+          ],
+        },
+        {
+          title: "Treatment - next steps",
+          points: [
+            "Simple stenosis: **dilatation, radial incisions, mitomycin C** or stent.",
+            "Complex stenosis: **tracheal resection with end-to-end anastomosis**.",
+            "Large or impacted foreign body: **rigid bronchoscopy**.",
+            "Prevent stenosis with **cuff pressure 20-30 cmH2O**.",
+          ],
+        },
+        {
+          title: "Latest updates",
+          points: [
+            "**ERS/ELS 2017**: inducible laryngeal obstruction replaces vocal cord dysfunction.",
+            "**RCUK 2021**: IM adrenaline is the only first-line anaphylaxis drug.",
+            "**GINA 2025**: exclude ILO before labelling severe asthma.",
+          ],
+        },
+      ],
+      tables: [
+        {
+          heading: "Drugs in upper airway obstruction",
+          columns: ["Drug", "Dose and route", "Duration", "Key side effects / cautions"],
+          rows: [
+            ["Adrenaline IM", "0.5 mg (0.5 mL of 1 mg/mL) thigh", "Repeat every 5 minutes", "Arrhythmia; never 1 mg/mL IV"],
+            ["Nebulised adrenaline", "5 mL of 1 mg/mL", "Repeat as needed", "Tachycardia, rebound swelling"],
+            ["Dexamethasone", "8-10 mg IV", "24-72 hours", "Hyperglycaemia; slow onset"],
+            ["Methylprednisolone", "20 mg IV every 4 hours", "12 hours before extubation", "Only if cuff-leak test fails"],
+            ["Icatibant", "30 mg SC", "Repeat at 6 hours, max 3 in 24 hours", "Injection-site pain"],
+            ["C1-INH concentrate", "20 units/kg IV", "Single dose", "Hypersensitivity"],
+            ["Fresh frozen plasma", "2 units IV", "If icatibant unavailable", "Transfusion reactions"],
+            ["Omeprazole", "20-40 mg oral daily", "8-week trial", "Headache"],
+          ],
+        },
+        {
+          heading: "Stridor versus wheeze",
+          columns: ["Feature", "Stridor", "Wheeze"],
+          rows: [
+            ["Site", "Larynx, trachea, main bronchi", "Small and medium airways"],
+            ["Sound", "Monophonic, harsh", "Polyphonic, musical"],
+            ["Phase", "Inspiratory, expiratory or biphasic", "Mainly expiratory"],
+            ["Loudest over", "Neck", "Chest"],
+            ["Bronchodilator response", "None", "Usually present in asthma"],
+          ],
+        },
+        {
+          heading: "Myer-Cotton grading of subglottic stenosis",
+          columns: ["Grade", "Obstruction", "Approach"],
+          rows: [
+            ["I", "0-50%", "Observe or dilate"],
+            ["II", "51-70%", "Endoscopic dilatation, mitomycin C"],
+            ["III", "71-99%", "Endoscopic bridge, resection if complex"],
+            ["IV", "No lumen", "Resection and reconstruction"],
+          ],
+        },
+      ],
+      remember: [
+        "Inspiratory extrathoracic, expiratory intrathoracic, biphasic fixed.",
+        "Empey index over 10 means upper airway obstruction.",
+        "ILO: throat, inspiration, abrupt, normal SpO2.",
+        "No urticaria plus ACE inhibitor = bradykinin angioedema; icatibant or FFP.",
+        "Choking: 5 back blows, 5 abdominal thrusts.",
+        "Cuff pressure 20-30 cmH2O prevents stenosis.",
+        "Adult foreign bodies go right.",
+      ],
+    },
+  },
 };
 
 export default revision;

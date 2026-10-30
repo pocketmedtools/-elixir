@@ -409,6 +409,202 @@ const revision: RevisionSet = {
       ],
     },
   },
+  "respiratory-tb-special-situations": {
+    checked: "2026-10",
+    updated: [
+      "WHO 2021 / NACO 2021: ART within 2 weeks of ATT (TBM 4-8 weeks); TLD with dolutegravir 50 mg BD on rifampicin",
+      "WHO 2024: urine LF-LAM for PLHIV with CD4 200 or less or serious illness",
+      "MoHFW 2024: Ni-kshay Poshan Yojana Rs 1000/month, energy-dense nutrition for underweight, differentiated TB care",
+      "RATIONS trial (Lancet 2023): nutritional support for patients and household contacts",
+    ],
+    master: {
+      heading: "Master revision table - TB in special situations",
+      columns: ["Heading", "What to write"],
+      rows: [
+        ["Why it matters", "**Undernutrition** is India's largest attributable TB risk; HIV raises risk about 18-fold; **diabetes triples** risk and worsens outcomes."],
+        ["Rifampicin pharmacology", "**CYP3A4/UGT1A1/P-gp inducer**: lowers dolutegravir, PIs, OCP, warfarin, sulfonylureas, steroids, tacrolimus."],
+        ["HIV - diagnosis", "Four-symptom screen; **Xpert Ultra**; **LF-LAM** if CD4 200 or less; atypical, smear-negative, extrapulmonary at low CD4."],
+        ["HIV - treatment", "Same 2HRZE/4HRE; **ART within 2 weeks (TBM 4-8 weeks)**; **DTG 50 mg BD**; rifabutin with boosted PI; **CPT 960 mg OD**."],
+        ["IRIS", "2-8 weeks after ART; continue both; NSAID or prednisolone; **PredART prophylaxis** if CD4 100 or less."],
+        ["Diabetes", "**Bidirectional screening** (NTEP-NP-NCD 2017); insulin if uncontrolled; metformin fine; sulfonylurea levels fall; pyridoxine."],
+        ["Pregnancy", "H, R, Z, E safe; **no streptomycin**; pyridoxine; breastfeed; newborn TPT then BCG; OCP failure."],
+        ["DILI - stop", "**ALT over 3x ULN with symptoms or jaundice, or over 5x without**: stop H, R, Z; bridge with **E + Lfx**."],
+        ["DILI - restart", "When ALT under 2x ULN: **R first, H after 3-7 days**; omit Z after severe DILI and give 9 months HRE."],
+        ["Liver disease", "Fewer hepatotoxic drugs, e.g. 9 HRE without Z; monthly LFT."],
+        ["Kidney disease", "CrCl under 30 or dialysis: **Z 25 mg/kg and E 15 mg/kg thrice weekly after dialysis**; H, R unchanged."],
+        ["Other ADRs", "H neuropathy (pyridoxine); E optic neuritis; Z gout; R flu-like, thrombocytopenia (never restart); rash: stop all and rechallenge."],
+        ["Nutrition", "**Ni-kshay Poshan Rs 1000/month**; energy-dense supplement 2 months if BMI under 18.5; Ni-kshay Mitra; **RATIONS**."],
+        ["Exam traps", "TBM ART delay; DTG BD for 2 weeks after rifampicin; steroids need doubling on rifampicin."],
+      ],
+    },
+    flows: [
+      {
+        kind: "flow",
+        heading: "Drug-induced liver injury on ATT",
+        caption: "Stop, bridge, then reintroduce one drug at a time.",
+        steps: [
+          { label: "Symptoms of hepatitis or jaundice on ATT", detail: "Check ALT, bilirubin; exclude viral hepatitis and alcohol" },
+          { label: "ALT over 3x ULN with symptoms or over 5x without?", tone: "decision", detail: "Under 3x without symptoms: continue and monitor" },
+          { label: "Stop isoniazid, rifampicin and pyrazinamide", tone: "warn", detail: "Bridge with ethambutol plus levofloxacin if ill or infectious" },
+          { label: "Wait for ALT under 2x ULN and normal bilirubin" },
+          { label: "Reintroduce rifampicin, then isoniazid after 3-7 days", detail: "Check ALT after each drug" },
+          { label: "Omit pyrazinamide if DILI was severe", tone: "good", detail: "Complete 9 months HRE" },
+        ],
+      },
+      {
+        kind: "flow",
+        heading: "HIV-TB co-infection: first month",
+        steps: [
+          { label: "TB diagnosed in PLHIV", detail: "Xpert Ultra; LF-LAM if CD4 200 or less" },
+          { label: "Start 2HRZE with pyridoxine and cotrimoxazole 960 mg OD" },
+          { label: "Meningitis?", tone: "decision", detail: "Yes: ART after 4-8 weeks; no: ART within 2 weeks" },
+          { label: "Start TLD with dolutegravir 50 mg BD", detail: "Continue BD for 2 weeks after rifampicin ends" },
+          { label: "Watch for IRIS at 2-8 weeks", tone: "warn", detail: "Continue both; NSAID or prednisolone" },
+        ],
+      },
+      {
+        kind: "compare",
+        heading: "Dose adjustment: kidney versus liver disease",
+        columns: ["Drug", "CKD (CrCl under 30 / dialysis)", "Chronic liver disease"],
+        rows: [
+          ["Isoniazid", "Unchanged, daily", "Use with monitoring"],
+          ["Rifampicin", "Unchanged, daily", "Use with monitoring"],
+          ["Pyrazinamide", "25 mg/kg thrice weekly", "Usually omit"],
+          ["Ethambutol", "15 mg/kg thrice weekly", "Unchanged"],
+          ["Levofloxacin", "Thrice weekly", "Safe substitute"],
+        ],
+      },
+    ],
+    notes: {
+      sections: [
+        {
+          title: "Definition and key facts",
+          points: [
+            "The standard **2HRZE/4HRE** backbone is adjusted to the host, not abandoned.",
+            "**Undernutrition** is the largest attributable TB risk factor in India.",
+            "HIV raises TB risk about **18-fold**; diabetes **triples** it.",
+            "**Rifampicin** induces liver enzymes and lowers many drug levels.",
+          ],
+        },
+        {
+          title: "Clinical features",
+          points: [
+            "Low CD4 TB is often **smear-negative, extrapulmonary or disseminated**.",
+            "Screen PLHIV with the **four-symptom screen** at every visit.",
+            "**IRIS** causes worsening fever or nodes 2-8 weeks after starting ART.",
+            "DILI presents with **nausea, vomiting, abdominal pain or jaundice**.",
+          ],
+        },
+        {
+          title: "Investigations",
+          points: [
+            "Use **Xpert Ultra** first; add **urine LF-LAM** if CD4 is 200 or less.",
+            "Test every TB patient for **diabetes** and HIV.",
+            "Recheck glucose after 2-3 months to exclude **stress hyperglycaemia**.",
+            "Check baseline **LFT** in alcohol use, hepatitis, HIV, pregnancy and the elderly.",
+          ],
+        },
+        {
+          title: "Treatment - first line",
+          points: [
+            "HIV: **ART within 2 weeks**; TBM waits 4-8 weeks.",
+            "Give **dolutegravir 50 mg twice daily** with rifampicin.",
+            "Give **cotrimoxazole 960 mg daily** to all HIV-TB patients.",
+            "Diabetes: insulin if uncontrolled; rifampicin weakens **sulfonylureas**.",
+          ],
+        },
+        {
+          title: "Treatment - next steps",
+          points: [
+            "DILI: stop H, R, Z if ALT is **over 3x with symptoms or 5x without**.",
+            "Bridge with **ethambutol plus levofloxacin** if the patient is ill.",
+            "Restart **rifampicin first**, then isoniazid; skip pyrazinamide if severe.",
+            "Rash: stop all drugs and **rechallenge one at a time**.",
+          ],
+        },
+        {
+          title: "Special groups",
+          points: [
+            "Pregnancy: first-line drugs are safe; **avoid streptomycin**.",
+            "Rifampicin makes the **pill fail**; use a copper IUD.",
+            "Newborn of an infectious mother gets **TPT, then BCG**.",
+            "CKD: **pyrazinamide and ethambutol thrice weekly** after dialysis.",
+            "Liver disease: use fewer hepatotoxic drugs, often **no pyrazinamide**.",
+          ],
+        },
+        {
+          title: "Complications and red flags",
+          points: [
+            "**Jaundice or confusion** on ATT means liver failure risk.",
+            "**SJS/TEN**: never rechallenge the culprit drug.",
+            "Visual loss on **ethambutol**: stop and refer.",
+            "Rifampicin **thrombocytopenia or haemolysis**: never restart rifampicin.",
+          ],
+        },
+        {
+          title: "Referral and follow-up",
+          points: [
+            "**Ni-kshay Poshan Yojana** pays Rs 1000 per month.",
+            "Underweight patients get **energy-dense nutrition** for 2 months.",
+            "**Ni-kshay Mitra** donors provide food baskets.",
+            "Weigh monthly; **5% gain in 2 months** predicts better outcome.",
+          ],
+        },
+        {
+          title: "Latest updates",
+          points: [
+            "**RATIONS 2023**: food for contacts cut TB incidence by about 40-50%.",
+            "**NTEP 2024**: differentiated care triages severe patients for admission.",
+            "**WHO 2024**: LF-LAM recommended in advanced HIV.",
+          ],
+        },
+      ],
+      tables: [
+        {
+          heading: "Drugs and adjustments",
+          columns: ["Drug", "Dose and route", "Duration", "Key side effects / cautions"],
+          rows: [
+            ["Isoniazid", "5 mg/kg oral daily", "6 months", "Hepatitis, neuropathy; give pyridoxine"],
+            ["Rifampicin", "10 mg/kg oral daily", "6 months", "Hepatitis, interactions, thrombocytopenia"],
+            ["Pyrazinamide", "25 mg/kg daily; thrice weekly in CKD", "2 months", "Hepatitis, gout, arthralgia"],
+            ["Ethambutol", "15 mg/kg daily; thrice weekly in CKD", "6 months", "Optic neuritis"],
+            ["Dolutegravir", "50 mg oral BD with rifampicin", "Until 2 weeks after rifampicin", "Insomnia, weight gain"],
+            ["Cotrimoxazole", "960 mg oral OD", "Throughout ATT", "Rash, cytopenias"],
+          ],
+        },
+        {
+          heading: "DILI criteria",
+          columns: ["Finding", "Action"],
+          rows: [
+            ["ALT under 3x ULN, well", "Continue, monitor"],
+            ["ALT over 3x with symptoms", "Stop H, R, Z"],
+            ["ALT over 5x without symptoms", "Stop H, R, Z"],
+            ["ALT under 2x and bilirubin normal", "Restart R, then H"],
+          ],
+        },
+        {
+          heading: "Situation and key change",
+          columns: ["Situation", "Key change"],
+          rows: [
+            ["HIV", "ART in 2 weeks; DTG BD; CPT"],
+            ["Diabetes", "Bidirectional screening; insulin if uncontrolled"],
+            ["Pregnancy", "No streptomycin; pyridoxine"],
+            ["CKD", "Z and E thrice weekly"],
+            ["Liver disease", "Omit Z; monthly LFT"],
+          ],
+        },
+      ],
+      remember: [
+        "ART in **2 weeks**, TBM in **4-8 weeks**.",
+        "**DTG BD** while on rifampicin and 2 weeks after.",
+        "DILI rule: **3 with symptoms, 5 without**.",
+        "Restart order: **R, H, then Z or never**.",
+        "CKD: **Z and E thrice weekly**; H and R daily.",
+        "Pregnancy: only **streptomycin** is banned.",
+        "Rifampicin **doubles steroid dose** and defeats the pill.",
+      ],
+    },
+  },
 };
 
 export default revision;
