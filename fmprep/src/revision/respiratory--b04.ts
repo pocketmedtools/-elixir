@@ -417,6 +417,205 @@ const revision: RevisionSet = {
       ],
     },
   },
+  "respiratory-hap-vap": {
+    checked: "2026-10",
+    updated: [
+      "IDSA AMR Guidance 2024: sulbactam-durlobactam for CRAB; ceftazidime-avibactam plus aztreonam or cefiderocol for NDM",
+      "SHEA/IDSA/APIC VAP prevention compendium 2022: routine chlorhexidine oral care dropped; avoid intubation and minimise sedation",
+      "BLING III (2024): extended or continuous beta-lactam infusion in critically ill sepsis",
+      "ICMR AMRSN annual report 2023: high carbapenem resistance in Acinetobacter and Klebsiella",
+      "REVISE (2024): stress-ulcer pantoprazole did not significantly increase VAP",
+    ],
+    master: {
+      heading: "HAP and VAP on one page",
+      columns: ["Heading", "What to write"],
+      rows: [
+        ["Definitions", "HAP 48 hours or more after admission; VAP 48 hours or more after intubation; HCAP removed 2016"],
+        ["Burden", "VAP attributable mortality about 13%; Indian ICU rates several-fold above US benchmarks"],
+        ["Organisms", "Acinetobacter, Klebsiella, Pseudomonas, E coli, S aureus; India mostly carbapenem-resistant Gram-negatives"],
+        ["Pathogenesis", "Oropharyngeal colonisation, micro-aspiration past cuff, ETT biofilm, impaired clearance"],
+        ["MDR risk (VAP)", "IV antibiotics 90 days, septic shock, ARDS, 5 or more days in hospital, acute RRT"],
+        ["Diagnosis", "New infiltrate plus fever, purulent secretions, WBC change, worse oxygenation; ETA and blood cultures"],
+        ["Low-risk empirical", "One antipseudomonal agent: pip-taz, cefepime or levofloxacin"],
+        ["High-risk empirical", "Two antipseudomonal classes plus vancomycin or linezolid; Indian ICUs: meropenem +/- polymyxin B"],
+        ["Targeted", "ESBL: meropenem; KPC/OXA-48: ceftazidime-avibactam; NDM: add aztreonam; CRAB: sulbactam-durlobactam"],
+        ["Review", "48-72 hours: de-escalate; PCT to stop; total 7 days"],
+        ["Prevention", "Avoid intubation, sedation hold, SBT, head up 30-45, subglottic drainage, cuff 20-30, tooth brushing"],
+        ["Pitfalls", "Treating colonisation; tigecycline monotherapy; ceftazidime-avibactam alone for NDM"],
+      ],
+    },
+    flows: [
+      {
+        kind: "flow",
+        heading: "Suspected HAP or VAP",
+        steps: [
+          { label: "New infiltrate plus fever, secretions, WBC or O2 change", detail: "48 hours after admission or intubation" },
+          { label: "Cultures before antibiotics", detail: "Endotracheal aspirate or sputum, 2 blood cultures" },
+          { label: "Assess MDR, MRSA and mortality risk", detail: "Unit antibiogram decides the regimen", tone: "decision" },
+          { label: "Start empirical therapy promptly", detail: "Extended-infusion beta-lactam; MRSA cover if risk" },
+          { label: "Review at 48-72 hours", detail: "De-escalate on culture; stop MRSA cover if negative", tone: "warn" },
+          { label: "Stop at 7 days if improving", detail: "Procalcitonin supports stopping", tone: "good" },
+        ],
+      },
+      {
+        kind: "ladder",
+        heading: "Empirical escalation by resistance",
+        steps: [
+          { label: "No MDR risk: single antipseudomonal agent", detail: "Pip-taz 4.5 g 6-hourly or cefepime 2 g 8-hourly" },
+          { label: "MDR risk: two antipseudomonal classes", detail: "Beta-lactam plus amikacin 15-20 mg/kg or quinolone" },
+          { label: "MRSA risk: add vancomycin or linezolid", detail: "Vancomycin AUC 400-600; linezolid 600 mg 12-hourly" },
+          { label: "High carbapenem resistance: polymyxin-based", detail: "Polymyxin B 2-2.5 mg/kg load", tone: "warn" },
+          { label: "Known carbapenemase: newer agents", detail: "NDM: CAZ-AVI + aztreonam; CRAB: sulbactam-durlobactam", tone: "decision" },
+        ],
+      },
+      {
+        kind: "branch",
+        heading: "Choosing therapy for carbapenem-resistant organisms",
+        root: "Carbapenem-resistant isolate in HAP or VAP",
+        arms: [
+          { label: "KPC or OXA-48 Enterobacterales", tone: "good", steps: ["Ceftazidime-avibactam 2.5 g 8-hourly", "Meropenem-vaborbactam for KPC"] },
+          { label: "NDM (metallo-beta-lactamase)", tone: "warn", steps: ["Ceftazidime-avibactam plus aztreonam together", "Or cefiderocol 2 g 8-hourly"] },
+          { label: "CRAB (Acinetobacter)", tone: "decision", steps: ["Sulbactam-durlobactam plus carbapenem", "Or high-dose sulbactam plus polymyxin B"] },
+          { label: "DTR Pseudomonas", tone: "neutral", steps: ["Ceftolozane-tazobactam 3 g 8-hourly", "Others guided by testing"] },
+        ],
+      },
+    ],
+    notes: {
+      sections: [
+        {
+          title: "Definition and key facts",
+          points: [
+            "**HAP** starts 48 hours or more after admission, not incubating at entry.",
+            "**VAP** starts 48 hours or more after endotracheal intubation.",
+            "**HCAP was dropped** in 2016; it drove needless broad antibiotics.",
+            "**Ventilated HAP** has the worst outcome of all.",
+            "VAP attributable mortality is about **13%**.",
+          ],
+        },
+        {
+          title: "Causes and risk factors",
+          points: [
+            "Indian ICUs: mostly **Acinetobacter, Klebsiella and Pseudomonas**.",
+            "ICMR AMRSN: **over 80% of Acinetobacter** are carbapenem-resistant.",
+            "**VAP MDR risks**: IV antibiotics in 90 days, septic shock, ARDS, 5 days in hospital, RRT.",
+            "**MRSA risk**: IV antibiotics in 90 days, unit MRSA over 20%.",
+            "Host risks: **age, COPD, sedation, supine position**, dysphagia, surgery.",
+          ],
+        },
+        {
+          title: "Pathophysiology",
+          points: [
+            "Hospital **Gram-negatives colonise the mouth** within days.",
+            "Secretions leak past the cuff by **micro-aspiration**.",
+            "**Biofilm** on the tube seeds the lower airway.",
+            "**NDM** enzymes are not blocked by avibactam; aztreonam escapes them.",
+          ],
+        },
+        {
+          title: "Investigations",
+          points: [
+            "Diagnosis: **new infiltrate** plus fever, purulent secretions, WBC change, worse oxygenation.",
+            "Take an **endotracheal aspirate** and blood cultures before antibiotics.",
+            "Thresholds: ETA **10^5-10^6**, BAL **10^4** CFU/mL.",
+            "**CPIS** is inaccurate; do not use it to decide treatment.",
+            "**Procalcitonin** helps stop antibiotics, not start them.",
+            "Ask the lab for **carbapenemase type**: NDM, KPC or OXA-48.",
+          ],
+        },
+        {
+          title: "Treatment - first line",
+          points: [
+            "Choose by **MDR risk, mortality risk and unit antibiogram**.",
+            "Low risk: **one antipseudomonal agent** such as pip-taz or cefepime.",
+            "High risk: **two antipseudomonal classes** plus MRSA cover if needed.",
+            "Indian ICU: **meropenem extended infusion**, with polymyxin B where resistance is high.",
+            "Give beta-lactams as **extended infusions**.",
+          ],
+        },
+        {
+          title: "Treatment - next steps",
+          points: [
+            "**Review at 48-72 hours** and de-escalate to the narrowest drug.",
+            "**7 days** is enough for most HAP and VAP.",
+            "NDM: **ceftazidime-avibactam plus aztreonam**, or cefiderocol.",
+            "CRAB: **sulbactam-durlobactam** plus a carbapenem.",
+            "**Avoid tigecycline** alone in pneumonia.",
+            "Monitor **renal function** daily on colistin or vancomycin.",
+          ],
+        },
+        {
+          title: "Special groups",
+          points: [
+            "**CKD**: adjust beta-lactams and colistin; polymyxin B needs no adjustment.",
+            "**Augmented renal clearance** causes under-dosing; use extended infusions.",
+            "**Pregnancy**: beta-lactams and vancomycin acceptable; avoid aminoglycosides and quinolones.",
+            "**Immunocompromised**: think PCP, CMV, fungi and nocardia.",
+          ],
+        },
+        {
+          title: "Complications and red flags",
+          points: [
+            "**Septic shock**, ARDS, empyema and abscess.",
+            "**Colistin nephrotoxicity** and linezolid thrombocytopenia.",
+            "**No improvement at 72 hours**: re-culture and look for empyema or another source.",
+          ],
+        },
+        {
+          title: "Latest updates",
+          points: [
+            "**IDSA 2024**: sulbactam-durlobactam for CRAB; aztreonam combination for NDM.",
+            "**SHEA 2022**: tooth brushing replaces routine chlorhexidine.",
+            "**BLING III 2024** supports prolonged beta-lactam infusion.",
+            "**REVISE 2024**: pantoprazole did not significantly raise VAP.",
+          ],
+        },
+      ],
+      tables: [
+        {
+          heading: "HAP/VAP drugs",
+          columns: ["Drug", "Dose and route", "Duration", "Key side effects / cautions"],
+          rows: [
+            ["Piperacillin-tazobactam", "4.5 g IV 6-hourly, 4-hour infusion", "7 days", "AKI with vancomycin"],
+            ["Meropenem", "1-2 g IV 8-hourly, 3-hour infusion", "7 days", "Seizures, C difficile"],
+            ["Vancomycin", "15-20 mg/kg IV 8-12-hourly", "Stop if no MRSA", "AKI; AUC 400-600"],
+            ["Linezolid", "600 mg IV/oral 12-hourly", "7 days", "Thrombocytopenia, serotonin syndrome"],
+            ["Polymyxin B", "2-2.5 mg/kg load, 1.25-1.5 mg/kg 12-hourly", "7 days", "Nephrotoxicity, pigmentation"],
+            ["Ceftazidime-avibactam + aztreonam", "2.5 g + 2 g IV 8-hourly", "7 days", "For NDM; renal dosing"],
+            ["Sulbactam-durlobactam", "1 g/1 g IV 6-hourly with carbapenem", "7-14 days", "CRAB only"],
+          ],
+        },
+        {
+          heading: "MDR risk factors",
+          columns: ["Setting", "MDR Gram-negative risk", "MRSA risk"],
+          rows: [
+            ["VAP", "IV antibiotics 90 days, shock, ARDS, 5 days in hospital, RRT", "IV antibiotics 90 days, unit MRSA high"],
+            ["HAP", "IV antibiotics 90 days, high mortality risk", "IV antibiotics 90 days, unit MRSA over 20%, high mortality risk"],
+          ],
+        },
+        {
+          heading: "VAP bundle",
+          columns: ["Element", "Target"],
+          rows: [
+            ["Avoid intubation", "NIV or HFNO"],
+            ["Sedation hold and SBT", "Daily"],
+            ["Head of bed", "30-45 degrees"],
+            ["Subglottic drainage", "Ventilation over 48-72 hours"],
+            ["Cuff pressure", "20-30 cmH2O"],
+            ["Oral care", "Tooth brushing, no routine chlorhexidine"],
+          ],
+        },
+      ],
+      remember: [
+        "**48 hours** defines both HAP and VAP.",
+        "**HCAP is gone** since 2016.",
+        "**7 days** is the standard course.",
+        "**NDM needs aztreonam** with ceftazidime-avibactam.",
+        "**Procalcitonin to stop, not start.**",
+        "**Polymyxin B for lung, colistin for urine.**",
+        "Your **unit antibiogram** is your first guideline.",
+      ],
+    },
+  },
 };
 
 export default revision;
