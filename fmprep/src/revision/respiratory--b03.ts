@@ -619,6 +619,206 @@ const revision: RevisionSet = {
       ],
     },
   },
+  "respiratory-aecopd-niv": {
+    checked: "2026-10",
+    updated: [
+      "GOLD 2023-2025: Rome 2021 definition and objective severity grading (VAS, RR, HR, SpO2, CRP, ABG)",
+      "GOLD 2025: rule out PE, heart failure and pneumonia in every exacerbation; dupilumab and ensifentrine for prevention",
+      "GOLD 2026: one moderate exacerbation in the past year places a patient in Group E",
+      "BTS/ICS 2016 and BTS 2018 quality standards: NIV within 60 minutes of qualifying ABG",
+      "ERS 2022: trial NIV before high-flow nasal oxygen in hypercapnic COPD",
+    ],
+    master: {
+      heading: "AECOPD and NIV - the whole answer in one table",
+      columns: ["Heading", "What to write"],
+      rows: [
+        ["Definition", "Worse dyspnoea and/or cough and sputum over under 14 days, with inflammation from infection or pollution (Rome 2021)"],
+        ["Burden", "India about 55 million COPD; second leading cause of death; 50% die within 5 years of an admission"],
+        ["Causes", "Viruses, H. influenzae, pneumococcus, Moraxella, Pseudomonas in severe; pollution"],
+        ["Rome grading", "Mild, moderate (3 of VAS 5, RR 24, HR 95, SpO2 under 92, CRP 10), severe (PaCO2 over 45 with pH under 7.35)"],
+        ["Mimics", "Pneumonia, PE, heart failure, pneumothorax, ACS, arrhythmia, TB"],
+        ["Investigations", "ABG, chest X-ray, ECG, CBC with eosinophils, CRP, sputum culture"],
+        ["Oxygen", "88-92% with 24-28% Venturi; air-driven nebulisers; ABG 30-60 min after change"],
+        ["Drugs", "Salbutamol 2.5-5 mg + ipratropium 500 microgram; prednisolone 40 mg 5 days"],
+        ["Antibiotics", "Purulent sputum plus one more symptom, or ventilated; 5 days amoxicillin, doxycycline or clarithromycin"],
+        ["NIV indication", "pH 7.35 or less, PaCO2 over 6.5 kPa after 1 hour of optimal therapy"],
+        ["NIV settings", "EPAP 3-5; IPAP 15 rising to 20-30; backup 16-20; ABG at 1 and 4 hours"],
+        ["NIV failure", "pH worsening or under 7.25, rising PaCO2, falling GCS - intubate"],
+        ["Discharge", "Technique, LABA+LAMA (+ICS if eos 300), rehab within 4 weeks, vaccines, review 1-4 and 12-16 weeks"],
+        ["Home NIV", "PaCO2 over 7 kPa 2-4 weeks after an acidotic admission"],
+      ],
+    },
+    flows: [
+      {
+        kind: "flow",
+        heading: "AECOPD in hospital - first hours",
+        steps: [
+          { label: "Worse breathlessness, sputum in known COPD", detail: "Exclude pneumonia, PE, heart failure, pneumothorax" },
+          { label: "Controlled oxygen to SpO2 88-92%", detail: "24-28% Venturi; ABG at arrival" },
+          { label: "Air-driven salbutamol + ipratropium", detail: "Salbutamol 2.5-5 mg, ipratropium 500 microgram" },
+          { label: "Prednisolone 40 mg; antibiotics if purulent", detail: "5 days each" },
+          { label: "Repeat ABG after 1 hour", detail: "pH 7.35 or less with PaCO2 over 6.5 kPa?", tone: "decision" },
+          { label: "Yes: start NIV within 60 minutes", detail: "Escalation plan documented", tone: "warn" },
+          { label: "No: continue ward care, plan discharge bundle", tone: "good" },
+        ],
+      },
+      {
+        kind: "ladder",
+        heading: "Ventilatory support ladder in hypercapnic COPD",
+        steps: [
+          { label: "Controlled oxygen 88-92%", detail: "Venturi 24-28% or nasal 1-2 L/min" },
+          { label: "Bilevel NIV", detail: "EPAP 3-5, IPAP 15 rising to 20-30 cm H2O" },
+          { label: "Optimise NIV", detail: "Mask fit, leaks, synchrony; ABG at 1 and 4 hours", tone: "decision" },
+          { label: "Intubate if NIV fails", detail: "pH under 7.25 or worsening, falling GCS, instability", tone: "warn" },
+          { label: "Extubate onto NIV", detail: "Reduces reintubation", tone: "good" },
+        ],
+      },
+      {
+        kind: "branch",
+        heading: "Who gets antibiotics in AECOPD",
+        root: "Exacerbation of COPD",
+        arms: [
+          { label: "Give antibiotics", tone: "warn", steps: ["Purulent sputum plus more dyspnoea or volume", "All three Anthonisen symptoms", "Needs NIV or invasive ventilation", "Pneumonia on X-ray"] },
+          { label: "Withhold", tone: "good", steps: ["No purulence", "CRP under 20 mg/L in primary care", "Viral picture"] },
+        ],
+      },
+    ],
+    notes: {
+      sections: [
+        {
+          title: "Definition and key facts",
+          points: [
+            "**Exacerbation**: worse dyspnoea, cough or sputum over **less than 14 days**.",
+            "GOLD uses the **Rome 2021** objective severity grading.",
+            "India has about **55 million** people with COPD.",
+            "About **half die within 5 years** of an exacerbation admission.",
+          ],
+        },
+        {
+          title: "Causes and risk factors",
+          points: [
+            "**Viruses** trigger about half; rhinovirus is commonest.",
+            "Bacteria: **H. influenzae, pneumococcus, Moraxella**; Pseudomonas in severe COPD.",
+            "Pollution, winter smog, biomass and tobacco smoke.",
+            "A **previous exacerbation** is the best predictor of the next.",
+          ],
+        },
+        {
+          title: "Pathophysiology",
+          points: [
+            "Inflammation narrows airways and causes **dynamic hyperinflation** with auto-PEEP.",
+            "A tired respiratory pump lets **PaCO2 rise** and pH fall.",
+            "High oxygen raises PaCO2 by **V/Q change and the Haldane effect**.",
+            "**EPAP offsets auto-PEEP**; IPAP raises tidal volume and clears CO2.",
+          ],
+        },
+        {
+          title: "Classification that matters",
+          points: [
+            "**Mild**: RR under 24, HR under 95, SpO2 92% or more, CRP under 10.",
+            "**Moderate**: 3 of 5 of VAS 5, RR 24, HR 95, SpO2 under 92, CRP 10.",
+            "**Severe**: moderate plus **PaCO2 over 45 mmHg and pH under 7.35**.",
+            "Antibiotics follow **Anthonisen**: dyspnoea, sputum volume, purulence.",
+          ],
+        },
+        {
+          title: "Clinical features and differential diagnosis",
+          points: [
+            "Asterixis, warm hands, bounding pulse and drowsiness mean **hypercapnia**.",
+            "**Hoover's sign** and barrel chest show hyperinflation.",
+            "Always look for **pneumonia, PE, heart failure** and pneumothorax.",
+            "In India, send **sputum CBNAAT** if TB is possible.",
+          ],
+        },
+        {
+          title: "Investigations",
+          points: [
+            "**ABG** in all admitted; repeat 30-60 minutes after oxygen changes.",
+            "**Chest X-ray, ECG**, CBC with eosinophils, CRP, electrolytes.",
+            "Sputum culture if purulent or Pseudomonas risk.",
+            "No spirometry during the exacerbation.",
+          ],
+        },
+        {
+          title: "Treatment - first line",
+          points: [
+            "**Oxygen 88-92%** by 24-28% Venturi mask.",
+            "**Air-driven** salbutamol 2.5-5 mg plus ipratropium 500 microgram.",
+            "**Prednisolone 40 mg** once daily for 5 days.",
+            "**Antibiotics 5 days** for purulent sputum: amoxicillin, doxycycline or clarithromycin.",
+            "No **aminophylline or doxofylline**; avoid fluoroquinolones first line in India.",
+            "**Enoxaparin 40 mg** daily for VTE prophylaxis.",
+          ],
+        },
+        {
+          title: "Inpatient / emergency care",
+          points: [
+            "**NIV** if pH 7.35 or less and PaCO2 over 6.5 kPa after 1 hour.",
+            "Start NIV **within 60 minutes**; document escalation plan.",
+            "**EPAP 3-5, IPAP 15** rising to 20-30 cm H2O.",
+            "**ABG at 1 and 4 hours**; worsening pH or GCS means intubate.",
+            "Contraindications: arrest, **unprotected airway**, vomiting, undrained pneumothorax.",
+            "HFNO only if NIV is **not tolerated**.",
+          ],
+        },
+        {
+          title: "Referral and follow-up",
+          points: [
+            "Check **inhaler technique** and step up maintenance therapy.",
+            "**Rehab within 4 weeks** of discharge, not during admission.",
+            "Review at **1-4 weeks and 12-16 weeks**.",
+            "Reassess oxygen at **8 weeks**; no LTOT on one reading.",
+            "**Home NIV** if PaCO2 over 7 kPa at 2-4 weeks.",
+            "Vaccines: influenza, pneumococcal, COVID, **RSV over 60**.",
+          ],
+        },
+      ],
+      tables: [
+        {
+          heading: "Drugs in AECOPD",
+          columns: ["Drug", "Dose and route", "Duration", "Key side effects / cautions"],
+          rows: [
+            ["Oxygen", "24-28% Venturi to SpO2 88-92%", "Titrate", "Hypercapnia if uncontrolled"],
+            ["Salbutamol", "2.5-5 mg nebulised (air-driven) 4-6 hourly", "Until stable", "Tremor, low K+, tachycardia"],
+            ["Ipratropium", "500 microgram nebulised 6-8 hourly", "Acute phase", "Dry mouth, urinary retention"],
+            ["Prednisolone", "40 mg oral once daily", "5 days", "Hyperglycaemia, insomnia"],
+            ["Amoxicillin", "500 mg oral 3 times daily", "5 days", "Rash; penicillin allergy"],
+            ["Doxycycline", "200 mg day 1, then 100 mg daily", "5 days", "Photosensitivity; avoid in pregnancy"],
+            ["Clarithromycin", "500 mg oral twice daily", "5 days", "QTc, drug interactions"],
+          ],
+        },
+        {
+          heading: "Rome 2021 severity",
+          columns: ["Grade", "Criteria"],
+          rows: [
+            ["Mild", "VAS under 5, RR under 24, HR under 95, SpO2 92% or more, CRP under 10"],
+            ["Moderate", "3 of 5: VAS 5+, RR 24+, HR 95+, SpO2 under 92 or fall over 3%, CRP 10+"],
+            ["Severe", "Moderate plus PaCO2 over 45 mmHg and pH under 7.35"],
+          ],
+        },
+        {
+          heading: "NIV quick card",
+          columns: ["Item", "Rule"],
+          rows: [
+            ["Start", "pH 7.35 or less, PaCO2 over 6.5 kPa after 1 hour"],
+            ["EPAP", "3-5 cm H2O; higher in obesity or OSA"],
+            ["IPAP", "15, rising to 20-30 cm H2O"],
+            ["Check", "ABG at 1 and 4 hours"],
+            ["Fail", "pH under 7.25 or worse, falling GCS, instability"],
+          ],
+        },
+      ],
+      remember: [
+        "**Rome numbers: 24, 95, 92, 10** - RR, HR, SpO2, CRP.",
+        "**88-92%** oxygen; **air-driven** nebulisers.",
+        "**Prednisolone 40 mg for 5 days**.",
+        "**NIV within 60 minutes** of the qualifying ABG.",
+        "**EPAP fights auto-PEEP; IPAP blows off CO2**.",
+        "**Rehab after discharge**, within 4 weeks.",
+        "No **methylxanthines** in exacerbations.",
+      ],
+    },
+  },
 };
 
 export default revision;

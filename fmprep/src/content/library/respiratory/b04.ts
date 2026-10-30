@@ -1089,7 +1089,7 @@ topics.push({
         "**Ventilated HAP** is HAP that needs intubation after onset - it has the worst prognosis, worse than VAP. [ERS/ESICM/ESCMID/ALAT 2017]",
         "HAP occurs in about **5-10 per 1000 admissions** and is the **commonest hospital-acquired infection causing death**; VAP affects roughly **10-25% of ventilated patients** depending on definition. [Harrison 22e]",
         "**Attributable mortality of VAP is about 13%**, higher in surgical and mid-severity patients, though crude mortality is 20-50%. [Melsen Lancet Infect Dis 2013]",
-        "**Indian ICUs report device-associated VAP rates several-fold higher than US NHSN benchmarks**, with Gram-negative non-fermenters predominant (INICC and ICMR-AIIMS surveillance). [ICMR HAI Surveillance 2023]",
+        "**Indian ICUs report device-associated VAP rates several-fold higher than US NHSN benchmarks**, with Gram-negative non-fermenters predominant (INICC and ICMR-AIIMS surveillance). [ICMR-AIIMS HAI Network 2022]",
         "The **ICMR Antimicrobial Resistance Surveillance Network (AMRSN)** reports **carbapenem resistance in over 80% of Acinetobacter baumannii**, around **half of Klebsiella pneumoniae**, and about a third of Pseudomonas aeruginosa from ICU isolates. [ICMR AMRSN 2023]",
       ],
     },
@@ -1194,7 +1194,7 @@ topics.push({
         "**Difficult-to-treat Pseudomonas**: **ceftolozane-tazobactam 3 g IV every 8 hours** for pneumonia, ceftazidime-avibactam, imipenem-relebactam or cefiderocol, guided by testing. [IDSA AMR Guidance 2024]",
         "**Carbapenem-resistant Acinetobacter baumannii (CRAB)**: **sulbactam-durlobactam (1 g/1 g IV every 6 hours) plus a carbapenem** is preferred; alternative **high-dose ampicillin-sulbactam (6-9 g sulbactam/day)** combined with polymyxin B, minocycline, tigecycline or cefiderocol. [IDSA AMR Guidance 2024]",
         "**Avoid tigecycline monotherapy** for pneumonia - low serum and lung levels and excess mortality in trials. [IDSA AMR Guidance 2024]",
-        "Cefepime-enmetazobactam (approved 2024) and Indian-developed **cefepime-zidebactam** are emerging options; use only with microbiology and stewardship input. [ICMR AMRSN 2023]",
+        "Cefepime-enmetazobactam (approved 2024) and Indian-developed **cefepime-zidebactam** are emerging options; use only with microbiology and stewardship input. [Expert opinion 2025]",
       ],
     },
     {
@@ -1240,7 +1240,7 @@ topics.push({
         "**Oral care with tooth brushing**; **routine chlorhexidine mouthwash is no longer recommended** because of a possible mortality signal. [SHEA/IDSA/APIC 2022]",
         "**Hand hygiene, contact precautions for MDR carriers, and environmental cleaning** cut cross-transmission of Acinetobacter and Klebsiella. [WHO 2022]",
         "**Non-ventilated HAP prevention**: oral care, dysphagia screening, upright position, early mobility and incentive spirometry after surgery. [SHEA/IDSA/APIC 2022]",
-        "**National programme link**: the **National Action Plan on AMR (NAP-AMR 2.0, 2025)**, Kayakalp hospital standards and ICMR AMSP support stewardship and infection control. [MoHFW 2025]",
+        "**National programme link**: the **National Action Plan on AMR (NAP-AMR, with its updated 2.0 version)**, Kayakalp hospital standards and ICMR AMSP support stewardship and infection control. [MoHFW NAP-AMR]",
       ],
     },
     {

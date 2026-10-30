@@ -605,6 +605,198 @@ const revision: RevisionSet = {
       ],
     },
   },
+  "respiratory-ntm-post-tb": {
+    checked: "2026-10",
+    updated: [
+      "ATS/ERS/ESCMID/IDSA 2020 NTM guideline: thrice-weekly MAC regimen, azithromycin preferred, ALIS for refractory MAC",
+      "PTLD clinical standards (Migliori 2021): assess every patient at end of TB treatment",
+      "2nd International Post-TB Symposium (IJTLD 2023): post-TB health and wellbeing",
+      "WHO 2024: culture to confirm recurrence because NAAT can stay positive after cure",
+    ],
+    master: {
+      heading: "Master revision table - NTM and post-TB lung disease",
+      columns: ["Heading", "What to write"],
+      rows: [
+        ["NTM definition", "Environmental mycobacteria other than MTB complex and M. leprae; **not spread person to person**; MAC commonest."],
+        ["Runyon groups", "I photochromogens (**kansasii**), II scotochromogens (gordonae), III non-chromogens (**MAC**), IV rapid growers (**abscessus**, fortuitum, chelonae)."],
+        ["Risk factors", "Bronchiectasis, **previous TB**, COPD, CF, silicosis; HIV CD4 under 50; anti-TNF; anti-IFN-gamma autoantibodies."],
+        ["Phenotypes", "**Fibrocavitary**, **nodular-bronchiectatic (Lady Windermere)**, hot tub lung, disseminated."],
+        ["NTM diagnosis", "Symptoms + CXR/HRCT findings + exclusion + **2 positive sputum cultures** (or 1 BAL, or biopsy); species ID; macrolide/amikacin DST."],
+        ["India clue", "**Smear positive, NAAT negative**, MPT64 negative; 'TB failure' or 'MDR suspect' may be NTM."],
+        ["MAC treatment", "**Azithromycin + rifampicin + ethambutol**: thrice weekly (nodular) or daily + amikacin 2-3 months (cavitary); **12 months after conversion**; ALIS 590 mg if refractory."],
+        ["Other NTM", "**M. kansasii**: R + E + H or azithromycin, 12 months; **M. abscessus**: IV amikacin + imipenem/cefoxitin/tigecycline, erm(41), surgery."],
+        ["PTLD definition", "Chronic respiratory abnormality, with or without symptoms, **attributable at least in part to previous TB**."],
+        ["PTLD spectrum", "Airway (obstruction, bronchiectasis, stenosis), parenchyma (cavity, fibrosis, destroyed lung), pleura (fibrothorax), vessels (PH, Rasmussen), complications (CPA, NTM, cancer)."],
+        ["PTLD assessment", "**End of treatment**: symptoms, SGRQ, **spirometry, SpO2, 6MWT**, CXR; HRCT, Aspergillus IgG, echo as needed."],
+        ["PTLD management", "Quit smoking/biomass; **pulmonary rehab**; LAMA/LABA; cautious ICS; airway clearance; itraconazole for CPA; BAE; LTOT; vaccines."],
+        ["Recurrence trap", "**Xpert stays positive for years**; confirm with culture before repeating ATT."],
+        ["Exam one-liners", "Never macrolide monotherapy; Lady Windermere = middle lobe and lingula; childhood NTM node = excise."],
+      ],
+    },
+    flows: [
+      {
+        kind: "flow",
+        heading: "Is it NTM lung disease?",
+        caption: "ATS/ERS/ESCMID/IDSA 2020 criteria.",
+        steps: [
+          { label: "Chronic cough, weight loss; smear positive", detail: "Or TB not responding despite adherence" },
+          { label: "MTB NAAT negative?", tone: "decision", detail: "Positive: treat as TB; negative: suspect NTM" },
+          { label: "Culture two separate sputa (or one BAL)", detail: "MPT64 negative; species identification" },
+          { label: "Compatible CXR or HRCT, other diagnoses excluded", tone: "decision" },
+          { label: "M. gordonae or single isolate?", tone: "warn", detail: "Likely contaminant - repeat, do not treat" },
+          { label: "Species-specific regimen with DST", tone: "good", detail: "MAC: azithromycin + rifampicin + ethambutol" },
+        ],
+      },
+      {
+        kind: "ladder",
+        heading: "MAC treatment ladder",
+        steps: [
+          { label: "Mild nodular disease: consider watchful waiting", detail: "Airway clearance, repeat cultures" },
+          { label: "Nodular-bronchiectatic: thrice weekly", detail: "Azithromycin 500 mg, rifampicin 600 mg, ethambutol 25 mg/kg" },
+          { label: "Cavitary or severe: daily plus amikacin", detail: "Azithromycin 250-500 mg, rifampicin 450-600 mg, ethambutol 15 mg/kg; IV amikacin 2-3 months", tone: "decision" },
+          { label: "Refractory at 6 months: add ALIS", detail: "Amikacin liposome inhalation 590 mg OD", tone: "warn" },
+          { label: "Localised destroyed lung: surgery", tone: "good" },
+        ],
+      },
+      {
+        kind: "branch",
+        heading: "Spectrum of post-TB lung disease",
+        root: "Post-TB lung disease",
+        arms: [
+          { label: "Airway", steps: ["Obstructive airflow limitation", "Traction bronchiectasis", "Tracheobronchial stenosis"] },
+          { label: "Parenchyma", steps: ["Residual cavities", "Fibrosis", "Destroyed lung"] },
+          { label: "Pleura and vessels", steps: ["Fibrothorax", "Pulmonary hypertension", "Rasmussen aneurysm"] },
+          { label: "Complications", tone: "warn", steps: ["Chronic pulmonary aspergillosis", "NTM infection", "Recurrence", "Lung cancer"] },
+        ],
+      },
+    ],
+    notes: {
+      sections: [
+        {
+          title: "Definition and key facts",
+          points: [
+            "**NTM** are environmental mycobacteria; they do not spread person to person.",
+            "**MAC** is the commonest NTM lung pathogen.",
+            "**PTLD** is chronic respiratory abnormality caused at least partly by past TB.",
+            "About **half of TB survivors** have abnormal lung function.",
+          ],
+        },
+        {
+          title: "Causes and risk factors",
+          points: [
+            "NTM infect **damaged lungs**: bronchiectasis, old TB, COPD, silicosis.",
+            "**HIV with CD4 under 50** causes disseminated MAC.",
+            "PTLD follows **extensive, delayed or repeated** TB, smoking and MDR-TB.",
+          ],
+        },
+        {
+          title: "Classification that matters",
+          points: [
+            "Runyon: I **kansasii**, II gordonae, III **MAC**, IV **abscessus**.",
+            "NTM phenotypes: **fibrocavitary** and **nodular-bronchiectatic**.",
+            "**Lady Windermere**: slender older woman, middle lobe and lingula.",
+            "PTLD affects **airway, parenchyma, pleura and vessels**.",
+          ],
+        },
+        {
+          title: "Clinical features",
+          points: [
+            "NTM symptoms mimic TB: **chronic cough**, weight loss, haemoptysis.",
+            "**Smear positive, NAAT negative** suggests NTM.",
+            "PTLD gives breathlessness and cough **after cure**.",
+            "PTLD is often mislabelled as **COPD or relapse**.",
+          ],
+        },
+        {
+          title: "Investigations",
+          points: [
+            "NTM needs **two positive sputum cultures** or one BAL, plus imaging.",
+            "Identify the **species**; M. gordonae is usually a contaminant.",
+            "Test **macrolide and amikacin** susceptibility.",
+            "PTLD: **spirometry, SpO2 and 6MWT** at the end of treatment.",
+            "**Xpert can stay positive** after cure; confirm recurrence by culture.",
+          ],
+        },
+        {
+          title: "Treatment - first line",
+          points: [
+            "MAC: **azithromycin, rifampicin and ethambutol**.",
+            "Thrice weekly for nodular disease; **daily plus amikacin** for cavities.",
+            "Treat for **12 months after culture conversion**.",
+            "**Never use a macrolide alone**.",
+          ],
+        },
+        {
+          title: "Treatment - next steps",
+          points: [
+            "Refractory MAC: add **inhaled liposomal amikacin**.",
+            "**M. abscessus** needs IV amikacin plus imipenem or cefoxitin.",
+            "PTLD: **pulmonary rehabilitation**, bronchodilators and airway clearance.",
+            "CPA in a cavity: **itraconazole 200 mg twice daily** for 6 months or more.",
+          ],
+        },
+        {
+          title: "Complications and red flags",
+          points: [
+            "**Massive haemoptysis** from bronchial arteries or Rasmussen aneurysm.",
+            "Hypoxaemia and **cor pulmonale** in destroyed lung.",
+            "New mass in a scar: think **lung cancer**.",
+          ],
+        },
+        {
+          title: "Latest updates",
+          points: [
+            "**ATS/ERS 2020**: azithromycin preferred; ALIS for refractory MAC.",
+            "**PTLD standards 2021**: assess every patient at end of treatment.",
+            "**Post-TB Symposium 2023**: focus on whole post-TB health and wellbeing.",
+          ],
+        },
+      ],
+      tables: [
+        {
+          heading: "NTM and PTLD drugs",
+          columns: ["Drug", "Dose and route", "Duration", "Key side effects / cautions"],
+          rows: [
+            ["Azithromycin", "500 mg oral thrice weekly or 250-500 mg daily", "12 months after conversion", "QT, hearing loss; never alone"],
+            ["Rifampicin", "600 mg thrice weekly or 450-600 mg daily", "12 months after conversion", "Hepatitis, interactions"],
+            ["Ethambutol", "25 mg/kg thrice weekly or 15 mg/kg daily", "12 months after conversion", "Optic neuritis"],
+            ["Amikacin IV", "15 mg/kg daily or 25 mg/kg thrice weekly", "2-3 months", "Ototoxicity, nephrotoxicity"],
+            ["Amikacin liposome inhaled", "590 mg once daily", "Refractory MAC", "Dysphonia, bronchospasm"],
+            ["Itraconazole", "200 mg oral BD", "6 months or more", "Hepatitis, heart failure"],
+          ],
+        },
+        {
+          heading: "TB versus NTM versus PTLD",
+          columns: ["Feature", "TB", "NTM", "PTLD"],
+          rows: [
+            ["NAAT for MTB", "Positive", "Negative", "Negative or residual"],
+            ["Culture", "MTB", "NTM species", "Negative"],
+            ["Imaging", "New lesion", "Nodules, bronchiectasis, cavities", "Stable scars"],
+            ["Treatment", "ATT", "Macrolide regimen", "Rehabilitation"],
+          ],
+        },
+        {
+          heading: "NTM diagnostic criteria",
+          columns: ["Domain", "Requirement"],
+          rows: [
+            ["Clinical", "Respiratory symptoms"],
+            ["Radiology", "Nodules, cavities, or bronchiectasis with nodules"],
+            ["Exclusion", "TB, cancer, aspergillosis excluded"],
+            ["Microbiology", "Two positive sputum cultures, or one BAL, or biopsy"],
+          ],
+        },
+      ],
+      remember: [
+        "**Smear positive, NAAT negative**: think NTM.",
+        "Two sputum cultures make the **NTM diagnosis**.",
+        "**ARE** for MAC: azithromycin, rifampicin, ethambutol.",
+        "Treat MAC **12 months after conversion**.",
+        "**Lady Windermere**: middle lobe and lingula MAC.",
+        "PTLD is **not relapse**; culture before repeating ATT.",
+        "End of TB treatment: **spirometry, SpO2, 6MWT**.",
+      ],
+    },
+  },
 };
 
 export default revision;

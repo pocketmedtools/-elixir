@@ -589,6 +589,207 @@ const revision: RevisionSet = {
       ],
     },
   },
+  "respiratory-inhaler-devices": {
+    checked: "2026-10",
+    updated: [
+      "GINA 2025: device must allow ICS-formoterol AIR/MART; environmental impact a consideration",
+      "GOLD 2025: individualise device by PIF, dexterity, cognition and preference",
+      "NICE/BTS/SIGN NG245 2024: check technique and adherence before escalation; inhaler carbon footprint",
+      "Low global-warming-potential pMDI propellants entering use from 2025",
+      "NLEM 2022: budesonide-formoterol and tiotropium inhalers added",
+    ],
+    master: {
+      heading: "Inhaler devices, spacers and nebulisers",
+      columns: ["Heading", "What to write"],
+      rows: [
+        ["Definition", "Deliver 1-5 micrometre particles to airways: pMDI, BA-MDI, DPI, SMI, nebuliser"],
+        ["Deposition", "Impaction (throat), sedimentation (breath-hold), diffusion"],
+        ["pMDI technique", "Shake, exhale, press at start of slow 3-5 s breath, hold 10 s"],
+        ["DPI technique", "Load, exhale away, fast forceful breath (PIF 30-60+ L/min), hold 10 s"],
+        ["Spacer", "No coordination needed, less throat deposition; one puff at a time; wash monthly, air-dry"],
+        ["Device by age", "Under 4 spacer + mask; 4-5 spacer + mouthpiece; 6+ DPI possible"],
+        ["Low PIF / elderly", "PIF under 30: no DPI - pMDI + spacer, SMI or nebuliser"],
+        ["Errors", "Poor coordination, fast pMDI breath, weak DPI effort, exhaling into DPI, swallowing rotacaps"],
+        ["Teaching", "Explain, demonstrate, teach-back, correct, recheck every visit"],
+        ["Nebuliser vs spacer", "Equal in mild-moderate acute asthma; spacer cheaper, faster, less tachycardia"],
+        ["Nebuliser driving gas", "Oxygen 6-8 L/min in asthma; air in hypercapnic COPD"],
+        ["India", "Capsule DPIs and generic pMDIs cheapest; Jan Aushadhi; bottle spacer; inhaler phobia"],
+      ],
+    },
+    flows: [
+      {
+        kind: "flow",
+        heading: "Choosing an inhaler device",
+        steps: [
+          { label: "Age under 6?", detail: "Under 4 spacer + mask; 4-5 spacer + mouthpiece", tone: "decision" },
+          { label: "Measure PIF against device resistance", detail: "In-Check DIAL", tone: "neutral" },
+          { label: "PIF under 30 L/min: pMDI + spacer or SMI", tone: "warn" },
+          { label: "PIF adequate: DPI or pMDI + spacer by preference", tone: "good" },
+          { label: "Check dexterity, cognition, cost; one device type", tone: "neutral" },
+        ],
+      },
+      {
+        kind: "cycle",
+        heading: "Teach-back cycle at every visit",
+        steps: [
+          { label: "Explain the steps", tone: "neutral" },
+          { label: "Demonstrate with a placebo device", tone: "neutral" },
+          { label: "Patient demonstrates", tone: "decision" },
+          { label: "Correct errors and repeat", detail: "2-3 rounds often needed", tone: "warn" },
+          { label: "Recheck at next visit", tone: "good" },
+        ],
+      },
+      {
+        kind: "compare",
+        heading: "pMDI versus DPI",
+        columns: ["Feature", "pMDI", "DPI"],
+        rows: [
+          ["Inhalation", "Slow, deep", "Fast, forceful"],
+          ["Coordination", "Needed (unless spacer)", "Not needed"],
+          ["Minimum flow", "Low", "30, ideally 60 L/min"],
+          ["Propellant", "Yes (HFA)", "No"],
+          ["Shake", "Yes", "Never"],
+        ],
+      },
+    ],
+    notes: {
+      sections: [
+        {
+          title: "Definition and key facts",
+          points: [
+            "Inhalers deliver **1-5 micrometre** particles directly to the airways.",
+            "**50-90% of patients** make at least one technique error.",
+            "Poor technique is the commonest cause of **'uncontrolled' disease**.",
+            "**Inhaler phobia** and oral bronchodilator use drive poor control in India.",
+          ],
+        },
+        {
+          title: "Pathophysiology",
+          points: [
+            "Large particles **impact in the throat**; small ones settle in airways.",
+            "A **10-second breath-hold** allows sedimentation.",
+            "A DPI needs **fast inspiratory flow** to break up the powder.",
+            "A **spacer** slows the aerosol and removes the need for coordination.",
+          ],
+        },
+        {
+          title: "Classification that matters",
+          points: [
+            "**pMDI**, breath-actuated MDI, capsule DPI, multi-dose DPI, soft mist inhaler.",
+            "Nebulisers: **jet, ultrasonic, mesh**.",
+            "Indian capsule DPIs: **Rotahaler and Revolizer**.",
+            "**SMI** gives a slow mist needing little effort.",
+          ],
+        },
+        {
+          title: "Clinical features",
+          points: [
+            "pMDI errors: **poor coordination**, fast breath, no breath-hold.",
+            "DPI errors: **weak effort**, exhaling into the device.",
+            "Spacer errors: **several puffs at once**, poor mask seal.",
+            "Capsule errors: **swallowing rotacaps**, not checking capsule empty.",
+          ],
+        },
+        {
+          title: "Investigations",
+          points: [
+            "Ask the patient to **show** the technique with their own device.",
+            "Measure **PIF** with In-Check DIAL; under 30 L/min rules out DPI.",
+            "Check **dose counter** and refill history for adherence.",
+          ],
+        },
+        {
+          title: "Treatment - first line",
+          points: [
+            "Under 4: **pMDI, spacer and face mask**.",
+            "4-5 years: **spacer with mouthpiece**.",
+            "6 and over: **DPI or pMDI with spacer** by preference.",
+            "Elderly or low PIF: **pMDI with spacer or SMI**.",
+            "Teach by **demonstration and teach-back**; recheck every visit.",
+            "Rinse mouth after **inhaled steroid**.",
+          ],
+        },
+        {
+          title: "Inpatient / emergency care",
+          points: [
+            "Mild-moderate attack: **4-10 puffs via spacer** every 20 minutes.",
+            "Spacer is **as effective as a nebuliser** with less tachycardia.",
+            "Nebulise for **life-threatening** attacks; oxygen-driven in asthma.",
+            "Hypercapnic COPD: **air-driven nebuliser**, oxygen to 88-92%.",
+            "Check technique **before discharge**.",
+          ],
+        },
+        {
+          title: "Special groups",
+          points: [
+            "After an exacerbation **PIF falls** - reassess the DPI.",
+            "**Ipratropium by mask** can trigger angle-closure glaucoma.",
+            "Keep DPIs **dry** in humid climates.",
+            "A **500 mL bottle spacer** works in resource-poor settings.",
+          ],
+        },
+        {
+          title: "Referral and follow-up",
+          points: [
+            "Wash spacer **monthly**, do not rinse, air-dry.",
+            "**Never wash a DPI**; wipe dry.",
+            "Clean nebuliser kit **after every use**.",
+          ],
+        },
+        {
+          title: "Latest updates",
+          points: [
+            "**GINA 2025**: device must deliver ICS-formoterol for AIR/MART.",
+            "**GOLD 2025**: choose device by PIF, dexterity and cognition.",
+            "**Low-carbon propellants** entering pMDIs from 2025.",
+          ],
+        },
+      ],
+      tables: [
+        {
+          heading: "Inhaled drugs by device",
+          columns: ["Drug", "Dose and route", "Duration", "Key side effects / cautions"],
+          rows: [
+            ["Salbutamol pMDI", "100 micrograms/puff; 4-10 puffs via spacer in attack", "As needed", "Tremor, tachycardia, low potassium"],
+            ["Salbutamol nebulised", "2.5-5 mg", "Every 20 min for 1 hour", "Air-driven in hypercapnic COPD"],
+            ["Ipratropium", "20 micrograms x 2 pMDI or 500 micrograms nebulised", "6-hourly or acute", "Dry mouth, glaucoma by mask"],
+            ["Budesonide-formoterol", "200/6 micrograms 1 inhalation as needed, max 12/day", "Long-term", "Thrush; rinse mouth"],
+            ["Budesonide respules", "0.5-1 mg nebulised twice daily", "Course or long-term", "Thrush, facial deposition"],
+            ["Tiotropium", "18 micrograms DPI or 5 micrograms SMI daily", "Long-term", "Dry mouth, urinary retention"],
+          ],
+        },
+        {
+          heading: "Device comparison",
+          columns: ["Device", "Inhalation", "Best for", "Main problem"],
+          rows: [
+            ["pMDI + spacer", "Slow or tidal", "Any age, acute attack", "Bulky"],
+            ["Capsule DPI", "Fast, forceful", "6+ with good PIF", "Low PIF, humidity"],
+            ["SMI", "Slow", "Elderly, low PIF", "Cost, loading"],
+            ["Nebuliser", "Tidal", "Severe attack, unable to use others", "Time, cost, aerosol"],
+          ],
+        },
+        {
+          heading: "Device by age",
+          columns: ["Age", "Device"],
+          rows: [
+            ["Under 4", "pMDI + valved spacer + face mask"],
+            ["4-5", "pMDI + spacer + mouthpiece"],
+            ["6 and over", "DPI or pMDI + spacer, BA-MDI, SMI"],
+            ["Elderly or frail", "pMDI + spacer or SMI; nebuliser if needed"],
+          ],
+        },
+      ],
+      remember: [
+        "**pMDI slow, DPI fast.**",
+        "**Spacer equals nebuliser** in mild-moderate attacks.",
+        "**One puff, then breathe** - never stack puffs.",
+        "**Check technique before step-up.**",
+        "**PIF under 30 - no DPI.**",
+        "**Wash, don't rinse, air-dry** the spacer.",
+        "**Air-drive nebulisers** in hypercapnic COPD.",
+      ],
+    },
+  },
 };
 
 export default revision;
