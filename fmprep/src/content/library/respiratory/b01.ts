@@ -540,4 +540,500 @@ topics.push({
   ],
 });
 
+topics.push({
+  id: "respiratory-pft-spirometry",
+  title: "Pulmonary function tests: spirometry, flow-volume loops, lung volumes and DLCO",
+  frequency: "core",
+  oneLiner:
+    "**Pulmonary function tests** measure airflow (**spirometry: FEV1, FVC, FEV1/FVC**), lung size (**TLC, RV by plethysmography or gas dilution**) and gas transfer (**DLCO**); under **ERS/ATS 2022** they are interpreted against the **lower limit of normal (z-score -1.645) from GLI equations**, classifying obstruction (FEV1/FVC below LLN), restriction (TLC below LLN) and mixed defects, with a **bronchodilator response of over 10% of the predicted FEV1 or FVC**.",
+  keywords: [
+    "spirometry",
+    "FEV1",
+    "FVC",
+    "FEV1/FVC ratio",
+    "lower limit of normal",
+    "z-score",
+    "GLI",
+    "bronchodilator reversibility",
+    "flow-volume loop",
+    "body plethysmography",
+    "TLC",
+    "residual volume",
+    "DLCO",
+    "KCO",
+    "PRISm",
+    "peak expiratory flow",
+    "FeNO",
+    "six-minute walk test",
+    "methacholine challenge",
+    "Empey index",
+  ],
+  sections: [
+    {
+      heading: "Definition and epidemiology of under-use",
+      points: [
+        "**Spirometry** measures the volume of air exhaled from full inspiration (TLC) with maximal effort: **FVC** is the total volume, **FEV1** the volume in the first second and **FEV1/FVC** the proportion exhaled in the first second (normally about 0.75-0.85 in young adults, falling with age). [ATS/ERS 2019]",
+        "**Static lung volumes** (TLC, RV, FRC) need body plethysmography, helium dilution or nitrogen washout, because spirometry cannot measure the air that stays in the lung after full expiration (**residual volume**). [ERS/ATS 2022]",
+        "**DLCO (TLCO)** measures carbon monoxide uptake across the alveolar-capillary membrane in a single 10-second breath-hold and reflects alveolar surface area, membrane thickness, capillary blood volume and haemoglobin. [ERS/ATS 2017]",
+        "**COPD is underdiagnosed worldwide** because spirometry is not done: in population studies about 70% or more of people with spirometric obstruction have no doctor diagnosis. [GOLD 2025]",
+        "In India, spirometry is largely confined to district and tertiary centres; the **INSEARCH study** estimated about 2% asthma and about 3.5% chronic bronchitis prevalence in adults by questionnaire, so the true spirometric burden is larger and mostly unconfirmed. [INSEARCH, IJTLD 2012]",
+        "Under **NP-NCD**, chronic respiratory disease is part of the NCD package, and **peak flow** is the practical screening tool in primary care where a spirometer is unavailable. [MoHFW NP-NCD 2023]",
+        "**Normal FEV1 decline** after age 25-30 is about **20-30 mL a year**; susceptible smokers lose 50-100 mL a year, and stopping smoking returns the slope towards normal (Fletcher-Peto curve). [Harrison 22e]",
+      ],
+    },
+    {
+      heading: "Indications and contraindications",
+      points: [
+        "**Diagnostic indications**: chronic breathlessness, cough or wheeze, abnormal chest X-ray, confirming **asthma (variable obstruction)** and **COPD (post-bronchodilator obstruction)**, and screening people with risk exposures. [ATS/ERS 2019]",
+        "**Monitoring indications**: COPD and ILD progression, response to therapy, drug toxicity (**amiodarone, methotrexate, bleomycin**), neuromuscular disease and post-transplant follow-up. [ATS/ERS 2019]",
+        "**Pre-operative and disability indications**: lung resection (predicted postoperative FEV1 and DLCO), upper abdominal and thoracic surgery in symptomatic patients, and occupational and compensation assessment. [ATS/ERS 2019]",
+        "**Relative contraindications** (forced expiration raises intrathoracic, intra-abdominal and intracranial pressure): **myocardial infarction within 1 week**, uncontrolled hypertension, recent pneumothorax, recent thoracic, abdominal, eye or brain surgery, haemoptysis and large aortic aneurysm. [ATS/ERS 2019]",
+        "**Infection control**: defer testing in suspected **active TB** or acute respiratory infection; use in-line bacterial/viral filters and good room ventilation. [ATS/ERS 2019]",
+        "**Withhold bronchodilators before a diagnostic BDR test**: SABA **4-6 hours**, SAMA **12 hours**, twice-daily LABA **24 hours**, and once-daily LABA or LAMA **36-48 hours**. [ATS/ERS 2019]",
+      ],
+    },
+    {
+      heading: "Physiology: why the curves look the way they do",
+      points: [
+        "**Effort-independence**: after the first 20-30% of the FVC, expiratory flow is limited by **dynamic airway compression** at the **equal pressure point**, so flow depends on lung elastic recoil and airway resistance, not on effort - which is why the FEV1 is reproducible. [Harrison 22e]",
+        "**Obstruction** (asthma, COPD, bronchiectasis) narrows the airways or loses elastic recoil, so FEV1 falls more than FVC, the ratio falls and the expiratory flow-volume limb becomes **concave ('scooped')**. [Harrison 22e]",
+        "**Air trapping** in obstruction raises **RV and RV/TLC**; in emphysema loss of recoil also raises **TLC (hyperinflation)** and destruction of alveolar walls lowers **DLCO**. [Harrison 22e]",
+        "**Parenchymal restriction** (ILD) stiffens the lung: TLC, FVC and FEV1 fall together, the ratio is normal or **high** (increased recoil holds airways open) and DLCO is low from thickened membranes and lost capillaries. [Harrison 22e]",
+        "**Extraparenchymal restriction** (obesity, kyphoscoliosis, neuromuscular weakness, pleural thickening) reduces TLC but the alveolar-capillary unit is normal, so DLCO is mildly low but **KCO (DLCO/VA) is normal or raised**. [ERS/ATS 2022]",
+        "**Neuromuscular weakness** reduces both TLC and expiratory reserve so **RV may rise**; a **fall in vital capacity of more than 25% on lying supine** suggests diaphragm weakness. [Harrison 22e]",
+        "**Upper airway obstruction** limits flow at a fixed maximum regardless of lung volume, producing a **plateau** on the flow-volume loop rather than a peak. [Harrison 22e]",
+      ],
+    },
+    {
+      heading: "Doing the test: acceptability and repeatability (ATS/ERS 2019)",
+      points: [
+        "Patient **seated, nose clip on, tight lip seal**; inhale fully and rapidly, then **blast out as hard and fast as possible** and keep going until no more air comes out, then inhale fully again for the inspiratory loop. [ATS/ERS 2019]",
+        "**Start of test**: back-extrapolated volume must be **under 5% of FVC or 0.100 L, whichever is greater**, with a sharp rise to peak flow. [ATS/ERS 2019]",
+        "**End of forced expiration** is met by a plateau (**under 0.025 L change in the last 1 second**), or **expiratory time of 15 seconds**, or FVC within repeatability of the largest previous FVC. [ATS/ERS 2019]",
+        "**Repeatability**: the two largest FVC and the two largest FEV1 values should be **within 0.150 L** in those over 6 years (within 0.100 L or 10% in children 6 or under). [ATS/ERS 2019]",
+        "Obtain at least **3 acceptable manoeuvres** (up to 8 in adults); report the **largest FEV1 and the largest FVC**, even from different blows. [ATS/ERS 2019]",
+        "Each session gets a **quality grade (A to F)**; grades A-C are usable for interpretation, and a lower grade should be reported with a caution. [ATS/ERS 2019]",
+        "**Common errors**: slow start, cough in the first second, early termination (falsely high FEV1/FVC), glottic closure, leak and submaximal inhalation. [ATS/ERS 2019]",
+      ],
+    },
+    {
+      heading: "Interpretation: LLN, z-scores and the patterns (ERS/ATS 2022)",
+      points: [
+        "Compare results with **reference equations** - **GLI 2012 spirometry**, GLI 2017 DLCO and GLI 2021 lung volumes - and call a value abnormal when it lies **below the LLN (5th percentile, z-score below -1.645)**. [ERS/ATS 2022]",
+        "**Obstruction** = **FEV1/FVC below the LLN**; the fixed ratio **0.70** overdiagnoses obstruction in the elderly and underdiagnoses it in the young, though **GOLD still uses post-BD FEV1/FVC under 0.70** for COPD. [ERS/ATS 2022; GOLD 2025]",
+        "**Restriction** can only be confirmed by a **TLC below the LLN**; a low FVC with normal ratio on spirometry alone is a '**possible restriction / non-specific pattern**' until lung volumes are measured. [ERS/ATS 2022]",
+        "**Mixed defect** = FEV1/FVC below LLN **and** TLC below LLN (for example, COPD with ILD or obesity). [ERS/ATS 2022]",
+        "**Non-specific pattern** = low FEV1 and/or FVC, normal FEV1/FVC and **normal TLC** - seen in early small-airway disease, obesity and poor effort. [ERS/ATS 2022]",
+        "**PRISm (preserved ratio impaired spirometry)** = FEV1/FVC 0.70 or more with **FEV1 under 80% predicted**; it carries higher mortality and some progress to COPD. [GOLD 2025]",
+        "**Severity in ERS/ATS 2022** is graded by FEV1 z-score: **mild -1.65 to -2.5, moderate -2.5 to -4, severe below -4**, replacing percent-predicted bands. [ERS/ATS 2022]",
+        "**GOLD severity** in COPD is still by post-BD **FEV1 % predicted**: GOLD 1 80% or more, GOLD 2 50-79%, GOLD 3 30-49%, GOLD 4 under 30%. [GOLD 2025]",
+        "**Hyperinflation** = TLC above the ULN; **air trapping** = RV/TLC above the ULN. [ERS/ATS 2022]",
+      ],
+    },
+    {
+      heading: "Bronchodilator responsiveness",
+      points: [
+        "Give **salbutamol 400 mcg (4 x 100 mcg) by MDI and spacer** and repeat spirometry after **10-15 minutes** (or ipratropium 160 mcg and wait 30 minutes). [ATS/ERS 2019]",
+        "**ERS/ATS 2022 definition**: a positive BDR is an increase in **FEV1 or FVC of more than 10% of the predicted value** for that person - this corrects the bias of the old rule against small, short and elderly patients. [ERS/ATS 2022]",
+        "**Old (2005) and GINA definition**: increase of **12% or more and 200 mL or more from baseline** in FEV1 or FVC; GINA 2025 still uses this for asthma diagnosis, so quote both. [GINA 2025; ATS/ERS 2005]",
+        "**BDR does not separate asthma from COPD**: many COPD patients have a positive BDR, and a negative BDR does not exclude asthma - especially on ICS. [GOLD 2025; GINA 2025]",
+        "**Increase in FVC with no change in ratio** after bronchodilator indicates **reduced air trapping** (volume response), common in severe COPD. [ERS/ATS 2022]",
+        "**Very large BDR** (FEV1 rise over 400 mL) in a smoker strongly suggests underlying asthma. [GOLD 2025]",
+      ],
+    },
+    {
+      heading: "Flow-volume loops",
+      points: [
+        "**Normal loop**: rapid rise to **peak expiratory flow**, then a straight linear descent to RV; the inspiratory limb is a symmetric semicircle below the axis. [Harrison 22e]",
+        "**Obstruction**: low peak and a **concave, scooped expiratory limb**; in severe emphysema the curve shows an early sharp fall then a long tail ('**church spire**' or steeple pattern from airway collapse). [Harrison 22e]",
+        "**Restriction**: a small, tall, narrow loop ('**witch's hat**') with near-normal flow for the volume, shifted towards lower volumes. [Harrison 22e]",
+        "**Fixed upper airway obstruction** (tracheal stenosis after intubation, goitre, tumour encasing the trachea): **flattening of both inspiratory and expiratory limbs** - a box shape. [Harrison 22e]",
+        "**Variable extrathoracic obstruction** (vocal cord palsy, vocal cord dysfunction, laryngeal tumour): **inspiratory limb flattened**, because negative airway pressure collapses the extrathoracic airway in inspiration. [Harrison 22e]",
+        "**Variable intrathoracic obstruction** (tracheomalacia, lower tracheal tumour): **expiratory limb flattened**, because positive pleural pressure compresses the intrathoracic airway in expiration. [Harrison 22e]",
+        "**Empey index** (FEV1 in mL divided by PEF in L/min) **over 10** suggests upper airway obstruction; the **FEF50/FIF50 ratio** is about 1 in fixed, well above 1 in variable extrathoracic and well below 1 in variable intrathoracic obstruction. [Harrison 22e]",
+        "Upper airway obstruction may only appear after **50% or more narrowing** of the airway (around 8 mm diameter), so a normal loop does not exclude early stenosis. [Harrison 22e]",
+      ],
+    },
+    {
+      heading: "Lung volumes and DLCO patterns",
+      points: [
+        "**Body plethysmography** measures all gas in the thorax including trapped air (gold standard); **helium dilution and nitrogen washout** measure only communicating gas and **underestimate TLC in severe obstruction**. [ERS/ATS 2022]",
+        "**DLCO is corrected for haemoglobin**: anaemia lowers and polycythaemia raises it; carboxyhaemoglobin in smokers also lowers it. [ERS/ATS 2017]",
+        "**Low DLCO with obstruction** points to **emphysema**; **normal or high DLCO with obstruction** points to asthma or chronic bronchitis. [Harrison 22e]",
+        "**Low DLCO with restriction and low KCO** = parenchymal disease (ILD, sarcoid, drug toxicity); **low DLCO, normal or high KCO** = extraparenchymal restriction or pneumonectomy. [ERS/ATS 2022]",
+        "**Isolated low DLCO with normal spirometry and volumes** suggests **pulmonary vascular disease** (chronic thromboembolic disease, pulmonary hypertension), early ILD, early emphysema or anaemia. [Harrison 22e]",
+        "**Raised DLCO** occurs in **diffuse alveolar haemorrhage**, polycythaemia, left-to-right shunt, asthma and obesity. [Harrison 22e]",
+        "**Combined pulmonary fibrosis and emphysema (CPFE)** gives near-normal spirometry and volumes (the two cancel) but a **disproportionately low DLCO**. [Harrison 22e]",
+      ],
+    },
+    {
+      heading: "Other bedside and lab tests: PEF, FeNO, challenge tests and 6MWT",
+      points: [
+        "**Peak expiratory flow**: best of three blows, record morning and evening for 2 weeks; **average diurnal variability over 10% in adults and over 13% in children** supports asthma. [GINA 2025]",
+        "**Occupational asthma**: serial PEF **at least 4 times a day for 3-4 weeks** covering work and rest days, analysed with OASYS, is the first objective test. [ERS 2012 occupational asthma]",
+        "**FeNO** reflects IL-13-driven airway eosinophilic inflammation: in adults **under 25 ppb is low and over 50 ppb is high** (children under 20 and over 35 ppb); ICS lower it and smoking lowers it. [ATS 2011]",
+        "**BTS/NICE/SIGN 2024** uses **FeNO 50 ppb or more in adults (35 ppb or more in children 5-16)** as a positive diagnostic test for asthma alongside blood eosinophils and spirometry. [BTS/NICE/SIGN NG245 2024]",
+        "**Methacholine challenge** measures airway hyperresponsiveness: **PD20 over 400 mcg** (or PC20 over 16 mg/mL) is normal and a normal test in a symptomatic patient off ICS makes current asthma unlikely. [ERS 2017 technical standard]",
+        "**Indirect challenges** (mannitol, exercise, eucapnic hyperventilation) are more specific for asthma and exercise-induced bronchoconstriction; a **fall in FEV1 of 10% or more** after exercise is positive. [GINA 2025]",
+        "**Six-minute walk test**: 30 m corridor, self-paced, standardised encouragement; healthy adults walk about **400-700 m**, the minimal important difference is about **25-33 m**, and desaturation of **4% or more or below 88%** is significant. [ERS/ATS 2014]",
+        "**Respiratory muscle tests**: **MIP (maximal inspiratory pressure)** and **SNIP** assess diaphragm strength; MIP more negative than -80 cmH2O excludes significant inspiratory weakness. [ERS 2019 respiratory muscle statement]",
+        "**Oscillometry (FOT)** needs only tidal breathing and detects small-airway disease; it is useful in children and in those unable to perform forced manoeuvres. [ERS 2020 oscillometry standard]",
+      ],
+    },
+    {
+      heading: "Using PFTs in common clinical scenarios",
+      points: [
+        "**Asthma**: obstruction that is **variable** - positive BDR, excessive PEF variability, positive challenge or improvement after 4 weeks of ICS (FEV1 rise over 12% and 200 mL); spirometry may be normal between attacks. [GINA 2025]",
+        "**COPD**: **post-BD FEV1/FVC under 0.70** in a symptomatic, exposed person; repeat spirometry if the ratio is between 0.60 and 0.80 because values near the threshold may change. [GOLD 2025]",
+        "**ILD**: reduced FVC and TLC with low DLCO; a **fall in FVC of 10% (or 5-10% with other progression)** over a year defines progressive pulmonary fibrosis. [ATS/ERS/JRS/ALAT 2022]",
+        "**Neuromuscular disease** (GBS, myasthenia, MND): track **FVC and MIP**; **FVC under 20 mL/kg, MIP weaker than -30 cmH2O or MEP under 40 cmH2O** predicts the need for ventilation in GBS (the 20-30-40 rule). [Harrison 22e]",
+        "**Lung resection**: if FEV1 and DLCO are both over 80% predicted, proceed; otherwise calculate **predicted postoperative FEV1 and DLCO**, and if either is under 60% do cardiopulmonary exercise testing. [ACCP 2013; ERS/ESTS 2009]",
+        "**Drug monitoring**: baseline and serial **DLCO and FVC** for amiodarone and bleomycin; a fall in DLCO of more than about 10-15% from baseline prompts review. [Harrison 22e]",
+        "**Post-TB lung disease** in India commonly shows **mixed or restrictive patterns** with fixed obstruction, and is often misdiagnosed as COPD - see the post-TB lung disease topic. [Harrison 22e]",
+      ],
+    },
+    {
+      heading: "Special situations",
+      points: [
+        "**Children**: spirometry is feasible from about **age 5-6**; ratio is normally higher (often over 0.90), so a fixed 0.70 cut-off misses most childhood obstruction - use LLN. [ERS/ATS 2022]",
+        "**Elderly**: falling elastic recoil lowers the normal ratio; over age 70 a ratio of 0.65-0.70 may be normal and the **LLN prevents overdiagnosis**. [ERS/ATS 2022]",
+        "**Pregnancy**: FEV1, FVC and PEF do not change significantly, so a reduced FEV1 in pregnancy is disease, not physiology; FRC falls by about 20% from the raised diaphragm. [Williams Obstetrics 26e]",
+        "**Obesity**: reduces **ERV and FRC** first; TLC falls only in severe obesity, and DLCO is often normal or high. [Harrison 22e]",
+        "**Race and ethnicity**: ATS 2023 recommends **race-neutral GLI Global equations**; Indian adults have historically been interpreted with Indian regional or GLI 'Other' equations, which lowers predicted values. [ATS 2023]",
+        "**Resource-limited setting**: a **portable spirometer or PEF meter** with a spacer-based BDR is adequate for diagnosing asthma and COPD at a district hospital. [ICMR STW 2023]",
+      ],
+    },
+    {
+      heading: "Errors, pitfalls and safety",
+      points: [
+        "**Early termination** shortens FVC and falsely raises FEV1/FVC, hiding obstruction; check that the volume-time curve reaches a plateau. [ATS/ERS 2019]",
+        "**Submaximal effort** gives a rounded, low peak and a falsely low FVC that may look restrictive - never call restriction without TLC. [ERS/ATS 2022]",
+        "**Spirometry-induced bronchospasm** (falling FEV1 with each blow) suggests very reactive airways; stop and give a bronchodilator. [ATS/ERS 2019]",
+        "**Syncope and chest pain** are rare adverse events; seat the patient and stop if symptoms occur. [ATS/ERS 2019]",
+        "**Percent predicted cut-offs of 80%** misclassify short, elderly and young people; LLN and z-scores are age-, sex- and height-appropriate. [ERS/ATS 2022]",
+        "**Borderline results near the LLN** (z-score -1.0 to -2.0) carry diagnostic uncertainty and should be interpreted with the clinical picture and repeat testing. [ERS/ATS 2022]",
+      ],
+    },
+    {
+      heading: "Referral, follow-up and monitoring",
+      points: [
+        "Refer for **full PFTs (volumes, DLCO)** when spirometry shows low FVC with normal ratio, unexplained breathlessness, suspected ILD or pulmonary vascular disease. [ERS/ATS 2022]",
+        "**COPD**: repeat spirometry at least **once a year** to track decline and recheck the diagnosis. [GOLD 2025]",
+        "**Asthma**: measure lung function at diagnosis, **3-6 months after starting ICS** (personal best) and then periodically, at least every 1-2 years. [GINA 2025]",
+        "**ILD**: FVC and DLCO every **3-6 months** to detect progression and guide antifibrotic therapy. [ATS/ERS/JRS/ALAT 2022]",
+        "**Neuromuscular disease**: FVC (sitting and supine) and MIP every **3-6 months**, more often in acute disease such as GBS. [Harrison 22e]",
+        "Refer for **bronchoscopy or CT** when the flow-volume loop shows an **upper airway obstruction pattern**. [Harrison 22e]",
+      ],
+    },
+    {
+      heading: "Latest guideline updates (2019-2026)",
+      points: [
+        "**ATS/ERS 2019 spirometry standard**: new acceptability criteria (BEV under 5% FVC or 0.100 L, 15-second end-of-test), repeatability 0.150 L, quality grades A-F and standard withholding times. [ATS/ERS 2019]",
+        "**ERS/ATS 2022 interpretive strategy**: use **LLN and z-scores**, severity by z-score (-1.65/-2.5/-4), **BDR over 10% of predicted**, 'non-specific pattern' and PRISm recognised. [ERS/ATS 2022]",
+        "**ATS 2023 statement**: stop using race-specific equations and adopt **GLI Global race-neutral equations** for spirometry. [ATS 2023]",
+        "**GOLD 2025** keeps the **fixed post-BD ratio under 0.70** for COPD diagnosis but describes **PRISm** and 'pre-COPD' and advises repeat spirometry near the threshold. [GOLD 2025]",
+        "**BTS/NICE/SIGN 2024 asthma guideline** makes **FeNO and blood eosinophils** first-line objective tests, with spirometry and BDR, before PEF variability or challenge tests. [BTS/NICE/SIGN NG245 2024]",
+        "**GINA 2025** still uses the **12% and 200 mL** BDR rule and PEF variability over 10% for adults - a deliberate difference from ERS/ATS 2022. [GINA 2025]",
+        "**GLI 2017 DLCO and GLI 2021 lung-volume** reference equations are now the recommended normal values for gas transfer and volumes. [ERS/ATS 2022]",
+      ],
+    },
+    {
+      heading: "Exam and viva angle",
+      points: [
+        "Classic question: '**Draw flow-volume loops** of normal, obstructive, restrictive and the three upper airway obstruction patterns' - label PEF, TLC and RV on the volume axis. [Harrison 22e]",
+        "Classic question: '**Differentiate obstructive from restrictive** lung disease on PFTs' - ratio, TLC, RV/TLC, DLCO, loop shape. [ERS/ATS 2022]",
+        "**Common mistake**: diagnosing restriction from a low FVC alone; restriction needs **TLC below LLN**. [ERS/ATS 2022]",
+        "**Common mistake**: quoting only the 12% and 200 mL BDR rule; state the **2022 'over 10% of predicted'** definition too. [ERS/ATS 2022]",
+        "**Common mistake**: forgetting that the **DLCO must be corrected for haemoglobin** before calling it low in an anaemic Indian patient. [ERS/ATS 2017]",
+        "Viva: '**Why is the FEV1/FVC normal or high in ILD?**' - increased elastic recoil holds airways open and both volumes fall together. [Harrison 22e]",
+        "Viva: '**What raises DLCO?**' - alveolar haemorrhage, polycythaemia, left-to-right shunt, asthma, obesity, exercise. [Harrison 22e]",
+      ],
+    },
+  ],
+  tables: [
+    {
+      heading: "PFT patterns at a glance (ERS/ATS 2022)",
+      columns: ["Pattern", "FEV1/FVC", "FVC", "TLC", "RV/TLC", "DLCO", "Examples"],
+      rows: [
+        ["Obstructive", "Below LLN", "Normal or low", "Normal or high", "High", "Normal (asthma) or low (emphysema)", "Asthma, COPD, bronchiectasis"],
+        ["Restrictive - parenchymal", "Normal or high", "Low", "Below LLN", "Normal", "Low, KCO low", "IPF, sarcoidosis, drug toxicity"],
+        ["Restrictive - extraparenchymal", "Normal", "Low", "Below LLN", "Normal or high", "Low or normal, KCO normal or high", "Obesity, kyphoscoliosis, neuromuscular, pleural thickening"],
+        ["Mixed", "Below LLN", "Low", "Below LLN", "Variable", "Variable", "COPD with ILD, post-TB lung disease"],
+        ["Non-specific", "Normal", "Low", "Normal", "Normal or high", "Normal", "Small airway disease, obesity, poor effort"],
+        ["PRISm (GOLD)", "0.70 or more", "Low", "Not measured", "Not measured", "Not measured", "Smokers at risk, obesity"],
+        ["Isolated low DLCO", "Normal", "Normal", "Normal", "Normal", "Low", "Pulmonary vascular disease, early ILD, anaemia"],
+      ],
+    },
+    {
+      heading: "Flow-volume loop patterns",
+      columns: ["Pattern", "Expiratory limb", "Inspiratory limb", "Key index", "Causes"],
+      rows: [
+        ["Normal", "Sharp peak, linear fall", "Semicircular", "FEF50/FIF50 about 0.9-1", "Healthy"],
+        ["Obstructive", "Low peak, concave (scooped)", "Near normal", "FEV1/FVC below LLN", "Asthma, COPD"],
+        ["Restrictive", "Tall, narrow, small volume", "Small", "TLC below LLN", "ILD, chest wall, obesity"],
+        ["Fixed upper airway obstruction", "Flat plateau", "Flat plateau", "Empey index over 10; FEF50/FIF50 about 1", "Post-intubation tracheal stenosis, goitre"],
+        ["Variable extrathoracic", "Normal", "Flattened", "FEF50/FIF50 well above 1", "Vocal cord palsy, vocal cord dysfunction"],
+        ["Variable intrathoracic", "Flattened", "Normal", "FEF50/FIF50 well below 1", "Tracheomalacia, lower tracheal tumour"],
+      ],
+    },
+    {
+      heading: "Severity grading: ERS/ATS 2022 versus GOLD",
+      columns: ["System", "Measure", "Mild", "Moderate", "Severe", "Very severe"],
+      rows: [
+        ["ERS/ATS 2022 (any disease)", "FEV1 z-score", "-1.65 to -2.5", "-2.5 to -4", "Below -4", "Not separated"],
+        ["GOLD 2025 (COPD)", "Post-BD FEV1 % predicted", "GOLD 1: 80% or more", "GOLD 2: 50-79%", "GOLD 3: 30-49%", "GOLD 4: under 30%"],
+      ],
+    },
+    {
+      heading: "Key cut-offs for PFT-related tests",
+      columns: ["Test", "Normal or positive cut-off", "Source"],
+      rows: [
+        ["Obstruction", "FEV1/FVC below LLN (z below -1.645); GOLD under 0.70 post-BD", "ERS/ATS 2022; GOLD 2025"],
+        ["BDR (2022)", "FEV1 or FVC rise over 10% of predicted", "ERS/ATS 2022"],
+        ["BDR (GINA)", "FEV1 rise 12% or more and 200 mL or more from baseline", "GINA 2025"],
+        ["PEF variability", "Average diurnal over 10% adults, over 13% children", "GINA 2025"],
+        ["FeNO", "Adults 50 ppb or more, children 35 ppb or more positive", "BTS/NICE/SIGN 2024"],
+        ["Methacholine", "PD20 over 400 mcg or PC20 over 16 mg/mL normal", "ERS 2017"],
+        ["Repeatability", "Two best FEV1 and FVC within 0.150 L", "ATS/ERS 2019"],
+        ["6MWT", "MID about 25-33 m; desaturation 4% or more significant", "ERS/ATS 2014"],
+        ["Supine VC fall", "Over 25% suggests diaphragm weakness", "Harrison 22e"],
+      ],
+    },
+    {
+      heading: "Drugs used in or withheld for lung function testing",
+      columns: ["Drug", "Dose and route", "Duration/titration", "Key adverse effects / contraindications"],
+      rows: [
+        ["Salbutamol (BDR test)", "400 mcg (4 x 100 mcg) MDI via spacer, one puff at a time", "Repeat spirometry at 10-15 min; withhold SABA 4-6 h before", "Tremor, tachycardia; caution in arrhythmia"],
+        ["Ipratropium (BDR test)", "160 mcg MDI via spacer", "Repeat spirometry at 30 min; withhold SAMA 12 h before", "Dry mouth; caution in glaucoma, urinary retention"],
+        ["Formoterol or salmeterol (LABA)", "Usual maintenance inhaled dose", "Withhold 24 h before diagnostic BDR or challenge", "Withholding may destabilise unstable asthma - do not withhold if severe"],
+        ["Tiotropium, indacaterol, vilanterol (once-daily)", "Usual maintenance inhaled dose", "Withhold 36-48 h before diagnostic BDR", "As above"],
+        ["Methacholine (challenge)", "Inhaled, doubling or quadrupling doses by dosimeter or nebuliser", "Stop at 20% FEV1 fall (PD20) or maximum dose", "Bronchospasm; avoid if FEV1 under 60% predicted or under 1.5 L, recent MI or stroke"],
+        ["Mannitol (indirect challenge)", "Inhaled dry powder, escalating to 635 mg cumulative", "Stop at 15% FEV1 fall", "Cough, bronchospasm; same contraindications as methacholine"],
+        ["Montelukast", "10 mg oral once daily", "Withhold 24 h before a challenge test", "Neuropsychiatric effects (boxed warning)"],
+      ],
+    },
+  ],
+  redFlags: [
+    "Flattened inspiratory or expiratory limb (upper airway obstruction) - urgent CT neck/thorax and bronchoscopy",
+    "FVC under 20 mL/kg or MIP weaker than -30 cmH2O in GBS or myasthenia - ICU referral",
+    "Rapid fall of FVC 10% or more in a year in ILD - progressive fibrosis, refer",
+    "Isolated low DLCO with breathlessness - exclude pulmonary embolism and pulmonary hypertension",
+    "Progressive bronchospasm during spirometry - stop testing and treat",
+    "New restrictive pattern or DLCO fall on amiodarone, methotrexate or bleomycin - stop drug and refer",
+  ],
+  pearls: [
+    "Obstruction = ratio below LLN; restriction = TLC below LLN; never call restriction from spirometry alone.",
+    "2022 BDR = over 10% of predicted FEV1 or FVC; GINA keeps 12% and 200 mL - quote both.",
+    "Emphysema has a low DLCO; asthma has a normal or high DLCO.",
+    "Low DLCO with high KCO = extraparenchymal restriction or pneumonectomy.",
+    "Variable extrathoracic obstruction flattens inspiration; variable intrathoracic flattens expiration; fixed flattens both.",
+    "Empey index (FEV1 mL / PEF L/min) over 10 = think upper airway obstruction.",
+    "ILD ratio is normal or high because recoil holds the airways open.",
+    "Raised DLCO: blood in the alveoli (haemorrhage), more blood (polycythaemia, shunt), asthma, obesity.",
+    "CPFE: near-normal spirometry, very low DLCO.",
+  ],
+  mcqs: [
+    {
+      id: "respiratory-pft-spirometry-q1",
+      stem: "Per the ERS/ATS 2022 interpretive strategy, a positive bronchodilator response is defined as:",
+      options: [
+        "FEV1 rise of 12% and 200 mL from baseline",
+        "FEV1 rise of 15% from baseline",
+        "FEV1 or FVC rise of more than 10% of the predicted value",
+        "PEF rise of 20% from baseline",
+      ],
+      answer: 2,
+      explanation:
+        "ERS/ATS 2022 replaced the 12% and 200 mL from-baseline rule with a change of more than 10% of the predicted FEV1 or FVC, reducing bias against small and elderly patients. The 12% and 200 mL rule is the older ATS/ERS 2005 definition still used by GINA; 15% and PEF 20% are not current spirometric definitions.",
+      difficulty: "moderate",
+    },
+    {
+      id: "respiratory-pft-spirometry-q2",
+      stem: "A 45-year-old woman develops stridor 3 months after prolonged intubation. Her flow-volume loop shows flattening of both the inspiratory and expiratory limbs. The most likely lesion is:",
+      options: [
+        "Fixed tracheal stenosis",
+        "Unilateral vocal cord palsy",
+        "Tracheomalacia",
+        "Severe asthma",
+      ],
+      answer: 0,
+      explanation:
+        "Flattening of both limbs indicates a fixed upper airway obstruction, classically post-intubation tracheal stenosis. Vocal cord palsy is a variable extrathoracic lesion flattening only the inspiratory limb, tracheomalacia is variable intrathoracic flattening only the expiratory limb, and asthma gives a scooped expiratory limb.",
+      difficulty: "easy",
+    },
+    {
+      id: "respiratory-pft-spirometry-q3",
+      stem: "A 60-year-old man has FEV1/FVC 0.62 (below LLN), TLC 125% predicted, RV/TLC raised and DLCO 45% predicted (Hb normal). The pattern best fits:",
+      options: [
+        "Chronic asthma",
+        "Idiopathic pulmonary fibrosis",
+        "Chronic bronchitis without emphysema",
+        "Emphysema",
+      ],
+      answer: 3,
+      explanation:
+        "Obstruction with hyperinflation, air trapping and a low DLCO indicates destruction of the alveolar-capillary surface, which is emphysema. Asthma and chronic bronchitis cause obstruction with a normal or raised DLCO, and IPF gives a restrictive pattern with a normal or high ratio and low TLC.",
+      difficulty: "moderate",
+    },
+    {
+      id: "respiratory-pft-spirometry-q4",
+      stem: "A very obese man has reduced TLC and a reduced DLCO, but the KCO (DLCO/VA) is raised. This pattern indicates:",
+      options: [
+        "Interstitial lung disease",
+        "Extraparenchymal restriction",
+        "Pulmonary hypertension",
+        "Emphysema",
+      ],
+      answer: 1,
+      explanation:
+        "When the lung itself is normal but cannot expand (obesity, chest wall or neuromuscular disease), DLCO falls with the smaller alveolar volume while KCO is normal or raised. ILD lowers both DLCO and KCO, pulmonary hypertension gives an isolated low DLCO with normal volumes, and emphysema raises TLC.",
+      difficulty: "hard",
+    },
+    {
+      id: "respiratory-pft-spirometry-q5",
+      stem: "Which of the following raises the measured DLCO?",
+      options: [
+        "Anaemia",
+        "Pulmonary embolism",
+        "Diffuse alveolar haemorrhage",
+        "Cigarette smoking just before the test",
+      ],
+      answer: 2,
+      explanation:
+        "Blood in the alveoli binds carbon monoxide and raises DLCO in diffuse alveolar haemorrhage. Anaemia lowers DLCO (less haemoglobin), pulmonary embolism lowers it by reducing capillary blood volume, and recent smoking lowers it through carboxyhaemoglobin back-pressure.",
+      difficulty: "easy",
+    },
+  ],
+  theory: [
+    {
+      id: "respiratory-pft-spirometry-t1",
+      paper: "I",
+      kind: "long",
+      marks: 10,
+      minutes: 18,
+      frequency: "core",
+      question:
+        "Describe spirometry: technique, quality criteria and interpretation as per current ERS/ATS standards. Draw flow-volume loops in obstructive, restrictive and upper airway obstruction. Add a note on DLCO.",
+      openingLines: [
+        "Spirometry measures the volume and speed of air exhaled from full inspiration with maximal effort, giving FEV1, FVC and the FEV1/FVC ratio.",
+        "Under ERS/ATS 2022, results are compared with GLI reference equations and abnormal values are those below the lower limit of normal (z-score -1.645).",
+      ],
+      answer: [
+        {
+          heading: "Indications and contraindications",
+          points: [
+            "Diagnosis of breathlessness, asthma, COPD, ILD; monitoring; pre-operative; occupational.",
+            "Relative contraindications: MI within 1 week, recent surgery, pneumothorax, haemoptysis, aortic aneurysm.",
+          ],
+        },
+        {
+          heading: "Technique and quality (ATS/ERS 2019)",
+          points: [
+            "Seated, nose clip, full inspiration, maximal blast, continue to plateau or 15 s.",
+            "BEV under 5% FVC or 0.100 L; 3 acceptable blows; repeatability within 0.150 L; grade A-F.",
+          ],
+        },
+        {
+          heading: "Interpretation (ERS/ATS 2022)",
+          points: [
+            "Obstruction FEV1/FVC below LLN; restriction TLC below LLN; mixed; non-specific; PRISm.",
+            "Severity by FEV1 z-score: -1.65 to -2.5 mild, -2.5 to -4 moderate, below -4 severe.",
+            "BDR over 10% of predicted FEV1 or FVC (GINA: 12% and 200 mL).",
+          ],
+        },
+        {
+          heading: "Flow-volume loops",
+          points: [
+            "Normal, obstructive (scooped), restrictive (witch's hat).",
+            "Fixed UAO both limbs flat; variable extrathoracic inspiratory flat; variable intrathoracic expiratory flat.",
+          ],
+        },
+        {
+          heading: "DLCO",
+          points: [
+            "Single-breath CO uptake, 10 s breath-hold, Hb corrected.",
+            "Low: emphysema, ILD, pulmonary vascular disease, anaemia; high: haemorrhage, polycythaemia, shunt, asthma.",
+            "KCO separates parenchymal from extraparenchymal restriction.",
+          ],
+        },
+        {
+          heading: "Pattern table",
+          points: ["Tabulate ratio, FVC, TLC, RV/TLC and DLCO for obstructive, restrictive and mixed."],
+        },
+      ],
+      mustDraw: [
+        "Flow-volume loops: normal, obstructive, restrictive, fixed, variable extrathoracic, variable intrathoracic",
+        "Volume-time curve with FEV1 and FVC marked",
+      ],
+      markSplit: [
+        { part: "Technique and quality", marks: 2 },
+        { part: "Interpretation and BDR", marks: 3 },
+        { part: "Flow-volume loops", marks: 3 },
+        { part: "DLCO", marks: 2 },
+      ],
+      keywords: ["FEV1", "FVC", "LLN", "z-score", "GLI", "BDR", "flow-volume loop", "DLCO", "KCO"],
+    },
+    {
+      id: "respiratory-pft-spirometry-t2",
+      paper: "I",
+      kind: "differentiate",
+      marks: 5,
+      minutes: 9,
+      frequency: "common",
+      question: "Differentiate obstructive and restrictive lung disease on pulmonary function tests.",
+      openingLines: [
+        "Obstructive disease reduces airflow out of the lungs (FEV1/FVC below LLN), while restrictive disease reduces lung volume (TLC below LLN).",
+        "Lung volumes and DLCO are needed to confirm restriction and to separate parenchymal from extraparenchymal causes.",
+      ],
+      answer: [
+        {
+          heading: "Spirometry",
+          points: [
+            "Obstructive: FEV1 low, FVC normal or low, ratio below LLN, scooped loop.",
+            "Restrictive: FEV1 and FVC low proportionally, ratio normal or high, witch's hat loop.",
+          ],
+        },
+        {
+          heading: "Lung volumes",
+          points: [
+            "Obstructive: TLC normal or high, RV and RV/TLC high (air trapping).",
+            "Restrictive: TLC below LLN, RV low or normal.",
+          ],
+        },
+        {
+          heading: "DLCO",
+          points: [
+            "Obstructive: low in emphysema, normal or high in asthma.",
+            "Restrictive: low with low KCO in ILD; normal or high KCO in extraparenchymal causes.",
+          ],
+        },
+        {
+          heading: "Examples",
+          points: [
+            "Obstructive: asthma, COPD, bronchiectasis, bronchiolitis obliterans.",
+            "Restrictive: ILD, obesity, kyphoscoliosis, neuromuscular disease, pleural thickening.",
+          ],
+        },
+      ],
+      mustDraw: ["Side-by-side flow-volume loops and a comparison table"],
+      markSplit: [
+        { part: "Spirometry and loops", marks: 2 },
+        { part: "Volumes and DLCO", marks: 2 },
+        { part: "Examples", marks: 1 },
+      ],
+      keywords: ["obstructive", "restrictive", "TLC", "RV/TLC", "DLCO", "KCO"],
+    },
+  ],
+  references: [
+    "Graham BL et al. Standardization of Spirometry 2019 Update. ATS/ERS Technical Statement, Am J Respir Crit Care Med 2019",
+    "Stanojevic S et al. ERS/ATS technical standard on interpretive strategies for routine lung function tests, Eur Respir J 2022",
+    "Bhakta NR et al. Race and Ethnicity in Pulmonary Function Test Interpretation: An Official ATS Statement, 2023",
+    "Graham BL et al. ERS/ATS standards for single-breath carbon monoxide uptake in the lung, Eur Respir J 2017",
+    "Global Initiative for Chronic Obstructive Lung Disease (GOLD) Report 2025",
+    "Global Initiative for Asthma (GINA) Strategy Report 2025",
+    "BTS/NICE/SIGN Asthma: diagnosis, monitoring and chronic asthma management (NG245), 2024",
+    "Harrison's Principles of Internal Medicine, 22nd edition, 2025",
+  ],
+});
+
 export default topics;

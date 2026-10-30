@@ -504,4 +504,490 @@ topics.push({
   ],
 });
 
+topics.push({
+  id: "respiratory-alveolar-haemorrhage-vasculitis",
+  title: "Diffuse alveolar haemorrhage and pulmonary vasculitis",
+  frequency: "less-common",
+  oneLiner:
+    "**Diffuse alveolar haemorrhage (DAH)** is bleeding into the alveolar spaces from the pulmonary microcirculation, recognised by the triad of **haemoptysis, a falling haemoglobin and diffuse alveolar infiltrates** with hypoxaemia, confirmed by **progressively bloodier BAL aliquots** and a **raised DLCO**; the commonest treatable cause is **pulmonary capillaritis of ANCA-associated vasculitis or anti-GBM disease**, treated with **pulse methylprednisolone plus rituximab or cyclophosphamide**, while in India **leptospirosis** is a major infective cause.",
+  keywords: [
+    "DAH",
+    "diffuse alveolar haemorrhage",
+    "pulmonary capillaritis",
+    "pulmonary-renal syndrome",
+    "granulomatosis with polyangiitis",
+    "Wegener",
+    "microscopic polyangiitis",
+    "anti-GBM disease",
+    "Goodpasture",
+    "ANCA",
+    "PR3",
+    "MPO",
+    "haemosiderin-laden macrophages",
+    "PEXIVAS",
+    "rituximab",
+    "cyclophosphamide",
+    "avacopan",
+    "leptospirosis pulmonary haemorrhage",
+    "plasma exchange",
+    "Chapel Hill",
+  ],
+  sections: [
+    {
+      heading: "Definition and epidemiology",
+      points: [
+        "**DAH** is a clinicopathological syndrome of widespread intra-alveolar bleeding from **alveolar capillaries, arterioles and venules**, distinct from haemoptysis arising in the bronchial circulation (bronchiectasis, TB, tumour). [Harrison 22e]",
+        "**Pulmonary vasculitis** means inflammation of the pulmonary vessels; in practice it is mostly **small-vessel ANCA-associated vasculitis (AAV)** - GPA, MPA and EGPA - plus anti-GBM disease, and rarely Behcet disease and Takayasu arteritis involving the pulmonary arteries. [Chapel Hill 2012]",
+        "**ANCA-associated vasculitis** has an annual incidence of about **10-20 per million** in Europe, peaks at **60-70 years**, and is classified by antibody (PR3 or MPO) as well as by clinical syndrome. [Harrison 22e]",
+        "**Anti-GBM disease** is rare (about **1 per million per year**) with a bimodal age distribution - young men with lung haemorrhage (often smokers) and older women with isolated nephritis. [KDIGO 2024]",
+        "**DAH occurs in a minority of AAV patients** - more often in MPA than GPA - but it is the manifestation with the highest early mortality, roughly doubling the risk of death. [EULAR 2022]",
+        "**In India**, Indian tertiary-centre series (PGIMER, CMC Vellore, AIIMS) report **GPA as the commonest AAV**, often presenting late with renal failure, and AAV is frequently first treated as **tuberculosis** because of cavitating nodules. [Indian J Rheumatol 2020]",
+        "**Leptospirosis pulmonary haemorrhage syndrome** is the most important infective cause of DAH in India, seen in monsoon outbreaks in **Kerala, Gujarat, Maharashtra, Tamil Nadu, Karnataka and Andaman**, with mortality often over 50% once it develops. [NCDC Leptospirosis 2015]",
+      ],
+    },
+    {
+      heading: "Aetiology - three histological patterns",
+      points: [
+        "**Pulmonary capillaritis** (neutrophil infiltration and fibrinoid necrosis of alveolar septa): **GPA, MPA, anti-GBM disease, SLE, antiphospholipid syndrome, IgA vasculitis, cryoglobulinaemia, Behcet** and drug-induced ANCA vasculitis (**propylthiouracil, hydralazine, levamisole-cut cocaine**). [Harrison 22e]",
+        "**Bland pulmonary haemorrhage** (bleeding without inflammation): **coagulopathy, thrombocytopenia, anticoagulants and antiplatelets, mitral stenosis, severe left heart failure**, idiopathic pulmonary haemosiderosis in children, and anti-GBM disease in some cases. [Harrison 22e]",
+        "**Diffuse alveolar damage with haemorrhage**: ARDS, **haematopoietic stem cell transplant** (peri-engraftment DAH), cytotoxic drugs (amiodarone, nitrofurantoin, bleomycin), crack cocaine inhalation and radiation. [Harrison 22e]",
+        "**Infections causing DAH**: **leptospirosis** (most important in India), **dengue and falciparum malaria**, **hantavirus**, scrub typhus, influenza and COVID-19, CMV and Staphylococcus aureus sepsis in the immunocompromised. [Harrison 22e]",
+        "**Mitral stenosis** (rheumatic, common in India) causes haemoptysis from bronchial varices and pulmonary apoplexy and, with chronic leak, **haemosiderosis** - exclude it with echocardiography in every case. [Braunwald 12e]",
+        "**Smoking, hydrocarbon exposure and infection** unmask lung haemorrhage in anti-GBM disease by exposing the normally hidden alveolar basement membrane epitope. [KDIGO 2024]",
+      ],
+    },
+    {
+      heading: "Pathophysiology - why the signs and the tests look as they do",
+      points: [
+        "**ANCA-mediated injury**: cytokine-primed neutrophils express **PR3 or MPO** on their surface; ANCA binds, activates the neutrophils, which release reactive oxygen species, proteases and **neutrophil extracellular traps** that destroy capillary walls (necrotising, pauci-immune vasculitis). [Harrison 22e]",
+        "**Alternative complement pathway (C5a)** amplifies neutrophil activation in AAV - the rationale for the oral **C5a receptor blocker avacopan**. [ADVOCATE NEJM 2021]",
+        "**Anti-GBM disease**: IgG autoantibodies against the **non-collagenous (NC1) domain of the alpha-3 chain of type IV collagen** bind the glomerular and alveolar basement membranes, giving **linear IgG staining** on immunofluorescence. [KDIGO 2024]",
+        "**Pulmonary-renal syndrome**: the alveolar and glomerular capillaries share structure and target antigens, so DAH and **rapidly progressive glomerulonephritis** occur together - AAV causes most cases, anti-GBM disease most of the rest. [Harrison 22e]",
+        "**Why DLCO rises**: free haemoglobin in the alveoli binds inhaled carbon monoxide, so **DLCO rises (often over 130% of predicted or by over 30%)** in acute bleeding - the only common cause of a raised DLCO with infiltrates. [Harrison 22e]",
+        "**Why haemoptysis may be absent**: alveolar volume is large and blood may not reach the large airways, so **up to one-third have no haemoptysis** and present only with anaemia, hypoxaemia and infiltrates. [Harrison 22e]",
+        "**Haemosiderin-laden macrophages** appear in BAL about **48-72 hours** after bleeding as macrophages digest red cells; they persist for weeks, so they show recent or recurrent bleeding, not its timing. [Harrison 22e]",
+        "**Granuloma formation in GPA** causes necrotising nodules that **cavitate**, sinus and nasal destruction (saddle nose) and **subglottic stenosis** - these are absent in MPA, which is a pure small-vessel vasculitis without granulomas. [Harrison 22e]",
+      ],
+    },
+    {
+      heading: "Classification - Chapel Hill 2012 and ACR/EULAR 2022",
+      points: [
+        "**Chapel Hill 2012 nomenclature**: large-vessel (Takayasu, giant cell arteritis), medium-vessel (PAN, Kawasaki), small-vessel - **ANCA-associated (MPA, GPA, EGPA)** and **immune-complex (anti-GBM, cryoglobulinaemic, IgA vasculitis, hypocomplementaemic urticarial)** - and variable-vessel (Behcet, Cogan). [Chapel Hill 2012]",
+        "**ACR/EULAR 2022 GPA classification** (after diagnosing small- or medium-vessel vasculitis): nasal bloody discharge, ulcers or crusting **+3**, cartilaginous involvement **+2**, conductive hearing loss +1, **c-ANCA or PR3-ANCA +5**, lung nodules, mass or cavitation +2, granuloma on biopsy +2, sinus inflammation on imaging +1, pauci-immune GN +1, p-ANCA or MPO-ANCA -1, eosinophils 1000/microlitre or more -4; **score 5 or more = GPA**. [ACR/EULAR 2022]",
+        "**ACR/EULAR 2022 MPA classification**: **p-ANCA or MPO-ANCA +6**, fibrosis or ILD on chest imaging +3, pauci-immune GN +3, nasal involvement -3, c-ANCA or PR3-ANCA -1, eosinophils 1000/microlitre or more -4; **score 5 or more = MPA**. [ACR/EULAR 2022]",
+        "**These are classification criteria for research**, not diagnostic criteria; diagnosis needs clinical judgement, ANCA and, where possible, tissue. [ACR/EULAR 2022]",
+        "**Disease severity (EULAR 2022)**: **organ- or life-threatening** disease (DAH, RPGN, mononeuritis, cardiac, CNS) versus **non-organ-threatening** (limited sinus, skin, arthritis) - the split that decides induction intensity. [EULAR 2022]",
+        "**Severity of DAH** is graded clinically by hypoxaemia: mild (on room air or low-flow oxygen), moderate (high FiO2 or NIV) and severe (**mechanical ventilation**), the last carrying the worst prognosis. [KDIGO 2024]",
+      ],
+    },
+    {
+      heading: "Clinical features - history",
+      points: [
+        "**Acute or subacute breathlessness, cough and haemoptysis** over days, often with fever - easily mistaken for pneumonia; haemoptysis ranges from streaks to frank blood and is absent in up to one-third. [Harrison 22e]",
+        "**Prodrome of systemic vasculitis** for weeks to months: fever, weight loss, myalgia, **arthralgia**, night sweats - also mistaken for TB in India. [Harrison 22e]",
+        "**ENT clues to GPA**: chronic sinusitis, **bloody nasal crusts**, epistaxis, nasal septal perforation, **saddle nose**, otitis media with conductive deafness, and hoarseness or stridor from **subglottic stenosis**. [ACR/EULAR 2022]",
+        "**Renal clues**: reduced urine output, **cola-coloured urine**, oedema and new hypertension from rapidly progressive glomerulonephritis. [KDIGO 2024]",
+        "**Other organs**: purpura and skin ulcers, **mononeuritis multiplex (foot drop)**, red eye (scleritis), orbital mass and proptosis. [Harrison 22e]",
+        "**Ask about drugs and exposures**: propylthiouracil, hydralazine, anticoagulants, antiplatelets, cocaine, smoking, hydrocarbons, and **recent wading through floodwater, paddy fields or sewage** (leptospirosis). [NCDC Leptospirosis 2015]",
+        "**Ask about SLE features and pregnancy losses** (SLE, antiphospholipid syndrome), palpitations and orthopnoea (mitral stenosis), and transplant or chemotherapy history. [Harrison 22e]",
+      ],
+    },
+    {
+      heading: "Examination findings",
+      points: [
+        "**Tachypnoea, hypoxaemia and pallor** with often **surprisingly few chest signs** - scattered crackles in the presence of widespread infiltrates. [Harrison 22e]",
+        "**Nose and ears**: crusting, septal perforation, **saddle-nose deformity**, otitis media - GPA until proved otherwise. [ACR/EULAR 2022]",
+        "**Skin**: **palpable purpura**, nail-fold infarcts, livedo reticularis (APS) and malar rash (SLE). [Harrison 22e]",
+        "**Eyes**: scleritis, episcleritis, orbital pseudotumour in GPA; **conjunctival suffusion** (redness without discharge) is the classic sign of leptospirosis. [NCDC Leptospirosis 2015]",
+        "**Hypertension, oedema and dipstick haematuria with proteinuria** at the bedside signal glomerulonephritis - always dip the urine in unexplained haemoptysis. [KDIGO 2024]",
+        "**Neurological**: wrist or foot drop (mononeuritis multiplex); **calf tenderness, jaundice and oliguria** suggest Weil disease. [Harrison 22e]",
+        "**Mid-diastolic murmur with loud S1 and opening snap** points to mitral stenosis as a bland cause. [Braunwald 12e]",
+      ],
+    },
+    {
+      heading: "Differential diagnosis",
+      points: [
+        "**Pneumonia, including TB**: fever and infiltrates with haemoptysis but Hb stable, BAL not progressively bloody, sputum NAAT or cultures positive - and **AAV cavities are often misread as TB** in India. [Harrison 22e]",
+        "**Pulmonary oedema** (LV failure, mitral stenosis, fluid overload in AKI): orthopnoea, raised JVP, cardiomegaly, BNP raised, rapid clearing with diuretics. [Braunwald 12e]",
+        "**ARDS from sepsis**: bilateral infiltrates and hypoxaemia but no fall in Hb; BAL may be pink but not progressively bloodier. [ESICM 2023]",
+        "**Haemoptysis from an airway source** (bronchiectasis, tumour, aspergilloma) aspirated into both lungs: localised source at bronchoscopy, airway disease on CT - see the haemoptysis topic. [Harrison 22e]",
+        "**Leptospirosis and other tropical fevers** (dengue, malaria, scrub typhus): febrile illness with thrombocytopenia, jaundice and AKI - the pulmonary-renal picture without ANCA. [NCDC Leptospirosis 2015]",
+        "**Eosinophilic lung disease** and **EGPA**: asthma and eosinophilia, rather than haemorrhage, dominate - see the eosinophilic lung topic. [ACR/EULAR 2022]",
+      ],
+    },
+    {
+      heading: "Investigations - first line, then tertiary",
+      points: [
+        "**First line in any hospital**: CBC (falling Hb, platelets), PT/INR and aPTT, **creatinine and urea**, **urine dipstick and microscopy for red cell casts and dysmorphic RBCs**, urine protein-creatinine ratio, ABG, chest X-ray and ECG. [KDIGO 2024]",
+        "**Chest X-ray and HRCT**: bilateral patchy or diffuse **ground-glass and consolidation**, often sparing the periphery and apices; GPA adds **nodules, masses and cavities**; interlobular septal thickening appears after a few days (crazy paving). [Harrison 22e]",
+        "**Serology - send before treatment, but never wait for it**: **ANCA by antigen-specific immunoassay (PR3 and MPO ELISA)** as the first test - immunofluorescence (c-ANCA, p-ANCA) is no longer required first; plus **anti-GBM antibody**, ANA, anti-dsDNA, C3 and C4, antiphospholipid antibodies and cryoglobulins. [International consensus on ANCA testing 2017]",
+        "**Infection screen in India**: **leptospira IgM ELISA or PCR** (blood in week 1, urine after), dengue NS1 and IgM, malaria smear or rapid test, **scrub typhus IgM**, blood cultures and sputum NAAT for TB. [NCDC Leptospirosis 2015]",
+        "**Bronchoscopy with BAL**: **sequential aliquots becoming progressively bloodier** confirm DAH; **haemosiderin-laden macrophages over 20%** of alveolar macrophages support it; BAL also excludes infection (cultures, PCR for CMV and PJP). [ATS 2012]",
+        "**DLCO raised (over 130% predicted or by over 30% from baseline)** supports active bleeding, but most patients are too ill for lung function tests. [Harrison 22e]",
+        "**Tissue diagnosis**: **renal biopsy** is the highest-yield biopsy (pauci-immune crescentic GN in AAV, **linear IgG** in anti-GBM disease); nasal or lung biopsy (surgical, not transbronchial) is less often needed. [KDIGO 2024]",
+        "**Echocardiography** for mitral stenosis and LV function, and **BNP** where heart failure is possible. [Braunwald 12e]",
+      ],
+    },
+    {
+      heading: "Management in OPD and primary care",
+      points: [
+        "**DAH is never an OPD disease**: any patient with haemoptysis plus falling Hb, hypoxaemia or diffuse infiltrates is **referred the same day** with oxygen. [Harrison 22e]",
+        "**Before referral**: give oxygen to SpO2 94-98%, secure IV access, send CBC, creatinine, urine dipstick and ANCA if possible, **stop anticoagulants and antiplatelets**, and record the urine findings in the letter. [KDIGO 2024]",
+        "**Suspected leptospirosis with any lung involvement**: give the first dose of **ceftriaxone 1 g IV (or 2 g in severe disease)** or **benzylpenicillin 1.5 million units IV** and refer to a hospital with dialysis and ventilator. [NCDC Leptospirosis 2015]",
+        "**Mild leptospirosis in OPD** (no jaundice, AKI, bleeding or breathlessness): **doxycycline 100 mg orally twice daily for 7 days** (or amoxicillin 500 mg thrice daily, or azithromycin in pregnancy and children). [NCDC Leptospirosis 2015]",
+        "**Long-term follow-up of AAV in the community**: monitor BP, urine dipstick, CBC and creatinine on the schedule set by the rheumatologist or nephrologist, check for infection on immunosuppression, and ensure **cotrimoxazole prophylaxis** is being taken. [EULAR 2022]",
+        "**Maintenance therapy** given after remission: **rituximab 500 mg IV every 6 months for 18-24 months** (preferred) or **azathioprine 1.5-2 mg/kg/day** (check TPMT where available and CBC weekly at first), or methotrexate 20-25 mg weekly if eGFR is preserved. [EULAR 2022]",
+      ],
+    },
+    {
+      heading: "Management in IPD and emergency",
+      points: [
+        "**Supportive care**: oxygen, HFNO or NIV, and **intubation with PEEP 8-10 cmH2O** if needed (PEEP tamponades bleeding); transfuse red cells to Hb over 7 g/dL, correct INR with vitamin K and FFP, and platelets over 50,000. [Harrison 22e]",
+        "**Start immunosuppression before biopsy or ANCA results** when capillaritis is likely: **pulse methylprednisolone 500-1000 mg IV daily for 3 days**, then oral prednisolone. [EULAR 2022]",
+        "**Reduced-dose steroid taper (PEXIVAS)**: prednisolone 1 mg/kg/day (maximum 75 mg) tapered to about **5 mg by 6 months** was non-inferior to standard dosing and caused fewer serious infections - now the standard. [KDIGO 2024]",
+        "**Induction with rituximab**: **375 mg/m2 IV weekly for 4 weeks or 1 g IV on days 1 and 15**; preferred in relapsing disease, PR3-ANCA, young patients wishing to preserve fertility and the elderly. [KDIGO 2024]",
+        "**Induction with cyclophosphamide**: **IV 15 mg/kg at weeks 0, 2 and 4, then every 3 weeks** for 3-6 months (reduce by 2.5 mg/kg for age over 60 and over 70, and for eGFR under 30; maximum 1.2 g), with **mesna**, hydration and antiemetics - preferred in severe RPGN (creatinine over 4 mg/dL) and where rituximab is unaffordable. [KDIGO 2024]",
+        "**Combination of rituximab with low-dose cyclophosphamide** can be considered for the sickest patients with severe glomerulonephritis or DAH. [KDIGO 2024]",
+        "**Plasma exchange in AAV**: **PEXIVAS showed no reduction in death or ESKD**, including in the DAH subgroup, so it is **not routine for DAH**; KDIGO 2024 and EULAR 2022 reserve it for **creatinine over 3.4 mg/dL (300 micromol/L)** with RPGN, and for DAH with hypoxaemia only as rescue. [KDIGO 2024]",
+        "**Anti-GBM disease**: **daily plasma exchange (about 4 L, albumin; FFP if bleeding) for 14 days or until antibodies are undetectable**, plus pulse steroids and **oral cyclophosphamide 2-3 mg/kg/day for 3 months** - plasma exchange is standard here, unlike in AAV. [KDIGO 2024]",
+        "**Avacopan 30 mg orally twice daily** with rituximab or cyclophosphamide allows faster steroid withdrawal (ADVOCATE) and is an option, though cost limits use in India. [EULAR 2022]",
+        "**Leptospirosis pulmonary haemorrhage**: **benzylpenicillin 1.5 million units IV 6-hourly or ceftriaxone 1-2 g IV daily for 7 days**, lung-protective ventilation, early dialysis; high-dose methylprednisolone has been used but its benefit is unproven. [NCDC Leptospirosis 2015]",
+        "**SLE-related DAH**: pulse steroids plus cyclophosphamide or rituximab; exclude infection and give broad antibiotics while waiting for BAL cultures. [EULAR SLE 2023]",
+      ],
+    },
+    {
+      heading: "Special situations",
+      points: [
+        "**Pregnancy**: avoid cyclophosphamide (teratogenic in the first trimester) and use **steroids, azathioprine, IVIG or rituximab** case by case; propylthiouracil-associated vasculitis requires stopping the drug. [EULAR 2022]",
+        "**Elderly**: MPO-AAV with renal failure is common; reduce cyclophosphamide dose, prefer the reduced-dose steroid regimen, and watch closely for infection - the main cause of early death. [KDIGO 2024]",
+        "**CKD and dialysis**: rituximab needs no renal dose adjustment; cyclophosphamide does; dialysis-dependent patients with no chance of recovery after 3-4 months may stop induction to avoid infection. [KDIGO 2024]",
+        "**Children**: **idiopathic pulmonary haemosiderosis** (recurrent DAH, iron-deficiency anaemia, sometimes with coeliac disease - Lane-Hamilton syndrome) and SLE are the main causes. [Nelson 22e]",
+        "**Haematopoietic stem cell transplant**: peri-engraftment DAH within 30 days is treated with high-dose steroids; infection must be excluded by BAL. [Harrison 22e]",
+        "**Resource-limited setting**: IV cyclophosphamide is cheap and available, and biosimilar rituximab has lowered cost in India; give **cotrimoxazole prophylaxis** throughout induction. [EULAR 2022]",
+      ],
+    },
+    {
+      heading: "Complications and prognosis",
+      points: [
+        "**Respiratory failure** needing ventilation, and recurrent DAH leading to **pulmonary fibrosis or emphysema**. [Harrison 22e]",
+        "**End-stage kidney disease** in about 20-25% of AAV patients with renal involvement within 5 years; creatinine at presentation is the best predictor. [KDIGO 2024]",
+        "**Infections** (bacterial pneumonia, PJP, CMV, TB reactivation in India, HBV reactivation) are the commonest cause of death in the first year - more than active vasculitis. [EULAR 2022]",
+        "**Treatment toxicity**: cyclophosphamide causes cytopenia, **haemorrhagic cystitis and bladder cancer**, infertility; rituximab causes **hypogammaglobulinaemia** and infusion reactions; steroids cause diabetes, osteoporosis and infection. [EULAR 2022]",
+        "**Relapse** occurs in up to 50% of GPA (PR3-ANCA) over 5 years, less in MPA. [EULAR 2022]",
+        "**Untreated GPA** had a 1-year mortality of about 80-90%; with modern therapy **5-year survival is about 75-85%**, but DAH needing ventilation carries in-hospital mortality of 25-50%. [Harrison 22e]",
+      ],
+    },
+    {
+      heading: "Referral, follow-up and monitoring",
+      points: [
+        "**Refer immediately** to a centre with ICU, dialysis, bronchoscopy, rheumatology or nephrology and plasma exchange. [KDIGO 2024]",
+        "**During induction**: CBC 1-2 weekly (cyclophosphamide nadir at 10-14 days; hold if WBC under 4000), creatinine, urine dipstick, glucose and BP. [KDIGO 2024]",
+        "**In remission**: review every 1-3 months for the first year, then 3-6 monthly; check **urine dipstick at every visit** - new haematuria often heralds relapse; ANCA rise alone is not a reason to treat. [EULAR 2022]",
+        "**Immunoglobulin G level** before each rituximab dose; hold or give IVIG if IgG is very low with recurrent infection. [EULAR 2022]",
+        "**Bone protection** (calcium, vitamin D, bisphosphonate if indicated), cardiovascular risk control and **vaccination** (influenza, pneumococcal, hepatitis B, recombinant zoster; avoid live vaccines). [EULAR 2022]",
+        "**Screen for latent TB and hepatitis B** before induction in India; HBsAg or anti-HBc positive patients need antiviral prophylaxis with rituximab. [EULAR 2022]",
+      ],
+    },
+    {
+      heading: "Prevention and counselling",
+      points: [
+        "**PJP prophylaxis**: **cotrimoxazole 400/80 mg daily or 800/160 mg thrice weekly** during induction with rituximab or cyclophosphamide and for at least 6 months after the last rituximab dose. [EULAR 2022]",
+        "**Leptospirosis prevention**: avoid wading in floodwater, wear boots and gloves, rodent control; **doxycycline 200 mg orally once a week** during exposure for high-risk workers in outbreak areas. [NCDC Leptospirosis 2015]",
+        "**Stop smoking** - smoking precipitates lung haemorrhage in anti-GBM disease. [KDIGO 2024]",
+        "**Avoid offending drugs**: switch from propylthiouracil to carbimazole where possible, avoid hydralazine in a patient with prior drug-induced vasculitis. [Harrison 22e]",
+        "**Counsel on fertility**: cyclophosphamide can cause premature ovarian failure and azoospermia; offer rituximab or fertility preservation where possible. [EULAR 2022]",
+      ],
+    },
+    {
+      heading: "Latest guideline updates (2023-2026)",
+      points: [
+        "**KDIGO 2024 ANCA vasculitis guideline**: rituximab or cyclophosphamide induction with a **reduced-dose glucocorticoid taper**, avacopan as an option, and plasma exchange considered for creatinine over 3.4 mg/dL rather than routinely. [KDIGO 2024]",
+        "**EULAR 2022 AAV recommendations**: rituximab preferred for relapsing disease and maintenance for 24-48 months; plasma exchange considered in RPGN, **not routinely in DAH**. [EULAR 2022]",
+        "**ACR/EULAR 2022 classification criteria** for GPA, MPA and EGPA replaced the 1990 ACR criteria and include ANCA type. [ACR/EULAR 2022]",
+        "**PEXIVAS (2020)** remains the trial behind both changes: no benefit of plasma exchange on death or ESKD, and the reduced-dose steroid regimen was non-inferior with fewer infections. [PEXIVAS NEJM 2020]",
+        "**Guideline conflict**: older practice and the ACR 2021 guideline allowed plasma exchange for DAH with hypoxaemia; current EULAR and KDIGO advice is to reserve it as rescue in DAH and use it routinely only in anti-GBM disease. [ACR 2021]",
+      ],
+    },
+    {
+      heading: "Exam and viva angle",
+      points: [
+        "**Classic triad**: haemoptysis, falling haemoglobin and diffuse infiltrates; **haemoptysis may be absent**. [Harrison 22e]",
+        "**Rising DLCO** with infiltrates is DAH until proved otherwise - every other ILD lowers DLCO. [Harrison 22e]",
+        "**Progressively bloodier BAL aliquots** are diagnostic; haemosiderin-laden macrophages take 48-72 hours to appear. [ATS 2012]",
+        "**Pulmonary-renal syndrome**: GPA, MPA, anti-GBM, SLE - and in India, **leptospirosis**. [Harrison 22e]",
+        "**c-ANCA/PR3 = GPA** (granulomas, ENT, cavities); **p-ANCA/MPO = MPA** (no granulomas, ILD); **linear IgG = anti-GBM**. [ACR/EULAR 2022]",
+        "**Common mistake**: giving plasma exchange to every DAH, or starting ATT for cavitating nodules without checking ANCA and urine. [KDIGO 2024]",
+      ],
+    },
+  ],
+  tables: [
+    {
+      heading: "Drugs used for DAH and pulmonary vasculitis",
+      columns: ["Drug", "Dose and route", "Duration/titration", "Key adverse effects / contraindications"],
+      rows: [
+        ["Methylprednisolone (pulse)", "500-1000 mg IV daily", "3 days, then oral prednisolone", "Hyperglycaemia, infection, psychosis, hypertension"],
+        ["Prednisolone (reduced-dose)", "1 mg/kg/day oral, maximum 75 mg", "Taper to about 5 mg by 6 months (PEXIVAS)", "Diabetes, osteoporosis, infection - give bone and PJP prophylaxis"],
+        ["Rituximab", "375 mg/m2 IV weekly x 4, or 1 g IV days 1 and 15", "Maintenance 500 mg every 6 months for 18-24 months", "Infusion reactions, hypogammaglobulinaemia, HBV reactivation, PML (rare)"],
+        ["Cyclophosphamide IV", "15 mg/kg at weeks 0, 2, 4 then 3-weekly (max 1.2 g)", "3-6 months; reduce for age and eGFR", "Neutropenia (nadir day 10-14), haemorrhagic cystitis, infertility, bladder cancer; give mesna"],
+        ["Avacopan", "30 mg orally twice daily", "Up to 12 months with induction", "Hepatotoxicity - monitor LFT; costly"],
+        ["Azathioprine", "1.5-2 mg/kg/day orally", "Maintenance 24-48 months", "Cytopenia (TPMT deficiency), hepatitis, pancreatitis"],
+        ["Cotrimoxazole (prophylaxis)", "400/80 mg daily or 800/160 mg thrice weekly orally", "During induction and 6 months after last rituximab", "Rash, hyperkalaemia, marrow suppression"],
+        ["Benzylpenicillin or ceftriaxone (leptospirosis)", "1.5 MU IV 6-hourly, or ceftriaxone 1-2 g IV daily", "7 days", "Jarisch-Herxheimer reaction; allergy"],
+      ],
+    },
+    {
+      heading: "Causes of DAH by histological pattern",
+      columns: ["Pattern", "Causes", "Clue"],
+      rows: [
+        ["Pulmonary capillaritis", "GPA, MPA, anti-GBM, SLE, APS, drug-induced ANCA vasculitis, Behcet", "Glomerulonephritis, ENT disease, ANCA or anti-GBM positive"],
+        ["Bland haemorrhage", "Coagulopathy, anticoagulants, thrombocytopenia, mitral stenosis, LV failure, IPH", "Deranged coagulation, echo abnormal, no nephritis"],
+        ["Diffuse alveolar damage", "ARDS, HSCT, amiodarone, bleomycin, cocaine, radiation", "Sepsis, transplant or drug history"],
+        ["Infection-related", "Leptospirosis, dengue, falciparum malaria, hantavirus, scrub typhus", "Monsoon fever, thrombocytopenia, jaundice, AKI"],
+      ],
+    },
+    {
+      heading: "GPA, MPA and anti-GBM disease compared",
+      columns: ["Feature", "GPA", "MPA", "Anti-GBM disease"],
+      rows: [
+        ["Antibody", "PR3-ANCA (c-ANCA) in most", "MPO-ANCA (p-ANCA) in most", "Anti-GBM IgG (alpha-3 NC1 of type IV collagen)"],
+        ["Granulomas", "Yes", "No", "No"],
+        ["ENT disease", "Sinusitis, saddle nose, subglottic stenosis", "Rare", "Absent"],
+        ["Lung", "Nodules, cavities, DAH", "DAH, ILD (UIP pattern)", "DAH, especially in smokers"],
+        ["Kidney biopsy", "Pauci-immune crescentic GN", "Pauci-immune crescentic GN", "Linear IgG along the GBM"],
+        ["Plasma exchange", "Selected only", "Selected only", "Standard"],
+        ["Relapse", "Common", "Less common", "Rare once controlled"],
+      ],
+    },
+    {
+      heading: "Investigations and their interpretation",
+      columns: ["Test", "Finding in DAH or vasculitis", "Interpretation"],
+      rows: [
+        ["Haemoglobin serially", "Fall of 1.5-2 g/dL or more without other loss", "Supports alveolar bleeding"],
+        ["Urine microscopy", "Dysmorphic RBCs, red cell casts, proteinuria", "Glomerulonephritis - pulmonary-renal syndrome"],
+        ["PR3/MPO ELISA", "Positive", "AAV; negative ANCA does not exclude (about 10% negative)"],
+        ["Anti-GBM antibody", "Positive", "Anti-GBM disease; about 30% also ANCA positive (double positive)"],
+        ["BAL", "Sequential aliquots bloodier; haemosiderin macrophages over 20%", "Confirms DAH; excludes infection"],
+        ["DLCO", "Over 130% predicted or rise over 30%", "Active alveolar bleeding"],
+        ["HRCT", "Diffuse ground glass, consolidation; nodules and cavities in GPA", "Supports DAH; cavities favour GPA over MPA"],
+      ],
+    },
+  ],
+  redFlags: [
+    "Haemoptysis with a falling haemoglobin and bilateral infiltrates",
+    "Haemoptysis with haematuria, red cell casts or rising creatinine - pulmonary-renal syndrome",
+    "Rising oxygen requirement or SpO2 under 92% in a patient with known vasculitis or SLE",
+    "Monsoon fever with jaundice, oliguria and haemoptysis - severe leptospirosis",
+    "Stridor in a patient with GPA - subglottic stenosis",
+    "Fever or new infiltrates in a patient on rituximab or cyclophosphamide - opportunistic infection",
+  ],
+  pearls: [
+    "DAH triad: haemoptysis, falling Hb, diffuse infiltrates - and haemoptysis is missing in one-third.",
+    "The only ILD-like picture with a high DLCO is alveolar haemorrhage.",
+    "Progressively bloodier BAL aliquots confirm DAH; haemosiderin-laden macrophages over 20% support it.",
+    "Always dip the urine in a patient with haemoptysis.",
+    "c-ANCA/PR3 = GPA (granulomas, nose, cavities); p-ANCA/MPO = MPA; linear IgG = anti-GBM.",
+    "Plasma exchange is standard in anti-GBM disease but not routine in ANCA DAH (PEXIVAS).",
+    "In India think leptospirosis first in a monsoon pulmonary-renal syndrome.",
+    "Infection, not vasculitis, kills most AAV patients in year one - give cotrimoxazole prophylaxis.",
+  ],
+  mcqs: [
+    {
+      id: "respiratory-alveolar-haemorrhage-vasculitis-q1",
+      stem: "A 45-year-old woman has 5 days of breathlessness, haemoglobin falling from 11 to 8 g/dL and bilateral ground-glass shadows. Which lung function finding most supports active alveolar haemorrhage?",
+      options: [
+        "Reduced FEV1/FVC ratio",
+        "Reduced total lung capacity",
+        "Reduced DLCO",
+        "Raised DLCO",
+      ],
+      answer: 3,
+      explanation:
+        "Free haemoglobin in the alveoli binds inhaled carbon monoxide, so DLCO rises (often over 130% predicted) during active bleeding. A reduced DLCO is the expected finding in ILD, pneumonia and emphysema, not in DAH; a low FEV1/FVC indicates airway obstruction and a reduced TLC indicates restriction, neither of which is specific for haemorrhage.",
+      difficulty: "easy",
+    },
+    {
+      id: "respiratory-alveolar-haemorrhage-vasculitis-q2",
+      stem: "Which statement correctly summarises the PEXIVAS trial in severe ANCA-associated vasculitis?",
+      options: [
+        "Plasma exchange did not reduce death or ESKD, and a reduced-dose steroid regimen was non-inferior to standard dosing",
+        "Plasma exchange reduced mortality in patients with diffuse alveolar haemorrhage",
+        "Reduced-dose steroids increased relapse and death compared with standard dosing",
+        "Rituximab was superior to cyclophosphamide for induction",
+      ],
+      answer: 0,
+      explanation:
+        "PEXIVAS randomised 704 patients in a factorial design: adding plasma exchange did not reduce death or ESKD (including in the DAH subgroup), and the reduced-dose glucocorticoid taper was non-inferior with fewer serious infections. It did not compare rituximab with cyclophosphamide (that was RAVE and RITUXVAS), and it showed no mortality benefit of plasma exchange in DAH.",
+      difficulty: "moderate",
+    },
+    {
+      id: "respiratory-alveolar-haemorrhage-vasculitis-q3",
+      stem: "A 32-year-old farmer from coastal Karnataka presents in August with 5 days of fever, myalgia, conjunctival suffusion, jaundice, oliguria and haemoptysis with bilateral infiltrates. Platelets are 60,000/microlitre. What is the most appropriate immediate antimicrobial?",
+      options: [
+        "Oral doxycycline 100 mg twice daily as an outpatient",
+        "Oral amoxicillin-clavulanate and review in 2 days",
+        "IV benzylpenicillin 1.5 million units 6-hourly or IV ceftriaxone",
+        "IV meropenem plus vancomycin",
+      ],
+      answer: 2,
+      explanation:
+        "This is severe leptospirosis (Weil disease) with pulmonary haemorrhage syndrome, which needs IV benzylpenicillin or ceftriaxone for 7 days with ICU support and early dialysis. Oral doxycycline is only for mild disease without organ involvement, oral amoxicillin-clavulanate delays effective treatment, and meropenem with vancomycin is broader than needed and not first choice for leptospira.",
+      difficulty: "moderate",
+    },
+    {
+      id: "respiratory-alveolar-haemorrhage-vasculitis-q4",
+      stem: "A 24-year-old male smoker has haemoptysis, rising creatinine and red cell casts. Renal biopsy shows linear IgG along the glomerular basement membrane. Which treatment plan is correct?",
+      options: [
+        "Rituximab alone without steroids",
+        "Daily plasma exchange plus pulse steroids and cyclophosphamide",
+        "Oral prednisolone alone and repeat biopsy in 4 weeks",
+        "Plasma exchange alone until antibodies disappear",
+      ],
+      answer: 1,
+      explanation:
+        "Linear IgG on biopsy defines anti-GBM disease, where daily plasma exchange removes the pathogenic antibody while pulse methylprednisolone and cyclophosphamide stop its production - KDIGO recommends all three. Plasma exchange alone allows antibody to return, steroids alone are inadequate, and rituximab alone without steroids is not standard therapy for this rapidly destructive disease.",
+      difficulty: "moderate",
+    },
+    {
+      id: "respiratory-alveolar-haemorrhage-vasculitis-q5",
+      stem: "In the ACR/EULAR 2022 classification criteria for granulomatosis with polyangiitis, which single item carries the highest positive score?",
+      options: [
+        "Pulmonary nodules, mass or cavitation on imaging",
+        "Granuloma on biopsy",
+        "Positive c-ANCA or PR3-ANCA",
+        "Nasal bloody discharge, ulcers or crusting",
+      ],
+      answer: 2,
+      explanation:
+        "Positive c-ANCA or PR3-ANCA scores +5, enough alone to reach the classification threshold of 5. Nasal bloody discharge or crusting scores +3, while lung nodules or cavitation and granuloma on biopsy each score +2. Eosinophilia of 1000/microlitre or more subtracts 4 because it points towards EGPA.",
+      difficulty: "hard",
+    },
+  ],
+  theory: [
+    {
+      id: "respiratory-alveolar-haemorrhage-vasculitis-t1",
+      paper: "I",
+      kind: "long",
+      marks: 10,
+      minutes: 18,
+      frequency: "less-common",
+      question:
+        "Define diffuse alveolar haemorrhage. Enumerate its causes and describe the approach to diagnosis and management of a patient with pulmonary-renal syndrome.",
+      openingLines: [
+        "Diffuse alveolar haemorrhage is bleeding into the alveolar spaces from the pulmonary microcirculation, presenting with haemoptysis, a falling haemoglobin and diffuse alveolar infiltrates with hypoxaemia.",
+        "When it accompanies rapidly progressive glomerulonephritis it forms the pulmonary-renal syndrome, most often due to ANCA-associated vasculitis or anti-GBM disease, and in India also leptospirosis.",
+      ],
+      answer: [
+        {
+          heading: "Causes by histology",
+          points: [
+            "Capillaritis: GPA, MPA, anti-GBM, SLE, APS, drugs (PTU, hydralazine).",
+            "Bland: coagulopathy, anticoagulants, mitral stenosis, LV failure, idiopathic pulmonary haemosiderosis.",
+            "Diffuse alveolar damage: ARDS, HSCT, amiodarone, cocaine.",
+            "Infections: leptospirosis, dengue, malaria, hantavirus.",
+          ],
+        },
+        {
+          heading: "Pathogenesis",
+          points: [
+            "ANCA-activated neutrophils destroy capillaries; anti-GBM antibody binds type IV collagen alpha-3 chain.",
+            "Shared target in alveolar and glomerular capillaries explains the pulmonary-renal syndrome.",
+          ],
+        },
+        {
+          heading: "Clinical features",
+          points: [
+            "Breathlessness, haemoptysis (absent in one-third), anaemia; ENT disease, purpura, mononeuritis, haematuria.",
+          ],
+        },
+        {
+          heading: "Investigations",
+          points: [
+            "CBC, coagulation, creatinine, urine microscopy for red cell casts.",
+            "PR3 and MPO ELISA, anti-GBM, ANA, dsDNA, complement; leptospira IgM, dengue, malaria.",
+            "HRCT, BAL with progressively bloodier aliquots, raised DLCO, renal biopsy.",
+          ],
+        },
+        {
+          heading: "Management",
+          points: [
+            "Oxygen, ventilation with PEEP, correct coagulopathy, transfuse.",
+            "Pulse methylprednisolone 500-1000 mg x 3 days, then reduced-dose taper (PEXIVAS).",
+            "Rituximab 375 mg/m2 weekly x 4 or cyclophosphamide 15 mg/kg pulses.",
+            "Plasma exchange: standard in anti-GBM; in AAV only if creatinine over 3.4 mg/dL or as rescue.",
+            "Maintenance rituximab 500 mg 6-monthly; cotrimoxazole prophylaxis.",
+          ],
+        },
+        {
+          heading: "Prognosis",
+          points: [
+            "Infection is the main early killer; ESKD in 20-25%; relapse common in GPA.",
+          ],
+        },
+      ],
+      mustDraw: ["Flow chart: haemoptysis with anaemia and infiltrates to diagnosis and treatment", "Table comparing GPA, MPA and anti-GBM disease"],
+      markSplit: [
+        { part: "Definition and causes", marks: 2 },
+        { part: "Pathogenesis and clinical features", marks: 2 },
+        { part: "Investigations", marks: 3 },
+        { part: "Management", marks: 3 },
+      ],
+      keywords: ["DAH", "pulmonary-renal syndrome", "ANCA", "anti-GBM", "PEXIVAS", "rituximab"],
+    },
+    {
+      id: "respiratory-alveolar-haemorrhage-vasculitis-t2",
+      paper: "I",
+      kind: "differentiate",
+      marks: 5,
+      minutes: 9,
+      frequency: "less-common",
+      question: "Differentiate between granulomatosis with polyangiitis, microscopic polyangiitis and anti-GBM disease.",
+      openingLines: [
+        "GPA and MPA are ANCA-associated necrotising small-vessel vasculitides; anti-GBM disease is an immune-complex small-vessel vasculitis caused by antibodies to type IV collagen.",
+        "All three cause pulmonary-renal syndrome, but antibody, granulomas, ENT disease and biopsy findings separate them.",
+      ],
+      answer: [
+        {
+          heading: "Antibody and pathology",
+          points: [
+            "GPA: PR3/c-ANCA, necrotising granulomas.",
+            "MPA: MPO/p-ANCA, no granulomas.",
+            "Anti-GBM: anti-alpha-3 type IV collagen IgG, linear IgG on biopsy.",
+          ],
+        },
+        {
+          heading: "Clinical",
+          points: [
+            "GPA: sinusitis, saddle nose, subglottic stenosis, cavitating nodules.",
+            "MPA: RPGN, DAH, ILD, mononeuritis.",
+            "Anti-GBM: young male smokers with DAH, or older women with nephritis alone.",
+          ],
+        },
+        {
+          heading: "Treatment and outcome",
+          points: [
+            "GPA and MPA: steroids plus rituximab or cyclophosphamide; relapse common in GPA.",
+            "Anti-GBM: plasma exchange plus steroids and cyclophosphamide; relapse rare.",
+          ],
+        },
+      ],
+      mustDraw: ["Three-column comparison table"],
+      markSplit: [
+        { part: "Antibody and pathology", marks: 2 },
+        { part: "Clinical features", marks: 2 },
+        { part: "Treatment", marks: 1 },
+      ],
+      keywords: ["GPA", "MPA", "anti-GBM", "PR3", "MPO", "linear IgG"],
+    },
+  ],
+  references: [
+    "Harrison's Principles of Internal Medicine, 22nd edition, 2025 - Diffuse alveolar haemorrhage; The vasculitis syndromes",
+    "KDIGO 2024 Clinical Practice Guideline for the Management of ANCA-Associated Vasculitis",
+    "EULAR recommendations for the management of ANCA-associated vasculitis: 2022 update",
+    "2022 ACR/EULAR classification criteria for granulomatosis with polyangiitis and microscopic polyangiitis",
+    "2012 Revised International Chapel Hill Consensus Conference Nomenclature of Vasculitides",
+    "Walsh M et al. Plasma exchange and glucocorticoids in severe ANCA-associated vasculitis (PEXIVAS), NEJM 2020",
+    "NCDC/MoHFW National Guidelines: Diagnosis, Case Management, Prevention and Control of Leptospirosis, 2015",
+  ],
+});
+
 export default topics;

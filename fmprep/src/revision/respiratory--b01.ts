@@ -210,4 +210,204 @@ revision["respiratory-examination"] = {
   },
 };
 
+revision["respiratory-pft-spirometry"] = {
+  checked: "2026-10",
+  updated: [
+    "ATS/ERS 2019 spirometry standard: BEV under 5% FVC or 0.100 L, repeatability 0.150 L, quality grades A-F, withholding times.",
+    "ERS/ATS 2022 interpretation: LLN and z-scores, severity by FEV1 z-score, BDR over 10% of predicted, non-specific pattern.",
+    "ATS 2023: race-neutral GLI Global equations.",
+    "GOLD 2025: fixed post-BD ratio under 0.70 kept; PRISm described.",
+    "BTS/NICE/SIGN NG245 2024: FeNO 50 ppb adults, 35 ppb children as a positive asthma test.",
+    "GINA 2025: BDR 12% and 200 mL and PEF variability over 10% retained (differs from ERS/ATS 2022).",
+  ],
+  master: {
+    heading: "Pulmonary function tests - what to write",
+    columns: ["Heading", "What to write"],
+    rows: [
+      ["Definition", "Spirometry (FEV1, FVC, ratio), lung volumes (TLC, RV), DLCO; interpret against GLI LLN (z -1.645)"],
+      ["Indications", "Diagnose asthma, COPD, ILD; monitor; pre-op; drug toxicity; neuromuscular; occupational"],
+      ["Contraindications", "MI within 1 week, recent surgery, pneumothorax, haemoptysis, aneurysm, active TB"],
+      ["Quality", "BEV under 5% or 0.100 L; plateau or 15 s; 3 acceptable blows; repeatability 0.150 L; grade A-F"],
+      ["Obstruction", "FEV1/FVC below LLN (GOLD: post-BD under 0.70); scooped loop; RV/TLC high"],
+      ["Restriction", "TLC below LLN; ratio normal or high; witch's hat loop"],
+      ["Mixed / non-specific / PRISm", "Ratio and TLC both low; low FVC with normal TLC; ratio 0.70+ with FEV1 under 80%"],
+      ["Severity", "ERS/ATS 2022 FEV1 z -1.65/-2.5/-4; GOLD 1-4 by FEV1 80/50/30%"],
+      ["BDR", "Salbutamol 400 mcg spacer, 10-15 min; positive over 10% predicted (2022) or 12% + 200 mL (GINA)"],
+      ["Flow-volume loops", "Fixed UAO both limbs flat; variable extrathoracic inspiratory; intrathoracic expiratory; Empey over 10"],
+      ["DLCO", "Low: emphysema, ILD, PVD, anaemia; high: haemorrhage, polycythaemia, shunt, asthma; KCO for extraparenchymal"],
+      ["Other tests", "PEF variability over 10%; FeNO 50 ppb; methacholine PD20 over 400 mcg normal; 6MWT MID 25-33 m"],
+      ["Follow-up", "COPD yearly; asthma 3-6 months after ICS then 1-2 yearly; ILD FVC/DLCO 3-6 monthly"],
+    ],
+  },
+  flows: [
+    {
+      kind: "flow",
+      heading: "Reading a PFT report (ERS/ATS 2022)",
+      caption: "Check quality first, then ratio, then volumes, then DLCO.",
+      steps: [
+        { label: "Is the test acceptable and repeatable?", detail: "Grade A-C; plateau reached; best FEV1 and FVC within 0.150 L", tone: "decision" },
+        { label: "FEV1/FVC below LLN?", detail: "Yes - obstruction; check BDR (over 10% predicted)", tone: "decision" },
+        { label: "If ratio normal: is FVC below LLN?", detail: "Possible restriction - measure TLC" },
+        { label: "TLC below LLN?", detail: "Yes - restriction; with low ratio - mixed; normal TLC - non-specific pattern", tone: "decision" },
+        { label: "Grade severity by FEV1 z-score", detail: "-1.65 to -2.5 mild; -2.5 to -4 moderate; below -4 severe" },
+        { label: "Add DLCO and KCO", detail: "Low DLCO + low KCO parenchymal; normal/high KCO extraparenchymal; isolated low - vascular" },
+        { label: "Look at the flow-volume loop shape", detail: "Plateau on either limb - upper airway obstruction", tone: "warn" },
+      ],
+    },
+    {
+      kind: "branch",
+      heading: "Upper airway obstruction on the flow-volume loop",
+      root: "Plateau instead of a peak",
+      arms: [
+        { label: "Fixed", tone: "warn", steps: ["Both limbs flat", "FEF50/FIF50 about 1", "Post-intubation stenosis, goitre"] },
+        { label: "Variable extrathoracic", steps: ["Inspiratory limb flat", "FEF50/FIF50 well above 1", "Vocal cord palsy, vocal cord dysfunction"] },
+        { label: "Variable intrathoracic", steps: ["Expiratory limb flat", "FEF50/FIF50 well below 1", "Tracheomalacia, lower tracheal tumour"] },
+      ],
+    },
+    {
+      kind: "compare",
+      heading: "Obstructive versus restrictive PFTs",
+      columns: ["Feature", "Obstructive", "Restrictive (parenchymal)"],
+      rows: [
+        ["FEV1/FVC", "Below LLN", "Normal or high"],
+        ["TLC", "Normal or high", "Below LLN"],
+        ["RV/TLC", "High (air trapping)", "Normal"],
+        ["DLCO", "Low in emphysema, normal in asthma", "Low, KCO low"],
+        ["Loop", "Scooped expiratory limb", "Tall narrow witch's hat"],
+      ],
+    },
+  ],
+  notes: {
+    sections: [
+      {
+        title: "Definition and key facts",
+        points: [
+          "**Spirometry** gives FEV1, FVC and the FEV1/FVC ratio from a maximal forced breath.",
+          "**Lung volumes** need plethysmography or gas dilution; spirometry cannot measure RV.",
+          "**DLCO** measures CO uptake in a 10-second breath-hold; correct it for haemoglobin.",
+          "Normal FEV1 falls about **20-30 mL a year** after 25-30; susceptible smokers lose far more.",
+        ],
+      },
+      {
+        title: "Pathophysiology",
+        points: [
+          "Flow after early expiration is **effort-independent** due to dynamic compression at the equal pressure point.",
+          "**Obstruction** lowers FEV1 more than FVC, so the ratio falls.",
+          "**ILD** raises recoil, so the ratio is normal or high and DLCO is low.",
+          "**Extraparenchymal restriction** lowers TLC but KCO stays normal or high.",
+        ],
+      },
+      {
+        title: "Investigations",
+        points: [
+          "Withhold **SABA 4-6 h, SAMA 12 h, LABA 24 h, LAMA 36-48 h** before a diagnostic test.",
+          "Quality: **BEV under 5%**, plateau or 15 s, repeatability within **0.150 L**, grade A-F.",
+          "Report the **largest FEV1 and largest FVC**, even from different blows.",
+          "Use **GLI equations and LLN** (z-score -1.645), not 80% predicted.",
+        ],
+      },
+      {
+        title: "Classification that matters",
+        points: [
+          "**Obstruction**: FEV1/FVC below LLN; GOLD keeps post-BD under 0.70.",
+          "**Restriction** needs TLC below LLN; low FVC alone is only possible restriction.",
+          "**Mixed**: low ratio plus low TLC. **Non-specific**: low FVC, normal ratio and TLC.",
+          "**PRISm**: ratio 0.70 or more with FEV1 under 80% predicted.",
+          "Severity by **FEV1 z-score**: mild -1.65 to -2.5, moderate -2.5 to -4, severe below -4.",
+          "**BDR**: over 10% of predicted FEV1 or FVC (2022); GINA keeps 12% and 200 mL.",
+        ],
+      },
+      {
+        title: "Differential diagnosis",
+        points: [
+          "**Low DLCO + obstruction** suggests emphysema; normal DLCO suggests asthma.",
+          "**Isolated low DLCO** suggests pulmonary vascular disease, early ILD or anaemia.",
+          "**High DLCO**: alveolar haemorrhage, polycythaemia, shunt, asthma, obesity.",
+          "**CPFE**: near-normal spirometry with a very low DLCO.",
+          "Flat **inspiratory limb** is extrathoracic; flat **expiratory limb** is intrathoracic; both flat is fixed.",
+        ],
+      },
+      {
+        title: "Treatment - first line",
+        points: [
+          "BDR: **salbutamol 400 mcg** by spacer, repeat at 10-15 minutes.",
+          "Alternative: **ipratropium 160 mcg**, repeat at 30 minutes.",
+          "Without a spirometer, use a **2-week PEF diary**; variability over 10% supports asthma.",
+          "**FeNO 50 ppb or more** in adults supports asthma (NICE/BTS/SIGN 2024).",
+        ],
+      },
+      {
+        title: "Special groups",
+        points: [
+          "**Children** have a high normal ratio; the fixed 0.70 misses obstruction.",
+          "**Elderly** have a lower normal ratio; LLN avoids overdiagnosis.",
+          "**Pregnancy** does not change FEV1 or FVC, so low values are disease.",
+          "**Neuromuscular**: supine VC fall over 25% suggests diaphragm weakness; use the 20-30-40 rule.",
+        ],
+      },
+      {
+        title: "Referral and follow-up",
+        points: [
+          "Refer for **full PFTs** if FVC is low with a normal ratio or breathlessness is unexplained.",
+          "Repeat spirometry **yearly in COPD** and 3-6 monthly FVC and DLCO in ILD.",
+          "A **10% FVC fall in a year** in ILD means progressive fibrosis.",
+          "Any **upper airway obstruction loop** needs CT and bronchoscopy.",
+        ],
+      },
+      {
+        title: "Latest updates",
+        points: [
+          "**ATS/ERS 2019** set new acceptability, repeatability and grading rules.",
+          "**ERS/ATS 2022** moved to LLN, z-scores and the 10% predicted BDR.",
+          "**ATS 2023** recommends race-neutral **GLI Global** equations.",
+        ],
+      },
+    ],
+    tables: [
+      {
+        heading: "Drugs used in or withheld for lung function testing",
+        columns: ["Drug", "Dose and route", "Duration", "Key side effects / cautions"],
+        rows: [
+          ["Salbutamol", "400 mcg MDI via spacer", "Spirometry at 10-15 min; withhold 4-6 h before", "Tremor, tachycardia"],
+          ["Ipratropium", "160 mcg MDI via spacer", "Spirometry at 30 min; withhold 12 h before", "Dry mouth; glaucoma, retention"],
+          ["LABA (formoterol, salmeterol)", "Usual inhaled dose", "Withhold 24 h", "Do not withhold in unstable asthma"],
+          ["Once-daily LAMA or LABA", "Usual inhaled dose", "Withhold 36-48 h", "As above"],
+          ["Methacholine", "Inhaled escalating doses", "Until 20% FEV1 fall or maximum", "Bronchospasm; avoid if FEV1 under 60% or 1.5 L"],
+          ["Montelukast", "10 mg oral daily", "Withhold 24 h before challenge", "Neuropsychiatric effects"],
+        ],
+      },
+      {
+        heading: "PFT patterns",
+        columns: ["Pattern", "FEV1/FVC", "TLC", "DLCO", "Examples"],
+        rows: [
+          ["Obstructive", "Below LLN", "Normal or high", "Low in emphysema", "Asthma, COPD"],
+          ["Restrictive parenchymal", "Normal or high", "Below LLN", "Low, KCO low", "IPF, sarcoid"],
+          ["Restrictive extraparenchymal", "Normal", "Below LLN", "KCO normal or high", "Obesity, kyphoscoliosis, NMD"],
+          ["Mixed", "Below LLN", "Below LLN", "Variable", "COPD plus ILD, post-TB"],
+          ["Isolated low DLCO", "Normal", "Normal", "Low", "Pulmonary vascular disease, anaemia"],
+        ],
+      },
+      {
+        heading: "Flow-volume loop patterns",
+        columns: ["Pattern", "Limb affected", "Causes"],
+        rows: [
+          ["Fixed UAO", "Both flat", "Tracheal stenosis, goitre"],
+          ["Variable extrathoracic", "Inspiratory flat", "Vocal cord palsy, VCD"],
+          ["Variable intrathoracic", "Expiratory flat", "Tracheomalacia, lower tracheal tumour"],
+          ["Obstructive", "Expiratory scooped", "Asthma, COPD"],
+          ["Restrictive", "Small, tall, narrow", "ILD, chest wall"],
+        ],
+      },
+    ],
+    remember: [
+      "Restriction is a **TLC** diagnosis, never an FVC diagnosis.",
+      "**Empey index** over 10 means upper airway obstruction.",
+      "Extrathoracic = **inspiratory** flattening; intrathoracic = **expiratory** flattening.",
+      "Raised DLCO: **haemorrhage, polycythaemia, shunt, asthma, obesity**.",
+      "2022 BDR: **over 10% of predicted**; GINA: **12% and 200 mL**.",
+      "Neuromuscular **20-30-40**: VC 20 mL/kg, MIP -30, MEP 40 cmH2O.",
+    ],
+  },
+};
+
 export default revision;

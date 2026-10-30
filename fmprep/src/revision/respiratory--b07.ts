@@ -212,6 +212,219 @@ const revision: RevisionSet = {
       ],
     },
   },
+  "respiratory-pneumothorax": {
+    checked: "2026-10",
+    updated: [
+      "BTS Pleural Disease Guideline 2023: management by symptoms and high-risk features, not size",
+      "BTS 2023: conservative management for minimally symptomatic PSP (PSP trial 2020)",
+      "BTS 2023: ambulatory pleural vent as an option (RAMPP 2020); surgery may be offered after first PSP",
+      "BTS 2023: autologous blood patch and endobronchial valves for persistent air leak",
+      "ATLS 10th edition: adult needle decompression at 4th/5th ICS anterior to mid-axillary line",
+    ],
+    master: {
+      heading: "Pneumothorax on one page",
+      columns: ["Heading", "What to write"],
+      rows: [
+        ["Definition", "Air in pleural space; PSP, SSP, traumatic, iatrogenic; tension = one-way valve with shock"],
+        ["PSP", "Tall thin young male smokers, apical blebs; recurrence about 30%"],
+        ["SSP", "COPD, TB (India), ILD, PCP, CF, LAM, BHD, catamenial"],
+        ["Symptoms", "Sudden pleuritic pain and breathlessness; SSP more breathless"],
+        ["Signs", "Reduced expansion, hyper-resonance, absent breath sounds and vocal resonance"],
+        ["Tension signs", "Hypotension, raised JVP, tachycardia, late tracheal deviation"],
+        ["Imaging", "Erect PA CXR; ultrasound lung point; CT for bulla vs pneumothorax"],
+        ["Size", "2 cm interpleural at hilum = large (BTS 2010) - no longer drives treatment"],
+        ["BTS 2023 PSP", "Minimal symptoms: conservative; symptomatic: aspiration, ambulatory vent or small drain"],
+        ["BTS 2023 SSP", "Admit; small-bore drain 14F or less; controlled oxygen"],
+        ["Tension", "Decompress 4th/5th ICS anterior to MAL (child 2nd ICS MCL), then drain"],
+        ["Persistent leak", "3-5 days: thoracic surgery; blood patch or valves if unfit"],
+        ["Recurrence prevention", "VATS bullectomy + pleurectomy; talc if unfit; stop smoking"],
+        ["Advice", "No flying until resolved; no diving unless bilateral pleurectomy"],
+      ],
+    },
+    flows: [
+      {
+        kind: "flow",
+        heading: "BTS 2023 approach to spontaneous pneumothorax",
+        steps: [
+          { label: "Tension physiology?", tone: "decision", detail: "Hypotension, hypoxia, raised JVP" },
+          { label: "Yes: decompress now, then chest drain", tone: "warn", detail: "Adult 4th/5th ICS anterior to MAL" },
+          { label: "No: symptomatic or high-risk features?", tone: "decision", detail: "Instability, hypoxia, bilateral, lung disease, 50+ smoker" },
+          { label: "PSP, minimal symptoms: conservative", tone: "good", detail: "Review in 2-4 days" },
+          { label: "PSP symptomatic: aspiration or ambulatory vent", detail: "Aspirate up to 2.5 L; drain if it fails" },
+          { label: "SSP: admit and small-bore drain", detail: "14F or less; oxygen 88-92% if hypercapnic" },
+          { label: "Persistent leak 3-5 days: surgical referral", tone: "warn" },
+        ],
+      },
+      {
+        kind: "ladder",
+        heading: "Escalation of intervention",
+        steps: [
+          { label: "Conservative observation", tone: "good", detail: "Minimal symptoms PSP" },
+          { label: "Needle aspiration", detail: "16-18G cannula, stop at 2.5 L" },
+          { label: "Ambulatory pleural vent", detail: "PSP, specialist pathway" },
+          { label: "Small-bore Seldinger chest drain", detail: "Underwater seal, no routine suction" },
+          { label: "Blood patch or endobronchial valve", detail: "Persistent leak, unfit for surgery" },
+          { label: "VATS bullectomy and pleurectomy", tone: "warn", detail: "Recurrence under 5%" },
+        ],
+      },
+      {
+        kind: "compare",
+        heading: "Pneumothorax vs massive effusion vs giant bulla",
+        columns: ["Feature", "Pneumothorax", "Massive effusion", "Giant bulla"],
+        rows: [
+          ["Percussion", "Hyper-resonant", "Stony dull", "Hyper-resonant"],
+          ["Trachea", "Away if tension", "Away", "Usually central"],
+          ["X-ray edge", "Visceral pleural line parallel to wall", "Meniscus", "Concave inner margin, septa"],
+          ["Key test", "Ultrasound lung point", "Ultrasound fluid", "CT"],
+          ["Do not", "Clamp bubbling drain", "Drain over 1.5 L at once", "Insert a drain"],
+        ],
+      },
+    ],
+    notes: {
+      sections: [
+        {
+          title: "Definition and key facts",
+          points: [
+            "**Pneumothorax** is air in the pleural space with lung collapse.",
+            "**PSP** has no known lung disease; **SSP** has underlying lung disease.",
+            "**Tension** is a one-way valve causing obstructive shock.",
+            "PSP recurrence is about **30%**, mostly in the first year.",
+            "In India **TB and COPD** are the main causes of SSP.",
+          ],
+        },
+        {
+          title: "Causes and risk factors",
+          points: [
+            "**Smoking** is the strongest modifiable risk for PSP.",
+            "Apical **blebs and bullae** in tall thin young men.",
+            "SSP: **COPD, TB**, ILD, PCP in HIV, cystic fibrosis.",
+            "Cystic diseases: **LAM, Birt-Hogg-Dube**, Langerhans cell histiocytosis.",
+            "**Iatrogenic**: lung biopsy, central lines, thoracocentesis, ventilation.",
+          ],
+        },
+        {
+          title: "Clinical features",
+          points: [
+            "**Sudden pleuritic pain** and breathlessness, often at rest.",
+            "Signs: **hyper-resonance**, reduced breath sounds and vocal resonance.",
+            "Tension: **hypotension, raised JVP**, tachycardia, late tracheal shift.",
+            "Ventilated patient: **rising airway pressure** and falling SpO2.",
+            "**Hamman's sign**: crunch with heartbeat in left pneumothorax.",
+          ],
+        },
+        {
+          title: "Investigations",
+          points: [
+            "**Erect PA chest X-ray**; expiratory films not needed.",
+            "Ultrasound: **absent sliding, barcode sign, lung point**.",
+            "**CT** separates giant bulla from pneumothorax.",
+            "**Tension is clinical** - never wait for an X-ray.",
+          ],
+        },
+        {
+          title: "Treatment - first line",
+          points: [
+            "BTS 2023: decide by **symptoms and high-risk features**, not size.",
+            "Minimal-symptom PSP: **conservative**, review in 2-4 days.",
+            "Symptomatic PSP: **needle aspiration** or ambulatory vent.",
+            "SSP: **admit** and small-bore drain 14F or less.",
+            "Oxygen to **94-98%**, or 88-92% if hypercapnic risk.",
+          ],
+        },
+        {
+          title: "Inpatient / emergency care",
+          points: [
+            "Tension: decompress at **4th/5th ICS anterior to MAL** in adults.",
+            "Children: **2nd ICS midclavicular** line.",
+            "Drain in the **triangle of safety**; underwater seal.",
+            "**Never clamp** a bubbling drain; avoid early suction.",
+            "Persistent leak at **3-5 days**: thoracic surgery referral.",
+          ],
+        },
+        {
+          title: "Special groups",
+          points: [
+            "**Pregnancy**: aspiration first, early epidural, assisted second stage.",
+            "**Catamenial**: VATS diaphragm repair plus hormonal suppression.",
+            "**HIV with PCP**: often bilateral, persistent leak.",
+            "**Divers**: no diving unless bilateral surgical pleurectomy.",
+          ],
+        },
+        {
+          title: "Complications and red flags",
+          points: [
+            "**Tension** and cardiac arrest - a reversible cause in ALS.",
+            "**Re-expansion pulmonary oedema** after rapid re-expansion.",
+            "**Haemopneumothorax**, empyema, surgical emphysema.",
+            "Bilateral pneumothorax or hypoxaemia means **admit**.",
+          ],
+        },
+        {
+          title: "Referral and follow-up",
+          points: [
+            "Clinic review at **2-4 weeks** to confirm resolution.",
+            "**Stop smoking** to cut recurrence.",
+            "**No flying** until radiological resolution.",
+            "Surgery after **second episode**, bilateral, persistent leak or high-risk job.",
+          ],
+        },
+        {
+          title: "Latest updates",
+          points: [
+            "**BTS 2023** replaced the 2010 size-based algorithm.",
+            "**PSP trial 2020** supports conservative care.",
+            "**RAMPP 2020** supports ambulatory vents.",
+            "Surgery may be offered after a **first PSP** by choice.",
+          ],
+        },
+      ],
+      tables: [
+        {
+          heading: "Drug table",
+          columns: ["Drug", "Dose and route", "Duration", "Key side effects / cautions"],
+          rows: [
+            ["Oxygen", "Titrate to SpO2 94-98% (88-92% hypercapnic risk)", "Until hypoxaemia resolves", "CO2 retention in COPD"],
+            ["Paracetamol", "1 g orally or IV 6-hourly, max 4 g/day", "As needed", "Liver toxicity"],
+            ["Lidocaine 1%", "Up to 3 mg/kg local infiltration", "Single procedure", "Seizures, arrhythmia in overdose"],
+            ["Sterile talc", "4-5 g slurry or poudrage", "Once", "Pain, fever"],
+            ["Autologous blood patch", "50-100 mL via drain", "Repeat once if needed", "Infection, drain block"],
+          ],
+        },
+        {
+          heading: "PSP vs SSP",
+          columns: ["Feature", "PSP", "SSP"],
+          rows: [
+            ["Age", "15-35", "Over 50"],
+            ["Lung", "Normal apart from blebs", "COPD, TB, ILD"],
+            ["Symptoms", "Mild", "Severe, hypoxic"],
+            ["Default care", "Conservative or aspiration", "Admit, drain"],
+            ["Recurrence", "About 30%", "40% or more"],
+          ],
+        },
+        {
+          heading: "High-risk characteristics (BTS 2023)",
+          columns: ["Feature", "Why it matters"],
+          rows: [
+            ["Haemodynamic instability", "Possible tension"],
+            ["Significant hypoxia", "Little reserve"],
+            ["Bilateral", "Both lungs compromised"],
+            ["Underlying lung disease", "Secondary pneumothorax"],
+            ["Age 50+ with smoking", "Treat as secondary"],
+            ["Haemopneumothorax", "Bleeding source"],
+          ],
+        },
+      ],
+      remember: [
+        "Treat the patient, not the X-ray (BTS 2023).",
+        "Tension is clinical - decompress first.",
+        "Adult decompression: 4th/5th ICS anterior to mid-axillary line.",
+        "Triangle of safety: lat dorsi, pec major, 5th ICS, axilla apex.",
+        "Never clamp a bubbling drain.",
+        "Lung point = 100% specific.",
+        "Over 50 and smoker = secondary pneumothorax.",
+      ],
+    },
+  },
 };
 
 export default revision;

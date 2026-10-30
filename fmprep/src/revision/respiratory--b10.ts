@@ -194,6 +194,202 @@ const revision: RevisionSet = {
       ],
     },
   },
+  "respiratory-pleural-other": {
+    checked: "2026-10",
+    updated: [
+      "BTS Guideline for Pleural Disease 2023: IPC or talc first-line by patient choice; IPC for non-expandable lung",
+      "BTS 2023: talc slurry and poudrage equivalent; talc via IPC and daily IPC drainage supported",
+      "MARS2 2024: extended pleurectomy-decortication not recommended for mesothelioma",
+      "FDA 2024: pembrolizumab plus chemotherapy approved for mesothelioma",
+      "IASLC 9th edition TNM 2024 for pleural mesothelioma",
+    ],
+    master: {
+      heading: "Malignant effusion, mesothelioma, chylothorax and pleural thickening",
+      columns: ["Heading", "What to write"],
+      rows: [
+        ["MPE definition", "Malignant cells in fluid or pleura; lung, breast, lymphoma, ovary, mesothelioma; survival 3-12 months"],
+        ["MPE diagnosis", "Ultrasound, cytology (about 60%), contrast CT, image-guided biopsy or thoracoscopy"],
+        ["MPE treatment", "Aspirate up to 1.5 L; recurrent: IPC or talc 4 g by choice; IPC if non-expandable lung"],
+        ["Prognosis", "LENT score: LDH, ECOG, neutrophil-lymphocyte ratio, tumour type"],
+        ["Non-expandable lung", "Pain on drainage, pneumothorax ex vacuo, elastance over 14.5 cmH2O/L; no drain, use IPC"],
+        ["Mesothelioma", "Asbestos (amphiboles), latency 30-40 years; calretinin, WT1, D2-40 positive; BAP1 loss"],
+        ["Mesothelioma treatment", "Nivolumab-ipilimumab or pemetrexed-cisplatin +/- bevacizumab; no surgery (MARS2)"],
+        ["Asbestos pleura", "Plaques (benign), benign effusion, diffuse thickening, rounded atelectasis, mesothelioma"],
+        ["Chylothorax", "TG over 110 mg/dL; surgery, lymphoma, filariasis, LAM; T5 decides side"],
+        ["Chylothorax treatment", "Drain, MCT diet or NPO/TPN, octreotide; embolise or ligate if over 1-1.5 L/day for 5 days"],
+        ["Pseudochylothorax", "Cholesterol over 200 with crystals; old TB, rheumatoid; aspirate or decorticate"],
+        ["Fibrothorax", "Peel after empyema, haemothorax, TB; retracted hemithorax; decortication after 6 months"],
+      ],
+    },
+    flows: [
+      {
+        kind: "flow",
+        heading: "Symptomatic malignant pleural effusion (BTS 2023)",
+        steps: [
+          { label: "Ultrasound and therapeutic aspiration", detail: "Up to 1.5 L; stop for pain or cough", tone: "neutral" },
+          { label: "Breathlessness relieved and lung expands?", tone: "decision" },
+          { label: "Expandable lung: IPC or talc by choice", detail: "Talc 4 g slurry or poudrage", tone: "good" },
+          { label: "Non-expandable lung: IPC", detail: "Talc via IPC improves pleurodesis", tone: "warn" },
+          { label: "Palliative care and oncology", tone: "neutral" },
+        ],
+      },
+      {
+        kind: "ladder",
+        heading: "Chylothorax escalation",
+        steps: [
+          { label: "Drain and confirm TG over 110 mg/dL", tone: "neutral" },
+          { label: "Low-fat MCT diet", detail: "MCT bypasses lymphatics", tone: "neutral" },
+          { label: "Nil by mouth with TPN, plus octreotide", detail: "100-200 micrograms SC 8-hourly", tone: "decision" },
+          { label: "Duct embolisation or ligation", detail: "Over 1-1.5 L/day for 5 days, or over 2 weeks", tone: "warn" },
+          { label: "Treat cause", detail: "Lymphoma therapy, sirolimus for LAM", tone: "good" },
+        ],
+      },
+      {
+        kind: "compare",
+        heading: "Milky pleural fluid",
+        columns: ["Feature", "Chylothorax", "Pseudochylothorax", "Empyema"],
+        rows: [
+          ["Centrifuge", "Stays milky", "Stays milky", "Clears"],
+          ["Triglycerides", "Over 110", "Under 110", "Variable"],
+          ["Cholesterol", "Under 200", "Over 200, crystals", "Variable"],
+          ["Course", "Acute", "Years", "Days"],
+        ],
+      },
+    ],
+    notes: {
+      sections: [
+        {
+          title: "Definition and key facts",
+          points: [
+            "**Malignant pleural effusion** means malignant cells in fluid or pleura.",
+            "Commonest sources: **lung, breast**, lymphoma, ovary and mesothelioma.",
+            "Median survival after MPE is only **3-12 months**.",
+            "**Chylothorax** is chyle in the pleura; triglycerides over 110 mg/dL.",
+            "**Pseudochylothorax** is a cholesterol effusion in long-standing thick pleura.",
+          ],
+        },
+        {
+          title: "Causes and risk factors",
+          points: [
+            "**Asbestos** causes plaques, benign effusion, thickening and mesothelioma.",
+            "Mesothelioma latency is **30-40 years**; amphiboles are most potent.",
+            "Chylothorax: **surgery, lymphoma**, LAM, TB and filariasis.",
+            "Duct injury **below T5 gives right**, above gives left chylothorax.",
+            "Fibrothorax follows **empyema, haemothorax or TB**.",
+          ],
+        },
+        {
+          title: "Clinical features",
+          points: [
+            "**Breathlessness** dominates MPE; dull chest pain dominates mesothelioma.",
+            "Large effusion with **no mediastinal shift** suggests mesothelioma or bronchial block.",
+            "Fibrothorax gives a **retracted hemithorax** with trachea pulled towards it.",
+            "Pain or cough during drainage suggests **non-expandable lung**.",
+          ],
+        },
+        {
+          title: "Investigations",
+          points: [
+            "**Cytology** is positive in about 60%; biopsy if negative.",
+            "**Contrast CT** before drainage: nodular or circumferential thickening suggests cancer.",
+            "**Thoracoscopy** yields over 90% and allows talc at the same time.",
+            "Mesothelioma IHC: **calretinin, WT1, D2-40** positive; BAP1 loss.",
+            "Chylothorax: **TG over 110**; 50-110 needs chylomicron test.",
+            "Pseudochylothorax: **cholesterol over 200** with crystals.",
+          ],
+        },
+        {
+          title: "Treatment - first line",
+          points: [
+            "Asymptomatic MPE: **no drainage**, treat the cancer.",
+            "Symptomatic: **aspirate up to 1.5 L** at a time.",
+            "Recurrent with expandable lung: **IPC or talc**, patient's choice.",
+            "Non-expandable lung: **IPC**, never pleurodesis.",
+            "Chylothorax: drain, **MCT diet** or nil by mouth, octreotide.",
+          ],
+        },
+        {
+          title: "Treatment - next steps",
+          points: [
+            "Chylothorax over 1-1.5 L/day for 5 days: **duct embolisation or ligation**.",
+            "Mesothelioma: **nivolumab plus ipilimumab** or pemetrexed-cisplatin.",
+            "**No radical surgery** for mesothelioma after MARS2.",
+            "Fibrothorax: **decortication** if still restrictive after 6 months.",
+            "Pseudochylothorax: aspirate if breathless; decorticate if trapped.",
+          ],
+        },
+        {
+          title: "Complications and red flags",
+          points: [
+            "**IPC infection** in about 5%; tract metastasis in mesothelioma.",
+            "**Re-expansion oedema** if over 1.5 L removed quickly.",
+            "Chylothorax causes **malnutrition, lymphopenia** and infection.",
+            "Never drain a **pneumothorax ex vacuo** after tapping a trapped lung.",
+          ],
+        },
+        {
+          title: "Referral and follow-up",
+          points: [
+            "Refer unexplained exudate for **biopsy** once TB is excluded.",
+            "Early **palliative care** for every new MPE.",
+            "Asbestos disease is **notifiable** and compensable in India.",
+            "Counsel **smoking cessation** in asbestos-exposed workers.",
+          ],
+        },
+        {
+          title: "Latest updates",
+          points: [
+            "**BTS 2023**: IPC and talc both first line by choice.",
+            "**MARS2 2024**: pleurectomy-decortication harms in mesothelioma.",
+            "**Pembrolizumab with chemotherapy** approved for mesothelioma in 2024.",
+          ],
+        },
+      ],
+      tables: [
+        {
+          heading: "Drugs and agents",
+          columns: ["Drug", "Dose and route", "Duration", "Key side effects / cautions"],
+          rows: [
+            ["Graded talc", "4 g in 50 mL saline via drain or IPC", "Single dose", "Pain, fever; fails in trapped lung"],
+            ["Octreotide", "100-200 micrograms SC 8-hourly", "1-2 weeks", "Gallstones, hyperglycaemia; off-label"],
+            ["Nivolumab plus ipilimumab", "3 mg/kg IV 2-weekly + 1 mg/kg IV 6-weekly", "Up to 2 years", "Immune colitis, hepatitis, pneumonitis"],
+            ["Pemetrexed plus cisplatin", "500 mg/m2 + 75 mg/m2 IV 3-weekly", "4-6 cycles", "Marrow suppression; give folate and B12"],
+            ["Sirolimus (LAM)", "2 mg oral daily, trough 5-15 ng/mL", "Long-term", "Mouth ulcers, infections"],
+          ],
+        },
+        {
+          heading: "IPC versus talc",
+          columns: ["Feature", "IPC", "Talc pleurodesis"],
+          rows: [
+            ["Needs lung re-expansion", "No", "Yes"],
+            ["Hospital stay", "Day case", "2-5 days"],
+            ["Breathlessness relief", "Equal", "Equal"],
+            ["Main problem", "Infection, home drainage", "Pain, failure 20-30%"],
+          ],
+        },
+        {
+          heading: "Asbestos-related pleural disease",
+          columns: ["Entity", "Latency", "Meaning"],
+          rows: [
+            ["Pleural plaques", "20-30 years", "Benign marker of exposure"],
+            ["Benign asbestos effusion", "Under 20 years", "Diagnosis of exclusion"],
+            ["Diffuse pleural thickening", "Variable", "Restriction"],
+            ["Rounded atelectasis", "Variable", "Mimics cancer"],
+            ["Mesothelioma", "30-40 years", "Malignant"],
+          ],
+        },
+      ],
+      remember: [
+        "**TG over 110 = chyle**; cholesterol over 200 with crystals = pseudochyle.",
+        "**Empyema clears on spinning**; chyle does not.",
+        "**T5 rule** for the side of chylothorax.",
+        "**Trapped lung: IPC**, not talc and not a drain.",
+        "**Plaques are benign** - reassure.",
+        "**MCT bypasses lymphatics.**",
+        "**Calretinin, WT1, D2-40** = mesothelioma.",
+      ],
+    },
+  },
 };
 
 export default revision;

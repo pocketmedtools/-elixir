@@ -513,4 +513,463 @@ topics.push({
   ],
 });
 
+topics.push({
+  id: "respiratory-severe-asthma-biologics",
+  title: "Difficult-to-treat and severe asthma, phenotypes and biologics",
+  oneLiner:
+    "**Difficult-to-treat asthma** is asthma uncontrolled despite **medium- or high-dose ICS-LABA** (or needing high dose to stay controlled); **severe asthma** is the subset that stays uncontrolled despite **good adherence and technique, optimised high-dose ICS-LABA and treatment of contributory factors** - it is phenotyped by **blood eosinophils, FeNO and IgE** and treated with **add-on LAMA, azithromycin and T2-targeted biologics (omalizumab, mepolizumab, benralizumab, dupilumab, tezepelumab)**.",
+  frequency: "common",
+  keywords: [
+    "severe asthma",
+    "difficult asthma",
+    "refractory asthma",
+    "T2-high asthma",
+    "eosinophilic asthma",
+    "FeNO",
+    "omalizumab",
+    "mepolizumab",
+    "benralizumab",
+    "reslizumab",
+    "dupilumab",
+    "tezepelumab",
+    "depemokimab",
+    "tiotropium",
+    "azithromycin",
+    "bronchial thermoplasty",
+    "OCS-dependent asthma",
+    "clinical remission",
+    "ERS/ATS",
+  ],
+  sections: [
+    {
+      heading: "Definition and epidemiology",
+      points: [
+        "**Difficult-to-treat asthma**: asthma that is uncontrolled despite **GINA Step 4-5 treatment (medium- or high-dose ICS with a second controller, or maintenance OCS)**, or that needs such treatment to maintain control and reduce exacerbations. [GINA 2025]",
+        "**Severe asthma**: the subset of difficult-to-treat asthma that is uncontrolled **despite adherence to optimised high-dose ICS-LABA and management of contributory factors**, or that worsens when high-dose treatment is reduced. [GINA 2025]",
+        "**ERS/ATS definition**: asthma requiring high-dose ICS plus a second controller (and/or systemic steroids for 50% or more of the previous year) to prevent it becoming uncontrolled, or which remains uncontrolled despite this. [ERS/ATS 2014]",
+        "'Uncontrolled' means **poor symptom control (ACQ over 1.5 or ACT under 20)**, **2 or more OCS bursts or 1 or more serious exacerbation (hospital, ICU, ventilation) in the past year**, or airflow limitation with FEV1 under 80% after bronchodilator. [ERS/ATS 2014]",
+        "About **17% of adults with asthma have difficult-to-treat asthma** but only **about 3.7% have true severe asthma** once technique, adherence and comorbidities are fixed. [Hekking, JACI 2015]",
+        "Severe asthma accounts for a disproportionate share of **asthma costs, admissions and deaths**, and of the long-term harm from **cumulative oral corticosteroid exposure** - as little as 0.5-1 g lifetime prednisolone raises the risk of diabetes, osteoporosis, cataract and fracture. [GINA 2025]",
+        "In India, true severe asthma is under-recognised because **adherence, inhaler technique, biomass and tobacco exposure, untreated rhinitis, ABPA and post-TB airway disease** confound most 'uncontrolled' asthma. [ICS/NCCP(I) 2015]",
+      ],
+    },
+    {
+      heading: "Why asthma stays uncontrolled - contributory factors",
+      points: [
+        "**Poor adherence** is found in up to 50% or more of difficult asthma - check prescription refills, dose counters, and ask non-judgementally. [GINA 2025]",
+        "**Incorrect inhaler technique** occurs in up to 70-80% of patients; watch the patient use the device every visit. [GINA 2025]",
+        "**Wrong diagnosis**: inducible laryngeal obstruction, dysfunctional breathing, COPD, bronchiectasis, heart failure, central airway tumour or post-TB obstruction. [GINA 2025]",
+        "**Comorbidities**: chronic rhinosinusitis with or without nasal polyps, GORD, **obesity, obstructive sleep apnoea**, anxiety and depression, ABPA, EGPA. [GINA 2025]",
+        "**Ongoing exposures**: active or passive smoking, vaping, **biomass and incense smoke**, occupational sensitisers, allergens at home (mould, cockroach, dust mite). [GINA 2025]",
+        "**Drugs**: non-selective beta-blockers (including timolol eye drops), aspirin and NSAIDs in AERD. [GINA 2025]",
+        "**Psychosocial factors**: cost of inhalers, steroid phobia, health literacy, depression - each needs addressing before escalation. [GINA 2025]",
+      ],
+    },
+    {
+      heading: "Pathophysiology - the T2 and T2-low pathways that the biologics block",
+      points: [
+        "Epithelial injury by viruses, allergens and pollutants releases the **alarmins TSLP, IL-33 and IL-25**, which drive both adaptive Th2 cells and **innate lymphoid cells (ILC2)** - the upstream target of **tezepelumab**. [Harrison 22e]",
+        "**IL-4** drives B-cell class switching to **IgE** and Th2 differentiation; **IL-13** causes goblet-cell metaplasia, mucus, airway hyperresponsiveness and epithelial iNOS (raised **FeNO**) - both act through **IL-4Ralpha**, the target of **dupilumab**. [Harrison 22e]",
+        "**IL-5** controls eosinophil maturation, release from marrow, survival and activation - blocked by **mepolizumab and reslizumab** (anti-IL-5) and **benralizumab** (anti-IL-5Ralpha, which also depletes eosinophils by antibody-dependent cellular cytotoxicity). [Harrison 22e]",
+        "**IgE** bound to FcepsilonRI on mast cells and basophils triggers degranulation on allergen cross-linking; **omalizumab** binds free IgE, lowering it and down-regulating FcepsilonRI. [Harrison 22e]",
+        "**Blood eosinophils** reflect IL-5 activity, while **FeNO** reflects IL-13 activity - the two are partly independent, and both predict exacerbation risk and response to ICS and biologics. [GINA 2025]",
+        "**T2-low asthma** (neutrophilic or paucigranulocytic) is linked to smoking, obesity, late onset, infection and IL-17 or IL-8 pathways; it responds poorly to ICS and biologics other than tezepelumab, and may benefit from azithromycin. [GINA 2025]",
+        "**Corticosteroid insensitivity** in severe asthma comes from reduced histone deacetylase-2 activity (smoking, oxidative stress), altered glucocorticoid receptor function and neutrophilic inflammation. [Harrison 22e]",
+      ],
+    },
+    {
+      heading: "Classification and phenotyping",
+      points: [
+        "**Refractory type 2 inflammation** on high-dose ICS (GINA) is suggested by any of: **blood eosinophils 150/microlitre or more**, **FeNO 20 ppb or more**, sputum eosinophils 2% or more, clinically allergen-driven asthma, or need for maintenance OCS. [GINA 2025]",
+        "Repeat **blood eosinophils and FeNO up to 3 times**, at the lowest possible OCS dose, before calling asthma T2-low, because steroids suppress both. [GINA 2025]",
+        "**Allergic (atopic) phenotype**: childhood onset, sensitisation on skin prick test or specific IgE, symptoms with allergen exposure - omalizumab candidate. [GINA 2025]",
+        "**Late-onset eosinophilic phenotype**: adult onset, high eosinophils, **chronic rhinosinusitis with nasal polyps**, often AERD, frequent OCS need - anti-IL-5/5R or dupilumab candidate. [GINA 2025]",
+        "**Obesity-associated, T2-low** phenotype: mostly women, symptoms out of proportion to inflammation - weight loss, CPAP for OSA and pulmonary rehabilitation help more than drugs. [Harrison 22e]",
+        "**Severe asthma with fixed airflow limitation** may overlap with COPD (asthma-COPD overlap) - treat with ICS-containing therapy, never LABA or LAMA alone. [GINA 2025]",
+        "**Eosinophils 1500/microlitre or more** should prompt a search for **EGPA, hypereosinophilic syndrome, ABPA and parasites (Strongyloides, filaria)** before attributing them to asthma. [GINA 2025]",
+      ],
+    },
+    {
+      heading: "Clinical features - history",
+      points: [
+        "Frequent **night waking, daily reliever use, limitation of activity** and **2 or more steroid courses a year** despite Step 4-5 treatment. [GINA 2025]",
+        "Ask about **every inhaler and how often it is actually used**, cost, beliefs, and who fills the prescriptions. [GINA 2025]",
+        "**Nasal blockage, loss of smell and polyps** suggest CRSwNP with eosinophilic or AERD phenotype; reaction to aspirin or NSAIDs confirms AERD. [GINA 2025]",
+        "**Brown mucus plugs, fleeting shadows, haemoptysis** suggest ABPA; **neuropathy, rash, sinusitis and cardiac symptoms** suggest EGPA. [Harrison 22e]",
+        "**Snoring and daytime sleepiness** (OSA), heartburn (GORD), panic and tingling (dysfunctional breathing), **inspiratory throat tightness** (laryngeal obstruction). [GINA 2025]",
+        "**Cumulative steroid harm**: weight gain, diabetes, fractures, cataract, mood change - quantify OCS courses in the last year. [GINA 2025]",
+        "Occupational history and home exposures (biomass, mosquito coil, pets, damp). [GINA 2025]",
+      ],
+    },
+    {
+      heading: "Examination",
+      points: [
+        "Watch the **inhaler technique** - this is part of the examination in every difficult-asthma patient. [GINA 2025]",
+        "**BMI and neck circumference** for obesity and OSA; **cushingoid features, bruising, thin skin** from steroids. [Harrison 22e]",
+        "**Nasal polyps** on anterior rhinoscopy; oral candidiasis and **dysphonia** from ICS. [GINA 2025]",
+        "**Inspiratory stridor or monophonic wheeze** suggests upper or central airway obstruction rather than asthma. [Harrison 22e]",
+        "**Clubbing** is not a feature of asthma - think bronchiectasis, ILD or lung cancer. [Harrison 22e]",
+        "**Mononeuritis multiplex, purpuric rash** - EGPA; **crackles** - bronchiectasis, ILD or heart failure. [Harrison 22e]",
+      ],
+    },
+    {
+      heading: "Differential diagnosis",
+      points: [
+        "**Inducible laryngeal obstruction (vocal cord dysfunction)**: inspiratory stridor, throat tightness, normal SpO2, flattened inspiratory flow-volume loop; diagnosed by laryngoscopy during symptoms. [GINA 2025]",
+        "**Dysfunctional breathing**: sighing, chest tightness, tingling, Nijmegen questionnaire score 23 or more, normal or variable spirometry - breathing retraining helps. [GINA 2025]",
+        "**COPD or asthma-COPD overlap**: smoker or biomass exposure, persistent obstruction, emphysema on CT. [GOLD 2025]",
+        "**ABPA**: Aspergillus-specific IgE, total IgE 500 IU/mL or more, central bronchiectasis and mucus plugs (see the ABPA topic). [ISHAM 2024]",
+        "**EGPA**: asthma with eosinophils over 10% or 1000/microlitre, neuropathy, sinusitis, pulmonary infiltrates, ANCA positive in about 40%. [ACR/EULAR 2022]",
+        "**Bronchiectasis and post-TB airway disease**: daily purulent sputum, crackles, HRCT findings. [BTS 2019]",
+        "**Central airway obstruction** (tumour, tracheal stenosis, foreign body): monophonic wheeze, fixed flow-volume loop pattern, no bronchodilator response. [Harrison 22e]",
+        "**Heart failure**: orthopnoea, crackles, raised NT-proBNP, echo. [ESC 2023]",
+      ],
+    },
+    {
+      heading: "Investigations",
+      points: [
+        "**Confirm the diagnosis**: spirometry with bronchodilator reversibility (FEV1 over 12% and 200 mL), PEF variability, or bronchial challenge if spirometry is normal - consider stepping down ICS before testing if the diagnosis is doubtful. [GINA 2025]",
+        "**Blood eosinophil count** (repeat up to 3 times): 150/microlitre or more suggests T2 inflammation; 300/microlitre or more strongly predicts response to anti-IL-5/5R. [GINA 2025]",
+        "**FeNO**: 20 ppb or more on high-dose ICS suggests refractory T2 inflammation; 25 ppb or more supports dupilumab; 50 ppb or more is high. [GINA 2025]",
+        "**Total IgE and specific IgE or skin prick tests** to perennial aeroallergens - needed for omalizumab dosing (total IgE 30-1500 IU/mL in most dosing tables) and eligibility. [GINA 2025]",
+        "**Aspergillus-specific IgE (or skin test) and total IgE** in every Indian patient with severe asthma, to exclude ABPA. [ISHAM 2024]",
+        "**Strongyloides serology or stool test** (or empirical ivermectin) before OCS or biologics in patients from endemic areas, including most of India. [GINA 2025]",
+        "**HRCT chest** for atypical features: bronchiectasis, mucus plugs, emphysema, ILD; **ANCA** if EGPA suspected; **sinus CT** for CRSwNP. [GINA 2025]",
+        "**Sputum AFB/CBNAAT** in any patient with chronic productive cough in India; **DXA scan** for patients on long-term OCS. [MoHFW 2024]",
+        "**ACT (under 20 = uncontrolled) or ACQ-5 (over 1.5 = uncontrolled)** to measure control at baseline and after each change. [GINA 2025]",
+      ],
+    },
+    {
+      heading: "Management in the OPD - optimise before escalating",
+      points: [
+        "**Educate and fix technique and adherence first**, then review in 3-6 months before labelling severe asthma. [GINA 2025]",
+        "Switch to **ICS-formoterol maintenance-and-reliever therapy (MART)** if not already on it - it reduces severe exacerbations compared with fixed-dose ICS-LABA plus SABA. [GINA 2025]",
+        "**Optimise ICS dose**: a trial of high-dose ICS-LABA for 3-6 months (e.g. budesonide-formoterol 400/12 two puffs twice daily, or fluticasone furoate-vilanterol 200/25 once daily). [GINA 2025]",
+        "**Add-on LAMA**: **tiotropium soft-mist 2.5 microgram, 2 puffs once daily** (age 6 and over), or a **single-inhaler triple ICS-LABA-LAMA** (e.g. beclometasone-formoterol-glycopyrronium, fluticasone furoate-umeclidinium-vilanterol) - reduces exacerbations modestly and improves FEV1. [GINA 2025]",
+        "**Azithromycin 500 mg three times a week (or 250 mg daily) for at least 6 months** in adults with persistent symptoms on Step 5, after checking sputum for NTM, **ECG for QTc** and hearing - reduces exacerbations in both eosinophilic and non-eosinophilic asthma (AMAZES). [GINA 2025]",
+        "**Leukotriene receptor antagonist** (montelukast 10 mg at night) as add-on is less effective; warn about **neuropsychiatric adverse effects** (FDA boxed warning). [GINA 2025]",
+        "**Maintenance OCS** only as a last resort at the **lowest dose (prednisolone 7.5 mg/day or less)**, with bone protection, glucose, BP and eye checks. [GINA 2025]",
+        "**Non-drug**: smoking cessation, weight reduction, **pulmonary rehabilitation**, breathing retraining, CPAP for OSA, treatment of rhinitis with intranasal steroids, influenza and pneumococcal vaccines. [GINA 2025]",
+      ],
+    },
+    {
+      heading: "Biologics - choice, criteria and assessment",
+      points: [
+        "**Omalizumab (anti-IgE)**: age 6 and over, **sensitisation to a perennial aeroallergen**, total IgE and weight within the dosing table, exacerbations in the last year; SC every 2-4 weeks (75-600 mg by table); also for CRSwNP and chronic urticaria. [GINA 2025]",
+        "**Mepolizumab (anti-IL-5)**: **100 mg SC every 4 weeks** (40 mg in 6-11 years), eosinophils 150/microlitre or more (or 300 or more in the past year), exacerbations in the past year; also licensed for EGPA (300 mg), HES and CRSwNP. [GINA 2025]",
+        "**Benralizumab (anti-IL-5Ralpha)**: **30 mg SC every 4 weeks for 3 doses, then every 8 weeks**; eosinophils 300/microlitre or more (lower thresholds in OCS-dependent patients); almost completely depletes blood eosinophils; also approved for EGPA. [GINA 2025]",
+        "**Reslizumab (anti-IL-5)**: 3 mg/kg IV every 4 weeks, adults with eosinophils 400/microlitre or more; not marketed in India. [GINA 2025]",
+        "**Dupilumab (anti-IL-4Ralpha)**: **400 mg SC loading then 200 mg every 2 weeks**, or **600 mg then 300 mg every 2 weeks** for OCS-dependent asthma or with atopic dermatitis; eosinophils 150-1500/microlitre or **FeNO 25 ppb or more**; avoid if eosinophils over 1500. [GINA 2025]",
+        "**Tezepelumab (anti-TSLP)**: **210 mg SC every 4 weeks**, age 12 and over, **no biomarker threshold needed** - the option for T2-low severe asthma, though response is greater with higher eosinophils or FeNO; it did not reduce OCS dose in trials. [GINA 2025]",
+        "**Choosing**: allergic with high IgE - omalizumab; high eosinophils or OCS-dependent - anti-IL-5/5R or dupilumab; **nasal polyps** - dupilumab, omalizumab or mepolizumab; **atopic dermatitis** - dupilumab; low T2 markers - tezepelumab. [GINA 2025]",
+        "**Assess response at 4 months** (exacerbations, OCS dose, control, FEV1): good response - continue and review 3-6 monthly; unclear - extend to 6-12 months; no response - stop and switch to a different target. [GINA 2025]",
+        "**Clinical remission on treatment** (GINA 2024-2025 concept): no exacerbations, no OCS, good symptom control and stable lung function for at least 12 months - the new treatment goal in severe asthma. [GINA 2025]",
+        "Never stop ICS when a biologic is started; **taper OCS first**, then consider gradual ICS reduction to medium dose after 3-6 months of good response. [GINA 2025]",
+      ],
+    },
+    {
+      heading: "Availability, cost and the Indian setting",
+      points: [
+        "**Omalizumab, mepolizumab, benralizumab and dupilumab are marketed in India**; tezepelumab and reslizumab are not widely available - check current availability before planning. [CDSCO 2025]",
+        "Biologics cost **several lakh rupees a year**, are not on the NLEM and are usually not covered by PM-JAY; patient-assistance programmes and employer insurance are the usual routes. [NLEM 2022]",
+        "**Treat or exclude Strongyloides** (ivermectin 200 microgram/kg) and exclude **ABPA and TB** before biologics or long-term OCS in India. [GINA 2025]",
+        "**Low-cost steps** with real benefit - technique correction, MART, tiotropium, azithromycin, stopping biomass exposure - must be exhausted first in resource-limited settings. [GINA 2025]",
+        "**Bronchial thermoplasty** (radiofrequency ablation of airway smooth muscle over 3 bronchoscopies) reduces exacerbations modestly; GINA restricts it to **adults in a registry or trial**, and it is rarely done in India. [GINA 2025]",
+      ],
+    },
+    {
+      heading: "Special situations",
+      points: [
+        "**Pregnancy**: continue ICS-LABA; **omalizumab registry data are reassuring**; data for other biologics are limited - continue only after specialist discussion; avoid starting a new biologic in pregnancy if possible. [GINA 2025]",
+        "**Children 6-11**: omalizumab, mepolizumab, benralizumab and dupilumab are approved; tezepelumab from 12 years; tiotropium from 6 years. [GINA 2025]",
+        "**Elderly**: look for **COPD overlap, heart failure and drug interactions**; long-term OCS is especially harmful (fractures, diabetes). [GINA 2025]",
+        "**Diabetes and osteoporosis**: reducing OCS is the main benefit of biologics; offer **calcium, vitamin D and bisphosphonate** when OCS 7.5 mg/day or more for 3 months. [ACR 2022]",
+        "**Live vaccines** are generally acceptable with biologics (not immunosuppressive), unlike high-dose OCS. [GINA 2025]",
+        "**Helminth infection** during biologic therapy: treat the infection; stop the biologic if the infection does not respond. [GINA 2025]",
+      ],
+    },
+    {
+      heading: "Complications, adverse effects and prognosis",
+      points: [
+        "**Omalizumab anaphylaxis** in about 0.1-0.2%, often delayed - observe after the first doses and give an adrenaline auto-injector where available. [GINA 2025]",
+        "**Dupilumab**: conjunctivitis, injection-site reactions, arthralgia and **transient eosinophilia** (rarely eosinophilic pneumonia or EGPA unmasked). [GINA 2025]",
+        "**Anti-IL-5/5R**: headache, injection-site reactions, rarely herpes zoster with mepolizumab (consider zoster vaccine). [GINA 2025]",
+        "**Unmasking of EGPA** when OCS is tapered on any biologic - watch for neuropathy, rash and cardiac symptoms. [GINA 2025]",
+        "**OCS complications**: diabetes, osteoporosis and fractures, cataract, glaucoma, weight gain, adrenal suppression, infections. [GINA 2025]",
+        "With biologics, **about half of patients have 50% or greater fewer exacerbations**, and a proportion achieve clinical remission; super-responders have high eosinophils, adult-onset disease and nasal polyps. [GINA 2025]",
+      ],
+    },
+    {
+      heading: "Referral, follow-up and monitoring",
+      points: [
+        "**Refer to a specialist** when asthma remains uncontrolled after 3-6 months of optimised Step 4 treatment, or with 2 or more OCS courses a year, or with any life-threatening attack. [GINA 2025]",
+        "Each visit: **ACT or ACQ, exacerbations, OCS courses, SABA use, technique, adherence, FEV1**. [GINA 2025]",
+        "**Biologic review at 4 months**, then every 3-6 months; record OCS dose reduction and exacerbation rate. [GINA 2025]",
+        "**Azithromycin**: ECG at baseline and after 1 month; stop if QTc prolongs or hearing loss occurs. [GINA 2025]",
+        "**Long-term OCS**: glucose, BP, weight, DXA scan, eye examination every 1-2 years. [GINA 2025]",
+        "Share care with primary care: action plan, vaccinations, smoking cessation through **NP-NCD and Ayushman Arogya Mandir** services. [MoHFW 2024]",
+      ],
+    },
+    {
+      heading: "Latest guideline updates (2023-2026)",
+      points: [
+        "**GINA 2024-2025** added a definition of **clinical remission on treatment** as the goal in severe asthma. [GINA 2025]",
+        "**GINA 2025**: difficult-to-treat and severe asthma decision tree retained; **tezepelumab** recommended for severe asthma regardless of biomarkers (age 12 and over). [GINA 2025]",
+        "**Benralizumab** gained approval for **EGPA** (2024) and for children 6-11 with severe eosinophilic asthma (2024). [FDA 2024]",
+        "**Dupilumab** gained approval for **COPD with type 2 inflammation** (2024), showing the same T2 logic across airway diseases. [FDA 2024]",
+        "**Depemokimab**, an ultra-long-acting anti-IL-5 given **100 mg SC every 6 months**, was licensed in 2025 in some countries for severe eosinophilic asthma and CRSwNP; not yet available in India. [GINA 2025]",
+        "**BTS/NICE/SIGN 2024** (NG245) recommends referral to specialist asthma services for patients uncontrolled on MART with moderate-dose ICS. [BTS/NICE/SIGN 2024]",
+      ],
+    },
+    {
+      heading: "Exam and viva angle",
+      points: [
+        "Classic question: 'Difference between difficult-to-treat and severe asthma' - **severe asthma is diagnosed only after adherence, technique and comorbidities are fixed**. [GINA 2025]",
+        "Viva: name the **target of each biologic** - IgE (omalizumab), IL-5 (mepolizumab, reslizumab), IL-5Ralpha (benralizumab), IL-4Ralpha (dupilumab), TSLP (tezepelumab). [GINA 2025]",
+        "Viva: why **dupilumab** is avoided with eosinophils over 1500 (transient eosinophilia, possible EGPA unmasking). [GINA 2025]",
+        "Common mistake: **escalating drugs without watching inhaler technique**. [GINA 2025]",
+        "Common mistake: **missing ABPA and Strongyloides** in an Indian patient being considered for biologics or long-term OCS. [ISHAM 2024]",
+        "Common mistake: stopping ICS when a biologic is started - **biologics are add-ons**. [GINA 2025]",
+      ],
+    },
+  ],
+  tables: [
+    {
+      heading: "Biologics for severe asthma",
+      columns: ["Drug", "Dose and route", "Duration/titration", "Key adverse effects / contraindications"],
+      rows: [
+        ["Omalizumab (anti-IgE)", "75-600 mg SC every 2-4 weeks by IgE and weight table; age 6 and over", "Assess at 4 months; continue if response", "Anaphylaxis 0.1-0.2% (observe after early doses); not if IgE outside dosing range"],
+        ["Mepolizumab (anti-IL-5)", "100 mg SC every 4 weeks (40 mg age 6-11); 300 mg in EGPA", "Assess at 4 months", "Headache, injection-site reaction, herpes zoster"],
+        ["Benralizumab (anti-IL-5Ralpha)", "30 mg SC every 4 weeks x3, then every 8 weeks", "Assess at 4 months", "Headache, pharyngitis; near-complete eosinophil depletion"],
+        ["Reslizumab (anti-IL-5)", "3 mg/kg IV every 4 weeks; adults", "Assess at 4 months", "Anaphylaxis; not marketed in India"],
+        ["Dupilumab (anti-IL-4Ralpha)", "400 mg then 200 mg SC every 2 weeks; or 600 mg then 300 mg every 2 weeks (OCS-dependent, atopic dermatitis)", "Assess at 4 months", "Conjunctivitis, transient eosinophilia, arthralgia; avoid if eosinophils over 1500"],
+        ["Tezepelumab (anti-TSLP)", "210 mg SC every 4 weeks; age 12 and over", "Assess at 4 months", "Pharyngitis, arthralgia; did not spare OCS in trials"],
+        ["Tiotropium (add-on LAMA)", "2.5 microgram x 2 puffs soft-mist once daily", "Continuous", "Dry mouth, urinary retention"],
+        ["Azithromycin", "500 mg three times a week or 250 mg daily", "At least 6 months", "QTc prolongation, hearing loss, macrolide resistance; exclude NTM"],
+      ],
+    },
+    {
+      heading: "Difficult-to-treat versus severe asthma",
+      columns: ["Feature", "Difficult-to-treat asthma", "Severe asthma"],
+      rows: [
+        ["Definition", "Uncontrolled on medium- or high-dose ICS-LABA, or needs it for control", "Uncontrolled despite optimised high-dose ICS-LABA after fixing all modifiable factors"],
+        ["Prevalence in adults with asthma", "About 17%", "About 3.7%"],
+        ["Main cause", "Poor adherence, poor technique, comorbidity, exposures, wrong diagnosis", "Refractory T2 or T2-low airway inflammation"],
+        ["Action", "Educate, optimise, treat comorbidity, review 3-6 months", "Phenotype; add-on LAMA, azithromycin, biologics"],
+        ["Who manages", "Primary care with specialist advice", "Specialist severe asthma clinic"],
+      ],
+    },
+    {
+      heading: "T2 biomarkers and what they mean",
+      columns: ["Biomarker", "Cut-off", "Meaning", "Guides"],
+      rows: [
+        ["Blood eosinophils", "150/microlitre or more on high-dose ICS", "Refractory T2 inflammation", "Anti-IL-5/5R, dupilumab"],
+        ["Blood eosinophils", "300/microlitre or more", "Strong predictor of response", "Mepolizumab, benralizumab"],
+        ["Blood eosinophils", "1500/microlitre or more", "Not asthma alone - look for EGPA, HES, ABPA, parasites", "Avoid dupilumab"],
+        ["FeNO", "20 ppb or more on high-dose ICS (25 ppb or more for dupilumab)", "IL-13 activity", "Dupilumab"],
+        ["Total IgE with specific sensitisation", "30-1500 IU/mL with perennial allergen sensitisation", "Allergic phenotype", "Omalizumab dosing and eligibility"],
+        ["Sputum eosinophils", "2% or more", "Eosinophilic airway inflammation", "Specialist centres"],
+      ],
+    },
+    {
+      heading: "Mimics of severe asthma",
+      columns: ["Condition", "Clue", "Test"],
+      rows: [
+        ["Inducible laryngeal obstruction", "Inspiratory stridor, throat tightness", "Laryngoscopy during symptoms; flat inspiratory loop"],
+        ["Dysfunctional breathing", "Sighing, tingling, normal SpO2", "Nijmegen questionnaire"],
+        ["ABPA", "Brown plugs, fleeting shadows", "Aspergillus-specific IgE, total IgE 500 IU/mL or more, HRCT"],
+        ["EGPA", "Neuropathy, rash, sinusitis", "Eosinophils over 1000, ANCA, biopsy"],
+        ["Bronchiectasis or post-TB lung", "Daily purulent sputum", "HRCT, sputum culture and CBNAAT"],
+        ["Central airway obstruction", "Monophonic wheeze, no bronchodilator response", "Flow-volume loop, CT, bronchoscopy"],
+      ],
+    },
+  ],
+  redFlags: [
+    "Any life-threatening or near-fatal attack, or ICU admission, in the past year",
+    "Two or more oral steroid courses a year despite Step 4-5 treatment",
+    "Blood eosinophils 1500/microlitre or more, neuropathy or vasculitic rash (EGPA)",
+    "Haemoptysis, weight loss or fixed monophonic wheeze (TB, tumour, central airway lesion)",
+    "Brown mucus plugs or fleeting infiltrates (ABPA)",
+    "Maintenance OCS for over 3 months",
+    "Anaphylaxis after a biologic injection",
+  ],
+  pearls: [
+    "**Difficult is not severe**: most difficult asthma is technique, adherence, comorbidity or wrong diagnosis.",
+    "**Check before you step up**: technique, adherence, comorbidity, exposures, diagnosis.",
+    "**T2 markers on high-dose ICS**: eosinophils 150 or more, FeNO 20 or more, allergen-driven, or OCS-dependent.",
+    "Biologic targets: **E-5-5R-4R-TSLP** - omalizumab, mepolizumab, benralizumab, dupilumab, tezepelumab.",
+    "**Tezepelumab** is the one biologic that does not need a T2 biomarker.",
+    "**Assess at 4 months** - continue, extend or switch.",
+    "In India, **exclude ABPA, TB and Strongyloides** before biologics or long-term steroids.",
+    "**Azithromycin 500 mg thrice weekly for 6 months** - check QTc and exclude NTM first.",
+  ],
+  mcqs: [
+    {
+      id: "respiratory-severe-asthma-biologics-q1",
+      stem: "A 42-year-old man with asthma remains uncontrolled on budesonide-formoterol 400/12 two puffs twice daily. What is the first step before labelling him as having severe asthma?",
+      options: [
+        "Start omalizumab after measuring total IgE",
+        "Check inhaler technique, adherence, comorbidities and exposures",
+        "Start maintenance prednisolone 10 mg daily",
+        "Refer for bronchial thermoplasty",
+      ],
+      answer: 1,
+      explanation:
+        "GINA defines severe asthma only after adherence, inhaler technique, comorbidities (rhinitis, GORD, obesity, OSA, anxiety) and exposures such as smoking and biomass smoke have been addressed and the diagnosis confirmed, because most difficult-to-treat asthma is due to these factors. Biologics and maintenance OCS come later, and bronchial thermoplasty is restricted to adults in a registry or trial.",
+      difficulty: "easy",
+    },
+    {
+      id: "respiratory-severe-asthma-biologics-q2",
+      stem: "Which biologic for severe asthma acts by blocking the IL-4 receptor alpha subunit, thereby inhibiting both IL-4 and IL-13 signalling?",
+      options: ["Benralizumab", "Tezepelumab", "Mepolizumab", "Dupilumab"],
+      answer: 3,
+      explanation:
+        "Dupilumab binds IL-4Ralpha, which is shared by the IL-4 and IL-13 receptors, so it lowers IgE, FeNO and mucus production. Benralizumab targets the IL-5 receptor alpha and depletes eosinophils, mepolizumab neutralises IL-5 itself, and tezepelumab blocks the upstream epithelial alarmin TSLP.",
+      difficulty: "easy",
+    },
+    {
+      id: "respiratory-severe-asthma-biologics-q3",
+      stem: "A 30-year-old woman with severe asthma has blood eosinophils of 80/microlitre and FeNO 12 ppb on three occasions, no allergen sensitisation and frequent exacerbations despite high-dose ICS-LABA, tiotropium and good adherence. Which biologic is most appropriate?",
+      options: ["Omalizumab", "Tezepelumab", "Benralizumab", "Mepolizumab"],
+      answer: 1,
+      explanation:
+        "Tezepelumab blocks TSLP upstream of both T2 and non-T2 pathways and reduced exacerbations in severe asthma regardless of eosinophil count, so it is the option for T2-low disease. Omalizumab needs allergic sensitisation and an IgE in the dosing range, while benralizumab and mepolizumab need raised blood eosinophils (150-300/microlitre or more) to work.",
+      difficulty: "moderate",
+    },
+    {
+      id: "respiratory-severe-asthma-biologics-q4",
+      stem: "Before starting long-term oral corticosteroids or a biologic in a patient from rural Tamil Nadu with severe eosinophilic asthma, which infection should be specifically excluded or empirically treated?",
+      options: ["Strongyloides stercoralis", "Giardia lamblia", "Entamoeba histolytica", "Trichomonas vaginalis"],
+      answer: 0,
+      explanation:
+        "Strongyloides can cause fatal hyperinfection when steroids or immune modulators are given, and it also raises eosinophils, so GINA advises serology or empirical ivermectin in endemic areas such as India before OCS or biologics. Giardia and Entamoeba are gut protozoa that do not cause steroid-related hyperinfection or eosinophilia, and Trichomonas is a genital infection irrelevant here.",
+      difficulty: "moderate",
+    },
+    {
+      id: "respiratory-severe-asthma-biologics-q5",
+      stem: "A patient started on mepolizumab for severe eosinophilic asthma is reviewed. According to GINA, when should the initial response be formally assessed?",
+      options: ["After 2 weeks", "After 4 months", "After 2 years", "After the first exacerbation"],
+      answer: 1,
+      explanation:
+        "GINA recommends an initial trial of at least 4 months, assessing exacerbations, OCS use, symptom control and lung function; a good responder continues, an unclear response is extended to 6-12 months, and a non-responder switches target. Two weeks is too early for exacerbation outcomes, two years delays switching, and waiting for an exacerbation is not a structured assessment.",
+      difficulty: "hard",
+    },
+  ],
+  theory: [
+    {
+      id: "respiratory-severe-asthma-biologics-t1",
+      paper: "I",
+      kind: "long",
+      marks: 10,
+      minutes: 18,
+      frequency: "common",
+      question:
+        "Define difficult-to-treat and severe asthma. Describe the systematic evaluation of a patient with uncontrolled asthma and the role of phenotyping and biologic therapy.",
+      openingLines: [
+        "Difficult-to-treat asthma is asthma uncontrolled despite medium- or high-dose ICS-LABA, or needing such treatment for control; severe asthma is the subset uncontrolled despite optimised high-dose ICS-LABA after all modifiable factors are addressed (GINA 2025).",
+        "About 17% of adults with asthma have difficult-to-treat asthma, but only about 3.7% have true severe asthma.",
+      ],
+      answer: [
+        {
+          heading: "Confirm diagnosis and find contributory factors",
+          points: [
+            "Spirometry with reversibility, PEF variability, challenge test.",
+            "Technique, adherence, comorbidities (CRSwNP, GORD, obesity, OSA, anxiety), exposures (tobacco, biomass), drugs (beta-blockers, NSAIDs).",
+            "Exclude mimics: laryngeal obstruction, dysfunctional breathing, COPD, ABPA, EGPA, bronchiectasis, TB.",
+          ],
+        },
+        {
+          heading: "Optimise treatment",
+          points: [
+            "MART with ICS-formoterol; high-dose ICS-LABA trial for 3-6 months.",
+            "Add tiotropium 2.5 microgram x 2 puffs OD or triple inhaler; azithromycin 500 mg thrice weekly for 6 months.",
+            "Non-drug: rehab, weight loss, CPAP, smoking cessation.",
+          ],
+        },
+        {
+          heading: "Phenotype",
+          points: [
+            "Blood eosinophils 150 or more, FeNO 20 or more, allergen-driven, OCS-dependent = refractory T2.",
+            "Repeat up to 3 times at lowest OCS dose; check IgE, specific IgE, Aspergillus IgE, Strongyloides.",
+          ],
+        },
+        {
+          heading: "Biologics",
+          points: [
+            "Omalizumab (anti-IgE), mepolizumab (anti-IL-5), benralizumab (anti-IL-5R), dupilumab (anti-IL-4R), tezepelumab (anti-TSLP) with doses.",
+            "Choose by phenotype and comorbidity; assess at 4 months; continue, extend or switch.",
+          ],
+        },
+        {
+          heading: "Other options and follow-up",
+          points: [
+            "Lowest-dose OCS last resort with bone protection; bronchial thermoplasty in registries.",
+            "Goal: clinical remission on treatment; review 3-6 monthly.",
+          ],
+        },
+      ],
+      mustDraw: ["GINA difficult-to-treat and severe asthma decision tree", "Table of biologics with targets and criteria"],
+      markSplit: [
+        { part: "Definitions", marks: 1 },
+        { part: "Evaluation and contributory factors", marks: 3 },
+        { part: "Optimisation and add-ons", marks: 2 },
+        { part: "Phenotyping and biologics", marks: 3 },
+        { part: "Follow-up and goal", marks: 1 },
+      ],
+      keywords: ["difficult-to-treat", "severe asthma", "adherence", "T2", "eosinophils", "FeNO", "biologics", "remission"],
+    },
+    {
+      id: "respiratory-severe-asthma-biologics-t2",
+      paper: "I",
+      kind: "short-note",
+      marks: 5,
+      minutes: 9,
+      frequency: "common",
+      question: "Write a short note on biologic therapy in severe asthma.",
+      openingLines: [
+        "Biologics are monoclonal antibodies that block specific type 2 (or upstream epithelial) pathways and are add-on therapy for severe asthma uncontrolled on optimised high-dose ICS-LABA.",
+        "Choice is guided by phenotype: IgE and allergy, blood eosinophils, FeNO and comorbidities.",
+      ],
+      answer: [
+        {
+          heading: "Agents and targets",
+          points: [
+            "Omalizumab - IgE; mepolizumab, reslizumab - IL-5; benralizumab - IL-5Ralpha; dupilumab - IL-4Ralpha; tezepelumab - TSLP.",
+          ],
+        },
+        {
+          heading: "Selection",
+          points: [
+            "Allergic with IgE 30-1500 - omalizumab; eosinophils 300 or more - anti-IL-5/5R; FeNO 25 or more, atopic dermatitis - dupilumab; low T2 - tezepelumab.",
+          ],
+        },
+        {
+          heading: "Practicalities",
+          points: [
+            "Exclude ABPA, TB and Strongyloides; continue ICS; assess at 4 months.",
+            "Adverse effects: anaphylaxis (omalizumab), conjunctivitis and eosinophilia (dupilumab).",
+            "Cost and availability are the main barriers in India.",
+          ],
+        },
+      ],
+      mustDraw: ["Diagram of the T2 cascade with each biologic's target marked"],
+      markSplit: [
+        { part: "Agents and targets", marks: 2 },
+        { part: "Selection criteria", marks: 2 },
+        { part: "Monitoring and adverse effects", marks: 1 },
+      ],
+      keywords: ["omalizumab", "mepolizumab", "benralizumab", "dupilumab", "tezepelumab", "TSLP"],
+    },
+  ],
+  references: [
+    "Global Initiative for Asthma (GINA). Difficult-to-treat and severe asthma guide and Global Strategy for Asthma Management and Prevention, 2025 update",
+    "Chung KF et al. International ERS/ATS guidelines on definition, evaluation and treatment of severe asthma. Eur Respir J 2014",
+    "Holguin F et al. Management of severe asthma: ERS/ATS guideline. Eur Respir J 2020",
+    "BTS/NICE/SIGN. Asthma: diagnosis, monitoring and chronic asthma management (NG245), November 2024",
+    "Harrison's Principles of Internal Medicine, 22nd edition, 2025 - Asthma",
+    "Agarwal R et al. Guidelines for diagnosis and management of bronchial asthma: joint ICS/NCCP(I) recommendations. Lung India 2015",
+    "Hekking PP et al. The prevalence of severe refractory asthma. J Allergy Clin Immunol 2015",
+  ],
+});
+
 export default topics;

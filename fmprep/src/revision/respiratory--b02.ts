@@ -209,6 +209,216 @@ const revision: RevisionSet = {
       ],
     },
   },
+  "respiratory-lung-cancer": {
+    checked: "2026-10",
+    updated: [
+      "IASLC TNM 9th edition (2024, in use from 2025): N2a/N2b and M1c1/M1c2 introduced; T1N1 now IIA",
+      "NCCN 2026: perioperative chemo-immunotherapy (nivolumab, pembrolizumab, durvalumab) standard for resectable stage II-III",
+      "ALINA 2024: adjuvant alectinib 2 years for resected ALK-positive; LAURA 2024: osimertinib after chemoradiation in EGFR stage III",
+      "ESMO 2023 living guideline: osimertinib plus chemotherapy (FLAURA2) or amivantamab-lazertinib (MARIPOSA) as first-line EGFR options",
+      "ADRIATIC 2024: durvalumab consolidation after chemoradiation in limited-stage SCLC; tarlatamab for relapsed SCLC",
+      "USPSTF 2021 (50-80 years, 20 pack-years, quit within 15 years) versus ACS 2023 (no years-since-quit limit)",
+    ],
+    master: {
+      heading: "Master revision table - Lung cancer (TNM 9)",
+      columns: ["Heading", "What to write"],
+      rows: [
+        ["Definition", "Malignant epithelial tumour of airways/lung; **NSCLC 85%** (adenocarcinoma commonest), **SCLC 15%**; leading cause of cancer death worldwide."],
+        ["India", "Younger, **mostly stage III-IV**, never-smokers and women common, **EGFR in about a quarter to a third** of adenocarcinomas; **TB misdiagnosis delay**; highest rates in Mizoram."],
+        ["Risk factors", "Cigarette and **bidi**, second-hand smoke, **biomass and PM2.5**, asbestos (synergy), radon, silica, COPD, ILD, TB scar, HIV."],
+        ["Types", "Adeno peripheral (TTF-1; EGFR, ALK); squamous central (p40; PTHrP, cavity); small cell central (neuroendocrine; SIADH, ACTH, LEMS)."],
+        ["Clinical", "Cough, haemoptysis, non-resolving pneumonia, hoarseness, **SVCO**, **Pancoast with Horner**, bone pain, seizures, weight loss."],
+        ["Paraneoplastic", "SCLC: **SIADH, ACTH, LEMS, anti-Hu**; squamous: **PTHrP**; adeno: **HPOA, Trousseau**; large cell: gynaecomastia."],
+        ["Work-up", "CXR, **CECT chest + upper abdomen**, PET-CT, **MRI brain** (stage II-IV), biopsy giving diagnosis and highest stage (EBUS-TBNA), **NGS + PD-L1**, spirometry with DLCO."],
+        ["TNM 9", "T unchanged (T1 3 cm or less, T2 3-5, T3 5-7, T4 over 7); **N2a single / N2b multiple stations**; **M1c1 one system / M1c2 multiple**; T1N1 now IIA."],
+        ["Early stage", "Lobectomy or **segmentectomy (2 cm or less)**; SBRT if unfit; **adjuvant osimertinib 3 years** (EGFR) or **alectinib 2 years** (ALK)."],
+        ["Stage III", "Resectable: **perioperative chemo-immunotherapy**; unresectable: **chemoradiation 60 Gy then durvalumab 12 months** (osimertinib if EGFR)."],
+        ["Stage IV", "Driver: **osimertinib 80 mg OD**, alectinib 600 mg BD, lorlatinib; none: **pembrolizumab alone if PD-L1 50%+**, else platinum doublet + pembrolizumab."],
+        ["SCLC", "Limited: **chemoradiation with platinum-etoposide**, then durvalumab, PCI or MRI surveillance; extensive: **carboplatin-etoposide + atezolizumab/durvalumab**."],
+        ["Screening", "USPSTF 2021: **LDCT yearly, 50-80 years, 20 pack-years**, quit within 15 years; no Indian programme (TB false positives)."],
+        ["Palliation and follow-up", "**Early palliative care** (Temel 2010); morphine for breathlessness; pleural catheter; bone protection; CT every 6 months for 2-3 years after cure."],
+      ],
+    },
+    flows: [
+      {
+        kind: "flow",
+        heading: "Suspected lung cancer - diagnostic pathway",
+        caption: "One biopsy should give both diagnosis and the highest stage.",
+        steps: [
+          { label: "Symptoms or abnormal CXR", detail: "Smoker 40+, haemoptysis, non-resolving pneumonia, ATT failure" },
+          { label: "Sputum NAAT to exclude TB", detail: "Positive NAAT does not exclude coexisting cancer", tone: "decision" },
+          { label: "CECT chest and upper abdomen", detail: "Primary, nodes, liver, adrenals" },
+          { label: "Biopsy the highest-stage accessible site", detail: "Supraclavicular node, effusion, EBUS node, CT-guided or bronchoscopic biopsy" },
+          { label: "Histology, NGS and PD-L1", detail: "EGFR, ALK, ROS1, BRAF, KRAS G12C, MET, RET, NTRK, HER2" },
+          { label: "Stage with PET-CT and MRI brain", detail: "Tissue-confirm PET-positive nodes (TB false positives)", tone: "warn" },
+          { label: "Multidisciplinary tumour board", detail: "Stage, ECOG PS, fitness (FEV1, DLCO), patient wishes", tone: "good" },
+        ],
+      },
+      {
+        kind: "ladder",
+        heading: "NSCLC - treatment by stage",
+        caption: "Higher stage, more systemic therapy.",
+        steps: [
+          { label: "Stage I", detail: "Lobectomy or segmentectomy (2 cm or less); SBRT if unfit" },
+          { label: "Stage II-IIIA resectable", detail: "Perioperative chemo-immunotherapy; adjuvant osimertinib or alectinib for drivers" },
+          { label: "Stage III unresectable", detail: "Chemoradiation 60 Gy/30 fractions, then durvalumab 12 months (osimertinib if EGFR)" },
+          { label: "Stage IV with driver", detail: "Osimertinib 80 mg OD, alectinib 600 mg BD, lorlatinib 100 mg OD", tone: "decision" },
+          { label: "Stage IV, no driver", detail: "PD-L1 50%+: pembrolizumab alone; else platinum doublet plus pembrolizumab" },
+          { label: "Best supportive and palliative care", detail: "ECOG 3-4 without driver; early palliative care for all stage IV", tone: "good" },
+        ],
+      },
+      {
+        kind: "compare",
+        heading: "NSCLC versus SCLC",
+        columns: ["Feature", "NSCLC", "SCLC"],
+        rows: [
+          ["Share", "About 85%", "About 15%"],
+          ["Site", "Adeno peripheral, squamous central", "Central, hilar"],
+          ["Paraneoplastic", "PTHrP (squamous), HPOA (adeno)", "SIADH, ACTH, LEMS, anti-Hu"],
+          ["Drivers", "EGFR, ALK and others, targetable", "TP53, RB1; none targetable"],
+          ["Staging used", "TNM 9", "TNM plus limited versus extensive"],
+          ["Main treatment", "Surgery early; TKI or immunotherapy late", "Chemoradiation or chemo-immunotherapy"],
+        ],
+      },
+    ],
+    notes: {
+      sections: [
+        {
+          title: "Definition and key facts",
+          points: [
+            "**Lung cancer** is the commonest cancer and leading cancer killer worldwide.",
+            "**NSCLC** is about 85%; **adenocarcinoma** is now the commonest type.",
+            "**SCLC** is about 15%, almost always in smokers, and spreads early.",
+            "In India patients are younger and most present at **stage III-IV**.",
+            "Many Indian patients first receive **ATT for presumed TB**, delaying diagnosis.",
+          ],
+        },
+        {
+          title: "Causes and risk factors",
+          points: [
+            "**Cigarette and bidi smoking** cause most cases; risk rises with pack-years.",
+            "**Biomass smoke and air pollution** explain many cancers in never-smoking women.",
+            "**Asbestos** multiplies risk with smoking; radon, silica and arsenic also cause it.",
+            "COPD, lung fibrosis and **old TB scars** raise risk.",
+          ],
+        },
+        {
+          title: "Clinical features",
+          points: [
+            "Cough, **haemoptysis**, breathlessness, weight loss and non-resolving pneumonia.",
+            "**Hoarseness** means left recurrent laryngeal nerve involvement.",
+            "**Pancoast tumour**: shoulder and arm pain, hand wasting and **Horner syndrome**.",
+            "**SVC obstruction**: facial swelling, non-pulsatile neck veins, chest wall veins.",
+            "SCLC: **SIADH, ectopic ACTH, Lambert-Eaton**; squamous: **PTHrP hypercalcaemia**; adeno: **HPOA**.",
+          ],
+        },
+        {
+          title: "Investigations",
+          points: [
+            "CXR, then **contrast CT chest and upper abdomen**.",
+            "Biopsy the site that gives **diagnosis and highest stage** together.",
+            "**EBUS-TBNA** samples mediastinal nodes; **PET-CT** and **MRI brain** complete staging.",
+            "Test **EGFR, ALK and other drivers by NGS**, and **PD-L1**, in non-squamous NSCLC.",
+            "Fitness: **ppoFEV1 and DLCO over 60%** fit; under 30% needs CPET.",
+          ],
+        },
+        {
+          title: "Classification that matters",
+          points: [
+            "**TNM 9** keeps T1 3 cm or less, T2 3-5, T3 5-7, T4 over 7 cm.",
+            "**N2a** is one mediastinal station; **N2b** is several stations.",
+            "**M1c1** is many metastases in one organ system; **M1c2** in several systems.",
+            "SCLC is also split into **limited and extensive** stage for treatment.",
+          ],
+        },
+        {
+          title: "Treatment - first line",
+          points: [
+            "Stage I: **lobectomy**, or segmentectomy for 2 cm or less; **SBRT** if unfit.",
+            "Resectable stage II-III: **chemo-immunotherapy** before and after surgery.",
+            "Unresectable stage III: **chemoradiation then durvalumab** for 12 months.",
+            "Stage IV EGFR: **osimertinib 80 mg daily**; ALK: **alectinib 600 mg twice daily**.",
+            "Stage IV, no driver: **pembrolizumab**, alone if PD-L1 50% or more.",
+          ],
+        },
+        {
+          title: "Treatment - next steps",
+          points: [
+            "SCLC limited: **platinum-etoposide with radiotherapy**, then durvalumab.",
+            "SCLC extensive: **carboplatin-etoposide plus atezolizumab or durvalumab**.",
+            "**Early palliative care** improves quality of life and survival.",
+            "Bone metastases: single **8 Gy** radiotherapy and zoledronic acid.",
+          ],
+        },
+        {
+          title: "Complications and red flags",
+          points: [
+            "**SVC obstruction**: biopsy before steroids; stent for stridor.",
+            "**Cord compression**: dexamethasone 16 mg and MRI spine the same day.",
+            "**Hypercalcaemia** and **SIADH** cause confusion and seizures.",
+            "Immunotherapy can cause **pneumonitis, colitis and thyroiditis**; treat with steroids.",
+          ],
+        },
+        {
+          title: "Referral and follow-up",
+          points: [
+            "Refer within **2 weeks** for a suspicious CXR or unexplained haemoptysis at 40 or over.",
+            "After curative treatment, **CT every 6 months for 2-3 years**, then yearly.",
+            "**USPSTF 2021 screening**: LDCT yearly at 50-80 years with 20 pack-years.",
+            "India has no LDCT programme; focus on **tobacco cessation** and clean fuel.",
+          ],
+        },
+      ],
+      tables: [
+        {
+          heading: "Lung cancer drugs",
+          columns: ["Drug", "Dose and route", "Duration", "Key side effects / cautions"],
+          rows: [
+            ["Osimertinib", "80 mg orally once daily", "Until progression; adjuvant 3 years", "Diarrhoea, rash, QT prolongation, ILD"],
+            ["Gefitinib", "250 mg orally once daily", "Until progression", "Rash, diarrhoea, hepatitis; rifampicin interaction"],
+            ["Alectinib", "600 mg orally twice daily", "Until progression; adjuvant 2 years", "Myalgia, raised CK, bradycardia"],
+            ["Pembrolizumab", "200 mg IV every 3 weeks", "Up to 2 years", "Immune pneumonitis, colitis, thyroiditis"],
+            ["Durvalumab", "1500 mg IV every 4 weeks", "12 months after chemoradiation", "Pneumonitis, immune events"],
+            ["Carboplatin + pemetrexed", "AUC 5 + 500 mg/m2 IV every 3 weeks", "4 cycles then maintenance", "Myelosuppression; folate and B12 needed"],
+            ["Platinum + etoposide (SCLC)", "Etoposide 100 mg/m2 days 1-3, every 3 weeks", "4 cycles", "Myelosuppression, nephrotoxicity"],
+          ],
+        },
+        {
+          heading: "TNM 9 stage groups",
+          columns: ["Stage", "Examples", "Intent"],
+          rows: [
+            ["IA", "T1 N0", "Surgery or SBRT"],
+            ["IIA", "T2b N0, T1 N1", "Surgery plus systemic therapy"],
+            ["IIB", "T2 N1, T3 N0, T1 N2a", "Perioperative therapy and surgery"],
+            ["IIIA-IIIC", "N2b, N3, T4 disease", "Chemoradiation or multimodality"],
+            ["IVA", "M1a, M1b", "Systemic therapy"],
+            ["IVB", "M1c1, M1c2", "Systemic therapy and palliation"],
+          ],
+        },
+        {
+          heading: "Paraneoplastic syndromes by type",
+          columns: ["Syndrome", "Mediator", "Histology"],
+          rows: [
+            ["SIADH", "ADH", "Small cell"],
+            ["Cushing syndrome", "Ectopic ACTH", "Small cell, carcinoid"],
+            ["Hypercalcaemia", "PTHrP", "Squamous cell"],
+            ["Lambert-Eaton", "Anti-VGCC antibody", "Small cell"],
+            ["HPOA and clubbing", "VEGF, PDGF", "Adenocarcinoma"],
+            ["Gynaecomastia", "hCG", "Large cell"],
+          ],
+        },
+      ],
+      remember: [
+        "Squamous: central, cavitates, causes hypercalcaemia (PTHrP).",
+        "Small cell: SIADH, ACTH, LEMS - and the most chemosensitive.",
+        "TNM 9 news: N2a/N2b and M1c1/M1c2.",
+        "Driver first, PD-L1 second: test EGFR and ALK before immunotherapy.",
+        "PET-positive node in India may be TB - get tissue.",
+        "No steroids before biopsy in SVCO.",
+        "USPSTF 2021: 50-80 years, 20 pack-years, quit within 15 years.",
+      ],
+    },
+  },
 };
 
 export default revision;

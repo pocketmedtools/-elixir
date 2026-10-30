@@ -207,6 +207,208 @@ const revision: RevisionSet = {
       ],
     },
   },
+  "respiratory-extrapulmonary-tb": {
+    checked: "2026-10",
+    updated: [
+      "INDEX-TB 2016 remains the Indian site-specific EPTB guideline",
+      "WHO 2024: Xpert Ultra on CSF as initial TBM test; urine LF-LAM in advanced HIV",
+      "ACT HIV trial 2023: no survival benefit of dexamethasone in HIV-associated TBM",
+      "NTEP 2023: 12 months for CNS and osteoarticular TB; Ni-kshay Poshan Rs 1000/month (2024)",
+    ],
+    master: {
+      heading: "Master revision table - Extrapulmonary TB (INDEX-TB 2016, NTEP)",
+      columns: ["Heading", "What to write"],
+      rows: [
+        ["Definition", "TB of organs other than lung parenchyma; pleural TB counted as EPTB; **lung plus EPTB = pulmonary TB**."],
+        ["Burden", "About 16% of global notified TB; roughly one-fifth to one-quarter in India; **lymph node commonest, then pleural**."],
+        ["Pathogenesis", "Lymphatic and haematogenous seeding; **paucibacillary, hypersensitivity-driven** caseation; Rich focus in TBM; paradiscal start in spine."],
+        ["Grading", "**Jones-Campbell** node stages 1-5; **BMRC TBM grades I-III** by GCS and deficit; Lancet consensus TBM score."],
+        ["Lymph node", "Painless matted cervical nodes, cold abscess, collar-stud, sinus; **FNAC + Xpert**; 6 months."],
+        ["Pleural / pericardial", "Lymphocytic exudate, **ADA over 40 U/L**; pleural biopsy best yield; steroids in pericarditis optional (IMPI), not in HIV."],
+        ["Abdominal", "Ileocaecal commonest; **SAAG under 1.1, ADA 39+**; colonoscopy biopsy; 6 months = 9 months; differentiate Crohn's."],
+        ["CNS", "Subacute headache, VI palsy; CSF lymphocytes, protein high, glucose under 50%; **Xpert Ultra CSF**; MRI; **12 months + dexamethasone**."],
+        ["Spine", "Thoracolumbar, gibbus, psoas abscess, paraplegia; **MRI + CT-guided biopsy**; 12 months; surgery for deficit or instability."],
+        ["Genitourinary", "Sterile pyuria; **3-5 early-morning urines**; putty kidney, thimble bladder; endometrial biopsy; never treat on PCR alone."],
+        ["Steroid doses", "**Dexamethasone 0.4 mg/kg/day** week 1, reduce 0.1 weekly, then oral taper (total 6-8 weeks); IMPI prednisolone 120 mg tapering over 6 weeks."],
+        ["Paradoxical reaction", "Worsening after initial improvement in 10-25% of node TB; **continue ATT**, aspirate, exclude resistance, steroids if severe."],
+        ["HIV", "ART within 2 weeks for most EPTB but **4-8 weeks delay in TBM**; LF-LAM if CD4 200 or less."],
+        ["Exam traps", "TST/IGRA cannot diagnose active EPTB; serology banned; residual nodes at 6 months are not failure."],
+      ],
+    },
+    flows: [
+      {
+        kind: "flow",
+        heading: "Diagnosing EPTB - get tissue",
+        caption: "Paucibacillary disease: send everything from one specimen.",
+        steps: [
+          { label: "Suspect EPTB by site and constitutional symptoms", detail: "Chest X-ray in all; HIV and diabetes screen" },
+          { label: "Obtain fluid or tissue", detail: "FNAC, pleural/ascitic/CSF fluid, biopsy, early-morning urine" },
+          { label: "Send NAAT, liquid culture with DST and histology together", tone: "decision", detail: "Xpert Ultra or Truenat; caseating granulomas" },
+          { label: "Add surrogate markers", detail: "ADA pleural 40, ascitic 39, pericardial 40 U/L; CSF glucose under 50%" },
+          { label: "Do not use TST, IGRA or serology to diagnose", tone: "warn" },
+          { label: "Notify on Ni-kshay and start ATT by site", tone: "good", detail: "6 months most sites; 12 months CNS and bone" },
+        ],
+      },
+      {
+        kind: "branch",
+        heading: "Treatment duration and steroids by site",
+        root: "Drug-sensitive EPTB",
+        arms: [
+          { label: "6 months (2HRZE + 4HRE)", tone: "good", steps: ["Lymph node", "Pleural", "Abdominal", "Genitourinary", "Pericardial"] },
+          { label: "12 months (2HRZE + 10HRE)", tone: "warn", steps: ["TB meningitis and tuberculoma", "Spinal and osteoarticular TB"] },
+          { label: "Steroids", tone: "decision", steps: ["TBM: dexamethasone (HIV-negative)", "Pericarditis: consider, not in HIV", "Severe paradoxical reaction"] },
+        ],
+      },
+      {
+        kind: "compare",
+        heading: "CSF in chronic and acute meningitis",
+        columns: ["Feature", "TB meningitis", "Bacterial", "Cryptococcal"],
+        rows: [
+          ["Onset", "Subacute, weeks", "Acute, hours to days", "Subacute, HIV"],
+          ["Cells", "Lymphocytes 100-500", "Neutrophils over 1000", "Lymphocytes, often few"],
+          ["Protein", "1-5 g/L", "High", "Mildly raised"],
+          ["Glucose ratio", "Under 0.5", "Under 0.4", "Low or normal"],
+          ["Key test", "Xpert Ultra, culture", "Gram stain, culture", "CrAg, India ink"],
+        ],
+      },
+    ],
+    notes: {
+      sections: [
+        {
+          title: "Definition and key facts",
+          points: [
+            "**EPTB** is TB outside the lung parenchyma; pleural TB counts as EPTB.",
+            "Lung plus another site is notified as **pulmonary TB**.",
+            "**Lymph node TB** is commonest, then pleural TB.",
+            "India uses the **INDEX-TB guidelines (2016)** for EPTB.",
+          ],
+        },
+        {
+          title: "Pathophysiology",
+          points: [
+            "Bacilli spread by **lymph and blood** during primary infection and reactivate later.",
+            "Damage comes from **hypersensitivity**, so fluids hold few bacilli.",
+            "TBM follows rupture of a **Rich focus**; basal exudate causes palsies and hydrocephalus.",
+            "Spinal TB starts **paradiscally** and destroys the disc.",
+          ],
+        },
+        {
+          title: "Clinical features",
+          points: [
+            "Nodes: painless **matted cervical** nodes, cold abscess, sinus.",
+            "TBM: weeks of headache, fever, vomiting, then **VI palsy** and confusion.",
+            "Spine: back pain, **gibbus**, psoas abscess, paraplegia.",
+            "Abdomen: pain, **subacute obstruction**, ascites, right iliac fossa mass.",
+            "GU: **sterile pyuria**, haematuria and female infertility.",
+          ],
+        },
+        {
+          title: "Classification that matters",
+          points: [
+            "**Jones-Campbell** stages nodes from firm mobile to sinus.",
+            "**BMRC** grade I is GCS 15, II is 11-14 or deficit, III is 10 or less.",
+            "Abdominal TB is gut, peritoneal, nodal or solid-organ.",
+          ],
+        },
+        {
+          title: "Investigations",
+          points: [
+            "Send tissue or fluid for **NAAT, culture and histology** together.",
+            "**ADA** over 40 in pleura and pericardium, 39 or more in ascites.",
+            "CSF: lymphocytes, high protein, **glucose under half of blood**; Xpert Ultra first.",
+            "**MRI** is best for spine and brain; CT-guided biopsy for spine.",
+            "**TST, IGRA and serology** cannot diagnose active EPTB.",
+          ],
+        },
+        {
+          title: "Treatment - first line",
+          points: [
+            "Most sites: **2HRZE + 4HRE** daily for 6 months.",
+            "CNS and bone: **2HRZE + 10HRE** for 12 months.",
+            "Abdominal TB: 6 months works as well as 9.",
+            "Residual nodes at 6 months are **not failure**.",
+          ],
+        },
+        {
+          title: "Treatment - next steps",
+          points: [
+            "**Dexamethasone** for HIV-negative TBM, tapered over 6-8 weeks.",
+            "Steroids may be used in **pericarditis** but avoided in HIV.",
+            "Hydrocephalus needs **acetazolamide** or a shunt.",
+            "Spine surgery for **deficit, instability or kyphosis**.",
+          ],
+        },
+        {
+          title: "Special groups",
+          points: [
+            "HIV: delay ART **4-8 weeks in TBM**; within 2 weeks otherwise.",
+            "**Paradoxical reaction**: continue ATT, aspirate, exclude resistance.",
+            "Pregnancy: first-line drugs are safe with **pyridoxine**.",
+          ],
+        },
+        {
+          title: "Complications and red flags",
+          points: [
+            "TBM mortality reaches **50% in Grade III**.",
+            "Pott's paraplegia, kyphosis, strictures and **tubal infertility**.",
+            "Constrictive pericarditis if pericardial TB is untreated.",
+          ],
+        },
+        {
+          title: "Latest updates",
+          points: [
+            "**WHO 2024**: Xpert Ultra on CSF is the first test for TBM.",
+            "**ACT HIV 2023**: dexamethasone gave no survival benefit in HIV TBM.",
+            "**High-dose rifampicin** for TBM is still not routine.",
+          ],
+        },
+      ],
+      tables: [
+        {
+          heading: "EPTB drugs",
+          columns: ["Drug", "Dose and route", "Duration", "Key side effects / cautions"],
+          rows: [
+            ["HRZE fixed-dose combination", "Oral by weight band: 2-6 tablets daily", "2 months intensive", "Hepatitis, optic neuritis, gout"],
+            ["HRE fixed-dose combination", "Oral by weight band daily", "4 months (10 in CNS/bone)", "Hepatitis, neuropathy"],
+            ["Dexamethasone", "0.4 mg/kg/day IV, cut by 0.1 weekly, then oral taper", "6-8 weeks (TBM)", "Hyperglycaemia; no benefit in HIV"],
+            ["Prednisolone", "120 mg/day oral tapering (IMPI)", "6 weeks (pericarditis)", "Avoid in HIV"],
+            ["Pyridoxine", "10 mg oral daily", "Whole course", "Prevents isoniazid neuropathy"],
+          ],
+        },
+        {
+          heading: "Site, test and duration",
+          columns: ["Site", "Key test", "Duration"],
+          rows: [
+            ["Lymph node", "FNAC + Xpert", "6 months"],
+            ["Pleural", "ADA over 40, pleural biopsy", "6 months"],
+            ["Abdominal", "Colonoscopic biopsy, ADA 39+", "6 months"],
+            ["TBM", "CSF Xpert Ultra, MRI", "12 months"],
+            ["Spine", "MRI, CT-guided biopsy", "12 months"],
+            ["Genitourinary", "Early-morning urine culture", "6 months"],
+          ],
+        },
+        {
+          heading: "Ileocaecal TB versus Crohn's",
+          columns: ["Feature", "TB", "Crohn's"],
+          rows: [
+            ["Ulcers", "Transverse", "Longitudinal, aphthous"],
+            ["Granulomas", "Large, confluent, caseating", "Small, non-caseating"],
+            ["Perianal disease", "Rare", "Common"],
+            ["CT", "Necrotic nodes, ascites", "Comb sign, fibrofatty change"],
+          ],
+        },
+      ],
+      remember: [
+        "EPTB is **paucibacillary**: tissue beats sputum.",
+        "ADA **40-39-40**: pleura, ascites, pericardium.",
+        "**Brain and bone: 12 months**; the rest: 6.",
+        "Steroids: **TBM yes**, pericarditis maybe, pleural no.",
+        "TBM in HIV: **ART after 4-8 weeks**.",
+        "Cold abscess: **no heat, no redness, no pain**.",
+        "Paradoxical reaction is **not** treatment failure.",
+      ],
+    },
+  },
 };
 
 export default revision;

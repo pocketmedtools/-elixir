@@ -201,6 +201,199 @@ const revision: RevisionSet = {
       ],
     },
   },
+  "respiratory-pulmonary-rehab-home-oxygen": {
+    checked: "2026-10",
+    updated: [
+      "ATS Clinical Practice Guideline on Pulmonary Rehabilitation (2023): COPD, post-hospitalisation, ILD, PH; telerehab acceptable",
+      "GOLD 2025: PR for groups B and E and within 4 weeks after exacerbation",
+      "ATS Home Oxygen guideline (2020) retained; ambulatory O2 conditional for severe exertional hypoxaemia",
+      "BTS 2022 clinical statement on air travel",
+      "NP-NCD operational guidelines (2023) include chronic respiratory diseases",
+    ],
+    master: {
+      heading: "Pulmonary rehabilitation and LTOT on one page",
+      columns: ["Heading", "What to write"],
+      rows: [
+        ["PR definition", "Assessment-based exercise, education and behaviour change programme (ATS/ERS 2013)"],
+        ["PR indications", "COPD mMRC 2+, within 3-4 weeks after exacerbation, ILD, post-TB, bronchiectasis, PH, peri-surgery"],
+        ["PR contraindications", "Unstable angina, recent MI, severe AS, uncontrolled arrhythmia, cannot participate"],
+        ["PR prescription", "6-12 weeks, 2+ supervised sessions/week; endurance 60-80% peak or Borg 4-6; resistance 6-12 reps"],
+        ["Other components", "Pursed-lip breathing, education, inhaler technique, action plan, nutrition, psychological support"],
+        ["PR evidence", "6MWD gain about 44 m (MID 30 m), better QoL, fewer readmissions; no FEV1 or mortality change"],
+        ["LTOT criteria", "PaO2 55 or less, or 56-59 with cor pulmonale, PH or haematocrit over 55%; two ABGs 3 weeks apart"],
+        ["LTOT trials", "NOTT 1980 and MRC 1981 survival benefit; LOTT 2016 and INOX 2020 no benefit in moderate/nocturnal"],
+        ["Prescription", "Concentrator, cannula 1-4 L/min, SpO2 90% or more, 15 h/day or more, +1 L/min in sleep/exertion"],
+        ["Ambulatory O2", "LTOT users who go out; ILD with exertional desaturation; walk-test benefit needed"],
+        ["Safety", "No smoking, no flame within 2 m, fire breaks, water-based gel, trip hazards, CO2 narcosis"],
+        ["Follow-up", "LTOT review at 3 months then 6-12 monthly; repeat 6MWT and CAT after PR"],
+      ],
+    },
+    flows: [
+      {
+        kind: "flow",
+        heading: "Assessing a patient for long-term oxygen",
+        steps: [
+          { label: "Stable chronic lung disease, 8+ weeks after exacerbation", tone: "neutral" },
+          { label: "Resting SpO2 92% or less on air?", detail: "Or 94% or less with cor pulmonale or polycythaemia", tone: "decision" },
+          { label: "Two room-air ABGs at least 3 weeks apart", tone: "neutral" },
+          { label: "PaO2 55 or less, or 56-59 with end-organ effects", detail: "Oedema, PH, haematocrit over 55%", tone: "decision" },
+          { label: "Smoking risk assessment", detail: "Generally withhold while smoking continues", tone: "warn" },
+          { label: "Prescribe LTOT 15+ h/day to SpO2 90%+", detail: "Recheck ABG on oxygen; review at 3 months", tone: "good" },
+        ],
+      },
+      {
+        kind: "flow",
+        heading: "Running a pulmonary rehabilitation programme",
+        steps: [
+          { label: "Referral: mMRC 2+, post-exacerbation, ILD, post-TB", tone: "neutral" },
+          { label: "Assessment: 6MWT, CAT, ECG, SpO2, nutrition, mood", tone: "neutral" },
+          { label: "Exclude unstable cardiac disease", tone: "warn" },
+          { label: "6-12 weeks: endurance + resistance + education", detail: "Borg 4-6; 2 supervised sessions/week", tone: "neutral" },
+          { label: "Reassess 6MWT and CAT", detail: "MID 30 m and 2 points", tone: "decision" },
+          { label: "Home maintenance plan; repeat after decline", tone: "good" },
+        ],
+      },
+      {
+        kind: "branch",
+        heading: "Who gets which oxygen",
+        root: "Chronic lung disease with low SpO2",
+        arms: [
+          { label: "Severe resting hypoxaemia", tone: "good", steps: ["PaO2 55 or less, or 56-59 with cor pulmonale", "LTOT 15+ h/day", "Ambulatory if mobile"] },
+          { label: "Moderate resting desaturation", tone: "warn", steps: ["SpO2 89-93%", "No LTOT (LOTT)", "PR and optimise therapy"] },
+          { label: "Nocturnal only", tone: "warn", steps: ["Exclude OSA/OHS", "No nocturnal O2 (INOX)"] },
+          { label: "Exertional only", tone: "decision", steps: ["Walk test on air and oxygen", "Ambulatory O2 if benefit; stronger case in ILD"] },
+        ],
+      },
+    ],
+    notes: {
+      sections: [
+        {
+          title: "Definition and key facts",
+          points: [
+            "**Pulmonary rehabilitation** combines exercise training, education and behaviour change after assessment.",
+            "**LTOT** means home oxygen for at least 15 hours a day.",
+            "India has about **55 million COPD** patients and many post-TB survivors.",
+            "Fewer than **5%** of eligible patients ever receive PR.",
+          ],
+        },
+        {
+          title: "Classification that matters",
+          points: [
+            "PR for **mMRC 2 or more**, after exacerbation, ILD, post-TB and bronchiectasis.",
+            "Start PR **within 3-4 weeks** after discharge, not during admission.",
+            "Contraindications: **unstable angina**, recent MI, severe aortic stenosis, uncontrolled arrhythmia.",
+            "Age, smoking and oxygen use are **not barriers** to PR.",
+          ],
+        },
+        {
+          title: "Pathophysiology",
+          points: [
+            "Training builds **muscle mitochondria**, so less lactate and less ventilation at the same work.",
+            "Slower breathing reduces **dynamic hyperinflation**; FEV1 does not change.",
+            "Chronic hypoxia causes **pulmonary vasoconstriction** and cor pulmonale; oxygen slows this.",
+          ],
+        },
+        {
+          title: "Treatment - first line",
+          points: [
+            "**6-12 weeks**, two supervised sessions a week plus home exercise.",
+            "Endurance at **Borg 4-6** for 20-30 minutes; resistance 6-12 repetitions.",
+            "Teach **pursed-lip breathing**, inhaler technique and an action plan.",
+            "Add **nutrition** if BMI under 21 and screen for depression.",
+            "Home programmes and **telerehab** work as well as centre-based PR.",
+          ],
+        },
+        {
+          title: "Investigations",
+          points: [
+            "Screen with **SpO2**; refer for ABG if 92% or less when stable.",
+            "**Two ABGs** at least 3 weeks apart, 8 weeks after any exacerbation.",
+            "**6MWT** before and after PR; MID about 30 m.",
+            "Walk test on air and oxygen for **ambulatory oxygen**.",
+          ],
+        },
+        {
+          title: "Treatment - next steps",
+          points: [
+            "LTOT if **PaO2 55 or less**, or 56-59 with oedema, PH or haematocrit over 55%.",
+            "Flow **1-4 L/min** by cannula to reach SpO2 90% or more.",
+            "Add **1 L/min** during sleep and exertion if CO2 allows.",
+            "**No LTOT** for moderate (LOTT) or nocturnal-only desaturation (INOX).",
+            "Breathless but not hypoxaemic: **fan**, not oxygen.",
+          ],
+        },
+        {
+          title: "Complications and red flags",
+          points: [
+            "**Smoking** with oxygen causes facial burns and house fires.",
+            "Keep oxygen **2 m from flames**: gas stove, diya, agarbatti.",
+            "Drowsiness or morning headache suggests **CO2 retention**.",
+            "Long tubing causes **falls** in the elderly.",
+          ],
+        },
+        {
+          title: "Referral and follow-up",
+          points: [
+            "Review LTOT at **3 months**, then every 6-12 months.",
+            "Check the **hour meter** for 15 h/day use.",
+            "Stop oxygen started at discharge if criteria are **no longer met**.",
+            "Link to **NP-NCD** clinics and NTEP post-TB follow-up.",
+          ],
+        },
+        {
+          title: "Latest updates",
+          points: [
+            "**ATS 2023** PR guideline backs PR in COPD, ILD and PH, and telerehab.",
+            "**GOLD 2025** keeps PR for groups B and E and after exacerbation.",
+            "ATS and BTS **differ** on ambulatory oxygen without resting hypoxaemia.",
+          ],
+        },
+      ],
+      tables: [
+        {
+          heading: "Oxygen and support prescriptions",
+          columns: ["Drug", "Dose and route", "Duration", "Key side effects / cautions"],
+          rows: [
+            ["Oxygen (concentrator)", "Nasal cannula 1-4 L/min to SpO2 90%+", "15 h/day or more, lifelong", "CO2 retention, nasal dryness, fire"],
+            ["Ambulatory oxygen", "Portable cylinder or pulse POC", "During activity", "Pulse setting not equal to L/min"],
+            ["Nicotine patch", "21 mg/24 h plus gum 2-4 mg", "8-12 weeks", "Skin irritation, vivid dreams"],
+            ["Varenicline", "0.5 mg daily, titrate to 1 mg twice daily", "12 weeks", "Nausea; halve if eGFR under 30"],
+            ["Nutritional supplement", "500-1000 kcal/day extra", "Until BMI over 21", "Bloating; watch sugars"],
+          ],
+        },
+        {
+          heading: "LTOT criteria and trials",
+          columns: ["Situation", "Decision", "Trial"],
+          rows: [
+            ["PaO2 55 or less", "LTOT 15+ h/day", "NOTT, MRC"],
+            ["PaO2 56-59 with cor pulmonale or Hct over 55%", "LTOT", "GOLD 2025"],
+            ["SpO2 89-93% at rest", "No LTOT", "LOTT 2016"],
+            ["Nocturnal desaturation only", "No nocturnal oxygen", "INOX 2020"],
+            ["Exertional desaturation in ILD", "Ambulatory oxygen", "AmbOx 2018"],
+          ],
+        },
+        {
+          heading: "PR outcome measures",
+          columns: ["Measure", "Tests", "MID"],
+          rows: [
+            ["6MWT", "Functional capacity", "About 30 m"],
+            ["ISWT", "Maximal capacity", "About 35-50 m"],
+            ["CAT", "COPD health status", "2 points"],
+            ["SGRQ", "Quality of life", "4 units"],
+          ],
+        },
+      ],
+      remember: [
+        "LTOT = **55 / 59 / 15**.",
+        "**Two ABGs, 3 weeks apart, 8 weeks stable** before LTOT.",
+        "PR **within 4 weeks** of discharge, not during admission.",
+        "PR fixes **muscles, not FEV1**.",
+        "**LOTT and INOX** say no to moderate or nocturnal-only oxygen.",
+        "**No smoking, no flame within 2 m**.",
+        "Fan, not oxygen, for **breathlessness without hypoxaemia**.",
+      ],
+    },
+  },
 };
 
 export default revision;

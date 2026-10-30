@@ -483,4 +483,453 @@ topics.push({
   ],
 });
 
+topics.push({
+  id: "respiratory-extrapulmonary-tb",
+  title: "Extrapulmonary tuberculosis: lymph node, pleural, abdominal, CNS, spinal and genitourinary",
+  frequency: "core",
+  oneLiner:
+    "**Extrapulmonary TB (EPTB)** is TB of organs other than the lung parenchyma - commonest in **lymph nodes and pleura** - that is **paucibacillary**, so diagnosis rests on **tissue or fluid for NAAT, culture and histology** plus surrogate markers such as **ADA**; it is treated with the standard **2HRZE/4HRE** regimen, extended to **12 months for CNS and osteoarticular TB**, with **corticosteroids for TB meningitis** (and selectively for pericarditis), following the **INDEX-TB guidelines (2016)** and NTEP.",
+  keywords: [
+    "EPTB",
+    "INDEX-TB",
+    "scrofula",
+    "TB lymphadenitis",
+    "TB meningitis",
+    "TBM",
+    "Pott's spine",
+    "spinal TB",
+    "abdominal TB",
+    "ileocaecal TB",
+    "genitourinary TB",
+    "female genital TB",
+    "pericardial TB",
+    "ADA",
+    "Xpert Ultra",
+    "paradoxical reaction",
+    "tuberculoma",
+    "cold abscess",
+  ],
+  sections: [
+    {
+      heading: "Definition and epidemiology",
+      points: [
+        "**EPTB** is TB involving organs other than the lungs, such as pleura, lymph nodes, abdomen, genitourinary tract, skin, joints and bones, and meninges; a patient with both lung and extrapulmonary disease is classified as **pulmonary TB**. [WHO 2021]",
+        "Pleural TB is counted as **extrapulmonary** in WHO and NTEP reporting, though it is managed with the respiratory team - see the Pleural effusion topic for the effusion work-up. [WHO 2021]",
+        "Globally about **16% of notified TB** is extrapulmonary; in India EPTB makes up roughly **one-fifth to one-quarter of notified cases** in the India TB Report. [WHO Global TB Report 2024]",
+        "**Lymph node TB** is the commonest form, followed by **pleural TB**; abdominal, skeletal, genitourinary and CNS TB follow. [Harrison 22e]",
+        "EPTB is commoner in **HIV infection (especially CD4 under 200), children, women and people of South Asian origin**. [Harrison 22e]",
+        "The **INDEX-TB guidelines (2016)**, developed by ICMR, the Central TB Division and WHO India, are India's site-specific evidence-based guidance for EPTB. [INDEX-TB 2016]",
+      ],
+    },
+    {
+      heading: "Pathogenesis and why EPTB is paucibacillary",
+      points: [
+        "During primary infection bacilli spread by **lymphatics to hilar nodes and by the blood to any organ**, seeding foci that may reactivate years later - the basis of EPTB in any site. [Harrison 22e]",
+        "Sites with **high oxygen tension and blood flow** - lung apices, renal cortex, vertebral bodies and the growing ends of long bones - are favoured. [Harrison 22e]",
+        "Most damage is from the **host's delayed-type hypersensitivity**: caseating granulomas, exudates and fibrosis, not bacillary load - hence few organisms in fluids and low culture yield. [Harrison 22e]",
+        "**TB meningitis** follows rupture of a subependymal or subpial focus (the **Rich focus**) into the subarachnoid space; thick **basal exudate** entraps cranial nerves, causes **vasculitis and infarcts** and blocks CSF flow, causing **hydrocephalus**. [Harrison 22e]",
+        "**Spinal TB** starts in the **anterior vertebral body near the disc (paradiscal)**; the avascular disc is destroyed late, vertebrae collapse anteriorly causing **gibbus and kyphosis**, and pus tracks as a **cold abscess** (psoas, paravertebral). [Harrison 22e]",
+        "**Abdominal TB** arises from swallowed sputum, haematogenous spread or contiguous nodes; **Peyer's patches in the ileocaecal region** are the commonest gut site, and the peritoneum forms ascites or adhesions. [Harrison 22e]",
+        "**Genitourinary TB** begins in the renal cortex and spreads down the collecting system, producing **papillary necrosis, strictures and a small fibrosed bladder**; in women haematogenous spread to the **fallopian tubes** causes infertility. [Harrison 22e]",
+        "**Pericardial TB** progresses from effusive to effusive-constrictive and **constrictive** stages as fibrin and fibrosis thicken the pericardium. [Harrison 22e]",
+      ],
+    },
+    {
+      heading: "Classification and grading the examiner asks",
+      points: [
+        "**Jones and Campbell staging of TB lymphadenitis**: 1 enlarged firm mobile nodes; 2 rubbery matted nodes; 3 central softening (abscess); 4 **collar-stud abscess**; 5 **sinus formation**. [Jones and Campbell 1962]",
+        "**Modified BMRC grading of TB meningitis**: **Grade I** - GCS 15 with no focal deficit; **Grade II** - GCS 11-14, or 15 with focal deficit; **Grade III** - GCS 10 or less. Mortality rises steeply with grade. [BMRC; Thwaites 2004]",
+        "**Lancet consensus case definition for TBM (Marais 2010)**: definite (AFB, culture or NAAT positive in CSF), **probable (score 10 or more without imaging, 12 or more with imaging)** and possible. [Marais 2010]",
+        "**Spinal TB** is classified by site (paradiscal, central, anterior, posterior, skip lesions) and by neurological deficit; kyphosis is measured as **Konstam's angle**. [Tuli 2016]",
+        "**Abdominal TB** is classified as **gastrointestinal, peritoneal (wet ascitic, dry plastic, fibrotic-fixed), nodal and solid-organ** TB. [INDEX-TB 2016]",
+        "**Pericardial TB** stages: dry, effusive, effusive-constrictive and constrictive. [Harrison 22e]",
+      ],
+    },
+    {
+      heading: "Clinical features by site",
+      points: [
+        "**Lymph node TB**: painless, slowly enlarging **cervical** nodes (posterior triangle and jugular chain), matting, cold abscess and discharging sinus; constitutional symptoms in only about half. [INDEX-TB 2016]",
+        "**Pleural TB**: acute or subacute fever, pleuritic pain and breathlessness in a young adult, with a unilateral moderate effusion. [Harrison 22e]",
+        "**Abdominal TB**: chronic abdominal pain, distension, fever, weight loss, **subacute intestinal obstruction** (doughy abdomen, recurrent colic) or a **right iliac fossa mass**. [INDEX-TB 2016]",
+        "**TB meningitis**: **2-8 weeks of headache, fever, vomiting**, then confusion, cranial nerve palsies (**VI commonest**), hemiparesis, seizures and coma - the subacute course distinguishes it from bacterial meningitis. [Harrison 22e]",
+        "**Spinal TB (Pott's disease)**: back pain, stiffness, constitutional symptoms, **gibbus**, cold abscess, and **paraplegia** (Pott's paraplegia); thoracolumbar spine is commonest. [Harrison 22e]",
+        "**Genitourinary TB**: frequency, dysuria, haematuria, flank pain, **sterile pyuria**, epididymo-orchitis, and in women **infertility, menstrual disturbance and pelvic pain**. [INDEX-TB 2016]",
+        "**Pericardial TB**: fever, chest pain, breathlessness, raised JVP, pulsus paradoxus, or features of constriction (Kussmaul sign, pericardial knock, ascites). [Harrison 22e]",
+      ],
+    },
+    {
+      heading: "Examination findings",
+      points: [
+        "**Cold abscess**: fluctuant, non-tender, without warmth or erythema - the opposite of a pyogenic abscess. [Bailey and Love 28e]",
+        "**Collar-stud abscess**: a superficial abscess communicating with a deep caseous node through a hole in the deep fascia. [Bailey and Love 28e]",
+        "**Gibbus** (sharp angular kyphosis), paraspinal muscle spasm, tenderness, and **psoas abscess** presenting as a groin swelling or flexion deformity of the hip. [Tuli 2016]",
+        "**Neck stiffness, Kernig's sign, papilloedema, VI nerve palsy** and choroid tubercles on fundoscopy suggest TBM or miliary TB. [Harrison 22e]",
+        "**Doughy abdomen**, ascites, and a firm, mildly tender **right iliac fossa mass** suggest abdominal TB. [INDEX-TB 2016]",
+        "**Beaded vas deferens** and a craggy epididymis suggest male genital TB. [Bailey and Love 28e]",
+        "Always examine the chest and take a **chest X-ray** - up to a third of EPTB has coexisting pulmonary TB, which changes infectivity and classification. [INDEX-TB 2016]",
+      ],
+    },
+    {
+      heading: "Differential diagnosis",
+      points: [
+        "**Cervical lymphadenopathy**: reactive nodes, lymphoma (rubbery, B symptoms), metastatic carcinoma (hard, older patient), NTM in children, sarcoidosis, Kikuchi disease. [Harrison 22e]",
+        "**Lymphocytic exudative effusion**: TB versus malignancy (older, ADA low, cytology positive) and lymphoma. [Light 2013]",
+        "**Ileocaecal TB versus Crohn's disease**: TB has **transverse ulcers, patulous ileocaecal valve, caseating confluent granulomas, necrotic nodes**; Crohn's has longitudinal ulcers, skip lesions, perianal disease and **comb sign**. [INDEX-TB 2016]",
+        "**Chronic meningitis**: TBM versus cryptococcal meningitis (India ink, CrAg), partially treated bacterial meningitis, neurocysticercosis and carcinomatous meningitis. [Harrison 22e]",
+        "**Spondylodiscitis**: TB (slow, multiple levels, large cold abscess, posterior element sparing early) versus **brucellosis** (lower lumbar, less destruction), pyogenic (acute) and metastasis (**disc spared**). [Harrison 22e]",
+        "**Sterile pyuria**: GU TB versus partially treated UTI, chlamydia, interstitial nephritis, renal stones and analgesic nephropathy. [OHCM 11e]",
+      ],
+    },
+    {
+      heading: "Investigations - principles and per site",
+      points: [
+        "**Principle**: obtain tissue or fluid for **Xpert MTB/RIF Ultra or Truenat, liquid culture with DST, and histopathology**; a negative NAAT does not exclude EPTB because of low bacillary load. [INDEX-TB 2016]",
+        "**TST and IGRA cannot diagnose active EPTB** - they only show infection; INDEX-TB advises against **serological tests** (banned in India since 2012). [INDEX-TB 2016]",
+        "**Lymph node**: **FNAC** showing epithelioid granulomas with caseation, AFB stain and Xpert on aspirate; excision biopsy if FNAC is inconclusive. [INDEX-TB 2016]",
+        "**Pleural fluid**: lymphocytic exudate with **ADA over 40 U/L** strongly supports TB in India; Xpert on fluid has low sensitivity (about 50%), so **pleural biopsy** (histology plus culture) has the highest yield. [INDEX-TB 2016]",
+        "**Ascitic fluid**: high-protein, **SAAG under 1.1 g/dL**, lymphocytic, **ADA of 39 U/L or more**; CT shows thickened peritoneum, omental caking and necrotic nodes; **colonoscopy with ileal and caecal biopsy** for culture and NAAT. [INDEX-TB 2016]",
+        "**CSF**: raised opening pressure, **lymphocytic pleocytosis 100-500 cells**, **protein 1-5 g/L**, **glucose under 50% of blood glucose**; **Xpert Ultra on CSF** is the initial test (send at least 6 mL); **MRI with contrast** shows basal enhancement, hydrocephalus, infarcts and tuberculomas. [WHO 2024]",
+        "**Spine**: **MRI** is the investigation of choice (paradiscal oedema, abscess, skip lesions, cord compression); **CT-guided biopsy** for Xpert, culture and histology. [INDEX-TB 2016]",
+        "**Genitourinary**: **three to five early-morning urine samples** for culture and Xpert; CT urography (**putty kidney, thimble bladder, golf-hole ureteric orifice**); **endometrial biopsy** in the premenstrual phase for women; **a positive PCR alone must not be used to treat infertile women**. [INDEX-TB 2016]",
+        "**Pericardial fluid**: lymphocytic exudate, **ADA over 40 U/L** and unstimulated interferon-gamma; echocardiography for effusion and constriction. [INDEX-TB 2016]",
+        "**HIV with CD4 200 or less or seriously ill**: add **urine LF-LAM**, which finds disseminated TB rapidly. [WHO 2024]",
+      ],
+    },
+    {
+      heading: "Treatment - standard regimen and duration",
+      points: [
+        "Most EPTB (lymph node, pleural, abdominal, genitourinary, pericardial) receives the NTEP regimen **2HRZE + 4HRE (6 months)**, daily, as weight-band fixed-dose combinations. [NTEP 2023]",
+        "**CNS TB (meningitis, tuberculoma) and osteoarticular/spinal TB**: **2HRZE + 10HRE (12 months total)** under NTEP; INDEX-TB allows 9-12 months individualised by response. [NTEP 2023]",
+        "**Abdominal TB**: **6 months is as good as 9 months** in Indian trials, so routine extension is not needed. [INDEX-TB 2016]",
+        "Adult FDC dosing (H75 R150 Z400 E275 per tablet): **25-34 kg 2 tablets, 35-49 kg 3, 50-64 kg 4, 65-75 kg 5, over 75 kg 6** daily. [NTEP 2023]",
+        "Every EPTB patient needs **universal DST** where a specimen exists; RR found on tissue or fluid means a DR-TB regimen - see the Drug-resistant TB topic. [NTEP 2023]",
+        "**Residual nodes or masses at the end of 6 months are common** and are not by themselves a reason to extend treatment. [INDEX-TB 2016]",
+      ],
+    },
+    {
+      heading: "Steroids, surgery and inpatient care",
+      points: [
+        "**TBM - dexamethasone for all HIV-negative patients**: Grade II/III **0.4 mg/kg/day IV week 1, 0.3 week 2, 0.2 week 3, 0.1 week 4**, then oral tapering over 4 weeks; Grade I starts at 0.3 mg/kg/day. [Thwaites NEJM 2004]",
+        "Steroids reduce **TBM mortality by about 25%** in HIV-negative adults; the **ACT HIV trial (2023)** found **no survival benefit in HIV-positive TBM**. [NEJM 2023]",
+        "**TB pericarditis**: prednisolone (IMPI regimen **120 mg/day tapering over 6 weeks**) did not reduce mortality but **halved constrictive pericarditis**; WHO suggests steroids may be used, avoiding them in HIV because of Kaposi sarcoma risk. [IMPI NEJM 2014]",
+        "**TBM with hydrocephalus**: communicating hydrocephalus may respond to **acetazolamide and furosemide**; obstructive hydrocephalus or worsening sensorium needs **ventriculoperitoneal shunt or endoscopic third ventriculostomy**. [Harrison 22e]",
+        "**Spinal TB surgery** for **neurological deficit not improving on ATT, instability, progressive kyphosis, large abscess or diagnostic doubt**; most patients recover with ATT alone (Tuli's 'middle path'). [Tuli 2016]",
+        "**Abdominal TB**: surgery for **perforation, complete obstruction, massive bleeding or fistula**; strictures often respond to ATT or endoscopic dilatation. [INDEX-TB 2016]",
+        "**Pericardiocentesis** for tamponade; **pericardiectomy** for established constriction. [ESC 2015]",
+        "**Admit** TBM, spinal TB with deficit, tamponade, intestinal obstruction or perforation, and any EPTB with sepsis or inability to take oral drugs. [INDEX-TB 2016]",
+      ],
+    },
+    {
+      heading: "Paradoxical reactions and special situations",
+      points: [
+        "A **paradoxical reaction** is worsening of existing lesions or appearance of new ones after initial improvement on ATT, in a patient with drug-susceptible TB and good adherence. [INDEX-TB 2016]",
+        "Paradoxical reactions occur in about **10-25% of lymph node TB** and are commoner with HIV on ART (**TB-IRIS**); new nodes, abscesses, effusions or **enlarging tuberculomas** may appear. [Harrison 22e]",
+        "Manage by **continuing ATT**, aspirating fluctuant nodes, excluding drug resistance (repeat NAAT and culture), and adding **prednisolone** for severe or CNS reactions. [INDEX-TB 2016]",
+        "**HIV**: start ART within 2 weeks for most EPTB, but **delay ART 4-8 weeks in TB meningitis** because early ART increases severe adverse events. [WHO 2021]",
+        "**Pregnancy**: first-line drugs are safe; give **pyridoxine** with isoniazid; genital TB is a cause of infertility and ectopic pregnancy. [INDEX-TB 2016]",
+        "**Children**: TBM and miliary TB are commoner under 5; treat CNS TB for 12 months under NTEP. [NTEP 2023]",
+      ],
+    },
+    {
+      heading: "Complications and prognosis",
+      points: [
+        "**TBM**: mortality about **20-30% overall and up to 50% in Grade III**; survivors may have hydrocephalus, epilepsy, cognitive impairment, blindness and hemiparesis. [Harrison 22e]",
+        "**Spinal TB**: Pott's paraplegia, severe kyphosis and late-onset paraplegia from cord stretching over the gibbus. [Tuli 2016]",
+        "**Abdominal TB**: strictures, obstruction, perforation, malabsorption and adhesions. [Harrison 22e]",
+        "**Genitourinary TB**: obstructive uropathy, **contracted bladder**, CKD and **tubal infertility** (often irreversible). [INDEX-TB 2016]",
+        "**Pleural TB**: pleural thickening and trapped lung; **pericardial TB**: constrictive pericarditis in up to a quarter without steroids. [Harrison 22e]",
+      ],
+    },
+    {
+      heading: "Referral, follow-up and programme link",
+      points: [
+        "Notify every EPTB case on **Ni-kshay**; the patient gets **Ni-kshay Poshan Yojana Rs 1000 per month** and treatment support like pulmonary TB. [MoHFW 2024]",
+        "Follow-up is **clinical** (weight, symptoms, node size, neurological status) because sputum is not available; imaging is repeated only to guide decisions. [INDEX-TB 2016]",
+        "Refer to **neurology/neurosurgery** for TBM, **spine surgery** for deficits or instability, **gastro-surgery** for obstruction, and **cardiology** for tamponade or constriction. [INDEX-TB 2016]",
+        "Screen **household contacts** if there is coexisting pulmonary TB, and offer **TPT** to eligible contacts - see the TB infection and TPT topic. [NTEP 2023]",
+        "Offer **HIV testing and diabetes screening** to all; manage both in parallel. [NTEP 2023]",
+      ],
+    },
+    {
+      heading: "Latest guideline updates",
+      points: [
+        "**WHO 2024** recommends **Xpert Ultra on CSF** as the initial test for TBM and NAAT on other extrapulmonary specimens. [WHO 2024]",
+        "**ACT HIV trial (2023)**: dexamethasone did not improve survival in **HIV-associated TBM**; steroids remain standard in HIV-negative TBM. [NEJM 2023]",
+        "**High-dose rifampicin for TBM** is under trial and **not yet recommended** for routine use. [WHO 2025]",
+        "**NTEP 2023-24** continues 12-month treatment for CNS and osteoarticular TB and introduced the higher **Ni-kshay Poshan payment (2024)**. [MoHFW 2024]",
+        "**WHO 2022** paediatric guidance: a **6-month intensive regimen (HRZEto)** is an option for children with TBM. [WHO 2022]",
+      ],
+    },
+    {
+      heading: "Exam and viva angle",
+      points: [
+        "Name the **INDEX-TB guidelines (2016)** - examiners expect this source for Indian EPTB. [INDEX-TB 2016]",
+        "Know **ADA cut-offs**: pleural **40 U/L**, ascitic **39 U/L**, pericardial **40 U/L**. [INDEX-TB 2016]",
+        "Steroids: **always in TBM (HIV-negative)**, consider in pericarditis, **not routine in pleural TB**. [INDEX-TB 2016]",
+        "**Paradoxical reaction is not treatment failure** - continue ATT. [INDEX-TB 2016]",
+        "Pleural TB with lung involvement is still notified as **pulmonary TB**. [WHO 2021]",
+      ],
+    },
+  ],
+  tables: [
+    {
+      heading: "Drugs for extrapulmonary TB (adult)",
+      columns: ["Drug", "Dose and route", "Duration/titration", "Key adverse effects / contraindications"],
+      rows: [
+        ["Isoniazid (H)", "5 mg/kg oral daily (in FDC); pyridoxine 10 mg daily", "6 months; 12 months CNS/bone", "Hepatitis, peripheral neuropathy"],
+        ["Rifampicin (R)", "10 mg/kg oral daily (in FDC)", "6 months; 12 months CNS/bone", "Hepatitis, orange secretions, many drug interactions"],
+        ["Pyrazinamide (Z)", "25 mg/kg oral daily (in FDC)", "First 2 months", "Hepatitis, hyperuricaemia, arthralgia"],
+        ["Ethambutol (E)", "15 mg/kg oral daily (in FDC)", "Whole course", "Optic neuritis (colour vision); reduce in renal failure"],
+        ["Dexamethasone (TBM)", "0.4 mg/kg/day IV (Grade II/III), weekly reduction", "4 weeks IV, then oral taper over 4 weeks", "Hyperglycaemia, GI bleed; no survival benefit in HIV"],
+        ["Prednisolone (pericarditis)", "120 mg/day oral tapering (IMPI) or 1 mg/kg", "6 weeks", "Avoid in HIV (Kaposi sarcoma); hyperglycaemia"],
+        ["Acetazolamide (communicating hydrocephalus)", "10-20 mg/kg/day oral in divided doses with furosemide", "Weeks, guided by response", "Metabolic acidosis, hypokalaemia"],
+      ],
+    },
+    {
+      heading: "Diagnosis and duration by site (INDEX-TB / NTEP)",
+      columns: ["Site", "Best specimen and test", "Supportive cut-off or finding", "Duration", "Steroids"],
+      rows: [
+        ["Lymph node", "FNAC: cytology, AFB, Xpert; excision biopsy", "Caseating granulomas", "6 months", "No (unless severe paradoxical)"],
+        ["Pleural", "Pleural fluid and biopsy", "Lymphocytic exudate, ADA over 40 U/L", "6 months", "Not routine"],
+        ["Abdominal", "Colonoscopic biopsy, ascitic fluid, CT", "SAAG under 1.1, ADA 39 U/L or more", "6 months", "No"],
+        ["CNS (TBM, tuberculoma)", "CSF Xpert Ultra, culture; MRI", "Lymphocytes, protein high, glucose under 50% of blood", "12 months", "Yes - dexamethasone"],
+        ["Spinal / bone", "MRI; CT-guided biopsy Xpert and histology", "Paradiscal lesion, cold abscess", "12 months", "No"],
+        ["Genitourinary", "3-5 early-morning urines; endometrial biopsy", "Sterile pyuria; CT urography changes", "6 months", "No"],
+        ["Pericardial", "Pericardial fluid, echo", "ADA over 40 U/L", "6 months", "Consider (not in HIV)"],
+      ],
+    },
+    {
+      heading: "BMRC grading of TB meningitis",
+      columns: ["Grade", "Features", "Approximate mortality"],
+      rows: [
+        ["I", "GCS 15, no focal neurological deficit", "Lowest (about 10-15%)"],
+        ["II", "GCS 11-14, or GCS 15 with focal deficit", "Intermediate"],
+        ["III", "GCS 10 or less", "Up to 50%"],
+      ],
+    },
+    {
+      heading: "Differential diagnosis of key EPTB presentations",
+      columns: ["Presentation", "TB clue", "Main mimic", "Discriminating feature"],
+      rows: [
+        ["Cervical nodes", "Matted, cold abscess, sinus", "Lymphoma", "Rubbery discrete nodes, B symptoms, biopsy"],
+        ["Ileocaecal disease", "Transverse ulcers, necrotic nodes, caseation", "Crohn's disease", "Longitudinal ulcers, skip lesions, perianal disease, comb sign"],
+        ["Chronic meningitis", "Basal exudate, low glucose, VI palsy", "Cryptococcal meningitis", "CSF CrAg / India ink positive, HIV"],
+        ["Spondylitis", "Paradiscal, large abscess, gibbus", "Metastasis", "Disc space preserved, pedicle involved"],
+        ["Sterile pyuria", "Early-morning urine culture positive", "Chlamydia / partially treated UTI", "NAAT for chlamydia, response to antibiotics"],
+      ],
+    },
+  ],
+  redFlags: [
+    "Headache with fever for over a week, altered sensorium or cranial nerve palsy (suspect TBM)",
+    "Back pain with leg weakness, sensory level or bladder involvement (Pott's paraplegia)",
+    "Raised JVP, pulsus paradoxus or hypotension with pericardial effusion (tamponade)",
+    "Abdominal distension, vomiting and absolute constipation (intestinal obstruction) or peritonitis",
+    "Worsening sensorium on ATT in TBM (hydrocephalus, infarct, enlarging tuberculoma)",
+    "Visual blurring on ethambutol or new jaundice on ATT",
+  ],
+  pearls: [
+    "EPTB is **paucibacillary** - get tissue, send NAAT, culture and histology together.",
+    "ADA **40 pleural, 39 ascitic, 40 pericardial** - INDEX-TB cut-offs.",
+    "**CNS and bone TB: 12 months** (2HRZE + 10HRE); everything else 6 months.",
+    "**Steroids in every HIV-negative TBM**; not routinely in pleural TB.",
+    "**Delay ART 4-8 weeks in TBM**, unlike other TB.",
+    "**Cold abscess**: no heat, no redness, no tenderness.",
+    "**Disc destroyed in TB, preserved in metastasis.**",
+    "**Paradoxical reaction is not failure** - continue ATT, exclude resistance.",
+  ],
+  mcqs: [
+    {
+      id: "respiratory-extrapulmonary-tb-q1",
+      stem: "A 28-year-old woman has 3 weeks of headache, fever and vomiting, GCS 13 and a right VI nerve palsy. CSF shows 180 cells (90% lymphocytes), protein 2.1 g/L and glucose 35% of blood glucose. Xpert Ultra on CSF detects MTB, rifampicin not detected. Which is the correct plan?",
+      options: [
+        "2HRZE + 4HRE with no steroids",
+        "2HRZE + 10HRE with dexamethasone tapering over 6-8 weeks",
+        "2HRZE + 4HRE with prednisolone only if she deteriorates",
+        "BPaLM for 26 weeks",
+      ],
+      answer: 1,
+      explanation:
+        "This is BMRC Grade II TB meningitis (GCS 11-14 with focal deficit), drug-sensitive. CNS TB needs 12 months (2HRZE + 10HRE) under NTEP and dexamethasone for HIV-negative TBM, which reduces mortality. A 6-month regimen is too short for CNS disease, withholding steroids loses the mortality benefit, and BPaLM is for rifampicin-resistant TB.",
+      difficulty: "moderate",
+    },
+    {
+      id: "respiratory-extrapulmonary-tb-q2",
+      stem: "Which ascitic fluid profile most strongly supports tuberculous peritonitis?",
+      options: [
+        "SAAG 1.8 g/dL, protein 1.2 g/dL, neutrophils 500/mm3",
+        "SAAG 2.0 g/dL, ADA 10 U/L, lymphocytes predominant",
+        "SAAG 0.8 g/dL, protein 4.5 g/dL, lymphocytes predominant, ADA 52 U/L",
+        "SAAG 0.6 g/dL, cytology showing adenocarcinoma cells, ADA 15 U/L",
+      ],
+      answer: 2,
+      explanation:
+        "TB peritonitis gives a low-SAAG (under 1.1) high-protein lymphocytic exudate with ADA of 39 U/L or more. A high SAAG points to portal hypertension, a neutrophil count over 250 with low protein suggests spontaneous bacterial peritonitis, and malignant cells with low ADA indicate peritoneal carcinomatosis.",
+      difficulty: "easy",
+    },
+    {
+      id: "respiratory-extrapulmonary-tb-q3",
+      stem: "Six weeks into ATT for cervical node TB, a patient who was improving develops a new fluctuant node. He is adherent and the original isolate was rifampicin-sensitive. What is the best next step?",
+      options: [
+        "Continue ATT, aspirate the node and send it for Xpert and culture",
+        "Stop ATT and start a DR-TB regimen",
+        "Add a fluoroquinolone to the current regimen",
+        "Excise all nodes and stop treatment",
+      ],
+      answer: 0,
+      explanation:
+        "New or enlarging nodes after initial improvement are typical of a paradoxical reaction. ATT is continued, fluctuant nodes are aspirated, and the aspirate is retested to exclude resistance. Switching to a DR-TB regimen without evidence or adding a single drug risks acquired resistance, and surgery is not a replacement for ATT.",
+      difficulty: "moderate",
+    },
+    {
+      id: "respiratory-extrapulmonary-tb-q4",
+      stem: "On MRI of the dorsal spine, which feature best favours tuberculous over metastatic disease?",
+      options: [
+        "Involvement of a single pedicle with preserved disc",
+        "Destruction of the intervertebral disc with a large paravertebral abscess",
+        "Multiple sclerotic vertebral bodies",
+        "A collapsed vertebra with a convex posterior border and normal adjacent discs",
+      ],
+      answer: 1,
+      explanation:
+        "Spinal TB starts paradiscally, involves the disc and two adjacent vertebrae and forms large cold abscesses. Metastases typically spare the disc and involve the pedicle and posterior elements, and sclerotic vertebrae suggest prostate or breast metastasis.",
+      difficulty: "moderate",
+    },
+    {
+      id: "respiratory-extrapulmonary-tb-q5",
+      stem: "In a patient with HIV and newly diagnosed TB meningitis who is not on ART, when should ART be started according to WHO guidance?",
+      options: [
+        "Within 48 hours of ATT",
+        "Within 2 weeks of ATT, as for other TB",
+        "After completing 12 months of ATT",
+        "Deferred 4-8 weeks after starting ATT",
+      ],
+      answer: 3,
+      explanation:
+        "For TB meningitis, early ART increases severe adverse events including fatal IRIS, so ART is delayed 4-8 weeks after ATT. The 2-week rule applies to other forms of TB, starting within 48 hours is unsafe, and waiting until ATT ends leaves HIV untreated for too long.",
+      difficulty: "hard",
+    },
+  ],
+  theory: [
+    {
+      id: "respiratory-extrapulmonary-tb-t1",
+      paper: "I",
+      kind: "long",
+      marks: 10,
+      minutes: 18,
+      frequency: "core",
+      question:
+        "Describe the pathogenesis, clinical features, diagnosis and management of tuberculous meningitis. Add a note on the role of corticosteroids.",
+      openingLines: [
+        "Tuberculous meningitis is the most severe form of extrapulmonary TB, a subacute basal meningitis caused by rupture of a Rich focus into the subarachnoid space.",
+        "It is graded by the modified BMRC scale, treated for 12 months with ATT and dexamethasone, and carries up to 50% mortality in Grade III.",
+      ],
+      answer: [
+        {
+          heading: "Pathogenesis",
+          points: [
+            "Haematogenous seeding, Rich focus, rupture into subarachnoid space.",
+            "Basal exudate: cranial nerve palsies, vasculitis and infarcts, hydrocephalus.",
+          ],
+        },
+        {
+          heading: "Clinical features and grading",
+          points: [
+            "Prodrome of 2-8 weeks; headache, fever, vomiting, confusion, VI palsy, seizures.",
+            "BMRC grade I, II, III with GCS and focal deficit.",
+          ],
+        },
+        {
+          heading: "Investigations",
+          points: [
+            "CSF: lymphocytes, protein 1-5 g/L, glucose under 50% of blood; Xpert Ultra, culture.",
+            "MRI: basal enhancement, hydrocephalus, infarcts, tuberculomas; CXR for miliary; HIV test.",
+            "Lancet consensus score for probable TBM.",
+          ],
+        },
+        {
+          heading: "Treatment",
+          points: [
+            "2HRZE + 10HRE (12 months) under NTEP; DST on CSF.",
+            "Dexamethasone 0.4 mg/kg/day tapered over 6-8 weeks in HIV-negative patients.",
+            "Hydrocephalus: acetazolamide, furosemide, VP shunt or ETV.",
+            "In HIV, ART after 4-8 weeks.",
+          ],
+        },
+        {
+          heading: "Role of corticosteroids",
+          points: [
+            "Thwaites 2004: about 25% lower mortality; no reduction in disability.",
+            "ACT HIV 2023: no survival benefit in HIV-positive TBM.",
+          ],
+        },
+        {
+          heading: "Complications and prognosis",
+          points: ["Hydrocephalus, infarcts, SIADH, seizures, paradoxical tuberculoma; mortality up to 50% in Grade III."],
+        },
+      ],
+      mustDraw: ["CSF comparison table: TB versus bacterial versus viral versus cryptococcal meningitis", "Flow chart of TBM management with steroid taper"],
+      markSplit: [
+        { part: "Pathogenesis", marks: 2 },
+        { part: "Clinical features and grading", marks: 2 },
+        { part: "Investigations", marks: 2 },
+        { part: "Treatment and steroids", marks: 3 },
+        { part: "Complications", marks: 1 },
+      ],
+      keywords: ["TBM", "BMRC", "Rich focus", "dexamethasone", "Xpert Ultra", "hydrocephalus", "INDEX-TB"],
+    },
+    {
+      id: "respiratory-extrapulmonary-tb-t2",
+      paper: "I",
+      kind: "differentiate",
+      marks: 5,
+      minutes: 9,
+      frequency: "common",
+      question: "Differentiate ileocaecal tuberculosis from Crohn's disease.",
+      openingLines: [
+        "Ileocaecal TB and Crohn's disease look alike clinically, endoscopically and on imaging, and misdiagnosis in either direction is harmful in India.",
+        "INDEX-TB advises tissue diagnosis and, where doubt persists, an ATT trial with objective endoscopic reassessment.",
+      ],
+      answer: [
+        {
+          heading: "Clinical",
+          points: ["TB: fever, night sweats, ascites, pulmonary TB; Crohn's: perianal disease, diarrhoea, extraintestinal features."],
+        },
+        {
+          heading: "Endoscopy",
+          points: ["TB: transverse ulcers, patulous ileocaecal valve, fewer than 4 segments; Crohn's: longitudinal ulcers, aphthous ulcers, cobblestoning, skip lesions."],
+        },
+        {
+          heading: "Histology and microbiology",
+          points: ["TB: large confluent caseating granulomas, AFB, Xpert or culture positive; Crohn's: small non-caseating granulomas."],
+        },
+        {
+          heading: "Imaging",
+          points: ["TB: necrotic nodes, ascites, short segment; Crohn's: comb sign, fibrofatty proliferation, long segments."],
+        },
+        {
+          heading: "If still uncertain",
+          points: ["ATT trial with clinical and endoscopic response at 2-3 months; never give steroids before excluding TB."],
+        },
+      ],
+      mustDraw: ["Two-column comparison table of ileocaecal TB versus Crohn's disease"],
+      markSplit: [
+        { part: "Clinical and endoscopic differences", marks: 2 },
+        { part: "Histology and imaging", marks: 2 },
+        { part: "Approach when uncertain", marks: 1 },
+      ],
+      keywords: ["ileocaecal TB", "Crohn's disease", "transverse ulcers", "caseating granuloma", "comb sign", "ATT trial"],
+    },
+  ],
+  references: [
+    "Harrison's Principles of Internal Medicine, 22nd edition, 2025 - Tuberculosis",
+    "Index-TB Guidelines: Guidelines on extra-pulmonary tuberculosis for India, ICMR and Central TB Division, 2016",
+    "Technical and Operational Guidelines for TB Control in India, NTEP, MoHFW, 2023",
+    "WHO consolidated guidelines on tuberculosis, Module 3: Diagnosis, 2024",
+    "Thwaites GE et al. Dexamethasone for tuberculous meningitis, N Engl J Med 2004",
+    "Donovan J et al. ACT HIV trial, N Engl J Med 2023",
+    "Mayosi BM et al. IMPI trial, N Engl J Med 2014",
+    "Marais S et al. Tuberculous meningitis: a uniform case definition, Lancet Infect Dis 2010",
+  ],
+});
+
 export default topics;

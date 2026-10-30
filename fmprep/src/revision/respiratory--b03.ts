@@ -216,6 +216,209 @@ const revision: RevisionSet = {
       ],
     },
   },
+  "respiratory-severe-asthma-biologics": {
+    checked: "2026-10",
+    updated: [
+      "GINA 2024-2025: clinical remission on treatment added as the goal in severe asthma",
+      "GINA 2025: tezepelumab for severe asthma regardless of T2 biomarkers (age 12 and over)",
+      "FDA 2024: benralizumab approved for EGPA and for children 6-11 with severe eosinophilic asthma",
+      "Depemokimab (anti-IL-5, 100 mg every 6 months) licensed in some countries in 2025; not in India",
+      "BTS/NICE/SIGN 2024 (NG245): refer if uncontrolled on MART with moderate-dose ICS",
+    ],
+    master: {
+      heading: "Difficult and severe asthma - the whole answer in one table",
+      columns: ["Heading", "What to write"],
+      rows: [
+        ["Difficult-to-treat", "Uncontrolled on medium/high-dose ICS-LABA or needs it for control; about 17% of adult asthma"],
+        ["Severe", "Uncontrolled despite optimised high-dose ICS-LABA after fixing modifiable factors; about 3.7%"],
+        ["Uncontrolled means", "ACT under 20 or ACQ over 1.5; 2+ OCS bursts or 1 serious attack a year; FEV1 under 80%"],
+        ["Check first", "Diagnosis, technique, adherence, comorbidity (CRSwNP, GORD, obesity, OSA, anxiety), exposures, drugs"],
+        ["Mimics", "Laryngeal obstruction, dysfunctional breathing, COPD, ABPA, EGPA, bronchiectasis, central airway lesion"],
+        ["T2 markers", "Eosinophils 150 or more, FeNO 20 or more, allergen-driven, OCS-dependent; repeat up to 3 times"],
+        ["Indian must-excludes", "ABPA (Aspergillus IgE), TB, Strongyloides before OCS or biologics"],
+        ["Add-ons", "MART; tiotropium 2.5 mcg x2 OD or triple inhaler; azithromycin 500 mg thrice weekly for 6 months"],
+        ["Omalizumab", "Anti-IgE; allergic, IgE 30-1500; SC every 2-4 weeks by table; age 6+"],
+        ["Anti-IL-5/5R", "Mepolizumab 100 mg q4w; benralizumab 30 mg q4w x3 then q8w; eosinophils 150-300+"],
+        ["Dupilumab", "Anti-IL-4Ralpha; 400 then 200 mg q2w; FeNO 25+ or eos 150-1500; avoid if eos over 1500"],
+        ["Tezepelumab", "Anti-TSLP 210 mg q4w; no biomarker needed; age 12+"],
+        ["Review", "Biologic response at 4 months; continue, extend to 12 months, or switch; goal is remission"],
+      ],
+    },
+    flows: [
+      {
+        kind: "flow",
+        heading: "Uncontrolled asthma on Step 4-5 - GINA pathway",
+        caption: "Severe asthma is a diagnosis made only after optimisation.",
+        steps: [
+          { label: "Uncontrolled on medium/high-dose ICS-LABA", detail: "Difficult-to-treat asthma" },
+          { label: "Confirm diagnosis; exclude mimics", detail: "Spirometry, laryngeal obstruction, ABPA, EGPA, TB", tone: "decision" },
+          { label: "Fix technique, adherence, comorbidity, exposures", detail: "Rhinitis, GORD, OSA, obesity, smoking, biomass" },
+          { label: "Optimise: MART, high-dose ICS-LABA, LAMA", detail: "Review after 3-6 months" },
+          { label: "Still uncontrolled: severe asthma", detail: "Refer to specialist clinic", tone: "warn" },
+          { label: "Phenotype: eosinophils, FeNO, IgE", detail: "Repeat up to 3 times on lowest OCS dose", tone: "decision" },
+          { label: "Biologic trial, assess at 4 months", detail: "Goal: clinical remission on treatment", tone: "good" },
+        ],
+      },
+      {
+        kind: "branch",
+        heading: "Choosing a biologic by phenotype",
+        root: "Severe asthma after optimisation",
+        arms: [
+          { label: "Allergic, IgE 30-1500", steps: ["Perennial allergen sensitisation", "Omalizumab SC every 2-4 weeks"] },
+          { label: "Eosinophilic", steps: ["Eosinophils 150-300 or more", "Mepolizumab or benralizumab", "Dupilumab if FeNO high"] },
+          { label: "FeNO high or atopic dermatitis", steps: ["FeNO 25 ppb or more", "Dupilumab; avoid if eos over 1500"] },
+          { label: "T2-low", tone: "decision", steps: ["Eos under 150, FeNO under 20", "Tezepelumab; azithromycin"] },
+        ],
+      },
+      {
+        kind: "compare",
+        heading: "Difficult-to-treat versus severe asthma",
+        columns: ["Feature", "Difficult-to-treat", "Severe"],
+        rows: [
+          ["Share of adult asthma", "About 17%", "About 3.7%"],
+          ["Main cause", "Technique, adherence, comorbidity", "Refractory inflammation"],
+          ["First action", "Educate and optimise", "Phenotype and add-on therapy"],
+          ["Biologics", "Not yet", "Yes, by phenotype"],
+          ["Setting", "Primary care", "Specialist clinic"],
+        ],
+      },
+    ],
+    notes: {
+      sections: [
+        {
+          title: "Definition and key facts",
+          points: [
+            "**Difficult-to-treat asthma**: uncontrolled on medium- or high-dose ICS-LABA.",
+            "**Severe asthma**: still uncontrolled after fixing technique, adherence and comorbidities on high-dose ICS-LABA.",
+            "About 17% of adults have difficult asthma, but only **3.7% have severe asthma**.",
+            "Cumulative **oral steroid** exposure causes diabetes, fractures and cataract.",
+          ],
+        },
+        {
+          title: "Causes and risk factors",
+          points: [
+            "**Poor adherence** and **poor technique** cause most uncontrolled asthma.",
+            "Comorbidities: **nasal polyps, GORD, obesity, OSA**, anxiety and depression.",
+            "Exposures: tobacco, **biomass smoke**, incense, occupational agents.",
+            "Drugs: beta-blockers and NSAIDs.",
+          ],
+        },
+        {
+          title: "Pathophysiology",
+          points: [
+            "Alarmin **TSLP** starts the cascade; tezepelumab blocks it.",
+            "**IL-5** drives eosinophils; mepolizumab and benralizumab block it.",
+            "**IL-4 and IL-13** drive IgE, mucus and FeNO; dupilumab blocks their receptor.",
+            "**IgE** triggers mast cells; omalizumab binds it.",
+            "**T2-low** asthma is neutrophilic and responds poorly to steroids.",
+          ],
+        },
+        {
+          title: "Clinical features and differential diagnosis",
+          points: [
+            "Daily symptoms, night waking and **2 or more steroid courses a year**.",
+            "**Inspiratory stridor** suggests laryngeal obstruction, not asthma.",
+            "Brown mucus plugs suggest **ABPA**; neuropathy and rash suggest **EGPA**.",
+            "Daily purulent sputum suggests bronchiectasis or post-TB lung.",
+          ],
+        },
+        {
+          title: "Investigations",
+          points: [
+            "Confirm asthma with **spirometry and reversibility**.",
+            "**Eosinophils 150 or more** or **FeNO 20 or more** means refractory T2 inflammation.",
+            "Repeat markers **up to 3 times** on the lowest steroid dose.",
+            "Check total IgE, specific IgE and **Aspergillus IgE** in every Indian patient.",
+            "Test or treat **Strongyloides**; HRCT if atypical features.",
+          ],
+        },
+        {
+          title: "Treatment - first line",
+          points: [
+            "Fix technique and adherence; **review in 3-6 months**.",
+            "Use **ICS-formoterol MART** and a trial of high-dose ICS-LABA.",
+            "Add **tiotropium 2.5 microgram x 2 puffs** once daily or a triple inhaler.",
+            "**Azithromycin 500 mg thrice weekly** for 6 months; check QTc and exclude NTM.",
+            "Rehab, weight loss, CPAP for OSA, treat rhinitis.",
+          ],
+        },
+        {
+          title: "Treatment - next steps",
+          points: [
+            "**Omalizumab** for allergic asthma with IgE 30-1500.",
+            "**Mepolizumab 100 mg** every 4 weeks or **benralizumab 30 mg** every 8 weeks after loading.",
+            "**Dupilumab** for high FeNO or atopic dermatitis; avoid if eosinophils over 1500.",
+            "**Tezepelumab 210 mg** every 4 weeks needs no biomarker.",
+            "Assess at **4 months**; continue, extend or switch.",
+            "Maintenance OCS only as a last resort at **7.5 mg or less**.",
+          ],
+        },
+        {
+          title: "Special groups",
+          points: [
+            "**Pregnancy**: omalizumab data are reassuring; others limited.",
+            "**Children 6-11**: omalizumab, mepolizumab, benralizumab, dupilumab approved.",
+            "Long-term OCS: give **bone protection** and check glucose.",
+            "In India: biologics are costly and not on NLEM.",
+          ],
+        },
+        {
+          title: "Referral and follow-up",
+          points: [
+            "Refer when uncontrolled after **3-6 months** of optimised Step 4.",
+            "Track ACT, exacerbations, **OCS dose** and FEV1 each visit.",
+            "Never stop ICS when a biologic starts; **taper OCS first**.",
+            "Goal is **clinical remission** on treatment.",
+          ],
+        },
+      ],
+      tables: [
+        {
+          heading: "Drugs for severe asthma",
+          columns: ["Drug", "Dose and route", "Duration", "Key side effects / cautions"],
+          rows: [
+            ["Omalizumab", "75-600 mg SC every 2-4 weeks by table", "Assess at 4 months", "Anaphylaxis 0.1-0.2%"],
+            ["Mepolizumab", "100 mg SC every 4 weeks", "Assess at 4 months", "Headache, herpes zoster"],
+            ["Benralizumab", "30 mg SC every 4 weeks x3, then every 8 weeks", "Assess at 4 months", "Headache, pharyngitis"],
+            ["Dupilumab", "400 then 200 mg SC every 2 weeks", "Assess at 4 months", "Conjunctivitis, eosinophilia; avoid if eos over 1500"],
+            ["Tezepelumab", "210 mg SC every 4 weeks", "Assess at 4 months", "Pharyngitis, arthralgia"],
+            ["Tiotropium", "2.5 microgram x 2 puffs once daily", "Continuous", "Dry mouth, urinary retention"],
+            ["Azithromycin", "500 mg three times a week", "At least 6 months", "QTc, hearing loss; exclude NTM"],
+          ],
+        },
+        {
+          heading: "Biomarker cut-offs",
+          columns: ["Marker", "Cut-off", "Meaning"],
+          rows: [
+            ["Blood eosinophils", "150 or more", "Refractory T2 inflammation"],
+            ["Blood eosinophils", "300 or more", "Good anti-IL-5 response"],
+            ["Blood eosinophils", "1500 or more", "Look for EGPA, HES, ABPA, parasites"],
+            ["FeNO", "20 ppb or more (25 for dupilumab)", "IL-13 activity"],
+            ["Total IgE", "30-1500 IU/mL", "Omalizumab range"],
+          ],
+        },
+        {
+          heading: "Mimics of severe asthma",
+          columns: ["Condition", "Clue", "Test"],
+          rows: [
+            ["Laryngeal obstruction", "Inspiratory stridor", "Laryngoscopy in attack"],
+            ["Dysfunctional breathing", "Sighing, tingling", "Nijmegen questionnaire"],
+            ["ABPA", "Brown plugs", "Aspergillus IgE, total IgE"],
+            ["EGPA", "Neuropathy, rash", "Eosinophils, ANCA"],
+            ["Bronchiectasis", "Daily sputum", "HRCT"],
+          ],
+        },
+      ],
+      remember: [
+        "**Difficult is not severe** until technique, adherence and comorbidity are fixed.",
+        "Targets: **E-5-5R-4R-TSLP** for omalizumab, mepolizumab, benralizumab, dupilumab, tezepelumab.",
+        "**Tezepelumab** needs no biomarker.",
+        "**Assess biologics at 4 months**.",
+        "In India: **exclude ABPA, TB and Strongyloides** first.",
+        "Biologics are **add-ons**; never stop ICS.",
+      ],
+    },
+  },
 };
 
 export default revision;

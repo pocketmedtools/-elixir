@@ -208,6 +208,206 @@ const revision: RevisionSet = {
       ],
     },
   },
+  "respiratory-post-covid-lung": {
+    checked: "2026-10",
+    updated: [
+      "NASEM 2024: long COVID defined as an infection-associated chronic condition for at least 3 months, no positive test required",
+      "NICE NG188 (updated 2024): 4-week and 12-week time bands, 1-minute sit-to-stand and active stand test retained",
+      "WHO COVID-19 living guideline 2023-2025 and WHO rehabilitation guidance 2023: assess PEM and exertional desaturation before exercise rehabilitation",
+      "ASH 2023: post-discharge thromboprophylaxis not routine; MICHELLE-type rivaroxaban 10 mg for 35 days only in selected high-risk patients",
+    ],
+    master: {
+      heading: "Master revision table - Post-COVID condition and lung disease",
+      columns: ["Heading", "What to write"],
+      rows: [
+        ["Definition", "**WHO 2021**: usually **3 months from onset**, symptoms **at least 2 months**, no alternative diagnosis; **NICE**: acute up to 4 weeks, ongoing 4-12 weeks, **post-COVID syndrome over 12 weeks**; **NASEM 2024**: chronic condition for at least 3 months; ICD-10 U09.9"],
+        ["Burden", "About **6% of symptomatic infections**; up to half of ICU survivors; India second wave plus **over 45,000 mucormycosis cases**; MoHFW post-COVID sequelae guideline 2021"],
+        ["Risk factors", "Severe acute illness, ICU, **female, middle age**, obesity, diabetes, asthma/COPD, unvaccinated, reinfection; steroids plus diabetes for mucormycosis"],
+        ["Mechanisms", "Viral persistence, immune dysregulation, **endothelial injury and microclots**, dysautonomia, residual alveolar damage, deconditioning, PICS"],
+        ["Phenotypes", "Respiratory; **fatigue with PEM** (ME/CFS-like); cardiovascular/**POTS**; neurocognitive (brain fog, anosmia); psychological; radiological - **organising pneumonia, fibrotic-like change, PE/CTEPH**"],
+        ["History", "Acute severity, oxygen, ICU, steroids, vaccination; **PEM**; orthostatic symptoms; red flags - pleuritic pain, haemoptysis, syncope; mucor symptoms in diabetics"],
+        ["Examination", "Resting SpO2; **1-minute sit-to-stand - fall of 3% or more abnormal**; **active stand - HR rise 30/min or more = POTS**; crackles; JVP, P2; stridor; nose and palate"],
+        ["Investigations", "CBC, HbA1c, TSH, BNP, ECG; **CXR at 12 weeks**; PFT with **DLCO (commonest abnormality)**; HRCT; **CTPA or V/Q if PE suspected - D-dimer unreliable**; echo; 6MWT"],
+        ["OPD management", "Validate; **pacing if PEM - no graded exercise**; breathing retraining; pulmonary rehab; POTS fluids, salt, compression; smell training; treat mood and sleep; no proven antiviral or antifibrotic"],
+        ["Lung disease", "**Organising pneumonia: prednisolone about 0.5 mg/kg tapered over 3 weeks** (specialist); fibrotic-like change mostly non-progressive - monitor PFT and HRCT at 6-12 months; PE - DOAC at least 3 months"],
+        ["Admission", "SpO2 under 94% at rest, suspected PE, chest pain with ECG change, syncope, haemoptysis, **suspected mucormycosis** (liposomal amphotericin B 5 mg/kg/day plus debridement)"],
+        ["Follow-up and work", "Review at 6 and 12 weeks then 3-6 monthly; **phased return to work**; exercise after 7 days symptom-free in graded stages; myocarditis - no competitive sport 3-6 months"],
+        ["Prevention", "COVID vaccination, early antivirals in high-risk acute COVID, **steroids only if hypoxaemic**, glucose control; NCD screening at Ayushman Arogya Mandir"],
+      ],
+    },
+    flows: [
+      {
+        kind: "flow",
+        heading: "Breathlessness after COVID - work-up",
+        caption: "NICE NG188 2024 and BTS COVID follow-up 2020",
+        steps: [
+          { label: "Red flags?", detail: "Pleuritic pain, haemoptysis, syncope, SpO2 under 94%, chest pain", tone: "warn" },
+          { label: "Resting SpO2 and 1-minute sit-to-stand", detail: "Fall of 3% or more is abnormal", tone: "decision" },
+          { label: "Bloods and ECG", detail: "CBC, HbA1c, TSH, BNP, troponin if chest pain" },
+          { label: "Chest X-ray at 12 weeks", detail: "Earlier if red flags" },
+          { label: "PFT with DLCO", detail: "Reduced DLCO is the commonest abnormality" },
+          { label: "HRCT or CTPA as indicated", detail: "CTPA/V/Q for exertional desaturation with clear X-ray" },
+          { label: "Diagnosis-directed treatment and rehabilitation", tone: "good" },
+        ],
+      },
+      {
+        kind: "branch",
+        heading: "Post-COVID phenotypes and what helps",
+        root: "Post-COVID condition",
+        arms: [
+          { label: "Respiratory", steps: ["Breathlessness, reduced DLCO", "Pulmonary rehab, treat OP or PE"] },
+          { label: "Fatigue with PEM", tone: "warn", steps: ["Crash 12-48 h after effort", "Pacing - no graded exercise"] },
+          { label: "Autonomic (POTS)", steps: ["HR rise 30/min or more on standing", "Fluids, salt, compression"] },
+          { label: "Neurocognitive and mood", steps: ["Brain fog, anosmia, anxiety", "Smell training, CBT, SSRI"] },
+        ],
+      },
+      {
+        kind: "compare",
+        heading: "Organising pneumonia versus fibrotic-like change after COVID",
+        columns: ["Feature", "Organising pneumonia", "Fibrotic-like change"],
+        rows: [
+          ["HRCT", "Consolidation, ground glass, perilobular pattern", "Reticulation, traction bronchiectasis"],
+          ["Course", "Persistent at 6 weeks, steroid-responsive", "Mostly non-progressive, slow improvement"],
+          ["Treatment", "Prednisolone about 0.5 mg/kg tapered over 3 weeks", "Rehab, monitor; no antifibrotic outside trials"],
+          ["Follow-up", "Repeat HRCT after course", "PFT and HRCT at 6-12 months"],
+        ],
+      },
+    ],
+    notes: {
+      sections: [
+        {
+          title: "Definition and key facts",
+          points: [
+            "**WHO 2021**: symptoms usually from 3 months after infection, lasting **at least 2 months**.",
+            "Symptoms must not be explained by **another diagnosis**.",
+            "**NICE**: over 12 weeks is post-COVID syndrome; 4-12 weeks is ongoing symptomatic COVID.",
+            "**NASEM 2024**: chronic condition for at least 3 months; no positive test needed.",
+            "About **6%** of symptomatic infections develop it; far more after ICU.",
+          ],
+        },
+        {
+          title: "Causes and risk factors",
+          points: [
+            "Severe acute illness, **ICU stay** and ventilation give the most lung sequelae.",
+            "**Female sex**, middle age, obesity, diabetes and pre-existing lung disease.",
+            "Being **unvaccinated** and repeated infections raise the risk.",
+            "**Steroids plus uncontrolled diabetes** drove mucormycosis in India.",
+          ],
+        },
+        {
+          title: "Pathophysiology",
+          points: [
+            "**Viral persistence** and immune dysregulation keep inflammation going.",
+            "**Endothelial injury and microclots** explain thrombosis and exercise intolerance.",
+            "**Dysautonomia** produces POTS and palpitations.",
+            "Residual alveolar damage gives **organising pneumonia** or fibrotic-like change.",
+          ],
+        },
+        {
+          title: "Clinical features",
+          points: [
+            "**Fatigue, breathlessness and brain fog** are the commonest symptoms.",
+            "**Post-exertional malaise** is a crash 12-48 hours after effort.",
+            "Dizziness and palpitations on standing suggest **POTS**.",
+            "Pleuritic pain, haemoptysis or syncope suggest **pulmonary embolism**.",
+            "Black nasal discharge or palatal eschar in diabetics suggests **mucormycosis**.",
+          ],
+        },
+        {
+          title: "Investigations",
+          points: [
+            "**1-minute sit-to-stand**: SpO2 fall of 3% or more is abnormal.",
+            "**Active stand test**: heart-rate rise of 30/min or more means POTS.",
+            "**Chest X-ray at 12 weeks** if respiratory symptoms persist.",
+            "**Reduced DLCO** is the commonest lung-function abnormality.",
+            "**D-dimer stays raised** after COVID, so image if PE is suspected.",
+            "**HRCT** if X-ray or DLCO is abnormal.",
+          ],
+        },
+        {
+          title: "Treatment - first line",
+          points: [
+            "Explain that long COVID is real and **usually improves**.",
+            "**Pacing** for post-exertional malaise; never graded exercise therapy.",
+            "**Breathing retraining** for dysfunctional breathing.",
+            "**Pulmonary rehabilitation** for breathlessness without post-exertional malaise.",
+            "POTS: **fluids, salt and compression**; drugs only by a specialist.",
+            "No antiviral or antifibrotic is proven for long COVID.",
+          ],
+        },
+        {
+          title: "Treatment - next steps",
+          points: [
+            "**Organising pneumonia**: prednisolone about 0.5 mg/kg, tapered over about 3 weeks.",
+            "**Fibrotic-like change**: monitor PFT and HRCT at 6-12 months.",
+            "**PE**: DOAC such as apixaban for at least 3 months.",
+            "**Mucormycosis**: debridement plus liposomal amphotericin B 5 mg/kg/day.",
+          ],
+        },
+        {
+          title: "Referral and follow-up",
+          points: [
+            "Refer for abnormal X-ray at 12 weeks, low DLCO or **exertional desaturation**.",
+            "Review at **6 and 12 weeks**, then every 3-6 months.",
+            "**Phased return to work** with adjusted duties.",
+            "After myocarditis, **no competitive sport for 3-6 months**.",
+          ],
+        },
+        {
+          title: "Latest updates",
+          points: [
+            "**NASEM 2024** gave a new, broader long COVID definition.",
+            "**NICE NG188 2024** keeps the sit-to-stand and active stand tests.",
+            "**ASH 2023**: post-discharge anticoagulation is not routine.",
+          ],
+        },
+      ],
+      tables: [
+        {
+          heading: "Drugs in post-COVID care",
+          columns: ["Drug", "Dose and route", "Duration", "Key side effects / cautions"],
+          rows: [
+            ["Prednisolone (organising pneumonia)", "About 0.5 mg/kg/day oral", "Taper over about 3 weeks", "Hyperglycaemia, infection, mucormycosis"],
+            ["Apixaban (PE)", "10 mg twice daily, then 5 mg twice daily", "7 days, then at least 3 months", "Bleeding"],
+            ["Rivaroxaban (PE)", "15 mg twice daily, then 20 mg once daily", "21 days, then at least 3 months", "Bleeding; take with food"],
+            ["Rivaroxaban (prophylaxis)", "10 mg once daily oral", "35 days, high-risk only", "Bleeding; not routine"],
+            ["Sertraline", "50 mg once daily oral", "6 months after remission", "Nausea, hyponatraemia"],
+            ["Liposomal amphotericin B", "5 mg/kg/day IV", "Until stable, then oral azole", "Kidney injury, low potassium"],
+          ],
+        },
+        {
+          heading: "Time bands",
+          columns: ["Source", "Term", "Time"],
+          rows: [
+            ["NICE", "Acute COVID-19", "Up to 4 weeks"],
+            ["NICE", "Ongoing symptomatic COVID-19", "4-12 weeks"],
+            ["NICE", "Post-COVID-19 syndrome", "Over 12 weeks"],
+            ["WHO 2021", "Post-COVID-19 condition", "From 3 months, lasting 2 months or more"],
+          ],
+        },
+        {
+          heading: "Breathless after COVID - what is it?",
+          columns: ["Cause", "Clue", "Test"],
+          rows: [
+            ["Pulmonary embolism", "Exertional desaturation, clear chest", "CTPA or V/Q"],
+            ["Organising pneumonia", "Crackles, consolidation", "HRCT"],
+            ["Myocarditis", "Chest pain, palpitations", "ECG, troponin, echo"],
+            ["Dysfunctional breathing", "Normal SpO2 and tests, sighing", "Nijmegen over 23"],
+            ["Tracheal stenosis", "Stridor after intubation", "Flow-volume loop, CT"],
+          ],
+        },
+      ],
+      remember: [
+        "WHO: 3 months from onset, 2 months duration, no other explanation.",
+        "NICE: 4 weeks acute, 4-12 ongoing, over 12 syndrome.",
+        "Sit-to-stand fall of 3% or more is abnormal.",
+        "PEM means pacing, not graded exercise.",
+        "D-dimer lies after COVID - image for PE.",
+        "Commonest PFT change after COVID pneumonia is low DLCO.",
+        "Steroids plus diabetes plus COVID - look for mucor in nose and palate.",
+      ],
+    },
+  },
 };
 
 export default revision;
